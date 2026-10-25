@@ -1,0 +1,14 @@
+## 68. 18 Months of Pricing AI Automations in 21 Mins
+- **Link:** https://www.youtube.com/watch?v=Lg5TYWPSg6M | **Length:** 21 min | **AI-relevant:** yes
+- **Teaches:**
+  - Price from the client's value, not your cost or your hours. Cost is the floor, value is the ceiling, and price sits between them.
+  - Size the value first: hours saved times loaded hourly cost, or hard dollars lost to errors. Then price at a fraction of that, with a target of about 10x first-year return.
+  - Ask "why this, why now, why me" in discovery to find the real need and the objections.
+  - Offer three tiers. The middle one is the one the client should pick.
+  - Split payments by objective milestones, each about 30 days apart. Put scope changes into a v2 backlog.
+  - Client pays their own API and cloud bills. Your fee covers design, build and testing. Quote an expected monthly run cost.
+- **Tools / prices / numbers:** Nate's worked example: 20 leads a week, about 1 hour each, $40/hour loaded cost, so $41,600/year. Build priced at about $5,500 (about 13% of that). Maintenance retainer $400/month, covering fixes and drift, not new features. Starting price suggested at 10-20% of first-year value. Tiers at 10%, 25% and 50%. Testing adds about $1,000-3,000. Hourly at about $100/hour for your first two or three projects. A $9,000 project split into staged payments. All numbers are his examples or rules of thumb.
+- **Skills shown:** discovery and value sizing, pricing and packaging, milestone-based contracts, scope control
+- **Money angle:** Sell AI automation builds with a fixed build fee, a monthly maintenance retainer, and staged payments. Target clients where the problem costs real money. Nate says his agency's minimum was a $20,000/month retainer at its peak (his claim).
+- **Duet-relevant:** no
+- **Promo:** Free school community. Free 27-page pricing doc in the classroom. Mentions a pricing masterclass document.

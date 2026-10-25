@@ -1,0 +1,17 @@
+## 111. Give Me 10 Mins and I'll Save You Millions of Claude Tokens
+- **Link:** https://www.youtube.com/watch?v=6cEQEba0i2A | **Length:** 11 min | **AI-relevant:** yes
+- **Teaches:**
+  - Prompt caching happens automatically in Claude Code; the goal is to keep the cache warm so sessions burn fewer limits.
+  - Cached reads cost a fraction of fresh input. The cache lives about an hour on a subscription and about 5 minutes on API or sub-agent calls.
+  - Cache breaks when you wait too long, change the system prompt, or switch models mid-session (including Opus-plan mode).
+  - Habits: do not sit idle past an hour, start fresh when switching tasks (/clear or /compact), and use a session handoff summary to resume in a new session.
+  - Editing CLAUDE.md mid-session does not apply until restart, so it does not break the cache.
+- **Tools / prices / numbers:**
+  - Cached tokens cost about 10% of normal input (Nate's description of Anthropic pricing).
+  - Cache TTL: about 1 hour in Claude Code, 5 minutes by default on API.
+  - Nate's claim: he saved about 91M tokens in one day and over 300M in a week.
+  - Free token dashboard (local GitHub repo) and a session handoff skill, both in his free community.
+- **Skills shown:** prompt caching analysis, token tracking, session management, context hygiene
+- **Money angle:** none stated; the value is lower subscription limit burn and API cost savings.
+- **Duet-relevant:** no
+- **Promo:** free school community (token dashboard and handoff skill are offered there).

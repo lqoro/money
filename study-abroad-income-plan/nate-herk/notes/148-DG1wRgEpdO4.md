@@ -1,0 +1,17 @@
+## 148. Claude's New AI Just Changed the Internet Forever
+- **Link:** https://www.youtube.com/watch?v=DG1wRgEpdO4 | **Length:** 8 min | **AI-relevant:** yes
+- **Teaches:**
+  - Anthropic's unreleased model, Claude Mythos, was trained to be a stronger coder. That same skill made it strong at finding security flaws.
+  - Reported finds (Nate's summary): a 27-year-old OpenBSD bug, an FFmpeg bug that automated tests had missed, Linux bugs that let a zero-permission user become admin, and chaining small bugs into full attacks.
+  - Project Glasswing gives access to defenders first. Partners include large cloud, chip, and security companies, plus over 40 maintainers of critical infrastructure. Public release is withheld.
+  - For ordinary users, the practical effect is that fixes ship through normal software updates, with no action needed.
+  - Nate's view: labs should publish safety plans, and the arms race will keep going.
+- **Tools / prices / numbers:**
+  - SWE-bench: Opus 80.8% vs Mythos 93.9%.
+  - Cyber benchmark: Opus 66.6% vs Mythos 83.1%.
+  - Anthropic committed $100M in usage credits and donated $4M to open-source security groups (as stated in the video).
+  - Anthropic says it will share learnings publicly within 90 days.
+- **Skills shown:** AI security awareness, reading AI safety news
+- **Money angle:** none. He speculates that scanning tools may reach smaller companies later, but gives no product, price or steps.
+- **Duet-relevant:** no
+- **Promo:** his free school community (link in the description)

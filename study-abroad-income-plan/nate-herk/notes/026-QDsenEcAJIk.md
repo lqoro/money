@@ -1,0 +1,17 @@
+## 26. Anthropic's CEO: How to Build a 1 Person Business with Claude
+- **Link:** https://www.youtube.com/watch?v=QDsenEcAJIk | **Length:** 12 min | **AI-relevant:** yes
+- **Teaches:**
+  - Turn a vague "one-person billion-dollar company" idea into filters: skip businesses that need your own capital, pick software, then require sales and support to be automatable.
+  - Compare candidate ideas with Claude (who pays, can software deliver it, can one person sell and support it). Choose one where the result is provable.
+  - Build the product around a golden test set: 16 scenario tests, diagnose failures, approve a new policy, rerun, and generate a client-ready report.
+  - Automate routine sales and support, but keep refunds, account deletion and data requests for a human to approve.
+  - Find leads with Clay plus Claude. Drafts stay unsent until reviewed. Position with pain, person, promise.
+- **Tools / prices / numbers:**
+  - Claude, Claude Code, Clay, a simple web app.
+  - Price: $499/month per customer. About 168 paying customers for $1M ARR (Nate's math).
+  - Test score on one agent: 88, then 88 after one fix, then 94 after a second.
+  - Nate's claims: freelancing first, then a team after about $10K/month solo.
+- **Skills shown:** product scoping, evals, Claude Code app building, agent QA, lead research, outbound copywriting.
+- **Money angle:** Sell agent QA reports to agencies that deploy support bots, at $499/mo. First milestone: five agencies paying. Start with a narrow, high-risk use case such as refunds and billing disputes.
+- **Duet-relevant:** no
+- **Promo:** free school community (skills, prompts and frameworks from this video); a road map for the service route (link in description); a deeper Clay plus Claude Code video.

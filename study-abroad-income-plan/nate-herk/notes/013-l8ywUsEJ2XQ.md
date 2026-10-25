@@ -1,0 +1,19 @@
+## 13. How to Actually Build & Sell Software with AI as a Non-Techie
+- **Link:** https://www.youtube.com/watch?v=l8ywUsEJ2XQ | **Length:** 70 min | **AI-relevant:** yes
+- **Teaches:**
+  - Interview with guest Dave (channel name garbled in transcript) on building software with coding agents; he no longer writes code by hand and says the workflow is the same for beginners and experts.
+  - Rank a project on a ladder: just for you, for your team, as an agency offer (productized or custom), or as a sold SaaS. Stakes and compliance risk rise at each rung; climb one rung at a time.
+  - Skip heavy spec docs: describe the intent, build, test the result, then give feedback. Ask the model to interview you first.
+  - Define "good" and build evals: a dataset of expected inputs/outputs, or an LLM-as-judge calibrated against human reviews.
+  - Architecture basics: pick a stack that fits, learn how frontend, backend and database talk, keep the codebase deep and modular.
+  - Security basics: enable row-level security, strong passwords and 2FA, keep secrets in env vars, firewall the backend and database to whitelisted IPs.
+- **Tools / prices / numbers:**
+  - Claude Code, Codex, Grok (transcribed as "grot"), named frontier models (transcribed as "GPT6 Astra" and "Opus 5.5").
+  - Supabase as default database; Railway, Render, VPS, Azure/AWS/GCP for hosting.
+  - Coding plans: about $20/month to start, $100-200 tiers when usage runs out (stated).
+  - Matt Pocock's codebase-architecture skill (name transcribed inconsistently).
+  - Karpathy's "autoresearch" loop mentioned as a milestone.
+- **Skills shown:** AI-assisted coding, product scoping, eval design, LLM-as-judge, system architecture, database and security hardening, deployment.
+- **Money angle:** Build for yourself first, then for a team or company, then sell as an agency offer or SaaS. Agency work is customization on top of a productized core. Nate's audience is freelancers and non-technical builders; he frames the opportunity as freelance or side-project income (no price points for client work stated).
+- **Duet-relevant:** no
+- **Promo:** Sponsor CodeRabbit (free 14-day trial, link in description). Nate's free SOP for a first automation client, linked to his AIS Plus community.

@@ -1,0 +1,17 @@
+## 144. Seedance 2.0 + Claude Code Creates $10k Websites in Minutes
+- **Link:** https://www.youtube.com/watch?v=NvxiSG34mPU | **Length:** 23 min | **AI-relevant:** yes
+- **Teaches:**
+  - Generate a seamless-loop hero video with an AI video model. Use a generated image as both first and last frame so the loop joins cleanly.
+  - Have Claude Code write the video prompt from a skill file and a reference image, then review the result before generating.
+  - Build the site in Claude Code using the front-end design skill. Ask it clarifying questions during planning first.
+  - Deploy: push to a private GitHub repo, import it into Vercel, and each later push redeploys (Nate says about 30 to 60 seconds).
+  - Refine by pasting a design reference screenshot and asking Claude to match its style.
+- **Tools / prices / numbers:**
+  - Seedance 2.0 video model, used through Key.ai (as captioned), a one-API-key aggregator for image, video and music models.
+  - Nano Banana 2 for the starting image.
+  - Credit cost he observed: 410 credits for a 10-second 720p clip vs 615 for 15 seconds. He switched to 10 seconds because the prompt was tuned for it.
+  - VS Code, Claude Code extension or terminal, GitHub, Vercel (free tier not discussed).
+- **Skills shown:** AI video prompting, prompt-writing skills, Claude Code planning, GitHub, Vercel deployment, front-end design
+- **Money angle:** Pitch cinematic landing pages to architecture, auto, and service firms. Title "$10k websites" is Nate's framing, not a stated client price. Start with one demo site for a local business.
+- **Duet-relevant:** no
+- **Promo:** free school community (requested to get the skill file); a tool linked in the description for caption effects (name not captured); other videos.

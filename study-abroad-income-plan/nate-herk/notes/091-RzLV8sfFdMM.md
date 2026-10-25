@@ -1,0 +1,19 @@
+## 91. How to Use Claude Code Better Than 98% of People
+- **Link:** https://www.youtube.com/watch?v=RzLV8sfFdMM | **Length:** 68 min | **AI-relevant:** yes
+- **Teaches:**
+  - Work as director: plan with context, build, verify, then fix the system. Each failure becomes a rule in CLAUDE.md, a skill, or a hook.
+  - Context is scarce. Quality drops in a "dumb zone" well before the window fills (about 250k tokens for Opus, by their estimate). Load skills on demand, not all up front.
+  - A harness is the wrapper around the model. The AI layer you build on top is CLAUDE.md, skills, hooks, and tools.
+  - Verify with real checks: render a diagram to PNG and inspect it, or run the app in a browser. Their claim: this lifts first-pass quality a lot.
+  - Security: a prompt is not a permission. Use hooks and scoped keys, and assume the agent can reach anything it can read.
+- **Tools / prices / numbers:**
+  - Claude Code hooks, skills, sub-agents, and agent teams (agent teams are token-heavy).
+  - Excalidraw diagram skill; Playwright and agent-browser for UI checks; Ralph loop for multi-session builds.
+  - Cole's open-source Archon project (a CLI with a skill for deterministic workflows).
+  - Cole's agent-team debate runs cost about 4 to 10% of a $200 plan's limit.
+  - Sponsor: ClickUp Brain 2, with 24/7 "super agents" that can be tagged in tasks.
+  - Agency quote-generation build was a failure because it was underscoped (Nate's account).
+- **Skills shown:** planning specs, verification design, hook-based guardrails, skill and CLI design, sub-agent orchestration
+- **Money angle:** sell AI-layer setup and workflow automation to businesses, for example multi-agent quoting (research, pricing, draft, check margin). Scope the build with questions first. No prices stated.
+- **Duet-relevant:** partly. Both discuss always-on agents (Brain 2 super agents, OpenClaw and Hermes), and Cole runs a trading bot as a scheduled routine.
+- **Promo:** ClickUp (paid sponsor segment, with a link offer); Free School community (free resource guide); AI Automation Society YouTube channel.

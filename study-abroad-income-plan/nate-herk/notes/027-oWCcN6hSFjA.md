@@ -1,0 +1,18 @@
+## 27. This ONE GPT-6 Astra Skill Replaces Your Higgsfield Subscription
+- **Link:** https://www.youtube.com/watch?v=oWCcN6hSFjA | **Length:** 12 min | **AI-relevant:** yes
+- **Teaches:**
+  - Connect Codex to Higgsfield's pay-per-use API instead of paying a monthly subscription, storing the key in a `.env` file.
+  - Use a Higgsfield API skill (Nate's free download) so the agent finds endpoints, submits generation requests, polls until done, and saves the MP4 locally.
+  - Send the same prompt to several video models (Seedance 2.5, Kling 3.0, MiniMax) and compare quality and cost.
+  - Find the break-even point: pay-per-use suits infrequent use, a subscription suits heavy, steady use.
+  - Batch work: have Codex or Claude brainstorm briefs and angles, then launch many generations at once.
+- **Tools / prices / numbers:**
+  - Higgsfield API, pay per generation; the comparison subscription was a $60/month plan (as stated).
+  - Benchmark run total spend: $7.40 (Nate's claim, his own test clips).
+  - Example clip costs: about $1.60, $0.20 and $0.50; UGC clips about $3.23 (Seedance 2.5), $0.60 (Kling 3.0), $1.10 (MiniMax).
+  - Stated break-even on Higgsfield plans: under about 19 clips/month (Plus monthly), 16 (Plus annual), 50 (Ultra monthly), 39 (Ultra annual).
+  - Launch promo (7 days): 15% off sale models, up to 50% off three picked models, $15 starting credit.
+- **Skills shown:** Codex, `.env` secret handling, API key setup, skill authoring, cross-model prompt testing, cost tracking
+- **Money angle:** Nate uses generated assets for events and ads and suggests selling or bundling them as a service; no client price points given. Start by running a small batch to learn your monthly volume before choosing a plan.
+- **Duet-relevant:** no
+- **Promo:** Free skill in Nate's free school community (Classroom, YouTube resources section).

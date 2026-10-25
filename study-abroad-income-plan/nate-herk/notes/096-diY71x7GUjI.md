@@ -1,0 +1,16 @@
+## 96. From Zero to Head of AI in 1 Year (as a regular person)
+- **Link:** https://www.youtube.com/watch?v=diY71x7GUjI | **Length:** 42 min | **AI-relevant:** yes
+- **Teaches:**
+  - Guest Eileen's path: 15 years as an email developer, then a team lead, then a layoff at 39. She tried Zapier, then Make, then n8n, and later Claude Code through Nate's course.
+  - She got a head-of-AI role covering strategy for 15 companies under one parent group, and she does hands-on builds. Her method: map the process, decide what stays human, then build.
+  - Her hire came from visible proof (YouTube videos, LinkedIn posts, demos), not a large application pool. The HR contact asked what she had built.
+  - Her advice: research the company and interviewer, show your work publicly even with few followers, and keep learning.
+  - Adoption point from the IBM survey, as cited: about 85% of employees have AI skills but utilization is around 25%, so change has to come from leadership.
+- **Tools / prices / numbers:**
+  - IBM survey of 2,000 CEOs, as cited by Nate: 76% report a chief-AI-officer equivalent, up from 26% in 2025.
+  - Tools named: Zapier, Make, n8n, ChatGPT, Claude Code.
+  - Sponsor Hyper Agent: usage-based pricing. Nate says referrers get $100 and friends get $1,000 (his claim); a limited bonus of $1,000 in free usage for the first 1,000 claimants.
+- **Skills shown:** n8n automation, Claude Code builds, process mapping, demo building, public content, interviewing
+- **Money angle:** Job path into in-house AI leadership roles. She says her new employer's staff were receptive because the goal was to remove tedious work, not to replace people. Consultants were noted as having a negative reputation with staff.
+- **Duet-relevant:** yes. The sponsor pitches always-on cloud agents that live in Slack and act on your behalf.
+- **Promo:** Sponsor Hyper Agent (referral bonus); Nate's free school community; the AI Automation Society YouTube channel; the AIS Plus course mentioned by the guest.

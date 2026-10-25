@@ -1,0 +1,17 @@
+## 10. I Built Another Andrej Karpathy Using Claude
+- **Link:** https://www.youtube.com/watch?v=bvGptCLDhyo | **Length:** 11 min | **AI-relevant:** yes
+- **Teaches:**
+  - Turn a public expert's writing, lectures, and posts into a Claude Code agent in four steps: gather sources, compile them into a linked wiki, extract a set of rules with source quotes, and add a run gate.
+  - Gathering uses one parallel agent per source (YouTube captions, X posts via a paid API) and saves raw files in untouched folders.
+  - The wiki is an LLM-maintained set of linked pages (sources, topics, rules, methods) with an index and log.
+  - Rules must cite an exact source; if none exists, the agent must say it is inferring.
+  - A hook blocks the agent from finishing until it has actually run its code. An ingest command adds new sources and updates the wiki.
+- **Tools / prices / numbers:**
+  - YouTube Transcript API and yt-dlp for captions (free)
+  - twitterapi.io for X posts (paid; Nate says about $1 for all posts since 2023)
+  - Obsidian (optional, visualization only)
+  - Corpus of over 700,000 words (Nate's figure); crawl took 45 to 60 minutes (Nate's estimate)
+- **Skills shown:** Claude Code sub-agents, prompt-driven scraping, LLM wiki building, rule extraction with citations, hooks, slash commands, test-driven verification
+- **Money angle:** Nate suggests the same method works for any paid expert, such as a sales coach or course author, and frames it as a way to build client work you can explain and defend. No pricing or income stated. none
+- **Duet-relevant:** no
+- **Promo:** A free "AI OS kit" linked in the description, which Nate says he uses to run his own operating systems.

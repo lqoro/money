@@ -1,0 +1,17 @@
+## 75. Claude Code + Clay Makes Lead Generation Actually Fun
+- **Link:** https://www.youtube.com/watch?v=zyvdl__Ywfk | **Length:** 18 min | **AI-relevant:** yes
+- **Teaches:**
+  - Clay handles the data (lead finding, enrichment, emails); Claude Code acts as the orchestrator through natural language
+  - Install the Clay plugin through the Claude Code terminal marketplace, then authenticate and confirm the tools load
+  - Feed Claude Code business context files (profile, case studies, FAQs, offer, website copy) so cold emails are personal
+  - Use a goal prompt (50 enriched HVAC decision-maker leads, verified, no blank columns) and let sub-agents work by city
+  - Export a CSV, import it into Clay, then build a campaign that pulls subject and body from each row
+- **Tools / prices / numbers:**
+  - Clay: credit-based enrichment with a provider waterfall (Nate's claim: about 80-90% email hit rate versus about 30% for one vendor)
+  - One 50-lead run used 172 Clay credits, about $12 (Nate's figure)
+  - Sender accounts can be bought in Clay, with about 5 inboxes per domain; the demo sends about 30 per day per account
+  - Follow-ups at day 3, with an optional third touch
+- **Skills shown:** Claude Code plugin install, goal prompts, parallel sub-agents, prompt and context design, cold email copywriting, CSV import, campaign setup
+- **Money angle:** Cold outbound for a small AI automation agency serving home-service businesses (his demo business is a fictional agency). Target HVAC owners with a low-risk offer: a 90-second video pitch, then a free 30-day trial. He estimates about $24 of spend per 100 leads at a 1% conversion rate. To start: write your context files, run a 50-lead batch, then scale with overnight runs.
+- **Duet-relevant:** no
+- **Promo:** His free school community (link in description), a full AI-operating-system course, and a planned markdown guide for the demo project, all in the school. He also mentions a podcast with Sav about cold email.

@@ -1,0 +1,13 @@
+## 60. How to Sell Claude Workflows (Without Starting an Agency)
+- **Link:** https://www.youtube.com/watch?v=zpS6JGJNaGg | **Length:** 8 min | **AI-relevant:** yes
+- **Teaches:**
+  - Position yourself as the "AI person": the go-to builder for AI inside one team or business, either as a service provider or as an in-house hire.
+  - Pick one team to start with, then make your work visible by helping coworkers with their most annoying tasks.
+  - Prove value on one expensive, repeatable, low-risk task. Name the number first (time saved, mistakes cut, or money made), then build, record a before/after, and measure.
+  - Use company-approved AI tools only, and never put customer data into unapproved ones.
+  - Attack the business's biggest constraint. Ask "what breaks if we doubled customers tomorrow?" to tell supply limits from demand limits, then repeat as each bottleneck clears.
+- **Tools / prices / numbers:** none named. His cited figures (not verified): PwC 2026 report, 62% pay premium for AI skills (up from about 25% a couple of years earlier); forward-deployed engineer postings from about 640 to over 5,000 in a year; MIT study, 95% of enterprise AI pilots showed no measurable return; McKinsey, 88% use AI, 7% scaled.
+- **Skills shown:** workflow building, stakeholder discovery, ROI framing, before/after case-study recording, constraint analysis.
+- **Money angle:** Sell AI workflow builds to businesses, or ask for a bigger budget as the in-house AI person by tying results to your name. He points to a free pricing guide for AI workflows in his community but gives no prices in this video.
+- **Duet-relevant:** no
+- **Promo:** Free school community (free courses, a free guide on pricing AI workflows, and a linked video on the same topic).

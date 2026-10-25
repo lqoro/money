@@ -1,0 +1,14 @@
+## 63. I Deleted All My Claude Skills... And Claude Got Smarter
+- **Link:** https://www.youtube.com/watch?v=XNQBCRcwXV4 | **Length:** 12 min | **AI-relevant:** yes
+- **Teaches:**
+  - Claude Code's system prompt is trimmed with each new model, because old corrections stop being needed. Instructions written for an older model can hurt a newer one.
+  - Over-specified step-by-step instructions can get in the way of a strong model. Describe the goal, the guardrails and the exit criteria instead.
+  - Test it: copy your repo, remove CLAUDE.md and skills, run the same task, and compare outputs.
+  - Keep business-specific context (brand colors, file locations). Loosen or rewrite the rest of the skills.
+  - Give agents a clear definition of "good" plus checks they can run on their own work.
+  - Advice from people who build harnesses may not fit knowledge workers. Learn from people whose use case matches yours.
+- **Tools / prices / numbers:** none named beyond Claude model versions (Opus 5, Opus 4.8). Nate's test: a 9-page resource guide with vs. without skills (his claim that the no-skills output read better in content).
+- **Skills shown:** Claude Code configuration, skill auditing, side-by-side output testing, writing verification criteria for agents
+- **Money angle:** none
+- **Duet-relevant:** no
+- **Promo:** Mentions AI S Plus in his example resource-guide footer (transcript name may be garbled). Also points to his YouTube channel.

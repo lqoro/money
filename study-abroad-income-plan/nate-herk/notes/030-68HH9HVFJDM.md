@@ -1,0 +1,16 @@
+## 30. AI News in 10 mins: 10% chance AI kills all humans
+- **Link:** https://www.youtube.com/watch?v=68HH9HVFJDM | **Length:** 10 min | **AI-relevant:** yes
+- **Teaches:**
+  - Recap of a viral resignation post (Sept 8) by a former pre-training researcher, who said the labs were racing toward superintelligence without acting responsibly.
+  - An Anthropic alignment lead replied that AI could kill all humans, putting it above a 10% chance within a decade and saying there is no clear alignment plan yet.
+  - Nate questions the post's reach and the author's brand-new account, noting it looked coordinated. This is his opinion, not verified.
+  - Dario Amodei's essay argues for a "race to the top" on safety, embedded third-party evaluators, and cooperation with China.
+  - Nate's takeaway: stay close to the tools, share articles, and raise awareness.
+- **Tools / prices / numbers:**
+  - Anthropic misuse report (Sept 10) covering seven harm areas; per Nate, it attributes over 151 million exchanges to an unauthorized Alibaba training campaign.
+  - A dating-app scam operation reportedly used about 5,000 AI personas.
+  - Viral post gained tens of millions of views quickly (Nate's account).
+- **Skills shown:** News tracking, source checking, plain summaries of AI policy
+- **Money angle:** none
+- **Duet-relevant:** no
+- **Promo:** none

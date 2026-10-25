@@ -1,0 +1,16 @@
+## 155. Codex Just 10x'd Claude Code Projects
+- **Link:** https://www.youtube.com/watch?v=B2Kh_ZoLVTM | **Length:** 13 min | **AI-relevant:** yes
+- **Teaches:**
+  - OpenAI released an official Codex plugin for Claude Code; setup is three commands (add marketplace, install plugin, run setup).
+  - `/codex review` is a read-only review of uncommitted changes or a branch diff. `/codex adversarial review` is a steerable critique of design choices, tradeoffs and failure modes.
+  - Common pattern: plan and build a proof of concept in Claude Code, then bring Codex in for review and production hardening.
+  - Head-to-head: same game prompt in both tools. Nate found the Codex build more polished, but still prefers how Claude Code feels to use.
+  - The adversarial review found real gameplay bugs (an unwinnable path past floor 10, a save rollback issue). Claude Code fixed them when asked.
+- **Tools / prices / numbers:**
+  - Codex can be used on a free ChatGPT plan (Nate's claim)
+  - Benchmark charts (Nate's reading): GPT-5.4 leads most coding benchmarks against Opus 4.6; Opus leads SWE-bench Verified by about one point
+  - Nate says Opus is much more expensive than GPT-5.4
+- **Skills shown:** Claude Code plugins, code review, multi-model workflows, git branch diffs
+- **Money angle:** none stated
+- **Duet-relevant:** no
+- **Promo:** article link in the description; no sponsor named

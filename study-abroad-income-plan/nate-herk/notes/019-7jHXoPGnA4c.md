@@ -1,0 +1,19 @@
+## 19. Opus 5.5 Just Changed Video Editing Forever (free skills)
+- **Link:** https://www.youtube.com/watch?v=7jHXoPGnA4c | **Length:** 19 min | **AI-relevant:** yes
+- **Teaches:**
+  - Give Claude Code (running Opus 5.5) a raw video and a natural-language brief; it adds motion graphics, sound, and B-roll from one prompt.
+  - Transcribe first so animations land on the right beats, then have the agent cut mistakes and dead space.
+  - Be specific about beats and the feeling you want; the agent fills in creative choices.
+  - Turn a video you admire into a reusable skill by asking the agent why it works, then refine the skill after each run.
+  - Verification loop: the agent screenshots its own output, critiques it, and iterates until it is good enough.
+- **Tools / prices / numbers:**
+  - Hyperframes: free tool where Claude Code writes HTML to animate video; setup is pointing Claude Code at its GitHub repo.
+  - ElevenLabs (pay per use, faster) or Whisper (free, local) for transcription.
+  - Kling turns generated images into video; key.ai mentioned for assets.
+  - Effort set to "high" for most runs.
+  - Sizzle-reel test: about 105 GB of event footage, one prompt plus one revision.
+  - Model names in captions (Fable 5.1, GBD-6 Astra) look garbled; not verified.
+- **Skills shown:** AI video editing, prompt-driven motion design, transcription, skill building, verification loops, Claude Code setup
+- **Money angle:** Video editing or motion-design services for creators, course builders, brands, and event recaps, with AI doing the production. No price points stated. Start by making a demo reel for a niche with free tools.
+- **Duet-relevant:** no
+- **Promo:** Free "AI Automation Society" school community hosts the Hyperframes Student Kit and a motion-reel skill; also a free ScrollCraft website-design skill; promotes the AIS Live event (Oct 17-18).

@@ -1,0 +1,14 @@
+## 315. Make Your Agents Communicate Better in n8n (Feedback, Specifying Inputs, Agent Logs)
+- **Link:** https://www.youtube.com/watch?v=vwlx-e8UYC8 | **Length:** 17 min | **AI-relevant:** yes
+- **Teaches:**
+  - Parent/child agent pattern in n8n: the parent agent calls child agent workflows as tools, and the child returns its last node's output as the tool response.
+  - Typed inputs: switching a child workflow trigger from "accept all data" to defined fields (setting, main character, adventure) lets the parent agent fill named parameters.
+  - Validation gate: an IF node checks that every required parameter is present and routes missing ones to a message telling the parent what to supply.
+  - Error feedback: enable "continue using error output" on agent and HTTP nodes so failures return a specific, readable message to the parent instead of a generic error.
+  - Loop guard: cap retries in the parent prompt or pass a counter field so the agents cannot retry forever.
+  - Debugging: use the agent logs and sub-execution view to see exactly what each agent received and returned.
+- **Tools / prices / numbers:** n8n; Gemini 2.0 Flash as the agent model (in the demo); a stock-chart API used as an example (not priced). No prices stated.
+- **Skills shown:** n8n agent workflows, sub-workflow tools, input schema design, conditional routing, error-output handling, execution debugging.
+- **Money angle:** none stated. The pattern could support reliable multi-agent client builds (feedback loops make paid automations less brittle), but Nate does not pitch a product.
+- **Duet-relevant:** no
+- **Promo:** Paid Community (link in description) with deep-dive courses, step-by-step builds, and five live calls per week.

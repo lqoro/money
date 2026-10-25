@@ -1,0 +1,18 @@
+## 115. How to Deploy Your Claude Automations (3 Methods)
+- **Link:** https://www.youtube.com/watch?v=xJ5oz63mIec | **Length:** 22 min | **AI-relevant:** yes
+- **Teaches:**
+  - Three ways to run agents while you are away, compared on where they run (your machine vs cloud) and how deterministic they are.
+  - Method 1, session loops: ask Claude Code to repeat a task on an interval (cron create/list/delete). Needs the session and your machine on; expires after days.
+  - Method 2, scheduled tasks and cloud routines: desktop tasks need the app open; cloud routines run on Anthropic's infrastructure and can be triggered by schedule, GitHub events or an API.
+  - Method 3, Modal or trigger.dev: deploy a Python or TypeScript script with a schedule or webhook; cheapest for deterministic jobs with no AI.
+  - Agent SDK gives Claude Code-style tooling in your own code but requires an API key.
+  - Hooks fire on events (message sent, tool use, session start/end) and are deterministic.
+- **Tools / prices / numbers:**
+  - Cloud routine limits (Nate's account): 15 runs a day on Max; he says 5 on Pro and 25 on Team/Enterprise.
+  - Routines have a 1-hour minimum interval; desktop loops showed about 3 days of expiry.
+  - Scheduled tasks can fire up to about 30 minutes late (jitter to spread API load).
+  - Modal (Python serverless) and trigger.dev (TypeScript workflows) are the hosted options; AI calls on them are billed per token.
+- **Skills shown:** scheduling, deployment, agent architecture, webhooks, hook design
+- **Money angle:** none stated; the value is running automations unattended. Hosted options add per-token costs.
+- **Duet-relevant:** partly; always-on scheduled agents, but no messaging-app bot or persistent personal assistant is built.
+- **Promo:** free school community (resource guide); mentions his earlier Modal and trigger.dev videos.

@@ -1,0 +1,18 @@
+## 88. So You Learned Claude, Now What?
+- **Link:** https://www.youtube.com/watch?v=-zL_trhnQaI | **Length:** 17 min | **AI-relevant:** yes
+- **Teaches:**
+  - Tools change fast, so the durable value is the underlying skill applied to each new AI phase: automation, then agents, then agentic work.
+  - Two paths into AI consulting: independent consultant (outside clients) or in-house AI lead at one company.
+  - Operating rule: pick a business constraint first, set a KPI second, build third.
+  - Four steps: audit your role for constraints, ship one small pilot with a measurable result, spot repeated problems across builds, then formalize the role internally.
+  - Build in public and keep case studies ready, since proof of results gets hires.
+- **Tools / prices / numbers:**
+  - Gartner projection: about $202B on agentic AI spend in 2026 (cited).
+  - AI consulting market expected above $64B by 2028 (cited).
+  - IBM 2026 CEO study: 76% of organizations have a chief-AI-type role, up from 26% two years earlier; sample was about 2,000 large CEOs.
+  - PwC: pay premium for AI skills rose from 21.5% to 56% (cited).
+  - Nate's claims: in-house AI roles often pay low to mid six figures; his former agency passed $100k/month in under a year.
+- **Skills shown:** problem diagnosis, KPI definition, workflow automation, case-study and portfolio building, internal pitching
+- **Money angle:** sell diagnosis plus AI solutions to businesses (consulting), or become the in-house AI person and seek a raise or new title. No prices given beyond salary ranges. Start by auditing one role, choosing one constraint, and piloting one fix.
+- **Duet-relevant:** no
+- **Promo:** Free School community (400k+ members, link in description; resource guide and courses there); a book on his operating model in progress; a teased credibility product.

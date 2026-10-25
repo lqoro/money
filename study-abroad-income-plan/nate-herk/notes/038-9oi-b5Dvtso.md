@@ -1,0 +1,14 @@
+## 38. GPT-6 Astra Voice Mode Automates Literally Anything
+- **Link:** https://www.youtube.com/watch?v=9oi-b5Dvtso | **Length:** 15 min | **AI-relevant:** yes
+- **Teaches:**
+  - Delegate work by voice in the Codex app. He dictates tasks, and the voice agent starts coding threads that run in the background and report back.
+  - Keep work in the right project. When the voice agent started chats outside his main project, he told it to use that project, so the tasks get the same context.
+  - Let threads coordinate. An article thread and a thumbnail thread shared the approved cover, so the article used it.
+  - Turn a YouTube video into an X article with screenshots that are cropped and blurred where needed (for example, API keys or personal email), which he then publishes.
+  - Add features by voice: a meetings tab that combines the calendar with Fireflies meeting summaries and action items.
+  - Run the same tasks from a phone remote while away, with the same thread still in sync.
+- **Tools / prices / numbers:** Codex app voice mode with GPT-6 Astra; Fireflies; Google Calendar; ClickUp; Slack; email; X; Canva (browser use). In one example the article used 11 screenshots. No prices given. Nate's claim: the browser use is the best he has seen.
+- **Skills shown:** voice delegation, multi-agent coordination, browser use, screenshot-based writing, web page design with a scroll-effects skill
+- **Money angle:** none stated
+- **Duet-relevant:** yes. A voice-controlled persistent assistant that acts across calendar, messages and tasks, runs jobs while you are away, and is reachable from a phone.
+- **Promo:** points to his free school community, the AI Automation Society Plus course page the agent built, and his related video on building sites with his ScrollCraft skill

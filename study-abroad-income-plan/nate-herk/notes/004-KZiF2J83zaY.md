@@ -1,0 +1,13 @@
+## 4. AI Agents Just Became Multiplayer. Here's How to Build Them.
+- **Link:** https://www.youtube.com/watch?v=KZiF2J83zaY | **Length:** 23 min | **AI-relevant:** yes
+- **Teaches:**
+  - Shared multi-user workspaces where people and their AI agents collaborate in channels, with threads per task.
+  - Bring your own Claude Code or Codex subscription into a team workspace, so agents run on local subscriptions.
+  - Onboarding a new workspace: export a knowledge markdown from your existing AI setup, upload it, connect tools via OAuth or API keys.
+  - Roll out AI one business unit at a time, starting a small team on a single channel and expanding after a process works.
+  - Use agents for lightweight project tracking: daily check-ins and automations that nudge stalled items.
+- **Tools / prices / numbers:** Kylon (multiplayer agent workspace, the tool he demos). Billing is per workspace, not per member, with monthly credits. Hosted agents come in fast, pro and max tiers (max reportedly uses Opus). Connections include Gmail, Google Calendar, GitHub, Notion, ClickUp. Per-agent usage is visible. No dollar prices stated.
+- **Skills shown:** multi-agent setup, workspace onboarding, OAuth and API key connections, automation design, team process design
+- **Money angle:** Small teams and agencies that want shared AI assistants for ops, content or project tracking. Could sell setup, workflow builds and process onboarding on top of a tool like this. Price points not stated. Start by building one channel's workflow for a real team.
+- **Duet-relevant:** Yes. Persistent agents that people message and that act for the team, with an always-on mobile angle (but local-subscription agents only respond while the computer is on).
+- **Promo:** Kylon is a sponsored-style tool. He says the company approached him and he was initially hesitant about price. He also mentions his AI+ community and Humanly Possible show, with no codes or affiliate links stated.

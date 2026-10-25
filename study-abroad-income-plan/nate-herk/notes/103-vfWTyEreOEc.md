@@ -1,0 +1,13 @@
+## 103. I Tested Every Claude Code Feature, These 12 Are the Best
+- **Link:** https://www.youtube.com/watch?v=vfWTyEreOEc | **Length:** 20 min | **AI-relevant:** yes
+- **Teaches:**
+  - Features are ranked by how much they change Nate's daily knowledge-work and automation, not by software engineering value.
+  - Skills are the top pick: markdown recipes that can be shared, chained, or reduced to a slash command.
+  - /goal: give an objective, verifiable definition of done, then let the agent run until it is met. Example: optimizing a page's load behavior took about 1.5 hours.
+  - Routines and remote control: scheduled agents, plus driving a local session from a phone. /loop runs a recurring prompt tied to the session.
+  - /rewind to roll back code and conversation to a checkpoint instead of correcting the agent in a new message. Agent teams (experimental, token-heavy) let agents debate each other.
+- **Tools / prices / numbers:** Opus 4.8; status line showing context use (for example 274K of 1M tokens); /insights report covering about 1,500 messages across 153 sessions; Google Workspace CLI; Claude desktop app; Glydo (voice dictation, mentioned as a tool Nate uses). No prices stated.
+- **Skills shown:** slash commands, skill authoring, agent team setup, cron-based loops, remote control, cloud planning, rollback workflow
+- **Money angle:** none
+- **Duet-relevant:** partly. Remote control from a phone and scheduled routines (agents that run on a timer) overlap with an always-on agent that acts for you.
+- **Promo:** Nate's free school community (Classroom, "All YouTube resources") for the slide deck and skills

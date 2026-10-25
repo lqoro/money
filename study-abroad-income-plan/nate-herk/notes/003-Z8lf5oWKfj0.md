@@ -1,0 +1,17 @@
+## 3. Matt Pocock: The Most Valuable Skill to Learn in the Age of AI
+- **Link:** https://www.youtube.com/watch?v=Z8lf5oWKfj0 | **Length:** 45 min | **AI-relevant:** yes
+- **Teaches:**
+  - Agents work best when you tell them what you care about; the gap between your intent and the agent's understanding is the core problem.
+  - Improve the codebase the agent works in (tests, checks, easy-to-change code). Matt says a clean environment matters more than the model or harness.
+  - Use a "grill me" style skill so the agent interviews you and surfaces the unknown unknowns (security, deployment, edge cases) before it builds.
+  - Use domain-driven design ideas: keep the same terms in code, database, UI and client conversations.
+  - Climb the trust ladder: watch the agent closely, verify its output, then add parallel agents, skills and data sources over time.
+  - Matt dropped spec-driven development after months of worse results and went back to focusing on the code.
+- **Tools / prices / numbers:**
+  - Claude Code with Opus 5.5 at medium effort (Matt's preference).
+  - Hostinger KVM 2 VPS: 2 vCPU, 8 GB RAM, 100 GB storage, with a Claude Code template (sponsor read).
+  - Matt's claim: about four agents running at once; 200-300 commits a day.
+- **Skills shown:** agent prompting, spec and process design, testing and code quality, domain-driven design, agent orchestration, skill authoring
+- **Money angle:** Matt says the opportunity is turning agents into repeatable processes for organizations, since every org works differently. He also suggests freelancers ship a quick prototype that shows they understand the client's business, then charge for the work. No prices stated.
+- **Duet-relevant:** briefly describes an agent wired to Slack, Gmail and a to-do list, where dictated tasks are triaged automatically.
+- **Promo:** Hostinger VPS sponsor (Nate's link, extra 10% off yearly plans with code nateherk). Nate also pitches a free "AI OS" kit built on his framework, linked in the description. Matt mentions his own skills, newsletter and social channels.

@@ -1,0 +1,17 @@
+## 50. Set Up a Personal Hermes in 14 Mins (no VPS or mac mini)
+- **Link:** https://www.youtube.com/watch?v=gQef3d3erOs | **Length:** 14 min | **AI-relevant:** yes
+- **Teaches:**
+  - Managed Hermes vs a self-hosted VPS: managed means no server to maintain; a VPS gives root access and room for other apps such as n8n.
+  - Setup order: create a managed Hermes app, connect a ChatGPT subscription for model access, create a Telegram bot with BotFather, paste the bot token, look up your Telegram user ID with an info bot, then finish setup and pick a model.
+  - Conversations sync across the web dashboard, Telegram and the phone.
+  - Add API keys as environment variables (his example is Tavily). If a key is not visible, restart the agent.
+  - Add skills by pasting a skill's YAML front matter and body. A "grill me" skill makes the agent interview you to build context.
+- **Tools / prices / numbers:**
+  - Managed Hermes starts at about $6/month (his figure); a VPS costs a bit more.
+  - Model access through a ChatGPT subscription; he picks a GPT 5.6 model.
+  - Hostinger offers 10% off yearly plans (12 or 24 months) through his link and coupon code.
+  - Tavily search: 1,000 free credits; one search used 5.
+- **Skills shown:** agent setup, Telegram bot creation, API key management, skill authoring, memory and context setup
+- **Money angle:** none
+- **Duet-relevant:** yes. A persistent personal agent you reach from Telegram and your phone, with memory and scheduled jobs.
+- **Promo:** Hostinger link and coupon code from the description; the grill-me skill is in his free school community.

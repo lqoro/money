@@ -1,0 +1,14 @@
+## 65. How to Build a One Person AI Business (Using Claude Code)
+- **Link:** https://www.youtube.com/watch?v=LVAHYV4Xrto | **Length:** 24 min | **AI-relevant:** yes
+- **Teaches:**
+  - Position yourself as an AI partner who sells outcomes, not as a builder who sells features.
+  - Every project should map to one of three buckets: get more customers, raise customer value, or cut costs.
+  - Use a "service ladder": paid education or setup, then a paid audit, then a project, then a retainer. Earn each rung with the one below it.
+  - Before selling, build your own AI operating system in Claude Code. Use it as proof and a portfolio.
+  - Scope each build by filling in four blanks: bucket, KPI, baseline today, 60-day target.
+  - Find the real constraint by walking the client's process front to back and noting where friction shows up. The fix may not need AI.
+- **Tools / prices / numbers:** Claude Code. His suggested ranges: education $100-500/hr ($200 default); audit $500-3,000; project $2,500-10,000; retainer $3,000-10,000/month. Stats he cites (not verified): McKinsey 3-15% revenue uplift, IBM 25% vs 86%, Capgemini 13% reach production, Upwork 178% demand growth. The community size is given as both 375 and about 400,000.
+- **Skills shown:** outcome-based consulting, workflow discovery, KPI scoping, cold and warm outreach, pricing tiers
+- **Money angle:** Sell AI consulting to small businesses (real estate, HVAC, coaches, agencies). Start with a $100-200 session, then a paid audit, then a build, then a monthly retainer. Nate's claim: two retainers at $5K/month each is six figures a year. Find first clients through warm contacts, then Upwork, then building in public. Aim for 10 "no"s, not a first "yes."
+- **Duet-relevant:** only loosely. He suggests a scheduled morning brief built from your calendar and inbox in Claude Code.
+- **Promo:** Free school community (link in description). AIS Plus course for the Upwork playbook. Free AI OS course and a pricing video. Free resource guide inside the community.

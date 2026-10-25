@@ -1,0 +1,13 @@
+## 59. A Week of Grok Bot Lessons in 10 Mins
+- **Link:** https://www.youtube.com/watch?v=TMPUUyQC5aM | **Length:** 10 min | **AI-relevant:** yes
+- **Teaches:**
+  - Run a "grill me" interview skill so the bot learns your business and goals, then save it as a reusable skill.
+  - Use one chief-of-staff bot as the only contact, with a description that tells it to delegate to specialist bots first.
+  - Ask the chief to propose which specialist sub-agents to add, based on the team you already have.
+  - Separate private agent memory from shared memory: put cross-bot facts (business, channel, tools) in shared memory, keep the rest agent-only.
+  - Log bot work to a project tracker via a skill; teach a task by screen-recording it so the bot turns the demo into a skill; set cloud routines on schedules or events (Slack, Git, Teams) with saved logged-in browser profiles.
+- **Tools / prices / numbers:** none (Grok Bot plugins such as Gmail and calendar; Compozio to reach apps like YouTube, Perplexity and LinkedIn; ClickUp as the log).
+- **Skills shown:** skill creation, multi-agent delegation, memory configuration, task logging, screen-recording demonstrations, scheduled routines, saved browser sessions.
+- **Money angle:** none
+- **Duet-relevant:** yes. Grok Bot is an always-on bot team you reach from phone and desktop, with cloud routines that keep running when devices are off. The chief-of-staff pattern and the shared-versus-private memory split apply directly to a personal agent.
+- **Promo:** Free school community (free grill-me skill download).

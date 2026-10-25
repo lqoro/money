@@ -1,0 +1,17 @@
+## 87. I Battle Tested Sakana Fugu's Fable Killer
+- **Link:** https://www.youtube.com/watch?v=GpSqBjW6hR4 | **Length:** 12 min | **AI-relevant:** yes
+- **Teaches:**
+  - Sakana Fugu (Fugu Ultra) is a multi-agent system exposed as one API: a small manager model breaks a task down and routes the pieces to frontier models such as Opus and GPT.
+  - It can run inside Claude Code, but setup needs a markdown guide and an API key, not a simple endpoint swap.
+  - Nate's test method: Codex wrote 38 tasks, Opus 4.8 and Fugu each attempted them, and Codex graded pass or fail.
+  - Key insight: this is the same pattern as Claude Code sub-agents, just spread across vendors. It is an orchestrator, not a smarter base model.
+- **Tools / prices / numbers:**
+  - Fugu Ultra vs Opus 4.8 over 38 tasks: 36 ties; Opus won 2 (Nate's result).
+  - Total wait: about 357 min for Fugu vs 80 min for Opus, roughly 4.5x slower.
+  - Cost: about $50 for Fugu vs about $10 for Opus, roughly 5x.
+  - Nate ran it on a $200/mo Claude plan; Fugu filled his 5-hour window quickly.
+  - Sakana's benchmark claims (matching Fable and Mythos) are Sakana's, not verified here.
+- **Skills shown:** multi-model orchestration, Claude Code with custom API routing, eval design with an LLM grader, cost and latency tradeoff analysis
+- **Money angle:** none. Nate suggests that tracking which model is cheapest for each task is a valuable skill.
+- **Duet-relevant:** no
+- **Promo:** Free School community (400k+ members, link in description); the setup markdown file is offered free there.

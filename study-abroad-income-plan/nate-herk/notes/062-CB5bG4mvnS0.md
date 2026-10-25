@@ -1,0 +1,13 @@
+## 62. Codex's Browser Agent Automates Literally Anything
+- **Link:** https://www.youtube.com/watch?v=CB5bG4mvnS0 | **Length:** 16 min | **AI-relevant:** yes
+- **Teaches:**
+  - Use the Codex desktop app's in-app browser: annotate page elements and send them as change requests, or let Codex drive the page while you watch.
+  - Have Codex QA a site by clicking through forms, trying invalid input, testing keyboard submit and mobile view, then listing failures.
+  - Turn a one-off browser workflow into a skill (his example: download bank statements as CSVs and file them).
+  - Handle logins: sign in once and Codex keeps the session; for expiring logins, import a password-manager CSV. He warns to watch bank runs closely and to check two-factor prompts manually.
+  - Choose the cheapest reliable method: use an API first, then a deterministic macro script, and browser or computer use only when vision and reasoning are needed. Schedule browser skills as recurring tasks.
+- **Tools / prices / numbers:** none stated. Codex desktop app; Codex in-app browser (headed or headless); Codex computer-use plugin for desktop apps; X (drafting an article via browser, since the X API charges per use). His time estimate for one task: about 5 to 10 minutes saved.
+- **Skills shown:** browser automation, QA testing, skill creation, scheduled tasks, computer use, password-manager setup.
+- **Money angle:** none
+- **Duet-relevant:** no (a desktop coding agent, not a persistent messaging-app bot; it can run scheduled browser skills)
+- **Promo:** none

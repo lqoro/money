@@ -1,0 +1,18 @@
+## 108. 100 Hours Testing Claude Code vs ChatGPT Codex (honest results)
+- **Link:** https://www.youtube.com/watch?v=RLjaUES9P8A | **Length:** 27 min | **AI-relevant:** yes
+- **Teaches:**
+  - Both tools share the basics: local file editing, desktop apps, VS Code extensions, MCP, skills, hooks, sub-agents, and cloud delegation. Pick by workflow fit, not by feature checklist.
+  - Claude Code is more customizable: about 30 hook events (Codex about 6), sub-agents it spawns on its own, and /ultra plan, /ultra review, /loop, channels, and the Agent SDK.
+  - Codex is more of a shipping pipeline: built-in worktrees, an in-app browser, a computer-use QA flow, and @Codex on GitHub PRs.
+  - Test method: same three prompts (research PDF, landing page, dashboard) in each desktop app. Token and time totals were pulled from session logs.
+  - Results were mixed. Claude Code won the design work. Codex won the research report and was faster on the landing page.
+- **Tools / prices / numbers:**
+  - Claude Pro $20/mo; Max 5X $100/mo; Max 20X $200/mo. ChatGPT Plus $20/mo; Pro $200/mo. An OpenAI $100 tier had a 2x Codex promo through May 31 (per Nate).
+  - Context: Claude 1M tokens; latest GPT model about 256k.
+  - Test runs (Claude Code on Opus 4.7 high vs Codex on GPT-5.5 high): dashboard 2 min and about 283k tokens (Claude) vs 8 min and about 1.64M (Codex). Research report 8m15s and 4.7M (Claude) vs 8 min and 2.8M (Codex). Landing page 4m39s (Claude) vs 3 min (Codex).
+  - Codex wrote about 2 to 5x fewer output tokens per build. Claude cost more on API-equivalent pricing in his totals.
+  - Third-party agents: Anthropic's docs bar third-party products from using Claude.ai logins or rate limits unless approved. OpenAI allows ChatGPT sign-in for OpenClaw (per Nate).
+- **Skills shown:** Claude Code configuration, hooks, sub-agents, worktrees, computer use, GitHub integration, cost and token analysis
+- **Money angle:** none (plan choice only; he suggests trying both subscriptions)
+- **Duet-relevant:** no
+- **Promo:** His free school community, where he hosts a free resource guide. No sponsor in this video.

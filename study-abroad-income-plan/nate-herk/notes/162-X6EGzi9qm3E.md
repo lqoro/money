@@ -1,0 +1,16 @@
+## 162. Claude Code Just Got Another Huge Upgrade
+- **Link:** https://www.youtube.com/watch?v=X6EGzi9qm3E | **Length:** 8 min | **AI-relevant:** yes
+- **Teaches:**
+  - Computer use lets Claude Code see the screen, move the mouse, type, and take screenshots on a Mac (research preview, desktop app only).
+  - Enable it in the desktop app's general settings, then grant per-app permissions (Finder, ClickUp, etc.) when the session first uses them.
+  - Tip: if Claude reaches for a browser extension or Playwright instead, be more explicit in the prompt. Updating or reinstalling the desktop app helps.
+  - Pair it with Dispatch to send tasks from a phone to the local machine, or with scheduled tasks for recurring jobs.
+  - Native browser control is blocked for security (Safari was read-only). Connected apps and the Chrome extension are the workarounds.
+- **Tools / prices / numbers:**
+  - Claude Desktop app, Claude Code, Claude Co-work, Dispatch, scheduled tasks.
+  - Mac only for now; Windows promised "in a few weeks".
+  - Pro and Max plans only (not Teams or Enterprise).
+- **Skills shown:** enabling computer use, per-app permission setup, prompting for desktop actions, phone dispatch, scheduled desktop tasks
+- **Money angle:** none stated. Nate hints at automating legacy desktop apps that have no API and at QA-clicking through apps in a sandbox, but he does not price either.
+- **Duet-relevant:** Dispatch lets you text Claude from a phone to run tasks on your always-on local computer, so it fits the personal-agent-that-acts-for-you category.
+- **Promo:** none

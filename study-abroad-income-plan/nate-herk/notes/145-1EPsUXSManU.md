@@ -1,0 +1,16 @@
+## 145. Claude Just Told Us to Stop Using Their Best Model
+- **Link:** https://www.youtube.com/watch?v=1EPsUXSManU | **Length:** 15 min | **AI-relevant:** yes
+- **Teaches:**
+  - The advisor strategy (beta, Messages API): a cheaper executor model (Sonnet or Haiku) does most steps and calls Opus only when it needs help, via a tool-style request.
+  - Set a max-uses cap on advisor calls to control cost.
+  - Messages API vs Claude Code vs Agent SDK: the API is for building your own app; Claude Code is a finished coding tool.
+  - In Claude Code, the "Opus Plan" model setting uses Opus in plan mode and Sonnet otherwise, which saves session usage.
+  - Test many prompts across configurations before committing; Nate ran only about 10 to 20 tests.
+- **Tools / prices / numbers:**
+  - Per million tokens (per Nate): Opus $5 input / $25 output; Sonnet $3 / $15; Haiku $1 / $5.
+  - Anthropic's evals as cited: Sonnet plus Opus advisor +2.7 points on SWE-bench and about 12% lower cost per agentic task. Haiku plus Opus scored 41.2% on BrowseComp vs 19.7% for Haiku alone.
+  - Nate's demo: one Opus call cost about 21x a Haiku-only call on a simple question.
+- **Skills shown:** model selection, API request design, cost tuning, Claude Code model settings, building a small dashboard with Claude Code
+- **Money angle:** Build cost-optimized chatbots or support agents for clients and charge for the routing design. No prices quoted for that work.
+- **Duet-relevant:** no
+- **Promo:** free school community (dashboard project shared there).

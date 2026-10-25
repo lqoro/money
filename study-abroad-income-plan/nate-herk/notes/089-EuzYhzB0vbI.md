@@ -1,0 +1,19 @@
+## 89. Finally. Agent Loops Clearly Explained.
+- **Link:** https://www.youtube.com/watch?v=EuzYhzB0vbI | **Length:** 15 min | **AI-relevant:** yes
+- **Teaches:**
+  - A loop is a trigger, an action, and a stop condition. The two pillars are a checkable goal and verification.
+  - Core cycle is reason, act, observe, repeat, until the done criteria are met. Prefer objective metrics ("until X equals Y") over "until satisfied."
+  - Patterns: solo loop, maker-checker (one agent builds, one grades), and a manager with helper agents.
+  - Most tasks do not need a loop; one terminal session with a good prompt is often enough.
+  - Loops are only as good as their verification. Very long loops (12+ hours) were not useful to Nate.
+- **Tools / prices / numbers:**
+  - Claude Code `/goal` prompts used to drive each loop.
+  - Matthew Berman's community loop library as a source of prompts.
+  - Demos: thumbnail loop (27 min), Three.js plane (37 min), Abbey Road recreation in HTML/CSS (stopped at v7 on a score threshold of 9 with an 8-pass cap).
+  - Nate's typical use: an overnight loop of 4 to 8 hours, then manual iteration.
+  - Nate uses a Hyperframes setup in Claude Code for video editing loops.
+  - Claims that Boris Cherny and Peter Steinberger no longer prompt coding agents are cited, not verified.
+- **Skills shown:** writing goal and done criteria, verification design, screenshot-based visual checks, sub-agent grading
+- **Money angle:** none
+- **Duet-relevant:** no
+- **Promo:** Free School community (YouTube resources classroom; slide deck and audit attached there).

@@ -1,0 +1,13 @@
+## 69. This AI Technology Will Replace Millions (Here's How to Prepare)
+- **Link:** https://www.youtube.com/watch?v=Ums8suyAG1A | **Length:** 14 min | **AI-relevant:** yes
+- **Teaches:**
+  - Agentic AI takes a stated outcome and works out the steps itself, instead of answering one question at a time.
+  - Move from Claude chat to Claude Code so the agent works on local files, folders and connected tools.
+  - A goal command keeps the agent working until a condition is met; the agent checks its own output (for example, screenshots an Excel file) before handing it back.
+  - Onboard the agent like a new hire: explain the goal and what good and bad output look like, start with one real recurring task, correct its output, then stack bigger tasks and connect tools such as Gmail, Slack and calendar.
+  - Record a baseline metric before using AI, then compare it after each month.
+- **Tools / prices / numbers:** Claude desktop app, Claude Code, Clay (lead data), Python scripts for YouTube analytics. Demos (Nate's claims): quarterly review of 75 videos in about 10 minutes versus half a day manually; 50 enriched leads with outreach emails in about 20 minutes. Intro claims, unsourced: agentic AI replaces about 50% of jobs and does about 60% of company tasks.
+- **Skills shown:** Claude Code, goal-driven prompting, YouTube analytics, lead enrichment, cold outreach drafting, single-file HTML app building, AI onboarding.
+- **Money angle:** Nate's examples are a cleaning-business job tracker (HTML, which could become a website or mobile app) and a lead-gen service that writes outreach for local businesses. His sample pitch offers a free 30-day trial with no fee if no bookings result. No prices stated. Start by building one real workflow for a local business, then sell the result.
+- **Duet-relevant:** no
+- **Promo:** Free school community with a free course on building your own AI operating system (link in description). Mentions his book, certification program and team in passing.

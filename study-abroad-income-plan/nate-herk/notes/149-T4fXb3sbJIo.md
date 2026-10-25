@@ -1,0 +1,17 @@
+## 149. Planning In Claude Code Just Got a Huge Upgrade
+- **Link:** https://www.youtube.com/watch?v=T4fXb3sbJIo | **Length:** 16 min | **AI-relevant:** yes
+- **Teaches:**
+  - "Ultra plan" runs Claude Code's planning in Anthropic's cloud. Start it from the CLI with the slash command or by writing the keyword in a prompt.
+  - Review the plan on the web: comment on sections, add emoji reactions. Approving it "teleports" the plan back to the terminal for execution.
+  - The project must be synced to Git or GitHub so the cloud can read it. Ultra plan did nothing in the desktop app or VS Code extension in his test.
+  - Per his source research, it runs three parallel exploration agents plus one critique agent on Opus, capped at 30 minutes.
+  - Cloud planning still missed his skills until he named them explicitly in a comment.
+- **Tools / prices / numbers:**
+  - Token use in his dashboard test: local plan 131,000; ultra plan 82,000 (cloud planning tokens not counted).
+  - Timings shift across the video. He reports faster planning and faster execution (roughly 10 min vs 30+ min) in his test.
+  - On API billing, a local plan used about 1.5M input and 23k output tokens. It moved his Max 20x usage by about 1% (his estimate).
+  - Ultra plan needs a Pro or Max subscription, not API billing.
+- **Skills shown:** Claude Code plan mode, Git sync, web plan review, comment-driven plan revision, custom skill invocation
+- **Money angle:** none stated
+- **Duet-relevant:** no
+- **Promo:** none

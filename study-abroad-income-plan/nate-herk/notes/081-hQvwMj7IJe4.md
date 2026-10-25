@@ -1,0 +1,16 @@
+## 81. Fable 5 + Karpathy’s LLM Wiki is Basically Cheating
+- **Link:** https://www.youtube.com/watch?v=hQvwMj7IJe4 | **Length:** 15 min | **AI-relevant:** yes
+- **Teaches:**
+  - Builds a personal knowledge base ("LLM wiki") from Karpathy's gist: create an Obsidian vault, paste the gist into Claude Code, and ask it to implement the idea with a CLAUDE.md schema, an index, a log, and folder conventions.
+  - Uses a raw/ folder for source drops; the model ingests each source into wiki pages, often splitting one source into several cross-linked pages.
+  - Picks structure by content: a flat folder for meeting transcripts, subfolders for mixed topics. Changes the ingest rules when the layout does not make sense.
+  - Treats the index, log, and backlinks as a routing layer so agents find the right page without spending tokens on crawling.
+  - Notes the wiki is plain markdown, so other agents can read it too.
+- **Tools / prices / numbers:**
+  - Obsidian (front end), Claude Code in VS Code, Claude Fable 5.
+  - Fable is included on his plan only until July 7; after that it runs on usage credits. He cites a company employee's tweet saying it may return to subscriptions.
+  - Two sources (a system card PDF and a web article) became 20 wiki pages in about 10 to 12 minutes.
+- **Skills shown:** Obsidian vault setup, CLAUDE.md schema design, knowledge-base ingestion, markdown backlinking, choosing a model for ingest vs. querying.
+- **Money angle:** none directly. He presents the wiki as an internal second brain that makes his scripts and emails more specific. He suggests a cheaper model such as Opus for routine ingest.
+- **Duet-relevant:** no (only a passing mention of connecting a Hermes agent to the markdown wiki).
+- **Promo:** free school community with a free build-your-own AIOS course (link in description).

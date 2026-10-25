@@ -1,0 +1,13 @@
+## 134. Claude Design Builds Beautiful 3D Websites Instantly (full tutorial)
+- **Link:** https://www.youtube.com/watch?v=TcFeSjwTo7g | **Length:** 35 min | **AI-relevant:** yes
+- **Teaches:**
+  - Brief a brand in chat, then have Claude write the brand identity and copy for a hero section.
+  - Generate a looping background: an image prompt, a still-frame-to-video prompt, and a fixed camera. Feed the still into Claude Design as a sketch and upload the clip.
+  - Start a high-fidelity prototype in Claude Design, add comments and inline edits, and use the tweaks panel to test colors, fonts, and spacing without extra prompts.
+  - Export the project as a zip, open it in Claude Code, push it to a private GitHub repo, and deploy it on Vercel. Fix a 404 by renaming the entry file to index.html.
+  - Check mobile layout in dev tools, and treat design systems as portable markdown files.
+- **Tools / prices / numbers:** Claude Design (paid plan required; weekly quota). Opus 4.7 used for planning, with Sonnet suggested for later edits. He reports spending over $200 in extra usage on experiments (his figure). Video upload cap about 30 to 40 MB (his estimate). Nano Banana 2 and a video model via key.ai. Says he is on a $99 "for life" plan (product not named clearly in transcript).
+- **Skills shown:** AI website design, prompt writing for image and video, GitHub, Vercel deployment, Claude Code handoff, design system creation.
+- **Money angle:** Who pays: small brands and founders who need a polished landing page fast. He builds demo sites for his own brand and a fictional brand. Sell a one-page or scroll-journey site package, plus a design system export. No price points for client work are stated.
+- **Duet-relevant:** no.
+- **Promo:** his free school community (AI Automation Society, with a free resource doc and site zip); points to a separate video on website hacks; motion inspiration site mentioned.

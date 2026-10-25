@@ -1,0 +1,17 @@
+## 114. The AI Career Opportunity Nobody is Talking About in 2026
+- **Link:** https://www.youtube.com/watch?v=iIfOprq2kCM | **Length:** 19 min | **AI-relevant:** yes
+- **Teaches:**
+  - Most AI-career advice points to starting an automation agency; Nate argues for a second route, the in-house AI leader role.
+  - Path A: work as an AI consultant or freelancer, then get pulled in-house by a client.
+  - Path B: become the most AI-fluent person inside your current company and take the internal seat when it opens.
+  - Close the adoption gap in your current job: pick one workflow nobody has automated, build it, measure the time saved, and show your team.
+  - Choose a path that fits what you enjoy, since you have to keep going through hard stretches.
+- **Tools / prices / numbers:**
+  - IBM survey of 2,000 CEOs (as cited): 76% have or are hiring a chief AI officer, up from 26% two years earlier.
+  - 25% of employees use AI daily vs 86% of CEOs saying staff have the skills (self-reported).
+  - 2025 IBM study of 600 chief AI officers (as cited): 57% were promoted internally.
+  - Nate's claim: he scaled an agency past $100,000 a month and then sold it; his free community has over 350,000 members.
+- **Skills shown:** AI consulting, change management, workflow automation, internal positioning
+- **Money angle:** AI consulting or automation agency work for clients (path A) or an internal promotion (path B); no price points stated for either.
+- **Duet-relevant:** no
+- **Promo:** his free community (linked in description); mentions an "AIS+" member community in passing.

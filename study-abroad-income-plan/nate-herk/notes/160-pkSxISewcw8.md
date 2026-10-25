@@ -1,0 +1,17 @@
+## 160. STOP Using Bypass Permissions, Use This New Feature Instead
+- **Link:** https://www.youtube.com/watch?v=pkSxISewcw8 | **Length:** 6 min | **AI-relevant:** yes
+- **Teaches:**
+  - Default "ask before edits" mode interrupts long sessions with a prompt for every edit, web fetch, or bash command.
+  - Bypass-permissions mode removes all prompts, which is risky if you are not watching.
+  - Nate's older fix was a local settings file with an allow list and a deny list, set per project or globally.
+  - Auto mode is a middle path: a classifier reviews each tool call before it runs, lets safe actions through, and blocks risky ones so Claude can try another approach.
+  - Auto mode reduces risk but does not remove it, so Nate recommends it only in isolated environments.
+- **Tools / prices / numbers:**
+  - Claude Code auto mode, in research preview, available to Claude Team users only.
+  - Enable it in organization settings, the same way bypass mode is enabled.
+  - Launch with an enable-auto-mode flag, or pick it from the permissions menu in the VS Code extension; Shift+Tab cycles modes in the terminal.
+  - Sessions are described as slightly more expensive, since a check runs before each tool call. No figures given.
+- **Skills shown:** Claude Code permission modes, settings-file allow/deny configuration, org admin setup, risk tradeoffs for unattended agent runs
+- **Money angle:** none
+- **Duet-relevant:** no
+- **Promo:** none

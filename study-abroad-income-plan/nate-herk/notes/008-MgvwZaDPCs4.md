@@ -1,0 +1,15 @@
+## 8. Grok Bot Just Got 2 Massive Upgrades. Do These Things Now.
+- **Link:** https://www.youtube.com/watch?v=MgvwZaDPCs4 | **Length:** 9 min | **AI-relevant:** yes
+- **Teaches:**
+  - Upgrade 1: Grok Bot now routes each task to the model it judges best (Anthropic models, image and music models, other APIs). Simple requests go to a fast Grok model; users get no visibility or control over the choice.
+  - Upgrade 2: Grok Bot has built-in X search, read and monitor, so you can drop paid X API calls. Have one bot switch, then let it tell the other bots.
+  - Routing advice: split big multi-step skills into smaller ones so cheap models handle easy steps and strong models handle reasoning or design.
+  - Hack: install Claude Code or Codex in a Grok Bot's terminal, sign in with your own subscription, clone your repos there, and move skills and agent files with one file migration.
+- **Tools / prices / numbers:**
+  - Built-in X search: free daily allowance of about 1,000 reads (transcript garbled; he saw 995 left), resets around 7 pm Central.
+  - Old X developer API cost him about $5 a week (Nate's claim).
+  - Opus 5.5 is probably the default bot model (Nate's guess, no visibility).
+- **Skills shown:** Grok Bot routines, multi-bot messaging, skill design for model routing, terminal/CLI setup, Claude Code, file migration
+- **Money angle:** none stated. Cost-saving tip only: switch from paid X API to native search.
+- **Duet-relevant:** yes. An always-on Grok Bot that runs routines, messages other bots, and can host your own coding-agent subscription in its terminal.
+- **Promo:** free "AIOS" starter kit based on his "Herk Loop" framework (context, connections, capabilities, cadence), with six skills; link in the description.

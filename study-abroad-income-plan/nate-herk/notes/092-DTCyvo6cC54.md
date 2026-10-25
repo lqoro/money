@@ -1,0 +1,21 @@
+## 92. Every Level of a Claude Second Brain Explained
+- **Link:** https://www.youtube.com/watch?v=DTCyvo6cC54 | **Length:** 31 min | **AI-relevant:** yes
+- **Teaches:**
+  - Design the system from the questions you will ask later. Retrieval determines how you store data.
+  - Level 1: CLAUDE.md acts as a router to folders (exact-name search). Start here.
+  - Level 2: a wiki with indexes and backlinks, plus auto memory. Good for 30+ notes you forget.
+  - Level 3: semantic (vector) search. Chunks can miss whole-document answers, so keep full documents as markdown where needed.
+  - Level 4: knowledge graph of entities and relationships. Level 5: always-on, auto-syncing brain.
+  - Pick the lowest level that fits your pain. Choose the level per folder, not per project.
+  - Getting information out of your head is often the real bottleneck, not retrieval.
+- **Tools / prices / numbers:**
+  - Claude Code with CLAUDE.md, auto memory (/memory), and AGENTS.md copies for Codex.
+  - Obsidian (optional viewer), Pinecone or Supabase for vectors, LightRAG for the graph, Logseq and Graphiti mentioned.
+  - GBrain (Garry Tan's project) with a Hermes agent for level 5.
+  - Karpathy's LLM Wiki pattern.
+  - Nate notes that Claude processing sends data to Anthropic; keep client data elsewhere if that matters.
+  - No prices given.
+- **Skills shown:** information architecture, routing rules, vector retrieval design, knowledge-graph modeling, interview-style "grill me" skill for capturing tacit knowledge
+- **Money angle:** none stated. He says team-wide second brains are an adoption and change-management problem, not a tooling one, which implies a consulting angle.
+- **Duet-relevant:** yes. Level 5 is an always-on agent (GBrain with Hermes) that keeps syncing memory, and he warns that too much auto-ingested context can cause harm.
+- **Promo:** Free School community (AI Operating System 7-day challenge, Grill Me skill, slide deck, link in description); a prior Karpathy LLM Wiki video.

@@ -1,0 +1,18 @@
+## 45. Fable 5.1 Just Dropped. It Looks Unreal.
+- **Link:** https://www.youtube.com/watch?v=8IyORt-7rOQ | **Length:** 5 min | **AI-relevant:** yes
+- **Teaches:**
+  - A quick side-by-side test: run the same prompt on two model versions in the desktop app and compare outputs.
+  - Compare what each run cost using the built-in cost/usage commands, not just the sticker price.
+  - Judge output by eye (he uses a rotating 3D bear prompt) and says it is not a real benchmark.
+  - Read vendor release claims critically; he plans a longer hands-on test before drawing conclusions.
+- **Tools / prices / numbers:**
+  - Claude Fable 5.1 and Mythos 5.1 (Mythos is limited to vetted cyber and life-sciences programs, per Nate).
+  - Pricing stated as $10 per million input and $50 per million output tokens, same as Fable 5 (per Nate).
+  - Vendor blog says about 25% cheaper for typical token-billed workflows, up to roughly 50% for agentic work (Nate quotes this).
+  - Vendor charts show Fable 5.1 on low effort beating Fable 5 on higher effort settings (Nate's read of the charts).
+  - His bear test: Fable 5.1 about $4.53 in 6 min 34 s; Fable 5 about $5.41 (one run, his claim).
+  - Available through the API and on AWS, Google Cloud and Azure.
+- **Skills shown:** model comparison, cost tracking, prompt testing, reading release claims
+- **Money angle:** none
+- **Duet-relevant:** no
+- **Promo:** none

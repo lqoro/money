@@ -1,0 +1,17 @@
+## 118. Claude Code Just Got an Agent Dashboard
+- **Link:** https://www.youtube.com/watch?v=ZAaxx3qyT8g | **Length:** 8 min | **AI-relevant:** yes
+- **Teaches:**
+  - Agent view is one terminal screen that lists all running Claude Code sessions with their status (working, needs input, done).
+  - Move between the overview and any session with the arrow keys; a session waiting for approval can be answered from the overview without opening it.
+  - Start new background sessions straight from the view by typing a task, or with a flag on the command line.
+  - Use the new /goal command for long runs: give an objective, ideally a measurable one, and the agent keeps trying until it hits it.
+  - Expect rough edges: it is a research preview, and his first launch slowed his computer.
+- **Tools / prices / numbers:**
+  - Agent view: opened with the left arrow in a session, or the `claude agents` command; /bg moves a running session into it.
+  - /goal (new): runs can last hours or overnight.
+  - Ctrl-X twice kills a selected session.
+  - No prices or usage numbers given.
+- **Skills shown:** running parallel Claude Code sessions, terminal session navigation, goal-based prompting, background tasks.
+- **Money angle:** none
+- **Duet-relevant:** no
+- **Promo:** Pitches his roughly 2.5-hour course on building a personal "AI operating system" with Claude Code.

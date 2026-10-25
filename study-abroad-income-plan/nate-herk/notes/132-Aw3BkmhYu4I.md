@@ -1,0 +1,12 @@
+## 132. Claude Video Editing Just Became Unrecognizable
+- **Link:** https://www.youtube.com/watch?v=Aw3BkmhYu4I | **Length:** 28 min | **AI-relevant:** yes
+- **Teaches:**
+  - Set up a video studio project in the Claude desktop app by pulling in two GitHub repos (a motion-graphics tool and a video-editing skill).
+  - Trim a raw talking-head recording with the editing skill: it removes filler words, silences, and retakes, and returns a timed word transcript.
+  - Add motion graphics by planning beats first (plan mode), then revising timing and visuals, using the timeline editor for quick timing changes.
+  - Check each render with screenshots and keep a per-video-type style file so later edits need fewer prompts.
+- **Tools / prices / numbers:** Video editing skill, HyperFrames (HTML-based motion graphics), Remotion (alternative). Transcription options: ElevenLabs API (his choice), OpenAI Whisper, or a free local model. One test run used about 238,000 tokens (his figure). A paid Claude Code plan is required.
+- **Skills shown:** Claude Code setup, GitHub repo import, transcription and API key handling (.env file), motion graphics, video editing workflow, prompt planning.
+- **Money angle:** Who pays: creators and small businesses who need short-form clips or lessons edited. Sell a "drop a raw file, get a finished video" service or a per-style template. He suggests a style file per video type (intros, lessons, shorts) to make the process repeatable. No prices stated.
+- **Duet-relevant:** no.
+- **Promo:** his free school community (HyperFrames student kit); links to two GitHub repos and a voice-to-text tool in the description.

@@ -1,0 +1,18 @@
+## 164. How to Build Claude Agent Teams Better Than 99% of People
+- **Link:** https://www.youtube.com/watch?v=vDVSGVpB2vc | **Length:** 17 min | **AI-relevant:** yes
+- **Teaches:**
+  - Agent teams differ from sub-agents: a team lead creates teammates that share a task list and can message each other directly, while sub-agents only report results back to the main session.
+  - Enable the experimental agent teams feature with one environment variable in the project's local settings file.
+  - Write a reference doc from the official agent-teams documentation so Claude Code can consult it while building teams.
+  - Prompt pattern: state the goal and why, then name the team size and model, then describe each role, its deliverable, and who to message.
+  - Best practices: give each agent its own files, define concrete outputs, name message recipients, keep about 3-5 teammates, and give full context since teammates start with no history.
+  - Watch teammates and message them individually by running in tmux split panes; shut teams down cleanly by asking for saved work first.
+- **Tools / prices / numbers:**
+  - Claude Code (VS Code extension and terminal), tmux for split-pane view
+  - Models: Haiku, Sonnet, or Opus per team
+  - Suggested team size: about 3-5 agents
+  - No prices stated; he says teams cost more and run slower than single sessions
+- **Skills shown:** Claude Code configuration, multi-agent orchestration, prompt design, QA-loop workflow, documentation seeding, tmux usage
+- **Money angle:** none
+- **Duet-relevant:** no
+- **Promo:** none

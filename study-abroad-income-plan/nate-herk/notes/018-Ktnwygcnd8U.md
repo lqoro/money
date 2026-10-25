@@ -1,0 +1,16 @@
+## 18. No, Seriously. Claude Code is Starting To Get Dangerous
+- **Link:** https://www.youtube.com/watch?v=Ktnwygcnd8U | **Length:** 14 min | **AI-relevant:** yes
+- **Teaches:**
+  - Three skills for working with agents: find the real pain before building, control what the agent can touch, and own the outcome.
+  - Start agents read-only, have them produce drafts before anything ships, and require human approval for money, deletions, publishing, and production changes.
+  - Keep logs of every agent action and make sure the whole system can be shut off quickly.
+  - Diagnose the real bottleneck first. Example: a med spa had plenty of leads but many no-shows, so the first project was follow-up, not lead generation. Record a baseline and target before building.
+- **Tools / prices / numbers:**
+  - Claude Code; Anthropic's Fable (public) and Mythos (fewer safeguards, limited to trusted defenders) models
+  - US government shutdown of both models lasted 18 days (per the video); Anthropic's new classifier is said to block the reported technique in over 99% of cases
+  - Mythos preview reportedly found thousands of unknown vulnerabilities, including a 27-year-old OpenBSD bug and a 16-year-old FFmpeg bug
+  - Cited BLS projection: information security analyst jobs up 29% (2024-2034)
+- **Skills shown:** AI agent permissioning, workflow auditing, business process diagnosis, metric baselining, AI risk and governance, cybersecurity awareness
+- **Money angle:** Buyers are businesses adopting AI agents. Sell scoped automations with read-only access, approval gates, action logs, and a before/after metric. No prices stated. Start by picking one bottleneck metric and measuring it before touching anything. Nate's claim: none.
+- **Duet-relevant:** no
+- **Promo:** Free resource guide in his community, linked in the video description.

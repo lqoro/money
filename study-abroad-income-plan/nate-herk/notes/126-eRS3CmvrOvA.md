@@ -1,0 +1,17 @@
+## 126. I Tried 100+ Claude Code Skills. These 6 Are The Best
+- **Link:** https://www.youtube.com/watch?v=eRS3CmvrOvA | **Length:** 14 min | **AI-relevant:** yes
+- **Teaches:**
+  - Six Claude Code add-ons that save time, cut cost, or remove mistakes, which Nate says businesses pay for most.
+  - Skill Creator (Anthropic official) turns a plain-English description or SOP into a tested, reusable skill.
+  - Superpowers adds a plan, test-first, two-stage review workflow to slow Claude down before it writes code.
+  - GSD runs each task in a fresh sub-agent to fight context rot in long sessions.
+  - Use /review for quick checks and /ultra review before merging risky code (payments, auth, migrations).
+- **Tools / prices / numbers:**
+  - /ultra review needs Claude Code 2.1.86+ and a Claude account (API key alone does not work); 3 free runs on Pro/Max, then about $5-20 per run (Nate's estimate); 10-20 minutes in background.
+  - Superpowers: over 150,000 GitHub stars (as stated).
+  - Context Mode example: 56 KB Playwright snapshot to 299 bytes (vendor benchmark).
+  - Claude-Mem: about 10x retrieval token savings (repo claim).
+- **Skills shown:** skill authoring, planning and TDD workflow, sub-agent orchestration, code review, context management, persistent project memory, front-end design
+- **Money angle:** Sell outcomes to business owners (hours saved, fewer admin mistakes, faster leads), not the workflow. Build the first automation with one skill, then show a demo. Start with one skill, not all six. No prices stated for client work.
+- **Duet-relevant:** partly. Claude-Mem gives Claude persistent memory across sessions for a project, which is a persistent agent, but it is a developer tool, not a messaging assistant.
+- **Promo:** Free School community resource guide (link in description); a "how I make money in 2026" video is mentioned; links to plugin install commands in description.

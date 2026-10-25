@@ -1,0 +1,17 @@
+## 146. I Gave OpenClaw $10,000 to Trade Stocks
+- **Link:** https://www.youtube.com/watch?v=eu8UJtuIi-E | **Length:** 19 min | **AI-relevant:** yes
+- **Teaches:**
+  - A 30-day experiment: two always-on bots (OpenClaw-based, per title), each given $10,000 of real cash, with an email inbox and a Telegram/Discord control channel.
+  - Setup: a cron job every 30 minutes during trading hours; a prompt telling the agent to spin up sub-agents to research and trade on its own.
+  - Nate's bot stayed close to flat. The other bot was far more volatile and lost money.
+  - Lessons he drew: changing strategy mid-run was not allowed, Alpaca limits trade count on small accounts, and one large options loss hurt.
+  - Benchmark: the S&P 500 was down about 8% over the period, per his figures.
+- **Tools / prices / numbers:**
+  - Starting capital $10,000 per bot, 30 days, about 5 of 7 weeks were trading days (his count).
+  - Nate's end balance about $9,980 (down about $19); the other bot about $9,624 (his figures).
+  - Trade counts: 61 trades for one bot, a 116-order count for the other.
+  - Brokerage: Alpaca. Messaging: Telegram and Discord. The $100 prize is his giveaway.
+- **Skills shown:** always-on agent setup, cron scheduling, multi-agent prompting, agent-to-agent email, risk management
+- **Money angle:** None sold in the video. Disclaimer: Nate says this is not financial advice and not a recommendation to hand money to a bot.
+- **Duet-relevant:** yes; an always-on bot with its own inbox, Telegram and Discord access that acts for its owner.
+- **Promo:** free school community and his plus community (both in description); a $100 comment giveaway; a link to his wheel-strategy/copy-trading video.

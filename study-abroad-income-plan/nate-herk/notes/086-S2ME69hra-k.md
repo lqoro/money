@@ -1,0 +1,11 @@
+## 86. Why Watching AI Videos Isn't Enough
+- **Link:** https://www.youtube.com/watch?v=S2ME69hra-k | **Length:** 3 min | **AI-relevant:** yes
+- **Teaches:**
+  - Argues that agency skills (scoping projects, pricing, delivering without things falling apart) are hard to learn from videos because they depend on your situation.
+  - Points to his free "Monetizing AI Automation" playlist, which covers real agents he sold, a sales call, signing a first client, pricing, and delivery.
+  - Recommends learning in person or live, alongside people a few steps ahead or behind you.
+- **Tools / prices / numbers:** none.
+- **Skills shown:** AI agency sales and delivery, networking.
+- **Money angle:** an AI automation agency: find a niche, sign clients, price workflows, deliver them. No price points given.
+- **Duet-relevant:** no
+- **Promo:** AIS Live, a virtual event on July 11 and 12 (day one: live builds; day two: niche selection, outreach, positioning, scoping, pricing, delivery), with Airtable's HyperAgent as main sponsor. In-person AI mastermind in Montenegro, July 29 to 31, with named speakers Liam Ottley, Dave Abelar, and Jack Roberts. Links in description.

@@ -1,0 +1,15 @@
+## 94. Learn These 6 AI Skills Now (Before Everyone Else Does)
+- **Link:** https://www.youtube.com/watch?v=3XIGcM7VICc | **Length:** 20 min | **AI-relevant:** yes
+- **Teaches:**
+  - Six career skills: become the "AI person" in your role by picking one tool and documenting before-and-after results on one workflow; develop taste and judgment so you catch generic AI output; become a context engineer by giving AI real business context in projects or custom GPTs.
+  - Iteration speed: prototype fast, then set one North Star metric and a clear definition of done before building.
+  - Build a "Jarvis": automations that fire without you, deciding case by case whether a task needs an AI agent or just a deterministic workflow.
+  - Build several income streams that share one domain and one passion, starting with a single stream until it has momentum.
+- **Tools / prices / numbers:**
+  - Claude is his main tool as of May 2026 (per the video).
+  - IBM 2026 CEO study, as cited: 85% of CEOs say functional leaders must become technology experts in their domain.
+  - Voice-to-text tool Glydo, which he says he uses daily (link in description).
+- **Skills shown:** prompt and context design, evaluation of AI output, rapid prototyping, workflow vs agent design, personal positioning
+- **Money angle:** Turn one domain expertise into a course, niche newsletter, micro SaaS or consulting. He says to pick one and go hard before branching out. No prices stated.
+- **Duet-relevant:** yes. The "Jarvis" section covers an always-on personal assistant that acts before you ask, along with the need for tight guardrails.
+- **Promo:** free resource guide in his free school community (link in description)

@@ -1,0 +1,17 @@
+## 76. Claude Code for Non-Coders (6 Hour Course)
+- **Link:** https://www.youtube.com/watch?v=jdbOVepEtUE | **Length:** 359 min | **AI-relevant:** yes
+- **Teaches:**
+  - Set up Claude Code as a manager-style assistant: a CLAUDE.md router file, a `.claude` folder (settings, agents, skills), and API keys kept in a gitignored `.env`
+  - Build skills by doing a task, then asking the agent to turn it into a skill; iterate on each run
+  - Context hygiene: clear between tasks, hand off at about 250k tokens, keep MCP servers few, batch prompts, plan before building
+  - Trust: prompts are not permissions; remove tools the agent should never use, and pick deterministic workflows over agents where possible
+  - Scale-up path: sub-agents for clean context, routines and cloud scheduling, and an LLM-wiki or knowledge graph as a second brain
+- **Tools / prices / numbers:**
+  - Claude plans: Pro to start, Max $100 or $200/month; API prices he quotes: Haiku $1/$5, Sonnet $3/$15, Opus $5/$25 per million input/output tokens
+  - Routine runs per day: Pro 5, Max 15, Team/Enterprise 25; minimum interval 1 hour
+  - Google Workspace CLI, Tavily, ElevenLabs, OpenRouter, Modal, Vercel, GitHub, Obsidian, and the built-in `/cost` and `/context` commands
+  - Prompt-cache TTL: 1 hour on subscriptions, 5 minutes on API sub-agents (his reading of the docs)
+- **Skills shown:** CLAUDE.md design, skill and sub-agent authoring, API keys and env, permissions, context management, token budgeting, GitHub and Vercel deploy, Modal cron and webhook functions, agent teams
+- **Money angle:** Consulting and automations for clients (his examples: a daily AI brief on Modal and a form-to-ClickUp webhook). He also suggests stacking a day job with an AI-powered side income around one niche (course, newsletter, micro-SaaS, consulting). No prices given for client work.
+- **Duet-relevant:** Partly. He describes an executive-assistant agent that triages email, and a "Jarvis"-style agent that acts without being triggered.
+- **Promo:** His free school community (classroom with free skills and repos, 7-day challenge, paid "plus" community), a 2-hour AI operating system course, his book *Becoming AI Native*, and his voice-to-text tool Glido.

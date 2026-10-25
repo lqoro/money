@@ -1,0 +1,13 @@
+## 36. I Turned GPT-6 Astra Into the Ultimate AI Second Brain
+- **Link:** https://www.youtube.com/watch?v=yysILVsfLFM | **Length:** 20 min | **AI-relevant:** yes
+- **Teaches:**
+  - Build an "AI operating system" as a folder of markdown and files. Nate's framework has four parts: context (slow-changing facts such as goals and offer), connections (live tools such as email, Slack, ClickUp and calendar), capabilities (skills) and cadence (routines that run on their own).
+  - Write an agents.md routing file that lists where everything lives. The agent reads it before every message. If you come from Claude, copy your Claude.md into it.
+  - Onboard with a skill that asks a set of questions and fills the folders. Then run an audit skill that scores the setup out of 100 and saves a dated report, and a level-up skill that suggests the next steps.
+  - Link notes with an LLM-wiki method (AI crawls the sources and finds relationships), then render the result as a 3D "brain" view. Use a separate interview skill to capture decisions over time.
+  - Use a bigger model for planning and a cheaper one for routine knowledge work, to save weekly usage.
+- **Tools / prices / numbers:** Codex app with GPT-6 Astra. He suggests GPT 5.6 Soul or 5.6 Terra for everyday tasks, and a lower effort level to cut cost. First audit on a fresh setup scored 30/100. Free resource pack of five skills from his school community.
+- **Skills shown:** markdown knowledge base, agents.md routing, skill creation, audits, retrieval design, LLM-wiki linking
+- **Money angle:** none stated. He argues that owning the knowledge base avoids vendor lock-in, since any agent can read it.
+- **Duet-relevant:** yes. A persistent personal assistant that reads your calendar, messages and tasks, acts on them, and can be reached from a phone.
+- **Promo:** free AI Automation Society school community; the AISOS resource pack is in its "all YouTube resources" classroom section

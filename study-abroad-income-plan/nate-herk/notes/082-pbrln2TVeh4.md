@@ -1,0 +1,16 @@
+## 82. How Claude is Creating a New Generation of Millionaires
+- **Link:** https://www.youtube.com/watch?v=pbrln2TVeh4 | **Length:** 10 min | **AI-relevant:** yes
+- **Teaches:**
+  - Lists four things he says set Claude Code apart: it does the work from plain English, it acts agentically (builds, tests, fixes), it runs parallel agents, and it remembers context about your business.
+  - Four-step start: get a paid plan, pick one real repetitive task, have Claude argue against the idea before building, then build the smallest version that works.
+  - Verify before accepting: have the AI run the thing on a real example and show the output. Treat a first draft that is 60 to 70 percent right as feedback.
+  - Describes a "roast" council of sub-agents that stress-tests an idea before the build (covered in more detail in his other videos).
+- **Tools / prices / numbers:**
+  - Claude paid plan entry tier: $20 per month (his figure).
+  - Company figures he cites: a $65B funding round at a $965B valuation; run rate of $47B, up from $1B at the end of 2024.
+  - Vulcan (a company he features) reportedly won a Virginia contract at about 10% of consulting-firm quotes, and claims savings above $1B a year (Nate's claim, not verified).
+  - Says over half of Y Combinator's newest batch builds with Claude (Nate's claim).
+- **Skills shown:** plain-English prompting, task selection, devil's-advocate planning, verification loops, memory-based context use.
+- **Money angle:** sell or build fixes for repetitive work (receipts, weekly reports, email sorting). Start with one task and the $20 plan as the cost baseline. No product price points given.
+- **Duet-relevant:** no
+- **Promo:** free school community: a 7-day Claude challenge, a free skill file, and a free AI operating system course (link in description).

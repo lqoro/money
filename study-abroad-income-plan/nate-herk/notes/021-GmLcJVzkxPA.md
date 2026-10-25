@@ -1,0 +1,18 @@
+## 21. I Tested Opus 5.5 vs. GPT-6 Astra on 12 Real Use Cases
+- **Link:** https://www.youtube.com/watch?v=GmLcJVzkxPA | **Length:** 43 min | **AI-relevant:** yes
+- **Teaches:**
+  - Head-to-head method: same prompt in each vendor's own harness (Claude desktop vs. Codex desktop), high effort, judged on output quality plus time and cost.
+  - Run parallel agent tests in separate git worktrees. Nate's first round was spoiled when two agents edited the same files.
+  - Design and creative work (landing pages, sizzle reels, Instagram reels, a Canva drawing) went mostly to Opus 5.5 on taste.
+  - Astra won several code, dashboard and 3D-itinerary tasks on speed and cost, and asked more clarifying questions.
+  - /goal prompts keep an agent working until an objective is met; Nate used them for most runs.
+- **Tools / prices / numbers:**
+  - Claude desktop app, Codex desktop app, Hyperframes (video), Canva (drawing test).
+  - Website test: Opus $18.32 in 40 min vs. Astra $11.33 in 32 min (API-equivalent).
+  - Game test: Opus $31 in about 90 min vs. Astra $8 in 34 min.
+  - Totals: Opus about 11 h and $214; Astra about 6 h and $132. Tally 8 to 4 for Opus.
+  - Nate says Astra is priced about 2.5x Opus per token.
+- **Skills shown:** model benchmarking, agent harness use, goal prompting, Hyperframes video editing, landing-page generation, browser-driven drawing.
+- **Money angle:** none. Nate frames it as choosing a model by output per dollar.
+- **Duet-relevant:** no
+- **Promo:** free website-design skill (link in description); AIS Live event plug (Oct 17-18).

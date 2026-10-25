@@ -1,0 +1,12 @@
+## 129. 32 Tricks to Level Up Claude Code in 16 Mins
+- **Link:** https://www.youtube.com/watch?v=jqoFP9QapXI | **Length:** 16 min | **AI-relevant:** yes
+- **Teaches:**
+  - Beginner habits: run the init command on every project to generate a project memory file, keep that file short (he suggests 150-200 lines), and point it to other docs instead of stuffing it.
+  - Manage context: keep prompts small, check token use with the context command, compact around 60%, and clear between unrelated tasks.
+  - Work method: start in plan mode, have the agent ask clarifying questions, and add self-check steps (screenshot, browser check) into the to-do list.
+  - Advanced: run sub-agents on a cheaper model, use git worktrees for parallel sessions, and use loops and notification hooks for long runs.
+- **Tools / prices / numbers:** Ultra-think keyword allocates roughly 32,000 thinking tokens (his figure). Loops last about 3 days (his figure). Context 7 MCP for current library docs. Playwright-style and BigQuery CLI for plain-English data queries. No prices given.
+- **Skills shown:** Claude Code config (project memory file, custom skills, slash commands), context management, git worktrees, sub-agent orchestration, permission rules, MCP and CLI tool use.
+- **Money angle:** none stated. Tips are general productivity; he mentions a free PDF guide as a lead magnet.
+- **Duet-relevant:** yes. Covers an always-on VPS-hosted session that can be steered from Telegram or a phone, which resembles a persistent agent.
+- **Promo:** free school community (PDF resource guide, link in description).

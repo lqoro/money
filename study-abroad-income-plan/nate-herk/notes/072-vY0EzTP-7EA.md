@@ -1,0 +1,12 @@
+## 72. How I'd Make Money with Claude if my life depended on it
+- **Link:** https://www.youtube.com/watch?v=vY0EzTP-7EA | **Length:** 9 min | **AI-relevant:** yes
+- **Teaches:**
+  - Four steps to become the "AI person": pick one painful manual task and name the metric it moves (time, mistakes or money).
+  - Build the fix by giving Claude real examples, templates and process docs, then turn that process into reusable skills and instructions.
+  - Record a before-and-after demo and prove the metric moved (e.g., a 4-hour weekly report cut to about 20 minutes, as an example).
+  - Use the proven result to ask for more tasks, then turn it into a case study.
+- **Tools / prices / numbers:** Claude. Stats cited by Nate, not verified here: Big Tech AI spend about $725B in 2026; MIT study that 95% of gen-AI pilots had little measurable impact; McKinsey 88% of companies use AI, about a third scaled it, 6% high performers; PwC 62% wage premium for AI skills. Nate's own path (stated): free build, then paid audit, then price the build, then a monthly retainer.
+- **Skills shown:** business process analysis, workflow automation with Claude, ROI measurement, demo recording, client outreach, consulting packaging.
+- **Money angle:** Two routes: freelance AI consultant (freedom, income volatility) or in-house AI consultant (stable pay, built inside an existing job). Sell a measured outcome, then go for a monthly retainer. Start with a free build, then paid audits, then priced builds. No prices stated.
+- **Duet-relevant:** no
+- **Promo:** Free school community (downloadable steps file, Claude courses). Paid "plus" community for portfolio, client-getting and scaling a one-person AI automation agency. Both linked in the description.

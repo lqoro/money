@@ -1,0 +1,17 @@
+## 107. Opus 4.8 Just Dropped. Here's How To Actually Use It.
+- **Link:** https://www.youtube.com/watch?v=q5lg3npxjAc | **Length:** 14 min | **AI-relevant:** yes
+- **Teaches:**
+  - What changed in Claude Code with Opus 4.8: effort levels (low to "ultra code"), dynamic workflows, and a claimed fix for the 4.7 complaints (laziness, overreach, token burn, tone).
+  - Effort is the first lever to tune. Run the same task at a lower or higher effort level before blaming the model.
+  - Write prompts that say what to do, and give the reason behind each rule, instead of a list of "don't" lines.
+  - The model now reasons before calling tools and sets its own response length by task complexity. Re-test your workflows when you switch models.
+  - Check whether a bad result is a model problem, a skill problem, or user error.
+- **Tools / prices / numbers:**
+  - Opus 4.8 is priced the same as Opus 4.7 per token (release May 28, 2026, per Nate). Claude Code API rate limits were raised. Subscription session and weekly limits were not changed.
+  - Opus 4.8 defaults to high effort and keeps the 1M context window. Opus 4.7 launched April 16.
+  - An open-source token dashboard on GitHub (free) reads your historical Claude Code data to show where tokens go.
+  - Benchmarks are marketing; he says to test on your own use case.
+- **Skills shown:** Claude Code model and effort settings, prompt writing, token tracking, workflow testing
+- **Money angle:** none
+- **Duet-relevant:** no
+- **Promo:** His free school community, where he links the token tracker and the resource guide. No sponsor.

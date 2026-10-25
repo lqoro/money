@@ -1,0 +1,17 @@
+## 9. Anthropic Engineers Just 10x'd Everyone's Claude Code
+- **Link:** https://www.youtube.com/watch?v=oz2CwrPV2Rg | **Length:** 12 min | **AI-relevant:** yes
+- **Teaches:**
+  - Anthropic's "context engineering" guidance: use the smallest context that gets a high-quality result, but keep any detail the model needs.
+  - Give the model the outcome, the reason for the task, and the constraints, then leave room for it to work.
+  - Periodically audit CLAUDE.md files and skills. Remove duplicated rules and old workarounds that newer models no longer need.
+  - Keep the context that is specific to you (voice, goals, audience, business), and move long procedures into files that load only when relevant.
+  - Run `/doctor` in Claude Code to find skill, memory, and settings problems, then ask Claude to audit a workflow and make small edits after you approve them.
+- **Tools / prices / numbers:**
+  - Claude Code's system prompt was cut by over 80% with no measured loss on Anthropic's evals (Nate's summary).
+  - Loading MCP tool definitions only when needed cut token use about 85% in Anthropic's example. Reported eval scores rose from 49% to 74% (Opus 4) and from 79.5% to 88.1% (Opus 4.5).
+  - Nate's `/doctor` audit found about 2,250 characters of cuts, an estimated 563 tokens saved.
+  - Nate cites a 2025 paper where accuracy fell as input got longer, by 13.9% to 85% depending on model and task.
+- **Skills shown:** context engineering, prompt and CLAUDE.md auditing, skill cleanup, Claude Code `/doctor`, workflow auditing, MCP tool loading.
+- **Money angle:** none
+- **Duet-relevant:** no
+- **Promo:** Free community for building AI systems and agents (link in description). Sponsor: HyperAgent, which gives each client of an agency a separate workspace for agents, skills, and memories, with role-based access for client staff.

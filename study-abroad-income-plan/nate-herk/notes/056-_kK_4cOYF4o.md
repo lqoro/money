@@ -1,0 +1,16 @@
+## 56. This Stealth Model Makes Claude Code Free. Here's How.
+- **Link:** https://www.youtube.com/watch?v=_kK_4cOYF4o | **Length:** 14 min | **AI-relevant:** yes
+- **Teaches:**
+  - Run Claude Code with free models by pointing its settings file at OpenRouter. The desktop app will not allow this, so use VS Code or the terminal.
+  - Create an OpenRouter key and place the model ID (for example, the Stealth OX Alpha model) in every model slot in the settings file, including sub-agent slots.
+  - Use OpenRouter's free models router to get random free models if a specific free model is removed.
+  - Work in smaller chunks: long tasks hit "upstream idle timeout" errors on free models.
+  - Free models handle knowledge work and skill use reasonably, but are slow and weaker for hard coding.
+- **Tools / prices / numbers:**
+  - OpenRouter (500+ models, free-tier filter); Stealth OX Alpha at $0 per million input and output tokens (free-tier limits apply).
+  - Nate's usage: about 61.6M tokens in a day for about $0.13 (Nate's claim).
+  - Landing page: about 6 hours. YouTube report: about 45 minutes before the model stopped and blocked itself.
+- **Skills shown:** Claude Code configuration, OpenRouter, model switching, environment variables, cost control
+- **Money angle:** Cuts inference cost for overflow or light work; no product, pricing, or client offer. Data-privacy caution: an anonymous model provider.
+- **Duet-relevant:** no
+- **Promo:** none

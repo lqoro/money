@@ -1,0 +1,18 @@
+## 80. How I Make Opus Think Like Fable (5 easy steps)
+- **Link:** https://www.youtube.com/watch?v=XTBWVVcF3Pk | **Length:** 10 min | **AI-relevant:** yes
+- **Teaches:**
+  - The process matters more than the model: copy how a top model plans and verifies, then run it on cheaper models
+  - Treat the top model as a planner and teacher, and route routine work to smaller models
+  - Turn a deliverable you loved into a reusable skill: ask the model to analyze the session that produced it
+  - "Fable mode" skill runs five gates: scoping, evidence before reasoning, adversarial reasoning, verification before done, and calibration
+  - Keep a table of available models, with cost, intelligence, and taste scores, so the orchestrator can pick one per task
+  - Effort levels: higher effort often overthinks and costs more, so high is often enough
+- **Tools / prices / numbers:**
+  - Claude Fable 5, Opus 4.8, Sonnet, Haiku, plus GPT 5.5 and open-source models as options
+  - Opus orchestrating Haiku scouts was about 3x cheaper with the same result (his test)
+  - Fable-with-Sonnet workflows gave results similar to Fable-with-Fable at a much lower cost (his tests)
+  - Notes that he has spent a few thousand dollars in usage credits on Fable
+- **Skills shown:** skill-file design, model routing, dynamic sub-agent workflows, prompt and system-prompt analysis, effort tuning
+- **Money angle:** none directly stated. He says that model routing and unit economics will matter for small teams with a monthly AI budget.
+- **Duet-relevant:** no
+- **Promo:** His free skill community (classroom section of YouTube resources, with the Fable mode skill attached, link in description)

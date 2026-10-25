@@ -1,0 +1,18 @@
+## 22. I Tested Opus 5.5 vs. GPT-6 Sol on 10 Real Use Cases
+- **Link:** https://www.youtube.com/watch?v=eF3yeJuifoQ | **Length:** 34 min | **AI-relevant:** yes
+- **Teaches:**
+  - Judge models by what a fixed budget buys, not by list price.
+  - Idea to test: Opus as orchestrator sending narrow instructions to cheaper GPT workers.
+  - Parallel agents in one repo collided in this test and changed each other's files. Use separate worktrees and say "don't touch other files" in the prompt.
+  - Browser-use tests: Opus drew a reference image in Canva well, Sol failed. Opus was also faster and cheaper on a course-upload task.
+  - Sol asked more clarifying questions. In one code-review task it stopped mid-run on a safety check.
+- **Tools / prices / numbers:**
+  - Opus 5.5: $4 input / $20 output per million tokens. GPT-6 Sol: $2 / $10 (as Nate stated).
+  - Website: Opus $18.32 vs. Sol $5.89, both about 35 min.
+  - Reel: Opus about $11 vs. Sol almost $3.
+  - Game: Opus 1h45m and $60 vs. Sol about 50 min and $8.55.
+  - Totals: Opus 8h40m and $213 vs. Sol 5h51m and $74.46. Tally 7 to 1, with 2 void.
+- **Skills shown:** model benchmarking, multi-agent orchestration, Hyperframes video editing, browser automation, Google Sheets and dashboard building, Fireflies-to-wiki ingestion.
+- **Money angle:** none.
+- **Duet-relevant:** no
+- **Promo:** free scroll-website skill (link in description); AIS Live event link.
