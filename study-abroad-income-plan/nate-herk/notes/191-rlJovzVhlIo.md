@@ -17,4 +17,4 @@
 - **Skills shown:** agent setup, API key handling, dashboard building, scheduled automations, prompt planning, security hygiene
 - **Money angle:** Could be sold as a setup and configuration service: an "AI executive assistant" for small businesses, or a custom dashboard plus heartbeat build. No price quoted. Nate says he is unsure of real ROI.
 - **Duet-relevant:** yes. Always-on personal assistant bot that acts for you (email, calendar, tasks, Telegram chat, heartbeat jobs). Key lessons: separate accounts, read-only defaults, and memory limits.
-- **Promo:** Plus community (over 3,000 members, paid) and his separate paid-looking setup guide for Clawdbot on a VPS (linked).
+- **Promo:** Plus community (over 3,000 members, paid) and a separate YouTube setup guide for Clawdbot on a VPS (linked).

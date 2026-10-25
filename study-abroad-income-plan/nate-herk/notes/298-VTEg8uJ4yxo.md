@@ -10,4 +10,4 @@
 - **Skills shown:** MCP server setup, JSON config editing, n8n tool design, agent prompting, debugging tool calls
 - **Money angle:** none stated.
 - **Duet-relevant:** no. This is MCP plumbing for desktop IDE clients, not an always-on bot.
-- **Promo:** paid community with about 1,000 members, a classroom, and five live calls per week. Setup JSON is shared in the description.
+- **Promo:** paid community (growing fast per Nate) with a classroom and five live calls per week. Setup JSON is shared in the description.

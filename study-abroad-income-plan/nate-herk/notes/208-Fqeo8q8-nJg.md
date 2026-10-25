@@ -1,0 +1,13 @@
+## 208. How I'd Learn n8n if I had to Start Over in 2026
+- **Link:** https://www.youtube.com/watch?v=Fqeo8q8-nJg | **Length:** 14 min | **AI-relevant:** yes
+- **Teaches:**
+  - Learn workflows before AI agents. Agents are nondeterministic, so they need more monitoring than rule-based flows.
+  - Core concepts in order: JSON and data types, APIs and HTTP requests, webhooks, logic and error handling, then LLM context engineering.
+  - Choose automations by four tests: repetitive, time-consuming, error-prone, scalable. Two or more is a reasonable bar.
+  - Map the process on paper and get stakeholder agreement before building. Log every execution to a sheet or Airtable, then fix repeated failures.
+  - Avoid tutorial hell: rebuild tutorials yourself. About 15 core nodes cover most workflows.
+- **Tools / prices / numbers:** n8n, Google Sheets or Airtable (logs). Cited study (name garbled in captions, probably McKinsey): standard automation yields 30%-200% year-1 ROI and 25%-40% labor savings; about 50% of work activities can be automated without AI.
+- **Skills shown:** data modeling, HTTP/API work, webhooks, error handling, process mapping, prompt and context design
+- **Money angle:** Position as an automation or efficiency agency, which can work without AI. Price around time saved, money saved, and quality. Track results for case studies.
+- **Duet-relevant:** no (he notes his personal-assistant agent only acts when prompted, not always-on)
+- **Promo:** His 10 Hours to 10 Seconds course and Plus community (link in description).

@@ -1,0 +1,13 @@
+## 240. The TRUTH About Selling AI Automations to Businesses
+- **Link:** https://www.youtube.com/watch?v=SAerRtQLD0I | **Length:** 12 min | **AI-relevant:** yes
+- **Teaches:**
+  - Sell the outcome (time, money, focus), not the workflow, nodes or model. Use the "destination, not the vehicle" framing.
+  - Pick a niche broader than one business type (for example "hair and beauty"), then reuse about 70 to 80% of a build across clients (Nate's claim).
+  - Show your work between calls: diagnose on call one, send a short audit or process map, then confirm the solution on call two.
+  - Price on ROI: aim for about 10x the client's value (a $5,000 system should show roughly $50,000 in value), and turn the ROI math into a case study and testimonial.
+  - Use a setup fee plus a revenue share tied to money or hours saved, since Nate says there is no standard pricing yet.
+- **Tools / prices / numbers:** First client: $1,200 LinkedIn agent (Nate's claim). Example: $5,000 system, 10x value rule of thumb. Consulting firms charge "hundreds of thousands" for an audit (Nate's claim). Some business owners hire him as an n8n implementer, so templates alone are not what they buy.
+- **Skills shown:** Discovery calls, pain-cost quantification, ROI calculation, proposal and roadmap writing, niche selection, case-study building.
+- **Money angle:** Sell to SMBs who lack an AI partner. Price as setup plus revenue share or a fixed fee tied to ROI. Build a niche template base and tailor it per client. Use the ROI calculation as the sales asset and as a case study. Example start: $1,200 first build, $5,000 system.
+- **Duet-relevant:** no
+- **Promo:** Free resource in his school community (the video's framework is posted there); paid "Plus" community for people monetizing n8n and AI automation.

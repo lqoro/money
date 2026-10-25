@@ -1,0 +1,17 @@
+## 216. How to Use the NEW Nano Banana 2 in n8n (cheaper & no watermark)
+- **Link:** https://www.youtube.com/watch?v=iUgAVUcv9r0 | **Length:** 13 min | **AI-relevant:** yes
+- **Teaches:**
+  - Text-to-image in n8n: one HTTP call creates a generation task (model, prompt, aspect ratio, resolution, output format) and returns a task ID.
+  - Polling loop: wait about 5 seconds, query the task by ID, then use a Switch node to loop on "generating", stop on "failed", or continue on "success". Runs took 13 to 35 checks.
+  - Image-to-image: upload the form's binary file to a host that gives a public URL (he uses ImgBB), then pass that URL in an image_input field.
+  - Multi-image: send an array of up to three public product images in one request with a prompt that references them.
+  - Failures happen intermittently (a 422 "unexpected error"). Check the marketplace's logs and re-run the same request.
+- **Tools / prices / numbers:**
+  - Model access through a marketplace he calls "Key AI" (name as transcribed). He says 4K images cost 12 cents, about 20% below the official price, and that pricing may change.
+  - No watermark on output. Resolutions 1K, 2K, 4K. Aspect ratios include 1:1, 2:3, 3:2, 16:9, 9:16.
+  - The same marketplace offers Sora 2 and Veo 3.1 (his mention).
+  - Title says "Nano Banana 2"; the video itself demonstrates Nano Banana Pro.
+- **Skills shown:** n8n HTTP Request nodes, polling and loop logic, Switch nodes, binary-to-URL handling, reading API docs, debugging via run logs
+- **Money angle:** Implied: produce product and lifestyle images, ad creative, and headshots for small businesses without a studio. He gives no prices.
+- **Duet-relevant:** no
+- **Promo:** Free school community (workflow download). Plus community (paid; courses Agent Zero, 10 Hours to 10 Seconds, One Person AI Agency, Subs to Sales; weekly live call). He says it has over 2,500 members.

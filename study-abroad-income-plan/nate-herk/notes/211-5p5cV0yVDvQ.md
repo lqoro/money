@@ -1,0 +1,13 @@
+## 211. Unlock the Full Power of Your n8n Agents (new instance MCP)
+- **Link:** https://www.youtube.com/watch?v=5p5cV0yVDvQ | **Length:** 13 min | **AI-relevant:** yes
+- **Teaches:**
+  - n8n's instance-level MCP lets an MCP client search, read the schemas of, and run any workflow in your instance. This needs n8n 1.21.2 or later.
+  - Turn on MCP access in settings (OAuth or access token), then connect a client such as Claude.
+  - Only workflows that are active or published and marked "available in MCP" are exposed. Nate calls this a deliberate control.
+  - Write a clear workflow description. The client uses it to decide what inputs to send.
+  - Simple one-node or two-node workflows (webhook plus Gmail, say) work well as tools.
+- **Tools / prices / numbers:** Claude (native n8n connector), ChatGPT developer mode (not working when he filmed), Lovable, ClickUp, Gmail. No prices.
+- **Skills shown:** MCP setup, OAuth connectors, workflow descriptions, exposing tools safely
+- **Money angle:** Lovable generated a lead-form landing page from one workflow in a single prompt. No pricing stated.
+- **Duet-relevant:** partly: Claude can run your n8n workflows on request (email, task updates). It is not always-on.
+- **Promo:** Plus community (over 200 members, weekly live Q&A, Agent Zero, 10 Hours to 10 Seconds, One Person AI Agency, Subs to Sales courses).

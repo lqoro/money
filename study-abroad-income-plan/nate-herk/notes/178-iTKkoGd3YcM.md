@@ -1,0 +1,17 @@
+## 178. The NEW Nano Banana 2 + Antigravity Destroys Every AI Image Tool
+- **Link:** https://www.youtube.com/watch?v=iTKkoGd3YcM | **Length:** 15 min | **AI-relevant:** yes
+- **Teaches:**
+  - Nano Banana 2 (Google's image model): Nate says it is faster and cheaper than Nano Banana Pro, with better text rendering and optional Google Search grounding for current facts.
+  - JSON prompting: break a prompt into fields (subject, composition, camera, lighting, style, aspect ratio, negative prompt) to get more consistent output.
+  - Use Gemini 3.1 Pro inside the Antigravity IDE with an image skill to rewrite a vague request into a structured JSON prompt, then generate the image through a Python script.
+  - Project layout: a Gemini.md (the equivalent of CLAUDE.md), a skills folder, and prompts and images folders sorted by category.
+  - Build the skill by generating batches of images, giving feedback each round and updating the skill.
+- **Tools / prices / numbers:**
+  - Nano Banana 2; Google AI Studio (model shown as Gemini 3.1 Flash Image Preview); Antigravity IDE (free download).
+  - key.ai API: about $0.04 per 1K-resolution image and $0.09 at 4K, which Nate says is about 40% below the official price.
+  - AI Studio lists a January 2025 knowledge cutoff for the model; Google Search grounding can be turned on.
+  - Nate's claim: Nano Banana 2 is cheaper than Pro while matching its quality.
+- **Skills shown:** JSON prompt design, image generation via API, Python scripting, agent-IDE workflows, skill iteration.
+- **Money angle:** Implied: product ad photos and infographics for businesses (his example is a cologne bottle ad). No pricing for services stated.
+- **Duet-relevant:** no
+- **Promo:** free school community (skills classroom); paid community with 3,000+ members (his claim).

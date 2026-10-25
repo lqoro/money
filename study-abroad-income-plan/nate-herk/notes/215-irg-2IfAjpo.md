@@ -1,0 +1,16 @@
+## 215. Gemini's New File Search Just Leveled Up RAG Agents (10x Cheaper)
+- **Link:** https://www.youtube.com/watch?v=irg-2IfAjpo | **Length:** 19 min | **AI-relevant:** yes
+- **Teaches:**
+  - Gemini File Search takes an uploaded document, chunks and embeds it, and lets an agent query it, so no separate vector database or ingestion pipeline is needed.
+  - Build it in n8n with four HTTP requests: create a file search store, upload the file, import the file into the store, then query the store through a generate-content call.
+  - Let the agent write the search query with a "from AI" field and set a system prompt that requires cited sources.
+  - Evaluate with 10 questions across three PDFs (golf rules, an Nvidia earnings release, an Apple 10-K), then inspect grounding metadata to check which chunks were used.
+  - Caveats he raises: updated files create duplicates, messy input gives messy answers, chunk-based retrieval struggles with whole-document questions, and sensitive data (PII) should not go into a hosted store.
+- **Tools / prices / numbers:**
+  - Indexing about $0.15 per 1M tokens; storage free (his statement). A 121-page PDF was about 95,000 tokens.
+  - His comparison (100 GB storage, 1M queries/month): roughly $12 one-time indexing and about $35 for the first month including query fees. He says Pinecone Assistant and OpenAI vector stores cost more, and Pinecone adds a per-hour charge he did not include.
+  - Chat model for answers: Gemini 2.5 Flash. Eval correctness: 4.2 out of 5 (his run).
+- **Skills shown:** n8n HTTP Request nodes, API key auth, reading API docs, RAG agent design, agent evaluations
+- **Money angle:** Implied: build document Q&A agents (policies, manuals, filings) for businesses, where low hosting cost makes each build cheaper. He gives no prices.
+- **Duet-relevant:** no
+- **Promo:** Free school community (free workflow download). Plus community (paid; full build walkthrough and courses).

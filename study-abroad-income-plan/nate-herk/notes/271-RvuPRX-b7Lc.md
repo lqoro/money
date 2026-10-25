@@ -1,0 +1,17 @@
+## 271. This AI System Posts Viral ASMR Shorts Hourly (free template)
+- **Link:** https://www.youtube.com/watch?v=RvuPRX-b7Lc | **Length:** 17 min | **AI-relevant:** yes
+- **Teaches:**
+  - Pipeline: keep a sheet of the seven most recent objects used. An idea agent picks a new object not on that list. A prompt agent writes a structured text-to-video prompt. A video API renders it. Then the row is rotated and the video is posted.
+  - Use structured output parsers so the idea agent returns an object and a caption, and the prompt agent fills a fixed template (subject, setting, action, style, sound, camera motion, composition, ambiance, aspect ratio).
+  - Call the video model through the fal API with an HTTP request node. Add a header-auth credential, then send the prompt, aspect ratio, and audio flag.
+  - Polling guardrail: wait about 5 minutes, then check the request ID every 10 seconds. Set the error branch to "continue using error output" so a not-ready response retries rather than stops the flow.
+  - Posting: upload the rendered file to Blotato so it lives on Blotato's servers, then post the same URL to YouTube, TikTok, and Instagram, each with its own account ID.
+  - Strip newlines and double quotes from prompts before they go into JSON bodies.
+- **Tools / prices / numbers:**
+  - Tools: n8n, Google Sheets, a Google text-to-video model (called "V3" in the transcript), fal API, Blotato (posts to nine platforms in total).
+  - Prices: he says the video model costs $0.50 per second without audio and $0.75 per second with audio. An 8-second clip with audio is about $6. Blotato offered 30% off for six months with a code (his promo).
+  - Numbers: one test video reached about 35,000 views in a day (his example). A fal render took about 186 seconds in one case, and up to 7 to 9 minutes at busy times (his observations). The flow runs hourly if the trigger is set that often.
+- **Skills shown:** HTTP and API auth setup, JSON prompt templating, structured output parsing, polling and error-branch design, Sheets row rotation, multi-platform social posting
+- **Money angle:** Faceless short-form content channels for clients or for your own accounts, with the prompt and template sold as a setup. He says the video cost is high and it is not a get-rich scheme. No client prices stated.
+- **Duet-relevant:** no
+- **Promo:** Blotato discount code (30% off for six months). Free school community (template JSON and sheet). His community (AI Automation Society Plus), with courses "Agent Zero" and "10 Hours to 10 Seconds" plus a step-by-step builds course.

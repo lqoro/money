@@ -7,7 +7,7 @@
   - Troubleshoot live: fix a Unicode error, an outdated image-API endpoint, a wrong Sheet ID, and broken HTML, by describing each problem in plain language.
   - Deploy later: once trusted, push to GitHub and schedule on trigger.dev or Modal. Self-healing only works while the agent is present.
   - Turn a good process into a skill so each run gets more consistent.
-  - Pricing: charge on value, not hours. Diagnose the bottleneck first ("doctor, not pharmacist").
+  - Pricing: charge on value, not hours. Diagnose the bottleneck first.
 - **Tools / prices / numbers:**
   - Claude Code (Pro about $17/mo per him; he uses Max), Perplexity (research), Claude (writing), Nano Banana via key.ai (infographics), Gmail, Google Sheets, trigger.dev, Modal, Beehiiv (mentioned as an option).
   - Market figures he cites (his sources, inconsistent in the video): about $7B this year rising to about $93B; about $8B now rising to $40-50B by 2030; 25% of enterprises piloting now, 50% by 2027.

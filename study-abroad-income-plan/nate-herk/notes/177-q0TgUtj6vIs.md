@@ -1,0 +1,17 @@
+## 177. The NEW Nano Banana 2 + Claude Code = $10k Websites
+- **Link:** https://www.youtube.com/watch?v=q0TgUtj6vIs | **Length:** 20 min | **AI-relevant:** yes
+- **Teaches:**
+  - Scroll-driven product sites: generate a start frame and an end frame with an image model, animate them into a short video, then split the video into roughly 100+ WebP frames with FFmpeg.
+  - Map each frame to a scroll position, so the product "plays" as the visitor scrolls up or down.
+  - Write the video prompt by giving Claude the start and end frames and asking it to draft the prompt.
+  - Use a video-to-website skill plus a front-end design skill in .claude/skills, and run plan mode before building.
+  - Test on localhost, then push to GitHub and import into Vercel for auto-deploy. His first push left out the frames folder, so the animation was missing live until he re-pushed.
+  - Give feedback to the agent and have it update the skill, so the skill improves each run.
+- **Tools / prices / numbers:**
+  - Claude Code (VS Code extension; Pro or Max plan required), Nano Banana 2 (image model), key.ai (API access used for images), Kling 3.0 (video), FFmpeg (free), GitHub (free), Vercel.
+  - Nate's claim: the demo site took about 30 minutes to build.
+  - Nate's suggested pricing for a client site: $5,000 to $10,000, delivered in about two days, plus monthly hosting and maintenance as recurring revenue (his estimate, not a market figure).
+- **Skills shown:** AI image and video generation, FFmpeg frame extraction, front-end and scroll animation, prompt writing, GitHub, Vercel deployment, skill iteration.
+- **Money angle:** Build a demo site for a niche (his example: a blender brand), then email or visit local businesses and sell a custom site with their copy and products. Add hosting and maintenance fees.
+- **Duet-relevant:** no
+- **Promo:** free school community (skills, link in description); paid "plus" community with 3,000+ members (his claim).

@@ -1,0 +1,16 @@
+## 270. I Built a YT Strategist AI Agent That Makes Me $6k/mo (free template n8n)
+- **Link:** https://www.youtube.com/watch?v=Ch-AWxvX2Jc | **Length:** 26 min | **AI-relevant:** yes
+- **Teaches:**
+  - Five-phase system. Phase 1 (form-triggered): take three competitor channels, scrape each one's top 10 videos from the last 6 months, and extract title power words and thumbnail analysis into a sheet.
+  - Phase 2 (weekly): the same packaging analysis on a broader niche (his example: "artificial intelligence").
+  - Phases 3 to 5 (daily at 6 a.m.): analyze the top niche videos, scrape the channel's five newest uploads and their 30 newest comments each, aggregate all 139 comments into one item, and sort them into what works, what doesn't, and what the audience asks for.
+  - Ideation agent: combines the daily analysis with the channel description to propose three new video title and thumbnail pairs, then posts a Slack notification with the sheet link.
+  - Workflow tips: use a Set node to turn the form input into an array, then split it to loop. Sort and filter scraper output by date yourself, because the scraper's date filter forces "newest" sorting. Aggregate items so one agent sees everything at once.
+- **Tools / prices / numbers:**
+  - Tools: n8n, Apify (YouTube Scraper and YouTube comments actors), OpenRouter (GPT-4.1 mini), OpenAI image analysis, Google Sheets, Slack, Excalidraw.
+  - Prices (as he states): YouTube Scraper about $5 per 1,000 videos; comments actor about $1.30 per 1,000 comments. Model costs are "not even close to 1 cent" per call (his figure).
+  - Numbers: his claim of over $6,000 per month from YouTube (Nate's claim). He cut descriptions to 50 tokens in the demo only.
+- **Skills shown:** form triggers, schedule triggers, loops and item splitting, scraper API calls, JSON body configuration, aggregate and filter nodes, structured output parsers, multimodal image analysis, Slack notifications
+- **Money angle:** Sell a YouTube packaging and strategy agent to creators and small channels. Charge for the template setup plus monthly reports, or sell the sheet-based pattern bank. He mentions a future hook-analysis add-on. No client price stated.
+- **Duet-relevant:** no
+- **Promo:** Discount on Apify (30% off, code mentioned in the video). Free school community (template and setup guide). His community (AI Automation Society Plus, described as a "plus" group), with a process-mapping course and the two courses "Agent Zero" and "10 Hours to 10 Seconds."

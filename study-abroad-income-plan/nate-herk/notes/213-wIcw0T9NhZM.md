@@ -1,0 +1,13 @@
+## 213. How to Price AI Workflows (Without Losing Clients)
+- **Link:** https://www.youtube.com/watch?v=wIcw0T9NhZM | **Length:** 21 min | **AI-relevant:** yes
+- **Teaches:**
+  - Price on value (time saved, money saved, error reduction), not hours. Be able to show the math behind any number.
+  - Start with value-based pricing for projects. After a few wins, move to milestone-based monthly retainers. Hourly billing makes you look like a freelancer.
+  - Discovery first: map frequency, triggers, people, minutes per run, and cost per hour before quoting.
+  - Use a PRICE framework: Prepare, Research, Identify ROI, Communicate, Expand.
+  - Write scope as a bulleted list with QA rounds and a backlog for V2. Adjust scope, not price, when pushed back on.
+- **Tools / prices / numbers:** Retainers of $1,500-$15,000/month in consulting. Add-ons: maintenance $200-$1,500/month, optimization/monitoring, and expansion projects. Hourly packages of 5-20 hours/month. Or 10-25% of the project price. Target margin 50-70%, with 50% as the minimum. Worked example: support rep at 1 h/day x $50 = about $12,000/yr saved, so about $1,200 starting price. Inbound-sales example: about $38,000/yr, priced at 15% (stated $5,500), then $550/month maintenance (about 10%).
+- **Skills shown:** ROI modeling, scoping, retainer design, proposals, margin planning
+- **Money angle:** Sell builds, then maintenance and optimization retainers. Audits and enablement are offers he may cover later.
+- **Duet-relevant:** no
+- **Promo:** Free school community (resource guide with six more objections), Plus community (full pricing course), link in description.

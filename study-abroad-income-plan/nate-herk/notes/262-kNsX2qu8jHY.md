@@ -1,0 +1,13 @@
+## 262. Unlock the Next Evolution of Agents with Human-like Memory (n8n + zep)
+- **Link:** https://www.youtube.com/watch?v=kNsX2qu8jHY | **Length:** 16 min | **AI-relevant:** yes
+- **Teaches:**
+  - Simple memory in n8n only stores recent turns. Long-term memory needs a knowledge graph of entities and relationships per user.
+  - Zep stores a per-user graph plus session history, keyed by a session ID (Telegram chat ID in his demo). A new session ID gives a fresh graph.
+  - Full-graph context is expensive, so query the graph through HTTP requests and keep only the top three facts above a relevance threshold (0.7).
+  - Build the context in n8n: fetch history, clean the messy JSON with a code node, fetch and filter facts, merge them into the system message, then write the new turn back to memory.
+  - Known limit: Zep's session endpoint returns the oldest messages first, so he used Postgres for short-term history and Zep for long-term facts.
+- **Tools / prices / numbers:** Zep, n8n, Telegram, OpenRouter. His token counts: one full-graph reply was 838 tokens early on; the filtered run used 1,045 tokens. He also quoted a much larger figure for the unfiltered run, but the transcript garbles it.
+- **Skills shown:** knowledge-graph memory design, HTTP API calls in n8n, code-node JSON cleanup, token-cost tuning.
+- **Money angle:** Memory layers for personal or customer assistants (onboarding, tutoring) that recall each user. Sell a memory-enabled agent with cost limits. No prices stated.
+- **Duet-relevant:** yes, a persistent assistant that remembers each person's preferences and history across sessions.
+- **Promo:** free school community (workflow JSON); paid community where he says he ran a live build; Agent Zero and 10 Hours to 10 Seconds courses.

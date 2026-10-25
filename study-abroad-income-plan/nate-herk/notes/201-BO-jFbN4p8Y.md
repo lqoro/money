@@ -1,7 +1,7 @@
 ## 201. I Built a Voice Agent That Calls Every New Lead (n8n + Vapi)
 - **Link:** https://www.youtube.com/watch?v=BO-jFbN4p8Y | **Length:** 27 min | **AI-relevant:** yes
 - **Teaches:**
-  - On a form submission, normalize the phone number in a code node to exactly 10 digits, and route bad numbers to a "incorrect format" log instead of calling.
+  - On a form submission, normalize the phone number in a code node to exactly 10 digits, and route bad numbers to an "incorrect format" log instead of calling.
   - Create an outbound call in Vapi via its API, passing the assistant ID, a phone number ID, and the lead's number with +1 prepended, plus variables for name, company and request.
   - Poll the call status every 10 seconds after a 60-second wait until it reads "ended", then check the ended reason to separate voicemail from completed calls.
   - Use Vapi structured outputs (budget, urgency, past experience, intent and others) and read them from the call-details object into a sheet.
