@@ -6,8 +6,7 @@ Your edge: NHA CMA, nursing student (TCU BSN), 3.877 GPA, fluent Spanish, comfor
 1. **Medical-expert AI-training platforms**: Mercor, Outlier, DataAnnotation, Handshake AI, Surge-type. Apply to the medical/health domain tracks, not generic tasks. These pay the most for your profile and onboard in days to weeks.
 2. **Remote medical scribe / documentation**, bilingual (Spanish) preferred.
 3. **Telehealth intake, scheduling, patient outreach, care coordination** (bilingual).
-4. **Tutoring**: A&P, chemistry, biology, statistics, and Spanish on Wyzant, Varsity Tutors, Cerebrity.
-5. Backup: part-time AI ops, support/QA at US startups.
+4. Backup: part-time AI ops, support/QA at US startups.
 
 Check each employer's policy on working from outside the US, and never claim a license or credential you do not hold (you are a CMA and BLS-certified; you are not an RN).
 

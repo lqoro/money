@@ -17,7 +17,7 @@ Implication: your edge is healthcare + bilingual + AI literacy, not coding. Lead
 ## Track A: Remote job (stable floor), weeks 1-4
 - **Best fit first**: medical/clinical expert roles on AI-training platforms (Mercor, Outlier, DataAnnotation, Surge-type, Handshake AI): review and write medical Q&A, rate chatbot answers. CMA + nursing student + 3.9 GPA can qualify for domain-expert pay tiers (often well above generalist pay). Apply to the medical/health domain, not generic tasks.
 - **Remote medical scribe / documentation** (bilingual Spanish scribes in demand), telehealth patient intake/scheduling support, bilingual patient outreach, prior-authorization or care-coordination support. Check each employer's rules on working from outside the US.
-- **Tutoring** (A&P, chemistry, bio, stats) on Wyzant/Varsity Tutors/Cerebrity, plus Spanish-language tutoring: flexible, async, you already have the grades.
+- No tutoring (you said live teaching isn't your thing). Dropped.
 - Also still fine: part-time/contract AI ops, support/QA, junior ops at US startups.
 - Time-zone fit: Spain is 6-9 hrs ahead of the US, so async/contract roles beat fixed-hours roles.
 - Actions: build a 1-page portfolio + resume, apply to 5-10 roles/week, sign up for 2-3 AI-training platforms right away (these pay $20-50/hr and onboard in days; they can bridge income).
@@ -36,6 +36,18 @@ Offer: done-for-you AI workflows for local small businesses (lead follow-up, rev
 3. **Weeks 5-10 Convert to retainers** ($300-1,000/mo each; setup fees $500-1,500). Target 3-5 clients by January.
 4. **Mac Mini setup**: always-on, remote access (Tailscale), n8n self-hosted, nightly backups, monitoring alerts to your phone.
 - Rough math: 4 retainers x $600 + 1-2 setups/mo x $1,000 ≈ $3.5-4.5k/month, roughly $1k/week.
+
+### What the Nate Herk recap (368 videos) adds to Track B
+Source: `053bd192-ALL-VIDEOS-RECAP.md` (his own claims, not verified; he also sells courses/community). The recap's own bottom line: one small-business pain, one automation, one retainer. Not recommended by the recap itself: faceless AI channels, AI trading bots, scraping/cold email without checking rules.
+- **Ladder** (#259): sell hours (help a business owner set up AI) -> paid audit -> first project -> retainer. Earn each rung from the one below.
+- **Getting the first client** (#151, #180, #184): warm first. Day 1 write a one-sentence offer + list 20 trusted contacts; days 2-3 hold 5-10 low-pressure conversations; one or two free pilots for testimonials; cold outreach last. Claimed first-build prices: $1,200-$2,600 (#121, #163, #167, #180: $1,500-$2,000).
+- **What sells** (#213, #311): speed-to-lead / missed-call text-back, document processing, follow-up sequences, database reactivation, customer support, voice receptionist/after-hours booking. Sell the outcome (hours saved, revenue recovered), not the tool.
+- **Pricing** (#156, #301): price on client value, not your hours; build fee + monthly maintenance retainer; get a baseline KPI before you start. Ignore the "$20K/month retainer" claims; they're not a beginner benchmark.
+- **Delivery** (#165): client owns the accounts (their n8n/Google), scope and "done" in writing, separate maintenance retainer, signed webhooks/HTTPS, minimal personal data.
+- **Claude-first build path** (#171, #173, #187, #198, #293 "Claude Code for Non-Coders", #356): since you don't code, build workflows by describing them to Claude and approving the plan, instead of learning n8n node-by-node. Use n8n or Claude Code on the Mac Mini.
+- **"AI person" path** (#255, #295, #297, #309): become the go-to AI builder inside one team. For you that could be a clinic or health-system role later; it also supports the remote-job track.
+- **Your niche fit**: bilingual clinics, dental offices, and similar local-service businesses (#213 lists dental). Start with missed-call text-back, appointment reminders, review replies, and intake follow-up that touch no patient health data. HIPAA warning (#130): anything with PHI is not a quick launch.
+- **Watch order (about 3-4 hours)**: #123 how to sell without an agency, #151 sign first client, #133 sell solutions, #213 what businesses want, #156 pricing, #165 delivery, #293 Claude Code for non-coders. Skip the model-release and trading videos.
 
 ## Track C: Class-action settlements (small, honest cash)
 Reality: payouts are typically $5-$100 each, so this is a few hundred dollars total, not income. "No proof" means no receipt is needed, but every form is a sworn statement that you are in the class. Only file for ones you actually qualify for; false claims are fraud and get flagged/denied.
