@@ -1,0 +1,17 @@
+## 347. Step by Step: Scrape UNLIMITED Emails for FREE with n8n
+- **Link:** https://www.youtube.com/watch?v=NzMNuuS5JbI | **Length:** 28 min | **AI-relevant:** yes (borderline: mostly plain n8n automation; ChatGPT is used only to generate search queries)
+- **Teaches:**
+  - Fetch Google Maps search result pages with a plain HTTP GET, using `+` in place of spaces in the query.
+  - Parse the returned HTML in a Code node, then filter out non-business domains with a regex exclude list. Pipes in the list must have no spaces.
+  - Deduplicate domains, loop over them with "continue using error output" so one bad site does not stop the run, and pull emails from each site.
+  - Run a trigger workflow that loops over a list of queries (sub-regions times a keyword) and calls the scraper workflow for each one, waiting about 6 seconds between runs.
+  - Fix: set "Always Output Data" on nodes so an empty result still passes a signal and the loop continues.
+- **Tools / prices / numbers:**
+  - n8n, Google Maps, Google Sheets, ChatGPT (to generate query lists).
+  - Nate's claim: no paid scraping APIs or credits used.
+  - Demo results: 97 California sub-region queries for dentists; one run reached 909 emails across about 60 executions.
+  - The build is credited to another creator (Acam) on LinkedIn.
+- **Skills shown:** n8n loops, error branches, HTML parsing, regex filtering, dedupe, Sheets append, lead-list building.
+- **Money angle:** a lead list of local businesses (for example dentists by region) can feed outreach or sales services. No price is given. Caution: scraping Google Maps may breach Google's terms, and cold email is subject to anti-spam rules. The video does not address either.
+- **Duet-relevant:** no.
+- **Promo:** free school community, where the workflow template is posted under "YouTube resources". No sponsor or affiliate seen.

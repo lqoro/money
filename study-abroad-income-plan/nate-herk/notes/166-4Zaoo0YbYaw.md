@@ -1,0 +1,18 @@
+## 166. Generate Content for 9 Socials on Autopilot with Claude Code
+- **Link:** https://www.youtube.com/watch?v=4Zaoo0YbYaw | **Length:** 17 min | **AI-relevant:** yes
+- **Teaches:**
+  - Install Claude Code as a VS Code extension, open a project folder, and prompt it to create a "repurpose YouTube video" skill that outputs LinkedIn, Instagram and X posts with visuals.
+  - Use a clarifying-questions prompt so Claude Code asks one question at a time until it is confident, then answer for tone, format, visual style and a manual approval gate before publishing.
+  - Let the first test run fail, then have the agent write its known issues into the skill file so the same failure is avoided later.
+  - Add brand assets (profile photo, verified badge) and resize images when the publishing API rejects them.
+  - Run /init to create a CLAUDE.md (he advises keeping it under about 150 lines) and move loose scripts into a scripts folder.
+  - Test one post to X through the API, then delete it.
+- **Tools / prices / numbers:**
+  - Claude Code (needs Pro or Max plan; free plan excluded).
+  - Blotato (social posting and scheduling API, paid feature; MCP config; "30% off for 6 months" via his link).
+  - OpenRouter used instead of a direct Anthropic key.
+  - Target: 9 platforms (he demonstrates LinkedIn, Instagram, X).
+- **Skills shown:** Claude Code setup, writing skills, MCP and API configuration, content repurposing, CLAUDE.md, project organization.
+- **Money angle:** none stated. He uses the workflow for his own channel. The reusable pattern (a tested skill plus a posting API) could be offered as a content service, but he does not say so.
+- **Duet-relevant:** no
+- **Promo:** Blotato affiliate link (30% off for 6 months); free school community with resources; paid community "AI Automation Society Plus" (his figure: over 3,000 members).
