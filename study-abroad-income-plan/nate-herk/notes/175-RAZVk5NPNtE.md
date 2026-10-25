@@ -1,0 +1,16 @@
+## 175. Claude Code Skills Just Got Even Better
+- **Link:** https://www.youtube.com/watch?v=RAZVk5NPNtE | **Length:** 16 min | **AI-relevant:** yes
+- **Teaches:**
+  - A skill is a text recipe (a markdown file of instructions) that the agent reads before doing a task.
+  - Two skill types: capability-uplift skills teach a task the base model does poorly (e.g. front-end design), and encoded-preference skills capture your own fixed multi-step process. Uplift skills may fade as models improve; preference skills tend to last.
+  - Anthropic's updated skill-creator skill can build, modify, evaluate and benchmark skills, and can tune a skill's description so it triggers correctly.
+  - Evals catch regressions (a skill getting worse on a newer model) and reveal when a skill is no longer needed.
+  - Live demo: installed skill-creator as a plugin, then one-shot a "YouTube weekly roundup" PDF skill. The first output had wrong data, so Nate asked for deeper research with parallel agents; the second run was more useful.
+- **Tools / prices / numbers:**
+  - Claude Code and its plugin manager; the official skill-creator plugin.
+  - Nate's claim: skills are "10 times easier" to build now (intro framing, not measured).
+  - Nate said the skill was built in about 20 minutes.
+- **Skills shown:** skill authoring, evals, benchmarking, trigger tuning, plugin install, parallel sub-agents, PDF report generation.
+- **Money angle:** none stated. He frames skills as leverage for managers and operators rather than as a product to sell.
+- **Duet-relevant:** no
+- **Promo:** none

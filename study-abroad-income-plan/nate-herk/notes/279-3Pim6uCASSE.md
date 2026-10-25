@@ -1,0 +1,17 @@
+## 279. This AI Agent Can Scrape and Screenshot the Web with No Code (n8n tutorial)
+- **Link:** https://www.youtube.com/watch?v=3Pim6uCASSE | **Length:** 17 min | **AI-relevant:** yes
+- **Teaches:**
+  - One Firecrawl search call can search the web, filter results, scrape each page, and return markdown or a screenshot (including full-page).
+  - Search operators to narrow results: exact match, exclusions with a dash, site:, URL and title word filters, plus time, language and country parameters.
+  - Build the request in an n8n HTTP Request node by importing the curl example, then save the API key as an n8n header credential (Authorization: Bearer).
+  - Turn it into an agent tool by putting the operator rules and scrape-format options in the agent's system prompt, so it writes valid queries from plain language.
+  - Debug a broken JSON body in the tool input (Nate's example: a missing comma caused repeated failures).
+- **Tools / prices / numbers:**
+  - Firecrawl search endpoint; start free with 500 credits (as stated); limit can be set from 5 up to 100 results.
+  - Firecrawl described as open source (as stated).
+  - Scrape formats: markdown, HTML, raw HTML, links, screenshot, full-page screenshot, JSON.
+  - n8n HTTP Request node; ChatGPT or Claude suggested for fixing request formatting.
+- **Skills shown:** n8n HTTP Request setup, API auth via credentials, query-operator design, agent prompt engineering for tool input, JSON debugging.
+- **Money angle:** Research and monitoring services: pull competitor pages, news, or Reddit/forum threads matching keywords and deliver screenshots and markdown summaries to clients on a schedule. Prices not stated.
+- **Duet-relevant:** no
+- **Promo:** Firecrawl affiliate-style mention with code "herk10" for 10% off for a year; free school community (template download); paid community; two courses ("Agent Zero" and "10 Hours to 10 Seconds").

@@ -1,0 +1,15 @@
+## 255. How to Build a WhatsApp Agent with n8n (credential tutorial)
+- **Link:** https://www.youtube.com/watch?v=A0OwvNOLNlw | **Length:** 7 min | **AI-relevant:** yes
+- **Teaches:**
+  - Connecting a WhatsApp Business trigger in n8n so an incoming message starts a workflow.
+  - Creating a Meta developer app (business type) and copying its app ID and secret into the n8n trigger credential.
+  - Getting a test-number access token and business account ID for the separate WhatsApp send node, which needs its own credential.
+  - Wiring the trigger to an AI agent with a chat model, then mapping the incoming message text into the agent input and the agent output into the reply.
+  - Test workflows only listen while executed; an active workflow is needed for always-on use.
+- **Tools / prices / numbers:**
+  - n8n, Meta for Developers (WhatsApp test number), OpenRouter as the chat model.
+  - Warning: every message spends model credits, so spam can run up cost.
+- **Skills shown:** n8n workflow building, API credential setup, AI agent prompting via expressions, debugging test vs. active triggers.
+- **Money angle:** Business WhatsApp agents that answer leads and book meetings for a company. No pricing given. Start by building the flow for one client's business number.
+- **Duet-relevant:** yes, a messaging-app agent that replies to users in real time, though this one serves a business number rather than a single person.
+- **Promo:** paid community (about 2,000 members) with the Agent Zero and 10 Hours to 10 Seconds courses; links are in the video description.

@@ -1,0 +1,16 @@
+## 276. This AI Workflow Analyzes Videos for FREE (n8n + Google Gemini)
+- **Link:** https://www.youtube.com/watch?v=acB2o6nwAn8 | **Length:** 12 min | **AI-relevant:** yes
+- **Teaches:**
+  - Build an n8n workflow that takes an uploaded video from a form, sends it to Google Gemini, and returns a detailed text description.
+  - Gemini's video flow is upload first, then poll for status (wait about 5 seconds and check again) before calling generate-content, because the file is not ready right away and the call fails otherwise.
+  - Turning a curl example from the docs into an n8n HTTP Request node via "import curl", then removing the key from the URL and using a query-parameter credential.
+  - Passing a YouTube URL straight into the generate-content request with a text prompt (e.g., summarize, or describe what happens plus the key takeaway).
+  - Testing with a manual trigger and pinned data to iterate on prompts without re-running uploads.
+- **Tools / prices / numbers:**
+  - Google Gemini API: free API key from Google AI for developers (free tier as presented in the video; no pricing stated).
+  - n8n HTTP Request node, form trigger, Set node.
+  - Demo: a short MP4 analyzed in under 5 seconds (Nate's report); a 10-minute YouTube video took longer.
+- **Skills shown:** n8n HTTP Request configuration, API auth (query-parameter credentials), file upload and polling patterns, prompt design for video analysis.
+- **Money angle:** Video analysis as a service: describe or summarize client videos (ads, product clips, training content), tag them, or produce summaries for content teams. Start with a form-based n8n workflow and a fixed output format. No prices stated.
+- **Duet-relevant:** no
+- **Promo:** free school community (downloadable template, searched by video title); paid community (Nate's claim of a large member base); two courses, one called "Agent Zero" and one called "10 Hours to 10 Seconds."

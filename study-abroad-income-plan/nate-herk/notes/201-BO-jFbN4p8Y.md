@@ -1,0 +1,13 @@
+## 201. I Built a Voice Agent That Calls Every New Lead (n8n + Vapi)
+- **Link:** https://www.youtube.com/watch?v=BO-jFbN4p8Y | **Length:** 27 min | **AI-relevant:** yes
+- **Teaches:**
+  - On a form submission, normalize the phone number in a code node to exactly 10 digits, and route bad numbers to a "incorrect format" log instead of calling.
+  - Create an outbound call in Vapi via its API, passing the assistant ID, a phone number ID, and the lead's number with +1 prepended, plus variables for name, company and request.
+  - Poll the call status every 10 seconds after a 60-second wait until it reads "ended", then check the ended reason to separate voicemail from completed calls.
+  - Use Vapi structured outputs (budget, urgency, past experience, intent and others) and read them from the call-details object into a sheet.
+  - Keep the voice agent's system prompt disciplined: identity, required questions, end-call rules. Tell callers they are talking to an AI.
+- **Tools / prices / numbers:** n8n, Vapi (its free numbers have a daily outbound cap; he switched to an imported Twilio number), OpenAI GPT-4o for the assistant, Google Sheets. He quotes a prospect budget of 5 to 10K (the prospect's figure, in the demo). No prices for his service stated.
+- **Skills shown:** phone normalization, API polling loops, structured-output schema design, voice-agent prompting, sheet logging.
+- **Money angle:** none stated. Use case sold: automated lead qualification calls for service businesses. Pricing not given.
+- **Duet-relevant:** no (outbound lead calls, not a personal assistant acting for the owner)
+- **Promo:** Free school community (templates and system prompts, free); paid Plus community with courses and live step-by-step builds.

@@ -1,0 +1,13 @@
+## 202. I Built a New AI System in 3 Hours (and got paid $1650)
+- **Link:** https://www.youtube.com/watch?v=Q4iEslmyMyM | **Length:** 30 min | **AI-relevant:** yes
+- **Teaches:**
+  - Build an email assistant in n8n that a client talks to through Slack. Two tools: a Gmail search tool with received-after, received-before and sender filters the agent fills in itself, and a Google Contacts lookup by name.
+  - Turn off the Gmail "simplify" option so full email bodies come back, not snippets.
+  - Put drafting in a separate sub-workflow with its own writing-style system prompt and a structured output parser for subject and body. Return a short "draft created" message to the parent agent.
+  - Keep an human approval step before any draft is created, because contacts can be wrong. Never auto-send.
+  - Sell by solving a real problem first: find the first bottleneck the client names, scope a small system, then price on outcome and ongoing monitoring.
+- **Tools / prices / numbers:** n8n, Slack, Gmail, Google Contacts, Claude Sonnet 3.7 for drafting, simple memory. Claims (his): the client paid $1,650 for about 3 hours of build; the ROI roughly 10x in saved time; a VA would cost a few hundred a month.
+- **Skills shown:** n8n tool-calling agents, Gmail and Contacts nodes, sub-workflow design, style-guide prompting, structured outputs, client discovery, scoping.
+- **Money angle:** Sold an inbox assistant for $1,650 (Nate's claim). Start by building small public demos, let prospects ask for custom builds, diagnose the bottleneck, and sell outcomes plus monitoring and iteration. He says he would not sell a generic email product, since big mail providers are adding AI.
+- **Duet-relevant:** yes. A Slack-based inbox assistant that searches mail, looks up contacts and drafts replies for its owner.
+- **Promo:** Free school community (resource guide, free) and a pointer to his earlier inbox-manager course video.

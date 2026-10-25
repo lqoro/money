@@ -1,0 +1,18 @@
+## 361. How to Build a Client Onboarding AI Agent with n8n (Step-by-Step Tutorial, No Code)
+- **Link:** https://www.youtube.com/watch?v=Wpwbm3zCymk | **Length:** 21 min | **AI-relevant:** yes
+- **Teaches:**
+  - Start with an n8n form trigger that collects client details (name, email, industry, goal, notes); send the form link to new clients.
+  - Agent 1 (conversational, no tools) writes a personalized welcome email from the form data; its system prompt forbids template variables and fixes the sign-off.
+  - A cheaper model parses the agent's output into separate fields (subject, body, email) so the Gmail node can use each one.
+  - Agent 2 writes a short client profile summary from the same form data, which another parse step splits into name, email and summary, then appends to a Google Sheet.
+  - Pin test data on the form trigger while building, then unpin it and test with real submissions.
+  - Use a larger model for writing and a smaller one for field extraction (his reasoning: cost and necessity).
+- **Tools / prices / numbers:**
+  - n8n (Form Trigger, AI Agent, OpenAI chat model, Gmail, Google Sheets)
+  - Models: GPT-4o for writing and summaries, GPT-4o mini for parsing (he spoke of these as "40" and "40 mini")
+  - Three columns in the sheet: name, email, summary
+  - No prices stated
+- **Skills shown:** form-triggered workflows, prompt design for generated emails, structured output parsing, Gmail and Sheets integration, testing with pinned data
+- **Money angle:** Agencies and consultants can sell onboarding automation: the welcome email, the client summary and CRM entry, set up for each new client. Price points not stated.
+- **Duet-relevant:** no
+- **Promo:** none

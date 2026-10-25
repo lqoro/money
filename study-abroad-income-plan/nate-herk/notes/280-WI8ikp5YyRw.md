@@ -1,0 +1,17 @@
+## 280. The Easiest Way to Use Community Nodes in n8n
+- **Link:** https://www.youtube.com/watch?v=WI8ikp5YyRw | **Length:** 9 min | **AI-relevant:** yes
+- **Teaches:**
+  - Community nodes are third-party integrations that replace hand-built HTTP Request nodes.
+  - On n8n Cloud, enable "verify community nodes" in settings (n8n version 1.94 or later), then install verified nodes from the panel.
+  - Create a credential with just the API key for the node; the node handles auth headers itself.
+  - The same nodes can be used as agent tools, and some packages include triggers.
+  - Self-hosted: install a package by name in settings, or manually with npm in the n8n directory for local/Docker installs, then restart.
+- **Tools / prices / numbers:**
+  - Tavily (search node, used as a node and as an agent tool; search options like general, news, finance; max results).
+  - ElevenLabs (text-to-speech node; voice picker).
+  - n8n version 1.94 or later for cloud community nodes; n8n's launch set of about 25 nodes on cloud (per the article he cites).
+  - A GitHub list of the top 100 community nodes (link in the video description).
+- **Skills shown:** n8n administration (enabling community nodes), installing and configuring third-party nodes, credential setup, troubleshooting self-hosted installs.
+- **Money angle:** none (setup tutorial; a faster setup could cut client build time for integration-heavy automations).
+- **Duet-relevant:** no
+- **Promo:** none.

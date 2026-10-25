@@ -1,0 +1,18 @@
+## 173. Claude Code 2.0 Is Finally Here
+- **Link:** https://www.youtube.com/watch?v=BlNJFa3Btm8 | **Length:** 10 min | **AI-relevant:** yes
+- **Teaches:**
+  - Scheduled tasks in the Claude Code desktop app: create from the Schedule tab or with /schedule in a session, set a prompt, model, folder and time.
+  - Convert an existing skill into a scheduled task by asking Claude Code to read the skill and set it up (his "morning coffee" skill now runs at 6 a.m.).
+  - Scheduled runs are agentic, not fixed scripts. Use a plain script if you need determinism.
+  - Catch-up: if the computer was off, missed runs (up to 7 days back) fire when it is back on.
+  - Before scheduling, run the task manually to catch permission prompts. Set deny rules for destructive commands (deletes, removes).
+  - Runs are stateless. For memory, have each run read and overwrite a single status file (he prefers this to an append log).
+  - Notifications: add a hook that plays a sound when a session finishes.
+- **Tools / prices / numbers:**
+  - Claude Code desktop app, /schedule, hooks, project-level settings for permissions.
+  - Example run time: 6:00 a.m. (his morning coffee task; a file shows 6:09 in one place).
+  - Limits he states: the computer must be on and the desktop app open; desktop only at the time of filming; the terminal and VS Code can read and edit task files but cannot create them.
+- **Skills shown:** scheduling agents, permission hardening, stateless-run memory design, hooks, self-improving prompts.
+- **Money angle:** none stated.
+- **Duet-relevant:** yes, partly. A daily "morning coffee" agent plans his day from his commitments and runs without him, though it is not a chat interface.
+- **Promo:** none

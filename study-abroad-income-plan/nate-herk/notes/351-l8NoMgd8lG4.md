@@ -1,0 +1,15 @@
+## 351. The Best Way to Give AI Agents Tools in n8n
+- **Link:** https://www.youtube.com/watch?v=l8NoMgd8lG4 | **Length:** 19 min | **AI-relevant:** yes
+- **Teaches:**
+  - Old pattern: the agent passes a query to a sub-workflow, which uses an LLM or code node to split it into fixed fields (send-to, subject, body). Any renamed field breaks the flow.
+  - New pattern: write `$fromAI(key, description, type, default)` directly into a tool's fields, such as the recipient, subject, and body of a Gmail node. The agent fills them in one step.
+  - Only the key is required. The description clarifies ambiguous fields, the type sets the data kind, and the default (for example "guest" or 0) is used if the model cannot find a value.
+  - Pass the current date and time into the agent prompt with a formatted "now" expression, so "tomorrow" resolves correctly.
+  - Keep each agent to a small tool set. Group Gmail actions into a dedicated email agent rather than giving one agent 30 tools.
+- **Tools / prices / numbers:**
+  - n8n, Gmail, Google Calendar, Airtable, Slack, Telegram, Outlook, OpenAI GPT-4o mini.
+  - Nate says the free school community was almost 1,000 members.
+- **Skills shown:** n8n tool design, `$fromAI` parameter mapping, agent prompt basics, live debugging.
+- **Money angle:** none stated for the tools. Nate announces a new paid community that offers modules, live calls, and "guaranteed" responses. No price is given.
+- **Duet-relevant:** yes. An agent that sends email and manages a calendar through tool calls on your behalf is the core of a personal assistant bot.
+- **Promo:** free school community (templates under YouTube resources) and a newly launched paid community.

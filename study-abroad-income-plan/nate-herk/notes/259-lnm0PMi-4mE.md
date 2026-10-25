@@ -1,0 +1,13 @@
+## 259. Beginner's Guide to Metadata: Make Your RAG Agents Smarter
+- **Link:** https://www.youtube.com/watch?v=lnm0PMi-4mE | **Length:** 15 min | **AI-relevant:** yes
+- **Teaches:**
+  - Metadata is data about data. It adds context to vector chunks (video title, URL, timestamp, date, department) without changing their embedding meaning.
+  - Retrieval works on meaning first. Metadata is read after a chunk is found, and it can filter results (e.g., only one video).
+  - Pipeline: scrape a YouTube transcript, merge timestamps, group about 20 transcript segments per chunk with start and end times, then vectorize with metadata.
+  - Filter searches by metadata in the vector store node, and delete all vectors for a video by its URL metadata when a sheet row is marked "remove".
+  - Vector search is poor for whole-document summaries because chunks lack holistic context.
+- **Tools / prices / numbers:** n8n, Supabase vector store, Apify transcript scraper, Google Sheets, Anthropic video as the test source. He mentions an Apify promo code for 30% off for 3 months. Chunks of about 40 seconds each (his example). A deletion removed 32 vectors (his example).
+- **Skills shown:** RAG pipeline design, metadata schema design, code-node data transformation, vector store filtering and deletion.
+- **Money angle:** Build RAG knowledge bases with source citations for clients (support docs, transcripts, internal records). Sell a pipeline with add/update/delete flows. No prices stated.
+- **Duet-relevant:** no.
+- **Promo:** Apify code "30 Nate Herk" for 30% off for 3 months (referral-style code); free school community template; paid community; Agent Zero and 10 Hours to 10 Seconds courses.

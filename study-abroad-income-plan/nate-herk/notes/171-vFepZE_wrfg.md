@@ -1,0 +1,18 @@
+## 171. How to Build $10,000 Agentic Workflows (Claude Code Tutorial)
+- **Link:** https://www.youtube.com/watch?v=vFepZE_wrfg | **Length:** 25 min | **AI-relevant:** yes
+- **Teaches:**
+  - Use the WAT framework (workflows as markdown, agent, tools): the agent reads the workflow and runs Python tools; the claude.md sets project rules.
+  - Plan mode first: state the goal loosely, let Claude Code ask questions, then approve the plan and tech stack.
+  - Build a newsletter pipeline from one prompt: research, HTML email, infographics, human subject-line approval, Gmail send, Sheets archive.
+  - Troubleshoot live: fix a Unicode error, an outdated image-API endpoint, a wrong Sheet ID, and broken HTML, by describing each problem in plain language.
+  - Deploy later: once trusted, push to GitHub and schedule on trigger.dev or Modal. Self-healing only works while the agent is present.
+  - Turn a good process into a skill so each run gets more consistent.
+  - Pricing: charge on value, not hours. Diagnose the bottleneck first ("doctor, not pharmacist").
+- **Tools / prices / numbers:**
+  - Claude Code (Pro about $17/mo per him; he uses Max), Perplexity (research), Claude (writing), Nano Banana via key.ai (infographics), Gmail, Google Sheets, trigger.dev, Modal, Beehiiv (mentioned as an option).
+  - Market figures he cites (his sources, inconsistent in the video): about $7B this year rising to about $93B; about $8B now rising to $40-50B by 2030; 25% of enterprises piloting now, 50% by 2027.
+  - Pricing example: a build that saves $10,000 a month is worth $5,000 (his example). A $3,000 build can grow into a $50,000/year relationship (his example).
+- **Skills shown:** WAT framework, plan mode, Claude Code debugging, n8n-style workflow thinking, scheduling, skill creation, client diagnosis.
+- **Money angle:** sell agentic workflow builds to businesses for leads, onboarding or data-entry problems. Price by value (time saved, money saved), start hourly for early trust, then move to fixed value-based fees and ongoing optimization. Find clients through conversations (he links a separate video).
+- **Duet-relevant:** no
+- **Promo:** free community ("over a quarter million members", his figure) with templates and resources; paid community with live Q&As, direct support and job opportunities. Links in description.

@@ -1,0 +1,13 @@
+## 295. One n8n Workflow for Unlimited Error Handling (Step-by-Step)
+- **Link:** https://www.youtube.com/watch?v=bTF3tACqPRU | **Length:** 10 min | **AI-relevant:** yes
+- **Teaches:**
+  - Build one "error logger" workflow that starts with an Error Trigger node, then point any number of active workflows at it in their settings (Error workflow option).
+  - Only active workflows fire the error workflow, so activate the workflow under test first.
+  - Log each failure to a Google Sheet (timestamp, workflow name, execution URL, failing node, error message) with an append-row node; the timestamp is a "now" expression.
+  - Send a Slack alert with the same fields plus a link to the failed execution, and turn off the n8n footer in the message.
+  - Key insight: a run can finish green while a tool silently fails (a search tool with bad auth returned a friendly reply). The error workflow only catches real node errors, so test that case separately.
+- **Tools / prices / numbers:** n8n, Error Trigger, Google Sheets, Slack, Telegram trigger, AI agent with chat model and simple memory. No prices given.
+- **Skills shown:** n8n error handling, execution debugging, Google Sheets and Slack integration, expressions
+- **Money angle:** none stated.
+- **Duet-relevant:** yes. The demo agent is a Telegram-connected personal assistant, and error alerts are what keep an always-on bot like that dependable.
+- **Promo:** a free school community; the Google Sheet template is posted there. Asks viewers to like and join for the template.

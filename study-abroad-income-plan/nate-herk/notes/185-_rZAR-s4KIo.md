@@ -1,0 +1,18 @@
+## 185. How to Sign AI Workflow Clients (With 0 Followers)
+- **Link:** https://www.youtube.com/watch?v=_rZAR-s4KIo | **Length:** 14 min | **AI-relevant:** yes
+- **Teaches:**
+  - Land AI automation clients without a YouTube audience, using three paths: cold outreach, referrals, and partner-led deals.
+  - Get proof first (even free or small projects), then use it as a case study in outreach.
+  - Cold outreach workflow: pick one platform, build a niche lead list, keep messages short and problem-focused, lower risk with no-pay-until-results offers.
+  - Four-step framework: offer first, validate with volume (aim for about 100 messages a day), deliver and document before/after metrics, then scale with borrowed authority.
+  - Track reply rate, positive replies, and meetings; treat "don't build before you sell" as the core rule.
+- **Tools / prices / numbers:**
+  - Apollo or LinkedIn Sales Navigator for lead lists; industry directories as cleaner sources.
+  - Loom for a short offer video.
+  - Cold email reply rates of about 1-5% cited as typical; Nate says above 5% is strong.
+  - Referral partner offer: 20% of project revenue to the agency partner (Nate's example offer).
+  - Nate says his former agency scaled past $100K a month (Nate's claim).
+- **Skills shown:** cold outreach, lead list building, offer design, client discovery calls, reporting metrics
+- **Money angle:** Sell AI automation to small and B2B businesses. Start with free or discounted proof projects, then charge once results show. Partner with agencies and consultants who already have clients (offer free AI audits, take a revenue share). No price points beyond the 20% share.
+- **Duet-relevant:** no
+- **Promo:** Free school community (resource guide), plus community with about 3,000 members (paid).

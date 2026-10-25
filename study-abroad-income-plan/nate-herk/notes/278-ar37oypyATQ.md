@@ -1,0 +1,19 @@
+## 278. I Built the Ultimate Browser Agent with No Code (n8n + Airtop)
+- **Link:** https://www.youtube.com/watch?v=ar37oypyATQ | **Length:** 18 min | **AI-relevant:** yes
+- **Teaches:**
+  - A browser agent built from a tool-using AI agent: start browser, load URL, query page, click, type, think, end session.
+  - Each browser tool is an n8n sub-workflow that calls Airtop, and returns session and window IDs the agent must pass along.
+  - Use a "query" tool to read the page, and fall back to loading a known URL when a click fails.
+  - Store logins in an Airtop profile once, then pass the profile name when a site needs login; no profile needed for public pages.
+  - Always end the session, because free plans allow one active browser at a time and sessions stay open otherwise.
+- **Tools / prices / numbers:**
+  - Airtop (browser sessions, live view URL, profiles, API key): free start with 5,000 credits.
+  - Nate's stated credit packs (with his code): 30,000 credits for $15; 100,000 credits for $45.
+  - Concurrency (as stated): free plan 1 active browser; starter plan 3.
+  - Nate's stated usage: about 2 hours of testing used the 5,000 free credits.
+  - Chat model: OpenRouter with Claude 3.5 Sonnet (he found it worked best vs GPT-4.1).
+  - Slack used to deliver the live view link.
+- **Skills shown:** n8n agent tool design, sub-workflow wiring by ID, browser automation, prompt design for tool use, log reading.
+- **Money angle:** Sell browser-automation templates for sales and research (ICP scoring of LinkedIn profiles, competitor price monitoring, job-change monitoring) to B2B teams. Price points not stated. Start with one narrow workflow and a demo.
+- **Duet-relevant:** no
+- **Promo:** Airtop sign-up link with a "50% off for 3 months" code (affiliate-style mention, code "Nate half off"); free school community (template download); paid community; two courses ("Agent Zero" and "10 Hours to 10 Seconds").

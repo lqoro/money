@@ -1,0 +1,14 @@
+## 257. I Built 204 AI Automations, Here's What Actually Matters
+- **Link:** https://www.youtube.com/watch?v=wq001sxDTWw | **Length:** 23 min | **AI-relevant:** yes
+- **Teaches:**
+  - Context engineering: give the agent the right information at the right time, using tools and data, not one perfect prompt.
+  - Six components: user input, system prompt, memory, retrieved knowledge, tool calls, and structured output.
+  - Three memory types: working (within one run), short-term (conversation window with a session ID), and long-term (persistent across sessions).
+  - Tool calling for RAG: vector stores, web search, CRMs, and sheets are all retrieval; chunking loses whole-document context, so use metadata and reranking.
+  - Summarize retrieved data in a sub-workflow before passing it back to the main agent to cut token cost.
+  - Design principles: begin with the end in mind, design the data pipeline and refresh rules, load only relevant context, and give each agent one job.
+- **Tools / prices / numbers:** n8n, Postgres or Zep for memory, Supabase vector store, Perplexity and Tavily for research, OpenWeatherMap, HubSpot, Google Docs, Gmail. No prices given. He notes that a longer context window costs more tokens.
+- **Skills shown:** n8n agent architecture, RAG pipeline design, memory configuration, prompt and tool-description design, cost control.
+- **Money angle:** Context and memory design is the core deliverable for client agents. Sell an audit of a client's data sources and an agent build with memory and retrieval. He did not state prices.
+- **Duet-relevant:** yes, an "ultimate assistant" with session-based memory and delegation to sub-agents, which matches a persistent personal assistant.
+- **Promo:** free school community (Excalidraw link), paid community, and the Agent Zero and 10 Hours to 10 Seconds courses; links are in the description.

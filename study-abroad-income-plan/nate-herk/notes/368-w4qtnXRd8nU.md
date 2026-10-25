@@ -1,0 +1,16 @@
+## 368. How I Wish Someone Explained AI Agents To Me (as a beginner)
+- **Link:** https://www.youtube.com/watch?v=w4qtnXRd8nU | **Length:** 12 min | **AI-relevant:** yes
+- **Teaches:**
+  - Definition: an AI agent is an LLM "brain" that reasons, follows instructions, and uses the tools you give it (calendar, CRM, Drive, Slack, etc.) to complete a task.
+  - Difference from traditional automation: rule-based flows break on decisions that need judgment, while agents can reason over messy input.
+  - Six reasons to care: efficiency and cost, scalability, adaptability, decision-making, ease of building with low-code tools, and future leverage.
+  - Four business areas where agents fit: marketing (personalized outreach, lead scraping, follow-ups, content), onboarding, customer success, and project management (scheduling, documents, tracking).
+  - Start with a no-code tool such as n8n to build the first agent; learning now is an advantage before the field is crowded.
+- **Tools / prices / numbers:**
+  - n8n (named as a recommended beginner tool); Zapier and Relevance AI also mentioned
+  - Search interest chart (no figures read out)
+  - No prices stated
+- **Skills shown:** conceptual framing of AI agents, workflow automation basics, identifying business processes to automate
+- **Money angle:** He says agents can help people "make a ton of money" but gives no specific product. Practical angle: sell agent builds to businesses in the four areas he lists. No price points stated.
+- **Duet-relevant:** no
+- **Promo:** none

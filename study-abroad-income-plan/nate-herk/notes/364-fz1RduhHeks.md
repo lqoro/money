@@ -1,0 +1,18 @@
+## 364. *LIVE BUILD* Personalized Outreach AI Agent in n8n (No Code)
+- **Link:** https://www.youtube.com/watch?v=fz1RduhHeks | **Length:** 24 min | **AI-relevant:** yes
+- **Teaches:**
+  - Lead qualification: read leads from a Google Sheet (filled by a Google Form), send each lead to an LLM with qualification rules, and get back "qualified" or "not qualified" plus reasoning.
+  - Rules are written as a system prompt and the model replies in JSON; wrap the output in `JSON.parse` so later nodes can read fields.
+  - Merge the qualification back to the original rows by position, then update the Sheet's rating and reasoning columns, matching rows on the timestamp.
+  - A second tool writes an outreach message only for qualified leads (preferred contact method, best time, script), with rules that forbid template placeholders.
+  - Wrap both tools in an agent (chat trigger, tools agent, GPT-4o, window memory) and have it call them by name.
+  - Better for production: trigger the qualification on "row added" in the Sheet instead of through the agent.
+- **Tools / prices / numbers:**
+  - n8n, Google Sheets, Google Forms, OpenAI GPT-4o
+  - Qualifying rules in the demo: decision maker, and company size of about 45 employees or fewer (his criteria)
+  - Build time about 20 minutes (his estimate)
+  - No prices stated
+- **Skills shown:** lead qualification prompts, JSON parsing, merge and update flows on Sheets, multi-tool agents, execution-log troubleshooting
+- **Money angle:** Sell lead qualification plus outreach drafting to B2B sales teams or agencies, with the Sheet as the interface. Could be packaged as a "sales pre-qualifier." He doesn't state a price.
+- **Duet-relevant:** no
+- **Promo:** none

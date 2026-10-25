@@ -1,0 +1,13 @@
+## 204. How to Actually Deliver AI Projects (APIs, Hosting & Handover Explained)
+- **Link:** https://www.youtube.com/watch?v=xxARTGo_Oqg | **Length:** 22 min | **AI-relevant:** yes
+- **Teaches:**
+  - Hosting: default to the client hosting n8n on their own account or instance, with you as a team member. Self-host for your own agency's internal use only. Reselling a hosted n8n as a platform needs a commercial license (he says those are not cheap).
+  - Security: use HTTPS and signed webhooks, never put secrets in URLs, add auth and rate limits, minimize personal data, and keep logs and payloads limited to those who need them.
+  - API keys: the client creates and pays for their own keys, and you paste them in, or use a one-time secret link.
+  - Testing: gather real sample data, define success and failure criteria, run dozens of inputs, log each step, then do client-facing QA. Add an error workflow and a logging sheet.
+  - Handover: duplicate the workflow into test and production, back up JSON, label nodes, add sticky notes, record a short walkthrough, and define scope, retainer, service levels, IP and exit terms in writing.
+- **Tools / prices / numbers:** n8n (sustainable-use and commercial license distinction), Google Sheets logging, Loom walkthroughs, a password vault. No prices given. Example: a personal-assistant client connected CRM, calendar and email on a kickoff call (his story).
+- **Skills shown:** hosting and licensing decisions, webhook security, data minimization, QA design, versioning and backup, handover documentation, contract scoping.
+- **Money angle:** Charge for the build and handover, then a separate maintenance retainer that excludes new features. Put scope and done criteria in writing. Pricing not stated.
+- **Duet-relevant:** no
+- **Promo:** Free school community resource guide (free); Plus community with over 3,000 members.

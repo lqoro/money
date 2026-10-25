@@ -1,0 +1,17 @@
+## 354. Step By Step: Automating Lead Nurturing with No Code in n8n
+- **Link:** https://www.youtube.com/watch?v=fWtXJswvUcA | **Length:** 23 min | **AI-relevant:** yes
+- **Teaches:**
+  - Trigger: a Google Sheets "row added" node (polls every minute). The sheet is fed by a Google Form lead capture.
+  - Wait node before sending, so the reply feels human. The demo uses 1 second, but Nate suggests minutes.
+  - OpenAI message model (GPT-4o) with a system prompt that writes a personalized email and returns three separate JSON fields: subject, body, and a lead tag (hot, medium, or low value). Turn on "output as JSON" so the fields split correctly.
+  - Prompt rules: subject starts with the company name, no placeholders, first name only.
+  - Lead tiers in the prompt are based on budget and timeline. For example, premium at over $10,000 and basic under $5,000.
+  - Gmail sends the email with attribution turned off. A Sheets update matches on name to write status and tag. A Slack message alerts the team with the tag, name, interest, budget, and a sheet link.
+  - Google Cloud OAuth client ID and secret for Sheets and Gmail.
+- **Tools / prices / numbers:**
+  - n8n, Google Forms, Google Sheets, Gmail, Slack, OpenAI (GPT-4o), Google Cloud Console.
+  - No prices. Demo leads are fictional (Sarah Johnson, Michael Scott, company "ABC Corp").
+- **Skills shown:** n8n triggers and routing, prompt design with structured JSON output, CRM-style updates, Slack alerts.
+- **Money angle:** sell lead capture and automated follow-up to small businesses, for example a website form that replies and tags leads. No price is given. Nate's own consult form is the model he shows.
+- **Duet-relevant:** no. It is a lead workflow, not an always-on personal agent.
+- **Promo:** free school community, where the template is posted. No sponsor mentioned.

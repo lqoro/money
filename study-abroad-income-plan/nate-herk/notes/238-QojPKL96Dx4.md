@@ -1,0 +1,13 @@
+## 238. The NEW Easiest Way to Build RAG Agents in Minutes (no code)
+- **Link:** https://www.youtube.com/watch?v=QojPKL96Dx4 | **Length:** 16 min | **AI-relevant:** yes
+- **Teaches:**
+  - Upload PDFs to a Pinecone Assistant (a hosted RAG service that handles indexing, chunking and embedding), then chat with it.
+  - Connect an n8n AI agent to the assistant with an HTTP request tool, using a curl import from Pinecone's API page and an API key.
+  - Set the query field to an AI-filled expression ("from AI" placeholder) so the agent writes its own search queries, and the agent may search more than once.
+  - Get exact quotes and page citations by adding the API option that includes citation highlights, and state the citation format in the system prompt.
+  - Compare setups on the same question and prompt: the assistant answered correctly with about 1,277 tokens, while a vector store and a Supabase vector store used far more tokens (about 30,000 and 5,000) and in the Pinecone store's case gave a wrong answer.
+- **Tools / prices / numbers:** Pinecone Assistant (Nate: active assistants cost 5 cents per hour, as shown on the pricing screen); Pinecone vector store; Supabase vector store; OpenRouter with GPT-4.1 mini; n8n HTTP Request tool. Token figures are from his single test. He also said the tokens-per-answer difference was "more than 15 times" for his test.
+- **Skills shown:** RAG setup without code, API authentication, HTTP tool configuration in n8n, citation and system prompt design, basic cost comparison.
+- **Money angle:** Build quick RAG "ask our documents" agents for clients with policy docs, manuals or reports, where source citations matter. Price as a setup fee plus the hourly assistant cost passed through. Test on the client's own documents first. No price points for services stated.
+- **Duet-relevant:** no
+- **Promo:** Free "school" community (template download); paid "Plus" community with 200+ members and classroom courses (Agent Zero, 10 Hours to 10 Seconds, and a One Person AI Agency course for annual members). Shout-out to Mark Cashef as the source of the Pinecone Assistant idea.

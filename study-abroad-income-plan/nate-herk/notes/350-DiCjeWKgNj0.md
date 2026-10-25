@@ -1,0 +1,17 @@
+## 350. I Scraped, Researched, and Created Outreach for 16,846 Leads using Godmode HQ
+- **Link:** https://www.youtube.com/watch?v=DiCjeWKgNj0 | **Length:** 13 min | **AI-relevant:** yes
+- **Teaches:**
+  - Fill in a go-to-market profile (company, value propositions, booking link). The AI uses it to write outreach that sells your offer.
+  - Build a lead list from search criteria: job title, company size, country, and keywords. Preview the count, then enrich rows with email and tech stack.
+  - Add AI research columns per lead: a hook from recent news, the prospect's AI features, and pain points tied to your value propositions.
+  - Add outreach columns: a short personalized email (50 words max, plain text) and a LinkedIn follow-up (20 words max).
+  - Launch a campaign sequence: email, wait 3 days, follow-up email, LinkedIn connection request, wait 4 hours, LinkedIn message.
+  - The platform caps daily sends per account and resumes the next day, which protects the accounts.
+- **Tools / prices / numbers:**
+  - GodMode HQ (no pricing given), Gmail, LinkedIn.
+  - One demo search returned about 16,800 leads (the title says 16,846). Nate's claim.
+  - Demo company "ABC Corp" is fictional.
+- **Skills shown:** AI-assisted prospecting, prompt design for research and outreach, multi-step campaign sequencing.
+- **Money angle:** B2B outbound as a service. Set up lead lists and personalized campaigns for companies that sell to businesses. No price is stated. Cold outreach carries spam-law and deliverability risk, which the video does not address.
+- **Duet-relevant:** no.
+- **Promo:** a GodMode HQ sign-up link in the description. Nate does not say whether it is an affiliate link.

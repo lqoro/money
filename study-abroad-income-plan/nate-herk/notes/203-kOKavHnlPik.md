@@ -1,0 +1,13 @@
+## 203. Once You Know This, Building RAG Agents Becomes Easy in n8n
+- **Link:** https://www.youtube.com/watch?v=kOKavHnlPik | **Length:** 18 min | **AI-relevant:** yes
+- **Teaches:**
+  - Choose retrieval by question type. Filters for tabular data when a human would filter a spreadsheet; SQL when the question needs totals, averages, rankings or trends; full context when order or whole-document reading matters; vector search for large unstructured text.
+  - Chunk-based vector retrieval loses structure: it returns a few chunks, so totals, averages and "highest week" answers can be wrong.
+  - Filters need exact values, so list valid product names and date formats in the system prompt. Explicit matching, not semantic.
+  - SQL agents do the math in the query; a schema-lookup tool makes them more dynamic.
+  - Full context works for small sets: his tests used about 4,000 tokens for a full read, about 6,577 for the stuffed-prompt version, and about 2,600 for vector search (his figures).
+- **Tools / prices / numbers:** n8n data tables, Postgres in Supabase, Supabase vector store, GPT-5 Mini (400,000-token context per his statement), a calculator tool, Excel pivot check. He ran 20 and 50-row sample sets.
+- **Skills shown:** retrieval design, prompt specification for filters, SQL generation, token-cost reasoning, Supabase vector setup, context engineering.
+- **Money angle:** none stated. Inference: consulting on which retrieval method fits a client's data.
+- **Duet-relevant:** no
+- **Promo:** Free school community (workflow download); Plus community with over 3,000 members, courses (Agent Zero, 10 Hours to 10 Seconds, One Person AI Agency, Subs to Sales), and a weekly live Q&A.

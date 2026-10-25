@@ -1,0 +1,16 @@
+## 172. This New Claude Code Feature is a Game Changer
+- **Link:** https://www.youtube.com/watch?v=OUyfxhFtGCo | **Length:** 9 min | **AI-relevant:** yes
+- **Teaches:**
+  - The built-in loop skill lets Claude Code schedule recurring prompts or one-time reminders in natural language (for example, "every 10 minutes check my ClickUp"), using cron create, list and delete.
+  - Loops run inside the current session, so each check sees the earlier results. This raises context use, so keep reports short.
+  - Loops expire after 3 days, and closing the session or terminal kills them. Loops have no catch-up and do not persist.
+  - Compare with scheduled tasks: loops are for "help me now on this project"; scheduled tasks are stored on disk, survive restarts, catch up on missed runs, and suit daily or weekly jobs.
+  - Loops can run a saved skill on an interval (his example: a review-PR skill every 20 minutes).
+  - Loops can be disabled through an environment variable if they are created by accident.
+- **Tools / prices / numbers:**
+  - Claude Code loop skill, cron create / cron list / cron delete, ClickUp check (example).
+  - 3-day loop expiry (stated limit).
+- **Skills shown:** scheduling prompts, cron basics, choosing between loops and scheduled tasks, context management for recurring checks.
+- **Money angle:** none stated.
+- **Duet-relevant:** partly. Proactive check-ins and reminders run within a session, which points toward an assistant. He recommends building an executive assistant as the next step.
+- **Promo:** none

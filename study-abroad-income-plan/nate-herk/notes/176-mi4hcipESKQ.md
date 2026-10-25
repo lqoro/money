@@ -1,0 +1,17 @@
+## 176. Turn Claude Code Into Your Executive Assistant in 27 Mins
+- **Link:** https://www.youtube.com/watch?v=mi4hcipESKQ | **Length:** 27 min | **AI-relevant:** yes
+- **Teaches:**
+  - Four phases: give the assistant a home (a folder and git repo), give it rules and context (a short CLAUDE.md that points to separate me, work, team and priorities files), give it hands (skills and sub-agents), then let it grow through daily use and feedback.
+  - Onboarding: paste a long setup prompt from his free community; Claude interviews you and generates the folder structure (projects, decisions, context, references, templates, archives).
+  - Keep CLAUDE.md short and have it point to detail files, since the whole file loads on every message. He says his is about 87 lines and tries to stay under roughly 150 to 200.
+  - Build a research skill that calls the Perplexity API, with the key kept in a .env file, and saves reports into a folder.
+  - Convert that skill into a sub-agent running on Haiku for cheaper research, and add YAML front matter to skills and agents.
+- **Tools / prices / numbers:**
+  - Claude Code as a VS Code extension; needs a paid plan (he prefers a fixed subscription over an API key).
+  - Perplexity API, model "sonar" chosen during setup.
+  - Haiku for the research sub-agent, versus Opus for the main agent.
+  - Nate's claim: tasks that would take about 25 minutes by hand took a minute or two.
+- **Skills shown:** Claude Code project setup, CLAUDE.md design, context management, API key handling, skill and sub-agent authoring, git basics.
+- **Money angle:** Nate says the setup could potentially be sold, and suggests turning existing Claude Projects and custom GPTs into skills. No prices given.
+- **Duet-relevant:** yes. A persistent personal assistant that knows your priorities, calendar and projects, plans your day, drafts content and checks on your team. It runs inside Claude Code, not a messaging app.
+- **Promo:** free school community (setup prompt and skill downloads).

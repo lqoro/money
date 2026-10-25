@@ -1,0 +1,16 @@
+## 360. I Built a Personal Assistant AI Agent with No Code in n8n
+- **Link:** https://www.youtube.com/watch?v=omw1MEvMCo0 | **Length:** 24 min | **AI-relevant:** yes
+- **Teaches:**
+  - A personal assistant agent that you message from Telegram; the agent picks a tool and replies with the result.
+  - Each tool is its own n8n workflow called by the agent (get emails, send email, get calendar, set calendar event, update database, summarize database), and each returns a `response` field so the agent knows it is done.
+  - Pattern inside each tool: an LLM step turns the request into structured fields (e.g., today's date, event name, start and end time), the app node does the action, and an aggregate node merges multiple results into one reply.
+  - Use an LLM to resolve relative dates ("tomorrow") by giving it the current time and worked examples.
+  - Connect a vector store of contacts so the agent can find an email address by name before sending.
+- **Tools / prices / numbers:**
+  - n8n, Telegram (free, per his remark), GPT-4o, Gmail, Google Calendar, Google Sheets (used as the project database; he notes Airtable or Notion would also work), Pinecone for contacts
+  - Default event length of 30 minutes when no end time is given (his rule)
+  - No prices stated beyond "a fraction of" a human assistant's cost (his claim)
+- **Skills shown:** agent-with-tools design, sub-workflows as tools, structured output parsing, date handling, aggregation, multi-step CRUD on Sheets
+- **Money angle:** Build a personal or small-team assistant for busy professionals or operators (inbox summaries, calendar summaries, CRM updates) and sell it as a setup plus monthly service. No price points stated.
+- **Duet-relevant:** yes - a 24/7 assistant you text on Telegram that reads email, manages calendar and updates records for you.
+- **Promo:** none

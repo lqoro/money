@@ -1,0 +1,15 @@
+## 258. Building an AI Agent Swarm in n8n Just Got So Easy
+- **Link:** https://www.youtube.com/watch?v=vpyllOeLhs4 | **Length:** 26 min | **AI-relevant:** yes
+- **Teaches:**
+  - An orchestrator agent delegates to specialist agents (email, contacts, YouTube, web research, calendar), each added as a tool with its own model and system prompt.
+  - Since an n8n update, sub-agents can live in the same workflow, so each run is visible on one canvas.
+  - Let the model fill each sub-agent's input ("define below"), and keep the orchestrator from doing the work itself with a short system prompt.
+  - Debug with agent logs. Add tools one at a time.
+  - Fix a missing date by injecting the current date and time into system prompts as an expression, and set a missing title field in the calendar tool.
+  - Log every run (inputs, actions, tokens) to a Google Sheet for visibility.
+  - Use a workflow, not an agent, when the process is fixed and predictable.
+- **Tools / prices / numbers:** n8n, OpenRouter, GPT-4.1 mini, Telegram, Gmail, Google Calendar, Google Sheets. Runs cost about 5,000 and 8,500 tokens (his figures). The template is free through his school community.
+- **Skills shown:** multi-agent orchestration, prompt delegation, agent log debugging, tool schema fixes, token logging.
+- **Money angle:** Build agent swarms for a client's ops (email, scheduling, research). Sell a setup plus logging dashboard. No prices stated.
+- **Duet-relevant:** yes, a Telegram-driven personal executive assistant that takes voice requests and acts on email and calendar for you.
+- **Promo:** free school community (template and JSON); paid community with courses Agent Zero and 10 Hours to 10 Seconds; links in the description.

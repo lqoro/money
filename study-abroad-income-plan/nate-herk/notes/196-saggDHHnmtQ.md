@@ -1,0 +1,15 @@
+## 196. Master 95% of Claude Code in 36 Mins (as a beginner)
+- **Link:** https://www.youtube.com/watch?v=saggDHHnmtQ | **Length:** 37 min | **AI-relevant:** yes
+- **Teaches:**
+  - Install VS Code and the Claude Code extension, open a dedicated project folder, and sign in with a paid Anthropic plan.
+  - Write a claude.md project file describing a three-layer setup: markdown workflows (SOPs), an agent that coordinates them, and Python tools that do the deterministic work. Keep API keys in an env file, not in tool code.
+  - Use plan mode first: the agent researches, asks clarifying questions, then builds tools, workflow files and a to-do list.
+  - MCP servers connect to apps for data and actions; skills are on-demand instruction sets. Installing a design skill improved the PDF output.
+  - Deploy only after a security review: store secrets in the host's secret manager, schedule a weekly cron on Modal, then test with a manual run and a webhook trigger.
+- **Tools / prices / numbers:**
+  - VS Code, Claude Code, Claude Pro (he cites about $17/month) and Max tiers; YouTube Data API (free tier, about 10,000 units/day, which his testing exhausted).
+  - Google OAuth for Gmail and Sheets; Modal (his figures: $5 free credit, about $30 when a card is added); Postman; a canvas-design skill; Perplexity in the webhook demo.
+- **Skills shown:** project setup, claude.md authoring, plan-mode prompting, Python tooling, OAuth, secrets handling, cron deployment, webhook testing, skill installation.
+- **Money angle:** none stated. The demo is a weekly branded AI-niche trend report he says he would share with a team. Inference: sell recurring branded market reports or a custom research pipeline. No price given.
+- **Duet-relevant:** no
+- **Promo:** Free school community (claude.md template, free); Plus community with over 3,000 members, courses starting with Agent Zero, and a weekly live Q&A.

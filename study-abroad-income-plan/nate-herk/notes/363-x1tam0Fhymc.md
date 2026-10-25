@@ -1,0 +1,18 @@
+## 363. *LIVE BUILD* Inbox Management AI Agent with n8n (NO CODE, Step-by-Step Tutorial)
+- **Link:** https://www.youtube.com/watch?v=x1tam0Fhymc | **Length:** 16 min | **AI-relevant:** yes
+- **Teaches:**
+  - Gmail trigger ("message received") that fires on each new email while the workflow is active.
+  - A text classifier node sorts each email body into one of four categories, each defined by a plain-language description plus keywords (drafted with ChatGPT).
+  - Four parallel branches each add the matching Gmail label to the message by its ID; copy the same node for each branch.
+  - Create the Gmail labels first, and set up Google Cloud OAuth (enable Gmail API, consent screen with a test user, web client ID and secret) before connecting.
+  - Turn off "simplify" on the Gmail trigger so the raw data passes to the next node.
+  - Test with sample emails, then activate; a live build that took about 15 minutes by his account.
+- **Tools / prices / numbers:**
+  - n8n, Gmail API and Google Cloud OAuth, OpenAI GPT-4o
+  - Four labels: high priority, customer support, promotion, finance and billing
+  - Trigger polls about every minute (per his note)
+  - No prices stated
+- **Skills shown:** Google OAuth setup, LLM classification with category descriptions, conditional routing, Gmail label automation, testing with sample emails
+- **Money angle:** Inbox triage setup for busy professionals, executives, or small businesses; price per setup or monthly upkeep. Nate frames it as a time-saver, not a sold product. No price points stated.
+- **Duet-relevant:** yes - an always-on agent working inside the user's inbox without being asked each time, though this version only labels and has no chat interface.
+- **Promo:** none
