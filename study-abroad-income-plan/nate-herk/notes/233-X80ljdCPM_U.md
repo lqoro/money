@@ -1,0 +1,16 @@
+## 233. Build ANYTHING with Claude Sonnet 4.5 and n8n AI Agents
+- **Link:** https://www.youtube.com/watch?v=X80ljdCPM_U | **Length:** 19 min | **AI-relevant:** yes
+- **Teaches:**
+  - Connect Claude Sonnet 4.5 in n8n. Direct Anthropic calls errored for Nate with default parameters, so he routed via OpenRouter.
+  - Compare models with n8n evaluations on a dataset: Nate ran only 10 cases and says 100 to 200 are needed.
+  - Tool overload: giving one agent 5+ tools made it fail; grouping tools into sub-agents (sub-workflows) worked.
+  - Test with no system prompt: same HTML report prompt across models, compare output.
+  - Choose a default model, then test alternatives on your own use case.
+- **Tools / prices / numbers:**
+  - Sonnet 4.5 released Sept 29, 2025; same price as Sonnet 4; 200k context on Anthropic, about 1M via OpenRouter (Nate's observation).
+  - Evaluation (10 cases): GPT-5 scored 4.2/5, Sonnet 4.5 4.3/5. Sonnet run about 96k tokens and about 30 cents; GPT-5 about 10 to 12 cents.
+  - Anthropic's SWE-bench figure, quoted by Nate: 77 to 82%.
+- **Skills shown:** model selection, eval design, tool and sub-agent architecture, OpenRouter setup.
+- **Money angle:** none stated.
+- **Duet-relevant:** partly. An "ultimate assistant" with sub-agents for email, calendar and contacts acts for you, but it runs on demand through chat.
+- **Promo:** AI Automation Society Plus (2,500+ members, three courses); links in description.

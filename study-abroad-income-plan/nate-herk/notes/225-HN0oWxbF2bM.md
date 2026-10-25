@@ -1,0 +1,16 @@
+## 225. From Zero to Inbox Agent (Full Beginner's Course, No-Code)
+- **Link:** https://www.youtube.com/watch?v=HN0oWxbF2bM | **Length:** 38 min | **AI-relevant:** yes
+- **Teaches:**
+  - Wireframe the whole system (trigger, classify, act) before building anything in n8n.
+  - Gmail trigger polls every minute; turn off "simplify" to get the full email body; pin test data while building.
+  - A text classifier sorts mail into four labels (customer support, finance and billing, high priority, promotion), each with a detailed description; refine descriptions when misclassified.
+  - Each branch does something different: AI agent drafts an in-thread reply, notification built from variables with no AI, draft created for review, promo marked unread.
+  - Turn off the n8n attribution footer, activate the workflow so it runs in the background, and log results to a sheet as a next step.
+- **Tools / prices / numbers:**
+  - n8n: 14-day free trial, then about $25/month (Nate's figures).
+  - OpenRouter: about $5 of credit to start; GPT-4.1 mini for classification, Claude 3.7 Sonnet for replies.
+  - Demo claim: one email handled in about 15 seconds (Nate's claim).
+- **Skills shown:** n8n workflow building, prompt and category design, LLM classification, Gmail nodes, expressions and variables, credential setup.
+- **Money angle:** none stated.
+- **Duet-relevant:** partly. It is a background agent that acts on your email, but it is event-triggered, not a persistent chat persona.
+- **Promo:** n8n signup link in description (14-day trial); AI Automation Society Plus paid community (200+ members, courses Agent Zero, 10 Hours to 10 Seconds, one-person agency for annual members); free school community hosts the template.

@@ -1,17 +1,15 @@
 ## 190. Is n8n Dead?
 - **Link:** https://www.youtube.com/watch?v=wb4uDdsFh6o | **Length:** 5 min | **AI-relevant:** yes
 - **Teaches:**
-  - n8n is not dead. It stays a strong choice for workflow automation because of its visual builder and low barrier to entry.
-  - Beginners should start with n8n: it is visual, with native webhooks, triggers, and execution logs.
-  - Claude Code is better for building and reasoning through custom code, but harder to deploy and monitor for scheduled or webhook jobs.
-  - Use Claude Code as a teacher: ask it to explain what it did and why.
-  - Personal rule: if a use case can be built in n8n in about 10 minutes, build it there; otherwise use code.
-  - Keep existing n8n automations running rather than rewriting them.
+  - n8n is not dead: it stays a strong choice for workflow automation thanks to its visual builder and low barrier to entry. Beginners should start there.
+  - Claude Code is better for custom code and reasoning through it, but harder to deploy and monitor for scheduled or webhook jobs.
+  - Use Claude Code as a teacher: ask it what it did and why.
+  - Personal rule: if a use case takes 10 minutes or less in n8n, build it there; keep existing n8n automations running.
 - **Tools / prices / numbers:**
   - n8n; Claude Code; Google Sheets for storing outputs.
-  - Nate says a VPS for his n8n automations costs about $10 a month (his estimate).
-  - Nate's observation: his n8n video views have fallen while Claude Code search interest has risen (Google Trends comparison, not quantified here).
+  - Nate estimates a VPS for his n8n automations at about $10 a month.
+  - Nate observes his n8n video views falling while Claude Code search interest rises (Google Trends, not quantified).
 - **Skills shown:** n8n workflow building, Claude Code basics, deployment and monitoring trade-offs
-- **Money angle:** none (opinion and tool-choice video). Implied: n8n and Claude Code skills both sell to clients, so pick the tool clients can maintain.
+- **Money angle:** none (opinion and tool-choice video). Implied: clients may want n8n skills, so pick the tool clients can maintain.
 - **Duet-relevant:** no
-- **Promo:** none (mentions a post in his plus community, no pitch).
+- **Promo:** none (mentions posting in his plus community; no pitch).

@@ -1,0 +1,16 @@
+## 252. So You’re Building AI Agents... Now What?
+- **Link:** https://www.youtube.com/watch?v=4LQYWziOg0Q | **Length:** 13 min | **AI-relevant:** yes
+- **Teaches:**
+  - Pick a path by intent: freelance on the side if you are passionate, consult once you are good, build a company with a partner if you are an aspiring entrepreneur, automate your own business if you run one, or become the AI expert at your job if you are an employee.
+  - Start with one-off custom builds, then move to diagnosing problems and selling solutions. Templates alone are commoditized.
+  - Build in public: his first sale came from people who saw his YouTube builds, even though he did not present himself as an expert.
+  - Four community examples: a finance agent that shared a LinkedIn post and got a client; a freelancer who grew into a small agency; a car-detailing owner who cut lead costs with an automated PDF funnel; an employee who built an onboarding Slackbot.
+- **Tools / prices / numbers:**
+  - (Nate's claim) First sale: $1,200 for a two-hour LinkedIn-post build. Later freelance projects: $3,000, $6,000 and $10,000.
+  - His poll: 41% want to monetize AI, 26% are business owners, 16% build for passion, the rest want to be better employees.
+  - Community examples as reported: budget-vs-actual agent saves 10+ hours a month; lead cost $8 to $1 (Nate's claim); onboarding cut from 6-8 weeks to 2-3 weeks.
+  - Community size: over 100,000 (his claim).
+- **Skills shown:** Client discovery, scoping, diagnosing problems, freelance selling, n8n builds, content marketing, RAG-based Slack assistant, voice agents (in a community example).
+- **Money angle:** Freelance one-off builds first, then retainers or consulting. Sell to businesses or employers, or cut your own business costs with the same skills. Start with your network and a public build log.
+- **Duet-relevant:** no
+- **Promo:** Free school community (free PDF breakdown with the featured members); Plus community (paid; weekly Q&A, free tech support, members who pay to be there).

@@ -1,0 +1,18 @@
+## 230. Build ANYTHING with Base44 and n8n AI Agents (beginner's guide)
+- **Link:** https://www.youtube.com/watch?v=tFFKuq2t0rI | **Length:** 25 min | **AI-relevant:** yes
+- **Teaches:**
+  - Build a no-code landing page in Base44 for a free "AI implementation roadmap" lead magnet (name, email, problem).
+  - Make the form POST to an n8n webhook: capture test data, pin it, activate the workflow, then switch the app to the production URL.
+  - Chain two agents: a consultant agent (reasoning model) writes the roadmap; a stylist agent (Claude Sonnet 4.5) turns it into HTML.
+  - Send the HTML via a Gmail node with the attribution footer turned off, with a discovery-call link at the end.
+  - Make the page look less generic with copied effects (21st.dev), applied through visual edit.
+  - Warning: anyone with the link spends your AI credits.
+- **Tools / prices / numbers:**
+  - Base44: from $20/month for 100 credits; this build used about 10 (Nate's figures).
+  - OpenRouter with an o3 reasoning model for the consultant.
+  - Nate says the front end took about 30 minutes and the back end under 10 (his claim).
+  - ROI figures in the generated report were invented by the model; Nate says not to trust them.
+- **Skills shown:** no-code front ends, webhooks, multi-agent chaining, HTML email, lead-magnet design.
+- **Money angle:** free AI audit as a lead magnet, then paid implementation via discovery call. No price stated.
+- **Duet-relevant:** no. Form-triggered, not a persistent assistant.
+- **Promo:** Base44 signup link in description; free school community (prompts); AI Automation Society Plus (2,500+ members, three courses).

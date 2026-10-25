@@ -5,7 +5,7 @@
   - RAG chatbot: a chat trigger feeds an AI agent with a chat model, and the Pinecone store is attached as a tool, pointed at the right namespace. A system prompt is optional but helps.
   - Customer support: a Gmail trigger, a text classifier (support vs other), and an agent that searches the knowledge base and drafts a reply. The reply is sent in-thread, with the n8n attribution turned off.
   - LinkedIn creator: a Google Sheet row with status "to-do" is pulled, Tavily searches the topic, an agent writes the post, and the row is updated to "created". Nate says it can run on a daily schedule.
-  - Credentials: Google requires a Cloud project, the right API enabled, an OAuth consent screen, and test users. Pinecone and OpenAI use plain API keys.
+  - Credentials: Google needs a Cloud project, the right API enabled, and OAuth consent. Pinecone and OpenAI use API keys.
 - **Tools / prices / numbers:** n8n, Pinecone (free to start), OpenAI embeddings text-embedding-3-small (Nate calls it the cheapest OpenAI embedding model), OpenRouter, GPT-4o mini, Claude 3.5 Sonnet, Gemini 2.0 Flash, Tavily (Nate says 1,000 free searches per month on the free plan), Gmail, Google Drive, Google Sheets. Document split into 4 vectors in the demo.
 - **Skills shown:** RAG design, vector DB setup, n8n credentials (OAuth and API key), AI agent tool use, text classification, prompt writing
 - **Money angle:** none stated. Nate frames the workflows as beginner practice and says the templates can be customized, with no pricing or buyers named.

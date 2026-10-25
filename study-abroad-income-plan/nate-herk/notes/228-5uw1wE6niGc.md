@@ -1,0 +1,14 @@
+## 228. Build Your First RAG Pipeline for Better RAG (step-by-step)
+- **Link:** https://www.youtube.com/watch?v=5uw1wE6niGc | **Length:** 16 min | **AI-relevant:** yes
+- **Teaches:**
+  - A data pipeline has four parts: trigger, inputs, processing, destination (here a Supabase vector store).
+  - New PDF in a Drive folder: download it (converting Google Docs to PDF), insert into the vector store with embeddings and metadata (file name, date).
+  - Updates: on a file-changed event, delete old vectors matching the file name, then re-ingest the new version.
+  - Deletes: Drive has no "file deleted" trigger, so move files to a "recycling bin" folder and delete matching vectors.
+  - Use "execute once" when a delete node returns many items, or the downstream step runs once per item.
+  - Use a stable unique key (file ID is safer than name).
+- **Tools / prices / numbers:** Google Drive, Supabase (vector DB), OpenAI text-embedding-3-small (must match the database's embedding model), n8n. The demo document produced five vectors. No prices given.
+- **Skills shown:** vector DB ingestion, metadata design, filtered deletes, n8n Drive triggers, pipeline design.
+- **Money angle:** none stated.
+- **Duet-relevant:** no.
+- **Promo:** free school community (workflow JSON and sticky notes); AI Automation Society Plus paid community; earlier RAG course linked in description.

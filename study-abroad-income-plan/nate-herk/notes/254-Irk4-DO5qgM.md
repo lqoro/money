@@ -1,0 +1,12 @@
+## 254. Why 99% of AI Automations Fail in Production
+- **Link:** https://www.youtube.com/watch?v=Irk4-DO5qgM | **Length:** 18 min | **AI-relevant:** yes
+- **Teaches:**
+  - Define production-ready: the workflow is active, errors notify you, errors are logged, retries and fallbacks exist, and failures are safe (no mass emails or record deletes).
+  - Five techniques: (1) an error workflow linked to every active workflow; (2) retry on fail with a max-tries count and wait time; (3) a fallback model; (4) continue on error, with an error output branch so failed items go down their own path; (5) polling, looping until an async job reports done.
+  - Log errors, find patterns, then build guardrails against those patterns. "You don't know what you don't know."
+  - Guardrail example: escape double quotes before putting text into a JSON request body. Prefer verified community nodes, which often handle this themselves.
+- **Tools / prices / numbers:** None given. Tools shown: n8n, Tavily (as a verified community node), an image-generation API (PiAPI) used with polling, and OpenRouter with a fallback model (GPT-4.1 mini or Gemini named as examples).
+- **Skills shown:** n8n error handling, retry and fallback configuration, JSON escaping, polling loops, execution logging.
+- **Money angle:** none
+- **Duet-relevant:** no
+- **Promo:** Paid community (he says over 2,000 members, his claim); free school community (template JSON for this video); classroom courses "Agent Zero" and "10 Hours to 10 Seconds".

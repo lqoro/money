@@ -1,0 +1,17 @@
+## 253. Build Anything with GPT-5 and n8n AI Agents
+- **Link:** https://www.youtube.com/watch?v=gGCwSIlIRlY | **Length:** 17 min | **AI-relevant:** yes
+- **Teaches:**
+  - Connect GPT-5 to an n8n AI agent: create an OpenAI API key on the API platform (ChatGPT subscription does not cover API use), add billing, then pick the model.
+  - Use n8n's evaluation feature: run 10 test rows against expected answers and score accuracy out of 5, so you compare models with data, not vibes.
+  - Compare models with the same prompt and no system prompt, so only the model changes.
+  - Test tool calling with a loaded personal-assistant prompt (search, research, contacts, calendar, email).
+  - Test image-prompt generation: the same user message to GPT-5 and GPT-4o, then judge the output.
+- **Tools / prices / numbers:**
+  - GPT-5 input about $1.25 per million tokens, half of GPT-4o's input price; output price matches GPT-4o (his figures). GPT-5 mini and nano are cheaper still.
+  - Evaluation results (his figures): GPT-4o accuracy 4.2; GPT-5 4.7 but slower and about double the cost of GPT-4o for the run (about 22 cents for 10 runs); GPT-5 mini 3.6 at about 3 cents.
+  - Benchmarks he quotes (as presented): SWE-bench about 75%; Aider Polyglot 88%.
+  - OpenRouter used for one billing account across models; Tavily and Perplexity used as tools.
+- **Skills shown:** Model selection, n8n evaluations, tool-calling tests, cost-per-run math, prompt testing.
+- **Money angle:** None stated.
+- **Duet-relevant:** yes, in a light sense. He tests a personal-assistant agent that reads and writes email and calendar, but the video is about model choice, not running a bot.
+- **Promo:** Plus community (paid; two classroom courses "Agent Zero" and "10 Hours to 10 Seconds"; a monthly hackathon, this month on voice agents).

@@ -1,0 +1,16 @@
+## 234. How to Automate ANY Content with Poppy and n8n (no code)
+- **Link:** https://www.youtube.com/watch?v=FgP_AEfnfok | **Length:** 21 min | **AI-relevant:** yes
+- **Teaches:**
+  - Poppy is a no-code builder: paste YouTube videos, sites, PDFs or sheets as sources, group them, and chat with them.
+  - Use n8n only for what must happen before or after the AI: daily research, then Poppy writes, then n8n sends.
+  - Newsletter flow: Tavily search (news topic, advanced answer, five sources), Poppy assistant with product and style sources, HTTP POST to Poppy's chat API, then email.
+  - Token saving: have Poppy summarize many sources into a short style guide, paste that as text, and start a new chat per topic.
+  - Add notes to each source group so the assistant knows what they are for.
+- **Tools / prices / numbers:**
+  - Tavily search; Poppy API (requires a higher plan; Nate says it is not the cheapest tool).
+  - Discounts: link in description, code "Nate25", and a larger one for community members (Nate says he arranged these with Poppy, so likely affiliate or sponsor).
+  - Nate's claim: the simple flow beat his earlier multi-agent newsletter build, which took far longer.
+- **Skills shown:** API calls, prompt design, source curation, token management, HTML email.
+- **Money angle:** content automation for clients who publish regularly, branded to their voice; newsletters with affiliate product links (Nate's example). No price points.
+- **Duet-relevant:** no.
+- **Promo:** Poppy discount link and code "Nate25"; AI Automation Society Plus (2,500+ members, three courses).

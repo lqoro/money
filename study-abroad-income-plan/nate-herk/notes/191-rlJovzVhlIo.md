@@ -1,20 +1,16 @@
 ## 191. I Turned Clawdbot Into the Ultimate Personal Assistant
 - **Link:** https://www.youtube.com/watch?v=rlJovzVhlIo | **Length:** 26 min | **AI-relevant:** yes
 - **Teaches:**
-  - Set up an always-on AI executive assistant ("Klouse") on Clawdbot, reached through Telegram.
-  - Onboarding: spend about an hour with the bot to create identity and user files (soul.md, user.md), and let it interview you.
-  - Give the bot its own email, calendar, drive, and task accounts. Forward or CC it rather than sharing your main accounts. Keep API keys in a .env file, not in chat.
-  - Start with read-only access, then add permissions only as needed.
-  - Use a heartbeat (about every 30 minutes) to sync dashboards, check notes, and run scheduled jobs (daily pulse, weekly audits, email checks).
-  - Build a live dashboard (status, kanban board, activity log, document store) that the bot can edit.
-  - Hacks: plan first and save plans as docs; make the bot proactive; have it audit its own mistakes; use Claude Code as a helper to configure the setup.
+  - Build an always-on AI executive assistant ("Klouse") on Clawdbot, reached through Telegram. Onboard it by letting it interview you, which creates identity and user files (soul.md, user.md).
+  - Give the bot its own email, calendar, drive, and task accounts instead of your main ones. Keep API keys in a .env file, and start with read-only access.
+  - A heartbeat (about every 30 minutes) syncs dashboards, checks notes, and runs scheduled jobs such as a daily pulse and weekly audits.
+  - Hacks: plan first and save plans as docs; push for proactive suggestions; have it audit its own mistakes; use Claude Code to help configure the setup.
 - **Tools / prices / numbers:**
-  - Bot connected to GitHub, Brave Search, OpenAI, ElevenLabs, PDFShift, Apify, ClickUp, Google Workspace; runs Claude Opus 4.5 via API.
-  - Nate's estimate: 4-6 hours to set up, about $50/month. He later says the real cost is higher.
-  - Nate's claim: about 0.25 billion tokens in three days, roughly $223.
+  - Connected to GitHub, Brave Search, OpenAI, ElevenLabs, PDFShift, Apify, ClickUp, Google Workspace; runs Claude Opus 4.5 via API.
+  - Nate's estimate: 4-6 hours to set up, about $50/month; he later says the real cost is higher.
+  - Nate's claim: about a quarter billion tokens in three days, roughly $223.
   - Nate avoided a Max subscription for this use, saying it violates Anthropic's terms (his understanding).
-  - Memory files: soul, user, identity, daily log, long-term memory, project memory.
 - **Skills shown:** agent setup, API key handling, dashboard building, scheduled automations, prompt planning, security hygiene
-- **Money angle:** Could be sold as a setup and configuration service: an "AI executive assistant" for small businesses, or a custom dashboard plus heartbeat build. No price quoted. Nate says he is unsure of real ROI.
-- **Duet-relevant:** yes. Always-on personal assistant bot that acts for you (email, calendar, tasks, Telegram chat, heartbeat jobs). Key lessons: separate accounts, read-only defaults, and memory limits.
-- **Promo:** Plus community (over 3,000 members, paid) and a separate YouTube setup guide for Clawdbot on a VPS (linked).
+- **Money angle:** Could be sold as an "AI executive assistant" setup or a custom dashboard-plus-heartbeat build for small businesses. No price quoted; Nate is unsure of ROI.
+- **Duet-relevant:** yes. Always-on personal assistant bot that acts for you (email, calendar, tasks, Telegram chat, heartbeat jobs). Lessons: separate accounts, read-only defaults, and memory limits.
+- **Promo:** Plus community (over 3,000 members, paid); a separate YouTube setup guide for Clawdbot on a VPS (linked).

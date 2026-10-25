@@ -10,7 +10,6 @@
   - Nate's claim: $231,000 in 30 days, from a mix of school community, consulting, and implementation. He says most came from B2C.
   - B2B: a $3,000 to $10,000 project closed in about a week (his example).
   - Large firms: Accenture booked over $600M in AI consulting in one quarter and over $2B in half a year (his figures).
-  - True Horizon AI (his consultancy) has been paid tens of thousands to teach teams.
 - **Skills shown:** consulting offers, niche research, pricing, content creation, n8n as the core tool
 - **Money angle:** Free audits, then paid AI builds and retainers for SMBs; education and team training for companies; a paid school community. Price points: "few thousand to tens of thousands" per project (his range). Start: pick a niche and offer one free audit this week.
 - **Duet-relevant:** no

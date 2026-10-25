@@ -4,14 +4,13 @@
   - A Telegram-driven manager agent that only routes requests to sub-agents: Drive, email, calendar, contacts, social, creative, posting, web search, plus a doc tool and a think tool.
   - Each custom tool is its own n8n sub-workflow, which avoids passing binary files between flows. Tools pass only small values such as file ID, prompt and chat ID.
   - The creative agent generates and edits images, turns images into video, and makes text-to-video clips. Posting goes through Blotato to X, TikTok and Instagram.
-  - Every run is logged to a tracker sheet (timestamp, input, output, actions, tokens). Errors go down a separate branch with an error output so the flow keeps running.
-  - He dropped a JSON-prompt sub-agent because its results were inconsistent and let the creative agent write its own prompts instead.
+  - Every run is logged to a tracker sheet (timestamp, input, output, actions, tokens). Errors go down a separate branch so the flow keeps running.
+  - He dropped a JSON-prompt sub-agent for inconsistent results and let the creative agent write its own prompts.
 - **Tools / prices / numbers:**
-  - Main agent on GPT-5 mini (through OpenRouter), with a fallback to GPT-5 mini via OpenAI; some sub-agents on GPT-4.1.
-  - GPT-image-1: roughly 1 cent (low), 4 cents (medium), 17 cents (high) per image, per his figures; he used medium at about 5 cents.
-  - Google's V3 Fast video via fal.ai: about 25 cents per second for text-to-video and about 40 cents with audio, per his figures; he calls the pricing experimental.
-  - Blotato from $29/month (code Nate30 for 30% off six months); Apify scrapers for search (code 30 Nate Herk for 30% off first three months).
-  - Web tools: Perplexity, Tavily, OpenWeatherMap.
+  - Main agent on GPT-5 mini via OpenRouter, with a fallback; some sub-agents on GPT-4.1.
+  - GPT-image-1: about 1, 4 or 17 cents per image (low, medium, high; his figures).
+  - Google V3 Fast video via fal.ai: about 25 cents per second, or 40 with audio (his figures; experimental pricing).
+  - Blotato from $29/month; Apify scrapers for search. Web tools: Perplexity, Tavily, OpenWeatherMap.
 - **Skills shown:** Multi-agent design, n8n sub-workflows, binary file handling, Google Drive/Gmail/Telegram integration, prompt design, token and cost tracking.
 - **Money angle:** No client price given. Sellable as a custom media or social assistant for creators or small teams, charging for setup and for the tools you build.
 - **Duet-relevant:** yes. A Telegram-based assistant that stays on and acts for you across email, calendar, Drive and posting, with a full action log.

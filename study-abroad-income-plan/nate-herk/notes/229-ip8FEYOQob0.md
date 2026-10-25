@@ -1,0 +1,14 @@
+## 229. You're Doing AI Automation Wrong (Here's How to Fix It)
+- **Link:** https://www.youtube.com/watch?v=ip8FEYOQob0 | **Length:** 11 min | **AI-relevant:** yes
+- **Teaches:**
+  - Lesson 1, leverage over automation: automate roughly the first 60% (routine), let AI assist the next 30% (judgment), keep the last 10% human.
+  - Lesson 2, go deep: one tool, one client niche, one platform, rather than hopping.
+  - Lesson 3, simplicity scales: fewer AI steps, predictable workflows; boring systems get paid.
+  - Lesson 4, process over prompts: study the business first (sometimes a $20/month SaaS fixes it), ship a small MVP, iterate. Nate's split: about 20% building, 80% understanding.
+- **Tools / prices / numbers:**
+  - Nate says he sold workflows for thousands as a beginner freelancer and scaled True Horizon to $2.5M revenue this year (Nate's claim).
+  - Example: automating 70% of a 10-hour process saves 7 hours each time.
+- **Skills shown:** process analysis, workflow scoping, ROI framing, client communication.
+- **Money angle:** sell AI automation to businesses, priced on hours saved. Start by picking one lane and one process, then ship something small. No explicit price points.
+- **Duet-relevant:** no.
+- **Promo:** free resource guide via free school community; AI Automation Society Plus (paid, 200+ members, one live call a week).

@@ -1,0 +1,13 @@
+## 304. AI Agents: What 99% of Beginners Get Wrong
+- **Link:** https://www.youtube.com/watch?v=HuTyZiUDz2k | **Length:** 13 min | **AI-relevant:** yes
+- **Teaches:**
+  - Default to a fixed AI workflow (step 1, step 2, step 3) when the steps are known. Use an agent only when the path must be decided at run time.
+  - Four reasons he gives for workflows: reliability (no mis-passed data between agents and tools), cost (no extra model call to decide the next step), easier debugging (you see which node failed), and scalability (adding tools to an agent can break earlier ones).
+  - Rebuild the RAG support agent as a workflow: email trigger, Pinecone search as a node, filter results by score (above 0.4), then one LLM call to write the reply. Output: the same quality, with more control and fewer model calls.
+  - Rebuild a Telegram chart-analysis agent as one linear workflow: fetch the chart, analyze the image, and send the image and analysis together.
+  - Before building, sketch the flow (he suggests Excalidraw) and ask whether each step is deterministic or needs a decision.
+- **Tools / prices / numbers:** Pinecone (the demo index had 8 vectors), Google Drive, Gmail, Google Gemini 2.0 Flash, an OpenAI node, Telegram, a chart-image API, Excalidraw. Score threshold 0.4. No prices given.
+- **Skills shown:** workflow vs agent design, RAG retrieval with score filters, prompt scoping, debugging, architecture sketching
+- **Money angle:** Nate says he runs an agency that delivers AI solutions to clients and teaches people to build them, so client delivery and courses are his stated model. No prices or client types given.
+- **Duet-relevant:** yes, weakly. The Telegram chart-analyst is a messaging-app agent, and Nate argues a fixed workflow is more reliable than an agent for that job.
+- **Promo:** paid community (deep-dive courses and live calls, link in description). Free school community (the workflow template).

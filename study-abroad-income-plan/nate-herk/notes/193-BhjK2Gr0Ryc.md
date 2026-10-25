@@ -1,19 +1,16 @@
 ## 193. Set Up Clawdbot on a VPS in Minutes (no mac mini)
 - **Link:** https://www.youtube.com/watch?v=BhjK2Gr0Ryc | **Length:** 13 min | **AI-relevant:** yes
 - **Teaches:**
-  - Why a VPS: an open-source agent with broad system access should run on a separate machine, not your main computer. A VPS is a cheaper stand-in for a dedicated Mac Mini.
-  - Steps: order a VPS, set a root password, SSH in, create a non-root user, run the Clawdbot one-line installer, and complete onboarding.
-  - Onboarding picks: model provider (Anthropic API key, not a subscription login), default model (Opus 4.5), and chat channel (Telegram via a bot token from BotFather).
-  - Optional skills and keys (Gemini, Brave Search, others), then pairing the Telegram bot with a pairing code.
-  - Keep the gateway running as an always-on service so the bot stays reachable from a phone. Access the local web dashboard through an SSH tunnel.
-  - Security: treat the bot like a VA; use its own email and accounts, read-only access where possible, and watch for prompt injection.
+  - Why a VPS: an open-source agent with broad system access should run on a separate machine, not your main computer.
+  - Steps: order a VPS, set a root password, SSH in, create a non-root user, run the one-line installer, and finish onboarding.
+  - Onboarding picks: Anthropic API key (not a subscription login), default model (Opus 4.5), and Telegram as the chat channel (bot token from BotFather), then pair with a code.
+  - Keep the gateway running as an always-on service so the bot stays reachable from a phone; reach the local web dashboard through an SSH tunnel.
 - **Tools / prices / numbers:**
-  - Hostinger VPS, KVM 2 plan: 2 vCPU, 8 GB RAM, 100 GB disk, 8 TB bandwidth (price not stated; cheaper with 12- or 24-month plans).
+  - Hostinger VPS, KVM 2 plan: 2 vCPU, 8 GB RAM, 100 GB disk, 8 TB bandwidth (price not stated; longer plans are cheaper).
   - Ubuntu 24.04 LTS, Node.js, Telegram Bot API, Anthropic API, optional Gemini key.
   - Nate's comparison: a Mac Mini is about $600.
-  - Install and setup: about 2-10 minutes for installation (Nate's estimate).
-  - A Hostinger discount (10% off annual) is mentioned.
+  - Install takes about 2-10 minutes (Nate's estimate).
 - **Skills shown:** Linux VPS setup, SSH, terminal, Node install, Telegram bot setup, gateway/service configuration, API key handling
-- **Money angle:** Setting up hosted always-on assistants for clients is a possible service (VPS, Telegram, API keys, security). No client pricing is stated.
+- **Money angle:** Hosted always-on assistant setup (VPS, Telegram, API keys, security) could be a client service. No client pricing stated.
 - **Duet-relevant:** yes. Hands-on setup of an always-on personal agent bot reachable through Telegram that acts on your behalf (email, files, tasks), with the risks Nate lists.
-- **Promo:** Hostinger VPS affiliate link and discount code (10% off annual plans). Mentions his other setup videos and a free guide in the description.
+- **Promo:** Hostinger VPS affiliate link and discount code (10% off annual plans); mentions his other setup videos and a free guide in the description.

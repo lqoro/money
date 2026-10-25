@@ -1,0 +1,16 @@
+## 226. This n8n Sales Automation Won $5,000 in Just 14 days
+- **Link:** https://www.youtube.com/watch?v=Z46F8ZiHZJo | **Length:** 26 min | **AI-relevant:** yes
+- **Teaches:**
+  - Speed-to-lead system: a missed call (Twilio Studio) fires an n8n webhook that creates a lead row in Google Sheets, then sends a ringless voicemail and a follow-up text.
+  - Each inbound text looks up the lead by phone number, checks which step is complete, and routes to the next one.
+  - Almost entirely conditional logic (switch nodes), no AI in the messaging path. Nate argues for the minimum AI possible.
+  - Pulls open appointment slots from a booking tool, offers two by text, then runs an enrichment sequence (buy or sell, zip, urgency) ending with an address validator and comparable-sales email.
+  - Code nodes were written by pasting into ChatGPT or Claude and iterating on error messages.
+- **Tools / prices / numbers:**
+  - n8n, Twilio Studio, Google Sheets as CRM, a ringless voicemail HTTP API, a calendar booking tool (name garbled in transcript).
+  - Brett won $5,000 in a September hackathon (stated). Built in about two weeks (stated).
+  - Cited stat: 62% of phone calls are missed (source not given).
+- **Skills shown:** webhooks, HTTP nodes, routing and state tracking, Sheets-as-CRM, Twilio, code-node debugging, deterministic workflow design.
+- **Money angle:** Brett's company WarehouseBob (SMS and n8n marketing) is recruiting agencies. Nate suggests showing the demo to businesses (realtors, insurance agents) and plugging in their scripts and CRM. No pricing stated.
+- **Duet-relevant:** no.
+- **Promo:** guest Brett's warehousebob.com; full template in AI Automation Society Plus (paid community).

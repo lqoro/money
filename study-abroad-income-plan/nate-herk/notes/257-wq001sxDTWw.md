@@ -1,8 +1,7 @@
 ## 257. I Built 204 AI Automations, Here's What Actually Matters
 - **Link:** https://www.youtube.com/watch?v=wq001sxDTWw | **Length:** 23 min | **AI-relevant:** yes
 - **Teaches:**
-  - Context engineering: give the agent the right information at the right time, using tools and data, not one perfect prompt.
-  - Six components: user input, system prompt, memory, retrieved knowledge, tool calls, and structured output.
+  - Context engineering: give the agent the right information at the right time, from six parts (user input, system prompt, memory, retrieved knowledge, tool calls, structured output), not one perfect prompt.
   - Three memory types: working (within one run), short-term (conversation window keyed by session ID), and long-term (persists across sessions).
   - Tool calling for RAG: vector stores, web search, CRMs, and sheets are all retrieval. Chunking loses whole-document context, so add metadata and reranking.
   - Summarize retrieved data in a sub-workflow before it reaches the main agent, to cut token cost.
