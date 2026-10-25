@@ -1,0 +1,17 @@
+## 365. Build your first NO CODE AI Agent in n8n (for beginners)
+- **Link:** https://www.youtube.com/watch?v=otUBuV1foLY | **Length:** 20 min | **AI-relevant:** yes
+- **Teaches:**
+  - Build a tool as its own workflow: a "when called by another workflow" trigger, a Set node with a city field, an OpenWeatherMap current-weather node, then an LLM node that turns the raw JSON into a friendly summary.
+  - Finish each tool with a Set node named `response`, which is the field the agent reads back.
+  - Build an agent workflow: chat trigger, tools agent, GPT-4o, window buffer memory, a Wikipedia tool, and the weather workflow as a tool.
+  - Map the city from the chat message into the tool with an expression (the chat input), so it works for any city.
+  - Prompt the agent itself (not the tool) for style and jokes; he found that worked better than prompting the tool.
+  - Use the execution log to see what each node received and returned when results look wrong.
+- **Tools / prices / numbers:**
+  - n8n, OpenWeatherMap current weather API (key takes about 5 to 10 minutes to activate, per his note), OpenAI GPT-4o, Wikipedia tool
+  - Build time about 15 minutes (his estimate)
+  - No prices stated
+- **Skills shown:** building sub-workflows as tools, API key setup, expression mapping, prompt tuning for agents, debugging via execution logs, memory for follow-up questions
+- **Money angle:** Beginner-level "tool plus agent" builds are the base for client work (a weather or data lookup inside a chatbot or assistant). He does not state a product or price. The lesson is a starting point for selling custom agents.
+- **Duet-relevant:** no
+- **Promo:** none

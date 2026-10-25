@@ -1,0 +1,17 @@
+## 273. I Built an AI Agent that Builds Teams of Agents in n8n (free template)
+- **Link:** https://www.youtube.com/watch?v=Ik8OHT3w4pE | **Length:** 20 min | **AI-relevant:** yes
+- **Teaches:**
+  - Architecture: a main "n8n developer" agent takes a plain-language request. It calls a builder tool, which is a second workflow where an LLM writes n8n workflow JSON. The JSON is then posted to the n8n API to create the workflow.
+  - Keep the builder's context small. He feeds it one Google Doc with a reference AI-agent workflow JSON, a sticky-note example, and the required settings block, rather than whole docs or a vector database.
+  - Require a strict output contract: a pure JSON object with a name, nodes array, connections object, and settings. Errors in testing usually came from a bad settings object, so he hardcodes a known-good one.
+  - Enable extended thinking on the Anthropic chat model (with a token cap and thinking budget) for better JSON output.
+  - Create the workflow through the n8n API, using an API key and base URL ending in /api/v1, then return the editor link to the chat.
+  - Put sticky notes in generated workflows that explain setup steps and credentials.
+- **Tools / prices / numbers:**
+  - Tools: n8n (API and node types), Slack trigger, Gmail and Google Calendar tools, Google Sheets logger, Claude Opus 4 via Anthropic with extended thinking, Google Docs for context, structured output parser.
+  - Prices (his quotes): Opus 4 at $15 per million input tokens and $75 per million output tokens. He estimates about $0.34 per workflow run.
+  - Numbers: about 2,500 input and 3,000 to 4,000 output tokens per generated workflow. His own estimate for a run is about 34 cents.
+- **Skills shown:** prompt and system-message design for code generation, n8n REST API use, JSON schema and structured output, token budgeting, Slack and Gmail agent tooling, sticky-note documentation
+- **Money angle:** Sell a custom "workflow builder" agent that turns client requests into importable n8n workflows, or use it to speed up client builds. Pair with a template library. No client price stated.
+- **Duet-relevant:** yes. The demo is a Slack assistant that reads messages, sends emails, and creates calendar events for the user.
+- **Promo:** Free school community (download the JSON and reference doc). His paid community with "Agent Zero" and "10 Hours to 10 Seconds" courses, a library of step-by-step builds, and five live calls per week.

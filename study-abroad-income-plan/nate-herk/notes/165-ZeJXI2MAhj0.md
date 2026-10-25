@@ -1,0 +1,16 @@
+## 165. Stop Learning n8n in 2026...Learn THIS Instead
+- **Link:** https://www.youtube.com/watch?v=ZeJXI2MAhj0 | **Length:** 19 min | **AI-relevant:** yes
+- **Teaches:**
+  - Argues that drag-and-drop automation builders (n8n, Make, Zapier) are being replaced by agentic workflows that you describe in natural language and an agent implements.
+  - Compares building a "check a YouTube channel every 8 hours, dedupe, summarize, deliver" automation by hand in n8n (schedule, HTTP request, dedupe store, transcript, LLM step, write-back) with asking Claude Code to build it.
+  - Shows a ClickUp-triggered research agent in Trigger.dev that searches the web in a loop and posts a company brief back to the task.
+  - Builds a second agent live: ClickUp task in, LinkedIn post and infographic out, with the agent polling an async image API until the image is ready.
+  - Lists the main pitfalls: context drift, hallucinated APIs or functions, over- or under-scoping (use plan mode), and production needs such as error alerts, observability and version control.
+- **Tools / prices / numbers:**
+  - Claude Code, Trigger.dev, ClickUp, n8n, Make, Zapier, Nano Banana Pro via key.ai.
+  - Stats he cites (his sources, not verified here): agentic AI market about $5B in 2024 rising to about $200B by 2034; 96% of enterprises plan to expand agentic use; about 50% of enterprises deployed by 2027.
+  - Live build run took 2 min 23 sec.
+- **Skills shown:** agent design, Trigger.dev deployment, ClickUp integration, deduplication by idempotency key, async polling, plan mode, testing before production.
+- **Money angle:** none stated. He frames agent-building as a skill that stays valuable as the tools change.
+- **Duet-relevant:** partly. The ClickUp poller and research agent act on the user's tasks without being prompted, but it is a task-triggered automation, not a chat-style personal assistant.
+- **Promo:** free community ("over a quarter million members", his figure) with courses and weekly live calls; paid community for building an AI automation business. Links in description.

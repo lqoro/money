@@ -1,0 +1,13 @@
+## 104. 100 Years of Artificial Intelligence Explained
+- **Link:** https://www.youtube.com/watch?v=NHFbAg2b54U | **Length:** 17 min | **AI-relevant:** yes
+- **Teaches:**
+  - A timeline of AI from the 1939-45 Enigma codebreaking work to the 2020s chatbot and coding-tool boom.
+  - 1956 Dartmouth workshop gave the field its name. The field then split between rule-based (symbolic) systems and neural networks.
+  - Expert systems boomed in the 1980s, then collapsed on brittleness. Backpropagation, GPUs, and the ImageNet dataset set up the 2012 AlexNet win.
+  - Transformers (2017) led to GPT models, ChatGPT (2022), and Claude's launch in 2023. Claude Code followed in 2025.
+  - Key insight: each "winter" came when hype outran results. Progress came from new hardware and data, not only new ideas.
+- **Tools / prices / numbers:** Bombe machines: more than 200 running, about 4,000 messages a day. Rosenblatt's perceptron: 20x20 light-sensor grid. ImageNet: 1.2 million labeled photos in 1,000 categories. AlexNet error rate about 15%, down from about 26%. ChatGPT: 1 million users in 5 days, 100 million in about 2 months. Claude Code over $1B annual revenue by November 2025 (Nate's figure). Investment figures cited include Microsoft about $13B to OpenAI and Amazon up to $25B more to Anthropic in April 2026.
+- **Skills shown:** historical narrative, technical explanation, timeline storytelling
+- **Money angle:** none
+- **Duet-relevant:** no
+- **Promo:** none

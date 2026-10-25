@@ -1,0 +1,13 @@
+## 44. Fable 5.1 FINALLY Kills AI Website Slop
+- **Link:** https://www.youtube.com/watch?v=FFWtxjvW2ts | **Length:** 16 min | **AI-relevant:** yes
+- **Teaches:**
+  - One-shot premium sites come from references plus a skill, not from "make it premium." He used layered parallax (background, mid-ground, laptop, foreground), stacking cards, and scroll-driven text.
+  - His checklist: brand guidelines; the pain, person, and promise; scroll feedback so the user feels in control; inspiration sites (godly.design, Awwwards, Motion Sites); reusable components from 21st.dev; a mobile check.
+  - Verify with screenshots frame by frame during scroll animations, and iterate on what looks wrong.
+  - Clone-and-adapt: he pointed the model at a competitor's dictation-app site and asked for a version using his brand.
+  - He reports Fable 5.1 and Fable 5 produced similar quality from identical prompts, with 5.1 cheaper per run in his tests.
+- **Tools / prices / numbers:** Fable 5.1, Fable 5, his ScrollCraft skill, 21st.dev, godly.design, Awwwards, Motion Sites, Higgsfield (asset generation). Cost comparisons are in unstated units (e.g., 1,824 vs 2,022). He says Anthropic's release blog claims 5.1 can be up to 45% cheaper on heavy agentic work. He used about 45% of his weekly Fable limit over several hours (his claim).
+- **Skills shown:** Web design, scroll and motion design, prompt design from references, component reuse, visual QA.
+- **Money angle:** Premium websites for businesses, segmented by niche and by the pain, person, and promise of each client. No price points stated. To start: gather brand guidelines and a few inspiration sites, run a skill-based one-shot, then iterate with screenshot checks.
+- **Duet-relevant:** no
+- **Promo:** Free school community, which hosts his ScrollCraft skill; his AI Automation Society site, and his book "Becoming AI Native" (shown on his personal site).

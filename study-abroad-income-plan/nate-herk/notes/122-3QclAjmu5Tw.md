@@ -1,0 +1,15 @@
+## 122. Claude Just Solved Session Limits
+- **Link:** https://www.youtube.com/watch?v=3QclAjmu5Tw | **Length:** 10 min | **AI-relevant:** yes
+- **Teaches:**
+  - Anthropic's compute deal with SpaceX (announced at its Code with Claude event) is the reason for higher limits; Nate says outages came from too little compute.
+  - Five builder takeaways: retest workflows that failed on rate limits; use Opus more instead of rationing it; the 1M context window is usable in production API work; move Claude Code routines to the cloud so they stop eating your session limit; multi-agent API workflows are now practical.
+  - Nate reads Anthropic's direction as enterprise-focused, with Claude Code the flagship product.
+- **Tools / prices / numbers:**
+  - Claude Code 5-hour limits doubled for Pro, Max, and Team; peak-hour reduction removed for Pro and Max.
+  - Opus API per-minute limits raised sharply: output from 8,000 to 80,000 tokens (his figure); tier-one input from 30K to roughly half a million.
+  - Compute: 300 MW and over 220,000 Nvidia GPUs (his figures); partners named include Amazon, Google, Broadcom, Microsoft, Nvidia, Fluidstack, a Goldman Sachs JV, and Blackstone.
+  - Subscriptions used through third-party harnesses such as OpenClaw or Hermes are against terms; he speculates this was partly about capacity.
+- **Skills shown:** none taught; rate-limit and session planning.
+- **Money angle:** none stated
+- **Duet-relevant:** no
+- **Promo:** none; points to his own video on token management.

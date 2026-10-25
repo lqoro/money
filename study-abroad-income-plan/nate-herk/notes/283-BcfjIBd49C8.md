@@ -1,0 +1,18 @@
+## 283. I Built a 24/7 Viral Shorts Machine with No-Code (free n8n template)
+- **Link:** https://www.youtube.com/watch?v=BcfjIBd49C8 | **Length:** 31 min | **AI-relevant:** yes
+- **Teaches:**
+  - A five-stage, no-code pipeline: Google Sheet row to AI prompt writer (structured output parser for image, video and audio prompts) to images to videos to sound effects to rendered short to auto-post.
+  - Batch handling in n8n: aggregate and split items so four brands run through each step as four separate items.
+  - Polling on async APIs (images about a 12 s wait; videos about 5 min), then upload audio to Google Drive, make it public, and send the URLs to the renderer.
+  - Post the final video through a posting service and mark the sheet row "done."
+- **Tools / prices / numbers:**
+  - fal.ai: Flux Pro v1.1 Ultra for images (6 cents each, so about 24 cents per run); Kling (transcribed "Cling") 1.6 Pro for 5-second video (about 46 cents each, under $2 per short with images).
+  - ElevenLabs sound effects (5-second clips); $5/month starter plan (as Nate said).
+  - Creatomate: $41/month for 2,000 credits; about 12.5 credits per video, about 200 runs/month.
+  - Blotato: about $30/month (per Nate); code "Nate30" for 30% off for 6 months.
+  - OpenRouter with GPT-4.1 for the prompt agent, under 1 cent per run (Nate's estimate).
+  - Nate's cost per run: a little over $2.
+- **Skills shown:** n8n batching and aggregation, multi-API orchestration, polling, Google Drive sharing, sheet-driven automation, cost modeling.
+- **Money angle:** Run faceless short-video accounts for brands or niche clients: a sheet of brands or topics in, a week of posts out. Charge a monthly fee per account plus setup, and keep per-short cost near $2. The video does not state prices charged to clients.
+- **Duet-relevant:** no
+- **Promo:** Blotato sign-up link with code "Nate30" (30% off, 6 months); free school community (template JSON and Creatomate source); paid community ("a little over 1.8,000 members" as transcribed); courses "Agent Zero" and "10 Hours to 10 Seconds"; five live calls per week.

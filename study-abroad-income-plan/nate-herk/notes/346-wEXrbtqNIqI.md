@@ -1,0 +1,16 @@
+## 346. Step by Step: RAG AI Agents Got Even Better
+- **Link:** https://www.youtube.com/watch?v=wEXrbtqNIqI | **Length:** 34 min | **AI-relevant:** yes
+- **Teaches:**
+  - Swap n8n's window buffer memory for Postgres chat memory so chat history survives restarts.
+  - Build a RAG agent that answers from a vector store (Supabase with pgvector) and cites what it retrieved.
+  - Ingestion workflow: when a new file lands in a Google Drive folder, download it as text, extract it, split it, embed it, and store it with the Drive file ID in metadata.
+  - Update workflow: when a file changes, delete the old vectors by file ID, then re-download and re-insert, so the store always matches the latest version.
+  - Gotchas: reference the correct upstream node by name instead of relying on `json.` paths, and turn on "Always Output Data" so empty results do not stop loops.
+  - Nate's comparison: Supabase suits small to medium vector sets plus relational data, and is self-hostable. Pinecone suits very large vector search as a managed service.
+- **Tools / prices / numbers:**
+  - Supabase (project and API keys), Postgres, OpenAI GPT-4o mini, text-embedding-3-small, Google Drive, Pinecone (comparison only).
+  - No prices quoted. The demo file was a fake project document.
+- **Skills shown:** RAG pipeline design, pgvector setup, metadata-keyed upserts, n8n loop and node-reference debugging.
+- **Money angle:** implied, not stated. Businesses could pay to have a document-chat system like this built, which Nate offers through booking a call.
+- **Duet-relevant:** no. This is a document Q&A agent, not an agent that acts on your behalf.
+- **Promo:** free school community (workflow JSON download), paid community, and booking a call through his website for business builds or agency work.

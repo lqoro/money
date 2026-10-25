@@ -1,0 +1,13 @@
+## 299. 3 AI Workflows Step-by-Step (Beginner's Guide to n8n)
+- **Link:** https://www.youtube.com/watch?v=06Beyp_iDL0 | **Length:** 44 min | **AI-relevant:** yes
+- **Teaches:**
+  - RAG pipeline: a Google Drive folder trigger fires on new files, downloads the file as binary, and sends it to a Pinecone vector store. A recursive character text splitter (chunk size 1000, no overlap) and an embeddings model do the indexing. The index and embeddings model must match, or the workflow breaks.
+  - RAG chatbot: a chat trigger feeds an AI agent with a chat model, and the Pinecone store is attached as a tool, pointed at the right namespace. A system prompt is optional but helps.
+  - Customer support: a Gmail trigger, a text classifier (support vs other), and an agent that searches the knowledge base and drafts a reply. The reply is sent in-thread, with the n8n attribution turned off.
+  - LinkedIn creator: a Google Sheet row with status "to-do" is pulled, Tavily searches the topic, an agent writes the post, and the row is updated to "created". Nate says it can run on a daily schedule.
+  - Credentials: Google needs a Cloud project, the right API enabled, and OAuth consent. Pinecone and OpenAI use API keys.
+- **Tools / prices / numbers:** n8n, Pinecone (free to start), OpenAI embeddings text-embedding-3-small (Nate calls it the cheapest OpenAI embedding model), OpenRouter, GPT-4o mini, Claude 3.5 Sonnet, Gemini 2.0 Flash, Tavily (Nate says 1,000 free searches per month on the free plan), Gmail, Google Drive, Google Sheets. Document split into 4 vectors in the demo.
+- **Skills shown:** RAG design, vector DB setup, n8n credentials (OAuth and API key), AI agent tool use, text classification, prompt writing
+- **Money angle:** none stated. Nate frames the workflows as beginner practice and says the templates can be customized, with no pricing or buyers named.
+- **Duet-relevant:** no. The support inbox agent answers customers, not the user.
+- **Promo:** free school community (the prompt-architect custom GPT and templates). Paid community with about five live calls a week and a classroom. Mentions a "solved" search in the community.

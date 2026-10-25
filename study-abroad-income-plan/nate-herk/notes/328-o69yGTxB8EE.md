@@ -1,0 +1,12 @@
+## 328. Two Ways to Save 96% of Your Money Using DeepSeek R1 in n8n
+- **Link:** https://www.youtube.com/watch?v=o69yGTxB8EE | **Length:** 15 min | **AI-relevant:** yes
+- **Teaches:**
+  - Cost comparison: he quotes o1 output at $60 per million tokens and R1 at $2.19, which he calls about 96% cheaper.
+  - Method 1, R1 through OpenRouter: create a key, paste OpenRouter's base URL into the OpenAI chat credential, then paste the R1 model ID as an expression. He reports slow responses and tool-call loops, including a RAG run that hit the vector store about 12 times.
+  - Method 2, R1 through an HTTP Request node: import DeepSeek's curl example, set Bearer auth, change the model to the reasoner, and test. The response includes reasoning content, which helps with debugging.
+  - Demo: a riddle answered with step-by-step reasoning shown in the output.
+- **Tools / prices / numbers:** DeepSeek API and OpenRouter. Quoted figures: OpenAI o1 input $15 and output $60 per million tokens; DeepSeek R1 input $0.55 and output $2.19. He says one million o1 input tokens cost about the same as 27.3 million R1 input tokens.
+- **Skills shown:** API provider switching, HTTP Request configuration, cost analysis, debugging reasoning-model output
+- **Money angle:** none stated. Cost savings are the pitch for builders.
+- **Duet-relevant:** no
+- **Promo:** free school community (downloadable workflow); paid community with classroom and five live calls per week.

@@ -1,0 +1,12 @@
+## 133. OpenAI Image 2 is Nuts. Here are 10 Ways to Use it.
+- **Link:** https://www.youtube.com/watch?v=GY-kAiZGLOw | **Length:** 14 min | **AI-relevant:** yes
+- **Teaches:**
+  - Run a side-by-side image model test: 30 matched prompts, with a model acting as judge to pick winners per category.
+  - Use cases for image models: product packaging mockups, cleaned-up handwriting scans, website hero concepts, UGC-style ads, localized ad creative, book covers, LinkedIn carousels, brand mascot variants, and room redesigns.
+  - Build the comparison deck with Claude Code: it generated images, ran tests, and built the presentation on local hosts.
+  - Caveat: repeated edits of a source image can degrade it, and aspect ratio control was unreliable in his tests.
+- **Tools / prices / numbers:** GPT Image 2 at 6 cents per image flat (his figure). Nano Banana 2 at 4, 6, or 9 cents by resolution tier (his figure). Accessed through an aggregator called key.ai (he uses it; no sponsor stated). Arena ranking gap of 242 points for GPT Image 2 over Nano Banana 2, as he quotes it.
+- **Skills shown:** prompt-based image generation, model comparison, deck building with Claude Code, LLM-as-judge evaluation, mockup creation.
+- **Money angle:** Who pays: small businesses and marketers who need packaging, ads, or social graphics fast. Offer product mockups, ad variant batches, or carousel and thumbnail production. He says a thumbnail workflow could be fully automated. No prices for services given.
+- **Duet-relevant:** no.
+- **Promo:** free school community (the comparison repo is in the YouTube resources section); key.ai referenced as the place he gets models.

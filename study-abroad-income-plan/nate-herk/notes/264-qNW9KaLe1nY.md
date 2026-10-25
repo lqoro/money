@@ -1,0 +1,13 @@
+## 264. Use Parallelization to Make n8n Workflows Faster & Scalable
+- **Link:** https://www.youtube.com/watch?v=qNW9KaLe1nY | **Length:** 11 min | **AI-relevant:** yes
+- **Teaches:**
+  - Parallelization runs items at the same time. Sequential loops in n8n wait for each item. Some APIs (his example: Perplexity) batch on their side; others need n8n to split the work.
+  - Steps: right-click nodes and convert them to a sub-workflow, set the calling node to "Run once for each item," and turn off "Wait for sub-workflow completion."
+  - His four-item test took about 22 seconds in parallel versus about 51 seconds in the main run (his figures).
+  - Drawbacks: API rate limits (batch or throttle), per-item error handling, step dependencies, and harder debugging. Keeping "wait for completion" on throttles to one item at a time.
+  - Sub-workflows also help with reusable logic, smaller workflows, and cleaner error handling.
+- **Tools / prices / numbers:** n8n, Perplexity API, Google Sheets, Fireflies, Excalidraw, Loom, Napkin (the four tools he researched). No prices given.
+- **Skills shown:** n8n sub-workflows, execution tuning, rate-limit planning, error-handling design.
+- **Money angle:** Speed up client automations that process long lists (research, lead enrichment). Sell a faster build with rate-limit safeguards. No prices stated.
+- **Duet-relevant:** no.
+- **Promo:** free community (PDF and workflow JSON); paid community he says has over 2,000 members; Agent Zero and 10 Hours to 10 Seconds courses; links in the description.

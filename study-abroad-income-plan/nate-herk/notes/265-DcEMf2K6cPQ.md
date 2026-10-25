@@ -1,0 +1,16 @@
+## 265. Local n8n AI Agents in 5 Minutes (FREE and no code)
+- **Link:** https://www.youtube.com/watch?v=DcEMf2K6cPQ | **Length:** 6 min | **AI-relevant:** yes
+- **Teaches:**
+  - Assumes a self-hosted n8n stack (the self-hosted AI starter kit) is already running in Docker, with an Ollama container alongside it.
+  - Browse Ollama's model library, copy a model's pull name, then open the Ollama container's exec shell and run the pull command to install it locally.
+  - Inside n8n, the Ollama chat model node picks up newly pulled models in real time, with no container restart needed.
+  - Useful Ollama CLI commands: list installed models, and remove a model you no longer want.
+  - Model choice matters: 1.5B to 1.7B models suit basic chat only. For agents that call tools, he suggests roughly 14B to 32B.
+- **Tools / prices / numbers:**
+  - Tools: n8n, Ollama, Docker, DeepSeek R1 (1.5B), Qwen 3 (1.7B), Llama 3.2.
+  - Price: none, since local models are free to run (his framing).
+  - Numbers: DeepSeek cited at about 48.1 million pulls (his figure). He gives GPT-4 as roughly 1.8T parameters and GPT-4o and Claude 3.5 Sonnet as far larger than open models (his rough claims).
+- **Skills shown:** Docker exec, Ollama model management, n8n AI agent credentials, local model selection
+- **Money angle:** none (a free-tooling tutorial; no offer or pricing).
+- **Duet-relevant:** no
+- **Promo:** none (only points to a prior video and links to Ollama).

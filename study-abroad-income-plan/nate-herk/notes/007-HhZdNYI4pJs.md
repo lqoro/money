@@ -1,0 +1,16 @@
+## 7. I Tried 100+ Github Repos for Claude. These 6 Are the Best
+- **Link:** https://www.youtube.com/watch?v=HhZdNYI4pJs | **Length:** 11 min | **AI-relevant:** yes
+- **Teaches:**
+  - Shortlist of Claude GitHub repos Nate tested, grouped by goal: land clients, build real projects, test before handoff.
+  - Hyperframes: describe a video edit in plain language, Claude builds it from HTML and animation, and the tool renders an MP4.
+  - Google Workspace CLI gives Claude command-line access to Drive, Gmail, Calendar, Docs, Sheets and Slides, with 40+ bundled skills.
+  - Addy Osmani's agent skills (/spec, /plan, /build) keep long projects on track across fresh sessions.
+  - Playwright CLI clicks through an app like a customer and writes reusable tests.
+- **Tools / prices / numbers:**
+  - Apify MCP: free plan gives $5 credit a month; scrapers bill per result.
+  - Expo skills: $99/year Apple developer account for TestFlight or the App Store.
+  - JetBrains test (per Nate): Caveman cut about 8.5% of output tokens (65% advertised); RTK saved nothing; Ponytail saved about 10% per task.
+- **Skills shown:** video automation, Google Workspace automation, web scraping, spec-driven development, backend security, end-to-end testing, SEO auditing
+- **Money angle:** Monthly video content packages for local businesses (e.g., a gym wanting 20 caption clips a month); Google Workspace automation for small businesses (reports, invoices, follow-ups); scraped lead lists as spreadsheets; custom scroll-style websites; booking-and-deposit builds for service companies; app builds for shops; SEO audits for monthly retainers. Start with one problem and sell the outcome, since the repos are free.
+- **Duet-relevant:** no
+- **Promo:** Scrollcraft, a repo Nate built himself (linked in description), used on his AI automation society site and personal site. Matt Pocock's skills named as a bonus. Hyperframes stated as not sponsored.

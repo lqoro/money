@@ -1,0 +1,13 @@
+## 12. Claude Code Mods Are Game Changers. Set Up These 5 NOW.
+- **Link:** https://www.youtube.com/watch?v=9hetShMMp2s | **Length:** 11 min | **AI-relevant:** yes
+- **Teaches:**
+  - Claude Code "mods" are plugins that add custom UI and features to the Claude Code desktop app; they are installed via `/plugin` and can be written in plain language.
+  - Ask Claude to mine your past session logs for repeated tasks, then build mods for the highest-value ones.
+  - Example mods: a cache/usage monitor (shows context size, session limits, cache expiry and API-equivalent cost), a "next steps" suggestion panel after each turn, and a recording mode that blurs sensitive text.
+  - A /goal tracker panel shows task lists and progress across several running sessions.
+  - Collision guard warns before editing a file another open chat touched in the last 30 minutes, then asks whether to proceed, use a worktree, or cancel.
+- **Tools / prices / numbers:** Claude Code prompt cache expires after about 60 minutes of inactivity (Nate's observation). Context was about 109k tokens in his demo. No prices stated beyond the cost display.
+- **Skills shown:** Claude Code plugins, slash commands, session logs analysis, prompt caching, context management, session handoff, git worktrees.
+- **Money angle:** none stated. Indirect: cost monitoring and cache-expiry alerts reduce API spend; a session-handoff button saves context rot.
+- **Duet-relevant:** no
+- **Promo:** Free SOP on landing a first AI automation client (link in description, pitched to "AIS Plus" members). Free school community where the mod files are offered as a download (classroom, "YouTube resources").

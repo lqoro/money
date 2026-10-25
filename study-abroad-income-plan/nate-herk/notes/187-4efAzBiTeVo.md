@@ -1,0 +1,15 @@
+## 187. Turn Any Website Into LLM Ready Data INSTANTLY
+- **Link:** https://www.youtube.com/watch?v=4efAzBiTeVo | **Length:** 11 min | **AI-relevant:** yes
+- **Teaches:**
+  - Firecrawl's MCP server lets Claude Code choose the right web tool (scrape, map, crawl, search) from a plain-language request.
+  - Setup: store the API key in a .env file, connect the MCP server, reload the editor.
+  - Keep a tools cheat-sheet file and a short CLAUDE.md that points to it, so the project knows its own tools.
+  - Output includes markdown, AI summary, links, HTML, screenshots, and branding (logo, colors, typography). Plan mode first for messy jobs; the agent switched methods when an extract came back empty.
+- **Tools / prices / numbers:**
+  - Firecrawl: free plan with about 500 credits and 2 concurrent requests; a hobby plan allows 5. The demo used about 30 credits (about 6% of the free allowance).
+  - Example job: about 1,700 listings found, 200 pulled into a spreadsheet with title, company, salary, location, and apply URL.
+  - Firecrawl referral discount: 10% off a plan.
+- **Skills shown:** MCP setup, Claude Code project setup, web scraping, site mapping, structured data extraction, prompt planning
+- **Money angle:** Scraped lead lists, job-board datasets, brand and competitor research, and data prep for AI apps could be sold as deliverables. No prices for client work stated.
+- **Duet-relevant:** no
+- **Promo:** Firecrawl affiliate link (10% off). Nate's paid plus community (over 3,000 members).

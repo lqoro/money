@@ -1,0 +1,13 @@
+## 41. I Had Fable 5.1 and 5 Build Me the Same App
+- **Link:** https://www.youtube.com/watch?v=5FukkI4fbiU | **Length:** 13 min | **AI-relevant:** yes
+- **Teaches:**
+  - Gave two model versions (Fable 5.1 and Fable 5) the same prompt to build OpsFlow, a local-first visual studio for drawing and simulating incident-response runbooks as flowcharts.
+  - Orchestrator pattern: the top model owns strategy, planning, and final acceptance, and delegates all engineering, testing, and design to worker agents (Opus for architecture and review, Sonnet for implementation and testing).
+  - Compared the two apps on UI, dry runs, approvals, and rejection handling; the 5.1 build had the cleaner UI, the Fable 5 build had deeper authoring controls.
+  - Judging method: a separate Codex instance tested both blind and scored them (weighted 9.1 vs 8.4 for Fable 5.1).
+  - Lesson: compare cost, time, and context use alongside output quality.
+- **Tools / prices / numbers:** Fable 5.1, Fable 5, Codex (blind reviewer), Opus and Sonnet workers. Nate's figures: about $1,200 vs $500 spent; 5.1 cost a little over double and took roughly three times as long (about 36 hours); 5.1 used about 40% of its context window vs about 26% for Fable 5. Nate concludes Fable 5 was the better value for this task.
+- **Skills shown:** Multi-agent orchestration, prompt design, product and UI evaluation, cost tracking.
+- **Money angle:** none stated. The implicit point is to price work by cost per acceptable result, not by model prestige.
+- **Duet-relevant:** no
+- **Promo:** none (points to another of his videos on Fable 5.1 website design)

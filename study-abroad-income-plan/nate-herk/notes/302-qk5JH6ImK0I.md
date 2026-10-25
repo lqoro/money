@@ -1,0 +1,14 @@
+## 302. How to Connect Slack to n8n (2025) (Step-by-Step)
+- **Link:** https://www.youtube.com/watch?v=qk5JH6ImK0I | **Length:** 6 min | **AI-relevant:** yes
+- **Teaches:**
+  - Create a Slack app at api.slack.com/apps in a workspace you own, then add it to a channel.
+  - Connect Slack to n8n for sending messages with OAuth 2 (or an access token as a fallback), and grant bot token scopes such as app mentions read, channels read, chat write.
+  - Slack will not post in a channel until the bot is invited to it ("not in channel" error means the app must be invited).
+  - For a trigger, enable Event Subscriptions and paste the n8n webhook URL (Slack verifies it), then subscribe to the app_mention bot event.
+  - Wire it up: mention the bot, pass the message text to an AI agent, and send the agent's output back to the channel.
+  - Test webhook URLs break when the workflow goes active, so swap in the production URL and verify again.
+- **Tools / prices / numbers:** Slack (free plan), Slack API app config, n8n Slack node and Slack Trigger, OAuth 2, bot token. No prices.
+- **Skills shown:** Slack app setup, OAuth and scopes, event subscriptions, webhook verification, n8n credentials
+- **Money angle:** none stated.
+- **Duet-relevant:** yes. A Slack bot that answers when mentioned is a messaging-app agent, the kind of always-on assistant this brief tracks, though this video covers only the basic wiring.
+- **Promo:** none (Nate asks for a like only).

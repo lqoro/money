@@ -1,0 +1,17 @@
+## 168. Google's New Model + Claude Code Just Changed RAG Forever
+- **Link:** https://www.youtube.com/watch?v=hem5D1uvy-w | **Length:** 15 min | **AI-relevant:** yes
+- **Teaches:**
+  - Google's Gemini Embedding 2 is a natively multimodal embedding model, so text, images, video, audio and documents can share one vector space.
+  - Build a multimodal RAG app by describing it to Claude Code in plan mode, pasting the API docs URL, and having it generate the project, a .env with placeholders, and the ingestion pipeline.
+  - Demo 1: a 68-page vacuum manual (text plus diagrams) becomes a chat app that returns steps and the matching diagram pages.
+  - Demo 2: 13 roof photos with metadata become a "find similar past projects" search that returns match percentages.
+  - Key lesson: the app only sees text descriptions of media, so media needs good descriptions. Fixing a missing video required re-ingesting it with better metadata.
+  - Stop and correct the agent mid-run when it picks the wrong model (he switched the chat model to Sonnet while keeping Opus for building).
+- **Tools / prices / numbers:**
+  - Gemini Embedding 2 (embeddings), Pinecone (starter plan is free, per him), Google AI Studio key, OpenRouter (chat model access), Claude Code (paid plan required).
+  - Limits he states: videos up to 120 seconds, MP4 or MOV only; up to 6 images per request, PNG or JPEG.
+  - Both demos built in under 30 minutes (his claim).
+- **Skills shown:** RAG and vector databases, multimodal embeddings, plan mode, .env secret handling, correcting an agent mid-task, local web app build.
+- **Money angle:** implied, not stated in detail. A roofing or contracting firm could offer searchable past-project lookup for quotes. He notes it needs subject-matter data to be useful.
+- **Duet-relevant:** no
+- **Promo:** none

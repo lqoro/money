@@ -1,0 +1,16 @@
+## 136. Claude Just Destroyed Every Video Editing Tool
+- **Link:** https://www.youtube.com/watch?v=ZNbgOhxhzXg | **Length:** 32 min | **AI-relevant:** yes
+- **Teaches:**
+  - Claude Design (Anthropic's web app) can build animated videos from a prompt. Load a brand design system first so output matches your branding.
+  - Claude cannot hear or read video on its own, so feed it a timestamped transcript to sync text and graphics to speech.
+  - HyperFrames is an open-source, HTML-based alternative to Remotion. Claude Code can install and drive it. Plan first, approve the plan, then iterate with feedback like a human editor.
+  - Review every frame before the final render. Clear or hand off the session at about 260k tokens before giving more feedback.
+  - Limits: raw footage needs manual cuts, localhost previews sometimes fail, and rendering several videos at once slows the machine.
+- **Tools / prices / numbers:**
+  - Claude Design, HyperFrames, Claude Code, OpenAI Whisper API (transcription), FFmpeg.
+  - He is on the $200/month Max plan. One project used about 260k context, then about 125k on a rerun, roughly 10% of his 5-hour limit.
+  - He rendered about 60 videos in a day while testing.
+- **Skills shown:** AI video editing, HTML animation, prompt iteration, design systems, plan-mode workflow, context management
+- **Money angle:** none stated. Implied: branded promo and short-form video for clients. He argues taste is the differentiator.
+- **Duet-relevant:** no
+- **Promo:** free school community (GitHub repo and skills); "Comment 500W" lead magnet for his AI workflow breakdown; his AI Automation Society branding shown

@@ -1,0 +1,16 @@
+## 32. How to Actually Choose the Right AI Agent
+- **Link:** https://www.youtube.com/watch?v=6LNlCpQPYFc | **Length:** 34 min | **AI-relevant:** yes
+- **Teaches:**
+  - Core claim (guest's view, recorded with Nate): the harness matters more than the model. The model is the brain; read, write, shell, and the agentic loop are what let it act.
+  - A bare local model can write HTML but cannot start a server on your machine. A harness supplies the "hands".
+  - Stay loyal to your own harness and assets, not a provider. Make skills model-agnostic and test them in Claude Code and Codex.
+  - Pick the tool per step: one model plans and another reviews in a loop until gaps close.
+  - Audit skills and rules often. Remove bloat, promote rules to global sparingly, and isolate projects so you can tell whether a failure comes from the model, the harness, or your setup.
+- **Tools / prices / numbers:**
+  - Claude Code, Codex, Hermes Agent, OpenClaw, pi.dev (open-source harness), LM Studio, a local Qwen 27B model.
+  - Guest says he now runs Codex about 60% of the time (his claim).
+  - No prices given.
+- **Skills shown:** Harness design, skill portability, model comparison, context auditing, agent orchestration
+- **Money angle:** none stated; the video frames owning your harness and assets as the asset.
+- **Duet-relevant:** yes, in passing: Hermes and OpenClaw are discussed as personal agent harnesses. No bot setup is shown.
+- **Promo:** Clay (sponsor; 2,000 free credits via link).

@@ -1,0 +1,18 @@
+## 158. Gemini 3.1 Flash Live Just Changed Voice Agents Forever
+- **Link:** https://www.youtube.com/watch?v=Qt3zMBH-FNg | **Length:** 19 min | **AI-relevant:** yes
+- **Teaches:**
+  - Gemini 3.1 Flash Live is speech-to-speech (no separate speech-to-text and text-to-speech steps), with lower latency and better interruption handling.
+  - Prototype a voice agent for free in Google AI Studio: pick the Live model, save system instructions (persona, tone), toggle function calling and search grounding.
+  - Real-world use: noisy environments, alphanumeric accuracy (plates, postcodes), and tone cues like frustration.
+  - Going beyond the playground needs the Live API (websocket) and a persistent server process; Nate used Claude Code to read the docs and build two demos.
+  - Limit: the agent goes silent while waiting for a function call result.
+- **Tools / prices / numbers:**
+  - Benchmark (Nate's reading): about 19% better than Gemini 2.5 Flash on multi-step function calling
+  - Free tier: no API key needed; free-tier data may be used to improve Google's products, paid tier is not
+  - Nate's estimate: about 14 cents for a 10-minute call on the paid tier
+  - 70+ supported languages
+  - Mentions ElevenLabs as the easier route for embedding a voice widget on a site (not a sponsor)
+- **Skills shown:** voice agent prompting, function-calling design, Live API basics, Claude Code project setup
+- **Money angle:** voice agents for e-commerce, support, sales, booking and calendar tasks. Nate says embedding on a live site needs a hosted server, so it is harder than ElevenLabs.
+- **Duet-relevant:** yes, partly: his "Arya" demo is a voice assistant with calendar and ClickUp access, though it is a demo, not a persistent bot.
+- **Promo:** free school community; Nate offers the demo project folder and a resource guide there

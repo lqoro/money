@@ -1,0 +1,18 @@
+## 124. Higgsfield Just Turned Claude Into a Creative Agency
+- **Link:** https://www.youtube.com/watch?v=xn6Z5PYyAIE | **Length:** 35 min | **AI-relevant:** yes
+- **Teaches:**
+  - Connect Higgsfield to Claude as a custom connector (MCP) for quick tests; for repeat work, use the Higgsfield CLI instead because MCP tool lists cost more tokens.
+  - Pull the knowledge in first: have an agent write a reference markdown on ad strategy, then generate from it.
+  - Log every generation to a Google Sheet (status, job ID, result URL) via the Google Workspace CLI, so an agent can pick unmarked rows.
+  - Reverse-engineer a skill from a prompt that worked, then invoke it by name; upload the product image as a reference so it stays unchanged.
+  - Routines (scheduled prompts) to generate a batch each week and analyze results.
+- **Tools / prices / numbers:**
+  - Higgsfield requires a paid subscription (price not stated); Marketing Studio, image and video models.
+  - Image models: Nano Banana 2, GPT Image 2.
+  - Nate's sheet: 45 existing generations; a test matrix of about 100 variations; top 5 generated first.
+  - Claude Code desktop app needed for skills and folders.
+  - Advertising research file ran to 617 lines.
+- **Skills shown:** Claude connectors, Higgsfield CLI, Google Sheets tracking, prompt reverse-engineering, reference-image handling, ad copy, scheduled routines
+- **Money angle:** Ad creative for brands: product photos, Instagram ads, short video ads, and test batches for paid campaigns. Start with one product, produce a test matrix, track results in a sheet, and let the winning combos get budget. No client prices stated.
+- **Duet-relevant:** no. Weekly routines generate ad creative; they are not a personal assistant.
+- **Promo:** Glydo voice-to-text ("I officially joined the Glydo team"), with a link in the description; a longer GWS CLI video and a routines video are referenced.

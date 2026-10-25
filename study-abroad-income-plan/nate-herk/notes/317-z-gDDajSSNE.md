@@ -1,0 +1,13 @@
+## 317. I Built a Human in the Loop Calendar Agent in n8n with No Code
+- **Link:** https://www.youtube.com/watch?v=z-gDDajSSNE | **Length:** 20 min | **AI-relevant:** yes
+- **Teaches:**
+  - Human-in-the-loop pattern: an intent agent reads calendar and contacts, drafts an action, and sends it to the user in Telegram for approval before anything is changed.
+  - Feedback loop: a classifier labels the reply as approved or denied; denials go to a correction agent that merges the original intent with the feedback and re-asks.
+  - State handling: a "set intent" node holds the latest intent so the calendar agent always acts on the final version after any number of revisions.
+  - Tool design: the calendar agent gets create, get, update, and delete tools, and must look up the event ID with get-events before updating or deleting.
+  - Prompt rules: ignore clarification questions once approved, default event length to one hour, and carry all details (emails, time, date, summary) through each revision.
+- **Tools / prices / numbers:** n8n; Telegram trigger and human-in-the-loop messages; Google Calendar; Airtable as the contact database (8 records in the demo); a GPT-4o-class mini model (transcript reads "40 mini") on all agents. No prices stated.
+- **Skills shown:** n8n no-code agent building, human-in-the-loop design, intent classification, feedback loops, calendar and CRM tool wiring, prompt design.
+- **Money angle:** none stated. The pattern could be sold as an approval-gated scheduling assistant for small teams; Nate does not name a price. The free template is offered through his free school community.
+- **Duet-relevant:** yes. It is a messaging-app assistant that acts on the user's calendar, with approval gates before actions.
+- **Promo:** Free School Community (template download under YouTube resources); paid Community with step-by-step builds and deep dives; five live calls per week.

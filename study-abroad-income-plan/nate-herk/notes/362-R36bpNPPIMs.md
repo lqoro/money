@@ -1,0 +1,16 @@
+## 362. How to Build a Google Scraping AI Agent with n8n (Step By Step Tutorial)
+- **Link:** https://www.youtube.com/watch?v=R36bpNPPIMs | **Length:** 20 min | **AI-relevant:** yes
+- **Teaches:**
+  - Build a tool workflow: a "when called by another workflow" trigger with parameters (job title, company, industry, location), an HTTP Request to a Google search URL filtered to linkedin.com/in, then a code node that parses the returned HTML into profile URLs.
+  - Add a `user-agent` header to the HTTP request, since Google may block requests without one; a chatbot helped write the header and parsing code.
+  - Append results to a Google Sheet, then add a Set node with `response = done` so the agent knows the tool finished.
+  - Build the agent workflow: chat trigger, tools agent, OpenAI model, window buffer memory (5 messages), and the scraping workflow registered as a tool.
+  - Pagination with a `start` parameter works in theory, but he saw few profiles returned on later pages and suspects Google CAPTCHAs; he suggests a search API for scale.
+- **Tools / prices / numbers:**
+  - n8n, OpenAI API (GPT-4o), Google Sheets, a custom GPT for n8n help (used to write headers and parsing code)
+  - About 10 profiles per search page (his demo)
+  - A Google search API (name garbled in the transcript) mentioned as a possible future option; no price stated
+- **Skills shown:** HTTP requests with query parameters and headers, HTML parsing with code nodes, Google Sheets append, tool-calling agents, memory setup
+- **Money angle:** Prospect-list building for sales teams or recruiters, delivered as a sheet on request. He says the basic version returns only about 10 results per query, so scaling needs a paid search API. No price points stated.
+- **Duet-relevant:** no
+- **Promo:** none

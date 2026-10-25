@@ -1,0 +1,18 @@
+## 17. I Gave GPT 6 Astra $10,000 to Trade Stocks...And This Happened
+- **Link:** https://www.youtube.com/watch?v=eg_1NXDcoPk | **Length:** 18 min | **AI-relevant:** yes
+- **Teaches:**
+  - Runs a trading agent as a schedule of short "wake-ups" (pre-open news and account check, first qualifying trade, midday and afternoon position reviews, a 2:15 close-out, and an end-of-day results log), all inside one Codex thread.
+  - Keeps the agent continuous by having each run leave a handoff note that the next run reads, so the separate routines behave like one agent.
+  - Shows the tuning loop: the first strategy was too passive, so he lowered the reward-to-risk requirement from 2:1 to 1.5:1, removed some filters, and increased check-in frequency.
+  - Splits roles when the model refuses to place trades: the reasoning agent emails a separate bot that executes the orders.
+  - Judges performance against the S&P 500 rather than absolute gains.
+- **Tools / prices / numbers:**
+  - Codex running GPT-6 "Astra" on high reasoning effort
+  - "GrokBot" named Trader, with its own email inbox and a webhook that fires on incoming mail; executes trades through Alpaca
+  - Starting capital $10,000, seven-trading-day challenge
+  - Ended at about $9,900 (Nate's claim); the S&P 500 benchmark would have been about $9,980 (Nate's claim), so he lost to the index by about 0.8 points
+  - Fed raised rates 25 bp (3.75% to 4%) on day six, which he says hurt the portfolio
+- **Skills shown:** scheduled agent routines, multi-agent handoffs, strategy iteration, brokerage API integration (Alpaca), index benchmarking
+- **Money angle:** none; this is an experiment with no product or price offered. He floats running the experiment longer (30 to 90 days or a year) as a future video series.
+- **Duet-relevant:** yes, the GrokBot "Trader" is a persistent bot with its own email address that acts on the owner's behalf and executes trades.
+- **Promo:** free community (comment-to-enter giveaway for a VIP pass to his AIS Live event on October 17 and 18)

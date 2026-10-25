@@ -1,0 +1,13 @@
+## 206. I built an AI Agent in 2 hours (and got paid $2600)
+- **Link:** https://www.youtube.com/watch?v=bxGE_LXPyAU | **Length:** 28 min | **AI-relevant:** yes
+- **Teaches:**
+  - Wireframe the client system before building. Here it is a student-onboarding pipeline with four flows.
+  - Flow 1: payment webhook triggers a welcome email, a Slack alert, and a new row in a Google Sheet "CRM" with computed follow-up dates.
+  - Flows 2-3: daily scheduled checks send one reminder, then escalate to the team on Slack if the account is still missing. Each step updates the sheet status.
+  - Flow 4: a form trigger feeds an AI agent that writes a personalized welcome email. A structured output parser (JSON schema) returns separate subject and body fields.
+  - Only one step uses AI. Nate's point: non-AI automations are robust, so the build stays fast and reliable.
+- **Tools / prices / numbers:** n8n, Postman (mock webhook payload), Gmail, Slack, Google Sheets, OpenRouter with Claude Sonnet 4.5. Nate's claim: $2,600 paid for about a 2-hour build. His value math: 5 new clients/week x 30 min onboarding at $50/hr is about $6,000/yr saved.
+- **Skills shown:** webhooks, scheduled flows, CRM-in-Sheets, structured AI output, client wireframing
+- **Money angle:** Sold to a YouTube-sourced business owner after discovery calls. He priced on outcomes, aiming for about a 10x first-year return on the price. Start by building demo agents and posting them. No rate card stated.
+- **Duet-relevant:** no
+- **Promo:** Free school community (resource guide, free templates), Plus community (he says about 2,500 members, premium pricing and proposals course), wireframing course.

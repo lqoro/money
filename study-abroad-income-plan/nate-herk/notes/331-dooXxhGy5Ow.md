@@ -1,0 +1,12 @@
+## 331. How I Built A Technical Analyst AI Agent in n8n With No Code
+- **Link:** https://www.youtube.com/watch?v=dooXxhGy5Ow | **Length:** 17 min | **AI-relevant:** yes
+- **Teaches:**
+  - Telegram trigger into an AI agent with one tool, "get chart". Send a ticker such as "Apple" and the agent calls the tool.
+  - Tool flow: an HTTP POST to a chart-image API returns a stored chart URL, an HTTP GET downloads the image as binary, a vision model writes a technical analysis, and the text goes back to the agent, which writes a fuller reply.
+  - API debugging: set the content type to application/json, and add the storage endpoint so the API returns a URL instead of binary data.
+  - Pin test data on the sub-workflow trigger so you can test it without chatting with the agent.
+- **Tools / prices / numbers:** n8n; Telegram; Claude 3.5 Sonnet (agent); GPT-4o (image analysis); a chart-image API with a free key. No prices stated.
+- **Skills shown:** agent tool design, vision model analysis, API debugging (headers, binary vs JSON), Telegram integration
+- **Money angle:** none stated. Nate notes the output is not financial advice.
+- **Duet-relevant:** yes - a messaging-app agent (Telegram) that answers on demand for the user.
+- **Promo:** free school community (workflow download); paid community with classroom and five live calls per week; consulting via a booking link on his website.

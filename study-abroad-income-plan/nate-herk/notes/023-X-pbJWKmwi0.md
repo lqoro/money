@@ -1,0 +1,18 @@
+## 23. Build & Sell with Codex (5+ Hour Course)
+- **Link:** https://www.youtube.com/watch?v=X-pbJWKmwi0 | **Length:** 311 min | **AI-relevant:** yes
+- **Teaches:**
+  - Codex basics: projects as folders, agents.md routing rules, the agent loop, /goal prompts, skills, plugins, browser use, sub-agents, scheduled tasks, voice mode.
+  - Build an "AI operating system" on four Cs: context, connections, capabilities, cadence. Grow it with audit, level-up and grill-me skills.
+  - Skill building: reverse-engineer from a good output, one job per skill, match freedom level to the task, add verification loops, update the skill after every run.
+  - Host predictable automations outside Codex: write scheduled, webhook or Codex-SDK jobs, push to GitHub, deploy on trigger.dev, keep keys in a .env file.
+  - Branded deliverables from a brand-guidelines file; Hyperframes video editing with 11 Labs transcription.
+- **Tools / prices / numbers:**
+  - Codex $200/mo plan; Nate claims about $14,000 of inference per month on it.
+  - GPT-6 Astra API list: $10 input / $50 output per million tokens.
+  - Higsfield API, pay per use; Plus monthly breaks even near 19 clips.
+  - trigger.dev free tier can delay a 6 am job by up to an hour.
+  - Pricing example: $41,600 annual value priced near 13% (about $5,500); $400/mo maintenance.
+- **Skills shown:** agent configuration, goal design, skill authoring and QA, browser and computer use, Google Workspace, trigger.dev deploys, video editing, value-based pricing.
+- **Money angle:** Sell AIOS setup, branded decks, sheets, sites and automations. Price off the client's value (10-20% of first-year value; "10x" test), bill in 30-day milestones with objective acceptance criteria, and have clients pay API costs directly. Nate's claims: $100k/mo agency, $20k/mo minimum retainer, about $400k/mo across his units.
+- **Duet-relevant:** yes. An always-on AIOS sends a 6 am weekday brief DM, and a trading agent emails recommendations to a Grok bot that places the trades.
+- **Promo:** free school community (AIOS resource pack, skills, pricing guide); AIS+ membership; book "Becoming AI Native"; Hyper Agent sponsor segment (credits via link); second channel; Higsfield launch discount.

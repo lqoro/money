@@ -1,0 +1,15 @@
+## 143. This One Plugin Just 10x'd Claude Code
+- **Link:** https://www.youtube.com/watch?v=4XqVR6xI6Kw | **Length:** 15 min | **AI-relevant:** yes
+- **Teaches:**
+  - Superpowers is a free open-source Claude Code plugin that adds a set of skills enforcing a disciplined workflow: clarify, design, plan, code, verify.
+  - A master skill runs at the start of each conversation and dispatches the other skills as needed.
+  - Brainstorming asks clarifying questions and can open a visual companion in the browser to pick between design options before any code is written.
+  - Planning breaks work into tasks of about 2 to 5 minutes each, with exact file paths. Execution uses test-driven development and systematic debugging.
+  - Install once at user level so every project gets it.
+- **Tools / prices / numbers:**
+  - Superpowers: 14 skills (per Nate). Installed through the Claude Code plugin marketplace.
+  - His 12-run experiment (6 with, 6 without; Opus 4.6; $2 cap per run): about 9% lower cost and about 14% fewer total tokens with Superpowers. Simple tasks cost about 8% more. He calls the result directional, not conclusive.
+- **Skills shown:** Claude Code plugins, planning and brainstorming workflows, TDD, subagent use, token benchmarking
+- **Money angle:** Sell a set-up-and-customize service for Claude Code workflows, or build custom skills for clients. No prices stated.
+- **Duet-relevant:** no
+- **Promo:** free school community (doc and YouTube resources linked in description).

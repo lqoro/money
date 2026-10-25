@@ -1,0 +1,17 @@
+## 353. n8n AI Agent Masterclass | AI Nodes Made Simple
+- **Link:** https://www.youtube.com/watch?v=EzS2PIjyeQQ | **Length:** 51 min | **AI-relevant:** yes
+- **Teaches:**
+  - Six n8n agent types: Tools (Nate's default), Conversational (adds chat memory), Plan and Execute, ReAct, SQL, and OpenAI Functions. Choose by whether the agent needs tools, conversation, multi-step planning, or database access.
+  - Variables: drag fields from the schema panel as `$json.field`. Names are case-sensitive, and a red expression means it does not resolve.
+  - Expressions: `{{ $now.format(...) }}` for the current date, plus `if` logic. Nate says the LLM can handle most branching instead.
+  - Agent settings: prompt source (chat input or defined below), system message, max iterations, return intermediate steps, binary passthrough, always output data, execute once, retry on fail, and error handling (continue using an error output).
+  - Output parsers: autofixing (an LLM repairs near-miss output), item list, and structured parser. Pair autofixing with a structured parser for reliable JSON.
+  - Live build: chat trigger, GPT-4o, window buffer memory set to 5 turns, Wikipedia and calculator tools. The execution log shows each step.
+  - Overview of the other AI nodes: message model, basic LLM chain, information extractor, Q&A chain, sentiment analysis, summarization, text classifier, plus document loaders, splitters, embeddings, vector stores, and retrievers.
+- **Tools / prices / numbers:**
+  - n8n, OpenAI (GPT-4o, GPT-4o mini), Wikipedia tool, calculator tool.
+  - Window memory set to 5 turns. No prices are given.
+- **Skills shown:** n8n agent configuration, expression syntax, output parsing, memory and logs debugging.
+- **Money angle:** none stated.
+- **Duet-relevant:** no. This is a general reference on agent nodes.
+- **Promo:** free school community, with a call for feedback. No sponsor mentioned.

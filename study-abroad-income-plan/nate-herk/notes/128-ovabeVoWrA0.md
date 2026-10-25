@@ -1,0 +1,17 @@
+## 128. Claude Design 2 HOUR COURSE (Beginner to Pro)
+- **Link:** https://www.youtube.com/watch?v=ovabeVoWrA0 | **Length:** 118 min | **AI-relevant:** yes
+- **Teaches:**
+  - Claude Design is a separate Anthropic Labs app (launched April 17, 2026, powered by Opus 4.7). Brainstorm in regular Claude chat first, and open Design only when the plan is ready.
+  - Build a design system first (logo, fonts, colors, a website or GitHub repo as input), publish it, then reuse it for every deck, page and video.
+  - Run the full chain on one brand: concept, logo, pitch deck, landing page with a sketch-and-video hero, mobile app prototype from an 800-line spec, and a launch video.
+  - Give feedback by clicking elements, inline text edits, drawing circles on the canvas, and the Tweaks panel; change one thing per prompt.
+  - Hand off: zip or Claude Code command, push to GitHub, deploy on Vercel (a 404 was fixed by renaming to index.html).
+- **Tools / prices / numbers:**
+  - Design usage is a separate weekly limit; paid plans only (Pro, Max, Team, Enterprise). Nate is on Max 20x ($200/month).
+  - Nate's usage: design system about 6% of session; the full course reached about 95% (85% at one point); he says he spent over $200 in extra usage (his claim).
+  - Models: Opus 4.7 for planning; Sonnet 4.6 for most builds (his choice).
+  - Other tools: ChatGPT image model (one-pager), Nano Banana 2, Kling and SeeDance 2.0 for animated logo and hero video, Hyperframes (HeyGen) for motion graphics.
+- **Skills shown:** brand strategy, design systems, prototyping, deck and landing page design, HTML motion graphics, prompt specificity, GitHub and Vercel deployment, token management
+- **Money angle:** Sell branded design systems, pitch decks, landing pages and promo videos for businesses; use a prototype as a sales demo. Nate advises building one system well before building five. No client prices are stated.
+- **Duet-relevant:** no.
+- **Promo:** Free School community resource guide (link in description); Glydo voice-to-text ("I'm part of the Glydo team"); links to a Hyperframes skill and a Motion Sites reference in the description.

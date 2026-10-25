@@ -1,0 +1,17 @@
+## 61. I Made Codex and Claude Code Build the Same App. One Clearly Won.
+- **Link:** https://www.youtube.com/watch?v=WCrnS09vpfo | **Length:** 21 min | **AI-relevant:** yes
+- **Teaches:**
+  - A fair head-to-head: same prompt and same /goal command in Codex and Claude Code, then compare the output, the process, cost and time.
+  - Prompt lesson: he would add a planning and flow-mapping phase between research and build. He calls his own prompt not optimal.
+  - Testing gaps: both apps had bugs (broken image preview, navigation that did not go back, wrong question counters). Real testing finds what agents miss.
+  - Working style: Claude Code did best with a high-level goal plus clear "done" criteria. Codex needed more step-by-step direction, in his view.
+  - Review method: he had Codex compare both session logs anonymously. It preferred the Claude Code build on scope and efficiency, and Codex on architecture and testing.
+- **Tools / prices / numbers:**
+  - Claude Code: orchestrator switched from a Fable model to Opus 4.8 mid-run; about 5.5 hours; about 2M output tokens; 35 sub-agents and about 2,800 tool calls; 296 unit tests, 199 test cases, 102 browser tests.
+  - Codex: GPT-5.6 (transcript says "Soul", likely garbled); about 61-62 hours; about 11M output tokens; 126 sub-agents and about 32.5k tool calls; 2,300 unit tests, 341 test cases, 391 browser tests.
+  - Cost: Claude Code about $832 at API rates (he later corrected toward about $447-800); Codex almost $3,000.
+  - Codex-judged efficiency score: Claude Code 9.0/10, Codex 5.5/10.
+- **Skills shown:** prompt design, agent orchestration, cost and token analysis, cross-tool session review, test-coverage comparison.
+- **Money angle:** none
+- **Duet-relevant:** no
+- **Promo:** none

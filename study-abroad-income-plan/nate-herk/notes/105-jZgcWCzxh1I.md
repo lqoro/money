@@ -1,0 +1,17 @@
+## 105. Claude Code Dynamic Workflows Clearly Explained
+- **Link:** https://www.youtube.com/watch?v=jZgcWCzxh1I | **Length:** 17 min | **AI-relevant:** yes
+- **Teaches:**
+  - Compares skills, sub-agents, agent teams, /goal, and dynamic workflows by how many agents run and whether they talk to each other.
+  - A dynamic workflow is a script Claude writes and runs. It fans out many agents that work alone and returns merged results. Workflows can be saved and re-run.
+  - Rule of thumb: use a workflow when the job splits into independent pieces (width); use /goal when a task must loop until a done condition is met (depth).
+  - Workflows ask for confirmation first. Save them in the project folder (for example .claude/workflows) so they stay with the project.
+  - Skills nest inside workflows, and agents can use your MCP connections. Keep the scope tight and put worker agents on a cheaper model to control cost.
+- **Tools / prices / numbers:**
+  - Claude Opus 4.8. His audit used Haiku for worker agents and Opus for the final synthesis.
+  - One skill audit: 41 Haiku agents, about 5M input tokens, little output. Cost was not high, per his account.
+  - One of his test prompts used about half of a $200/month subscription in just over 30 minutes (Nate's test result).
+  - Commands mentioned: /workflows (view and stop running workflows), /effort, /goal, and an "ultra code" effort mode that he says runs every prompt as a workflow at high cost.
+- **Skills shown:** Claude Code workflow scripting, skill auditing, sub-agent orchestration, token and cost control, slash commands
+- **Money angle:** none
+- **Duet-relevant:** no
+- **Promo:** Lovable (sponsor; app builder with an MCP server, free tier). His free school community, free 7-day challenge, and free AI operating system course.

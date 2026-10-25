@@ -1,0 +1,18 @@
+## 119. Hermes Agent: Zero to Personal AI Assistant (1 Hour Course)
+- **Link:** https://www.youtube.com/watch?v=gb5TlGw6Uks | **Length:** 58 min | **AI-relevant:** yes
+- **Teaches:**
+  - Hermes Agent is an open-source, self-improving agent you run on your own server; he deploys it on a VPS with a one-click Docker install.
+  - Five pillars: memory (user and memory files loaded each session), skills (step-by-step SKILL.md recipes), soul (a personality file), cron jobs (scheduled, isolated runs set up in plain English), and a loop where corrections turn into memory and skills.
+  - Connect Telegram through BotFather and lock the bot to your own user ID; sign in to a ChatGPT subscription instead of paying API fees.
+  - Keep secrets out of chat: set tokens inside the container's .env with a config command, then store the project in a private GitHub repo with a nightly sync cron.
+  - Split into separate agents, each with its own container and keys, only when a role needs its own memory, tools, credentials, or schedule.
+- **Tools / prices / numbers:**
+  - Hermes: about 140k GitHub stars (his figure); OpenClaw about 350k.
+  - 91 built-in skills; a hub with 520+ community skills and 16 official Anthropic skills (his counts).
+  - VPS: Hostinger KVM 2 plan, roughly $100 on an annual term (his figure); Ubuntu 24.04.
+  - Model: GPT 5.5 via ChatGPT sign-in. Context compaction triggers near 136K tokens (his observation).
+  - Channels: Telegram, Discord, Slack, WhatsApp, iMessage.
+- **Skills shown:** VPS and Docker setup, Telegram bot config, .env secret handling, GitHub token scoping, cron scheduling, skill writing, firewall hardening, multi-agent design.
+- **Money angle:** none stated; he frames it as a personal assistant. Running cost is about $100/yr for the VPS plus an existing ChatGPT plan.
+- **Duet-relevant:** yes. An always-on assistant reachable in Telegram that wakes on demand, runs scheduled jobs, and answers YouTube comments for him.
+- **Promo:** Free school community resource guide (all his YouTube resources); Hostinger affiliate link with a 10% annual discount code; Glydo, his speech-to-text startup, which he says he now works with.

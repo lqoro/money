@@ -1,0 +1,13 @@
+## 332. How I'd Teach a 10 Year Old to Build AI Agents (No Code, n8n)
+- **Link:** https://www.youtube.com/watch?v=6DLZK7XDOGo | **Length:** 20 min | **AI-relevant:** yes
+- **Teaches:**
+  - An AI agent is a brain (the LLM), memory, instructions (system prompt), and tools. The user message is the input and the agent's action or reply is the output.
+  - Build steps in n8n: chat trigger, AI agent, OpenAI chat model, Window Buffer Memory (last five messages, keyed by session ID), then a Gmail send tool.
+  - Use "from AI" expressions so the model fills in the recipient, subject and body from the chat request.
+  - Generate the system prompt with a custom GPT, then add a sign-off persona in it. Without that, the agent signs emails with a placeholder.
+  - Add a Google Sheets contact tool so the agent can look up an address by name.
+- **Tools / prices / numbers:** n8n; OpenAI GPT-4o mini (needs account credits); Gmail; Google Sheets. No prices stated.
+- **Skills shown:** agent architecture, n8n AI agent setup, prompt writing, tool wiring with from-AI fields, memory configuration
+- **Money angle:** none stated. He says outputs can go to Telegram, Slack or a phone, which is how you would extend it.
+- **Duet-relevant:** yes - a chat-triggered email assistant with memory that sends mail for the user and looks up contacts.
+- **Promo:** free school community (custom GPT and workflow download); paid community with classroom and five live calls per week.

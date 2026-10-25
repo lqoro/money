@@ -1,0 +1,13 @@
+## 314. Your AI Agent Prompts Are Wrong - Here's The Fix
+- **Link:** https://www.youtube.com/watch?v=2vj2BF_dWeY | **Length:** 27 min | **AI-relevant:** yes
+- **Teaches:**
+  - Prompt reactively: start with no system prompt, add one tool, test, then add one line for each error you see. Change one thing at a time.
+  - Core sections: background (role and goal), tools (what each is for and when to use it), rules (if-then conditions, not a fixed order), examples (only for observed failures), and final notes (date, format).
+  - Keep prompts short and clear, and use markdown headings.
+  - Demo: a sign-off rule fixed one error; the label tool needed explicit steps to get the email and label IDs before adding a label.
+  - Confirm each tool works before adding the next.
+- **Tools / prices / numbers:** n8n AI Agent node; OpenAI GPT-4o mini; Gmail (get emails, get labels, add label, send); Google Calendar. No prices.
+- **Skills shown:** prompt engineering, agent debugging, tool design, markdown prompt structure.
+- **Money angle:** none stated.
+- **Duet-relevant:** no
+- **Promo:** Free School Community (PDF prompt guide download); paid community (deep dives and classroom).

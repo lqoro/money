@@ -1,0 +1,14 @@
+## 301. Build Anything with Lovable + n8n AI Agents (beginner's guide)
+- **Link:** https://www.youtube.com/watch?v=kUpTUEwKnrk | **Length:** 20 min | **AI-relevant:** yes
+- **Teaches:**
+  - Architecture: Lovable builds the front end from a natural-language prompt. The form POSTs to an n8n webhook, an AI agent does the work, and n8n returns the result to the page through a "Respond to Webhook" node.
+  - Steps: create a webhook (test and production URLs), tell Lovable to POST to it, check the request body in n8n, and build an agent with a user message (the problem) and a system message (the role).
+  - Webhook setting "respond using Respond to Webhook" is needed, and the response should return only the output field, not raw JSON.
+  - Go live by switching the workflow to active and pasting the production URL into Lovable, instead of clicking test each time.
+  - Add features in Lovable by chatting: a level system (points stored in the page), and a tone dropdown whose value is passed into the webhook and used in the agent prompt.
+  - Publish from Lovable to its own domain or a custom domain.
+- **Tools / prices / numbers:** Lovable (free trial via link, double credits via link), n8n (free trial), OpenAI API (chat model, key from dashboard). Points system: 5 points for level 2, then 15 more for level 3. No prices given.
+- **Skills shown:** webhook integration, no-code front-end building, AI agent prompting, response handling, live publishing
+- **Money angle:** none stated. Nate says the pattern can connect to Supabase, Firebase, Stripe, or Resend for a full web app, but names no buyers or prices.
+- **Duet-relevant:** no. This is a web form with an excuse generator, not an always-on assistant.
+- **Promo:** Lovable signup link with a double-credits offer (referral status not stated). Free school community has the finished JSON template. Paid community with five live calls per week and a classroom.

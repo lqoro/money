@@ -1,0 +1,15 @@
+## 93. We Might Actually Need to Stop AI
+- **Link:** https://www.youtube.com/watch?v=CvA8-aScqio | **Length:** 12 min | **AI-relevant:** yes
+- **Teaches:**
+  - In early June, OpenAI published a plan with three goals: an AI automated researcher (target stated as March 2028), sharing economic gains, and an international body able to coordinate slowing frontier development. Anthropic had recently asked for a verifiable way to pause AI.
+  - Nate's reading: both labs say they cannot slow down on their own because competition is too strong, so they want a referee that holds everyone to a pause.
+  - Verification is plausible in principle because frontier training needs visible chips, power and construction. The harder problem is incentives, since whoever is ahead wants to keep sprinting.
+  - Nate argues the gap between AI builders and the general public is wide, and that people should start by running routine tasks through AI.
+  - He advises betting on your own AI skills rather than on any one company.
+- **Tools / prices / numbers:**
+  - OpenAI plan published June 8, the same day it filed to go public (Nate).
+  - Claude Mythos and Fable were reportedly suspended after a US government request on June 12. Nate says access may return (his report, unverified).
+- **Skills shown:** reading AI policy, incentive analysis, AI-era career positioning
+- **Money angle:** none
+- **Duet-relevant:** no
+- **Promo:** free community linked in the description, which Nate says has about 400,000 members (his claim)

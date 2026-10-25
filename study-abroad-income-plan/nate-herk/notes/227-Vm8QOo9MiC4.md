@@ -1,0 +1,16 @@
+## 227. Create ANYTHING with Sora 2 + n8n AI Agents (Full Beginner's Guide)
+- **Link:** https://www.youtube.com/watch?v=Vm8QOo9MiC4 | **Length:** 29 min | **AI-relevant:** yes
+- **Teaches:**
+  - Call Sora 2 through a third-party API marketplace (Kie.ai) instead of OpenAI directly; import the provider's curl sample into an n8n HTTP Request node.
+  - Save the API key once as a header credential.
+  - Generation is asynchronous: create a task, get a task ID, then poll a status endpoint with a Wait node and an IF node until the state is success. Add a failed-state branch for production.
+  - Modes: text-to-video, image-to-video (image must be a public URL, no realistic people), cameos (public usernames), and multi-scene storyboards.
+  - Use an LLM agent as a "video prompt engineer" to expand a raw idea into a cinematic prompt, then strip newlines and double quotes before the JSON body.
+- **Tools / prices / numbers:**
+  - Kie.ai about 1.5 cents per second vs 10 cents per second on other platforms (Nate's figures). A 10-second clip about $0.15 vs $1.
+  - Typical runs 3 to 4 minutes (about 18 polls); storyboards took 500 to 700 seconds, and one took 35 minutes.
+  - Recurring 500 errors and content refusals (Nate's experience).
+- **Skills shown:** HTTP APIs, polling loops, credential management, prompt engineering, string sanitizing, error branching.
+- **Money angle:** Nate suggests UGC-style ad videos for brands from a sheet of product, audience and features. Teaching marketers prompting is mentioned as a paid service, unquantified.
+- **Duet-relevant:** no.
+- **Promo:** free template via free school community; AI Automation Society Plus (paid, 200+ members, three courses).

@@ -1,0 +1,13 @@
+## 209. n8n 2.0 is Here (What You Need to Know)
+- **Link:** https://www.youtube.com/watch?v=67BVIScAlbs | **Length:** 11 min | **AI-relevant:** yes
+- **Teaches:**
+  - n8n 2.0 looks similar. Most changes are backend work on security, reliability and performance.
+  - UI changes: publish/unpublish replaces the active toggle, saving is near-instant, and a focus panel lets you edit node parameters while viewing the canvas.
+  - Breaking change: sub-workflows must be published before another workflow can call them.
+  - Behavior change: a sub-workflow with a wait step (such as Slack send-and-wait) now returns its data to the calling agent. In 1.x the agent got an empty response.
+  - Check the migration report under Settings to find workflows that need fixes before upgrading.
+- **Tools / prices / numbers:** n8n (cloud and self-hosted), Slack, Perplexity. Beta on December 8 with stable about a week later, per Nate. Autosave expected January 2026, per Nate. No prices.
+- **Skills shown:** version migration, sub-workflow design, human-in-the-loop approval
+- **Money angle:** none
+- **Duet-relevant:** no
+- **Promo:** Hostinger self-hosting with code "Nate Herk" for 10% off annual plans; Plus community link in description.

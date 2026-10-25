@@ -1,0 +1,18 @@
+## 192. 100 Hours Testing Clawdbot vs Claude Code (honest results)
+- **Link:** https://www.youtube.com/watch?v=CBNbcbMs_Lc | **Length:** 23 min | **AI-relevant:** yes
+- **Teaches:**
+  - Head-to-head scorecard of Claude Code vs Clawdbot (later renamed Moltbot) across eight categories: out-of-box ability, setup and risk, cost, power and access, security, everyday usability, ROI, and ideal user.
+  - Claude Code is better for developers, lower risk, and proven ROI. Clawdbot is better for always-on personal use (Telegram, proactive reminders, background tasks).
+  - Keep the bot's accounts separate and give it read-only access where possible.
+  - Clawdbot defaults were unsafe when exposed online. Use .env for keys and run security audits on deployments.
+  - Run a scheduled security audit and check the code before committing.
+- **Tools / prices / numbers:**
+  - Scores (Nate's): Claude Code 51.5 vs Clawdbot 49 out of 80 (ICP not scored). Examples: out-of-box 7 vs 9; cost 8 vs 6; power 7 vs 10; security 7 vs 3; usability 6 vs 9; ROI 8.5 vs 6.
+  - Claude Code plans: Pro about $20/month; Max $100-$200/month (Nate's figures).
+  - Clawdbot hosting: a VPS on Hostinger, about $6/month (Nate's estimate); the bot itself is open source.
+  - Nate's claim: about 80 million tokens in one day of testing, about $80 in API charges.
+  - Reported: about 900 exposed Clawdbot servers with no password (a tweet Nate cites).
+- **Skills shown:** Claude Code, Clawdbot/VPS setup, security review, cost analysis, API key management
+- **Money angle:** Clawdbot-style assistants could be sold as hosted setups or managed services, but Nate says ROI is unproven. Cost planning matters: API charges can outrun a subscription. No client prices quoted.
+- **Duet-relevant:** yes. Direct comparison of an always-on personal agent bot (Telegram, email, tasks) against a coding assistant. Relevant risks: API cost, security exposure, and blast radius of granted access.
+- **Promo:** Hostinger VPS referral (10% off annual with code "Nate Herk"); plus community (over 3,000 members, paid).

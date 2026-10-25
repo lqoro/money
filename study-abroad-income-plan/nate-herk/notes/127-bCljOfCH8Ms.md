@@ -1,0 +1,16 @@
+## 127. Build & Sell Claude Code Operating Systems (2+ Hour Course)
+- **Link:** https://www.youtube.com/watch?v=bCljOfCH8Ms | **Length:** 153 min | **AI-relevant:** yes
+- **Teaches:**
+  - The "AIOS": a personal operating system built as a folder of markdown files in Claude Code, with context, connections, capabilities and cadence (the "four C's"), built in that order.
+  - Onboarding: a clone-able repo with an onboard skill (7-question interview), a claude.md master prompt, and context files that the agent reads each session.
+  - Connect tools by API key and a markdown endpoint reference instead of MCP servers (fewer tokens); store keys in a .env file, never in chat.
+  - Skills are SOP recipes (skill.md plus references and scripts); improve each one through a feedback cycle, and build them with a six-step framework (trigger, goal, steps, references, rules, self-improvement).
+  - Cadence: routines and loops run skills on a schedule; local tasks need the machine on, cloud routines do not.
+- **Tools / prices / numbers:**
+  - Nate's plan: Claude Max at $200/month. Routine runs per day: Pro 5, Max 15, Team/Enterprise 25 (as stated). Minimum routine interval 1 hour; loop jobs expire after 3 days.
+  - Cloud routine environment: 4 vCPU, 16 GB RAM, 30 GB disk.
+  - Tools named: ClickUp, Fireflies, Slack, Stripe, QuickBooks, Google Workspace CLI (free, open source), Obsidian (free).
+- **Skills shown:** API integration, skill authoring, scheduled routines, Google Workspace automation, Obsidian knowledge bases, dashboards via Artifacts
+- **Money angle:** Sell AIOS builds (setup, audit and level-up sessions) to operators, then to their teams; Nate says team-wide adoption follows the owner's own setup. He suggests boring deterministic automations, run on Trigger.dev or Modal, often beat agents. No client prices are stated.
+- **Duet-relevant:** yes. Nate describes a personal assistant that acts for you 24/7, reachable through Telegram or ClickUp, running on a VPS or Mac Mini, with scheduled routines.
+- **Promo:** Free AI Automation Society "School" community with the AIOS template, GitHub repo and resource guide (link in description); Glydo voice-to-text, which he now works with; Obsidian linked for free download.

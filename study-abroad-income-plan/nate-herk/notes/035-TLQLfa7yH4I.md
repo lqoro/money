@@ -1,0 +1,13 @@
+## 35. I Turned GPT-6 Astra Into a 24/7 Stock Trader (tutorial)
+- **Link:** https://www.youtube.com/watch?v=TLQLfa7yH4I | **Length:** 17 min | **AI-relevant:** yes
+- **Teaches:**
+  - Make a stateless model act like one continuing trader. Each scheduled wake-up reads the strategy doc, the previous handoff and the live account, does its assigned job, then writes a progress log for the next run.
+  - Design a daily schedule: pre-open news and stock selection, first trade check, mid-morning review, midday position management, a close-out, and an end-of-day record.
+  - Log critical actions as they happen so an interrupted run can recover without repeating a trade. He lists failure cases: no prior record, crash after an order was sent, overlapping runs, and missing or corrupt files.
+  - Connect a broker through its API key and secret. Keep the secrets in an env file, in a separate project folder so the trading context stays isolated from his other work.
+  - Run the scheduled tasks locally, not in the cloud, all in one shared chat thread so they keep continuity. Add report tasks that send updates to ClickUp.
+- **Tools / prices / numbers:** Alpaca (paper and live accounts; he pays $99 a month for a market-data plan); GPT-6 Astra at high reasoning; Codex scheduled tasks; ClickUp notifications. Live challenge: $10,000 of real money over 7 trading days. Six wake-ups per day, plus two report tasks (1:00 p.m. and 3:15 p.m. Central). He says a prior $10,000 challenge with Claude beat the S&P by a little over 8% (Nate's claim). He also says it is not financial advice.
+- **Skills shown:** scheduled agent design, stateful handoff logs, broker API integration, secret handling, project isolation, remote control from a phone
+- **Money angle:** none. He recommends paper trading first and says this is not financial advice.
+- **Duet-relevant:** yes. A persistent agent that acts for you (places trades) on a schedule, reports through a messaging app, and can be steered from a phone.
+- **Promo:** free school community, which hosts a resource doc for this build; no sponsor or affiliate stated

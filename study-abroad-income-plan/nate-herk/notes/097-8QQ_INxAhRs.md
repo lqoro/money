@@ -1,0 +1,17 @@
+## 97. I Turned Claude Into the Ultimate Second Brain
+- **Link:** https://www.youtube.com/watch?v=8QQ_INxAhRs | **Length:** 34 min | **AI-relevant:** yes
+- **Teaches:**
+  - His "four C" framework: context (a routing file that points to where things live), connections (live data through APIs or CLIs), capabilities (skills, agents, automations), and cadence (scheduled runs that have an owner).
+  - Default to one harness, Claude Code, and keep the system in plain folders and markdown so any coding agent can use it.
+  - Update a skill after every use, use sub-agents and phased sessions with a clear between phases to avoid context rot, and send parallel work to cheaper models.
+  - Permissions: "keys, not prompts." After an agent emailed a discount code to a large list, he recommends scoped API keys so an agent cannot reach what it should not.
+  - Verify output visually with a browser tool or a dynamic workflow before trusting it.
+- **Tools / prices / numbers:**
+  - Claude Fable: $10 per 1M input tokens and $50 per 1M output (Nate). Included in subscriptions until June 22, then usage credits.
+  - On a $200/month Max plan, he hit a 5-hour session limit in about an hour during a stress test (his report).
+  - Starts sessions at about 40,000 tokens of context (his report).
+  - Tools named: Claude Code, Codex, Obsidian, ClickUp, Slack, Stripe, QuickBooks, Google Workspace, Playwright, Modal.
+- **Skills shown:** context architecture, API and CLI integration, skill authoring, sub-agent orchestration, permission design, verification
+- **Money angle:** He suggests selling AI OS setups to businesses and teaching the framework to teams (his suggestion, no prices stated).
+- **Duet-relevant:** yes. A personal AI OS that reads your email, calendar and tools and runs on a schedule is close to an always-on personal agent, and he stresses the permission layer.
+- **Promo:** free school community with a build-your-own AI OS course and a free GitHub repo; he mentions a certification program in progress.

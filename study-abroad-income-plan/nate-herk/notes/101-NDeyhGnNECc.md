@@ -1,0 +1,14 @@
+## 101. AGI is Here. Anthropic Just Proved It.
+- **Link:** https://www.youtube.com/watch?v=NDeyhGnNECc | **Length:** 13 min | **AI-relevant:** yes
+- **Teaches:**
+  - Nate's practical AGI test: a general model is handed an open-ended problem with no clear answer and solves it on its own by researching, experimenting, and iterating.
+  - Anthropic's report (as Nate reads it) groups coding tasks by difficulty. Success on the hardest open-ended tier rose sharply over six months.
+  - Task length the AI can finish unassisted has been roughly doubling every four months, and the AI now sometimes picks better next research steps than human researchers.
+  - Anthropic describes three scenarios: progress plateaus, gains compound while humans set direction, or AI builds its own successor. Nate argues we are in the middle one.
+  - The main risk is misalignment compounding across successive models. Nate says verifiable slowdown agreements are hard to build.
+  - Practical takeaway: judgment, taste, and knowing which problem to give the AI are the valuable human skills.
+- **Tools / prices / numbers:** Nate's claims, citing Anthropic's report: over 80% of Anthropic's shipped code is written by Claude. Open-ended task success 76%, up from 26% six months earlier. Unassisted task length went from about 4 minutes (two years ago) to 12 hours (this year), with one model running 16 hours. Its pick beat the human choice in 64% of 129 decision points, up from 51%. Engineers ship about eight times as much code per day as in 2024. Nate suspects the newest figures come from Mythos.
+- **Skills shown:** report analysis, defining AGI, interpreting exponential trends, risk framing
+- **Money angle:** none
+- **Duet-relevant:** no
+- **Promo:** Nate's free school community (about 400,000 members, by his count)

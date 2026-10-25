@@ -1,0 +1,15 @@
+## 220. n8n JUST Leveled Up AI Agents With Guardrails: Here's How It Works
+- **Link:** https://www.youtube.com/watch?v=oWdJMJp2HgM | **Length:** 14 min | **AI-relevant:** yes
+- **Teaches:**
+  - n8n now has native Guardrails nodes (need version 1.119 or later, per him). Two actions: "Check Text for Violations" (AI-based, uses a model via OpenRouter) and "Sanitize Text" (no AI call).
+  - Check-text guardrails: keywords, jailbreak (threshold-based), NSFW, personal data (PII), secret keys, topical alignment, URLs (allow or block, scheme rules), plus a custom prompt or regex. Guardrails can be stacked in one node.
+  - Route rows through pass and fail branches. Failed rows can notify Slack, be logged, or stop the workflow with an error.
+  - Sanitize before the model: PII and secrets are replaced with placeholders before text reaches an LLM. Blocked URLs become "visit URL".
+  - Secret-key detection caught real API keys but not the word "password" in his test, so tune the prompt if you need both.
+- **Tools / prices / numbers:**
+  - None priced. Check-text guardrails use an LLM (he uses OpenRouter); sanitize does not.
+  - Jailbreak and NSFW scores shown in the 0 to 1 range, with per-guardrail thresholds and permissiveness settings.
+- **Skills shown:** n8n node configuration, conditional branching, regex, PII handling, workflow testing
+- **Money angle:** Implied: a safety and data-handling layer for client automations (redact PII before any LLM call, check outputs before they reach clients). No prices given.
+- **Duet-relevant:** no
+- **Promo:** Free school community (free template; post titled after the video). Plus community (paid; courses Agent Zero, 10 Hours to 10 Seconds, One Person AI Agency, Subs to Sales, projects; weekly live call).

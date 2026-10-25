@@ -1,0 +1,17 @@
+## 269. How to Trigger n8n AI Agents from ChatGPT (no code)
+- **Link:** https://www.youtube.com/watch?v=AGi3U79zMIM | **Length:** 9 min | **AI-relevant:** yes
+- **Teaches:**
+  - Put an n8n webhook in front of an agent or workflow, then let a ChatGPT custom GPT call it as an action.
+  - Use a helper GPT to write the OpenAPI 3.1.0 JSON schema that describes the webhook's fields (date, invoice number, totals, and so on), then paste it into the custom GPT's Actions panel.
+  - Set the webhook to POST and listen for a test event. Confirm the fields arrive in n8n before relying on them.
+  - Let ChatGPT's vision read a PDF invoice, so n8n needs no OCR step. The extracted fields are appended to a Google Sheet.
+  - Respond mode: "respond immediately" for fire-and-forget actions, or "respond to webhook" when the GPT must wait for the workflow's answer (his example looks up a contact in Airtable).
+  - Go live by swapping the test URL for the production URL, which drops the "test" segment in the path.
+- **Tools / prices / numbers:**
+  - Tools: ChatGPT custom GPTs (Actions), n8n webhook node, Google Sheets, Airtable (in the contact-lookup demo).
+  - Prices: none quoted.
+  - Numbers: his partnership claim that members can get up to $3 million in savings across tools such as Bolt, Airtable, Perplexity, and Azure cloud credits (Nate's claim).
+- **Skills shown:** webhook setup, OpenAPI schema authoring, custom GPT actions, invoice field extraction, Google Sheets append, test vs. production URL handling
+- **Money angle:** Sell a custom GPT front end that triggers back-office automations for a client, such as invoice intake, CRM updates, or contact lookup. Price points not stated.
+- **Duet-relevant:** yes, it concerns a chat-based assistant that acts for the user. The ChatGPT-to-n8n assistant sends emails and looks up contacts on the user's behalf.
+- **Promo:** His paid community (building with n8n, shared resources), and two courses: "Agent Zero" (foundations) and "10 Hours to 10 Seconds" (time-saving automations). He also mentions a partnership for member savings.

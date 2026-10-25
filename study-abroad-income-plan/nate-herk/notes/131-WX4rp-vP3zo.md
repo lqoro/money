@@ -1,0 +1,12 @@
+## 131. I Tested GPT 5.5 vs Opus 4.7: What You Need to Know
+- **Link:** https://www.youtube.com/watch?v=WX4rp-vP3zo | **Length:** 20 min | **AI-relevant:** yes
+- **Teaches:**
+  - A way to compare coding models: give both the same one-shot prompt in their own harness, then compare time, tokens, and cost from the session logs.
+  - Four quick experiments: a personal brand site, a solar system sim, a 3D space shooter, and a multi-species ecosystem sim.
+  - Key takeaway: judge models by use case and run your own test, since benchmarks shift with each release.
+  - Read token counts from local JSONL session logs, which lets you ask the agent for its own usage stats.
+- **Tools / prices / numbers:** GPT 5.5 priced at $5 input / $30 output per million tokens, up from $2.50 / $15 for GPT 5.4 (his figures). Opus 4.7 cheaper on output by about $5 (his figure). Context window: 400K for GPT 5.5 in Codex vs 1M for Opus 4.7 (his figures). Terminal Bench 2.0 scores: GPT 5.5 82.7, GPT 5.4 75.1, Opus 4.7 69.4 (his figures). Across four tests he reports total cost roughly $3 lower for GPT 5.5, with about 70K vs 250K output tokens. He notes the harnesses differed (Codex vs Claude Code).
+- **Skills shown:** model evaluation, cost analysis, one-shot prompting, log-based token accounting.
+- **Money angle:** Who pays: teams choosing a model for production agents and automations. Sell cost and quality comparisons, or a repeatable test harness per client use case. Price points: none offered.
+- **Duet-relevant:** no.
+- **Promo:** none (he mentions Codex and general tools only).

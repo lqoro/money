@@ -1,0 +1,17 @@
+## 140. Claude + HeyGen Just Changed Content Creation Forever
+- **Link:** https://www.youtube.com/watch?v=EbJu9T30nfI | **Length:** 20 min | **AI-relevant:** yes
+- **Teaches:**
+  - Pipeline: HeyGen makes the avatar, ElevenLabs makes the voice clone, Remotion adds motion graphics, and Claude Code orchestrates the steps.
+  - Make a HeyGen avatar from a short webcam clip or uploaded footage. Make a professional ElevenLabs voice clone from about 30 minutes of audio (he used about 2 hours).
+  - Claude Code pulls scripts from Google Drive, chunks them into 45-60 second parts at sentence breaks, sends them to HeyGen, then stitches and adds graphics.
+  - Quality limits: audio degrades past about a minute, and HeyGen Avatar 5 clips cap at 3 minutes. Avatar 5 is not available via API yet, so he drives the web UI with Playwright.
+  - Build the pipeline in two stages (HeyGen project and Remotion project), test with 100+ clips, then turn it into a skill.
+- **Tools / prices / numbers:**
+  - HeyGen creator plan about $30/month. ElevenLabs creator plan $22/month (about 100 minutes of audio). Claude Code $20-200/month.
+  - HeyGen API about $4 per 1-minute clip, so about $50 for a 10-minute video (his figures).
+  - Freelance editor at $35-75/hour, so a 10-minute video could cost up to about $300 (his figure).
+  - He estimates about $251/month total for about 10 hours saved per week.
+- **Skills shown:** AI avatars, voice cloning, API orchestration, Remotion, FFmpeg, Playwright automation, script chunking
+- **Money angle:** Sell AI avatar video production for businesses, especially top-of-funnel content and course videos. Start by creating an avatar and voice clone, then build the pipeline. He stresses that subject-matter expertise still matters.
+- **Duet-relevant:** no
+- **Promo:** free school community (downloadable HeyGen Studio project and Word doc); sample clips from a course lesson (Lesson 5.0)

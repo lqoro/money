@@ -1,0 +1,17 @@
+## 179. Master 95% of Claude Code Skills in 28 Minutes
+- **Link:** https://www.youtube.com/watch?v=zKBPwDpBfhs | **Length:** 27 min | **AI-relevant:** yes
+- **Teaches:**
+  - A skill is a folder with a SKILL.md file: YAML front matter (name, description) plus step-by-step instructions. Scripts and reference files can sit beside it or in other folders, as long as the SKILL.md points to them.
+  - Progressive loading: the agent first reads only name and description (around 100 tokens), loads the full SKILL.md when chosen, and loads extra files only when needed.
+  - A six-part build framework: name and trigger, one-sentence goal, step-by-step process, reference files, rules and guardrails, then a self-improvement loop.
+  - Feedback cycle: watch the first several runs, give feedback, let the agent fix the skill, and repeat (he says quality climbs after 10 to 30 runs).
+  - Fixes: wrong steps means edit the instructions; missing context means add references; a repeated mistake means add a rule; not triggering means sharpen the description; over-triggering means disable model invocation.
+  - Skills can live in the project's .claude/skills folder or globally in the home directory.
+- **Tools / prices / numbers:**
+  - Claude Code (VS Code extension), ClickUp (his task tool), a key.ai image integration for an infographic skill.
+  - Keep SKILL.md under about 500 lines, per the Claude Code docs as he cites them.
+  - Nate's claim: hardcoding ClickUp list IDs and using a sub-agent for lookups cut run time and token use.
+- **Skills shown:** skill authoring, YAML front matter, progressive context loading, sub-agents, API integration, prompt iteration.
+- **Money angle:** Skills can be shared, sold or downloaded on marketplaces, which he says could be a business, though he warns not to rely on it. He also notes teams can use a skill as an SOP automation. No prices given.
+- **Duet-relevant:** no
+- **Promo:** free school community "agent skills" classroom (skill builder and skills); paid community with 3,000+ members (his claim).

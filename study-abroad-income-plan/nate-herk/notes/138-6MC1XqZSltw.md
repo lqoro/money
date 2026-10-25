@@ -1,0 +1,17 @@
+## 138. I Turned Claude Into a 24/7 Trader
+- **Link:** https://www.youtube.com/watch?v=6MC1XqZSltw | **Length:** 33 min | **AI-relevant:** yes
+- **Teaches:**
+  - Build a scheduled Claude Code project with Routines: pre-market research, market open trades, midday review, close, and a Friday weekly review.
+  - Claude wakes up stateless each run. Memory lives in files (strategy, trade log, research log, weekly review). Each run reads them first and writes lessons back.
+  - Migrate an existing agent's memory into the project, then brainstorm the layout with plan mode.
+  - Add guardrails before real money: paper trading first, a cap per position (e.g. 5%), a daily loss cap, and limits on trade count.
+  - Routines run remotely from a GitHub repo, so push commits back to the branch. Store API keys as environment variables, not in .env files.
+- **Tools / prices / numbers:**
+  - Claude Code Routines, Opus 4.7, Alpaca paper-trading API ($100k paper account), Perplexity API for research, ClickUp for notifications, GitHub.
+  - Claude Pro ($20/month) or Max plan required for desktop app and Routines.
+  - Each routine gets about 200k tokens of working context.
+  - Nate's claims: first 30 days on $10,000 beat the S&P by about 8%. The paper account showed $9,859 in a test.
+- **Skills shown:** agent design, scheduling, memory architecture, API integration, GitHub workflow, risk guardrails
+- **Money angle:** none. He says it is an experiment and "not financial advice." Suggests a paper-trading start.
+- **Duet-relevant:** yes. A 24/7 scheduled agent that acts on a brokerage account and sends notifications, migrated from a messaging-app agent.
+- **Promo:** free school community (13-page setup PDF in the classroom, YouTube resources)

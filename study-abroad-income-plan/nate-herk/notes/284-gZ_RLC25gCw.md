@@ -1,0 +1,16 @@
+## 284. The Simplest Way to Automate Scraping Anything with No Code (Apify + n8n tutorial)
+- **Link:** https://www.youtube.com/watch?v=gZ_RLC25gCw | **Length:** 8 min | **AI-relevant:** yes
+- **Teaches:**
+  - Apify actors are prebuilt scrapers; you start one with a JSON input, then fetch its results from the dataset.
+  - Use the two-step pattern: POST to run the actor (returns a run ID), then GET the last run's dataset items.
+  - Avoid "run synchronously" for long jobs, since it returned nothing for a 50-lead job in his test; use a fixed wait (he used 22 s, since the longest run he saw was 19 s) or polling.
+  - Build the request by copying the API endpoint and JSON body from the Apify console, then pasting into an n8n HTTP Request node.
+  - Scale by changing the result count (e.g., 50 to 200) in the actor input.
+- **Tools / prices / numbers:**
+  - Apify: 4,500+ prebuilt actors (as stated); example actors are a TikTok scraper (25 results) and Google Maps extractor (about 50 NYC dentists/plumbers per run).
+  - n8n HTTP Request, Set node, pinned data.
+  - Apify code "30 Nate Herk" for 30% off (stated in the video); no list prices given.
+- **Skills shown:** API request building, Apify actor configuration, async job handling (waits, polling), lead-list generation.
+- **Money angle:** Sell lead lists or market research pulled from Google Maps, TikTok or LinkedIn to local businesses or agencies. Start with one niche and one actor, then add enrichment (email, outreach). No prices stated.
+- **Duet-relevant:** no
+- **Promo:** Apify sign-up link with code "30 Nate Herk" for 30% off; free school community (template, after swapping in your own API key).

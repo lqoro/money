@@ -1,0 +1,13 @@
+## 303. Research ANYTHING and Get a PDF Report (free n8n template)
+- **Link:** https://www.youtube.com/watch?v=TeFCb5-4e5U | **Length:** 29 min | **AI-relevant:** yes
+- **Teaches:**
+  - Form in, PDF out: a form takes a topic and an email. A planner agent splits it into five chapter topics. Each chapter runs Tavily searches, a writer agent drafts HTML, and the output is saved in a Google Sheet.
+  - Use Google Sheets as a scratchpad between steps, so a long report does not have to fit in one n8n run. Later steps pull the rows back to build the sources list and table of contents.
+  - Build the sources list as numbered items (1 to 25) so inline citations link to the right source. Number each chapter's sources with a code node.
+  - Build the PDF by joining the title, intro, table of contents, chapters, and sources into one HTML string, then send it to an HTML-to-PDF API. Attach the returned file to a Gmail node.
+  - Known limits Nate names: chapters run one after another, numbering is hardcoded to five sources per chapter, and changes must be copied across the duplicate branches.
+- **Tools / prices / numbers:** Tavily (free plan gives 1,000 credits per month; advanced search costs 2 credits; 5 results per chapter, 25 sources). OpenRouter with Claude 3.5 Sonnet, about $0.50 for the demo run by his balance check (under $1 per run overall). HTML-to-PDF API (50 free credits, per Nate). Demo: about 42 pages in about 6 minutes. His ChatGPT deep research comparison: about 15 minutes, 17 sources, 13 pages.
+- **Skills shown:** multi-agent research pipeline, structured output parsing, Google Sheets as a data store, HTML-to-PDF generation, Gmail attachments
+- **Money angle:** none stated. Nate's pitch is unlimited runs at low cost versus tool limits; no buyers or prices named.
+- **Duet-relevant:** no
+- **Promo:** free school community (template JSON and sheet). Paid community for optimization and deep dives, with five live calls per week and a classroom.

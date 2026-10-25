@@ -1,0 +1,16 @@
+## 153. Claude Code Just Gave Everyone Virtual Pets (April Fools?)
+- **Link:** https://www.youtube.com/watch?v=JoPmpwpRrBI | **Length:** 7 min | **AI-relevant:** yes
+- **Teaches:**
+  - Claude Code added a `/buddy` command (from version 2.1.89) that hatches a terminal companion pet.
+  - One buddy per account, seeded from your user ID, so starting a new session or re-running `/buddy` does not give a new one.
+  - Stats (debugging, patience, chaos, wisdom, snark) and a name come from your coding habits, per Nate.
+  - Controls: `/buddy pet` for hearts, `/buddy off` to remove it, and addressing the pet by name gets a short reply.
+  - Nate says the buddy has no functional effect on coding and does not count toward token usage.
+- **Tools / prices / numbers:**
+  - Rarity odds: common 60%, uncommon 25%, rare 10%, epic 4%, legendary 1%; shiny variant 1%
+  - Nate lists 18 species, and notes a possible extra species that may have been a joke
+  - Works in the terminal CLI, not the VS Code extension panel (Nate's observation)
+- **Skills shown:** Claude Code slash commands, terminal setup, plan mode, `/btw` for side questions
+- **Money angle:** none
+- **Duet-relevant:** no
+- **Promo:** none

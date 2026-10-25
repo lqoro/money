@@ -1,0 +1,17 @@
+## 6. This ONE Claude Skill Helps You Think Clearer Than 99% of People
+- **Link:** https://www.youtube.com/watch?v=nRXHWckVxoM | **Length:** 15 min | **AI-relevant:** yes
+- **Teaches:**
+  - A Claude Code skill ("roast room") that convenes a council of seven advisor personas (based on public figures) to debate a decision.
+  - Each persona is a sub-agent with a short persona file that links to a "brain" folder of markdown files (rules, frameworks, positions, stories, sources), scraped from public material.
+  - Three rounds: opening positions with scores, cross-debate facilitated by a chair (the main Claude Code session), then a final vote.
+  - Output is saved per session and exported as a PDF verdict; sub-agents chosen over agent teams for cost and voice fidelity.
+  - Prompting tips: give 2-3 options, real numbers, limits (deadlines, budgets), what success looks like, and which way you lean.
+- **Tools / prices / numbers:**
+  - Claude Code with sub-agents (not agent teams)
+  - Seven personas; three debate rounds
+  - One persona brain built from about 124 sources and over 1.3 million words (Nate's claim)
+  - The example verdict's dollar figures come from a demo question, not a tool price
+- **Skills shown:** Claude Code skill authoring, sub-agent design, persona/knowledge-base structuring, multi-agent debate prompting, decision framing
+- **Money angle:** none (decision-support for founders is implied, not priced)
+- **Duet-relevant:** no
+- **Promo:** free school community (AI skills classroom section, free repo link); free first-client SOP for AIS Plus members (described as free)

@@ -1,0 +1,18 @@
+## 78. GPT 5.6 Sol Made This Entire Video
+- **Link:** https://www.youtube.com/watch?v=J_jswzXhYJA | **Length:** 5 min | **AI-relevant:** yes
+- **Teaches:**
+  - One prompt to GPT 5.6 Sol in Codex on its top effort tier made a full video: script, cloned voice, avatar, and edit
+  - Keep each voice section under 60 seconds so the cloned voice stays consistent
+  - Map every visual to the exact phrase that triggers it, and keep the avatar visible
+  - Verification pass: separate agents inspect rendered frames, check text placement, and compare factual claims to the source
+  - Cost lesson: the top effort tier spawned many sub-agents, so keep effort at high for cheaper runs
+- **Tools / prices / numbers:**
+  - ElevenLabs for voice; an avatar service (transcribed as "Hen"; the exact name is unclear); Hyperframes for rendering
+  - Terminal Bench 2.1: 91.9% (Ultra) vs 85.6% for GPT 5.5 (OpenAI figures, as he quotes them)
+  - His 13-task test: about 97% of objective points, 7 wins, 5 ties, 1 loss
+  - This run: about 450M tokens across sub-agents (about 86M in the main agent); about $300 at list rates (his estimate from logs)
+  - Sol is about half Fable 5's API price, similar to Opus 4.8 (Nate's claim)
+- **Skills shown:** Codex orchestration, multi-agent delegation, AI voice cloning, avatar video, programmatic video editing, automated QA
+- **Money angle:** A video-production workflow (script, voice, avatar, edit) could be sold as a service. This is a demo, and he gives no pricing.
+- **Duet-relevant:** no
+- **Promo:** none (he points to his earlier Fable-made video and an upcoming comparison)

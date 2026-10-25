@@ -1,0 +1,15 @@
+## 349. AI Agent Prompting Masterclass: Beginner to Advanced
+- **Link:** https://www.youtube.com/watch?v=bwrAsnU2P88 | **Length:** 41 min | **AI-relevant:** yes
+- **Teaches:**
+  - Agent prompts run once with no back-and-forth, so they must be precise up front. The five core parts are background, context, instructions, tools, and examples.
+  - Structured frameworks: a long format (role, objective, context, instructions, examples, notes), a short format for simple tasks, and an agent format that adds an SOP and tool descriptions.
+  - Techniques: role prompting, few-shot examples, chain-of-thought for multi-step math, markdown structure, and urgency wording used sparingly.
+  - Cut hallucination with specific questions, explicit constraints, requests for widely accepted knowledge, and output checks.
+  - Iterate: version prompts, test changes, record what worked, and add feedback rules after failures. Prompt compression reduces token cost.
+- **Tools / prices / numbers:**
+  - PromptLayer (prompt version tracking and A/B tests), OpenAI tokenizer (token and cost counts).
+  - Nate points to Mark Cf's video for technical prompt compression. No prices are quoted.
+- **Skills shown:** agent prompt design, tool descriptions, evaluation and iteration, token budgeting.
+- **Money angle:** none stated.
+- **Duet-relevant:** no. This is general agent prompting. It does not cover an always-on personal bot.
+- **Promo:** free school community (questions by DM) and a paid community with weekly live calls, monthly competitions with prizes, and a course classroom.

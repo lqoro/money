@@ -1,0 +1,13 @@
+## 130. Claude Code + Playwright Automates Literally Anything
+- **Link:** https://www.youtube.com/watch?v=J-6pnl5DQg8 | **Length:** 19 min | **AI-relevant:** yes
+- **Teaches:**
+  - Connect a browser CLI (Playwright) to Claude Code instead of an MCP server, to save context tokens on tool definitions.
+  - Build a QA loop: the agent builds a multi-page form, runs a headed browser test, reads failures, fixes the site, and reruns until it passes.
+  - Scrape with a script: the first attempt fails, the agent learns and adjusts (he switched from Google to DuckDuckGo to get results).
+  - Stay logged in with a persistent browser profile, so automations can act on sites like a community feed; he then wraps the script in a skill.
+  - Run recurring automations as scheduled tasks in the desktop app, which uses an agent that can adapt when the UI changes.
+- **Tools / prices / numbers:** Playwright CLI; Chrome DevTools MCP called out as token-heavy. Other browser CLIs mentioned (Vercel agent-browser, Open CLI) without a verdict. No prices given. Dentist search returned phone numbers for five sites (his test).
+- **Skills shown:** browser automation scripting, QA automation, plan mode, persistent auth profiles, skills, scheduled tasks, scraping with retries.
+- **Money angle:** Browser automation for lead generation (e.g., collecting business phone numbers) and for work that has no API. He does not state a price or a client. Start by building one repeatable script inside a skill, then run it on a schedule.
+- **Duet-relevant:** yes. He runs a community bot ("AIS agent") that posts news, replies to notifications, and votes in polls on its own, which is close to an always-on personal agent acting for its owner.
+- **Promo:** his free school community (AI Automation Society); points to his scheduled-tasks video.

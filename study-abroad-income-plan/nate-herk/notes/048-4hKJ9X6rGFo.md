@@ -1,0 +1,16 @@
+## 48. Build & Sell Grok Bots (2 Hour Course)
+- **Link:** https://www.youtube.com/watch?v=4hKJ9X6rGFo | **Length:** 105 min | **AI-relevant:** yes
+- **Teaches:**
+  - Set up a fresh account, then build his "four C's" of an AI operating system: context, connections, capabilities (skills), cadence (routines).
+  - Run a small team: a chief-of-staff bot delegates to specialist bots (email triage, task logging, marketing, design). Each bot's description is what other bots use to route work.
+  - Improve skills by feedback ("bike method"): review the output, correct it, and save the fix into the skill. Have agents check their own work before handing it over.
+  - Start with drafts, not sends. Add routines only after testing, and log agent work to ClickUp.
+- **Tools / prices / numbers:**
+  - Plan he uses is about $30/month, which he says was $200/month when the product launched.
+  - Usage cap resets every 7 days; he was at 6% and later 13% during the demo.
+  - Connectors: Google Drive, Gmail, ClickUp, Fireflies, Slack, Clay, and the X plugin (about half a cent per post). Composio adds 1,000+ apps.
+  - His claims: 440,000+ community members; just under $5M topline revenue in the past 12 months.
+- **Skills shown:** agent design, prompt and skill writing, email triage, ClickUp operations, verification loops
+- **Money angle:** Sell Grok Bot setups up an "AI service ladder": free work, then hourly training, then paid audits ($1K to $10K), then retainers. He suggests a package of about $5,000 to set up a team, or a short paid trial at about $100/hour. Be your own proof, and target with the person, pain and promise. He cites $5K to $20K/month retainers from his past agency (his claim).
+- **Duet-relevant:** yes. Always-on bots that sync to your phone, act through your accounts and run on triggers match this closely.
+- **Promo:** his free school community (classroom resources, 7-day challenge, AIOS build course, certification programs); links to a Clay video and a playlist; asks viewers to engage with an X post so Elon Musk joins his podcast.

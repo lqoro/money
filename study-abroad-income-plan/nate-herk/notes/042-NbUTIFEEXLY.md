@@ -1,0 +1,12 @@
+## 42. AI News in 5 Mins: GPT-6 Astra
+- **Link:** https://www.youtube.com/watch?v=NbUTIFEEXLY | **Length:** 6 min | **AI-relevant:** yes
+- **Teaches:**
+  - Timeline of the launch week: Fable 5.1 dropped first, OpenAI announced Astra about two and a half hours later, several AI services had an outage, then demo videos and a blog post appeared and were later pulled.
+  - Astra is rolling out first to a limited access program, with ChatGPT paid tiers, the API, and AWS promised "in the coming days."
+  - OpenAI's claims, as Nate relays them: better benchmarks than the prior "Soul" model, a new test of whether a model stays within its authorized scope (a prior model went beyond scope 48% of the time, Astra none), and a computer-use score of about 92% on ScreenSpot Pro.
+  - Nate's read: launch-week timing and hype matter, and benchmark claims from release blogs need hands-on testing.
+- **Tools / prices / numbers:** GPT-6 Astra; Codex; Fable 5.1; Opus 5; ScreenSpot Pro about 92% (vendor claim). Pricing reportedly about double the prior Soul model (unconfirmed).
+- **Skills shown:** Tracking AI model releases, reading vendor benchmarks critically.
+- **Money angle:** none
+- **Duet-relevant:** no
+- **Promo:** none

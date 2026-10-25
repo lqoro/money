@@ -1,0 +1,15 @@
+## 180. Claude Code Just Added What Everyone Wanted (Remote Control)
+- **Link:** https://www.youtube.com/watch?v=EqhKw0Oro_k | **Length:** 8 min | **AI-relevant:** yes
+- **Teaches:**
+  - Start with `claude remote-control` in the terminal (or `/remote-control` in an existing session) to get a URL and QR code, then open it on a phone or browser to continue the local session.
+  - The session runs on your machine, so files stay local; only model calls go to Anthropic. Work done on the phone shows up in the desktop conversation history.
+  - Setup: run Claude, log in, accept workspace trust, then start the remote session.
+  - Limits he observed: the computer must stay on and the terminal open, the internet connection must hold (he saw disconnects after about 10 minutes offline), and you cannot start a brand-new remote session from the phone.
+  - Security: treat the session URL and QR code like a password. He notes there was no two-factor login or password on the link.
+- **Tools / prices / numbers:**
+  - Pro plan (around $20 a month) or Max ($100 or $200 a month) required; API keys and team or enterprise plans not supported at the time, per Nate.
+  - Figures from an article Nate cites: Claude Code at a $2.5 billion annualized run rate, and roughly 41% of code now AI-written.
+- **Skills shown:** Claude Code CLI, remote session management, basic session security.
+- **Money angle:** none
+- **Duet-relevant:** yes. A persistent local agent you can message from your phone while away, as long as the computer stays on and the terminal stays open.
+- **Promo:** paid "plus" group with 3,000+ members (his claim).

@@ -1,0 +1,17 @@
+## 137. Claude Design Just Became Unstoppable
+- **Link:** https://www.youtube.com/watch?v=gAoZ95kqG7w | **Length:** 15 min | **AI-relevant:** yes
+- **Teaches:**
+  - Claude Design (Anthropic Labs research preview) makes prototypes, slide decks and one-pagers from chat.
+  - Set up a design system once: company blurb, website repo, brand guidelines, logo and tone. New projects then inherit it. Review generated colors, type and buttons.
+  - Turn a PDF into a branded slide deck. Comment on slides, draw on them, edit directly, or present full screen.
+  - Build a landing page by answering a question set, then tweak settings such as dates, accent color, countdown and sticky CTA.
+  - Export as zip, PDF, PowerPoint, Canva or HTML, or hand off to Claude Code, then push to GitHub and deploy with Vercel.
+- **Tools / prices / numbers:**
+  - Powered by Opus 4.7. Nate cites visual reasoning scores of 82% vs 69% (Opus 4.6) and 91% vs 84.7%.
+  - Requires a paid Claude plan (Pro, Max, Team or Enterprise).
+  - Design system generation takes about 15 minutes. He saw an internal error that auto-retried.
+  - Missing brand fonts and a laggy UI, both noted.
+- **Skills shown:** design systems, prompt writing, slide and landing-page design, handoff to Claude Code, GitHub and Vercel deploy
+- **Money angle:** Branded decks and landing pages for clients. He says this could replace his Gamma or Canva subscriptions. No prices stated.
+- **Duet-relevant:** no
+- **Promo:** his AI Automation Society and a "Your First AI Agent" workshop (used as a demo landing page, May 4-6)

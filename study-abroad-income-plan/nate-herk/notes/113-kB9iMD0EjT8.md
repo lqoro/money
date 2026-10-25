@@ -1,0 +1,17 @@
+## 113. How to Use Your Claude Code Projects in Codex in 5 Mins
+- **Link:** https://www.youtube.com/watch?v=kB9iMD0EjT8 | **Length:** 9 min | **AI-relevant:** yes
+- **Teaches:**
+  - Keep shared project knowledge (docs, references, scripts) in neutral folders that any coding agent can read.
+  - Claude Code reads CLAUDE.md and .claude/; Codex reads agents.md, .codex/ and .agents/. Create the Codex equivalents rather than duplicating content.
+  - Skill files (markdown with YAML front matter) work in both tools; agent definitions differ (markdown for Claude, TOML for Codex).
+  - Convert a project by asking the agent in plain language to build agents.md, the Codex config and skill folders, and to check current docs for both tools.
+  - Keep both files in sync after major changes; Codex sub-agents must be invoked explicitly.
+  - Use a session handoff summary to move work between tools when one gets stuck.
+- **Tools / prices / numbers:**
+  - Claude Code: CLAUDE.md, .claude/, settings.local.json.
+  - Codex: agents.md, .codex/ (config), .agents/ (skills).
+  - Nate pays for two subscriptions and says that is worth it if affordable.
+- **Skills shown:** multi-agent project setup, config conversion, session handoff, terminal workflow
+- **Money angle:** none stated; the pitch is tool-agnostic resilience so an outage in one tool does not stop work.
+- **Duet-relevant:** no
+- **Promo:** free school community (the HTML cheat sheet and session handoff skill are offered there); mentions an upcoming Claude Code vs Codex comparison video.

@@ -1,0 +1,13 @@
+## 207. n8n's New Chat Hub Release: What You Need to Know
+- **Link:** https://www.youtube.com/watch?v=jx-yvSRLKrA | **Length:** 10 min | **AI-relevant:** yes
+- **Teaches:**
+  - Chat Hub is a ChatGPT-style interface inside n8n. It appears as a chat bubble in the bottom left (may need an n8n update).
+  - Chat with several models in one thread. Switching models keeps the conversation context.
+  - Add tools to a chat: a web search/URL reader tool (Jina AI) needs an API key and enabling each tool.
+  - Custom agents: build a workflow that starts with a Chat Trigger, make it available in chat, and publish it before it appears. Executions log each chat run.
+  - He wants n8n's instance-level MCP available here so chats can run existing workflows.
+- **Tools / prices / numbers:** Claude Haiku 4.5, GPT-5 Mini, Gemini 2.5 Pro (via OpenRouter), Jina AI (free key; Nate says 1M tokens to start). No prices.
+- **Skills shown:** chat triggers, agent system prompts, tool setup, publishing workflows
+- **Money angle:** none
+- **Duet-relevant:** partly: a chat front end that calls your own n8n agents on request. It is not always-on.
+- **Promo:** Plus community (members building with n8n), weekly live calls, link in description.

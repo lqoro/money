@@ -1,0 +1,16 @@
+## 358. I Built an AI Agent that Automated my Inbox with n8n (No Code)
+- **Link:** https://www.youtube.com/watch?v=JUx2ZfNfD64 | **Length:** 20 min | **AI-relevant:** yes
+- **Teaches:**
+  - Gmail trigger, then a text classifier (LLM) sorts each email into one of four labels (e.g., high priority, customer support, promotional, finance/billing).
+  - Each label routes to its own branch: high priority creates a Gmail draft (not sent) plus a Telegram alert; customer support drafts and sends a reply in the thread; promotional gets a summary and recommendation sent to Telegram; finance gets a summary sent to a fixed finance address.
+  - Use "output as JSON" in the LLM step so separate fields (subject, message, from) can be dragged into later nodes.
+  - Pull the sender's name from the email headers, not the signature, for notifications; an LLM can extract the signer's name if needed.
+  - Activate the workflow, since the Gmail trigger only polls while it is on.
+- **Tools / prices / numbers:**
+  - n8n, Gmail, Telegram bot (chat ID from a Telegram trigger), OpenAI GPT-4o
+  - Built in about 25 to 30 minutes, no code (his claim)
+  - No prices stated
+- **Skills shown:** email classification, prompt design for role-specific assistants, branching workflows, JSON output parsing, Telegram notifications
+- **Money angle:** Inbox triage and auto-reply setup for busy operators, executives, or small businesses. Sell as a done-for-you build with routing rules per business. No price points stated.
+- **Duet-relevant:** yes - an always-on inbox agent that drafts and sends replies for the user and pings their phone on Telegram.
+- **Promo:** free school community (link in description), announced as open and 100% free

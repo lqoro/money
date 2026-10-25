@@ -1,0 +1,13 @@
+## 37. I Tested GPT-6 Astra vs Fable 5.1 on 15 Real Use Cases
+- **Link:** https://www.youtube.com/watch?v=WfJPBVXPt8k | **Length:** 39 min | **AI-relevant:** yes
+- **Teaches:**
+  - A head-to-head of two models on 15 business tasks, scored on output quality, runtime and cost. Each task got the same prompt in both tools.
+  - Task types: a consulting-style deck, sales copy, a tax package, a subscription audit from two email accounts, meeting analysis, an event recap video, a sizzle reel, two small games, an HTML explainer, a browser-use task in Canva, uploading course drafts through a browser, a website clone, a YouTube strategy review, a mini evals app, and a knowledge-graph view.
+  - Astra asked more clarifying questions up front and often produced more tailored output. Fable often moved faster and sometimes gave the better first draft.
+  - Advice: test models on your own use cases instead of trusting general claims, because the winner changes by task.
+  - He says GPT 5.6 Soul is enough for much knowledge work.
+- **Tools / prices / numbers:** Totals (Nate's figures): Fable 5.1 took 9h 35m and cost $513.36. Astra took 11h 19m and cost $326.98. Astra won 10 of 15 tasks, Fable 5. Examples: the deck took 23 min and $12 (Astra) vs 37 min and $26 (Fable). The subscription audit cost about $12.50 (Astra) vs about $50 (Fable). The tax task took 40 min and $22 (Astra) vs 22 min and $13 (Fable).
+- **Skills shown:** model evaluation, prompt comparison, cost and time tracking, browser automation, evals
+- **Money angle:** none stated. His per-task cost and time figures could help price AI-made deliverables such as decks, reports and copy, but he does not say what to sell.
+- **Duet-relevant:** no
+- **Promo:** none. He mentions only his own subscriptions.

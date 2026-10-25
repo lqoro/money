@@ -1,0 +1,13 @@
+## 333. ElevenLabs Voice Agents Are So Easy to Build (No Code!)
+- **Link:** https://www.youtube.com/watch?v=Je4EAscnKK0 | **Length:** 16 min | **AI-relevant:** yes
+- **Teaches:**
+  - An ElevenLabs voice agent gathers the recipient and the email content in conversation, then POSTs them to an n8n webhook.
+  - n8n side: Webhook trigger, AI agent (GPT-4o), Gmail send tool, then Respond to Webhook so the voice agent hears back.
+  - The agent writes the subject and body itself. The voice agent's tool description tells it when to call and which fields to collect.
+  - Test vs production: the webhook must be active, and the production URL is used in ElevenLabs. Nate's demo shows emails failing when the workflow was not active.
+  - The same pattern works for any n8n agent: change the input and output, keep the agent.
+- **Tools / prices / numbers:** ElevenLabs conversational agents; Gemini 1.5 Flash as the voice agent's LLM (chosen for speed, temperature set higher for a playful voice); n8n; Gmail; Google Sheets. No prices stated.
+- **Skills shown:** voice agent configuration, webhook integration, tool and parameter design, n8n agent workflows
+- **Money angle:** none stated.
+- **Duet-relevant:** yes - a voice assistant ("Archer") that sends emails for the user through conversation.
+- **Promo:** free school community (workflow download); paid community with classroom and five live calls per week.

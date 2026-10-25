@@ -1,0 +1,18 @@
+## 251. I Built 3 Lead Gen AI Agents Using ONLY My Words (beginner tutorial)
+- **Link:** https://www.youtube.com/watch?v=k_5NcmxWlVg | **Length:** 16 min | **AI-relevant:** yes
+- **Teaches:**
+  - Describe the agent in plain English to Lindy's agent builder, answer its follow-up questions, then open the generated flow and read every node before trusting it.
+  - Lead-gen flow: search People Data Labs for leads (10 per run) and have an agent add each one to a Google Sheet. The first run stopped after five rows; a prompt fix made it process all ten.
+  - Enrichment flow: triggered by new sheet rows, searches the web for each lead's company pain points and writes them back.
+  - Outreach flow: drafts a personalized email as a Gmail draft (never sent) and updates a status column. Add a filter so rows already marked "draft created" are skipped.
+  - Build small flows separately, test each, then chain them (lead, then enrich, then draft, then follow-up).
+- **Tools / prices / numbers:**
+  - Lindy: free trial; 30% off through his free school community.
+  - People Data Labs (lead search, 10 leads, limit set manually).
+  - Google Sheets (lead database) and Gmail (drafts).
+  - (Nate's claim) All three agents took about 30 minutes to build.
+  - No prices given for any tool.
+- **Skills shown:** Natural-language agent building, reviewing generated workflows, debugging with the builder, Google Sheets integration, lead enrichment, outreach drafting, duplicate prevention with status fields.
+- **Money angle:** Sell lead generation plus personalized outreach drafts to sales teams or agencies, priced per batch of leads or per outcome. None stated by Nate.
+- **Duet-relevant:** no
+- **Promo:** Lindy, 30% off with the discount code in his free school community, plus a free trial.

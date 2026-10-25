@@ -1,0 +1,13 @@
+## 39. GPT-6 Astra FINALLY Kills AI Website Slop
+- **Link:** https://www.youtube.com/watch?v=QhmhUgccaS0 | **Length:** 9 min | **AI-relevant:** yes
+- **Teaches:**
+  - Nate reports that GPT-6 Astra produced clean, on-brand one-shot websites with subtle 3D and parallax motion, and he prefers it to Fable 5.1 for design so far.
+  - Generic AI design comes from a lack of references, so feed the model inspiration: sites from godly.design, components from 21st.dev, and category-sorted award sites from Awwwards.
+  - Define the business first using his "pain, person, promise" framing, so the design fits the audience (a 3D world suits a teen headphone shop, not an older customer's pharmacy site).
+  - Give the agent brand guidelines, copy, and a design skill, then iterate with short feedback rounds ("fix this, change that").
+  - Example: an edit from 152 GB of event footage into a one-minute recap, which took about 35 minutes (Nate's figure).
+- **Tools / prices / numbers:** GPT-6 Astra; Nate's own "Scroll Craft" skill; Hyperframes for motion graphics; godly.design, 21st.dev, Awwwards as references. No prices stated. Sizzle reel took about 35 minutes (Nate's claim).
+- **Skills shown:** AI web design, prompt and brief writing, design critique, motion graphics, AI video editing.
+- **Money angle:** Businesses that want premium-feeling sites or event recap videos; sell a site per niche using the pain/person/promise brief. No price points stated. Start by picking one niche, collecting three or four reference sites, then one-shotting and iterating.
+- **Duet-relevant:** no
+- **Promo:** Free school community (link in description) where his Scroll Craft skill is offered.

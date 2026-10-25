@@ -1,0 +1,16 @@
+## 47. Every Grok Bot Concept Explained for Normal People
+- **Link:** https://www.youtube.com/watch?v=NyfYxpXiw_0 | **Length:** 21 min | **AI-relevant:** yes
+- **Teaches:**
+  - Walks through 25 Grok Bot concepts in five groups: what a bot is, what it can do, how bots work together, and how to control and monitor them.
+  - Key insight: each bot is one specific role, and its name and description decide which bot gets delegated work, so write descriptions carefully and build an org-chart style hierarchy.
+  - Memory has two layers: a global store all bots see and a per-bot store. Skills are editable recipes that improve with feedback; a "teach a task" recording can turn a demonstration into a skill.
+  - Routines (time- or event-triggered, including webhooks from forms) let bots act without prompting. Set up approvals, notifications and agent logging so you keep visibility.
+- **Tools / prices / numbers:**
+  - Grok Bot (his bots run in its shared cloud computer, with browser, file explorer and terminal).
+  - Connectors via plugins such as Slack, Gmail, Google Docs and ClickUp; multiple accounts per tool are possible.
+  - Subscription examples he gives: about $20, $100 or $200 a month, with a weekly usage cap that resets every 7 days and optional on-demand spend.
+  - Group chats and multi-agent delegation use up weekly usage faster than talking to one bot.
+- **Skills shown:** agent design, prompt and skill writing, workflow automation, webhooks, multi-agent org design, agent logging
+- **Money angle:** none stated; the video is a feature walkthrough
+- **Duet-relevant:** yes. Grok Bot is an always-on personal agent that uses your accounts, reads your inbox and acts on triggers, which matches the duet concept closely.
+- **Promo:** a free 2-hour Grok Bot course he just released; links to his own shared bot templates

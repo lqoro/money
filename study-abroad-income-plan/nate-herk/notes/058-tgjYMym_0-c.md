@@ -1,0 +1,15 @@
+## 58. Sell These 5 Most In Demand AI Automations in 2026
+- **Link:** https://www.youtube.com/watch?v=tgjYMym_0-c | **Length:** 10 min | **AI-relevant:** yes
+- **Teaches:**
+  - Five automation patterns with recent buyer demand: lead qualification and follow-up, customer support, voice receptionist and after-hours booking, document-to-system processing, and employee onboarding.
+  - Build one focused portfolio project per buyer, process and measurable outcome, using dummy data when you lack client data.
+  - Keep a human in the loop: route low-confidence or risky cases to a person, and start with drafts (e.g., draft bills) before any money moves.
+  - Before building, interview the people doing the work and walk through at least three real recent cases, not only the official process.
+  - Track one or two metrics per system, such as response time, recovered bookings, field accuracy or reopen rate.
+- **Tools / prices / numbers:**
+  - HyperAgent (sponsor): per-client agents with their own prompt, model and integrations, shareable with clients, cloud-scheduled, Slack and webhook triggers.
+  - Figures he cites from others (not verified): a Salesforce case with about 2,800 inbound leads a week; a Microsoft case with 40 hours saved a week; a Fiverr search trend of 49% higher for AI voice agents; a Make case where an HR workflow dropped from 30 days to 2 hours.
+- **Skills shown:** workflow design, CRM routing, lead scoring rules, support-agent escalation design, voice AI, document extraction and validation, approval flows, client discovery.
+- **Money angle:** Sell these five automations to businesses, either as an agency or in-house. For a first project he would build document processing (easy to test), lead routing if you know CRMs, or missed-call recovery if you know local service businesses. He gives no prices. Pitch with one outcome metric per system.
+- **Duet-relevant:** no (a multi-client agent builder, not a personal always-on assistant)
+- **Promo:** HyperAgent sponsorship (link in description; any paid plan gets $100 bonus credits, per his mention). Free school community with a free resource guide.

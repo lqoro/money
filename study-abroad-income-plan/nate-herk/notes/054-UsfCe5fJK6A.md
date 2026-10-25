@@ -1,0 +1,19 @@
+## 54. 100 Hours Testing Deepseek Harness vs. Claude Code. What You Need to Know.
+- **Link:** https://www.youtube.com/watch?v=UsfCe5fJK6A | **Length:** 18 min | **AI-relevant:** yes
+- **Teaches:**
+  - DeepSeek's open-source agent harness is a free, developer-preview alternative to Claude Code and Codex. Models are added via a provider key, such as OpenRouter.
+  - Harness and model are separate: the same model can behave differently in different harnesses.
+  - Modes: standard (full coding agent), PTC (parallel work), minimal (fewer tools, faster and cheaper), and creator (build plugins and presets).
+  - Because it is open source, every capability is a plugin, so you can change the agent's loop, tools, and UI. Vet third-party plugins before installing.
+  - Vague-prompt results: Claude Code gave more rigorous, more conservative research, while the DeepSeek harness was faster and more practical.
+  - Skills written for Claude Code are interpreted differently in other harnesses, so a harness-specific skill performs better.
+- **Tools / prices / numbers:**
+  - DeepSeek V4 Flash and V4 Pro models (cheap; text only, no image viewing).
+  - Search task: about 1 minute in DeepSeek versus 5+ minutes in Claude Code.
+  - Excel build: about 3 minutes versus about 17 minutes.
+  - Research report: about 4,400 words and 14+ load-bearing sources versus about 5,000 words and 26 sources.
+  - Cost is free for the harness; inference is billed by token.
+- **Skills shown:** agent harness comparison, model routing, prompt benchmarking, research synthesis, spreadsheet generation
+- **Money angle:** Cheap inference for routine knowledge work; no direct offer or price points stated.
+- **Duet-relevant:** no
+- **Promo:** none

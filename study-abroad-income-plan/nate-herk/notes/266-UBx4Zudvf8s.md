@@ -1,0 +1,16 @@
+## 266. Build Your First Research AI Agent in 12 mins (No Code)
+- **Link:** https://www.youtube.com/watch?v=UBx4Zudvf8s | **Length:** 12 min | **AI-relevant:** yes
+- **Teaches:**
+  - Architecture: a chat trigger feeds an AI Agent node. The agent's "brain" is a chat model, and its "tool" is a live web-search service.
+  - Connect the chat model through OpenRouter using an API key, and check that the connection tests green. Confirm the model answers before adding tools.
+  - Add Perplexity as a tool and pick a search model by depth (basic search, deep research, or reasoning). Let the model fill in the query parameter automatically.
+  - Add a system prompt to make the agent behave as a research expert. He suggests asking for citations of every fact.
+  - Batch version: replace the chat trigger with a Google Sheet of competitors (driven by a schedule trigger in practice), run the agent on each row, and write the findings back to a column.
+- **Tools / prices / numbers:**
+  - Tools: n8n, OpenRouter (model access), Perplexity API (search tool), Google Sheets, GPT-4.1 Mini as the example model.
+  - Prices: none quoted. He says both services need prepaid credits to work.
+  - Numbers: the sleep-research example used about 20 sources (his run).
+- **Skills shown:** n8n AI Agent node, API credential setup, prompt/system message design, Google Sheets read and write, model and search-tier selection
+- **Money angle:** Competitor-research or lead-research agent that runs on a schedule and writes reports into a sheet, sold to sales or marketing teams. No price points stated.
+- **Duet-relevant:** no
+- **Promo:** His community for AI automation with n8n, and two courses: "Agent Zero" (foundations) and "10 Hours to 10 Seconds" (identifying and building time-saving automations). Live calls and recordings are included.

@@ -1,0 +1,13 @@
+## 214. Master n8n Fast With These 17 Essential Nodes (real examples)
+- **Link:** https://www.youtube.com/watch?v=D9MIGseFB3g | **Length:** 24 min | **AI-relevant:** yes
+- **Teaches:**
+  - Nate reuses the same 17 core nodes across 200+ automations. Start with them, then branch out.
+  - Triggers: schedule, event (Gmail, Slack), webhook and respond-to-webhook.
+  - Data shaping: Split Out and Aggregate (one item per list entry, then back), Edit Fields (Set) as a source of truth, If and Switch for routing, Code node for predictable data (write it with an AI assistant and test).
+  - Control flow: Execute Workflow for sub-workflows, Loop Over Items for batches, Wait, and polling with an If node.
+  - Integrations: HTTP Request for any API, AI Agent with tools and a structured output parser, and Google Sheets as cheap external storage and a control panel.
+- **Tools / prices / numbers:** n8n, Google Sheets, OpenRouter, Sora 2, Hostinger VPS (KVM2 about $6/month on a 24-month plan, plus $6/month daily backups, as stated). A polling example needed 16 checks.
+- **Skills shown:** n8n node patterns, API docs reading, code nodes, structured output, batching
+- **Money angle:** none stated
+- **Duet-relevant:** no
+- **Promo:** Hostinger code "Nate Herk" for 10% off annual self-hosting (larger for Plus members); free 39-page doc in free school community; Plus community (he says 2,800 members, four courses, weekly live call).

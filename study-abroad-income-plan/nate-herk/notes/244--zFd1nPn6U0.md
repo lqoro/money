@@ -1,0 +1,13 @@
+## 244. Beginner's Guide to Workflow Evaluation in n8n (Stop Guessing!)
+- **Link:** https://www.youtube.com/watch?v=-zFd1nPn6U0 | **Length:** 17 min | **AI-relevant:** yes
+- **Teaches:**
+  - Treat workflow changes as hypotheses. Change one variable per run (prompt, model, temperature, tools, context prep), keep the rest fixed, and log what changed and what happened.
+  - Build a ground-truth test set: accurate, consistent, covering edge cases. Start with 50 to 100 examples (he used 6 or 10 in the demo), and aim for roughly 250 to 750 before production, and more than 1,000 for high-risk systems (his rough guide).
+  - n8n evaluation flow: an evaluation trigger loads the dataset, a check-if-evaluating node routes the test run, set-outputs writes answers back to a sheet, and set-metrics scores them.
+  - Use exact-match metrics for categories (the test caught a wording mismatch, "billing issue" vs "billing", and a missing category list in the prompt, fixed by adding the list to the system prompt). Use an AI judge (1 to 5 score) for free-text answers, and keep the judge model fixed across runs.
+  - Compare models on accuracy, speed and cost. In his test Gemini 2.5 Flash scored 4.3 vs 3.5 for a GPT mini model, and ran about half the time.
+- **Tools / prices / numbers:** n8n evaluation nodes and Evaluations tab; GPT-4.1 mini; GPT-5 mini (named in the video); Gemini 2.5 Flash; Google Sheets for the dataset. His own accuracy scores come from six or so test cases, so they are illustrative only. He said the AI-judge metric node was broken at recording time and he used a workaround. No prices.
+- **Skills shown:** Evaluation design, dataset curation, prompt debugging, model comparison, LLM-as-judge setup, experiment logging.
+- **Money angle:** Offer eval and model-selection audits for clients' AI workflows (score accuracy, cost and speed, then recommend a model). Build the labeled dataset with the client's subject-matter expert. No price points stated.
+- **Duet-relevant:** no
+- **Promo:** Free school community (slides, both workflows and the datasets under YouTube resources); paid "Plus" community with a classroom of two courses (Agent Zero and 10 Hours to 10 Seconds).

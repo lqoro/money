@@ -1,0 +1,15 @@
+## 348. How to Build an AI Slack Assistant in 5 Minutes (Chatbase)
+- **Link:** https://www.youtube.com/watch?v=krHTtaud0CU | **Length:** 4 min | **AI-relevant:** yes
+- **Teaches:**
+  - Create a chatbot in Chatbase and add a knowledge source. Pasting a website URL and choosing "fetch links" scrapes the site. Files, text, Q&A pairs, and Notion are also supported.
+  - Set the system prompt so the bot acts as an internal assistant for employees, and adjust the temperature (lower is more reserved, higher more creative).
+  - Test answers in the Playground and rate them good or bad to train the bot.
+  - Connect the bot to Slack through Integrations, invite it to a channel, and @mention it to ask questions.
+- **Tools / prices / numbers:**
+  - Chatbase, Slack.
+  - Demo source: NVIDIA's Wikipedia page. Nate says the source limit is about 11 million characters (his claim).
+  - Chatbase pricing is not mentioned.
+- **Skills shown:** no-code chatbot setup, knowledge-base ingestion, system prompt and temperature tuning, Slack app integration.
+- **Money angle:** implied, not stated. Businesses could pay for a setup like this as an internal knowledge bot. No price is given.
+- **Duet-relevant:** no. The bot answers questions from a knowledge base and does not act for the user.
+- **Promo:** a Chatbase sign-up link in the description. Nate does not say whether it is an affiliate link.

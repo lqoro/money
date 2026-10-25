@@ -1,0 +1,13 @@
+## 316. How to Set up Supabase and Postgres for RAG Agent with Memory in n8n (2025)
+- **Link:** https://www.youtube.com/watch?v=JjBofKJnYIU | **Length:** 10 min | **AI-relevant:** yes
+- **Teaches:**
+  - Postgres as chat memory for an n8n agent: connect a Postgres Chat Memory node, which stores each conversation in a table keyed by the chat session ID.
+  - Supabase as a vector store: create a project, run the vector-store setup SQL from the docs, and get a "documents" table for embeddings.
+  - Connection details: host, user, password, and port come from Supabase's connect panel (transaction pooler, port 6543 in the demo); the vector store node uses the project URL and service role secret instead.
+  - Ingestion: download a file (Google Drive node), split it with a recursive text splitter, embed it, and insert it into the documents table.
+  - Retrieval: give the agent a Vector Store tool with a description of what the store contains, then test a question that is answered from the document.
+- **Tools / prices / numbers:** n8n; Supabase (free tier chosen in the demo); PostgreSQL; pgvector mentioned as an option. Example document (a body shop's terms) lists brake prices of $120 per axle (replacement), $150 per axle (rotor), and $30 for inspection. These are sample-document figures, not Nate's pricing.
+- **Skills shown:** n8n agent setup, Postgres and Supabase configuration, vector database ingestion, RAG retrieval, credential setup.
+- **Money angle:** Nate's demo is a RAG chatbot answering a body shop's service questions from its own document, so a plausible offer is document-grounded FAQ agents for small local businesses. Nate does not state a price or sales method.
+- **Duet-relevant:** no
+- **Promo:** Paid Community for RAG and agent deep dives.

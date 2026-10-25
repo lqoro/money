@@ -1,0 +1,15 @@
+## 53. Everything Goldman Sachs Taught Me About AI (In 10 minutes)
+- **Link:** https://www.youtube.com/watch?v=ZzHsJW10iq4 | **Length:** 10 min | **AI-relevant:** yes
+- **Teaches:**
+  - Five-part "VAULT" framework for using AI safely in real work:
+    - **V**erify outputs: ask the model to cite sources and flag low-confidence claims, then spot-check the few numbers that matter.
+    - **A**ugment, don't replace: keep deterministic automation for rule-based steps and add AI only where judgment helps.
+    - **U**nderstand the why: write one sentence naming the problem and what success looks like before choosing a tool.
+    - **L**oop humans in: match oversight to consequences; have agents draft emails or plans instead of sending or changing things.
+    - **T**ransparency: log data sources, assumptions, tools, and checks so others can audit and repeat the result.
+  - Anecdote: an autonomous agent once emailed a discount code to about 200,000 people (Nate's account).
+- **Tools / prices / numbers:** none
+- **Skills shown:** AI governance, prompt verification, workflow design, agent oversight, documentation
+- **Money angle:** Pick one painful problem and build one useful system; he says community members have replaced job income this way. No prices given.
+- **Duet-relevant:** no
+- **Promo:** Free community (nearly half a million members) with courses and a Vault resource guide; a paid roadmap for a one-person AI agency (link in description); a 7-day AI portfolio path.

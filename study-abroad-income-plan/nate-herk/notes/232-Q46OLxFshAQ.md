@@ -1,0 +1,17 @@
+## 232. How I'd Make Money with AI in 2026 (if I had to Start Over)
+- **Link:** https://www.youtube.com/watch?v=Q46OLxFshAQ | **Length:** 24 min | **AI-relevant:** yes
+- **Teaches:**
+  - A four-stage ladder: freelancer, consultant, agency ("AI partner"), teacher.
+  - Freelancer BUILD framework: pick one template, understand the use case, install and imitate, land a client, document and duplicate.
+  - Consultant SCAN framework: study the business, calculate the opportunity, architect the solution, narrate the results.
+  - Agency GROW framework: get developers, retain authority, onboard sales, win with brand.
+  - Teacher SHARE framework: show, hook, attract, recommend, expand.
+  - Pricing logic: show the math, e.g. one hour a day cut 90% is about 5 hours a week.
+- **Tools / prices / numbers:**
+  - Nate's claims: over $1M from AI this year at age 23; about $150,000/month profit from teaching; first consulting audit around $5,000 and implementations $20,000 to $100,000.
+  - Scorecard (Nate's): freelancing 3/10 income, consulting 6, agency 8, teaching 10.
+  - Paid community $89/month, price rising (Nate's figures).
+- **Skills shown:** template customization, discovery, ROI calculation, case studies, hiring, content production.
+- **Money angle:** freelance $500 to $2,000 projects; consulting audit plus implementation; agency with developers and sales; paid community and teaching. Start with one template and one client.
+- **Duet-relevant:** no.
+- **Promo:** AI Automation Society Plus ($89/month per Nate, annual discount, bonuses); free school community resource pack.

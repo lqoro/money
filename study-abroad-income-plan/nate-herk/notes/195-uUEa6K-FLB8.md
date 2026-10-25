@@ -1,0 +1,15 @@
+## 195. I Will Never Fix Another n8n Workflow (Claude Code)
+- **Link:** https://www.youtube.com/watch?v=uUEa6K-FLB8 | **Length:** 13 min | **AI-relevant:** yes
+- **Teaches:**
+  - Point an n8n production workflow's error workflow at a second workflow. On failure, that one sends the failed node, workflow ID and error text through a tunnel to a Claude Code session running on his local machine.
+  - Claude Code uses the n8n MCP server and n8n skills to read the broken workflow, find the root cause, edit the live workflow and post the result to ClickUp.
+  - Fixable cases he demos: a code node returning an array instead of items, invalid JSON in a structured output parser, and a stray quote that broke a JSON body expression.
+  - Unfixable cases such as expired credentials make the agent report "user action required" and change nothing.
+  - Key concept: n8n cannot reach a local Claude Code directly, so a tunnel must open the door; running n8n locally removes that step.
+- **Tools / prices / numbers:**
+  - n8n (cloud or local), n8n MCP server, n8n skills, Claude Code, ClickUp for notifications, a tunnel tool (name garbled in captions), Tavily and Vapi used as demo APIs.
+  - Setup estimate: 30 to 60 minutes using his 18-page PDF guide (his figure).
+- **Skills shown:** error-workflow design, tunneling, MCP and skill setup, n8n expression and JSON debugging, failure triage, notification routing.
+- **Money angle:** none stated. Inference: a self-healing monitoring setup could be sold as an ongoing maintenance retainer for client workflows.
+- **Duet-relevant:** no
+- **Promo:** Free school community (PDF guide and workflow files, free); Plus community with over 3,000 members and a weekly live Q&A.

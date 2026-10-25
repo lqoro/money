@@ -1,0 +1,17 @@
+## 154. Claude Code Source Code Just Leaked… 8 Things You Must Do
+- **Link:** https://www.youtube.com/watch?v=tXtCK66fPj8 | **Length:** 13 min | **AI-relevant:** yes
+- **Teaches:**
+  - Claude Code is a full agent runtime (CLI parser, query engine, tool loop, memory, permissions, multi-agent coordinator, MCP client and server), not just a chat window in a terminal, per Nate's reading of the leaked source.
+  - Keep CLAUDE.md short and operational: conventions, constraints and decision rules, not project history. Load it at global or project level.
+  - Learn the built-in commands: `/plan`, `/compact` (with a focus prompt), `/context`, `/review`, `/security-review`, `/cost`, `/resume`, `/summary`.
+  - Set wildcard allow and deny rules in settings files so recurring actions stop triggering approval prompts.
+  - Split big requests into search, plan, execute and verify phases; connect MCP servers, CLIs and skills; treat the config as infrastructure.
+- **Tools / prices / numbers:**
+  - Nate counts roughly 85 slash commands and 187 spinner verbs in the leaked code
+  - Nate describes the leak as about 2,000 files and over half a million lines
+  - Config supports routing through AWS Bedrock or Google Vertex
+  - Nate advises against downloading or sharing the leaked code, citing copyright and DMCA takedowns
+- **Skills shown:** Claude Code configuration, permission rules, context management, prompt decomposition, MCP setup
+- **Money angle:** none (only token-cost savings from compacting and context hygiene)
+- **Duet-relevant:** no
+- **Promo:** free "school community" resource guide, link in the description

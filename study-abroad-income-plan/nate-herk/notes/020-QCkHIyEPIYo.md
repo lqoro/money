@@ -1,0 +1,20 @@
+## 20. I Had Opus 5.5 Build me the Same App at Every Effort Level
+- **Link:** https://www.youtube.com/watch?v=QCkHIyEPIYo | **Length:** 27 min | **AI-relevant:** yes
+- **Teaches:**
+  - Gives one identical build prompt (a 3D explorable conference world from recorded event assets) to Opus 5.5 at six effort levels: low, medium, high, extra, max, and "ultra code".
+  - Compares output quality, runtime, API-equivalent cost, token use, and number of verification checks per run.
+  - Finds that cost and runtime rise with effort, and that extra gave the best balance for this task.
+  - Notes that none of the runs used sub-agents, and that ultra code did not appear to spin up its dynamic workflows.
+  - Suggests starting at medium and scaling effort up or down, a point he attributes to Anthropic's guidance.
+- **Tools / prices / numbers:**
+  - Low: 16m43s, about $3.91, 191k tokens, 22 checks.
+  - Medium: 1h13m, about $12.44 (captions read "$1244"), 22-23 checks.
+  - High: 1h07m, $16.31, 22 checks, asked one question.
+  - Extra: 1h30m, $25.92, 34 checks (token count garbled in captions).
+  - Max: 2h28m, $50.38, 1.18M tokens, 51 checks, one context compaction.
+  - Ultra code: 1h35m, $18.69, 42 checks.
+  - Low vs max cost ratio he quotes: about 12.9x. Total across the six runs: about $127.
+- **Skills shown:** prompt-driven app building, effort-level selection, cost and token benchmarking, Claude Code /goal usage, Opus model comparison.
+- **Money angle:** none (the benchmarking is about model cost, not a product to sell).
+- **Duet-relevant:** no
+- **Promo:** Hostinger sponsorship: free Hostinger connector for editors (VS Code, Cursor, Claude Code, Codex) to deploy sites and set DNS; unlimited hosting plan with his affiliate link and code "Nate Herk" for 10% off, with a free domain and business email for the year (Nate's pitch).

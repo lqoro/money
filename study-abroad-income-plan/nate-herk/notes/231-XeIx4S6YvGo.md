@@ -1,0 +1,17 @@
+## 231. I Tested OpenAI's AgentKit Against n8n: What You Need to Know
+- **Link:** https://www.youtube.com/watch?v=XeIx4S6YvGo | **Length:** 21 min | **AI-relevant:** yes
+- **Teaches:**
+  - Six-category comparison: ease of use, triggers, agent tools, model support, UI and chat components, deployment and control.
+  - Agent Builder is simpler: built-in web search with no API key, low-code visual editor. Its only trigger is chat, so event-driven automations are hard.
+  - n8n has many native triggers (Gmail, Slack, webhooks), 500+ integrations, HTTP requests, sub-workflows as agent tools, and any model (including local).
+  - Agent Builder has ChatKit for embedding polished chat widgets; n8n chat is hard to style.
+  - Agent Builder has evaluation tools (datasets, trace grading, prompt optimization); its run logs are harder to follow than n8n's per-node view.
+  - Rule of thumb: pick the tool by the problem, and stay tool-agnostic.
+- **Tools / prices / numbers:**
+  - Nate's rubric scores: Agent Builder 40, n8n 51.
+  - Agent Builder pricing not finalized; you pay for model usage (Nate's understanding).
+  - n8n released 2019; over 5,000 templates (Nate's claim).
+- **Skills shown:** agent-platform evaluation, n8n nodes, sub-workflows, MCP concepts.
+- **Money angle:** none stated.
+- **Duet-relevant:** partly. Nate builds an "ultimate personal assistant" in n8n with sub-agents, but it runs on request, not as an always-on bot.
+- **Promo:** AI Automation Society Plus paid community (3,000 members per Nate, three courses, weekly live call).

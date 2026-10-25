@@ -1,0 +1,16 @@
+## 194. Agentic Workflows Just Changed AI Automation Forever! (Claude Code)
+- **Link:** https://www.youtube.com/watch?v=AO5aW01DKHo | **Length:** 22 min | **AI-relevant:** yes
+- **Teaches:**
+  - Agentic workflows: describe the outcome in plain English; the agent plans, asks questions, builds, and repairs its own steps, unlike node-by-node n8n builds.
+  - Four shifts: self-healing (agent reads errors and fixes code), natural-language iteration, security review on every change with rules set in plain language, and instant API/MCP integrations.
+  - WAT framework (markdown workflows, Python tools, agent with a CLAUDE.md) shown in a live lead-gen build: plan mode, a few answers, auto-accept, then a working workflow.
+  - For scheduled or event triggers, publish the scripts to a hosting service rather than keeping Claude Code open.
+- **Tools / prices / numbers:**
+  - Claude Code in VS Code; Google Places API (lead source); OpenAI (outreach copy); Google Sheets (output); Modal (suggested hosting); a "Ralph Wiggum" loop plugin for Claude Code.
+  - Demo output: 10 test leads with contact details, rating, reviews, and a personalized outreach message.
+  - Trend figures Nate cites: about 25% of enterprises running agentic pilots this year, 50% by 2027 (forecast firm name garbled in transcript); AI agent market from about $8B (2025) to the $40-50B range by 2030.
+  - Nate's free community: over 230,000 members; paid community: over 3,000.
+- **Skills shown:** plan-mode prompting, agent-built automations, lead generation, MCP integration, workflow and tool structuring
+- **Money angle:** Custom lead-gen automations (e.g., a Chicago dentist lead list with outreach copy, as in the demo), plus ongoing maintenance and expansion. Nate says clients pay for problem definition, integration with messy systems, and upkeep more than the build. No prices quoted.
+- **Duet-relevant:** no
+- **Promo:** Free school community (resource guide); paid community (over 3,000 members).

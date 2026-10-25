@@ -1,0 +1,15 @@
+## 31. Anthropic Engineer Explains: What to Build Instead of AI Agents
+- **Link:** https://www.youtube.com/watch?v=HIRDzMtuWFk | **Length:** 10 min | **AI-relevant:** yes
+- **Teaches:**
+  - Mental model: the model is the processor, the agent runtime is the operating system, and skills are the apps. Build skills on a general agent instead of a new agent for each job.
+  - Save proven scripts inside the skill folder so the agent runs them instead of rewriting code each time (DRY).
+  - Progressive disclosure: agents first see only skill names and descriptions, so write precise descriptions with real trigger phrases. Test obvious, reworded, and unrelated requests.
+  - After a correction, update the smallest durable place (instructions, a reference file, or a rule), then rerun the task to verify the fix.
+  - Build verification into skills: render and inspect output, check sources, get persona reviews, and define acceptance criteria before returning a draft.
+- **Tools / prices / numbers:**
+  - Claude Code, Codex, Hermes Agent (portability test); open agent-skills format.
+  - No prices or numbers given.
+- **Skills shown:** Skill design, prompt engineering, verification loops, context management, cross-model testing
+- **Money angle:** none stated. Nate's own course and community are the offers.
+- **Duet-relevant:** no
+- **Promo:** Nate's AI operating system course; free community with courses and templates; his Plus community.

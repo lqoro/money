@@ -1,0 +1,13 @@
+## 296. n8n Just Leveled Up AI Agents (Anthropic's Think Method)
+- **Link:** https://www.youtube.com/watch?v=WqyLxyALTt0 | **Length:** 20 min | **AI-relevant:** yes
+- **Teaches:**
+  - n8n's new Think tool (added in n8n 1.88) is a scratchpad tool the agent calls to write down its reasoning between or after other tool calls. It is inspired by an Anthropic article on the same idea.
+  - Read an agent's execution logs top to bottom: memory, system prompt, child-agent tool calls, then the think step, to see why it acted.
+  - Think tool helps most in long tool chains, checking tool output, policy-heavy tasks, and multi-step decisions. It is overkill for simple, non-sequential calls.
+  - Prompting matters: a line in the system prompt telling the agent to call the think tool to verify steps changed behavior across models. Without it, the agent sometimes invented an email address.
+  - Test fake sub-workflows (quoter, availability) with stub data, then swap in real tools.
+- **Tools / prices / numbers:** n8n, Think tool, GPT-4.1 and GPT-4.1 mini, GPT-4o, Claude 3.5 Sonnet, Gemini 2.0 Flash, Pinecone, Airtable, web search. Nate's stated GPT-4.1 price: $2 per million input tokens, $8 per million output. He said GPT-4.1 has a 1.05M-token context versus 128k for GPT-4o.
+- **Skills shown:** agent design, tool and sub-workflow orchestration, prompt tuning, reading execution logs, model comparison
+- **Money angle:** none stated for a client. Nate's paid community is the only sales pitch (see promo). Could be a sellable "agent that books and emails for you" if you can show it works.
+- **Duet-relevant:** yes. A personal assistant agent that handles calendar, email and contacts for the user is exactly the always-on assistant pattern.
+- **Promo:** free school community (templates from his videos). Paid community with a full AI-agents course, five live calls a week, and about 1,000 members; he says it just hit 1,000 members.

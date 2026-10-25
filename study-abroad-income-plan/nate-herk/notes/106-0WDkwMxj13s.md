@@ -1,0 +1,17 @@
+## 106. I Turned Claude Opus 4.8 Into My Entire AI Operating System
+- **Link:** https://www.youtube.com/watch?v=0WDkwMxj13s | **Length:** 29 min | **AI-relevant:** yes
+- **Teaches:**
+  - Build a personal "AI operating system": one local folder, run in Claude Code, that holds your context so you work from one place.
+  - His four C's: context (the AI knows your business), connections (tools and APIs it can reach), capabilities (skills that encode how you work), and cadence (things that run without you asking).
+  - Keep it as plain files and folders so other coding agents can use it too. Update CLAUDE.md often.
+  - Build skills by repeating a task until it is reliable, or by reverse-engineering a good output. A skill can be a saved prompt, such as a session handoff.
+  - Scope agent permissions. A tool or key the agent holds is a real capability, so widen autonomy gradually. A team agent once sent promotional emails to over 150,000 inboxes (Nate's account).
+  - Run /insights for an HTML report on your local sessions.
+- **Tools / prices / numbers:**
+  - Claude Opus 4.8, compared by feel with 4.6 and 4.7.
+  - Connections he uses: ClickUp, local files, Google Workspace, QuickBooks, YouTube, Fireflies. He suggests starting with about seven connections for revenue, customers, calendar, chat, tasks, projects, meetings, and knowledge.
+  - Free onboarding GitHub repo with a skill that interviews you. Free course of about 3 hours.
+- **Skills shown:** Claude Code project setup, context and memory design, MCP and API connections, skill building, permission scoping, session handoff, /insights reporting
+- **Money angle:** Implied only. Teaching the four-C's setup is what his free course is for, with no price points stated.
+- **Duet-relevant:** partly. It is a personal assistant that reads your tools and acts for you, but it runs inside Claude Code on your machine, not as an always-on messaging bot.
+- **Promo:** His free school community (classroom, 3-hour AI operating system course, GitHub repo). He calls it the largest AI automation community on the platform (his claim).

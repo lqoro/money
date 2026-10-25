@@ -1,0 +1,13 @@
+## 43. How Anthropic ACTUALLY Prompts Fable 5.1
+- **Link:** https://www.youtube.com/watch?v=FBVNS1l5Vb8 | **Length:** 12 min | **AI-relevant:** yes
+- **Teaches:**
+  - Describe the outcome, why it matters, what "done" looks like, and real constraints, instead of listing step-by-step tasks. Fable 5.1 plans the sub-tasks itself.
+  - Match effort to the job: start at high, test medium, then low. Benchmarks he shows suggest Fable 5.1 on low is roughly comparable to Fable 5 on medium or high, at lower cost. Fable 5.1 can change effort between turns and keep the prompt cache.
+  - Make it prove its work: ask for explicit self-verification, audit each claim against a tool result, and say plainly when something is unverified.
+  - Parallelize: split large tasks into independent pieces and delegate to sub-agents, while the main session drives strategy and the lead agent stays responsible for the final output.
+  - Rewrite old skills that are too prescriptive for newer models, and audit them with a prompt-audit tool (name garbled in the transcript).
+- **Tools / prices / numbers:** Fable 5.1 effort levels (low, medium, high, xhigh, max); weekly usage limit (no figure given). Nate's benchmark readings come from Anthropic's docs as he presents them.
+- **Skills shown:** Prompt design, agent delegation, evaluation design, token and usage management.
+- **Money angle:** none stated.
+- **Duet-relevant:** Loosely: he suggests keeping a personal "AIOS" of your goals and background for the agent to draw on, but no always-on bot is discussed.
+- **Promo:** Free school community; a free resource guide of docs, skills, and repos is in its YouTube resources classroom.

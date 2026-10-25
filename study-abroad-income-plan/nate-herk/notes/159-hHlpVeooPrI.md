@@ -1,0 +1,14 @@
+## 159. Claude Code + iMessage is Finally Here.
+- **Link:** https://www.youtube.com/watch?v=hHlpVeooPrI | **Length:** 10 min | **AI-relevant:** yes
+- **Teaches:**
+  - Claude Code "channels" are MCP servers that push events from a chat app into a running session, so you can message Claude from your phone and have it act as if you typed locally.
+  - Setup: grant full disk access to the terminal app (or VS Code), install the iMessage plugin via the plugin menu, then launch Claude Code in channel mode so it listens for messages.
+  - Approvals from the phone: when Claude asks for permission in a session not run with bypass permissions, you can reply yes or no by text.
+  - Access control: the first self-text may need confirming; other numbers or Apple IDs can be allowed with an access command so they can message the session too.
+  - Limits: the session must stay open, and iMessage requires the host to be a Mac. Team and enterprise plans need an admin to enable channels.
+  - Compares dispatch (message-based task delegation), channels (event-based pushes from chat apps or servers) and remote control (driving an active session).
+- **Tools / prices / numbers:** Claude Code channels (Telegram, Discord, iMessage); Bun (required runtime); macOS full disk access setting; a YouTube analyzer skill used in the demo, which scraped 511 comments across six videos (Nate's demo output). No prices stated.
+- **Skills shown:** Claude Code channel setup, MCP plugin install, permission approval over chat, multi-session routing basics, macOS permission configuration.
+- **Money angle:** none stated.
+- **Duet-relevant:** yes. A Claude session reachable by iMessage or other chat apps that acts on your behalf, including while you are away, matches an always-on messaging-app agent; the session must stay running, so Nate suggests a Mac VPS or Mac Mini.
+- **Promo:** none (only a request to like and subscribe, and a reference to his other videos).

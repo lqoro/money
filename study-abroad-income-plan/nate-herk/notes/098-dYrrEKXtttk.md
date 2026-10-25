@@ -1,0 +1,17 @@
+## 98. Claude Mythos is Finally Here.
+- **Link:** https://www.youtube.com/watch?v=dYrrEKXtttk | **Length:** 9 min | **AI-relevant:** yes
+- **Teaches:**
+  - Anthropic released Claude Fable 5 for general use. Claude Mythos 5 is limited to Project Glasswing partners. Nate describes them as the same model, with cyber safeguards lifted for Mythos 5.
+  - Mythos-class models sit above Opus. Mythos 5 is an upgrade path for earlier Mythos preview users.
+  - Choose effort levels carefully. Nate guesses Fable on low is close to Opus on X high.
+  - Long-running agent loops use more tokens. For general knowledge work, he says they are often unnecessary and can exhaust session limits.
+  - Treat benchmarks with caution, and check how the model performs on your own work.
+- **Tools / prices / numbers:**
+  - Fable 5 and Mythos 5 at $10 per 1M input tokens and $50 per 1M output tokens, double Opus pricing (Nate).
+  - Earlier Mythos preview was about five times Opus cost (Nate).
+  - Subscription access to Fable 5 runs through June 22 on Pro, Max, Team and seat-based enterprise plans. From June 23 it moves to usage credits (Nate).
+  - Benchmarks compared against Opus 4.8 and GPT 5.5 (Nate).
+- **Skills shown:** model selection, cost awareness, effort-level tuning, agent-loop judgment
+- **Money angle:** none
+- **Duet-relevant:** no
+- **Promo:** none

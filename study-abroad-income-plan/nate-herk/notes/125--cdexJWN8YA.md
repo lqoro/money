@@ -1,0 +1,17 @@
+## 125. Building Realistic Voice Agents Has Never Been Easier
+- **Link:** https://www.youtube.com/watch?v=-cdexJWN8YA | **Length:** 32 min | **AI-relevant:** yes
+- **Teaches:**
+  - A voice agent is a loop: speech in, transcription, LLM reply or tool call, speech out. Four parts: persona (system prompt), voice, knowledge, and tools.
+  - Plan mode first in Claude Code: describe the goal, answer its questions, then let it build the ElevenLabs agent and its tools.
+  - Test in the dashboard, then iterate in plain language (voice, first message, time zone, spelling of names and emails).
+  - Debug from call transcripts: the booking bug was a UTC-vs-local time window in the tool call.
+  - Embed the agent as a website widget; lock the allowed domain and set call and rate limits to control cost.
+- **Tools / prices / numbers:**
+  - ElevenLabs (paid agent; Nate's voice clone trained on about 4 hours of audio); Claude Code requires a paid Claude plan.
+  - Cal.com booking tool: 30-minute event type; default availability 9am-5pm, expanded for the demo; 2-hour minimum notice.
+  - Superpowers brainstorming plugin is free (per Nate).
+  - Build took about 45 minutes across several iterations.
+- **Skills shown:** voice agent design, ElevenLabs configuration, Cal.com API integration, prompt iteration, transcript-based debugging, widget embedding, cost and abuse guardrails
+- **Money angle:** Website or phone voice agents that answer questions and book discovery calls for service businesses (Nate frames his own AI consultancy this way). Sell the booked call, not the agent. Cost guardrails (domain lock, call length cap, rate limit) should be part of the price. No client prices stated.
+- **Duet-relevant:** partly. It is a voice agent that acts for a business and books calls, but it is public-facing, not an always-on personal assistant for one owner.
+- **Promo:** ElevenLabs link in the description (likely referral, not confirmed); Glydo voice-to-text (team membership, Windows support "coming soon"); free School community for his session-handoff skill.

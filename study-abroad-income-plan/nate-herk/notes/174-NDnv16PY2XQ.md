@@ -1,0 +1,16 @@
+## 174. Cursor Automations Clearly Explained (worth learning?)
+- **Link:** https://www.youtube.com/watch?v=NDnv16PY2XQ | **Length:** 9 min | **AI-relevant:** yes
+- **Teaches:**
+  - Cursor Automations are trigger-based coding agents that run in Cursor's cloud sandbox, with your repo loaded, and launch on events rather than manual prompts.
+  - Triggers: schedules, GitHub events, Slack messages, Linear issues, PagerDuty incidents, custom webhooks.
+  - Use cases Cursor describes: ongoing code review on push, security and compliance checks, incident response, scheduled maintenance and reports.
+  - Comparison: OpenClaw runs on your own machine with system access and "heartbeats" as a personal assistant. Cursor Automations are event-driven engineering agents in the cloud. Claude Code runs locally and is better for building.
+  - His suggested split: Claude Code as the builder (design, build, test, ship to GitHub), Cursor Automations as the caretaker (audits and reviews after each change).
+  - Learn the transferable fundamentals (planning, prompt design, tools, memory, evals, QA, deployment, guardrails) rather than hopping between tools.
+- **Tools / prices / numbers:**
+  - Cursor Automations, Cursor (a forked VS Code), Claude Code, OpenClaw, GitHub, Slack, Linear, PagerDuty, trigger.dev (mentioned as the self-hosted alternative), Codex and other models (Opus, Sonnet, and an OpenAI model).
+  - No pricing stated in the video.
+- **Skills shown:** event-driven agent design, comparing agent platforms, code review and security automation, tool-agnostic thinking.
+- **Money angle:** none stated. Implied: engineering teams would pay for always-on review and monitoring agents.
+- **Duet-relevant:** no. He says Cursor Automations are for code, not a personal assistant. He contrasts them with OpenClaw, a persistent personal agent.
+- **Promo:** none

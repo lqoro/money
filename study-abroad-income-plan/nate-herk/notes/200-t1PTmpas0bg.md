@@ -1,0 +1,13 @@
+## 200. Easiest Way to Migrate n8n Workflows Between Accounts (cloud to self-hosted)
+- **Link:** https://www.youtube.com/watch?v=t1PTmpas0bg | **Length:** 11 min | **AI-relevant:** no
+- **Teaches:**
+  - Two-workflow migration with no AI: workflow A pulls every workflow from the old instance through the n8n node and logs ID and name in a Google Sheet with status "to process".
+  - Workflow B reads only rows marked "to process", fetches each workflow JSON by ID, creates it on the new instance through the n8n API, then marks the row done.
+  - Logging to a sheet lets you resume after a crash and avoids moving the same workflow several times.
+  - Credentials and users do not transfer; re-create credentials manually on the new instance.
+  - For cloud-to-local moves, export the JSON, which is available from the n8n cloud panel.
+- **Tools / prices / numbers:** n8n cloud and self-hosted, n8n API (base URL plus /api/v1, bearer key), Google Sheets. Hostinger self-hosting, which he says starts at about $5/month (his figure). He tested with 25 of 512 workflows (his account count).
+- **Skills shown:** n8n API usage, sheet-based state tracking, loop and filter design, credential setup.
+- **Money angle:** none stated. Inference: a paid migration service for agencies moving client n8n instances.
+- **Duet-relevant:** no
+- **Promo:** Hostinger affiliate code for 10% off annual plans (Nate Herk); Free school community (template and sheet, free); Plus community with a larger Hostinger discount and over 3,000 members.

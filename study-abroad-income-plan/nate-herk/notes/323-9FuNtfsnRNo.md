@@ -1,0 +1,14 @@
+## 323. I Built the Ultimate Team of AI Agents in n8n With No Code (Free Template)
+- **Link:** https://www.youtube.com/watch?v=9FuNtfsnRNo | **Length:** 23 min | **AI-relevant:** yes
+- **Teaches:**
+  - Orchestrator with specialist agents: one "ultimate assistant" agent with a short prompt delegates to email, calendar, contact, and content agents, each built as its own n8n workflow.
+  - Calling sub-workflows as tools: the sub-workflow starts with an Execute Workflow trigger, and its last node returns the response to the orchestrator.
+  - Error routing: enabling "continue using error output" lets a failed sub-agent return "unable to perform task, please try again" so the orchestrator can retry.
+  - Chain-of-ID tools: the email and calendar agents must call "get" first to find message, label, or event IDs before reply, label, update, or delete.
+  - Voice or text input: a Telegram trigger routes voice notes through transcription, then both paths feed the same agent.
+  - Contact pre-lookup rule: send emails or add attendees only after the contact agent has fetched the address.
+- **Tools / prices / numbers:** n8n; Telegram; Gmail; Google Calendar; Airtable (contacts); Tavily search as an HTTP tool; GPT-4o for the orchestrator and most agents; Claude 3.5 Sonnet for the content creator (Nate: it formats content well). No prices stated.
+- **Skills shown:** multi-agent architecture in n8n, sub-workflow tools, prompt scoping, error branches, tool ID chaining, voice transcription, Airtable and Gmail integrations, HTML email output.
+- **Money angle:** none stated. Nate suggests the content agent could feed social posting or a content database, but he does not discuss pricing or clients.
+- **Duet-relevant:** yes. This is a Telegram-driven personal assistant (voice or text) that acts on the user's email, calendar, and contacts, with a memory of the conversation.
+- **Promo:** Free School Community (agent JSON files under YouTube resources); paid Community with classroom deep dives and five live calls per week.

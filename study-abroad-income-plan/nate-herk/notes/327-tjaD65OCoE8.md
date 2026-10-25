@@ -1,0 +1,12 @@
+## 327. How to Actually Build Agents with DeepSeek R1 in n8n (Without OpenRouter)
+- **Link:** https://www.youtube.com/watch?v=tjaD65OCoE8 | **Length:** 11 min | **AI-relevant:** yes
+- **Teaches:**
+  - The problem: R1 through OpenRouter was very slow and looped on tool calls. R1 through DeepSeek's own API answered fast but rejected function calling.
+  - The pattern: use R1 as a planner. It turns a request into step-by-step instructions, and a tools agent with no system prompt carries them out (calendar event, two emails).
+  - Connect directly: get the API key and base URL from DeepSeek's platform, then set the model to the reasoner (R1) or chat (V3) model in the n8n credential.
+  - Alternative: call R1 through an HTTP Request node with a system message and a user message.
+- **Tools / prices / numbers:** DeepSeek API. Nate topped up $2 and reports about 880k V3 tokens and 14k R1 tokens used, which cost a little over 3 cents. The tools agent runs on GPT-4o mini.
+- **Skills shown:** planner/executor agent design, n8n tools agents, API credential setup, HTTP requests
+- **Money angle:** none stated.
+- **Duet-relevant:** yes - a chat-triggered personal assistant that creates calendar events and sends emails in the user's name.
+- **Promo:** free school community (workflow download from the YouTube resources section); paid community with classroom and five live calls per week.

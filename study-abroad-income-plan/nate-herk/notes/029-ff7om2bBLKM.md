@@ -1,0 +1,15 @@
+## 29. Grok Bot Manages My Inbox (and has its own)
+- **Link:** https://www.youtube.com/watch?v=ff7om2bBLKM | **Length:** 14 min | **AI-relevant:** yes
+- **Teaches:**
+  - Build an inbox-triage bot in Grok Bot: describe its job, define labels (primary, notifications, outreach, newsletters, urgent), and mark urgent mail red.
+  - Schedule two runs a day (6:45 a.m. and 6:45 p.m.) that send a summary to a messaging app. The bot labels mail but does not draft replies.
+  - Give a bot its own inbox with AgentMail, then wake it with a webhook: create an endpoint, subscribe to message events, and add a Bearer-token header.
+  - Filter the webhook with a small transform script so each bot reacts only to its own inbox.
+  - Test by sending a real email and checking the bot's threaded reply. Treat the webhook URL and key like passwords.
+- **Tools / prices / numbers:**
+  - Grok Bot (a desktop update was needed to show webhook details), AgentMail (free plan; Nate had two inbox slots left), ClickUp for notifications, Codex for writing the filter code.
+  - No prices stated for the bots themselves.
+- **Skills shown:** Agent prompt design, email routing rules, webhooks and auth headers, light JavaScript filtering, end-to-end testing
+- **Money angle:** none stated; the demo is for personal productivity.
+- **Duet-relevant:** yes: an always-on inbox bot wakes on incoming email, replies in-thread, and sends a daily summary to your phone.
+- **Promo:** Clay (sponsor; 2,000 free credits via link); Nate's free AIOS template kit; a link to his Grok Bot course video.

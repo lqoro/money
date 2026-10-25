@@ -1,0 +1,13 @@
+## 291. This AI Agent Picks Its Own Brain (10x Cheaper, n8n)
+- **Link:** https://www.youtube.com/watch?v=gwCQF--cARA | **Length:** 14 min | **AI-relevant:** yes
+- **Teaches:**
+  - A cheap model-selector agent (Gemini 2.0 Flash) reads each Slack message and returns one model name from a fixed list you define with strengths.
+  - The main agent then uses that name as its chat model through OpenRouter, so simple requests use cheap models and hard ones use stronger models.
+  - Trim the trailing newline from the selector output, or OpenRouter rejects the model name.
+  - Log input, output and chosen model to a Google Sheet; a RAG variant pulls from a Supabase vector table.
+  - Compare models with leaderboards (Vellum, LMArena). OpenRouter's auto-router is simpler but gives less control.
+- **Tools / prices / numbers:** n8n; Slack; OpenRouter (300+ models stated); Gemini 2.0 Flash (free or very cheap); GPT-4.1 mini; Claude 3.7 Sonnet (pricier); OpenAI o1; Tavily; Supabase. No exact prices stated.
+- **Skills shown:** model routing, prompt design, OpenRouter setup, RAG with Supabase, Slack triggers, logging
+- **Money angle:** none stated. (My inference: cost-routing could be sold as a cost-saving setup for clients with heavy agent usage.)
+- **Duet-relevant:** yes, a Slack assistant that books calendar events, sends email and searches the web for the user.
+- **Promo:** free school community (JSON and Sheets template); paid community, classroom, two courses "launching soon", five live calls per week.

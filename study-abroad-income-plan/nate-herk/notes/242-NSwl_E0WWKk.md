@@ -1,0 +1,13 @@
+## 242. How I Sold a $6000 AI Workflow to a Business (Live Sales Call)
+- **Link:** https://www.youtube.com/watch?v=NSwl_E0WWKk | **Length:** 41 min | **AI-relevant:** yes
+- **Teaches:**
+  - Run discovery calls with the LRP loop (listen, repeat back, poke with a question), and let the client talk most of the time.
+  - Qualify early: check for budget authority (the founder/CEO), AI maturity and realistic expectations.
+  - Quantify pain on each call (hours per week, cost of each bottleneck) before you talk about tech or price.
+  - Scope in writing: list the integrations and the definition of done, and get the client to agree in the call. A late scope change (web search) showed why this matters.
+  - Close with a proposal: a $3,000 deposit and a $3,000 completion payment on an estimated 40-hour build, with check-ins. Book the next call before ending each one.
+- **Tools / prices / numbers:** $6,000 fixed price (Nate's own deal, Dec 2024). Earlier hourly tiers he floated: $4,500 for 20 hours, $8,000 for 40 hours. Build stack: Notion, Dropbox, Slack, Gmail and AWS as data sources; a vector database (Pinecone), with Supabase and Qdrant under consideration; Vapi for voice; OpenAI. Nate's self-critique: he should have tied each figure to hours saved and ROI.
+- **Skills shown:** Discovery calls, scoping, data-ingestion pipeline design (chunking, metadata, embeddings), proposal writing, pricing on value, live sales coaching.
+- **Money angle:** Sell a personal-assistant build for a founder's team, with a fixed price in two payments and a phased rollout (Slack first, then other sources). Price on the ROI (hours saved, cost avoided), not on hours. Use the case study and testimonial after results. Start with the data inventory. No deal-size benchmark beyond this example.
+- **Duet-relevant:** yes. The client wanted a personal assistant reachable through Slack that answers from Notion, Dropbox, Gmail and Slack data and stays up to date. It is call-driven (waits for commands), not an autonomous agent.
+- **Promo:** Free school community (PDF and resources for this video); paid "Plus" community; new course "Automation to Monetization" on launching an AI freelancing or consulting business.

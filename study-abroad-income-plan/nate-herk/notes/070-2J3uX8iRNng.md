@@ -1,0 +1,13 @@
+## 70. I Tested Opus 5 vs. Fable 5. What You Need to Know.
+- **Link:** https://www.youtube.com/watch?v=2J3uX8iRNng | **Length:** 31 min | **AI-relevant:** yes
+- **Teaches:**
+  - Benchmarks are a starting point; run the models on your own workflows and compare cost, time and tokens.
+  - Judge results by verification loops: give the agent a clear stopping condition and a way to test whether it is done.
+  - Use a second model (Codex) to review and rank outputs from each run.
+  - Use a cheaper model as the orchestrator that only delegates, and keep the expensive model for heavy work.
+  - Re-run the same prompt, since identical prompts gave very different results (he ran Opus twice by mistake).
+- **Tools / prices / numbers:** Claude Opus 5, Fable 5, Claude Code, Codex, Excalidraw, Playwright CLI. Nate's claims: Opus is about half the per-token cost of Fable but was more expensive overall because it used far more tokens (about 2M output tokens for Opus vs 832k for Fable across sessions). Per-task costs ranged from about $4 to $112 in his tests.
+- **Skills shown:** model comparison, agent orchestration, verification design, cost and token analysis, Excalidraw diagrams, landing-page generation, LinkedIn carousel drafting, computer-use testing.
+- **Money angle:** Nate's examples include a landing page for a certified AI consultant program with founding seats and an "offer engine" product idea (a Claude Code skill pack that turns a discovery call into a scoped, priced offer). No prices stated. Possible start: package a repeatable client offer and delivery templates, then sell them to consultants.
+- **Duet-relevant:** no
+- **Promo:** Free school community, with free resources and a breakdown document; the landing-page demo is for his certified AI consultant program (founding seats).

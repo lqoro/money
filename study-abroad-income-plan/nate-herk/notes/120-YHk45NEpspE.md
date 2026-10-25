@@ -1,0 +1,18 @@
+## 120. This is The Most Powerful Tool to Give to Claude Code
+- **Link:** https://www.youtube.com/watch?v=YHk45NEpspE | **Length:** 15 min | **AI-relevant:** yes
+- **Teaches:**
+  - Why CLIs suit agents better than APIs or MCP servers: short clean output, no always-on server, and tokens are not wasted on tool descriptions.
+  - Priority order: use an existing CLI first, build one from an API second, and use MCP only when neither exists.
+  - Install Printing Press (a CLI library plus a factory skill) and its starter pack by giving Claude Code the links; Go must be installed first.
+  - Ask Claude Code to build a CLI for a site with no public API by researching it, then building and testing it; he says a site CLI took about 10 minutes.
+  - Store API keys in a .env file, never inside CLI scripts, and share CLIs with a team through a private repo.
+- **Tools / prices / numbers:**
+  - Printing Press: library of about 50 prebuilt CLIs (his figure); starter pack includes ESPN, Flight Goat, Movie Goat, Recipe Goat.
+  - Demo: a school CLI request sent about 260 tokens and got about 132,000 back, but only about 2,000 reached his context (his figures).
+  - Benchmark he cites: MCP used 35x more tokens than the CLI, with reliability at 72% versus 100% on harder tasks.
+  - Go (free language by Google) required.
+  - Named CLIs: Google's GWS CLI, GitHub CLI, Playwright CLI.
+- **Skills shown:** CLI design, tool-selection judgment (CLI vs API vs MCP), natural-language skill building, secret handling in .env, packaging repos for a team.
+- **Money angle:** none stated. Implied: building custom CLIs for sites without APIs and sharing them internally.
+- **Duet-relevant:** no
+- **Promo:** Uses his school community as the example dataset; no sales pitch.

@@ -1,0 +1,19 @@
+## 157. Claude Code + Paperclip Just Destroyed OpenClaw
+- **Link:** https://www.youtube.com/watch?v=HJ-dwefABss | **Length:** 21 min | **AI-relevant:** yes
+- **Teaches:**
+  - Paperclip is an open-source (MIT) dashboard for orchestrating a team of AI agents: org chart, goals, tickets, approvals, budgets.
+  - Launch it from a terminal; it serves a local dashboard, with a VPS option for remote access.
+  - Each agent has four instruction files (agents, heartbeat, soul, tools). Heartbeats wake agents on a schedule (every 4, 8 or 12 hours) to check tasks.
+  - Board-style use: set high-level goals, approve hires, and comment on issues; the CEO agent hires and delegates.
+  - Use a Claude Code project that holds the Paperclip repo and docs to set up and debug the company.
+- **Tools / prices / numbers:**
+  - Paperclip is free and open source; Nate says its GitHub has 36,000+ stars after a few weeks (his figure)
+  - Per-agent monthly budgets; spend shows only for API billing, not subscriptions
+  - Agent adapters: Claude Code, Codex, Cursor, OpenClaw; Sonnet 4.6 used for the CEO
+  - Skills can be added from GitHub URLs or skills.sh (front-end design and web design guidelines used)
+  - Company templates (G Stack, Superpowers, Agency Agents) import with agents and skills; one has 48 agents
+  - Routines (beta) for recurring jobs, with schedules, webhooks or terminal runs
+- **Skills shown:** agent org design, orchestration, Claude Code project setup, skill installation, secrets management
+- **Money angle:** none stated; the video is a tool walkthrough. A possible angle is setting up agent companies for clients.
+- **Duet-relevant:** yes, in part: heartbeat-driven, always-on agents with memory and tasks. It is team orchestration, not a personal assistant bot.
+- **Promo:** free 12-page guide via his free school community; "AI Automation Society" community (he says 300k+ members)

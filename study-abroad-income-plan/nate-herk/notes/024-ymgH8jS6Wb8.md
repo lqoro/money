@@ -1,0 +1,18 @@
+## 24. I Tested Jev on 12 Real Use Cases. My Honest Thoughts.
+- **Link:** https://www.youtube.com/watch?v=ymgH8jS6Wb8 | **Length:** 16 min | **AI-relevant:** yes
+- **Teaches:**
+  - Jev is a decision model, not a chat model. It returns yes/no with confidence, a pick-one category, or a 0-10 score, and writes no prose.
+  - Good fits: classifying or scoring large volumes (email, comments, posts, transcripts, clips, contracts) where speed and cost matter.
+  - Parallelize requests and use larger payloads. Nate's run on 1,000 emails dropped from 70 seconds to 6 seconds after a backend change.
+  - Limits: about 64k input tokens, and it cannot summarize, write or find themes. Pass its output to a stronger model for those.
+  - Before production, build a golden set (about 100 labeled cases) and compare Jev, Opus and Sol on accuracy and cost.
+- **Tools / prices / numbers:**
+  - Jev (TypeSafe; waitlist; also via Vercel gateway and OpenRouter). Diogo's claim, as Nate quoted it: 20-200x faster and 40-400x cheaper.
+  - 1,000 emails across 7 categories: about 9 cents. GPT-5.6 Luna took 5 min and 62 cents.
+  - One yes/no question on 1,000 emails: about 5 cents, 4 seconds; 237 yes, 763 no.
+  - Nate's console: about 20,000 requests for $0.85.
+  - Paper-trading demo: about $2/day to run 24/7 on Jev.
+- **Skills shown:** classification design, batch and parallel API use, evals, Chrome extension build, dashboard building.
+- **Money angle:** Sell classification pipelines (inbox triage, support routing, lead scoring, comment sorting, transcript tagging) priced per item or per month. No price points are stated. Start by proving accuracy on one client's labeled sample.
+- **Duet-relevant:** no
+- **Promo:** free "first AI automation client" SOP (link in description), aimed at AIS+ members.

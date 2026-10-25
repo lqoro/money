@@ -1,0 +1,17 @@
+## 14. I Tested Codex's $500/mo Ultrafast. What You Need to Know.
+- **Link:** https://www.youtube.com/watch?v=pY5_Ux_YJjo | **Length:** 9 min | **AI-relevant:** yes
+- **Teaches:**
+  - Ultrafast is a faster serving mode for OpenAI's Codex, available only on the new $500/month plan or via the API.
+  - To compare modes, run the same prompt in standard and ultrafast (both at extra-high reasoning) and measure time and weekly usage.
+  - On a large job (a 60-second vertical video from 11 minutes of narration and 145 GB of raw footage), ultrafast was faster and the output felt better, but it used far more quota.
+  - On a smaller job (turning a YouTube video into a resource guide), ultrafast was much faster for only a few extra points of usage.
+  - Key insight: use ultrafast only for short, time-critical tasks; for complex work, iterating at standard speed is better value.
+- **Tools / prices / numbers:**
+  - Marketed as up to 8x standard and 4x the regular fast mode, up to about 300 tokens/sec.
+  - Video task: 19 min (ultrafast) vs 50 min (standard); 17% vs 4% of weekly usage. Measured speedup about 2.5x.
+  - Guide task: 1 min 43 s vs 13 min; about 3% vs 1% of usage. Measured speedup about 7x.
+  - Ultrafast is coming to a newer model "soon" (model name garbled in captions).
+- **Skills shown:** AI coding agent workflows, benchmarking speed and quota, comparing output quality, AI-assisted video editing, summarizing long recordings.
+- **Money angle:** none
+- **Duet-relevant:** no (incidental: his comparison guides covered OpenAI Dots and Meta Muse personal agents)
+- **Promo:** none stated; the generated guides' footer links to "AIS+"

@@ -1,0 +1,16 @@
+## 169. I Taught Claude Code to Play Tetris... It Broke the World Record
+- **Link:** https://www.youtube.com/watch?v=l1jnOXc52NY | **Length:** 8 min | **AI-relevant:** yes
+- **Teaches:**
+  - Browser automation from inside Claude Code: it drives real tabs to fill forms, search a retailer, and download reports where no API exists.
+  - Training loop: have the agent play a game, screenshot the result, explain what went wrong, update its bot script, and retry until a target score is reached.
+  - Block runner bot hit a score of 10 on attempt six after it learned the right jump timing (double jumps helped).
+  - Tetris bot: a 2-second delay between moves made scores worse, so switching to instant hard drops improved results.
+  - Checkers: he plays the agent live and loses.
+  - Setup tip: in plan mode, ask Claude Code to research the best browser-control method and install it. It chose the Playwright CLI.
+- **Tools / prices / numbers:**
+  - Playwright CLI (browser control), Claude Code.
+  - Scores he reports: about 16,000 on the first Tetris run; 25,000+ with two parallel tabs (47k and 38k); about 4 million at one point, with a later claim of about 46 million (captions are unclear here). He says this passed a 40 million figure he looked up as the Tetris world record.
+- **Skills shown:** browser automation, iterative debugging of bot logic, feedback-loop prompting, parallel sessions, Playwright.
+- **Money angle:** none stated. He suggests browser automation for tasks without an API, and turning working scripts into skills.
+- **Duet-relevant:** no
+- **Promo:** none

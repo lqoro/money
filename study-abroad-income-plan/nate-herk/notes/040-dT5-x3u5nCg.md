@@ -1,0 +1,12 @@
+## 40. GPT-6 Astra Made This Entire Video
+- **Link:** https://www.youtube.com/watch?v=dT5-x3u5nCg | **Length:** 5 min | **AI-relevant:** yes
+- **Teaches:**
+  - A single open-ended prompt asked GPT-6 Astra to plan, research, collect clips and screenshots, script, and edit a finished video, with Nate's voice clone and a HeyGen avatar.
+  - The workflow: use computer use to open and capture source posts, split the narration into short segments, generate the avatar audio, then assemble the cuts in HyperFrames with timed camera moves, transitions, and music.
+  - Quality checks before delivery: export frames, transcribe the final audio, and compare it against the script, then fix any clipped titles or covered words.
+  - Key lesson, in Nate's framing: give an AI a clear finish line and let it run, but keep a human making the taste and feedback calls.
+- **Tools / prices / numbers:** GPT-6 Astra (fast mode); HeyGen Avatar V5; ElevenLabs voice clone; HyperFrames. Run took about 50 minutes. Nate estimates about $60 at API rates, and says fast mode would cost more (his figures). He had used two of his plan's usage resets and had half of a third left.
+- **Skills shown:** Agent task design, prompt briefs, AI video production, timeline editing in code, output verification.
+- **Money angle:** Video production as a service: a human sets the assignment and feedback, AI does the research, editing, and avatar work, and a buyer gets a finished file. Nate argues the value of the output outweighs the API cost. No price points for clients stated. To start, pick one small deliverable with a clear finish line.
+- **Duet-relevant:** no
+- **Promo:** none

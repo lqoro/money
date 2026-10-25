@@ -1,0 +1,13 @@
+## 287. APIs for AI Agents: The Only Beginner's Guide You'll Ever Need (n8n)
+- **Link:** https://www.youtube.com/watch?v=qZkX_gIlwsY | **Length:** 25 min | **AI-relevant:** yes
+- **Teaches:**
+  - Use a native n8n integration when one exists; use the HTTP Request node when it does not (Perplexity was the example).
+  - Read API docs in five parts: method, endpoint, query parameters, headers (usually auth), body.
+  - Import a curl command into n8n to pre-fill the request, then add your key.
+  - Save auth as a header credential so keys are not pasted into each node, and make the request an agent tool with a placeholder the model fills in.
+  - Read status codes: 200 is success, 400 usually bad JSON, 401 bad key, 403 no access, 404 wrong URL, 500 a server-side problem.
+- **Tools / prices / numbers:** n8n; OpenWeatherMap; Perplexity API; Tavily. No prices stated.
+- **Skills shown:** reading API docs, HTTP Request node, curl import, credential setup, JSON debugging, agent tool design
+- **Money angle:** none
+- **Duet-relevant:** no
+- **Promo:** paid community (member count garbled in transcript), courses Agent Zero and 10 Hours to 10 Seconds.

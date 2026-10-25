@@ -1,0 +1,16 @@
+## 116. Anthropic Just Dethroned OpenAI. Here's What Happens Next.
+- **Link:** https://www.youtube.com/watch?v=-nG-9vlSkho | **Length:** 8 min | **AI-relevant:** yes
+- **Teaches:**
+  - Business adoption data (a research article) shows Anthropic passing OpenAI for the first time in the cited dataset.
+  - Both labs are running promotions: free Codex months for companies switching from Claude Code, and temporary Claude Code limit increases.
+  - Heavy subscription use is currently priced well below API cost, so users are in a "free sample" phase.
+  - Advice: stay tool-flexible and keep projects portable so you can move between Codex, Claude Code and other agents within about an hour.
+  - Nate expects prices to rise later and warns against over-dependence on one vendor.
+- **Tools / prices / numbers:**
+  - Anthropic 34.4% vs OpenAI 32.3% of businesses (as cited, April data).
+  - Codex: 2 months free for companies switching (per Sam Altman's post, as cited); Claude Code: weekly limits up 50% through July 13.
+  - Nate's claim: a $200/month plan is far below equivalent API token cost (cited as 5 to 25x).
+- **Skills shown:** AI market analysis, tool portability, subscription economics
+- **Money angle:** none stated; advice is to use the cheap window, not a paid offer.
+- **Duet-relevant:** no
+- **Promo:** none; announces an upcoming Codex vs Claude Code comparison video.

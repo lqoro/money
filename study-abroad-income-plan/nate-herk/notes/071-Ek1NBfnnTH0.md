@@ -1,0 +1,13 @@
+## 71. Steal My Exact AI OS Setup (5 simple tips)
+- **Link:** https://www.youtube.com/watch?v=Ek1NBfnnTH0 | **Length:** 25 min | **AI-relevant:** yes
+- **Teaches:**
+  - Four context failure modes: poisoning (a false fact in the data), bloat (too much data), confusion (missing or irrelevant data the agent fills in), and clash (conflicting sources, such as an old and a new policy).
+  - Split context into expertise context (always loaded rules and identity) and situational context (pulled just in time).
+  - Use the top-level CLAUDE.md as a routing table that points to folders, not as a store of all facts.
+  - Run a periodic "audit" skill that checks routing, index-to-disk match, data freshness and duplication, and reports fixes for approval without changing anything.
+  - Segment knowledge into separate wikis (e.g., YouTube transcripts vs. meeting transcripts), set cron jobs to refresh data, and make the agent backtrack and fix its own routing after a wrong answer.
+- **Tools / prices / numbers:** Claude Code, Opus 4.8, GitHub, Codex, Fireflies (meeting transcripts), Apify, Modal, cron jobs. Audit took about 2 minutes and flagged a 55-folder index against 79 folders on disk and 52 index rows. Sponsor Hyper Agent (built by the Airtable team, cloud machine per agent) with a link for $1,000 in free credits (Nate's offer).
+- **Skills shown:** AI operating system design, context engineering, routing and folder architecture, skill authoring, cron automation, agent auditing, knowledge-base segmentation.
+- **Money angle:** Nate says businesses ask about syncing knowledge across teams and departments; he calls it a people and habit problem he is still exploring. Consulting that sets up an internal AI OS, client-segmented folders, and audit or cron retainers fits the content. He also published an agent council to the Hyper Agent marketplace. No prices stated.
+- **Duet-relevant:** no
+- **Promo:** Free school community (free OS audit skill under classroom, YouTube resources). Sponsor: Hyper Agent, with his link for $1,000 in free credits and his published agent council on its marketplace.

@@ -1,0 +1,16 @@
+## 167. Build & Sell with Claude Code (10+ Hour Course)
+- **Link:** https://www.youtube.com/watch?v=mpALXah_PBg | **Length:** 600 min | **AI-relevant:** yes
+- **Teaches:**
+  - Course outline (24 chapters, from setup through monetization; covers CLAUDE.md, deployment, RAG, MCPs, skills, sub-agents, browser automation, permissions and git worktrees).
+  - Build a newsletter automation in plan mode with the WAT framework (workflows as markdown, agent, tools), then fix real errors in a test run.
+  - Client delivery: self-host the workflow, let the client own API keys and pay for usage, and pass keys through a one-time secret link.
+  - Testing: use the client's real samples, plan for worst cases, run dozens of inputs, log every run, and check relevance, tone, safety and consistency.
+  - Handover: keep a test copy and a production copy, back up exported workflow JSON, label steps, record a short walkthrough, and document the build.
+- **Tools / prices / numbers:**
+  - Claude Code (Pro about $17/mo per him; he recommends Max), VS Code, Perplexity, Nano Banana via key.ai, Gmail, Google Sheets, n8n (self-hosted for clients), trigger.dev, Modal, Vercel.
+  - Market figures (his sources): about $7B now rising to about $93B; about $8B now rising to $40-50B by 2030; 25% of enterprises piloting, 50% by 2027.
+  - Community size: free AI Automation Society "hundreds of thousands" of members; paid Plus group "over 3,000" (his claims).
+- **Skills shown:** Claude Code workflow, plan mode, WAT framework, n8n and API integration, QA and evaluation, client handover, scope and contracts.
+- **Money angle:** Build agentic workflows (for example, a personal assistant wired to a client's CRM, calendar and email) and sell them as fixed-scope projects. Clients pay for their own API usage. Charge for the build on completion, then offer a maintenance retainer (bug fixes, tweaks, monitoring). New features go to a separate project. Put scope, payment, service levels and IP in a written agreement. He says a client found him through a YouTube video.
+- **Duet-relevant:** yes. The course includes building an AI executive assistant, and his sold example is a personal assistant that acts for the client.
+- **Promo:** free school community (resource guide, links in description); paid Plus community; upcoming high-ticket coaching and events.

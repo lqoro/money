@@ -1,0 +1,17 @@
+## 223. I Built the Ultimate UGC Content System with AI Agents (free template)
+- **Link:** https://www.youtube.com/watch?v=AYsg5gAMWyo | **Length:** 26 min | **AI-relevant:** yes
+- **Teaches:**
+  - Input lives in a Google Sheet: product photo, ideal customer profile, features, video setting, and status. Only rows marked "ready" are processed, one at a time.
+  - A Switch node routes each row to one of three paths: Veo 3.1 alone, Nano Banana then Veo 3.1, or Sora 2.
+  - Image step: an agent writes an image prompt that keeps the product unchanged, then the image model renders the product on a person.
+  - Video step: a second agent writes a selfie-style video prompt with dialogue, using an image analysis of the generated still for consistency. Remove line breaks and quotes so the JSON request does not break.
+  - Polling: wait, check status, loop until success, then update the row with the finished video URL.
+  - Sora 2 rejects realistic human photos; Veo does not. Sora cameos are his workaround.
+- **Tools / prices / numbers:**
+  - Nano Banana image about 2 cents; 8-second Veo 3.1 Fast video about 30 cents; total about 32 cents per piece (his figures).
+  - Sora 2 via the Kie-style marketplace (name as transcribed "Key AI"): about 15 cents for a 10-second video. He calls this about half the Veo cost.
+  - Generation: Veo about 80 seconds; Sora 1.5 to 3 minutes. His pick: Nano Banana plus Veo 3.1. Veo output had an orange tint and changed the product.
+- **Skills shown:** Google Sheets triggers and updates, agent prompt design, HTTP requests to media APIs, polling loops, multi-path routing
+- **Money angle:** Produce UGC-style ad variants for brands at low cost per clip. He says Sora gives about twice the volume for the same spend. No client prices given.
+- **Duet-relevant:** no
+- **Promo:** Free school community (free template, JSON file, Google Sheet template). Plus community (paid; builds shown live; courses including Agent Zero, 10 Hours to 10 Seconds, One Person AI Agency, and a projects course).

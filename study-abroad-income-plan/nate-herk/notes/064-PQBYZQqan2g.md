@@ -1,0 +1,13 @@
+## 64. Grok Bot is For Real. What You Need to Know.
+- **Link:** https://www.youtube.com/watch?v=PQBYZQqan2g | **Length:** 20 min | **AI-relevant:** yes
+- **Teaches:**
+  - Grok Bot is a cloud app for running several always-on AI agents, synced across desktop and phone. Each agent has a name, title and one-line description, and other agents use those descriptions to route work.
+  - Keep one job per agent. Nate says a single "mega agent" gets confused, and that agents can message each other and delegate.
+  - Connect accounts once (Gmail, Calendar, GitHub, Slack) and every agent can share them.
+  - Build routines on a schedule (e.g., weekday 7:00 a.m. morning plan) or on triggers such as a Slack message. Turn a recorded task into a reusable skill.
+  - Agents review their own dry runs and fix their instructions (Nate's observation).
+- **Tools / prices / numbers:** Grok Bot; Claude Code, Codex and Hermes Agent for comparison; Slack, Gmail, Google Calendar, GitHub, ClickUp. Nate says a Cursor Ultra plan is required (his statement). He shows 2% weekly usage and no price.
+- **Skills shown:** agent design, routing via descriptions, routine and trigger setup, Slack/Gmail/Calendar connectors, multi-agent delegation
+- **Money angle:** none stated. He frames it as personal productivity. He uses it for planning, reminders and team comms, and keeps deep coding on his desktop tools.
+- **Duet-relevant:** yes. This is an always-on personal agent team that acts for you across phone and desktop, which is close to the Duet concept.
+- **Promo:** Mentions his school community and a waitlist page for AI automation certification, which was built in the demo. No sponsor named.

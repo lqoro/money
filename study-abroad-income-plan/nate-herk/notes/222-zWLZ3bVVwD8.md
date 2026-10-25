@@ -1,0 +1,17 @@
+## 222. Learn Voice Agents Now, Thank Me Later (Full Beginner's Guide)
+- **Link:** https://www.youtube.com/watch?v=zWLZ3bVVwD8 | **Length:** 42 min | **AI-relevant:** yes
+- **Teaches:**
+  - Voice agent = speech-to-text, then an LLM, then text-to-speech. Four parts to set: model, system prompt, voice, and tools.
+  - Inbound (callers reach a number), outbound (agent calls people), and website widgets. Use cases: booking, support, reminders, surveys.
+  - Build in Vapi: pick a model, choose who speaks first, write the prompt in sections (identity, voice, conversation flow, if-then cases), and iterate after test calls.
+  - Give knowledge by uploading a file to the assistant, which is read directly rather than through a vector database.
+  - Connect tools: Vapi has native Google Calendar tools (check availability, create event). Add the current date and time to the prompt, or the agent books wrong dates.
+  - End-of-call report: Vapi posts a summary and extracted fields to an n8n webhook, which appends a row to Google Sheets and sends an email. Test webhooks only run while the workflow is executed; use the production URL once active.
+- **Tools / prices / numbers:**
+  - Vapi pay-as-you-go: 10 free credits at signup; about $10 buys about 18.5 credits (his figures). Up to 10 free US numbers.
+  - Models: GPT-4o mini default; switching to Anthropic cut latency noticeably in his test. Voices from ElevenLabs, Deepgram, OpenAI, and Vapi.
+  - Using your own provider keys is cheaper than Vapi's markup (his statement).
+- **Skills shown:** voice agent prompting, Vapi configuration, Google Calendar integration, webhooks, Google Sheets and Gmail nodes in n8n
+- **Money angle:** Voice agents for local service businesses (booking, customer questions, follow-ups). He demos a fictional car detailing business. He says the field has clear ROI and opportunity in 2026. No prices for client work.
+- **Duet-relevant:** no (these are business-facing call agents, not a personal assistant)
+- **Promo:** Paid community (200+ members per his statement). Courses Agent Zero, 10 Hours to 10 Seconds, One Person AI Agency. Weekly live call.

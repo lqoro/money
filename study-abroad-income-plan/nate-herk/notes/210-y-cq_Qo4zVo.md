@@ -1,0 +1,13 @@
+## 210. I Built an AI Voice Receptionist with Vapi and n8n MCP (free template)
+- **Link:** https://www.youtube.com/watch?v=y-cq_Qo4zVo | **Length:** 34 min | **AI-relevant:** yes
+- **Teaches:**
+  - Split a voice agent into two parts: the voice front end (Vapi assistant with its system prompt) and the back end (n8n automations).
+  - Wireframe the if-X-do-Y paths first: look up the caller by email, create a record if new, gather intent, then book, change, or cancel.
+  - Expose seven small, no-AI n8n workflows through one MCP server trigger. Each has a clear description so the voice model picks the right tool.
+  - Keep the reasoning in one place. An AI agent inside n8n would double cost and latency.
+  - Add a knowledge-base PDF for FAQs, a handoff tool for transfers, and an end-of-call webhook that logs summary and outcome.
+- **Tools / prices / numbers:** Vapi (free US numbers, up to 10 per account, per Nate), n8n MCP server, GPT-4.1, Google Calendar, Google Sheets, a 15-page resource guide. No prices stated.
+- **Skills shown:** voice agent prompting, MCP server setup, appointment logic, call logging, handoff routing
+- **Money angle:** A voice receptionist for a local business (the demo is a fictional detailing shop). No pricing stated.
+- **Duet-relevant:** no (business receptionist, not a personal agent)
+- **Promo:** Free school community (free n8n templates and PDF), Plus community (about 200 members, a 2-hour live build posted there), classroom courses.

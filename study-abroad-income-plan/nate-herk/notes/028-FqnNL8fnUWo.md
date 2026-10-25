@@ -1,0 +1,16 @@
+## 28. How to Build AI Automations (that don’t eat your usage limit)
+- **Link:** https://www.youtube.com/watch?v=FqnNL8fnUWo | **Length:** 35 min | **AI-relevant:** yes
+- **Teaches:**
+  - Codex's built-in scheduled tasks post into a chat thread, so they draw from your weekly usage limit. Move automations to an external host.
+  - Workflow: plan with the agent, have it build and self-test locally, push code to GitHub, then deploy to trigger.dev.
+  - Three types: scheduled (cron-style), webhook-triggered (e.g., a form submission), and Codex SDK agent loops for when a full agent must run programmatically.
+  - Sort each step as deterministic (fixed) or non-deterministic (AI decides). Use AI only where judgment is needed; fixed scripts do not drift.
+  - Keep API keys in one `.env` file, sync them to the host with the CLI, and test each run before enabling a schedule.
+- **Tools / prices / numbers:**
+  - Codex, trigger.dev (free plan; its scheduling window can delay a 6 a.m. start by up to an hour), GitHub, ClickUp, Google Calendar, Perplexity, OpenAI.
+  - Nate's test run of the morning brief cost about 1.33 cents; he caps research at 25 cents per run.
+  - Long SDK agent run: about 15 minutes, 44 tests (as stated).
+- **Skills shown:** Workflow automation, GitHub and CLI deployment, webhook design, Codex SDK agents, debugging hosted jobs, environment-variable management
+- **Money angle:** Nate pitches building automations for clients; no service prices stated. Start with a simple deterministic workflow for one client's recurring task on a cheap host.
+- **Duet-relevant:** Partly: a 6 a.m. weekday morning-brief DM that reads calendar events, but it is a scheduled script rather than a persistent chat agent.
+- **Promo:** Hyper Agent (sponsor; free credits via link); Nate's free SOP on landing a first automation client; his AIS Plus community.

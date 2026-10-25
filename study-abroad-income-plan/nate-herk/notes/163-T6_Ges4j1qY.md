@@ -1,0 +1,16 @@
+## 163. This $100M AI App Just Changed Software Forever
+- **Link:** https://www.youtube.com/watch?v=T6_Ges4j1qY | **Length:** 9 min | **AI-relevant:** yes
+- **Teaches:**
+  - Case study of Cal AI, a food-photo calorie tracker, built fast with AI coding tools and sold to a competitor.
+  - Start from a problem you or people around you have, then ship the simplest version quickly and iterate.
+  - Growth through creator marketing: find 20-30 fitness creators, pay a flat rate, give full creative freedom, and have the app appear in the first 15 seconds.
+  - Track each creator video's views against same-day downloads and revenue, then do more of what works.
+  - Retention for predictable revenue: a personal onboarding questionnaire, a one-action core flow, and streaks and dashboards to drive daily use.
+- **Tools / prices / numbers:**
+  - Tools named: Cursor, Lovable, Claude Code, Replit, Antigravity, and "Baseplate 4" (likely a garbled name).
+  - Subscription about $30 per year.
+  - Claims (Nate's claim): about $30M projected revenue for the year; 100M+ acquisition (experts' estimate, per Nate); 1M+ downloads within 3-4 months; over $1M/month revenue after 6 months; a friend's app at about $30k/month.
+- **Skills shown:** AI app building with vibe-coding tools, creator outreach, DM prospecting, attribution tracking, onboarding and retention design.
+- **Money angle:** Mobile or web app builders who can ship a single-purpose AI utility. Start by finding a problem in your own life, build a minimal version, then sell creator-led promotion with a flat-fee bundle. Price points stated: about $30/year subscription. Start with 20-30 niche creators and track results per video.
+- **Duet-relevant:** no
+- **Promo:** Nate's free school community, which has a free Cal AI-based roadmap file (join link in description).

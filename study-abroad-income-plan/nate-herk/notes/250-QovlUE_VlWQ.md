@@ -1,0 +1,18 @@
+## 250. This Workflow Auto-Posts to 9 Different Socials (free template)
+- **Link:** https://www.youtube.com/watch?v=QovlUE_VlWQ | **Length:** 10 min | **AI-relevant:** yes
+- **Teaches:**
+  - Use a verified community node (Blotato) instead of hand-built HTTP requests. One API key credential serves every platform node.
+  - Use a Google Sheet as a posting queue: pull the first row with status "ready to post", upload its media, post, then write the status back.
+  - If media lives in Google Drive, extract the file ID and re-link the URL first. Public URLs or binary data skip that step.
+  - Pinterest needs a board ID, which he finds in the browser network inspector. Some platforms require account verification before API posting works.
+  - To post several times a day, use several scheduled triggers spaced a few minutes apart, each pulling one row.
+- **Tools / prices / numbers:**
+  - Blotato: discount code Nate30 for 30% off for six months; he says he is not paid to promote it and has used it in past builds.
+  - Google Sheets (queue and status column), Google Drive (media), n8n with verified community nodes enabled in the admin panel.
+  - Nine social channels are covered by the template.
+  - Example schedule: six triggers, each five minutes apart, for six posts a day.
+  - He notes the template's error handling is light: an errored row is marked, but a failing node can skip the status update.
+- **Skills shown:** n8n community nodes, Google Sheets as a data queue, social platform setup, Drive file-ID extraction, basic error handling.
+- **Money angle:** None stated. Sellable as a setup-and-maintain auto-posting service for creators or small brands, with the sheet as the client-facing input.
+- **Duet-relevant:** no
+- **Promo:** Blotato code Nate30 (see above); free school community (template, setup guide, JSON file); Plus community (monthly hackathons, classroom courses "Agent Zero" and "10 Hours to 10 Seconds").

@@ -1,0 +1,13 @@
+## 199. Claude Code is Better at n8n than I am (Beginner's Guide)
+- **Link:** https://www.youtube.com/watch?v=B6k_vAjndMo | **Length:** 28 min | **AI-relevant:** yes
+- **Teaches:**
+  - Describe a manual process to a chatbot, paste its output into Claude Code, and ask for an n8n workflow. Claude builds a to-do list, searches node docs, and fixes its own node-config errors (about 3 minutes in his run).
+  - Write a claude.md project prompt in plan mode, with questions about the n8n MCP and skills, then auto-accept it.
+  - Install the n8n MCP server and seven n8n skills; restart Claude Code to load them; test with a node search.
+  - Plan-mode loop: answer clarifying questions (email, search provider, time zone), review the plan, then build the workflow on his instance.
+  - Limits: a 60-node build stalled his cloud instance for over an hour (522 error on his side). Self-hosting would let him restart it.
+- **Tools / prices / numbers:** VS Code, Claude Code (Opus per his description), n8n cloud, n8n MCP, n8n skills, Perplexity for search, OpenRouter with GPT-5 and Sonnet models (he notes the models were set wrong), Gmail node. No prices stated.
+- **Skills shown:** plan-mode prompting, MCP and skill installation, API key setup, n8n workflow debugging, prompt writing for research and HTML email agents.
+- **Money angle:** none stated. Context: he runs an AI automation agency focused on voice agents and says the demo newsletter is for that niche.
+- **Duet-relevant:** no (scheduled daily research newsletter, not a persistent assistant on a messaging app)
+- **Promo:** Free school community (claude.md file, free); Plus community mentioned for wireframing.

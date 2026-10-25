@@ -1,0 +1,17 @@
+## 366. How to Create an RAG Chatbot AI Agent with n8n (No Code, Step-by-Step Tutorial)
+- **Link:** https://www.youtube.com/watch?v=6w0MshwAqBQ | **Length:** 17 min | **AI-relevant:** yes
+- **Teaches:**
+  - Workflow 1 (ingest): manual trigger, Google Drive download of a PDF as binary, then insert into a Pinecone index under a namespace.
+  - Set the default data loader to binary; with the default JSON setting nothing reached Pinecone (his mistake, shown on screen).
+  - Use a recursive character text splitter with a large chunk size for a long PDF; overlap left at zero.
+  - Workflow 2 (chat agent): chat trigger, tools agent, GPT-4o, window memory of 5 messages, and a Pinecone retrieval tool pointed at the same namespace.
+  - Prompt the agent with background, context, instructions, and a "answer concisely" rule; he says prompting often fixes errors that look like tool bugs.
+  - Use a screenshot of the workflow in a chat assistant to get prompt help.
+- **Tools / prices / numbers:**
+  - n8n, Pinecone (embedding model text-embedding-3-small, index named "sample"), Google Drive API, OpenAI GPT-4o and embeddings
+  - Demo document: a public Apple PDF on iOS 18 features
+  - He says GPT-4o mini is "a little cheaper" but does not give prices
+- **Skills shown:** vector database ingestion, embeddings, binary file handling, namespaces, RAG agent setup, prompt design, execution debugging
+- **Money angle:** Document Q&A bots for businesses with manuals, policies, or product docs. Build the ingestion once, then sell the chat front end to the client. No price points stated.
+- **Duet-relevant:** no
+- **Promo:** none

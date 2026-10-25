@@ -1,0 +1,16 @@
+## 367. How to Create an AI Email Agent with n8n (No Code, Step-by-Step Tutorial)
+- **Link:** https://www.youtube.com/watch?v=YFrej2oSldo | **Length:** 29 min | **AI-relevant:** yes
+- **Teaches:**
+  - Workflow 1: load contacts from a Google Doc into a Pinecone index (insert mode, namespace "context", token splitter at 200 characters).
+  - Workflow 2: a Gmail "send a message" tool. An LLM step parses the agent's query into to, subject, and body; wrap the input in `JSON.stringify` so the fields arrive as strings; finish with a Set node `response = sent`.
+  - Workflow 3: a chat-triggered tools agent with two tools (the send-email workflow and a contacts vector store), GPT-4o, and a system prompt that tells it how to sign off.
+  - Paste the tool's parameter schema into the agent so it knows what fields to fill.
+  - Debug with "return intermediate steps" and the execution log; a screenshot of the workflow helped the chat assistant write the prompt.
+- **Tools / prices / numbers:**
+  - n8n, Pinecone (described as very cheap, usage-based; no figure given), Google Docs, Gmail, OpenAI GPT-4o and text-embedding-3-small
+  - Demo contacts: a few personal contacts
+  - No prices stated
+- **Skills shown:** RAG-style contact lookup, tool schemas, Gmail node wiring, JSON stringify handling, prompt writing, error debugging via execution logs
+- **Money angle:** Email assistants for executives or small teams that look up a contact and send mail on request; price per seat or per setup not stated. He says future versions could add calendar and Drive tools.
+- **Duet-relevant:** yes - a chat-driven agent that sends email for the user on request; he describes it as the start of a "complete personal" agent.
+- **Promo:** none

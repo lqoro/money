@@ -1,0 +1,16 @@
+## 281. Build & Sell n8n AI Agents (8+ Hour Course, No Code)
+- **Link:** https://www.youtube.com/watch?v=Ey18PDiaAYI | **Length:** 507 min | **AI-relevant:** yes
+- **Teaches:**
+  - Agent anatomy (LLM brain, memory, system prompt, tools) and when a fixed AI workflow beats an agent (deterministic steps are cheaper and more reliable).
+  - n8n basics: triggers, node input/config/output, data types, JSON mapping, pinned data, active vs test runs.
+  - APIs and HTTP Request: method, endpoint, query/header/body parameters, import-curl, saving auth as a credential, reading 200/400/401/500 errors, polling for async jobs.
+  - Builds: RAG chatbot (Google Drive to Pinecone to agent), Gmail support bot, LinkedIn post from a Sheet, invoice extraction into Sheets plus email, image-then-video product ads (OpenAI image, ImgBB upload, Runway).
+  - Reactive prompting (add one prompt line per observed error), output parsers, human-in-the-loop, error workflows, orchestrators, webhooks, a voice agent, MCP servers.
+- **Tools / prices / numbers:**
+  - n8n 14-day free trial; OpenAI, OpenRouter, Pinecone, Tavily (1,000 free searches/month), Perplexity, Firecrawl (500 free credits), Apify (4,500+ actors), Runway (his figures: $0.25 for 5 s, $0.50 for 10 s), Brave Search (2,000 free queries), a managed n8n host.
+  - OpenAI gpt-image-1 costs as he read them: roughly 17 cents for one generated image.
+  - Nate's claim: a 2025 research summary he generated says the median small-business AI spend is $1,800/yr; not verified.
+- **Skills shown:** n8n building, API integration, Google Cloud OAuth setup, prompt design, RAG, agent debugging, self-hosting.
+- **Money angle:** Nate's claim: over $500k revenue in 8 months from his agency and teaching. Client builds he cites: support email bots, invoice processing, lead scraping, product-ad generators. No client prices stated.
+- **Duet-relevant:** yes, the Telegram "ultimate assistant" and the ElevenLabs voice assistant (Archer) act for the user across email, contacts and calendar.
+- **Promo:** free school community (about 100 templates; 23-workflow zip); paid community (700+ members per the video, five live calls a week, classroom and a new step-by-step course); Apify code "30 Nate Herk" for 30% off; Firecrawl code "herk10" for 10% off a year; a Lovable sign-up link for extra credits; a Whisper Flow link.

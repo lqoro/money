@@ -1,0 +1,12 @@
+## 286. This AI System Creates & Posts Faceless Shorts 24/7 (free n8n template)
+- **Link:** https://www.youtube.com/watch?v=jkEEVYFzT1U | **Length:** 31 min | **AI-relevant:** yes
+- **Teaches:**
+  - Trigger on a Google Sheets row marked to-do (one row at a time), then have an LLM generate eight opponents for a main character.
+  - Build close-up image prompts with a structured output parser, generate images in bulk, wait about 90 seconds, then fetch results (he notes polling would be more robust).
+  - Generate "winner" images in a second pass, then write all URLs back to the sheet, matching rows on the main character column.
+  - Render the 8 split-screen scenes with a Creatomate template via API, upload to Blotato, and post to Instagram, TikTok and YouTube.
+- **Tools / prices / numbers:** n8n; OpenRouter (GPT-4.1 mini and GPT-4.1); PiAPI Flux, about 1.5 cents per image; Creatomate Essential at $41/month (2,000 annual credits, about 17 credits per render, roughly 35 cents per render by his math); Blotato Growth at $29/month. Nate estimates under $1 per run total, LLM cost about 1 cent.
+- **Skills shown:** n8n data transformation, split and merge, structured output, image API calls, video render APIs, multi-platform publishing, Google Sheets as a database
+- **Money angle:** Faceless shorts run on autopilot; he frames it as a channel you can run hands-off. He cites another channel with 680k subscribers and 221M views (his figures, not his own). No price point set for a client product. Start by importing the template and swapping in your niche prompts.
+- **Duet-relevant:** no
+- **Promo:** free school community (JSON and Sheets template); paid community (about 1.5K members), courses Agent Zero and 10 Hours to 10 Seconds, live calls.

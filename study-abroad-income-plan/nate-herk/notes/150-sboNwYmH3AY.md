@@ -1,0 +1,18 @@
+## 150. Andrej Karpathy Just 10x'd Everyone's Claude Code
+- **Link:** https://www.youtube.com/watch?v=sboNwYmH3AY | **Length:** 18 min | **AI-relevant:** yes
+- **Teaches:**
+  - Karpathy's "LLM knowledge base" pattern: a raw folder of sources, an LLM-maintained wiki folder, an index file, a log, and a CLAUDE.md schema that defines the rules.
+  - Setup: create an Obsidian vault, paste the idea file into Claude Code, and let it create the folders. Clip web articles into the raw folder with Obsidian Web Clipper, and point the clipper's default folder at raw.
+  - Ingest: Claude reads a source and writes several linked wiki pages. He saw about 25 pages from one article, and 23 pages from a batch of 36 transcripts.
+  - Maintenance: a "lint" pass checks for inconsistencies and gaps. A hot-cache file stores recent context for his executive-assistant project.
+  - Other projects can read the wiki through its index. That is how he reuses it.
+- **Tools / prices / numbers:**
+  - Obsidian (free) and the Obsidian Web Clipper extension.
+  - Ingest time: about 10 min for one article, about 14 min for the 36-transcript batch.
+  - Karpathy's example scale: about 100 articles, about half a million words (as quoted).
+  - Nate reports an X user's claim of a 95% token drop after compiling 383 files into a wiki (his claim, not verified).
+  - Limit he notes: plain markdown works in the hundreds of pages. At millions of documents, traditional RAG is needed.
+- **Skills shown:** knowledge-base design, Obsidian, CLAUDE.md schema writing, web clipping, project organization, lint checks
+- **Money angle:** none stated. He treats the wiki as a personal or business second brain.
+- **Duet-relevant:** one line: he uses the wiki as the business-context source for his executive-assistant agent, but the video is about the knowledge base itself.
+- **Promo:** points to his own executive-assistant video; no paid promo.

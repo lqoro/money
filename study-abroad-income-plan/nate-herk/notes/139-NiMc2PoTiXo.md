@@ -1,0 +1,17 @@
+## 139. Claude Opus 4.7 Just Dropped... Or Did It Really?
+- **Link:** https://www.youtube.com/watch?v=NiMc2PoTiXo | **Length:** 17 min | **AI-relevant:** yes
+- **Teaches:**
+  - Opus 4.6 seemed to degrade. Nate cites an AMD director's analysis of about 7,000 Claude Code sessions: thinking depth fell and file reads before edits dropped (his claim).
+  - Behavior can change without a new model. Adaptive thinking and a lower default effort level reduced reasoning, and Nate says the change was silent.
+  - Check your effort setting in the desktop app or terminal. Opus 4.7 adds an xhigh level (low, medium, high, xhigh, max).
+  - Test a model yourself: run the same prompt on two models and compare, as he did with a finance chart and a SaaS model.
+  - Expect higher token use: the updated tokenizer costs about 1 to 1.3 times more for the same input.
+- **Tools / prices / numbers:**
+  - Claude Code desktop app, VS Code extension, Opus 4.6 vs 4.7, Claude web app. A $200/month plan is referenced.
+  - Nate's claims: thinking depth fell 73% (2,200 to 600 characters); reads before edits fell from about 6% to 33.7%.
+  - Benchmark claim: a viral leaderboard dropped Opus 4.6 from 83.6% to 68.3%.
+  - Opus 4.7 system card is 232 pages.
+- **Skills shown:** model evaluation, effort settings, prompt testing, token management, reviewing vendor claims
+- **Money angle:** none
+- **Duet-relevant:** no
+- **Promo:** none

@@ -1,0 +1,14 @@
+## 66. Build & Sell AI SaaS Products (2 HOUR COURSE)
+- **Link:** https://www.youtube.com/watch?v=IVx8OSMbTss | **Length:** 143 min | **AI-relevant:** yes
+- **Teaches:**
+  - A six-P framework: pain, promise, product, plumbing, packaging, proof. Validate before building.
+  - Mine pain points with sub-agents: they scraped YouTube comments, community posts, X and Reddit, then ranked ideas.
+  - Use one agent as project manager and orchestrator. Specialist agents do one job each in parallel, and a separate agent verifies the result. Keep a shared plan doc.
+  - Have a second model QA the build. Codex with computer use found launch blockers. A security review found more.
+  - Build the plumbing with Supabase (auth and database), Stripe (sandbox first) and Vercel (deploy plus a custom domain from GitHub).
+  - Launch with a waitlist page, then a free watermarked first deck, then a paid plan.
+- **Tools / prices / numbers:** Claude Code, Codex, Glido (voice). Supabase, Stripe, Vercel, GitHub. The built app ("Client Pack") is priced at $39/month (or $390/year). Nate's estimates: about $0.16-0.20 of AI cost per deck, roughly $3 per user per month at the cap. Supabase Pro about $25/month and Vercel about $20/month. Domain $11.25. Total build about 7-8 hours.
+- **Skills shown:** product ideation from scraped data, agent orchestration, verification and security review, Stripe and Supabase setup, Vercel deployment, pricing and launch strategy
+- **Money angle:** Sell a SaaS that turns sales-call transcripts into branded proposal decks, aimed at AI agency owners. Nate's advice: offer a free deck to reach the "aha" moment, then charge. Subscriptions are harder to sell to cold buyers. The moat is proof, data and your prompts, not the code. Do things that don't scale first (community posts, creators paid by the post, then organic content). Track sign-ups, activation and paid conversion weekly.
+- **Duet-relevant:** no
+- **Promo:** Free school community (almost 400,000 members per Nate). He says he co-founded or joined Glido, the voice tool he uses and presents, which is a conflict to flag. Free resources in the classroom. Mentions a free YouTube course on Claude Code basics.

@@ -1,0 +1,13 @@
+## 99. How to Build Claude Subagents Better Than 99% of People
+- **Link:** https://www.youtube.com/watch?v=e18sdZLwP7o | **Length:** 27 min | **AI-relevant:** yes
+- **Teaches:**
+  - A subagent gets a fresh context window, so heavy reading or research stays out of the main chat. The main session acts as orchestrator and receives only the report.
+  - A custom subagent is a markdown file with YAML front matter: name, description, tools, model, color, memory. The description is the trigger, so tune it when the agent misfires.
+  - Restrict tools (for example, read-only) to enforce limits in configuration rather than asking the agent in the prompt.
+  - Delegate bulky reading or summarizing to a cheaper model such as Haiku and keep the expensive model for planning.
+  - Use subagents for large output, repeated jobs, independent parallel work, or an unbiased fresh review. Skip them for quick edits or steps that depend on each other.
+- **Tools / prices / numbers:** Claude Code (desktop app, terminal, VS Code); Opus, Sonnet, Haiku. A plan-critique subagent used about 22.8K tokens without filling the main session. Dynamic workflows reportedly ran 41 subagents at once in one example; another test used 210 and consumed session limits fast. No prices stated.
+- **Skills shown:** subagent authoring, YAML front matter, tool and model restriction, description tuning, delegation strategy, parallel orchestration
+- **Money angle:** none
+- **Duet-relevant:** no
+- **Promo:** Nate's free school community (Classroom, "All YouTube resources") for the slide deck and GitHub resources

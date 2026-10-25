@@ -1,0 +1,13 @@
+## 237. n8n's NEW Native Data Tables Just Made Building Agents So Much Easier
+- **Link:** https://www.youtube.com/watch?v=QCjMBOEhpLE | **Length:** 15 min | **AI-relevant:** yes
+- **Teaches:**
+  - n8n now has native data tables (a Data Tables tab) with string, number, boolean and date columns, stored inside n8n with no credentials or external API.
+  - Import rows from Google Sheets into a data table with a node that offers get, insert, update, upsert and delete operations, then map columns and match data types.
+  - Give an agent data-table query tools with filters (for example, email equals the incoming sender), so it pulls only the matching rows rather than the whole table.
+  - Let an agent answer sales questions by querying rows by product name, date or ID and using a calculator tool to sum or average.
+  - Keep the data set small and filtered, since sending hundreds of rows to a model adds tokens, cost and hallucination risk.
+- **Tools / prices / numbers:** n8n data tables node, Gmail trigger, Google Sheets, a calculator tool. Timing test by Nate (one run each, his numbers): 400 rows, Sheets 280 ms vs data table 2,511 ms; 60 rows, Sheets 1,700 ms vs 300 ms; 20 rows, Sheets 1,700 ms vs 97 ms; 2 rows, Sheets 1,600 ms vs 11 ms. Sales example total of $546 for one product (demo data). No prices.
+- **Skills shown:** n8n data tables, filtered lookups, agent tool design, system prompts for data analysts, sheet-to-table migration, basic latency testing.
+- **Money angle:** Build a "sales data" or CRM-style agent for a small business that answers questions from its own data, or an email reply agent that uses stored contact notes. Price as a setup plus ongoing agent. No price points stated.
+- **Duet-relevant:** no
+- **Promo:** Free "school" community (workflow JSON and sample sheets are posted there under YouTube resources); paid "Plus" community with 200+ members; courses Agent Zero, 10 Hours to 10 Seconds, and a One Person AI Automation Agency course for annual members.

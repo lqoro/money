@@ -1,0 +1,13 @@
+## 294. OpenAI's Image API Just Changed the Game (save 10+ hours/week, n8n tutorial)
+- **Link:** https://www.youtube.com/watch?v=ACkHpQQnfxQ | **Length:** 18 min | **AI-relevant:** yes
+- **Teaches:**
+  - A form collects email, topic and target audience.
+  - A LinkedIn post agent researches with Tavily and drafts the post; an image-prompt agent turns the post into a graphic prompt.
+  - Call the OpenAI image generation endpoint with an HTTP Request node, using curl import to pre-fill it.
+  - Convert the base64 result into a binary file, then email the post and image (he sent it to himself instead of posting).
+  - Fixes from the demo: the "n" parameter must be an integer (1-10), and the OpenAI organization must be verified with billing set up before the model is accessible.
+- **Tools / prices / numbers:** n8n; OpenRouter (GPT-4.1); Tavily (about 1,000 free searches per month); OpenAI image output at $40 per million tokens, about 17 cents for his run; stated per-image costs of about 2, 7 and 19 cents for low, medium and high quality.
+- **Skills shown:** HTTP Request node, curl import, base64 to binary, prompt chaining, email delivery, API key handling
+- **Money angle:** none stated. Use case: LinkedIn posts with graphics; he says the manual version takes about 20 minutes in Canva. No price points set.
+- **Duet-relevant:** no
+- **Promo:** free school community (JSON template); paid community containing an API and HTTP request deep dive.

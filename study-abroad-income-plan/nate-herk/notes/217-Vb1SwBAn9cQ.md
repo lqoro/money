@@ -1,0 +1,17 @@
+## 217. Build ANYTHING with Gemini 3 Pro and n8n AI Agents
+- **Link:** https://www.youtube.com/watch?v=Vb1SwBAn9cQ | **Length:** 24 min | **AI-relevant:** yes
+- **Teaches:**
+  - Connect Gemini to n8n three ways: the native Google Gemini node, the Gemini chat model in an agent, or OpenRouter.
+  - Native n8n Gemini nodes do not expose "thinking level" (only a thinking budget). To set it to low, he sends a raw HTTP request to the Gemini API.
+  - Long context: pasting a full 121-page 10-K into the system prompt and running an n8n evaluation over 10 questions.
+  - Image analysis: Gemini and OpenAI both described a flowchart and damage photos; Gemini gave more detail. His take is to use Gemini for image tasks.
+  - Tool calling is broken in n8n: Gemini 3 needs "thought signatures" returned with each function call, and the native node does not pass them. The tool runs, but the follow-up call errors.
+- **Tools / prices / numbers:**
+  - Gemini 3 Pro preview: 1M-token input and 64K-token output (his figures). Free in Google AI Studio; paid over the API.
+  - Price comparison shown: 2.5 Flash-Lite about $0.10 in and $0.40 out per 1M tokens; 2.5 Flash about $0.30 in and $2.50 out. Gemini 3 Pro is priced above 2.5 Pro (exact figure not stated).
+  - Release benchmarks he cites: Vending-Bench 2 about $5.5K vs about $3.9K for Claude Sonnet 4.5 (his figures).
+  - Apple 10-K eval: Gemini 3 Pro 4.6/5 (about 98K tokens per run); Gemini 2.5 Flash 4.5; GPT-5 mini 4.6.
+- **Skills shown:** n8n model connections, HTTP Request nodes, evaluations, system-prompt context loading, testing across models
+- **Money angle:** Implied: image intake for maintenance tickets or damage reports, and long-document Q&A. He gives no prices. His point: pick the model per use case using evals, not by reputation.
+- **Duet-relevant:** no
+- **Promo:** Free school community (free workflow download). Plus community (paid; courses Agent Zero, 10 Hours to 10 Seconds, One Person AI Agency, Subs to Sales; weekly live call).

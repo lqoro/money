@@ -1,0 +1,16 @@
+## 352. AI Personal Assistant 2.0 | This Agent Calls Other Agents (No Code) in n8n
+- **Link:** https://www.youtube.com/watch?v=9G-5SiShBKM | **Length:** 27 min | **AI-relevant:** yes
+- **Teaches:**
+  - Architecture: one Telegram-triggered main agent routes to four sub-agents (email, calendar, research, projects). Each sub-agent is its own n8n workflow, attached as a tool. This replaces six flat tools.
+  - Each sub-agent starts with an Execute Workflow trigger and returns its result in a field named `response`. With "continue using error output", failures go back to the main agent so it can retry.
+  - Look up contacts in a Google Sheet before any email or invite, enforced in the system prompt.
+  - Research tiers: Wikipedia first, then Hacker News, then a paid search API last to save credits. Nate says it mostly used the free sources.
+  - Give the agent current date and time, and keep each agent's tool count low (Nate suggests about 10 as a ceiling).
+  - Use `$fromAI` with a key and description to extract start time, end time, attendees, and event title from a request.
+- **Tools / prices / numbers:**
+  - n8n, Telegram, Gmail, Google Calendar, Google Sheets (contacts and projects), Slack, Pinecone (knowledge base), OpenAI GPT-4o mini, Wikipedia, Hacker News API, SerpAPI (Nate: "can get a little pricey").
+  - Demo knowledge base is a fictional body shop: oil change $35 standard, $65 synthetic (Nate's demo data).
+- **Skills shown:** multi-agent orchestration, sub-workflow design, error routing, prompt design for tool routing, Pinecone knowledge base.
+- **Money angle:** none stated. The demo points to service businesses (for example, an auto shop) using an assistant for staff or customer questions. No pricing is given.
+- **Duet-relevant:** yes. A Telegram assistant that acts on your behalf across email, calendar, and Slack is a direct match.
+- **Promo:** free school community, where the template is uploaded. No sponsor mentioned.

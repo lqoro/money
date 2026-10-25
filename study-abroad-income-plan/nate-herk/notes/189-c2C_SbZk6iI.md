@@ -1,0 +1,17 @@
+## 189. How to Sign Your First AI Automation Client in 7 days (With Proof)
+- **Link:** https://www.youtube.com/watch?v=c2C_SbZk6iI | **Length:** 21 min | **AI-relevant:** yes
+- **Teaches:**
+  - Guest Christian's story: positioning as a guide and partner, not a template seller, plus a discovery-call approach focused on finding pain points.
+  - A 7-day warm-first plan: day 1 write a loose offer hypothesis and a list of 20 trusted contacts; days 2-3 hold 5-10 low-pressure conversations; days 4-5 pick the clearest pain and offer a small free pilot; days 5-6 build a simple MVP and note the client's language; day 7 offer maintenance or expansion, then ask for a testimonial, then referrals.
+  - Cold outreach comes last, after a few warm cycles give proof.
+  - Pricing: trust before retainers; value-based pricing (Nate links a separate video).
+  - Handle the three hurdles: impostor feeling, pricing too early, and rejection (treat each as feedback).
+- **Tools / prices / numbers:**
+  - Christian's first client: $1,500 (later raised to $2,000) for a project-manager update assistant; second client came from a community post within about 3 days (Nate's and Christian's account).
+  - Earlier cold email tool stack mentioned: LinkedIn scraping, AI-written emails, Instantly; about 450 sends a day with no buyers.
+  - Nate's example: one $10K/month client beats five $2K/month clients.
+  - Nate's claim: the method works within 7 days; Christian closed in 5.
+- **Skills shown:** warm outreach, discovery calls, positioning, pilot scoping, value-based pricing, maintenance/expansion offers, testimonials
+- **Money angle:** Sell AI workflows to local or small businesses. Start with a free pilot, then charge $1,500-$2,000 for a first build (Christian's numbers). Upsell maintenance (monthly) and expansion (bigger scope). Ask for testimonials and intros after proof.
+- **Duet-relevant:** no
+- **Promo:** Free school community (resource guide); plus community (paid, with Christian as a member); Nate's paid video on making money with AI (linked).

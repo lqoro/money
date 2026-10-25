@@ -1,0 +1,12 @@
+## 289. My Proven AI Agent Formula Explained
+- **Link:** https://www.youtube.com/watch?v=Nj9yzBp14EM | **Length:** 15 min | **AI-relevant:** yes
+- **Teaches:**
+  - Five-step playbook: learn foundations (LLMs, JSON, APIs, RAG basics) before building; pick high-ROI processes; process-map every step on paper first; choose a workflow over an agent when the steps are fixed; then prototype with guardrails.
+  - Score candidate processes on four tests: repetitive, time-consuming, error-prone, scalable. Scalable matters most because the payoff compounds as volume grows.
+  - Map each process as trigger, data sources, transformation, decision points and destination.
+  - Fix edge cases by pattern: add conditional checks, retries or sub-workflows once you see a repeated failure.
+- **Tools / prices / numbers:** n8n; Gmail and Pinecone as examples; no prices. Nate's claim: the method generated over $240,000 in the past 6 months.
+- **Skills shown:** process mapping, workflow vs agent design, JSON and APIs, RAG concepts, guardrails and debugging
+- **Money angle:** Nate's claim: $240,000 in 6 months from these builds. Sell automation of repetitive, high-volume business processes; no specific price points stated. Start by listing one repeated process and mapping it step by step.
+- **Duet-relevant:** no
+- **Promo:** paid course "10 Hours to 10 Seconds" (11+ hours), "Agent Zero" foundations course, paid community (member count garbled), five live calls per week.

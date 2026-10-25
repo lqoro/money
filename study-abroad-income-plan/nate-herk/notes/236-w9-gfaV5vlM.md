@@ -1,0 +1,13 @@
+## 236. Stop Selling AI Agents, Sell AI Solutions Instead
+- **Link:** https://www.youtube.com/watch?v=w9-gfaV5vlM | **Length:** 14 min | **AI-relevant:** yes
+- **Teaches:**
+  - Sell business outcomes (time, money, focus) instead of agents or workflows, which are commoditized.
+  - Use a four-step framework: diagnose the pain, solve it with a simple system, convert the fix to dollar value, then price at a fraction of that value.
+  - Pick one niche whose processes repeat weekly and whose buyers pay quickly, then interview 5 to 10 businesses (listen, repeat back, quantify).
+  - Prototype one fix in about 1.5 hours (flow sketch, rough n8n build, short recorded demo), and avoid multi-agent builds and overengineering.
+  - Build proof with the first 3 to 5 projects (free or cheap work, or a money-back guarantee), then collect before/after numbers as case studies.
+- **Tools / prices / numbers:** n8n for the prototype. Example math: 10 hours a week at $25/hour is about $12,000 a year, 60% automated, priced at $3,000. Nate's claims: first workflow sold for $1,200; projects have ranged from $1 to $2,000 up to $30,000+ (Nate's claim); the $1,200 build took about 2 hours (Nate's claim).
+- **Skills shown:** Discovery calls, pain quantification, ROI math, scope writing, proposal pricing, demo recording, case-study building.
+- **Money angle:** Sell to niches like agencies, real estate, e-commerce, coaches, and local services (dental, HVAC). Pitch a fixed-price "solution" tied to hours or dollars saved, with a scoped written proposal. Start with 3 to 5 low-price or free pilot projects, then raise prices. Example start points: a $1,200 first build, a $3,000 onboarding automation.
+- **Duet-relevant:** no
+- **Promo:** Free "school" community (resource summary posted there); paid "Plus" community with 2,000+ members and the "One Person AI Agency" course.

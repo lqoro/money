@@ -1,0 +1,17 @@
+## 135. How to Never Hit Your Claude Session Limit Again
+- **Link:** https://www.youtube.com/watch?v=_qZvORxGqI0 | **Length:** 25 min | **AI-relevant:** yes
+- **Teaches:**
+  - Context is everything Claude Code can see at once. Startup overhead alone can be thousands of tokens, so run /context in a fresh session to check.
+  - Each message rereads the whole chat, so cost compounds. Quality also decays as sessions grow ("context rot"). Auto-compaction near 95% is too late, so he resets earlier, around 120k tokens.
+  - Reset tools: /rewind to drop failed attempts, then a summary plus /clear handoff (he uses a custom /session handoff skill), and sub-agents on cheaper models for research.
+  - Cut waste: convert HTML, PDF and DOCX to Markdown, keep CLAUDE.md short, plan before building, and split big projects into discovery, planning and execution sessions.
+  - Track where tokens go with a usage dashboard (sessions, input and output, cache reads, costly prompts).
+- **Tools / prices / numbers:**
+  - Startup overhead of about 8k tokens; he once saw 62k on a fresh session (his claim).
+  - Retrieval accuracy falls from 92% at 256k tokens to 78% at 1M (cited study).
+  - Markdown conversion savings: about 90% for HTML, 65-70% for PDF, about 33% for DOCX (his figures).
+  - Docling for conversion; /btw for side questions; a list of about 10 token-saving GitHub repos.
+- **Skills shown:** context management, slash commands, sub-agent delegation, Markdown conversion, token analytics
+- **Money angle:** none
+- **Duet-relevant:** no
+- **Promo:** his free school community (free resource guide, handoff skill, token dashboard repo)

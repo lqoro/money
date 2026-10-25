@@ -1,0 +1,16 @@
+## 95. Claude Fable 5 Made This Entire Video By Itself.
+- **Link:** https://www.youtube.com/watch?v=ONmaDdOBGig | **Length:** 6 min | **AI-relevant:** yes
+- **Teaches:**
+  - One goal prompt given to Claude Code produced the whole video: research, script, cloned voice, AI avatar, motion graphics, edit and a visual check, while Nate was away.
+  - Voice drift forced chunking: the script was split into roughly one-minute segments, each voice-generated separately.
+  - Editing was done in code: FFmpeg stitching, word-level transcription, and animated HTML motion graphics timed to the spoken words.
+  - Quality control: the agent rendered frames from each scene, reviewed them, and re-rendered until they passed.
+  - Nate says the same prompt may not reproduce the result for others, since he has custom skills, and that a skill built around this style could probably run on a cheaper model.
+- **Tools / prices / numbers:**
+  - Claude Fable 5 at $10 per 1M input tokens and $50 per 1M output tokens (Nate).
+  - One-hour session, about 380,000 tokens, which Nate says used about 40% of his $200/month plan (his claim).
+  - Tools named: Claude Code, ElevenLabs (voice clone), HeyGen (Avatar 5), FFmpeg, Playwright, HyperFrames with GSAP.
+- **Skills shown:** goal-based agent prompting, scripted video production, sub-agent verification, token and cost awareness
+- **Money angle:** none stated
+- **Duet-relevant:** no
+- **Promo:** none

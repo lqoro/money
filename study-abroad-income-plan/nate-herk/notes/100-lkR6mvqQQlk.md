@@ -1,0 +1,13 @@
+## 100. Is Claude Mythos Coming?
+- **Link:** https://www.youtube.com/watch?v=lkR6mvqQQlk | **Length:** 12 min | **AI-relevant:** yes
+- **Teaches:**
+  - Nate describes Mythos as a model tier above Opus, reportedly strongest at finding security holes, and so far available only to vetted partners through a program called Project Glasswing.
+  - A Mythos identifier briefly appeared on the API and was removed. Nate reads the sighting as a possible leak or hype rather than a launch.
+  - Anthropic said in April it did not plan to make the Mythos preview generally available. Nate says nothing since has reversed that.
+  - Nate's base case: Mythos-level capabilities get folded into future Opus releases, and a public Mythos comes much later. He sketches bull and bear cases.
+  - Timing may be tied to OpenAI's expected next model, which Nate expects to ship first.
+- **Tools / prices / numbers:** Mythos preview: Glasswing partners reportedly charged about $25 per million input tokens and $125 per million output, which Nate says is five times Opus pricing. Partners reportedly grew from about 50 to 150 organizations in 15+ countries. Betting-market odds cited by Nate (about two-thirds for a Mythos launch by end of July). Current model: Opus 4.8.
+- **Skills shown:** AI news analysis, reading vendor statements, scenario forecasting
+- **Money angle:** Partner pricing is the only price point stated (above). Nate expects a public version to be expensive. No advice on how to start.
+- **Duet-relevant:** no
+- **Promo:** none

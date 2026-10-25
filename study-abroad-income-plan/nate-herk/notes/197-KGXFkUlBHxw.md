@@ -1,0 +1,13 @@
+## 197. I Built an AI System That Automates My Proposals (n8n + Gamma)
+- **Link:** https://www.youtube.com/watch?v=KGXFkUlBHxw | **Length:** 21 min | **AI-relevant:** yes
+- **Teaches:**
+  - Split the system into two n8n workflows: one logs each finished meeting from Fireflies into a Google Sheet, the other turns a logged meeting into a proposal. This keeps later routing easy to extend.
+  - Poll Fireflies in a wait-and-check loop until its AI summary fields exist, since they are not ready when the transcript webhook fires.
+  - Ask for human approval in Slack before generating anything, then send the transcript to a proposal-writing agent with a fixed section structure.
+  - Call the Gamma API with a preserve text mode, a theme ID, and a shared-link option; update the sheet row to "generated" by meeting ID.
+  - Standardize inputs with a Set node so a manual form run and the automatic trigger feed the same downstream nodes.
+- **Tools / prices / numbers:** n8n, Fireflies (webhook and developer settings), Google Sheets, Slack, Gamma API, Claude for drafting code nodes. He says the output is about 90% of the way there and needs editing. No prices stated.
+- **Skills shown:** webhook and polling design, code-node writing with an LLM, approval gates, prompt structuring, API body templating, sheet-based logging, sub-path routing.
+- **Money angle:** none stated for pricing. Use case: proposals and meeting minutes for consultants or agencies after sales calls. He says he used to do this part of his job manually.
+- **Duet-relevant:** no (Slack prompts are approval gates for one workflow, not a persistent personal assistant)
+- **Promo:** Free school community (downloadable workflow); Plus community with over 3,000 members, courses, and a weekly live call.

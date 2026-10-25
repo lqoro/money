@@ -1,0 +1,16 @@
+## 161. Claude Code Just Dropped Memory 2.0
+- **Link:** https://www.youtube.com/watch?v=LrgfmZkl3nc | **Length:** 8 min | **AI-relevant:** yes
+- **Teaches:**
+  - Auto Dream is an experimental Claude Code feature. A background sub-agent periodically consolidates the auto-memory files: it merges, prunes, and rewrites them so new sessions start from a cleaner memory.
+  - Three layers: normal coding sessions, auto memory (records decisions and project patterns), and Auto Dream (periodic cleanup without manual prompting).
+  - Setup: run the memory command, open the memory-files view, and toggle Auto Dream on. Memory is enabled per project, but each project's dream state and files are separate.
+  - Dreams only touch memory markdown files, never code or scripts. The status line shows "dreaming", last-run time, or idle.
+  - Triggers are probably time-based (every N hours) or session-count-based. Nate says this is inferred from community posts, not official docs.
+- **Tools / prices / numbers:**
+  - Auto Dream, the memory slash command, and the dream slash command (showed "unknown skill" in his test; natural-language request worked)
+  - Test runs: one project with about 13 sessions reviewed and 5 memories improved in about 10 min; a larger project with 285 sessions took about 8 min and updated 3 files
+  - Example trigger values (hypothetical): every 12 hours, or after 300 sessions
+- **Skills shown:** Claude Code memory management, slash commands, status line reading, reviewing and restoring agent edits to memory files
+- **Money angle:** none
+- **Duet-relevant:** no
+- **Promo:** none

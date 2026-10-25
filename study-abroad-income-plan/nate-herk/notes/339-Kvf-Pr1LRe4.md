@@ -1,0 +1,13 @@
+## 339. The Best RAG System On YouTube (Steal This!)
+- **Link:** https://www.youtube.com/watch?v=Kvf-Pr1LRe4 | **Length:** 19 min | **AI-relevant:** yes
+- **Teaches:**
+  - Three parts: a RAG chat agent; an ingestion workflow that watches a Google Drive folder for new files; and an update workflow that watches for edited files.
+  - Files are routed by type (Google Docs exported as text, PDFs extracted, Excel aggregated, Word converted), then embedded into Supabase with metadata: file ID, name, creator, created and modified dates, version.
+  - On update, delete the old rows by file ID, then re-insert with the version bumped (V1, V2, V3). An LLM node does the increment, because n8n treats the version as a string.
+  - Chat memory is kept in Postgres, separate from the vector store.
+  - Next step he mentions: a scheduled job that deletes vectors for files removed from Drive, since deletions are not handled yet.
+- **Tools / prices / numbers:** n8n, Supabase (vector table named documents), Postgres, Google Drive, an OpenAI model (GPT-4o mini named) for the version step. No prices or metrics given.
+- **Skills shown:** RAG pipeline design, metadata schema, Drive triggers, file-type routing, vector upsert and delete, LLM for simple transforms.
+- **Money angle:** Not stated. Inferred: companies with shared Drive folders might pay for chat over their documents. Nate says he will expand this in his paid community.
+- **Duet-relevant:** no
+- **Promo:** Free school community (download workflows); paid community with a vector-database deep dive, resource library, and about five live calls a week; AI consulting via his website; thanks a community member for help.

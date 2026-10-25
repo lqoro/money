@@ -1,0 +1,13 @@
+## 298. n8n's Native MCP Integration (without the hype)
+- **Link:** https://www.youtube.com/watch?v=VTEg8uJ4yxo | **Length:** 15 min | **AI-relevant:** yes
+- **Teaches:**
+  - n8n 1.88 adds two native nodes: an MCP Server Trigger (exposes n8n workflows as MCP tools) and an MCP Client Tool (attached to an AI agent to call an MCP server). No community node is needed.
+  - Setup: copy the test or production server-sent-events URL from the trigger, then connect Claude Desktop by editing its developer config JSON with that URL and restarting. The workflow must be active for the production URL.
+  - Nate's limits: the client expects an SSE endpoint, and most MCP servers still run over stdio, so they cannot be plugged in directly. The model also cannot choose resource and operation freely; they are fixed per tool.
+  - Prompting is weaker through MCP. Claude Desktop sometimes writes the full content (such as a LinkedIn post) before the workflow's own research step runs. A multi-agent "orchestrator" with child agents still does multi-step work better.
+  - Practical use: give Claude Desktop or Cursor access to your n8n workflows as tools, so the client triggers them.
+- **Tools / prices / numbers:** n8n 1.88, MCP Server Trigger, MCP Client Tool, Claude Desktop, Cursor, Node.js (install prerequisite), Google Sheets, Slack, Tavily, OpenRouter. Ten MCP tools were exposed in the demo (add contact, create draft, create event, delete event, and others). No prices.
+- **Skills shown:** MCP server setup, JSON config editing, n8n tool design, agent prompting, debugging tool calls
+- **Money angle:** none stated.
+- **Duet-relevant:** no. This is MCP plumbing for desktop IDE clients, not an always-on bot.
+- **Promo:** paid community (growing fast per Nate) with a classroom and five live calls per week. Setup JSON is shared in the description.

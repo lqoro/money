@@ -1,0 +1,16 @@
+## 11. Master 96% of Codex in under 35 minutes
+- **Link:** https://www.youtube.com/watch?v=DFlELTiSPk8 | **Length:** 35 min | **AI-relevant:** yes
+- **Teaches:** A walkthrough of 18 core concepts for the Codex desktop agent, grouped into foundations, environments, control and customization, and tools and scale.
+  - Projects are folders of files that keep context across chats. An agents.md file holds project rules and a routing map to where information lives.
+  - The agent loop: the agent reasons, calls tools, responds, and repeats. Watching its steps helps you learn how to prompt it.
+  - Goal prompts let the agent keep working until a measurable goal is met. Clear, objective goals work best.
+  - Skills are reusable instruction files (recipes) that you refine with feedback. Sub-agents can run research in parallel on cheaper models.
+  - Scheduled tasks, voice mode, browser control, and hosted sites extend the agent beyond one chat.
+- **Tools / prices / numbers:**
+  - Codex subscription tiers around $20, $100, and $200 per month. Nate says the $200 tier covers about $14,000 of API-equivalent usage (Nate's claim).
+  - API pricing for the top model is quoted as $10 per 1M input tokens and $50 per 1M output tokens. Model names are garbled in the captions.
+  - Tools named: Codex, Claude Code, Canva, ClickUp, Gmail, GitHub, Google Drive.
+- **Skills shown:** agent configuration (agents.md), prompt and goal design, skill authoring, sub-agent delegation, scheduled automation, token and cost awareness, browser automation
+- **Money angle:** none stated beyond cost explanations. The subscription-versus-API price gap and skill libraries could be framed as a service for setting up AI workspaces for non-technical clients (not stated in the video).
+- **Duet-relevant:** Remote access from a phone to a local Codex session and scheduled tasks are related to an always-on agent, but this is a coding-desktop tool, not a messaging-app bot.
+- **Promo:** Nate mentions his community on school.com and a playlist of Codex videos.

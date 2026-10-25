@@ -1,0 +1,17 @@
+## 274. Locally Host n8n AI Agents for FREE (step by step)
+- **Link:** https://www.youtube.com/watch?v=F1psr8uFwUU | **Length:** 8 min | **AI-relevant:** yes
+- **Teaches:**
+  - Clone the self-hosted AI starter kit from GitHub, install Docker Desktop, then run the start command for your GPU type (Nvidia, AMD on Linux, or Mac).
+  - The starter kit runs four services: n8n, Postgres, Qdrant (vector store), and Ollama (local models). They share one Docker network.
+  - Docker basics for this setup: images are the software, containers run them, and volumes keep n8n workflows, credentials, and model files after a restart.
+  - Open the n8n editor at localhost:5678, create an owner account, and use the demo workflow and the pre-connected Ollama credential to test a local model.
+  - Stopping the container cuts off the editor. Restarting it brings back workflows and credentials because they live in volumes.
+  - Pros and cons: no per-call cost and full data control, against hardware, electricity, security, and technical-skill costs.
+- **Tools / prices / numbers:**
+  - Tools: Docker Desktop, n8n, Ollama, Postgres, Qdrant, the self-hosted AI starter kit (GitHub repo).
+  - Prices: none quoted. He describes local use as free, apart from your own hardware and power.
+  - Numbers: editor on port 5678.
+- **Skills shown:** Docker install and compose start, container and volume basics, local service wiring, n8n first-run setup, basic terminal use
+- **Money angle:** none stated (setup tutorial). Possible service angle is setting up local or private n8n stacks for clients who need data control. No pricing given.
+- **Duet-relevant:** no
+- **Promo:** none (only the GitHub link in the description).

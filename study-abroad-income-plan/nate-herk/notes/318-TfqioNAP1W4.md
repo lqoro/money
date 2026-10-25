@@ -1,0 +1,13 @@
+## 318. Building AI Agents in n8n Somehow Got Easier (as a beginner)
+- **Link:** https://www.youtube.com/watch?v=TfqioNAP1W4 | **Length:** 13 min | **AI-relevant:** yes
+- **Teaches:**
+  - Build a first n8n AI Agent: add a chat trigger, attach a chat model, then add tools.
+  - Use "let the model define this parameter" on a tool field instead of hand-written from-AI expressions, and add a short description to each field so the model fills it correctly.
+  - Give the agent the current date and time through a system-message expression, otherwise it cannot resolve "tomorrow" or "tonight".
+  - Fix a timezone bug: a formatted date dropped the time zone, so an event landed at 5:00 instead of 7:00 p.m.; using the raw value fixed it.
+  - Tell the agent to fetch contact info before emailing or booking, and list allowed Slack channels in a description to stop channel-name guessing.
+- **Tools / prices / numbers:** n8n AI Agent node; OpenAI chat model (GPT-4o mini); Gmail, Google Calendar, Outlook, Airtable, Slack. No prices stated.
+- **Skills shown:** n8n agent setup, tool wiring for email, calendar, CRM, and chat, prompt-level date handling, parameter descriptions, basic debugging.
+- **Money angle:** none stated. The demo implies a chat assistant that books meetings and sends email for a business; Nate does not discuss pricing or clients.
+- **Duet-relevant:** yes. A chat-triggered assistant that sends emails, books calendar events, and posts to Slack on the user's behalf.
+- **Promo:** Paid Community (link in description) with classroom deep dives, step-by-step builds, and five live calls per week.

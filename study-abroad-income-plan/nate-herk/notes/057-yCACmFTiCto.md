@@ -1,0 +1,18 @@
+## 57. Turn Claude Into a One Person Marketing Team in 38 Mins
+- **Link:** https://www.youtube.com/watch?v=yCACmFTiCto | **Length:** 38 min | **AI-relevant:** yes
+- **Teaches:**
+  - Set up a Claude Code project folder with a CLAUDE.md and context files (business overview, pain/person/promise, brand guidelines) so later sessions start with business context.
+  - Connect an image/video aggregator (Higgsfield) to Claude as a custom connector, so Claude runs the tool instead of the user clicking through its UI.
+  - Save repeatable workflows as skills (ad sets, Instagram carousels, UGC videos) so output stays consistent.
+  - Have Claude plan UGC videos as characters, then storyboards, then clips, with a QA pass that screenshots and rejects bad frames.
+  - Build a one-page landing site from the brand assets and an open-source scroll-animation repo, then host it through GitHub and Vercel.
+- **Tools / prices / numbers:**
+  - Claude Code desktop app; Higgsfield (many image and video models, plus a "Marketing Studio" for sizzle reels); Scroll World repo; GitHub; Vercel.
+  - 18 BOGO ad creatives: about $3.43 by his credit count.
+  - One sizzle reel: about 17.5 cents by his credit count.
+  - Five Instagram carousels of about 7-8 slides each: about $9.56.
+  - He says video costs more than images and that Higgsfield is not the cheapest option.
+- **Skills shown:** Claude Code project setup, CLAUDE.md, custom MCP connector setup, brand-guideline use, image/video generation, QA review, spreadsheet analytics.
+- **Money angle:** Implied: sell AI-made marketing assets (ads, carousels, UGC) to businesses, using the pain/person/promise intake to justify the work. He gives no service prices. A start: run one client's brand through the same setup, deliver a batch, and reuse the winning skills.
+- **Duet-relevant:** no
+- **Promo:** Free school community (free 6-hour Claude Code course for non-coders, downloadable skill files). He recommends Higgsfield but names no affiliate link.

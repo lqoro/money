@@ -1,0 +1,18 @@
+## 186. How a College Student Made $500k with Cold Email (Exact Framework)
+- **Link:** https://www.youtube.com/watch?v=XB2xmX3USUI | **Length:** 37 min | **AI-relevant:** yes
+- **Teaches:**
+  - Guest Sav (student, AI agency) shows a cold email system from zero: free proof projects first, then paid work once results show.
+  - Build lead lists from niche industry databases (e.g., architecture association directories), which are already filtered.
+  - Personalize at scale: a sheet feeds research, then an LLM writes a short icebreaker that goes back into the sheet.
+  - Spread sends across several domains and inboxes (about 30 per inbox) to protect deliverability.
+  - Offer formula: outcome, timeframe, and risk reversal (no pay unless results); lead with a short video. Diagnose by reply rate: under 2% checks list or deliverability, 2-5% checks copy, 5-10% is the target.
+- **Tools / prices / numbers:**
+  - Perplexity, ChatGPT, Claude for research; Make.com; Apollo and LinkedIn Sales Navigator; MillionVerifier for email checks; Google Sheets; Loom.
+  - Sav's claim: about $500K in sales opportunities in six months.
+  - Volume: 3 domains x 5 inboxes = about 450 emails a day, about 9,000 a month. Sav started with one domain and 5 inboxes (about 150 a day).
+  - Sample offer: "20 booked meetings a month," no added headcount, pay on results.
+  - An early salon client reportedly grew to about $10K a month recurring (Sav's claim).
+- **Skills shown:** cold email, lead list research, enrichment, deliverability, prompt-driven personalization, offer writing, funnel metrics
+- **Money angle:** Sell outbound lead generation or AI outreach to agencies and service businesses. Start free, convert to paid after proof, and collect case studies. No price points beyond pay-on-results.
+- **Duet-relevant:** no
+- **Promo:** Sav's hour-long paid Loom walkthrough (his own resource). Nate's free school community guide and paid plus community (over 3,000 members).

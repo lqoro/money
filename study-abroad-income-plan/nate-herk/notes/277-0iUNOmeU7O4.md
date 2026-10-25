@@ -1,0 +1,17 @@
+## 277. Multi-Agent Systems Have NEVER Been EASIER to Build (n8n, no code)
+- **Link:** https://www.youtube.com/watch?v=0iUNOmeU7O4 | **Length:** 20 min | **AI-relevant:** yes
+- **Teaches:**
+  - Orchestrator architecture: one parent agent whose only job is to understand intent and delegate to specialized child agents or tools.
+  - Keep the orchestrator prompt short and strict (delegate only, never write emails or summaries; a few rules and an example output).
+  - Wrap each sub-agent as an n8n workflow exposed as a tool; the sub-workflow starts with an "execute workflow" trigger and accepts all input (or named fields) into a query field.
+  - Debug with mock data in the sub-workflow and by reading agent logs; fix the sub-agent's own prompt first (e.g., sign-off rules in the tool description).
+  - Choose cheaper models for simple agents (contacts lookup) and stronger models for content work; avoid multi-agent setups for tasks a single agent can do, since they add latency, cost and error points.
+- **Tools / prices / numbers:**
+  - n8n (AI Agent node, Call n8n Workflow tool, Execute Workflow trigger, Think tool).
+  - OpenRouter as the model gateway; GPT-4.1 mini for orchestrator and email agent; Gemini Flash for contacts; Claude 3.7 for content creation (as stated).
+  - Tavily for research, Airtable for contacts, Gmail send message tool.
+  - No prices stated.
+- **Skills shown:** multi-agent orchestration design, n8n sub-workflow wiring, tool description writing, prompt scoping, log-based debugging, model selection by task.
+- **Money angle:** Build reusable "agent teams" (email, calendar, CRM lookup, content) for small businesses and sell them as packaged assistants; charge for setup plus a monthly fee. Start with one orchestrator and two or three sub-workflows. No prices stated.
+- **Duet-relevant:** no
+- **Promo:** references his AI marketing team video; no sponsor or course mentioned in the transcript.

@@ -1,0 +1,13 @@
+## 235. 3 Hidden Data Table Hacks for Smarter AI Agents
+- **Link:** https://www.youtube.com/watch?v=lcNN3X9gXls | **Length:** 15 min | **AI-relevant:** yes
+- **Teaches:**
+  - Store agent config (chat model, system prompt, user prompt) in an n8n data table keyed by workflow name, so a non-technical editor can change behavior without opening the workflow.
+  - Keep system prompts out of shared templates by pulling them from a data table, so the prompt (the IP) stays private.
+  - Log every agent run to a data table, and turn on "return intermediate steps" in the agent to capture each tool call, its input and output, and token use.
+  - Route workflow errors to a data table through the workflow's error-workflow setting, with workflow ID, execution ID and node name included.
+  - Run evals by loading an input and expected-answer dataset from a data table, scoring each answer, and changing only one variable per run.
+- **Tools / prices / numbers:** n8n data tables; n8n agent "return intermediate steps" option; n8n evaluations; OpenRouter; Perplexity and Tavily (research tools); Google Sheets as a sync target. No prices stated.
+- **Skills shown:** n8n data tables, agent prompt and model configuration, agent logging and observability, error handling, evals, Google Sheets sync.
+- **Money angle:** Give a client an editable front end (the data table) for model and prompt settings. Sell templates while keeping system prompts private. Sell agent monitoring and eval reporting as an ongoing service. No price points stated.
+- **Duet-relevant:** no
+- **Promo:** Nate's paid community ("Plus", 200+ members, n8n builders) and three classroom courses (Agent Zero, 10 Hours to 10 Seconds, One Person AI Agency for annual members).

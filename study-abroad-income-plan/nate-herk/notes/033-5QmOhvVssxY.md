@@ -1,0 +1,12 @@
+## 33. Thank You for 1M Subscribers
+- **Link:** https://www.youtube.com/watch?v=5QmOhvVssxY | **Length:** 7 min | **AI-relevant:** no
+- **Teaches:**
+  - A milestone vlog, not a tutorial. Nate looks back at the channel's first two years, starting from his earliest AI agents video (September 2024).
+  - Describes the path from full-time corporate work to running his own AI education business, including getting his parents on board with the move.
+  - Credits his team, especially his first hire John and the community manager, as the reason the output keeps growing. He says AI agents help with comment review, ideation and packaging, but people run the operation.
+  - Shares a lesson from early on: he lost a client at age 23 who said he was too young, and he says imposter syndrome never fully goes away.
+- **Tools / prices / numbers:** none. Channel stats only: 1M YouTube subscribers; his free AI Automation Society group was close to half a million members.
+- **Skills shown:** none technical
+- **Money angle:** none
+- **Duet-relevant:** no
+- **Promo:** mentions his free AI Automation Society community; no offer or discount

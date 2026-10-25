@@ -1,0 +1,19 @@
+## 275. 8 Simple Hacks for Smarter AI Agents in 8 Mins
+- **Link:** https://www.youtube.com/watch?v=onIuhtYMCdk | **Length:** 8 min | **AI-relevant:** yes
+- **Teaches:**
+  - Eight hidden model settings in the n8n AI agent "chat model" node (via OpenRouter) that change how an agent behaves.
+  - Repetition control: frequency penalty and presence penalty, with negative values encouraging repetition and positive values encouraging variety.
+  - Output control: max tokens to cap length and cost, and response format (text vs JSON, where JSON is better handled with a structured output parser).
+  - Reliability controls: timeout, max retries (raising retries can add cost), and temperature vs top P (change one, not both).
+  - Demo: a poem prompt run at presence penalty -2 and then 2 shows the difference in repetition.
+- **Tools / prices / numbers:**
+  - OpenRouter exposes all eight settings consistently across models; Anthropic, Google and some other providers expose fewer.
+  - Frequency and presence penalty: default 0, range -2 to 2.
+  - Max tokens: default -1 (no limit); roughly 4 characters per token.
+  - Temperature: default 0.7, range 0 to 1.
+  - Timeout: default 360,000 ms (6 minutes).
+  - Max retries: default 2.
+- **Skills shown:** n8n AI agent configuration, LLM parameter tuning, OpenRouter setup, prompt testing.
+- **Money angle:** none (general configuration tips; useful for anyone selling or running agent workflows who needs predictable output and cost control).
+- **Duet-relevant:** no
+- **Promo:** his free school community, which hosts a PDF with articles and a summary table on each setting (link in the description).

@@ -1,0 +1,20 @@
+## 109. The Playbook for a $100M AI Agency
+- **Link:** https://www.youtube.com/watch?v=8ktcSaSTvxk | **Length:** 104 min | **AI-relevant:** yes
+- **Teaches:**
+  - Podcast with Devin Karns (co-founder of Custom AI Studio) on how to build an AI services firm worth a large exit, not a lifestyle business.
+  - Pick the business model on purpose. Freelancer, agency, AI readiness consulting, managed agents, product, and full-stack consulting differ in value, and value jumps as revenue grows.
+  - Start with a paid AI workshop to build trust, then a discovery "blueprint," then a custom build. Use a framework to package the service.
+  - Build a deterministic, event-driven harness and use LLMs only where needed. Define success criteria and test at scale before production.
+  - Sell business outcomes tied to a KPI, such as refund rate. Use a clear metric before agreeing to performance pricing.
+  - Document each project and hire people with complementary skills.
+- **Tools / prices / numbers:**
+  - Guest's example: an e-commerce client with about 40,000 support tickets a month had its refund rate fall from 21% to 16% after an AI system (guest's claim).
+  - Guest's pricing: AI workshop (1 hour, then 2 hours); blueprint discovery about $15k to $35k (as stated); custom build billed as one-time.
+  - Growth-partner model: about 15% of topline revenue (example model discussed).
+  - Mid-market defined as about $10M to $250M annual revenue; enterprise about $100M to $1B.
+  - Valuation example: $2M profit sells for about $2M; $6M profit sells for about 5x (about $30M), per the guest's illustration.
+  - Tools named: Claude and Claude Code, OpenClaw, Hermes, Codex, Zapier, n8n, LangChain and LangGraph, Modal, Microsoft Copilot.
+- **Skills shown:** AI consulting discovery, workshop design, agency productizing, systems architecture, eval and success-criteria design, sales positioning
+- **Money angle:** Workshop as the entry offer, then discovery blueprint (about $15k to $35k), custom build, and performance or revenue-share partnerships. Price points are as stated by the guest.
+- **Duet-relevant:** no
+- **Promo:** Nate's free school community (free resource guide) and his AI Automation Society YouTube channel. He says he has shut down his community.

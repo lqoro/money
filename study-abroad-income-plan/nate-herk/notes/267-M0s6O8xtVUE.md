@@ -1,0 +1,17 @@
+## 267. Watch Me Build an AI Resume Analysis System in 28 minutes (no code)
+- **Link:** https://www.youtube.com/watch?v=M0s6O8xtVUE | **Length:** 29 min | **AI-relevant:** yes
+- **Teaches:**
+  - Method first: list the manual steps, sketch a wireframe in Excalidraw (trigger, data sources, transforms, where AI fits), then build. Decide whether AI is needed at each step, or a plain workflow will do.
+  - Gmail trigger with "download attachments" on, then route by file type (Word, PDF, or text) with a Switch node on the MIME type.
+  - Word files are converted to Google Docs through an HTTP request to the Drive API with convert=true. PDFs are downloaded and text-extracted directly. All three branches are normalized into one "text" field.
+  - An AI agent (OpenAI o4-mini, a reasoning model) acts as a recruiter. It gets the resume and the job description, and returns strengths, weaknesses, risk, reward, a fit score out of 10, and a justification.
+  - A structured output parser (JSON schema) gets the output into separate fields. Without it, the output is one block of text that does not map cleanly to a sheet.
+  - An Information Extractor node pulls first name, last name, and email. The results are appended to a Google Sheet with a Drive link to the resume.
+- **Tools / prices / numbers:**
+  - Tools: n8n, Gmail, Google Drive, Google Sheets, Excalidraw, OpenAI o4-mini, Hostinger Horizons (sponsor).
+  - Prices: none quoted for the build. Hostinger offer: 10% off the first month with code "Nate Herk" (sponsor read).
+  - Numbers: example output fit 9/10 for one candidate and 3/10 and 1/10 for two others. Community partnership claim of over 500 tools and up to $3 million in savings (Nate's claim).
+- **Skills shown:** process mapping, workflow wireframing, Gmail and Drive nodes, binary file handling, conditional routing, prompt and JSON schema design, information extraction, Sheets integration
+- **Money angle:** Sell an AI resume screener to recruiting teams or staffing agencies, with fit scoring and a sheet-based candidate database. The pitch is less bias and faster first-pass review. Price points not stated.
+- **Duet-relevant:** no
+- **Promo:** Sponsor Hostinger Horizons (10% off the first month, code "Nate Herk"). Free school community (downloadable workflow and prompts). His paid community, with two courses: "Agent Zero" and "10 Hours to 10 Seconds."

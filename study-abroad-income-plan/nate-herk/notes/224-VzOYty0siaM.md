@@ -1,0 +1,16 @@
+## 224. How I'd Become an AI Consultant If I Had To Start Over (2 Paths)
+- **Link:** https://www.youtube.com/watch?v=VzOYty0siaM | **Length:** 15 min | **AI-relevant:** yes
+- **Teaches:**
+  - Two paths: B2C education (teach n8n or other tools through YouTube, communities, courses, templates, coaching) and B2B consulting (audits, roadmaps, implementation, retainers). They feed each other.
+  - Choose by goal: scale and leverage (B2C, slower start) or simplicity and fast cash (B2B, one problem solved for one client).
+  - Framework: solve problems, not tools (sometimes a $30 SaaS or no AI is the answer); learn one tool deeply; document work publicly; sell simple offers; overdeliver and systematize.
+  - 30-day plan: days 1 to 3 pick a niche (avoid heavy regulation like healthcare and finance); days 3 to 10 research pain points; days 10 to 15 offer free audits; days 15 to 20 convert to a first paid build; days 20 to 30 track results and write case studies.
+  - B2B pricing: a few thousand to tens of thousands per project; aim for about 10x return within a year.
+- **Tools / prices / numbers:**
+  - Nate's claim: $231,000 in 30 days, from a mix of school community, consulting, and implementation. He says most came from B2C.
+  - B2B: a $3,000 to $10,000 project closed in about a week (his example).
+  - Large firms: Accenture booked over $600M in AI consulting in one quarter and over $2B in half a year (his figures).
+- **Skills shown:** consulting offers, niche research, pricing, content creation, n8n as the core tool
+- **Money angle:** Free audits, then paid AI builds and retainers for SMBs; education and team training for companies; a paid school community. Price points: "few thousand to tens of thousands" per project (his range). Start: pick a niche and offer one free audit this week.
+- **Duet-relevant:** no
+- **Promo:** Free school community (resource guide). Plus community (paid; 200+ members; courses from AI foundations to a One Person AI Agency; weekly live call). Co-founder of True Horizon AI (his company).

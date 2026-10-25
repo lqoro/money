@@ -1,0 +1,13 @@
+## 198. Build ANYTHING with Claude Code & n8n (Beginner's Guide)
+- **Link:** https://www.youtube.com/watch?v=OCO3aq3G0mk | **Length:** 40 min | **AI-relevant:** yes
+- **Teaches:**
+  - Ask Claude Code to audit an existing n8n workflow for app use. It swapped the form trigger for a webhook, decoded a base64 image input, and added error branches that return a message to the front end.
+  - Plan mode first: answer its clarifying questions (repo strategy, Tailwind, dark theme), then auto-accept the plan so it writes a claude.md file.
+  - Connect the n8n MCP server, the n8n skills, the front-end design skill and the GitHub MCP. Push to GitHub and let Vercel deploy from the repo.
+  - Iterate by describing bugs in plain language, including screenshots: the response showed raw JSON, and a memory key was missing.
+  - Security: a hard-coded webhook URL in a public repo can be spammed and cost money. He suggests an environment variable and a security review.
+- **Tools / prices / numbers:** VS Code, Claude Code, n8n (cloud), n8n MCP, GitHub MCP, GitHub fine-grained token, Vercel, Tailwind CSS. Claude plan advice (his view): start on Pro ($17/mo as stated earlier), then $100, then $200 per month. Build took about 40 minutes (his figure).
+- **Skills shown:** workflow refactoring for webhooks, base64 handling, front-end scaffolding, git and deploy flow, debugging with screenshots, system prompt tuning, basic webhook security.
+- **Money angle:** none stated. Inference: sell a branded front end plus n8n backend as a custom micro-app for clients. No prices for clients given.
+- **Duet-relevant:** no
+- **Promo:** none (he links only the skill and MCP repos and the GitHub token guide).

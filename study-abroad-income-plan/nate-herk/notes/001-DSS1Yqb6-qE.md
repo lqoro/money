@@ -1,0 +1,19 @@
+## 1. /roast-room: How I Use Claude to Think Like the Top 1%
+- **Link:** https://www.youtube.com/watch?v=DSS1Yqb6-qE | **Length:** 15 min | **AI-relevant:** yes
+- **Teaches:**
+  - A "council" pattern: each seat is a sub-agent with one fixed question (e.g., "does it build leverage or rent time?", "will people pay and how do we close?"), and the seats debate, roast each other, and reach a weighted verdict.
+  - Each council member lives as a markdown agent file plus a "brain" folder (principles, frameworks, books, sources, stories, voice) built from the person's public material.
+  - A "new roster" skill builds a new council member from scratch, including sources, agent file and a cartoon avatar.
+  - Before a debate, the skill asks clarifying questions (size, budget, who sits at the table), then runs rounds of opening positions, rebuttals, and votes, and exports a PDF.
+  - Sub-agents were preferred over agent teams because teams cost more for little extra value (his testing).
+  - Key idea: borrow the expertise of people who have already done the thing, extract their frameworks, and use them as advisors rather than trusting a single generic answer.
+- **Tools / prices / numbers:**
+  - Claude Code (sub-agents), Opus model
+  - Glydo (his desktop app/visual layer for orchestrating chats between coding agents), free month via his link
+  - Roast Room repo with 11 seats (7 default + 4 extra)
+  - Demo verdict scored 7.9/10 for Salt Lake City; votes from seats
+  - Brain sources: e.g., one brain built from 48 sources, about 500k words, 14 interviews, 34 videos (his stated figures)
+- **Skills shown:** Claude Code sub-agents, prompt-driven multi-persona debate design, markdown agent/skill authoring, local session review, PDF export
+- **Money angle:** Consultants and founders who want a decision-support tool built around a known expert's frameworks; a council template for a niche (copy, pricing, marketing) could be packaged and sold. Nothing concrete on price is stated.
+- **Duet-relevant:** no
+- **Promo:** Glydo free month (affiliate-style link); Fish Audio sponsor segment (Drama 3 voice model, MCP server, official n8n node); free school community with the GitHub repo and AI skills.

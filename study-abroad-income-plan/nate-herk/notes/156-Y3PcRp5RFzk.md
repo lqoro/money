@@ -1,0 +1,19 @@
+## 156. I've Built 500 AI Workflows, This is What Businesses Want in 2026
+- **Link:** https://www.youtube.com/watch?v=Y3PcRp5RFzk | **Length:** 15 min | **AI-relevant:** yes
+- **Teaches:**
+  - Five simple automations sell best: speed-to-lead, document processing, follow-up sequences, database reactivation, internal reporting.
+  - Sell the outcome (time saved, cost cut, revenue recovered), not the workflow itself.
+  - Pick one workflow, learn it deeply and build a simple demo, then either niche down or act as a generalist consultant.
+  - Find the bottleneck with one question: "If 500 new clients showed up tomorrow, what would break first?"
+  - Many document workflows need no LLM at all; pure rule-based logic is deterministic and low-maintenance.
+- **Tools / prices / numbers:**
+  - Speed-to-lead: Nate cites studies showing a 5-minute response makes conversion up to 10x likelier; average business takes 47 hours (his figure)
+  - Dental example: $5k/mo ads, 100 leads, close rate 12% to 25% (13 extra patients, same spend)
+  - Invoices: 200/week, 50 hours/week of manual entry at $30/hr (about $78k/yr); cutting 15 min to 2 min per invoice saves about $70k/yr (his math)
+  - Manual document processing: $15 to $25 per document, 5 to 15% error rate (his figures)
+  - Webinar example: 6 calls to 18 calls; $36k to $90k per webinar at a $20k deal and 30% close (his math)
+  - Gym example: 2 to 3% reactivation of 4,000 contacts at $50/mo is $32k to $48k (his math); agency ROI of 1,200% in 60 days (his claim)
+- **Skills shown:** workflow design, lead qualification, follow-up sequencing, CRM reactivation, positioning and sales
+- **Money angle:** Sell to service businesses (dental, law, HVAC, real estate, agencies), accountants and insurers (document processing), coaches and gyms (follow-up and reactivation). Price against ROI math from the client's own numbers. Start with one niche and build a demo.
+- **Duet-relevant:** no
+- **Promo:** free school community resource guide, link in the description; points to another of his videos

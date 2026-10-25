@@ -1,0 +1,16 @@
+## 55. I Built The Ultimate Claude Website Design Skill (steal this)
+- **Link:** https://www.youtube.com/watch?v=QUI6Ug4cHnE | **Length:** 17 min | **AI-relevant:** yes
+- **Teaches:**
+  - A Claude Code skill called ScrollCraft that builds scroll-driven landing pages: it interviews you about audience, feel, and user journey, then builds the page.
+  - Use real assets you already have, and generate missing images and video for gaps.
+  - Make every scroll interaction tie to the story, and keep the copy the same while changing the layout.
+  - The build self-checks by taking screenshots of its own keyframes to catch visual errors.
+  - Iterate with specific feedback (slow an animation, swap a link, remove a section). The skill applied the changes in one pass.
+- **Tools / prices / numbers:**
+  - Claude Code (desktop app).
+  - key.ai, a gateway for image and video models, which requires an API key set in the project environment variables.
+  - Example build took about 30 minutes; the skill pulled live numbers from the site's data.
+- **Skills shown:** Claude Code skills, landing-page design, prompt interviews, AI asset generation, screenshot-based QA
+- **Money angle:** Build premium scroll-style sites for clients (for example, travel agencies or product brands). He demonstrated the output but gave no pricing.
+- **Duet-relevant:** no
+- **Promo:** Free skill via his free community classroom ("YouTube resources"); a free 6-hour Claude Code course for non-coders.

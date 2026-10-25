@@ -1,0 +1,13 @@
+## 73. Why Your AI Offer Isn't Selling, and How to Fix That
+- **Link:** https://www.youtube.com/watch?v=8MEJen0nblQ | **Length:** 56 min | **AI-relevant:** yes
+- **Teaches:**
+  - Sell the outcome, not the AI: the buyer cares about the problem removed (e.g., a business that misses calls) rather than the tool.
+  - Use a clear story and a visible proof point; a single concrete demo can beat a list of certifications.
+  - Name one specific demographic and a clear intent before you pick tactics; study the customer closely.
+  - Frame AI as a leverage tool, and find where your own workflow feels the most load; adopt tools that take weight off you.
+  - Set team token budgets, pick a team challenge with a deadline, and use an auto-router to send most queries to cheaper models.
+- **Tools / prices / numbers:** Claude Code, Codex, ClickUp (sponsor). Guest figures, cited not verified: a 76% CEO view that leaders must be tech-fluent (IBM survey); a design firm with about $200M run rate on 40 staff; 100M tokens/day as a team baseline. Guest example: sending about 95% of queries to open models and the rest to frontier models.
+- **Skills shown:** AI offer positioning, storytelling, go-to-market, team AI enablement, model cost routing, AI-native workflow design.
+- **Money angle:** Guest's example is an AI phone-answering service for HVAC companies in a single city, sold on the outcome of always answering calls. Suggested tactics: targeted local ads, billboards on a route, or free first service to win trust, then recurring relationships. No prices stated.
+- **Duet-relevant:** borderline. Sponsor segment describes a ClickUp super agent that lives in his workspace and turns his idea list into plans on request.
+- **Promo:** Free school community (free resource guide). Points to his AI Automation Society YouTube channel for podcast clips. Sponsor ClickUp: 15% off Biz Plus with his code and a 30-day money-back guarantee, per the ad.

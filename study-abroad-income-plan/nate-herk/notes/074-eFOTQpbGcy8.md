@@ -1,0 +1,11 @@
+## 74. The $200K AI Job That Didn't Exist Last Year
+- **Link:** https://www.youtube.com/watch?v=eFOTQpbGcy8 | **Length:** 10 min | **AI-relevant:** yes
+- **Teaches:**
+  - The gap is "knowing what to build" (judgment, prioritization), not only building; the value sits in deciding which problems to aim AI at.
+  - Four-step path to an in-house AI role: (1) audit your own job for tasks that take real hours and where a small AI error is harmless; (2) automate them and record hours saved; (3) make the wins visible, tied to business outcomes, and share prompts and workflows; (4) scale to business bottlenecks, then turn total savings into a single number and propose the role.
+  - Start with your own work and dummy data in regulated settings; ask permission before automating sensitive tasks.
+- **Tools / prices / numbers:** No specific tools named beyond AI chat and agent tools. Nate's claims: the AI automation market grew to about $130B; a 2023 Chegg stock drop of about 50% in one day after ChatGPT. Cited (unverified): an IBM survey of 2,000 CEOs with 76% reporting a chief AI officer (up from 26% a year earlier); AI-skilled workers paid about 56% more than peers. The "$200K" in the title is not stated in the transcript.
+- **Skills shown:** AI workflow automation, process auditing, ROI quantification, internal stakeholder communication, AI change management.
+- **Money angle:** Frame the offer as an in-house AI consultant role: build a proposal with hours saved and money saved, then ask for a budget and title. Alternatively, sell automation to companies that lack in-house talent. No prices stated.
+- **Duet-relevant:** no
+- **Promo:** Free school community (full courses, agent skills, GitHub repos, resource guide). Resource guide for this video is downloadable from the same community.

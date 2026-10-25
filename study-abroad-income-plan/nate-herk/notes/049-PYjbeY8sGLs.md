@@ -1,0 +1,18 @@
+## 49. I Cloned Calendly and Now It's Free Forever
+- **Link:** https://www.youtube.com/watch?v=PYjbeY8sGLs | **Length:** 14 min | **AI-relevant:** yes
+- **Teaches:**
+  - Clone a scheduling tool (Calendly-style) with a few large prompts. One "slash goal" prompt set four phases: research, planning, build, test.
+  - Use a swarm of test agents (he says about 50) to click through admin, sign-up and booking flows, finding and fixing bugs in a loop.
+  - Human review still catches UX issues agents miss, such as progress steps that were not clickable. The first UI looked "vibe coded," so he asked for a rebrand and redesign.
+  - Give performance work a concrete target (he asked for response times near 10 ms).
+  - Once you own the code, you can keep asking the agent to add features.
+- **Tools / prices / numbers:**
+  - Stack: a back-end database, Google account for calendar sync, Stripe for paid bookings (sandbox test shown), hosting on Vercel.
+  - Competitor figures he gives: Calendly about $3B valuation, cal.com about $150M.
+  - Build effort: about 5 days 5 hours of agent running time (about 2 weeks elapsed), 334 agent-hours, 76 sub-agents.
+  - Tokens as he reads them: about 32.1B input and about 47M output.
+  - Cost: about $15,000 at API-equivalent rates. He paid through a $200/month Codex plan and about $150 came out of usage credits (his estimate).
+- **Skills shown:** AI-assisted app building, prompt planning, agent QA, Stripe test mode, product judgment
+- **Money angle:** none stated; he gives the app away free. He stresses that running a product at scale (inference, bugs, support) is much harder than a prompt-built internal tool.
+- **Duet-relevant:** no
+- **Promo:** his free school community, where the setup guide is in the classroom; a link to a live build video.

@@ -1,0 +1,17 @@
+## 151. Ollama + Claude Code = 99% CHEAPER
+- **Link:** https://www.youtube.com/watch?v=O2k_qwZA8HU | **Length:** 25 min | **AI-relevant:** yes
+- **Teaches:**
+  - Claude Code is a harness. You can swap the model behind it for a free or cheaper one.
+  - Method 1, local: install Ollama, pull an open model (he used Qwen 3.5 9B, a 6.6 GB download), then launch Claude Code through Ollama.
+  - Local models often fail on tool calls or small context windows. Fix: build a custom Ollama model with a larger context (he used 64k).
+  - Method 2, OpenRouter: set environment variables in settings.local.json to point Claude Code at OpenRouter. Set every model variable (including Haiku and Sonnet) to a free model, or paid models get called silently.
+  - Ollama Cloud models run without local hardware but need an Ollama sign-in.
+- **Tools / prices / numbers:**
+  - OpenRouter free tier: 50 requests per day with no credit. Loading about $10 raises it to 1,000 per day (his figures).
+  - Ollama and local setups start with about $5 of Anthropic API credit in his flow.
+  - Gemma 4 31B on OpenRouter: $0.14 per million input and $0.40 per million output, versus Opus 4.6 at $5 and $25 (per his slide).
+  - Free routing model: he warns it picks whatever model is available, so you lose control.
+- **Skills shown:** Ollama CLI, environment-variable configuration, custom model context sizing, OpenRouter setup, usage monitoring through logs
+- **Money angle:** Cheap or free models suit low-stakes work: summarizing, file search, triage, scaffolding. Nate suggests using them for those tasks and keeping a stronger model for hard work. No price is set for selling anything.
+- **Duet-relevant:** no
+- **Promo:** his free school community (OpenRouter setup doc attached to the post)

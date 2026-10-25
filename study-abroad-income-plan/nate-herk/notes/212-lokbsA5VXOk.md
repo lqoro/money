@@ -1,0 +1,13 @@
+## 212. OpenAI Just Leveled Up n8n AI Agents (here's how it works)
+- **Link:** https://www.youtube.com/watch?v=lokbsA5VXOk | **Length:** 11 min | **AI-relevant:** yes
+- **Teaches:**
+  - Enable "use Responses API" in the OpenAI Chat Model node (node version 1.3 or later). This unlocks OpenAI built-in tools.
+  - Web search: set context size, location, and an allowed-domain list. A domain filter needed a newer model (he switched to GPT-5 mini).
+  - File search: create a vector store on the OpenAI platform, upload files, then paste its ID plus a filter JSON into the node.
+  - Other options: conversation ID (OpenAI holds memory), prompt cache key, metadata, and saved prompts.
+  - Without the toggle, the model cannot answer post-cutoff questions. With it, it cites web sources.
+- **Tools / prices / numbers:** OpenAI API (Responses API, GPT-5 Mini), n8n 1.118+ per Nate, vector stores. Nate says vector storage costs $0.10 per GB per day, while Gemini file search charges only for uploads.
+- **Skills shown:** built-in model tools, vector stores, retrieval setup, API options
+- **Money angle:** none stated
+- **Duet-relevant:** no
+- **Promo:** Plus community (weekly live call), link in description.

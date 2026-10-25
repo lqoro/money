@@ -1,0 +1,17 @@
+## 142. 100 Hours Testing Claude Code vs Antigravity (honest results)
+- **Link:** https://www.youtube.com/watch?v=99VHENEKA9o | **Length:** 24 min | **AI-relevant:** yes
+- **Teaches:**
+  - Both tools are agentic coding environments: they plan, use sub-agents, run terminal commands, and edit whole projects. You pay for model tokens, not the tool.
+  - Claude Code is terminal/CLI-first and configurable; Antigravity is a standalone IDE with a manager view and a built-in browser agent.
+  - Three side-by-side tests: a vague one-shot app, a plan-mode research report, and a landing page with no questions asked.
+  - Results from his tests: Claude Code won the app logic and the report (it cited sources); Antigravity won on visual design and speed.
+  - Context drift and token limits hit both tools. Keep sessions focused, one task each, and start fresh often.
+- **Tools / prices / numbers:**
+  - Claude Pro $20/mo; Max $100 (5x Pro) or $200 (20x Pro).
+  - Google AI Pro $20/mo; AI Ultra $250/mo; a free tier exists.
+  - SWE-bench Verified figures as cited: Claude Opus 4.6 in Claude Code 80.9%; Gemini 3 Pro in Antigravity about 76.2%. Nate notes these are not directly comparable.
+  - Nate's tests and industry figures are his reports, not controlled studies.
+- **Skills shown:** plan mode, MCP setup, prompt design, comparing agent harnesses, landing-page and report generation
+- **Money angle:** Learn one agentic coding tool well; the skill transfers. Could sell landing pages or small web apps to agency owners. No prices for client work stated.
+- **Duet-relevant:** no
+- **Promo:** free school community (resource guide in description); plus community; links to his token-management video and his superpowers video.

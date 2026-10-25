@@ -1,0 +1,19 @@
+## 83. How Anthropic Engineers Actually Prompt Fable 5
+- **Link:** https://www.youtube.com/watch?v=vcU85OrwuV0 | **Length:** 11 min | **AI-relevant:** yes
+- **Teaches:** six prompting habits he distilled from Anthropic's Fable 5 best-practice docs:
+  - Give the why (context behind the task). Applies to any model.
+  - Say what not to do; he finds negative instructions work better lately. Applies to any model.
+  - Let it act once it has enough information instead of over-planning. Default to high effort, xhigh for the most sensitive work, medium or low for routine work.
+  - Make it prove it: require evidence before it reports done, and say plainly when something is unverified. Applies to any model.
+  - Fable-specific: do not ask it to explain its reasoning, because that can trigger a refusal and routing to Opus 4.8.
+  - Say less: a short, clear instruction steers Fable about as well as a long rule list.
+- **Tools / prices / numbers:**
+  - Fable 5: $10 per million input tokens and $50 per million output tokens, double Opus per his comparison.
+  - Promotional period: up to 50 percent of weekly limits at no extra cost; ends July 7, then usage credits.
+  - Fable 5 at low effort is cheaper than Opus 4.8 at xhigh or max, per his reading of the comparison.
+  - He suggests reaching for Fable only about 5 to 15 percent of the time.
+  - Safety routing: requests flagged for hacking, dangerous biology, or asking for private reasoning may silently route to Opus 4.8.
+- **Skills shown:** prompt design, effort-level selection, model routing awareness, verification prompting, cost control.
+- **Money angle:** none. Practical value is cost control: match model and effort to the task so usage credits are not spent on routine work.
+- **Duet-relevant:** no
+- **Promo:** sponsor HyperAgent (Airtable team): a council of Claude-based agents you message in Slack, with free credits via a link in the description. Full guide in the free school community.

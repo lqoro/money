@@ -1,0 +1,13 @@
+## 102. The Skill That 10x’d My Claude Code Projects
+- **Link:** https://www.youtube.com/watch?v=c0kaKxM2pHg | **Length:** 7 min | **AI-relevant:** yes
+- **Teaches:**
+  - Everyone on the same model gets the same generic output. Results sound like you only when your taste, decisions, and process are written into the context.
+  - The hard part is extraction: getting knowledge out of your head and into files the AI can use.
+  - A "grill me" skill interviews you relentlessly, one question at a time, with a recommended answer for each, and explores the codebase instead of asking when it can.
+  - Nate's change: checkpoint every answer to a markdown file in a brainstorms folder, so long sessions do not lose early answers.
+  - After a session, update the related skills and guides with the new decisions. Front-loading the questions makes later iterations shorter.
+- **Tools / prices / numbers:** Claude Code with Opus 4.8. The original prompt by Matt Pocock is a short paragraph; Nate's version adds checkpointing. No prices stated.
+- **Skills shown:** skill authoring, knowledge extraction, checkpointing, Q&A logs, iterating on skills
+- **Money angle:** none stated. Nate mentions client discovery calls and project scoping as where this extraction matters most, without a price or offer.
+- **Duet-relevant:** no
+- **Promo:** Nate's free school community (Classroom, "All YouTube resources") for his grill-me version and related resources

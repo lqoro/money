@@ -1,0 +1,13 @@
+## 261. n8n Webhook Security: Learn This Before It's Too Late
+- **Link:** https://www.youtube.com/watch?v=3FfCRbq3XMs | **Length:** 9 min | **AI-relevant:** yes
+- **Teaches:**
+  - A live n8n webhook with no auth lets anyone who has the production URL start the workflow, which can run up model costs and reach connected tools and data.
+  - Use a long, hard-to-guess path as a first layer, then add authentication.
+  - Three options in n8n: Header Auth (one key/value pair, most universal), Basic Auth (username and password, common in legacy systems), and JWT (a signed token whose payload carries identity such as admin status, used to route users to different agents).
+  - Test the setup in Postman: a request with no credentials fails, and a request with the right header, basic login or bearer token succeeds.
+  - Route by JWT payload, e.g., send admins to an agent with more access.
+- **Tools / prices / numbers:** n8n, Postman, jwt.io. He mentions a possible $500 surprise bill from abuse (his example, no source given).
+- **Skills shown:** webhook hardening, API auth patterns, JWT basics, request testing in Postman.
+- **Money angle:** Security hardening for client agents that are publicly reachable (voice, DM, or chat webhooks). Sell an audit plus auth setup. No prices given.
+- **Duet-relevant:** yes, any always-on public webhook agent (voice or DM bots) needs auth so people cannot abuse it.
+- **Promo:** free school community (decision-tree template and workflow file); paid community; Agent Zero and 10 Hours to 10 Seconds courses; links in description.

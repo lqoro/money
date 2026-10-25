@@ -1,0 +1,13 @@
+## 263. Build Anything With Grok 4 and n8n AI Agents
+- **Link:** https://www.youtube.com/watch?v=FFH3uQDk2yU | **Length:** 11 min | **AI-relevant:** yes
+- **Teaches:**
+  - Grok 4 (released July 9, 2025, per him) is a chat model that can be added to an n8n AI agent through the xAI Grok chat model node.
+  - Attach a research tool (Perplexity Sonar) and let the model choose the query. It called the tool without a system prompt.
+  - Multi-tool runs failed with "failed to parse tool arguments." Fixes he tried: JSON response format plus a prompt line mentioning JSON. That removed the error but did not get the tools called.
+  - Routing through OpenRouter worked and gave one billing place for many models.
+  - Cost and speed: a run with Perplexity and Tavily research cost about 12 cents (his figure) and took several minutes. Offload cheap steps to a cheaper model to cut cost.
+- **Tools / prices / numbers:** Grok 4 (256k context window per him; 1.7T parameters per him), xAI API, OpenRouter, Perplexity Sonar, Tavily, Gmail. His benchmark claims (his figures, not verified): HLE 25% without tools and 44.4% with tools; GPQA about 87-88%; AIME 95; SWE-bench about 72-75%.
+- **Skills shown:** model swapping in n8n, tool-call debugging, OpenRouter setup, cost reading from executions.
+- **Money angle:** none stated. Model choice and cost control are useful for client builds.
+- **Duet-relevant:** no.
+- **Promo:** paid community (no link text beyond the description) and the classroom section; no affiliate code mentioned.

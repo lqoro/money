@@ -1,0 +1,13 @@
+## 336. Everything I Learned About AI Agents in 2024 in 19 Minutes
+- **Link:** https://www.youtube.com/watch?v=pYelCIqkm5Y | **Length:** 19 min | **AI-relevant:** yes
+- **Teaches:**
+  - An assistant is reactive and needs direction; an agent acts autonomously across multi-step processes.
+  - Core agent parts: the core (brain), memory, tools, and the prompt.
+  - Build order: first a clean, up-to-date data foundation (e.g. a vector database), then goal mapping, then the build in n8n, then testing and refining against edge cases.
+  - Design with clear inputs and outputs per workflow, modular job-specific agents, and a choice between sequential chaining and parent (orchestrator) chaining.
+  - Prompts should cover objective, context, tools, instructions, output format, and examples.
+- **Tools / prices / numbers:** n8n; Pinecone (named as an example vector database). No prices. Nate mentions a 10,000-subscriber milestone and a $100 giveaway. He also says he quit his full-time job to focus on agents (his claim).
+- **Skills shown:** agent architecture, RAG concepts, prompt structure, modular workflow design, debugging.
+- **Money angle:** Nate offers paid AI consulting to build agents for businesses. No price is stated in the video.
+- **Duet-relevant:** no
+- **Promo:** Free "school" community (resources and a giveaway entry); paid community with five weekly calls and project insights; AI consultancy booked through his website.

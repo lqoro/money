@@ -1,0 +1,13 @@
+## 243. I Built a Photoshop AI Agent in n8n with no code (NanoBanana)
+- **Link:** https://www.youtube.com/watch?v=7UNsK9LoORo | **Length:** 17 min | **AI-relevant:** yes
+- **Teaches:**
+  - A Telegram-driven agent receives a photo or text, uploads it to Google Drive, and asks what to name it. Its tools rename, search raw or AI-generated folders, combine two images, or edit one.
+  - Put image generation in sub-workflows, and call each one from the main agent as a tool, so you can reuse it in other agents.
+  - Image-edit chain: download the file from Drive, host it at a public URL (imgbb, free), send one request to the image API with a prompt and URLs, poll for the result every few seconds, then save the output to Drive.
+  - Sanitize prompts (strip newlines and quotes) so the JSON request does not break.
+  - Improve quality with a dedicated prompt-writing agent, and log every step to a Google Sheet.
+- **Tools / prices / numbers:** n8n; Telegram; Google Drive; GPT-5.1 (main agent, as stated); Sonnet 3.5 (fallback); fal.ai (Nano Banana image model, about 4 cents per image per Nate); imgbb (free image hosting); OpenRouter (Nate: 25 images for about $1, and free access had just ended). Credentials and setup guide come with the template.
+- **Skills shown:** Telegram agent setup, n8n sub-workflows as tools, binary file handling, API polling, JSON-safe prompting, image generation and editing pipelines.
+- **Money angle:** Sell an ad-creative or UGC image service: a client sends product photos, the agent returns branded variations. Add a logger and a prompt agent, then charge per asset or monthly. Video generation from the output is an add-on. No price points for services stated; his per-image cost is about 4 cents.
+- **Duet-relevant:** no. It is a Telegram-driven tool, not a persistent personal assistant, though it has memory keyed to the chat.
+- **Promo:** Free school community (all his YouTube resources, including this template); paid "Plus" community ("thousands of members", his words) with two full courses and a third on monetizing AI skills.

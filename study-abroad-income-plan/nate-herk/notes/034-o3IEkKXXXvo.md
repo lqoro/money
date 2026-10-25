@@ -1,0 +1,14 @@
+## 34. GPT-6 Astra Finally Solves AI Video Editing (full guide)
+- **Link:** https://www.youtube.com/watch?v=o3IEkKXXXvo | **Length:** 30 min | **AI-relevant:** yes
+- **Teaches:**
+  - Build an AI video editing pipeline inside the Codex desktop app, using the open-source Hyperframes project, which generates animated motion graphics as HTML.
+  - Pipeline order: transcribe the footage with word-level timing, cut out mistakes and dead air, plan "beats" (one beat per scene), generate the animated HTML, then verify with screenshots and the transcript in a loop until it syncs.
+  - Store the transcription API key in an env file. He uses ElevenLabs speech-to-text and says a local Whisper install works but is slower.
+  - Record the project rules in an agents.md file. After a good result, ask the agent to save it as a skill, then iterate on that skill with feedback.
+  - Demo: a one-minute intro cut to 28 seconds on the first pass. A second prompt fixed text size and the 3D video panel.
+  - Opens with a three-layer method he attributes to Karpathy (spec, verifier, environment). He teaches that separately.
+- **Tools / prices / numbers:** Codex desktop app; Hyperframes (free GitHub repo); ElevenLabs (he cites a plan of about $5 a month); Nvidia free API access to 80+ models, which he calls free (Nate's claim; models named include Kimi, GLM and DeepSeek).
+- **Skills shown:** Codex, Hyperframes, speech-to-text APIs, agents.md project setup, skill creation, verification loops, motion graphics prompting
+- **Money angle:** none stated. Implied: short-form reels and ads for businesses, made with this pipeline. His examples are his own channel and community content.
+- **Duet-relevant:** no
+- **Promo:** free school community (AI Automation Society) with a "student kit" of skills; an AIS Live event; a 7-day challenge and a build-your-AIOS course mentioned

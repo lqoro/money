@@ -1,0 +1,16 @@
+## 51. I Tested Claude Code vs. Codex on Design. It Wasn't Even Close.
+- **Link:** https://www.youtube.com/watch?v=bg0C-2iUUqM | **Length:** 21 min | **AI-relevant:** yes
+- **Teaches:**
+  - A controlled comparison: the same brand guide, logo, copy, and prompts were given to Claude Code and Codex to build eight websites.
+  - Vague prompts ("impress me") produced very different sites; very specific prompts produced nearly identical sites, so the gap came down to efficiency.
+  - Test layouts at several window sizes, because half-screen and full-screen views exposed different bugs.
+  - Judge the tool on repeated back-and-forth over an hour or two, not only one-shot output quality.
+  - Nate's own prompt skill produced wordy copy, so he plans to tighten it.
+- **Tools / prices / numbers:**
+  - Claude Code (Opus 5): about 4 subagents per build, roughly 400K-500K output tokens, about $42-65 per build (Nate's figures).
+  - Codex (GPT-5.6 Sol): one agent, about 100K output tokens, under $20 per build, roughly 1 hour versus Claude Code's 2+ hours.
+  - Eight-build totals (Nate's API-equivalent estimate): about $444 for Claude Code versus about $100 for Codex.
+- **Skills shown:** website design prompting, side-by-side tool benchmarking, token and cost tracking, multi-viewport testing
+- **Money angle:** Agencies or freelancers building client sites could choose the cheaper, faster tool per build. No pricing for services is given.
+- **Duet-relevant:** no
+- **Promo:** Sponsor Granola (spoken as "Grain Note"), an AI meeting notepad that listens to computer audio without a bot joining the call; link in description. Mentions his own skill video.

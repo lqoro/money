@@ -1,0 +1,16 @@
+## 141. How to Build 24/7 Claude Agents. Easy.
+- **Link:** https://www.youtube.com/watch?v=ehg4fhydTgs | **Length:** 16 min | **AI-relevant:** yes
+- **Teaches:**
+  - Claude Code "routines" run a saved prompt on Anthropic's cloud, triggered by a schedule, an API call, or a GitHub event, so the laptop can stay closed.
+  - Routines clone a GitHub repo each run, read its CLAUDE.md and scripts, then delete the clone. Secrets do not travel with the repo, so they go into the cloud environment's variables.
+  - Prompts must be one-shot and specific, because nobody is there to answer questions. Test with "run now" and fix the prompt before scheduling.
+  - Local-only things (browser cookies, local files) do not work in a routine. Anything needing a login must use an API key or endpoint.
+  - Full network access is needed for some tools; "trusted" blocks non-approved domains.
+- **Tools / prices / numbers:**
+  - Routines: research preview; minimum interval 1 hour; Pro about 5 runs/day, Max 15/day, Team/Enterprise 25/day (per Nate).
+  - Each run gets 4 vCPU, 16 GB RAM, 30 GB disk (per Nate).
+  - Nate is on the $200/mo Max plan. Connectors include Slack, Gmail, ClickUp.
+- **Skills shown:** scheduled tasks, environment variables, GitHub repo setup, prompt design, permission settings
+- **Money angle:** Running always-on client automations (reports, comment summaries, posting) for small businesses without keeping a machine on. Price points not stated. Start by migrating one recurring task you already run locally.
+- **Duet-relevant:** partly; scheduled cloud agents that act as you, but not a chat-based personal bot.
+- **Promo:** free school community (doc and resources linked in description); his other videos.

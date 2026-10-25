@@ -1,0 +1,16 @@
+## 15. I Tested OpenAI's Dots vs. Meta's Muse. What You Need to Know.
+- **Link:** https://www.youtube.com/watch?v=BvvfZKKz4Yo | **Length:** 16 min | **AI-relevant:** yes
+- **Teaches:**
+  - Side-by-side test of two persistent cloud agents, OpenAI's Dots and Meta's Muse, after about a day with each. Both are a single personal agent with its own cloud computer, schedules and connectors, not a set of separate bots.
+  - Memory and persona: Muse shows editable "soul" and "memory" files in a visual panel. Dots starts from ChatGPT memory and builds context more abstractly.
+  - Channels: Dots can be added to Slack, including team channels. Muse has a WhatsApp connector, but the WhatsApp thread is view-only inside the Muse app.
+  - Muse's interface groups work into Today, Approvals, Schedule (with a 30-minute heartbeat that checks docs and email), a feed, and an artifacts library (documents, dashboards, images, videos, podcasts). Nate found Dots' scheduling hard to manage and its threads did not land in his project folders.
+  - Verdict: Dots suits people already in Codex and ChatGPT. Muse suits non-technical users. Nate expects these products to converge.
+- **Tools / prices / numbers:**
+  - Dots: a paid ChatGPT subscription is needed to build a first Dot. Dots usage is not yet counted against the weekly limit (Nate says this is temporary). Runs on a model Nate calls Astra.
+  - Muse: free tier with up to 100 million tokens per week (Nate's figure); paid plans raise the limit. Runs on Muse Spark 1.3.
+  - Other tools named: Codex desktop app, Slack, WhatsApp, Google Docs and email connectors.
+- **Skills shown:** product comparison, agent memory and persona setup, Slack and WhatsApp channel setup, scheduled tasks.
+- **Money angle:** none stated. Setting up Slack- or WhatsApp-connected personal agents for non-technical clients is a possible service, but this is my inference, not Nate's.
+- **Duet-relevant:** yes. Dots and Muse are always-on persistent agents that act for the user across Slack, WhatsApp and scheduled tasks, with heartbeat checks.
+- **Promo:** a free SOP on landing a first automation client (link in the description), made for "AIS Plus" members.

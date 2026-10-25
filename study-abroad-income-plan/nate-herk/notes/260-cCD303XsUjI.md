@@ -1,0 +1,13 @@
+## 260. From Zero to RAG Agent: Full Beginner's Course (no code)
+- **Link:** https://www.youtube.com/watch?v=cCD303XsUjI | **Length:** 23 min | **AI-relevant:** yes
+- **Teaches:**
+  - RAG means retrieve information, then generate an answer. A vector database is one way to retrieve.
+  - Two parts: an ingestion pipeline (document, chunk, embed, store) and a query agent (embed the question, match vectors, answer).
+  - Build in n8n: Google Drive download, default data loader (1,000-character chunks with 200 overlap, binary input), OpenAI embeddings (text-embedding-3-small), and a Supabase vector store. Set up Supabase by copying its host and service key into n8n and running the vector table SQL.
+  - Query side: a chat trigger, an agent with a vector store retrieval tool, and Postgres chat memory keyed by session ID.
+  - Next steps: auto-update vectors when a file changes, and delete vectors when a file is removed.
+- **Tools / prices / numbers:** n8n, Supabase (free tier for project creation), OpenAI API (needs billing; embeddings and GPT-4.1 mini), Google Drive. Demo PDF of 22 pages produced 77 vectors. Postgres memory window of five messages (his setting).
+- **Skills shown:** no-code RAG build, API credential setup, chunking and embedding settings, session-based memory.
+- **Money angle:** Beginner-level RAG agents for small businesses (document Q&A on a golf rulebook, policies, catalogs). Sell a setup plus a keep-it-updated pipeline. No prices stated.
+- **Duet-relevant:** partly. Session-keyed memory (e.g., by email or phone) is how a persistent personal agent would remember you, but the video is a chat-only demo.
+- **Promo:** free school community (PDF and JSON); he says he ran a live build in his paid community; paid community plus Agent Zero and 10 Hours to 10 Seconds courses; links in the description.

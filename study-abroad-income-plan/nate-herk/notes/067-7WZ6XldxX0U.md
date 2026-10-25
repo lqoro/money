@@ -1,0 +1,18 @@
+## 67. 5000 Hours of Building AI in Just 17 Minutes
+- **Link:** https://www.youtube.com/watch?v=7WZ6XldxX0U | **Length:** 16 min | **AI-relevant:** yes
+- **Teaches:**
+  - Collect "receipts" (measured outcomes such as hours saved or leads caught), not just demo screenshots.
+  - Tools change, so build skills and reusable systems that work on any harness.
+  - Ask "to what extent can AI do this" instead of "can it."
+  - Negative-prompt your skills with the mistakes you have already made. This is context engineering.
+  - Make models challenge your plan from several personas, and set a clear finish line.
+  - Verification: have the AI test its own work the way a human reviewer would (screenshots, clicking through forms, tests).
+  - Restrict what an agent can touch. Give it scoped API keys and tools, because a prompt rule is only a suggestion.
+  - Test with a golden dataset of known-good examples, and use an LLM judge where grading needs reasoning.
+  - Find the real constraint ("clog or leak") instead of the stakeholder's stated request. Set one north-star metric with a baseline before building.
+  - Route each task to the cheapest model that can do it.
+- **Tools / prices / numbers:** Claude Code, n8n (his earlier main tool), Haiku and Fable 5 as examples of model routing. Claims: 5,000+ hours, a seven-figure agency, 400,000+ students (Nate's claim). Model routing "can drop the bill 10x or more" (his claim).
+- **Skills shown:** context engineering, agent verification, evals, least-privilege tool design, constraint analysis, model routing
+- **Money angle:** Build a consulting practice or an internal AI role by showing measured outcomes. Pitch a north-star metric to the client up front, so the project has a finish line and a case study.
+- **Duet-relevant:** no
+- **Promo:** Free school community (400,000+ members) with a free resource guide. Mentions the AI Automation Society certification program.

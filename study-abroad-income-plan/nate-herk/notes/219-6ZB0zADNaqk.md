@@ -1,0 +1,17 @@
+## 219. The Cheapest & Easiest Way to Self-Host n8n (Beginner's Guide)
+- **Link:** https://www.youtube.com/watch?v=6ZB0zADNaqk | **Length:** 15 min | **AI-relevant:** yes
+- **Teaches:**
+  - Why self-host: data control, no execution limits, lower cost at high usage, and room to connect private or local AI models.
+  - Deploy n8n on a Hostinger VPS using its one-click n8n template. Choose a plan size (he uses KVM 2), a region, and the n8n image.
+  - Activate the free license key for paid-tier features (workflow history, debugging, folders).
+  - Update n8n by running docker compose pull, down, then up. Workflows and credentials survive because they live in a Docker volume.
+  - Compare with n8n Cloud: Cloud has the AI workflow builder and projects with roles. Self-hosted lacks both, but has no execution limits and no vendor lock-in. Beginners should start on Cloud.
+- **Tools / prices / numbers:**
+  - Hostinger KVM 2 on a 24-month plan: about $6 a month (his figure). n8n Cloud starter: about $25 a month (he says "something like that").
+  - Free domain for one year. Daily backups add about $6 a month.
+  - Yearly plans: about 10% off with a coupon code he gives in the video.
+  - He says self-hosting can save up to four times compared to Cloud (his estimate).
+- **Skills shown:** VPS setup, Docker basics, n8n updates, cost comparison, backups and monitoring
+- **Money angle:** Hosting setup as a service for clients. He says you may not charge for access to n8n itself: the client should hold the billing and own the account, and you act as adviser and builder. No prices for services.
+- **Duet-relevant:** no
+- **Promo:** Sponsored: he says Hostinger worked with him on the video, and he discloses that he uses it himself. Discount coupon for 10% off yearly plans; a larger discount through the Plus community. Free school community and paid community also linked.

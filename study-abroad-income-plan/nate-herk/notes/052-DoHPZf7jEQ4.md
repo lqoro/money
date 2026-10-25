@@ -1,0 +1,16 @@
+## 52. The 3-Step System Behind My $20K/Month AI Agency Retainers
+- **Link:** https://www.youtube.com/watch?v=DoHPZf7jEQ4 | **Length:** 29 min | **AI-relevant:** yes
+- **Teaches:**
+  - Talk about the business constraint, not the requested tool: decide whether the business is supply-constrained or demand-constrained, then fix the first thing that would break.
+  - Pick one measurable KPI with the client before accepting payment (for example, appointments per week, baseline versus target), so results can be proven.
+  - Price by value, not hourly effort: show the client the math and aim for roughly 10x return. Estimate the manual cost (hours times rate, plus missed opportunities) and charge about 10% of the annualized value.
+  - Start with one value-priced project, then keep solving the next constraint to earn a retainer.
+  - Use silence and "what would break first" questions in discovery calls.
+- **Tools / prices / numbers:**
+  - Nate's claims: agency reached $100K/month; minimum retainer was $20K/month (Nate's claim).
+  - Worked example: a $40/hr support rep spending 10 hrs/week is about $2,100/year, so about $210 at 10% (Nate's example).
+  - Free 30-page pricing guide in his free community.
+- **Skills shown:** discovery and diagnosis, KPI design, value-based pricing, client communication, automation scoping
+- **Money angle:** Sell AI automation to businesses as a one-project engagement, then retainers. Start with a project fee tied to value, then charge a monthly retainer after results. Price points: $20K/month minimum retainer (Nate's claim); about 10% of projected annual value for a project.
+- **Duet-relevant:** no
+- **Promo:** His free AI automation community (pricing guide download), YouTube channel, and a mention of the community's resources.

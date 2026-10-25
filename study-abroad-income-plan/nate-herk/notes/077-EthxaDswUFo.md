@@ -1,0 +1,17 @@
+## 77. I Tested GPT 5.6 Sol vs Fable 5. What You Need To Know.
+- **Link:** https://www.youtube.com/watch?v=EthxaDswUFo | **Length:** 20 min | **AI-relevant:** yes
+- **Teaches:**
+  - Side-by-side testing method: same `/goal` prompt in Claude Code (Fable 5) and Codex (GPT 5.6 Sol), then compare outputs, time, and cost
+  - Three test types: agentic builds (browser bike game, scroll website, five-element showcase), one-shot API tasks, and daily work
+  - Judge outputs by feel and use case, not benchmarks
+  - Pick the model by role: Fable as manager or reviewer, Sol as a fast, cheap worker
+- **Tools / prices / numbers:**
+  - Bike game: Fable about $14.22 and 21.6 min (about 90k output tokens); Sol about $4.50 and 23 min (about 31k output tokens)
+  - Website: Fable about $19.24 and 23 min; Sol about $1 and 7 min (Nate's figures)
+  - Five-element test: Fable about $15 and 15 min; Sol about $1 and 7 min
+  - API one-shot tasks: Sol won 24 of 27; total spend about $16 (Sol) versus $63 (Fable), with Fable often declining to answer
+  - Overall Sol is roughly half Fable's per-token price (Nate's claim)
+- **Skills shown:** `/goal` prompting, running two harnesses side by side, cost and token tracking, API evaluation, prompt-driven testing
+- **Money angle:** none (he gives model-choice advice; no offer is pitched)
+- **Duet-relevant:** no
+- **Promo:** none (he links two of his own YouTube videos made by each model)

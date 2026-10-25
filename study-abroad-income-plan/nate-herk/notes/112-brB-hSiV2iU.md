@@ -1,0 +1,16 @@
+## 112. What Karpathy Joining Anthropic Actually Means For Claude
+- **Link:** https://www.youtube.com/watch?v=brB-hSiV2iU | **Length:** 16 min | **AI-relevant:** yes
+- **Teaches:**
+  - Nate's thesis: the model is only one layer; the "wrapper" (CLAUDE.md, memory, skills, sub-agents, hooks, MCP connectors, docs) decides output quality.
+  - Context engineering matters more than prompt writing; a stateless chat starts from zero every time.
+  - Karpathy's LLM Wiki pattern: raw folder of markdown, an agent-built wiki, and a schema file that tells the agent how to maintain it.
+  - Goal-driven autonomous loops (Karpathy's autoresearch, Claude Code's goal command) shift work from one prompt to one defined outcome.
+  - Suggests you can build a small personal wiki this weekend by having Claude Code read your documents.
+- **Tools / prices / numbers:**
+  - Ramp AI index, as cited: Anthropic 34.4% vs OpenAI 32.3% of business spending (Ramp customer base only).
+  - Anthropic enterprise services venture with private-equity and bank partners (announced earlier that month, as cited).
+  - Karpathy's LLM Wiki (April) and autoresearch (March) are referenced; no prices given.
+- **Skills shown:** context engineering, knowledge-base design, agent workflow design, reading AI industry signals
+- **Money angle:** Nate speculates (no stated prices) that a marketplace for packaged skills, workflows and domain context could emerge, and that domain experts could sell packaged expertise.
+- **Duet-relevant:** no
+- **Promo:** mentions his earlier LLM Wiki video only; no paid offer.
