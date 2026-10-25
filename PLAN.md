@@ -22,6 +22,13 @@ Implication: your edge is healthcare + bilingual + AI literacy, not coding. Lead
 - Time-zone fit: Spain is 6-9 hrs ahead of the US, so async/contract roles beat fixed-hours roles.
 - Actions: build a 1-page portfolio + resume, apply to 5-10 roles/week, sign up for 2-3 AI-training platforms right away (these pay $20-50/hr and onboard in days; they can bridge income).
 
+## AI-assist rules (you approve everything)
+- Fine: Claude drafts, you review, edit and approve. Use it for tutoring prep and lesson plans, outreach drafts, resume and portfolio, automation builds, admin, and study summaries.
+- Check each platform/employer/scholarship policy before using AI on their work. Where AI is banned or must be disclosed (many AI-trainer tasks, assessments, scholarship essays), your own words only. Disclose where required.
+- Do not use the humanizer to hide AI use where AI is prohibited. It is for polishing drafts you are allowed to use, not for beating detectors. Getting caught means permanent bans or a rescinded scholarship.
+- Medical judgment stays yours. Never submit AI-generated clinical answers as your expertise, and never imply credentials you lack.
+- Log the policy for each platform in `tracks/job-search.md` ("AI allowed? Y/N/disclose").
+
 ## Track B: AI automation service (upside), weeks 1-10
 Offer: done-for-you AI workflows for local small businesses (lead follow-up, review replies, appointment reminders, content repurposing, invoice/data entry).
 1. **Weeks 1-2 Pick one niche** (e.g. dentists, real-estate agents, gyms, restaurants) and one repeatable offer. Build the demo on the Mac Mini (n8n or Make + Claude/OpenAI API).

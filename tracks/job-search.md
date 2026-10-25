@@ -11,6 +11,9 @@ Your edge: NHA CMA, nursing student (TCU BSN), 3.877 GPA, fluent Spanish, comfor
 
 Check each employer's policy on working from outside the US, and never claim a license or credential you do not hold (you are a CMA and BLS-certified; you are not an RN).
 
+## AI use
+Claude drafts, you review and approve. Read each platform's AI policy before using it on their work; where AI is banned or must be disclosed, use your own words. Do not use the humanizer to hide AI use where it is prohibited. Clinical judgment is yours.
+
 ## Weekly checklist
 - [ ] 5-10 applications sent
 - [ ] 2-3 platform signups/assessments completed
@@ -18,5 +21,5 @@ Check each employer's policy on working from outside the US, and never claim a l
 - [ ] Follow-ups sent
 
 ## Log
-| Date | Company/platform | Role | Status | Pay |
-|------|------------------|------|--------|-----|
+| Date | Company/platform | Role | Status | Pay | AI allowed? (Y/N/disclose) |
+|------|------------------|------|--------|-----|----------------------------|
