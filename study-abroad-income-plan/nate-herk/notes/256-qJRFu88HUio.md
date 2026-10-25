@@ -2,11 +2,10 @@
 - **Link:** https://www.youtube.com/watch?v=qJRFu88HUio | **Length:** 21 min | **AI-relevant:** yes
 - **Teaches:**
   - Two ways to add voice: a speech-in/speech-out pipeline (audio file in, audio file out) and a real-time ElevenLabs voice agent.
-  - Pipeline: Telegram voice message, download the file, transcribe with ElevenLabs, run an AI agent, convert the reply to speech, send audio back.
+  - Pipeline: Telegram voice message, download, transcribe with ElevenLabs, run an AI agent, convert the reply to speech, send audio back.
   - Voice agent pattern: the ElevenLabs agent calls an n8n webhook as a tool, n8n does the research, and the answer returns to the call.
-  - Use a Respond to Webhook node so the voice agent waits for the result instead of getting an immediate acknowledgment.
-  - Avoid double reasoning: the voice agent already decides when to call the tool, so the n8n side can call a research node directly instead of a second agent.
-  - Switch the webhook from test to production URL before activating.
+  - Use a Respond to Webhook node so the voice agent waits for the result. Avoid a second agent, since the voice agent already decides when to call the tool. Swap in the production webhook URL before activating.
+  - Use a Respond to Webhook node so the voice agent waits for the result. Avoid a second agent, since the voice agent already decides when to call the tool. Swap in the production webhook URL before activating.
 - **Tools / prices / numbers:**
   - ElevenLabs: he says he is on the $5/month plan and rarely hits the limit (his statement).
   - Perplexity (Sonar model) for research, OpenRouter for chat models, Telegram.

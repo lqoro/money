@@ -1,0 +1,18 @@
+## 194. Agentic Workflows Just Changed AI Automation Forever! (Claude Code)
+- **Link:** https://www.youtube.com/watch?v=AO5aW01DKHo | **Length:** 22 min | **AI-relevant:** yes
+- **Teaches:**
+  - Agentic workflows: describe the outcome in plain English; the agent plans, asks questions, builds, and repairs its own steps. Contrast with node-by-node n8n builds.
+  - Four shifts: self-healing (agent reads errors and fixes its own code), natural-language control (iterate by asking for changes), security review on every change with rules set in plain language, and instant API and MCP integrations.
+  - WAT framework (workflows = markdown SOPs, agent = Claude Code, tools = Python scripts) with a CLAUDE.md file for instructions.
+  - Live demo: plan mode, a few clarifying answers, auto-accept, then a working lead-gen workflow with three tools (scrape, generate outreach, export to sheets).
+  - To run on a schedule or trigger, publish the scripts to a hosting service rather than keeping Claude Code open.
+  - Future trends: proactive agents, agents managing agents, agent-to-agent protocols, long-running project agents with checkpoint notes.
+- **Tools / prices / numbers:**
+  - Claude Code in VS Code; Google Places API (lead source); OpenAI (outreach copy); Google Sheets (output); Modal (suggested hosting for scripts); Fireflies, ClickUp, Gmail (examples); a "Ralph Wiggum" loop plugin for Claude Code.
+  - Demo output: 10 test leads with name, address, phone, website, rating, reviews, and personalized outreach.
+  - Trend figures Nate cites: a forecast firm (garbled name in transcript) says 25% of enterprises will run agentic pilots this year, rising to 50% by 2027; AI agent market from about $8B (2025) toward the high $40Bs or low $50Bs by 2030 (43% CAGR).
+  - Nate's free community: over 230,000 members. Paid community: over 3,000 members.
+- **Skills shown:** plan-mode prompting, agent-built automations, lead generation, API integration via MCP, workflow and tool structuring
+- **Money angle:** Sell custom lead-gen automations (e.g., a Chicago dentist lead list with outreach copy, as in the demo) and ongoing maintenance and expansion. Nate says clients pay for problem definition, integration with messy systems, and maintenance more than the build. No prices quoted.
+- **Duet-relevant:** no
+- **Promo:** Free school community (resource guide); paid community (over 3,000 members).

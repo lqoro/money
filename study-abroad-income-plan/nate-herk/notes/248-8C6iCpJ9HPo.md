@@ -1,0 +1,17 @@
+## 248. I built this AI Agent in 2 hours (and got paid $1200)
+- **Link:** https://www.youtube.com/watch?v=8C6iCpJ9HPo | **Length:** 11 min | **AI-relevant:** yes
+- **Teaches:**
+  - The "agent" was really an AI workflow: it ran three times a day, generated topic ideas for the client's audience, and wrote posts in the client's brand voice.
+  - He got the client from a free YouTube channel with an email address in the description. He was building in public, not positioning as an expert.
+  - Price on outcome. Work out how the client does the task by hand, how much time it takes, and what that time is worth.
+  - Show ROI in at least two of three areas (time, cost, quality). Quote a fixed build fee plus small ongoing API costs.
+  - Prototype fast, let real inputs hit the system, then collect edge cases and add guardrails for the patterns that break.
+- **Tools / prices / numbers:**
+  - (Nate's claim) Sold the build for $1,200; the build took about 2 hours.
+  - Worked example (his): a system that saves a business about $15,000/month and 20 hours/month could be sold as $3,000 upfront plus $1,000/month.
+  - He says a rebuild would now take about 30 minutes.
+  - Stack: n8n, ChatGPT for brainstorming, and API credits.
+- **Skills shown:** n8n workflows (data aggregation, splitting items, HTTP requests, content generation), ROI-based pricing, client discovery, building in public.
+- **Money angle:** Sell one-time builds to business owners who spend hours on repetitive content, outreach or FAQs, plus a small monthly API cost. Start by posting builds with a way to contact you, then price against time saved.
+- **Duet-relevant:** no
+- **Promo:** Free school community (resource doc for this video); he invites requests for more content on selling AI services.

@@ -1,0 +1,16 @@
+## 184. Building Beautiful Websites with Claude Code Is Too Easy
+- **Link:** https://www.youtube.com/watch?v=86HM0RUWhCk | **Length:** 28 min | **AI-relevant:** yes
+- **Teaches:**
+  - Five hacks for professional-looking sites: (0) a CLAUDE.md file as the standing system prompt; (1) a front-end design skill installed globally; (2) a screenshot loop where the agent screenshots its own output and fixes mismatches; (3) cloning an inspiration site from a full-page screenshot plus its computed styles; (4) borrowing individual components from a component library.
+  - Keep a brand_assets folder with logo and brand guidelines, and tag the files in chat so the agent uses them.
+  - Work on localhost until you approve, then commit and push to GitHub; Vercel auto-deploys from the repo.
+  - Turn off the screenshot loop for animated backgrounds, since the agent can get stuck trying to match a moving element.
+  - Bypass-permissions mode skips every prompt, so Nate watches the agent while it runs.
+- **Tools / prices / numbers:**
+  - VS Code, Claude Code (Pro is enough to start; Max if limits bite), an official front-end design skill that Nate modified, Puppeteer for screenshots, GitHub, Vercel, 21st.dev for components.
+  - Inspiration sources named: Dribbble, Godly, Awwwards.
+  - No prices or revenue figures stated.
+- **Skills shown:** CLAUDE.md design, front-end design, screenshot-based QA, site cloning, component reuse, GitHub, Vercel deployment.
+- **Money angle:** none stated. The workflow is framed as building client-ready sites, but no pricing or offer is given.
+- **Duet-relevant:** no
+- **Promo:** free school community (claude.md download); paid "AI Automation Society Plus" community with thousands of members, and a full course he says is coming in the next few months.

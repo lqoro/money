@@ -1,0 +1,16 @@
+## 272. How to Set Up a Cloudflare Tunnel for Local n8n (2025)
+- **Link:** https://www.youtube.com/watch?v=cZQPDLgPtNg | **Length:** 9 min | **AI-relevant:** yes
+- **Teaches:**
+  - Why a local n8n cannot receive webhooks from outside (Gmail, Telegram, and similar services), and how a tunnel fixes that by giving n8n a public HTTPS address.
+  - Create a Cloudflare account and add a domain you own (or buy one through Cloudflare). He says free quick-tunnel URLs are temporary, so a domain is better for a stable setup.
+  - In Zero Trust, create a tunnel, install the cloudflared connector on the host, confirm it shows healthy, then map a subdomain to the local n8n service (http://localhost:5678).
+  - Set the webhook URL and protocol environment variables in the Docker Compose file for the self-hosted starter kit, then run `docker compose down` and `docker compose up -d` so the change takes effect.
+  - Test by confirming the n8n webhook URL now shows the public domain. That is what makes Google OAuth redirects and Telegram webhooks work.
+- **Tools / prices / numbers:**
+  - Tools: Cloudflare (Zero Trust tunnels, DNS), cloudflared connector, Docker and Docker Compose, n8n, Perplexity (works with outbound calls even before the tunnel).
+  - Prices: a domain through Cloudflare for about $10 per year (his estimate).
+  - Numbers: default n8n port 5678.
+- **Skills shown:** Docker Compose env editing, tunnel and DNS setup, webhook URL configuration, container restart and troubleshooting
+- **Money angle:** none (infrastructure how-to). Could support a client-hosted n8n that needs public webhooks, but no offer or pricing is discussed.
+- **Duet-relevant:** partly. It is infrastructure: a tunnel lets messaging-app services such as Telegram reach a local n8n agent.
+- **Promo:** none.

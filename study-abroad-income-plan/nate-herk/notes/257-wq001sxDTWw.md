@@ -3,10 +3,10 @@
 - **Teaches:**
   - Context engineering: give the agent the right information at the right time, using tools and data, not one perfect prompt.
   - Six components: user input, system prompt, memory, retrieved knowledge, tool calls, and structured output.
-  - Three memory types: working (within one run), short-term (conversation window with a session ID), and long-term (persistent across sessions).
-  - Tool calling for RAG: vector stores, web search, CRMs, and sheets are all retrieval; chunking loses whole-document context, so use metadata and reranking.
-  - Summarize retrieved data in a sub-workflow before passing it back to the main agent to cut token cost.
-  - Design principles: begin with the end in mind, design the data pipeline and refresh rules, load only relevant context, and give each agent one job.
+  - Three memory types: working (within one run), short-term (conversation window keyed by session ID), and long-term (persists across sessions).
+  - Tool calling for RAG: vector stores, web search, CRMs, and sheets are all retrieval. Chunking loses whole-document context, so add metadata and reranking.
+  - Summarize retrieved data in a sub-workflow before it reaches the main agent, to cut token cost.
+  - Design principles: plan from the end, design the data pipeline and refresh rules, load only relevant context, and give each agent one job.
 - **Tools / prices / numbers:** n8n, Postgres or Zep for memory, Supabase vector store, Perplexity and Tavily for research, OpenWeatherMap, HubSpot, Google Docs, Gmail. No prices given. He notes that a longer context window costs more tokens.
 - **Skills shown:** n8n agent architecture, RAG pipeline design, memory configuration, prompt and tool-description design, cost control.
 - **Money angle:** Context and memory design is the core deliverable for client agents. Sell an audit of a client's data sources and an agent build with memory and retrieval. He did not state prices.

@@ -1,0 +1,13 @@
+## 288. The Secret to Making AI Agents 100% Reliable - Human in the Loop (n8n)
+- **Link:** https://www.youtube.com/watch?v=CdnR-fNVPKI | **Length:** 16 min | **AI-relevant:** yes
+- **Teaches:**
+  - Add a "human in the loop" send-and-wait step (Telegram in the demo) so the workflow pauses until a person responds.
+  - Use free-text feedback instead of yes or no, so the human can ask for changes.
+  - Route the reply through an LLM text classifier that decides approve or deny.
+  - On deny, a revision agent rewrites the post from the feedback and loops back for approval; a Set node keeps the latest version so only the final draft is posted.
+  - Limitation he found: the send-and-wait step does not yet pause correctly when used as an agent tool, so it currently works only in the main flow.
+- **Tools / prices / numbers:** n8n; Telegram; X; Tavily (plan with 1,000 free searches per month, transcript garbled); GPT-4.1 for drafting; Gemini 2.0 Flash for classification. No prices stated.
+- **Skills shown:** n8n human-in-the-loop, LLM classification, revision loops, Set-node state handling, Telegram bot setup
+- **Money angle:** none stated. (My inference: approval-gated posting could be offered to clients who want a sign-off step.)
+- **Duet-relevant:** yes, a Telegram agent that drafts and posts for you and waits for your approval.
+- **Promo:** free school community (template); paid community with five live calls per week.

@@ -3,11 +3,9 @@
 - **Teaches:**
   - An orchestrator agent delegates to specialist agents (email, contacts, YouTube, web research, calendar), each added as a tool with its own model and system prompt.
   - Since an n8n update, sub-agents can live in the same workflow, so each run is visible on one canvas.
-  - Let the model fill each sub-agent's input ("define below"), and keep the orchestrator from doing the work itself with a short system prompt.
-  - Debug with agent logs. Add tools one at a time.
+  - Let the model fill each sub-agent's input, and keep the orchestrator delegating (not acting) with a short system prompt. Debug with agent logs and add tools one at a time.
   - Fix a missing date by injecting the current date and time into system prompts as an expression, and set a missing title field in the calendar tool.
-  - Log every run (inputs, actions, tokens) to a Google Sheet for visibility.
-  - Use a workflow, not an agent, when the process is fixed and predictable.
+  - Log every run (inputs, actions, tokens) to a Google Sheet. Use a plain workflow, not an agent, when the process is fixed.
 - **Tools / prices / numbers:** n8n, OpenRouter, GPT-4.1 mini, Telegram, Gmail, Google Calendar, Google Sheets. Runs cost about 5,000 and 8,500 tokens (his figures). The template is free through his school community.
 - **Skills shown:** multi-agent orchestration, prompt delegation, agent log debugging, tool schema fixes, token logging.
 - **Money angle:** Build agent swarms for a client's ops (email, scheduling, research). Sell a setup plus logging dashboard. No prices stated.

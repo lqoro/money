@@ -1,0 +1,18 @@
+## 245. How I Sold These 4 AI Agents for $23,000 (as a beginner)
+- **Link:** https://www.youtube.com/watch?v=HNKlFTd1maM | **Length:** 15 min | **AI-relevant:** yes
+- **Teaches:**
+  - Diagnose a business problem first, then show the hours or money a manual process costs and how an automation would cut it.
+  - Price by value, not build effort. Early prices were guesses; later he priced by time saved and by complexity, and learned that a high close rate means you are underpricing.
+  - Sales path: discovery call, a second call with a technical co-founder to check scope, then close. Collect baseline data up front so you can prove ROI afterward.
+  - Package offers in tiers (starter, growth, scale) with a high anchor, add a change-request process for out-of-scope asks, and run a QA cycle before handoff.
+- **Tools / prices / numbers:**
+  - Outreach agent $1,650; sales/CRM intake agent $4,000; Slack personal assistant $6,000; concierge agent with MCP $12,000 (his figures).
+  - (Nate's claim) Four agents earned $23,000 total.
+  - ROI example: $50/hr for 2-3 hours a week is about $400/month, so a build pays back in about four months.
+  - Example tiers: $25,000 scale, $12,000 growth.
+  - Close-rate rule of thumb he gives: above 50% means you are too cheap; 20-30% is strong for B2B consulting.
+  - Build stack: n8n, a vector database, one or two AI models.
+- **Skills shown:** Discovery and scoping, ROI math, pricing and packaging, n8n agent building, MCP integration, QA.
+- **Money angle:** Sell custom agents to small businesses that lose hours to outreach, data entry, admin or customer questions. Start by posting builds with your contact info so inbound leads find you. Price against the time or money the client saves.
+- **Duet-relevant:** no
+- **Promo:** Free school community (resource pack for this video); Plus group (paid); "Automation to Monetization" course, released alongside this video.

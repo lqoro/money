@@ -1,0 +1,13 @@
+## 292. How I Automated Product Videography with AI (Step by Step n8n Tutorial)
+- **Link:** https://www.youtube.com/watch?v=qV7xOEKEBDA | **Length:** 27 min | **AI-relevant:** yes
+- **Teaches:**
+  - An n8n form collects a product photo, title, description and a validated email.
+  - Save the original to Google Drive, then download it again, because binary files are hard to reference later in the flow.
+  - An agent writes an image prompt from the description, then the OpenAI image-edit endpoint returns a base64 image that is converted to a binary file.
+  - Host the image on a free image host to get a public URL, send that to Runway for a 10-second image-to-video clip, and poll the task with an IF and a wait loop until it succeeds.
+  - Email the photo and video with Gmail; he notes rate limits and out-of-credit errors can break the run.
+- **Tools / prices / numbers:** n8n; OpenRouter (GPT-4.1); OpenAI gpt-image-1, $10 per million input and $40 per million output tokens (one edit about 5 cents by his read); Runway Gen-4 Turbo, $0.25 per 5s and $0.50 per 10s; ImgBB free image host; Google Drive; Gmail.
+- **Skills shown:** form triggers, binary file handling, multipart API requests, base64 conversion, polling loops, Gmail output
+- **Money angle:** none stated for a client offer. Product marketing visuals (photo plus video) are the use case shown. No price points for selling it.
+- **Duet-relevant:** no
+- **Promo:** free school community (prompt doc), paid community, classroom, courses for beginners and "10 Hours to 10 Seconds".

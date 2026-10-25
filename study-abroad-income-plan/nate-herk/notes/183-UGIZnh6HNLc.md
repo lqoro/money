@@ -1,0 +1,16 @@
+## 183. The EASIEST Way to Host Your Claude Code Agents
+- **Link:** https://www.youtube.com/watch?v=UGIZnh6HNLc | **Length:** 21 min | **AI-relevant:** yes
+- **Teaches:**
+  - Describe the automation in plain English, let Claude Code write TypeScript tasks, then deploy them to trigger.dev so they run in the cloud.
+  - trigger.dev gives scheduled runs, automatic retries, queues and orchestration. A "finder" task searches and spawns one child task per lead, so one failure does not break the batch.
+  - Make tasks idempotent: check the destination (a ClickUp list) before creating items, so duplicates are skipped.
+  - Keep secrets in a git-ignored .env file, then copy them into trigger.dev environment variables for both development and production. Do not paste keys into chat.
+  - Connect the trigger.dev MCP server so Claude can run test tasks; test in dev, then push to GitHub, which deploys to production on each push.
+- **Tools / prices / numbers:**
+  - Claude Code, trigger.dev, ClickUp (task output), GitHub, SerpAPI (Yelp's free API tier had closed, so the agent switched to it).
+  - Schedules shown: a checker every 2 minutes, a research task every 8 hours, a weekly lead search Mondays at 8 a.m.
+  - Nate's run: 25 leads created in about 9 seconds across five cities (his report).
+- **Skills shown:** TypeScript task design, trigger.dev deployment, GitHub workflow, ClickUp API, env and secret handling, debugging with test runs.
+- **Money angle:** Example: a weekly list of dental practices as sales leads for selling websites. Nate frames these automations as something you build for clients. No prices given.
+- **Duet-relevant:** yes. A cloud agent watches a ClickUp list and replies in task comments, including follow-up questions, on a schedule.
+- **Promo:** paid "AI Automation Society Plus" community with 3,000+ members (his claim); free school community for templates and files.

@@ -1,0 +1,13 @@
+## 241. n8n's Agent Builder Somehow Made Building Agents Even Easier (text to workflow)
+- **Link:** https://www.youtube.com/watch?v=TDHFkKSTJ30 | **Length:** 19 min | **AI-relevant:** yes
+- **Teaches:**
+  - n8n's text-to-workflow builder (a chat interface) drafts a plan, you approve or request changes, and it builds nodes, variables and a setup guide.
+  - Prompt specifically: name the chat model, tools and output format. A vague prompt ("research news and email me") gave an unconfigured HTTP tool; a detailed prompt produced a usable newsletter workflow.
+  - Check the output: the builder's merge node was set to "append" (two newsletters instead of one), and it did not fix that even after being told. Read each node and fix it by hand.
+  - Linear workflows (trigger, then steps, then validation, then storage) work well. Multi-agent sub-agent setups failed in his test (sub-agents had no user message, each had one tool).
+  - Use the builder for a first draft, then learn the workflow yourself before selling it or putting it into production.
+- **Tools / prices / numbers:** n8n agent builder (preview, not rolled out to all users at recording), Tavily, Perplexity, Anthropic Claude (3.5 Sonnet, 3.7 Sonnet), Gmail, ClickUp, Slack, Airtable, Telegram, the Think tool. Nate's rough estimate: the tool gets about 70% of the way there. No prices.
+- **Skills shown:** Prompt specification, workflow debugging (merge and append nodes, variable mapping), sub-agent design, HTTP tool setup, linear vs. agentic design.
+- **Money angle:** Use the builder to draft client workflows faster, then charge for the review, fixes and handover. Sell the linear, predictable builds (lead qualification, invoice intake) that the builder handles well. No price points stated.
+- **Duet-relevant:** yes, partly. He tests a Telegram-based personal assistant with Gmail, Calendar and ClickUp sub-agents that the builder generated, and it was not working out of the box.
+- **Promo:** Paid "Plus" community with members learning and building with n8n, plus a path to a one-person AI agency.

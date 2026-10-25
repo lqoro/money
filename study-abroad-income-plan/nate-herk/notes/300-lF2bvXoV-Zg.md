@@ -1,0 +1,13 @@
+## 300. How I 100% Automated Long Form Content with n8n (free template)
+- **Link:** https://www.youtube.com/watch?v=lF2bvXoV-Zg | **Length:** 24 min | **AI-relevant:** yes
+- **Teaches:**
+  - A pipeline that makes "top 10" ranking videos from a Google Sheet. Rows with status "to-do" are pulled one at a time, and the workflow writes the video and uploads it.
+  - Split the LLM work across agents: an intro/outro agent and a ranker agent. Each uses a user message with the subject plus a system prompt. Structured output parsers force clean JSON fields, so each value can be mapped to the video API.
+  - One API call (JSON to Video) turns the text into images, narration, and a rendered video using a template ID. The workflow then polls the render status with a Wait node and a Switch on done, running, or error.
+  - After rendering, update the sheet, download the video file as binary, and upload it to YouTube as unlisted. Then set the posting status.
+  - An idea generator fills the sheet with 10 new subjects in one run, so the process can run hands-off on a schedule.
+- **Tools / prices / numbers:** n8n, Google Sheets, OpenRouter (GPT-4o for the agents, GPT-4o mini for ideas), JSON to Video (free tier: 600 seconds of rendering, clips up to 1 minute; paid plans have more credits), ElevenLabs voices (use your own key or pay extra credits through JSON to Video), Flux Pro (20 extra credits per image; Flux Schnell and Freepik Classic cost no extra), YouTube Data API. Renders took about 180 seconds in the demo.
+- **Skills shown:** structured LLM output, multi-agent prompting, API polling and branching, binary file handling, YouTube upload, Google Cloud OAuth setup
+- **Money angle:** Faceless top-10 video channel at scale. Nate built a demo channel but states no revenue, views, or price. Says the same flow works for shorts and Reels.
+- **Duet-relevant:** no
+- **Promo:** free school community (JSON and sheet template). Description links for JSON to Video and ElevenLabs signups (affiliate status not stated). Refers to his earlier faceless shorts video.

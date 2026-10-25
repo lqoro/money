@@ -1,0 +1,12 @@
+## 285. 25 Hidden n8n Features That Save Hours of Work
+- **Link:** https://www.youtube.com/watch?v=zMy5yoA-ub8 | **Length:** 15 min | **AI-relevant:** yes
+- **Teaches:**
+  - Editor shortcuts: typing "=" turns a fixed field into an expression; pin or mock node data so paid API nodes do not re-run while building; deactivate, rename and add nodes from the keyboard.
+  - Use "continue on error" or an error-output branch so one failed item does not stop a batch.
+  - Check agent logs and sub-execution data, since an agent can say a tool worked when it did not.
+  - Save API credentials once, turn off n8n attribution in outgoing messages, and document with markdown sticky notes.
+- **Tools / prices / numbers:** n8n; Perplexity, Tavily and OpenAI shown as credential examples. No prices stated.
+- **Skills shown:** n8n editor navigation, expressions, data pinning, error handling, sub-workflows, agent debugging, credential management
+- **Money angle:** none
+- **Duet-relevant:** no
+- **Promo:** free school community (workflow download); paid community linked in description.

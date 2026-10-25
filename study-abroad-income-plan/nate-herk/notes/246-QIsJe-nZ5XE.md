@@ -1,0 +1,18 @@
+## 246. How to Sell AI Workflows (Without Starting an Agency)
+- **Link:** https://www.youtube.com/watch?v=QIsJe-nZ5XE | **Length:** 14 min | **AI-relevant:** yes
+- **Teaches:**
+  - Skip the agency at first. Freelance for three to five paid projects to build proof, testimonials and a clear niche, then move toward consulting.
+  - Niche down to one type of client and one pain point. Build a short before-and-after demo (even a quick recorded walkthrough) that shows the outcome, not the tool.
+  - Frame the offer in the client's terms: hours saved per week times their hourly rate, then multiplied out to monthly and yearly savings.
+  - Measure the process before and after (time per task, error rate, volume per week). Use those numbers as a case study and to ask for a testimonial.
+  - As a consultant, sell outcomes and strategy rather than tasks; retainers and revenue share are the longer-term goal.
+- **Tools / prices / numbers:**
+  - Early mistake: quoted $1,500 for a build that took far longer than planned (his story).
+  - Example value math: 5 hours a week at $100/hr is about $2,000/month, or $24,000/year (his example).
+  - Freelance projects roughly $1,000 to $5,000; consulting packages $10,000 and up (his figures).
+  - Consulting-firm benchmarks he cites: enterprise AI assessments $7,000 to $50,000; strategy roadmaps for mid-size firms in the high tens of thousands and up (amount garbled in captions).
+  - (Nate's claim) Large consulting firms booked hundreds of millions to billions in AI work over short periods.
+- **Skills shown:** Niche selection, demo building, offer writing, ROI math, before/after metrics, consultative discovery.
+- **Money angle:** Freelance first for proof, then consult for small and mid-size businesses that cannot pay enterprise rates. Sell outcomes such as hours saved, leads qualified, or support load removed. Start by picking one niche and building one demo.
+- **Duet-relevant:** no
+- **Promo:** Free school community (downloadable resource doc); Plus community (paid, weekly live Q&A).

@@ -1,0 +1,13 @@
+## 290. How I Auto Track AI Agent Actions and Token Usage (n8n tutorial)
+- **Link:** https://www.youtube.com/watch?v=vVdS-ZEFf50 | **Length:** 10 min | **AI-relevant:** yes
+- **Teaches:**
+  - Turn on "return intermediate steps" in the AI Agent node to get each tool call, its parameters, its response and its token counts.
+  - Change the agent's error setting to continue on an error output, so runs split into success and error branches.
+  - Use a code node to sum token costs (code is better at arithmetic than an LLM) and stringify the step and token arrays so they read in a sheet.
+  - Log timestamp, workflow name, input, output, actions, tokens and total cost to one Google Sheet shared by many agents, then use pivot charts per workflow.
+  - Watch for agents that report a tool failure in text while still taking the success branch, so check the logged actions too.
+- **Tools / prices / numbers:** n8n; OpenRouter with GPT-4.1 mini; Google Sheets; Telegram; a calendar tool in the demo. One demo run cost under 1 cent. No plan prices stated.
+- **Skills shown:** agent observability, n8n error branching, code nodes, Google Sheets logging, cost tracking
+- **Money angle:** none stated. (My inference: cost dashboards could be a deliverable for clients running agents.)
+- **Duet-relevant:** no
+- **Promo:** free school community (template JSON and Sheets link); paid community with course; five live calls per week.

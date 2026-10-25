@@ -1,0 +1,18 @@
+## 247. Watch Me Build a Multi-Agent Newsletter System in n8n (step-by-step)
+- **Link:** https://www.youtube.com/watch?v=pxzo2lXhWJE | **Length:** 29 min | **AI-relevant:** yes
+- **Teaches:**
+  - Architecture: weekly schedule trigger, news search for the past week, a planning agent that picks a title and three topics, deeper search per topic, one writer agent per section, an aggregate step, and an editor agent that outputs HTML.
+  - Use a structured output parser (JSON schema) so the editor returns separate subject and body fields that map cleanly into Gmail.
+  - Turn on "include raw content" in search so writers get full article text, not summaries.
+  - Keep each agent narrow (one job each) and put the role, length and citation rules in each system message.
+  - Build habits: rename nodes, pin data while building, and name agents clearly so the editor sees the planner's output.
+- **Tools / prices / numbers:**
+  - n8n (self-hosted on Hostinger; he uses a KVM2 plan; code Nate Herk gives 10% off a yearly plan).
+  - Tavily search (free tier; he runs 3 results for the first search, then more per topic).
+  - OpenRouter for models; GPT-5 and GPT-5 mini in this build.
+  - Gmail node creates a draft for human approval.
+  - The editor step once took about four minutes (his observation).
+- **Skills shown:** n8n workflow design, AI agent prompting, structured outputs, multi-step research pipelines, HTML email, API credentials, self-hosting.
+- **Money angle:** None stated. Sellable as a managed weekly research draft for teams or a client's email list, with human review, priced on the hours it removes.
+- **Duet-relevant:** no
+- **Promo:** Hostinger (sponsor; self-hosted n8n, code Nate Herk for 10% off yearly); free school community (JSON and PDF resource pack); Plus community; classroom courses "Agent Zero" and "10 Hours to 10 Seconds".

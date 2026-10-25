@@ -1,19 +1,18 @@
 ## 186. How a College Student Made $500k with Cold Email (Exact Framework)
 - **Link:** https://www.youtube.com/watch?v=XB2xmX3USUI | **Length:** 37 min | **AI-relevant:** yes
 - **Teaches:**
-  - Guest Sav (student, AI agency) walks through a cold email system from zero: start with free or cheap proof projects, then charge once results show.
-  - Build lead lists from niche industry databases (e.g., architecture association directories) instead of broad tools, since they are already filtered.
-  - Personalize at scale: a sheet feeds a research tool, then an LLM writes a short icebreaker, which goes back into the sheet. Nate says the original was a four-module Make.com flow.
-  - Infrastructure: spread sends across several domains and inboxes (about 30 per inbox) to protect deliverability.
-  - Offer formula: desired outcome, time frame, and risk reversal (no pay unless results). Lead with a short video instead of a meeting request.
-  - Diagnose by reply rate: under 2% means check list or deliverability; 2-5% means check copy; 5-10% is the target zone.
+  - Guest Sav (student, AI agency) shows a cold email system from zero: free proof projects first, then paid work once results show.
+  - Build lead lists from niche industry databases (e.g., architecture association directories), which are already filtered.
+  - Personalize at scale: a sheet feeds research, then an LLM writes a short icebreaker that goes back into the sheet.
+  - Spread sends across several domains and inboxes (about 30 per inbox) to protect deliverability.
+  - Offer formula: outcome, timeframe, and risk reversal (no pay unless results); lead with a short video. Diagnose by reply rate: under 2% checks list or deliverability, 2-5% checks copy, 5-10% is the target.
 - **Tools / prices / numbers:**
-  - Perplexity, ChatGPT, Claude for research; Make.com; Apollo and LinkedIn Sales Navigator for enrichment; email verifier (MillionVerifier) before sending; Google Sheets; Loom.
-  - Sav's claim: about $500K in sales opportunities in six months (Nate's framing; Sav's claim).
-  - Volume example: 3 domains x 5 inboxes = 15 inboxes, about 450 emails a day, about 9,000 a month. Sav started with one domain and 5 inboxes, about 150 a day.
-  - Sample offer: "20 booked meetings a month" with no added headcount, pay only on results.
-  - An early salon client he built a booking site for reportedly grew to about $10K a month recurring (Sav's claim).
-- **Skills shown:** cold email, lead list research, enrichment, email deliverability, prompt-driven personalization, offer writing, funnel metrics
-- **Money angle:** Sell outbound lead generation or AI-driven outreach to agencies and service businesses. Start free, convert to paid after proof, and collect case studies. Price points not stated except pay-on-results. Start by testing an offer with outreach before building.
+  - Perplexity, ChatGPT, Claude for research; Make.com; Apollo and LinkedIn Sales Navigator; MillionVerifier for email checks; Google Sheets; Loom.
+  - Sav's claim: about $500K in sales opportunities in six months.
+  - Volume: 3 domains x 5 inboxes = about 450 emails a day, about 9,000 a month. Sav started with one domain and 5 inboxes (about 150 a day).
+  - Sample offer: "20 booked meetings a month," no added headcount, pay on results.
+  - An early salon client reportedly grew to about $10K a month recurring (Sav's claim).
+- **Skills shown:** cold email, lead list research, enrichment, deliverability, prompt-driven personalization, offer writing, funnel metrics
+- **Money angle:** Sell outbound lead generation or AI outreach to agencies and service businesses. Start free, convert to paid after proof, and collect case studies. No price points beyond pay-on-results.
 - **Duet-relevant:** no
-- **Promo:** Sav's own hour-long Loom walkthrough and his company site (Sav's resources). Nate's free school community resource guide and the paid plus community (over 3,000 members).
+- **Promo:** Sav's hour-long paid Loom walkthrough (his own resource). Nate's free school community guide and paid plus community (over 3,000 members).

@@ -1,0 +1,12 @@
+## 293. I Built a Marketing Team with 1 AI Agent and No Code (free n8n template)
+- **Link:** https://www.youtube.com/watch?v=ldETapkr8Hg | **Length:** 34 min | **AI-relevant:** yes
+- **Teaches:**
+  - One main agent, reached through Telegram by voice or text, calls six sub-workflow tools: create image, edit image, search image database, blog post, LinkedIn post, and video.
+  - Each sub-workflow starts with a "called by another workflow" trigger with defined inputs (title, prompt, chat ID), so the agent fills in the same fields every time.
+  - Images are generated, saved to Drive, and logged to a Sheet; editing looks up the image ID first and then calls the edit endpoint.
+  - Video: four Flux images, four Runway clips, ElevenLabs sound per clip, then a Creatomate render. Subworkflow waits currently fail at the agent level, so he sends the result to Telegram from inside the sub-workflow.
+- **Tools / prices / numbers:** n8n (about $27/month cloud plan, his figure); OpenAI image model, about 19-20 cents per image or edit; PiAPI Flux, about 1.5 cents per image; Runway, about 25 cents per 5s clip (about $1 for four clips); ElevenLabs Starter $5/month; OpenRouter GPT-4.1 $2 in / $8 out and GPT-4.1 mini $0.40 in / $1.60 out per million tokens; Creatomate 2,000-credit plan.
+- **Skills shown:** multi-agent tool design, sub-workflows, image generation and editing, video pipelines, Google Sheets logging, Creatomate templates
+- **Money angle:** none stated for a client offer. He did not total a per-run cost; the per-item figures above are his. (My inference: a content service could be built on it.)
+- **Duet-relevant:** yes, a Telegram agent that takes voice or text requests and acts across several tools for the user.
+- **Promo:** free school community (six or seven workflow JSONs plus Sheets and Creatomate templates), paid community (over 1,100 members), courses, five live calls per week.

@@ -1,0 +1,17 @@
+## 182. From Zero to Your First Agentic AI Workflow in 26 Minutes (Claude Code)
+- **Link:** https://www.youtube.com/watch?v=tDGiWn0flK8 | **Length:** 26 min | **AI-relevant:** yes
+- **Teaches:**
+  - Traditional automation (Make, n8n) means wiring each step yourself. An agentic workflow states the outcome and lets the agent reason, pick tools, ask clarifying questions and recover from errors.
+  - WAT framework: Workflows (markdown SOPs), Agent (Claude Code as coordinator), Tools (Python scripts that do one action each).
+  - Setup: install the Claude Code extension in VS Code, open an empty folder, drop in a claude.md onboarding file, then let Claude create the folder structure. Use plan mode first; bypass-permissions mode is optional.
+  - Plan mode interview: Claude asks about discovery, business info, analysis scope and branding, then produces a plan with workflows and five tools.
+  - Self-repair: when a run fails (a Windows encoding error in his case), the agent fixes the script and the tool, then reruns.
+  - Save business facts to a profile file so later runs reuse them; cache competitor research between runs.
+  - Clear the chat when context passes about 60% to avoid "context rot."
+- **Tools / prices / numbers:**
+  - Anthropic API key (developer console), Firecrawl (web scraping), Perplexity, Sonnet, a PDF generation service (transcript says "report lab"), matplotlib for charts.
+  - Plan estimate: about $1.50 for the first run and about $0.50 per run after adding competitors. Nate's run showed "$143" in the transcript, most likely $1.43; unverified.
+- **Skills shown:** workflow design, plan mode, .env key management, Python tooling, debugging, PDF and chart generation, brand asset extraction.
+- **Money angle:** Implied: monthly competitor-intel PDF reports for businesses. Nate says the aim is to build automations for businesses; no prices given.
+- **Duet-relevant:** no
+- **Promo:** Firecrawl referral link (10% off and 1,000 free credits, per Nate); free community with resources and templates (he cites over a quarter million members as a claim).

@@ -3,9 +3,8 @@
 - **Teaches:**
   - RAG means retrieve information, then generate an answer. A vector database is one way to retrieve.
   - Two parts: an ingestion pipeline (document, chunk, embed, store) and a query agent (embed the question, match vectors, answer).
-  - Build in n8n with five nodes: Google Drive download, default data loader (chunk 1,000 characters with 200 overlap, binary input), OpenAI embeddings (text-embedding-3-small), Supabase vector store, and a chat trigger.
-  - Set up Supabase: create a project, copy the host and service key into n8n, and run the vector table SQL.
-  - Give the agent a vector store retrieval tool, then add Postgres chat memory keyed by session ID so it remembers earlier messages.
+  - Build in n8n: Google Drive download, default data loader (1,000-character chunks with 200 overlap, binary input), OpenAI embeddings (text-embedding-3-small), and a Supabase vector store. Set up Supabase by copying its host and service key into n8n and running the vector table SQL.
+  - Query side: a chat trigger, an agent with a vector store retrieval tool, and Postgres chat memory keyed by session ID.
   - Next steps: auto-update vectors when a file changes, and delete vectors when a file is removed.
 - **Tools / prices / numbers:** n8n, Supabase (free tier for project creation), OpenAI API (needs billing; embeddings and GPT-4.1 mini), Google Drive. Demo PDF of 22 pages produced 77 vectors. Postgres memory window of five messages (his setting).
 - **Skills shown:** no-code RAG build, API credential setup, chunking and embedding settings, session-based memory.
