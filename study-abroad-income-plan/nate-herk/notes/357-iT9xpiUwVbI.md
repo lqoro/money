@@ -1,0 +1,17 @@
+## 357. Step-By-Step: Add 100+ Files to Pinecone for RAG AI Agent with n8n
+- **Link:** https://www.youtube.com/watch?v=iT9xpiUwVbI | **Length:** 14 min | **AI-relevant:** yes
+- **Teaches:**
+  - Ingest many documents into a vector database without manual runs: list a Drive folder, then download each file's content.
+  - The folder search returns only IDs and names; a second node downloads the actual binary content by ID.
+  - Loop in batches of one file, embed each file into Pinecone, and loop back until every file is done.
+  - Set the document loader to binary (not JSON) and use a recursive character text splitter so chunks keep sentence context.
+  - Use a Pinecone namespace to separate data within one index, and point the retrieval tool at that same namespace.
+  - Build a simple chat agent (chat trigger, OpenAI model, window memory, vector store tool) and check answers against the stored data.
+- **Tools / prices / numbers:**
+  - n8n, Google Drive nodes, Pinecone (index "sample", namespace "restaurant"), OpenAI text-embedding-3-small for embeddings, GPT-4o for the agent
+  - Demo used 14 Google Docs of dummy restaurant data; Pinecone showed 14 vectors
+  - No prices stated
+- **Skills shown:** RAG pipeline setup, embeddings, vector store configuration, loops and batching in n8n, prompt setup for a retrieval agent
+- **Money angle:** Internal knowledge-base agents for small businesses (staff Q&A over menus, policies, SOPs). Set up the ingestion pipeline once, then charge for ongoing updates. No price points stated.
+- **Duet-relevant:** no
+- **Promo:** free school community (link in the description), described as 100% free

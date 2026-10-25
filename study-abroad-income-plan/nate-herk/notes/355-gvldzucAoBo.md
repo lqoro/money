@@ -1,0 +1,15 @@
+## 355. Scrape Google for LinkedIn Profiles in Seconds with n8n
+- **Link:** https://www.youtube.com/watch?v=gvldzucAoBo | **Length:** 15 min | **AI-relevant:** yes
+- **Teaches:**
+  - A Google search is just an HTTP request; the profile URLs are parsed out of the returned HTML by a code node.
+  - Pagination: add a `start` parameter (0, 10, 20, ...) and loop over a list of start values so each loop fetches the next page of results.
+  - Plain Google scraping gets blocked after many requests ("too many requests"), which is why the second workflow switches to a custom search engine.
+  - Feed the scraped profiles into a Google Sheet as they come in; the next step (not built here) is an AI agent that fills in search parameters.
+- **Tools / prices / numbers:**
+  - n8n (HTTP Request, Code, Loop, Google Sheets nodes)
+  - Google Programmable Search (custom search engine) via the Google Custom Search API, which requires an API key and a search engine ID; he notes it costs money at volume, with no price stated.
+  - Results: about 10 profiles per page; he ran 50 to 90+ profiles in a test (his figures).
+- **Skills shown:** HTTP request construction, pagination and looping in n8n, parsing HTML with code nodes, Google API setup, debugging rate-limit blocks
+- **Money angle:** Lead generation for sales or recruiting teams: a workflow that pulls prospect lists (e.g., CEOs in a given city) on demand. Sell as a lead-gen build to agencies or recruiters. No price points stated.
+- **Duet-relevant:** no
+- **Promo:** none

@@ -1,0 +1,17 @@
+## 345. How to Build a Personal Assistant AI Agent in n8n (Step-by-Step, No Code)
+- **Link:** https://www.youtube.com/watch?v=ZP4fjVWKt2w | **Length:** 66 min | **AI-relevant:** yes
+- **Teaches:**
+  - Build a main "personal assistant" agent in n8n, triggered by Telegram messages, with window buffer memory keyed to the Telegram chat ID so it remembers the conversation.
+  - Give the main agent a Google Sheet "contact database" tool and make it look up contacts before emailing or inviting anyone.
+  - Build separate email and calendar agents as their own workflows, then attach each one to the main agent as a "call workflow" tool. Each sub-workflow returns its answer in a field named `response`.
+  - Use `from AI` expressions so the model fills in tool parameters (recipient, subject, body, start/end time, limit).
+  - Add voice in and out: transcribe Telegram voice notes, summarize the reply as plain text, convert it to speech, and send audio back.
+  - Add a research agent with a tiered tool order (Wikipedia, then Hacker News, then a paid search API) and a rule to call only one tool when possible.
+- **Tools / prices / numbers:**
+  - n8n, Telegram bot, Gmail, Google Calendar, Google Sheets, OpenAI (GPT-4o and GPT-4o mini), ElevenLabs, SerpAPI, Wikipedia, Hacker News API.
+  - ElevenLabs: Nate says the free plan gave credential errors and the Starter plan is about $5 with 40,000 credits (Nate's claim).
+  - SerpAPI includes some free monthly credits (Nate's claim).
+- **Skills shown:** n8n agent and sub-workflow design, prompt and tool-description writing, Telegram and Google API credentials, voice pipelines.
+- **Money angle:** none stated for this build. Nate invites viewers to book a call to have him build assistants or automations for their business.
+- **Duet-relevant:** yes. A Telegram-based assistant that sends email, manages a calendar, and answers on your behalf is close to the persistent personal agent described above.
+- **Promo:** free school community (downloadable workflows), paid community (more hands-on help), booking a call via his website.

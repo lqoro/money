@@ -1,0 +1,13 @@
+## 344. Set up Google Credentials in n8n in 5 minutes (2025)
+- **Link:** https://www.youtube.com/watch?v=3Ai1EPznlAc | **Length:** 5 min | **AI-relevant:** yes
+- **Teaches:**
+  - Create a Google Cloud project, then configure the OAuth consent screen and add your own account as a test user.
+  - Create an OAuth client ID as a web application, paste n8n's redirect URI into it, then copy the client ID and secret into the n8n credential.
+  - Click "sign in with Google" in n8n and grant access.
+  - Enable each Google API you need (Drive, Gmail, Docs, Sheets, Slides) in the Cloud console. Without this, the connection shows up but no data comes back.
+  - One client ID and secret can serve every Google node. Each new node only needs its API enabled.
+- **Tools / prices / numbers:** n8n; Google Cloud Console; Google Drive, Gmail, Docs, Sheets, and Slides APIs. No prices given. The "5 minutes" is from the title.
+- **Skills shown:** OAuth setup, Google Cloud console, n8n credential setup, API enablement.
+- **Money angle:** none stated
+- **Duet-relevant:** no
+- **Promo:** none (points viewers to his channel)

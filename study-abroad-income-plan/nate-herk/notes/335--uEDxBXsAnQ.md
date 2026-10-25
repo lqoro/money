@@ -1,0 +1,13 @@
+## 335. Build AI Agents for $0.014 with DeepSeek V3 in n8n
+- **Link:** https://www.youtube.com/watch?v=-uEDxBXsAnQ | **Length:** 10 min | **AI-relevant:** yes
+- **Teaches:**
+  - Two ways to use DeepSeek V3 in n8n: as the chat model behind an AI agent, or as a plain HTTP request node.
+  - For the agent route, point n8n's OpenAI Chat Model node at OpenRouter's base URL and select the DeepSeek model ID, so the OpenAI-style node talks to a different provider.
+  - For the HTTP route, import the provider's cURL example into an HTTP Request node, then set the Bearer auth header and check the key for stray spaces.
+  - Test with a short prompt before building anything more complex.
+  - Nate frames model choice as a cost decision. He does not claim DeepSeek is better, and says to be careful with sensitive data.
+- **Tools / prices / numbers:** DeepSeek V3 (API via deepseek.com), OpenRouter, n8n. Nate states the price as $0.014 per million tokens and says a couple of dollars of credit goes a long way (his figures). The video shows benchmark charts and a needle-in-a-haystack test; Nate says they show strong long-context recall.
+- **Skills shown:** HTTP Request node, cURL import, API key credentials, base-URL swap, system and user message setup.
+- **Money angle:** none stated. Cheap per-token access could lower the cost of running agents for clients, but Nate does not say this.
+- **Duet-relevant:** no
+- **Promo:** none

@@ -1,0 +1,12 @@
+## 334. Having an Actual Conversation with Data Using an ElevenLabs Voice Agent and n8n
+- **Link:** https://www.youtube.com/watch?v=pJYm7MOyMH0 | **Length:** 14 min | **AI-relevant:** yes
+- **Teaches:**
+  - The n8n side is a RAG agent: a Google Doc is loaded into a Pinecone namespace, and a tools agent searches it with a vector store tool.
+  - The voice agent sends the spoken question to an n8n webhook as a POST body parameter. The n8n agent answers, and Respond to Webhook returns the text to the voice agent.
+  - ElevenLabs setup: one tool named "n8n" with a POST URL and a single "question" string parameter, plus a system prompt for the persona and a short, conversational answer style.
+  - The test webhook must be listened to by hand before each call. Nate shows the voice agent failing to get data when the workflow was not active.
+- **Tools / prices / numbers:** n8n; Pinecone; ElevenLabs; Gemini 1.5 Flash as the voice LLM (temperature 0.8). No prices stated.
+- **Skills shown:** RAG pipeline setup, webhook integration, voice agent prompting, tool parameter design
+- **Money angle:** none stated.
+- **Duet-relevant:** no (voice Q&A over project data; it does not act for the user)
+- **Promo:** free school community (workflow and file downloads); paid community with classroom and five live calls per week.

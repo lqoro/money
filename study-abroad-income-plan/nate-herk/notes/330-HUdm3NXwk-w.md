@@ -1,0 +1,12 @@
+## 330. I Built a Team of Research Agents for Newsletter Automation in n8n (No Code)
+- **Link:** https://www.youtube.com/watch?v=HUdm3NXwk-w | **Length:** 23 min | **AI-relevant:** yes
+- **Teaches:**
+  - Sequential multi-agent pipeline: form trigger, then a newsletter planner (table of contents via search), a project planner (splits into sections), six research agents running in parallel, an editor, a title agent, and a Gmail send.
+  - One agent per section gives better output than one agent writing the whole newsletter. Each research agent searches and cites its own section.
+  - Prompt details: system vs user messages, a rule that every section has inline hyperlinks, a word cap (about 1,000 words) so the sources list is not cut off, and no title or intro from the editor.
+  - Pass the current date to the search tool. Without it, the planner assumed the year was 2023.
+- **Tools / prices / numbers:** n8n; Tavily search (3 results per query); Claude 3.5 Sonnet for research and editing; GPT-4o mini for the planner and title. He estimates the free Tavily tier at about 1,000 searches.
+- **Skills shown:** multi-agent orchestration, prompt engineering, search tool integration, HTML email formatting
+- **Money angle:** implied, not priced: automated newsletters for businesses or teams (he suggests sending to employees or a team). He also suggests scheduling it from a database or Airtable. No prices stated.
+- **Duet-relevant:** no
+- **Promo:** free school community (workflow JSON in YouTube resources); paid community with classroom and five live calls per week; consulting via a booking link on his website.

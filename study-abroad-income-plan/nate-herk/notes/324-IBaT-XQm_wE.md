@@ -1,0 +1,13 @@
+## 324. OpenAI Fires Back at DeepSeek With a New Reasoning Model: o3-mini (n8n AI Agent)
+- **Link:** https://www.youtube.com/watch?v=IBaT-XQm_wE | **Length:** 11 min | **AI-relevant:** yes
+- **Teaches:**
+  - Connect a reasoning model to an n8n AI Agent, either through the OpenAI chat node or through OpenRouter's native node when a new model is not yet listed.
+  - Give the agent three Pinecone vector stores as separate namespaces (resorts, flights, activities) and one Gmail send tool.
+  - Prompt structure: state the tools, require all three retrieval tools before answering, then format the itinerary as HTML and send it.
+  - Design caveat: Nate says a fixed sequence (resorts, flights, activities, then email) is more reliable for production than letting one agent choose tools, because it cuts tool-calling and data-transfer errors.
+  - Use OpenRouter's activity page to track per-model usage and cost.
+- **Tools / prices / numbers:** n8n (version 1.77 mentioned for the native OpenRouter node); OpenAI o3-mini; OpenRouter; Pinecone; Gmail; ChatGPT used to generate fake sample data. Nate says o3-mini cost "about 007 per input and output" (transcript unit unclear, likely a per-token rate; not verified). Sample trip budget of $2,000 is his test input.
+- **Skills shown:** n8n AI agent setup, reasoning-model integration, Pinecone namespaces, OpenRouter credentials and usage tracking, HTML email output, prompt structuring.
+- **Money angle:** none stated. He mentions a travel-agent demo but does not describe clients or pricing.
+- **Duet-relevant:** no
+- **Promo:** Free School Community (workflow JSON and prompt generator); paid Community with classroom deep dives, a weekly Q&A, coffee chat, three tech-support calls, five live calls per week in total, and three guest speakers planned for February.

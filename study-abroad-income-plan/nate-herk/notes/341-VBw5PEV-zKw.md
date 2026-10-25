@@ -1,0 +1,13 @@
+## 341. Vector Database Optimization with n8n: Metadata, Text Splitting, & Embeddings
+- **Link:** https://www.youtube.com/watch?v=VBw5PEV-zKw | **Length:** 19 min | **AI-relevant:** yes
+- **Teaches:**
+  - The embedding model used for ingestion must match the index. Using a larger embedding model than the index was built for left the embedding step stuck, so he stopped it.
+  - Loader choice changes the output: extracting text from a PDF and loading JSON produced eight noisy vectors, while loading the PDF as binary produced one clean vector with PDF metadata.
+  - Splitters: recursive character splitting (his default), a token splitter (demo chunk size of 5), and a character splitter with a separator and chunk overlap.
+  - Attach metadata such as a document ID to each vector, then filter on it at retrieval time.
+  - Updates in Pinecone go by vector ID, not by metadata, so re-ingesting an edited file created extra vectors in his test. He says he was still working out the fix.
+- **Tools / prices / numbers:** n8n; Pinecone (serverless index, namespaces); OpenAI text-embedding-3-small (and 3-large as the mismatch example). Eight vectors vs one vector; chunk size 60 with overlap 20 gave six vectors. No prices given. He calls Pinecone "cheap and fast" (his opinion).
+- **Skills shown:** vector database setup, text splitting, metadata design, embedding debugging, retrieval filters.
+- **Money angle:** none stated
+- **Duet-relevant:** no
+- **Promo:** Free school community (download the workflows); paid community with a vector-database deep dive, weekly calls, and monthly competitions. He says the paid price rises at 75 members.

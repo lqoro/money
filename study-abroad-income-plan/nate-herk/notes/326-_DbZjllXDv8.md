@@ -1,0 +1,13 @@
+## 326. Best Model for RAG? GPT-4o vs Claude 3.5 vs Gemini Flash 2.0 (n8n Experiment Results)
+- **Link:** https://www.youtube.com/watch?v=_DbZjllXDv8 | **Length:** 19 min | **AI-relevant:** yes
+- **Teaches:**
+  - RAG basics: the agent retrieves from a vector store, augments the query with that content, then the LLM writes the answer.
+  - Build three n8n agents with the same system prompt and the same Pinecone store, changing only the model. This keeps the test fair.
+  - Score seven criteria: recall, query understanding, coherence and completeness, speed, context window handling, conflicting information, and source attribution.
+  - Grade each answer out of 10 with a GPT-4o grader that had the source PDF. Nate admits the setup is imperfect, and GPT-4o was also one of the models tested.
+  - Conclusion: the best model depends on the use case, cost limits, and whether you need to self-host. Test your own use case.
+- **Tools / prices / numbers:** n8n; Pinecone; GPT-4o, Claude 3.5 Sonnet, Gemini Flash 2.0. Nate's averaged scores: Claude 8.6, GPT-4o 7.7, Gemini Flash 6.9. One speed run (his timings): Gemini about 6.7 s, GPT about 11 s, Claude about 21 s.
+- **Skills shown:** RAG pipeline design, vector store querying, multi-model evaluation, n8n agent configuration
+- **Money angle:** none stated.
+- **Duet-relevant:** no
+- **Promo:** none

@@ -1,0 +1,13 @@
+## 337. How I Built an AI Agent to Automate my Emails in n8n (Step by Step, No Code)
+- **Link:** https://www.youtube.com/watch?v=KIJHRq_Tg6o | **Length:** 23 min | **AI-relevant:** yes
+- **Teaches:**
+  - Gmail trigger fires on each new email; an LLM classifies it as customer-support or not, returning JSON with a true/false field.
+  - A Switch node routes the two cases. The support branch runs a tools agent that searches a policy/FAQ vector store and calls a Gmail "create draft" tool to reply in the same thread.
+  - Store the thread ID early in a Set node so the draft attaches to the original email.
+  - Pin trigger data while testing, and turn off "simplify" so long emails are not cut short.
+  - Send a Telegram summary, then review the draft and send it manually. Activate the workflow to run live.
+- **Tools / prices / numbers:** Gmail, OpenAI GPT-4o mini, text-embedding-3-small, Pinecone (one namespace), Telegram. No prices given. Mind Studio is promoted as a no-code AI builder with "over 50 AI models" (Nate's sponsor-style claim).
+- **Skills shown:** n8n triggers, Set and Switch nodes, structured LLM output, RAG with a vector store, agent tool calling, Gmail drafts, Telegram alerts.
+- **Money angle:** Not stated by Nate. Inferred: small businesses with a busy support inbox might pay for a triage-and-draft setup with a human approval step.
+- **Duet-relevant:** yes. An agent that watches your inbox, drafts replies, and messages you on Telegram is close to a messaging-app assistant, though this is a workflow and not a persistent bot.
+- **Promo:** Free school community (downloadable template); paid community with classroom and about five live calls a week; AI consulting via his website; Mind Studio free intro webinar (promoted in the video).

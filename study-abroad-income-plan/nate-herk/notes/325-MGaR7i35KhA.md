@@ -1,0 +1,12 @@
+## 325. How to Locally Host DeepSeek R1 for FREE in Under 10 Minutes in n8n
+- **Link:** https://www.youtube.com/watch?v=MGaR7i35KhA | **Length:** 9 min | **AI-relevant:** yes
+- **Teaches:**
+  - Why host locally: no API fees, and data stays on your own machine. Nate reads DeepSeek's hosted privacy policy as storing data in China, so he avoids sending sensitive data to its API.
+  - Start the self-hosted n8n AI starter kit with Docker. It runs n8n, Postgres, Qdrant and Ollama as containers.
+  - Add an Ollama Chat Model node in n8n, then run `ollama pull` inside the Ollama container to download a DeepSeek R1 build (he uses the 1.5B size).
+  - Test it in an AI agent, then list and remove models from the container without using a terminal.
+- **Tools / prices / numbers:** n8n 1.77 adds native DeepSeek and OpenRouter chat nodes. DeepSeek R1 1.5B is about 1 GB. The largest R1 build is about 400 GB, which Nate says most machines should skip. Llama 3.2 is the default model in the starter kit.
+- **Skills shown:** Docker setup, local LLM hosting with Ollama, n8n AI agent configuration, model management
+- **Money angle:** none stated. Implied use case: client work where data cannot go to a third-party API.
+- **Duet-relevant:** no
+- **Promo:** free school community (free templates and YouTube resources, starter kit); paid community with a classroom section and five live calls per week.

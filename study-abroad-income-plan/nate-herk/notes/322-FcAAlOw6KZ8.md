@@ -1,0 +1,13 @@
+## 322. I Built a Human In The Loop Sales Team That Waits for Feedback and Approval in n8n
+- **Link:** https://www.youtube.com/watch?v=FcAAlOw6KZ8 | **Length:** 19 min | **AI-relevant:** yes
+- **Teaches:**
+  - Trigger on new Airtable lead rows, then have a sales agent draft a personalized email using a project database as a tool.
+  - Structured output parser: force the agent to return separate "subject" and "email" fields instead of one blob.
+  - Human approval through Gmail "send and wait for response": the human replies with approve, or with free-text feedback that gets routed.
+  - Revision loop: a text classifier labels each reply approved or declined; declines go to a revision agent that edits the latest draft using the feedback, and the loop repeats until approved.
+  - State fix: a Set node stores the most recent email each pass, so revisions stack instead of restarting from the first draft.
+- **Tools / prices / numbers:** n8n; Airtable (leads and projects tables); Gmail send-and-wait; Claude 3.5 Sonnet for writing (Nate prefers its emails); Gemini 2.0 Flash for classification (Nate: "free"). The demo email quotes sample results (23% faster response, 142% higher conversion) written for a fictional client; treat as demo text. Demo lead budget is stated inconsistently in the transcript, so no figure is recorded here.
+- **Skills shown:** n8n sales automation, Airtable triggers, structured outputs, human-in-the-loop with Gmail, LLM classification, revision loops, Set-node state management.
+- **Money angle:** Nate presents an AI agency ("Dunder AI") that sells custom AI solutions. The workflow is a lead-response system: inbound form, drafted outreach, human sign-off, then send. He says the aim is to book a discovery call. No price points for the agency's services are stated.
+- **Duet-relevant:** no
+- **Promo:** Free School Community (workflow JSON under YouTube resources); paid Community with Q&A, deep dives, and five live calls per week; three guest speakers in February and more in March.

@@ -1,0 +1,13 @@
+## 340. This AI Agent Extracts Text From Images in n8n
+- **Link:** https://www.youtube.com/watch?v=skHe-qIRkM4 | **Length:** 12 min | **AI-relevant:** yes
+- **Teaches:**
+  - A Telegram bot receives an invoice image. The workflow takes the largest version of the file and downloads it as binary.
+  - The binary is sent to a third-party OCR API over HTTP, which returns parsed text.
+  - A Code node splits out fields (invoice number, date, total, billing address, due date, notes) and writes them to Google Sheets columns.
+  - The original file is downloaded again and saved to a Drive folder with a dated name. Binary data must pass straight into the next node to be reused.
+  - An agent writes a short summary, which goes back to the same Telegram chat using the chat ID. Window memory is keyed to the chat ID. Switching to a tools agent gave better output formatting.
+- **Tools / prices / numbers:** Telegram bot, Google Sheets, Google Drive, n8n. An unnamed free OCR API (Nate notes a 1 MB file limit). The demo invoice total is $950 (from the example). No prices given. The Code node was written with ChatGPT, per Nate.
+- **Skills shown:** Telegram triggers and replies, binary file handling, OCR API calls, data parsing, Drive upload, expression-based file naming, agent prompting.
+- **Money angle:** Not stated. Inferred: small businesses that process paper invoices might pay for an intake bot that logs them automatically.
+- **Duet-relevant:** yes. A Telegram chat bot that accepts files and answers for you is close to a messaging-app agent.
+- **Promo:** Free school community (download the workflow); paid community with live calls; AI consulting via his website.

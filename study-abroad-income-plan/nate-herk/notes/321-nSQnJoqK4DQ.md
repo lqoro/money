@@ -1,0 +1,13 @@
+## 321. 4 Agentic Frameworks for More Efficient Workflows in n8n
+- **Link:** https://www.youtube.com/watch?v=nSQnJoqK4DQ | **Length:** 17 min | **AI-relevant:** yes
+- **Teaches:**
+  - Prompt chaining: pass each agent's output as the next agent's input (outline writer, then evaluator, then blog writer). Linear, easy to debug, and each step can use its own prompt and model.
+  - Routing: a classifier agent labels an incoming email (support, promotion, finance, high priority) and sends it down the matching branch with its own persona and actions.
+  - Parallelization: run emotion, intent, and bias agents at the same time, merge their outputs, and pass them to a final report agent.
+  - Evaluator-optimizer: an evaluator checks a draft against criteria; if it is not finished, an optimizer revises it and the loop repeats until the evaluator says finished.
+  - Mix models by step: a cheaper model for simple steps and a stronger one for evaluation or writing.
+- **Tools / prices / numbers:** n8n; Gemini 2.0 Flash ("free" per Nate), GPT-4o mini, Claude 3.5, DeepSeek R1 as the model per step; Gmail (labels and draft replies); Telegram alerts; Google Docs output. No prices stated.
+- **Skills shown:** n8n multi-agent workflow design, prompt chaining, classifier routing, parallel branches and merges, evaluator loops, per-step model selection.
+- **Money angle:** none stated. The routing and drafting pattern could suit email triage for support or sales teams, but Nate does not name a buyer or price.
+- **Duet-relevant:** no
+- **Promo:** Free School Community (four templates under YouTube resources); paid Community with classroom deep dives, a new step-by-step course, and five live calls per week; guest speakers announced for February.

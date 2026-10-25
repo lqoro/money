@@ -1,0 +1,12 @@
+## 329. The Ultimate n8n Starter Kit (2025) (Free)
+- **Link:** https://www.youtube.com/watch?v=4JR-UrEZHQQ | **Length:** 3 min | **AI-relevant:** yes
+- **Teaches:**
+  - Announces a free n8n starter kit: a roadmap in five modules, from n8n basics to building AI agents and advanced AI integrations.
+  - Each lesson links to resources such as videos, documentation and case studies.
+  - Aimed at people learning n8n or thinking about moving from Make or Zapier.
+  - Access: join the free community, then open the YouTube resources section.
+- **Tools / prices / numbers:** n8n. The kit and community are free. Nate says the community has just over 6,000 members.
+- **Skills shown:** n8n fundamentals, AI agent basics (curriculum overview)
+- **Money angle:** none stated. The free kit is the lead-in to his paid community.
+- **Duet-relevant:** no
+- **Promo:** free school community (starter kit, templates); paid community with classroom, deep-dive topics, and five live calls per week (tech support, Q&A, networking).
