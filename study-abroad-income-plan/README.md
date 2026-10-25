@@ -10,6 +10,7 @@ How to earn money with AI and agents while studying abroad, built from every vid
 | [AGENT-INCOME-PLAYBOOK.md](AGENT-INCOME-PLAYBOOK.md) | Agent offers, reusable architecture patterns, delivery checklist, pricing guide |
 | [CLAUDE-DUET-READY.md](CLAUDE-DUET-READY.md) | Prep for a Muse / Grok Bot style Claude agent: what the category does, costs, risks, income plays, release-day checklist |
 | [RISKS-AND-LIMITS.md](RISKS-AND-LIMITS.md) | **Read before charging anyone:** student visa work rights, taxes, contracts, data privacy, platform terms, money-claim red flags |
+| [nate-herk/ALL-VIDEOS-RECAP.md](nate-herk/ALL-VIDEOS-RECAP.md) | **One file, all 368 videos oldest to newest**, each with a recap and what is viable for making money |
 | [nate-herk/WATCH-FIRST.md](nate-herk/WATCH-FIRST.md) | The best videos by goal, with links |
 | [nate-herk/video-index.md](nate-herk/video-index.md) | All 368 videos with links and a note for each |
 | [nate-herk/notes/](nate-herk/notes/) | One condensed note per video (what it teaches, tools and prices, skills, money angle, promo) |
