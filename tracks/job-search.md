@@ -1,10 +1,21 @@
-# Track A: Remote job search
+# Track A: Remote job search (healthcare + bilingual first)
+
+Your edge: NHA CMA, nursing student (TCU BSN), 3.877 GPA, fluent Spanish, comfortable with AI tools. Lead with that.
+
+## Targets, in order
+1. **Medical-expert AI-training platforms**: Mercor, Outlier, DataAnnotation, Handshake AI, Surge-type. Apply to the medical/health domain tracks, not generic tasks. These pay the most for your profile and onboard in days to weeks.
+2. **Remote medical scribe / documentation**, bilingual (Spanish) preferred.
+3. **Telehealth intake, scheduling, patient outreach, care coordination** (bilingual).
+4. **Tutoring**: A&P, chemistry, biology, statistics, and Spanish on Wyzant, Varsity Tutors, Cerebrity.
+5. Backup: part-time AI ops, support/QA at US startups.
+
+Check each employer's policy on working from outside the US, and never claim a license or credential you do not hold (you are a CMA and BLS-certified; you are not an RN).
 
 ## Weekly checklist
-- [ ] 5-10 applications sent (part-time/contract AI ops, AI trainer/evaluator, support/QA)
-- [ ] 2-3 AI-training platforms signed up (Outlier, DataAnnotation, Mercor)
-- [ ] Resume + 1-page portfolio updated
-- [ ] Follow-ups sent on last week's applications
+- [ ] 5-10 applications sent
+- [ ] 2-3 platform signups/assessments completed
+- [ ] Resume variant updated (add Skills line: Spanish fluent, AI tools; bilingual in summary)
+- [ ] Follow-ups sent
 
 ## Log
 | Date | Company/platform | Role | Status | Pay |
