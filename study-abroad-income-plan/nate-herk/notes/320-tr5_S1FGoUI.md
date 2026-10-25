@@ -1,0 +1,13 @@
+## 320. This Trick Helps me Build Agents 3x Faster (as a beginner)
+- **Link:** https://www.youtube.com/watch?v=tr5_S1FGoUI | **Length:** 13 min | **AI-relevant:** yes
+- **Teaches:**
+  - The "from AI" pattern: switch a tool parameter to an expression so the agent fills it from the user's request. Each parameter needs a key; description, type, and default value are optional.
+  - Build a first working tool in minutes: an Outlook send-email tool with subject and body keys, then a calendar tool with event title, start, and end keys.
+  - Give the agent the current date and time through a system-message expression so relative requests like "today at 1 p.m." resolve.
+  - Wrap any API without a native node as an HTTP Request tool, with a placeholder in the JSON body that the model fills (Tavily search example).
+  - Order tool calls through the system prompt: to reply to an email, the agent must first fetch emails to get the message or thread ID.
+- **Tools / prices / numbers:** n8n; Outlook; Gmail (mentioned); Slack; Tavily search API (HTTP request); Excalidraw for the diagram. No prices stated. Timing claims: an agent in about 5 minutes, and a full assistant "in under an hour" (Nate's claim, excluding testing).
+- **Skills shown:** n8n AI agent tools, expression syntax, HTTP request tools, system prompt design, tool-sequencing logic.
+- **Money angle:** none stated. The method speeds up building assistants; Nate does not discuss clients or pricing.
+- **Duet-relevant:** yes. Nate's demo is a chat-driven assistant that sends email and books calendar events for the user.
+- **Promo:** Free School Community (templates and workflow downloads, linked to the "ultimate assistant" video); paid Community with classroom deep dives, a step-by-step build series, and five live calls per week.

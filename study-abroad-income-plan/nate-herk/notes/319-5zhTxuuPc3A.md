@@ -1,0 +1,13 @@
+## 319. I Built an AI Voice Travel Agent with ElevenLabs and n8n (Free Template)
+- **Link:** https://www.youtube.com/watch?v=5zhTxuuPc3A | **Length:** 31 min | **AI-relevant:** yes
+- **Teaches:**
+  - Voice intake: an ElevenLabs conversational agent collects trip details (origin, destination, dates, travelers, activities, email) and calls one custom tool.
+  - Webhook pattern: the tool POSTs the details to an n8n webhook, n8n runs the searches, and the workflow returns a short reply the voice agent speaks.
+  - Timeout handling: the voice agent is told to say a filler line while the workflow runs, because the run takes about 20-25 seconds and the turn timeout is capped at 15 seconds.
+  - Normalizing inputs: a GPT-4o step converts city names to airport codes and fixes dates, given the current date, since the voice agent does not know today's date.
+  - Research chain: three searches (activities, hotels, flights) feed a Claude-written HTML email with inline images and links, sent through Gmail.
+- **Tools / prices / numbers:** ElevenLabs Starter plan (Nate: "about five bucks a month"); Gemini and GPT-4o as LLMs (Nate advises not to use Gemini Flash with tools); Tavily search (Nate: about 1,000 free calls); SerpAPI Google Hotels and Google Flights (Nate: about 100 free calls a month); Claude 3.5 for the email; default temperature 0.5. Hotel and flight prices shown are sample results, not Nate's numbers.
+- **Skills shown:** ElevenLabs agent config, custom tool and webhook wiring, n8n HTTP requests and API credentials, structured output parsing, HTML email generation, data mapping from API JSON.
+- **Money angle:** Nate's demo is a voice travel-planning intake that emails an itinerary. A plausible offer is voice intake plus automated research for travel agencies or similar service businesses. He does not state a price, client type, or sales method.
+- **Duet-relevant:** no
+- **Promo:** Paid Community (link in description) with classroom deep dives on APIs and HTTP requests, step-by-step builds, and five live calls per week; free School Community for the workflow template under YouTube resources.
