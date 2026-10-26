@@ -58,6 +58,7 @@ prospects and 6–12 weeks of Muse running the sales loop. Treat these milestone
 | [`muse/SESSION-1.md`](muse/SESSION-1.md) | Messages to paste into Muse, with Claude checking each reply | You ↔ Muse ↔ Claude |
 | [`build/`](build) + [`scripts/build.py`](scripts/build.py) | Paste pack, website and Pipeline.xlsx with your details filled in | Muse, Netlify, Google Sheets |
 | [`site/`](site) | Source of the one-page website | Netlify |
+| [`FAST-MONEY.md`](FAST-MONEY.md) | First cash by this Sunday while LeadDrop ramps up: ranked methods and payout timing | You |
 | [`SCALING.md`](SCALING.md) | What to do after $10/hr | You + Muse |
 | [`research/`](research) | The full video recap Muse can reference | Upload as a file |
 
