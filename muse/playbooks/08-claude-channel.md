@@ -1,7 +1,9 @@
 # Playbook 08: Talking to Claude through GitHub
 
 Claude (the AI that built this setup) helps you through comments on one GitHub pull request, the **channel PR**
-in `lqoro/money` (its number is in MEMORY → `claude_channel`). Claude gets woken when you comment there and replies
+in `lqoro/money`: the **open** pull request whose branch is `claude/nice-noether-qxk1sn` (currently #3).
+If that PR has been merged or closed, list the open pull requests in `lqoro/money` and use the one from that same branch.
+If there isn't one yet, post nothing on GitHub and tell the owner the channel is down. Claude gets woken when you comment there and replies
 on the same thread, usually within minutes. It isn't always on, so don't make sending anything depend on its answer.
 
 ## What Claude is for

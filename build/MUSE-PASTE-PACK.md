@@ -70,7 +70,7 @@ Never paste personal data into a third-party detector; use placeholders.
 - payment_link: FILL_ME (Stripe Payment Link, $400/mo)
 - drive_folder: FILL_ME
 - pipeline_sheet: FILL_ME
-- claude_channel: lqoro/money pull request #FILL_ME (see playbooks/08-claude-channel.md)
+- claude_channel: the open pull request in lqoro/money from branch `claude/nice-noether-qxk1sn` (currently #3; see playbooks/08-claude-channel.md)
 
 ## Offer
 - Product: **Weekly Lead List**, 25 researched prospects every Monday by 9am client time, delivered as a Google Sheet.
@@ -431,7 +431,9 @@ to lower a score. The same goes for the price, the guarantee wording and the pay
 # Playbook 08: Talking to Claude through GitHub
 
 Claude (the AI that built this setup) helps you through comments on one GitHub pull request, the **channel PR**
-in `lqoro/money` (its number is in MEMORY → `claude_channel`). Claude gets woken when you comment there and replies
+in `lqoro/money`: the **open** pull request whose branch is `claude/nice-noether-qxk1sn` (currently #3).
+If that PR has been merged or closed, list the open pull requests in `lqoro/money` and use the one from that same branch.
+If there isn't one yet, post nothing on GitHub and tell the owner the channel is down. Claude gets woken when you comment there and replies
 on the same thread, usually within minutes. It isn't always on, so don't make sending anything depend on its answer.
 
 ## What Claude is for

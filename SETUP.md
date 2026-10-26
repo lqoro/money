@@ -91,7 +91,7 @@ This lets Muse ask Claude questions and get drafts reviewed without you copying 
       when you're ready, and never print it.
       ```
 - [ ] Paste the token **only** into Muse's credentials prompt, never in chat or on GitHub.
-- [ ] Add `claude_channel` to `muse/MEMORY.md` (the channel PR's number), rerun `python3 scripts/build.py`, and give Muse the updated memory plus `playbooks/08-claude-channel.md`.
+- [ ] Give Muse `playbooks/08-claude-channel.md` and the updated memory (rerun `python3 scripts/build.py` first). The channel is the open PR from this repo's `claude/nice-noether-qxk1sn` branch, currently #3.
 - [ ] Test it: tell Muse *"Post an FYI on the Claude channel PR saying hello and listing the playbooks you can read from the repo."* Claude should reply on that PR.
 
 Limits: Claude replies while its session is alive. It's woken by Muse's comments, but if the session has been

@@ -11,7 +11,7 @@
 - payment_link: FILL_ME (Stripe Payment Link, $400/mo)
 - drive_folder: FILL_ME
 - pipeline_sheet: FILL_ME
-- claude_channel: lqoro/money pull request #FILL_ME (see playbooks/08-claude-channel.md)
+- claude_channel: the open pull request in lqoro/money from branch `claude/nice-noether-qxk1sn` (currently #3; see playbooks/08-claude-channel.md)
 
 ## Offer
 - Product: **Weekly Lead List**, 25 researched prospects every Monday by 9am client time, delivered as a Google Sheet.
