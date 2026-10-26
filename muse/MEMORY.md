@@ -1,7 +1,7 @@
 # MEMORY
 
 ## Owner and business (fill in every FILL_ME)
-- owner_name: FILL_ME
+- owner_name: Lenny Ramirez (confirm, or change to the name you sign emails with)
 - business_name: LeadDrop
 - domain: FILL_ME
 - sending_inbox: FILL_ME (e.g. hello@yourdomain.com)
@@ -41,7 +41,7 @@ few or bad Google reviews, a recent funding or press mention, an expired promoti
 
 ## STATE (update at the end of every run)
 ```
-week_of: FILL_ME
+week_of: 2026-10-26
 current_niche: marketing agencies
 current_cities: []
 mrr: 0

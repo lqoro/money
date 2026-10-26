@@ -55,6 +55,9 @@ prospects and 6–12 weeks of Muse running the sales loop. Treat these milestone
 | [`muse/templates/`](muse/templates) | Emails, the lead sheet schema, the pipeline tracker | Same |
 | [`muse/skills/humanizer/`](muse/skills/humanizer) | The owner's humanizer skill plus voice profile. Playbook 07 runs it on every outbound message, with a ZeroGPT check | Upload as files (SETUP step 6) |
 | [`SETUP.md`](SETUP.md) | One-time setup checklist (≈2 hours) | You |
+| [`muse/SESSION-1.md`](muse/SESSION-1.md) | Messages to paste into Muse, with Claude checking each reply | You ↔ Muse ↔ Claude |
+| [`build/`](build) + [`scripts/build.py`](scripts/build.py) | Paste pack, website and Pipeline.xlsx with your details filled in | Muse, Netlify, Google Sheets |
+| [`site/`](site) | Source of the one-page website | Netlify |
 | [`SCALING.md`](SCALING.md) | What to do after $10/hr | You + Muse |
 | [`research/`](research) | The full video recap Muse can reference | Upload as a file |
 

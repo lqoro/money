@@ -10,23 +10,27 @@ Do these in order. Muse can't do steps 1–4 for you, because they involve your 
 - [ ] Warm the inbox: for the first 2 weeks, send at most 20 cold emails a day. `MEMORY.md` already sets this cap.
 
 ## 2. Getting paid (15 min)
-- [ ] Create a Stripe account and one **Payment Link**: "LeadDrop – Weekly Lead List", $400/month subscription.
+- [ ] Create a Stripe account and one **Payment Link**, $400/month subscription. Paste-ready product copy is in [`muse/templates/stripe-and-inbox.md`](muse/templates/stripe-and-inbox.md).
 - [ ] Paste the link into `MEMORY.md` → `payment_link`.
 - [ ] Muse only ever *sends* the link (after your approval). It never touches the Stripe dashboard.
 
 ## 3. Workspace for Muse (15 min)
 - [ ] Create a Google Drive folder `LeadDrop/` with subfolders `clients/`, `samples/`, `prospects/`.
-- [ ] Create a Google Sheet **Pipeline** from [`muse/templates/pipeline-tracker.md`](muse/templates/pipeline-tracker.md).
+- [ ] Create the **Pipeline** sheet: in Google Sheets, File → Import → Upload [`build/Pipeline.xlsx`](build/Pipeline.xlsx) (all 4 tabs, headers and status dropdowns included). Name it `Pipeline`.
 - [ ] Paste the folder and sheet URLs into `MEMORY.md`.
 
 ## 4. Fill in your blanks in `muse/MEMORY.md` (10 min)
-Search for `FILL_ME`: your name, business name, domain, address, payment link, timezone, approval channel.
+Search for `FILL_ME`: domain, inbox, address, timezone, WhatsApp number, payment link, Drive and sheet URLs. Your name is pre-filled, so confirm it.
+Then run `python3 scripts/build.py`. It fills your details into `build/MUSE-PASTE-PACK.md` and `build/site/index.html`, and lists anything still missing.
+
+## 4b. Put the website up (5 min)
+Follow the Website section of [`muse/templates/stripe-and-inbox.md`](muse/templates/stripe-and-inbox.md) (Netlify Drop, free). Prospects look at the site behind a cold email.
 
 ## 5. Load Muse (30 min)
 - [ ] Connect connectors: **Gmail** (the business inbox), **Google Workspace** (Drive + Sheets), and **WhatsApp**
       (this is where Muse asks you for approvals). Keep "approve sensitive writes" **on**.
-- [ ] Paste `muse/SOUL.md` into Muse's soul/persona file.
-- [ ] Paste `muse/MEMORY.md` into Muse's memory file.
+- [ ] Open `build/MUSE-PASTE-PACK.md`. Part 1 goes in Muse's soul/persona file, part 2 in its memory file, and the rest are reference files.
+      Use this file rather than the raw `muse/` files, because it has your details filled in.
 - [ ] Upload everything in `muse/playbooks/`, `muse/templates/` and `research/` as files. If Muse has no file
       upload, paste the playbooks into memory under a `## Playbooks` heading.
 - [ ] Turn **off** "use my data for training" in Muse's data controls (it's on by default), because you'll be holding client data.
@@ -60,7 +64,11 @@ Muse can't run Claude skills directly, so you give it the skill as files and hav
 Muse pastes drafts into ZeroGPT (a third-party site), so playbook 07 makes it swap names, emails, phones,
 addresses and business names for placeholders first. It never pastes lead sheets or whole threads.
 
-## 7. Create the scheduled tasks (15 min)
+## 7. Check Muse's work with Claude, then turn it on (20 min)
+Follow [`muse/SESSION-1.md`](muse/SESSION-1.md): five messages to paste into Muse, sending each reply back to Claude to check.
+Its last step creates the scheduled tasks below, so you can skip the next paragraph if you use it.
+
+### Creating the scheduled tasks by hand
 Open [`muse/ROUTINES.md`](muse/ROUTINES.md) and create each task with the schedule and prompt shown.
 Then tell Muse: *"Run the Prospecting routine now so I can see one cycle."* Check the output in the Pipeline sheet.
 
