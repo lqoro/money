@@ -34,9 +34,8 @@ Search for `FILL_ME`: your name, business name, domain, address, payment link, t
 ## 6. Teach Muse the humanizer skill (15 min)
 Muse can't run Claude skills directly, so you give it the skill as files and have it practice once while you watch.
 
-- [ ] Upload `muse/skills/humanizer/SKILL.md` and `muse/skills/humanizer/references/voice-owner.md`
-      along with `muse/playbooks/07-humanizer.md`. The voice profile is **not in git** because this repo is public:
-      take it from your humanizer skill's `references/` folder, rename it `voice-owner.md`, and upload it to Muse only. If Muse has no file upload, paste playbook 07 into memory under
+- [ ] Upload `muse/skills/humanizer/SKILL.md` and `muse/skills/humanizer/references/voice-lenny-ramirez.md`
+      along with `muse/playbooks/07-humanizer.md`. If Muse has no file upload, paste playbook 07 into memory under
       `## Humanizer`. Playbook 07 is the short version Muse runs every time; SKILL.md is the full reference.
 - [ ] Send Muse this message:
       ```

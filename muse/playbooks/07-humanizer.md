@@ -2,7 +2,7 @@
 
 This is the Muse version of the owner's **humanizer** skill. The full skill is in
 `skills/humanizer/SKILL.md`. Read it once at setup and again whenever this playbook isn't enough.
-The owner's voice profile is `skills/humanizer/references/voice-owner.md`.
+The owner's voice profile is `skills/humanizer/references/voice-lenny-ramirez.md`.
 
 **When to run it:** on every cold email, follow-up, reply draft, sample/delivery email, the "why now" and opener
 columns in lead sheets, and anything else a prospect or client will read. Run it **before** the draft goes to the

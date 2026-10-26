@@ -46,7 +46,7 @@ A writing sample takes priority over these style rules. If the sample uses em da
 
 Some writers already have a profile built from a confirmed sample of their own writing. Load the profile before rewriting when the user is that writer, or asks for "my voice," or for "my essay" or schoolwork:
 
-- **The owner**: `references/voice-owner.md` (kept out of this public repo; upload it to Muse directly, see SETUP step 6). Built from a confirmed sample of the owner's writing. In brief: no dashes, semicolons, rhetorical questions or stock transitions; about 3 contractions per 100 words; light hedges; phrasal verbs and *get*-passives; relaxed commas after short openers.
+- **Lenny Ramirez**: [references/voice-lenny-ramirez.md](references/voice-lenny-ramirez.md). Built from a 1,500-word MLA college essay that passed as human. In brief: academic structure written in spoken register. About 3 contractions per 100 words. No dashes, semicolons, rhetorical questions, or stock transitions. Light hedges (*pretty*, *just*, *actually*, *basically*). Phrasal verbs and *get*-passives. First person used only as reading reactions at the turns in the argument. Every quote followed by a plain-words restatement. Relaxed commas after short openers.
 
 A profile is a sample that has already been analyzed, so it outranks the style rules in this skill the same way a sample does. A newer sample from the same writer outranks the profile.
 
