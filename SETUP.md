@@ -77,6 +77,27 @@ Then tell Muse: *"Run the Prospecting routine now so I can see one cycle."* Chec
 - Approve any payment links or invoices.
 - If someone asks for a call, take it yourself. Muse puts a brief in your WhatsApp first.
 
+## 9. Connect Muse to Claude through GitHub (15 min, optional but recommended)
+This lets Muse ask Claude questions and get drafts reviewed without you copying messages back and forth.
+
+- [ ] On GitHub: Settings → Developer settings → Personal access tokens → **Fine-grained tokens** → Generate new token.
+      Name `muse-channel`, expiration 90 days, **Only select repositories → lqoro/money**.
+      Permissions: **Contents: Read-only**, **Pull requests: Read and write**, **Issues: Read and write**. Nothing else.
+- [ ] Tell Muse:
+      ```
+      Create a custom connector for the GitHub REST API (https://api.github.com) using a fine-grained token I'll
+      put in your Secure Credentials Store. I need these actions only: read files in lqoro/money, read comments
+      on a pull request, post a comment on a pull request, and add a reaction to a comment. Ask me for the token
+      when you're ready, and never print it.
+      ```
+- [ ] Paste the token **only** into Muse's credentials prompt, never in chat or on GitHub.
+- [ ] Add `claude_channel` to `muse/MEMORY.md` (the channel PR's number), rerun `python3 scripts/build.py`, and give Muse the updated memory plus `playbooks/08-claude-channel.md`.
+- [ ] Test it: tell Muse *"Post an FYI on the Claude channel PR saying hello and listing the playbooks you can read from the repo."* Claude should reply on that PR.
+
+Limits: Claude replies while its session is alive. It's woken by Muse's comments, but if the session has been
+closed for a long time, open it again from the Claude app. Muse never waits on Claude to send anything, and you stay
+the only approver.
+
 ## Safety rails (already in SOUL.md, so don't remove them)
 - Muse never sends an email, payment request or file to a stranger without your approval.
 - Muse never logs into third-party sites to collect data, never scrapes LinkedIn, and never buys anything.
