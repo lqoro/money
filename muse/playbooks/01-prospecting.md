@@ -20,5 +20,5 @@ Work one niche (`STATE.current_niche`) in 2–3 cities at a time until it's exha
 `date_added | business | website | city | niche | contact_name | contact_role | contact_route | observation | source_url | status=new`
 
 ## Quality bar
-If you aren't sure the business is real, small, and reachable, skip it. Target: `daily_send_cap + 5` per day.
+If you aren't sure the business is real, small, and reachable, skip it. Target: the day's `send_ramp` total + 10% per day (extra covers duplicates and bounces). Prospects are strangers only, found from public sources. Never use the owner's contacts or ask for them.
 Never guess email addresses (no "firstname@domain" guessing), and never log in to any site.

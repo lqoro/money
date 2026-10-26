@@ -4,7 +4,7 @@ Do these in order. Each step needs the one before it working first.
 
 | Step | Trigger to start | What changes | Rough ceiling |
 |---|---|---|---|
-| 1. Raise volume | 2 clean weeks (opt-outs < 1%, bounces < 3%) | `daily_send_cap` 20 → 40 → 60, and add a second sending domain + inbox | ~25 clients |
+| 1. Raise volume | Each ramp step in `MEMORY.md` runs clean (opt-outs < 1%, bounces < 3%) | Follow the `send_ramp` table: 20 → 40 → 80 → 150 → 200 emails a day across more domains and inboxes | ~25 clients |
 | 2. Add-on revenue | Client has been on 4+ weeks | Outreach Drafts add-on, +$200/mo (3-email sequence per lead, humanized) | +50% revenue per client |
 | 3. Raise the price | 10+ clients, churn < 10%/mo | New clients pay $500–600; keep the early clients on their old price | — |
 | 4. Second niche | Niche 1 reply rate drops under 2% | Switch `current_niche` to the next ICP; reuse every lesson | — |

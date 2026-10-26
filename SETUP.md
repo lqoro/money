@@ -1,5 +1,8 @@
 # One-time setup (≈2 hours)
 
+> **Faster:** Muse can do most of this for you. Give it `muse/playbooks/09-setup-by-muse.md`; it asks you questions, asks before every purchase,
+> and leaves only the identity steps (Stripe's ID check, USPS paperwork) to you. The checklist below is the manual version of the same steps.
+
 Do these in order. Muse can't do steps 1–4 for you, because they involve your identity, money or legal name.
 
 ## 1. Business identity (30 min)

@@ -10,6 +10,7 @@
 - approval_channel: WhatsApp to FILL_ME
 - payment_link: FILL_ME (Stripe Payment Link, $400/mo)
 - drive_folder: FILL_ME
+- virtual_card: FILL_ME (a virtual card with a spending limit, used only for approved purchases. Do not paste the number here)
 - pipeline_sheet: FILL_ME
 - claude_channel: the open pull request in lqoro/money from branch `claude/nice-noether-qxk1sn` (currently #3; see playbooks/08-claude-channel.md)
 
@@ -34,8 +35,24 @@ Find the prospects on their own websites, Google Maps, Clutch, chamber-of-commer
 New business filing, hiring for sales or marketing, a new location, a website that's broken / not mobile / very old,
 few or bad Google reviews, a recent funding or press mention, an expired promotion, a competitor that just closed.
 
+## Money you may spend (each purchase needs the owner's yes first, see SOUL)
+- spend_cap_setup: $100 total before the first client pays
+- spend_cap_monthly: $60 until MRR is over $400, then ask
+- approved_purchases: domain (about $15/yr, up to 3 more later for extra inboxes), Google Workspace Business Starter (one user per sending inbox), Stripe (free, the owner finishes ID checks), Netlify free plan. Anything else: ask.
+
+## Prospects are strangers only
+Never contact anyone the owner knows. Don't ask the owner for contacts. Every prospect comes from public research (playbook 01).
+
 ## Limits
-- daily_send_cap: 20 (weeks 1–2), then 40, max 60. The owner raises it.
+- send_ramp (total emails per day, spread across inboxes, per-inbox max in brackets). Move up a step only when the previous step ran clean
+  (bounces under 3%, opt-outs under 1%, no spam-folder warnings), and never faster than listed:
+  days 1–7: 20 total [10 per inbox]
+  days 8–14: 40 total [20]
+  days 15–21: 80 total [30], needs 2 inboxes
+  days 22–28: 150 total [40], needs 4 inboxes
+  after day 28: up to 200 total [50], and ask the owner before going higher
+  (about 1,000 emails a week by week 4. Sending 1,000 on day one from a new domain gets it blocked and the replies go to zero.)
+- inboxes: 1 now; add one per step above when the ramp calls for it (new domain + new Workspace user, each approved as a purchase)
 - follow_ups: at most 2, spaced 3 and 7 days after the first email
 - auto_client_replies: off
 - suppression_list: []  (opt-outs, bounces, "not interested"; never contact these again)

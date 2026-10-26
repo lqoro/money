@@ -12,7 +12,7 @@ because each run starts with no memory of the last one.
 ```
 Read SOUL, MEMORY (STATE + HANDOFF), and playbooks/01-prospecting.md first. Follow the hard rules.
 Find new prospects for STATE.current_niche in STATE.current_cities (pick a new city if the current ones are exhausted).
-Target: (daily_send_cap + 5) new qualified prospects, each checked against suppression_list and the Pipeline sheet for duplicates.
+Target: the current send_ramp total + 10% new qualified stranger prospects, each checked against suppression_list and the Pipeline sheet for duplicates.
 Add them to the Pipeline sheet with status "new". Update STATE and the Pipeline sheet before you finish.
 ```
 
@@ -20,10 +20,10 @@ Add them to the Pipeline sheet with status "new". Update STATE and the Pipeline 
 ```
 Read SOUL, MEMORY (STATE + HANDOFF), playbooks/02-outreach.md, playbooks/07-humanizer.md and templates/emails.md first. Follow the hard rules.
 Check the Claude channel PR for replies (playbook 08). Optionally post the drafts there as a REVIEW before asking the owner.
-Draft first-touch emails for today's "new" prospects (up to daily_send_cap), plus any follow-ups that are due.
+Draft first-touch emails for today's "new" prospects (up to the current send_ramp total), plus any follow-ups that are due.
 Run the humanizer pass (playbook 07) on every draft, including the ZeroGPT check on the template and 1 in 5 drafts.
-Send the batch to the owner on WhatsApp for approval, in the numbered format from the playbook. Do NOT send any email yet.
-When the owner replies, send only the approved emails, spaced at least 2 minutes apart, between 8am and 11am in the recipient's timezone.
+Use bulk approval from playbook 02: counts plus 10 randomly chosen full emails to the owner on WhatsApp. Do NOT send any email yet.
+On `go`, send the approved emails, at least 2 minutes apart per inbox, between 8am and 4pm in the recipient's timezone.
 Mark them "emailed" with the date. Update STATE and the Pipeline sheet before you finish.
 ```
 

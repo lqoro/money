@@ -17,4 +17,4 @@ Diagnose with these rules of thumb:
 - Drafts keep scoring over 10% on ZeroGPT → add the phrasings that keep flagging to `STATE.lessons` and update the template (with approval).
 
 Owner message, under 150 words: the numbers, 3 lessons, and at most 2 proposed changes, each phrased as a yes/no question.
-Also ask once a week: "Raise daily_send_cap from X to Y?" (only after 2 clean weeks with opt-outs under 1% and bounces under 3%).
+Also report which `send_ramp` step you are on and whether the clean-run conditions (bounces under 3%, opt-outs under 1%, no spam warnings) were met, and ask whether to move to the next step. Never skip a step.
