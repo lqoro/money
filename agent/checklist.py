@@ -43,6 +43,19 @@ class Checklist:
         }
 
 
+def is_dip(snap: dict, cfg: Config) -> bool:
+    """A proven coin pulling back 40-75% off its recent high: a possible buy if the
+    narrative and attention are still there. `peak_mcap_usd`/`drawdown_pct` are
+    filled in by the agent from its own price tracking and recent candles."""
+    dd = snap.get("drawdown_pct")
+    return (
+        dd is not None
+        and cfg.dip_min_drawdown_pct <= dd <= cfg.dip_max_drawdown_pct
+        and (snap.get("peak_mcap_usd") or 0) >= cfg.dip_min_peak_mcap_usd
+        and snap["mcap_usd"] >= cfg.migrated_min_mcap_usd
+    )
+
+
 def classify_setup(snap: dict, cfg: Config, sol_usd: float) -> str | None:
     mcap = snap["mcap_usd"]
     age = snap["age_hours"]
@@ -53,6 +66,8 @@ def classify_setup(snap: dict, cfg: Config, sol_usd: float) -> str | None:
         if cfg.final_stretch_min_bond_pct <= pct <= cfg.final_stretch_max_bond_pct:
             return "FINAL_STRETCH"
         return None
+    if is_dip(snap, cfg):
+        return "DIP"
     if cfg.recon_min_mcap_usd <= mcap <= cfg.recon_max_mcap_usd:
         return "MIGRATED"
     if age is not None and age <= cfg.migrated_max_age_hours and mcap >= cfg.migrated_min_mcap_usd:
@@ -67,7 +82,7 @@ def market_prefilter(snap: dict, cfg: Config, sol_usd: float) -> str | None:
         return None
     if snap["vol_5m"] < cfg.min_vol_5m_usd:
         return None
-    if setup == "MIGRATED" and snap["liquidity_usd"] < cfg.min_liquidity_usd:
+    if setup != "FINAL_STRETCH" and snap["liquidity_usd"] < cfg.min_liquidity_usd:
         return None
     return setup
 
@@ -107,7 +122,7 @@ def holder_stats(report: dict, snap: dict) -> dict:
 def run_checklist(snap: dict, report: dict | None, same_name: list[dict], cfg: Config, sol_usd: float) -> Checklist:
     c = Checklist(setup=classify_setup(snap, cfg, sol_usd))
     if c.setup is None:
-        c.fails.append("No setup fits: not in Final Stretch range and not a migrated runner")
+        c.fails.append("No setup fits: not Final Stretch, not a migrated runner, not a healthy dip")
         return c
 
     # --- Flow ---
@@ -122,8 +137,28 @@ def run_checklist(snap: dict, report: dict | None, same_name: list[dict], cfg: C
         c.warns.append("Few, large trades in 5m: volume may be a few whales or a farm (V13)")
     if snap["sells_1h"] and snap["buys_1h"] / max(1, snap["sells_1h"]) < 0.6:
         c.warns.append("Sellers dominate the last hour")
-    if c.setup == "MIGRATED" and snap["mcap_usd"] and snap["liquidity_usd"] / snap["mcap_usd"] < 0.05:
+    if c.setup != "FINAL_STRETCH" and snap["mcap_usd"] and snap["liquidity_usd"] / snap["mcap_usd"] < 0.05:
         c.warns.append("Thin liquidity vs market cap: exits will slip hard")
+
+    # --- Attention: trade the narrative and the attention ---
+    accel = snap.get("vol_5m_vs_hour_avg")
+    buy_ratio = snap.get("buy_ratio_5m")
+    if accel is not None and accel >= 1.5:
+        c.plusses.append(f"Attention rising: 5m volume is {accel:.1f}x the hour's average")
+    elif accel is not None and accel < 0.5:
+        c.warns.append(f"Attention fading: 5m volume is only {accel:.1f}x the hour's average")
+
+    # --- Dip-specific: a correction is only a buy if the crowd is still here ---
+    if c.setup == "DIP":
+        dd = snap["drawdown_pct"]
+        if dd > 65:
+            c.warns.append(f"Deep correction ({dd:.0f}% off the high): only with a very strong narrative")
+        if accel is not None and accel < 0.5:
+            c.fails.append("Dip with fading attention is a falling knife, not a dip")
+        if buy_ratio is not None and buy_ratio < 0.45:
+            c.warns.append(f"Sellers still in control on the dip ({buy_ratio:.0%} buys in 5m)")
+        elif buy_ratio is not None and buy_ratio >= 0.55 and (snap.get("change_5m") or 0) > 0:
+            c.plusses.append("Buyers stepping in on the dip (V1: big buys on a dip are bullish)")
 
     # --- Attention / community ---
     if snap["boosts"] >= cfg.suspicious_boosts:
@@ -164,7 +199,7 @@ def run_checklist(snap: dict, report: dict | None, same_name: list[dict], cfg: C
             c.fails.append(f"RugCheck danger: {r.get('name')} {r.get('value') or ''}".strip())
         elif (r.get("level") or "").lower() == "warn":
             c.warns.append(f"RugCheck warn: {r.get('name')}")
-    if c.setup == "MIGRATED":
+    if c.setup != "FINAL_STRETCH":
         lp = max((((m.get("lp") or {}).get("lpLockedPct") or 0) for m in report.get("markets") or []), default=0)
         if lp < cfg.min_lp_locked_pct:
             c.fails.append(f"LP only {lp:.0f}% burned/locked (V2, V3, V6)")

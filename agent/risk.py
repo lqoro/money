@@ -16,6 +16,7 @@ class ExitSignal:
     fraction: float  # of the remaining tokens
     reason: str
     rugged: bool = False
+    review: bool = False  # stop hit: ask the brain whether this is a shakeout before selling
 
 
 def default_exit_plan(cfg: Config) -> dict:
@@ -59,9 +60,24 @@ def check_exit(pos: Position, snap: dict, cfg: Config, now: float | None = None)
 
     multiple = price / pos.entry_price
 
-    # Hard stop on the original position.
+    # The floor no review can hold past.
+    if multiple <= 1 - cfg.hard_stop_pct / 100:
+        return ExitSignal(1.0, f"hard stop -{cfg.hard_stop_pct:.0f}% hit ({multiple:.2f}x)")
+
+    # Held through the stop on a shakeout read: it had until the deadline to reclaim.
+    hold_until = plan.get("hold_until")
+    if hold_until and now >= hold_until:
+        reclaim = 1 - plan.get("_orig_stop", plan["stop_loss_pct"]) / 100
+        plan.pop("hold_until")
+        if multiple < reclaim:
+            return ExitSignal(1.0, f"held through the stop but no recovery by the deadline ({multiple:.2f}x)")
+        plan["stop_loss_pct"] = plan.get("_orig_stop", plan["stop_loss_pct"])  # recovered: normal stop again
+
+    # Stop loss. A stop is a decision point: if reviews are left, the brain looks at
+    # why it hit (bundle dump with the narrative intact vs. a dead coin) first.
     if not pos.initials_taken and multiple <= 1 - plan["stop_loss_pct"] / 100:
-        return ExitSignal(1.0, f"stop loss -{plan['stop_loss_pct']:.0f}% hit ({multiple:.2f}x)")
+        return ExitSignal(1.0, f"stop loss -{plan['stop_loss_pct']:.0f}% hit ({multiple:.2f}x)",
+                          review=pos.stop_reviews < cfg.max_stop_reviews)
 
     # Take initials: sell enough to recover cost, ride the rest free (V2, V11).
     if not pos.initials_taken and multiple >= plan["take_initials_multiple"]:
@@ -81,7 +97,7 @@ def check_exit(pos: Position, snap: dict, cfg: Config, now: float | None = None)
         return ExitSignal(1.0, f"trailing stop: -{plan['trailing_stop_pct']:.0f}% from peak")
 
     # Time stop: nothing happened, thesis was wrong.
-    if (not pos.initials_taken and held_min >= plan["time_stop_minutes"]
+    if (not pos.initials_taken and not plan.get("hold_until") and held_min >= plan["time_stop_minutes"]
             and multiple < 1 + cfg.time_stop_min_gain_pct / 100):
         return ExitSignal(1.0, f"time stop: {held_min:.0f} min and only {multiple:.2f}x")
 

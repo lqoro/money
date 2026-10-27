@@ -7,6 +7,7 @@ e.g. STARTING_CASH_USD=250 or MAX_POSITION_PCT=5.
 
 from __future__ import annotations
 
+import json
 import os
 from dataclasses import dataclass, field, fields
 from pathlib import Path
@@ -62,6 +63,14 @@ class Config:
     time_stop_min_gain_pct: float = 10.0
     max_hold_hours: float = 12.0  # "hold hours, maybe overnight" (V8)
     rug_liquidity_drop_pct: float = 70.0
+    hard_stop_pct: float = 60.0  # floor no stop review can ever hold past
+    max_stop_reviews: int = 1  # times a position may be held through its stop
+
+    # --- Narrative / attention trading -------------------------------------
+    dip_min_drawdown_pct: float = 40.0  # a normal pullback is ~40-50%
+    dip_max_drawdown_pct: float = 75.0  # ~70% is deep; past this it's usually dead
+    dip_min_peak_mcap_usd: float = 70_000.0  # only dips of coins that proved themselves (V6)
+    reentry_window_hours: float = 3.0  # stopped-out coins stay on the watchlist this long
 
     # --- Loop timing --------------------------------------------------------
     scan_interval_sec: float = 60.0
@@ -77,7 +86,7 @@ class Config:
     web_search_max_uses: int = 3
     guide_mode: str = "full"  # full = whole guide in the prompt, cheatsheet = Part 1 only
     lessons_in_prompt: int = 20
-    reflect_every_n_trades: int = 10
+    reflect_every_n_trades: int = 5  # how often Claude reviews results and evolves the strategy
 
     # --- Notifications ------------------------------------------------------
     notify_webhook_url: str = ""  # Discord/Slack/any JSON webhook
@@ -109,4 +118,42 @@ class Config:
                 value = raw
             setattr(cfg, f.name, value)
         cfg.memory_dir.mkdir(parents=True, exist_ok=True)
+        cfg.apply_strategy()
         return cfg
+
+    # --- Evolving strategy --------------------------------------------------
+    def apply_strategy(self) -> dict:
+        """Load the parameters Trencher has evolved for itself (memory/strategy.json).
+        Values you set explicitly in the environment always win."""
+        path = self.memory_dir / "strategy.json"
+        if not path.exists():
+            return {}
+        applied = {}
+        for name, value in json.loads(path.read_text()).items():
+            if name in EVOLVABLE and name.upper() not in os.environ:
+                lo, hi = EVOLVABLE[name]
+                setattr(self, name, min(hi, max(lo, float(value))))
+                applied[name] = getattr(self, name)
+        return applied
+
+    def strategy_view(self) -> dict:
+        return {name: getattr(self, name) for name in EVOLVABLE}
+
+
+# Parameters Trencher may retune from its own results, with hard bounds. The
+# checklist hard lines and the conviction→risk table are deliberately NOT here.
+EVOLVABLE: dict[str, tuple[float, float]] = {
+    "stop_loss_pct": (15, 50),
+    "trailing_stop_pct": (20, 55),
+    "take_initials_multiple": (1.5, 4),
+    "time_stop_minutes": (15, 240),
+    "max_hold_hours": (2, 48),
+    "dip_min_drawdown_pct": (25, 60),
+    "dip_max_drawdown_pct": (50, 80),
+    "dip_min_peak_mcap_usd": (40_000, 500_000),
+    "good_vol_5m_usd": (3_000, 30_000),
+    "min_vol_5m_usd": (1_000, 10_000),
+    "final_stretch_min_bond_pct": (30, 90),
+    "migrated_max_age_hours": (2, 48),
+    "reentry_window_hours": (0.5, 12),
+}

@@ -16,7 +16,7 @@ import time
 from collections import deque
 
 from .checklist import Checklist
-from .config import Config
+from .config import EVOLVABLE, Config
 from . import journal
 from .risk import default_exit_plan
 
@@ -60,12 +60,45 @@ LESSON_SCHEMA = {
     "additionalProperties": False,
 }
 
-RULES_SCHEMA = {
+STOP_REVIEW_SCHEMA = {
     "type": "object",
-    "properties": {"rules_markdown": {"type": "string", "description": "Markdown bullet list, at most 15 rules"}},
-    "required": ["rules_markdown"],
+    "properties": {
+        "action": {"type": "string", "enum": ["HOLD", "SELL_HALF", "SELL"]},
+        "verdict": {"type": "string", "description": "One line in Trencher's voice"},
+        "cause": {"type": "string", "enum": ["bundle_or_insider_dump", "early_shakeout", "narrative_dead",
+                                             "rug_or_farm", "market_wide", "unclear"]},
+        "narrative_strength": {"type": "integer", "description": "1-10: is the story/attention still alive?"},
+        "new_stop_loss_pct": {"type": "number", "description": "If holding: new stop as % below ENTRY (max is the hard floor)"},
+        "recheck_minutes": {"type": "number", "description": "If holding: minutes it has to reclaim the original stop level"},
+        "reason": {"type": "string"},
+    },
+    "required": ["action", "verdict", "cause", "narrative_strength", "new_stop_loss_pct", "recheck_minutes", "reason"],
     "additionalProperties": False,
 }
+
+def evolve_schema() -> dict:
+    return {
+        "type": "object",
+        "properties": {
+            "rules_markdown": {"type": "string", "description": "Markdown bullet list, at most 15 rules"},
+            "param_changes": {
+                "type": "array",
+                "description": "Strategy parameters to retune (empty if the data doesn't justify a change)",
+                "items": {
+                    "type": "object",
+                    "properties": {
+                        "param": {"type": "string", "enum": sorted(EVOLVABLE)},
+                        "value": {"type": "number"},
+                        "reason": {"type": "string"},
+                    },
+                    "required": ["param", "value", "reason"],
+                    "additionalProperties": False,
+                },
+            },
+        },
+        "required": ["rules_markdown", "param_changes"],
+        "additionalProperties": False,
+    }
 
 
 def _cheatsheet(guide: str) -> str:
@@ -174,7 +207,8 @@ class Brain:
                 return None
 
     # ------------------------------------------------------------ decisions
-    def decide(self, snap: dict, check: Checklist, portfolio_view: dict, sizing_text: str) -> dict:
+    def decide(self, snap: dict, check: Checklist, portfolio_view: dict, sizing_text: str,
+               history: dict | None = None) -> dict:
         if not self.use_claude:
             return self._rules_decide(snap, check)
 
@@ -197,6 +231,9 @@ class Brain:
 ## Your paper wallet
 {json.dumps(portfolio_view, indent=1)}
 
+## Your current strategy parameters (you evolve these yourself)
+{json.dumps(self.cfg.strategy_view())}
+
 ## How your conviction becomes a position size
 Only risk what you're willing to lose (V8). Your conviction sets how much of the wallet
 you'd lose if the stop is hit; your stop distance then sets the size. Right now:
@@ -215,6 +252,8 @@ Conviction scale:
 Market data (DexScreener):
 {json.dumps(snap, indent=1, default=str)}
 
+Your history with this coin: {json.dumps(history) if history else "none"}
+
 Automated checklist (guide Part 1 §4) — it already passed every hard line:
 {json.dumps(check.as_dict(), indent=1)}
 
@@ -223,6 +262,10 @@ global fees paid, pro-trader ratio, X admin identity. Treat them as unverified r
 
 ## Task
 {web_note}
+Trade the narrative and the attention: is the story still being told, is the crowd
+arriving or leaving? For a DIP, a 40-50% pullback is normal and ~70% is deep; it's a buy
+only if the narrative is intact and buyers are stepping back in. If you were stopped out of
+this coin recently, say whether the reason you left still holds.
 Then decide BUY or PASS as Trencher. Passing is a position (V6). If BUY, rate your
 conviction honestly (it sets the size) and write the exit plan before the entry (V1, V11)."""
         out = self._ask(prompt, DECISION_SCHEMA, self.cfg.effort, web=True)
@@ -269,7 +312,50 @@ Cite the guide (V-numbers) when the lesson confirms or contradicts it. Max 3 sen
         out = self._ask(prompt, LESSON_SCHEMA, "low", web=False)
         return (out or {}).get("lesson") or f"{trade['symbol']}: {trade['pnl_pct']:+.0f}% — no reflection available."
 
-    def condense_rules(self, trades: list[dict]) -> str | None:
+    def review_stop(self, pos_view: dict, snap: dict, holders_now: dict) -> dict:
+        """The stop just hit. Shakeout or dead coin? Hold (to the hard floor, with a
+        deadline), trim, or sell."""
+        if not self.use_claude or not self.has_budget():
+            return self._rules_review(pos_view, snap, holders_now)
+        prompt = f"""Your stop just hit on an open position. Before selling, decide WHY it hit.
+
+Position: {json.dumps(pos_view, indent=1, default=str)}
+Market now: {json.dumps(snap, indent=1, default=str)}
+Holders at entry: {json.dumps(pos_view.get("entry_holders"))}
+Holders now:      {json.dumps(holders_now)}
+
+A big drop in top-10 / insider share since entry usually means a bundle or insiders sold
+into the market. If the narrative and attention are still strong, coins often recover
+after a bundle exit, so holding can be right. If the story is dead, attention is leaving,
+or it looks like a farm or rug, sell now.
+
+You may check X/the web for whether the narrative is still alive.
+Rules: you can hold at most once per position, the new stop can't go past the hard floor
+of -{self.cfg.hard_stop_pct:.0f}% from entry, and holding puts more of the wallet at risk than you
+planned, so only hold with real evidence (cite it)."""
+        out = self._ask(prompt, STOP_REVIEW_SCHEMA, self.cfg.effort, web=True)
+        return out or {"action": "SELL", "verdict": "SELL — no brain, the stop stands.", "cause": "unclear",
+                       "narrative_strength": 0, "new_stop_loss_pct": 0, "recheck_minutes": 0, "reason": ""}
+
+    def _rules_review(self, pos_view: dict, snap: dict, holders_now: dict) -> dict:
+        before = pos_view.get("entry_holders") or {}
+        top10_drop = (before.get("top10_pct_ex_pool") or 0) - (holders_now.get("top10_pct_ex_pool") or 0)
+        insider_drop = (before.get("insider_pct") or 0) - (holders_now.get("insider_pct") or 0)
+        attention_alive = (snap["vol_5m"] >= self.cfg.good_vol_5m_usd
+                           and (snap.get("buy_ratio_5m") or 0) >= 0.5
+                           and (snap.get("vol_5m_vs_hour_avg") or 0) >= 0.8)
+        bundle_exit = top10_drop >= 5 or insider_drop >= 3
+        if bundle_exit and attention_alive:
+            return {"action": "HOLD", "verdict": "HOLD — bundle came out, crowd still buying.",
+                    "cause": "bundle_or_insider_dump", "narrative_strength": 6,
+                    "new_stop_loss_pct": self.cfg.hard_stop_pct - 10, "recheck_minutes": 30,
+                    "reason": f"top 10 down {top10_drop:.1f} pts, insiders down {insider_drop:.1f} pts since entry"}
+        return {"action": "SELL", "verdict": "SELL — no sign of a shakeout, the stop stands.", "cause": "unclear",
+                "narrative_strength": 3, "new_stop_loss_pct": 0, "recheck_minutes": 0,
+                "reason": "rules-only review"}
+
+    def evolve(self, trades: list[dict]) -> dict | None:
+        """Study results and evolve: rewrite learned rules and retune strategy params."""
         if not self.use_claude or not self.has_budget():
             return None
         lessons = "\n".join(journal.recent_lessons(self.cfg, 200))
@@ -279,10 +365,14 @@ Cite the guide (V-numbers) when the lesson confirms or contradicts it. Max 3 sen
             by_setup.setdefault(t.get("setup", "?"), []).append(t.get("pnl_usd", 0))
         stats = {k: {"trades": len(v), "pnl_usd": round(sum(v), 2), "win_rate": round(sum(x > 0 for x in v) / len(v), 2)}
                  for k, v in by_setup.items()}
-        prompt = f"""Time to study your own results and update your learned rules.
+        recent = [{k: t.get(k) for k in ("symbol", "setup", "pnl_pct", "peak_multiple", "held_minutes",
+                                          "exit_reasons", "stop_reviews")} for t in trades[-30:]]
+        bounds = {k: list(v) for k, v in EVOLVABLE.items()}
+        prompt = f"""Time to study your own results and evolve your strategy.
 
 Closed trades: {len(trades)}, wins: {wins}
 By setup: {json.dumps(stats)}
+Last trades: {json.dumps(recent)}
 
 All your lessons:
 {lessons}
@@ -290,8 +380,13 @@ All your lessons:
 Current learned rules:
 {journal.learned_rules(self.cfg) or '(none yet)'}
 
-Rewrite your learned rules: at most 15 short, concrete bullets that change how you trade
-(thresholds, setups to favor or avoid, timing, exits). Keep rules your data supports, drop
-ones it doesn't. Never loosen the hard lines in your soul."""
-        out = self._ask(prompt, RULES_SCHEMA, "high", web=False)
-        return (out or {}).get("rules_markdown")
+Current strategy parameters: {json.dumps(self.cfg.strategy_view())}
+Allowed bounds: {json.dumps(bounds)}
+
+1. Rewrite your learned rules: at most 15 short, concrete bullets that change how you trade.
+2. Retune parameters where your results clearly justify it. Examples: stops that keep getting
+   hit right before recoveries (bundle exits) → a wider stop or a different setup; dips bought
+   at 70% that keep dying → a tighter dip range; winners you sold too early → a higher
+   initials multiple. Small sample sizes call for small changes. Leave the rest alone.
+Never loosen the hard lines in your soul; they aren't parameters."""
+        return self._ask(prompt, evolve_schema(), "high", web=False)

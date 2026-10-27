@@ -31,6 +31,8 @@ class Position:
     last_price: float = 0.0
     exit_plan: dict = field(default_factory=dict)
     thesis: str = ""
+    entry_holders: dict = field(default_factory=dict)  # holder stats at entry, to spot a bundle exit
+    stop_reviews: int = 0  # times the brain chose to hold through the stop
 
     def value(self, price: float | None = None) -> float:
         return self.tokens * (price if price is not None else self.last_price or self.entry_price)

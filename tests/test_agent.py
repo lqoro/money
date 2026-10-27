@@ -161,3 +161,99 @@ def test_state_round_trip(cfg):
     again = Portfolio.load(cfg)
     assert again.cash_usd == pytest.approx(90.0)
     assert list(again.positions.values())[0].thesis == "thesis"
+
+
+# --- Narrative trading: dips, stop reviews, re-entry, evolving strategy ------
+
+def test_dip_setup(cfg):
+    dip = snap(mcap_usd=100_000, peak_mcap_usd=220_000, drawdown_pct=55.0, vol_5m_vs_hour_avg=1.2,
+               buy_ratio_5m=0.6, change_5m=4)
+    c = run_checklist(dip, report(), [], cfg, SOL)
+    assert c.setup == "DIP" and c.passed, c.fails
+    assert any("Buyers stepping in" in x for x in c.plusses)
+
+
+def test_dip_with_fading_attention_is_a_falling_knife(cfg):
+    knife = snap(mcap_usd=100_000, peak_mcap_usd=220_000, drawdown_pct=55.0, vol_5m_vs_hour_avg=0.3)
+    c = run_checklist(knife, report(), [], cfg, SOL)
+    assert not c.passed and any("falling knife" in f for f in c.fails)
+
+
+def test_dip_too_deep_is_not_a_dip(cfg):
+    dead = snap(mcap_usd=40_000, peak_mcap_usd=400_000, drawdown_pct=90.0, age_hours=30)
+    assert run_checklist(dead, report(), [], cfg, SOL).setup is None
+
+
+def test_stop_is_a_review_once_then_final(cfg):
+    pf = Portfolio(cash_usd=100.0)
+    pos = pf.buy(cfg, snap(), 10.0, SOL, "MIGRATED", sanitize_exit_plan({}, cfg), "")
+    e = pos.entry_price
+    sig = check_exit(pos, snap(price_usd=e * 0.65), cfg)
+    assert sig.review
+    pos.stop_reviews = 1
+    assert not check_exit(pos, snap(price_usd=e * 0.65), cfg).review
+    pos.stop_reviews = 0
+    hard = check_exit(pos, snap(price_usd=e * 0.35), cfg)
+    assert "hard stop" in hard.reason and not hard.review
+
+
+def test_hold_deadline(cfg):
+    pf = Portfolio(cash_usd=100.0)
+    pos = pf.buy(cfg, snap(), 10.0, SOL, "MIGRATED", sanitize_exit_plan({}, cfg), "")
+    e = pos.entry_price
+    pos.exit_plan.update({"_orig_stop": 30, "stop_loss_pct": 50, "hold_until": time.time() - 1})
+    assert "no recovery" in check_exit(pos, snap(price_usd=e * 0.6), cfg).reason
+    pos.exit_plan.update({"stop_loss_pct": 50, "hold_until": time.time() - 1})
+    assert check_exit(pos, snap(price_usd=e * 0.9), cfg) is None
+    assert pos.exit_plan["stop_loss_pct"] == 30  # recovered: normal stop again
+
+
+def _agent(cfg, monkeypatch, holders_now_top10):
+    from agent import main as m
+    rep = report(topHolders=[{"address": f"H{i}", "owner": f"O{i}", "pct": holders_now_top10 / 10} for i in range(10)])
+    monkeypatch.setattr(m.data, "rugcheck_report", lambda addr: rep)
+    monkeypatch.setattr(m, "notify", lambda *a, **k: None)
+    agent = m.Agent(cfg)
+    pos = agent.pf.buy(cfg, snap(), 10.0, SOL, "MIGRATED", sanitize_exit_plan({}, cfg), "")
+    pos.entry_holders = {"top10_pct_ex_pool": 20.0, "insider_pct": 0}
+    return agent, pos
+
+
+def test_bundle_exit_with_live_attention_holds(cfg, monkeypatch):
+    agent, pos = _agent(cfg, monkeypatch, holders_now_top10=8.0)  # top 10 went 20% → 8%: bundle sold
+    now = snap(price_usd=pos.entry_price * 0.65, vol_5m_vs_hour_avg=1.1, buy_ratio_5m=0.6)
+    agent.review_stop(pos, now, "stop loss -30% hit", SOL)
+    assert pos.id in agent.pf.positions
+    assert pos.exit_plan["stop_loss_pct"] == cfg.hard_stop_pct - 10
+    assert pos.exit_plan["hold_until"] > time.time()
+
+
+def test_no_shakeout_sells_and_watches_for_reentry(cfg, monkeypatch):
+    agent, pos = _agent(cfg, monkeypatch, holders_now_top10=20.0)  # holders unchanged: no bundle exit
+    now = snap(price_usd=pos.entry_price * 0.65, vol_5m_vs_hour_avg=1.1, buy_ratio_5m=0.6)
+    agent.review_stop(pos, now, "stop loss -30% hit", SOL)
+    assert pos.id not in agent.pf.positions
+    assert pos.address in agent.watchlist
+
+
+def test_evolve_applies_bounded_changes(cfg, monkeypatch):
+    import json as _json
+    from agent import evolve as ev, journal
+    journal.log_trade(cfg, {"event": "CLOSE", "symbol": "X", "setup": "DIP", "pnl_usd": -2})
+    b = Brain(cfg)
+    monkeypatch.setattr(b, "evolve", lambda trades: {
+        "rules_markdown": "- wider stops on DIP",
+        "param_changes": [{"param": "stop_loss_pct", "value": 40, "reason": "bundle exits"},
+                          {"param": "dip_max_drawdown_pct", "value": 99, "reason": "too greedy"},
+                          {"param": "max_top10_pct", "value": 90, "reason": "not evolvable"}],
+    })
+    summary = ev.evolve(cfg, b)
+    assert cfg.stop_loss_pct == 40
+    assert cfg.dip_max_drawdown_pct == 80  # clamped to its bound
+    assert cfg.max_top10_pct == 25  # hard lines can't evolve
+    assert "stop_loss_pct" in _json.loads((cfg.memory_dir / "strategy.json").read_text())
+    assert "wider stops" in summary
+    monkeypatch.setenv("STOP_LOSS_PCT", "25")
+    cfg.stop_loss_pct = 25
+    cfg.apply_strategy()
+    assert cfg.stop_loss_pct == 25  # an explicit env setting beats the learned one

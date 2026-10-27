@@ -1,5 +1,6 @@
-"""Free public market data: DexScreener (pairs, boosts, profiles), RugCheck
-(authorities, holders, LP), Jupiter (SOL price). No API keys needed."""
+"""Free public market data: DexScreener (pairs, boosts, profiles), GeckoTerminal
+(candles), RugCheck (authorities, holders, LP), Jupiter (SOL price). No API keys
+needed."""
 
 from __future__ import annotations
 
@@ -14,6 +15,7 @@ log = logging.getLogger(__name__)
 DEX = "https://api.dexscreener.com"
 RUGCHECK = "https://api.rugcheck.xyz/v1"
 JUP_PRICE = "https://lite-api.jup.ag/price/v3"
+GECKO = "https://api.geckoterminal.com/api/v2"
 SOL_MINT = "So11111111111111111111111111111111111111112"
 
 _session = requests.Session()
@@ -88,6 +90,42 @@ def rugcheck_report(mint: str) -> dict | None:
     return _get(f"{RUGCHECK}/tokens/{mint}/report")
 
 
+_ohlcv_cache: dict[str, tuple[float, list]] = {}
+
+
+def recent_candles(pool: str, minutes: int = 15, limit: int = 96) -> list[list[float]]:
+    """[ts, open, high, low, close, volume] candles (newest first) from GeckoTerminal.
+    Cached 5 min per pool: the free tier allows ~30 calls/min."""
+    key = f"{pool}:{minutes}:{limit}"
+    hit = _ohlcv_cache.get(key)
+    if hit and time.time() - hit[0] < 300:
+        return hit[1]
+    data = _get(f"{GECKO}/networks/solana/pools/{pool}/ohlcv/minute",
+                {"aggregate": minutes, "limit": limit}, retries=2) or {}
+    candles = ((data.get("data") or {}).get("attributes") or {}).get("ohlcv_list") or []
+    _ohlcv_cache[key] = (time.time(), candles)
+    return candles
+
+
+def price_history(snap: dict) -> dict:
+    """Peak in the last ~24h and how far price is off it: the dip/correction view."""
+    candles = recent_candles(snap["pair_address"]) if snap.get("pair_address") else []
+    price = snap["price_usd"]
+    if not candles or not price:
+        return {}
+    high = max(c[2] for c in candles)
+    hours_since_high = (time.time() - max(c[0] for c in candles if c[2] == high)) / 3600
+    last_hour = candles[:4]
+    return {
+        "peak_price_24h": high,
+        "peak_mcap_24h": snap["mcap_usd"] * high / price,
+        "drawdown_from_peak_pct": round(100 * (1 - price / high), 1) if high else 0,
+        "hours_since_peak": round(hours_since_high, 1),
+        "low_last_hour": min(c[3] for c in last_hour) if last_hour else None,
+        "candles_15m_close_newest_first": [c[4] for c in candles[:16]],
+    }
+
+
 _sol_cache: tuple[float, float] = (0.0, 0.0)
 
 
@@ -111,6 +149,8 @@ def pair_snapshot(pair: dict) -> dict:
     created = pair.get("pairCreatedAt") or 0
     txns = pair.get("txns") or {}
     vol = pair.get("volume") or {}
+    m5 = txns.get("m5") or {}
+    hour_avg_5m = float(vol.get("h1") or 0) / 12
     return {
         "address": pair["baseToken"]["address"],
         "name": pair["baseToken"].get("name"),
@@ -132,6 +172,10 @@ def pair_snapshot(pair: dict) -> dict:
         "change_1h": (pair.get("priceChange") or {}).get("h1"),
         "change_24h": (pair.get("priceChange") or {}).get("h24"),
         "age_hours": (time.time() * 1000 - created) / 3_600_000 if created else None,
+        # Attention: is the crowd arriving or leaving right now?
+        "vol_5m_vs_hour_avg": round(float(vol.get("m5") or 0) / hour_avg_5m, 2) if hour_avg_5m else None,
+        "buy_ratio_5m": round(m5.get("buys", 0) / (m5.get("buys", 0) + m5.get("sells", 0)), 2)
+        if (m5.get("buys", 0) + m5.get("sells", 0)) else None,
         "boosts": (pair.get("boosts") or {}).get("active", 0),
         "has_paid_profile": bool(info.get("header") or info.get("imageUrl")),
         "socials": [s.get("type") or s.get("platform") for s in info.get("socials") or []],
