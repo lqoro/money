@@ -81,7 +81,12 @@ class Config:
     # --- Brain (Claude) -----------------------------------------------------
     model: str = "claude-opus-5-5"
     effort: str = "medium"  # low | medium | high | xhigh | max
-    max_brain_calls_per_hour: int = 10  # cost cap: ~$0.05-0.15 per decision
+    # Pacing, not a bill: on a Claude plan every call draws on the same usage window
+    # you use yourself. 0 = no hourly cap (it then runs until the plan's limit).
+    max_brain_calls_per_hour: int = 30
+    claude_cli: str = "claude"  # Claude Code CLI used for BRAIN=subscription
+    claude_cli_timeout_sec: float = 300.0
+    usage_limit_pause_min: float = 30.0  # stand down this long when the plan limit hits and no reset time is given
     web_research: bool = True  # let Claude search the web/X for scam accusations (V13)
     web_search_max_uses: int = 3
     guide_mode: str = "full"  # full = whole guide in the prompt, cheatsheet = Part 1 only

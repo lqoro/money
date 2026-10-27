@@ -90,8 +90,12 @@ every 5    Claude studies its results ──► rewrites learned rules + retunes
 
 ```bash
 python3 -m venv .venv && .venv/bin/pip install -r requirements.txt
-cp .env.example .env          # put your ANTHROPIC_API_KEY in it
+npm install -g @anthropic-ai/claude-code   # the brain runs on your Claude plan through it
+claude setup-token            # once; put the token in .env as CLAUDE_CODE_OAUTH_TOKEN
+cp .env.example .env
 set -a; . ./.env; set +a
+
+.venv/bin/python -m agent brain                  # check the Claude brain answers
 
 .venv/bin/python -m agent run --once --dry-run   # one research pass, no trades
 .venv/bin/python -m agent run                    # the 24/7 loop
@@ -102,8 +106,9 @@ set -a; . ./.env; set +a
 .venv/bin/python -m agent reset                  # back to $100 (keeps lessons)
 ```
 
-Without `ANTHROPIC_API_KEY` it still runs, on a rules-only brain (checklist
-score decides). That's useful for testing, but the point is the Claude brain.
+Without the Claude Code CLI (or an `ANTHROPIC_API_KEY`) it still runs, on a
+rules-only brain (checklist score decides). That's useful for testing, but the
+point is the Claude brain.
 
 ### 24/7 hosting
 
@@ -159,14 +164,25 @@ Every number is in `agent/config.py`, with the guide video it comes from, and
 can be overridden by an env var with the same name in upper case (for example
 `CONVICTION_RISK_PCT=5:0.5,6:1,7:2,8:3,9:4,10:5`, `EFFORT=high`, `GUIDE_MODE=cheatsheet`).
 
-## What it costs to run
+## Running on your Claude plan
 
-Market data and the crawler are free (DexScreener, RugCheck, GeckoTerminal, Jupiter, CoinGecko, RSS). Claude is not. A decision
-reads ~52k tokens of soul + guide from the prompt cache plus the dossier, and
-may run a few web searches: about **$0.05–0.15 per decision** on Claude Opus
-5.5. It's capped at `MAX_BRAIN_CALLS_PER_HOUR=10` (≈ $1.50/hour at most) and
-only tokens that pass every hard line reach Claude. To spend less: lower the
-cap, set `WEB_RESEARCH=false`, `GUIDE_MODE=cheatsheet`, or `MODEL=claude-sonnet-5-5`.
+Market data and the crawler are free (DexScreener, RugCheck, GeckoTerminal,
+Jupiter, CoinGecko, RSS). The brain runs on your Claude Pro/Max plan through the
+Claude Code CLI (`claude -p`), so there's no per-call bill; what matters is the
+plan's usage window, which Trencher shares with your own Claude use.
+
+- **Pacing.** `MAX_BRAIN_CALLS_PER_HOUR` (default 30) spreads its calls out so it
+  doesn't burn your whole window in a busy hour. Set it to `0` for no cap.
+- **When the limit hits**, the brain stands down until the window resets (or 30
+  minutes if Claude doesn't say when) and passes on every coin meanwhile. It never
+  buys blind. Open positions are still managed by its rules.
+- **What it can do in a call:** web search only. No shell, no files, no fetching
+  arbitrary pages, so a malicious coin website has nothing to hijack.
+- Each decision reads ~52k tokens of soul + guide from the prompt cache. To make
+  each call lighter on your plan: `GUIDE_MODE=cheatsheet`, `WEB_RESEARCH=false`,
+  or `MODEL=claude-sonnet-5-5`.
+- **API instead:** `BRAIN=api` with `ANTHROPIC_API_KEY` uses the Anthropic API,
+  billed per token (about $0.05–0.15 per decision on Opus).
 
 ## Known limits
 

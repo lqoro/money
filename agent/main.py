@@ -380,6 +380,7 @@ def main(argv: list[str] | None = None) -> None:
     sub.add_parser("status", help="show the paper wallet")
     sub.add_parser("evolve", help="study closed trades now and evolve the strategy")
     sub.add_parser("meta", help="crawl the web now and show the meta radar")
+    sub.add_parser("brain", help="check that the Claude brain answers (one small call)")
     cr = sub.add_parser("crawl", help="crawl + checklist one token (no trade, no Claude)")
     cr.add_argument("address")
     rs = sub.add_parser("reset", help="wipe the wallet back to the starting cash (keeps lessons)")
@@ -403,6 +404,16 @@ def main(argv: list[str] | None = None) -> None:
     elif args.cmd == "crawl":
         result = Agent(cfg).inspect_token(args.address)
         print(json.dumps(result, indent=1, default=str) if result else "No Solana pair found for that address.")
+    elif args.cmd == "brain":
+        b = Brain(cfg)
+        if not b.use_claude:
+            print("Rules-only brain: no Claude Code CLI on PATH and no ANTHROPIC_API_KEY.")
+            sys.exit(1)
+        out = b._ask("Brain check. In one short sentence as Trencher, say you're online.",
+                     {"type": "object", "properties": {"summary": {"type": "string"}},
+                      "required": ["summary"], "additionalProperties": False}, "low", web=False)
+        print(f"{b.backend}: {out['summary']}" if out else f"{b.backend}: no answer, see the log above.")
+        sys.exit(0 if out else 1)
     elif args.cmd == "evolve":
         print(evolve(cfg, Brain(cfg)) or "Nothing to evolve yet (needs closed trades and the Claude brain).")
     elif args.cmd == "reset":

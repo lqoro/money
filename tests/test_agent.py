@@ -330,3 +330,92 @@ def test_api_serves_status_and_meta(cfg, monkeypatch):
         assert get("/token/abc")[0] == 404
     finally:
         server.shutdown()
+
+
+# --- Claude plan brain (Claude Code CLI) -------------------------------------
+
+FAKE_CLI = r'''#!/usr/bin/env python3
+import json, os, sys
+args = sys.argv[1:]
+prompt = sys.stdin.read()
+with open(os.environ["FAKE_CLI_LOG"], "a") as f:
+    f.write(json.dumps({"args": args, "prompt": prompt,
+                        "api_key_leaked": "ANTHROPIC_API_KEY" in os.environ}) + "\n")
+mode = os.environ.get("FAKE_CLI_MODE", "ok")
+if mode == "limit":
+    print(json.dumps({"type": "result", "is_error": True, "result": "Claude AI usage limit reached|4102444800"}))
+    sys.exit(1)
+if mode == "auth":
+    print(json.dumps({"type": "result", "is_error": True, "result": "Not logged in · Please run /login"}))
+    sys.exit(1)
+schema = json.loads(args[args.index("--json-schema") + 1])
+answer = {"summary": "Online."} if "summary" in schema["properties"] else {"lesson": "Size down."}
+print(json.dumps({"type": "result", "is_error": False, "result": json.dumps(answer), "structured_output": answer}))
+'''
+
+
+@pytest.fixture
+def plan_brain(cfg, tmp_path, monkeypatch):
+    import json as _json
+    cli = tmp_path / "fake-claude"
+    cli.write_text(FAKE_CLI)
+    cli.chmod(0o755)
+    log_path = tmp_path / "cli.log"
+    monkeypatch.setenv("BRAIN", "subscription")
+    monkeypatch.setenv("ANTHROPIC_API_KEY", "sk-should-not-be-used")
+    monkeypatch.setenv("FAKE_CLI_LOG", str(log_path))
+    cfg.claude_cli = str(cli)
+    b = Brain(cfg)
+    b.calls_log = lambda: [_json.loads(x) for x in log_path.read_text().splitlines()]
+    return b
+
+
+def test_auto_prefers_the_claude_plan_over_the_api(monkeypatch, tmp_path):
+    from agent.brain import resolve_backend
+    cli = tmp_path / "claude"
+    cli.write_text("#!/bin/sh\n")
+    cli.chmod(0o755)
+    monkeypatch.setenv("ANTHROPIC_API_KEY", "sk-x")
+    assert resolve_backend("auto", str(cli)) == "subscription"
+    assert resolve_backend("auto", str(tmp_path / "missing")) == "api"
+    monkeypatch.delenv("ANTHROPIC_API_KEY")
+    assert resolve_backend("auto", str(tmp_path / "missing")) is None
+    assert resolve_backend("api", str(cli)) == "api"
+    assert resolve_backend("rules", str(cli)) is None
+
+
+def test_plan_brain_calls_cli_with_schema_and_only_web_search(plan_brain):
+    out = plan_brain._ask("What's the meta?", {"type": "object", "properties": {"summary": {"type": "string"}},
+                                                "required": ["summary"]}, "low", web=True)
+    assert out == {"summary": "Online."}
+    call = plan_brain.calls_log()[-1]
+    args = call["args"]
+    assert args[:2] == ["-p", "--output-format"] and "--json-schema" in args
+    assert args[args.index("--tools") + 1] == "WebSearch"
+    assert "--system-prompt-file" in args and "What's the meta?" in call["prompt"]
+    # The API key is stripped so the CLI bills the plan, not the API.
+    assert call["api_key_leaked"] is False
+    plan_brain._ask("x", {"type": "object", "properties": {"summary": {"type": "string"}}}, "low", web=False)
+    args = plan_brain.calls_log()[-1]["args"]
+    assert args[args.index("--tools") + 1] == ""
+
+
+def test_plan_usage_limit_pauses_the_brain(plan_brain, monkeypatch):
+    monkeypatch.setenv("FAKE_CLI_MODE", "limit")
+    assert plan_brain._ask("x", {"type": "object", "properties": {"summary": {"type": "string"}}}, "low", False) is None
+    assert plan_brain.paused_until > time.time() and not plan_brain.has_budget()
+
+
+def test_plan_not_logged_in_fails_safe(plan_brain, monkeypatch):
+    monkeypatch.setenv("FAKE_CLI_MODE", "auth")
+    assert plan_brain._ask("x", {"type": "object", "properties": {"summary": {"type": "string"}}}, "low", False) is None
+    assert plan_brain.has_budget()  # not a usage limit: no pause
+    assert not plan_brain.use_claude  # falls back to the rules-only brain
+
+
+def test_zero_hourly_cap_means_unlimited(plan_brain):
+    plan_brain.cfg.max_brain_calls_per_hour = 0
+    plan_brain.calls.extend([time.time()] * 500)
+    assert plan_brain.has_budget()
+    plan_brain.cfg.max_brain_calls_per_hour = 30
+    assert not plan_brain.has_budget()

@@ -2,8 +2,11 @@
 prompt. It researches each candidate that survives the checklist, decides BUY or
 PASS with a written exit plan, and writes a lesson after every closed trade.
 
-Without an Anthropic credential the agent falls back to a rules-only brain so
-paper trading still runs.
+Two ways to reach Claude:
+  subscription  the Claude Code CLI (`claude -p`) logged in to a Claude Pro/Max
+                plan. No per-call bill; the limit is the plan's usage window.
+  api           the Anthropic API with ANTHROPIC_API_KEY, billed per token.
+With neither, the agent falls back to a rules-only brain so paper trading still runs.
 """
 
 from __future__ import annotations
@@ -12,6 +15,8 @@ import json
 import logging
 import os
 import re
+import shutil
+import subprocess
 import time
 from collections import deque
 
@@ -108,10 +113,44 @@ def evolve_schema() -> dict:
     }
 
 
+def _parse_json(text: str) -> dict | None:
+    try:
+        return json.loads(text)
+    except json.JSONDecodeError:
+        m = re.search(r"\{.*\}", text, re.S)
+        try:
+            return json.loads(m.group(0)) if m else None
+        except json.JSONDecodeError:
+            log.warning("Could not parse Claude's answer: %.200s", text)
+            return None
+
+
 def _cheatsheet(guide: str) -> str:
     start = guide.find("Part 1: Master Cheat Sheet", 1000)
     end = guide.find("Part 2: Glossary", start)
     return guide[start:end] if start != -1 and end != -1 else guide[:40_000]
+
+
+# Env vars that would make the Claude Code CLI bill the API instead of the plan.
+_API_ENV = ("ANTHROPIC_API_KEY", "ANTHROPIC_AUTH_TOKEN")
+_USAGE_LIMIT = re.compile(r"usage limit|hit your limit|limit reached|rate.?limit|overloaded", re.I)
+_NOT_LOGGED_IN = re.compile(r"not logged in|/login|invalid api key|authentication|unauthori[sz]ed|oauth token", re.I)
+
+
+def resolve_backend(mode: str, cli: str) -> str | None:
+    """BRAIN=auto|subscription|api|rules → which way the brain reaches Claude.
+    auto prefers the subscription (no per-call bill) whenever the CLI is installed."""
+    has_cli = shutil.which(cli) is not None
+    has_key = any(os.environ.get(k) for k in _API_ENV)
+    if mode in ("subscription", "max", "claude-code", "cli"):
+        return "subscription"
+    if mode == "api":
+        return "api"
+    if mode == "claude":  # older setting: any Claude
+        return "subscription" if has_cli else "api"
+    if mode == "auto":
+        return "subscription" if has_cli else "api" if has_key else None
+    return None
 
 
 class Brain:
@@ -119,42 +158,117 @@ class Brain:
         self.cfg = cfg
         self.calls: deque[float] = deque()
         self.web_ok = cfg.web_research
-        mode = os.environ.get("BRAIN", "auto").lower()
-        has_key = bool(os.environ.get("ANTHROPIC_API_KEY") or os.environ.get("ANTHROPIC_AUTH_TOKEN"))
-        self.use_claude = mode == "claude" or (mode == "auto" and has_key)
+        self.paused_until = 0.0  # set when the plan's usage limit is hit
+        self.backend = resolve_backend(os.environ.get("BRAIN", "auto").lower(), cfg.claude_cli)
+        self.use_claude = self.backend is not None
         self.client = None
         if self.use_claude:
+            guide = cfg.guide_path.read_text()
+            if cfg.guide_mode == "cheatsheet":
+                guide = _cheatsheet(guide)
+            system_text = (cfg.soul_path.read_text()
+                           + "\n\n=====================================================\n"
+                           + "# YOUR EDUCATION: Trenches Bootcamp study guide (full text)\n"
+                           + "=====================================================\n\n"
+                           + guide)
+        if self.backend == "api":
             import anthropic
 
             self.anthropic = anthropic
             self.client = anthropic.Anthropic(max_retries=3)
-            guide = cfg.guide_path.read_text()
-            if cfg.guide_mode == "cheatsheet":
-                guide = _cheatsheet(guide)
-            self.system = [{
-                "type": "text",
-                "text": cfg.soul_path.read_text()
-                + "\n\n=====================================================\n"
-                + "# YOUR EDUCATION: Trenches Bootcamp study guide (full text)\n"
-                + "=====================================================\n\n"
-                + guide,
-                # Soul + guide never change between calls: cache them for an hour.
-                "cache_control": {"type": "ephemeral", "ttl": "1h"},
-            }]
-        log.info("Brain mode: %s", f"Claude ({cfg.model})" if self.use_claude else "rules-only (no ANTHROPIC_API_KEY)")
+            # Soul + guide never change between calls: cache them for an hour.
+            self.system = [{"type": "text", "text": system_text, "cache_control": {"type": "ephemeral", "ttl": "1h"}}]
+        elif self.backend == "subscription":
+            # An empty working dir, so no project CLAUDE.md or settings leak into the brain.
+            self.workdir = cfg.memory_dir / ".brain"
+            self.workdir.mkdir(parents=True, exist_ok=True)
+            self.system_file = self.workdir / "system_prompt.md"
+            self.system_file.write_text(system_text)
+        log.info("Brain mode: %s", {
+            "subscription": f"Claude ({cfg.model}) via the Claude Code CLI on your Claude plan",
+            "api": f"Claude ({cfg.model}) via the Anthropic API",
+            None: "rules-only (no Claude Code CLI or ANTHROPIC_API_KEY)",
+        }[self.backend])
 
     # ------------------------------------------------------------ budget
     def has_budget(self) -> bool:
         if not self.use_claude:
             return True
         now = time.time()
+        if now < self.paused_until:
+            return False
         while self.calls and now - self.calls[0] > 3600:
             self.calls.popleft()
-        return len(self.calls) < self.cfg.max_brain_calls_per_hour
+        cap = self.cfg.max_brain_calls_per_hour
+        return cap <= 0 or len(self.calls) < cap
 
     # ------------------------------------------------------------ Claude call
     def _ask(self, prompt: str, schema: dict, effort: str, web: bool) -> dict | None:
         self.calls.append(time.time())
+        if self.backend == "subscription":
+            return self._ask_cli(prompt, schema, effort, web)
+        return self._ask_api(prompt, schema, effort, web)
+
+    def _ask_cli(self, prompt: str, schema: dict, effort: str, web: bool) -> dict | None:
+        """One headless Claude Code turn on the user's Claude plan. The only tool it
+        gets is WebSearch: no shell, no files, no fetching arbitrary pages."""
+        use_web = web and self.web_ok
+        cmd = [self.cfg.claude_cli, "-p", "--output-format", "json",
+               "--json-schema", json.dumps(schema),
+               "--system-prompt-file", str(self.system_file),
+               "--model", self.cfg.model, "--effort", effort,
+               "--tools", "WebSearch" if use_web else "",
+               "--setting-sources", "project", "--strict-mcp-config",
+               "--no-session-persistence"]
+        stdin = prompt
+        if use_web:
+            cmd += ["--allowedTools", "WebSearch"]
+            stdin += f"\n\nUse at most {self.cfg.web_search_max_uses} web searches."
+        env = {k: v for k, v in os.environ.items() if k not in _API_ENV}
+        try:
+            proc = subprocess.run(cmd, input=stdin, capture_output=True, text=True, cwd=self.workdir,
+                                  env=env, timeout=self.cfg.claude_cli_timeout_sec)
+        except FileNotFoundError:
+            log.error("Claude Code CLI '%s' not found; install it or set BRAIN=api/rules", self.cfg.claude_cli)
+            return None
+        except subprocess.TimeoutExpired:
+            log.warning("Claude took longer than %ss; skipping this decision", self.cfg.claude_cli_timeout_sec)
+            return None
+        try:
+            out = json.loads(proc.stdout.strip().splitlines()[-1])
+        except (IndexError, json.JSONDecodeError):
+            out = {"is_error": True, "result": (proc.stderr or proc.stdout or "")[-500:]}
+        if proc.returncode != 0 or out.get("is_error"):
+            detail = str(out.get("result") or proc.stderr or "")[-300:]
+            if out.get("api_error_status") == 429 or _USAGE_LIMIT.search(detail):
+                self._pause_for_usage_limit(detail)
+            elif out.get("api_error_status") == 401 or _NOT_LOGGED_IN.search(detail):
+                log.error("Claude Code isn't logged in to your Claude plan, so Trencher is switching to its "
+                          "rules-only brain. Run `claude setup-token`, put the token in CLAUDE_CODE_OAUTH_TOKEN "
+                          "(or run `claude` once and log in), then restart. %s", detail)
+                self.backend, self.use_claude = None, False
+            elif use_web and "WebSearch" in detail:
+                log.warning("Web search unavailable (%s); continuing without web research", detail)
+                self.web_ok = False
+                return self._ask_cli(prompt, schema, effort, web=False)
+            else:
+                log.warning("Claude call failed: %s", detail)
+            return None
+        if isinstance(out.get("structured_output"), dict):
+            return out["structured_output"]
+        return _parse_json(str(out.get("result") or ""))
+
+    def _pause_for_usage_limit(self, detail: str) -> None:
+        """The plan's usage window is used up. Stand down until it resets (the CLI
+        sometimes says when, as a unix time), and trade on PASS until then."""
+        m = re.search(r"\|(\d{10})\b", detail)
+        reset = int(m.group(1)) if m else 0
+        now = time.time()
+        self.paused_until = reset if now < reset < now + 8 * 3600 else now + 60 * self.cfg.usage_limit_pause_min
+        log.warning("Claude plan usage limit hit; brain paused until %s UTC (%s)",
+                    time.strftime("%H:%M", time.gmtime(self.paused_until)), detail.strip()[:120])
+
+    def _ask_api(self, prompt: str, schema: dict, effort: str, web: bool) -> dict | None:
         messages: list[dict] = [{"role": "user", "content": prompt}]
         tools = []
         if web and self.web_ok:
@@ -183,7 +297,7 @@ class Brain:
             if tools:
                 log.warning("Request with web search rejected (%s); continuing without web research", e.message)
                 self.web_ok = False
-                return self._ask(prompt, schema, effort, web=False)
+                return self._ask_api(prompt, schema, effort, web=False)
             log.error("Claude rejected the request: %s", e.message)
             return None
         except a.RateLimitError:
@@ -203,15 +317,7 @@ class Brain:
             log.warning("Claude hit max_tokens; ignoring partial answer")
             return None
         text = next((b.text for b in reversed(resp.content) if b.type == "text"), "")
-        try:
-            return json.loads(text)
-        except json.JSONDecodeError:
-            m = re.search(r"\{.*\}", text, re.S)
-            try:
-                return json.loads(m.group(0)) if m else None
-            except json.JSONDecodeError:
-                log.warning("Could not parse Claude's answer: %.200s", text)
-                return None
+        return _parse_json(text)
 
     # ------------------------------------------------------------ decisions
     def decide(self, snap: dict, check: Checklist, portfolio_view: dict, sizing_text: str,
