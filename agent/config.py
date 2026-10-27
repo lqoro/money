@@ -23,7 +23,7 @@ class Config:
     # stop is hit; the stop distance then sets the position size. "conviction:risk%".
     conviction_risk_pct: str = "1:0,2:0,3:0,4:0,5:1,6:1.5,7:2.5,8:4,9:6,10:8"
     max_position_pct: float = 25.0  # hard cap per position: a rug skips the stop (V8)
-    max_total_risk_pct: float = 15.0  # combined at-stop risk across all open positions
+    max_total_risk_pct: float = 25.0  # combined at-stop risk across all open positions (evolvable)
     min_position_usd: float = 2.0
     max_open_positions: int = 0  # 0 = no limit: a bot has more eyes; the risk budget is the limit
     daily_loss_limit_pct: float = 25.0  # stop opening trades for the day past this drawdown
@@ -88,6 +88,25 @@ class Config:
     lessons_in_prompt: int = 20
     reflect_every_n_trades: int = 5  # how often Claude reviews results and evolves the strategy
 
+    # --- Web crawler: meta radar + project crawler --------------------------
+    radar_interval_min: float = 10.0
+    meta_summary_interval_min: float = 60.0  # Claude summarizes "what's the meta right now"
+    news_feeds: str = (
+        "https://news.google.com/rss/search?q=memecoin&hl=en-US&gl=US&ceid=US:en,"
+        "https://news.google.com/rss/search?q=solana+meme+coin&hl=en-US&gl=US&ceid=US:en,"
+        "https://news.google.com/rss/search?q=pump.fun&hl=en-US&gl=US&ceid=US:en,"
+        "https://cointelegraph.com/rss,https://decrypt.co/feed,https://www.coindesk.com/arc/outboundfeeds/rss/"
+    )
+    telegram_channels: str = ""  # public channel usernames to read via t.me/s/<name>, comma-separated
+    reddit_subs: str = "memecoins,solana,CryptoMoonShots"
+    crawl_websites: bool = True
+    github_token: str = ""  # optional, raises GitHub's 60 req/h anonymous limit
+
+    # --- Read-only JSON API (for other bots, e.g. a chat agent) ---------------
+    api_port: int = 0  # 0 = off
+    api_host: str = "127.0.0.1"
+    api_token: str = ""  # if set, requests need "Authorization: Bearer <token>"
+
     # --- Notifications ------------------------------------------------------
     notify_webhook_url: str = ""  # Discord/Slack/any JSON webhook
     telegram_bot_token: str = ""
@@ -144,6 +163,7 @@ class Config:
 # checklist hard lines and the conviction→risk table are deliberately NOT here.
 EVOLVABLE: dict[str, tuple[float, float]] = {
     "stop_loss_pct": (15, 50),
+    "max_total_risk_pct": (10, 40),
     "trailing_stop_pct": (20, 55),
     "take_initials_multiple": (1.5, 4),
     "time_stop_minutes": (15, 240),

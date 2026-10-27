@@ -147,6 +147,7 @@ def test_size_caps(cfg):
     s = position_size(10, 10, pf, cfg)  # $8 risk / 16% ≈ $50 → capped at 25% of equity
     assert s.size_usd == pytest.approx(25.0) and "max position" in s.note
     # Open risk eats the total risk budget.
+    cfg.max_total_risk_pct = 15
     for _ in range(2):
         pf.buy(cfg, snap(), 20.0, SOL, "MIGRATED", {"stop_loss_pct": 30}, "")
     s = position_size(9, 30, pf, cfg)
@@ -266,3 +267,66 @@ def test_no_cap_on_number_of_positions(cfg):
     assert pf.can_open(cfg) == (True, "")
     cfg.max_open_positions = 8
     assert pf.can_open(cfg) == (False, "max open positions")
+
+
+# --- Web crawler ---------------------------------------------------------------
+
+def test_site_showing_another_ca_is_flagged(cfg):
+    web = {"websites": [{"host": "spx6900.com", "reachable": True, "shows_this_ca": False,
+                         "other_addresses": ["J3NKxxXZcnNiMjKw9hYb2K4LUxgwB6t1FtPtQVsv3KFr"], "tech_claims": []}],
+           "github": []}
+    c = run_checklist(snap(web=web), report(), [], cfg, SOL)
+    assert any("different contract address" in w for w in c.warns)
+
+
+def test_tech_claims_without_github_is_a_larp_warning(cfg):
+    web = {"websites": [{"host": "aiagent.xyz", "reachable": True, "shows_this_ca": True, "other_addresses": [],
+                         "tech_claims": ["ai", "agent"]}], "github": [{"repo": "x/y", "days_since_push": 200}]}
+    c = run_checklist(snap(web=web), report(), [], cfg, SOL)
+    assert any("LARP" in w for w in c.warns)
+    web["github"] = [{"repo": "x/y", "days_since_push": 2}]
+    c = run_checklist(snap(web=web), report(), [], cfg, SOL)
+    assert any("real recent work" in p for p in c.plusses)
+
+
+def test_crawler_refuses_private_addresses():
+    from agent.site import crawl_site, is_public_url
+    assert not is_public_url("http://127.0.0.1:8080/")
+    assert not is_public_url("http://169.254.169.254/latest/meta-data")
+    assert not is_public_url("file:///etc/passwd")
+    assert crawl_site("http://localhost/", "X")["skipped"]
+
+
+def test_token_buzz_and_radar_terms():
+    from agent import radar
+    rad = {"_texts": ["GTA trailer drops, $GTA memes everywhere", "gta trailer hype", "kimchi coin"],
+           "top_narratives": [{"term": "gta trailer", "score": 5}, {"term": "kimchi", "score": 3}],
+           "trending_coins": ["GTA"], "called_cas": {"TokenMint1111": {"count": 2, "sources": ["t.me/alpha"]}}}
+    b = radar.token_buzz(snap(symbol="GTA", name="GTA trailer"), rad)
+    assert b["ticker_mentions"] == 2 and b["on_coingecko_trending"]
+    assert "gta trailer" in b["fits_hot_narratives"]
+    assert b["ca_call_count"] == 2
+    assert "memecoin" not in radar._terms("Solana memecoin pump fun launch")
+
+
+def test_api_serves_status_and_meta(cfg, monkeypatch):
+    import json as _json
+    import urllib.request
+    from agent import api, radar
+    cfg.api_port, cfg.api_token = 18765, "secret"
+    radar.save_radar(cfg, {"updated_at": time.time(), "top_narratives": [{"term": "kimchi", "score": 3}]})
+    server = api.start_api(cfg, lambda: {"equity_usd": 100}, lambda a: None)
+    try:
+        def get(path, token="secret"):
+            req = urllib.request.Request(f"http://127.0.0.1:18765{path}", headers={"Authorization": f"Bearer {token}"})
+            try:
+                with urllib.request.urlopen(req) as r:
+                    return r.status, _json.loads(r.read())
+            except urllib.error.HTTPError as e:
+                return e.code, None
+        assert get("/status") == (200, {"equity_usd": 100})
+        assert get("/meta")[1]["top_narratives"] == ["kimchi"]
+        assert get("/status", token="wrong")[0] == 401
+        assert get("/token/abc")[0] == 404
+    finally:
+        server.shutdown()

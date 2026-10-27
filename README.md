@@ -57,13 +57,14 @@ every 5    Claude studies its results ──► rewrites learned rules + retunes
    | 10 | 8% | ~$22.90 |
 
    A tighter stop means a bigger position for the same risk. Caps: 25% of
-   equity in any one position (a rug skips the stop), 15% total at-stop risk
+   equity in any one position (a rug skips the stop), 25% total at-stop risk
    across open positions. Tune with `CONVICTION_RISK_PCT`, `MAX_POSITION_PCT`,
    `MAX_TOTAL_RISK_PCT`.
 6. **Paper fills** (`agent/portfolio.py`): 1% platform fee, 0.001 SOL priority
    fee, and constant-product price impact, so the results aren't fantasy numbers.
    No limit on how many positions it holds (it has more eyes than a human);
-   what limits it is the 15% total at-stop risk budget and cash. It stops
+   what limits it is the total at-stop risk budget (25%, which it can evolve
+   between 10% and 40%) and cash. It stops
    opening trades after a 25% day.
 7. **Exits** (`agent/risk.py`): sell initials at ~2x, then trail the rest; time
    stop if nothing happens in 45 min; rug detection on liquidity collapse; 12h
@@ -96,6 +97,8 @@ set -a; . ./.env; set +a
 .venv/bin/python -m agent run                    # the 24/7 loop
 .venv/bin/python -m agent status                 # wallet, positions, lessons, evolved strategy
 .venv/bin/python -m agent evolve                 # study results and evolve the strategy now
+.venv/bin/python -m agent meta                   # crawl the web now, show the meta radar
+.venv/bin/python -m agent crawl <address>        # crawl + checklist one token
 .venv/bin/python -m agent reset                  # back to $100 (keeps lessons)
 ```
 
@@ -119,6 +122,37 @@ Set `NOTIFY_WEBHOOK_URL` (Discord, Slack or any JSON webhook) and/or
 rule update pushed to you. This is also the hook for wiring Trencher into a
 chat bot.
 
+### Web crawler
+
+Two parts, both free and keyless (`agent/radar.py`, `agent/site.py`):
+
+- **Meta radar**, every 10 min: crypto news RSS (Google News queries for
+  memecoin / Solana meme coin / pump.fun, CoinTelegraph, Decrypt, CoinDesk),
+  CoinGecko trending coins and categories, DexScreener boost/profile/takeover
+  blurbs, Reddit (`REDDIT_SUBS`, where reachable) and public Telegram channels
+  you list in `TELEGRAM_CHANNELS` (read from `t.me/s/<channel>`, no bot needed).
+  It scores narratives with time decay, counts `$TICKER` mentions, and collects
+  contract addresses called in channels; those get scanned too. About hourly,
+  Claude writes a one-paragraph "what's the meta right now" summary. All of it
+  goes into every decision. `python -m agent meta` shows it.
+- **Project crawler**, per candidate that clears the hard lines: visits the
+  token's website(s) and linked GitHub. It flags a site that shows a **different
+  contract address** (vamp), a dead site, and **tech/AI claims with no GitHub
+  pushed in 30 days** (LARP, V1), and reports domain age from RDAP.
+  `python -m agent crawl <address>` runs it on any token.
+
+Safety: it never runs JavaScript or touches a wallet, respects robots.txt, caps
+downloads, refuses private/loopback/metadata addresses on every redirect hop,
+and passes website text to Claude as clearly marked untrusted data.
+
+### JSON API (for other bots)
+
+Set `API_PORT=8787` and Trencher serves read-only JSON so a chat agent or
+dashboard can ask what it's doing: `/status`, `/meta`, `/trades`, `/lessons`,
+and `/token/<address>` (crawl + checklist on any token, no Claude call). It binds
+to `127.0.0.1` by default; set `API_TOKEN` (sent as `Authorization: Bearer …`)
+before exposing it with `API_HOST=0.0.0.0`.
+
 ## Settings
 
 Every number is in `agent/config.py`, with the guide video it comes from, and
@@ -127,7 +161,7 @@ can be overridden by an env var with the same name in upper case (for example
 
 ## What it costs to run
 
-Market data is free (DexScreener, RugCheck, GeckoTerminal, Jupiter). Claude is not. A decision
+Market data and the crawler are free (DexScreener, RugCheck, GeckoTerminal, Jupiter, CoinGecko, RSS). Claude is not. A decision
 reads ~52k tokens of soul + guide from the prompt cache plus the dossier, and
 may run a few web searches: about **$0.05–0.15 per decision** on Claude Opus
 5.5. It's capped at `MAX_BRAIN_CALLS_PER_HOUR=10` (≈ $1.50/hour at most) and

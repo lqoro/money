@@ -170,6 +170,30 @@ def run_checklist(snap: dict, report: dict | None, same_name: list[dict], cfg: C
     if snap["has_paid_profile"]:
         c.plusses.append("DexScreener profile paid/updated (V13)")
 
+    # --- Web crawl: buzz and the project's own site ---
+    buzz = snap.get("buzz") or {}
+    if buzz.get("fits_hot_narratives"):
+        c.plusses.append(f"Fits what the web is talking about now: {', '.join(buzz['fits_hot_narratives'][:3])} (V1, V5)")
+    if buzz.get("on_coingecko_trending"):
+        c.plusses.append("Ticker is on CoinGecko trending")
+    if buzz.get("ca_call_count"):
+        c.warns.append(f"CA called in {len(buzz['ca_called_in'])} channel(s): attention, but callers farm exit liquidity (V7)")
+    web = snap.get("web") or {}
+    sites = [x for x in web.get("websites", []) if not x.get("skipped")]
+    for site in sites:
+        if site.get("reachable") is False:
+            c.warns.append(f"Project website {site['host']} is down")
+        elif site.get("other_addresses") and not site.get("shows_this_ca"):
+            c.warns.append(f"{site['host']} shows a different contract address: this may be a vamp (V1, V3)")
+        elif site.get("shows_this_ca"):
+            c.plusses.append(f"{site['host']} shows this exact contract address")
+    claims = {w for x in sites for w in x.get("tech_claims", [])}
+    live_repo = any((g.get("days_since_push") or 1e9) <= 30 for g in web.get("github", []))
+    if claims & {"ai", "agent", "agents", "protocol", "platform", "sdk", "api", "framework", "infrastructure"} and not live_repo:
+        c.warns.append("Tech/AI claims with no GitHub pushed in the last 30 days: probably a LARP (V1)")
+    elif live_repo:
+        c.plusses.append("Linked GitHub has real recent work (V1)")
+
     # --- Right token or vamp? ---
     bigger = [
         p for p in same_name

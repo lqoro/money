@@ -10,7 +10,8 @@ import signal
 import sys
 import time
 
-from . import data, journal
+from . import data, journal, radar
+from .api import start_api
 from .brain import Brain
 from .checklist import holder_stats, market_prefilter, run_checklist
 from .config import Config
@@ -18,6 +19,7 @@ from .evolve import evolve
 from .notify import notify
 from .portfolio import Portfolio, Position
 from .risk import check_exit, sanitize_exit_plan
+from .site import project_report
 from .sizing import open_risk_usd, position_size, sizing_guide
 
 log = logging.getLogger("trencher")
@@ -37,6 +39,23 @@ class Agent:
         watch = json.loads(watch_path.read_text()) if watch_path.exists() else {}
         self.peaks: dict[str, list[float]] = watch.get("peaks", {})
         self.watchlist: dict[str, dict] = watch.get("watchlist", {})
+        self.meta: dict = radar.load_radar(cfg)  # the web crawler's view of the meta
+
+    # ---------------------------------------------------------------- web crawler
+    def refresh_radar(self, force: bool = False) -> None:
+        cfg = self.cfg
+        if not force and time.time() - self.meta.get("updated_at", 0) < cfg.radar_interval_min * 60:
+            return
+        self.meta = radar.build_radar(cfg, previous=self.meta)
+        if (time.time() - self.meta.get("meta_summary_at", 0) >= cfg.meta_summary_interval_min * 60
+                and self.brain.use_claude):
+            summary = self.brain.summarize_meta(radar.public_view(self.meta))
+            if summary:
+                self.meta["meta_summary"], self.meta["meta_summary_at"] = summary, time.time()
+                log.info("Meta: %s", summary)
+        radar.save_radar(cfg, self.meta)
+        top = ", ".join(n["term"] for n in self.meta.get("top_narratives", [])[:8])
+        log.info("Radar: %s | hot: %s", self.meta.get("sources"), top or "(quiet)")
 
     def save_watch(self) -> None:
         now = time.time()
@@ -85,6 +104,9 @@ class Agent:
         sol = data.sol_price_usd()
         now = time.time()
         discovered = data.discover_solana_tokens()
+        # Contract addresses the crawler saw called on Telegram/Reddit in the last 2h.
+        discovered += [a for a, v in self.meta.get("called_cas", {}).items()
+                       if now - v.get("last_seen", 0) < 7200 and a not in discovered]
         watched = [t for t, w in self.watchlist.items() if w.get("until", 0) > now and t not in discovered]
         tokens = [t for t in discovered + watched
                   if self.cooldown.get(t, 0) < now and not self.pf.holds(t)]
@@ -108,10 +130,9 @@ class Agent:
                 break
             self.research(snap, sol)
 
-    def research(self, snap: dict, sol: float) -> None:
+    def build_dossier(self, snap: dict, sol: float, always_crawl: bool = False):
+        """Everything we can learn about a token without asking Claude."""
         cfg = self.cfg
-        addr = snap["address"]
-        self.cooldown[addr] = time.time() + cfg.reject_cooldown_min * 60
         # Price path: how far off the recent high is it? (dip vs. dud)
         hist = data.price_history(snap)
         if hist:
@@ -119,9 +140,35 @@ class Agent:
             peak = max(snap.get("peak_mcap_usd") or 0, hist["peak_mcap_24h"])
             snap["peak_mcap_usd"] = round(peak)
             snap["drawdown_pct"] = round(100 * (1 - snap["mcap_usd"] / peak), 1) if peak else 0.0
-        report = data.rugcheck_report(addr)
+        snap["buzz"] = radar.token_buzz(snap, self.meta)
+        report = data.rugcheck_report(snap["address"])
         same = data.search_same_name(snap["symbol"]) if snap["symbol"] else []
         check = run_checklist(snap, report, same, cfg, sol)
+        # Only crawl the project's site once it clears the hard lines (it's slow).
+        if check.passed or always_crawl:
+            snap["web"] = project_report(snap, cfg)
+            check = run_checklist(snap, report, same, cfg, sol)
+        return check
+
+    def inspect_token(self, address: str) -> dict | None:
+        """Full crawl + checklist on any token, for the CLI and the API. No Claude call."""
+        pair = data.get_pairs([address]).get(address)
+        if not pair:
+            return None
+        snap = data.pair_snapshot(pair)
+        self.track_peak(snap)
+        check = self.build_dossier(snap, data.sol_price_usd(), always_crawl=True)
+        return {"token": snap, "checklist": check.as_dict()}
+
+    def status(self) -> dict:
+        return {**self.portfolio_view(), "strategy": self.cfg.strategy_view(),
+                "watchlist": list(self.watchlist.values()), "meta": radar.public_view(self.meta, headlines=5)}
+
+    def research(self, snap: dict, sol: float) -> None:
+        cfg = self.cfg
+        addr = snap["address"]
+        self.cooldown[addr] = time.time() + cfg.reject_cooldown_min * 60
+        check = self.build_dossier(snap, sol)
         if not check.passed:
             log.info("  ✗ %-10s %s", snap["symbol"], check.fails[0] if check.fails else "no setup")
             journal.log_decision(cfg, {"token": addr, "symbol": snap["symbol"], "action": "REJECT",
@@ -133,7 +180,7 @@ class Agent:
             return
 
         decision = self.brain.decide(snap, check, self.portfolio_view(), sizing_guide(self.pf, cfg),
-                                     history=self.watchlist.get(addr))
+                                     history=self.watchlist.get(addr), radar_view=radar.public_view(self.meta))
         log.info("  ◆ %-10s %s", snap["symbol"], decision.get("verdict"))
         plan = sanitize_exit_plan(decision.get("exit_plan"), cfg)
         sizing = position_size(int(decision.get("conviction") or 0), plan["stop_loss_pct"], self.pf, cfg)
@@ -276,8 +323,10 @@ class Agent:
         log.info("Trencher online. Equity $%.2f, %d open position(s).", self.pf.equity(), len(self.pf.positions))
         notify(self.cfg, f"🪖 Trencher online. Paper equity ${self.pf.equity():.2f}.")
         last_scan = 0.0
+        start_api(self.cfg, self.status, self.inspect_token)
         while self.running:
             try:
+                self.refresh_radar()
                 self.monitor()
                 if time.time() - last_scan >= self.cfg.scan_interval_sec:
                     last_scan = time.time()
@@ -330,13 +379,16 @@ def main(argv: list[str] | None = None) -> None:
     r.add_argument("--dry-run", action="store_true", help="research and decide, but don't place paper trades")
     sub.add_parser("status", help="show the paper wallet")
     sub.add_parser("evolve", help="study closed trades now and evolve the strategy")
+    sub.add_parser("meta", help="crawl the web now and show the meta radar")
+    cr = sub.add_parser("crawl", help="crawl + checklist one token (no trade, no Claude)")
+    cr.add_argument("address")
     rs = sub.add_parser("reset", help="wipe the wallet back to the starting cash (keeps lessons)")
     rs.add_argument("--all", action="store_true", help="also wipe lessons, learned rules and logs")
     ap.add_argument("-v", "--verbose", action="store_true")
     args = ap.parse_args(argv)
 
     cfg = Config.from_env()
-    handlers = [logging.StreamHandler(sys.stdout), logging.FileHandler(cfg.memory_dir / "agent.log")]
+    handlers = [logging.StreamHandler(sys.stderr), logging.FileHandler(cfg.memory_dir / "agent.log")]
     logging.basicConfig(level=logging.DEBUG if args.verbose else logging.INFO,
                         format="%(asctime)s %(levelname).1s %(message)s", datefmt="%m-%d %H:%M:%S", handlers=handlers)
     for noisy in ("urllib3", "httpx", "httpcore", "anthropic"):
@@ -344,10 +396,17 @@ def main(argv: list[str] | None = None) -> None:
 
     if args.cmd == "status":
         print_status(cfg)
+    elif args.cmd == "meta":
+        agent = Agent(cfg)
+        agent.refresh_radar(force=True)
+        print(json.dumps(radar.public_view(agent.meta, headlines=15), indent=1))
+    elif args.cmd == "crawl":
+        result = Agent(cfg).inspect_token(args.address)
+        print(json.dumps(result, indent=1, default=str) if result else "No Solana pair found for that address.")
     elif args.cmd == "evolve":
         print(evolve(cfg, Brain(cfg)) or "Nothing to evolve yet (needs closed trades and the Claude brain).")
     elif args.cmd == "reset":
-        names = ["state.json", "watch.json"] + (["trades.jsonl", "decisions.jsonl", "lessons.md", "learned_rules.md",
+        names = ["state.json", "watch.json", "narratives.json"] + (["trades.jsonl", "decisions.jsonl", "lessons.md", "learned_rules.md",
                                                   "strategy.json", "strategy_log.md"] if args.all else [])
         for name in names:
             (cfg.memory_dir / name).unlink(missing_ok=True)
