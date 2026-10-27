@@ -82,8 +82,9 @@ class Config:
     model: str = "claude-opus-5-5"
     effort: str = "medium"  # low | medium | high | xhigh | max
     # Pacing, not a bill: on a Claude plan every call draws on the same usage window
-    # you use yourself. 0 = no hourly cap (it then runs until the plan's limit).
-    max_brain_calls_per_hour: int = 30
+    # you use yourself. 0 = no hourly cap (it runs until the plan's limit, then waits
+    # for the reset). Evolvable: Trencher sets its own pace from how its usage goes.
+    max_brain_calls_per_hour: int = 0
     claude_cli: str = "claude"  # Claude Code CLI used for BRAIN=subscription
     claude_cli_timeout_sec: float = 300.0
     usage_limit_pause_min: float = 30.0  # stand down this long when the plan limit hits and no reset time is given
@@ -154,7 +155,7 @@ class Config:
             return {}
         applied = {}
         for name, value in json.loads(path.read_text()).items():
-            if name in EVOLVABLE and name.upper() not in os.environ:
+            if name in EVOLVABLE and not os.environ.get(name.upper()):
                 lo, hi = EVOLVABLE[name]
                 setattr(self, name, min(hi, max(lo, float(value))))
                 applied[name] = getattr(self, name)
@@ -181,4 +182,5 @@ EVOLVABLE: dict[str, tuple[float, float]] = {
     "final_stretch_min_bond_pct": (30, 90),
     "migrated_max_age_hours": (2, 48),
     "reentry_window_hours": (0.5, 12),
+    "max_brain_calls_per_hour": (0, 300),  # 0 = no cap
 }

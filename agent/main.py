@@ -175,7 +175,8 @@ class Agent:
                                        "fails": check.fails, "warns": check.warns})
             return
         if not self.brain.has_budget():
-            log.info("  … %-10s passed checklist but brain budget for this hour is used up", snap["symbol"])
+            log.info("  … %-10s passed checklist but the brain is paced or paused right now", snap["symbol"])
+            self.brain.note("skipped")
             self.cooldown[addr] = time.time() + 5 * 60
             return
 

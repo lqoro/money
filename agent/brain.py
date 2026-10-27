@@ -190,6 +190,33 @@ class Brain:
             None: "rules-only (no Claude Code CLI or ANTHROPIC_API_KEY)",
         }[self.backend])
 
+    # ------------------------------------------------------------ usage
+    def note(self, event: str) -> None:
+        """Log a brain-usage event (call, limit_hit, skipped, rules_stop_review) so
+        evolution can see how the pace is working out."""
+        try:
+            with (self.cfg.memory_dir / "brain_usage.jsonl").open("a") as f:
+                f.write(json.dumps({"t": round(time.time()), "event": event}) + "\n")
+        except OSError:
+            pass
+
+    def usage_view(self, hours: float = 48) -> dict:
+        path = self.cfg.memory_dir / "brain_usage.jsonl"
+        since = time.time() - hours * 3600
+        counts: dict[str, int] = {}
+        if path.exists():
+            for line in path.read_text().splitlines():
+                try:
+                    e = json.loads(line)
+                except json.JSONDecodeError:
+                    continue
+                if e.get("t", 0) >= since:
+                    counts[e.get("event", "?")] = counts.get(e.get("event", "?"), 0) + 1
+        return {"hours": hours, "brain_calls": counts.get("call", 0),
+                "plan_limit_hits": counts.get("limit_hit", 0),
+                "candidates_skipped_no_brain": counts.get("skipped", 0),
+                "stop_reviews_without_brain": counts.get("rules_stop_review", 0)}
+
     # ------------------------------------------------------------ budget
     def has_budget(self) -> bool:
         if not self.use_claude:
@@ -205,6 +232,7 @@ class Brain:
     # ------------------------------------------------------------ Claude call
     def _ask(self, prompt: str, schema: dict, effort: str, web: bool) -> dict | None:
         self.calls.append(time.time())
+        self.note("call")
         if self.backend == "subscription":
             return self._ask_cli(prompt, schema, effort, web)
         return self._ask_api(prompt, schema, effort, web)
@@ -265,6 +293,7 @@ class Brain:
         reset = int(m.group(1)) if m else 0
         now = time.time()
         self.paused_until = reset if now < reset < now + 8 * 3600 else now + 60 * self.cfg.usage_limit_pause_min
+        self.note("limit_hit")
         log.warning("Claude plan usage limit hit; brain paused until %s UTC (%s)",
                     time.strftime("%H:%M", time.gmtime(self.paused_until)), detail.strip()[:120])
 
@@ -454,6 +483,8 @@ Cite the guide (V-numbers) when the lesson confirms or contradicts it. Max 3 sen
         """The stop just hit. Shakeout or dead coin? Hold (to the hard floor, with a
         deadline), trim, or sell."""
         if not self.use_claude or not self.has_budget():
+            if self.use_claude:
+                self.note("rules_stop_review")
             return self._rules_review(pos_view, snap, holders_now)
         prompt = f"""Your stop just hit on an open position. Before selling, decide WHY it hit.
 
@@ -520,6 +551,13 @@ Current learned rules:
 
 Current strategy parameters: {json.dumps(self.cfg.strategy_view())}
 Allowed bounds: {json.dumps(bounds)}
+
+Your brain usage (you run on your owner's Claude plan; it shares one usage window with
+their own Claude use): {json.dumps(self.usage_view())}
+max_brain_calls_per_hour is your own pace (0 = no cap). No cap is the default. Set one when
+plan-limit hits are leaving you blind (stop reviews without the brain, good candidates
+skipped) or eating your owner's window; raise or remove it when the cap itself is what
+skips candidates. Spend calls where they change outcomes.
 
 1. Rewrite your learned rules: at most 15 short, concrete bullets that change how you trade.
 2. Retune parameters where your results clearly justify it. Examples: stops that keep getting

@@ -419,3 +419,19 @@ def test_zero_hourly_cap_means_unlimited(plan_brain):
     assert plan_brain.has_budget()
     plan_brain.cfg.max_brain_calls_per_hour = 30
     assert not plan_brain.has_budget()
+
+
+def test_call_pace_is_evolvable_and_usage_is_logged(plan_brain, monkeypatch):
+    from agent.config import EVOLVABLE
+    assert EVOLVABLE["max_brain_calls_per_hour"][0] == 0
+    plan_brain._ask("x", {"type": "object", "properties": {"summary": {"type": "string"}}}, "low", False)
+    monkeypatch.setenv("FAKE_CLI_MODE", "limit")
+    plan_brain._ask("x", {"type": "object", "properties": {"summary": {"type": "string"}}}, "low", False)
+    plan_brain.note("skipped")
+    u = plan_brain.usage_view()
+    assert u["brain_calls"] == 2 and u["plan_limit_hits"] == 1 and u["candidates_skipped_no_brain"] == 1
+
+
+def test_default_has_no_call_cap():
+    from agent.config import Config
+    assert Config().max_brain_calls_per_hour == 0

@@ -81,7 +81,7 @@ every 5    Claude studies its results ──► rewrites learned rules + retunes
    `memory/lessons.md`. Every 5 trades (or `python -m agent evolve`) it studies
    its stats by setup, rewrites `memory/learned_rules.md`, and **retunes its own
    strategy parameters** (stop size, dip range, time stops, initials multiple,
-   volume bars…) within hard bounds. Changes go to `memory/strategy.json` and are
+   volume bars, its own Claude call pace…) within hard bounds. Changes go to `memory/strategy.json` and are
    logged with reasons in `memory/strategy_log.md`. The checklist hard lines and
    your conviction→risk table can't be evolved, and anything you set in `.env`
    overrides what it learned.
@@ -171,8 +171,10 @@ Jupiter, CoinGecko, RSS). The brain runs on your Claude Pro/Max plan through the
 Claude Code CLI (`claude -p`), so there's no per-call bill; what matters is the
 plan's usage window, which Trencher shares with your own Claude use.
 
-- **Pacing.** `MAX_BRAIN_CALLS_PER_HOUR` (default 30) spreads its calls out so it
-  doesn't burn your whole window in a busy hour. Set it to `0` for no cap.
+- **Pacing.** No hourly cap by default. Trencher logs its brain usage
+  (`memory/brain_usage.jsonl`: calls, plan-limit hits, coins skipped, stop
+  reviews done without the brain) and sets its own `MAX_BRAIN_CALLS_PER_HOUR`
+  when it evolves, between 0 (no cap) and 300. Set it in `.env` to pin it.
 - **When the limit hits**, the brain stands down until the window resets (or 30
   minutes if Claude doesn't say when) and passes on every coin meanwhile. It never
   buys blind. Open positions are still managed by its rules.
