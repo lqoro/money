@@ -86,7 +86,7 @@ class Portfolio:
         eq = self.equity()
         if eq < cfg.broke_equity_usd:
             return False, f"equity ${eq:.2f} below ${cfg.broke_equity_usd} — Trencher is broke"
-        if len(self.positions) >= cfg.max_open_positions:
+        if cfg.max_open_positions and len(self.positions) >= cfg.max_open_positions:
             return False, "max open positions"
         if self.day_start_equity and eq < self.day_start_equity * (1 - cfg.daily_loss_limit_pct / 100):
             return False, f"daily loss limit hit ({cfg.daily_loss_limit_pct}%)"

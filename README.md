@@ -62,7 +62,9 @@ every 5    Claude studies its results ──► rewrites learned rules + retunes
    `MAX_TOTAL_RISK_PCT`.
 6. **Paper fills** (`agent/portfolio.py`): 1% platform fee, 0.001 SOL priority
    fee, and constant-product price impact, so the results aren't fantasy numbers.
-   Max 4 open positions; stops opening trades after a 25% day.
+   No limit on how many positions it holds (it has more eyes than a human);
+   what limits it is the 15% total at-stop risk budget and cash. It stops
+   opening trades after a 25% day.
 7. **Exits** (`agent/risk.py`): sell initials at ~2x, then trail the rest; time
    stop if nothing happens in 45 min; rug detection on liquidity collapse; 12h
    max hold. **A stop is a decision point**: when the −30% stop hits, Claude

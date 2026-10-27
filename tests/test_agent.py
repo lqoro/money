@@ -257,3 +257,12 @@ def test_evolve_applies_bounded_changes(cfg, monkeypatch):
     cfg.stop_loss_pct = 25
     cfg.apply_strategy()
     assert cfg.stop_loss_pct == 25  # an explicit env setting beats the learned one
+
+
+def test_no_cap_on_number_of_positions(cfg):
+    pf = Portfolio(cash_usd=100.0)
+    for _ in range(8):
+        pf.buy(cfg, snap(), 2.5, SOL, "MIGRATED", {"stop_loss_pct": 30}, "")
+    assert pf.can_open(cfg) == (True, "")
+    cfg.max_open_positions = 8
+    assert pf.can_open(cfg) == (False, "max open positions")

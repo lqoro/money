@@ -25,7 +25,7 @@ class Config:
     max_position_pct: float = 25.0  # hard cap per position: a rug skips the stop (V8)
     max_total_risk_pct: float = 15.0  # combined at-stop risk across all open positions
     min_position_usd: float = 2.0
-    max_open_positions: int = 4
+    max_open_positions: int = 0  # 0 = no limit: a bot has more eyes; the risk budget is the limit
     daily_loss_limit_pct: float = 25.0  # stop opening trades for the day past this drawdown
     broke_equity_usd: float = 5.0  # below this the agent stops trading entirely
 
