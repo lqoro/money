@@ -7,6 +7,7 @@ from agent.checklist import holder_stats, run_checklist
 from agent.config import Config
 from agent.portfolio import Portfolio
 from agent.risk import check_exit, sanitize_exit_plan
+from agent.sizing import open_risk_usd, position_size
 
 SOL = 100.0
 
@@ -119,11 +120,38 @@ def test_exit_plan_is_clamped(cfg):
     assert p["target_mcap_usd"] is None
 
 
-def test_rules_brain_respects_max_size(cfg):
+def test_rules_brain_gives_conviction(cfg):
     b = Brain(cfg)
     c = run_checklist(snap(), report(), [], cfg, SOL)
-    d = b.decide(snap(), c, {}, max_size=7.0)
-    assert d["action"] == "BUY" and d["size_usd"] <= 7.0
+    d = b.decide(snap(), c, {}, "")
+    assert d["action"] == "BUY" and 5 <= d["conviction"] <= 8
+
+
+def test_size_scales_with_conviction(cfg):
+    pf = Portfolio(cash_usd=100.0)
+    sizes = [position_size(c, 30, pf, cfg).size_usd for c in range(1, 11)]
+    assert sizes[:4] == [0, 0, 0, 0]  # below 5/10: pass
+    assert all(a < b for a, b in zip(sizes[4:], sizes[5:]))  # strictly more conviction, more size
+    # Getting stopped out loses about the risk budget: 2.5% of $100 at conviction 7.
+    s7 = position_size(7, 30, pf, cfg)
+    assert s7.risk_usd == pytest.approx(2.5, abs=0.02)
+
+
+def test_tighter_stop_means_bigger_size(cfg):
+    pf = Portfolio(cash_usd=100.0)
+    assert position_size(7, 15, pf, cfg).size_usd > position_size(7, 40, pf, cfg).size_usd
+
+
+def test_size_caps(cfg):
+    pf = Portfolio(cash_usd=100.0)
+    s = position_size(10, 10, pf, cfg)  # $8 risk / 16% ≈ $50 → capped at 25% of equity
+    assert s.size_usd == pytest.approx(25.0) and "max position" in s.note
+    # Open risk eats the total risk budget.
+    for _ in range(2):
+        pf.buy(cfg, snap(), 20.0, SOL, "MIGRATED", {"stop_loss_pct": 30}, "")
+    s = position_size(9, 30, pf, cfg)
+    assert "total risk budget" in s.note
+    assert open_risk_usd(pf, cfg) + s.risk_usd <= pf.equity() * cfg.max_total_risk_pct / 100 + 0.05
 
 
 def test_state_round_trip(cfg):

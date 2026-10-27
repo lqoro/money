@@ -18,8 +18,12 @@ ROOT = Path(__file__).resolve().parent.parent
 class Config:
     # --- Wallet ------------------------------------------------------------
     starting_cash_usd: float = 100.0
-    max_position_pct: float = 10.0  # % of equity per trade ("size for survival", V8)
-    min_position_usd: float = 3.0
+    # Sizing: conviction (1-10) sets how much of equity you're willing to LOSE if the
+    # stop is hit; the stop distance then sets the position size. "conviction:risk%".
+    conviction_risk_pct: str = "1:0,2:0,3:0,4:0,5:1,6:1.5,7:2.5,8:4,9:6,10:8"
+    max_position_pct: float = 25.0  # hard cap per position: a rug skips the stop (V8)
+    max_total_risk_pct: float = 15.0  # combined at-stop risk across all open positions
+    min_position_usd: float = 2.0
     max_open_positions: int = 4
     daily_loss_limit_pct: float = 25.0  # stop opening trades for the day past this drawdown
     broke_equity_usd: float = 5.0  # below this the agent stops trading entirely

@@ -40,8 +40,8 @@ DECISION_SCHEMA = {
     "properties": {
         "action": {"type": "string", "enum": ["BUY", "PASS"]},
         "verdict": {"type": "string", "description": "One line in Trencher's voice, e.g. 'PASS — top 10 hold 31%. Farm. (V6)'"},
-        "conviction": {"type": "integer", "description": "1-10"},
-        "size_usd": {"type": "number", "description": "USD to spend; 0 when passing. Must be <= max_size_usd."},
+        "conviction": {"type": "integer", "description": "1-10 from your due diligence; this sets the position size"},
+        "conviction_reason": {"type": "string", "description": "Why this conviction level and not one higher or lower"},
         "setup": {"type": "string"},
         "meta": {"type": "string", "description": "The narrative/meta this token rides, or 'none'"},
         "thesis": {"type": "string", "description": "Why this trade, in 2-4 sentences, citing V-numbers"},
@@ -49,7 +49,7 @@ DECISION_SCHEMA = {
         "unverified": {"type": "array", "items": {"type": "string"}, "description": "Checklist items you could not verify"},
         "exit_plan": EXIT_PLAN_SCHEMA,
     },
-    "required": ["action", "verdict", "conviction", "size_usd", "setup", "meta", "thesis", "red_flags", "unverified", "exit_plan"],
+    "required": ["action", "verdict", "conviction", "conviction_reason", "setup", "meta", "thesis", "red_flags", "unverified", "exit_plan"],
     "additionalProperties": False,
 }
 
@@ -174,9 +174,9 @@ class Brain:
                 return None
 
     # ------------------------------------------------------------ decisions
-    def decide(self, snap: dict, check: Checklist, portfolio_view: dict, max_size: float) -> dict:
+    def decide(self, snap: dict, check: Checklist, portfolio_view: dict, sizing_text: str) -> dict:
         if not self.use_claude:
-            return self._rules_decide(snap, check, max_size)
+            return self._rules_decide(snap, check)
 
         rules = journal.learned_rules(self.cfg) or "(none yet: you haven't closed enough trades)"
         lessons = "\n".join(journal.recent_lessons(self.cfg, self.cfg.lessons_in_prompt)) or "(none yet)"
@@ -196,7 +196,20 @@ class Brain:
 
 ## Your paper wallet
 {json.dumps(portfolio_view, indent=1)}
-Max size for this trade: ${max_size:.2f} (hard cap; the code will clamp anything above it).
+
+## How your conviction becomes a position size
+Only risk what you're willing to lose (V8). Your conviction sets how much of the wallet
+you'd lose if the stop is hit; your stop distance then sets the size. Right now:
+{sizing_text}
+A tighter stop means a bigger position for the same risk, so put the stop where the
+thesis is actually wrong, never just to size up. A rug skips the stop, so a single
+position is also capped at {self.cfg.max_position_pct:g}% of equity.
+
+Conviction scale:
+  1-4  not enough edge → PASS (risks nothing)
+  5-6  clears the hard lines, but key items are unverified, the idea is so-so, or the meta is crowded
+  7-8  clean holders, organic $10k+ 5m flow, an original idea on a live meta, community checks out
+  9-10 everything lines up (V6) and you can name why it runs from here; rare
 
 ## Candidate dossier
 Market data (DexScreener):
@@ -210,24 +223,25 @@ global fees paid, pro-trader ratio, X admin identity. Treat them as unverified r
 
 ## Task
 {web_note}
-Then decide BUY or PASS as Trencher. Passing is a position (V6). If BUY, size it for
-survival and write the exit plan before the entry (V1, V11)."""
+Then decide BUY or PASS as Trencher. Passing is a position (V6). If BUY, rate your
+conviction honestly (it sets the size) and write the exit plan before the entry (V1, V11)."""
         out = self._ask(prompt, DECISION_SCHEMA, self.cfg.effort, web=True)
         if out is None:
-            return {"action": "PASS", "verdict": "PASS — brain unavailable, not trading blind.", "size_usd": 0,
+            return {"action": "PASS", "verdict": "PASS — brain unavailable, not trading blind.",
                     "exit_plan": default_exit_plan(self.cfg), "thesis": "", "red_flags": [], "conviction": 0}
         return out
 
-    def _rules_decide(self, snap: dict, check: Checklist, max_size: float) -> dict:
+    def _rules_decide(self, snap: dict, check: Checklist) -> dict:
         score = check.score
         buy = check.passed and score >= 68 and snap["vol_5m"] >= self.cfg.good_vol_5m_usd * 0.5
-        size = max_size * (0.6 if score < 80 else 1.0) if buy else 0
+        # Map the checklist score to conviction; rules alone never reach 9-10.
+        conviction = min(8, max(1, round((score - 20) / 8))) if buy else min(4, round(score / 20))
         return {
             "action": "BUY" if buy else "PASS",
-            "verdict": (f"BUY ${size:.2f} — {check.setup}, checklist score {score}" if buy
+            "verdict": (f"BUY — {check.setup}, checklist score {score}, conviction {conviction}/10" if buy
                         else f"PASS — checklist score {score} with {len(check.warns)} warning(s)"),
-            "conviction": round(score / 10),
-            "size_usd": round(size, 2),
+            "conviction": conviction,
+            "conviction_reason": f"rules-only: checklist score {score}",
             "setup": check.setup,
             "meta": "unknown (rules-only mode)",
             "thesis": "; ".join(check.plusses) or "rules-only",

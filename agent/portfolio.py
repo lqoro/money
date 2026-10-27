@@ -92,9 +92,6 @@ class Portfolio:
             return False, "not enough cash"
         return True, ""
 
-    def max_size(self, cfg: Config) -> float:
-        return max(0.0, min(self.cash_usd - 0.25, self.equity() * cfg.max_position_pct / 100))
-
     # ---------------------------------------------------------------- fills
     @staticmethod
     def _slippage(cfg: Config, size_usd: float, liquidity_usd: float) -> float:

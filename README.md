@@ -33,16 +33,34 @@ on close   Claude writes a lesson ──► every 10 trades: rewrites its learne
 4. **Brain** (`agent/brain.py`): Claude gets `SOUL.md` + the full guide (cached),
    its learned rules and recent lessons, the wallet, and the token dossier. It
    can search the web for scam accusations, the project's X and the current meta
-   (V13), then answers BUY or PASS with a size, thesis and exit plan as JSON.
-5. **Paper fills** (`agent/portfolio.py`): 1% platform fee, 0.001 SOL priority
+   (V13), then answers BUY or PASS with a conviction score, thesis and exit plan as JSON.
+5. **Sizing** (`agent/sizing.py`): no fixed bet size. Only risk what you're
+   willing to lose (V8): Claude's conviction (1–10, from its due diligence) sets
+   how much of equity it's willing to lose if the stop hits, and the stop
+   distance sets the size:
+
+   | Conviction | Risk if stopped | Position at a 30% stop, $100 wallet |
+   |---|---|---|
+   | 1–4 | 0% (pass) | — |
+   | 5 | 1% | ~$2.90 |
+   | 6 | 1.5% | ~$4.30 |
+   | 7 | 2.5% | ~$7.10 |
+   | 8 | 4% | ~$11.40 |
+   | 9 | 6% | ~$17.10 |
+   | 10 | 8% | ~$22.90 |
+
+   A tighter stop means a bigger position for the same risk. Caps: 25% of
+   equity in any one position (a rug skips the stop), 15% total at-stop risk
+   across open positions. Tune with `CONVICTION_RISK_PCT`, `MAX_POSITION_PCT`,
+   `MAX_TOTAL_RISK_PCT`.
+6. **Paper fills** (`agent/portfolio.py`): 1% platform fee, 0.001 SOL priority
    fee, and constant-product price impact, so the results aren't fantasy numbers.
-   Max 10% of equity per trade, 4 open positions, stops opening trades after a
-   25% day.
-6. **Exits** (`agent/risk.py`): sell initials at ~2x, then trail the rest; −30%
+   Max 4 open positions; stops opening trades after a 25% day.
+7. **Exits** (`agent/risk.py`): sell initials at ~2x, then trail the rest; −30%
    stop; time stop if nothing happens in 45 min; rug detection on liquidity
    collapse; 12h max hold. Claude can tune these per trade within clamps, but it
    can't remove the stop.
-7. **Learning**: after every closed trade Claude writes a lesson to
+8. **Learning**: after every closed trade Claude writes a lesson to
    `memory/lessons.md`. Every 10 trades it studies its stats by setup and
    rewrites `memory/learned_rules.md`. Both go into every future decision.
 
@@ -83,7 +101,7 @@ chat bot.
 
 Every number is in `agent/config.py`, with the guide video it comes from, and
 can be overridden by an env var with the same name in upper case (for example
-`MAX_POSITION_PCT=5`, `EFFORT=high`, `GUIDE_MODE=cheatsheet`).
+`CONVICTION_RISK_PCT=5:0.5,6:1,7:2,8:3,9:4,10:5`, `EFFORT=high`, `GUIDE_MODE=cheatsheet`).
 
 ## What it costs to run
 

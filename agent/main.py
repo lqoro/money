@@ -16,6 +16,7 @@ from .config import Config
 from .notify import notify
 from .portfolio import Portfolio, Position
 from .risk import check_exit, sanitize_exit_plan
+from .sizing import position_size, sizing_guide
 
 log = logging.getLogger("trencher")
 
@@ -95,27 +96,31 @@ class Agent:
             self.cooldown[addr] = time.time() + 5 * 60
             return
 
-        max_size = self.pf.max_size(cfg)
-        decision = self.brain.decide(snap, check, self.portfolio_view(), max_size)
+        decision = self.brain.decide(snap, check, self.portfolio_view(), sizing_guide(self.pf, cfg))
         log.info("  ◆ %-10s %s", snap["symbol"], decision.get("verdict"))
+        plan = sanitize_exit_plan(decision.get("exit_plan"), cfg)
+        sizing = position_size(int(decision.get("conviction") or 0), plan["stop_loss_pct"], self.pf, cfg)
         journal.log_decision(cfg, {"token": addr, "symbol": snap["symbol"], "snapshot": snap,
-                                   "checklist": check.as_dict(), "decision": decision})
+                                   "checklist": check.as_dict(), "decision": decision,
+                                   "sizing": sizing.__dict__})
         if decision.get("action") != "BUY":
             return
-        size = min(float(decision.get("size_usd") or 0), max_size)
+        size = sizing.size_usd
+        log.info("    sizing: %s → $%.2f (loses ~$%.2f at the stop)", sizing.note, size, sizing.risk_usd)
         if size < cfg.min_position_usd:
             log.info("    size $%.2f below minimum, skipping", size)
             return
         if self.dry_run:
             log.info("    [dry run] would buy $%.2f", size)
             return
-        plan = sanitize_exit_plan(decision.get("exit_plan"), cfg)
         pos = self.pf.buy(cfg, snap, size, sol, check.setup, plan, decision.get("thesis", ""))
         self.pf.save(cfg)
         journal.log_trade(cfg, {"event": "BUY", "id": pos.id, "token": addr, "symbol": pos.symbol,
-                                "setup": pos.setup, "size_usd": size, "price": pos.entry_price,
+                                "setup": pos.setup, "size_usd": size, "conviction": decision.get("conviction"),
+                                "risk_usd": sizing.risk_usd, "price": pos.entry_price,
                                 "mcap": snap["mcap_usd"], "exit_plan": plan, "thesis": pos.thesis})
-        notify(cfg, f"🟢 BUY ${size:.2f} {pos.symbol} ({pos.setup}) @ ${snap['mcap_usd']:,.0f} mcap\n"
+        notify(cfg, f"🟢 BUY ${size:.2f} {pos.symbol} ({pos.setup}, conviction {decision.get('conviction')}/10, "
+                    f"risking ${sizing.risk_usd:.2f}) @ ${snap['mcap_usd']:,.0f} mcap\n"
                     f"{decision.get('verdict')}\n{snap['url']}")
 
     # ---------------------------------------------------------------- monitor
