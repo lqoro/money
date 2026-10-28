@@ -1,12 +1,12 @@
 {
- "updated_at": "2026-10-28T18:40:15Z",
+ "updated_at": "2026-10-28T18:55:33Z",
  "paused_new_trades": false,
  "brain": {
   "mode": "subscription",
   "paused_until": null,
   "usage_48h": {
    "hours": 48,
-   "brain_calls": 111,
+   "brain_calls": 113,
    "plan_limit_hits": 0,
    "candidates_skipped_no_brain": 0,
    "stop_reviews_without_brain": 0
@@ -128,7 +128,7 @@
  ],
  "learned_rules": "",
  "meta": {
-  "age_minutes": 7,
+  "age_minutes": 2,
   "meta_summary": "It's quiet. There's no live trench meta. The loudest Solana story is Hunter Biden's $LAPTOP, which crashed about 98% on day one. A political figure pushed that CA, so it's a hard no, along with every vamp, revival or TRUMP-holder spinoff of it (V13). That story is fading, and the STONKINU bundling news is a warning, not a setup (V3, V13). What's rising is bucket-2 money, not trench flow: tokenized stocks and Robinhood, stablecoin/RWA headlines, PENGU and PEPE trending, BTC above $81k ahead of the Fed (V8). $MT and $SI at 2 mentions each are noise. The one meta I can see coming is Halloween in 3 days, and holiday metas get front-run early (V5), so $PUMPKIN and $HELL are on watch, but $HELL has a single mention and $PUMPKIN barely showed up, so nothing there yet. A coin worth riding would be an original, funny Halloween or tokenized-stonk joke, not a knockoff (V1). It would also need to be bonded, doing $10k+ in 5-minute volume and have clean holders (V1, V6). Until that shows up: PASS.",
   "top_narratives": [
    "tokenized",
@@ -137,58 +137,62 @@
    "stock",
    "rally",
    "referral",
-   "stablecoin",
    "trump",
+   "stablecoin",
    "code",
    "fees",
    "pepe",
    "bot",
-   "jumps",
    "adds",
-   "hunter",
+   "jumps",
    "machine",
    "times",
    "slowing",
    "machine slowing",
-   "referral code"
+   "dogecoin",
+   "hunter"
   ],
   "trending_categories": [
-   "Quantum-Resistant",
    "Binance Launchpool",
-   "Oracle",
    "Stablecoin Issuer",
-   "Privacy Infrastructure",
-   "Chain Abstraction"
+   "Automated Market Maker (AMM)",
+   "YZi Labs (Prev. Binance Labs) Portfolio",
+   "Launchpad",
+   "Artificial Intelligence (AI)"
   ],
   "trending_coins": [
    "QTC",
-   "SOL",
    "BTC",
-   "PEARL",
-   "STONK",
    "KNTQ",
+   "PEARL",
+   "PENGU",
    "AERO",
+   "SOL",
+   "SUI",
    "ENA",
-   "QNT",
-   "INIT",
-   "LINK",
    "AXIS",
+   "STONK",
+   "DRV",
+   "QNT",
    "CC",
-   "CHIP",
-   "NEAR"
+   "INIT"
   ],
   "hot_tickers": [
    {
-    "ticker": "$LAPTOP",
-    "mentions": 2
-   },
-   {
     "ticker": "$MT",
-    "mentions": 2
+    "mentions": 3
    },
    {
     "ticker": "$SI",
     "mentions": 2
+   },
+   {
+    "ticker": "$LAPTOP",
+    "mentions": 1
+   },
+   {
+    "ticker": "$LICK",
+    "mentions": 1
    },
    {
     "ticker": "$CREDO",
@@ -219,20 +223,16 @@
     "mentions": 1
    },
    {
-    "ticker": "$GROKCAT",
-    "mentions": 1
-   },
-   {
-    "ticker": "$AI",
+    "ticker": "$ACT",
     "mentions": 1
    }
   ],
   "headlines": [
-   "Faster Solana slots fail to stop memecoin bot snipers",
+   "Bitcoin tops $81,000 ahead of Fed decision as memecoins lead altcoin gains",
+   "Crypto Weekly: Cash floods US midterms, Milei cleared in meme coin scandal",
    "Top 6 memecoins to check out in October 2026",
-   "Former Doom Developer Could Be in Trouble as Bethesda Goes After Doom Memecoin",
-   "Visa to close Crossmint memecoin rewards loophole following The Block investigation: report",
-   "Hunter Biden lashes out after $LAPTOP meme coin collapse"
+   "Faster Solana slots fail to stop memecoin bot snipers",
+   "Former Doom Developer Could Be in Trouble as Bethesda Goes After Doom Memecoin"
   ]
  }
 }
