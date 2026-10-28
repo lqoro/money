@@ -30,8 +30,24 @@ if [ ! -f .env ]; then
   cp .env.example .env
   echo "created .env from .env.example"
 fi
-grep -q '^DUET_SYNC_DIR=' .env || printf '\n# Claude Duet bridge (added by deploy/mac/setup.sh)\nDUET_SYNC_DIR=%s\n' "$LIVE_DIR" >> .env
-grep -q '^AUTO_UPDATE=' .env || printf 'AUTO_UPDATE=true\n' >> .env
+# set_env KEY VALUE [REPLACEABLE]: set KEY in .env when it's missing, blank, or equal to
+# REPLACEABLE (the .env.example default). Any other value you chose is kept.
+set_env() {
+  local key="$1" value="$2" replaceable="${3:-}" current
+  if ! grep -q "^$key=" .env; then
+    printf '%s=%s\n' "$key" "$value" >> .env
+  else
+    current="$(grep "^$key=" .env | tail -1 | cut -d= -f2-)"
+    if [ -z "$current" ] || [ "$current" = "$replaceable" ]; then
+      awk -v k="$key" -v v="$value" 'index($0, k "=") == 1 { print k "=" v; next } { print }' .env > .env.tmp
+      mv .env.tmp .env
+    fi
+  fi
+  echo "$key=$(grep "^$key=" .env | tail -1 | cut -d= -f2-)"
+}
+set_env DUET_SYNC_DIR "$(cd "$REPO/.." && pwd)/trencher-live"
+# Restarts on code merged to main. To opt out, set AUTO_UPDATE=no in .env.
+set_env AUTO_UPDATE true false
 
 say "Shared branch with Claude Duet ($LIVE_BRANCH at $LIVE_DIR)"
 if [ ! -d "$LIVE_DIR/.git" ] && [ ! -f "$LIVE_DIR/.git" ]; then

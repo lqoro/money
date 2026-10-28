@@ -329,6 +329,10 @@ class Agent:
         notify(self.cfg, f"🪖 Trencher online. Paper equity ${self.pf.equity():.2f}.")
         last_scan = 0.0
         start_api(self.cfg, self.status, self.inspect_token)
+        if self.bridge.dir:
+            log.info("Claude Duet bridge on: reporting to %s every %g min.", self.bridge.dir, self.cfg.duet_sync_interval_min)
+        else:
+            log.info("Claude Duet bridge off (DUET_SYNC_DIR not set).")
         self.bridge.tick(force=True)
         while self.running:
             try:
