@@ -1,12 +1,12 @@
 {
- "updated_at": "2026-10-28T19:26:00Z",
+ "updated_at": "2026-10-28T19:41:14Z",
  "paused_new_trades": false,
  "brain": {
   "mode": "subscription",
   "paused_until": null,
   "usage_48h": {
    "hours": 48,
-   "brain_calls": 121,
+   "brain_calls": 126,
    "plan_limit_hits": 0,
    "candidates_skipped_no_brain": 0,
    "stop_reviews_without_brain": 0
@@ -128,7 +128,7 @@
  ],
  "learned_rules": "",
  "meta": {
-  "age_minutes": 2,
+  "age_minutes": 7,
   "meta_summary": "It's quiet, and there's no live trench meta. The loudest Solana story is Hunter Biden's $LAPTOP, which crashed about 98% on day one. A political figure pushed that CA, so it's a hard no for the coin and every vamp, revival or TRUMP-holder spinoff of it (V13). That story is fading, and so is the Robinhood/Circle \"$443M frenzy dissolves\" bust cycle. What's rising is bucket-2 money, not trench flow: tokenized stocks, Robinhood Chain memes, stablecoins and RWA, PENGU and PEPE trending, and BTC above $81k ahead of the Fed (V8). The ticker chatter is noise. $MT has 3 mentions, $CHIMP has 2, and everything else, $HELL included, has 1. The one meta I can see coming is Halloween in 3 days, and holiday metas get front-run (V5). So a coin worth riding would be an original, funny Halloween or tokenized-stonk joke, not a knockoff (V1). It would also need to be bonded, show $10k+ in 5-minute volume and have clean holders (V1, V6). Nothing like that has shown up, so for now it's PASS and keep watching for pumpkin and spooky tickers.",
   "top_narratives": [
    "tokenized",
@@ -140,47 +140,47 @@
    "pepe",
    "trump",
    "stablecoin",
-   "code",
    "fees",
-   "adds",
-   "dogecoin",
-   "jumps",
+   "code",
    "data",
+   "dogecoin",
+   "adds",
+   "jumps",
    "machine",
    "times",
    "slowing",
    "machine slowing",
-   "bot"
+   "fed"
   ],
   "trending_categories": [
-   "Long Launchpad",
-   "Robinhood Chain Meme",
    "AI Applications",
-   "Automated Market Maker (AMM)",
    "Binance Launchpool",
+   "Automated Market Maker (AMM)",
+   "YZi Labs (Prev. Binance Labs) Portfolio",
+   "Stablecoin Issuer",
    "Artificial Intelligence (AI)"
   ],
   "trending_coins": [
+   "BTC",
    "QTC",
    "PEARL",
-   "AERO",
    "PENGU",
-   "BTC",
-   "CC",
+   "AERO",
    "SUI",
-   "KNTQ",
-   "ZEC",
-   "ENA",
-   "SOL",
    "HYPE",
+   "CC",
+   "ENA",
+   "KNTQ",
+   "SOL",
+   "ZEC",
    "Q",
-   "DRV",
-   "AI"
+   "QNT",
+   "AXIS"
   ],
   "hot_tickers": [
    {
     "ticker": "$MT",
-    "mentions": 3
+    "mentions": 2
    },
    {
     "ticker": "$CHIMP",
@@ -188,10 +188,6 @@
    },
    {
     "ticker": "$LAPTOP",
-    "mentions": 1
-   },
-   {
-    "ticker": "$LICK",
     "mentions": 1
    },
    {
@@ -224,6 +220,10 @@
    },
    {
     "ticker": "$HELL",
+    "mentions": 1
+   },
+   {
+    "ticker": "$AMD",
     "mentions": 1
    }
   ],
