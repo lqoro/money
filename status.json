@@ -1,12 +1,12 @@
 {
- "updated_at": "2026-10-28T15:38:36Z",
+ "updated_at": "2026-10-28T15:53:38Z",
  "paused_new_trades": false,
  "brain": {
   "mode": "subscription",
   "paused_until": null,
   "usage_48h": {
    "hours": 48,
-   "brain_calls": 58,
+   "brain_calls": 61,
    "plan_limit_hits": 0,
    "candidates_skipped_no_brain": 0,
    "stop_reviews_without_brain": 0
@@ -128,54 +128,54 @@
  ],
  "learned_rules": "",
  "meta": {
-  "age_minutes": 10,
+  "age_minutes": 5,
   "meta_summary": "It's quiet. There's no real trench meta right now. The loudest Solana story is a warning, not a setup: Hunter Biden's $LAPTOP fell about 98% on day one. A political figure pushed the CA, so it's a hard no under V13, and that covers any vamp or \"revival\" of it too. The \"$443M frenzy\" is described as already over, and there's a STONKINU bundling story going around (V3, V13). What's actually rising is macro and big-cap talk: tokenized stocks, RWA, stablecoins, Robinhood headlines, plus established names like PENGU, PEPE and HYPE. That's bucket-2 money (V8), not trench flow. The only meta I can see coming is Halloween in 3 days. $PUMPKIN and $HELL have one mention each, which is noise for now, but holiday metas get front-run early (V5), so I'm watching it. A coin that rides this would be an original, funny Halloween idea or a tokenized-stonk joke, not a knockoff (V1). It needs to have bonded, show $10k+ in 5-minute volume and have clean holders (V1, V6). Until one shows up, I'm on PASS.",
   "top_narratives": [
    "tokenized",
    "robinhood",
    "prediction",
-   "referral",
    "stock",
+   "referral",
    "rally",
    "stablecoin",
-   "pepe",
    "code",
+   "pepe",
    "trump",
    "adds",
-   "dogecoin",
    "ton",
+   "dogecoin",
+   "fees",
+   "jumps",
    "bot",
    "hunter",
    "machine",
    "times",
-   "slowing",
-   "machine slowing",
-   "jumps"
+   "slowing"
   ],
   "trending_categories": [
    "Pons Launchpad",
-   "Privacy Blockchain",
    "Launchpad",
-   "Liquid Staking Governance Tokens",
-   "Airdropped Tokens by NFT Projects",
-   "IP Meme"
+   "Infrastructure",
+   "Binance HODLer Airdrops",
+   "Stablecoin Issuer",
+   "YZi Labs (Prev. Binance Labs) Portfolio"
   ],
   "trending_coins": [
    "INIT",
    "PEARL",
-   "CHIP",
-   "HYPE",
-   "SOL",
    "PONS",
-   "PENGU",
    "BTC",
-   "CC",
-   "QTC",
-   "XRP",
-   "KNTQ",
-   "BNB",
+   "SUI",
+   "CHIP",
+   "SOL",
+   "ETH",
+   "AXIS",
    "PEPE",
-   "ONDO"
+   "PENGU",
+   "QTC",
+   "ENA",
+   "GEOD",
+   "HYPE"
   ],
   "hot_tickers": [
    {
@@ -187,7 +187,15 @@
     "mentions": 2
    },
    {
+    "ticker": "$TRUMP",
+    "mentions": 1
+   },
+   {
     "ticker": "$LICK",
+    "mentions": 1
+   },
+   {
+    "ticker": "$AMC",
     "mentions": 1
    },
    {
@@ -216,14 +224,6 @@
    },
    {
     "ticker": "$DIGS",
-    "mentions": 1
-   },
-   {
-    "ticker": "$CEVANTO",
-    "mentions": 1
-   },
-   {
-    "ticker": "$NEURON",
     "mentions": 1
    }
   ],
