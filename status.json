@@ -1,18 +1,18 @@
 {
- "updated_at": "2026-10-28T22:27:37Z",
+ "updated_at": "2026-10-28T22:42:51Z",
  "paused_new_trades": false,
  "brain": {
   "mode": "subscription",
   "paused_until": null,
   "usage_48h": {
    "hours": 48,
-   "brain_calls": 174,
+   "brain_calls": 180,
    "plan_limit_hits": 0,
    "candidates_skipped_no_brain": 0,
    "stop_reviews_without_brain": 0
   }
  },
- "equity_usd": 101.83,
+ "equity_usd": 101.13,
  "cash_usd": 96.39,
  "started_with_usd": 100.0,
  "realized_pnl_usd": -0.51,
@@ -31,8 +31,8 @@
    "ca": "dyw5fDNv91eknniMG4tGCU1ZrzjuxbpsLiEzih6pump",
    "setup": "MIGRATED",
    "cost_usd": 2.91,
-   "value_usd": 2.21,
-   "multiple": 1.97,
+   "value_usd": 1.87,
+   "multiple": 1.67,
    "fees_usd": 0.53,
    "slippage_usd": 0.09,
    "initials_taken": true
@@ -42,8 +42,8 @@
    "ca": "AfPhjrZx3oyh38G28ZVViP4p7h53N5kTxEeg5tzhpump",
    "setup": "MIGRATED",
    "cost_usd": 2.96,
-   "value_usd": 3.23,
-   "multiple": 1.2,
+   "value_usd": 2.87,
+   "multiple": 1.06,
    "fees_usd": 0.27,
    "slippage_usd": 0.04,
    "initials_taken": false
@@ -218,66 +218,70 @@
  ],
  "learned_rules": "",
  "meta": {
-  "age_minutes": 9,
-  "meta_summary": "It's quiet: there's no live trench meta right now. The loudest Solana story is Hunter Biden's $LAPTOP, and it's dying after a ~98% crash on day one. A political figure pushed that CA, so it's a hard no, along with every vamp or \"revival\" of it (V13). The Robinhood/Circle \"$443M frenzy\" bust is fading too. What's rising is bucket-2 money, not trench flow: tokenized stocks and Robinhood Chain, stablecoins/RWA, PENGU and PEPE trending, and BTC above $81k ahead of the Fed (V8). The ticker chatter is noise: $MT has 3 mentions, and $CHIMP, $GLITCH, $SUMMONSI and the rest have 1 each. That's attention farming, not a crowd (V7). The one meta I can see coming is Halloween, 3 days out, and holiday metas get front-run (V5). So the coin worth riding is an original, funny spooky or tokenized-stonk joke, not a knockoff (V1). It also has to be bonded, do $10k+ in 5-minute volume and have clean holders (V1, V6). Nothing like that has shown up yet, so it's PASS for now while I watch for pumpkin tickers.",
+  "age_minutes": 4,
+  "meta_summary": "It's quiet: there's no live trench meta right now. The loudest Solana story is Hunter Biden's $LAPTOP, which crashed about 98% on day one and is fading. A political figure pushed that CA, so it's a hard no for me, and so is every vamp or \"revival\" of it (V13). The Robinhood/Circle \"$443M frenzy\" is also dying. The flow that's actually rising is bucket-2 money, not trench money: tokenized stocks and Robinhood Chain, stablecoins/RWA, PENGU and PEPE trending, and BTC above $81k ahead of the Fed (V8). Ticker chatter like $MT (3 mentions) and $CHIMP or $GLITCH (1 each) is attention farming, not a crowd (V7). The one meta I can see coming is Halloween, 3 days out, and holiday metas get front-run (V5). So the coin that rides it is an original, funny spooky or tokenized-stonk joke, not a knockoff (V1). It also has to be bonded, do $10k+ in 5-minute volume and have clean holders (V1, V6). Nothing like that has shown up yet, so I'm passing for now and watching for pumpkin tickers.",
   "top_narratives": [
    "robinhood",
    "tokenized",
    "pepe",
-   "rally",
    "stock",
+   "rally",
    "prediction",
    "referral",
-   "fees",
+   "trump",
    "adds",
    "fed",
+   "fees",
+   "app",
    "stablecoin",
    "stocks",
    "dogecoin",
-   "app",
-   "trump",
-   "code",
+   "support",
    "machine",
    "times",
    "slowing",
    "machine slowing"
   ],
   "trending_categories": [
-   "Privacy Blockchain",
-   "Solana Meme",
-   "Liquid Staking",
-   "World Liberty Financial Portfolio",
-   "Proof of Stake (PoS)",
-   "Layer 1 (L1)"
+   "Quantum-Resistant",
+   "Zero Knowledge (ZK)",
+   "Privacy",
+   "IP Meme",
+   "Entertainment",
+   "Airdropped Tokens by NFT Projects"
   ],
   "trending_coins": [
-   "PENGU",
    "PEPE",
-   "BTC",
    "FET",
-   "PEARL",
-   "PONS",
-   "SOL",
    "KNTQ",
    "QTC",
-   "ENA",
-   "MON",
-   "CC",
-   "SUI",
+   "BTC",
    "ETH",
-   "ZEC"
+   "PEARL",
+   "SOL",
+   "PENGU",
+   "STRK",
+   "ONDO",
+   "IDOL",
+   "DOGE",
+   "MON",
+   "WLD"
   ],
   "hot_tickers": [
+   {
+    "ticker": "$MT",
+    "mentions": 3
+   },
    {
     "ticker": "$LAPTOP",
     "mentions": 2
    },
    {
-    "ticker": "$MT",
-    "mentions": 2
+    "ticker": "$TRUMP",
+    "mentions": 1
    },
    {
-    "ticker": "$TRUMP",
+    "ticker": "$LICK",
     "mentions": 1
    },
    {
@@ -305,15 +309,7 @@
     "mentions": 1
    },
    {
-    "ticker": "$AMC",
-    "mentions": 1
-   },
-   {
     "ticker": "$GCS",
-    "mentions": 1
-   },
-   {
-    "ticker": "$AI",
     "mentions": 1
    }
   ],
