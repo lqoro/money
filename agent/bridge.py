@@ -99,6 +99,8 @@ def build_report(agent) -> tuple[dict, str]:
         "recent_lessons": journal.recent_lessons(cfg, 10),
         "learned_rules": journal.learned_rules(cfg),
         "meta": radar.public_view(agent.meta, headlines=5),
+        "last_scan": getattr(agent, "last_scan", {}),
+        "recent_looks": list(getattr(agent, "recent_looks", []))[-15:],
     }
 
     eq = view.get("equity_usd", agent.pf.equity())
@@ -135,9 +137,31 @@ def build_report(agent) -> tuple[dict, str]:
     lines += [f"- {t.get('symbol')}: {t.get('pnl_pct', 0):+.0f}% (${t.get('pnl_usd', 0):+.2f}), "
               f"{(t.get('exit_reasons') or ['?'])[-1]}  \n  CA `{t.get('ca') or t.get('token')}`"
               for t in closes[-10:]] or ["- none yet"]
+    lines += ["", "## Last scan"]
+    scan = status["last_scan"]
+    if scan.get("blocked"):
+        lines.append(f"- Not opening trades: {scan['blocked']}")
+    elif scan:
+        lines.append(f"- {time.strftime('%H:%MZ', time.gmtime(scan['at']))}: {scan['tokens']} coins, "
+                     f"{scan['pairs']} with pairs, {scan['passed_market_filters']} passed the market filters, "
+                     f"{scan['researched']} researched")
+    else:
+        lines.append("- no scan yet since the last restart")
+    lines += ["", "## Coins it looked at, and why it passed"]
+    lines += [f"- {look.get('ts', '')[11:16]}Z {look.get('symbol')} ({look.get('setup') or 'no setup'}, "
+              f"${look.get('mcap_usd', 0):,} mcap, ${look.get('vol_5m', 0):,} 5m vol): {look.get('outcome')}"
+              + (f" at conviction {look['conviction']}" if look.get("conviction") else "")
+              + f", {look.get('reason')}  \n  CA `{look.get('ca')}`"
+              for look in reversed(status["recent_looks"][-10:])] or ["- none since the last restart"]
     lines += ["", "## Recent lessons", *(status["recent_lessons"] or ["- none yet"])]
     if agent.meta.get("meta_summary"):
         lines += ["", "## Meta right now", agent.meta["meta_summary"]]
+    movers = (agent.meta.get("scan_movers") or [])[:5]
+    if movers:
+        lines += ["", "## Moving most in its scan (1h volume)"]
+        lines += [f"- {m.get('symbol')}: ${m.get('vol_1h', 0):,} 1h vol, ${m.get('mcap_usd', 0):,} mcap"
+                  + (f", {m['change_1h']:+.0f}% 1h" if isinstance(m.get("change_1h"), (int, float)) else "")
+                  + f"  \n  CA `{m.get('ca')}`" for m in movers]
     return status, "\n".join(lines) + "\n"
 
 

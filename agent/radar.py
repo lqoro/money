@@ -221,9 +221,24 @@ def build_radar(cfg: Config, previous: dict | None = None) -> dict:
         "headlines": [{"title": h["title"], "source": h["source"]} for h in headlines[:25]],
         "meta_summary": (previous or {}).get("meta_summary", ""),
         "meta_summary_at": (previous or {}).get("meta_summary_at", 0),
+        "scan_movers": (previous or {}).get("scan_movers", []),  # filled in by the agent's own scans
+        "scan_movers_at": (previous or {}).get("scan_movers_at", 0),
         "_scores": dict(top[:300]),
         "_texts": texts[:400],  # kept for per-token buzz lookups; not shown to the brain
     }
+
+
+def scan_movers(snaps: list[dict], n: int = 15) -> list[dict]:
+    """The coins the market is trading hardest right now, from the agent's own scan:
+    the live meta is whatever these have in common, whatever the news says."""
+    def row(s: dict) -> dict:
+        return {"symbol": s.get("symbol"), "name": s.get("name"), "ca": s.get("address"), "dex": s.get("dex"),
+                "mcap_usd": round(s.get("mcap_usd") or 0), "vol_5m": round(s.get("vol_5m") or 0),
+                "vol_1h": round(s.get("vol_1h") or 0), "change_1h": s.get("change_1h"),
+                "buy_ratio_5m": s.get("buy_ratio_5m"),
+                "age_hours": round(s["age_hours"], 1) if s.get("age_hours") is not None else None}
+    live = [s for s in snaps if (s.get("vol_1h") or 0) > 0]
+    return [row(s) for s in sorted(live, key=lambda s: s.get("vol_1h") or 0, reverse=True)[:n]]
 
 
 def radar_path(cfg: Config) -> Path:
@@ -254,6 +269,7 @@ def public_view(radar: dict, headlines: int = 12) -> dict:
         "trending_coins": radar.get("trending_coins", [])[:15],
         "hot_tickers": radar.get("hot_tickers", [])[:12],
         "headlines": [h["title"] for h in radar.get("headlines", [])[:headlines]],
+        "scan_movers": radar.get("scan_movers", [])[:15],
     }
 
 

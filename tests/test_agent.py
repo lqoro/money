@@ -644,3 +644,74 @@ def test_report_lists_contract_addresses(cfg):
     assert status["recent_trades"][0]["ca"] == pos.address
     assert report.count(f"CA `{pos.address}`") == 2  # open position + recent trade
     assert "Fees paid: $" in report and "slippage" in report
+
+
+# --- Live meta from its own scan, and why it passed ---------------------------
+
+def _scan_with(agent, monkeypatch, pairs, decision):
+    from agent import data
+    monkeypatch.setattr(data, "sol_price_usd", lambda: SOL)
+    monkeypatch.setattr(data, "discover_solana_tokens", lambda: list(pairs))
+    monkeypatch.setattr(data, "get_pairs", lambda tokens: {t: pairs[t] for t in tokens if t in pairs})
+    monkeypatch.setattr(data, "pair_snapshot", lambda pair: dict(pair))
+    monkeypatch.setattr(data, "price_history", lambda s: None)
+    monkeypatch.setattr(data, "rugcheck_report", lambda a: report())
+    monkeypatch.setattr(data, "search_same_name", lambda sym: [])
+    monkeypatch.setattr("agent.main.project_report", lambda s, c: {})
+    monkeypatch.setattr(agent.brain, "decide", lambda *a, **k: decision)
+    agent.scan()
+
+
+def test_scan_keeps_movers_and_says_why_it_passed(cfg, monkeypatch):
+    from agent.bridge import build_report
+    from agent.main import Agent
+    agent = Agent(cfg)
+    pairs = {
+        "HotCoin111": snap(address="HotCoin111", symbol="HOT", vol_1h=500_000),
+        "DeadCoin111": snap(address="DeadCoin111", symbol="DEAD", vol_5m=10, vol_1h=900),
+    }
+    _scan_with(agent, monkeypatch, pairs, {"action": "PASS", "verdict": "PASS — buyers fading on the 5m",
+                                           "conviction": 4, "exit_plan": {}})
+    movers = agent.meta["scan_movers"]
+    assert [m["symbol"] for m in movers] == ["HOT", "DEAD"]  # sorted by 1h volume, all coins not just candidates
+    assert movers[0]["ca"] == "HotCoin111"
+    assert agent.last_scan["pairs"] == 2 and agent.last_scan["passed_market_filters"] == 1
+    look = agent.recent_looks[-1]
+    assert look["symbol"] == "HOT" and look["outcome"] == "PASS" and "buyers fading" in look["reason"]
+
+    status, rep = build_report(agent)
+    assert status["recent_looks"][-1]["ca"] == "HotCoin111"
+    assert "## Coins it looked at, and why it passed" in rep and "buyers fading" in rep
+    assert "CA `HotCoin111`" in rep and "passed the market filters" in rep
+    assert "## Moving most in its scan" in rep
+
+
+def test_buy_that_sizes_under_the_minimum_says_so(cfg, monkeypatch):
+    from agent.main import Agent
+    agent = Agent(cfg)
+    pairs = {"HotCoin111": snap(address="HotCoin111", symbol="HOT")}
+    _scan_with(agent, monkeypatch, pairs, {"action": "BUY", "verdict": "BUY — tiny", "conviction": 5,
+                                           "exit_plan": {"stop_loss_pct": 30}})
+    look = agent.recent_looks[-1]
+    assert look["outcome"] == "TOO_SMALL" and "minimum" in look["reason"]
+    assert not agent.pf.positions
+
+
+def test_scan_movers_survive_a_radar_refresh(cfg, monkeypatch):
+    from agent import radar
+    for fn in ("read_rss", "read_reddit", "read_telegram"):
+        monkeypatch.setattr(radar, fn, lambda *a: [])
+    monkeypatch.setattr(radar, "read_dexscreener_blurbs", lambda: [])
+    monkeypatch.setattr(radar, "read_coingecko_trending", lambda: {})
+    prev = {"scan_movers": [{"symbol": "HOT"}], "updated_at": time.time()}
+    fresh = radar.build_radar(cfg, previous=prev)
+    assert fresh["scan_movers"] == [{"symbol": "HOT"}]
+    assert radar.public_view(fresh)["scan_movers"] == [{"symbol": "HOT"}]
+
+
+def test_meta_summary_reads_the_scan_and_the_owner_note(plan_brain, monkeypatch):
+    seen = {}
+    monkeypatch.setattr(plan_brain, "_ask", lambda prompt, *a, **k: seen.setdefault("p", prompt) and {"summary": "ok"})
+    plan_brain.cfg.owner_note = "trade what's moving"
+    plan_brain.summarize_meta({"scan_movers": [{"symbol": "HOT"}]})
+    assert "scan_movers" in seen["p"] and "trade what's moving" in seen["p"] and "HOT" in seen["p"]
