@@ -1,28 +1,28 @@
 {
- "updated_at": "2026-10-28T22:12:28Z",
+ "updated_at": "2026-10-28T22:27:37Z",
  "paused_new_trades": false,
  "brain": {
   "mode": "subscription",
   "paused_until": null,
   "usage_48h": {
    "hours": 48,
-   "brain_calls": 171,
+   "brain_calls": 174,
    "plan_limit_hits": 0,
    "candidates_skipped_no_brain": 0,
    "stop_reviews_without_brain": 0
   }
  },
- "equity_usd": 100.11,
- "cash_usd": 93.62,
+ "equity_usd": 101.83,
+ "cash_usd": 96.39,
  "started_with_usd": 100.0,
  "realized_pnl_usd": -0.51,
- "fees_paid_usd": 0.93,
+ "fees_paid_usd": 1.19,
  "fees_by_kind_usd": {
-  "axiom": 0.09,
-  "network": 0.61,
-  "pool": 0.09
+  "axiom": 0.12,
+  "network": 0.82,
+  "pool": 0.12
  },
- "slippage_paid_usd": 0.13,
+ "slippage_paid_usd": 0.17,
  "closed_trades": 1,
  "win_rate": 0.0,
  "open_positions": [
@@ -31,19 +31,19 @@
    "ca": "dyw5fDNv91eknniMG4tGCU1ZrzjuxbpsLiEzih6pump",
    "setup": "MIGRATED",
    "cost_usd": 2.91,
-   "value_usd": 4.1,
-   "multiple": 1.55,
-   "fees_usd": 0.27,
-   "slippage_usd": 0.04,
-   "initials_taken": false
+   "value_usd": 2.21,
+   "multiple": 1.97,
+   "fees_usd": 0.53,
+   "slippage_usd": 0.09,
+   "initials_taken": true
   },
   {
    "symbol": "CATCULUS",
    "ca": "AfPhjrZx3oyh38G28ZVViP4p7h53N5kTxEeg5tzhpump",
    "setup": "MIGRATED",
    "cost_usd": 2.96,
-   "value_usd": 2.39,
-   "multiple": 0.89,
+   "value_usd": 3.23,
+   "multiple": 1.2,
    "fees_usd": 0.27,
    "slippage_usd": 0.04,
    "initials_taken": false
@@ -196,6 +196,21 @@
     "target_mcap_usd": 1500000.0
    },
    "thesis": "CATCULUS is the flow leader right now: $59k 5m volume, 913 buys vs 363 sells and 1,546 holders on a spread that's about as clean as they come. Top 10 hold 3.6% ex-pool (V6, V13). The idea is original and funny to a wide audience: nine lives, a limit that goes to zero, a nap. No politician is attached (V1, V13). 5m volume is 0.91x the hourly average, so the crowd is still arriving at about the same pace and isn't fading yet. Small size because it's a momentum entry near the high, not a dip (V1)."
+  },
+  {
+   "ca": "dyw5fDNv91eknniMG4tGCU1ZrzjuxbpsLiEzih6pump",
+   "ts": "2026-10-28T22:26:04Z",
+   "event": "SELL",
+   "id": "9c87dd2b",
+   "token": "dyw5fDNv91eknniMG4tGCU1ZrzjuxbpsLiEzih6pump",
+   "symbol": "CATBOT",
+   "fraction": 0.577,
+   "proceeds_usd": 2.77,
+   "fees_usd": 0.2641,
+   "slippage_usd": 0.0465,
+   "price": 0.00132,
+   "mcap": 1312194.0,
+   "reason": "took initials at 2.02x"
   }
  ],
  "recent_lessons": [
@@ -203,66 +218,66 @@
  ],
  "learned_rules": "",
  "meta": {
-  "age_minutes": 4,
+  "age_minutes": 9,
   "meta_summary": "It's quiet: there's no live trench meta right now. The loudest Solana story is Hunter Biden's $LAPTOP, and it's dying after a ~98% crash on day one. A political figure pushed that CA, so it's a hard no, along with every vamp or \"revival\" of it (V13). The Robinhood/Circle \"$443M frenzy\" bust is fading too. What's rising is bucket-2 money, not trench flow: tokenized stocks and Robinhood Chain, stablecoins/RWA, PENGU and PEPE trending, and BTC above $81k ahead of the Fed (V8). The ticker chatter is noise: $MT has 3 mentions, and $CHIMP, $GLITCH, $SUMMONSI and the rest have 1 each. That's attention farming, not a crowd (V7). The one meta I can see coming is Halloween, 3 days out, and holiday metas get front-run (V5). So the coin worth riding is an original, funny spooky or tokenized-stonk joke, not a knockoff (V1). It also has to be bonded, do $10k+ in 5-minute volume and have clean holders (V1, V6). Nothing like that has shown up yet, so it's PASS for now while I watch for pumpkin tickers.",
   "top_narratives": [
-   "tokenized",
    "robinhood",
+   "tokenized",
    "pepe",
    "rally",
-   "prediction",
    "stock",
-   "fees",
+   "prediction",
    "referral",
+   "fees",
    "adds",
    "fed",
    "stablecoin",
    "stocks",
    "dogecoin",
    "app",
-   "code",
-   "support",
    "trump",
+   "code",
    "machine",
    "times",
-   "slowing"
+   "slowing",
+   "machine slowing"
   ],
   "trending_categories": [
-   "Liquid Staking Governance Tokens",
-   "Liquid Staking",
-   "Solana Meme",
    "Privacy Blockchain",
-   "Infrastructure",
-   "Binance Launchpad"
+   "Solana Meme",
+   "Liquid Staking",
+   "World Liberty Financial Portfolio",
+   "Proof of Stake (PoS)",
+   "Layer 1 (L1)"
   ],
   "trending_coins": [
    "PENGU",
-   "BTC",
    "PEPE",
-   "CC",
-   "KNTQ",
-   "PONS",
+   "BTC",
    "FET",
    "PEARL",
-   "STRK",
-   "MON",
-   "WLD",
+   "PONS",
    "SOL",
+   "KNTQ",
+   "QTC",
    "ENA",
+   "MON",
+   "CC",
    "SUI",
-   "ETH"
+   "ETH",
+   "ZEC"
   ],
   "hot_tickers": [
    {
-    "ticker": "$MT",
-    "mentions": 3
-   },
-   {
     "ticker": "$LAPTOP",
-    "mentions": 1
+    "mentions": 2
    },
    {
-    "ticker": "$LICK",
+    "ticker": "$MT",
+    "mentions": 2
+   },
+   {
+    "ticker": "$TRUMP",
     "mentions": 1
    },
    {

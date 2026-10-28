@@ -1,17 +1,17 @@
 # Trencher live report
 
-Updated 2026-10-28T22:12:28Z (paper trading, never real money)
+Updated 2026-10-28T22:27:37Z (paper trading, never real money)
 
-- Equity: $100.11 (+0.1% vs $100 start)
+- Equity: $101.83 (+1.8% vs $100 start)
 - Closed trades: 1, 0 wins
-- Fees paid: $0.93 (axiom $0.09, network $0.61, pool $0.09), plus $0.13 lost to slippage
+- Fees paid: $1.19 (axiom $0.12, network $0.82, pool $0.12), plus $0.17 lost to slippage
 - New trades: on
-- Brain: subscription, 171 calls and 0 plan-limit hits in 48h
+- Brain: subscription, 174 calls and 0 plan-limit hits in 48h
 
 ## Open positions
-- CATBOT (MIGRATED): cost $2.91, 1.55x, fees $0.27  
+- CATBOT (MIGRATED): cost $2.91, 1.97x, fees $0.53  
   CA `dyw5fDNv91eknniMG4tGCU1ZrzjuxbpsLiEzih6pump`
-- CATCULUS (MIGRATED): cost $2.96, 0.89x, fees $0.27  
+- CATCULUS (MIGRATED): cost $2.96, 1.2x, fees $0.27  
   CA `AfPhjrZx3oyh38G28ZVViP4p7h53N5kTxEeg5tzhpump`
 
 ## Recent trades
@@ -25,6 +25,8 @@ Updated 2026-10-28T22:12:28Z (paper trading, never real money)
   CA `dyw5fDNv91eknniMG4tGCU1ZrzjuxbpsLiEzih6pump`
 - 22:08Z BUY CATCULUS $2.96, fees $0.27  
   CA `AfPhjrZx3oyh38G28ZVViP4p7h53N5kTxEeg5tzhpump`
+- 22:26Z SELL CATBOT for $2.77, fees $0.26  
+  CA `dyw5fDNv91eknniMG4tGCU1ZrzjuxbpsLiEzih6pump`
 
 ## Last closes
 - Something: -15% ($-0.51), time stop: 60 min and only 0.98x  
