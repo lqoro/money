@@ -1,12 +1,12 @@
 # Trencher live report
 
-Updated 2026-10-28T23:28:14Z (paper trading, never real money)
+Updated 2026-10-28T23:43:18Z (paper trading, never real money)
 
 - Equity: $100.47 (+0.5% vs $100 start)
 - Closed trades: 3, 1 wins
 - Fees paid: $1.91 (axiom $0.17, network $1.43, pool $0.17), plus $0.25 lost to slippage
 - New trades: on
-- Brain: subscription, 195 calls and 0 plan-limit hits in 48h
+- Brain: subscription, 200 calls and 0 plan-limit hits in 48h
 
 ## Open positions
 - none
@@ -47,4 +47,4 @@ Updated 2026-10-28T23:28:14Z (paper trading, never real money)
 - [2026-10-28 22:59] Expected: the original Cat Bot pair would retest its $845k peak, because holders were clean (top 10 at 3.3%, dev/insiders 0%) and 5m volume was organic at $12.9k (V1, V6, V13). Happened: it ran to 4.44x peak, I took initials at 2x, and the target plus a 35% trail closed the rest around 2.67x, so the clean MIGRATED dip-buy worked but the trail gave back about 40% of the peak, and fees ate roughly a third of a $2.91 position. Rule: once initials are out and the coin is past 4x, tighten the trail to about 25% from peak, and don't open positions under about $5 where fees ruin the math, because sell initials only protects the cost basis, not the runner (V11).
 
 ## Meta right now
-It's quiet: there's no live trench meta right now. The loudest Solana story is Hunter Biden's $LAPTOP, which crashed about 98% on day one and is fading. A political figure pushed that CA, so it's a hard no for me, and so is every vamp or "revival" of it (V13). The Robinhood/Circle "$443M frenzy" is also dying. The flow that's actually rising is bucket-2 money, not trench money: tokenized stocks and Robinhood Chain, stablecoins/RWA, PENGU and PEPE trending, and BTC above $81k ahead of the Fed (V8). Ticker chatter like $MT (3 mentions) and $CHIMP or $GLITCH (1 each) is attention farming, not a crowd (V7). The one meta I can see coming is Halloween, 3 days out, and holiday metas get front-run (V5). So the coin that rides it is an original, funny spooky or tokenized-stonk joke, not a knockoff (V1). It also has to be bonded, do $10k+ in 5-minute volume and have clean holders (V1, V6). Nothing like that has shown up yet, so I'm passing for now and watching for pumpkin tickers.
+It's quiet. I don't see a live trench meta right now. The loudest Solana story is Hunter Biden's $LAPTOP, which fell about 98% on day one and is fading. A political figure pushed that contract address, so it's a hard no, and the same goes for any vamp or "revival" of it (V13). The Robinhood/Circle hype is also dying. The money that's rising is bucket-2 money, not trench money: tokenized stocks and Robinhood Chain, stablecoins/RWA, PENGU and PEPE trending, and BTC above $81k ahead of the Fed (V8). Single-digit ticker mentions like $MT (3), $CHIMP and $LICK (1 each) are attention farming, not a crowd (V7). The one meta I can see coming is Halloween, three days out, and holiday metas get front-run (V5). So the coin that rides it will be an original, funny spooky idea, maybe a pumpkin-ticker or tokenized-stonk joke, not a knockoff (V1). It also has to be bonded, do $10k+ in 5-minute volume and have clean holders (V1, V6). Nothing like that has shown up yet. PASS for now; watching for pumpkins.

@@ -1,12 +1,12 @@
 {
- "updated_at": "2026-10-28T23:28:14Z",
+ "updated_at": "2026-10-28T23:43:18Z",
  "paused_new_trades": false,
  "brain": {
   "mode": "subscription",
   "paused_until": null,
   "usage_48h": {
    "hours": 48,
-   "brain_calls": 195,
+   "brain_calls": 200,
    "plan_limit_hits": 0,
    "candidates_skipped_no_brain": 0,
    "stop_reviews_without_brain": 0
@@ -310,62 +310,74 @@
  ],
  "learned_rules": "",
  "meta": {
-  "age_minutes": 8,
-  "meta_summary": "It's quiet: there's no live trench meta right now. The loudest Solana story is Hunter Biden's $LAPTOP, which crashed about 98% on day one and is fading. A political figure pushed that CA, so it's a hard no for me, and so is every vamp or \"revival\" of it (V13). The Robinhood/Circle \"$443M frenzy\" is also dying. The flow that's actually rising is bucket-2 money, not trench money: tokenized stocks and Robinhood Chain, stablecoins/RWA, PENGU and PEPE trending, and BTC above $81k ahead of the Fed (V8). Ticker chatter like $MT (3 mentions) and $CHIMP or $GLITCH (1 each) is attention farming, not a crowd (V7). The one meta I can see coming is Halloween, 3 days out, and holiday metas get front-run (V5). So the coin that rides it is an original, funny spooky or tokenized-stonk joke, not a knockoff (V1). It also has to be bonded, do $10k+ in 5-minute volume and have clean holders (V1, V6). Nothing like that has shown up yet, so I'm passing for now and watching for pumpkin tickers.",
+  "age_minutes": 3,
+  "meta_summary": "It's quiet. I don't see a live trench meta right now. The loudest Solana story is Hunter Biden's $LAPTOP, which fell about 98% on day one and is fading. A political figure pushed that contract address, so it's a hard no, and the same goes for any vamp or \"revival\" of it (V13). The Robinhood/Circle hype is also dying. The money that's rising is bucket-2 money, not trench money: tokenized stocks and Robinhood Chain, stablecoins/RWA, PENGU and PEPE trending, and BTC above $81k ahead of the Fed (V8). Single-digit ticker mentions like $MT (3), $CHIMP and $LICK (1 each) are attention farming, not a crowd (V7). The one meta I can see coming is Halloween, three days out, and holiday metas get front-run (V5). So the coin that rides it will be an original, funny spooky idea, maybe a pumpkin-ticker or tokenized-stonk joke, not a knockoff (V1). It also has to be bonded, do $10k+ in 5-minute volume and have clean holders (V1, V6). Nothing like that has shown up yet. PASS for now; watching for pumpkins.",
   "top_narratives": [
    "robinhood",
    "tokenized",
    "pepe",
    "rally",
-   "prediction",
    "stock",
-   "referral",
-   "adds",
-   "fed",
+   "prediction",
    "trump",
+   "referral",
+   "fed",
    "app",
+   "adds",
    "stocks",
    "stablecoin",
-   "fees",
    "dogecoin",
    "support",
    "machine",
    "times",
    "slowing",
-   "machine slowing"
+   "machine slowing",
+   "fees"
   ],
   "trending_categories": [
    "The Boy\u2019s Club",
    "Frog-Themed",
-   "AI Applications",
-   "Airdropped Tokens by NFT Projects",
-   "IP Meme",
-   "Privacy"
+   "Quantum-Resistant",
+   "Alleged SEC Securities",
+   "Zero Knowledge (ZK)",
+   "Proof of Work (PoW)"
   ],
   "trending_coins": [
-   "KNTQ",
    "PENGU",
-   "SOL",
    "PEPE",
-   "CC",
-   "PEARL",
+   "SOL",
+   "KNTQ",
    "XRP",
-   "BTC",
+   "QTC",
    "SUI",
+   "PEARL",
+   "PONS",
    "NEAR",
-   "RITUAL",
+   "ZEC",
+   "RAY",
    "UNI",
-   "ETH",
-   "PUMP",
-   "VVV"
+   "BTC",
+   "CC"
   ],
   "hot_tickers": [
+   {
+    "ticker": "$LAPTOP",
+    "mentions": 3
+   },
    {
     "ticker": "$MT",
     "mentions": 2
    },
    {
-    "ticker": "$LAPTOP",
+    "ticker": "$TRUMP",
+    "mentions": 1
+   },
+   {
+    "ticker": "$HYPE",
+    "mentions": 1
+   },
+   {
+    "ticker": "$TROVE",
     "mentions": 1
    },
    {
@@ -389,7 +401,7 @@
     "mentions": 1
    },
    {
-    "ticker": "$GLITCH",
+    "ticker": "$RETAIL",
     "mentions": 1
    },
    {
@@ -398,11 +410,11 @@
    }
   ],
   "headlines": [
-   "Crypto Weekly: Cash floods US midterms, Milei cleared in meme coin scandal",
-   "Top 6 memecoins to check out in October 2026",
    "Faster Solana slots fail to stop memecoin bot snipers",
+   "Top 6 memecoins to check out in October 2026",
    "Former Doom Developer Could Be in Trouble as Bethesda Goes After Doom Memecoin",
-   "Visa to close Crossmint memecoin rewards loophole following The Block investigation: report"
+   "Visa to close Crossmint memecoin rewards loophole following The Block investigation: report",
+   "Hunter Biden lashes out after $LAPTOP meme coin collapse"
   ]
  }
 }
