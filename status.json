@@ -1,12 +1,12 @@
 {
- "updated_at": "2026-10-28T23:13:05Z",
+ "updated_at": "2026-10-28T23:28:14Z",
  "paused_new_trades": false,
  "brain": {
   "mode": "subscription",
   "paused_until": null,
   "usage_48h": {
    "hours": 48,
-   "brain_calls": 188,
+   "brain_calls": 195,
    "plan_limit_hits": 0,
    "candidates_skipped_no_brain": 0,
    "stop_reviews_without_brain": 0
@@ -310,53 +310,53 @@
  ],
  "learned_rules": "",
  "meta": {
-  "age_minutes": 3,
+  "age_minutes": 8,
   "meta_summary": "It's quiet: there's no live trench meta right now. The loudest Solana story is Hunter Biden's $LAPTOP, which crashed about 98% on day one and is fading. A political figure pushed that CA, so it's a hard no for me, and so is every vamp or \"revival\" of it (V13). The Robinhood/Circle \"$443M frenzy\" is also dying. The flow that's actually rising is bucket-2 money, not trench money: tokenized stocks and Robinhood Chain, stablecoins/RWA, PENGU and PEPE trending, and BTC above $81k ahead of the Fed (V8). Ticker chatter like $MT (3 mentions) and $CHIMP or $GLITCH (1 each) is attention farming, not a crowd (V7). The one meta I can see coming is Halloween, 3 days out, and holiday metas get front-run (V5). So the coin that rides it is an original, funny spooky or tokenized-stonk joke, not a knockoff (V1). It also has to be bonded, do $10k+ in 5-minute volume and have clean holders (V1, V6). Nothing like that has shown up yet, so I'm passing for now and watching for pumpkin tickers.",
   "top_narratives": [
    "robinhood",
    "tokenized",
    "pepe",
-   "prediction",
    "rally",
+   "prediction",
    "stock",
    "referral",
    "adds",
-   "trump",
    "fed",
+   "trump",
    "app",
    "stocks",
    "stablecoin",
    "fees",
    "dogecoin",
    "support",
-   "code",
    "machine",
    "times",
-   "slowing"
+   "slowing",
+   "machine slowing"
   ],
   "trending_categories": [
-   "Quantum-Resistant",
-   "Privacy",
    "The Boy\u2019s Club",
    "Frog-Themed",
-   "Privacy Blockchain",
-   "AI Applications"
+   "AI Applications",
+   "Airdropped Tokens by NFT Projects",
+   "IP Meme",
+   "Privacy"
   ],
   "trending_coins": [
    "KNTQ",
    "PENGU",
-   "PEPE",
-   "PEARL",
    "SOL",
+   "PEPE",
    "CC",
-   "QTC",
-   "SUI",
+   "PEARL",
    "XRP",
-   "NEAR",
-   "DOGE",
-   "RITUAL",
    "BTC",
-   "FET",
+   "SUI",
+   "NEAR",
+   "RITUAL",
+   "UNI",
+   "ETH",
+   "PUMP",
    "VVV"
   ],
   "hot_tickers": [
@@ -390,10 +390,6 @@
    },
    {
     "ticker": "$GLITCH",
-    "mentions": 1
-   },
-   {
-    "ticker": "$GCS",
     "mentions": 1
    },
    {
