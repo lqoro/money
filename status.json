@@ -1,12 +1,12 @@
 {
- "updated_at": "2026-10-28T20:26:38Z",
+ "updated_at": "2026-10-28T20:41:56Z",
  "paused_new_trades": false,
  "brain": {
   "mode": "subscription",
   "paused_until": null,
   "usage_48h": {
    "hours": 48,
-   "brain_calls": 141,
+   "brain_calls": 145,
    "plan_limit_hits": 0,
    "candidates_skipped_no_brain": 0,
    "stop_reviews_without_brain": 0
@@ -128,7 +128,7 @@
  ],
  "learned_rules": "",
  "meta": {
-  "age_minutes": 1,
+  "age_minutes": 6,
   "meta_summary": "It's quiet. There's no live trench meta. The loudest Solana story is Hunter Biden's $LAPTOP, and it's fading fast after a ~98% crash on day one. A political figure pushed that CA, so it's a hard no for the coin and for every vamp or revival of it (V13). The Robinhood/Circle \"$443M frenzy dissolves\" bust cycle is fading too. What's rising is bucket-2 money, not trench flow: tokenized stocks and Robinhood Chain, stablecoins/RWA, PENGU and PEPE trending (Frog-Themed and Boy's Club categories), and BTC above $81k ahead of the Fed (V8). The ticker chatter is noise. $MT has 3 mentions, and $CHIMP, $HELL and the rest have 1\u20132 each. The one meta I can see coming is Halloween, 3 days out, and holiday metas get front-run (V5). So the coin worth riding would be an original, funny Halloween or tokenized-stonk joke, not a knockoff (V1). It would also need to be bonded, show $10k+ in 5-minute volume and have clean holders (V1, V6). Nothing like that has shown up yet, so it's PASS for now and I'm watching for pumpkin and spooky tickers.",
   "top_narratives": [
    "tokenized",
@@ -145,37 +145,37 @@
    "dogecoin",
    "fed",
    "adds",
-   "data",
    "machine",
    "times",
    "slowing",
    "machine slowing",
-   "jumps"
+   "data",
+   "stocks"
   ],
   "trending_categories": [
-   "The Boy\u2019s Club",
-   "Frog-Themed",
+   "Communication",
    "Launchpad",
-   "Rollup",
-   "Binance Launchpool",
-   "Automated Market Maker (AMM)"
+   "Pons Launchpad",
+   "Automated Market Maker (AMM)",
+   "Meme",
+   "IP Meme"
   ],
   "trending_coins": [
    "BTC",
    "PEARL",
    "PENGU",
    "QTC",
-   "HYPE",
+   "CHIP",
    "CC",
    "QNT",
-   "CHIP",
-   "PEPE",
-   "ARB",
-   "SOL",
-   "XRP",
-   "AERO",
    "SUI",
-   "PONS"
+   "SOL",
+   "HYPE",
+   "PONS",
+   "LINK",
+   "XPIN",
+   "JUP",
+   "AERO"
   ],
   "hot_tickers": [
    {
@@ -228,11 +228,11 @@
    }
   ],
   "headlines": [
-   "Bitcoin tops $81,000 ahead of Fed decision as memecoins lead altcoin gains",
-   "Top 6 memecoins to check out in October 2026",
    "Crypto Weekly: Cash floods US midterms, Milei cleared in meme coin scandal",
+   "Top 6 memecoins to check out in October 2026",
    "Faster Solana slots fail to stop memecoin bot snipers",
-   "Former Doom Developer Could Be in Trouble as Bethesda Goes After Doom Memecoin"
+   "Former Doom Developer Could Be in Trouble as Bethesda Goes After Doom Memecoin",
+   "Visa to close Crossmint memecoin rewards loophole following The Block investigation: report"
   ]
  }
 }
