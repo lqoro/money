@@ -147,7 +147,7 @@ def test_size_caps(cfg):
     s = position_size(10, 10, pf, cfg)  # $8 risk / 16% ≈ $50 → capped at 25% of equity
     assert s.size_usd == pytest.approx(25.0) and "max position" in s.note
     # Open risk eats the total risk budget.
-    cfg.max_total_risk_pct = 15
+    cfg.max_total_risk_pct = 18
     for _ in range(2):
         pf.buy(cfg, snap(), 20.0, SOL, "MIGRATED", {"stop_loss_pct": 30}, "")
     s = position_size(9, 30, pf, cfg)
@@ -534,3 +534,113 @@ def test_auto_update_does_not_loop_when_the_launcher_could_not_update(cfg, monke
     agent = Agent(cfg)
     agent.bridge.check_update()
     assert not agent.bridge.restart_requested and agent.running
+
+
+# --- Realistic paper costs (Axiom + pool + network) and contract addresses -----
+
+def test_pool_fee_follows_the_venue(cfg):
+    from agent.portfolio import venue_fee_pct
+    assert venue_fee_pct(cfg, "pumpfun", 30_000, SOL) == 1.25  # bonding curve
+    assert venue_fee_pct(cfg, "pumpswap", 10_000, SOL) == 1.25  # 100 SOL mcap
+    assert venue_fee_pct(cfg, "pumpswap", 120_000, SOL) == 1.2  # 1,200 SOL
+    assert venue_fee_pct(cfg, "pumpswap", 1_200_000, SOL) == 0.95  # 12,000 SOL
+    assert venue_fee_pct(cfg, "pumpswap", 50_000_000, SOL) == 0.3  # floor
+    assert venue_fee_pct(cfg, "raydium", 1_000_000, SOL) == 0.25
+
+
+def test_buy_charges_axiom_pool_and_network_fees(cfg):
+    pf = Portfolio(cash_usd=100.0)
+    pos = pf.buy(cfg, snap(), 10.0, SOL, "MIGRATED", {}, "")  # PumpSwap at 1,200 SOL mcap: 1.2% pool fee
+    assert pf.fees_by_kind["axiom"] == pytest.approx(0.10)
+    assert pf.fees_by_kind["pool"] == pytest.approx(0.12)
+    assert pf.fees_by_kind["network"] == pytest.approx(0.002005 * SOL)  # base + priority + Jito tip
+    assert pf.fees_paid_usd == pytest.approx(pos.fees_usd) == pytest.approx(0.4205)
+    spend = 10.0 - 0.4205
+    assert pos.tokens * 0.001 == pytest.approx(spend - pos.slippage_usd)  # slippage costs value, not cash
+    assert pos.slippage_usd > spend * cfg.base_slippage_pct / 100 * 0.9
+    assert pos.cost_usd == 10.0 and pf.cash_usd == pytest.approx(90.0)
+
+
+def test_round_trip_pays_fees_both_ways(cfg):
+    pf = Portfolio(cash_usd=100.0)
+    pos = pf.buy(cfg, snap(), 10.0, SOL, "MIGRATED", {}, "")
+    proceeds = pf.sell(cfg, pos, 1.0, 0.001, 40_000, SOL, dex="pumpswap", mcap_usd=120_000)
+    assert pf.fees_by_kind["network"] == pytest.approx(2 * 0.002005 * SOL)
+    assert proceeds == pytest.approx(10.0 - pos.fees_usd - pos.slippage_usd, abs=1e-6)
+    assert pf.close(pos) == pytest.approx(-(pos.fees_usd + pos.slippage_usd), abs=1e-6)
+
+
+def test_sell_uses_the_pool_the_coin_trades_on_now(cfg):
+    pf = Portfolio(cash_usd=100.0)
+    pos = pf.buy(cfg, snap(dex="pumpfun", mcap_usd=30_000), 10.0, SOL, "FINAL_STRETCH", {}, "")
+    assert pos.venue_fee_pct == 1.25
+    pool_before = pf.fees_by_kind["pool"]
+    pf.sell(cfg, pos, 1.0, 0.001, 40_000, SOL, dex="raydium", mcap_usd=500_000)
+    assert pf.fees_by_kind["pool"] - pool_before < 0.03  # 0.25% of ~$9.5, not 1.25%
+
+
+def test_old_state_without_fee_fields_still_loads(cfg):
+    import json as _json
+    pf = Portfolio(cash_usd=100.0)
+    pf.buy(cfg, snap(), 10.0, SOL, "MIGRATED", {}, "")
+    raw = _json.loads(_json.dumps(__import__("dataclasses").asdict(pf)))
+    for key in ("fees_by_kind", "slippage_paid_usd"):
+        raw.pop(key)
+    for p in raw["positions"].values():
+        for key in ("dex", "venue_fee_pct", "network_fee_usd", "fees_usd", "slippage_usd"):
+            p.pop(key)
+    (cfg.memory_dir / "state.json").write_text(_json.dumps(raw))
+    loaded = Portfolio.load(cfg)
+    pos = next(iter(loaded.positions.values()))
+    assert loaded.sell(cfg, pos, 1.0, 0.001, 40_000, SOL, dex="pumpswap", mcap_usd=120_000) > 0
+
+
+def test_network_fees_count_in_sizing(cfg):
+    pf = Portfolio(cash_usd=100.0)
+    no_fees = position_size(7, 30, pf, cfg)
+    with_fees = position_size(7, 30, pf, cfg, sol_usd=SOL, venue_pct=1.2)
+    assert with_fees.size_usd < no_fees.size_usd
+    assert with_fees.risk_usd == pytest.approx(2.5, abs=0.02)  # still loses ~the risk budget at the stop
+    # When network fees alone would eat the whole risk, the trade isn't worth taking.
+    cfg.priority_fee_sol = 0.006
+    s = position_size(5, 30, pf, cfg, sol_usd=SOL)
+    assert s.size_usd == 0 and "network fees" in s.note
+
+
+def test_trencher_cannot_evolve_its_own_fees(cfg):
+    from agent import evolve as ev
+
+    class FakeBrain:
+        def evolve(self, closes):
+            return {"rules_markdown": "", "param_changes": [{"param": "platform_fee_pct", "value": 0, "reason": "x"},
+                                                             {"param": "bribe_sol", "value": 0, "reason": "x"}]}
+
+    from agent import journal
+    journal.log_trade(cfg, {"event": "CLOSE", "pnl_usd": -1})
+    ev.evolve(cfg, FakeBrain())
+    cfg.apply_strategy()
+    assert cfg.platform_fee_pct == 1.0 and cfg.bribe_sol == 0.001
+
+
+def test_duet_can_steer_fee_settings(cfg):
+    from agent.bridge import apply_steering
+    apply_steering(cfg, {"settings": {"bribe_sol": 0.01, "platform_fee_pct": 9}})
+    assert cfg.bribe_sol == 0.01 and cfg.platform_fee_pct == 2  # clamped
+    apply_steering(cfg, {"settings": {}})
+    assert cfg.bribe_sol == 0.001 and cfg.platform_fee_pct == 1.0
+
+
+def test_report_lists_contract_addresses(cfg):
+    from agent import journal
+    from agent.bridge import build_report
+    from agent.main import Agent
+    agent = Agent(cfg)
+    pos = agent.pf.buy(cfg, snap(address="AZdhikmyj6ibsejv7EjML9SfNmuiMvwDrKXTEU2zpump", symbol="Something"),
+                       5.0, SOL, "DIP", {}, "")
+    journal.log_trade(cfg, {"event": "BUY", "id": pos.id, "token": pos.address, "symbol": pos.symbol,
+                            "size_usd": 5.0, "fees_usd": pos.fees_usd})
+    status, report = build_report(agent)
+    assert status["open_positions"][0]["ca"] == pos.address
+    assert status["recent_trades"][0]["ca"] == pos.address
+    assert report.count(f"CA `{pos.address}`") == 2  # open position + recent trade
+    assert "Fees paid: $" in report and "slippage" in report

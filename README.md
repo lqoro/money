@@ -46,22 +46,29 @@ every 5    Claude studies its results ──► rewrites learned rules + retunes
    how much of equity it's willing to lose if the stop hits, and the stop
    distance sets the size:
 
-   | Conviction | Risk if stopped | Position at a 30% stop, $100 wallet |
+   | Conviction | Risk if stopped | Position at a 30% stop, $100 wallet, SOL $100 |
    |---|---|---|
    | 1–4 | 0% (pass) | — |
-   | 5 | 1% | ~$2.90 |
-   | 6 | 1.5% | ~$4.30 |
-   | 7 | 2.5% | ~$7.10 |
-   | 8 | 4% | ~$11.40 |
-   | 9 | 6% | ~$17.10 |
-   | 10 | 8% | ~$22.90 |
+   | 5 | 1% | ~$1.60 (under the $2 minimum after fees, so skipped) |
+   | 6 | 1.5% | ~$3.00 |
+   | 7 | 2.5% | ~$5.70 |
+   | 8 | 4% | ~$9.70 |
+   | 9 | 6% | ~$15.10 |
+   | 10 | 8% | ~$20.50 |
 
    A tighter stop means a bigger position for the same risk. Caps: 25% of
    equity in any one position (a rug skips the stop), 25% total at-stop risk
    across open positions. Tune with `CONVICTION_RISK_PCT`, `MAX_POSITION_PCT`,
    `MAX_TOTAL_RISK_PCT`.
-6. **Paper fills** (`agent/portfolio.py`): 1% platform fee, 0.001 SOL priority
-   fee, and constant-product price impact, so the results aren't fantasy numbers.
+6. **Paper fills** (`agent/portfolio.py`): prices come from DexScreener; no real
+   venue is touched. Every buy and sell pays what the same trade on Axiom would:
+   Axiom's 1% fee, the pool's own fee (pump.fun bonding curve 1.25%; PumpSwap
+   1.25% down to 0.30% as market cap grows, per pump.fun's fee docs; 0.25% on
+   Raydium-style pools), Solana network fees per transaction (0.001 SOL priority +
+   0.001 SOL Jito tip + base fee), and slippage (1.5% plus constant-product price
+   impact from the pool's liquidity). Sizing counts the flat network fees too, so
+   a trade too small to beat its own fees isn't taken. The report breaks fees down
+   by kind. The owner can change these through Duet's `steer.json`; Trencher can't.
    No limit on how many positions it holds (it has more eyes than a human);
    what limits it is the total at-stop risk budget (25%, which it can evolve
    between 10% and 40%) and cash. It stops
@@ -131,7 +138,9 @@ How it talks to Duet (`agent/bridge.py`): every 15 minutes Trencher pulls the
 
 - `pause_new_trades`: stop new buys; open positions are still managed
 - `settings`: any setting Trencher could evolve (stop size, dip range, call pace…),
-  clamped to the same bounds. Removing one puts it back.
+  plus the paper costs (`platform_fee_pct`, `pumpfun_curve_fee_pct`,
+  `other_dex_fee_pct`, `priority_fee_sol`, `bribe_sol`, `base_slippage_pct`,
+  `max_slippage_pct`), clamped to their bounds. Removing one puts it back.
 - `owner_note`: a short note the brain reads before every decision
 
 Steering is data, never code, and can't move the hard lines. With

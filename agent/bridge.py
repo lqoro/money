@@ -7,12 +7,14 @@ in this repo, checked out at DUET_SYNC_DIR:
     status.json  written by Trencher: wallet, positions, trades, lessons, brain usage
     REPORT.md    the same, readable on GitHub or a phone
     steer.json   written by Duet:  {"pause_new_trades": bool,
-                                    "settings": {"stop_loss_pct": 25, ...},
+                                    "settings": {"stop_loss_pct": 25, "bribe_sol": 0.002, ...},
                                     "owner_note": "short guidance for the brain"}
 
 Every DUET_SYNC_INTERVAL_MIN minutes Trencher pulls the branch, applies steer.json,
 writes its status and pushes. Steering is data, never code: only a pause flag,
-settings Trencher could evolve anyway (clamped to the same bounds), and a note.
+settings Trencher could evolve anyway, the paper fee and slippage settings
+(STEERABLE, which Trencher can't change itself), all clamped to their bounds, and
+a note.
 
 With AUTO_UPDATE=true it also checks origin/main and, when a merged change is
 waiting, stops cleanly so the launcher restarts it on the new code.
@@ -28,7 +30,7 @@ import time
 from pathlib import Path
 
 from . import journal, radar
-from .config import EVOLVABLE, ROOT, Config
+from .config import EVOLVABLE, ROOT, STEERABLE, Config
 
 log = logging.getLogger(__name__)
 
@@ -42,7 +44,7 @@ def git(repo: Path, *args: str, timeout: float = 60) -> subprocess.CompletedProc
 
 def apply_steering(cfg: Config, steer: dict) -> dict:
     """Apply a steer.json payload to cfg. Returns what was applied. Unknown keys and
-    settings outside EVOLVABLE are ignored; values are clamped to their bounds."""
+    settings outside EVOLVABLE and STEERABLE are ignored; values are clamped to their bounds."""
     applied: dict = {}
     pause = bool(steer.get("pause_new_trades", False))
     if pause != cfg.pause_new_trades:
@@ -52,11 +54,12 @@ def apply_steering(cfg: Config, steer: dict) -> dict:
     settings = steer.get("settings") or {}
     if isinstance(settings, dict):
         for name, value in settings.items():
-            if name not in EVOLVABLE:
+            bounds = EVOLVABLE.get(name) or STEERABLE.get(name)
+            if not bounds:
                 log.warning("Duet steering: ignoring %r (not a steerable setting)", name)
                 continue
             try:
-                lo, hi = EVOLVABLE[name]
+                lo, hi = bounds
                 value = min(hi, max(lo, float(value)))
             except (TypeError, ValueError):
                 continue
@@ -91,7 +94,8 @@ def build_report(agent) -> tuple[dict, str]:
                   "usage_48h": agent.brain.usage_view()},
         **view,
         "strategy": cfg.strategy_view(),
-        "recent_trades": trades[-20:],
+        "paper_costs": {name: getattr(cfg, name) for name in STEERABLE},
+        "recent_trades": [{"ca": t.get("token"), **t} for t in trades[-20:]],
         "recent_lessons": journal.recent_lessons(cfg, 10),
         "learned_rules": journal.learned_rules(cfg),
         "meta": radar.public_view(agent.meta, headlines=5),
@@ -106,6 +110,10 @@ def build_report(agent) -> tuple[dict, str]:
         "",
         f"- Equity: ${eq:,.2f} ({100 * (eq / cfg.starting_cash_usd - 1):+.1f}% vs ${cfg.starting_cash_usd:.0f} start)",
         f"- Closed trades: {len(closes)}" + (f", {wins} wins" if closes else ""),
+        f"- Fees paid: ${view.get('fees_paid_usd', 0):.2f}"
+        + (" (" + ", ".join(f"{k} ${v:.2f}" for k, v in (view.get("fees_by_kind_usd") or {}).items()) + ")"
+           if view.get("fees_by_kind_usd") else "")
+        + f", plus ${view.get('slippage_paid_usd', 0):.2f} lost to slippage",
         f"- New trades: {'PAUSED by Duet' if cfg.pause_new_trades else 'on'}",
         f"- Brain: {status['brain']['mode']}, {status['brain']['usage_48h']['brain_calls']} calls and "
         f"{status['brain']['usage_48h']['plan_limit_hits']} plan-limit hits in 48h",
@@ -113,11 +121,20 @@ def build_report(agent) -> tuple[dict, str]:
         "## Open positions",
     ]
     positions = view.get("open_positions") or []
-    lines += [f"- {p.get('symbol')} ({p.get('setup')}): cost ${p.get('cost_usd')}, {p.get('multiple', '?')}x"
+    lines += [f"- {p.get('symbol')} ({p.get('setup')}): cost ${p.get('cost_usd')}, {p.get('multiple', '?')}x, "
+              f"fees ${p.get('fees_usd', 0):.2f}  \n  CA `{p.get('ca')}`"
               for p in positions] or ["- none"]
+    lines += ["", "## Recent trades"]
+    lines += [f"- {t.get('ts', '')[11:16]}Z {t.get('event')} {t.get('symbol')}"
+              + (f" ${t.get('size_usd', 0):.2f}" if t.get("event") == "BUY" else "")
+              + (f" for ${t.get('proceeds_usd', 0):.2f}" if t.get("event") == "SELL" else "")
+              + (f" {t.get('pnl_pct', 0):+.0f}% (${t.get('pnl_usd', 0):+.2f})" if t.get("event") == "CLOSE" else "")
+              + (f", fees ${t['fees_usd']:.2f}" if t.get("fees_usd") is not None else "")
+              + f"  \n  CA `{t.get('ca') or t.get('token')}`" for t in trades[-10:]] or ["- none yet"]
     lines += ["", "## Last closes"]
     lines += [f"- {t.get('symbol')}: {t.get('pnl_pct', 0):+.0f}% (${t.get('pnl_usd', 0):+.2f}), "
-              f"{(t.get('exit_reasons') or ['?'])[-1]}" for t in closes[-10:]] or ["- none yet"]
+              f"{(t.get('exit_reasons') or ['?'])[-1]}  \n  CA `{t.get('ca') or t.get('token')}`"
+              for t in closes[-10:]] or ["- none yet"]
     lines += ["", "## Recent lessons", *(status["recent_lessons"] or ["- none yet"])]
     if agent.meta.get("meta_summary"):
         lines += ["", "## Meta right now", agent.meta["meta_summary"]]

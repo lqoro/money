@@ -30,8 +30,17 @@ class Config:
     broke_equity_usd: float = 5.0  # below this the agent stops trading entirely
 
     # --- Paper execution model ---------------------------------------------
-    platform_fee_pct: float = 1.0  # terminal fee per swap (Axiom/Padre class)
-    priority_fee_sol: float = 0.001  # priority + bribe per tx (V2)
+    # Every paper fill pays what the same trade on Axiom (Lenny's terminal) would:
+    # the terminal fee, the pool's own fee, Solana network fees and slippage.
+    platform_fee_pct: float = 1.0  # Axiom's fee per swap (its small cashback isn't counted)
+    pumpfun_curve_fee_pct: float = 1.25  # pump.fun bonding curve: 0.95% protocol + 0.30% creator
+    # PumpSwap fee by market cap in SOL, "tier start:fee%". From pump.fun's fee docs
+    # (Sep 2026); inside tiers the docs list but these don't, the higher fee applies.
+    pumpswap_fee_tiers: str = "0:1.25,420:1.2,1470:1.15,2460:1.1,9820:0.95,34380:0.7,63860:0.475,98240:0.3"
+    other_dex_fee_pct: float = 0.25  # Raydium/Orca/Meteora pool fee (varies by pool)
+    network_fee_sol: float = 0.000005  # Solana base fee per signature
+    priority_fee_sol: float = 0.001  # priority fee per tx (V2)
+    bribe_sol: float = 0.001  # Jito tip / bribe per tx (V2)
     base_slippage_pct: float = 1.5  # spread/latency cost on top of price impact
     max_slippage_pct: float = 20.0  # sell slippage cap (V17)
 
@@ -196,4 +205,16 @@ EVOLVABLE: dict[str, tuple[float, float]] = {
     "migrated_max_age_hours": (2, 48),
     "reentry_window_hours": (0.5, 12),
     "max_brain_calls_per_hour": (0, 300),  # 0 = no cap
+}
+
+# Settings only the owner may change (through Duet's steer.json), never Trencher
+# itself: it shouldn't be able to make its own trades cheaper.
+STEERABLE: dict[str, tuple[float, float]] = {
+    "platform_fee_pct": (0, 2),
+    "pumpfun_curve_fee_pct": (0, 3),
+    "other_dex_fee_pct": (0, 3),
+    "priority_fee_sol": (0, 0.05),
+    "bribe_sol": (0, 0.05),
+    "base_slippage_pct": (0, 10),
+    "max_slippage_pct": (5, 50),
 }
