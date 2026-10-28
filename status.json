@@ -1,5 +1,5 @@
 {
- "updated_at": "2026-10-28T13:52:46Z",
+ "updated_at": "2026-10-28T13:52:50Z",
  "paused_new_trades": false,
  "brain": {
   "mode": "subscription",
@@ -17,15 +17,20 @@
  "started_with_usd": 100.0,
  "realized_pnl_usd": 0.0,
  "fees_paid_usd": 0.13,
+ "fees_by_kind_usd": {},
+ "slippage_paid_usd": 0.0,
  "closed_trades": 0,
  "win_rate": null,
  "open_positions": [
   {
    "symbol": "Something",
+   "ca": "AZdhikmyj6ibsejv7EjML9SfNmuiMvwDrKXTEU2zpump",
    "setup": "DIP",
    "cost_usd": 3.33,
    "value_usd": 3.39,
    "multiple": 1.06,
+   "fees_usd": 0.0,
+   "slippage_usd": 0.0,
    "initials_taken": false
   }
  ],
@@ -46,8 +51,18 @@
   "reentry_window_hours": 3.0,
   "max_brain_calls_per_hour": 0
  },
+ "paper_costs": {
+  "platform_fee_pct": 1.0,
+  "pumpfun_curve_fee_pct": 1.25,
+  "other_dex_fee_pct": 0.25,
+  "priority_fee_sol": 0.001,
+  "bribe_sol": 0.001,
+  "base_slippage_pct": 1.5,
+  "max_slippage_pct": 20.0
+ },
  "recent_trades": [
   {
+   "ca": "AZdhikmyj6ibsejv7EjML9SfNmuiMvwDrKXTEU2zpump",
    "ts": "2026-10-28T13:15:20Z",
    "event": "BUY",
    "id": "98bd92f6",
