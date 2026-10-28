@@ -1,14 +1,14 @@
 # Trencher live report
 
-Updated 2026-10-28T13:22:11Z (paper trading, never real money)
+Updated 2026-10-28T13:37:13Z (paper trading, never real money)
 
-- Equity: $99.78 (-0.2% vs $100 start)
+- Equity: $99.75 (-0.2% vs $100 start)
 - Closed trades: 0
 - New trades: on
-- Brain: subscription, 10 calls and 0 plan-limit hits in 48h
+- Brain: subscription, 16 calls and 0 plan-limit hits in 48h
 
 ## Open positions
-- Something (DIP): cost $3.33, 0.97x
+- Something (DIP): cost $3.33, 0.96x
 
 ## Last closes
 - none yet
