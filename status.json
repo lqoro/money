@@ -1,0 +1,174 @@
+{
+ "updated_at": "2026-10-28T13:22:11Z",
+ "paused_new_trades": false,
+ "brain": {
+  "mode": "subscription",
+  "paused_until": null,
+  "usage_48h": {
+   "hours": 48,
+   "brain_calls": 10,
+   "plan_limit_hits": 0,
+   "candidates_skipped_no_brain": 0,
+   "stop_reviews_without_brain": 0
+  }
+ },
+ "equity_usd": 99.78,
+ "cash_usd": 96.67,
+ "started_with_usd": 100.0,
+ "realized_pnl_usd": 0.0,
+ "fees_paid_usd": 0.13,
+ "closed_trades": 0,
+ "win_rate": null,
+ "open_positions": [
+  {
+   "symbol": "Something",
+   "setup": "DIP",
+   "cost_usd": 3.33,
+   "value_usd": 3.11,
+   "multiple": 0.97,
+   "initials_taken": false
+  }
+ ],
+ "strategy": {
+  "stop_loss_pct": 30.0,
+  "max_total_risk_pct": 25.0,
+  "trailing_stop_pct": 35.0,
+  "take_initials_multiple": 2.0,
+  "time_stop_minutes": 45.0,
+  "max_hold_hours": 12.0,
+  "dip_min_drawdown_pct": 40.0,
+  "dip_max_drawdown_pct": 75.0,
+  "dip_min_peak_mcap_usd": 70000.0,
+  "good_vol_5m_usd": 10000.0,
+  "min_vol_5m_usd": 2000.0,
+  "final_stretch_min_bond_pct": 50.0,
+  "migrated_max_age_hours": 12.0,
+  "reentry_window_hours": 3.0,
+  "max_brain_calls_per_hour": 0
+ },
+ "recent_trades": [
+  {
+   "ts": "2026-10-28T13:15:20Z",
+   "event": "BUY",
+   "id": "98bd92f6",
+   "token": "AZdhikmyj6ibsejv7EjML9SfNmuiMvwDrKXTEU2zpump",
+   "symbol": "Something",
+   "setup": "DIP",
+   "size_usd": 3.33,
+   "conviction": 5,
+   "risk_usd": 1.0,
+   "price": 0.001231269668714997,
+   "mcap": 1208302.0,
+   "exit_plan": {
+    "take_initials_multiple": 2.0,
+    "stop_loss_pct": 25.0,
+    "trailing_stop_pct": 35.0,
+    "time_stop_minutes": 60.0,
+    "target_mcap_usd": 2200000.0
+   },
+   "thesis": "The coin proved itself: it ran to a $2.3M peak with $6M of volume in 24h. It's now 47.5% off that peak 2.5h later, which is a normal correction, and it's bouncing off the hour's low. Attention is holding. 5m volume is $17.8k at 0.86x the hourly average, and buyers outnumber sellers about 3:1 (V1: buys on a dip are bullish). The site shows this exact CA and the holder structure is clean (V3, V6, V13). At $1.2M market cap it's the largest of the $Something clones, so it's probably the original (V1, V3). The bet is a retest of the $2M+ area while the joke still has a crowd."
+  }
+ ],
+ "recent_lessons": [],
+ "learned_rules": "",
+ "meta": {
+  "age_minutes": 8,
+  "meta_summary": "It's quiet in the trenches, and the loudest Solana story is a warning. $LAPTOP is Hunter Biden's own coin: it pumped, then fell about 98% on day one. A political figure pushed the CA, so it's a hard no under V13, along with any vamp or \"revival\" of it. The rest of the radar is macro talk, not a meme meta. The headlines and categories are about tokenized stocks, RWA, stablecoins and Robinhood/Circle, and on the memecoin side that \"$443M frenzy\" is described as already dissolved, so that story is fading. The rising crowd interest is in big established names (PENGU, PEPE, STONK, ORE), not fresh pump.fun ideas. The only hint of a meta is the calendar: Halloween is in 3 days and $PUMPKIN/$HELL are showing up, but with 1 mention each that's noise, not a confirmed meta. A memecoin that could ride this would be an original, funny Halloween idea, or maybe a stonk/tokenized-stock joke, that has already bonded, has $10k+ in 5-minute volume and clean holders (V1, V5, V6). Until something like that shows up with real volume, I'm on PASS.",
+  "top_narratives": [
+   "tokenized",
+   "robinhood",
+   "referral",
+   "pepe",
+   "stablecoin",
+   "trump",
+   "stock",
+   "adds",
+   "rally",
+   "code",
+   "kimchi",
+   "faster",
+   "bot",
+   "stop",
+   "hunter",
+   "machine",
+   "times",
+   "slowing",
+   "machine slowing",
+   "dogecoin"
+  ],
+  "trending_categories": [
+   "Base Native",
+   "Real World Assets (RWA)",
+   "Binance Alpha Spotlight",
+   "Mobile Mining",
+   "Alleged SEC Securities",
+   "Made in USA"
+  ],
+  "trending_coins": [
+   "PENGU",
+   "PEARL",
+   "PEPE",
+   "BTC",
+   "ZEC",
+   "QTC",
+   "QNT",
+   "INIT",
+   "STONK",
+   "XLM",
+   "ORE",
+   "RITUAL",
+   "PONS",
+   "NEAR",
+   "AERO"
+  ],
+  "hot_tickers": [
+   {
+    "ticker": "$MT",
+    "mentions": 3
+   },
+   {
+    "ticker": "$LAPTOP",
+    "mentions": 2
+   },
+   {
+    "ticker": "$LICK",
+    "mentions": 1
+   },
+   {
+    "ticker": "$HELL",
+    "mentions": 1
+   },
+   {
+    "ticker": "$AMD",
+    "mentions": 1
+   },
+   {
+    "ticker": "$NETWORK",
+    "mentions": 1
+   },
+   {
+    "ticker": "$ALIENPIPPIN",
+    "mentions": 1
+   },
+   {
+    "ticker": "$PUMPKIN",
+    "mentions": 1
+   },
+   {
+    "ticker": "$INFX",
+    "mentions": 1
+   },
+   {
+    "ticker": "$AI",
+    "mentions": 1
+   }
+  ],
+  "headlines": [
+   "Faster Solana slots fail to stop memecoin bot snipers",
+   "Top 6 memecoins to check out in October 2026",
+   "Former Doom Developer Could Be in Trouble as Bethesda Goes After Doom Memecoin",
+   "Visa to close Crossmint memecoin rewards loophole following The Block investigation: report",
+   "Hunter Biden lashes out after $LAPTOP meme coin collapse"
+  ]
+ }
+}
