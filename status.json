@@ -1,12 +1,12 @@
 {
- "updated_at": "2026-10-28T23:43:18Z",
+ "updated_at": "2026-10-28T23:58:29Z",
  "paused_new_trades": false,
  "brain": {
   "mode": "subscription",
   "paused_until": null,
   "usage_48h": {
    "hours": 48,
-   "brain_calls": 200,
+   "brain_calls": 203,
    "plan_limit_hits": 0,
    "candidates_skipped_no_brain": 0,
    "stop_reviews_without_brain": 0
@@ -310,54 +310,54 @@
  ],
  "learned_rules": "",
  "meta": {
-  "age_minutes": 3,
+  "age_minutes": 7,
   "meta_summary": "It's quiet. I don't see a live trench meta right now. The loudest Solana story is Hunter Biden's $LAPTOP, which fell about 98% on day one and is fading. A political figure pushed that contract address, so it's a hard no, and the same goes for any vamp or \"revival\" of it (V13). The Robinhood/Circle hype is also dying. The money that's rising is bucket-2 money, not trench money: tokenized stocks and Robinhood Chain, stablecoins/RWA, PENGU and PEPE trending, and BTC above $81k ahead of the Fed (V8). Single-digit ticker mentions like $MT (3), $CHIMP and $LICK (1 each) are attention farming, not a crowd (V7). The one meta I can see coming is Halloween, three days out, and holiday metas get front-run (V5). So the coin that rides it will be an original, funny spooky idea, maybe a pumpkin-ticker or tokenized-stonk joke, not a knockoff (V1). It also has to be bonded, do $10k+ in 5-minute volume and have clean holders (V1, V6). Nothing like that has shown up yet. PASS for now; watching for pumpkins.",
   "top_narratives": [
    "robinhood",
    "tokenized",
    "pepe",
-   "rally",
    "stock",
+   "rally",
    "prediction",
    "trump",
    "referral",
-   "fed",
    "app",
+   "fed",
    "adds",
    "stocks",
    "stablecoin",
-   "dogecoin",
    "support",
+   "dogecoin",
    "machine",
    "times",
    "slowing",
    "machine slowing",
-   "fees"
+   "code"
   ],
   "trending_categories": [
-   "The Boy\u2019s Club",
-   "Frog-Themed",
-   "Quantum-Resistant",
+   "Made in China",
    "Alleged SEC Securities",
-   "Zero Knowledge (ZK)",
-   "Proof of Work (PoW)"
+   "Exchange-based Tokens",
+   "Proof of Work (PoW)",
+   "Layer 1 (L1)",
+   "Frog-Themed"
   ],
   "trending_coins": [
    "PENGU",
    "PEPE",
    "SOL",
+   "PEARL",
+   "QTC",
    "KNTQ",
    "XRP",
-   "QTC",
    "SUI",
-   "PEARL",
-   "PONS",
-   "NEAR",
-   "ZEC",
-   "RAY",
    "UNI",
-   "BTC",
-   "CC"
+   "PONS",
+   "TAO",
+   "ASTER",
+   "HYPE",
+   "ZEC",
+   "NEAR"
   ],
   "hot_tickers": [
    {
@@ -366,18 +366,14 @@
    },
    {
     "ticker": "$MT",
-    "mentions": 2
+    "mentions": 3
    },
    {
     "ticker": "$TRUMP",
     "mentions": 1
    },
    {
-    "ticker": "$HYPE",
-    "mentions": 1
-   },
-   {
-    "ticker": "$TROVE",
+    "ticker": "$LICK",
     "mentions": 1
    },
    {
