@@ -113,6 +113,17 @@ class Config:
     api_host: str = "127.0.0.1"
     api_token: str = ""  # if set, requests need "Authorization: Bearer <token>"
 
+    # --- Claude Duet bridge (see agent/bridge.py) ----------------------------
+    duet_sync_dir: str = ""  # git checkout of the shared branch; empty = off
+    duet_sync_branch: str = "trencher-live"
+    duet_sync_interval_min: float = 15.0
+    auto_update: bool = False  # restart on new commits to auto_update_branch
+    auto_update_branch: str = "main"
+    # Set at runtime by Duet's steer.json, not from the environment.
+    pause_new_trades: bool = False
+    owner_note: str = ""
+    steer_pinned: dict = field(default_factory=dict, repr=False)  # name → value before steering
+
     # --- Notifications ------------------------------------------------------
     notify_webhook_url: str = ""  # Discord/Slack/any JSON webhook
     telegram_bot_token: str = ""
@@ -131,6 +142,8 @@ class Config:
             if raw is None or raw == "":
                 continue
             current = getattr(cfg, f.name)
+            if isinstance(current, dict):
+                continue
             if isinstance(current, bool):
                 value = raw.strip().lower() in ("1", "true", "yes", "on")
             elif isinstance(current, int):
@@ -155,7 +168,7 @@ class Config:
             return {}
         applied = {}
         for name, value in json.loads(path.read_text()).items():
-            if name in EVOLVABLE and not os.environ.get(name.upper()):
+            if name in EVOLVABLE and not os.environ.get(name.upper()) and name not in self.steer_pinned:
                 lo, hi = EVOLVABLE[name]
                 setattr(self, name, min(hi, max(lo, float(value))))
                 applied[name] = getattr(self, name)

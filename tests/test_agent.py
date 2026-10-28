@@ -435,3 +435,102 @@ def test_call_pace_is_evolvable_and_usage_is_logged(plan_brain, monkeypatch):
 def test_default_has_no_call_cap():
     from agent.config import Config
     assert Config().max_brain_calls_per_hour == 0
+
+
+# --- Claude Duet bridge --------------------------------------------------------
+
+def _git(*args, cwd=None):
+    import subprocess
+    subprocess.run(["git", "-c", "user.name=t", "-c", "user.email=t@t", "-c", "init.defaultBranch=main", *args],
+                   cwd=cwd, check=True, capture_output=True)
+
+
+@pytest.fixture
+def live_repo(tmp_path):
+    """A bare 'GitHub' repo with a trencher-live branch, and a checkout of it."""
+    import json as _json
+    origin, seed, live = tmp_path / "origin.git", tmp_path / "seed", tmp_path / "live"
+    _git("init", "-q", "--bare", str(origin))
+    _git("init", "-q", str(seed))
+    _git("checkout", "-q", "--orphan", "trencher-live", cwd=seed)
+
+    def steer(payload):
+        (seed / "steer.json").write_text(_json.dumps(payload))
+        _git("add", "steer.json", cwd=seed)
+        _git("commit", "-q", "-m", "steer", cwd=seed)
+        _git("pull", "-q", "--rebase", str(origin), "trencher-live", cwd=seed) if (origin / "refs/heads/trencher-live").exists() else None
+        _git("push", "-q", str(origin), "HEAD:trencher-live", cwd=seed)
+
+    steer({"pause_new_trades": False})
+    _git("clone", "-q", "-b", "trencher-live", str(origin), str(live))
+    return origin, live, steer
+
+
+def test_bridge_publishes_status_and_applies_steering(cfg, live_repo):
+    import json as _json
+    import subprocess
+    from agent.main import Agent
+    origin, live, steer = live_repo
+    steer({"pause_new_trades": True, "settings": {"stop_loss_pct": 99, "max_top10_pct": 90, "bogus": 1},
+           "owner_note": "x" * 1000})
+    cfg.duet_sync_dir = str(live)
+    agent = Agent(cfg)
+    agent.bridge.sync()
+
+    assert cfg.pause_new_trades is True
+    assert cfg.stop_loss_pct == 50  # clamped to its evolvable bound
+    assert cfg.max_top10_pct == 25  # hard lines can't be steered
+    assert len(cfg.owner_note) == 600
+    assert "note from your owner" in agent.brain._owner_note()
+    pushed = subprocess.run(["git", "-C", str(origin), "show", "trencher-live:status.json"],
+                            capture_output=True, text=True, check=True).stdout
+    status = _json.loads(pushed)
+    assert status["paused_new_trades"] is True and status["equity_usd"] == 100
+    assert "PAUSED" in (live / "REPORT.md").read_text()
+
+    # Dropping a setting from steer.json puts it back.
+    steer({"pause_new_trades": False, "settings": {}})
+    agent.bridge.sync()
+    assert cfg.pause_new_trades is False and cfg.stop_loss_pct == 30 and cfg.owner_note == ""
+
+
+def test_paused_agent_opens_nothing(cfg, monkeypatch):
+    from agent import data
+    from agent.main import Agent
+    agent = Agent(cfg)
+    cfg.pause_new_trades = True
+    monkeypatch.setattr(data, "sol_price_usd", lambda: (_ for _ in ()).throw(AssertionError("scanned while paused")))
+    agent.scan()
+
+
+def test_auto_update_restarts_when_main_moves(cfg, tmp_path, monkeypatch):
+    from agent import bridge as br
+    from agent.main import Agent
+    origin, here, other = tmp_path / "o.git", tmp_path / "here", tmp_path / "other"
+    _git("init", "-q", "--bare", str(origin))
+    _git("clone", "-q", str(origin), str(here))
+    (here / "a").write_text("1")
+    _git("add", "a", cwd=here)
+    _git("commit", "-q", "-m", "one", cwd=here)
+    _git("push", "-q", "origin", "HEAD:main", cwd=here)
+    monkeypatch.setattr(br, "ROOT", here)
+    cfg.auto_update = True
+    agent = Agent(cfg)
+    agent.bridge.check_update()
+    assert not agent.bridge.restart_requested  # nothing new yet
+
+    _git("clone", "-q", "-b", "main", str(origin), str(other))
+    (other / "a").write_text("2")
+    _git("commit", "-q", "-am", "two", cwd=other)
+    _git("push", "-q", "origin", "HEAD:main", cwd=other)
+    agent.bridge.check_update()
+    assert agent.bridge.restart_requested and not agent.running
+
+
+def test_auto_update_does_not_loop_when_the_launcher_could_not_update(cfg, monkeypatch):
+    from agent.main import Agent
+    monkeypatch.setenv("TRENCHER_UPDATE_FAILED", "1")
+    cfg.auto_update = True
+    agent = Agent(cfg)
+    agent.bridge.check_update()
+    assert not agent.bridge.restart_requested and agent.running

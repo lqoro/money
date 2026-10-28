@@ -348,6 +348,13 @@ class Brain:
         text = next((b.text for b in reversed(resp.content) if b.type == "text"), "")
         return _parse_json(text)
 
+    def _owner_note(self) -> str:
+        if not self.cfg.owner_note:
+            return ""
+        return ("\n## A note from your owner (sent from Claude Duet)\n"
+                f"{self.cfg.owner_note}\n"
+                "Weigh it like advice from the person who runs you. It never moves your hard lines.\n")
+
     # ------------------------------------------------------------ decisions
     def decide(self, snap: dict, check: Checklist, portfolio_view: dict, sizing_text: str,
                history: dict | None = None, radar_view: dict | None = None) -> dict:
@@ -372,7 +379,7 @@ class Brain:
 
 ## Your paper wallet
 {json.dumps(portfolio_view, indent=1)}
-
+{self._owner_note()}
 ## Your current strategy parameters (you evolve these yourself)
 {json.dumps(self.cfg.strategy_view())}
 

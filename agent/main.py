@@ -13,6 +13,7 @@ import time
 from . import data, journal, radar
 from .api import start_api
 from .brain import Brain
+from .bridge import DuetBridge
 from .checklist import holder_stats, market_prefilter, run_checklist
 from .config import Config
 from .evolve import evolve
@@ -40,6 +41,7 @@ class Agent:
         self.peaks: dict[str, list[float]] = watch.get("peaks", {})
         self.watchlist: dict[str, dict] = watch.get("watchlist", {})
         self.meta: dict = radar.load_radar(cfg)  # the web crawler's view of the meta
+        self.bridge = DuetBridge(cfg, self)
 
     # ---------------------------------------------------------------- web crawler
     def refresh_radar(self, force: bool = False) -> None:
@@ -98,6 +100,8 @@ class Agent:
     def scan(self) -> None:
         self.pf.roll_day()
         ok, why = self.pf.can_open(self.cfg)
+        if ok and self.cfg.pause_new_trades:
+            ok, why = False, "paused from Claude Duet"
         if not ok:
             log.info("Not opening new trades: %s", why)
             return
@@ -325,8 +329,10 @@ class Agent:
         notify(self.cfg, f"🪖 Trencher online. Paper equity ${self.pf.equity():.2f}.")
         last_scan = 0.0
         start_api(self.cfg, self.status, self.inspect_token)
+        self.bridge.tick(force=True)
         while self.running:
             try:
+                self.bridge.tick()
                 self.refresh_radar()
                 self.monitor()
                 if time.time() - last_scan >= self.cfg.scan_interval_sec:
@@ -338,6 +344,11 @@ class Agent:
                 break
             time.sleep(self.cfg.monitor_interval_sec)
         self.pf.save(self.cfg)
+        if self.bridge.dir:
+            try:
+                self.bridge.sync()  # last report before going offline
+            except Exception:
+                log.exception("final Duet sync failed")
         log.info("Trencher offline. Equity $%.2f.", self.pf.equity())
 
     def stop(self, *_):

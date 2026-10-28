@@ -110,9 +110,38 @@ Without the Claude Code CLI (or an `ANTHROPIC_API_KEY`) it still runs, on a
 rules-only brain (checklist score decides). That's useful for testing, but the
 point is the Claude brain.
 
-### 24/7 hosting
+### 24/7 on a Mac mini, steered from Claude Duet
 
-It needs a machine that stays on. Any small VPS works.
+This is the main setup. Trencher runs nonstop on your Mac mini; Claude on your
+Max plan makes every call; your Claude Duet channel reads its reports and steers it.
+
+```bash
+git clone https://github.com/lqoro/money ~/money && cd ~/money
+bash deploy/mac/setup.sh
+```
+
+The script makes the Python environment, checks Claude Code is installed and
+logged in, sets up the `trencher-live` branch next to the repo, and installs a
+launchd job that starts Trencher at login and restarts it if it stops. Keep the
+Mac awake (System Settings > Energy).
+
+How it talks to Duet (`agent/bridge.py`): every 15 minutes Trencher pulls the
+`trencher-live` branch, applies `steer.json`, and pushes `status.json` and
+`REPORT.md`. Duet reads those and writes `steer.json`:
+
+- `pause_new_trades`: stop new buys; open positions are still managed
+- `settings`: any setting Trencher could evolve (stop size, dip range, call pace…),
+  clamped to the same bounds. Removing one puts it back.
+- `owner_note`: a short note the brain reads before every decision
+
+Steering is data, never code, and can't move the hard lines. With
+`AUTO_UPDATE=true` (the setup turns it on), Trencher restarts itself on new
+code whenever a change is merged to `main`, so fixes made through Duet land
+without touching the Mac.
+
+### Other hosting
+
+Any machine that stays on works.
 
 - **Docker**: `docker compose up -d --build` (restarts automatically; state is in `./memory`).
 - **systemd**: see `deploy/trencher.service`.
