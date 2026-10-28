@@ -1,43 +1,31 @@
 {
- "updated_at": "2026-10-28T22:58:00Z",
+ "updated_at": "2026-10-28T23:13:05Z",
  "paused_new_trades": false,
  "brain": {
   "mode": "subscription",
   "paused_until": null,
   "usage_48h": {
    "hours": 48,
-   "brain_calls": 183,
+   "brain_calls": 188,
    "plan_limit_hits": 0,
    "candidates_skipped_no_brain": 0,
    "stop_reviews_without_brain": 0
   }
  },
- "equity_usd": 101.39,
- "cash_usd": 99.25,
+ "equity_usd": 100.47,
+ "cash_usd": 100.47,
  "started_with_usd": 100.0,
- "realized_pnl_usd": -2.26,
- "fees_paid_usd": 1.67,
+ "realized_pnl_usd": 0.47,
+ "fees_paid_usd": 1.91,
  "fees_by_kind_usd": {
-  "axiom": 0.15,
-  "network": 1.23,
-  "pool": 0.16
+  "axiom": 0.17,
+  "network": 1.43,
+  "pool": 0.17
  },
- "slippage_paid_usd": 0.22,
- "closed_trades": 2,
- "win_rate": 0.0,
- "open_positions": [
-  {
-   "symbol": "CATBOT",
-   "ca": "dyw5fDNv91eknniMG4tGCU1ZrzjuxbpsLiEzih6pump",
-   "setup": "MIGRATED",
-   "cost_usd": 2.91,
-   "value_usd": 2.14,
-   "multiple": 3.83,
-   "fees_usd": 0.77,
-   "slippage_usd": 0.11,
-   "initials_taken": true
-  }
- ],
+ "slippage_paid_usd": 0.25,
+ "closed_trades": 3,
+ "win_rate": 0.33,
+ "open_positions": [],
  "strategy": {
   "stop_loss_pct": 30.0,
   "max_total_risk_pct": 25.0,
@@ -263,31 +251,82 @@
    "price": 0.002235,
    "mcap": 2220477.0,
    "reason": "target mcap $2,000,000 reached"
+  },
+  {
+   "ca": "dyw5fDNv91eknniMG4tGCU1ZrzjuxbpsLiEzih6pump",
+   "ts": "2026-10-28T22:59:40Z",
+   "event": "SELL",
+   "id": "9c87dd2b",
+   "token": "dyw5fDNv91eknniMG4tGCU1ZrzjuxbpsLiEzih6pump",
+   "symbol": "CATBOT",
+   "fraction": 1.0,
+   "proceeds_usd": 1.22,
+   "fees_usd": 0.2336,
+   "slippage_usd": 0.0221,
+   "price": 0.001718,
+   "mcap": 1706603.0,
+   "reason": "trailing stop: -35% from peak"
+  },
+  {
+   "ca": "dyw5fDNv91eknniMG4tGCU1ZrzjuxbpsLiEzih6pump",
+   "ts": "2026-10-28T22:59:46Z",
+   "event": "CLOSE",
+   "id": "9c87dd2b",
+   "symbol": "CATBOT",
+   "token": "dyw5fDNv91eknniMG4tGCU1ZrzjuxbpsLiEzih6pump",
+   "setup": "MIGRATED",
+   "cost_usd": 2.91,
+   "proceeds_usd": 5.64,
+   "fees_usd": 1.01,
+   "slippage_usd": 0.14,
+   "pnl_usd": 2.73,
+   "pnl_pct": 93.8,
+   "held_minutes": 78,
+   "entry_mcap": 638465.0,
+   "exit_mcap": 1706603.0,
+   "peak_multiple": 4.44,
+   "exit_reasons": [
+    "took initials at 2.02x",
+    "target mcap $2,000,000 reached",
+    "trailing stop: -35% from peak"
+   ],
+   "stop_reviews": 0,
+   "thesis": "The leading Cat Bot pair (the other CATBOT pairs I found are dead copies) is consolidating 24.5% under its $845k peak with $12.9k 5m volume and 885 buys to 359 sells (V1, V6). Holder structure is extremely clean: top 10 hold 3.3% ex-pool, dev and insiders 0%, 4,015 holders (V13). The last 15m candle closed higher than the one before, a possible higher low. If the crowd keeps arriving, it retests the peak and has room toward $1.3M+. If 5m volume keeps fading, the time stop takes me out fast.",
+   "exit_plan": {
+    "take_initials_multiple": 2.0,
+    "stop_loss_pct": 30.0,
+    "trailing_stop_pct": 35.0,
+    "time_stop_minutes": 30.0,
+    "target_mcap_usd": 2000000.0,
+    "_target_hit": true
+   },
+   "lesson": "Expected: the original Cat Bot pair would retest its $845k peak, because holders were clean (top 10 at 3.3%, dev/insiders 0%) and 5m volume was organic at $12.9k (V1, V6, V13). Happened: it ran to 4.44x peak, I took initials at 2x, and the target plus a 35% trail closed the rest around 2.67x, so the clean MIGRATED dip-buy worked but the trail gave back about 40% of the peak, and fees ate roughly a third of a $2.91 position. Rule: once initials are out and the coin is past 4x, tighten the trail to about 25% from peak, and don't open positions under about $5 where fees ruin the math, because sell initials only protects the cost basis, not the runner (V11)."
   }
  ],
  "recent_lessons": [
   "- [2026-10-28 14:15] Expected: a $1.2M dip 47% off the $2.3M peak, with $17.8k 5m volume and buys outnumbering sells 3:1, to retest $2M while the joke still had a crowd (V1 buys-on-dip, V6). What happened: it peaked at 1.09x, then went flat and got time-stopped at 60 minutes with market cap basically unchanged (-0.6%), but I still lost 15.4% because fees and slippage ate about 9% of a $3.33 position, and the rest of the gap is execution I can't see in the record. Rule: on DIP setups, enter only after the dip makes a higher low with 5m volume rising (0.86x the hourly average is fading, not holding). Never open a position so small that round-trip friction is over 3%, because a flat chart is a guaranteed loss at that size.",
-  "- [2026-10-28 22:50] Expected: CATCULUS at $460k was the flow leader ($59k 5m volume, 913/363 buys/sells, top 10 at 3.6%), so a momentum entry near the high should either keep running or give a clean -30% exit. What happened: it peaked at 1.24x, the bundle/insiders dumped, and it gapped through the -30% stop to -59% in 42 minutes. Clean top-10 numbers don't rule out bundles spread across many small wallets (V3, V5), and $0.50 in fees on a $2.96 position was a 17% loss before the coin even moved. Rule: no MIGRATED momentum buys within ~20% of the local high unless bundle data is verified. Wait for the V1 0.618 fib or point-of-control retest instead, and skip any position so small that fees are over 5% of cost."
+  "- [2026-10-28 22:50] Expected: CATCULUS at $460k was the flow leader ($59k 5m volume, 913/363 buys/sells, top 10 at 3.6%), so a momentum entry near the high should either keep running or give a clean -30% exit. What happened: it peaked at 1.24x, the bundle/insiders dumped, and it gapped through the -30% stop to -59% in 42 minutes. Clean top-10 numbers don't rule out bundles spread across many small wallets (V3, V5), and $0.50 in fees on a $2.96 position was a 17% loss before the coin even moved. Rule: no MIGRATED momentum buys within ~20% of the local high unless bundle data is verified. Wait for the V1 0.618 fib or point-of-control retest instead, and skip any position so small that fees are over 5% of cost.",
+  "- [2026-10-28 22:59] Expected: the original Cat Bot pair would retest its $845k peak, because holders were clean (top 10 at 3.3%, dev/insiders 0%) and 5m volume was organic at $12.9k (V1, V6, V13). Happened: it ran to 4.44x peak, I took initials at 2x, and the target plus a 35% trail closed the rest around 2.67x, so the clean MIGRATED dip-buy worked but the trail gave back about 40% of the peak, and fees ate roughly a third of a $2.91 position. Rule: once initials are out and the coin is past 4x, tighten the trail to about 25% from peak, and don't open positions under about $5 where fees ruin the math, because sell initials only protects the cost basis, not the runner (V11)."
  ],
  "learned_rules": "",
  "meta": {
-  "age_minutes": 9,
+  "age_minutes": 3,
   "meta_summary": "It's quiet: there's no live trench meta right now. The loudest Solana story is Hunter Biden's $LAPTOP, which crashed about 98% on day one and is fading. A political figure pushed that CA, so it's a hard no for me, and so is every vamp or \"revival\" of it (V13). The Robinhood/Circle \"$443M frenzy\" is also dying. The flow that's actually rising is bucket-2 money, not trench money: tokenized stocks and Robinhood Chain, stablecoins/RWA, PENGU and PEPE trending, and BTC above $81k ahead of the Fed (V8). Ticker chatter like $MT (3 mentions) and $CHIMP or $GLITCH (1 each) is attention farming, not a crowd (V7). The one meta I can see coming is Halloween, 3 days out, and holiday metas get front-run (V5). So the coin that rides it is an original, funny spooky or tokenized-stonk joke, not a knockoff (V1). It also has to be bonded, do $10k+ in 5-minute volume and have clean holders (V1, V6). Nothing like that has shown up yet, so I'm passing for now and watching for pumpkin tickers.",
   "top_narratives": [
    "robinhood",
    "tokenized",
    "pepe",
    "prediction",
-   "stock",
    "rally",
+   "stock",
    "referral",
    "adds",
-   "app",
-   "fed",
    "trump",
-   "fees",
-   "stablecoin",
+   "fed",
+   "app",
    "stocks",
+   "stablecoin",
+   "fees",
    "dogecoin",
    "support",
    "code",
@@ -296,41 +335,37 @@
    "slowing"
   ],
   "trending_categories": [
-   "Privacy Coins",
    "Quantum-Resistant",
-   "Zero Knowledge (ZK)",
-   "Pons Launchpad",
    "Privacy",
-   "Entertainment"
+   "The Boy\u2019s Club",
+   "Frog-Themed",
+   "Privacy Blockchain",
+   "AI Applications"
   ],
   "trending_coins": [
    "KNTQ",
-   "QTC",
-   "FET",
-   "BTC",
-   "PEPE",
-   "CC",
    "PENGU",
-   "SUI",
-   "IDOL",
-   "STRK",
-   "MON",
-   "DOGE",
+   "PEPE",
    "PEARL",
-   "PONS",
-   "ZEC"
+   "SOL",
+   "CC",
+   "QTC",
+   "SUI",
+   "XRP",
+   "NEAR",
+   "DOGE",
+   "RITUAL",
+   "BTC",
+   "FET",
+   "VVV"
   ],
   "hot_tickers": [
    {
     "ticker": "$MT",
-    "mentions": 3
+    "mentions": 2
    },
    {
     "ticker": "$LAPTOP",
-    "mentions": 1
-   },
-   {
-    "ticker": "$LICK",
     "mentions": 1
    },
    {
@@ -359,6 +394,10 @@
    },
    {
     "ticker": "$GCS",
+    "mentions": 1
+   },
+   {
+    "ticker": "$BITCOIN",
     "mentions": 1
    }
   ],
