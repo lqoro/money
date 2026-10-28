@@ -1,12 +1,12 @@
 {
- "updated_at": "2026-10-28T18:55:33Z",
+ "updated_at": "2026-10-28T19:10:49Z",
  "paused_new_trades": false,
  "brain": {
   "mode": "subscription",
   "paused_until": null,
   "usage_48h": {
    "hours": 48,
-   "brain_calls": 113,
+   "brain_calls": 117,
    "plan_limit_hits": 0,
    "candidates_skipped_no_brain": 0,
    "stop_reviews_without_brain": 0
@@ -128,7 +128,7 @@
  ],
  "learned_rules": "",
  "meta": {
-  "age_minutes": 2,
+  "age_minutes": 7,
   "meta_summary": "It's quiet. There's no live trench meta. The loudest Solana story is Hunter Biden's $LAPTOP, which crashed about 98% on day one. A political figure pushed that CA, so it's a hard no, along with every vamp, revival or TRUMP-holder spinoff of it (V13). That story is fading, and the STONKINU bundling news is a warning, not a setup (V3, V13). What's rising is bucket-2 money, not trench flow: tokenized stocks and Robinhood, stablecoin/RWA headlines, PENGU and PEPE trending, BTC above $81k ahead of the Fed (V8). $MT and $SI at 2 mentions each are noise. The one meta I can see coming is Halloween in 3 days, and holiday metas get front-run early (V5), so $PUMPKIN and $HELL are on watch, but $HELL has a single mention and $PUMPKIN barely showed up, so nothing there yet. A coin worth riding would be an original, funny Halloween or tokenized-stonk joke, not a knockoff (V1). It would also need to be bonded, doing $10k+ in 5-minute volume and have clean holders (V1, V6). Until that shows up: PASS.",
   "top_narratives": [
    "tokenized",
@@ -139,43 +139,43 @@
    "referral",
    "trump",
    "stablecoin",
+   "pepe",
    "code",
    "fees",
-   "pepe",
    "bot",
    "adds",
    "jumps",
+   "dogecoin",
    "machine",
    "times",
    "slowing",
    "machine slowing",
-   "dogecoin",
-   "hunter"
+   "app"
   ],
   "trending_categories": [
+   "DeFAI",
    "Binance Launchpool",
    "Stablecoin Issuer",
    "Automated Market Maker (AMM)",
    "YZi Labs (Prev. Binance Labs) Portfolio",
-   "Launchpad",
    "Artificial Intelligence (AI)"
   ],
   "trending_coins": [
    "QTC",
-   "BTC",
-   "KNTQ",
    "PEARL",
+   "BTC",
    "PENGU",
+   "KNTQ",
    "AERO",
-   "SOL",
-   "SUI",
    "ENA",
+   "SUI",
    "AXIS",
-   "STONK",
+   "SOL",
+   "LINK",
+   "CC",
    "DRV",
    "QNT",
-   "CC",
-   "INIT"
+   "ZEC"
   ],
   "hot_tickers": [
    {
@@ -183,15 +183,15 @@
     "mentions": 3
    },
    {
-    "ticker": "$SI",
-    "mentions": 2
-   },
-   {
     "ticker": "$LAPTOP",
     "mentions": 1
    },
    {
     "ticker": "$LICK",
+    "mentions": 1
+   },
+   {
+    "ticker": "$SI",
     "mentions": 1
    },
    {
