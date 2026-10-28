@@ -1,12 +1,12 @@
 {
- "updated_at": "2026-10-28T17:54:47Z",
+ "updated_at": "2026-10-28T18:09:52Z",
  "paused_new_trades": false,
  "brain": {
   "mode": "subscription",
   "paused_until": null,
   "usage_48h": {
    "hours": 48,
-   "brain_calls": 97,
+   "brain_calls": 101,
    "plan_limit_hits": 0,
    "candidates_skipped_no_brain": 0,
    "stop_reviews_without_brain": 0
@@ -128,20 +128,20 @@
  ],
  "learned_rules": "",
  "meta": {
-  "age_minutes": 2,
+  "age_minutes": 7,
   "meta_summary": "It's quiet. There's no live trench meta right now. The loudest Solana story is Hunter Biden's $LAPTOP crashing about 98% on day one. A political figure pushed that CA, so it's a hard no for me, along with every vamp, \"revival\" or TRUMP-holder spinoff of it (V13). That story is fading, and the STONKINU bundling news is a warning, not a setup (V3, V13). What's rising is bucket-2 money, not trench flow: tokenized stocks and Robinhood, stablecoin/RWA headlines, PENGU and PEPE trending, BTC above $81k ahead of the Fed (V8). $MT leading with 3 mentions is just noise. The one meta I can see coming is Halloween in 3 days, and holiday metas get front-run early (V5), so I'm watching $PUMPKIN and $HELL. One mention each means nothing yet. A coin that rides this would be an original, funny Halloween or tokenized-stonk joke, not a knockoff (V1). It would also need to have bonded, do $10k+ in 5-minute volume and have clean holders (V1, V6). Until one shows up, I'm on PASS.",
   "top_narratives": [
    "tokenized",
    "robinhood",
    "prediction",
    "stock",
-   "referral",
    "rally",
+   "referral",
    "stablecoin",
    "trump",
    "code",
-   "pepe",
    "fees",
+   "pepe",
    "bot",
    "adds",
    "jumps",
@@ -150,32 +150,32 @@
    "times",
    "slowing",
    "machine slowing",
-   "dogecoin"
+   "app"
   ],
   "trending_categories": [
    "AI Applications",
-   "SocialFi",
    "Quantum-Resistant",
-   "CoinList Launchpad",
-   "Layer 1 (L1)",
-   "Proof of Work (PoW)"
+   "SocialFi",
+   "Zero Knowledge (ZK)",
+   "Binance Launchpool",
+   "CoinList Launchpad"
   ],
   "trending_coins": [
    "SOL",
-   "CHIP",
    "PENGU",
-   "PEARL",
-   "CC",
-   "PONS",
-   "INIT",
-   "KNTQ",
    "BTC",
-   "QTC",
+   "KNTQ",
    "BCH",
-   "LTC",
+   "CHIP",
+   "CC",
    "VVV",
-   "INJ",
-   "PUMP"
+   "INIT",
+   "LTC",
+   "PUMP",
+   "Q",
+   "NEAR",
+   "ZEC",
+   "ENA"
   ],
   "hot_tickers": [
    {
@@ -189,6 +189,10 @@
    {
     "ticker": "$SI",
     "mentions": 2
+   },
+   {
+    "ticker": "$TRUMP",
+    "mentions": 1
    },
    {
     "ticker": "$CREDO",
@@ -219,11 +223,7 @@
     "mentions": 1
    },
    {
-    "ticker": "$MOGZBOT",
-    "mentions": 1
-   },
-   {
-    "ticker": "$AI",
+    "ticker": "$GROKCAT",
     "mentions": 1
    }
   ],
