@@ -1,15 +1,15 @@
 # Trencher live report
 
-Updated 2026-10-28T13:52:50Z (paper trading, never real money)
+Updated 2026-10-28T14:07:55Z (paper trading, never real money)
 
-- Equity: $100.06 (+0.1% vs $100 start)
+- Equity: $99.82 (-0.2% vs $100 start)
 - Closed trades: 0
 - Fees paid: $0.13, plus $0.00 lost to slippage
 - New trades: on
-- Brain: subscription, 18 calls and 0 plan-limit hits in 48h
+- Brain: subscription, 29 calls and 0 plan-limit hits in 48h
 
 ## Open positions
-- Something (DIP): cost $3.33, 1.06x, fees $0.00  
+- Something (DIP): cost $3.33, 0.99x, fees $0.00  
   CA `AZdhikmyj6ibsejv7EjML9SfNmuiMvwDrKXTEU2zpump`
 
 ## Recent trades

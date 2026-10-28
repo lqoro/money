@@ -1,18 +1,18 @@
 {
- "updated_at": "2026-10-28T13:52:50Z",
+ "updated_at": "2026-10-28T14:07:55Z",
  "paused_new_trades": false,
  "brain": {
   "mode": "subscription",
   "paused_until": null,
   "usage_48h": {
    "hours": 48,
-   "brain_calls": 18,
+   "brain_calls": 29,
    "plan_limit_hits": 0,
    "candidates_skipped_no_brain": 0,
    "stop_reviews_without_brain": 0
   }
  },
- "equity_usd": 100.06,
+ "equity_usd": 99.82,
  "cash_usd": 96.67,
  "started_with_usd": 100.0,
  "realized_pnl_usd": 0.0,
@@ -27,8 +27,8 @@
    "ca": "AZdhikmyj6ibsejv7EjML9SfNmuiMvwDrKXTEU2zpump",
    "setup": "DIP",
    "cost_usd": 3.33,
-   "value_usd": 3.39,
-   "multiple": 1.06,
+   "value_usd": 3.15,
+   "multiple": 0.99,
    "fees_usd": 0.0,
    "slippage_usd": 0.0,
    "initials_taken": false
@@ -87,18 +87,18 @@
  "recent_lessons": [],
  "learned_rules": "",
  "meta": {
-  "age_minutes": 7,
+  "age_minutes": 1,
   "meta_summary": "It's quiet in the trenches, and the loudest Solana story is a warning. $LAPTOP is Hunter Biden's own coin: it pumped, then fell about 98% on day one. A political figure pushed the CA, so it's a hard no under V13, along with any vamp or \"revival\" of it. The rest of the radar is macro talk, not a meme meta. The headlines and categories are about tokenized stocks, RWA, stablecoins and Robinhood/Circle, and on the memecoin side that \"$443M frenzy\" is described as already dissolved, so that story is fading. The rising crowd interest is in big established names (PENGU, PEPE, STONK, ORE), not fresh pump.fun ideas. The only hint of a meta is the calendar: Halloween is in 3 days and $PUMPKIN/$HELL are showing up, but with 1 mention each that's noise, not a confirmed meta. A memecoin that could ride this would be an original, funny Halloween idea, or maybe a stonk/tokenized-stock joke, that has already bonded, has $10k+ in 5-minute volume and clean holders (V1, V5, V6). Until something like that shows up with real volume, I'm on PASS.",
   "top_narratives": [
    "tokenized",
    "robinhood",
    "referral",
-   "stablecoin",
-   "pepe",
    "rally",
    "stock",
-   "trump",
+   "stablecoin",
    "prediction",
+   "pepe",
+   "trump",
    "code",
    "dogecoin",
    "adds",
@@ -112,29 +112,29 @@
    "jumps"
   ],
   "trending_categories": [
-   "Data Availability",
+   "Binance Wallet IDO",
+   "Binance Alpha Spotlight",
+   "Base Native",
    "Real World Assets (RWA)",
-   "World Liberty Financial Portfolio",
-   "Made in USA",
-   "Proof of Work (PoW)",
-   "Layer 1 (L1)"
+   "Privacy Coins",
+   "Quantum-Resistant"
   ],
   "trending_coins": [
-   "PEARL",
    "ENA",
-   "BTC",
-   "INIT",
-   "PEPE",
-   "QTC",
+   "PEARL",
    "PENGU",
-   "QNT",
-   "ONDO",
-   "SUI",
+   "INIT",
    "NEAR",
-   "PONS",
-   "TAO",
+   "QTC",
+   "BTC",
+   "SUI",
+   "ONDO",
+   "ZAMA",
+   "PEPE",
+   "QNT",
    "ZEC",
-   "XLM"
+   "PONS",
+   "AERO"
   ],
   "hot_tickers": [
    {
@@ -144,6 +144,14 @@
    {
     "ticker": "$LAPTOP",
     "mentions": 2
+   },
+   {
+    "ticker": "$TRUMP",
+    "mentions": 1
+   },
+   {
+    "ticker": "$RETIRED",
+    "mentions": 1
    },
    {
     "ticker": "$HELL",
