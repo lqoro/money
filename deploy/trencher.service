@@ -1,0 +1,21 @@
+# systemd unit for a Linux VPS. Assumes the repo is cloned to /opt/money with a
+# virtualenv in /opt/money/.venv, the Claude Code CLI installed
+# (npm install -g @anthropic-ai/claude-code) and secrets in /opt/money/.env
+# (CLAUDE_CODE_OAUTH_TOKEN from `claude setup-token`).
+#   sudo cp deploy/trencher.service /etc/systemd/system/
+#   sudo systemctl enable --now trencher
+#   journalctl -u trencher -f
+[Unit]
+Description=Trencher paper memecoin agent
+After=network-online.target
+Wants=network-online.target
+
+[Service]
+WorkingDirectory=/opt/money
+EnvironmentFile=/opt/money/.env
+ExecStart=/opt/money/.venv/bin/python -m agent run
+Restart=always
+RestartSec=10
+
+[Install]
+WantedBy=multi-user.target

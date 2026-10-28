@@ -1,0 +1,7 @@
+services:
+  trencher:
+    build: .
+    env_file: .env
+    restart: always
+    volumes:
+      - ./memory:/app/memory
