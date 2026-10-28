@@ -18,7 +18,7 @@ from .checklist import holder_stats, market_prefilter, run_checklist
 from .config import Config
 from .evolve import evolve
 from .notify import notify
-from .portfolio import Portfolio, Position
+from .portfolio import Portfolio, Position, venue_fee_pct
 from .risk import check_exit, sanitize_exit_plan
 from .site import project_report
 from .sizing import open_risk_usd, position_size, sizing_guide
@@ -85,12 +85,13 @@ class Agent:
             "cash_usd": round(pf.cash_usd, 2),
             "started_with_usd": self.cfg.starting_cash_usd,
             "realized_pnl_usd": round(pf.realized_pnl_usd, 2),
-            "fees_paid_usd": round(pf.fees_paid_usd, 2),
+            **pf.costs_view(),
             "closed_trades": pf.trades_closed,
             "win_rate": round(pf.wins / pf.trades_closed, 2) if pf.trades_closed else None,
             "open_positions": [
-                {"symbol": p.symbol, "setup": p.setup, "cost_usd": round(p.cost_usd, 2),
+                {"symbol": p.symbol, "ca": p.address, "setup": p.setup, "cost_usd": round(p.cost_usd, 2),
                  "value_usd": round(p.value(), 2), "multiple": round((p.last_price or p.entry_price) / p.entry_price, 2),
+                 "fees_usd": round(p.fees_usd, 2), "slippage_usd": round(p.slippage_usd, 2),
                  "initials_taken": p.initials_taken}
                 for p in pf.positions.values()
             ],
@@ -184,11 +185,12 @@ class Agent:
             self.cooldown[addr] = time.time() + 5 * 60
             return
 
-        decision = self.brain.decide(snap, check, self.portfolio_view(), sizing_guide(self.pf, cfg),
+        venue = venue_fee_pct(cfg, snap.get("dex"), snap["mcap_usd"], sol)
+        decision = self.brain.decide(snap, check, self.portfolio_view(), sizing_guide(self.pf, cfg, sol_usd=sol, venue_pct=venue),
                                      history=self.watchlist.get(addr), radar_view=radar.public_view(self.meta))
         log.info("  ◆ %-10s %s", snap["symbol"], decision.get("verdict"))
         plan = sanitize_exit_plan(decision.get("exit_plan"), cfg)
-        sizing = position_size(int(decision.get("conviction") or 0), plan["stop_loss_pct"], self.pf, cfg)
+        sizing = position_size(int(decision.get("conviction") or 0), plan["stop_loss_pct"], self.pf, cfg, sol, venue)
         journal.log_decision(cfg, {"token": addr, "symbol": snap["symbol"], "snapshot": snap,
                                    "checklist": check.as_dict(), "decision": decision,
                                    "sizing": sizing.__dict__})
@@ -197,22 +199,29 @@ class Agent:
         size = sizing.size_usd
         log.info("    sizing: %s → $%.2f (loses ~$%.2f at the stop)", sizing.note, size, sizing.risk_usd)
         if size < cfg.min_position_usd:
-            log.info("    size $%.2f below minimum, skipping", size)
+            log.info("    size $%.2f below minimum, skipping (%s)", size, sizing.note)
             return
         if self.dry_run:
             log.info("    [dry run] would buy $%.2f", size)
             return
-        pos = self.pf.buy(cfg, snap, size, sol, check.setup, plan, decision.get("thesis", ""))
+        try:
+            pos = self.pf.buy(cfg, snap, size, sol, check.setup, plan, decision.get("thesis", ""))
+        except ValueError as e:
+            log.info("    skipping: %s", e)
+            return
         pos.entry_holders = check.holders
         self.watchlist.pop(addr, None)
         self.pf.save(cfg)
-        journal.log_trade(cfg, {"event": "BUY", "id": pos.id, "token": addr, "symbol": pos.symbol,
+        journal.log_trade(cfg, {"event": "BUY", "id": pos.id, "token": addr, "ca": addr, "symbol": pos.symbol,
                                 "setup": pos.setup, "size_usd": size, "conviction": decision.get("conviction"),
                                 "risk_usd": sizing.risk_usd, "price": pos.entry_price,
+                                "fees_usd": round(pos.fees_usd, 4), "slippage_usd": round(pos.slippage_usd, 4),
+                                "dex": pos.dex, "pool_fee_pct": pos.venue_fee_pct,
                                 "mcap": snap["mcap_usd"], "exit_plan": plan, "thesis": pos.thesis})
         notify(cfg, f"🟢 BUY ${size:.2f} {pos.symbol} ({pos.setup}, conviction {decision.get('conviction')}/10, "
-                    f"risking ${sizing.risk_usd:.2f}) @ ${snap['mcap_usd']:,.0f} mcap\n"
-                    f"{decision.get('verdict')}\n{snap['url']}")
+                    f"risking ${sizing.risk_usd:.2f}) @ ${snap['mcap_usd']:,.0f} mcap, "
+                    f"fees ${pos.fees_usd:.2f} + slippage ${pos.slippage_usd:.2f}\n"
+                    f"CA {addr}\n{decision.get('verdict')}\n{snap['url']}")
 
     # ---------------------------------------------------------------- monitor
     def monitor(self) -> None:
@@ -279,20 +288,25 @@ class Agent:
 
     def execute_exit(self, pos: Position, snap: dict, fraction: float, reason: str, rugged: bool, sol: float) -> None:
         cfg = self.cfg
-        proceeds = self.pf.sell(cfg, pos, fraction, snap["price_usd"], snap["liquidity_usd"], sol, rugged)
+        fees_before, slip_before = pos.fees_usd, pos.slippage_usd
+        proceeds = self.pf.sell(cfg, pos, fraction, snap["price_usd"], snap["liquidity_usd"], sol, rugged,
+                                dex=snap.get("dex"), mcap_usd=snap["mcap_usd"])
         self.exit_log.setdefault(pos.id, []).append(reason)
         if "initials" in reason:
             pos.initials_taken = True
-        journal.log_trade(cfg, {"event": "SELL", "id": pos.id, "token": pos.address, "symbol": pos.symbol,
-                                "fraction": round(fraction, 3), "proceeds_usd": round(proceeds, 2),
+        journal.log_trade(cfg, {"event": "SELL", "id": pos.id, "token": pos.address, "ca": pos.address,
+                                "symbol": pos.symbol, "fraction": round(fraction, 3), "proceeds_usd": round(proceeds, 2),
+                                "fees_usd": round(pos.fees_usd - fees_before, 4),
+                                "slippage_usd": round(pos.slippage_usd - slip_before, 4),
                                 "price": snap["price_usd"], "mcap": snap["mcap_usd"], "reason": reason})
-        log.info("  ↘ SELL %.0f%% %s for $%.2f — %s", fraction * 100, pos.symbol, proceeds, reason)
+        log.info("  ↘ SELL %.0f%% %s (%s) for $%.2f — %s", fraction * 100, pos.symbol, pos.address, proceeds, reason)
 
         if pos.tokens * snap["price_usd"] < 0.05 or fraction >= 0.999:
             pnl = self.pf.close(pos)
             trade = {
-                "id": pos.id, "symbol": pos.symbol, "token": pos.address, "setup": pos.setup,
+                "id": pos.id, "symbol": pos.symbol, "token": pos.address, "ca": pos.address, "setup": pos.setup,
                 "cost_usd": round(pos.cost_usd, 2), "proceeds_usd": round(pos.realized_usd, 2),
+                "fees_usd": round(pos.fees_usd, 2), "slippage_usd": round(pos.slippage_usd, 2),
                 "pnl_usd": round(pnl, 2), "pnl_pct": round(100 * pnl / pos.cost_usd, 1),
                 "held_minutes": round((time.time() - pos.opened_at) / 60),
                 "entry_mcap": pos.entry_mcap, "exit_mcap": snap["mcap_usd"],
@@ -314,8 +328,9 @@ class Agent:
                 self.cooldown[pos.address] = time.time() + 15 * 60
                 self.save_watch()
             emoji = "✅" if pnl > 0 else "🔴"
-            notify(cfg, f"{emoji} CLOSED {pos.symbol} {trade['pnl_pct']:+.0f}% (${pnl:+.2f}) — {reason}\n"
-                        f"Equity ${self.pf.equity():.2f}\nLesson: {lesson}")
+            notify(cfg, f"{emoji} CLOSED {pos.symbol} {trade['pnl_pct']:+.0f}% (${pnl:+.2f}, after "
+                        f"${pos.fees_usd:.2f} fees + ${pos.slippage_usd:.2f} slippage) — {reason}\n"
+                        f"CA {pos.address}\nEquity ${self.pf.equity():.2f}\nLesson: {lesson}")
             log.info("  ■ CLOSED %s %+.2f USD. Equity $%.2f. Lesson: %s", pos.symbol, pnl, self.pf.equity(), lesson)
             if self.pf.trades_closed % cfg.reflect_every_n_trades == 0:
                 summary = evolve(cfg, self.brain)
@@ -371,11 +386,13 @@ def print_status(cfg: Config) -> None:
     print(f"Cash        ${pf.cash_usd:,.2f}")
     print(f"Realized    ${pf.realized_pnl_usd:+,.2f} over {pf.trades_closed} trades"
           + (f", win rate {100 * pf.wins / pf.trades_closed:.0f}%" if pf.trades_closed else ""))
-    print(f"Fees paid   ${pf.fees_paid_usd:,.2f}")
+    kinds = ", ".join(f"{k} ${v:.2f}" for k, v in sorted(pf.fees_by_kind.items()))
+    print(f"Fees paid   ${pf.fees_paid_usd:,.2f}" + (f" ({kinds})" if kinds else ""))
+    print(f"Slippage    ${pf.slippage_paid_usd:,.2f}")
     for p in pf.positions.values():
         m = (p.last_price or p.entry_price) / p.entry_price
         print(f"  {p.symbol:<10} {p.setup:<13} cost ${p.cost_usd:6.2f}  value ${p.value():6.2f}  {m:5.2f}x"
-              f"{'  (initials out)' if p.initials_taken else ''}")
+              f"{'  (initials out)' if p.initials_taken else ''}\n    CA {p.address}")
     strategy = cfg.memory_dir / "strategy.json"
     if strategy.exists():
         print("\nEvolved strategy: " + strategy.read_text().replace("\n", " "))
