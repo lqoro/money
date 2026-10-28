@@ -1,28 +1,28 @@
 {
- "updated_at": "2026-10-28T21:57:21Z",
+ "updated_at": "2026-10-28T22:12:28Z",
  "paused_new_trades": false,
  "brain": {
   "mode": "subscription",
   "paused_until": null,
   "usage_48h": {
    "hours": 48,
-   "brain_calls": 168,
+   "brain_calls": 171,
    "plan_limit_hits": 0,
    "candidates_skipped_no_brain": 0,
    "stop_reviews_without_brain": 0
   }
  },
- "equity_usd": 100.89,
- "cash_usd": 96.58,
+ "equity_usd": 100.11,
+ "cash_usd": 93.62,
  "started_with_usd": 100.0,
  "realized_pnl_usd": -0.51,
- "fees_paid_usd": 0.66,
+ "fees_paid_usd": 0.93,
  "fees_by_kind_usd": {
-  "axiom": 0.06,
-  "network": 0.41,
-  "pool": 0.06
+  "axiom": 0.09,
+  "network": 0.61,
+  "pool": 0.09
  },
- "slippage_paid_usd": 0.09,
+ "slippage_paid_usd": 0.13,
  "closed_trades": 1,
  "win_rate": 0.0,
  "open_positions": [
@@ -31,8 +31,19 @@
    "ca": "dyw5fDNv91eknniMG4tGCU1ZrzjuxbpsLiEzih6pump",
    "setup": "MIGRATED",
    "cost_usd": 2.91,
-   "value_usd": 4.32,
-   "multiple": 1.63,
+   "value_usd": 4.1,
+   "multiple": 1.55,
+   "fees_usd": 0.27,
+   "slippage_usd": 0.04,
+   "initials_taken": false
+  },
+  {
+   "symbol": "CATCULUS",
+   "ca": "AfPhjrZx3oyh38G28ZVViP4p7h53N5kTxEeg5tzhpump",
+   "setup": "MIGRATED",
+   "cost_usd": 2.96,
+   "value_usd": 2.39,
+   "multiple": 0.89,
    "fees_usd": 0.27,
    "slippage_usd": 0.04,
    "initials_taken": false
@@ -159,6 +170,32 @@
     "target_mcap_usd": 2000000.0
    },
    "thesis": "The leading Cat Bot pair (the other CATBOT pairs I found are dead copies) is consolidating 24.5% under its $845k peak with $12.9k 5m volume and 885 buys to 359 sells (V1, V6). Holder structure is extremely clean: top 10 hold 3.3% ex-pool, dev and insiders 0%, 4,015 holders (V13). The last 15m candle closed higher than the one before, a possible higher low. If the crowd keeps arriving, it retests the peak and has room toward $1.3M+. If 5m volume keeps fading, the time stop takes me out fast."
+  },
+  {
+   "ca": "AfPhjrZx3oyh38G28ZVViP4p7h53N5kTxEeg5tzhpump",
+   "ts": "2026-10-28T22:08:47Z",
+   "event": "BUY",
+   "id": "ca28bb15",
+   "token": "AfPhjrZx3oyh38G28ZVViP4p7h53N5kTxEeg5tzhpump",
+   "symbol": "CATCULUS",
+   "setup": "MIGRATED",
+   "size_usd": 2.96,
+   "conviction": 6,
+   "risk_usd": 1.51,
+   "price": 0.00047039421065523795,
+   "fees_usd": 0.2673,
+   "slippage_usd": 0.04,
+   "dex": "pumpswap",
+   "pool_fee_pct": 1.1,
+   "mcap": 460747.0,
+   "exit_plan": {
+    "take_initials_multiple": 2.0,
+    "stop_loss_pct": 30.0,
+    "trailing_stop_pct": 35.0,
+    "time_stop_minutes": 45.0,
+    "target_mcap_usd": 1500000.0
+   },
+   "thesis": "CATCULUS is the flow leader right now: $59k 5m volume, 913 buys vs 363 sells and 1,546 holders on a spread that's about as clean as they come. Top 10 hold 3.6% ex-pool (V6, V13). The idea is original and funny to a wide audience: nine lives, a limit that goes to zero, a nap. No politician is attached (V1, V13). 5m volume is 0.91x the hourly average, so the crowd is still arriving at about the same pace and isn't fading yet. Small size because it's a momentum entry near the high, not a dip (V1)."
   }
  ],
  "recent_lessons": [
@@ -166,54 +203,54 @@
  ],
  "learned_rules": "",
  "meta": {
-  "age_minutes": 10,
+  "age_minutes": 4,
   "meta_summary": "It's quiet: there's no live trench meta right now. The loudest Solana story is Hunter Biden's $LAPTOP, and it's dying after a ~98% crash on day one. A political figure pushed that CA, so it's a hard no, along with every vamp or \"revival\" of it (V13). The Robinhood/Circle \"$443M frenzy\" bust is fading too. What's rising is bucket-2 money, not trench flow: tokenized stocks and Robinhood Chain, stablecoins/RWA, PENGU and PEPE trending, and BTC above $81k ahead of the Fed (V8). The ticker chatter is noise: $MT has 3 mentions, and $CHIMP, $GLITCH, $SUMMONSI and the rest have 1 each. That's attention farming, not a crowd (V7). The one meta I can see coming is Halloween, 3 days out, and holiday metas get front-run (V5). So the coin worth riding is an original, funny spooky or tokenized-stonk joke, not a knockoff (V1). It also has to be bonded, do $10k+ in 5-minute volume and have clean holders (V1, V6). Nothing like that has shown up yet, so it's PASS for now while I watch for pumpkin tickers.",
   "top_narratives": [
    "tokenized",
    "robinhood",
    "pepe",
    "rally",
+   "prediction",
    "stock",
    "fees",
-   "prediction",
    "referral",
-   "stablecoin",
    "adds",
    "fed",
-   "dogecoin",
+   "stablecoin",
    "stocks",
-   "trump",
-   "code",
+   "dogecoin",
    "app",
+   "code",
+   "support",
+   "trump",
    "machine",
    "times",
-   "slowing",
-   "machine slowing"
+   "slowing"
   ],
   "trending_categories": [
    "Liquid Staking Governance Tokens",
    "Liquid Staking",
-   "Automated Market Maker (AMM)",
-   "Binance Launchpool",
-   "IP Meme",
-   "Launchpad"
+   "Solana Meme",
+   "Privacy Blockchain",
+   "Infrastructure",
+   "Binance Launchpad"
   ],
   "trending_coins": [
    "PENGU",
    "BTC",
-   "KNTQ",
-   "PEARL",
-   "CC",
-   "AERO",
-   "JUP",
-   "QNT",
-   "PONS",
-   "QTC",
    "PEPE",
+   "CC",
+   "KNTQ",
+   "PONS",
+   "FET",
+   "PEARL",
+   "STRK",
    "MON",
+   "WLD",
+   "SOL",
    "ENA",
-   "CARDS",
-   "KAS"
+   "SUI",
+   "ETH"
   ],
   "hot_tickers": [
    {
