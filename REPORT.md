@@ -1,15 +1,16 @@
 # Trencher live report
 
-Updated 2026-10-28T21:27:16Z (paper trading, never real money)
+Updated 2026-10-28T21:42:18Z (paper trading, never real money)
 
-- Equity: $99.49 (-0.5% vs $100 start)
+- Equity: $99.18 (-0.8% vs $100 start)
 - Closed trades: 1, 0 wins
-- Fees paid: $0.40 (axiom $0.03, network $0.20, pool $0.03), plus $0.05 lost to slippage
+- Fees paid: $0.66 (axiom $0.06, network $0.41, pool $0.06), plus $0.09 lost to slippage
 - New trades: on
-- Brain: subscription, 159 calls and 0 plan-limit hits in 48h
+- Brain: subscription, 167 calls and 0 plan-limit hits in 48h
 
 ## Open positions
-- none
+- CATBOT (MIGRATED): cost $2.91, 0.99x, fees $0.27  
+  CA `dyw5fDNv91eknniMG4tGCU1ZrzjuxbpsLiEzih6pump`
 
 ## Recent trades
 - 13:15Z BUY Something $3.33  
@@ -18,6 +19,8 @@ Updated 2026-10-28T21:27:16Z (paper trading, never real money)
   CA `AZdhikmyj6ibsejv7EjML9SfNmuiMvwDrKXTEU2zpump`
 - 14:15Z CLOSE Something -15% ($-0.51), fees $0.26  
   CA `AZdhikmyj6ibsejv7EjML9SfNmuiMvwDrKXTEU2zpump`
+- 21:42Z BUY CATBOT $2.91, fees $0.27  
+  CA `dyw5fDNv91eknniMG4tGCU1ZrzjuxbpsLiEzih6pump`
 
 ## Last closes
 - Something: -15% ($-0.51), time stop: 60 min and only 0.98x  
