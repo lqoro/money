@@ -1,5 +1,5 @@
 {
- "updated_at": "2026-10-28T13:52:27Z",
+ "updated_at": "2026-10-28T13:52:46Z",
  "paused_new_trades": false,
  "brain": {
   "mode": "subscription",
@@ -12,7 +12,7 @@
    "stop_reviews_without_brain": 0
   }
  },
- "equity_usd": 100.05,
+ "equity_usd": 100.06,
  "cash_usd": 96.67,
  "started_with_usd": 100.0,
  "realized_pnl_usd": 0.0,
@@ -24,7 +24,7 @@
    "symbol": "Something",
    "setup": "DIP",
    "cost_usd": 3.33,
-   "value_usd": 3.38,
+   "value_usd": 3.39,
    "multiple": 1.06,
    "initials_taken": false
   }
