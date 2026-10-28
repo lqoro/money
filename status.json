@@ -1,12 +1,12 @@
 {
- "updated_at": "2026-10-28T16:23:57Z",
+ "updated_at": "2026-10-28T16:39:10Z",
  "paused_new_trades": false,
  "brain": {
   "mode": "subscription",
   "paused_until": null,
   "usage_48h": {
    "hours": 48,
-   "brain_calls": 71,
+   "brain_calls": 74,
    "plan_limit_hits": 0,
    "candidates_skipped_no_brain": 0,
    "stop_reviews_without_brain": 0
@@ -128,24 +128,24 @@
  ],
  "learned_rules": "",
  "meta": {
-  "age_minutes": 4,
+  "age_minutes": 9,
   "meta_summary": "It's quiet. There's no live trench meta. The loudest Solana story is Hunter Biden's $LAPTOP falling about 98% on day one. A political figure pushed that CA, so it's a hard no under V13, and the same goes for any vamp, \"revival\" or $TRUMP-holder spinoff of it. That story is fading, and the STONKINU bundling chatter is another warning, not a setup (V3, V13). What's rising is bucket-2 money (V8): tokenized stocks, Robinhood, stablecoins and RWA headlines, plus established names like PENGU, PEPE and the frog/Boy's Club categories, with BTC above $81k ahead of the Fed. That's big-cap rotation, not trench flow, and $MT leading with 3 mentions is noise. The one meta I can see coming is Halloween in 3 days. Holiday metas get front-run early (V5), so I'm watching $PUMPKIN and $HELL, but one mention each means nothing yet. The coin that rides this would be an original, funny Halloween idea or a tokenized-stonk joke, not a knockoff (V1). It would need to have bonded, show $10k+ in 5-minute volume and have clean holders (V1, V6). Until one shows up, I'm on PASS.",
   "top_narratives": [
    "tokenized",
    "robinhood",
    "prediction",
    "referral",
-   "stock",
    "rally",
+   "stock",
    "stablecoin",
    "code",
    "pepe",
    "trump",
-   "adds",
    "fees",
+   "adds",
    "ton",
-   "dogecoin",
    "bot",
+   "dogecoin",
    "jumps",
    "hunter",
    "machine",
@@ -153,46 +153,38 @@
    "slowing"
   ],
   "trending_categories": [
-   "Parallelized EVM",
    "Privacy Blockchain",
-   "IP Meme",
+   "Parallelized EVM",
    "Airdropped Tokens by NFT Projects",
-   "The Boy\u2019s Club",
-   "Frog-Themed"
+   "IP Meme",
+   "Stablecoin Issuer",
+   "Privacy"
   ],
   "trending_coins": [
-   "PENGU",
-   "PONS",
-   "PEARL",
-   "SUI",
+   "CC",
    "AXIS",
+   "PENGU",
+   "PEARL",
+   "PONS",
+   "SUI",
    "INIT",
+   "BTC",
+   "CHIP",
+   "MON",
    "SOL",
    "ETH",
-   "CC",
-   "MON",
-   "BTC",
-   "PEPE",
-   "CHIP",
-   "AERO",
+   "PUMP",
+   "NEAR",
    "QTC"
   ],
   "hot_tickers": [
-   {
-    "ticker": "$MT",
-    "mentions": 3
-   },
    {
     "ticker": "$LAPTOP",
     "mentions": 2
    },
    {
-    "ticker": "$TRUMP",
-    "mentions": 1
-   },
-   {
-    "ticker": "$LICK",
-    "mentions": 1
+    "ticker": "$MT",
+    "mentions": 2
    },
    {
     "ticker": "$GLITCH",
@@ -219,11 +211,19 @@
     "mentions": 1
    },
    {
+    "ticker": "$HLN",
+    "mentions": 1
+   },
+   {
     "ticker": "$BTC",
     "mentions": 1
    },
    {
     "ticker": "$BPF",
+    "mentions": 1
+   },
+   {
+    "ticker": "$AI",
     "mentions": 1
    }
   ],
