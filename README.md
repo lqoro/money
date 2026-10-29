@@ -141,7 +141,16 @@ How it talks to Duet (`agent/bridge.py`): every 15 minutes Trencher pulls the
   plus the paper costs (`platform_fee_pct`, `pumpfun_curve_fee_pct`,
   `other_dex_fee_pct`, `priority_fee_sol`, `bribe_sol`, `base_slippage_pct`,
   `max_slippage_pct`), clamped to their bounds. Removing one puts it back.
-- `owner_note`: a short note the brain reads before every decision
+- `owner_note`: a short note the brain reads before every decision and every
+  meta summary
+- `goal`: `{"equity_usd": 1000, "deadline": "2026-11-05T05:00:00Z"}`, a stretch
+  target the brain sees with its progress; REPORT.md shows how far along it is
+  and the daily growth it would take. It never changes sizing or stops.
+
+`REPORT.md` also shows the last scan (how many coins, how many passed the market
+filters), the last coins it looked at with why it passed on each (checklist
+fail, the brain's verdict, or a size under the minimum) and their CAs, and the
+coins moving most in its own scan.
 
 Steering is data, never code, and can't move the hard lines. With
 `AUTO_UPDATE=true` (the setup turns it on), Trencher restarts itself on new
@@ -175,9 +184,11 @@ Two parts, both free and keyless (`agent/radar.py`, `agent/site.py`):
   blurbs, Reddit (`REDDIT_SUBS`, where reachable) and public Telegram channels
   you list in `TELEGRAM_CHANNELS` (read from `t.me/s/<channel>`, no bot needed).
   It scores narratives with time decay, counts `$TICKER` mentions, and collects
-  contract addresses called in channels; those get scanned too. About hourly,
-  Claude writes a one-paragraph "what's the meta right now" summary. All of it
-  goes into every decision. `python -m agent meta` shows it.
+  contract addresses called in channels; those get scanned too. Every scan
+  also keeps the coins trading the most volume right now (`scan_movers`), so the
+  meta comes from what the trenches are trading, not only from the news. About
+  hourly, Claude writes a one-paragraph "what's the meta right now" summary,
+  starting from those movers. All of it goes into every decision. `python -m agent meta` shows it.
 - **Project crawler**, per candidate that clears the hard lines: visits the
   token's website(s) and linked GitHub. It flags a site that shows a **different
   contract address** (vamp), a dead site, and **tech/AI claims with no GitHub
