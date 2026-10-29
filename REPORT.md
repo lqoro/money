@@ -1,13 +1,13 @@
 # Trencher live report
 
-Updated 2026-10-29T13:37:07Z (paper trading, never real money)
+Updated 2026-10-29T13:52:20Z (paper trading, never real money)
 
 - Equity: $99.93 (-0.1% vs $100 start)
-- Goal: $1,000 by 2026-11-05 05:03Z (a stretch, survival first): at 10% of it, 6.6 days left, needs +41.4% a day from here
+- Goal: $1,000 by 2026-11-05 05:03Z (a stretch, survival first): at 10% of it, 6.6 days left, needs +41.5% a day from here
 - Closed trades: 7, 2 wins
 - Fees paid: $4.16 (axiom $0.43, network $3.26, pool $0.35), plus $0.62 lost to slippage
 - New trades: on
-- Brain: subscription, 352 calls and 0 plan-limit hits in 48h
+- Brain: subscription, 356 calls and 0 plan-limit hits in 48h
 
 ## Scorecard (after fees)
 - 7 closed, 2 won (29%), net $-0.07
@@ -67,9 +67,19 @@ Updated 2026-10-29T13:37:07Z (paper trading, never real money)
   CA `Bv1a7cEj5aRnJQhMw4kRQqAFesMSd5LwcDnUzq52BMmr`
 
 ## Last scan
-- 13:36Z: 4 coins, 3 with pairs, 2 passed the market filters, 2 researched
+- 13:51Z: 3 coins, 2 with pairs, 1 passed the market filters, 1 researched
 
 ## Coins it looked at, and why it passed
+- 13:51Z PillPad (FINAL_STRETCH, $27,526 mcap, $35,630 5m vol): PASS at conviction 3, PASS: an "AI agent launchpad" with no GitHub, a 4.5-day-old domain and a site that doesn't show its own CA. That's a LARP, 6 minutes old and already up 811%. (V1, V3)  
+  CA `3L2UC4gQumwMPYoBNhtmuJjiphqbRjsvc2JDRVR7pump`
+- 13:49Z jeff (DIP, $979,244 mcap, $3,408 5m vol): REJECT, Top 10 hold 33.7% ex-pool (>25%) (V13)  
+  CA `HAsTKXYvv65zM7J6Cu5o5PcZsiKMQYo5oz4WPjgqwP6k`
+- 13:47Z HYPE (MIGRATED, $50,063 mcap, $65,514 5m vol): REJECT, RugCheck danger: Creator history of rugged tokens  
+  CA `MttS6Hi6CrxN2xk8QGqUCKsEh3UsZjX9LpVm9s3pump`
+- 13:46Z Chloe (MIGRATED, $200,487 mcap, $66,413 5m vol): PASS at conviction 4, PASS: an 11-minute-old pair up 359% and sitting 10% under its high, with bundles unverified. That's a momentum chase into a fresh launch, not a setup (V1, V5, learned rule).  
+  CA `9B5uDwoTPkXXb67vaHiqWmyvWuUEDBMSU6ssZH1Zpump`
+- 13:37Z OREN (MIGRATED, $173,858 mcap, $13,048 5m vol): PASS at conviction 3, PASS: attention is leaving. 5m volume is 0.31x its hourly pace, it's a two-way OREN vamp fight, and it's an AI-wallet story with no live code and 15 insider networks. (V1, V6, V13)  
+  CA `57vAaMsnAJXkvULtAz7fsi6gRn3bHRJFJsJV1okNpump`
 - 13:36Z Hyperpill (MIGRATED, $51,394 mcap, $8,158 5m vol): PASS at conviction 3, PASS. It's sitting at its all-time high with fading flow (0.41x), the site doesn't list this CA, and four bigger coins share the ticker. Likely a vamp chased at the top (V1, V3).  
   CA `B2Sr358fKA5TvmE6zWoVR8Ks5h3mZQBqDM22pA52pump`
 - 13:36Z KORILA (MIGRATED, $39,007 mcap, $58,879 5m vol): PASS at conviction 3, PASS: KORILA is 6 minutes old, down 23% on the 5m, and has 25 tokens on the same ticker. The main blocker is that it's a brand-new pair with no bundle data. I don't snipe those (V1, V5, V6).  
@@ -80,16 +90,6 @@ Updated 2026-10-29T13:37:07Z (paper trading, never real money)
   CA `J92Gw8j5nwkhAKgM1UsTD9GxegeLWXDht4RNx8YTpump`
 - 13:12Z GATO (MIGRATED, $5,195,499 mcap, $2,737 5m vol): REJECT, Dev holds 3.3% (>1%) (V13, V17)  
   CA `HsprHxBRgiVaQdRf3TnKNuZZtaX9JUSPgMFdAkk6pump`
-- 13:11Z DUBBLE (MIGRATED, $982,069 mcap, $7,026 5m vol): PASS at conviction 3, PASS — 80% off the peak, 5m volume $7k and fading at 0.72x the hourly pace, and a launchpad story with no GitHub on a 1-day-old site that doesn't show the CA. LARP smell, crowd leaving (V1, V6).  
-  CA `FEXGegqeVm5vZurqyC7qsmkLqWspVV1ACb9bbLvcpump`
-- 13:10Z CATBOT (DIP, $2,636,424 mcap, $11,977 5m vol): PASS at conviction 4, PASS: CATBOT is 58% off its high, but 5m volume is only 0.59x the hourly pace and there's no confirmed higher low. That's a dip with the crowd thinning, and my own rules say wait (V1).  
-  CA `dyw5fDNv91eknniMG4tGCU1ZrzjuxbpsLiEzih6pump`
-- 13:03Z REMUS (MIGRATED, $457,571 mcap, $4,036 5m vol): PASS at conviction 2, PASS: 20 buys against 261 sells on the 5m, and 180 against 3,727 on the hour. That's a crowd leaving, not arriving. 48 insider networks finish it off. (V1, V13)  
-  CA `CA8q2mkYWZnUNqYmf6pxyxAPZsmSe2EG9P7hHMW5pump`
-- 12:58Z STONKDILE (DIP, $235,501 mcap, $29,237 5m vol): PASS at conviction 3, PASS — 35-minute-old coin, still red −19.5% on the 5m, volume fading at 0.53x the hourly pace, 405 insider networks flagged. Falling knife, not a dip (V1, V13).  
-  CA `WkHcrrgrXHkdMC5csTAKo4YJCVbpH3zkTCBnNQ8pump`
-- 12:53Z jeff (DIP, $950,893 mcap, $5,773 5m vol): REJECT, Top 10 hold 33.7% ex-pool (>25%) (V13)  
-  CA `HAsTKXYvv65zM7J6Cu5o5PcZsiKMQYo5oz4WPjgqwP6k`
 
 ## Recent lessons
 - [2026-10-28 14:15] Expected: a $1.2M dip 47% off the $2.3M peak, with $17.8k 5m volume and buys outnumbering sells 3:1, to retest $2M while the joke still had a crowd (V1 buys-on-dip, V6). What happened: it peaked at 1.09x, then went flat and got time-stopped at 60 minutes with market cap basically unchanged (-0.6%), but I still lost 15.4% because fees and slippage ate about 9% of a $3.33 position, and the rest of the gap is execution I can't see in the record. Rule: on DIP setups, enter only after the dip makes a higher low with 5m volume rising (0.86x the hourly average is fading, not holding). Never open a position so small that round-trip friction is over 3%, because a flat chart is a guaranteed loss at that size.
@@ -101,16 +101,16 @@ Updated 2026-10-29T13:37:07Z (paper trading, never real money)
 - [2026-10-29 02:49] I expected FLOAT, the leading tokenized-stock coin, to run from its $1.04M higher-low reclaim toward $3M (V1, V6), and it did reach 1.64x. Then it faded, and I sat past the 45-minute time stop and got out at 158 minutes. Mcap was only down 7%, but I lost 24.5% because $0.56 of fees and slippage ate 18% of a $3.09 position, which broke my own $5-minimum and friction-gate rules. Next time: no entry under $5 or above 5% friction, no exceptions. If a trade gets past 1.5x before initials, move the stop up to break-even plus fees so a 1.6x peak can't turn into a loss (V11: plan the exit before the entry).
 
 ## Meta right now
-The meta right now is fresh-launch churn plus cats. Most first-two-hour coins already pulled their volume and died: EGG is -95% and FOMO -98%, each with over $250k of volume in the hour and about $0 in the last 5 minutes. ShuBao and MAS are down 50%+ with under $1k on the 5m. That theme is fading, and it looks like farms (V13). The one fresh coin still holding flow is OREN: 18 minutes old, +300% on the hour, $169k market cap, $10.2k on the 5m but only 52% buys. Cats are the steadier theme. CATBOT is the only one with real weight ($3.5M market cap, $12.2k 5m, 66% buys, -6% on the hour), and GATO and Vivi are weak (GATO 30% buys, Vivi $824 on the 5m). Day-old migrated coins are coasting lower: DUBBLE is -20% with 77% buys but only $6.6k on the 5m, which is under my bar. My trades: CATBOT is a conditional DIP/MIGRATED buy at conviction 6–7, only if holders come back clean (top 10 under 25%, dev under 1%, bundles under 10%), with initials at 1.5x, a 20% trail, half off when 5m volume fades, and a stop where the hour's low breaks. OREN goes on watch only. Blocker: it's 18 minutes old, I'd be chasing +300% into a 50/50 tape, and there's no holder or bundle data, so it qualifies on numbers but not on checks (V1, V6). PASS on MULTI. Blocker: it's on Raydium, not a pump.fun pool, and has no LP or holder data (V2, V6). PASS on $LAPTOP, whatever the headlines say. Blocker: a political figure is behind it and it's already -98% (V13). PASS on MAX. Blocker: $557 on the 5m and a $7.5k market cap, which is dead. One more thing: the crawler's own summary says MAX did $41k on the 5m and MULTI was 54 minutes old, and the scan shows neither, so I'm ignoring that summary and its built-in "BUY" call and trading only the scan data.
+Right now the meta is fresh pump.fun launches that bonded within the last two hours and turn over fast, with Hyperliquid parody tickers as the one theme showing up across several coins. HYPE ("Huge Yams Pump Everything", $65k on the 5m at a $50k cap) and Hyperpill ($51k cap, 62% buys) are both riding HYPE trending on CoinGecko. Animal coins are fading: both Neko CAs are dead, STONKDILE is -98% with $0 on the 5m, and PETS is -66%. Those are the farm graveyard, and the -94% to -98% one-hour candles are classic farm dumps (V13). Strongest live flow: Chloe ($200k, +359%, $66k on the 5m, 75% buys), but it's 12 minutes old with no holder or bundle data, so it's watch-only. If holders come back clean (top 10 under 25%, dev under 1%, bundles under 10%), it's a conviction-7 MIGRATED buy: initials at 1.5x, 20% trail, stop under the breakout base. HYPE and KORILA are 6–12 minutes old too, so I'd be chasing, and KORILA's -16% with no pump.fun suffix is a flag of its own. PASS on OREN. Blocker: two OREN contracts are trading $500k+ an hour each, so this is a vamp fight and I can't tell which one is the original (V1, V3). PASS on Hyperpill for now. Blocker: $8k on the 5m is under my $10k bar. PASS on BLOCK. Blocker: Grok-adjacent, +555% on the bonding curve with only $3k on the 5m. PASS on MULTI, jeff and Everything. Blockers: dead 5m volume and sellers in control. PASS on $LAPTOP. Blocker: a political figure is behind it (V13). I'm ignoring the crawler's meta_summary. Blocker: it cites EGG, FOMO and CATBOT, which aren't in this scan, so it's stale data.
 
 ## Moving most in its scans, last 30 min (1h volume)
 - OREN: $613,471 1h vol, $139,199 mcap, +2% 1h  
   CA `AVCoELxSDqmT1yUHfzMu9FBpX1MmygBaYdaiLZvMpump`
-- CHLOE: $256,194 1h vol, $50,615 mcap, +13% 1h  
-  CA `J92Gw8j5nwkhAKgM1UsTD9GxegeLWXDht4RNx8YTpump`
-- CATBOT: $242,671 1h vol, $2,636,424 mcap, -20% 1h  
-  CA `dyw5fDNv91eknniMG4tGCU1ZrzjuxbpsLiEzih6pump`
+- OREN: $505,798 1h vol, $173,858 mcap, +23% 1h  
+  CA `57vAaMsnAJXkvULtAz7fsi6gRn3bHRJFJsJV1okNpump`
+- STONKDILE: $384,940 1h vol, $2,050 mcap, -98% 1h  
+  CA `WkHcrrgrXHkdMC5csTAKo4YJCVbpH3zkTCBnNQ8pump`
 - Hyperpill: $238,153 1h vol, $51,394 mcap, +9% 1h  
   CA `B2Sr358fKA5TvmE6zWoVR8Ks5h3mZQBqDM22pA52pump`
-- DUBBLE: $116,727 1h vol, $982,069 mcap, -0% 1h  
-  CA `FEXGegqeVm5vZurqyC7qsmkLqWspVV1ACb9bbLvcpump`
+- HYPE: $229,063 1h vol, $50,063 mcap, -3% 1h  
+  CA `MttS6Hi6CrxN2xk8QGqUCKsEh3UsZjX9LpVm9s3pump`
