@@ -1,13 +1,13 @@
 # Trencher live report
 
-Updated 2026-10-29T19:26:02Z (paper trading, never real money)
+Updated 2026-10-29T19:41:40Z (paper trading, never real money)
 
 - Equity: $99.93 (-0.1% vs $100 start)
-- Goal: $1,000 by 2026-11-05 05:03Z (a stretch, survival first): at 10% of it, 6.4 days left, needs +43.3% a day from here
+- Goal: $1,000 by 2026-11-05 05:03Z (a stretch, survival first): at 10% of it, 6.4 days left, needs +43.4% a day from here
 - Closed trades: 7, 2 wins
 - Fees paid: $4.16 (axiom $0.43, network $3.26, pool $0.35), plus $0.62 lost to slippage
 - New trades: on
-- Brain: subscription, 442 calls and 0 plan-limit hits in 48h
+- Brain: subscription, 444 calls and 0 plan-limit hits in 48h
 
 ## Scorecard (after fees)
 - 7 closed, 2 won (29%), net $-0.07
@@ -67,29 +67,29 @@ Updated 2026-10-29T19:26:02Z (paper trading, never real money)
   CA `Bv1a7cEj5aRnJQhMw4kRQqAFesMSd5LwcDnUzq52BMmr`
 
 ## Last scan
-- 19:25Z: 2 coins, 2 with pairs, 1 passed the market filters, 1 researched
+- 19:40Z: 3 coins, 3 with pairs, 2 passed the market filters, 2 researched
 
 ## Coins it looked at, and why it passed
+- 19:41Z Hypurr (DIP, $168,752 mcap, $10,023 5m vol): REJECT, Dip with fading attention is a falling knife, not a dip  
+  CA `FSsgh7o8SvBDuZcxnShESZ175UWhwE4h2DgCLKvfpump`
+- 19:41Z HYPEDOG (DIP, $206,226 mcap, $13,377 5m vol): PASS at conviction 4, PASS: 5m volume is only 0.69x its hourly pace on a 45% dip, and HYPEDOG is one of 8 coins on this ticker, a side copy of the HYPE meta where HYPERCAT leads. The website is a one-hour-old template that still says "PASTE_CONTRACT_ADDRESS_HERE". (V1, V3, V13)  
+  CA `CNtdYoJq9viwsj5eogkK45Bn9HjMyGKWpU6GB2dwpump`
+- 19:37Z Tofu (DIP, $105,780 mcap, $11,763 5m vol): REJECT, Dip with fading attention is a falling knife, not a dip  
+  CA `GxMZtiBgx9ctU3KsybnB7aWBcPSVhQQqs8FzKJsVpump`
+- 19:34Z CROWD (MIGRATED, $117,620 mcap, $16,913 5m vol): REJECT, Dev holds 8.5% (>1%) (V13, V17)  
+  CA `H3iGq7KSqdzw7QG3xZo2mF4eaYsvihZqqoAkdXripump`
+- 19:31Z HyPepe (FINAL_STRETCH, $25,704 mcap, $6,899 5m vol): REJECT, Top 10 hold 25.3% ex-pool (>25%) (V13)  
+  CA `FAQ9cZQdYQA8TTQnyjx1dgUjmqcHc4zZ7N3vwDHSpump`
+- 19:30Z VI (DIP, $133,487 mcap, $4,509 5m vol): PASS at conviction 3, PASS: VI is 70% off its high with $4.5k on the 5m, running at 0.76x its hourly pace. That's a falling knife with a nice website. (V1, V6)  
+  CA `A6PM7bxyWYiUxaEpRMHvuL4tY2jYVf8N46vXZ15Hpump`
+- 19:26Z HOUSEWORM (DIP, $423,453 mcap, $6,860 5m vol): REJECT, Dip with fading attention is a falling knife, not a dip  
+  CA `9KhzhyM1BwgW6myZRcqdzQvemKjVrjck8kaevTkMpump`
 - 19:25Z HYPERCAT (MIGRATED, $468,227 mcap, $20,066 5m vol): PASS at conviction 4, PASS: 5m volume is running at 0.45x its hourly pace, and two bigger coins share the HYPERCAT ticker. The crowd is leaving a coin that may not even be the original (V1, V6).  
   CA `AEqw9bAtqJCWPNNJp9EieXw8GYwm1kgsJBDdJBU2pump`
 - 19:24Z DESSA (DIP, $6,566,332 mcap, $12,920 5m vol): REJECT, Dip with fading attention is a falling knife, not a dip  
   CA `npz2FhoufQ7pKqhGpaipYWacrAkidyW2yDpVWSvpump`
 - 19:23Z HIVEMIND (MIGRATED, $97,590 mcap, $2,652 5m vol): REJECT, RugCheck danger: Large Amount of LP Unlocked 100.00%  
   CA `6NLUC3veg7NGuQBNewE1UM7G6ir2mymJM4PvwdkGpump`
-- 19:23Z Hypers (FINAL_STRETCH, $20,668 mcap, $8,307 5m vol): REJECT, Top 10 hold 28.5% ex-pool (>25%) (V13)  
-  CA `7Pti8RvCmszyyEU5CFUb3n8siQAFFq5KyoDytXZ8pump`
-- 19:16Z CATBOT (MIGRATED, $83,823 mcap, $9,931 5m vol): PASS at conviction 2, PASS — 98.7% off a $6.4M peak with about $6 buys flooding the tape. That's a farm's corpse being botted, not a dip (V3, V6, V13).  
-  CA `dyw5fDNv91eknniMG4tGCU1ZrzjuxbpsLiEzih6pump`
-- 19:15Z TOFU (MIGRATED, $146,667 mcap, $41,169 5m vol): PASS at conviction 4, PASS: 13 minutes old and bouncing 24% back toward the high. That's a momentum chase on a near-new pair with bundles I can't see. Blocker: the entry spot. Watch for a $100–110k retest (V1, V5, V6).  
-  CA `FaBb6ebRTGbZWchGiC2eSSRaZWVsFYLe9UqvBuiYpump`
-- 19:13Z GATO (MIGRATED, $5,040,866 mcap, $3,105 5m vol): REJECT, Dev holds 3.3% (>1%) (V13, V17)  
-  CA `HsprHxBRgiVaQdRf3TnKNuZZtaX9JUSPgMFdAkk6pump`
-- 19:13Z HEXN (DIP, $1,024,605 mcap, $209,429 5m vol): PASS at conviction 3, PASS — 'Financial Operating System' with a 5-hour-old domain and zero GitHub is a LARP (V1), and it's -39% on the 5m twelve minutes off the top with no higher low yet. Blockers: LARP hard line + no confirmed dip structure.  
-  CA `ANVLA6eKiAq4nstD2Sg3SZhfVkSEwfnGccn12UQWpump`
-- 19:09Z Elon (DIP, $80,053 mcap, $12,090 5m vol): REJECT, Dip with fading attention is a falling knife, not a dip  
-  CA `53oJbc1vd4gkFZyuiUc4yGmJNceVmKWqRe4huQYEpump`
-- 19:09Z MAX (FINAL_STRETCH, $36,178 mcap, $52,657 5m vol): PASS at conviction 4, PASS: 13 minutes old, up 890% in an hour, 10% off its high at 88% bond, and the top 10 hold 19.9% with bundles unverified. That's chasing a pre-bond pump on lagged data (V1, V5, V6).  
-  CA `4CN5q1Dqx3XTMcJ3vDkVxxEZczrDgJBu64a5yD9qpump`
 
 ## Recent lessons
 - [2026-10-28 14:15] Expected: a $1.2M dip 47% off the $2.3M peak, with $17.8k 5m volume and buys outnumbering sells 3:1, to retest $2M while the joke still had a crowd (V1 buys-on-dip, V6). What happened: it peaked at 1.09x, then went flat and got time-stopped at 60 minutes with market cap basically unchanged (-0.6%), but I still lost 15.4% because fees and slippage ate about 9% of a $3.33 position, and the rest of the gap is execution I can't see in the record. Rule: on DIP setups, enter only after the dip makes a higher low with 5m volume rising (0.86x the hourly average is fading, not holding). Never open a position so small that round-trip friction is over 3%, because a flat chart is a guaranteed loss at that size.
@@ -118,11 +118,11 @@ Passes:
 ## Moving most in its scans, last 30 min (1h volume)
 - HEXN: $708,560 1h vol, $1,024,605 mcap, +40% 1h  
   CA `ANVLA6eKiAq4nstD2Sg3SZhfVkSEwfnGccn12UQWpump`
+- Tofu: $618,446 1h vol, $105,780 mcap, +137% 1h  
+  CA `GxMZtiBgx9ctU3KsybnB7aWBcPSVhQQqs8FzKJsVpump`
 - HYPERCAT: $535,012 1h vol, $468,227 mcap, +1% 1h  
   CA `AEqw9bAtqJCWPNNJp9EieXw8GYwm1kgsJBDdJBU2pump`
-- Elon: $329,673 1h vol, $80,053 mcap, -64% 1h  
-  CA `53oJbc1vd4gkFZyuiUc4yGmJNceVmKWqRe4huQYEpump`
-- DESSA: $328,450 1h vol, $6,566,332 mcap, -39% 1h  
-  CA `npz2FhoufQ7pKqhGpaipYWacrAkidyW2yDpVWSvpump`
-- TOFU: $240,905 1h vol, $146,667 mcap, +153% 1h  
-  CA `FaBb6ebRTGbZWchGiC2eSSRaZWVsFYLe9UqvBuiYpump`
+- Hypurr: $510,076 1h vol, $168,752 mcap, -24% 1h  
+  CA `FSsgh7o8SvBDuZcxnShESZ175UWhwE4h2DgCLKvfpump`
+- HOUSEWORM: $329,098 1h vol, $423,453 mcap, -22% 1h  
+  CA `9KhzhyM1BwgW6myZRcqdzQvemKjVrjck8kaevTkMpump`

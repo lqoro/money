@@ -1,12 +1,12 @@
 {
- "updated_at": "2026-10-29T19:26:02Z",
+ "updated_at": "2026-10-29T19:41:40Z",
  "paused_new_trades": false,
  "brain": {
   "mode": "subscription",
   "paused_until": null,
   "usage_48h": {
    "hours": 48,
-   "brain_calls": 442,
+   "brain_calls": 444,
    "plan_limit_hits": 0,
    "candidates_skipped_no_brain": 0,
    "stop_reviews_without_brain": 0
@@ -529,7 +529,7 @@
  ],
  "learned_rules": "- **Friction gate before every entry (incl. buy-backs):** estimate round-trip fees + slippage. Skip if it is over ~5% of position size, or if the first target can't pay at least 5x that cost. Fees cost 9\u201330% on my $3 trades and turned flat charts into \u221215% and \u221224% losses.\n- **Minimum position ~$5.** If conviction and the honest stop distance don't justify $5, PASS. Never inflate conviction or pull the stop closer to clear the bar (soul: sizing).\n- **MIGRATED: no momentum buys within ~20% of the local high** unless bundle data is verified. Clean top-10 numbers don't rule out bundles spread across many small wallets. CATCULUS bought near the high gapped from \u221230% to \u221259% (V3, V5).\n- **MIGRATED entries come on a pullback:** the 0.618 fib or point-of-control retest, with 5m volume \u2265 $10k and organic buys:sells (V1, V6). My two winners (CATBOT, FLOATER) were both clean dip-buys of the leading coin.\n- **In a vamp field, buy only the leader** by 5m volume and attention. Never the 2nd or 3rd copy (V1, V2). FLOATER beat 22 same-ticker coins on flow.\n- **DIP entries need a higher low plus rising 5m volume.** If 5m volume is under ~1x the hourly average, it's fading. No entry on the first red-to-green candle (V1).\n- **Re-entry after a stop or time stop only on reclaim of the prior high** (or a new higher high), not while it's basing mid-range. The CATBOT buy-back mid-range died flat.\n- **Take initials at 2x with sell-initials, every time** (V11). It worked on both winners.\n- **After initials, trail 30% from peak; once past 4x, tighten to ~25%.** Don't round-trip a runner. The CATBOT 35% trail gave back about 40% of a 4.44x peak.\n- **Time stop is right when the chart is flat.** If it's under 1.0x at 45 min with no volume surge, exit. Don't marry the bag (V1).\n- **Stop review: if top-10 or insider share dropped since entry and price is still bleeding, SELL.** Holding once is only for a dump where the narrative and 5m volume are still clearly intact.\n- **A gap through the stop is an entry problem, not a stop-width problem.** Fix it with entry location (pullbacks) and bundle checks, not a wider stop.\n- **Log fees with every trade lesson** so the friction math stays honest.\n",
  "meta": {
-  "age_minutes": 0,
+  "age_minutes": 6,
   "meta_summary": "The meta is fresh pump.fun launches, mostly under 2 hours old, running on Hyperliquid and HYPE jokes. HYPERCAT is up 1,073% at 0.5h, HYPEFAUCET is up 48%, and HYPE is trending on CoinGecko, so that theme is rising. Two other themes are dying. The Polymarket-hack joke is done (POLYHACKED -79%, PULYMARKET at $7k), and so is the famous-name launch (Elon Coin did $966k in the hour but only $1.6k in the last 5m, buyers gone). The crawler's own summary uses stale numbers that don't match this scan (HI, AgenC), so I'm ignoring it. Political coins like $LAPTOP are a hard no (V13).\n\nWatchlist only, no buys until holder, bundle and dev data come back clean:\n- **HEXN (MIGRATED):** $807k cap, $22k on the 5m, 74% buys, +98% on the hour, 1.5h old.\n- **HOUSEWORM (MIGRATED, possible dip):** $582k cap, $16.5k on the 5m, 65% buys, -6% on the hour, 2.8h old.\n\nIf either checks out (top 10 under 25%, dev under 1%, bundlers under 10%), I'd score it about a 7. Initials out at 1.5x, then a 20% trail.\n\nPasses:\n- **HYPERCAT:** 30 minutes old and already up 10x. Chasing that is new-pair sniping on lagged data (V5).\n- **DESSA:** 5m volume is about half its hourly pace and price is flat.\n- **Elon, VOUCH, WALT, JEFF, MEGA, Eggcoin:** 5m volume has collapsed.\n- **CATBOT:** -68% on the hour, looks like a farm.",
   "top_narratives": [
    "app",
@@ -541,11 +541,11 @@
    "bonus",
    "robinhood",
    "code",
-   "trump",
    "times",
    "referral code",
-   "hunter",
+   "trump",
    "app referral",
+   "hunter",
    "pepe",
    "machine",
    "slowing",
@@ -554,29 +554,29 @@
    "plan"
   ],
   "trending_categories": [
-   "Derivatives",
-   "Perpetuals",
    "Proof of Work (PoW)",
-   "Decentralized Exchange (DEX)",
-   "Exchange-based Tokens",
-   "Layer 1 (L1)"
+   "Layer 2 (L2)",
+   "Layer 1 (L1)",
+   "Smart Contract Platform",
+   "Real World Assets (RWA)",
+   "Alleged SEC Securities"
   ],
   "trending_coins": [
-   "HYPE",
    "SP",
+   "HYPE",
    "PEPE",
    "KNTQ",
    "ZEC",
-   "NEAR",
    "PENGU",
+   "NEAR",
    "PEARL",
-   "POL",
    "QTC",
+   "POL",
    "STONK",
-   "BTC",
-   "Q",
    "XMR",
-   "INJ"
+   "INJ",
+   "BTC",
+   "Q"
   ],
   "hot_tickers": [
    {
@@ -590,10 +590,6 @@
    {
     "ticker": "$HYPERCAT",
     "mentions": 2
-   },
-   {
-    "ticker": "$LICK",
-    "mentions": 1
    },
    {
     "ticker": "$HYPE",
@@ -626,6 +622,10 @@
    {
     "ticker": "$SIMULATOR",
     "mentions": 1
+   },
+   {
+    "ticker": "$HIVEMIND",
+    "mentions": 1
    }
   ],
   "headlines": [
@@ -649,6 +649,18 @@
     "age_hours": 2.3
    },
    {
+    "symbol": "Tofu",
+    "name": "Tofu",
+    "ca": "GxMZtiBgx9ctU3KsybnB7aWBcPSVhQQqs8FzKJsVpump",
+    "dex": "pumpswap",
+    "mcap_usd": 105780,
+    "vol_5m": 11763,
+    "vol_1h": 618446,
+    "change_1h": 137,
+    "buy_ratio_5m": 0.62,
+    "age_hours": 0.8
+   },
+   {
     "symbol": "HYPERCAT",
     "name": "HYPERCAT",
     "ca": "AEqw9bAtqJCWPNNJp9EieXw8GYwm1kgsJBDdJBU2pump",
@@ -661,16 +673,28 @@
     "age_hours": 1.3
    },
    {
-    "symbol": "Elon",
-    "name": "Elon Coin",
-    "ca": "53oJbc1vd4gkFZyuiUc4yGmJNceVmKWqRe4huQYEpump",
+    "symbol": "Hypurr",
+    "name": "Hypurr",
+    "ca": "FSsgh7o8SvBDuZcxnShESZ175UWhwE4h2DgCLKvfpump",
     "dex": "pumpswap",
-    "mcap_usd": 80053,
-    "vol_5m": 12090,
-    "vol_1h": 329673,
-    "change_1h": -63.64,
-    "buy_ratio_5m": 0.61,
-    "age_hours": 1.5
+    "mcap_usd": 168752,
+    "vol_5m": 10023,
+    "vol_1h": 510076,
+    "change_1h": -23.91,
+    "buy_ratio_5m": 0.6,
+    "age_hours": 1.7
+   },
+   {
+    "symbol": "HOUSEWORM",
+    "name": "Houseworming",
+    "ca": "9KhzhyM1BwgW6myZRcqdzQvemKjVrjck8kaevTkMpump",
+    "dex": "pumpswap",
+    "mcap_usd": 423453,
+    "vol_5m": 6860,
+    "vol_1h": 329098,
+    "change_1h": -21.61,
+    "buy_ratio_5m": 0.73,
+    "age_hours": 3.6
    },
    {
     "symbol": "DESSA",
@@ -697,40 +721,16 @@
     "age_hours": 0.2
    },
    {
-    "symbol": "HYPERTAG",
-    "name": "Hypertag",
-    "ca": "8WmbpB3Y8ZkGBGtXZX8q7GYHbv8Ac87ARCfgkW3Xpump",
+    "symbol": "HYPEDOG",
+    "name": "HypeDog",
+    "ca": "CNtdYoJq9viwsj5eogkK45Bn9HjMyGKWpU6GB2dwpump",
     "dex": "pumpswap",
-    "mcap_usd": 41273,
-    "vol_5m": 2440,
-    "vol_1h": 212219,
-    "change_1h": -4.36,
-    "buy_ratio_5m": 0.55,
-    "age_hours": 0.8
-   },
-   {
-    "symbol": "AgenC",
-    "name": "AgenC SI Beauty",
-    "ca": "GJKnJsRiM5ATS4yhwjYRegT3iRsXUvcW1dafJPh8pump",
-    "dex": "pumpswap",
-    "mcap_usd": 279614,
-    "vol_5m": 6241,
-    "vol_1h": 138972,
-    "change_1h": -49.1,
-    "buy_ratio_5m": 0.89,
-    "age_hours": 2.7
-   },
-   {
-    "symbol": "SENSE",
-    "name": "Sixth Sense Labs",
-    "ca": "GydpvgKppv8a4gGQqAQsyQJxtQN4S6Ym9gKxjnN3mfun",
-    "dex": "raydium",
-    "mcap_usd": 576223,
-    "vol_5m": 4518,
-    "vol_1h": 132258,
-    "change_1h": 14.26,
-    "buy_ratio_5m": 0.49,
-    "age_hours": 4.4
+    "mcap_usd": 206226,
+    "vol_5m": 13377,
+    "vol_1h": 233057,
+    "change_1h": 94.23,
+    "buy_ratio_5m": 0.62,
+    "age_hours": 1.1
    },
    {
     "symbol": "CATBOT",
@@ -745,16 +745,16 @@
     "age_hours": 22.5
    },
    {
-    "symbol": "MAX",
-    "name": "Max Leverage",
-    "ca": "4CN5q1Dqx3XTMcJ3vDkVxxEZczrDgJBu64a5yD9qpump",
-    "dex": "pumpfun",
-    "mcap_usd": 36178,
-    "vol_5m": 52657,
-    "vol_1h": 106106,
-    "change_1h": 890,
-    "buy_ratio_5m": 0.59,
-    "age_hours": 0.2
+    "symbol": "CROWD",
+    "name": "Crowded",
+    "ca": "H3iGq7KSqdzw7QG3xZo2mF4eaYsvihZqqoAkdXripump",
+    "dex": "pumpswap",
+    "mcap_usd": 117620,
+    "vol_5m": 16913,
+    "vol_1h": 110131,
+    "change_1h": 183,
+    "buy_ratio_5m": 0.81,
+    "age_hours": 0.3
    },
    {
     "symbol": "POLYHACKED",
@@ -769,52 +769,52 @@
     "age_hours": 1.1
    },
    {
-    "symbol": "MEGA",
-    "name": "Megacum",
-    "ca": "CK388SsjTTEpVp4HaTvNt1joC5nuLaHLHhP4TFR7pump",
-    "dex": "pumpfun",
-    "mcap_usd": 4118,
-    "vol_5m": 606,
-    "vol_1h": 88236,
-    "change_1h": -43.06,
-    "buy_ratio_5m": 0.36,
-    "age_hours": 1.0
+    "symbol": "VI",
+    "name": "Vice Inu",
+    "ca": "A6PM7bxyWYiUxaEpRMHvuL4tY2jYVf8N46vXZ15Hpump",
+    "dex": "pumpswap",
+    "mcap_usd": 133487,
+    "vol_5m": 4509,
+    "vol_1h": 71178,
+    "change_1h": -34.44,
+    "buy_ratio_5m": 0.76,
+    "age_hours": 5.3
    },
    {
-    "symbol": "PULYMARKET",
-    "name": "pulymarket",
-    "ca": "32jHLeLqnH6PMwNdFpEoSbZN7KbFqZsf6e5DHWsRMWo7",
+    "symbol": "HyPepe",
+    "name": "HyPepe",
+    "ca": "FAQ9cZQdYQA8TTQnyjx1dgUjmqcHc4zZ7N3vwDHSpump",
     "dex": "pumpfun",
-    "mcap_usd": 3592,
-    "vol_5m": 0,
-    "vol_1h": 79042,
-    "change_1h": 1.66,
-    "buy_ratio_5m": null,
-    "age_hours": 1.1
+    "mcap_usd": 25704,
+    "vol_5m": 6899,
+    "vol_1h": 70885,
+    "change_1h": 694,
+    "buy_ratio_5m": 0.71,
+    "age_hours": 0.6
+   },
+   {
+    "symbol": "LOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOONG",
+    "name": "LOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOONG LYNX",
+    "ca": "7hAzqBLDQzrkh4gUK2usZh572zPrEc9G1DJETWe9MqH8",
+    "dex": "raydium",
+    "mcap_usd": 5518,
+    "vol_5m": 2442,
+    "vol_1h": 67810,
+    "change_1h": -86.71,
+    "buy_ratio_5m": 0.31,
+    "age_hours": 0.2
    },
    {
     "symbol": "Eggcoin",
     "name": "Eggcoin",
     "ca": "4GFvJxg2WGVQnd2628ukK5WsEkCz69RsVV61Wybfpump",
     "dex": "pumpfun",
-    "mcap_usd": 3167,
-    "vol_5m": 0,
-    "vol_1h": 61724,
-    "change_1h": -55.94,
-    "buy_ratio_5m": null,
-    "age_hours": 0.8
-   },
-   {
-    "symbol": "GATO",
-    "name": "GTA6CAT",
-    "ca": "HsprHxBRgiVaQdRf3TnKNuZZtaX9JUSPgMFdAkk6pump",
-    "dex": "pumpswap",
-    "mcap_usd": 5040866,
-    "vol_5m": 3105,
-    "vol_1h": 49977,
-    "change_1h": 8.1,
-    "buy_ratio_5m": 0.38,
-    "age_hours": 1566.8
+    "mcap_usd": 3050,
+    "vol_5m": 59,
+    "vol_1h": 61782,
+    "change_1h": -57.58,
+    "buy_ratio_5m": 0.0,
+    "age_hours": 0.9
    }
   ]
  },
@@ -824,93 +824,16 @@
   "equity_usd": 99.93,
   "progress_pct": 10.0,
   "days_left": 6.4,
-  "needed_daily_growth_pct": 43.3
+  "needed_daily_growth_pct": 43.4
  },
  "last_scan": {
-  "at": 1793301908.8578691,
-  "tokens": 2,
-  "pairs": 2,
-  "passed_market_filters": 1,
-  "researched": 1
+  "at": 1793302851.574891,
+  "tokens": 3,
+  "pairs": 3,
+  "passed_market_filters": 2,
+  "researched": 2
  },
  "recent_looks": [
-  {
-   "ts": "2026-10-29T18:55:31Z",
-   "symbol": "HYPEDOG",
-   "ca": "CNtdYoJq9viwsj5eogkK45Bn9HjMyGKWpU6GB2dwpump",
-   "setup": "MIGRATED",
-   "mcap_usd": 160390,
-   "vol_5m": 30268,
-   "outcome": "PASS",
-   "conviction": 4,
-   "reason": "PASS: a 19-minute-old coin, 14% under its high and up 44% in 5 minutes, with bundles unverified and a template site that never had its CA pasted in. That's chasing the third wave of a HYPE copy. (V1, V3, V5)"
-  },
-  {
-   "ts": "2026-10-29T18:56:05Z",
-   "symbol": "HYPEHOUSE",
-   "ca": "CBwX7xj3xvoHh5zM97bwq8wHMuXmqYTftbH7Fgcdpump",
-   "setup": "FINAL_STRETCH",
-   "mcap_usd": 21385,
-   "vol_5m": 3892,
-   "outcome": "PASS",
-   "conviction": 3,
-   "reason": "PASS. The blocker is the community: the only social link is a single tweet from an X account with a racial slur in its handle. On top of that it's one of 18 HYPEHOUSE coins, top 10 hold 20%, and 5m volume is only $3.9k. That's a farm candidate, not a runner (V1, V6, V13)."
-  },
-  {
-   "ts": "2026-10-29T19:01:01Z",
-   "symbol": "SENSE",
-   "ca": "GydpvgKppv8a4gGQqAQsyQJxtQN4S6Ym9gKxjnN3mfun",
-   "setup": "DIP",
-   "mcap_usd": 576223,
-   "vol_5m": 4518,
-   "outcome": "REJECT",
-   "conviction": null,
-   "reason": "Dip with fading attention is a falling knife, not a dip"
-  },
-  {
-   "ts": "2026-10-29T19:02:21Z",
-   "symbol": "HYPERTAG",
-   "ca": "8WmbpB3Y8ZkGBGtXZX8q7GYHbv8Ac87ARCfgkW3Xpump",
-   "setup": "MIGRATED",
-   "mcap_usd": 41273,
-   "vol_5m": 2440,
-   "outcome": "PASS",
-   "conviction": 2,
-   "reason": "PASS. The blocker is dead flow: 5m volume is $2.4k, only 0.14x the hourly pace, so the crowd has already left. The rest is worse: a site registered hours ago pushing a Chrome extension that asks for wallet signatures, a fresh X account, and 7 insider networks (V1, V3, V7, V13)."
-  },
-  {
-   "ts": "2026-10-29T19:03:22Z",
-   "symbol": "AgenC",
-   "ca": "GJKnJsRiM5ATS4yhwjYRegT3iRsXUvcW1dafJPh8pump",
-   "setup": "MIGRATED",
-   "mcap_usd": 279614,
-   "vol_5m": 6241,
-   "outcome": "PASS",
-   "conviction": 3,
-   "reason": "PASS: down 75.7% from the $1.15M peak, past my 75% dip limit. 5m volume is fading at 0.54x the hourly pace, and 7 bigger coins share the ticker. That's a falling knife on a probable vamp (V1, V6)."
-  },
-  {
-   "ts": "2026-10-29T19:09:38Z",
-   "symbol": "MAX",
-   "ca": "4CN5q1Dqx3XTMcJ3vDkVxxEZczrDgJBu64a5yD9qpump",
-   "setup": "FINAL_STRETCH",
-   "mcap_usd": 36178,
-   "vol_5m": 52657,
-   "outcome": "PASS",
-   "conviction": 4,
-   "reason": "PASS: 13 minutes old, up 890% in an hour, 10% off its high at 88% bond, and the top 10 hold 19.9% with bundles unverified. That's chasing a pre-bond pump on lagged data (V1, V5, V6)."
-  },
-  {
-   "ts": "2026-10-29T19:09:38Z",
-   "symbol": "Elon",
-   "ca": "53oJbc1vd4gkFZyuiUc4yGmJNceVmKWqRe4huQYEpump",
-   "setup": "DIP",
-   "mcap_usd": 80053,
-   "vol_5m": 12090,
-   "outcome": "REJECT",
-   "conviction": null,
-   "reason": "Dip with fading attention is a falling knife, not a dip"
-  },
   {
    "ts": "2026-10-29T19:13:01Z",
    "symbol": "HEXN",
@@ -998,6 +921,83 @@
    "outcome": "PASS",
    "conviction": 4,
    "reason": "PASS: 5m volume is running at 0.45x its hourly pace, and two bigger coins share the HYPERCAT ticker. The crowd is leaving a coin that may not even be the original (V1, V6)."
+  },
+  {
+   "ts": "2026-10-29T19:26:23Z",
+   "symbol": "HOUSEWORM",
+   "ca": "9KhzhyM1BwgW6myZRcqdzQvemKjVrjck8kaevTkMpump",
+   "setup": "DIP",
+   "mcap_usd": 423453,
+   "vol_5m": 6860,
+   "outcome": "REJECT",
+   "conviction": null,
+   "reason": "Dip with fading attention is a falling knife, not a dip"
+  },
+  {
+   "ts": "2026-10-29T19:30:43Z",
+   "symbol": "VI",
+   "ca": "A6PM7bxyWYiUxaEpRMHvuL4tY2jYVf8N46vXZ15Hpump",
+   "setup": "DIP",
+   "mcap_usd": 133487,
+   "vol_5m": 4509,
+   "outcome": "PASS",
+   "conviction": 3,
+   "reason": "PASS: VI is 70% off its high with $4.5k on the 5m, running at 0.76x its hourly pace. That's a falling knife with a nice website. (V1, V6)"
+  },
+  {
+   "ts": "2026-10-29T19:31:30Z",
+   "symbol": "HyPepe",
+   "ca": "FAQ9cZQdYQA8TTQnyjx1dgUjmqcHc4zZ7N3vwDHSpump",
+   "setup": "FINAL_STRETCH",
+   "mcap_usd": 25704,
+   "vol_5m": 6899,
+   "outcome": "REJECT",
+   "conviction": null,
+   "reason": "Top 10 hold 25.3% ex-pool (>25%) (V13)"
+  },
+  {
+   "ts": "2026-10-29T19:34:37Z",
+   "symbol": "CROWD",
+   "ca": "H3iGq7KSqdzw7QG3xZo2mF4eaYsvihZqqoAkdXripump",
+   "setup": "MIGRATED",
+   "mcap_usd": 117620,
+   "vol_5m": 16913,
+   "outcome": "REJECT",
+   "conviction": null,
+   "reason": "Dev holds 8.5% (>1%) (V13, V17)"
+  },
+  {
+   "ts": "2026-10-29T19:37:46Z",
+   "symbol": "Tofu",
+   "ca": "GxMZtiBgx9ctU3KsybnB7aWBcPSVhQQqs8FzKJsVpump",
+   "setup": "DIP",
+   "mcap_usd": 105780,
+   "vol_5m": 11763,
+   "outcome": "REJECT",
+   "conviction": null,
+   "reason": "Dip with fading attention is a falling knife, not a dip"
+  },
+  {
+   "ts": "2026-10-29T19:41:23Z",
+   "symbol": "HYPEDOG",
+   "ca": "CNtdYoJq9viwsj5eogkK45Bn9HjMyGKWpU6GB2dwpump",
+   "setup": "DIP",
+   "mcap_usd": 206226,
+   "vol_5m": 13377,
+   "outcome": "PASS",
+   "conviction": 4,
+   "reason": "PASS: 5m volume is only 0.69x its hourly pace on a 45% dip, and HYPEDOG is one of 8 coins on this ticker, a side copy of the HYPE meta where HYPERCAT leads. The website is a one-hour-old template that still says \"PASTE_CONTRACT_ADDRESS_HERE\". (V1, V3, V13)"
+  },
+  {
+   "ts": "2026-10-29T19:41:24Z",
+   "symbol": "Hypurr",
+   "ca": "FSsgh7o8SvBDuZcxnShESZ175UWhwE4h2DgCLKvfpump",
+   "setup": "DIP",
+   "mcap_usd": 168752,
+   "vol_5m": 10023,
+   "outcome": "REJECT",
+   "conviction": null,
+   "reason": "Dip with fading attention is a falling knife, not a dip"
   }
  ],
  "scorecard": {
