@@ -7,8 +7,10 @@ e.g. STARTING_CASH_USD=250 or MAX_POSITION_PCT=5.
 
 from __future__ import annotations
 
+import calendar
 import json
 import os
+import time
 from dataclasses import dataclass, field, fields
 from pathlib import Path
 
@@ -131,6 +133,8 @@ class Config:
     # Set at runtime by Duet's steer.json, not from the environment.
     pause_new_trades: bool = False
     owner_note: str = ""
+    goal_equity_usd: float = 0.0  # Duet's stretch goal: equity target...
+    goal_deadline: str = ""  # ...by this UTC time, "YYYY-MM-DDTHH:MM:SSZ"
     steer_pinned: dict = field(default_factory=dict, repr=False)  # name → value before steering
 
     # --- Notifications ------------------------------------------------------
@@ -182,6 +186,22 @@ class Config:
                 setattr(self, name, min(hi, max(lo, float(value))))
                 applied[name] = getattr(self, name)
         return applied
+
+    def goal_progress(self, equity_usd: float, now: float | None = None) -> dict | None:
+        """Where the wallet stands against the owner's goal, or None when no goal is set."""
+        if self.goal_equity_usd <= 0 or not self.goal_deadline:
+            return None
+        try:
+            deadline = calendar.timegm(time.strptime(self.goal_deadline, "%Y-%m-%dT%H:%M:%SZ"))
+        except ValueError:
+            return None
+        days_left = max(0.0, (deadline - (now or time.time())) / 86400)
+        need = None
+        if equity_usd > 0 and days_left >= 0.04:
+            need = round(100 * ((self.goal_equity_usd / equity_usd) ** (1 / days_left) - 1), 1)
+        return {"target_usd": self.goal_equity_usd, "deadline": self.goal_deadline,
+                "equity_usd": round(equity_usd, 2), "progress_pct": round(100 * equity_usd / self.goal_equity_usd, 1),
+                "days_left": round(days_left, 1), "needed_daily_growth_pct": need}
 
     def strategy_view(self) -> dict:
         return {name: getattr(self, name) for name in EVOLVABLE}

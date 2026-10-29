@@ -715,3 +715,24 @@ def test_meta_summary_reads_the_scan_and_the_owner_note(plan_brain, monkeypatch)
     plan_brain.cfg.owner_note = "trade what's moving"
     plan_brain.summarize_meta({"scan_movers": [{"symbol": "HOT"}]})
     assert "scan_movers" in seen["p"] and "trade what's moving" in seen["p"] and "HOT" in seen["p"]
+
+
+def test_duet_goal_shows_progress_in_the_report_and_the_prompt(cfg):
+    import calendar as _cal
+    from agent.bridge import apply_steering, build_report
+    from agent.main import Agent
+    agent = Agent(cfg)
+    apply_steering(cfg, {"goal": {"equity_usd": 1000, "deadline": "2026-11-05T05:03:00Z"}})
+    now = _cal.timegm(time.strptime("2026-10-29T05:03:00Z", "%Y-%m-%dT%H:%M:%SZ"))
+    g = cfg.goal_progress(100.0, now=now)
+    assert g["progress_pct"] == 10 and g["days_left"] == 7
+    assert 38 < g["needed_daily_growth_pct"] < 40  # 10x in 7 days
+    status, rep = build_report(agent)
+    assert status["goal"]["target_usd"] == 1000
+    assert "- Goal: $1,000 by 2026-11-05 05:03Z" in rep and "survival first" in rep
+    assert "owner's goal" in agent.brain._goal(100.0) and "never justifies a bigger size" in agent.brain._goal(100.0)
+
+    apply_steering(cfg, {"goal": {"equity_usd": 1000, "deadline": "next week"}})  # bad deadline: no goal
+    assert cfg.goal_progress(100.0) is None
+    apply_steering(cfg, {})
+    assert build_report(agent)[0]["goal"] is None

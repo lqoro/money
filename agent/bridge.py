@@ -8,7 +8,8 @@ in this repo, checked out at DUET_SYNC_DIR:
     REPORT.md    the same, readable on GitHub or a phone
     steer.json   written by Duet:  {"pause_new_trades": bool,
                                     "settings": {"stop_loss_pct": 25, "bribe_sol": 0.002, ...},
-                                    "owner_note": "short guidance for the brain"}
+                                    "owner_note": "short guidance for the brain",
+                                    "goal": {"equity_usd": 1000, "deadline": "2026-11-05T05:00:00Z"}}
 
 Every DUET_SYNC_INTERVAL_MIN minutes Trencher pulls the branch, applies steer.json,
 writes its status and pushes. Steering is data, never code: only a pause flag,
@@ -75,6 +76,20 @@ def apply_steering(cfg: Config, steer: dict) -> dict:
         log.info("Duet steering: %s back to %g", name, getattr(cfg, name))
     cfg.apply_strategy()
 
+    goal = steer.get("goal")
+    cfg.goal_equity_usd, cfg.goal_deadline = 0.0, ""
+    if isinstance(goal, dict):
+        try:
+            target = float(goal.get("equity_usd") or 0)
+            deadline = str(goal.get("deadline") or "")
+            time.strptime(deadline, "%Y-%m-%dT%H:%M:%SZ")
+        except (TypeError, ValueError):
+            log.warning("Duet steering: ignoring goal %r (needs equity_usd and a deadline like 2026-11-05T05:00:00Z)", goal)
+        else:
+            if target > 0:
+                cfg.goal_equity_usd, cfg.goal_deadline = target, deadline
+                applied["goal"] = {"equity_usd": target, "deadline": deadline}
+
     note = steer.get("owner_note")
     cfg.owner_note = str(note).strip()[:MAX_NOTE_CHARS] if note else ""
     if cfg.owner_note:
@@ -99,6 +114,7 @@ def build_report(agent) -> tuple[dict, str]:
         "recent_lessons": journal.recent_lessons(cfg, 10),
         "learned_rules": journal.learned_rules(cfg),
         "meta": radar.public_view(agent.meta, headlines=5),
+        "goal": cfg.goal_progress(view.get("equity_usd", agent.pf.equity())),
         "last_scan": getattr(agent, "last_scan", {}),
         "recent_looks": list(getattr(agent, "recent_looks", []))[-15:],
     }
@@ -111,6 +127,10 @@ def build_report(agent) -> tuple[dict, str]:
         f"Updated {status['updated_at']} (paper trading, never real money)",
         "",
         f"- Equity: ${eq:,.2f} ({100 * (eq / cfg.starting_cash_usd - 1):+.1f}% vs ${cfg.starting_cash_usd:.0f} start)",
+        *([f"- Goal: ${g['target_usd']:,.0f} by {g['deadline'][:16].replace('T', ' ')}Z (a stretch, survival first): "
+           f"at {g['progress_pct']:g}% of it, {g['days_left']:g} days left"
+           + (f", needs {g['needed_daily_growth_pct']:+g}% a day from here" if g["needed_daily_growth_pct"] is not None else "")]
+          if (g := status["goal"]) else []),
         f"- Closed trades: {len(closes)}" + (f", {wins} wins" if closes else ""),
         f"- Fees paid: ${view.get('fees_paid_usd', 0):.2f}"
         + (" (" + ", ".join(f"{k} ${v:.2f}" for k, v in (view.get("fees_by_kind_usd") or {}).items()) + ")"

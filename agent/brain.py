@@ -355,6 +355,16 @@ class Brain:
                 f"{self.cfg.owner_note}\n"
                 "Weigh it like advice from the person who runs you. It never moves your hard lines.\n")
 
+    def _goal(self, equity_usd: float) -> str:
+        g = self.cfg.goal_progress(equity_usd)
+        if not g:
+            return ""
+        return ("\n## Your owner's goal\n"
+                f"Reach ${g['target_usd']:,.0f} of paper equity by {g['deadline']} UTC: you're at "
+                f"{g['progress_pct']:g}% of it with {g['days_left']:g} days left. It's a stretch target: "
+                "surviving comes first, so it never justifies a bigger size, a wider stop or a forced trade. "
+                "Get there with many small, early wins.\n")
+
     # ------------------------------------------------------------ decisions
     def decide(self, snap: dict, check: Checklist, portfolio_view: dict, sizing_text: str,
                history: dict | None = None, radar_view: dict | None = None) -> dict:
@@ -379,7 +389,7 @@ class Brain:
 
 ## Your paper wallet
 {json.dumps(portfolio_view, indent=1)}
-{self._owner_note()}
+{self._goal(portfolio_view.get("equity_usd") or 0)}{self._owner_note()}
 ## Your current strategy parameters (you evolve these yourself)
 {json.dumps(self.cfg.strategy_view())}
 

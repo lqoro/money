@@ -143,6 +143,9 @@ How it talks to Duet (`agent/bridge.py`): every 15 minutes Trencher pulls the
   `max_slippage_pct`), clamped to their bounds. Removing one puts it back.
 - `owner_note`: a short note the brain reads before every decision and every
   meta summary
+- `goal`: `{"equity_usd": 1000, "deadline": "2026-11-05T05:00:00Z"}`, a stretch
+  target the brain sees with its progress; REPORT.md shows how far along it is
+  and the daily growth it would take. It never changes sizing or stops.
 
 `REPORT.md` also shows the last scan (how many coins, how many passed the market
 filters), the last coins it looked at with why it passed on each (checklist
