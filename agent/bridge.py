@@ -30,7 +30,7 @@ import subprocess
 import time
 from pathlib import Path
 
-from . import journal, radar
+from . import journal, radar, scorecard
 from .config import EVOLVABLE, ROOT, STEERABLE, Config
 
 log = logging.getLogger(__name__)
@@ -120,6 +120,7 @@ def build_report(agent) -> tuple[dict, str]:
     }
 
     eq = view.get("equity_usd", agent.pf.equity())
+    status["scorecard"] = scorecard.build(trades, eq, status["goal"])
     wins = sum(1 for t in closes if t.get("pnl_usd", 0) > 0)
     lines = [
         "# Trencher live report",
@@ -139,6 +140,8 @@ def build_report(agent) -> tuple[dict, str]:
         f"- New trades: {'PAUSED by Duet' if cfg.pause_new_trades else 'on'}",
         f"- Brain: {status['brain']['mode']}, {status['brain']['usage_48h']['brain_calls']} calls and "
         f"{status['brain']['usage_48h']['plan_limit_hits']} plan-limit hits in 48h",
+        "",
+        *scorecard.lines(status["scorecard"]),
         "",
         "## Open positions",
     ]

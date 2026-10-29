@@ -736,3 +736,73 @@ def test_duet_goal_shows_progress_in_the_report_and_the_prompt(cfg):
     assert cfg.goal_progress(100.0) is None
     apply_steering(cfg, {})
     assert build_report(agent)[0]["goal"] is None
+
+
+# --- After-fees scorecard -----------------------------------------------------
+
+def _close(symbol, pnl, cost, proceeds, fees, slip, peak, reasons, ca=None):
+    return {"event": "CLOSE", "symbol": symbol, "ca": ca or f"{symbol}Mint", "pnl_usd": pnl, "cost_usd": cost,
+            "proceeds_usd": proceeds, "fees_usd": fees, "slippage_usd": slip, "peak_multiple": peak,
+            "exit_reasons": reasons}
+
+
+SCORE_CLOSES = [
+    _close("WIN", 2.73, 2.91, 5.64, 1.01, 0.14, 4.44, ["took initials at 2.02x", "trailing stop: -35% from peak"]),
+    _close("FLAT", -0.43, 3.16, 2.73, 0.48, 0.09, 1.63, ["time stop: 52 min and only 1.03x"]),
+    _close("DUMP", -1.75, 2.96, 1.21, 0.50, 0.06, 1.24, ["stop review: SELL (dump)", "stop loss -30% hit (0.55x)"]),
+]
+
+
+@pytest.mark.parametrize("reason, kind", [
+    ("trailing stop: -30% from peak", "trailing stop"),
+    ("stop loss -30% hit (0.55x); trimmed half on review", "stop loss"),
+    ("time stop: 45 min and only 0.92x", "time stop"),
+    ("target mcap $2,000,000 reached", "target"),
+    ("hard stop -60% hit (0.38x)", "hard stop"),
+    ("liquidity collapsed $40,000 → $100 (rug)", "rug"),
+    ("held through the stop but no recovery by the deadline (0.6x)", "stop review ran out"),
+    ("something new", "other"),
+])
+def test_scorecard_names_the_exit(reason, kind):
+    from agent.scorecard import exit_kind
+    assert exit_kind({"exit_reasons": ["took initials at 2x", reason]}) == kind
+
+
+def test_scorecard_after_fees_numbers():
+    from agent import scorecard
+    card = scorecard.build([{"event": "BUY"}, *SCORE_CLOSES], equity_usd=100.55, goal={"target_usd": 1000})
+    assert card["trades"] == 3 and card["wins"] == 1 and card["win_rate_pct"] == 33
+    assert card["net_usd"] == 0.55 and card["avg_win_usd"] == 2.73 and card["avg_loss_usd"] == -1.09
+    assert card["fees_usd"] == 1.99 and card["slippage_usd"] == 0.29
+    assert card["gross_usd"] == 2.83  # net + fees + slippage
+    assert card["costs_pct_of_gross"] == 81
+    assert [r["symbol"] for r in card["red_after_peak"]] == ["FLAT"]  # hit 1.5x, still lost
+    assert set(card["by_exit"]) == {"trailing stop", "time stop", "stop loss"}
+    assert card["by_exit"]["trailing stop"]["net_usd"] == 2.73
+    assert card["goal"]["to_go_usd"] == 899.45
+    assert card["goal"]["trades_needed_at_this_pace"] == 4997  # 899.45 / 0.18 a trade, rounded up
+
+
+def test_scorecard_reads_on_a_phone():
+    from agent import scorecard
+    card = scorecard.build(SCORE_CLOSES[1:], equity_usd=97.8, goal={"target_usd": 1000})
+    text = scorecard.lines(card)
+    assert text[0] == "## Scorecard (after fees)"
+    assert any("on top of a gross loss" in line for line in text)  # costs vs a gross that's negative
+    assert any("doesn't get there" in line for line in text)
+    assert any("CA `FLATMint`" in line for line in text)  # a listed coin carries its CA
+    assert all(len(line) <= 110 for line in text if "CA `" not in line)
+    assert scorecard.lines(scorecard.build([], 100.0)) == ["## Scorecard (after fees)", "- no closed trades yet"]
+
+
+def test_report_carries_the_scorecard(cfg):
+    from agent import journal
+    from agent.bridge import build_report
+    from agent.main import Agent
+    agent = Agent(cfg)
+    for t in SCORE_CLOSES:
+        journal.log_trade(cfg, t)
+    status, rep = build_report(agent)
+    assert status["scorecard"]["trades"] == 3 and "goal" not in status["scorecard"]  # no goal set
+    assert "## Scorecard (after fees)" in rep and "- 3 closed, 1 won (33%), net $+0.55" in rep
+    assert rep.index("## Scorecard") < rep.index("## Open positions")
