@@ -1,12 +1,12 @@
 {
- "updated_at": "2026-10-29T03:30:34Z",
+ "updated_at": "2026-10-29T03:45:46Z",
  "paused_new_trades": false,
  "brain": {
   "mode": "subscription",
   "paused_until": null,
   "usage_48h": {
    "hours": 48,
-   "brain_calls": 250,
+   "brain_calls": 254,
    "plan_limit_hits": 0,
    "candidates_skipped_no_brain": 0,
    "stop_reviews_without_brain": 0
@@ -527,24 +527,24 @@
  ],
  "learned_rules": "- **Friction gate before every entry (incl. buy-backs):** estimate round-trip fees + slippage. Skip if it is over ~5% of position size, or if the first target can't pay at least 5x that cost. Fees cost 9\u201330% on my $3 trades and turned flat charts into \u221215% and \u221224% losses.\n- **Minimum position ~$5.** If conviction and the honest stop distance don't justify $5, PASS. Never inflate conviction or pull the stop closer to clear the bar (soul: sizing).\n- **MIGRATED: no momentum buys within ~20% of the local high** unless bundle data is verified. Clean top-10 numbers don't rule out bundles spread across many small wallets. CATCULUS bought near the high gapped from \u221230% to \u221259% (V3, V5).\n- **MIGRATED entries come on a pullback:** the 0.618 fib or point-of-control retest, with 5m volume \u2265 $10k and organic buys:sells (V1, V6). My two winners (CATBOT, FLOATER) were both clean dip-buys of the leading coin.\n- **In a vamp field, buy only the leader** by 5m volume and attention. Never the 2nd or 3rd copy (V1, V2). FLOATER beat 22 same-ticker coins on flow.\n- **DIP entries need a higher low plus rising 5m volume.** If 5m volume is under ~1x the hourly average, it's fading. No entry on the first red-to-green candle (V1).\n- **Re-entry after a stop or time stop only on reclaim of the prior high** (or a new higher high), not while it's basing mid-range. The CATBOT buy-back mid-range died flat.\n- **Take initials at 2x with sell-initials, every time** (V11). It worked on both winners.\n- **After initials, trail 30% from peak; once past 4x, tighten to ~25%.** Don't round-trip a runner. The CATBOT 35% trail gave back about 40% of a 4.44x peak.\n- **Time stop is right when the chart is flat.** If it's under 1.0x at 45 min with no volume surge, exit. Don't marry the bag (V1).\n- **Stop review: if top-10 or insider share dropped since entry and price is still bleeding, SELL.** Holding once is only for a dump where the narrative and 5m volume are still clearly intact.\n- **A gap through the stop is an entry problem, not a stop-width problem.** Fix it with entry location (pullbacks) and bundle checks, not a wider stop.\n- **Log fees with every trade lesson** so the friction math stays honest.\n",
  "meta": {
-  "age_minutes": 4,
-  "meta_summary": "It's quiet. Nothing real is running in the trenches. The loudest Solana story is Hunter Biden's $LAPTOP. It fell about 98% on day one and is fading, and a political figure pushed the CA, so it's a hard no, along with every vamp or \"revival\" of it (V13). The Robinhood/Circle hype is cooling too. The money that is rising is bucket-2 money, not trench money: tokenized stocks and Robinhood Chain, stablecoins/RWA, PEPE and PENGU on CoinGecko trending, and BTC above $81k ahead of the Fed (V8). $MT, $POKERFACE and $SLEEGO are scattered single mentions with no crowd behind them, so I'm not chasing them (V7). The one meta I can see coming is Halloween, three days out. Holiday metas get front-run (V5), so I'm watching for an original, funny spooky coin, like a pumpkin or a frog in a costume that catches the PEPE/frog flow, not a knockoff (V1). It has to be bonded, doing $10k+ in 5-minute volume, with clean holders (V1, V6). Nothing like that has shown up yet, so I'm passing for now.",
+  "age_minutes": 9,
+  "meta_summary": "It's quiet. Nothing real is running in the trenches right now. The loudest Solana story is Hunter Biden's $LAPTOP. It crashed about 98% on day one and is still fading. A political figure pushed the CA, so it's a hard no for me, and so is every vamp or \"revival\" of it (V13). The Robinhood/Circle memecoin hype is also cooling. That \"$443M frenzy dissolves into nothing\" headline is the tell. The money that is actually rising is bucket-2 money, not trench money: tokenized stocks and Robinhood Chain, stablecoins/RWA, PEPE and PENGU on CoinGecko trending, and BTC above $81k ahead of the Fed (V8). $MT, $POKERFACE and $SLEEGO each have only a few scattered mentions and no crowd behind them, so mentions are not a reason to buy (V7). The one meta I can see coming is Halloween, three days out. Traders front-run holiday metas (V5), and $PUMPKINU already has 2 mentions, so it's on watch, not in my bag. What would ride it is an original, funny spooky coin, like a pumpkin or a frog in a costume that catches the PEPE/frog flow, not a knockoff (V1). It also has to be bonded, doing $10k+ in 5-minute volume with clean holders (V1, V6). Until something like that shows up: PASS.",
   "top_narratives": [
    "tokenized",
    "robinhood",
-   "stock",
    "pepe",
+   "stock",
    "prediction",
    "app",
    "fed",
-   "trump",
    "referral",
-   "rally",
    "code",
+   "trump",
+   "rally",
    "dogecoin",
    "stocks",
-   "hunter",
    "adds",
+   "hunter",
    "stablecoin",
    "machine",
    "times",
@@ -553,28 +553,28 @@
   ],
   "trending_categories": [
    "Pons Launchpad",
+   "Alleged SEC Securities",
    "Binance Alpha Spotlight",
-   "Yield Farming",
-   "Made in China",
-   "CoinList Launchpad",
-   "4chan-Themed"
+   "World Liberty Financial Portfolio",
+   "Proof of Stake (PoS)",
+   "Layer 1 (L1)"
   ],
   "trending_coins": [
    "BTC",
    "LIT",
-   "PONS",
    "PENGU",
    "PEPE",
-   "ETH",
+   "PONS",
    "KNTQ",
+   "ETH",
    "SOL",
-   "HYPE",
-   "ZEC",
-   "ADA",
-   "ASTER",
-   "ORCA",
+   "XRP",
+   "GRASS",
    "ONDO",
-   "PUMP"
+   "XDC",
+   "ENA",
+   "AXIS",
+   "NEAR"
   ],
   "hot_tickers": [
    {
@@ -586,7 +586,15 @@
     "mentions": 2
    },
    {
+    "ticker": "$PUMPKINU",
+    "mentions": 2
+   },
+   {
     "ticker": "$LICK",
+    "mentions": 1
+   },
+   {
+    "ticker": "$GATO",
     "mentions": 1
    },
    {
@@ -595,10 +603,6 @@
    },
    {
     "ticker": "$NETWORK",
-    "mentions": 1
-   },
-   {
-    "ticker": "$PUMPKINU",
     "mentions": 1
    },
    {
