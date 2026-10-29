@@ -1,13 +1,13 @@
 # Trencher live report
 
-Updated 2026-10-29T07:48:36Z (paper trading, never real money)
+Updated 2026-10-29T08:03:45Z (paper trading, never real money)
 
 - Equity: $99.93 (-0.1% vs $100 start)
-- Goal: $1,000 by 2026-11-05 05:03Z (a stretch, survival first): at 10% of it, 6.9 days left, needs +39.7% a day from here
+- Goal: $1,000 by 2026-11-05 05:03Z (a stretch, survival first): at 10% of it, 6.9 days left, needs +39.8% a day from here
 - Closed trades: 7, 2 wins
 - Fees paid: $4.16 (axiom $0.43, network $3.26, pool $0.35), plus $0.62 lost to slippage
 - New trades: on
-- Brain: subscription, 297 calls and 0 plan-limit hits in 48h
+- Brain: subscription, 300 calls and 0 plan-limit hits in 48h
 
 ## Scorecard (after fees)
 - 7 closed, 2 won (29%), net $-0.07
@@ -67,29 +67,29 @@ Updated 2026-10-29T07:48:36Z (paper trading, never real money)
   CA `Bv1a7cEj5aRnJQhMw4kRQqAFesMSd5LwcDnUzq52BMmr`
 
 ## Last scan
-- 07:48Z: 3 coins, 2 with pairs, 0 passed the market filters, 0 researched
+- 08:02Z: 28 coins, 27 with pairs, 0 passed the market filters, 0 researched
 
 ## Coins it looked at, and why it passed
+- 08:01Z PODCAT (MIGRATED, $158,758 mcap, $42,300 5m vol): PASS at conviction 4, PASS. The blocker is entry location. PODCAT is 11 minutes old, up 278% in the hour and only 6% off its high, bundles are unverified, and 4 bigger coins share the ticker. That's the CATCULUS setup again. Watch it for a 0.618 retest instead (V1, V3, V5).  
+  CA `6xcLnAebDFLgPDBrVrGzHEcMvjVQfMW6yQL4NvECpump`
+- 08:01Z cat3 (FINAL_STRETCH, $34,686 mcap, $53,580 5m vol): REJECT, RugCheck danger: Creator history of rugged tokens  
+  CA `2HhAf32vdmbKWXJcBhTLR4GarkwocJvfJhqBPFv6fkW1`
+- 07:58Z GATO (MIGRATED, $5,329,583 mcap, $3,729 5m vol): REJECT, Dev holds 3.3% (>1%) (V13, V17)  
+  CA `HsprHxBRgiVaQdRf3TnKNuZZtaX9JUSPgMFdAkk6pump`
+- 07:57Z OTC (MIGRATED, $53,726 mcap, $30,245 5m vol): REJECT, RugCheck danger: Creator history of rugged tokens  
+  CA `Fa24xN13pzjmcx1dtKP9nBMMFCwLtXCJrtP5hSPKpump`
+- 07:50Z CATBOT (MIGRATED, $3,201,111 mcap, $3,614 5m vol): PASS at conviction 3, PASS — 5m volume $3.6k at 0.46x the hourly pace with sells over buys. The crowd is leaving, and $3.2M is mid-range, not a reclaim of the $4.3M high (V1, V6).  
+  CA `dyw5fDNv91eknniMG4tGCU1ZrzjuxbpsLiEzih6pump`
+- 07:50Z HASHTAG (DIP, $97,871 mcap, $6,276 5m vol): REJECT, Dip with fading attention is a falling knife, not a dip  
+  CA `4GgEwQvdSMbMnuw2xqVegZvp4FTt5gVmLSE6jVZApump`
+- 07:50Z Bu (FINAL_STRETCH, $21,962 mcap, $18,979 5m vol): PASS at conviction 4, PASS: Bu is 10 minutes old, top 10 hold 21% ex-pool, and two bigger coins share the ticker. That's a new-pair snipe with a concentrated holder list and no idea I can read. (V5, V6, V1)  
+  CA `Bnxttv7gQHYP1n9JyXuiATWKtxxJPc6sJJzeRFVBuuu`
+- 07:49Z DUBBLE (DIP, $1,510,859 mcap, $9,918 5m vol): REJECT, Dip with fading attention is a falling knife, not a dip  
+  CA `FEXGegqeVm5vZurqyC7qsmkLqWspVV1ACb9bbLvcpump`
 - 07:31Z GLITCH (MIGRATED, $2,679,924 mcap, $2,211 5m vol): REJECT, Top 10 hold 26.9% ex-pool (>25%) (V13)  
   CA `8Xg89xT8Ve34sKiYqYuMs46mycREsCA2F362UscRpump`
 - 07:28Z bingus (FINAL_STRETCH, $29,059 mcap, $7,819 5m vol): REJECT, Top 10 hold 27.7% ex-pool (>25%) (V13)  
   CA `6jzcLmTR7XvQinzuRYA26RGXC4TGkH9fNpjSyQywpump`
-- 07:13Z GATO (MIGRATED, $5,073,895 mcap, $2,463 5m vol): REJECT, Dev holds 3.3% (>1%) (V13, V17)  
-  CA `HsprHxBRgiVaQdRf3TnKNuZZtaX9JUSPgMFdAkk6pump`
-- 07:13Z LOOT (MIGRATED, $35,789 mcap, $4,593 5m vol): REJECT, Top 10 hold 29.9% ex-pool (>25%) (V13)  
-  CA `9195ZJ8dks1534LePW1xDCQVpy4Kdp1s1sA7hr5rpump`
-- 07:10Z REMUS (MIGRATED, $272,545 mcap, $2,043 5m vol): PASS at conviction 2, PASS: down 86% from the peak (past my 75% DIP limit), 15 buys vs 114 sells in 5m, $2k volume. The crowd left. Blocker: dead flow on a too-deep dip (V1, V6).  
-  CA `CA8q2mkYWZnUNqYmf6pxyxAPZsmSe2EG9P7hHMW5pump`
-- 07:05Z CATBOT (MIGRATED, $3,112,137 mcap, $14,716 5m vol): PASS at conviction 4, PASS — re-entry rule: CATBOT at $3.1M is mid-range, 28% under the $4.33M high and 6% under the local high, the same mid-range buy-back that died flat 30 minutes ago. Clean holders don't change where it's sitting. (V1, V6)  
-  CA `dyw5fDNv91eknniMG4tGCU1ZrzjuxbpsLiEzih6pump`
-- 07:04Z DUBBLE (DIP, $2,383,022 mcap, $7,633 5m vol): PASS at conviction 3, PASS — a "dual-market launchpad" with no product, no GitHub, a 0.8-day-old site that doesn't show its own CA, and 5m flow fading under $10k. Classic tech LARP on a dip (V1, V3).  
-  CA `FEXGegqeVm5vZurqyC7qsmkLqWspVV1ACb9bbLvcpump`
-- 06:51Z SELLICON (MIGRATED, $161,561 mcap, $38,241 5m vol): PASS at conviction 4, PASS — 16-minute-old coin at its all-time high with 5 insider networks and no bundle data. That's buying into the bundle's exit. On watch for the $85–100k 0.618 retest (V1, V3, V5).  
-  CA `DPb1vNz5wXuYCv27S85zZ8sGh6NTfU6gMYRFYA7Jpump`
-- 06:42Z Steve (MIGRATED, $142,565 mcap, $25,511 5m vol): REJECT, Dev holds 1.1% (>1%) (V13, V17)  
-  CA `Fxyj1MSfyE8PCsVUWmXTHCWmCKFK7dkvgkd6HvuHpump`
-- 06:38Z STONKLANA (MIGRATED, $414,577 mcap, $2,878 5m vol): PASS at conviction 2, PASS: down 99.7% from a claimed $156M peak, 47 insider networks and 18 coins sharing the ticker. That's a corpse, not a dip (V6, V13, V17).  
-  CA `GF74fBfcaeLjUiUwKpRiUbvMQtTvNyzMoo6KNyyqNyk6`
 
 ## Recent lessons
 - [2026-10-28 14:15] Expected: a $1.2M dip 47% off the $2.3M peak, with $17.8k 5m volume and buys outnumbering sells 3:1, to retest $2M while the joke still had a crowd (V1 buys-on-dip, V6). What happened: it peaked at 1.09x, then went flat and got time-stopped at 60 minutes with market cap basically unchanged (-0.6%), but I still lost 15.4% because fees and slippage ate about 9% of a $3.33 position, and the rest of the gap is execution I can't see in the record. Rule: on DIP setups, enter only after the dip makes a higher low with 5m volume rising (0.86x the hourly average is fading, not holding). Never open a position so small that round-trip friction is over 3%, because a flat chart is a guaranteed loss at that size.
@@ -104,13 +104,13 @@ Updated 2026-10-29T07:48:36Z (paper trading, never real money)
 The meta is fast absurd jokes on everyday objects and names, and they die within an hour. Sellicon Valley (-98%), VoiceMemos (-90%), Steve (-99%) and Pool (-62%) all launched or graduated in the last hour and got dumped, with 5m volume now $0-215 and buyers at 0-17% where the scan shows it. The crawler's summary is out of date: SPERM isn't on the scan at all, and its VoiceMemos/STEVE picture has already rugged. The second theme, old memes coming back, is the only one rising. bingus is up 845% at a $29k cap, still on the pump.fun curve, with $7.8k 5m volume and 55% buys. The new FARTCOIN at $5k is a vamp of the real coin, a hard no (V3). Cats are fading: GATO is coasting at $5M and Rigby is dead. Bigger caps (GLITCH, NETWORK, STONKLANA) trade under $2.5k on the 5m, which is thin. No buys right now. bingus goes on watch as a FINAL_STRETCH (V1); I'd buy at about 7/10 only if holders, bundles and dev share come back clean and 5m volume clears about $10k. Plan: initials out at 1.5x, 20% trail, sell half when volume fades, stop where the dip fails to hold. PASS on the dead joke graduates (5m volume under $2k, V1/V6), FARTCOIN (vamp, V1/V3), LOOT (0h old, I don't snipe, V5) and $LAPTOP (pushed by a political figure, V13).
 
 ## Moving most in its scans, last 30 min (1h volume)
-- SELLICON: $396,868 1h vol, $1,913 mcap, -98% 1h  
+- DUBBLE: $381,899 1h vol, $1,510,859 mcap, -36% 1h  
+  CA `FEXGegqeVm5vZurqyC7qsmkLqWspVV1ACb9bbLvcpump`
+- HASHTAG: $313,182 1h vol, $97,871 mcap, +88% 1h  
+  CA `4GgEwQvdSMbMnuw2xqVegZvp4FTt5gVmLSE6jVZApump`
+- PODCAT: $235,755 1h vol, $158,758 mcap, +278% 1h  
+  CA `6xcLnAebDFLgPDBrVrGzHEcMvjVQfMW6yQL4NvECpump`
+- SELLICON: $165,071 1h vol, $1,913 mcap, -99% 1h  
   CA `DPb1vNz5wXuYCv27S85zZ8sGh6NTfU6gMYRFYA7Jpump`
-- Steve: $102,887 1h vol, $1,869 mcap, -99% 1h  
-  CA `Fxyj1MSfyE8PCsVUWmXTHCWmCKFK7dkvgkd6HvuHpump`
-- FARTCOIN: $64,551 1h vol, $5,232 mcap, -9% 1h  
-  CA `GK46Bu1KrTJnGCvKuAyJu2tuaVZhwzN2otJpzGAtfart`
-- bingus: $57,064 1h vol, $29,059 mcap, +845% 1h  
-  CA `6jzcLmTR7XvQinzuRYA26RGXC4TGkH9fNpjSyQywpump`
-- VoiceMemos: $29,113 1h vol, $2,531 mcap, -82% 1h  
-  CA `9b1sz9HKXjKgPNT6fkRmiz8qEawLejvcjTPfNErapump`
+- CATBOT: $93,927 1h vol, $3,201,111 mcap, -0% 1h  
+  CA `dyw5fDNv91eknniMG4tGCU1ZrzjuxbpsLiEzih6pump`
