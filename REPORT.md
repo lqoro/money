@@ -1,13 +1,13 @@
 # Trencher live report
 
-Updated 2026-10-29T09:19:18Z (paper trading, never real money)
+Updated 2026-10-29T09:34:21Z (paper trading, never real money)
 
 - Equity: $99.93 (-0.1% vs $100 start)
 - Goal: $1,000 by 2026-11-05 05:03Z (a stretch, survival first): at 10% of it, 6.8 days left, needs +40.2% a day from here
 - Closed trades: 7, 2 wins
 - Fees paid: $4.16 (axiom $0.43, network $3.26, pool $0.35), plus $0.62 lost to slippage
 - New trades: on
-- Brain: subscription, 310 calls and 0 plan-limit hits in 48h
+- Brain: subscription, 312 calls and 0 plan-limit hits in 48h
 
 ## Scorecard (after fees)
 - 7 closed, 2 won (29%), net $-0.07
@@ -67,9 +67,17 @@ Updated 2026-10-29T09:19:18Z (paper trading, never real money)
   CA `Bv1a7cEj5aRnJQhMw4kRQqAFesMSd5LwcDnUzq52BMmr`
 
 ## Last scan
-- 09:18Z: 7 coins, 7 with pairs, 0 passed the market filters, 0 researched
+- 09:34Z: 5 coins, 5 with pairs, 0 passed the market filters, 0 researched
 
 ## Coins it looked at, and why it passed
+- 09:28Z GATO (MIGRATED, $5,159,718 mcap, $2,150 5m vol): REJECT, Dev holds 3.3% (>1%) (V13, V17)  
+  CA `HsprHxBRgiVaQdRf3TnKNuZZtaX9JUSPgMFdAkk6pump`
+- 09:27Z OTC (MIGRATED, $97,874 mcap, $4,227 5m vol): REJECT, RugCheck danger: Creator history of rugged tokens  
+  CA `Fa24xN13pzjmcx1dtKP9nBMMFCwLtXCJrtP5hSPKpump`
+- 09:21Z CATBOT (MIGRATED, $3,153,998 mcap, $3,952 5m vol): PASS at conviction 3, PASS on CATBOT. $3.15M coin doing $3.9k on the 5m, with more sells than buys, chopping in the middle of its range. Same mid-range base that cost me last time. (V6, V1)  
+  CA `dyw5fDNv91eknniMG4tGCU1ZrzjuxbpsLiEzih6pump`
+- 09:20Z DUBBLE (DIP, $1,457,020 mcap, $10,893 5m vol): PASS at conviction 3, PASS: it calls itself a 'launchpad', but there's no GitHub and the website is one blank title page that doesn't show the CA and is 0.9 days old. That's a tech LARP 71% off its high, with 12 tickers fighting over it (V1, V3, V13).  
+  CA `FEXGegqeVm5vZurqyC7qsmkLqWspVV1ACb9bbLvcpump`
 - 08:59Z clanker (FINAL_STRETCH, $21,886 mcap, $17,591 5m vol): PASS at conviction 3, PASS: it's a 12-minute-old copy of a ticker seven bigger coins already use, and the top 10 holders sit right at the 25% hard line. Vamp plus concentration. (V1, V3, V13)  
   CA `6yhYZztNzGSCiG1sgCykmk11xgSk5PgAhqwJ4btwpump`
 - 08:51Z STONKLANA (MIGRATED, $518,736 mcap, $5,865 5m vol): PASS at conviction 2, PASS. The data on this coin doesn't add up. It's one of 20 coins with this ticker, $5.9k on the 5m, 47 insider networks, and I can't prove it's the original (V1, V3, V13).  
@@ -82,14 +90,6 @@ Updated 2026-10-29T09:19:18Z (paper trading, never real money)
   CA `HsprHxBRgiVaQdRf3TnKNuZZtaX9JUSPgMFdAkk6pump`
 - 08:42Z OTC (MIGRATED, $109,661 mcap, $10,087 5m vol): REJECT, RugCheck danger: Creator history of rugged tokens  
   CA `Fa24xN13pzjmcx1dtKP9nBMMFCwLtXCJrtP5hSPKpump`
-- 08:36Z CATBOT (MIGRATED, $3,055,873 mcap, $2,566 5m vol): PASS at conviction 3, PASS: 5m volume is $2.6k at 0.43x the hour's pace and the coin is chopping mid-range at $3.06M. That's the buy-back I already lost on. Rebuy only on a reclaim of $4.3M (V1, V6).  
-  CA `dyw5fDNv91eknniMG4tGCU1ZrzjuxbpsLiEzih6pump`
-- 08:35Z DUBBLE (DIP, $1,351,931 mcap, $7,228 5m vol): PASS at conviction 3, PASS: a "launchpad" coin with no GitHub, a one-day-old site that doesn't show the CA, and 5m volume fading at 0.65x the hourly pace while it sits 73% under the peak. That's a falling knife wearing a tech costume (V1, V3).  
-  CA `FEXGegqeVm5vZurqyC7qsmkLqWspVV1ACb9bbLvcpump`
-- 08:34Z Chilloween (FINAL_STRETCH, $22,950 mcap, $9,878 5m vol): PASS at conviction 5, PASS — recycled Chilloween name (7 bigger same-ticker coins plus an August original), top 10 at 22% with 4 insider networks, 18 min old and only 10% off the high of a 7x run. Vamp risk plus chasing (V1, V3, V6).  
-  CA `Ac6PLXgeP3eK1ak9CyNR8actDgA3vxBhRq1Ao1frDajq`
-- 08:12Z LIDA (FINAL_STRETCH, $22,722 mcap, $4,403 5m vol): PASS at conviction 4, PASS: top 10 holders have 24.5%, just under the 25% line, 5m volume is $4.4k against the $10k bar, 11 coins share the ticker and there's no X to check. A joke coin 26 minutes old, nothing proven. (V1, V6, V13)  
-  CA `fT952tuMioNtSCL1sYcuzoWfQpoU9yRzcpLgHpEpump`
 
 ## Recent lessons
 - [2026-10-28 14:15] Expected: a $1.2M dip 47% off the $2.3M peak, with $17.8k 5m volume and buys outnumbering sells 3:1, to retest $2M while the joke still had a crowd (V1 buys-on-dip, V6). What happened: it peaked at 1.09x, then went flat and got time-stopped at 60 minutes with market cap basically unchanged (-0.6%), but I still lost 15.4% because fees and slippage ate about 9% of a $3.33 position, and the rest of the gap is execution I can't see in the record. Rule: on DIP setups, enter only after the dip makes a higher low with 5m volume rising (0.86x the hourly average is fading, not holding). Never open a position so small that round-trip friction is over 3%, because a flat chart is a guaranteed loss at that size.
@@ -104,13 +104,13 @@ Updated 2026-10-29T09:19:18Z (paper trading, never real money)
 The crawler's summary is already stale. bingus is no longer the setup: it's at $3.4k, down 91% in the hour, with $138 of 5m volume. It rugged, and it's off the watchlist. The live meta has three parts. First, fresh pump.fun curve coins under an hour old with absurd names are rising: Chilloween (+576%, $9.9k 5m), LIDA (+612%, $4.4k 5m) and Bu (+200%, but 5m is down to $2.8k from a $135k hour). Second, an early Halloween meta that traders are front-running (V5): Chilloween, ACT:D "Doomsday" (pumped and died, $237 5m) and $PUMPKINU getting mentions. Third, the bigger migrated coins are fading. DUBBLE ($1.35M, -10%, $7.2k 5m) and CATBOT ($3M, $2.6k 5m) are coasting on thin flow, and the old-meme revival is dead along with bingus. My one watch is Chilloween as a FINAL_STRETCH (V1). It's the original seasonal joke at $23k, 59% buys, almost at the $10k 5m bar. I'd take it at 7/10 if holders, bundles and dev share come back clean (top 10 under 25%, bundlers under 10%, dev under 1%). Plan: initials out at 1.5x, 20% trail, sell half if the 5m fades, stop where the curve dip fails. It's only 18 minutes old, so I'm being careful. PASS on LIDA (5m under $10k and no holder data yet, V1/V6), Bu (volume collapsing), DUBBLE and CATBOT (5m too thin for their caps, V6), FARTCOIN (vamp, V3), $LAPTOP (political figure, V13) and REMUS (27% buys, sellers in control).
 
 ## Moving most in its scans, last 30 min (1h volume)
-- Samba: $67,182 1h vol, $14,581 mcap, +332% 1h  
+- OTC: $181,196 1h vol, $97,874 mcap, +32% 1h  
+  CA `Fa24xN13pzjmcx1dtKP9nBMMFCwLtXCJrtP5hSPKpump`
+- DUBBLE: $120,923 1h vol, $1,457,020 mcap, +21% 1h  
+  CA `FEXGegqeVm5vZurqyC7qsmkLqWspVV1ACb9bbLvcpump`
+- Chilloween: $87,111 1h vol, $14,547 mcap, -63% 1h  
+  CA `Ac6PLXgeP3eK1ak9CyNR8actDgA3vxBhRq1Ao1frDajq`
+- Samba: $81,932 1h vol, $11,360 mcap, +236% 1h  
   CA `53vCabTQafbRBwRqqGtbHQeTKPZAWE4KU9KVoB1Ppump`
-- PODCAT: $49,041 1h vol, $1,953 mcap, -99% 1h  
-  CA `6xcLnAebDFLgPDBrVrGzHEcMvjVQfMW6yQL4NvECpump`
-- clanker: $43,694 1h vol, $21,886 mcap, +635% 1h  
-  CA `6yhYZztNzGSCiG1sgCykmk11xgSk5PgAhqwJ4btwpump`
-- jeff: $32,348 1h vol, $1,300,146 mcap, +4% 1h  
-  CA `HAsTKXYvv65zM7J6Cu5o5PcZsiKMQYo5oz4WPjgqwP6k`
-- STONKLANA: $23,055 1h vol, $518,736 mcap, +23% 1h  
-  CA `GF74fBfcaeLjUiUwKpRiUbvMQtTvNyzMoo6KNyyqNyk6`
+- Bu: $75,833 1h vol, $28,114 mcap, -23% 1h  
+  CA `Bnxttv7gQHYP1n9JyXuiATWKtxxJPc6sJJzeRFVBuuu`
