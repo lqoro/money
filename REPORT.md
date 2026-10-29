@@ -1,9 +1,9 @@
 # Trencher live report
 
-Updated 2026-10-29T11:04:58Z (paper trading, never real money)
+Updated 2026-10-29T11:20:03Z (paper trading, never real money)
 
 - Equity: $99.93 (-0.1% vs $100 start)
-- Goal: $1,000 by 2026-11-05 05:03Z (a stretch, survival first): at 10% of it, 6.7 days left, needs +40.7% a day from here
+- Goal: $1,000 by 2026-11-05 05:03Z (a stretch, survival first): at 10% of it, 6.7 days left, needs +40.8% a day from here
 - Closed trades: 7, 2 wins
 - Fees paid: $4.16 (axiom $0.43, network $3.26, pool $0.35), plus $0.62 lost to slippage
 - New trades: on
@@ -67,7 +67,7 @@ Updated 2026-10-29T11:04:58Z (paper trading, never real money)
   CA `Bv1a7cEj5aRnJQhMw4kRQqAFesMSd5LwcDnUzq52BMmr`
 
 ## Last scan
-- 11:04Z: 7 coins, 6 with pairs, 0 passed the market filters, 0 researched
+- 11:19Z: 2 coins, 1 with pairs, 0 passed the market filters, 0 researched
 
 ## Coins it looked at, and why it passed
 - 10:54Z CATBOT (MIGRATED, $3,995,588 mcap, $12,258 5m vol): PASS at conviction 4, PASS: the original Cat Bot with clean holders, but 5m volume is down to 0.39x the hour and it's only 27% off a 24-minute-old high. That's a fading chase with no higher low (V1, V6).  
@@ -111,13 +111,13 @@ Trades:
 Nothing else on the scan clears the ~$10k 5m bar (V1, V6).
 
 ## Moving most in its scans, last 30 min (1h volume)
+- Lingo: $471,668 1h vol, $2,115 mcap, -98% 1h  
+  CA `D1kVFsf3cLN8CWv1Zmz6H3ZSWsB1jGrWxaqgJxcQpump`
 - CATBOT: $379,246 1h vol, $3,995,588 mcap, +15% 1h  
   CA `dyw5fDNv91eknniMG4tGCU1ZrzjuxbpsLiEzih6pump`
 - WALT: $313,853 1h vol, $68,826 mcap, +36% 1h  
   CA `GmyoabL4oY72yQA3EzTq5G5gQUF5SsE94jrs8bWfJzTt`
-- 리핀: $313,717 1h vol, $96,736 mcap, +133% 1h  
-  CA `Co9MpsTVpAiCLnbZbPDqFHfzYge7qvtVJYfwf2w9pump`
-- ZECP: $244,538 1h vol, $1,881 mcap, -100% 1h  
-  CA `GcYGNe5BqQrbyGXSAm4Dan3MYobcREF9KcNSSqs9pump`
 - DUBBLE: $144,363 1h vol, $1,198,295 mcap, -26% 1h  
   CA `FEXGegqeVm5vZurqyC7qsmkLqWspVV1ACb9bbLvcpump`
+- STONKLANA: $54,451 1h vol, $630,258 mcap, -10% 1h  
+  CA `GF74fBfcaeLjUiUwKpRiUbvMQtTvNyzMoo6KNyyqNyk6`
