@@ -1,13 +1,13 @@
 # Trencher live report
 
-Updated 2026-10-29T13:05:52Z (paper trading, never real money)
+Updated 2026-10-29T13:21:06Z (paper trading, never real money)
 
 - Equity: $99.93 (-0.1% vs $100 start)
-- Goal: $1,000 by 2026-11-05 05:03Z (a stretch, survival first): at 10% of it, 6.7 days left, needs +41.3% a day from here
+- Goal: $1,000 by 2026-11-05 05:03Z (a stretch, survival first): at 10% of it, 6.7 days left, needs +41.4% a day from here
 - Closed trades: 7, 2 wins
 - Fees paid: $4.16 (axiom $0.43, network $3.26, pool $0.35), plus $0.62 lost to slippage
 - New trades: on
-- Brain: subscription, 347 calls and 0 plan-limit hits in 48h
+- Brain: subscription, 350 calls and 0 plan-limit hits in 48h
 
 ## Scorecard (after fees)
 - 7 closed, 2 won (29%), net $-0.07
@@ -67,9 +67,17 @@ Updated 2026-10-29T13:05:52Z (paper trading, never real money)
   CA `Bv1a7cEj5aRnJQhMw4kRQqAFesMSd5LwcDnUzq52BMmr`
 
 ## Last scan
-- 13:04Z: 3 coins, 1 with pairs, 0 passed the market filters, 0 researched
+- 13:20Z: 6 coins, 3 with pairs, 0 passed the market filters, 0 researched
 
 ## Coins it looked at, and why it passed
+- 13:15Z CHLOE (DIP, $50,615 mcap, $29,115 5m vol): PASS at conviction 3, PASS: 16 minutes old, back under $70k after an $89k peak, still falling (-17% on the 5m), top 10 holding 22.7%, 25 insider networks, and a bigger coin already uses the ticker. That's a new pair, not a dip (V1, V6).  
+  CA `J92Gw8j5nwkhAKgM1UsTD9GxegeLWXDht4RNx8YTpump`
+- 13:12Z GATO (MIGRATED, $5,195,499 mcap, $2,737 5m vol): REJECT, Dev holds 3.3% (>1%) (V13, V17)  
+  CA `HsprHxBRgiVaQdRf3TnKNuZZtaX9JUSPgMFdAkk6pump`
+- 13:11Z DUBBLE (MIGRATED, $982,069 mcap, $7,026 5m vol): PASS at conviction 3, PASS — 80% off the peak, 5m volume $7k and fading at 0.72x the hourly pace, and a launchpad story with no GitHub on a 1-day-old site that doesn't show the CA. LARP smell, crowd leaving (V1, V6).  
+  CA `FEXGegqeVm5vZurqyC7qsmkLqWspVV1ACb9bbLvcpump`
+- 13:10Z CATBOT (DIP, $2,636,424 mcap, $11,977 5m vol): PASS at conviction 4, PASS: CATBOT is 58% off its high, but 5m volume is only 0.59x the hourly pace and there's no confirmed higher low. That's a dip with the crowd thinning, and my own rules say wait (V1).  
+  CA `dyw5fDNv91eknniMG4tGCU1ZrzjuxbpsLiEzih6pump`
 - 13:03Z REMUS (MIGRATED, $457,571 mcap, $4,036 5m vol): PASS at conviction 2, PASS: 20 buys against 261 sells on the 5m, and 180 against 3,727 on the hour. That's a crowd leaving, not arriving. 48 insider networks finish it off. (V1, V13)  
   CA `CA8q2mkYWZnUNqYmf6pxyxAPZsmSe2EG9P7hHMW5pump`
 - 12:58Z STONKDILE (DIP, $235,501 mcap, $29,237 5m vol): PASS at conviction 3, PASS — 35-minute-old coin, still red −19.5% on the 5m, volume fading at 0.53x the hourly pace, 405 insider networks flagged. Falling knife, not a dip (V1, V13).  
@@ -82,14 +90,6 @@ Updated 2026-10-29T13:05:52Z (paper trading, never real money)
   CA `B2Sr358fKA5TvmE6zWoVR8Ks5h3mZQBqDM22pA52pump`
 - 12:38Z OREN (MIGRATED, $168,926 mcap, $10,190 5m vol): PASS at conviction 3, PASS: 14% off the high on an unverified-bundle, 17-minute-old coin with 5m volume fading to 0.48x. That's the CATCULUS setup again. Blocker: entry location (learned rule, V3/V5).  
   CA `AVCoELxSDqmT1yUHfzMu9FBpX1MmygBaYdaiLZvMpump`
-- 12:26Z GATO (MIGRATED, $5,219,003 mcap, $3,260 5m vol): REJECT, Dev holds 3.3% (>1%) (V13, V17)  
-  CA `HsprHxBRgiVaQdRf3TnKNuZZtaX9JUSPgMFdAkk6pump`
-- 12:25Z DUBBLE (MIGRATED, $979,276 mcap, $6,591 5m vol): PASS at conviction 2, PASS — down 80.5% from the $5M peak (past my 75% dip limit), 5m volume $6.6k and fading at 0.51x the hourly pace, and a 1-day-old "launchpad" site with no contract address and no GitHub. Falling knife with a probable LARP story (V1, V3, V6).  
-  CA `FEXGegqeVm5vZurqyC7qsmkLqWspVV1ACb9bbLvcpump`
-- 12:25Z CATBOT (DIP, $3,479,407 mcap, $12,184 5m vol): PASS at conviction 4, PASS — CATBOT's 5m volume is 0.9x its hourly pace and the 5m candle is red (-3%). That's a stalling bounce, not a higher low yet. Blocker: no confirmed higher low on rising volume (V1, learned DIP rule).  
-  CA `dyw5fDNv91eknniMG4tGCU1ZrzjuxbpsLiEzih6pump`
-- 12:16Z MULTI (DIP, $93,886 mcap, $19,162 5m vol): PASS at conviction 2, PASS — tech coin with no code, website registered about 2 hours ago that doesn't show this CA, Raydium pool with no LP-burn data, and two bigger coins share the ticker. LARP or vamp, not a dip (V1, V3, V6).  
-  CA `9XwcqFsLTshVo7QwWyNmjVBsB982EW9C4YotSbpoxYYi`
 
 ## Recent lessons
 - [2026-10-28 14:15] Expected: a $1.2M dip 47% off the $2.3M peak, with $17.8k 5m volume and buys outnumbering sells 3:1, to retest $2M while the joke still had a crowd (V1 buys-on-dip, V6). What happened: it peaked at 1.09x, then went flat and got time-stopped at 60 minutes with market cap basically unchanged (-0.6%), but I still lost 15.4% because fees and slippage ate about 9% of a $3.33 position, and the rest of the gap is execution I can't see in the record. Rule: on DIP setups, enter only after the dip makes a higher low with 5m volume rising (0.86x the hourly average is fading, not holding). Never open a position so small that round-trip friction is over 3%, because a flat chart is a guaranteed loss at that size.
@@ -108,9 +108,9 @@ The meta right now is fresh-launch churn plus cats. Most first-two-hour coins al
   CA `57vAaMsnAJXkvULtAz7fsi6gRn3bHRJFJsJV1okNpump`
 - STONKDILE: $659,400 1h vol, $235,501 mcap, +262% 1h  
   CA `WkHcrrgrXHkdMC5csTAKo4YJCVbpH3zkTCBnNQ8pump`
-- OREN: $252,891 1h vol, $168,926 mcap, +300% 1h  
-  CA `AVCoELxSDqmT1yUHfzMu9FBpX1MmygBaYdaiLZvMpump`
-- EGG: $240,260 1h vol, $2,018 mcap, -99% 1h  
+- CHLOE: $256,194 1h vol, $50,615 mcap, +13% 1h  
+  CA `J92Gw8j5nwkhAKgM1UsTD9GxegeLWXDht4RNx8YTpump`
+- CATBOT: $242,671 1h vol, $2,636,424 mcap, -20% 1h  
+  CA `dyw5fDNv91eknniMG4tGCU1ZrzjuxbpsLiEzih6pump`
+- EGG: $200,572 1h vol, $2,005 mcap, -98% 1h  
   CA `57ouseDGe5XZ5y9Me4WEwrhgi2q2cogtUUTqkUTGpump`
-- MULTI: $134,960 1h vol, $20,797 mcap, -88% 1h  
-  CA `9XwcqFsLTshVo7QwWyNmjVBsB982EW9C4YotSbpoxYYi`
