@@ -1,5 +1,5 @@
 {
- "updated_at": "2026-10-29T06:17:48Z",
+ "updated_at": "2026-10-29T06:17:51Z",
  "paused_new_trades": false,
  "brain": {
   "mode": "subscription",
@@ -50,7 +50,9 @@
   "priority_fee_sol": 0.001,
   "bribe_sol": 0.001,
   "base_slippage_pct": 1.5,
-  "max_slippage_pct": 20.0
+  "max_slippage_pct": 20.0,
+  "min_target_cost_multiple": 3.0,
+  "max_round_trip_cost_pct": 20.0
  },
  "recent_trades": [
   {
@@ -635,16 +637,184 @@
   ],
   "scan_movers": [
    {
-    "symbol": "STEVE",
-    "name": "Steve",
-    "ca": "FMzQfjhqGnMTB56Z6ie9Muz2BzSKbGUwB2wwS4Dqex4C",
+    "symbol": "Biscuit",
+    "name": "Justice for Biscuit",
+    "ca": "96BsXrtCC7Q3AzqAeWCcR4Dc9QZkpfawr1iDu3LMpump",
+    "dex": "pumpfun",
+    "mcap_usd": 3773,
+    "vol_5m": 118,
+    "vol_1h": 51784,
+    "change_1h": 30.75,
+    "buy_ratio_5m": 1.0,
+    "age_hours": 10.2
+   },
+   {
+    "symbol": "BOUNCER",
+    "name": "Bouncer",
+    "ca": "HPLgH2g2cnVj1bPbWA8KTk1ujhceWcXq9UHx5huX8aAc",
+    "dex": "meteoradbc",
+    "mcap_usd": 8618,
+    "vol_5m": 499,
+    "vol_1h": 11803,
+    "change_1h": 223,
+    "buy_ratio_5m": 0.62,
+    "age_hours": 1.4
+   },
+   {
+    "symbol": "STONKLANA",
+    "name": "STONKLANA",
+    "ca": "GF74fBfcaeLjUiUwKpRiUbvMQtTvNyzMoo6KNyyqNyk6",
+    "dex": "raydium",
+    "mcap_usd": 503890,
+    "vol_5m": 397,
+    "vol_1h": 10641,
+    "change_1h": 3.36,
+    "buy_ratio_5m": 0.36,
+    "age_hours": 17.5
+   },
+   {
+    "symbol": "shibana",
+    "name": "shibana",
+    "ca": "25XYntzwGpubUjgJPTJgv5qKd3Kfp9n5tKKRZAVipump",
     "dex": "pumpswap",
-    "mcap_usd": 32132,
-    "vol_5m": 73940,
-    "vol_1h": 101421,
-    "change_1h": -22.58,
-    "buy_ratio_5m": 0.57,
-    "age_hours": 0.1
+    "mcap_usd": 69438,
+    "vol_5m": 613,
+    "vol_1h": 10265,
+    "change_1h": 0.27,
+    "buy_ratio_5m": 0.26,
+    "age_hours": 9.0
+   },
+   {
+    "symbol": "Peace",
+    "name": "World Peace",
+    "ca": "33RdLnnPexoxxMfD1mDVN9uCgfmwrapEevRJB5Uopump",
+    "dex": "pumpfun",
+    "mcap_usd": 6363,
+    "vol_5m": 506,
+    "vol_1h": 6262,
+    "change_1h": -37.09,
+    "buy_ratio_5m": 0.73,
+    "age_hours": 2.2
+   },
+   {
+    "symbol": "NETWORK",
+    "name": "Network Coin",
+    "ca": "8THZ69JP2ErZuHVj4G5rcwkFfsQafp5mQsaoQReApump",
+    "dex": "pumpswap",
+    "mcap_usd": 116753,
+    "vol_5m": 621,
+    "vol_1h": 4977,
+    "change_1h": -5.09,
+    "buy_ratio_5m": 0.62,
+    "age_hours": 104.3
+   },
+   {
+    "symbol": "$CHIMP",
+    "name": "ChimpX AI",
+    "ca": "AHKcbfroL4aYLcmK6iPwYJieGYUZZmeB917FZYjbg6Xb",
+    "dex": "pumpswap",
+    "mcap_usd": 121533,
+    "vol_5m": 59,
+    "vol_1h": 3224,
+    "change_1h": -3.4,
+    "buy_ratio_5m": 0.75,
+    "age_hours": 19.1
+   },
+   {
+    "symbol": "GLITCH",
+    "name": "Infinite Money Glitch",
+    "ca": "8Xg89xT8Ve34sKiYqYuMs46mycREsCA2F362UscRpump",
+    "dex": "pumpswap",
+    "mcap_usd": 2701182,
+    "vol_5m": 562,
+    "vol_1h": 2579,
+    "change_1h": -2.7,
+    "buy_ratio_5m": 0.0,
+    "age_hours": 302.6
+   },
+   {
+    "symbol": "cat",
+    "name": "cat",
+    "ca": "H28TfbAmJJhmohKPSt8mnbJWNCJEEXrysqyQaYdtpump",
+    "dex": "pumpswap",
+    "mcap_usd": 3025,
+    "vol_5m": 0,
+    "vol_1h": 2188,
+    "change_1h": 7.24,
+    "buy_ratio_5m": null,
+    "age_hours": 1.1
+   },
+   {
+    "symbol": "QI",
+    "name": "Quantum Inu",
+    "ca": "8TiMkgvsrat9tM2esko8zVTt99LZLpefUM4SnZaziXaQ",
+    "dex": "pumpswap",
+    "mcap_usd": 130105,
+    "vol_5m": 12,
+    "vol_1h": 2153,
+    "change_1h": -4.42,
+    "buy_ratio_5m": 0.5,
+    "age_hours": 481.4
+   },
+   {
+    "symbol": "CBUCKS",
+    "name": "Cartoon Money",
+    "ca": "DtcicPCKTKeAh7TDEzTym3hXeoHAoMiBdYJhMYxZpump",
+    "dex": "pumpswap",
+    "mcap_usd": 909755,
+    "vol_5m": 8,
+    "vol_1h": 2126,
+    "change_1h": -3.53,
+    "buy_ratio_5m": 0.0,
+    "age_hours": 539.7
+   },
+   {
+    "symbol": "POKERFACE",
+    "name": "PokerFace",
+    "ca": "Hdee3uRCvxm5mWWinrYNCR9S2uVXf54YCGvHSkvpump",
+    "dex": "pumpswap",
+    "mcap_usd": 42664,
+    "vol_5m": 0,
+    "vol_1h": 1039,
+    "change_1h": 25.59,
+    "buy_ratio_5m": null,
+    "age_hours": 122.0
+   },
+   {
+    "symbol": "NIKI",
+    "name": "Niki",
+    "ca": "9BQ3Yq1Hd7kFTqXyfLj1QZw4Pi3LNuDabXjV9yCzpump",
+    "dex": "pumpswap",
+    "mcap_usd": 2439,
+    "vol_5m": 3,
+    "vol_1h": 804,
+    "change_1h": -40.98,
+    "buy_ratio_5m": 0.0,
+    "age_hours": 1.3
+   },
+   {
+    "symbol": "GTA 6 Coin",
+    "name": "GTA6",
+    "ca": "EaxAUcXxNnVwcqm2BBocbows7D1XVY2Q63V38NEypump",
+    "dex": "raydium",
+    "mcap_usd": 991768,
+    "vol_5m": 1,
+    "vol_1h": 687,
+    "change_1h": -1.56,
+    "buy_ratio_5m": 0.0,
+    "age_hours": 15317.4
+   },
+   {
+    "symbol": "ENVAR",
+    "name": "EnvarAI",
+    "ca": "FuK9BkA4jXTBzj8HQRQT4538gy1BJzPYy9qwiHs2pump",
+    "dex": "pumpswap",
+    "mcap_usd": 87365,
+    "vol_5m": 20,
+    "vol_1h": 395,
+    "change_1h": -4.41,
+    "buy_ratio_5m": 0.0,
+    "age_hours": 38.3
    }
   ]
  },
@@ -656,178 +826,84 @@
   "days_left": 6.9,
   "needed_daily_growth_pct": 39.3
  },
- "last_scan": {
-  "at": 1793254606.157505,
-  "tokens": 4,
-  "pairs": 1,
-  "passed_market_filters": 1,
-  "researched": 1
- },
- "recent_looks": [
-  {
-   "ts": "2026-10-29T05:17:37Z",
-   "symbol": "AISI",
-   "ca": "CxzxZDuo3igCYpqfBfMTsJHFsFXwsLLStphSEgAiq4kA",
-   "setup": "MIGRATED",
-   "mcap_usd": 94322,
-   "vol_5m": 15220,
-   "outcome": "PASS",
-   "conviction": 2,
-   "reason": "PASS \u2014 Elon-tweet vamp, 18 minutes old, AI name with no product, 10 insider networks. The blocker is vamp plus LARP risk (V1, V3, V13)."
+ "last_scan": {},
+ "recent_looks": [],
+ "scorecard": {
+  "trades": 7,
+  "wins": 2,
+  "win_rate_pct": 29,
+  "net_usd": -0.07,
+  "avg_net_usd": -0.01,
+  "avg_win_usd": 2.1,
+  "avg_loss_usd": -0.86,
+  "fees_usd": 4.03,
+  "slippage_usd": 0.63,
+  "gross_usd": 4.59,
+  "avg_peak_x": 1.91,
+  "avg_banked_x": 1.01,
+  "costs_pct_of_gross": 102,
+  "red_after_peak": [
+   {
+    "symbol": "CPU",
+    "ca": "5JbRYEz844bwnKbGx4dRHhrJ6zjrJ194CKdDXtzwgaXo",
+    "peak_x": 1.63,
+    "pnl_usd": -0.43
+   },
+   {
+    "symbol": "FLOAT",
+    "ca": "Bv1a7cEj5aRnJQhMw4kRQqAFesMSd5LwcDnUzq52BMmr",
+    "peak_x": 1.64,
+    "pnl_usd": -0.76
+   }
+  ],
+  "by_exit": {
+   "time stop": {
+    "trades": 4,
+    "wins": 0,
+    "win_rate_pct": 0,
+    "net_usd": -2.53,
+    "avg_net_usd": -0.63,
+    "avg_win_usd": null,
+    "avg_loss_usd": -0.63,
+    "fees_usd": 1.75,
+    "slippage_usd": 0.31,
+    "gross_usd": -0.47,
+    "avg_peak_x": 1.37,
+    "avg_banked_x": 0.81
+   },
+   "trailing stop": {
+    "trades": 2,
+    "wins": 2,
+    "win_rate_pct": 100,
+    "net_usd": 4.21,
+    "avg_net_usd": 2.1,
+    "avg_win_usd": 2.1,
+    "avg_loss_usd": null,
+    "fees_usd": 1.78,
+    "slippage_usd": 0.26,
+    "gross_usd": 6.25,
+    "avg_peak_x": 3.32,
+    "avg_banked_x": 1.72
+   },
+   "stop loss": {
+    "trades": 1,
+    "wins": 0,
+    "win_rate_pct": 0,
+    "net_usd": -1.75,
+    "avg_net_usd": -1.75,
+    "avg_win_usd": null,
+    "avg_loss_usd": -1.75,
+    "fees_usd": 0.5,
+    "slippage_usd": 0.06,
+    "gross_usd": -1.19,
+    "avg_peak_x": 1.24,
+    "avg_banked_x": 0.41
+   }
   },
-  {
-   "ts": "2026-10-29T05:17:51Z",
-   "symbol": "CATBOT",
-   "ca": "dyw5fDNv91eknniMG4tGCU1ZrzjuxbpsLiEzih6pump",
-   "setup": "MIGRATED",
-   "mcap_usd": 2646432,
-   "vol_5m": 5317,
-   "outcome": "PASS",
-   "conviction": 3,
-   "reason": "PASS \u2014 CATBOT is 39% off its $4.3M high and 5m volume is $5.3k, just 0.16x the hourly average. The crowd is leaving, and I don't buy back mid-range. (V1, V6)"
-  },
-  {
-   "ts": "2026-10-29T05:17:51Z",
-   "symbol": "DUBBLE",
-   "ca": "FEXGegqeVm5vZurqyC7qsmkLqWspVV1ACb9bbLvcpump",
-   "setup": "DIP",
-   "mcap_usd": 1994362,
-   "vol_5m": 5204,
-   "outcome": "REJECT",
-   "conviction": null,
-   "reason": "Dip with fading attention is a falling knife, not a dip"
-  },
-  {
-   "ts": "2026-10-29T05:17:52Z",
-   "symbol": "GATO",
-   "ca": "HsprHxBRgiVaQdRf3TnKNuZZtaX9JUSPgMFdAkk6pump",
-   "setup": "MIGRATED",
-   "mcap_usd": 5231704,
-   "vol_5m": 2318,
-   "outcome": "REJECT",
-   "conviction": null,
-   "reason": "Dev holds 3.3% (>1%) (V13, V17)"
-  },
-  {
-   "ts": "2026-10-29T05:38:21Z",
-   "symbol": "SPERM",
-   "ca": "DFdjJZepcFjERhGmEoJ9QA5dt9rtN6QD8DKNjXNmpump",
-   "setup": "FINAL_STRETCH",
-   "mcap_usd": 30179,
-   "vol_5m": 15761,
-   "outcome": "PASS",
-   "conviction": 4,
-   "reason": "PASS: five bigger SPERMs exist, top 10 hold 23% with 15 insider networks, and a conviction of 5 sizes to $2, under my $5 minimum. A vamp still on the bonding curve. (V1, V3, V6)"
-  },
-  {
-   "ts": "2026-10-29T05:48:53Z",
-   "symbol": "MODEL3",
-   "ca": "2oFhSFqfmha8vHAkZZqKnzDdxwB7f2KWQhjrzwtHpump",
-   "setup": "FINAL_STRETCH",
-   "mcap_usd": 29163,
-   "vol_5m": 47674,
-   "outcome": "PASS",
-   "conviction": 3,
-   "reason": "PASS: 4-minute-old Elon-tweet snipe. Top 10 hold 23.2% ex-pool, 18 insider networks, and a bigger coin has the same ticker. Exit liquidity for the bundle (V1, V5, V13, V17)."
-  },
-  {
-   "ts": "2026-10-29T05:52:47Z",
-   "symbol": "AI/SI",
-   "ca": "4yh5hsKvpKBaaQSRv9UzuKVQUik4ci8CcSqxjTKxpump",
-   "setup": "MIGRATED",
-   "mcap_usd": 163229,
-   "vol_5m": 43903,
-   "outcome": "REJECT",
-   "conviction": null,
-   "reason": "Dev holds 1.8% (>1%) (V13, V17)"
-  },
-  {
-   "ts": "2026-10-29T05:59:15Z",
-   "symbol": "REMUS",
-   "ca": "CA8q2mkYWZnUNqYmf6pxyxAPZsmSe2EG9P7hHMW5pump",
-   "setup": "MIGRATED",
-   "mcap_usd": 245172,
-   "vol_5m": 4040,
-   "outcome": "PASS",
-   "conviction": 2,
-   "reason": "PASS \u2014 87% off the peak with buyers at 22% of the 5m flow. Past my 75% dip limit, and the crowd is leaving. (V1, V6)"
-  },
-  {
-   "ts": "2026-10-29T06:02:08Z",
-   "symbol": "Rigby",
-   "ca": "52iLe7AQL6ATgg1g7aE4HybRPRUt8t8EbA49TJNWpump",
-   "setup": "FINAL_STRETCH",
-   "mcap_usd": 24189,
-   "vol_5m": 2457,
-   "outcome": "REJECT",
-   "conviction": null,
-   "reason": "Top 10 hold 29.7% ex-pool (>25%) (V13)"
-  },
-  {
-   "ts": "2026-10-29T06:03:39Z",
-   "symbol": "DUBBLE",
-   "ca": "FEXGegqeVm5vZurqyC7qsmkLqWspVV1ACb9bbLvcpump",
-   "setup": "DIP",
-   "mcap_usd": 2216618,
-   "vol_5m": 7793,
-   "outcome": "PASS",
-   "conviction": 3,
-   "reason": "PASS: launchpad coin with a 0.8-day-old site that doesn't show its CA, no GitHub, and 5m volume fading at 0.85x on a dead-cat bounce. Blocker: LARP risk plus fading flow (V1, V3)."
-  },
-  {
-   "ts": "2026-10-29T06:03:40Z",
-   "symbol": "GATO",
-   "ca": "HsprHxBRgiVaQdRf3TnKNuZZtaX9JUSPgMFdAkk6pump",
-   "setup": "MIGRATED",
-   "mcap_usd": 5144539,
-   "vol_5m": 5044,
-   "outcome": "REJECT",
-   "conviction": null,
-   "reason": "Dev holds 3.3% (>1%) (V13, V17)"
-  },
-  {
-   "ts": "2026-10-29T06:04:02Z",
-   "symbol": "CATBOT",
-   "ca": "dyw5fDNv91eknniMG4tGCU1ZrzjuxbpsLiEzih6pump",
-   "setup": "MIGRATED",
-   "mcap_usd": 2925379,
-   "vol_5m": 4614,
-   "outcome": "PASS",
-   "conviction": 3,
-   "reason": "PASS: Cat Bot 5m volume is $4.6k at 0.43x the hourly average while it bases mid-range. The crowd is leaving and I don't re-enter until it reclaims the high (V1, V6)."
-  },
-  {
-   "ts": "2026-10-29T06:07:23Z",
-   "symbol": "LOOT",
-   "ca": "9195ZJ8dks1534LePW1xDCQVpy4Kdp1s1sA7hr5rpump",
-   "setup": "FINAL_STRETCH",
-   "mcap_usd": 25276,
-   "vol_5m": 9436,
-   "outcome": "REJECT",
-   "conviction": null,
-   "reason": "Top 10 hold 27.7% ex-pool (>25%) (V13)"
-  },
-  {
-   "ts": "2026-10-29T06:08:26Z",
-   "symbol": "SPERM",
-   "ca": "GfrirM4enfibWvniYM9Ca9Tk4GQQ9qFQax1SRbwBpump",
-   "setup": "MIGRATED",
-   "mcap_usd": 134336,
-   "vol_5m": 31982,
-   "outcome": "REJECT",
-   "conviction": null,
-   "reason": "Top 10 hold 28.9% ex-pool (>25%) (V13)"
-  },
-  {
-   "ts": "2026-10-29T06:17:14Z",
-   "symbol": "STEVE",
-   "ca": "FMzQfjhqGnMTB56Z6ie9Muz2BzSKbGUwB2wwS4Dqex4C",
-   "setup": "MIGRATED",
-   "mcap_usd": 32132,
-   "vol_5m": 73940,
-   "outcome": "PASS",
-   "conviction": 2,
-   "reason": "PASS: a 5-minute-old Elon-tweet coin down 41% in 5 minutes, with 27 same-ticker copies, top 10 at 21.9% and 4 insider networks. A falling knife, not a dip (V1, V6, V13)."
+  "goal": {
+   "target_usd": 1000.0,
+   "to_go_usd": 900.07,
+   "trades_needed_at_this_pace": null
   }
- ]
+ }
 }
