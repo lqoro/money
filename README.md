@@ -69,6 +69,15 @@ every 5    Claude studies its results ──► rewrites learned rules + retunes
    impact from the pool's liquidity). Sizing counts the flat network fees too, so
    a trade too small to beat its own fees isn't taken. The report breaks fees down
    by kind. The owner can change these through Duet's `steer.json`; Trencher can't.
+   **Fee check** (`sizing.fee_check`): after the brain says BUY, code works out
+   that trade's real round trip (both fees, network fees and slippage at an
+   unchanged price) and only buys if the first profit target pays at least 3x it
+   and the round trip costs no more than 20% of the position. A round trip can't
+   cost less than ~5.5-7.5% plus ~$0.48, so there's no flat friction cap: at 1.5x
+   initials a ~$5 trade on a curve coin is about the smallest that passes, a $2
+   one never does. Only the owner can change the two numbers. Fee caps and
+   minimum sizes Trencher wrote into its own lessons before this existed are
+   marked retired in its prompts, and it's told not to write new ones.
    No limit on how many positions it holds (it has more eyes than a human);
    what limits it is the total at-stop risk budget (25%, which it can evolve
    between 10% and 40%) and cash. It stops
@@ -140,7 +149,8 @@ How it talks to Duet (`agent/bridge.py`): every 15 minutes Trencher pulls the
 - `settings`: any setting Trencher could evolve (stop size, dip range, call pace…),
   plus the paper costs (`platform_fee_pct`, `pumpfun_curve_fee_pct`,
   `other_dex_fee_pct`, `priority_fee_sol`, `bribe_sol`, `base_slippage_pct`,
-  `max_slippage_pct`), clamped to their bounds. Removing one puts it back.
+  `max_slippage_pct`) and the fee check (`min_target_cost_multiple`,
+  `max_round_trip_cost_pct`), clamped to their bounds. Removing one puts it back.
 - `owner_note`: a short note the brain reads before every decision
 
 Steering is data, never code, and can't move the hard lines. With

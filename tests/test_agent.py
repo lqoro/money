@@ -644,3 +644,132 @@ def test_report_lists_contract_addresses(cfg):
     assert status["recent_trades"][0]["ca"] == pos.address
     assert report.count(f"CA `{pos.address}`") == 2  # open position + recent trade
     assert "Fees paid: $" in report and "slippage" in report
+
+
+# ---------------------------------------------------------------- entry fee check
+
+def test_round_trip_cost_matches_the_paper_wallet(cfg):
+    from agent.sizing import round_trip_cost_pct
+    pf = Portfolio(cash_usd=100.0)
+    pos = pf.buy(cfg, snap(), 8.0, SOL, "MIGRATED", {}, "")
+    proceeds = pf.sell(cfg, pos, 1.0, 0.001, 40_000, SOL, dex="pumpswap", mcap_usd=120_000)
+    lost_pct = 100 * (8.0 - proceeds) / 8.0
+    assert round_trip_cost_pct(8.0, cfg, SOL, pos.venue_fee_pct, 40_000) == pytest.approx(lost_pct, abs=0.01)
+
+
+def test_a_flat_five_percent_friction_cap_is_impossible(cfg):
+    from agent.sizing import round_trip_cost_pct
+    for venue in (0.25, 0.3, 0.7, 1.25):
+        for size in (5, 10, 25, 100, 1000):
+            assert round_trip_cost_pct(size, cfg, SOL, venue) > 5.3
+
+
+def test_fee_check_lets_sensible_trades_through(cfg):
+    from agent.sizing import fee_check
+    assert fee_check(8.0, 1.5, cfg, SOL, 1.25, 40_000).ok  # ~$8 at 1.5x initials
+    assert fee_check(5.0, 2.0, cfg, SOL, 0.7, 40_000).ok  # ~$5 at 2x
+    assert fee_check(10.0, 1.5, cfg, SOL, 0.3, 40_000).ok
+
+
+def test_fee_check_still_blocks_fee_eaten_trades(cfg):
+    from agent.sizing import fee_check
+    micro = fee_check(2.0, 3.0, cfg, SOL, 1.25, 40_000)  # a big target can't save a $2 round trip
+    assert not micro.ok and "ceiling" in micro.note
+    jeet = fee_check(8.0, 1.2, cfg, SOL, 1.25, 40_000)  # +20% doesn't pay 3x a ~13% round trip
+    assert not jeet.ok and "doesn't pay" in jeet.note
+
+
+def test_first_target_is_whichever_profit_exit_comes_first():
+    from agent.sizing import first_target_multiple
+    assert first_target_multiple({"take_initials_multiple": 2.0, "target_mcap_usd": None}, 100_000) == 2.0
+    assert first_target_multiple({"take_initials_multiple": 2.0, "target_mcap_usd": 150_000}, 100_000) == 1.5
+
+
+def test_fee_check_is_the_owners_not_trencher_s(cfg):
+    from agent import evolve as ev, journal
+    from agent.bridge import apply_steering
+
+    class FakeBrain:
+        def evolve(self, closes):
+            return {"rules_markdown": "", "param_changes": [
+                {"param": "max_round_trip_cost_pct", "value": 5, "reason": "x"},
+                {"param": "min_target_cost_multiple", "value": 20, "reason": "x"}]}
+
+    journal.log_trade(cfg, {"event": "CLOSE", "pnl_usd": -1})
+    ev.evolve(cfg, FakeBrain())
+    cfg.apply_strategy()
+    assert cfg.max_round_trip_cost_pct == 20 and cfg.min_target_cost_multiple == 3
+    # Even the owner can't steer the ceiling under the fee floor.
+    apply_steering(cfg, {"settings": {"max_round_trip_cost_pct": 5, "min_target_cost_multiple": 2}})
+    assert cfg.max_round_trip_cost_pct == 10 and cfg.min_target_cost_multiple == 2
+
+
+def test_old_fee_caps_in_memory_are_marked_retired(cfg):
+    from agent import journal
+    journal.add_lesson(cfg, "Never open a position where round-trip friction is over 3%.")
+    journal.add_lesson(cfg, "Don't open positions under about $5 where fees ruin the math.")
+    journal.add_lesson(cfg, "Buy only the vamp-field leader by 5m volume.")
+    journal.save_learned_rules(cfg, "- **Friction gate:** skip if fees are over ~5% of size.\n"
+                                    "- **Minimum position ~$5.**\n- Take initials at 2x.")
+    lessons = journal.prompt_lessons(cfg, 10)
+    assert journal.RETIRED_FEE_NOTE in lessons[0] and journal.RETIRED_FEE_NOTE in lessons[1]
+    assert journal.RETIRED_FEE_NOTE not in lessons[2]
+    rules = journal.prompt_rules(cfg).splitlines()
+    assert all(journal.RETIRED_FEE_NOTE in r for r in rules[:2]) and journal.RETIRED_FEE_NOTE not in rules[2]
+    # The files themselves keep Trencher's history as it wrote it.
+    assert journal.RETIRED_FEE_NOTE not in (cfg.memory_dir / "lessons.md").read_text()
+
+
+def _agent_with_decision(cfg, monkeypatch, decision):
+    from agent.checklist import Checklist
+    from agent.main import Agent
+    agent = Agent(cfg)
+    check = run_checklist(snap(), report(), [], cfg, SOL)
+    assert check.passed
+    monkeypatch.setattr(agent, "build_dossier", lambda s, sol, always_crawl=False: check)
+    monkeypatch.setattr(agent.brain, "has_budget", lambda: True)
+    seen = {}
+
+    def decide(snap_, check_, view, sizing_text, history=None, radar_view=None):
+        seen["sizing_text"] = sizing_text
+        return decision
+
+    monkeypatch.setattr(agent.brain, "decide", decide)
+    return agent, seen
+
+
+def _plan(initials):
+    return {"take_initials_multiple": initials, "stop_loss_pct": 20, "trailing_stop_pct": 20,
+            "time_stop_minutes": 45, "target_mcap_usd": 0}
+
+
+def test_research_buys_when_the_fee_check_passes(cfg, monkeypatch):
+    from agent import journal
+    agent, seen = _agent_with_decision(cfg, monkeypatch, {
+        "action": "BUY", "verdict": "BUY", "conviction": 7, "thesis": "", "exit_plan": _plan(1.5)})
+    agent.research(snap(), SOL)
+    assert len(agent.pf.positions) == 1
+    assert "Fees and size are checked in code" in seen["sizing_text"]
+    assert "round trip ~" in seen["sizing_text"]
+    buy = [t for t in journal.read_trades(cfg) if t["event"] == "BUY"][0]
+    assert buy["size_usd"] >= 5
+
+
+def test_research_skips_a_trade_whose_target_cant_pay_its_fees(cfg, monkeypatch):
+    import json as _json
+    agent, _ = _agent_with_decision(cfg, monkeypatch, {
+        "action": "BUY", "verdict": "BUY", "conviction": 7, "thesis": "", "exit_plan": _plan(1.3)})
+    agent.research(snap(), SOL)
+    assert not agent.pf.positions
+    log = [_json.loads(x) for x in (cfg.memory_dir / "decisions.jsonl").read_text().splitlines()]
+    assert log[-1]["action"] == "FEE_SKIP"
+
+
+def test_a_pass_over_fees_the_check_would_allow_is_flagged(cfg, monkeypatch):
+    import json as _json
+    agent, _ = _agent_with_decision(cfg, monkeypatch, {
+        "action": "PASS", "verdict": "PASS — friction over 5%, under my $5 minimum.", "conviction": 7,
+        "thesis": "", "exit_plan": _plan(1.5)})
+    agent.research(snap(), SOL)
+    log = [_json.loads(x) for x in (cfg.memory_dir / "decisions.jsonl").read_text().splitlines()]
+    assert log[-1]["action"] == "PASS_ON_FEES"

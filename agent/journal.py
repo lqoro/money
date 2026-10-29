@@ -3,6 +3,7 @@
 from __future__ import annotations
 
 import json
+import re
 import time
 from pathlib import Path
 
@@ -52,3 +53,28 @@ def learned_rules(cfg: Config) -> str:
 
 def save_learned_rules(cfg: Config, text: str) -> None:
     (cfg.memory_dir / "learned_rules.md").write_text(text.strip() + "\n")
+
+
+# Fee caps and minimum sizes Trencher wrote into its own memory before the code fee
+# check (sizing.fee_check) existed: "skip if friction tops 5%", "no position under $5".
+# A round trip can't cost less than the fee floor, so such a cap blocks every trade.
+# The lines stay in its files (they're its history) but are marked retired wherever
+# they reach a prompt, so a stale cap can't quietly block trading again.
+_FEE_RULE = re.compile(r"friction|round.?trip cost|fees? (?:are |is )?(?:over|above|top)|"
+                       r"minimum position|position (?:size )?minimum|under (?:about |~)?\$\d|\$\d+ minimum", re.I)
+RETIRED_FEE_NOTE = " [Retired fee/size part: the code fee check owns this now, so don't apply it yourself.]"
+
+
+def mark_retired_fee_rules(text: str) -> str:
+    return "\n".join(line + RETIRED_FEE_NOTE if line.strip() and _FEE_RULE.search(line) else line
+                     for line in text.splitlines())
+
+
+def prompt_lessons(cfg: Config, n: int) -> list[str]:
+    """Recent lessons as the brain should read them."""
+    return [mark_retired_fee_rules(line) for line in recent_lessons(cfg, n)]
+
+
+def prompt_rules(cfg: Config) -> str:
+    """Learned rules as the brain should read them."""
+    return mark_retired_fee_rules(learned_rules(cfg))

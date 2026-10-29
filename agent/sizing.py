@@ -17,10 +17,84 @@ you're unsure about with a wide stop gets a small one. Caps keep any one rug
 
 from __future__ import annotations
 
+import re
 from dataclasses import dataclass
 
 from .config import Config
 from .portfolio import Portfolio, network_fee_usd
+
+
+def round_trip_cost_pct(size_usd: float, cfg: Config, sol_usd: float, venue_pct: float | None = None,
+                        liquidity_usd: float = 0.0) -> float:
+    """What buying `size_usd` and selling it all back at an unchanged price costs, as a
+    % of size, with the same fees and slippage the paper wallet charges. Without a
+    liquidity figure only the base slippage is counted."""
+    if size_usd <= 0:
+        return 100.0
+    venue = cfg.other_dex_fee_pct if venue_pct is None else venue_pct
+    pct_fee = (cfg.platform_fee_pct + venue) / 100
+    net = network_fee_usd(cfg, sol_usd)
+
+    def slip(usd: float) -> float:
+        return Portfolio._slippage(cfg, usd, liquidity_usd) if liquidity_usd else cfg.base_slippage_pct / 100
+
+    spend = size_usd * (1 - pct_fee) - net
+    if spend <= 0:
+        return 100.0
+    held = spend / (1 + slip(spend))  # value of the tokens at the unchanged price
+    gross = held * (1 - slip(held))
+    proceeds = max(0.0, gross * (1 - pct_fee) - net)
+    return 100 * (size_usd - proceeds) / size_usd
+
+
+@dataclass
+class FeeCheck:
+    ok: bool
+    cost_pct: float  # round trip at an unchanged price
+    target_pct: float  # gain at the first profit target
+    note: str
+
+
+def fee_check(size_usd: float, first_target_multiple: float, cfg: Config, sol_usd: float,
+              venue_pct: float | None = None, liquidity_usd: float = 0.0) -> FeeCheck:
+    """Is this trade worth its fees? Its first profit target has to pay the round trip
+    several times over (min_target_cost_multiple), and the round trip itself can't eat
+    more than max_round_trip_cost_pct of the position (fee-eaten micro trades).
+
+    This replaces any flat friction cap: a round trip always costs at least the % fees
+    and base slippage both ways, so a cap below that floor would block every trade."""
+    cost = round_trip_cost_pct(size_usd, cfg, sol_usd, venue_pct, liquidity_usd)
+    target = (first_target_multiple - 1) * 100
+    need = cfg.min_target_cost_multiple * cost
+    if cost > cfg.max_round_trip_cost_pct:
+        return FeeCheck(False, round(cost, 1), round(target, 1),
+                        f"a ${size_usd:.2f} round trip costs {cost:.1f}%, over the {cfg.max_round_trip_cost_pct:g}% "
+                        f"ceiling: fees would eat the trade")
+    if target < need:
+        return FeeCheck(False, round(cost, 1), round(target, 1),
+                        f"first target +{target:.0f}% doesn't pay {cfg.min_target_cost_multiple:g}x the "
+                        f"{cost:.1f}% round trip (needs +{need:.0f}%)")
+    return FeeCheck(True, round(cost, 1), round(target, 1),
+                    f"round trip {cost:.1f}%, first target +{target:.0f}% pays it "
+                    f"{target / cost if cost else 0:.1f}x")
+
+
+_CITES_FEES = re.compile(r"friction|fees?\b|round.?trip|too small|minimum|under \$\d", re.I)
+
+
+def cites_fees(verdict: str) -> bool:
+    """Does a PASS verdict blame fees or position size rather than the coin?"""
+    return bool(_CITES_FEES.search(verdict))
+
+
+def first_target_multiple(plan: dict, entry_mcap_usd: float) -> float:
+    """The first price multiple where the exit plan takes profit: initials, or the
+    target market cap if that comes sooner."""
+    first = float(plan.get("take_initials_multiple") or 0) or 2.0
+    target = plan.get("target_mcap_usd")
+    if target and entry_mcap_usd and target > entry_mcap_usd:
+        first = min(first, target / entry_mcap_usd)
+    return first
 
 
 def risk_table(cfg: Config) -> dict[int, float]:
@@ -102,14 +176,34 @@ def cost_note(cfg: Config, sol_usd: float, venue_pct: float | None = None) -> st
 
 
 def sizing_guide(pf: Portfolio, cfg: Config, stop_loss_pct: float | None = None,
-                 sol_usd: float = 0.0, venue_pct: float | None = None) -> str:
-    """Human-readable table for the brain's prompt."""
+                 sol_usd: float = 0.0, venue_pct: float | None = None, liquidity_usd: float = 0.0) -> str:
+    """Human-readable table for the brain's prompt, with what each size's round trip
+    costs and the fee check (at the default first target)."""
     stop = stop_loss_pct or cfg.stop_loss_pct
     rows = [cost_note(cfg, sol_usd, venue_pct)] if sol_usd else []
     for c, r in sorted(risk_table(cfg).items()):
         if r <= 0:
             continue
         s = position_size(c, stop, pf, cfg, sol_usd, venue_pct)
-        rows.append(f"  conviction {c:>2}: risk {r:g}% of equity → ~${s.size_usd:.2f} position at a {stop:.0f}% stop"
-                    + ("" if s.size_usd else " (not worth it after fees)"))
+        row = f"  conviction {c:>2}: risk {r:g}% of equity → ~${s.size_usd:.2f} position at a {stop:.0f}% stop"
+        if not s.size_usd:
+            row += " (not worth it after fees)"
+        elif sol_usd:
+            fc = fee_check(s.size_usd, cfg.take_initials_multiple, cfg, sol_usd, venue_pct, liquidity_usd)
+            row += (f", round trip ~{fc.cost_pct:g}%"
+                    + (", passes the fee check" if fc.ok else f", fails the fee check at {cfg.take_initials_multiple:g}x"))
+        rows.append(row)
     return "\n".join(rows)
+
+
+def fee_rule_text(cfg: Config, sol_usd: float, venue_pct: float | None = None) -> str:
+    """The fee rule as the brain should know it. Code enforces it after a BUY."""
+    floor = 2 * (cfg.platform_fee_pct + (cfg.other_dex_fee_pct if venue_pct is None else venue_pct)
+                 + cfg.base_slippage_pct)
+    return (f"Fees and size are checked in code after you say BUY: the trade goes ahead only if its first "
+            f"profit target pays at least {cfg.min_target_cost_multiple:g}x its real round-trip cost and the "
+            f"round trip costs no more than {cfg.max_round_trip_cost_pct:g}% of the position. On this coin's pool "
+            f"a round trip never costs less than about {floor:g}% plus ${2 * network_fee_usd(cfg, sol_usd):.2f} of "
+            f"network fees, so any flat friction cap below that, or a minimum position size, in your lessons "
+            f"or learned rules is retired: it would block every trade. Don't PASS a coin over fees or size, "
+            f"and don't raise conviction or stretch the first target just to pass the check. Judge the coin.")

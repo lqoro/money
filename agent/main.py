@@ -21,7 +21,8 @@ from .notify import notify
 from .portfolio import Portfolio, Position, venue_fee_pct
 from .risk import check_exit, sanitize_exit_plan
 from .site import project_report
-from .sizing import open_risk_usd, position_size, sizing_guide
+from .sizing import (cites_fees, fee_check, fee_rule_text, first_target_multiple, open_risk_usd, position_size,
+                     sizing_guide)
 
 log = logging.getLogger("trencher")
 
@@ -186,20 +187,36 @@ class Agent:
             return
 
         venue = venue_fee_pct(cfg, snap.get("dex"), snap["mcap_usd"], sol)
-        decision = self.brain.decide(snap, check, self.portfolio_view(), sizing_guide(self.pf, cfg, sol_usd=sol, venue_pct=venue),
+        guide = (sizing_guide(self.pf, cfg, sol_usd=sol, venue_pct=venue, liquidity_usd=snap["liquidity_usd"])
+                 + "\n" + fee_rule_text(cfg, sol, venue))
+        decision = self.brain.decide(snap, check, self.portfolio_view(), guide,
                                      history=self.watchlist.get(addr), radar_view=radar.public_view(self.meta))
         log.info("  ◆ %-10s %s", snap["symbol"], decision.get("verdict"))
         plan = sanitize_exit_plan(decision.get("exit_plan"), cfg)
         sizing = position_size(int(decision.get("conviction") or 0), plan["stop_loss_pct"], self.pf, cfg, sol, venue)
+        fees = fee_check(sizing.size_usd, first_target_multiple(plan, snap["mcap_usd"]), cfg, sol, venue,
+                         snap["liquidity_usd"])
         journal.log_decision(cfg, {"token": addr, "symbol": snap["symbol"], "snapshot": snap,
                                    "checklist": check.as_dict(), "decision": decision,
-                                   "sizing": sizing.__dict__})
+                                   "sizing": sizing.__dict__, "fee_check": fees.__dict__})
+        if (decision.get("action") != "BUY" and fees.ok and sizing.size_usd >= cfg.min_position_usd
+                and cites_fees(decision.get("verdict") or "")):
+            # A stale fee cap can still talk the brain out of a trade the fee check allows: flag it.
+            log.warning("    %s passed over fees or size, but the fee check would allow $%.2f (%s)",
+                        snap["symbol"], sizing.size_usd, fees.note)
+            journal.log_decision(cfg, {"token": addr, "symbol": snap["symbol"], "action": "PASS_ON_FEES",
+                                       "verdict": decision.get("verdict"), "fee_check": fees.__dict__})
         if decision.get("action") != "BUY":
             return
         size = sizing.size_usd
         log.info("    sizing: %s → $%.2f (loses ~$%.2f at the stop)", sizing.note, size, sizing.risk_usd)
         if size < cfg.min_position_usd:
             log.info("    size $%.2f below minimum, skipping (%s)", size, sizing.note)
+            return
+        if not fees.ok:
+            log.info("    fee check failed, skipping: %s", fees.note)
+            journal.log_decision(cfg, {"token": addr, "symbol": snap["symbol"], "action": "FEE_SKIP",
+                                       "size_usd": size, "fee_check": fees.__dict__})
             return
         if self.dry_run:
             log.info("    [dry run] would buy $%.2f", size)
