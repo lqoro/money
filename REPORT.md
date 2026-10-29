@@ -1,15 +1,15 @@
 # Trencher live report
 
-Updated 2026-10-29T02:30:13Z (paper trading, never real money)
+Updated 2026-10-29T02:45:18Z (paper trading, never real money)
 
-- Equity: $101.04 (+1.0% vs $100 start)
+- Equity: $101.00 (+1.0% vs $100 start)
 - Closed trades: 6, 2 wins
 - Fees paid: $3.93 (axiom $0.40, network $3.06, pool $0.34), plus $0.58 lost to slippage
 - New trades: on
-- Brain: subscription, 236 calls and 0 plan-limit hits in 48h
+- Brain: subscription, 240 calls and 0 plan-limit hits in 48h
 
 ## Open positions
-- FLOAT (MIGRATED): cost $3.09, 1.21x, fees $0.24  
+- FLOAT (MIGRATED): cost $3.09, 1.19x, fees $0.24  
   CA `Bv1a7cEj5aRnJQhMw4kRQqAFesMSd5LwcDnUzq52BMmr`
 
 ## Recent trades
@@ -57,4 +57,4 @@ Updated 2026-10-29T02:30:13Z (paper trading, never real money)
 - [2026-10-29 02:10] Expected: CPU, the clear flow leader with clean holders, to bounce from a 38% dip toward 2x (V1, V13). What happened: it ran to 1.63x, gave it all back, and I time-stopped at 1.03x mcap after 52 min. Fees $0.48 plus slippage $0.09, about 18% of a $3.16 position, turned a flat trade into −13.7%. Next time: the friction gate and the $5 minimum are hard blocks, so no sub-$5 entries even on a good setup. If a MIGRATED dip-buy reaches 1.5x and 5m volume starts fading before 2x, sell half instead of watching it round-trip.
 
 ## Meta right now
-It's quiet. Nothing is running in the trenches right now. The loudest Solana story is Hunter Biden's $LAPTOP, which fell about 98% on day one and is fading. A political figure pushed that CA, so it's a hard no, and so is any vamp or "revival" of it (V13). The Robinhood/Circle hype is fading too. The money that's rising is bucket-2 money, not trench money: tokenized stocks and Robinhood Chain, stablecoins and RWA, PEPE and PENGU on CoinGecko trending, the Frog-Themed and Boy's Club categories, and BTC above $81k ahead of the Fed (V8). $MT (3 mentions), $LICK and $POKERFACE (1 each) are a few scattered mentions with no crowd behind them, so I'm not chasing them (V7). The one meta I can see coming is Halloween, three days out, and holiday metas get front-run, so it could start any hour now (V5). The coin that rides it will be an original, funny spooky idea, like a pumpkin or a frog in a costume that catches the PEPE/frog flow, not a knockoff (V1). It also has to be bonded, do $10k+ in 5-minute volume and have clean holders before I touch it (V1, V6). Nothing like that has shown up yet. PASS for now; watching for pumpkins.
+It's quiet. Nothing real is running in the trenches. The loudest Solana story is Hunter Biden's $LAPTOP. It fell about 98% on day one and is fading, and a political figure pushed the CA, so it's a hard no, along with every vamp or "revival" of it (V13). The Robinhood/Circle hype is cooling too. The money that is rising is bucket-2 money, not trench money: tokenized stocks and Robinhood Chain, stablecoins/RWA, PEPE and PENGU on CoinGecko trending, and BTC above $81k ahead of the Fed (V8). $MT, $POKERFACE and $SLEEGO are scattered single mentions with no crowd behind them, so I'm not chasing them (V7). The one meta I can see coming is Halloween, three days out. Holiday metas get front-run (V5), so I'm watching for an original, funny spooky coin, like a pumpkin or a frog in a costume that catches the PEPE/frog flow, not a knockoff (V1). It has to be bonded, doing $10k+ in 5-minute volume, with clean holders (V1, V6). Nothing like that has shown up yet, so I'm passing for now.
