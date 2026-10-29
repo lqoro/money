@@ -1,13 +1,13 @@
 # Trencher live report
 
-Updated 2026-10-29T13:21:06Z (paper trading, never real money)
+Updated 2026-10-29T13:37:07Z (paper trading, never real money)
 
 - Equity: $99.93 (-0.1% vs $100 start)
-- Goal: $1,000 by 2026-11-05 05:03Z (a stretch, survival first): at 10% of it, 6.7 days left, needs +41.4% a day from here
+- Goal: $1,000 by 2026-11-05 05:03Z (a stretch, survival first): at 10% of it, 6.6 days left, needs +41.4% a day from here
 - Closed trades: 7, 2 wins
 - Fees paid: $4.16 (axiom $0.43, network $3.26, pool $0.35), plus $0.62 lost to slippage
 - New trades: on
-- Brain: subscription, 350 calls and 0 plan-limit hits in 48h
+- Brain: subscription, 352 calls and 0 plan-limit hits in 48h
 
 ## Scorecard (after fees)
 - 7 closed, 2 won (29%), net $-0.07
@@ -67,9 +67,15 @@ Updated 2026-10-29T13:21:06Z (paper trading, never real money)
   CA `Bv1a7cEj5aRnJQhMw4kRQqAFesMSd5LwcDnUzq52BMmr`
 
 ## Last scan
-- 13:20Z: 6 coins, 3 with pairs, 0 passed the market filters, 0 researched
+- 13:36Z: 4 coins, 3 with pairs, 2 passed the market filters, 2 researched
 
 ## Coins it looked at, and why it passed
+- 13:36Z Hyperpill (MIGRATED, $51,394 mcap, $8,158 5m vol): PASS at conviction 3, PASS. It's sitting at its all-time high with fading flow (0.41x), the site doesn't list this CA, and four bigger coins share the ticker. Likely a vamp chased at the top (V1, V3).  
+  CA `B2Sr358fKA5TvmE6zWoVR8Ks5h3mZQBqDM22pA52pump`
+- 13:36Z KORILA (MIGRATED, $39,007 mcap, $58,879 5m vol): PASS at conviction 3, PASS: KORILA is 6 minutes old, down 23% on the 5m, and has 25 tokens on the same ticker. The main blocker is that it's a brand-new pair with no bundle data. I don't snipe those (V1, V5, V6).  
+  CA `Sdp2L5UpSW7ZQVBZP81tTYryZTBSXhny7QmxNKFTtep`
+- 13:23Z OREN (DIP, $139,199 mcap, $15,503 5m vol): REJECT, Dip with fading attention is a falling knife, not a dip  
+  CA `AVCoELxSDqmT1yUHfzMu9FBpX1MmygBaYdaiLZvMpump`
 - 13:15Z CHLOE (DIP, $50,615 mcap, $29,115 5m vol): PASS at conviction 3, PASS: 16 minutes old, back under $70k after an $89k peak, still falling (-17% on the 5m), top 10 holding 22.7%, 25 insider networks, and a bigger coin already uses the ticker. That's a new pair, not a dip (V1, V6).  
   CA `J92Gw8j5nwkhAKgM1UsTD9GxegeLWXDht4RNx8YTpump`
 - 13:12Z GATO (MIGRATED, $5,195,499 mcap, $2,737 5m vol): REJECT, Dev holds 3.3% (>1%) (V13, V17)  
@@ -84,12 +90,6 @@ Updated 2026-10-29T13:21:06Z (paper trading, never real money)
   CA `WkHcrrgrXHkdMC5csTAKo4YJCVbpH3zkTCBnNQ8pump`
 - 12:53Z jeff (DIP, $950,893 mcap, $5,773 5m vol): REJECT, Top 10 hold 33.7% ex-pool (>25%) (V13)  
   CA `HAsTKXYvv65zM7J6Cu5o5PcZsiKMQYo5oz4WPjgqwP6k`
-- 12:52Z OREN (DIP, $140,930 mcap, $93,751 5m vol): PASS at conviction 4, PASS: OREN is down 29% in the last 5 minutes on a coin that's 57 minutes old. No higher low yet, so this is a falling knife, not a dip (V1, learned DIP rule).  
-  CA `57vAaMsnAJXkvULtAz7fsi6gRn3bHRJFJsJV1okNpump`
-- 12:51Z Hyperpill (MIGRATED, $44,741 mcap, $15,075 5m vol): PASS at conviction 2, PASS. It's a 2-minute-old pair. Its own website says "CA coming soon" and doesn't show this address, 10 coins share the ticker, and it makes tech claims with no GitHub. Probable vamp or LARP, and I'd be sniping. (V1, V3, V13)  
-  CA `B2Sr358fKA5TvmE6zWoVR8Ks5h3mZQBqDM22pA52pump`
-- 12:38Z OREN (MIGRATED, $168,926 mcap, $10,190 5m vol): PASS at conviction 3, PASS: 14% off the high on an unverified-bundle, 17-minute-old coin with 5m volume fading to 0.48x. That's the CATCULUS setup again. Blocker: entry location (learned rule, V3/V5).  
-  CA `AVCoELxSDqmT1yUHfzMu9FBpX1MmygBaYdaiLZvMpump`
 
 ## Recent lessons
 - [2026-10-28 14:15] Expected: a $1.2M dip 47% off the $2.3M peak, with $17.8k 5m volume and buys outnumbering sells 3:1, to retest $2M while the joke still had a crowd (V1 buys-on-dip, V6). What happened: it peaked at 1.09x, then went flat and got time-stopped at 60 minutes with market cap basically unchanged (-0.6%), but I still lost 15.4% because fees and slippage ate about 9% of a $3.33 position, and the rest of the gap is execution I can't see in the record. Rule: on DIP setups, enter only after the dip makes a higher low with 5m volume rising (0.86x the hourly average is fading, not holding). Never open a position so small that round-trip friction is over 3%, because a flat chart is a guaranteed loss at that size.
@@ -104,13 +104,13 @@ Updated 2026-10-29T13:21:06Z (paper trading, never real money)
 The meta right now is fresh-launch churn plus cats. Most first-two-hour coins already pulled their volume and died: EGG is -95% and FOMO -98%, each with over $250k of volume in the hour and about $0 in the last 5 minutes. ShuBao and MAS are down 50%+ with under $1k on the 5m. That theme is fading, and it looks like farms (V13). The one fresh coin still holding flow is OREN: 18 minutes old, +300% on the hour, $169k market cap, $10.2k on the 5m but only 52% buys. Cats are the steadier theme. CATBOT is the only one with real weight ($3.5M market cap, $12.2k 5m, 66% buys, -6% on the hour), and GATO and Vivi are weak (GATO 30% buys, Vivi $824 on the 5m). Day-old migrated coins are coasting lower: DUBBLE is -20% with 77% buys but only $6.6k on the 5m, which is under my bar. My trades: CATBOT is a conditional DIP/MIGRATED buy at conviction 6–7, only if holders come back clean (top 10 under 25%, dev under 1%, bundles under 10%), with initials at 1.5x, a 20% trail, half off when 5m volume fades, and a stop where the hour's low breaks. OREN goes on watch only. Blocker: it's 18 minutes old, I'd be chasing +300% into a 50/50 tape, and there's no holder or bundle data, so it qualifies on numbers but not on checks (V1, V6). PASS on MULTI. Blocker: it's on Raydium, not a pump.fun pool, and has no LP or holder data (V2, V6). PASS on $LAPTOP, whatever the headlines say. Blocker: a political figure is behind it and it's already -98% (V13). PASS on MAX. Blocker: $557 on the 5m and a $7.5k market cap, which is dead. One more thing: the crawler's own summary says MAX did $41k on the 5m and MULTI was 54 minutes old, and the scan shows neither, so I'm ignoring that summary and its built-in "BUY" call and trading only the scan data.
 
 ## Moving most in its scans, last 30 min (1h volume)
-- OREN: $745,307 1h vol, $140,930 mcap, +243% 1h  
-  CA `57vAaMsnAJXkvULtAz7fsi6gRn3bHRJFJsJV1okNpump`
-- STONKDILE: $659,400 1h vol, $235,501 mcap, +262% 1h  
-  CA `WkHcrrgrXHkdMC5csTAKo4YJCVbpH3zkTCBnNQ8pump`
+- OREN: $613,471 1h vol, $139,199 mcap, +2% 1h  
+  CA `AVCoELxSDqmT1yUHfzMu9FBpX1MmygBaYdaiLZvMpump`
 - CHLOE: $256,194 1h vol, $50,615 mcap, +13% 1h  
   CA `J92Gw8j5nwkhAKgM1UsTD9GxegeLWXDht4RNx8YTpump`
 - CATBOT: $242,671 1h vol, $2,636,424 mcap, -20% 1h  
   CA `dyw5fDNv91eknniMG4tGCU1ZrzjuxbpsLiEzih6pump`
-- EGG: $200,572 1h vol, $2,005 mcap, -98% 1h  
-  CA `57ouseDGe5XZ5y9Me4WEwrhgi2q2cogtUUTqkUTGpump`
+- Hyperpill: $238,153 1h vol, $51,394 mcap, +9% 1h  
+  CA `B2Sr358fKA5TvmE6zWoVR8Ks5h3mZQBqDM22pA52pump`
+- DUBBLE: $116,727 1h vol, $982,069 mcap, -0% 1h  
+  CA `FEXGegqeVm5vZurqyC7qsmkLqWspVV1ACb9bbLvcpump`
