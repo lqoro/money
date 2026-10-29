@@ -1,6 +1,6 @@
 # Trencher live report
 
-Updated 2026-10-29T08:18:56Z (paper trading, never real money)
+Updated 2026-10-29T08:34:00Z (paper trading, never real money)
 
 - Equity: $99.93 (-0.1% vs $100 start)
 - Goal: $1,000 by 2026-11-05 05:03Z (a stretch, survival first): at 10% of it, 6.9 days left, needs +39.9% a day from here
@@ -67,7 +67,7 @@ Updated 2026-10-29T08:18:56Z (paper trading, never real money)
   CA `Bv1a7cEj5aRnJQhMw4kRQqAFesMSd5LwcDnUzq52BMmr`
 
 ## Last scan
-- 08:18Z: 1 coins, 0 with pairs, 0 passed the market filters, 0 researched
+- 08:32Z: 0 coins, 0 with pairs, 0 passed the market filters, 0 researched
 
 ## Coins it looked at, and why it passed
 - 08:12Z LIDA (FINAL_STRETCH, $22,722 mcap, $4,403 5m vol): PASS at conviction 4, PASS: top 10 holders have 24.5%, just under the 25% line, 5m volume is $4.4k against the $10k bar, 11 coins share the ticker and there's no X to check. A joke coin 26 minutes old, nothing proven. (V1, V6, V13)  
@@ -104,13 +104,13 @@ Updated 2026-10-29T08:18:56Z (paper trading, never real money)
 The meta is fast absurd jokes on everyday objects and names, and they die within an hour. Sellicon Valley (-98%), VoiceMemos (-90%), Steve (-99%) and Pool (-62%) all launched or graduated in the last hour and got dumped, with 5m volume now $0-215 and buyers at 0-17% where the scan shows it. The crawler's summary is out of date: SPERM isn't on the scan at all, and its VoiceMemos/STEVE picture has already rugged. The second theme, old memes coming back, is the only one rising. bingus is up 845% at a $29k cap, still on the pump.fun curve, with $7.8k 5m volume and 55% buys. The new FARTCOIN at $5k is a vamp of the real coin, a hard no (V3). Cats are fading: GATO is coasting at $5M and Rigby is dead. Bigger caps (GLITCH, NETWORK, STONKLANA) trade under $2.5k on the 5m, which is thin. No buys right now. bingus goes on watch as a FINAL_STRETCH (V1); I'd buy at about 7/10 only if holders, bundles and dev share come back clean and 5m volume clears about $10k. Plan: initials out at 1.5x, 20% trail, sell half when volume fades, stop where the dip fails to hold. PASS on the dead joke graduates (5m volume under $2k, V1/V6), FARTCOIN (vamp, V1/V3), LOOT (0h old, I don't snipe, V5) and $LAPTOP (pushed by a political figure, V13).
 
 ## Moving most in its scans, last 30 min (1h volume)
-- DUBBLE: $381,899 1h vol, $1,510,859 mcap, -36% 1h  
-  CA `FEXGegqeVm5vZurqyC7qsmkLqWspVV1ACb9bbLvcpump`
-- HASHTAG: $313,182 1h vol, $97,871 mcap, +88% 1h  
-  CA `4GgEwQvdSMbMnuw2xqVegZvp4FTt5gVmLSE6jVZApump`
-- PODCAT: $235,755 1h vol, $158,758 mcap, +278% 1h  
-  CA `6xcLnAebDFLgPDBrVrGzHEcMvjVQfMW6yQL4NvECpump`
-- SELLICON: $118,993 1h vol, $1,913 mcap, -99% 1h  
-  CA `DPb1vNz5wXuYCv27S85zZ8sGh6NTfU6gMYRFYA7Jpump`
-- CATBOT: $93,927 1h vol, $3,201,111 mcap, -0% 1h  
-  CA `dyw5fDNv91eknniMG4tGCU1ZrzjuxbpsLiEzih6pump`
+- ACT:D: $85,129 1h vol, $5,379 mcap, +60% 1h  
+  CA `3MRyD7DK84NmyB9KCnZy3CJcU1Q9TVf5m3fK16kqpump`
+- bingus: $58,024 1h vol, $3,226 mcap, -92% 1h  
+  CA `6jzcLmTR7XvQinzuRYA26RGXC4TGkH9fNpjSyQywpump`
+- Chilloween: $49,383 1h vol, $20,310 mcap, +498% 1h  
+  CA `Ac6PLXgeP3eK1ak9CyNR8actDgA3vxBhRq1Ao1frDajq`
+- LIDA: $33,097 1h vol, $22,722 mcap, +612% 1h  
+  CA `fT952tuMioNtSCL1sYcuzoWfQpoU9yRzcpLgHpEpump`
+- FARTCOIN: $31,194 1h vol, $5,554 mcap, -65% 1h  
+  CA `GK46Bu1KrTJnGCvKuAyJu2tuaVZhwzN2otJpzGAtfart`
