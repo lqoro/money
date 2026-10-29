@@ -1,13 +1,13 @@
 # Trencher live report
 
-Updated 2026-10-29T16:54:23Z (paper trading, never real money)
+Updated 2026-10-29T17:09:35Z (paper trading, never real money)
 
 - Equity: $99.93 (-0.1% vs $100 start)
-- Goal: $1,000 by 2026-11-05 05:03Z (a stretch, survival first): at 10% of it, 6.5 days left, needs +42.5% a day from here
+- Goal: $1,000 by 2026-11-05 05:03Z (a stretch, survival first): at 10% of it, 6.5 days left, needs +42.6% a day from here
 - Closed trades: 7, 2 wins
 - Fees paid: $4.16 (axiom $0.43, network $3.26, pool $0.35), plus $0.62 lost to slippage
 - New trades: on
-- Brain: subscription, 392 calls and 0 plan-limit hits in 48h
+- Brain: subscription, 394 calls and 0 plan-limit hits in 48h
 
 ## Scorecard (after fees)
 - 7 closed, 2 won (29%), net $-0.07
@@ -67,9 +67,13 @@ Updated 2026-10-29T16:54:23Z (paper trading, never real money)
   CA `Bv1a7cEj5aRnJQhMw4kRQqAFesMSd5LwcDnUzq52BMmr`
 
 ## Last scan
-- 16:53Z: 8 coins, 7 with pairs, 1 passed the market filters, 1 researched
+- 17:08Z: 6 coins, 6 with pairs, 0 passed the market filters, 0 researched
 
 ## Coins it looked at, and why it passed
+- 16:58Z CATBOT (MIGRATED, $729,980 mcap, $19,245 5m vol): PASS at conviction 2, PASS: 88.6% off the $6.39M peak and printing new lows below the hour's low. Blocker: drawdown past my 75% dip limit with no higher low (V1).  
+  CA `dyw5fDNv91eknniMG4tGCU1ZrzjuxbpsLiEzih6pump`
+- 16:57Z DESSA (MIGRATED, $7,713,394 mcap, $32,573 5m vol): PASS at conviction 3, PASS — blocker: 16.6% off a 24-min-old high with 5m volume at 0.28x the hourly pace. That's chasing a fading move, not a pullback entry (learned rule, V1, V6).  
+  CA `npz2FhoufQ7pKqhGpaipYWacrAkidyW2yDpVWSvpump`
 - 16:54Z CATPOOP (MIGRATED, $194,762 mcap, $39,107 5m vol): PASS at conviction 4, PASS — blocker: 12.9% off a high set 6 min ago with bundles unverified; my no-momentum-near-high rule (CATCULUS -59%). Watch for a 0.618 retest (~$110-120k). (V1, V3, V5)  
   CA `7eCffjPZzRqFFDog8RN5cWsu2JNRH4Qm1iMPAREUpump`
 - 16:51Z HELMET (FINAL_STRETCH, $33,182 mcap, $13,445 5m vol): REJECT, Top 10 hold 28.5% ex-pool (>25%) (V13)  
@@ -86,10 +90,6 @@ Updated 2026-10-29T16:54:23Z (paper trading, never real money)
   CA `2YZdszj9XpTrKZ3FsVJH5sqGXppCgfW5E5pCVR9Apump`
 - 16:37Z HI (FINAL_STRETCH, $36,449 mcap, $19,893 5m vol): PASS at conviction 4, PASS: top 10 hold 24.4% ex-pool, just under the 25% hard line, and I'd be buying a 10x hour at 2% off the high, 87% bonded, right where the pre-bond dump usually hits. Bundles unverified. (V1, V6, V13)  
   CA `3q3jEDkqwNamTDWK7PSncQT82Ffppruax27GHqD4pump`
-- 16:35Z GATO (MIGRATED, $4,647,540 mcap, $2,209 5m vol): REJECT, Dev holds 3.3% (>1%) (V13, V17)  
-  CA `HsprHxBRgiVaQdRf3TnKNuZZtaX9JUSPgMFdAkk6pump`
-- 16:28Z VI (MIGRATED, $346,214 mcap, $6,032 5m vol): PASS at conviction 4, PASS — 15% off the $409k high with bundles unverified, and 5m volume is $6k and fading at 0.8x the hourly pace. Blocker: entry location and fading flow. Watch for a ~$240k fib retest (V1, V6).  
-  CA `A6PM7bxyWYiUxaEpRMHvuL4tY2jYVf8N46vXZ15Hpump`
 
 ## Recent lessons
 - [2026-10-28 14:15] Expected: a $1.2M dip 47% off the $2.3M peak, with $17.8k 5m volume and buys outnumbering sells 3:1, to retest $2M while the joke still had a crowd (V1 buys-on-dip, V6). What happened: it peaked at 1.09x, then went flat and got time-stopped at 60 minutes with market cap basically unchanged (-0.6%), but I still lost 15.4% because fees and slippage ate about 9% of a $3.33 position, and the rest of the gap is execution I can't see in the record. Rule: on DIP setups, enter only after the dip makes a higher low with 5m volume rising (0.86x the hourly average is fading, not holding). Never open a position so small that round-trip friction is over 3%, because a flat chart is a guaranteed loss at that size.
@@ -104,13 +104,13 @@ Updated 2026-10-29T16:54:23Z (paper trading, never real money)
 Fresh pump.fun launches under an hour old are taking nearly all the volume. The Hyperliquid joke is dying: XLIQUID (-97%) and Hypurr (-84%) got rugged, and HI ($108k cap, $168k on the 5m) is the last one standing at six minutes old. The AI/"labs" tickers are split. AgenC ($802k, +1327%, $111k on the 5m, 76% buys) is rising, while SENSE has sellers leading at 31% buys. Animal and inu coins (HOUSEWORM at 90% buys, VI, KATT) and the Elon tickers are fading: VI and ELOOONG are both below their hourly pace, and the KATT vamp, offgrid and SARA are -90% farm dumps. The crawler summary is stale (DESSA, CATBOT and PURR aren't in the scan), so I'm ignoring it. No buy this cycle. Watchlist: AgenC and HOUSEWORM as MIGRATED candidates (blocker: 24-30 minutes old with no holder or bundle data; I'll recheck for top 10 under 25%, dev under 1%, bundles under 10%, V1/V5/V13). HELMET is a FINAL_STRETCH look at a $33k cap with $13k on the 5m and 65% buys (blocker: holders unverified). PASS on HI (blocker: six minutes old means sniping a new pair, and its theme is rugging, V1).
 
 ## Moving most in its scans, last 30 min (1h volume)
+- DESSA: $1,386,954 1h vol, $7,713,394 mcap, +49% 1h  
+  CA `npz2FhoufQ7pKqhGpaipYWacrAkidyW2yDpVWSvpump`
 - AgenC: $796,830 1h vol, $802,358 mcap, +1327% 1h  
   CA `GJKnJsRiM5ATS4yhwjYRegT3iRsXUvcW1dafJPh8pump`
-- HOUSEWORM: $635,599 1h vol, $388,558 mcap, +507% 1h  
-  CA `9KhzhyM1BwgW6myZRcqdzQvemKjVrjck8kaevTkMpump`
 - ELOOONG: $557,317 1h vol, $139,843 mcap, +24% 1h  
   CA `2YZdszj9XpTrKZ3FsVJH5sqGXppCgfW5E5pCVR9Apump`
-- XLIQUID: $490,528 1h vol, $2,066 mcap, -97% 1h  
-  CA `Bq6BPfB6NNC5d1kQZFsYpCFeWxxACmbvu35QHofqpump`
-- offgrid: $197,812 1h vol, $2,421 mcap, -94% 1h  
-  CA `7x8FSbwgJGrXXbk6BgSpXjiW25rzzzNu2wBhsDJbAjUi`
+- CATBOT: $239,560 1h vol, $729,980 mcap, -69% 1h  
+  CA `dyw5fDNv91eknniMG4tGCU1ZrzjuxbpsLiEzih6pump`
+- HI: $195,946 1h vol, $107,735 mcap, +146% 1h  
+  CA `3w2TvVmTrtq4kSkoFVrTFQgz6MX7ThzDVrx9r5c3pump`
