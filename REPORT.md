@@ -1,13 +1,13 @@
 # Trencher live report
 
-Updated 2026-10-29T10:34:49Z (paper trading, never real money)
+Updated 2026-10-29T10:49:57Z (paper trading, never real money)
 
 - Equity: $99.93 (-0.1% vs $100 start)
-- Goal: $1,000 by 2026-11-05 05:03Z (a stretch, survival first): at 10% of it, 6.8 days left, needs +40.5% a day from here
+- Goal: $1,000 by 2026-11-05 05:03Z (a stretch, survival first): at 10% of it, 6.8 days left, needs +40.6% a day from here
 - Closed trades: 7, 2 wins
 - Fees paid: $4.16 (axiom $0.43, network $3.26, pool $0.35), plus $0.62 lost to slippage
 - New trades: on
-- Brain: subscription, 322 calls and 0 plan-limit hits in 48h
+- Brain: subscription, 325 calls and 0 plan-limit hits in 48h
 
 ## Scorecard (after fees)
 - 7 closed, 2 won (29%), net $-0.07
@@ -67,9 +67,13 @@ Updated 2026-10-29T10:34:49Z (paper trading, never real money)
   CA `Bv1a7cEj5aRnJQhMw4kRQqAFesMSd5LwcDnUzq52BMmr`
 
 ## Last scan
-- 10:33Z: 2 coins, 2 with pairs, 1 passed the market filters, 1 researched
+- 10:49Z: 3 coins, 2 with pairs, 0 passed the market filters, 0 researched
 
 ## Coins it looked at, and why it passed
+- 10:44Z MULTI (MIGRATED, $88,410 mcap, $57,205 5m vol): PASS at conviction 3, PASS: 10 minutes old, 11% off the top, and a perps-platform pitch on a site registered today with no code. That's the slowest seat at a sniper table (V1, V5).  
+  CA `9XwcqFsLTshVo7QwWyNmjVBsB982EW9C4YotSbpoxYYi`
+- 10:37Z 리핀 (MIGRATED, $96,736 mcap, $8,435 5m vol): PASS at conviction 2, PASS: 5m volume is 0.32x the hourly pace with lower highs on every 15m candle, 3 bigger tokens share the ticker, and 17 insider networks. Crowd's leaving and it's not the original (V1, V3, V13).  
+  CA `Co9MpsTVpAiCLnbZbPDqFHfzYge7qvtVJYfwf2w9pump`
 - 10:34Z STONKLANA (MIGRATED, $751,911 mcap, $5,663 5m vol): PASS at conviction 2, PASS: 5m volume is $5.7k, only 0.42x the hourly pace, sells outnumber buys, 22 coins share the ticker and the data flags 47 insider networks. The crowd is leaving. (V1, V6, V13)  
   CA `GF74fBfcaeLjUiUwKpRiUbvMQtTvNyzMoo6KNyyqNyk6`
 - 10:27Z Lingo (MIGRATED, $101,247 mcap, $88,140 5m vol): PASS at conviction 4, PASS — Lingo is 52 minutes old and 9% off its high, with bundles unverified and the top 10 holding 20%. Buying near the high on a fresh coin is exactly the CATCULUS setup. Blocker: entry location plus unverified bundles. I'll look again on a 0.618 retest near $65–70k (V1, V3, V6).  
@@ -86,10 +90,6 @@ Updated 2026-10-29T10:34:49Z (paper trading, never real money)
   CA `FEXGegqeVm5vZurqyC7qsmkLqWspVV1ACb9bbLvcpump`
 - 10:06Z WALT (MIGRATED, $92,555 mcap, $26,827 5m vol): PASS at conviction 4, PASS: a 17-minute-old WALT in a field of 27 same-ticker coins, a newer WALT copy is pulling 2x its 5m flow, and top 10 hold 23.6% across 4 insider networks. Not the clear leader, and the holders look like a farm (V1, V6, V13).  
   CA `GmyoabL4oY72yQA3EzTq5G5gQUF5SsE94jrs8bWfJzTt`
-- 10:06Z ZECP (MIGRATED, $858,088 mcap, $151,768 5m vol): PASS at conviction 3, PASS — 28 min old, +1576% in an hour, 2.8% off the high with bundles unverified. That's chasing, not trading. Wait for the 0.618 retest. (V1, V3, V5)  
-  CA `GcYGNe5BqQrbyGXSAm4Dan3MYobcREF9KcNSSqs9pump`
-- 10:00Z BabyNuts (MIGRATED, $146,924 mcap, $17,028 5m vol): REJECT, RugCheck danger: Creator history of rugged tokens  
-  CA `6KiSJe4GB9vLratvfF4Zb91jNQeekE3QCG3BnLzkpump`
 
 ## Recent lessons
 - [2026-10-28 14:15] Expected: a $1.2M dip 47% off the $2.3M peak, with $17.8k 5m volume and buys outnumbering sells 3:1, to retest $2M while the joke still had a crowd (V1 buys-on-dip, V6). What happened: it peaked at 1.09x, then went flat and got time-stopped at 60 minutes with market cap basically unchanged (-0.6%), but I still lost 15.4% because fees and slippage ate about 9% of a $3.33 position, and the rest of the gap is execution I can't see in the record. Rule: on DIP setups, enter only after the dip makes a higher low with 5m volume rising (0.86x the hourly average is fading, not holding). Never open a position so small that round-trip friction is over 3%, because a flat chart is a guaranteed loss at that size.
@@ -101,16 +101,23 @@ Updated 2026-10-29T10:34:49Z (paper trading, never real money)
 - [2026-10-29 02:49] I expected FLOAT, the leading tokenized-stock coin, to run from its $1.04M higher-low reclaim toward $3M (V1, V6), and it did reach 1.64x. Then it faded, and I sat past the 45-minute time stop and got out at 158 minutes. Mcap was only down 7%, but I lost 24.5% because $0.56 of fees and slippage ate 18% of a $3.09 position, which broke my own $5-minimum and friction-gate rules. Next time: no entry under $5 or above 5% friction, no exceptions. If a trade gets past 1.5x before initials, move the stop up to break-even plus fees so a 1.6x peak can't turn into a loss (V11: plan the exit before the entry).
 
 ## Meta right now
-Meta: fresh launches under an hour old that burn out fast, plus a few cat coins; Halloween is fading (Chilloween -69%, ACT:D dead), so the crawler's Chilloween call is stale. Rising: Lingo ($76k, $26k 5m, 6 min old) and Vivi ($13k curve, $31k 5m). Faded: Samba, Bu, OTC. Cats: Vivi, CATBOT, GATO. Older migrated coins coasting except DUBBLE ($1.46M, +21%, $10.9k 5m, 59% buys). Trades: DUBBLE MIGRATED at 7/10 if holders are clean (initials 1.5x, 20% trail, half off on volume fade); Lingo at 6/10 max, small size, only once holder data loads, 30-min time stop. PASS: Vivi (sniping, V5), Chilloween/Bu/OTC (volume collapsing), CATBOT/GATO/STONKLANA/jeff/shibana (thin 5m, V6), REMUS (3% buys), $LAPTOP (political figure, V13).
+The meta right now is fresh launches under an hour old ripping on huge 5m flow, mostly random jokes and mascots, not one story. Lingo (+152%, $88k 5m, 82% buys, $101k mcap), MULTI (12 min old, $57k 5m) and 리핀 all show it. The second theme is first-hour pump.fun coins dying on the curve: WALT, Scamcoin, GTAPE and Garagecoin did $8–167k in the hour but are at $0–2k on the 5m now. Halloween is done (Chilloween $40 on the 5m, Bu -48%), cats are thin (Vivi $1.3k 5m, and the radar flags sniping, V5). The older migrated coins are coasting (STONKLANA, jeff, GLITCH), and $LAPTOP is a political figure's coin that crashed 98%, so I don't touch it (V13).
+
+Trades:
+- **Lingo:** MIGRATED, conviction 7 only if holders load clean (top 10 under 25%, dev under 1%, bundles under 10%). Small size, initials at 1.5x, 20% trail, half off when the 5m fades. Stop where the breakout fails, 30-min time stop. It's already up 152% in the hour, so this is a chase.
+- **MULTI:** watchlist only. Blocker: 12 minutes old, sitting on Raydium instead of a pump.fun pool, and no holder or LP-burn data yet (V2, V6).
+- **리핀:** PASS. Blocker: 5m volume fell to $8k against a $313k hour with 51% buys. The crowd already left.
+
+Nothing else on the scan clears the ~$10k 5m bar (V1, V6).
 
 ## Moving most in its scans, last 30 min (1h volume)
-- ZECP: $865,562 1h vol, $858,088 mcap, +1576% 1h  
-  CA `GcYGNe5BqQrbyGXSAm4Dan3MYobcREF9KcNSSqs9pump`
 - Lingo: $647,103 1h vol, $101,247 mcap, +152% 1h  
   CA `D1kVFsf3cLN8CWv1Zmz6H3ZSWsB1jGrWxaqgJxcQpump`
-- DUBBLE: $218,767 1h vol, $1,277,651 mcap, -23% 1h  
-  CA `FEXGegqeVm5vZurqyC7qsmkLqWspVV1ACb9bbLvcpump`
+- 리핀: $313,717 1h vol, $96,736 mcap, +133% 1h  
+  CA `Co9MpsTVpAiCLnbZbPDqFHfzYge7qvtVJYfwf2w9pump`
+- WALT: $167,406 1h vol, $7,533 mcap, +41% 1h  
+  CA `CjsHariFBsWp4sP4sz4xNy7f1BcWB8W2FPhMTCKEpump`
 - STONKLANA: $162,851 1h vol, $751,911 mcap, +33% 1h  
   CA `GF74fBfcaeLjUiUwKpRiUbvMQtTvNyzMoo6KNyyqNyk6`
-- WALT: $147,722 1h vol, $92,555 mcap, +129% 1h  
-  CA `GmyoabL4oY72yQA3EzTq5G5gQUF5SsE94jrs8bWfJzTt`
+- BabyNuts: $109,997 1h vol, $1,920 mcap, -98% 1h  
+  CA `6KiSJe4GB9vLratvfF4Zb91jNQeekE3QCG3BnLzkpump`
