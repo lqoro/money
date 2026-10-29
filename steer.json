@@ -1,5 +1,15 @@
 {
  "pause_new_trades": false,
- "settings": {},
- "owner_note": "Paper money: you're here to learn, so take trades. Don't wait on one theme like Halloween. The meta is whatever the coins in your scan are getting volume and buyers on right now, across many coins; read it from the dossiers each cycle. If a coin clears your hard lines with live 5m flow and buyers in control, BUY small at conviction 6-7; save 8+ for strong ones. Your 3% friction rule can't be met: Axiom fee + slippage are ~5% round trip at any size. Skip only trades under $2. In every PASS verdict, name the one thing that stopped you."
+ "settings": {
+  "take_initials_multiple": 1.5,
+  "trailing_stop_pct": 20,
+  "stop_loss_pct": 20,
+  "max_total_risk_pct": 15
+ },
+ "owner_note": "Owner's goal (Oct 29): survive first. $1k equity by Nov 5 is a stretch target, never a reason to size up, force trades or risk the bankroll. Go for many small wins; jeeting is fine. Take profit early: initials now come out at 1.5x with a 20% trail, and sell when 5m volume fades. CPU and FLOAT hit 1.6x and still lost; those should be wins. Trade whatever is moving across your scan, not one theme. Your $5 minimum and friction gate stand; a clean setup with live flow and clean holders is a 7 on your scale. Name the blocker in every PASS.",
+ "goal": {
+  "equity_usd": 1000,
+  "deadline": "2026-11-05T05:03:00Z",
+  "set_at": "2026-10-29T05:03:00Z"
+ }
 }
