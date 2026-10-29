@@ -13,7 +13,8 @@ No real money, wallet or keys are involved. It only simulates trades.
 every 60s  scan ──► market filter ──► checklist ──► Claude research ──► paper BUY
                      (DexScreener)     (RugCheck,      (soul + guide,      (fees +
                                         guide §4)       web search)         slippage)
-every 15s  monitor open positions ──► exits: initials at 2x, trail, time stop, rug
+every 15s  monitor open positions ──► exits: initials at 2x, break-even stop, fading
+                                       volume, trail, time stop, rug
            stop hit ──► Claude reviews: bundle exit + narrative alive? hold once : sell
 on close   Claude writes a lesson; stopped-out coins go on a re-entry watchlist
 every 5    Claude studies its results ──► rewrites learned rules + retunes its strategy
@@ -69,13 +70,28 @@ every 5    Claude studies its results ──► rewrites learned rules + retunes
    impact from the pool's liquidity). Sizing counts the flat network fees too, so
    a trade too small to beat its own fees isn't taken. The report breaks fees down
    by kind. The owner can change these through Duet's `steer.json`; Trencher can't.
+   **Fee check** (`sizing.fee_check`): after the brain says BUY, code works out
+   that trade's real round trip (both fees, network fees and slippage at an
+   unchanged price) and only buys if the first profit target pays at least 3x it
+   and the round trip costs no more than 20% of the position. A round trip can't
+   cost less than ~5.5-7.5% plus ~$0.48, so there's no flat friction cap: at 1.5x
+   initials a ~$5 trade on a curve coin is about the smallest that passes, a $2
+   one never does. Only the owner can change the two numbers. Fee caps and
+   minimum sizes Trencher wrote into its own lessons before this existed are
+   marked retired in its prompts, and it's told not to write new ones.
    No limit on how many positions it holds (it has more eyes than a human);
    what limits it is the total at-stop risk budget (25%, which it can evolve
    between 10% and 40%) and cash. It stops
    opening trades after a 25% day.
 7. **Exits** (`agent/risk.py`): sell initials at ~2x, then trail the rest; time
    stop if nothing happens in 45 min; rug detection on liquidity collapse; 12h
-   max hold. **A stop is a decision point**: when the −30% stop hits, Claude
+   max hold. **Break-even stop**: once a coin has run to at least 1.3x (and 10%
+   above the stop), the stop moves up to the price where selling everything
+   gets the cost back after the sell's fees and slippage, plus 3%. That's about
+   1.1-1.3x depending on size, because network fees are flat. It sells outright,
+   gaps included. **Fading volume**: when a green position's 5m volume drops
+   under half the last hour's 5m average for a minute, it sells half, once (all
+   of it if half would be under $4). **A stop is a decision point**: when the −30% stop hits, Claude
    compares holders now vs at entry and checks the narrative. If a bundle came
    out (top 10 / insider share dropped) and attention is still alive, it can
    hold once with a deeper stop and a deadline to reclaim; otherwise it sells.
@@ -140,7 +156,8 @@ How it talks to Duet (`agent/bridge.py`): every 15 minutes Trencher pulls the
 - `settings`: any setting Trencher could evolve (stop size, dip range, call pace…),
   plus the paper costs (`platform_fee_pct`, `pumpfun_curve_fee_pct`,
   `other_dex_fee_pct`, `priority_fee_sol`, `bribe_sol`, `base_slippage_pct`,
-  `max_slippage_pct`), clamped to their bounds. Removing one puts it back.
+  `max_slippage_pct`) and the fee check (`min_target_cost_multiple`,
+  `max_round_trip_cost_pct`), clamped to their bounds. Removing one puts it back.
 - `owner_note`: a short note the brain reads before every decision and every
   meta summary
 - `goal`: `{"equity_usd": 1000, "deadline": "2026-11-05T05:00:00Z"}`, a stretch

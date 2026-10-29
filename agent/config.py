@@ -45,6 +45,11 @@ class Config:
     bribe_sol: float = 0.001  # Jito tip / bribe per tx (V2)
     base_slippage_pct: float = 1.5  # spread/latency cost on top of price impact
     max_slippage_pct: float = 20.0  # sell slippage cap (V17)
+    # Entry fee check (agent/sizing.py fee_check): the first profit target must pay the
+    # round trip this many times over, and a round trip may cost at most this % of the
+    # position. Owner-steerable only, so a learned rule can't tighten it past the floor.
+    min_target_cost_multiple: float = 3.0
+    max_round_trip_cost_pct: float = 20.0
 
     # --- Discovery / market filters (guide Part 1 §3 and §5) ---------------
     bond_mcap_sol: float = 410.0  # pump.fun graduation market cap in SOL (~$41k at $100 SOL)
@@ -76,6 +81,18 @@ class Config:
     rug_liquidity_drop_pct: float = 70.0
     hard_stop_pct: float = 60.0  # floor no stop review can ever hold past
     max_stop_reviews: int = 1  # times a position may be held through its stop
+    # Break-even stop: once a coin has run, a winner can't turn into a loss. The stop
+    # is the price where selling everything gets the cost back after the sell's fees
+    # and slippage (about 1.1-1.3x for $3-10 positions; flat network fees make small
+    # ones need more), plus a buffer for price moving between 15s checks.
+    breakeven_arm_multiple: float = 1.3  # arm once the peak reaches this...
+    breakeven_arm_room_pct: float = 10.0  # ...and sits this far above the stop, so noise doesn't sell at cost
+    breakeven_buffer_pct: float = 3.0
+    # Fading volume: the crowd is leaving while we're green, so bank some (once per position).
+    fade_volume_ratio: float = 0.5  # 5m volume under this x the last hour's average 5m volume
+    fade_confirm_sec: float = 60.0  # the fade has to last this long, so one quiet tick doesn't sell
+    fade_sell_fraction: float = 0.5
+    fade_min_partial_usd: float = 4.0  # a smaller piece sells it all: one more tx (~$0.20) would be >5% of it
 
     # --- Narrative / attention trading -------------------------------------
     dip_min_drawdown_pct: float = 40.0  # a normal pullback is ~40-50%
@@ -237,4 +254,8 @@ STEERABLE: dict[str, tuple[float, float]] = {
     "bribe_sol": (0, 0.05),
     "base_slippage_pct": (0, 10),
     "max_slippage_pct": (5, 50),
+    # The entry fee check. The bounds keep it passable: a round trip can't cost less
+    # than ~5.5% plus network fees, so the ceiling never goes below 10%.
+    "min_target_cost_multiple": (1, 6),
+    "max_round_trip_cost_pct": (10, 50),
 }

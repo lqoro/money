@@ -22,7 +22,8 @@ from .notify import notify
 from .portfolio import Portfolio, Position, venue_fee_pct
 from .risk import check_exit, sanitize_exit_plan
 from .site import project_report
-from .sizing import open_risk_usd, position_size, sizing_guide
+from .sizing import (cites_fees, fee_check, fee_rule_text, first_target_multiple, open_risk_usd, position_size,
+                     sizing_guide)
 
 log = logging.getLogger("trencher")
 
@@ -45,6 +46,9 @@ class Agent:
         # For the Duet report: what the last scan saw, and every coin it looked at and why it passed.
         self.last_scan: dict = {}
         self.recent_looks: deque[dict] = deque(maxlen=30)
+        # Every coin seen in the last half hour of scans (newest snapshot each), so the
+        # movers list doesn't shrink to whatever one scan saw outside its cooldowns.
+        self.seen_snaps: dict[str, dict] = {}
         self.bridge = DuetBridge(cfg, self)
 
     # ---------------------------------------------------------------- web crawler
@@ -134,9 +138,12 @@ class Agent:
         candidates.sort(key=lambda s: s["vol_5m"], reverse=True)
         log.info("Scan: %d tokens (%d on watchlist), %d pairs, %d pass market filters (SOL $%.2f)",
                  len(tokens), len(watched), len(pairs), len(candidates), sol)
-        # The live meta is what the market is trading right now: keep the scan's movers
-        # (all coins, not just candidates) for the meta summary and the brain.
-        self.meta["scan_movers"] = radar.scan_movers(snaps)
+        # The live meta is what the market is trading right now: keep the movers among
+        # every coin scanned lately (not just candidates) for the meta summary and the brain.
+        for snap in snaps:
+            self.seen_snaps[snap["address"]] = {**snap, "_seen_at": now}
+        self.seen_snaps = {a: v for a, v in self.seen_snaps.items() if now - v["_seen_at"] < 30 * 60}
+        self.meta["scan_movers"] = radar.scan_movers(list(self.seen_snaps.values()))
         self.meta["scan_movers_at"] = now
         self.last_scan = {"at": now, "tokens": len(tokens), "pairs": len(pairs),
                           "passed_market_filters": len(candidates),
@@ -210,14 +217,25 @@ class Agent:
             return
 
         venue = venue_fee_pct(cfg, snap.get("dex"), snap["mcap_usd"], sol)
-        decision = self.brain.decide(snap, check, self.portfolio_view(), sizing_guide(self.pf, cfg, sol_usd=sol, venue_pct=venue),
+        guide = (sizing_guide(self.pf, cfg, sol_usd=sol, venue_pct=venue, liquidity_usd=snap["liquidity_usd"])
+                 + "\n" + fee_rule_text(cfg, sol, venue))
+        decision = self.brain.decide(snap, check, self.portfolio_view(), guide,
                                      history=self.watchlist.get(addr), radar_view=radar.public_view(self.meta))
         log.info("  ◆ %-10s %s", snap["symbol"], decision.get("verdict"))
         plan = sanitize_exit_plan(decision.get("exit_plan"), cfg)
         sizing = position_size(int(decision.get("conviction") or 0), plan["stop_loss_pct"], self.pf, cfg, sol, venue)
+        fees = fee_check(sizing.size_usd, first_target_multiple(plan, snap["mcap_usd"]), cfg, sol, venue,
+                         snap["liquidity_usd"])
         journal.log_decision(cfg, {"token": addr, "symbol": snap["symbol"], "snapshot": snap,
                                    "checklist": check.as_dict(), "decision": decision,
-                                   "sizing": sizing.__dict__})
+                                   "sizing": sizing.__dict__, "fee_check": fees.__dict__})
+        if (decision.get("action") != "BUY" and fees.ok and sizing.size_usd >= cfg.min_position_usd
+                and cites_fees(decision.get("verdict") or "")):
+            # A stale fee cap can still talk the brain out of a trade the fee check allows: flag it.
+            log.warning("    %s passed over fees or size, but the fee check would allow $%.2f (%s)",
+                        snap["symbol"], sizing.size_usd, fees.note)
+            journal.log_decision(cfg, {"token": addr, "symbol": snap["symbol"], "action": "PASS_ON_FEES",
+                                       "verdict": decision.get("verdict"), "fee_check": fees.__dict__})
         if decision.get("action") != "BUY":
             self.note_look(snap, check.setup, "PASS", decision.get("verdict") or "brain passed",
                            conviction=decision.get("conviction"))
@@ -229,6 +247,13 @@ class Agent:
             self.note_look(snap, check.setup, "TOO_SMALL",
                            f"wanted to buy, but ${size:.2f} is under the ${cfg.min_position_usd:g} minimum ({sizing.note})",
                            conviction=decision.get("conviction"))
+            return
+        if not fees.ok:
+            log.info("    fee check failed, skipping: %s", fees.note)
+            self.note_look(snap, check.setup, "FEE_SKIP", f"wanted to buy ${size:.2f}, but {fees.note}",
+                           conviction=decision.get("conviction"))
+            journal.log_decision(cfg, {"token": addr, "symbol": snap["symbol"], "action": "FEE_SKIP",
+                                       "size_usd": size, "fee_check": fees.__dict__})
             return
         if self.dry_run:
             log.info("    [dry run] would buy $%.2f", size)
@@ -268,7 +293,7 @@ class Agent:
             snap = data.pair_snapshot(pair)
             pos.last_price = snap["price_usd"]
             pos.peak_price = max(pos.peak_price, snap["price_usd"])
-            signal_ = check_exit(pos, snap, self.cfg)
+            signal_ = check_exit(pos, snap, self.cfg, sol_usd=sol)
             if signal_ and signal_.review:
                 self.review_stop(pos, snap, signal_.reason, sol)
             elif signal_:

@@ -355,6 +355,15 @@ class Brain:
                 f"{self.cfg.owner_note}\n"
                 "Weigh it like advice from the person who runs you. It never moves your hard lines.\n")
 
+    def _fee_owned(self) -> str:
+        c = self.cfg
+        return (f"Fees and position size are checked in code before every entry: the first profit target must "
+                f"pay at least {c.min_target_cost_multiple:g}x the real round-trip cost, and a round trip may cost "
+                f"at most {c.max_round_trip_cost_pct:g}% of the position. A round trip always costs about "
+                f"{2 * (c.platform_fee_pct + c.other_dex_fee_pct + c.base_slippage_pct):g}% plus network fees, so "
+                f"don't write a flat fee or friction cap or a minimum position size as a rule: fix the coin pick "
+                f"or the exit instead.")
+
     def _goal(self, equity_usd: float) -> str:
         g = self.cfg.goal_progress(equity_usd)
         if not g:
@@ -371,8 +380,8 @@ class Brain:
         if not self.use_claude:
             return self._rules_decide(snap, check)
 
-        rules = journal.learned_rules(self.cfg) or "(none yet: you haven't closed enough trades)"
-        lessons = "\n".join(journal.recent_lessons(self.cfg, self.cfg.lessons_in_prompt)) or "(none yet)"
+        rules = journal.prompt_rules(self.cfg) or "(none yet: you haven't closed enough trades)"
+        lessons = "\n".join(journal.prompt_lessons(self.cfg, self.cfg.lessons_in_prompt)) or "(none yet)"
         web_note = (
             "You may use web_search (a few queries at most) to check the token on X and the web: "
             "scam accusations against the dev or CA (V13), whether the CA appears on the project's own X, "
@@ -497,10 +506,11 @@ Trade record:
 {json.dumps(trade, indent=1, default=str)}
 
 Your learned rules so far:
-{journal.learned_rules(self.cfg) or '(none yet)'}
+{journal.prompt_rules(self.cfg) or '(none yet)'}
 
 Say what you expected, what happened, and the concrete rule you will follow next time.
-Cite the guide (V-numbers) when the lesson confirms or contradicts it. Max 3 sentences."""
+Cite the guide (V-numbers) when the lesson confirms or contradicts it. Max 3 sentences.
+{self._fee_owned()}"""
         out = self._ask(prompt, LESSON_SCHEMA, "low", web=False)
         return (out or {}).get("lesson") or f"{trade['symbol']}: {trade['pnl_pct']:+.0f}% — no reflection available."
 
@@ -552,7 +562,7 @@ planned, so only hold with real evidence (cite it)."""
         """Study results and evolve: rewrite learned rules and retune strategy params."""
         if not self.use_claude or not self.has_budget():
             return None
-        lessons = "\n".join(journal.recent_lessons(self.cfg, 200))
+        lessons = "\n".join(journal.prompt_lessons(self.cfg, 200))
         wins = sum(1 for t in trades if t.get("pnl_usd", 0) > 0)
         by_setup: dict[str, list[float]] = {}
         for t in trades:
@@ -572,7 +582,7 @@ All your lessons:
 {lessons}
 
 Current learned rules:
-{journal.learned_rules(self.cfg) or '(none yet)'}
+{journal.prompt_rules(self.cfg) or '(none yet)'}
 
 Current strategy parameters: {json.dumps(self.cfg.strategy_view())}
 Allowed bounds: {json.dumps(bounds)}
@@ -589,5 +599,6 @@ skips candidates. Spend calls where they change outcomes.
    hit right before recoveries (bundle exits) → a wider stop or a different setup; dips bought
    at 70% that keep dying → a tighter dip range; winners you sold too early → a higher
    initials multiple. Small sample sizes call for small changes. Leave the rest alone.
-Never loosen the hard lines in your soul; they aren't parameters."""
+Never loosen the hard lines in your soul; they aren't parameters.
+{self._fee_owned()} Drop any such rule from your learned rules."""
         return self._ask(prompt, evolve_schema(), "high", web=False)
