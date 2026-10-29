@@ -22,7 +22,7 @@ from collections import deque
 
 from .checklist import Checklist
 from .config import EVOLVABLE, Config
-from . import journal
+from . import journal, skips
 from .risk import default_exit_plan
 
 log = logging.getLogger(__name__)
@@ -107,8 +107,22 @@ def evolve_schema() -> dict:
                     "additionalProperties": False,
                 },
             },
+            "rule_changes": {
+                "type": "array",
+                "description": "Each rule you loosened, tightened, dropped or kept on purpose, with the evidence",
+                "items": {
+                    "type": "object",
+                    "properties": {
+                        "change": {"type": "string", "enum": ["loosened", "tightened", "dropped", "added", "kept"]},
+                        "rule": {"type": "string"},
+                        "evidence": {"type": "string"},
+                    },
+                    "required": ["change", "rule", "evidence"],
+                    "additionalProperties": False,
+                },
+            },
         },
-        "required": ["rules_markdown", "param_changes"],
+        "required": ["rules_markdown", "param_changes", "rule_changes"],
         "additionalProperties": False,
     }
 
@@ -391,7 +405,13 @@ class Brain:
         prompt = f"""Time (UTC): {time.strftime('%Y-%m-%d %H:%M')}
 
 ## Your learned rules
+These are hypotheses from a handful of trades, not hard lines. The skip review below shows
+what each kind of PASS actually did; a rule whose skips keep running is costing you winners.
 {rules}
+
+## What the coins you passed on did next (skip review, last 48h)
+"ran" = reached your first target from the skip price before your stop; "dumped" = stop first.
+{skips.prompt_text(skips.load(self.cfg))}
 
 ## Your recent lessons
 {lessons}
@@ -411,12 +431,17 @@ thesis is actually wrong, never just to size up. A rug skips the stop, so a sing
 position is also capped at {self.cfg.max_position_pct:g}% of equity.
 
 Conviction scale:
-  1-4  not enough edge → PASS (risks nothing)
-  5-6  clears the hard lines, but key items are unverified, the idea is so-so, or the meta is crowded
-  7-8  clean holders, organic $10k+ 5m flow, an original idea on a live meta, community checks out
+  1-4  a concrete red flag, or no live flow → PASS (risks nothing)
+  5-6  clears the hard lines with live flow, but some items are unverified, the idea is so-so,
+       the entry isn't ideal or the meta is crowded → BUY a small probe (code sizes it; see
+       above). Probes are how you learn which setups work without risking much: use them.
+  7-8  clean holders and bundles, organic $10k+ 5m flow, an original idea on a live meta
   9-10 everything lines up (V6) and you can name why it runs from here; rare
+"Unverified" on its own is a reason for a 5-6 probe, not a PASS. Name the blocker in any PASS.
 
 ## Meta radar (your web crawler: news, CoinGecko trending, DexScreener, Reddit, Telegram)
+Its meta_summary is your hourly read of the themes, written without any coin's holder or
+bundle data. It is not a buy/no-buy rule: this coin's own checklist below is.
 {json.dumps(radar_view, indent=1) if radar_view else "(radar has not run yet)"}
 
 ## Candidate dossier
@@ -435,8 +460,13 @@ Your history with this coin: {json.dumps(history) if history else "none"}
 Automated checklist (guide Part 1 §4) — it already passed every hard line:
 {json.dumps(check.as_dict(), indent=1)}
 
-Not available to you from this data: bundler %, chart-start candles, trades-panel icons,
-global fees paid, pro-trader ratio, X admin identity. Treat them as unverified risk.
+Bundles ARE in this data: holders.bundle_pct is what RugCheck's linked wallet clusters
+(wallets funded from the same source) hold now, and holders.bundles_checked says whether
+RugCheck answered. Over {self.cfg.max_bundle_pct:g}% fails in code; a clean check is a plus, not "unverified".
+insider_wallets_flagged counts wallets, not networks. partial_holder_data means holders
+didn't load: a BUY there is sized as a probe.
+Not available to you from this data: chart-start candles, trades-panel icons, global fees
+paid, pro-trader ratio, X admin identity. Treat them as unverified risk.
 
 ## Task
 {web_note}
@@ -471,7 +501,9 @@ buyers have in common (themes, jokes, animals, people, launch styles, market cap
 Name the two to four themes moving across several coins right now, which are rising or
 fading, and use the web only to confirm or explain them. Don't anchor on one story or one
 upcoming event. In 3-5 sentences as Trencher: what's the meta, which coins show it, and
-which setups you'd take paper trades on right now. Only call it quiet if the movers are."""
+which setups you'd look at right now. Holder, dev and bundle checks run on each coin when
+you research it, so their absence here is never a reason to say "no buys" or "watchlist
+only". Only call it quiet if the movers are."""
         out = self._ask(prompt, META_SCHEMA, "low", web=False)
         return (out or {}).get("summary")
 
@@ -508,8 +540,11 @@ Trade record:
 Your learned rules so far:
 {journal.prompt_rules(self.cfg) or '(none yet)'}
 
-Say what you expected, what happened, and the concrete rule you will follow next time.
-Cite the guide (V-numbers) when the lesson confirms or contradicts it. Max 3 sentences.
+Say what you expected, what happened, and what it means for next time. One trade is a
+sample of one: say whether it confirms or contradicts a rule you already have, and don't
+turn a single loss into a new blanket ban. If a rule of yours would have kept you out of a
+winner, say that too. Cite the guide (V-numbers) when the lesson confirms or contradicts it.
+Max 3 sentences.
 {self._fee_owned()}"""
         out = self._ask(prompt, LESSON_SCHEMA, "low", web=False)
         return (out or {}).get("lesson") or f"{trade['symbol']}: {trade['pnl_pct']:+.0f}% — no reflection available."
@@ -558,8 +593,9 @@ planned, so only hold with real evidence (cite it)."""
                 "narrative_strength": 3, "new_stop_loss_pct": 0, "recheck_minutes": 0,
                 "reason": "rules-only review"}
 
-    def evolve(self, trades: list[dict]) -> dict | None:
-        """Study results and evolve: rewrite learned rules and retune strategy params."""
+    def evolve(self, trades: list[dict], skip_review: str = "") -> dict | None:
+        """Study results and evolve: rewrite learned rules and retune strategy params,
+        from closed trades and from what the coins it skipped did next."""
         if not self.use_claude or not self.has_budget():
             return None
         lessons = "\n".join(journal.prompt_lessons(self.cfg, 200))
@@ -578,6 +614,12 @@ Closed trades: {len(trades)}, wins: {wins}
 By setup: {json.dumps(stats)}
 Last trades: {json.dumps(recent)}
 
+What the coins you passed on did next, by the reason you gave (skip review, last 48h):
+"ran" = reached your first target from the skip price before your stop, "dumped" = hit the
+stop first, "flat" = neither within {self.cfg.skip_review_hours:g}h. Prices are sampled every
+{self.cfg.skip_review_interval_min:g} minutes, so read it as evidence, not a backtest.
+{skip_review or "(no skips followed yet)"}
+
 All your lessons:
 {lessons}
 
@@ -595,7 +637,15 @@ skipped) or eating your owner's window; raise or remove it when the cap itself i
 skips candidates. Spend calls where they change outcomes.
 
 1. Rewrite your learned rules: at most 15 short, concrete bullets that change how you trade.
-2. Retune parameters where your results clearly justify it. Examples: stops that keep getting
+   Rules work both ways. Lessons only come from trades you took, so they only ever add bans;
+   the skip review is the other half. Where a reason's skips ran more often than they dumped,
+   loosen or drop the rule behind it (write the looser version, e.g. allow a probe). Where they
+   mostly dumped, keep it. A rule that can never be satisfied with your data (it waits on
+   something you can't see) blocks everything: rewrite it around what you can see.
+   List every rule you loosened, tightened, added, dropped or kept on purpose in rule_changes,
+   with the numbers behind it.
+2. Retune parameters where your results clearly justify it, in either direction
+   (dip_min_attention_ratio is the code's falling-knife line; min_vol_5m_usd the dead-volume line). Examples: stops that keep getting
    hit right before recoveries (bundle exits) → a wider stop or a different setup; dips bought
    at 70% that keep dying → a tighter dip range; winners you sold too early → a higher
    initials multiple. Small sample sizes call for small changes. Leave the rest alone.

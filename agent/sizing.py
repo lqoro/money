@@ -165,6 +165,33 @@ def position_size(conviction: int, stop_loss_pct: float, pf: Portfolio, cfg: Con
     return Sizing(round(size, 2), round(size * per_dollar_loss + (fixed if size else 0), 2), risk_pct, note)
 
 
+def probe_size(stop_loss_pct: float, first_target: float, pf: Portfolio, cfg: Config, sol_usd: float = 0.0,
+               venue_pct: float | None = None, liquidity_usd: float = 0.0) -> Sizing:
+    """A probe: the smallest position whose fees still work (it passes fee_check at the
+    plan's first target), for a coin worth a look but not a full bet (conviction 5-6, or
+    holder data that didn't load). Taken only if losing it at the stop costs at most
+    probe_max_risk_pct of equity and it fits the caps and the total risk budget."""
+    equity = pf.equity()
+    if cfg.probe_max_risk_pct <= 0:
+        return Sizing(0.0, 0.0, 0.0, "probes are off")
+    per_dollar_loss = loss_at_stop_frac(stop_loss_pct, cfg, venue_pct)
+    fixed = 2 * network_fee_usd(cfg, sol_usd)
+    cap = min(equity * cfg.max_position_pct / 100, pf.cash_usd - 0.25,
+              max(0.0, equity * cfg.max_total_risk_pct / 100 - open_risk_usd(pf, cfg) - fixed) / per_dollar_loss,
+              max(0.0, equity * cfg.probe_max_risk_pct / 100 - fixed) / per_dollar_loss)
+    size = max(cfg.min_position_usd, 1.0)
+    while size <= cap:
+        if fee_check(size, first_target, cfg, sol_usd, venue_pct, liquidity_usd).ok:
+            risk = size * per_dollar_loss + fixed
+            return Sizing(round(size, 2), round(risk, 2), round(100 * risk / equity, 2) if equity else 0.0,
+                          f"probe: smallest size whose fees work at a {first_target:g}x first target, "
+                          f"loses ~${risk:.2f} ({100 * risk / equity:.1f}% of equity) at a {stop_loss_pct:.0f}% stop")
+        size += 0.25
+    return Sizing(0.0, 0.0, 0.0, f"no probe fits: a position big enough for its fees to work at a "
+                                 f"{first_target:g}x first target would risk more than "
+                                 f"{cfg.probe_max_risk_pct:g}% of equity or break the risk budget")
+
+
 def cost_note(cfg: Config, sol_usd: float, venue_pct: float | None = None) -> str:
     """What one round trip costs, in words, for the brain's prompt."""
     venue = cfg.other_dex_fee_pct if venue_pct is None else venue_pct
@@ -190,12 +217,18 @@ def sizing_guide(pf: Portfolio, cfg: Config, stop_loss_pct: float | None = None,
         s = position_size(c, stop, pf, cfg, sol_usd, venue_pct)
         row = f"  conviction {c:>2}: risk {r:g}% of equity → ~${s.size_usd:.2f} position at a {stop:.0f}% stop"
         if not s.size_usd:
-            row += " (not worth it after fees)"
+            row += " (too small for its fees: buys the probe below instead)" if c >= 5 else " (not worth it after fees)"
         elif sol_usd:
             fc = fee_check(s.size_usd, cfg.take_initials_multiple, cfg, sol_usd, venue_pct, liquidity_usd)
             row += (f", round trip ~{fc.cost_pct:g}%"
-                    + (", passes the fee check" if fc.ok else f", fails the fee check at {cfg.take_initials_multiple:g}x"))
+                    + (", passes the fee check" if fc.ok
+                       else f", fails the fee check at {cfg.take_initials_multiple:g}x, so it buys the probe below"))
         rows.append(row)
+    if sol_usd:
+        p = probe_size(stop, cfg.take_initials_multiple, pf, cfg, sol_usd, venue_pct, liquidity_usd)
+        rows.append(f"  conviction 5-6, or holder data that didn't load: a PROBE of ~${p.size_usd:.2f} "
+                    f"(the smallest size whose fees work), losing ~${p.risk_usd:.2f} at a {stop:.0f}% stop"
+                    if p.size_usd else f"  conviction 5-6: {p.note}")
     return "\n".join(rows)
 
 

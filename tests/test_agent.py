@@ -242,7 +242,7 @@ def test_evolve_applies_bounded_changes(cfg, monkeypatch):
     from agent import evolve as ev, journal
     journal.log_trade(cfg, {"event": "CLOSE", "symbol": "X", "setup": "DIP", "pnl_usd": -2})
     b = Brain(cfg)
-    monkeypatch.setattr(b, "evolve", lambda trades: {
+    monkeypatch.setattr(b, "evolve", lambda trades, skip_review="": {
         "rules_markdown": "- wider stops on DIP",
         "param_changes": [{"param": "stop_loss_pct", "value": 40, "reason": "bundle exits"},
                           {"param": "dip_max_drawdown_pct", "value": 99, "reason": "too greedy"},
@@ -611,7 +611,7 @@ def test_trencher_cannot_evolve_its_own_fees(cfg):
     from agent import evolve as ev
 
     class FakeBrain:
-        def evolve(self, closes):
+        def evolve(self, closes, skip_review=""):
             return {"rules_markdown": "", "param_changes": [{"param": "platform_fee_pct", "value": 0, "reason": "x"},
                                                              {"param": "bribe_sol", "value": 0, "reason": "x"}]}
 
@@ -690,7 +690,7 @@ def test_fee_check_is_the_owners_not_trencher_s(cfg):
     from agent.bridge import apply_steering
 
     class FakeBrain:
-        def evolve(self, closes):
+        def evolve(self, closes, skip_review=""):
             return {"rules_markdown": "", "param_changes": [
                 {"param": "max_round_trip_cost_pct", "value": 5, "reason": "x"},
                 {"param": "min_target_cost_multiple", "value": 20, "reason": "x"}]}
@@ -820,6 +820,7 @@ def test_buy_that_sizes_under_the_minimum_says_so(cfg, monkeypatch):
     from agent.main import Agent
     agent = Agent(cfg)
     pairs = {"HotCoin111": snap(address="HotCoin111", symbol="HOT")}
+    cfg.probe_max_risk_pct = 0  # probes off: a conviction 5 sizes under the minimum
     _scan_with(agent, monkeypatch, pairs, {"action": "BUY", "verdict": "BUY — tiny", "conviction": 5,
                                            "exit_plan": {"stop_loss_pct": 30}})
     look = agent.recent_looks[-1]
