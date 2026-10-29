@@ -1,9 +1,9 @@
 # Trencher live report
 
-Updated 2026-10-29T20:12:42Z (paper trading, never real money)
+Updated 2026-10-29T20:27:50Z (paper trading, never real money)
 
 - Equity: $99.93 (-0.1% vs $100 start)
-- Goal: $1,000 by 2026-11-05 05:03Z (a stretch, survival first): at 10% of it, 6.4 days left, needs +43.6% a day from here
+- Goal: $1,000 by 2026-11-05 05:03Z (a stretch, survival first): at 10% of it, 6.4 days left, needs +43.7% a day from here
 - Closed trades: 7, 2 wins
 - Fees paid: $4.16 (axiom $0.43, network $3.26, pool $0.35), plus $0.62 lost to slippage
 - New trades: on
@@ -67,9 +67,13 @@ Updated 2026-10-29T20:12:42Z (paper trading, never real money)
   CA `Bv1a7cEj5aRnJQhMw4kRQqAFesMSd5LwcDnUzq52BMmr`
 
 ## Last scan
-- 20:11Z: 7 coins, 7 with pairs, 2 passed the market filters, 2 researched
+- 20:27Z: 7 coins, 7 with pairs, 0 passed the market filters, 0 researched
 
 ## Coins it looked at, and why it passed
+- 20:20Z CROWD (MIGRATED, $95,921 mcap, $17,177 5m vol): REJECT, Dev holds 1.6% (>1%) (V13, V17)  
+  CA `H3iGq7KSqdzw7QG3xZo2mF4eaYsvihZqqoAkdXripump`
+- 20:16Z WTAIL (MIGRATED, $67,036 mcap, $2,199 5m vol): REJECT, RugCheck danger: Creator history of rugged tokens  
+  CA `HBFxk72r4xVqhT8yK8ZFXEEGvpfkoeeSTQXiewZP7SZM`
 - 20:12Z REPAIR (MIGRATED, $35,094 mcap, $2,918 5m vol): PASS at conviction 2, PASS — 53 seconds old, $2.9k 5m with sellers ahead 37/28, five same-ticker coins and the site doesn't show this CA. That's sniping on lagged data, not a setup (V1, V5, V13).  
   CA `5qfkeXdoLn1sMPYtT4qhmXpY9bygouUmZAymFiFtLe8C`
 - 20:12Z HOUSEWORM (DIP, $484,871 mcap, $6,536 5m vol): PASS at conviction 3, PASS: HOUSEWORM's 5m volume is $6.5k, which is 0.86x its hourly pace. The crowd is leaving, so this dip is a falling knife. (V1, V6)  
@@ -86,10 +90,6 @@ Updated 2026-10-29T20:12:42Z (paper trading, never real money)
   CA `HsprHxBRgiVaQdRf3TnKNuZZtaX9JUSPgMFdAkk6pump`
 - 19:57Z HEXN (DIP, $1,073,436 mcap, $20,596 5m vol): REJECT, Dip with fading attention is a falling knife, not a dip  
   CA `ANVLA6eKiAq4nstD2Sg3SZhfVkSEwfnGccn12UQWpump`
-- 19:56Z STANK (MIGRATED, $108,939 mcap, $3,074 5m vol): PASS at conviction 4, PASS: STANK is buying a fresh +20% 15m pop 10.6% under its high, on $3k of 5m volume, with bundles unverified. That's the CATCULUS mistake again with weaker flow. (V1, V3, V6)  
-  CA `5wsjHxT5nW5jQuVupXUNnYszF3WoWCfGGk9LMcsCJzY8`
-- 19:49Z OREN (DIP, $138,475 mcap, $2,221 5m vol): PASS at conviction 3, PASS — 5m volume $2.2k is basically dead for a dip buy, and the GitHub shows a different CA with stale AI claims. Vamp/LARP smell, no crowd. (V1, V3, V6)  
-  CA `57vAaMsnAJXkvULtAz7fsi6gRn3bHRJFJsJV1okNpump`
 
 ## Recent lessons
 - [2026-10-28 14:15] Expected: a $1.2M dip 47% off the $2.3M peak, with $17.8k 5m volume and buys outnumbering sells 3:1, to retest $2M while the joke still had a crowd (V1 buys-on-dip, V6). What happened: it peaked at 1.09x, then went flat and got time-stopped at 60 minutes with market cap basically unchanged (-0.6%), but I still lost 15.4% because fees and slippage ate about 9% of a $3.33 position, and the rest of the gap is execution I can't see in the record. Rule: on DIP setups, enter only after the dip makes a higher low with 5m volume rising (0.86x the hourly average is fading, not holding). Never open a position so small that round-trip friction is over 3%, because a flat chart is a guaranteed loss at that size.
@@ -106,11 +106,11 @@ Meta: the Hyperliquid/HYPE joke is the main theme (Hypurr, HYPEDOG, HyPepe, 10XH
 ## Moving most in its scans, last 30 min (1h volume)
 - HEXN: $789,185 1h vol, $1,073,436 mcap, +10% 1h  
   CA `ANVLA6eKiAq4nstD2Sg3SZhfVkSEwfnGccn12UQWpump`
-- TOFU: $403,902 1h vol, $1,972 mcap, -98% 1h  
+- TOFU: $312,508 1h vol, $1,926 mcap, -99% 1h  
   CA `FaBb6ebRTGbZWchGiC2eSSRaZWVsFYLe9UqvBuiYpump`
 - HYPERCAT: $279,145 1h vol, $353,663 mcap, -15% 1h  
   CA `AEqw9bAtqJCWPNNJp9EieXw8GYwm1kgsJBDdJBU2pump`
-- FACEPALM: $135,944 1h vol, $3,321 mcap, -13% 1h  
+- CROWD: $234,687 1h vol, $95,921 mcap, +48% 1h  
+  CA `H3iGq7KSqdzw7QG3xZo2mF4eaYsvihZqqoAkdXripump`
+- FACEPALM: $136,193 1h vol, $2,840 mcap, -25% 1h  
   CA `PfNmho6WyGYSEiUE6AuNgqSyC8CnWGTbpgPXitupump`
-- COLUM: $123,994 1h vol, $67,865 mcap, +70% 1h  
-  CA `GozXFUVjxtTMVfF1HRAE9difXDLcciemgsJ2i5u1X6UJ`
