@@ -1,12 +1,12 @@
 {
- "updated_at": "2026-10-29T05:47:13Z",
+ "updated_at": "2026-10-29T06:02:24Z",
  "paused_new_trades": false,
  "brain": {
   "mode": "subscription",
   "paused_until": null,
   "usage_48h": {
    "hours": 48,
-   "brain_calls": 280,
+   "brain_calls": 282,
    "plan_limit_hits": 0,
    "candidates_skipped_no_brain": 0,
    "stop_reviews_without_brain": 0
@@ -527,7 +527,7 @@
  ],
  "learned_rules": "- **Friction gate before every entry (incl. buy-backs):** estimate round-trip fees + slippage. Skip if it is over ~5% of position size, or if the first target can't pay at least 5x that cost. Fees cost 9\u201330% on my $3 trades and turned flat charts into \u221215% and \u221224% losses.\n- **Minimum position ~$5.** If conviction and the honest stop distance don't justify $5, PASS. Never inflate conviction or pull the stop closer to clear the bar (soul: sizing).\n- **MIGRATED: no momentum buys within ~20% of the local high** unless bundle data is verified. Clean top-10 numbers don't rule out bundles spread across many small wallets. CATCULUS bought near the high gapped from \u221230% to \u221259% (V3, V5).\n- **MIGRATED entries come on a pullback:** the 0.618 fib or point-of-control retest, with 5m volume \u2265 $10k and organic buys:sells (V1, V6). My two winners (CATBOT, FLOATER) were both clean dip-buys of the leading coin.\n- **In a vamp field, buy only the leader** by 5m volume and attention. Never the 2nd or 3rd copy (V1, V2). FLOATER beat 22 same-ticker coins on flow.\n- **DIP entries need a higher low plus rising 5m volume.** If 5m volume is under ~1x the hourly average, it's fading. No entry on the first red-to-green candle (V1).\n- **Re-entry after a stop or time stop only on reclaim of the prior high** (or a new higher high), not while it's basing mid-range. The CATBOT buy-back mid-range died flat.\n- **Take initials at 2x with sell-initials, every time** (V11). It worked on both winners.\n- **After initials, trail 30% from peak; once past 4x, tighten to ~25%.** Don't round-trip a runner. The CATBOT 35% trail gave back about 40% of a 4.44x peak.\n- **Time stop is right when the chart is flat.** If it's under 1.0x at 45 min with no volume surge, exit. Don't marry the bag (V1).\n- **Stop review: if top-10 or insider share dropped since entry and price is still bleeding, SELL.** Holding once is only for a dump where the narrative and 5m volume are still clearly intact.\n- **A gap through the stop is an entry problem, not a stop-width problem.** Fix it with entry location (pullbacks) and bundle checks, not a wider stop.\n- **Log fees with every trade lesson** so the friction math stays honest.\n",
  "meta": {
-  "age_minutes": 8,
+  "age_minutes": 3,
   "meta_summary": "The trenches really are quiet right now. My scanner found only one mover, and it's dead. KING (KingPad, about $48k cap, 1.7h old) shows $12.4k of volume over the hour but only $513 in the last 5 minutes. It's down 11.6% on the hour and buyers are only 43% of the 5m flow. That's a coin people are leaving, and you can't build a theme out of one coin. Even the crawler's own summary (which is untrusted web text) says no trench meta is running. What it does show is bucket-2 money: tokenized stocks and Robinhood Chain, PEPE and PENGU, AI and frog categories (V8). $LAPTOP is a hard no because a political figure pushed it, and that goes for every vamp of it too (V13). Halloween is the only meta I can see coming and traders run holiday metas early (V5), so $PUMPKINU (3 mentions) goes on watch only. Mentions are attention, not a buy signal (V7). No paper trades right now. PASS on KING: blocker is 5m volume of $513, under the $2k dead line (V1, V6, V13). It's also a \"pad\"-named coin with no meme. I'll buy when an original spooky or frog meme bonds with $10k+ 5m volume and clean holders.",
   "top_narratives": [
    "tokenized",
@@ -536,45 +536,45 @@
    "stock",
    "prediction",
    "pepe",
-   "fed",
    "referral",
+   "fed",
    "trump",
    "stocks",
    "code",
-   "rally",
    "hunter",
-   "dogecoin",
-   "adds",
+   "rally",
+   "referral code",
    "creator",
    "fees",
+   "dogecoin",
+   "adds",
    "viral",
-   "stablecoin",
-   "machine"
+   "stablecoin"
   ],
   "trending_categories": [
+   "Options",
    "Pons Launchpad",
+   "AI Framework",
    "Airdropped Tokens by NFT Projects",
-   "SocialFi",
    "IP Meme",
-   "Dex Aggregator",
-   "AI Framework"
+   "Layer 2 (L2)"
   ],
   "trending_coins": [
    "PEARL",
-   "ENA",
-   "QTC",
-   "JUP",
-   "AXIS",
-   "KNTQ",
    "PENGU",
+   "AXIS",
+   "QTC",
+   "ENA",
+   "JUP",
    "PONS",
-   "XRP",
+   "STONK",
+   "DRV",
+   "BTC",
    "AERO",
-   "PUMP",
-   "VVV",
-   "TAO",
-   "FET",
-   "BNB"
+   "XRP",
+   "ZRO",
+   "CC",
+   "PI"
   ],
   "hot_tickers": [
    {
@@ -582,11 +582,11 @@
     "mentions": 3
    },
    {
-    "ticker": "$PUMPKINU",
-    "mentions": 3
+    "ticker": "$NETWORK",
+    "mentions": 2
    },
    {
-    "ticker": "$NETWORK",
+    "ticker": "$PUMPKINU",
     "mentions": 2
    },
    {
@@ -623,13 +623,38 @@
    }
   ],
   "headlines": [
-   "Memecoin Trading App Referral Codes 2026: 7 Apps Compared",
    "Former Doom Developer Could Be in Trouble as Bethesda Goes After Doom Memecoin",
    "Visa to close Crossmint memecoin rewards loophole following The Block investigation: report",
+   "Hunter Biden lashes out after $LAPTOP meme coin collapse",
    "Top 6 memecoins to check out in October 2026",
-   "Hunter Biden lashes out after $LAPTOP meme coin collapse"
+   "How to Spot the Best Meme Coin to Buy Now? Apeing Brings 1,150%"
   ],
-  "scan_movers": []
+  "scan_movers": [
+   {
+    "symbol": "Rigby",
+    "name": "iamrigbycat",
+    "ca": "52iLe7AQL6ATgg1g7aE4HybRPRUt8t8EbA49TJNWpump",
+    "dex": "pumpfun",
+    "mcap_usd": 24189,
+    "vol_5m": 2457,
+    "vol_1h": 49312,
+    "change_1h": 613,
+    "buy_ratio_5m": 0.66,
+    "age_hours": 0.6
+   },
+   {
+    "symbol": "ZAZU",
+    "name": "zazu",
+    "ca": "EKdanzDgCRRVDaokWriMuuVwUoqe2UKwN8611Jetpump",
+    "dex": "pumpfun",
+    "mcap_usd": 4298,
+    "vol_5m": 328,
+    "vol_1h": 47948,
+    "change_1h": 34.86,
+    "buy_ratio_5m": 0.67,
+    "age_hours": 0.5
+   }
+  ]
  },
  "goal": {
   "target_usd": 1000.0,
@@ -640,11 +665,11 @@
   "needed_daily_growth_pct": 39.2
  },
  "last_scan": {
-  "at": 1793252786.3125482,
-  "tokens": 4,
-  "pairs": 0,
-  "passed_market_filters": 0,
-  "researched": 0
+  "at": 1793253726.814007,
+  "tokens": 5,
+  "pairs": 2,
+  "passed_market_filters": 1,
+  "researched": 1
  },
  "recent_looks": [
   {
@@ -712,6 +737,50 @@
    "outcome": "PASS",
    "conviction": 4,
    "reason": "PASS: five bigger SPERMs exist, top 10 hold 23% with 15 insider networks, and a conviction of 5 sizes to $2, under my $5 minimum. A vamp still on the bonding curve. (V1, V3, V6)"
+  },
+  {
+   "ts": "2026-10-29T05:48:53Z",
+   "symbol": "MODEL3",
+   "ca": "2oFhSFqfmha8vHAkZZqKnzDdxwB7f2KWQhjrzwtHpump",
+   "setup": "FINAL_STRETCH",
+   "mcap_usd": 29163,
+   "vol_5m": 47674,
+   "outcome": "PASS",
+   "conviction": 3,
+   "reason": "PASS: 4-minute-old Elon-tweet snipe. Top 10 hold 23.2% ex-pool, 18 insider networks, and a bigger coin has the same ticker. Exit liquidity for the bundle (V1, V5, V13, V17)."
+  },
+  {
+   "ts": "2026-10-29T05:52:47Z",
+   "symbol": "AI/SI",
+   "ca": "4yh5hsKvpKBaaQSRv9UzuKVQUik4ci8CcSqxjTKxpump",
+   "setup": "MIGRATED",
+   "mcap_usd": 163229,
+   "vol_5m": 43903,
+   "outcome": "REJECT",
+   "conviction": null,
+   "reason": "Dev holds 1.8% (>1%) (V13, V17)"
+  },
+  {
+   "ts": "2026-10-29T05:59:15Z",
+   "symbol": "REMUS",
+   "ca": "CA8q2mkYWZnUNqYmf6pxyxAPZsmSe2EG9P7hHMW5pump",
+   "setup": "MIGRATED",
+   "mcap_usd": 245172,
+   "vol_5m": 4040,
+   "outcome": "PASS",
+   "conviction": 2,
+   "reason": "PASS \u2014 87% off the peak with buyers at 22% of the 5m flow. Past my 75% dip limit, and the crowd is leaving. (V1, V6)"
+  },
+  {
+   "ts": "2026-10-29T06:02:08Z",
+   "symbol": "Rigby",
+   "ca": "52iLe7AQL6ATgg1g7aE4HybRPRUt8t8EbA49TJNWpump",
+   "setup": "FINAL_STRETCH",
+   "mcap_usd": 24189,
+   "vol_5m": 2457,
+   "outcome": "REJECT",
+   "conviction": null,
+   "reason": "Top 10 hold 29.7% ex-pool (>25%) (V13)"
   }
  ]
 }

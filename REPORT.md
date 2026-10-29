@@ -1,13 +1,13 @@
 # Trencher live report
 
-Updated 2026-10-29T05:47:13Z (paper trading, never real money)
+Updated 2026-10-29T06:02:24Z (paper trading, never real money)
 
 - Equity: $99.93 (-0.1% vs $100 start)
 - Goal: $1,000 by 2026-11-05 05:03Z (a stretch, survival first): at 10% of it, 7 days left, needs +39.2% a day from here
 - Closed trades: 7, 2 wins
 - Fees paid: $4.16 (axiom $0.43, network $3.26, pool $0.35), plus $0.62 lost to slippage
 - New trades: on
-- Brain: subscription, 280 calls and 0 plan-limit hits in 48h
+- Brain: subscription, 282 calls and 0 plan-limit hits in 48h
 
 ## Open positions
 - none
@@ -51,9 +51,17 @@ Updated 2026-10-29T05:47:13Z (paper trading, never real money)
   CA `Bv1a7cEj5aRnJQhMw4kRQqAFesMSd5LwcDnUzq52BMmr`
 
 ## Last scan
-- 05:46Z: 4 coins, 0 with pairs, 0 passed the market filters, 0 researched
+- 06:02Z: 5 coins, 2 with pairs, 1 passed the market filters, 1 researched
 
 ## Coins it looked at, and why it passed
+- 06:02Z Rigby (FINAL_STRETCH, $24,189 mcap, $2,457 5m vol): REJECT, Top 10 hold 29.7% ex-pool (>25%) (V13)  
+  CA `52iLe7AQL6ATgg1g7aE4HybRPRUt8t8EbA49TJNWpump`
+- 05:59Z REMUS (MIGRATED, $245,172 mcap, $4,040 5m vol): PASS at conviction 2, PASS — 87% off the peak with buyers at 22% of the 5m flow. Past my 75% dip limit, and the crowd is leaving. (V1, V6)  
+  CA `CA8q2mkYWZnUNqYmf6pxyxAPZsmSe2EG9P7hHMW5pump`
+- 05:52Z AI/SI (MIGRATED, $163,229 mcap, $43,903 5m vol): REJECT, Dev holds 1.8% (>1%) (V13, V17)  
+  CA `4yh5hsKvpKBaaQSRv9UzuKVQUik4ci8CcSqxjTKxpump`
+- 05:48Z MODEL3 (FINAL_STRETCH, $29,163 mcap, $47,674 5m vol): PASS at conviction 3, PASS: 4-minute-old Elon-tweet snipe. Top 10 hold 23.2% ex-pool, 18 insider networks, and a bigger coin has the same ticker. Exit liquidity for the bundle (V1, V5, V13, V17).  
+  CA `2oFhSFqfmha8vHAkZZqKnzDdxwB7f2KWQhjrzwtHpump`
 - 05:38Z SPERM (FINAL_STRETCH, $30,179 mcap, $15,761 5m vol): PASS at conviction 4, PASS: five bigger SPERMs exist, top 10 hold 23% with 15 insider networks, and a conviction of 5 sizes to $2, under my $5 minimum. A vamp still on the bonding curve. (V1, V3, V6)  
   CA `DFdjJZepcFjERhGmEoJ9QA5dt9rtN6QD8DKNjXNmpump`
 - 05:17Z GATO (MIGRATED, $5,231,704 mcap, $2,318 5m vol): REJECT, Dev holds 3.3% (>1%) (V13, V17)  
@@ -78,3 +86,9 @@ Updated 2026-10-29T05:47:13Z (paper trading, never real money)
 
 ## Meta right now
 The trenches really are quiet right now. My scanner found only one mover, and it's dead. KING (KingPad, about $48k cap, 1.7h old) shows $12.4k of volume over the hour but only $513 in the last 5 minutes. It's down 11.6% on the hour and buyers are only 43% of the 5m flow. That's a coin people are leaving, and you can't build a theme out of one coin. Even the crawler's own summary (which is untrusted web text) says no trench meta is running. What it does show is bucket-2 money: tokenized stocks and Robinhood Chain, PEPE and PENGU, AI and frog categories (V8). $LAPTOP is a hard no because a political figure pushed it, and that goes for every vamp of it too (V13). Halloween is the only meta I can see coming and traders run holiday metas early (V5), so $PUMPKINU (3 mentions) goes on watch only. Mentions are attention, not a buy signal (V7). No paper trades right now. PASS on KING: blocker is 5m volume of $513, under the $2k dead line (V1, V6, V13). It's also a "pad"-named coin with no meme. I'll buy when an original spooky or frog meme bonds with $10k+ 5m volume and clean holders.
+
+## Moving most in its scan (1h volume)
+- Rigby: $49,312 1h vol, $24,189 mcap, +613% 1h  
+  CA `52iLe7AQL6ATgg1g7aE4HybRPRUt8t8EbA49TJNWpump`
+- ZAZU: $47,948 1h vol, $4,298 mcap, +35% 1h  
+  CA `EKdanzDgCRRVDaokWriMuuVwUoqe2UKwN8611Jetpump`
