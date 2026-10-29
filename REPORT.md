@@ -1,8 +1,9 @@
 # Trencher live report
 
-Updated 2026-10-29T05:16:49Z (paper trading, never real money)
+Updated 2026-10-29T05:16:52Z (paper trading, never real money)
 
 - Equity: $99.93 (-0.1% vs $100 start)
+- Goal: $1,000 by 2026-11-05 05:03Z (a stretch, survival first): at 10% of it, 7 days left, needs +39% a day from here
 - Closed trades: 7, 2 wins
 - Fees paid: $4.16 (axiom $0.43, network $3.26, pool $0.35), plus $0.62 lost to slippage
 - New trades: on
@@ -48,6 +49,12 @@ Updated 2026-10-29T05:16:49Z (paper trading, never real money)
   CA `5JbRYEz844bwnKbGx4dRHhrJ6zjrJ194CKdDXtzwgaXo`
 - FLOAT: -24% ($-0.76), time stop: 158 min and only 0.92x  
   CA `Bv1a7cEj5aRnJQhMw4kRQqAFesMSd5LwcDnUzq52BMmr`
+
+## Last scan
+- no scan yet since the last restart
+
+## Coins it looked at, and why it passed
+- none since the last restart
 
 ## Recent lessons
 - [2026-10-28 14:15] Expected: a $1.2M dip 47% off the $2.3M peak, with $17.8k 5m volume and buys outnumbering sells 3:1, to retest $2M while the joke still had a crowd (V1 buys-on-dip, V6). What happened: it peaked at 1.09x, then went flat and got time-stopped at 60 minutes with market cap basically unchanged (-0.6%), but I still lost 15.4% because fees and slippage ate about 9% of a $3.33 position, and the rest of the gap is execution I can't see in the record. Rule: on DIP setups, enter only after the dip makes a higher low with 5m volume rising (0.86x the hourly average is fading, not holding). Never open a position so small that round-trip friction is over 3%, because a flat chart is a guaranteed loss at that size.

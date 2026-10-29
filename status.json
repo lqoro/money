@@ -1,5 +1,5 @@
 {
- "updated_at": "2026-10-29T05:16:49Z",
+ "updated_at": "2026-10-29T05:16:52Z",
  "paused_new_trades": false,
  "brain": {
   "mode": "subscription",
@@ -632,6 +632,17 @@
    "Former Doom Developer Could Be in Trouble as Bethesda Goes After Doom Memecoin",
    "Visa to close Crossmint memecoin rewards loophole following The Block investigation: report",
    "Hunter Biden lashes out after $LAPTOP meme coin collapse"
-  ]
- }
+  ],
+  "scan_movers": []
+ },
+ "goal": {
+  "target_usd": 1000.0,
+  "deadline": "2026-11-05T05:03:00Z",
+  "equity_usd": 99.93,
+  "progress_pct": 10.0,
+  "days_left": 7.0,
+  "needed_daily_growth_pct": 39.0
+ },
+ "last_scan": {},
+ "recent_looks": []
 }
