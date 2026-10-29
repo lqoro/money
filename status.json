@@ -1,5 +1,5 @@
 {
- "updated_at": "2026-10-29T21:28:58Z",
+ "updated_at": "2026-10-29T21:29:17Z",
  "paused_new_trades": false,
  "brain": {
   "mode": "subscription",
@@ -529,7 +529,7 @@
  ],
  "learned_rules": "- **Friction gate before every entry (incl. buy-backs):** estimate round-trip fees + slippage. Skip if it is over ~5% of position size, or if the first target can't pay at least 5x that cost. Fees cost 9\u201330% on my $3 trades and turned flat charts into \u221215% and \u221224% losses.\n- **Minimum position ~$5.** If conviction and the honest stop distance don't justify $5, PASS. Never inflate conviction or pull the stop closer to clear the bar (soul: sizing).\n- **MIGRATED: no momentum buys within ~20% of the local high** unless bundle data is verified. Clean top-10 numbers don't rule out bundles spread across many small wallets. CATCULUS bought near the high gapped from \u221230% to \u221259% (V3, V5).\n- **MIGRATED entries come on a pullback:** the 0.618 fib or point-of-control retest, with 5m volume \u2265 $10k and organic buys:sells (V1, V6). My two winners (CATBOT, FLOATER) were both clean dip-buys of the leading coin.\n- **In a vamp field, buy only the leader** by 5m volume and attention. Never the 2nd or 3rd copy (V1, V2). FLOATER beat 22 same-ticker coins on flow.\n- **DIP entries need a higher low plus rising 5m volume.** If 5m volume is under ~1x the hourly average, it's fading. No entry on the first red-to-green candle (V1).\n- **Re-entry after a stop or time stop only on reclaim of the prior high** (or a new higher high), not while it's basing mid-range. The CATBOT buy-back mid-range died flat.\n- **Take initials at 2x with sell-initials, every time** (V11). It worked on both winners.\n- **After initials, trail 30% from peak; once past 4x, tighten to ~25%.** Don't round-trip a runner. The CATBOT 35% trail gave back about 40% of a 4.44x peak.\n- **Time stop is right when the chart is flat.** If it's under 1.0x at 45 min with no volume surge, exit. Don't marry the bag (V1).\n- **Stop review: if top-10 or insider share dropped since entry and price is still bleeding, SELL.** Holding once is only for a dump where the narrative and 5m volume are still clearly intact.\n- **A gap through the stop is an entry problem, not a stop-width problem.** Fix it with entry location (pullbacks) and bundle checks, not a wider stop.\n- **Log fees with every trade lesson** so the friction math stays honest.\n",
  "meta": {
-  "age_minutes": 0,
+  "age_minutes": 1,
   "meta_summary": "The HYPE joke is still the meta, but only the newest coins are getting buyers. HYPERCHAN ($78k on the 5m, +564% on the hour, 87% buys) and HYPERDUEL are live; HYPERCAT, HyPepe and HYPEHOUSE are dying (-54% to -61% on the hour). Most coins under an hour old are getting dumped (ASSAY -94%, FACEPALM and AgenC near zero volume). The exception is SI on the bonding curve ($32k on the 5m). Older migrated coins are holding pace: HEXN ($1.08M cap, $21k on the 5m, 82% buys), HOUSEWORM and STANK. No holder, dev or bundle data yet, so these are holder checks first. HEXN is a MIGRATED setup at conviction 7 if the checks pass (initials at 1.5x, 20% trail, sell half when the 5m fades, break-even stop at 1.3x). HYPERCHAN is 5-6 at most and only on a pullback, because it's chasing snipers on lagged data (V5). SI is watch-only until it gets through the pre-bond dump. Passes: HYPEHOUSE, ASSAY, HyPepe, FACEPALM and AgenC (collapsing), HYPERCAT (crowd leaving), three.ws (old, low volume, no edge), $LAPTOP (politician rule, V13). I ignored the crawler's summary because it uses stale numbers.",
   "top_narratives": [
    "tokenized",
@@ -673,6 +673,18 @@
     "age_hours": 0.4
    },
    {
+    "symbol": "HEXN",
+    "name": "Hexncoin",
+    "ca": "ANVLA6eKiAq4nstD2Sg3SZhfVkSEwfnGccn12UQWpump",
+    "dex": "pumpswap",
+    "mcap_usd": 727540,
+    "vol_5m": 23208,
+    "vol_1h": 262062,
+    "change_1h": -19.36,
+    "buy_ratio_5m": 0.84,
+    "age_hours": 4.5
+   },
+   {
     "symbol": "ASSAY",
     "name": "Proof of Ship",
     "ca": "C5hLhhd5MivJ8m2MTQjB9A2nmuBymRzYhyRpeRMMpump",
@@ -769,18 +781,6 @@
     "age_hours": 0.3
    },
    {
-    "symbol": "three",
-    "name": "three.ws",
-    "ca": "FeMbDoX7R1Psc4GEcvJdsbNbZA3bfztcyDCatJVJpump",
-    "dex": "pumpswap",
-    "mcap_usd": 500460,
-    "vol_5m": 1923,
-    "vol_1h": 40965,
-    "change_1h": -6.55,
-    "buy_ratio_5m": 0.69,
-    "age_hours": 4406.2
-   },
-   {
     "symbol": "POOPS",
     "name": "POOPETUALS",
     "ca": "4jHKDnCNNE77LtBJ7EPBfRq82sMWvwyzaRj6jxjxPoop",
@@ -805,16 +805,16 @@
     "age_hours": 1.5
    },
    {
-    "symbol": "ZERO",
-    "name": "ZERO",
-    "ca": "DxbKekHj7uUiFKKnXvegpKcLR2HWsuA4nudBWJcvpump",
-    "dex": "pumpfun",
-    "mcap_usd": 20312,
-    "vol_5m": 1947,
-    "vol_1h": 31544,
-    "change_1h": 610,
-    "buy_ratio_5m": 0.63,
-    "age_hours": 0.6
+    "symbol": "three",
+    "name": "three.ws",
+    "ca": "FeMbDoX7R1Psc4GEcvJdsbNbZA3bfztcyDCatJVJpump",
+    "dex": "pumpswap",
+    "mcap_usd": 512767,
+    "vol_5m": 2010,
+    "vol_1h": 32068,
+    "change_1h": -7.52,
+    "buy_ratio_5m": 0.67,
+    "age_hours": 4406.3
    }
   ]
  },
@@ -827,11 +827,11 @@
   "needed_daily_growth_pct": 44.0
  },
  "last_scan": {
-  "at": 1793309272.800786,
+  "at": 1793309341.5046542,
   "tokens": 6,
   "pairs": 5,
-  "passed_market_filters": 0,
-  "researched": 0
+  "passed_market_filters": 2,
+  "researched": 2
  },
  "recent_looks": [
   {

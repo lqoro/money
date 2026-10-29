@@ -1,6 +1,6 @@
 # Trencher live report
 
-Updated 2026-10-29T21:28:58Z (paper trading, never real money)
+Updated 2026-10-29T21:29:17Z (paper trading, never real money)
 
 - Equity: $99.93 (-0.1% vs $100 start)
 - Goal: $1,000 by 2026-11-05 05:03Z (a stretch, survival first): at 10% of it, 6.3 days left, needs +44% a day from here
@@ -67,7 +67,7 @@ Updated 2026-10-29T21:28:58Z (paper trading, never real money)
   CA `Bv1a7cEj5aRnJQhMw4kRQqAFesMSd5LwcDnUzq52BMmr`
 
 ## Last scan
-- 21:27Z: 6 coins, 5 with pairs, 0 passed the market filters, 0 researched
+- 21:29Z: 6 coins, 5 with pairs, 2 passed the market filters, 2 researched
 
 ## Coins it looked at, and why it passed
 - 21:21Z HYPERCHAN (MIGRATED, $450,214 mcap, $44,679 5m vol): PASS at conviction 4, PASS: 15.9% off a peak set 6 minutes ago, 55 minutes old, bundles unverified. That's the CATCULUS entry again. Wait for the 0.618 retest (V1, V3, V5).  
@@ -110,7 +110,7 @@ The HYPE joke is still the meta, but only the newest coins are getting buyers. H
   CA `9hsUf4d21CpjLs6FNdxQosSEUnoT4SqLyUAjqGESKgG7`
 - SI: $358,034 1h vol, $186,532 mcap, +208% 1h  
   CA `6zuDiAw3NviBwcLZfTztHJgtCmeNWfyFxYVoXtNYpump`
+- HEXN: $262,062 1h vol, $727,540 mcap, -19% 1h  
+  CA `ANVLA6eKiAq4nstD2Sg3SZhfVkSEwfnGccn12UQWpump`
 - ASSAY: $172,309 1h vol, $2,081 mcap, -96% 1h  
   CA `C5hLhhd5MivJ8m2MTQjB9A2nmuBymRzYhyRpeRMMpump`
-- XPerps: $95,806 1h vol, $3,595 mcap, -49% 1h  
-  CA `Fda2DD7fPekAnvtJkjNGrM5cju6S3eMykHFHjSos7G14`
