@@ -1,13 +1,13 @@
 # Trencher live report
 
-Updated 2026-10-29T17:55:20Z (paper trading, never real money)
+Updated 2026-10-29T18:10:24Z (paper trading, never real money)
 
 - Equity: $99.93 (-0.1% vs $100 start)
-- Goal: $1,000 by 2026-11-05 05:03Z (a stretch, survival first): at 10% of it, 6.5 days left, needs +42.8% a day from here
+- Goal: $1,000 by 2026-11-05 05:03Z (a stretch, survival first): at 10% of it, 6.5 days left, needs +42.9% a day from here
 - Closed trades: 7, 2 wins
 - Fees paid: $4.16 (axiom $0.43, network $3.26, pool $0.35), plus $0.62 lost to slippage
 - New trades: on
-- Brain: subscription, 410 calls and 0 plan-limit hits in 48h
+- Brain: subscription, 416 calls and 0 plan-limit hits in 48h
 
 ## Scorecard (after fees)
 - 7 closed, 2 won (29%), net $-0.07
@@ -67,9 +67,21 @@ Updated 2026-10-29T17:55:20Z (paper trading, never real money)
   CA `Bv1a7cEj5aRnJQhMw4kRQqAFesMSd5LwcDnUzq52BMmr`
 
 ## Last scan
-- 17:54Z: 5 coins, 5 with pairs, 1 passed the market filters, 1 researched
+- 18:09Z: 7 coins, 7 with pairs, 0 passed the market filters, 0 researched
 
 ## Coins it looked at, and why it passed
+- 18:09Z PUMPAXE (FINAL_STRETCH, $31,103 mcap, $14,636 5m vol): PASS at conviction 3, PASS: the project's own site says the contract address is "not live yet", so I can't tell whether this 7-minute-old pump.fun pair is the original or a vamp. That's a sniping coin flip, not a trade (V1, V3, V5).  
+  CA `2QoAVZHojBAWdpkrdesU4WA5CuXqSMbni4taiW6Jpump`
+- 18:07Z STANK (MIGRATED, $84,160 mcap, $2,132 5m vol): PASS at conviction 3, PASS: $2.1k of 5m volume, 0.88x its hourly pace and falling, with no meta behind it. The crowd is leaving, not arriving. (V1, V6)  
+  CA `5wsjHxT5nW5jQuVupXUNnYszF3WoWCfGGk9LMcsCJzY8`
+- 18:07Z HYPEFAUCET (FINAL_STRETCH, $27,350 mcap, $5,795 5m vol): PASS at conviction 4, PASS. Blocker: $5.8k on the 5m and fading (0.74x the hourly pace) on a Hyperliquid joke the radar already calls dying, with top 10 at 22% ex-pool. That's a stall under bond, not a final stretch (V1, V6).  
+  CA `HyPESTUwRbb21wH4Qyw9ayKhb9AC7bWciqGbnGp7dRip`
+- 17:59Z VI (DIP, $168,434 mcap, $8,834 5m vol): PASS at conviction 2, PASS: VI dropped 61% in a single 15-minute candle, it's sitting at the low of the hour and sellers still outnumber buyers. That's a falling knife, not a dip (V13, V1).  
+  CA `A6PM7bxyWYiUxaEpRMHvuL4tY2jYVf8N46vXZ15Hpump`
+- 17:57Z OREN (DIP, $125,175 mcap, $2,286 5m vol): PASS at conviction 2, PASS — blocker: $2.3k 5m volume with 43% buys on a 59% dip, no higher low, so buyers aren't back. Plus a LARP-ish GitHub and 9 same-ticker coins. Falling knife (V1, V6).  
+  CA `57vAaMsnAJXkvULtAz7fsi6gRn3bHRJFJsJV1okNpump`
+- 17:56Z HOUSEWORM (MIGRATED, $640,301 mcap, $9,001 5m vol): PASS at conviction 3, PASS. The crowd is leaving. 5m volume is $9k, only 0.37x its hourly pace, and the checklist flags 465 insider wallet networks. Funny worm, fading flow (V1, V6, V13).  
+  CA `9KhzhyM1BwgW6myZRcqdzQvemKjVrjck8kaevTkMpump`
 - 17:55Z HI (MIGRATED, $54,449 mcap, $20,788 5m vol): PASS at conviction 2, PASS — this HI is the dying Raydium twin, -64% on the hour while the pump.fun HI rips. Buy the leader or nothing (V1, V2).  
   CA `FkUGF7cPFy7hHuJwBERCTfAex3XcLFCH9pkj2RDUQTMe`
 - 17:52Z VOUCH (MIGRATED, $106,831 mcap, $27,754 5m vol): REJECT, Top 10 hold 54.2% ex-pool (>25%) (V13)  
@@ -78,18 +90,6 @@ Updated 2026-10-29T17:55:20Z (paper trading, never real money)
   CA `HuRqh4ddfRGwcWRD6UaXKGha8ycaDcw6gP6NbFc66uNy`
 - 17:47Z Elon (MIGRATED, $656,166 mcap, $238,072 5m vol): REJECT, RugCheck danger: Top 10 holders high ownership  
   CA `Fa1Uqysy2s6UwpcMQhjwpn49dp7oHPvxq8FrBqKqpump`
-- 17:44Z CATBOT (MIGRATED, $212,674 mcap, $9,916 5m vol): PASS at conviction 2, PASS: down 96.7% from the $6.39M peak, -77% on the hour, and 5m volume is at 0.33x its hourly pace. That's a falling knife, not a dip. (V1, V6)  
-  CA `dyw5fDNv91eknniMG4tGCU1ZrzjuxbpsLiEzih6pump`
-- 17:42Z GATO (MIGRATED, $5,050,830 mcap, $8,803 5m vol): REJECT, Dev holds 3.3% (>1%) (V13, V17)  
-  CA `HsprHxBRgiVaQdRf3TnKNuZZtaX9JUSPgMFdAkk6pump`
-- 17:42Z PULLS (FINAL_STRETCH, $23,878 mcap, $17,758 5m vol): PASS at conviction 3, PASS. It's 6 minutes old, pulls.cc doesn't show this CA, and 7 coins share the ticker. That's sniping a new pair that may be a vamp (V1, V3, V13).  
-  CA `EjRpSxNVmaLReVwRLds549ZbvMdPVW9ZB4xNhe9KejA3`
-- 17:42Z DESSA (MIGRATED, $10,249,010 mcap, $62,500 5m vol): PASS at conviction 4, PASS: blocker is entry location. $10.25M is 3% off a high set 12 min ago, bundles are unverified and liquidity is thin. Watch for a 0.618 retest near $8.5M (V1, V3, V6).  
-  CA `npz2FhoufQ7pKqhGpaipYWacrAkidyW2yDpVWSvpump`
-- 17:41Z HEXN (MIGRATED, $621,465 mcap, $28,911 5m vol): PASS at conviction 3, PASS: momentum chase 12.5% off the high, with volume at 0.48x the hourly pace. It's a 5-hour-old "OS" site with no GitHub, and 8 tokens share the ticker. Blocker: entry within 20% of the high with bundles unverified (V1, V3, V5).  
-  CA `ANVLA6eKiAq4nstD2Sg3SZhfVkSEwfnGccn12UQWpump`
-- 17:36Z HELMET (MIGRATED, $30,729 mcap, $2,849 5m vol): PASS at conviction 2, PASS — 5m volume is $2.8k at 0.23x the hourly pace and it's 31% off a $45k peak that never proved anything. The crowd already left (V1, V6).  
-  CA `FuGnvoCBa6FRzg7D3yQCutGTJiBX3DPKenRmTc4dpump`
 
 ## Recent lessons
 - [2026-10-28 14:15] Expected: a $1.2M dip 47% off the $2.3M peak, with $17.8k 5m volume and buys outnumbering sells 3:1, to retest $2M while the joke still had a crowd (V1 buys-on-dip, V6). What happened: it peaked at 1.09x, then went flat and got time-stopped at 60 minutes with market cap basically unchanged (-0.6%), but I still lost 15.4% because fees and slippage ate about 9% of a $3.33 position, and the rest of the gap is execution I can't see in the record. Rule: on DIP setups, enter only after the dip makes a higher low with 5m volume rising (0.86x the hourly average is fading, not holding). Never open a position so small that round-trip friction is over 3%, because a flat chart is a guaranteed loss at that size.
@@ -104,13 +104,13 @@ Updated 2026-10-29T17:55:20Z (paper trading, never real money)
 The meta right now is fresh pump.fun launches under an hour old, plus a dying Hyperliquid joke. HI (0.8h old, +661% on the hour, 49% buys) has a dead twin with the same ticker at -86%, which is a vamp mess (V1, V3). Elon Coin is 6 minutes old with $238k on the 5m. VOUCH and 50K are also minutes old, so taking any of them would mean sniping new pairs, where my data lags a pro terminal (V5). The AI/"labs" theme is fading. AgenC is printing $10k on the 5m against a ~$113k-per-5m hourly pace, and SENSE is -46% with 45% buys. Cat coins are getting farmed: CATBOT -77%, CATPOOP -99%. Political coins like $LAPTOP are an automatic no (V13). The crawler's own summary contradicts the scan, so I'm ignoring it. The only setups I'd take a paper trade on are HEXN (MIGRATED: $621k, $29k on the 5m, 63% buys, 0.7h old) and DESSA (V6 range: $10.2M, 76h old, $62.5k on the 5m, 56% buys, +26% on the hour). Both are watchlist only for now, not buys: holder, bundle and dev data aren't verified yet. I need top 10 under 25%, dev under 1% and bundlers under 10%, and HEXN still needs a check that it's the original (V6, V13). PASS on AgenC (blocker: 5m volume fell under a tenth of its hourly pace), HI (vamp or duplicate ticker and a split order book), Elon/VOUCH/50K (new-pair sniping) and HELMET (blocker: $2.8k on the 5m and -31%).
 
 ## Moving most in its scans, last 30 min (1h volume)
-- AgenC: $1,353,983 1h vol, $568,409 mcap, +6% 1h  
-  CA `GJKnJsRiM5ATS4yhwjYRegT3iRsXUvcW1dafJPh8pump`
-- HI: $1,166,018 1h vol, $323,764 mcap, +661% 1h  
-  CA `3w2TvVmTrtq4kSkoFVrTFQgz6MX7ThzDVrx9r5c3pump`
 - HEXN: $722,042 1h vol, $621,465 mcap, +1103% 1h  
   CA `ANVLA6eKiAq4nstD2Sg3SZhfVkSEwfnGccn12UQWpump`
 - DESSA: $611,907 1h vol, $10,249,010 mcap, +26% 1h  
   CA `npz2FhoufQ7pKqhGpaipYWacrAkidyW2yDpVWSvpump`
 - HI: $586,428 1h vol, $54,449 mcap, -65% 1h  
   CA `FkUGF7cPFy7hHuJwBERCTfAex3XcLFCH9pkj2RDUQTMe`
+- Elon: $538,221 1h vol, $656,166 mcap, +1261% 1h  
+  CA `Fa1Uqysy2s6UwpcMQhjwpn49dp7oHPvxq8FrBqKqpump`
+- CATBOT: $363,617 1h vol, $212,674 mcap, -77% 1h  
+  CA `dyw5fDNv91eknniMG4tGCU1ZrzjuxbpsLiEzih6pump`
