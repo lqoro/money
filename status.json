@@ -1,5 +1,5 @@
 {
- "updated_at": "2026-10-29T00:59:05Z",
+ "updated_at": "2026-10-29T01:14:16Z",
  "paused_new_trades": false,
  "brain": {
   "mode": "subscription",
@@ -12,7 +12,7 @@
    "stop_reviews_without_brain": 0
   }
  },
- "equity_usd": 101.05,
+ "equity_usd": 101.91,
  "cash_usd": 91.02,
  "started_with_usd": 100.0,
  "realized_pnl_usd": 0.47,
@@ -31,8 +31,8 @@
    "ca": "Bv1a7cEj5aRnJQhMw4kRQqAFesMSd5LwcDnUzq52BMmr",
    "setup": "MIGRATED",
    "cost_usd": 3.09,
-   "value_usd": 4.3,
-   "multiple": 1.51,
+   "value_usd": 4.17,
+   "multiple": 1.46,
    "fees_usd": 0.24,
    "slippage_usd": 0.04,
    "initials_taken": false
@@ -42,8 +42,8 @@
    "ca": "J7cqsaTuXUavwA3sp238tSpartUfYwDrJAaHuDvypump",
    "setup": "MIGRATED",
    "cost_usd": 2.94,
-   "value_usd": 2.7,
-   "multiple": 1.01,
+   "value_usd": 3.67,
+   "multiple": 1.37,
    "fees_usd": 0.27,
    "slippage_usd": 0.04,
    "initials_taken": false
@@ -53,8 +53,8 @@
    "ca": "dyw5fDNv91eknniMG4tGCU1ZrzjuxbpsLiEzih6pump",
    "setup": "MIGRATED",
    "cost_usd": 3.42,
-   "value_usd": 3.03,
-   "multiple": 0.96,
+   "value_usd": 3.06,
+   "multiple": 0.97,
    "fees_usd": 0.27,
    "slippage_usd": 0.05,
    "initials_taken": false
@@ -422,25 +422,25 @@
  ],
  "learned_rules": "",
  "meta": {
-  "age_minutes": 7,
+  "age_minutes": 1,
   "meta_summary": "It's quiet. There's no live trench meta right now. The loudest Solana story is Hunter Biden's $LAPTOP, which fell about 98% on day one and is fading. A political figure pushed that CA, so it's a hard no, and the same goes for any vamp or \"revival\" of it (V13). The Robinhood/Circle hype is dying too. The money that's rising is bucket-2 money, not trench money: tokenized stocks and Robinhood Chain, stablecoins and RWA, PEPE and PENGU on CoinGecko trending, frog and 4chan categories, and BTC above $81k ahead of the Fed (V8). Tickers like $MT (3 mentions), $CHIMP and $LICK (1 each) are attention farming, not a crowd (V7). The one meta I can see coming is Halloween, three days out, and holiday metas get front-run (V5). The coin that rides it will be an original, funny spooky idea, maybe a pumpkin, or a frog-in-a-costume that crosses over with the PEPE flow, not a knockoff (V1). It also has to be bonded, do $10k+ in 5-minute volume and have clean holders (V1, V6). Nothing like that has shown up yet. PASS for now; watching for pumpkins.",
   "top_narratives": [
    "tokenized",
    "robinhood",
-   "pepe",
    "stock",
    "prediction",
+   "pepe",
    "rally",
    "trump",
    "referral",
    "app",
    "fed",
-   "stocks",
    "dogecoin",
-   "stablecoin",
+   "stocks",
    "data",
-   "support",
-   "adds",
+   "code",
+   "stablecoin",
+   "hunter",
    "machine",
    "times",
    "slowing",
@@ -449,27 +449,27 @@
   "trending_categories": [
    "The Boy\u2019s Club",
    "Frog-Themed",
-   "Index Coop Defi Index",
-   "Yield Farming",
-   "Parallelized EVM",
-   "Automated Market Maker (AMM)"
+   "Base Native",
+   "Liquid Staking Governance Tokens",
+   "Real World Assets (RWA)",
+   "Crypto Card Issuer"
   ],
   "trending_coins": [
    "PEPE",
    "PENGU",
-   "KNTQ",
    "PEARL",
-   "PUMP",
    "PONS",
    "XRP",
-   "GRASS",
-   "DOGE",
-   "SEI",
-   "CHIP",
-   "ONDO",
+   "KNTQ",
    "BTC",
+   "PUMP",
+   "ETH",
+   "NEAR",
+   "CAKE",
+   "PLUME",
+   "CRO",
    "QTC",
-   "UNI"
+   "SOL"
   ],
   "hot_tickers": [
    {
@@ -479,6 +479,10 @@
    {
     "ticker": "$MT",
     "mentions": 2
+   },
+   {
+    "ticker": "$POKERFACE",
+    "mentions": 1
    },
    {
     "ticker": "$NETWORK",
@@ -494,14 +498,6 @@
    },
    {
     "ticker": "$CHIMP",
-    "mentions": 1
-   },
-   {
-    "ticker": "$SI",
-    "mentions": 1
-   },
-   {
-    "ticker": "$CREDO",
     "mentions": 1
    },
    {
