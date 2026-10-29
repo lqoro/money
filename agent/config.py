@@ -74,6 +74,18 @@ class Config:
     rug_liquidity_drop_pct: float = 70.0
     hard_stop_pct: float = 60.0  # floor no stop review can ever hold past
     max_stop_reviews: int = 1  # times a position may be held through its stop
+    # Break-even stop: once a coin has run, a winner can't turn into a loss. The stop
+    # is the price where selling everything gets the cost back after the sell's fees
+    # and slippage (about 1.1-1.3x for $3-10 positions; flat network fees make small
+    # ones need more), plus a buffer for price moving between 15s checks.
+    breakeven_arm_multiple: float = 1.3  # arm once the peak reaches this...
+    breakeven_arm_room_pct: float = 10.0  # ...and sits this far above the stop, so noise doesn't sell at cost
+    breakeven_buffer_pct: float = 3.0
+    # Fading volume: the crowd is leaving while we're green, so bank some (once per position).
+    fade_volume_ratio: float = 0.5  # 5m volume under this x the last hour's average 5m volume
+    fade_confirm_sec: float = 60.0  # the fade has to last this long, so one quiet tick doesn't sell
+    fade_sell_fraction: float = 0.5
+    fade_min_partial_usd: float = 4.0  # a smaller piece sells it all: one more tx (~$0.20) would be >5% of it
 
     # --- Narrative / attention trading -------------------------------------
     dip_min_drawdown_pct: float = 40.0  # a normal pullback is ~40-50%

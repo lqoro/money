@@ -1,5 +1,5 @@
-"""Exit rules: take initials, stop loss, trailing stop, time stop, target,
-rug detection. The brain proposes an exit plan; this code enforces it with the
+"""Exit rules: take initials, stop loss, break-even stop, sell on fading volume,
+trailing stop, time stop, target, rug detection. The brain proposes an exit plan; this code enforces it with the
 config's limits as the floor ("plan the exit before the entry", V1, V11)."""
 
 from __future__ import annotations
@@ -8,7 +8,7 @@ import time
 from dataclasses import dataclass
 
 from .config import Config
-from .portfolio import Position
+from .portfolio import Position, breakeven_price, network_fee_usd, venue_fee_pct
 
 
 @dataclass
@@ -45,10 +45,31 @@ def sanitize_exit_plan(plan: dict | None, cfg: Config) -> dict:
     return out
 
 
-def check_exit(pos: Position, snap: dict, cfg: Config, now: float | None = None) -> ExitSignal | None:
+def breakeven_stop(pos: Position, snap: dict, cfg: Config, sol_usd: float = 0.0) -> float:
+    """The price the break-even stop sells at: selling everything there gets back what's
+    left of the cost after the sell's fees, plus a buffer. Never below the entry fill."""
+    if sol_usd:
+        venue = venue_fee_pct(cfg, snap.get("dex"), snap["mcap_usd"], sol_usd)
+        net = network_fee_usd(cfg, sol_usd)
+    else:  # no SOL price this tick: use what the entry paid
+        venue, net = pos.venue_fee_pct or cfg.other_dex_fee_pct, pos.network_fee_usd
+    be = breakeven_price(cfg, pos, snap["liquidity_usd"], venue, net)
+    return max(pos.entry_price, be * (1 + cfg.breakeven_buffer_pct / 100))
+
+
+def volume_pace(snap: dict) -> float | None:
+    """5m volume vs the last hour's average 5m volume (1.0 = keeping pace)."""
+    hour = snap.get("vol_1h") or 0
+    return (snap.get("vol_5m") or 0) / (hour / 12) if hour else None
+
+
+def check_exit(pos: Position, snap: dict, cfg: Config, now: float | None = None,
+               sol_usd: float = 0.0) -> ExitSignal | None:
     now = now or time.time()
     price = snap["price_usd"]
-    plan = pos.exit_plan or default_exit_plan(cfg)
+    if not pos.exit_plan:
+        pos.exit_plan = default_exit_plan(cfg)
+    plan = pos.exit_plan
     held_min = (now - pos.opened_at) / 60
 
     # Rug: liquidity pulled or price nuked.
@@ -73,6 +94,18 @@ def check_exit(pos: Position, snap: dict, cfg: Config, now: float | None = None)
             return ExitSignal(1.0, f"held through the stop but no recovery by the deadline ({multiple:.2f}x)")
         plan["stop_loss_pct"] = plan.get("_orig_stop", plan["stop_loss_pct"])  # recovered: normal stop again
 
+    # Break-even stop: once it has run far enough, a winner can't turn into a loss.
+    # It sells outright (no review), and before the % stop so a gap down still sells here.
+    be_stop = 0.0
+    if not pos.initials_taken:
+        be_stop = breakeven_stop(pos, snap, cfg, sol_usd)
+        arm = max(cfg.breakeven_arm_multiple * pos.entry_price, be_stop * (1 + cfg.breakeven_arm_room_pct / 100))
+        if pos.peak_price >= arm:
+            plan["_be_armed"] = True
+        if plan.get("_be_armed") and price <= be_stop:
+            return ExitSignal(1.0, f"break-even stop: peaked {pos.peak_price / pos.entry_price:.2f}x, "
+                                   f"back to {multiple:.2f}x")
+
     # Stop loss. A stop is a decision point: if reviews are left, the brain looks at
     # why it hit (bundle dump with the narrative intact vs. a dead coin) first.
     if not pos.initials_taken and multiple <= 1 - plan["stop_loss_pct"] / 100:
@@ -85,6 +118,20 @@ def check_exit(pos: Position, snap: dict, cfg: Config, now: float | None = None)
         # Over-sell a little to cover fees/slippage on the way out.
         frac = min(0.9, (pos.cost_usd - pos.realized_usd) * 1.06 / value) if value else 1.0
         return ExitSignal(max(0.1, frac), f"took initials at {multiple:.2f}x")
+
+    # Fading volume while green: the crowd is leaving, so bank some before it round-trips.
+    pace = volume_pace(snap)
+    green = pos.initials_taken or (plan.get("_be_armed") and price > be_stop)
+    if green and not plan.get("_fade_sold") and pace is not None and pace < cfg.fade_volume_ratio:
+        since = plan.setdefault("_fade_since", now)
+        if now - since >= cfg.fade_confirm_sec:
+            plan["_fade_sold"] = True
+            plan.pop("_fade_since", None)
+            piece = pos.tokens * price * cfg.fade_sell_fraction
+            frac = cfg.fade_sell_fraction if piece >= cfg.fade_min_partial_usd else 1.0
+            return ExitSignal(frac, f"5m volume faded to {pace:.2f}x its hourly pace at {multiple:.2f}x")
+    else:
+        plan.pop("_fade_since", None)
 
     # Target market cap from the thesis: sell half of what's left.
     target = plan.get("target_mcap_usd")

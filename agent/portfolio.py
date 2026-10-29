@@ -43,6 +43,20 @@ def network_fee_usd(cfg: Config, sol_usd: float) -> float:
     return (cfg.network_fee_sol + cfg.priority_fee_sol + cfg.bribe_sol) * sol_usd
 
 
+def breakeven_price(cfg: Config, pos: "Position", liquidity_usd: float, venue_pct: float,
+                    net_fee_usd: float) -> float:
+    """Price at which selling all of `pos` brings back what's left of its cost after
+    slippage, Axiom and pool fees and the sell's network fee (the same math as sell())."""
+    owed = pos.cost_usd - pos.realized_usd
+    if pos.tokens <= 0 or owed <= 0:
+        return 0.0
+    keep = 1 - (cfg.platform_fee_pct + venue_pct) / 100
+    gross = owed + net_fee_usd
+    for _ in range(20):  # slippage depends on how much is sold: settle it by iteration
+        gross = (owed + net_fee_usd) / (keep * (1 - Portfolio._slippage(cfg, gross, liquidity_usd)))
+    return gross / pos.tokens
+
+
 @dataclass
 class Position:
     id: str
