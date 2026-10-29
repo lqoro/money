@@ -1,13 +1,13 @@
 # Trencher live report
 
-Updated 2026-10-29T06:02:24Z (paper trading, never real money)
+Updated 2026-10-29T06:17:29Z (paper trading, never real money)
 
 - Equity: $99.93 (-0.1% vs $100 start)
-- Goal: $1,000 by 2026-11-05 05:03Z (a stretch, survival first): at 10% of it, 7 days left, needs +39.2% a day from here
+- Goal: $1,000 by 2026-11-05 05:03Z (a stretch, survival first): at 10% of it, 6.9 days left, needs +39.3% a day from here
 - Closed trades: 7, 2 wins
 - Fees paid: $4.16 (axiom $0.43, network $3.26, pool $0.35), plus $0.62 lost to slippage
 - New trades: on
-- Brain: subscription, 282 calls and 0 plan-limit hits in 48h
+- Brain: subscription, 285 calls and 0 plan-limit hits in 48h
 
 ## Open positions
 - none
@@ -51,9 +51,21 @@ Updated 2026-10-29T06:02:24Z (paper trading, never real money)
   CA `Bv1a7cEj5aRnJQhMw4kRQqAFesMSd5LwcDnUzq52BMmr`
 
 ## Last scan
-- 06:02Z: 5 coins, 2 with pairs, 1 passed the market filters, 1 researched
+- 06:16Z: 4 coins, 1 with pairs, 1 passed the market filters, 1 researched
 
 ## Coins it looked at, and why it passed
+- 06:17Z STEVE (MIGRATED, $32,132 mcap, $73,940 5m vol): PASS at conviction 2, PASS: a 5-minute-old Elon-tweet coin down 41% in 5 minutes, with 27 same-ticker copies, top 10 at 21.9% and 4 insider networks. A falling knife, not a dip (V1, V6, V13).  
+  CA `FMzQfjhqGnMTB56Z6ie9Muz2BzSKbGUwB2wwS4Dqex4C`
+- 06:08Z SPERM (MIGRATED, $134,336 mcap, $31,982 5m vol): REJECT, Top 10 hold 28.9% ex-pool (>25%) (V13)  
+  CA `GfrirM4enfibWvniYM9Ca9Tk4GQQ9qFQax1SRbwBpump`
+- 06:07Z LOOT (FINAL_STRETCH, $25,276 mcap, $9,436 5m vol): REJECT, Top 10 hold 27.7% ex-pool (>25%) (V13)  
+  CA `9195ZJ8dks1534LePW1xDCQVpy4Kdp1s1sA7hr5rpump`
+- 06:04Z CATBOT (MIGRATED, $2,925,379 mcap, $4,614 5m vol): PASS at conviction 3, PASS: Cat Bot 5m volume is $4.6k at 0.43x the hourly average while it bases mid-range. The crowd is leaving and I don't re-enter until it reclaims the high (V1, V6).  
+  CA `dyw5fDNv91eknniMG4tGCU1ZrzjuxbpsLiEzih6pump`
+- 06:03Z GATO (MIGRATED, $5,144,539 mcap, $5,044 5m vol): REJECT, Dev holds 3.3% (>1%) (V13, V17)  
+  CA `HsprHxBRgiVaQdRf3TnKNuZZtaX9JUSPgMFdAkk6pump`
+- 06:03Z DUBBLE (DIP, $2,216,618 mcap, $7,793 5m vol): PASS at conviction 3, PASS: launchpad coin with a 0.8-day-old site that doesn't show its CA, no GitHub, and 5m volume fading at 0.85x on a dead-cat bounce. Blocker: LARP risk plus fading flow (V1, V3).  
+  CA `FEXGegqeVm5vZurqyC7qsmkLqWspVV1ACb9bbLvcpump`
 - 06:02Z Rigby (FINAL_STRETCH, $24,189 mcap, $2,457 5m vol): REJECT, Top 10 hold 29.7% ex-pool (>25%) (V13)  
   CA `52iLe7AQL6ATgg1g7aE4HybRPRUt8t8EbA49TJNWpump`
 - 05:59Z REMUS (MIGRATED, $245,172 mcap, $4,040 5m vol): PASS at conviction 2, PASS — 87% off the peak with buyers at 22% of the 5m flow. Past my 75% dip limit, and the crowd is leaving. (V1, V6)  
@@ -62,18 +74,6 @@ Updated 2026-10-29T06:02:24Z (paper trading, never real money)
   CA `4yh5hsKvpKBaaQSRv9UzuKVQUik4ci8CcSqxjTKxpump`
 - 05:48Z MODEL3 (FINAL_STRETCH, $29,163 mcap, $47,674 5m vol): PASS at conviction 3, PASS: 4-minute-old Elon-tweet snipe. Top 10 hold 23.2% ex-pool, 18 insider networks, and a bigger coin has the same ticker. Exit liquidity for the bundle (V1, V5, V13, V17).  
   CA `2oFhSFqfmha8vHAkZZqKnzDdxwB7f2KWQhjrzwtHpump`
-- 05:38Z SPERM (FINAL_STRETCH, $30,179 mcap, $15,761 5m vol): PASS at conviction 4, PASS: five bigger SPERMs exist, top 10 hold 23% with 15 insider networks, and a conviction of 5 sizes to $2, under my $5 minimum. A vamp still on the bonding curve. (V1, V3, V6)  
-  CA `DFdjJZepcFjERhGmEoJ9QA5dt9rtN6QD8DKNjXNmpump`
-- 05:17Z GATO (MIGRATED, $5,231,704 mcap, $2,318 5m vol): REJECT, Dev holds 3.3% (>1%) (V13, V17)  
-  CA `HsprHxBRgiVaQdRf3TnKNuZZtaX9JUSPgMFdAkk6pump`
-- 05:17Z DUBBLE (DIP, $1,994,362 mcap, $5,204 5m vol): REJECT, Dip with fading attention is a falling knife, not a dip  
-  CA `FEXGegqeVm5vZurqyC7qsmkLqWspVV1ACb9bbLvcpump`
-- 05:17Z CATBOT (MIGRATED, $2,646,432 mcap, $5,317 5m vol): PASS at conviction 3, PASS — CATBOT is 39% off its $4.3M high and 5m volume is $5.3k, just 0.16x the hourly average. The crowd is leaving, and I don't buy back mid-range. (V1, V6)  
-  CA `dyw5fDNv91eknniMG4tGCU1ZrzjuxbpsLiEzih6pump`
-- 05:17Z AISI (MIGRATED, $94,322 mcap, $15,220 5m vol): PASS at conviction 2, PASS — Elon-tweet vamp, 18 minutes old, AI name with no product, 10 insider networks. The blocker is vamp plus LARP risk (V1, V3, V13).  
-  CA `CxzxZDuo3igCYpqfBfMTsJHFsFXwsLLStphSEgAiq4kA`
-- 05:17Z FLOAT (MIGRATED, $2,449,122 mcap, $22,505 5m vol): PASS at conviction 4, PASS: FLOAT sits 2.9% under its high after a 35% hourly run, buys:sells are only 51%, and bundles are unverified. That's a chase, and chasing is how I got gapped on CATCULUS. The blocker is entry location. (Learned rule, V1, V6)  
-  CA `Bv1a7cEj5aRnJQhMw4kRQqAFesMSd5LwcDnUzq52BMmr`
 
 ## Recent lessons
 - [2026-10-28 14:15] Expected: a $1.2M dip 47% off the $2.3M peak, with $17.8k 5m volume and buys outnumbering sells 3:1, to retest $2M while the joke still had a crowd (V1 buys-on-dip, V6). What happened: it peaked at 1.09x, then went flat and got time-stopped at 60 minutes with market cap basically unchanged (-0.6%), but I still lost 15.4% because fees and slippage ate about 9% of a $3.33 position, and the rest of the gap is execution I can't see in the record. Rule: on DIP setups, enter only after the dip makes a higher low with 5m volume rising (0.86x the hourly average is fading, not holding). Never open a position so small that round-trip friction is over 3%, because a flat chart is a guaranteed loss at that size.
@@ -88,7 +88,5 @@ Updated 2026-10-29T06:02:24Z (paper trading, never real money)
 The trenches really are quiet right now. My scanner found only one mover, and it's dead. KING (KingPad, about $48k cap, 1.7h old) shows $12.4k of volume over the hour but only $513 in the last 5 minutes. It's down 11.6% on the hour and buyers are only 43% of the 5m flow. That's a coin people are leaving, and you can't build a theme out of one coin. Even the crawler's own summary (which is untrusted web text) says no trench meta is running. What it does show is bucket-2 money: tokenized stocks and Robinhood Chain, PEPE and PENGU, AI and frog categories (V8). $LAPTOP is a hard no because a political figure pushed it, and that goes for every vamp of it too (V13). Halloween is the only meta I can see coming and traders run holiday metas early (V5), so $PUMPKINU (3 mentions) goes on watch only. Mentions are attention, not a buy signal (V7). No paper trades right now. PASS on KING: blocker is 5m volume of $513, under the $2k dead line (V1, V6, V13). It's also a "pad"-named coin with no meme. I'll buy when an original spooky or frog meme bonds with $10k+ 5m volume and clean holders.
 
 ## Moving most in its scan (1h volume)
-- Rigby: $49,312 1h vol, $24,189 mcap, +613% 1h  
-  CA `52iLe7AQL6ATgg1g7aE4HybRPRUt8t8EbA49TJNWpump`
-- ZAZU: $47,948 1h vol, $4,298 mcap, +35% 1h  
-  CA `EKdanzDgCRRVDaokWriMuuVwUoqe2UKwN8611Jetpump`
+- STEVE: $101,421 1h vol, $32,132 mcap, -23% 1h  
+  CA `FMzQfjhqGnMTB56Z6ie9Muz2BzSKbGUwB2wwS4Dqex4C`
