@@ -1,13 +1,13 @@
 # Trencher live report
 
-Updated 2026-10-29T09:34:21Z (paper trading, never real money)
+Updated 2026-10-29T09:49:25Z (paper trading, never real money)
 
 - Equity: $99.93 (-0.1% vs $100 start)
-- Goal: $1,000 by 2026-11-05 05:03Z (a stretch, survival first): at 10% of it, 6.8 days left, needs +40.2% a day from here
+- Goal: $1,000 by 2026-11-05 05:03Z (a stretch, survival first): at 10% of it, 6.8 days left, needs +40.3% a day from here
 - Closed trades: 7, 2 wins
 - Fees paid: $4.16 (axiom $0.43, network $3.26, pool $0.35), plus $0.62 lost to slippage
 - New trades: on
-- Brain: subscription, 312 calls and 0 plan-limit hits in 48h
+- Brain: subscription, 315 calls and 0 plan-limit hits in 48h
 
 ## Scorecard (after fees)
 - 7 closed, 2 won (29%), net $-0.07
@@ -67,9 +67,13 @@ Updated 2026-10-29T09:34:21Z (paper trading, never real money)
   CA `Bv1a7cEj5aRnJQhMw4kRQqAFesMSd5LwcDnUzq52BMmr`
 
 ## Last scan
-- 09:34Z: 5 coins, 5 with pairs, 0 passed the market filters, 0 researched
+- 09:49Z: 1 coins, 1 with pairs, 0 passed the market filters, 0 researched
 
 ## Coins it looked at, and why it passed
+- 09:48Z STONKLANA (MIGRATED, $783,900 mcap, $42,263 5m vol): PASS at conviction 3, PASS: the data contradicts itself, I can't confirm this is the original out of 22 STONKLANA tickers, and 47 insider networks showed up. Can't verify the right token (V1, V3, V13).  
+  CA `GF74fBfcaeLjUiUwKpRiUbvMQtTvNyzMoo6KNyyqNyk6`
+- 09:41Z Lingo (MIGRATED, $76,059 mcap, $26,140 5m vol): PASS at conviction 4, PASS: 7 minutes old, 4% off the high, bundles unverified, 11 coins share the ticker. I don't chase this; I wait for the 0.618 retest. (V1, V3, V6)  
+  CA `D1kVFsf3cLN8CWv1Zmz6H3ZSWsB1jGrWxaqgJxcQpump`
 - 09:28Z GATO (MIGRATED, $5,159,718 mcap, $2,150 5m vol): REJECT, Dev holds 3.3% (>1%) (V13, V17)  
   CA `HsprHxBRgiVaQdRf3TnKNuZZtaX9JUSPgMFdAkk6pump`
 - 09:27Z OTC (MIGRATED, $97,874 mcap, $4,227 5m vol): REJECT, RugCheck danger: Creator history of rugged tokens  
@@ -86,10 +90,6 @@ Updated 2026-10-29T09:34:21Z (paper trading, never real money)
   CA `CA8q2mkYWZnUNqYmf6pxyxAPZsmSe2EG9P7hHMW5pump`
 - 08:47Z Bu (FINAL_STRETCH, $25,348 mcap, $2,846 5m vol): PASS at conviction 3, PASS: Bu's crowd is leaving. 5m volume is $2.8k, 0.36x its hourly pace, after a $94k hour. A bigger coin shares the ticker, and top 10 hold 18.8%. (V1, V6)  
   CA `Bnxttv7gQHYP1n9JyXuiATWKtxxJPc6sJJzeRFVBuuu`
-- 08:43Z GATO (MIGRATED, $5,386,966 mcap, $2,004 5m vol): REJECT, Dev holds 3.3% (>1%) (V13, V17)  
-  CA `HsprHxBRgiVaQdRf3TnKNuZZtaX9JUSPgMFdAkk6pump`
-- 08:42Z OTC (MIGRATED, $109,661 mcap, $10,087 5m vol): REJECT, RugCheck danger: Creator history of rugged tokens  
-  CA `Fa24xN13pzjmcx1dtKP9nBMMFCwLtXCJrtP5hSPKpump`
 
 ## Recent lessons
 - [2026-10-28 14:15] Expected: a $1.2M dip 47% off the $2.3M peak, with $17.8k 5m volume and buys outnumbering sells 3:1, to retest $2M while the joke still had a crowd (V1 buys-on-dip, V6). What happened: it peaked at 1.09x, then went flat and got time-stopped at 60 minutes with market cap basically unchanged (-0.6%), but I still lost 15.4% because fees and slippage ate about 9% of a $3.33 position, and the rest of the gap is execution I can't see in the record. Rule: on DIP setups, enter only after the dip makes a higher low with 5m volume rising (0.86x the hourly average is fading, not holding). Never open a position so small that round-trip friction is over 3%, because a flat chart is a guaranteed loss at that size.
@@ -101,16 +101,16 @@ Updated 2026-10-29T09:34:21Z (paper trading, never real money)
 - [2026-10-29 02:49] I expected FLOAT, the leading tokenized-stock coin, to run from its $1.04M higher-low reclaim toward $3M (V1, V6), and it did reach 1.64x. Then it faded, and I sat past the 45-minute time stop and got out at 158 minutes. Mcap was only down 7%, but I lost 24.5% because $0.56 of fees and slippage ate 18% of a $3.09 position, which broke my own $5-minimum and friction-gate rules. Next time: no entry under $5 or above 5% friction, no exceptions. If a trade gets past 1.5x before initials, move the stop up to break-even plus fees so a 1.6x peak can't turn into a loss (V11: plan the exit before the entry).
 
 ## Meta right now
-The crawler's summary is already stale. bingus is no longer the setup: it's at $3.4k, down 91% in the hour, with $138 of 5m volume. It rugged, and it's off the watchlist. The live meta has three parts. First, fresh pump.fun curve coins under an hour old with absurd names are rising: Chilloween (+576%, $9.9k 5m), LIDA (+612%, $4.4k 5m) and Bu (+200%, but 5m is down to $2.8k from a $135k hour). Second, an early Halloween meta that traders are front-running (V5): Chilloween, ACT:D "Doomsday" (pumped and died, $237 5m) and $PUMPKINU getting mentions. Third, the bigger migrated coins are fading. DUBBLE ($1.35M, -10%, $7.2k 5m) and CATBOT ($3M, $2.6k 5m) are coasting on thin flow, and the old-meme revival is dead along with bingus. My one watch is Chilloween as a FINAL_STRETCH (V1). It's the original seasonal joke at $23k, 59% buys, almost at the $10k 5m bar. I'd take it at 7/10 if holders, bundles and dev share come back clean (top 10 under 25%, bundlers under 10%, dev under 1%). Plan: initials out at 1.5x, 20% trail, sell half if the 5m fades, stop where the curve dip fails. It's only 18 minutes old, so I'm being careful. PASS on LIDA (5m under $10k and no holder data yet, V1/V6), Bu (volume collapsing), DUBBLE and CATBOT (5m too thin for their caps, V6), FARTCOIN (vamp, V3), $LAPTOP (political figure, V13) and REMUS (27% buys, sellers in control).
+Meta: fresh launches under an hour old that burn out fast, plus a few cat coins; Halloween is fading (Chilloween -69%, ACT:D dead), so the crawler's Chilloween call is stale. Rising: Lingo ($76k, $26k 5m, 6 min old) and Vivi ($13k curve, $31k 5m). Faded: Samba, Bu, OTC. Cats: Vivi, CATBOT, GATO. Older migrated coins coasting except DUBBLE ($1.46M, +21%, $10.9k 5m, 59% buys). Trades: DUBBLE MIGRATED at 7/10 if holders are clean (initials 1.5x, 20% trail, half off on volume fade); Lingo at 6/10 max, small size, only once holder data loads, 30-min time stop. PASS: Vivi (sniping, V5), Chilloween/Bu/OTC (volume collapsing), CATBOT/GATO/STONKLANA/jeff/shibana (thin 5m, V6), REMUS (3% buys), $LAPTOP (political figure, V13).
 
 ## Moving most in its scans, last 30 min (1h volume)
 - OTC: $181,196 1h vol, $97,874 mcap, +32% 1h  
   CA `Fa24xN13pzjmcx1dtKP9nBMMFCwLtXCJrtP5hSPKpump`
 - DUBBLE: $120,923 1h vol, $1,457,020 mcap, +21% 1h  
   CA `FEXGegqeVm5vZurqyC7qsmkLqWspVV1ACb9bbLvcpump`
-- Chilloween: $87,111 1h vol, $14,547 mcap, -63% 1h  
-  CA `Ac6PLXgeP3eK1ak9CyNR8actDgA3vxBhRq1Ao1frDajq`
-- Samba: $81,932 1h vol, $11,360 mcap, +236% 1h  
+- STONKLANA: $109,634 1h vol, $783,900 mcap, +50% 1h  
+  CA `GF74fBfcaeLjUiUwKpRiUbvMQtTvNyzMoo6KNyyqNyk6`
+- Samba: $94,008 1h vol, $4,505 mcap, +33% 1h  
   CA `53vCabTQafbRBwRqqGtbHQeTKPZAWE4KU9KVoB1Ppump`
-- Bu: $75,833 1h vol, $28,114 mcap, -23% 1h  
-  CA `Bnxttv7gQHYP1n9JyXuiATWKtxxJPc6sJJzeRFVBuuu`
+- clanker: $82,453 1h vol, $3,077 mcap, +3% 1h  
+  CA `6yhYZztNzGSCiG1sgCykmk11xgSk5PgAhqwJ4btwpump`

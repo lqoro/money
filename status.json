@@ -1,12 +1,12 @@
 {
- "updated_at": "2026-10-29T09:34:21Z",
+ "updated_at": "2026-10-29T09:49:25Z",
  "paused_new_trades": false,
  "brain": {
   "mode": "subscription",
   "paused_until": null,
   "usage_48h": {
    "hours": 48,
-   "brain_calls": 312,
+   "brain_calls": 315,
    "plan_limit_hits": 0,
    "candidates_skipped_no_brain": 0,
    "stop_reviews_without_brain": 0
@@ -529,8 +529,8 @@
  ],
  "learned_rules": "- **Friction gate before every entry (incl. buy-backs):** estimate round-trip fees + slippage. Skip if it is over ~5% of position size, or if the first target can't pay at least 5x that cost. Fees cost 9\u201330% on my $3 trades and turned flat charts into \u221215% and \u221224% losses.\n- **Minimum position ~$5.** If conviction and the honest stop distance don't justify $5, PASS. Never inflate conviction or pull the stop closer to clear the bar (soul: sizing).\n- **MIGRATED: no momentum buys within ~20% of the local high** unless bundle data is verified. Clean top-10 numbers don't rule out bundles spread across many small wallets. CATCULUS bought near the high gapped from \u221230% to \u221259% (V3, V5).\n- **MIGRATED entries come on a pullback:** the 0.618 fib or point-of-control retest, with 5m volume \u2265 $10k and organic buys:sells (V1, V6). My two winners (CATBOT, FLOATER) were both clean dip-buys of the leading coin.\n- **In a vamp field, buy only the leader** by 5m volume and attention. Never the 2nd or 3rd copy (V1, V2). FLOATER beat 22 same-ticker coins on flow.\n- **DIP entries need a higher low plus rising 5m volume.** If 5m volume is under ~1x the hourly average, it's fading. No entry on the first red-to-green candle (V1).\n- **Re-entry after a stop or time stop only on reclaim of the prior high** (or a new higher high), not while it's basing mid-range. The CATBOT buy-back mid-range died flat.\n- **Take initials at 2x with sell-initials, every time** (V11). It worked on both winners.\n- **After initials, trail 30% from peak; once past 4x, tighten to ~25%.** Don't round-trip a runner. The CATBOT 35% trail gave back about 40% of a 4.44x peak.\n- **Time stop is right when the chart is flat.** If it's under 1.0x at 45 min with no volume surge, exit. Don't marry the bag (V1).\n- **Stop review: if top-10 or insider share dropped since entry and price is still bleeding, SELL.** Holding once is only for a dump where the narrative and 5m volume are still clearly intact.\n- **A gap through the stop is an entry problem, not a stop-width problem.** Fix it with entry location (pullbacks) and bundle checks, not a wider stop.\n- **Log fees with every trade lesson** so the friction math stays honest.\n",
  "meta": {
-  "age_minutes": 1,
-  "meta_summary": "The crawler's summary is already stale. bingus is no longer the setup: it's at $3.4k, down 91% in the hour, with $138 of 5m volume. It rugged, and it's off the watchlist. The live meta has three parts. First, fresh pump.fun curve coins under an hour old with absurd names are rising: Chilloween (+576%, $9.9k 5m), LIDA (+612%, $4.4k 5m) and Bu (+200%, but 5m is down to $2.8k from a $135k hour). Second, an early Halloween meta that traders are front-running (V5): Chilloween, ACT:D \"Doomsday\" (pumped and died, $237 5m) and $PUMPKINU getting mentions. Third, the bigger migrated coins are fading. DUBBLE ($1.35M, -10%, $7.2k 5m) and CATBOT ($3M, $2.6k 5m) are coasting on thin flow, and the old-meme revival is dead along with bingus. My one watch is Chilloween as a FINAL_STRETCH (V1). It's the original seasonal joke at $23k, 59% buys, almost at the $10k 5m bar. I'd take it at 7/10 if holders, bundles and dev share come back clean (top 10 under 25%, bundlers under 10%, dev under 1%). Plan: initials out at 1.5x, 20% trail, sell half if the 5m fades, stop where the curve dip fails. It's only 18 minutes old, so I'm being careful. PASS on LIDA (5m under $10k and no holder data yet, V1/V6), Bu (volume collapsing), DUBBLE and CATBOT (5m too thin for their caps, V6), FARTCOIN (vamp, V3), $LAPTOP (political figure, V13) and REMUS (27% buys, sellers in control).",
+  "age_minutes": 6,
+  "meta_summary": "Meta: fresh launches under an hour old that burn out fast, plus a few cat coins; Halloween is fading (Chilloween -69%, ACT:D dead), so the crawler's Chilloween call is stale. Rising: Lingo ($76k, $26k 5m, 6 min old) and Vivi ($13k curve, $31k 5m). Faded: Samba, Bu, OTC. Cats: Vivi, CATBOT, GATO. Older migrated coins coasting except DUBBLE ($1.46M, +21%, $10.9k 5m, 59% buys). Trades: DUBBLE MIGRATED at 7/10 if holders are clean (initials 1.5x, 20% trail, half off on volume fade); Lingo at 6/10 max, small size, only once holder data loads, 30-min time stop. PASS: Vivi (sniping, V5), Chilloween/Bu/OTC (volume collapsing), CATBOT/GATO/STONKLANA/jeff/shibana (thin 5m, V6), REMUS (3% buys), $LAPTOP (political figure, V13).",
   "top_narratives": [
    "app",
    "tokenized",
@@ -554,34 +554,34 @@
    "times"
   ],
   "trending_categories": [
-   "Pons Launchpad",
-   "Airdropped Tokens by NFT Projects",
-   "IP Meme",
    "The Boy\u2019s Club",
    "Frog-Themed",
-   "Solana Meme"
+   "Airdropped Tokens by NFT Projects",
+   "IP Meme",
+   "AI Applications",
+   "Yield Farming"
   ],
   "trending_coins": [
    "AXIS",
-   "PEPE",
    "NEAR",
-   "PEARL",
-   "BTC",
-   "SOL",
+   "PEPE",
    "QTC",
-   "AERO",
-   "PENGU",
+   "BTC",
+   "PEARL",
    "LTC",
-   "HYPE",
    "LIT",
+   "GRAM",
+   "SOL",
    "SUI",
    "Q",
-   "PONS"
+   "PENGU",
+   "RAY",
+   "ETH"
   ],
   "hot_tickers": [
    {
     "ticker": "$LAPTOP",
-    "mentions": 2
+    "mentions": 3
    },
    {
     "ticker": "$NETWORK",
@@ -590,6 +590,10 @@
    {
     "ticker": "$PUMPKINU",
     "mentions": 2
+   },
+   {
+    "ticker": "$TRUMP",
+    "mentions": 1
    },
    {
     "ticker": "$MT",
@@ -614,9 +618,9 @@
   ],
   "headlines": [
    "Faster Solana slots fail to stop memecoin bot snipers",
-   "Top 6 memecoins to check out in October 2026",
    "Former Doom Developer Could Be in Trouble as Bethesda Goes After Doom Memecoin",
    "Visa to close Crossmint memecoin rewards loophole following The Block investigation: report",
+   "Top 6 memecoins to check out in October 2026",
    "Hunter Biden lashes out after $LAPTOP meme coin collapse"
   ],
   "scan_movers": [
@@ -645,40 +649,64 @@
     "age_hours": 18.3
    },
    {
-    "symbol": "Chilloween",
-    "name": "Chilloween",
-    "ca": "Ac6PLXgeP3eK1ak9CyNR8actDgA3vxBhRq1Ao1frDajq",
-    "dex": "pumpswap",
-    "mcap_usd": 14547,
-    "vol_5m": 1871,
-    "vol_1h": 87111,
-    "change_1h": -63.09,
-    "buy_ratio_5m": 0.48,
-    "age_hours": 0.9
+    "symbol": "STONKLANA",
+    "name": "STONKLANA",
+    "ca": "GF74fBfcaeLjUiUwKpRiUbvMQtTvNyzMoo6KNyyqNyk6",
+    "dex": "raydium",
+    "mcap_usd": 783900,
+    "vol_5m": 42263,
+    "vol_1h": 109634,
+    "change_1h": 49.67,
+    "buy_ratio_5m": 0.55,
+    "age_hours": 21.1
    },
    {
     "symbol": "Samba",
     "name": "The Runner",
     "ca": "53vCabTQafbRBwRqqGtbHQeTKPZAWE4KU9KVoB1Ppump",
     "dex": "pumpfun",
-    "mcap_usd": 11360,
-    "vol_5m": 7128,
-    "vol_1h": 81932,
-    "change_1h": 236,
-    "buy_ratio_5m": 0.56,
-    "age_hours": 0.6
+    "mcap_usd": 4505,
+    "vol_5m": 183,
+    "vol_1h": 94008,
+    "change_1h": 33.35,
+    "buy_ratio_5m": 0.29,
+    "age_hours": 0.9
+   },
+   {
+    "symbol": "clanker",
+    "name": "clanker",
+    "ca": "6yhYZztNzGSCiG1sgCykmk11xgSk5PgAhqwJ4btwpump",
+    "dex": "pumpfun",
+    "mcap_usd": 3077,
+    "vol_5m": 1,
+    "vol_1h": 82453,
+    "change_1h": 3.33,
+    "buy_ratio_5m": 0.33,
+    "age_hours": 1.0
    },
    {
     "symbol": "Bu",
     "name": "Bu",
     "ca": "Bnxttv7gQHYP1n9JyXuiATWKtxxJPc6sJJzeRFVBuuu",
     "dex": "pumpswap",
-    "mcap_usd": 28114,
-    "vol_5m": 3696,
-    "vol_1h": 75833,
-    "change_1h": -22.51,
-    "buy_ratio_5m": 0.64,
-    "age_hours": 0.7
+    "mcap_usd": 16937,
+    "vol_5m": 2714,
+    "vol_1h": 81583,
+    "change_1h": -53.31,
+    "buy_ratio_5m": 0.6,
+    "age_hours": 0.9
+   },
+   {
+    "symbol": "Chilloween",
+    "name": "Chilloween",
+    "ca": "Ac6PLXgeP3eK1ak9CyNR8actDgA3vxBhRq1Ao1frDajq",
+    "dex": "pumpswap",
+    "mcap_usd": 9809,
+    "vol_5m": 3361,
+    "vol_1h": 77420,
+    "change_1h": -68.75,
+    "buy_ratio_5m": 0.61,
+    "age_hours": 1.0
    },
    {
     "symbol": "CATBOT",
@@ -693,16 +721,28 @@
     "age_hours": 12.6
    },
    {
+    "symbol": "Lingo",
+    "name": "New Lingo",
+    "ca": "D1kVFsf3cLN8CWv1Zmz6H3ZSWsB1jGrWxaqgJxcQpump",
+    "dex": "pumpswap",
+    "mcap_usd": 76059,
+    "vol_5m": 26140,
+    "vol_1h": 35261,
+    "change_1h": 83.89,
+    "buy_ratio_5m": 0.67,
+    "age_hours": 0.1
+   },
+   {
     "symbol": "REMUS",
     "name": "Remus",
     "ca": "CA8q2mkYWZnUNqYmf6pxyxAPZsmSe2EG9P7hHMW5pump",
     "dex": "pumpswap",
-    "mcap_usd": 421469,
-    "vol_5m": 1195,
-    "vol_1h": 36819,
-    "change_1h": 2.5,
+    "mcap_usd": 400614,
+    "vol_5m": 736,
+    "vol_1h": 35174,
+    "change_1h": -7.32,
     "buy_ratio_5m": 0.03,
-    "age_hours": 130.4
+    "age_hours": 130.6
    },
    {
     "symbol": "GATO",
@@ -717,40 +757,28 @@
     "age_hours": 1557.0
    },
    {
-    "symbol": "cat3",
-    "name": "cat3",
-    "ca": "2HhAf32vdmbKWXJcBhTLR4GarkwocJvfJhqBPFv6fkW1",
+    "symbol": "Vivi",
+    "name": "The Gagging Cat",
+    "ca": "9pcNxPpqmAgf8DvmqX29v29GLJ3dVhFTbtbLntJipump",
+    "dex": "pumpfun",
+    "mcap_usd": 12970,
+    "vol_5m": 31447,
+    "vol_1h": 31447,
+    "change_1h": 222,
+    "buy_ratio_5m": 0.65,
+    "age_hours": 0.0
+   },
+   {
+    "symbol": "shibana",
+    "name": "shibana",
+    "ca": "25XYntzwGpubUjgJPTJgv5qKd3Kfp9n5tKKRZAVipump",
     "dex": "pumpswap",
-    "mcap_usd": 2231,
-    "vol_5m": 0,
-    "vol_1h": 18741,
-    "change_1h": -94.36,
-    "buy_ratio_5m": 0.0,
-    "age_hours": 1.0
-   },
-   {
-    "symbol": "ACT:D",
-    "name": "Act D: The Doomsday",
-    "ca": "3MRyD7DK84NmyB9KCnZy3CJcU1Q9TVf5m3fK16kqpump",
-    "dex": "pumpfun",
-    "mcap_usd": 6493,
-    "vol_5m": 113,
-    "vol_1h": 12929,
-    "change_1h": -0.82,
-    "buy_ratio_5m": 0.43,
-    "age_hours": 1.3
-   },
-   {
-    "symbol": "LIDA",
-    "name": "Lida Bida Boata Butt",
-    "ca": "fT952tuMioNtSCL1sYcuzoWfQpoU9yRzcpLgHpEpump",
-    "dex": "pumpfun",
-    "mcap_usd": 26121,
-    "vol_5m": 39,
-    "vol_1h": 12129,
-    "change_1h": 15.52,
-    "buy_ratio_5m": 0.5,
-    "age_hours": 1.7
+    "mcap_usd": 86345,
+    "vol_5m": 1184,
+    "vol_1h": 12437,
+    "change_1h": 10.49,
+    "buy_ratio_5m": 0.33,
+    "age_hours": 12.6
    },
    {
     "symbol": "STEVE",
@@ -769,36 +797,12 @@
     "name": "jeff",
     "ca": "HAsTKXYvv65zM7J6Cu5o5PcZsiKMQYo5oz4WPjgqwP6k",
     "dex": "raydium",
-    "mcap_usd": 1495644,
-    "vol_5m": 762,
-    "vol_1h": 10570,
-    "change_1h": 13.92,
-    "buy_ratio_5m": 0.53,
-    "age_hours": 32.6
-   },
-   {
-    "symbol": "shibana",
-    "name": "shibana",
-    "ca": "25XYntzwGpubUjgJPTJgv5qKd3Kfp9n5tKKRZAVipump",
-    "dex": "pumpswap",
-    "mcap_usd": 77608,
-    "vol_5m": 815,
-    "vol_1h": 9787,
-    "change_1h": 6.46,
-    "buy_ratio_5m": 0.52,
-    "age_hours": 12.3
-   },
-   {
-    "symbol": "HASHTAG",
-    "name": "Hashtag",
-    "ca": "4GgEwQvdSMbMnuw2xqVegZvp4FTt5gVmLSE6jVZApump",
-    "dex": "pumpswap",
-    "mcap_usd": 26104,
-    "vol_5m": 402,
-    "vol_1h": 9106,
-    "change_1h": -43.66,
-    "buy_ratio_5m": 0.38,
-    "age_hours": 2.4
+    "mcap_usd": 1421111,
+    "vol_5m": 1084,
+    "vol_1h": 11675,
+    "change_1h": 9.09,
+    "buy_ratio_5m": 0.22,
+    "age_hours": 32.8
    }
   ]
  },
@@ -808,38 +812,16 @@
   "equity_usd": 99.93,
   "progress_pct": 10.0,
   "days_left": 6.8,
-  "needed_daily_growth_pct": 40.2
+  "needed_daily_growth_pct": 40.3
  },
  "last_scan": {
-  "at": 1793266444.857852,
-  "tokens": 5,
-  "pairs": 5,
+  "at": 1793267349.042065,
+  "tokens": 1,
+  "pairs": 1,
   "passed_market_filters": 0,
   "researched": 0
  },
  "recent_looks": [
-  {
-   "ts": "2026-10-29T08:06:08Z",
-   "symbol": "STONKLANA",
-   "ca": "GF74fBfcaeLjUiUwKpRiUbvMQtTvNyzMoo6KNyyqNyk6",
-   "setup": "MIGRATED",
-   "mcap_usd": 499711,
-   "vol_5m": 2368,
-   "outcome": "PASS",
-   "conviction": 2,
-   "reason": "PASS: the price is 99.7% off its peak, 5m volume is $2.4k, and sells outnumber buys 25 to 11. Nobody is buying this. (V1, V6)"
-  },
-  {
-   "ts": "2026-10-29T08:12:28Z",
-   "symbol": "LIDA",
-   "ca": "fT952tuMioNtSCL1sYcuzoWfQpoU9yRzcpLgHpEpump",
-   "setup": "FINAL_STRETCH",
-   "mcap_usd": 22722,
-   "vol_5m": 4403,
-   "outcome": "PASS",
-   "conviction": 4,
-   "reason": "PASS: top 10 holders have 24.5%, just under the 25% line, 5m volume is $4.4k against the $10k bar, 11 coins share the ticker and there's no X to check. A joke coin 26 minutes old, nothing proven. (V1, V6, V13)"
-  },
   {
    "ts": "2026-10-29T08:34:41Z",
    "symbol": "Chilloween",
@@ -982,6 +964,28 @@
    "outcome": "REJECT",
    "conviction": null,
    "reason": "Dev holds 3.3% (>1%) (V13, V17)"
+  },
+  {
+   "ts": "2026-10-29T09:41:40Z",
+   "symbol": "Lingo",
+   "ca": "D1kVFsf3cLN8CWv1Zmz6H3ZSWsB1jGrWxaqgJxcQpump",
+   "setup": "MIGRATED",
+   "mcap_usd": 76059,
+   "vol_5m": 26140,
+   "outcome": "PASS",
+   "conviction": 4,
+   "reason": "PASS: 7 minutes old, 4% off the high, bundles unverified, 11 coins share the ticker. I don't chase this; I wait for the 0.618 retest. (V1, V3, V6)"
+  },
+  {
+   "ts": "2026-10-29T09:48:23Z",
+   "symbol": "STONKLANA",
+   "ca": "GF74fBfcaeLjUiUwKpRiUbvMQtTvNyzMoo6KNyyqNyk6",
+   "setup": "MIGRATED",
+   "mcap_usd": 783900,
+   "vol_5m": 42263,
+   "outcome": "PASS",
+   "conviction": 3,
+   "reason": "PASS: the data contradicts itself, I can't confirm this is the original out of 22 STONKLANA tickers, and 47 insider networks showed up. Can't verify the right token (V1, V3, V13)."
   }
  ],
  "scorecard": {
