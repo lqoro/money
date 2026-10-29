@@ -45,6 +45,11 @@ class Config:
     bribe_sol: float = 0.001  # Jito tip / bribe per tx (V2)
     base_slippage_pct: float = 1.5  # spread/latency cost on top of price impact
     max_slippage_pct: float = 20.0  # sell slippage cap (V17)
+    # Entry fee check (agent/sizing.py fee_check): the first profit target must pay the
+    # round trip this many times over, and a round trip may cost at most this % of the
+    # position. Owner-steerable only, so a learned rule can't tighten it past the floor.
+    min_target_cost_multiple: float = 3.0
+    max_round_trip_cost_pct: float = 20.0
 
     # --- Discovery / market filters (guide Part 1 §3 and §5) ---------------
     bond_mcap_sol: float = 410.0  # pump.fun graduation market cap in SOL (~$41k at $100 SOL)
@@ -237,4 +242,8 @@ STEERABLE: dict[str, tuple[float, float]] = {
     "bribe_sol": (0, 0.05),
     "base_slippage_pct": (0, 10),
     "max_slippage_pct": (5, 50),
+    # The entry fee check. The bounds keep it passable: a round trip can't cost less
+    # than ~5.5% plus network fees, so the ceiling never goes below 10%.
+    "min_target_cost_multiple": (1, 6),
+    "max_round_trip_cost_pct": (10, 50),
 }
