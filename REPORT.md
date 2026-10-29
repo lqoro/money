@@ -1,13 +1,13 @@
 # Trencher live report
 
-Updated 2026-10-29T08:03:45Z (paper trading, never real money)
+Updated 2026-10-29T08:18:56Z (paper trading, never real money)
 
 - Equity: $99.93 (-0.1% vs $100 start)
-- Goal: $1,000 by 2026-11-05 05:03Z (a stretch, survival first): at 10% of it, 6.9 days left, needs +39.8% a day from here
+- Goal: $1,000 by 2026-11-05 05:03Z (a stretch, survival first): at 10% of it, 6.9 days left, needs +39.9% a day from here
 - Closed trades: 7, 2 wins
 - Fees paid: $4.16 (axiom $0.43, network $3.26, pool $0.35), plus $0.62 lost to slippage
 - New trades: on
-- Brain: subscription, 300 calls and 0 plan-limit hits in 48h
+- Brain: subscription, 302 calls and 0 plan-limit hits in 48h
 
 ## Scorecard (after fees)
 - 7 closed, 2 won (29%), net $-0.07
@@ -67,9 +67,13 @@ Updated 2026-10-29T08:03:45Z (paper trading, never real money)
   CA `Bv1a7cEj5aRnJQhMw4kRQqAFesMSd5LwcDnUzq52BMmr`
 
 ## Last scan
-- 08:02Z: 28 coins, 27 with pairs, 0 passed the market filters, 0 researched
+- 08:18Z: 1 coins, 0 with pairs, 0 passed the market filters, 0 researched
 
 ## Coins it looked at, and why it passed
+- 08:12Z LIDA (FINAL_STRETCH, $22,722 mcap, $4,403 5m vol): PASS at conviction 4, PASS: top 10 holders have 24.5%, just under the 25% line, 5m volume is $4.4k against the $10k bar, 11 coins share the ticker and there's no X to check. A joke coin 26 minutes old, nothing proven. (V1, V6, V13)  
+  CA `fT952tuMioNtSCL1sYcuzoWfQpoU9yRzcpLgHpEpump`
+- 08:06Z STONKLANA (MIGRATED, $499,711 mcap, $2,368 5m vol): PASS at conviction 2, PASS: the price is 99.7% off its peak, 5m volume is $2.4k, and sells outnumber buys 25 to 11. Nobody is buying this. (V1, V6)  
+  CA `GF74fBfcaeLjUiUwKpRiUbvMQtTvNyzMoo6KNyyqNyk6`
 - 08:01Z PODCAT (MIGRATED, $158,758 mcap, $42,300 5m vol): PASS at conviction 4, PASS. The blocker is entry location. PODCAT is 11 minutes old, up 278% in the hour and only 6% off its high, bundles are unverified, and 4 bigger coins share the ticker. That's the CATCULUS setup again. Watch it for a 0.618 retest instead (V1, V3, V5).  
   CA `6xcLnAebDFLgPDBrVrGzHEcMvjVQfMW6yQL4NvECpump`
 - 08:01Z cat3 (FINAL_STRETCH, $34,686 mcap, $53,580 5m vol): REJECT, RugCheck danger: Creator history of rugged tokens  
@@ -86,10 +90,6 @@ Updated 2026-10-29T08:03:45Z (paper trading, never real money)
   CA `Bnxttv7gQHYP1n9JyXuiATWKtxxJPc6sJJzeRFVBuuu`
 - 07:49Z DUBBLE (DIP, $1,510,859 mcap, $9,918 5m vol): REJECT, Dip with fading attention is a falling knife, not a dip  
   CA `FEXGegqeVm5vZurqyC7qsmkLqWspVV1ACb9bbLvcpump`
-- 07:31Z GLITCH (MIGRATED, $2,679,924 mcap, $2,211 5m vol): REJECT, Top 10 hold 26.9% ex-pool (>25%) (V13)  
-  CA `8Xg89xT8Ve34sKiYqYuMs46mycREsCA2F362UscRpump`
-- 07:28Z bingus (FINAL_STRETCH, $29,059 mcap, $7,819 5m vol): REJECT, Top 10 hold 27.7% ex-pool (>25%) (V13)  
-  CA `6jzcLmTR7XvQinzuRYA26RGXC4TGkH9fNpjSyQywpump`
 
 ## Recent lessons
 - [2026-10-28 14:15] Expected: a $1.2M dip 47% off the $2.3M peak, with $17.8k 5m volume and buys outnumbering sells 3:1, to retest $2M while the joke still had a crowd (V1 buys-on-dip, V6). What happened: it peaked at 1.09x, then went flat and got time-stopped at 60 minutes with market cap basically unchanged (-0.6%), but I still lost 15.4% because fees and slippage ate about 9% of a $3.33 position, and the rest of the gap is execution I can't see in the record. Rule: on DIP setups, enter only after the dip makes a higher low with 5m volume rising (0.86x the hourly average is fading, not holding). Never open a position so small that round-trip friction is over 3%, because a flat chart is a guaranteed loss at that size.
@@ -110,7 +110,7 @@ The meta is fast absurd jokes on everyday objects and names, and they die within
   CA `4GgEwQvdSMbMnuw2xqVegZvp4FTt5gVmLSE6jVZApump`
 - PODCAT: $235,755 1h vol, $158,758 mcap, +278% 1h  
   CA `6xcLnAebDFLgPDBrVrGzHEcMvjVQfMW6yQL4NvECpump`
-- SELLICON: $165,071 1h vol, $1,913 mcap, -99% 1h  
+- SELLICON: $118,993 1h vol, $1,913 mcap, -99% 1h  
   CA `DPb1vNz5wXuYCv27S85zZ8sGh6NTfU6gMYRFYA7Jpump`
 - CATBOT: $93,927 1h vol, $3,201,111 mcap, -0% 1h  
   CA `dyw5fDNv91eknniMG4tGCU1ZrzjuxbpsLiEzih6pump`
