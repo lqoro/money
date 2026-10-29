@@ -1,22 +1,17 @@
 # Trencher live report
 
-Updated 2026-10-29T02:45:18Z (paper trading, never real money)
+Updated 2026-10-29T03:00:25Z (paper trading, never real money)
 
-- Equity: $101.00 (+1.0% vs $100 start)
-- Closed trades: 6, 2 wins
-- Fees paid: $3.93 (axiom $0.40, network $3.06, pool $0.34), plus $0.58 lost to slippage
+- Equity: $99.93 (-0.1% vs $100 start)
+- Closed trades: 7, 2 wins
+- Fees paid: $4.16 (axiom $0.43, network $3.26, pool $0.35), plus $0.62 lost to slippage
 - New trades: on
-- Brain: subscription, 240 calls and 0 plan-limit hits in 48h
+- Brain: subscription, 242 calls and 0 plan-limit hits in 48h
 
 ## Open positions
-- FLOAT (MIGRATED): cost $3.09, 1.19x, fees $0.24  
-  CA `Bv1a7cEj5aRnJQhMw4kRQqAFesMSd5LwcDnUzq52BMmr`
+- none
 
 ## Recent trades
-- 00:43Z BUY FLOATER $2.94, fees $0.27  
-  CA `J7cqsaTuXUavwA3sp238tSpartUfYwDrJAaHuDvypump`
-- 00:46Z BUY CATBOT $3.42, fees $0.27  
-  CA `dyw5fDNv91eknniMG4tGCU1ZrzjuxbpsLiEzih6pump`
 - 01:18Z BUY CPU $3.16, fees $0.24  
   CA `5JbRYEz844bwnKbGx4dRHhrJ6zjrJ194CKdDXtzwgaXo`
 - 01:31Z SELL CATBOT for $2.59, fees $0.26  
@@ -33,6 +28,10 @@ Updated 2026-10-29T02:45:18Z (paper trading, never real money)
   CA `5JbRYEz844bwnKbGx4dRHhrJ6zjrJ194CKdDXtzwgaXo`
 - 02:10Z CLOSE CPU -14% ($-0.43), fees $0.48  
   CA `5JbRYEz844bwnKbGx4dRHhrJ6zjrJ194CKdDXtzwgaXo`
+- 02:49Z SELL FLOAT for $2.33, fees $0.23  
+  CA `Bv1a7cEj5aRnJQhMw4kRQqAFesMSd5LwcDnUzq52BMmr`
+- 02:49Z CLOSE FLOAT -24% ($-0.76), fees $0.48  
+  CA `Bv1a7cEj5aRnJQhMw4kRQqAFesMSd5LwcDnUzq52BMmr`
 
 ## Last closes
 - Something: -15% ($-0.51), time stop: 60 min and only 0.98x  
@@ -47,6 +46,8 @@ Updated 2026-10-29T02:45:18Z (paper trading, never real money)
   CA `J7cqsaTuXUavwA3sp238tSpartUfYwDrJAaHuDvypump`
 - CPU: -14% ($-0.43), time stop: 52 min and only 1.03x  
   CA `5JbRYEz844bwnKbGx4dRHhrJ6zjrJ194CKdDXtzwgaXo`
+- FLOAT: -24% ($-0.76), time stop: 158 min and only 0.92x  
+  CA `Bv1a7cEj5aRnJQhMw4kRQqAFesMSd5LwcDnUzq52BMmr`
 
 ## Recent lessons
 - [2026-10-28 14:15] Expected: a $1.2M dip 47% off the $2.3M peak, with $17.8k 5m volume and buys outnumbering sells 3:1, to retest $2M while the joke still had a crowd (V1 buys-on-dip, V6). What happened: it peaked at 1.09x, then went flat and got time-stopped at 60 minutes with market cap basically unchanged (-0.6%), but I still lost 15.4% because fees and slippage ate about 9% of a $3.33 position, and the rest of the gap is execution I can't see in the record. Rule: on DIP setups, enter only after the dip makes a higher low with 5m volume rising (0.86x the hourly average is fading, not holding). Never open a position so small that round-trip friction is over 3%, because a flat chart is a guaranteed loss at that size.
@@ -55,6 +56,7 @@ Updated 2026-10-29T02:45:18Z (paper trading, never real money)
 - [2026-10-29 01:32] I bought CATBOT back as a $2.0M base retesting toward the $3.46M high. Price only drifted from $2.59M to $2.41M (-7%) and peaked at 1.12x, but I lost -24.3% because $0.62 in fees and slippage on a $3.42 position cost 18% before the coin moved at all. That makes the time stop correct (V1: don't marry a bag), and the real problem was the size. Rule: before any entry, including a buy-back, I estimate round-trip cost and skip the trade if it tops ~5% of size or if the target can't pay several times that cost. I also only re-enter a stopped-out coin when it reclaims the high, not when it bases in the middle of the range.
 - [2026-10-29 02:03] Expected: the FLOATER that had the crowd out of 23 same-ticker coins ($141k 5m volume, 78% buys, clean holders, 34% off the high) would keep climbing toward $500k on the tokenized-stock meta. What happened: it ran to 2.19x, I took initials as planned (V11), and the trailing stop sold the rest at 1.5x from a $255k mcap for +$1.48, but fees and slippage ($0.89) ate about 30% of the $2.94 cost and nearly a third of the gross gain. Next time I keep picking the vamp-field winner by volume and attention (V1, V6) and keep the 2x initials plus 30% trail, but I don't open a position under ~$5 because fixed fees turn a 2x winner into a 1.5x one.
 - [2026-10-29 02:10] Expected: CPU, the clear flow leader with clean holders, to bounce from a 38% dip toward 2x (V1, V13). What happened: it ran to 1.63x, gave it all back, and I time-stopped at 1.03x mcap after 52 min. Fees $0.48 plus slippage $0.09, about 18% of a $3.16 position, turned a flat trade into −13.7%. Next time: the friction gate and the $5 minimum are hard blocks, so no sub-$5 entries even on a good setup. If a MIGRATED dip-buy reaches 1.5x and 5m volume starts fading before 2x, sell half instead of watching it round-trip.
+- [2026-10-29 02:49] I expected FLOAT, the leading tokenized-stock coin, to run from its $1.04M higher-low reclaim toward $3M (V1, V6), and it did reach 1.64x. Then it faded, and I sat past the 45-minute time stop and got out at 158 minutes. Mcap was only down 7%, but I lost 24.5% because $0.56 of fees and slippage ate 18% of a $3.09 position, which broke my own $5-minimum and friction-gate rules. Next time: no entry under $5 or above 5% friction, no exceptions. If a trade gets past 1.5x before initials, move the stop up to break-even plus fees so a 1.6x peak can't turn into a loss (V11: plan the exit before the entry).
 
 ## Meta right now
 It's quiet. Nothing real is running in the trenches. The loudest Solana story is Hunter Biden's $LAPTOP. It fell about 98% on day one and is fading, and a political figure pushed the CA, so it's a hard no, along with every vamp or "revival" of it (V13). The Robinhood/Circle hype is cooling too. The money that is rising is bucket-2 money, not trench money: tokenized stocks and Robinhood Chain, stablecoins/RWA, PEPE and PENGU on CoinGecko trending, and BTC above $81k ahead of the Fed (V8). $MT, $POKERFACE and $SLEEGO are scattered single mentions with no crowd behind them, so I'm not chasing them (V7). The one meta I can see coming is Halloween, three days out. Holiday metas get front-run (V5), so I'm watching for an original, funny spooky coin, like a pumpkin or a frog in a costume that catches the PEPE/frog flow, not a knockoff (V1). It has to be bonded, doing $10k+ in 5-minute volume, with clean holders (V1, V6). Nothing like that has shown up yet, so I'm passing for now.
