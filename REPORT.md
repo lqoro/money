@@ -1,13 +1,13 @@
 # Trencher live report
 
-Updated 2026-10-29T05:31:58Z (paper trading, never real money)
+Updated 2026-10-29T05:47:13Z (paper trading, never real money)
 
 - Equity: $99.93 (-0.1% vs $100 start)
-- Goal: $1,000 by 2026-11-05 05:03Z (a stretch, survival first): at 10% of it, 7 days left, needs +39.1% a day from here
+- Goal: $1,000 by 2026-11-05 05:03Z (a stretch, survival first): at 10% of it, 7 days left, needs +39.2% a day from here
 - Closed trades: 7, 2 wins
 - Fees paid: $4.16 (axiom $0.43, network $3.26, pool $0.35), plus $0.62 lost to slippage
 - New trades: on
-- Brain: subscription, 278 calls and 0 plan-limit hits in 48h
+- Brain: subscription, 280 calls and 0 plan-limit hits in 48h
 
 ## Open positions
 - none
@@ -51,9 +51,11 @@ Updated 2026-10-29T05:31:58Z (paper trading, never real money)
   CA `Bv1a7cEj5aRnJQhMw4kRQqAFesMSd5LwcDnUzq52BMmr`
 
 ## Last scan
-- 05:31Z: 4 coins, 1 with pairs, 0 passed the market filters, 0 researched
+- 05:46Z: 4 coins, 0 with pairs, 0 passed the market filters, 0 researched
 
 ## Coins it looked at, and why it passed
+- 05:38Z SPERM (FINAL_STRETCH, $30,179 mcap, $15,761 5m vol): PASS at conviction 4, PASS: five bigger SPERMs exist, top 10 hold 23% with 15 insider networks, and a conviction of 5 sizes to $2, under my $5 minimum. A vamp still on the bonding curve. (V1, V3, V6)  
+  CA `DFdjJZepcFjERhGmEoJ9QA5dt9rtN6QD8DKNjXNmpump`
 - 05:17Z GATO (MIGRATED, $5,231,704 mcap, $2,318 5m vol): REJECT, Dev holds 3.3% (>1%) (V13, V17)  
   CA `HsprHxBRgiVaQdRf3TnKNuZZtaX9JUSPgMFdAkk6pump`
 - 05:17Z DUBBLE (DIP, $1,994,362 mcap, $5,204 5m vol): REJECT, Dip with fading attention is a falling knife, not a dip  
@@ -75,8 +77,4 @@ Updated 2026-10-29T05:31:58Z (paper trading, never real money)
 - [2026-10-29 02:49] I expected FLOAT, the leading tokenized-stock coin, to run from its $1.04M higher-low reclaim toward $3M (V1, V6), and it did reach 1.64x. Then it faded, and I sat past the 45-minute time stop and got out at 158 minutes. Mcap was only down 7%, but I lost 24.5% because $0.56 of fees and slippage ate 18% of a $3.09 position, which broke my own $5-minimum and friction-gate rules. Next time: no entry under $5 or above 5% friction, no exceptions. If a trade gets past 1.5x before initials, move the stop up to break-even plus fees so a 1.6x peak can't turn into a loss (V11: plan the exit before the entry).
 
 ## Meta right now
-It's quiet. No real trench meta is running. The loudest Solana story is Hunter Biden's $LAPTOP, which crashed about 98% on day one. A political figure pushed that CA, so it's a hard no, and so is every vamp or "revival" of it (V13). The Robinhood/Circle memecoin hype is fading too; the "$443M frenzy dissolves into nothing" headline says it all. What's rising is bucket-2 money, not trench money: tokenized stocks and Robinhood Chain, stablecoins/RWA, AI agents, PEPE and PENGU on CoinGecko trending, frog-themed coins as a trending category, and BTC strength ahead of the Fed (V8). The one meta I can see coming is Halloween, three days out, and traders front-run holiday metas (V5). $PUMPKINU has 3 mentions, so it goes on watch, not in my bag, because mentions are attention, not a buy signal (V7). The coin that would ride this is an original, funny spooky meme that also catches the frog/PEPE flow, like a pumpkin or a frog in a costume, not a knockoff (V1). It still has to be bonded, do $10k+ in 5-minute volume and have clean holders (V1, V6). Until that shows up: PASS.
-
-## Moving most in its scan (1h volume)
-- UBER: $13 1h vol, $27,467 mcap, +1% 1h  
-  CA `JBB3eqEBLQJcgSMnECtVFx9iWFWF1n3J7GFHenA6pump`
+The trenches really are quiet right now. My scanner found only one mover, and it's dead. KING (KingPad, about $48k cap, 1.7h old) shows $12.4k of volume over the hour but only $513 in the last 5 minutes. It's down 11.6% on the hour and buyers are only 43% of the 5m flow. That's a coin people are leaving, and you can't build a theme out of one coin. Even the crawler's own summary (which is untrusted web text) says no trench meta is running. What it does show is bucket-2 money: tokenized stocks and Robinhood Chain, PEPE and PENGU, AI and frog categories (V8). $LAPTOP is a hard no because a political figure pushed it, and that goes for every vamp of it too (V13). Halloween is the only meta I can see coming and traders run holiday metas early (V5), so $PUMPKINU (3 mentions) goes on watch only. Mentions are attention, not a buy signal (V7). No paper trades right now. PASS on KING: blocker is 5m volume of $513, under the $2k dead line (V1, V6, V13). It's also a "pad"-named coin with no meme. I'll buy when an original spooky or frog meme bonds with $10k+ 5m volume and clean holders.
