@@ -1,13 +1,13 @@
 # Trencher live report
 
-Updated 2026-10-29T21:44:23Z (paper trading, never real money)
+Updated 2026-10-29T21:59:25Z (paper trading, never real money)
 
 - Equity: $96.93 (-3.1% vs $100 start)
-- Goal: $1,000 by 2026-11-05 05:03Z (a stretch, survival first): at 9.7% of it, 6.3 days left, needs +44.8% a day from here
+- Goal: $1,000 by 2026-11-05 05:03Z (a stretch, survival first): at 9.7% of it, 6.3 days left, needs +44.9% a day from here
 - Closed trades: 9, 2 wins
 - Fees paid: $5.24 (axiom $0.56, network $4.04, pool $0.50), plus $0.82 lost to slippage
 - New trades: on
-- Brain: subscription, 484 calls and 0 plan-limit hits in 48h
+- Brain: subscription, 487 calls and 0 plan-limit hits in 48h
 
 ## Scorecard (after fees)
 - 9 closed, 2 won (22%), net $-3.07
@@ -71,9 +71,19 @@ Updated 2026-10-29T21:44:23Z (paper trading, never real money)
   CA `ANVLA6eKiAq4nstD2Sg3SZhfVkSEwfnGccn12UQWpump`
 
 ## Last scan
-- 21:43Z: 1 coins, 0 with pairs, 0 passed the market filters, 0 researched
+- 21:58Z: 3 coins, 2 with pairs, 0 passed the market filters, 0 researched
 
 ## Coins it looked at, and why it passed
+- 21:55Z JET (MIGRATED, $39,390 mcap, $3,599 5m vol): REJECT, Top 10 hold 38.4% ex-pool (>25%) (V13)  
+  CA `3uAfWxkhj7SrTzpwvRAyxmupzQj3ds4zsHffHgNhQsBn`
+- 21:53Z HEXN (DIP, $555,727 mcap, $22,202 5m vol): PASS at conviction 3, PASS: I got stopped out of HEXN today and it's still below my stop price with no higher low and 0.99x volume. Same setup as the one that just cost me 36%. (V1)  
+  CA `ANVLA6eKiAq4nstD2Sg3SZhfVkSEwfnGccn12UQWpump`
+- 21:53Z SI (DIP, $131,446 mcap, $39,384 5m vol): PASS at conviction 3, PASS: SI is at $131k, below the $160k where my stop sold it. It hasn't reclaimed anything, 5m volume is at 0.61x its hourly pace, and this is the first bounce, not a higher low. That's a knife, not a buy-back (V1).  
+  CA `6zuDiAw3NviBwcLZfTztHJgtCmeNWfyFxYVoXtNYpump`
+- 21:49Z ETF (MIGRATED, $63,544 mcap, $8,446 5m vol): REJECT, RugCheck danger: Large Amount of LP Unlocked 100.00%  
+  CA `2orqEGSdkm5BMmhdM8TpKCpACk32a3Zaj3Lef7ceqsc6`
+- 21:48Z WASTED (MIGRATED, $297,888 mcap, $216,980 5m vol): PASS at conviction 4, PASS: a 7-minute-old coin sitting 1.4% under its high, up 435% this hour, and sellers already outnumber buyers (84/75). That's chasing, not entering (V1, V6, and my SI lesson).  
+  CA `2BTpBX5ktiFjfHxwcLNj3uftawbm9AT7KUg46aCFpump`
 - 21:41Z three (MIGRATED, $551,115 mcap, $2,637 5m vol): PASS at conviction 3, PASS — $2.6k 5m volume on a 6-month-old AI-claims coin, and one cluster holds 9.7%. No flow, no edge, and the bundle can dump on me. (V1, V3, V6)  
   CA `FeMbDoX7R1Psc4GEcvJdsbNbZA3bfztcyDCatJVJpump`
 - 21:40Z GATO (MIGRATED, $4,474,574 mcap, $3,670 5m vol): REJECT, Dev holds 3.3% (>1%) (V13, V17)  
@@ -84,29 +94,19 @@ Updated 2026-10-29T21:44:23Z (paper trading, never real money)
   CA `5wsjHxT5nW5jQuVupXUNnYszF3WoWCfGGk9LMcsCJzY8`
 - 21:40Z HYPEFAUCET (MIGRATED, $44,062 mcap, $12,331 5m vol): PASS at conviction 3, PASS: a 10-minute-old HYPE spin-off that's down 20% on the 5m right after bonding. Buys and sells are even, top 10 hold 21% and a bigger coin has the ticker. That's a post-bond dump, not a pullback. (V1, V6)  
   CA `HyPESTUwRbb21wH4Qyw9ayKhb9AC7bWciqGbnGp7dRip`
-- 21:37Z HI (FINAL_STRETCH, $32,987 mcap, $30,492 5m vol): PASS at conviction 2, PASS: this is a vamp. The original Hack Inu (8bbp…pump) has already migrated at $70k with $58k of 5m volume, and this copy at $33k has 1,323 sells against 482 buys. (V1, V2)  
-  CA `2UKT7TrqzMWK1X5CWmWwoiBCGFHfYuk4yjjUsbnzpump`
-- 21:37Z HYPEINU (DIP, $146,529 mcap, $175,052 5m vol): REJECT, LP only 84% burned/locked (V2, V3, V6)  
-  CA `6eccVGkbi8cvAYBGzfDmUwFYrMj8eGZF2xyZqZLkpump`
-- 21:35Z Hackinu (MIGRATED, $70,206 mcap, $58,463 5m vol): REJECT, Bundles: 2 linked wallet cluster(s) hold 22.0% of supply (>20%) (V17)  
-  CA `8bbpPt3fix4wiNo3j2SZJ5zR1wYDNeJ84RWbVFDZpump`
-- 21:34Z HYPED (FINAL_STRETCH, $20,641 mcap, $4,481 5m vol): REJECT, Top 10 hold 25.1% ex-pool (>25%) (V13)  
-  CA `GTukywV127Qw35tYD29wTxpKMNbMJ5DYdodz3xK2pump`
-- 21:32Z WTAIL (MIGRATED, $89,341 mcap, $3,442 5m vol): REJECT, RugCheck danger: Creator history of rugged tokens  
-  CA `HBFxk72r4xVqhT8yK8ZFXEEGvpfkoeeSTQXiewZP7SZM`
 
 ## What its skips did next (last 48h)
 A skip "ran" if the coin reached the first target (1.5x) from the skip price before a 20% drop, "dumped" if the drop came first. Sampled every 10 min, followed 6h.
-- near the high / chasing: blocked 2, ran 0, dumped 0, flat 0, open 2 (too few played out to judge)
-- bundles over the line: blocked 2, ran 0, dumped 1, flat 0, open 1 (too few played out to judge)
-- other: blocked 2, ran 0, dumped 0, flat 0, open 2 (too few played out to judge)
-- RugCheck danger: blocked 2, ran 1, dumped 0, flat 0, open 1 (too few played out to judge)
+- falling knife / no higher low: blocked 3, ran 0, dumped 0, flat 0, open 3 (too few played out to judge)
+- near the high / chasing: blocked 3, ran 0, dumped 0, flat 0, open 3 (too few played out to judge)
+- RugCheck danger: blocked 3, ran 1, dumped 0, flat 0, open 2 (too few played out to judge)
   - ran: HYPEINU up to 1.57x  
     CA `6eccVGkbi8cvAYBGzfDmUwFYrMj8eGZF2xyZqZLkpump`
+- bundles over the line: blocked 2, ran 0, dumped 1, flat 0, open 1 (too few played out to judge)
+- other: blocked 2, ran 0, dumped 1, flat 0, open 1 (too few played out to judge)
+- top 10 over 25%: blocked 2, ran 0, dumped 0, flat 0, open 2 (too few played out to judge)
 - vamp / copycat: blocked 2, ran 0, dumped 1, flat 0, open 1 (too few played out to judge)
-- falling knife / no higher low: blocked 1, ran 0, dumped 0, flat 0, open 1 (too few played out to judge)
 - crowd leaving / fading volume: blocked 1, ran 0, dumped 0, flat 0, open 1 (too few played out to judge)
-- top 10 over 25%: blocked 1, ran 0, dumped 0, flat 0, open 1 (too few played out to judge)
 - dev share over 1%: blocked 1, ran 0, dumped 0, flat 0, open 1 (too few played out to judge)
 - holders or bundles unverified: blocked 1, ran 0, dumped 0, flat 0, open 1 (too few played out to judge)
 
@@ -128,13 +128,13 @@ A skip "ran" if the coin reached the first target (1.5x) from the skip price bef
 The HYPE joke is still the meta, but only the newest coins are getting buyers. HYPERCHAN ($78k on the 5m, +564% on the hour, 87% buys) and HYPERDUEL are live; HYPERCAT, HyPepe and HYPEHOUSE are dying (-54% to -61% on the hour). Most coins under an hour old are getting dumped (ASSAY -94%, FACEPALM and AgenC near zero volume). The exception is SI on the bonding curve ($32k on the 5m). Older migrated coins are holding pace: HEXN ($1.08M cap, $21k on the 5m, 82% buys), HOUSEWORM and STANK. No holder, dev or bundle data yet, so these are holder checks first. HEXN is a MIGRATED setup at conviction 7 if the checks pass (initials at 1.5x, 20% trail, sell half when the 5m fades, break-even stop at 1.3x). HYPERCHAN is 5-6 at most and only on a pullback, because it's chasing snipers on lagged data (V5). SI is watch-only until it gets through the pre-bond dump. Passes: HYPEHOUSE, ASSAY, HyPepe, FACEPALM and AgenC (collapsing), HYPERCAT (crowd leaving), three.ws (old, low volume, no edge), $LAPTOP (politician rule, V13). I ignored the crawler's summary because it uses stale numbers.
 
 ## Moving most in its scans, last 30 min (1h volume)
-- SI: $565,483 1h vol, $218,582 mcap, +261% 1h  
+- SI: $777,781 1h vol, $131,446 mcap, +124% 1h  
   CA `6zuDiAw3NviBwcLZfTztHJgtCmeNWfyFxYVoXtNYpump`
 - HYPEINU: $550,208 1h vol, $146,529 mcap, +234% 1h  
   CA `6eccVGkbi8cvAYBGzfDmUwFYrMj8eGZF2xyZqZLkpump`
 - HYPERCHAN: $455,978 1h vol, $338,532 mcap, +6% 1h  
   CA `BrsZa8LYyBuD4jjkzHCFzjacgtXCZSn9kuDFdeitpump`
-- HEXN: $259,526 1h vol, $732,807 mcap, -19% 1h  
+- WASTED: $415,725 1h vol, $297,888 mcap, +435% 1h  
+  CA `2BTpBX5ktiFjfHxwcLNj3uftawbm9AT7KUg46aCFpump`
+- HEXN: $270,409 1h vol, $555,727 mcap, -45% 1h  
   CA `ANVLA6eKiAq4nstD2Sg3SZhfVkSEwfnGccn12UQWpump`
-- ASSAY: $166,294 1h vol, $2,088 mcap, -95% 1h  
-  CA `C5hLhhd5MivJ8m2MTQjB9A2nmuBymRzYhyRpeRMMpump`
