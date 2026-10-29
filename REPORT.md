@@ -1,13 +1,13 @@
 # Trencher live report
 
-Updated 2026-10-29T06:47:59Z (paper trading, never real money)
+Updated 2026-10-29T07:03:07Z (paper trading, never real money)
 
 - Equity: $99.93 (-0.1% vs $100 start)
-- Goal: $1,000 by 2026-11-05 05:03Z (a stretch, survival first): at 10% of it, 6.9 days left, needs +39.4% a day from here
+- Goal: $1,000 by 2026-11-05 05:03Z (a stretch, survival first): at 10% of it, 6.9 days left, needs +39.5% a day from here
 - Closed trades: 7, 2 wins
 - Fees paid: $4.16 (axiom $0.43, network $3.26, pool $0.35), plus $0.62 lost to slippage
 - New trades: on
-- Brain: subscription, 292 calls and 0 plan-limit hits in 48h
+- Brain: subscription, 293 calls and 0 plan-limit hits in 48h
 
 ## Scorecard (after fees)
 - 7 closed, 2 won (29%), net $-0.07
@@ -67,9 +67,11 @@ Updated 2026-10-29T06:47:59Z (paper trading, never real money)
   CA `Bv1a7cEj5aRnJQhMw4kRQqAFesMSd5LwcDnUzq52BMmr`
 
 ## Last scan
-- 06:47Z: 2 coins, 0 with pairs, 0 passed the market filters, 0 researched
+- 07:02Z: 1 coins, 0 with pairs, 0 passed the market filters, 0 researched
 
 ## Coins it looked at, and why it passed
+- 06:51Z SELLICON (MIGRATED, $161,561 mcap, $38,241 5m vol): PASS at conviction 4, PASS — 16-minute-old coin at its all-time high with 5 insider networks and no bundle data. That's buying into the bundle's exit. On watch for the $85–100k 0.618 retest (V1, V3, V5).  
+  CA `DPb1vNz5wXuYCv27S85zZ8sGh6NTfU6gMYRFYA7Jpump`
 - 06:42Z Steve (MIGRATED, $142,565 mcap, $25,511 5m vol): REJECT, Dev holds 1.1% (>1%) (V13, V17)  
   CA `Fxyj1MSfyE8PCsVUWmXTHCWmCKFK7dkvgkd6HvuHpump`
 - 06:38Z STONKLANA (MIGRATED, $414,577 mcap, $2,878 5m vol): PASS at conviction 2, PASS: down 99.7% from a claimed $156M peak, 47 insider networks and 18 coins sharing the ticker. That's a corpse, not a dip (V6, V13, V17).  
@@ -88,8 +90,6 @@ Updated 2026-10-29T06:47:59Z (paper trading, never real money)
   CA `FEXGegqeVm5vZurqyC7qsmkLqWspVV1ACb9bbLvcpump`
 - 06:18Z STEVE (MIGRATED, $42,448 mcap, $51,518 5m vol): PASS at conviction 3, PASS — 7-minute-old Elon-tweet vamp in a 26-coin same-ticker field, top 10 at 21% with 4 insider networks, already down 21% on the 5m. Exit liquidity for the snipers. (V1, V6, V13)  
   CA `FMzQfjhqGnMTB56Z6ie9Muz2BzSKbGUwB2wwS4Dqex4C`
-- 06:18Z SPERM (MIGRATED, $196,914 mcap, $65,360 5m vol): PASS at conviction 3, PASS. The main blocker: two bigger tokens already use this ticker, so this one isn't the leader. It's also 21 minutes old, falling off a peak set minutes ago, and shows 9 insider networks. I'm not buying a falling knife in a vamp field (V1, V2, V13).  
-  CA `GfrirM4enfibWvniYM9Ca9Tk4GQQ9qFQax1SRbwBpump`
 
 ## Recent lessons
 - [2026-10-28 14:15] Expected: a $1.2M dip 47% off the $2.3M peak, with $17.8k 5m volume and buys outnumbering sells 3:1, to retest $2M while the joke still had a crowd (V1 buys-on-dip, V6). What happened: it peaked at 1.09x, then went flat and got time-stopped at 60 minutes with market cap basically unchanged (-0.6%), but I still lost 15.4% because fees and slippage ate about 9% of a $3.33 position, and the rest of the gap is execution I can't see in the record. Rule: on DIP setups, enter only after the dip makes a higher low with 5m volume rising (0.86x the hourly average is fading, not holding). Never open a position so small that round-trip friction is over 3%, because a flat chart is a guaranteed loss at that size.
@@ -104,13 +104,13 @@ Updated 2026-10-29T06:47:59Z (paper trading, never real money)
 The crawler's "quiet" note is out of date. The scan shows heavy volume, all of it in brand-new pump.fun graduates on PumpSwap under an hour old: SPERM ($197k cap, $65k 5m volume, +365% on the hour, 0.3h old), STEVE ($42k cap, $52k 5m) and VoiceMemos ($44k cap, $41k 5m), the last two only about 6 minutes old with buyers near 56–58%. The rising theme is dumb everyday-object and absurd jokes (Voice Memos, sperm, Steve, Pool, the Tesla Model 3 coin), plus a cat theme that is mostly fading or dead. CATBOT and GATO are holding big caps on thin flow, while Rigby is down 70% and dead. AI-dog coins are a rug theme to avoid: AI/SI fell 95% and its copycat AISI is down 24%, and the Tesla coin is down 93%, so these jokes fade within an hour. The only setup I'd paper trade now is SPERM as a MIGRATED or DIP entry, conviction 7 if holders come back clean. I'd buy a pullback that holds with 5m volume above $10k, not chase the +365% candle; initials out at 1.5x, 20% trail, sell half when 5m volume fades, stop where the dip fails to hold (V1, V6). PASS for now on STEVE and VoiceMemos because they're 6 minutes old and I don't snipe (V5); STEVE's address also lacks the "pump" ending, so I need to confirm it's the right token first (V3). Both go on watch to buy if they hold $30k+ with steady flow after 30–60 minutes. $LAPTOP stays a hard no because a political figure pushed it (V13). Holders, bundles and dev share are unverified on all of these, so nothing gets bought before that check.
 
 ## Moving most in its scans, last 30 min (1h volume)
-- SPERM: $340,490 1h vol, $196,914 mcap, +365% 1h  
-  CA `GfrirM4enfibWvniYM9Ca9Tk4GQQ9qFQax1SRbwBpump`
-- AI/SI: $288,543 1h vol, $1,892 mcap, -95% 1h  
-  CA `4yh5hsKvpKBaaQSRv9UzuKVQUik4ci8CcSqxjTKxpump`
 - Steve: $244,497 1h vol, $142,565 mcap, +238% 1h  
   CA `Fxyj1MSfyE8PCsVUWmXTHCWmCKFK7dkvgkd6HvuHpump`
-- DUBBLE: $109,029 1h vol, $2,288,680 mcap, +12% 1h  
-  CA `FEXGegqeVm5vZurqyC7qsmkLqWspVV1ACb9bbLvcpump`
-- STEVE: $105,438 1h vol, $42,448 mcap, +2% 1h  
-  CA `FMzQfjhqGnMTB56Z6ie9Muz2BzSKbGUwB2wwS4Dqex4C`
+- SELLICON: $198,498 1h vol, $161,561 mcap, +283% 1h  
+  CA `DPb1vNz5wXuYCv27S85zZ8sGh6NTfU6gMYRFYA7Jpump`
+- VoiceMemos: $104,075 1h vol, $43,678 mcap, +5% 1h  
+  CA `9b1sz9HKXjKgPNT6fkRmiz8qEawLejvcjTPfNErapump`
+- AI/SI: $38,207 1h vol, $1,892 mcap, -99% 1h  
+  CA `4yh5hsKvpKBaaQSRv9UzuKVQUik4ci8CcSqxjTKxpump`
+- Pool: $29,469 1h vol, $12,476 mcap, +32% 1h  
+  CA `EqKGv3VKuKT3eRWWiEZFFPozhLf5ZJXeA6K4bW4vpump`
