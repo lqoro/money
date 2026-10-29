@@ -169,6 +169,13 @@ filters), the last coins it looked at with why it passed on each (checklist
 fail, the brain's verdict, or a size under the minimum) and their CAs, and the
 coins moving most in its own scan.
 
+At the top of `REPORT.md` (and as `scorecard` in `status.json`) is an after-fees
+scorecard of every closed trade (`agent/scorecard.py`): win rate, average win and
+loss after costs, fees and slippage against the gross gain, how far trades peaked
+versus what they banked, the coins that hit 1.5x and still closed red, a line per
+exit reason (trailing stop, time stop, stop loss, target…), and what's left to
+the goal at the current pace.
+
 Steering is data, never code, and can't move the hard lines. With
 `AUTO_UPDATE=true` (the setup turns it on), Trencher restarts itself on new
 code whenever a change is merged to `main`, so fixes made through Duet land
