@@ -1,15 +1,15 @@
 # Trencher live report
 
-Updated 2026-10-29T02:15:04Z (paper trading, never real money)
+Updated 2026-10-29T02:30:13Z (paper trading, never real money)
 
-- Equity: $101.16 (+1.2% vs $100 start)
+- Equity: $101.04 (+1.0% vs $100 start)
 - Closed trades: 6, 2 wins
 - Fees paid: $3.93 (axiom $0.40, network $3.06, pool $0.34), plus $0.58 lost to slippage
 - New trades: on
-- Brain: subscription, 228 calls and 0 plan-limit hits in 48h
+- Brain: subscription, 236 calls and 0 plan-limit hits in 48h
 
 ## Open positions
-- FLOAT (MIGRATED): cost $3.09, 1.25x, fees $0.24  
+- FLOAT (MIGRATED): cost $3.09, 1.21x, fees $0.24  
   CA `Bv1a7cEj5aRnJQhMw4kRQqAFesMSd5LwcDnUzq52BMmr`
 
 ## Recent trades
