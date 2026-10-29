@@ -1,13 +1,13 @@
 # Trencher live report
 
-Updated 2026-10-29T21:59:25Z (paper trading, never real money)
+Updated 2026-10-29T22:14:25Z (paper trading, never real money)
 
 - Equity: $96.93 (-3.1% vs $100 start)
-- Goal: $1,000 by 2026-11-05 05:03Z (a stretch, survival first): at 9.7% of it, 6.3 days left, needs +44.9% a day from here
+- Goal: $1,000 by 2026-11-05 05:03Z (a stretch, survival first): at 9.7% of it, 6.3 days left, needs +45% a day from here
 - Closed trades: 9, 2 wins
 - Fees paid: $5.24 (axiom $0.56, network $4.04, pool $0.50), plus $0.82 lost to slippage
 - New trades: on
-- Brain: subscription, 487 calls and 0 plan-limit hits in 48h
+- Brain: subscription, 488 calls and 0 plan-limit hits in 48h
 
 ## Scorecard (after fees)
 - 9 closed, 2 won (22%), net $-3.07
@@ -71,7 +71,7 @@ Updated 2026-10-29T21:59:25Z (paper trading, never real money)
   CA `ANVLA6eKiAq4nstD2Sg3SZhfVkSEwfnGccn12UQWpump`
 
 ## Last scan
-- 21:58Z: 3 coins, 2 with pairs, 0 passed the market filters, 0 researched
+- 22:14Z: 3 coins, 2 with pairs, 0 passed the market filters, 0 researched
 
 ## Coins it looked at, and why it passed
 - 21:55Z JET (MIGRATED, $39,390 mcap, $3,599 5m vol): REJECT, Top 10 hold 38.4% ex-pool (>25%) (V13)  
@@ -97,15 +97,17 @@ Updated 2026-10-29T21:59:25Z (paper trading, never real money)
 
 ## What its skips did next (last 48h)
 A skip "ran" if the coin reached the first target (1.5x) from the skip price before a 20% drop, "dumped" if the drop came first. Sampled every 10 min, followed 6h.
-- falling knife / no higher low: blocked 3, ran 0, dumped 0, flat 0, open 3 (too few played out to judge)
-- near the high / chasing: blocked 3, ran 0, dumped 0, flat 0, open 3 (too few played out to judge)
+- falling knife / no higher low: blocked 3, ran 0, dumped 2, flat 0, open 1 (too few played out to judge)
+- near the high / chasing: blocked 3, ran 0, dumped 1, flat 0, open 2 (too few played out to judge)
 - RugCheck danger: blocked 3, ran 1, dumped 0, flat 0, open 2 (too few played out to judge)
   - ran: HYPEINU up to 1.57x  
     CA `6eccVGkbi8cvAYBGzfDmUwFYrMj8eGZF2xyZqZLkpump`
 - bundles over the line: blocked 2, ran 0, dumped 1, flat 0, open 1 (too few played out to judge)
 - other: blocked 2, ran 0, dumped 1, flat 0, open 1 (too few played out to judge)
-- top 10 over 25%: blocked 2, ran 0, dumped 0, flat 0, open 2 (too few played out to judge)
-- vamp / copycat: blocked 2, ran 0, dumped 1, flat 0, open 1 (too few played out to judge)
+- top 10 over 25%: blocked 2, ran 1, dumped 1, flat 0, open 0 (too few played out to judge)
+  - ran: HYPED up to 2.6x  
+    CA `GTukywV127Qw35tYD29wTxpKMNbMJ5DYdodz3xK2pump`
+- vamp / copycat: blocked 2, ran 0, dumped 2, flat 0, open 0 (too few played out to judge)
 - crowd leaving / fading volume: blocked 1, ran 0, dumped 0, flat 0, open 1 (too few played out to judge)
 - dev share over 1%: blocked 1, ran 0, dumped 0, flat 0, open 1 (too few played out to judge)
 - holders or bundles unverified: blocked 1, ran 0, dumped 0, flat 0, open 1 (too few played out to judge)
@@ -125,16 +127,16 @@ A skip "ran" if the coin reached the first target (1.5x) from the skip price bef
 - [2026-10-29 21:37] Expected: HEXN, down 59.5% from a $1.8M peak with $19.9k of 5m volume and buyers outnumbering sellers 5:1, would turn its bounce off the hourly low into a higher low and retest the $0.0009–0.0012 band. Instead it never went green (0.99x peak) and lost the hourly low within 7 minutes. The exit came at -36% against a -20% stop, with $0.53 in fees and $0.10 in slippage on a $4 position. This confirms my existing DIP rule, not a new ban: my thesis itself said "if the bounce holds and becomes a higher low", so I bought the first bounce before the higher low printed, which is exactly the "no entry on the first red-to-green candle" mistake (V1). Next time on a DIP, wait for a confirmed higher low above the hourly low with 5m volume rising before entering, and set the stop under that higher low, so the gap risk is fixed at the entry, not with a wider stop.
 
 ## Meta right now
-The HYPE joke is still the meta, but only the newest coins are getting buyers. HYPERCHAN ($78k on the 5m, +564% on the hour, 87% buys) and HYPERDUEL are live; HYPERCAT, HyPepe and HYPEHOUSE are dying (-54% to -61% on the hour). Most coins under an hour old are getting dumped (ASSAY -94%, FACEPALM and AgenC near zero volume). The exception is SI on the bonding curve ($32k on the 5m). Older migrated coins are holding pace: HEXN ($1.08M cap, $21k on the 5m, 82% buys), HOUSEWORM and STANK. No holder, dev or bundle data yet, so these are holder checks first. HEXN is a MIGRATED setup at conviction 7 if the checks pass (initials at 1.5x, 20% trail, sell half when the 5m fades, break-even stop at 1.3x). HYPERCHAN is 5-6 at most and only on a pullback, because it's chasing snipers on lagged data (V5). SI is watch-only until it gets through the pre-bond dump. Passes: HYPEHOUSE, ASSAY, HyPepe, FACEPALM and AgenC (collapsing), HYPERCAT (crowd leaving), three.ws (old, low volume, no edge), $LAPTOP (politician rule, V13). I ignored the crawler's summary because it uses stale numbers.
+The meta right now is the "Inu" suffix, and it's rising: Stable Inu (SI), HYPEINU and Hackinu are all pulling volume, while CSI (Cyber Security Inu) already died. The HYPE joke overlaps it, but it's fading except where it's bolted onto the Inu wave: HYPEINU is +234% on the hour with $175k on the 5m, while HYPERCHAN has cooled to $15k on the 5m and HYPERCAT is losing its crowd (-33%). The third pattern is very new PumpSwap launches under 20 minutes old with huge volume but sellers in control. WASTED is at 47% buys and HYPEINU at 55%, which is snipers trading with each other, and on my lagged data I'd be their exit liquidity (V5). Dead or blocked: ASSAY, Cateoween and CSI are near zero volume, and $LAPTOP is out under the politician rule (V13). Setups I'd research now: SI as a MIGRATED play (bonded, $131k cap, $39k on the 5m, 59% buys, 1h old). HEXN as a DIP play: $556k cap, -45% on the hour, but $22k on the 5m and 85% buys means buyers are stepping back in (V1). Hackinu as a smaller MIGRATED play ($70k cap, $58k on the 5m), probe size only because it's 12 minutes old. HOUSEWORM is holding but $5.7k on the 5m is under my bar. If holder checks are clean, SI and HEXN are 7s with initials at 1.5x, a 20% trail and a sell when 5m volume fades. I'm passing on WASTED and HYPEINU: sellers outnumber buyers at under 20 minutes old, which means chasing snipers.
 
 ## Moving most in its scans, last 30 min (1h volume)
 - SI: $777,781 1h vol, $131,446 mcap, +124% 1h  
   CA `6zuDiAw3NviBwcLZfTztHJgtCmeNWfyFxYVoXtNYpump`
-- HYPEINU: $550,208 1h vol, $146,529 mcap, +234% 1h  
-  CA `6eccVGkbi8cvAYBGzfDmUwFYrMj8eGZF2xyZqZLkpump`
-- HYPERCHAN: $455,978 1h vol, $338,532 mcap, +6% 1h  
-  CA `BrsZa8LYyBuD4jjkzHCFzjacgtXCZSn9kuDFdeitpump`
 - WASTED: $415,725 1h vol, $297,888 mcap, +435% 1h  
   CA `2BTpBX5ktiFjfHxwcLNj3uftawbm9AT7KUg46aCFpump`
 - HEXN: $270,409 1h vol, $555,727 mcap, -45% 1h  
   CA `ANVLA6eKiAq4nstD2Sg3SZhfVkSEwfnGccn12UQWpump`
+- CSI: $81,595 1h vol, $2,830 mcap, -19% 1h  
+  CA `5eg61x17hcq1nNg1CrREbot5ii9PZ7QX6KiUDkpqpump`
+- JET: $65,817 1h vol, $39,390 mcap, -7% 1h  
+  CA `3uAfWxkhj7SrTzpwvRAyxmupzQj3ds4zsHffHgNhQsBn`
