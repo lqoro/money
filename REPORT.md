@@ -1,9 +1,9 @@
 # Trencher live report
 
-Updated 2026-10-29T07:18:21Z (paper trading, never real money)
+Updated 2026-10-29T07:33:27Z (paper trading, never real money)
 
 - Equity: $99.93 (-0.1% vs $100 start)
-- Goal: $1,000 by 2026-11-05 05:03Z (a stretch, survival first): at 10% of it, 6.9 days left, needs +39.6% a day from here
+- Goal: $1,000 by 2026-11-05 05:03Z (a stretch, survival first): at 10% of it, 6.9 days left, needs +39.7% a day from here
 - Closed trades: 7, 2 wins
 - Fees paid: $4.16 (axiom $0.43, network $3.26, pool $0.35), plus $0.62 lost to slippage
 - New trades: on
@@ -67,9 +67,13 @@ Updated 2026-10-29T07:18:21Z (paper trading, never real money)
   CA `Bv1a7cEj5aRnJQhMw4kRQqAFesMSd5LwcDnUzq52BMmr`
 
 ## Last scan
-- 07:17Z: 2 coins, 1 with pairs, 0 passed the market filters, 0 researched
+- 07:33Z: 2 coins, 1 with pairs, 0 passed the market filters, 0 researched
 
 ## Coins it looked at, and why it passed
+- 07:31Z GLITCH (MIGRATED, $2,679,924 mcap, $2,211 5m vol): REJECT, Top 10 hold 26.9% ex-pool (>25%) (V13)  
+  CA `8Xg89xT8Ve34sKiYqYuMs46mycREsCA2F362UscRpump`
+- 07:28Z bingus (FINAL_STRETCH, $29,059 mcap, $7,819 5m vol): REJECT, Top 10 hold 27.7% ex-pool (>25%) (V13)  
+  CA `6jzcLmTR7XvQinzuRYA26RGXC4TGkH9fNpjSyQywpump`
 - 07:13Z GATO (MIGRATED, $5,073,895 mcap, $2,463 5m vol): REJECT, Dev holds 3.3% (>1%) (V13, V17)  
   CA `HsprHxBRgiVaQdRf3TnKNuZZtaX9JUSPgMFdAkk6pump`
 - 07:13Z LOOT (MIGRATED, $35,789 mcap, $4,593 5m vol): REJECT, Top 10 hold 29.9% ex-pool (>25%) (V13)  
@@ -86,10 +90,6 @@ Updated 2026-10-29T07:18:21Z (paper trading, never real money)
   CA `Fxyj1MSfyE8PCsVUWmXTHCWmCKFK7dkvgkd6HvuHpump`
 - 06:38Z STONKLANA (MIGRATED, $414,577 mcap, $2,878 5m vol): PASS at conviction 2, PASS: down 99.7% from a claimed $156M peak, 47 insider networks and 18 coins sharing the ticker. That's a corpse, not a dip (V6, V13, V17).  
   CA `GF74fBfcaeLjUiUwKpRiUbvMQtTvNyzMoo6KNyyqNyk6`
-- 06:37Z VoiceMemos (MIGRATED, $43,678 mcap, $40,631 5m vol): REJECT, RugCheck danger: Creator history of rugged tokens  
-  CA `9b1sz9HKXjKgPNT6fkRmiz8qEawLejvcjTPfNErapump`
-- 06:28Z GATO (MIGRATED, $5,104,485 mcap, $3,152 5m vol): REJECT, Dev holds 3.3% (>1%) (V13, V17)  
-  CA `HsprHxBRgiVaQdRf3TnKNuZZtaX9JUSPgMFdAkk6pump`
 
 ## Recent lessons
 - [2026-10-28 14:15] Expected: a $1.2M dip 47% off the $2.3M peak, with $17.8k 5m volume and buys outnumbering sells 3:1, to retest $2M while the joke still had a crowd (V1 buys-on-dip, V6). What happened: it peaked at 1.09x, then went flat and got time-stopped at 60 minutes with market cap basically unchanged (-0.6%), but I still lost 15.4% because fees and slippage ate about 9% of a $3.33 position, and the rest of the gap is execution I can't see in the record. Rule: on DIP setups, enter only after the dip makes a higher low with 5m volume rising (0.86x the hourly average is fading, not holding). Never open a position so small that round-trip friction is over 3%, because a flat chart is a guaranteed loss at that size.
@@ -104,13 +104,13 @@ Updated 2026-10-29T07:18:21Z (paper trading, never real money)
 The crawler's "quiet" note is out of date. The scan shows heavy volume, all of it in brand-new pump.fun graduates on PumpSwap under an hour old: SPERM ($197k cap, $65k 5m volume, +365% on the hour, 0.3h old), STEVE ($42k cap, $52k 5m) and VoiceMemos ($44k cap, $41k 5m), the last two only about 6 minutes old with buyers near 56–58%. The rising theme is dumb everyday-object and absurd jokes (Voice Memos, sperm, Steve, Pool, the Tesla Model 3 coin), plus a cat theme that is mostly fading or dead. CATBOT and GATO are holding big caps on thin flow, while Rigby is down 70% and dead. AI-dog coins are a rug theme to avoid: AI/SI fell 95% and its copycat AISI is down 24%, and the Tesla coin is down 93%, so these jokes fade within an hour. The only setup I'd paper trade now is SPERM as a MIGRATED or DIP entry, conviction 7 if holders come back clean. I'd buy a pullback that holds with 5m volume above $10k, not chase the +365% candle; initials out at 1.5x, 20% trail, sell half when 5m volume fades, stop where the dip fails to hold (V1, V6). PASS for now on STEVE and VoiceMemos because they're 6 minutes old and I don't snipe (V5); STEVE's address also lacks the "pump" ending, so I need to confirm it's the right token first (V3). Both go on watch to buy if they hold $30k+ with steady flow after 30–60 minutes. $LAPTOP stays a hard no because a political figure pushed it (V13). Holders, bundles and dev share are unverified on all of these, so nothing gets bought before that check.
 
 ## Moving most in its scans, last 30 min (1h volume)
-- SELLICON: $198,498 1h vol, $161,561 mcap, +283% 1h  
-  CA `DPb1vNz5wXuYCv27S85zZ8sGh6NTfU6gMYRFYA7Jpump`
-- STEVE: $158,158 1h vol, $10,448 mcap, -71% 1h  
-  CA `FMzQfjhqGnMTB56Z6ie9Muz2BzSKbGUwB2wwS4Dqex4C`
-- SPERM: $156,020 1h vol, $1,914 mcap, -99% 1h  
-  CA `GfrirM4enfibWvniYM9Ca9Tk4GQQ9qFQax1SRbwBpump`
+- Steve: $336,965 1h vol, $1,869 mcap, -96% 1h  
+  CA `Fxyj1MSfyE8PCsVUWmXTHCWmCKFK7dkvgkd6HvuHpump`
+- VoiceMemos: $110,575 1h vol, $3,169 mcap, -90% 1h  
+  CA `9b1sz9HKXjKgPNT6fkRmiz8qEawLejvcjTPfNErapump`
 - DUBBLE: $95,383 1h vol, $2,383,022 mcap, +10% 1h  
   CA `FEXGegqeVm5vZurqyC7qsmkLqWspVV1ACb9bbLvcpump`
 - CATBOT: $85,930 1h vol, $3,112,137 mcap, +4% 1h  
   CA `dyw5fDNv91eknniMG4tGCU1ZrzjuxbpsLiEzih6pump`
+- STEVE: $82,426 1h vol, $12,262 mcap, -77% 1h  
+  CA `FMzQfjhqGnMTB56Z6ie9Muz2BzSKbGUwB2wwS4Dqex4C`
