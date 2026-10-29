@@ -30,7 +30,7 @@ import subprocess
 import time
 from pathlib import Path
 
-from . import journal, radar, scorecard
+from . import journal, radar, scorecard, skips
 from .config import EVOLVABLE, ROOT, STEERABLE, Config
 
 log = logging.getLogger(__name__)
@@ -117,6 +117,8 @@ def build_report(agent) -> tuple[dict, str]:
         "goal": cfg.goal_progress(view.get("equity_usd", agent.pf.equity())),
         "last_scan": getattr(agent, "last_scan", {}),
         "recent_looks": list(getattr(agent, "recent_looks", []))[-15:],
+        "skip_review": skips.stats(getattr(agent, "skips", {}) or {}),
+        "rule_changes": recent_rule_changes(cfg),
     }
 
     eq = view.get("equity_usd", agent.pf.equity())
@@ -176,6 +178,20 @@ def build_report(agent) -> tuple[dict, str]:
               + (f" at conviction {look['conviction']}" if look.get("conviction") else "")
               + f", {look.get('reason')}  \n  CA `{look.get('ca')}`"
               for look in reversed(status["recent_looks"][-10:])] or ["- none since the last restart"]
+    lines += ["", "## What its skips did next (last 48h)",
+              f"A skip \"ran\" if the coin reached the first target ({cfg.take_initials_multiple:g}x) from the skip "
+              f"price before a {cfg.stop_loss_pct:g}% drop, \"dumped\" if the drop came first. Sampled every "
+              f"{cfg.skip_review_interval_min:g} min, followed {cfg.skip_review_hours:g}h."]
+    review = status["skip_review"]
+    for gate, g in list(review.items())[:10]:
+        lines.append(f"- {gate}: blocked {g['blocked']}, ran {g['ran']}, dumped {g['dumped']}, flat {g['flat']}, "
+                     f"open {g['pending']} ({skips.verdict(g)})")
+        lines += [f"  - ran: {e['symbol']} up to {e['best_x']:g}x  \n    CA `{e['ca']}`" for e in g["ran_examples"]]
+    if not review:
+        lines.append("- nothing followed yet since the last restart")
+    lines += ["", "## Rules it changed from results and skips"]
+    lines += [f"- {time.strftime('%m-%d %H:%MZ', time.gmtime(r.get('t', 0)))} {r.get('change')}: {r.get('rule')} "
+              f"({r.get('evidence')})" for r in status["rule_changes"]] or ["- none yet"]
     lines += ["", "## Recent lessons", *(status["recent_lessons"] or ["- none yet"])]
     if agent.meta.get("meta_summary"):
         lines += ["", "## Meta right now", agent.meta["meta_summary"]]
@@ -186,6 +202,19 @@ def build_report(agent) -> tuple[dict, str]:
                   + (f", {m['change_1h']:+.0f}% 1h" if isinstance(m.get("change_1h"), (int, float)) else "")
                   + f"  \n  CA `{m.get('ca')}`" for m in movers]
     return status, "\n".join(lines) + "\n"
+
+
+def recent_rule_changes(cfg: Config, n: int = 8) -> list[dict]:
+    path = cfg.memory_dir / "rule_changes.jsonl"
+    if not path.exists():
+        return []
+    out = []
+    for line in path.read_text().splitlines()[-n:]:
+        try:
+            out.append(json.loads(line))
+        except json.JSONDecodeError:
+            continue
+    return out
 
 
 class DuetBridge:

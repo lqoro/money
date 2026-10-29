@@ -35,9 +35,12 @@ every 5    Claude studies its results ──► rewrites learned rules + retunes
      average (crowd arriving or leaving) and the 5-minute buy ratio.
 3. **Checklist** (`agent/checklist.py`): the guide's pre-trade due diligence as
    code. Hard fails: mint/freeze authority live, LP not burned, dev >1%, top 10
-   >25% (with the pool excluded), insiders >10%, transfer tax, RugCheck "danger",
-   ~$20k of boosts. Warnings: possible vamp (bigger token with the same ticker),
-   no X account, top 10 >15%, insider networks, thin liquidity, sellers in control.
+   >25% (with the pool excluded), insiders >10%, bundles >20% (what RugCheck's
+   linked wallet clusters hold now), transfer tax, RugCheck "danger", ~$20k of
+   boosts. Warnings: possible vamp (bigger token with the same ticker), no X
+   account, top 10 >15%, one bundle cluster >4%, thin liquidity, sellers in
+   control. A pump.fun coin whose RugCheck report doesn't load passes as
+   partial data (the launchpad handles mint, freeze and LP) and can only buy a probe.
 4. **Brain** (`agent/brain.py`): Claude gets `SOUL.md` + the full guide (cached),
    its learned rules and recent lessons, the wallet, and the token dossier. It
    can search the web for scam accusations, the project's X and the current meta
@@ -79,6 +82,11 @@ every 5    Claude studies its results ──► rewrites learned rules + retunes
    one never does. Only the owner can change the two numbers. Fee caps and
    minimum sizes Trencher wrote into its own lessons before this existed are
    marked retired in its prompts, and it's told not to write new ones.
+   **Probes**: conviction 5-6 (or a pump.fun coin whose RugCheck holder data
+   didn't load) buys the smallest position whose fees still work, about $7 at a
+   20% stop, as long as losing it costs at most 3% of equity
+   (`probe_max_risk_pct`, owner-steerable, 0 turns probes off). Without this a
+   5-6 sized so small that network fees failed the fee check, so only 7+ traded.
    No limit on how many positions it holds (it has more eyes than a human);
    what limits it is the total at-stop risk budget (25%, which it can evolve
    between 10% and 40%) and cash. It stops
@@ -108,6 +116,16 @@ every 5    Claude studies its results ──► rewrites learned rules + retunes
    logged with reasons in `memory/strategy_log.md`. The checklist hard lines and
    your conviction→risk table can't be evolved, and anything you set in `.env`
    overrides what it learned.
+10. **Skip review** (`agent/skips.py`): lessons only come from trades it took,
+   so on their own its rules only ever tighten. Every coin it passes on is filed
+   under the reason it gave (near the high, falling knife, too new, dev share…)
+   and followed for 6h with DexScreener prices: it "ran" if it reached the first
+   target before the stop distance, "dumped" if the stop came first. The tally
+   per reason is in every decision prompt and in the report, and every 3h (once
+   10+ skips have played out) it evolves from it even with no closed trades,
+   loosening rules whose skips keep running and keeping the ones whose skips
+   keep dumping. Rule changes are logged in `memory/rule_changes.jsonl` and the
+   report. `memory/skips.json` holds the last 72h.
 
 ## Run it
 
@@ -261,7 +279,7 @@ plan's usage window, which Trencher shares with your own Claude use.
 
 ## Known limits
 
-- Free APIs can't see some checklist items: bundler %, chart-start candles,
+- Free APIs can't see some checklist items: chart-start candles,
   trades-panel icons, global fees paid, pro-trader ratio, or who the X admin is.
   Claude is told these are unverified and treats them as risk.
 - DexScreener data lags a pro terminal by seconds (V5, V6), so Trencher doesn't

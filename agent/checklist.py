@@ -21,6 +21,9 @@ class Checklist:
     warns: list[str] = field(default_factory=list)
     plusses: list[str] = field(default_factory=list)
     holders: dict = field(default_factory=dict)
+    # Holder data didn't load (or came back empty): tradable only as a probe, because
+    # concentration, dev share and bundles are unknown.
+    partial: bool = False
 
     @property
     def passed(self) -> bool:
@@ -40,6 +43,7 @@ class Checklist:
             "warns": self.warns,
             "plusses": self.plusses,
             "holders": self.holders,
+            "partial_holder_data": self.partial,
         }
 
 
@@ -115,8 +119,35 @@ def holder_stats(report: dict, snap: dict) -> dict:
         "dev_pct": round(dev_pct, 2),
         "largest_holder_pct": round(holders[0].get("pct") or 0, 2) if holders else 0,
         "total_holders": report.get("totalHolders"),
-        "insider_networks_detected": report.get("graphInsidersDetected") or 0,
+        # graphInsidersDetected counts wallets, not networks: 465 wallets can be 10 clusters.
+        "insider_wallets_flagged": report.get("graphInsidersDetected") or 0,
+        **bundle_stats(report),
     }
+
+
+def bundle_stats(report: dict) -> dict:
+    """What RugCheck's linked-wallet clusters (insiderNetworks: wallets funded from the
+    same source, i.e. bundles) hold right now, as % of supply. A report without the
+    field can't say; an empty or null one means no clusters were found."""
+    if "insiderNetworks" not in report:
+        return {"bundles_checked": False, "bundle_networks": 0, "bundle_pct": None, "largest_bundle_pct": None}
+    supply = float((report.get("token") or {}).get("supply") or 0)
+    nets = report.get("insiderNetworks") or []
+    shares = []
+    for n in nets:
+        held = float((n or {}).get("currentHolding") or (n or {}).get("tokenAmount") or 0)
+        shares.append(100 * held / supply if supply else 0.0)
+    if nets and not supply:
+        return {"bundles_checked": False, "bundle_networks": len(nets), "bundle_pct": None, "largest_bundle_pct": None}
+    return {"bundles_checked": True, "bundle_networks": len(nets), "bundle_pct": round(min(100.0, sum(shares)), 2),
+            "largest_bundle_pct": round(max(shares, default=0.0), 2)}
+
+
+def pumpfun_launch(snap: dict) -> bool:
+    """A pump.fun coin (bonding curve or PumpSwap): the launchpad revokes mint and
+    freeze at creation and burns the LP at migration, so those checks hold even when
+    RugCheck doesn't answer. Holders, dev share and bundles still don't."""
+    return (snap.get("address") or "").endswith("pump") and snap.get("dex") in BONDING_DEXES | {"pumpswap"}
 
 
 def run_checklist(snap: dict, report: dict | None, same_name: list[dict], cfg: Config, sol_usd: float) -> Checklist:
@@ -153,8 +184,9 @@ def run_checklist(snap: dict, report: dict | None, same_name: list[dict], cfg: C
         dd = snap["drawdown_pct"]
         if dd > 65:
             c.warns.append(f"Deep correction ({dd:.0f}% off the high): only with a very strong narrative")
-        if accel is not None and accel < 0.5:
-            c.fails.append("Dip with fading attention is a falling knife, not a dip")
+        if accel is not None and accel < cfg.dip_min_attention_ratio:
+            c.fails.append(f"Dip with fading attention is a falling knife, not a dip (5m at {accel:.2f}x "
+                           f"the hour's pace, under {cfg.dip_min_attention_ratio:g}x)")
         if buy_ratio is not None and buy_ratio < 0.45:
             c.warns.append(f"Sellers still in control on the dip ({buy_ratio:.0%} buys in 5m)")
         elif buy_ratio is not None and buy_ratio >= 0.55 and (snap.get("change_5m") or 0) > 0:
@@ -207,7 +239,12 @@ def run_checklist(snap: dict, report: dict | None, same_name: list[dict], cfg: C
 
     # --- On-chain safety (RugCheck) ---
     if report is None:
-        c.fails.append("RugCheck report unavailable: can't verify mint/freeze/holders, skip")
+        if pumpfun_launch(snap):
+            c.partial = True
+            c.warns.append("RugCheck didn't load: holders, dev share and bundles are unverified (mint, freeze "
+                           "and LP are handled by the pump.fun launchpad). Probe size only.")
+        else:
+            c.fails.append("RugCheck report unavailable: can't verify mint/freeze/holders, skip")
         return c
     if report.get("rugged"):
         c.fails.append("RugCheck marks this token as rugged")
@@ -232,6 +269,9 @@ def run_checklist(snap: dict, report: dict | None, same_name: list[dict], cfg: C
 
     h = holder_stats(report, snap)
     c.holders = h
+    if not report.get("topHolders"):
+        c.partial = True
+        c.warns.append("RugCheck returned no holder list: top 10 and dev share are unverified. Probe size only.")
     if h["dev_pct"] > cfg.max_dev_pct:
         c.fails.append(f"Dev holds {h['dev_pct']:.1f}% (>1%) (V13, V17)")
     if h["top10_pct_ex_pool"] > cfg.max_top10_pct:
@@ -242,8 +282,20 @@ def run_checklist(snap: dict, report: dict | None, same_name: list[dict], cfg: C
         c.plusses.append(f"Top 10 hold only {h['top10_pct_ex_pool']:.1f}% ex-pool (V6)")
     if h["insider_pct"] > cfg.max_insider_pct:
         c.fails.append(f"Insiders hold {h['insider_pct']:.1f}% (>10%) (V13)")
-    if h["insider_networks_detected"]:
-        c.warns.append(f"{h['insider_networks_detected']} insider wallet network(s) detected (V13, V17)")
+    if h["bundles_checked"]:
+        if h["bundle_pct"] > cfg.max_bundle_pct:
+            c.fails.append(f"Bundles: {h['bundle_networks']} linked wallet cluster(s) hold {h['bundle_pct']:.1f}% "
+                           f"of supply (>{cfg.max_bundle_pct:g}%) (V17)")
+        elif h["largest_bundle_pct"] > cfg.warn_bundle_pct:
+            c.warns.append(f"Bundles: one linked wallet cluster holds {h['largest_bundle_pct']:.1f}% "
+                           f"({h['bundle_pct']:.1f}% across {h['bundle_networks']}) (V3, V17)")
+        elif h["bundle_networks"]:
+            c.plusses.append(f"Bundle check: {h['bundle_networks']} small linked cluster(s), "
+                             f"{h['bundle_pct']:.1f}% of supply combined (V3, V17)")
+        else:
+            c.plusses.append("Bundle check: no linked wallet clusters found (V3, V17)")
+    else:
+        c.warns.append("Bundles unverified: RugCheck gave no wallet-cluster data for this coin")
     if h["largest_holder_pct"] > 5:
         c.warns.append(f"Largest non-pool wallet holds {h['largest_holder_pct']:.1f}%")
     if (h["total_holders"] or 0) and h["total_holders"] < 150:

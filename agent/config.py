@@ -69,6 +69,12 @@ class Config:
     warn_top10_pct: float = 15.0  # V6 preferred
     max_dev_pct: float = 1.0  # V13, V17
     max_insider_pct: float = 10.0  # V13
+    # Bundles: RugCheck's insiderNetworks are clusters of wallets funded from the same
+    # source. What they hold now, as % of supply, is the bundle check the brain used to
+    # call "unverified". 20%+ combined is a hard line (V17); one cluster over ~4% is
+    # suspicious (V3).
+    max_bundle_pct: float = 20.0
+    warn_bundle_pct: float = 4.0
     min_lp_locked_pct: float = 90.0  # "burned 99-100% or locked" (V2, V3, V6)
 
     # --- Exits --------------------------------------------------------------
@@ -97,6 +103,9 @@ class Config:
     # --- Narrative / attention trading -------------------------------------
     dip_min_drawdown_pct: float = 40.0  # a normal pullback is ~40-50%
     dip_max_drawdown_pct: float = 75.0  # ~70% is deep; past this it's usually dead
+    # A dip whose 5m volume is under this x the hour's average 5m is a falling knife.
+    # Evolvable, so the skip review can loosen it if the knives it blocks keep running.
+    dip_min_attention_ratio: float = 0.5
     dip_min_peak_mcap_usd: float = 70_000.0  # only dips of coins that proved themselves (V6)
     reentry_window_hours: float = 3.0  # stopped-out coins stay on the watchlist this long
 
@@ -121,6 +130,20 @@ class Config:
     guide_mode: str = "full"  # full = whole guide in the prompt, cheatsheet = Part 1 only
     lessons_in_prompt: int = 20
     reflect_every_n_trades: int = 5  # how often Claude reviews results and evolves the strategy
+    # Probe trades: a conviction 5-6 coin, or one whose holder data didn't load, gets the
+    # smallest position whose fees still work, as long as losing it at the stop costs at
+    # most this % of equity. Owner-steerable only.
+    probe_max_risk_pct: float = 3.0
+
+    # --- Skip review: what the coins it passed on did next ----------------------
+    # Every PASS/REJECT is followed for skip_review_hours. A coin "ran" if it reached the
+    # first profit target (take_initials_multiple) from the skip price before it fell
+    # stop_loss_pct; it "dumped" if the stop came first. Evolution reads the tally per
+    # reason, so a rule that keeps blocking runners gets loosened, not just tightened.
+    skip_review_hours: float = 6.0
+    skip_review_interval_min: float = 10.0
+    skip_evolve_every_hours: float = 3.0  # evolve from skips this often, even with no closed trades
+    skip_evolve_min_resolved: int = 10  # ...once at least this many skips have played out
 
     # --- Web crawler: meta radar + project crawler --------------------------
     radar_interval_min: float = 10.0
@@ -235,6 +258,7 @@ EVOLVABLE: dict[str, tuple[float, float]] = {
     "max_hold_hours": (2, 48),
     "dip_min_drawdown_pct": (25, 60),
     "dip_max_drawdown_pct": (50, 80),
+    "dip_min_attention_ratio": (0.25, 0.8),
     "dip_min_peak_mcap_usd": (40_000, 500_000),
     "good_vol_5m_usd": (3_000, 30_000),
     "min_vol_5m_usd": (1_000, 10_000),
@@ -258,4 +282,5 @@ STEERABLE: dict[str, tuple[float, float]] = {
     # than ~5.5% plus network fees, so the ceiling never goes below 10%.
     "min_target_cost_multiple": (1, 6),
     "max_round_trip_cost_pct": (10, 50),
+    "probe_max_risk_pct": (0, 5),  # 0 = no probes
 }

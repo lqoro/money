@@ -11,7 +11,7 @@ import sys
 import time
 from collections import deque
 
-from . import data, journal, radar
+from . import data, journal, radar, skips
 from .api import start_api
 from .brain import Brain
 from .bridge import DuetBridge
@@ -23,7 +23,7 @@ from .portfolio import Portfolio, Position, venue_fee_pct
 from .risk import check_exit, sanitize_exit_plan
 from .site import project_report
 from .sizing import (cites_fees, fee_check, fee_rule_text, first_target_multiple, open_risk_usd, position_size,
-                     sizing_guide)
+                     probe_size, sizing_guide)
 
 log = logging.getLogger("trencher")
 
@@ -49,6 +49,9 @@ class Agent:
         # Every coin seen in the last half hour of scans (newest snapshot each), so the
         # movers list doesn't shrink to whatever one scan saw outside its cooldowns.
         self.seen_snaps: dict[str, dict] = {}
+        # Every coin it passed on, followed to see whether the skip cost a winner or saved a loss.
+        self.skips: dict = skips.load(cfg)
+        self.last_skip_review = 0.0
         self.bridge = DuetBridge(cfg, self)
 
     # ---------------------------------------------------------------- web crawler
@@ -197,6 +200,36 @@ class Agent:
             "vol_5m": round(snap.get("vol_5m") or 0), "outcome": outcome, "conviction": conviction,
             "reason": str(reason)[:300],
         })
+        if outcome in ("PASS", "REJECT", "TOO_SMALL", "FEE_SKIP"):
+            skips.record(self.cfg, self.skips, snap, outcome, reason)
+
+    # ---------------------------------------------------------------- skip review
+    def review_skips(self, now: float | None = None) -> None:
+        """Price the coins it passed on, and evolve from what they did: rules learn from
+        the winners they blocked, not only from the losses it took."""
+        cfg = self.cfg
+        now = now or time.time()
+        if now - self.last_skip_review < cfg.skip_review_interval_min * 60:
+            return
+        self.last_skip_review = now
+        settled = skips.update(cfg, self.skips, now)
+        skips.save(cfg, self.skips)
+        if settled:
+            log.info("Skip review: %d skipped coin(s) played out", settled)
+        stamp = cfg.memory_dir / "skip_evolve_at"
+        try:
+            last = float(stamp.read_text())
+        except (OSError, ValueError):
+            last = 0.0
+            stamp.write_text(str(now))  # first run: give the skips time to play out
+            return
+        if (now - last >= cfg.skip_evolve_every_hours * 3600
+                and skips.resolved_since(self.skips, last) >= cfg.skip_evolve_min_resolved):
+            stamp.write_text(str(now))
+            summary = evolve(cfg, self.brain)
+            if summary:
+                log.info(summary)
+                notify(cfg, summary)
 
     def research(self, snap: dict, sol: float) -> None:
         cfg = self.cfg
@@ -204,6 +237,8 @@ class Agent:
         self.cooldown[addr] = time.time() + cfg.reject_cooldown_min * 60
         check = self.build_dossier(snap, sol)
         if not check.passed:
+            if check.fails and "RugCheck report unavailable" in check.fails[0]:
+                self.cooldown[addr] = time.time() + 5 * 60  # a timeout, not a verdict: look again soon
             log.info("  ✗ %-10s %s", snap["symbol"], check.fails[0] if check.fails else "no setup")
             self.note_look(snap, check.setup, "REJECT", check.fails[0] if check.fails else "no setup fits")
             journal.log_decision(cfg, {"token": addr, "symbol": snap["symbol"], "action": "REJECT",
@@ -223,9 +258,20 @@ class Agent:
                                      history=self.watchlist.get(addr), radar_view=radar.public_view(self.meta))
         log.info("  ◆ %-10s %s", snap["symbol"], decision.get("verdict"))
         plan = sanitize_exit_plan(decision.get("exit_plan"), cfg)
-        sizing = position_size(int(decision.get("conviction") or 0), plan["stop_loss_pct"], self.pf, cfg, sol, venue)
-        fees = fee_check(sizing.size_usd, first_target_multiple(plan, snap["mcap_usd"]), cfg, sol, venue,
-                         snap["liquidity_usd"])
+        conviction = int(decision.get("conviction") or 0)
+        first_target = first_target_multiple(plan, snap["mcap_usd"])
+        sizing = position_size(conviction, plan["stop_loss_pct"], self.pf, cfg, sol, venue)
+        fees = fee_check(sizing.size_usd, first_target, cfg, sol, venue, snap["liquidity_usd"])
+        # Conviction 5-6, or holders that didn't load: a small probe instead of nothing.
+        too_small = sizing.size_usd < cfg.min_position_usd or not fees.ok
+        if conviction >= 5 and (check.partial or too_small):
+            probe = probe_size(plan["stop_loss_pct"], first_target, self.pf, cfg, sol, venue, snap["liquidity_usd"])
+            if probe.size_usd and (too_small or probe.size_usd < sizing.size_usd):
+                sizing = probe
+                fees = fee_check(sizing.size_usd, first_target, cfg, sol, venue, snap["liquidity_usd"])
+            elif check.partial:
+                sizing = probe  # holders unknown and no probe fits: don't take the full size
+                fees = fee_check(sizing.size_usd, first_target, cfg, sol, venue, snap["liquidity_usd"])
         journal.log_decision(cfg, {"token": addr, "symbol": snap["symbol"], "snapshot": snap,
                                    "checklist": check.as_dict(), "decision": decision,
                                    "sizing": sizing.__dict__, "fee_check": fees.__dict__})
@@ -410,6 +456,7 @@ class Agent:
                 self.bridge.tick()
                 self.refresh_radar()
                 self.monitor()
+                self.review_skips()
                 if time.time() - last_scan >= self.cfg.scan_interval_sec:
                     last_scan = time.time()
                     self.scan()
