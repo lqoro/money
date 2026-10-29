@@ -1,13 +1,13 @@
 # Trencher live report
 
-Updated 2026-10-29T17:39:52Z (paper trading, never real money)
+Updated 2026-10-29T17:55:20Z (paper trading, never real money)
 
 - Equity: $99.93 (-0.1% vs $100 start)
-- Goal: $1,000 by 2026-11-05 05:03Z (a stretch, survival first): at 10% of it, 6.5 days left, needs +42.7% a day from here
+- Goal: $1,000 by 2026-11-05 05:03Z (a stretch, survival first): at 10% of it, 6.5 days left, needs +42.8% a day from here
 - Closed trades: 7, 2 wins
 - Fees paid: $4.16 (axiom $0.43, network $3.26, pool $0.35), plus $0.62 lost to slippage
 - New trades: on
-- Brain: subscription, 403 calls and 0 plan-limit hits in 48h
+- Brain: subscription, 410 calls and 0 plan-limit hits in 48h
 
 ## Scorecard (after fees)
 - 7 closed, 2 won (29%), net $-0.07
@@ -67,29 +67,29 @@ Updated 2026-10-29T17:39:52Z (paper trading, never real money)
   CA `Bv1a7cEj5aRnJQhMw4kRQqAFesMSd5LwcDnUzq52BMmr`
 
 ## Last scan
-- 17:39Z: 2 coins, 2 with pairs, 0 passed the market filters, 0 researched
+- 17:54Z: 5 coins, 5 with pairs, 1 passed the market filters, 1 researched
 
 ## Coins it looked at, and why it passed
+- 17:55Z HI (MIGRATED, $54,449 mcap, $20,788 5m vol): PASS at conviction 2, PASS — this HI is the dying Raydium twin, -64% on the hour while the pump.fun HI rips. Buy the leader or nothing (V1, V2).  
+  CA `FkUGF7cPFy7hHuJwBERCTfAex3XcLFCH9pkj2RDUQTMe`
+- 17:52Z VOUCH (MIGRATED, $106,831 mcap, $27,754 5m vol): REJECT, Top 10 hold 54.2% ex-pool (>25%) (V13)  
+  CA `GXQVzSaNGQiSy7Kxpvox3HE4bJujFa666E2wvbrrpump`
+- 17:51Z 50K (MIGRATED, $176,095 mcap, $54,645 5m vol): PASS at conviction 3, PASS — 11 minutes old, Meteora pair sitting 5% under its high, bundles unverified. That's the CATCULUS setup again. Wait for a 0.618 fib retest (V1, V3, V5).  
+  CA `HuRqh4ddfRGwcWRD6UaXKGha8ycaDcw6gP6NbFc66uNy`
+- 17:47Z Elon (MIGRATED, $656,166 mcap, $238,072 5m vol): REJECT, RugCheck danger: Top 10 holders high ownership  
+  CA `Fa1Uqysy2s6UwpcMQhjwpn49dp7oHPvxq8FrBqKqpump`
+- 17:44Z CATBOT (MIGRATED, $212,674 mcap, $9,916 5m vol): PASS at conviction 2, PASS: down 96.7% from the $6.39M peak, -77% on the hour, and 5m volume is at 0.33x its hourly pace. That's a falling knife, not a dip. (V1, V6)  
+  CA `dyw5fDNv91eknniMG4tGCU1ZrzjuxbpsLiEzih6pump`
+- 17:42Z GATO (MIGRATED, $5,050,830 mcap, $8,803 5m vol): REJECT, Dev holds 3.3% (>1%) (V13, V17)  
+  CA `HsprHxBRgiVaQdRf3TnKNuZZtaX9JUSPgMFdAkk6pump`
+- 17:42Z PULLS (FINAL_STRETCH, $23,878 mcap, $17,758 5m vol): PASS at conviction 3, PASS. It's 6 minutes old, pulls.cc doesn't show this CA, and 7 coins share the ticker. That's sniping a new pair that may be a vamp (V1, V3, V13).  
+  CA `EjRpSxNVmaLReVwRLds549ZbvMdPVW9ZB4xNhe9KejA3`
+- 17:42Z DESSA (MIGRATED, $10,249,010 mcap, $62,500 5m vol): PASS at conviction 4, PASS: blocker is entry location. $10.25M is 3% off a high set 12 min ago, bundles are unverified and liquidity is thin. Watch for a 0.618 retest near $8.5M (V1, V3, V6).  
+  CA `npz2FhoufQ7pKqhGpaipYWacrAkidyW2yDpVWSvpump`
+- 17:41Z HEXN (MIGRATED, $621,465 mcap, $28,911 5m vol): PASS at conviction 3, PASS: momentum chase 12.5% off the high, with volume at 0.48x the hourly pace. It's a 5-hour-old "OS" site with no GitHub, and 8 tokens share the ticker. Blocker: entry within 20% of the high with bundles unverified (V1, V3, V5).  
+  CA `ANVLA6eKiAq4nstD2Sg3SZhfVkSEwfnGccn12UQWpump`
 - 17:36Z HELMET (MIGRATED, $30,729 mcap, $2,849 5m vol): PASS at conviction 2, PASS — 5m volume is $2.8k at 0.23x the hourly pace and it's 31% off a $45k peak that never proved anything. The crowd already left (V1, V6).  
   CA `FuGnvoCBa6FRzg7D3yQCutGTJiBX3DPKenRmTc4dpump`
-- 17:33Z GROKKIES (MIGRATED, $35,248 mcap, $2,754 5m vol): PASS at conviction 2, PASS: the project's own site shows a different CA, two bigger coins share the ticker, and 5m volume is down to $2.7k. Vamp with no flow. (V1, V3)  
-  CA `8NTU6e46S8c8VD3uscMAgz8sQYjF2GofuZy4znQwpump`
-- 17:32Z AgenC (DIP, $568,409 mcap, $10,264 5m vol): REJECT, Dip with fading attention is a falling knife, not a dip  
-  CA `GJKnJsRiM5ATS4yhwjYRegT3iRsXUvcW1dafJPh8pump`
-- 17:31Z HI (MIGRATED, $323,764 mcap, $52,202 5m vol): PASS at conviction 3, PASS: HI is a 51-minute-old coin trading 5.6% off its high, bundles are unverified, 10 insider networks were flagged, and 5m flow is fading at 0.54x the hourly pace. Buying here makes me exit liquidity (V1, V3, V5, V13).  
-  CA `3w2TvVmTrtq4kSkoFVrTFQgz6MX7ThzDVrx9r5c3pump`
-- 17:30Z SENSE (DIP, $620,490 mcap, $4,799 5m vol): PASS at conviction 2, PASS: SENSE is a falling knife. 5m volume is at 0.58x its hourly pace, sellers lead 32 to 26, one wallet holds 13% and there's no X account. The crowd is leaving. (V1, V6, V13)  
-  CA `GydpvgKppv8a4gGQqAQsyQJxtQN4S6Ym9gKxjnN3mfun`
-- 17:27Z LUMEN (FINAL_STRETCH, $23,997 mcap, $8,196 5m vol): PASS at conviction 4, PASS: a privacy "tech" coin that's 19 minutes old, with its website down, no GitHub, and a ticker that's been launched over and over. Probably a LARP, and it would mean sniping a new pair. (V1, V3)  
-  CA `BtAe3p7i1jig8vAAob1QuUkDZwLugqoGGXHrYBEKpump`
-- 17:21Z STANK (MIGRATED, $91,255 mcap, $5,262 5m vol): PASS at conviction 3, PASS. STANK is 16% off a high it set 6 minutes ago, with $5.3k on the 5m and no bundle data. Buying this would be chasing the top. Blocker: the entry location rule (my learned rule, V1, V6).  
-  CA `5wsjHxT5nW5jQuVupXUNnYszF3WoWCfGGk9LMcsCJzY8`
-- 17:14Z VI (DIP, $242,804 mcap, $3,098 5m vol): PASS at conviction 3, PASS: 5m volume is $3.1k and 0.5x the hourly pace with no higher low. Clean holders, but the crowd is leaving. Falling knife (V1, V6).  
-  CA `A6PM7bxyWYiUxaEpRMHvuL4tY2jYVf8N46vXZ15Hpump`
-- 17:11Z HOUSEWORM (MIGRATED, $810,292 mcap, $15,824 5m vol): PASS at conviction 3, PASS: it's 16% off a high set 12 minutes ago, 5m volume is down to 0.28x the hourly pace, and the scan flagged 465 insider networks with no bundle data. That's buying the top of a fading chart (V1, V3, my near-high rule).  
-  CA `9KhzhyM1BwgW6myZRcqdzQvemKjVrjck8kaevTkMpump`
-- 17:09Z HI (MIGRATED, $144,842 mcap, $30,744 5m vol): PASS at conviction 2, PASS: this is the vamp. Two bigger coins share the HI ticker, the real HYPER INU is the pump.fun CA at 3w2T…, and this one is a 7-minute-old Float-launchpad copy with top 10 at 21%. (V1, V3, V6)  
-  CA `FkUGF7cPFy7hHuJwBERCTfAex3XcLFCH9pkj2RDUQTMe`
 
 ## Recent lessons
 - [2026-10-28 14:15] Expected: a $1.2M dip 47% off the $2.3M peak, with $17.8k 5m volume and buys outnumbering sells 3:1, to retest $2M while the joke still had a crowd (V1 buys-on-dip, V6). What happened: it peaked at 1.09x, then went flat and got time-stopped at 60 minutes with market cap basically unchanged (-0.6%), but I still lost 15.4% because fees and slippage ate about 9% of a $3.33 position, and the rest of the gap is execution I can't see in the record. Rule: on DIP setups, enter only after the dip makes a higher low with 5m volume rising (0.86x the hourly average is fading, not holding). Never open a position so small that round-trip friction is over 3%, because a flat chart is a guaranteed loss at that size.
@@ -101,16 +101,16 @@ Updated 2026-10-29T17:39:52Z (paper trading, never real money)
 - [2026-10-29 02:49] I expected FLOAT, the leading tokenized-stock coin, to run from its $1.04M higher-low reclaim toward $3M (V1, V6), and it did reach 1.64x. Then it faded, and I sat past the 45-minute time stop and got out at 158 minutes. Mcap was only down 7%, but I lost 24.5% because $0.56 of fees and slippage ate 18% of a $3.09 position, which broke my own $5-minimum and friction-gate rules. Next time: no entry under $5 or above 5% friction, no exceptions. If a trade gets past 1.5x before initials, move the stop up to break-even plus fees so a 1.6x peak can't turn into a loss (V11: plan the exit before the entry).
 
 ## Meta right now
-Fresh pump.fun launches under an hour old are taking nearly all the volume. The Hyperliquid joke is dying: XLIQUID (-97%) and Hypurr (-84%) got rugged, and HI ($108k cap, $168k on the 5m) is the last one standing at six minutes old. The AI/"labs" tickers are split. AgenC ($802k, +1327%, $111k on the 5m, 76% buys) is rising, while SENSE has sellers leading at 31% buys. Animal and inu coins (HOUSEWORM at 90% buys, VI, KATT) and the Elon tickers are fading: VI and ELOOONG are both below their hourly pace, and the KATT vamp, offgrid and SARA are -90% farm dumps. The crawler summary is stale (DESSA, CATBOT and PURR aren't in the scan), so I'm ignoring it. No buy this cycle. Watchlist: AgenC and HOUSEWORM as MIGRATED candidates (blocker: 24-30 minutes old with no holder or bundle data; I'll recheck for top 10 under 25%, dev under 1%, bundles under 10%, V1/V5/V13). HELMET is a FINAL_STRETCH look at a $33k cap with $13k on the 5m and 65% buys (blocker: holders unverified). PASS on HI (blocker: six minutes old means sniping a new pair, and its theme is rugging, V1).
+The meta right now is fresh pump.fun launches under an hour old, plus a dying Hyperliquid joke. HI (0.8h old, +661% on the hour, 49% buys) has a dead twin with the same ticker at -86%, which is a vamp mess (V1, V3). Elon Coin is 6 minutes old with $238k on the 5m. VOUCH and 50K are also minutes old, so taking any of them would mean sniping new pairs, where my data lags a pro terminal (V5). The AI/"labs" theme is fading. AgenC is printing $10k on the 5m against a ~$113k-per-5m hourly pace, and SENSE is -46% with 45% buys. Cat coins are getting farmed: CATBOT -77%, CATPOOP -99%. Political coins like $LAPTOP are an automatic no (V13). The crawler's own summary contradicts the scan, so I'm ignoring it. The only setups I'd take a paper trade on are HEXN (MIGRATED: $621k, $29k on the 5m, 63% buys, 0.7h old) and DESSA (V6 range: $10.2M, 76h old, $62.5k on the 5m, 56% buys, +26% on the hour). Both are watchlist only for now, not buys: holder, bundle and dev data aren't verified yet. I need top 10 under 25%, dev under 1% and bundlers under 10%, and HEXN still needs a check that it's the original (V6, V13). PASS on AgenC (blocker: 5m volume fell under a tenth of its hourly pace), HI (vamp or duplicate ticker and a split order book), Elon/VOUCH/50K (new-pair sniping) and HELMET (blocker: $2.8k on the 5m and -31%).
 
 ## Moving most in its scans, last 30 min (1h volume)
 - AgenC: $1,353,983 1h vol, $568,409 mcap, +6% 1h  
   CA `GJKnJsRiM5ATS4yhwjYRegT3iRsXUvcW1dafJPh8pump`
 - HI: $1,166,018 1h vol, $323,764 mcap, +661% 1h  
   CA `3w2TvVmTrtq4kSkoFVrTFQgz6MX7ThzDVrx9r5c3pump`
-- HOUSEWORM: $685,750 1h vol, $810,292 mcap, +281% 1h  
-  CA `9KhzhyM1BwgW6myZRcqdzQvemKjVrjck8kaevTkMpump`
-- HI: $571,247 1h vol, $12,058 mcap, -75% 1h  
-  CA `3q3jEDkqwNamTDWK7PSncQT82Ffppruax27GHqD4pump`
-- CATPOOP: $239,701 1h vol, $1,942 mcap, -98% 1h  
-  CA `7eCffjPZzRqFFDog8RN5cWsu2JNRH4Qm1iMPAREUpump`
+- HEXN: $722,042 1h vol, $621,465 mcap, +1103% 1h  
+  CA `ANVLA6eKiAq4nstD2Sg3SZhfVkSEwfnGccn12UQWpump`
+- DESSA: $611,907 1h vol, $10,249,010 mcap, +26% 1h  
+  CA `npz2FhoufQ7pKqhGpaipYWacrAkidyW2yDpVWSvpump`
+- HI: $586,428 1h vol, $54,449 mcap, -65% 1h  
+  CA `FkUGF7cPFy7hHuJwBERCTfAex3XcLFCH9pkj2RDUQTMe`
