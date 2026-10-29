@@ -1,12 +1,12 @@
 {
- "updated_at": "2026-10-29T12:35:38Z",
+ "updated_at": "2026-10-29T12:50:43Z",
  "paused_new_trades": false,
  "brain": {
   "mode": "subscription",
   "paused_until": null,
   "usage_48h": {
    "hours": 48,
-   "brain_calls": 341,
+   "brain_calls": 343,
    "plan_limit_hits": 0,
    "candidates_skipped_no_brain": 0,
    "stop_reviews_without_brain": 0
@@ -529,8 +529,8 @@
  ],
  "learned_rules": "- **Friction gate before every entry (incl. buy-backs):** estimate round-trip fees + slippage. Skip if it is over ~5% of position size, or if the first target can't pay at least 5x that cost. Fees cost 9\u201330% on my $3 trades and turned flat charts into \u221215% and \u221224% losses.\n- **Minimum position ~$5.** If conviction and the honest stop distance don't justify $5, PASS. Never inflate conviction or pull the stop closer to clear the bar (soul: sizing).\n- **MIGRATED: no momentum buys within ~20% of the local high** unless bundle data is verified. Clean top-10 numbers don't rule out bundles spread across many small wallets. CATCULUS bought near the high gapped from \u221230% to \u221259% (V3, V5).\n- **MIGRATED entries come on a pullback:** the 0.618 fib or point-of-control retest, with 5m volume \u2265 $10k and organic buys:sells (V1, V6). My two winners (CATBOT, FLOATER) were both clean dip-buys of the leading coin.\n- **In a vamp field, buy only the leader** by 5m volume and attention. Never the 2nd or 3rd copy (V1, V2). FLOATER beat 22 same-ticker coins on flow.\n- **DIP entries need a higher low plus rising 5m volume.** If 5m volume is under ~1x the hourly average, it's fading. No entry on the first red-to-green candle (V1).\n- **Re-entry after a stop or time stop only on reclaim of the prior high** (or a new higher high), not while it's basing mid-range. The CATBOT buy-back mid-range died flat.\n- **Take initials at 2x with sell-initials, every time** (V11). It worked on both winners.\n- **After initials, trail 30% from peak; once past 4x, tighten to ~25%.** Don't round-trip a runner. The CATBOT 35% trail gave back about 40% of a 4.44x peak.\n- **Time stop is right when the chart is flat.** If it's under 1.0x at 45 min with no volume surge, exit. Don't marry the bag (V1).\n- **Stop review: if top-10 or insider share dropped since entry and price is still bleeding, SELL.** Holding once is only for a dump where the narrative and 5m volume are still clearly intact.\n- **A gap through the stop is an entry problem, not a stop-width problem.** Fix it with entry location (pullbacks) and bundle checks, not a wider stop.\n- **Log fees with every trade lesson** so the friction math stays honest.\n",
  "meta": {
-  "age_minutes": 9,
-  "meta_summary": "Two themes are moving. First, fresh launches under an hour old pulling big 5m flow: MULTI (54 min old, +337% on the hour, $17k on the 5m) and MAX (18 min old, $41k on the 5m). Second, bot and AI-mascot names across the scan (CATBOT, Masbot, Max Leverage, Nullbyte), where only CATBOT has real money: $3.3M market cap, $18.7k 5m, 70% buys. Two themes are fading. First-hour curve coins are dying (\ub9ac\ud540 -98%, Scamcoin, WALT, PYE and MAS all under ~$4k on the 5m), and older migrated coins are coasting (DUBBLE $9.5k 5m, STONKLANA $12.8k 5m at 50/50 buys). Lingo isn't in the scan data, so it's unverified and not tradeable. CATBOT: BUY, conviction 7, only if holders load clean (top 10 under 25%, dev under 1%, bundles under 10%). DIP setup, down 16% on the hour with buyers stepping back in. Initials at 1.5x, 20% trail, half off when the 5m volume fades, stop where the hour's low breaks. MULTI: watchlist only. Blocker: on Raydium, not a pump.fun pool, with no holder or LP-burn data (V2, V6). MAX: PASS. Blocker: $41k traded in 5 minutes on a $30k market cap while the price is falling. That's churn, not buyers, and it smells like a farm (V13).",
+  "age_minutes": 4,
+  "meta_summary": "The meta right now is fresh-launch churn plus cats. Most first-two-hour coins already pulled their volume and died: EGG is -95% and FOMO -98%, each with over $250k of volume in the hour and about $0 in the last 5 minutes. ShuBao and MAS are down 50%+ with under $1k on the 5m. That theme is fading, and it looks like farms (V13). The one fresh coin still holding flow is OREN: 18 minutes old, +300% on the hour, $169k market cap, $10.2k on the 5m but only 52% buys. Cats are the steadier theme. CATBOT is the only one with real weight ($3.5M market cap, $12.2k 5m, 66% buys, -6% on the hour), and GATO and Vivi are weak (GATO 30% buys, Vivi $824 on the 5m). Day-old migrated coins are coasting lower: DUBBLE is -20% with 77% buys but only $6.6k on the 5m, which is under my bar. My trades: CATBOT is a conditional DIP/MIGRATED buy at conviction 6\u20137, only if holders come back clean (top 10 under 25%, dev under 1%, bundles under 10%), with initials at 1.5x, a 20% trail, half off when 5m volume fades, and a stop where the hour's low breaks. OREN goes on watch only. Blocker: it's 18 minutes old, I'd be chasing +300% into a 50/50 tape, and there's no holder or bundle data, so it qualifies on numbers but not on checks (V1, V6). PASS on MULTI. Blocker: it's on Raydium, not a pump.fun pool, and has no LP or holder data (V2, V6). PASS on $LAPTOP, whatever the headlines say. Blocker: a political figure is behind it and it's already -98% (V13). PASS on MAX. Blocker: $557 on the 5m and a $7.5k market cap, which is dead. One more thing: the crawler's own summary says MAX did $41k on the 5m and MULTI was 54 minutes old, and the scan shows neither, so I'm ignoring that summary and its built-in \"BUY\" call and trading only the scan data.",
   "top_narratives": [
    "app",
    "referral",
@@ -542,45 +542,49 @@
    "pepe",
    "fed",
    "stocks",
-   "prediction",
    "fees",
+   "prediction",
    "hyperliquid",
    "app referral",
+   "trump",
    "hunter",
    "creator",
-   "trump",
    "machine",
    "times",
    "slowing"
   ],
   "trending_categories": [
-   "Real World Assets (RWA)",
    "Made in USA",
    "Derivatives",
    "Perpetuals",
    "Decentralized Exchange (DEX)",
-   "Mobile Mining"
+   "Governance",
+   "Decentralized Finance (DeFi)"
   ],
   "trending_coins": [
-   "LIT",
    "HYPE",
-   "BTC",
-   "PEARL",
+   "LIT",
+   "AXIS",
    "Q",
+   "PEARL",
+   "BTC",
+   "BP",
    "PEPE",
+   "QTC",
    "PENGU",
+   "AERO",
    "SOL",
-   "ETH",
-   "FET",
-   "IRYS",
-   "KNTQ",
+   "NEAR",
    "PUMP",
-   "PI",
-   "QNT"
+   "FET"
   ],
   "hot_tickers": [
    {
     "ticker": "$LAPTOP",
+    "mentions": 3
+   },
+   {
+    "ticker": "$HYPE",
     "mentions": 2
    },
    {
@@ -608,7 +612,7 @@
     "mentions": 1
    },
    {
-    "ticker": "$BABYNUTS",
+    "ticker": "$PUSSY",
     "mentions": 1
    },
    {
@@ -622,31 +626,51 @@
    {
     "ticker": "$SHIB",
     "mentions": 1
-   },
-   {
-    "ticker": "$WHITEWHALE",
-    "mentions": 1
    }
   ],
   "headlines": [
    "Faster Solana slots fail to stop memecoin bot snipers",
-   "Top Meme Coin to Buy in 2026: Apeing Stage 10 Goes Live at $0.0008 as",
    "Former Doom Developer Could Be in Trouble as Bethesda Goes After Doom Memecoin",
    "Visa to close Crossmint memecoin rewards loophole following The Block investigation: report",
+   "Top Meme Coin to Buy in 2026: Apeing Stage 10 Goes Live at $0.0008 as",
    "Hunter Biden lashes out after $LAPTOP meme coin collapse"
   ],
   "scan_movers": [
    {
-    "symbol": "MULTI",
-    "name": "multiple.cash",
-    "ca": "9XwcqFsLTshVo7QwWyNmjVBsB982EW9C4YotSbpoxYYi",
-    "dex": "raydium",
-    "mcap_usd": 93886,
-    "vol_5m": 19162,
-    "vol_1h": 225818,
-    "change_1h": -42.13,
-    "buy_ratio_5m": 0.56,
-    "age_hours": 1.7
+    "symbol": "EGG",
+    "name": "The Egg",
+    "ca": "57ouseDGe5XZ5y9Me4WEwrhgi2q2cogtUUTqkUTGpump",
+    "dex": "pumpswap",
+    "mcap_usd": 1930,
+    "vol_5m": 1,
+    "vol_1h": 506851,
+    "change_1h": -95.36,
+    "buy_ratio_5m": 0.0,
+    "age_hours": 1.0
+   },
+   {
+    "symbol": "FOMO",
+    "name": "Fucking Oversized Mommy Orgasm",
+    "ca": "8hQwRKHjaqnUDGAdsrYyE3CHdziD6mTUpdMxjzHZpump",
+    "dex": "pumpswap",
+    "mcap_usd": 1897,
+    "vol_5m": 0,
+    "vol_1h": 271050,
+    "change_1h": -98,
+    "buy_ratio_5m": null,
+    "age_hours": 1.1
+   },
+   {
+    "symbol": "OREN",
+    "name": "Oren",
+    "ca": "AVCoELxSDqmT1yUHfzMu9FBpX1MmygBaYdaiLZvMpump",
+    "dex": "pumpswap",
+    "mcap_usd": 168926,
+    "vol_5m": 10190,
+    "vol_1h": 252891,
+    "change_1h": 300,
+    "buy_ratio_5m": 0.52,
+    "age_hours": 0.3
    },
    {
     "symbol": "CATBOT",
@@ -673,42 +697,6 @@
     "age_hours": 21.4
    },
    {
-    "symbol": "OREN",
-    "name": "Oren",
-    "ca": "57vAaMsnAJXkvULtAz7fsi6gRn3bHRJFJsJV1okNpump",
-    "dex": "pumpswap",
-    "mcap_usd": 40767,
-    "vol_5m": 17999,
-    "vol_1h": 112340,
-    "change_1h": -4.86,
-    "buy_ratio_5m": 0.55,
-    "age_hours": 0.2
-   },
-   {
-    "symbol": "Niggerfish",
-    "name": "Melichthys Niger",
-    "ca": "AbkkDdXT2qmpnevBNyeHN3mpxcvrqz9qJtoc8bGvpump",
-    "dex": "pumpfun",
-    "mcap_usd": 22907,
-    "vol_5m": 73559,
-    "vol_1h": 90013,
-    "change_1h": 467,
-    "buy_ratio_5m": 0.58,
-    "age_hours": 0.1
-   },
-   {
-    "symbol": "STONKLANA",
-    "name": "STONKLANA",
-    "ca": "GF74fBfcaeLjUiUwKpRiUbvMQtTvNyzMoo6KNyyqNyk6",
-    "dex": "raydium",
-    "mcap_usd": 574843,
-    "vol_5m": 3021,
-    "vol_1h": 52885,
-    "change_1h": -13.32,
-    "buy_ratio_5m": 0.41,
-    "age_hours": 23.6
-   },
-   {
     "symbol": "GATO",
     "name": "GTA6CAT",
     "ca": "HsprHxBRgiVaQdRf3TnKNuZZtaX9JUSPgMFdAkk6pump",
@@ -725,72 +713,72 @@
     "name": "Red Baron Guy",
     "ca": "GmyoabL4oY72yQA3EzTq5G5gQUF5SsE94jrs8bWfJzTt",
     "dex": "pumpswap",
-    "mcap_usd": 50484,
-    "vol_5m": 1846,
-    "vol_1h": 34287,
-    "change_1h": -17.01,
-    "buy_ratio_5m": 0.28,
-    "age_hours": 2.8
-   },
-   {
-    "symbol": "MAX",
-    "name": "Max Leverage",
-    "ca": "7WYJycaBqvSDGoCCMND89tAgToy4YNW7KdQVDwXzxPFq",
-    "dex": "pumpswap",
-    "mcap_usd": 9119,
-    "vol_5m": 938,
-    "vol_1h": 30343,
-    "change_1h": -56.74,
-    "buy_ratio_5m": 0.58,
-    "age_hours": 1.4
+    "mcap_usd": 64979,
+    "vol_5m": 988,
+    "vol_1h": 24589,
+    "change_1h": 19.02,
+    "buy_ratio_5m": 0.77,
+    "age_hours": 2.9
    },
    {
     "symbol": "MAS",
     "name": "Masbot",
     "ca": "AVX1TcPXhswZB3qGNiYMXaMK4dayncLPXoB9neubpump",
     "dex": "pumpswap",
-    "mcap_usd": 15189,
-    "vol_5m": 283,
-    "vol_1h": 27984,
-    "change_1h": -60.66,
-    "buy_ratio_5m": 0.56,
-    "age_hours": 2.6
+    "mcap_usd": 14660,
+    "vol_5m": 233,
+    "vol_1h": 24287,
+    "change_1h": -55.96,
+    "buy_ratio_5m": 0.69,
+    "age_hours": 2.7
+   },
+   {
+    "symbol": "MAX",
+    "name": "Max Leverage",
+    "ca": "7WYJycaBqvSDGoCCMND89tAgToy4YNW7KdQVDwXzxPFq",
+    "dex": "pumpswap",
+    "mcap_usd": 7494,
+    "vol_5m": 557,
+    "vol_1h": 18528,
+    "change_1h": -22.41,
+    "buy_ratio_5m": 0.64,
+    "age_hours": 1.6
    },
    {
     "symbol": "ShuBao",
     "name": "Shu Bao",
     "ca": "vRJNbvpdcv4TzcXTEuHkdPWsQKGXn6VEyatQKU2pump",
     "dex": "pumpfun",
-    "mcap_usd": 4878,
-    "vol_5m": 83,
-    "vol_1h": 25703,
-    "change_1h": -30.86,
-    "buy_ratio_5m": 0.4,
-    "age_hours": 1.0
+    "mcap_usd": 4772,
+    "vol_5m": 13,
+    "vol_1h": 16405,
+    "change_1h": -51.91,
+    "buy_ratio_5m": 0.0,
+    "age_hours": 1.2
    },
    {
     "symbol": "REMUS",
     "name": "Remus",
     "ca": "CA8q2mkYWZnUNqYmf6pxyxAPZsmSe2EG9P7hHMW5pump",
     "dex": "pumpswap",
-    "mcap_usd": 417717,
-    "vol_5m": 1336,
-    "vol_1h": 15083,
-    "change_1h": 7.75,
+    "mcap_usd": 440276,
+    "vol_5m": 1481,
+    "vol_1h": 15828,
+    "change_1h": 4.16,
     "buy_ratio_5m": 0.04,
-    "age_hours": 133.3
+    "age_hours": 133.5
    },
    {
     "symbol": "shibana",
     "name": "shibana",
     "ca": "25XYntzwGpubUjgJPTJgv5qKd3Kfp9n5tKKRZAVipump",
     "dex": "pumpswap",
-    "mcap_usd": 84269,
-    "vol_5m": 1461,
-    "vol_1h": 13803,
-    "change_1h": -7.67,
-    "buy_ratio_5m": 0.42,
-    "age_hours": 15.4
+    "mcap_usd": 88022,
+    "vol_5m": 725,
+    "vol_1h": 13941,
+    "change_1h": -3.99,
+    "buy_ratio_5m": 0.59,
+    "age_hours": 15.6
    },
    {
     "symbol": "Vivi",
@@ -809,12 +797,24 @@
     "name": "jeff",
     "ca": "HAsTKXYvv65zM7J6Cu5o5PcZsiKMQYo5oz4WPjgqwP6k",
     "dex": "raydium",
-    "mcap_usd": 1244758,
-    "vol_5m": 243,
-    "vol_1h": 9729,
-    "change_1h": -7.89,
-    "buy_ratio_5m": 0.6,
-    "age_hours": 35.6
+    "mcap_usd": 1204026,
+    "vol_5m": 162,
+    "vol_1h": 10202,
+    "change_1h": -5.21,
+    "buy_ratio_5m": 0.43,
+    "age_hours": 35.7
+   },
+   {
+    "symbol": "KING",
+    "name": "KingPad",
+    "ca": "GMXf4jmhR4hEeAjqq543oi4w2VVLd21fmKrn2gpQ2xsu",
+    "dex": "raydium",
+    "mcap_usd": 59476,
+    "vol_5m": 533,
+    "vol_1h": 9422,
+    "change_1h": 50.43,
+    "buy_ratio_5m": 0.0,
+    "age_hours": 8.8
    }
   ]
  },
@@ -824,27 +824,16 @@
   "equity_usd": 99.93,
   "progress_pct": 10.0,
   "days_left": 6.7,
-  "needed_daily_growth_pct": 41.1
+  "needed_daily_growth_pct": 41.2
  },
  "last_scan": {
-  "at": 1793277307.199015,
-  "tokens": 18,
-  "pairs": 16,
+  "at": 1793278196.808463,
+  "tokens": 2,
+  "pairs": 0,
   "passed_market_filters": 0,
   "researched": 0
  },
  "recent_looks": [
-  {
-   "ts": "2026-10-29T11:29:28Z",
-   "symbol": "STONKLANA",
-   "ca": "GF74fBfcaeLjUiUwKpRiUbvMQtTvNyzMoo6KNyyqNyk6",
-   "setup": "MIGRATED",
-   "mcap_usd": 548405,
-   "vol_5m": 12849,
-   "outcome": "PASS",
-   "conviction": 1,
-   "reason": "PASS: STONKLANA is down 99.6% from a $156M peak, the data disagrees with itself, and 47 insider networks are flagged. That's a crime scene, not a dip (V6, V13, V17)."
-  },
   {
    "ts": "2026-10-29T11:30:15Z",
    "symbol": "MULTI",
@@ -998,6 +987,17 @@
    "outcome": "REJECT",
    "conviction": null,
    "reason": "Dev holds 3.3% (>1%) (V13, V17)"
+  },
+  {
+   "ts": "2026-10-29T12:38:36Z",
+   "symbol": "OREN",
+   "ca": "AVCoELxSDqmT1yUHfzMu9FBpX1MmygBaYdaiLZvMpump",
+   "setup": "MIGRATED",
+   "mcap_usd": 168926,
+   "vol_5m": 10190,
+   "outcome": "PASS",
+   "conviction": 3,
+   "reason": "PASS: 14% off the high on an unverified-bundle, 17-minute-old coin with 5m volume fading to 0.48x. That's the CATCULUS setup again. Blocker: entry location (learned rule, V3/V5)."
   }
  ],
  "scorecard": {
