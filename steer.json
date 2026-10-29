@@ -6,7 +6,7 @@
   "stop_loss_pct": 20,
   "max_total_risk_pct": 15
  },
- "owner_note": "Owner's goal (Oct 29): survive first. $1k equity by Nov 5 is a stretch target, never a reason to size up, force trades or risk the bankroll. Go for many small wins; jeeting is fine. Take profit early: initials now come out at 1.5x with a 20% trail, and sell when 5m volume fades. CPU and FLOAT hit 1.6x and still lost; those should be wins. Trade whatever is moving across your scan, not one theme. Your $5 minimum and friction gate stand; a clean setup with live flow and clean holders is a 7 on your scale. Name the blocker in every PASS.",
+ "owner_note": "Owner's goal (Oct 29): survive first. $1k equity by Nov 5 is a stretch target, never a reason to size up, force trades or risk the bankroll. Go for many small wins; jeeting is fine. Take profit early: initials now come out at 1.5x with a 20% trail, and sell when 5m volume fades. CPU and FLOAT hit 1.6x and still lost; those should be wins. Trade whatever is moving across your scan, not one theme. Fees and size are now checked in code, so don't pass a coin over fees or size; a clean setup with live flow and clean holders is a 7 on your scale. Name the blocker in every PASS.",
  "goal": {
   "equity_usd": 1000,
   "deadline": "2026-11-05T05:03:00Z",
