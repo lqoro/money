@@ -1,13 +1,13 @@
 # Trencher live report
 
-Updated 2026-10-29T19:57:07Z (paper trading, never real money)
+Updated 2026-10-29T20:12:42Z (paper trading, never real money)
 
 - Equity: $99.93 (-0.1% vs $100 start)
-- Goal: $1,000 by 2026-11-05 05:03Z (a stretch, survival first): at 10% of it, 6.4 days left, needs +43.5% a day from here
+- Goal: $1,000 by 2026-11-05 05:03Z (a stretch, survival first): at 10% of it, 6.4 days left, needs +43.6% a day from here
 - Closed trades: 7, 2 wins
 - Fees paid: $4.16 (axiom $0.43, network $3.26, pool $0.35), plus $0.62 lost to slippage
 - New trades: on
-- Brain: subscription, 450 calls and 0 plan-limit hits in 48h
+- Brain: subscription, 454 calls and 0 plan-limit hits in 48h
 
 ## Scorecard (after fees)
 - 7 closed, 2 won (29%), net $-0.07
@@ -67,29 +67,29 @@ Updated 2026-10-29T19:57:07Z (paper trading, never real money)
   CA `Bv1a7cEj5aRnJQhMw4kRQqAFesMSd5LwcDnUzq52BMmr`
 
 ## Last scan
-- 19:56Z: 1 coins, 1 with pairs, 0 passed the market filters, 0 researched
+- 20:11Z: 7 coins, 7 with pairs, 2 passed the market filters, 2 researched
 
 ## Coins it looked at, and why it passed
+- 20:12Z REPAIR (MIGRATED, $35,094 mcap, $2,918 5m vol): PASS at conviction 2, PASS — 53 seconds old, $2.9k 5m with sellers ahead 37/28, five same-ticker coins and the site doesn't show this CA. That's sniping on lagged data, not a setup (V1, V5, V13).  
+  CA `5qfkeXdoLn1sMPYtT4qhmXpY9bygouUmZAymFiFtLe8C`
+- 20:12Z HOUSEWORM (DIP, $484,871 mcap, $6,536 5m vol): PASS at conviction 3, PASS: HOUSEWORM's 5m volume is $6.5k, which is 0.86x its hourly pace. The crowd is leaving, so this dip is a falling knife. (V1, V6)  
+  CA `9KhzhyM1BwgW6myZRcqdzQvemKjVrjck8kaevTkMpump`
+- 20:10Z HYPERCAT (DIP, $353,663 mcap, $10,925 5m vol): REJECT, Dip with fading attention is a falling knife, not a dip  
+  CA `AEqw9bAtqJCWPNNJp9EieXw8GYwm1kgsJBDdJBU2pump`
+- 20:08Z ASSAY (FINAL_STRETCH, $29,691 mcap, $19,105 5m vol): PASS at conviction 3, PASS: an "AI checker" coin with a dead website, no GitHub, two bigger coins already using the ticker, and sellers ahead of buyers at 74% bonded. That looks like a LARP, not a runner. (V1, V3)  
+  CA `C5hLhhd5MivJ8m2MTQjB9A2nmuBymRzYhyRpeRMMpump`
+- 20:06Z HYPEHOUSE (FINAL_STRETCH, $32,689 mcap, $28,109 5m vol): REJECT, Top 10 hold 28.7% ex-pool (>25%) (V13)  
+  CA `9hsUf4d21CpjLs6FNdxQosSEUnoT4SqLyUAjqGESKgG7`
+- 19:59Z HYPEFAUCET (FINAL_STRETCH, $25,359 mcap, $3,183 5m vol): PASS at conviction 3, PASS — $3.2k on the 5m, down 30% on the hour, 4 insider wallet networks, and buys and sells about even. That's a bonding-curve coin losing its crowd, not a final-stretch run (V1, V13).  
+  CA `HyPESTUwRbb21wH4Qyw9ayKhb9AC7bWciqGbnGp7dRip`
+- 19:58Z GATO (MIGRATED, $4,944,092 mcap, $4,005 5m vol): REJECT, Dev holds 3.3% (>1%) (V13, V17)  
+  CA `HsprHxBRgiVaQdRf3TnKNuZZtaX9JUSPgMFdAkk6pump`
+- 19:57Z HEXN (DIP, $1,073,436 mcap, $20,596 5m vol): REJECT, Dip with fading attention is a falling knife, not a dip  
+  CA `ANVLA6eKiAq4nstD2Sg3SZhfVkSEwfnGccn12UQWpump`
 - 19:56Z STANK (MIGRATED, $108,939 mcap, $3,074 5m vol): PASS at conviction 4, PASS: STANK is buying a fresh +20% 15m pop 10.6% under its high, on $3k of 5m volume, with bundles unverified. That's the CATCULUS mistake again with weaker flow. (V1, V3, V6)  
   CA `5wsjHxT5nW5jQuVupXUNnYszF3WoWCfGGk9LMcsCJzY8`
 - 19:49Z OREN (DIP, $138,475 mcap, $2,221 5m vol): PASS at conviction 3, PASS — 5m volume $2.2k is basically dead for a dip buy, and the GitHub shows a different CA with stale AI claims. Vamp/LARP smell, no crowd. (V1, V3, V6)  
   CA `57vAaMsnAJXkvULtAz7fsi6gRn3bHRJFJsJV1okNpump`
-- 19:48Z AgenC (MIGRATED, $127,343 mcap, $2,647 5m vol): PASS at conviction 2, PASS: down 88.9% from the $1.15M peak, which is past my 75% dip limit. 5m volume is $2.6k, only 0.29x the hourly pace. Falling knife (V1, V6).  
-  CA `GJKnJsRiM5ATS4yhwjYRegT3iRsXUvcW1dafJPh8pump`
-- 19:47Z three (MIGRATED, $410,878 mcap, $4,520 5m vol): PASS at conviction 3, PASS: a six-month-old "3D AI agent layer" coin with no GitHub, a website that doesn't show this CA, and $4.5k of 5m flow. That's a LARP with no crowd (V1, V6).  
-  CA `FeMbDoX7R1Psc4GEcvJdsbNbZA3bfztcyDCatJVJpump`
-- 19:46Z COLUM (MIGRATED, $67,865 mcap, $24,312 5m vol): PASS at conviction 3, PASS: a 14-minute-old coin 4.7% off its high, with top 10 at 24.6% ex-pool and 9 insider networks. That's a chase into a possible bundle, not a pullback (V3, V6, V13).  
-  CA `GozXFUVjxtTMVfF1HRAE9difXDLcciemgsJ2i5u1X6UJ`
-- 19:41Z Hypurr (DIP, $168,752 mcap, $10,023 5m vol): REJECT, Dip with fading attention is a falling knife, not a dip  
-  CA `FSsgh7o8SvBDuZcxnShESZ175UWhwE4h2DgCLKvfpump`
-- 19:41Z HYPEDOG (DIP, $206,226 mcap, $13,377 5m vol): PASS at conviction 4, PASS: 5m volume is only 0.69x its hourly pace on a 45% dip, and HYPEDOG is one of 8 coins on this ticker, a side copy of the HYPE meta where HYPERCAT leads. The website is a one-hour-old template that still says "PASTE_CONTRACT_ADDRESS_HERE". (V1, V3, V13)  
-  CA `CNtdYoJq9viwsj5eogkK45Bn9HjMyGKWpU6GB2dwpump`
-- 19:37Z Tofu (DIP, $105,780 mcap, $11,763 5m vol): REJECT, Dip with fading attention is a falling knife, not a dip  
-  CA `GxMZtiBgx9ctU3KsybnB7aWBcPSVhQQqs8FzKJsVpump`
-- 19:34Z CROWD (MIGRATED, $117,620 mcap, $16,913 5m vol): REJECT, Dev holds 8.5% (>1%) (V13, V17)  
-  CA `H3iGq7KSqdzw7QG3xZo2mF4eaYsvihZqqoAkdXripump`
-- 19:31Z HyPepe (FINAL_STRETCH, $25,704 mcap, $6,899 5m vol): REJECT, Top 10 hold 25.3% ex-pool (>25%) (V13)  
-  CA `FAQ9cZQdYQA8TTQnyjx1dgUjmqcHc4zZ7N3vwDHSpump`
 
 ## Recent lessons
 - [2026-10-28 14:15] Expected: a $1.2M dip 47% off the $2.3M peak, with $17.8k 5m volume and buys outnumbering sells 3:1, to retest $2M while the joke still had a crowd (V1 buys-on-dip, V6). What happened: it peaked at 1.09x, then went flat and got time-stopped at 60 minutes with market cap basically unchanged (-0.6%), but I still lost 15.4% because fees and slippage ate about 9% of a $3.33 position, and the rest of the gap is execution I can't see in the record. Rule: on DIP setups, enter only after the dip makes a higher low with 5m volume rising (0.86x the hourly average is fading, not holding). Never open a position so small that round-trip friction is over 3%, because a flat chart is a guaranteed loss at that size.
@@ -104,13 +104,13 @@ Updated 2026-10-29T19:57:07Z (paper trading, never real money)
 Meta: the Hyperliquid/HYPE joke is the main theme (Hypurr, HYPEDOG, HyPepe, 10XHYPE, HYPETARDIO, Max Leverage; HYPE trending on CoinGecko). Second theme: fresh pumpswap migrations under 1h old pulling flow (Tofu, CROWD, COLUM), hot but sniping territory on lagged data (V5). Fading: the 3-6h-old coins (HOUSEWORM 5m at ~1/4 of hourly pace, VI, AgenC -34% to -70% on the hour). Those are falling knives. The crawler's own summary uses stale numbers (HEXN not in scan, HOUSEWORM figures wrong), so it's ignored. $LAPTOP is out on the politician rule (V13). No holder, dev or bundle data yet, so watchlist only, no buys. Best setup is HYPEDOG (MIGRATED, $13.4k 5m and gaining speed, +94% on the hour, 1.1h old): conviction 7 if top 10 under 25%, dev under 1% and bundlers under 10%. CROWD ($16.9k 5m, 81% buys) is second under the same checks. Passes: Tofu and Hypurr (5m volume at about a quarter or less of hourly pace), COLUM (no pump suffix, original unverified), and the bonding-curve coins (under $26k cap, most with sellers in control, some under $2k on the 5m). Exit plan: initials at 1.5x, 20% trail, sell half when the 5m drops to half its hourly pace, break-even stop at 1.3x.
 
 ## Moving most in its scans, last 30 min (1h volume)
-- Tofu: $618,446 1h vol, $105,780 mcap, +137% 1h  
-  CA `GxMZtiBgx9ctU3KsybnB7aWBcPSVhQQqs8FzKJsVpump`
-- Hypurr: $510,076 1h vol, $168,752 mcap, -24% 1h  
-  CA `FSsgh7o8SvBDuZcxnShESZ175UWhwE4h2DgCLKvfpump`
-- HYPEDOG: $233,057 1h vol, $206,226 mcap, +94% 1h  
-  CA `CNtdYoJq9viwsj5eogkK45Bn9HjMyGKWpU6GB2dwpump`
-- MAX: $175,400 1h vol, $10,036 mcap, +175% 1h  
-  CA `4CN5q1Dqx3XTMcJ3vDkVxxEZczrDgJBu64a5yD9qpump`
+- HEXN: $789,185 1h vol, $1,073,436 mcap, +10% 1h  
+  CA `ANVLA6eKiAq4nstD2Sg3SZhfVkSEwfnGccn12UQWpump`
+- TOFU: $403,902 1h vol, $1,972 mcap, -98% 1h  
+  CA `FaBb6ebRTGbZWchGiC2eSSRaZWVsFYLe9UqvBuiYpump`
+- HYPERCAT: $279,145 1h vol, $353,663 mcap, -15% 1h  
+  CA `AEqw9bAtqJCWPNNJp9EieXw8GYwm1kgsJBDdJBU2pump`
+- FACEPALM: $135,944 1h vol, $3,321 mcap, -13% 1h  
+  CA `PfNmho6WyGYSEiUE6AuNgqSyC8CnWGTbpgPXitupump`
 - COLUM: $123,994 1h vol, $67,865 mcap, +70% 1h  
   CA `GozXFUVjxtTMVfF1HRAE9difXDLcciemgsJ2i5u1X6UJ`
