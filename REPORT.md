@@ -1,13 +1,13 @@
 # Trencher live report
 
-Updated 2026-10-29T12:05:21Z (paper trading, never real money)
+Updated 2026-10-29T12:20:25Z (paper trading, never real money)
 
 - Equity: $99.93 (-0.1% vs $100 start)
-- Goal: $1,000 by 2026-11-05 05:03Z (a stretch, survival first): at 10% of it, 6.7 days left, needs +41% a day from here
+- Goal: $1,000 by 2026-11-05 05:03Z (a stretch, survival first): at 10% of it, 6.7 days left, needs +41.1% a day from here
 - Closed trades: 7, 2 wins
 - Fees paid: $4.16 (axiom $0.43, network $3.26, pool $0.35), plus $0.62 lost to slippage
 - New trades: on
-- Brain: subscription, 335 calls and 0 plan-limit hits in 48h
+- Brain: subscription, 339 calls and 0 plan-limit hits in 48h
 
 ## Scorecard (after fees)
 - 7 closed, 2 won (29%), net $-0.07
@@ -67,9 +67,17 @@ Updated 2026-10-29T12:05:21Z (paper trading, never real money)
   CA `Bv1a7cEj5aRnJQhMw4kRQqAFesMSd5LwcDnUzq52BMmr`
 
 ## Last scan
-- 12:04Z: 5 coins, 3 with pairs, 0 passed the market filters, 0 researched
+- 12:19Z: 4 coins, 2 with pairs, 0 passed the market filters, 0 researched
 
 ## Coins it looked at, and why it passed
+- 12:16Z MULTI (DIP, $93,886 mcap, $19,162 5m vol): PASS at conviction 2, PASS — tech coin with no code, website registered about 2 hours ago that doesn't show this CA, Raydium pool with no LP-burn data, and two bigger coins share the ticker. LARP or vamp, not a dip (V1, V3, V6).  
+  CA `9XwcqFsLTshVo7QwWyNmjVBsB982EW9C4YotSbpoxYYi`
+- 12:15Z STONKLANA (MIGRATED, $574,843 mcap, $3,021 5m vol): PASS at conviction 2, PASS: down 99.6% from a $156M peak, 5m volume at $3k and fading (0.69x), sells beat buys, 47 insider networks. Not a dip, a corpse (V1, V6, V13).  
+  CA `GF74fBfcaeLjUiUwKpRiUbvMQtTvNyzMoo6KNyyqNyk6`
+- 12:08Z Niggerfish (FINAL_STRETCH, $22,907 mcap, $73,559 5m vol): PASS at conviction 2, PASS: the ticker is a racial slur, there's a bigger coin with the same ticker so this one is probably a copy, and it's a 6-minute-old pair doing $73k of volume in 5 minutes on a $23k cap. That much volume on a cap that small looks like churn, not a crowd (V6, V1, V13).  
+  CA `AbkkDdXT2qmpnevBNyeHN3mpxcvrqz9qJtoc8bGvpump`
+- 12:07Z OREN (MIGRATED, $40,767 mcap, $17,999 5m vol): PASS at conviction 3, PASS: 11 minutes old, 8 insider networks, top 10 at 22.4%, and the "socials" are someone else's tweet plus a stranger's GitHub. That's a LARP wearing a borrowed hoodie (V1, V6, V13).  
+  CA `57vAaMsnAJXkvULtAz7fsi6gRn3bHRJFJsJV1okNpump`
 - 11:58Z FOMO (MIGRATED, $107,811 mcap, $40,765 5m vol): PASS at conviction 3, PASS: 20-minute-old coin, only 11.6% off its high, with 35 insider wallet networks and no bundle data. That's the CATCULUS setup again. (V3, V5, V17)  
   CA `8hQwRKHjaqnUDGAdsrYyE3CHdziD6mTUpdMxjzHZpump`
 - 11:56Z EGG (MIGRATED, $176,756 mcap, $19,232 5m vol): PASS at conviction 4, PASS: momentum chase only 14% off the high on a 12-minute-old migrated coin, bundles unverified, and a bigger EGG already exists. That's how CATCULUS happened. Watchlist for a retest near $105k (V1, V3, V5).  
@@ -82,14 +90,6 @@ Updated 2026-10-29T12:05:21Z (paper trading, never real money)
   CA `dyw5fDNv91eknniMG4tGCU1ZrzjuxbpsLiEzih6pump`
 - 11:37Z WALT (DIP, $62,299 mcap, $4,143 5m vol): PASS at conviction 3, PASS: a 50% dip where the 5m volume has dropped to $4.1k, half its hourly pace. The crowd is leaving, and 3 bigger WALTs mean this may not be the original. (V1, V6)  
   CA `GmyoabL4oY72yQA3EzTq5G5gQUF5SsE94jrs8bWfJzTt`
-- 11:30Z MULTI (DIP, $168,747 mcap, $17,417 5m vol): REJECT, Dip with fading attention is a falling knife, not a dip  
-  CA `9XwcqFsLTshVo7QwWyNmjVBsB982EW9C4YotSbpoxYYi`
-- 11:29Z STONKLANA (MIGRATED, $548,405 mcap, $12,849 5m vol): PASS at conviction 1, PASS: STONKLANA is down 99.6% from a $156M peak, the data disagrees with itself, and 47 insider networks are flagged. That's a crime scene, not a dip (V6, V13, V17).  
-  CA `GF74fBfcaeLjUiUwKpRiUbvMQtTvNyzMoo6KNyyqNyk6`
-- 11:27Z MAX (MIGRATED, $30,281 mcap, $40,667 5m vol): REJECT, Top 10 hold 26.4% ex-pool (>25%) (V13)  
-  CA `7WYJycaBqvSDGoCCMND89tAgToy4YNW7KdQVDwXzxPFq`
-- 10:54Z CATBOT (MIGRATED, $3,995,588 mcap, $12,258 5m vol): PASS at conviction 4, PASS: the original Cat Bot with clean holders, but 5m volume is down to 0.39x the hour and it's only 27% off a 24-minute-old high. That's a fading chase with no higher low (V1, V6).  
-  CA `dyw5fDNv91eknniMG4tGCU1ZrzjuxbpsLiEzih6pump`
 
 ## Recent lessons
 - [2026-10-28 14:15] Expected: a $1.2M dip 47% off the $2.3M peak, with $17.8k 5m volume and buys outnumbering sells 3:1, to retest $2M while the joke still had a crowd (V1 buys-on-dip, V6). What happened: it peaked at 1.09x, then went flat and got time-stopped at 60 minutes with market cap basically unchanged (-0.6%), but I still lost 15.4% because fees and slippage ate about 9% of a $3.33 position, and the rest of the gap is execution I can't see in the record. Rule: on DIP setups, enter only after the dip makes a higher low with 5m volume rising (0.86x the hourly average is fading, not holding). Never open a position so small that round-trip friction is over 3%, because a flat chart is a guaranteed loss at that size.
@@ -104,13 +104,13 @@ Updated 2026-10-29T12:05:21Z (paper trading, never real money)
 Two themes are moving. First, fresh launches under an hour old pulling big 5m flow: MULTI (54 min old, +337% on the hour, $17k on the 5m) and MAX (18 min old, $41k on the 5m). Second, bot and AI-mascot names across the scan (CATBOT, Masbot, Max Leverage, Nullbyte), where only CATBOT has real money: $3.3M market cap, $18.7k 5m, 70% buys. Two themes are fading. First-hour curve coins are dying (리핀 -98%, Scamcoin, WALT, PYE and MAS all under ~$4k on the 5m), and older migrated coins are coasting (DUBBLE $9.5k 5m, STONKLANA $12.8k 5m at 50/50 buys). Lingo isn't in the scan data, so it's unverified and not tradeable. CATBOT: BUY, conviction 7, only if holders load clean (top 10 under 25%, dev under 1%, bundles under 10%). DIP setup, down 16% on the hour with buyers stepping back in. Initials at 1.5x, 20% trail, half off when the 5m volume fades, stop where the hour's low breaks. MULTI: watchlist only. Blocker: on Raydium, not a pump.fun pool, with no holder or LP-burn data (V2, V6). MAX: PASS. Blocker: $41k traded in 5 minutes on a $30k market cap while the price is falling. That's churn, not buyers, and it smells like a farm (V13).
 
 ## Moving most in its scans, last 30 min (1h volume)
-- CATBOT: $397,582 1h vol, $3,291,471 mcap, -16% 1h  
-  CA `dyw5fDNv91eknniMG4tGCU1ZrzjuxbpsLiEzih6pump`
 - EGG: $238,633 1h vol, $176,756 mcap, +318% 1h  
   CA `57ouseDGe5XZ5y9Me4WEwrhgi2q2cogtUUTqkUTGpump`
 - FOMO: $234,451 1h vol, $107,811 mcap, +155% 1h  
   CA `8hQwRKHjaqnUDGAdsrYyE3CHdziD6mTUpdMxjzHZpump`
-- DUBBLE: $136,526 1h vol, $1,233,339 mcap, +7% 1h  
-  CA `FEXGegqeVm5vZurqyC7qsmkLqWspVV1ACb9bbLvcpump`
-- WALT: $95,823 1h vol, $62,299 mcap, -32% 1h  
-  CA `GmyoabL4oY72yQA3EzTq5G5gQUF5SsE94jrs8bWfJzTt`
+- MULTI: $225,818 1h vol, $93,886 mcap, -42% 1h  
+  CA `9XwcqFsLTshVo7QwWyNmjVBsB982EW9C4YotSbpoxYYi`
+- MAX: $144,945 1h vol, $7,860 mcap, -83% 1h  
+  CA `7WYJycaBqvSDGoCCMND89tAgToy4YNW7KdQVDwXzxPFq`
+- OREN: $112,340 1h vol, $40,767 mcap, -5% 1h  
+  CA `57vAaMsnAJXkvULtAz7fsi6gRn3bHRJFJsJV1okNpump`
