@@ -13,7 +13,8 @@ No real money, wallet or keys are involved. It only simulates trades.
 every 60s  scan ──► market filter ──► checklist ──► Claude research ──► paper BUY
                      (DexScreener)     (RugCheck,      (soul + guide,      (fees +
                                         guide §4)       web search)         slippage)
-every 15s  monitor open positions ──► exits: initials at 2x, trail, time stop, rug
+every 15s  monitor open positions ──► exits: initials at 2x, break-even stop, fading
+                                       volume, trail, time stop, rug
            stop hit ──► Claude reviews: bundle exit + narrative alive? hold once : sell
 on close   Claude writes a lesson; stopped-out coins go on a re-entry watchlist
 every 5    Claude studies its results ──► rewrites learned rules + retunes its strategy
@@ -84,7 +85,13 @@ every 5    Claude studies its results ──► rewrites learned rules + retunes
    opening trades after a 25% day.
 7. **Exits** (`agent/risk.py`): sell initials at ~2x, then trail the rest; time
    stop if nothing happens in 45 min; rug detection on liquidity collapse; 12h
-   max hold. **A stop is a decision point**: when the −30% stop hits, Claude
+   max hold. **Break-even stop**: once a coin has run to at least 1.3x (and 10%
+   above the stop), the stop moves up to the price where selling everything
+   gets the cost back after the sell's fees and slippage, plus 3%. That's about
+   1.1-1.3x depending on size, because network fees are flat. It sells outright,
+   gaps included. **Fading volume**: when a green position's 5m volume drops
+   under half the last hour's 5m average for a minute, it sells half, once (all
+   of it if half would be under $4). **A stop is a decision point**: when the −30% stop hits, Claude
    compares holders now vs at entry and checks the narrative. If a bundle came
    out (top 10 / insider share dropped) and attention is still alive, it can
    hold once with a deeper stop and a deadline to reclaim; otherwise it sells.

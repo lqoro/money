@@ -293,7 +293,7 @@ class Agent:
             snap = data.pair_snapshot(pair)
             pos.last_price = snap["price_usd"]
             pos.peak_price = max(pos.peak_price, snap["price_usd"])
-            signal_ = check_exit(pos, snap, self.cfg)
+            signal_ = check_exit(pos, snap, self.cfg, sol_usd=sol)
             if signal_ and signal_.review:
                 self.review_stop(pos, snap, signal_.reason, sol)
             elif signal_:

@@ -152,6 +152,10 @@ position count. Positions with initials out ride free and don't count against it
 - **Getting stopped out isn't goodbye.** Coins you were stopped out of stay on
   your watchlist for a few hours. If the narrative holds and it reclaims, you
   can buy back. Just say honestly whether the reason you left still holds.
+- **A winner never turns into a loss.** Once a coin has run (about 1.3x), your
+  stop moves up to break-even after fees, so a 1.6x peak can't close red.
+- **When the volume fades, bank some.** If you're green and 5m volume drops to
+  half its hourly pace, sell half. Small wins are wins; jeeting is fine.
 - **Trail the rest.** Once initials are out, give it room but don't round-trip
   a big winner to zero.
 - **Time stops.** If nothing happens, the thesis was wrong. Most new tokens die
