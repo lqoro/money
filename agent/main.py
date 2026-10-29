@@ -46,6 +46,9 @@ class Agent:
         # For the Duet report: what the last scan saw, and every coin it looked at and why it passed.
         self.last_scan: dict = {}
         self.recent_looks: deque[dict] = deque(maxlen=30)
+        # Every coin seen in the last half hour of scans (newest snapshot each), so the
+        # movers list doesn't shrink to whatever one scan saw outside its cooldowns.
+        self.seen_snaps: dict[str, dict] = {}
         self.bridge = DuetBridge(cfg, self)
 
     # ---------------------------------------------------------------- web crawler
@@ -135,9 +138,12 @@ class Agent:
         candidates.sort(key=lambda s: s["vol_5m"], reverse=True)
         log.info("Scan: %d tokens (%d on watchlist), %d pairs, %d pass market filters (SOL $%.2f)",
                  len(tokens), len(watched), len(pairs), len(candidates), sol)
-        # The live meta is what the market is trading right now: keep the scan's movers
-        # (all coins, not just candidates) for the meta summary and the brain.
-        self.meta["scan_movers"] = radar.scan_movers(snaps)
+        # The live meta is what the market is trading right now: keep the movers among
+        # every coin scanned lately (not just candidates) for the meta summary and the brain.
+        for snap in snaps:
+            self.seen_snaps[snap["address"]] = {**snap, "_seen_at": now}
+        self.seen_snaps = {a: v for a, v in self.seen_snaps.items() if now - v["_seen_at"] < 30 * 60}
+        self.meta["scan_movers"] = radar.scan_movers(list(self.seen_snaps.values()))
         self.meta["scan_movers_at"] = now
         self.last_scan = {"at": now, "tokens": len(tokens), "pairs": len(pairs),
                           "passed_market_filters": len(candidates),

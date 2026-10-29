@@ -866,3 +866,19 @@ def test_duet_goal_shows_progress_in_the_report_and_the_prompt(cfg):
     assert cfg.goal_progress(100.0) is None
     apply_steering(cfg, {})
     assert build_report(agent)[0]["goal"] is None
+
+
+def test_movers_keep_coins_from_earlier_scans(cfg, monkeypatch):
+    from agent.main import Agent
+    agent = Agent(cfg)
+    hot = {"HotCoin111": snap(address="HotCoin111", symbol="HOT", vol_1h=500_000)}
+    _scan_with(agent, monkeypatch, hot, {"action": "PASS", "verdict": "PASS", "conviction": 2, "exit_plan": {}})
+    # Next scan: HOT is on cooldown, so only a quiet coin comes back.
+    quiet = {"Quiet111": snap(address="Quiet111", symbol="QUIET", vol_5m=10, vol_1h=13)}
+    _scan_with(agent, monkeypatch, quiet, {"action": "PASS", "verdict": "PASS", "conviction": 2, "exit_plan": {}})
+    assert [m["symbol"] for m in agent.meta["scan_movers"]] == ["HOT", "QUIET"]
+    for v in agent.seen_snaps.values():
+        v["_seen_at"] -= 31 * 60  # half an hour later they age out
+    new = {"New111": snap(address="New111", symbol="NEW", vol_5m=10, vol_1h=50)}
+    _scan_with(agent, monkeypatch, new, {"action": "PASS", "verdict": "PASS", "conviction": 2, "exit_plan": {}})
+    assert [m["symbol"] for m in agent.meta["scan_movers"]] == ["NEW"]

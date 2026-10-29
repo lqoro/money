@@ -178,7 +178,7 @@ def build_report(agent) -> tuple[dict, str]:
         lines += ["", "## Meta right now", agent.meta["meta_summary"]]
     movers = (agent.meta.get("scan_movers") or [])[:5]
     if movers:
-        lines += ["", "## Moving most in its scan (1h volume)"]
+        lines += ["", "## Moving most in its scans, last 30 min (1h volume)"]
         lines += [f"- {m.get('symbol')}: ${m.get('vol_1h', 0):,} 1h vol, ${m.get('mcap_usd', 0):,} mcap"
                   + (f", {m['change_1h']:+.0f}% 1h" if isinstance(m.get("change_1h"), (int, float)) else "")
                   + f"  \n  CA `{m.get('ca')}`" for m in movers]
