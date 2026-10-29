@@ -1,13 +1,13 @@
 # Trencher live report
 
-Updated 2026-10-29T20:58:42Z (paper trading, never real money)
+Updated 2026-10-29T21:13:47Z (paper trading, never real money)
 
 - Equity: $99.93 (-0.1% vs $100 start)
-- Goal: $1,000 by 2026-11-05 05:03Z (a stretch, survival first): at 10% of it, 6.3 days left, needs +43.8% a day from here
+- Goal: $1,000 by 2026-11-05 05:03Z (a stretch, survival first): at 10% of it, 6.3 days left, needs +43.9% a day from here
 - Closed trades: 7, 2 wins
 - Fees paid: $4.16 (axiom $0.43, network $3.26, pool $0.35), plus $0.62 lost to slippage
 - New trades: on
-- Brain: subscription, 465 calls and 0 plan-limit hits in 48h
+- Brain: subscription, 466 calls and 0 plan-limit hits in 48h
 
 ## Scorecard (after fees)
 - 7 closed, 2 won (29%), net $-0.07
@@ -67,9 +67,11 @@ Updated 2026-10-29T20:58:42Z (paper trading, never real money)
   CA `Bv1a7cEj5aRnJQhMw4kRQqAFesMSd5LwcDnUzq52BMmr`
 
 ## Last scan
-- 20:58Z: 5 coins, 5 with pairs, 0 passed the market filters, 0 researched
+- 21:13Z: 7 coins, 6 with pairs, 0 passed the market filters, 0 researched
 
 ## Coins it looked at, and why it passed
+- 21:06Z HYPEFAUCET (FINAL_STRETCH, $28,690 mcap, $2,215 5m vol): PASS at conviction 3, PASS: $2.2k on the 5m with top 10 at 22.4% and 4 insider networks, on a curve coin that has stalled for 3.5 hours. That's a pump, not a crowd (V1, V6, V13).  
+  CA `HyPESTUwRbb21wH4Qyw9ayKhb9AC7bWciqGbnGp7dRip`
 - 20:57Z HOUSEWORM (MIGRATED, $634,092 mcap, $9,270 5m vol): PASS at conviction 4, PASS: the blocker is that it's 4% under a local high while 465 insider networks sit behind holders spread evenly at 0.22% each. That's the CATCULUS setup again. Wait for the 0.618 retest. (V3, V5, V17)  
   CA `9KhzhyM1BwgW6myZRcqdzQvemKjVrjck8kaevTkMpump`
 - 20:56Z HYPERCAT (DIP, $232,130 mcap, $7,631 5m vol): PASS at conviction 3, PASS: 69% dip with 5m volume at 0.7x the hourly pace, and two bigger coins share the ticker. Falling knife, and not the leader. (V1, V6)  
@@ -88,8 +90,6 @@ Updated 2026-10-29T20:58:42Z (paper trading, never real money)
   CA `GydpvgKppv8a4gGQqAQsyQJxtQN4S6Ym9gKxjnN3mfun`
 - 20:38Z REMUS (MIGRATED, $267,246 mcap, $3,026 5m vol): PASS at conviction 2, PASS. REMUS is 86% off its peak, and sellers outnumber buyers 107 to 21 on the 5m. Nobody is buying this dip. It's a falling knife. (V1, V6)  
   CA `CA8q2mkYWZnUNqYmf6pxyxAPZsmSe2EG9P7hHMW5pump`
-- 20:36Z XPerps (FINAL_STRETCH, $26,142 mcap, $33,489 5m vol): PASS at conviction 3, PASS — 3-minute-old pair, 5-hour-old domain, perps 'product' with no GitHub, top 10 already 23.3%, bundles blind. Fresh-pair snipe plus LARP risk. (V1, V3, V5, V13)  
-  CA `Fda2DD7fPekAnvtJkjNGrM5cju6S3eMykHFHjSos7G14`
 
 ## Recent lessons
 - [2026-10-28 14:15] Expected: a $1.2M dip 47% off the $2.3M peak, with $17.8k 5m volume and buys outnumbering sells 3:1, to retest $2M while the joke still had a crowd (V1 buys-on-dip, V6). What happened: it peaked at 1.09x, then went flat and got time-stopped at 60 minutes with market cap basically unchanged (-0.6%), but I still lost 15.4% because fees and slippage ate about 9% of a $3.33 position, and the rest of the gap is execution I can't see in the record. Rule: on DIP setups, enter only after the dip makes a higher low with 5m volume rising (0.86x the hourly average is fading, not holding). Never open a position so small that round-trip friction is over 3%, because a flat chart is a guaranteed loss at that size.
@@ -104,13 +104,13 @@ Updated 2026-10-29T20:58:42Z (paper trading, never real money)
 The HYPE joke is still the meta, but only the newest coins are getting buyers. HYPERCHAN ($78k on the 5m, +564% on the hour, 87% buys) and HYPERDUEL are live; HYPERCAT, HyPepe and HYPEHOUSE are dying (-54% to -61% on the hour). Most coins under an hour old are getting dumped (ASSAY -94%, FACEPALM and AgenC near zero volume). The exception is SI on the bonding curve ($32k on the 5m). Older migrated coins are holding pace: HEXN ($1.08M cap, $21k on the 5m, 82% buys), HOUSEWORM and STANK. No holder, dev or bundle data yet, so these are holder checks first. HEXN is a MIGRATED setup at conviction 7 if the checks pass (initials at 1.5x, 20% trail, sell half when the 5m fades, break-even stop at 1.3x). HYPERCHAN is 5-6 at most and only on a pullback, because it's chasing snipers on lagged data (V5). SI is watch-only until it gets through the pre-bond dump. Passes: HYPEHOUSE, ASSAY, HyPepe, FACEPALM and AgenC (collapsing), HYPERCAT (crowd leaving), three.ws (old, low volume, no edge), $LAPTOP (politician rule, V13). I ignored the crawler's summary because it uses stale numbers.
 
 ## Moving most in its scans, last 30 min (1h volume)
-- HYPEHOUSE: $537,281 1h vol, $16,726 mcap, -61% 1h  
+- HYPEHOUSE: $501,082 1h vol, $10,551 mcap, -81% 1h  
   CA `9hsUf4d21CpjLs6FNdxQosSEUnoT4SqLyUAjqGESKgG7`
-- 🖖: $365,348 1h vol, $43,340 mcap, -2% 1h  
-  CA `GmksAq1EZ6u1eVoTmQCkRuHKCcStQ7b16vtNZDy7M1dq`
-- ASSAY: $291,657 1h vol, $2,348 mcap, -94% 1h  
+- ASSAY: $291,803 1h vol, $2,099 mcap, -95% 1h  
   CA `C5hLhhd5MivJ8m2MTQjB9A2nmuBymRzYhyRpeRMMpump`
 - HEXN: $290,801 1h vol, $1,080,970 mcap, -5% 1h  
   CA `ANVLA6eKiAq4nstD2Sg3SZhfVkSEwfnGccn12UQWpump`
-- HYPERCHAN: $257,762 1h vol, $330,008 mcap, +564% 1h  
-  CA `BrsZa8LYyBuD4jjkzHCFzjacgtXCZSn9kuDFdeitpump`
+- AgenC: $217,934 1h vol, $2,971 mcap, -98% 1h  
+  CA `GJKnJsRiM5ATS4yhwjYRegT3iRsXUvcW1dafJPh8pump`
+- HYPERCAT: $131,477 1h vol, $232,130 mcap, -54% 1h  
+  CA `AEqw9bAtqJCWPNNJp9EieXw8GYwm1kgsJBDdJBU2pump`
