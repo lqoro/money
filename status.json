@@ -1,12 +1,12 @@
 {
- "updated_at": "2026-10-29T05:01:22Z",
+ "updated_at": "2026-10-29T05:16:31Z",
  "paused_new_trades": false,
  "brain": {
   "mode": "subscription",
   "paused_until": null,
   "usage_48h": {
    "hours": 48,
-   "brain_calls": 274,
+   "brain_calls": 275,
    "plan_limit_hits": 0,
    "candidates_skipped_no_brain": 0,
    "stop_reviews_without_brain": 0
@@ -27,10 +27,10 @@
  "win_rate": 0.29,
  "open_positions": [],
  "strategy": {
-  "stop_loss_pct": 30.0,
-  "max_total_risk_pct": 25.0,
-  "trailing_stop_pct": 30.0,
-  "take_initials_multiple": 2.0,
+  "stop_loss_pct": 20.0,
+  "max_total_risk_pct": 15.0,
+  "trailing_stop_pct": 20,
+  "take_initials_multiple": 1.5,
   "time_stop_minutes": 45.0,
   "max_hold_hours": 12.0,
   "dip_min_drawdown_pct": 40.0,
@@ -527,22 +527,22 @@
  ],
  "learned_rules": "- **Friction gate before every entry (incl. buy-backs):** estimate round-trip fees + slippage. Skip if it is over ~5% of position size, or if the first target can't pay at least 5x that cost. Fees cost 9\u201330% on my $3 trades and turned flat charts into \u221215% and \u221224% losses.\n- **Minimum position ~$5.** If conviction and the honest stop distance don't justify $5, PASS. Never inflate conviction or pull the stop closer to clear the bar (soul: sizing).\n- **MIGRATED: no momentum buys within ~20% of the local high** unless bundle data is verified. Clean top-10 numbers don't rule out bundles spread across many small wallets. CATCULUS bought near the high gapped from \u221230% to \u221259% (V3, V5).\n- **MIGRATED entries come on a pullback:** the 0.618 fib or point-of-control retest, with 5m volume \u2265 $10k and organic buys:sells (V1, V6). My two winners (CATBOT, FLOATER) were both clean dip-buys of the leading coin.\n- **In a vamp field, buy only the leader** by 5m volume and attention. Never the 2nd or 3rd copy (V1, V2). FLOATER beat 22 same-ticker coins on flow.\n- **DIP entries need a higher low plus rising 5m volume.** If 5m volume is under ~1x the hourly average, it's fading. No entry on the first red-to-green candle (V1).\n- **Re-entry after a stop or time stop only on reclaim of the prior high** (or a new higher high), not while it's basing mid-range. The CATBOT buy-back mid-range died flat.\n- **Take initials at 2x with sell-initials, every time** (V11). It worked on both winners.\n- **After initials, trail 30% from peak; once past 4x, tighten to ~25%.** Don't round-trip a runner. The CATBOT 35% trail gave back about 40% of a 4.44x peak.\n- **Time stop is right when the chart is flat.** If it's under 1.0x at 45 min with no volume surge, exit. Don't marry the bag (V1).\n- **Stop review: if top-10 or insider share dropped since entry and price is still bleeding, SELL.** Holding once is only for a dump where the narrative and 5m volume are still clearly intact.\n- **A gap through the stop is an entry problem, not a stop-width problem.** Fix it with entry location (pullbacks) and bundle checks, not a wider stop.\n- **Log fees with every trade lesson** so the friction math stays honest.\n",
  "meta": {
-  "age_minutes": 3,
+  "age_minutes": 8,
   "meta_summary": "It's quiet. No real trench meta is running. The loudest Solana story is Hunter Biden's $LAPTOP, which crashed about 98% on day one. A political figure pushed that CA, so it's a hard no, and so is every vamp or \"revival\" of it (V13). The Robinhood/Circle memecoin hype is fading too; the \"$443M frenzy dissolves into nothing\" headline says it all. What's rising is bucket-2 money, not trench money: tokenized stocks and Robinhood Chain, stablecoins/RWA, AI agents, PEPE and PENGU on CoinGecko trending, frog-themed coins as a trending category, and BTC strength ahead of the Fed (V8). The one meta I can see coming is Halloween, three days out, and traders front-run holiday metas (V5). $PUMPKINU has 3 mentions, so it goes on watch, not in my bag, because mentions are attention, not a buy signal (V7). The coin that would ride this is an original, funny spooky meme that also catches the frog/PEPE flow, like a pumpkin or a frog in a costume, not a knockoff (V1). It still has to be bonded, do $10k+ in 5-minute volume and have clean holders (V1, V6). Until that shows up: PASS.",
   "top_narratives": [
    "tokenized",
    "robinhood",
-   "pepe",
    "stock",
+   "pepe",
    "prediction",
    "fed",
    "app",
    "stocks",
-   "referral",
-   "adds",
-   "rally",
-   "hunter",
    "trump",
+   "referral",
+   "rally",
+   "adds",
+   "hunter",
    "dogecoin",
    "code",
    "creator",
@@ -552,46 +552,58 @@
    "slowing"
   ],
   "trending_categories": [
+   "The Boy\u2019s Club",
+   "Frog-Themed",
+   "Pons Launchpad",
    "Airdropped Tokens by NFT Projects",
-   "IP Meme",
    "Binance Launchpool",
-   "Meme",
-   "Binance HODLer Airdrops",
-   "Decentralized Exchange (DEX)"
+   "IP Meme"
   ],
   "trending_coins": [
    "PENGU",
-   "KNTQ",
-   "PEARL",
+   "ENA",
    "BTC",
+   "PEARL",
+   "KNTQ",
+   "PEPE",
    "LIT",
    "AXIS",
+   "QTC",
+   "PONS",
    "XMR",
-   "ENA",
-   "TIA",
-   "HYPE",
-   "QNT",
-   "LINK",
-   "BLUR",
-   "XLM",
-   "GRVT"
+   "ONDO",
+   "XRP",
+   "JUP",
+   "QNT"
   ],
   "hot_tickers": [
+   {
+    "ticker": "$LAPTOP",
+    "mentions": 3
+   },
    {
     "ticker": "$PUMPKINU",
     "mentions": 3
    },
    {
-    "ticker": "$LAPTOP",
+    "ticker": "$NETWORK",
     "mentions": 2
+   },
+   {
+    "ticker": "$TRUMP",
+    "mentions": 1
    },
    {
     "ticker": "$MT",
-    "mentions": 2
+    "mentions": 1
    },
    {
-    "ticker": "$NETWORK",
-    "mentions": 2
+    "ticker": "$HYPE",
+    "mentions": 1
+   },
+   {
+    "ticker": "$TROVE",
+    "mentions": 1
    },
    {
     "ticker": "$POSSUMX",
@@ -611,10 +623,6 @@
    },
    {
     "ticker": "$BC",
-    "mentions": 1
-   },
-   {
-    "ticker": "$SLEEGO",
     "mentions": 1
    }
   ],
