@@ -1,9 +1,9 @@
 # Trencher live report
 
-Updated 2026-10-29T09:04:18Z (paper trading, never real money)
+Updated 2026-10-29T09:19:18Z (paper trading, never real money)
 
 - Equity: $99.93 (-0.1% vs $100 start)
-- Goal: $1,000 by 2026-11-05 05:03Z (a stretch, survival first): at 10% of it, 6.8 days left, needs +40.1% a day from here
+- Goal: $1,000 by 2026-11-05 05:03Z (a stretch, survival first): at 10% of it, 6.8 days left, needs +40.2% a day from here
 - Closed trades: 7, 2 wins
 - Fees paid: $4.16 (axiom $0.43, network $3.26, pool $0.35), plus $0.62 lost to slippage
 - New trades: on
@@ -67,7 +67,7 @@ Updated 2026-10-29T09:04:18Z (paper trading, never real money)
   CA `Bv1a7cEj5aRnJQhMw4kRQqAFesMSd5LwcDnUzq52BMmr`
 
 ## Last scan
-- 09:03Z: 1 coins, 1 with pairs, 0 passed the market filters, 0 researched
+- 09:18Z: 7 coins, 7 with pairs, 0 passed the market filters, 0 researched
 
 ## Coins it looked at, and why it passed
 - 08:59Z clanker (FINAL_STRETCH, $21,886 mcap, $17,591 5m vol): PASS at conviction 3, PASS: it's a 12-minute-old copy of a ticker seven bigger coins already use, and the top 10 holders sit right at the 25% hard line. Vamp plus concentration. (V1, V3, V13)  
@@ -104,13 +104,13 @@ Updated 2026-10-29T09:04:18Z (paper trading, never real money)
 The crawler's summary is already stale. bingus is no longer the setup: it's at $3.4k, down 91% in the hour, with $138 of 5m volume. It rugged, and it's off the watchlist. The live meta has three parts. First, fresh pump.fun curve coins under an hour old with absurd names are rising: Chilloween (+576%, $9.9k 5m), LIDA (+612%, $4.4k 5m) and Bu (+200%, but 5m is down to $2.8k from a $135k hour). Second, an early Halloween meta that traders are front-running (V5): Chilloween, ACT:D "Doomsday" (pumped and died, $237 5m) and $PUMPKINU getting mentions. Third, the bigger migrated coins are fading. DUBBLE ($1.35M, -10%, $7.2k 5m) and CATBOT ($3M, $2.6k 5m) are coasting on thin flow, and the old-meme revival is dead along with bingus. My one watch is Chilloween as a FINAL_STRETCH (V1). It's the original seasonal joke at $23k, 59% buys, almost at the $10k 5m bar. I'd take it at 7/10 if holders, bundles and dev share come back clean (top 10 under 25%, bundlers under 10%, dev under 1%). Plan: initials out at 1.5x, 20% trail, sell half if the 5m fades, stop where the curve dip fails. It's only 18 minutes old, so I'm being careful. PASS on LIDA (5m under $10k and no holder data yet, V1/V6), Bu (volume collapsing), DUBBLE and CATBOT (5m too thin for their caps, V6), FARTCOIN (vamp, V3), $LAPTOP (political figure, V13) and REMUS (27% buys, sellers in control).
 
 ## Moving most in its scans, last 30 min (1h volume)
-- PODCAT: $406,818 1h vol, $1,947 mcap, -99% 1h  
+- Samba: $67,182 1h vol, $14,581 mcap, +332% 1h  
+  CA `53vCabTQafbRBwRqqGtbHQeTKPZAWE4KU9KVoB1Ppump`
+- PODCAT: $49,041 1h vol, $1,953 mcap, -99% 1h  
   CA `6xcLnAebDFLgPDBrVrGzHEcMvjVQfMW6yQL4NvECpump`
-- OTC: $357,004 1h vol, $109,661 mcap, +192% 1h  
-  CA `Fa24xN13pzjmcx1dtKP9nBMMFCwLtXCJrtP5hSPKpump`
-- DUBBLE: $133,295 1h vol, $1,351,931 mcap, -10% 1h  
-  CA `FEXGegqeVm5vZurqyC7qsmkLqWspVV1ACb9bbLvcpump`
-- Bu: $94,474 1h vol, $25,348 mcap, +46% 1h  
-  CA `Bnxttv7gQHYP1n9JyXuiATWKtxxJPc6sJJzeRFVBuuu`
-- Chilloween: $79,329 1h vol, $22,950 mcap, +576% 1h  
-  CA `Ac6PLXgeP3eK1ak9CyNR8actDgA3vxBhRq1Ao1frDajq`
+- clanker: $43,694 1h vol, $21,886 mcap, +635% 1h  
+  CA `6yhYZztNzGSCiG1sgCykmk11xgSk5PgAhqwJ4btwpump`
+- jeff: $32,348 1h vol, $1,300,146 mcap, +4% 1h  
+  CA `HAsTKXYvv65zM7J6Cu5o5PcZsiKMQYo5oz4WPjgqwP6k`
+- STONKLANA: $23,055 1h vol, $518,736 mcap, +23% 1h  
+  CA `GF74fBfcaeLjUiUwKpRiUbvMQtTvNyzMoo6KNyyqNyk6`
