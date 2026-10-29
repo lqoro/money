@@ -1,13 +1,13 @@
 # Trencher live report
 
-Updated 2026-10-29T10:19:39Z (paper trading, never real money)
+Updated 2026-10-29T10:34:49Z (paper trading, never real money)
 
 - Equity: $99.93 (-0.1% vs $100 start)
 - Goal: $1,000 by 2026-11-05 05:03Z (a stretch, survival first): at 10% of it, 6.8 days left, needs +40.5% a day from here
 - Closed trades: 7, 2 wins
 - Fees paid: $4.16 (axiom $0.43, network $3.26, pool $0.35), plus $0.62 lost to slippage
 - New trades: on
-- Brain: subscription, 320 calls and 0 plan-limit hits in 48h
+- Brain: subscription, 322 calls and 0 plan-limit hits in 48h
 
 ## Scorecard (after fees)
 - 7 closed, 2 won (29%), net $-0.07
@@ -67,9 +67,13 @@ Updated 2026-10-29T10:19:39Z (paper trading, never real money)
   CA `Bv1a7cEj5aRnJQhMw4kRQqAFesMSd5LwcDnUzq52BMmr`
 
 ## Last scan
-- 10:19Z: 19 coins, 19 with pairs, 0 passed the market filters, 0 researched
+- 10:33Z: 2 coins, 2 with pairs, 1 passed the market filters, 1 researched
 
 ## Coins it looked at, and why it passed
+- 10:34Z STONKLANA (MIGRATED, $751,911 mcap, $5,663 5m vol): PASS at conviction 2, PASS: 5m volume is $5.7k, only 0.42x the hourly pace, sells outnumber buys, 22 coins share the ticker and the data flags 47 insider networks. The crowd is leaving. (V1, V6, V13)  
+  CA `GF74fBfcaeLjUiUwKpRiUbvMQtTvNyzMoo6KNyyqNyk6`
+- 10:27Z Lingo (MIGRATED, $101,247 mcap, $88,140 5m vol): PASS at conviction 4, PASS — Lingo is 52 minutes old and 9% off its high, with bundles unverified and the top 10 holding 20%. Buying near the high on a fresh coin is exactly the CATCULUS setup. Blocker: entry location plus unverified bundles. I'll look again on a 0.618 retest near $65–70k (V1, V3, V6).  
+  CA `D1kVFsf3cLN8CWv1Zmz6H3ZSWsB1jGrWxaqgJxcQpump`
 - 10:13Z GATO (MIGRATED, $5,010,290 mcap, $2,715 5m vol): REJECT, Dev holds 3.3% (>1%) (V13, V17)  
   CA `HsprHxBRgiVaQdRf3TnKNuZZtaX9JUSPgMFdAkk6pump`
 - 10:12Z OTC (MIGRATED, $132,774 mcap, $7,684 5m vol): REJECT, RugCheck danger: Creator history of rugged tokens  
@@ -86,10 +90,6 @@ Updated 2026-10-29T10:19:39Z (paper trading, never real money)
   CA `GcYGNe5BqQrbyGXSAm4Dan3MYobcREF9KcNSSqs9pump`
 - 10:00Z BabyNuts (MIGRATED, $146,924 mcap, $17,028 5m vol): REJECT, RugCheck danger: Creator history of rugged tokens  
   CA `6KiSJe4GB9vLratvfF4Zb91jNQeekE3QCG3BnLzkpump`
-- 09:55Z WALT (FINAL_STRETCH, $22,328 mcap, $60,464 5m vol): REJECT, RugCheck danger: Creator history of rugged tokens  
-  CA `CjsHariFBsWp4sP4sz4xNy7f1BcWB8W2FPhMTCKEpump`
-- 09:51Z 리핀 (MIGRATED, $147,890 mcap, $37,128 5m vol): REJECT, Dev holds 1.8% (>1%) (V13, V17)  
-  CA `Co9MpsTVpAiCLnbZbPDqFHfzYge7qvtVJYfwf2w9pump`
 
 ## Recent lessons
 - [2026-10-28 14:15] Expected: a $1.2M dip 47% off the $2.3M peak, with $17.8k 5m volume and buys outnumbering sells 3:1, to retest $2M while the joke still had a crowd (V1 buys-on-dip, V6). What happened: it peaked at 1.09x, then went flat and got time-stopped at 60 minutes with market cap basically unchanged (-0.6%), but I still lost 15.4% because fees and slippage ate about 9% of a $3.33 position, and the rest of the gap is execution I can't see in the record. Rule: on DIP setups, enter only after the dip makes a higher low with 5m volume rising (0.86x the hourly average is fading, not holding). Never open a position so small that round-trip friction is over 3%, because a flat chart is a guaranteed loss at that size.
@@ -106,11 +106,11 @@ Meta: fresh launches under an hour old that burn out fast, plus a few cat coins;
 ## Moving most in its scans, last 30 min (1h volume)
 - ZECP: $865,562 1h vol, $858,088 mcap, +1576% 1h  
   CA `GcYGNe5BqQrbyGXSAm4Dan3MYobcREF9KcNSSqs9pump`
+- Lingo: $647,103 1h vol, $101,247 mcap, +152% 1h  
+  CA `D1kVFsf3cLN8CWv1Zmz6H3ZSWsB1jGrWxaqgJxcQpump`
 - DUBBLE: $218,767 1h vol, $1,277,651 mcap, -23% 1h  
   CA `FEXGegqeVm5vZurqyC7qsmkLqWspVV1ACb9bbLvcpump`
-- 리핀: $177,815 1h vol, $147,890 mcap, +250% 1h  
-  CA `Co9MpsTVpAiCLnbZbPDqFHfzYge7qvtVJYfwf2w9pump`
+- STONKLANA: $162,851 1h vol, $751,911 mcap, +33% 1h  
+  CA `GF74fBfcaeLjUiUwKpRiUbvMQtTvNyzMoo6KNyyqNyk6`
 - WALT: $147,722 1h vol, $92,555 mcap, +129% 1h  
   CA `GmyoabL4oY72yQA3EzTq5G5gQUF5SsE94jrs8bWfJzTt`
-- OTC: $129,894 1h vol, $132,774 mcap, +43% 1h  
-  CA `Fa24xN13pzjmcx1dtKP9nBMMFCwLtXCJrtP5hSPKpump`
