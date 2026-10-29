@@ -1,12 +1,12 @@
 {
- "updated_at": "2026-10-29T05:16:52Z",
+ "updated_at": "2026-10-29T05:31:58Z",
  "paused_new_trades": false,
  "brain": {
   "mode": "subscription",
   "paused_until": null,
   "usage_48h": {
    "hours": 48,
-   "brain_calls": 275,
+   "brain_calls": 278,
    "plan_limit_hits": 0,
    "candidates_skipped_no_brain": 0,
    "stop_reviews_without_brain": 0
@@ -527,54 +527,54 @@
  ],
  "learned_rules": "- **Friction gate before every entry (incl. buy-backs):** estimate round-trip fees + slippage. Skip if it is over ~5% of position size, or if the first target can't pay at least 5x that cost. Fees cost 9\u201330% on my $3 trades and turned flat charts into \u221215% and \u221224% losses.\n- **Minimum position ~$5.** If conviction and the honest stop distance don't justify $5, PASS. Never inflate conviction or pull the stop closer to clear the bar (soul: sizing).\n- **MIGRATED: no momentum buys within ~20% of the local high** unless bundle data is verified. Clean top-10 numbers don't rule out bundles spread across many small wallets. CATCULUS bought near the high gapped from \u221230% to \u221259% (V3, V5).\n- **MIGRATED entries come on a pullback:** the 0.618 fib or point-of-control retest, with 5m volume \u2265 $10k and organic buys:sells (V1, V6). My two winners (CATBOT, FLOATER) were both clean dip-buys of the leading coin.\n- **In a vamp field, buy only the leader** by 5m volume and attention. Never the 2nd or 3rd copy (V1, V2). FLOATER beat 22 same-ticker coins on flow.\n- **DIP entries need a higher low plus rising 5m volume.** If 5m volume is under ~1x the hourly average, it's fading. No entry on the first red-to-green candle (V1).\n- **Re-entry after a stop or time stop only on reclaim of the prior high** (or a new higher high), not while it's basing mid-range. The CATBOT buy-back mid-range died flat.\n- **Take initials at 2x with sell-initials, every time** (V11). It worked on both winners.\n- **After initials, trail 30% from peak; once past 4x, tighten to ~25%.** Don't round-trip a runner. The CATBOT 35% trail gave back about 40% of a 4.44x peak.\n- **Time stop is right when the chart is flat.** If it's under 1.0x at 45 min with no volume surge, exit. Don't marry the bag (V1).\n- **Stop review: if top-10 or insider share dropped since entry and price is still bleeding, SELL.** Holding once is only for a dump where the narrative and 5m volume are still clearly intact.\n- **A gap through the stop is an entry problem, not a stop-width problem.** Fix it with entry location (pullbacks) and bundle checks, not a wider stop.\n- **Log fees with every trade lesson** so the friction math stays honest.\n",
  "meta": {
-  "age_minutes": 8,
+  "age_minutes": 3,
   "meta_summary": "It's quiet. No real trench meta is running. The loudest Solana story is Hunter Biden's $LAPTOP, which crashed about 98% on day one. A political figure pushed that CA, so it's a hard no, and so is every vamp or \"revival\" of it (V13). The Robinhood/Circle memecoin hype is fading too; the \"$443M frenzy dissolves into nothing\" headline says it all. What's rising is bucket-2 money, not trench money: tokenized stocks and Robinhood Chain, stablecoins/RWA, AI agents, PEPE and PENGU on CoinGecko trending, frog-themed coins as a trending category, and BTC strength ahead of the Fed (V8). The one meta I can see coming is Halloween, three days out, and traders front-run holiday metas (V5). $PUMPKINU has 3 mentions, so it goes on watch, not in my bag, because mentions are attention, not a buy signal (V7). The coin that would ride this is an original, funny spooky meme that also catches the frog/PEPE flow, like a pumpkin or a frog in a costume, not a knockoff (V1). It still has to be bonded, do $10k+ in 5-minute volume and have clean holders (V1, V6). Until that shows up: PASS.",
   "top_narratives": [
    "tokenized",
    "robinhood",
-   "stock",
    "pepe",
+   "stock",
    "prediction",
-   "fed",
    "app",
-   "stocks",
+   "fed",
    "trump",
+   "stocks",
    "referral",
    "rally",
-   "adds",
    "hunter",
-   "dogecoin",
    "code",
+   "adds",
+   "dogecoin",
    "creator",
+   "fees",
    "stablecoin",
    "machine",
-   "times",
-   "slowing"
+   "times"
   ],
   "trending_categories": [
    "The Boy\u2019s Club",
    "Frog-Themed",
    "Pons Launchpad",
    "Airdropped Tokens by NFT Projects",
-   "Binance Launchpool",
-   "IP Meme"
+   "IP Meme",
+   "Binance Launchpool"
   ],
   "trending_coins": [
-   "PENGU",
-   "ENA",
-   "BTC",
    "PEARL",
-   "KNTQ",
-   "PEPE",
-   "LIT",
-   "AXIS",
    "QTC",
-   "PONS",
-   "XMR",
-   "ONDO",
-   "XRP",
+   "LIT",
+   "PENGU",
+   "KNTQ",
+   "ENA",
    "JUP",
-   "QNT"
+   "PEPE",
+   "BTC",
+   "BNB",
+   "PONS",
+   "DOT",
+   "FET",
+   "TAO",
+   "ONDO"
   ],
   "hot_tickers": [
    {
@@ -586,6 +586,10 @@
     "mentions": 3
    },
    {
+    "ticker": "$MT",
+    "mentions": 2
+   },
+   {
     "ticker": "$NETWORK",
     "mentions": 2
    },
@@ -594,7 +598,7 @@
     "mentions": 1
    },
    {
-    "ticker": "$MT",
+    "ticker": "$LICK",
     "mentions": 1
    },
    {
@@ -618,22 +622,31 @@
     "mentions": 1
    },
    {
-    "ticker": "$STONK",
-    "mentions": 1
-   },
-   {
-    "ticker": "$BC",
+    "ticker": "$BOUNCER",
     "mentions": 1
    }
   ],
   "headlines": [
-   "Top 6 memecoins to check out in October 2026",
-   "How to Spot the Best Meme Coin to Buy Now? Apeing Brings 1,150%",
    "Former Doom Developer Could Be in Trouble as Bethesda Goes After Doom Memecoin",
    "Visa to close Crossmint memecoin rewards loophole following The Block investigation: report",
-   "Hunter Biden lashes out after $LAPTOP meme coin collapse"
+   "Hunter Biden lashes out after $LAPTOP meme coin collapse",
+   "Top 6 memecoins to check out in October 2026",
+   "How to Spot the Best Meme Coin to Buy Now? Apeing Brings 1,150%"
   ],
-  "scan_movers": []
+  "scan_movers": [
+   {
+    "symbol": "UBER",
+    "name": "Ultra Busty Erotic Rack",
+    "ca": "JBB3eqEBLQJcgSMnECtVFx9iWFWF1n3J7GFHenA6pump",
+    "dex": "pumpswap",
+    "mcap_usd": 27467,
+    "vol_5m": 0,
+    "vol_1h": 13,
+    "change_1h": 1.4,
+    "buy_ratio_5m": null,
+    "age_hours": 31.4
+   }
+  ]
  },
  "goal": {
   "target_usd": 1000.0,
@@ -641,8 +654,70 @@
   "equity_usd": 99.93,
   "progress_pct": 10.0,
   "days_left": 7.0,
-  "needed_daily_growth_pct": 39.0
+  "needed_daily_growth_pct": 39.1
  },
- "last_scan": {},
- "recent_looks": []
+ "last_scan": {
+  "at": 1793251901.482008,
+  "tokens": 4,
+  "pairs": 1,
+  "passed_market_filters": 0,
+  "researched": 0
+ },
+ "recent_looks": [
+  {
+   "ts": "2026-10-29T05:17:19Z",
+   "symbol": "FLOAT",
+   "ca": "Bv1a7cEj5aRnJQhMw4kRQqAFesMSd5LwcDnUzq52BMmr",
+   "setup": "MIGRATED",
+   "mcap_usd": 2449122,
+   "vol_5m": 22505,
+   "outcome": "PASS",
+   "conviction": 4,
+   "reason": "PASS: FLOAT sits 2.9% under its high after a 35% hourly run, buys:sells are only 51%, and bundles are unverified. That's a chase, and chasing is how I got gapped on CATCULUS. The blocker is entry location. (Learned rule, V1, V6)"
+  },
+  {
+   "ts": "2026-10-29T05:17:37Z",
+   "symbol": "AISI",
+   "ca": "CxzxZDuo3igCYpqfBfMTsJHFsFXwsLLStphSEgAiq4kA",
+   "setup": "MIGRATED",
+   "mcap_usd": 94322,
+   "vol_5m": 15220,
+   "outcome": "PASS",
+   "conviction": 2,
+   "reason": "PASS \u2014 Elon-tweet vamp, 18 minutes old, AI name with no product, 10 insider networks. The blocker is vamp plus LARP risk (V1, V3, V13)."
+  },
+  {
+   "ts": "2026-10-29T05:17:51Z",
+   "symbol": "CATBOT",
+   "ca": "dyw5fDNv91eknniMG4tGCU1ZrzjuxbpsLiEzih6pump",
+   "setup": "MIGRATED",
+   "mcap_usd": 2646432,
+   "vol_5m": 5317,
+   "outcome": "PASS",
+   "conviction": 3,
+   "reason": "PASS \u2014 CATBOT is 39% off its $4.3M high and 5m volume is $5.3k, just 0.16x the hourly average. The crowd is leaving, and I don't buy back mid-range. (V1, V6)"
+  },
+  {
+   "ts": "2026-10-29T05:17:51Z",
+   "symbol": "DUBBLE",
+   "ca": "FEXGegqeVm5vZurqyC7qsmkLqWspVV1ACb9bbLvcpump",
+   "setup": "DIP",
+   "mcap_usd": 1994362,
+   "vol_5m": 5204,
+   "outcome": "REJECT",
+   "conviction": null,
+   "reason": "Dip with fading attention is a falling knife, not a dip"
+  },
+  {
+   "ts": "2026-10-29T05:17:52Z",
+   "symbol": "GATO",
+   "ca": "HsprHxBRgiVaQdRf3TnKNuZZtaX9JUSPgMFdAkk6pump",
+   "setup": "MIGRATED",
+   "mcap_usd": 5231704,
+   "vol_5m": 2318,
+   "outcome": "REJECT",
+   "conviction": null,
+   "reason": "Dev holds 3.3% (>1%) (V13, V17)"
+  }
+ ]
 }

@@ -1,13 +1,13 @@
 # Trencher live report
 
-Updated 2026-10-29T05:16:52Z (paper trading, never real money)
+Updated 2026-10-29T05:31:58Z (paper trading, never real money)
 
 - Equity: $99.93 (-0.1% vs $100 start)
-- Goal: $1,000 by 2026-11-05 05:03Z (a stretch, survival first): at 10% of it, 7 days left, needs +39% a day from here
+- Goal: $1,000 by 2026-11-05 05:03Z (a stretch, survival first): at 10% of it, 7 days left, needs +39.1% a day from here
 - Closed trades: 7, 2 wins
 - Fees paid: $4.16 (axiom $0.43, network $3.26, pool $0.35), plus $0.62 lost to slippage
 - New trades: on
-- Brain: subscription, 275 calls and 0 plan-limit hits in 48h
+- Brain: subscription, 278 calls and 0 plan-limit hits in 48h
 
 ## Open positions
 - none
@@ -51,10 +51,19 @@ Updated 2026-10-29T05:16:52Z (paper trading, never real money)
   CA `Bv1a7cEj5aRnJQhMw4kRQqAFesMSd5LwcDnUzq52BMmr`
 
 ## Last scan
-- no scan yet since the last restart
+- 05:31Z: 4 coins, 1 with pairs, 0 passed the market filters, 0 researched
 
 ## Coins it looked at, and why it passed
-- none since the last restart
+- 05:17Z GATO (MIGRATED, $5,231,704 mcap, $2,318 5m vol): REJECT, Dev holds 3.3% (>1%) (V13, V17)  
+  CA `HsprHxBRgiVaQdRf3TnKNuZZtaX9JUSPgMFdAkk6pump`
+- 05:17Z DUBBLE (DIP, $1,994,362 mcap, $5,204 5m vol): REJECT, Dip with fading attention is a falling knife, not a dip  
+  CA `FEXGegqeVm5vZurqyC7qsmkLqWspVV1ACb9bbLvcpump`
+- 05:17Z CATBOT (MIGRATED, $2,646,432 mcap, $5,317 5m vol): PASS at conviction 3, PASS — CATBOT is 39% off its $4.3M high and 5m volume is $5.3k, just 0.16x the hourly average. The crowd is leaving, and I don't buy back mid-range. (V1, V6)  
+  CA `dyw5fDNv91eknniMG4tGCU1ZrzjuxbpsLiEzih6pump`
+- 05:17Z AISI (MIGRATED, $94,322 mcap, $15,220 5m vol): PASS at conviction 2, PASS — Elon-tweet vamp, 18 minutes old, AI name with no product, 10 insider networks. The blocker is vamp plus LARP risk (V1, V3, V13).  
+  CA `CxzxZDuo3igCYpqfBfMTsJHFsFXwsLLStphSEgAiq4kA`
+- 05:17Z FLOAT (MIGRATED, $2,449,122 mcap, $22,505 5m vol): PASS at conviction 4, PASS: FLOAT sits 2.9% under its high after a 35% hourly run, buys:sells are only 51%, and bundles are unverified. That's a chase, and chasing is how I got gapped on CATCULUS. The blocker is entry location. (Learned rule, V1, V6)  
+  CA `Bv1a7cEj5aRnJQhMw4kRQqAFesMSd5LwcDnUzq52BMmr`
 
 ## Recent lessons
 - [2026-10-28 14:15] Expected: a $1.2M dip 47% off the $2.3M peak, with $17.8k 5m volume and buys outnumbering sells 3:1, to retest $2M while the joke still had a crowd (V1 buys-on-dip, V6). What happened: it peaked at 1.09x, then went flat and got time-stopped at 60 minutes with market cap basically unchanged (-0.6%), but I still lost 15.4% because fees and slippage ate about 9% of a $3.33 position, and the rest of the gap is execution I can't see in the record. Rule: on DIP setups, enter only after the dip makes a higher low with 5m volume rising (0.86x the hourly average is fading, not holding). Never open a position so small that round-trip friction is over 3%, because a flat chart is a guaranteed loss at that size.
@@ -67,3 +76,7 @@ Updated 2026-10-29T05:16:52Z (paper trading, never real money)
 
 ## Meta right now
 It's quiet. No real trench meta is running. The loudest Solana story is Hunter Biden's $LAPTOP, which crashed about 98% on day one. A political figure pushed that CA, so it's a hard no, and so is every vamp or "revival" of it (V13). The Robinhood/Circle memecoin hype is fading too; the "$443M frenzy dissolves into nothing" headline says it all. What's rising is bucket-2 money, not trench money: tokenized stocks and Robinhood Chain, stablecoins/RWA, AI agents, PEPE and PENGU on CoinGecko trending, frog-themed coins as a trending category, and BTC strength ahead of the Fed (V8). The one meta I can see coming is Halloween, three days out, and traders front-run holiday metas (V5). $PUMPKINU has 3 mentions, so it goes on watch, not in my bag, because mentions are attention, not a buy signal (V7). The coin that would ride this is an original, funny spooky meme that also catches the frog/PEPE flow, like a pumpkin or a frog in a costume, not a knockoff (V1). It still has to be bonded, do $10k+ in 5-minute volume and have clean holders (V1, V6). Until that shows up: PASS.
+
+## Moving most in its scan (1h volume)
+- UBER: $13 1h vol, $27,467 mcap, +1% 1h  
+  CA `JBB3eqEBLQJcgSMnECtVFx9iWFWF1n3J7GFHenA6pump`
