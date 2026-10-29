@@ -1,13 +1,13 @@
 # Trencher live report
 
-Updated 2026-10-29T17:24:46Z (paper trading, never real money)
+Updated 2026-10-29T17:39:52Z (paper trading, never real money)
 
 - Equity: $99.93 (-0.1% vs $100 start)
-- Goal: $1,000 by 2026-11-05 05:03Z (a stretch, survival first): at 10% of it, 6.5 days left, needs +42.6% a day from here
+- Goal: $1,000 by 2026-11-05 05:03Z (a stretch, survival first): at 10% of it, 6.5 days left, needs +42.7% a day from here
 - Closed trades: 7, 2 wins
 - Fees paid: $4.16 (axiom $0.43, network $3.26, pool $0.35), plus $0.62 lost to slippage
 - New trades: on
-- Brain: subscription, 398 calls and 0 plan-limit hits in 48h
+- Brain: subscription, 403 calls and 0 plan-limit hits in 48h
 
 ## Scorecard (after fees)
 - 7 closed, 2 won (29%), net $-0.07
@@ -67,9 +67,21 @@ Updated 2026-10-29T17:24:46Z (paper trading, never real money)
   CA `Bv1a7cEj5aRnJQhMw4kRQqAFesMSd5LwcDnUzq52BMmr`
 
 ## Last scan
-- 17:24Z: 9 coins, 9 with pairs, 0 passed the market filters, 0 researched
+- 17:39Z: 2 coins, 2 with pairs, 0 passed the market filters, 0 researched
 
 ## Coins it looked at, and why it passed
+- 17:36Z HELMET (MIGRATED, $30,729 mcap, $2,849 5m vol): PASS at conviction 2, PASS — 5m volume is $2.8k at 0.23x the hourly pace and it's 31% off a $45k peak that never proved anything. The crowd already left (V1, V6).  
+  CA `FuGnvoCBa6FRzg7D3yQCutGTJiBX3DPKenRmTc4dpump`
+- 17:33Z GROKKIES (MIGRATED, $35,248 mcap, $2,754 5m vol): PASS at conviction 2, PASS: the project's own site shows a different CA, two bigger coins share the ticker, and 5m volume is down to $2.7k. Vamp with no flow. (V1, V3)  
+  CA `8NTU6e46S8c8VD3uscMAgz8sQYjF2GofuZy4znQwpump`
+- 17:32Z AgenC (DIP, $568,409 mcap, $10,264 5m vol): REJECT, Dip with fading attention is a falling knife, not a dip  
+  CA `GJKnJsRiM5ATS4yhwjYRegT3iRsXUvcW1dafJPh8pump`
+- 17:31Z HI (MIGRATED, $323,764 mcap, $52,202 5m vol): PASS at conviction 3, PASS: HI is a 51-minute-old coin trading 5.6% off its high, bundles are unverified, 10 insider networks were flagged, and 5m flow is fading at 0.54x the hourly pace. Buying here makes me exit liquidity (V1, V3, V5, V13).  
+  CA `3w2TvVmTrtq4kSkoFVrTFQgz6MX7ThzDVrx9r5c3pump`
+- 17:30Z SENSE (DIP, $620,490 mcap, $4,799 5m vol): PASS at conviction 2, PASS: SENSE is a falling knife. 5m volume is at 0.58x its hourly pace, sellers lead 32 to 26, one wallet holds 13% and there's no X account. The crowd is leaving. (V1, V6, V13)  
+  CA `GydpvgKppv8a4gGQqAQsyQJxtQN4S6Ym9gKxjnN3mfun`
+- 17:27Z LUMEN (FINAL_STRETCH, $23,997 mcap, $8,196 5m vol): PASS at conviction 4, PASS: a privacy "tech" coin that's 19 minutes old, with its website down, no GitHub, and a ticker that's been launched over and over. Probably a LARP, and it would mean sniping a new pair. (V1, V3)  
+  CA `BtAe3p7i1jig8vAAob1QuUkDZwLugqoGGXHrYBEKpump`
 - 17:21Z STANK (MIGRATED, $91,255 mcap, $5,262 5m vol): PASS at conviction 3, PASS. STANK is 16% off a high it set 6 minutes ago, with $5.3k on the 5m and no bundle data. Buying this would be chasing the top. Blocker: the entry location rule (my learned rule, V1, V6).  
   CA `5wsjHxT5nW5jQuVupXUNnYszF3WoWCfGGk9LMcsCJzY8`
 - 17:14Z VI (DIP, $242,804 mcap, $3,098 5m vol): PASS at conviction 3, PASS: 5m volume is $3.1k and 0.5x the hourly pace with no higher low. Clean holders, but the crowd is leaving. Falling knife (V1, V6).  
@@ -78,18 +90,6 @@ Updated 2026-10-29T17:24:46Z (paper trading, never real money)
   CA `9KhzhyM1BwgW6myZRcqdzQvemKjVrjck8kaevTkMpump`
 - 17:09Z HI (MIGRATED, $144,842 mcap, $30,744 5m vol): PASS at conviction 2, PASS: this is the vamp. Two bigger coins share the HI ticker, the real HYPER INU is the pump.fun CA at 3w2T…, and this one is a 7-minute-old Float-launchpad copy with top 10 at 21%. (V1, V3, V6)  
   CA `FkUGF7cPFy7hHuJwBERCTfAex3XcLFCH9pkj2RDUQTMe`
-- 16:58Z CATBOT (MIGRATED, $729,980 mcap, $19,245 5m vol): PASS at conviction 2, PASS: 88.6% off the $6.39M peak and printing new lows below the hour's low. Blocker: drawdown past my 75% dip limit with no higher low (V1).  
-  CA `dyw5fDNv91eknniMG4tGCU1ZrzjuxbpsLiEzih6pump`
-- 16:57Z DESSA (MIGRATED, $7,713,394 mcap, $32,573 5m vol): PASS at conviction 3, PASS — blocker: 16.6% off a 24-min-old high with 5m volume at 0.28x the hourly pace. That's chasing a fading move, not a pullback entry (learned rule, V1, V6).  
-  CA `npz2FhoufQ7pKqhGpaipYWacrAkidyW2yDpVWSvpump`
-- 16:54Z CATPOOP (MIGRATED, $194,762 mcap, $39,107 5m vol): PASS at conviction 4, PASS — blocker: 12.9% off a high set 6 min ago with bundles unverified; my no-momentum-near-high rule (CATCULUS -59%). Watch for a 0.618 retest (~$110-120k). (V1, V3, V5)  
-  CA `7eCffjPZzRqFFDog8RN5cWsu2JNRH4Qm1iMPAREUpump`
-- 16:51Z HELMET (FINAL_STRETCH, $33,182 mcap, $13,445 5m vol): REJECT, Top 10 hold 28.5% ex-pool (>25%) (V13)  
-  CA `FuGnvoCBa6FRzg7D3yQCutGTJiBX3DPKenRmTc4dpump`
-- 16:48Z GROKKIES (FINAL_STRETCH, $26,458 mcap, $11,376 5m vol): PASS at conviction 2, PASS — the project's own site shows a different contract address, the domain is about 2 hours old, and it sells a bot with no code behind it. Vamp or LARP, maybe both. (V1, V3)  
-  CA `8NTU6e46S8c8VD3uscMAgz8sQYjF2GofuZy4znQwpump`
-- 16:46Z AgenC (MIGRATED, $802,358 mcap, $111,082 5m vol): PASS at conviction 3, PASS — the project's own site lists a different CA (9KHe…L5pump), so this pair is probably a vamp in a crowded AgenC field. It's also 23 minutes old and 13% off its high with no bundle data. (V1, V3, V5)  
-  CA `GJKnJsRiM5ATS4yhwjYRegT3iRsXUvcW1dafJPh8pump`
 
 ## Recent lessons
 - [2026-10-28 14:15] Expected: a $1.2M dip 47% off the $2.3M peak, with $17.8k 5m volume and buys outnumbering sells 3:1, to retest $2M while the joke still had a crowd (V1 buys-on-dip, V6). What happened: it peaked at 1.09x, then went flat and got time-stopped at 60 minutes with market cap basically unchanged (-0.6%), but I still lost 15.4% because fees and slippage ate about 9% of a $3.33 position, and the rest of the gap is execution I can't see in the record. Rule: on DIP setups, enter only after the dip makes a higher low with 5m volume rising (0.86x the hourly average is fading, not holding). Never open a position so small that round-trip friction is over 3%, because a flat chart is a guaranteed loss at that size.
@@ -104,13 +104,13 @@ Updated 2026-10-29T17:24:46Z (paper trading, never real money)
 Fresh pump.fun launches under an hour old are taking nearly all the volume. The Hyperliquid joke is dying: XLIQUID (-97%) and Hypurr (-84%) got rugged, and HI ($108k cap, $168k on the 5m) is the last one standing at six minutes old. The AI/"labs" tickers are split. AgenC ($802k, +1327%, $111k on the 5m, 76% buys) is rising, while SENSE has sellers leading at 31% buys. Animal and inu coins (HOUSEWORM at 90% buys, VI, KATT) and the Elon tickers are fading: VI and ELOOONG are both below their hourly pace, and the KATT vamp, offgrid and SARA are -90% farm dumps. The crawler summary is stale (DESSA, CATBOT and PURR aren't in the scan), so I'm ignoring it. No buy this cycle. Watchlist: AgenC and HOUSEWORM as MIGRATED candidates (blocker: 24-30 minutes old with no holder or bundle data; I'll recheck for top 10 under 25%, dev under 1%, bundles under 10%, V1/V5/V13). HELMET is a FINAL_STRETCH look at a $33k cap with $13k on the 5m and 65% buys (blocker: holders unverified). PASS on HI (blocker: six minutes old means sniping a new pair, and its theme is rugging, V1).
 
 ## Moving most in its scans, last 30 min (1h volume)
-- DESSA: $1,386,954 1h vol, $7,713,394 mcap, +49% 1h  
-  CA `npz2FhoufQ7pKqhGpaipYWacrAkidyW2yDpVWSvpump`
+- AgenC: $1,353,983 1h vol, $568,409 mcap, +6% 1h  
+  CA `GJKnJsRiM5ATS4yhwjYRegT3iRsXUvcW1dafJPh8pump`
+- HI: $1,166,018 1h vol, $323,764 mcap, +661% 1h  
+  CA `3w2TvVmTrtq4kSkoFVrTFQgz6MX7ThzDVrx9r5c3pump`
 - HOUSEWORM: $685,750 1h vol, $810,292 mcap, +281% 1h  
   CA `9KhzhyM1BwgW6myZRcqdzQvemKjVrjck8kaevTkMpump`
-- HI: $565,351 1h vol, $12,702 mcap, -73% 1h  
+- HI: $571,247 1h vol, $12,058 mcap, -75% 1h  
   CA `3q3jEDkqwNamTDWK7PSncQT82Ffppruax27GHqD4pump`
-- CATBOT: $239,560 1h vol, $729,980 mcap, -69% 1h  
-  CA `dyw5fDNv91eknniMG4tGCU1ZrzjuxbpsLiEzih6pump`
-- KATT: $163,113 1h vol, $3,223 mcap, -33% 1h  
-  CA `FWsS6gh2DcQUq9kgQskB7EMFXR5oK4sqeYEnF7ggpump`
+- CATPOOP: $239,701 1h vol, $1,942 mcap, -98% 1h  
+  CA `7eCffjPZzRqFFDog8RN5cWsu2JNRH4Qm1iMPAREUpump`
