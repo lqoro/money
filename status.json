@@ -1,28 +1,28 @@
 {
- "updated_at": "2026-10-29T00:28:44Z",
+ "updated_at": "2026-10-29T00:43:49Z",
  "paused_new_trades": false,
  "brain": {
   "mode": "subscription",
   "paused_until": null,
   "usage_48h": {
    "hours": 48,
-   "brain_calls": 210,
+   "brain_calls": 215,
    "plan_limit_hits": 0,
    "candidates_skipped_no_brain": 0,
    "stop_reviews_without_brain": 0
   }
  },
- "equity_usd": 100.29,
- "cash_usd": 97.38,
+ "equity_usd": 99.97,
+ "cash_usd": 94.44,
  "started_with_usd": 100.0,
  "realized_pnl_usd": 0.47,
- "fees_paid_usd": 2.15,
+ "fees_paid_usd": 2.42,
  "fees_by_kind_usd": {
-  "axiom": 0.2,
-  "network": 1.64,
-  "pool": 0.18
+  "axiom": 0.23,
+  "network": 1.84,
+  "pool": 0.21
  },
- "slippage_paid_usd": 0.29,
+ "slippage_paid_usd": 0.33,
  "closed_trades": 3,
  "win_rate": 0.33,
  "open_positions": [
@@ -31,9 +31,20 @@
    "ca": "Bv1a7cEj5aRnJQhMw4kRQqAFesMSd5LwcDnUzq52BMmr",
    "setup": "MIGRATED",
    "cost_usd": 3.09,
-   "value_usd": 2.92,
+   "value_usd": 2.9,
    "multiple": 1.02,
    "fees_usd": 0.24,
+   "slippage_usd": 0.04,
+   "initials_taken": false
+  },
+  {
+   "symbol": "FLOATER",
+   "ca": "J7cqsaTuXUavwA3sp238tSpartUfYwDrJAaHuDvypump",
+   "setup": "MIGRATED",
+   "cost_usd": 2.94,
+   "value_usd": 2.63,
+   "multiple": 0.99,
+   "fees_usd": 0.27,
    "slippage_usd": 0.04,
    "initials_taken": false
   }
@@ -339,6 +350,32 @@
     "target_mcap_usd": 3000000.0
    },
    "thesis": "Tokenized stocks is where the radar sees money going (top narratives: robinhood, tokenized, stock). FLOAT is the only on-theme coin with real flow: $41k 5m volume, 322 buys to 204 sells, 4,705 buys in the last hour, liquidity at about 17.5% of mcap. That flow passes V1, V6 and V13. The site shows this exact CA, so of the 11 FLOAT tickers this is likely the original (V1, V3). It held a higher low at $1.04M and is reclaiming, which follows my lesson to buy the retest, not the top. I'm buying a $2.17M peak retest, and I'm out if it loses the low."
+  },
+  {
+   "ca": "J7cqsaTuXUavwA3sp238tSpartUfYwDrJAaHuDvypump",
+   "ts": "2026-10-29T00:43:34Z",
+   "event": "BUY",
+   "id": "10966815",
+   "token": "J7cqsaTuXUavwA3sp238tSpartUfYwDrJAaHuDvypump",
+   "symbol": "FLOATER",
+   "setup": "MIGRATED",
+   "size_usd": 2.94,
+   "conviction": 6,
+   "risk_usd": 1.5,
+   "price": 0.00017034380499494849,
+   "fees_usd": 0.2676,
+   "slippage_usd": 0.0399,
+   "dex": "pumpswap",
+   "pool_fee_pct": 1.15,
+   "mcap": 167812.0,
+   "exit_plan": {
+    "take_initials_multiple": 2.0,
+    "stop_loss_pct": 30.0,
+    "trailing_stop_pct": 30.0,
+    "time_stop_minutes": 30.0,
+    "target_mcap_usd": 500000.0
+   },
+   "thesis": "Of the 23 same-ticker coins, this is the one with the crowd: $141k 5m volume and a 78% buy ratio. It sits 34% off the high, so I'm not buying the top (my CATCULUS rule), and buyers are stepping back in hard (V1). Holders come back clean: top 10 at 11.4% ex-pool, dev and insiders at 0% (V6, V13). The idea rides the tokenized-stock meta that's getting real money right now. Price follows attention, and the attention is arriving."
   }
  ],
  "recent_lessons": [
@@ -348,15 +385,15 @@
  ],
  "learned_rules": "",
  "meta": {
-  "age_minutes": 7,
-  "meta_summary": "It's quiet. I don't see a live trench meta right now. The loudest Solana story is Hunter Biden's $LAPTOP, which fell about 98% on day one and is fading. A political figure pushed that contract address, so it's a hard no, and the same goes for any vamp or \"revival\" of it (V13). The Robinhood/Circle hype is also dying. The money that's rising is bucket-2 money, not trench money: tokenized stocks and Robinhood Chain, stablecoins/RWA, PENGU and PEPE trending, and BTC above $81k ahead of the Fed (V8). Single-digit ticker mentions like $MT (3), $CHIMP and $LICK (1 each) are attention farming, not a crowd (V7). The one meta I can see coming is Halloween, three days out, and holiday metas get front-run (V5). So the coin that rides it will be an original, funny spooky idea, maybe a pumpkin-ticker or tokenized-stonk joke, not a knockoff (V1). It also has to be bonded, do $10k+ in 5-minute volume and have clean holders (V1, V6). Nothing like that has shown up yet. PASS for now; watching for pumpkins.",
+  "age_minutes": 1,
+  "meta_summary": "It's quiet. There's no live trench meta right now. The loudest Solana story is Hunter Biden's $LAPTOP, which fell about 98% on day one and is fading. A political figure pushed that CA, so it's a hard no, and the same goes for any vamp or \"revival\" of it (V13). The Robinhood/Circle hype is dying too. The money that's rising is bucket-2 money, not trench money: tokenized stocks and Robinhood Chain, stablecoins and RWA, PEPE and PENGU on CoinGecko trending, frog and 4chan categories, and BTC above $81k ahead of the Fed (V8). Tickers like $MT (3 mentions), $CHIMP and $LICK (1 each) are attention farming, not a crowd (V7). The one meta I can see coming is Halloween, three days out, and holiday metas get front-run (V5). The coin that rides it will be an original, funny spooky idea, maybe a pumpkin, or a frog-in-a-costume that crosses over with the PEPE flow, not a knockoff (V1). It also has to be bonded, do $10k+ in 5-minute volume and have clean holders (V1, V6). Nothing like that has shown up yet. PASS for now; watching for pumpkins.",
   "top_narratives": [
    "tokenized",
    "robinhood",
    "pepe",
+   "stock",
    "prediction",
    "rally",
-   "stock",
    "trump",
    "referral",
    "app",
@@ -370,32 +407,32 @@
    "times",
    "slowing",
    "machine slowing",
-   "code"
+   "data"
   ],
   "trending_categories": [
    "The Boy\u2019s Club",
    "Frog-Themed",
-   "Liquid Staking Governance Tokens",
-   "Quantum-Resistant",
-   "Zero Knowledge (ZK)",
-   "Centralized Exchange (CEX) Token"
+   "Parallelized EVM",
+   "Airdropped Tokens by NFT Projects",
+   "IP Meme",
+   "Mobile Mining"
   ],
   "trending_coins": [
    "PEPE",
-   "PEARL",
-   "QTC",
-   "PONS",
    "PENGU",
+   "PEARL",
+   "CHIP",
    "KNTQ",
-   "HYPE",
    "XRP",
-   "ZEC",
-   "SOL",
-   "XMR",
+   "PONS",
    "SEI",
+   "ONDO",
+   "ETH",
+   "DOGE",
+   "PI",
+   "DRV",
    "PUMP",
-   "BP",
-   "SUI"
+   "HYPE"
   ],
   "hot_tickers": [
    {
@@ -431,6 +468,10 @@
     "mentions": 1
    },
    {
+    "ticker": "$DUBBLE",
+    "mentions": 1
+   },
+   {
     "ticker": "$RETAIL",
     "mentions": 1
    },
@@ -440,8 +481,8 @@
    }
   ],
   "headlines": [
-   "Faster Solana slots fail to stop memecoin bot snipers",
    "Top 6 memecoins to check out in October 2026",
+   "How to Spot the Best Meme Coin to Buy Now? Apeing Brings 1,150% Stated Returns to the Meme Coin Hunt",
    "Former Doom Developer Could Be in Trouble as Bethesda Goes After Doom Memecoin",
    "Visa to close Crossmint memecoin rewards loophole following The Block investigation: report",
    "Hunter Biden lashes out after $LAPTOP meme coin collapse"

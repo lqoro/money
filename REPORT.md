@@ -1,20 +1,20 @@
 # Trencher live report
 
-Updated 2026-10-29T00:28:44Z (paper trading, never real money)
+Updated 2026-10-29T00:43:49Z (paper trading, never real money)
 
-- Equity: $100.29 (+0.3% vs $100 start)
+- Equity: $99.97 (-0.0% vs $100 start)
 - Closed trades: 3, 1 wins
-- Fees paid: $2.15 (axiom $0.20, network $1.64, pool $0.18), plus $0.29 lost to slippage
+- Fees paid: $2.42 (axiom $0.23, network $1.84, pool $0.21), plus $0.33 lost to slippage
 - New trades: on
-- Brain: subscription, 210 calls and 0 plan-limit hits in 48h
+- Brain: subscription, 215 calls and 0 plan-limit hits in 48h
 
 ## Open positions
 - FLOAT (MIGRATED): cost $3.09, 1.02x, fees $0.24  
   CA `Bv1a7cEj5aRnJQhMw4kRQqAFesMSd5LwcDnUzq52BMmr`
+- FLOATER (MIGRATED): cost $2.94, 0.99x, fees $0.27  
+  CA `J7cqsaTuXUavwA3sp238tSpartUfYwDrJAaHuDvypump`
 
 ## Recent trades
-- 14:15Z CLOSE Something -15% ($-0.51), fees $0.26  
-  CA `AZdhikmyj6ibsejv7EjML9SfNmuiMvwDrKXTEU2zpump`
 - 21:42Z BUY CATBOT $2.91, fees $0.27  
   CA `dyw5fDNv91eknniMG4tGCU1ZrzjuxbpsLiEzih6pump`
 - 22:08Z BUY CATCULUS $2.96, fees $0.27  
@@ -33,6 +33,8 @@ Updated 2026-10-29T00:28:44Z (paper trading, never real money)
   CA `dyw5fDNv91eknniMG4tGCU1ZrzjuxbpsLiEzih6pump`
 - 00:10Z BUY FLOAT $3.09, fees $0.24  
   CA `Bv1a7cEj5aRnJQhMw4kRQqAFesMSd5LwcDnUzq52BMmr`
+- 00:43Z BUY FLOATER $2.94, fees $0.27  
+  CA `J7cqsaTuXUavwA3sp238tSpartUfYwDrJAaHuDvypump`
 
 ## Last closes
 - Something: -15% ($-0.51), time stop: 60 min and only 0.98x  
@@ -48,4 +50,4 @@ Updated 2026-10-29T00:28:44Z (paper trading, never real money)
 - [2026-10-28 22:59] Expected: the original Cat Bot pair would retest its $845k peak, because holders were clean (top 10 at 3.3%, dev/insiders 0%) and 5m volume was organic at $12.9k (V1, V6, V13). Happened: it ran to 4.44x peak, I took initials at 2x, and the target plus a 35% trail closed the rest around 2.67x, so the clean MIGRATED dip-buy worked but the trail gave back about 40% of the peak, and fees ate roughly a third of a $2.91 position. Rule: once initials are out and the coin is past 4x, tighten the trail to about 25% from peak, and don't open positions under about $5 where fees ruin the math, because sell initials only protects the cost basis, not the runner (V11).
 
 ## Meta right now
-It's quiet. I don't see a live trench meta right now. The loudest Solana story is Hunter Biden's $LAPTOP, which fell about 98% on day one and is fading. A political figure pushed that contract address, so it's a hard no, and the same goes for any vamp or "revival" of it (V13). The Robinhood/Circle hype is also dying. The money that's rising is bucket-2 money, not trench money: tokenized stocks and Robinhood Chain, stablecoins/RWA, PENGU and PEPE trending, and BTC above $81k ahead of the Fed (V8). Single-digit ticker mentions like $MT (3), $CHIMP and $LICK (1 each) are attention farming, not a crowd (V7). The one meta I can see coming is Halloween, three days out, and holiday metas get front-run (V5). So the coin that rides it will be an original, funny spooky idea, maybe a pumpkin-ticker or tokenized-stonk joke, not a knockoff (V1). It also has to be bonded, do $10k+ in 5-minute volume and have clean holders (V1, V6). Nothing like that has shown up yet. PASS for now; watching for pumpkins.
+It's quiet. There's no live trench meta right now. The loudest Solana story is Hunter Biden's $LAPTOP, which fell about 98% on day one and is fading. A political figure pushed that CA, so it's a hard no, and the same goes for any vamp or "revival" of it (V13). The Robinhood/Circle hype is dying too. The money that's rising is bucket-2 money, not trench money: tokenized stocks and Robinhood Chain, stablecoins and RWA, PEPE and PENGU on CoinGecko trending, frog and 4chan categories, and BTC above $81k ahead of the Fed (V8). Tickers like $MT (3 mentions), $CHIMP and $LICK (1 each) are attention farming, not a crowd (V7). The one meta I can see coming is Halloween, three days out, and holiday metas get front-run (V5). The coin that rides it will be an original, funny spooky idea, maybe a pumpkin, or a frog-in-a-costume that crosses over with the PEPE flow, not a knockoff (V1). It also has to be bonded, do $10k+ in 5-minute volume and have clean holders (V1, V6). Nothing like that has shown up yet. PASS for now; watching for pumpkins.
