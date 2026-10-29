@@ -8,7 +8,8 @@ in this repo, checked out at DUET_SYNC_DIR:
     REPORT.md    the same, readable on GitHub or a phone
     steer.json   written by Duet:  {"pause_new_trades": bool,
                                     "settings": {"stop_loss_pct": 25, "bribe_sol": 0.002, ...},
-                                    "owner_note": "short guidance for the brain"}
+                                    "owner_note": "short guidance for the brain",
+                                    "goal": {"equity_usd": 1000, "deadline": "2026-11-05T05:00:00Z"}}
 
 Every DUET_SYNC_INTERVAL_MIN minutes Trencher pulls the branch, applies steer.json,
 writes its status and pushes. Steering is data, never code: only a pause flag,
@@ -75,6 +76,20 @@ def apply_steering(cfg: Config, steer: dict) -> dict:
         log.info("Duet steering: %s back to %g", name, getattr(cfg, name))
     cfg.apply_strategy()
 
+    goal = steer.get("goal")
+    cfg.goal_equity_usd, cfg.goal_deadline = 0.0, ""
+    if isinstance(goal, dict):
+        try:
+            target = float(goal.get("equity_usd") or 0)
+            deadline = str(goal.get("deadline") or "")
+            time.strptime(deadline, "%Y-%m-%dT%H:%M:%SZ")
+        except (TypeError, ValueError):
+            log.warning("Duet steering: ignoring goal %r (needs equity_usd and a deadline like 2026-11-05T05:00:00Z)", goal)
+        else:
+            if target > 0:
+                cfg.goal_equity_usd, cfg.goal_deadline = target, deadline
+                applied["goal"] = {"equity_usd": target, "deadline": deadline}
+
     note = steer.get("owner_note")
     cfg.owner_note = str(note).strip()[:MAX_NOTE_CHARS] if note else ""
     if cfg.owner_note:
@@ -99,6 +114,9 @@ def build_report(agent) -> tuple[dict, str]:
         "recent_lessons": journal.recent_lessons(cfg, 10),
         "learned_rules": journal.learned_rules(cfg),
         "meta": radar.public_view(agent.meta, headlines=5),
+        "goal": cfg.goal_progress(view.get("equity_usd", agent.pf.equity())),
+        "last_scan": getattr(agent, "last_scan", {}),
+        "recent_looks": list(getattr(agent, "recent_looks", []))[-15:],
     }
 
     eq = view.get("equity_usd", agent.pf.equity())
@@ -109,6 +127,10 @@ def build_report(agent) -> tuple[dict, str]:
         f"Updated {status['updated_at']} (paper trading, never real money)",
         "",
         f"- Equity: ${eq:,.2f} ({100 * (eq / cfg.starting_cash_usd - 1):+.1f}% vs ${cfg.starting_cash_usd:.0f} start)",
+        *([f"- Goal: ${g['target_usd']:,.0f} by {g['deadline'][:16].replace('T', ' ')}Z (a stretch, survival first): "
+           f"at {g['progress_pct']:g}% of it, {g['days_left']:g} days left"
+           + (f", needs {g['needed_daily_growth_pct']:+g}% a day from here" if g["needed_daily_growth_pct"] is not None else "")]
+          if (g := status["goal"]) else []),
         f"- Closed trades: {len(closes)}" + (f", {wins} wins" if closes else ""),
         f"- Fees paid: ${view.get('fees_paid_usd', 0):.2f}"
         + (" (" + ", ".join(f"{k} ${v:.2f}" for k, v in (view.get("fees_by_kind_usd") or {}).items()) + ")"
@@ -135,9 +157,31 @@ def build_report(agent) -> tuple[dict, str]:
     lines += [f"- {t.get('symbol')}: {t.get('pnl_pct', 0):+.0f}% (${t.get('pnl_usd', 0):+.2f}), "
               f"{(t.get('exit_reasons') or ['?'])[-1]}  \n  CA `{t.get('ca') or t.get('token')}`"
               for t in closes[-10:]] or ["- none yet"]
+    lines += ["", "## Last scan"]
+    scan = status["last_scan"]
+    if scan.get("blocked"):
+        lines.append(f"- Not opening trades: {scan['blocked']}")
+    elif scan:
+        lines.append(f"- {time.strftime('%H:%MZ', time.gmtime(scan['at']))}: {scan['tokens']} coins, "
+                     f"{scan['pairs']} with pairs, {scan['passed_market_filters']} passed the market filters, "
+                     f"{scan['researched']} researched")
+    else:
+        lines.append("- no scan yet since the last restart")
+    lines += ["", "## Coins it looked at, and why it passed"]
+    lines += [f"- {look.get('ts', '')[11:16]}Z {look.get('symbol')} ({look.get('setup') or 'no setup'}, "
+              f"${look.get('mcap_usd', 0):,} mcap, ${look.get('vol_5m', 0):,} 5m vol): {look.get('outcome')}"
+              + (f" at conviction {look['conviction']}" if look.get("conviction") else "")
+              + f", {look.get('reason')}  \n  CA `{look.get('ca')}`"
+              for look in reversed(status["recent_looks"][-10:])] or ["- none since the last restart"]
     lines += ["", "## Recent lessons", *(status["recent_lessons"] or ["- none yet"])]
     if agent.meta.get("meta_summary"):
         lines += ["", "## Meta right now", agent.meta["meta_summary"]]
+    movers = (agent.meta.get("scan_movers") or [])[:5]
+    if movers:
+        lines += ["", "## Moving most in its scan (1h volume)"]
+        lines += [f"- {m.get('symbol')}: ${m.get('vol_1h', 0):,} 1h vol, ${m.get('mcap_usd', 0):,} mcap"
+                  + (f", {m['change_1h']:+.0f}% 1h" if isinstance(m.get("change_1h"), (int, float)) else "")
+                  + f"  \n  CA `{m.get('ca')}`" for m in movers]
     return status, "\n".join(lines) + "\n"
 
 

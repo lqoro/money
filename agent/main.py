@@ -9,6 +9,7 @@ import logging
 import signal
 import sys
 import time
+from collections import deque
 
 from . import data, journal, radar
 from .api import start_api
@@ -42,6 +43,9 @@ class Agent:
         self.peaks: dict[str, list[float]] = watch.get("peaks", {})
         self.watchlist: dict[str, dict] = watch.get("watchlist", {})
         self.meta: dict = radar.load_radar(cfg)  # the web crawler's view of the meta
+        # For the Duet report: what the last scan saw, and every coin it looked at and why it passed.
+        self.last_scan: dict = {}
+        self.recent_looks: deque[dict] = deque(maxlen=30)
         self.bridge = DuetBridge(cfg, self)
 
     # ---------------------------------------------------------------- web crawler
@@ -106,6 +110,7 @@ class Agent:
             ok, why = False, "paused from Claude Duet"
         if not ok:
             log.info("Not opening new trades: %s", why)
+            self.last_scan = {"at": time.time(), "blocked": why}
             return
         sol = data.sol_price_usd()
         now = time.time()
@@ -117,10 +122,11 @@ class Agent:
         tokens = [t for t in discovered + watched
                   if self.cooldown.get(t, 0) < now and not self.pf.holds(t)]
         pairs = data.get_pairs(tokens)
-        candidates = []
+        candidates, snaps = [], []
         for addr, pair in pairs.items():
             snap = data.pair_snapshot(pair)
             self.track_peak(snap)
+            snaps.append(snap)
             setup = market_prefilter(snap, self.cfg, sol)
             if setup:
                 candidates.append(snap)
@@ -129,6 +135,13 @@ class Agent:
         candidates.sort(key=lambda s: s["vol_5m"], reverse=True)
         log.info("Scan: %d tokens (%d on watchlist), %d pairs, %d pass market filters (SOL $%.2f)",
                  len(tokens), len(watched), len(pairs), len(candidates), sol)
+        # The live meta is what the market is trading right now: keep the scan's movers
+        # (all coins, not just candidates) for the meta summary and the brain.
+        self.meta["scan_movers"] = radar.scan_movers(snaps)
+        self.meta["scan_movers_at"] = now
+        self.last_scan = {"at": now, "tokens": len(tokens), "pairs": len(pairs),
+                          "passed_market_filters": len(candidates),
+                          "researched": min(len(candidates), self.cfg.max_candidates_per_scan)}
         self.save_watch()
 
         for snap in candidates[: self.cfg.max_candidates_per_scan]:
@@ -170,6 +183,15 @@ class Agent:
         return {**self.portfolio_view(), "strategy": self.cfg.strategy_view(),
                 "watchlist": list(self.watchlist.values()), "meta": radar.public_view(self.meta, headlines=5)}
 
+    def note_look(self, snap: dict, setup: str | None, outcome: str, reason: str, conviction=None) -> None:
+        """Remember a coin Trencher looked at and what it decided, for the Duet report."""
+        self.recent_looks.append({
+            "ts": time.strftime("%Y-%m-%dT%H:%M:%SZ", time.gmtime()), "symbol": snap.get("symbol"),
+            "ca": snap.get("address"), "setup": setup, "mcap_usd": round(snap.get("mcap_usd") or 0),
+            "vol_5m": round(snap.get("vol_5m") or 0), "outcome": outcome, "conviction": conviction,
+            "reason": str(reason)[:300],
+        })
+
     def research(self, snap: dict, sol: float) -> None:
         cfg = self.cfg
         addr = snap["address"]
@@ -177,12 +199,14 @@ class Agent:
         check = self.build_dossier(snap, sol)
         if not check.passed:
             log.info("  ✗ %-10s %s", snap["symbol"], check.fails[0] if check.fails else "no setup")
+            self.note_look(snap, check.setup, "REJECT", check.fails[0] if check.fails else "no setup fits")
             journal.log_decision(cfg, {"token": addr, "symbol": snap["symbol"], "action": "REJECT",
                                        "fails": check.fails, "warns": check.warns})
             return
         if not self.brain.has_budget():
             log.info("  … %-10s passed checklist but the brain is paced or paused right now", snap["symbol"])
             self.brain.note("skipped")
+            self.note_look(snap, check.setup, "SKIP", "passed the checklist, but the brain was paced or paused")
             self.cooldown[addr] = time.time() + 5 * 60
             return
 
@@ -207,14 +231,21 @@ class Agent:
             journal.log_decision(cfg, {"token": addr, "symbol": snap["symbol"], "action": "PASS_ON_FEES",
                                        "verdict": decision.get("verdict"), "fee_check": fees.__dict__})
         if decision.get("action") != "BUY":
+            self.note_look(snap, check.setup, "PASS", decision.get("verdict") or "brain passed",
+                           conviction=decision.get("conviction"))
             return
         size = sizing.size_usd
         log.info("    sizing: %s → $%.2f (loses ~$%.2f at the stop)", sizing.note, size, sizing.risk_usd)
         if size < cfg.min_position_usd:
             log.info("    size $%.2f below minimum, skipping (%s)", size, sizing.note)
+            self.note_look(snap, check.setup, "TOO_SMALL",
+                           f"wanted to buy, but ${size:.2f} is under the ${cfg.min_position_usd:g} minimum ({sizing.note})",
+                           conviction=decision.get("conviction"))
             return
         if not fees.ok:
             log.info("    fee check failed, skipping: %s", fees.note)
+            self.note_look(snap, check.setup, "FEE_SKIP", f"wanted to buy ${size:.2f}, but {fees.note}",
+                           conviction=decision.get("conviction"))
             journal.log_decision(cfg, {"token": addr, "symbol": snap["symbol"], "action": "FEE_SKIP",
                                        "size_usd": size, "fee_check": fees.__dict__})
             return
@@ -227,6 +258,8 @@ class Agent:
             log.info("    skipping: %s", e)
             return
         pos.entry_holders = check.holders
+        self.note_look(snap, check.setup, "BUY", decision.get("verdict") or f"bought ${size:.2f}",
+                       conviction=decision.get("conviction"))
         self.watchlist.pop(addr, None)
         self.pf.save(cfg)
         journal.log_trade(cfg, {"event": "BUY", "id": pos.id, "token": addr, "ca": addr, "symbol": pos.symbol,

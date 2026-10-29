@@ -172,7 +172,10 @@ def cost_note(cfg: Config, sol_usd: float, venue_pct: float | None = None) -> st
     return (f"Every trade pays real costs (as on Axiom): {cfg.platform_fee_pct:g}% Axiom fee + {venue:g}% pool fee "
             f"each way, ${net:.2f} of network fees per transaction (priority + tip), and slippage "
             f"({cfg.base_slippage_pct:g}% + price impact). A $5 round trip at an unchanged price loses about "
-            f"${5 * 2 * (cfg.platform_fee_pct + venue + cfg.base_slippage_pct) / 100 + 2 * net:.2f}.")
+            f"${5 * 2 * (cfg.platform_fee_pct + venue + cfg.base_slippage_pct) / 100 + 2 * net:.2f}. "
+            f"So a round trip always costs at least {2 * (cfg.platform_fee_pct + venue + cfg.base_slippage_pct):g}% "
+            f"+ ${2 * net:.2f} at any size: that's the price of a trade, so judge whether the upside beats it, "
+            f"don't pass just because it exists.")
 
 
 def sizing_guide(pf: Portfolio, cfg: Config, stop_loss_pct: float | None = None,
