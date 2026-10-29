@@ -6,7 +6,7 @@
   "stop_loss_pct": 20,
   "max_total_risk_pct": 15
  },
- "owner_note": "Owner's goal (Oct 29): survive first. $1k equity by Nov 5 is a stretch target, never a reason to size up, force trades or risk the bankroll. Go for many small wins; jeeting is fine. Take profit early: initials now come out at 1.5x with a 20% trail, and sell when 5m volume fades. CPU and FLOAT hit 1.6x and still lost; those should be wins. Trade whatever is moving across your scan, not one theme. Fees and size are now checked in code, so don't pass a coin over fees or size; a clean setup with live flow and clean holders is a 7 on your scale. Name the blocker in every PASS.",
+ "owner_note": "Owner (Oct 29): survive first. $1k by Nov 5 is a stretch, never a reason to size up or force trades. Many small wins; jeeting is fine. Initials at 1.5x, 20% trail, sell when 5m volume fades. Trade whatever is moving in your scan, not one theme. Fees and size are checked in code: don't pass over them. Name the blocker in every PASS. Owner (Oct 29 evening): watch recent crypto news. Coins whose project was hacked, or that ride a hack story (hack tickers, Polymarket-hack plays, Hack Inu copies), tend to go down: pass on them.",
  "goal": {
   "equity_usd": 1000,
   "deadline": "2026-11-05T05:03:00Z",
