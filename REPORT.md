@@ -1,13 +1,13 @@
 # Trencher live report
 
-Updated 2026-10-29T16:23:56Z (paper trading, never real money)
+Updated 2026-10-29T16:39:01Z (paper trading, never real money)
 
 - Equity: $99.93 (-0.1% vs $100 start)
-- Goal: $1,000 by 2026-11-05 05:03Z (a stretch, survival first): at 10% of it, 6.5 days left, needs +42.3% a day from here
+- Goal: $1,000 by 2026-11-05 05:03Z (a stretch, survival first): at 10% of it, 6.5 days left, needs +42.4% a day from here
 - Closed trades: 7, 2 wins
 - Fees paid: $4.16 (axiom $0.43, network $3.26, pool $0.35), plus $0.62 lost to slippage
 - New trades: on
-- Brain: subscription, 382 calls and 0 plan-limit hits in 48h
+- Brain: subscription, 386 calls and 0 plan-limit hits in 48h
 
 ## Scorecard (after fees)
 - 7 closed, 2 won (29%), net $-0.07
@@ -67,9 +67,19 @@ Updated 2026-10-29T16:23:56Z (paper trading, never real money)
   CA `Bv1a7cEj5aRnJQhMw4kRQqAFesMSd5LwcDnUzq52BMmr`
 
 ## Last scan
-- 16:23Z: 7 coins, 6 with pairs, 0 passed the market filters, 0 researched
+- 16:38Z: 6 coins, 5 with pairs, 0 passed the market filters, 0 researched
 
 ## Coins it looked at, and why it passed
+- 16:37Z HI (FINAL_STRETCH, $36,449 mcap, $19,893 5m vol): PASS at conviction 4, PASS: top 10 hold 24.4% ex-pool, just under the 25% hard line, and I'd be buying a 10x hour at 2% off the high, 87% bonded, right where the pre-bond dump usually hits. Bundles unverified. (V1, V6, V13)  
+  CA `3q3jEDkqwNamTDWK7PSncQT82Ffppruax27GHqD4pump`
+- 16:35Z GATO (MIGRATED, $4,647,540 mcap, $2,209 5m vol): REJECT, Dev holds 3.3% (>1%) (V13, V17)  
+  CA `HsprHxBRgiVaQdRf3TnKNuZZtaX9JUSPgMFdAkk6pump`
+- 16:28Z VI (MIGRATED, $346,214 mcap, $6,032 5m vol): PASS at conviction 4, PASS — 15% off the $409k high with bundles unverified, and 5m volume is $6k and fading at 0.8x the hourly pace. Blocker: entry location and fading flow. Watch for a ~$240k fib retest (V1, V6).  
+  CA `A6PM7bxyWYiUxaEpRMHvuL4tY2jYVf8N46vXZ15Hpump`
+- 16:27Z KATT (FINAL_STRETCH, $26,125 mcap, $107,652 5m vol): PASS at conviction 3, PASS: KATT is 3.5 minutes old, on 62% of the bonding curve, and two bigger coins already use the ticker. Buying now means sniping a new pair with my data running seconds behind the pros (V1, V5).  
+  CA `FWsS6gh2DcQUq9kgQskB7EMFXR5oK4sqeYEnF7ggpump`
+- 16:25Z HOUSEWORM (MIGRATED, $388,558 mcap, $37,160 5m vol): PASS at conviction 3, PASS: 33 min old, 11% off the high, 465 insider networks flagged, bundles unverified, and a 9:1 buy:sell ratio that looks like bots. Blocker: momentum entry near the high into a possible farm (V3, V5, V13, V17).  
+  CA `9KhzhyM1BwgW6myZRcqdzQvemKjVrjck8kaevTkMpump`
 - 16:16Z GTA (MIGRATED, $52,077 mcap, $4,235 5m vol): PASS at conviction 2, PASS: down 83% off a $304k peak in 30 minutes, and its 993 buys moved only $4.2k. That's bot dust, not a crowd. Vamp of a bigger GTA ticker. (V3, V6, V13)  
   CA `FViKbzdiHbBYXnVGfkdHAzJD6PcSPDGQHRQ4GY8zpump`
 - 16:12Z CATBOT (DIP, $2,317,092 mcap, $24,527 5m vol): REJECT, Dip with fading attention is a falling knife, not a dip  
@@ -80,16 +90,6 @@ Updated 2026-10-29T16:23:56Z (paper trading, never real money)
   CA `3zoyoJwywuALj49wi9ffsz49hJaToJ29f9JBSCGNpump`
 - 15:58Z SENSE (MIGRATED, $1,356,810 mcap, $21,897 5m vol): REJECT, Top 10 hold 34.3% ex-pool (>25%) (V13)  
   CA `GydpvgKppv8a4gGQqAQsyQJxtQN4S6Ym9gKxjnN3mfun`
-- 15:57Z HYPE (MIGRATED, $272,131 mcap, $15,698 5m vol): REJECT, Top 10 hold 42.9% ex-pool (>25%) (V13)  
-  CA `8FDW22Dov1Q2hrmb64uPKqyuFKfpGJRQvm9JGsuLpump`
-- 15:55Z ELOOONG (MIGRATED, $199,800 mcap, $23,376 5m vol): PASS at conviction 3, PASS: 16 minutes old, 4% off the high, 5 insider networks and bundles unverified, on an Elon-tweet vamp field of 16 copies. That's sniping the top (V1, V5, learned rule).  
-  CA `2YZdszj9XpTrKZ3FsVJH5sqGXppCgfW5E5pCVR9Apump`
-- 15:54Z offgrid (DIP, $54,083 mcap, $119,609 5m vol): REJECT, Dev holds 5.3% (>1%) (V13, V17)  
-  CA `7x8FSbwgJGrXXbk6BgSpXjiW25rzzzNu2wBhsDJbAjUi`
-- 15:44Z SARA (MIGRATED, $43,569 mcap, $39,835 5m vol): REJECT, Dev holds 1.7% (>1%) (V13, V17)  
-  CA `3j2RebsuBjNoV5DPz1xSztasqWhjStpQarisDpcLpump`
-- 15:43Z Stanley (MIGRATED, $45,320 mcap, $9,918 5m vol): REJECT, Top 10 hold 27.6% ex-pool (>25%) (V13)  
-  CA `83MRySsDw9nuyV2e7iowXBxPJgSNFphvsytvnBWjop6d`
 
 ## Recent lessons
 - [2026-10-28 14:15] Expected: a $1.2M dip 47% off the $2.3M peak, with $17.8k 5m volume and buys outnumbering sells 3:1, to retest $2M while the joke still had a crowd (V1 buys-on-dip, V6). What happened: it peaked at 1.09x, then went flat and got time-stopped at 60 minutes with market cap basically unchanged (-0.6%), but I still lost 15.4% because fees and slippage ate about 9% of a $3.33 position, and the rest of the gap is execution I can't see in the record. Rule: on DIP setups, enter only after the dip makes a higher low with 5m volume rising (0.86x the hourly average is fading, not holding). Never open a position so small that round-trip friction is over 3%, because a flat chart is a guaranteed loss at that size.
@@ -104,13 +104,13 @@ Updated 2026-10-29T16:23:56Z (paper trading, never real money)
 The meta is fresh pump.fun launches riding the Hyperliquid joke: PURR (Hypurr), Stanley (The Hyperliquid Bull), XLIQUID and Pumperps are all under an hour old and getting buyers, so that theme is rising. The GTA6/Vice City theme is mixed: VI is up 192% but only 30% of its 5m flow is buys, and GATO and Vicecity are bleeding. Cats are fading. CATBOT is up 130% on the hour but its 5m volume ($14.5k) is about a fifth of its hourly pace, with 44% buys. LMEOW is dead at a $2.9k cap with $0 traded in the last 5 minutes, and BVP and SA are farm dumps. The crawler's own summary is stale (it has BVP at +866%; the scan shows -75%), so I'm ignoring it. Hunter Biden's $LAPTOP is a political figure's coin, so it's a hard PASS (V13). The setups I'd paper trade right now: DESSA, a 74h-old migrated coin at $3.4M, up 164%, with $88k on the 5m and buys and sells roughly even. It's inside the V6 range and the volume is real, but I can't see the holders yet; if top 10 < 25%, dev < 1% and bundles < 10% check out, it's conviction 7, initials at 1.5x, 20% trail, and I sell half when the 5m drops to half its hourly pace. Watchlist: XLIQUID ($108k cap, $64k on the 5m, 69% buys) and ELOOONG ($273k cap, $484k on the 5m). Blocker on both: they're 6–12 minutes old with no holder or bundle data, so buying now is sniping a new pair (V1, V5); I'll recheck them at ~30–60 min. PASS on CATBOT (blocker: the 5m dropped to a fifth of its hourly pace and sellers lead, and a DIP needs attention still there), PASS on PURR (blocker: its 5m is down to half its hourly pace), and PASS on Stanley and Pumperps (blocker: their CAs don't end in pump, so I can't confirm the launchpad protections, V3).
 
 ## Moving most in its scans, last 30 min (1h volume)
-- ELOOONG: $2,279,348 1h vol, $90,467 mcap, +104% 1h  
-  CA `3zoyoJwywuALj49wi9ffsz49hJaToJ29f9JBSCGNpump`
 - DESSA: $1,615,360 1h vol, $7,111,693 mcap, +280% 1h  
   CA `npz2FhoufQ7pKqhGpaipYWacrAkidyW2yDpVWSvpump`
 - CATBOT: $978,902 1h vol, $2,317,092 mcap, -31% 1h  
   CA `dyw5fDNv91eknniMG4tGCU1ZrzjuxbpsLiEzih6pump`
-- SENSE: $546,342 1h vol, $1,356,810 mcap, -22% 1h  
-  CA `GydpvgKppv8a4gGQqAQsyQJxtQN4S6Ym9gKxjnN3mfun`
+- HOUSEWORM: $635,599 1h vol, $388,558 mcap, +507% 1h  
+  CA `9KhzhyM1BwgW6myZRcqdzQvemKjVrjck8kaevTkMpump`
+- XLIQUID: $490,528 1h vol, $2,066 mcap, -97% 1h  
+  CA `Bq6BPfB6NNC5d1kQZFsYpCFeWxxACmbvu35QHofqpump`
 - GTA: $342,956 1h vol, $52,077 mcap, +9% 1h  
   CA `FViKbzdiHbBYXnVGfkdHAzJD6PcSPDGQHRQ4GY8zpump`
