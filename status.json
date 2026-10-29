@@ -1,28 +1,28 @@
 {
- "updated_at": "2026-10-29T01:14:16Z",
+ "updated_at": "2026-10-29T01:29:16Z",
  "paused_new_trades": false,
  "brain": {
   "mode": "subscription",
   "paused_until": null,
   "usage_48h": {
    "hours": 48,
-   "brain_calls": 217,
+   "brain_calls": 218,
    "plan_limit_hits": 0,
    "candidates_skipped_no_brain": 0,
    "stop_reviews_without_brain": 0
   }
  },
- "equity_usd": 101.91,
- "cash_usd": 91.02,
+ "equity_usd": 101.04,
+ "cash_usd": 87.86,
  "started_with_usd": 100.0,
  "realized_pnl_usd": 0.47,
- "fees_paid_usd": 2.69,
+ "fees_paid_usd": 2.93,
  "fees_by_kind_usd": {
-  "axiom": 0.26,
-  "network": 2.05,
-  "pool": 0.24
+  "axiom": 0.29,
+  "network": 2.25,
+  "pool": 0.25
  },
- "slippage_paid_usd": 0.37,
+ "slippage_paid_usd": 0.42,
  "closed_trades": 3,
  "win_rate": 0.33,
  "open_positions": [
@@ -31,8 +31,8 @@
    "ca": "Bv1a7cEj5aRnJQhMw4kRQqAFesMSd5LwcDnUzq52BMmr",
    "setup": "MIGRATED",
    "cost_usd": 3.09,
-   "value_usd": 4.17,
-   "multiple": 1.46,
+   "value_usd": 3.56,
+   "multiple": 1.25,
    "fees_usd": 0.24,
    "slippage_usd": 0.04,
    "initials_taken": false
@@ -42,8 +42,8 @@
    "ca": "J7cqsaTuXUavwA3sp238tSpartUfYwDrJAaHuDvypump",
    "setup": "MIGRATED",
    "cost_usd": 2.94,
-   "value_usd": 3.67,
-   "multiple": 1.37,
+   "value_usd": 3.74,
+   "multiple": 1.4,
    "fees_usd": 0.27,
    "slippage_usd": 0.04,
    "initials_taken": false
@@ -53,10 +53,21 @@
    "ca": "dyw5fDNv91eknniMG4tGCU1ZrzjuxbpsLiEzih6pump",
    "setup": "MIGRATED",
    "cost_usd": 3.42,
-   "value_usd": 3.06,
-   "multiple": 0.97,
+   "value_usd": 2.83,
+   "multiple": 0.9,
    "fees_usd": 0.27,
    "slippage_usd": 0.05,
+   "initials_taken": false
+  },
+  {
+   "symbol": "CPU",
+   "ca": "5JbRYEz844bwnKbGx4dRHhrJ6zjrJ194CKdDXtzwgaXo",
+   "setup": "MIGRATED",
+   "cost_usd": 3.16,
+   "value_usd": 3.06,
+   "multiple": 1.05,
+   "fees_usd": 0.24,
+   "slippage_usd": 0.04,
    "initials_taken": false
   }
  ],
@@ -413,6 +424,32 @@
     "target_mcap_usd": 7000000.0
    },
    "thesis": "I left at $1.7M on a mechanical 35% trail, not because the thesis broke. The coin since reclaimed to $2.59M, so the reason I left no longer holds. It has based for an hour between about $2.0M and $2.7M. The low near $2.0M roughly matched the prior $2.05M low, and the last 5m printed +6.5% with buyers in control (941/597). Holders are about as clean as they get (top 10 at 1.26%, largest wallet 0.13%), and $12.7k on the 5m clears the V1/V6 bar. Liquidity is $143k against a $2.59M cap, which is thin but workable. The trade is a retest of the $3.46M high while the crowd is still here. If $2.0M breaks, the base has failed and I'm out."
+  },
+  {
+   "ca": "5JbRYEz844bwnKbGx4dRHhrJ6zjrJ194CKdDXtzwgaXo",
+   "ts": "2026-10-29T01:18:21Z",
+   "event": "BUY",
+   "id": "ee1bc722",
+   "token": "5JbRYEz844bwnKbGx4dRHhrJ6zjrJ194CKdDXtzwgaXo",
+   "symbol": "CPU",
+   "setup": "MIGRATED",
+   "size_usd": 3.16,
+   "conviction": 6,
+   "risk_usd": 1.53,
+   "price": 0.00017032851429619932,
+   "fees_usd": 0.2431,
+   "slippage_usd": 0.0433,
+   "dex": "raydium",
+   "pool_fee_pct": 0.25,
+   "mcap": 167866.0,
+   "exit_plan": {
+    "take_initials_multiple": 2.0,
+    "stop_loss_pct": 30.0,
+    "trailing_stop_pct": 30.0,
+    "time_stop_minutes": 45.0,
+    "target_mcap_usd": 500000.0
+   },
+   "thesis": "CPU is clearly the flow leader among the 16 tokens on this ticker: $379k in 1h volume and 2,452 holders, while the vamps found in search sit at a few thousand dollars or less (V1, V13). The holders are clean by the checklist: 16.5% top 10, 0% dev/insider, no insider networks. The 5m flow is above $10k, with buyers outnumbering sellers about 2:1 on the bounce (V1 big buys on a dip). The pullback is a normal 38% correction inside the 40-50% range, not a falling knife. The Float/tokenized-stock meta is live in my own book, so I'm buying the dip with a stop placed where the higher low fails."
   }
  ],
  "recent_lessons": [
@@ -422,22 +459,22 @@
  ],
  "learned_rules": "",
  "meta": {
-  "age_minutes": 1,
+  "age_minutes": 6,
   "meta_summary": "It's quiet. There's no live trench meta right now. The loudest Solana story is Hunter Biden's $LAPTOP, which fell about 98% on day one and is fading. A political figure pushed that CA, so it's a hard no, and the same goes for any vamp or \"revival\" of it (V13). The Robinhood/Circle hype is dying too. The money that's rising is bucket-2 money, not trench money: tokenized stocks and Robinhood Chain, stablecoins and RWA, PEPE and PENGU on CoinGecko trending, frog and 4chan categories, and BTC above $81k ahead of the Fed (V8). Tickers like $MT (3 mentions), $CHIMP and $LICK (1 each) are attention farming, not a crowd (V7). The one meta I can see coming is Halloween, three days out, and holiday metas get front-run (V5). The coin that rides it will be an original, funny spooky idea, maybe a pumpkin, or a frog-in-a-costume that crosses over with the PEPE flow, not a knockoff (V1). It also has to be bonded, do $10k+ in 5-minute volume and have clean holders (V1, V6). Nothing like that has shown up yet. PASS for now; watching for pumpkins.",
   "top_narratives": [
    "tokenized",
    "robinhood",
    "stock",
-   "prediction",
    "pepe",
+   "prediction",
    "rally",
    "trump",
    "referral",
    "app",
    "fed",
    "dogecoin",
-   "stocks",
    "data",
+   "stocks",
    "code",
    "stablecoin",
    "hunter",
@@ -450,26 +487,26 @@
    "The Boy\u2019s Club",
    "Frog-Themed",
    "Base Native",
-   "Liquid Staking Governance Tokens",
    "Real World Assets (RWA)",
+   "World Liberty Financial Portfolio",
    "Crypto Card Issuer"
   ],
   "trending_coins": [
    "PEPE",
    "PENGU",
    "PEARL",
-   "PONS",
-   "XRP",
-   "KNTQ",
    "BTC",
+   "KNTQ",
+   "XRP",
    "PUMP",
-   "ETH",
    "NEAR",
-   "CAKE",
+   "PONS",
+   "CHIP",
    "PLUME",
+   "CAKE",
    "CRO",
-   "QTC",
-   "SOL"
+   "ETH",
+   "MON"
   ],
   "hot_tickers": [
    {
@@ -479,6 +516,14 @@
    {
     "ticker": "$MT",
     "mentions": 2
+   },
+   {
+    "ticker": "$HYPE",
+    "mentions": 1
+   },
+   {
+    "ticker": "$TROVE",
+    "mentions": 1
    },
    {
     "ticker": "$POKERFACE",
@@ -494,10 +539,6 @@
    },
    {
     "ticker": "$SYMF",
-    "mentions": 1
-   },
-   {
-    "ticker": "$CHIMP",
     "mentions": 1
    },
    {
