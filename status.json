@@ -1,31 +1,43 @@
 {
- "updated_at": "2026-10-28T23:58:29Z",
+ "updated_at": "2026-10-29T00:13:42Z",
  "paused_new_trades": false,
  "brain": {
   "mode": "subscription",
   "paused_until": null,
   "usage_48h": {
    "hours": 48,
-   "brain_calls": 203,
+   "brain_calls": 208,
    "plan_limit_hits": 0,
    "candidates_skipped_no_brain": 0,
    "stop_reviews_without_brain": 0
   }
  },
- "equity_usd": 100.47,
- "cash_usd": 100.47,
+ "equity_usd": 100.21,
+ "cash_usd": 97.38,
  "started_with_usd": 100.0,
  "realized_pnl_usd": 0.47,
- "fees_paid_usd": 1.91,
+ "fees_paid_usd": 2.15,
  "fees_by_kind_usd": {
-  "axiom": 0.17,
-  "network": 1.43,
-  "pool": 0.17
+  "axiom": 0.2,
+  "network": 1.64,
+  "pool": 0.18
  },
- "slippage_paid_usd": 0.25,
+ "slippage_paid_usd": 0.29,
  "closed_trades": 3,
  "win_rate": 0.33,
- "open_positions": [],
+ "open_positions": [
+  {
+   "symbol": "FLOAT",
+   "ca": "Bv1a7cEj5aRnJQhMw4kRQqAFesMSd5LwcDnUzq52BMmr",
+   "setup": "MIGRATED",
+   "cost_usd": 3.09,
+   "value_usd": 2.84,
+   "multiple": 1.0,
+   "fees_usd": 0.24,
+   "slippage_usd": 0.04,
+   "initials_taken": false
+  }
+ ],
  "strategy": {
   "stop_loss_pct": 30.0,
   "max_total_risk_pct": 25.0,
@@ -301,6 +313,32 @@
     "_target_hit": true
    },
    "lesson": "Expected: the original Cat Bot pair would retest its $845k peak, because holders were clean (top 10 at 3.3%, dev/insiders 0%) and 5m volume was organic at $12.9k (V1, V6, V13). Happened: it ran to 4.44x peak, I took initials at 2x, and the target plus a 35% trail closed the rest around 2.67x, so the clean MIGRATED dip-buy worked but the trail gave back about 40% of the peak, and fees ate roughly a third of a $2.91 position. Rule: once initials are out and the coin is past 4x, tighten the trail to about 25% from peak, and don't open positions under about $5 where fees ruin the math, because sell initials only protects the cost basis, not the runner (V11)."
+  },
+  {
+   "ca": "Bv1a7cEj5aRnJQhMw4kRQqAFesMSd5LwcDnUzq52BMmr",
+   "ts": "2026-10-29T00:10:32Z",
+   "event": "BUY",
+   "id": "50223efb",
+   "token": "Bv1a7cEj5aRnJQhMw4kRQqAFesMSd5LwcDnUzq52BMmr",
+   "symbol": "FLOAT",
+   "setup": "MIGRATED",
+   "size_usd": 3.09,
+   "conviction": 6,
+   "risk_usd": 1.51,
+   "price": 0.001530652453811502,
+   "fees_usd": 0.2438,
+   "slippage_usd": 0.0421,
+   "dex": "raydium",
+   "pool_fee_pct": 0.25,
+   "mcap": 1507059.0,
+   "exit_plan": {
+    "take_initials_multiple": 2.0,
+    "stop_loss_pct": 30.0,
+    "trailing_stop_pct": 30.0,
+    "time_stop_minutes": 45.0,
+    "target_mcap_usd": 3000000.0
+   },
+   "thesis": "Tokenized stocks is where the radar sees money going (top narratives: robinhood, tokenized, stock). FLOAT is the only on-theme coin with real flow: $41k 5m volume, 322 buys to 204 sells, 4,705 buys in the last hour, liquidity at about 17.5% of mcap. That flow passes V1, V6 and V13. The site shows this exact CA, so of the 11 FLOAT tickers this is likely the original (V1, V3). It held a higher low at $1.04M and is reclaiming, which follows my lesson to buy the retest, not the top. I'm buying a $2.17M peak retest, and I'm out if it loses the low."
   }
  ],
  "recent_lessons": [
@@ -310,24 +348,24 @@
  ],
  "learned_rules": "",
  "meta": {
-  "age_minutes": 7,
+  "age_minutes": 2,
   "meta_summary": "It's quiet. I don't see a live trench meta right now. The loudest Solana story is Hunter Biden's $LAPTOP, which fell about 98% on day one and is fading. A political figure pushed that contract address, so it's a hard no, and the same goes for any vamp or \"revival\" of it (V13). The Robinhood/Circle hype is also dying. The money that's rising is bucket-2 money, not trench money: tokenized stocks and Robinhood Chain, stablecoins/RWA, PENGU and PEPE trending, and BTC above $81k ahead of the Fed (V8). Single-digit ticker mentions like $MT (3), $CHIMP and $LICK (1 each) are attention farming, not a crowd (V7). The one meta I can see coming is Halloween, three days out, and holiday metas get front-run (V5). So the coin that rides it will be an original, funny spooky idea, maybe a pumpkin-ticker or tokenized-stonk joke, not a knockoff (V1). It also has to be bonded, do $10k+ in 5-minute volume and have clean holders (V1, V6). Nothing like that has shown up yet. PASS for now; watching for pumpkins.",
   "top_narratives": [
-   "robinhood",
    "tokenized",
+   "robinhood",
    "pepe",
+   "trump",
+   "prediction",
    "stock",
    "rally",
-   "prediction",
-   "trump",
    "referral",
    "app",
    "fed",
    "adds",
    "stocks",
+   "dogecoin",
    "stablecoin",
    "support",
-   "dogecoin",
    "machine",
    "times",
    "slowing",
@@ -335,45 +373,53 @@
    "code"
   ],
   "trending_categories": [
-   "Made in China",
-   "Alleged SEC Securities",
-   "Exchange-based Tokens",
-   "Proof of Work (PoW)",
-   "Layer 1 (L1)",
-   "Frog-Themed"
+   "The Boy\u2019s Club",
+   "Frog-Themed",
+   "Binance Launchpool",
+   "Quantum-Resistant",
+   "Zero Knowledge (ZK)",
+   "Centralized Exchange (CEX) Token"
   ],
   "trending_coins": [
-   "PENGU",
    "PEPE",
-   "SOL",
+   "PENGU",
    "PEARL",
    "QTC",
    "KNTQ",
    "XRP",
+   "PONS",
    "SUI",
    "UNI",
-   "PONS",
-   "TAO",
-   "ASTER",
-   "HYPE",
    "ZEC",
-   "NEAR"
+   "TAO",
+   "BP",
+   "XMR",
+   "LINK",
+   "DOGE"
   ],
   "hot_tickers": [
-   {
-    "ticker": "$LAPTOP",
-    "mentions": 3
-   },
    {
     "ticker": "$MT",
     "mentions": 3
    },
    {
-    "ticker": "$TRUMP",
-    "mentions": 1
+    "ticker": "$LAPTOP",
+    "mentions": 2
    },
    {
     "ticker": "$LICK",
+    "mentions": 1
+   },
+   {
+    "ticker": "$HYPE",
+    "mentions": 1
+   },
+   {
+    "ticker": "$TROVE",
+    "mentions": 1
+   },
+   {
+    "ticker": "$NETWORK",
     "mentions": 1
    },
    {
@@ -398,10 +444,6 @@
    },
    {
     "ticker": "$RETAIL",
-    "mentions": 1
-   },
-   {
-    "ticker": "$BITCOIN",
     "mentions": 1
    }
   ],
