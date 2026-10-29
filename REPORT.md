@@ -1,13 +1,13 @@
 # Trencher live report
 
-Updated 2026-10-29T08:49:11Z (paper trading, never real money)
+Updated 2026-10-29T09:04:18Z (paper trading, never real money)
 
 - Equity: $99.93 (-0.1% vs $100 start)
-- Goal: $1,000 by 2026-11-05 05:03Z (a stretch, survival first): at 10% of it, 6.8 days left, needs +40% a day from here
+- Goal: $1,000 by 2026-11-05 05:03Z (a stretch, survival first): at 10% of it, 6.8 days left, needs +40.1% a day from here
 - Closed trades: 7, 2 wins
 - Fees paid: $4.16 (axiom $0.43, network $3.26, pool $0.35), plus $0.62 lost to slippage
 - New trades: on
-- Brain: subscription, 308 calls and 0 plan-limit hits in 48h
+- Brain: subscription, 310 calls and 0 plan-limit hits in 48h
 
 ## Scorecard (after fees)
 - 7 closed, 2 won (29%), net $-0.07
@@ -67,9 +67,13 @@ Updated 2026-10-29T08:49:11Z (paper trading, never real money)
   CA `Bv1a7cEj5aRnJQhMw4kRQqAFesMSd5LwcDnUzq52BMmr`
 
 ## Last scan
-- 08:48Z: 2 coins, 2 with pairs, 1 passed the market filters, 1 researched
+- 09:03Z: 1 coins, 1 with pairs, 0 passed the market filters, 0 researched
 
 ## Coins it looked at, and why it passed
+- 08:59Z clanker (FINAL_STRETCH, $21,886 mcap, $17,591 5m vol): PASS at conviction 3, PASS: it's a 12-minute-old copy of a ticker seven bigger coins already use, and the top 10 holders sit right at the 25% hard line. Vamp plus concentration. (V1, V3, V13)  
+  CA `6yhYZztNzGSCiG1sgCykmk11xgSk5PgAhqwJ4btwpump`
+- 08:51Z STONKLANA (MIGRATED, $518,736 mcap, $5,865 5m vol): PASS at conviction 2, PASS. The data on this coin doesn't add up. It's one of 20 coins with this ticker, $5.9k on the 5m, 47 insider networks, and I can't prove it's the original (V1, V3, V13).  
+  CA `GF74fBfcaeLjUiUwKpRiUbvMQtTvNyzMoo6KNyyqNyk6`
 - 08:48Z REMUS (MIGRATED, $471,773 mcap, $2,604 5m vol): PASS at conviction 2, PASS: 103 sells to 42 buys on $2.6k of 5m volume at a $472k cap. Sellers are in control and this is a bounce, not a reclaim. 48 insider networks and a 7-day-old domain. (V1, V6, V13)  
   CA `CA8q2mkYWZnUNqYmf6pxyxAPZsmSe2EG9P7hHMW5pump`
 - 08:47Z Bu (FINAL_STRETCH, $25,348 mcap, $2,846 5m vol): PASS at conviction 3, PASS: Bu's crowd is leaving. 5m volume is $2.8k, 0.36x its hourly pace, after a $94k hour. A bigger coin shares the ticker, and top 10 hold 18.8%. (V1, V6)  
@@ -86,10 +90,6 @@ Updated 2026-10-29T08:49:11Z (paper trading, never real money)
   CA `Ac6PLXgeP3eK1ak9CyNR8actDgA3vxBhRq1Ao1frDajq`
 - 08:12Z LIDA (FINAL_STRETCH, $22,722 mcap, $4,403 5m vol): PASS at conviction 4, PASS: top 10 holders have 24.5%, just under the 25% line, 5m volume is $4.4k against the $10k bar, 11 coins share the ticker and there's no X to check. A joke coin 26 minutes old, nothing proven. (V1, V6, V13)  
   CA `fT952tuMioNtSCL1sYcuzoWfQpoU9yRzcpLgHpEpump`
-- 08:06Z STONKLANA (MIGRATED, $499,711 mcap, $2,368 5m vol): PASS at conviction 2, PASS: the price is 99.7% off its peak, 5m volume is $2.4k, and sells outnumber buys 25 to 11. Nobody is buying this. (V1, V6)  
-  CA `GF74fBfcaeLjUiUwKpRiUbvMQtTvNyzMoo6KNyyqNyk6`
-- 08:01Z PODCAT (MIGRATED, $158,758 mcap, $42,300 5m vol): PASS at conviction 4, PASS. The blocker is entry location. PODCAT is 11 minutes old, up 278% in the hour and only 6% off its high, bundles are unverified, and 4 bigger coins share the ticker. That's the CATCULUS setup again. Watch it for a 0.618 retest instead (V1, V3, V5).  
-  CA `6xcLnAebDFLgPDBrVrGzHEcMvjVQfMW6yQL4NvECpump`
 
 ## Recent lessons
 - [2026-10-28 14:15] Expected: a $1.2M dip 47% off the $2.3M peak, with $17.8k 5m volume and buys outnumbering sells 3:1, to retest $2M while the joke still had a crowd (V1 buys-on-dip, V6). What happened: it peaked at 1.09x, then went flat and got time-stopped at 60 minutes with market cap basically unchanged (-0.6%), but I still lost 15.4% because fees and slippage ate about 9% of a $3.33 position, and the rest of the gap is execution I can't see in the record. Rule: on DIP setups, enter only after the dip makes a higher low with 5m volume rising (0.86x the hourly average is fading, not holding). Never open a position so small that round-trip friction is over 3%, because a flat chart is a guaranteed loss at that size.
@@ -104,7 +104,7 @@ Updated 2026-10-29T08:49:11Z (paper trading, never real money)
 The crawler's summary is already stale. bingus is no longer the setup: it's at $3.4k, down 91% in the hour, with $138 of 5m volume. It rugged, and it's off the watchlist. The live meta has three parts. First, fresh pump.fun curve coins under an hour old with absurd names are rising: Chilloween (+576%, $9.9k 5m), LIDA (+612%, $4.4k 5m) and Bu (+200%, but 5m is down to $2.8k from a $135k hour). Second, an early Halloween meta that traders are front-running (V5): Chilloween, ACT:D "Doomsday" (pumped and died, $237 5m) and $PUMPKINU getting mentions. Third, the bigger migrated coins are fading. DUBBLE ($1.35M, -10%, $7.2k 5m) and CATBOT ($3M, $2.6k 5m) are coasting on thin flow, and the old-meme revival is dead along with bingus. My one watch is Chilloween as a FINAL_STRETCH (V1). It's the original seasonal joke at $23k, 59% buys, almost at the $10k 5m bar. I'd take it at 7/10 if holders, bundles and dev share come back clean (top 10 under 25%, bundlers under 10%, dev under 1%). Plan: initials out at 1.5x, 20% trail, sell half if the 5m fades, stop where the curve dip fails. It's only 18 minutes old, so I'm being careful. PASS on LIDA (5m under $10k and no holder data yet, V1/V6), Bu (volume collapsing), DUBBLE and CATBOT (5m too thin for their caps, V6), FARTCOIN (vamp, V3), $LAPTOP (political figure, V13) and REMUS (27% buys, sellers in control).
 
 ## Moving most in its scans, last 30 min (1h volume)
-- PODCAT: $619,551 1h vol, $1,981 mcap, -95% 1h  
+- PODCAT: $406,818 1h vol, $1,947 mcap, -99% 1h  
   CA `6xcLnAebDFLgPDBrVrGzHEcMvjVQfMW6yQL4NvECpump`
 - OTC: $357,004 1h vol, $109,661 mcap, +192% 1h  
   CA `Fa24xN13pzjmcx1dtKP9nBMMFCwLtXCJrtP5hSPKpump`
@@ -112,5 +112,5 @@ The crawler's summary is already stale. bingus is no longer the setup: it's at $
   CA `FEXGegqeVm5vZurqyC7qsmkLqWspVV1ACb9bbLvcpump`
 - Bu: $94,474 1h vol, $25,348 mcap, +46% 1h  
   CA `Bnxttv7gQHYP1n9JyXuiATWKtxxJPc6sJJzeRFVBuuu`
-- ACT:D: $88,557 1h vol, $5,970 mcap, +77% 1h  
-  CA `3MRyD7DK84NmyB9KCnZy3CJcU1Q9TVf5m3fK16kqpump`
+- Chilloween: $79,329 1h vol, $22,950 mcap, +576% 1h  
+  CA `Ac6PLXgeP3eK1ak9CyNR8actDgA3vxBhRq1Ao1frDajq`
