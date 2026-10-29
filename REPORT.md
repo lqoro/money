@@ -1,13 +1,13 @@
 # Trencher live report
 
-Updated 2026-10-29T17:09:35Z (paper trading, never real money)
+Updated 2026-10-29T17:24:46Z (paper trading, never real money)
 
 - Equity: $99.93 (-0.1% vs $100 start)
 - Goal: $1,000 by 2026-11-05 05:03Z (a stretch, survival first): at 10% of it, 6.5 days left, needs +42.6% a day from here
 - Closed trades: 7, 2 wins
 - Fees paid: $4.16 (axiom $0.43, network $3.26, pool $0.35), plus $0.62 lost to slippage
 - New trades: on
-- Brain: subscription, 394 calls and 0 plan-limit hits in 48h
+- Brain: subscription, 398 calls and 0 plan-limit hits in 48h
 
 ## Scorecard (after fees)
 - 7 closed, 2 won (29%), net $-0.07
@@ -67,9 +67,17 @@ Updated 2026-10-29T17:09:35Z (paper trading, never real money)
   CA `Bv1a7cEj5aRnJQhMw4kRQqAFesMSd5LwcDnUzq52BMmr`
 
 ## Last scan
-- 17:08Z: 6 coins, 6 with pairs, 0 passed the market filters, 0 researched
+- 17:24Z: 9 coins, 9 with pairs, 0 passed the market filters, 0 researched
 
 ## Coins it looked at, and why it passed
+- 17:21Z STANK (MIGRATED, $91,255 mcap, $5,262 5m vol): PASS at conviction 3, PASS. STANK is 16% off a high it set 6 minutes ago, with $5.3k on the 5m and no bundle data. Buying this would be chasing the top. Blocker: the entry location rule (my learned rule, V1, V6).  
+  CA `5wsjHxT5nW5jQuVupXUNnYszF3WoWCfGGk9LMcsCJzY8`
+- 17:14Z VI (DIP, $242,804 mcap, $3,098 5m vol): PASS at conviction 3, PASS: 5m volume is $3.1k and 0.5x the hourly pace with no higher low. Clean holders, but the crowd is leaving. Falling knife (V1, V6).  
+  CA `A6PM7bxyWYiUxaEpRMHvuL4tY2jYVf8N46vXZ15Hpump`
+- 17:11Z HOUSEWORM (MIGRATED, $810,292 mcap, $15,824 5m vol): PASS at conviction 3, PASS: it's 16% off a high set 12 minutes ago, 5m volume is down to 0.28x the hourly pace, and the scan flagged 465 insider networks with no bundle data. That's buying the top of a fading chart (V1, V3, my near-high rule).  
+  CA `9KhzhyM1BwgW6myZRcqdzQvemKjVrjck8kaevTkMpump`
+- 17:09Z HI (MIGRATED, $144,842 mcap, $30,744 5m vol): PASS at conviction 2, PASS: this is the vamp. Two bigger coins share the HI ticker, the real HYPER INU is the pump.fun CA at 3w2T…, and this one is a 7-minute-old Float-launchpad copy with top 10 at 21%. (V1, V3, V6)  
+  CA `FkUGF7cPFy7hHuJwBERCTfAex3XcLFCH9pkj2RDUQTMe`
 - 16:58Z CATBOT (MIGRATED, $729,980 mcap, $19,245 5m vol): PASS at conviction 2, PASS: 88.6% off the $6.39M peak and printing new lows below the hour's low. Blocker: drawdown past my 75% dip limit with no higher low (V1).  
   CA `dyw5fDNv91eknniMG4tGCU1ZrzjuxbpsLiEzih6pump`
 - 16:57Z DESSA (MIGRATED, $7,713,394 mcap, $32,573 5m vol): PASS at conviction 3, PASS — blocker: 16.6% off a 24-min-old high with 5m volume at 0.28x the hourly pace. That's chasing a fading move, not a pullback entry (learned rule, V1, V6).  
@@ -82,14 +90,6 @@ Updated 2026-10-29T17:09:35Z (paper trading, never real money)
   CA `8NTU6e46S8c8VD3uscMAgz8sQYjF2GofuZy4znQwpump`
 - 16:46Z AgenC (MIGRATED, $802,358 mcap, $111,082 5m vol): PASS at conviction 3, PASS — the project's own site lists a different CA (9KHe…L5pump), so this pair is probably a vamp in a crowded AgenC field. It's also 23 minutes old and 13% off its high with no bundle data. (V1, V3, V5)  
   CA `GJKnJsRiM5ATS4yhwjYRegT3iRsXUvcW1dafJPh8pump`
-- 16:46Z HI (MIGRATED, $107,735 mcap, $168,198 5m vol): PASS at conviction 2, PASS — 5 minutes old, priced at its all-time high, 4 insider networks and no bundle data. Sniping a new pair at the top makes me exit liquidity (V1, V5, V17).  
-  CA `3w2TvVmTrtq4kSkoFVrTFQgz6MX7ThzDVrx9r5c3pump`
-- 16:44Z SENSE (MIGRATED, $1,224,489 mcap, $2,991 5m vol): REJECT, Top 10 hold 35.1% ex-pool (>25%) (V13)  
-  CA `GydpvgKppv8a4gGQqAQsyQJxtQN4S6Ym9gKxjnN3mfun`
-- 16:40Z ELOOONG (DIP, $139,843 mcap, $24,772 5m vol): PASS at conviction 3, PASS: ELOOONG is a falling knife. It's down 34% in the last 5 minutes, 5m volume is half its hourly pace, and there's no higher low yet. It's also an hour-old Elon-tweet coin with 10 same-ticker copies and 44 insider networks (V1, V13).  
-  CA `2YZdszj9XpTrKZ3FsVJH5sqGXppCgfW5E5pCVR9Apump`
-- 16:37Z HI (FINAL_STRETCH, $36,449 mcap, $19,893 5m vol): PASS at conviction 4, PASS: top 10 hold 24.4% ex-pool, just under the 25% hard line, and I'd be buying a 10x hour at 2% off the high, 87% bonded, right where the pre-bond dump usually hits. Bundles unverified. (V1, V6, V13)  
-  CA `3q3jEDkqwNamTDWK7PSncQT82Ffppruax27GHqD4pump`
 
 ## Recent lessons
 - [2026-10-28 14:15] Expected: a $1.2M dip 47% off the $2.3M peak, with $17.8k 5m volume and buys outnumbering sells 3:1, to retest $2M while the joke still had a crowd (V1 buys-on-dip, V6). What happened: it peaked at 1.09x, then went flat and got time-stopped at 60 minutes with market cap basically unchanged (-0.6%), but I still lost 15.4% because fees and slippage ate about 9% of a $3.33 position, and the rest of the gap is execution I can't see in the record. Rule: on DIP setups, enter only after the dip makes a higher low with 5m volume rising (0.86x the hourly average is fading, not holding). Never open a position so small that round-trip friction is over 3%, because a flat chart is a guaranteed loss at that size.
@@ -106,11 +106,11 @@ Fresh pump.fun launches under an hour old are taking nearly all the volume. The 
 ## Moving most in its scans, last 30 min (1h volume)
 - DESSA: $1,386,954 1h vol, $7,713,394 mcap, +49% 1h  
   CA `npz2FhoufQ7pKqhGpaipYWacrAkidyW2yDpVWSvpump`
-- AgenC: $796,830 1h vol, $802,358 mcap, +1327% 1h  
-  CA `GJKnJsRiM5ATS4yhwjYRegT3iRsXUvcW1dafJPh8pump`
-- ELOOONG: $557,317 1h vol, $139,843 mcap, +24% 1h  
-  CA `2YZdszj9XpTrKZ3FsVJH5sqGXppCgfW5E5pCVR9Apump`
+- HOUSEWORM: $685,750 1h vol, $810,292 mcap, +281% 1h  
+  CA `9KhzhyM1BwgW6myZRcqdzQvemKjVrjck8kaevTkMpump`
+- HI: $565,351 1h vol, $12,702 mcap, -73% 1h  
+  CA `3q3jEDkqwNamTDWK7PSncQT82Ffppruax27GHqD4pump`
 - CATBOT: $239,560 1h vol, $729,980 mcap, -69% 1h  
   CA `dyw5fDNv91eknniMG4tGCU1ZrzjuxbpsLiEzih6pump`
-- HI: $195,946 1h vol, $107,735 mcap, +146% 1h  
-  CA `3w2TvVmTrtq4kSkoFVrTFQgz6MX7ThzDVrx9r5c3pump`
+- KATT: $163,113 1h vol, $3,223 mcap, -33% 1h  
+  CA `FWsS6gh2DcQUq9kgQskB7EMFXR5oK4sqeYEnF7ggpump`

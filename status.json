@@ -1,12 +1,12 @@
 {
- "updated_at": "2026-10-29T17:09:35Z",
+ "updated_at": "2026-10-29T17:24:46Z",
  "paused_new_trades": false,
  "brain": {
   "mode": "subscription",
   "paused_until": null,
   "usage_48h": {
    "hours": 48,
-   "brain_calls": 394,
+   "brain_calls": 398,
    "plan_limit_hits": 0,
    "candidates_skipped_no_brain": 0,
    "stop_reviews_without_brain": 0
@@ -529,7 +529,7 @@
  ],
  "learned_rules": "- **Friction gate before every entry (incl. buy-backs):** estimate round-trip fees + slippage. Skip if it is over ~5% of position size, or if the first target can't pay at least 5x that cost. Fees cost 9\u201330% on my $3 trades and turned flat charts into \u221215% and \u221224% losses.\n- **Minimum position ~$5.** If conviction and the honest stop distance don't justify $5, PASS. Never inflate conviction or pull the stop closer to clear the bar (soul: sizing).\n- **MIGRATED: no momentum buys within ~20% of the local high** unless bundle data is verified. Clean top-10 numbers don't rule out bundles spread across many small wallets. CATCULUS bought near the high gapped from \u221230% to \u221259% (V3, V5).\n- **MIGRATED entries come on a pullback:** the 0.618 fib or point-of-control retest, with 5m volume \u2265 $10k and organic buys:sells (V1, V6). My two winners (CATBOT, FLOATER) were both clean dip-buys of the leading coin.\n- **In a vamp field, buy only the leader** by 5m volume and attention. Never the 2nd or 3rd copy (V1, V2). FLOATER beat 22 same-ticker coins on flow.\n- **DIP entries need a higher low plus rising 5m volume.** If 5m volume is under ~1x the hourly average, it's fading. No entry on the first red-to-green candle (V1).\n- **Re-entry after a stop or time stop only on reclaim of the prior high** (or a new higher high), not while it's basing mid-range. The CATBOT buy-back mid-range died flat.\n- **Take initials at 2x with sell-initials, every time** (V11). It worked on both winners.\n- **After initials, trail 30% from peak; once past 4x, tighten to ~25%.** Don't round-trip a runner. The CATBOT 35% trail gave back about 40% of a 4.44x peak.\n- **Time stop is right when the chart is flat.** If it's under 1.0x at 45 min with no volume surge, exit. Don't marry the bag (V1).\n- **Stop review: if top-10 or insider share dropped since entry and price is still bleeding, SELL.** Holding once is only for a dump where the narrative and 5m volume are still clearly intact.\n- **A gap through the stop is an entry problem, not a stop-width problem.** Fix it with entry location (pullbacks) and bundle checks, not a wider stop.\n- **Log fees with every trade lesson** so the friction math stays honest.\n",
  "meta": {
-  "age_minutes": 7,
+  "age_minutes": 2,
   "meta_summary": "Fresh pump.fun launches under an hour old are taking nearly all the volume. The Hyperliquid joke is dying: XLIQUID (-97%) and Hypurr (-84%) got rugged, and HI ($108k cap, $168k on the 5m) is the last one standing at six minutes old. The AI/\"labs\" tickers are split. AgenC ($802k, +1327%, $111k on the 5m, 76% buys) is rising, while SENSE has sellers leading at 31% buys. Animal and inu coins (HOUSEWORM at 90% buys, VI, KATT) and the Elon tickers are fading: VI and ELOOONG are both below their hourly pace, and the KATT vamp, offgrid and SARA are -90% farm dumps. The crawler summary is stale (DESSA, CATBOT and PURR aren't in the scan), so I'm ignoring it. No buy this cycle. Watchlist: AgenC and HOUSEWORM as MIGRATED candidates (blocker: 24-30 minutes old with no holder or bundle data; I'll recheck for top 10 under 25%, dev under 1%, bundles under 10%, V1/V5/V13). HELMET is a FINAL_STRETCH look at a $33k cap with $13k on the 5m and 65% buys (blocker: holders unverified). PASS on HI (blocker: six minutes old means sniping a new pair, and its theme is rugging, V1).",
   "top_narratives": [
    "tokenized",
@@ -537,14 +537,14 @@
    "stock",
    "referral",
    "newuser50",
-   "code",
    "bonus",
+   "code",
    "hyperliquid",
-   "robinhood",
-   "referral code",
    "pepe",
-   "trump",
+   "referral code",
+   "robinhood",
    "times",
+   "trump",
    "app referral",
    "hunter",
    "adds",
@@ -554,29 +554,29 @@
    "machine slowing"
   ],
   "trending_categories": [
-   "Derivatives",
-   "Perpetuals",
-   "Decentralized Exchange (DEX)",
-   "SocialFi",
-   "Governance",
-   "Privacy Coins"
+   "Liquid Staking Governance Tokens",
+   "Real World Assets (RWA)",
+   "Liquid Staking",
+   "Privacy Coins",
+   "Base Native",
+   "World Liberty Financial Portfolio"
   ],
   "trending_coins": [
    "HYPE",
-   "PEPE",
    "LIT",
    "KNTQ",
-   "AXIS",
    "PEARL",
+   "PEPE",
    "PENGU",
-   "ETH",
-   "PUMP",
+   "AXIS",
    "ZEC",
+   "ETH",
    "SUI",
-   "VVV",
-   "SYRUP",
-   "AERO",
-   "PURR"
+   "PUMP",
+   "LINK",
+   "BTC",
+   "QTC",
+   "VVV"
   ],
   "hot_tickers": [
    {
@@ -585,6 +585,10 @@
    },
    {
     "ticker": "$MT",
+    "mentions": 2
+   },
+   {
+    "ticker": "$LICK",
     "mentions": 1
    },
    {
@@ -608,11 +612,11 @@
     "mentions": 1
    },
    {
-    "ticker": "$PTIE",
+    "ticker": "$BLOBO",
     "mentions": 1
    },
    {
-    "ticker": "$BLOOP",
+    "ticker": "$PTIE",
     "mentions": 1
    },
    {
@@ -621,10 +625,6 @@
    },
    {
     "ticker": "$DOGE",
-    "mentions": 1
-   },
-   {
-    "ticker": "$SHIB",
     "mentions": 1
    }
   ],
@@ -649,28 +649,28 @@
     "age_hours": 75.9
    },
    {
-    "symbol": "AgenC",
-    "name": "AgenC SI Beauty",
-    "ca": "GJKnJsRiM5ATS4yhwjYRegT3iRsXUvcW1dafJPh8pump",
+    "symbol": "HOUSEWORM",
+    "name": "Houseworming",
+    "ca": "9KhzhyM1BwgW6myZRcqdzQvemKjVrjck8kaevTkMpump",
     "dex": "pumpswap",
-    "mcap_usd": 802358,
-    "vol_5m": 111082,
-    "vol_1h": 796830,
-    "change_1h": 1327,
-    "buy_ratio_5m": 0.76,
-    "age_hours": 0.4
+    "mcap_usd": 810292,
+    "vol_5m": 15824,
+    "vol_1h": 685750,
+    "change_1h": 281,
+    "buy_ratio_5m": 0.65,
+    "age_hours": 1.3
    },
    {
-    "symbol": "ELOOONG",
-    "name": "elooong",
-    "ca": "2YZdszj9XpTrKZ3FsVJH5sqGXppCgfW5E5pCVR9Apump",
+    "symbol": "HI",
+    "name": "HYPER INU",
+    "ca": "3q3jEDkqwNamTDWK7PSncQT82Ffppruax27GHqD4pump",
     "dex": "pumpswap",
-    "mcap_usd": 139843,
-    "vol_5m": 24772,
-    "vol_1h": 557317,
-    "change_1h": 23.84,
-    "buy_ratio_5m": 0.55,
-    "age_hours": 1.0
+    "mcap_usd": 12702,
+    "vol_5m": 2177,
+    "vol_1h": 565351,
+    "change_1h": -73.48,
+    "buy_ratio_5m": 0.42,
+    "age_hours": 0.7
    },
    {
     "symbol": "CATBOT",
@@ -685,136 +685,136 @@
     "age_hours": 20.2
    },
    {
-    "symbol": "HI",
-    "name": "HYPER INU",
-    "ca": "3w2TvVmTrtq4kSkoFVrTFQgz6MX7ThzDVrx9r5c3pump",
-    "dex": "pumpswap",
-    "mcap_usd": 107735,
-    "vol_5m": 168198,
-    "vol_1h": 195946,
-    "change_1h": 146,
-    "buy_ratio_5m": 0.52,
-    "age_hours": 0.1
-   },
-   {
-    "symbol": "CATPOOP",
-    "name": "Catpoop Coin",
-    "ca": "7eCffjPZzRqFFDog8RN5cWsu2JNRH4Qm1iMPAREUpump",
-    "dex": "pumpswap",
-    "mcap_usd": 194762,
-    "vol_5m": 39107,
-    "vol_1h": 173822,
-    "change_1h": 332,
-    "buy_ratio_5m": 0.63,
-    "age_hours": 0.3
-   },
-   {
-    "symbol": "SENSE",
-    "name": "Sixth Sense Labs",
-    "ca": "GydpvgKppv8a4gGQqAQsyQJxtQN4S6Ym9gKxjnN3mfun",
-    "dex": "raydium",
-    "mcap_usd": 1224489,
-    "vol_5m": 2991,
-    "vol_1h": 98275,
-    "change_1h": -3.92,
-    "buy_ratio_5m": 0.31,
-    "age_hours": 2.1
+    "symbol": "KATT",
+    "name": "KATT",
+    "ca": "FWsS6gh2DcQUq9kgQskB7EMFXR5oK4sqeYEnF7ggpump",
+    "dex": "pumpfun",
+    "mcap_usd": 3223,
+    "vol_5m": 0,
+    "vol_1h": 163113,
+    "change_1h": -32.84,
+    "buy_ratio_5m": null,
+    "age_hours": 1.0
    },
    {
     "symbol": "KATT",
     "name": "KATT",
     "ca": "3L5svTNje1iNnYJEXLxgiZqaCkYQZ87FTXCt2JRFZyS7",
     "dex": "pumpswap",
-    "mcap_usd": 2824,
-    "vol_5m": 142,
-    "vol_1h": 85809,
-    "change_1h": -93.4,
-    "buy_ratio_5m": 0.1,
-    "age_hours": 0.6
+    "mcap_usd": 2481,
+    "vol_5m": 25,
+    "vol_1h": 85842,
+    "change_1h": -93.61,
+    "buy_ratio_5m": 0.0,
+    "age_hours": 0.7
    },
    {
-    "symbol": "HELMET",
-    "name": "Thunderhead",
-    "ca": "FuGnvoCBa6FRzg7D3yQCutGTJiBX3DPKenRmTc4dpump",
+    "symbol": "long",
+    "name": "long boi",
+    "ca": "7JxfCxFrgraC7FVECJHBxJUvJofkXj7bY8HPtxTapump",
+    "dex": "pumpswap",
+    "mcap_usd": 7688,
+    "vol_5m": 3212,
+    "vol_1h": 75830,
+    "change_1h": -84.28,
+    "buy_ratio_5m": 0.78,
+    "age_hours": 0.2
+   },
+   {
+    "symbol": "VI",
+    "name": "Vice Inu",
+    "ca": "A6PM7bxyWYiUxaEpRMHvuL4tY2jYVf8N46vXZ15Hpump",
+    "dex": "pumpswap",
+    "mcap_usd": 242804,
+    "vol_5m": 3098,
+    "vol_1h": 74840,
+    "change_1h": -25.61,
+    "buy_ratio_5m": 0.89,
+    "age_hours": 3.0
+   },
+   {
+    "symbol": "COLUM",
+    "name": "Colum Coin",
+    "ca": "3SFK79ZtgiCZrz1jf3hnzMJDQyaYPZY6eic8TBdtpump",
     "dex": "pumpfun",
-    "mcap_usd": 33182,
-    "vol_5m": 13445,
-    "vol_1h": 76137,
-    "change_1h": 864,
-    "buy_ratio_5m": 0.65,
-    "age_hours": 0.6
+    "mcap_usd": 5900,
+    "vol_5m": 653,
+    "vol_1h": 65771,
+    "change_1h": 61.41,
+    "buy_ratio_5m": 0.12,
+    "age_hours": 0.3
    },
    {
     "symbol": "hyper",
     "name": "hyper",
     "ca": "6PrGQt7iBSup9jkakVwDUYoZ2vUUqNM8HbZgYQ4Mpump",
     "dex": "pumpfun",
-    "mcap_usd": 5572,
-    "vol_5m": 2611,
-    "vol_1h": 71291,
-    "change_1h": 62.96,
-    "buy_ratio_5m": 0.3,
-    "age_hours": 1.0
-   },
-   {
-    "symbol": "GTA",
-    "name": "Gigantic Tits & Ass",
-    "ca": "FViKbzdiHbBYXnVGfkdHAzJD6PcSPDGQHRQ4GY8zpump",
-    "dex": "pumpswap",
-    "mcap_usd": 1922,
-    "vol_5m": 0,
-    "vol_1h": 67388,
-    "change_1h": -98.4,
-    "buy_ratio_5m": null,
-    "age_hours": 1.3
-   },
-   {
-    "symbol": "Hypurr",
-    "name": "Hypurr",
-    "ca": "5DhsQg2PW9WSR1WjYddpMgh9HCGHD86yLmUewfwEpump",
-    "dex": "pumpfun",
-    "mcap_usd": 5433,
-    "vol_5m": 7,
-    "vol_1h": 65490,
-    "change_1h": -84.31,
-    "buy_ratio_5m": 0.0,
+    "mcap_usd": 7091,
+    "vol_5m": 1338,
+    "vol_1h": 57278,
+    "change_1h": -53.49,
+    "buy_ratio_5m": 0.61,
     "age_hours": 1.1
    },
    {
-    "symbol": "SARA",
-    "name": "Sara Benchmark",
-    "ca": "3j2RebsuBjNoV5DPz1xSztasqWhjStpQarisDpcLpump",
-    "dex": "pumpswap",
-    "mcap_usd": 1903,
-    "vol_5m": 0,
-    "vol_1h": 64341,
-    "change_1h": -95.61,
-    "buy_ratio_5m": null,
-    "age_hours": 1.2
+    "symbol": "HI",
+    "name": "HYPER INU",
+    "ca": "FkUGF7cPFy7hHuJwBERCTfAex3XcLFCH9pkj2RDUQTMe",
+    "dex": "raydium",
+    "mcap_usd": 144842,
+    "vol_5m": 30744,
+    "vol_1h": 47391,
+    "change_1h": -5.63,
+    "buy_ratio_5m": 0.56,
+    "age_hours": 0.1
    },
    {
-    "symbol": "GROKKIES",
-    "name": "Grokkies",
-    "ca": "8NTU6e46S8c8VD3uscMAgz8sQYjF2GofuZy4znQwpump",
+    "symbol": "VIPER",
+    "name": "Viper",
+    "ca": "2siF8D7MYZeZydYhjkr3TPEiF6kZjVk1qywk2Q92v2P9",
+    "dex": "meteoradbc",
+    "mcap_usd": 6819,
+    "vol_5m": 1126,
+    "vol_1h": 32258,
+    "change_1h": 132,
+    "buy_ratio_5m": 0.47,
+    "age_hours": 0.7
+   },
+   {
+    "symbol": "GATO",
+    "name": "GTA6CAT",
+    "ca": "HsprHxBRgiVaQdRf3TnKNuZZtaX9JUSPgMFdAkk6pump",
+    "dex": "pumpswap",
+    "mcap_usd": 4822072,
+    "vol_5m": 1701,
+    "vol_1h": 24401,
+    "change_1h": 5.59,
+    "buy_ratio_5m": 0.29,
+    "age_hours": 1564.9
+   },
+   {
+    "symbol": "MINEBOX",
+    "name": "minebox.fun",
+    "ca": "WMDjfTDgd5HLwJ9bYwyoeWDDVj9tH8TCcMjowLqpump",
     "dex": "pumpfun",
-    "mcap_usd": 26458,
-    "vol_5m": 11376,
-    "vol_1h": 61932,
-    "change_1h": 662,
-    "buy_ratio_5m": 0.6,
-    "age_hours": 0.3
+    "mcap_usd": 6155,
+    "vol_5m": 23089,
+    "vol_1h": 23089,
+    "change_1h": 105,
+    "buy_ratio_5m": 0.58,
+    "age_hours": 0.1
    },
    {
-    "symbol": "Stanley",
-    "name": "The Hyperliquid Bull",
-    "ca": "83MRySsDw9nuyV2e7iowXBxPJgSNFphvsytvnBWjop6d",
-    "dex": "pumpswap",
-    "mcap_usd": 19571,
-    "vol_5m": 1233,
-    "vol_1h": 60928,
-    "change_1h": -66.09,
-    "buy_ratio_5m": 0.46,
-    "age_hours": 1.7
+    "symbol": "qwid",
+    "name": "qwid",
+    "ca": "66XAgVbdHVZWMZMWvBpCYX8Thwb7bzbL92qxD6mEpump",
+    "dex": "pumpfun",
+    "mcap_usd": 3619,
+    "vol_5m": 96,
+    "vol_1h": 20151,
+    "change_1h": -62.8,
+    "buy_ratio_5m": 0.14,
+    "age_hours": 1.3
    }
   ]
  },
@@ -827,57 +827,13 @@
   "needed_daily_growth_pct": 42.6
  },
  "last_scan": {
-  "at": 1793293711.227614,
-  "tokens": 6,
-  "pairs": 6,
+  "at": 1793294669.730289,
+  "tokens": 9,
+  "pairs": 9,
   "passed_market_filters": 0,
   "researched": 0
  },
  "recent_looks": [
-  {
-   "ts": "2026-10-29T16:16:07Z",
-   "symbol": "GTA",
-   "ca": "FViKbzdiHbBYXnVGfkdHAzJD6PcSPDGQHRQ4GY8zpump",
-   "setup": "MIGRATED",
-   "mcap_usd": 52077,
-   "vol_5m": 4235,
-   "outcome": "PASS",
-   "conviction": 2,
-   "reason": "PASS: down 83% off a $304k peak in 30 minutes, and its 993 buys moved only $4.2k. That's bot dust, not a crowd. Vamp of a bigger GTA ticker. (V3, V6, V13)"
-  },
-  {
-   "ts": "2026-10-29T16:25:42Z",
-   "symbol": "HOUSEWORM",
-   "ca": "9KhzhyM1BwgW6myZRcqdzQvemKjVrjck8kaevTkMpump",
-   "setup": "MIGRATED",
-   "mcap_usd": 388558,
-   "vol_5m": 37160,
-   "outcome": "PASS",
-   "conviction": 3,
-   "reason": "PASS: 33 min old, 11% off the high, 465 insider networks flagged, bundles unverified, and a 9:1 buy:sell ratio that looks like bots. Blocker: momentum entry near the high into a possible farm (V3, V5, V13, V17)."
-  },
-  {
-   "ts": "2026-10-29T16:27:48Z",
-   "symbol": "KATT",
-   "ca": "FWsS6gh2DcQUq9kgQskB7EMFXR5oK4sqeYEnF7ggpump",
-   "setup": "FINAL_STRETCH",
-   "mcap_usd": 26125,
-   "vol_5m": 107652,
-   "outcome": "PASS",
-   "conviction": 3,
-   "reason": "PASS: KATT is 3.5 minutes old, on 62% of the bonding curve, and two bigger coins already use the ticker. Buying now means sniping a new pair with my data running seconds behind the pros (V1, V5)."
-  },
-  {
-   "ts": "2026-10-29T16:28:58Z",
-   "symbol": "VI",
-   "ca": "A6PM7bxyWYiUxaEpRMHvuL4tY2jYVf8N46vXZ15Hpump",
-   "setup": "MIGRATED",
-   "mcap_usd": 346214,
-   "vol_5m": 6032,
-   "outcome": "PASS",
-   "conviction": 4,
-   "reason": "PASS \u2014 15% off the $409k high with bundles unverified, and 5m volume is $6k and fading at 0.8x the hourly pace. Blocker: entry location and fading flow. Watch for a ~$240k fib retest (V1, V6)."
-  },
   {
    "ts": "2026-10-29T16:35:03Z",
    "symbol": "GATO",
@@ -998,6 +954,50 @@
    "outcome": "PASS",
    "conviction": 2,
    "reason": "PASS: 88.6% off the $6.39M peak and printing new lows below the hour's low. Blocker: drawdown past my 75% dip limit with no higher low (V1)."
+  },
+  {
+   "ts": "2026-10-29T17:09:57Z",
+   "symbol": "HI",
+   "ca": "FkUGF7cPFy7hHuJwBERCTfAex3XcLFCH9pkj2RDUQTMe",
+   "setup": "MIGRATED",
+   "mcap_usd": 144842,
+   "vol_5m": 30744,
+   "outcome": "PASS",
+   "conviction": 2,
+   "reason": "PASS: this is the vamp. Two bigger coins share the HI ticker, the real HYPER INU is the pump.fun CA at 3w2T\u2026, and this one is a 7-minute-old Float-launchpad copy with top 10 at 21%. (V1, V3, V6)"
+  },
+  {
+   "ts": "2026-10-29T17:11:00Z",
+   "symbol": "HOUSEWORM",
+   "ca": "9KhzhyM1BwgW6myZRcqdzQvemKjVrjck8kaevTkMpump",
+   "setup": "MIGRATED",
+   "mcap_usd": 810292,
+   "vol_5m": 15824,
+   "outcome": "PASS",
+   "conviction": 3,
+   "reason": "PASS: it's 16% off a high set 12 minutes ago, 5m volume is down to 0.28x the hourly pace, and the scan flagged 465 insider networks with no bundle data. That's buying the top of a fading chart (V1, V3, my near-high rule)."
+  },
+  {
+   "ts": "2026-10-29T17:14:11Z",
+   "symbol": "VI",
+   "ca": "A6PM7bxyWYiUxaEpRMHvuL4tY2jYVf8N46vXZ15Hpump",
+   "setup": "DIP",
+   "mcap_usd": 242804,
+   "vol_5m": 3098,
+   "outcome": "PASS",
+   "conviction": 3,
+   "reason": "PASS: 5m volume is $3.1k and 0.5x the hourly pace with no higher low. Clean holders, but the crowd is leaving. Falling knife (V1, V6)."
+  },
+  {
+   "ts": "2026-10-29T17:21:34Z",
+   "symbol": "STANK",
+   "ca": "5wsjHxT5nW5jQuVupXUNnYszF3WoWCfGGk9LMcsCJzY8",
+   "setup": "MIGRATED",
+   "mcap_usd": 91255,
+   "vol_5m": 5262,
+   "outcome": "PASS",
+   "conviction": 3,
+   "reason": "PASS. STANK is 16% off a high it set 6 minutes ago, with $5.3k on the 5m and no bundle data. Buying this would be chasing the top. Blocker: the entry location rule (my learned rule, V1, V6)."
   }
  ],
  "scorecard": {
