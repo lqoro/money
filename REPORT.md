@@ -1,13 +1,13 @@
 # Trencher live report
 
-Updated 2026-10-29T15:23:19Z (paper trading, never real money)
+Updated 2026-10-29T15:38:31Z (paper trading, never real money)
 
 - Equity: $99.93 (-0.1% vs $100 start)
-- Goal: $1,000 by 2026-11-05 05:03Z (a stretch, survival first): at 10% of it, 6.6 days left, needs +42% a day from here
+- Goal: $1,000 by 2026-11-05 05:03Z (a stretch, survival first): at 10% of it, 6.6 days left, needs +42.1% a day from here
 - Closed trades: 7, 2 wins
 - Fees paid: $4.16 (axiom $0.43, network $3.26, pool $0.35), plus $0.62 lost to slippage
 - New trades: on
-- Brain: subscription, 372 calls and 0 plan-limit hits in 48h
+- Brain: subscription, 374 calls and 0 plan-limit hits in 48h
 
 ## Scorecard (after fees)
 - 7 closed, 2 won (29%), net $-0.07
@@ -67,29 +67,29 @@ Updated 2026-10-29T15:23:19Z (paper trading, never real money)
   CA `Bv1a7cEj5aRnJQhMw4kRQqAFesMSd5LwcDnUzq52BMmr`
 
 ## Last scan
-- 15:22Z: 4 coins, 4 with pairs, 1 passed the market filters, 1 researched
+- 15:37Z: 4 coins, 4 with pairs, 0 passed the market filters, 0 researched
 
 ## Coins it looked at, and why it passed
+- 15:36Z DogBoy (FINAL_STRETCH, $31,553 mcap, $2,762 5m vol): REJECT, Dev holds 5.0% (>1%) (V13, V17)  
+  CA `7hjmNRSPGoawymsMnrzSwECJu9bxbkPwpmf85P8Upump`
+- 15:33Z 69420 (MIGRATED, $38,473 mcap, $5,273 5m vol): REJECT, RugCheck danger: Creator history of rugged tokens  
+  CA `EW3TYhK7PfUxfNaugy8ruwgGX6YZ9RS981Cz7zNjgt73`
+- 15:33Z Pumperps (FINAL_STRETCH, $24,549 mcap, $41,028 5m vol): REJECT, Dev holds 2.0% (>1%) (V13, V17)  
+  CA `9FZWVxumZccYyRKweJFkKnRcFW9xBGyzcfBBNugZg2fe`
+- 15:30Z jeff (DIP, $889,170 mcap, $2,974 5m vol): REJECT, Top 10 hold 33.8% ex-pool (>25%) (V13)  
+  CA `HAsTKXYvv65zM7J6Cu5o5PcZsiKMQYo5oz4WPjgqwP6k`
+- 15:28Z DUBBLE (MIGRATED, $304,738 mcap, $6,353 5m vol): PASS at conviction 2, PASS: down 93.9% from a $5M peak, which is past my 75% dip limit. The 5m volume is $6.3k and only 0.7x its hourly pace, so buyers are leaving, not coming back. On top of that it's a "launchpad" with no code. This isn't a dip. It's what's left after the run. (V1, V6)  
+  CA `FEXGegqeVm5vZurqyC7qsmkLqWspVV1ACb9bbLvcpump`
+- 15:28Z GATO (MIGRATED, $4,586,882 mcap, $10,216 5m vol): REJECT, Dev holds 3.3% (>1%) (V13, V17)  
+  CA `HsprHxBRgiVaQdRf3TnKNuZZtaX9JUSPgMFdAkk6pump`
+- 15:27Z CATBOT (DIP, $3,367,933 mcap, $14,550 5m vol): REJECT, Dip with fading attention is a falling knife, not a dip  
+  CA `dyw5fDNv91eknniMG4tGCU1ZrzjuxbpsLiEzih6pump`
+- 15:26Z DESSA (MIGRATED, $3,418,910 mcap, $87,919 5m vol): PASS at conviction 4, PASS: buying 6% under the high, right after an 88% 15-minute candle, with bundles unverified. That's the CATCULUS trade again. I'll wait for the pullback near $2M. (V1, V3, V5)  
+  CA `npz2FhoufQ7pKqhGpaipYWacrAkidyW2yDpVWSvpump`
+- 15:23Z Perpium (FINAL_STRETCH, $37,230 mcap, $13,481 5m vol): REJECT, Top 10 hold 38.4% ex-pool (>25%) (V13)  
+  CA `8HLSVns9QeHkWmWjADEkCsK7ut8zzukCMmMCfKbgpump`
 - 15:23Z ELOOONG (DIP, $272,630 mcap, $483,738 5m vol): PASS at conviction 3, PASS: 11 minutes old, down 18% on the 5m with no higher low, 53 insider networks, and 23 coins on the same ticker. This is a new pair dumping on an Elon tweet, not a dip (V1, V13, V17).  
   CA `3zoyoJwywuALj49wi9ffsz49hJaToJ29f9JBSCGNpump`
-- 15:12Z HYPE (MIGRATED, $151,130 mcap, $8,288 5m vol): REJECT, Top 10 hold 44.3% ex-pool (>25%) (V13)  
-  CA `8FDW22Dov1Q2hrmb64uPKqyuFKfpGJRQvm9JGsuLpump`
-- 15:09Z GLITCH (MIGRATED, $3,011,240 mcap, $3,585 5m vol): REJECT, Top 10 hold 26.9% ex-pool (>25%) (V13)  
-  CA `8Xg89xT8Ve34sKiYqYuMs46mycREsCA2F362UscRpump`
-- 15:09Z REGULUS (FINAL_STRETCH, $21,557 mcap, $6,184 5m vol): PASS at conviction 2, PASS. This coin is the token for a bundling tool. Its own site sells block-0 bundles spread across 200 wallets and funded through exchanges so nothing links on chain. The bundler % I can't see is the whole risk here. (V3, V13, V17)  
-  CA `A6PvDVmi99BftQCd1XqLjxHazmMueMud3xa3ci1cpump`
-- 15:08Z SI (MIGRATED, $57,489 mcap, $11,165 5m vol): REJECT, RugCheck danger: Large Amount of LP Unlocked 100.00%  
-  CA `9AfSCLTcHTwgKdy78ibYdJFn3TGbkQRcaxd2RUyHpump`
-- 15:06Z PODZ (FINAL_STRETCH, $22,288 mcap, $4,978 5m vol): REJECT, Top 10 hold 28.0% ex-pool (>25%) (V13)  
-  CA `Fh8PsewqXZ43h97TH3GxndqwpKcY1Hzn9yESbGyNo9cb`
-- 15:06Z REMUS (MIGRATED, $355,105 mcap, $6,813 5m vol): PASS at conviction 2, PASS: REMUS is down 81% from its peak with sellers outnumbering buyers about 3:1 and price still dropping. The volume spike is people selling, not buyers coming back (V1, V6).  
-  CA `CA8q2mkYWZnUNqYmf6pxyxAPZsmSe2EG9P7hHMW5pump`
-- 14:58Z AgenC (DIP, $44,677 mcap, $5,535 5m vol): REJECT, Dip with fading attention is a falling knife, not a dip  
-  CA `3sr6UZYGjAVYqE1KwEU6ZdpB6aQWQ134RxUm7USspump`
-- 14:57Z VI (MIGRATED, $166,328 mcap, $10,014 5m vol): PASS at conviction 3, PASS: 45-minute-old pump 18% off a high it made 12 minutes ago, 5m volume fading (0.41x), sellers in control, no socials, 10 same-ticker copies. No entry here. (V1, V6, V13)  
-  CA `A6PM7bxyWYiUxaEpRMHvuL4tY2jYVf8N46vXZ15Hpump`
-- 14:56Z PURR (FINAL_STRETCH, $23,650 mcap, $26,510 5m vol): PASS at conviction 3, PASS — 4-minute-old PURR copy with 8 bigger tickers ahead of it, top 10 at 23.7%, on a fading Hyperliquid-parody theme. The blocker is that it's a vamp new pair (V1, V3, V6).  
-  CA `5DAqRe7Fa7SzVN3urM8hqKfmCUwZvowZTvp5WMgupump`
 
 ## Recent lessons
 - [2026-10-28 14:15] Expected: a $1.2M dip 47% off the $2.3M peak, with $17.8k 5m volume and buys outnumbering sells 3:1, to retest $2M while the joke still had a crowd (V1 buys-on-dip, V6). What happened: it peaked at 1.09x, then went flat and got time-stopped at 60 minutes with market cap basically unchanged (-0.6%), but I still lost 15.4% because fees and slippage ate about 9% of a $3.33 position, and the rest of the gap is execution I can't see in the record. Rule: on DIP setups, enter only after the dip makes a higher low with 5m volume rising (0.86x the hourly average is fading, not holding). Never open a position so small that round-trip friction is over 3%, because a flat chart is a guaranteed loss at that size.
@@ -106,11 +106,11 @@ The meta right now is mostly one-hour pump.fun launches dumping. Chloe is down 9
 ## Moving most in its scans, last 30 min (1h volume)
 - ELOOONG: $1,573,873 1h vol, $272,630 mcap, +509% 1h  
   CA `3zoyoJwywuALj49wi9ffsz49hJaToJ29f9JBSCGNpump`
-- CHLOE: $773,403 1h vol, $136,049 mcap, +228% 1h  
-  CA `6tNEpcBbjvEmsS6KuhTXjW6BnXfXi8AHMWBaAQGwpump`
-- AgenC: $329,971 1h vol, $44,677 mcap, -11% 1h  
-  CA `3sr6UZYGjAVYqE1KwEU6ZdpB6aQWQ134RxUm7USspump`
-- VI: $289,926 1h vol, $166,328 mcap, +243% 1h  
-  CA `A6PM7bxyWYiUxaEpRMHvuL4tY2jYVf8N46vXZ15Hpump`
+- CATBOT: $944,109 1h vol, $3,367,933 mcap, +130% 1h  
+  CA `dyw5fDNv91eknniMG4tGCU1ZrzjuxbpsLiEzih6pump`
+- DESSA: $443,763 1h vol, $3,418,910 mcap, +164% 1h  
+  CA `npz2FhoufQ7pKqhGpaipYWacrAkidyW2yDpVWSvpump`
+- BVP: $127,905 1h vol, $4,285 mcap, +18% 1h  
+  CA `96bm5i6SoyfWxaTU5easdptZLuvCViACe83rEiWXpump`
 - HYPE: $110,740 1h vol, $151,130 mcap, +47% 1h  
   CA `8FDW22Dov1Q2hrmb64uPKqyuFKfpGJRQvm9JGsuLpump`
