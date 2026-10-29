@@ -1,13 +1,13 @@
 # Trencher live report
 
-Updated 2026-10-29T16:08:50Z (paper trading, never real money)
+Updated 2026-10-29T16:23:56Z (paper trading, never real money)
 
 - Equity: $99.93 (-0.1% vs $100 start)
-- Goal: $1,000 by 2026-11-05 05:03Z (a stretch, survival first): at 10% of it, 6.5 days left, needs +42.2% a day from here
+- Goal: $1,000 by 2026-11-05 05:03Z (a stretch, survival first): at 10% of it, 6.5 days left, needs +42.3% a day from here
 - Closed trades: 7, 2 wins
 - Fees paid: $4.16 (axiom $0.43, network $3.26, pool $0.35), plus $0.62 lost to slippage
 - New trades: on
-- Brain: subscription, 380 calls and 0 plan-limit hits in 48h
+- Brain: subscription, 382 calls and 0 plan-limit hits in 48h
 
 ## Scorecard (after fees)
 - 7 closed, 2 won (29%), net $-0.07
@@ -67,9 +67,15 @@ Updated 2026-10-29T16:08:50Z (paper trading, never real money)
   CA `Bv1a7cEj5aRnJQhMw4kRQqAFesMSd5LwcDnUzq52BMmr`
 
 ## Last scan
-- 16:08Z: 3 coins, 3 with pairs, 1 passed the market filters, 1 researched
+- 16:23Z: 7 coins, 6 with pairs, 0 passed the market filters, 0 researched
 
 ## Coins it looked at, and why it passed
+- 16:16Z GTA (MIGRATED, $52,077 mcap, $4,235 5m vol): PASS at conviction 2, PASS: down 83% off a $304k peak in 30 minutes, and its 993 buys moved only $4.2k. That's bot dust, not a crowd. Vamp of a bigger GTA ticker. (V3, V6, V13)  
+  CA `FViKbzdiHbBYXnVGfkdHAzJD6PcSPDGQHRQ4GY8zpump`
+- 16:12Z CATBOT (DIP, $2,317,092 mcap, $24,527 5m vol): REJECT, Dip with fading attention is a falling knife, not a dip  
+  CA `dyw5fDNv91eknniMG4tGCU1ZrzjuxbpsLiEzih6pump`
+- 16:12Z DESSA (MIGRATED, $7,111,693 mcap, $133,002 5m vol): PASS at conviction 4, PASS: DESSA is 11.6% off a peak set 12 minutes ago, after a 280% hour, and I can't see the bundles. That's the CATCULUS setup again. I'll wait for the 0.618 retest near $4.2M (my rule, V1, V3, V5).  
+  CA `npz2FhoufQ7pKqhGpaipYWacrAkidyW2yDpVWSvpump`
 - 16:08Z ELOOONG (MIGRATED, $90,467 mcap, $39,669 5m vol): PASS at conviction 2, PASS — 85% off the $600k peak, -45% on the 5m, volume at 0.21x the hourly pace, and a copy with the same ticker is taking the flow. Falling knife in a field of copies. (V1, V6)  
   CA `3zoyoJwywuALj49wi9ffsz49hJaToJ29f9JBSCGNpump`
 - 15:58Z SENSE (MIGRATED, $1,356,810 mcap, $21,897 5m vol): REJECT, Top 10 hold 34.3% ex-pool (>25%) (V13)  
@@ -84,12 +90,6 @@ Updated 2026-10-29T16:08:50Z (paper trading, never real money)
   CA `3j2RebsuBjNoV5DPz1xSztasqWhjStpQarisDpcLpump`
 - 15:43Z Stanley (MIGRATED, $45,320 mcap, $9,918 5m vol): REJECT, Top 10 hold 27.6% ex-pool (>25%) (V13)  
   CA `83MRySsDw9nuyV2e7iowXBxPJgSNFphvsytvnBWjop6d`
-- 15:43Z VI (MIGRATED, $354,663 mcap, $14,880 5m vol): PASS at conviction 3, PASS: it's sitting right at the top after a +143% 5-minute candle, and sellers outnumber buyers 33 to 14. The insiders are selling and I'd be the one buying from them. (V1, V7, my no-chase-near-high rule)  
-  CA `A6PM7bxyWYiUxaEpRMHvuL4tY2jYVf8N46vXZ15Hpump`
-- 15:42Z PURR (MIGRATED, $101,824 mcap, $15,714 5m vol): PASS at conviction 2, PASS: PURR is a copycat of Hyperliquid's PURR, sitting at its high with 5m volume at 0.53x the hourly pace. The top 10 hold 20.6% with 5 insider networks, and the only social link is an Elon tweet. Vamp at the top. (V1, V3, V13)  
-  CA `5DAqRe7Fa7SzVN3urM8hqKfmCUwZvowZTvp5WMgupump`
-- 15:42Z XLIQUID (MIGRATED, $108,558 mcap, $63,775 5m vol): PASS at conviction 3, PASS — 8 minutes old, 0.2% off the high, bundles unverified, and the only social is a KOL tweet. That breaks my rule against momentum buys near the high (V1, V3, V5).  
-  CA `Bq6BPfB6NNC5d1kQZFsYpCFeWxxACmbvu35QHofqpump`
 
 ## Recent lessons
 - [2026-10-28 14:15] Expected: a $1.2M dip 47% off the $2.3M peak, with $17.8k 5m volume and buys outnumbering sells 3:1, to retest $2M while the joke still had a crowd (V1 buys-on-dip, V6). What happened: it peaked at 1.09x, then went flat and got time-stopped at 60 minutes with market cap basically unchanged (-0.6%), but I still lost 15.4% because fees and slippage ate about 9% of a $3.33 position, and the rest of the gap is execution I can't see in the record. Rule: on DIP setups, enter only after the dip makes a higher low with 5m volume rising (0.86x the hourly average is fading, not holding). Never open a position so small that round-trip friction is over 3%, because a flat chart is a guaranteed loss at that size.
@@ -106,11 +106,11 @@ The meta is fresh pump.fun launches riding the Hyperliquid joke: PURR (Hypurr), 
 ## Moving most in its scans, last 30 min (1h volume)
 - ELOOONG: $2,279,348 1h vol, $90,467 mcap, +104% 1h  
   CA `3zoyoJwywuALj49wi9ffsz49hJaToJ29f9JBSCGNpump`
+- DESSA: $1,615,360 1h vol, $7,111,693 mcap, +280% 1h  
+  CA `npz2FhoufQ7pKqhGpaipYWacrAkidyW2yDpVWSvpump`
+- CATBOT: $978,902 1h vol, $2,317,092 mcap, -31% 1h  
+  CA `dyw5fDNv91eknniMG4tGCU1ZrzjuxbpsLiEzih6pump`
 - SENSE: $546,342 1h vol, $1,356,810 mcap, -22% 1h  
   CA `GydpvgKppv8a4gGQqAQsyQJxtQN4S6Ym9gKxjnN3mfun`
-- PURR: $356,221 1h vol, $101,824 mcap, +132% 1h  
-  CA `5DAqRe7Fa7SzVN3urM8hqKfmCUwZvowZTvp5WMgupump`
-- Stanley: $241,930 1h vol, $45,320 mcap, -2% 1h  
-  CA `83MRySsDw9nuyV2e7iowXBxPJgSNFphvsytvnBWjop6d`
-- ELOOONG: $241,654 1h vol, $199,800 mcap, +363% 1h  
-  CA `2YZdszj9XpTrKZ3FsVJH5sqGXppCgfW5E5pCVR9Apump`
+- GTA: $342,956 1h vol, $52,077 mcap, +9% 1h  
+  CA `FViKbzdiHbBYXnVGfkdHAzJD6PcSPDGQHRQ4GY8zpump`
