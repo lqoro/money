@@ -1,13 +1,13 @@
 # Trencher live report
 
-Updated 2026-10-29T07:33:27Z (paper trading, never real money)
+Updated 2026-10-29T07:48:36Z (paper trading, never real money)
 
 - Equity: $99.93 (-0.1% vs $100 start)
 - Goal: $1,000 by 2026-11-05 05:03Z (a stretch, survival first): at 10% of it, 6.9 days left, needs +39.7% a day from here
 - Closed trades: 7, 2 wins
 - Fees paid: $4.16 (axiom $0.43, network $3.26, pool $0.35), plus $0.62 lost to slippage
 - New trades: on
-- Brain: subscription, 296 calls and 0 plan-limit hits in 48h
+- Brain: subscription, 297 calls and 0 plan-limit hits in 48h
 
 ## Scorecard (after fees)
 - 7 closed, 2 won (29%), net $-0.07
@@ -67,7 +67,7 @@ Updated 2026-10-29T07:33:27Z (paper trading, never real money)
   CA `Bv1a7cEj5aRnJQhMw4kRQqAFesMSd5LwcDnUzq52BMmr`
 
 ## Last scan
-- 07:33Z: 2 coins, 1 with pairs, 0 passed the market filters, 0 researched
+- 07:48Z: 3 coins, 2 with pairs, 0 passed the market filters, 0 researched
 
 ## Coins it looked at, and why it passed
 - 07:31Z GLITCH (MIGRATED, $2,679,924 mcap, $2,211 5m vol): REJECT, Top 10 hold 26.9% ex-pool (>25%) (V13)  
@@ -101,16 +101,16 @@ Updated 2026-10-29T07:33:27Z (paper trading, never real money)
 - [2026-10-29 02:49] I expected FLOAT, the leading tokenized-stock coin, to run from its $1.04M higher-low reclaim toward $3M (V1, V6), and it did reach 1.64x. Then it faded, and I sat past the 45-minute time stop and got out at 158 minutes. Mcap was only down 7%, but I lost 24.5% because $0.56 of fees and slippage ate 18% of a $3.09 position, which broke my own $5-minimum and friction-gate rules. Next time: no entry under $5 or above 5% friction, no exceptions. If a trade gets past 1.5x before initials, move the stop up to break-even plus fees so a 1.6x peak can't turn into a loss (V11: plan the exit before the entry).
 
 ## Meta right now
-The crawler's "quiet" note is out of date. The scan shows heavy volume, all of it in brand-new pump.fun graduates on PumpSwap under an hour old: SPERM ($197k cap, $65k 5m volume, +365% on the hour, 0.3h old), STEVE ($42k cap, $52k 5m) and VoiceMemos ($44k cap, $41k 5m), the last two only about 6 minutes old with buyers near 56–58%. The rising theme is dumb everyday-object and absurd jokes (Voice Memos, sperm, Steve, Pool, the Tesla Model 3 coin), plus a cat theme that is mostly fading or dead. CATBOT and GATO are holding big caps on thin flow, while Rigby is down 70% and dead. AI-dog coins are a rug theme to avoid: AI/SI fell 95% and its copycat AISI is down 24%, and the Tesla coin is down 93%, so these jokes fade within an hour. The only setup I'd paper trade now is SPERM as a MIGRATED or DIP entry, conviction 7 if holders come back clean. I'd buy a pullback that holds with 5m volume above $10k, not chase the +365% candle; initials out at 1.5x, 20% trail, sell half when 5m volume fades, stop where the dip fails to hold (V1, V6). PASS for now on STEVE and VoiceMemos because they're 6 minutes old and I don't snipe (V5); STEVE's address also lacks the "pump" ending, so I need to confirm it's the right token first (V3). Both go on watch to buy if they hold $30k+ with steady flow after 30–60 minutes. $LAPTOP stays a hard no because a political figure pushed it (V13). Holders, bundles and dev share are unverified on all of these, so nothing gets bought before that check.
+The meta is fast absurd jokes on everyday objects and names, and they die within an hour. Sellicon Valley (-98%), VoiceMemos (-90%), Steve (-99%) and Pool (-62%) all launched or graduated in the last hour and got dumped, with 5m volume now $0-215 and buyers at 0-17% where the scan shows it. The crawler's summary is out of date: SPERM isn't on the scan at all, and its VoiceMemos/STEVE picture has already rugged. The second theme, old memes coming back, is the only one rising. bingus is up 845% at a $29k cap, still on the pump.fun curve, with $7.8k 5m volume and 55% buys. The new FARTCOIN at $5k is a vamp of the real coin, a hard no (V3). Cats are fading: GATO is coasting at $5M and Rigby is dead. Bigger caps (GLITCH, NETWORK, STONKLANA) trade under $2.5k on the 5m, which is thin. No buys right now. bingus goes on watch as a FINAL_STRETCH (V1); I'd buy at about 7/10 only if holders, bundles and dev share come back clean and 5m volume clears about $10k. Plan: initials out at 1.5x, 20% trail, sell half when volume fades, stop where the dip fails to hold. PASS on the dead joke graduates (5m volume under $2k, V1/V6), FARTCOIN (vamp, V1/V3), LOOT (0h old, I don't snipe, V5) and $LAPTOP (pushed by a political figure, V13).
 
 ## Moving most in its scans, last 30 min (1h volume)
-- Steve: $336,965 1h vol, $1,869 mcap, -96% 1h  
+- SELLICON: $396,868 1h vol, $1,913 mcap, -98% 1h  
+  CA `DPb1vNz5wXuYCv27S85zZ8sGh6NTfU6gMYRFYA7Jpump`
+- Steve: $102,887 1h vol, $1,869 mcap, -99% 1h  
   CA `Fxyj1MSfyE8PCsVUWmXTHCWmCKFK7dkvgkd6HvuHpump`
-- VoiceMemos: $110,575 1h vol, $3,169 mcap, -90% 1h  
+- FARTCOIN: $64,551 1h vol, $5,232 mcap, -9% 1h  
+  CA `GK46Bu1KrTJnGCvKuAyJu2tuaVZhwzN2otJpzGAtfart`
+- bingus: $57,064 1h vol, $29,059 mcap, +845% 1h  
+  CA `6jzcLmTR7XvQinzuRYA26RGXC4TGkH9fNpjSyQywpump`
+- VoiceMemos: $29,113 1h vol, $2,531 mcap, -82% 1h  
   CA `9b1sz9HKXjKgPNT6fkRmiz8qEawLejvcjTPfNErapump`
-- DUBBLE: $95,383 1h vol, $2,383,022 mcap, +10% 1h  
-  CA `FEXGegqeVm5vZurqyC7qsmkLqWspVV1ACb9bbLvcpump`
-- CATBOT: $85,930 1h vol, $3,112,137 mcap, +4% 1h  
-  CA `dyw5fDNv91eknniMG4tGCU1ZrzjuxbpsLiEzih6pump`
-- STEVE: $82,426 1h vol, $12,262 mcap, -77% 1h  
-  CA `FMzQfjhqGnMTB56Z6ie9Muz2BzSKbGUwB2wwS4Dqex4C`
