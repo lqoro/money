@@ -1,5 +1,5 @@
 {
- "updated_at": "2026-10-29T21:29:17Z",
+ "updated_at": "2026-10-29T21:29:21Z",
  "paused_new_trades": false,
  "brain": {
   "mode": "subscription",
@@ -35,6 +35,7 @@
   "max_hold_hours": 12.0,
   "dip_min_drawdown_pct": 40.0,
   "dip_max_drawdown_pct": 75.0,
+  "dip_min_attention_ratio": 0.5,
   "dip_min_peak_mcap_usd": 70000.0,
   "good_vol_5m_usd": 10000.0,
   "min_vol_5m_usd": 2000.0,
@@ -52,7 +53,8 @@
   "base_slippage_pct": 1.5,
   "max_slippage_pct": 20.0,
   "min_target_cost_multiple": 3.0,
-  "max_round_trip_cost_pct": 20.0
+  "max_round_trip_cost_pct": 20.0,
+  "probe_max_risk_pct": 3.0
  },
  "recent_trades": [
   {
@@ -673,18 +675,6 @@
     "age_hours": 0.4
    },
    {
-    "symbol": "HEXN",
-    "name": "Hexncoin",
-    "ca": "ANVLA6eKiAq4nstD2Sg3SZhfVkSEwfnGccn12UQWpump",
-    "dex": "pumpswap",
-    "mcap_usd": 727540,
-    "vol_5m": 23208,
-    "vol_1h": 262062,
-    "change_1h": -19.36,
-    "buy_ratio_5m": 0.84,
-    "age_hours": 4.5
-   },
-   {
     "symbol": "ASSAY",
     "name": "Proof of Ship",
     "ca": "C5hLhhd5MivJ8m2MTQjB9A2nmuBymRzYhyRpeRMMpump",
@@ -781,6 +771,18 @@
     "age_hours": 0.3
    },
    {
+    "symbol": "three",
+    "name": "three.ws",
+    "ca": "FeMbDoX7R1Psc4GEcvJdsbNbZA3bfztcyDCatJVJpump",
+    "dex": "pumpswap",
+    "mcap_usd": 500460,
+    "vol_5m": 1923,
+    "vol_1h": 40965,
+    "change_1h": -6.55,
+    "buy_ratio_5m": 0.69,
+    "age_hours": 4406.2
+   },
+   {
     "symbol": "POOPS",
     "name": "POOPETUALS",
     "ca": "4jHKDnCNNE77LtBJ7EPBfRq82sMWvwyzaRj6jxjxPoop",
@@ -805,16 +807,16 @@
     "age_hours": 1.5
    },
    {
-    "symbol": "three",
-    "name": "three.ws",
-    "ca": "FeMbDoX7R1Psc4GEcvJdsbNbZA3bfztcyDCatJVJpump",
-    "dex": "pumpswap",
-    "mcap_usd": 512767,
-    "vol_5m": 2010,
-    "vol_1h": 32068,
-    "change_1h": -7.52,
-    "buy_ratio_5m": 0.67,
-    "age_hours": 4406.3
+    "symbol": "ZERO",
+    "name": "ZERO",
+    "ca": "DxbKekHj7uUiFKKnXvegpKcLR2HWsuA4nudBWJcvpump",
+    "dex": "pumpfun",
+    "mcap_usd": 20312,
+    "vol_5m": 1947,
+    "vol_1h": 31544,
+    "change_1h": 610,
+    "buy_ratio_5m": 0.63,
+    "age_hours": 0.6
    }
   ]
  },
@@ -826,180 +828,10 @@
   "days_left": 6.3,
   "needed_daily_growth_pct": 44.0
  },
- "last_scan": {
-  "at": 1793309341.5046542,
-  "tokens": 6,
-  "pairs": 5,
-  "passed_market_filters": 2,
-  "researched": 2
- },
- "recent_looks": [
-  {
-   "ts": "2026-10-29T20:35:49Z",
-   "symbol": "HYPERCHAN",
-   "ca": "BrsZa8LYyBuD4jjkzHCFzjacgtXCZSn9kuDFdeitpump",
-   "setup": "MIGRATED",
-   "mcap_usd": 330008,
-   "vol_5m": 78130,
-   "outcome": "REJECT",
-   "conviction": null,
-   "reason": "Top 10 hold 26.0% ex-pool (>25%) (V13)"
-  },
-  {
-   "ts": "2026-10-29T20:36:11Z",
-   "symbol": "XPerps",
-   "ca": "Fda2DD7fPekAnvtJkjNGrM5cju6S3eMykHFHjSos7G14",
-   "setup": "FINAL_STRETCH",
-   "mcap_usd": 26142,
-   "vol_5m": 33489,
-   "outcome": "PASS",
-   "conviction": 3,
-   "reason": "PASS \u2014 3-minute-old pair, 5-hour-old domain, perps 'product' with no GitHub, top 10 already 23.3%, bundles blind. Fresh-pair snipe plus LARP risk. (V1, V3, V5, V13)"
-  },
-  {
-   "ts": "2026-10-29T20:38:19Z",
-   "symbol": "REMUS",
-   "ca": "CA8q2mkYWZnUNqYmf6pxyxAPZsmSe2EG9P7hHMW5pump",
-   "setup": "MIGRATED",
-   "mcap_usd": 267246,
-   "vol_5m": 3026,
-   "outcome": "PASS",
-   "conviction": 2,
-   "reason": "PASS. REMUS is 86% off its peak, and sellers outnumber buyers 107 to 21 on the 5m. Nobody is buying this dip. It's a falling knife. (V1, V6)"
-  },
-  {
-   "ts": "2026-10-29T20:39:26Z",
-   "symbol": "SENSE",
-   "ca": "GydpvgKppv8a4gGQqAQsyQJxtQN4S6Ym9gKxjnN3mfun",
-   "setup": "MIGRATED",
-   "mcap_usd": 174330,
-   "vol_5m": 2040,
-   "outcome": "PASS",
-   "conviction": 2,
-   "reason": "PASS \u2014 90% off a $1.75M peak, -66% on the hour, $2k 5m volume on a robotics pitch with no GitHub. Falling knife, likely LARP. (V1, V6)"
-  },
-  {
-   "ts": "2026-10-29T20:41:30Z",
-   "symbol": "STANK",
-   "ca": "5wsjHxT5nW5jQuVupXUNnYszF3WoWCfGGk9LMcsCJzY8",
-   "setup": "MIGRATED",
-   "mcap_usd": 166671,
-   "vol_5m": 5277,
-   "outcome": "PASS",
-   "conviction": 4,
-   "reason": "PASS: STANK is 14.5% off its high with $5.3k on the 5m. That's a momentum chase near the top with thin flow and no bundle data. (V1, V6, my 20%-from-high rule)"
-  },
-  {
-   "ts": "2026-10-29T20:43:50Z",
-   "symbol": "HEXN",
-   "ca": "ANVLA6eKiAq4nstD2Sg3SZhfVkSEwfnGccn12UQWpump",
-   "setup": "DIP",
-   "mcap_usd": 1080970,
-   "vol_5m": 21080,
-   "outcome": "PASS",
-   "conviction": 4,
-   "reason": "PASS on HEXN. It's an \"operating system\" tech coin with a website registered 7 hours ago, no GitHub, and no buzz. The bounce came off a lower low, and the 5m volume (0.87x the hourly pace) is fading. That makes it a probable LARP mid-bounce, not a confirmed dip (V1, V3)."
-  },
-  {
-   "ts": "2026-10-29T20:51:51Z",
-   "symbol": "Cateoween",
-   "ca": "4MaEHc6c2sNGqbWzdhfmK5teYSddTq2cDGVPRmbwDmcX",
-   "setup": "FINAL_STRETCH",
-   "mcap_usd": 27962,
-   "vol_5m": 6953,
-   "outcome": "REJECT",
-   "conviction": null,
-   "reason": "RugCheck danger: Creator history of rugged tokens"
-  },
-  {
-   "ts": "2026-10-29T20:55:15Z",
-   "symbol": "OREN",
-   "ca": "57vAaMsnAJXkvULtAz7fsi6gRn3bHRJFJsJV1okNpump",
-   "setup": "DIP",
-   "mcap_usd": 111556,
-   "vol_5m": 9284,
-   "outcome": "PASS",
-   "conviction": 2,
-   "reason": "PASS: this is a falling knife, not a dip. It's down 24% in the last 5 minutes, it's sitting on the hour's low, and there's no higher low. The extra volume is people selling. (V1, learned DIP rule)"
-  },
-  {
-   "ts": "2026-10-29T20:55:16Z",
-   "symbol": "GATO",
-   "ca": "HsprHxBRgiVaQdRf3TnKNuZZtaX9JUSPgMFdAkk6pump",
-   "setup": "MIGRATED",
-   "mcap_usd": 4512721,
-   "vol_5m": 2877,
-   "outcome": "REJECT",
-   "conviction": null,
-   "reason": "Dev holds 3.3% (>1%) (V13, V17)"
-  },
-  {
-   "ts": "2026-10-29T20:56:24Z",
-   "symbol": "HYPERCAT",
-   "ca": "AEqw9bAtqJCWPNNJp9EieXw8GYwm1kgsJBDdJBU2pump",
-   "setup": "DIP",
-   "mcap_usd": 232130,
-   "vol_5m": 7631,
-   "outcome": "PASS",
-   "conviction": 3,
-   "reason": "PASS: 69% dip with 5m volume at 0.7x the hourly pace, and two bigger coins share the ticker. Falling knife, and not the leader. (V1, V6)"
-  },
-  {
-   "ts": "2026-10-29T20:57:46Z",
-   "symbol": "HOUSEWORM",
-   "ca": "9KhzhyM1BwgW6myZRcqdzQvemKjVrjck8kaevTkMpump",
-   "setup": "MIGRATED",
-   "mcap_usd": 634092,
-   "vol_5m": 9270,
-   "outcome": "PASS",
-   "conviction": 4,
-   "reason": "PASS: the blocker is that it's 4% under a local high while 465 insider networks sit behind holders spread evenly at 0.22% each. That's the CATCULUS setup again. Wait for the 0.618 retest. (V3, V5, V17)"
-  },
-  {
-   "ts": "2026-10-29T21:06:02Z",
-   "symbol": "HYPEFAUCET",
-   "ca": "HyPESTUwRbb21wH4Qyw9ayKhb9AC7bWciqGbnGp7dRip",
-   "setup": "FINAL_STRETCH",
-   "mcap_usd": 28690,
-   "vol_5m": 2215,
-   "outcome": "PASS",
-   "conviction": 3,
-   "reason": "PASS: $2.2k on the 5m with top 10 at 22.4% and 4 insider networks, on a curve coin that has stalled for 3.5 hours. That's a pump, not a crowd (V1, V6, V13)."
-  },
-  {
-   "ts": "2026-10-29T21:16:26Z",
-   "symbol": "SI",
-   "ca": "6zuDiAw3NviBwcLZfTztHJgtCmeNWfyFxYVoXtNYpump",
-   "setup": "MIGRATED",
-   "mcap_usd": 186532,
-   "vol_5m": 93692,
-   "outcome": "PASS",
-   "conviction": 4,
-   "reason": "PASS \u2014 buying at the high on a 22-minute-old coin with 19 insider networks and top 10 at 19.6%. That's chasing snipers. Wait for the 0.618 (V1, V3, V6)."
-  },
-  {
-   "ts": "2026-10-29T21:17:38Z",
-   "symbol": "DESSA",
-   "ca": "npz2FhoufQ7pKqhGpaipYWacrAkidyW2yDpVWSvpump",
-   "setup": "MIGRATED",
-   "mcap_usd": 7602193,
-   "vol_5m": 6786,
-   "outcome": "PASS",
-   "conviction": 4,
-   "reason": "PASS: $6.8k 5m volume on a $7.6M cap, flat range 37% off the high, zero buzz. The crowd already came and went (V1, V6)."
-  },
-  {
-   "ts": "2026-10-29T21:21:59Z",
-   "symbol": "HYPERCHAN",
-   "ca": "BrsZa8LYyBuD4jjkzHCFzjacgtXCZSn9kuDFdeitpump",
-   "setup": "MIGRATED",
-   "mcap_usd": 450214,
-   "vol_5m": 44679,
-   "outcome": "PASS",
-   "conviction": 4,
-   "reason": "PASS: 15.9% off a peak set 6 minutes ago, 55 minutes old, bundles unverified. That's the CATCULUS entry again. Wait for the 0.618 retest (V1, V3, V5)."
-  }
- ],
+ "last_scan": {},
+ "recent_looks": [],
+ "skip_review": {},
+ "rule_changes": [],
  "scorecard": {
   "trades": 7,
   "wins": 2,
