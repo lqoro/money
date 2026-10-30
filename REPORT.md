@@ -1,6 +1,6 @@
 # Trencher live report
 
-Updated 2026-10-30T12:23:37Z (paper trading, never real money)
+Updated 2026-10-30T12:23:40Z (paper trading, never real money)
 
 - Equity: $93.79 (-6.2% vs $100 start)
 - Goal: $1,000 by 2026-11-05 05:03Z (pressing for it): at 9.4% of it, 5.7 days left, needs +51.5% a day from here
@@ -74,29 +74,10 @@ Updated 2026-10-30T12:23:37Z (paper trading, never real money)
   CA `3ApVr1xphYMpi9dn3rpqU4hwvpmCQDVwxET1rdCDpump`
 
 ## Last scan
-- 12:22Z: 4 coins, 3 with pairs, 0 passed the market filters, 0 researched
+- no scan yet since the last restart
 
 ## Coins it looked at, and why it passed
-- 12:20Z DESSA (MIGRATED, $9,294,884 mcap, $3,340 5m vol): PASS at conviction 3, PASS: 5m volume of $3.3k on a $9.3M coin, 0.62x hourly pace. Clean holders, but the crowd left. (V1, V6)  
-  CA `npz2FhoufQ7pKqhGpaipYWacrAkidyW2yDpVWSvpump`
-- 12:20Z PURPS (MIGRATED, $58,893 mcap, $65,124 5m vol): REJECT, RugCheck danger: Creator history of rugged tokens  
-  CA `EFo8uB6wD739GgtGoYbAwxM6Pp8iCzM8XGf7jQW7pump`
-- 12:09Z GATO (MIGRATED, $4,531,547 mcap, $4,708 5m vol): REJECT, Dev holds 3.3% (>1%) (V13, V17)  
-  CA `HsprHxBRgiVaQdRf3TnKNuZZtaX9JUSPgMFdAkk6pump`
-- 12:09Z Foxii (MIGRATED, $288,775 mcap, $14,921 5m vol): PASS at conviction 3, PASS: down 84% from a $1.8M peak, which is past my 75% dip limit, and it's down another 22.6% in the last 5 minutes with no higher low printed. That's a falling knife, not a pullback. (V1, V6)  
-  CA `J3ReuwckNtcJP1Zhn7wVbfXhTDNTkHxozQWWAwxWpump`
-- 12:07Z HEXN (MIGRATED, $353,265 mcap, $19,677 5m vol): PASS at conviction 3, PASS: 80.5% off peak and sitting on the hourly low after a -19% 5m candle. No higher low, a thin tech LARP story, and my third try at this coin. Falling knife. (V1, V6)  
-  CA `ANVLA6eKiAq4nstD2Sg3SZhfVkSEwfnGccn12UQWpump`
-- 12:01Z NIG (FINAL_STRETCH, $20,061 mcap, $8,016 5m vol): PASS at conviction 2, PASS: 12-minute-old slur coin with no X, a crowded ticker, sellers ahead of buyers and 5m volume under $10k. No real idea and no crowd. (V1, V6, V13)  
-  CA `2xkczG594A3iYjpJdECVSZooukxu13GwRgGxVTJvpump`
-- 11:55Z HYPERCHAN (MIGRATED, $2,009,099 mcap, $10,063 5m vol): PASS at conviction 4, PASS. The nearest real target is the $2.57M high, only 1.28x away, and this would be a re-entry in the middle of the range on a coin that already flatlined on me once. Target below initials. (V1, V6)  
-  CA `3ApVr1xphYMpi9dn3rpqU4hwvpmCQDVwxET1rdCDpump`
-- 11:53Z KIM (MIGRATED, $120,758 mcap, $58,231 5m vol): REJECT, Bundles: 6 linked wallet cluster(s) hold 30.5% of supply (>20%) (V17)  
-  CA `A66kHaKDhK1wGpsPLaxBW6FThCeU4V9LSy3arGkNpump`
-- 11:51Z PEET (MIGRATED, $34,448 mcap, $22,448 5m vol): PASS at conviction 3, PASS — 90 seconds old, down 37% off the bond spike with no base, two bigger PEETs exist, and no meta. Too new to trade. (V1, V5, V6)  
-  CA `4L1Sj35H2KkCSNYDhv2S5M7YTmYZe5P2sxne8Eq7pump`
-- 11:40Z CTO (MIGRATED, $313,493 mcap, $5,093 5m vol): PASS at conviction 3, PASS — 5m volume $5.1k at 0.22x hourly pace; the vamp ate the crowd. Blocker: flow below pace (V1, V6).  
-  CA `9hhLCxn41KZcmK1vAf7u5M6vKLHRcsVn1VmVgUrhpump`
+- none since the last restart
 
 ## What its skips did next (last 48h)
 A skip "ran" if the coin reached the first target (1.5x) from the skip price before a 20% drop, "dumped" if the drop came first. Sampled every 10 min, followed 6h.
@@ -119,7 +100,7 @@ A skip "ran" if the coin reached the first target (1.5x) from the skip price bef
     CA `57vAaMsnAJXkvULtAz7fsi6gRn3bHRJFJsJV1okNpump`
   - ran: Catori up to 1.52x  
     CA `FDwCosavNvMiFB812ajJp3gG7eZ9c4bpgcnY6fDQpump`
-- RugCheck danger: blocked 12, ran 4, dumped 6, flat 1, open 1 (mixed)
+- RugCheck danger: blocked 11, ran 4, dumped 6, flat 1, open 0 (mixed)
   - ran: HYPEINU up to 1.57x  
     CA `6eccVGkbi8cvAYBGzfDmUwFYrMj8eGZF2xyZqZLkpump`
   - ran: ETF up to 1.87x  

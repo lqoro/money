@@ -1,5 +1,5 @@
 {
- "updated_at": "2026-10-30T12:23:37Z",
+ "updated_at": "2026-10-30T12:23:40Z",
  "paused_new_trades": false,
  "brain": {
   "mode": "subscription",
@@ -735,48 +735,24 @@
     "name": "Kim Jong Pig",
     "ca": "9ZXZ52BBtWXD1SDiZiudXZWdRaqLmMseVHqLwrW4pump",
     "dex": "pumpfun",
-    "mcap_usd": 3855,
-    "vol_5m": 5,
-    "vol_1h": 103745,
-    "change_1h": 4.7,
-    "buy_ratio_5m": 0.67,
-    "age_hours": 1.0
-   },
-   {
-    "symbol": "PURPS",
-    "name": "usepurps.fun",
-    "ca": "EFo8uB6wD739GgtGoYbAwxM6Pp8iCzM8XGf7jQW7pump",
-    "dex": "pumpswap",
-    "mcap_usd": 58893,
-    "vol_5m": 65124,
-    "vol_1h": 65124,
-    "change_1h": 38.36,
-    "buy_ratio_5m": 0.59,
-    "age_hours": 0.1
-   },
-   {
-    "symbol": "DESSA",
-    "name": "Dessa",
-    "ca": "npz2FhoufQ7pKqhGpaipYWacrAkidyW2yDpVWSvpump",
-    "dex": "pumpswap",
-    "mcap_usd": 9294884,
-    "vol_5m": 3340,
-    "vol_1h": 64957,
-    "change_1h": 7.74,
-    "buy_ratio_5m": 0.57,
-    "age_hours": 95.3
+    "mcap_usd": 3891,
+    "vol_5m": 194,
+    "vol_1h": 103720,
+    "change_1h": 5.68,
+    "buy_ratio_5m": 0.0,
+    "age_hours": 0.8
    },
    {
     "symbol": "DAEMON",
     "name": "The Mouse Brain surgeon",
     "ca": "5yappSXzEFBAqJufBqhpRJq29BVFbd5iyAkLvZgBpump",
     "dex": "pumpswap",
-    "mcap_usd": 12822,
-    "vol_5m": 757,
-    "vol_1h": 58004,
-    "change_1h": -71.03,
-    "buy_ratio_5m": 0.76,
-    "age_hours": 1.5
+    "mcap_usd": 18706,
+    "vol_5m": 3834,
+    "vol_1h": 102768,
+    "change_1h": -61.76,
+    "buy_ratio_5m": 0.71,
+    "age_hours": 1.3
    },
    {
     "symbol": "NIG",
@@ -815,6 +791,30 @@
     "age_hours": 1583.7
    },
    {
+    "symbol": "Kim",
+    "name": "Crypto Final Boss",
+    "ca": "5yodPm7MPPLWEcvHwVJAYjTqu2n5A1KSEwRJUpt8pump",
+    "dex": "pumpfun",
+    "mcap_usd": 5462,
+    "vol_5m": 202,
+    "vol_1h": 27127,
+    "change_1h": -8.35,
+    "buy_ratio_5m": 0.29,
+    "age_hours": 1.2
+   },
+   {
+    "symbol": "PEET",
+    "name": "Peetcoin",
+    "ca": "4L1Sj35H2KkCSNYDhv2S5M7YTmYZe5P2sxne8Eq7pump",
+    "dex": "pumpswap",
+    "mcap_usd": 34448,
+    "vol_5m": 22448,
+    "vol_1h": 22448,
+    "change_1h": -36.56,
+    "buy_ratio_5m": 0.61,
+    "age_hours": 0.0
+   },
+   {
     "symbol": "RISK",
     "name": "Risked",
     "ca": "riskUV8Uv5Vqgq43j7iwtGbEV4JKyg4GJAZdFgLJsNb",
@@ -831,12 +831,12 @@
     "name": "chungpeng zao",
     "ca": "DZPEJunsXpwprRQffkMi4q23ZtsLhtLujHCSztyx786z",
     "dex": "raydium",
-    "mcap_usd": 12276,
-    "vol_5m": 529,
-    "vol_1h": 14133,
-    "change_1h": 45.78,
-    "buy_ratio_5m": 0.55,
-    "age_hours": 2.5
+    "mcap_usd": 12887,
+    "vol_5m": 671,
+    "vol_1h": 13798,
+    "change_1h": 23.92,
+    "buy_ratio_5m": 0.69,
+    "age_hours": 2.3
    },
    {
     "symbol": "calm",
@@ -861,180 +861,8 @@
   "needed_daily_growth_pct": 51.5,
   "stance": "push"
  },
- "last_scan": {
-  "at": 1793362952.526998,
-  "tokens": 4,
-  "pairs": 3,
-  "passed_market_filters": 0,
-  "researched": 0
- },
- "recent_looks": [
-  {
-   "ts": "2026-10-30T11:24:44Z",
-   "symbol": "GATO",
-   "ca": "HsprHxBRgiVaQdRf3TnKNuZZtaX9JUSPgMFdAkk6pump",
-   "setup": "MIGRATED",
-   "mcap_usd": 4328224,
-   "vol_5m": 2473,
-   "outcome": "REJECT",
-   "conviction": null,
-   "reason": "Dev holds 3.3% (>1%) (V13, V17)"
-  },
-  {
-   "ts": "2026-10-30T11:25:47Z",
-   "symbol": "CRIME",
-   "ca": "BN4Z5NtntHhu6p3atEqkeAVi8Bn9Ri2QTv8FD7iupump",
-   "setup": "MIGRATED",
-   "mcap_usd": 30714,
-   "vol_5m": 4139,
-   "outcome": "REJECT",
-   "conviction": null,
-   "reason": "RugCheck danger: Single holder ownership 42.89%"
-  },
-  {
-   "ts": "2026-10-30T11:29:11Z",
-   "symbol": "FFM",
-   "ca": "9r33aA9jgEEhaSRzFVr7xa43MMaK7bJRcpjr5RyaAUnZ",
-   "setup": "MIGRATED",
-   "mcap_usd": 47338,
-   "vol_5m": 59004,
-   "outcome": "PASS",
-   "conviction": 3,
-   "reason": "PASS \u2014 4 minutes old, just migrated, no base yet. Buys and sells are 50/50 and the only target is 1.3x. That's sniping, not a pullback (V1, V5)."
-  },
-  {
-   "ts": "2026-10-30T11:35:21Z",
-   "symbol": "DESSA",
-   "ca": "npz2FhoufQ7pKqhGpaipYWacrAkidyW2yDpVWSvpump",
-   "setup": "MIGRATED",
-   "mcap_usd": 8824877,
-   "vol_5m": 2980,
-   "outcome": "PASS",
-   "conviction": 3,
-   "reason": "PASS: 5m volume is $2,980 at 0.49x its hourly pace. Holders are clean but the crowd has left a 4-day-old $8.8M chart. (V1, V6)"
-  },
-  {
-   "ts": "2026-10-30T11:39:39Z",
-   "symbol": "CTO",
-   "ca": "HftEwseBtcbgxj9j7AfgsA5ZiTEhSK9qWXZs8rzfpump",
-   "setup": "DIP",
-   "mcap_usd": 174520,
-   "vol_5m": 30326,
-   "outcome": "PASS",
-   "conviction": 3,
-   "reason": "PASS \u2014 HftE is the CTO vamp, not the original (9hhL); 5m flow at 0.64x hourly is under the 0.7x DIP gate, and linked clusters hold 18.4% of supply, near the 20% line. (V1, V3, V17)"
-  },
-  {
-   "ts": "2026-10-30T11:40:44Z",
-   "symbol": "CTO",
-   "ca": "9hhLCxn41KZcmK1vAf7u5M6vKLHRcsVn1VmVgUrhpump",
-   "setup": "MIGRATED",
-   "mcap_usd": 313493,
-   "vol_5m": 5093,
-   "outcome": "PASS",
-   "conviction": 3,
-   "reason": "PASS \u2014 5m volume $5.1k at 0.22x hourly pace; the vamp ate the crowd. Blocker: flow below pace (V1, V6)."
-  },
-  {
-   "ts": "2026-10-30T11:51:10Z",
-   "symbol": "PEET",
-   "ca": "4L1Sj35H2KkCSNYDhv2S5M7YTmYZe5P2sxne8Eq7pump",
-   "setup": "MIGRATED",
-   "mcap_usd": 34448,
-   "vol_5m": 22448,
-   "outcome": "PASS",
-   "conviction": 3,
-   "reason": "PASS \u2014 90 seconds old, down 37% off the bond spike with no base, two bigger PEETs exist, and no meta. Too new to trade. (V1, V5, V6)"
-  },
-  {
-   "ts": "2026-10-30T11:53:01Z",
-   "symbol": "KIM",
-   "ca": "A66kHaKDhK1wGpsPLaxBW6FThCeU4V9LSy3arGkNpump",
-   "setup": "MIGRATED",
-   "mcap_usd": 120758,
-   "vol_5m": 58231,
-   "outcome": "REJECT",
-   "conviction": null,
-   "reason": "Bundles: 6 linked wallet cluster(s) hold 30.5% of supply (>20%) (V17)"
-  },
-  {
-   "ts": "2026-10-30T11:55:27Z",
-   "symbol": "HYPERCHAN",
-   "ca": "3ApVr1xphYMpi9dn3rpqU4hwvpmCQDVwxET1rdCDpump",
-   "setup": "MIGRATED",
-   "mcap_usd": 2009099,
-   "vol_5m": 10063,
-   "outcome": "PASS",
-   "conviction": 4,
-   "reason": "PASS. The nearest real target is the $2.57M high, only 1.28x away, and this would be a re-entry in the middle of the range on a coin that already flatlined on me once. Target below initials. (V1, V6)"
-  },
-  {
-   "ts": "2026-10-30T12:01:38Z",
-   "symbol": "NIG",
-   "ca": "2xkczG594A3iYjpJdECVSZooukxu13GwRgGxVTJvpump",
-   "setup": "FINAL_STRETCH",
-   "mcap_usd": 20061,
-   "vol_5m": 8016,
-   "outcome": "PASS",
-   "conviction": 2,
-   "reason": "PASS: 12-minute-old slur coin with no X, a crowded ticker, sellers ahead of buyers and 5m volume under $10k. No real idea and no crowd. (V1, V6, V13)"
-  },
-  {
-   "ts": "2026-10-30T12:07:56Z",
-   "symbol": "HEXN",
-   "ca": "ANVLA6eKiAq4nstD2Sg3SZhfVkSEwfnGccn12UQWpump",
-   "setup": "MIGRATED",
-   "mcap_usd": 353265,
-   "vol_5m": 19677,
-   "outcome": "PASS",
-   "conviction": 3,
-   "reason": "PASS: 80.5% off peak and sitting on the hourly low after a -19% 5m candle. No higher low, a thin tech LARP story, and my third try at this coin. Falling knife. (V1, V6)"
-  },
-  {
-   "ts": "2026-10-30T12:09:07Z",
-   "symbol": "Foxii",
-   "ca": "J3ReuwckNtcJP1Zhn7wVbfXhTDNTkHxozQWWAwxWpump",
-   "setup": "MIGRATED",
-   "mcap_usd": 288775,
-   "vol_5m": 14921,
-   "outcome": "PASS",
-   "conviction": 3,
-   "reason": "PASS: down 84% from a $1.8M peak, which is past my 75% dip limit, and it's down another 22.6% in the last 5 minutes with no higher low printed. That's a falling knife, not a pullback. (V1, V6)"
-  },
-  {
-   "ts": "2026-10-30T12:09:54Z",
-   "symbol": "GATO",
-   "ca": "HsprHxBRgiVaQdRf3TnKNuZZtaX9JUSPgMFdAkk6pump",
-   "setup": "MIGRATED",
-   "mcap_usd": 4531547,
-   "vol_5m": 4708,
-   "outcome": "REJECT",
-   "conviction": null,
-   "reason": "Dev holds 3.3% (>1%) (V13, V17)"
-  },
-  {
-   "ts": "2026-10-30T12:20:27Z",
-   "symbol": "PURPS",
-   "ca": "EFo8uB6wD739GgtGoYbAwxM6Pp8iCzM8XGf7jQW7pump",
-   "setup": "MIGRATED",
-   "mcap_usd": 58893,
-   "vol_5m": 65124,
-   "outcome": "REJECT",
-   "conviction": null,
-   "reason": "RugCheck danger: Creator history of rugged tokens"
-  },
-  {
-   "ts": "2026-10-30T12:20:45Z",
-   "symbol": "DESSA",
-   "ca": "npz2FhoufQ7pKqhGpaipYWacrAkidyW2yDpVWSvpump",
-   "setup": "MIGRATED",
-   "mcap_usd": 9294884,
-   "vol_5m": 3340,
-   "outcome": "PASS",
-   "conviction": 3,
-   "reason": "PASS: 5m volume of $3.3k on a $9.3M coin, 0.62x hourly pace. Clean holders, but the crowd left. (V1, V6)"
-  }
- ],
+ "last_scan": {},
+ "recent_looks": [],
  "skip_review": {
   "top 10 over 25%": {
    "blocked": 22,
@@ -1172,11 +1000,11 @@
    ]
   },
   "RugCheck danger": {
-   "blocked": 12,
+   "blocked": 11,
    "ran": 4,
    "dumped": 6,
    "flat": 1,
-   "pending": 1,
+   "pending": 0,
    "ran_examples": [
     {
      "symbol": "HYPEINU",
