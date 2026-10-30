@@ -1,13 +1,13 @@
 # Trencher live report
 
-Updated 2026-10-30T20:57:59Z (paper trading, never real money)
+Updated 2026-10-30T21:13:13Z (paper trading, never real money)
 
 - Equity: $93.79 (-6.2% vs $100 start)
-- Goal: $1,000 by 2026-11-05 05:03Z (pressing for it): at 9.4% of it, 5.3 days left, needs +55.8% a day from here
+- Goal: $1,000 by 2026-11-05 05:03Z (pressing for it): at 9.4% of it, 5.3 days left, needs +55.9% a day from here
 - Closed trades: 13, 2 wins
 - Fees paid: $7.85 (axiom $1.10, network $5.57, pool $1.04), plus $1.62 lost to slippage
 - New trades: on
-- Brain: subscription, 599 calls and 1 plan-limit hits in 48h
+- Brain: subscription, 598 calls and 1 plan-limit hits in 48h
 
 ## Scorecard (after fees)
 - 13 closed, 2 won (15%), net $-6.21
@@ -74,9 +74,15 @@ Updated 2026-10-30T20:57:59Z (paper trading, never real money)
   CA `3ApVr1xphYMpi9dn3rpqU4hwvpmCQDVwxET1rdCDpump`
 
 ## Last scan
-- 20:57Z: 1 coins, 1 with pairs, 0 passed the market filters, 0 researched
+- 21:12Z: 4 coins, 4 with pairs, 0 passed the market filters, 0 researched
 
 ## Coins it looked at, and why it passed
+- 21:05Z JOB (MIGRATED, $3,302,276 mcap, $5,097 5m vol): PASS at conviction 3, PASS: chasing. JOB is only 7.3% off its $3.56M high, 5m volume is $5k with sellers ahead 43 to 33, and the story isn't on the board right now (V1, V6).  
+  CA `9Pq7aLAbhDG2tTnS22cm6kuysZVcZpLFE368HWuypump`
+- 21:00Z xpad (FINAL_STRETCH, $28,448 mcap, $23,163 5m vol): PASS at conviction 3, PASS: six minutes old, 329 buys against 328 sells, and the 20 coins sharing its ticker mean I can't call it the original. That's a coin flip at bonding, not a setup (V1, V13).  
+  CA `EV116Y5Y6cYvcugmXwLVZPhbZus1NxV5WbArJxtUxxxx`
+- 20:58Z TUSK (MIGRATED, $44,966 mcap, $10,568 5m vol): PASS at conviction 2, PASS — 'Official Donald Tusk' is a 1-minute-old political-name coin with an 8.3% single bundle and 26 ticker copies. Farm, not a setup. (V3, V13)  
+  CA `8uBobWMhu6hRUn4jaA4kjcgWCjTxgHwHJtPgBePXpump`
 - 20:53Z HYPERCHAN (DIP, $881,359 mcap, $6,571 5m vol): REJECT, Dip with fading attention is a falling knife, not a dip (5m at 0.57x the hour's pace, under 0.6x)  
   CA `3ApVr1xphYMpi9dn3rpqU4hwvpmCQDVwxET1rdCDpump`
 - 20:52Z PILLY (DIP, $105,428 mcap, $22,180 5m vol): REJECT, Dip with fading attention is a falling knife, not a dip (5m at 0.18x the hour's pace, under 0.6x)  
@@ -91,12 +97,6 @@ Updated 2026-10-30T20:57:59Z (paper trading, never real money)
   CA `Gztz15EVRR9GyBVcVQy2aCpX5JhY5SsUtoW1G1M5qvK1`
 - 20:31Z Pumpfluencer (FINAL_STRETCH, $30,266 mcap, $38,156 5m vol): REJECT, Top 10 hold 26.9% ex-pool (>25%) (V13)  
   CA `6C1JdN6V7B4beZGxZxjhCGCncmWt22zD8i4Q4cq1pump`
-- 20:29Z Miso (FINAL_STRETCH, $20,767 mcap, $70,007 5m vol): PASS at conviction 3, PASS: 5 minutes old and only halfway up the bonding curve. That's sniping, not trading, and the story is a zoo tweet with no CA on it. Too new. (V1, V5, V6)  
-  CA `23Qv2Cu3akuvzAYap9gesnqgp88Ezd3MSVCx7jTcpump`
-- 20:26Z GATO (MIGRATED, $4,435,713 mcap, $2,374 5m vol): REJECT, Dev holds 3.3% (>1%) (V13, V17)  
-  CA `HsprHxBRgiVaQdRf3TnKNuZZtaX9JUSPgMFdAkk6pump`
-- 20:26Z POOLZ (FINAL_STRETCH, $31,757 mcap, $2,652 5m vol): PASS at conviction 3, PASS: $2.6k on the 5m, no X, no site, top 10 at 21%, and it's sitting 5% under its high. Nobody's telling this story. (V1, V6)  
-  CA `8iifkN8P7wvJB58XxrsERqY24wWP7TEWWwtee5Kxpump`
 
 ## What its skips did next (last 48h)
 A skip "ran" if the coin reached the first target (1.5x) from the skip price before a 20% drop, "dumped" if the drop came first. Sampled every 10 min, followed 6h.
@@ -107,7 +107,7 @@ A skip "ran" if the coin reached the first target (1.5x) from the skip price bef
     CA `FDwCosavNvMiFB812ajJp3gG7eZ9c4bpgcnY6fDQpump`
   - ran: ZERO up to 1.8x  
     CA `Ddwf94wedgCuMHAkwgti8A7sL2CxvBYJStJBj2cFpump`
-- too new / sniping: blocked 32, ran 6, dumped 26, flat 0, open 0 (saving losses: keep it)
+- too new / sniping: blocked 33, ran 7, dumped 26, flat 0, open 0 (saving losses: keep it)
   - ran: ZI up to 1.7x  
     CA `5q45EK4mRhuiuBmRYoaDs4m2xweaV7gn3zsFhsvcpump`
   - ran: BEAR up to 1.59x  
@@ -128,7 +128,7 @@ A skip "ran" if the coin reached the first target (1.5x) from the skip price bef
     CA `2orqEGSdkm5BMmhdM8TpKCpACk32a3Zaj3Lef7ceqsc6`
   - ran: Bear up to 2.66x  
     CA `Dv6gYYkTav8Pm36UwAywxNCccwSZV1VL1tjiSpDLpump`
-- falling knife (code): blocked 16, ran 2, dumped 11, flat 0, open 3 (saving losses: keep it)
+- falling knife (code): blocked 16, ran 2, dumped 12, flat 0, open 2 (saving losses: keep it)
   - ran: TYGR up to 1.58x  
     CA `5wCqCq6jbppuTocMeq6zd4UywAm64L1QNNxvEDAHpump`
   - ran: AgenC up to 1.88x  
@@ -173,11 +173,11 @@ Right now the trenches are trading pump.fun itself, plus cats. The meta-on-pump.
 ## Moving most in its scans, last 30 min (1h volume)
 - PILLY: $1,447,288 1h vol, $105,428 mcap, +136% 1h  
   CA `2WVthqDUqTfmKniBvXz2guGwCAJSNTHKGnebUeBvpump`
-- HC: $756,823 1h vol, $2,088 mcap, -96% 1h  
+- HC: $202,907 1h vol, $1,961 mcap, -99% 1h  
   CA `8GUoRZCSzjfoA47FRBJ4MuNjjpyn3pWZDTkRePWNpump`
-- PUMPBUCKS: $214,769 1h vol, $5,221 mcap, -88% 1h  
-  CA `GmnJeWjQGNd4q9HsWVYahGNeCn8CYkzghKB2HxSVpump`
-- Pilly: $201,567 1h vol, $4,935 mcap, +176% 1h  
+- Pilly: $148,146 1h vol, $5,603 mcap, -73% 1h  
   CA `BPzpLB8FYL7mwkeGgmZefaow6GeAZzN7oYPG42e7dgPH`
 - HYPERCHAN: $138,929 1h vol, $881,359 mcap, -25% 1h  
   CA `3ApVr1xphYMpi9dn3rpqU4hwvpmCQDVwxET1rdCDpump`
+- CREATOR: $126,316 1h vol, $9,424 mcap, +46% 1h  
+  CA `99VUptA9qKPNKMuPdX7MDHXChLWwbnzbNfWe8V3vpump`
