@@ -1,13 +1,13 @@
 # Trencher live report
 
-Updated 2026-10-30T09:36:01Z (paper trading, never real money)
+Updated 2026-10-30T09:51:06Z (paper trading, never real money)
 
-- Equity: $94.91 (-5.1% vs $100 start)
-- Goal: $1,000 by 2026-11-05 05:03Z (pressing for it): at 9.5% of it, 5.8 days left, needs +50% a day from here
+- Equity: $94.55 (-5.4% vs $100 start)
+- Goal: $1,000 by 2026-11-05 05:03Z (pressing for it): at 9.5% of it, 5.8 days left, needs +50.2% a day from here
 - Closed trades: 11, 2 wins
 - Fees paid: $6.71 (axiom $0.82, network $4.99, pool $0.77), plus $1.19 lost to slippage
 - New trades: on
-- Brain: subscription, 616 calls and 0 plan-limit hits in 48h
+- Brain: subscription, 617 calls and 0 plan-limit hits in 48h
 
 ## Scorecard (after fees)
 - 11 closed, 2 won (18%), net $-4.20
@@ -24,10 +24,10 @@ Updated 2026-10-30T09:36:01Z (paper trading, never real money)
   - time stop: 4, 0 won, net $-2.53, fees+slip $2.06, peak 1.37x → 0.81x
   - trailing stop: 2, 2 won, net $+4.21, fees+slip $2.04, peak 3.32x → 1.72x
   - other: 1, 0 won, net $-0.03, fees+slip $0.67, peak 1.4x → 0.99x
-- To $1,000: $905.09 to go; at $-0.38 a trade this pace doesn't get there
+- To $1,000: $905.45 to go; at $-0.38 a trade this pace doesn't get there
 
 ## Open positions
-- HYPERCHAN (MIGRATED): cost $10.0, 0.95x, fees $0.39  
+- HYPERCHAN (MIGRATED): cost $10.0, 0.91x, fees $0.39  
   CA `3ApVr1xphYMpi9dn3rpqU4hwvpmCQDVwxET1rdCDpump`
 
 ## Recent trades
@@ -75,9 +75,17 @@ Updated 2026-10-30T09:36:01Z (paper trading, never real money)
   CA `ANVLA6eKiAq4nstD2Sg3SZhfVkSEwfnGccn12UQWpump`
 
 ## Last scan
-- 09:35Z: 1 coins, 1 with pairs, 0 passed the market filters, 0 researched
+- 09:50Z: 1 coins, 1 with pairs, 0 passed the market filters, 0 researched
 
 ## Coins it looked at, and why it passed
+- 09:49Z CZ (MIGRATED, $33,038 mcap, $2,550 5m vol): REJECT, RugCheck danger: Creator history of rugged tokens  
+  CA `DZPEJunsXpwprRQffkMi4q23ZtsLhtLujHCSztyx786z`
+- 09:36Z CRIME (MIGRATED, $42,736 mcap, $2,051 5m vol): REJECT, RugCheck danger: Single holder ownership 41.18%  
+  CA `BN4Z5NtntHhu6p3atEqkeAVi8Bn9Ri2QTv8FD7iupump`
+- 09:36Z CBUCKS (MIGRATED, $986,683 mcap, $2,321 5m vol): REJECT, Top 10 hold 27.1% ex-pool (>25%) (V13)  
+  CA `DtcicPCKTKeAh7TDEzTym3hXeoHAoMiBdYJhMYxZpump`
+- 09:36Z toeken (FINAL_STRETCH, $20,162 mcap, $4,627 5m vol): REJECT, Top 10 hold 27.0% ex-pool (>25%) (V13)  
+  CA `DGCyfSZzLCnKWkqQML1BbD5p1fcEhKUU5YEcxqhvpump`
 - 09:26Z MONEKO (FINAL_STRETCH, $21,876 mcap, $3,677 5m vol): REJECT, Top 10 hold 26.9% ex-pool (>25%) (V13)  
   CA `2BqhMVMby7i67xoZEBoSyeXTY1wdhVyuhs7vMStspump`
 - 09:24Z CTO (FINAL_STRETCH, $24,674 mcap, $37,328 5m vol): PASS at conviction 3, PASS: it's 3 minutes old and runs on a single CZ tweet, with two bigger CTO tickers already out there. That's a sniper's table, not mine. (V1, V5, V6)  
@@ -90,18 +98,10 @@ Updated 2026-10-30T09:36:01Z (paper trading, never real money)
   CA `HsprHxBRgiVaQdRf3TnKNuZZtaX9JUSPgMFdAkk6pump`
 - 09:07Z TraderTraitor (DIP, $130,398 mcap, $3,685 5m vol): REJECT, RugCheck danger: Symbol Mismatch Token: "TraderTraitor", File: "TraderTrai"  
   CA `3XLTWYyHxpAdbP1fjfTz9TBZp9Dhq4A6KWNarHMkGHQb`
-- 09:07Z jeff (MIGRATED, $1,970,434 mcap, $4,904 5m vol): REJECT, Top 10 hold 38.6% ex-pool (>25%) (V13)  
-  CA `HAsTKXYvv65zM7J6Cu5o5PcZsiKMQYo5oz4WPjgqwP6k`
-- 09:07Z Stonka (DIP, $46,035 mcap, $5,995 5m vol): REJECT, Top 10 hold 30.3% ex-pool (>25%) (V13)  
-  CA `3UrbFtErj4FYspTupgAfKqztrMYNVQA2GocpT97Q3ray`
-- 09:07Z HYPERCHAN (MIGRATED, $1,971,639 mcap, $6,034 5m vol): BUY at conviction 5, BUY, probe 5. HYPERCHAN is the clean leader of a crowded Hyperliquid ticker, but 5m volume is $6k and fading, and the prior high is only 1.16x away, so this is a probe and not a 7 (V1, V6).  
-  CA `3ApVr1xphYMpi9dn3rpqU4hwvpmCQDVwxET1rdCDpump`
-- 09:06Z Foxii (DIP, $701,074 mcap, $9,101 5m vol): PASS at conviction 3, PASS — Foxii is 61% off its peak, 5m volume is 0.63x the hourly average (gate 0.7x), and it's sitting on the hourly low with no higher low printed. Falling knife until it bases. (V1, V6)  
-  CA `J3ReuwckNtcJP1Zhn7wVbfXhTDNTkHxozQWWAwxWpump`
 
 ## What its skips did next (last 48h)
 A skip "ran" if the coin reached the first target (1.5x) from the skip price before a 20% drop, "dumped" if the drop came first. Sampled every 10 min, followed 6h.
-- top 10 over 25%: blocked 20, ran 3, dumped 13, flat 0, open 4 (saving losses: keep it)
+- top 10 over 25%: blocked 21, ran 3, dumped 13, flat 0, open 5 (saving losses: keep it)
   - ran: HYPERGAMY up to 2.05x  
     CA `CUyNDWGdLPXZ3Gyj1H6TBh5pACgu5nY9WNkSqfMApump`
   - ran: ZERO up to 1.8x  
@@ -118,7 +118,7 @@ A skip "ran" if the coin reached the first target (1.5x) from the skip price bef
 - near the high / chasing: blocked 13, ran 1, dumped 8, flat 0, open 4 (saving losses: keep it)
   - ran: OREN up to 1.58x  
     CA `57vAaMsnAJXkvULtAz7fsi6gRn3bHRJFJsJV1okNpump`
-- RugCheck danger: blocked 9, ran 3, dumped 4, flat 1, open 1 (mixed)
+- RugCheck danger: blocked 11, ran 3, dumped 4, flat 1, open 3 (mixed)
   - ran: HYPEINU up to 1.57x  
     CA `6eccVGkbi8cvAYBGzfDmUwFYrMj8eGZF2xyZqZLkpump`
   - ran: ETF up to 1.87x  
@@ -139,14 +139,14 @@ A skip "ran" if the coin reached the first target (1.5x) from the skip price bef
 - hack story (owner rule): blocked 4, ran 0, dumped 1, flat 0, open 3 (too few played out to judge)
 
 ## Rules it changed from results and skips
-- 10-30 03:38Z tightened: Time stop at 45 min with no extensions (FLOAT ran past the time stop to 158 min and lost 24.5%. Time-stopped trades lost 13–24% each, and holding longer didn't help.)
-- 10-30 06:41Z added: The target has to clear initials (pick fix that replaces 'take initials at the prior high if it's below 1.5x') (The owner and code fix initials at 1.5x, so I can't set a lower one. SWAN peaked at exactly its named 1.40x and closed -0.7%. The fix is to skip setups whose obvious resistance sits under 1.5x. One sample, so it allows a probe.)
-- 10-30 06:41Z tightened: DIP attention gate: ≥1x hourly volume and rising, no 0.8-1x probe band (DIP is 0/3, -$3.07, expectancy -$1.02. 'Something' entered at 0.86x hourly volume and was time-stopped at -15.4%. HEXN #2 had volume under the hourly pace and lost 27%. HEXN #1 was a first-bounce entry and lost 36%. Every DIP loss had sub-1x or unconfirmed attention. Falling-knife skips: 0 ran, 9 dumped across code and brain. The code param is already at its 0.8 max, so the brain enforces 1x.)
-- 10-30 06:41Z added: DIP on probation: probe size only until a DIP wins (0 wins in 3. Avg loss -$1.02 is the worst of any setup. Small sample, so I'm capping size instead of banning the setup.)
-- 10-30 06:41Z tightened: DIP higher-low rule: pass if the higher low is >20% below entry (replaces 'stop just under the higher low') (The stop is owner/code-fixed at 20%, so I can't set a custom stop. I can make sure the structure invalidates inside it. HEXN #2's -13% stop under the higher low was a custom stop, and the owner's rules drop those.)
-- 10-30 06:41Z dropped: Take initials at 1.5x / at the prior high if lower (The owner and code enforce initials at 1.5x. Learned rules may not set the multiple. Replaced with the target-clears-initials pick rule.)
-- 10-30 06:41Z dropped: After initials the runner rides a 35% trail (The owner and code enforce the 35% trail. Learned rules may not set it.)
-- 10-30 06:41Z dropped: Move the stop to break-even at 1.3x (as a learned rule) (Already in the soul's management rules and the code path. It worked: SWAN closed -0.7% from a 1.40x peak. I dropped it only to free a rule slot for DIP probation.)
+- 10-30 09:47Z loosened: MIGRATED entry distance from the local high: 20% → 10% (This is the owner's override and I follow it. My data disagrees: near-high skips went 1 ran / 8 dumped (4 still open), and SI (-38%) and CATCULUS (-59%) were both near-high entries. To keep the damage small, the 10–20% band is limited to the meta's flow leader with 5m volume at or above its hourly pace. If shallow entries keep losing, I'll report that next review.)
+- 10-30 09:47Z loosened: DIP attention gate: 1x hourly and rising → at least 0.7x, no 'rising' needed (Owner override. Both falling-knife skip buckets dumped (9 of 9 that played out), so the line stays above the old code value of 0.6, and the narrative requirement stays.)
+- 10-30 09:47Z dropped: DIP probation (probe size only until a DIP closes green) (Owner ended it. My DIP record is 0 for 3, -$3.07, -$1.02 per trade. The higher-low and narrative gates stay, and those are what failed on Something and HEXN.)
+- 10-30 09:47Z added: Conviction scale: hard lines passed + live flow + named target of 1.5x or more = 7, with explicit ±1 adjustments (Owner said clean setups were being under-rated. The scale keeps honesty by naming the deductions: RugCheck danger (3 ran / 4 dumped, so -1 and not a cap), unverified community, and a weak or LARP story (HEXN lost twice).)
+- 10-30 09:47Z tightened: Target must clear initials: the named level has to be at least 1.5x, and shallow pullbacks need a breakout target above the high (Code now sets initials at 1.5x. SWAN topped at exactly its named 1.40x. With the new 10% band, a plain retest of the prior high is only ~1.11x and can't pay the exit, so the target has to sit beyond the high.)
+- 10-30 09:47Z dropped: SWAN refinement: sell part at a named level below the initials multiple (It amounted to a different initials level, and code owns the exits now (initials 1.5x, stop 20%, trail 35%). The case is handled by the target rule instead.)
+- 10-30 09:47Z dropped: All fee, friction and minimum-position-size rules (Code now checks fees and size before every entry (the target must pay at least 3x the round trip, and the round trip can't exceed 20% of the position).)
+- 10-30 09:47Z added: The $1k deadline never sets size or lowers the bar (I'm saying this plainly: going from ~$96 to $1k by Nov 5 is a ~10x in 6 days. Over 11 trades my expectancy is -$0.38/trade (2 wins). Bigger size on negative expectancy just loses faster. Clean setups get a 7, but I keep max_total_risk_pct at 35 instead of raising it, until the looser entries show a positive expectancy (V6, V8).)
 
 ## Recent lessons
 - [2026-10-28 22:50] Expected: CATCULUS at $460k was the flow leader ($59k 5m volume, 913/363 buys/sells, top 10 at 3.6%), so a momentum entry near the high should either keep running or give a clean -30% exit. What happened: it peaked at 1.24x, the bundle/insiders dumped, and it gapped through the -30% stop to -59% in 42 minutes. Clean top-10 numbers don't rule out bundles spread across many small wallets (V3, V5), and $0.50 in fees on a $2.96 position was a 17% loss before the coin even moved. Rule: no MIGRATED momentum buys within ~20% of the local high unless bundle data is verified. Wait for the V1 0.618 fib or point-of-control retest instead, and skip any position so small that fees are over 5% of cost.
@@ -164,13 +164,13 @@ A skip "ran" if the coin reached the first target (1.5x) from the skip price bef
 Meta from the movers: (1) fresh sub-2h pump.fun launches are dying, fading (SAFU -98.6%, DUOTIDE, GhostGuy, MEMELIQUID ~0 5m flow); (2) a new "crime" meta is just starting (crime dog 12 min old, two CRIME tickers already in a vamp war, V1), rising but unproven; (3) hours-old migrated mid-caps are holding buyers, rising: HEXN ($580k, 16h, $12.4k 5m, 88% buys, -9% 1h) and HYPERCHAN ($2M, Hyperliquid theme with HYPE trending, 70% buys, flat); Foxii -34% at 53% buys looks like a knife; (4) Stonka (tokenized-stock joke) cooled to $46k with $6k 5m, under the bar. Setups: HEXN as a MIGRATED/DIP buy, the best one now; HYPERCHAN as a MIGRATED buy only once 5m volume is back over $10k; Stonka watchlist only, needs volume back above $10k.
 
 ## Moving most in its scans, last 30 min (1h volume)
-- HEXN: $182,109 1h vol, $579,534 mcap, -9% 1h  
-  CA `ANVLA6eKiAq4nstD2Sg3SZhfVkSEwfnGccn12UQWpump`
-- Foxii: $173,962 1h vol, $701,074 mcap, -34% 1h  
-  CA `J3ReuwckNtcJP1Zhn7wVbfXhTDNTkHxozQWWAwxWpump`
-- DUOTIDE: $160,188 1h vol, $1,989 mcap, -95% 1h  
+- DUOTIDE: $144,429 1h vol, $1,949 mcap, -98% 1h  
   CA `AtKvRVDF738YA925jmxNeh4iV2qCVBBJeMxQNyrupump`
-- Stonka: $105,777 1h vol, $46,035 mcap, -23% 1h  
-  CA `3UrbFtErj4FYspTupgAfKqztrMYNVQA2GocpT97Q3ray`
-- HYPERCHAN: $99,788 1h vol, $1,971,639 mcap, +2% 1h  
-  CA `3ApVr1xphYMpi9dn3rpqU4hwvpmCQDVwxET1rdCDpump`
+- toeken: $98,360 1h vol, $20,162 mcap, +511% 1h  
+  CA `DGCyfSZzLCnKWkqQML1BbD5p1fcEhKUU5YEcxqhvpump`
+- CZ: $69,946 1h vol, $8,026 mcap, +145% 1h  
+  CA `5Vc78jBX9vcNEMNsz9Vgzev8gx2yhbsoUNBdMEbFpump`
+- MONEKO: $58,956 1h vol, $21,876 mcap, +13% 1h  
+  CA `2BqhMVMby7i67xoZEBoSyeXTY1wdhVyuhs7vMStspump`
+- CRIME: $56,681 1h vol, $42,736 mcap, -1% 1h  
+  CA `BN4Z5NtntHhu6p3atEqkeAVi8Bn9Ri2QTv8FD7iupump`
