@@ -91,7 +91,7 @@ def apply_steering(cfg: Config, steer: dict) -> dict:
                 applied["goal"] = {"equity_usd": target, "deadline": deadline}
 
     terms = steer.get("avoid_terms")
-    cfg.avoid_terms = [str(t).strip()[:40] for t in terms if str(t).strip()][:30] if isinstance(terms, list) else []
+    cfg.avoid_terms = [str(t).strip()[:60] for t in terms if str(t).strip()][:30] if isinstance(terms, list) else []
     if cfg.avoid_terms:
         applied["avoid_terms"] = cfg.avoid_terms
 

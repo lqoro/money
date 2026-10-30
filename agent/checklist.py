@@ -156,8 +156,11 @@ def hack_story(snap: dict, cfg: Config) -> str | None:
     projects and coins riding a hack headline tend to go down."""
     text = f"{snap.get('name') or ''} {snap.get('symbol') or ''}".lower()
     for term in cfg.avoid_terms:
-        if term and str(term).lower() in text:
-            return str(term)
+        term = str(term).strip()
+        # A contract address matches that coin only; a word or ticker matches it whole
+        # (so "cop" doesn't block "Copper").
+        if term and (term == snap.get("address") or re.search(rf"\b{re.escape(term.lower())}\b", text)):
+            return snap.get("symbol") or term if term == snap.get("address") else term
     m = re.search(cfg.hack_story_pattern, text) if cfg.hack_story_pattern else None
     return m.group(0) if m else None
 

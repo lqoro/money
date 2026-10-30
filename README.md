@@ -178,7 +178,7 @@ How it talks to Duet (`agent/bridge.py`): every 15 minutes Trencher pulls the
   `max_round_trip_cost_pct`), clamped to their bounds. Removing one puts it back.
   An owner-set initials multiple, stop or trail also overrides the brain's exit
   plan on every trade.
-- `avoid_terms`: extra words or tickers to skip, on top of the coded hack-story
+- `avoid_terms`: extra contract addresses, or whole words or tickers, to skip on top of the coded hack-story
   rule (names or tickers with hack, exploit, drain, zero day, breach, stolen or
   heist are never researched or bought)
 - `owner_note`: a short note the brain reads before every decision and every

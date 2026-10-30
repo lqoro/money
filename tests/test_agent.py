@@ -985,6 +985,11 @@ def test_hack_story_matching_and_owner_terms(cfg):
     assert hack_story({"name": "cop", "symbol": "cop"}, cfg) is None
     apply_steering(cfg, {"avoid_terms": ["cop", "  "]})
     assert cfg.avoid_terms == ["cop"] and hack_story({"name": "cop", "symbol": "cop"}, cfg) == "cop"
+    assert hack_story({"name": "Copper", "symbol": "COPR"}, cfg) is None  # whole words only
+    ca = "GE3qKrtuVodNTmGAUqPyEvwc1kD6kAYVLyskQWkqpump"
+    apply_steering(cfg, {"avoid_terms": [ca]})
+    assert hack_story({"name": "cop", "symbol": "cop", "address": ca}, cfg) == "cop"
+    assert hack_story({"name": "cop", "symbol": "cop", "address": "Other111"}, cfg) is None
     c = run_checklist(snap(name="Polymarket Hack", symbol="PMHACK"), report(), [], cfg, SOL)
     assert not c.passed and "Hack story" in c.fails[0]
     apply_steering(cfg, {})
