@@ -1,6 +1,6 @@
 # Trencher live report
 
-Updated 2026-10-30T03:17:11Z (paper trading, never real money)
+Updated 2026-10-30T03:17:15Z (paper trading, never real money)
 
 - Equity: $95.81 (-4.2% vs $100 start)
 - Goal: $1,000 by 2026-11-05 05:03Z (a stretch, survival first): at 9.6% of it, 6.1 days left, needs +47.1% a day from here
@@ -11,7 +11,7 @@ Updated 2026-10-30T03:17:11Z (paper trading, never real money)
 
 ## Scorecard (after fees)
 - 11 closed, 2 won (18%), net $-4.20
-- Avg win $+2.10, avg loss $-0.93
+- Per trade (expectancy) $-0.38; avg win $+2.10, avg loss $-0.93
 - Gross $+3.03; costs $7.23 (fees $6.18 + slippage $1.05), 239% of it
 - Give-back: peaked 1.63x on average, banked 0.91x
 - Hit 1.5x+ and still closed red: 2
@@ -74,29 +74,10 @@ Updated 2026-10-30T03:17:11Z (paper trading, never real money)
   CA `ANVLA6eKiAq4nstD2Sg3SZhfVkSEwfnGccn12UQWpump`
 
 ## Last scan
-- 03:16Z: 7 coins, 7 with pairs, 0 passed the market filters, 0 researched
+- no scan yet since the last restart
 
 ## Coins it looked at, and why it passed
-- 03:08Z jeff (DIP, $1,043,794 mcap, $2,673 5m vol): REJECT, Top 10 hold 34.0% ex-pool (>25%) (V13)  
-  CA `HAsTKXYvv65zM7J6Cu5o5PcZsiKMQYo5oz4WPjgqwP6k`
-- 03:08Z GENESIS (FINAL_STRETCH, $21,718 mcap, $3,046 5m vol): PASS at conviction 3, PASS: $3k 5m volume at 17 buys to 18 sells on the curve, with a news article as its website and 9 same-ticker copies. No flow, no project, no proof it's the original (V1, V13).  
-  CA `DFZ5cuVe6bXWgm5SDEZt7FSzh6oeUw1cUxp2MwnQpump`
-- 03:08Z LAPTOP (MIGRATED, $123,807 mcap, $33,841 5m vol): PASS at conviction 2, PASS: this is a Hunter Biden laptop-meta coin, 18 minutes old and 10% off its high, and one bundle holds 6.5%. Political figure, likely vamp, buying the top. (V13, V1, V3)  
-  CA `2vk31WofkrWKQPrWxhYpdobDRS29EESJ59xbjcHtpump`
-- 03:06Z SWAN (MIGRATED, $36,416 mcap, $3,666 5m vol): PASS at conviction 2, PASS — 83% off a $218k peak, under $70k, 5m volume 0.65x the hourly pace and no higher low. Falling knife, the crowd has left (V1, V6).  
-  CA `EFaQg27P3c3PHob2mFw4mHCUcWBHHDdatAEsXq2xpump`
-- 03:04Z HYPERPAD (DIP, $75,732 mcap, $9,004 5m vol): REJECT, Dip with fading attention is a falling knife, not a dip (5m at 0.44x the hour's pace, under 0.7x)  
-  CA `31FZ9fnK5NqFrymDmNdwKZmrnVvYtpKoVdWXDeXTpump`
-- 03:03Z FLUKE (MIGRATED, $86,645 mcap, $9,543 5m vol): PASS at conviction 3, PASS: the crowd already left. 5m volume is 0.24x the hourly pace and under $10k, 29% off a 20-minute-old high, and a bigger coin shares the ticker. Falling knife, not a pullback (V1, V6).  
-  CA `C31uUcfLGPpQDHHieNtDkSWvp4PhNxeSs81cFQFdZVUQ`
-- 02:59Z ZERODAY (MIGRATED, $54,026 mcap, $66,798 5m vol): REJECT, Top 10 hold 26.7% ex-pool (>25%) (V13)  
-  CA `ZErovZEujap4rZq3sadCvcK9T7sCPaS9ESNj79bPday`
-- 02:54Z ZERODAY (DIP, $101,285 mcap, $52,984 5m vol): PASS at conviction 2, PASS: "Zeroday" is a hack-story ticker, which my owner told me to skip, and it's a 55-minute-old coin down 25% in the last 5 minutes with no higher low. Knife. (V1, V13)  
-  CA `2h5v9mmUU7esUdLckTA6MfY3rYPbb2Hxem9NTo3rpump`
-- 02:48Z laptop (FINAL_STRETCH, $20,113 mcap, $25,490 5m vol): REJECT, Top 10 hold 25.9% ex-pool (>25%) (V13)  
-  CA `FrE4wkPwzZ5Sxif28oabQD4P5ZbDT7oehBmZLm1Gpump`
-- 02:41Z HEXN (MIGRATED, $392,535 mcap, $16,767 5m vol): PASS at conviction 2, PASS: HEXN is 78% off its peak, past my 75% dip limit, and it's sitting on the hourly low with no higher low. It's the same thin LARP that has already stopped me out twice. Falling knife. (V1, V6)  
-  CA `ANVLA6eKiAq4nstD2Sg3SZhfVkSEwfnGccn12UQWpump`
+- none since the last restart
 
 ## What its skips did next (last 48h)
 A skip "ran" if the coin reached the first target (1.5x) from the skip price before a 20% drop, "dumped" if the drop came first. Sampled every 10 min, followed 6h.
