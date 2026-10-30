@@ -1,13 +1,13 @@
 # Trencher live report
 
-Updated 2026-10-30T18:41:54Z (paper trading, never real money)
+Updated 2026-10-30T18:57:07Z (paper trading, never real money)
 
 - Equity: $93.79 (-6.2% vs $100 start)
-- Goal: $1,000 by 2026-11-05 05:03Z (pressing for it): at 9.4% of it, 5.4 days left, needs +54.6% a day from here
+- Goal: $1,000 by 2026-11-05 05:03Z (pressing for it): at 9.4% of it, 5.4 days left, needs +54.7% a day from here
 - Closed trades: 13, 2 wins
 - Fees paid: $7.85 (axiom $1.10, network $5.57, pool $1.04), plus $1.62 lost to slippage
 - New trades: on
-- Brain: subscription, 621 calls and 0 plan-limit hits in 48h
+- Brain: subscription, 619 calls and 0 plan-limit hits in 48h
 
 ## Scorecard (after fees)
 - 13 closed, 2 won (15%), net $-6.21
@@ -74,9 +74,19 @@ Updated 2026-10-30T18:41:54Z (paper trading, never real money)
   CA `3ApVr1xphYMpi9dn3rpqU4hwvpmCQDVwxET1rdCDpump`
 
 ## Last scan
-- 18:41Z: 5 coins, 5 with pairs, 1 passed the market filters, 1 researched
+- 18:56Z: 2 coins, 2 with pairs, 0 passed the market filters, 0 researched
 
 ## Coins it looked at, and why it passed
+- 18:52Z HYPE (MIGRATED, $63,869 mcap, $15,774 5m vol): REJECT, Dev holds 1.0% (>1%) (V13, V17)  
+  CA `Dn9ucMvQp4ut2yz46GKfC5cPH3cv3uJTnpAUjN6Zpump`
+- 18:51Z ███ (MIGRATED, $517,957 mcap, $2,817 5m vol): REJECT, Top 10 hold 25.7% ex-pool (>25%) (V13)  
+  CA `EwX2T1p2PmgTsSq2Bi6XtQYxPC5krR4P2fxPfN4Qpump`
+- 18:47Z BTC (MIGRATED, $163,724 mcap, $27,283 5m vol): REJECT, Top 10 hold 27.4% ex-pool (>25%) (V13)  
+  CA `ra4qZ68oPFuEhHR5hMRpUsGH5riMbRBuMyW68r3pump`
+- 18:46Z HACKINU (MIGRATED, $46,172 mcap, $1,192 5m vol): REJECT, Hack story ("hack" in the name or ticker): these tend to go down, owner rule  
+  CA `HD2qqwAeLkyXnboo5cSGSdGw4oHCbvNEvWsgDSgWpump`
+- 18:43Z GATO (MIGRATED, $4,757,966 mcap, $3,304 5m vol): REJECT, Dev holds 3.3% (>1%) (V13, V17)  
+  CA `HsprHxBRgiVaQdRf3TnKNuZZtaX9JUSPgMFdAkk6pump`
 - 18:41Z PODCATWALK (MIGRATED, $577,136 mcap, $12,539 5m vol): REJECT, Bundles: 10 linked wallet cluster(s) hold 49.4% of supply (>20%) (V17)  
   CA `52MBEXmhVrZUJvMEbRpKRhehFUL8DnnV5LzYJ2G1pump`
 - 18:40Z TRK (DIP, $39,786 mcap, $23,967 5m vol): REJECT, Top 10 hold 29.0% ex-pool (>25%) (V13)  
@@ -87,19 +97,16 @@ Updated 2026-10-30T18:41:54Z (paper trading, never real money)
   CA `npz2FhoufQ7pKqhGpaipYWacrAkidyW2yDpVWSvpump`
 - 18:30Z HYPERCHAN (MIGRATED, $1,582,171 mcap, $4,016 5m vol): PASS at conviction 3, PASS: $4k 5m volume at 0.51x hourly pace on a dead HYPE meta. Clean holders don't fix missing flow. (V1, V6)  
   CA `3ApVr1xphYMpi9dn3rpqU4hwvpmCQDVwxET1rdCDpump`
-- 18:26Z HYPER (FINAL_STRETCH, $23,729 mcap, $10,206 5m vol): PASS at conviction 3, PASS: a HYPER copy, with 3 bigger tokens on the same ticker, at the top of a +98% 5m candle on a meta the radar calls dead. Vamp, and I'd be chasing. (V1, V2)  
-  CA `HrikLwEACkBhp12RnUYE3eAbBgh5kTAKKPTxVs1Nhype`
-- 18:17Z TYGR (DIP, $187,919 mcap, $177,091 5m vol): PASS at conviction 3, PASS: 20 minutes old and dumping. It ran $39k to $400k and is now at $188k, down 18% on the 5-minute with no higher low printed, and one linked cluster holds 7.5%. Falling knife. (V1, V3)  
-  CA `5wCqCq6jbppuTocMeq6zd4UywAm64L1QNNxvEDAHpump`
-- 18:14Z FSD (DIP, $41,441 mcap, $11,155 5m vol): REJECT, Dip with fading attention is a falling knife, not a dip (5m at 0.36x the hour's pace, under 0.6x)  
-  CA `8bbAcnTtgUTCCXGZbJ7DBKSvW8Z2k9bFj9NfGgEapump`
-- 18:01Z SPACEINU (DIP, $173,881 mcap, $14,368 5m vol): PASS at conviction 3, PASS: it's the second SPACEINU, 5m volume is 0.66x its hourly pace, and the dip has no higher low. Blocker: vamp, not the leader (V1, V2).  
-  CA `5izHfawy4Rg1Vjm27F3ieHzmkEtWWyVNenhFFDPvpump`
-- 17:57Z SPACEINU (MIGRATED, $557,209 mcap, $22,183 5m vol): PASS at conviction 4, PASS: chasing, and the flow is below pace. It's 9.9% off a high set 12 minutes ago, 5m volume is only 0.43x its hourly pace, and the coin is under an hour old. Watchlist it for a real pullback (V1, V6).  
-  CA `2aZp4sP2bPdMUVkTVeRmzBvJvCaeTpgYXNBXNuEopump`
 
 ## What its skips did next (last 48h)
 A skip "ran" if the coin reached the first target (1.5x) from the skip price before a 20% drop, "dumped" if the drop came first. Sampled every 10 min, followed 6h.
+- top 10 over 25%: blocked 31, ran 5, dumped 22, flat 0, open 4 (saving losses: keep it)
+  - ran: HYPERGAMY up to 2.05x  
+    CA `CUyNDWGdLPXZ3Gyj1H6TBh5pACgu5nY9WNkSqfMApump`
+  - ran: Catori up to 1.52x  
+    CA `FDwCosavNvMiFB812ajJp3gG7eZ9c4bpgcnY6fDQpump`
+  - ran: ZERO up to 1.8x  
+    CA `Ddwf94wedgCuMHAkwgti8A7sL2CxvBYJStJBj2cFpump`
 - too new / sniping: blocked 31, ran 8, dumped 23, flat 0, open 0 (saving losses: keep it)
   - ran: ZI up to 1.7x  
     CA `5q45EK4mRhuiuBmRYoaDs4m2xweaV7gn3zsFhsvcpump`
@@ -107,13 +114,6 @@ A skip "ran" if the coin reached the first target (1.5x) from the skip price bef
     CA `6i4ebPt8dpGchB2A1ELpTz3B72dy5DkzNpFMNtUSpump`
   - ran: HyPepe up to 1.5x  
     CA `G8TdzgpUQXQAxJvarNKPXRGv2kh9CsJDK7dCC7Xupump`
-- top 10 over 25%: blocked 30, ran 5, dumped 22, flat 0, open 3 (saving losses: keep it)
-  - ran: HYPERGAMY up to 2.05x  
-    CA `CUyNDWGdLPXZ3Gyj1H6TBh5pACgu5nY9WNkSqfMApump`
-  - ran: Catori up to 1.52x  
-    CA `FDwCosavNvMiFB812ajJp3gG7eZ9c4bpgcnY6fDQpump`
-  - ran: ZERO up to 1.8x  
-    CA `Ddwf94wedgCuMHAkwgti8A7sL2CxvBYJStJBj2cFpump`
 - near the high / chasing: blocked 19, ran 3, dumped 13, flat 2, open 1 (saving losses: keep it)
   - ran: OREN up to 1.58x  
     CA `57vAaMsnAJXkvULtAz7fsi6gRn3bHRJFJsJV1okNpump`
@@ -128,10 +128,10 @@ A skip "ran" if the coin reached the first target (1.5x) from the skip price bef
     CA `2orqEGSdkm5BMmhdM8TpKCpACk32a3Zaj3Lef7ceqsc6`
   - ran: Bear up to 2.66x  
     CA `Dv6gYYkTav8Pm36UwAywxNCccwSZV1VL1tjiSpDLpump`
-- falling knife / no higher low: blocked 12, ran 0, dumped 9, flat 1, open 2 (saving losses: keep it)
-- dev share over 1%: blocked 12, ran 1, dumped 9, flat 0, open 2 (saving losses: keep it)
+- dev share over 1%: blocked 13, ran 1, dumped 9, flat 0, open 3 (saving losses: keep it)
   - ran: Jason up to 1.54x  
     CA `3qjBR3LfzEAKVS6QXuR2QZ1RFUsXzATWvmjbGB5Dpump`
+- falling knife / no higher low: blocked 12, ran 0, dumped 9, flat 1, open 2 (saving losses: keep it)
 - falling knife (code): blocked 11, ran 0, dumped 10, flat 0, open 1 (saving losses: keep it)
 - crowd leaving / fading volume: blocked 8, ran 2, dumped 5, flat 0, open 1 (saving losses: keep it)
   - ran: STABLEPAD up to 2.13x  
@@ -169,13 +169,13 @@ A skip "ran" if the coin reached the first target (1.5x) from the skip price bef
 Meta: pump.fun coins under 2h old that already bonded, mostly animal tickers (TYGR, Space Inu, Podcatwalk), with a space sub-theme (two SPACEINU contracts; 2aZp is the original, 5izH looks like the vamp, V1/V13). Older leaders are cooling: Space Inu 5m vol is 0.42x its hourly pace, Podcatwalk 0.18x. AI-agent coins are dead (hyper, HYPER, HYPURAGENT, FLYWHEEL -90%+ or zero volume). $LAPTOP is a politician's coin, avoid (V13). Research: 1) TYGR MIGRATED ($188k cap, $177k 5m vol, about 2x hourly pace, 60% buys), only on a 10%+ pullback from the local high, no buying the vertical candle (V1). 2) FSD MIGRATED ($41k cap, $11k 5m vol, Elon/Tesla idea), needs volume to hold, now 0.36x hourly pace. 3) Hedge FINAL_STRETCH ($25k cap, $21k 5m vol), looks like a farm until bundle checks clear it. PASS Space Inu 2aZp (0.42x volume misses the 0.7x bar), PASS Podcatwalk (0.18x volume), PASS Space Inu 5izH (vamp). To the owner: clean setups that clear the hard lines get rated 7-9 and pressed, but the $1k deadline doesn't raise a score or move a stop; a setup has to earn its rating.
 
 ## Moving most in its scans, last 30 min (1h volume)
-- TYGR: $1,049,040 1h vol, $187,919 mcap, +323% 1h  
-  CA `5wCqCq6jbppuTocMeq6zd4UywAm64L1QNNxvEDAHpump`
+- SPACEINU: $565,898 1h vol, $1,933 mcap, -100% 1h  
+  CA `2aZp4sP2bPdMUVkTVeRmzBvJvCaeTpgYXNBXNuEopump`
 - AgenC: $460,932 1h vol, $267,402 mcap, +417% 1h  
   CA `DDG8rjV3TViCqKRQED2QZq4MEaE1uqXgEiosBNpapump`
 - PODCATWALK: $443,051 1h vol, $577,136 mcap, +26% 1h  
   CA `52MBEXmhVrZUJvMEbRpKRhehFUL8DnnV5LzYJ2G1pump`
-- $GOTUS: $418,052 1h vol, $1,865 mcap, -96% 1h  
-  CA `EgHf3XonHq6QCUoSZ1tFV5bQUG4Ez7FcvzMbdTF1pump`
-- FSD: $372,747 1h vol, $41,441 mcap, +6% 1h  
-  CA `8bbAcnTtgUTCCXGZbJ7DBKSvW8Z2k9bFj9NfGgEapump`
+- HYPE: $260,508 1h vol, $63,869 mcap, +12% 1h  
+  CA `Dn9ucMvQp4ut2yz46GKfC5cPH3cv3uJTnpAUjN6Zpump`
+- TRK: $165,265 1h vol, $39,786 mcap, -15% 1h  
+  CA `E8c9gvuE7gW4R8AVcaTCbbTG1zJGdUR9KGtS94eXBAGS`
