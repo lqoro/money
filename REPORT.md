@@ -1,9 +1,9 @@
 # Trencher live report
 
-Updated 2026-10-30T17:41:24Z (paper trading, never real money)
+Updated 2026-10-30T17:56:30Z (paper trading, never real money)
 
 - Equity: $93.79 (-6.2% vs $100 start)
-- Goal: $1,000 by 2026-11-05 05:03Z (pressing for it): at 9.4% of it, 5.5 days left, needs +54.1% a day from here
+- Goal: $1,000 by 2026-11-05 05:03Z (pressing for it): at 9.4% of it, 5.5 days left, needs +54.2% a day from here
 - Closed trades: 13, 2 wins
 - Fees paid: $7.85 (axiom $1.10, network $5.57, pool $1.04), plus $1.62 lost to slippage
 - New trades: on
@@ -74,47 +74,47 @@ Updated 2026-10-30T17:41:24Z (paper trading, never real money)
   CA `3ApVr1xphYMpi9dn3rpqU4hwvpmCQDVwxET1rdCDpump`
 
 ## Last scan
-- 17:40Z: 12 coins, 12 with pairs, 0 passed the market filters, 0 researched
+- 17:55Z: 6 coins, 6 with pairs, 1 passed the market filters, 1 researched
 
 ## Coins it looked at, and why it passed
-- 17:34Z ███ (MIGRATED, $510,849 mcap, $3,616 5m vol): REJECT, Top 10 hold 25.8% ex-pool (>25%) (V13)  
-  CA `EwX2T1p2PmgTsSq2Bi6XtQYxPC5krR4P2fxPfN4Qpump`
-- 17:34Z CATPAD (DIP, $81,395 mcap, $3,490 5m vol): PASS at conviction 3, PASS — four bigger coins share the CATPAD ticker, so this one isn't the leader and could be a vamp, and 5m volume is only $3.5k against the $10k bar. A 2-day-old site that doesn't list the CA doesn't help (V1, V3, V6).  
-  CA `2gTbp2gwH46rqExzabSyrdR3294SLwCp2rSqWDS6Sim1`
-- 17:16Z FLYWHEEL (FINAL_STRETCH, $20,371 mcap, $9,080 5m vol): PASS at conviction 3, PASS: buying a vertical +82% 5m candle at the high on a 15-minute-old curve coin, with 14 same-ticker copies and a borrowed-GitHub brain LARP. That's chasing, and the pre-bond dump is still ahead (V1, V13).  
-  CA `BWMf44rD724R2bdgHWd88CDTVEjuPNQauw8s6S7ipump`
-- 17:16Z SPACEINU (MIGRATED, $193,208 mcap, $21,007 5m vol): PASS at conviction 3, PASS — second-copy Space Inu at its high while the leader does 6x its volume. Vamp at the top. (V1, V2)  
-  CA `5izHfawy4Rg1Vjm27F3ieHzmkEtWWyVNenhFFDPvpump`
-- 17:12Z 咪咪 (MIGRATED, $37,964 mcap, $4,984 5m vol): REJECT, Top 10 hold 27.8% ex-pool (>25%) (V13)  
-  CA `JrvC7qKnGVn163q1u11VDUno7JtJ4ME2euiJkaupump`
-- 17:12Z SPACEINU (MIGRATED, $357,402 mcap, $129,692 5m vol): PASS at conviction 4, PASS: 11 minutes old, 14% under a high only 1.16x away, and the last space-cat original already went -98.7% in an hour. The target is below initials. (V1, V6)  
-  CA `2aZp4sP2bPdMUVkTVeRmzBvJvCaeTpgYXNBXNuEopump`
-- 17:10Z Bonnie (MIGRATED, $30,728 mcap, $8,637 5m vol): REJECT, Top 10 hold 29.2% ex-pool (>25%) (V13)  
-  CA `951SCVym2Hd7KYprJ5UCCXXEKEm4bGQ6riiuAjPCpump`
-- 17:10Z PODCATWALK (MIGRATED, $406,262 mcap, $41,645 5m vol): REJECT, Bundles: 10 linked wallet cluster(s) hold 49.4% of supply (>20%) (V17)  
+- 17:55Z PODCATWALK (MIGRATED, $615,372 mcap, $12,456 5m vol): REJECT, Bundles: 10 linked wallet cluster(s) hold 49.4% of supply (>20%) (V17)  
   CA `52MBEXmhVrZUJvMEbRpKRhehFUL8DnnV5LzYJ2G1pump`
-- 17:08Z Jason (FINAL_STRETCH, $33,417 mcap, $5,799 5m vol): REJECT, Top 10 hold 25.9% ex-pool (>25%) (V13)  
+- 17:54Z Jason (MIGRATED, $41,268 mcap, $3,245 5m vol): REJECT, Dev holds 1.1% (>1%) (V13, V17)  
   CA `3qjBR3LfzEAKVS6QXuR2QZ1RFUsXzATWvmjbGB5Dpump`
-- 17:01Z CBUCKS (MIGRATED, $923,314 mcap, $3,144 5m vol): REJECT, Top 10 hold 27.3% ex-pool (>25%) (V13)  
-  CA `DtcicPCKTKeAh7TDEzTym3hXeoHAoMiBdYJhMYxZpump`
+- 17:54Z STANK (DIP, $137,053 mcap, $3,412 5m vol): PASS at conviction 3, PASS: STANK is still falling. It's down 58% from the peak, and the last two 15m candles are red (-2.6% and -22%). The only bounce is off the hourly low and no higher low has printed. That's a falling knife with $3.4k of 5m flow. (V1, DIP rule)  
+  CA `5wsjHxT5nW5jQuVupXUNnYszF3WoWCfGGk9LMcsCJzY8`
+- 17:54Z Hedge (FINAL_STRETCH, $25,150 mcap, $21,001 5m vol): PASS at conviction 4, PASS: blocker is "target below initials". The $36.5k high is only ~1.45x away, and this is an AI-trader LARP on a domain that's a few hours old, with 22 same-ticker copies and top 10 at 24.7%. (V1, V6, V13)  
+  CA `7eQagAYSYYhRqRZF5L97Ku8AK94TEpsmnrrsssUkpump`
+- 17:48Z DESSA (MIGRATED, $9,064,339 mcap, $3,548 5m vol): PASS at conviction 3, PASS: 5m volume is $3.5k with sells ahead of buys (14 to 9) on a 100h-old $9M coin. Clean holders, but there's no flow and the $12M prior high is only 1.33x away. (V1, V6)  
+  CA `npz2FhoufQ7pKqhGpaipYWacrAkidyW2yDpVWSvpump`
+- 17:46Z GATO (MIGRATED, $4,722,782 mcap, $3,219 5m vol): REJECT, Dev holds 3.3% (>1%) (V13, V17)  
+  CA `HsprHxBRgiVaQdRf3TnKNuZZtaX9JUSPgMFdAkk6pump`
+- 17:46Z $GOTUS (MIGRATED, $199,762 mcap, $45,522 5m vol): PASS at conviction 3, PASS: chasing. $GOTUS is 13 minutes old, only 8% off a high it printed this minute, and up 156% in the last 5m candle. That's the vertical candle where I become exit liquidity (V1).  
+  CA `EgHf3XonHq6QCUoSZ1tFV5bQUG4Ez7FcvzMbdTF1pump`
+- 17:46Z HACKINU (MIGRATED, $42,949 mcap, $1,175 5m vol): REJECT, Hack story ("hack" in the name or ticker): these tend to go down, owner rule  
+  CA `HD2qqwAeLkyXnboo5cSGSdGw4oHCbvNEvWsgDSgWpump`
+- 17:45Z HYPERCHAN (DIP, $1,373,348 mcap, $9,351 5m vol): PASS at conviction 3, PASS — no higher low yet: −9.3% on the 5m, sliding toward the $0.00128 hourly low, in a range I've already lost on twice. Falling knife until a base prints (V1, HEXN #1).  
+  CA `3ApVr1xphYMpi9dn3rpqU4hwvpmCQDVwxET1rdCDpump`
+- 17:43Z HEXN (MIGRATED, $83,040 mcap, $4,977 5m vol): PASS at conviction 2, PASS on HEXN. It's down 95% from its high, and 5m volume is only 0.25x the hourly pace. This is a falling knife with a LARP story, and I've already lost on it twice (V1, V6).  
+  CA `ANVLA6eKiAq4nstD2Sg3SZhfVkSEwfnGccn12UQWpump`
 
 ## What its skips did next (last 48h)
 A skip "ran" if the coin reached the first target (1.5x) from the skip price before a 20% drop, "dumped" if the drop came first. Sampled every 10 min, followed 6h.
-- top 10 over 25%: blocked 30, ran 6, dumped 22, flat 0, open 2 (saving losses: keep it)
+- top 10 over 25%: blocked 29, ran 5, dumped 22, flat 0, open 2 (saving losses: keep it)
   - ran: HYPERGAMY up to 2.05x  
     CA `CUyNDWGdLPXZ3Gyj1H6TBh5pACgu5nY9WNkSqfMApump`
   - ran: Catori up to 1.52x  
     CA `FDwCosavNvMiFB812ajJp3gG7eZ9c4bpgcnY6fDQpump`
   - ran: ZERO up to 1.8x  
     CA `Ddwf94wedgCuMHAkwgti8A7sL2CxvBYJStJBj2cFpump`
-- too new / sniping: blocked 28, ran 6, dumped 21, flat 0, open 1 (saving losses: keep it)
+- too new / sniping: blocked 29, ran 6, dumped 21, flat 0, open 2 (saving losses: keep it)
   - ran: ZI up to 1.7x  
     CA `5q45EK4mRhuiuBmRYoaDs4m2xweaV7gn3zsFhsvcpump`
   - ran: BEAR up to 1.59x  
     CA `6i4ebPt8dpGchB2A1ELpTz3B72dy5DkzNpFMNtUSpump`
   - ran: HyPepe up to 1.5x  
     CA `G8TdzgpUQXQAxJvarNKPXRGv2kh9CsJDK7dCC7Xupump`
-- near the high / chasing: blocked 20, ran 4, dumped 13, flat 2, open 1 (saving losses: keep it)
+- near the high / chasing: blocked 18, ran 4, dumped 11, flat 2, open 1 (saving losses: keep it)
   - ran: OREN up to 1.58x  
     CA `57vAaMsnAJXkvULtAz7fsi6gRn3bHRJFJsJV1okNpump`
   - ran: Catori up to 1.52x  
@@ -128,16 +128,16 @@ A skip "ran" if the coin reached the first target (1.5x) from the skip price bef
     CA `2orqEGSdkm5BMmhdM8TpKCpACk32a3Zaj3Lef7ceqsc6`
   - ran: Bear up to 2.66x  
     CA `Dv6gYYkTav8Pm36UwAywxNCccwSZV1VL1tjiSpDLpump`
-- falling knife / no higher low: blocked 10, ran 0, dumped 8, flat 1, open 1 (saving losses: keep it)
-- crowd leaving / fading volume: blocked 10, ran 2, dumped 6, flat 1, open 1 (saving losses: keep it)
+- dev share over 1%: blocked 12, ran 0, dumped 9, flat 0, open 3 (saving losses: keep it)
+- falling knife / no higher low: blocked 11, ran 0, dumped 7, flat 1, open 3 (saving losses: keep it)
+- falling knife (code): blocked 10, ran 0, dumped 9, flat 0, open 1 (saving losses: keep it)
+- crowd leaving / fading volume: blocked 8, ran 2, dumped 5, flat 0, open 1 (saving losses: keep it)
   - ran: STABLEPAD up to 2.13x  
     CA `AABM3NrYSwKMsEDyanuskY43EH6ySbPpdPZNG1u7pump`
   - ran: HYDESK up to 1.78x  
     CA `BzndCZ2ZrjUA21aVW7t6AWEENRAps3EmdQg9hf94pump`
-- dev share over 1%: blocked 10, ran 0, dumped 8, flat 0, open 2 (saving losses: keep it)
-- falling knife (code): blocked 10, ran 0, dumped 9, flat 0, open 1 (saving losses: keep it)
-- hack story (owner rule): blocked 7, ran 0, dumped 3, flat 3, open 1 (saving losses: keep it)
-- bundles over the line: blocked 5, ran 0, dumped 4, flat 0, open 1 (saving losses: keep it)
+- hack story (owner rule): blocked 8, ran 0, dumped 3, flat 3, open 2 (saving losses: keep it)
+- vamp / copycat: blocked 6, ran 0, dumped 4, flat 0, open 2 (saving losses: keep it)
 
 ## Rules it changed from results and skips
 - 10-30 12:55Z added: Press the goal: take every rule-clearing setup at honest conviction (Owner override replacing the dropped deadline rule; hard lines, stops and 35% risk ceiling unchanged.)
@@ -173,13 +173,13 @@ Setups I'd research now:
 On your note: I'll take more trades and rate clean ones honestly at 7–9. But a 10x in six days doesn't change where my stop goes or how big a position gets. Inflated conviction is the fastest way to lose the $100 we've got.
 
 ## Moving most in its scans, last 30 min (1h volume)
-- SPACEINU: $318,344 1h vol, $357,402 mcap, +653% 1h  
-  CA `2aZp4sP2bPdMUVkTVeRmzBvJvCaeTpgYXNBXNuEopump`
-- SPACEINU: $153,187 1h vol, $193,208 mcap, +311% 1h  
-  CA `5izHfawy4Rg1Vjm27F3ieHzmkEtWWyVNenhFFDPvpump`
-- 咪咪: $109,569 1h vol, $37,964 mcap, -4% 1h  
-  CA `JrvC7qKnGVn163q1u11VDUno7JtJ4ME2euiJkaupump`
-- Hedge: $103,990 1h vol, $12,500 mcap, +208% 1h  
+- PODCATWALK: $837,139 1h vol, $615,372 mcap, +94% 1h  
+  CA `52MBEXmhVrZUJvMEbRpKRhehFUL8DnnV5LzYJ2G1pump`
+- MOTH: $260,931 1h vol, $150,136 mcap, +203% 1h  
+  CA `2ngSZWzKzhVtSrWjrYJRFu4iD3zGHQYFS6WMRwPfpump`
+- $GOTUS: $254,213 1h vol, $199,762 mcap, +280% 1h  
+  CA `EgHf3XonHq6QCUoSZ1tFV5bQUG4Ez7FcvzMbdTF1pump`
+- HEXN: $242,398 1h vol, $83,040 mcap, -47% 1h  
+  CA `ANVLA6eKiAq4nstD2Sg3SZhfVkSEwfnGccn12UQWpump`
+- Hedge: $130,917 1h vol, $25,150 mcap, +499% 1h  
   CA `7eQagAYSYYhRqRZF5L97Ku8AK94TEpsmnrrsssUkpump`
-- Inkky: $103,156 1h vol, $4,282 mcap, -70% 1h  
-  CA `3sSGvtwsUnKkBPWrmrvgVZRMvNpPJHhFQA998rs1pump`
