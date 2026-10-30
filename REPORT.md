@@ -1,13 +1,13 @@
 # Trencher live report
 
-Updated 2026-10-30T23:14:19Z (paper trading, never real money)
+Updated 2026-10-30T23:29:46Z (paper trading, never real money)
 
 - Equity: $90.20 (-9.8% vs $100 start)
-- Goal: $1,000 by 2026-11-05 05:03Z (pressing for it): at 9% of it, 5.2 days left, needs +58.2% a day from here
+- Goal: $1,000 by 2026-11-05 05:03Z (pressing for it): at 9% of it, 5.2 days left, needs +58.4% a day from here
 - Closed trades: 14, 2 wins
 - Fees paid: $8.84 (axiom $1.30, network $6.14, pool $1.26), plus $1.92 lost to slippage
 - New trades: on
-- Brain: subscription, 595 calls and 1 plan-limit hits in 48h
+- Brain: subscription, 590 calls and 1 plan-limit hits in 48h
 
 ## Scorecard (after fees)
 - 14 closed, 2 won (14%), net $-9.80
@@ -74,9 +74,13 @@ Updated 2026-10-30T23:14:19Z (paper trading, never real money)
   CA `J5jxG3PFaWpj6BLEQExyC6FSqSvaTKNdQ9G3sZwBpump`
 
 ## Last scan
-- 23:14Z: 6 coins, 4 with pairs, 0 passed the market filters, 0 researched
+- 23:28Z: 9 coins, 7 with pairs, 0 passed the market filters, 0 researched
 
 ## Coins it looked at, and why it passed
+- 23:23Z JOB (MIGRATED, $3,249,756 mcap, $3,954 5m vol): PASS at conviction 3, PASS: JOB is 11% off its high with $3.9k on the 5-minute and sellers slightly ahead. The flow is below pace, and a $3M coin with a crowd going quiet is not a setup (V1, V6).  
+  CA `9Pq7aLAbhDG2tTnS22cm6kuysZVcZpLFE368HWuypump`
+- 23:22Z iCoin (MIGRATED, $561,046 mcap, $30,956 5m vol): PASS at conviction 3, PASS: 4.8% off the high with 5m volume at 0.3x the hourly pace. Chasing a pump whose crowd already left (V1, V6).  
+  CA `HgxEGTZ1Epb64RrYqcuHkqb1gGWWnF5WcPTCDWzApump`
 - 23:10Z HYPERCHAN (MIGRATED, $670,611 mcap, $6,238 5m vol): PASS at conviction 3, PASS: HYPERCHAN is 77.5% off its $2.98M peak and just dropped another 25% in the last 30 minutes. 5m volume is $6.2k and there's no higher low. Falling knife on a meta that's cooling (V1, V6).  
   CA `3ApVr1xphYMpi9dn3rpqU4hwvpmCQDVwxET1rdCDpump`
 - 23:09Z AXIO (FINAL_STRETCH, $23,093 mcap, $3,197 5m vol): PASS at conviction 3, PASS: $3.2k on the 5m with the price 8% under its high. That's buying a thin chart at the top. (V1, V6)  
@@ -93,10 +97,6 @@ Updated 2026-10-30T23:14:19Z (paper trading, never real money)
   CA `Bz5UYN6K9ACNSDQb6W2jfRq79m28e51dQZFTK5yLpump`
 - 22:58Z ONBOARD (DIP, $108,165 mcap, $7,301 5m vol): REJECT, Dip with fading attention is a falling knife, not a dip (5m at 0.24x the hour's pace, under 0.6x)  
   CA `CEMEy7jkeytkxq3qYjaKyQnKiUdHAMJDM1B1tv2Upump`
-- 22:53Z GATO (MIGRATED, $4,600,176 mcap, $3,061 5m vol): REJECT, Dev holds 3.3% (>1%) (V13, V17)  
-  CA `HsprHxBRgiVaQdRf3TnKNuZZtaX9JUSPgMFdAkk6pump`
-- 22:49Z STANK (MIGRATED, $270,762 mcap, $2,703 5m vol): PASS at conviction 3, PASS — $2.7k on the 5m with 2 buys to 6 sells, 17% off the high and leading nothing. Clean holders, no crowd. Flow below the bar (V1, V6).  
-  CA `5wsjHxT5nW5jQuVupXUNnYszF3WoWCfGGk9LMcsCJzY8`
 
 ## What its skips did next (last 48h)
 A skip "ran" if the coin reached the first target (1.5x) from the skip price before a 20% drop, "dumped" if the drop came first. Sampled every 10 min, followed 6h.
@@ -114,14 +114,14 @@ A skip "ran" if the coin reached the first target (1.5x) from the skip price bef
     CA `6i4ebPt8dpGchB2A1ELpTz3B72dy5DkzNpFMNtUSpump`
   - ran: HyPepe up to 1.5x  
     CA `G8TdzgpUQXQAxJvarNKPXRGv2kh9CsJDK7dCC7Xupump`
-- near the high / chasing: blocked 29, ran 3, dumped 16, flat 2, open 8 (saving losses: keep it)
+- near the high / chasing: blocked 29, ran 4, dumped 18, flat 2, open 5 (saving losses: keep it)
   - ran: OREN up to 1.58x  
     CA `57vAaMsnAJXkvULtAz7fsi6gRn3bHRJFJsJV1okNpump`
   - ran: Catori up to 1.52x  
     CA `FDwCosavNvMiFB812ajJp3gG7eZ9c4bpgcnY6fDQpump`
   - ran: FLYWHEEL up to 2.23x  
     CA `BWMf44rD724R2bdgHWd88CDTVEjuPNQauw8s6S7ipump`
-- RugCheck danger: blocked 19, ran 5, dumped 12, flat 1, open 1 (saving losses: keep it)
+- RugCheck danger: blocked 19, ran 5, dumped 13, flat 1, open 0 (saving losses: keep it)
   - ran: HYPEINU up to 1.57x  
     CA `6eccVGkbi8cvAYBGzfDmUwFYrMj8eGZF2xyZqZLkpump`
   - ran: ETF up to 1.87x  
@@ -168,16 +168,16 @@ A skip "ran" if the coin reached the first target (1.5x) from the skip price bef
 - [2026-10-30 21:37] Expected PILLSEY, the flow leader in the pump.fun meta at $125k 5m, to break its $414k high toward 1.5x; it peaked at 1.32x, never reached initials, fell back through the -20% stop inside 18 minutes, and the half-hold on review only made the loss bigger (-31%). It sat about 20% under the high, so it passed my pullback rule, but I bought right after a +31% five-minute candle at 4.2x the hourly pace, which is chasing a spike, not buying a pullback (V1, V6), and it fits my "near-high skips mostly dump" data. Next time a coin that is up more than ~25% in the last 5 minutes counts as "chasing" even if it's 20% off the high: wait for that candle to retrace and a higher low to form. And once a trade has hit ~1.3x, an early-shakeout stop review sells all of it instead of trimming half.
 
 ## Meta right now
-Right now the movers are fresh pumpswap graduations under 2 hours old. The crawler's PILLSEY/cat story is stale: PILLSEY isn't in the movers at all. Three themes are moving. (1) pump.fun's "-OOOR" creator meta, still alive in THE ONBOARDOOOR ($224k cap, $27k on the 5-minute, 0.8h old) and dead in CREATOR ($586 on the 5-minute). (2) Edgy one-liner memes like Broke Nigga Baddie ($655k, $20k on the 5-minute, 62% buys). (3) Anime characters, where Akira is fresh ($118k on the 5-minute but only 6 minutes old and under $70k) and Hyper-Chan is cooling. Older runners are fading, with sellers in control: GLITCH and GATO are both at under 40% buys. Two hard no's: BIBICOIN and $LAPTOP are politician coins (Netanyahu, Hunter Biden), so they're out (V13). For setups, BNB passes the DIP/MIGRATED volume gate (5-minute volume is 0.77x its hourly pace), so I'd research it. ONBOARD is a MIGRATED buy only on a pullback of 10% or more where volume holds, and right now its 5-minute is about 0.3x its hourly pace, so the crowd is thinning. Akira goes on the watchlist until it proves itself above $70k, because I don't snipe 6-minute-old pairs (V5, V6). On the owner's note: I'll take more clean setups, but conviction comes from the checks, not from the Nov 5 deadline.
+Meta: fresh (<2h) pumpswap graduations. Rising: Halloween/seasonal (TOT, $146k, $132k 5m, 12 min old, right before Oct 31) and pump.fun-native/brand memes (PUMPCAT $130k but 96% buys = verify bundles; iCoin $561k but 5m ~0.3x hourly pace, fading; old iCoin is a dead duplicate). Fading: anime (Akira -62%, Hyper-Chan -22%) and edgy one-liners (Broke Nigga Baddie now ~0.44x pace, fails the 0.7x DIP gate). Dead: PILLSEY, scaninu. Setups to research: TOT MIGRATED on a 10%+ pullback with volume holding (20% stop, initials 1.5x); PUMPCAT only if bundle checks are clean; Zazu FINAL_STRETCH ($11.8k, $32k 5m), small size, exit if it stalls. Deadline pressure doesn't change the checks; 12-minute-old charts size as probe/mid until holder data confirms.
 
 ## Moving most in its scans, last 30 min (1h volume)
+- iCoin: $1,251,280 1h vol, $561,046 mcap, +170% 1h  
+  CA `HgxEGTZ1Epb64RrYqcuHkqb1gGWWnF5WcPTCDWzApump`
 - TOT: $375,785 1h vol, $146,242 mcap, +193% 1h  
   CA `Bz5UYN6K9ACNSDQb6W2jfRq79m28e51dQZFTK5yLpump`
-- ONBOARD: $372,620 1h vol, $108,165 mcap, -38% 1h  
-  CA `CEMEy7jkeytkxq3qYjaKyQnKiUdHAMJDM1B1tv2Upump`
 - BNB: $229,039 1h vol, $698,647 mcap, +24% 1h  
   CA `EYqygbhZjP7EbM4fSn8devctnksAvPAD1Bt57XBFpump`
-- Akira: $225,066 1h vol, $22,314 mcap, -49% 1h  
+- Akira: $198,442 1h vol, $18,566 mcap, -62% 1h  
   CA `4NyRyGt5rwtLBdNQpkDaXnCyGuxHZHsRtzt4jazQpump`
-- PILLSEY: $219,355 1h vol, $2,006 mcap, -99% 1h  
-  CA `J5jxG3PFaWpj6BLEQExyC6FSqSvaTKNdQ9G3sZwBpump`
+- SONIC: $188,656 1h vol, $10,998 mcap, +61% 1h  
+  CA `CjngxwQWCAtB4sE2M97HakrFK8rcSLdfEBYpNQbWpump`
