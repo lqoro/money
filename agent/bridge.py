@@ -9,7 +9,8 @@ in this repo, checked out at DUET_SYNC_DIR:
     steer.json   written by Duet:  {"pause_new_trades": bool,
                                     "settings": {"stop_loss_pct": 25, "bribe_sol": 0.002, ...},
                                     "owner_note": "short guidance for the brain",
-                                    "goal": {"equity_usd": 1000, "deadline": "2026-11-05T05:00:00Z"}}
+                                    "goal": {"equity_usd": 1000, "deadline": "2026-11-05T05:00:00Z",
+                                             "stance": "survive" or "push"}}
 
 Every DUET_SYNC_INTERVAL_MIN minutes Trencher pulls the branch, applies steer.json,
 writes its status and pushes. Steering is data, never code: only a pause flag,
@@ -36,7 +37,7 @@ from .config import EVOLVABLE, ROOT, STEERABLE, Config
 log = logging.getLogger(__name__)
 
 STEER_FILE = "steer.json"
-MAX_NOTE_CHARS = 600
+MAX_NOTE_CHARS = 1000
 
 
 def git(repo: Path, *args: str, timeout: float = 60) -> subprocess.CompletedProcess:
@@ -77,7 +78,7 @@ def apply_steering(cfg: Config, steer: dict) -> dict:
     cfg.apply_strategy()
 
     goal = steer.get("goal")
-    cfg.goal_equity_usd, cfg.goal_deadline = 0.0, ""
+    cfg.goal_equity_usd, cfg.goal_deadline, cfg.goal_stance = 0.0, "", "survive"
     if isinstance(goal, dict):
         try:
             target = float(goal.get("equity_usd") or 0)
@@ -88,7 +89,8 @@ def apply_steering(cfg: Config, steer: dict) -> dict:
         else:
             if target > 0:
                 cfg.goal_equity_usd, cfg.goal_deadline = target, deadline
-                applied["goal"] = {"equity_usd": target, "deadline": deadline}
+                cfg.goal_stance = "push" if str(goal.get("stance") or "").lower() == "push" else "survive"
+                applied["goal"] = {"equity_usd": target, "deadline": deadline, "stance": cfg.goal_stance}
 
     terms = steer.get("avoid_terms")
     cfg.avoid_terms = [str(t).strip()[:60] for t in terms if str(t).strip()][:30] if isinstance(terms, list) else []
@@ -135,7 +137,8 @@ def build_report(agent) -> tuple[dict, str]:
         f"Updated {status['updated_at']} (paper trading, never real money)",
         "",
         f"- Equity: ${eq:,.2f} ({100 * (eq / cfg.starting_cash_usd - 1):+.1f}% vs ${cfg.starting_cash_usd:.0f} start)",
-        *([f"- Goal: ${g['target_usd']:,.0f} by {g['deadline'][:16].replace('T', ' ')}Z (a stretch, survival first): "
+        *([f"- Goal: ${g['target_usd']:,.0f} by {g['deadline'][:16].replace('T', ' ')}Z ("
+           f"{'pressing for it' if g.get('stance') == 'push' else 'a stretch, survival first'}): "
            f"at {g['progress_pct']:g}% of it, {g['days_left']:g} days left"
            + (f", needs {g['needed_daily_growth_pct']:+g}% a day from here" if g["needed_daily_growth_pct"] is not None else "")]
           if (g := status["goal"]) else []),

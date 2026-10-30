@@ -407,9 +407,13 @@ class Brain:
             return ""
         return ("\n## Your owner's goal\n"
                 f"Reach ${g['target_usd']:,.0f} of paper equity by {g['deadline']} UTC: you're at "
-                f"{g['progress_pct']:g}% of it with {g['days_left']:g} days left. It's a stretch target: "
-                "surviving comes first, so it never justifies a bigger size, a wider stop or a forced trade. "
-                "Get there with many small, early wins.\n")
+                f"{g['progress_pct']:g}% of it with {g['days_left']:g} days left. "
+                + ("Your owner wants you to press for it: take the setups that clear your hard lines instead "
+                   "of waiting for perfect ones, and size your best ones up (code sets the sizes). Your stops "
+                   "and hard lines still hold: a rug or a blown wallet ends the run.\n"
+                   if g.get("stance") == "push" else
+                   "It's a stretch target: surviving comes first, so it never justifies a bigger size, a wider "
+                   "stop or a forced trade. Get there with many small, early wins.\n"))
 
     # ------------------------------------------------------------ decisions
     def decide(self, snap: dict, check: Checklist, portfolio_view: dict, sizing_text: str,
