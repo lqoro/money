@@ -1,13 +1,13 @@
 # Trencher live report
 
-Updated 2026-10-30T06:34:14Z (paper trading, never real money)
+Updated 2026-10-30T06:49:28Z (paper trading, never real money)
 
 - Equity: $95.81 (-4.2% vs $100 start)
-- Goal: $1,000 by 2026-11-05 05:03Z (a stretch, survival first): at 9.6% of it, 5.9 days left, needs +48.4% a day from here
+- Goal: $1,000 by 2026-11-05 05:03Z (a stretch, survival first): at 9.6% of it, 5.9 days left, needs +48.6% a day from here
 - Closed trades: 11, 2 wins
 - Fees paid: $6.32 (axiom $0.72, network $4.79, pool $0.67), plus $1.04 lost to slippage
 - New trades: on
-- Brain: subscription, 591 calls and 0 plan-limit hits in 48h
+- Brain: subscription, 592 calls and 0 plan-limit hits in 48h
 
 ## Scorecard (after fees)
 - 11 closed, 2 won (18%), net $-4.20
@@ -74,9 +74,11 @@ Updated 2026-10-30T06:34:14Z (paper trading, never real money)
   CA `ANVLA6eKiAq4nstD2Sg3SZhfVkSEwfnGccn12UQWpump`
 
 ## Last scan
-- 06:33Z: 4 coins, 3 with pairs, 0 passed the market filters, 0 researched
+- 06:48Z: 2 coins, 1 with pairs, 0 passed the market filters, 0 researched
 
 ## Coins it looked at, and why it passed
+- 06:43Z ZERO (FINAL_STRETCH, $21,369 mcap, $14,551 5m vol): REJECT, Top 10 hold 28.5% ex-pool (>25%) (V13)  
+  CA `Ddwf94wedgCuMHAkwgti8A7sL2CxvBYJStJBj2cFpump`
 - 06:31Z perpetual (MIGRATED, $42,482 mcap, $3,819 5m vol): PASS at conviction 2, PASS: perpetual is about one minute old with $3.8k on the 5m. That's sniping, not trading, and my data is seconds behind the people doing it (V5, V1).  
   CA `3yRD5rsbikyJoVGjCp11H6ZnYRySEMXqdfnvGvJSperp`
 - 06:30Z STABLEPAD (FINAL_STRETCH, $27,613 mcap, $4,983 5m vol): PASS at conviction 3, PASS — launchpad-tech coin with no GitHub on a fading launchpad meta, 5m at $5k and 0.69x its hourly pace. Attention is leaving, not arriving (V1, V5).  
@@ -95,15 +97,13 @@ Updated 2026-10-30T06:34:14Z (paper trading, never real money)
   CA `ANVLA6eKiAq4nstD2Sg3SZhfVkSEwfnGccn12UQWpump`
 - 06:06Z Foxii (MIGRATED, $722,883 mcap, $17,903 5m vol): PASS at conviction 4, PASS: 3.4% off a fresh high right after a +35% candle. That's chasing, so I'm waiting for the pullback (learned rule, V1, V6).  
   CA `J3ReuwckNtcJP1Zhn7wVbfXhTDNTkHxozQWWAwxWpump`
-- 06:05Z HYPERCHAN (MIGRATED, $1,610,103 mcap, $6,385 5m vol): PASS at conviction 3, PASS: 16.6% off the high and 5m volume is 0.36x the hourly pace. That's a near-high chase into a crowd that's leaving. Clean holders don't fix the entry (V1, V6).  
-  CA `3ApVr1xphYMpi9dn3rpqU4hwvpmCQDVwxET1rdCDpump`
 
 ## What its skips did next (last 48h)
 A skip "ran" if the coin reached the first target (1.5x) from the skip price before a 20% drop, "dumped" if the drop came first. Sampled every 10 min, followed 6h.
-- top 10 over 25%: blocked 14, ran 1, dumped 11, flat 0, open 2 (saving losses: keep it)
+- top 10 over 25%: blocked 15, ran 1, dumped 11, flat 0, open 3 (saving losses: keep it)
   - ran: HYPERGAMY up to 2.05x  
     CA `CUyNDWGdLPXZ3Gyj1H6TBh5pACgu5nY9WNkSqfMApump`
-- too new / sniping: blocked 14, ran 3, dumped 10, flat 0, open 1 (saving losses: keep it)
+- too new / sniping: blocked 14, ran 3, dumped 11, flat 0, open 0 (saving losses: keep it)
   - ran: ZI up to 1.7x  
     CA `5q45EK4mRhuiuBmRYoaDs4m2xweaV7gn3zsFhsvcpump`
   - ran: BEAR up to 1.59x  
@@ -113,7 +113,7 @@ A skip "ran" if the coin reached the first target (1.5x) from the skip price bef
 - near the high / chasing: blocked 11, ran 1, dumped 6, flat 0, open 4 (saving losses: keep it)
   - ran: OREN up to 1.58x  
     CA `57vAaMsnAJXkvULtAz7fsi6gRn3bHRJFJsJV1okNpump`
-- RugCheck danger: blocked 8, ran 3, dumped 3, flat 1, open 1 (mixed)
+- RugCheck danger: blocked 8, ran 3, dumped 4, flat 1, open 0 (mixed)
   - ran: HYPEINU up to 1.57x  
     CA `6eccVGkbi8cvAYBGzfDmUwFYrMj8eGZF2xyZqZLkpump`
   - ran: ETF up to 1.87x  
@@ -128,20 +128,22 @@ A skip "ran" if the coin reached the first target (1.5x) from the skip price bef
 - bundles over the line: blocked 4, ran 1, dumped 3, flat 0, open 0 (saving losses: keep it)
   - ran: calm up to 1.53x  
     CA `4HSHFbFiKuMvZW7yGiDTab17B63MzBkkhadFKxhkpump`
-- crowd leaving / fading volume: blocked 4, ran 0, dumped 1, flat 0, open 3 (too few played out to judge)
+- crowd leaving / fading volume: blocked 4, ran 1, dumped 1, flat 0, open 2 (too few played out to judge)
+  - ran: STABLEPAD up to 2.13x  
+    CA `AABM3NrYSwKMsEDyanuskY43EH6ySbPpdPZNG1u7pump`
 - other: blocked 3, ran 1, dumped 2, flat 0, open 0 (saving losses: keep it)
   - ran: SI up to 1.54x  
     CA `6zuDiAw3NviBwcLZfTztHJgtCmeNWfyFxYVoXtNYpump`
 
 ## Rules it changed from results and skips
-- 10-30 01:20Z added: If the target prior high is below the 1.5x initials level, take initials/half at that level (SWAN peaked at exactly 1.40x, the retest level named in the thesis, rejected, and the break-even stop closed it at -0.7%. One trade, so this changes the exit, not the pick.)
-- 10-30 01:20Z added: Stop review: never-green trades stopped within 15 min get no hold (SI and HEXN both peaked at 0.99x and hit the stop in 7 min; both reviews correctly sold (-38%, -36%). Merged with the gap-through-stop rule: it's an entry problem.)
-- 10-30 01:20Z dropped: All fee/friction caps and minimum position size rules (Code fee check owns this (3x round-trip target, max 20% friction); per instructions, removed from learned rules.)
-- 10-30 03:38Z dropped: After initials, trail 20% from peak (One sample (CATBOT gave back about 40% of a 4.44x peak) is too thin to cap runners, and the owner explicitly wants a 35% trail after initials. The parameter was already 35%, so the rule contradicted it. Both wins (+93.8%, +50.5%) came from runners riding the trail, and expectancy depends on those tails.)
-- 10-30 03:38Z added: After initials, only the 35% trail sells the runner (Matches trailing_stop_pct=35 and the owner's note. Avg win $2.10 against avg loss $0.93, so the edge only exists if the winners stay big.)
-- 10-30 03:38Z tightened: DIP attention gate: probe only at 0.8–1x and only with a strong narrative; weak or LARP narrative with sub-1x volume is a pass (DIP is 0 for 3 at -$1.02 per trade. Both HEXN losses were on a thin tech-LARP story with volume under the hourly pace; Something went in at 0.86x and died flat. Falling-knife skips: 0 ran, 3 dumped.)
-- 10-30 03:38Z added: Pass on hack-story coins (Owner note: hacked projects and hack-headline plays tend to go down. No contrary data from my own trades.)
 - 10-30 03:38Z tightened: Time stop at 45 min with no extensions (FLOAT ran past the time stop to 158 min and lost 24.5%. Time-stopped trades lost 13–24% each, and holding longer didn't help.)
+- 10-30 06:41Z added: The target has to clear initials (pick fix that replaces 'take initials at the prior high if it's below 1.5x') (The owner and code fix initials at 1.5x, so I can't set a lower one. SWAN peaked at exactly its named 1.40x and closed -0.7%. The fix is to skip setups whose obvious resistance sits under 1.5x. One sample, so it allows a probe.)
+- 10-30 06:41Z tightened: DIP attention gate: ≥1x hourly volume and rising, no 0.8-1x probe band (DIP is 0/3, -$3.07, expectancy -$1.02. 'Something' entered at 0.86x hourly volume and was time-stopped at -15.4%. HEXN #2 had volume under the hourly pace and lost 27%. HEXN #1 was a first-bounce entry and lost 36%. Every DIP loss had sub-1x or unconfirmed attention. Falling-knife skips: 0 ran, 9 dumped across code and brain. The code param is already at its 0.8 max, so the brain enforces 1x.)
+- 10-30 06:41Z added: DIP on probation: probe size only until a DIP wins (0 wins in 3. Avg loss -$1.02 is the worst of any setup. Small sample, so I'm capping size instead of banning the setup.)
+- 10-30 06:41Z tightened: DIP higher-low rule: pass if the higher low is >20% below entry (replaces 'stop just under the higher low') (The stop is owner/code-fixed at 20%, so I can't set a custom stop. I can make sure the structure invalidates inside it. HEXN #2's -13% stop under the higher low was a custom stop, and the owner's rules drop those.)
+- 10-30 06:41Z dropped: Take initials at 1.5x / at the prior high if lower (The owner and code enforce initials at 1.5x. Learned rules may not set the multiple. Replaced with the target-clears-initials pick rule.)
+- 10-30 06:41Z dropped: After initials the runner rides a 35% trail (The owner and code enforce the 35% trail. Learned rules may not set it.)
+- 10-30 06:41Z dropped: Move the stop to break-even at 1.3x (as a learned rule) (Already in the soul's management rules and the code path. It worked: SWAN closed -0.7% from a 1.40x peak. I dropped it only to free a rule slot for DIP probation.)
 
 ## Recent lessons
 - [2026-10-28 22:50] Expected: CATCULUS at $460k was the flow leader ($59k 5m volume, 913/363 buys/sells, top 10 at 3.6%), so a momentum entry near the high should either keep running or give a clean -30% exit. What happened: it peaked at 1.24x, the bundle/insiders dumped, and it gapped through the -30% stop to -59% in 42 minutes. Clean top-10 numbers don't rule out bundles spread across many small wallets (V3, V5), and $0.50 in fees on a $2.96 position was a 17% loss before the coin even moved. Rule: no MIGRATED momentum buys within ~20% of the local high unless bundle data is verified. Wait for the V1 0.618 fib or point-of-control retest instead, and skip any position so small that fees are over 5% of cost.
@@ -159,13 +161,13 @@ A skip "ran" if the coin reached the first target (1.5x) from the skip price bef
 Animal coins are the meta. Foxii is the strongest: a $723k fox, 3.6h old, +30% on the hour, $17.9k 5m volume. Catori is the cat on the bonding curve, +103% on the hour but only $2.9k on the 5m now. BITCAT is cooling (-49%, $3.6k 5m) and Inuployed is dead. The Hyperliquid/launchpad theme is fading: HYPERCHAN holds $1.6M but 5m flow is down to $6.4k, STABLEPAD is +610% but still on the curve, PUMPLIQUID is -54%. The rest of the movers are one-hour new pairs that burned out (OPTIMISM, bag, GROKTYSON, WARS at 2% buys), plus E91 at 6 minutes old, too new for my data speed (V5). The crawler summary's LIQUID, HLP and PURR are not in this scan, so I treat them as stale. Setups to research: Foxii (MIGRATED, real flow, V1/V6); HEXN ($415k, 86% buys, $11k 5m; migrated / dip-hold candidate, just past the 12h age cap but inside the V6 range); Catori as FINAL_STRETCH only if its 5m gets back toward $10k, watching for the pre-bond dump (V1).
 
 ## Moving most in its scans, last 30 min (1h volume)
-- HYPERCHAN: $209,997 1h vol, $1,610,103 mcap, -1% 1h  
-  CA `3ApVr1xphYMpi9dn3rpqU4hwvpmCQDVwxET1rdCDpump`
-- Foxii: $194,594 1h vol, $722,883 mcap, +30% 1h  
-  CA `J3ReuwckNtcJP1Zhn7wVbfXhTDNTkHxozQWWAwxWpump`
 - TraderTraitor: $168,625 1h vol, $202,128 mcap, +450% 1h  
   CA `3XLTWYyHxpAdbP1fjfTz9TBZp9Dhq4A6KWNarHMkGHQb`
-- HEXN: $156,281 1h vol, $415,199 mcap, -7% 1h  
-  CA `ANVLA6eKiAq4nstD2Sg3SZhfVkSEwfnGccn12UQWpump`
-- E91: $104,632 1h vol, $5,704 mcap, +52% 1h  
+- E91: $92,893 1h vol, $3,833 mcap, -73% 1h  
   CA `2CimFhutBh138mENUfKqEKKLUKDMk4hgQwkB9FdLpump`
+- STABLEPAD: $87,021 1h vol, $27,613 mcap, -3% 1h  
+  CA `AABM3NrYSwKMsEDyanuskY43EH6ySbPpdPZNG1u7pump`
+- LIQUID: $75,819 1h vol, $13,658 mcap, -79% 1h  
+  CA `GqaP7NBtPAFAUq45UAp426bdEtfz5nz2ffMn9MiHpump`
+- ZERO: $57,106 1h vol, $21,369 mcap, +542% 1h  
+  CA `Ddwf94wedgCuMHAkwgti8A7sL2CxvBYJStJBj2cFpump`
