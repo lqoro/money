@@ -1,9 +1,9 @@
 # Trencher live report
 
-Updated 2026-10-30T07:19:38Z (paper trading, never real money)
+Updated 2026-10-30T07:34:39Z (paper trading, never real money)
 
 - Equity: $95.81 (-4.2% vs $100 start)
-- Goal: $1,000 by 2026-11-05 05:03Z (a stretch, survival first): at 9.6% of it, 5.9 days left, needs +48.8% a day from here
+- Goal: $1,000 by 2026-11-05 05:03Z (a stretch, survival first): at 9.6% of it, 5.9 days left, needs +48.9% a day from here
 - Closed trades: 11, 2 wins
 - Fees paid: $6.32 (axiom $0.72, network $4.79, pool $0.67), plus $1.04 lost to slippage
 - New trades: on
@@ -74,9 +74,11 @@ Updated 2026-10-30T07:19:38Z (paper trading, never real money)
   CA `ANVLA6eKiAq4nstD2Sg3SZhfVkSEwfnGccn12UQWpump`
 
 ## Last scan
-- 07:19Z: 2 coins, 1 with pairs, 1 passed the market filters, 1 researched
+- 07:33Z: 6 coins, 5 with pairs, 0 passed the market filters, 0 researched
 
 ## Coins it looked at, and why it passed
+- 07:32Z BEAST (FINAL_STRETCH, $27,144 mcap, $22,182 5m vol): REJECT, Top 10 hold 28.0% ex-pool (>25%) (V13)  
+  CA `3mh5pgk58HPZwEinnZNUbsJpUoyqYa23zS2n442Zpump`
 - 07:19Z TraderTraitor (MIGRATED, $30,286 mcap, $6,497 5m vol): REJECT, RugCheck danger: Symbol Mismatch Token: "TraderTraitor", File: "TraderTrai"  
   CA `3XLTWYyHxpAdbP1fjfTz9TBZp9Dhq4A6KWNarHMkGHQb`
 - 07:15Z Catori (FINAL_STRETCH, $31,148 mcap, $3,879 5m vol): PASS at conviction 3, PASS — 10% off the high at 78% bond, top 10 at 24.9% (a hair under the line), $3.9k 5m flow, and a bigger coin owns the ticker. Chase into the 30–40k graveyard (V1, V6).  
@@ -95,12 +97,10 @@ Updated 2026-10-30T07:19:38Z (paper trading, never real money)
   CA `Ddwf94wedgCuMHAkwgti8A7sL2CxvBYJStJBj2cFpump`
 - 06:31Z perpetual (MIGRATED, $42,482 mcap, $3,819 5m vol): PASS at conviction 2, PASS: perpetual is about one minute old with $3.8k on the 5m. That's sniping, not trading, and my data is seconds behind the people doing it (V5, V1).  
   CA `3yRD5rsbikyJoVGjCp11H6ZnYRySEMXqdfnvGvJSperp`
-- 06:30Z STABLEPAD (FINAL_STRETCH, $27,613 mcap, $4,983 5m vol): PASS at conviction 3, PASS — launchpad-tech coin with no GitHub on a fading launchpad meta, 5m at $5k and 0.69x its hourly pace. Attention is leaving, not arriving (V1, V5).  
-  CA `AABM3NrYSwKMsEDyanuskY43EH6ySbPpdPZNG1u7pump`
 
 ## What its skips did next (last 48h)
 A skip "ran" if the coin reached the first target (1.5x) from the skip price before a 20% drop, "dumped" if the drop came first. Sampled every 10 min, followed 6h.
-- top 10 over 25%: blocked 15, ran 2, dumped 11, flat 0, open 2 (saving losses: keep it)
+- top 10 over 25%: blocked 16, ran 2, dumped 11, flat 0, open 3 (saving losses: keep it)
   - ran: HYPERGAMY up to 2.05x  
     CA `CUyNDWGdLPXZ3Gyj1H6TBh5pACgu5nY9WNkSqfMApump`
   - ran: ZERO up to 1.8x  
@@ -115,7 +115,7 @@ A skip "ran" if the coin reached the first target (1.5x) from the skip price bef
 - near the high / chasing: blocked 11, ran 1, dumped 6, flat 0, open 4 (saving losses: keep it)
   - ran: OREN up to 1.58x  
     CA `57vAaMsnAJXkvULtAz7fsi6gRn3bHRJFJsJV1okNpump`
-- RugCheck danger: blocked 8, ran 3, dumped 3, flat 1, open 1 (mixed)
+- RugCheck danger: blocked 8, ran 4, dumped 3, flat 1, open 0 (cost more winners than it saved: loosen it)
   - ran: HYPEINU up to 1.57x  
     CA `6eccVGkbi8cvAYBGzfDmUwFYrMj8eGZF2xyZqZLkpump`
   - ran: ETF up to 1.87x  
@@ -165,11 +165,11 @@ Meta: animals still lead but are fading. Foxii is -30% on the hour ($452k) but s
 ## Moving most in its scans, last 30 min (1h volume)
 - TraderTraitor: $297,017 1h vol, $30,286 mcap, -78% 1h  
   CA `3XLTWYyHxpAdbP1fjfTz9TBZp9Dhq4A6KWNarHMkGHQb`
-- Foxii: $241,300 1h vol, $452,011 mcap, -30% 1h  
-  CA `J3ReuwckNtcJP1Zhn7wVbfXhTDNTkHxozQWWAwxWpump`
 - SI: $210,828 1h vol, $153,780 mcap, +273% 1h  
   CA `E5pZM5GH1WaCWxNnDvhtWVjvzR7P5iUqXU8epki2pump`
-- HYPERCHAN: $186,891 1h vol, $1,799,931 mcap, +8% 1h  
-  CA `3ApVr1xphYMpi9dn3rpqU4hwvpmCQDVwxET1rdCDpump`
-- HEXN: $165,215 1h vol, $526,917 mcap, +31% 1h  
-  CA `ANVLA6eKiAq4nstD2Sg3SZhfVkSEwfnGccn12UQWpump`
+- STABLEPAD: $100,613 1h vol, $20,512 mcap, -46% 1h  
+  CA `AABM3NrYSwKMsEDyanuskY43EH6ySbPpdPZNG1u7pump`
+- ZERO: $65,113 1h vol, $3,466 mcap, -91% 1h  
+  CA `Ddwf94wedgCuMHAkwgti8A7sL2CxvBYJStJBj2cFpump`
+- BEAST: $63,388 1h vol, $27,144 mcap, +539% 1h  
+  CA `3mh5pgk58HPZwEinnZNUbsJpUoyqYa23zS2n442Zpump`

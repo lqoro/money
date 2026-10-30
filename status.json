@@ -1,5 +1,5 @@
 {
- "updated_at": "2026-10-30T07:19:38Z",
+ "updated_at": "2026-10-30T07:34:39Z",
  "paused_new_trades": false,
  "brain": {
   "mode": "subscription",
@@ -557,15 +557,15 @@
  ],
  "learned_rules": "- **MIGRATED: buy the pullback, not the high.** Enter only 20\u201360% off the local high, while price holds above the hourly low, with 5m volume \u2265 $10k and more buys than sells (V1, V6). Both winners came in this way: CATBOT, and FLOATER 34% off its high. MIGRATED is my only setup with a winner, so it gets first claim on the risk budget.\n- **No buys within ~20% of the local high, even with clean bundles.** SI had 0.65% bundles and lost 38% in 7 min. CATCULUS dropped to -59% after a near-high entry. Near-high skips: 1 ran, 6 dumped.\n- **Fresh migration (<1h) going red off the bond spike: wait for a base above the hourly low** (V1). Too-new skips: 3 ran, 11 dumped.\n- **Vamp field: buy only the leader** by 5m volume and attention, never the 2nd or 3rd copy (V1, V2). FLOATER beat 22 same-ticker copies.\n- **The target has to clear initials.** Before buying, name the level I expect it to retest (prior high, POC, 0.618). If that level is under 1.5x from entry, the exit can't pay: pass, or probe only. SWAN topped at exactly its named 1.40x and closed flat.\n- **DIP needs a higher low I can see in the data:** a bounce off the hourly low, a pullback that holds above it, and price now above that pullback low. Never buy the first red-to-green candle (V1). If the higher low is more than ~20% below entry, I'm too far up the bounce: pass.\n- **DIP attention gate: 5m volume \u2265 1x the hourly average and rising, plus a current narrative with a real crowd.** Under 1x is a pass, with no probe band. Weak, LARP or tech-story dips are a pass. Dips recover on attention, not on holder tables (Soul belief 7, V1).\n- **DIP is on probation:** 0 for 3, -$3.07. Probe size only (conviction 5\u20136) until a DIP trade closes green.\n- **Hack stories: pass.** That covers coins whose project got hacked and coins riding a hack headline (hack tickers, exploit plays, Hack Inu copies). They tend to bleed (owner note).\n- **A RugCheck \"danger\" flag that isn't a hard line costs 1 conviction point. It doesn't cap the trade.** Name the flag, then size from the lower conviction. Its skips: 3 ran, 4 dumped, 1 flat.\n- **Hard blocks stay:** top 10 >25%, dev >1%, bundles/insiders over the line, mint/freeze, LP, political figure (V6, V13, V17). Their skips mostly dumped: top 10 1 ran/11 dumped, dev 1/5, bundles 1/3.\n- **Before initials: if I'm green and 5m volume drops to half its hourly pace, sell half.** CPU and FLOAT both reached ~1.6x, faded, and closed red.\n- **Time stop: still under 1.0x at 45 min with no volume surge means exit, with no extensions** (V1). FLOAT was held to 158 min and still lost.\n- **Stop review: SELL** if the trade never went green and hit the stop in under 15 min (bad entry: SI, HEXN), or if top-10/insider share dropped and price keeps bleeding. Hold once only if the narrative and 5m volume are clearly intact, with a deadline to reclaim.\n- **Re-enter a stopped coin only when it reclaims the prior high,** never mid-range. The CATBOT buy-back from the middle of the range lost 24%.\n",
  "meta": {
-  "age_minutes": 9,
+  "age_minutes": 4,
   "meta_summary": "Meta: animals still lead but are fading. Foxii is -30% on the hour ($452k) but still has $21k 5m and 58% buys, so it's a DIP candidate only if buyers hold. BITCAT and Catori are dead on volume. Hyperliquid is holding: HYPERCHAN +8% at $1.8M, $12k 5m, 64% buys. HEXN is the strongest mover: +31%, 85% buys, $10k 5m, $527k mcap. Fresh pairs (ZERO, p/acc) are too new for my data speed (V5). One-hour rugs anon, UP and Tony are dead. Skipped: TraderTraitor (named after a hacking group) and $LAPTOP (political coin, V13). Setups to research: HEXN (V6 range; 13.9h old, so just past the 12h MIGRATED cap), HYPERCHAN (V6) and Foxii (DIP, only if 5m volume holds).",
   "top_narratives": [
    "binance",
    "newuser50",
    "tokenized",
    "hack",
-   "hyperliquid",
    "app",
+   "hyperliquid",
    "stock",
    "binance hack",
    "trump",
@@ -576,48 +576,40 @@
    "drained",
    "machine",
    "north",
-   "laptop",
+   "pepe",
    "code",
    "slowing",
    "machine slowing"
   ],
   "trending_categories": [
    "AI Meme",
-   "Curve Ecosystem",
    "Avalanche L1",
+   "Lending/Borrowing Protocols",
    "Gaming Blockchains",
-   "Chain Abstraction",
-   "Lending/Borrowing Protocols"
+   "Gaming (GameFi)",
+   "NFT"
   ],
   "trending_coins": [
    "SIB",
    "HYPE",
-   "BTC",
    "BNB",
-   "PENGU",
-   "AAVE",
    "BEAM",
-   "ONDO",
+   "BTC",
+   "AAVE",
    "ENA",
-   "SOL",
-   "LINK",
-   "CRV",
-   "ETH",
    "PEPE",
-   "PEARL"
+   "SOL",
+   "LIT",
+   "LINK",
+   "PENGU",
+   "ASTER",
+   "ONDO",
+   "KNTQ"
   ],
   "hot_tickers": [
    {
-    "ticker": "$LAPTOP",
-    "mentions": 3
-   },
-   {
-    "ticker": "$TRUMP",
-    "mentions": 1
-   },
-   {
     "ticker": "$MT",
-    "mentions": 1
+    "mentions": 2
    },
    {
     "ticker": "$MOONX",
@@ -654,14 +646,22 @@
    {
     "ticker": "$PUMP",
     "mentions": 1
+   },
+   {
+    "ticker": "$SHIB",
+    "mentions": 1
+   },
+   {
+    "ticker": "$DOGE",
+    "mentions": 1
    }
   ],
   "headlines": [
-   "Bitcoin tops $81,000 ahead of Fed decision as memecoins lead altcoin gains",
-   "Dogecoin Faces a Crucial Test While PEPE Eyes a Channel Breakout \u2013 Will Memecoin Mania Return?",
-   "Visa to close Crossmint memecoin rewards loophole following The Block investigation: report",
-   "Hunter Biden lashes out after $LAPTOP meme coin collapse",
-   "Exclusive | Hunter Biden (and His Laptop) Enter the Cryptosphere With New Meme Coin"
+   "Mika Posts Private Key: Memecoin Drained in 81 Seconds",
+   "Argentine judge clears President Milei of wrongdoing in meme coin scandal",
+   "THE OPPOSITE OF TRUMP! Governor Newsom signs bills to crack down on corruption, including meme coins by public officials",
+   "A $443 million memecoin frenzy dissolves into nothing\u2014Robinhood and Circle are latest to taste the memecoin boom-and-bust cycle",
+   "Pump.fun (PUMP) Fell 25% in Two Weeks, Nearly 3 Times Solana's Drop. Is Solana's Memecoin Machine Slowing Down?"
   ],
   "scan_movers": [
    {
@@ -677,18 +677,6 @@
     "age_hours": 2.6
    },
    {
-    "symbol": "Foxii",
-    "name": "Foxii",
-    "ca": "J3ReuwckNtcJP1Zhn7wVbfXhTDNTkHxozQWWAwxWpump",
-    "dex": "pumpswap",
-    "mcap_usd": 452011,
-    "vol_5m": 21170,
-    "vol_1h": 241300,
-    "change_1h": -29.76,
-    "buy_ratio_5m": 0.58,
-    "age_hours": 4.4
-   },
-   {
     "symbol": "SI",
     "name": "Super Irresistible",
     "ca": "E5pZM5GH1WaCWxNnDvhtWVjvzR7P5iUqXU8epki2pump",
@@ -701,88 +689,64 @@
     "age_hours": 0.4
    },
    {
-    "symbol": "HYPERCHAN",
-    "name": "Hyper-Chan",
-    "ca": "3ApVr1xphYMpi9dn3rpqU4hwvpmCQDVwxET1rdCDpump",
-    "dex": "pumpswap",
-    "mcap_usd": 1799931,
-    "vol_5m": 11973,
-    "vol_1h": 186891,
-    "change_1h": 7.79,
-    "buy_ratio_5m": 0.64,
-    "age_hours": 3.4
-   },
-   {
-    "symbol": "HEXN",
-    "name": "Hexncoin",
-    "ca": "ANVLA6eKiAq4nstD2Sg3SZhfVkSEwfnGccn12UQWpump",
-    "dex": "pumpswap",
-    "mcap_usd": 526917,
-    "vol_5m": 10338,
-    "vol_1h": 165215,
-    "change_1h": 30.6,
-    "buy_ratio_5m": 0.85,
-    "age_hours": 13.9
-   },
-   {
     "symbol": "STABLEPAD",
     "name": "StablePad",
     "ca": "AABM3NrYSwKMsEDyanuskY43EH6ySbPpdPZNG1u7pump",
     "dex": "pumpswap",
-    "mcap_usd": 28265,
-    "vol_5m": 2591,
-    "vol_1h": 97833,
-    "change_1h": -26.26,
-    "buy_ratio_5m": 0.51,
-    "age_hours": 0.7
-   },
-   {
-    "symbol": "UP",
-    "name": "Ultimate Ponzi",
-    "ca": "EQ7gCEMvQxC48PYfuPWwXVXxYuvGabpPWcCT1okvpump",
-    "dex": "pumpswap",
-    "mcap_usd": 2949,
-    "vol_5m": 12,
-    "vol_1h": 55592,
-    "change_1h": -92.82,
-    "buy_ratio_5m": 0.0,
+    "mcap_usd": 20512,
+    "vol_5m": 726,
+    "vol_1h": 100613,
+    "change_1h": -46.49,
+    "buy_ratio_5m": 0.62,
     "age_hours": 0.9
    },
    {
-    "symbol": "p/acc",
-    "name": "Privacy Accelerationism",
-    "ca": "3rfnkLkDS4ierei4PTPR54hg8UtJGxb37R5zRYURpump",
+    "symbol": "ZERO",
+    "name": "Zerocoin",
+    "ca": "Ddwf94wedgCuMHAkwgti8A7sL2CxvBYJStJBj2cFpump",
+    "dex": "pumpswap",
+    "mcap_usd": 3466,
+    "vol_5m": 309,
+    "vol_1h": 65113,
+    "change_1h": -91.25,
+    "buy_ratio_5m": 0.67,
+    "age_hours": 0.7
+   },
+   {
+    "symbol": "BEAST",
+    "name": "Hypebeast",
+    "ca": "3mh5pgk58HPZwEinnZNUbsJpUoyqYa23zS2n442Zpump",
     "dex": "pumpfun",
-    "mcap_usd": 17924,
-    "vol_5m": 40027,
-    "vol_1h": 50718,
-    "change_1h": 412,
-    "buy_ratio_5m": 0.61,
-    "age_hours": 0.1
+    "mcap_usd": 27144,
+    "vol_5m": 22182,
+    "vol_1h": 63388,
+    "change_1h": 539,
+    "buy_ratio_5m": 0.56,
+    "age_hours": 0.3
    },
    {
     "symbol": "ANONYMOUSE",
     "name": "Anonymouse",
     "ca": "J9ZeznJEReSFmUzwnvQspTvJCtkNb28YiiucjxU9pump",
     "dex": "pumpfun",
-    "mcap_usd": 3774,
-    "vol_5m": 11329,
-    "vol_1h": 44091,
-    "change_1h": 37.6,
-    "buy_ratio_5m": 0.46,
-    "age_hours": 0.2
+    "mcap_usd": 3152,
+    "vol_5m": 9,
+    "vol_1h": 44447,
+    "change_1h": 14.91,
+    "buy_ratio_5m": 0.33,
+    "age_hours": 0.4
    },
    {
     "symbol": "perpetual",
     "name": "perpetual",
     "ca": "3yRD5rsbikyJoVGjCp11H6ZnYRySEMXqdfnvGvJSperp",
     "dex": "pumpswap",
-    "mcap_usd": 2230,
+    "mcap_usd": 2218,
     "vol_5m": 0,
     "vol_1h": 43492,
-    "change_1h": -94.9,
+    "change_1h": -94.93,
     "buy_ratio_5m": null,
-    "age_hours": 0.8
+    "age_hours": 0.9
    },
    {
     "symbol": "DESSA",
@@ -797,28 +761,28 @@
     "age_hours": 90.1
    },
    {
-    "symbol": "Tony",
-    "name": "Chad from the future",
-    "ca": "DsojaQv7G2bsL7uErhKoXDbfeLQ1tqm5aGQNp86Bpump",
-    "dex": "pumpfun",
-    "mcap_usd": 3865,
-    "vol_5m": 35,
-    "vol_1h": 22477,
-    "change_1h": -71.91,
-    "buy_ratio_5m": 0.67,
-    "age_hours": 1.4
+    "symbol": "UP",
+    "name": "Ultimate Ponzi",
+    "ca": "EQ7gCEMvQxC48PYfuPWwXVXxYuvGabpPWcCT1okvpump",
+    "dex": "pumpswap",
+    "mcap_usd": 2855,
+    "vol_5m": 81,
+    "vol_1h": 37384,
+    "change_1h": -91.03,
+    "buy_ratio_5m": 0.33,
+    "age_hours": 1.0
    },
    {
-    "symbol": "BITCAT",
-    "name": "BitCat Coin",
-    "ca": "9hzqsjCkxq3dQkfSkpRM1zk3NmLofHVBcwzKdvj3pump",
-    "dex": "pumpswap",
-    "mcap_usd": 93262,
-    "vol_5m": 1301,
-    "vol_1h": 20837,
-    "change_1h": -0.27,
-    "buy_ratio_5m": 0.48,
-    "age_hours": 3.8
+    "symbol": "ANONPAD",
+    "name": "AnonPad",
+    "ca": "5PNEHthvGiLcJP9pVfzwuVywBfQhJqUExK7fwNXvpump",
+    "dex": "pumpfun",
+    "mcap_usd": 11930,
+    "vol_5m": 23772,
+    "vol_1h": 23772,
+    "change_1h": 131,
+    "buy_ratio_5m": 0.62,
+    "age_hours": 0.1
    },
    {
     "symbol": "Catori",
@@ -833,16 +797,52 @@
     "age_hours": 2.9
    },
    {
+    "symbol": "BITCAT",
+    "name": "BitCat Coin",
+    "ca": "9hzqsjCkxq3dQkfSkpRM1zk3NmLofHVBcwzKdvj3pump",
+    "dex": "pumpswap",
+    "mcap_usd": 98264,
+    "vol_5m": 1204,
+    "vol_1h": 15968,
+    "change_1h": 10.27,
+    "buy_ratio_5m": 0.42,
+    "age_hours": 4.2
+   },
+   {
     "symbol": "GATO",
     "name": "GTA6CAT",
     "ca": "HsprHxBRgiVaQdRf3TnKNuZZtaX9JUSPgMFdAkk6pump",
     "dex": "pumpswap",
-    "mcap_usd": 4113316,
-    "vol_5m": 968,
-    "vol_1h": 13824,
-    "change_1h": -3.43,
-    "buy_ratio_5m": 0.39,
-    "age_hours": 1578.8
+    "mcap_usd": 4046990,
+    "vol_5m": 662,
+    "vol_1h": 14498,
+    "change_1h": -4.02,
+    "buy_ratio_5m": 0.28,
+    "age_hours": 1579.0
+   },
+   {
+    "symbol": "calm",
+    "name": "stay calm",
+    "ca": "4HSHFbFiKuMvZW7yGiDTab17B63MzBkkhadFKxhkpump",
+    "dex": "pumpswap",
+    "mcap_usd": 69821,
+    "vol_5m": 752,
+    "vol_1h": 11673,
+    "change_1h": -18.5,
+    "buy_ratio_5m": 0.45,
+    "age_hours": 7.8
+   },
+   {
+    "symbol": "NETWORK",
+    "name": "Network Coin",
+    "ca": "8THZ69JP2ErZuHVj4G5rcwkFfsQafp5mQsaoQReApump",
+    "dex": "pumpswap",
+    "mcap_usd": 193967,
+    "vol_5m": 769,
+    "vol_1h": 10834,
+    "change_1h": -2.52,
+    "buy_ratio_5m": 0.59,
+    "age_hours": 129.6
    }
   ]
  },
@@ -852,27 +852,16 @@
   "equity_usd": 95.81,
   "progress_pct": 9.6,
   "days_left": 5.9,
-  "needed_daily_growth_pct": 48.8
+  "needed_daily_growth_pct": 48.9
  },
  "last_scan": {
-  "at": 1793344761.721782,
-  "tokens": 2,
-  "pairs": 1,
-  "passed_market_filters": 1,
-  "researched": 1
+  "at": 1793345632.5736399,
+  "tokens": 6,
+  "pairs": 5,
+  "passed_market_filters": 0,
+  "researched": 0
  },
  "recent_looks": [
-  {
-   "ts": "2026-10-30T06:07:41Z",
-   "symbol": "anon",
-   "ca": "D31CHHiJoEg4qMMB7s9eRQrHzRbapHgWqSxEsgrFnABi",
-   "setup": "MIGRATED",
-   "mcap_usd": 36163,
-   "vol_5m": 8483,
-   "outcome": "PASS",
-   "conviction": 2,
-   "reason": "PASS: one minute old, already 22% off the bond spike, top 10 at 24.9% and a 5.2% bundle. There's no base to buy and no story behind it (V1, V3, V6)."
-  },
   {
    "ts": "2026-10-30T06:07:58Z",
    "symbol": "jeff",
@@ -1026,15 +1015,26 @@
    "outcome": "REJECT",
    "conviction": null,
    "reason": "RugCheck danger: Symbol Mismatch Token: \"TraderTraitor\", File: \"TraderTrai\""
+  },
+  {
+   "ts": "2026-10-30T07:32:51Z",
+   "symbol": "BEAST",
+   "ca": "3mh5pgk58HPZwEinnZNUbsJpUoyqYa23zS2n442Zpump",
+   "setup": "FINAL_STRETCH",
+   "mcap_usd": 27144,
+   "vol_5m": 22182,
+   "outcome": "REJECT",
+   "conviction": null,
+   "reason": "Top 10 hold 28.0% ex-pool (>25%) (V13)"
   }
  ],
  "skip_review": {
   "top 10 over 25%": {
-   "blocked": 15,
+   "blocked": 16,
    "ran": 2,
    "dumped": 11,
    "flat": 0,
-   "pending": 2,
+   "pending": 3,
    "ran_examples": [
     {
      "symbol": "HYPERGAMY",
@@ -1154,10 +1154,10 @@
   },
   "RugCheck danger": {
    "blocked": 8,
-   "ran": 3,
+   "ran": 4,
    "dumped": 3,
    "flat": 1,
-   "pending": 1,
+   "pending": 0,
    "ran_examples": [
     {
      "symbol": "HYPEINU",
