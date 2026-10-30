@@ -1,13 +1,13 @@
 # Trencher live report
 
-Updated 2026-10-30T21:43:37Z (paper trading, never real money)
+Updated 2026-10-30T21:58:45Z (paper trading, never real money)
 
 - Equity: $90.20 (-9.8% vs $100 start)
-- Goal: $1,000 by 2026-11-05 05:03Z (pressing for it): at 9% of it, 5.3 days left, needs +57.4% a day from here
+- Goal: $1,000 by 2026-11-05 05:03Z (pressing for it): at 9% of it, 5.3 days left, needs +57.5% a day from here
 - Closed trades: 14, 2 wins
 - Fees paid: $8.84 (axiom $1.30, network $6.14, pool $1.26), plus $1.92 lost to slippage
 - New trades: on
-- Brain: subscription, 595 calls and 1 plan-limit hits in 48h
+- Brain: subscription, 596 calls and 1 plan-limit hits in 48h
 
 ## Scorecard (after fees)
 - 14 closed, 2 won (14%), net $-9.80
@@ -74,9 +74,19 @@ Updated 2026-10-30T21:43:37Z (paper trading, never real money)
   CA `J5jxG3PFaWpj6BLEQExyC6FSqSvaTKNdQ9G3sZwBpump`
 
 ## Last scan
-- 21:43Z: 10 coins, 10 with pairs, 0 passed the market filters, 0 researched
+- 21:57Z: 4 coins, 4 with pairs, 0 passed the market filters, 0 researched
 
 ## Coins it looked at, and why it passed
+- 21:53Z PILLSEY (MIGRATED, $284,941 mcap, $15,566 5m vol): PASS at conviction 3, PASS — stopped out of this coin under an hour ago, it's mid-range at $285k against a $464k high, and 5m volume is only 0.35x its hourly pace. Re-entry needs it to reclaim the high. (V1, V6)  
+  CA `J5jxG3PFaWpj6BLEQExyC6FSqSvaTKNdQ9G3sZwBpump`
+- 21:51Z JOB (MIGRATED, $3,370,660 mcap, $4,440 5m vol): PASS at conviction 3, PASS — 5.4% off the high with $4.4k on the 5m at 0.81x pace. That's chasing a sideways chart nobody's buying (V1, V6).  
+  CA `9Pq7aLAbhDG2tTnS22cm6kuysZVcZpLFE368HWuypump`
+- 21:48Z PFMikol (FINAL_STRETCH, $20,846 mcap, $3,952 5m vol): REJECT, RugCheck danger: Creator history of rugged tokens  
+  CA `9kLtjDF21bmHs3UrmVbJTtvEkuZ8Knx4X2VfeuKHpump`
+- 21:48Z HACKINU (no setup, $4,585 mcap, $0 5m vol): REJECT, Hack story ("hack" in the name or ticker): these tend to go down, owner rule  
+  CA `HD2qqwAeLkyXnboo5cSGSdGw4oHCbvNEvWsgDSgWpump`
+- 21:44Z TUSK (DIP, $58,400 mcap, $25,672 5m vol): REJECT, Dip with fading attention is a falling knife, not a dip (5m at 0.55x the hour's pace, under 0.6x)  
+  CA `8uBobWMhu6hRUn4jaA4kjcgWCjTxgHwHJtPgBePXpump`
 - 21:39Z HYPERCHAN (DIP, $910,249 mcap, $4,994 5m vol): PASS at conviction 3, PASS: 5m volume is $5.0k, under the $10k live-flow bar, and the HYPE crowd is leaving. Third thin-flow bounce on this coin, no thanks. (V1, V6)  
   CA `3ApVr1xphYMpi9dn3rpqU4hwvpmCQDVwxET1rdCDpump`
 - 21:33Z DESSA (MIGRATED, $9,081,538 mcap, $2,926 5m vol): PASS at conviction 2, PASS: $2.9k on the 5-minute with sellers ahead 12 to 7, on a $9M coin sitting 7% under its 24h high. No flow, and I'd be chasing. (V1, V6)  
@@ -87,16 +97,6 @@ Updated 2026-10-30T21:43:37Z (paper trading, never real money)
   CA `8Xg89xT8Ve34sKiYqYuMs46mycREsCA2F362UscRpump`
 - 21:22Z GATO (MIGRATED, $4,422,973 mcap, $2,258 5m vol): REJECT, Dev holds 3.3% (>1%) (V13, V17)  
   CA `HsprHxBRgiVaQdRf3TnKNuZZtaX9JUSPgMFdAkk6pump`
-- 21:19Z PILLSEY (MIGRATED, $332,280 mcap, $125,303 5m vol): BUY at conviction 7, BUY, conviction 7 — PILLSEY is leading the pump.fun-mascot meta on flow ($125k 5m, 4.2x its hourly pace, 84% buys), it's 19.8% off the high and bundles came back clean. But it's 11 minutes old on a domain that's 0 days old, so it's a 7, not an 8 (V1, V6, V13).  
-  CA `J5jxG3PFaWpj6BLEQExyC6FSqSvaTKNdQ9G3sZwBpump`
-- 21:17Z STANK (MIGRATED, $216,917 mcap, $2,035 5m vol): PASS at conviction 3, PASS — 5m volume $2k with sellers 2:1. Clean holders, no crowd. Blocker: no live flow (V1, V6).  
-  CA `5wsjHxT5nW5jQuVupXUNnYszF3WoWCfGGk9LMcsCJzY8`
-- 21:14Z TUSK (FINAL_STRETCH, $27,677 mcap, $6,349 5m vol): PASS at conviction 2, PASS: "Official Donald Tusk" uses a sitting prime minister's name, and it's 0.8% off its high after an 875% hourly candle. Political coin plus chasing. (V13, V1)  
-  CA `FGGzCW5z9Cv8vyBRniKiL6rKyUJ9nahX3sPW2REdpump`
-- 21:05Z JOB (MIGRATED, $3,302,276 mcap, $5,097 5m vol): PASS at conviction 3, PASS: chasing. JOB is only 7.3% off its $3.56M high, 5m volume is $5k with sellers ahead 43 to 33, and the story isn't on the board right now (V1, V6).  
-  CA `9Pq7aLAbhDG2tTnS22cm6kuysZVcZpLFE368HWuypump`
-- 21:00Z xpad (FINAL_STRETCH, $28,448 mcap, $23,163 5m vol): PASS at conviction 3, PASS: six minutes old, 329 buys against 328 sells, and the 20 coins sharing its ticker mean I can't call it the original. That's a coin flip at bonding, not a setup (V1, V13).  
-  CA `EV116Y5Y6cYvcugmXwLVZPhbZus1NxV5WbArJxtUxxxx`
 
 ## What its skips did next (last 48h)
 A skip "ran" if the coin reached the first target (1.5x) from the skip price before a 20% drop, "dumped" if the drop came first. Sampled every 10 min, followed 6h.
@@ -121,21 +121,21 @@ A skip "ran" if the coin reached the first target (1.5x) from the skip price bef
     CA `FDwCosavNvMiFB812ajJp3gG7eZ9c4bpgcnY6fDQpump`
   - ran: FLYWHEEL up to 2.23x  
     CA `BWMf44rD724R2bdgHWd88CDTVEjuPNQauw8s6S7ipump`
-- RugCheck danger: blocked 16, ran 5, dumped 10, flat 1, open 0 (saving losses: keep it)
+- RugCheck danger: blocked 17, ran 5, dumped 10, flat 1, open 1 (saving losses: keep it)
   - ran: HYPEINU up to 1.57x  
     CA `6eccVGkbi8cvAYBGzfDmUwFYrMj8eGZF2xyZqZLkpump`
   - ran: ETF up to 1.87x  
     CA `2orqEGSdkm5BMmhdM8TpKCpACk32a3Zaj3Lef7ceqsc6`
   - ran: Bear up to 2.66x  
     CA `Dv6gYYkTav8Pm36UwAywxNCccwSZV1VL1tjiSpDLpump`
-- falling knife (code): blocked 16, ran 2, dumped 13, flat 0, open 1 (saving losses: keep it)
+- falling knife (code): blocked 17, ran 2, dumped 13, flat 0, open 2 (saving losses: keep it)
   - ran: TYGR up to 1.58x  
     CA `5wCqCq6jbppuTocMeq6zd4UywAm64L1QNNxvEDAHpump`
   - ran: AgenC up to 1.88x  
     CA `DDG8rjV3TViCqKRQED2QZq4MEaE1uqXgEiosBNpapump`
 - dev share over 1%: blocked 13, ran 0, dumped 11, flat 1, open 1 (saving losses: keep it)
 - falling knife / no higher low: blocked 11, ran 0, dumped 9, flat 1, open 1 (saving losses: keep it)
-- crowd leaving / fading volume: blocked 8, ran 2, dumped 5, flat 0, open 1 (saving losses: keep it)
+- crowd leaving / fading volume: blocked 9, ran 2, dumped 5, flat 0, open 2 (saving losses: keep it)
   - ran: STABLEPAD up to 2.13x  
     CA `AABM3NrYSwKMsEDyanuskY43EH6ySbPpdPZNG1u7pump`
   - ran: HYDESK up to 1.78x  
@@ -171,13 +171,13 @@ A skip "ran" if the coin reached the first target (1.5x) from the skip price bef
 The meta is pump.fun talking about itself, but it's mostly dying. PILLSEY (Pilly Cupsey, J5jx…pump) is the only coin still running it: $332k cap, $125k on the 5-minute, 84% buys, +597% in the hour, 12 minutes old. Most of the copycats have crashed 80-96% (Pumpfluencer, Miso, CREATOOOR, old Pilly, ROPAD), and CREATOR has only $1.3k on the 5-minute. Cats are fading: HYPER CAT is at $1.9k after a 96% drop, so the crawler summary that called it the top mover (and named a PILLY contract that isn't in the movers) is stale. A second, smaller theme is brand-new launches. Botnet is skipped as malware-themed, xpad's contract ends in xxxx instead of pump so it needs checking, TUSK is a hard no because it's named after a real politician (V13), and VYPER has too little volume. The only setup to research is PILLSEY as a MIGRATED trade: buy only a pullback of 10% or more from its local high with 5-minute volume at least 0.7x its hourly pace, after clean holder and bundle checks. The owner's deadline doesn't change the conviction score.
 
 ## Moving most in its scans, last 30 min (1h volume)
-- PILLSEY: $355,388 1h vol, $332,280 mcap, +597% 1h  
+- TUSK: $556,538 1h vol, $58,400 mcap, +27% 1h  
+  CA `8uBobWMhu6hRUn4jaA4kjcgWCjTxgHwHJtPgBePXpump`
+- PILLSEY: $533,082 1h vol, $284,941 mcap, +501% 1h  
   CA `J5jxG3PFaWpj6BLEQExyC6FSqSvaTKNdQ9G3sZwBpump`
 - PILLY: $292,899 1h vol, $43,121 mcap, -74% 1h  
   CA `2WVthqDUqTfmKniBvXz2guGwCAJSNTHKGnebUeBvpump`
+- xpad: $189,304 1h vol, $2,028 mcap, -95% 1h  
+  CA `EV116Y5Y6cYvcugmXwLVZPhbZus1NxV5WbArJxtUxxxx`
 - GLITCH: $127,520 1h vol, $3,203,189 mcap, +11% 1h  
   CA `8Xg89xT8Ve34sKiYqYuMs46mycREsCA2F362UscRpump`
-- Pumpfluencer: $115,189 1h vol, $13,426 mcap, -74% 1h  
-  CA `6C1JdN6V7B4beZGxZxjhCGCncmWt22zD8i4Q4cq1pump`
-- HC: $98,354 1h vol, $1,961 mcap, -97% 1h  
-  CA `8GUoRZCSzjfoA47FRBJ4MuNjjpyn3pWZDTkRePWNpump`
