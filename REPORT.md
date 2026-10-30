@@ -1,13 +1,13 @@
 # Trencher live report
 
-Updated 2026-10-30T16:40:52Z (paper trading, never real money)
+Updated 2026-10-30T16:55:57Z (paper trading, never real money)
 
 - Equity: $93.79 (-6.2% vs $100 start)
-- Goal: $1,000 by 2026-11-05 05:03Z (pressing for it): at 9.4% of it, 5.5 days left, needs +53.6% a day from here
+- Goal: $1,000 by 2026-11-05 05:03Z (pressing for it): at 9.4% of it, 5.5 days left, needs +53.7% a day from here
 - Closed trades: 13, 2 wins
 - Fees paid: $7.85 (axiom $1.10, network $5.57, pool $1.04), plus $1.62 lost to slippage
 - New trades: on
-- Brain: subscription, 633 calls and 0 plan-limit hits in 48h
+- Brain: subscription, 627 calls and 0 plan-limit hits in 48h
 
 ## Scorecard (after fees)
 - 13 closed, 2 won (15%), net $-6.21
@@ -74,9 +74,17 @@ Updated 2026-10-30T16:40:52Z (paper trading, never real money)
   CA `3ApVr1xphYMpi9dn3rpqU4hwvpmCQDVwxET1rdCDpump`
 
 ## Last scan
-- 16:40Z: 4 coins, 4 with pairs, 0 passed the market filters, 0 researched
+- 16:55Z: 1 coins, 1 with pairs, 0 passed the market filters, 0 researched
 
 ## Coins it looked at, and why it passed
+- 16:47Z CATPAD (DIP, $78,419 mcap, $4,755 5m vol): REJECT, Dip with fading attention is a falling knife, not a dip (5m at 0.51x the hour's pace, under 0.6x)  
+  CA `2gTbp2gwH46rqExzabSyrdR3294SLwCp2rSqWDS6Sim1`
+- 16:47Z STANK (DIP, $184,237 mcap, $3,239 5m vol): PASS at conviction 3, PASS: seven red 15m closes in a row and −17% on the 5m with no higher low. Falling knife on $3.2k of flow. (V1)  
+  CA `5wsjHxT5nW5jQuVupXUNnYszF3WoWCfGGk9LMcsCJzY8`
+- 16:46Z HACKHOUSE (no setup, $3,334 mcap, $33 5m vol): REJECT, Hack story ("hack" in the name or ticker): these tend to go down, owner rule  
+  CA `9zRNZjZZC94Rgw1ddwzfvqkdJDQpmn9rhmGiqPyVpump`
+- 16:44Z Inkky (FINAL_STRETCH, $35,733 mcap, $47,670 5m vol): PASS at conviction 3, PASS: it's 9 minutes old, up 142% in the last 5 minutes, sitting right at its high, and one bundle holds 4.1%. Blocker: chasing a pre-bond spike. (V1, V3)  
+  CA `3sSGvtwsUnKkBPWrmrvgVZRMvNpPJHhFQA998rs1pump`
 - 16:39Z PULL (MIGRATED, $86,453 mcap, $2,520 5m vol): REJECT, RugCheck danger: Top 10 holders high ownership  
   CA `3Pv7x6YvXw2cHPAhcwKAGwPo56MvpZ1ZSTw2P2qqpump`
 - 16:33Z CTO (MIGRATED, $191,277 mcap, $6,193 5m vol): PASS at conviction 3, PASS — 1.4% off the high with 5m volume at 0.35x its hourly pace. Chasing a fading chart (V1, V6).  
@@ -89,14 +97,6 @@ Updated 2026-10-30T16:40:52Z (paper trading, never real money)
   CA `HpH3XrbTCtLnt1BRJ4BWJQXgbDXHZDzs76hssf42pump`
 - 16:26Z 咪咪 (FINAL_STRETCH, $31,496 mcap, $22,626 5m vol): REJECT, Top 10 hold 26.7% ex-pool (>25%) (V13)  
   CA `JrvC7qKnGVn163q1u11VDUno7JtJ4ME2euiJkaupump`
-- 16:18Z SAYLUR (MIGRATED, $158,794 mcap, $2,574 5m vol): REJECT, RugCheck danger: Top 10 holders high ownership  
-  CA `AobUjTvWqxjncsSLqeNBewqNCzbqJre4tS9X2dtepump`
-- 16:18Z SAFU (DIP, $199,180 mcap, $21,256 5m vol): PASS at conviction 3, PASS — blocker: hack story. SAFU is the Binance-hack catchphrase, launched while 'binance hack' tops the radar, with a SAFU copy already at −99%. Holders are clean, but the story comes from a hack headline (owner rule, V1/V3).  
-  CA `kziXxCJLQMpkiuoyAkgHELxGcKDs4hNoeWdnpgkpump`
-- 16:15Z GATO (MIGRATED, $4,408,216 mcap, $2,072 5m vol): REJECT, Dev holds 3.3% (>1%) (V13, V17)  
-  CA `HsprHxBRgiVaQdRf3TnKNuZZtaX9JUSPgMFdAkk6pump`
-- 16:14Z Reef (MIGRATED, $32,645 mcap, $2,203 5m vol): PASS at conviction 2, PASS: the crowd is leaving. 5m volume is $2.2k, only 0.23x its hourly pace, sells outnumber buys, and it's down 23% on the 5m. That's a falling knife on a launchpad LARP whose domain is 7 hours old (V1, V6).  
-  CA `HJqY1zuc8fEgVVdBy7YGe5dr9g4wBiqonw4KPfdepump`
 
 ## What its skips did next (last 48h)
 A skip "ran" if the coin reached the first target (1.5x) from the skip price before a 20% drop, "dumped" if the drop came first. Sampled every 10 min, followed 6h.
@@ -107,14 +107,14 @@ A skip "ran" if the coin reached the first target (1.5x) from the skip price bef
     CA `FDwCosavNvMiFB812ajJp3gG7eZ9c4bpgcnY6fDQpump`
   - ran: ZERO up to 1.8x  
     CA `Ddwf94wedgCuMHAkwgti8A7sL2CxvBYJStJBj2cFpump`
-- too new / sniping: blocked 26, ran 6, dumped 20, flat 0, open 0 (saving losses: keep it)
+- too new / sniping: blocked 27, ran 6, dumped 21, flat 0, open 0 (saving losses: keep it)
   - ran: ZI up to 1.7x  
     CA `5q45EK4mRhuiuBmRYoaDs4m2xweaV7gn3zsFhsvcpump`
   - ran: BEAR up to 1.59x  
     CA `6i4ebPt8dpGchB2A1ELpTz3B72dy5DkzNpFMNtUSpump`
   - ran: HyPepe up to 1.5x  
     CA `G8TdzgpUQXQAxJvarNKPXRGv2kh9CsJDK7dCC7Xupump`
-- near the high / chasing: blocked 19, ran 2, dumped 11, flat 2, open 4 (saving losses: keep it)
+- near the high / chasing: blocked 19, ran 2, dumped 12, flat 2, open 3 (saving losses: keep it)
   - ran: OREN up to 1.58x  
     CA `57vAaMsnAJXkvULtAz7fsi6gRn3bHRJFJsJV1okNpump`
   - ran: Catori up to 1.52x  
@@ -126,15 +126,15 @@ A skip "ran" if the coin reached the first target (1.5x) from the skip price bef
     CA `2orqEGSdkm5BMmhdM8TpKCpACk32a3Zaj3Lef7ceqsc6`
   - ran: Bear up to 2.66x  
     CA `Dv6gYYkTav8Pm36UwAywxNCccwSZV1VL1tjiSpDLpump`
-- dev share over 1%: blocked 10, ran 0, dumped 7, flat 0, open 3 (saving losses: keep it)
+- dev share over 1%: blocked 10, ran 0, dumped 7, flat 1, open 2 (saving losses: keep it)
 - falling knife (code): blocked 10, ran 0, dumped 9, flat 0, open 1 (saving losses: keep it)
-- crowd leaving / fading volume: blocked 9, ran 2, dumped 5, flat 0, open 2 (saving losses: keep it)
+- falling knife / no higher low: blocked 9, ran 0, dumped 7, flat 1, open 1 (saving losses: keep it)
+- crowd leaving / fading volume: blocked 9, ran 2, dumped 6, flat 0, open 1 (saving losses: keep it)
   - ran: STABLEPAD up to 2.13x  
     CA `AABM3NrYSwKMsEDyanuskY43EH6ySbPpdPZNG1u7pump`
   - ran: HYDESK up to 1.78x  
     CA `BzndCZ2ZrjUA21aVW7t6AWEENRAps3EmdQg9hf94pump`
-- falling knife / no higher low: blocked 8, ran 0, dumped 6, flat 1, open 1 (saving losses: keep it)
-- hack story (owner rule): blocked 7, ran 0, dumped 4, flat 2, open 1 (saving losses: keep it)
+- hack story (owner rule): blocked 7, ran 0, dumped 3, flat 2, open 2 (saving losses: keep it)
 - bundles over the line: blocked 4, ran 0, dumped 3, flat 0, open 1 (saving losses: keep it)
 
 ## Rules it changed from results and skips
@@ -163,13 +163,13 @@ A skip "ran" if the coin reached the first target (1.5x) from the skip price bef
 The meta right now is fresh, sub-1-hour launches running joke characters, and cats are the theme showing up across the most coins. Elon The Troller ($446k, $74k 5m volume, +838% on the hour, 80% buys) is the loudest. Space Cat (SPACECAT, BLN4…pump) is at $202k with $44k 5m volume and +452% on the hour; it's clearly the original, and the NEBULA "Space Cat" vamp (no pump suffix) is dead at -81%. Cats are rising on the new launches (SPACECAT, nomnomnomcat on the curve) but fading on the older ones: CATPAD has dropped to $2.1k 5m volume against a $307k hour, which is a dead chart and not a dip. Crypto Final Boss isn't even on the movers list anymore, so the crawler's summary is stale, and its "SAFU -99%" line conflicts with today's scan showing SAFU at $199k and +155%, so SAFU stays untouched until checks explain it. Setups I'd research now: 1) ELONTROLL as MIGRATED, but only on a pullback of at least 10% off the local high with 5m volume at 0.7x or more of its hourly pace, because buying a vertical +838% candle makes me exit liquidity (V1). 2) SPACECAT, same pullback rule, as the original cat of the hour (V1, V13). 3) DODGY ($14.5k, $20k 5m) and "only the paranoid survive" ($21k, $18k 5m) as FINAL_STRETCH candidates if holder and bundle checks come back clean. Both have 5m volume above market cap, so I'm assuming they're farms until the checks say otherwise. LAPTOP is out under the politician rule (V13), and the hack-story coins are skipped.
 
 ## Moving most in its scans, last 30 min (1h volume)
-- SPACECAT: $309,970 1h vol, $2,030 mcap, -98% 1h  
-  CA `61h4rUn7C21QNv1NJADc2oAxpAhr7f2WGqbXRDEupump`
 - $19: $306,697 1h vol, $113,656 mcap, +43% 1h  
   CA `pa6bZZbPUj8JVciH9b2DrcqmDuDwkvPBAZnWHKnpump`
-- SAFU: $280,383 1h vol, $199,180 mcap, +155% 1h  
-  CA `kziXxCJLQMpkiuoyAkgHELxGcKDs4hNoeWdnpgkpump`
 - CTO: $212,700 1h vol, $191,277 mcap, +10% 1h  
   CA `G4vGFQjeqYdbfckvipiuyusFgY1jqAK23mbYG4H8pump`
-- Foxii: $162,814 1h vol, $134,941 mcap, -2% 1h  
-  CA `J3ReuwckNtcJP1Zhn7wVbfXhTDNTkHxozQWWAwxWpump`
+- SPACECAT: $160,351 1h vol, $1,972 mcap, -99% 1h  
+  CA `61h4rUn7C21QNv1NJADc2oAxpAhr7f2WGqbXRDEupump`
+- PROBE: $157,111 1h vol, $45,649 mcap, +17% 1h  
+  CA `DR3Jtxwzkw9uBpi6Bz7qJX7zuFSJkNKXthD8nB1mpump`
+- $PERIODTPE: $156,942 1h vol, $85,220 mcap, +114% 1h  
+  CA `HpH3XrbTCtLnt1BRJ4BWJQXgbDXHZDzs76hssf42pump`
