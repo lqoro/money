@@ -11,5 +11,8 @@
   "equity_usd": 1000,
   "deadline": "2026-11-05T05:03:00Z",
   "set_at": "2026-10-29T05:03:00Z"
- }
+ },
+ "avoid_terms": [
+  "GE3qKrtuVodNTmGAUqPyEvwc1kD6kAYVLyskQWkqpump"
+ ]
 }
