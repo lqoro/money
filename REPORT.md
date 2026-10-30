@@ -1,9 +1,9 @@
 # Trencher live report
 
-Updated 2026-10-30T13:24:09Z (paper trading, never real money)
+Updated 2026-10-30T13:39:10Z (paper trading, never real money)
 
 - Equity: $93.79 (-6.2% vs $100 start)
-- Goal: $1,000 by 2026-11-05 05:03Z (pressing for it): at 9.4% of it, 5.7 days left, needs +52% a day from here
+- Goal: $1,000 by 2026-11-05 05:03Z (pressing for it): at 9.4% of it, 5.6 days left, needs +52.1% a day from here
 - Closed trades: 13, 2 wins
 - Fees paid: $7.85 (axiom $1.10, network $5.57, pool $1.04), plus $1.62 lost to slippage
 - New trades: on
@@ -74,9 +74,11 @@ Updated 2026-10-30T13:24:09Z (paper trading, never real money)
   CA `3ApVr1xphYMpi9dn3rpqU4hwvpmCQDVwxET1rdCDpump`
 
 ## Last scan
-- 13:23Z: 0 coins, 0 with pairs, 0 passed the market filters, 0 researched
+- 13:38Z: 1 coins, 1 with pairs, 0 passed the market filters, 0 researched
 
 ## Coins it looked at, and why it passed
+- 13:25Z Kim (FINAL_STRETCH, $24,758 mcap, $23,150 5m vol): PASS at conviction 3, PASS: Kim Po is a late copy on a Kim joke whose lead coin just rugged 98.6%, and it's down 30% in 5 minutes on the curve. That's the crowd leaving (V1, V13).  
+  CA `Bp32zY54GHujmYPQkTaUwdoxvLPd2dFPHtXeB9rWpump`
 - 13:19Z HYDESK (FINAL_STRETCH, $21,810 mcap, $3,226 5m vol): PASS at conviction 3, PASS — $3.2k 5m on a −20% candle, an empty half-day-old 'tech' site with no CA, riding a fading Hyperliquid theme. LARP in the death zone (V1, V6).  
   CA `BzndCZ2ZrjUA21aVW7t6AWEENRAps3EmdQg9hf94pump`
 - 13:19Z HACKCOIN (FINAL_STRETCH, $20,470 mcap, $55,384 5m vol): REJECT, Hack story ("hack" in the name or ticker): these tend to go down, owner rule  
@@ -95,8 +97,6 @@ Updated 2026-10-30T13:24:09Z (paper trading, never real money)
   CA `ANVLA6eKiAq4nstD2Sg3SZhfVkSEwfnGccn12UQWpump`
 - 13:09Z PURPS (MIGRATED, $97,942 mcap, $23,960 5m vol): REJECT, RugCheck danger: Creator history of rugged tokens  
   CA `EFo8uB6wD739GgtGoYbAwxM6Pp8iCzM8XGf7jQW7pump`
-- 13:06Z calm (MIGRATED, $88,488 mcap, $2,141 5m vol): REJECT, Dev holds 1.8% (>1%) (V13, V17)  
-  CA `4HSHFbFiKuMvZW7yGiDTab17B63MzBkkhadFKxhkpump`
 
 ## What its skips did next (last 48h)
 A skip "ran" if the coin reached the first target (1.5x) from the skip price before a 20% drop, "dumped" if the drop came first. Sampled every 10 min, followed 6h.
@@ -107,32 +107,32 @@ A skip "ran" if the coin reached the first target (1.5x) from the skip price bef
     CA `FDwCosavNvMiFB812ajJp3gG7eZ9c4bpgcnY6fDQpump`
   - ran: ZERO up to 1.8x  
     CA `Ddwf94wedgCuMHAkwgti8A7sL2CxvBYJStJBj2cFpump`
-- too new / sniping: blocked 21, ran 5, dumped 15, flat 0, open 1 (saving losses: keep it)
+- too new / sniping: blocked 21, ran 6, dumped 15, flat 0, open 0 (saving losses: keep it)
   - ran: ZI up to 1.7x  
     CA `5q45EK4mRhuiuBmRYoaDs4m2xweaV7gn3zsFhsvcpump`
   - ran: BEAR up to 1.59x  
     CA `6i4ebPt8dpGchB2A1ELpTz3B72dy5DkzNpFMNtUSpump`
   - ran: HyPepe up to 1.5x  
     CA `G8TdzgpUQXQAxJvarNKPXRGv2kh9CsJDK7dCC7Xupump`
-- near the high / chasing: blocked 12, ran 2, dumped 7, flat 2, open 1 (saving losses: keep it)
-  - ran: OREN up to 1.58x  
-    CA `57vAaMsnAJXkvULtAz7fsi6gRn3bHRJFJsJV1okNpump`
-  - ran: Catori up to 1.52x  
-    CA `FDwCosavNvMiFB812ajJp3gG7eZ9c4bpgcnY6fDQpump`
-- RugCheck danger: blocked 12, ran 4, dumped 6, flat 1, open 1 (mixed)
+- RugCheck danger: blocked 13, ran 4, dumped 6, flat 1, open 2 (mixed)
   - ran: HYPEINU up to 1.57x  
     CA `6eccVGkbi8cvAYBGzfDmUwFYrMj8eGZF2xyZqZLkpump`
   - ran: ETF up to 1.87x  
     CA `2orqEGSdkm5BMmhdM8TpKCpACk32a3Zaj3Lef7ceqsc6`
   - ran: Bear up to 2.66x  
     CA `Dv6gYYkTav8Pm36UwAywxNCccwSZV1VL1tjiSpDLpump`
+- near the high / chasing: blocked 12, ran 2, dumped 8, flat 2, open 0 (saving losses: keep it)
+  - ran: OREN up to 1.58x  
+    CA `57vAaMsnAJXkvULtAz7fsi6gRn3bHRJFJsJV1okNpump`
+  - ran: Catori up to 1.52x  
+    CA `FDwCosavNvMiFB812ajJp3gG7eZ9c4bpgcnY6fDQpump`
 - dev share over 1%: blocked 9, ran 0, dumped 7, flat 0, open 2 (saving losses: keep it)
-- falling knife / no higher low: blocked 8, ran 0, dumped 5, flat 1, open 2 (saving losses: keep it)
+- falling knife / no higher low: blocked 8, ran 0, dumped 6, flat 1, open 1 (saving losses: keep it)
 - crowd leaving / fading volume: blocked 8, ran 1, dumped 4, flat 0, open 3 (saving losses: keep it)
   - ran: STABLEPAD up to 2.13x  
     CA `AABM3NrYSwKMsEDyanuskY43EH6ySbPpdPZNG1u7pump`
 - falling knife (code): blocked 5, ran 0, dumped 5, flat 0, open 0 (saving losses: keep it)
-- hack story (owner rule): blocked 5, ran 0, dumped 1, flat 2, open 2 (too few played out to judge)
+- hack story (owner rule): blocked 5, ran 0, dumped 2, flat 2, open 1 (too few played out to judge)
 - bundles over the line: blocked 3, ran 0, dumped 3, flat 0, open 0 (saving losses: keep it)
 
 ## Rules it changed from results and skips
@@ -165,9 +165,9 @@ Meta: rotation into older migrated coins pulling back while buyers keep coming, 
   CA `EFo8uB6wD739GgtGoYbAwxM6Pp8iCzM8XGf7jQW7pump`
 - HEXN: $235,586 1h vol, $345,209 mcap, -17% 1h  
   CA `ANVLA6eKiAq4nstD2Sg3SZhfVkSEwfnGccn12UQWpump`
-- GTA: $149,537 1h vol, $285,573 mcap, +570% 1h  
-  CA `6GCPmGAvH986ZE9psfHK5viH8haFL1c4KLNGXWiKpump`
+- Jesus: $153,598 1h vol, $18,397 mcap, -52% 1h  
+  CA `6PNq3Dduz73HHFBFt1KYRqDEsgcPQE6BDDRgxAFupump`
 - Foxii: $138,686 1h vol, $256,005 mcap, -14% 1h  
   CA `J3ReuwckNtcJP1Zhn7wVbfXhTDNTkHxozQWWAwxWpump`
-- HYPERCHAN: $98,130 1h vol, $2,112,735 mcap, +16% 1h  
-  CA `3ApVr1xphYMpi9dn3rpqU4hwvpmCQDVwxET1rdCDpump`
+- Kim: $111,167 1h vol, $24,758 mcap, +657% 1h  
+  CA `Bp32zY54GHujmYPQkTaUwdoxvLPd2dFPHtXeB9rWpump`
