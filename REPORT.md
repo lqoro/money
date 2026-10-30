@@ -1,13 +1,13 @@
 # Trencher live report
 
-Updated 2026-10-30T12:53:55Z (paper trading, never real money)
+Updated 2026-10-30T13:08:57Z (paper trading, never real money)
 
 - Equity: $93.79 (-6.2% vs $100 start)
-- Goal: $1,000 by 2026-11-05 05:03Z (pressing for it): at 9.4% of it, 5.7 days left, needs +51.8% a day from here
+- Goal: $1,000 by 2026-11-05 05:03Z (pressing for it): at 9.4% of it, 5.7 days left, needs +51.9% a day from here
 - Closed trades: 13, 2 wins
 - Fees paid: $7.85 (axiom $1.10, network $5.57, pool $1.04), plus $1.62 lost to slippage
 - New trades: on
-- Brain: subscription, 650 calls and 0 plan-limit hits in 48h
+- Brain: subscription, 652 calls and 0 plan-limit hits in 48h
 
 ## Scorecard (after fees)
 - 13 closed, 2 won (15%), net $-6.21
@@ -74,9 +74,15 @@ Updated 2026-10-30T12:53:55Z (paper trading, never real money)
   CA `3ApVr1xphYMpi9dn3rpqU4hwvpmCQDVwxET1rdCDpump`
 
 ## Last scan
-- 12:53Z: 1 coins, 0 with pairs, 0 passed the market filters, 0 researched
+- 13:07Z: 2 coins, 2 with pairs, 0 passed the market filters, 0 researched
 
 ## Coins it looked at, and why it passed
+- 13:06Z calm (MIGRATED, $88,488 mcap, $2,141 5m vol): REJECT, Dev holds 1.8% (>1%) (V13, V17)  
+  CA `4HSHFbFiKuMvZW7yGiDTab17B63MzBkkhadFKxhkpump`
+- 13:06Z NIG (MIGRATED, $56,057 mcap, $3,214 5m vol): PASS at conviction 2, PASS — 10 minutes old, sitting at its own high, $3.2k 5m with sellers ahead of buyers, and 7 other coins share its ticker. Sniping, not a setup. (V1, V5, V6)  
+  CA `2xkczG594A3iYjpJdECVSZooukxu13GwRgGxVTJvpump`
+- 12:55Z GTA (MIGRATED, $285,573 mcap, $20,539 5m vol): REJECT, Top 10 hold 40.8% ex-pool (>25%) (V13)  
+  CA `6GCPmGAvH986ZE9psfHK5viH8haFL1c4KLNGXWiKpump`
 - 12:43Z Jesus (FINAL_STRETCH, $22,025 mcap, $42,560 5m vol): PASS at conviction 3, PASS: Jesuscoin is 5 minutes old on the bonding curve, and three bigger tokens already use the $Jesus ticker. Buying now is sniping a probable vamp, and I'm the slowest player at that table (V5, V6, V1).  
   CA `6PNq3Dduz73HHFBFt1KYRqDEsgcPQE6BDDRgxAFupump`
 - 12:34Z HYDESK (FINAL_STRETCH, $20,158 mcap, $2,960 5m vol): PASS at conviction 3, PASS — $3k 5m volume fading at 0.65x pace, top of a +75% 5m candle, 40-min-old Hyperliquid copy with an empty half-day-old site. (V1, V6)  
@@ -91,21 +97,17 @@ Updated 2026-10-30T12:53:55Z (paper trading, never real money)
   CA `A66kHaKDhK1wGpsPLaxBW6FThCeU4V9LSy3arGkNpump`
 - 12:24Z Foxii (MIGRATED, $243,914 mcap, $8,887 5m vol): PASS at conviction 3, PASS — Foxii is 86.6% off its peak (past my 75% max), 5m volume is $8.9k at 0.62x the hourly pace, and there's no higher low yet. Falling knife (V1, V6).  
   CA `J3ReuwckNtcJP1Zhn7wVbfXhTDNTkHxozQWWAwxWpump`
-- 12:24Z HEXN (MIGRATED, $435,787 mcap, $16,367 5m vol): PASS at conviction 4, PASS — third look at HEXN, same thin "on-chain OS" story with no GitHub and a 1-day-old domain. I've lost on it twice. The clean holders don't change that, and the nearest level only pays 1.17x. (V1, V6)  
-  CA `ANVLA6eKiAq4nstD2Sg3SZhfVkSEwfnGccn12UQWpump`
-- 12:23Z PURPS (MIGRATED, $79,028 mcap, $67,679 5m vol): REJECT, RugCheck danger: Creator history of rugged tokens  
-  CA `EFo8uB6wD739GgtGoYbAwxM6Pp8iCzM8XGf7jQW7pump`
 
 ## What its skips did next (last 48h)
 A skip "ran" if the coin reached the first target (1.5x) from the skip price before a 20% drop, "dumped" if the drop came first. Sampled every 10 min, followed 6h.
-- top 10 over 25%: blocked 22, ran 4, dumped 16, flat 0, open 2 (saving losses: keep it)
+- top 10 over 25%: blocked 23, ran 4, dumped 17, flat 0, open 2 (saving losses: keep it)
   - ran: HYPERGAMY up to 2.05x  
     CA `CUyNDWGdLPXZ3Gyj1H6TBh5pACgu5nY9WNkSqfMApump`
   - ran: Catori up to 1.52x  
     CA `FDwCosavNvMiFB812ajJp3gG7eZ9c4bpgcnY6fDQpump`
   - ran: ZERO up to 1.8x  
     CA `Ddwf94wedgCuMHAkwgti8A7sL2CxvBYJStJBj2cFpump`
-- too new / sniping: blocked 20, ran 4, dumped 15, flat 0, open 1 (saving losses: keep it)
+- too new / sniping: blocked 21, ran 5, dumped 15, flat 0, open 1 (saving losses: keep it)
   - ran: ZI up to 1.7x  
     CA `5q45EK4mRhuiuBmRYoaDs4m2xweaV7gn3zsFhsvcpump`
   - ran: BEAR up to 1.59x  
@@ -124,28 +126,24 @@ A skip "ran" if the coin reached the first target (1.5x) from the skip price bef
     CA `2orqEGSdkm5BMmhdM8TpKCpACk32a3Zaj3Lef7ceqsc6`
   - ran: Bear up to 2.66x  
     CA `Dv6gYYkTav8Pm36UwAywxNCccwSZV1VL1tjiSpDLpump`
-- dev share over 1%: blocked 9, ran 1, dumped 7, flat 0, open 1 (saving losses: keep it)
-  - ran: calm up to 1.53x  
-    CA `4HSHFbFiKuMvZW7yGiDTab17B63MzBkkhadFKxhkpump`
+- dev share over 1%: blocked 9, ran 0, dumped 7, flat 0, open 2 (saving losses: keep it)
 - falling knife / no higher low: blocked 8, ran 0, dumped 5, flat 1, open 2 (saving losses: keep it)
 - crowd leaving / fading volume: blocked 8, ran 1, dumped 4, flat 0, open 3 (saving losses: keep it)
   - ran: STABLEPAD up to 2.13x  
     CA `AABM3NrYSwKMsEDyanuskY43EH6ySbPpdPZNG1u7pump`
-- falling knife (code): blocked 5, ran 0, dumped 4, flat 0, open 1 (saving losses: keep it)
-- bundles over the line: blocked 4, ran 1, dumped 3, flat 0, open 0 (saving losses: keep it)
-  - ran: calm up to 1.53x  
-    CA `4HSHFbFiKuMvZW7yGiDTab17B63MzBkkhadFKxhkpump`
+- falling knife (code): blocked 5, ran 0, dumped 5, flat 0, open 0 (saving losses: keep it)
 - hack story (owner rule): blocked 4, ran 0, dumped 1, flat 2, open 1 (too few played out to judge)
+- bundles over the line: blocked 3, ran 0, dumped 3, flat 0, open 0 (saving losses: keep it)
 
 ## Rules it changed from results and skips
-- 10-30 09:47Z loosened: MIGRATED entry distance from the local high: 20% → 10% (This is the owner's override and I follow it. My data disagrees: near-high skips went 1 ran / 8 dumped (4 still open), and SI (-38%) and CATCULUS (-59%) were both near-high entries. To keep the damage small, the 10–20% band is limited to the meta's flow leader with 5m volume at or above its hourly pace. If shallow entries keep losing, I'll report that next review.)
-- 10-30 09:47Z loosened: DIP attention gate: 1x hourly and rising → at least 0.7x, no 'rising' needed (Owner override. Both falling-knife skip buckets dumped (9 of 9 that played out), so the line stays above the old code value of 0.6, and the narrative requirement stays.)
-- 10-30 09:47Z dropped: DIP probation (probe size only until a DIP closes green) (Owner ended it. My DIP record is 0 for 3, -$3.07, -$1.02 per trade. The higher-low and narrative gates stay, and those are what failed on Something and HEXN.)
-- 10-30 09:47Z added: Conviction scale: hard lines passed + live flow + named target of 1.5x or more = 7, with explicit ±1 adjustments (Owner said clean setups were being under-rated. The scale keeps honesty by naming the deductions: RugCheck danger (3 ran / 4 dumped, so -1 and not a cap), unverified community, and a weak or LARP story (HEXN lost twice).)
-- 10-30 09:47Z tightened: Target must clear initials: the named level has to be at least 1.5x, and shallow pullbacks need a breakout target above the high (Code now sets initials at 1.5x. SWAN topped at exactly its named 1.40x. With the new 10% band, a plain retest of the prior high is only ~1.11x and can't pay the exit, so the target has to sit beyond the high.)
-- 10-30 09:47Z dropped: SWAN refinement: sell part at a named level below the initials multiple (It amounted to a different initials level, and code owns the exits now (initials 1.5x, stop 20%, trail 35%). The case is handled by the target rule instead.)
-- 10-30 09:47Z dropped: All fee, friction and minimum-position-size rules (Code now checks fees and size before every entry (the target must pay at least 3x the round trip, and the round trip can't exceed 20% of the position).)
-- 10-30 09:47Z added: The $1k deadline never sets size or lowers the bar (I'm saying this plainly: going from ~$96 to $1k by Nov 5 is a ~10x in 6 days. Over 11 trades my expectancy is -$0.38/trade (2 wins). Bigger size on negative expectancy just loses faster. Clean setups get a 7, but I keep max_total_risk_pct at 35 instead of raising it, until the looser entries show a positive expectancy (V6, V8).)
+- 10-30 12:55Z tightened: Shallow 10–20% band capped at conviction 7 (HYPERCHAN in the shallow band lost twice (-15.2%, -4.9%); neither winner came from that band.)
+- 10-30 12:55Z added: Conviction 8/9 criteria tied to the winners' profile (leader + verified bundles + 20–60% pullback + flow at pace = 9) (Owner asks for 8–9 on clean setups; the only two winners were meta leaders with clean holders bought 20–60% off the high (CATBOT, FLOATER 34%).)
+- 10-30 12:55Z added: Press the goal: take every rule-clearing setup at honest conviction (Owner override replacing the dropped deadline rule; hard lines, stops and 35% risk ceiling unchanged.)
+- 10-30 12:55Z dropped: SWAN refinement: sell part at a named target below initials (Made redundant by the >=1.5x target rule plus code-enforced 1.3x break-even and 1.5x initials.)
+- 10-30 12:55Z dropped: Tighten trail to 25% past 4x (CATBOT lesson) (Owner sets the trail at 35% in code; learned rules may not set exits.)
+- 10-30 12:55Z dropped: All fee/friction/minimum-size rules from lessons (Code fee check (target pays 3x round trip, round trip <=20%) owns this now.)
+- 10-30 12:55Z tightened: DIP conviction capped at 7 until a DIP wins (DIP is 0/3, -$3.07, expectancy -$1.02; still sized by conviction per owner, just not 8–9 yet.)
+- 10-30 12:55Z loosened: Time stop: one narrow extension to 90 min for >$1M coins green and holding range with flow at pace (HYPERCHAN #2 was time-stopped at 1.05x mcap (-4.9%) while holding its range; one sample, so the exception is narrow. FLOAT (0.92x, held 158 min) wouldn't qualify, so the no-extension core stays.)
 
 ## Recent lessons
 - [2026-10-29 01:32] I bought CATBOT back as a $2.0M base retesting toward the $3.46M high. Price only drifted from $2.59M to $2.41M (-7%) and peaked at 1.12x, but I lost -24.3% because $0.62 in fees and slippage on a $3.42 position cost 18% before the coin moved at all. That makes the time stop correct (V1: don't marry a bag), and the real problem was the size. Rule: before any entry, including a buy-back, I estimate round-trip cost and skip the trade if it tops ~5% of size or if the target can't pay several times that cost. I also only re-enter a stopped-out coin when it reclaims the high, not when it bases in the middle of the range.
@@ -163,13 +161,13 @@ A skip "ran" if the coin reached the first target (1.5x) from the skip price bef
 The crawler's summary is stale: 9hhL, HftE, DESSA and PERPS aren't in the movers at all, so I'm going by the scan. Four themes are moving. First, a "Kim" crypto-trader joke. It spans three tokens, and only KIM A66k is live: $121k, $58k on the 5m, 57% buys. It's 18 minutes old, though, so we don't snipe it (V5, V6). The other two are dead copycats under $250 on the 5m (V1). Second, Hyperliquid is holding. HYPERCHAN at $2M is back just over the bar with $10.1k on the 5m, about 1.1x its hourly pace, with 73% buys. HYDESK is a tiny new tail of that theme. Third, the older migrated coins are the cleanest action. HEXN (19h, $353k, $19.7k 5m, 77% buys, down 10% on the hour) is taking about 1.3x its hourly pace into a pullback. Foxii (9.7h, $289k, $14.9k 5m, down 7%) is the weaker one at 51% buys. Fourth, fresh launches are getting dumped: FFM -60%, DAEMON -62%, PEET -37%. Political $LAPTOP is out by the politician rule (V13), and I'm skipping NIG for its name. The setups I'd research now: HEXN as MIGRATED/DIP, the best of the lot. HYPERCHAN as MIGRATED, only while the 5m holds over $10k. Foxii as MIGRATED, only if buys go back over 55%. KIM I'll only watch until it's older and shows a pullback with the flow still there.
 
 ## Moving most in its scans, last 30 min (1h volume)
-- KIM: $680,492 1h vol, $80,041 mcap, +100% 1h  
-  CA `A66kHaKDhK1wGpsPLaxBW6FThCeU4V9LSy3arGkNpump`
-- HEXN: $205,379 1h vol, $435,787 mcap, -12% 1h  
-  CA `ANVLA6eKiAq4nstD2Sg3SZhfVkSEwfnGccn12UQWpump`
-- Foxii: $172,883 1h vol, $243,914 mcap, -34% 1h  
-  CA `J3ReuwckNtcJP1Zhn7wVbfXhTDNTkHxozQWWAwxWpump`
-- HYPERCHAN: $127,848 1h vol, $2,056,961 mcap, -2% 1h  
-  CA `3ApVr1xphYMpi9dn3rpqU4hwvpmCQDVwxET1rdCDpump`
-- CTO: $116,945 1h vol, $2,084 mcap, -99% 1h  
-  CA `HftEwseBtcbgxj9j7AfgsA5ZiTEhSK9qWXZs8rzfpump`
+- GTA: $149,537 1h vol, $285,573 mcap, +570% 1h  
+  CA `6GCPmGAvH986ZE9psfHK5viH8haFL1c4KLNGXWiKpump`
+- FFM: $43,316 1h vol, $15,837 mcap, -29% 1h  
+  CA `9r33aA9jgEEhaSRzFVr7xa43MMaK7bJRcpjr5RyaAUnZ`
+- Jesus: $42,560 1h vol, $22,025 mcap, +500% 1h  
+  CA `6PNq3Dduz73HHFBFt1KYRqDEsgcPQE6BDDRgxAFupump`
+- SI: $34,787 1h vol, $2,780 mcap, -20% 1h  
+  CA `bMasZJEjbACK2cy8wwSEvKPAQxRsBQXAnmuy7J9AhEY`
+- Will: $26,473 1h vol, $18,104 mcap, +453% 1h  
+  CA `8kBikgKnYxta27P6wZdVdq5HmAxpwZHUi9tx2fq5pump`
