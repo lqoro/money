@@ -1,13 +1,13 @@
 # Trencher live report
 
-Updated 2026-10-30T04:48:12Z (paper trading, never real money)
+Updated 2026-10-30T05:03:22Z (paper trading, never real money)
 
 - Equity: $95.81 (-4.2% vs $100 start)
-- Goal: $1,000 by 2026-11-05 05:03Z (a stretch, survival first): at 9.6% of it, 6 days left, needs +47.7% a day from here
+- Goal: $1,000 by 2026-11-05 05:03Z (a stretch, survival first): at 9.6% of it, 6 days left, needs +47.8% a day from here
 - Closed trades: 11, 2 wins
 - Fees paid: $6.32 (axiom $0.72, network $4.79, pool $0.67), plus $1.04 lost to slippage
 - New trades: on
-- Brain: subscription, 573 calls and 0 plan-limit hits in 48h
+- Brain: subscription, 574 calls and 0 plan-limit hits in 48h
 
 ## Scorecard (after fees)
 - 11 closed, 2 won (18%), net $-4.20
@@ -74,9 +74,15 @@ Updated 2026-10-30T04:48:12Z (paper trading, never real money)
   CA `ANVLA6eKiAq4nstD2Sg3SZhfVkSEwfnGccn12UQWpump`
 
 ## Last scan
-- 04:47Z: 3 coins, 2 with pairs, 1 passed the market filters, 1 researched
+- 05:02Z: 4 coins, 3 with pairs, 0 passed the market filters, 0 researched
 
 ## Coins it looked at, and why it passed
+- 04:53Z DESSA (MIGRATED, $8,197,500 mcap, $5,223 5m vol): PASS at conviction 4, PASS — $5.2k 5m on an $8.2M coin, and the 3-day-old Block-Dessa joke isn't on today's radar. Clean holders, but nobody is coming back in. (V1, V6)  
+  CA `npz2FhoufQ7pKqhGpaipYWacrAkidyW2yDpVWSvpump`
+- 04:51Z Catori (FINAL_STRETCH, $22,093 mcap, $12,328 5m vol): REJECT, Top 10 hold 25.1% ex-pool (>25%) (V13)  
+  CA `FDwCosavNvMiFB812ajJp3gG7eZ9c4bpgcnY6fDQpump`
+- 04:49Z LIQUID (MIGRATED, $85,769 mcap, $12,568 5m vol): REJECT, RugCheck danger: Creator history of rugged tokens  
+  CA `GqaP7NBtPAFAUq45UAp426bdEtfz5nz2ffMn9MiHpump`
 - 04:47Z Privacy (FINAL_STRETCH, $22,133 mcap, $12,984 5m vol): REJECT, Top 10 hold 27.8% ex-pool (>25%) (V13)  
   CA `3XPP1njjy7y5LYQGbddg5FVMYjJt5C2Hb7goB7rHpump`
 - 04:44Z PURR (MIGRATED, $51,776 mcap, $5,236 5m vol): REJECT, Top 10 hold 25.1% ex-pool (>25%) (V13)  
@@ -91,19 +97,15 @@ Updated 2026-10-30T04:48:12Z (paper trading, never real money)
   CA `J3ReuwckNtcJP1Zhn7wVbfXhTDNTkHxozQWWAwxWpump`
 - 04:34Z HYPERCHAN (MIGRATED, $1,169,743 mcap, $18,085 5m vol): PASS at conviction 3, PASS — 15.9% off an 18-minute-old high with 5m volume at 0.22x the hourly pace and sellers in control. Clean holders, wrong moment. (V1, V7)  
   CA `3ApVr1xphYMpi9dn3rpqU4hwvpmCQDVwxET1rdCDpump`
-- 04:34Z BITCAT (MIGRATED, $297,508 mcap, $25,481 5m vol): PASS at conviction 4, PASS — BITCAT is only 16.6% off its high, so this would be chasing. My near-high skips are 0 ran, 7 dumped. I'll wait for the pullback (V1, V6).  
-  CA `9hzqsjCkxq3dQkfSkpRM1zk3NmLofHVBcwzKdvj3pump`
-- 04:30Z DEADGUY (MIGRATED, $59,281 mcap, $3,103 5m vol): REJECT, Top 10 hold 29.2% ex-pool (>25%) (V13)  
-  CA `FGGwUpqPHTxwLDdtoY37KBJ6tQxfY5N1JLTXEs2ppump`
-- 04:30Z three (MIGRATED, $671,758 mcap, $3,618 5m vol): PASS at conviction 3, PASS: 14% off the high, $3.6k 5m, a 9.7% bundle and an AI LARP story with no GitHub. No setup here. (V1, V3, V6)  
-  CA `FeMbDoX7R1Psc4GEcvJdsbNbZA3bfztcyDCatJVJpump`
 
 ## What its skips did next (last 48h)
 A skip "ran" if the coin reached the first target (1.5x) from the skip price before a 20% drop, "dumped" if the drop came first. Sampled every 10 min, followed 6h.
-- top 10 over 25%: blocked 13, ran 1, dumped 8, flat 0, open 4 (saving losses: keep it)
+- top 10 over 25%: blocked 14, ran 2, dumped 11, flat 0, open 1 (saving losses: keep it)
   - ran: HYPERGAMY up to 2.05x  
     CA `CUyNDWGdLPXZ3Gyj1H6TBh5pACgu5nY9WNkSqfMApump`
-- near the high / chasing: blocked 12, ran 0, dumped 6, flat 0, open 6 (saving losses: keep it)
+  - ran: Catori up to 1.5x  
+    CA `FDwCosavNvMiFB812ajJp3gG7eZ9c4bpgcnY6fDQpump`
+- near the high / chasing: blocked 12, ran 0, dumped 7, flat 1, open 4 (saving losses: keep it)
 - too new / sniping: blocked 11, ran 3, dumped 8, flat 0, open 0 (saving losses: keep it)
   - ran: ZI up to 1.7x  
     CA `5q45EK4mRhuiuBmRYoaDs4m2xweaV7gn3zsFhsvcpump`
@@ -111,21 +113,21 @@ A skip "ran" if the coin reached the first target (1.5x) from the skip price bef
     CA `6i4ebPt8dpGchB2A1ELpTz3B72dy5DkzNpFMNtUSpump`
   - ran: HyPepe up to 1.5x  
     CA `G8TdzgpUQXQAxJvarNKPXRGv2kh9CsJDK7dCC7Xupump`
-- RugCheck danger: blocked 7, ran 4, dumped 2, flat 1, open 0 (cost more winners than it saved: loosen it)
+- RugCheck danger: blocked 7, ran 3, dumped 2, flat 1, open 1 (cost more winners than it saved: loosen it)
   - ran: HYPEINU up to 1.57x  
     CA `6eccVGkbi8cvAYBGzfDmUwFYrMj8eGZF2xyZqZLkpump`
   - ran: ETF up to 1.87x  
     CA `2orqEGSdkm5BMmhdM8TpKCpACk32a3Zaj3Lef7ceqsc6`
   - ran: Bear up to 2.66x  
     CA `Dv6gYYkTav8Pm36UwAywxNCccwSZV1VL1tjiSpDLpump`
-- dev share over 1%: blocked 7, ran 1, dumped 3, flat 0, open 3 (saving losses: keep it)
+- dev share over 1%: blocked 7, ran 1, dumped 4, flat 0, open 2 (saving losses: keep it)
   - ran: calm up to 1.53x  
     CA `4HSHFbFiKuMvZW7yGiDTab17B63MzBkkhadFKxhkpump`
-- falling knife / no higher low: blocked 5, ran 0, dumped 4, flat 0, open 1 (saving losses: keep it)
+- falling knife / no higher low: blocked 5, ran 0, dumped 4, flat 1, open 0 (saving losses: keep it)
 - bundles over the line: blocked 4, ran 1, dumped 3, flat 0, open 0 (saving losses: keep it)
   - ran: calm up to 1.53x  
     CA `4HSHFbFiKuMvZW7yGiDTab17B63MzBkkhadFKxhkpump`
-- crowd leaving / fading volume: blocked 4, ran 0, dumped 1, flat 0, open 3 (too few played out to judge)
+- crowd leaving / fading volume: blocked 4, ran 0, dumped 1, flat 1, open 2 (too few played out to judge)
 - other: blocked 3, ran 1, dumped 2, flat 0, open 0 (saving losses: keep it)
   - ran: SI up to 1.54x  
     CA `6zuDiAw3NviBwcLZfTztHJgtCmeNWfyFxYVoXtNYpump`
@@ -159,11 +161,11 @@ The movers have changed the meta. Sub-1-hour pumpswap launches are where the vol
 ## Moving most in its scans, last 30 min (1h volume)
 - HYPERCHAN: $986,240 1h vol, $1,169,743 mcap, +253% 1h  
   CA `3ApVr1xphYMpi9dn3rpqU4hwvpmCQDVwxET1rdCDpump`
-- SIC: $426,583 1h vol, $21,624 mcap, -60% 1h  
-  CA `2Y4VPwbVatx3zFZkQb9S2avVqe26gMsGpWhGA5swpump`
-- SIC: $414,420 1h vol, $1,938 mcap, -98% 1h  
-  CA `FLpsbzAmkZLtUrNsJ1PgWKab4Pdx9F2iqi6iKxUUpump`
+- LIQUID: $461,567 1h vol, $85,769 mcap, +97% 1h  
+  CA `GqaP7NBtPAFAUq45UAp426bdEtfz5nz2ffMn9MiHpump`
 - BITCAT: $358,375 1h vol, $297,508 mcap, +12% 1h  
   CA `9hzqsjCkxq3dQkfSkpRM1zk3NmLofHVBcwzKdvj3pump`
-- ROBBERY: $318,038 1h vol, $2,034 mcap, -98% 1h  
-  CA `AdkZmHCBtJyDv1GmYA93JZTG7rts3B7heMrVvayVpump`
+- SIC: $281,485 1h vol, $1,938 mcap, -99% 1h  
+  CA `FLpsbzAmkZLtUrNsJ1PgWKab4Pdx9F2iqi6iKxUUpump`
+- Foxii: $232,645 1h vol, $692,787 mcap, +64% 1h  
+  CA `J3ReuwckNtcJP1Zhn7wVbfXhTDNTkHxozQWWAwxWpump`
