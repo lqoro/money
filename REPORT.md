@@ -1,13 +1,13 @@
 # Trencher live report
 
-Updated 2026-10-30T01:01:07Z (paper trading, never real money)
+Updated 2026-10-30T01:16:14Z (paper trading, never real money)
 
-- Equity: $96.93 (-3.1% vs $100 start)
-- Goal: $1,000 by 2026-11-05 05:03Z (a stretch, survival first): at 9.7% of it, 6.2 days left, needs +46% a day from here
+- Equity: $98.02 (-2.0% vs $100 start)
+- Goal: $1,000 by 2026-11-05 05:03Z (a stretch, survival first): at 9.8% of it, 6.2 days left, needs +45.8% a day from here
 - Closed trades: 9, 2 wins
-- Fees paid: $5.24 (axiom $0.56, network $4.04, pool $0.50), plus $0.82 lost to slippage
+- Fees paid: $5.51 (axiom $0.60, network $4.23, pool $0.55), plus $0.87 lost to slippage
 - New trades: on
-- Brain: subscription, 521 calls and 0 plan-limit hits in 48h
+- Brain: subscription, 524 calls and 0 plan-limit hits in 48h
 
 ## Scorecard (after fees)
 - 9 closed, 2 won (22%), net $-3.07
@@ -23,14 +23,13 @@ Updated 2026-10-30T01:01:07Z (paper trading, never real money)
   - time stop: 4, 0 won, net $-2.53, fees+slip $2.06, peak 1.37x → 0.81x
   - stop loss: 3, 0 won, net $-4.75, fees+slip $1.83, peak 1.07x → 0.55x
   - trailing stop: 2, 2 won, net $+4.21, fees+slip $2.04, peak 3.32x → 1.72x
-- To $1,000: $903.07 to go; at $-0.34 a trade this pace doesn't get there
+- To $1,000: $901.98 to go; at $-0.34 a trade this pace doesn't get there
 
 ## Open positions
-- none
+- SWAN (MIGRATED): cost $3.92, 1.37x, fees $0.28  
+  CA `EFaQg27P3c3PHob2mFw4mHCUcWBHHDdatAEsXq2xpump`
 
 ## Recent trades
-- 02:10Z SELL CPU for $2.73, fees $0.24  
-  CA `5JbRYEz844bwnKbGx4dRHhrJ6zjrJ194CKdDXtzwgaXo`
 - 02:10Z CLOSE CPU -14% ($-0.43), fees $0.48  
   CA `5JbRYEz844bwnKbGx4dRHhrJ6zjrJ194CKdDXtzwgaXo`
 - 02:49Z SELL FLOAT for $2.33, fees $0.23  
@@ -49,6 +48,8 @@ Updated 2026-10-30T01:01:07Z (paper trading, never real money)
   CA `ANVLA6eKiAq4nstD2Sg3SZhfVkSEwfnGccn12UQWpump`
 - 21:37Z CLOSE HEXN -36% ($-1.46), fees $0.53  
   CA `ANVLA6eKiAq4nstD2Sg3SZhfVkSEwfnGccn12UQWpump`
+- 01:12Z BUY SWAN $3.92, fees $0.28  
+  CA `EFaQg27P3c3PHob2mFw4mHCUcWBHHDdatAEsXq2xpump`
 
 ## Last closes
 - Something: -15% ($-0.51), time stop: 60 min and only 0.98x  
@@ -71,9 +72,13 @@ Updated 2026-10-30T01:01:07Z (paper trading, never real money)
   CA `ANVLA6eKiAq4nstD2Sg3SZhfVkSEwfnGccn12UQWpump`
 
 ## Last scan
-- 01:00Z: 16 coins, 15 with pairs, 1 passed the market filters, 1 researched
+- 01:15Z: 8 coins, 7 with pairs, 0 passed the market filters, 0 researched
 
 ## Coins it looked at, and why it passed
+- 01:12Z SWAN (MIGRATED, $118,144 mcap, $49,238 5m vol): BUY at conviction 6, BUY, conviction 6, probe: SWAN is 29% off its $166k high, its 15m closes are making higher lows, it has $49k of 5m flow and bundles are only 7%. It's 40 minutes old and the name is a recycled ticker, so it gets a probe only (V1, V6).  
+  CA `EFaQg27P3c3PHob2mFw4mHCUcWBHHDdatAEsXq2xpump`
+- 01:06Z Zeroday (MIGRATED, $96,202 mcap, $2,996 5m vol): PASS at conviction 2, PASS. Down 83% from a $565k peak, and 5m volume is $3k against an hourly pace of about $88k (0.03x). The crowd has left. It's also a hack-story coin, and the owner said pass on those. (V1, V6)  
+  CA `G68ruHgnWmHBg8QGbXkPv9UMpPhDmJ33MHTbdf5tpump`
 - 01:00Z DEADGUY (FINAL_STRETCH, $31,710 mcap, $4,227 5m vol): PASS at conviction 3, PASS — it's 4.6% off its high at 82% bond, with only $4.2k on the 5m and the top 10 holding 24.2%, one point under my hard line. That's buying the top right before the pre-bond dump (V1, V6).  
   CA `FGGwUpqPHTxwLDdtoY37KBJ6tQxfY5N1JLTXEs2ppump`
 - 00:55Z HEXN (DIP, $479,102 mcap, $17,996 5m vol): PASS at conviction 3, PASS on HEXN. It's an "operating system" coin with a website registered half a day ago and no GitHub, sellers are winning the 5m (43% buys), and I already lost 36% buying this exact bounce. LARP plus a falling knife (V1, V6).  
@@ -90,24 +95,20 @@ Updated 2026-10-30T01:01:07Z (paper trading, never real money)
   CA `npz2FhoufQ7pKqhGpaipYWacrAkidyW2yDpVWSvpump`
 - 00:34Z ZERODAY (MIGRATED, $98,933 mcap, $15,093 5m vol): PASS at conviction 3, PASS — second copy of the Zeroday ticker at a tenth of the leader's flow, 10% off its high, 17 min old. Vamp plus chasing (V1, V2).  
   CA `7fR4hpUuHYaUTnnUeVLWke2GvMZdZtaeM8yFwu92pump`
-- 00:26Z SWAN (FINAL_STRETCH, $26,869 mcap, $34,415 5m vol): REJECT, Top 10 hold 26.7% ex-pool (>25%) (V13)  
-  CA `EFaQg27P3c3PHob2mFw4mHCUcWBHHDdatAEsXq2xpump`
-- 00:24Z jeff (DIP, $742,208 mcap, $2,725 5m vol): REJECT, Top 10 hold 34.0% ex-pool (>25%) (V13)  
-  CA `HAsTKXYvv65zM7J6Cu5o5PcZsiKMQYo5oz4WPjgqwP6k`
 
 ## What its skips did next (last 48h)
 A skip "ran" if the coin reached the first target (1.5x) from the skip price before a 20% drop, "dumped" if the drop came first. Sampled every 10 min, followed 6h.
-- too new / sniping: blocked 10, ran 3, dumped 7, flat 0, open 0 (saving losses: keep it)
+- top 10 over 25%: blocked 9, ran 1, dumped 7, flat 0, open 1 (saving losses: keep it)
+  - ran: SWAN up to 2.72x  
+    CA `EFaQg27P3c3PHob2mFw4mHCUcWBHHDdatAEsXq2xpump`
+- too new / sniping: blocked 9, ran 3, dumped 6, flat 0, open 0 (saving losses: keep it)
   - ran: ZI up to 1.7x  
     CA `5q45EK4mRhuiuBmRYoaDs4m2xweaV7gn3zsFhsvcpump`
   - ran: BEAR up to 1.59x  
     CA `6i4ebPt8dpGchB2A1ELpTz3B72dy5DkzNpFMNtUSpump`
   - ran: ZERODAY up to 2.31x  
     CA `7fR4hpUuHYaUTnnUeVLWke2GvMZdZtaeM8yFwu92pump`
-- top 10 over 25%: blocked 9, ran 1, dumped 6, flat 0, open 2 (saving losses: keep it)
-  - ran: SWAN up to 2.72x  
-    CA `EFaQg27P3c3PHob2mFw4mHCUcWBHHDdatAEsXq2xpump`
-- near the high / chasing: blocked 6, ran 0, dumped 3, flat 0, open 3 (saving losses: keep it)
+- near the high / chasing: blocked 6, ran 0, dumped 4, flat 0, open 2 (saving losses: keep it)
 - falling knife / no higher low: blocked 4, ran 0, dumped 2, flat 0, open 2 (too few played out to judge)
 - RugCheck danger: blocked 4, ran 3, dumped 0, flat 0, open 1 (cost more winners than it saved: loosen it)
   - ran: HYPEINU up to 1.57x  
@@ -119,11 +120,13 @@ A skip "ran" if the coin reached the first target (1.5x) from the skip price bef
 - dev share over 1%: blocked 4, ran 1, dumped 2, flat 0, open 1 (saving losses: keep it)
   - ran: calm up to 1.53x  
     CA `4HSHFbFiKuMvZW7yGiDTab17B63MzBkkhadFKxhkpump`
-- bundles over the line: blocked 3, ran 1, dumped 1, flat 0, open 1 (too few played out to judge)
+- bundles over the line: blocked 3, ran 1, dumped 2, flat 0, open 0 (saving losses: keep it)
   - ran: calm up to 1.53x  
     CA `4HSHFbFiKuMvZW7yGiDTab17B63MzBkkhadFKxhkpump`
-- other: blocked 3, ran 0, dumped 2, flat 0, open 1 (too few played out to judge)
-- crowd leaving / fading volume: blocked 2, ran 0, dumped 1, flat 0, open 1 (too few played out to judge)
+- crowd leaving / fading volume: blocked 3, ran 0, dumped 1, flat 0, open 2 (too few played out to judge)
+- other: blocked 3, ran 1, dumped 2, flat 0, open 0 (saving losses: keep it)
+  - ran: SI up to 1.54x  
+    CA `6zuDiAw3NviBwcLZfTztHJgtCmeNWfyFxYVoXtNYpump`
 - vamp / copycat: blocked 1, ran 0, dumped 1, flat 0, open 0 (too few played out to judge)
 
 ## Rules it changed from results and skips
@@ -148,16 +151,16 @@ A skip "ran" if the coin reached the first target (1.5x) from the skip price bef
 - [2026-10-29 21:37] Expected: HEXN, down 59.5% from a $1.8M peak with $19.9k of 5m volume and buyers outnumbering sellers 5:1, would turn its bounce off the hourly low into a higher low and retest the $0.0009–0.0012 band. Instead it never went green (0.99x peak) and lost the hourly low within 7 minutes. The exit came at -36% against a -20% stop, with $0.53 in fees and $0.10 in slippage on a $4 position. This confirms my existing DIP rule, not a new ban: my thesis itself said "if the bounce holds and becomes a higher low", so I bought the first bounce before the higher low printed, which is exactly the "no entry on the first red-to-green candle" mistake (V1). Next time on a DIP, wait for a confirmed higher low above the hourly low with 5m volume rising before entering, and set the stop under that higher low, so the gap risk is fixed at the entry, not with a wider stop.
 
 ## Meta right now
-Crawler summary was stale: BNB, WASTED, HYPERCAT dead, SOLHYPE -63%. The Hyperliquid/Binance-joke wave is over. Live meta: brand-new "Zero" coins (Zero Inu FnvQ $116k cap, $33.5k 5m volume, 62% buys; Zero Cat copies; cop $21k cap, $27k 5m volume) rising. Inu wave fading (SI, older ZI, Hack Inu). Hack tickers (HI, 1029) pass per owner. Look at: Zero Inu FnvQ as a MIGRATED probe (12 min old), HOUSEWORM as a MIGRATED proven runner ($817k cap, 7.9h old, 77% buys, $15k 5m volume), cop as FINAL_STRETCH if volume holds up to bond. For Zero Cat, only the Dn6 copy (60% buys); A6 at 48% buys means I'd be snipers' exit liquidity (V5). All pending holder, dev and bundle checks.
+The crawler's summary is already stale. Zero Inu (FnvQ) is down 99% in the hour and sits at a $1.8k cap. Zero Cat Dn6 is down 93% at $2.7k. The "Zero" wave rugged inside an hour, so I won't touch it (ZERODAY, 18 min old, $99k, +146%, 50/50 buys, is the same theme catching late money). What's actually trading has three parts. First, very fast animal and joke launches that run and then dump inside the hour: both Bear coins are down 77% and 48%, 🙏 is down 58%, and SOLHYPE is down 66%. Those are fading and they're traps. Second, a few migrated coins that already proved themselves and are holding up: HOUSEWORM at $813k, 8.7h old, 73% buys, and HEXN at $479k, 8h old, +16% on the hour but only 43% buys. Third, fresh tickers riding the crypto culture of the day: SAFU ("funds are SAFU", the Binance joke) at $46k, +186%, $5.7k on the 5-minute, and HYPERGAMY at $23.5k on the curve with $31k on the 5-minute, 6 minutes old. Setups I'd look at now: HOUSEWORM as a MIGRATED or DIP probe if the 5-minute volume climbs back toward $10k (it's $4.4k now, so that's the blocker), HEXN only if buyers take back control from sellers, and HYPERGAMY as FINAL_STRETCH, with the pre-bond dump in mind (V1), if it's still printing over $10k per 5 minutes as it nears bond. SAFU needs its volume to reach $10k first. I'm skipping $LAPTOP outright: it's a Hunter Biden coin pushed by a political figure and it's already down 98% (V13). Any coin riding a hack story also gets a pass, per the owner's note.
 
 ## Moving most in its scans, last 30 min (1h volume)
-- Bear: $247,824 1h vol, $6,126 mcap, -84% 1h  
-  CA `Dv6gYYkTav8Pm36UwAywxNCccwSZV1VL1tjiSpDLpump`
+- Zeroday: $1,060,151 1h vol, $96,202 mcap, +85% 1h  
+  CA `G68ruHgnWmHBg8QGbXkPv9UMpPhDmJ33MHTbdf5tpump`
+- SWAN: $542,473 1h vol, $118,144 mcap, +232% 1h  
+  CA `EFaQg27P3c3PHob2mFw4mHCUcWBHHDdatAEsXq2xpump`
 - HEXN: $241,630 1h vol, $479,102 mcap, +16% 1h  
   CA `ANVLA6eKiAq4nstD2Sg3SZhfVkSEwfnGccn12UQWpump`
-- ZERODAY: $152,473 1h vol, $98,933 mcap, +146% 1h  
-  CA `7fR4hpUuHYaUTnnUeVLWke2GvMZdZtaeM8yFwu92pump`
-- HOUSEWORM: $139,686 1h vol, $812,901 mcap, +11% 1h  
-  CA `9KhzhyM1BwgW6myZRcqdzQvemKjVrjck8kaevTkMpump`
-- BEAR: $135,378 1h vol, $19,939 mcap, -48% 1h  
+- Bear: $229,514 1h vol, $8,972 mcap, -80% 1h  
+  CA `Dv6gYYkTav8Pm36UwAywxNCccwSZV1VL1tjiSpDLpump`
+- BEAR: $74,272 1h vol, $24,001 mcap, -15% 1h  
   CA `6i4ebPt8dpGchB2A1ELpTz3B72dy5DkzNpFMNtUSpump`
