@@ -1,9 +1,9 @@
 # Trencher live report
 
-Updated 2026-10-30T21:58:45Z (paper trading, never real money)
+Updated 2026-10-30T22:13:58Z (paper trading, never real money)
 
 - Equity: $90.20 (-9.8% vs $100 start)
-- Goal: $1,000 by 2026-11-05 05:03Z (pressing for it): at 9% of it, 5.3 days left, needs +57.5% a day from here
+- Goal: $1,000 by 2026-11-05 05:03Z (pressing for it): at 9% of it, 5.3 days left, needs +57.7% a day from here
 - Closed trades: 14, 2 wins
 - Fees paid: $8.84 (axiom $1.30, network $6.14, pool $1.26), plus $1.92 lost to slippage
 - New trades: on
@@ -74,9 +74,17 @@ Updated 2026-10-30T21:58:45Z (paper trading, never real money)
   CA `J5jxG3PFaWpj6BLEQExyC6FSqSvaTKNdQ9G3sZwBpump`
 
 ## Last scan
-- 21:57Z: 4 coins, 4 with pairs, 0 passed the market filters, 0 researched
+- 22:13Z: 1 coins, 1 with pairs, 0 passed the market filters, 0 researched
 
 ## Coins it looked at, and why it passed
+- 22:12Z ONBOARD (MIGRATED, $223,908 mcap, $27,048 5m vol): PASS at conviction 4, PASS: the prior high is only 1.47x away, 5m volume is running at 0.3x the hourly pace, and 25 coins share the ticker. The crowd that pumped this is leaving (V1, V6).  
+  CA `CEMEy7jkeytkxq3qYjaKyQnKiUdHAMJDM1B1tv2Upump`
+- 22:08Z GATO (MIGRATED, $4,381,461 mcap, $3,963 5m vol): REJECT, Dev holds 3.3% (>1%) (V13, V17)  
+  CA `HsprHxBRgiVaQdRf3TnKNuZZtaX9JUSPgMFdAkk6pump`
+- 22:07Z BIBICOIN (MIGRATED, $4,045,775 mcap, $37,938 5m vol): REJECT, RugCheck danger: Top 10 holders high ownership  
+  CA `4sYcQgiC3aMoDL935gBUGTvfrWHhoyiUDQicGYLHbibi`
+- 22:03Z STANK (MIGRATED, $250,267 mcap, $3,403 5m vol): PASS at conviction 3, PASS: $3.4k 5m volume against a $10k bar, 1h sells beat buys 167/119, and no meta behind it. Flow below the bar (V1, V6).  
+  CA `5wsjHxT5nW5jQuVupXUNnYszF3WoWCfGGk9LMcsCJzY8`
 - 21:53Z PILLSEY (MIGRATED, $284,941 mcap, $15,566 5m vol): PASS at conviction 3, PASS — stopped out of this coin under an hour ago, it's mid-range at $285k against a $464k high, and 5m volume is only 0.35x its hourly pace. Re-entry needs it to reclaim the high. (V1, V6)  
   CA `J5jxG3PFaWpj6BLEQExyC6FSqSvaTKNdQ9G3sZwBpump`
 - 21:51Z JOB (MIGRATED, $3,370,660 mcap, $4,440 5m vol): PASS at conviction 3, PASS — 5.4% off the high with $4.4k on the 5m at 0.81x pace. That's chasing a sideways chart nobody's buying (V1, V6).  
@@ -89,14 +97,6 @@ Updated 2026-10-30T21:58:45Z (paper trading, never real money)
   CA `8uBobWMhu6hRUn4jaA4kjcgWCjTxgHwHJtPgBePXpump`
 - 21:39Z HYPERCHAN (DIP, $910,249 mcap, $4,994 5m vol): PASS at conviction 3, PASS: 5m volume is $5.0k, under the $10k live-flow bar, and the HYPE crowd is leaving. Third thin-flow bounce on this coin, no thanks. (V1, V6)  
   CA `3ApVr1xphYMpi9dn3rpqU4hwvpmCQDVwxET1rdCDpump`
-- 21:33Z DESSA (MIGRATED, $9,081,538 mcap, $2,926 5m vol): PASS at conviction 2, PASS: $2.9k on the 5-minute with sellers ahead 12 to 7, on a $9M coin sitting 7% under its 24h high. No flow, and I'd be chasing. (V1, V6)  
-  CA `npz2FhoufQ7pKqhGpaipYWacrAkidyW2yDpVWSvpump`
-- 21:29Z CBUCKS (MIGRATED, $1,042,661 mcap, $3,360 5m vol): REJECT, Top 10 hold 27.3% ex-pool (>25%) (V13)  
-  CA `DtcicPCKTKeAh7TDEzTym3hXeoHAoMiBdYJhMYxZpump`
-- 21:29Z GLITCH (MIGRATED, $3,203,189 mcap, $6,917 5m vol): REJECT, Top 10 hold 27.9% ex-pool (>25%) (V13)  
-  CA `8Xg89xT8Ve34sKiYqYuMs46mycREsCA2F362UscRpump`
-- 21:22Z GATO (MIGRATED, $4,422,973 mcap, $2,258 5m vol): REJECT, Dev holds 3.3% (>1%) (V13, V17)  
-  CA `HsprHxBRgiVaQdRf3TnKNuZZtaX9JUSPgMFdAkk6pump`
 
 ## What its skips did next (last 48h)
 A skip "ran" if the coin reached the first target (1.5x) from the skip price before a 20% drop, "dumped" if the drop came first. Sampled every 10 min, followed 6h.
@@ -121,7 +121,7 @@ A skip "ran" if the coin reached the first target (1.5x) from the skip price bef
     CA `FDwCosavNvMiFB812ajJp3gG7eZ9c4bpgcnY6fDQpump`
   - ran: FLYWHEEL up to 2.23x  
     CA `BWMf44rD724R2bdgHWd88CDTVEjuPNQauw8s6S7ipump`
-- RugCheck danger: blocked 17, ran 5, dumped 10, flat 1, open 1 (saving losses: keep it)
+- RugCheck danger: blocked 18, ran 5, dumped 11, flat 1, open 1 (saving losses: keep it)
   - ran: HYPEINU up to 1.57x  
     CA `6eccVGkbi8cvAYBGzfDmUwFYrMj8eGZF2xyZqZLkpump`
   - ran: ETF up to 1.87x  
@@ -135,7 +135,7 @@ A skip "ran" if the coin reached the first target (1.5x) from the skip price bef
     CA `DDG8rjV3TViCqKRQED2QZq4MEaE1uqXgEiosBNpapump`
 - dev share over 1%: blocked 13, ran 0, dumped 11, flat 1, open 1 (saving losses: keep it)
 - falling knife / no higher low: blocked 11, ran 0, dumped 9, flat 1, open 1 (saving losses: keep it)
-- crowd leaving / fading volume: blocked 9, ran 2, dumped 5, flat 0, open 2 (saving losses: keep it)
+- crowd leaving / fading volume: blocked 10, ran 2, dumped 5, flat 0, open 3 (saving losses: keep it)
   - ran: STABLEPAD up to 2.13x  
     CA `AABM3NrYSwKMsEDyanuskY43EH6ySbPpdPZNG1u7pump`
   - ran: HYDESK up to 1.78x  
@@ -146,14 +146,14 @@ A skip "ran" if the coin reached the first target (1.5x) from the skip price bef
     CA `7eQagAYSYYhRqRZF5L97Ku8AK94TEpsmnrrsssUkpump`
 
 ## Rules it changed from results and skips
-- 10-30 12:55Z added: Press the goal: take every rule-clearing setup at honest conviction (Owner override replacing the dropped deadline rule; hard lines, stops and 35% risk ceiling unchanged.)
-- 10-30 12:55Z dropped: SWAN refinement: sell part at a named target below initials (Made redundant by the >=1.5x target rule plus code-enforced 1.3x break-even and 1.5x initials.)
-- 10-30 12:55Z dropped: Tighten trail to 25% past 4x (CATBOT lesson) (Owner sets the trail at 35% in code; learned rules may not set exits.)
-- 10-30 12:55Z dropped: All fee/friction/minimum-size rules from lessons (Code fee check (target pays 3x round trip, round trip <=20%) owns this now.)
-- 10-30 12:55Z tightened: DIP conviction capped at 7 until a DIP wins (DIP is 0/3, -$3.07, expectancy -$1.02; still sized by conviction per owner, just not 8–9 yet.)
 - 10-30 12:55Z loosened: Time stop: one narrow extension to 90 min for >$1M coins green and holding range with flow at pace (HYPERCHAN #2 was time-stopped at 1.05x mcap (-4.9%) while holding its range; one sample, so the exception is narrow. FLOAT (0.92x, held 158 min) wouldn't qualify, so the no-extension core stays.)
 - 10-30 15:58Z loosened: Shallow band (10–20%) conviction cap raised from 7 to 8; flow at or above hourly pace still required (The two HYPERCHAN losses were small (−15.2%, −4.9%), and the first one broke the flow-pace gate. The owner wants clean setups rated 8 when they earn it. 9 still needs a 20–60% pullback, which both winners had.)
 - 10-30 15:58Z dropped: DIP conviction capped at 7 until a DIP wins (The owner ended DIP probation. DIPs are 0/3 for −$3.07, avg −$1.02, but the losses came from structure mistakes (first bounce, a LARP story, fading volume) that the higher-low and attention rules now block.)
+- 10-30 22:05Z added: Spike = chasing: last 5m up >25% or >3x hourly pace means wait for the retrace and a higher low (PILLSEY was bought 20% off the high but right after a +31% candle at 4.2x pace. It peaked at 1.32x and closed −31%.)
+- 10-30 22:05Z tightened: DIP higher-low rule now ties the higher-low distance to the fixed 20% stop instead of setting its own stop (HEXN #1 was bought on the first bounce (−36%) and HEXN #2 lost when its higher low broke (−27%). 'No higher low' skips went 0 ran / 9 dumped. The stop is owner-set, so the rule only gates the entry now.)
+- 10-30 22:05Z tightened: DIP attention gate 0.7x hourly + a real story; LARP dips PASS (code param raised from 0.6 to 0.7) (DIPs 0/3, −$3.07. Falling-knife code skips went 2 ran / 13 dumped. This matches the owner's 0.7x line.)
+- 10-30 22:05Z added: Once a trade has reached ~1.3x, a stop review sells all, never trims half (PILLSEY: the SELL_HALF on an early-shakeout review grew the loss from about −20% to −31%.)
+- 10-30 22:05Z dropped: Separate re-entry bullet and all fee/size/minimum-position wording (Re-entry is merged into the stop-review bullet to stay within 15 rules. Fees and size are checked in code now, so no fee caps or minimum sizes stay in my rules.)
 
 ## Recent lessons
 - [2026-10-29 02:03] Expected: the FLOATER that had the crowd out of 23 same-ticker coins ($141k 5m volume, 78% buys, clean holders, 34% off the high) would keep climbing toward $500k on the tokenized-stock meta. What happened: it ran to 2.19x, I took initials as planned (V11), and the trailing stop sold the rest at 1.5x from a $255k mcap for +$1.48, but fees and slippage ($0.89) ate about 30% of the $2.94 cost and nearly a third of the gross gain. Next time I keep picking the vamp-field winner by volume and attention (V1, V6) and keep the 2x initials plus 30% trail, but I don't open a position under ~$5 because fixed fees turn a 2x winner into a 1.5x one.
@@ -171,13 +171,13 @@ A skip "ran" if the coin reached the first target (1.5x) from the skip price bef
 The meta is pump.fun talking about itself, but it's mostly dying. PILLSEY (Pilly Cupsey, J5jx…pump) is the only coin still running it: $332k cap, $125k on the 5-minute, 84% buys, +597% in the hour, 12 minutes old. Most of the copycats have crashed 80-96% (Pumpfluencer, Miso, CREATOOOR, old Pilly, ROPAD), and CREATOR has only $1.3k on the 5-minute. Cats are fading: HYPER CAT is at $1.9k after a 96% drop, so the crawler summary that called it the top mover (and named a PILLY contract that isn't in the movers) is stale. A second, smaller theme is brand-new launches. Botnet is skipped as malware-themed, xpad's contract ends in xxxx instead of pump so it needs checking, TUSK is a hard no because it's named after a real politician (V13), and VYPER has too little volume. The only setup to research is PILLSEY as a MIGRATED trade: buy only a pullback of 10% or more from its local high with 5-minute volume at least 0.7x its hourly pace, after clean holder and bundle checks. The owner's deadline doesn't change the conviction score.
 
 ## Moving most in its scans, last 30 min (1h volume)
+- ONBOARD: $1,067,933 1h vol, $223,908 mcap, +385% 1h  
+  CA `CEMEy7jkeytkxq3qYjaKyQnKiUdHAMJDM1B1tv2Upump`
 - TUSK: $556,538 1h vol, $58,400 mcap, +27% 1h  
   CA `8uBobWMhu6hRUn4jaA4kjcgWCjTxgHwHJtPgBePXpump`
 - PILLSEY: $533,082 1h vol, $284,941 mcap, +501% 1h  
   CA `J5jxG3PFaWpj6BLEQExyC6FSqSvaTKNdQ9G3sZwBpump`
-- PILLY: $292,899 1h vol, $43,121 mcap, -74% 1h  
-  CA `2WVthqDUqTfmKniBvXz2guGwCAJSNTHKGnebUeBvpump`
-- xpad: $189,304 1h vol, $2,028 mcap, -95% 1h  
-  CA `EV116Y5Y6cYvcugmXwLVZPhbZus1NxV5WbArJxtUxxxx`
-- GLITCH: $127,520 1h vol, $3,203,189 mcap, +11% 1h  
-  CA `8Xg89xT8Ve34sKiYqYuMs46mycREsCA2F362UscRpump`
+- JOB: $65,455 1h vol, $3,370,660 mcap, +3% 1h  
+  CA `9Pq7aLAbhDG2tTnS22cm6kuysZVcZpLFE368HWuypump`
+- BOTNET: $51,537 1h vol, $2,814 mcap, -1% 1h  
+  CA `3f8KDGG9hSFo35WhKyo2WPsEp2QyLWWkuWh53Lnapump`
