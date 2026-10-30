@@ -1,13 +1,13 @@
 # Trencher live report
 
-Updated 2026-10-30T14:24:34Z (paper trading, never real money)
+Updated 2026-10-30T14:39:38Z (paper trading, never real money)
 
 - Equity: $93.79 (-6.2% vs $100 start)
-- Goal: $1,000 by 2026-11-05 05:03Z (pressing for it): at 9.4% of it, 5.6 days left, needs +52.5% a day from here
+- Goal: $1,000 by 2026-11-05 05:03Z (pressing for it): at 9.4% of it, 5.6 days left, needs +52.6% a day from here
 - Closed trades: 13, 2 wins
 - Fees paid: $7.85 (axiom $1.10, network $5.57, pool $1.04), plus $1.62 lost to slippage
 - New trades: on
-- Brain: subscription, 637 calls and 0 plan-limit hits in 48h
+- Brain: subscription, 634 calls and 0 plan-limit hits in 48h
 
 ## Scorecard (after fees)
 - 13 closed, 2 won (15%), net $-6.21
@@ -74,9 +74,11 @@ Updated 2026-10-30T14:24:34Z (paper trading, never real money)
   CA `3ApVr1xphYMpi9dn3rpqU4hwvpmCQDVwxET1rdCDpump`
 
 ## Last scan
-- 14:23Z: 3 coins, 2 with pairs, 0 passed the market filters, 0 researched
+- 14:38Z: 2 coins, 1 with pairs, 0 passed the market filters, 0 researched
 
 ## Coins it looked at, and why it passed
+- 14:30Z SAFU (MIGRATED, $436,731 mcap, $9,528 5m vol): PASS at conviction 2, PASS: the hack-story rule blocks it. $SAFU is a self-described "Binance hack era" meme, and 70 sells to 37 buys on the 5m says the crowd is leaving anyway.  
+  CA `etRgw1DVduNwoSdrwaMcnb6Yy16CShyv34SYWuApump`
 - 14:19Z STANK (MIGRATED, $163,357 mcap, $3,807 5m vol): PASS at conviction 3, PASS: $3.8k on the 5m after a +37% hour, and the only target is the $195k high at 1.19x, below initials. Chasing a pump with no crowd (V1, V6).  
   CA `5wsjHxT5nW5jQuVupXUNnYszF3WoWCfGGk9LMcsCJzY8`
 - 14:19Z HACKCOIN (no setup, $5,515 mcap, $696 5m vol): REJECT, Hack story ("hack" in the name or ticker): these tend to go down, owner rule  
@@ -95,12 +97,10 @@ Updated 2026-10-30T14:24:34Z (paper trading, never real money)
   CA `EwX2T1p2PmgTsSq2Bi6XtQYxPC5krR4P2fxPfN4Qpump`
 - 14:06Z Kim (MIGRATED, $102,020 mcap, $8,886 5m vol): PASS at conviction 3, PASS — Kim just popped 2.5x in 30 min inside a saw-tooth chart; prior high $132k is only 1.29x, target below initials, and there's no higher low to put a stop under (V1, V13).  
   CA `qhbbjGBKJxW3AZGqngWM5tHcrENR3pVoRB9MCf1pump`
-- 14:06Z laptop (MIGRATED, $105,723 mcap, $56,331 5m vol): PASS at conviction 3, PASS: it's 11 minutes old, 8% off its high, and riding the Hunter Biden $LAPTOP story. Classic exit liquidity. Wait for a base. (V1, V13)  
-  CA `GEWDAj3NaK3WVpgjhusnZq8CMsYu9yQPRRxApfXwpump`
 
 ## What its skips did next (last 48h)
 A skip "ran" if the coin reached the first target (1.5x) from the skip price before a 20% drop, "dumped" if the drop came first. Sampled every 10 min, followed 6h.
-- top 10 over 25%: blocked 25, ran 5, dumped 17, flat 0, open 3 (saving losses: keep it)
+- top 10 over 25%: blocked 25, ran 5, dumped 18, flat 0, open 2 (saving losses: keep it)
   - ran: HYPERGAMY up to 2.05x  
     CA `CUyNDWGdLPXZ3Gyj1H6TBh5pACgu5nY9WNkSqfMApump`
   - ran: Catori up to 1.52x  
@@ -114,7 +114,7 @@ A skip "ran" if the coin reached the first target (1.5x) from the skip price bef
     CA `6i4ebPt8dpGchB2A1ELpTz3B72dy5DkzNpFMNtUSpump`
   - ran: HyPepe up to 1.5x  
     CA `G8TdzgpUQXQAxJvarNKPXRGv2kh9CsJDK7dCC7Xupump`
-- near the high / chasing: blocked 16, ran 2, dumped 7, flat 2, open 5 (saving losses: keep it)
+- near the high / chasing: blocked 16, ran 2, dumped 9, flat 2, open 3 (saving losses: keep it)
   - ran: OREN up to 1.58x  
     CA `57vAaMsnAJXkvULtAz7fsi6gRn3bHRJFJsJV1okNpump`
   - ran: Catori up to 1.52x  
@@ -126,15 +126,17 @@ A skip "ran" if the coin reached the first target (1.5x) from the skip price bef
     CA `2orqEGSdkm5BMmhdM8TpKCpACk32a3Zaj3Lef7ceqsc6`
   - ran: Bear up to 2.66x  
     CA `Dv6gYYkTav8Pm36UwAywxNCccwSZV1VL1tjiSpDLpump`
-- dev share over 1%: blocked 9, ran 0, dumped 7, flat 0, open 2 (saving losses: keep it)
-- crowd leaving / fading volume: blocked 8, ran 2, dumped 4, flat 0, open 2 (saving losses: keep it)
+- crowd leaving / fading volume: blocked 9, ran 2, dumped 4, flat 0, open 3 (saving losses: keep it)
   - ran: STABLEPAD up to 2.13x  
     CA `AABM3NrYSwKMsEDyanuskY43EH6ySbPpdPZNG1u7pump`
   - ran: HYDESK up to 1.78x  
     CA `BzndCZ2ZrjUA21aVW7t6AWEENRAps3EmdQg9hf94pump`
-- falling knife / no higher low: blocked 7, ran 0, dumped 4, flat 1, open 2 (saving losses: keep it)
+- dev share over 1%: blocked 9, ran 0, dumped 7, flat 0, open 2 (saving losses: keep it)
+- falling knife / no higher low: blocked 7, ran 1, dumped 4, flat 1, open 1 (saving losses: keep it)
+  - ran: Kim up to 1.55x  
+    CA `qhbbjGBKJxW3AZGqngWM5tHcrENR3pVoRB9MCf1pump`
 - falling knife (code): blocked 6, ran 0, dumped 6, flat 0, open 0 (saving losses: keep it)
-- hack story (owner rule): blocked 6, ran 0, dumped 1, flat 2, open 3 (too few played out to judge)
+- hack story (owner rule): blocked 5, ran 0, dumped 1, flat 2, open 2 (too few played out to judge)
 - bundles over the line: blocked 3, ran 0, dumped 3, flat 0, open 0 (saving losses: keep it)
 
 ## Rules it changed from results and skips
@@ -168,13 +170,13 @@ The crawler's summary is already out of date, so I'm going by the scan. Right no
 laptop stays out. It's riding the Hunter Biden $LAPTOP story, and that's my politician rule (V13). Gooner sits on the Binance-hack headline, so I won't name it as a setup either. Owner's push noted: clean setups can get an 8, but the hard lines and the 35% max risk don't move.
 
 ## Moving most in its scans, last 30 min (1h volume)
-- HEXN: $252,014 1h vol, $372,813 mcap, +11% 1h  
-  CA `ANVLA6eKiAq4nstD2Sg3SZhfVkSEwfnGccn12UQWpump`
 - Gruffalo: $217,256 1h vol, $231,590 mcap, +361% 1h  
   CA `A7pmyAhMbRXrQ6FXThxaNCNCmcdqCssjptizX15Ypump`
-- PURPS: $186,189 1h vol, $112,716 mcap, +62% 1h  
-  CA `EFo8uB6wD739GgtGoYbAwxM6Pp8iCzM8XGf7jQW7pump`
-- laptop: $147,073 1h vol, $105,723 mcap, +164% 1h  
-  CA `GEWDAj3NaK3WVpgjhusnZq8CMsYu9yQPRRxApfXwpump`
-- Foxii: $135,213 1h vol, $234,397 mcap, +1% 1h  
-  CA `J3ReuwckNtcJP1Zhn7wVbfXhTDNTkHxozQWWAwxWpump`
+- Kim: $107,005 1h vol, $22,141 mcap, +20% 1h  
+  CA `Bp32zY54GHujmYPQkTaUwdoxvLPd2dFPHtXeB9rWpump`
+- Gooner: $100,329 1h vol, $3,126 mcap, -84% 1h  
+  CA `HZk68axB7kaiUgxauBRLLY2iiadXpdxHexw9Vz1qpump`
+- SAFU: $95,597 1h vol, $436,731 mcap, +160% 1h  
+  CA `etRgw1DVduNwoSdrwaMcnb6Yy16CShyv34SYWuApump`
+- HN: $65,902 1h vol, $37,664 mcap, +830% 1h  
+  CA `DqqkqbUYSQ47vFCENkKtoBzeNQU3pismjWu5e6Ukpump`
