@@ -1,13 +1,13 @@
 # Trencher live report
 
-Updated 2026-10-30T01:46:23Z (paper trading, never real money)
+Updated 2026-10-30T02:01:24Z (paper trading, never real money)
 
-- Equity: $96.61 (-3.4% vs $100 start)
+- Equity: $96.95 (-3.0% vs $100 start)
 - Goal: $1,000 by 2026-11-05 05:03Z (a stretch, survival first): at 9.7% of it, 6.1 days left, needs +46.4% a day from here
 - Closed trades: 10, 2 wins
 - Fees paid: $6.06 (axiom $0.68, network $4.60, pool $0.64), plus $0.99 lost to slippage
 - New trades: on
-- Brain: subscription, 533 calls and 0 plan-limit hits in 48h
+- Brain: subscription, 536 calls and 0 plan-limit hits in 48h
 
 ## Scorecard (after fees)
 - 10 closed, 2 won (20%), net $-3.10
@@ -24,10 +24,10 @@ Updated 2026-10-30T01:46:23Z (paper trading, never real money)
   - stop loss: 3, 0 won, net $-4.75, fees+slip $1.83, peak 1.07x → 0.55x
   - trailing stop: 2, 2 won, net $+4.21, fees+slip $2.04, peak 3.32x → 1.72x
   - other: 1, 0 won, net $-0.03, fees+slip $0.67, peak 1.4x → 0.99x
-- To $1,000: $903.39 to go; at $-0.31 a trade this pace doesn't get there
+- To $1,000: $903.05 to go; at $-0.31 a trade this pace doesn't get there
 
 ## Open positions
-- HEXN (DIP): cost $4.0, 0.99x, fees $0.27  
+- HEXN (DIP): cost $4.0, 1.09x, fees $0.27  
   CA `ANVLA6eKiAq4nstD2Sg3SZhfVkSEwfnGccn12UQWpump`
 
 ## Recent trades
@@ -75,9 +75,17 @@ Updated 2026-10-30T01:46:23Z (paper trading, never real money)
   CA `EFaQg27P3c3PHob2mFw4mHCUcWBHHDdatAEsXq2xpump`
 
 ## Last scan
-- 01:45Z: 3 coins, 2 with pairs, 0 passed the market filters, 0 researched
+- 02:01Z: 1 coins, 0 with pairs, 0 passed the market filters, 0 researched
 
 ## Coins it looked at, and why it passed
+- 01:56Z SENSE (MIGRATED, $159,373 mcap, $2,263 5m vol): PASS at conviction 2, PASS: 91% off the peak, a −19% five-minute candle onto the hourly low, $2.3k on the 5m. Falling knife with no higher low. (V1, V6)  
+  CA `GydpvgKppv8a4gGQqAQsyQJxtQN4S6Ym9gKxjnN3mfun`
+- 01:56Z DEADGUY (MIGRATED, $34,024 mcap, $4,847 5m vol): PASS at conviction 3, PASS. It's 2.5 minutes old, already 21% off its bond spike, and the top 10 hold exactly 25.0%, right on the hard line. That's a sniper's table, not mine (V1, V6, V13).  
+  CA `FGGwUpqPHTxwLDdtoY37KBJ6tQxfY5N1JLTXEs2ppump`
+- 01:51Z jeff (DIP, $729,080 mcap, $3,290 5m vol): REJECT, Top 10 hold 34.0% ex-pool (>25%) (V13)  
+  CA `HAsTKXYvv65zM7J6Cu5o5PcZsiKMQYo5oz4WPjgqwP6k`
+- 01:50Z GRID (FINAL_STRETCH, $23,523 mcap, $17,444 5m vol): PASS at conviction 3, PASS. GRID is a 9-minute-old Grok-name launch sitting 16.5% under its peak, with 16 other coins on the same ticker and a 1-day-old site that doesn't show the CA. That's chasing a sniper chart in a crowded vamp field (V1, V3, V13).  
+  CA `DwGRhEKzgLb6su8sSdhXYTpvnmEmdtddmDEukXHhpump`
 - 01:41Z three (MIGRATED, $678,979 mcap, $3,100 5m vol): PASS at conviction 3, PASS: one wallet cluster holds 9.7%, and I'd be buying 12.6% off the high on $3.1k of 5m flow. That's chasing a bundled chart (V3, V6).  
   CA `FeMbDoX7R1Psc4GEcvJdsbNbZA3bfztcyDCatJVJpump`
 - 01:40Z HEXN (DIP, $500,979 mcap, $19,248 5m vol): BUY at conviction 5, BUY, probe — HEXN printed the higher low I skipped waiting for last time ($0.000449 over the $0.00043 hourly low), clean holders, 84% buys; volume 0.89x and a LARP-smelling site keep it at a probe (V1, V6).  
@@ -90,22 +98,14 @@ Updated 2026-10-30T01:46:23Z (paper trading, never real money)
   CA `AHgqStQviBDBiPra3cLxb8gQs2auRAmXT4s9v7LKpump`
 - 01:34Z SWAN (DIP, $108,185 mcap, $34,177 5m vol): REJECT, Dip with fading attention is a falling knife, not a dip (5m at 0.59x the hour's pace, under 0.7x)  
   CA `EFaQg27P3c3PHob2mFw4mHCUcWBHHDdatAEsXq2xpump`
-- 01:34Z HYPERPAD (FINAL_STRETCH, $23,988 mcap, $12,924 5m vol): PASS at conviction 3, PASS: an 11-minute-old "launchpad" with no GitHub, a 5-hour-old domain, a ticker that two bigger coins already use, and price 9% off its high. Tech LARP until proven otherwise (V1, V3).  
-  CA `31FZ9fnK5NqFrymDmNdwKZmrnVvYtpKoVdWXDeXTpump`
-- 01:32Z fear (FINAL_STRETCH, $19,511 mcap, $4,120 5m vol): PASS at conviction 3, PASS: it's sitting right at its high after a 7x in an hour, on $4k of 5m volume, with 13 other coins on the same ticker. That's a chase, not an entry (V1, V6).  
-  CA `6rWHEr3uMeB7DUu1eJ9oXXEBEDvcDNZU6NgNsRPXpump`
-- 01:28Z HYPERGAMY (FINAL_STRETCH, $30,288 mcap, $9,148 5m vol): PASS at conviction 4, PASS: I'd be buying the top of a +90% five-minute candle, 3.7% under the high and right where the pre-bond dump usually starts. Wait for the dump and a higher low (V1).  
-  CA `CUyNDWGdLPXZ3Gyj1H6TBh5pACgu5nY9WNkSqfMApump`
-- 01:28Z Health (FINAL_STRETCH, $20,230 mcap, $9,914 5m vol): REJECT, Top 10 hold 27.6% ex-pool (>25%) (V13)  
-  CA `1212KbNXivZY13xE3gFNSAa8kZLHfwtmoGXRzpu3pump`
 
 ## What its skips did next (last 48h)
 A skip "ran" if the coin reached the first target (1.5x) from the skip price before a 20% drop, "dumped" if the drop came first. Sampled every 10 min, followed 6h.
-- near the high / chasing: blocked 10, ran 1, dumped 4, flat 0, open 5 (saving losses: keep it)
+- near the high / chasing: blocked 11, ran 1, dumped 4, flat 0, open 6 (saving losses: keep it)
   - ran: HYPERPAD up to 3.02x  
     CA `31FZ9fnK5NqFrymDmNdwKZmrnVvYtpKoVdWXDeXTpump`
-- top 10 over 25%: blocked 9, ran 0, dumped 8, flat 0, open 1 (saving losses: keep it)
-- too new / sniping: blocked 7, ran 2, dumped 5, flat 0, open 0 (saving losses: keep it)
+- top 10 over 25%: blocked 9, ran 0, dumped 7, flat 0, open 2 (saving losses: keep it)
+- too new / sniping: blocked 8, ran 2, dumped 6, flat 0, open 0 (saving losses: keep it)
   - ran: ZI up to 1.7x  
     CA `5q45EK4mRhuiuBmRYoaDs4m2xweaV7gn3zsFhsvcpump`
   - ran: BEAR up to 1.59x  
@@ -124,10 +124,10 @@ A skip "ran" if the coin reached the first target (1.5x) from the skip price bef
 - bundles over the line: blocked 3, ran 1, dumped 2, flat 0, open 0 (saving losses: keep it)
   - ran: calm up to 1.53x  
     CA `4HSHFbFiKuMvZW7yGiDTab17B63MzBkkhadFKxhkpump`
-- crowd leaving / fading volume: blocked 3, ran 0, dumped 2, flat 0, open 1 (too few played out to judge)
 - other: blocked 3, ran 1, dumped 2, flat 0, open 0 (saving losses: keep it)
   - ran: SI up to 1.54x  
     CA `6zuDiAw3NviBwcLZfTztHJgtCmeNWfyFxYVoXtNYpump`
+- crowd leaving / fading volume: blocked 2, ran 0, dumped 1, flat 0, open 1 (too few played out to judge)
 - holders or bundles unverified: blocked 2, ran 0, dumped 0, flat 0, open 2 (too few played out to judge)
 
 ## Rules it changed from results and skips
@@ -156,13 +156,13 @@ A skip "ran" if the coin reached the first target (1.5x) from the skip price bef
 The crawler's summary is already stale. Zero Inu (FnvQ) is down 99% in the hour and sits at a $1.8k cap. Zero Cat Dn6 is down 93% at $2.7k. The "Zero" wave rugged inside an hour, so I won't touch it (ZERODAY, 18 min old, $99k, +146%, 50/50 buys, is the same theme catching late money). What's actually trading has three parts. First, very fast animal and joke launches that run and then dump inside the hour: both Bear coins are down 77% and 48%, 🙏 is down 58%, and SOLHYPE is down 66%. Those are fading and they're traps. Second, a few migrated coins that already proved themselves and are holding up: HOUSEWORM at $813k, 8.7h old, 73% buys, and HEXN at $479k, 8h old, +16% on the hour but only 43% buys. Third, fresh tickers riding the crypto culture of the day: SAFU ("funds are SAFU", the Binance joke) at $46k, +186%, $5.7k on the 5-minute, and HYPERGAMY at $23.5k on the curve with $31k on the 5-minute, 6 minutes old. Setups I'd look at now: HOUSEWORM as a MIGRATED or DIP probe if the 5-minute volume climbs back toward $10k (it's $4.4k now, so that's the blocker), HEXN only if buyers take back control from sellers, and HYPERGAMY as FINAL_STRETCH, with the pre-bond dump in mind (V1), if it's still printing over $10k per 5 minutes as it nears bond. SAFU needs its volume to reach $10k first. I'm skipping $LAPTOP outright: it's a Hunter Biden coin pushed by a political figure and it's already down 98% (V13). Any coin riding a hack story also gets a pass, per the owner's note.
 
 ## Moving most in its scans, last 30 min (1h volume)
-- ZERODAY: $930,977 1h vol, $306,780 mcap, +313% 1h  
-  CA `7fR4hpUuHYaUTnnUeVLWke2GvMZdZtaeM8yFwu92pump`
 - SWAN: $690,987 1h vol, $108,185 mcap, +138% 1h  
   CA `EFaQg27P3c3PHob2mFw4mHCUcWBHHDdatAEsXq2xpump`
 - HEXN: $260,157 1h vol, $500,979 mcap, -2% 1h  
   CA `ANVLA6eKiAq4nstD2Sg3SZhfVkSEwfnGccn12UQWpump`
-- HYPERGAMY: $104,432 1h vol, $30,288 mcap, +365% 1h  
-  CA `CUyNDWGdLPXZ3Gyj1H6TBh5pACgu5nY9WNkSqfMApump`
-- Health: $68,951 1h vol, $20,230 mcap, +530% 1h  
-  CA `1212KbNXivZY13xE3gFNSAa8kZLHfwtmoGXRzpu3pump`
+- SAFU: $64,629 1h vol, $71,077 mcap, +93% 1h  
+  CA `AHgqStQviBDBiPra3cLxb8gQs2auRAmXT4s9v7LKpump`
+- fear: $59,827 1h vol, $19,511 mcap, +629% 1h  
+  CA `6rWHEr3uMeB7DUu1eJ9oXXEBEDvcDNZU6NgNsRPXpump`
+- Zeroday: $57,499 1h vol, $1,835 mcap, -98% 1h  
+  CA `G68ruHgnWmHBg8QGbXkPv9UMpPhDmJ33MHTbdf5tpump`
