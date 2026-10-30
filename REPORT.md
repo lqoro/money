@@ -1,13 +1,13 @@
 # Trencher live report
 
-Updated 2026-10-30T16:25:44Z (paper trading, never real money)
+Updated 2026-10-30T16:40:52Z (paper trading, never real money)
 
 - Equity: $93.79 (-6.2% vs $100 start)
-- Goal: $1,000 by 2026-11-05 05:03Z (pressing for it): at 9.4% of it, 5.5 days left, needs +53.5% a day from here
+- Goal: $1,000 by 2026-11-05 05:03Z (pressing for it): at 9.4% of it, 5.5 days left, needs +53.6% a day from here
 - Closed trades: 13, 2 wins
 - Fees paid: $7.85 (axiom $1.10, network $5.57, pool $1.04), plus $1.62 lost to slippage
 - New trades: on
-- Brain: subscription, 635 calls and 0 plan-limit hits in 48h
+- Brain: subscription, 633 calls and 0 plan-limit hits in 48h
 
 ## Scorecard (after fees)
 - 13 closed, 2 won (15%), net $-6.21
@@ -74,9 +74,21 @@ Updated 2026-10-30T16:25:44Z (paper trading, never real money)
   CA `3ApVr1xphYMpi9dn3rpqU4hwvpmCQDVwxET1rdCDpump`
 
 ## Last scan
-- 16:24Z: 0 coins, 0 with pairs, 0 passed the market filters, 0 researched
+- 16:40Z: 4 coins, 4 with pairs, 0 passed the market filters, 0 researched
 
 ## Coins it looked at, and why it passed
+- 16:39Z PULL (MIGRATED, $86,453 mcap, $2,520 5m vol): REJECT, RugCheck danger: Top 10 holders high ownership  
+  CA `3Pv7x6YvXw2cHPAhcwKAGwPo56MvpZ1ZSTw2P2qqpump`
+- 16:33Z CTO (MIGRATED, $191,277 mcap, $6,193 5m vol): PASS at conviction 3, PASS — 1.4% off the high with 5m volume at 0.35x its hourly pace. Chasing a fading chart (V1, V6).  
+  CA `G4vGFQjeqYdbfckvipiuyusFgY1jqAK23mbYG4H8pump`
+- 16:33Z PROBE (DIP, $45,649 mcap, $12,528 5m vol): REJECT, RugCheck danger: Creator history of rugged tokens  
+  CA `DR3Jtxwzkw9uBpi6Bz7qJX7zuFSJkNKXthD8nB1mpump`
+- 16:32Z $19 (MIGRATED, $113,656 mcap, $10,351 5m vol): REJECT, Bundles: 6 linked wallet cluster(s) hold 21.7% of supply (>20%) (V17)  
+  CA `pa6bZZbPUj8JVciH9b2DrcqmDuDwkvPBAZnWHKnpump`
+- 16:32Z $PERIODTPE (MIGRATED, $85,220 mcap, $83,420 5m vol): PASS at conviction 3, PASS: 11 minutes old and already red off a $110k spike that printed minutes ago, with no base. $83k of 5m volume on an $85k coin looks like a farm until it proves otherwise. Blocker: too new, no base (V1, V13).  
+  CA `HpH3XrbTCtLnt1BRJ4BWJQXgbDXHZDzs76hssf42pump`
+- 16:26Z 咪咪 (FINAL_STRETCH, $31,496 mcap, $22,626 5m vol): REJECT, Top 10 hold 26.7% ex-pool (>25%) (V13)  
+  CA `JrvC7qKnGVn163q1u11VDUno7JtJ4ME2euiJkaupump`
 - 16:18Z SAYLUR (MIGRATED, $158,794 mcap, $2,574 5m vol): REJECT, RugCheck danger: Top 10 holders high ownership  
   CA `AobUjTvWqxjncsSLqeNBewqNCzbqJre4tS9X2dtepump`
 - 16:18Z SAFU (DIP, $199,180 mcap, $21,256 5m vol): PASS at conviction 3, PASS — blocker: hack story. SAFU is the Binance-hack catchphrase, launched while 'binance hack' tops the radar, with a SAFU copy already at −99%. Holders are clean, but the story comes from a hack headline (owner rule, V1/V3).  
@@ -85,22 +97,10 @@ Updated 2026-10-30T16:25:44Z (paper trading, never real money)
   CA `HsprHxBRgiVaQdRf3TnKNuZZtaX9JUSPgMFdAkk6pump`
 - 16:14Z Reef (MIGRATED, $32,645 mcap, $2,203 5m vol): PASS at conviction 2, PASS: the crowd is leaving. 5m volume is $2.2k, only 0.23x its hourly pace, sells outnumber buys, and it's down 23% on the 5m. That's a falling knife on a launchpad LARP whose domain is 7 hours old (V1, V6).  
   CA `HJqY1zuc8fEgVVdBy7YGe5dr9g4wBiqonw4KPfdepump`
-- 16:14Z HYPERCHAN (MIGRATED, $1,617,020 mcap, $4,665 5m vol): PASS at conviction 3, PASS — $4.7k on the 5m with 41% buys, and sells beat buys almost 3:1 over the hour. Clean holders, dead crowd, and the meta has moved to cats and trolls. Blocker: no live flow / sellers dominate (V1, V6).  
-  CA `3ApVr1xphYMpi9dn3rpqU4hwvpmCQDVwxET1rdCDpump`
-- 16:13Z Foxii (MIGRATED, $134,941 mcap, $9,223 5m vol): PASS at conviction 3, PASS: 92.6% off the peak, past my 75% dip limit. The higher low is 26% under entry and 5m volume is 0.68x pace. Falling knife with one bounce. (V1, V6)  
-  CA `J3ReuwckNtcJP1Zhn7wVbfXhTDNTkHxozQWWAwxWpump`
-- 16:12Z HEXN (MIGRATED, $290,793 mcap, $9,919 5m vol): PASS at conviction 3, PASS: third time at the HEXN table, same LARP story, and now 84% off the peak, which is past my 75% dip limit. The holders are clean but there's nothing to buy. (V1, V6)  
-  CA `ANVLA6eKiAq4nstD2Sg3SZhfVkSEwfnGccn12UQWpump`
-- 16:09Z ELONTROLL (DIP, $446,006 mcap, $74,479 5m vol): PASS at conviction 3, PASS — no higher low. It's down 31% in the last 5 minutes on a 56-minute-old chart, and the only real floor is the hourly low, 48% below. That's a falling knife, not a dip (V1, DIP rule).  
-  CA `FhdqbRJgDnsxHS4mcY5YpuezTFysbPyDzLXrthyBpump`
-- 16:04Z SPACECAT (MIGRATED, $201,957 mcap, $43,617 5m vol): PASS at conviction 3, PASS — 14.6% off the high with 5m at 0.83x pace, a 5% single bundle, and a younger SPACECAT copy out-flowing it on the 5m. Flow below pace, leader unclear. (V1, V2, V3)  
-  CA `BLN4c4FERWn8pf3PysRDapSKzB5JoHx9HbaxjYkEpump`
-- 16:02Z CATPAD (DIP, $85,093 mcap, $2,130 5m vol): REJECT, Dip with fading attention is a falling knife, not a dip (5m at 0.08x the hour's pace, under 0.6x)  
-  CA `2gTbp2gwH46rqExzabSyrdR3294SLwCp2rSqWDS6Sim1`
 
 ## What its skips did next (last 48h)
 A skip "ran" if the coin reached the first target (1.5x) from the skip price before a 20% drop, "dumped" if the drop came first. Sampled every 10 min, followed 6h.
-- top 10 over 25%: blocked 27, ran 5, dumped 20, flat 1, open 1 (saving losses: keep it)
+- top 10 over 25%: blocked 28, ran 5, dumped 20, flat 1, open 2 (saving losses: keep it)
   - ran: HYPERGAMY up to 2.05x  
     CA `CUyNDWGdLPXZ3Gyj1H6TBh5pACgu5nY9WNkSqfMApump`
   - ran: Catori up to 1.52x  
@@ -114,12 +114,12 @@ A skip "ran" if the coin reached the first target (1.5x) from the skip price bef
     CA `6i4ebPt8dpGchB2A1ELpTz3B72dy5DkzNpFMNtUSpump`
   - ran: HyPepe up to 1.5x  
     CA `G8TdzgpUQXQAxJvarNKPXRGv2kh9CsJDK7dCC7Xupump`
-- near the high / chasing: blocked 18, ran 2, dumped 10, flat 2, open 4 (saving losses: keep it)
+- near the high / chasing: blocked 19, ran 2, dumped 11, flat 2, open 4 (saving losses: keep it)
   - ran: OREN up to 1.58x  
     CA `57vAaMsnAJXkvULtAz7fsi6gRn3bHRJFJsJV1okNpump`
   - ran: Catori up to 1.52x  
     CA `FDwCosavNvMiFB812ajJp3gG7eZ9c4bpgcnY6fDQpump`
-- RugCheck danger: blocked 15, ran 5, dumped 8, flat 1, open 1 (mixed)
+- RugCheck danger: blocked 16, ran 4, dumped 9, flat 1, open 2 (saving losses: keep it)
   - ran: HYPEINU up to 1.57x  
     CA `6eccVGkbi8cvAYBGzfDmUwFYrMj8eGZF2xyZqZLkpump`
   - ran: ETF up to 1.87x  
@@ -133,9 +133,9 @@ A skip "ran" if the coin reached the first target (1.5x) from the skip price bef
     CA `AABM3NrYSwKMsEDyanuskY43EH6ySbPpdPZNG1u7pump`
   - ran: HYDESK up to 1.78x  
     CA `BzndCZ2ZrjUA21aVW7t6AWEENRAps3EmdQg9hf94pump`
-- falling knife / no higher low: blocked 8, ran 0, dumped 5, flat 1, open 2 (saving losses: keep it)
-- hack story (owner rule): blocked 7, ran 0, dumped 3, flat 2, open 2 (saving losses: keep it)
-- vamp / copycat: blocked 4, ran 0, dumped 4, flat 0, open 0 (saving losses: keep it)
+- falling knife / no higher low: blocked 8, ran 0, dumped 6, flat 1, open 1 (saving losses: keep it)
+- hack story (owner rule): blocked 7, ran 0, dumped 4, flat 2, open 1 (saving losses: keep it)
+- bundles over the line: blocked 4, ran 0, dumped 3, flat 0, open 1 (saving losses: keep it)
 
 ## Rules it changed from results and skips
 - 10-30 12:55Z added: Press the goal: take every rule-clearing setup at honest conviction (Owner override replacing the dropped deadline rule; hard lines, stops and 35% risk ceiling unchanged.)
@@ -163,13 +163,13 @@ A skip "ran" if the coin reached the first target (1.5x) from the skip price bef
 The meta right now is fresh, sub-1-hour launches running joke characters, and cats are the theme showing up across the most coins. Elon The Troller ($446k, $74k 5m volume, +838% on the hour, 80% buys) is the loudest. Space Cat (SPACECAT, BLN4…pump) is at $202k with $44k 5m volume and +452% on the hour; it's clearly the original, and the NEBULA "Space Cat" vamp (no pump suffix) is dead at -81%. Cats are rising on the new launches (SPACECAT, nomnomnomcat on the curve) but fading on the older ones: CATPAD has dropped to $2.1k 5m volume against a $307k hour, which is a dead chart and not a dip. Crypto Final Boss isn't even on the movers list anymore, so the crawler's summary is stale, and its "SAFU -99%" line conflicts with today's scan showing SAFU at $199k and +155%, so SAFU stays untouched until checks explain it. Setups I'd research now: 1) ELONTROLL as MIGRATED, but only on a pullback of at least 10% off the local high with 5m volume at 0.7x or more of its hourly pace, because buying a vertical +838% candle makes me exit liquidity (V1). 2) SPACECAT, same pullback rule, as the original cat of the hour (V1, V13). 3) DODGY ($14.5k, $20k 5m) and "only the paranoid survive" ($21k, $18k 5m) as FINAL_STRETCH candidates if holder and bundle checks come back clean. Both have 5m volume above market cap, so I'm assuming they're farms until the checks say otherwise. LAPTOP is out under the politician rule (V13), and the hack-story coins are skipped.
 
 ## Moving most in its scans, last 30 min (1h volume)
-- ELONTROLL: $788,238 1h vol, $446,006 mcap, +838% 1h  
-  CA `FhdqbRJgDnsxHS4mcY5YpuezTFysbPyDzLXrthyBpump`
-- SPACECAT: $628,060 1h vol, $201,957 mcap, +452% 1h  
-  CA `BLN4c4FERWn8pf3PysRDapSKzB5JoHx9HbaxjYkEpump`
-- SPACECAT: $455,366 1h vol, $1,891 mcap, -95% 1h  
+- SPACECAT: $309,970 1h vol, $2,030 mcap, -98% 1h  
   CA `61h4rUn7C21QNv1NJADc2oAxpAhr7f2WGqbXRDEupump`
-- CATPAD: $306,883 1h vol, $85,093 mcap, +144% 1h  
-  CA `2gTbp2gwH46rqExzabSyrdR3294SLwCp2rSqWDS6Sim1`
+- $19: $306,697 1h vol, $113,656 mcap, +43% 1h  
+  CA `pa6bZZbPUj8JVciH9b2DrcqmDuDwkvPBAZnWHKnpump`
 - SAFU: $280,383 1h vol, $199,180 mcap, +155% 1h  
   CA `kziXxCJLQMpkiuoyAkgHELxGcKDs4hNoeWdnpgkpump`
+- CTO: $212,700 1h vol, $191,277 mcap, +10% 1h  
+  CA `G4vGFQjeqYdbfckvipiuyusFgY1jqAK23mbYG4H8pump`
+- Foxii: $162,814 1h vol, $134,941 mcap, -2% 1h  
+  CA `J3ReuwckNtcJP1Zhn7wVbfXhTDNTkHxozQWWAwxWpump`
