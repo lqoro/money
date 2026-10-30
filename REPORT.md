@@ -1,13 +1,13 @@
 # Trencher live report
 
-Updated 2026-10-30T20:27:39Z (paper trading, never real money)
+Updated 2026-10-30T20:42:50Z (paper trading, never real money)
 
 - Equity: $93.79 (-6.2% vs $100 start)
-- Goal: $1,000 by 2026-11-05 05:03Z (pressing for it): at 9.4% of it, 5.4 days left, needs +55.5% a day from here
+- Goal: $1,000 by 2026-11-05 05:03Z (pressing for it): at 9.4% of it, 5.3 days left, needs +55.7% a day from here
 - Closed trades: 13, 2 wins
 - Fees paid: $7.85 (axiom $1.10, network $5.57, pool $1.04), plus $1.62 lost to slippage
 - New trades: on
-- Brain: subscription, 609 calls and 1 plan-limit hits in 48h
+- Brain: subscription, 605 calls and 1 plan-limit hits in 48h
 
 ## Scorecard (after fees)
 - 13 closed, 2 won (15%), net $-6.21
@@ -74,9 +74,17 @@ Updated 2026-10-30T20:27:39Z (paper trading, never real money)
   CA `3ApVr1xphYMpi9dn3rpqU4hwvpmCQDVwxET1rdCDpump`
 
 ## Last scan
-- 20:26Z: 3 coins, 3 with pairs, 0 passed the market filters, 0 researched
+- 20:42Z: 7 coins, 7 with pairs, 0 passed the market filters, 0 researched
 
 ## Coins it looked at, and why it passed
+- 20:39Z Jason (MIGRATED, $109,857 mcap, $2,398 5m vol): REJECT, Dev holds 1.2% (>1%) (V13, V17)  
+  CA `3qjBR3LfzEAKVS6QXuR2QZ1RFUsXzATWvmjbGB5Dpump`
+- 20:33Z INU (DIP, $95,263 mcap, $5,024 5m vol): REJECT, Top 10 hold 51.5% ex-pool (>25%) (V13)  
+  CA `Gztz15EVRR9GyBVcVQy2aCpX5JhY5SsUtoW1G1M5qvK1`
+- 20:31Z Pumpfluencer (FINAL_STRETCH, $30,266 mcap, $38,156 5m vol): REJECT, Top 10 hold 26.9% ex-pool (>25%) (V13)  
+  CA `6C1JdN6V7B4beZGxZxjhCGCncmWt22zD8i4Q4cq1pump`
+- 20:29Z Miso (FINAL_STRETCH, $20,767 mcap, $70,007 5m vol): PASS at conviction 3, PASS: 5 minutes old and only halfway up the bonding curve. That's sniping, not trading, and the story is a zoo tweet with no CA on it. Too new. (V1, V5, V6)  
+  CA `23Qv2Cu3akuvzAYap9gesnqgp88Ezd3MSVCx7jTcpump`
 - 20:26Z GATO (MIGRATED, $4,435,713 mcap, $2,374 5m vol): REJECT, Dev holds 3.3% (>1%) (V13, V17)  
   CA `HsprHxBRgiVaQdRf3TnKNuZZtaX9JUSPgMFdAkk6pump`
 - 20:26Z POOLZ (FINAL_STRETCH, $31,757 mcap, $2,652 5m vol): PASS at conviction 3, PASS: $2.6k on the 5m, no X, no site, top 10 at 21%, and it's sitting 5% under its high. Nobody's telling this story. (V1, V6)  
@@ -89,25 +97,17 @@ Updated 2026-10-30T20:27:39Z (paper trading, never real money)
   CA `9Pq7aLAbhDG2tTnS22cm6kuysZVcZpLFE368HWuypump`
 - 20:16Z DESSA (MIGRATED, $9,601,790 mcap, $7,046 5m vol): PASS at conviction 3, PASS: chasing. It's 0.7% off its 24h high, the only target is about 1.2x to the $11.66M ATH, and the 5m is $7k. Clean holders don't fix a bad entry. (V1, V6)  
   CA `npz2FhoufQ7pKqhGpaipYWacrAkidyW2yDpVWSvpump`
-- 20:07Z HYPERCHAN (DIP, $956,497 mcap, $20,359 5m vol): PASS at conviction 3, PASS: attention gate failed and there's no higher low. 5m is 0.66x the hourly pace, under the 0.7x DIP gate, and every 15m close is lower than the last. Falling knife (V1).  
-  CA `3ApVr1xphYMpi9dn3rpqU4hwvpmCQDVwxET1rdCDpump`
-- 20:07Z HC (MIGRATED, $272,470 mcap, $165,841 5m vol): PASS at conviction 4, PASS: 14 minutes old and 35% off a peak printed 6 minutes ago, still falling with no base. That's a knife on a fresh migration, not a pullback (V1). Watchlist it.  
-  CA `8GUoRZCSzjfoA47FRBJ4MuNjjpyn3pWZDTkRePWNpump`
-- 20:06Z PILLY (MIGRATED, $112,499 mcap, $204,463 5m vol): PASS at conviction 3, PASS — 4 minutes old and sitting on its high, 0% drawdown. Chasing a fresh bond spike; wait for the first pullback to hold (V1, V6).  
-  CA `2WVthqDUqTfmKniBvXz2guGwCAJSNTHKGnebUeBvpump`
-- 20:05Z three (MIGRATED, $566,400 mcap, $5,752 5m vol): PASS at conviction 3, PASS: one linked cluster holds 9.7% of supply, 5m flow is $5.7k, and it's a tech-named coin whose website is down with no GitHub. That's a LARP with a loaded gun (V1, V3).  
-  CA `FeMbDoX7R1Psc4GEcvJdsbNbZA3bfztcyDCatJVJpump`
 
 ## What its skips did next (last 48h)
 A skip "ran" if the coin reached the first target (1.5x) from the skip price before a 20% drop, "dumped" if the drop came first. Sampled every 10 min, followed 6h.
-- top 10 over 25%: blocked 34, ran 6, dumped 25, flat 0, open 3 (saving losses: keep it)
+- top 10 over 25%: blocked 36, ran 6, dumped 26, flat 0, open 4 (saving losses: keep it)
   - ran: HYPERGAMY up to 2.05x  
     CA `CUyNDWGdLPXZ3Gyj1H6TBh5pACgu5nY9WNkSqfMApump`
   - ran: Catori up to 1.52x  
     CA `FDwCosavNvMiFB812ajJp3gG7eZ9c4bpgcnY6fDQpump`
   - ran: ZERO up to 1.8x  
     CA `Ddwf94wedgCuMHAkwgti8A7sL2CxvBYJStJBj2cFpump`
-- too new / sniping: blocked 32, ran 7, dumped 25, flat 0, open 0 (saving losses: keep it)
+- too new / sniping: blocked 33, ran 7, dumped 25, flat 0, open 1 (saving losses: keep it)
   - ran: ZI up to 1.7x  
     CA `5q45EK4mRhuiuBmRYoaDs4m2xweaV7gn3zsFhsvcpump`
   - ran: BEAR up to 1.59x  
@@ -133,9 +133,7 @@ A skip "ran" if the coin reached the first target (1.5x) from the skip price bef
     CA `5wCqCq6jbppuTocMeq6zd4UywAm64L1QNNxvEDAHpump`
   - ran: AgenC up to 1.88x  
     CA `DDG8rjV3TViCqKRQED2QZq4MEaE1uqXgEiosBNpapump`
-- dev share over 1%: blocked 13, ran 1, dumped 10, flat 1, open 1 (saving losses: keep it)
-  - ran: Jason up to 1.5x  
-    CA `3qjBR3LfzEAKVS6QXuR2QZ1RFUsXzATWvmjbGB5Dpump`
+- dev share over 1%: blocked 13, ran 0, dumped 10, flat 1, open 2 (saving losses: keep it)
 - falling knife / no higher low: blocked 12, ran 0, dumped 9, flat 1, open 2 (saving losses: keep it)
 - hack story (owner rule): blocked 8, ran 0, dumped 3, flat 3, open 2 (saving losses: keep it)
 - vamp / copycat: blocked 7, ran 1, dumped 6, flat 0, open 0 (saving losses: keep it)
@@ -175,11 +173,11 @@ Right now the trenches are trading pump.fun itself, plus cats. The meta-on-pump.
 ## Moving most in its scans, last 30 min (1h volume)
 - MINECAT: $477,304 1h vol, $75,739 mcap, -42% 1h  
   CA `B5txdTJXiNdKC9Bt8ST8wEBzH8tqBk5yLekEA5hSpump`
-- HC: $431,417 1h vol, $272,470 mcap, +476% 1h  
-  CA `8GUoRZCSzjfoA47FRBJ4MuNjjpyn3pWZDTkRePWNpump`
-- HYPERCHAN: $372,639 1h vol, $956,497 mcap, -47% 1h  
-  CA `3ApVr1xphYMpi9dn3rpqU4hwvpmCQDVwxET1rdCDpump`
-- minecat: $251,940 1h vol, $1,843 mcap, -98% 1h  
-  CA `BK4sWbteR1EhULXACs7khW1dasdF9LEkjuS9BAV3pump`
-- PUMPBUCKS: $205,861 1h vol, $11,307 mcap, -75% 1h  
+- PUMPBUCKS: $214,127 1h vol, $5,372 mcap, -88% 1h  
   CA `GmnJeWjQGNd4q9HsWVYahGNeCn8CYkzghKB2HxSVpump`
+- Pilly: $194,845 1h vol, $7,011 mcap, +292% 1h  
+  CA `BPzpLB8FYL7mwkeGgmZefaow6GeAZzN7oYPG42e7dgPH`
+- CREATORS: $146,420 1h vol, $6,360 mcap, -5% 1h  
+  CA `FeMNVGRb2gzo18tFtkNDENmxMzuftLQ7KDi5KYqjpump`
+- minecat: $144,425 1h vol, $1,843 mcap, -99% 1h  
+  CA `BK4sWbteR1EhULXACs7khW1dasdF9LEkjuS9BAV3pump`
