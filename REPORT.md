@@ -1,13 +1,13 @@
 # Trencher live report
 
-Updated 2026-10-30T08:35:07Z (paper trading, never real money)
+Updated 2026-10-30T08:50:19Z (paper trading, never real money)
 
 - Equity: $95.81 (-4.2% vs $100 start)
-- Goal: $1,000 by 2026-11-05 05:03Z (a stretch, survival first): at 9.6% of it, 5.9 days left, needs +49.3% a day from here
+- Goal: $1,000 by 2026-11-05 05:03Z (a stretch, survival first): at 9.6% of it, 5.8 days left, needs +49.4% a day from here
 - Closed trades: 11, 2 wins
 - Fees paid: $6.32 (axiom $0.72, network $4.79, pool $0.67), plus $1.04 lost to slippage
 - New trades: on
-- Brain: subscription, 607 calls and 0 plan-limit hits in 48h
+- Brain: subscription, 609 calls and 0 plan-limit hits in 48h
 
 ## Scorecard (after fees)
 - 11 closed, 2 won (18%), net $-4.20
@@ -74,9 +74,21 @@ Updated 2026-10-30T08:35:07Z (paper trading, never real money)
   CA `ANVLA6eKiAq4nstD2Sg3SZhfVkSEwfnGccn12UQWpump`
 
 ## Last scan
-- 08:34Z: 3 coins, 3 with pairs, 0 passed the market filters, 0 researched
+- 08:49Z: 4 coins, 4 with pairs, 0 passed the market filters, 0 researched
 
 ## Coins it looked at, and why it passed
+- 08:48Z jeff (MIGRATED, $1,689,007 mcap, $4,363 5m vol): REJECT, Top 10 hold 34.1% ex-pool (>25%) (V13)  
+  CA `HAsTKXYvv65zM7J6Cu5o5PcZsiKMQYo5oz4WPjgqwP6k`
+- 08:48Z Stonka (MIGRATED, $69,550 mcap, $13,432 5m vol): REJECT, Top 10 hold 29.9% ex-pool (>25%) (V13)  
+  CA `3UrbFtErj4FYspTupgAfKqztrMYNVQA2GocpT97Q3ray`
+- 08:40Z ███ (MIGRATED, $468,519 mcap, $2,231 5m vol): REJECT, Top 10 hold 25.4% ex-pool (>25%) (V13)  
+  CA `EwX2T1p2PmgTsSq2Bi6XtQYxPC5krR4P2fxPfN4Qpump`
+- 08:40Z DESSA (MIGRATED, $9,159,637 mcap, $15,499 5m vol): PASS at conviction 4, PASS — DESSA's only retest level is the $12M peak, 1.31x away and under the 1.5x initials, and the 5m tape is 20 buys to 21 sells. Clean holders, but no payoff and no new crowd (V1, V6).  
+  CA `npz2FhoufQ7pKqhGpaipYWacrAkidyW2yDpVWSvpump`
+- 08:38Z DUOTIDE (MIGRATED, $53,740 mcap, $2,030 5m vol): PASS at conviction 2, PASS — 10 minutes old, 0.7% off its high, $2k on the 5m, and a launchpad "tech" coin whose own site calls itself a play-money simulation. Too new, chasing, LARP. (V1, V5, V6)  
+  CA `AtKvRVDF738YA925jmxNeh4iV2qCVBBJeMxQNyrupump`
+- 08:37Z GhostGuy (FINAL_STRETCH, $20,660 mcap, $3,742 5m vol): REJECT, RugCheck danger: Creator history of rugged tokens  
+  CA `8kTBAkfr3aNdxcaAgSf5jGkZHCxEuvJsDhddg9tmpump`
 - 08:30Z GATO (MIGRATED, $4,761,233 mcap, $2,178 5m vol): REJECT, Dev holds 3.3% (>1%) (V13, V17)  
   CA `HsprHxBRgiVaQdRf3TnKNuZZtaX9JUSPgMFdAkk6pump`
 - 08:24Z HEXN (DIP, $608,146 mcap, $12,593 5m vol): PASS at conviction 3, PASS — 5m volume at 0.88x the hourly pace fails my DIP attention gate, and it's a no-GitHub "on-chain OS" story. I've lost on HEXN twice today, not paying for a third (V1, Soul 7).  
@@ -85,48 +97,36 @@ Updated 2026-10-30T08:35:07Z (paper trading, never real money)
   CA `J3ReuwckNtcJP1Zhn7wVbfXhTDNTkHxozQWWAwxWpump`
 - 08:22Z HYPERCHAN (MIGRATED, $1,950,077 mcap, $8,521 5m vol): PASS at conviction 4, PASS — 14.5% off a 36-minute-old high with 5m volume at half its hourly pace. That's chasing a crowd that's leaving. Clean holders don't fix a bad entry. (V1, V6)  
   CA `3ApVr1xphYMpi9dn3rpqU4hwvpmCQDVwxET1rdCDpump`
-- 08:08Z MONEKO (FINAL_STRETCH, $31,656 mcap, $6,522 5m vol): REJECT, Top 10 hold 26.4% ex-pool (>25%) (V13)  
-  CA `2BqhMVMby7i67xoZEBoSyeXTY1wdhVyuhs7vMStspump`
-- 08:05Z TraderTraitor (DIP, $84,003 mcap, $11,087 5m vol): REJECT, RugCheck danger: Symbol Mismatch Token: "TraderTraitor", File: "TraderTrai"  
-  CA `3XLTWYyHxpAdbP1fjfTz9TBZp9Dhq4A6KWNarHMkGHQb`
-- 08:04Z Chameleon  (FINAL_STRETCH, $20,872 mcap, $7,170 5m vol): PASS at conviction 2, PASS: a 17-minute-old AI-agent LARP on a domain 0.1 days old. Its own site says it isn't affiliated with the original Chameleon Trading, and it's bought 15% off the high on $7k 5m volume. Vamp, LARP, chase (V1, V3, V6).  
-  CA `3sMDCmp4SEWN7AR7YeHp55mkXodNTQsmb8C2R7NQpump`
-- 08:03Z Stonka (MIGRATED, $73,645 mcap, $29,001 5m vol): REJECT, Top 10 hold 32.2% ex-pool (>25%) (V13)  
-  CA `3UrbFtErj4FYspTupgAfKqztrMYNVQA2GocpT97Q3ray`
-- 07:57Z SAFU (MIGRATED, $124,150 mcap, $89,022 5m vol): PASS at conviction 3, PASS: 14 minutes old, 12% off the high, and one wallet group holds 5.3%. Wait for a base, don't buy the bond spike. (V1, V3, V13)  
-  CA `EjbgFA8vFhswojnNLxQVKYKiDsm3PgM6w7JuehfPpump`
-- 07:55Z DESSA (MIGRATED, $8,223,055 mcap, $4,105 5m vol): PASS at conviction 3, PASS: $4.1k of 5m volume on an $8.2M coin, with sellers ahead 20 to 11. The crowd already left. (V1, V6)  
-  CA `npz2FhoufQ7pKqhGpaipYWacrAkidyW2yDpVWSvpump`
 
 ## What its skips did next (last 48h)
 A skip "ran" if the coin reached the first target (1.5x) from the skip price before a 20% drop, "dumped" if the drop came first. Sampled every 10 min, followed 6h.
-- top 10 over 25%: blocked 18, ran 3, dumped 13, flat 0, open 2 (saving losses: keep it)
+- top 10 over 25%: blocked 19, ran 3, dumped 12, flat 0, open 4 (saving losses: keep it)
   - ran: HYPERGAMY up to 2.05x  
     CA `CUyNDWGdLPXZ3Gyj1H6TBh5pACgu5nY9WNkSqfMApump`
   - ran: ZERO up to 1.8x  
     CA `Ddwf94wedgCuMHAkwgti8A7sL2CxvBYJStJBj2cFpump`
   - ran: BEAST up to 2.52x  
     CA `3mh5pgk58HPZwEinnZNUbsJpUoyqYa23zS2n442Zpump`
-- too new / sniping: blocked 15, ran 3, dumped 12, flat 0, open 0 (saving losses: keep it)
+- too new / sniping: blocked 16, ran 3, dumped 12, flat 0, open 1 (saving losses: keep it)
   - ran: ZI up to 1.7x  
     CA `5q45EK4mRhuiuBmRYoaDs4m2xweaV7gn3zsFhsvcpump`
   - ran: BEAR up to 1.59x  
     CA `6i4ebPt8dpGchB2A1ELpTz3B72dy5DkzNpFMNtUSpump`
   - ran: HyPepe up to 1.5x  
     CA `G8TdzgpUQXQAxJvarNKPXRGv2kh9CsJDK7dCC7Xupump`
-- near the high / chasing: blocked 13, ran 1, dumped 7, flat 0, open 5 (saving losses: keep it)
+- near the high / chasing: blocked 13, ran 1, dumped 8, flat 0, open 4 (saving losses: keep it)
   - ran: OREN up to 1.58x  
     CA `57vAaMsnAJXkvULtAz7fsi6gRn3bHRJFJsJV1okNpump`
-- dev share over 1%: blocked 9, ran 1, dumped 7, flat 0, open 1 (saving losses: keep it)
-  - ran: calm up to 1.53x  
-    CA `4HSHFbFiKuMvZW7yGiDTab17B63MzBkkhadFKxhkpump`
-- RugCheck danger: blocked 8, ran 3, dumped 3, flat 1, open 1 (mixed)
+- RugCheck danger: blocked 9, ran 3, dumped 4, flat 1, open 1 (mixed)
   - ran: HYPEINU up to 1.57x  
     CA `6eccVGkbi8cvAYBGzfDmUwFYrMj8eGZF2xyZqZLkpump`
   - ran: ETF up to 1.87x  
     CA `2orqEGSdkm5BMmhdM8TpKCpACk32a3Zaj3Lef7ceqsc6`
   - ran: Bear up to 2.66x  
     CA `Dv6gYYkTav8Pm36UwAywxNCccwSZV1VL1tjiSpDLpump`
+- dev share over 1%: blocked 9, ran 1, dumped 7, flat 0, open 1 (saving losses: keep it)
+  - ran: calm up to 1.53x  
+    CA `4HSHFbFiKuMvZW7yGiDTab17B63MzBkkhadFKxhkpump`
 - falling knife / no higher low: blocked 6, ran 0, dumped 5, flat 0, open 1 (saving losses: keep it)
 - falling knife (code): blocked 5, ran 0, dumped 4, flat 0, open 1 (saving losses: keep it)
 - bundles over the line: blocked 4, ran 1, dumped 3, flat 0, open 0 (saving losses: keep it)
@@ -165,13 +165,13 @@ A skip "ran" if the coin reached the first target (1.5x) from the skip price bef
 Meta right now: launchpad parody coins are rising. ANONPAD, STABLEPAD, ROPAD and p/acc all play on "pad" and privacy, but they're tiny and most are already bleeding (STABLEPAD -65%, ANONYMOUSE -74%, ROPAD only 26% buys). Fresh sub-hour pump.fun animal and absurd coins are the loudest flow: SAFU at $124k with $89k on the 5m, MONEKO +932%, Chameleon +207%, Spoon. They're all minutes old, too new for how fast my data arrives (V5), and SI at -99% shows how that usually ends. Stonka, the stock/tokenized joke riding the Robinhood "tokenized stock" headlines, is the cleanest-looking new mover: $73k mcap, $29k 5m volume, 64% buys. Last cycle's animals are fading (DESSA has only 35% buys, Catori's volume is dead). Hyperliquid/HYPE is holding up in the wider market. Setups I'd research now: Stonka as an early MIGRATED (V6 range, real 5m flow, 18 minutes old so very fresh, which means a probe at most), HYPERCHAN as a V6 migrated coin on the Hyperliquid theme, HEXN if its buyers are still there, and SAFU only once it's an hour or so old and shows a dip that buyers step into rather than a straight-line pump. TraderTraitor (named after a hacking group) and $LAPTOP (political, V13) are blocked, so no looking at them.
 
 ## Moving most in its scans, last 30 min (1h volume)
+- SAFU: $503,990 1h vol, $1,937 mcap, -97% 1h  
+  CA `EjbgFA8vFhswojnNLxQVKYKiDsm3PgM6w7JuehfPpump`
 - HYPERCHAN: $201,633 1h vol, $1,950,077 mcap, +7% 1h  
   CA `3ApVr1xphYMpi9dn3rpqU4hwvpmCQDVwxET1rdCDpump`
+- Stonka: $194,362 1h vol, $69,550 mcap, +99% 1h  
+  CA `3UrbFtErj4FYspTupgAfKqztrMYNVQA2GocpT97Q3ray`
 - HEXN: $171,843 1h vol, $608,146 mcap, -6% 1h  
   CA `ANVLA6eKiAq4nstD2Sg3SZhfVkSEwfnGccn12UQWpump`
 - Foxii: $158,283 1h vol, $1,388,465 mcap, +125% 1h  
   CA `J3ReuwckNtcJP1Zhn7wVbfXhTDNTkHxozQWWAwxWpump`
-- BEAST: $156,732 1h vol, $20,867 mcap, -51% 1h  
-  CA `3mh5pgk58HPZwEinnZNUbsJpUoyqYa23zS2n442Zpump`
-- MONEKO: $128,777 1h vol, $31,656 mcap, +932% 1h  
-  CA `2BqhMVMby7i67xoZEBoSyeXTY1wdhVyuhs7vMStspump`
