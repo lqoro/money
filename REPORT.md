@@ -1,13 +1,13 @@
 # Trencher live report
 
-Updated 2026-10-30T06:18:59Z (paper trading, never real money)
+Updated 2026-10-30T06:34:14Z (paper trading, never real money)
 
 - Equity: $95.81 (-4.2% vs $100 start)
-- Goal: $1,000 by 2026-11-05 05:03Z (a stretch, survival first): at 9.6% of it, 5.9 days left, needs +48.3% a day from here
+- Goal: $1,000 by 2026-11-05 05:03Z (a stretch, survival first): at 9.6% of it, 5.9 days left, needs +48.4% a day from here
 - Closed trades: 11, 2 wins
 - Fees paid: $6.32 (axiom $0.72, network $4.79, pool $0.67), plus $1.04 lost to slippage
 - New trades: on
-- Brain: subscription, 588 calls and 0 plan-limit hits in 48h
+- Brain: subscription, 591 calls and 0 plan-limit hits in 48h
 
 ## Scorecard (after fees)
 - 11 closed, 2 won (18%), net $-4.20
@@ -74,9 +74,17 @@ Updated 2026-10-30T06:18:59Z (paper trading, never real money)
   CA `ANVLA6eKiAq4nstD2Sg3SZhfVkSEwfnGccn12UQWpump`
 
 ## Last scan
-- 06:18Z: 5 coins, 4 with pairs, 0 passed the market filters, 0 researched
+- 06:33Z: 4 coins, 3 with pairs, 0 passed the market filters, 0 researched
 
 ## Coins it looked at, and why it passed
+- 06:31Z perpetual (MIGRATED, $42,482 mcap, $3,819 5m vol): PASS at conviction 2, PASS: perpetual is about one minute old with $3.8k on the 5m. That's sniping, not trading, and my data is seconds behind the people doing it (V5, V1).  
+  CA `3yRD5rsbikyJoVGjCp11H6ZnYRySEMXqdfnvGvJSperp`
+- 06:30Z STABLEPAD (FINAL_STRETCH, $27,613 mcap, $4,983 5m vol): PASS at conviction 3, PASS — launchpad-tech coin with no GitHub on a fading launchpad meta, 5m at $5k and 0.69x its hourly pace. Attention is leaving, not arriving (V1, V5).  
+  CA `AABM3NrYSwKMsEDyanuskY43EH6ySbPpdPZNG1u7pump`
+- 06:24Z DESSA (MIGRATED, $8,669,778 mcap, $3,821 5m vol): PASS at conviction 3, PASS: $3.8k on the 5m and 2,048 sells against 205 buys in the hour. The crowd is leaving an 89-hour-old AI-adjacent meme at $8.7M. Not a setup (V1, V6).  
+  CA `npz2FhoufQ7pKqhGpaipYWacrAkidyW2yDpVWSvpump`
+- 06:23Z TraderTraitor (MIGRATED, $202,128 mcap, $31,370 5m vol): REJECT, RugCheck danger: Symbol Mismatch Token: "TraderTraitor", File: "TraderTrai"  
+  CA `3XLTWYyHxpAdbP1fjfTz9TBZp9Dhq4A6KWNarHMkGHQb`
 - 06:08Z SENSE (MIGRATED, $297,353 mcap, $2,159 5m vol): PASS at conviction 2, PASS — 83% off peak, $2.1k 5m volume and 27 buys vs 40 sells in the last hour. The crowd left a no-GitHub robotics tech coin. Falling knife. (V1, V6)  
   CA `GydpvgKppv8a4gGQqAQsyQJxtQN4S6Ym9gKxjnN3mfun`
 - 06:07Z jeff (MIGRATED, $1,802,875 mcap, $4,522 5m vol): REJECT, Top 10 hold 34.1% ex-pool (>25%) (V13)  
@@ -89,31 +97,23 @@ Updated 2026-10-30T06:18:59Z (paper trading, never real money)
   CA `J3ReuwckNtcJP1Zhn7wVbfXhTDNTkHxozQWWAwxWpump`
 - 06:05Z HYPERCHAN (MIGRATED, $1,610,103 mcap, $6,385 5m vol): PASS at conviction 3, PASS: 16.6% off the high and 5m volume is 0.36x the hourly pace. That's a near-high chase into a crowd that's leaving. Clean holders don't fix the entry (V1, V6).  
   CA `3ApVr1xphYMpi9dn3rpqU4hwvpmCQDVwxET1rdCDpump`
-- 06:04Z BITCAT (DIP, $102,799 mcap, $3,641 5m vol): REJECT, Dip with fading attention is a falling knife, not a dip (5m at 0.53x the hour's pace, under 0.8x)  
-  CA `9hzqsjCkxq3dQkfSkpRM1zk3NmLofHVBcwzKdvj3pump`
-- 05:48Z Catori (FINAL_STRETCH, $22,268 mcap, $2,872 5m vol): REJECT, Top 10 hold 26.7% ex-pool (>25%) (V13)  
-  CA `FDwCosavNvMiFB812ajJp3gG7eZ9c4bpgcnY6fDQpump`
-- 05:48Z E91 (FINAL_STRETCH, $23,029 mcap, $41,792 5m vol): PASS at conviction 3, PASS — 6 minutes old and sitting at the high, with 12 same-ticker copies and no clear idea. Buying here means being exit liquidity for the launch spike (V1, V5, V13).  
-  CA `2CimFhutBh138mENUfKqEKKLUKDMk4hgQwkB9FdLpump`
-- 05:38Z DESSA (MIGRATED, $8,666,186 mcap, $2,766 5m vol): PASS at conviction 3, PASS — clean holders, dead tape: $2.8k on the 5m at 0.63x the hourly pace, and sellers outnumber buyers about 9:1 over the hour. Nobody's buying (V1, V6).  
-  CA `npz2FhoufQ7pKqhGpaipYWacrAkidyW2yDpVWSvpump`
 
 ## What its skips did next (last 48h)
 A skip "ran" if the coin reached the first target (1.5x) from the skip price before a 20% drop, "dumped" if the drop came first. Sampled every 10 min, followed 6h.
 - top 10 over 25%: blocked 14, ran 1, dumped 11, flat 0, open 2 (saving losses: keep it)
   - ran: HYPERGAMY up to 2.05x  
     CA `CUyNDWGdLPXZ3Gyj1H6TBh5pACgu5nY9WNkSqfMApump`
-- too new / sniping: blocked 13, ran 3, dumped 10, flat 0, open 0 (saving losses: keep it)
+- too new / sniping: blocked 14, ran 3, dumped 10, flat 0, open 1 (saving losses: keep it)
   - ran: ZI up to 1.7x  
     CA `5q45EK4mRhuiuBmRYoaDs4m2xweaV7gn3zsFhsvcpump`
   - ran: BEAR up to 1.59x  
     CA `6i4ebPt8dpGchB2A1ELpTz3B72dy5DkzNpFMNtUSpump`
   - ran: HyPepe up to 1.5x  
     CA `G8TdzgpUQXQAxJvarNKPXRGv2kh9CsJDK7dCC7Xupump`
-- near the high / chasing: blocked 12, ran 1, dumped 7, flat 0, open 4 (saving losses: keep it)
+- near the high / chasing: blocked 11, ran 1, dumped 6, flat 0, open 4 (saving losses: keep it)
   - ran: OREN up to 1.58x  
     CA `57vAaMsnAJXkvULtAz7fsi6gRn3bHRJFJsJV1okNpump`
-- RugCheck danger: blocked 7, ran 3, dumped 3, flat 1, open 0 (mixed)
+- RugCheck danger: blocked 8, ran 3, dumped 3, flat 1, open 1 (mixed)
   - ran: HYPEINU up to 1.57x  
     CA `6eccVGkbi8cvAYBGzfDmUwFYrMj8eGZF2xyZqZLkpump`
   - ran: ETF up to 1.87x  
@@ -123,12 +123,12 @@ A skip "ran" if the coin reached the first target (1.5x) from the skip price bef
 - dev share over 1%: blocked 7, ran 1, dumped 5, flat 0, open 1 (saving losses: keep it)
   - ran: calm up to 1.53x  
     CA `4HSHFbFiKuMvZW7yGiDTab17B63MzBkkhadFKxhkpump`
-- falling knife / no higher low: blocked 6, ran 0, dumped 4, flat 0, open 2 (saving losses: keep it)
-- falling knife (code): blocked 5, ran 0, dumped 3, flat 0, open 2 (saving losses: keep it)
+- falling knife / no higher low: blocked 6, ran 0, dumped 5, flat 0, open 1 (saving losses: keep it)
+- falling knife (code): blocked 5, ran 0, dumped 4, flat 0, open 1 (saving losses: keep it)
 - bundles over the line: blocked 4, ran 1, dumped 3, flat 0, open 0 (saving losses: keep it)
   - ran: calm up to 1.53x  
     CA `4HSHFbFiKuMvZW7yGiDTab17B63MzBkkhadFKxhkpump`
-- crowd leaving / fading volume: blocked 3, ran 0, dumped 1, flat 0, open 2 (too few played out to judge)
+- crowd leaving / fading volume: blocked 4, ran 0, dumped 1, flat 0, open 3 (too few played out to judge)
 - other: blocked 3, ran 1, dumped 2, flat 0, open 0 (saving losses: keep it)
   - ran: SI up to 1.54x  
     CA `6zuDiAw3NviBwcLZfTztHJgtCmeNWfyFxYVoXtNYpump`
@@ -163,9 +163,9 @@ Animal coins are the meta. Foxii is the strongest: a $723k fox, 3.6h old, +30% o
   CA `3ApVr1xphYMpi9dn3rpqU4hwvpmCQDVwxET1rdCDpump`
 - Foxii: $194,594 1h vol, $722,883 mcap, +30% 1h  
   CA `J3ReuwckNtcJP1Zhn7wVbfXhTDNTkHxozQWWAwxWpump`
-- STABLEPAD: $194,127 1h vol, $19,742 mcap, +610% 1h  
-  CA `AABM3NrYSwKMsEDyanuskY43EH6ySbPpdPZNG1u7pump`
+- TraderTraitor: $168,625 1h vol, $202,128 mcap, +450% 1h  
+  CA `3XLTWYyHxpAdbP1fjfTz9TBZp9Dhq4A6KWNarHMkGHQb`
 - HEXN: $156,281 1h vol, $415,199 mcap, -7% 1h  
   CA `ANVLA6eKiAq4nstD2Sg3SZhfVkSEwfnGccn12UQWpump`
-- BITCAT: $83,180 1h vol, $102,799 mcap, -49% 1h  
-  CA `9hzqsjCkxq3dQkfSkpRM1zk3NmLofHVBcwzKdvj3pump`
+- E91: $104,632 1h vol, $5,704 mcap, +52% 1h  
+  CA `2CimFhutBh138mENUfKqEKKLUKDMk4hgQwkB9FdLpump`
