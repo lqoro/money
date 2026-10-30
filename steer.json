@@ -2,11 +2,11 @@
  "pause_new_trades": false,
  "settings": {
   "take_initials_multiple": 1.5,
-  "trailing_stop_pct": 20,
+  "trailing_stop_pct": 35,
   "stop_loss_pct": 20,
   "max_total_risk_pct": 15
  },
- "owner_note": "Owner (Oct 29): survive first. $1k by Nov 5 is a stretch, never a reason to size up or force trades. Many small wins; jeeting is fine. Initials at 1.5x, 20% trail, sell when 5m volume fades. Trade whatever is moving in your scan, not one theme. Fees and size are checked in code: don't pass over them. Name the blocker in every PASS. Owner (Oct 29 evening): watch recent crypto news. Coins whose project was hacked, or that ride a hack story (hack tickers, Polymarket-hack plays, Hack Inu copies), tend to go down: pass on them.",
+ "owner_note": "Owner (Oct 30): survive first, $1k by Nov 5 is a stretch, never a reason to size up or force trades. Don't chase win rate: one big win pays for many small losses. Cut losers fast (20% stop, break-even stop). After initials at 1.5x, let the runner ride a 35% trail; don't exit it early. Judge rules by after-fees expectancy, not win rate. Trade what's moving. Fees and size are checked in code. Name the blocker in every PASS. Watch crypto news: coins whose project was hacked, or that ride a hack story (hack tickers, Polymarket-hack plays, Hack Inu copies), tend to go down: pass on them.",
  "goal": {
   "equity_usd": 1000,
   "deadline": "2026-11-05T05:03:00Z",
