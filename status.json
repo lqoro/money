@@ -1,43 +1,31 @@
 {
- "updated_at": "2026-10-30T21:28:25Z",
+ "updated_at": "2026-10-30T21:43:37Z",
  "paused_new_trades": false,
  "brain": {
   "mode": "subscription",
   "paused_until": 1793388478.495446,
   "usage_48h": {
    "hours": 48,
-   "brain_calls": 599,
+   "brain_calls": 595,
    "plan_limit_hits": 1,
    "candidates_skipped_no_brain": 10,
    "stop_reviews_without_brain": 0
   }
  },
- "equity_usd": 91.24,
- "cash_usd": 86.24,
+ "equity_usd": 90.2,
+ "cash_usd": 90.2,
  "started_with_usd": 100.0,
- "realized_pnl_usd": -6.21,
- "fees_paid_usd": 8.56,
+ "realized_pnl_usd": -9.8,
+ "fees_paid_usd": 8.84,
  "fees_by_kind_usd": {
-  "axiom": 1.26,
-  "network": 5.95,
-  "pool": 1.22
+  "axiom": 1.3,
+  "network": 6.14,
+  "pool": 1.26
  },
- "slippage_paid_usd": 1.85,
- "closed_trades": 13,
- "win_rate": 0.15,
- "open_positions": [
-  {
-   "symbol": "PILLSEY",
-   "ca": "J5jxG3PFaWpj6BLEQExyC6FSqSvaTKNdQ9G3sZwBpump",
-   "setup": "MIGRATED",
-   "cost_usd": 11.53,
-   "value_usd": 5.0,
-   "multiple": 0.9,
-   "fees_usd": 0.71,
-   "slippage_usd": 0.23,
-   "initials_taken": false
-  }
- ],
+ "slippage_paid_usd": 1.92,
+ "closed_trades": 14,
+ "win_rate": 0.14,
+ "open_positions": [],
  "strategy": {
   "stop_loss_pct": 20.0,
   "max_total_risk_pct": 35.0,
@@ -71,58 +59,6 @@
   "min_entry_usd": 10.0
  },
  "recent_trades": [
-  {
-   "ca": "6zuDiAw3NviBwcLZfTztHJgtCmeNWfyFxYVoXtNYpump",
-   "ts": "2026-10-29T21:30:02Z",
-   "event": "BUY",
-   "id": "71ef9b7d",
-   "token": "6zuDiAw3NviBwcLZfTztHJgtCmeNWfyFxYVoXtNYpump",
-   "symbol": "SI",
-   "setup": "MIGRATED",
-   "size_usd": 4.06,
-   "conviction": 6,
-   "risk_usd": 1.5,
-   "price": 0.00022181319760172327,
-   "fees_usd": 0.2822,
-   "slippage_usd": 0.0564,
-   "dex": "pumpswap",
-   "pool_fee_pct": 1.15,
-   "mcap": 218582.0,
-   "exit_plan": {
-    "take_initials_multiple": 1.5,
-    "stop_loss_pct": 20.0,
-    "trailing_stop_pct": 20.0,
-    "time_stop_minutes": 45.0,
-    "target_mcap_usd": 450000.0
-   },
-   "thesis": "SI migrated about 35 minutes ago and is the live coin under its name. $565k of volume in the first hour and $65k in the last 5 minutes at 1.39x the hourly pace means the crowd is still arriving (V1, V6). Holders are clean where it counts: dev 0%, insiders 0%, linked-wallet bundles 0.65% (V3, V13, V17). That lets a near-high entry clear my bundle-verified exception. A retest of the $256k peak and a push toward $330k pays initials at 1.5x."
-  },
-  {
-   "ca": "ANVLA6eKiAq4nstD2Sg3SZhfVkSEwfnGccn12UQWpump",
-   "ts": "2026-10-29T21:30:38Z",
-   "event": "BUY",
-   "id": "67ce0d6f",
-   "token": "ANVLA6eKiAq4nstD2Sg3SZhfVkSEwfnGccn12UQWpump",
-   "symbol": "HEXN",
-   "setup": "DIP",
-   "size_usd": 4.0,
-   "conviction": 5,
-   "risk_usd": 1.48,
-   "price": 0.0007491439115979185,
-   "fees_usd": 0.2789,
-   "slippage_usd": 0.0554,
-   "dex": "pumpswap",
-   "pool_fee_pct": 1.1,
-   "mcap": 732807.0,
-   "exit_plan": {
-    "take_initials_multiple": 1.5,
-    "stop_loss_pct": 20.0,
-    "trailing_stop_pct": 20.0,
-    "time_stop_minutes": 45.0,
-    "target_mcap_usd": 1500000.0
-   },
-   "thesis": "HEXN proved itself with a $1.8M peak and is now 59.5% down, inside the normal-to-deep DIP range. Buyers still outnumber sellers about 5:1 on $19.9k of 5m volume. Holders are spread out with no clusters, so a bundle dump is unlikely to be what's waiting (V3, V13, V17). If the bounce off the $0.000607 hourly low holds and becomes a higher low, the obvious retest is the $0.0009\u20130.0012 band where the 15m candles closed earlier, which covers 1.5x initials. I'm wrong if it loses the hourly low."
-  },
   {
    "ca": "6zuDiAw3NviBwcLZfTztHJgtCmeNWfyFxYVoXtNYpump",
    "ts": "2026-10-29T21:36:59Z",
@@ -553,10 +489,59 @@
    "price": 0.000263,
    "mcap": 262990.0,
    "reason": "stop loss -20% hit (0.78x); trimmed half on review"
+  },
+  {
+   "ca": "J5jxG3PFaWpj6BLEQExyC6FSqSvaTKNdQ9G3sZwBpump",
+   "ts": "2026-10-30T21:37:08Z",
+   "event": "SELL",
+   "id": "147fdb02",
+   "token": "J5jxG3PFaWpj6BLEQExyC6FSqSvaTKNdQ9G3sZwBpump",
+   "symbol": "PILLSEY",
+   "fraction": 1.0,
+   "proceeds_usd": 3.96,
+   "fees_usd": 0.2803,
+   "slippage_usd": 0.0655,
+   "price": 0.0002618,
+   "mcap": 261820.0,
+   "reason": "stop loss -20% hit (0.78x)"
+  },
+  {
+   "ca": "J5jxG3PFaWpj6BLEQExyC6FSqSvaTKNdQ9G3sZwBpump",
+   "ts": "2026-10-30T21:37:16Z",
+   "event": "CLOSE",
+   "id": "147fdb02",
+   "symbol": "PILLSEY",
+   "token": "J5jxG3PFaWpj6BLEQExyC6FSqSvaTKNdQ9G3sZwBpump",
+   "setup": "MIGRATED",
+   "cost_usd": 11.53,
+   "proceeds_usd": 7.94,
+   "fees_usd": 0.99,
+   "slippage_usd": 0.3,
+   "pnl_usd": -3.59,
+   "pnl_pct": -31.2,
+   "held_minutes": 18,
+   "entry_mcap": 332280.0,
+   "exit_mcap": 261820.0,
+   "peak_multiple": 1.32,
+   "exit_reasons": [
+    "stop review: SELL_HALF (early_shakeout)",
+    "stop loss -20% hit (0.78x); trimmed half on review",
+    "stop loss -20% hit (0.78x)"
+   ],
+   "stop_reviews": 1,
+   "thesis": "The hottest theme on the board right now is pump.fun itself. PILLY, the original, has cooled to $22k on the 5m, and PILLSEY has taken the flow with $125k on the 5m, 1,793 buys to 332 sells, and price up 31% in the last 5 minutes (V1: back the one that's breaking through). Holders look clean: top 10 at 11.4% ex-pool, largest holder 1.18%, 3,553 holders, no bundle networks. The paid DexScreener profile and the website both show this exact CA (V3, V13). The target is a break of the $414k high toward ~$500k (1.5x). With flow running at 4.2x the hourly pace, a fresh high is a fair bet while the crowd keeps arriving.",
+   "exit_plan": {
+    "take_initials_multiple": 1.5,
+    "stop_loss_pct": 20.0,
+    "trailing_stop_pct": 35.0,
+    "time_stop_minutes": 45.0,
+    "target_mcap_usd": 650000.0,
+    "_orig_stop": 20.0
+   },
+   "lesson": "Expected PILLSEY, the flow leader in the pump.fun meta at $125k 5m, to break its $414k high toward 1.5x; it peaked at 1.32x, never reached initials, fell back through the -20% stop inside 18 minutes, and the half-hold on review only made the loss bigger (-31%). It sat about 20% under the high, so it passed my pullback rule, but I bought right after a +31% five-minute candle at 4.2x the hourly pace, which is chasing a spike, not buying a pullback (V1, V6), and it fits my \"near-high skips mostly dump\" data. Next time a coin that is up more than ~25% in the last 5 minutes counts as \"chasing\" even if it's 20% off the high: wait for that candle to retrace and a higher low to form. And once a trade has hit ~1.3x, an early-shakeout stop review sells all of it instead of trimming half."
   }
  ],
  "recent_lessons": [
-  "- [2026-10-29 01:32] I bought CATBOT back as a $2.0M base retesting toward the $3.46M high. Price only drifted from $2.59M to $2.41M (-7%) and peaked at 1.12x, but I lost -24.3% because $0.62 in fees and slippage on a $3.42 position cost 18% before the coin moved at all. That makes the time stop correct (V1: don't marry a bag), and the real problem was the size. Rule: before any entry, including a buy-back, I estimate round-trip cost and skip the trade if it tops ~5% of size or if the target can't pay several times that cost. I also only re-enter a stopped-out coin when it reclaims the high, not when it bases in the middle of the range.",
   "- [2026-10-29 02:03] Expected: the FLOATER that had the crowd out of 23 same-ticker coins ($141k 5m volume, 78% buys, clean holders, 34% off the high) would keep climbing toward $500k on the tokenized-stock meta. What happened: it ran to 2.19x, I took initials as planned (V11), and the trailing stop sold the rest at 1.5x from a $255k mcap for +$1.48, but fees and slippage ($0.89) ate about 30% of the $2.94 cost and nearly a third of the gross gain. Next time I keep picking the vamp-field winner by volume and attention (V1, V6) and keep the 2x initials plus 30% trail, but I don't open a position under ~$5 because fixed fees turn a 2x winner into a 1.5x one.",
   "- [2026-10-29 02:10] Expected: CPU, the clear flow leader with clean holders, to bounce from a 38% dip toward 2x (V1, V13). What happened: it ran to 1.63x, gave it all back, and I time-stopped at 1.03x mcap after 52 min. Fees $0.48 plus slippage $0.09, about 18% of a $3.16 position, turned a flat trade into \u221213.7%. Next time: the friction gate and the $5 minimum are hard blocks, so no sub-$5 entries even on a good setup. If a MIGRATED dip-buy reaches 1.5x and 5m volume starts fading before 2x, sell half instead of watching it round-trip.",
   "- [2026-10-29 02:49] I expected FLOAT, the leading tokenized-stock coin, to run from its $1.04M higher-low reclaim toward $3M (V1, V6), and it did reach 1.64x. Then it faded, and I sat past the 45-minute time stop and got out at 158 minutes. Mcap was only down 7%, but I lost 24.5% because $0.56 of fees and slippage ate 18% of a $3.09 position, which broke my own $5-minimum and friction-gate rules. Next time: no entry under $5 or above 5% friction, no exceptions. If a trade gets past 1.5x before initials, move the stop up to break-even plus fees so a 1.6x peak can't turn into a loss (V11: plan the exit before the entry).",
@@ -565,11 +550,12 @@
   "- [2026-10-30 01:19] Expected: SWAN was a MIGRATED pullback buy, 29% off its high with a higher-low base and $49k on the 5m, and I wanted to retest $166k (about 1.4x) before taking initials at 1.5x (V1, V6). What happened: it peaked at exactly 1.40x, the retest level my own thesis named, then rejected there, and the break-even stop sold it at 1.16x for -0.7%. The pullback-entry rule and the 1.3x break-even rule both did their jobs, since a 1.4x peak didn't turn into a real loss. Rule for next time: when the prior high I'm targeting sits below my initials multiple, sell part of the position at that level (sell initials or half, V11) instead of waiting for 1.5x. That changes the exit, not the pick, so it's a refinement from one trade, not a new ban.",
   "- [2026-10-30 02:26] I expected the higher-low DIP structure, clean holders and $19k 5m flow with 575 buys to 112 sells to carry HEXN back toward its $0.000589 swing. It only got to 1.17x, then broke the $0.000449 higher low and the -13% stop took me out at 45 min, -27% after fees on a probe. That's fine: my DIP rule put the stop under the higher low and the probe size kept the damage small, and the stop review did its job, since a broken higher low means the thesis is dead. What doesn't fit is this is my second HEXN loss, and both times the story was a thin tech LARP (V1). So next time, on a DIP where volume is under the hourly pace and the narrative is weak, I'll want a fresh volume surge before buying, not just a clean structure, because dips recover on attention, not on holder tables (Soul belief 7, V1).",
   "- [2026-10-30 09:52] Expected: HYPERCHAN, the clear leader of a 20-copy vamp field and 13.5% off its high, would retest $2.28M or break out. I bought a probe anyway, with 5m volume under $10k and only 0.73x its hourly pace. Happened: it never went green (peak 0.99x), and the 45-min time stop closed it at -15% (V1). That confirms my existing shallow-band rule rather than adding a new one: in the 10\u201320% band, being the vamp leader (V1, V2) doesn't waive the volume gate (5m at least $10k and at or above hourly pace, V1/V6), and probe size isn't a way around a failed rule, so next time that's a PASS with the blocker \"flow below pace\".",
-  "- [2026-10-30 10:53] Expected: HYPERCHAN, the clean flow leader of the HYPE meta at about $2M, would break its 4-hour range and run toward $3M. What happened: it peaked at 1.18x, never broke out, and the 45-minute time stop sold it at 1.05x on market cap, which is still a 4.9% loss after fees. The shallow-band leader rule did its job (clean holders, real flow, no dump), so it stays. What failed was the clock: my written rule is to exit if still under 1.0x at 45 min, but this one closed green on market cap, and a 1.5x move on a $2M coin rarely happens in 45 minutes (V1 talks about small new pairs, V6 about $70k\u2013$11M runners). Next time, for MIGRATED entries above about $1M that are holding their range, give the time stop more room (about 90 min) and still exit if price closes back under the range low. One flat scratch is a sample of one, not a reason to drop the setup."
+  "- [2026-10-30 10:53] Expected: HYPERCHAN, the clean flow leader of the HYPE meta at about $2M, would break its 4-hour range and run toward $3M. What happened: it peaked at 1.18x, never broke out, and the 45-minute time stop sold it at 1.05x on market cap, which is still a 4.9% loss after fees. The shallow-band leader rule did its job (clean holders, real flow, no dump), so it stays. What failed was the clock: my written rule is to exit if still under 1.0x at 45 min, but this one closed green on market cap, and a 1.5x move on a $2M coin rarely happens in 45 minutes (V1 talks about small new pairs, V6 about $70k\u2013$11M runners). Next time, for MIGRATED entries above about $1M that are holding their range, give the time stop more room (about 90 min) and still exit if price closes back under the range low. One flat scratch is a sample of one, not a reason to drop the setup.",
+  "- [2026-10-30 21:37] Expected PILLSEY, the flow leader in the pump.fun meta at $125k 5m, to break its $414k high toward 1.5x; it peaked at 1.32x, never reached initials, fell back through the -20% stop inside 18 minutes, and the half-hold on review only made the loss bigger (-31%). It sat about 20% under the high, so it passed my pullback rule, but I bought right after a +31% five-minute candle at 4.2x the hourly pace, which is chasing a spike, not buying a pullback (V1, V6), and it fits my \"near-high skips mostly dump\" data. Next time a coin that is up more than ~25% in the last 5 minutes counts as \"chasing\" even if it's 20% off the high: wait for that candle to retrace and a higher low to form. And once a trade has hit ~1.3x, an early-shakeout stop review sells all of it instead of trimming half."
  ],
  "learned_rules": "- **MIGRATED: buy the pullback, 10\u201360% off the local high** (owner). It has to hold above the hourly low, with 5m volume \u2265 $10k and buys > sells (V1, V6). Within 10% of the high is a PASS with the blocker \"chasing\": near-high skips went 2 ran / 10 dumped, and SI (\u221238%) and CATCULUS (\u221259%) were both bought at the top.\n- **Shallow band (10\u201320% off the high):** only the meta's flow leader, and only with 5m volume at or above its hourly pace. Conviction tops out at 8 here; 9 needs a 20\u201360% pullback. If flow is below pace, PASS with the blocker \"flow below pace\" (HYPERCHAN #1).\n- **Name the target before buying, at least 1.5x from entry:** prior high, POC, 0.618 extension, or a breakout over the high. If I can't name one \u22651.5x, PASS with the blocker \"target below initials\" (SWAN topped out at its 1.4x target).\n- **Conviction scale:** hard lines passed + live flow (5m \u2265 $10k, buys > sells) + a named target \u22651.5x = **7** (owner). **8** = that plus either the original/leader of a live meta or verified low bundles. **9** = leader + verified low bundles + a 20\u201360% pullback + 5m at or above hourly pace (CATBOT and FLOATER, both winners). \u22121 each for a RugCheck danger flag that isn't a hard line, an unverified community, or a weak/LARP story. 5\u20136 = probe. Under 5 = PASS naming the blocker.\n- **Press the goal (owner):** take every setup that clears these rules, at its honest conviction, and rate the clean ones 8 or 9 when they earn it. Pass only when I can name a blocker.\n- **Fresh migration (<1h) going red off the bond spike:** wait for a base above the hourly low (V1). Too-new skips went 7 ran / 18 dumped.\n- **Vamp field:** buy only the leader by 5m volume and attention, never the 2nd or 3rd copy (V1, V2). FLOATER beat 22 copies; vamp skips went 0 ran / 4 dumped.\n- **DIP needs a visible higher low:** a bounce off the hourly low, a pullback that holds above it, and price now above that pullback low. The stop logic sits under the higher low; if that low is more than ~20% below entry, PASS. Never buy the first red-to-green candle (V1, HEXN #1).\n- **DIP attention gate:** 5m volume \u2265 0.7x the hourly average (owner), plus a current story with a real crowd. Weak or LARP tech dips are a PASS (HEXN lost twice). DIP probation is over, so DIPs get sized by conviction like any other setup.\n- **Hack stories: PASS.** That means hacked projects, exploit/drain headlines and Hack-Inu copies (owner rule).\n- **Hard blocks stay:** top 10 >25%, dev >1%, bundles/insiders over the line, mint/freeze not revoked, LP not burned, political figure (V6, V13, V17). Their skips mostly dumped: top 10 went 6 ran / 19 dumped, dev 0 / 7, bundles 0 / 3.\n- **Before initials:** if the trade is green and 5m volume falls under half its hourly pace, sell half (CPU and FLOAT both peaked ~1.6x, faded and closed red).\n- **Time stop at 45 min:** exit if under 1.0x with no volume surge (V1). Only one exception: a coin above $1M that is green on mcap, holding above its range low, with 5m at or above hourly pace, gets one extension to 90 min and then it's out. No other extensions (FLOAT held to 158 min and lost).\n- **Stop review: SELL right away** if the trade never went green and hit the stop inside 15 min (SI, HEXN), or if top-10/insider share dropped and price keeps bleeding. Hold only once, only with the story and 5m volume clearly intact, and with a deadline to reclaim.\n- **Re-enter a stopped coin only when it reclaims the prior high,** never mid-range (the CATBOT buy-back lost \u221224%).\n",
  "meta": {
-  "age_minutes": 2,
+  "age_minutes": 7,
   "meta_summary": "The meta is pump.fun talking about itself, but it's mostly dying. PILLSEY (Pilly Cupsey, J5jx\u2026pump) is the only coin still running it: $332k cap, $125k on the 5-minute, 84% buys, +597% in the hour, 12 minutes old. Most of the copycats have crashed 80-96% (Pumpfluencer, Miso, CREATOOOR, old Pilly, ROPAD), and CREATOR has only $1.3k on the 5-minute. Cats are fading: HYPER CAT is at $1.9k after a 96% drop, so the crawler summary that called it the top mover (and named a PILLY contract that isn't in the movers) is stale. A second, smaller theme is brand-new launches. Botnet is skipped as malware-themed, xpad's contract ends in xxxx instead of pump so it needs checking, TUSK is a hard no because it's named after a real politician (V13), and VYPER has too little volume. The only setup to research is PILLSEY as a MIGRATED trade: buy only a pullback of 10% or more from its local high with 5-minute volume at least 0.7x its hourly pace, after clean holder and bundle checks. The owner's deadline doesn't change the conviction score.",
   "top_narratives": [
    "binance",
@@ -584,39 +570,39 @@
    "guide",
    "pepe",
    "hunter",
+   "newuser50",
    "trump",
    "machine",
-   "newuser50",
    "laptop",
    "hacker",
    "drained",
-   "times",
-   "slowing"
+   "fees",
+   "times"
   ],
   "trending_categories": [
    "Privacy Coins",
    "Airdropped Tokens by NFT Projects",
    "Privacy",
    "IP Meme",
-   "CoinList Launchpad",
-   "Privacy Blockchain"
+   "Privacy Blockchain",
+   "Parallelized EVM"
   ],
   "trending_coins": [
    "SP",
    "BTC",
    "BNB",
+   "SOL",
+   "PENGU",
+   "HYPE",
    "CC",
    "LIT",
-   "SOL",
    "PEARL",
+   "UNI",
    "MON",
    "ETH",
-   "UNI",
-   "PENGU",
    "XMR",
-   "KNTQ",
    "SUI",
-   "FET"
+   "OSMO"
   ],
   "hot_tickers": [
    {
@@ -632,7 +618,7 @@
     "mentions": 1
    },
    {
-    "ticker": "$LICK",
+    "ticker": "$MOONX",
     "mentions": 1
    },
    {
@@ -689,51 +675,39 @@
     "age_hours": 0.2
    },
    {
-    "symbol": "CREATOR",
-    "name": "CreatorCoin",
-    "ca": "99VUptA9qKPNKMuPdX7MDHXChLWwbnzbNfWe8V3vpump",
-    "dex": "pumpfun",
-    "mcap_usd": 6859,
-    "vol_5m": 1344,
-    "vol_1h": 129863,
-    "change_1h": 6.27,
-    "buy_ratio_5m": 0.58,
-    "age_hours": 0.7
+    "symbol": "PILLY",
+    "name": "The Pumpfun Mascot",
+    "ca": "2WVthqDUqTfmKniBvXz2guGwCAJSNTHKGnebUeBvpump",
+    "dex": "pumpswap",
+    "mcap_usd": 43121,
+    "vol_5m": 1920,
+    "vol_1h": 292899,
+    "change_1h": -73.92,
+    "buy_ratio_5m": 0.48,
+    "age_hours": 1.6
+   },
+   {
+    "symbol": "GLITCH",
+    "name": "Infinite Money Glitch",
+    "ca": "8Xg89xT8Ve34sKiYqYuMs46mycREsCA2F362UscRpump",
+    "dex": "pumpswap",
+    "mcap_usd": 3203189,
+    "vol_5m": 6917,
+    "vol_1h": 127520,
+    "change_1h": 10.99,
+    "buy_ratio_5m": 0.49,
+    "age_hours": 341.9
    },
    {
     "symbol": "Pumpfluencer",
     "name": "Pumpfluencer",
     "ca": "6C1JdN6V7B4beZGxZxjhCGCncmWt22zD8i4Q4cq1pump",
     "dex": "pumpswap",
-    "mcap_usd": 15351,
-    "vol_5m": 5781,
-    "vol_1h": 121780,
-    "change_1h": -65.26,
-    "buy_ratio_5m": 0.66,
-    "age_hours": 0.8
-   },
-   {
-    "symbol": "ROPAD",
-    "name": "Ropad",
-    "ca": "94Uri6g5xK3E3av7hkcNB88qUp6XANtfRfxArrbkpump",
-    "dex": "pumpswap",
-    "mcap_usd": 1832,
-    "vol_5m": 0,
-    "vol_1h": 115133,
-    "change_1h": -95.91,
-    "buy_ratio_5m": null,
-    "age_hours": 1.0
-   },
-   {
-    "symbol": "PFMikol",
-    "name": "Pumpfun Mikol",
-    "ca": "9kLtjDF21bmHs3UrmVbJTtvEkuZ8Knx4X2VfeuKHpump",
-    "dex": "pumpfun",
-    "mcap_usd": 26719,
-    "vol_5m": 1770,
-    "vol_1h": 101765,
-    "change_1h": 812,
-    "buy_ratio_5m": 0.65,
+    "mcap_usd": 13426,
+    "vol_5m": 1018,
+    "vol_1h": 115189,
+    "change_1h": -73.88,
+    "buy_ratio_5m": 0.6,
     "age_hours": 1.0
    },
    {
@@ -749,52 +723,40 @@
     "age_hours": 1.5
    },
    {
-    "symbol": "JOB",
-    "name": "DogWifJob",
-    "ca": "9Pq7aLAbhDG2tTnS22cm6kuysZVcZpLFE368HWuypump",
+    "symbol": "HYPERCHAN",
+    "name": "Hyper-Chan",
+    "ca": "3ApVr1xphYMpi9dn3rpqU4hwvpmCQDVwxET1rdCDpump",
     "dex": "pumpswap",
-    "mcap_usd": 3302276,
-    "vol_5m": 5097,
-    "vol_1h": 65805,
-    "change_1h": -0.12,
-    "buy_ratio_5m": 0.43,
-    "age_hours": 73.9
+    "mcap_usd": 910249,
+    "vol_5m": 4994,
+    "vol_1h": 85234,
+    "change_1h": 5.36,
+    "buy_ratio_5m": 0.67,
+    "age_hours": 18.2
    },
    {
-    "symbol": "Pilly",
-    "name": "Pilly",
-    "ca": "BPzpLB8FYL7mwkeGgmZefaow6GeAZzN7oYPG42e7dgPH",
-    "dex": "pumpswap",
-    "mcap_usd": 4818,
-    "vol_5m": 3,
-    "vol_1h": 64381,
-    "change_1h": -86.3,
-    "buy_ratio_5m": 1.0,
-    "age_hours": 622.8
+    "symbol": "CREATOR",
+    "name": "CreatorCoin",
+    "ca": "99VUptA9qKPNKMuPdX7MDHXChLWwbnzbNfWe8V3vpump",
+    "dex": "pumpfun",
+    "mcap_usd": 11492,
+    "vol_5m": 12243,
+    "vol_1h": 82469,
+    "change_1h": 23.81,
+    "buy_ratio_5m": 0.55,
+    "age_hours": 1.0
    },
    {
     "symbol": "Miso",
     "name": "Pumpfun Panda",
     "ca": "23Qv2Cu3akuvzAYap9gesnqgp88Ezd3MSVCx7jTcpump",
     "dex": "pumpswap",
-    "mcap_usd": 6439,
-    "vol_5m": 1084,
-    "vol_1h": 61059,
-    "change_1h": -85.76,
-    "buy_ratio_5m": 0.49,
-    "age_hours": 0.5
-   },
-   {
-    "symbol": "CREATOOOR",
-    "name": "The Creatooor",
-    "ca": "FQcdwaARE4ztbq12C7NWB26JarSC5WPZS2DZa9iApump",
-    "dex": "pumpfun",
-    "mcap_usd": 3527,
-    "vol_5m": 138,
-    "vol_1h": 60099,
-    "change_1h": -38.43,
-    "buy_ratio_5m": 0.0,
-    "age_hours": 0.9
+    "mcap_usd": 7440,
+    "vol_5m": 1431,
+    "vol_1h": 64351,
+    "change_1h": -82.21,
+    "buy_ratio_5m": 0.36,
+    "age_hours": 0.7
    },
    {
     "symbol": "TUSK",
@@ -809,116 +771,96 @@
     "age_hours": 261.6
    },
    {
-    "symbol": "xpad",
-    "name": "xpad",
-    "ca": "EV116Y5Y6cYvcugmXwLVZPhbZus1NxV5WbArJxtUxxxx",
-    "dex": "pumpfun",
-    "mcap_usd": 28448,
-    "vol_5m": 23163,
-    "vol_1h": 44593,
-    "change_1h": 965,
-    "buy_ratio_5m": 0.5,
-    "age_hours": 0.1
-   },
-   {
-    "symbol": "VYPER",
-    "name": "VYPER",
-    "ca": "4QRSjsm46wR72PKXYi2VuJyq5QrqmDzmKmarsT8Rpump",
-    "dex": "pumpfun",
-    "mcap_usd": 12095,
-    "vol_5m": 1833,
-    "vol_1h": 42635,
-    "change_1h": 252,
-    "buy_ratio_5m": 0.62,
-    "age_hours": 1.0
-   },
-   {
-    "symbol": "INU",
-    "name": "locked inu",
-    "ca": "Gztz15EVRR9GyBVcVQy2aCpX5JhY5SsUtoW1G1M5qvK1",
-    "dex": "meteora",
-    "mcap_usd": 37390,
-    "vol_5m": 248,
-    "vol_1h": 42016,
-    "change_1h": -64.75,
-    "buy_ratio_5m": 0.5,
-    "age_hours": 1.4
-   },
-   {
     "symbol": "BOTNET",
     "name": "Botnet",
     "ca": "3f8KDGG9hSFo35WhKyo2WPsEp2QyLWWkuWh53Lnapump",
     "dex": "pumpfun",
-    "mcap_usd": 11290,
-    "vol_5m": 21073,
-    "vol_1h": 35324,
-    "change_1h": 298,
-    "buy_ratio_5m": 0.61,
-    "age_hours": 0.1
+    "mcap_usd": 2878,
+    "vol_5m": 365,
+    "vol_1h": 51503,
+    "change_1h": 1.58,
+    "buy_ratio_5m": 0.11,
+    "age_hours": 0.3
+   },
+   {
+    "symbol": "liquidated",
+    "name": "liquidated",
+    "ca": "78TeSBqRkZb2h8RN4ncuJVA34PPNFEuFXazXr72opump",
+    "dex": "pumpfun",
+    "mcap_usd": 8906,
+    "vol_5m": 4856,
+    "vol_1h": 39490,
+    "change_1h": 152,
+    "buy_ratio_5m": 0.65,
+    "age_hours": 0.3
+   },
+   {
+    "symbol": "GATO",
+    "name": "GTA6CAT",
+    "ca": "HsprHxBRgiVaQdRf3TnKNuZZtaX9JUSPgMFdAkk6pump",
+    "dex": "pumpswap",
+    "mcap_usd": 4422973,
+    "vol_5m": 2258,
+    "vol_1h": 34764,
+    "change_1h": -0.44,
+    "buy_ratio_5m": 0.36,
+    "age_hours": 1592.9
+   },
+   {
+    "symbol": "PFMikol",
+    "name": "Pumpfun Mikol",
+    "ca": "9kLtjDF21bmHs3UrmVbJTtvEkuZ8Knx4X2VfeuKHpump",
+    "dex": "pumpfun",
+    "mcap_usd": 24504,
+    "vol_5m": 1647,
+    "vol_1h": 32940,
+    "change_1h": 40.99,
+    "buy_ratio_5m": 0.65,
+    "age_hours": 1.2
+   },
+   {
+    "symbol": "Pilly",
+    "name": "Pilly",
+    "ca": "BPzpLB8FYL7mwkeGgmZefaow6GeAZzN7oYPG42e7dgPH",
+    "dex": "pumpswap",
+    "mcap_usd": 5730,
+    "vol_5m": 1133,
+    "vol_1h": 29989,
+    "change_1h": -66.28,
+    "buy_ratio_5m": 0.7,
+    "age_hours": 623.0
+   },
+   {
+    "symbol": "DESSA",
+    "name": "Dessa",
+    "ca": "npz2FhoufQ7pKqhGpaipYWacrAkidyW2yDpVWSvpump",
+    "dex": "pumpswap",
+    "mcap_usd": 9081538,
+    "vol_5m": 2926,
+    "vol_1h": 28720,
+    "change_1h": -1.6,
+    "buy_ratio_5m": 0.37,
+    "age_hours": 104.5
    }
   ]
  },
  "goal": {
   "target_usd": 1000.0,
   "deadline": "2026-11-05T05:03:00Z",
-  "equity_usd": 91.24,
-  "progress_pct": 9.1,
+  "equity_usd": 90.2,
+  "progress_pct": 9.0,
   "days_left": 5.3,
-  "needed_daily_growth_pct": 56.9,
+  "needed_daily_growth_pct": 57.4,
   "stance": "push"
  },
  "last_scan": {
-  "at": 1793395688.320014,
-  "tokens": 2,
-  "pairs": 2,
+  "at": 1793396585.6406322,
+  "tokens": 10,
+  "pairs": 10,
   "passed_market_filters": 0,
   "researched": 0
  },
  "recent_looks": [
-  {
-   "ts": "2026-10-30T20:29:18Z",
-   "symbol": "Miso",
-   "ca": "23Qv2Cu3akuvzAYap9gesnqgp88Ezd3MSVCx7jTcpump",
-   "setup": "FINAL_STRETCH",
-   "mcap_usd": 20767,
-   "vol_5m": 70007,
-   "outcome": "PASS",
-   "conviction": 3,
-   "reason": "PASS: 5 minutes old and only halfway up the bonding curve. That's sniping, not trading, and the story is a zoo tweet with no CA on it. Too new. (V1, V5, V6)"
-  },
-  {
-   "ts": "2026-10-30T20:31:06Z",
-   "symbol": "Pumpfluencer",
-   "ca": "6C1JdN6V7B4beZGxZxjhCGCncmWt22zD8i4Q4cq1pump",
-   "setup": "FINAL_STRETCH",
-   "mcap_usd": 30266,
-   "vol_5m": 38156,
-   "outcome": "REJECT",
-   "conviction": null,
-   "reason": "Top 10 hold 26.9% ex-pool (>25%) (V13)"
-  },
-  {
-   "ts": "2026-10-30T20:33:10Z",
-   "symbol": "INU",
-   "ca": "Gztz15EVRR9GyBVcVQy2aCpX5JhY5SsUtoW1G1M5qvK1",
-   "setup": "DIP",
-   "mcap_usd": 95263,
-   "vol_5m": 5024,
-   "outcome": "REJECT",
-   "conviction": null,
-   "reason": "Top 10 hold 51.5% ex-pool (>25%) (V13)"
-  },
-  {
-   "ts": "2026-10-30T20:39:28Z",
-   "symbol": "Jason",
-   "ca": "3qjBR3LfzEAKVS6QXuR2QZ1RFUsXzATWvmjbGB5Dpump",
-   "setup": "MIGRATED",
-   "mcap_usd": 109857,
-   "vol_5m": 2398,
-   "outcome": "REJECT",
-   "conviction": null,
-   "reason": "Dev holds 1.2% (>1%) (V13, V17)"
-  },
   {
    "ts": "2026-10-30T20:43:41Z",
    "symbol": "GLITCH",
@@ -1039,6 +981,50 @@
    "outcome": "REJECT",
    "conviction": null,
    "reason": "Dev holds 3.3% (>1%) (V13, V17)"
+  },
+  {
+   "ts": "2026-10-30T21:29:16Z",
+   "symbol": "GLITCH",
+   "ca": "8Xg89xT8Ve34sKiYqYuMs46mycREsCA2F362UscRpump",
+   "setup": "MIGRATED",
+   "mcap_usd": 3203189,
+   "vol_5m": 6917,
+   "outcome": "REJECT",
+   "conviction": null,
+   "reason": "Top 10 hold 27.9% ex-pool (>25%) (V13)"
+  },
+  {
+   "ts": "2026-10-30T21:29:17Z",
+   "symbol": "CBUCKS",
+   "ca": "DtcicPCKTKeAh7TDEzTym3hXeoHAoMiBdYJhMYxZpump",
+   "setup": "MIGRATED",
+   "mcap_usd": 1042661,
+   "vol_5m": 3360,
+   "outcome": "REJECT",
+   "conviction": null,
+   "reason": "Top 10 hold 27.3% ex-pool (>25%) (V13)"
+  },
+  {
+   "ts": "2026-10-30T21:33:41Z",
+   "symbol": "DESSA",
+   "ca": "npz2FhoufQ7pKqhGpaipYWacrAkidyW2yDpVWSvpump",
+   "setup": "MIGRATED",
+   "mcap_usd": 9081538,
+   "vol_5m": 2926,
+   "outcome": "PASS",
+   "conviction": 2,
+   "reason": "PASS: $2.9k on the 5-minute with sellers ahead 12 to 7, on a $9M coin sitting 7% under its 24h high. No flow, and I'd be chasing. (V1, V6)"
+  },
+  {
+   "ts": "2026-10-30T21:39:16Z",
+   "symbol": "HYPERCHAN",
+   "ca": "3ApVr1xphYMpi9dn3rpqU4hwvpmCQDVwxET1rdCDpump",
+   "setup": "DIP",
+   "mcap_usd": 910249,
+   "vol_5m": 4994,
+   "outcome": "PASS",
+   "conviction": 3,
+   "reason": "PASS: 5m volume is $5.0k, under the $10k live-flow bar, and the HYPE crowd is leaving. Third thin-flow bounce on this coin, no thanks. (V1, V6)"
   }
  ],
  "skip_review": {
@@ -1327,6 +1313,47 @@
     }
    ]
   },
+  "crowd leaving / fading volume": {
+   "blocked": 8,
+   "ran": 2,
+   "dumped": 5,
+   "flat": 0,
+   "pending": 1,
+   "ran_examples": [
+    {
+     "symbol": "STABLEPAD",
+     "ca": "AABM3NrYSwKMsEDyanuskY43EH6ySbPpdPZNG1u7pump",
+     "best_x": 2.13,
+     "worst_x": 0.96
+    },
+    {
+     "symbol": "HYDESK",
+     "ca": "BzndCZ2ZrjUA21aVW7t6AWEENRAps3EmdQg9hf94pump",
+     "best_x": 1.78,
+     "worst_x": 0.95
+    }
+   ],
+   "dumped_examples": [
+    {
+     "symbol": "Zeroday",
+     "ca": "G68ruHgnWmHBg8QGbXkPv9UMpPhDmJ33MHTbdf5tpump",
+     "best_x": 1.09,
+     "worst_x": 0.02
+    },
+    {
+     "symbol": "Kenneth",
+     "ca": "DzqHidxjKxCwpbqfqesQWSdHPWHneouy82tW2VUkpump",
+     "best_x": 1.01,
+     "worst_x": 0.73
+    },
+    {
+     "symbol": "CTO",
+     "ca": "9hhLCxn41KZcmK1vAf7u5M6vKLHRcsVn1VmVgUrhpump",
+     "best_x": 1.05,
+     "worst_x": 0.75
+    }
+   ]
+  },
   "hack story (owner rule)": {
    "blocked": 8,
    "ran": 0,
@@ -1387,47 +1414,6 @@
      "ca": "DqqkqbUYSQ47vFCENkKtoBzeNQU3pismjWu5e6Ukpump",
      "best_x": 1.0,
      "worst_x": 0.35
-    }
-   ]
-  },
-  "crowd leaving / fading volume": {
-   "blocked": 7,
-   "ran": 2,
-   "dumped": 5,
-   "flat": 0,
-   "pending": 0,
-   "ran_examples": [
-    {
-     "symbol": "STABLEPAD",
-     "ca": "AABM3NrYSwKMsEDyanuskY43EH6ySbPpdPZNG1u7pump",
-     "best_x": 2.13,
-     "worst_x": 0.96
-    },
-    {
-     "symbol": "HYDESK",
-     "ca": "BzndCZ2ZrjUA21aVW7t6AWEENRAps3EmdQg9hf94pump",
-     "best_x": 1.78,
-     "worst_x": 0.95
-    }
-   ],
-   "dumped_examples": [
-    {
-     "symbol": "Zeroday",
-     "ca": "G68ruHgnWmHBg8QGbXkPv9UMpPhDmJ33MHTbdf5tpump",
-     "best_x": 1.09,
-     "worst_x": 0.02
-    },
-    {
-     "symbol": "Kenneth",
-     "ca": "DzqHidxjKxCwpbqfqesQWSdHPWHneouy82tW2VUkpump",
-     "best_x": 1.01,
-     "worst_x": 0.73
-    },
-    {
-     "symbol": "CTO",
-     "ca": "9hhLCxn41KZcmK1vAf7u5M6vKLHRcsVn1VmVgUrhpump",
-     "best_x": 1.05,
-     "worst_x": 0.75
     }
    ]
   },
@@ -1633,19 +1619,19 @@
   }
  ],
  "scorecard": {
-  "trades": 13,
+  "trades": 14,
   "wins": 2,
-  "win_rate_pct": 15,
-  "net_usd": -6.21,
-  "avg_net_usd": -0.48,
+  "win_rate_pct": 14,
+  "net_usd": -9.8,
+  "avg_net_usd": -0.7,
   "avg_win_usd": 2.1,
-  "avg_loss_usd": -0.95,
-  "fees_usd": 7.72,
-  "slippage_usd": 1.63,
-  "gross_usd": 3.14,
-  "avg_peak_x": 1.54,
-  "avg_banked_x": 0.91,
-  "costs_pct_of_gross": 298,
+  "avg_loss_usd": -1.17,
+  "fees_usd": 8.71,
+  "slippage_usd": 1.93,
+  "gross_usd": 0.84,
+  "avg_peak_x": 1.53,
+  "avg_banked_x": 0.9,
+  "costs_pct_of_gross": 1267,
   "red_after_peak": [
    {
     "symbol": "CPU",
@@ -1676,18 +1662,18 @@
     "avg_banked_x": 0.84
    },
    "stop loss": {
-    "trades": 4,
+    "trades": 5,
     "wins": 0,
     "win_rate_pct": 0,
-    "net_usd": -5.85,
-    "avg_net_usd": -1.46,
+    "net_usd": -9.44,
+    "avg_net_usd": -1.89,
     "avg_win_usd": null,
-    "avg_loss_usd": -1.46,
-    "fees_usd": 2.1,
-    "slippage_usd": 0.36,
-    "gross_usd": -3.39,
-    "avg_peak_x": 1.1,
-    "avg_banked_x": 0.6
+    "avg_loss_usd": -1.89,
+    "fees_usd": 3.09,
+    "slippage_usd": 0.66,
+    "gross_usd": -5.69,
+    "avg_peak_x": 1.14,
+    "avg_banked_x": 0.62
    },
    "trailing stop": {
     "trades": 2,
@@ -1720,7 +1706,7 @@
   },
   "goal": {
    "target_usd": 1000.0,
-   "to_go_usd": 908.76,
+   "to_go_usd": 909.8,
    "trades_needed_at_this_pace": null
   }
  }
