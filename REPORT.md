@@ -1,13 +1,13 @@
 # Trencher live report
 
-Updated 2026-10-30T04:02:56Z (paper trading, never real money)
+Updated 2026-10-30T04:17:56Z (paper trading, never real money)
 
 - Equity: $95.81 (-4.2% vs $100 start)
-- Goal: $1,000 by 2026-11-05 05:03Z (a stretch, survival first): at 9.6% of it, 6 days left, needs +47.4% a day from here
+- Goal: $1,000 by 2026-11-05 05:03Z (a stretch, survival first): at 9.6% of it, 6 days left, needs +47.5% a day from here
 - Closed trades: 11, 2 wins
 - Fees paid: $6.32 (axiom $0.72, network $4.79, pool $0.67), plus $1.04 lost to slippage
 - New trades: on
-- Brain: subscription, 565 calls and 0 plan-limit hits in 48h
+- Brain: subscription, 568 calls and 0 plan-limit hits in 48h
 
 ## Scorecard (after fees)
 - 11 closed, 2 won (18%), net $-4.20
@@ -74,9 +74,19 @@ Updated 2026-10-30T04:02:56Z (paper trading, never real money)
   CA `ANVLA6eKiAq4nstD2Sg3SZhfVkSEwfnGccn12UQWpump`
 
 ## Last scan
-- 04:02Z: 0 coins, 0 with pairs, 0 passed the market filters, 0 researched
+- 04:17Z: 0 coins, 0 with pairs, 0 passed the market filters, 0 researched
 
 ## Coins it looked at, and why it passed
+- 04:11Z $ (MIGRATED, $95,629 mcap, $5,774 5m vol): REJECT, Top 10 hold 40.0% ex-pool (>25%) (V13)  
+  CA `EuAPaAxskPZPF5wxNdUBg8aUsKmMLnKwuWh9cgf1pump`
+- 04:09Z SENSE (MIGRATED, $284,637 mcap, $2,358 5m vol): PASS at conviction 3, PASS — 84% off peak with $2.4k on the 5m and sellers leading 17:10. A robotics LARP with no GitHub, priced near the top of a +45% bounce. Falling knife plus chase (V1, V6).  
+  CA `GydpvgKppv8a4gGQqAQsyQJxtQN4S6Ym9gKxjnN3mfun`
+- 04:08Z Swansem (MIGRATED, $33,366 mcap, $5,848 5m vol): REJECT, Top 10 hold 27.9% ex-pool (>25%) (V13)  
+  CA `6NqCAw6W9KZYMKncMCm5G1zUBBeqbiQNuuNjExb2pump`
+- 04:08Z DESSA (MIGRATED, $8,062,872 mcap, $3,768 5m vol): PASS at conviction 3, PASS: $3.8k on the 5m against an $8M cap, buys and sells even at 14/13, and volume at 0.77x its hourly pace. The crowd already came and went. (V1, V6)  
+  CA `npz2FhoufQ7pKqhGpaipYWacrAkidyW2yDpVWSvpump`
+- 04:04Z LIQUID (MIGRATED, $59,696 mcap, $38,664 5m vol): REJECT, RugCheck danger: Creator history of rugged tokens  
+  CA `GqaP7NBtPAFAUq45UAp426bdEtfz5nz2ffMn9MiHpump`
 - 03:58Z SWAN (MIGRATED, $35,535 mcap, $3,826 5m vol): PASS at conviction 2, PASS — 84% off the high, $35k cap under the $70k bond line, $3.8k 5m. That's a corpse twitching, not a dip (V6, V1).  
   CA `EFaQg27P3c3PHob2mFw4mHCUcWBHHDdatAEsXq2xpump`
 - 03:58Z PURR (FINAL_STRETCH, $25,473 mcap, $6,113 5m vol): REJECT, Top 10 hold 25.1% ex-pool (>25%) (V13)  
@@ -87,36 +97,23 @@ Updated 2026-10-30T04:02:56Z (paper trading, never real money)
   CA `C31uUcfLGPpQDHHieNtDkSWvp4PhNxeSs81cFQFdZVUQ`
 - 03:50Z SIC (MIGRATED, $152,250 mcap, $91,960 5m vol): PASS at conviction 3, PASS — 17 minutes old and 13% off its high, it's an Elon-tweet coin with a bigger token on the same ticker. Wait for a pullback (V1, V6).  
   CA `FLpsbzAmkZLtUrNsJ1PgWKab4Pdx9F2iqi6iKxUUpump`
-- 03:49Z HEXN (DIP, $507,749 mcap, $14,429 5m vol): PASS at conviction 3, PASS: third time on HEXN, and the reasons I lost twice still apply. Price is mid-range under the $0.000589 swing I got stopped below, volume is just keeping pace with no surge, and the tech story is still a LARP with no GitHub and a 0.6-day-old domain (V1).  
-  CA `ANVLA6eKiAq4nstD2Sg3SZhfVkSEwfnGccn12UQWpump`
-- 03:49Z Foxii (MIGRATED, $311,066 mcap, $22,613 5m vol): PASS at conviction 4, PASS — clean holders and a fair pullback, but sellers lead the 5m (104 vs 92), volume is fading to 0.8x the hourly pace, and the 15m chart made a lower low, not a higher one. My pullback rule needs buys > sells. Watchlist, no buy. (V1, V6)  
-  CA `J3ReuwckNtcJP1Zhn7wVbfXhTDNTkHxozQWWAwxWpump`
-- 03:49Z TOKEN (DIP, $58,973 mcap, $24,031 5m vol): PASS at conviction 3, PASS: a 28-minute-old coin called "TOKEN" with no story, sliding off its first spike with no higher low, and 15.6% of supply held by bundle clusters. That's a knife held by insiders (V1, V3, V17).  
-  CA `94ygQzoJq1gLa88rzr3TCRN119s6C7YKV8u5hxcRpump`
-- 03:48Z BITCAT (MIGRATED, $286,745 mcap, $29,030 5m vol): REJECT, Dev holds 2.1% (>1%) (V13, V17)  
-  CA `9hzqsjCkxq3dQkfSkpRM1zk3NmLofHVBcwzKdvj3pump`
-- 03:48Z ROBBERY (DIP, $107,574 mcap, $89,556 5m vol): PASS at conviction 3, PASS — 'Largest Robbery' is a heist/theft-headline coin, 33 minutes old, red off its spike with sellers in control. Theft stories bleed and it has no base yet. (owner note, V1)  
-  CA `AdkZmHCBtJyDv1GmYA93JZTG7rts3B7heMrVvayVpump`
 
 ## What its skips did next (last 48h)
 A skip "ran" if the coin reached the first target (1.5x) from the skip price before a 20% drop, "dumped" if the drop came first. Sampled every 10 min, followed 6h.
-- near the high / chasing: blocked 12, ran 1, dumped 5, flat 2, open 4 (saving losses: keep it)
-  - ran: SENSE up to 1.52x  
-    CA `GydpvgKppv8a4gGQqAQsyQJxtQN4S6Ym9gKxjnN3mfun`
-- too new / sniping: blocked 12, ran 3, dumped 7, flat 0, open 2 (saving losses: keep it)
+- top 10 over 25%: blocked 12, ran 2, dumped 6, flat 0, open 4 (saving losses: keep it)
+  - ran: HYPERGAMY up to 2.05x  
+    CA `CUyNDWGdLPXZ3Gyj1H6TBh5pACgu5nY9WNkSqfMApump`
+  - ran: DEADGUY up to 1.61x  
+    CA `FGGwUpqPHTxwLDdtoY37KBJ6tQxfY5N1JLTXEs2ppump`
+- too new / sniping: blocked 12, ran 4, dumped 7, flat 0, open 1 (mixed)
   - ran: ZI up to 1.7x  
     CA `5q45EK4mRhuiuBmRYoaDs4m2xweaV7gn3zsFhsvcpump`
   - ran: BEAR up to 1.59x  
     CA `6i4ebPt8dpGchB2A1ELpTz3B72dy5DkzNpFMNtUSpump`
   - ran: HyPepe up to 1.5x  
     CA `G8TdzgpUQXQAxJvarNKPXRGv2kh9CsJDK7dCC7Xupump`
-- top 10 over 25%: blocked 11, ran 2, dumped 7, flat 0, open 2 (saving losses: keep it)
-  - ran: HYPERGAMY up to 2.05x  
-    CA `CUyNDWGdLPXZ3Gyj1H6TBh5pACgu5nY9WNkSqfMApump`
-  - ran: DEADGUY up to 1.61x  
-    CA `FGGwUpqPHTxwLDdtoY37KBJ6tQxfY5N1JLTXEs2ppump`
-- falling knife / no higher low: blocked 6, ran 0, dumped 3, flat 1, open 2 (saving losses: keep it)
-- RugCheck danger: blocked 6, ran 3, dumped 2, flat 1, open 0 (cost more winners than it saved: loosen it)
+- near the high / chasing: blocked 11, ran 0, dumped 6, flat 1, open 4 (saving losses: keep it)
+- RugCheck danger: blocked 7, ran 3, dumped 2, flat 1, open 1 (cost more winners than it saved: loosen it)
   - ran: HYPEINU up to 1.57x  
     CA `6eccVGkbi8cvAYBGzfDmUwFYrMj8eGZF2xyZqZLkpump`
   - ran: ETF up to 1.87x  
@@ -126,14 +123,15 @@ A skip "ran" if the coin reached the first target (1.5x) from the skip price bef
 - dev share over 1%: blocked 6, ran 1, dumped 3, flat 1, open 1 (saving losses: keep it)
   - ran: calm up to 1.53x  
     CA `4HSHFbFiKuMvZW7yGiDTab17B63MzBkkhadFKxhkpump`
+- falling knife / no higher low: blocked 5, ran 0, dumped 3, flat 0, open 2 (saving losses: keep it)
 - bundles over the line: blocked 4, ran 1, dumped 3, flat 0, open 0 (saving losses: keep it)
   - ran: calm up to 1.53x  
     CA `4HSHFbFiKuMvZW7yGiDTab17B63MzBkkhadFKxhkpump`
-- crowd leaving / fading volume: blocked 4, ran 0, dumped 2, flat 1, open 1 (too few played out to judge)
-- falling knife (code): blocked 4, ran 0, dumped 3, flat 1, open 0 (saving losses: keep it)
+- crowd leaving / fading volume: blocked 4, ran 0, dumped 2, flat 0, open 2 (too few played out to judge)
 - other: blocked 3, ran 1, dumped 2, flat 0, open 0 (saving losses: keep it)
   - ran: SI up to 1.54x  
     CA `6zuDiAw3NviBwcLZfTztHJgtCmeNWfyFxYVoXtNYpump`
+- falling knife (code): blocked 3, ran 0, dumped 3, flat 0, open 0 (saving losses: keep it)
 
 ## Rules it changed from results and skips
 - 10-30 01:20Z added: If the target prior high is below the 1.5x initials level, take initials/half at that level (SWAN peaked at exactly 1.40x, the retest level named in the thesis, rejected, and the break-even stop closed it at -0.7%. One trade, so this changes the exit, not the pick.)
@@ -158,7 +156,7 @@ A skip "ran" if the coin reached the first target (1.5x) from the skip price bef
 - [2026-10-30 02:26] I expected the higher-low DIP structure, clean holders and $19k 5m flow with 575 buys to 112 sells to carry HEXN back toward its $0.000589 swing. It only got to 1.17x, then broke the $0.000449 higher low and the -13% stop took me out at 45 min, -27% after fees on a probe. That's fine: my DIP rule put the stop under the higher low and the probe size kept the damage small, and the stop review did its job, since a broken higher low means the thesis is dead. What doesn't fit is this is my second HEXN loss, and both times the story was a thin tech LARP (V1). So next time, on a DIP where volume is under the hourly pace and the narrative is weak, I'll want a fresh volume surge before buying, not just a clean structure, because dips recover on attention, not on holder tables (Soul belief 7, V1).
 
 ## Meta right now
-The crawler's summary is already out of date. The scan says the panic-humor meta is fading. SWAN is down to $36k (-47% over 1h, only $3.6k of 5m volume), and "buy the fear" and Novembear show $0 of 5m volume, so that story is mostly over. Two themes are actually moving. The first is "Hyper"-named coins riding the Hyperliquid headlines: HYPERPAD ($76k, -52% 1h, but $9k 5m at 67% buys), HYPSTER and HyPepe. The second is the Laptop news cycle: hackonlaptop, The Binance Laptop and Hunter Biden's $LAPTOP. I pass on all the Laptop coins. They mix a political figure (V13) with a hack story (owner note), and the Binance Laptop already has $0 of 5m volume. Both ZERODAYs are passes too: they lead on volume, but the name is a hack story and the owner's note says those go down. Setups I'd research now: HEXN as a MIGRATED dip (V6 range: $392k cap, -18% 1h, $16.8k 5m at 75% buys, so attention is holding). HYPERPAD as a DIP probe only if buyers keep showing up and it holds near $9-10k on the 5m. FLUKE as MIGRATED ($87k, +125%, 63% buys) only if 5m volume gets back above $10k (it's at $9.5k). Exits per the owner: initials at 1.5x, 20% trail, sell when 5m volume fades.
+The movers have changed the meta. Sub-1-hour pumpswap launches are where the volume is, and three themes are running. First, the Hyperliquid wave: HYPERCHAN is +899% at $479k with $182k on the 5m, and PURR (PurrPad, the name of Hyperliquid's own cat) is +627% but still small. Second, cats and animals: BITCAT has $29k on the 5m at 64% buys, Foxii is cooling with buys at 47%, and HEXN is the 11-hour-old exception at $508k with 86% buys. Third, "super-tech" names: SIC is hot with $92k on the 5m, but SC and QC are already dead at -90% and -29%, so that theme is a LARP until I see a GitHub (V1). Laptop and the political/hack plays are finished, with $0 on the 5m (V13, owner rule). I'd research HEXN as a MIGRATED dip with attention holding, BITCAT as a MIGRATED cat with real flow, and FLUKE now that its 5m is back above $10k ($10.7k at 65% buys). HYPERCHAN only gets a probe if it pulls back and buyers hold, because buying a 9x in its first 25 minutes is how you become exit liquidity (V1, V7).
 
 ## Moving most in its scans, last 30 min (1h volume)
 - HYPERCHAN: $761,748 1h vol, $479,031 mcap, +899% 1h  
@@ -169,5 +167,5 @@ The crawler's summary is already out of date. The scan says the panic-humor meta
   CA `J3ReuwckNtcJP1Zhn7wVbfXhTDNTkHxozQWWAwxWpump`
 - TOKEN: $317,915 1h vol, $58,973 mcap, +49% 1h  
   CA `94ygQzoJq1gLa88rzr3TCRN119s6C7YKV8u5hxcRpump`
-- SC: $280,735 1h vol, $3,569 mcap, -90% 1h  
+- SC: $280,768 1h vol, $3,300 mcap, -91% 1h  
   CA `4hqDzrKcbQhQ74sokT7wTMyY1rAeiVrsdZkDDmRZrbTu`
