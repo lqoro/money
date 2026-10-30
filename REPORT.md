@@ -1,9 +1,9 @@
 # Trencher live report
 
-Updated 2026-10-30T22:59:10Z (paper trading, never real money)
+Updated 2026-10-30T23:14:19Z (paper trading, never real money)
 
 - Equity: $90.20 (-9.8% vs $100 start)
-- Goal: $1,000 by 2026-11-05 05:03Z (pressing for it): at 9% of it, 5.3 days left, needs +58.1% a day from here
+- Goal: $1,000 by 2026-11-05 05:03Z (pressing for it): at 9% of it, 5.2 days left, needs +58.2% a day from here
 - Closed trades: 14, 2 wins
 - Fees paid: $8.84 (axiom $1.30, network $6.14, pool $1.26), plus $1.92 lost to slippage
 - New trades: on
@@ -74,33 +74,33 @@ Updated 2026-10-30T22:59:10Z (paper trading, never real money)
   CA `J5jxG3PFaWpj6BLEQExyC6FSqSvaTKNdQ9G3sZwBpump`
 
 ## Last scan
-- 22:58Z: 8 coins, 6 with pairs, 1 passed the market filters, 1 researched
+- 23:14Z: 6 coins, 4 with pairs, 0 passed the market filters, 0 researched
 
 ## Coins it looked at, and why it passed
+- 23:10Z HYPERCHAN (MIGRATED, $670,611 mcap, $6,238 5m vol): PASS at conviction 3, PASS: HYPERCHAN is 77.5% off its $2.98M peak and just dropped another 25% in the last 30 minutes. 5m volume is $6.2k and there's no higher low. Falling knife on a meta that's cooling (V1, V6).  
+  CA `3ApVr1xphYMpi9dn3rpqU4hwvpmCQDVwxET1rdCDpump`
+- 23:09Z AXIO (FINAL_STRETCH, $23,093 mcap, $3,197 5m vol): PASS at conviction 3, PASS: $3.2k on the 5m with the price 8% under its high. That's buying a thin chart at the top. (V1, V6)  
+  CA `3mUcXkpVVkQ5ZJMctz2f1VBk4rwu3NRfNwVQZtDzpump`
+- 23:05Z DESSA (MIGRATED, $9,960,695 mcap, $2,119 5m vol): PASS at conviction 3, PASS — 2.4% off the high on $2.1k 5m volume with sellers leading the hour. Chasing with no crowd behind it (V1, V6).  
+  CA `npz2FhoufQ7pKqhGpaipYWacrAkidyW2yDpVWSvpump`
+- 23:04Z REMARC (MIGRATED, $30,382 mcap, $2,620 5m vol): REJECT, Top 10 hold 25.8% ex-pool (>25%) (V13)  
+  CA `FGrGAFiBjSb3hZ5YHquFqnSsoBHnWqJttsQq6srDmeUA`
+- 23:04Z BNB (MIGRATED, $698,647 mcap, $8,405 5m vol): PASS at conviction 2, PASS — hack-story coin ("hot wallet got cooked", built on the Binance hack), 5.6% off the high, and 5m volume at 0.44x the hourly pace. Three blockers (owner hack rule, V1, V6).  
+  CA `EYqygbhZjP7EbM4fSn8devctnksAvPAD1Bt57XBFpump`
+- 23:00Z PUMPCAT (MIGRATED, $130,197 mcap, $24,743 5m vol): PASS at conviction 4, PASS: the last 5 minutes are up 88% on a 13-minute-old pair. That's chasing a spike, not buying a pullback. Watch for a higher low (V1, V5).  
+  CA `3P6dYjBnwHKbowrxV73oEGZGUdw4ooD98MiAMTAQpump`
+- 22:59Z TOT (MIGRATED, $146,242 mcap, $131,821 5m vol): REJECT, LP only 85% burned/locked (V2, V3, V6)  
+  CA `Bz5UYN6K9ACNSDQb6W2jfRq79m28e51dQZFTK5yLpump`
 - 22:58Z ONBOARD (DIP, $108,165 mcap, $7,301 5m vol): REJECT, Dip with fading attention is a falling knife, not a dip (5m at 0.24x the hour's pace, under 0.6x)  
   CA `CEMEy7jkeytkxq3qYjaKyQnKiUdHAMJDM1B1tv2Upump`
 - 22:53Z GATO (MIGRATED, $4,600,176 mcap, $3,061 5m vol): REJECT, Dev holds 3.3% (>1%) (V13, V17)  
   CA `HsprHxBRgiVaQdRf3TnKNuZZtaX9JUSPgMFdAkk6pump`
 - 22:49Z STANK (MIGRATED, $270,762 mcap, $2,703 5m vol): PASS at conviction 3, PASS — $2.7k on the 5m with 2 buys to 6 sells, 17% off the high and leading nothing. Clean holders, no crowd. Flow below the bar (V1, V6).  
   CA `5wsjHxT5nW5jQuVupXUNnYszF3WoWCfGGk9LMcsCJzY8`
-- 22:48Z HACKINU (no setup, $4,194 mcap, $0 5m vol): REJECT, Hack story ("hack" in the name or ticker): these tend to go down, owner rule  
-  CA `HD2qqwAeLkyXnboo5cSGSdGw4oHCbvNEvWsgDSgWpump`
-- 22:45Z AAPLCAT (MIGRATED, $58,465 mcap, $36,685 5m vol): PASS at conviction 3, PASS — 7-minute-old vamp at $58k, buying right after a +45% 5m spike 9% off the high. That's sniping and chasing at once (V1, V5, V6).  
-  CA `66auXVTRw9ZekMeB8h5jdJS9WhMRVz8zfMyzqeinpump`
-- 22:44Z VYPER (FINAL_STRETCH, $25,528 mcap, $2,631 5m vol): PASS at conviction 3, PASS: chasing. VYPER sits 1.8% off its high right after a +37% five-minute candle at 3.4x the hourly pace, on only $2.6k of 5m volume. That's a spike, not a setup (V1).  
-  CA `4QRSjsm46wR72PKXYi2VuJyq5QrqmDzmKmarsT8Rpump`
-- 22:37Z JOB (MIGRATED, $3,367,878 mcap, $4,669 5m vol): PASS at conviction 3, PASS — 8% off the high with sellers in control (31/47) and 5m volume at $4.7k. Chasing a fading derivative, no live flow (V1, V6).  
-  CA `9Pq7aLAbhDG2tTnS22cm6kuysZVcZpLFE368HWuypump`
-- 22:37Z iCoin (MIGRATED, $359,378 mcap, $175,620 5m vol): PASS at conviction 4, PASS: chasing. The last 5m candle is +32% at 2x the hourly pace, 12% off a high made 6 minutes ago, on a 37-minute-old coin. Wait for a higher low (V1, PILLSEY rule).  
-  CA `HgxEGTZ1Epb64RrYqcuHkqb1gGWWnF5WcPTCDWzApump`
-- 22:29Z scaninu (MIGRATED, $38,174 mcap, $46,662 5m vol): PASS at conviction 2, PASS: 2 minutes old, red off its first spike, two bigger coins share the ticker, and one 5.6% bundle cluster. That's sniping a likely vamp (V5, V6, V1, V3).  
-  CA `inuy29e9V3efuwY4Ag3pwdrqhWZigXnuhqWSVdcXVF3`
-- 22:27Z Akira (MIGRATED, $65,281 mcap, $118,108 5m vol): PASS at conviction 3, PASS — 4 minutes old, at its high right after a +44% 5m candle at 12x pace, top 10 at 24.5%. Chasing a fresh migration spike. (V1, V6)  
-  CA `4NyRyGt5rwtLBdNQpkDaXnCyGuxHZHsRtzt4jazQpump`
 
 ## What its skips did next (last 48h)
 A skip "ran" if the coin reached the first target (1.5x) from the skip price before a 20% drop, "dumped" if the drop came first. Sampled every 10 min, followed 6h.
-- top 10 over 25%: blocked 37, ran 6, dumped 28, flat 1, open 2 (saving losses: keep it)
+- top 10 over 25%: blocked 38, ran 6, dumped 28, flat 2, open 2 (saving losses: keep it)
   - ran: HYPERGAMY up to 2.05x  
     CA `CUyNDWGdLPXZ3Gyj1H6TBh5pACgu5nY9WNkSqfMApump`
   - ran: Catori up to 1.52x  
@@ -114,33 +114,33 @@ A skip "ran" if the coin reached the first target (1.5x) from the skip price bef
     CA `6i4ebPt8dpGchB2A1ELpTz3B72dy5DkzNpFMNtUSpump`
   - ran: HyPepe up to 1.5x  
     CA `G8TdzgpUQXQAxJvarNKPXRGv2kh9CsJDK7dCC7Xupump`
-- near the high / chasing: blocked 26, ran 3, dumped 16, flat 2, open 5 (saving losses: keep it)
+- near the high / chasing: blocked 29, ran 3, dumped 16, flat 2, open 8 (saving losses: keep it)
   - ran: OREN up to 1.58x  
     CA `57vAaMsnAJXkvULtAz7fsi6gRn3bHRJFJsJV1okNpump`
   - ran: Catori up to 1.52x  
     CA `FDwCosavNvMiFB812ajJp3gG7eZ9c4bpgcnY6fDQpump`
   - ran: FLYWHEEL up to 2.23x  
     CA `BWMf44rD724R2bdgHWd88CDTVEjuPNQauw8s6S7ipump`
-- RugCheck danger: blocked 18, ran 5, dumped 12, flat 1, open 0 (saving losses: keep it)
+- RugCheck danger: blocked 19, ran 5, dumped 12, flat 1, open 1 (saving losses: keep it)
   - ran: HYPEINU up to 1.57x  
     CA `6eccVGkbi8cvAYBGzfDmUwFYrMj8eGZF2xyZqZLkpump`
   - ran: ETF up to 1.87x  
     CA `2orqEGSdkm5BMmhdM8TpKCpACk32a3Zaj3Lef7ceqsc6`
   - ran: Bear up to 2.66x  
     CA `Dv6gYYkTav8Pm36UwAywxNCccwSZV1VL1tjiSpDLpump`
-- falling knife (code): blocked 18, ran 2, dumped 15, flat 0, open 1 (saving losses: keep it)
+- falling knife (code): blocked 17, ran 2, dumped 14, flat 0, open 1 (saving losses: keep it)
   - ran: TYGR up to 1.58x  
     CA `5wCqCq6jbppuTocMeq6zd4UywAm64L1QNNxvEDAHpump`
   - ran: AgenC up to 1.88x  
     CA `DDG8rjV3TViCqKRQED2QZq4MEaE1uqXgEiosBNpapump`
-- dev share over 1%: blocked 13, ran 0, dumped 11, flat 1, open 1 (saving losses: keep it)
-- falling knife / no higher low: blocked 11, ran 0, dumped 10, flat 1, open 0 (saving losses: keep it)
-- crowd leaving / fading volume: blocked 9, ran 2, dumped 7, flat 0, open 0 (saving losses: keep it)
+- dev share over 1%: blocked 13, ran 0, dumped 11, flat 2, open 0 (saving losses: keep it)
+- falling knife / no higher low: blocked 11, ran 0, dumped 9, flat 1, open 1 (saving losses: keep it)
+- hack story (owner rule): blocked 9, ran 0, dumped 3, flat 4, open 2 (saving losses: keep it)
+- crowd leaving / fading volume: blocked 8, ran 2, dumped 6, flat 0, open 0 (saving losses: keep it)
   - ran: STABLEPAD up to 2.13x  
     CA `AABM3NrYSwKMsEDyanuskY43EH6ySbPpdPZNG1u7pump`
   - ran: HYDESK up to 1.78x  
     CA `BzndCZ2ZrjUA21aVW7t6AWEENRAps3EmdQg9hf94pump`
-- hack story (owner rule): blocked 9, ran 0, dumped 3, flat 4, open 2 (saving losses: keep it)
 - vamp / copycat: blocked 7, ran 1, dumped 6, flat 0, open 0 (saving losses: keep it)
   - ran: Hedge up to 1.78x  
     CA `7eQagAYSYYhRqRZF5L97Ku8AK94TEpsmnrrsssUkpump`
@@ -171,13 +171,13 @@ A skip "ran" if the coin reached the first target (1.5x) from the skip price bef
 Right now the movers are fresh pumpswap graduations under 2 hours old. The crawler's PILLSEY/cat story is stale: PILLSEY isn't in the movers at all. Three themes are moving. (1) pump.fun's "-OOOR" creator meta, still alive in THE ONBOARDOOOR ($224k cap, $27k on the 5-minute, 0.8h old) and dead in CREATOR ($586 on the 5-minute). (2) Edgy one-liner memes like Broke Nigga Baddie ($655k, $20k on the 5-minute, 62% buys). (3) Anime characters, where Akira is fresh ($118k on the 5-minute but only 6 minutes old and under $70k) and Hyper-Chan is cooling. Older runners are fading, with sellers in control: GLITCH and GATO are both at under 40% buys. Two hard no's: BIBICOIN and $LAPTOP are politician coins (Netanyahu, Hunter Biden), so they're out (V13). For setups, BNB passes the DIP/MIGRATED volume gate (5-minute volume is 0.77x its hourly pace), so I'd research it. ONBOARD is a MIGRATED buy only on a pullback of 10% or more where volume holds, and right now its 5-minute is about 0.3x its hourly pace, so the crowd is thinning. Akira goes on the watchlist until it proves itself above $70k, because I don't snipe 6-minute-old pairs (V5, V6). On the owner's note: I'll take more clean setups, but conviction comes from the checks, not from the Nov 5 deadline.
 
 ## Moving most in its scans, last 30 min (1h volume)
-- iCoin: $1,066,176 1h vol, $359,378 mcap, +735% 1h  
-  CA `HgxEGTZ1Epb64RrYqcuHkqb1gGWWnF5WcPTCDWzApump`
-- PILLSEY: $472,230 1h vol, $2,050 mcap, -99% 1h  
-  CA `J5jxG3PFaWpj6BLEQExyC6FSqSvaTKNdQ9G3sZwBpump`
+- TOT: $375,785 1h vol, $146,242 mcap, +193% 1h  
+  CA `Bz5UYN6K9ACNSDQb6W2jfRq79m28e51dQZFTK5yLpump`
 - ONBOARD: $372,620 1h vol, $108,165 mcap, -38% 1h  
   CA `CEMEy7jkeytkxq3qYjaKyQnKiUdHAMJDM1B1tv2Upump`
-- SONIC: $170,768 1h vol, $9,052 mcap, +32% 1h  
-  CA `CjngxwQWCAtB4sE2M97HakrFK8rcSLdfEBYpNQbWpump`
-- TUSK: $112,141 1h vol, $28,256 mcap, -57% 1h  
-  CA `8uBobWMhu6hRUn4jaA4kjcgWCjTxgHwHJtPgBePXpump`
+- BNB: $229,039 1h vol, $698,647 mcap, +24% 1h  
+  CA `EYqygbhZjP7EbM4fSn8devctnksAvPAD1Bt57XBFpump`
+- Akira: $225,066 1h vol, $22,314 mcap, -49% 1h  
+  CA `4NyRyGt5rwtLBdNQpkDaXnCyGuxHZHsRtzt4jazQpump`
+- PILLSEY: $219,355 1h vol, $2,006 mcap, -99% 1h  
+  CA `J5jxG3PFaWpj6BLEQExyC6FSqSvaTKNdQ9G3sZwBpump`
