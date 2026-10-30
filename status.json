@@ -1,5 +1,5 @@
 {
- "updated_at": "2026-10-30T03:47:51Z",
+ "updated_at": "2026-10-30T03:47:55Z",
  "paused_new_trades": false,
  "brain": {
   "mode": "subscription",
@@ -854,147 +854,8 @@
   "days_left": 6.1,
   "needed_daily_growth_pct": 47.3
  },
- "last_scan": {
-  "at": 1793332003.747071,
-  "tokens": 0,
-  "pairs": 0,
-  "passed_market_filters": 0,
-  "researched": 0
- },
- "recent_looks": [
-  {
-   "ts": "2026-10-30T03:17:19Z",
-   "symbol": "LAPTOP",
-   "ca": "2vk31WofkrWKQPrWxhYpdobDRS29EESJ59xbjcHtpump",
-   "setup": "MIGRATED",
-   "mcap_usd": 103812,
-   "vol_5m": 18747,
-   "outcome": "REJECT",
-   "conviction": null,
-   "reason": "Bundles: 5 linked wallet cluster(s) hold 22.6% of supply (>20%) (V17)"
-  },
-  {
-   "ts": "2026-10-30T03:17:41Z",
-   "symbol": "HEXN",
-   "ca": "ANVLA6eKiAq4nstD2Sg3SZhfVkSEwfnGccn12UQWpump",
-   "setup": "DIP",
-   "mcap_usd": 502617,
-   "vol_5m": 13131,
-   "outcome": "PASS",
-   "conviction": 3,
-   "reason": "PASS: third look at HEXN, same thin LARP story, same $500k level where I lost last time, and volume is still under the hourly pace. Why I left still holds. (V1, V6)"
-  },
-  {
-   "ts": "2026-10-30T03:17:41Z",
-   "symbol": "FLUKE",
-   "ca": "C31uUcfLGPpQDHHieNtDkSWvp4PhNxeSs81cFQFdZVUQ",
-   "setup": "DIP",
-   "mcap_usd": 64034,
-   "vol_5m": 5892,
-   "outcome": "REJECT",
-   "conviction": null,
-   "reason": "Dip with fading attention is a falling knife, not a dip (5m at 0.18x the hour's pace, under 0.7x)"
-  },
-  {
-   "ts": "2026-10-30T03:17:42Z",
-   "symbol": "HYPERPAD",
-   "ca": "31FZ9fnK5NqFrymDmNdwKZmrnVvYtpKoVdWXDeXTpump",
-   "setup": "DIP",
-   "mcap_usd": 59772,
-   "vol_5m": 4109,
-   "outcome": "REJECT",
-   "conviction": null,
-   "reason": "Dip with fading attention is a falling knife, not a dip (5m at 0.32x the hour's pace, under 0.7x)"
-  },
-  {
-   "ts": "2026-10-30T03:17:51Z",
-   "symbol": "Swansem",
-   "ca": "6NqCAw6W9KZYMKncMCm5G1zUBBeqbiQNuuNjExb2pump",
-   "setup": "FINAL_STRETCH",
-   "mcap_usd": 29781,
-   "vol_5m": 2281,
-   "outcome": "REJECT",
-   "conviction": null,
-   "reason": "Top 10 hold 27.0% ex-pool (>25%) (V13)"
-  },
-  {
-   "ts": "2026-10-30T03:18:01Z",
-   "symbol": "jeff",
-   "ca": "HAsTKXYvv65zM7J6Cu5o5PcZsiKMQYo5oz4WPjgqwP6k",
-   "setup": "DIP",
-   "mcap_usd": 1050551,
-   "vol_5m": 2238,
-   "outcome": "REJECT",
-   "conviction": null,
-   "reason": "Top 10 hold 34.0% ex-pool (>25%) (V13)"
-  },
-  {
-   "ts": "2026-10-30T03:27:22Z",
-   "symbol": "ROBBERY",
-   "ca": "AdkZmHCBtJyDv1GmYA93JZTG7rts3B7heMrVvayVpump",
-   "setup": "DIP",
-   "mcap_usd": 52138,
-   "vol_5m": 68249,
-   "outcome": "PASS",
-   "conviction": 3,
-   "reason": "PASS \u2014 12 minutes old, down 40% on the 5m with no higher low, and it's a theft story the owner says to skip. Wait for a base. (V1, V6)"
-  },
-  {
-   "ts": "2026-10-30T03:28:13Z",
-   "symbol": "Foxii",
-   "ca": "J3ReuwckNtcJP1Zhn7wVbfXhTDNTkHxozQWWAwxWpump",
-   "setup": "MIGRATED",
-   "mcap_usd": 310516,
-   "vol_5m": 10385,
-   "outcome": "PASS",
-   "conviction": 3,
-   "reason": "PASS: Foxii is only 11.8% off its $352k high and 5m volume has dropped to 0.38x the hourly pace. That's a chase into a fading crowd. Wait for the pullback. (V1, V6)"
-  },
-  {
-   "ts": "2026-10-30T03:31:22Z",
-   "symbol": "TOKEN",
-   "ca": "94ygQzoJq1gLa88rzr3TCRN119s6C7YKV8u5hxcRpump",
-   "setup": "MIGRATED",
-   "mcap_usd": 76548,
-   "vol_5m": 72341,
-   "outcome": "PASS",
-   "conviction": 3,
-   "reason": "PASS \u2014 11-minute-old migration with 58% sells on the 5m and a 4.6% bundle cluster, only 23% off the high. Too new, near the high, no base. (V1, V3)"
-  },
-  {
-   "ts": "2026-10-30T03:32:11Z",
-   "symbol": "BITCAT",
-   "ca": "9hzqsjCkxq3dQkfSkpRM1zk3NmLofHVBcwzKdvj3pump",
-   "setup": "MIGRATED",
-   "mcap_usd": 302412,
-   "vol_5m": 35471,
-   "outcome": "REJECT",
-   "conviction": null,
-   "reason": "Dev holds 2.1% (>1%) (V13, V17)"
-  },
-  {
-   "ts": "2026-10-30T03:38:26Z",
-   "symbol": "GATO",
-   "ca": "HsprHxBRgiVaQdRf3TnKNuZZtaX9JUSPgMFdAkk6pump",
-   "setup": "MIGRATED",
-   "mcap_usd": 4190092,
-   "vol_5m": 3821,
-   "outcome": "REJECT",
-   "conviction": null,
-   "reason": "Dev holds 3.3% (>1%) (V13, V17)"
-  },
-  {
-   "ts": "2026-10-30T03:43:55Z",
-   "symbol": "HYPERCHAN",
-   "ca": "3ApVr1xphYMpi9dn3rpqU4hwvpmCQDVwxET1rdCDpump",
-   "setup": "MIGRATED",
-   "mcap_usd": 557925,
-   "vol_5m": 135836,
-   "outcome": "PASS",
-   "conviction": 3,
-   "reason": "PASS \u2014 19 minutes old and 17.8% off a peak from 12 minutes ago. Clean holders don't make chasing the high OK. The near-high rule is 0 for 4 on runners. Wait for the 0.618 retest near $290k (V1, V6)."
-  }
- ],
+ "last_scan": {},
+ "recent_looks": [],
  "skip_review": {
   "top 10 over 25%": {
    "blocked": 12,
@@ -1044,11 +905,11 @@
    ]
   },
   "too new / sniping": {
-   "blocked": 12,
+   "blocked": 11,
    "ran": 4,
    "dumped": 6,
    "flat": 0,
-   "pending": 2,
+   "pending": 1,
    "ran_examples": [
     {
      "symbol": "ZI",

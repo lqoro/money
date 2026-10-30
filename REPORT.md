@@ -1,6 +1,6 @@
 # Trencher live report
 
-Updated 2026-10-30T03:47:51Z (paper trading, never real money)
+Updated 2026-10-30T03:47:55Z (paper trading, never real money)
 
 - Equity: $95.81 (-4.2% vs $100 start)
 - Goal: $1,000 by 2026-11-05 05:03Z (a stretch, survival first): at 9.6% of it, 6.1 days left, needs +47.3% a day from here
@@ -74,29 +74,10 @@ Updated 2026-10-30T03:47:51Z (paper trading, never real money)
   CA `ANVLA6eKiAq4nstD2Sg3SZhfVkSEwfnGccn12UQWpump`
 
 ## Last scan
-- 03:46Z: 0 coins, 0 with pairs, 0 passed the market filters, 0 researched
+- no scan yet since the last restart
 
 ## Coins it looked at, and why it passed
-- 03:43Z HYPERCHAN (MIGRATED, $557,925 mcap, $135,836 5m vol): PASS at conviction 3, PASS — 19 minutes old and 17.8% off a peak from 12 minutes ago. Clean holders don't make chasing the high OK. The near-high rule is 0 for 4 on runners. Wait for the 0.618 retest near $290k (V1, V6).  
-  CA `3ApVr1xphYMpi9dn3rpqU4hwvpmCQDVwxET1rdCDpump`
-- 03:38Z GATO (MIGRATED, $4,190,092 mcap, $3,821 5m vol): REJECT, Dev holds 3.3% (>1%) (V13, V17)  
-  CA `HsprHxBRgiVaQdRf3TnKNuZZtaX9JUSPgMFdAkk6pump`
-- 03:32Z BITCAT (MIGRATED, $302,412 mcap, $35,471 5m vol): REJECT, Dev holds 2.1% (>1%) (V13, V17)  
-  CA `9hzqsjCkxq3dQkfSkpRM1zk3NmLofHVBcwzKdvj3pump`
-- 03:31Z TOKEN (MIGRATED, $76,548 mcap, $72,341 5m vol): PASS at conviction 3, PASS — 11-minute-old migration with 58% sells on the 5m and a 4.6% bundle cluster, only 23% off the high. Too new, near the high, no base. (V1, V3)  
-  CA `94ygQzoJq1gLa88rzr3TCRN119s6C7YKV8u5hxcRpump`
-- 03:28Z Foxii (MIGRATED, $310,516 mcap, $10,385 5m vol): PASS at conviction 3, PASS: Foxii is only 11.8% off its $352k high and 5m volume has dropped to 0.38x the hourly pace. That's a chase into a fading crowd. Wait for the pullback. (V1, V6)  
-  CA `J3ReuwckNtcJP1Zhn7wVbfXhTDNTkHxozQWWAwxWpump`
-- 03:27Z ROBBERY (DIP, $52,138 mcap, $68,249 5m vol): PASS at conviction 3, PASS — 12 minutes old, down 40% on the 5m with no higher low, and it's a theft story the owner says to skip. Wait for a base. (V1, V6)  
-  CA `AdkZmHCBtJyDv1GmYA93JZTG7rts3B7heMrVvayVpump`
-- 03:18Z jeff (DIP, $1,050,551 mcap, $2,238 5m vol): REJECT, Top 10 hold 34.0% ex-pool (>25%) (V13)  
-  CA `HAsTKXYvv65zM7J6Cu5o5PcZsiKMQYo5oz4WPjgqwP6k`
-- 03:17Z Swansem (FINAL_STRETCH, $29,781 mcap, $2,281 5m vol): REJECT, Top 10 hold 27.0% ex-pool (>25%) (V13)  
-  CA `6NqCAw6W9KZYMKncMCm5G1zUBBeqbiQNuuNjExb2pump`
-- 03:17Z HYPERPAD (DIP, $59,772 mcap, $4,109 5m vol): REJECT, Dip with fading attention is a falling knife, not a dip (5m at 0.32x the hour's pace, under 0.7x)  
-  CA `31FZ9fnK5NqFrymDmNdwKZmrnVvYtpKoVdWXDeXTpump`
-- 03:17Z FLUKE (DIP, $64,034 mcap, $5,892 5m vol): REJECT, Dip with fading attention is a falling knife, not a dip (5m at 0.18x the hour's pace, under 0.7x)  
-  CA `C31uUcfLGPpQDHHieNtDkSWvp4PhNxeSs81cFQFdZVUQ`
+- none since the last restart
 
 ## What its skips did next (last 48h)
 A skip "ran" if the coin reached the first target (1.5x) from the skip price before a 20% drop, "dumped" if the drop came first. Sampled every 10 min, followed 6h.
@@ -107,7 +88,7 @@ A skip "ran" if the coin reached the first target (1.5x) from the skip price bef
     CA `CUyNDWGdLPXZ3Gyj1H6TBh5pACgu5nY9WNkSqfMApump`
   - ran: DEADGUY up to 1.61x  
     CA `FGGwUpqPHTxwLDdtoY37KBJ6tQxfY5N1JLTXEs2ppump`
-- too new / sniping: blocked 12, ran 4, dumped 6, flat 0, open 2 (mixed)
+- too new / sniping: blocked 11, ran 4, dumped 6, flat 0, open 1 (mixed)
   - ran: ZI up to 1.7x  
     CA `5q45EK4mRhuiuBmRYoaDs4m2xweaV7gn3zsFhsvcpump`
   - ran: BEAR up to 1.59x  
