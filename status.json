@@ -1,5 +1,5 @@
 {
- "updated_at": "2026-10-30T09:05:42Z",
+ "updated_at": "2026-10-30T09:05:46Z",
  "paused_new_trades": false,
  "brain": {
   "mode": "subscription",
@@ -54,7 +54,9 @@
   "max_slippage_pct": 20.0,
   "min_target_cost_multiple": 3.0,
   "max_round_trip_cost_pct": 20.0,
-  "probe_max_risk_pct": 5
+  "probe_max_risk_pct": 5,
+  "conviction_risk_scale": 1.5,
+  "min_entry_usd": 10.0
  },
  "recent_trades": [
   {
@@ -669,12 +671,12 @@
     "name": "Slutty And Fucking Underboobs",
     "ca": "EjbgFA8vFhswojnNLxQVKYKiDsm3PgM6w7JuehfPpump",
     "dex": "pumpswap",
-    "mcap_usd": 2057,
-    "vol_5m": 2,
-    "vol_1h": 234714,
-    "change_1h": -98.46,
-    "buy_ratio_5m": 0.8,
-    "age_hours": 1.3
+    "mcap_usd": 2065,
+    "vol_5m": 73,
+    "vol_1h": 389698,
+    "change_1h": -97.64,
+    "buy_ratio_5m": 1.0,
+    "age_hours": 1.2
    },
    {
     "symbol": "Stonka",
@@ -689,6 +691,18 @@
     "age_hours": 1.0
    },
    {
+    "symbol": "MONEKO",
+    "name": "MONEKO",
+    "ca": "2BqhMVMby7i67xoZEBoSyeXTY1wdhVyuhs7vMStspump",
+    "dex": "pumpfun",
+    "mcap_usd": 16758,
+    "vol_5m": 22036,
+    "vol_1h": 79533,
+    "change_1h": 10.75,
+    "buy_ratio_5m": 0.58,
+    "age_hours": 1.5
+   },
+   {
     "symbol": "DESSA",
     "name": "Dessa",
     "ca": "npz2FhoufQ7pKqhGpaipYWacrAkidyW2yDpVWSvpump",
@@ -699,18 +713,6 @@
     "change_1h": 4.78,
     "buy_ratio_5m": 0.49,
     "age_hours": 91.6
-   },
-   {
-    "symbol": "MONEKO",
-    "name": "MONEKO",
-    "ca": "2BqhMVMby7i67xoZEBoSyeXTY1wdhVyuhs7vMStspump",
-    "dex": "pumpfun",
-    "mcap_usd": 18651,
-    "vol_5m": 4193,
-    "vol_1h": 76247,
-    "change_1h": -32.32,
-    "buy_ratio_5m": 0.54,
-    "age_hours": 1.7
    },
    {
     "symbol": "TraderTraitor",
@@ -852,182 +854,11 @@
   "equity_usd": 95.81,
   "progress_pct": 9.6,
   "days_left": 5.8,
-  "needed_daily_growth_pct": 49.5
+  "needed_daily_growth_pct": 49.5,
+  "stance": "push"
  },
- "last_scan": {
-  "at": 1793351107.6577349,
-  "tokens": 1,
-  "pairs": 1,
-  "passed_market_filters": 0,
-  "researched": 0
- },
- "recent_looks": [
-  {
-   "ts": "2026-10-30T08:05:28Z",
-   "symbol": "TraderTraitor",
-   "ca": "3XLTWYyHxpAdbP1fjfTz9TBZp9Dhq4A6KWNarHMkGHQb",
-   "setup": "DIP",
-   "mcap_usd": 84003,
-   "vol_5m": 11087,
-   "outcome": "REJECT",
-   "conviction": null,
-   "reason": "RugCheck danger: Symbol Mismatch Token: \"TraderTraitor\", File: \"TraderTrai\""
-  },
-  {
-   "ts": "2026-10-30T08:08:33Z",
-   "symbol": "MONEKO",
-   "ca": "2BqhMVMby7i67xoZEBoSyeXTY1wdhVyuhs7vMStspump",
-   "setup": "FINAL_STRETCH",
-   "mcap_usd": 31656,
-   "vol_5m": 6522,
-   "outcome": "REJECT",
-   "conviction": null,
-   "reason": "Top 10 hold 26.4% ex-pool (>25%) (V13)"
-  },
-  {
-   "ts": "2026-10-30T08:22:33Z",
-   "symbol": "HYPERCHAN",
-   "ca": "3ApVr1xphYMpi9dn3rpqU4hwvpmCQDVwxET1rdCDpump",
-   "setup": "MIGRATED",
-   "mcap_usd": 1950077,
-   "vol_5m": 8521,
-   "outcome": "PASS",
-   "conviction": 4,
-   "reason": "PASS \u2014 14.5% off a 36-minute-old high with 5m volume at half its hourly pace. That's chasing a crowd that's leaving. Clean holders don't fix a bad entry. (V1, V6)"
-  },
-  {
-   "ts": "2026-10-30T08:23:39Z",
-   "symbol": "Foxii",
-   "ca": "J3ReuwckNtcJP1Zhn7wVbfXhTDNTkHxozQWWAwxWpump",
-   "setup": "MIGRATED",
-   "mcap_usd": 1388465,
-   "vol_5m": 10221,
-   "outcome": "PASS",
-   "conviction": 3,
-   "reason": "PASS: Foxii is 0.1% off its high with 5m volume at 0.77x the hourly pace. That's chasing the top, not buying a pullback (learned rule, V1/V6)."
-  },
-  {
-   "ts": "2026-10-30T08:24:49Z",
-   "symbol": "HEXN",
-   "ca": "ANVLA6eKiAq4nstD2Sg3SZhfVkSEwfnGccn12UQWpump",
-   "setup": "DIP",
-   "mcap_usd": 608146,
-   "vol_5m": 12593,
-   "outcome": "PASS",
-   "conviction": 3,
-   "reason": "PASS \u2014 5m volume at 0.88x the hourly pace fails my DIP attention gate, and it's a no-GitHub \"on-chain OS\" story. I've lost on HEXN twice today, not paying for a third (V1, Soul 7)."
-  },
-  {
-   "ts": "2026-10-30T08:30:42Z",
-   "symbol": "GATO",
-   "ca": "HsprHxBRgiVaQdRf3TnKNuZZtaX9JUSPgMFdAkk6pump",
-   "setup": "MIGRATED",
-   "mcap_usd": 4761233,
-   "vol_5m": 2178,
-   "outcome": "REJECT",
-   "conviction": null,
-   "reason": "Dev holds 3.3% (>1%) (V13, V17)"
-  },
-  {
-   "ts": "2026-10-30T08:37:59Z",
-   "symbol": "GhostGuy",
-   "ca": "8kTBAkfr3aNdxcaAgSf5jGkZHCxEuvJsDhddg9tmpump",
-   "setup": "FINAL_STRETCH",
-   "mcap_usd": 20660,
-   "vol_5m": 3742,
-   "outcome": "REJECT",
-   "conviction": null,
-   "reason": "RugCheck danger: Creator history of rugged tokens"
-  },
-  {
-   "ts": "2026-10-30T08:38:19Z",
-   "symbol": "DUOTIDE",
-   "ca": "AtKvRVDF738YA925jmxNeh4iV2qCVBBJeMxQNyrupump",
-   "setup": "MIGRATED",
-   "mcap_usd": 53740,
-   "vol_5m": 2030,
-   "outcome": "PASS",
-   "conviction": 2,
-   "reason": "PASS \u2014 10 minutes old, 0.7% off its high, $2k on the 5m, and a launchpad \"tech\" coin whose own site calls itself a play-money simulation. Too new, chasing, LARP. (V1, V5, V6)"
-  },
-  {
-   "ts": "2026-10-30T08:40:31Z",
-   "symbol": "DESSA",
-   "ca": "npz2FhoufQ7pKqhGpaipYWacrAkidyW2yDpVWSvpump",
-   "setup": "MIGRATED",
-   "mcap_usd": 9159637,
-   "vol_5m": 15499,
-   "outcome": "PASS",
-   "conviction": 4,
-   "reason": "PASS \u2014 DESSA's only retest level is the $12M peak, 1.31x away and under the 1.5x initials, and the 5m tape is 20 buys to 21 sells. Clean holders, but no payoff and no new crowd (V1, V6)."
-  },
-  {
-   "ts": "2026-10-30T08:40:32Z",
-   "symbol": "\u2588\u2588\u2588",
-   "ca": "EwX2T1p2PmgTsSq2Bi6XtQYxPC5krR4P2fxPfN4Qpump",
-   "setup": "MIGRATED",
-   "mcap_usd": 468519,
-   "vol_5m": 2231,
-   "outcome": "REJECT",
-   "conviction": null,
-   "reason": "Top 10 hold 25.4% ex-pool (>25%) (V13)"
-  },
-  {
-   "ts": "2026-10-30T08:48:31Z",
-   "symbol": "Stonka",
-   "ca": "3UrbFtErj4FYspTupgAfKqztrMYNVQA2GocpT97Q3ray",
-   "setup": "MIGRATED",
-   "mcap_usd": 69550,
-   "vol_5m": 13432,
-   "outcome": "REJECT",
-   "conviction": null,
-   "reason": "Top 10 hold 29.9% ex-pool (>25%) (V13)"
-  },
-  {
-   "ts": "2026-10-30T08:48:32Z",
-   "symbol": "jeff",
-   "ca": "HAsTKXYvv65zM7J6Cu5o5PcZsiKMQYo5oz4WPjgqwP6k",
-   "setup": "MIGRATED",
-   "mcap_usd": 1689007,
-   "vol_5m": 4363,
-   "outcome": "REJECT",
-   "conviction": null,
-   "reason": "Top 10 hold 34.1% ex-pool (>25%) (V13)"
-  },
-  {
-   "ts": "2026-10-30T08:50:39Z",
-   "symbol": "TraderTraitor",
-   "ca": "3XLTWYyHxpAdbP1fjfTz9TBZp9Dhq4A6KWNarHMkGHQb",
-   "setup": "DIP",
-   "mcap_usd": 105275,
-   "vol_5m": 2460,
-   "outcome": "REJECT",
-   "conviction": null,
-   "reason": "Dip with fading attention is a falling knife, not a dip (5m at 0.51x the hour's pace, under 0.6x)"
-  },
-  {
-   "ts": "2026-10-30T08:52:46Z",
-   "symbol": "CRIME",
-   "ca": "BN4Z5NtntHhu6p3atEqkeAVi8Bn9Ri2QTv8FD7iupump",
-   "setup": "MIGRATED",
-   "mcap_usd": 35981,
-   "vol_5m": 11174,
-   "outcome": "REJECT",
-   "conviction": null,
-   "reason": "Top 10 hold 55.0% ex-pool (>25%) (V13)"
-  },
-  {
-   "ts": "2026-10-30T08:54:04Z",
-   "symbol": "Kenneth",
-   "ca": "DzqHidxjKxCwpbqfqesQWSdHPWHneouy82tW2VUkpump",
-   "setup": "FINAL_STRETCH",
-   "mcap_usd": 19934,
-   "vol_5m": 2427,
-   "outcome": "PASS",
-   "conviction": 3,
-   "reason": "PASS: Kenneth's 5m volume is $2.4k, which is 0.51x its hourly pace, so the crowd is leaving a Final Stretch coin stuck at half bond. 9 coins share the ticker and top 10 hold 22%. (V1, V6, V13)"
-  }
- ],
+ "last_scan": {},
+ "recent_looks": [],
  "skip_review": {
   "top 10 over 25%": {
    "blocked": 20,
