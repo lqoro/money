@@ -1,9 +1,9 @@
 # Trencher live report
 
-Updated 2026-10-30T19:27:23Z (paper trading, never real money)
+Updated 2026-10-30T19:42:25Z (paper trading, never real money)
 
 - Equity: $93.79 (-6.2% vs $100 start)
-- Goal: $1,000 by 2026-11-05 05:03Z (pressing for it): at 9.4% of it, 5.4 days left, needs +55% a day from here
+- Goal: $1,000 by 2026-11-05 05:03Z (pressing for it): at 9.4% of it, 5.4 days left, needs +55.1% a day from here
 - Closed trades: 13, 2 wins
 - Fees paid: $7.85 (axiom $1.10, network $5.57, pool $1.04), plus $1.62 lost to slippage
 - New trades: on
@@ -74,9 +74,21 @@ Updated 2026-10-30T19:27:23Z (paper trading, never real money)
   CA `3ApVr1xphYMpi9dn3rpqU4hwvpmCQDVwxET1rdCDpump`
 
 ## Last scan
-- 19:27Z: 2 coins, 1 with pairs, 0 passed the market filters, 0 researched
+- 19:41Z: 5 coins, 4 with pairs, 0 passed the market filters, 0 researched
 
 ## Coins it looked at, and why it passed
+- 19:39Z SEED (FINAL_STRETCH, $21,538 mcap, $3,363 5m vol): PASS at conviction 3, PASS — $3.4k 5m on a Final Stretch coin selling a Hyperliquid "protocol" with no GitHub and a 2-hour-old domain. LARP until proven otherwise. (V1, V3)  
+  CA `3BSaLf3yCzW85CrfMHeBYDVYxSx8fywHQRHqGVaBpump`
+- 19:36Z MINECAT (MIGRATED, $167,021 mcap, $45,934 5m vol): PASS at conviction 4, PASS: the only target I can name is the $211k high, 1.27x away, which is under my 1.5x initials. A 27-minute-old copy is also out-trading it on the 5m. Target below initials. (V1, V2)  
+  CA `B5txdTJXiNdKC9Bt8ST8wEBzH8tqBk5yLekEA5hSpump`
+- 19:34Z JOB (MIGRATED, $3,313,242 mcap, $3,964 5m vol): PASS at conviction 3, PASS — 7% off the high with $4k on the 5m and buys/sells dead even. That's chasing a coin nobody's buying (V1, V6).  
+  CA `9Pq7aLAbhDG2tTnS22cm6kuysZVcZpLFE368HWuypump`
+- 19:31Z DESSA (MIGRATED, $9,130,337 mcap, $2,407 5m vol): PASS at conviction 3, PASS: 5m volume is $2.4k with sells beating buys 2:1, sitting 5.5% under the 24h high. Clean holders on a dead tape is still a dead tape. (V1, V6)  
+  CA `npz2FhoufQ7pKqhGpaipYWacrAkidyW2yDpVWSvpump`
+- 19:30Z minecat (MIGRATED, $208,747 mcap, $49,763 5m vol): PASS at conviction 4, PASS: 12 minutes old and the newest 15m candle is already red off a +268% spike, with no base. That's my "too new / no base" blocker. SI died the same way with clean bundles. (V1, V6)  
+  CA `BK4sWbteR1EhULXACs7khW1dasdF9LEkjuS9BAV3pump`
+- 19:29Z GATO (MIGRATED, $4,671,732 mcap, $3,391 5m vol): REJECT, Dev holds 3.3% (>1%) (V13, V17)  
+  CA `HsprHxBRgiVaQdRf3TnKNuZZtaX9JUSPgMFdAkk6pump`
 - 19:26Z AgenC (DIP, $376,939 mcap, $11,304 5m vol): REJECT, Dip with fading attention is a falling knife, not a dip (5m at 0.12x the hour's pace, under 0.6x)  
   CA `DDG8rjV3TViCqKRQED2QZq4MEaE1uqXgEiosBNpapump`
 - 19:25Z DESSA (MIGRATED, $9,211,907 mcap, $2,700 5m vol): SKIP, passed the checklist, but the brain was paced or paused  
@@ -85,18 +97,6 @@ Updated 2026-10-30T19:27:23Z (paper trading, never real money)
   CA `ACv7iJ7xVfohvfXp3dt7AfAPcekL2dHsYCbJw8Vp1osr`
 - 19:20Z AgenC (MIGRATED, $438,501 mcap, $5,199 5m vol): SKIP, passed the checklist, but the brain was paced or paused  
   CA `DDG8rjV3TViCqKRQED2QZq4MEaE1uqXgEiosBNpapump`
-- 19:20Z HYPERCHAN (DIP, $1,567,350 mcap, $14,233 5m vol): REJECT, Dip with fading attention is a falling knife, not a dip (5m at 0.36x the hour's pace, under 0.6x)  
-  CA `3ApVr1xphYMpi9dn3rpqU4hwvpmCQDVwxET1rdCDpump`
-- 19:19Z DESSA (MIGRATED, $9,320,450 mcap, $3,622 5m vol): SKIP, passed the checklist, but the brain was paced or paused  
-  CA `npz2FhoufQ7pKqhGpaipYWacrAkidyW2yDpVWSvpump`
-- 19:18Z RETARD (MIGRATED, $44,556 mcap, $7,968 5m vol): SKIP, passed the checklist, but the brain was paced or paused  
-  CA `ACv7iJ7xVfohvfXp3dt7AfAPcekL2dHsYCbJw8Vp1osr`
-- 19:17Z TYGR (DIP, $257,216 mcap, $19,773 5m vol): REJECT, Dip with fading attention is a falling knife, not a dip (5m at 0.31x the hour's pace, under 0.6x)  
-  CA `5wCqCq6jbppuTocMeq6zd4UywAm64L1QNNxvEDAHpump`
-- 19:15Z HYPERCHAN (DIP, $1,651,748 mcap, $86,926 5m vol): SKIP, passed the checklist, but the brain was paced or paused  
-  CA `3ApVr1xphYMpi9dn3rpqU4hwvpmCQDVwxET1rdCDpump`
-- 19:13Z RETARD (MIGRATED, $41,743 mcap, $14,193 5m vol): SKIP, passed the checklist, but the brain was paced or paused  
-  CA `ACv7iJ7xVfohvfXp3dt7AfAPcekL2dHsYCbJw8Vp1osr`
 
 ## What its skips did next (last 48h)
 A skip "ran" if the coin reached the first target (1.5x) from the skip price before a 20% drop, "dumped" if the drop came first. Sampled every 10 min, followed 6h.
@@ -107,14 +107,14 @@ A skip "ran" if the coin reached the first target (1.5x) from the skip price bef
     CA `FDwCosavNvMiFB812ajJp3gG7eZ9c4bpgcnY6fDQpump`
   - ran: ZERO up to 1.8x  
     CA `Ddwf94wedgCuMHAkwgti8A7sL2CxvBYJStJBj2cFpump`
-- too new / sniping: blocked 29, ran 6, dumped 23, flat 0, open 0 (saving losses: keep it)
+- too new / sniping: blocked 30, ran 6, dumped 23, flat 0, open 1 (saving losses: keep it)
   - ran: ZI up to 1.7x  
     CA `5q45EK4mRhuiuBmRYoaDs4m2xweaV7gn3zsFhsvcpump`
   - ran: BEAR up to 1.59x  
     CA `6i4ebPt8dpGchB2A1ELpTz3B72dy5DkzNpFMNtUSpump`
   - ran: HyPepe up to 1.5x  
     CA `G8TdzgpUQXQAxJvarNKPXRGv2kh9CsJDK7dCC7Xupump`
-- near the high / chasing: blocked 19, ran 3, dumped 13, flat 2, open 1 (saving losses: keep it)
+- near the high / chasing: blocked 20, ran 3, dumped 13, flat 2, open 2 (saving losses: keep it)
   - ran: OREN up to 1.58x  
     CA `57vAaMsnAJXkvULtAz7fsi6gRn3bHRJFJsJV1okNpump`
   - ran: Catori up to 1.52x  
@@ -128,7 +128,11 @@ A skip "ran" if the coin reached the first target (1.5x) from the skip price bef
     CA `2orqEGSdkm5BMmhdM8TpKCpACk32a3Zaj3Lef7ceqsc6`
   - ran: Bear up to 2.66x  
     CA `Dv6gYYkTav8Pm36UwAywxNCccwSZV1VL1tjiSpDLpump`
-- falling knife (code): blocked 14, ran 0, dumped 11, flat 0, open 3 (saving losses: keep it)
+- falling knife (code): blocked 14, ran 2, dumped 12, flat 0, open 0 (saving losses: keep it)
+  - ran: TYGR up to 1.58x  
+    CA `5wCqCq6jbppuTocMeq6zd4UywAm64L1QNNxvEDAHpump`
+  - ran: AgenC up to 1.88x  
+    CA `DDG8rjV3TViCqKRQED2QZq4MEaE1uqXgEiosBNpapump`
 - dev share over 1%: blocked 13, ran 1, dumped 10, flat 1, open 1 (saving losses: keep it)
   - ran: Jason up to 1.54x  
     CA `3qjBR3LfzEAKVS6QXuR2QZ1RFUsXzATWvmjbGB5Dpump`
@@ -181,11 +185,11 @@ The $1k deadline doesn't make any of these an 8.
 ## Moving most in its scans, last 30 min (1h volume)
 - AgenC: $1,143,038 1h vol, $376,939 mcap, +64% 1h  
   CA `DDG8rjV3TViCqKRQED2QZq4MEaE1uqXgEiosBNpapump`
+- MINECAT: $855,307 1h vol, $167,021 mcap, +261% 1h  
+  CA `B5txdTJXiNdKC9Bt8ST8wEBzH8tqBk5yLekEA5hSpump`
 - TYGR: $755,645 1h vol, $257,216 mcap, +25% 1h  
   CA `5wCqCq6jbppuTocMeq6zd4UywAm64L1QNNxvEDAHpump`
 - HYPERCHAN: $469,043 1h vol, $1,567,350 mcap, +6% 1h  
   CA `3ApVr1xphYMpi9dn3rpqU4hwvpmCQDVwxET1rdCDpump`
-- CIO: $298,401 1h vol, $100,281 mcap, +132% 1h  
-  CA `5um5dQVePbF7Jn9cxofLPVXZR26cGyxfnpiF3dippump`
-- TRK: $129,339 1h vol, $32,793 mcap, -65% 1h  
-  CA `E8c9gvuE7gW4R8AVcaTCbbTG1zJGdUR9KGtS94eXBAGS`
+- BTC: $221,035 1h vol, $1,989 mcap, -98% 1h  
+  CA `ra4qZ68oPFuEhHR5hMRpUsGH5riMbRBuMyW68r3pump`
