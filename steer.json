@@ -6,13 +6,16 @@
   "stop_loss_pct": 20,
   "max_total_risk_pct": 35,
   "dip_min_attention_ratio": 0.6,
-  "probe_max_risk_pct": 5
+  "probe_max_risk_pct": 5,
+  "conviction_risk_scale": 1.5,
+  "min_entry_usd": 10
  },
  "owner_note": "Owner (Oct 30): be more aggressive, I want $1k by Nov 5. Take more trades and bigger ones on clean setups; don't under-rate them: hard lines passed, live flow and a clear target is a 7. These override your learned rules: MIGRATED buys are fine from 10% off the local high (not 20%); DIP gate is 5m vol at least 0.7x the hourly average, no 'rising' needed; DIP probation is over, size DIPs by conviction. Keep: hard lines, 20% stop, break-even at 1.3x, initials at 1.5x then a 35% runner trail, cut losers fast. Skip hack-story coins. Name the blocker in every PASS.",
  "goal": {
   "equity_usd": 1000,
   "deadline": "2026-11-05T05:03:00Z",
-  "set_at": "2026-10-29T05:03:00Z"
+  "set_at": "2026-10-29T05:03:00Z",
+  "stance": "push"
  },
  "avoid_terms": [
   "GE3qKrtuVodNTmGAUqPyEvwc1kD6kAYVLyskQWkqpump"
