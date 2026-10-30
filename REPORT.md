@@ -1,13 +1,13 @@
 # Trencher live report
 
-Updated 2026-10-30T11:52:58Z (paper trading, never real money)
+Updated 2026-10-30T12:08:11Z (paper trading, never real money)
 
 - Equity: $93.79 (-6.2% vs $100 start)
-- Goal: $1,000 by 2026-11-05 05:03Z (pressing for it): at 9.4% of it, 5.7 days left, needs +51.3% a day from here
+- Goal: $1,000 by 2026-11-05 05:03Z (pressing for it): at 9.4% of it, 5.7 days left, needs +51.4% a day from here
 - Closed trades: 13, 2 wins
 - Fees paid: $7.85 (axiom $1.10, network $5.57, pool $1.04), plus $1.62 lost to slippage
 - New trades: on
-- Brain: subscription, 638 calls and 0 plan-limit hits in 48h
+- Brain: subscription, 641 calls and 0 plan-limit hits in 48h
 
 ## Scorecard (after fees)
 - 13 closed, 2 won (15%), net $-6.21
@@ -74,9 +74,17 @@ Updated 2026-10-30T11:52:58Z (paper trading, never real money)
   CA `3ApVr1xphYMpi9dn3rpqU4hwvpmCQDVwxET1rdCDpump`
 
 ## Last scan
-- 11:51Z: 1 coins, 0 with pairs, 0 passed the market filters, 0 researched
+- 12:07Z: 3 coins, 2 with pairs, 1 passed the market filters, 1 researched
 
 ## Coins it looked at, and why it passed
+- 12:07Z HEXN (MIGRATED, $353,265 mcap, $19,677 5m vol): PASS at conviction 3, PASS: 80.5% off peak and sitting on the hourly low after a -19% 5m candle. No higher low, a thin tech LARP story, and my third try at this coin. Falling knife. (V1, V6)  
+  CA `ANVLA6eKiAq4nstD2Sg3SZhfVkSEwfnGccn12UQWpump`
+- 12:01Z NIG (FINAL_STRETCH, $20,061 mcap, $8,016 5m vol): PASS at conviction 2, PASS: 12-minute-old slur coin with no X, a crowded ticker, sellers ahead of buyers and 5m volume under $10k. No real idea and no crowd. (V1, V6, V13)  
+  CA `2xkczG594A3iYjpJdECVSZooukxu13GwRgGxVTJvpump`
+- 11:55Z HYPERCHAN (MIGRATED, $2,009,099 mcap, $10,063 5m vol): PASS at conviction 4, PASS. The nearest real target is the $2.57M high, only 1.28x away, and this would be a re-entry in the middle of the range on a coin that already flatlined on me once. Target below initials. (V1, V6)  
+  CA `3ApVr1xphYMpi9dn3rpqU4hwvpmCQDVwxET1rdCDpump`
+- 11:53Z KIM (MIGRATED, $120,758 mcap, $58,231 5m vol): REJECT, Bundles: 6 linked wallet cluster(s) hold 30.5% of supply (>20%) (V17)  
+  CA `A66kHaKDhK1wGpsPLaxBW6FThCeU4V9LSy3arGkNpump`
 - 11:51Z PEET (MIGRATED, $34,448 mcap, $22,448 5m vol): PASS at conviction 3, PASS — 90 seconds old, down 37% off the bond spike with no base, two bigger PEETs exist, and no meta. Too new to trade. (V1, V5, V6)  
   CA `4L1Sj35H2KkCSNYDhv2S5M7YTmYZe5P2sxne8Eq7pump`
 - 11:40Z CTO (MIGRATED, $313,493 mcap, $5,093 5m vol): PASS at conviction 3, PASS — 5m volume $5.1k at 0.22x hourly pace; the vamp ate the crowd. Blocker: flow below pace (V1, V6).  
@@ -89,14 +97,6 @@ Updated 2026-10-30T11:52:58Z (paper trading, never real money)
   CA `9r33aA9jgEEhaSRzFVr7xa43MMaK7bJRcpjr5RyaAUnZ`
 - 11:25Z CRIME (MIGRATED, $30,714 mcap, $4,139 5m vol): REJECT, RugCheck danger: Single holder ownership 42.89%  
   CA `BN4Z5NtntHhu6p3atEqkeAVi8Bn9Ri2QTv8FD7iupump`
-- 11:24Z GATO (MIGRATED, $4,328,224 mcap, $2,473 5m vol): REJECT, Dev holds 3.3% (>1%) (V13, V17)  
-  CA `HsprHxBRgiVaQdRf3TnKNuZZtaX9JUSPgMFdAkk6pump`
-- 11:24Z ZERODAY (no setup, $2,291 mcap, $129 5m vol): REJECT, Hack story ("zeroday" in the name or ticker): these tend to go down, owner rule  
-  CA `9ZRHMXqFTucBLuCs3TqmDEPjQCzhSuZ3bQR6dqpepump`
-- 11:23Z Foxii (MIGRATED, $369,544 mcap, $9,742 5m vol): PASS at conviction 4, PASS: 79.6% off the peak (past my 75% DIP limit), 5m volume $9.7k is under $10k, and a cute fox with no meta fit. The crowd is cashing out, not coming back (V1, V6).  
-  CA `J3ReuwckNtcJP1Zhn7wVbfXhTDNTkHxozQWWAwxWpump`
-- 11:22Z HEXN (DIP, $458,857 mcap, $10,708 5m vol): PASS at conviction 3, PASS: HEXN for the third time, and it still fails my DIP attention gate. 5m volume is 0.64x the hourly pace against a 0.7x floor, sellers are 59% of 5m trades, and the story is a tech LARP that has already beaten me twice (V1).  
-  CA `ANVLA6eKiAq4nstD2Sg3SZhfVkSEwfnGccn12UQWpump`
 
 ## What its skips did next (last 48h)
 A skip "ran" if the coin reached the first target (1.5x) from the skip price before a 20% drop, "dumped" if the drop came first. Sampled every 10 min, followed 6h.
@@ -107,7 +107,7 @@ A skip "ran" if the coin reached the first target (1.5x) from the skip price bef
     CA `FDwCosavNvMiFB812ajJp3gG7eZ9c4bpgcnY6fDQpump`
   - ran: ZERO up to 1.8x  
     CA `Ddwf94wedgCuMHAkwgti8A7sL2CxvBYJStJBj2cFpump`
-- too new / sniping: blocked 19, ran 4, dumped 14, flat 0, open 1 (saving losses: keep it)
+- too new / sniping: blocked 19, ran 4, dumped 15, flat 0, open 0 (saving losses: keep it)
   - ran: ZI up to 1.7x  
     CA `5q45EK4mRhuiuBmRYoaDs4m2xweaV7gn3zsFhsvcpump`
   - ran: BEAR up to 1.59x  
@@ -119,7 +119,7 @@ A skip "ran" if the coin reached the first target (1.5x) from the skip price bef
     CA `57vAaMsnAJXkvULtAz7fsi6gRn3bHRJFJsJV1okNpump`
   - ran: Catori up to 1.52x  
     CA `FDwCosavNvMiFB812ajJp3gG7eZ9c4bpgcnY6fDQpump`
-- RugCheck danger: blocked 11, ran 3, dumped 6, flat 1, open 1 (saving losses: keep it)
+- RugCheck danger: blocked 11, ran 4, dumped 6, flat 1, open 0 (mixed)
   - ran: HYPEINU up to 1.57x  
     CA `6eccVGkbi8cvAYBGzfDmUwFYrMj8eGZF2xyZqZLkpump`
   - ran: ETF up to 1.87x  
@@ -129,19 +129,17 @@ A skip "ran" if the coin reached the first target (1.5x) from the skip price bef
 - dev share over 1%: blocked 9, ran 1, dumped 7, flat 0, open 1 (saving losses: keep it)
   - ran: calm up to 1.53x  
     CA `4HSHFbFiKuMvZW7yGiDTab17B63MzBkkhadFKxhkpump`
-- falling knife / no higher low: blocked 7, ran 1, dumped 5, flat 1, open 0 (saving losses: keep it)
-  - ran: HEXN up to 1.51x  
-    CA `ANVLA6eKiAq4nstD2Sg3SZhfVkSEwfnGccn12UQWpump`
-- crowd leaving / fading volume: blocked 7, ran 2, dumped 2, flat 0, open 3 (mixed)
-  - ran: HEXN up to 1.51x  
-    CA `ANVLA6eKiAq4nstD2Sg3SZhfVkSEwfnGccn12UQWpump`
+- falling knife / no higher low: blocked 7, ran 0, dumped 5, flat 1, open 1 (saving losses: keep it)
+- crowd leaving / fading volume: blocked 6, ran 1, dumped 3, flat 0, open 2 (saving losses: keep it)
   - ran: STABLEPAD up to 2.13x  
     CA `AABM3NrYSwKMsEDyanuskY43EH6ySbPpdPZNG1u7pump`
-- bundles over the line: blocked 4, ran 1, dumped 3, flat 0, open 0 (saving losses: keep it)
+- bundles over the line: blocked 5, ran 1, dumped 3, flat 0, open 1 (saving losses: keep it)
   - ran: calm up to 1.53x  
     CA `4HSHFbFiKuMvZW7yGiDTab17B63MzBkkhadFKxhkpump`
+- other: blocked 4, ran 1, dumped 2, flat 0, open 1 (saving losses: keep it)
+  - ran: SI up to 1.54x  
+    CA `6zuDiAw3NviBwcLZfTztHJgtCmeNWfyFxYVoXtNYpump`
 - falling knife (code): blocked 4, ran 0, dumped 4, flat 0, open 0 (saving losses: keep it)
-- hack story (owner rule): blocked 4, ran 0, dumped 1, flat 2, open 1 (too few played out to judge)
 
 ## Rules it changed from results and skips
 - 10-30 09:47Z loosened: MIGRATED entry distance from the local high: 20% → 10% (This is the owner's override and I follow it. My data disagrees: near-high skips went 1 ran / 8 dumped (4 still open), and SI (-38%) and CATCULUS (-59%) were both near-high entries. To keep the damage small, the 10–20% band is limited to the meta's flow leader with 5m volume at or above its hourly pace. If shallow entries keep losing, I'll report that next review.)
@@ -173,9 +171,9 @@ The meta right now is troll jokes plus Hyperliquid, and almost everything else i
   CA `HftEwseBtcbgxj9j7AfgsA5ZiTEhSK9qWXZs8rzfpump`
 - CTO: $274,139 1h vol, $313,493 mcap, +0% 1h  
   CA `9hhLCxn41KZcmK1vAf7u5M6vKLHRcsVn1VmVgUrhpump`
-- DAEMON: $250,189 1h vol, $28,938 mcap, -26% 1h  
-  CA `5yappSXzEFBAqJufBqhpRJq29BVFbd5iyAkLvZgBpump`
-- HEXN: $201,231 1h vol, $458,857 mcap, +33% 1h  
+- KIM: $204,534 1h vol, $120,758 mcap, +195% 1h  
+  CA `A66kHaKDhK1wGpsPLaxBW6FThCeU4V9LSy3arGkNpump`
+- HEXN: $176,588 1h vol, $353,265 mcap, -10% 1h  
   CA `ANVLA6eKiAq4nstD2Sg3SZhfVkSEwfnGccn12UQWpump`
-- Foxii: $152,290 1h vol, $369,544 mcap, -30% 1h  
-  CA `J3ReuwckNtcJP1Zhn7wVbfXhTDNTkHxozQWWAwxWpump`
+- DAEMON: $150,566 1h vol, $20,576 mcap, -67% 1h  
+  CA `5yappSXzEFBAqJufBqhpRJq29BVFbd5iyAkLvZgBpump`
