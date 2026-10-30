@@ -107,7 +107,7 @@ def risk_table(cfg: Config) -> dict[int, float]:
 
 def risk_pct_for(conviction: int, cfg: Config) -> float:
     conviction = max(1, min(10, int(conviction)))
-    return risk_table(cfg).get(conviction, 0.0)
+    return risk_table(cfg).get(conviction, 0.0) * cfg.conviction_risk_scale
 
 
 def loss_at_stop_frac(stop_loss_pct: float, cfg: Config, venue_pct: float | None = None) -> float:
@@ -151,6 +151,9 @@ def position_size(conviction: int, stop_loss_pct: float, pf: Portfolio, cfg: Con
     if risk_usd <= fixed:
         return Sizing(0.0, 0.0, risk_pct, note + f", but ${fixed:.2f} of network fees would eat all of it")
     size = (risk_usd - fixed) / per_dollar_loss
+    if size < cfg.min_entry_usd:
+        size = cfg.min_entry_usd
+        note += f", raised to the owner's ${cfg.min_entry_usd:g} minimum entry"
 
     caps = {
         "max position": equity * cfg.max_position_pct / 100,
@@ -179,7 +182,7 @@ def probe_size(stop_loss_pct: float, first_target: float, pf: Portfolio, cfg: Co
     cap = min(equity * cfg.max_position_pct / 100, pf.cash_usd - 0.25,
               max(0.0, equity * cfg.max_total_risk_pct / 100 - open_risk_usd(pf, cfg) - fixed) / per_dollar_loss,
               max(0.0, equity * cfg.probe_max_risk_pct / 100 - fixed) / per_dollar_loss)
-    size = max(cfg.min_position_usd, 1.0)
+    size = max(cfg.min_position_usd, cfg.min_entry_usd, 1.0)
     while size <= cap:
         if fee_check(size, first_target, cfg, sol_usd, venue_pct, liquidity_usd).ok:
             risk = size * per_dollar_loss + fixed
@@ -215,7 +218,7 @@ def sizing_guide(pf: Portfolio, cfg: Config, stop_loss_pct: float | None = None,
         if r <= 0:
             continue
         s = position_size(c, stop, pf, cfg, sol_usd, venue_pct)
-        row = f"  conviction {c:>2}: risk {r:g}% of equity → ~${s.size_usd:.2f} position at a {stop:.0f}% stop"
+        row = f"  conviction {c:>2}: risk {r * cfg.conviction_risk_scale:g}% of equity → ~${s.size_usd:.2f} position at a {stop:.0f}% stop"
         if not s.size_usd:
             row += " (too small for its fees: buys the probe below instead)" if c >= 5 else " (not worth it after fees)"
         elif sol_usd:

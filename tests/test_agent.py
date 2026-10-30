@@ -480,7 +480,7 @@ def test_bridge_publishes_status_and_applies_steering(cfg, live_repo):
     assert cfg.pause_new_trades is True
     assert cfg.stop_loss_pct == 50  # clamped to its evolvable bound
     assert cfg.max_top10_pct == 25  # hard lines can't be steered
-    assert len(cfg.owner_note) == 600
+    assert len(cfg.owner_note) == 1000
     assert "note from your owner" in agent.brain._owner_note()
     pushed = subprocess.run(["git", "-C", str(origin), "show", "trencher-live:status.json"],
                             capture_output=True, text=True, check=True).stdout
@@ -1023,3 +1023,41 @@ def test_prompts_name_the_owners_exits_and_the_hack_rule(cfg, monkeypatch, tmp_p
     monkeypatch.setattr(b, "_ask", lambda prompt, *a, **k: seen.__setitem__("m", prompt) or {"summary": "ok"})
     b.summarize_meta({"scan_movers": []})
     assert "never name one as a setup" in seen["m"]
+
+
+def test_owner_aggression_dials_scale_risk_and_set_a_minimum_entry(cfg):
+    from agent.bridge import apply_steering
+    from agent.sizing import probe_size
+    pf = Portfolio(cash_usd=100.0)
+    base7 = position_size(7, 20, pf, cfg, sol_usd=SOL)
+    probe = probe_size(20, 1.5, pf, cfg, sol_usd=SOL)
+    assert probe.size_usd < 8  # the old smallest-size probe
+    apply_steering(cfg, {"settings": {"conviction_risk_scale": 1.5, "min_entry_usd": 10,
+                                      "probe_max_risk_pct": 5, "max_total_risk_pct": 35}})
+    assert cfg.conviction_risk_scale == 1.5 and cfg.min_entry_usd == 10
+    s7 = position_size(7, 20, pf, cfg, sol_usd=SOL)
+    assert s7.size_usd == pytest.approx(base7.size_usd * 1.5, rel=0.1) and 10 <= s7.size_usd <= 15
+    assert s7.risk_usd == pytest.approx(3.75, abs=0.05)  # 2.5% x 1.5 of $100
+    s5 = position_size(5, 20, pf, cfg, sol_usd=SOL)
+    assert s5.size_usd == 10 and "minimum entry" in s5.note  # 1.5% risk alone buys ~$5
+    assert probe_size(20, 1.5, pf, cfg, sol_usd=SOL).size_usd >= 10
+    assert position_size(10, 20, pf, cfg, sol_usd=SOL).size_usd == 25  # still capped at 25% of equity
+    assert position_size(4, 20, pf, cfg, sol_usd=SOL).size_usd == 0  # conviction 1-4 still passes
+    # The floor never breaks the risk budget: with it spent, nothing more is bought.
+    cfg.max_total_risk_pct = 1
+    assert position_size(5, 20, pf, cfg, sol_usd=SOL).size_usd < 10
+    apply_steering(cfg, {})  # dropped from steer.json: back to the old sizing
+    assert cfg.conviction_risk_scale == 1 and cfg.min_entry_usd == 0
+
+
+def test_goal_stance_push_lets_the_brain_size_up(cfg):
+    from agent.bridge import apply_steering, build_report
+    from agent.main import Agent
+    agent = Agent(cfg)
+    apply_steering(cfg, {"goal": {"equity_usd": 1000, "deadline": "2026-11-05T05:03:00Z", "stance": "push"}})
+    assert cfg.goal_stance == "push"
+    text = agent.brain._goal(100.0)
+    assert "press for it" in text and "never justifies a bigger size" not in text
+    assert "pressing for it" in build_report(agent)[1]
+    apply_steering(cfg, {"goal": {"equity_usd": 1000, "deadline": "2026-11-05T05:03:00Z"}})
+    assert cfg.goal_stance == "survive" and "never justifies a bigger size" in agent.brain._goal(100.0)

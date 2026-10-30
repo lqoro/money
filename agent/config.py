@@ -141,6 +141,11 @@ class Config:
     # smallest position whose fees still work, as long as losing it at the stop costs at
     # most this % of equity. Owner-steerable only.
     probe_max_risk_pct: float = 3.0
+    # Owner's aggression dials (steer.json only). conviction_risk_scale multiplies the
+    # conviction→risk table; min_entry_usd is the smallest buy for conviction 5+ (probes
+    # included), so fixed fees stop eating the wins. Caps and the risk budget still bind.
+    conviction_risk_scale: float = 1.0
+    min_entry_usd: float = 0.0
 
     # --- Skip review: what the coins it passed on did next ----------------------
     # Every PASS/REJECT is followed for skip_review_hours. A coin "ran" if it reached the
@@ -183,6 +188,7 @@ class Config:
     avoid_terms: list = field(default_factory=list)  # owner's extra hack-story words/tickers
     goal_equity_usd: float = 0.0  # Duet's stretch goal: equity target...
     goal_deadline: str = ""  # ...by this UTC time, "YYYY-MM-DDTHH:MM:SSZ"
+    goal_stance: str = "survive"  # "survive": a stretch, never a reason to size up; "push": press for it
     steer_pinned: dict = field(default_factory=dict, repr=False)  # name → value before steering
 
     # --- Notifications ------------------------------------------------------
@@ -249,7 +255,7 @@ class Config:
             need = round(100 * ((self.goal_equity_usd / equity_usd) ** (1 / days_left) - 1), 1)
         return {"target_usd": self.goal_equity_usd, "deadline": self.goal_deadline,
                 "equity_usd": round(equity_usd, 2), "progress_pct": round(100 * equity_usd / self.goal_equity_usd, 1),
-                "days_left": round(days_left, 1), "needed_daily_growth_pct": need}
+                "days_left": round(days_left, 1), "needed_daily_growth_pct": need, "stance": self.goal_stance}
 
     def strategy_view(self) -> dict:
         return {name: getattr(self, name) for name in EVOLVABLE}
@@ -291,4 +297,6 @@ STEERABLE: dict[str, tuple[float, float]] = {
     "min_target_cost_multiple": (1, 6),
     "max_round_trip_cost_pct": (10, 50),
     "probe_max_risk_pct": (0, 5),  # 0 = no probes
+    "conviction_risk_scale": (0.25, 3),
+    "min_entry_usd": (0, 50),  # 0 = off
 }
