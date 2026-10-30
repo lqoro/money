@@ -1,40 +1,35 @@
 # Trencher live report
 
-Updated 2026-10-30T02:16:33Z (paper trading, never real money)
+Updated 2026-10-30T02:31:34Z (paper trading, never real money)
 
-- Equity: $96.74 (-3.3% vs $100 start)
-- Goal: $1,000 by 2026-11-05 05:03Z (a stretch, survival first): at 9.7% of it, 6.1 days left, needs +46.5% a day from here
-- Closed trades: 10, 2 wins
-- Fees paid: $6.06 (axiom $0.68, network $4.60, pool $0.64), plus $0.99 lost to slippage
+- Equity: $95.81 (-4.2% vs $100 start)
+- Goal: $1,000 by 2026-11-05 05:03Z (a stretch, survival first): at 9.6% of it, 6.1 days left, needs +46.8% a day from here
+- Closed trades: 11, 2 wins
+- Fees paid: $6.32 (axiom $0.72, network $4.79, pool $0.67), plus $1.04 lost to slippage
 - New trades: on
-- Brain: subscription, 538 calls and 0 plan-limit hits in 48h
+- Brain: subscription, 544 calls and 0 plan-limit hits in 48h
 
 ## Scorecard (after fees)
-- 10 closed, 2 won (20%), net $-3.10
-- Avg win $+2.10, avg loss $-0.91
-- Gross $+3.50; costs $6.60 (fees $5.65 + slippage $0.95), 189% of it
-- Give-back: peaked 1.67x on average, banked 0.93x
+- 11 closed, 2 won (18%), net $-4.20
+- Avg win $+2.10, avg loss $-0.93
+- Gross $+3.03; costs $7.23 (fees $6.18 + slippage $1.05), 239% of it
+- Give-back: peaked 1.63x on average, banked 0.91x
 - Hit 1.5x+ and still closed red: 2
   - CPU peaked 1.63x, $-0.43  
     CA `5JbRYEz844bwnKbGx4dRHhrJ6zjrJ194CKdDXtzwgaXo`
   - FLOAT peaked 1.64x, $-0.76  
     CA `Bv1a7cEj5aRnJQhMw4kRQqAFesMSd5LwcDnUzq52BMmr`
 - By exit:
+  - stop loss: 4, 0 won, net $-5.85, fees+slip $2.46, peak 1.1x → 0.6x
   - time stop: 4, 0 won, net $-2.53, fees+slip $2.06, peak 1.37x → 0.81x
-  - stop loss: 3, 0 won, net $-4.75, fees+slip $1.83, peak 1.07x → 0.55x
   - trailing stop: 2, 2 won, net $+4.21, fees+slip $2.04, peak 3.32x → 1.72x
   - other: 1, 0 won, net $-0.03, fees+slip $0.67, peak 1.4x → 0.99x
-- To $1,000: $903.26 to go; at $-0.31 a trade this pace doesn't get there
+- To $1,000: $904.19 to go; at $-0.38 a trade this pace doesn't get there
 
 ## Open positions
-- HEXN (DIP): cost $4.0, 1.03x, fees $0.27  
-  CA `ANVLA6eKiAq4nstD2Sg3SZhfVkSEwfnGccn12UQWpump`
+- none
 
 ## Recent trades
-- 21:30Z BUY SI $4.06, fees $0.28  
-  CA `6zuDiAw3NviBwcLZfTztHJgtCmeNWfyFxYVoXtNYpump`
-- 21:30Z BUY HEXN $4.00, fees $0.28  
-  CA `ANVLA6eKiAq4nstD2Sg3SZhfVkSEwfnGccn12UQWpump`
 - 21:36Z SELL SI for $2.52, fees $0.26  
   CA `6zuDiAw3NviBwcLZfTztHJgtCmeNWfyFxYVoXtNYpump`
 - 21:37Z CLOSE SI -38% ($-1.54), fees $0.54  
@@ -51,10 +46,12 @@ Updated 2026-10-30T02:16:33Z (paper trading, never real money)
   CA `EFaQg27P3c3PHob2mFw4mHCUcWBHHDdatAEsXq2xpump`
 - 01:40Z BUY HEXN $4.00, fees $0.27  
   CA `ANVLA6eKiAq4nstD2Sg3SZhfVkSEwfnGccn12UQWpump`
+- 02:25Z SELL HEXN for $2.90, fees $0.26  
+  CA `ANVLA6eKiAq4nstD2Sg3SZhfVkSEwfnGccn12UQWpump`
+- 02:26Z CLOSE HEXN -27% ($-1.10), fees $0.53  
+  CA `ANVLA6eKiAq4nstD2Sg3SZhfVkSEwfnGccn12UQWpump`
 
 ## Last closes
-- Something: -15% ($-0.51), time stop: 60 min and only 0.98x  
-  CA `AZdhikmyj6ibsejv7EjML9SfNmuiMvwDrKXTEU2zpump`
 - CATCULUS: -59% ($-1.75), stop loss -30% hit (0.55x)  
   CA `AfPhjrZx3oyh38G28ZVViP4p7h53N5kTxEeg5tzhpump`
 - CATBOT: +94% ($+2.73), trailing stop: -35% from peak  
@@ -73,61 +70,63 @@ Updated 2026-10-30T02:16:33Z (paper trading, never real money)
   CA `ANVLA6eKiAq4nstD2Sg3SZhfVkSEwfnGccn12UQWpump`
 - SWAN: -1% ($-0.03), break-even stop: peaked 1.40x, back to 1.16x  
   CA `EFaQg27P3c3PHob2mFw4mHCUcWBHHDdatAEsXq2xpump`
+- HEXN: -27% ($-1.10), stop loss -13% hit (0.86x)  
+  CA `ANVLA6eKiAq4nstD2Sg3SZhfVkSEwfnGccn12UQWpump`
 
 ## Last scan
-- 02:16Z: 5 coins, 4 with pairs, 0 passed the market filters, 0 researched
+- 02:31Z: 4 coins, 3 with pairs, 0 passed the market filters, 0 researched
 
 ## Coins it looked at, and why it passed
+- 02:30Z SWAN (MIGRATED, $113,450 mcap, $40,564 5m vol): REJECT, Dev holds 1.8% (>1%) (V13, V17)  
+  CA `AkN8CWevo77MjjkfY3hQ5R7vGsPb5zumqKaUJbr4pump`
+- 02:24Z HYPERGAMY (FINAL_STRETCH, $25,224 mcap, $3,815 5m vol): REJECT, Top 10 hold 26.9% ex-pool (>25%) (V13)  
+  CA `CUyNDWGdLPXZ3Gyj1H6TBh5pACgu5nY9WNkSqfMApump`
+- 02:21Z SAFU (DIP, $31,728 mcap, $2,912 5m vol): REJECT, Dip with fading attention is a falling knife, not a dip (5m at 0.53x the hour's pace, under 0.7x)  
+  CA `AHgqStQviBDBiPra3cLxb8gQs2auRAmXT4s9v7LKpump`
+- 02:20Z SWAN (MIGRATED, $44,757 mcap, $8,752 5m vol): PASS at conviction 2, PASS on SWAN. It's a falling knife: down 79.5% from peak, -42% in the last 5 minutes, and 5m volume has dropped to 0.36x the hourly pace. The crowd that made it is selling. (V1, V6)  
+  CA `EFaQg27P3c3PHob2mFw4mHCUcWBHHDdatAEsXq2xpump`
+- 02:19Z HYPERPAD (MIGRATED, $124,001 mcap, $16,988 5m vol): PASS at conviction 3, PASS: I'd be buying at the top. It's 0% off its peak, 5m volume has dropped to 0.29x the hourly pace, and it's a "launchpad" with a 5-hour-old site and no GitHub. That's a LARP buy at the high (V1, V6).  
+  CA `31FZ9fnK5NqFrymDmNdwKZmrnVvYtpKoVdWXDeXTpump`
+- 02:18Z NNN (FINAL_STRETCH, $24,974 mcap, $6,668 5m vol): REJECT, RugCheck danger: Creator history of rugged tokens  
+  CA `7uhwGVD2JySv7panqZTTrdcwkpcYycUwZJ8he9m4pump`
+- 02:18Z HyPepe (FINAL_STRETCH, $25,870 mcap, $18,295 5m vol): PASS at conviction 3, PASS — 6th HyPepe on the board, 13 min old and 6% off its high just before the bond. Vamp chase, not the original (V1, V2, V5).  
+  CA `G8TdzgpUQXQAxJvarNKPXRGv2kh9CsJDK7dCC7Xupump`
+- 02:18Z FLUKE (MIGRATED, $98,945 mcap, $136,685 5m vol): PASS at conviction 2, PASS: FLUKE is 4 minutes old, 12% off its high, and sellers outnumber buyers 1,673 to 992. That's distribution into the launch spike, not a pullback entry (V1, V6).  
+  CA `C31uUcfLGPpQDHHieNtDkSWvp4PhNxeSs81cFQFdZVUQ`
 - 02:08Z ZERODAY (MIGRATED, $65,758 mcap, $64,584 5m vol): PASS at conviction 2, PASS: hack-story ticker, and the third Zeroday copy in two hours. The first two are down 98–99%. Owner note, V1, V13.  
   CA `2h5v9mmUU7esUdLckTA6MfY3rYPbb2Hxem9NTo3rpump`
 - 02:05Z DESSA (DIP, $7,138,923 mcap, $2,578 5m vol): REJECT, Dip with fading attention is a falling knife, not a dip (5m at 0.62x the hour's pace, under 0.7x)  
   CA `npz2FhoufQ7pKqhGpaipYWacrAkidyW2yDpVWSvpump`
-- 01:56Z SENSE (MIGRATED, $159,373 mcap, $2,263 5m vol): PASS at conviction 2, PASS: 91% off the peak, a −19% five-minute candle onto the hourly low, $2.3k on the 5m. Falling knife with no higher low. (V1, V6)  
-  CA `GydpvgKppv8a4gGQqAQsyQJxtQN4S6Ym9gKxjnN3mfun`
-- 01:56Z DEADGUY (MIGRATED, $34,024 mcap, $4,847 5m vol): PASS at conviction 3, PASS. It's 2.5 minutes old, already 21% off its bond spike, and the top 10 hold exactly 25.0%, right on the hard line. That's a sniper's table, not mine (V1, V6, V13).  
-  CA `FGGwUpqPHTxwLDdtoY37KBJ6tQxfY5N1JLTXEs2ppump`
-- 01:51Z jeff (DIP, $729,080 mcap, $3,290 5m vol): REJECT, Top 10 hold 34.0% ex-pool (>25%) (V13)  
-  CA `HAsTKXYvv65zM7J6Cu5o5PcZsiKMQYo5oz4WPjgqwP6k`
-- 01:50Z GRID (FINAL_STRETCH, $23,523 mcap, $17,444 5m vol): PASS at conviction 3, PASS. GRID is a 9-minute-old Grok-name launch sitting 16.5% under its peak, with 16 other coins on the same ticker and a 1-day-old site that doesn't show the CA. That's chasing a sniper chart in a crowded vamp field (V1, V3, V13).  
-  CA `DwGRhEKzgLb6su8sSdhXYTpvnmEmdtddmDEukXHhpump`
-- 01:41Z three (MIGRATED, $678,979 mcap, $3,100 5m vol): PASS at conviction 3, PASS: one wallet cluster holds 9.7%, and I'd be buying 12.6% off the high on $3.1k of 5m flow. That's chasing a bundled chart (V3, V6).  
-  CA `FeMbDoX7R1Psc4GEcvJdsbNbZA3bfztcyDCatJVJpump`
-- 01:40Z HEXN (DIP, $500,979 mcap, $19,248 5m vol): BUY at conviction 5, BUY, probe — HEXN printed the higher low I skipped waiting for last time ($0.000449 over the $0.00043 hourly low), clean holders, 84% buys; volume 0.89x and a LARP-smelling site keep it at a probe (V1, V6).  
-  CA `ANVLA6eKiAq4nstD2Sg3SZhfVkSEwfnGccn12UQWpump`
-- 01:36Z OREN (DIP, $76,843 mcap, $2,086 5m vol): PASS at conviction 3, PASS: the crowd left 11 hours ago. $2k on the 5m, sellers ahead of buyers, 75% off the high, and an "agentic wallet" story with no live GitHub. That's a falling knife, not a dip (V1, V6).  
-  CA `57vAaMsnAJXkvULtAz7fsi6gRn3bHRJFJsJV1okNpump`
-- 01:35Z GATO (MIGRATED, $4,474,702 mcap, $4,973 5m vol): REJECT, Dev holds 3.3% (>1%) (V13, V17)  
-  CA `HsprHxBRgiVaQdRf3TnKNuZZtaX9JUSPgMFdAkk6pump`
 
 ## What its skips did next (last 48h)
 A skip "ran" if the coin reached the first target (1.5x) from the skip price before a 20% drop, "dumped" if the drop came first. Sampled every 10 min, followed 6h.
-- near the high / chasing: blocked 11, ran 1, dumped 5, flat 0, open 5 (saving losses: keep it)
-  - ran: HYPERPAD up to 3.02x  
-    CA `31FZ9fnK5NqFrymDmNdwKZmrnVvYtpKoVdWXDeXTpump`
-- top 10 over 25%: blocked 9, ran 0, dumped 7, flat 0, open 2 (saving losses: keep it)
-- too new / sniping: blocked 8, ran 2, dumped 6, flat 0, open 0 (saving losses: keep it)
+- near the high / chasing: blocked 10, ran 0, dumped 5, flat 0, open 5 (saving losses: keep it)
+- too new / sniping: blocked 10, ran 3, dumped 7, flat 0, open 0 (saving losses: keep it)
   - ran: ZI up to 1.7x  
     CA `5q45EK4mRhuiuBmRYoaDs4m2xweaV7gn3zsFhsvcpump`
   - ran: BEAR up to 1.59x  
     CA `6i4ebPt8dpGchB2A1ELpTz3B72dy5DkzNpFMNtUSpump`
-- falling knife / no higher low: blocked 4, ran 0, dumped 2, flat 0, open 2 (too few played out to judge)
-- other: blocked 4, ran 1, dumped 2, flat 0, open 1 (saving losses: keep it)
-  - ran: SI up to 1.54x  
-    CA `6zuDiAw3NviBwcLZfTztHJgtCmeNWfyFxYVoXtNYpump`
-- RugCheck danger: blocked 4, ran 3, dumped 0, flat 0, open 1 (cost more winners than it saved: loosen it)
+  - ran: HyPepe up to 1.5x  
+    CA `G8TdzgpUQXQAxJvarNKPXRGv2kh9CsJDK7dCC7Xupump`
+- top 10 over 25%: blocked 9, ran 0, dumped 6, flat 0, open 3 (saving losses: keep it)
+- falling knife / no higher low: blocked 5, ran 0, dumped 3, flat 0, open 2 (saving losses: keep it)
+- RugCheck danger: blocked 5, ran 3, dumped 0, flat 0, open 2 (cost more winners than it saved: loosen it)
   - ran: HYPEINU up to 1.57x  
     CA `6eccVGkbi8cvAYBGzfDmUwFYrMj8eGZF2xyZqZLkpump`
   - ran: ETF up to 1.87x  
     CA `2orqEGSdkm5BMmhdM8TpKCpACk32a3Zaj3Lef7ceqsc6`
   - ran: Bear up to 2.66x  
     CA `Dv6gYYkTav8Pm36UwAywxNCccwSZV1VL1tjiSpDLpump`
-- dev share over 1%: blocked 4, ran 1, dumped 2, flat 0, open 1 (saving losses: keep it)
+- dev share over 1%: blocked 5, ran 1, dumped 2, flat 0, open 2 (saving losses: keep it)
   - ran: calm up to 1.53x  
     CA `4HSHFbFiKuMvZW7yGiDTab17B63MzBkkhadFKxhkpump`
+- other: blocked 4, ran 1, dumped 2, flat 0, open 1 (saving losses: keep it)
+  - ran: SI up to 1.54x  
+    CA `6zuDiAw3NviBwcLZfTztHJgtCmeNWfyFxYVoXtNYpump`
 - bundles over the line: blocked 3, ran 1, dumped 2, flat 0, open 0 (saving losses: keep it)
   - ran: calm up to 1.53x  
     CA `4HSHFbFiKuMvZW7yGiDTab17B63MzBkkhadFKxhkpump`
-- falling knife (code): blocked 3, ran 0, dumped 2, flat 0, open 1 (too few played out to judge)
+- falling knife (code): blocked 3, ran 0, dumped 1, flat 0, open 2 (too few played out to judge)
 - crowd leaving / fading volume: blocked 2, ran 0, dumped 1, flat 0, open 1 (too few played out to judge)
 
 ## Rules it changed from results and skips
@@ -141,7 +140,6 @@ A skip "ran" if the coin reached the first target (1.5x) from the skip price bef
 - 10-30 01:20Z dropped: All fee/friction caps and minimum position size rules (Code fee check owns this (3x round-trip target, max 20% friction); per instructions, removed from learned rules.)
 
 ## Recent lessons
-- [2026-10-28 14:15] Expected: a $1.2M dip 47% off the $2.3M peak, with $17.8k 5m volume and buys outnumbering sells 3:1, to retest $2M while the joke still had a crowd (V1 buys-on-dip, V6). What happened: it peaked at 1.09x, then went flat and got time-stopped at 60 minutes with market cap basically unchanged (-0.6%), but I still lost 15.4% because fees and slippage ate about 9% of a $3.33 position, and the rest of the gap is execution I can't see in the record. Rule: on DIP setups, enter only after the dip makes a higher low with 5m volume rising (0.86x the hourly average is fading, not holding). Never open a position so small that round-trip friction is over 3%, because a flat chart is a guaranteed loss at that size.
 - [2026-10-28 22:50] Expected: CATCULUS at $460k was the flow leader ($59k 5m volume, 913/363 buys/sells, top 10 at 3.6%), so a momentum entry near the high should either keep running or give a clean -30% exit. What happened: it peaked at 1.24x, the bundle/insiders dumped, and it gapped through the -30% stop to -59% in 42 minutes. Clean top-10 numbers don't rule out bundles spread across many small wallets (V3, V5), and $0.50 in fees on a $2.96 position was a 17% loss before the coin even moved. Rule: no MIGRATED momentum buys within ~20% of the local high unless bundle data is verified. Wait for the V1 0.618 fib or point-of-control retest instead, and skip any position so small that fees are over 5% of cost.
 - [2026-10-28 22:59] Expected: the original Cat Bot pair would retest its $845k peak, because holders were clean (top 10 at 3.3%, dev/insiders 0%) and 5m volume was organic at $12.9k (V1, V6, V13). Happened: it ran to 4.44x peak, I took initials at 2x, and the target plus a 35% trail closed the rest around 2.67x, so the clean MIGRATED dip-buy worked but the trail gave back about 40% of the peak, and fees ate roughly a third of a $2.91 position. Rule: once initials are out and the coin is past 4x, tighten the trail to about 25% from peak, and don't open positions under about $5 where fees ruin the math, because sell initials only protects the cost basis, not the runner (V11).
 - [2026-10-29 01:32] I bought CATBOT back as a $2.0M base retesting toward the $3.46M high. Price only drifted from $2.59M to $2.41M (-7%) and peaked at 1.12x, but I lost -24.3% because $0.62 in fees and slippage on a $3.42 position cost 18% before the coin moved at all. That makes the time stop correct (V1: don't marry a bag), and the real problem was the size. Rule: before any entry, including a buy-back, I estimate round-trip cost and skip the trade if it tops ~5% of size or if the target can't pay several times that cost. I also only re-enter a stopped-out coin when it reclaims the high, not when it bases in the middle of the range.
@@ -151,18 +149,19 @@ A skip "ran" if the coin reached the first target (1.5x) from the skip price bef
 - [2026-10-29 21:37] Expected: SI, a 35-minute-old migrated coin with $65k 5m volume and verified low bundles (0.65%), would retest its $256k peak, since I bought near the high under my bundle-verified exception. What happened: it never went green (0.99x peak), fell 27% from $218k to $160k in 7 minutes and closed −38% after a stop review, so clean bundle data did not protect a near-high momentum entry in a fresh post-migration dump (V1 pre/post-bond dumps, V6). This backs my "MIGRATED entries come on a pullback" rule over the exception, so next time a migrated coin within ~20% of its high waits for the 0.618 or POC retest even with clean bundles; it's one sample, so I'm not banning the exception, just watching whether it keeps losing.
 - [2026-10-29 21:37] Expected: HEXN, down 59.5% from a $1.8M peak with $19.9k of 5m volume and buyers outnumbering sellers 5:1, would turn its bounce off the hourly low into a higher low and retest the $0.0009–0.0012 band. Instead it never went green (0.99x peak) and lost the hourly low within 7 minutes. The exit came at -36% against a -20% stop, with $0.53 in fees and $0.10 in slippage on a $4 position. This confirms my existing DIP rule, not a new ban: my thesis itself said "if the bounce holds and becomes a higher low", so I bought the first bounce before the higher low printed, which is exactly the "no entry on the first red-to-green candle" mistake (V1). Next time on a DIP, wait for a confirmed higher low above the hourly low with 5m volume rising before entering, and set the stop under that higher low, so the gap risk is fixed at the entry, not with a wider stop.
 - [2026-10-30 01:19] Expected: SWAN was a MIGRATED pullback buy, 29% off its high with a higher-low base and $49k on the 5m, and I wanted to retest $166k (about 1.4x) before taking initials at 1.5x (V1, V6). What happened: it peaked at exactly 1.40x, the retest level my own thesis named, then rejected there, and the break-even stop sold it at 1.16x for -0.7%. The pullback-entry rule and the 1.3x break-even rule both did their jobs, since a 1.4x peak didn't turn into a real loss. Rule for next time: when the prior high I'm targeting sits below my initials multiple, sell part of the position at that level (sell initials or half, V11) instead of waiting for 1.5x. That changes the exit, not the pick, so it's a refinement from one trade, not a new ban.
+- [2026-10-30 02:26] I expected the higher-low DIP structure, clean holders and $19k 5m flow with 575 buys to 112 sells to carry HEXN back toward its $0.000589 swing. It only got to 1.17x, then broke the $0.000449 higher low and the -13% stop took me out at 45 min, -27% after fees on a probe. That's fine: my DIP rule put the stop under the higher low and the probe size kept the damage small, and the stop review did its job, since a broken higher low means the thesis is dead. What doesn't fit is this is my second HEXN loss, and both times the story was a thin tech LARP (V1). So next time, on a DIP where volume is under the hourly pace and the narrative is weak, I'll want a fresh volume surge before buying, not just a clean structure, because dips recover on attention, not on holder tables (Soul belief 7, V1).
 
 ## Meta right now
 Meta is market-panic humor: crash jokes are getting the volume. SWAN (Black Swan, $108k, $34k 5m, +138%/1h, 1.1h old), SAFU ($71k, $14k 5m, +93%) and the fresh "down" ($8.8k cap, $23k 5m) are rising. Older versions are fading or dead: praying -52%, stay calm $810 5m, Zeroday -98%. Smaller themes: fresh Grok-adjacent curve launches (GRID +741%, $17k 5m, 12 min old) and proven migrated coins holding (HEXN $501k, 84% buys, $19k 5m). Animal launches (Bear coins) are dead. Setups: SWAN MIGRATED (best fit), SAFU MIGRATED (needs clean holders), HEXN MIGRATED if 5m stays above $10k, GRID FINAL_STRETCH only if above $10k/5m near bond, minding the pre-bond dump (V1). PASS down: 6 min old, sniping (V5/V6). PASS $LAPTOP: political, down ~98% (V13). PASS Zeroday: dead, hack-story name (owner note).
 
 ## Moving most in its scans, last 30 min (1h volume)
+- HYPERPAD: $705,446 1h vol, $124,001 mcap, +187% 1h  
+  CA `31FZ9fnK5NqFrymDmNdwKZmrnVvYtpKoVdWXDeXTpump`
+- SWAN: $292,917 1h vol, $44,757 mcap, -74% 1h  
+  CA `EFaQg27P3c3PHob2mFw4mHCUcWBHHDdatAEsXq2xpump`
 - ZERODAY: $186,519 1h vol, $65,758 mcap, +67% 1h  
   CA `2h5v9mmUU7esUdLckTA6MfY3rYPbb2Hxem9NTo3rpump`
-- ZERODAY: $144,890 1h vol, $1,884 mcap, -99% 1h  
-  CA `7fR4hpUuHYaUTnnUeVLWke2GvMZdZtaeM8yFwu92pump`
-- GRID: $53,060 1h vol, $23,523 mcap, +741% 1h  
-  CA `DwGRhEKzgLb6su8sSdhXYTpvnmEmdtddmDEukXHhpump`
-- DESSA: $49,710 1h vol, $7,138,923 mcap, -6% 1h  
-  CA `npz2FhoufQ7pKqhGpaipYWacrAkidyW2yDpVWSvpump`
-- down: $45,961 1h vol, $4,456 mcap, +25% 1h  
-  CA `54UmjwjSGZqRdKhp65VUiQqf54BNRM7Cm9QBUUdEdown`
+- SWAN: $152,157 1h vol, $113,450 mcap, +187% 1h  
+  CA `AkN8CWevo77MjjkfY3hQ5R7vGsPb5zumqKaUJbr4pump`
+- FLUKE: $136,685 1h vol, $98,945 mcap, +157% 1h  
+  CA `C31uUcfLGPpQDHHieNtDkSWvp4PhNxeSs81cFQFdZVUQ`
