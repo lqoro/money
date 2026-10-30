@@ -1,13 +1,13 @@
 # Trencher live report
 
-Updated 2026-10-30T19:12:10Z (paper trading, never real money)
+Updated 2026-10-30T19:27:23Z (paper trading, never real money)
 
 - Equity: $93.79 (-6.2% vs $100 start)
-- Goal: $1,000 by 2026-11-05 05:03Z (pressing for it): at 9.4% of it, 5.4 days left, needs +54.9% a day from here
+- Goal: $1,000 by 2026-11-05 05:03Z (pressing for it): at 9.4% of it, 5.4 days left, needs +55% a day from here
 - Closed trades: 13, 2 wins
 - Fees paid: $7.85 (axiom $1.10, network $5.57, pool $1.04), plus $1.62 lost to slippage
 - New trades: on
-- Brain: subscription, 616 calls and 1 plan-limit hits in 48h
+- Brain: subscription, 613 calls and 1 plan-limit hits in 48h
 
 ## Scorecard (after fees)
 - 13 closed, 2 won (15%), net $-6.21
@@ -74,29 +74,29 @@ Updated 2026-10-30T19:12:10Z (paper trading, never real money)
   CA `3ApVr1xphYMpi9dn3rpqU4hwvpmCQDVwxET1rdCDpump`
 
 ## Last scan
-- 19:11Z: 9 coins, 8 with pairs, 0 passed the market filters, 0 researched
+- 19:27Z: 2 coins, 1 with pairs, 0 passed the market filters, 0 researched
 
 ## Coins it looked at, and why it passed
-- 19:07Z TYGR (MIGRATED, $268,815 mcap, $14,542 5m vol): SKIP, passed the checklist, but the brain was paced or paused  
+- 19:26Z AgenC (DIP, $376,939 mcap, $11,304 5m vol): REJECT, Dip with fading attention is a falling knife, not a dip (5m at 0.12x the hour's pace, under 0.6x)  
+  CA `DDG8rjV3TViCqKRQED2QZq4MEaE1uqXgEiosBNpapump`
+- 19:25Z DESSA (MIGRATED, $9,211,907 mcap, $2,700 5m vol): SKIP, passed the checklist, but the brain was paced or paused  
+  CA `npz2FhoufQ7pKqhGpaipYWacrAkidyW2yDpVWSvpump`
+- 19:24Z RETARD (MIGRATED, $38,523 mcap, $6,343 5m vol): SKIP, passed the checklist, but the brain was paced or paused  
+  CA `ACv7iJ7xVfohvfXp3dt7AfAPcekL2dHsYCbJw8Vp1osr`
+- 19:20Z AgenC (MIGRATED, $438,501 mcap, $5,199 5m vol): SKIP, passed the checklist, but the brain was paced or paused  
+  CA `DDG8rjV3TViCqKRQED2QZq4MEaE1uqXgEiosBNpapump`
+- 19:20Z HYPERCHAN (DIP, $1,567,350 mcap, $14,233 5m vol): REJECT, Dip with fading attention is a falling knife, not a dip (5m at 0.36x the hour's pace, under 0.6x)  
+  CA `3ApVr1xphYMpi9dn3rpqU4hwvpmCQDVwxET1rdCDpump`
+- 19:19Z DESSA (MIGRATED, $9,320,450 mcap, $3,622 5m vol): SKIP, passed the checklist, but the brain was paced or paused  
+  CA `npz2FhoufQ7pKqhGpaipYWacrAkidyW2yDpVWSvpump`
+- 19:18Z RETARD (MIGRATED, $44,556 mcap, $7,968 5m vol): SKIP, passed the checklist, but the brain was paced or paused  
+  CA `ACv7iJ7xVfohvfXp3dt7AfAPcekL2dHsYCbJw8Vp1osr`
+- 19:17Z TYGR (DIP, $257,216 mcap, $19,773 5m vol): REJECT, Dip with fading attention is a falling knife, not a dip (5m at 0.31x the hour's pace, under 0.6x)  
   CA `5wCqCq6jbppuTocMeq6zd4UywAm64L1QNNxvEDAHpump`
-- 19:02Z TYGR (MIGRATED, $273,988 mcap, $26,420 5m vol): SKIP, passed the checklist, but the brain was paced or paused  
-  CA `5wCqCq6jbppuTocMeq6zd4UywAm64L1QNNxvEDAHpump`
-- 19:01Z Goyim (FINAL_STRETCH, $27,451 mcap, $10,906 5m vol): REJECT, Top 10 hold 27.9% ex-pool (>25%) (V13)  
-  CA `7aeDqEi2PfoYpJfw2eawzLnRH9NjQJ6jWMZ9FH1Hpump`
-- 18:57Z CIO (MIGRATED, $100,281 mcap, $129,502 5m vol): PASS, PASS — brain unavailable, not trading blind.  
-  CA `5um5dQVePbF7Jn9cxofLPVXZR26cGyxfnpiF3dippump`
-- 18:52Z HYPE (MIGRATED, $63,869 mcap, $15,774 5m vol): REJECT, Dev holds 1.0% (>1%) (V13, V17)  
-  CA `Dn9ucMvQp4ut2yz46GKfC5cPH3cv3uJTnpAUjN6Zpump`
-- 18:51Z ███ (MIGRATED, $517,957 mcap, $2,817 5m vol): REJECT, Top 10 hold 25.7% ex-pool (>25%) (V13)  
-  CA `EwX2T1p2PmgTsSq2Bi6XtQYxPC5krR4P2fxPfN4Qpump`
-- 18:47Z BTC (MIGRATED, $163,724 mcap, $27,283 5m vol): REJECT, Top 10 hold 27.4% ex-pool (>25%) (V13)  
-  CA `ra4qZ68oPFuEhHR5hMRpUsGH5riMbRBuMyW68r3pump`
-- 18:46Z HACKINU (MIGRATED, $46,172 mcap, $1,192 5m vol): REJECT, Hack story ("hack" in the name or ticker): these tend to go down, owner rule  
-  CA `HD2qqwAeLkyXnboo5cSGSdGw4oHCbvNEvWsgDSgWpump`
-- 18:43Z GATO (MIGRATED, $4,757,966 mcap, $3,304 5m vol): REJECT, Dev holds 3.3% (>1%) (V13, V17)  
-  CA `HsprHxBRgiVaQdRf3TnKNuZZtaX9JUSPgMFdAkk6pump`
-- 18:41Z PODCATWALK (MIGRATED, $577,136 mcap, $12,539 5m vol): REJECT, Bundles: 10 linked wallet cluster(s) hold 49.4% of supply (>20%) (V17)  
-  CA `52MBEXmhVrZUJvMEbRpKRhehFUL8DnnV5LzYJ2G1pump`
+- 19:15Z HYPERCHAN (DIP, $1,651,748 mcap, $86,926 5m vol): SKIP, passed the checklist, but the brain was paced or paused  
+  CA `3ApVr1xphYMpi9dn3rpqU4hwvpmCQDVwxET1rdCDpump`
+- 19:13Z RETARD (MIGRATED, $41,743 mcap, $14,193 5m vol): SKIP, passed the checklist, but the brain was paced or paused  
+  CA `ACv7iJ7xVfohvfXp3dt7AfAPcekL2dHsYCbJw8Vp1osr`
 
 ## What its skips did next (last 48h)
 A skip "ran" if the coin reached the first target (1.5x) from the skip price before a 20% drop, "dumped" if the drop came first. Sampled every 10 min, followed 6h.
@@ -107,7 +107,7 @@ A skip "ran" if the coin reached the first target (1.5x) from the skip price bef
     CA `FDwCosavNvMiFB812ajJp3gG7eZ9c4bpgcnY6fDQpump`
   - ran: ZERO up to 1.8x  
     CA `Ddwf94wedgCuMHAkwgti8A7sL2CxvBYJStJBj2cFpump`
-- too new / sniping: blocked 31, ran 8, dumped 23, flat 0, open 0 (saving losses: keep it)
+- too new / sniping: blocked 29, ran 6, dumped 23, flat 0, open 0 (saving losses: keep it)
   - ran: ZI up to 1.7x  
     CA `5q45EK4mRhuiuBmRYoaDs4m2xweaV7gn3zsFhsvcpump`
   - ran: BEAR up to 1.59x  
@@ -128,21 +128,17 @@ A skip "ran" if the coin reached the first target (1.5x) from the skip price bef
     CA `2orqEGSdkm5BMmhdM8TpKCpACk32a3Zaj3Lef7ceqsc6`
   - ran: Bear up to 2.66x  
     CA `Dv6gYYkTav8Pm36UwAywxNCccwSZV1VL1tjiSpDLpump`
+- falling knife (code): blocked 14, ran 0, dumped 11, flat 0, open 3 (saving losses: keep it)
 - dev share over 1%: blocked 13, ran 1, dumped 10, flat 1, open 1 (saving losses: keep it)
   - ran: Jason up to 1.54x  
     CA `3qjBR3LfzEAKVS6QXuR2QZ1RFUsXzATWvmjbGB5Dpump`
-- falling knife / no higher low: blocked 12, ran 1, dumped 9, flat 1, open 1 (saving losses: keep it)
-  - ran: HYPERCHAN up to 1.92x  
-    CA `3ApVr1xphYMpi9dn3rpqU4hwvpmCQDVwxET1rdCDpump`
-- falling knife (code): blocked 11, ran 0, dumped 11, flat 0, open 0 (saving losses: keep it)
-- crowd leaving / fading volume: blocked 8, ran 3, dumped 5, flat 0, open 0 (mixed)
-  - ran: HYPERCHAN up to 1.92x  
-    CA `3ApVr1xphYMpi9dn3rpqU4hwvpmCQDVwxET1rdCDpump`
+- falling knife / no higher low: blocked 11, ran 0, dumped 9, flat 1, open 1 (saving losses: keep it)
+- hack story (owner rule): blocked 8, ran 0, dumped 4, flat 3, open 1 (saving losses: keep it)
+- crowd leaving / fading volume: blocked 7, ran 2, dumped 5, flat 0, open 0 (saving losses: keep it)
   - ran: STABLEPAD up to 2.13x  
     CA `AABM3NrYSwKMsEDyanuskY43EH6ySbPpdPZNG1u7pump`
   - ran: HYDESK up to 1.78x  
     CA `BzndCZ2ZrjUA21aVW7t6AWEENRAps3EmdQg9hf94pump`
-- hack story (owner rule): blocked 8, ran 0, dumped 4, flat 3, open 1 (saving losses: keep it)
 - vamp / copycat: blocked 6, ran 1, dumped 5, flat 0, open 0 (saving losses: keep it)
   - ran: Hedge up to 1.78x  
     CA `7eQagAYSYYhRqRZF5L97Ku8AK94TEpsmnrrsssUkpump`
@@ -170,16 +166,26 @@ A skip "ran" if the coin reached the first target (1.5x) from the skip price bef
 - [2026-10-30 10:53] Expected: HYPERCHAN, the clean flow leader of the HYPE meta at about $2M, would break its 4-hour range and run toward $3M. What happened: it peaked at 1.18x, never broke out, and the 45-minute time stop sold it at 1.05x on market cap, which is still a 4.9% loss after fees. The shallow-band leader rule did its job (clean holders, real flow, no dump), so it stays. What failed was the clock: my written rule is to exit if still under 1.0x at 45 min, but this one closed green on market cap, and a 1.5x move on a $2M coin rarely happens in 45 minutes (V1 talks about small new pairs, V6 about $70k–$11M runners). Next time, for MIGRATED entries above about $1M that are holding their range, give the time stop more room (about 90 min) and still exit if price closes back under the range low. One flat scratch is a sample of one, not a reason to drop the setup.
 
 ## Meta right now
-Meta: pump.fun coins under 2h old that already bonded, mostly animal tickers (TYGR, Space Inu, Podcatwalk), with a space sub-theme (two SPACEINU contracts; 2aZp is the original, 5izH looks like the vamp, V1/V13). Older leaders are cooling: Space Inu 5m vol is 0.42x its hourly pace, Podcatwalk 0.18x. AI-agent coins are dead (hyper, HYPER, HYPURAGENT, FLYWHEEL -90%+ or zero volume). $LAPTOP is a politician's coin, avoid (V13). Research: 1) TYGR MIGRATED ($188k cap, $177k 5m vol, about 2x hourly pace, 60% buys), only on a 10%+ pullback from the local high, no buying the vertical candle (V1). 2) FSD MIGRATED ($41k cap, $11k 5m vol, Elon/Tesla idea), needs volume to hold, now 0.36x hourly pace. 3) Hedge FINAL_STRETCH ($25k cap, $21k 5m vol), looks like a farm until bundle checks clear it. PASS Space Inu 2aZp (0.42x volume misses the 0.7x bar), PASS Podcatwalk (0.18x volume), PASS Space Inu 5izH (vamp). To the owner: clean setups that clear the hard lines get rated 7-9 and pressed, but the $1k deadline doesn't raise a score or move a stop; a setup has to earn its rating.
+The meta is fresh pump.fun launches that bond inside two hours and burn hot for about an hour. There are three themes in the movers. First, animals: TYGR is still pulling $19.8k on the 5-minute at $257k, while Space Inu is down 99% and done. Second, CZ/Binance jokes riding the Binance-hack headlines: CIO "CZ Its Over" is 12 minutes old with $129k on the 5-minute at a $100k cap. Third, AI/anime characters: AgenC at $438k and HYPERCHAN at $1.57M, but the plain AI-agent and FSD/Elon coins are fading or dead.
+
+Almost everything is cooling. TYGR's 5-minute volume is only about 0.31x its hourly pace, which contradicts the crawler's "2x". HYPERCHAN is at about 0.36x, and AgenC fell from $1.3M in the hour to $5k on the 5-minute, a crowd walking out. None of them passes the 0.7x DIP gate right now.
+
+What I'd look at:
+- **TYGR, MIGRATED**: only on a 10%+ pullback where 5-minute volume climbs back toward its hourly pace (V1, V6). Right now the blocker is fading volume.
+- **CIO, MIGRATED**: research it, but as a vertical candle on a coin under 15 minutes old that sits right next to the hack story, which is close to my owner's skip rule. It needs clean bundle and holder checks and a first pullback that holds, or it's a pass.
+
+PASS Goyim. The blocker is a slur ticker: it won't land with a wide audience, so the idea fails (V6). PASS $LAPTOP. The blocker is that a politician pushed it (V13).
+
+The $1k deadline doesn't make any of these an 8.
 
 ## Moving most in its scans, last 30 min (1h volume)
-- TYGR: $986,792 1h vol, $268,815 mcap, -11% 1h  
+- AgenC: $1,143,038 1h vol, $376,939 mcap, +64% 1h  
+  CA `DDG8rjV3TViCqKRQED2QZq4MEaE1uqXgEiosBNpapump`
+- TYGR: $755,645 1h vol, $257,216 mcap, +25% 1h  
   CA `5wCqCq6jbppuTocMeq6zd4UywAm64L1QNNxvEDAHpump`
-- SPACEINU: $565,898 1h vol, $1,933 mcap, -100% 1h  
-  CA `2aZp4sP2bPdMUVkTVeRmzBvJvCaeTpgYXNBXNuEopump`
+- HYPERCHAN: $469,043 1h vol, $1,567,350 mcap, +6% 1h  
+  CA `3ApVr1xphYMpi9dn3rpqU4hwvpmCQDVwxET1rdCDpump`
 - CIO: $298,401 1h vol, $100,281 mcap, +132% 1h  
   CA `5um5dQVePbF7Jn9cxofLPVXZR26cGyxfnpiF3dippump`
-- HYPE: $260,508 1h vol, $63,869 mcap, +12% 1h  
-  CA `Dn9ucMvQp4ut2yz46GKfC5cPH3cv3uJTnpAUjN6Zpump`
-- BTC: $141,945 1h vol, $163,724 mcap, +308% 1h  
-  CA `ra4qZ68oPFuEhHR5hMRpUsGH5riMbRBuMyW68r3pump`
+- TRK: $129,339 1h vol, $32,793 mcap, -65% 1h  
+  CA `E8c9gvuE7gW4R8AVcaTCbbTG1zJGdUR9KGtS94eXBAGS`
