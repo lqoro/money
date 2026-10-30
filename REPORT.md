@@ -1,13 +1,13 @@
 # Trencher live report
 
-Updated 2026-10-30T02:31:34Z (paper trading, never real money)
+Updated 2026-10-30T02:46:36Z (paper trading, never real money)
 
 - Equity: $95.81 (-4.2% vs $100 start)
-- Goal: $1,000 by 2026-11-05 05:03Z (a stretch, survival first): at 9.6% of it, 6.1 days left, needs +46.8% a day from here
+- Goal: $1,000 by 2026-11-05 05:03Z (a stretch, survival first): at 9.6% of it, 6.1 days left, needs +46.9% a day from here
 - Closed trades: 11, 2 wins
 - Fees paid: $6.32 (axiom $0.72, network $4.79, pool $0.67), plus $1.04 lost to slippage
 - New trades: on
-- Brain: subscription, 544 calls and 0 plan-limit hits in 48h
+- Brain: subscription, 545 calls and 0 plan-limit hits in 48h
 
 ## Scorecard (after fees)
 - 11 closed, 2 won (18%), net $-4.20
@@ -74,9 +74,15 @@ Updated 2026-10-30T02:31:34Z (paper trading, never real money)
   CA `ANVLA6eKiAq4nstD2Sg3SZhfVkSEwfnGccn12UQWpump`
 
 ## Last scan
-- 02:31Z: 4 coins, 3 with pairs, 0 passed the market filters, 0 researched
+- 02:45Z: 11 coins, 11 with pairs, 0 passed the market filters, 0 researched
 
 ## Coins it looked at, and why it passed
+- 02:41Z HEXN (MIGRATED, $392,535 mcap, $16,767 5m vol): PASS at conviction 2, PASS: HEXN is 78% off its peak, past my 75% dip limit, and it's sitting on the hourly low with no higher low. It's the same thin LARP that has already stopped me out twice. Falling knife. (V1, V6)  
+  CA `ANVLA6eKiAq4nstD2Sg3SZhfVkSEwfnGccn12UQWpump`
+- 02:36Z Swansem (FINAL_STRETCH, $30,873 mcap, $2,385 5m vol): REJECT, Top 10 hold 27.7% ex-pool (>25%) (V13)  
+  CA `6NqCAw6W9KZYMKncMCm5G1zUBBeqbiQNuuNjExb2pump`
+- 02:36Z ZEUS (MIGRATED, $55,434 mcap, $8,170 5m vol): REJECT, RugCheck danger: Large Amount of LP Unlocked 100.00%  
+  CA `4TKTDYP4eJS5aYsVdShYGUS75MVwMi8bdz8uybYypump`
 - 02:30Z SWAN (MIGRATED, $113,450 mcap, $40,564 5m vol): REJECT, Dev holds 1.8% (>1%) (V13, V17)  
   CA `AkN8CWevo77MjjkfY3hQ5R7vGsPb5zumqKaUJbr4pump`
 - 02:24Z HYPERGAMY (FINAL_STRETCH, $25,224 mcap, $3,815 5m vol): REJECT, Top 10 hold 26.9% ex-pool (>25%) (V13)  
@@ -91,16 +97,11 @@ Updated 2026-10-30T02:31:34Z (paper trading, never real money)
   CA `7uhwGVD2JySv7panqZTTrdcwkpcYycUwZJ8he9m4pump`
 - 02:18Z HyPepe (FINAL_STRETCH, $25,870 mcap, $18,295 5m vol): PASS at conviction 3, PASS — 6th HyPepe on the board, 13 min old and 6% off its high just before the bond. Vamp chase, not the original (V1, V2, V5).  
   CA `G8TdzgpUQXQAxJvarNKPXRGv2kh9CsJDK7dCC7Xupump`
-- 02:18Z FLUKE (MIGRATED, $98,945 mcap, $136,685 5m vol): PASS at conviction 2, PASS: FLUKE is 4 minutes old, 12% off its high, and sellers outnumber buyers 1,673 to 992. That's distribution into the launch spike, not a pullback entry (V1, V6).  
-  CA `C31uUcfLGPpQDHHieNtDkSWvp4PhNxeSs81cFQFdZVUQ`
-- 02:08Z ZERODAY (MIGRATED, $65,758 mcap, $64,584 5m vol): PASS at conviction 2, PASS: hack-story ticker, and the third Zeroday copy in two hours. The first two are down 98–99%. Owner note, V1, V13.  
-  CA `2h5v9mmUU7esUdLckTA6MfY3rYPbb2Hxem9NTo3rpump`
-- 02:05Z DESSA (DIP, $7,138,923 mcap, $2,578 5m vol): REJECT, Dip with fading attention is a falling knife, not a dip (5m at 0.62x the hour's pace, under 0.7x)  
-  CA `npz2FhoufQ7pKqhGpaipYWacrAkidyW2yDpVWSvpump`
 
 ## What its skips did next (last 48h)
 A skip "ran" if the coin reached the first target (1.5x) from the skip price before a 20% drop, "dumped" if the drop came first. Sampled every 10 min, followed 6h.
 - near the high / chasing: blocked 10, ran 0, dumped 5, flat 0, open 5 (saving losses: keep it)
+- top 10 over 25%: blocked 10, ran 0, dumped 6, flat 0, open 4 (saving losses: keep it)
 - too new / sniping: blocked 10, ran 3, dumped 7, flat 0, open 0 (saving losses: keep it)
   - ran: ZI up to 1.7x  
     CA `5q45EK4mRhuiuBmRYoaDs4m2xweaV7gn3zsFhsvcpump`
@@ -108,21 +109,22 @@ A skip "ran" if the coin reached the first target (1.5x) from the skip price bef
     CA `6i4ebPt8dpGchB2A1ELpTz3B72dy5DkzNpFMNtUSpump`
   - ran: HyPepe up to 1.5x  
     CA `G8TdzgpUQXQAxJvarNKPXRGv2kh9CsJDK7dCC7Xupump`
-- top 10 over 25%: blocked 9, ran 0, dumped 6, flat 0, open 3 (saving losses: keep it)
-- falling knife / no higher low: blocked 5, ran 0, dumped 3, flat 0, open 2 (saving losses: keep it)
-- RugCheck danger: blocked 5, ran 3, dumped 0, flat 0, open 2 (cost more winners than it saved: loosen it)
+- RugCheck danger: blocked 6, ran 3, dumped 1, flat 0, open 2 (cost more winners than it saved: loosen it)
   - ran: HYPEINU up to 1.57x  
     CA `6eccVGkbi8cvAYBGzfDmUwFYrMj8eGZF2xyZqZLkpump`
   - ran: ETF up to 1.87x  
     CA `2orqEGSdkm5BMmhdM8TpKCpACk32a3Zaj3Lef7ceqsc6`
   - ran: Bear up to 2.66x  
     CA `Dv6gYYkTav8Pm36UwAywxNCccwSZV1VL1tjiSpDLpump`
-- dev share over 1%: blocked 5, ran 1, dumped 2, flat 0, open 2 (saving losses: keep it)
+- falling knife / no higher low: blocked 5, ran 0, dumped 3, flat 0, open 2 (saving losses: keep it)
+- dev share over 1%: blocked 5, ran 1, dumped 3, flat 0, open 1 (saving losses: keep it)
   - ran: calm up to 1.53x  
     CA `4HSHFbFiKuMvZW7yGiDTab17B63MzBkkhadFKxhkpump`
-- other: blocked 4, ran 1, dumped 2, flat 0, open 1 (saving losses: keep it)
+- other: blocked 4, ran 2, dumped 2, flat 0, open 0 (mixed)
   - ran: SI up to 1.54x  
     CA `6zuDiAw3NviBwcLZfTztHJgtCmeNWfyFxYVoXtNYpump`
+  - ran: ZERODAY up to 2.25x  
+    CA `2h5v9mmUU7esUdLckTA6MfY3rYPbb2Hxem9NTo3rpump`
 - bundles over the line: blocked 3, ran 1, dumped 2, flat 0, open 0 (saving losses: keep it)
   - ran: calm up to 1.53x  
     CA `4HSHFbFiKuMvZW7yGiDTab17B63MzBkkhadFKxhkpump`
@@ -159,8 +161,8 @@ Meta is market-panic humor: crash jokes are getting the volume. SWAN (Black Swan
   CA `31FZ9fnK5NqFrymDmNdwKZmrnVvYtpKoVdWXDeXTpump`
 - SWAN: $292,917 1h vol, $44,757 mcap, -74% 1h  
   CA `EFaQg27P3c3PHob2mFw4mHCUcWBHHDdatAEsXq2xpump`
-- ZERODAY: $186,519 1h vol, $65,758 mcap, +67% 1h  
-  CA `2h5v9mmUU7esUdLckTA6MfY3rYPbb2Hxem9NTo3rpump`
+- HEXN: $259,022 1h vol, $392,535 mcap, -18% 1h  
+  CA `ANVLA6eKiAq4nstD2Sg3SZhfVkSEwfnGccn12UQWpump`
 - SWAN: $152,157 1h vol, $113,450 mcap, +187% 1h  
   CA `AkN8CWevo77MjjkfY3hQ5R7vGsPb5zumqKaUJbr4pump`
 - FLUKE: $136,685 1h vol, $98,945 mcap, +157% 1h  
