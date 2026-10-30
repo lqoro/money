@@ -99,6 +99,9 @@ class Config:
     fade_confirm_sec: float = 60.0  # the fade has to last this long, so one quiet tick doesn't sell
     fade_sell_fraction: float = 0.5
     fade_min_partial_usd: float = 4.0  # a smaller piece sells it all: one more tx (~$0.20) would be >5% of it
+    # Once initials are out the runner is a free ride: only the trailing stop sells it, so one
+    # big win can pay for many small losses. True also trims it when volume fades (old behaviour).
+    fade_trims_runner: bool = False
 
     # --- Narrative / attention trading -------------------------------------
     dip_min_drawdown_pct: float = 40.0  # a normal pullback is ~40-50%

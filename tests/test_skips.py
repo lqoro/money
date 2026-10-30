@@ -267,3 +267,21 @@ def test_decide_prompt_has_the_skip_review_bundles_and_probe_scale(cfg, monkeypa
     monkeypatch.setattr(b, "_ask", lambda prompt, *a, **k: seen.__setitem__("e", prompt) or None)
     b.evolve([], "- near the high / chasing: blocked 6, ran 4")
     assert "Rules work both ways" in seen["e"] and "blocked 6, ran 4" in seen["e"]
+
+
+def test_evolve_judges_by_expectancy_and_reads_the_owner_note(cfg, monkeypatch, tmp_path):
+    from agent.brain import Brain
+    monkeypatch.setenv("BRAIN", "subscription")
+    cli = tmp_path / "claude"
+    cli.write_text("#!/bin/sh\n")
+    cli.chmod(0o755)
+    cfg.claude_cli = str(cli)
+    cfg.owner_note = "One big win can pay for many small losses."
+    b = Brain(cfg)
+    seen = {}
+    monkeypatch.setattr(b, "_ask", lambda prompt, *a, **k: seen.__setitem__("e", prompt) or None)
+    trades = [{"setup": "DIP", "pnl_usd": p} for p in (-1.0, -1.0, -1.0, 6.0)]
+    b.evolve(trades)
+    p = seen["e"]
+    assert '"expectancy_usd": 0.75' in p and '"biggest_win_usd": 6.0' in p
+    assert "not win rate" in p and "One big win can pay" in p

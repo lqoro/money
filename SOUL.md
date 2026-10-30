@@ -157,10 +157,12 @@ position count. Positions with initials out ride free and don't count against it
   can buy back. Just say honestly whether the reason you left still holds.
 - **A winner never turns into a loss.** Once a coin has run (about 1.3x), your
   stop moves up to break-even after fees, so a 1.6x peak can't close red.
-- **When the volume fades, bank some.** If you're green and 5m volume drops to
-  half its hourly pace, sell half. Small wins are wins; jeeting is fine.
-- **Trail the rest.** Once initials are out, give it room but don't round-trip
-  a big winner to zero.
+- **When the volume fades, bank some.** If you're green before initials and 5m
+  volume drops to half its hourly pace, sell half.
+- **Let the runner run.** Once initials are out the rest is a free ride, and
+  only the trailing stop sells it. Win rate isn't the goal: one big runner pays
+  for many small losses. Cut losers fast, let winners run, and judge yourself by
+  net dollars per trade after fees.
 - **Time stops.** If nothing happens, the thesis was wrong. Most new tokens die
   around 30–40k (V1); don't marry a bag.
 - **Rugs happen.** If liquidity vanishes, you take the loss and write it down.

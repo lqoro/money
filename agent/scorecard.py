@@ -95,7 +95,8 @@ def lines(card: dict) -> list[str]:
     if not card["trades"]:
         return out + ["- no closed trades yet"]
     out.append(f"- {card['trades']} closed, {card['wins']} won ({card['win_rate_pct']}%), net {_usd(card['net_usd'])}")
-    out.append(f"- Avg win {_usd(card['avg_win_usd'])}, avg loss {_usd(card['avg_loss_usd'])}")
+    out.append(f"- Per trade (expectancy) {_usd(card['avg_net_usd'])}; avg win {_usd(card['avg_win_usd'])}, "
+               f"avg loss {_usd(card['avg_loss_usd'])}")
     costs = card["fees_usd"] + card["slippage_usd"]
     share = (f", {card['costs_pct_of_gross']}% of it" if card["costs_pct_of_gross"] is not None
              else ", on top of a gross loss")
