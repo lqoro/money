@@ -1,9 +1,9 @@
 # Trencher live report
 
-Updated 2026-10-30T05:48:46Z (paper trading, never real money)
+Updated 2026-10-30T06:03:47Z (paper trading, never real money)
 
 - Equity: $95.81 (-4.2% vs $100 start)
-- Goal: $1,000 by 2026-11-05 05:03Z (a stretch, survival first): at 9.6% of it, 6 days left, needs +48.1% a day from here
+- Goal: $1,000 by 2026-11-05 05:03Z (a stretch, survival first): at 9.6% of it, 6 days left, needs +48.2% a day from here
 - Closed trades: 11, 2 wins
 - Fees paid: $6.32 (axiom $0.72, network $4.79, pool $0.67), plus $1.04 lost to slippage
 - New trades: on
@@ -74,7 +74,7 @@ Updated 2026-10-30T05:48:46Z (paper trading, never real money)
   CA `ANVLA6eKiAq4nstD2Sg3SZhfVkSEwfnGccn12UQWpump`
 
 ## Last scan
-- 05:47Z: 5 coins, 4 with pairs, 2 passed the market filters, 2 researched
+- 06:03Z: 3 coins, 2 with pairs, 0 passed the market filters, 0 researched
 
 ## Coins it looked at, and why it passed
 - 05:48Z Catori (FINAL_STRETCH, $22,268 mcap, $2,872 5m vol): REJECT, Top 10 hold 26.7% ex-pool (>25%) (V13)  
@@ -103,17 +103,19 @@ A skip "ran" if the coin reached the first target (1.5x) from the skip price bef
 - top 10 over 25%: blocked 14, ran 1, dumped 11, flat 0, open 2 (saving losses: keep it)
   - ran: HYPERGAMY up to 2.05x  
     CA `CUyNDWGdLPXZ3Gyj1H6TBh5pACgu5nY9WNkSqfMApump`
-- too new / sniping: blocked 12, ran 3, dumped 8, flat 0, open 1 (saving losses: keep it)
+- too new / sniping: blocked 12, ran 3, dumped 9, flat 0, open 0 (saving losses: keep it)
   - ran: ZI up to 1.7x  
     CA `5q45EK4mRhuiuBmRYoaDs4m2xweaV7gn3zsFhsvcpump`
   - ran: BEAR up to 1.59x  
     CA `6i4ebPt8dpGchB2A1ELpTz3B72dy5DkzNpFMNtUSpump`
   - ran: HyPepe up to 1.5x  
     CA `G8TdzgpUQXQAxJvarNKPXRGv2kh9CsJDK7dCC7Xupump`
-- near the high / chasing: blocked 11, ran 1, dumped 7, flat 0, open 3 (saving losses: keep it)
+- near the high / chasing: blocked 11, ran 2, dumped 7, flat 0, open 2 (saving losses: keep it)
   - ran: OREN up to 1.58x  
     CA `57vAaMsnAJXkvULtAz7fsi6gRn3bHRJFJsJV1okNpump`
-- RugCheck danger: blocked 7, ran 3, dumped 2, flat 1, open 1 (cost more winners than it saved: loosen it)
+  - ran: HYPERCHAN up to 1.54x  
+    CA `3ApVr1xphYMpi9dn3rpqU4hwvpmCQDVwxET1rdCDpump`
+- RugCheck danger: blocked 7, ran 3, dumped 3, flat 1, open 0 (mixed)
   - ran: HYPEINU up to 1.57x  
     CA `6eccVGkbi8cvAYBGzfDmUwFYrMj8eGZF2xyZqZLkpump`
   - ran: ETF up to 1.87x  
@@ -131,7 +133,9 @@ A skip "ran" if the coin reached the first target (1.5x) from the skip price bef
   - ran: SI up to 1.54x  
     CA `6zuDiAw3NviBwcLZfTztHJgtCmeNWfyFxYVoXtNYpump`
 - falling knife (code): blocked 4, ran 0, dumped 3, flat 0, open 1 (saving losses: keep it)
-- crowd leaving / fading volume: blocked 3, ran 0, dumped 1, flat 0, open 2 (too few played out to judge)
+- crowd leaving / fading volume: blocked 3, ran 1, dumped 1, flat 0, open 1 (too few played out to judge)
+  - ran: HYPERCHAN up to 1.54x  
+    CA `3ApVr1xphYMpi9dn3rpqU4hwvpmCQDVwxET1rdCDpump`
 
 ## Rules it changed from results and skips
 - 10-30 01:20Z added: If the target prior high is below the 1.5x initials level, take initials/half at that level (SWAN peaked at exactly 1.40x, the retest level named in the thesis, rejected, and the break-even stop closed it at -0.7%. One trade, so this changes the exit, not the pick.)
@@ -159,13 +163,13 @@ A skip "ran" if the coin reached the first target (1.5x) from the skip price bef
 The meta is the Hyperliquid/"liquid" launchpad wave and cats. Both are running as sub-1-hour pump.fun launches. On the liquid side: LIQUID ($86k mcap, $12.6k 5m, 64% buys), PUMPLIQUID ($33.9k 5m, 6 min old), HLP ($6.8k 5m, +321%) and PURR ($5.2k 5m, 75% buys). On the cat side: Catori (+663%, $12.3k 5m) and PURR. GATO and Blind Kitten are fading or dead. The super-tech theme is finished: both SIC tickers are down 88-99%, so that's a LARP until I see a GitHub (V1). Robbery, laptop and political plays are dead (V13). TraderTraitor is named after the hacker group, so it's a hack-story coin and blocked by the owner rule. Setups to research: LIQUID as a MIGRATED setup with real flow; Catori and The Last 1000x as FINAL_STRETCH candidates with about $12-13k on the 5m but only 56% buys, so watch for the pre-bond dump (V1). Passing on PUMPLIQUID (too new for my data speed, V5) and HLP (5m under $10k). The crawler's summary names HYPERCHAN, BITCAT, HEXN and FLUKE, but none of them are in this scan, so I treat them as stale.
 
 ## Moving most in its scans, last 30 min (1h volume)
-- HYPERCHAN: $444,887 1h vol, $1,607,385 mcap, +23% 1h  
-  CA `3ApVr1xphYMpi9dn3rpqU4hwvpmCQDVwxET1rdCDpump`
-- Foxii: $170,603 1h vol, $506,190 mcap, +2% 1h  
-  CA `J3ReuwckNtcJP1Zhn7wVbfXhTDNTkHxozQWWAwxWpump`
-- HEXN: $159,660 1h vol, $468,852 mcap, +1% 1h  
-  CA `ANVLA6eKiAq4nstD2Sg3SZhfVkSEwfnGccn12UQWpump`
-- BITCAT: $151,187 1h vol, $145,033 mcap, -44% 1h  
-  CA `9hzqsjCkxq3dQkfSkpRM1zk3NmLofHVBcwzKdvj3pump`
+- TraderTraitor: $244,711 1h vol, $1,899 mcap, -98% 1h  
+  CA `BYKvWQKbLywn8icfQB4EbXLAWpxg3D65MATi5ikjpump`
 - LIQUID: $149,132 1h vol, $66,677 mcap, -44% 1h  
   CA `GqaP7NBtPAFAUq45UAp426bdEtfz5nz2ffMn9MiHpump`
+- Catori: $93,526 1h vol, $22,268 mcap, +103% 1h  
+  CA `FDwCosavNvMiFB812ajJp3gG7eZ9c4bpgcnY6fDQpump`
+- PUMPLIQUID: $93,288 1h vol, $8,915 mcap, +208% 1h  
+  CA `3Gd5uuTCa948qkJhYgiQthPYL5DeMMXLACqyWwiKperp`
+- OPTIMISM: $92,108 1h vol, $3,182 mcap, -41% 1h  
+  CA `6kgDiabQYZd7kJzhCXANGJttfugqwBLnFZVDBTsDpump`
