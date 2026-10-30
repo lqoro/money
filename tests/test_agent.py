@@ -953,3 +953,73 @@ def test_report_carries_the_scorecard(cfg):
     assert status["scorecard"]["trades"] == 3 and "goal" not in status["scorecard"]  # no goal set
     assert "## Scorecard (after fees)" in rep and "- 3 closed, 1 won (33%), net $+0.55" in rep
     assert rep.index("## Scorecard") < rep.index("## Open positions")
+
+
+# --- Owner rules in code: hack stories, and the owner's exits -----------------
+
+def test_hack_story_coins_are_rejected_before_research(cfg, monkeypatch):
+    """ZERODAY and hackonlaptop led on volume Oct 29; the owner's rule is they go down."""
+    from agent.main import Agent
+    agent = Agent(cfg)
+    pairs = {
+        "Zero111": snap(address="Zero111", symbol="ZERODAY", name="Zero Day", vol_1h=900_000),
+        "Lap111": snap(address="Lap111", symbol="LAPTOP", name="hackonlaptop", vol_1h=800_000),
+        "HotCoin111": snap(address="HotCoin111", symbol="HOT", vol_1h=500_000),
+    }
+    _scan_with(agent, monkeypatch, pairs, {"action": "PASS", "verdict": "PASS — meh", "conviction": 3,
+                                           "exit_plan": {}})
+    looks = {l["symbol"]: l for l in agent.recent_looks}
+    assert looks["ZERODAY"]["outcome"] == "REJECT" and "Hack story" in looks["ZERODAY"]["reason"]
+    assert looks["LAPTOP"]["outcome"] == "REJECT"
+    assert agent.last_scan["passed_market_filters"] == 1  # only HOT reached the checklist
+    assert [m["symbol"] for m in agent.meta["scan_movers"]] == ["HOT"]  # the meta summary never sees them
+    assert agent.skips["Zero111"]["gates"] == ["hack story (owner rule)"]
+
+
+def test_hack_story_matching_and_owner_terms(cfg):
+    from agent.bridge import apply_steering
+    from agent.checklist import hack_story
+    assert hack_story({"name": "Hack Inu", "symbol": "HINU"}, cfg) == "hack"
+    assert hack_story({"name": "Wallet Drainer", "symbol": "DRAIN"}, cfg)
+    assert hack_story({"name": "Hyperliquid Pepe", "symbol": "HyPepe"}, cfg) is None
+    assert hack_story({"name": "cop", "symbol": "cop"}, cfg) is None
+    apply_steering(cfg, {"avoid_terms": ["cop", "  "]})
+    assert cfg.avoid_terms == ["cop"] and hack_story({"name": "cop", "symbol": "cop"}, cfg) == "cop"
+    assert hack_story({"name": "Copper", "symbol": "COPR"}, cfg) is None  # whole words only
+    ca = "GE3qKrtuVodNTmGAUqPyEvwc1kD6kAYVLyskQWkqpump"
+    apply_steering(cfg, {"avoid_terms": [ca]})
+    assert hack_story({"name": "cop", "symbol": "cop", "address": ca}, cfg) == "cop"
+    assert hack_story({"name": "cop", "symbol": "cop", "address": "Other111"}, cfg) is None
+    c = run_checklist(snap(name="Polymarket Hack", symbol="PMHACK"), report(), [], cfg, SOL)
+    assert not c.passed and "Hack story" in c.fails[0]
+    apply_steering(cfg, {})
+    assert cfg.avoid_terms == []
+
+
+def test_owner_exits_beat_the_brains_exit_plan(cfg):
+    from agent.bridge import apply_steering
+    apply_steering(cfg, {"settings": {"trailing_stop_pct": 35, "stop_loss_pct": 20, "take_initials_multiple": 1.5}})
+    plan = sanitize_exit_plan({"trailing_stop_pct": 20, "stop_loss_pct": 25, "take_initials_multiple": 2,
+                               "time_stop_minutes": 60}, cfg)
+    assert (plan["trailing_stop_pct"], plan["stop_loss_pct"], plan["take_initials_multiple"]) == (35, 20, 1.5)
+    assert plan["time_stop_minutes"] == 60  # not owner-set: still the brain's call
+    apply_steering(cfg, {"settings": {}})
+    assert sanitize_exit_plan({"trailing_stop_pct": 20}, cfg)["trailing_stop_pct"] == 20
+
+
+def test_prompts_name_the_owners_exits_and_the_hack_rule(cfg, monkeypatch, tmp_path):
+    from agent.bridge import apply_steering
+    monkeypatch.setenv("BRAIN", "subscription")
+    cli = tmp_path / "claude"
+    cli.write_text("#!/bin/sh\n")
+    cli.chmod(0o755)
+    cfg.claude_cli = str(cli)
+    apply_steering(cfg, {"settings": {"trailing_stop_pct": 35}})
+    b = Brain(cfg)
+    seen = {}
+    monkeypatch.setattr(b, "_ask", lambda prompt, *a, **k: seen.__setitem__("e", prompt) or None)
+    b.evolve([])
+    assert "trail 35% from the peak after initials" in seen["e"] and "Drop any learned rule" in seen["e"]
+    monkeypatch.setattr(b, "_ask", lambda prompt, *a, **k: seen.__setitem__("m", prompt) or {"summary": "ok"})
+    b.summarize_meta({"scan_movers": []})
+    assert "never name one as a setup" in seen["m"]

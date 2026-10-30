@@ -15,7 +15,7 @@ from . import data, journal, radar, skips
 from .api import start_api
 from .brain import Brain
 from .bridge import DuetBridge
-from .checklist import holder_stats, market_prefilter, run_checklist
+from .checklist import classify_setup, hack_story, holder_stats, market_prefilter, run_checklist
 from .config import Config
 from .evolve import evolve
 from .notify import notify
@@ -133,6 +133,12 @@ class Agent:
             snap = data.pair_snapshot(pair)
             self.track_peak(snap)
             snaps.append(snap)
+            hack = hack_story(snap, self.cfg)
+            if hack:  # owner rule: never spend a RugCheck call or the brain on it
+                self.note_look(snap, classify_setup(snap, self.cfg, sol), "REJECT",
+                               f"Hack story (\"{hack}\" in the name or ticker): these tend to go down, owner rule")
+                self.cooldown[addr] = now + 60 * 60
+                continue
             setup = market_prefilter(snap, self.cfg, sol)
             if setup:
                 candidates.append(snap)
@@ -146,7 +152,8 @@ class Agent:
         for snap in snaps:
             self.seen_snaps[snap["address"]] = {**snap, "_seen_at": now}
         self.seen_snaps = {a: v for a, v in self.seen_snaps.items() if now - v["_seen_at"] < 30 * 60}
-        self.meta["scan_movers"] = radar.scan_movers(list(self.seen_snaps.values()))
+        self.meta["scan_movers"] = radar.scan_movers(list(self.seen_snaps.values()),
+                                                     skip=lambda s: hack_story(s, self.cfg))
         self.meta["scan_movers_at"] = now
         self.last_scan = {"at": now, "tokens": len(tokens), "pairs": len(pairs),
                           "passed_market_filters": len(candidates),

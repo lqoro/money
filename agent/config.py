@@ -74,6 +74,10 @@ class Config:
     # call "unverified". 20%+ combined is a hard line (V17); one cluster over ~4% is
     # suspicious (V3).
     max_bundle_pct: float = 20.0
+    # Hack stories: a coin whose name or ticker rides a hack, exploit or drain tends to go
+    # down (owner rule, Oct 29). Matched against name and ticker; steer.json's avoid_terms
+    # adds more (e.g. a project that was just hacked).
+    hack_story_pattern: str = r"hack|exploit|drain(er|ed)?\b|zero.?day|\b0day|breach|stolen|heist"
     warn_bundle_pct: float = 4.0
     min_lp_locked_pct: float = 90.0  # "burned 99-100% or locked" (V2, V3, V6)
 
@@ -176,6 +180,7 @@ class Config:
     # Set at runtime by Duet's steer.json, not from the environment.
     pause_new_trades: bool = False
     owner_note: str = ""
+    avoid_terms: list = field(default_factory=list)  # owner's extra hack-story words/tickers
     goal_equity_usd: float = 0.0  # Duet's stretch goal: equity target...
     goal_deadline: str = ""  # ...by this UTC time, "YYYY-MM-DDTHH:MM:SSZ"
     steer_pinned: dict = field(default_factory=dict, repr=False)  # name → value before steering

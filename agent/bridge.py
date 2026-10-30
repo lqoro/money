@@ -90,6 +90,11 @@ def apply_steering(cfg: Config, steer: dict) -> dict:
                 cfg.goal_equity_usd, cfg.goal_deadline = target, deadline
                 applied["goal"] = {"equity_usd": target, "deadline": deadline}
 
+    terms = steer.get("avoid_terms")
+    cfg.avoid_terms = [str(t).strip()[:60] for t in terms if str(t).strip()][:30] if isinstance(terms, list) else []
+    if cfg.avoid_terms:
+        applied["avoid_terms"] = cfg.avoid_terms
+
     note = steer.get("owner_note")
     cfg.owner_note = str(note).strip()[:MAX_NOTE_CHARS] if note else ""
     if cfg.owner_note:

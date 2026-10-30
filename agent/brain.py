@@ -382,6 +382,16 @@ class Brain:
                 f"{self.cfg.owner_note}\n"
                 "Weigh it like advice from the person who runs you. It never moves your hard lines.\n")
 
+    def _owner_exits(self) -> str:
+        """The exits the owner set in steer.json. Code enforces them on every trade."""
+        names = {"take_initials_multiple": "initials at {:g}x", "stop_loss_pct": "stop loss {:g}%",
+                 "trailing_stop_pct": "trail {:g}% from the peak after initials"}
+        set_ = [fmt.format(getattr(self.cfg, k)) for k, fmt in names.items() if k in self.cfg.steer_pinned]
+        if not set_:
+            return ""
+        return (f"Your owner set these exits and code enforces them on every trade, whatever your exit "
+                f"plan says: {', '.join(set_)}. Don't write a learned rule that sets them.")
+
     def _fee_owned(self) -> str:
         c = self.cfg
         return (f"Fees and position size are checked in code before every entry: the first profit target must "
@@ -431,7 +441,7 @@ what each kind of PASS actually did; a rule whose skips keep running is costing 
 
 ## Your paper wallet
 {json.dumps(portfolio_view, indent=1)}
-{self._goal(portfolio_view.get("equity_usd") or 0)}{self._owner_note()}
+{self._goal(portfolio_view.get("equity_usd") or 0)}{self._owner_note()}{self._owner_exits()}
 ## Your current strategy parameters (you evolve these yourself)
 {json.dumps(self.cfg.strategy_view())}
 
@@ -516,7 +526,8 @@ fading, and use the web only to confirm or explain them. Don't anchor on one sto
 upcoming event. In 3-5 sentences as Trencher: what's the meta, which coins show it, and
 which setups you'd look at right now. Holder, dev and bundle checks run on each coin when
 you research it, so their absence here is never a reason to say "no buys" or "watchlist
-only". Only call it quiet if the movers are."""
+only". Only call it quiet if the movers are. Coins named for a hack, exploit or drain are
+blocked in code (your owner's rule: they tend to go down), so never name one as a setup."""
         out = self._ask(prompt, META_SCHEMA, "low", web=False)
         return (out or {}).get("summary")
 
@@ -668,5 +679,6 @@ skips candidates. Spend calls where they change outcomes.
    initials multiple. Small sample sizes call for small changes. Leave the rest alone.
 Never loosen the hard lines in your soul; they aren't parameters.
 {self._fee_owned()} Drop any such rule from your learned rules.
+{self._owner_exits()} Drop any learned rule that sets a different initials multiple, stop or trail.
 {self._owner_note()}"""
         return self._ask(prompt, evolve_schema(), "high", web=False)
