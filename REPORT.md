@@ -1,13 +1,13 @@
 # Trencher live report
 
-Updated 2026-10-29T23:45:35Z (paper trading, never real money)
+Updated 2026-10-30T00:00:40Z (paper trading, never real money)
 
 - Equity: $96.93 (-3.1% vs $100 start)
-- Goal: $1,000 by 2026-11-05 05:03Z (a stretch, survival first): at 9.7% of it, 6.2 days left, needs +45.5% a day from here
+- Goal: $1,000 by 2026-11-05 05:03Z (a stretch, survival first): at 9.7% of it, 6.2 days left, needs +45.6% a day from here
 - Closed trades: 9, 2 wins
 - Fees paid: $5.24 (axiom $0.56, network $4.04, pool $0.50), plus $0.82 lost to slippage
 - New trades: on
-- Brain: subscription, 504 calls and 0 plan-limit hits in 48h
+- Brain: subscription, 510 calls and 0 plan-limit hits in 48h
 
 ## Scorecard (after fees)
 - 9 closed, 2 won (22%), net $-3.07
@@ -71,47 +71,47 @@ Updated 2026-10-29T23:45:35Z (paper trading, never real money)
   CA `ANVLA6eKiAq4nstD2Sg3SZhfVkSEwfnGccn12UQWpump`
 
 ## Last scan
-- 23:44Z: 6 coins, 4 with pairs, 1 passed the market filters, 1 researched
+- 23:59Z: 4 coins, 2 with pairs, 0 passed the market filters, 0 researched
 
 ## Coins it looked at, and why it passed
-- 23:45Z SOLHYPE (MIGRATED, $35,813 mcap, $18,760 5m vol): PASS at conviction 2, PASS — 89% off the peak, -31% in the last 5 minutes and 5m volume at 0.27x the hourly pace. Falling knife, the crowd has left (V1, V6).  
-  CA `HA479B5zxyLPsV6rUo8PzoYKK2WCDZhJojJuqdx9pump`
-- 23:35Z SI (MIGRATED, $53,134 mcap, $5,715 5m vol): REJECT, Top 10 hold 28.1% ex-pool (>25%) (V13)  
-  CA `6zuDiAw3NviBwcLZfTztHJgtCmeNWfyFxYVoXtNYpump`
-- 23:32Z cop (FINAL_STRETCH, $21,110 mcap, $27,103 5m vol): PASS at conviction 2, PASS: a 10-minute-old cop coin riding the Binance hack-wallet story, with top 10 at 23% and a site that doesn't show its CA. Owner's no-hack-plays rule, plus too new to tell the original from a vamp (V1, V13).  
-  CA `GE3qKrtuVodNTmGAUqPyEvwc1kD6kAYVLyskQWkqpump`
-- 23:29Z longit (FINAL_STRETCH, $33,235 mcap, $22,516 5m vol): REJECT, Dev holds 1.9% (>1%) (V13, V17)  
-  CA `387AKE5T853Me3qaUNYumQAtNSLkiR7rKv5rGbMDpump`
-- 23:26Z HYPEFUN (MIGRATED, $42,291 mcap, $47,365 5m vol): PASS at conviction 3, PASS: two minutes old and pitching "perps for top 25 holders" from a site that's 0.1 days old with no CA and no code. That's a new pair with a tech LARP attached, and I don't snipe (V1, V5, V6).  
-  CA `8p51fvM5ZKrzp3tRkTRKTVgxUGw1PrRu3TTkkJkJHype`
-- 23:24Z HEXN (DIP, $441,802 mcap, $16,915 5m vol): PASS at conviction 3, PASS: HEXN is at $442k, below the $568k where it stopped me out. That is no reclaim, sellers control the 5m (41% buys) and volume is fading (0.76x). This is the same falling knife that cut me earlier today (V1).  
-  CA `ANVLA6eKiAq4nstD2Sg3SZhfVkSEwfnGccn12UQWpump`
-- 23:22Z GATO (MIGRATED, $4,350,466 mcap, $4,444 5m vol): REJECT, Dev holds 3.3% (>1%) (V13, V17)  
-  CA `HsprHxBRgiVaQdRf3TnKNuZZtaX9JUSPgMFdAkk6pump`
-- 23:17Z jeff (DIP, $940,321 mcap, $8,999 5m vol): REJECT, Top 10 hold 33.9% ex-pool (>25%) (V13)  
-  CA `HAsTKXYvv65zM7J6Cu5o5PcZsiKMQYo5oz4WPjgqwP6k`
-- 23:14Z ZI (MIGRATED, $33,004 mcap, $101,517 5m vol): PASS at conviction 2, PASS — 6-minute-old copy of a taken ticker in a dying Inu meta, down 50% with no higher low, and an even buy/sell fight among snipers. I'd be exit liquidity. (V1, V5, V6)  
-  CA `5q45EK4mRhuiuBmRYoaDs4m2xweaV7gn3zsFhsvcpump`
-- 23:07Z HYPEFAUCET (MIGRATED, $39,957 mcap, $3,285 5m vol): PASS at conviction 3, PASS: $3.3k of 5m flow on a coin that isn't leading the HYPE field. SOLHYPE has the crowd at $91k 5m, and this one is a side bet with top 10 at 22.8%. (V1, V6)  
-  CA `HyPESTUwRbb21wH4Qyw9ayKhb9AC7bWciqGbnGp7dRip`
+- 23:58Z PEGGY (FINAL_STRETCH, $21,401 mcap, $7,017 5m vol): REJECT, Top 10 hold 27.2% ex-pool (>25%) (V13)  
+  CA `5xisvatFv2xLEbnFDFkXVQrf1AKQB17JH5CowXoVpump`
+- 23:58Z BEAR (FINAL_STRETCH, $24,699 mcap, $49,427 5m vol): PASS at conviction 3, PASS — 5 minutes old, up 618%, 14% off the high, and a bigger BEAR already exists. That's a sniper pair, not a setup. (V1, V5, V3)  
+  CA `6i4ebPt8dpGchB2A1ELpTz3B72dy5DkzNpFMNtUSpump`
+- 23:52Z ZI (MIGRATED, $116,267 mcap, $33,575 5m vol): REJECT, Dev holds 1.3% (>1%) (V13, V17)  
+  CA `FnvQAPxZM1FsRJL9UabeXcaPWGn2yR5vaUJvCqg4pump`
+- 23:51Z three (MIGRATED, $520,663 mcap, $3,624 5m vol): PASS at conviction 3, PASS: a 6-month-old "3D AI agent layer" with no GitHub, a CA its own site doesn't show, and one linked cluster holding 9.7%. LARP with a bundle attached (V1, V3).  
+  CA `FeMbDoX7R1Psc4GEcvJdsbNbZA3bfztcyDCatJVJpump`
+- 23:50Z ZCAT (FINAL_STRETCH, $21,347 mcap, $31,533 5m vol): PASS at conviction 2, PASS — 8-minute-old copycat ZCAT, and the bigger, older Zero Cat is the leader. I don't buy the vamp, and I don't snipe (V1, V3, V5).  
+  CA `Dn6DzgXkRRJXCR4pGkQFrxWesZJg9k387c2QEsSRpump`
+- 23:48Z DESSA (MIGRATED, $7,615,591 mcap, $7,124 5m vol): PASS at conviction 4, PASS: clean holders on a real story, but the crowd already left. 1h volume is $62k against a 24h pace of about $180k/h, and $7k on the 5m is too thin for a $7.6M cap to get back to $11M+ (V1, V6).  
+  CA `npz2FhoufQ7pKqhGpaipYWacrAkidyW2yDpVWSvpump`
+- 23:48Z HOUSEWORM (MIGRATED, $816,620 mcap, $15,121 5m vol): REJECT, Bundles: 10 linked wallet cluster(s) hold 45.4% of supply (>20%) (V17)  
+  CA `9KhzhyM1BwgW6myZRcqdzQvemKjVrjck8kaevTkMpump`
+- 23:47Z calm (MIGRATED, $55,298 mcap, $6,900 5m vol): REJECT, Bundles: 8 linked wallet cluster(s) hold 70.6% of supply (>20%) (V17)  
+  CA `4HSHFbFiKuMvZW7yGiDTab17B63MzBkkhadFKxhkpump`
+- 23:47Z ZCAT (FINAL_STRETCH, $25,863 mcap, $32,867 5m vol): PASS at conviction 3, PASS: Zero Cat is a 15-minute-old copycat ticker, priced within 6% of its high, with sellers slightly ahead of buyers. It fits no meta, and I'm not going to pay to be the snipers' exit (V1, V5, V13).  
+  CA `A6cmGqUaoS1VWkU4Q8dUeRideS8sjbdHTcPQ6WKBpump`
+- 23:46Z SENSE (MIGRATED, $247,352 mcap, $5,127 5m vol): PASS at conviction 3, PASS — 86% off a $1.75M peak (past my 75% dip limit), robotics/AI tech claims with no GitHub, $9.8k hourly volume after a $1.9M day. The crowd left; this is a bounce, not a dip-buy (V1, V6).  
+  CA `GydpvgKppv8a4gGQqAQsyQJxtQN4S6Ym9gKxjnN3mfun`
 
 ## What its skips did next (last 48h)
 A skip "ran" if the coin reached the first target (1.5x) from the skip price before a 20% drop, "dumped" if the drop came first. Sampled every 10 min, followed 6h.
-- top 10 over 25%: blocked 6, ran 0, dumped 4, flat 0, open 2 (saving losses: keep it)
-- near the high / chasing: blocked 5, ran 0, dumped 1, flat 0, open 4 (too few played out to judge)
-- too new / sniping: blocked 4, ran 1, dumped 3, flat 0, open 0 (saving losses: keep it)
+- top 10 over 25%: blocked 7, ran 0, dumped 4, flat 0, open 3 (saving losses: keep it)
+- too new / sniping: blocked 7, ran 1, dumped 4, flat 0, open 2 (saving losses: keep it)
   - ran: ZI up to 1.7x  
     CA `5q45EK4mRhuiuBmRYoaDs4m2xweaV7gn3zsFhsvcpump`
+- near the high / chasing: blocked 5, ran 0, dumped 1, flat 0, open 4 (too few played out to judge)
 - falling knife / no higher low: blocked 3, ran 0, dumped 2, flat 0, open 1 (too few played out to judge)
+- bundles over the line: blocked 3, ran 0, dumped 1, flat 0, open 2 (too few played out to judge)
 - RugCheck danger: blocked 3, ran 2, dumped 0, flat 0, open 1 (too few played out to judge)
   - ran: HYPEINU up to 1.57x  
     CA `6eccVGkbi8cvAYBGzfDmUwFYrMj8eGZF2xyZqZLkpump`
   - ran: ETF up to 1.87x  
     CA `2orqEGSdkm5BMmhdM8TpKCpACk32a3Zaj3Lef7ceqsc6`
-- bundles over the line: blocked 2, ran 0, dumped 1, flat 0, open 1 (too few played out to judge)
+- dev share over 1%: blocked 3, ran 0, dumped 1, flat 0, open 2 (too few played out to judge)
+- crowd leaving / fading volume: blocked 2, ran 0, dumped 0, flat 0, open 2 (too few played out to judge)
 - other: blocked 2, ran 0, dumped 2, flat 0, open 0 (too few played out to judge)
-- dev share over 1%: blocked 2, ran 0, dumped 1, flat 0, open 1 (too few played out to judge)
-- crowd leaving / fading volume: blocked 1, ran 0, dumped 0, flat 0, open 1 (too few played out to judge)
 - vamp / copycat: blocked 1, ran 0, dumped 1, flat 0, open 0 (too few played out to judge)
 
 ## Rules it changed from results and skips
@@ -134,11 +134,11 @@ Meta: sub-1h PumpSwap launches pulling serious volume, mostly Binance and Hyperl
 ## Moving most in its scans, last 30 min (1h volume)
 - SOLHYPE: $841,462 1h vol, $35,813 mcap, -63% 1h  
   CA `HA479B5zxyLPsV6rUo8PzoYKK2WCDZhJojJuqdx9pump`
-- HEXN: $268,582 1h vol, $441,802 mcap, +37% 1h  
-  CA `ANVLA6eKiAq4nstD2Sg3SZhfVkSEwfnGccn12UQWpump`
-- BNB: $183,690 1h vol, $1,877 mcap, -98% 1h  
-  CA `3EnfmbxdD2nHJ1KoogUgoYgeqS54gKis3AD3ieHGpump`
-- beans: $169,915 1h vol, $6,050 mcap, +15% 1h  
+- ZI: $355,997 1h vol, $25,232 mcap, -33% 1h  
+  CA `5q45EK4mRhuiuBmRYoaDs4m2xweaV7gn3zsFhsvcpump`
+- HOUSEWORM: $183,919 1h vol, $816,620 mcap, +10% 1h  
+  CA `9KhzhyM1BwgW6myZRcqdzQvemKjVrjck8kaevTkMpump`
+- beans: $172,732 1h vol, $6,925 mcap, +32% 1h  
   CA `3QKWDZdHBtGNE3jQXKQfWUCgPVGggMtm6xmkUPeC2UQT`
-- WASTED: $169,366 1h vol, $2,077 mcap, -100% 1h  
-  CA `2BTpBX5ktiFjfHxwcLNj3uftawbm9AT7KUg46aCFpump`
+- ZI: $155,799 1h vol, $116,267 mcap, +186% 1h  
+  CA `FnvQAPxZM1FsRJL9UabeXcaPWGn2yR5vaUJvCqg4pump`
