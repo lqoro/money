@@ -1,13 +1,13 @@
 # Trencher live report
 
-Updated 2026-10-30T09:20:47Z (paper trading, never real money)
+Updated 2026-10-30T09:36:01Z (paper trading, never real money)
 
-- Equity: $95.08 (-4.9% vs $100 start)
-- Goal: $1,000 by 2026-11-05 05:03Z (pressing for it): at 9.5% of it, 5.8 days left, needs +49.8% a day from here
+- Equity: $94.91 (-5.1% vs $100 start)
+- Goal: $1,000 by 2026-11-05 05:03Z (pressing for it): at 9.5% of it, 5.8 days left, needs +50% a day from here
 - Closed trades: 11, 2 wins
 - Fees paid: $6.71 (axiom $0.82, network $4.99, pool $0.77), plus $1.19 lost to slippage
 - New trades: on
-- Brain: subscription, 615 calls and 0 plan-limit hits in 48h
+- Brain: subscription, 616 calls and 0 plan-limit hits in 48h
 
 ## Scorecard (after fees)
 - 11 closed, 2 won (18%), net $-4.20
@@ -24,10 +24,10 @@ Updated 2026-10-30T09:20:47Z (paper trading, never real money)
   - time stop: 4, 0 won, net $-2.53, fees+slip $2.06, peak 1.37x → 0.81x
   - trailing stop: 2, 2 won, net $+4.21, fees+slip $2.04, peak 3.32x → 1.72x
   - other: 1, 0 won, net $-0.03, fees+slip $0.67, peak 1.4x → 0.99x
-- To $1,000: $904.92 to go; at $-0.38 a trade this pace doesn't get there
+- To $1,000: $905.09 to go; at $-0.38 a trade this pace doesn't get there
 
 ## Open positions
-- HYPERCHAN (MIGRATED): cost $10.0, 0.97x, fees $0.39  
+- HYPERCHAN (MIGRATED): cost $10.0, 0.95x, fees $0.39  
   CA `3ApVr1xphYMpi9dn3rpqU4hwvpmCQDVwxET1rdCDpump`
 
 ## Recent trades
@@ -75,9 +75,15 @@ Updated 2026-10-30T09:20:47Z (paper trading, never real money)
   CA `ANVLA6eKiAq4nstD2Sg3SZhfVkSEwfnGccn12UQWpump`
 
 ## Last scan
-- 09:20Z: 0 coins, 0 with pairs, 0 passed the market filters, 0 researched
+- 09:35Z: 1 coins, 1 with pairs, 0 passed the market filters, 0 researched
 
 ## Coins it looked at, and why it passed
+- 09:26Z MONEKO (FINAL_STRETCH, $21,876 mcap, $3,677 5m vol): REJECT, Top 10 hold 26.9% ex-pool (>25%) (V13)  
+  CA `2BqhMVMby7i67xoZEBoSyeXTY1wdhVyuhs7vMStspump`
+- 09:24Z CTO (FINAL_STRETCH, $24,674 mcap, $37,328 5m vol): PASS at conviction 3, PASS: it's 3 minutes old and runs on a single CZ tweet, with two bigger CTO tickers already out there. That's a sniper's table, not mine. (V1, V5, V6)  
+  CA `9hhLCxn41KZcmK1vAf7u5M6vKLHRcsVn1VmVgUrhpump`
+- 09:23Z ZERODAY (MIGRATED, $120,923 mcap, $75,388 5m vol): REJECT, Hack story ("zeroday" in the name or ticker): these tend to go down, owner rule  
+  CA `9ZRHMXqFTucBLuCs3TqmDEPjQCzhSuZ3bQR6dqpepump`
 - 09:07Z DESSA (MIGRATED, $9,005,121 mcap, $2,301 5m vol): PASS at conviction 3, PASS — DESSA has $2.3k 5m volume on a $9M cap, 0.37x the hourly pace. The crowd left 15 hours ago (V1, V6).  
   CA `npz2FhoufQ7pKqhGpaipYWacrAkidyW2yDpVWSvpump`
 - 09:07Z GATO (MIGRATED, $4,424,167 mcap, $4,335 5m vol): REJECT, Dev holds 3.3% (>1%) (V13, V17)  
@@ -92,26 +98,24 @@ Updated 2026-10-30T09:20:47Z (paper trading, never real money)
   CA `3ApVr1xphYMpi9dn3rpqU4hwvpmCQDVwxET1rdCDpump`
 - 09:06Z Foxii (DIP, $701,074 mcap, $9,101 5m vol): PASS at conviction 3, PASS — Foxii is 61% off its peak, 5m volume is 0.63x the hourly average (gate 0.7x), and it's sitting on the hourly low with no higher low printed. Falling knife until it bases. (V1, V6)  
   CA `J3ReuwckNtcJP1Zhn7wVbfXhTDNTkHxozQWWAwxWpump`
-- 09:06Z HEXN (DIP, $579,534 mcap, $12,359 5m vol): PASS at conviction 4, PASS. HEXN's nearest overhead is the $0.00064–0.00066 band, about 1.1x from here, so the exit can't pay. And it's still a tech LARP with no GitHub and zero buzz. I've lost on this coin twice. I'm not paying to learn it a third time (V1).  
-  CA `ANVLA6eKiAq4nstD2Sg3SZhfVkSEwfnGccn12UQWpump`
 
 ## What its skips did next (last 48h)
 A skip "ran" if the coin reached the first target (1.5x) from the skip price before a 20% drop, "dumped" if the drop came first. Sampled every 10 min, followed 6h.
-- top 10 over 25%: blocked 20, ran 3, dumped 14, flat 0, open 3 (saving losses: keep it)
+- top 10 over 25%: blocked 20, ran 3, dumped 13, flat 0, open 4 (saving losses: keep it)
   - ran: HYPERGAMY up to 2.05x  
     CA `CUyNDWGdLPXZ3Gyj1H6TBh5pACgu5nY9WNkSqfMApump`
   - ran: ZERO up to 1.8x  
     CA `Ddwf94wedgCuMHAkwgti8A7sL2CxvBYJStJBj2cFpump`
   - ran: BEAST up to 2.52x  
     CA `3mh5pgk58HPZwEinnZNUbsJpUoyqYa23zS2n442Zpump`
-- too new / sniping: blocked 16, ran 4, dumped 12, flat 0, open 0 (saving losses: keep it)
+- too new / sniping: blocked 17, ran 5, dumped 12, flat 0, open 0 (saving losses: keep it)
   - ran: ZI up to 1.7x  
     CA `5q45EK4mRhuiuBmRYoaDs4m2xweaV7gn3zsFhsvcpump`
   - ran: BEAR up to 1.59x  
     CA `6i4ebPt8dpGchB2A1ELpTz3B72dy5DkzNpFMNtUSpump`
   - ran: HyPepe up to 1.5x  
     CA `G8TdzgpUQXQAxJvarNKPXRGv2kh9CsJDK7dCC7Xupump`
-- near the high / chasing: blocked 13, ran 1, dumped 7, flat 0, open 5 (saving losses: keep it)
+- near the high / chasing: blocked 13, ran 1, dumped 8, flat 0, open 4 (saving losses: keep it)
   - ran: OREN up to 1.58x  
     CA `57vAaMsnAJXkvULtAz7fsi6gRn3bHRJFJsJV1okNpump`
 - RugCheck danger: blocked 9, ran 3, dumped 4, flat 1, open 1 (mixed)
@@ -132,9 +136,7 @@ A skip "ran" if the coin reached the first target (1.5x) from the skip price bef
 - bundles over the line: blocked 4, ran 1, dumped 3, flat 0, open 0 (saving losses: keep it)
   - ran: calm up to 1.53x  
     CA `4HSHFbFiKuMvZW7yGiDTab17B63MzBkkhadFKxhkpump`
-- other: blocked 3, ran 1, dumped 2, flat 0, open 0 (saving losses: keep it)
-  - ran: SI up to 1.54x  
-    CA `6zuDiAw3NviBwcLZfTztHJgtCmeNWfyFxYVoXtNYpump`
+- hack story (owner rule): blocked 4, ran 0, dumped 1, flat 0, open 3 (too few played out to judge)
 
 ## Rules it changed from results and skips
 - 10-30 03:38Z tightened: Time stop at 45 min with no extensions (FLOAT ran past the time stop to 158 min and lost 24.5%. Time-stopped trades lost 13–24% each, and holding longer didn't help.)
@@ -166,9 +168,9 @@ Meta from the movers: (1) fresh sub-2h pump.fun launches are dying, fading (SAFU
   CA `ANVLA6eKiAq4nstD2Sg3SZhfVkSEwfnGccn12UQWpump`
 - Foxii: $173,962 1h vol, $701,074 mcap, -34% 1h  
   CA `J3ReuwckNtcJP1Zhn7wVbfXhTDNTkHxozQWWAwxWpump`
-- DUOTIDE: $160,153 1h vol, $2,000 mcap, -95% 1h  
+- DUOTIDE: $160,188 1h vol, $1,989 mcap, -95% 1h  
   CA `AtKvRVDF738YA925jmxNeh4iV2qCVBBJeMxQNyrupump`
-- SAFU: $141,898 1h vol, $2,088 mcap, -98% 1h  
-  CA `EjbgFA8vFhswojnNLxQVKYKiDsm3PgM6w7JuehfPpump`
 - Stonka: $105,777 1h vol, $46,035 mcap, -23% 1h  
   CA `3UrbFtErj4FYspTupgAfKqztrMYNVQA2GocpT97Q3ray`
+- HYPERCHAN: $99,788 1h vol, $1,971,639 mcap, +2% 1h  
+  CA `3ApVr1xphYMpi9dn3rpqU4hwvpmCQDVwxET1rdCDpump`
