@@ -1,40 +1,35 @@
 # Trencher live report
 
-Updated 2026-10-30T10:52:09Z (paper trading, never real money)
+Updated 2026-10-30T11:07:13Z (paper trading, never real money)
 
-- Equity: $94.94 (-5.1% vs $100 start)
-- Goal: $1,000 by 2026-11-05 05:03Z (pressing for it): at 9.5% of it, 5.8 days left, needs +50.5% a day from here
-- Closed trades: 12, 2 wins
-- Fees paid: $7.46 (axiom $1.00, network $5.37, pool $0.95), plus $1.47 lost to slippage
+- Equity: $93.79 (-6.2% vs $100 start)
+- Goal: $1,000 by 2026-11-05 05:03Z (pressing for it): at 9.4% of it, 5.7 days left, needs +51% a day from here
+- Closed trades: 13, 2 wins
+- Fees paid: $7.85 (axiom $1.10, network $5.57, pool $1.04), plus $1.62 lost to slippage
 - New trades: on
-- Brain: subscription, 626 calls and 0 plan-limit hits in 48h
+- Brain: subscription, 629 calls and 0 plan-limit hits in 48h
 
 ## Scorecard (after fees)
-- 12 closed, 2 won (17%), net $-5.72
-- Per trade (expectancy) $-0.48; avg win $+2.10, avg loss $-0.99
-- Gross $+2.55; costs $8.27 (fees $6.94 + slippage $1.33), 324% of it
-- Give-back: peaked 1.57x on average, banked 0.91x
+- 13 closed, 2 won (15%), net $-6.21
+- Per trade (expectancy) $-0.48; avg win $+2.10, avg loss $-0.95
+- Gross $+3.14; costs $9.35 (fees $7.72 + slippage $1.63), 298% of it
+- Give-back: peaked 1.54x on average, banked 0.91x
 - Hit 1.5x+ and still closed red: 2
   - CPU peaked 1.63x, $-0.43  
     CA `5JbRYEz844bwnKbGx4dRHhrJ6zjrJ194CKdDXtzwgaXo`
   - FLOAT peaked 1.64x, $-0.76  
     CA `Bv1a7cEj5aRnJQhMw4kRQqAFesMSd5LwcDnUzq52BMmr`
 - By exit:
-  - time stop: 5, 0 won, net $-4.05, fees+slip $3.10, peak 1.29x → 0.81x
+  - time stop: 6, 0 won, net $-4.54, fees+slip $4.18, peak 1.28x → 0.84x
   - stop loss: 4, 0 won, net $-5.85, fees+slip $2.46, peak 1.1x → 0.6x
   - trailing stop: 2, 2 won, net $+4.21, fees+slip $2.04, peak 3.32x → 1.72x
   - other: 1, 0 won, net $-0.03, fees+slip $0.67, peak 1.4x → 0.99x
-- To $1,000: $905.06 to go; at $-0.48 a trade this pace doesn't get there
+- To $1,000: $906.21 to go; at $-0.48 a trade this pace doesn't get there
 
 ## Open positions
-- HYPERCHAN (MIGRATED): cost $10.0, 1.11x, fees $0.39  
-  CA `3ApVr1xphYMpi9dn3rpqU4hwvpmCQDVwxET1rdCDpump`
+- none
 
 ## Recent trades
-- 01:12Z BUY SWAN $3.92, fees $0.28  
-  CA `EFaQg27P3c3PHob2mFw4mHCUcWBHHDdatAEsXq2xpump`
-- 01:19Z SELL SWAN for $3.89, fees $0.28  
-  CA `EFaQg27P3c3PHob2mFw4mHCUcWBHHDdatAEsXq2xpump`
 - 01:19Z CLOSE SWAN -1% ($-0.03), fees $0.55  
   CA `EFaQg27P3c3PHob2mFw4mHCUcWBHHDdatAEsXq2xpump`
 - 01:40Z BUY HEXN $4.00, fees $0.27  
@@ -51,10 +46,12 @@ Updated 2026-10-30T10:52:09Z (paper trading, never real money)
   CA `3ApVr1xphYMpi9dn3rpqU4hwvpmCQDVwxET1rdCDpump`
 - 10:08Z BUY HYPERCHAN $10.00, fees $0.39  
   CA `3ApVr1xphYMpi9dn3rpqU4hwvpmCQDVwxET1rdCDpump`
+- 10:53Z SELL HYPERCHAN for $9.51, fees $0.39  
+  CA `3ApVr1xphYMpi9dn3rpqU4hwvpmCQDVwxET1rdCDpump`
+- 10:53Z CLOSE HYPERCHAN -5% ($-0.49), fees $0.78  
+  CA `3ApVr1xphYMpi9dn3rpqU4hwvpmCQDVwxET1rdCDpump`
 
 ## Last closes
-- CATBOT: +94% ($+2.73), trailing stop: -35% from peak  
-  CA `dyw5fDNv91eknniMG4tGCU1ZrzjuxbpsLiEzih6pump`
 - CATBOT: -24% ($-0.83), time stop: 45 min and only 0.92x  
   CA `dyw5fDNv91eknniMG4tGCU1ZrzjuxbpsLiEzih6pump`
 - FLOATER: +50% ($+1.48), trailing stop: -30% from peak  
@@ -73,11 +70,21 @@ Updated 2026-10-30T10:52:09Z (paper trading, never real money)
   CA `ANVLA6eKiAq4nstD2Sg3SZhfVkSEwfnGccn12UQWpump`
 - HYPERCHAN: -15% ($-1.52), time stop: 45 min and only 0.93x  
   CA `3ApVr1xphYMpi9dn3rpqU4hwvpmCQDVwxET1rdCDpump`
+- HYPERCHAN: -5% ($-0.49), time stop: 45 min and only 1.05x  
+  CA `3ApVr1xphYMpi9dn3rpqU4hwvpmCQDVwxET1rdCDpump`
 
 ## Last scan
-- 10:51Z: 2 coins, 1 with pairs, 0 passed the market filters, 0 researched
+- 11:06Z: 3 coins, 2 with pairs, 0 passed the market filters, 0 researched
 
 ## Coins it looked at, and why it passed
+- 11:05Z Kim (FINAL_STRETCH, $27,029 mcap, $29,863 5m vol): REJECT, Top 10 hold 28.7% ex-pool (>25%) (V13)  
+  CA `5yodPm7MPPLWEcvHwVJAYjTqu2n5A1KSEwRJUpt8pump`
+- 10:54Z CTO (MIGRATED, $382,995 mcap, $20,714 5m vol): PASS at conviction 4, PASS — 1.5h-old vertical runner 10% off the top, and 5m volume is down to 0.44x its hourly pace. The crowd is leaving and I'd be the exit liquidity (V1, V7).  
+  CA `9hhLCxn41KZcmK1vAf7u5M6vKLHRcsVn1VmVgUrhpump`
+- 10:53Z DAEMON (MIGRATED, $51,267 mcap, $42,028 5m vol): PASS at conviction 3, PASS — 2.5 minutes post-migration with no base, one of 24 same-ticker copies, top 10 at 21%. Too new to tell a crowd from bond-spike churn (V1).  
+  CA `5yappSXzEFBAqJufBqhpRJq29BVFbd5iyAkLvZgBpump`
+- 10:53Z CTO (MIGRATED, $84,391 mcap, $48,419 5m vol): REJECT, Top 10 hold 46.6% ex-pool (>25%) (V13)  
+  CA `HftEwseBtcbgxj9j7AfgsA5ZiTEhSK9qWXZs8rzfpump`
 - 10:49Z DESSA (MIGRATED, $8,978,361 mcap, $10,003 5m vol): PASS at conviction 3, PASS: sellers outnumber buyers 28 to 17 on the 5m, and the only level I can name is the $12M high at 1.34x, which is under my initials. Holders are clean, but there's no setup here (V1, V6).  
   CA `npz2FhoufQ7pKqhGpaipYWacrAkidyW2yDpVWSvpump`
 - 10:38Z GATO (MIGRATED, $4,313,793 mcap, $6,016 5m vol): REJECT, Dev holds 3.3% (>1%) (V13, V17)  
@@ -90,32 +97,24 @@ Updated 2026-10-30T10:52:09Z (paper trading, never real money)
   CA `9ZRHMXqFTucBLuCs3TqmDEPjQCzhSuZ3bQR6dqpepump`
 - 10:09Z CTO (MIGRATED, $203,964 mcap, $43,050 5m vol): PASS at conviction 4, PASS: 43 minutes old and only 7.3% off a high set 12 minutes ago. That's a chase on a recycled Elon "Chief Troll Officer" name with two bigger CTO tickers already out there (V1, V3).  
   CA `9hhLCxn41KZcmK1vAf7u5M6vKLHRcsVn1VmVgUrhpump`
-- 10:08Z HYPERCHAN (MIGRATED, $1,986,836 mcap, $12,488 5m vol): BUY at conviction 6, BUY, conviction 6 (probe). HYPERCHAN, the vamp-field leader, now has flow at pace ($12.5k 5m, 1.07x hourly, 66% buys), which fixes what stopped me out last time. But the only target that clears 1.5x is a breakout above $2.28M, so it stays a probe (V1, V6).  
-  CA `3ApVr1xphYMpi9dn3rpqU4hwvpmCQDVwxET1rdCDpump`
-- 10:04Z DESSA (MIGRATED, $8,746,268 mcap, $9,243 5m vol): PASS at conviction 4, PASS: 5m flow $9.2k with sells ahead of buys (20/23) on a flat hour, and 1.5x means breaking the $12M high. Churn, not a crowd coming back (V1, V6).  
-  CA `npz2FhoufQ7pKqhGpaipYWacrAkidyW2yDpVWSvpump`
-- 09:53Z GATO (MIGRATED, $4,623,871 mcap, $2,494 5m vol): REJECT, Dev holds 3.3% (>1%) (V13, V17)  
-  CA `HsprHxBRgiVaQdRf3TnKNuZZtaX9JUSPgMFdAkk6pump`
-- 09:51Z Foxii (DIP, $523,959 mcap, $9,663 5m vol): REJECT, Dip with fading attention is a falling knife, not a dip (5m at 0.59x the hour's pace, under 0.6x)  
-  CA `J3ReuwckNtcJP1Zhn7wVbfXhTDNTkHxozQWWAwxWpump`
 
 ## What its skips did next (last 48h)
 A skip "ran" if the coin reached the first target (1.5x) from the skip price before a 20% drop, "dumped" if the drop came first. Sampled every 10 min, followed 6h.
-- top 10 over 25%: blocked 21, ran 4, dumped 15, flat 0, open 2 (saving losses: keep it)
+- top 10 over 25%: blocked 23, ran 5, dumped 15, flat 0, open 3 (saving losses: keep it)
   - ran: HYPERGAMY up to 2.05x  
     CA `CUyNDWGdLPXZ3Gyj1H6TBh5pACgu5nY9WNkSqfMApump`
   - ran: Catori up to 1.52x  
     CA `FDwCosavNvMiFB812ajJp3gG7eZ9c4bpgcnY6fDQpump`
   - ran: ZERO up to 1.8x  
     CA `Ddwf94wedgCuMHAkwgti8A7sL2CxvBYJStJBj2cFpump`
-- too new / sniping: blocked 17, ran 5, dumped 12, flat 0, open 0 (saving losses: keep it)
+- too new / sniping: blocked 17, ran 4, dumped 12, flat 0, open 1 (saving losses: keep it)
   - ran: ZI up to 1.7x  
     CA `5q45EK4mRhuiuBmRYoaDs4m2xweaV7gn3zsFhsvcpump`
   - ran: BEAR up to 1.59x  
     CA `6i4ebPt8dpGchB2A1ELpTz3B72dy5DkzNpFMNtUSpump`
   - ran: HyPepe up to 1.5x  
     CA `G8TdzgpUQXQAxJvarNKPXRGv2kh9CsJDK7dCC7Xupump`
-- near the high / chasing: blocked 13, ran 2, dumped 8, flat 2, open 1 (saving losses: keep it)
+- near the high / chasing: blocked 14, ran 2, dumped 8, flat 2, open 2 (saving losses: keep it)
   - ran: OREN up to 1.58x  
     CA `57vAaMsnAJXkvULtAz7fsi6gRn3bHRJFJsJV1okNpump`
   - ran: Catori up to 1.52x  
@@ -151,7 +150,6 @@ A skip "ran" if the coin reached the first target (1.5x) from the skip price bef
 - 10-30 09:47Z added: The $1k deadline never sets size or lowers the bar (I'm saying this plainly: going from ~$96 to $1k by Nov 5 is a ~10x in 6 days. Over 11 trades my expectancy is -$0.38/trade (2 wins). Bigger size on negative expectancy just loses faster. Clean setups get a 7, but I keep max_total_risk_pct at 35 instead of raising it, until the looser entries show a positive expectancy (V6, V8).)
 
 ## Recent lessons
-- [2026-10-28 22:59] Expected: the original Cat Bot pair would retest its $845k peak, because holders were clean (top 10 at 3.3%, dev/insiders 0%) and 5m volume was organic at $12.9k (V1, V6, V13). Happened: it ran to 4.44x peak, I took initials at 2x, and the target plus a 35% trail closed the rest around 2.67x, so the clean MIGRATED dip-buy worked but the trail gave back about 40% of the peak, and fees ate roughly a third of a $2.91 position. Rule: once initials are out and the coin is past 4x, tighten the trail to about 25% from peak, and don't open positions under about $5 where fees ruin the math, because sell initials only protects the cost basis, not the runner (V11).
 - [2026-10-29 01:32] I bought CATBOT back as a $2.0M base retesting toward the $3.46M high. Price only drifted from $2.59M to $2.41M (-7%) and peaked at 1.12x, but I lost -24.3% because $0.62 in fees and slippage on a $3.42 position cost 18% before the coin moved at all. That makes the time stop correct (V1: don't marry a bag), and the real problem was the size. Rule: before any entry, including a buy-back, I estimate round-trip cost and skip the trade if it tops ~5% of size or if the target can't pay several times that cost. I also only re-enter a stopped-out coin when it reclaims the high, not when it bases in the middle of the range.
 - [2026-10-29 02:03] Expected: the FLOATER that had the crowd out of 23 same-ticker coins ($141k 5m volume, 78% buys, clean holders, 34% off the high) would keep climbing toward $500k on the tokenized-stock meta. What happened: it ran to 2.19x, I took initials as planned (V11), and the trailing stop sold the rest at 1.5x from a $255k mcap for +$1.48, but fees and slippage ($0.89) ate about 30% of the $2.94 cost and nearly a third of the gross gain. Next time I keep picking the vamp-field winner by volume and attention (V1, V6) and keep the 2x initials plus 30% trail, but I don't open a position under ~$5 because fixed fees turn a 2x winner into a 1.5x one.
 - [2026-10-29 02:10] Expected: CPU, the clear flow leader with clean holders, to bounce from a 38% dip toward 2x (V1, V13). What happened: it ran to 1.63x, gave it all back, and I time-stopped at 1.03x mcap after 52 min. Fees $0.48 plus slippage $0.09, about 18% of a $3.16 position, turned a flat trade into −13.7%. Next time: the friction gate and the $5 minimum are hard blocks, so no sub-$5 entries even on a good setup. If a MIGRATED dip-buy reaches 1.5x and 5m volume starts fading before 2x, sell half instead of watching it round-trip.
@@ -161,18 +159,19 @@ A skip "ran" if the coin reached the first target (1.5x) from the skip price bef
 - [2026-10-30 01:19] Expected: SWAN was a MIGRATED pullback buy, 29% off its high with a higher-low base and $49k on the 5m, and I wanted to retest $166k (about 1.4x) before taking initials at 1.5x (V1, V6). What happened: it peaked at exactly 1.40x, the retest level my own thesis named, then rejected there, and the break-even stop sold it at 1.16x for -0.7%. The pullback-entry rule and the 1.3x break-even rule both did their jobs, since a 1.4x peak didn't turn into a real loss. Rule for next time: when the prior high I'm targeting sits below my initials multiple, sell part of the position at that level (sell initials or half, V11) instead of waiting for 1.5x. That changes the exit, not the pick, so it's a refinement from one trade, not a new ban.
 - [2026-10-30 02:26] I expected the higher-low DIP structure, clean holders and $19k 5m flow with 575 buys to 112 sells to carry HEXN back toward its $0.000589 swing. It only got to 1.17x, then broke the $0.000449 higher low and the -13% stop took me out at 45 min, -27% after fees on a probe. That's fine: my DIP rule put the stop under the higher low and the probe size kept the damage small, and the stop review did its job, since a broken higher low means the thesis is dead. What doesn't fit is this is my second HEXN loss, and both times the story was a thin tech LARP (V1). So next time, on a DIP where volume is under the hourly pace and the narrative is weak, I'll want a fresh volume surge before buying, not just a clean structure, because dips recover on attention, not on holder tables (Soul belief 7, V1).
 - [2026-10-30 09:52] Expected: HYPERCHAN, the clear leader of a 20-copy vamp field and 13.5% off its high, would retest $2.28M or break out. I bought a probe anyway, with 5m volume under $10k and only 0.73x its hourly pace. Happened: it never went green (peak 0.99x), and the 45-min time stop closed it at -15% (V1). That confirms my existing shallow-band rule rather than adding a new one: in the 10–20% band, being the vamp leader (V1, V2) doesn't waive the volume gate (5m at least $10k and at or above hourly pace, V1/V6), and probe size isn't a way around a failed rule, so next time that's a PASS with the blocker "flow below pace".
+- [2026-10-30 10:53] Expected: HYPERCHAN, the clean flow leader of the HYPE meta at about $2M, would break its 4-hour range and run toward $3M. What happened: it peaked at 1.18x, never broke out, and the 45-minute time stop sold it at 1.05x on market cap, which is still a 4.9% loss after fees. The shallow-band leader rule did its job (clean holders, real flow, no dump), so it stays. What failed was the clock: my written rule is to exit if still under 1.0x at 45 min, but this one closed green on market cap, and a 1.5x move on a $2M coin rarely happens in 45 minutes (V1 talks about small new pairs, V6 about $70k–$11M runners). Next time, for MIGRATED entries above about $1M that are holding their range, give the time stop more room (about 90 min) and still exit if price closes back under the range low. One flat scratch is a sample of one, not a reason to drop the setup.
 
 ## Meta right now
 The meta has split three ways. Brand-new pump.fun launches are dying fast: CZ, Kenneth, HYPER402, MONEKO and the blank-ticker coins are all at $0–700 of 5m flow, and Stonka has fallen to $15k with $863 on the 5m, so it's dead and off the watchlist. The money sits in two places. First, migrated coins a few hours old that are holding buyers: HEXN ($636k, 17h old, $13.1k 5m, 86% buys, +23% 1h) and HYPERCHAN ($2M, Hyperliquid theme while HYPE trends on CoinGecko, $12.5k 5m, now back over the $10k bar, 66% buys, flat 1h). Second, one fresh troll-joke runner, CTO "Chief Troll Officer" (42 minutes old, $204k, $43k 5m, 71% buys, +376% 1h). That's the strongest flow on the board, but it's vertical and unproven, and a 40-minute-old coin at +376% is where you become exit liquidity (V1, V7). Setups to research now: HEXN as MIGRATED (best risk/reward, buyers still in control), HYPERCHAN as MIGRATED now that volume cleared $10k, and CTO only if it pulls back toward ~10% off its high with 5m volume still above 0.7x its hourly pace. Foxii (-47% 1h, 51% buys) is a falling knife, GATO and DESSA are bleeding at sub-50% buys, and anything tied to the "binance hack / drained" headlines is off the table by rule.
 
 ## Moving most in its scans, last 30 min (1h volume)
-- HEXN: $192,903 1h vol, $349,328 mcap, -47% 1h  
-  CA `ANVLA6eKiAq4nstD2Sg3SZhfVkSEwfnGccn12UQWpump`
+- CTO: $569,694 1h vol, $382,995 mcap, +133% 1h  
+  CA `9hhLCxn41KZcmK1vAf7u5M6vKLHRcsVn1VmVgUrhpump`
 - Foxii: $146,343 1h vol, $614,410 mcap, +2% 1h  
   CA `J3ReuwckNtcJP1Zhn7wVbfXhTDNTkHxozQWWAwxWpump`
-- SeaZ: $127,714 1h vol, $6,982 mcap, +90% 1h  
+- SeaZ: $116,663 1h vol, $6,422 mcap, +8% 1h  
   CA `DGtDAjPdn5LqxDXgi7J6enAjh22MeJbi8ZmaFCvvpump`
-- CZ: $83,606 1h vol, $29,444 mcap, -27% 1h  
+- CTO: $80,350 1h vol, $84,391 mcap, +106% 1h  
+  CA `HftEwseBtcbgxj9j7AfgsA5ZiTEhSK9qWXZs8rzfpump`
+- CZ: $54,255 1h vol, $9,471 mcap, -63% 1h  
   CA `DZPEJunsXpwprRQffkMi4q23ZtsLhtLujHCSztyx786z`
-- DESSA: $51,259 1h vol, $8,978,361 mcap, +0% 1h  
-  CA `npz2FhoufQ7pKqhGpaipYWacrAkidyW2yDpVWSvpump`
