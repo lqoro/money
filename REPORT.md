@@ -1,13 +1,13 @@
 # Trencher live report
 
-Updated 2026-10-30T14:09:22Z (paper trading, never real money)
+Updated 2026-10-30T14:24:34Z (paper trading, never real money)
 
 - Equity: $93.79 (-6.2% vs $100 start)
-- Goal: $1,000 by 2026-11-05 05:03Z (pressing for it): at 9.4% of it, 5.6 days left, needs +52.4% a day from here
+- Goal: $1,000 by 2026-11-05 05:03Z (pressing for it): at 9.4% of it, 5.6 days left, needs +52.5% a day from here
 - Closed trades: 13, 2 wins
 - Fees paid: $7.85 (axiom $1.10, network $5.57, pool $1.04), plus $1.62 lost to slippage
 - New trades: on
-- Brain: subscription, 639 calls and 0 plan-limit hits in 48h
+- Brain: subscription, 637 calls and 0 plan-limit hits in 48h
 
 ## Scorecard (after fees)
 - 13 closed, 2 won (15%), net $-6.21
@@ -74,33 +74,33 @@ Updated 2026-10-30T14:09:22Z (paper trading, never real money)
   CA `3ApVr1xphYMpi9dn3rpqU4hwvpmCQDVwxET1rdCDpump`
 
 ## Last scan
-- 14:08Z: 24 coins, 23 with pairs, 1 passed the market filters, 1 researched
+- 14:23Z: 3 coins, 2 with pairs, 0 passed the market filters, 0 researched
 
 ## Coins it looked at, and why it passed
+- 14:19Z STANK (MIGRATED, $163,357 mcap, $3,807 5m vol): PASS at conviction 3, PASS: $3.8k on the 5m after a +37% hour, and the only target is the $195k high at 1.19x, below initials. Chasing a pump with no crowd (V1, V6).  
+  CA `5wsjHxT5nW5jQuVupXUNnYszF3WoWCfGGk9LMcsCJzY8`
+- 14:19Z HACKCOIN (no setup, $5,515 mcap, $696 5m vol): REJECT, Hack story ("hack" in the name or ticker): these tend to go down, owner rule  
+  CA `5McvpSFirPG9yHbvuHzvgvAza8qobrcuHk24TfXmpump`
+- 14:18Z HELL (MIGRATED, $2,693,579 mcap, $2,691 5m vol): PASS at conviction 3, PASS: $2.7k on the 5m on a $2.7M coin, sellers ahead of buyers, 9% off the high, and a website claiming partnerships it doesn't have. No flow, no edge (V1, V6).  
+  CA `A75Xx6SeftAmWduv9KGwb2GCjXUAhxozcCUCys9jpump`
+- 14:18Z ween (FINAL_STRETCH, $19,656 mcap, $33,662 5m vol): REJECT, Top 10 hold 25.3% ex-pool (>25%) (V13)  
+  CA `6hGYexNbfSy5UQjQAAetQpDouhkC9FP7ZgBmx8Hfpump`
+- 14:17Z Gruffalo (MIGRATED, $231,590 mcap, $40,338 5m vol): PASS at conviction 4, PASS: an 11-minute-old migration, up 75% on the 5m and sitting at its high. Clean holders, but that's chasing the bond spike. Wait for a base. (V1, V6)  
+  CA `A7pmyAhMbRXrQ6FXThxaNCNCmcdqCssjptizX15Ypump`
+- 14:15Z HYDESK (FINAL_STRETCH, $35,158 mcap, $2,867 5m vol): REJECT, Top 10 hold 25.6% ex-pool (>25%) (V13)  
+  CA `BzndCZ2ZrjUA21aVW7t6AWEENRAps3EmdQg9hf94pump`
+- 14:10Z Kim (FINAL_STRETCH, $22,141 mcap, $4,303 5m vol): PASS at conviction 2, PASS: 5m volume is $4.3k at 0.48x the hourly pace and down 19% in 5 minutes, on a Kim copy whose biggest coin just rugged. Crowd is leaving. (V1, V6)  
+  CA `Bp32zY54GHujmYPQkTaUwdoxvLPd2dFPHtXeB9rWpump`
 - 14:08Z ███ (DIP, $416,260 mcap, $2,448 5m vol): REJECT, Top 10 hold 25.7% ex-pool (>25%) (V13)  
   CA `EwX2T1p2PmgTsSq2Bi6XtQYxPC5krR4P2fxPfN4Qpump`
 - 14:06Z Kim (MIGRATED, $102,020 mcap, $8,886 5m vol): PASS at conviction 3, PASS — Kim just popped 2.5x in 30 min inside a saw-tooth chart; prior high $132k is only 1.29x, target below initials, and there's no higher low to put a stop under (V1, V13).  
   CA `qhbbjGBKJxW3AZGqngWM5tHcrENR3pVoRB9MCf1pump`
 - 14:06Z laptop (MIGRATED, $105,723 mcap, $56,331 5m vol): PASS at conviction 3, PASS: it's 11 minutes old, 8% off its high, and riding the Hunter Biden $LAPTOP story. Classic exit liquidity. Wait for a base. (V1, V13)  
   CA `GEWDAj3NaK3WVpgjhusnZq8CMsYu9yQPRRxApfXwpump`
-- 14:01Z NIG (MIGRATED, $110,624 mcap, $4,670 5m vol): PASS at conviction 2, PASS: 5.4% off the high on a +38% 5m candle with only $4.7k 5m volume, and the name is a slur, so no wide audience comes. Chase into a crowd that won't show. (V1, V6)  
-  CA `2xkczG594A3iYjpJdECVSZooukxu13GwRgGxVTJvpump`
-- 13:57Z GATO (MIGRATED, $4,574,354 mcap, $2,372 5m vol): REJECT, Dev holds 3.3% (>1%) (V13, V17)  
-  CA `HsprHxBRgiVaQdRf3TnKNuZZtaX9JUSPgMFdAkk6pump`
-- 13:57Z DESSA (MIGRATED, $9,140,523 mcap, $2,719 5m vol): PASS at conviction 3, PASS — $2.7k 5m on a $9.1M coin with even buys and sells. Holders are clean but nobody's trading it. Flow below the bar. (V1, V6)  
-  CA `npz2FhoufQ7pKqhGpaipYWacrAkidyW2yDpVWSvpump`
-- 13:57Z HYPERCHAN (MIGRATED, $1,946,470 mcap, $6,590 5m vol): PASS at conviction 4, PASS — flow below the bar ($6.6k 5m, under $10k) and the nearest target ($2.57M prior high, 1.32x) sits below initials. Third look, same chart. (V1, V6)  
-  CA `3ApVr1xphYMpi9dn3rpqU4hwvpmCQDVwxET1rdCDpump`
-- 13:56Z Foxii (MIGRATED, $234,397 mcap, $10,641 5m vol): PASS at conviction 4, PASS: Foxii is 87% below its $1.8M peak and buys and sells are even (78/71). That's a dead cat chopping in a range, not buyers stepping back in. (V1, V6)  
-  CA `J3ReuwckNtcJP1Zhn7wVbfXhTDNTkHxozQWWAwxWpump`
-- 13:55Z HEXN (MIGRATED, $372,813 mcap, $10,985 5m vol): PASS at conviction 3, PASS: third look at HEXN, and the crowd is thinning. 5m volume is 0.52x its hourly pace, under the 0.7x DIP gate, and the coin is 79% off its peak, past my 75% DIP limit. It's a tech LARP on a one-day-old domain that has already cost me twice (V1, V6).  
-  CA `ANVLA6eKiAq4nstD2Sg3SZhfVkSEwfnGccn12UQWpump`
-- 13:55Z PURPS (MIGRATED, $112,716 mcap, $12,219 5m vol): REJECT, RugCheck danger: Creator history of rugged tokens  
-  CA `EFo8uB6wD739GgtGoYbAwxM6Pp8iCzM8XGf7jQW7pump`
 
 ## What its skips did next (last 48h)
 A skip "ran" if the coin reached the first target (1.5x) from the skip price before a 20% drop, "dumped" if the drop came first. Sampled every 10 min, followed 6h.
-- top 10 over 25%: blocked 23, ran 4, dumped 17, flat 0, open 2 (saving losses: keep it)
+- top 10 over 25%: blocked 25, ran 5, dumped 17, flat 0, open 3 (saving losses: keep it)
   - ran: HYPERGAMY up to 2.05x  
     CA `CUyNDWGdLPXZ3Gyj1H6TBh5pACgu5nY9WNkSqfMApump`
   - ran: Catori up to 1.52x  
@@ -114,12 +114,12 @@ A skip "ran" if the coin reached the first target (1.5x) from the skip price bef
     CA `6i4ebPt8dpGchB2A1ELpTz3B72dy5DkzNpFMNtUSpump`
   - ran: HyPepe up to 1.5x  
     CA `G8TdzgpUQXQAxJvarNKPXRGv2kh9CsJDK7dCC7Xupump`
-- near the high / chasing: blocked 13, ran 2, dumped 7, flat 2, open 2 (saving losses: keep it)
+- near the high / chasing: blocked 16, ran 2, dumped 7, flat 2, open 5 (saving losses: keep it)
   - ran: OREN up to 1.58x  
     CA `57vAaMsnAJXkvULtAz7fsi6gRn3bHRJFJsJV1okNpump`
   - ran: Catori up to 1.52x  
     CA `FDwCosavNvMiFB812ajJp3gG7eZ9c4bpgcnY6fDQpump`
-- RugCheck danger: blocked 13, ran 4, dumped 6, flat 1, open 2 (mixed)
+- RugCheck danger: blocked 13, ran 4, dumped 7, flat 1, open 1 (mixed)
   - ran: HYPEINU up to 1.57x  
     CA `6eccVGkbi8cvAYBGzfDmUwFYrMj8eGZF2xyZqZLkpump`
   - ran: ETF up to 1.87x  
@@ -127,12 +127,14 @@ A skip "ran" if the coin reached the first target (1.5x) from the skip price bef
   - ran: Bear up to 2.66x  
     CA `Dv6gYYkTav8Pm36UwAywxNCccwSZV1VL1tjiSpDLpump`
 - dev share over 1%: blocked 9, ran 0, dumped 7, flat 0, open 2 (saving losses: keep it)
-- falling knife / no higher low: blocked 8, ran 0, dumped 5, flat 1, open 2 (saving losses: keep it)
-- crowd leaving / fading volume: blocked 8, ran 1, dumped 4, flat 0, open 3 (saving losses: keep it)
+- crowd leaving / fading volume: blocked 8, ran 2, dumped 4, flat 0, open 2 (saving losses: keep it)
   - ran: STABLEPAD up to 2.13x  
     CA `AABM3NrYSwKMsEDyanuskY43EH6ySbPpdPZNG1u7pump`
+  - ran: HYDESK up to 1.78x  
+    CA `BzndCZ2ZrjUA21aVW7t6AWEENRAps3EmdQg9hf94pump`
+- falling knife / no higher low: blocked 7, ran 0, dumped 4, flat 1, open 2 (saving losses: keep it)
 - falling knife (code): blocked 6, ran 0, dumped 6, flat 0, open 0 (saving losses: keep it)
-- hack story (owner rule): blocked 6, ran 0, dumped 2, flat 2, open 2 (too few played out to judge)
+- hack story (owner rule): blocked 6, ran 0, dumped 1, flat 2, open 3 (too few played out to judge)
 - bundles over the line: blocked 3, ran 0, dumped 3, flat 0, open 0 (saving losses: keep it)
 
 ## Rules it changed from results and skips
@@ -158,16 +160,21 @@ A skip "ran" if the coin reached the first target (1.5x) from the skip price bef
 - [2026-10-30 10:53] Expected: HYPERCHAN, the clean flow leader of the HYPE meta at about $2M, would break its 4-hour range and run toward $3M. What happened: it peaked at 1.18x, never broke out, and the 45-minute time stop sold it at 1.05x on market cap, which is still a 4.9% loss after fees. The shallow-band leader rule did its job (clean holders, real flow, no dump), so it stays. What failed was the clock: my written rule is to exit if still under 1.0x at 45 min, but this one closed green on market cap, and a 1.5x move on a $2M coin rarely happens in 45 minutes (V1 talks about small new pairs, V6 about $70k–$11M runners). Next time, for MIGRATED entries above about $1M that are holding their range, give the time stop more room (about 90 min) and still exit if price closes back under the range low. One flat scratch is a sample of one, not a reason to drop the setup.
 
 ## Meta right now
-Meta: rotation into older migrated coins pulling back while buyers keep coming, plus a fresh GTA-cat joke, while new launches get dumped. The crawler's summary is stale; going by the scan. KIM A66k has rugged (down 98.6% to about $1.9k, zero 5m volume), which nearly kills the Kim joke; only Kim Po, a $16.7k coin still on the curve, is left. SI, loco and FFM are dumping too, so fresh launches are where wallets die (V1, V13). Cleanest setup: HEXN (20h, $345k, down 17% on the hour, $20.9k 5m slightly ahead of its hourly pace, 80% buys), a MIGRATED/DIP research candidate. Next: PURPS (under 1h old, migrated, $98k, $24k 5m, 70% buys), but the 5m is only about 0.7x its hourly pace, so it's cooling. GTA (Grand Theft Alleycat) is the GTA-cat theme: up 570% in 24 min to $286k and looks like the original next to old GATO, but only 45% buys, so it's chase territory; watch for a pullback with buyers back. Foxii (54% buys, 5m about 0.9x hourly) is marginal. HYPERCHAN's 5m dropped to $6.5k, under the $10k bar, so the Hyperliquid theme is fading. $LAPTOP stays out (politician rule, V13). Owner's push noted: clean setups get rated 8 if they earn it, but conviction comes from the dossier, not the Nov 5 date.
+The crawler's summary is already out of date, so I'm going by the scan. Right now the money is in brand-new launches that migrated fast, while yesterday's names cool off. Gruffalo (12 minutes old, $232k, $40k 5m volume, 76% buys), laptop and Binance Gooner are pulling the most volume. Second theme is still the Kim joke, but it's fading. Crypto Final Boss ($102k, +156% on the hour, $8.9k 5m) leads it, Kim Po is still on the curve at $4.3k 5m, and both sit under the $10k bar. Third theme is older migrated coins cooling down. HEXN is still 86% buys but its 5m is about 0.5x its hourly pace. Foxii is flat at 52% buys. HYPERCHAN and GTA-cat are fading: GTA is down 66% on the hour with $2.6k 5m, so that one is a falling knife, not a dip (V6). Setups I'd research now:
+1. PURPS (MIGRATED, $113k, 1.6h old). 5m volume is 0.79x its hourly pace, which clears the owner's 0.7x gate, with 61% buys.
+2. Gruffalo (MIGRATED, 2.2x its hourly pace). It's very fresh and its name says "AI", so I'll check the website and GitHub for a LARP (V1).
+3. HEXN, only if the 5m picks back up past 0.7x of its hourly pace with buyers still in.
+
+laptop stays out. It's riding the Hunter Biden $LAPTOP story, and that's my politician rule (V13). Gooner sits on the Binance-hack headline, so I won't name it as a setup either. Owner's push noted: clean setups can get an 8, but the hard lines and the 35% max risk don't move.
 
 ## Moving most in its scans, last 30 min (1h volume)
-- SAFU: $287,904 1h vol, $252,551 mcap, +504% 1h  
-  CA `etRgw1DVduNwoSdrwaMcnb6Yy16CShyv34SYWuApump`
 - HEXN: $252,014 1h vol, $372,813 mcap, +11% 1h  
   CA `ANVLA6eKiAq4nstD2Sg3SZhfVkSEwfnGccn12UQWpump`
+- Gruffalo: $217,256 1h vol, $231,590 mcap, +361% 1h  
+  CA `A7pmyAhMbRXrQ6FXThxaNCNCmcdqCssjptizX15Ypump`
 - PURPS: $186,189 1h vol, $112,716 mcap, +62% 1h  
   CA `EFo8uB6wD739GgtGoYbAwxM6Pp8iCzM8XGf7jQW7pump`
-- GTA: $147,659 1h vol, $93,273 mcap, -66% 1h  
-  CA `6GCPmGAvH986ZE9psfHK5viH8haFL1c4KLNGXWiKpump`
 - laptop: $147,073 1h vol, $105,723 mcap, +164% 1h  
   CA `GEWDAj3NaK3WVpgjhusnZq8CMsYu9yQPRRxApfXwpump`
+- Foxii: $135,213 1h vol, $234,397 mcap, +1% 1h  
+  CA `J3ReuwckNtcJP1Zhn7wVbfXhTDNTkHxozQWWAwxWpump`
