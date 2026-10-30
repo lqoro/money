@@ -1,13 +1,13 @@
 # Trencher live report
 
-Updated 2026-10-30T11:07:13Z (paper trading, never real money)
+Updated 2026-10-30T11:22:52Z (paper trading, never real money)
 
 - Equity: $93.79 (-6.2% vs $100 start)
-- Goal: $1,000 by 2026-11-05 05:03Z (pressing for it): at 9.4% of it, 5.7 days left, needs +51% a day from here
+- Goal: $1,000 by 2026-11-05 05:03Z (pressing for it): at 9.4% of it, 5.7 days left, needs +51.1% a day from here
 - Closed trades: 13, 2 wins
 - Fees paid: $7.85 (axiom $1.10, network $5.57, pool $1.04), plus $1.62 lost to slippage
 - New trades: on
-- Brain: subscription, 629 calls and 0 plan-limit hits in 48h
+- Brain: subscription, 632 calls and 0 plan-limit hits in 48h
 
 ## Scorecard (after fees)
 - 13 closed, 2 won (15%), net $-6.21
@@ -74,9 +74,13 @@ Updated 2026-10-30T11:07:13Z (paper trading, never real money)
   CA `3ApVr1xphYMpi9dn3rpqU4hwvpmCQDVwxET1rdCDpump`
 
 ## Last scan
-- 11:06Z: 3 coins, 2 with pairs, 0 passed the market filters, 0 researched
+- 11:22Z: 3 coins, 2 with pairs, 1 passed the market filters, 1 researched
 
 ## Coins it looked at, and why it passed
+- 11:22Z HEXN (DIP, $458,857 mcap, $10,708 5m vol): PASS at conviction 3, PASS: HEXN for the third time, and it still fails my DIP attention gate. 5m volume is 0.64x the hourly pace against a 0.7x floor, sellers are 59% of 5m trades, and the story is a tech LARP that has already beaten me twice (V1).  
+  CA `ANVLA6eKiAq4nstD2Sg3SZhfVkSEwfnGccn12UQWpump`
+- 11:10Z HYPERCHAN (MIGRATED, $2,079,393 mcap, $8,645 5m vol): PASS at conviction 3, PASS: 5m is $8.6k at 0.45x hourly pace, 19% off the high. Shallow band needs flow at or above pace. Blocker: flow below pace (V1, V6).  
+  CA `3ApVr1xphYMpi9dn3rpqU4hwvpmCQDVwxET1rdCDpump`
 - 11:05Z Kim (FINAL_STRETCH, $27,029 mcap, $29,863 5m vol): REJECT, Top 10 hold 28.7% ex-pool (>25%) (V13)  
   CA `5yodPm7MPPLWEcvHwVJAYjTqu2n5A1KSEwRJUpt8pump`
 - 10:54Z CTO (MIGRATED, $382,995 mcap, $20,714 5m vol): PASS at conviction 4, PASS — 1.5h-old vertical runner 10% off the top, and 5m volume is down to 0.44x its hourly pace. The crowd is leaving and I'd be the exit liquidity (V1, V7).  
@@ -93,14 +97,10 @@ Updated 2026-10-30T11:07:13Z (paper trading, never real money)
   CA `J3ReuwckNtcJP1Zhn7wVbfXhTDNTkHxozQWWAwxWpump`
 - 10:36Z HEXN (MIGRATED, $349,328 mcap, $15,756 5m vol): PASS at conviction 3, PASS — HEXN fell ~49% in one 15m candle and is sitting 3% above the hourly low with no higher low, 80.7% off peak, on a no-GitHub tech LARP that already beat me twice. Falling knife. (V1, V6)  
   CA `ANVLA6eKiAq4nstD2Sg3SZhfVkSEwfnGccn12UQWpump`
-- 10:23Z ZERODAY (no setup, $2,014 mcap, $12,479 5m vol): REJECT, Hack story ("zeroday" in the name or ticker): these tend to go down, owner rule  
-  CA `9ZRHMXqFTucBLuCs3TqmDEPjQCzhSuZ3bQR6dqpepump`
-- 10:09Z CTO (MIGRATED, $203,964 mcap, $43,050 5m vol): PASS at conviction 4, PASS: 43 minutes old and only 7.3% off a high set 12 minutes ago. That's a chase on a recycled Elon "Chief Troll Officer" name with two bigger CTO tickers already out there (V1, V3).  
-  CA `9hhLCxn41KZcmK1vAf7u5M6vKLHRcsVn1VmVgUrhpump`
 
 ## What its skips did next (last 48h)
 A skip "ran" if the coin reached the first target (1.5x) from the skip price before a 20% drop, "dumped" if the drop came first. Sampled every 10 min, followed 6h.
-- top 10 over 25%: blocked 23, ran 5, dumped 15, flat 0, open 3 (saving losses: keep it)
+- top 10 over 25%: blocked 23, ran 5, dumped 16, flat 0, open 2 (saving losses: keep it)
   - ran: HYPERGAMY up to 2.05x  
     CA `CUyNDWGdLPXZ3Gyj1H6TBh5pACgu5nY9WNkSqfMApump`
   - ran: Catori up to 1.52x  
@@ -114,7 +114,7 @@ A skip "ran" if the coin reached the first target (1.5x) from the skip price bef
     CA `6i4ebPt8dpGchB2A1ELpTz3B72dy5DkzNpFMNtUSpump`
   - ran: HyPepe up to 1.5x  
     CA `G8TdzgpUQXQAxJvarNKPXRGv2kh9CsJDK7dCC7Xupump`
-- near the high / chasing: blocked 14, ran 2, dumped 8, flat 2, open 2 (saving losses: keep it)
+- near the high / chasing: blocked 14, ran 2, dumped 9, flat 2, open 1 (saving losses: keep it)
   - ran: OREN up to 1.58x  
     CA `57vAaMsnAJXkvULtAz7fsi6gRn3bHRJFJsJV1okNpump`
   - ran: Catori up to 1.52x  
@@ -134,10 +134,10 @@ A skip "ran" if the coin reached the first target (1.5x) from the skip price bef
 - bundles over the line: blocked 4, ran 1, dumped 3, flat 0, open 0 (saving losses: keep it)
   - ran: calm up to 1.53x  
     CA `4HSHFbFiKuMvZW7yGiDTab17B63MzBkkhadFKxhkpump`
+- crowd leaving / fading volume: blocked 4, ran 1, dumped 2, flat 0, open 1 (saving losses: keep it)
+  - ran: STABLEPAD up to 2.13x  
+    CA `AABM3NrYSwKMsEDyanuskY43EH6ySbPpdPZNG1u7pump`
 - hack story (owner rule): blocked 4, ran 0, dumped 2, flat 2, open 0 (too few played out to judge)
-- other: blocked 3, ran 1, dumped 2, flat 0, open 0 (saving losses: keep it)
-  - ran: SI up to 1.54x  
-    CA `6zuDiAw3NviBwcLZfTztHJgtCmeNWfyFxYVoXtNYpump`
 
 ## Rules it changed from results and skips
 - 10-30 09:47Z loosened: MIGRATED entry distance from the local high: 20% → 10% (This is the owner's override and I follow it. My data disagrees: near-high skips went 1 ran / 8 dumped (4 still open), and SI (-38%) and CATCULUS (-59%) were both near-high entries. To keep the damage small, the 10–20% band is limited to the meta's flow leader with 5m volume at or above its hourly pace. If shallow entries keep losing, I'll report that next review.)
@@ -162,16 +162,16 @@ A skip "ran" if the coin reached the first target (1.5x) from the skip price bef
 - [2026-10-30 10:53] Expected: HYPERCHAN, the clean flow leader of the HYPE meta at about $2M, would break its 4-hour range and run toward $3M. What happened: it peaked at 1.18x, never broke out, and the 45-minute time stop sold it at 1.05x on market cap, which is still a 4.9% loss after fees. The shallow-band leader rule did its job (clean holders, real flow, no dump), so it stays. What failed was the clock: my written rule is to exit if still under 1.0x at 45 min, but this one closed green on market cap, and a 1.5x move on a $2M coin rarely happens in 45 minutes (V1 talks about small new pairs, V6 about $70k–$11M runners). Next time, for MIGRATED entries above about $1M that are holding their range, give the time stop more room (about 90 min) and still exit if price closes back under the range low. One flat scratch is a sample of one, not a reason to drop the setup.
 
 ## Meta right now
-The meta has split three ways. Brand-new pump.fun launches are dying fast: CZ, Kenneth, HYPER402, MONEKO and the blank-ticker coins are all at $0–700 of 5m flow, and Stonka has fallen to $15k with $863 on the 5m, so it's dead and off the watchlist. The money sits in two places. First, migrated coins a few hours old that are holding buyers: HEXN ($636k, 17h old, $13.1k 5m, 86% buys, +23% 1h) and HYPERCHAN ($2M, Hyperliquid theme while HYPE trends on CoinGecko, $12.5k 5m, now back over the $10k bar, 66% buys, flat 1h). Second, one fresh troll-joke runner, CTO "Chief Troll Officer" (42 minutes old, $204k, $43k 5m, 71% buys, +376% 1h). That's the strongest flow on the board, but it's vertical and unproven, and a 40-minute-old coin at +376% is where you become exit liquidity (V1, V7). Setups to research now: HEXN as MIGRATED (best risk/reward, buyers still in control), HYPERCHAN as MIGRATED now that volume cleared $10k, and CTO only if it pulls back toward ~10% off its high with 5m volume still above 0.7x its hourly pace. Foxii (-47% 1h, 51% buys) is a falling knife, GATO and DESSA are bleeding at sub-50% buys, and anything tied to the "binance hack / drained" headlines is off the table by rule.
+The meta right now is troll jokes plus Hyperliquid, and almost everything else is dying on launch. The troll joke is the loudest. "Chief Troll Officer" has two tokens. 9hhL… is the original: 1.5h old, $383k cap, $21k on the 5m, 62% buys. HftE… is a 12-minute-old vamp at $84k that is pulling $48k on the 5m and draining the original's liquidity (V1, V13). The Hyperliquid theme is holding up with HYPE trending on CoinGecko. HYPERCHAN sits flat at $2M with 72% buys, but its 5m is $8.6k, back under the $10k bar, so the crawler's summary is stale there. PERPS ($59k, −30% 1h) is the weak tail of that theme. Fresh pump.fun launches are fading hard: SeaZ, CZ, Catori and XEX are all down 23–83% on the hour with sub-$3k flow. DAEMON and Kim are only minutes old, and we don't snipe at that age (V5, V6). Setups I'd research now: the original CTO (9hhL) as MIGRATED, only on a pullback of about 10% from its high with 5m volume still at least 0.7x its hourly pace. HYPERCHAN as MIGRATED only if the 5m gets back over $10k. I'm passing on the CTO vamp (HftE) because it's a copycat. I'm passing on DESSA because buys are at 38% while volume is still there. The owner wants more aggression. I'll press harder on clean setups, but that doesn't make a vamp or a dead 5m a buy.
 
 ## Moving most in its scans, last 30 min (1h volume)
 - CTO: $569,694 1h vol, $382,995 mcap, +133% 1h  
   CA `9hhLCxn41KZcmK1vAf7u5M6vKLHRcsVn1VmVgUrhpump`
-- Foxii: $146,343 1h vol, $614,410 mcap, +2% 1h  
-  CA `J3ReuwckNtcJP1Zhn7wVbfXhTDNTkHxozQWWAwxWpump`
-- SeaZ: $116,663 1h vol, $6,422 mcap, +8% 1h  
-  CA `DGtDAjPdn5LqxDXgi7J6enAjh22MeJbi8ZmaFCvvpump`
+- HYPERCHAN: $230,643 1h vol, $2,079,393 mcap, +5% 1h  
+  CA `3ApVr1xphYMpi9dn3rpqU4hwvpmCQDVwxET1rdCDpump`
+- HEXN: $201,231 1h vol, $458,857 mcap, +33% 1h  
+  CA `ANVLA6eKiAq4nstD2Sg3SZhfVkSEwfnGccn12UQWpump`
 - CTO: $80,350 1h vol, $84,391 mcap, +106% 1h  
   CA `HftEwseBtcbgxj9j7AfgsA5ZiTEhSK9qWXZs8rzfpump`
-- CZ: $54,255 1h vol, $9,471 mcap, -63% 1h  
-  CA `DZPEJunsXpwprRQffkMi4q23ZtsLhtLujHCSztyx786z`
+- SeaZ: $56,914 1h vol, $5,289 mcap, -37% 1h  
+  CA `DGtDAjPdn5LqxDXgi7J6enAjh22MeJbi8ZmaFCvvpump`
