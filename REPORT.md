@@ -1,13 +1,13 @@
 # Trencher live report
 
-Updated 2026-10-30T02:01:24Z (paper trading, never real money)
+Updated 2026-10-30T02:16:33Z (paper trading, never real money)
 
-- Equity: $96.95 (-3.0% vs $100 start)
-- Goal: $1,000 by 2026-11-05 05:03Z (a stretch, survival first): at 9.7% of it, 6.1 days left, needs +46.4% a day from here
+- Equity: $96.74 (-3.3% vs $100 start)
+- Goal: $1,000 by 2026-11-05 05:03Z (a stretch, survival first): at 9.7% of it, 6.1 days left, needs +46.5% a day from here
 - Closed trades: 10, 2 wins
 - Fees paid: $6.06 (axiom $0.68, network $4.60, pool $0.64), plus $0.99 lost to slippage
 - New trades: on
-- Brain: subscription, 536 calls and 0 plan-limit hits in 48h
+- Brain: subscription, 538 calls and 0 plan-limit hits in 48h
 
 ## Scorecard (after fees)
 - 10 closed, 2 won (20%), net $-3.10
@@ -24,10 +24,10 @@ Updated 2026-10-30T02:01:24Z (paper trading, never real money)
   - stop loss: 3, 0 won, net $-4.75, fees+slip $1.83, peak 1.07x → 0.55x
   - trailing stop: 2, 2 won, net $+4.21, fees+slip $2.04, peak 3.32x → 1.72x
   - other: 1, 0 won, net $-0.03, fees+slip $0.67, peak 1.4x → 0.99x
-- To $1,000: $903.05 to go; at $-0.31 a trade this pace doesn't get there
+- To $1,000: $903.26 to go; at $-0.31 a trade this pace doesn't get there
 
 ## Open positions
-- HEXN (DIP): cost $4.0, 1.09x, fees $0.27  
+- HEXN (DIP): cost $4.0, 1.03x, fees $0.27  
   CA `ANVLA6eKiAq4nstD2Sg3SZhfVkSEwfnGccn12UQWpump`
 
 ## Recent trades
@@ -75,9 +75,13 @@ Updated 2026-10-30T02:01:24Z (paper trading, never real money)
   CA `EFaQg27P3c3PHob2mFw4mHCUcWBHHDdatAEsXq2xpump`
 
 ## Last scan
-- 02:01Z: 1 coins, 0 with pairs, 0 passed the market filters, 0 researched
+- 02:16Z: 5 coins, 4 with pairs, 0 passed the market filters, 0 researched
 
 ## Coins it looked at, and why it passed
+- 02:08Z ZERODAY (MIGRATED, $65,758 mcap, $64,584 5m vol): PASS at conviction 2, PASS: hack-story ticker, and the third Zeroday copy in two hours. The first two are down 98–99%. Owner note, V1, V13.  
+  CA `2h5v9mmUU7esUdLckTA6MfY3rYPbb2Hxem9NTo3rpump`
+- 02:05Z DESSA (DIP, $7,138,923 mcap, $2,578 5m vol): REJECT, Dip with fading attention is a falling knife, not a dip (5m at 0.62x the hour's pace, under 0.7x)  
+  CA `npz2FhoufQ7pKqhGpaipYWacrAkidyW2yDpVWSvpump`
 - 01:56Z SENSE (MIGRATED, $159,373 mcap, $2,263 5m vol): PASS at conviction 2, PASS: 91% off the peak, a −19% five-minute candle onto the hourly low, $2.3k on the 5m. Falling knife with no higher low. (V1, V6)  
   CA `GydpvgKppv8a4gGQqAQsyQJxtQN4S6Ym9gKxjnN3mfun`
 - 01:56Z DEADGUY (MIGRATED, $34,024 mcap, $4,847 5m vol): PASS at conviction 3, PASS. It's 2.5 minutes old, already 21% off its bond spike, and the top 10 hold exactly 25.0%, right on the hard line. That's a sniper's table, not mine (V1, V6, V13).  
@@ -94,14 +98,10 @@ Updated 2026-10-30T02:01:24Z (paper trading, never real money)
   CA `57vAaMsnAJXkvULtAz7fsi6gRn3bHRJFJsJV1okNpump`
 - 01:35Z GATO (MIGRATED, $4,474,702 mcap, $4,973 5m vol): REJECT, Dev holds 3.3% (>1%) (V13, V17)  
   CA `HsprHxBRgiVaQdRf3TnKNuZZtaX9JUSPgMFdAkk6pump`
-- 01:35Z SAFU (MIGRATED, $71,077 mcap, $14,357 5m vol): REJECT, Top 10 hold 25.5% ex-pool (>25%) (V13)  
-  CA `AHgqStQviBDBiPra3cLxb8gQs2auRAmXT4s9v7LKpump`
-- 01:34Z SWAN (DIP, $108,185 mcap, $34,177 5m vol): REJECT, Dip with fading attention is a falling knife, not a dip (5m at 0.59x the hour's pace, under 0.7x)  
-  CA `EFaQg27P3c3PHob2mFw4mHCUcWBHHDdatAEsXq2xpump`
 
 ## What its skips did next (last 48h)
 A skip "ran" if the coin reached the first target (1.5x) from the skip price before a 20% drop, "dumped" if the drop came first. Sampled every 10 min, followed 6h.
-- near the high / chasing: blocked 11, ran 1, dumped 4, flat 0, open 6 (saving losses: keep it)
+- near the high / chasing: blocked 11, ran 1, dumped 5, flat 0, open 5 (saving losses: keep it)
   - ran: HYPERPAD up to 3.02x  
     CA `31FZ9fnK5NqFrymDmNdwKZmrnVvYtpKoVdWXDeXTpump`
 - top 10 over 25%: blocked 9, ran 0, dumped 7, flat 0, open 2 (saving losses: keep it)
@@ -111,6 +111,9 @@ A skip "ran" if the coin reached the first target (1.5x) from the skip price bef
   - ran: BEAR up to 1.59x  
     CA `6i4ebPt8dpGchB2A1ELpTz3B72dy5DkzNpFMNtUSpump`
 - falling knife / no higher low: blocked 4, ran 0, dumped 2, flat 0, open 2 (too few played out to judge)
+- other: blocked 4, ran 1, dumped 2, flat 0, open 1 (saving losses: keep it)
+  - ran: SI up to 1.54x  
+    CA `6zuDiAw3NviBwcLZfTztHJgtCmeNWfyFxYVoXtNYpump`
 - RugCheck danger: blocked 4, ran 3, dumped 0, flat 0, open 1 (cost more winners than it saved: loosen it)
   - ran: HYPEINU up to 1.57x  
     CA `6eccVGkbi8cvAYBGzfDmUwFYrMj8eGZF2xyZqZLkpump`
@@ -124,11 +127,8 @@ A skip "ran" if the coin reached the first target (1.5x) from the skip price bef
 - bundles over the line: blocked 3, ran 1, dumped 2, flat 0, open 0 (saving losses: keep it)
   - ran: calm up to 1.53x  
     CA `4HSHFbFiKuMvZW7yGiDTab17B63MzBkkhadFKxhkpump`
-- other: blocked 3, ran 1, dumped 2, flat 0, open 0 (saving losses: keep it)
-  - ran: SI up to 1.54x  
-    CA `6zuDiAw3NviBwcLZfTztHJgtCmeNWfyFxYVoXtNYpump`
+- falling knife (code): blocked 3, ran 0, dumped 2, flat 0, open 1 (too few played out to judge)
 - crowd leaving / fading volume: blocked 2, ran 0, dumped 1, flat 0, open 1 (too few played out to judge)
-- holders or bundles unverified: blocked 2, ran 0, dumped 0, flat 0, open 2 (too few played out to judge)
 
 ## Rules it changed from results and skips
 - 10-30 00:33Z added: Break-even stop once a trade reaches 1.3x (3 of 7 losers peaked at 1.24–1.64x and then closed red. This matches the soul's 'a winner never turns into a loss'.)
@@ -153,16 +153,16 @@ A skip "ran" if the coin reached the first target (1.5x) from the skip price bef
 - [2026-10-30 01:19] Expected: SWAN was a MIGRATED pullback buy, 29% off its high with a higher-low base and $49k on the 5m, and I wanted to retest $166k (about 1.4x) before taking initials at 1.5x (V1, V6). What happened: it peaked at exactly 1.40x, the retest level my own thesis named, then rejected there, and the break-even stop sold it at 1.16x for -0.7%. The pullback-entry rule and the 1.3x break-even rule both did their jobs, since a 1.4x peak didn't turn into a real loss. Rule for next time: when the prior high I'm targeting sits below my initials multiple, sell part of the position at that level (sell initials or half, V11) instead of waiting for 1.5x. That changes the exit, not the pick, so it's a refinement from one trade, not a new ban.
 
 ## Meta right now
-The crawler's summary is already stale. Zero Inu (FnvQ) is down 99% in the hour and sits at a $1.8k cap. Zero Cat Dn6 is down 93% at $2.7k. The "Zero" wave rugged inside an hour, so I won't touch it (ZERODAY, 18 min old, $99k, +146%, 50/50 buys, is the same theme catching late money). What's actually trading has three parts. First, very fast animal and joke launches that run and then dump inside the hour: both Bear coins are down 77% and 48%, 🙏 is down 58%, and SOLHYPE is down 66%. Those are fading and they're traps. Second, a few migrated coins that already proved themselves and are holding up: HOUSEWORM at $813k, 8.7h old, 73% buys, and HEXN at $479k, 8h old, +16% on the hour but only 43% buys. Third, fresh tickers riding the crypto culture of the day: SAFU ("funds are SAFU", the Binance joke) at $46k, +186%, $5.7k on the 5-minute, and HYPERGAMY at $23.5k on the curve with $31k on the 5-minute, 6 minutes old. Setups I'd look at now: HOUSEWORM as a MIGRATED or DIP probe if the 5-minute volume climbs back toward $10k (it's $4.4k now, so that's the blocker), HEXN only if buyers take back control from sellers, and HYPERGAMY as FINAL_STRETCH, with the pre-bond dump in mind (V1), if it's still printing over $10k per 5 minutes as it nears bond. SAFU needs its volume to reach $10k first. I'm skipping $LAPTOP outright: it's a Hunter Biden coin pushed by a political figure and it's already down 98% (V13). Any coin riding a hack story also gets a pass, per the owner's note.
+Meta is market-panic humor: crash jokes are getting the volume. SWAN (Black Swan, $108k, $34k 5m, +138%/1h, 1.1h old), SAFU ($71k, $14k 5m, +93%) and the fresh "down" ($8.8k cap, $23k 5m) are rising. Older versions are fading or dead: praying -52%, stay calm $810 5m, Zeroday -98%. Smaller themes: fresh Grok-adjacent curve launches (GRID +741%, $17k 5m, 12 min old) and proven migrated coins holding (HEXN $501k, 84% buys, $19k 5m). Animal launches (Bear coins) are dead. Setups: SWAN MIGRATED (best fit), SAFU MIGRATED (needs clean holders), HEXN MIGRATED if 5m stays above $10k, GRID FINAL_STRETCH only if above $10k/5m near bond, minding the pre-bond dump (V1). PASS down: 6 min old, sniping (V5/V6). PASS $LAPTOP: political, down ~98% (V13). PASS Zeroday: dead, hack-story name (owner note).
 
 ## Moving most in its scans, last 30 min (1h volume)
-- SWAN: $690,987 1h vol, $108,185 mcap, +138% 1h  
-  CA `EFaQg27P3c3PHob2mFw4mHCUcWBHHDdatAEsXq2xpump`
-- HEXN: $260,157 1h vol, $500,979 mcap, -2% 1h  
-  CA `ANVLA6eKiAq4nstD2Sg3SZhfVkSEwfnGccn12UQWpump`
-- SAFU: $64,629 1h vol, $71,077 mcap, +93% 1h  
-  CA `AHgqStQviBDBiPra3cLxb8gQs2auRAmXT4s9v7LKpump`
-- fear: $59,827 1h vol, $19,511 mcap, +629% 1h  
-  CA `6rWHEr3uMeB7DUu1eJ9oXXEBEDvcDNZU6NgNsRPXpump`
-- Zeroday: $57,499 1h vol, $1,835 mcap, -98% 1h  
-  CA `G68ruHgnWmHBg8QGbXkPv9UMpPhDmJ33MHTbdf5tpump`
+- ZERODAY: $186,519 1h vol, $65,758 mcap, +67% 1h  
+  CA `2h5v9mmUU7esUdLckTA6MfY3rYPbb2Hxem9NTo3rpump`
+- ZERODAY: $144,890 1h vol, $1,884 mcap, -99% 1h  
+  CA `7fR4hpUuHYaUTnnUeVLWke2GvMZdZtaeM8yFwu92pump`
+- GRID: $53,060 1h vol, $23,523 mcap, +741% 1h  
+  CA `DwGRhEKzgLb6su8sSdhXYTpvnmEmdtddmDEukXHhpump`
+- DESSA: $49,710 1h vol, $7,138,923 mcap, -6% 1h  
+  CA `npz2FhoufQ7pKqhGpaipYWacrAkidyW2yDpVWSvpump`
+- down: $45,961 1h vol, $4,456 mcap, +25% 1h  
+  CA `54UmjwjSGZqRdKhp65VUiQqf54BNRM7Cm9QBUUdEdown`
