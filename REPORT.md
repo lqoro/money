@@ -1,6 +1,6 @@
 # Trencher live report
 
-Updated 2026-10-30T03:16:53Z (paper trading, never real money)
+Updated 2026-10-30T03:17:11Z (paper trading, never real money)
 
 - Equity: $95.81 (-4.2% vs $100 start)
 - Goal: $1,000 by 2026-11-05 05:03Z (a stretch, survival first): at 9.6% of it, 6.1 days left, needs +47.1% a day from here
@@ -105,7 +105,7 @@ A skip "ran" if the coin reached the first target (1.5x) from the skip price bef
     CA `CUyNDWGdLPXZ3Gyj1H6TBh5pACgu5nY9WNkSqfMApump`
   - ran: laptop up to 1.71x  
     CA `FrE4wkPwzZ5Sxif28oabQD4P5ZbDT7oehBmZLm1Gpump`
-- near the high / chasing: blocked 10, ran 0, dumped 4, flat 0, open 6 (saving losses: keep it)
+- near the high / chasing: blocked 10, ran 0, dumped 5, flat 0, open 5 (saving losses: keep it)
 - too new / sniping: blocked 9, ran 3, dumped 6, flat 0, open 0 (saving losses: keep it)
   - ran: ZI up to 1.7x  
     CA `5q45EK4mRhuiuBmRYoaDs4m2xweaV7gn3zsFhsvcpump`
@@ -124,7 +124,7 @@ A skip "ran" if the coin reached the first target (1.5x) from the skip price bef
 - dev share over 1%: blocked 5, ran 1, dumped 3, flat 0, open 1 (saving losses: keep it)
   - ran: calm up to 1.53x  
     CA `4HSHFbFiKuMvZW7yGiDTab17B63MzBkkhadFKxhkpump`
-- falling knife (code): blocked 4, ran 0, dumped 1, flat 0, open 3 (too few played out to judge)
+- falling knife (code): blocked 4, ran 0, dumped 3, flat 0, open 1 (saving losses: keep it)
 - bundles over the line: blocked 3, ran 1, dumped 2, flat 0, open 0 (saving losses: keep it)
   - ran: calm up to 1.53x  
     CA `4HSHFbFiKuMvZW7yGiDTab17B63MzBkkhadFKxhkpump`

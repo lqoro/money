@@ -1,5 +1,5 @@
 {
- "updated_at": "2026-10-30T03:16:53Z",
+ "updated_at": "2026-10-30T03:17:11Z",
  "paused_new_trades": false,
  "brain": {
   "mode": "subscription",
@@ -557,7 +557,7 @@
  ],
  "learned_rules": "- **MIGRATED: buy the pullback, not the high.** Enter only 20\u201360% off the local high, holding above the hourly low, 5m volume \u2265 $10k, buys > sells (V1, V6). Both winners (CATBOT, FLOATER 34% off high) came this way.\n- **No buys within ~20% of the local high, clean bundles or not.** SI (0.65% bundles) lost 38% in 7 min; near-high skips: 0 ran / 4 dumped.\n- **Fresh migration (<1h) red off the bond spike: wait for a base above the hourly low** (V1). Too-new skips: 3 ran / 6 dumped.\n- **Vamp field: buy only the leader** by 5m volume and attention, never the 2nd/3rd copy (V1, V2).\n- **DIP needs a higher low visible in the data:** bounce off the hourly low, a pullback that holds above it, price now above that pullback low. Full size only if 5m volume \u2265 1x hourly avg; 0.7\u20131x = probe; under 0.7x = falling knife, pass. Stop just under the higher low. Never the first red-to-green candle (V1).\n- **A RugCheck \"danger\" flag that isn't a hard line is a conviction hit, not a cap.** Name the flag, take 1 point off conviction, size normally from there. Its skips ran 3/3. Hard lines never move.\n- **Hard blocks stay: top 10 >25%, dev >1%, bundles/insiders over the line, mint/freeze, LP** (V6, V13, V17). Their skips dumped 7/8, 2/3, 2/3.\n- **Take initials at 1.5x with sell-initials** (V11). CPU and FLOAT peaked at 1.6x and closed red without it.\n- **If the prior high I'm targeting sits below 1.5x, sell initials (or half) at that level.** SWAN topped exactly at its named 1.40x retest.\n- **At 1.3x, move the stop to break-even after fees.** A 1.6x peak must not close red.\n- **Green and 5m volume falls to half its hourly pace: sell half.** Small wins count.\n- **After initials, trail 20% from peak.** CATBOT's 35% trail gave back ~40% of a 4.44x peak.\n- **Time stop: under 1.0x at 45 min with no volume surge, exit** (V1).\n- **Stop review: SELL if top-10/insider share dropped and price still bleeds, or if the trade never went green and hit the stop in under 15 min** (that's a bad entry; fix entries, not stop width). Hold once only if narrative and 5m volume are clearly intact, with a new stop and a deadline.\n- **Re-enter a stopped coin only on a reclaim of the prior high** inside the re-entry window, never mid-range. The mid-range CATBOT buy-back died flat.\n",
  "meta": {
-  "age_minutes": 0,
+  "age_minutes": 1,
   "meta_summary": "The crawler's summary is already out of date. The scan says the panic-humor meta is fading. SWAN is down to $36k (-47% over 1h, only $3.6k of 5m volume), and \"buy the fear\" and Novembear show $0 of 5m volume, so that story is mostly over. Two themes are actually moving. The first is \"Hyper\"-named coins riding the Hyperliquid headlines: HYPERPAD ($76k, -52% 1h, but $9k 5m at 67% buys), HYPSTER and HyPepe. The second is the Laptop news cycle: hackonlaptop, The Binance Laptop and Hunter Biden's $LAPTOP. I pass on all the Laptop coins. They mix a political figure (V13) with a hack story (owner note), and the Binance Laptop already has $0 of 5m volume. Both ZERODAYs are passes too: they lead on volume, but the name is a hack story and the owner's note says those go down. Setups I'd research now: HEXN as a MIGRATED dip (V6 range: $392k cap, -18% 1h, $16.8k 5m at 75% buys, so attention is holding). HYPERPAD as a DIP probe only if buyers keep showing up and it holds near $9-10k on the 5m. FLUKE as MIGRATED ($87k, +125%, 63% buys) only if 5m volume gets back above $10k (it's at $9.5k). Exits per the owner: initials at 1.5x, 20% trail, sell when 5m volume fades.",
   "top_narratives": [
    "newuser50",
@@ -1073,9 +1073,9 @@
   "near the high / chasing": {
    "blocked": 10,
    "ran": 0,
-   "dumped": 4,
+   "dumped": 5,
    "flat": 0,
-   "pending": 6,
+   "pending": 5,
    "ran_examples": [],
    "dumped_examples": [
     {
@@ -1252,9 +1252,9 @@
   "falling knife (code)": {
    "blocked": 4,
    "ran": 0,
-   "dumped": 1,
+   "dumped": 3,
    "flat": 0,
-   "pending": 3,
+   "pending": 1,
    "ran_examples": [],
    "dumped_examples": [
     {
@@ -1262,6 +1262,18 @@
      "ca": "7fR4hpUuHYaUTnnUeVLWke2GvMZdZtaeM8yFwu92pump",
      "best_x": 1.0,
      "worst_x": 0.73
+    },
+    {
+     "symbol": "SAFU",
+     "ca": "AHgqStQviBDBiPra3cLxb8gQs2auRAmXT4s9v7LKpump",
+     "best_x": 1.18,
+     "worst_x": 0.55
+    },
+    {
+     "symbol": "HYPERPAD",
+     "ca": "31FZ9fnK5NqFrymDmNdwKZmrnVvYtpKoVdWXDeXTpump",
+     "best_x": 1.0,
+     "worst_x": 0.75
     }
    ]
   },
