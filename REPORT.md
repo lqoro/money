@@ -1,13 +1,13 @@
 # Trencher live report
 
-Updated 2026-10-30T12:38:54Z (paper trading, never real money)
+Updated 2026-10-30T12:53:55Z (paper trading, never real money)
 
 - Equity: $93.79 (-6.2% vs $100 start)
-- Goal: $1,000 by 2026-11-05 05:03Z (pressing for it): at 9.4% of it, 5.7 days left, needs +51.7% a day from here
+- Goal: $1,000 by 2026-11-05 05:03Z (pressing for it): at 9.4% of it, 5.7 days left, needs +51.8% a day from here
 - Closed trades: 13, 2 wins
 - Fees paid: $7.85 (axiom $1.10, network $5.57, pool $1.04), plus $1.62 lost to slippage
 - New trades: on
-- Brain: subscription, 649 calls and 0 plan-limit hits in 48h
+- Brain: subscription, 650 calls and 0 plan-limit hits in 48h
 
 ## Scorecard (after fees)
 - 13 closed, 2 won (15%), net $-6.21
@@ -74,9 +74,11 @@ Updated 2026-10-30T12:38:54Z (paper trading, never real money)
   CA `3ApVr1xphYMpi9dn3rpqU4hwvpmCQDVwxET1rdCDpump`
 
 ## Last scan
-- 12:38Z: 1 coins, 0 with pairs, 0 passed the market filters, 0 researched
+- 12:53Z: 1 coins, 0 with pairs, 0 passed the market filters, 0 researched
 
 ## Coins it looked at, and why it passed
+- 12:43Z Jesus (FINAL_STRETCH, $22,025 mcap, $42,560 5m vol): PASS at conviction 3, PASS: Jesuscoin is 5 minutes old on the bonding curve, and three bigger tokens already use the $Jesus ticker. Buying now is sniping a probable vamp, and I'm the slowest player at that table (V5, V6, V1).  
+  CA `6PNq3Dduz73HHFBFt1KYRqDEsgcPQE6BDDRgxAFupump`
 - 12:34Z HYDESK (FINAL_STRETCH, $20,158 mcap, $2,960 5m vol): PASS at conviction 3, PASS — $3k 5m volume fading at 0.65x pace, top of a +75% 5m candle, 40-min-old Hyperliquid copy with an empty half-day-old site. (V1, V6)  
   CA `BzndCZ2ZrjUA21aVW7t6AWEENRAps3EmdQg9hf94pump`
 - 12:25Z DESSA (MIGRATED, $9,091,849 mcap, $2,803 5m vol): PASS at conviction 3, PASS: 5m volume is $2.8k (0.54x its hourly pace) and sells lead buys 15 to 11. Clean holders don't help when the crowd has left (V1, V6, V13).  
@@ -103,7 +105,7 @@ A skip "ran" if the coin reached the first target (1.5x) from the skip price bef
     CA `FDwCosavNvMiFB812ajJp3gG7eZ9c4bpgcnY6fDQpump`
   - ran: ZERO up to 1.8x  
     CA `Ddwf94wedgCuMHAkwgti8A7sL2CxvBYJStJBj2cFpump`
-- too new / sniping: blocked 19, ran 4, dumped 15, flat 0, open 0 (saving losses: keep it)
+- too new / sniping: blocked 20, ran 4, dumped 15, flat 0, open 1 (saving losses: keep it)
   - ran: ZI up to 1.7x  
     CA `5q45EK4mRhuiuBmRYoaDs4m2xweaV7gn3zsFhsvcpump`
   - ran: BEAR up to 1.59x  
@@ -115,7 +117,7 @@ A skip "ran" if the coin reached the first target (1.5x) from the skip price bef
     CA `57vAaMsnAJXkvULtAz7fsi6gRn3bHRJFJsJV1okNpump`
   - ran: Catori up to 1.52x  
     CA `FDwCosavNvMiFB812ajJp3gG7eZ9c4bpgcnY6fDQpump`
-- RugCheck danger: blocked 12, ran 4, dumped 6, flat 1, open 1 (mixed)
+- RugCheck danger: blocked 12, ran 4, dumped 7, flat 1, open 0 (mixed)
   - ran: HYPEINU up to 1.57x  
     CA `6eccVGkbi8cvAYBGzfDmUwFYrMj8eGZF2xyZqZLkpump`
   - ran: ETF up to 1.87x  
@@ -165,9 +167,9 @@ The crawler's summary is stale: 9hhL, HftE, DESSA and PERPS aren't in the movers
   CA `A66kHaKDhK1wGpsPLaxBW6FThCeU4V9LSy3arGkNpump`
 - HEXN: $205,379 1h vol, $435,787 mcap, -12% 1h  
   CA `ANVLA6eKiAq4nstD2Sg3SZhfVkSEwfnGccn12UQWpump`
-- CTO: $200,733 1h vol, $2,087 mcap, -98% 1h  
-  CA `HftEwseBtcbgxj9j7AfgsA5ZiTEhSK9qWXZs8rzfpump`
 - Foxii: $172,883 1h vol, $243,914 mcap, -34% 1h  
   CA `J3ReuwckNtcJP1Zhn7wVbfXhTDNTkHxozQWWAwxWpump`
 - HYPERCHAN: $127,848 1h vol, $2,056,961 mcap, -2% 1h  
   CA `3ApVr1xphYMpi9dn3rpqU4hwvpmCQDVwxET1rdCDpump`
+- CTO: $116,945 1h vol, $2,084 mcap, -99% 1h  
+  CA `HftEwseBtcbgxj9j7AfgsA5ZiTEhSK9qWXZs8rzfpump`
