@@ -119,9 +119,11 @@ def check_exit(pos: Position, snap: dict, cfg: Config, now: float | None = None,
         frac = min(0.9, (pos.cost_usd - pos.realized_usd) * 1.06 / value) if value else 1.0
         return ExitSignal(max(0.1, frac), f"took initials at {multiple:.2f}x")
 
-    # Fading volume while green: the crowd is leaving, so bank some before it round-trips.
+    # Fading volume while green and initials still in: the crowd is leaving, so bank some
+    # before it round-trips. A free runner is left to the trailing stop.
     pace = volume_pace(snap)
-    green = pos.initials_taken or (plan.get("_be_armed") and price > be_stop)
+    green = ((pos.initials_taken and cfg.fade_trims_runner)
+             or (not pos.initials_taken and plan.get("_be_armed") and price > be_stop))
     if green and not plan.get("_fade_sold") and pace is not None and pace < cfg.fade_volume_ratio:
         since = plan.setdefault("_fade_since", now)
         if now - since >= cfg.fade_confirm_sec:

@@ -127,6 +127,19 @@ def evolve_schema() -> dict:
     }
 
 
+def _expectancy(pnls: list[float]) -> dict:
+    """After-fees results of a group of trades, led by expectancy (net $ per trade)."""
+    pnls = [float(p or 0) for p in pnls]
+    wins, losses = [p for p in pnls if p > 0], [p for p in pnls if p <= 0]
+    n = len(pnls)
+    return {"trades": n, "net_usd": round(sum(pnls), 2),
+            "expectancy_usd": round(sum(pnls) / n, 2) if n else 0.0,
+            "avg_win_usd": round(sum(wins) / len(wins), 2) if wins else None,
+            "avg_loss_usd": round(sum(losses) / len(losses), 2) if losses else None,
+            "biggest_win_usd": round(max(wins), 2) if wins else None,
+            "win_rate": round(len(wins) / n, 2) if n else None}
+
+
 def _parse_json(text: str) -> dict | None:
     try:
         return json.loads(text)
@@ -603,15 +616,19 @@ planned, so only hold with real evidence (cite it)."""
         by_setup: dict[str, list[float]] = {}
         for t in trades:
             by_setup.setdefault(t.get("setup", "?"), []).append(t.get("pnl_usd", 0))
-        stats = {k: {"trades": len(v), "pnl_usd": round(sum(v), 2), "win_rate": round(sum(x > 0 for x in v) / len(v), 2)}
-                 for k, v in by_setup.items()}
+        stats = {k: _expectancy(v) for k, v in by_setup.items()}
         recent = [{k: t.get(k) for k in ("symbol", "setup", "pnl_pct", "peak_multiple", "held_minutes",
                                           "exit_reasons", "stop_reviews")} for t in trades[-30:]]
         bounds = {k: list(v) for k, v in EVOLVABLE.items()}
         prompt = f"""Time to study your own results and evolve your strategy.
 
 Closed trades: {len(trades)}, wins: {wins}
+All trades: {json.dumps(_expectancy([t.get("pnl_usd", 0) for t in trades]))}
 By setup: {json.dumps(stats)}
+P&L is after fees and slippage. Judge every rule and parameter by expectancy (net $ per
+trade), not win rate: in memecoins one big runner pays for many small losses, so a change
+that wins more often but caps the runners is worse, and a lower win rate with a better
+expectancy is better. Cutting losers fast is what keeps the losses small.
 Last trades: {json.dumps(recent)}
 
 What the coins you passed on did next, by the reason you gave (skip review, last 48h):
@@ -650,5 +667,6 @@ skips candidates. Spend calls where they change outcomes.
    at 70% that keep dying → a tighter dip range; winners you sold too early → a higher
    initials multiple. Small sample sizes call for small changes. Leave the rest alone.
 Never loosen the hard lines in your soul; they aren't parameters.
-{self._fee_owned()} Drop any such rule from your learned rules."""
+{self._fee_owned()} Drop any such rule from your learned rules.
+{self._owner_note()}"""
         return self._ask(prompt, evolve_schema(), "high", web=False)

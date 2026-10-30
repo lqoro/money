@@ -188,7 +188,7 @@ fail, the brain's verdict, or a size under the minimum) and their CAs, and the
 coins moving most in its own scan.
 
 At the top of `REPORT.md` (and as `scorecard` in `status.json`) is an after-fees
-scorecard of every closed trade (`agent/scorecard.py`): win rate, average win and
+scorecard of every closed trade (`agent/scorecard.py`): expectancy (net per trade), win rate, average win and
 loss after costs, fees and slippage against the gross gain, how far trades peaked
 versus what they banked, the coins that hit 1.5x and still closed red, a line per
 exit reason (trailing stop, time stop, stop loss, target…), and what's left to

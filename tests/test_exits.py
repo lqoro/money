@@ -137,7 +137,19 @@ def test_no_fade_sell_before_it_is_green(cfg):
         assert tick(pos, cfg, 1.1, now=t + dt, **quiet) is None
 
 
-def test_fade_trims_the_runner_after_initials(cfg):
+def test_fade_leaves_the_runner_to_the_trail(cfg):
+    """Initials out: a quiet spell doesn't sell the free ride, only the trailing stop does."""
+    _, pos = opened(cfg, 10.0)
+    pos.initials_taken, t = True, time.time()
+    quiet = {"vol_5m": 2_000, "vol_1h": 90_000}
+    for dt in (0, 70, 200):
+        assert tick(pos, cfg, 2.5, now=t + dt, **quiet) is None
+    sig = tick(pos, cfg, 2.5 * (1 - cfg.trailing_stop_pct / 100) - 0.01, now=t + 300)
+    assert sig and "trailing stop" in sig.reason and sig.fraction == 1.0
+
+
+def test_fade_can_still_trim_the_runner(cfg):
+    cfg.fade_trims_runner = True
     _, pos = opened(cfg, 10.0)
     pos.initials_taken, t = True, time.time()
     quiet = {"vol_5m": 2_000, "vol_1h": 90_000}
