@@ -1,13 +1,13 @@
 # Trencher live report
 
-Updated 2026-10-30T10:21:33Z (paper trading, never real money)
+Updated 2026-10-30T10:37:05Z (paper trading, never real money)
 
-- Equity: $93.85 (-6.2% vs $100 start)
-- Goal: $1,000 by 2026-11-05 05:03Z (pressing for it): at 9.4% of it, 5.8 days left, needs +50.6% a day from here
+- Equity: $95.13 (-4.9% vs $100 start)
+- Goal: $1,000 by 2026-11-05 05:03Z (pressing for it): at 9.5% of it, 5.8 days left, needs +50.4% a day from here
 - Closed trades: 12, 2 wins
 - Fees paid: $7.46 (axiom $1.00, network $5.37, pool $0.95), plus $1.47 lost to slippage
 - New trades: on
-- Brain: subscription, 623 calls and 0 plan-limit hits in 48h
+- Brain: subscription, 624 calls and 0 plan-limit hits in 48h
 
 ## Scorecard (after fees)
 - 12 closed, 2 won (17%), net $-5.72
@@ -24,10 +24,10 @@ Updated 2026-10-30T10:21:33Z (paper trading, never real money)
   - stop loss: 4, 0 won, net $-5.85, fees+slip $2.46, peak 1.1x → 0.6x
   - trailing stop: 2, 2 won, net $+4.21, fees+slip $2.04, peak 3.32x → 1.72x
   - other: 1, 0 won, net $-0.03, fees+slip $0.67, peak 1.4x → 0.99x
-- To $1,000: $906.15 to go; at $-0.48 a trade this pace doesn't get there
+- To $1,000: $904.87 to go; at $-0.48 a trade this pace doesn't get there
 
 ## Open positions
-- HYPERCHAN (MIGRATED): cost $10.0, 0.99x, fees $0.39  
+- HYPERCHAN (MIGRATED): cost $10.0, 1.13x, fees $0.39  
   CA `3ApVr1xphYMpi9dn3rpqU4hwvpmCQDVwxET1rdCDpump`
 
 ## Recent trades
@@ -75,9 +75,13 @@ Updated 2026-10-30T10:21:33Z (paper trading, never real money)
   CA `3ApVr1xphYMpi9dn3rpqU4hwvpmCQDVwxET1rdCDpump`
 
 ## Last scan
-- 10:20Z: 4 coins, 3 with pairs, 0 passed the market filters, 0 researched
+- 10:36Z: 5 coins, 4 with pairs, 1 passed the market filters, 1 researched
 
 ## Coins it looked at, and why it passed
+- 10:36Z HEXN (MIGRATED, $349,328 mcap, $15,756 5m vol): PASS at conviction 3, PASS — HEXN fell ~49% in one 15m candle and is sitting 3% above the hourly low with no higher low, 80.7% off peak, on a no-GitHub tech LARP that already beat me twice. Falling knife. (V1, V6)  
+  CA `ANVLA6eKiAq4nstD2Sg3SZhfVkSEwfnGccn12UQWpump`
+- 10:23Z ZERODAY (no setup, $2,014 mcap, $12,479 5m vol): REJECT, Hack story ("zeroday" in the name or ticker): these tend to go down, owner rule  
+  CA `9ZRHMXqFTucBLuCs3TqmDEPjQCzhSuZ3bQR6dqpepump`
 - 10:09Z CTO (MIGRATED, $203,964 mcap, $43,050 5m vol): PASS at conviction 4, PASS: 43 minutes old and only 7.3% off a high set 12 minutes ago. That's a chase on a recycled Elon "Chief Troll Officer" name with two bigger CTO tickers already out there (V1, V3).  
   CA `9hhLCxn41KZcmK1vAf7u5M6vKLHRcsVn1VmVgUrhpump`
 - 10:08Z HYPERCHAN (MIGRATED, $1,986,836 mcap, $12,488 5m vol): BUY at conviction 6, BUY, conviction 6 (probe). HYPERCHAN, the vamp-field leader, now has flow at pace ($12.5k 5m, 1.07x hourly, 66% buys), which fixes what stopped me out last time. But the only target that clears 1.5x is a breakout above $2.28M, so it stays a probe (V1, V6).  
@@ -94,10 +98,6 @@ Updated 2026-10-30T10:21:33Z (paper trading, never real money)
   CA `DZPEJunsXpwprRQffkMi4q23ZtsLhtLujHCSztyx786z`
 - 09:36Z CRIME (MIGRATED, $42,736 mcap, $2,051 5m vol): REJECT, RugCheck danger: Single holder ownership 41.18%  
   CA `BN4Z5NtntHhu6p3atEqkeAVi8Bn9Ri2QTv8FD7iupump`
-- 09:36Z CBUCKS (MIGRATED, $986,683 mcap, $2,321 5m vol): REJECT, Top 10 hold 27.1% ex-pool (>25%) (V13)  
-  CA `DtcicPCKTKeAh7TDEzTym3hXeoHAoMiBdYJhMYxZpump`
-- 09:36Z toeken (FINAL_STRETCH, $20,162 mcap, $4,627 5m vol): REJECT, Top 10 hold 27.0% ex-pool (>25%) (V13)  
-  CA `DGCyfSZzLCnKWkqQML1BbD5p1fcEhKUU5YEcxqhvpump`
 
 ## What its skips did next (last 48h)
 A skip "ran" if the coin reached the first target (1.5x) from the skip price before a 20% drop, "dumped" if the drop came first. Sampled every 10 min, followed 6h.
@@ -127,17 +127,17 @@ A skip "ran" if the coin reached the first target (1.5x) from the skip price bef
     CA `2orqEGSdkm5BMmhdM8TpKCpACk32a3Zaj3Lef7ceqsc6`
   - ran: Bear up to 2.66x  
     CA `Dv6gYYkTav8Pm36UwAywxNCccwSZV1VL1tjiSpDLpump`
-- dev share over 1%: blocked 9, ran 1, dumped 7, flat 0, open 1 (saving losses: keep it)
+- dev share over 1%: blocked 9, ran 1, dumped 7, flat 1, open 0 (saving losses: keep it)
   - ran: calm up to 1.53x  
     CA `4HSHFbFiKuMvZW7yGiDTab17B63MzBkkhadFKxhkpump`
-- falling knife / no higher low: blocked 6, ran 0, dumped 5, flat 1, open 0 (saving losses: keep it)
-- falling knife (code): blocked 6, ran 0, dumped 5, flat 0, open 1 (saving losses: keep it)
-- crowd leaving / fading volume: blocked 5, ran 1, dumped 3, flat 1, open 0 (saving losses: keep it)
-  - ran: STABLEPAD up to 2.13x  
-    CA `AABM3NrYSwKMsEDyanuskY43EH6ySbPpdPZNG1u7pump`
+- falling knife / no higher low: blocked 7, ran 0, dumped 5, flat 1, open 1 (saving losses: keep it)
+- falling knife (code): blocked 5, ran 0, dumped 4, flat 0, open 1 (saving losses: keep it)
 - bundles over the line: blocked 4, ran 1, dumped 3, flat 0, open 0 (saving losses: keep it)
   - ran: calm up to 1.53x  
     CA `4HSHFbFiKuMvZW7yGiDTab17B63MzBkkhadFKxhkpump`
+- crowd leaving / fading volume: blocked 4, ran 1, dumped 2, flat 1, open 0 (saving losses: keep it)
+  - ran: STABLEPAD up to 2.13x  
+    CA `AABM3NrYSwKMsEDyanuskY43EH6ySbPpdPZNG1u7pump`
 - other: blocked 4, ran 1, dumped 2, flat 1, open 0 (saving losses: keep it)
   - ran: SI up to 1.54x  
     CA `6zuDiAw3NviBwcLZfTztHJgtCmeNWfyFxYVoXtNYpump`
@@ -170,11 +170,11 @@ The meta has split three ways. Brand-new pump.fun launches are dying fast: CZ, K
 ## Moving most in its scans, last 30 min (1h volume)
 - CTO: $515,908 1h vol, $203,964 mcap, +376% 1h  
   CA `9hhLCxn41KZcmK1vAf7u5M6vKLHRcsVn1VmVgUrhpump`
-- Foxii: $197,195 1h vol, $523,959 mcap, -47% 1h  
-  CA `J3ReuwckNtcJP1Zhn7wVbfXhTDNTkHxozQWWAwxWpump`
-- HEXN: $178,326 1h vol, $635,651 mcap, +23% 1h  
+- HEXN: $192,903 1h vol, $349,328 mcap, -47% 1h  
   CA `ANVLA6eKiAq4nstD2Sg3SZhfVkSEwfnGccn12UQWpump`
 - HYPERCHAN: $140,446 1h vol, $1,986,836 mcap, +0% 1h  
   CA `3ApVr1xphYMpi9dn3rpqU4hwvpmCQDVwxET1rdCDpump`
-- CZ: $82,772 1h vol, $3,336 mcap, +2% 1h  
-  CA `5Vc78jBX9vcNEMNsz9Vgzev8gx2yhbsoUNBdMEbFpump`
+- SeaZ: $111,091 1h vol, $17,651 mcap, +379% 1h  
+  CA `DGtDAjPdn5LqxDXgi7J6enAjh22MeJbi8ZmaFCvvpump`
+- CZ: $78,518 1h vol, $29,973 mcap, -26% 1h  
+  CA `DZPEJunsXpwprRQffkMi4q23ZtsLhtLujHCSztyx786z`
