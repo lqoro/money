@@ -1,13 +1,13 @@
 # Trencher live report
 
-Updated 2026-10-30T05:03:22Z (paper trading, never real money)
+Updated 2026-10-30T05:18:27Z (paper trading, never real money)
 
 - Equity: $95.81 (-4.2% vs $100 start)
-- Goal: $1,000 by 2026-11-05 05:03Z (a stretch, survival first): at 9.6% of it, 6 days left, needs +47.8% a day from here
+- Goal: $1,000 by 2026-11-05 05:03Z (a stretch, survival first): at 9.6% of it, 6 days left, needs +47.9% a day from here
 - Closed trades: 11, 2 wins
 - Fees paid: $6.32 (axiom $0.72, network $4.79, pool $0.67), plus $1.04 lost to slippage
 - New trades: on
-- Brain: subscription, 574 calls and 0 plan-limit hits in 48h
+- Brain: subscription, 575 calls and 0 plan-limit hits in 48h
 
 ## Scorecard (after fees)
 - 11 closed, 2 won (18%), net $-4.20
@@ -74,9 +74,13 @@ Updated 2026-10-30T05:03:22Z (paper trading, never real money)
   CA `ANVLA6eKiAq4nstD2Sg3SZhfVkSEwfnGccn12UQWpump`
 
 ## Last scan
-- 05:02Z: 4 coins, 3 with pairs, 0 passed the market filters, 0 researched
+- 05:18Z: 4 coins, 3 with pairs, 0 passed the market filters, 0 researched
 
 ## Coins it looked at, and why it passed
+- 05:16Z GATO (MIGRATED, $4,274,802 mcap, $4,513 5m vol): REJECT, Dev holds 3.3% (>1%) (V13, V17)  
+  CA `HsprHxBRgiVaQdRf3TnKNuZZtaX9JUSPgMFdAkk6pump`
+- 05:04Z TraderTraitor (MIGRATED, $138,595 mcap, $81,974 5m vol): REJECT, Dev holds 1.8% (>1%) (V13, V17)  
+  CA `BYKvWQKbLywn8icfQB4EbXLAWpxg3D65MATi5ikjpump`
 - 04:53Z DESSA (MIGRATED, $8,197,500 mcap, $5,223 5m vol): PASS at conviction 4, PASS — $5.2k 5m on an $8.2M coin, and the 3-day-old Block-Dessa joke isn't on today's radar. Clean holders, but nobody is coming back in. (V1, V6)  
   CA `npz2FhoufQ7pKqhGpaipYWacrAkidyW2yDpVWSvpump`
 - 04:51Z Catori (FINAL_STRETCH, $22,093 mcap, $12,328 5m vol): REJECT, Top 10 hold 25.1% ex-pool (>25%) (V13)  
@@ -93,10 +97,6 @@ Updated 2026-10-30T05:03:22Z (paper trading, never real money)
   CA `7YzMVYuhnUytjhqLJ7oz8JS9Lv5u7gW4JcjSfEpkpump`
 - 04:35Z HEXN (DIP, $465,700 mcap, $13,988 5m vol): PASS at conviction 3, PASS — third look at HEXN, same thin tech LARP, 74% off the high, volume at 0.99x the hourly pace and no reclaim of my last entry. Didn't learn the lesson twice to forget it the third time. (V1, V6)  
   CA `ANVLA6eKiAq4nstD2Sg3SZhfVkSEwfnGccn12UQWpump`
-- 04:35Z Foxii (MIGRATED, $692,787 mcap, $16,970 5m vol): PASS at conviction 3, PASS: Foxii is 2% off its high after a 64% hour. Clean holders, but that entry is a chase. I'll wait for a pullback (learned rule, V1, V6).  
-  CA `J3ReuwckNtcJP1Zhn7wVbfXhTDNTkHxozQWWAwxWpump`
-- 04:34Z HYPERCHAN (MIGRATED, $1,169,743 mcap, $18,085 5m vol): PASS at conviction 3, PASS — 15.9% off an 18-minute-old high with 5m volume at 0.22x the hourly pace and sellers in control. Clean holders, wrong moment. (V1, V7)  
-  CA `3ApVr1xphYMpi9dn3rpqU4hwvpmCQDVwxET1rdCDpump`
 
 ## What its skips did next (last 48h)
 A skip "ran" if the coin reached the first target (1.5x) from the skip price before a 20% drop, "dumped" if the drop came first. Sampled every 10 min, followed 6h.
@@ -105,7 +105,7 @@ A skip "ran" if the coin reached the first target (1.5x) from the skip price bef
     CA `CUyNDWGdLPXZ3Gyj1H6TBh5pACgu5nY9WNkSqfMApump`
   - ran: Catori up to 1.5x  
     CA `FDwCosavNvMiFB812ajJp3gG7eZ9c4bpgcnY6fDQpump`
-- near the high / chasing: blocked 12, ran 0, dumped 7, flat 1, open 4 (saving losses: keep it)
+- near the high / chasing: blocked 12, ran 0, dumped 8, flat 1, open 3 (saving losses: keep it)
 - too new / sniping: blocked 11, ran 3, dumped 8, flat 0, open 0 (saving losses: keep it)
   - ran: ZI up to 1.7x  
     CA `5q45EK4mRhuiuBmRYoaDs4m2xweaV7gn3zsFhsvcpump`
@@ -113,6 +113,9 @@ A skip "ran" if the coin reached the first target (1.5x) from the skip price bef
     CA `6i4ebPt8dpGchB2A1ELpTz3B72dy5DkzNpFMNtUSpump`
   - ran: HyPepe up to 1.5x  
     CA `G8TdzgpUQXQAxJvarNKPXRGv2kh9CsJDK7dCC7Xupump`
+- dev share over 1%: blocked 8, ran 1, dumped 5, flat 0, open 2 (saving losses: keep it)
+  - ran: calm up to 1.53x  
+    CA `4HSHFbFiKuMvZW7yGiDTab17B63MzBkkhadFKxhkpump`
 - RugCheck danger: blocked 7, ran 3, dumped 2, flat 1, open 1 (cost more winners than it saved: loosen it)
   - ran: HYPEINU up to 1.57x  
     CA `6eccVGkbi8cvAYBGzfDmUwFYrMj8eGZF2xyZqZLkpump`
@@ -120,9 +123,6 @@ A skip "ran" if the coin reached the first target (1.5x) from the skip price bef
     CA `2orqEGSdkm5BMmhdM8TpKCpACk32a3Zaj3Lef7ceqsc6`
   - ran: Bear up to 2.66x  
     CA `Dv6gYYkTav8Pm36UwAywxNCccwSZV1VL1tjiSpDLpump`
-- dev share over 1%: blocked 7, ran 1, dumped 4, flat 0, open 2 (saving losses: keep it)
-  - ran: calm up to 1.53x  
-    CA `4HSHFbFiKuMvZW7yGiDTab17B63MzBkkhadFKxhkpump`
 - falling knife / no higher low: blocked 5, ran 0, dumped 4, flat 1, open 0 (saving losses: keep it)
 - bundles over the line: blocked 4, ran 1, dumped 3, flat 0, open 0 (saving losses: keep it)
   - ran: calm up to 1.53x  
@@ -156,16 +156,16 @@ A skip "ran" if the coin reached the first target (1.5x) from the skip price bef
 - [2026-10-30 02:26] I expected the higher-low DIP structure, clean holders and $19k 5m flow with 575 buys to 112 sells to carry HEXN back toward its $0.000589 swing. It only got to 1.17x, then broke the $0.000449 higher low and the -13% stop took me out at 45 min, -27% after fees on a probe. That's fine: my DIP rule put the stop under the higher low and the probe size kept the damage small, and the stop review did its job, since a broken higher low means the thesis is dead. What doesn't fit is this is my second HEXN loss, and both times the story was a thin tech LARP (V1). So next time, on a DIP where volume is under the hourly pace and the narrative is weak, I'll want a fresh volume surge before buying, not just a clean structure, because dips recover on attention, not on holder tables (Soul belief 7, V1).
 
 ## Meta right now
-The movers have changed the meta. Sub-1-hour pumpswap launches are where the volume is, and three themes are running. First, the Hyperliquid wave: HYPERCHAN is +899% at $479k with $182k on the 5m, and PURR (PurrPad, the name of Hyperliquid's own cat) is +627% but still small. Second, cats and animals: BITCAT has $29k on the 5m at 64% buys, Foxii is cooling with buys at 47%, and HEXN is the 11-hour-old exception at $508k with 86% buys. Third, "super-tech" names: SIC is hot with $92k on the 5m, but SC and QC are already dead at -90% and -29%, so that theme is a LARP until I see a GitHub (V1). Laptop and the political/hack plays are finished, with $0 on the 5m (V13, owner rule). I'd research HEXN as a MIGRATED dip with attention holding, BITCAT as a MIGRATED cat with real flow, and FLUKE now that its 5m is back above $10k ($10.7k at 65% buys). HYPERCHAN only gets a probe if it pulls back and buyers hold, because buying a 9x in its first 25 minutes is how you become exit liquidity (V1, V7).
+The meta is the Hyperliquid/"liquid" launchpad wave and cats. Both are running as sub-1-hour pump.fun launches. On the liquid side: LIQUID ($86k mcap, $12.6k 5m, 64% buys), PUMPLIQUID ($33.9k 5m, 6 min old), HLP ($6.8k 5m, +321%) and PURR ($5.2k 5m, 75% buys). On the cat side: Catori (+663%, $12.3k 5m) and PURR. GATO and Blind Kitten are fading or dead. The super-tech theme is finished: both SIC tickers are down 88-99%, so that's a LARP until I see a GitHub (V1). Robbery, laptop and political plays are dead (V13). TraderTraitor is named after the hacker group, so it's a hack-story coin and blocked by the owner rule. Setups to research: LIQUID as a MIGRATED setup with real flow; Catori and The Last 1000x as FINAL_STRETCH candidates with about $12-13k on the 5m but only 56% buys, so watch for the pre-bond dump (V1). Passing on PUMPLIQUID (too new for my data speed, V5) and HLP (5m under $10k). The crawler's summary names HYPERCHAN, BITCAT, HEXN and FLUKE, but none of them are in this scan, so I treat them as stale.
 
 ## Moving most in its scans, last 30 min (1h volume)
-- HYPERCHAN: $986,240 1h vol, $1,169,743 mcap, +253% 1h  
-  CA `3ApVr1xphYMpi9dn3rpqU4hwvpmCQDVwxET1rdCDpump`
 - LIQUID: $461,567 1h vol, $85,769 mcap, +97% 1h  
   CA `GqaP7NBtPAFAUq45UAp426bdEtfz5nz2ffMn9MiHpump`
-- BITCAT: $358,375 1h vol, $297,508 mcap, +12% 1h  
-  CA `9hzqsjCkxq3dQkfSkpRM1zk3NmLofHVBcwzKdvj3pump`
-- SIC: $281,485 1h vol, $1,938 mcap, -99% 1h  
-  CA `FLpsbzAmkZLtUrNsJ1PgWKab4Pdx9F2iqi6iKxUUpump`
-- Foxii: $232,645 1h vol, $692,787 mcap, +64% 1h  
-  CA `J3ReuwckNtcJP1Zhn7wVbfXhTDNTkHxozQWWAwxWpump`
+- TraderTraitor: $191,046 1h vol, $138,595 mcap, +238% 1h  
+  CA `BYKvWQKbLywn8icfQB4EbXLAWpxg3D65MATi5ikjpump`
+- PUMPLIQUID: $70,444 1h vol, $10,766 mcap, +272% 1h  
+  CA `3Gd5uuTCa948qkJhYgiQthPYL5DeMMXLACqyWwiKperp`
+- OPTIMISM: $60,486 1h vol, $13,775 mcap, +156% 1h  
+  CA `6kgDiabQYZd7kJzhCXANGJttfugqwBLnFZVDBTsDpump`
+- DESSA: $60,319 1h vol, $8,197,500 mcap, +0% 1h  
+  CA `npz2FhoufQ7pKqhGpaipYWacrAkidyW2yDpVWSvpump`
