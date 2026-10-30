@@ -1,13 +1,13 @@
 # Trencher live report
 
-Updated 2026-10-30T19:57:30Z (paper trading, never real money)
+Updated 2026-10-30T20:12:35Z (paper trading, never real money)
 
 - Equity: $93.79 (-6.2% vs $100 start)
-- Goal: $1,000 by 2026-11-05 05:03Z (pressing for it): at 9.4% of it, 5.4 days left, needs +55.3% a day from here
+- Goal: $1,000 by 2026-11-05 05:03Z (pressing for it): at 9.4% of it, 5.4 days left, needs +55.4% a day from here
 - Closed trades: 13, 2 wins
 - Fees paid: $7.85 (axiom $1.10, network $5.57, pool $1.04), plus $1.62 lost to slippage
 - New trades: on
-- Brain: subscription, 610 calls and 1 plan-limit hits in 48h
+- Brain: subscription, 609 calls and 1 plan-limit hits in 48h
 
 ## Scorecard (after fees)
 - 13 closed, 2 won (15%), net $-6.21
@@ -74,9 +74,19 @@ Updated 2026-10-30T19:57:30Z (paper trading, never real money)
   CA `3ApVr1xphYMpi9dn3rpqU4hwvpmCQDVwxET1rdCDpump`
 
 ## Last scan
-- 19:56Z: 3 coins, 2 with pairs, 1 passed the market filters, 1 researched
+- 20:12Z: 7 coins, 6 with pairs, 0 passed the market filters, 0 researched
 
 ## Coins it looked at, and why it passed
+- 20:07Z HYPERCHAN (DIP, $956,497 mcap, $20,359 5m vol): PASS at conviction 3, PASS: attention gate failed and there's no higher low. 5m is 0.66x the hourly pace, under the 0.7x DIP gate, and every 15m close is lower than the last. Falling knife (V1).  
+  CA `3ApVr1xphYMpi9dn3rpqU4hwvpmCQDVwxET1rdCDpump`
+- 20:07Z HC (MIGRATED, $272,470 mcap, $165,841 5m vol): PASS at conviction 4, PASS: 14 minutes old and 35% off a peak printed 6 minutes ago, still falling with no base. That's a knife on a fresh migration, not a pullback (V1). Watchlist it.  
+  CA `8GUoRZCSzjfoA47FRBJ4MuNjjpyn3pWZDTkRePWNpump`
+- 20:06Z PILLY (MIGRATED, $112,499 mcap, $204,463 5m vol): PASS at conviction 3, PASS — 4 minutes old and sitting on its high, 0% drawdown. Chasing a fresh bond spike; wait for the first pullback to hold (V1, V6).  
+  CA `2WVthqDUqTfmKniBvXz2guGwCAJSNTHKGnebUeBvpump`
+- 20:05Z three (MIGRATED, $566,400 mcap, $5,752 5m vol): PASS at conviction 3, PASS: one linked cluster holds 9.7% of supply, 5m flow is $5.7k, and it's a tech-named coin whose website is down with no GitHub. That's a LARP with a loaded gun (V1, V3).  
+  CA `FeMbDoX7R1Psc4GEcvJdsbNbZA3bfztcyDCatJVJpump`
+- 20:02Z PumpBucks (FINAL_STRETCH, $22,642 mcap, $36,015 5m vol): PASS at conviction 3, PASS — 8-minute-old vertical candle, 9.7% off the high, with a ticker four bigger tokens already use. That's chasing a possible vamp (V1, V3).  
+  CA `Ajqkb65epYqtc4tifPWvBhqL8rVKitbMF6w1SuYgpump`
 - 19:56Z Coiny (MIGRATED, $38,547 mcap, $33,842 5m vol): REJECT, Top 10 hold 27.1% ex-pool (>25%) (V13)  
   CA `4eUFV79A1ja3U6pqPAZVRPrZETuFDLLdTpm4bKFDpump`
 - 19:53Z Jason (MIGRATED, $83,813 mcap, $2,412 5m vol): REJECT, Dev holds 1.2% (>1%) (V13, V17)  
@@ -87,34 +97,24 @@ Updated 2026-10-30T19:57:30Z (paper trading, never real money)
   CA `7aeDqEi2PfoYpJfw2eawzLnRH9NjQJ6jWMZ9FH1Hpump`
 - 19:44Z GME (MIGRATED, $37,270 mcap, $16,886 5m vol): PASS at conviction 3, PASS — 9-minute-old GameStop copy, three bigger tokens share the ticker. Not the leader of the field. (V1, V2, V3)  
   CA `GP3dnzBgGLRRHiRGHxiAkRsXAcDVnmE9f2WjkpCYpump`
-- 19:43Z PERRY (FINAL_STRETCH, $20,033 mcap, $2,064 5m vol): PASS at conviction 3, PASS — 5m volume is $2k at 0.37x hourly pace, coin is 9.6% off its high on the bonding curve. Crowd leaving, I'd be chasing. (V1, V6)  
-  CA `CFbCJoug4938FKhq68GzKiDUbnCMRLuB9yKE1WSkpump`
-- 19:39Z SEED (FINAL_STRETCH, $21,538 mcap, $3,363 5m vol): PASS at conviction 3, PASS — $3.4k 5m on a Final Stretch coin selling a Hyperliquid "protocol" with no GitHub and a 2-hour-old domain. LARP until proven otherwise. (V1, V3)  
-  CA `3BSaLf3yCzW85CrfMHeBYDVYxSx8fywHQRHqGVaBpump`
-- 19:36Z MINECAT (MIGRATED, $167,021 mcap, $45,934 5m vol): PASS at conviction 4, PASS: the only target I can name is the $211k high, 1.27x away, which is under my 1.5x initials. A 27-minute-old copy is also out-trading it on the 5m. Target below initials. (V1, V2)  
-  CA `B5txdTJXiNdKC9Bt8ST8wEBzH8tqBk5yLekEA5hSpump`
-- 19:34Z JOB (MIGRATED, $3,313,242 mcap, $3,964 5m vol): PASS at conviction 3, PASS — 7% off the high with $4k on the 5m and buys/sells dead even. That's chasing a coin nobody's buying (V1, V6).  
-  CA `9Pq7aLAbhDG2tTnS22cm6kuysZVcZpLFE368HWuypump`
-- 19:31Z DESSA (MIGRATED, $9,130,337 mcap, $2,407 5m vol): PASS at conviction 3, PASS: 5m volume is $2.4k with sells beating buys 2:1, sitting 5.5% under the 24h high. Clean holders on a dead tape is still a dead tape. (V1, V6)  
-  CA `npz2FhoufQ7pKqhGpaipYWacrAkidyW2yDpVWSvpump`
 
 ## What its skips did next (last 48h)
 A skip "ran" if the coin reached the first target (1.5x) from the skip price before a 20% drop, "dumped" if the drop came first. Sampled every 10 min, followed 6h.
-- top 10 over 25%: blocked 33, ran 5, dumped 24, flat 0, open 4 (saving losses: keep it)
+- top 10 over 25%: blocked 33, ran 6, dumped 25, flat 0, open 2 (saving losses: keep it)
   - ran: HYPERGAMY up to 2.05x  
     CA `CUyNDWGdLPXZ3Gyj1H6TBh5pACgu5nY9WNkSqfMApump`
   - ran: Catori up to 1.52x  
     CA `FDwCosavNvMiFB812ajJp3gG7eZ9c4bpgcnY6fDQpump`
   - ran: ZERO up to 1.8x  
     CA `Ddwf94wedgCuMHAkwgti8A7sL2CxvBYJStJBj2cFpump`
-- too new / sniping: blocked 30, ran 6, dumped 24, flat 0, open 0 (saving losses: keep it)
+- too new / sniping: blocked 32, ran 6, dumped 24, flat 0, open 2 (saving losses: keep it)
   - ran: ZI up to 1.7x  
     CA `5q45EK4mRhuiuBmRYoaDs4m2xweaV7gn3zsFhsvcpump`
   - ran: BEAR up to 1.59x  
     CA `6i4ebPt8dpGchB2A1ELpTz3B72dy5DkzNpFMNtUSpump`
   - ran: HyPepe up to 1.5x  
     CA `G8TdzgpUQXQAxJvarNKPXRGv2kh9CsJDK7dCC7Xupump`
-- near the high / chasing: blocked 21, ran 3, dumped 14, flat 2, open 2 (saving losses: keep it)
+- near the high / chasing: blocked 21, ran 3, dumped 14, flat 1, open 3 (saving losses: keep it)
   - ran: OREN up to 1.58x  
     CA `57vAaMsnAJXkvULtAz7fsi6gRn3bHRJFJsJV1okNpump`
   - ran: Catori up to 1.52x  
@@ -128,13 +128,13 @@ A skip "ran" if the coin reached the first target (1.5x) from the skip price bef
     CA `2orqEGSdkm5BMmhdM8TpKCpACk32a3Zaj3Lef7ceqsc6`
   - ran: Bear up to 2.66x  
     CA `Dv6gYYkTav8Pm36UwAywxNCccwSZV1VL1tjiSpDLpump`
-- falling knife (code): blocked 14, ran 2, dumped 12, flat 0, open 0 (saving losses: keep it)
+- dev share over 1%: blocked 13, ran 0, dumped 10, flat 1, open 2 (saving losses: keep it)
+- falling knife (code): blocked 13, ran 2, dumped 11, flat 0, open 0 (saving losses: keep it)
   - ran: TYGR up to 1.58x  
     CA `5wCqCq6jbppuTocMeq6zd4UywAm64L1QNNxvEDAHpump`
   - ran: AgenC up to 1.88x  
     CA `DDG8rjV3TViCqKRQED2QZq4MEaE1uqXgEiosBNpapump`
-- dev share over 1%: blocked 13, ran 0, dumped 10, flat 1, open 2 (saving losses: keep it)
-- falling knife / no higher low: blocked 11, ran 0, dumped 9, flat 1, open 1 (saving losses: keep it)
+- falling knife / no higher low: blocked 12, ran 0, dumped 9, flat 1, open 2 (saving losses: keep it)
 - hack story (owner rule): blocked 8, ran 0, dumped 3, flat 3, open 2 (saving losses: keep it)
 - vamp / copycat: blocked 7, ran 1, dumped 6, flat 0, open 0 (saving losses: keep it)
   - ran: Hedge up to 1.78x  
@@ -181,13 +181,13 @@ PASS Goyim. The blocker is a slur ticker: it won't land with a wide audience, so
 The $1k deadline doesn't make any of these an 8.
 
 ## Moving most in its scans, last 30 min (1h volume)
-- MINECAT: $855,307 1h vol, $167,021 mcap, +261% 1h  
-  CA `B5txdTJXiNdKC9Bt8ST8wEBzH8tqBk5yLekEA5hSpump`
-- minecat: $209,051 1h vol, $208,747 mcap, +268% 1h  
-  CA `BK4sWbteR1EhULXACs7khW1dasdF9LEkjuS9BAV3pump`
-- CIO: $189,007 1h vol, $1,823 mcap, -98% 1h  
-  CA `5um5dQVePbF7Jn9cxofLPVXZR26cGyxfnpiF3dippump`
-- Goyim: $112,488 1h vol, $34,765 mcap, +115% 1h  
-  CA `7aeDqEi2PfoYpJfw2eawzLnRH9NjQJ6jWMZ9FH1Hpump`
-- CREATORS: $104,399 1h vol, $12,167 mcap, +82% 1h  
+- HC: $431,417 1h vol, $272,470 mcap, +476% 1h  
+  CA `8GUoRZCSzjfoA47FRBJ4MuNjjpyn3pWZDTkRePWNpump`
+- HYPERCHAN: $372,639 1h vol, $956,497 mcap, -47% 1h  
+  CA `3ApVr1xphYMpi9dn3rpqU4hwvpmCQDVwxET1rdCDpump`
+- PILLY: $204,463 1h vol, $112,499 mcap, +147% 1h  
+  CA `2WVthqDUqTfmKniBvXz2guGwCAJSNTHKGnebUeBvpump`
+- PUMPBUCKS: $187,658 1h vol, $19,534 mcap, -58% 1h  
+  CA `GmnJeWjQGNd4q9HsWVYahGNeCn8CYkzghKB2HxSVpump`
+- CREATORS: $139,850 1h vol, $5,784 mcap, -14% 1h  
   CA `FeMNVGRb2gzo18tFtkNDENmxMzuftLQ7KDi5KYqjpump`
