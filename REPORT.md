@@ -1,13 +1,13 @@
 # Trencher live report
 
-Updated 2026-10-30T17:56:30Z (paper trading, never real money)
+Updated 2026-10-30T18:11:40Z (paper trading, never real money)
 
 - Equity: $93.79 (-6.2% vs $100 start)
-- Goal: $1,000 by 2026-11-05 05:03Z (pressing for it): at 9.4% of it, 5.5 days left, needs +54.2% a day from here
+- Goal: $1,000 by 2026-11-05 05:03Z (pressing for it): at 9.4% of it, 5.5 days left, needs +54.4% a day from here
 - Closed trades: 13, 2 wins
 - Fees paid: $7.85 (axiom $1.10, network $5.57, pool $1.04), plus $1.62 lost to slippage
 - New trades: on
-- Brain: subscription, 626 calls and 0 plan-limit hits in 48h
+- Brain: subscription, 625 calls and 0 plan-limit hits in 48h
 
 ## Scorecard (after fees)
 - 13 closed, 2 won (15%), net $-6.21
@@ -74,9 +74,13 @@ Updated 2026-10-30T17:56:30Z (paper trading, never real money)
   CA `3ApVr1xphYMpi9dn3rpqU4hwvpmCQDVwxET1rdCDpump`
 
 ## Last scan
-- 17:55Z: 6 coins, 6 with pairs, 1 passed the market filters, 1 researched
+- 18:11Z: 4 coins, 4 with pairs, 0 passed the market filters, 0 researched
 
 ## Coins it looked at, and why it passed
+- 18:01Z SPACEINU (DIP, $173,881 mcap, $14,368 5m vol): PASS at conviction 3, PASS: it's the second SPACEINU, 5m volume is 0.66x its hourly pace, and the dip has no higher low. Blocker: vamp, not the leader (V1, V2).  
+  CA `5izHfawy4Rg1Vjm27F3ieHzmkEtWWyVNenhFFDPvpump`
+- 17:57Z SPACEINU (MIGRATED, $557,209 mcap, $22,183 5m vol): PASS at conviction 4, PASS: chasing, and the flow is below pace. It's 9.9% off a high set 12 minutes ago, 5m volume is only 0.43x its hourly pace, and the coin is under an hour old. Watchlist it for a real pullback (V1, V6).  
+  CA `2aZp4sP2bPdMUVkTVeRmzBvJvCaeTpgYXNBXNuEopump`
 - 17:55Z PODCATWALK (MIGRATED, $615,372 mcap, $12,456 5m vol): REJECT, Bundles: 10 linked wallet cluster(s) hold 49.4% of supply (>20%) (V17)  
   CA `52MBEXmhVrZUJvMEbRpKRhehFUL8DnnV5LzYJ2G1pump`
 - 17:54Z Jason (MIGRATED, $41,268 mcap, $3,245 5m vol): REJECT, Dev holds 1.1% (>1%) (V13, V17)  
@@ -93,10 +97,6 @@ Updated 2026-10-30T17:56:30Z (paper trading, never real money)
   CA `EgHf3XonHq6QCUoSZ1tFV5bQUG4Ez7FcvzMbdTF1pump`
 - 17:46Z HACKINU (MIGRATED, $42,949 mcap, $1,175 5m vol): REJECT, Hack story ("hack" in the name or ticker): these tend to go down, owner rule  
   CA `HD2qqwAeLkyXnboo5cSGSdGw4oHCbvNEvWsgDSgWpump`
-- 17:45Z HYPERCHAN (DIP, $1,373,348 mcap, $9,351 5m vol): PASS at conviction 3, PASS — no higher low yet: −9.3% on the 5m, sliding toward the $0.00128 hourly low, in a range I've already lost on twice. Falling knife until a base prints (V1, HEXN #1).  
-  CA `3ApVr1xphYMpi9dn3rpqU4hwvpmCQDVwxET1rdCDpump`
-- 17:43Z HEXN (MIGRATED, $83,040 mcap, $4,977 5m vol): PASS at conviction 2, PASS on HEXN. It's down 95% from its high, and 5m volume is only 0.25x the hourly pace. This is a falling knife with a LARP story, and I've already lost on it twice (V1, V6).  
-  CA `ANVLA6eKiAq4nstD2Sg3SZhfVkSEwfnGccn12UQWpump`
 
 ## What its skips did next (last 48h)
 A skip "ran" if the coin reached the first target (1.5x) from the skip price before a 20% drop, "dumped" if the drop came first. Sampled every 10 min, followed 6h.
@@ -107,20 +107,20 @@ A skip "ran" if the coin reached the first target (1.5x) from the skip price bef
     CA `FDwCosavNvMiFB812ajJp3gG7eZ9c4bpgcnY6fDQpump`
   - ran: ZERO up to 1.8x  
     CA `Ddwf94wedgCuMHAkwgti8A7sL2CxvBYJStJBj2cFpump`
-- too new / sniping: blocked 29, ran 6, dumped 21, flat 0, open 2 (saving losses: keep it)
+- too new / sniping: blocked 29, ran 6, dumped 22, flat 0, open 1 (saving losses: keep it)
   - ran: ZI up to 1.7x  
     CA `5q45EK4mRhuiuBmRYoaDs4m2xweaV7gn3zsFhsvcpump`
   - ran: BEAR up to 1.59x  
     CA `6i4ebPt8dpGchB2A1ELpTz3B72dy5DkzNpFMNtUSpump`
   - ran: HyPepe up to 1.5x  
     CA `G8TdzgpUQXQAxJvarNKPXRGv2kh9CsJDK7dCC7Xupump`
-- near the high / chasing: blocked 18, ran 4, dumped 11, flat 2, open 1 (saving losses: keep it)
+- near the high / chasing: blocked 18, ran 3, dumped 11, flat 2, open 2 (saving losses: keep it)
   - ran: OREN up to 1.58x  
     CA `57vAaMsnAJXkvULtAz7fsi6gRn3bHRJFJsJV1okNpump`
   - ran: Catori up to 1.52x  
     CA `FDwCosavNvMiFB812ajJp3gG7eZ9c4bpgcnY6fDQpump`
-  - ran: SPACEINU up to 1.57x  
-    CA `5izHfawy4Rg1Vjm27F3ieHzmkEtWWyVNenhFFDPvpump`
+  - ran: FLYWHEEL up to 2.23x  
+    CA `BWMf44rD724R2bdgHWd88CDTVEjuPNQauw8s6S7ipump`
 - RugCheck danger: blocked 16, ran 5, dumped 10, flat 1, open 0 (saving losses: keep it)
   - ran: HYPEINU up to 1.57x  
     CA `6eccVGkbi8cvAYBGzfDmUwFYrMj8eGZF2xyZqZLkpump`
@@ -128,8 +128,8 @@ A skip "ran" if the coin reached the first target (1.5x) from the skip price bef
     CA `2orqEGSdkm5BMmhdM8TpKCpACk32a3Zaj3Lef7ceqsc6`
   - ran: Bear up to 2.66x  
     CA `Dv6gYYkTav8Pm36UwAywxNCccwSZV1VL1tjiSpDLpump`
+- falling knife / no higher low: blocked 12, ran 0, dumped 8, flat 1, open 3 (saving losses: keep it)
 - dev share over 1%: blocked 12, ran 0, dumped 9, flat 0, open 3 (saving losses: keep it)
-- falling knife / no higher low: blocked 11, ran 0, dumped 7, flat 1, open 3 (saving losses: keep it)
 - falling knife (code): blocked 10, ran 0, dumped 9, flat 0, open 1 (saving losses: keep it)
 - crowd leaving / fading volume: blocked 8, ran 2, dumped 5, flat 0, open 1 (saving losses: keep it)
   - ran: STABLEPAD up to 2.13x  
@@ -137,7 +137,9 @@ A skip "ran" if the coin reached the first target (1.5x) from the skip price bef
   - ran: HYDESK up to 1.78x  
     CA `BzndCZ2ZrjUA21aVW7t6AWEENRAps3EmdQg9hf94pump`
 - hack story (owner rule): blocked 8, ran 0, dumped 3, flat 3, open 2 (saving losses: keep it)
-- vamp / copycat: blocked 6, ran 0, dumped 4, flat 0, open 2 (saving losses: keep it)
+- vamp / copycat: blocked 6, ran 1, dumped 4, flat 0, open 1 (saving losses: keep it)
+  - ran: Hedge up to 1.78x  
+    CA `7eQagAYSYYhRqRZF5L97Ku8AK94TEpsmnrrsssUkpump`
 
 ## Rules it changed from results and skips
 - 10-30 12:55Z added: Press the goal: take every rule-clearing setup at honest conviction (Owner override replacing the dropped deadline rule; hard lines, stops and 35% risk ceiling unchanged.)
@@ -175,11 +177,11 @@ On your note: I'll take more trades and rate clean ones honestly at 7–9. But a
 ## Moving most in its scans, last 30 min (1h volume)
 - PODCATWALK: $837,139 1h vol, $615,372 mcap, +94% 1h  
   CA `52MBEXmhVrZUJvMEbRpKRhehFUL8DnnV5LzYJ2G1pump`
+- SPACEINU: $625,880 1h vol, $557,209 mcap, +1082% 1h  
+  CA `2aZp4sP2bPdMUVkTVeRmzBvJvCaeTpgYXNBXNuEopump`
+- SPACEINU: $263,077 1h vol, $173,881 mcap, +170% 1h  
+  CA `5izHfawy4Rg1Vjm27F3ieHzmkEtWWyVNenhFFDPvpump`
 - MOTH: $260,931 1h vol, $150,136 mcap, +203% 1h  
   CA `2ngSZWzKzhVtSrWjrYJRFu4iD3zGHQYFS6WMRwPfpump`
 - $GOTUS: $254,213 1h vol, $199,762 mcap, +280% 1h  
   CA `EgHf3XonHq6QCUoSZ1tFV5bQUG4Ez7FcvzMbdTF1pump`
-- HEXN: $242,398 1h vol, $83,040 mcap, -47% 1h  
-  CA `ANVLA6eKiAq4nstD2Sg3SZhfVkSEwfnGccn12UQWpump`
-- Hedge: $130,917 1h vol, $25,150 mcap, +499% 1h  
-  CA `7eQagAYSYYhRqRZF5L97Ku8AK94TEpsmnrrsssUkpump`
