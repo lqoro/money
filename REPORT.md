@@ -1,13 +1,13 @@
 # Trencher live report
 
-Updated 2026-10-30T14:54:42Z (paper trading, never real money)
+Updated 2026-10-30T15:09:45Z (paper trading, never real money)
 
 - Equity: $93.79 (-6.2% vs $100 start)
-- Goal: $1,000 by 2026-11-05 05:03Z (pressing for it): at 9.4% of it, 5.6 days left, needs +52.7% a day from here
+- Goal: $1,000 by 2026-11-05 05:03Z (pressing for it): at 9.4% of it, 5.6 days left, needs +52.8% a day from here
 - Closed trades: 13, 2 wins
 - Fees paid: $7.85 (axiom $1.10, network $5.57, pool $1.04), plus $1.62 lost to slippage
 - New trades: on
-- Brain: subscription, 637 calls and 0 plan-limit hits in 48h
+- Brain: subscription, 634 calls and 0 plan-limit hits in 48h
 
 ## Scorecard (after fees)
 - 13 closed, 2 won (15%), net $-6.21
@@ -74,9 +74,13 @@ Updated 2026-10-30T14:54:42Z (paper trading, never real money)
   CA `3ApVr1xphYMpi9dn3rpqU4hwvpmCQDVwxET1rdCDpump`
 
 ## Last scan
-- 14:53Z: 3 coins, 2 with pairs, 0 passed the market filters, 0 researched
+- 15:09Z: 2 coins, 1 with pairs, 0 passed the market filters, 0 researched
 
 ## Coins it looked at, and why it passed
+- 15:05Z STANK (MIGRATED, $252,333 mcap, $3,542 5m vol): PASS at conviction 3, PASS: $3.5k on the 5m, red candle printing, 12.6% off a high it set 6 minutes ago, and the only target I can name is 1.14x away. That's chasing, not a pullback. (V1, V6)  
+  CA `5wsjHxT5nW5jQuVupXUNnYszF3WoWCfGGk9LMcsCJzY8`
+- 14:58Z Jesus (MIGRATED, $90,547 mcap, $34,815 5m vol): REJECT, Top 10 hold 26.9% ex-pool (>25%) (V13)  
+  CA `4qizrkdhWZBRMSm1BCs1m13Ju3YJxAu4mjbuSKjypump`
 - 14:52Z Kim (MIGRATED, $217,533 mcap, $53,633 5m vol): PASS at conviction 3, PASS: "Kim, Crypto Final Boss" reads as Kim Jong Un's hacker army. That's a political figure and a hack story, and the retest target is only 1.31x anyway. (V13, owner rule)  
   CA `qhbbjGBKJxW3AZGqngWM5tHcrENR3pVoRB9MCf1pump`
 - 14:50Z laptop (DIP, $71,665 mcap, $13,030 5m vol): REJECT, Dip with fading attention is a falling knife, not a dip (5m at 0.30x the hour's pace, under 0.6x)  
@@ -93,21 +97,17 @@ Updated 2026-10-30T14:54:42Z (paper trading, never real money)
   CA `3ApVr1xphYMpi9dn3rpqU4hwvpmCQDVwxET1rdCDpump`
 - 14:42Z Foxii (MIGRATED, $216,719 mcap, $11,023 5m vol): PASS at conviction 4, PASS: Foxii is 88% off its $1.8M peak, past my 75% DIP limit, and buyers are only even with sellers (77/72). Range chop on a cooling coin, not a dip (V1, V6).  
   CA `J3ReuwckNtcJP1Zhn7wVbfXhTDNTkHxozQWWAwxWpump`
-- 14:41Z HEXN (MIGRATED, $326,862 mcap, $11,480 5m vol): PASS at conviction 3, PASS: HEXN is 82% off its peak and sitting on its hourly low with no higher low. That's a falling knife, not a dip, and it's the same thin tech LARP that cost me twice already (V1, V6).  
-  CA `ANVLA6eKiAq4nstD2Sg3SZhfVkSEwfnGccn12UQWpump`
-- 14:30Z SAFU (MIGRATED, $436,731 mcap, $9,528 5m vol): PASS at conviction 2, PASS: the hack-story rule blocks it. $SAFU is a self-described "Binance hack era" meme, and 70 sells to 37 buys on the 5m says the crowd is leaving anyway.  
-  CA `etRgw1DVduNwoSdrwaMcnb6Yy16CShyv34SYWuApump`
 
 ## What its skips did next (last 48h)
 A skip "ran" if the coin reached the first target (1.5x) from the skip price before a 20% drop, "dumped" if the drop came first. Sampled every 10 min, followed 6h.
-- top 10 over 25%: blocked 25, ran 5, dumped 18, flat 1, open 1 (saving losses: keep it)
+- top 10 over 25%: blocked 26, ran 5, dumped 19, flat 1, open 1 (saving losses: keep it)
   - ran: HYPERGAMY up to 2.05x  
     CA `CUyNDWGdLPXZ3Gyj1H6TBh5pACgu5nY9WNkSqfMApump`
   - ran: Catori up to 1.52x  
     CA `FDwCosavNvMiFB812ajJp3gG7eZ9c4bpgcnY6fDQpump`
   - ran: ZERO up to 1.8x  
     CA `Ddwf94wedgCuMHAkwgti8A7sL2CxvBYJStJBj2cFpump`
-- too new / sniping: blocked 23, ran 5, dumped 16, flat 0, open 2 (saving losses: keep it)
+- too new / sniping: blocked 23, ran 6, dumped 17, flat 0, open 0 (saving losses: keep it)
   - ran: ZI up to 1.7x  
     CA `5q45EK4mRhuiuBmRYoaDs4m2xweaV7gn3zsFhsvcpump`
   - ran: BEAR up to 1.59x  
@@ -126,15 +126,15 @@ A skip "ran" if the coin reached the first target (1.5x) from the skip price bef
     CA `2orqEGSdkm5BMmhdM8TpKCpACk32a3Zaj3Lef7ceqsc6`
   - ran: Bear up to 2.66x  
     CA `Dv6gYYkTav8Pm36UwAywxNCccwSZV1VL1tjiSpDLpump`
-- crowd leaving / fading volume: blocked 9, ran 2, dumped 4, flat 0, open 3 (saving losses: keep it)
+- crowd leaving / fading volume: blocked 9, ran 2, dumped 5, flat 0, open 2 (saving losses: keep it)
   - ran: STABLEPAD up to 2.13x  
     CA `AABM3NrYSwKMsEDyanuskY43EH6ySbPpdPZNG1u7pump`
   - ran: HYDESK up to 1.78x  
     CA `BzndCZ2ZrjUA21aVW7t6AWEENRAps3EmdQg9hf94pump`
 - dev share over 1%: blocked 9, ran 0, dumped 7, flat 0, open 2 (saving losses: keep it)
-- falling knife (code): blocked 7, ran 0, dumped 6, flat 0, open 1 (saving losses: keep it)
+- falling knife (code): blocked 7, ran 0, dumped 7, flat 0, open 0 (saving losses: keep it)
 - falling knife / no higher low: blocked 6, ran 0, dumped 4, flat 1, open 1 (saving losses: keep it)
-- hack story (owner rule): blocked 6, ran 0, dumped 1, flat 2, open 3 (too few played out to judge)
+- hack story (owner rule): blocked 6, ran 0, dumped 2, flat 2, open 2 (too few played out to judge)
 - bundles over the line: blocked 3, ran 0, dumped 3, flat 0, open 0 (saving losses: keep it)
 
 ## Rules it changed from results and skips
@@ -170,11 +170,11 @@ laptop stays out. It's riding the Hunter Biden $LAPTOP story, and that's my poli
 ## Moving most in its scans, last 30 min (1h volume)
 - laptop: $519,575 1h vol, $71,665 mcap, +83% 1h  
   CA `GEWDAj3NaK3WVpgjhusnZq8CMsYu9yQPRRxApfXwpump`
+- Gruffalo: $363,650 1h vol, $2,024 mcap, -96% 1h  
+  CA `A7pmyAhMbRXrQ6FXThxaNCNCmcdqCssjptizX15Ypump`
 - Kim: $334,880 1h vol, $217,533 mcap, +218% 1h  
   CA `qhbbjGBKJxW3AZGqngWM5tHcrENR3pVoRB9MCf1pump`
 - HEXN: $155,886 1h vol, $326,862 mcap, -20% 1h  
   CA `ANVLA6eKiAq4nstD2Sg3SZhfVkSEwfnGccn12UQWpump`
 - Foxii: $124,733 1h vol, $216,719 mcap, -1% 1h  
   CA `J3ReuwckNtcJP1Zhn7wVbfXhTDNTkHxozQWWAwxWpump`
-- SAFU: $95,597 1h vol, $436,731 mcap, +160% 1h  
-  CA `etRgw1DVduNwoSdrwaMcnb6Yy16CShyv34SYWuApump`
