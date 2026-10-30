@@ -25,13 +25,20 @@ def evolve(cfg: Config, brain: Brain) -> str | None:
     if not out:
         return None
     rule_changes = [r for r in out.get("rule_changes") or [] if r.get("change") != "kept"]
+    rules_md = out.get("rules_markdown") or ""
+    if cfg.goal_stance == "push":
+        # The owner overrode "the goal never sets size or lowers the bar": it can't come back.
+        rules_md, dropped = journal.drop_goal_brakes(rules_md or journal.learned_rules(cfg))
+        rule_changes = [r for r in rule_changes if not journal.is_goal_brake(str(r.get("rule", "")))]
+        rule_changes += [{"change": "dropped", "rule": line.lstrip("-* ").strip(),
+                          "evidence": "Owner override: the goal is set to push"} for line in dropped]
     if rule_changes:
         with (cfg.memory_dir / "rule_changes.jsonl").open("a") as f:
             for r in rule_changes:
                 f.write(json.dumps({"t": round(time.time()), **r}) + "\n")
 
-    if out.get("rules_markdown"):
-        journal.save_learned_rules(cfg, out["rules_markdown"])
+    if rules_md.strip() and rules_md.strip() != journal.learned_rules(cfg).strip():
+        journal.save_learned_rules(cfg, rules_md)
 
     path = cfg.memory_dir / "strategy.json"
     current = json.loads(path.read_text()) if path.exists() else {}
@@ -62,5 +69,5 @@ def evolve(cfg: Config, brain: Brain) -> str | None:
     summary += ("Strategy changes:\n" + "\n".join(changed) + "\n") if changed else "No parameter changes.\n"
     if rule_lines:
         summary += "Rule changes:\n" + "\n".join(rule_lines) + "\n"
-    summary += "Learned rules:\n" + (out.get("rules_markdown") or "(unchanged)")
+    summary += "Learned rules:\n" + (rules_md or "(unchanged)")
     return summary

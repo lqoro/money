@@ -70,6 +70,31 @@ def mark_retired_fee_rules(text: str) -> str:
                      for line in text.splitlines())
 
 
+# With the owner's goal stance on "push", a learned rule saying the goal or deadline
+# never sets size or lowers the bar contradicts the owner, who overrode it (Oct 30).
+# Wherever it reaches a prompt it's marked overridden, and rule reviews drop it.
+_GOAL_BRAKE = re.compile(r"^(?=.*(?:\bgoal\b|\bdeadline\b|\$1k\b|\$1,000))"
+                         r"(?=.*\b(?:never|not|no|doesn't|don't|won't|isn't)\b)"
+                         r"(?=.*(?:\bsiz(?:e|es|ed|ing)\b|\bbar\b|\bpress|\bpush))", re.I)
+OVERRIDDEN_GOAL_NOTE = (" [Overridden by your owner: they want you pressing for the goal, so don't apply this. "
+                        "Your hard lines, stops and risk ceiling still hold.]")
+
+
+def is_goal_brake(line: str) -> bool:
+    return bool(line.strip()) and bool(_GOAL_BRAKE.search(line))
+
+
+def mark_goal_brakes(text: str) -> str:
+    return "\n".join(line + OVERRIDDEN_GOAL_NOTE if is_goal_brake(line) else line for line in text.splitlines())
+
+
+def drop_goal_brakes(text: str) -> tuple[str, list[str]]:
+    """The rules without any goal brake, and the lines dropped."""
+    lines = text.splitlines()
+    dropped = [line.strip() for line in lines if is_goal_brake(line)]
+    return "\n".join(line for line in lines if not is_goal_brake(line)), dropped
+
+
 def prompt_lessons(cfg: Config, n: int) -> list[str]:
     """Recent lessons as the brain should read them."""
     return [mark_retired_fee_rules(line) for line in recent_lessons(cfg, n)]
@@ -77,4 +102,5 @@ def prompt_lessons(cfg: Config, n: int) -> list[str]:
 
 def prompt_rules(cfg: Config) -> str:
     """Learned rules as the brain should read them."""
-    return mark_retired_fee_rules(learned_rules(cfg))
+    rules = mark_retired_fee_rules(learned_rules(cfg))
+    return mark_goal_brakes(rules) if cfg.goal_stance == "push" else rules

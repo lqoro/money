@@ -401,6 +401,15 @@ class Brain:
                 f"don't write a flat fee or friction cap or a minimum position size as a rule: fix the coin pick "
                 f"or the exit instead.")
 
+    def _goal_owned(self) -> str:
+        if self.cfg.goal_stance != "push":
+            return ""
+        return (f"Your owner set the goal to push and overrode the rule that the deadline never sets size or "
+                f"lowers the bar. Don't write that rule, or one like it, back: let the goal push you to take "
+                f"the setups that clear your hard lines and to rate clean ones 8 or 9 when they earn it, so code "
+                f"sizes them up. Your hard lines, stops and the {self.cfg.max_total_risk_pct:g}% risk ceiling "
+                f"still hold.")
+
     def _goal(self, equity_usd: float) -> str:
         g = self.cfg.goal_progress(equity_usd)
         if not g:
@@ -684,5 +693,6 @@ skips candidates. Spend calls where they change outcomes.
 Never loosen the hard lines in your soul; they aren't parameters.
 {self._fee_owned()} Drop any such rule from your learned rules.
 {self._owner_exits()} Drop any learned rule that sets a different initials multiple, stop or trail.
+{self._goal_owned()}
 {self._owner_note()}"""
         return self._ask(prompt, evolve_schema(), "high", web=False)

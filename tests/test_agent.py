@@ -1061,3 +1061,67 @@ def test_goal_stance_push_lets_the_brain_size_up(cfg):
     assert "pressing for it" in build_report(agent)[1]
     apply_steering(cfg, {"goal": {"equity_usd": 1000, "deadline": "2026-11-05T05:03:00Z"}})
     assert cfg.goal_stance == "survive" and "never justifies a bigger size" in agent.brain._goal(100.0)
+
+
+GOAL_BRAKE_RULE = ("- **The $1k deadline never sets size or lowers the bar.** Bigger size on negative expectancy "
+                   "just loses faster; keep max_total_risk_pct at 35 (V6, V8).")
+OTHER_RULES = [
+    "- **Conviction scale:** hard lines passed + live flow + named target of 1.5x or more = 7.",
+    "- **Target must clear initials:** the named level has to be at least 1.5x.",
+    "- MIGRATED buys are fine from 10% off the local high, not 20%.",
+    "- Never buy a coin whose dev holds over 1%.",
+]
+
+
+def test_goal_brake_rule_is_overridden_when_the_goal_is_push(cfg):
+    from agent import journal
+    from agent.bridge import apply_steering
+    journal.save_learned_rules(cfg, "\n".join([GOAL_BRAKE_RULE, *OTHER_RULES]))
+    assert journal.OVERRIDDEN_GOAL_NOTE not in journal.prompt_rules(cfg)  # survive stance: left alone
+    apply_steering(cfg, {"goal": {"equity_usd": 1000, "deadline": "2026-11-05T05:03:00Z", "stance": "push"}})
+    rules = journal.prompt_rules(cfg).splitlines()
+    assert journal.OVERRIDDEN_GOAL_NOTE in rules[0]
+    assert not any(journal.OVERRIDDEN_GOAL_NOTE in r for r in rules[1:])
+    assert journal.OVERRIDDEN_GOAL_NOTE not in journal.learned_rules(cfg)  # the file keeps its history
+
+
+def test_rule_reviews_cannot_write_the_goal_brake_back(cfg, monkeypatch):
+    import json as _json
+    from agent import evolve as ev, journal
+    from agent.bridge import apply_steering
+    apply_steering(cfg, {"goal": {"equity_usd": 1000, "deadline": "2026-11-05T05:03:00Z", "stance": "push"}})
+    journal.log_trade(cfg, {"event": "CLOSE", "symbol": "X", "setup": "MIGRATED", "pnl_usd": -1})
+    b = Brain(cfg)
+    assert "overrode the rule that the deadline never sets size" in b._goal_owned()
+    monkeypatch.setattr(b, "evolve", lambda trades, skip_review="": {
+        "rules_markdown": "\n".join([GOAL_BRAKE_RULE, *OTHER_RULES]),
+        "rule_changes": [{"change": "added", "rule": "The $1k deadline never sets size or lowers the bar",
+                          "evidence": "-$0.38 a trade"}],
+    })
+    ev.evolve(cfg, b)
+    saved = journal.learned_rules(cfg)
+    assert "deadline" not in saved and all(r in saved for r in OTHER_RULES)
+    changes = [_json.loads(line) for line in (cfg.memory_dir / "rule_changes.jsonl").read_text().splitlines()]
+    assert [c["change"] for c in changes] == ["dropped"] and "Owner override" in changes[0]["evidence"]
+
+
+def test_an_old_goal_brake_is_dropped_even_when_the_review_leaves_rules_unchanged(cfg, monkeypatch):
+    from agent import evolve as ev, journal
+    from agent.bridge import apply_steering
+    journal.save_learned_rules(cfg, "\n".join([GOAL_BRAKE_RULE, *OTHER_RULES]))
+    apply_steering(cfg, {"goal": {"equity_usd": 1000, "deadline": "2026-11-05T05:03:00Z", "stance": "push"}})
+    journal.log_trade(cfg, {"event": "CLOSE", "symbol": "X", "setup": "MIGRATED", "pnl_usd": -1})
+    b = Brain(cfg)
+    monkeypatch.setattr(b, "evolve", lambda trades, skip_review="": {"param_changes": []})
+    ev.evolve(cfg, b)
+    assert "deadline" not in journal.learned_rules(cfg) and OTHER_RULES[0] in journal.learned_rules(cfg)
+
+
+def test_survive_stance_keeps_a_goal_rule(cfg, monkeypatch):
+    from agent import evolve as ev, journal
+    journal.log_trade(cfg, {"event": "CLOSE", "symbol": "X", "setup": "MIGRATED", "pnl_usd": -1})
+    b = Brain(cfg)
+    assert b._goal_owned() == ""
+    monkeypatch.setattr(b, "evolve", lambda trades, skip_review="": {"rules_markdown": GOAL_BRAKE_RULE})
+    ev.evolve(cfg, b)
+    assert "deadline never sets size" in journal.learned_rules(cfg)
