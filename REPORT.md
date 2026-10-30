@@ -1,9 +1,9 @@
 # Trencher live report
 
-Updated 2026-10-30T15:40:32Z (paper trading, never real money)
+Updated 2026-10-30T15:55:43Z (paper trading, never real money)
 
 - Equity: $93.79 (-6.2% vs $100 start)
-- Goal: $1,000 by 2026-11-05 05:03Z (pressing for it): at 9.4% of it, 5.6 days left, needs +53.1% a day from here
+- Goal: $1,000 by 2026-11-05 05:03Z (pressing for it): at 9.4% of it, 5.5 days left, needs +53.2% a day from here
 - Closed trades: 13, 2 wins
 - Fees paid: $7.85 (axiom $1.10, network $5.57, pool $1.04), plus $1.62 lost to slippage
 - New trades: on
@@ -74,9 +74,19 @@ Updated 2026-10-30T15:40:32Z (paper trading, never real money)
   CA `3ApVr1xphYMpi9dn3rpqU4hwvpmCQDVwxET1rdCDpump`
 
 ## Last scan
-- 15:39Z: 3 coins, 3 with pairs, 1 passed the market filters, 1 researched
+- 15:54Z: 13 coins, 13 with pairs, 0 passed the market filters, 0 researched
 
 ## Coins it looked at, and why it passed
+- 15:50Z STANK (MIGRATED, $259,155 mcap, $2,330 5m vol): PASS at conviction 3, PASS: the holders are clean but nobody's trading it. $2.3k on the 5m at 0.63x the hourly pace, with 7 coins sharing the ticker and no meta behind it. Blocker: flow below the gate (V1, V6).  
+  CA `5wsjHxT5nW5jQuVupXUNnYszF3WoWCfGGk9LMcsCJzY8`
+- 15:47Z PROBE (FINAL_STRETCH, $21,903 mcap, $17,612 5m vol): REJECT, RugCheck danger: Creator history of rugged tokens  
+  CA `DR3Jtxwzkw9uBpi6Bz7qJX7zuFSJkNKXthD8nB1mpump`
+- 15:47Z CTO (MIGRATED, $193,979 mcap, $19,524 5m vol): REJECT, Dev holds 1.0% (>1%) (V13, V17)  
+  CA `G4vGFQjeqYdbfckvipiuyusFgY1jqAK23mbYG4H8pump`
+- 15:46Z $19 (MIGRATED, $138,585 mcap, $40,331 5m vol): PASS at conviction 4, PASS: it's 5% off the high and 21 minutes old. That's chasing the bond spike, not buying a pullback. Watchlist for a 10%+ pullback that holds its base. (V1, V6)  
+  CA `pa6bZZbPUj8JVciH9b2DrcqmDuDwkvPBAZnWHKnpump`
+- 15:46Z HACKHOUSE (no setup, $12,844 mcap, $3,774 5m vol): REJECT, Hack story ("hack" in the name or ticker): these tend to go down, owner rule  
+  CA `9zRNZjZZC94Rgw1ddwzfvqkdJDQpmn9rhmGiqPyVpump`
 - 15:40Z DESSA (MIGRATED, $8,608,650 mcap, $5,259 5m vol): PASS at conviction 3, PASS: DESSA has clean holders and is probably the original, but 5m volume is $5.3k and sellers outnumbered buyers 2:1 over the last hour. The crowd is leaving, and a 1.5x target means breaking its old high. (V1, V6)  
   CA `npz2FhoufQ7pKqhGpaipYWacrAkidyW2yDpVWSvpump`
 - 15:38Z Kim (DIP, $139,236 mcap, $13,568 5m vol): REJECT, Dip with fading attention is a falling knife, not a dip (5m at 0.52x the hour's pace, under 0.6x)  
@@ -87,27 +97,17 @@ Updated 2026-10-30T15:40:32Z (paper trading, never real money)
   CA `E5ybm4acARqNKEAHpUqYG1BRLpYai9anMz8enAHpump`
 - 15:32Z SAFU (MIGRATED, $137,239 mcap, $17,814 5m vol): PASS at conviction 3, PASS: the SAFU ticker is trading on the Binance-hack "funds are SAFU" headline, it's a fresh +52% 5m candle right under a $154k high (only 1.12x away), and the other SAFU already went -99.6%. Target is below initials. (V1, V6, owner hack rule)  
   CA `kziXxCJLQMpkiuoyAkgHELxGcKDs4hNoeWdnpgkpump`
-- 15:29Z GATO (MIGRATED, $4,316,121 mcap, $2,210 5m vol): REJECT, Dev holds 3.3% (>1%) (V13, V17)  
-  CA `HsprHxBRgiVaQdRf3TnKNuZZtaX9JUSPgMFdAkk6pump`
-- 15:28Z HYPERCHAN (DIP, $1,432,159 mcap, $5,857 5m vol): PASS at conviction 2, PASS — HYPERCHAN is a falling knife: 18% buys, 5m vol 0.62x hourly (under the 0.7x gate), no higher low, −30% on the hour. Crowd's leaving (V1, V6).  
-  CA `3ApVr1xphYMpi9dn3rpqU4hwvpmCQDVwxET1rdCDpump`
-- 15:27Z Foxii (MIGRATED, $119,874 mcap, $25,553 5m vol): PASS at conviction 3, PASS: Foxii is 93% off its $1.8M peak, sellers outnumber buyers, and nothing on the chart shows a higher low. That's a falling knife wearing clean holder stats. (V1, V6)  
-  CA `J3ReuwckNtcJP1Zhn7wVbfXhTDNTkHxozQWWAwxWpump`
-- 15:26Z HEXN (MIGRATED, $293,589 mcap, $10,439 5m vol): PASS at conviction 2, PASS — HEXN is 84% off peak, sitting on its hourly low with no higher low, and the tech story is a 1-day-old-domain LARP that already beat me twice. Falling knife (V1, V6).  
-  CA `ANVLA6eKiAq4nstD2Sg3SZhfVkSEwfnGccn12UQWpump`
-- 15:24Z ELONTROLL (MIGRATED, $449,721 mcap, $141,393 5m vol): PASS at conviction 4, PASS — 10 minutes old, up 10x in an hour and only 11% off the high: no base, no target above the high, top 10 at 23.4%, and a LARP AI story with an airdrop bag waiting. Wait for a higher low (V1, V6).  
-  CA `FhdqbRJgDnsxHS4mcY5YpuezTFysbPyDzLXrthyBpump`
 
 ## What its skips did next (last 48h)
 A skip "ran" if the coin reached the first target (1.5x) from the skip price before a 20% drop, "dumped" if the drop came first. Sampled every 10 min, followed 6h.
-- top 10 over 25%: blocked 27, ran 6, dumped 19, flat 0, open 2 (saving losses: keep it)
+- top 10 over 25%: blocked 27, ran 6, dumped 19, flat 1, open 1 (saving losses: keep it)
   - ran: HYPERGAMY up to 2.05x  
     CA `CUyNDWGdLPXZ3Gyj1H6TBh5pACgu5nY9WNkSqfMApump`
   - ran: Catori up to 1.52x  
     CA `FDwCosavNvMiFB812ajJp3gG7eZ9c4bpgcnY6fDQpump`
   - ran: ZERO up to 1.8x  
     CA `Ddwf94wedgCuMHAkwgti8A7sL2CxvBYJStJBj2cFpump`
-- too new / sniping: blocked 26, ran 6, dumped 18, flat 0, open 2 (saving losses: keep it)
+- too new / sniping: blocked 27, ran 7, dumped 18, flat 0, open 2 (saving losses: keep it)
   - ran: ZI up to 1.7x  
     CA `5q45EK4mRhuiuBmRYoaDs4m2xweaV7gn3zsFhsvcpump`
   - ran: BEAR up to 1.59x  
@@ -119,25 +119,27 @@ A skip "ran" if the coin reached the first target (1.5x) from the skip price bef
     CA `57vAaMsnAJXkvULtAz7fsi6gRn3bHRJFJsJV1okNpump`
   - ran: Catori up to 1.52x  
     CA `FDwCosavNvMiFB812ajJp3gG7eZ9c4bpgcnY6fDQpump`
-- RugCheck danger: blocked 13, ran 4, dumped 8, flat 1, open 0 (saving losses: keep it)
+- RugCheck danger: blocked 14, ran 4, dumped 8, flat 1, open 1 (saving losses: keep it)
   - ran: HYPEINU up to 1.57x  
     CA `6eccVGkbi8cvAYBGzfDmUwFYrMj8eGZF2xyZqZLkpump`
   - ran: ETF up to 1.87x  
     CA `2orqEGSdkm5BMmhdM8TpKCpACk32a3Zaj3Lef7ceqsc6`
   - ran: Bear up to 2.66x  
     CA `Dv6gYYkTav8Pm36UwAywxNCccwSZV1VL1tjiSpDLpump`
-- dev share over 1%: blocked 9, ran 0, dumped 7, flat 0, open 2 (saving losses: keep it)
-- falling knife (code): blocked 9, ran 0, dumped 7, flat 0, open 2 (saving losses: keep it)
-- falling knife / no higher low: blocked 8, ran 0, dumped 6, flat 1, open 1 (saving losses: keep it)
-- crowd leaving / fading volume: blocked 8, ran 2, dumped 5, flat 0, open 1 (saving losses: keep it)
+- dev share over 1%: blocked 10, ran 0, dumped 7, flat 0, open 3 (saving losses: keep it)
+- crowd leaving / fading volume: blocked 9, ran 2, dumped 5, flat 0, open 2 (saving losses: keep it)
   - ran: STABLEPAD up to 2.13x  
     CA `AABM3NrYSwKMsEDyanuskY43EH6ySbPpdPZNG1u7pump`
   - ran: HYDESK up to 1.78x  
     CA `BzndCZ2ZrjUA21aVW7t6AWEENRAps3EmdQg9hf94pump`
-- hack story (owner rule): blocked 5, ran 0, dumped 1, flat 2, open 2 (too few played out to judge)
-- other: blocked 4, ran 1, dumped 2, flat 0, open 1 (saving losses: keep it)
+- falling knife (code): blocked 9, ran 0, dumped 7, flat 0, open 2 (saving losses: keep it)
+- falling knife / no higher low: blocked 8, ran 0, dumped 6, flat 1, open 1 (saving losses: keep it)
+- hack story (owner rule): blocked 6, ran 0, dumped 2, flat 2, open 2 (too few played out to judge)
+- other: blocked 4, ran 2, dumped 2, flat 0, open 0 (mixed)
   - ran: SI up to 1.54x  
     CA `6zuDiAw3NviBwcLZfTztHJgtCmeNWfyFxYVoXtNYpump`
+  - ran: SAFU up to 1.57x  
+    CA `kziXxCJLQMpkiuoyAkgHELxGcKDs4hNoeWdnpgkpump`
 
 ## Rules it changed from results and skips
 - 10-30 12:55Z tightened: Shallow 10–20% band capped at conviction 7 (HYPERCHAN in the shallow band lost twice (-15.2%, -4.9%); neither winner came from that band.)
@@ -165,13 +167,13 @@ A skip "ran" if the coin reached the first target (1.5x) from the skip price bef
 Meta: fresh cat launches are rising (NEBULA/Space Cat, CATPAD, SPACECAT, all under 20 min old). The Kim/Crypto Final Boss joke has come back: $217k, $53k 5m volume, +218% on the hour; the Kim Po copycat is fading. Fresh migrations are rugging fast (Gruffalo and SAFU at -99%). laptop is out under the politician rule (V13), and the Binance-hack coins are skipped. Setups to research: 1) Crypto Final Boss (MIGRATED, original of the meta). Blocker: it's straight up, so buy only on a pullback of at least 10% off the local high with 5m volume at 0.7x or more of its hourly pace. 2) CATPAD ($121k, 68% buys, $46k 5m volume); needs clean holder and bundle checks because it's 20 min old. 3) Space Cat: find the original first. NEBULA's address doesn't end in 'pump', it sits under $70k, and its 5m volume is bigger than its market cap, so it looks like a farm until checks clear it. Jesus Coin is a PASS for now: 6 minutes old with no chart history. Owner's push noted: clean setups can get an 8, but the hard lines, the 20% stop and the 35% max risk don't move.
 
 ## Moving most in its scans, last 30 min (1h volume)
-- ELONTROLL: $337,877 1h vol, $449,721 mcap, +841% 1h  
-  CA `FhdqbRJgDnsxHS4mcY5YpuezTFysbPyDzLXrthyBpump`
 - Kim: $313,792 1h vol, $139,236 mcap, -26% 1h  
   CA `qhbbjGBKJxW3AZGqngWM5tHcrENR3pVoRB9MCf1pump`
-- NEBULA: $304,117 1h vol, $66,071 mcap, +71% 1h  
-  CA `h3f5XoaXYoTX14DFz2Nveb4kGTHSEL6QTZMXxwBi8n6`
 - SKIVE: $292,101 1h vol, $37,036 mcap, +1% 1h  
   CA `E5ybm4acARqNKEAHpUqYG1BRLpYai9anMz8enAHpump`
-- CATPAD: $274,126 1h vol, $121,339 mcap, +164% 1h  
-  CA `2gTbp2gwH46rqExzabSyrdR3294SLwCp2rSqWDS6Sim1`
+- CTO: $231,340 1h vol, $193,979 mcap, +371% 1h  
+  CA `G4vGFQjeqYdbfckvipiuyusFgY1jqAK23mbYG4H8pump`
+- SPACECAT: $189,019 1h vol, $135,941 mcap, +232% 1h  
+  CA `61h4rUn7C21QNv1NJADc2oAxpAhr7f2WGqbXRDEupump`
+- $19: $183,097 1h vol, $138,585 mcap, +244% 1h  
+  CA `pa6bZZbPUj8JVciH9b2DrcqmDuDwkvPBAZnWHKnpump`
