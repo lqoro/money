@@ -1,13 +1,13 @@
 # Trencher live report
 
-Updated 2026-10-30T07:04:29Z (paper trading, never real money)
+Updated 2026-10-30T07:19:38Z (paper trading, never real money)
 
 - Equity: $95.81 (-4.2% vs $100 start)
-- Goal: $1,000 by 2026-11-05 05:03Z (a stretch, survival first): at 9.6% of it, 5.9 days left, needs +48.7% a day from here
+- Goal: $1,000 by 2026-11-05 05:03Z (a stretch, survival first): at 9.6% of it, 5.9 days left, needs +48.8% a day from here
 - Closed trades: 11, 2 wins
 - Fees paid: $6.32 (axiom $0.72, network $4.79, pool $0.67), plus $1.04 lost to slippage
 - New trades: on
-- Brain: subscription, 594 calls and 0 plan-limit hits in 48h
+- Brain: subscription, 597 calls and 0 plan-limit hits in 48h
 
 ## Scorecard (after fees)
 - 11 closed, 2 won (18%), net $-4.20
@@ -74,9 +74,17 @@ Updated 2026-10-30T07:04:29Z (paper trading, never real money)
   CA `ANVLA6eKiAq4nstD2Sg3SZhfVkSEwfnGccn12UQWpump`
 
 ## Last scan
-- 07:03Z: 7 coins, 6 with pairs, 0 passed the market filters, 0 researched
+- 07:19Z: 2 coins, 1 with pairs, 1 passed the market filters, 1 researched
 
 ## Coins it looked at, and why it passed
+- 07:19Z TraderTraitor (MIGRATED, $30,286 mcap, $6,497 5m vol): REJECT, RugCheck danger: Symbol Mismatch Token: "TraderTraitor", File: "TraderTrai"  
+  CA `3XLTWYyHxpAdbP1fjfTz9TBZp9Dhq4A6KWNarHMkGHQb`
+- 07:15Z Catori (FINAL_STRETCH, $31,148 mcap, $3,879 5m vol): PASS at conviction 3, PASS — 10% off the high at 78% bond, top 10 at 24.9% (a hair under the line), $3.9k 5m flow, and a bigger coin owns the ticker. Chase into the 30–40k graveyard (V1, V6).  
+  CA `FDwCosavNvMiFB812ajJp3gG7eZ9c4bpgcnY6fDQpump`
+- 07:14Z SI (MIGRATED, $153,780 mcap, $79,469 5m vol): REJECT, Dev holds 1.8% (>1%) (V13, V17)  
+  CA `E5pZM5GH1WaCWxNnDvhtWVjvzR7P5iUqXU8epki2pump`
+- 07:09Z DESSA (MIGRATED, $8,311,252 mcap, $5,783 5m vol): PASS at conviction 3, PASS — DESSA's nearest target, the $12M high, is only 1.45x away, under the 1.5x initials level, and 5m volume is $5.8k on an $8.3M coin. Clean holders, no move. (V1, V6)  
+  CA `npz2FhoufQ7pKqhGpaipYWacrAkidyW2yDpVWSvpump`
 - 06:52Z HEXN (DIP, $526,917 mcap, $10,338 5m vol): REJECT, Dip with fading attention is a falling knife, not a dip (5m at 0.75x the hour's pace, under 0.8x)  
   CA `ANVLA6eKiAq4nstD2Sg3SZhfVkSEwfnGccn12UQWpump`
 - 06:52Z Foxii (DIP, $452,011 mcap, $21,170 5m vol): PASS at conviction 3, PASS — Foxii is -24% on the 5m and its newest close sits at the hourly low. No higher low means no structure, no stop and no trade. Leader of the animal meta, so it goes on the watchlist (V1).  
@@ -89,14 +97,6 @@ Updated 2026-10-30T07:04:29Z (paper trading, never real money)
   CA `3yRD5rsbikyJoVGjCp11H6ZnYRySEMXqdfnvGvJSperp`
 - 06:30Z STABLEPAD (FINAL_STRETCH, $27,613 mcap, $4,983 5m vol): PASS at conviction 3, PASS — launchpad-tech coin with no GitHub on a fading launchpad meta, 5m at $5k and 0.69x its hourly pace. Attention is leaving, not arriving (V1, V5).  
   CA `AABM3NrYSwKMsEDyanuskY43EH6ySbPpdPZNG1u7pump`
-- 06:24Z DESSA (MIGRATED, $8,669,778 mcap, $3,821 5m vol): PASS at conviction 3, PASS: $3.8k on the 5m and 2,048 sells against 205 buys in the hour. The crowd is leaving an 89-hour-old AI-adjacent meme at $8.7M. Not a setup (V1, V6).  
-  CA `npz2FhoufQ7pKqhGpaipYWacrAkidyW2yDpVWSvpump`
-- 06:23Z TraderTraitor (MIGRATED, $202,128 mcap, $31,370 5m vol): REJECT, RugCheck danger: Symbol Mismatch Token: "TraderTraitor", File: "TraderTrai"  
-  CA `3XLTWYyHxpAdbP1fjfTz9TBZp9Dhq4A6KWNarHMkGHQb`
-- 06:08Z SENSE (MIGRATED, $297,353 mcap, $2,159 5m vol): PASS at conviction 2, PASS — 83% off peak, $2.1k 5m volume and 27 buys vs 40 sells in the last hour. The crowd left a no-GitHub robotics tech coin. Falling knife. (V1, V6)  
-  CA `GydpvgKppv8a4gGQqAQsyQJxtQN4S6Ym9gKxjnN3mfun`
-- 06:07Z jeff (MIGRATED, $1,802,875 mcap, $4,522 5m vol): REJECT, Top 10 hold 34.1% ex-pool (>25%) (V13)  
-  CA `HAsTKXYvv65zM7J6Cu5o5PcZsiKMQYo5oz4WPjgqwP6k`
 
 ## What its skips did next (last 48h)
 A skip "ran" if the coin reached the first target (1.5x) from the skip price before a 20% drop, "dumped" if the drop came first. Sampled every 10 min, followed 6h.
@@ -112,20 +112,20 @@ A skip "ran" if the coin reached the first target (1.5x) from the skip price bef
     CA `6i4ebPt8dpGchB2A1ELpTz3B72dy5DkzNpFMNtUSpump`
   - ran: HyPepe up to 1.5x  
     CA `G8TdzgpUQXQAxJvarNKPXRGv2kh9CsJDK7dCC7Xupump`
-- near the high / chasing: blocked 10, ran 1, dumped 6, flat 0, open 3 (saving losses: keep it)
+- near the high / chasing: blocked 11, ran 1, dumped 6, flat 0, open 4 (saving losses: keep it)
   - ran: OREN up to 1.58x  
     CA `57vAaMsnAJXkvULtAz7fsi6gRn3bHRJFJsJV1okNpump`
-- RugCheck danger: blocked 8, ran 3, dumped 4, flat 1, open 0 (mixed)
+- RugCheck danger: blocked 8, ran 3, dumped 3, flat 1, open 1 (mixed)
   - ran: HYPEINU up to 1.57x  
     CA `6eccVGkbi8cvAYBGzfDmUwFYrMj8eGZF2xyZqZLkpump`
   - ran: ETF up to 1.87x  
     CA `2orqEGSdkm5BMmhdM8TpKCpACk32a3Zaj3Lef7ceqsc6`
   - ran: Bear up to 2.66x  
     CA `Dv6gYYkTav8Pm36UwAywxNCccwSZV1VL1tjiSpDLpump`
-- falling knife / no higher low: blocked 7, ran 0, dumped 5, flat 0, open 2 (saving losses: keep it)
-- dev share over 1%: blocked 7, ran 1, dumped 5, flat 0, open 1 (saving losses: keep it)
+- dev share over 1%: blocked 8, ran 1, dumped 5, flat 0, open 2 (saving losses: keep it)
   - ran: calm up to 1.53x  
     CA `4HSHFbFiKuMvZW7yGiDTab17B63MzBkkhadFKxhkpump`
+- falling knife / no higher low: blocked 7, ran 0, dumped 5, flat 0, open 2 (saving losses: keep it)
 - falling knife (code): blocked 5, ran 0, dumped 4, flat 0, open 1 (saving losses: keep it)
 - bundles over the line: blocked 4, ran 1, dumped 3, flat 0, open 0 (saving losses: keep it)
   - ran: calm up to 1.53x  
@@ -160,16 +160,16 @@ A skip "ran" if the coin reached the first target (1.5x) from the skip price bef
 - [2026-10-30 02:26] I expected the higher-low DIP structure, clean holders and $19k 5m flow with 575 buys to 112 sells to carry HEXN back toward its $0.000589 swing. It only got to 1.17x, then broke the $0.000449 higher low and the -13% stop took me out at 45 min, -27% after fees on a probe. That's fine: my DIP rule put the stop under the higher low and the probe size kept the damage small, and the stop review did its job, since a broken higher low means the thesis is dead. What doesn't fit is this is my second HEXN loss, and both times the story was a thin tech LARP (V1). So next time, on a DIP where volume is under the hourly pace and the narrative is weak, I'll want a fresh volume surge before buying, not just a clean structure, because dips recover on attention, not on holder tables (Soul belief 7, V1).
 
 ## Meta right now
-Animal coins are the meta. Foxii is the strongest: a $723k fox, 3.6h old, +30% on the hour, $17.9k 5m volume. Catori is the cat on the bonding curve, +103% on the hour but only $2.9k on the 5m now. BITCAT is cooling (-49%, $3.6k 5m) and Inuployed is dead. The Hyperliquid/launchpad theme is fading: HYPERCHAN holds $1.6M but 5m flow is down to $6.4k, STABLEPAD is +610% but still on the curve, PUMPLIQUID is -54%. The rest of the movers are one-hour new pairs that burned out (OPTIMISM, bag, GROKTYSON, WARS at 2% buys), plus E91 at 6 minutes old, too new for my data speed (V5). The crawler summary's LIQUID, HLP and PURR are not in this scan, so I treat them as stale. Setups to research: Foxii (MIGRATED, real flow, V1/V6); HEXN ($415k, 86% buys, $11k 5m; migrated / dip-hold candidate, just past the 12h age cap but inside the V6 range); Catori as FINAL_STRETCH only if its 5m gets back toward $10k, watching for the pre-bond dump (V1).
+Meta: animals still lead but are fading. Foxii is -30% on the hour ($452k) but still has $21k 5m and 58% buys, so it's a DIP candidate only if buyers hold. BITCAT and Catori are dead on volume. Hyperliquid is holding: HYPERCHAN +8% at $1.8M, $12k 5m, 64% buys. HEXN is the strongest mover: +31%, 85% buys, $10k 5m, $527k mcap. Fresh pairs (ZERO, p/acc) are too new for my data speed (V5). One-hour rugs anon, UP and Tony are dead. Skipped: TraderTraitor (named after a hacking group) and $LAPTOP (political coin, V13). Setups to research: HEXN (V6 range; 13.9h old, so just past the 12h MIGRATED cap), HYPERCHAN (V6) and Foxii (DIP, only if 5m volume holds).
 
 ## Moving most in its scans, last 30 min (1h volume)
+- TraderTraitor: $297,017 1h vol, $30,286 mcap, -78% 1h  
+  CA `3XLTWYyHxpAdbP1fjfTz9TBZp9Dhq4A6KWNarHMkGHQb`
 - Foxii: $241,300 1h vol, $452,011 mcap, -30% 1h  
   CA `J3ReuwckNtcJP1Zhn7wVbfXhTDNTkHxozQWWAwxWpump`
+- SI: $210,828 1h vol, $153,780 mcap, +273% 1h  
+  CA `E5pZM5GH1WaCWxNnDvhtWVjvzR7P5iUqXU8epki2pump`
 - HYPERCHAN: $186,891 1h vol, $1,799,931 mcap, +8% 1h  
   CA `3ApVr1xphYMpi9dn3rpqU4hwvpmCQDVwxET1rdCDpump`
 - HEXN: $165,215 1h vol, $526,917 mcap, +31% 1h  
   CA `ANVLA6eKiAq4nstD2Sg3SZhfVkSEwfnGccn12UQWpump`
-- anon: $64,436 1h vol, $2,477 mcap, -94% 1h  
-  CA `D31CHHiJoEg4qMMB7s9eRQrHzRbapHgWqSxEsgrFnABi`
-- ZERO: $57,106 1h vol, $21,369 mcap, +542% 1h  
-  CA `Ddwf94wedgCuMHAkwgti8A7sL2CxvBYJStJBj2cFpump`
