@@ -34,7 +34,7 @@ def sanitize_exit_plan(plan: dict | None, cfg: Config) -> dict:
     a bad answer can't remove the stop."""
     out = default_exit_plan(cfg)
     for k, v in (plan or {}).items():
-        if k in out and v is not None:
+        if k in out and v is not None and k not in cfg.steer_pinned:  # the owner's exits aren't up for debate
             out[k] = v
     out["take_initials_multiple"] = min(5.0, max(1.3, float(out["take_initials_multiple"])))
     out["stop_loss_pct"] = min(cfg.stop_loss_pct * 1.5, max(10.0, float(out["stop_loss_pct"])))

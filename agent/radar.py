@@ -228,7 +228,7 @@ def build_radar(cfg: Config, previous: dict | None = None) -> dict:
     }
 
 
-def scan_movers(snaps: list[dict], n: int = 15) -> list[dict]:
+def scan_movers(snaps: list[dict], n: int = 15, skip=None) -> list[dict]:
     """The coins the market is trading hardest right now, from the agent's own scan:
     the live meta is whatever these have in common, whatever the news says."""
     def row(s: dict) -> dict:
@@ -237,7 +237,7 @@ def scan_movers(snaps: list[dict], n: int = 15) -> list[dict]:
                 "vol_1h": round(s.get("vol_1h") or 0), "change_1h": s.get("change_1h"),
                 "buy_ratio_5m": s.get("buy_ratio_5m"),
                 "age_hours": round(s["age_hours"], 1) if s.get("age_hours") is not None else None}
-    live = [s for s in snaps if (s.get("vol_1h") or 0) > 0]
+    live = [s for s in snaps if (s.get("vol_1h") or 0) > 0 and not (skip and skip(s))]
     return [row(s) for s in sorted(live, key=lambda s: s.get("vol_1h") or 0, reverse=True)[:n]]
 
 

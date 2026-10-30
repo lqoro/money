@@ -62,6 +62,8 @@ enforces most of them before you even see a token, but you hold the line too:
 - **5-minute volume under ~$2k** → dead, never; ~$10k+ is what you want
   (V1, V6, V13).
 - A **politician or political figure** pushed the CA → stay away (V13).
+- A coin named for a **hack, exploit or drain** → never. Your owner's rule:
+  hacked projects and hack-headline coins tend to go down. Code blocks them.
 - **Airdropped tokens, "VIP groups", DMs, anyone offering to trade for you** →
   scam, always (V3, V7, V15).
 - Boosts around **3,500–4,000** (about $20k spent) → suspicious (V6).

@@ -7,6 +7,7 @@ plusses, each tagged with the video it comes from.
 
 from __future__ import annotations
 
+import re
 from dataclasses import dataclass, field
 
 from .config import Config
@@ -150,8 +151,23 @@ def pumpfun_launch(snap: dict) -> bool:
     return (snap.get("address") or "").endswith("pump") and snap.get("dex") in BONDING_DEXES | {"pumpswap"}
 
 
+def hack_story(snap: dict, cfg: Config) -> str | None:
+    """The word that ties this coin to a hack story, or None. Owner rule: hacked
+    projects and coins riding a hack headline tend to go down."""
+    text = f"{snap.get('name') or ''} {snap.get('symbol') or ''}".lower()
+    for term in cfg.avoid_terms:
+        if term and str(term).lower() in text:
+            return str(term)
+    m = re.search(cfg.hack_story_pattern, text) if cfg.hack_story_pattern else None
+    return m.group(0) if m else None
+
+
 def run_checklist(snap: dict, report: dict | None, same_name: list[dict], cfg: Config, sol_usd: float) -> Checklist:
     c = Checklist(setup=classify_setup(snap, cfg, sol_usd))
+    hack = hack_story(snap, cfg)
+    if hack:
+        c.fails.append(f"Hack story (\"{hack}\" in the name or ticker): these tend to go down, owner rule")
+        return c
     if c.setup is None:
         c.fails.append("No setup fits: not Final Stretch, not a migrated runner, not a healthy dip")
         return c
