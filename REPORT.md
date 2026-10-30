@@ -1,13 +1,13 @@
 # Trencher live report
 
-Updated 2026-10-30T17:26:20Z (paper trading, never real money)
+Updated 2026-10-30T17:41:24Z (paper trading, never real money)
 
 - Equity: $93.79 (-6.2% vs $100 start)
-- Goal: $1,000 by 2026-11-05 05:03Z (pressing for it): at 9.4% of it, 5.5 days left, needs +54% a day from here
+- Goal: $1,000 by 2026-11-05 05:03Z (pressing for it): at 9.4% of it, 5.5 days left, needs +54.1% a day from here
 - Closed trades: 13, 2 wins
 - Fees paid: $7.85 (axiom $1.10, network $5.57, pool $1.04), plus $1.62 lost to slippage
 - New trades: on
-- Brain: subscription, 627 calls and 0 plan-limit hits in 48h
+- Brain: subscription, 626 calls and 0 plan-limit hits in 48h
 
 ## Scorecard (after fees)
 - 13 closed, 2 won (15%), net $-6.21
@@ -74,9 +74,13 @@ Updated 2026-10-30T17:26:20Z (paper trading, never real money)
   CA `3ApVr1xphYMpi9dn3rpqU4hwvpmCQDVwxET1rdCDpump`
 
 ## Last scan
-- 17:25Z: 0 coins, 0 with pairs, 0 passed the market filters, 0 researched
+- 17:40Z: 12 coins, 12 with pairs, 0 passed the market filters, 0 researched
 
 ## Coins it looked at, and why it passed
+- 17:34Z ███ (MIGRATED, $510,849 mcap, $3,616 5m vol): REJECT, Top 10 hold 25.8% ex-pool (>25%) (V13)  
+  CA `EwX2T1p2PmgTsSq2Bi6XtQYxPC5krR4P2fxPfN4Qpump`
+- 17:34Z CATPAD (DIP, $81,395 mcap, $3,490 5m vol): PASS at conviction 3, PASS — four bigger coins share the CATPAD ticker, so this one isn't the leader and could be a vamp, and 5m volume is only $3.5k against the $10k bar. A 2-day-old site that doesn't list the CA doesn't help (V1, V3, V6).  
+  CA `2gTbp2gwH46rqExzabSyrdR3294SLwCp2rSqWDS6Sim1`
 - 17:16Z FLYWHEEL (FINAL_STRETCH, $20,371 mcap, $9,080 5m vol): PASS at conviction 3, PASS: buying a vertical +82% 5m candle at the high on a 15-minute-old curve coin, with 14 same-ticker copies and a borrowed-GitHub brain LARP. That's chasing, and the pre-bond dump is still ahead (V1, V13).  
   CA `BWMf44rD724R2bdgHWd88CDTVEjuPNQauw8s6S7ipump`
 - 17:16Z SPACEINU (MIGRATED, $193,208 mcap, $21,007 5m vol): PASS at conviction 3, PASS — second-copy Space Inu at its high while the leader does 6x its volume. Vamp at the top. (V1, V2)  
@@ -93,14 +97,10 @@ Updated 2026-10-30T17:26:20Z (paper trading, never real money)
   CA `3qjBR3LfzEAKVS6QXuR2QZ1RFUsXzATWvmjbGB5Dpump`
 - 17:01Z CBUCKS (MIGRATED, $923,314 mcap, $3,144 5m vol): REJECT, Top 10 hold 27.3% ex-pool (>25%) (V13)  
   CA `DtcicPCKTKeAh7TDEzTym3hXeoHAoMiBdYJhMYxZpump`
-- 17:00Z GATO (MIGRATED, $4,687,332 mcap, $2,718 5m vol): REJECT, Dev holds 3.3% (>1%) (V13, V17)  
-  CA `HsprHxBRgiVaQdRf3TnKNuZZtaX9JUSPgMFdAkk6pump`
-- 17:00Z HYPERCHAN (DIP, $1,485,974 mcap, $3,744 5m vol): PASS at conviction 3, PASS — 5m vol $3.7k at 0.65x hourly pace with sells > buys; DIP attention gate fails. Clean holders don't make a dead tape run. (V1, V6)  
-  CA `3ApVr1xphYMpi9dn3rpqU4hwvpmCQDVwxET1rdCDpump`
 
 ## What its skips did next (last 48h)
 A skip "ran" if the coin reached the first target (1.5x) from the skip price before a 20% drop, "dumped" if the drop came first. Sampled every 10 min, followed 6h.
-- top 10 over 25%: blocked 30, ran 5, dumped 20, flat 0, open 5 (saving losses: keep it)
+- top 10 over 25%: blocked 30, ran 6, dumped 22, flat 0, open 2 (saving losses: keep it)
   - ran: HYPERGAMY up to 2.05x  
     CA `CUyNDWGdLPXZ3Gyj1H6TBh5pACgu5nY9WNkSqfMApump`
   - ran: Catori up to 1.52x  
@@ -114,11 +114,13 @@ A skip "ran" if the coin reached the first target (1.5x) from the skip price bef
     CA `6i4ebPt8dpGchB2A1ELpTz3B72dy5DkzNpFMNtUSpump`
   - ran: HyPepe up to 1.5x  
     CA `G8TdzgpUQXQAxJvarNKPXRGv2kh9CsJDK7dCC7Xupump`
-- near the high / chasing: blocked 20, ran 2, dumped 11, flat 2, open 5 (saving losses: keep it)
+- near the high / chasing: blocked 20, ran 4, dumped 13, flat 2, open 1 (saving losses: keep it)
   - ran: OREN up to 1.58x  
     CA `57vAaMsnAJXkvULtAz7fsi6gRn3bHRJFJsJV1okNpump`
   - ran: Catori up to 1.52x  
     CA `FDwCosavNvMiFB812ajJp3gG7eZ9c4bpgcnY6fDQpump`
+  - ran: SPACEINU up to 1.57x  
+    CA `5izHfawy4Rg1Vjm27F3ieHzmkEtWWyVNenhFFDPvpump`
 - RugCheck danger: blocked 16, ran 5, dumped 10, flat 1, open 0 (saving losses: keep it)
   - ran: HYPEINU up to 1.57x  
     CA `6eccVGkbi8cvAYBGzfDmUwFYrMj8eGZF2xyZqZLkpump`
@@ -132,10 +134,10 @@ A skip "ran" if the coin reached the first target (1.5x) from the skip price bef
     CA `AABM3NrYSwKMsEDyanuskY43EH6ySbPpdPZNG1u7pump`
   - ran: HYDESK up to 1.78x  
     CA `BzndCZ2ZrjUA21aVW7t6AWEENRAps3EmdQg9hf94pump`
-- dev share over 1%: blocked 10, ran 0, dumped 7, flat 0, open 3 (saving losses: keep it)
+- dev share over 1%: blocked 10, ran 0, dumped 8, flat 0, open 2 (saving losses: keep it)
 - falling knife (code): blocked 10, ran 0, dumped 9, flat 0, open 1 (saving losses: keep it)
-- hack story (owner rule): blocked 7, ran 0, dumped 3, flat 2, open 2 (saving losses: keep it)
-- bundles over the line: blocked 5, ran 0, dumped 3, flat 0, open 2 (saving losses: keep it)
+- hack story (owner rule): blocked 7, ran 0, dumped 3, flat 3, open 1 (saving losses: keep it)
+- bundles over the line: blocked 5, ran 0, dumped 4, flat 0, open 1 (saving losses: keep it)
 
 ## Rules it changed from results and skips
 - 10-30 12:55Z added: Press the goal: take every rule-clearing setup at honest conviction (Owner override replacing the dropped deadline rule; hard lines, stops and 35% risk ceiling unchanged.)
@@ -171,13 +173,13 @@ Setups I'd research now:
 On your note: I'll take more trades and rate clean ones honestly at 7–9. But a 10x in six days doesn't change where my stop goes or how big a position gets. Inflated conviction is the fastest way to lose the $100 we've got.
 
 ## Moving most in its scans, last 30 min (1h volume)
-- PODCATWALK: $715,478 1h vol, $406,262 mcap, +90% 1h  
-  CA `52MBEXmhVrZUJvMEbRpKRhehFUL8DnnV5LzYJ2G1pump`
 - SPACEINU: $318,344 1h vol, $357,402 mcap, +653% 1h  
   CA `2aZp4sP2bPdMUVkTVeRmzBvJvCaeTpgYXNBXNuEopump`
-- $PERIODTPE: $207,524 1h vol, $1,866 mcap, -95% 1h  
-  CA `HpH3XrbTCtLnt1BRJ4BWJQXgbDXHZDzs76hssf42pump`
-- HEXN: $199,076 1h vol, $148,146 mcap, -50% 1h  
-  CA `ANVLA6eKiAq4nstD2Sg3SZhfVkSEwfnGccn12UQWpump`
 - SPACEINU: $153,187 1h vol, $193,208 mcap, +311% 1h  
   CA `5izHfawy4Rg1Vjm27F3ieHzmkEtWWyVNenhFFDPvpump`
+- 咪咪: $109,569 1h vol, $37,964 mcap, -4% 1h  
+  CA `JrvC7qKnGVn163q1u11VDUno7JtJ4ME2euiJkaupump`
+- Hedge: $103,990 1h vol, $12,500 mcap, +208% 1h  
+  CA `7eQagAYSYYhRqRZF5L97Ku8AK94TEpsmnrrsssUkpump`
+- Inkky: $103,156 1h vol, $4,282 mcap, -70% 1h  
+  CA `3sSGvtwsUnKkBPWrmrvgVZRMvNpPJHhFQA998rs1pump`
