@@ -1,9 +1,9 @@
 # Trencher live report
 
-Updated 2026-10-30T17:11:06Z (paper trading, never real money)
+Updated 2026-10-30T17:26:20Z (paper trading, never real money)
 
 - Equity: $93.79 (-6.2% vs $100 start)
-- Goal: $1,000 by 2026-11-05 05:03Z (pressing for it): at 9.4% of it, 5.5 days left, needs +53.8% a day from here
+- Goal: $1,000 by 2026-11-05 05:03Z (pressing for it): at 9.4% of it, 5.5 days left, needs +54% a day from here
 - Closed trades: 13, 2 wins
 - Fees paid: $7.85 (axiom $1.10, network $5.57, pool $1.04), plus $1.62 lost to slippage
 - New trades: on
@@ -74,9 +74,17 @@ Updated 2026-10-30T17:11:06Z (paper trading, never real money)
   CA `3ApVr1xphYMpi9dn3rpqU4hwvpmCQDVwxET1rdCDpump`
 
 ## Last scan
-- 17:10Z: 4 coins, 4 with pairs, 2 passed the market filters, 2 researched
+- 17:25Z: 0 coins, 0 with pairs, 0 passed the market filters, 0 researched
 
 ## Coins it looked at, and why it passed
+- 17:16Z FLYWHEEL (FINAL_STRETCH, $20,371 mcap, $9,080 5m vol): PASS at conviction 3, PASS: buying a vertical +82% 5m candle at the high on a 15-minute-old curve coin, with 14 same-ticker copies and a borrowed-GitHub brain LARP. That's chasing, and the pre-bond dump is still ahead (V1, V13).  
+  CA `BWMf44rD724R2bdgHWd88CDTVEjuPNQauw8s6S7ipump`
+- 17:16Z SPACEINU (MIGRATED, $193,208 mcap, $21,007 5m vol): PASS at conviction 3, PASS — second-copy Space Inu at its high while the leader does 6x its volume. Vamp at the top. (V1, V2)  
+  CA `5izHfawy4Rg1Vjm27F3ieHzmkEtWWyVNenhFFDPvpump`
+- 17:12Z 咪咪 (MIGRATED, $37,964 mcap, $4,984 5m vol): REJECT, Top 10 hold 27.8% ex-pool (>25%) (V13)  
+  CA `JrvC7qKnGVn163q1u11VDUno7JtJ4ME2euiJkaupump`
+- 17:12Z SPACEINU (MIGRATED, $357,402 mcap, $129,692 5m vol): PASS at conviction 4, PASS: 11 minutes old, 14% under a high only 1.16x away, and the last space-cat original already went -98.7% in an hour. The target is below initials. (V1, V6)  
+  CA `2aZp4sP2bPdMUVkTVeRmzBvJvCaeTpgYXNBXNuEopump`
 - 17:10Z Bonnie (MIGRATED, $30,728 mcap, $8,637 5m vol): REJECT, Top 10 hold 29.2% ex-pool (>25%) (V13)  
   CA `951SCVym2Hd7KYprJ5UCCXXEKEm4bGQ6riiuAjPCpump`
 - 17:10Z PODCATWALK (MIGRATED, $406,262 mcap, $41,645 5m vol): REJECT, Bundles: 10 linked wallet cluster(s) hold 49.4% of supply (>20%) (V17)  
@@ -89,44 +97,36 @@ Updated 2026-10-30T17:11:06Z (paper trading, never real money)
   CA `HsprHxBRgiVaQdRf3TnKNuZZtaX9JUSPgMFdAkk6pump`
 - 17:00Z HYPERCHAN (DIP, $1,485,974 mcap, $3,744 5m vol): PASS at conviction 3, PASS — 5m vol $3.7k at 0.65x hourly pace with sells > buys; DIP attention gate fails. Clean holders don't make a dead tape run. (V1, V6)  
   CA `3ApVr1xphYMpi9dn3rpqU4hwvpmCQDVwxET1rdCDpump`
-- 16:59Z Foxii (MIGRATED, $71,103 mcap, $8,492 5m vol): PASS at conviction 2, PASS: down 96% from a $1.8M peak, no higher low, $8.5k 5m with buys 65/60 against sells. Falling knife, not a dip. (V1, V6)  
-  CA `J3ReuwckNtcJP1Zhn7wVbfXhTDNTkHxozQWWAwxWpump`
-- 16:57Z HEXN (MIGRATED, $148,146 mcap, $15,139 5m vol): PASS at conviction 2, PASS — 91.8% off the peak, -50% on the hour, no higher low, thin LARP story. Falling knife, and my third look at a coin that's beaten me twice. (V1)  
-  CA `ANVLA6eKiAq4nstD2Sg3SZhfVkSEwfnGccn12UQWpump`
-- 16:47Z CATPAD (DIP, $78,419 mcap, $4,755 5m vol): REJECT, Dip with fading attention is a falling knife, not a dip (5m at 0.51x the hour's pace, under 0.6x)  
-  CA `2gTbp2gwH46rqExzabSyrdR3294SLwCp2rSqWDS6Sim1`
-- 16:47Z STANK (DIP, $184,237 mcap, $3,239 5m vol): PASS at conviction 3, PASS: seven red 15m closes in a row and −17% on the 5m with no higher low. Falling knife on $3.2k of flow. (V1)  
-  CA `5wsjHxT5nW5jQuVupXUNnYszF3WoWCfGGk9LMcsCJzY8`
 
 ## What its skips did next (last 48h)
 A skip "ran" if the coin reached the first target (1.5x) from the skip price before a 20% drop, "dumped" if the drop came first. Sampled every 10 min, followed 6h.
-- top 10 over 25%: blocked 30, ran 6, dumped 20, flat 0, open 4 (saving losses: keep it)
+- top 10 over 25%: blocked 30, ran 5, dumped 20, flat 0, open 5 (saving losses: keep it)
   - ran: HYPERGAMY up to 2.05x  
     CA `CUyNDWGdLPXZ3Gyj1H6TBh5pACgu5nY9WNkSqfMApump`
   - ran: Catori up to 1.52x  
     CA `FDwCosavNvMiFB812ajJp3gG7eZ9c4bpgcnY6fDQpump`
   - ran: ZERO up to 1.8x  
     CA `Ddwf94wedgCuMHAkwgti8A7sL2CxvBYJStJBj2cFpump`
-- too new / sniping: blocked 27, ran 6, dumped 21, flat 0, open 0 (saving losses: keep it)
+- too new / sniping: blocked 28, ran 6, dumped 21, flat 0, open 1 (saving losses: keep it)
   - ran: ZI up to 1.7x  
     CA `5q45EK4mRhuiuBmRYoaDs4m2xweaV7gn3zsFhsvcpump`
   - ran: BEAR up to 1.59x  
     CA `6i4ebPt8dpGchB2A1ELpTz3B72dy5DkzNpFMNtUSpump`
   - ran: HyPepe up to 1.5x  
     CA `G8TdzgpUQXQAxJvarNKPXRGv2kh9CsJDK7dCC7Xupump`
-- near the high / chasing: blocked 18, ran 2, dumped 10, flat 2, open 4 (saving losses: keep it)
+- near the high / chasing: blocked 20, ran 2, dumped 11, flat 2, open 5 (saving losses: keep it)
   - ran: OREN up to 1.58x  
     CA `57vAaMsnAJXkvULtAz7fsi6gRn3bHRJFJsJV1okNpump`
   - ran: Catori up to 1.52x  
     CA `FDwCosavNvMiFB812ajJp3gG7eZ9c4bpgcnY6fDQpump`
-- RugCheck danger: blocked 16, ran 5, dumped 9, flat 1, open 1 (mixed)
+- RugCheck danger: blocked 16, ran 5, dumped 10, flat 1, open 0 (saving losses: keep it)
   - ran: HYPEINU up to 1.57x  
     CA `6eccVGkbi8cvAYBGzfDmUwFYrMj8eGZF2xyZqZLkpump`
   - ran: ETF up to 1.87x  
     CA `2orqEGSdkm5BMmhdM8TpKCpACk32a3Zaj3Lef7ceqsc6`
   - ran: Bear up to 2.66x  
     CA `Dv6gYYkTav8Pm36UwAywxNCccwSZV1VL1tjiSpDLpump`
-- falling knife / no higher low: blocked 10, ran 0, dumped 7, flat 1, open 2 (saving losses: keep it)
+- falling knife / no higher low: blocked 10, ran 0, dumped 8, flat 1, open 1 (saving losses: keep it)
 - crowd leaving / fading volume: blocked 10, ran 2, dumped 6, flat 1, open 1 (saving losses: keep it)
   - ran: STABLEPAD up to 2.13x  
     CA `AABM3NrYSwKMsEDyanuskY43EH6ySbPpdPZNG1u7pump`
@@ -160,16 +160,24 @@ A skip "ran" if the coin reached the first target (1.5x) from the skip price bef
 - [2026-10-30 10:53] Expected: HYPERCHAN, the clean flow leader of the HYPE meta at about $2M, would break its 4-hour range and run toward $3M. What happened: it peaked at 1.18x, never broke out, and the 45-minute time stop sold it at 1.05x on market cap, which is still a 4.9% loss after fees. The shallow-band leader rule did its job (clean holders, real flow, no dump), so it stays. What failed was the clock: my written rule is to exit if still under 1.0x at 45 min, but this one closed green on market cap, and a 1.5x move on a $2M coin rarely happens in 45 minutes (V1 talks about small new pairs, V6 about $70k–$11M runners). Next time, for MIGRATED entries above about $1M that are holding their range, give the time stop more room (about 90 min) and still exit if price closes back under the range low. One flat scratch is a sample of one, not a reason to drop the setup.
 
 ## Meta right now
-The meta right now is fresh, sub-1-hour launches running joke characters, and cats are the theme showing up across the most coins. Elon The Troller ($446k, $74k 5m volume, +838% on the hour, 80% buys) is the loudest. Space Cat (SPACECAT, BLN4…pump) is at $202k with $44k 5m volume and +452% on the hour; it's clearly the original, and the NEBULA "Space Cat" vamp (no pump suffix) is dead at -81%. Cats are rising on the new launches (SPACECAT, nomnomnomcat on the curve) but fading on the older ones: CATPAD has dropped to $2.1k 5m volume against a $307k hour, which is a dead chart and not a dip. Crypto Final Boss isn't even on the movers list anymore, so the crawler's summary is stale, and its "SAFU -99%" line conflicts with today's scan showing SAFU at $199k and +155%, so SAFU stays untouched until checks explain it. Setups I'd research now: 1) ELONTROLL as MIGRATED, but only on a pullback of at least 10% off the local high with 5m volume at 0.7x or more of its hourly pace, because buying a vertical +838% candle makes me exit liquidity (V1). 2) SPACECAT, same pullback rule, as the original cat of the hour (V1, V13). 3) DODGY ($14.5k, $20k 5m) and "only the paranoid survive" ($21k, $18k 5m) as FINAL_STRETCH candidates if holder and bundle checks come back clean. Both have 5m volume above market cap, so I'm assuming they're farms until the checks say otherwise. LAPTOP is out under the politician rule (V13), and the hack-story coins are skipped.
+The meta is fresh launches under an hour old that have already bonded, with two themes running across several coins. Space is rising: two SPACEINU contracts are both moving, and the 2aZp…pump one is the leader at $357k with $130k of 5-minute volume, +653% on the hour and 83% buys. The 5izH…pump one at $193k looks like the vamp chasing it (V1, V13). Cats are holding up: PODCATWALK is at $406k with $42k 5-minute volume, $715k on the hour and 77% buys. Mimi The Cat is cooling at $38k. The other side of the board is fading fast: PERIODTPE (-95%), RDDT and Cooper are dead charts, not dips. The crawler summary's coins (ELONTROLL, SPACECAT) aren't on the movers list, so I'm not using it.
+
+Setups I'd research now:
+1) SPACEINU (2aZp) as MIGRATED, only on a pullback of at least 10% from the local high with 5-minute volume holding at 0.7x or more of its hourly pace. Buying the vertical candle makes me exit liquidity (V1).
+2) PODCATWALK as MIGRATED, same pullback rule.
+3) HEXN as a DIP. It's 24 hours old, -50% on the hour, and its 5-minute volume is $15k against a $16.6k hourly average (0.91x) with 77% buys. It only counts if the peak proves it was a real coin and the holder checks are clean.
+4) Hedge as FINAL_STRETCH ($14k mcap, $12.6k 5-minute volume, 0.3h old). 5-minute volume almost equal to the market cap looks like a farm until the bundle checks say otherwise.
+
+On your note: I'll take more trades and rate clean ones honestly at 7–9. But a 10x in six days doesn't change where my stop goes or how big a position gets. Inflated conviction is the fastest way to lose the $100 we've got.
 
 ## Moving most in its scans, last 30 min (1h volume)
 - PODCATWALK: $715,478 1h vol, $406,262 mcap, +90% 1h  
   CA `52MBEXmhVrZUJvMEbRpKRhehFUL8DnnV5LzYJ2G1pump`
+- SPACEINU: $318,344 1h vol, $357,402 mcap, +653% 1h  
+  CA `2aZp4sP2bPdMUVkTVeRmzBvJvCaeTpgYXNBXNuEopump`
+- $PERIODTPE: $207,524 1h vol, $1,866 mcap, -95% 1h  
+  CA `HpH3XrbTCtLnt1BRJ4BWJQXgbDXHZDzs76hssf42pump`
 - HEXN: $199,076 1h vol, $148,146 mcap, -50% 1h  
   CA `ANVLA6eKiAq4nstD2Sg3SZhfVkSEwfnGccn12UQWpump`
-- SPACECAT: $160,351 1h vol, $1,972 mcap, -99% 1h  
-  CA `61h4rUn7C21QNv1NJADc2oAxpAhr7f2WGqbXRDEupump`
-- Bonnie: $142,225 1h vol, $30,728 mcap, -21% 1h  
-  CA `951SCVym2Hd7KYprJ5UCCXXEKEm4bGQ6riiuAjPCpump`
-- Foxii: $132,423 1h vol, $71,103 mcap, -29% 1h  
-  CA `J3ReuwckNtcJP1Zhn7wVbfXhTDNTkHxozQWWAwxWpump`
+- SPACEINU: $153,187 1h vol, $193,208 mcap, +311% 1h  
+  CA `5izHfawy4Rg1Vjm27F3ieHzmkEtWWyVNenhFFDPvpump`
