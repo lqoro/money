@@ -1,13 +1,13 @@
 # Trencher live report
 
-Updated 2026-10-30T07:49:52Z (paper trading, never real money)
+Updated 2026-10-30T08:04:54Z (paper trading, never real money)
 
 - Equity: $95.81 (-4.2% vs $100 start)
-- Goal: $1,000 by 2026-11-05 05:03Z (a stretch, survival first): at 9.6% of it, 5.9 days left, needs +49% a day from here
+- Goal: $1,000 by 2026-11-05 05:03Z (a stretch, survival first): at 9.6% of it, 5.9 days left, needs +49.1% a day from here
 - Closed trades: 11, 2 wins
 - Fees paid: $6.32 (axiom $0.72, network $4.79, pool $0.67), plus $1.04 lost to slippage
 - New trades: on
-- Brain: subscription, 600 calls and 0 plan-limit hits in 48h
+- Brain: subscription, 603 calls and 0 plan-limit hits in 48h
 
 ## Scorecard (after fees)
 - 11 closed, 2 won (18%), net $-4.20
@@ -74,9 +74,17 @@ Updated 2026-10-30T07:49:52Z (paper trading, never real money)
   CA `ANVLA6eKiAq4nstD2Sg3SZhfVkSEwfnGccn12UQWpump`
 
 ## Last scan
-- 07:49Z: 3 coins, 3 with pairs, 0 passed the market filters, 0 researched
+- 08:04Z: 4 coins, 4 with pairs, 1 passed the market filters, 1 researched
 
 ## Coins it looked at, and why it passed
+- 08:04Z Chameleon  (FINAL_STRETCH, $20,872 mcap, $7,170 5m vol): PASS at conviction 2, PASS: a 17-minute-old AI-agent LARP on a domain 0.1 days old. Its own site says it isn't affiliated with the original Chameleon Trading, and it's bought 15% off the high on $7k 5m volume. Vamp, LARP, chase (V1, V3, V6).  
+  CA `3sMDCmp4SEWN7AR7YeHp55mkXodNTQsmb8C2R7NQpump`
+- 08:03Z Stonka (MIGRATED, $73,645 mcap, $29,001 5m vol): REJECT, Top 10 hold 32.2% ex-pool (>25%) (V13)  
+  CA `3UrbFtErj4FYspTupgAfKqztrMYNVQA2GocpT97Q3ray`
+- 07:57Z SAFU (MIGRATED, $124,150 mcap, $89,022 5m vol): PASS at conviction 3, PASS: 14 minutes old, 12% off the high, and one wallet group holds 5.3%. Wait for a base, don't buy the bond spike. (V1, V3, V13)  
+  CA `EjbgFA8vFhswojnNLxQVKYKiDsm3PgM6w7JuehfPpump`
+- 07:55Z DESSA (MIGRATED, $8,223,055 mcap, $4,105 5m vol): PASS at conviction 3, PASS: $4.1k of 5m volume on an $8.2M coin, with sellers ahead 20 to 11. The crowd already left. (V1, V6)  
+  CA `npz2FhoufQ7pKqhGpaipYWacrAkidyW2yDpVWSvpump`
 - 07:45Z GATO (MIGRATED, $4,218,827 mcap, $2,237 5m vol): REJECT, Dev holds 3.3% (>1%) (V13, V17)  
   CA `HsprHxBRgiVaQdRf3TnKNuZZtaX9JUSPgMFdAkk6pump`
 - 07:39Z LEVR (FINAL_STRETCH, $21,179 mcap, $9,470 5m vol): REJECT, Dev holds 2.4% (>1%) (V13, V17)  
@@ -89,35 +97,27 @@ Updated 2026-10-30T07:49:52Z (paper trading, never real money)
   CA `3ApVr1xphYMpi9dn3rpqU4hwvpmCQDVwxET1rdCDpump`
 - 07:32Z BEAST (FINAL_STRETCH, $27,144 mcap, $22,182 5m vol): REJECT, Top 10 hold 28.0% ex-pool (>25%) (V13)  
   CA `3mh5pgk58HPZwEinnZNUbsJpUoyqYa23zS2n442Zpump`
-- 07:19Z TraderTraitor (MIGRATED, $30,286 mcap, $6,497 5m vol): REJECT, RugCheck danger: Symbol Mismatch Token: "TraderTraitor", File: "TraderTrai"  
-  CA `3XLTWYyHxpAdbP1fjfTz9TBZp9Dhq4A6KWNarHMkGHQb`
-- 07:15Z Catori (FINAL_STRETCH, $31,148 mcap, $3,879 5m vol): PASS at conviction 3, PASS — 10% off the high at 78% bond, top 10 at 24.9% (a hair under the line), $3.9k 5m flow, and a bigger coin owns the ticker. Chase into the 30–40k graveyard (V1, V6).  
-  CA `FDwCosavNvMiFB812ajJp3gG7eZ9c4bpgcnY6fDQpump`
-- 07:14Z SI (MIGRATED, $153,780 mcap, $79,469 5m vol): REJECT, Dev holds 1.8% (>1%) (V13, V17)  
-  CA `E5pZM5GH1WaCWxNnDvhtWVjvzR7P5iUqXU8epki2pump`
-- 07:09Z DESSA (MIGRATED, $8,311,252 mcap, $5,783 5m vol): PASS at conviction 3, PASS — DESSA's nearest target, the $12M high, is only 1.45x away, under the 1.5x initials level, and 5m volume is $5.8k on an $8.3M coin. Clean holders, no move. (V1, V6)  
-  CA `npz2FhoufQ7pKqhGpaipYWacrAkidyW2yDpVWSvpump`
 
 ## What its skips did next (last 48h)
 A skip "ran" if the coin reached the first target (1.5x) from the skip price before a 20% drop, "dumped" if the drop came first. Sampled every 10 min, followed 6h.
-- top 10 over 25%: blocked 16, ran 3, dumped 11, flat 0, open 2 (saving losses: keep it)
+- top 10 over 25%: blocked 17, ran 3, dumped 11, flat 0, open 3 (saving losses: keep it)
   - ran: HYPERGAMY up to 2.05x  
     CA `CUyNDWGdLPXZ3Gyj1H6TBh5pACgu5nY9WNkSqfMApump`
   - ran: ZERO up to 1.8x  
     CA `Ddwf94wedgCuMHAkwgti8A7sL2CxvBYJStJBj2cFpump`
   - ran: BEAST up to 2.52x  
     CA `3mh5pgk58HPZwEinnZNUbsJpUoyqYa23zS2n442Zpump`
-- too new / sniping: blocked 14, ran 3, dumped 11, flat 0, open 0 (saving losses: keep it)
+- too new / sniping: blocked 15, ran 3, dumped 11, flat 0, open 1 (saving losses: keep it)
   - ran: ZI up to 1.7x  
     CA `5q45EK4mRhuiuBmRYoaDs4m2xweaV7gn3zsFhsvcpump`
   - ran: BEAR up to 1.59x  
     CA `6i4ebPt8dpGchB2A1ELpTz3B72dy5DkzNpFMNtUSpump`
   - ran: HyPepe up to 1.5x  
     CA `G8TdzgpUQXQAxJvarNKPXRGv2kh9CsJDK7dCC7Xupump`
-- near the high / chasing: blocked 11, ran 1, dumped 6, flat 0, open 4 (saving losses: keep it)
+- near the high / chasing: blocked 12, ran 1, dumped 6, flat 0, open 5 (saving losses: keep it)
   - ran: OREN up to 1.58x  
     CA `57vAaMsnAJXkvULtAz7fsi6gRn3bHRJFJsJV1okNpump`
-- dev share over 1%: blocked 9, ran 1, dumped 6, flat 0, open 2 (saving losses: keep it)
+- dev share over 1%: blocked 9, ran 1, dumped 7, flat 0, open 1 (saving losses: keep it)
   - ran: calm up to 1.53x  
     CA `4HSHFbFiKuMvZW7yGiDTab17B63MzBkkhadFKxhkpump`
 - RugCheck danger: blocked 8, ran 4, dumped 3, flat 1, open 0 (cost more winners than it saved: loosen it)
@@ -167,13 +167,13 @@ A skip "ran" if the coin reached the first target (1.5x) from the skip price bef
 Meta: animals still lead but are fading. Foxii is -30% on the hour ($452k) but still has $21k 5m and 58% buys, so it's a DIP candidate only if buyers hold. BITCAT and Catori are dead on volume. Hyperliquid is holding: HYPERCHAN +8% at $1.8M, $12k 5m, 64% buys. HEXN is the strongest mover: +31%, 85% buys, $10k 5m, $527k mcap. Fresh pairs (ZERO, p/acc) are too new for my data speed (V5). One-hour rugs anon, UP and Tony are dead. Skipped: TraderTraitor (named after a hacking group) and $LAPTOP (political coin, V13). Setups to research: HEXN (V6 range; 13.9h old, so just past the 12h MIGRATED cap), HYPERCHAN (V6) and Foxii (DIP, only if 5m volume holds).
 
 ## Moving most in its scans, last 30 min (1h volume)
+- SI: $362,413 1h vol, $1,945 mcap, -97% 1h  
+  CA `E5pZM5GH1WaCWxNnDvhtWVjvzR7P5iUqXU8epki2pump`
 - Foxii: $243,082 1h vol, $896,957 mcap, +49% 1h  
   CA `J3ReuwckNtcJP1Zhn7wVbfXhTDNTkHxozQWWAwxWpump`
+- SAFU: $186,111 1h vol, $124,150 mcap, +202% 1h  
+  CA `EjbgFA8vFhswojnNLxQVKYKiDsm3PgM6w7JuehfPpump`
 - HEXN: $174,446 1h vol, $597,300 mcap, +16% 1h  
   CA `ANVLA6eKiAq4nstD2Sg3SZhfVkSEwfnGccn12UQWpump`
 - HYPERCHAN: $134,307 1h vol, $1,790,962 mcap, +0% 1h  
   CA `3ApVr1xphYMpi9dn3rpqU4hwvpmCQDVwxET1rdCDpump`
-- ZERO: $65,154 1h vol, $3,327 mcap, -92% 1h  
-  CA `Ddwf94wedgCuMHAkwgti8A7sL2CxvBYJStJBj2cFpump`
-- BEAST: $63,388 1h vol, $27,144 mcap, +539% 1h  
-  CA `3mh5pgk58HPZwEinnZNUbsJpUoyqYa23zS2n442Zpump`
