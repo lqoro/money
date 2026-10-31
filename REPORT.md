@@ -1,13 +1,13 @@
 # Trencher live report
 
-Updated 2026-10-31T09:51:30Z (paper trading, never real money)
+Updated 2026-10-31T10:06:40Z (paper trading, never real money)
 
 - Equity: $90.20 (-9.8% vs $100 start)
-- Goal: $1,000 by 2026-11-05 05:03Z (pressing for it): at 9% of it, 4.8 days left, needs +65.1% a day from here
+- Goal: $1,000 by 2026-11-05 05:03Z (pressing for it): at 9% of it, 4.8 days left, needs +65.3% a day from here
 - Closed trades: 14, 2 wins
 - Fees paid: $8.84 (axiom $1.30, network $6.14, pool $1.26), plus $1.92 lost to slippage
 - New trades: on
-- Brain: subscription, 626 calls and 1 plan-limit hits in 48h
+- Brain: subscription, 625 calls and 1 plan-limit hits in 48h
 
 ## Scorecard (after fees)
 - 14 closed, 2 won (14%), net $-9.80
@@ -74,9 +74,11 @@ Updated 2026-10-31T09:51:30Z (paper trading, never real money)
   CA `J5jxG3PFaWpj6BLEQExyC6FSqSvaTKNdQ9G3sZwBpump`
 
 ## Last scan
-- 09:50Z: 6 coins, 5 with pairs, 1 passed the market filters, 1 researched
+- 10:06Z: 6 coins, 5 with pairs, 0 passed the market filters, 0 researched
 
 ## Coins it looked at, and why it passed
+- 10:01Z JOB (MIGRATED, $3,258,685 mcap, $3,191 5m vol): PASS at conviction 3, PASS: $3.2k on the 5m, more sellers than buyers, and the prior high is only 1.12x away. Nothing here to chase. (V1, V6)  
+  CA `9Pq7aLAbhDG2tTnS22cm6kuysZVcZpLFE368HWuypump`
 - 09:51Z HELL (MIGRATED, $2,716,448 mcap, $2,548 5m vol): PASS at conviction 3, PASS: 5m volume is $2.5k on a +17.7% spike at 5.1x a dead hourly pace. That's thin flow and a chase, with no crowd behind it (V1, V6).  
   CA `A75Xx6SeftAmWduv9KGwb2GCjXUAhxozcCUCys9jpump`
 - 09:43Z 发发 (DIP, $226,618 mcap, $11,184 5m vol): REJECT, Dip with fading attention is a falling knife, not a dip (5m at 0.17x the hour's pace, under 0.6x)  
@@ -95,19 +97,17 @@ Updated 2026-10-31T09:51:30Z (paper trading, never real money)
   CA `HsprHxBRgiVaQdRf3TnKNuZZtaX9JUSPgMFdAkk6pump`
 - 08:58Z 发发 (MIGRATED, $243,640 mcap, $117,980 5m vol): PASS at conviction 3, PASS: chasing. 4% off a high set 12 min ago, last 5m candle +60% at 4.3x the hourly pace, 20 minutes old, holders unverified. Watchlist for a base (V1, V5, V6).  
   CA `CcSRXUReR3VVG92C4rE8FqsLomzwmH6Dn1WhTGebpump`
-- 08:56Z Leverhedge (MIGRATED, $868,922 mcap, $2,637 5m vol): PASS at conviction 3, PASS: 8.2% off a 12-minute-old high with $2.6k on the 5m. That's chasing on thin flow, holders unverified. (V1, V6)  
-  CA `FWatMYieKhRuJ1yuTcmVG1njRhZWwqHwjR11pBympump`
 
 ## What its skips did next (last 48h)
 A skip "ran" if the coin reached the first target (1.5x) from the skip price before a 20% drop, "dumped" if the drop came first. Sampled every 10 min, followed 6h.
-- too new / sniping: blocked 53, ran 7, dumped 45, flat 0, open 1 (saving losses: keep it)
+- too new / sniping: blocked 53, ran 7, dumped 46, flat 0, open 0 (saving losses: keep it)
   - ran: ZI up to 1.7x  
     CA `5q45EK4mRhuiuBmRYoaDs4m2xweaV7gn3zsFhsvcpump`
   - ran: BEAR up to 1.59x  
     CA `6i4ebPt8dpGchB2A1ELpTz3B72dy5DkzNpFMNtUSpump`
   - ran: HyPepe up to 1.5x  
     CA `G8TdzgpUQXQAxJvarNKPXRGv2kh9CsJDK7dCC7Xupump`
-- near the high / chasing: blocked 42, ran 8, dumped 24, flat 2, open 8 (saving losses: keep it)
+- near the high / chasing: blocked 42, ran 8, dumped 25, flat 2, open 7 (saving losses: keep it)
   - ran: DESSA up to 1.52x  
     CA `npz2FhoufQ7pKqhGpaipYWacrAkidyW2yDpVWSvpump`
   - ran: OREN up to 1.58x  
@@ -128,7 +128,7 @@ A skip "ran" if the coin reached the first target (1.5x) from the skip price bef
     CA `2orqEGSdkm5BMmhdM8TpKCpACk32a3Zaj3Lef7ceqsc6`
   - ran: Bear up to 2.66x  
     CA `Dv6gYYkTav8Pm36UwAywxNCccwSZV1VL1tjiSpDLpump`
-- falling knife (code): blocked 18, ran 2, dumped 15, flat 0, open 1 (saving losses: keep it)
+- falling knife (code): blocked 18, ran 2, dumped 16, flat 0, open 0 (saving losses: keep it)
   - ran: TYGR up to 1.58x  
     CA `5wCqCq6jbppuTocMeq6zd4UywAm64L1QNNxvEDAHpump`
   - ran: LUMI up to 1.76x  
@@ -142,7 +142,7 @@ A skip "ran" if the coin reached the first target (1.5x) from the skip price bef
   - ran: AXIO up to 1.51x  
     CA `3mUcXkpVVkQ5ZJMctz2f1VBk4rwu3NRfNwVQZtDzpump`
 - dev share over 1%: blocked 13, ran 0, dumped 12, flat 1, open 0 (saving losses: keep it)
-- hack story (owner rule): blocked 12, ran 1, dumped 4, flat 5, open 2 (saving losses: keep it)
+- hack story (owner rule): blocked 12, ran 1, dumped 4, flat 6, open 1 (saving losses: keep it)
   - ran: ACT:H up to 1.53x  
     CA `3B3SJFo8kvVoMvvkzrUCPdpDeSeCL773AJ3kNLWJpump`
 - vamp / copycat: blocked 7, ran 1, dumped 6, flat 0, open 0 (saving losses: keep it)
