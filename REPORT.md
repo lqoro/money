@@ -1,13 +1,13 @@
 # Trencher live report
 
-Updated 2026-10-31T09:05:46Z (paper trading, never real money)
+Updated 2026-10-31T09:20:58Z (paper trading, never real money)
 
 - Equity: $90.20 (-9.8% vs $100 start)
-- Goal: $1,000 by 2026-11-05 05:03Z (pressing for it): at 9% of it, 4.8 days left, needs +64.5% a day from here
+- Goal: $1,000 by 2026-11-05 05:03Z (pressing for it): at 9% of it, 4.8 days left, needs +64.7% a day from here
 - Closed trades: 14, 2 wins
 - Fees paid: $8.84 (axiom $1.30, network $6.14, pool $1.26), plus $1.92 lost to slippage
 - New trades: on
-- Brain: subscription, 623 calls and 1 plan-limit hits in 48h
+- Brain: subscription, 624 calls and 1 plan-limit hits in 48h
 
 ## Scorecard (after fees)
 - 14 closed, 2 won (14%), net $-9.80
@@ -74,9 +74,13 @@ Updated 2026-10-31T09:05:46Z (paper trading, never real money)
   CA `J5jxG3PFaWpj6BLEQExyC6FSqSvaTKNdQ9G3sZwBpump`
 
 ## Last scan
-- 09:05Z: 1 coins, 0 with pairs, 0 passed the market filters, 0 researched
+- 09:20Z: 6 coins, 5 with pairs, 0 passed the market filters, 0 researched
 
 ## Coins it looked at, and why it passed
+- 09:15Z JOB (MIGRATED, $3,282,454 mcap, $2,179 5m vol): PASS at conviction 3, PASS: flow below pace. JOB has $2.2k on the 5m at 0.64x its hourly pace, and sellers outnumber buyers 39 to 17. It's 10% off the high, so this would be paying near-high prices into a crowd that's leaving (V1, V6).  
+  CA `9Pq7aLAbhDG2tTnS22cm6kuysZVcZpLFE368HWuypump`
+- 09:07Z GATO (MIGRATED, $5,615,890 mcap, $3,294 5m vol): PASS at conviction 2, PASS — chasing. 0.4% off the high, $3.3k on the 5m, sellers ahead 34 to 21. A cat on a fading meta. (V1, V6)  
+  CA `HsprHxBRgiVaQdRf3TnKNuZZtaX9JUSPgMFdAkk6pump`
 - 08:58Z 发发 (MIGRATED, $243,640 mcap, $117,980 5m vol): PASS at conviction 3, PASS: chasing. 4% off a high set 12 min ago, last 5m candle +60% at 4.3x the hourly pace, 20 minutes old, holders unverified. Watchlist for a base (V1, V5, V6).  
   CA `CcSRXUReR3VVG92C4rE8FqsLomzwmH6Dn1WhTGebpump`
 - 08:56Z Leverhedge (MIGRATED, $868,922 mcap, $2,637 5m vol): PASS at conviction 3, PASS: 8.2% off a 12-minute-old high with $2.6k on the 5m. That's chasing on thin flow, holders unverified. (V1, V6)  
@@ -93,10 +97,6 @@ Updated 2026-10-31T09:05:46Z (paper trading, never real money)
   CA `AhyWCaBF1U1ssTWgjFRrEvqNQdy4NsFCvLYRSJKppump`
 - 08:26Z BOAR (DIP, $120,713 mcap, $32,556 5m vol): PASS at conviction 4, PASS: no higher low yet. This is the first bounce off the $0.000092 hourly low, and a stop under that low sits 25% below entry, more than my 20% DIP limit. Holders also didn't load. (V1, V6)  
   CA `HRdx7yxRVd8cPbuYva1kzMDodtoiHCEQxWSA3Y2dpump`
-- 08:12Z 发发 (FINAL_STRETCH, $31,272 mcap, $18,350 5m vol): PASS at conviction 3, PASS — 17 minutes old, last 5m up 26% at 4.6x pace, holders unverified, 80% bonded. Chasing a spike into the pre-bond dump zone (V1, V5).  
-  CA `CcSRXUReR3VVG92C4rE8FqsLomzwmH6Dn1WhTGebpump`
-- 08:11Z AgenC (DIP, $588,331 mcap, $5,342 5m vol): PASS at conviction 3, PASS: this is a vamp. It borrows the ticker of tetsuo's real AgenC protocol token (5yC9…pump) and the name of an older SIB "Super Intelligent Beauty" coin (3HKK…pump). It's also a LARP AI dip, 75% off the high with $5.3k on the 5m. (V1, V3, V13)  
-  CA `DDG8rjV3TViCqKRQED2QZq4MEaE1uqXgEiosBNpapump`
 
 ## What its skips did next (last 48h)
 A skip "ran" if the coin reached the first target (1.5x) from the skip price before a 20% drop, "dumped" if the drop came first. Sampled every 10 min, followed 6h.
@@ -142,7 +142,7 @@ A skip "ran" if the coin reached the first target (1.5x) from the skip price bef
   - ran: AXIO up to 1.51x  
     CA `3mUcXkpVVkQ5ZJMctz2f1VBk4rwu3NRfNwVQZtDzpump`
 - dev share over 1%: blocked 13, ran 0, dumped 12, flat 1, open 0 (saving losses: keep it)
-- hack story (owner rule): blocked 12, ran 1, dumped 4, flat 4, open 3 (saving losses: keep it)
+- hack story (owner rule): blocked 12, ran 1, dumped 4, flat 5, open 2 (saving losses: keep it)
   - ran: ACT:H up to 1.53x  
     CA `3B3SJFo8kvVoMvvkzrUCPdpDeSeCL773AJ3kNLWJpump`
 - vamp / copycat: blocked 7, ran 1, dumped 6, flat 0, open 0 (saving losses: keep it)
@@ -179,9 +179,9 @@ The meta right now is fresh pump.fun coins under 2 hours old with people and cha
   CA `CcSRXUReR3VVG92C4rE8FqsLomzwmH6Dn1WhTGebpump`
 - AgenC: $239,077 1h vol, $645,876 mcap, +28% 1h  
   CA `DDG8rjV3TViCqKRQED2QZq4MEaE1uqXgEiosBNpapump`
+- CRAMERSAN: $193,592 1h vol, $1,864 mcap, -99% 1h  
+  CA `AhyWCaBF1U1ssTWgjFRrEvqNQdy4NsFCvLYRSJKppump`
 - ATI: $176,161 1h vol, $157,019 mcap, +291% 1h  
   CA `419P2wrVug9cW5hMwsjEEdhM5aLBt7YFnwn1p7dypump`
 - BNB: $164,813 1h vol, $662,717 mcap, +36% 1h  
   CA `EYqygbhZjP7EbM4fSn8devctnksAvPAD1Bt57XBFpump`
-- Anita: $71,225 1h vol, $6,245 mcap, +127% 1h  
-  CA `EsKnqXKPVGTyBqpRrWGw5Ltz9Qj4t71ZPCDUWhQNpump`
