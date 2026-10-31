@@ -1,13 +1,13 @@
 # Trencher live report
 
-Updated 2026-10-31T23:00:55Z (paper trading, never real money)
+Updated 2026-10-31T23:16:03Z (paper trading, never real money)
 
 - Equity: $89.95 (-10.0% vs $100 start)
-- Goal: $1,000 by 2026-11-05 05:03Z (pressing for it): at 9% of it, 4.3 days left, needs +76.2% a day from here
+- Goal: $1,000 by 2026-11-05 05:03Z (pressing for it): at 9% of it, 4.2 days left, needs +76.5% a day from here
 - Closed trades: 16, 3 wins
 - Fees paid: $10.41 (axiom $1.73, network $6.91, pool $1.64), plus $2.56 lost to slippage
 - New trades: on
-- Brain: subscription, 635 calls and 1 plan-limit hits in 48h
+- Brain: subscription, 632 calls and 1 plan-limit hits in 48h
 
 ## Scorecard (after fees)
 - 16 closed, 3 won (19%), net $-10.05
@@ -74,9 +74,17 @@ Updated 2026-10-31T23:00:55Z (paper trading, never real money)
   CA `762ZqBCd5m2q3QJ5UPkFL5rqdEUeygNkfTZrpGEZpump`
 
 ## Last scan
-- 22:59Z: 7 coins, 5 with pairs, 0 passed the market filters, 0 researched
+- 23:15Z: 8 coins, 6 with pairs, 0 passed the market filters, 0 researched
 
 ## Coins it looked at, and why it passed
+- 23:13Z NNN (MIGRATED, $142,944 mcap, $2,817 5m vol): PASS at conviction 3, PASS: flow below pace. $2.8k on the 5m in the shallow band, sellers outnumber buyers 3:1, and the last candle is a +29% spike. Good calendar joke, bad tape. (V1, V6)  
+  CA `57YQJbgdE32ZMCQzBivhjcXmnMLY5iw2MwrtcPYWpump`
+- 23:08Z SIS (MIGRATED, $651,559 mcap, $11,760 5m vol): PASS at conviction 3, PASS: the crowd is leaving. 5m volume is $11.7k against a $567k hour, 0.25x pace, and the website is a template that says "contract TBA". (V1, V6)  
+  CA `FdKdpz11GsTofLaNiddrhxrsE4APZYSSfLFqQ9YKpump`
+- 23:07Z ANSEM (MIGRATED, $306,329 mcap, $7,531 5m vol): REJECT, Top 10 hold 25.8% ex-pool (>25%) (V13)  
+  CA `CvRJ8MrnB1AwjrgX25uyeLJiXNSugTo2ZHh8UXDTpump`
+- 23:02Z KIM (DIP, $338,646 mcap, $58,470 5m vol): REJECT, Dip with fading attention is a falling knife, not a dip (5m at 0.47x the hour's pace, under 0.6x)  
+  CA `8pjfN5Ayb4rucGpYE3tZWN6v3EysizjPx1v62zx1pump`
 - 22:59Z CREDIT (MIGRATED, $66,948 mcap, $9,951 5m vol): PASS at conviction 2, PASS: it's down 84.6% from the peak and in the last 5 minutes 786 wallets sold while 64 bought. That's a falling knife, not a dip. The project's own site also doesn't show this CA. (V1, V3, V6)  
   CA `Ewyifvp8X9NxeaKawXamGXBFDisuMfcFfcdvSZ8opump`
 - 22:57Z timmy (MIGRATED, $72,946 mcap, $15,391 5m vol): REJECT, Top 10 hold 26.4% ex-pool (>25%) (V13)  
@@ -89,38 +97,35 @@ Updated 2026-10-31T23:00:55Z (paper trading, never real money)
   CA `Jy8kKwumNBdg3VtpvkzKh22kLQSw57Zr8sfdSSjpump`
 - 22:41Z PAWCAT (MIGRATED, $3,431,266 mcap, $15,105 5m vol): PASS at conviction 3, PASS — target below initials: $4.05M high is only 1.18x away, and 5m is 0.91x pace in the shallow band. Same trade I scratched an hour ago. (V1, V6)  
   CA `762ZqBCd5m2q3QJ5UPkFL5rqdEUeygNkfTZrpGEZpump`
-- 22:40Z Leverhedge (DIP, $772,007 mcap, $8,071 5m vol): PASS at conviction 3, PASS — 28% knife candle onto the hourly low, no higher low printed, thin LARP-ish story with the crowd leaving. Blocker: no higher low (V1).  
-  CA `FWatMYieKhRuJ1yuTcmVG1njRhZWwqHwjR11pBympump`
-- 22:39Z CHUDBOB (MIGRATED, $49,339 mcap, $17,965 5m vol): REJECT, Top 10 hold 25.6% ex-pool (>25%) (V13)  
-  CA `DZrVCDqSyUBFoFJWJCVELhzL4cTFYWpCMirnv91TTTSH`
-- 22:36Z BNB (DIP, $639,933 mcap, $15,748 5m vol): PASS at conviction 2, PASS — hack-story coin: "broke after the hot wallet got cooked, withdrawals paused" is a Binance-hack parody. Owner rule says skip it. Blocker: hack story.  
-  CA `EYqygbhZjP7EbM4fSn8devctnksAvPAD1Bt57XBFpump`
-- 22:31Z 1993 (DIP, $93,937 mcap, $10,483 5m vol): REJECT, Top 10 hold 33.5% ex-pool (>25%) (V13)  
-  CA `7Ypg1rKLu8q32E1AQEDjaPCg8dfGeCSsMkFnK98zcash`
 
 ## What its skips did next (last 48h)
 A skip "ran" if the coin reached the first target (1.5x) from the skip price before a 20% drop, "dumped" if the drop came first. Sampled every 10 min, followed 6h.
-- too new / sniping: blocked 60, ran 8, dumped 52, flat 0, open 0 (saving losses: keep it)
-  - ran: ZI up to 1.7x  
-    CA `5q45EK4mRhuiuBmRYoaDs4m2xweaV7gn3zsFhsvcpump`
+- too new / sniping: blocked 59, ran 7, dumped 52, flat 0, open 0 (saving losses: keep it)
   - ran: BEAR up to 1.59x  
     CA `6i4ebPt8dpGchB2A1ELpTz3B72dy5DkzNpFMNtUSpump`
   - ran: HyPepe up to 1.5x  
     CA `G8TdzgpUQXQAxJvarNKPXRGv2kh9CsJDK7dCC7Xupump`
-- near the high / chasing: blocked 52, ran 9, dumped 35, flat 6, open 2 (saving losses: keep it)
+  - ran: DUOTIDE up to 1.71x  
+    CA `AtKvRVDF738YA925jmxNeh4iV2qCVBBJeMxQNyrupump`
+- near the high / chasing: blocked 51, ran 9, dumped 34, flat 6, open 2 (saving losses: keep it)
   - ran: DESSA up to 1.52x  
     CA `npz2FhoufQ7pKqhGpaipYWacrAkidyW2yDpVWSvpump`
   - ran: Catori up to 1.52x  
     CA `FDwCosavNvMiFB812ajJp3gG7eZ9c4bpgcnY6fDQpump`
   - ran: FLYWHEEL up to 2.23x  
     CA `BWMf44rD724R2bdgHWd88CDTVEjuPNQauw8s6S7ipump`
-- top 10 over 25%: blocked 51, ran 9, dumped 36, flat 1, open 5 (saving losses: keep it)
+- top 10 over 25%: blocked 51, ran 9, dumped 37, flat 1, open 4 (saving losses: keep it)
   - ran: HYPERGAMY up to 2.05x  
     CA `CUyNDWGdLPXZ3Gyj1H6TBh5pACgu5nY9WNkSqfMApump`
   - ran: Catori up to 1.52x  
     CA `FDwCosavNvMiFB812ajJp3gG7eZ9c4bpgcnY6fDQpump`
   - ran: ZERO up to 1.8x  
     CA `Ddwf94wedgCuMHAkwgti8A7sL2CxvBYJStJBj2cFpump`
+- falling knife (code): blocked 25, ran 2, dumped 22, flat 0, open 1 (saving losses: keep it)
+  - ran: TYGR up to 1.58x  
+    CA `5wCqCq6jbppuTocMeq6zd4UywAm64L1QNNxvEDAHpump`
+  - ran: LUMI up to 1.76x  
+    CA `653joYuZ5EntuKd1bspZakjHdueMxHGs5Lvm7RdWpump`
 - RugCheck danger: blocked 24, ran 3, dumped 21, flat 0, open 0 (saving losses: keep it)
   - ran: Bear up to 2.66x  
     CA `Dv6gYYkTav8Pm36UwAywxNCccwSZV1VL1tjiSpDLpump`
@@ -128,11 +133,6 @@ A skip "ran" if the coin reached the first target (1.5x) from the skip price bef
     CA `BN4Z5NtntHhu6p3atEqkeAVi8Bn9Ri2QTv8FD7iupump`
   - ran: PROBE up to 1.53x  
     CA `DR3Jtxwzkw9uBpi6Bz7qJX7zuFSJkNKXthD8nB1mpump`
-- falling knife (code): blocked 24, ran 2, dumped 22, flat 0, open 0 (saving losses: keep it)
-  - ran: TYGR up to 1.58x  
-    CA `5wCqCq6jbppuTocMeq6zd4UywAm64L1QNNxvEDAHpump`
-  - ran: LUMI up to 1.76x  
-    CA `653joYuZ5EntuKd1bspZakjHdueMxHGs5Lvm7RdWpump`
 - RugCheck didn't load: blocked 23, ran 3, dumped 16, flat 4, open 0 (saving losses: keep it)
   - ran: UNSAFU up to 1.61x  
     CA `4eq4JfnpdgqZTzeyR3GnRGHJQ3QhQT6Lp7nKnQ2nS7Rv`
@@ -140,10 +140,8 @@ A skip "ran" if the coin reached the first target (1.5x) from the skip price bef
     CA `DUTxGHL2LmpfjQaoK6LdZp8WQPoDiwvtDHVDf4fMpump`
   - ran: whitepaper up to 2.16x  
     CA `4tEvXHpd6JrCWJGByBS3qFBAtJbeoiEpgvWLw9hkpump`
-- falling knife / no higher low: blocked 22, ran 1, dumped 17, flat 2, open 2 (saving losses: keep it)
-  - ran: ANSEM up to 2.1x  
-    CA `CvRJ8MrnB1AwjrgX25uyeLJiXNSugTo2ZHh8UXDTpump`
-- crowd leaving / fading volume: blocked 17, ran 5, dumped 10, flat 1, open 1 (saving losses: keep it)
+- falling knife / no higher low: blocked 21, ran 0, dumped 17, flat 2, open 2 (saving losses: keep it)
+- crowd leaving / fading volume: blocked 18, ran 5, dumped 10, flat 1, open 2 (saving losses: keep it)
   - ran: STABLEPAD up to 2.13x  
     CA `AABM3NrYSwKMsEDyanuskY43EH6ySbPpdPZNG1u7pump`
   - ran: HYDESK up to 1.78x  
@@ -181,13 +179,13 @@ A skip "ran" if the coin reached the first target (1.5x) from the skip price bef
 The meta is animal and character memes, and cats lead it. PAWCAT is the clear original and still rising: $3.4M at 2.8h, $15.1k on the 5m (0.91x its hourly pace), 61% buys, +22% on the hour. GATO is the old cat fading with almost no volume, and fresh critters (Sugar the squirrel, Beaver, Chudbob, timmy) keep spawning, though most are minutes old or already nuked. The other big theme is fake-finance and fake-tech tickers (CREDIT/MCP at 8% buys, Leverhedge -59%, GLITCH at 29% buys). That theme is dying and I'm not touching it, since they're likely LARPs (V1). The news crowd is talking about LAPTOP and political coins, but the movers aren't trading them, and a political figure is a hard line anyway (V13). Setups I'd research now: PAWCAT on a pullback of about 10% from its local high while 5m volume holds at 0.7x pace or better (DIP/MIGRATED). BNB "Broke Nigga Baddie" at $640k, 25.8h old, $15.7k 5m (0.79x pace), 77% buys, +38% 1h: a MIGRATED candidate, but verify the CA because of the Binance ticker overlap, and the crude name limits how many people will buy it (V6). timmy at $73k after a +540% hour, but only if holders come back clean and it holds after the spike. I'd PASS on Chudbob, Sugar, 1993 and Beaver: too new, and I don't snipe (V5). Owner, noted: clean setups that clear the hard lines will get rated 8–9 and sized up when they earn it. The hard lines and the 35% max risk don't move.
 
 ## Moving most in its scans, last 30 min (1h volume)
-- BNB: $240,333 1h vol, $639,933 mcap, +38% 1h  
-  CA `EYqygbhZjP7EbM4fSn8devctnksAvPAD1Bt57XBFpump`
-- PAWCAT: $199,124 1h vol, $3,431,266 mcap, +22% 1h  
-  CA `762ZqBCd5m2q3QJ5UPkFL5rqdEUeygNkfTZrpGEZpump`
-- 1993: $152,505 1h vol, $93,937 mcap, +122% 1h  
-  CA `7Ypg1rKLu8q32E1AQEDjaPCg8dfGeCSsMkFnK98zcash`
+- KIM: $1,490,367 1h vol, $338,646 mcap, -46% 1h  
+  CA `8pjfN5Ayb4rucGpYE3tZWN6v3EysizjPx1v62zx1pump`
+- SIS: $567,321 1h vol, $651,559 mcap, +52% 1h  
+  CA `FdKdpz11GsTofLaNiddrhxrsE4APZYSSfLFqQ9YKpump`
+- ANSEM: $207,262 1h vol, $306,329 mcap, +29% 1h  
+  CA `CvRJ8MrnB1AwjrgX25uyeLJiXNSugTo2ZHh8UXDTpump`
 - CREDIT: $131,840 1h vol, $66,948 mcap, -65% 1h  
   CA `Ewyifvp8X9NxeaKawXamGXBFDisuMfcFfcdvSZ8opump`
-- Beaver: $125,878 1h vol, $4,973 mcap, -89% 1h  
-  CA `5h44wfzwGHFnfVhNKtMLapAJNV9iqqbUgUB2FqyWpump`
+- NEKO: $73,963 1h vol, $31,153 mcap, +29% 1h  
+  CA `2pDkdMYChGZQQMfbRhfDgorZkKwmPF6sjN4bPfxoABTC`
