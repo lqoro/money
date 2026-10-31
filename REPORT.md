@@ -1,13 +1,13 @@
 # Trencher live report
 
-Updated 2026-10-31T04:47:58Z (paper trading, never real money)
+Updated 2026-10-31T05:02:59Z (paper trading, never real money)
 
 - Equity: $90.20 (-9.8% vs $100 start)
-- Goal: $1,000 by 2026-11-05 05:03Z (pressing for it): at 9% of it, 5 days left, needs +61.6% a day from here
+- Goal: $1,000 by 2026-11-05 05:03Z (pressing for it): at 9% of it, 5 days left, needs +61.8% a day from here
 - Closed trades: 14, 2 wins
 - Fees paid: $8.84 (axiom $1.30, network $6.14, pool $1.26), plus $1.92 lost to slippage
 - New trades: on
-- Brain: subscription, 605 calls and 1 plan-limit hits in 48h
+- Brain: subscription, 601 calls and 1 plan-limit hits in 48h
 
 ## Scorecard (after fees)
 - 14 closed, 2 won (14%), net $-9.80
@@ -74,9 +74,13 @@ Updated 2026-10-31T04:47:58Z (paper trading, never real money)
   CA `J5jxG3PFaWpj6BLEQExyC6FSqSvaTKNdQ9G3sZwBpump`
 
 ## Last scan
-- 04:47Z: 12 coins, 10 with pairs, 0 passed the market filters, 0 researched
+- 05:02Z: 5 coins, 4 with pairs, 0 passed the market filters, 0 researched
 
 ## Coins it looked at, and why it passed
+- 04:51Z HACKINU (no setup, $4,238 mcap, $20 5m vol): REJECT, Hack story ("hack" in the name or ticker): these tend to go down, owner rule  
+  CA `HD2qqwAeLkyXnboo5cSGSdGw4oHCbvNEvWsgDSgWpump`
+- 04:49Z LUMI (DIP, $180,768 mcap, $10,178 5m vol): REJECT, Dip with fading attention is a falling knife, not a dip (5m at 0.59x the hour's pace, under 0.6x)  
+  CA `653joYuZ5EntuKd1bspZakjHdueMxHGs5Lvm7RdWpump`
 - 04:45Z iCat (MIGRATED, $179,823 mcap, $32,094 5m vol): PASS at conviction 3, PASS: an 11-minute-old iCat copy, with 2 bigger tokens on the same ticker and a website that still says "CONTRACT_ADDRESS_HERE". That's a vamp with no proof it's the real one. Blocker: too new plus vamp (V1, V3, V5).  
   CA `FHHxyowUnk6oVKF9FV1U9zyt9YFEr2vu68gbpkKcpump`
 - 04:44Z CATPAD (MIGRATED, $141,126 mcap, $2,028 5m vol): REJECT, RugCheck report unavailable: can't verify mint/freeze/holders, skip  
@@ -93,14 +97,10 @@ Updated 2026-10-31T04:47:58Z (paper trading, never real money)
   CA `49t765AnJMQAzSUutr9T7rC4QAtGxbqiL374qxsHpump`
 - 04:28Z offline (FINAL_STRETCH, $20,120 mcap, $28,476 5m vol): PASS at conviction 3, PASS: chasing. The last 5m candle is up 87% at 7x the hourly pace on a 10-minute-old coin, and 26 other coins share the ticker. (V1, V6)  
   CA `F7ZQtqwJjwQs4VRUAnxg6KRZWPzMvLpKKmUsx4x9pump`
-- 04:27Z LOOP (MIGRATED, $73,312 mcap, $48,186 5m vol): PASS at conviction 2, PASS: chasing. LOOP is 7 minutes old, sitting at its high (0% drawdown) and up 17.7% in the last 5m at 6.3x the hourly pace, with no socials and no holder data (V1, V6).  
-  CA `5e1SR3Do9C5hHmoA24qtBS6aQXCAsqoACgspikgnpump`
-- 04:24Z AgenC (MIGRATED, $1,719,271 mcap, $13,200 5m vol): PASS at conviction 3, PASS: target below initials. The $2.33M high is only 1.35x away, and this ticker borrows two other projects' names, the AgenC protocol and the SIB coin. Vamp risk, LARP, holders unverified (V1, V3, V13).  
-  CA `DDG8rjV3TViCqKRQED2QZq4MEaE1uqXgEiosBNpapump`
 
 ## What its skips did next (last 48h)
 A skip "ran" if the coin reached the first target (1.5x) from the skip price before a 20% drop, "dumped" if the drop came first. Sampled every 10 min, followed 6h.
-- too new / sniping: blocked 48, ran 7, dumped 39, flat 0, open 2 (saving losses: keep it)
+- too new / sniping: blocked 48, ran 7, dumped 40, flat 0, open 1 (saving losses: keep it)
   - ran: ZI up to 1.7x  
     CA `5q45EK4mRhuiuBmRYoaDs4m2xweaV7gn3zsFhsvcpump`
   - ran: BEAR up to 1.59x  
@@ -114,7 +114,7 @@ A skip "ran" if the coin reached the first target (1.5x) from the skip price bef
     CA `FDwCosavNvMiFB812ajJp3gG7eZ9c4bpgcnY6fDQpump`
   - ran: ZERO up to 1.8x  
     CA `Ddwf94wedgCuMHAkwgti8A7sL2CxvBYJStJBj2cFpump`
-- near the high / chasing: blocked 38, ran 8, dumped 24, flat 2, open 4 (saving losses: keep it)
+- near the high / chasing: blocked 38, ran 8, dumped 25, flat 2, open 3 (saving losses: keep it)
   - ran: DESSA up to 1.52x  
     CA `npz2FhoufQ7pKqhGpaipYWacrAkidyW2yDpVWSvpump`
   - ran: OREN up to 1.58x  
@@ -128,7 +128,7 @@ A skip "ran" if the coin reached the first target (1.5x) from the skip price bef
     CA `2orqEGSdkm5BMmhdM8TpKCpACk32a3Zaj3Lef7ceqsc6`
   - ran: Bear up to 2.66x  
     CA `Dv6gYYkTav8Pm36UwAywxNCccwSZV1VL1tjiSpDLpump`
-- falling knife (code): blocked 17, ran 1, dumped 15, flat 0, open 1 (saving losses: keep it)
+- falling knife (code): blocked 18, ran 1, dumped 15, flat 0, open 2 (saving losses: keep it)
   - ran: TYGR up to 1.58x  
     CA `5wCqCq6jbppuTocMeq6zd4UywAm64L1QNNxvEDAHpump`
 - crowd leaving / fading volume: blocked 16, ran 4, dumped 10, flat 0, open 2 (saving losses: keep it)
@@ -141,7 +141,7 @@ A skip "ran" if the coin reached the first target (1.5x) from the skip price bef
 - falling knife / no higher low: blocked 15, ran 0, dumped 12, flat 2, open 1 (saving losses: keep it)
 - dev share over 1%: blocked 14, ran 0, dumped 12, flat 1, open 1 (saving losses: keep it)
 - hack story (owner rule): blocked 10, ran 0, dumped 3, flat 4, open 3 (saving losses: keep it)
-- vamp / copycat: blocked 9, ran 1, dumped 7, flat 0, open 1 (saving losses: keep it)
+- vamp / copycat: blocked 8, ran 1, dumped 7, flat 0, open 0 (saving losses: keep it)
   - ran: Hedge up to 1.78x  
     CA `7eQagAYSYYhRqRZF5L97Ku8AK94TEpsmnrrsssUkpump`
 
@@ -175,9 +175,9 @@ Meta: three themes. (1) Fresh pump.fun launches under 1.5h that spike and die wi
   CA `4MinLrUYVTGQ854Jk8WjaxaDMtKHTYRiDqr2BKyCpump`
 - MONEKO: $260,590 1h vol, $232,453 mcap, +193% 1h  
   CA `49t765AnJMQAzSUutr9T7rC4QAtGxbqiL374qxsHpump`
-- BNB: $204,503 1h vol, $1,078,477 mcap, -1% 1h  
-  CA `EYqygbhZjP7EbM4fSn8devctnksAvPAD1Bt57XBFpump`
-- AgenC: $194,895 1h vol, $1,719,271 mcap, -14% 1h  
-  CA `DDG8rjV3TViCqKRQED2QZq4MEaE1uqXgEiosBNpapump`
-- DESSA: $172,711 1h vol, $15,029,295 mcap, +1% 1h  
+- LUMI: $206,337 1h vol, $180,768 mcap, -26% 1h  
+  CA `653joYuZ5EntuKd1bspZakjHdueMxHGs5Lvm7RdWpump`
+- DESSA: $131,163 1h vol, $14,967,409 mcap, -3% 1h  
   CA `npz2FhoufQ7pKqhGpaipYWacrAkidyW2yDpVWSvpump`
+- iCat: $91,058 1h vol, $179,823 mcap, +333% 1h  
+  CA `FHHxyowUnk6oVKF9FV1U9zyt9YFEr2vu68gbpkKcpump`
