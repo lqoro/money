@@ -1,9 +1,9 @@
 # Trencher live report
 
-Updated 2026-10-31T12:22:59Z (paper trading, never real money)
+Updated 2026-10-31T12:38:03Z (paper trading, never real money)
 
 - Equity: $90.20 (-9.8% vs $100 start)
-- Goal: $1,000 by 2026-11-05 05:03Z (pressing for it): at 9% of it, 4.7 days left, needs +66.9% a day from here
+- Goal: $1,000 by 2026-11-05 05:03Z (pressing for it): at 9% of it, 4.7 days left, needs +67.1% a day from here
 - Closed trades: 14, 2 wins
 - Fees paid: $8.84 (axiom $1.30, network $6.14, pool $1.26), plus $1.92 lost to slippage
 - New trades: on
@@ -74,9 +74,13 @@ Updated 2026-10-31T12:22:59Z (paper trading, never real money)
   CA `J5jxG3PFaWpj6BLEQExyC6FSqSvaTKNdQ9G3sZwBpump`
 
 ## Last scan
-- 12:22Z: 1 coins, 1 with pairs, 0 passed the market filters, 0 researched
+- 12:37Z: 5 coins, 5 with pairs, 0 passed the market filters, 0 researched
 
 ## Coins it looked at, and why it passed
+- 12:31Z 삼성찬 (MIGRATED, $127,973 mcap, $38,625 5m vol): PASS at conviction 3, PASS — 12 minutes old, last 5m candle up 27%, RugCheck blind. That's chasing a fresh bond spike. Wait for a base (V1).  
+  CA `8WNQQvdcPaNMn6mJLpT64SEMBoDFyjKsHmbB5tknpump`
+- 12:27Z JOB (MIGRATED, $3,260,900 mcap, $2,473 5m vol): PASS at conviction 2, PASS — 11% off the high with the only target at 1.12x, 5m flow $2.5k at 0.91x pace, sellers winning. Blocker: target below initials (V1, V6).  
+  CA `9Pq7aLAbhDG2tTnS22cm6kuysZVcZpLFE368HWuypump`
 - 12:20Z RAM (DIP, $48,087 mcap, $2,854 5m vol): PASS at conviction 2, PASS — RugCheck didn't load (hard block), and the last 5m is a +41% spike on $2.8k with the coin back under $70k after bonding. Chasing a thin bounce (V6, V1).  
   CA `6QUHcqYuiPRHxhnYZoygewXtNQr9kUrhc9Tmwgtbpump`
 - 12:20Z AMAZON (MIGRATED, $467,938 mcap, $3,180 5m vol): PASS at conviction 3, PASS: $3.2k on the 5m in a field of 21 AMAZONs, with RugCheck dark. Not enough flow to call it the leader. (V1, V6, V13)  
@@ -93,14 +97,10 @@ Updated 2026-10-31T12:22:59Z (paper trading, never real money)
   CA `2gTbp2gwH46rqExzabSyrdR3294SLwCp2rSqWDS6Sim1`
 - 12:01Z FUN (DIP, $52,314 mcap, $5,737 5m vol): PASS at conviction 3, PASS — RugCheck didn't load, so holders and bundles are blind, on a launchpad token that bonded and dropped under $70k on thin $5.7k flow. No-load skips went 0 ran, 8 dumped (V6, V13).  
   CA `FDSG65a94jA3mdC47VPikD5WARCJN5ffSgot3TfHpump`
-- 11:59Z AgenC (MIGRATED, $323,991 mcap, $4,753 5m vol): PASS at conviction 2, PASS — RugCheck didn't load, 86% off the high, and it's an AI-agent LARP sharing a ticker with 10 bigger AgenCs. Blocker: holders unverified (V3, V13, V1).  
-  CA `DDG8rjV3TViCqKRQED2QZq4MEaE1uqXgEiosBNpapump`
-- 11:59Z Leverhedge (MIGRATED, $1,078,608 mcap, $5,931 5m vol): PASS at conviction 3, PASS: 4.2% off a 12-minute-old high with RugCheck blind. That's chasing into unknown holders (V1, V13).  
-  CA `FWatMYieKhRuJ1yuTcmVG1njRhZWwqHwjR11pBympump`
 
 ## What its skips did next (last 48h)
 A skip "ran" if the coin reached the first target (1.5x) from the skip price before a 20% drop, "dumped" if the drop came first. Sampled every 10 min, followed 6h.
-- too new / sniping: blocked 53, ran 7, dumped 46, flat 0, open 0 (saving losses: keep it)
+- too new / sniping: blocked 54, ran 7, dumped 46, flat 0, open 1 (saving losses: keep it)
   - ran: ZI up to 1.7x  
     CA `5q45EK4mRhuiuBmRYoaDs4m2xweaV7gn3zsFhsvcpump`
   - ran: BEAR up to 1.59x  
@@ -177,11 +177,11 @@ The meta right now is cats and fresh pumpswap launches under an hour old. Garret
 ## Moving most in its scans, last 30 min (1h volume)
 - VAMPCAT: $358,058 1h vol, $157,336 mcap, +26% 1h  
   CA `4rsSV6L6mQ6jN587eKi5tNgkbgdzc8c9fxEVY8wapump`
-- Wojak: $324,943 1h vol, $5,556 mcap, -85% 1h  
+- Wojak: $230,311 1h vol, $4,389 mcap, -95% 1h  
   CA `BbNuEtiT77Swr4WqGHuUkQY5kZ67M7au7bXkxcArpump`
-- Garrett: $322,774 1h vol, $1,848 mcap, -99% 1h  
-  CA `7H69zC4jZXBqrHQYT2KZUoatSizMJpp26V7H3SAkpump`
-- FUN: $176,263 1h vol, $1,861 mcap, -99% 1h  
+- 삼성찬: $219,532 1h vol, $127,973 mcap, +217% 1h  
+  CA `8WNQQvdcPaNMn6mJLpT64SEMBoDFyjKsHmbB5tknpump`
+- FUN: $127,727 1h vol, $1,861 mcap, -99% 1h  
   CA `FcZuu76twm89BKVN6WoWhFwfCmAVFPx24NkT8hKvpump`
-- BNB: $172,721 1h vol, $461,011 mcap, -12% 1h  
-  CA `EYqygbhZjP7EbM4fSn8devctnksAvPAD1Bt57XBFpump`
+- GATO: $84,994 1h vol, $6,065,036 mcap, +17% 1h  
+  CA `HsprHxBRgiVaQdRf3TnKNuZZtaX9JUSPgMFdAkk6pump`
