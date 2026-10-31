@@ -1,13 +1,13 @@
 # Trencher live report
 
-Updated 2026-10-31T11:22:18Z (paper trading, never real money)
+Updated 2026-10-31T11:37:33Z (paper trading, never real money)
 
 - Equity: $90.20 (-9.8% vs $100 start)
-- Goal: $1,000 by 2026-11-05 05:03Z (pressing for it): at 9% of it, 4.7 days left, needs +66.2% a day from here
+- Goal: $1,000 by 2026-11-05 05:03Z (pressing for it): at 9% of it, 4.7 days left, needs +66.4% a day from here
 - Closed trades: 14, 2 wins
 - Fees paid: $8.84 (axiom $1.30, network $6.14, pool $1.26), plus $1.92 lost to slippage
 - New trades: on
-- Brain: subscription, 632 calls and 1 plan-limit hits in 48h
+- Brain: subscription, 635 calls and 1 plan-limit hits in 48h
 
 ## Scorecard (after fees)
 - 14 closed, 2 won (14%), net $-9.80
@@ -74,9 +74,17 @@ Updated 2026-10-31T11:22:18Z (paper trading, never real money)
   CA `J5jxG3PFaWpj6BLEQExyC6FSqSvaTKNdQ9G3sZwBpump`
 
 ## Last scan
-- 11:22Z: 10 coins, 10 with pairs, 0 passed the market filters, 0 researched
+- 11:37Z: 6 coins, 6 with pairs, 0 passed the market filters, 0 researched
 
 ## Coins it looked at, and why it passed
+- 11:31Z GATO (MIGRATED, $5,278,782 mcap, $2,135 5m vol): PASS at conviction 2, PASS: GATO only did $2.1k on the 5m with more sells than buys (0.44), sitting 10% under its high. That's a sleepy $5M chart, not a pullback with a crowd. Blocker: flow below pace (V1, V6).  
+  CA `HsprHxBRgiVaQdRf3TnKNuZZtaX9JUSPgMFdAkk6pump`
+- 11:29Z Wojak (FINAL_STRETCH, $31,369 mcap, $35,562 5m vol): PASS at conviction 2, PASS — 5-minute-old Wojak copy (9 bigger same-ticker tokens) on a +813% 5m spike with RugCheck not loaded. Blocker: chasing a spike. (V1, V3, V5)  
+  CA `BbNuEtiT77Swr4WqGHuUkQY5kZ67M7au7bXkxcArpump`
+- 11:28Z VAMPCAT (MIGRATED, $109,190 mcap, $60,976 5m vol): PASS at conviction 3, PASS: RugCheck didn't load, and a 55-minute-old coin down 24% in the last 5 minutes with no base is a falling knife, not a pullback. Blocker: holders and bundles unverified, no higher low (V6, V13, V17, V1).  
+  CA `4rsSV6L6mQ6jN587eKi5tNgkbgdzc8c9fxEVY8wapump`
+- 11:24Z Garrett (DIP, $216,362 mcap, $89,094 5m vol): PASS at conviction 3, PASS: RugCheck didn't load on a 20-minute-old coin with a 5x launch spike. No holder or bundle data plus too new means I'd be buying blind into a likely bundle exit (V3, V17, V1).  
+  CA `7H69zC4jZXBqrHQYT2KZUoatSizMJpp26V7H3SAkpump`
 - 11:15Z FUN (DIP, $32,232 mcap, $2,639 5m vol): REJECT, Dip with fading attention is a falling knife, not a dip (5m at 0.22x the hour's pace, under 0.6x)  
   CA `FDSG65a94jA3mdC47VPikD5WARCJN5ffSgot3TfHpump`
 - 11:14Z 发发 (MIGRATED, $31,192 mcap, $7,175 5m vol): PASS at conviction 2, PASS — 92% off the peak, seven red 15m closes, no higher low, RugCheck dark. Falling knife on a possible vamp. (V1, V6, V13)  
@@ -89,14 +97,6 @@ Updated 2026-10-31T11:22:18Z (paper trading, never real money)
   CA `EYqygbhZjP7EbM4fSn8devctnksAvPAD1Bt57XBFpump`
 - 11:10Z FUN (DIP, $158,268 mcap, $13,787 5m vol): REJECT, Dip with fading attention is a falling knife, not a dip (5m at 0.31x the hour's pace, under 0.6x)  
   CA `FcZuu76twm89BKVN6WoWhFwfCmAVFPx24NkT8hKvpump`
-- 10:59Z ㅤㅤㅤ (FINAL_STRETCH, $25,538 mcap, $2,896 5m vol): PASS at conviction 3, PASS: chasing a +31% candle at the top on $2.9k of 5m volume running at 0.35x the hour's pace, and holder data didn't load. I'd be exit liquidity. (V1, V6)  
-  CA `HAJcmgd5Y4r3Y6yzLSf3sSW18TJEkwvZy2awjaDypump`
-- 10:57Z NETWORK (MIGRATED, $239,139 mcap, $2,329 5m vol): PASS at conviction 2, PASS: 5m volume is $2.3k on a $239k coin and RugCheck didn't load. Dead flow and holders I can't see (V6, V13).  
-  CA `8THZ69JP2ErZuHVj4G5rcwkFfsQafp5mQsaoQReApump`
-- 10:56Z JOB (MIGRATED, $3,341,276 mcap, $2,481 5m vol): PASS at conviction 3, PASS: JOB is a $3.3M coin doing $2.5k on the 5-minute, 8.8% under its high. That's chasing a coin nobody's trading right now. (V1, V6)  
-  CA `9Pq7aLAbhDG2tTnS22cm6kuysZVcZpLFE368HWuypump`
-- 10:45Z GATO (MIGRATED, $5,506,347 mcap, $11,051 5m vol): PASS at conviction 2, PASS — 6% off the high on a sell-heavy volume spike, RugCheck didn't load. Blocker: chasing + holders unverified (V1, V6, V13).  
-  CA `HsprHxBRgiVaQdRf3TnKNuZZtaX9JUSPgMFdAkk6pump`
 
 ## What its skips did next (last 48h)
 A skip "ran" if the coin reached the first target (1.5x) from the skip price before a 20% drop, "dumped" if the drop came first. Sampled every 10 min, followed 6h.
@@ -107,7 +107,7 @@ A skip "ran" if the coin reached the first target (1.5x) from the skip price bef
     CA `6i4ebPt8dpGchB2A1ELpTz3B72dy5DkzNpFMNtUSpump`
   - ran: HyPepe up to 1.5x  
     CA `G8TdzgpUQXQAxJvarNKPXRGv2kh9CsJDK7dCC7Xupump`
-- near the high / chasing: blocked 42, ran 8, dumped 26, flat 2, open 6 (saving losses: keep it)
+- near the high / chasing: blocked 43, ran 8, dumped 26, flat 2, open 7 (saving losses: keep it)
   - ran: DESSA up to 1.52x  
     CA `npz2FhoufQ7pKqhGpaipYWacrAkidyW2yDpVWSvpump`
   - ran: OREN up to 1.58x  
@@ -141,13 +141,11 @@ A skip "ran" if the coin reached the first target (1.5x) from the skip price bef
     CA `BzndCZ2ZrjUA21aVW7t6AWEENRAps3EmdQg9hf94pump`
   - ran: AXIO up to 1.51x  
     CA `3mUcXkpVVkQ5ZJMctz2f1VBk4rwu3NRfNwVQZtDzpump`
+- RugCheck didn't load: blocked 12, ran 0, dumped 7, flat 0, open 5 (saving losses: keep it)
 - dev share over 1%: blocked 12, ran 0, dumped 11, flat 1, open 0 (saving losses: keep it)
 - hack story (owner rule): blocked 12, ran 1, dumped 4, flat 6, open 1 (saving losses: keep it)
   - ran: ACT:H up to 1.53x  
     CA `3B3SJFo8kvVoMvvkzrUCPdpDeSeCL773AJ3kNLWJpump`
-- RugCheck didn't load: blocked 11, ran 1, dumped 6, flat 0, open 4 (saving losses: keep it)
-  - ran: VAMPCAT up to 2.19x  
-    CA `4rsSV6L6mQ6jN587eKi5tNgkbgdzc8c9fxEVY8wapump`
 
 ## Rules it changed from results and skips
 - 10-31 04:12Z dropped: Lesson-level 'tighten trail to 25% past 4x' and all fee/min-size notes (The owner sets the trail (35%), initials (1.5x) and stop (20%), and code enforces them. Code also owns the fee/size checks. None of these may live in learned rules.)
@@ -175,13 +173,13 @@ A skip "ran" if the coin reached the first target (1.5x) from the skip price bef
 The meta right now is fresh pumpswap launches under an hour old that borrow a big name or a one-word joke. FUN has two live copies, the 0.2h one at $156k up 287% and the 0.6h one at $58k with $14k 5m volume. VAMPCAT is at $45k with $20.5k 5m, and the blank-name ㅤㅤㅤ is up 407% on the curve. AI jokes are holding as jokes: ATI (Artificial Tax Intelligence) still does $30.8k 5m at $124k. Self-serious coins are fading: AgenC is -57% on $3.6k 5m, and 发发 is -82%. Ignore the crawler's ATI and BNB numbers, the scan is fresher. BNB "Broke Nigga Baddie" has cooled to $7.3k 5m, so it fails the 5m volume bar now even with 0.79 buys (V6). I'd look at three setups. First, ATI as a DIP: down 60% on the hour, but 5m volume is about 0.76x its hourly pace, so attention is holding (V1). Second, the FUN pair: settle which one is the original before touching either, because vamps rarely beat the original (V1, V3). Third, VAMPCAT as MIGRATED, if its holders come back clean. PASS on $LAPTOP: a political figure pushed it (V13). PASS on the hack/drain headlines: hack-story coins are blocked in code. Owner, I hear you on being aggressive, and clean coins will get 7–9. But the hard lines and the 35% max risk don't move for a deadline.
 
 ## Moving most in its scans, last 30 min (1h volume)
+- Garrett: $619,121 1h vol, $216,362 mcap, +395% 1h  
+  CA `7H69zC4jZXBqrHQYT2KZUoatSizMJpp26V7H3SAkpump`
 - FUN: $541,987 1h vol, $158,268 mcap, +300% 1h  
   CA `FcZuu76twm89BKVN6WoWhFwfCmAVFPx24NkT8hKvpump`
+- VAMPCAT: $434,058 1h vol, $109,190 mcap, +192% 1h  
+  CA `4rsSV6L6mQ6jN587eKi5tNgkbgdzc8c9fxEVY8wapump`
 - BNB: $192,727 1h vol, $475,735 mcap, -1% 1h  
   CA `EYqygbhZjP7EbM4fSn8devctnksAvPAD1Bt57XBFpump`
 - FUN: $146,452 1h vol, $32,232 mcap, -57% 1h  
   CA `FDSG65a94jA3mdC47VPikD5WARCJN5ffSgot3TfHpump`
-- ATI: $141,790 1h vol, $2,017 mcap, -99% 1h  
-  CA `419P2wrVug9cW5hMwsjEEdhM5aLBt7YFnwn1p7dypump`
-- ㅤㅤㅤ: $100,385 1h vol, $25,538 mcap, +626% 1h  
-  CA `HAJcmgd5Y4r3Y6yzLSf3sSW18TJEkwvZy2awjaDypump`
