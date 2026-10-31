@@ -1,13 +1,13 @@
 # Trencher live report
 
-Updated 2026-10-31T20:58:18Z (paper trading, never real money)
+Updated 2026-10-31T21:13:33Z (paper trading, never real money)
 
 - Equity: $89.88 (-10.1% vs $100 start)
-- Goal: $1,000 by 2026-11-05 05:03Z (pressing for it): at 9% of it, 4.3 days left, needs +74.3% a day from here
+- Goal: $1,000 by 2026-11-05 05:03Z (pressing for it): at 9% of it, 4.3 days left, needs +74.5% a day from here
 - Closed trades: 15, 2 wins
 - Fees paid: $9.62 (axiom $1.50, network $6.53, pool $1.45), plus $2.22 lost to slippage
 - New trades: on
-- Brain: subscription, 637 calls and 1 plan-limit hits in 48h
+- Brain: subscription, 639 calls and 1 plan-limit hits in 48h
 
 ## Scorecard (after fees)
 - 15 closed, 2 won (13%), net $-10.12
@@ -74,9 +74,19 @@ Updated 2026-10-31T20:58:18Z (paper trading, never real money)
   CA `FWatMYieKhRuJ1yuTcmVG1njRhZWwqHwjR11pBympump`
 
 ## Last scan
-- 20:57Z: 9 coins, 8 with pairs, 0 passed the market filters, 0 researched
+- 21:12Z: 10 coins, 9 with pairs, 0 passed the market filters, 0 researched
 
 ## Coins it looked at, and why it passed
+- 21:08Z Leverhedge (MIGRATED, $1,451,474 mcap, $2,178 5m vol): PASS at conviction 3, PASS: flow below pace. 5m is $2.2k, only 0.35x the hourly average, in the shallow band, and it hasn't reclaimed the $1.71M high I need before re-entering. (V1, V6)  
+  CA `FWatMYieKhRuJ1yuTcmVG1njRhZWwqHwjR11pBympump`
+- 21:04Z Anakin (FINAL_STRETCH, $20,754 mcap, $4,758 5m vol): REJECT, Top 10 hold 27.1% ex-pool (>25%) (V13)  
+  CA `6zAg9L5bdeR17YwBNkjCQRHUc75MAvKQcjHZi5grpump`
+- 21:04Z BNB (MIGRATED, $295,551 mcap, $18,427 5m vol): PASS at conviction 1, PASS — hack-story parody ('hot wallet got cooked', Binance-hack ticker), 85% off peak with no higher low. Clean holders don't save a dead knife. (Owner hack rule, V1, V6)  
+  CA `EYqygbhZjP7EbM4fSn8devctnksAvPAD1Bt57XBFpump`
+- 21:02Z ANSEM (DIP, $94,653 mcap, $144,228 5m vol): PASS at conviction 2, PASS — 6-minute-old ANSEM vamp, down 58% in the last 5m with no higher low, while the original trades at $378k. Vamp field plus falling knife (V1, V2).  
+  CA `Fgmy6MpdrH8jjJ9i8RY53PVVdFdKLz6JX34tHJvcpump`
+- 21:00Z GATO (MIGRATED, $6,385,842 mcap, $4,127 5m vol): REJECT, Dev holds 3.3% (>1%) (V13, V17)  
+  CA `HsprHxBRgiVaQdRf3TnKNuZZtaX9JUSPgMFdAkk6pump`
 - 20:56Z HI (MIGRATED, $62,494 mcap, $6 5m vol): REJECT, Hack story ("hack" in the name or ticker): these tend to go down, owner rule  
   CA `BJPP9Df54Gi394FFsMJFgJwoBhD1Vku7ZNvxQhYApump`
 - 20:55Z Putin  (FINAL_STRETCH, $27,738 mcap, $19,128 5m vol): PASS at conviction 3, PASS: a 19-minute-old curve coin with no socials, top 10 at 22.9% and a joke on a dictator's name. Blocker: too new / sniping (V1, V6).  
@@ -87,16 +97,6 @@ Updated 2026-10-31T20:58:18Z (paper trading, never real money)
   CA `FdKdpz11GsTofLaNiddrhxrsE4APZYSSfLFqQ9YKpump`
 - 20:51Z ANSEM (MIGRATED, $377,875 mcap, $39,276 5m vol): PASS at conviction 3, PASS: 4.6% off the high, right after a +15% five-minute candle, on a ticker 16 bigger coins share. Blocker: chasing. (V1, V3)  
   CA `CvRJ8MrnB1AwjrgX25uyeLJiXNSugTo2ZHh8UXDTpump`
-- 20:43Z CREDIT (MIGRATED, $316,796 mcap, $98,457 5m vol): REJECT, Dev holds 2.0% (>1%) (V13, V17)  
-  CA `Ewyifvp8X9NxeaKawXamGXBFDisuMfcFfcdvSZ8opump`
-- 20:42Z CUM (FINAL_STRETCH, $26,480 mcap, $40,829 5m vol): PASS at conviction 2, PASS — 9-minute-old pair, +88% in 5m at 8.5x hourly pace, and the X link is "exitliquid1ty". Blocker: chasing a spike. (V1, V5, V7)  
-  CA `Ge7ZoS9qkw7B4aePBrKrWh3y3KPNzFwn7M9dQ1b6pump`
-- 20:39Z BULLCAT (MIGRATED, $864,900 mcap, $5,989 5m vol): REJECT, RugCheck danger: Single holder ownership 60.58%  
-  CA `ELQnjVcuMAbzjJcMEGDohtojK9vyhfMVw45nMk1ypump`
-- 20:39Z HALLOWCHAN (MIGRATED, $200,776 mcap, $26,584 5m vol): REJECT, Top 10 hold 26.7% ex-pool (>25%) (V13)  
-  CA `8UVVYBKvHfhP9mN8bHfHGgYiZd1Jb1aVuye1RkdTpump`
-- 20:37Z CBUCKS (MIGRATED, $1,420,514 mcap, $2,364 5m vol): REJECT, Top 10 hold 26.6% ex-pool (>25%) (V13)  
-  CA `DtcicPCKTKeAh7TDEzTym3hXeoHAoMiBdYJhMYxZpump`
 
 ## What its skips did next (last 48h)
 A skip "ran" if the coin reached the first target (1.5x) from the skip price before a 20% drop, "dumped" if the drop came first. Sampled every 10 min, followed 6h.
@@ -114,7 +114,7 @@ A skip "ran" if the coin reached the first target (1.5x) from the skip price bef
     CA `FDwCosavNvMiFB812ajJp3gG7eZ9c4bpgcnY6fDQpump`
   - ran: FLYWHEEL up to 2.23x  
     CA `BWMf44rD724R2bdgHWd88CDTVEjuPNQauw8s6S7ipump`
-- top 10 over 25%: blocked 50, ran 7, dumped 39, flat 1, open 3 (saving losses: keep it)
+- top 10 over 25%: blocked 51, ran 7, dumped 39, flat 1, open 4 (saving losses: keep it)
   - ran: HYPERGAMY up to 2.05x  
     CA `CUyNDWGdLPXZ3Gyj1H6TBh5pACgu5nY9WNkSqfMApump`
   - ran: Catori up to 1.52x  
@@ -140,15 +140,15 @@ A skip "ran" if the coin reached the first target (1.5x) from the skip price bef
     CA `2orqEGSdkm5BMmhdM8TpKCpACk32a3Zaj3Lef7ceqsc6`
   - ran: Bear up to 2.66x  
     CA `Dv6gYYkTav8Pm36UwAywxNCccwSZV1VL1tjiSpDLpump`
-- falling knife / no higher low: blocked 20, ran 0, dumped 16, flat 2, open 2 (saving losses: keep it)
-- dev share over 1%: blocked 15, ran 0, dumped 13, flat 1, open 1 (saving losses: keep it)
-- crowd leaving / fading volume: blocked 15, ran 4, dumped 9, flat 1, open 1 (saving losses: keep it)
+- falling knife / no higher low: blocked 22, ran 0, dumped 17, flat 2, open 3 (saving losses: keep it)
+- crowd leaving / fading volume: blocked 16, ran 4, dumped 9, flat 1, open 2 (saving losses: keep it)
   - ran: STABLEPAD up to 2.13x  
     CA `AABM3NrYSwKMsEDyanuskY43EH6ySbPpdPZNG1u7pump`
   - ran: HYDESK up to 1.78x  
     CA `BzndCZ2ZrjUA21aVW7t6AWEENRAps3EmdQg9hf94pump`
   - ran: AXIO up to 1.51x  
     CA `3mUcXkpVVkQ5ZJMctz2f1VBk4rwu3NRfNwVQZtDzpump`
+- dev share over 1%: blocked 15, ran 0, dumped 13, flat 1, open 1 (saving losses: keep it)
 - hack story (owner rule): blocked 12, ran 1, dumped 4, flat 6, open 1 (saving losses: keep it)
   - ran: ACT:H up to 1.53x  
     CA `3B3SJFo8kvVoMvvkzrUCPdpDeSeCL773AJ3kNLWJpump`
@@ -185,7 +185,7 @@ The meta has three themes. Cats are the biggest. PAWCAT is $2.58M at one hour ol
   CA `Ewyifvp8X9NxeaKawXamGXBFDisuMfcFfcdvSZ8opump`
 - ANSEM: $254,702 1h vol, $377,875 mcap, +449% 1h  
   CA `CvRJ8MrnB1AwjrgX25uyeLJiXNSugTo2ZHh8UXDTpump`
-- SIS: $163,557 1h vol, $419,908 mcap, -17% 1h  
-  CA `FdKdpz11GsTofLaNiddrhxrsE4APZYSSfLFqQ9YKpump`
-- MeiMei: $140,944 1h vol, $13,381 mcap, +88% 1h  
-  CA `2GqBH2s2etzTqf6a6F9GBdQHnMhULRrXmA1vKFLSpump`
+- BNB: $242,672 1h vol, $295,551 mcap, -28% 1h  
+  CA `EYqygbhZjP7EbM4fSn8devctnksAvPAD1Bt57XBFpump`
+- ANSEM: $189,071 1h vol, $94,653 mcap, +101% 1h  
+  CA `Fgmy6MpdrH8jjJ9i8RY53PVVdFdKLz6JX34tHJvcpump`
