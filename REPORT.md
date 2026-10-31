@@ -1,13 +1,13 @@
 # Trencher live report
 
-Updated 2026-10-31T04:02:49Z (paper trading, never real money)
+Updated 2026-10-31T04:17:50Z (paper trading, never real money)
 
 - Equity: $90.20 (-9.8% vs $100 start)
-- Goal: $1,000 by 2026-11-05 05:03Z (pressing for it): at 9% of it, 5 days left, needs +61.1% a day from here
+- Goal: $1,000 by 2026-11-05 05:03Z (pressing for it): at 9% of it, 5 days left, needs +61.3% a day from here
 - Closed trades: 14, 2 wins
 - Fees paid: $8.84 (axiom $1.30, network $6.14, pool $1.26), plus $1.92 lost to slippage
 - New trades: on
-- Brain: subscription, 599 calls and 1 plan-limit hits in 48h
+- Brain: subscription, 601 calls and 1 plan-limit hits in 48h
 
 ## Scorecard (after fees)
 - 14 closed, 2 won (14%), net $-9.80
@@ -74,9 +74,15 @@ Updated 2026-10-31T04:02:49Z (paper trading, never real money)
   CA `J5jxG3PFaWpj6BLEQExyC6FSqSvaTKNdQ9G3sZwBpump`
 
 ## Last scan
-- 04:02Z: 3 coins, 3 with pairs, 0 passed the market filters, 0 researched
+- 04:17Z: 3 coins, 1 with pairs, 1 passed the market filters, 1 researched
 
 ## Coins it looked at, and why it passed
+- 04:17Z Vampinu (FINAL_STRETCH, $21,015 mcap, $3,594 5m vol): PASS at conviction 2, PASS: 5m volume is only 0.27x the hourly pace, and the last 5 minutes printed +59%. That's a dead-cat spike on a fading crowd. Blocker: crowd leaving. (V1, V6)  
+  CA `Dmq4fFjsKYr7LeR1UJk6GHDfKEnPRWALrGL6mhNRpump`
+- 04:06Z KYC (FINAL_STRETCH, $33,191 mcap, $15,124 5m vol): PASS at conviction 3, PASS: chasing. KYC is up 60% in the last 5 minutes and sits right at its high, 20 minutes old, with holders unverified. That's buying the top of a spike before the pre-bond dump (V1).  
+  CA `GTeraCLeFf7EetC9vGZuG5DFz9gCKp86d8xihdXzpump`
+- 04:04Z LUMI (MIGRATED, $285,356 mcap, $18,653 5m vol): PASS at conviction 3, PASS: this is a copy LUMI, not the original. The original is HvitmAe…pump at $650k with $43k on the 5m, and this one is half its size and an hour old. In a vamp field I only buy the leader (V1, V2).  
+  CA `653joYuZ5EntuKd1bspZakjHdueMxHGs5Lvm7RdWpump`
 - 04:01Z HACKCOIN (no setup, $4,699 mcap, $189 5m vol): REJECT, Hack story ("hack" in the name or ticker): these tend to go down, owner rule  
   CA `9DoEsfrVCHQsuy9xr4v81d6FdX9QT1rLxohNK7ycpump`
 - 04:00Z Ghosty  (FINAL_STRETCH, $29,431 mcap, $4,814 5m vol): PASS at conviction 3, PASS: chasing a +28% 5m spike 10% under a fresh high, on $4.8k 5m volume with holders unverified. Watchlist it for the Halloween theme (V1, V6).  
@@ -91,16 +97,10 @@ Updated 2026-10-31T04:02:49Z (paper trading, never real money)
   CA `5M35JweGp34ZLhzE6Ke6CuRjrNNR9Z4n4RAEMcpepump`
 - 03:39Z HYPE (FINAL_STRETCH, $30,444 mcap, $2,436 5m vol): PASS at conviction 3, PASS: $2.4k on the 5m, 4% off the high after a +17% candle, and the ticker belongs to Hyperliquid. Chasing a thin curve coin (V1, V6).  
   CA `omsNfMWaokvaK2po2rQDcE6W7SrAsMeqfjfr9ghpump`
-- 03:38Z AgenC (MIGRATED, $1,923,074 mcap, $23,278 5m vol): PASS at conviction 4, PASS: the only level overhead is the $2.33M high at 1.21x, which is below initials. It's also one of 20 AgenC copies hanging off a much bigger SIB, and holder data didn't load. (V1, V6)  
-  CA `DDG8rjV3TViCqKRQED2QZq4MEaE1uqXgEiosBNpapump`
-- 03:38Z 4CHN (MIGRATED, $82,514 mcap, $59,608 5m vol): PASS at conviction 3, PASS: 14 minutes old, at its high, last 5m candle +28% at 4.6x the hourly pace. That's a spike on a fresh migration. Blocker: chasing / too new (V1, V6).  
-  CA `9RTLWC7rYkmkzzCaqzYUcRkZxJaRE66hSDAQKTBMpump`
-- 03:36Z BNB (DIP, $964,701 mcap, $14,753 5m vol): REJECT, Dip with fading attention is a falling knife, not a dip (5m at 0.39x the hour's pace, under 0.6x)  
-  CA `EYqygbhZjP7EbM4fSn8devctnksAvPAD1Bt57XBFpump`
 
 ## What its skips did next (last 48h)
 A skip "ran" if the coin reached the first target (1.5x) from the skip price before a 20% drop, "dumped" if the drop came first. Sampled every 10 min, followed 6h.
-- too new / sniping: blocked 44, ran 7, dumped 36, flat 0, open 1 (saving losses: keep it)
+- too new / sniping: blocked 45, ran 7, dumped 38, flat 0, open 0 (saving losses: keep it)
   - ran: ZI up to 1.7x  
     CA `5q45EK4mRhuiuBmRYoaDs4m2xweaV7gn3zsFhsvcpump`
   - ran: BEAR up to 1.59x  
@@ -114,7 +114,7 @@ A skip "ran" if the coin reached the first target (1.5x) from the skip price bef
     CA `FDwCosavNvMiFB812ajJp3gG7eZ9c4bpgcnY6fDQpump`
   - ran: ZERO up to 1.8x  
     CA `Ddwf94wedgCuMHAkwgti8A7sL2CxvBYJStJBj2cFpump`
-- near the high / chasing: blocked 39, ran 8, dumped 22, flat 2, open 7 (saving losses: keep it)
+- near the high / chasing: blocked 38, ran 7, dumped 23, flat 2, open 6 (saving losses: keep it)
   - ran: DESSA up to 1.52x  
     CA `npz2FhoufQ7pKqhGpaipYWacrAkidyW2yDpVWSvpump`
   - ran: OREN up to 1.58x  
@@ -131,9 +131,9 @@ A skip "ran" if the coin reached the first target (1.5x) from the skip price bef
 - falling knife (code): blocked 18, ran 1, dumped 16, flat 0, open 1 (saving losses: keep it)
   - ran: TYGR up to 1.58x  
     CA `5wCqCq6jbppuTocMeq6zd4UywAm64L1QNNxvEDAHpump`
-- falling knife / no higher low: blocked 14, ran 0, dumped 11, flat 2, open 1 (saving losses: keep it)
+- falling knife / no higher low: blocked 14, ran 0, dumped 12, flat 2, open 0 (saving losses: keep it)
 - dev share over 1%: blocked 14, ran 0, dumped 12, flat 1, open 1 (saving losses: keep it)
-- crowd leaving / fading volume: blocked 13, ran 4, dumped 8, flat 0, open 1 (saving losses: keep it)
+- crowd leaving / fading volume: blocked 14, ran 4, dumped 8, flat 0, open 2 (saving losses: keep it)
   - ran: STABLEPAD up to 2.13x  
     CA `AABM3NrYSwKMsEDyanuskY43EH6ySbPpdPZNG1u7pump`
   - ran: HYDESK up to 1.78x  
@@ -141,19 +141,19 @@ A skip "ran" if the coin reached the first target (1.5x) from the skip price bef
   - ran: AXIO up to 1.51x  
     CA `3mUcXkpVVkQ5ZJMctz2f1VBk4rwu3NRfNwVQZtDzpump`
 - hack story (owner rule): blocked 10, ran 0, dumped 3, flat 4, open 3 (saving losses: keep it)
-- vamp / copycat: blocked 8, ran 1, dumped 7, flat 0, open 0 (saving losses: keep it)
+- vamp / copycat: blocked 9, ran 1, dumped 7, flat 0, open 1 (saving losses: keep it)
   - ran: Hedge up to 1.78x  
     CA `7eQagAYSYYhRqRZF5L97Ku8AK94TEpsmnrrsssUkpump`
 
 ## Rules it changed from results and skips
-- 10-30 22:05Z tightened: DIP higher-low rule now ties the higher-low distance to the fixed 20% stop instead of setting its own stop (HEXN #1 was bought on the first bounce (−36%) and HEXN #2 lost when its higher low broke (−27%). 'No higher low' skips went 0 ran / 9 dumped. The stop is owner-set, so the rule only gates the entry now.)
-- 10-30 22:05Z tightened: DIP attention gate 0.7x hourly + a real story; LARP dips PASS (code param raised from 0.6 to 0.7) (DIPs 0/3, −$3.07. Falling-knife code skips went 2 ran / 13 dumped. This matches the owner's 0.7x line.)
-- 10-30 22:05Z added: Once a trade has reached ~1.3x, a stop review sells all, never trims half (PILLSEY: the SELL_HALF on an early-shakeout review grew the loss from about −20% to −31%.)
 - 10-30 22:05Z dropped: Separate re-entry bullet and all fee/size/minimum-position wording (Re-entry is merged into the stop-review bullet to stay within 15 rules. Fees and size are checked in code now, so no fee caps or minimum sizes stay in my rules.)
 - 10-31 01:08Z loosened: DIP attention gate: dropped the 'volume rising / fresh surge' requirement, 0.7x hourly is enough; DIP probation over (Owner override. The structural higher-low and story checks stay because DIP trades are 0/3 and falling-knife skips went 1 ran / 16 dumped.)
 - 10-31 01:08Z tightened: Stop review defaults to SELL; hold only once with a visible bundle exit (4 stop hits gapped far past the stop (CATCULUS −59% vs −30%, SI −38%, HEXN −36%, PILLSEY −31% vs −20%). The one partial hold made the loss bigger.)
 - 10-31 01:08Z dropped: Tighten trail to ~25% past 4x (CATBOT lesson) (The trail is owner-set at 35% and enforced in code. A learned rule can't set it.)
 - 10-31 01:08Z dropped: All fee, friction and $5-minimum-size rules from the lessons (Code now checks fees (target ≥ 3x round-trip, round-trip ≤ 20%). Per instructions these don't belong in learned rules.)
+- 10-31 04:12Z tightened: Conviction ladder merged with the owner's 'press the goal' (Merged two bullets into one to make room. Clean = 7 and leader/low-bundle = 8–9 per the owner. The 9 profile matches my only two winners (CATBOT, FLOATER: leader, clean holders, 20–40% pullback, flow at pace). The meaning didn't change.)
+- 10-31 04:12Z dropped: Lesson-level 'tighten trail to 25% past 4x' and all fee/min-size notes (The owner sets the trail (35%), initials (1.5x) and stop (20%), and code enforces them. Code also owns the fee/size checks. None of these may live in learned rules.)
+- 10-31 04:12Z dropped: Conviction ladder, then press (owner goal).** Hard lines passed + live flow (5m ≥ $10k, buys > sells) + a named target ≥ 1.5x = **7**. **8** = 7 + leader/original of a live meta OR verified low bundle_pct. **9** = leader + low bundles + 20–60% pullback + 5m ≥ hourly pace (the CATBOT/FLOATER profile, my only two winners). Take −1 each for a non-hard-line RugCheck danger, an unverified community, or a weak/LARP story. 5–6 = probe; under 5 = PASS naming the blocker. Take every setup that clears this and don't under-rate clean ones. (Owner override: the goal is set to push)
 
 ## Recent lessons
 - [2026-10-29 02:03] Expected: the FLOATER that had the crowd out of 23 same-ticker coins ($141k 5m volume, 78% buys, clean holders, 34% off the high) would keep climbing toward $500k on the tokenized-stock meta. What happened: it ran to 2.19x, I took initials as planned (V11), and the trailing stop sold the rest at 1.5x from a $255k mcap for +$1.48, but fees and slippage ($0.89) ate about 30% of the $2.94 cost and nearly a third of the gross gain. Next time I keep picking the vamp-field winner by volume and attention (V1, V6) and keep the 2x initials plus 30% trail, but I don't open a position under ~$5 because fixed fees turn a 2x winner into a 1.5x one.
@@ -171,13 +171,13 @@ A skip "ran" if the coin reached the first target (1.5x) from the skip price bef
 Meta: LUMI vamp war plus a rising Halloween theme; famous-brand coins are fading. Research the original LUMI (HvitmAe…pump, $650k, $43k 5m, 0.62 buys, 2.4h) as MIGRATED. The LUMI copies are dying (-74% to -93%) and the $134k one is a 12-minute-old copycat, so pass. Halloweenu (+743%, $34k 5m) is minutes old: watchlist until it proves itself at a higher cap (V5). Apple Coin fails the 0.7x DIP gate (5m vol 0.46x the hourly pace). DESSA is above the V6 range with 0.48 buys. $LAPTOP is out because a political figure pushed it (V13). The Nov 5 target doesn't raise any conviction score.
 
 ## Moving most in its scans, last 30 min (1h volume)
-- BNB: $459,415 1h vol, $964,701 mcap, -42% 1h  
-  CA `EYqygbhZjP7EbM4fSn8devctnksAvPAD1Bt57XBFpump`
-- DESSA: $360,863 1h vol, $14,733,350 mcap, -11% 1h  
+- LUMI: $350,456 1h vol, $285,356 mcap, +508% 1h  
+  CA `653joYuZ5EntuKd1bspZakjHdueMxHGs5Lvm7RdWpump`
+- DESSA: $315,376 1h vol, $14,468,088 mcap, -14% 1h  
   CA `npz2FhoufQ7pKqhGpaipYWacrAkidyW2yDpVWSvpump`
-- AgenC: $197,605 1h vol, $1,923,074 mcap, +18% 1h  
-  CA `DDG8rjV3TViCqKRQED2QZq4MEaE1uqXgEiosBNpapump`
-- 4CHN: $176,032 1h vol, $3,337 mcap, -91% 1h  
-  CA `8i44jWePNBkbTbBAN17qB3DQwdpPC6Bk4g1nk7VHpump`
-- 4CHN: $156,125 1h vol, $82,514 mcap, +116% 1h  
-  CA `9RTLWC7rYkmkzzCaqzYUcRkZxJaRE66hSDAQKTBMpump`
+- Vampinu: $160,090 1h vol, $21,015 mcap, +512% 1h  
+  CA `Dmq4fFjsKYr7LeR1UJk6GHDfKEnPRWALrGL6mhNRpump`
+- KYC: $119,677 1h vol, $33,191 mcap, +827% 1h  
+  CA `GTeraCLeFf7EetC9vGZuG5DFz9gCKp86d8xihdXzpump`
+- Halloweenu: $113,081 1h vol, $2,757 mcap, -94% 1h  
+  CA `5bejgwUcBqork98Bhfc4mtXZgd89fTbJ79n7hHqCpump`
