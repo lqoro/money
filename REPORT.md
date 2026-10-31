@@ -1,13 +1,13 @@
 # Trencher live report
 
-Updated 2026-10-31T15:24:44Z (paper trading, never real money)
+Updated 2026-10-31T15:39:48Z (paper trading, never real money)
 
 - Equity: $90.20 (-9.8% vs $100 start)
-- Goal: $1,000 by 2026-11-05 05:03Z (pressing for it): at 9% of it, 4.6 days left, needs +69.3% a day from here
+- Goal: $1,000 by 2026-11-05 05:03Z (pressing for it): at 9% of it, 4.6 days left, needs +69.5% a day from here
 - Closed trades: 14, 2 wins
 - Fees paid: $8.84 (axiom $1.30, network $6.14, pool $1.26), plus $1.92 lost to slippage
 - New trades: on
-- Brain: subscription, 652 calls and 1 plan-limit hits in 48h
+- Brain: subscription, 653 calls and 1 plan-limit hits in 48h
 
 ## Scorecard (after fees)
 - 14 closed, 2 won (14%), net $-9.80
@@ -74,9 +74,15 @@ Updated 2026-10-31T15:24:44Z (paper trading, never real money)
   CA `J5jxG3PFaWpj6BLEQExyC6FSqSvaTKNdQ9G3sZwBpump`
 
 ## Last scan
-- 15:24Z: 5 coins, 3 with pairs, 1 passed the market filters, 1 researched
+- 15:38Z: 4 coins, 2 with pairs, 0 passed the market filters, 0 researched
 
 ## Coins it looked at, and why it passed
+- 15:29Z LIBER (FINAL_STRETCH, $20,417 mcap, $5,387 5m vol): PASS at conviction 2, PASS: RugCheck didn't load, so holders, dev share and bundles are all blind on a $20k bonding-curve coin. It pitches itself as AI tech but shows no GitHub, and the 5m is only $5.4k. (V1, V13, V17)  
+  CA `AqtAQxLmzoQFJNdxgZN5BLxzYeGuVJNWc2riYCRDpump`
+- 15:28Z SI (MIGRATED, $185,327 mcap, $15,831 5m vol): PASS at conviction 2, PASS: RugCheck didn't load on a 14-minute-old coin that sits 11% off its high, and its 5m flow is 0.75x the hourly pace. That's a blind entry into a fresh migration with fading flow. (V1, V6, V13)  
+  CA `64vVGiNa4MefL4rq3mHzLiq8APfyc8iWLbumsFNfpump`
+- 15:26Z whitepaper (MIGRATED, $144,900 mcap, $44,547 5m vol): PASS at conviction 2, PASS: 12 minutes old, 5% off the high, right after a +65% five-minute candle, and RugCheck didn't load. I'd be the exit liquidity on a spike (V1, V6).  
+  CA `4tEvXHpd6JrCWJGByBS3qFBAtJbeoiEpgvWLw9hkpump`
 - 15:24Z billy (FINAL_STRETCH, $25,122 mcap, $75,778 5m vol): PASS at conviction 2, PASS — 5.5-minute-old curve coin up 104% in 5m at 11x the hourly pace, RugCheck didn't load, and 14 bigger coins share the ticker. Blocker: chasing a spike (V1, V3).  
   CA `DUTxGHL2LmpfjQaoK6LdZp8WQPoDiwvtDHVDf4fMpump`
 - 15:19Z UNSAFU (MIGRATED, $205,575 mcap, $3,511 5m vol): REJECT, RugCheck report unavailable: can't verify mint/freeze/holders, skip  
@@ -91,12 +97,6 @@ Updated 2026-10-31T15:24:44Z (paper trading, never real money)
   CA `2MXhpKgHBREgYYj3bSdorqbuJjkPAve1LTNHtk8Lpump`
 - 15:03Z UNSAFU (DIP, $171,509 mcap, $3,086 5m vol): REJECT, RugCheck report unavailable: can't verify mint/freeze/holders, skip  
   CA `4eq4JfnpdgqZTzeyR3GnRGHJQ3QhQT6Lp7nKnQ2nS7Rv`
-- 15:03Z Leverhedge (MIGRATED, $1,383,188 mcap, $4,591 5m vol): PASS at conviction 3, PASS: flow below pace. 5m is $4.6k at 0.71x the hourly pace in the shallow band, and RugCheck didn't load. (V1, V6)  
-  CA `FWatMYieKhRuJ1yuTcmVG1njRhZWwqHwjR11pBympump`
-- 15:02Z AgenC (MIGRATED, $163,546 mcap, $3,639 5m vol): PASS at conviction 2, PASS — 93% off the peak with 5m at 0.55x hourly pace and no higher low. A thin AI LARP whose crowd is leaving. Blocker: dead story / falling knife (V1, V6).  
-  CA `DDG8rjV3TViCqKRQED2QZq4MEaE1uqXgEiosBNpapump`
-- 14:59Z BNB (MIGRATED, $327,934 mcap, $17,854 5m vol): PASS at conviction 2, PASS: Binance-hack parody ("hot wallet got cooked, withdrawals paused") and RugCheck didn't load. Hack story plus blind holders. (Owner hack rule, V6, V13)  
-  CA `EYqygbhZjP7EbM4fSn8devctnksAvPAD1Bt57XBFpump`
 
 ## What its skips did next (last 48h)
 A skip "ran" if the coin reached the first target (1.5x) from the skip price before a 20% drop, "dumped" if the drop came first. Sampled every 10 min, followed 6h.
@@ -121,7 +121,9 @@ A skip "ran" if the coin reached the first target (1.5x) from the skip price bef
     CA `FDwCosavNvMiFB812ajJp3gG7eZ9c4bpgcnY6fDQpump`
   - ran: ZERO up to 1.8x  
     CA `Ddwf94wedgCuMHAkwgti8A7sL2CxvBYJStJBj2cFpump`
-- RugCheck didn't load: blocked 26, ran 0, dumped 16, flat 1, open 9 (saving losses: keep it)
+- RugCheck didn't load: blocked 29, ran 1, dumped 18, flat 1, open 9 (saving losses: keep it)
+  - ran: billy up to 3.75x  
+    CA `DUTxGHL2LmpfjQaoK6LdZp8WQPoDiwvtDHVDf4fMpump`
 - falling knife (code): blocked 21, ran 2, dumped 19, flat 0, open 0 (saving losses: keep it)
   - ran: TYGR up to 1.58x  
     CA `5wCqCq6jbppuTocMeq6zd4UywAm64L1QNNxvEDAHpump`
@@ -182,13 +184,13 @@ PASS on PUMPE for now. Blocker: 5m volume of $8.4k is about 0.4x its hourly pace
 Owner's note: I'll press on clean setups, but conviction comes from what the checks find, not from the Nov 5 target. The hard lines don't move.
 
 ## Moving most in its scans, last 30 min (1h volume)
-- DESSA: $1,232,553 1h vol, $28,554,629 mcap, +50% 1h  
+- DESSA: $1,129,668 1h vol, $26,823,164 mcap, +16% 1h  
   CA `npz2FhoufQ7pKqhGpaipYWacrAkidyW2yDpVWSvpump`
-- Pikmin: $578,697 1h vol, $140,147 mcap, +284% 1h  
-  CA `2MXhpKgHBREgYYj3bSdorqbuJjkPAve1LTNHtk8Lpump`
 - SIS: $330,871 1h vol, $409,250 mcap, +754% 1h  
   CA `8S49oCFR9Shcvibo42fJft2GH3X5rKgcFisZ57jopump`
-- PUMPE: $250,633 1h vol, $80,649 mcap, -40% 1h  
-  CA `7Nr1NvVdsczHyLsVT1z3uAJ1tLBL7n6PkP8fYkFbpump`
-- BNB: $130,911 1h vol, $327,934 mcap, +7% 1h  
-  CA `EYqygbhZjP7EbM4fSn8devctnksAvPAD1Bt57XBFpump`
+- billy: $291,263 1h vol, $24,649 mcap, -46% 1h  
+  CA `GL7LbqwtKE6rxzzoJk5D9eD1Morp5kvESQen1ANfpump`
+- SI: $254,450 1h vol, $185,327 mcap, +360% 1h  
+  CA `64vVGiNa4MefL4rq3mHzLiq8APfyc8iWLbumsFNfpump`
+- whitepaper: $203,420 1h vol, $144,900 mcap, +152% 1h  
+  CA `4tEvXHpd6JrCWJGByBS3qFBAtJbeoiEpgvWLw9hkpump`
