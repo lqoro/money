@@ -1,13 +1,13 @@
 # Trencher live report
 
-Updated 2026-10-31T09:36:13Z (paper trading, never real money)
+Updated 2026-10-31T09:51:30Z (paper trading, never real money)
 
 - Equity: $90.20 (-9.8% vs $100 start)
-- Goal: $1,000 by 2026-11-05 05:03Z (pressing for it): at 9% of it, 4.8 days left, needs +64.9% a day from here
+- Goal: $1,000 by 2026-11-05 05:03Z (pressing for it): at 9% of it, 4.8 days left, needs +65.1% a day from here
 - Closed trades: 14, 2 wins
 - Fees paid: $8.84 (axiom $1.30, network $6.14, pool $1.26), plus $1.92 lost to slippage
 - New trades: on
-- Brain: subscription, 623 calls and 1 plan-limit hits in 48h
+- Brain: subscription, 626 calls and 1 plan-limit hits in 48h
 
 ## Scorecard (after fees)
 - 14 closed, 2 won (14%), net $-9.80
@@ -74,9 +74,21 @@ Updated 2026-10-31T09:36:13Z (paper trading, never real money)
   CA `J5jxG3PFaWpj6BLEQExyC6FSqSvaTKNdQ9G3sZwBpump`
 
 ## Last scan
-- 09:35Z: 6 coins, 5 with pairs, 0 passed the market filters, 0 researched
+- 09:50Z: 6 coins, 5 with pairs, 1 passed the market filters, 1 researched
 
 ## Coins it looked at, and why it passed
+- 09:51Z HELL (MIGRATED, $2,716,448 mcap, $2,548 5m vol): PASS at conviction 3, PASS: 5m volume is $2.5k on a +17.7% spike at 5.1x a dead hourly pace. That's thin flow and a chase, with no crowd behind it (V1, V6).  
+  CA `A75Xx6SeftAmWduv9KGwb2GCjXUAhxozcCUCys9jpump`
+- 09:43Z 发发 (DIP, $226,618 mcap, $11,184 5m vol): REJECT, Dip with fading attention is a falling knife, not a dip (5m at 0.17x the hour's pace, under 0.6x)  
+  CA `CcSRXUReR3VVG92C4rE8FqsLomzwmH6Dn1WhTGebpump`
+- 09:42Z Leverhedge (MIGRATED, $811,697 mcap, $2,538 5m vol): PASS at conviction 3, PASS: flow below pace. Shallow band (14% off the high) with $2.5k on the 5m at 0.8x the hourly pace, holders didn't load, and the prior high is only 1.17x away. (V1, V6)  
+  CA `FWatMYieKhRuJ1yuTcmVG1njRhZWwqHwjR11pBympump`
+- 09:42Z AgenC (MIGRATED, $271,437 mcap, $4,269 5m vol): PASS at conviction 2, PASS: crowd leaving. 88% off the peak, 5m at 0.23x the hourly pace, last 15m candle down ~58%, no higher low, AI LARP. Falling knife (V1, V6).  
+  CA `DDG8rjV3TViCqKRQED2QZq4MEaE1uqXgEiosBNpapump`
+- 09:42Z ATI (MIGRATED, $321,139 mcap, $30,381 5m vol): PASS at conviction 3, PASS — 12 minutes off the peak, 5m volume halved to 0.48x the hourly pace and no higher low. Fresh migration bleeding off its spike, holders unverified (V1, V6).  
+  CA `419P2wrVug9cW5hMwsjEEdhM5aLBt7YFnwn1p7dypump`
+- 09:40Z BNB (DIP, $613,021 mcap, $14,585 5m vol): PASS at conviction 2, PASS — blocker: hack story. The whole joke is the Binance hot-wallet hack ("withdrawals paused"), and hack-headline coins are an owner rule I don't trade. Flow is real, but rules are rules.  
+  CA `EYqygbhZjP7EbM4fSn8devctnksAvPAD1Bt57XBFpump`
 - 09:15Z JOB (MIGRATED, $3,282,454 mcap, $2,179 5m vol): PASS at conviction 3, PASS: flow below pace. JOB has $2.2k on the 5m at 0.64x its hourly pace, and sellers outnumber buyers 39 to 17. It's 10% off the high, so this would be paying near-high prices into a crowd that's leaving (V1, V6).  
   CA `9Pq7aLAbhDG2tTnS22cm6kuysZVcZpLFE368HWuypump`
 - 09:07Z GATO (MIGRATED, $5,615,890 mcap, $3,294 5m vol): PASS at conviction 2, PASS — chasing. 0.4% off the high, $3.3k on the 5m, sellers ahead 34 to 21. A cat on a fading meta. (V1, V6)  
@@ -85,28 +97,23 @@ Updated 2026-10-31T09:36:13Z (paper trading, never real money)
   CA `CcSRXUReR3VVG92C4rE8FqsLomzwmH6Dn1WhTGebpump`
 - 08:56Z Leverhedge (MIGRATED, $868,922 mcap, $2,637 5m vol): PASS at conviction 3, PASS: 8.2% off a 12-minute-old high with $2.6k on the 5m. That's chasing on thin flow, holders unverified. (V1, V6)  
   CA `FWatMYieKhRuJ1yuTcmVG1njRhZWwqHwjR11pBympump`
-- 08:56Z AgenC (DIP, $645,876 mcap, $7,056 5m vol): REJECT, Dip with fading attention is a falling knife, not a dip (5m at 0.35x the hour's pace, under 0.6x)  
-  CA `DDG8rjV3TViCqKRQED2QZq4MEaE1uqXgEiosBNpapump`
-- 08:56Z ATI (MIGRATED, $157,019 mcap, $19,153 5m vol): PASS at conviction 3, PASS — chasing. The last 5m candle is up 72%, the coin is 16 minutes old, and I can't see the holders. That's a spike, not a pullback (V1, V5).  
-  CA `419P2wrVug9cW5hMwsjEEdhM5aLBt7YFnwn1p7dypump`
-- 08:55Z BNB (DIP, $662,717 mcap, $20,608 5m vol): PASS at conviction 2, PASS: blocker is a hack story. The coin is a joke about the Binance hot-wallet hack ("hot wallet got cooked", "withdrawals paused"). That's an owner hard line, so the good flow doesn't matter.  
-  CA `EYqygbhZjP7EbM4fSn8devctnksAvPAD1Bt57XBFpump`
-- 08:30Z JOB (MIGRATED, $3,359,333 mcap, $3,792 5m vol): PASS at conviction 3, PASS — 8.4% off the high with $3.8k on the 5m and no holder data. Chasing a slow coin. (V1, V6)  
-  CA `9Pq7aLAbhDG2tTnS22cm6kuysZVcZpLFE368HWuypump`
-- 08:26Z CRAMERSAN (MIGRATED, $144,757 mcap, $11,003 5m vol): PASS at conviction 4, PASS: 5m volume is running at half its hourly pace, the prior high is only 1.39x away, and the holders didn't load. The crowd is thinning on an unverified coin (V1, V6).  
-  CA `AhyWCaBF1U1ssTWgjFRrEvqNQdy4NsFCvLYRSJKppump`
-- 08:26Z BOAR (DIP, $120,713 mcap, $32,556 5m vol): PASS at conviction 4, PASS: no higher low yet. This is the first bounce off the $0.000092 hourly low, and a stop under that low sits 25% below entry, more than my 20% DIP limit. Holders also didn't load. (V1, V6)  
-  CA `HRdx7yxRVd8cPbuYva1kzMDodtoiHCEQxWSA3Y2dpump`
 
 ## What its skips did next (last 48h)
 A skip "ran" if the coin reached the first target (1.5x) from the skip price before a 20% drop, "dumped" if the drop came first. Sampled every 10 min, followed 6h.
-- too new / sniping: blocked 54, ran 8, dumped 45, flat 0, open 1 (saving losses: keep it)
+- too new / sniping: blocked 53, ran 7, dumped 45, flat 0, open 1 (saving losses: keep it)
   - ran: ZI up to 1.7x  
     CA `5q45EK4mRhuiuBmRYoaDs4m2xweaV7gn3zsFhsvcpump`
   - ran: BEAR up to 1.59x  
     CA `6i4ebPt8dpGchB2A1ELpTz3B72dy5DkzNpFMNtUSpump`
   - ran: HyPepe up to 1.5x  
     CA `G8TdzgpUQXQAxJvarNKPXRGv2kh9CsJDK7dCC7Xupump`
+- near the high / chasing: blocked 42, ran 8, dumped 24, flat 2, open 8 (saving losses: keep it)
+  - ran: DESSA up to 1.52x  
+    CA `npz2FhoufQ7pKqhGpaipYWacrAkidyW2yDpVWSvpump`
+  - ran: OREN up to 1.58x  
+    CA `57vAaMsnAJXkvULtAz7fsi6gRn3bHRJFJsJV1okNpump`
+  - ran: Catori up to 1.52x  
+    CA `FDwCosavNvMiFB812ajJp3gG7eZ9c4bpgcnY6fDQpump`
 - top 10 over 25%: blocked 42, ran 7, dumped 33, flat 2, open 0 (saving losses: keep it)
   - ran: HYPERGAMY up to 2.05x  
     CA `CUyNDWGdLPXZ3Gyj1H6TBh5pACgu5nY9WNkSqfMApump`
@@ -114,13 +121,6 @@ A skip "ran" if the coin reached the first target (1.5x) from the skip price bef
     CA `FDwCosavNvMiFB812ajJp3gG7eZ9c4bpgcnY6fDQpump`
   - ran: ZERO up to 1.8x  
     CA `Ddwf94wedgCuMHAkwgti8A7sL2CxvBYJStJBj2cFpump`
-- near the high / chasing: blocked 40, ran 8, dumped 25, flat 2, open 5 (saving losses: keep it)
-  - ran: DESSA up to 1.52x  
-    CA `npz2FhoufQ7pKqhGpaipYWacrAkidyW2yDpVWSvpump`
-  - ran: OREN up to 1.58x  
-    CA `57vAaMsnAJXkvULtAz7fsi6gRn3bHRJFJsJV1okNpump`
-  - ran: Catori up to 1.52x  
-    CA `FDwCosavNvMiFB812ajJp3gG7eZ9c4bpgcnY6fDQpump`
 - RugCheck danger: blocked 19, ran 5, dumped 13, flat 1, open 0 (saving losses: keep it)
   - ran: HYPEINU up to 1.57x  
     CA `6eccVGkbi8cvAYBGzfDmUwFYrMj8eGZF2xyZqZLkpump`
@@ -133,7 +133,7 @@ A skip "ran" if the coin reached the first target (1.5x) from the skip price bef
     CA `5wCqCq6jbppuTocMeq6zd4UywAm64L1QNNxvEDAHpump`
   - ran: LUMI up to 1.76x  
     CA `653joYuZ5EntuKd1bspZakjHdueMxHGs5Lvm7RdWpump`
-- falling knife / no higher low: blocked 15, ran 0, dumped 13, flat 2, open 0 (saving losses: keep it)
+- falling knife / no higher low: blocked 14, ran 0, dumped 12, flat 2, open 0 (saving losses: keep it)
 - crowd leaving / fading volume: blocked 14, ran 4, dumped 10, flat 0, open 0 (saving losses: keep it)
   - ran: STABLEPAD up to 2.13x  
     CA `AABM3NrYSwKMsEDyanuskY43EH6ySbPpdPZNG1u7pump`
@@ -172,16 +172,16 @@ A skip "ran" if the coin reached the first target (1.5x) from the skip price bef
 - [2026-10-30 21:37] Expected PILLSEY, the flow leader in the pump.fun meta at $125k 5m, to break its $414k high toward 1.5x; it peaked at 1.32x, never reached initials, fell back through the -20% stop inside 18 minutes, and the half-hold on review only made the loss bigger (-31%). It sat about 20% under the high, so it passed my pullback rule, but I bought right after a +31% five-minute candle at 4.2x the hourly pace, which is chasing a spike, not buying a pullback (V1, V6), and it fits my "near-high skips mostly dump" data. Next time a coin that is up more than ~25% in the last 5 minutes counts as "chasing" even if it's 20% off the high: wait for that candle to retrace and a higher low to form. And once a trade has hit ~1.3x, an early-shakeout stop review sells all of it instead of trimming half.
 
 ## Meta right now
-The meta right now is fresh pump.fun coins under 2 hours old with people and character jokes: Cramersan ($145k, +74% 1h, $11k 5m, 0.56 buys), Nikita Boar ($121k, $32.6k 5m) and Javits. Animals are spread across the board too: Boar, Anita the Space Spider, iApe. Cats are fading (GATO 0.40 buys, $1.2k 5m) and so is AI/agent (AgenC is down to $5.3k on the 5m, under the $10k bar). Chinese-ticker launches are rising: FĀFĀ is at $31k on the curve with $18k on the 5m and +634% in 18 minutes, and crude humor (CUM) is pulling volume on tiny caps. The setups I'd look at: Cramersan as MIGRATED, only on a 10%+ pullback from its local high with buyers coming back. Nikita Boar as a DIP candidate: it's -52% on the hour, but 5m volume is about 1.2x its hourly pace and buys are 0.60, so attention looks like it's holding (V1). FĀFĀ goes on FINAL_STRETCH watch once it's past the sniping window (V5). PASS on $LAPTOP (a political figure pushed it, V13), GLITCH and NETWORK (5m volume under $1k, dead, V1/V6) and CUM/Anita/LB (5m volume under the $10k bar and still in the sniping window, V1/V5). Owner's push noted: clean setups can earn a 7–9. The hard lines and checks still decide every buy.
+Meta: parody tickers that borrow a big name (ATI "Artificial Tax Intelligence", BNB "Broke Nigga Baddie") are rising. AI jokes work as jokes (ATI) while self-serious agent coins fade (AgenC -60%, $4.3k 5m). The other fresh sub-2h launches are dying (Anita, CUM, LUMI). The crawler's Cramersan call is stale: it's at $1.9k, down 99%, a corpse. Setups: ATI as MIGRATED ($321k, $30k 5m, 0.55 buys) on a 10%+ pullback from its local high with buyers returning. BNB as V6 recon ($613k, $14.6k 5m, 0.71 buys), just past the 12h age filter. PASS: $LAPTOP (political, V13); AgenC/JOB/Leverhedge/GLITCH/NETWORK (5m volume under $10k, V1/V6); Cramersan/Anita/CUM/LUMI (dead flow, V1).
 
 ## Moving most in its scans, last 30 min (1h volume)
-- CRAMERSAN: $91,137 1h vol, $1,860 mcap, -99% 1h  
-  CA `AhyWCaBF1U1ssTWgjFRrEvqNQdy4NsFCvLYRSJKppump`
-- JOB: $40,987 1h vol, $3,282,454 mcap, -1% 1h  
-  CA `9Pq7aLAbhDG2tTnS22cm6kuysZVcZpLFE368HWuypump`
-- LB: $34,863 1h vol, $6,112 mcap, -55% 1h  
-  CA `Dm4hMN9j4HPtRsyLaYWV3pwUhcgh3wiPVTj4UhHKpump`
-- Anita: $32,843 1h vol, $3,798 mcap, -76% 1h  
-  CA `EsKnqXKPVGTyBqpRrWGw5Ltz9Qj4t71ZPCDUWhQNpump`
-- GATO: $23,721 1h vol, $5,615,890 mcap, +10% 1h  
-  CA `HsprHxBRgiVaQdRf3TnKNuZZtaX9JUSPgMFdAkk6pump`
+- 发发: $772,922 1h vol, $226,618 mcap, +144% 1h  
+  CA `CcSRXUReR3VVG92C4rE8FqsLomzwmH6Dn1WhTGebpump`
+- ATI: $754,896 1h vol, $321,139 mcap, +307% 1h  
+  CA `419P2wrVug9cW5hMwsjEEdhM5aLBt7YFnwn1p7dypump`
+- AgenC: $218,025 1h vol, $271,437 mcap, -60% 1h  
+  CA `DDG8rjV3TViCqKRQED2QZq4MEaE1uqXgEiosBNpapump`
+- BNB: $183,390 1h vol, $613,021 mcap, +15% 1h  
+  CA `EYqygbhZjP7EbM4fSn8devctnksAvPAD1Bt57XBFpump`
+- Leverhedge: $38,184 1h vol, $811,697 mcap, -1% 1h  
+  CA `FWatMYieKhRuJ1yuTcmVG1njRhZWwqHwjR11pBympump`
