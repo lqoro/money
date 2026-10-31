@@ -1,13 +1,13 @@
 # Trencher live report
 
-Updated 2026-10-31T08:20:07Z (paper trading, never real money)
+Updated 2026-10-31T08:35:20Z (paper trading, never real money)
 
 - Equity: $90.20 (-9.8% vs $100 start)
-- Goal: $1,000 by 2026-11-05 05:03Z (pressing for it): at 9% of it, 4.9 days left, needs +64% a day from here
+- Goal: $1,000 by 2026-11-05 05:03Z (pressing for it): at 9% of it, 4.9 days left, needs +64.2% a day from here
 - Closed trades: 14, 2 wins
 - Fees paid: $8.84 (axiom $1.30, network $6.14, pool $1.26), plus $1.92 lost to slippage
 - New trades: on
-- Brain: subscription, 623 calls and 1 plan-limit hits in 48h
+- Brain: subscription, 624 calls and 1 plan-limit hits in 48h
 
 ## Scorecard (after fees)
 - 14 closed, 2 won (14%), net $-9.80
@@ -74,9 +74,15 @@ Updated 2026-10-31T08:20:07Z (paper trading, never real money)
   CA `J5jxG3PFaWpj6BLEQExyC6FSqSvaTKNdQ9G3sZwBpump`
 
 ## Last scan
-- 08:19Z: 10 coins, 9 with pairs, 0 passed the market filters, 0 researched
+- 08:34Z: 12 coins, 11 with pairs, 0 passed the market filters, 0 researched
 
 ## Coins it looked at, and why it passed
+- 08:30Z JOB (MIGRATED, $3,359,333 mcap, $3,792 5m vol): PASS at conviction 3, PASS — 8.4% off the high with $3.8k on the 5m and no holder data. Chasing a slow coin. (V1, V6)  
+  CA `9Pq7aLAbhDG2tTnS22cm6kuysZVcZpLFE368HWuypump`
+- 08:26Z CRAMERSAN (MIGRATED, $144,757 mcap, $11,003 5m vol): PASS at conviction 4, PASS: 5m volume is running at half its hourly pace, the prior high is only 1.39x away, and the holders didn't load. The crowd is thinning on an unverified coin (V1, V6).  
+  CA `AhyWCaBF1U1ssTWgjFRrEvqNQdy4NsFCvLYRSJKppump`
+- 08:26Z BOAR (DIP, $120,713 mcap, $32,556 5m vol): PASS at conviction 4, PASS: no higher low yet. This is the first bounce off the $0.000092 hourly low, and a stop under that low sits 25% below entry, more than my 20% DIP limit. Holders also didn't load. (V1, V6)  
+  CA `HRdx7yxRVd8cPbuYva1kzMDodtoiHCEQxWSA3Y2dpump`
 - 08:12Z 发发 (FINAL_STRETCH, $31,272 mcap, $18,350 5m vol): PASS at conviction 3, PASS — 17 minutes old, last 5m up 26% at 4.6x pace, holders unverified, 80% bonded. Chasing a spike into the pre-bond dump zone (V1, V5).  
   CA `CcSRXUReR3VVG92C4rE8FqsLomzwmH6Dn1WhTGebpump`
 - 08:11Z AgenC (DIP, $588,331 mcap, $5,342 5m vol): PASS at conviction 3, PASS: this is a vamp. It borrows the ticker of tetsuo's real AgenC protocol token (5yC9…pump) and the name of an older SIB "Super Intelligent Beauty" coin (3HKK…pump). It's also a LARP AI dip, 75% off the high with $5.3k on the 5m. (V1, V3, V13)  
@@ -91,16 +97,10 @@ Updated 2026-10-31T08:20:07Z (paper trading, never real money)
   CA `CH4somejo6HMscqRV5JqekHC7ZPrk7eepTGRR1jvpump`
 - 07:44Z JOB (MIGRATED, $3,347,129 mcap, $2,224 5m vol): PASS at conviction 2, PASS: chasing a dead tape. JOB is 8.7% off its high with $2.2k on the 5m, 0.58x the hourly pace and sellers ahead 39 to 21. Nobody is buying (V1, V6).  
   CA `9Pq7aLAbhDG2tTnS22cm6kuysZVcZpLFE368HWuypump`
-- 07:41Z CRAMERSAN (MIGRATED, $137,064 mcap, $10,163 5m vol): PASS at conviction 3, PASS — flow below pace: 5m at 0.59x hourly in the shallow band (14% off high), on a 21-minute-old coin still riding its bond spike. Wait for a base. (V1, V6)  
-  CA `AhyWCaBF1U1ssTWgjFRrEvqNQdy4NsFCvLYRSJKppump`
-- 07:40Z BOAR (DIP, $184,575 mcap, $13,551 5m vol): REJECT, Dip with fading attention is a falling knife, not a dip (5m at 0.24x the hour's pace, under 0.6x)  
-  CA `HRdx7yxRVd8cPbuYva1kzMDodtoiHCEQxWSA3Y2dpump`
-- 07:26Z AgenC (DIP, $595,847 mcap, $6,599 5m vol): PASS at conviction 3, PASS: the stop under the higher low is 24% down, the story is a weak AI-agent claim with no GitHub, and the ticker borrows a bigger AgenC. A 74% dip needs a strong story, and this one has none (V1, V3, V6).  
-  CA `DDG8rjV3TViCqKRQED2QZq4MEaE1uqXgEiosBNpapump`
 
 ## What its skips did next (last 48h)
 A skip "ran" if the coin reached the first target (1.5x) from the skip price before a 20% drop, "dumped" if the drop came first. Sampled every 10 min, followed 6h.
-- too new / sniping: blocked 53, ran 7, dumped 45, flat 0, open 1 (saving losses: keep it)
+- too new / sniping: blocked 53, ran 7, dumped 46, flat 0, open 0 (saving losses: keep it)
   - ran: ZI up to 1.7x  
     CA `5q45EK4mRhuiuBmRYoaDs4m2xweaV7gn3zsFhsvcpump`
   - ran: BEAR up to 1.59x  
@@ -114,7 +114,7 @@ A skip "ran" if the coin reached the first target (1.5x) from the skip price bef
     CA `FDwCosavNvMiFB812ajJp3gG7eZ9c4bpgcnY6fDQpump`
   - ran: ZERO up to 1.8x  
     CA `Ddwf94wedgCuMHAkwgti8A7sL2CxvBYJStJBj2cFpump`
-- near the high / chasing: blocked 41, ran 9, dumped 25, flat 3, open 4 (saving losses: keep it)
+- near the high / chasing: blocked 41, ran 9, dumped 25, flat 2, open 5 (saving losses: keep it)
   - ran: DESSA up to 1.52x  
     CA `npz2FhoufQ7pKqhGpaipYWacrAkidyW2yDpVWSvpump`
   - ran: OREN up to 1.58x  
@@ -128,7 +128,7 @@ A skip "ran" if the coin reached the first target (1.5x) from the skip price bef
     CA `2orqEGSdkm5BMmhdM8TpKCpACk32a3Zaj3Lef7ceqsc6`
   - ran: Bear up to 2.66x  
     CA `Dv6gYYkTav8Pm36UwAywxNCccwSZV1VL1tjiSpDLpump`
-- falling knife (code): blocked 18, ran 2, dumped 16, flat 0, open 0 (saving losses: keep it)
+- falling knife (code): blocked 17, ran 2, dumped 15, flat 0, open 0 (saving losses: keep it)
   - ran: TYGR up to 1.58x  
     CA `5wCqCq6jbppuTocMeq6zd4UywAm64L1QNNxvEDAHpump`
   - ran: LUMI up to 1.76x  
@@ -136,7 +136,7 @@ A skip "ran" if the coin reached the first target (1.5x) from the skip price bef
 - falling knife / no higher low: blocked 16, ran 1, dumped 13, flat 2, open 0 (saving losses: keep it)
   - ran: Leverhedge up to 1.52x  
     CA `FWatMYieKhRuJ1yuTcmVG1njRhZWwqHwjR11pBympump`
-- crowd leaving / fading volume: blocked 15, ran 4, dumped 11, flat 0, open 0 (saving losses: keep it)
+- crowd leaving / fading volume: blocked 14, ran 4, dumped 10, flat 0, open 0 (saving losses: keep it)
   - ran: STABLEPAD up to 2.13x  
     CA `AABM3NrYSwKMsEDyanuskY43EH6ySbPpdPZNG1u7pump`
   - ran: HYDESK up to 1.78x  
@@ -177,13 +177,13 @@ A skip "ran" if the coin reached the first target (1.5x) from the skip price bef
 Meta from scan_movers: crude degen humor and AI/agent tickers, and both mostly die fast. Broke Nigga Baddie (BNB) is the exception: $528k, +18% 1h, $16.2k 5m (about 1x hourly pace), 0.70 buys. AgenC is the AI name with legs ($596k, +32%); TELEMETRY (-62%) and PairBot (-57%) are dead. Cats are fading: GATO 0.36 buys, -11% 1h. iCat is not in the scan, so unverified. Setups: BNB MIGRATED only on a pullback of at least 10% from the local high with buyers returning; it isn't a dip right now, and the slur name limits how wide the audience gets (V6). AgenC is borderline: 13.1h old, $6.6k on the 5m, past the 12h window and under the $10k bar; engage only if 5m reclaims $10k and holder checks are clean. PASS: KERBAL, HygencyPad, Rizzoween (under 30 min old, sniping, V5); Hyped (0.22 buys); Leverhedge, NETWORK, STANK (5m volume under the $2k-$10k bars, V1/V6); $LAPTOP (political figure, V13). The owner's deadline is a reason to press, not evidence; conviction scores still have to be earned.
 
 ## Moving most in its scans, last 30 min (1h volume)
+- BOAR: $330,445 1h vol, $120,713 mcap, -52% 1h  
+  CA `HRdx7yxRVd8cPbuYva1kzMDodtoiHCEQxWSA3Y2dpump`
+- CRAMERSAN: $263,081 1h vol, $144,757 mcap, +74% 1h  
+  CA `AhyWCaBF1U1ssTWgjFRrEvqNQdy4NsFCvLYRSJKppump`
 - BNB: $179,712 1h vol, $573,055 mcap, +22% 1h  
   CA `EYqygbhZjP7EbM4fSn8devctnksAvPAD1Bt57XBFpump`
+- CUM: $130,852 1h vol, $14,847 mcap, +354% 1h  
+  CA `CH4somejo6HMscqRV5JqekHC7ZPrk7eepTGRR1jvpump`
 - AgenC: $83,111 1h vol, $588,331 mcap, +4% 1h  
   CA `DDG8rjV3TViCqKRQED2QZq4MEaE1uqXgEiosBNpapump`
-- Ape: $65,639 1h vol, $3,585 mcap, -91% 1h  
-  CA `Fo4Tz8HwQrp8wvn2pJwRRCzYcE5P1zeRHYwCtwAjpump`
-- 发发: $47,761 1h vol, $31,272 mcap, +634% 1h  
-  CA `CcSRXUReR3VVG92C4rE8FqsLomzwmH6Dn1WhTGebpump`
-- TITTYVERSE: $44,098 1h vol, $1,927 mcap, -98% 1h  
-  CA `4rYEicv2uE1MnV6gB754MivhbXELEPRoykqTp6Mypump`
