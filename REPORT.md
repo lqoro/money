@@ -1,13 +1,13 @@
 # Trencher live report
 
-Updated 2026-10-31T07:49:49Z (paper trading, never real money)
+Updated 2026-10-31T08:05:05Z (paper trading, never real money)
 
 - Equity: $90.20 (-9.8% vs $100 start)
-- Goal: $1,000 by 2026-11-05 05:03Z (pressing for it): at 9% of it, 4.9 days left, needs +63.6% a day from here
+- Goal: $1,000 by 2026-11-05 05:03Z (pressing for it): at 9% of it, 4.9 days left, needs +63.8% a day from here
 - Closed trades: 14, 2 wins
 - Fees paid: $8.84 (axiom $1.30, network $6.14, pool $1.26), plus $1.92 lost to slippage
 - New trades: on
-- Brain: subscription, 624 calls and 1 plan-limit hits in 48h
+- Brain: subscription, 621 calls and 1 plan-limit hits in 48h
 
 ## Scorecard (after fees)
 - 14 closed, 2 won (14%), net $-9.80
@@ -74,7 +74,7 @@ Updated 2026-10-31T07:49:49Z (paper trading, never real money)
   CA `J5jxG3PFaWpj6BLEQExyC6FSqSvaTKNdQ9G3sZwBpump`
 
 ## Last scan
-- 07:49Z: 7 coins, 6 with pairs, 0 passed the market filters, 0 researched
+- 08:04Z: 1 coins, 0 with pairs, 0 passed the market filters, 0 researched
 
 ## Coins it looked at, and why it passed
 - 07:49Z GLITCH (MIGRATED, $3,189,874 mcap, $7,430 5m vol): PASS at conviction 4, PASS: the only level above us is the $4.28M high at 1.34x, which is under the 1.5x initials, and the "attention surge" is $7.4k on a coin that was dead for the hour. Target below initials. (V1, V6)  
@@ -114,7 +114,7 @@ A skip "ran" if the coin reached the first target (1.5x) from the skip price bef
     CA `FDwCosavNvMiFB812ajJp3gG7eZ9c4bpgcnY6fDQpump`
   - ran: ZERO up to 1.8x  
     CA `Ddwf94wedgCuMHAkwgti8A7sL2CxvBYJStJBj2cFpump`
-- near the high / chasing: blocked 41, ran 8, dumped 25, flat 3, open 5 (saving losses: keep it)
+- near the high / chasing: blocked 41, ran 8, dumped 26, flat 3, open 4 (saving losses: keep it)
   - ran: DESSA up to 1.52x  
     CA `npz2FhoufQ7pKqhGpaipYWacrAkidyW2yDpVWSvpump`
   - ran: OREN up to 1.58x  
@@ -128,12 +128,12 @@ A skip "ran" if the coin reached the first target (1.5x) from the skip price bef
     CA `2orqEGSdkm5BMmhdM8TpKCpACk32a3Zaj3Lef7ceqsc6`
   - ran: Bear up to 2.66x  
     CA `Dv6gYYkTav8Pm36UwAywxNCccwSZV1VL1tjiSpDLpump`
-- falling knife (code): blocked 18, ran 2, dumped 15, flat 0, open 1 (saving losses: keep it)
+- falling knife (code): blocked 18, ran 2, dumped 16, flat 0, open 0 (saving losses: keep it)
   - ran: TYGR up to 1.58x  
     CA `5wCqCq6jbppuTocMeq6zd4UywAm64L1QNNxvEDAHpump`
   - ran: LUMI up to 1.76x  
     CA `653joYuZ5EntuKd1bspZakjHdueMxHGs5Lvm7RdWpump`
-- falling knife / no higher low: blocked 17, ran 0, dumped 13, flat 2, open 2 (saving losses: keep it)
+- falling knife / no higher low: blocked 17, ran 0, dumped 14, flat 2, open 1 (saving losses: keep it)
 - crowd leaving / fading volume: blocked 15, ran 4, dumped 10, flat 0, open 1 (saving losses: keep it)
   - ran: STABLEPAD up to 2.13x  
     CA `AABM3NrYSwKMsEDyanuskY43EH6ySbPpdPZNG1u7pump`
@@ -177,11 +177,11 @@ Meta from scan_movers: crude degen humor and AI/agent tickers, and both mostly d
 ## Moving most in its scans, last 30 min (1h volume)
 - BOAR: $679,658 1h vol, $184,575 mcap, +366% 1h  
   CA `HRdx7yxRVd8cPbuYva1kzMDodtoiHCEQxWSA3Y2dpump`
-- Ape: $302,987 1h vol, $4,443 mcap, -89% 1h  
-  CA `Fo4Tz8HwQrp8wvn2pJwRRCzYcE5P1zeRHYwCtwAjpump`
-- TITTYVERSE: $216,165 1h vol, $1,938 mcap, -99% 1h  
-  CA `4rYEicv2uE1MnV6gB754MivhbXELEPRoykqTp6Mypump`
 - CRAMERSAN: $207,911 1h vol, $137,064 mcap, +240% 1h  
   CA `AhyWCaBF1U1ssTWgjFRrEvqNQdy4NsFCvLYRSJKppump`
-- BNB: $198,491 1h vol, $528,410 mcap, +18% 1h  
-  CA `EYqygbhZjP7EbM4fSn8devctnksAvPAD1Bt57XBFpump`
+- Ape: $165,634 1h vol, $3,714 mcap, -91% 1h  
+  CA `Fo4Tz8HwQrp8wvn2pJwRRCzYcE5P1zeRHYwCtwAjpump`
+- TITTYVERSE: $136,209 1h vol, $1,928 mcap, -99% 1h  
+  CA `4rYEicv2uE1MnV6gB754MivhbXELEPRoykqTp6Mypump`
+- CUM: $83,125 1h vol, $19,846 mcap, +507% 1h  
+  CA `CH4somejo6HMscqRV5JqekHC7ZPrk7eepTGRR1jvpump`
