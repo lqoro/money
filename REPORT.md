@@ -1,13 +1,13 @@
 # Trencher live report
 
-Updated 2026-10-31T00:45:42Z (paper trading, never real money)
+Updated 2026-10-31T01:00:54Z (paper trading, never real money)
 
 - Equity: $90.20 (-9.8% vs $100 start)
-- Goal: $1,000 by 2026-11-05 05:03Z (pressing for it): at 9% of it, 5.2 days left, needs +59.1% a day from here
+- Goal: $1,000 by 2026-11-05 05:03Z (pressing for it): at 9% of it, 5.2 days left, needs +59.3% a day from here
 - Closed trades: 14, 2 wins
 - Fees paid: $8.84 (axiom $1.30, network $6.14, pool $1.26), plus $1.92 lost to slippage
 - New trades: on
-- Brain: subscription, 589 calls and 1 plan-limit hits in 48h
+- Brain: subscription, 591 calls and 1 plan-limit hits in 48h
 
 ## Scorecard (after fees)
 - 14 closed, 2 won (14%), net $-9.80
@@ -74,9 +74,19 @@ Updated 2026-10-31T00:45:42Z (paper trading, never real money)
   CA `J5jxG3PFaWpj6BLEQExyC6FSqSvaTKNdQ9G3sZwBpump`
 
 ## Last scan
-- 00:44Z: 3 coins, 3 with pairs, 0 passed the market filters, 0 researched
+- 01:00Z: 7 coins, 7 with pairs, 0 passed the market filters, 0 researched
 
 ## Coins it looked at, and why it passed
+- 00:57Z Apple (MIGRATED, $622,172 mcap, $148,988 5m vol): PASS at conviction 3, PASS — chasing: 6% off the high on a +43% 5m candle at 2.9x pace, 17 minutes old. Wait for the pullback and a higher low (V1, V6).  
+  CA `6nJVg7wV1UBaWBpHuP7pEHLBd26U4cj6vXnGShobpump`
+- 00:53Z JOB (MIGRATED, $3,219,115 mcap, $4,986 5m vol): PASS at conviction 3, PASS: flow below the bar. $5k on the 5m with sellers ahead, 12% off the high, and the meta is Apple, not dogs. A clean holder table won't push the price up (V1, V6).  
+  CA `9Pq7aLAbhDG2tTnS22cm6kuysZVcZpLFE368HWuypump`
+- 00:49Z AAPL (DIP, $197,460 mcap, $20,338 5m vol): PASS at conviction 4, PASS — clean holders, real flow, but it's still printing lower 15m closes with no higher low. No-higher-low skips went 0/9. Blocker: no higher low (V1).  
+  CA `5Afz2mwDXjasvHXZHTT8anNxpec2QYdCiHHhubAWpump`
+- 00:48Z HACKINU (no setup, $5,981 mcap, $0 5m vol): REJECT, Hack story ("hack" in the name or ticker): these tend to go down, owner rule  
+  CA `HD2qqwAeLkyXnboo5cSGSdGw4oHCbvNEvWsgDSgWpump`
+- 00:48Z Leverhedge (MIGRATED, $334,572 mcap, $4,968 5m vol): PASS at conviction 3, PASS: chasing. It's 5% off a high it printed this minute, and 5m flow is $5k at 0.22x the hourly pace. Clean holders don't fix a late entry (V1, V6).  
+  CA `FWatMYieKhRuJ1yuTcmVG1njRhZWwqHwjR11pBympump`
 - 00:41Z STANK (DIP, $170,045 mcap, $3,987 5m vol): PASS at conviction 3, PASS: falling knife. STANK is sitting on its hourly low after an -18% five-minute candle, with no higher low and $4k of 5m volume. (V1, V6)  
   CA `5wsjHxT5nW5jQuVupXUNnYszF3WoWCfGGk9LMcsCJzY8`
 - 00:40Z HYPERCHAN (MIGRATED, $351,240 mcap, $10,596 5m vol): PASS at conviction 3, PASS. HYPERCHAN is 88% off its $2.98M peak, its last 5 minutes are a +116% spike, and flow is at 0.61x the hourly pace. That's a knife with a bounce on it, not a dip (V1, V6).  
@@ -87,34 +97,24 @@ Updated 2026-10-31T00:45:42Z (paper trading, never real money)
   CA `EYqygbhZjP7EbM4fSn8devctnksAvPAD1Bt57XBFpump`
 - 00:34Z AgenC (MIGRATED, $1,421,130 mcap, $14,178 5m vol): PASS at conviction 3, PASS — flow below pace: 5m volume is 0.25x the hourly pace in the 10–20% band, it's an AI-agent LARP off the meta, and 21 coins share the ticker (V1, V6, HYPERCHAN #1).  
   CA `DDG8rjV3TViCqKRQED2QZq4MEaE1uqXgEiosBNpapump`
-- 00:34Z $1 (MIGRATED, $95,746 mcap, $50,034 5m vol): PASS at conviction 3, PASS — 9 minutes old, at its high with a +70% 5m candle at 5x hourly volume. That's chasing a post-bond spike with no target to name (V1, V6).  
-  CA `dKySSjXqXMrnAaXwjEJibNq7okM4zPGudayi3vjpump`
-- 00:24Z GATO (MIGRATED, $4,670,963 mcap, $4,415 5m vol): REJECT, Dev holds 3.3% (>1%) (V13, V17)  
-  CA `HsprHxBRgiVaQdRf3TnKNuZZtaX9JUSPgMFdAkk6pump`
-- 00:23Z NETWORK (MIGRATED, $254,776 mcap, $3,717 5m vol): REJECT, Dev holds 2.2% (>1%) (V13, V17)  
-  CA `8THZ69JP2ErZuHVj4G5rcwkFfsQafp5mQsaoQReApump`
-- 00:16Z AAPLCAT (MIGRATED, $114,531 mcap, $7,898 5m vol): REJECT, Top 10 hold 27.1% ex-pool (>25%) (V13)  
-  CA `66auXVTRw9ZekMeB8h5jdJS9WhMRVz8zfMyzqeinpump`
-- 00:13Z HELL (MIGRATED, $2,887,524 mcap, $5,411 5m vol): PASS at conviction 3, PASS — 7.6% off the high right after a +20% candle, on $5.4k of 5m volume with sells ahead of buys. That's chasing a spike on thin flow (V1, V6).  
-  CA `A75Xx6SeftAmWduv9KGwb2GCjXUAhxozcCUCys9jpump`
 
 ## What its skips did next (last 48h)
 A skip "ran" if the coin reached the first target (1.5x) from the skip price before a 20% drop, "dumped" if the drop came first. Sampled every 10 min, followed 6h.
-- top 10 over 25%: blocked 42, ran 7, dumped 29, flat 2, open 4 (saving losses: keep it)
+- top 10 over 25%: blocked 42, ran 7, dumped 30, flat 2, open 3 (saving losses: keep it)
   - ran: HYPERGAMY up to 2.05x  
     CA `CUyNDWGdLPXZ3Gyj1H6TBh5pACgu5nY9WNkSqfMApump`
   - ran: Catori up to 1.52x  
     CA `FDwCosavNvMiFB812ajJp3gG7eZ9c4bpgcnY6fDQpump`
   - ran: ZERO up to 1.8x  
     CA `Ddwf94wedgCuMHAkwgti8A7sL2CxvBYJStJBj2cFpump`
-- too new / sniping: blocked 37, ran 7, dumped 29, flat 0, open 1 (saving losses: keep it)
+- too new / sniping: blocked 38, ran 7, dumped 30, flat 0, open 1 (saving losses: keep it)
   - ran: ZI up to 1.7x  
     CA `5q45EK4mRhuiuBmRYoaDs4m2xweaV7gn3zsFhsvcpump`
   - ran: BEAR up to 1.59x  
     CA `6i4ebPt8dpGchB2A1ELpTz3B72dy5DkzNpFMNtUSpump`
   - ran: HyPepe up to 1.5x  
     CA `G8TdzgpUQXQAxJvarNKPXRGv2kh9CsJDK7dCC7Xupump`
-- near the high / chasing: blocked 31, ran 6, dumped 18, flat 1, open 6 (saving losses: keep it)
+- near the high / chasing: blocked 32, ran 6, dumped 18, flat 1, open 7 (saving losses: keep it)
   - ran: OREN up to 1.58x  
     CA `57vAaMsnAJXkvULtAz7fsi6gRn3bHRJFJsJV1okNpump`
   - ran: Catori up to 1.52x  
@@ -132,7 +132,7 @@ A skip "ran" if the coin reached the first target (1.5x) from the skip price bef
   - ran: TYGR up to 1.58x  
     CA `5wCqCq6jbppuTocMeq6zd4UywAm64L1QNNxvEDAHpump`
 - dev share over 1%: blocked 14, ran 0, dumped 11, flat 1, open 2 (saving losses: keep it)
-- falling knife / no higher low: blocked 12, ran 0, dumped 9, flat 1, open 2 (saving losses: keep it)
+- falling knife / no higher low: blocked 13, ran 0, dumped 9, flat 1, open 3 (saving losses: keep it)
 - crowd leaving / fading volume: blocked 11, ran 3, dumped 6, flat 0, open 2 (saving losses: keep it)
   - ran: STABLEPAD up to 2.13x  
     CA `AABM3NrYSwKMsEDyanuskY43EH6ySbPpdPZNG1u7pump`
@@ -140,9 +140,7 @@ A skip "ran" if the coin reached the first target (1.5x) from the skip price bef
     CA `BzndCZ2ZrjUA21aVW7t6AWEENRAps3EmdQg9hf94pump`
   - ran: AXIO up to 1.51x  
     CA `3mUcXkpVVkQ5ZJMctz2f1VBk4rwu3NRfNwVQZtDzpump`
-- hack story (owner rule): blocked 9, ran 1, dumped 3, flat 4, open 1 (saving losses: keep it)
-  - ran: HACKINU up to 1.51x  
-    CA `HD2qqwAeLkyXnboo5cSGSdGw4oHCbvNEvWsgDSgWpump`
+- hack story (owner rule): blocked 9, ran 0, dumped 3, flat 4, open 2 (saving losses: keep it)
 - vamp / copycat: blocked 7, ran 1, dumped 6, flat 0, open 0 (saving losses: keep it)
   - ran: Hedge up to 1.78x  
     CA `7eQagAYSYYhRqRZF5L97Ku8AK94TEpsmnrrsssUkpump`
@@ -175,11 +173,11 @@ The meta is Apple and "i-" brand memes on fresh pump.fun launches. AAPLCAT ($115
 ## Moving most in its scans, last 30 min (1h volume)
 - AgenC: $687,607 1h vol, $1,421,130 mcap, +153% 1h  
   CA `DDG8rjV3TViCqKRQED2QZq4MEaE1uqXgEiosBNpapump`
-- Nvidia: $650,581 1h vol, $1,873 mcap, -96% 1h  
-  CA `EjKydyBwN4rTasguqvakwfarAxxsYUCivqMP95arpump`
-- George: $311,877 1h vol, $16,473 mcap, -58% 1h  
+- Apple: $607,416 1h vol, $622,172 mcap, +1190% 1h  
+  CA `6nJVg7wV1UBaWBpHuP7pEHLBd26U4cj6vXnGShobpump`
+- Leverhedge: $269,265 1h vol, $334,572 mcap, +141% 1h  
+  CA `FWatMYieKhRuJ1yuTcmVG1njRhZWwqHwjR11pBympump`
+- AAPL: $244,326 1h vol, $197,460 mcap, +96% 1h  
+  CA `5Afz2mwDXjasvHXZHTT8anNxpec2QYdCiHHhubAWpump`
+- George: $229,587 1h vol, $13,095 mcap, -75% 1h  
   CA `4poKLzPuwjKJgXM6eF3EqBbMzWgkapi96vbNSkZipump`
-- NATIONS: $230,183 1h vol, $6,266 mcap, -83% 1h  
-  CA `5ahor7yZ9EdXLzfS43aEPsfBsLtgocsi5sGc2Rsa58PG`
-- AAPLCAT: $214,981 1h vol, $114,531 mcap, +27% 1h  
-  CA `66auXVTRw9ZekMeB8h5jdJS9WhMRVz8zfMyzqeinpump`
