@@ -1,13 +1,13 @@
 # Trencher live report
 
-Updated 2026-10-31T15:39:48Z (paper trading, never real money)
+Updated 2026-10-31T15:54:55Z (paper trading, never real money)
 
 - Equity: $90.20 (-9.8% vs $100 start)
-- Goal: $1,000 by 2026-11-05 05:03Z (pressing for it): at 9% of it, 4.6 days left, needs +69.5% a day from here
+- Goal: $1,000 by 2026-11-05 05:03Z (pressing for it): at 9% of it, 4.5 days left, needs +69.7% a day from here
 - Closed trades: 14, 2 wins
 - Fees paid: $8.84 (axiom $1.30, network $6.14, pool $1.26), plus $1.92 lost to slippage
 - New trades: on
-- Brain: subscription, 653 calls and 1 plan-limit hits in 48h
+- Brain: subscription, 655 calls and 1 plan-limit hits in 48h
 
 ## Scorecard (after fees)
 - 14 closed, 2 won (14%), net $-9.80
@@ -74,40 +74,40 @@ Updated 2026-10-31T15:39:48Z (paper trading, never real money)
   CA `J5jxG3PFaWpj6BLEQExyC6FSqSvaTKNdQ9G3sZwBpump`
 
 ## Last scan
-- 15:38Z: 4 coins, 2 with pairs, 0 passed the market filters, 0 researched
+- 15:54Z: 3 coins, 1 with pairs, 1 passed the market filters, 1 researched
 
 ## Coins it looked at, and why it passed
+- 15:54Z HALLOWTRUMP (MIGRATED, $440,471 mcap, $266,360 5m vol): PASS at conviction 3, PASS: 8 minutes old, 5m volume at 6.5x the hourly pace, no socials. That's a bond spike, not a base. Blocker: too new / spike chasing (V1).  
+  CA `5kCcoN8Xy2tPWEYi7pGLCxym5kmh3znMT3odrhWvpump`
+- 15:53Z Pikmin (DIP, $82,695 mcap, $9,637 5m vol): REJECT, Dip with fading attention is a falling knife, not a dip (5m at 0.41x the hour's pace, under 0.6x)  
+  CA `2MXhpKgHBREgYYj3bSdorqbuJjkPAve1LTNHtk8Lpump`
+- 15:48Z Leverhedge (DIP, $870,478 mcap, $5,508 5m vol): PASS at conviction 3, PASS — clean holders, but no higher low: price is 3% above the hourly low and still printing lower closes. Falling knife. (V1)  
+  CA `FWatMYieKhRuJ1yuTcmVG1njRhZWwqHwjR11pBympump`
+- 15:47Z AgenC (MIGRATED, $104,287 mcap, $2,211 5m vol): PASS at conviction 2, PASS: down 95.5% from the peak with 5m volume at 0.46x the hourly pace, an AI LARP with no GitHub. The story is dead and there's no higher low (V1, V6).  
+  CA `DDG8rjV3TViCqKRQED2QZq4MEaE1uqXgEiosBNpapump`
+- 15:46Z DOOT (MIGRATED, $35,407 mcap, $9,088 5m vol): REJECT, Dev holds 5.0% (>1%) (V13, V17)  
+  CA `FjGgvvpS7b7wBjGiRwhb6DhmChaScsTZZvGNdyifpump`
+- 15:45Z BNB (MIGRATED, $399,516 mcap, $20,882 5m vol): PASS at conviction 2, PASS: this is a Binance-hack parody ("hot wallet got cooked", "withdrawals paused") and it's 80% off its peak. Hack story, owner rule, no debate.  
+  CA `EYqygbhZjP7EbM4fSn8devctnksAvPAD1Bt57XBFpump`
+- 15:43Z cat (FINAL_STRETCH, $31,832 mcap, $20,980 5m vol): PASS at conviction 3, PASS: chasing. The last 5m candle is +33% at 3.7x the hourly pace, on a generic "cat" ticker with 7 bigger coins ahead of it and top 10 at 22.6%. Wait for the bond and a higher low (V1, V3, V6).  
+  CA `AsoY1yi6SKfjAhv2xJtxQhNVEgEqB3FadRBT1AMFpump`
+- 15:41Z JOB (MIGRATED, $3,196,222 mcap, $2,274 5m vol): PASS at conviction 3, PASS: $2.3k on the 5m, sellers outnumber buyers 2:1, and it's sitting in the shallow band. Holders are clean but nobody's buying. Blocker: "flow below pace" (V1, V6).  
+  CA `9Pq7aLAbhDG2tTnS22cm6kuysZVcZpLFE368HWuypump`
 - 15:29Z LIBER (FINAL_STRETCH, $20,417 mcap, $5,387 5m vol): PASS at conviction 2, PASS: RugCheck didn't load, so holders, dev share and bundles are all blind on a $20k bonding-curve coin. It pitches itself as AI tech but shows no GitHub, and the 5m is only $5.4k. (V1, V13, V17)  
   CA `AqtAQxLmzoQFJNdxgZN5BLxzYeGuVJNWc2riYCRDpump`
 - 15:28Z SI (MIGRATED, $185,327 mcap, $15,831 5m vol): PASS at conviction 2, PASS: RugCheck didn't load on a 14-minute-old coin that sits 11% off its high, and its 5m flow is 0.75x the hourly pace. That's a blind entry into a fresh migration with fading flow. (V1, V6, V13)  
   CA `64vVGiNa4MefL4rq3mHzLiq8APfyc8iWLbumsFNfpump`
-- 15:26Z whitepaper (MIGRATED, $144,900 mcap, $44,547 5m vol): PASS at conviction 2, PASS: 12 minutes old, 5% off the high, right after a +65% five-minute candle, and RugCheck didn't load. I'd be the exit liquidity on a spike (V1, V6).  
-  CA `4tEvXHpd6JrCWJGByBS3qFBAtJbeoiEpgvWLw9hkpump`
-- 15:24Z billy (FINAL_STRETCH, $25,122 mcap, $75,778 5m vol): PASS at conviction 2, PASS — 5.5-minute-old curve coin up 104% in 5m at 11x the hourly pace, RugCheck didn't load, and 14 bigger coins share the ticker. Blocker: chasing a spike (V1, V3).  
-  CA `DUTxGHL2LmpfjQaoK6LdZp8WQPoDiwvtDHVDf4fMpump`
-- 15:19Z UNSAFU (MIGRATED, $205,575 mcap, $3,511 5m vol): REJECT, RugCheck report unavailable: can't verify mint/freeze/holders, skip  
-  CA `4eq4JfnpdgqZTzeyR3GnRGHJQ3QhQT6Lp7nKnQ2nS7Rv`
-- 15:19Z GATO (MIGRATED, $6,540,465 mcap, $6,298 5m vol): PASS at conviction 3, PASS: 13% off the high with $6.3k on the 5m at 0.71x hourly pace and sellers ahead 45 to 30. Shallow band needs $10k and at least the hourly pace. Blocker: flow below pace (V1, V6).  
-  CA `HsprHxBRgiVaQdRf3TnKNuZZtaX9JUSPgMFdAkk6pump`
-- 15:19Z SIS (MIGRATED, $409,250 mcap, $124,195 5m vol): PASS at conviction 3, PASS — 11 minutes old, last 5m candle +36% at 4.5x the hourly pace, RugCheck didn't load. That's chasing a spike. (V1, V6)  
-  CA `8S49oCFR9Shcvibo42fJft2GH3X5rKgcFisZ57jopump`
-- 15:07Z PUMPE (DIP, $80,649 mcap, $12,661 5m vol): PASS at conviction 3, PASS — 68% dip with 5m at 0.61x hourly pace and 50/50 buys, no higher low, RugCheck blind. Crowd's leaving. (V1, V6)  
-  CA `7Nr1NvVdsczHyLsVT1z3uAJ1tLBL7n6PkP8fYkFbpump`
-- 15:07Z Pikmin (MIGRATED, $140,147 mcap, $26,574 5m vol): PASS at conviction 3, PASS: flow is below pace. 5m volume is only 0.55x the hourly average in the shallow band, RugCheck didn't load, and the prior high is just 1.2x away. Watchlist it. (V1, V6, V13)  
-  CA `2MXhpKgHBREgYYj3bSdorqbuJjkPAve1LTNHtk8Lpump`
-- 15:03Z UNSAFU (DIP, $171,509 mcap, $3,086 5m vol): REJECT, RugCheck report unavailable: can't verify mint/freeze/holders, skip  
-  CA `4eq4JfnpdgqZTzeyR3GnRGHJQ3QhQT6Lp7nKnQ2nS7Rv`
 
 ## What its skips did next (last 48h)
 A skip "ran" if the coin reached the first target (1.5x) from the skip price before a 20% drop, "dumped" if the drop came first. Sampled every 10 min, followed 6h.
-- too new / sniping: blocked 54, ran 7, dumped 47, flat 0, open 0 (saving losses: keep it)
+- too new / sniping: blocked 55, ran 7, dumped 47, flat 0, open 1 (saving losses: keep it)
   - ran: ZI up to 1.7x  
     CA `5q45EK4mRhuiuBmRYoaDs4m2xweaV7gn3zsFhsvcpump`
   - ran: BEAR up to 1.59x  
     CA `6i4ebPt8dpGchB2A1ELpTz3B72dy5DkzNpFMNtUSpump`
   - ran: HyPepe up to 1.5x  
     CA `G8TdzgpUQXQAxJvarNKPXRGv2kh9CsJDK7dCC7Xupump`
-- near the high / chasing: blocked 43, ran 8, dumped 29, flat 3, open 3 (saving losses: keep it)
+- near the high / chasing: blocked 43, ran 8, dumped 29, flat 4, open 2 (saving losses: keep it)
   - ran: DESSA up to 1.52x  
     CA `npz2FhoufQ7pKqhGpaipYWacrAkidyW2yDpVWSvpump`
   - ran: Catori up to 1.52x  
@@ -121,10 +121,12 @@ A skip "ran" if the coin reached the first target (1.5x) from the skip price bef
     CA `FDwCosavNvMiFB812ajJp3gG7eZ9c4bpgcnY6fDQpump`
   - ran: ZERO up to 1.8x  
     CA `Ddwf94wedgCuMHAkwgti8A7sL2CxvBYJStJBj2cFpump`
-- RugCheck didn't load: blocked 29, ran 1, dumped 18, flat 1, open 9 (saving losses: keep it)
+- RugCheck didn't load: blocked 27, ran 2, dumped 17, flat 1, open 7 (saving losses: keep it)
   - ran: billy up to 3.75x  
     CA `DUTxGHL2LmpfjQaoK6LdZp8WQPoDiwvtDHVDf4fMpump`
-- falling knife (code): blocked 21, ran 2, dumped 19, flat 0, open 0 (saving losses: keep it)
+  - ran: whitepaper up to 2.16x  
+    CA `4tEvXHpd6JrCWJGByBS3qFBAtJbeoiEpgvWLw9hkpump`
+- falling knife (code): blocked 22, ran 2, dumped 19, flat 0, open 1 (saving losses: keep it)
   - ran: TYGR up to 1.58x  
     CA `5wCqCq6jbppuTocMeq6zd4UywAm64L1QNNxvEDAHpump`
   - ran: LUMI up to 1.76x  
@@ -136,7 +138,7 @@ A skip "ran" if the coin reached the first target (1.5x) from the skip price bef
     CA `2orqEGSdkm5BMmhdM8TpKCpACk32a3Zaj3Lef7ceqsc6`
   - ran: Bear up to 2.66x  
     CA `Dv6gYYkTav8Pm36UwAywxNCccwSZV1VL1tjiSpDLpump`
-- falling knife / no higher low: blocked 15, ran 0, dumped 13, flat 2, open 0 (saving losses: keep it)
+- falling knife / no higher low: blocked 17, ran 0, dumped 13, flat 2, open 2 (saving losses: keep it)
 - crowd leaving / fading volume: blocked 14, ran 4, dumped 10, flat 0, open 0 (saving losses: keep it)
   - ran: STABLEPAD up to 2.13x  
     CA `AABM3NrYSwKMsEDyanuskY43EH6ySbPpdPZNG1u7pump`
@@ -144,10 +146,10 @@ A skip "ran" if the coin reached the first target (1.5x) from the skip price bef
     CA `BzndCZ2ZrjUA21aVW7t6AWEENRAps3EmdQg9hf94pump`
   - ran: AXIO up to 1.51x  
     CA `3mUcXkpVVkQ5ZJMctz2f1VBk4rwu3NRfNwVQZtDzpump`
+- dev share over 1%: blocked 12, ran 0, dumped 10, flat 1, open 1 (saving losses: keep it)
 - hack story (owner rule): blocked 12, ran 1, dumped 4, flat 6, open 1 (saving losses: keep it)
   - ran: ACT:H up to 1.53x  
     CA `3B3SJFo8kvVoMvvkzrUCPdpDeSeCL773AJ3kNLWJpump`
-- dev share over 1%: blocked 11, ran 0, dumped 10, flat 1, open 0 (saving losses: keep it)
 
 ## Rules it changed from results and skips
 - 10-31 07:15Z added: Press the proven setup: meta/vamp leader 25-45% off the high, with a higher low, clean holders and 5m at or above pace, rated 8-9; any clean pass with flow and a target rated at least 7 (Both wins were exactly this pattern: CATBOT +93.8% (4.44x peak) and FLOATER +50.5% (2.19x), both 34-38% off the high with clean holders. The owner wants clean setups rated 8-9 so code sizes them up.)
@@ -172,25 +174,26 @@ A skip "ran" if the coin reached the first target (1.5x) from the skip price bef
 - [2026-10-30 21:37] Expected PILLSEY, the flow leader in the pump.fun meta at $125k 5m, to break its $414k high toward 1.5x; it peaked at 1.32x, never reached initials, fell back through the -20% stop inside 18 minutes, and the half-hold on review only made the loss bigger (-31%). It sat about 20% under the high, so it passed my pullback rule, but I bought right after a +31% five-minute candle at 4.2x the hourly pace, which is chasing a spike, not buying a pullback (V1, V6), and it fits my "near-high skips mostly dump" data. Next time a coin that is up more than ~25% in the last 5 minutes counts as "chasing" even if it's 20% off the high: wait for that candle to retrace and a higher low to form. And once a trade has hit ~1.3x, an early-shakeout stop review sells all of it instead of trimming half.
 
 ## Meta right now
-The crawler's meta_summary doesn't match these movers. It talks about RAM, BNB and AgenC, and none of them are in scan_movers, so I'm ignoring it. The real meta is minutes-old pump.fun launches running hard: PUMPE (0.3h, $191k, +374%), Pikmin (0.1h, $37k, $54.6k on the 5m) and MEGA (0.2h, still on the curve, $18k 5m, +345%). There's a smaller game-IP lane too, Pikmin plus GATO (GTA6 cat), and "IP Meme" is trending on CoinGecko. Three things are fading hard: AI/tech-name launches (SI -94%, SIS -58%, SamsungChan -99%), crude/NSFW coins (NIL dead, BOOBA $1.5k 5m) and the Binance-hack noise. UNSAFU has $163 of 5m volume and is blocked in code anyway.
+The meta is minutes-old pump.fun launches running hard, plus a vamp fight over the same ticker. whitepaper (0.2h, $145k, $44.5k on the 5m, 0.78 buy ratio), Just a cat (0.3h, still on the curve at $32k, $21k 5m, +1051%), billy on the curve ($25k, $75.8k 5m) and DOOT (0.1h) show it. The other theme is AI/tech names, and they're splitting. whitepaper is surging, SI ("suicidal intelligence") is still running at $15.8k 5m but buyers are only at 0.51, and the older ones are bleeding: AgenC -30% with $2.2k on the 5m, Leverhedge -47%. Halloween Inu is down 98% on Halloween itself, so that holiday play is long over (V5). The crawler's meta_summary names PUMPE, Pikmin and MEGA, and none of them are in these movers, so I'm ignoring it along with the hack/LAPTOP headlines. Hunter Biden's coin is a political-figure coin and that's a hard line anyway (V13).
 
-Setups I'd research now, in order:
-- **Pikmin**, MIGRATED (V1 strategy 3). Real 5m flow and a fresh IP meme. It's six minutes old, so I'm only buying from 10%+ off the local high, and only if holders and bundles come back clean and it's the original Pikmin, not a vamp (V1, V3).
-- **MEGA**, FINAL_STRETCH (V1). It has $18k on the 5m, but "MegaPump" is a low-effort ticker. I'll watch for the pre-bond dump and what the top 50 holders do.
-- **DESSA**. It's still climbing (+34%, $45k 5m), but at $22.5M it's above the ~$11M V6 range, so the upside is thinner.
+Setups to research now:
+1. **whitepaper**, MIGRATED (V1 strategy 3). Strongest flow on the board: 5m volume is about 2.6x its hourly pace with real buy pressure. It's a tech-word ticker, so I'll check it isn't pretending to have a product (LARP, V1). I only buy from 10% or more off the local high.
+2. **cat**, FINAL_STRETCH (V1). It's a simple, broad animal meme with $21k on the 5m. I'll watch the pre-bond dump and what the top 50 holders do.
+3. **billy** on the curve, only if it turns out to be the original. There's an older migrated billy that's down 80% at $9k, so this is a vamp situation and I need to know which one is real first (V1, V3).
 
-PASS on PUMPE for now. Blocker: 5m volume of $8.4k is about 0.4x its hourly pace and buyers are at 0.48, so the spike is cooling.
+PASS on DESSA. Blocker: at $24M it's above the ~$11M V6 range, and it's -5% on the hour.
+PASS on BNB for now. Blocker: it's up 35% on the hour, so it isn't a dip, and the crude name fits a lane that's been fading.
 
-Owner's note: I'll press on clean setups, but conviction comes from what the checks find, not from the Nov 5 target. The hard lines don't move.
+Owner's push noted. Clean setups can earn an 8, but only if the checks come back clean. The deadline doesn't lower the bar.
 
 ## Moving most in its scans, last 30 min (1h volume)
-- DESSA: $1,129,668 1h vol, $26,823,164 mcap, +16% 1h  
+- DESSA: $1,017,186 1h vol, $24,403,177 mcap, -5% 1h  
   CA `npz2FhoufQ7pKqhGpaipYWacrAkidyW2yDpVWSvpump`
-- SIS: $330,871 1h vol, $409,250 mcap, +754% 1h  
-  CA `8S49oCFR9Shcvibo42fJft2GH3X5rKgcFisZ57jopump`
-- billy: $291,263 1h vol, $24,649 mcap, -46% 1h  
+- HALLOWTRUMP: $487,831 1h vol, $440,471 mcap, +736% 1h  
+  CA `5kCcoN8Xy2tPWEYi7pGLCxym5kmh3znMT3odrhWvpump`
+- billy: $325,304 1h vol, $6,212 mcap, -86% 1h  
   CA `GL7LbqwtKE6rxzzoJk5D9eD1Morp5kvESQen1ANfpump`
+- Pikmin: $283,077 1h vol, $82,695 mcap, -36% 1h  
+  CA `2MXhpKgHBREgYYj3bSdorqbuJjkPAve1LTNHtk8Lpump`
 - SI: $254,450 1h vol, $185,327 mcap, +360% 1h  
   CA `64vVGiNa4MefL4rq3mHzLiq8APfyc8iWLbumsFNfpump`
-- whitepaper: $203,420 1h vol, $144,900 mcap, +152% 1h  
-  CA `4tEvXHpd6JrCWJGByBS3qFBAtJbeoiEpgvWLw9hkpump`
