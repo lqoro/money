@@ -1,13 +1,13 @@
 # Trencher live report
 
-Updated 2026-10-31T14:24:03Z (paper trading, never real money)
+Updated 2026-10-31T14:39:12Z (paper trading, never real money)
 
 - Equity: $90.20 (-9.8% vs $100 start)
-- Goal: $1,000 by 2026-11-05 05:03Z (pressing for it): at 9% of it, 4.6 days left, needs +68.5% a day from here
+- Goal: $1,000 by 2026-11-05 05:03Z (pressing for it): at 9% of it, 4.6 days left, needs +68.7% a day from here
 - Closed trades: 14, 2 wins
 - Fees paid: $8.84 (axiom $1.30, network $6.14, pool $1.26), plus $1.92 lost to slippage
 - New trades: on
-- Brain: subscription, 651 calls and 1 plan-limit hits in 48h
+- Brain: subscription, 652 calls and 1 plan-limit hits in 48h
 
 ## Scorecard (after fees)
 - 14 closed, 2 won (14%), net $-9.80
@@ -74,9 +74,17 @@ Updated 2026-10-31T14:24:03Z (paper trading, never real money)
   CA `J5jxG3PFaWpj6BLEQExyC6FSqSvaTKNdQ9G3sZwBpump`
 
 ## Last scan
-- 14:23Z: 1 coins, 0 with pairs, 0 passed the market filters, 0 researched
+- 14:38Z: 6 coins, 4 with pairs, 0 passed the market filters, 0 researched
 
 ## Coins it looked at, and why it passed
+- 14:36Z UNSAFU (MIGRATED, $238,012 mcap, $2,035 5m vol): REJECT, RugCheck report unavailable: can't verify mint/freeze/holders, skip  
+  CA `4eq4JfnpdgqZTzeyR3GnRGHJQ3QhQT6Lp7nKnQ2nS7Rv`
+- 14:33Z GATO (MIGRATED, $6,148,824 mcap, $2,698 5m vol): PASS at conviction 2, PASS — 7% off the high with $2.7k on the 5m at 0.59x pace and sellers in control. That's chasing a dead tape. (V1, V6)  
+  CA `HsprHxBRgiVaQdRf3TnKNuZZtaX9JUSPgMFdAkk6pump`
+- 14:31Z UNSAFU (MIGRATED, $245,743 mcap, $3,717 5m vol): REJECT, RugCheck report unavailable: can't verify mint/freeze/holders, skip  
+  CA `4eq4JfnpdgqZTzeyR3GnRGHJQ3QhQT6Lp7nKnQ2nS7Rv`
+- 14:25Z UNSAFU (MIGRATED, $212,381 mcap, $3,289 5m vol): REJECT, RugCheck report unavailable: can't verify mint/freeze/holders, skip  
+  CA `4eq4JfnpdgqZTzeyR3GnRGHJQ3QhQT6Lp7nKnQ2nS7Rv`
 - 14:22Z PUMPE (MIGRATED, $190,943 mcap, $8,434 5m vol): PASS at conviction 2, PASS: last 5m candle is up 33% while 5m volume runs at 0.41x the hourly pace. That's a spike on fading flow, 20 minutes after migration. Chasing. (V1, V6)  
   CA `7Nr1NvVdsczHyLsVT1z3uAJ1tLBL7n6PkP8fYkFbpump`
 - 14:21Z Pikmin (MIGRATED, $37,435 mcap, $54,597 5m vol): PASS at conviction 3, PASS: Pikmin is 4 minutes past migration, 32% off a bond spike, holder data is blank and 26 other coins share the ticker. Blocker: too new, unverified. (V1, V3, V13)  
@@ -89,25 +97,17 @@ Updated 2026-10-31T14:24:03Z (paper trading, never real money)
   CA `DDG8rjV3TViCqKRQED2QZq4MEaE1uqXgEiosBNpapump`
 - 14:13Z BNB (MIGRATED, $306,733 mcap, $6,698 5m vol): PASS at conviction 2, PASS — it's a Binance hot-wallet hack parody ("withdrawals paused"), 85% off the peak with 5m volume at 0.66x the hourly pace. Hack story, falling knife. (owner rule, V1, V6)  
   CA `EYqygbhZjP7EbM4fSn8devctnksAvPAD1Bt57XBFpump`
-- 14:12Z RAM (DIP, $98,148 mcap, $2,008 5m vol): REJECT, Dip with fading attention is a falling knife, not a dip (5m at 0.24x the hour's pace, under 0.6x)  
-  CA `6QUHcqYuiPRHxhnYZoygewXtNQr9kUrhc9Tmwgtbpump`
-- 14:10Z Pump (MIGRATED, $41,205 mcap, $6,787 5m vol): PASS at conviction 2, PASS: 90 seconds old, a generic "Pump" ticker shared by 18 bigger coins, $6.8k on the 5m and no holder data. Blocker: too new (V1, V3).  
-  CA `Bfmv23dJU5pVMREZT2upmj2Vp1f47HXvm1REenM5pump`
-- 14:09Z UNSAFU (MIGRATED, $208,707 mcap, $9,795 5m vol): REJECT, RugCheck report unavailable: can't verify mint/freeze/holders, skip  
-  CA `4eq4JfnpdgqZTzeyR3GnRGHJQ3QhQT6Lp7nKnQ2nS7Rv`
-- 14:08Z WatchLarp (FINAL_STRETCH, $35,828 mcap, $2,727 5m vol): PASS at conviction 2, PASS: RugCheck didn't load, so holders and bundles are blind. On top of that it's sitting at the high on $2.7k of 5m flow, and a bigger coin shares the ticker. (V1, V3, V6)  
-  CA `HjnxqCT5v4xqcuwD2ezJFwNGeMq6pVbiFvBgmPUcpump`
 
 ## What its skips did next (last 48h)
 A skip "ran" if the coin reached the first target (1.5x) from the skip price before a 20% drop, "dumped" if the drop came first. Sampled every 10 min, followed 6h.
-- too new / sniping: blocked 55, ran 7, dumped 47, flat 0, open 1 (saving losses: keep it)
+- too new / sniping: blocked 55, ran 8, dumped 47, flat 0, open 0 (saving losses: keep it)
   - ran: ZI up to 1.7x  
     CA `5q45EK4mRhuiuBmRYoaDs4m2xweaV7gn3zsFhsvcpump`
   - ran: BEAR up to 1.59x  
     CA `6i4ebPt8dpGchB2A1ELpTz3B72dy5DkzNpFMNtUSpump`
   - ran: HyPepe up to 1.5x  
     CA `G8TdzgpUQXQAxJvarNKPXRGv2kh9CsJDK7dCC7Xupump`
-- near the high / chasing: blocked 46, ran 9, dumped 28, flat 3, open 6 (saving losses: keep it)
+- near the high / chasing: blocked 46, ran 9, dumped 28, flat 4, open 5 (saving losses: keep it)
   - ran: DESSA up to 1.52x  
     CA `npz2FhoufQ7pKqhGpaipYWacrAkidyW2yDpVWSvpump`
   - ran: OREN up to 1.58x  
@@ -121,7 +121,7 @@ A skip "ran" if the coin reached the first target (1.5x) from the skip price bef
     CA `FDwCosavNvMiFB812ajJp3gG7eZ9c4bpgcnY6fDQpump`
   - ran: ZERO up to 1.8x  
     CA `Ddwf94wedgCuMHAkwgti8A7sL2CxvBYJStJBj2cFpump`
-- RugCheck didn't load: blocked 23, ran 0, dumped 14, flat 1, open 8 (saving losses: keep it)
+- RugCheck didn't load: blocked 23, ran 0, dumped 13, flat 1, open 9 (saving losses: keep it)
 - falling knife (code): blocked 20, ran 2, dumped 17, flat 0, open 1 (saving losses: keep it)
   - ran: TYGR up to 1.58x  
     CA `5wCqCq6jbppuTocMeq6zd4UywAm64L1QNNxvEDAHpump`
@@ -135,7 +135,7 @@ A skip "ran" if the coin reached the first target (1.5x) from the skip price bef
   - ran: Bear up to 2.66x  
     CA `Dv6gYYkTav8Pm36UwAywxNCccwSZV1VL1tjiSpDLpump`
 - falling knife / no higher low: blocked 15, ran 0, dumped 12, flat 2, open 1 (saving losses: keep it)
-- crowd leaving / fading volume: blocked 15, ran 4, dumped 10, flat 0, open 1 (saving losses: keep it)
+- crowd leaving / fading volume: blocked 15, ran 4, dumped 10, flat 1, open 0 (saving losses: keep it)
   - ran: STABLEPAD up to 2.13x  
     CA `AABM3NrYSwKMsEDyanuskY43EH6ySbPpdPZNG1u7pump`
   - ran: HYDESK up to 1.78x  
@@ -177,13 +177,13 @@ The one setup I'd research now is RAM as MIGRATED (V1/V6). Volume is really arri
 PASS on BNB as a DIP, blocker: 5m volume of $6.6k is 0.48x its hourly average, under the 0.7x gate and the $10k bar (V6). PASS on AgenC and Leverhedge, blocker: 5m volume under $10k, and I'd want proof of a product before buying an AI name (V1). PASS on NIL, blocker: it's down 95% at $1.8k market cap, nothing to buy (V1). PASS on WatchLarp and HYPORT, blocker: 5m volume of $2.6k and $1.2k is under the $10k bar (V1, V6). $LAPTOP stays off-limits because a political figure pushed it (V13). I'll press on clean coins as you asked, but the hard lines don't move.
 
 ## Moving most in its scans, last 30 min (1h volume)
-- 삼성찬: $418,276 1h vol, $87,776 mcap, -34% 1h  
-  CA `8WNQQvdcPaNMn6mJLpT64SEMBoDFyjKsHmbB5tknpump`
-- Hallowinu: $344,901 1h vol, $181,776 mcap, +309% 1h  
-  CA `5YREyyZig2rjst2rZv5e5UtNqP5FrWSjCdPNMcm7pump`
-- DESSA: $267,810 1h vol, $20,343,534 mcap, +26% 1h  
+- DESSA: $505,166 1h vol, $23,227,767 mcap, +45% 1h  
   CA `npz2FhoufQ7pKqhGpaipYWacrAkidyW2yDpVWSvpump`
 - PUMPE: $248,959 1h vol, $190,943 mcap, +374% 1h  
   CA `7Nr1NvVdsczHyLsVT1z3uAJ1tLBL7n6PkP8fYkFbpump`
-- UNSAFU: $130,310 1h vol, $180,909 mcap, +77% 1h  
-  CA `4eq4JfnpdgqZTzeyR3GnRGHJQ3QhQT6Lp7nKnQ2nS7Rv`
+- BNB: $122,010 1h vol, $306,733 mcap, -16% 1h  
+  CA `EYqygbhZjP7EbM4fSn8devctnksAvPAD1Bt57XBFpump`
+- NUTS: $121,068 1h vol, $3,581 mcap, -25% 1h  
+  CA `DUDzd9LHATPcvdLLBZsKUPu7HMx4SYt25Wj6XjLspump`
+- RAM: $98,985 1h vol, $98,148 mcap, +77% 1h  
+  CA `6QUHcqYuiPRHxhnYZoygewXtNQr9kUrhc9Tmwgtbpump`
