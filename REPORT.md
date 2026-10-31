@@ -1,13 +1,13 @@
 # Trencher live report
 
-Updated 2026-10-31T13:23:13Z (paper trading, never real money)
+Updated 2026-10-31T13:38:21Z (paper trading, never real money)
 
 - Equity: $90.20 (-9.8% vs $100 start)
-- Goal: $1,000 by 2026-11-05 05:03Z (pressing for it): at 9% of it, 4.7 days left, needs +67.7% a day from here
+- Goal: $1,000 by 2026-11-05 05:03Z (pressing for it): at 9% of it, 4.6 days left, needs +67.9% a day from here
 - Closed trades: 14, 2 wins
 - Fees paid: $8.84 (axiom $1.30, network $6.14, pool $1.26), plus $1.92 lost to slippage
 - New trades: on
-- Brain: subscription, 643 calls and 1 plan-limit hits in 48h
+- Brain: subscription, 644 calls and 1 plan-limit hits in 48h
 
 ## Scorecard (after fees)
 - 14 closed, 2 won (14%), net $-9.80
@@ -74,9 +74,17 @@ Updated 2026-10-31T13:23:13Z (paper trading, never real money)
   CA `J5jxG3PFaWpj6BLEQExyC6FSqSvaTKNdQ9G3sZwBpump`
 
 ## Last scan
-- 13:22Z: 3 coins, 3 with pairs, 0 passed the market filters, 0 researched
+- 13:37Z: 4 coins, 4 with pairs, 0 passed the market filters, 0 researched
 
 ## Coins it looked at, and why it passed
+- 13:31Z Leverhedge (MIGRATED, $1,177,714 mcap, $4,839 5m vol): PASS at conviction 3, PASS — flow below pace: 11.5% off the high in the shallow band with $4.8k 5m at 0.72x pace, and 9.7k sells vs 1.1k buys in the last hour. That's distribution, not a pullback. (V1, V6)  
+  CA `FWatMYieKhRuJ1yuTcmVG1njRhZWwqHwjR11pBympump`
+- 13:30Z AgenC (MIGRATED, $300,421 mcap, $6,992 5m vol): PASS at conviction 2, PASS: 87% off peak, past my 75% dip limit, an AI-agent LARP with no GitHub, and 10 bigger coins share the ticker. Blocker: dead story. (V1, V3, V6)  
+  CA `DDG8rjV3TViCqKRQED2QZq4MEaE1uqXgEiosBNpapump`
+- 13:28Z BNB (MIGRATED, $292,124 mcap, $6,565 5m vol): PASS at conviction 1, PASS — Binance-hack parody ("hot wallet got cooked"), 85% off peak with volume at 0.48x the hourly pace. Hack story plus falling knife. (Owner hack rule, V1, V6)  
+  CA `EYqygbhZjP7EbM4fSn8devctnksAvPAD1Bt57XBFpump`
+- 13:27Z RAM (MIGRATED, $111,212 mcap, $14,567 5m vol): PASS at conviction 3, PASS: chasing. 2.3% off the high right after a +89.6% 5m candle at 7.2x the hourly pace, with holders unchecked. (V1, V6)  
+  CA `6QUHcqYuiPRHxhnYZoygewXtNQr9kUrhc9Tmwgtbpump`
 - 13:19Z Jason (MIGRATED, $131,723 mcap, $2,535 5m vol): PASS at conviction 2, PASS: chasing. It's sitting on its own high after a +22.6% five-minute candle on $2.5k of volume, and I can't see the holders. (V1, V6)  
   CA `3qjBR3LfzEAKVS6QXuR2QZ1RFUsXzATWvmjbGB5Dpump`
 - 13:18Z GLITCH (MIGRATED, $3,279,896 mcap, $2,830 5m vol): PASS at conviction 3, PASS — RugCheck didn't load and the 5m tape is $2.8k with sellers leading. Unverified holders plus no flow is a pass (V6, V13).  
@@ -89,14 +97,6 @@ Updated 2026-10-31T13:23:13Z (paper trading, never real money)
   CA `Ad8SiRpUR3FvX2J4zurzmsR5ueVSb8sfR8TAZU5Upump`
 - 13:05Z AMAZON (MIGRATED, $804,632 mcap, $2,838 5m vol): PASS at conviction 2, PASS — AMAZON is at its high (0% drawdown, +104% in 1h) on $2.8k 5m with RugCheck dark. Blockers: chasing and holders unverified (V1, V6, V13).  
   CA `9L2FD9gNEu8h9NdD9VqRWCqhNgh1UznG8Ve7VZWpump`
-- 13:02Z GATO (MIGRATED, $5,401,300 mcap, $10,386 5m vol): PASS at conviction 3, PASS — flow below pace (0.69x hourly in the shallow band), sellers outnumber buyers 241 to 216, and RugCheck didn't load. A tired old cat. (V6, V13)  
-  CA `HsprHxBRgiVaQdRf3TnKNuZZtaX9JUSPgMFdAkk6pump`
-- 13:01Z NIL (MIGRATED, $158,552 mcap, $34,156 5m vol): PASS at conviction 2, PASS — blocker "chasing": 13 minutes old, at its high, last 5m candle +35%, and RugCheck didn't load. Wait for the bond dump to base (V1, V6).  
-  CA `5EH4bo9k5omHfD1mRSKfpUsSgPRyeRjaaFdhHGq1pump`
-- 12:59Z VAMPCAT (MIGRATED, $121,743 mcap, $3,550 5m vol): PASS at conviction 3, PASS — 5m volume $3.5k at 0.24x the hourly pace, and RugCheck didn't load. A pullback without its crowd is a knife (V1, V6).  
-  CA `4rsSV6L6mQ6jN587eKi5tNgkbgdzc8c9fxEVY8wapump`
-- 12:57Z FUN (MIGRATED, $58,360 mcap, $3,389 5m vol): PASS at conviction 3, PASS: $3.4k on the 5m against my $10k bar, RugCheck blind, and the website is 5 hours old. Too thin to trust. (V1, V6)  
-  CA `FDSG65a94jA3mdC47VPikD5WARCJN5ffSgot3TfHpump`
 
 ## What its skips did next (last 48h)
 A skip "ran" if the coin reached the first target (1.5x) from the skip price before a 20% drop, "dumped" if the drop came first. Sampled every 10 min, followed 6h.
@@ -107,7 +107,7 @@ A skip "ran" if the coin reached the first target (1.5x) from the skip price bef
     CA `6i4ebPt8dpGchB2A1ELpTz3B72dy5DkzNpFMNtUSpump`
   - ran: HyPepe up to 1.5x  
     CA `G8TdzgpUQXQAxJvarNKPXRGv2kh9CsJDK7dCC7Xupump`
-- near the high / chasing: blocked 44, ran 9, dumped 26, flat 3, open 6 (saving losses: keep it)
+- near the high / chasing: blocked 45, ran 10, dumped 26, flat 3, open 6 (saving losses: keep it)
   - ran: DESSA up to 1.52x  
     CA `npz2FhoufQ7pKqhGpaipYWacrAkidyW2yDpVWSvpump`
   - ran: OREN up to 1.58x  
@@ -128,7 +128,9 @@ A skip "ran" if the coin reached the first target (1.5x) from the skip price bef
     CA `2orqEGSdkm5BMmhdM8TpKCpACk32a3Zaj3Lef7ceqsc6`
   - ran: Bear up to 2.66x  
     CA `Dv6gYYkTav8Pm36UwAywxNCccwSZV1VL1tjiSpDLpump`
-- RugCheck didn't load: blocked 19, ran 0, dumped 10, flat 0, open 9 (saving losses: keep it)
+- RugCheck didn't load: blocked 19, ran 1, dumped 10, flat 0, open 8 (saving losses: keep it)
+  - ran: RAM up to 2.91x  
+    CA `6QUHcqYuiPRHxhnYZoygewXtNQr9kUrhc9Tmwgtbpump`
 - falling knife (code): blocked 19, ran 2, dumped 17, flat 0, open 0 (saving losses: keep it)
   - ran: TYGR up to 1.58x  
     CA `5wCqCq6jbppuTocMeq6zd4UywAm64L1QNNxvEDAHpump`
@@ -175,11 +177,11 @@ The meta right now is fresh PumpSwap launches named after big brands and tech fi
 ## Moving most in its scans, last 30 min (1h volume)
 - 삼성찬: $549,926 1h vol, $223,840 mcap, +463% 1h  
   CA `8WNQQvdcPaNMn6mJLpT64SEMBoDFyjKsHmbB5tknpump`
-- SUPERELON: $208,564 1h vol, $44,243 mcap, +14% 1h  
-  CA `DiXxTwKBaL9Mf7heTpx32E1XhYjz1c1zZsZB59cZpump`
-- NIL: $182,044 1h vol, $158,552 mcap, +293% 1h  
-  CA `5EH4bo9k5omHfD1mRSKfpUsSgPRyeRjaaFdhHGq1pump`
-- GATO: $179,572 1h vol, $5,401,300 mcap, -8% 1h  
-  CA `HsprHxBRgiVaQdRf3TnKNuZZtaX9JUSPgMFdAkk6pump`
-- VAMPCAT: $179,406 1h vol, $121,743 mcap, -0% 1h  
-  CA `4rsSV6L6mQ6jN587eKi5tNgkbgdzc8c9fxEVY8wapump`
+- BNB: $163,100 1h vol, $292,124 mcap, -33% 1h  
+  CA `EYqygbhZjP7EbM4fSn8devctnksAvPAD1Bt57XBFpump`
+- Leverhedge: $80,238 1h vol, $1,177,714 mcap, +22% 1h  
+  CA `FWatMYieKhRuJ1yuTcmVG1njRhZWwqHwjR11pBympump`
+- AgenC: $73,530 1h vol, $300,421 mcap, +24% 1h  
+  CA `DDG8rjV3TViCqKRQED2QZq4MEaE1uqXgEiosBNpapump`
+- WatchLarp: $51,442 1h vol, $17,385 mcap, +508% 1h  
+  CA `HjnxqCT5v4xqcuwD2ezJFwNGeMq6pVbiFvBgmPUcpump`
