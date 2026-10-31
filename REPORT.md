@@ -1,13 +1,13 @@
 # Trencher live report
 
-Updated 2026-10-31T07:04:26Z (paper trading, never real money)
+Updated 2026-10-31T07:19:30Z (paper trading, never real money)
 
 - Equity: $90.20 (-9.8% vs $100 start)
-- Goal: $1,000 by 2026-11-05 05:03Z (pressing for it): at 9% of it, 4.9 days left, needs +63.1% a day from here
+- Goal: $1,000 by 2026-11-05 05:03Z (pressing for it): at 9% of it, 4.9 days left, needs +63.3% a day from here
 - Closed trades: 14, 2 wins
 - Fees paid: $8.84 (axiom $1.30, network $6.14, pool $1.26), plus $1.92 lost to slippage
 - New trades: on
-- Brain: subscription, 617 calls and 1 plan-limit hits in 48h
+- Brain: subscription, 618 calls and 1 plan-limit hits in 48h
 
 ## Scorecard (after fees)
 - 14 closed, 2 won (14%), net $-9.80
@@ -74,9 +74,15 @@ Updated 2026-10-31T07:04:26Z (paper trading, never real money)
   CA `J5jxG3PFaWpj6BLEQExyC6FSqSvaTKNdQ9G3sZwBpump`
 
 ## Last scan
-- 07:03Z: 9 coins, 8 with pairs, 1 passed the market filters, 1 researched
+- 07:18Z: 2 coins, 1 with pairs, 0 passed the market filters, 0 researched
 
 ## Coins it looked at, and why it passed
+- 07:15Z ACT:H (no setup, $4,384 mcap, $0 5m vol): REJECT, Hack story ("hack" in the name or ticker): these tend to go down, owner rule  
+  CA `3B3SJFo8kvVoMvvkzrUCPdpDeSeCL773AJ3kNLWJpump`
+- 07:14Z Leverhedge (MIGRATED, $727,035 mcap, $2,882 5m vol): PASS at conviction 3, PASS — 16.8% off the high on $2.9k 5m, and the only target is the $874k high at 1.2x. Blocker: target below initials (V1, V6).  
+  CA `FWatMYieKhRuJ1yuTcmVG1njRhZWwqHwjR11pBympump`
+- 07:07Z DEBIT (FINAL_STRETCH, $33,724 mcap, $19,655 5m vol): PASS at conviction 3, PASS — 6 minutes old, +115% on the 5m, 3% off the high, holders unverified. That's sniping a spike, not a setup (V1, V5).  
+  CA `7ZHHyEWbV6ZcnzGQrPJwFNnP5r7Q41qXKamXfdzGpump`
 - 07:03Z TITTYVERSE (DIP, $156,496 mcap, $41,630 5m vol): PASS at conviction 2, PASS: falling knife. It's down 33% in the last 5 minutes, 60% off a peak from 18 minutes ago, with no higher low, and its own website shows a different CA. Blocker: no higher low (V1, V3).  
   CA `4rYEicv2uE1MnV6gB754MivhbXELEPRoykqTp6Mypump`
 - 07:02Z iCat (MIGRATED, $440,524 mcap, $4,603 5m vol): PASS at conviction 3, PASS: 5m volume is $4.6k, only 0.28x its hourly pace, and the coin sits in the shallow band 13.6% off its high. The blocker is flow below pace. The crowd that pushed it to $510k has gone quiet (V1, V6).  
@@ -91,16 +97,10 @@ Updated 2026-10-31T07:04:26Z (paper trading, never real money)
   CA `49t765AnJMQAzSUutr9T7rC4QAtGxbqiL374qxsHpump`
 - 06:45Z offline (DIP, $53,674 mcap, $4,205 5m vol): PASS at conviction 2, PASS — bonded, dumped back under $70k without proving anything, likely a vamp of 4 bigger 'offline' tickers, and I'd be buying a +70% 15m spike on a saw-tooth chart. (V6, V1, V13)  
   CA `F7ZQtqwJjwQs4VRUAnxg6KRZWPzMvLpKKmUsx4x9pump`
-- 06:40Z AgenC (MIGRATED, $554,344 mcap, $4,969 5m vol): PASS at conviction 3, PASS: down 76% off a $2.3M peak and the crowd is leaving. 5m volume is $5k, 0.53x its hourly pace, which is under my 0.7x DIP gate. Thin "agent" story with no GitHub. Falling knife (V1, V6).  
-  CA `DDG8rjV3TViCqKRQED2QZq4MEaE1uqXgEiosBNpapump`
-- 06:39Z BNB (DIP, $590,553 mcap, $16,687 5m vol): PASS at conviction 2, PASS: this is a Binance hack-headline coin wearing a parody costume ("hot wallet got cooked", "withdrawals paused"). Hack stories are a hard skip, and the dip has no higher low yet anyway.  
-  CA `EYqygbhZjP7EbM4fSn8devctnksAvPAD1Bt57XBFpump`
-- 06:36Z GATO (MIGRATED, $5,177,827 mcap, $5,778 5m vol): PASS at conviction 3, PASS: "chasing". It's 7.7% off the high with $5.8k on the 5m, sellers leading, and the only target is about 1.08x. (V1, V6)  
-  CA `HsprHxBRgiVaQdRf3TnKNuZZtaX9JUSPgMFdAkk6pump`
 
 ## What its skips did next (last 48h)
 A skip "ran" if the coin reached the first target (1.5x) from the skip price before a 20% drop, "dumped" if the drop came first. Sampled every 10 min, followed 6h.
-- too new / sniping: blocked 51, ran 7, dumped 42, flat 0, open 2 (saving losses: keep it)
+- too new / sniping: blocked 52, ran 7, dumped 43, flat 0, open 2 (saving losses: keep it)
   - ran: ZI up to 1.7x  
     CA `5q45EK4mRhuiuBmRYoaDs4m2xweaV7gn3zsFhsvcpump`
   - ran: BEAR up to 1.59x  
@@ -114,7 +114,7 @@ A skip "ran" if the coin reached the first target (1.5x) from the skip price bef
     CA `FDwCosavNvMiFB812ajJp3gG7eZ9c4bpgcnY6fDQpump`
   - ran: ZERO up to 1.8x  
     CA `Ddwf94wedgCuMHAkwgti8A7sL2CxvBYJStJBj2cFpump`
-- near the high / chasing: blocked 39, ran 8, dumped 24, flat 2, open 5 (saving losses: keep it)
+- near the high / chasing: blocked 40, ran 8, dumped 25, flat 2, open 5 (saving losses: keep it)
   - ran: DESSA up to 1.52x  
     CA `npz2FhoufQ7pKqhGpaipYWacrAkidyW2yDpVWSvpump`
   - ran: OREN up to 1.58x  
@@ -128,7 +128,7 @@ A skip "ran" if the coin reached the first target (1.5x) from the skip price bef
     CA `2orqEGSdkm5BMmhdM8TpKCpACk32a3Zaj3Lef7ceqsc6`
   - ran: Bear up to 2.66x  
     CA `Dv6gYYkTav8Pm36UwAywxNCccwSZV1VL1tjiSpDLpump`
-- falling knife / no higher low: blocked 18, ran 0, dumped 13, flat 2, open 3 (saving losses: keep it)
+- falling knife / no higher low: blocked 18, ran 0, dumped 14, flat 2, open 2 (saving losses: keep it)
 - falling knife (code): blocked 17, ran 1, dumped 15, flat 0, open 1 (saving losses: keep it)
   - ran: TYGR up to 1.58x  
     CA `5wCqCq6jbppuTocMeq6zd4UywAm64L1QNNxvEDAHpump`
@@ -146,14 +146,14 @@ A skip "ran" if the coin reached the first target (1.5x) from the skip price bef
     CA `7eQagAYSYYhRqRZF5L97Ku8AK94TEpsmnrrsssUkpump`
 
 ## Rules it changed from results and skips
-- 10-30 22:05Z dropped: Separate re-entry bullet and all fee/size/minimum-position wording (Re-entry is merged into the stop-review bullet to stay within 15 rules. Fees and size are checked in code now, so no fee caps or minimum sizes stay in my rules.)
-- 10-31 01:08Z loosened: DIP attention gate: dropped the 'volume rising / fresh surge' requirement, 0.7x hourly is enough; DIP probation over (Owner override. The structural higher-low and story checks stay because DIP trades are 0/3 and falling-knife skips went 1 ran / 16 dumped.)
-- 10-31 01:08Z tightened: Stop review defaults to SELL; hold only once with a visible bundle exit (4 stop hits gapped far past the stop (CATCULUS −59% vs −30%, SI −38%, HEXN −36%, PILLSEY −31% vs −20%). The one partial hold made the loss bigger.)
-- 10-31 01:08Z dropped: Tighten trail to ~25% past 4x (CATBOT lesson) (The trail is owner-set at 35% and enforced in code. A learned rule can't set it.)
 - 10-31 01:08Z dropped: All fee, friction and $5-minimum-size rules from the lessons (Code now checks fees (target ≥ 3x round-trip, round-trip ≤ 20%). Per instructions these don't belong in learned rules.)
 - 10-31 04:12Z tightened: Conviction ladder merged with the owner's 'press the goal' (Merged two bullets into one to make room. Clean = 7 and leader/low-bundle = 8–9 per the owner. The 9 profile matches my only two winners (CATBOT, FLOATER: leader, clean holders, 20–40% pullback, flow at pace). The meaning didn't change.)
 - 10-31 04:12Z dropped: Lesson-level 'tighten trail to 25% past 4x' and all fee/min-size notes (The owner sets the trail (35%), initials (1.5x) and stop (20%), and code enforces them. Code also owns the fee/size checks. None of these may live in learned rules.)
 - 10-31 04:12Z dropped: Conviction ladder, then press (owner goal).** Hard lines passed + live flow (5m ≥ $10k, buys > sells) + a named target ≥ 1.5x = **7**. **8** = 7 + leader/original of a live meta OR verified low bundle_pct. **9** = leader + low bundles + 20–60% pullback + 5m ≥ hourly pace (the CATBOT/FLOATER profile, my only two winners). Take −1 each for a non-hard-line RugCheck danger, an unverified community, or a weak/LARP story. 5–6 = probe; under 5 = PASS naming the blocker. Take every setup that clears this and don't under-rate clean ones. (Owner override: the goal is set to push)
+- 10-31 07:15Z added: Press the proven setup: meta/vamp leader 25-45% off the high, with a higher low, clean holders and 5m at or above pace, rated 8-9; any clean pass with flow and a target rated at least 7 (Both wins were exactly this pattern: CATBOT +93.8% (4.44x peak) and FLOATER +50.5% (2.19x), both 34-38% off the high with clean holders. The owner wants clean setups rated 8-9 so code sizes them up.)
+- 10-31 07:15Z tightened: Shallow band (10-20% off the high): flow leader only, conviction capped at 7 (Near-high entries went 0 for 5: HYPERCHAN -15.2% and -4.9%, PILLSEY -31.2%, SI -38%, CATCULUS -59%. Near-high skips ran 8 and dumped 25. The owner's 10% floor stays; only the size is capped.)
+- 10-31 07:15Z dropped: Tighten the trail to 25% past 4x (from the CATBOT lesson) (The owner fixed the trail at 35% from the peak after initials, and code enforces it, so a learned trail rule doesn't belong.)
+- 10-31 07:15Z dropped: Any fee, friction or minimum-size rule from lessons (The code fee check owns this now (target at least 3x round-trip cost, round trip at most 20% of the position).)
 
 ## Recent lessons
 - [2026-10-29 02:03] Expected: the FLOATER that had the crowd out of 23 same-ticker coins ($141k 5m volume, 78% buys, clean holders, 34% off the high) would keep climbing toward $500k on the tokenized-stock meta. What happened: it ran to 2.19x, I took initials as planned (V11), and the trailing stop sold the rest at 1.5x from a $255k mcap for +$1.48, but fees and slippage ($0.89) ate about 30% of the $2.94 cost and nearly a third of the gross gain. Next time I keep picking the vamp-field winner by volume and attention (V1, V6) and keep the 2x initials plus 30% trail, but I don't open a position under ~$5 because fixed fees turn a 2x winner into a 1.5x one.
@@ -173,11 +173,11 @@ The meta is degen humor plus cats. Crude-joke launches (LUMI, TITTYVERSE, the la
 ## Moving most in its scans, last 30 min (1h volume)
 - TITTYVERSE: $647,957 1h vol, $156,496 mcap, +295% 1h  
   CA `4rYEicv2uE1MnV6gB754MivhbXELEPRoykqTp6Mypump`
-- BNB: $281,170 1h vol, $590,553 mcap, -11% 1h  
-  CA `EYqygbhZjP7EbM4fSn8devctnksAvPAD1Bt57XBFpump`
 - iCat: $199,394 1h vol, $440,524 mcap, +36% 1h  
   CA `FHHxyowUnk6oVKF9FV1U9zyt9YFEr2vu68gbpkKcpump`
 - BOAR: $182,504 1h vol, $123,061 mcap, +205% 1h  
   CA `HRdx7yxRVd8cPbuYva1kzMDodtoiHCEQxWSA3Y2dpump`
-- AgenC: $112,269 1h vol, $554,344 mcap, -4% 1h  
-  CA `DDG8rjV3TViCqKRQED2QZq4MEaE1uqXgEiosBNpapump`
+- nut: $90,513 1h vol, $4,900 mcap, +80% 1h  
+  CA `63DGTFAHyspFizrSkwNyfrWEadJzvHhAQh6fGUAkpump`
+- MONEKO: $69,824 1h vol, $129,899 mcap, -37% 1h  
+  CA `49t765AnJMQAzSUutr9T7rC4QAtGxbqiL374qxsHpump`
