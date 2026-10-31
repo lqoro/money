@@ -1,13 +1,13 @@
 # Trencher live report
 
-Updated 2026-10-31T15:54:55Z (paper trading, never real money)
+Updated 2026-10-31T16:10:04Z (paper trading, never real money)
 
 - Equity: $90.20 (-9.8% vs $100 start)
-- Goal: $1,000 by 2026-11-05 05:03Z (pressing for it): at 9% of it, 4.5 days left, needs +69.7% a day from here
+- Goal: $1,000 by 2026-11-05 05:03Z (pressing for it): at 9% of it, 4.5 days left, needs +69.9% a day from here
 - Closed trades: 14, 2 wins
 - Fees paid: $8.84 (axiom $1.30, network $6.14, pool $1.26), plus $1.92 lost to slippage
 - New trades: on
-- Brain: subscription, 655 calls and 1 plan-limit hits in 48h
+- Brain: subscription, 657 calls and 1 plan-limit hits in 48h
 
 ## Scorecard (after fees)
 - 14 closed, 2 won (14%), net $-9.80
@@ -74,9 +74,17 @@ Updated 2026-10-31T15:54:55Z (paper trading, never real money)
   CA `J5jxG3PFaWpj6BLEQExyC6FSqSvaTKNdQ9G3sZwBpump`
 
 ## Last scan
-- 15:54Z: 3 coins, 1 with pairs, 1 passed the market filters, 1 researched
+- 16:09Z: 6 coins, 5 with pairs, 0 passed the market filters, 0 researched
 
 ## Coins it looked at, and why it passed
+- 16:09Z whitepaper (MIGRATED, $156,839 mcap, $15,951 5m vol): PASS at conviction 3, PASS: 5.4% off the high, 12 minutes after migrating, last candle +24%. Chasing a fresh spike (V1, V6).  
+  CA `42yUJZF3AarkppccT6MFQqgvh1LnL47GnQezetWipump`
+- 16:08Z CHAIRMAN (FINAL_STRETCH, $21,041 mcap, $33,702 5m vol): REJECT, Top 10 hold 26.2% ex-pool (>25%) (V13)  
+  CA `5D66et62hQ8mv7ymhycuvdyB3pR7871AQL2GK6eTpump`
+- 16:08Z HALLOCAT (MIGRATED, $208,345 mcap, $96,540 5m vol): PASS at conviction 3, PASS: blocker "chasing". Ten minutes old, last 5m candle up 26%, and volume at 5x the hourly pace. That's a spike, not a pullback (V1).  
+  CA `7sPbWf4X2FAKzHffSbfHoAaoHYonjzyAE8bmWYJ4pump`
+- 16:04Z SIS (MIGRATED, $97,963 mcap, $30,218 5m vol): PASS at conviction 2, PASS: SIS is down 87.8% from an $806k peak 18 minutes ago and -73% on the 5m, with volume at 0.4x the hourly pace. Falling knife, no higher low. (V1, V6)  
+  CA `8S49oCFR9Shcvibo42fJft2GH3X5rKgcFisZ57jopump`
 - 15:54Z HALLOWTRUMP (MIGRATED, $440,471 mcap, $266,360 5m vol): PASS at conviction 3, PASS: 8 minutes old, 5m volume at 6.5x the hourly pace, no socials. That's a bond spike, not a base. Blocker: too new / spike chasing (V1).  
   CA `5kCcoN8Xy2tPWEYi7pGLCxym5kmh3znMT3odrhWvpump`
 - 15:53Z Pikmin (DIP, $82,695 mcap, $9,637 5m vol): REJECT, Dip with fading attention is a falling knife, not a dip (5m at 0.41x the hour's pace, under 0.6x)  
@@ -89,48 +97,43 @@ Updated 2026-10-31T15:54:55Z (paper trading, never real money)
   CA `FjGgvvpS7b7wBjGiRwhb6DhmChaScsTZZvGNdyifpump`
 - 15:45Z BNB (MIGRATED, $399,516 mcap, $20,882 5m vol): PASS at conviction 2, PASS: this is a Binance-hack parody ("hot wallet got cooked", "withdrawals paused") and it's 80% off its peak. Hack story, owner rule, no debate.  
   CA `EYqygbhZjP7EbM4fSn8devctnksAvPAD1Bt57XBFpump`
-- 15:43Z cat (FINAL_STRETCH, $31,832 mcap, $20,980 5m vol): PASS at conviction 3, PASS: chasing. The last 5m candle is +33% at 3.7x the hourly pace, on a generic "cat" ticker with 7 bigger coins ahead of it and top 10 at 22.6%. Wait for the bond and a higher low (V1, V3, V6).  
-  CA `AsoY1yi6SKfjAhv2xJtxQhNVEgEqB3FadRBT1AMFpump`
-- 15:41Z JOB (MIGRATED, $3,196,222 mcap, $2,274 5m vol): PASS at conviction 3, PASS: $2.3k on the 5m, sellers outnumber buyers 2:1, and it's sitting in the shallow band. Holders are clean but nobody's buying. Blocker: "flow below pace" (V1, V6).  
-  CA `9Pq7aLAbhDG2tTnS22cm6kuysZVcZpLFE368HWuypump`
-- 15:29Z LIBER (FINAL_STRETCH, $20,417 mcap, $5,387 5m vol): PASS at conviction 2, PASS: RugCheck didn't load, so holders, dev share and bundles are all blind on a $20k bonding-curve coin. It pitches itself as AI tech but shows no GitHub, and the 5m is only $5.4k. (V1, V13, V17)  
-  CA `AqtAQxLmzoQFJNdxgZN5BLxzYeGuVJNWc2riYCRDpump`
-- 15:28Z SI (MIGRATED, $185,327 mcap, $15,831 5m vol): PASS at conviction 2, PASS: RugCheck didn't load on a 14-minute-old coin that sits 11% off its high, and its 5m flow is 0.75x the hourly pace. That's a blind entry into a fresh migration with fading flow. (V1, V6, V13)  
-  CA `64vVGiNa4MefL4rq3mHzLiq8APfyc8iWLbumsFNfpump`
 
 ## What its skips did next (last 48h)
 A skip "ran" if the coin reached the first target (1.5x) from the skip price before a 20% drop, "dumped" if the drop came first. Sampled every 10 min, followed 6h.
-- too new / sniping: blocked 55, ran 7, dumped 47, flat 0, open 1 (saving losses: keep it)
+- too new / sniping: blocked 56, ran 7, dumped 47, flat 0, open 2 (saving losses: keep it)
   - ran: ZI up to 1.7x  
     CA `5q45EK4mRhuiuBmRYoaDs4m2xweaV7gn3zsFhsvcpump`
   - ran: BEAR up to 1.59x  
     CA `6i4ebPt8dpGchB2A1ELpTz3B72dy5DkzNpFMNtUSpump`
   - ran: HyPepe up to 1.5x  
     CA `G8TdzgpUQXQAxJvarNKPXRGv2kh9CsJDK7dCC7Xupump`
-- near the high / chasing: blocked 43, ran 8, dumped 29, flat 4, open 2 (saving losses: keep it)
+- near the high / chasing: blocked 44, ran 8, dumped 29, flat 4, open 3 (saving losses: keep it)
   - ran: DESSA up to 1.52x  
     CA `npz2FhoufQ7pKqhGpaipYWacrAkidyW2yDpVWSvpump`
   - ran: Catori up to 1.52x  
     CA `FDwCosavNvMiFB812ajJp3gG7eZ9c4bpgcnY6fDQpump`
   - ran: FLYWHEEL up to 2.23x  
     CA `BWMf44rD724R2bdgHWd88CDTVEjuPNQauw8s6S7ipump`
-- top 10 over 25%: blocked 42, ran 7, dumped 33, flat 2, open 0 (saving losses: keep it)
+- top 10 over 25%: blocked 43, ran 7, dumped 33, flat 2, open 1 (saving losses: keep it)
   - ran: HYPERGAMY up to 2.05x  
     CA `CUyNDWGdLPXZ3Gyj1H6TBh5pACgu5nY9WNkSqfMApump`
   - ran: Catori up to 1.52x  
     CA `FDwCosavNvMiFB812ajJp3gG7eZ9c4bpgcnY6fDQpump`
   - ran: ZERO up to 1.8x  
     CA `Ddwf94wedgCuMHAkwgti8A7sL2CxvBYJStJBj2cFpump`
-- RugCheck didn't load: blocked 27, ran 2, dumped 17, flat 1, open 7 (saving losses: keep it)
+- RugCheck didn't load: blocked 26, ran 3, dumped 16, flat 1, open 6 (saving losses: keep it)
   - ran: billy up to 3.75x  
     CA `DUTxGHL2LmpfjQaoK6LdZp8WQPoDiwvtDHVDf4fMpump`
   - ran: whitepaper up to 2.16x  
     CA `4tEvXHpd6JrCWJGByBS3qFBAtJbeoiEpgvWLw9hkpump`
+  - ran: LIBER up to 1.6x  
+    CA `AqtAQxLmzoQFJNdxgZN5BLxzYeGuVJNWc2riYCRDpump`
 - falling knife (code): blocked 22, ran 2, dumped 19, flat 0, open 1 (saving losses: keep it)
   - ran: TYGR up to 1.58x  
     CA `5wCqCq6jbppuTocMeq6zd4UywAm64L1QNNxvEDAHpump`
   - ran: LUMI up to 1.76x  
     CA `653joYuZ5EntuKd1bspZakjHdueMxHGs5Lvm7RdWpump`
+- falling knife / no higher low: blocked 18, ran 0, dumped 13, flat 2, open 3 (saving losses: keep it)
 - RugCheck danger: blocked 18, ran 5, dumped 13, flat 0, open 0 (saving losses: keep it)
   - ran: HYPEINU up to 1.57x  
     CA `6eccVGkbi8cvAYBGzfDmUwFYrMj8eGZF2xyZqZLkpump`
@@ -138,7 +141,6 @@ A skip "ran" if the coin reached the first target (1.5x) from the skip price bef
     CA `2orqEGSdkm5BMmhdM8TpKCpACk32a3Zaj3Lef7ceqsc6`
   - ran: Bear up to 2.66x  
     CA `Dv6gYYkTav8Pm36UwAywxNCccwSZV1VL1tjiSpDLpump`
-- falling knife / no higher low: blocked 17, ran 0, dumped 13, flat 2, open 2 (saving losses: keep it)
 - crowd leaving / fading volume: blocked 14, ran 4, dumped 10, flat 0, open 0 (saving losses: keep it)
   - ran: STABLEPAD up to 2.13x  
     CA `AABM3NrYSwKMsEDyanuskY43EH6ySbPpdPZNG1u7pump`
@@ -146,7 +148,7 @@ A skip "ran" if the coin reached the first target (1.5x) from the skip price bef
     CA `BzndCZ2ZrjUA21aVW7t6AWEENRAps3EmdQg9hf94pump`
   - ran: AXIO up to 1.51x  
     CA `3mUcXkpVVkQ5ZJMctz2f1VBk4rwu3NRfNwVQZtDzpump`
-- dev share over 1%: blocked 12, ran 0, dumped 10, flat 1, open 1 (saving losses: keep it)
+- dev share over 1%: blocked 12, ran 0, dumped 11, flat 1, open 0 (saving losses: keep it)
 - hack story (owner rule): blocked 12, ran 1, dumped 4, flat 6, open 1 (saving losses: keep it)
   - ran: ACT:H up to 1.53x  
     CA `3B3SJFo8kvVoMvvkzrUCPdpDeSeCL773AJ3kNLWJpump`
@@ -187,13 +189,13 @@ PASS on BNB for now. Blocker: it's up 35% on the hour, so it isn't a dip, and th
 Owner's push noted. Clean setups can earn an 8, but only if the checks come back clean. The deadline doesn't lower the bar.
 
 ## Moving most in its scans, last 30 min (1h volume)
-- DESSA: $1,017,186 1h vol, $24,403,177 mcap, -5% 1h  
+- SIS: $903,730 1h vol, $97,963 mcap, +106% 1h  
+  CA `8S49oCFR9Shcvibo42fJft2GH3X5rKgcFisZ57jopump`
+- billy: $597,489 1h vol, $10,345 mcap, -76% 1h  
+  CA `DUTxGHL2LmpfjQaoK6LdZp8WQPoDiwvtDHVDf4fMpump`
+- DESSA: $580,240 1h vol, $23,618,870 mcap, -21% 1h  
   CA `npz2FhoufQ7pKqhGpaipYWacrAkidyW2yDpVWSvpump`
 - HALLOWTRUMP: $487,831 1h vol, $440,471 mcap, +736% 1h  
   CA `5kCcoN8Xy2tPWEYi7pGLCxym5kmh3znMT3odrhWvpump`
-- billy: $325,304 1h vol, $6,212 mcap, -86% 1h  
+- billy: $326,642 1h vol, $5,005 mcap, -89% 1h  
   CA `GL7LbqwtKE6rxzzoJk5D9eD1Morp5kvESQen1ANfpump`
-- Pikmin: $283,077 1h vol, $82,695 mcap, -36% 1h  
-  CA `2MXhpKgHBREgYYj3bSdorqbuJjkPAve1LTNHtk8Lpump`
-- SI: $254,450 1h vol, $185,327 mcap, +360% 1h  
-  CA `64vVGiNa4MefL4rq3mHzLiq8APfyc8iWLbumsFNfpump`
