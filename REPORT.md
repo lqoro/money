@@ -1,13 +1,13 @@
 # Trencher live report
 
-Updated 2026-10-31T21:28:39Z (paper trading, never real money)
+Updated 2026-10-31T21:43:40Z (paper trading, never real money)
 
-- Equity: $89.88 (-10.1% vs $100 start)
-- Goal: $1,000 by 2026-11-05 05:03Z (pressing for it): at 9% of it, 4.3 days left, needs +74.8% a day from here
+- Equity: $89.22 (-10.8% vs $100 start)
+- Goal: $1,000 by 2026-11-05 05:03Z (pressing for it): at 8.9% of it, 4.3 days left, needs +75.3% a day from here
 - Closed trades: 15, 2 wins
-- Fees paid: $9.62 (axiom $1.50, network $6.53, pool $1.45), plus $2.22 lost to slippage
+- Fees paid: $10.03 (axiom $1.62, network $6.72, pool $1.56), plus $2.38 lost to slippage
 - New trades: on
-- Brain: subscription, 638 calls and 1 plan-limit hits in 48h
+- Brain: subscription, 627 calls and 1 plan-limit hits in 48h
 
 ## Scorecard (after fees)
 - 15 closed, 2 won (13%), net $-10.12
@@ -24,14 +24,13 @@ Updated 2026-10-31T21:28:39Z (paper trading, never real money)
   - stop loss: 5, 0 won, net $-9.44, fees+slip $3.75, peak 1.14x → 0.62x
   - trailing stop: 2, 2 won, net $+4.21, fees+slip $2.04, peak 3.32x → 1.72x
   - other: 1, 0 won, net $-0.03, fees+slip $0.67, peak 1.4x → 0.99x
-- To $1,000: $910.12 to go; at $-0.67 a trade this pace doesn't get there
+- To $1,000: $910.78 to go; at $-0.67 a trade this pace doesn't get there
 
 ## Open positions
-- none
+- PAWCAT (MIGRATED): cost $11.1, 0.98x, fees $0.41  
+  CA `762ZqBCd5m2q3QJ5UPkFL5rqdEUeygNkfTZrpGEZpump`
 
 ## Recent trades
-- 10:08Z BUY HYPERCHAN $10.00, fees $0.39  
-  CA `3ApVr1xphYMpi9dn3rpqU4hwvpmCQDVwxET1rdCDpump`
 - 10:53Z SELL HYPERCHAN for $9.51, fees $0.39  
   CA `3ApVr1xphYMpi9dn3rpqU4hwvpmCQDVwxET1rdCDpump`
 - 10:53Z CLOSE HYPERCHAN -5% ($-0.49), fees $0.78  
@@ -50,6 +49,8 @@ Updated 2026-10-31T21:28:39Z (paper trading, never real money)
   CA `FWatMYieKhRuJ1yuTcmVG1njRhZWwqHwjR11pBympump`
 - 19:21Z CLOSE Leverhedge -3% ($-0.32), fees $0.78  
   CA `FWatMYieKhRuJ1yuTcmVG1njRhZWwqHwjR11pBympump`
+- 21:40Z BUY PAWCAT $11.10, fees $0.41  
+  CA `762ZqBCd5m2q3QJ5UPkFL5rqdEUeygNkfTZrpGEZpump`
 
 ## Last closes
 - CPU: -14% ($-0.43), time stop: 52 min and only 1.03x  
@@ -74,9 +75,21 @@ Updated 2026-10-31T21:28:39Z (paper trading, never real money)
   CA `FWatMYieKhRuJ1yuTcmVG1njRhZWwqHwjR11pBympump`
 
 ## Last scan
-- 21:28Z: 6 coins, 5 with pairs, 1 passed the market filters, 1 researched
+- 21:42Z: 3 coins, 2 with pairs, 0 passed the market filters, 0 researched
 
 ## Coins it looked at, and why it passed
+- 21:40Z PAWCAT (MIGRATED, $3,068,511 mcap, $101,363 5m vol): BUY at conviction 7, BUY, conviction 7: PAWCAT leads the cat meta, $101k on the 5m at 1.31x the hourly pace, 78% buys, top 10 at 1.4% and no bundle clusters. It's 24% off the high, so the shallow-band cap holds it at 7 (V1, V6, V13).  
+  CA `762ZqBCd5m2q3QJ5UPkFL5rqdEUeygNkfTZrpGEZpump`
+- 21:37Z SIS (DIP, $343,160 mcap, $10,479 5m vol): PASS at conviction 3, PASS — first bounce off the hourly low, no higher low printed, on a placeholder-site AI-satellite LARP. Clean holders don't save a thin story. (V1)  
+  CA `FdKdpz11GsTofLaNiddrhxrsE4APZYSSfLFqQ9YKpump`
+- 21:36Z ANSEM (DIP, $217,043 mcap, $16,324 5m vol): REJECT, Dip with fading attention is a falling knife, not a dip (5m at 0.46x the hour's pace, under 0.6x)  
+  CA `CvRJ8MrnB1AwjrgX25uyeLJiXNSugTo2ZHh8UXDTpump`
+- 21:35Z AETHER (FINAL_STRETCH, $25,065 mcap, $80,422 5m vol): REJECT, RugCheck danger: Creator history of rugged tokens  
+  CA `5wzQDKx8t6Lod8SGDBqJh1qXgwu3vchkLyfvhbjypump`
+- 21:31Z NNN (MIGRATED, $90,463 mcap, $2,817 5m vol): PASS at conviction 2, PASS: 6.6% off the high with 37 buys against 410 sells in the last 5 minutes, and only $2.8k of 5m volume. That's chasing into a sell wall that looks like a bot. (V1, V6)  
+  CA `57YQJbgdE32ZMCQzBivhjcXmnMLY5iw2MwrtcPYWpump`
+- 21:31Z KIM (MIGRATED, $326,093 mcap, $136,866 5m vol): PASS at conviction 2, PASS: sells outnumber buys 1,847 to 1,455 on a 29-minute-old coin that's still bleeding off its spike. The website redirects to some unrelated "axon protocol" domain registered a day ago. And it's a head-of-state coin with 19 copies of the ticker. Blockers: "too new" and "sellers in control" (V1, V3  
+  CA `8pjfN5Ayb4rucGpYE3tZWN6v3EysizjPx1v62zx1pump`
 - 21:28Z CREDIT (DIP, $195,794 mcap, $7,663 5m vol): REJECT, Dip with fading attention is a falling knife, not a dip (5m at 0.11x the hour's pace, under 0.6x)  
   CA `Ewyifvp8X9NxeaKawXamGXBFDisuMfcFfcdvSZ8opump`
 - 21:27Z Jason (MIGRATED, $140,951 mcap, $2,091 5m vol): REJECT, Dev holds 1.3% (>1%) (V13, V17)  
@@ -85,29 +98,17 @@ Updated 2026-10-31T21:28:39Z (paper trading, never real money)
   CA `8UVVYBKvHfhP9mN8bHfHGgYiZd1Jb1aVuye1RkdTpump`
 - 21:23Z KIM (DIP, $51,483 mcap, $13,443 5m vol): REJECT, RugCheck danger: Top 10 holders high ownership  
   CA `9sNc5nW9XfBSK8Fwh8Ue4mTBmkDutCeZfjFd2x7Dpump`
-- 21:19Z LUMI (MIGRATED, $110,031 mcap, $3,285 5m vol): PASS at conviction 2, PASS — down 87% from its peak and making new lows at the hourly low, with no higher low. Falling knife. (V1, V6)  
-  CA `HvitmAeh6TkToQonoiNwqWcrZsYdYiaSZHP7yMmspump`
-- 21:14Z GLITCH (MIGRATED, $3,777,931 mcap, $2,584 5m vol): REJECT, Top 10 hold 28.0% ex-pool (>25%) (V13)  
-  CA `8Xg89xT8Ve34sKiYqYuMs46mycREsCA2F362UscRpump`
-- 21:08Z Leverhedge (MIGRATED, $1,451,474 mcap, $2,178 5m vol): PASS at conviction 3, PASS: flow below pace. 5m is $2.2k, only 0.35x the hourly average, in the shallow band, and it hasn't reclaimed the $1.71M high I need before re-entering. (V1, V6)  
-  CA `FWatMYieKhRuJ1yuTcmVG1njRhZWwqHwjR11pBympump`
-- 21:04Z Anakin (FINAL_STRETCH, $20,754 mcap, $4,758 5m vol): REJECT, Top 10 hold 27.1% ex-pool (>25%) (V13)  
-  CA `6zAg9L5bdeR17YwBNkjCQRHUc75MAvKQcjHZi5grpump`
-- 21:04Z BNB (MIGRATED, $295,551 mcap, $18,427 5m vol): PASS at conviction 1, PASS — hack-story parody ('hot wallet got cooked', Binance-hack ticker), 85% off peak with no higher low. Clean holders don't save a dead knife. (Owner hack rule, V1, V6)  
-  CA `EYqygbhZjP7EbM4fSn8devctnksAvPAD1Bt57XBFpump`
-- 21:02Z ANSEM (DIP, $94,653 mcap, $144,228 5m vol): PASS at conviction 2, PASS — 6-minute-old ANSEM vamp, down 58% in the last 5m with no higher low, while the original trades at $378k. Vamp field plus falling knife (V1, V2).  
-  CA `Fgmy6MpdrH8jjJ9i8RY53PVVdFdKLz6JX34tHJvcpump`
 
 ## What its skips did next (last 48h)
 A skip "ran" if the coin reached the first target (1.5x) from the skip price before a 20% drop, "dumped" if the drop came first. Sampled every 10 min, followed 6h.
-- too new / sniping: blocked 61, ran 7, dumped 53, flat 0, open 1 (saving losses: keep it)
+- too new / sniping: blocked 62, ran 9, dumped 53, flat 0, open 0 (saving losses: keep it)
   - ran: ZI up to 1.7x  
     CA `5q45EK4mRhuiuBmRYoaDs4m2xweaV7gn3zsFhsvcpump`
   - ran: BEAR up to 1.59x  
     CA `6i4ebPt8dpGchB2A1ELpTz3B72dy5DkzNpFMNtUSpump`
   - ran: HyPepe up to 1.5x  
     CA `G8TdzgpUQXQAxJvarNKPXRGv2kh9CsJDK7dCC7Xupump`
-- near the high / chasing: blocked 53, ran 8, dumped 37, flat 5, open 3 (saving losses: keep it)
+- near the high / chasing: blocked 53, ran 9, dumped 37, flat 5, open 2 (saving losses: keep it)
   - ran: DESSA up to 1.52x  
     CA `npz2FhoufQ7pKqhGpaipYWacrAkidyW2yDpVWSvpump`
   - ran: Catori up to 1.52x  
@@ -121,21 +122,18 @@ A skip "ran" if the coin reached the first target (1.5x) from the skip price bef
     CA `FDwCosavNvMiFB812ajJp3gG7eZ9c4bpgcnY6fDQpump`
   - ran: ZERO up to 1.8x  
     CA `Ddwf94wedgCuMHAkwgti8A7sL2CxvBYJStJBj2cFpump`
-- falling knife (code): blocked 25, ran 2, dumped 21, flat 0, open 2 (saving losses: keep it)
+- falling knife (code): blocked 26, ran 2, dumped 22, flat 0, open 2 (saving losses: keep it)
   - ran: TYGR up to 1.58x  
     CA `5wCqCq6jbppuTocMeq6zd4UywAm64L1QNNxvEDAHpump`
   - ran: LUMI up to 1.76x  
     CA `653joYuZ5EntuKd1bspZakjHdueMxHGs5Lvm7RdWpump`
-- RugCheck danger: blocked 24, ran 5, dumped 18, flat 0, open 1 (saving losses: keep it)
-  - ran: HYPEINU up to 1.57x  
-    CA `6eccVGkbi8cvAYBGzfDmUwFYrMj8eGZF2xyZqZLkpump`
+- RugCheck danger: blocked 24, ran 4, dumped 18, flat 0, open 2 (saving losses: keep it)
   - ran: ETF up to 1.87x  
     CA `2orqEGSdkm5BMmhdM8TpKCpACk32a3Zaj3Lef7ceqsc6`
   - ran: Bear up to 2.66x  
     CA `Dv6gYYkTav8Pm36UwAywxNCccwSZV1VL1tjiSpDLpump`
-- falling knife / no higher low: blocked 23, ran 1, dumped 17, flat 2, open 3 (saving losses: keep it)
-  - ran: Leverhedge up to 1.56x  
-    CA `FWatMYieKhRuJ1yuTcmVG1njRhZWwqHwjR11pBympump`
+  - ran: CRIME up to 1.9x  
+    CA `BN4Z5NtntHhu6p3atEqkeAVi8Bn9Ri2QTv8FD7iupump`
 - RugCheck didn't load: blocked 23, ran 3, dumped 16, flat 4, open 0 (saving losses: keep it)
   - ran: UNSAFU up to 1.61x  
     CA `4eq4JfnpdgqZTzeyR3GnRGHJQ3QhQT6Lp7nKnQ2nS7Rv`
@@ -143,6 +141,9 @@ A skip "ran" if the coin reached the first target (1.5x) from the skip price bef
     CA `DUTxGHL2LmpfjQaoK6LdZp8WQPoDiwvtDHVDf4fMpump`
   - ran: whitepaper up to 2.16x  
     CA `4tEvXHpd6JrCWJGByBS3qFBAtJbeoiEpgvWLw9hkpump`
+- falling knife / no higher low: blocked 23, ran 1, dumped 17, flat 2, open 3 (saving losses: keep it)
+  - ran: Leverhedge up to 1.56x  
+    CA `FWatMYieKhRuJ1yuTcmVG1njRhZWwqHwjR11pBympump`
 - crowd leaving / fading volume: blocked 16, ran 5, dumped 9, flat 1, open 1 (mixed)
   - ran: STABLEPAD up to 2.13x  
     CA `AABM3NrYSwKMsEDyanuskY43EH6ySbPpdPZNG1u7pump`
@@ -181,13 +182,13 @@ A skip "ran" if the coin reached the first target (1.5x) from the skip price bef
 The meta has three themes. Cats are the biggest. PAWCAT is $2.58M at one hour old, with $112k in the last 5 minutes and 74% buys, so the crowd is still arriving. AAPLCAT ($6k 5m against a ~$18k/5m hourly pace) and BULLCAT (45% buys) are cat coins that are already fading, which tells you to follow the leader and not the vamps (V1). Halloween is the second theme, and today is the day. HALLOWCHAN is 30 minutes old at $200k with $26.6k 5m and 68% buys, while the older HALLOWEEN coin is dead at $19.6k (bonded then dropped, V6). The third is sub-30-minute pump.fun launches pulling huge volume (CREDIT/MCP, CUM, Putin), but those are snipe territory and my data is too slow for that (V5). The crawler's PEPE/Binance hack headlines aren't what the movers are trading. Setups worth researching now, all MIGRATED and all subject to holder and bundle checks: (1) PAWCAT on a ~10% pullback from its local high, as long as 5m volume stays at 0.7x its hourly pace or better; (2) HALLOWCHAN as the original Halloween-day coin, if holders come back clean, out at the end of the day because a holiday meta dies with the date (V5); (3) ANSEM (The Black Bear) at $378k with $39k 5m. Its 62% buys are fine, but it borrows a KOL's name, so I need to confirm it's the original. PASS on Putin, because a political figure is a hard line (V13). PASS on CREDIT/MCP: only 54% buys, and a tech-name ticker with no GitHub checked is a likely LARP (V1). PASS on SIS for the same LARP risk on an 'AI satellite' claim, plus it's down 17% on the hour. PASS on CUM: it's 6 minutes old and I don't snipe new pairs. Owner's note is taken: clean setups that earn an 8 get rated an 8. But conviction comes from due diligence, not from the Nov 5 deadline.
 
 ## Moving most in its scans, last 30 min (1h volume)
+- KIM: $1,495,525 1h vol, $326,093 mcap, +684% 1h  
+  CA `8pjfN5Ayb4rucGpYE3tZWN6v3EysizjPx1v62zx1pump`
+- PAWCAT: $926,304 1h vol, $3,068,511 mcap, +454% 1h  
+  CA `762ZqBCd5m2q3QJ5UPkFL5rqdEUeygNkfTZrpGEZpump`
 - CREDIT: $836,246 1h vol, $195,794 mcap, -48% 1h  
   CA `Ewyifvp8X9NxeaKawXamGXBFDisuMfcFfcdvSZ8opump`
+- ANSEM: $424,477 1h vol, $217,043 mcap, -4% 1h  
+  CA `CvRJ8MrnB1AwjrgX25uyeLJiXNSugTo2ZHh8UXDTpump`
 - HALLOWCHAN: $300,939 1h vol, $75,987 mcap, -28% 1h  
   CA `8UVVYBKvHfhP9mN8bHfHGgYiZd1Jb1aVuye1RkdTpump`
-- BNB: $242,672 1h vol, $295,551 mcap, -28% 1h  
-  CA `EYqygbhZjP7EbM4fSn8devctnksAvPAD1Bt57XBFpump`
-- ANSEM: $189,071 1h vol, $94,653 mcap, +101% 1h  
-  CA `Fgmy6MpdrH8jjJ9i8RY53PVVdFdKLz6JX34tHJvcpump`
-- KIM: $119,017 1h vol, $51,483 mcap, -28% 1h  
-  CA `9sNc5nW9XfBSK8Fwh8Ue4mTBmkDutCeZfjFd2x7Dpump`
