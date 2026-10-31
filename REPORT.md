@@ -1,13 +1,13 @@
 # Trencher live report
 
-Updated 2026-10-31T02:16:36Z (paper trading, never real money)
+Updated 2026-10-31T02:31:49Z (paper trading, never real money)
 
 - Equity: $90.20 (-9.8% vs $100 start)
-- Goal: $1,000 by 2026-11-05 05:03Z (pressing for it): at 9% of it, 5.1 days left, needs +60% a day from here
+- Goal: $1,000 by 2026-11-05 05:03Z (pressing for it): at 9% of it, 5.1 days left, needs +60.2% a day from here
 - Closed trades: 14, 2 wins
 - Fees paid: $8.84 (axiom $1.30, network $6.14, pool $1.26), plus $1.92 lost to slippage
 - New trades: on
-- Brain: subscription, 600 calls and 1 plan-limit hits in 48h
+- Brain: subscription, 597 calls and 1 plan-limit hits in 48h
 
 ## Scorecard (after fees)
 - 14 closed, 2 won (14%), net $-9.80
@@ -74,9 +74,19 @@ Updated 2026-10-31T02:16:36Z (paper trading, never real money)
   CA `J5jxG3PFaWpj6BLEQExyC6FSqSvaTKNdQ9G3sZwBpump`
 
 ## Last scan
-- 02:16Z: 5 coins, 5 with pairs, 0 passed the market filters, 0 researched
+- 02:31Z: 2 coins, 2 with pairs, 0 passed the market filters, 0 researched
 
 ## Coins it looked at, and why it passed
+- 02:29Z Apple (MIGRATED, $811,375 mcap, $7,969 5m vol): PASS at conviction 3, PASS: Apple Coin's 5m volume is $8k, only 0.33x its hourly pace, on a spike candle in a fading Apple meta. Blocker: flow below pace. (V1, V6)  
+  CA `6nJVg7wV1UBaWBpHuP7pEHLBd26U4cj6vXnGShobpump`
+- 02:27Z NETWORK (MIGRATED, $231,668 mcap, $2,725 5m vol): PASS at conviction 3, PASS — lost the hourly low on a −16% 5m candle with $2.7k flow. Falling knife, not a pullback (V1, V6).  
+  CA `8THZ69JP2ErZuHVj4G5rcwkFfsQafp5mQsaoQReApump`
+- 02:25Z JOB (MIGRATED, $3,386,795 mcap, $4,093 5m vol): PASS at conviction 3, PASS: 7.6% off the high on $4k of 5m volume with holders unverified. That's chasing a slow coin, with no 1.5x target (V1, V6).  
+  CA `9Pq7aLAbhDG2tTnS22cm6kuysZVcZpLFE368HWuypump`
+- 02:23Z DTS02 (MIGRATED, $37,493 mcap, $58,276 5m vol): PASS at conviction 3, PASS: it's 2 minutes old, already down 35% from the bond spike, and four bigger coins use the same ticker. That's the sniper window, not a pullback. (V1, V5, V6)  
+  CA `F6iU9i9948gDQHS4hTbe2tJbCBgYTpWfqToVqYmspump`
+- 02:19Z Leverhedge (MIGRATED, $513,351 mcap, $5,499 5m vol): PASS at conviction 3, PASS — $5.5k 5m, 0.95x pace, 19% off the high and not the meta leader; prior high only 1.23x away. Blocker: flow below pace (V1, V6).  
+  CA `FWatMYieKhRuJ1yuTcmVG1njRhZWwqHwjR11pBympump`
 - 02:12Z HYPERCHAN (MIGRATED, $94,337 mcap, $3,937 5m vol): PASS at conviction 2, PASS: HYPERCHAN is down 96.8% from its $2.98M peak, lost 75% in a single 15-minute candle, and 5m volume is $3.9k at 0.52x its hourly pace. The story is over and so is the crowd. (V1, V6)  
   CA `3ApVr1xphYMpi9dn3rpqU4hwvpmCQDVwxET1rdCDpump`
 - 02:12Z iApe (MIGRATED, $43,438 mcap, $17,621 5m vol): PASS at conviction 3, PASS: chasing. The last 5m candle is up 60% at 4.1x the hourly pace. That's the PILLSEY trap, and on top of it the holders didn't load and two bigger coins use the same ticker. (V1, V3)  
@@ -87,16 +97,6 @@ Updated 2026-10-31T02:16:36Z (paper trading, never real money)
   CA `EYqygbhZjP7EbM4fSn8devctnksAvPAD1Bt57XBFpump`
 - 02:00Z 旺财 (MIGRATED, $36,511 mcap, $8,694 5m vol): PASS at conviction 3, PASS: 7.6% off the high, straight after a +67% five-minute candle. That's chasing, not a pullback (learned rules, V1).  
   CA `ETtbYva2Wwqu9DgvyuxRRdkTN8NerDgCPA1awGZ1pump`
-- 02:00Z HACKCOIN (no setup, $10,941 mcap, $26,304 5m vol): REJECT, Hack story ("hack" in the name or ticker): these tend to go down, owner rule  
-  CA `9DoEsfrVCHQsuy9xr4v81d6FdX9QT1rLxohNK7ycpump`
-- 01:55Z GATO (MIGRATED, $4,925,021 mcap, $3,489 5m vol): PASS at conviction 2, PASS: flow below pace. $3.5k on the 5m, 0.38 buy ratio, sellers in charge, 2% off the 24h high. That's a dead chart near the top. (V1, V6)  
-  CA `HsprHxBRgiVaQdRf3TnKNuZZtaX9JUSPgMFdAkk6pump`
-- 01:53Z LUMI (MIGRATED, $216,541 mcap, $52,264 5m vol): PASS at conviction 3, PASS — LUMI is sitting at its own high (0% off), under an hour old, with 5m volume down to 0.47x its pace. That's chasing a fresh spike into a fade. Wait for a pullback that holds. (V1, V6)  
-  CA `HvitmAeh6TkToQonoiNwqWcrZsYdYiaSZHP7yMmspump`
-- 01:49Z HACKINU (no setup, $6,053 mcap, $0 5m vol): REJECT, Hack story ("hack" in the name or ticker): these tend to go down, owner rule  
-  CA `HD2qqwAeLkyXnboo5cSGSdGw4oHCbvNEvWsgDSgWpump`
-- 01:43Z Apple (MIGRATED, $605,018 mcap, $18,315 5m vol): PASS at conviction 3, PASS: 5m volume is running at 0.26x the hourly pace on a 1-hour-old coin in a fading Apple meta, with 22 other coins on the same ticker. The crowd is leaving. (V1, V6)  
-  CA `6nJVg7wV1UBaWBpHuP7pEHLBd26U4cj6vXnGShobpump`
 
 ## What its skips did next (last 48h)
 A skip "ran" if the coin reached the first target (1.5x) from the skip price before a 20% drop, "dumped" if the drop came first. Sampled every 10 min, followed 6h.
@@ -107,14 +107,14 @@ A skip "ran" if the coin reached the first target (1.5x) from the skip price bef
     CA `FDwCosavNvMiFB812ajJp3gG7eZ9c4bpgcnY6fDQpump`
   - ran: ZERO up to 1.8x  
     CA `Ddwf94wedgCuMHAkwgti8A7sL2CxvBYJStJBj2cFpump`
-- too new / sniping: blocked 37, ran 7, dumped 30, flat 0, open 0 (saving losses: keep it)
+- too new / sniping: blocked 38, ran 7, dumped 31, flat 0, open 0 (saving losses: keep it)
   - ran: ZI up to 1.7x  
     CA `5q45EK4mRhuiuBmRYoaDs4m2xweaV7gn3zsFhsvcpump`
   - ran: BEAR up to 1.59x  
     CA `6i4ebPt8dpGchB2A1ELpTz3B72dy5DkzNpFMNtUSpump`
   - ran: HyPepe up to 1.5x  
     CA `G8TdzgpUQXQAxJvarNKPXRGv2kh9CsJDK7dCC7Xupump`
-- near the high / chasing: blocked 36, ran 7, dumped 20, flat 1, open 8 (saving losses: keep it)
+- near the high / chasing: blocked 36, ran 8, dumped 20, flat 1, open 7 (saving losses: keep it)
   - ran: DESSA up to 1.52x  
     CA `npz2FhoufQ7pKqhGpaipYWacrAkidyW2yDpVWSvpump`
   - ran: OREN up to 1.58x  
@@ -132,7 +132,7 @@ A skip "ran" if the coin reached the first target (1.5x) from the skip price bef
   - ran: TYGR up to 1.58x  
     CA `5wCqCq6jbppuTocMeq6zd4UywAm64L1QNNxvEDAHpump`
 - dev share over 1%: blocked 14, ran 0, dumped 11, flat 1, open 2 (saving losses: keep it)
-- falling knife / no higher low: blocked 12, ran 0, dumped 10, flat 1, open 1 (saving losses: keep it)
+- falling knife / no higher low: blocked 13, ran 0, dumped 10, flat 1, open 2 (saving losses: keep it)
 - crowd leaving / fading volume: blocked 11, ran 3, dumped 6, flat 0, open 2 (saving losses: keep it)
   - ran: STABLEPAD up to 2.13x  
     CA `AABM3NrYSwKMsEDyanuskY43EH6ySbPpdPZNG1u7pump`
@@ -171,13 +171,13 @@ A skip "ran" if the coin reached the first target (1.5x) from the skip price bef
 Meta: fresh pump.fun launches under an hour old, led by a LUMI vamp war. Original HvitmA…pump is at $141k with $338k on the 5m; vamps at $45k and $3.9k. Second theme is Apple and famous-person coins, and it's fading: iApe is alive at $54k/$31k 5m, but Steve Jobs Coin is -86% and iWould -80% with zero buys. Nicki Minaj Official went +377% on a non-pump contract, likely an impersonation until research says otherwise (V3). Cats (GATO) have no flow: 0.32 buy ratio, $3.9k 5m. Setups: BNB (Broke Nigga Baddie) MIGRATED at $1M, 4.5h old, $19k 5m, 0.63 buys. LUMI original only on a 10%+ pullback with 5m volume at least 0.7x its hourly pace (V1, V6). AgenC at $1.25M with 0.74 buys, pending a LARP check (V1). DESSA at $14.7M with $42k 5m, second tier because it's above the V6 range. PASS on $LAPTOP: political family pushed it and it crashed 98% (V13). Holder, dev and bundle checks run on research; nothing is a buy yet.
 
 ## Moving most in its scans, last 30 min (1h volume)
-- LUMI: $1,326,200 1h vol, $216,541 mcap, +397% 1h  
-  CA `HvitmAeh6TkToQonoiNwqWcrZsYdYiaSZHP7yMmspump`
-- DESSA: $595,271 1h vol, $14,729,172 mcap, -6% 1h  
+- DESSA: $605,977 1h vol, $16,722,724 mcap, +12% 1h  
   CA `npz2FhoufQ7pKqhGpaipYWacrAkidyW2yDpVWSvpump`
 - BNB: $380,822 1h vol, $1,125,689 mcap, +26% 1h  
   CA `EYqygbhZjP7EbM4fSn8devctnksAvPAD1Bt57XBFpump`
-- Lumi: $205,076 1h vol, $3,902 mcap, -89% 1h  
-  CA `7EjoUqfyy5zZJ9ARWrVVt8XY62P3vQDzRuZNEtqrpump`
+- Apple: $290,304 1h vol, $811,375 mcap, +30% 1h  
+  CA `6nJVg7wV1UBaWBpHuP7pEHLBd26U4cj6vXnGShobpump`
 - AgenC: $166,105 1h vol, $1,683,645 mcap, +33% 1h  
   CA `DDG8rjV3TViCqKRQED2QZq4MEaE1uqXgEiosBNpapump`
+- NUTCAT: $100,253 1h vol, $4,043 mcap, +9% 1h  
+  CA `833wX8PxxtxhXym68HTBv5QtaJJVnVTEL5fte3L4GNUT`
