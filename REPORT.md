@@ -1,13 +1,13 @@
 # Trencher live report
 
-Updated 2026-10-31T03:47:38Z (paper trading, never real money)
+Updated 2026-10-31T04:02:49Z (paper trading, never real money)
 
 - Equity: $90.20 (-9.8% vs $100 start)
-- Goal: $1,000 by 2026-11-05 05:03Z (pressing for it): at 9% of it, 5.1 days left, needs +61% a day from here
+- Goal: $1,000 by 2026-11-05 05:03Z (pressing for it): at 9% of it, 5 days left, needs +61.1% a day from here
 - Closed trades: 14, 2 wins
 - Fees paid: $8.84 (axiom $1.30, network $6.14, pool $1.26), plus $1.92 lost to slippage
 - New trades: on
-- Brain: subscription, 602 calls and 1 plan-limit hits in 48h
+- Brain: subscription, 599 calls and 1 plan-limit hits in 48h
 
 ## Scorecard (after fees)
 - 14 closed, 2 won (14%), net $-9.80
@@ -74,9 +74,19 @@ Updated 2026-10-31T03:47:38Z (paper trading, never real money)
   CA `J5jxG3PFaWpj6BLEQExyC6FSqSvaTKNdQ9G3sZwBpump`
 
 ## Last scan
-- 03:46Z: 1 coins, 1 with pairs, 0 passed the market filters, 0 researched
+- 04:02Z: 3 coins, 3 with pairs, 0 passed the market filters, 0 researched
 
 ## Coins it looked at, and why it passed
+- 04:01Z HACKCOIN (no setup, $4,699 mcap, $189 5m vol): REJECT, Hack story ("hack" in the name or ticker): these tend to go down, owner rule  
+  CA `9DoEsfrVCHQsuy9xr4v81d6FdX9QT1rLxohNK7ycpump`
+- 04:00Z Ghosty  (FINAL_STRETCH, $29,431 mcap, $4,814 5m vol): PASS at conviction 3, PASS: chasing a +28% 5m spike 10% under a fresh high, on $4.8k 5m volume with holders unverified. Watchlist it for the Halloween theme (V1, V6).  
+  CA `93HA4DdvkFz18xKYTFxDGj8TFLB3vrE5g1Gpp5rUpump`
+- 03:56Z JOB (MIGRATED, $3,427,177 mcap, $4,225 5m vol): PASS at conviction 3, PASS — 6.5% off the high with $4.2k on the 5m and the only target at 1.07x. Chasing a dog with a job. (V1, V6)  
+  CA `9Pq7aLAbhDG2tTnS22cm6kuysZVcZpLFE368HWuypump`
+- 03:50Z HACKINU (no setup, $4,467 mcap, $0 5m vol): REJECT, Hack story ("hack" in the name or ticker): these tend to go down, owner rule  
+  CA `HD2qqwAeLkyXnboo5cSGSdGw4oHCbvNEvWsgDSgWpump`
+- 03:50Z Leverhedge (MIGRATED, $817,669 mcap, $3,919 5m vol): PASS at conviction 3, PASS — 6.4% off the high with $3.9k 5m at 0.63x pace. Chasing a cooling move. (V1, V6)  
+  CA `FWatMYieKhRuJ1yuTcmVG1njRhZWwqHwjR11pBympump`
 - 03:44Z ChillGivin (FINAL_STRETCH, $24,617 mcap, $4,892 5m vol): PASS at conviction 3, PASS: 17 minutes old, 6% off the high, and the last 5m candle is up 25.6%. I'd be buying the spike. Chasing. (V1, V6)  
   CA `5M35JweGp34ZLhzE6Ke6CuRjrNNR9Z4n4RAEMcpepump`
 - 03:39Z HYPE (FINAL_STRETCH, $30,444 mcap, $2,436 5m vol): PASS at conviction 3, PASS: $2.4k on the 5m, 4% off the high after a +17% candle, and the ticker belongs to Hyperliquid. Chasing a thin curve coin (V1, V6).  
@@ -87,20 +97,10 @@ Updated 2026-10-31T03:47:38Z (paper trading, never real money)
   CA `9RTLWC7rYkmkzzCaqzYUcRkZxJaRE66hSDAQKTBMpump`
 - 03:36Z BNB (DIP, $964,701 mcap, $14,753 5m vol): REJECT, Dip with fading attention is a falling knife, not a dip (5m at 0.39x the hour's pace, under 0.6x)  
   CA `EYqygbhZjP7EbM4fSn8devctnksAvPAD1Bt57XBFpump`
-- 03:26Z GATO (MIGRATED, $4,960,819 mcap, $2,871 5m vol): PASS at conviction 2, PASS: 5m volume is $2.9k with sellers 2:1, and it's only about 5% off the 24h high. Dead flow plus a chasing entry (V1, V6).  
-  CA `HsprHxBRgiVaQdRf3TnKNuZZtaX9JUSPgMFdAkk6pump`
-- 03:24Z LUMI (MIGRATED, $650,121 mcap, $43,018 5m vol): PASS at conviction 4, PASS: the $839k high is only 1.29x away and the crowd is down to 0.46x its hourly pace. Blocker: target below initials (V1, V6).  
-  CA `HvitmAeh6TkToQonoiNwqWcrZsYdYiaSZHP7yMmspump`
-- 03:20Z Halloweenu (FINAL_STRETCH, $35,899 mcap, $33,849 5m vol): PASS at conviction 3, PASS: five minutes old, up 743% and sitting 1.5% under its high. That's a spike I'd be chasing, and five bigger coins already share the ticker (V1, V5).  
-  CA `5bejgwUcBqork98Bhfc4mtXZgd89fTbJ79n7hHqCpump`
-- 03:19Z Lumi (DIP, $30,636 mcap, $4,025 5m vol): PASS at conviction 3, PASS: this is the second Lumi, not the leader. A bigger LUMI is doing $11k on the 5m, this one does $4k, and it bonded, peaked at $90k and fell back to $30k without proving anything. Vamp field, buy the leader or nothing (V1, V6).  
-  CA `5iCwbSuVERt4v19ULqzQLhQzFQQaoJkm9Me6699fpump`
-- 03:18Z LUMI (MIGRATED, $134,716 mcap, $11,196 5m vol): PASS at conviction 3, PASS: 13-minute-old migration that just printed a +32% five-minute candle. That's chasing a spike on a fresh pair, and holders and bundles are blind. (V1, V5)  
-  CA `653joYuZ5EntuKd1bspZakjHdueMxHGs5Lvm7RdWpump`
 
 ## What its skips did next (last 48h)
 A skip "ran" if the coin reached the first target (1.5x) from the skip price before a 20% drop, "dumped" if the drop came first. Sampled every 10 min, followed 6h.
-- too new / sniping: blocked 44, ran 7, dumped 35, flat 0, open 2 (saving losses: keep it)
+- too new / sniping: blocked 44, ran 7, dumped 36, flat 0, open 1 (saving losses: keep it)
   - ran: ZI up to 1.7x  
     CA `5q45EK4mRhuiuBmRYoaDs4m2xweaV7gn3zsFhsvcpump`
   - ran: BEAR up to 1.59x  
@@ -114,7 +114,7 @@ A skip "ran" if the coin reached the first target (1.5x) from the skip price bef
     CA `FDwCosavNvMiFB812ajJp3gG7eZ9c4bpgcnY6fDQpump`
   - ran: ZERO up to 1.8x  
     CA `Ddwf94wedgCuMHAkwgti8A7sL2CxvBYJStJBj2cFpump`
-- near the high / chasing: blocked 38, ran 9, dumped 21, flat 2, open 6 (saving losses: keep it)
+- near the high / chasing: blocked 39, ran 8, dumped 22, flat 2, open 7 (saving losses: keep it)
   - ran: DESSA up to 1.52x  
     CA `npz2FhoufQ7pKqhGpaipYWacrAkidyW2yDpVWSvpump`
   - ran: OREN up to 1.58x  
@@ -133,14 +133,14 @@ A skip "ran" if the coin reached the first target (1.5x) from the skip price bef
     CA `5wCqCq6jbppuTocMeq6zd4UywAm64L1QNNxvEDAHpump`
 - falling knife / no higher low: blocked 14, ran 0, dumped 11, flat 2, open 1 (saving losses: keep it)
 - dev share over 1%: blocked 14, ran 0, dumped 12, flat 1, open 1 (saving losses: keep it)
-- crowd leaving / fading volume: blocked 13, ran 3, dumped 8, flat 0, open 2 (saving losses: keep it)
+- crowd leaving / fading volume: blocked 13, ran 4, dumped 8, flat 0, open 1 (saving losses: keep it)
   - ran: STABLEPAD up to 2.13x  
     CA `AABM3NrYSwKMsEDyanuskY43EH6ySbPpdPZNG1u7pump`
   - ran: HYDESK up to 1.78x  
     CA `BzndCZ2ZrjUA21aVW7t6AWEENRAps3EmdQg9hf94pump`
   - ran: AXIO up to 1.51x  
     CA `3mUcXkpVVkQ5ZJMctz2f1VBk4rwu3NRfNwVQZtDzpump`
-- hack story (owner rule): blocked 10, ran 0, dumped 4, flat 4, open 2 (saving losses: keep it)
+- hack story (owner rule): blocked 10, ran 0, dumped 3, flat 4, open 3 (saving losses: keep it)
 - vamp / copycat: blocked 8, ran 1, dumped 7, flat 0, open 0 (saving losses: keep it)
   - ran: Hedge up to 1.78x  
     CA `7eQagAYSYYhRqRZF5L97Ku8AK94TEpsmnrrsssUkpump`
@@ -171,13 +171,13 @@ A skip "ran" if the coin reached the first target (1.5x) from the skip price bef
 Meta: LUMI vamp war plus a rising Halloween theme; famous-brand coins are fading. Research the original LUMI (HvitmAe…pump, $650k, $43k 5m, 0.62 buys, 2.4h) as MIGRATED. The LUMI copies are dying (-74% to -93%) and the $134k one is a 12-minute-old copycat, so pass. Halloweenu (+743%, $34k 5m) is minutes old: watchlist until it proves itself at a higher cap (V5). Apple Coin fails the 0.7x DIP gate (5m vol 0.46x the hourly pace). DESSA is above the V6 range with 0.48 buys. $LAPTOP is out because a political figure pushed it (V13). The Nov 5 target doesn't raise any conviction score.
 
 ## Moving most in its scans, last 30 min (1h volume)
-- LUMI: $1,126,893 1h vol, $650,121 mcap, +33% 1h  
-  CA `HvitmAeh6TkToQonoiNwqWcrZsYdYiaSZHP7yMmspump`
-- LUMI: $598,063 1h vol, $8,395 mcap, -73% 1h  
-  CA `6VHEqmyE7zJr5RUX8ztS7FFMFGChFkdBx7ShZEWxpump`
-- DESSA: $527,435 1h vol, $16,245,423 mcap, -16% 1h  
-  CA `npz2FhoufQ7pKqhGpaipYWacrAkidyW2yDpVWSvpump`
 - BNB: $459,415 1h vol, $964,701 mcap, -42% 1h  
   CA `EYqygbhZjP7EbM4fSn8devctnksAvPAD1Bt57XBFpump`
+- DESSA: $360,863 1h vol, $14,733,350 mcap, -11% 1h  
+  CA `npz2FhoufQ7pKqhGpaipYWacrAkidyW2yDpVWSvpump`
 - AgenC: $197,605 1h vol, $1,923,074 mcap, +18% 1h  
   CA `DDG8rjV3TViCqKRQED2QZq4MEaE1uqXgEiosBNpapump`
+- 4CHN: $176,032 1h vol, $3,337 mcap, -91% 1h  
+  CA `8i44jWePNBkbTbBAN17qB3DQwdpPC6Bk4g1nk7VHpump`
+- 4CHN: $156,125 1h vol, $82,514 mcap, +116% 1h  
+  CA `9RTLWC7rYkmkzzCaqzYUcRkZxJaRE66hSDAQKTBMpump`
