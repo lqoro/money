@@ -1,13 +1,13 @@
 # Trencher live report
 
-Updated 2026-10-31T08:35:20Z (paper trading, never real money)
+Updated 2026-10-31T08:50:32Z (paper trading, never real money)
 
 - Equity: $90.20 (-9.8% vs $100 start)
-- Goal: $1,000 by 2026-11-05 05:03Z (pressing for it): at 9% of it, 4.9 days left, needs +64.2% a day from here
+- Goal: $1,000 by 2026-11-05 05:03Z (pressing for it): at 9% of it, 4.8 days left, needs +64.4% a day from here
 - Closed trades: 14, 2 wins
 - Fees paid: $8.84 (axiom $1.30, network $6.14, pool $1.26), plus $1.92 lost to slippage
 - New trades: on
-- Brain: subscription, 624 calls and 1 plan-limit hits in 48h
+- Brain: subscription, 621 calls and 1 plan-limit hits in 48h
 
 ## Scorecard (after fees)
 - 14 closed, 2 won (14%), net $-9.80
@@ -74,7 +74,7 @@ Updated 2026-10-31T08:35:20Z (paper trading, never real money)
   CA `J5jxG3PFaWpj6BLEQExyC6FSqSvaTKNdQ9G3sZwBpump`
 
 ## Last scan
-- 08:34Z: 12 coins, 11 with pairs, 0 passed the market filters, 0 researched
+- 08:50Z: 3 coins, 2 with pairs, 0 passed the market filters, 0 researched
 
 ## Coins it looked at, and why it passed
 - 08:30Z JOB (MIGRATED, $3,359,333 mcap, $3,792 5m vol): PASS at conviction 3, PASS — 8.4% off the high with $3.8k on the 5m and no holder data. Chasing a slow coin. (V1, V6)  
@@ -114,7 +114,7 @@ A skip "ran" if the coin reached the first target (1.5x) from the skip price bef
     CA `FDwCosavNvMiFB812ajJp3gG7eZ9c4bpgcnY6fDQpump`
   - ran: ZERO up to 1.8x  
     CA `Ddwf94wedgCuMHAkwgti8A7sL2CxvBYJStJBj2cFpump`
-- near the high / chasing: blocked 41, ran 9, dumped 25, flat 2, open 5 (saving losses: keep it)
+- near the high / chasing: blocked 41, ran 9, dumped 26, flat 2, open 4 (saving losses: keep it)
   - ran: DESSA up to 1.52x  
     CA `npz2FhoufQ7pKqhGpaipYWacrAkidyW2yDpVWSvpump`
   - ran: OREN up to 1.58x  
@@ -174,16 +174,16 @@ A skip "ran" if the coin reached the first target (1.5x) from the skip price bef
 - [2026-10-30 21:37] Expected PILLSEY, the flow leader in the pump.fun meta at $125k 5m, to break its $414k high toward 1.5x; it peaked at 1.32x, never reached initials, fell back through the -20% stop inside 18 minutes, and the half-hold on review only made the loss bigger (-31%). It sat about 20% under the high, so it passed my pullback rule, but I bought right after a +31% five-minute candle at 4.2x the hourly pace, which is chasing a spike, not buying a pullback (V1, V6), and it fits my "near-high skips mostly dump" data. Next time a coin that is up more than ~25% in the last 5 minutes counts as "chasing" even if it's 20% off the high: wait for that candle to retrace and a higher low to form. And once a trade has hit ~1.3x, an early-shakeout stop review sells all of it instead of trimming half.
 
 ## Meta right now
-Meta from scan_movers: crude degen humor and AI/agent tickers, and both mostly die fast. Broke Nigga Baddie (BNB) is the exception: $528k, +18% 1h, $16.2k 5m (about 1x hourly pace), 0.70 buys. AgenC is the AI name with legs ($596k, +32%); TELEMETRY (-62%) and PairBot (-57%) are dead. Cats are fading: GATO 0.36 buys, -11% 1h. iCat is not in the scan, so unverified. Setups: BNB MIGRATED only on a pullback of at least 10% from the local high with buyers returning; it isn't a dip right now, and the slur name limits how wide the audience gets (V6). AgenC is borderline: 13.1h old, $6.6k on the 5m, past the 12h window and under the $10k bar; engage only if 5m reclaims $10k and holder checks are clean. PASS: KERBAL, HygencyPad, Rizzoween (under 30 min old, sniping, V5); Hyped (0.22 buys); Leverhedge, NETWORK, STANK (5m volume under the $2k-$10k bars, V1/V6); $LAPTOP (political figure, V13). The owner's deadline is a reason to press, not evidence; conviction scores still have to be earned.
+The meta right now is fresh pump.fun coins under 2 hours old with people and character jokes: Cramersan ($145k, +74% 1h, $11k 5m, 0.56 buys), Nikita Boar ($121k, $32.6k 5m) and Javits. Animals are spread across the board too: Boar, Anita the Space Spider, iApe. Cats are fading (GATO 0.40 buys, $1.2k 5m) and so is AI/agent (AgenC is down to $5.3k on the 5m, under the $10k bar). Chinese-ticker launches are rising: FĀFĀ is at $31k on the curve with $18k on the 5m and +634% in 18 minutes, and crude humor (CUM) is pulling volume on tiny caps. The setups I'd look at: Cramersan as MIGRATED, only on a 10%+ pullback from its local high with buyers coming back. Nikita Boar as a DIP candidate: it's -52% on the hour, but 5m volume is about 1.2x its hourly pace and buys are 0.60, so attention looks like it's holding (V1). FĀFĀ goes on FINAL_STRETCH watch once it's past the sniping window (V5). PASS on $LAPTOP (a political figure pushed it, V13), GLITCH and NETWORK (5m volume under $1k, dead, V1/V6) and CUM/Anita/LB (5m volume under the $10k bar and still in the sniping window, V1/V5). Owner's push noted: clean setups can earn a 7–9. The hard lines and checks still decide every buy.
 
 ## Moving most in its scans, last 30 min (1h volume)
 - BOAR: $330,445 1h vol, $120,713 mcap, -52% 1h  
   CA `HRdx7yxRVd8cPbuYva1kzMDodtoiHCEQxWSA3Y2dpump`
 - CRAMERSAN: $263,081 1h vol, $144,757 mcap, +74% 1h  
   CA `AhyWCaBF1U1ssTWgjFRrEvqNQdy4NsFCvLYRSJKppump`
-- BNB: $179,712 1h vol, $573,055 mcap, +22% 1h  
-  CA `EYqygbhZjP7EbM4fSn8devctnksAvPAD1Bt57XBFpump`
-- CUM: $130,852 1h vol, $14,847 mcap, +354% 1h  
+- CUM: $89,486 1h vol, $12,987 mcap, -37% 1h  
   CA `CH4somejo6HMscqRV5JqekHC7ZPrk7eepTGRR1jvpump`
-- AgenC: $83,111 1h vol, $588,331 mcap, +4% 1h  
-  CA `DDG8rjV3TViCqKRQED2QZq4MEaE1uqXgEiosBNpapump`
+- Anita: $54,803 1h vol, $12,128 mcap, +340% 1h  
+  CA `EsKnqXKPVGTyBqpRrWGw5Ltz9Qj4t71ZPCDUWhQNpump`
+- JOB: $40,512 1h vol, $3,359,333 mcap, +2% 1h  
+  CA `9Pq7aLAbhDG2tTnS22cm6kuysZVcZpLFE368HWuypump`
