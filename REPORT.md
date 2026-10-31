@@ -1,40 +1,35 @@
 # Trencher live report
 
-Updated 2026-10-31T19:11:50Z (paper trading, never real money)
+Updated 2026-10-31T19:27:09Z (paper trading, never real money)
 
-- Equity: $91.40 (-8.6% vs $100 start)
-- Goal: $1,000 by 2026-11-05 05:03Z (pressing for it): at 9.1% of it, 4.4 days left, needs +72% a day from here
-- Closed trades: 14, 2 wins
-- Fees paid: $9.23 (axiom $1.40, network $6.33, pool $1.36), plus $2.06 lost to slippage
+- Equity: $89.88 (-10.1% vs $100 start)
+- Goal: $1,000 by 2026-11-05 05:03Z (pressing for it): at 9% of it, 4.4 days left, needs +72.9% a day from here
+- Closed trades: 15, 2 wins
+- Fees paid: $9.62 (axiom $1.50, network $6.53, pool $1.45), plus $2.22 lost to slippage
 - New trades: on
-- Brain: subscription, 638 calls and 1 plan-limit hits in 48h
+- Brain: subscription, 641 calls and 1 plan-limit hits in 48h
 
 ## Scorecard (after fees)
-- 14 closed, 2 won (14%), net $-9.80
-- Per trade (expectancy) $-0.70; avg win $+2.10, avg loss $-1.17
-- Gross $+0.84; costs $10.64 (fees $8.71 + slippage $1.93), 1267% of it
-- Give-back: peaked 1.53x on average, banked 0.9x
+- 15 closed, 2 won (13%), net $-10.12
+- Per trade (expectancy) $-0.67; avg win $+2.10, avg loss $-1.10
+- Gross $+1.60; costs $11.72 (fees $9.49 + slippage $2.23), 732% of it
+- Give-back: peaked 1.51x on average, banked 0.9x
 - Hit 1.5x+ and still closed red: 2
   - CPU peaked 1.63x, $-0.43  
     CA `5JbRYEz844bwnKbGx4dRHhrJ6zjrJ194CKdDXtzwgaXo`
   - FLOAT peaked 1.64x, $-0.76  
     CA `Bv1a7cEj5aRnJQhMw4kRQqAFesMSd5LwcDnUzq52BMmr`
 - By exit:
-  - time stop: 6, 0 won, net $-4.54, fees+slip $4.18, peak 1.28x → 0.84x
+  - time stop: 7, 0 won, net $-4.86, fees+slip $5.26, peak 1.28x → 0.86x
   - stop loss: 5, 0 won, net $-9.44, fees+slip $3.75, peak 1.14x → 0.62x
   - trailing stop: 2, 2 won, net $+4.21, fees+slip $2.04, peak 3.32x → 1.72x
   - other: 1, 0 won, net $-0.03, fees+slip $0.67, peak 1.4x → 0.99x
-- To $1,000: $908.60 to go; at $-0.70 a trade this pace doesn't get there
+- To $1,000: $910.12 to go; at $-0.67 a trade this pace doesn't get there
 
 ## Open positions
-- Leverhedge (DIP): cost $10.0, 1.17x, fees $0.39  
-  CA `FWatMYieKhRuJ1yuTcmVG1njRhZWwqHwjR11pBympump`
+- none
 
 ## Recent trades
-- 09:52Z SELL HYPERCHAN for $8.48, fees $0.37  
-  CA `3ApVr1xphYMpi9dn3rpqU4hwvpmCQDVwxET1rdCDpump`
-- 09:52Z CLOSE HYPERCHAN -15% ($-1.52), fees $0.76  
-  CA `3ApVr1xphYMpi9dn3rpqU4hwvpmCQDVwxET1rdCDpump`
 - 10:08Z BUY HYPERCHAN $10.00, fees $0.39  
   CA `3ApVr1xphYMpi9dn3rpqU4hwvpmCQDVwxET1rdCDpump`
 - 10:53Z SELL HYPERCHAN for $9.51, fees $0.39  
@@ -51,10 +46,12 @@ Updated 2026-10-31T19:11:50Z (paper trading, never real money)
   CA `J5jxG3PFaWpj6BLEQExyC6FSqSvaTKNdQ9G3sZwBpump`
 - 18:05Z BUY Leverhedge $10.00, fees $0.39  
   CA `FWatMYieKhRuJ1yuTcmVG1njRhZWwqHwjR11pBympump`
+- 19:21Z SELL Leverhedge for $9.68, fees $0.39  
+  CA `FWatMYieKhRuJ1yuTcmVG1njRhZWwqHwjR11pBympump`
+- 19:21Z CLOSE Leverhedge -3% ($-0.32), fees $0.78  
+  CA `FWatMYieKhRuJ1yuTcmVG1njRhZWwqHwjR11pBympump`
 
 ## Last closes
-- FLOATER: +50% ($+1.48), trailing stop: -30% from peak  
-  CA `J7cqsaTuXUavwA3sp238tSpartUfYwDrJAaHuDvypump`
 - CPU: -14% ($-0.43), time stop: 52 min and only 1.03x  
   CA `5JbRYEz844bwnKbGx4dRHhrJ6zjrJ194CKdDXtzwgaXo`
 - FLOAT: -24% ($-0.76), time stop: 158 min and only 0.92x  
@@ -73,11 +70,23 @@ Updated 2026-10-31T19:11:50Z (paper trading, never real money)
   CA `3ApVr1xphYMpi9dn3rpqU4hwvpmCQDVwxET1rdCDpump`
 - PILLSEY: -31% ($-3.59), stop loss -20% hit (0.78x)  
   CA `J5jxG3PFaWpj6BLEQExyC6FSqSvaTKNdQ9G3sZwBpump`
+- Leverhedge: -3% ($-0.32), time stop: 76 min and only 1.06x  
+  CA `FWatMYieKhRuJ1yuTcmVG1njRhZWwqHwjR11pBympump`
 
 ## Last scan
-- 19:10Z: 4 coins, 3 with pairs, 1 passed the market filters, 1 researched
+- 19:26Z: 6 coins, 5 with pairs, 0 passed the market filters, 0 researched
 
 ## Coins it looked at, and why it passed
+- 19:21Z SIS (MIGRATED, $433,478 mcap, $22,248 5m vol): PASS at conviction 2, PASS: SIS is 9.7% off its high and slowing (5m at 0.65x the hourly pace), and the "super intelligence" site is a template from today with "CA TBA" and no GitHub. That's chasing a LARP (V1, V3).  
+  CA `FdKdpz11GsTofLaNiddrhxrsE4APZYSSfLFqQ9YKpump`
+- 19:19Z OnlyCats (MIGRATED, $332,149 mcap, $116,743 5m vol): PASS at conviction 3, PASS: the last 5 minutes were +68% on a 15-minute-old coin. That's chasing, not buying a pullback (spike rule, V1).  
+  CA `4xFp4RHxPSqBrgmCq772fTW9jgJypm7rxrFvJv5Mpump`
+- 19:18Z GATO (MIGRATED, $6,613,819 mcap, $4,356 5m vol): REJECT, Dev holds 3.3% (>1%) (V13, V17)  
+  CA `HsprHxBRgiVaQdRf3TnKNuZZtaX9JUSPgMFdAkk6pump`
+- 19:13Z DUEL (MIGRATED, $39,752 mcap, $5,446 5m vol): PASS at conviction 3, PASS — 3.5 minutes old, 2.5% off the high, $5.4k 5m. Too new and chasing. Wait for a base. (V1, V6)  
+  CA `4R9jUfYAifDyiLz9Tx6bHpPqkvh3GRom71YEapkUpump`
+- 19:12Z SUPER (MIGRATED, $100,584 mcap, $64,327 5m vol): PASS at conviction 3, PASS: chasing. It's up 55% in the last 5 minutes on 4.5x the hourly volume pace, and the token is 9 minutes old. A tech coin with no GitHub, launched 9 minutes ago, mid-spike. I'm not buying that candle (V1).  
+  CA `8DKHFW32ApiG6xLYrTDTxkWMGxdDyASfNnSaWwCbpump`
 - 19:11Z TRACER (MIGRATED, $191,004 mcap, $9,923 5m vol): PASS at conviction 3, PASS: flow below pace. TRACER is 23% off the high with 5m at $9.9k and 0.48x the hourly pace, and it's an AI "security agent" whose website is down and has no GitHub. Looks like a LARP with the crowd leaving (V1, V6).  
   CA `28dYWwEA6w8WFY2Uiakidujkq6ZPDzBDsGGZ1tM2pump`
 - 19:08Z BULLCAT (MIGRATED, $241,357 mcap, $2,044 5m vol): REJECT, RugCheck danger: Top 10 holders high ownership  
@@ -88,27 +97,17 @@ Updated 2026-10-31T19:11:50Z (paper trading, never real money)
   CA `9Pq7aLAbhDG2tTnS22cm6kuysZVcZpLFE368HWuypump`
 - 19:03Z HYPEPAD (FINAL_STRETCH, $26,934 mcap, $6,302 5m vol): REJECT, RugCheck danger: Creator history of rugged tokens  
   CA `hypePw3aDJdYz3msJdg8nkAUt5uEKTYL7XMkUi7Con2`
-- 18:59Z ANSEM (MIGRATED, $83,620 mcap, $20,586 5m vol): PASS at conviction 3, PASS: ANSEM just went up 82% in one 15-minute candle, 5m volume is running at 4.35x the hourly pace, and 18 bigger coins use the same ticker. That's chasing a spike on a copy. (V1, V3)  
-  CA `CvRJ8MrnB1AwjrgX25uyeLJiXNSugTo2ZHh8UXDTpump`
-- 18:56Z AAPLCAT (DIP, $140,497 mcap, $115,109 5m vol): PASS at conviction 3, PASS: an 11-minute-old migration bleeding off its bond spike with no higher low, under a ticker two bigger coins already use. Blocker: "too new / no higher low" (V1).  
-  CA `GYKnd6jGUSQoBUnj6LdGCBtCWYDgr2Zd6QwNPcy5pump`
-- 18:56Z HI (MIGRATED, $77,760 mcap, $21,774 5m vol): REJECT, Hack story ("hack" in the name or ticker): these tend to go down, owner rule  
-  CA `BJPP9Df54Gi394FFsMJFgJwoBhD1Vku7ZNvxQhYApump`
-- 18:53Z NOESIS (FINAL_STRETCH, $21,277 mcap, $9,896 5m vol): PASS at conviction 3, PASS: chasing. It's up 557% in an hour, 4% off its high, and 5m volume is running 2.1x the hourly pace. On top of that it's an AI coin with no GitHub, so likely a LARP. (V1)  
-  CA `EWP6zj7hQetJ2YUxQi7aWnbCBrUKncv8XwJXj7pSpump`
-- 18:53Z HALLOWEEN (MIGRATED, $48,784 mcap, $49,503 5m vol): PASS at conviction 3, PASS: 12 minutes old, two bigger HALLOWEEN tickers already exist, and 5m volume is 3x the hourly pace. A fresh vamp on a spike, on a holiday meta that's already fading. Blocker: too new / vamp (V1, V3).  
-  CA `74LvYN8vbt7USs8vQy51CMqNgJ1tbbBWDSswBjTTpump`
 
 ## What its skips did next (last 48h)
 A skip "ran" if the coin reached the first target (1.5x) from the skip price before a 20% drop, "dumped" if the drop came first. Sampled every 10 min, followed 6h.
-- too new / sniping: blocked 60, ran 9, dumped 51, flat 0, open 0 (saving losses: keep it)
+- too new / sniping: blocked 62, ran 9, dumped 51, flat 0, open 2 (saving losses: keep it)
   - ran: ZI up to 1.7x  
     CA `5q45EK4mRhuiuBmRYoaDs4m2xweaV7gn3zsFhsvcpump`
   - ran: BEAR up to 1.59x  
     CA `6i4ebPt8dpGchB2A1ELpTz3B72dy5DkzNpFMNtUSpump`
   - ran: HyPepe up to 1.5x  
     CA `G8TdzgpUQXQAxJvarNKPXRGv2kh9CsJDK7dCC7Xupump`
-- near the high / chasing: blocked 49, ran 8, dumped 30, flat 3, open 8 (saving losses: keep it)
+- near the high / chasing: blocked 50, ran 8, dumped 33, flat 3, open 6 (saving losses: keep it)
   - ran: DESSA up to 1.52x  
     CA `npz2FhoufQ7pKqhGpaipYWacrAkidyW2yDpVWSvpump`
   - ran: Catori up to 1.52x  
@@ -134,7 +133,7 @@ A skip "ran" if the coin reached the first target (1.5x) from the skip price bef
     CA `DUTxGHL2LmpfjQaoK6LdZp8WQPoDiwvtDHVDf4fMpump`
   - ran: whitepaper up to 2.16x  
     CA `4tEvXHpd6JrCWJGByBS3qFBAtJbeoiEpgvWLw9hkpump`
-- RugCheck danger: blocked 22, ran 5, dumped 15, flat 0, open 2 (saving losses: keep it)
+- RugCheck danger: blocked 22, ran 5, dumped 16, flat 0, open 1 (saving losses: keep it)
   - ran: HYPEINU up to 1.57x  
     CA `6eccVGkbi8cvAYBGzfDmUwFYrMj8eGZF2xyZqZLkpump`
   - ran: ETF up to 1.87x  
@@ -157,17 +156,16 @@ A skip "ran" if the coin reached the first target (1.5x) from the skip price bef
     CA `3B3SJFo8kvVoMvvkzrUCPdpDeSeCL773AJ3kNLWJpump`
 
 ## Rules it changed from results and skips
-- 10-31 07:15Z dropped: Any fee, friction or minimum-size rule from lessons (The code fee check owns this now (target at least 3x round-trip cost, round trip at most 20% of the position).)
-- 10-31 10:18Z tightened: DIP attention gate at 0.7x the hourly average, plus a live story (code line raised from 0.6 to 0.7) (Owner set 0.7x. DIPs 0/3 for −$3.07. Falling-knife skips: code 2 ran / 16 dumped, no-higher-low 0 / 14. HEXN lost twice on a thin tech story.)
-- 10-31 10:18Z dropped: Any fee, friction or minimum-size rule, and any rule setting the stop, initials or trail (Code checks fees, size and the owner's 1.5x initials / 20% stop / 35% trail. The DIP rule that set its own stop under the higher low was reworded into an entry filter.)
-- 10-31 13:20Z tightened: DIP attention gate at 0.7x the hourly average, now also enforced in code (Owner set the 0.7x gate (no 'rising' needed), so I removed that requirement. I moved the code line from 0.6 to 0.7 to match, since DIP is 0/3 and low-attention dips keep dumping.)
-- 10-31 13:20Z dropped: Any fee/friction cap, minimum position size, or a tighter trail past 4x from the lessons (Code owns the fee/size check, and the owner sets initials 1.5x, stop 20% and trail 35%. None of these belongs in my learned rules.)
-- 10-31 16:23Z tightened: Shallow band widened from 10–20% to 10–25% off the high (flow leader only, max conviction 7) (Every MIGRATED entry above ~25% off the high lost or scratched: HYPERCHAN −15.2% and −4.9% (13.5% off), PILLSEY −31% (~20% off). The winners came from 25–45% off. Entries from 10% are still allowed, as the owner wants. The change only caps conviction in the 20–25% gap.)
-- 10-31 16:23Z loosened: None: no skip reason earned a loosening (Every blocked reason with enough data dumped more often than it ran. The closest was 'crowd leaving' at 4/9. The extra aggression comes from the owner's overrides (10% band, 0.7x DIP gate, honest 7–9 ratings), not from looser hard lines.)
-- 10-31 16:23Z dropped: Fee/size and exit-setting rules (None of the current rules set a fee cap, a minimum size, initials, stop or trail. Code owns those (initials 1.5x, stop 20%, trail 35%). The retired fee parts stay out of the rules.)
+- 10-31 19:22Z tightened: Target ≥1.5x or PASS 'target below initials' (Seven losers peaked between 1.12x and 1.40x and faded (CATCULUS, CATBOT #2, SWAN, HEXN #2, HYPERCHAN #2, PILLSEY, Leverhedge). With initials at 1.5x, a target under 1.5x can't pay.)
+- 10-31 19:22Z dropped: SWAN refinement: sell part at the named prior high when it sits below the initials multiple (The target rule already PASSes these setups, and the owner set initials at 1.5x in code, so a learned partial-exit level would conflict.)
+- 10-31 19:22Z tightened: DIP attention + story gate (≥0.7x hourly pace plus a live crowd) (DIPs are 0/4, −$3.39. Both HEXN trades were thin tech stories, and Something faded flat. Crowd-leaving skips: 4 ran / 9 dumped. The gate stays at the owner's 0.7x, and the code line moves up to match it.)
+- 10-31 19:22Z tightened: Time stop extension now needs ≥1.08x on market cap, not just 'green' (Leverhedge was held to 76 min at 1.06x and still lost −3.2% after the ~5.5% round trip. HYPERCHAN #2 closed at 1.05x and lost −4.9%. FLOAT held 158 min and lost −24.5%.)
+- 10-31 19:22Z tightened: Stop review: an 'unclear' verdict sells immediately (SI and HEXN both reviewed as 'unclear' and filled at −38% and −36% against a −20% stop, both never green (peak 0.99x).)
+- 10-31 19:22Z dropped: Any fee, friction or minimum-size rule, and any learned initials, stop or trail level (Code owns the fee check, and the owner owns the exits (1.5x initials, 20% stop, 35% trail). None are written into my rules.)
+- 10-31 19:26Z tightened: DIP attention gate in code raised to 0.7x the hourly average to match the owner's gate (Code falling-knife skips went 2 ran / 21 dumped; DIPs are 0 for 4 at −$3.39.)
+- 10-31 19:26Z dropped: Any fee, friction or minimum-size rule, and any rule setting initials, stop or trail (Code enforces the fee and size checks; the owner sets initials 1.5x, stop 20% and trail 35%. None of these appear in the rule list.)
 
 ## Recent lessons
-- [2026-10-29 02:03] Expected: the FLOATER that had the crowd out of 23 same-ticker coins ($141k 5m volume, 78% buys, clean holders, 34% off the high) would keep climbing toward $500k on the tokenized-stock meta. What happened: it ran to 2.19x, I took initials as planned (V11), and the trailing stop sold the rest at 1.5x from a $255k mcap for +$1.48, but fees and slippage ($0.89) ate about 30% of the $2.94 cost and nearly a third of the gross gain. Next time I keep picking the vamp-field winner by volume and attention (V1, V6) and keep the 2x initials plus 30% trail, but I don't open a position under ~$5 because fixed fees turn a 2x winner into a 1.5x one.
 - [2026-10-29 02:10] Expected: CPU, the clear flow leader with clean holders, to bounce from a 38% dip toward 2x (V1, V13). What happened: it ran to 1.63x, gave it all back, and I time-stopped at 1.03x mcap after 52 min. Fees $0.48 plus slippage $0.09, about 18% of a $3.16 position, turned a flat trade into −13.7%. Next time: the friction gate and the $5 minimum are hard blocks, so no sub-$5 entries even on a good setup. If a MIGRATED dip-buy reaches 1.5x and 5m volume starts fading before 2x, sell half instead of watching it round-trip.
 - [2026-10-29 02:49] I expected FLOAT, the leading tokenized-stock coin, to run from its $1.04M higher-low reclaim toward $3M (V1, V6), and it did reach 1.64x. Then it faded, and I sat past the 45-minute time stop and got out at 158 minutes. Mcap was only down 7%, but I lost 24.5% because $0.56 of fees and slippage ate 18% of a $3.09 position, which broke my own $5-minimum and friction-gate rules. Next time: no entry under $5 or above 5% friction, no exceptions. If a trade gets past 1.5x before initials, move the stop up to break-even plus fees so a 1.6x peak can't turn into a loss (V11: plan the exit before the entry).
 - [2026-10-29 21:37] Expected: SI, a 35-minute-old migrated coin with $65k 5m volume and verified low bundles (0.65%), would retest its $256k peak, since I bought near the high under my bundle-verified exception. What happened: it never went green (0.99x peak), fell 27% from $218k to $160k in 7 minutes and closed −38% after a stop review, so clean bundle data did not protect a near-high momentum entry in a fresh post-migration dump (V1 pre/post-bond dumps, V6). This backs my "MIGRATED entries come on a pullback" rule over the exception, so next time a migrated coin within ~20% of its high waits for the 0.618 or POC retest even with clean bundles; it's one sample, so I'm not banning the exception, just watching whether it keeps losing.
@@ -177,18 +175,19 @@ A skip "ran" if the coin reached the first target (1.5x) from the skip price bef
 - [2026-10-30 09:52] Expected: HYPERCHAN, the clear leader of a 20-copy vamp field and 13.5% off its high, would retest $2.28M or break out. I bought a probe anyway, with 5m volume under $10k and only 0.73x its hourly pace. Happened: it never went green (peak 0.99x), and the 45-min time stop closed it at -15% (V1). That confirms my existing shallow-band rule rather than adding a new one: in the 10–20% band, being the vamp leader (V1, V2) doesn't waive the volume gate (5m at least $10k and at or above hourly pace, V1/V6), and probe size isn't a way around a failed rule, so next time that's a PASS with the blocker "flow below pace".
 - [2026-10-30 10:53] Expected: HYPERCHAN, the clean flow leader of the HYPE meta at about $2M, would break its 4-hour range and run toward $3M. What happened: it peaked at 1.18x, never broke out, and the 45-minute time stop sold it at 1.05x on market cap, which is still a 4.9% loss after fees. The shallow-band leader rule did its job (clean holders, real flow, no dump), so it stays. What failed was the clock: my written rule is to exit if still under 1.0x at 45 min, but this one closed green on market cap, and a 1.5x move on a $2M coin rarely happens in 45 minutes (V1 talks about small new pairs, V6 about $70k–$11M runners). Next time, for MIGRATED entries above about $1M that are holding their range, give the time stop more room (about 90 min) and still exit if price closes back under the range low. One flat scratch is a sample of one, not a reason to drop the setup.
 - [2026-10-30 21:37] Expected PILLSEY, the flow leader in the pump.fun meta at $125k 5m, to break its $414k high toward 1.5x; it peaked at 1.32x, never reached initials, fell back through the -20% stop inside 18 minutes, and the half-hold on review only made the loss bigger (-31%). It sat about 20% under the high, so it passed my pullback rule, but I bought right after a +31% five-minute candle at 4.2x the hourly pace, which is chasing a spike, not buying a pullback (V1, V6), and it fits my "near-high skips mostly dump" data. Next time a coin that is up more than ~25% in the last 5 minutes counts as "chasing" even if it's 20% off the high: wait for that candle to retrace and a higher low to form. And once a trade has hit ~1.3x, an early-shakeout stop review sells all of it instead of trimming half.
+- [2026-10-31 19:21] Expected: a clean DIP on the proven Leverhedge original (top 10 at 4.6%, a higher low holding, buys 0.73 of the 5m flow) would retest the $1.71M high, with initials at 1.5x (V1 big buys on a dip, V6/V13 clean holders). What happened: it peaked at 1.28x, just under my 1.3x break-even trigger, then faded, and I used the over-$1M extension to hold past 45 min. The time stop sold it at 76 min at 1.06x mcap, which came out -3.2% after fees. This confirms the time-stop rule and refines the extension: "green on mcap" now means at least 1.08x so the ~5.5% round trip is covered, otherwise exit at 45 min. One near-miss at 1.28x isn't enough data to lower the 1.3x break-even trigger.
 
 ## Meta right now
 Meta has moved on: the David Dobrik swarm is dead (AFqw now $2.2k after -99.66% in the hour, 7ku3 has zero volume), so the crawler's AFqw setup is a rug. Now moving: sub-1h pump.fun launches in three themes. (1) Halloween on Oct 31: HALLOWEEN 74Lv, $48k mcap, $49k 5m. (2) Crypto-OG lore: Satoshi Df7k, $76k mcap, $65k 5m; copy CEB3 is already dead, suggesting Df7k is the original. (3) AI/tech names: SIS $337k, +674% in the hour, $18k 5m; NOESIS on the curve; both LARP risk unless real GitHub work. Setups to research: HALLOWEEN MIGRATED, Satoshi Df7k MIGRATED (holder/bundle check decides), SIS only with real product. All entries 10% off the local high, 20% stop; start at 5-6 conviction (probe size) unless checks come back clean, because they are near-new pairs and my data lags. PASS: AFqw/7ku3 rugged with no volume; GATO 5m $3.2k under the $10k bar; BNB 'Broke…' down 35% in the hour at 22h with $14.6k 5m, a weak dip.
 
 ## Moving most in its scans, last 30 min (1h volume)
+- OnlyCats: $484,672 1h vol, $332,149 mcap, +592% 1h  
+  CA `4xFp4RHxPSqBrgmCq772fTW9jgJypm7rxrFvJv5Mpump`
+- SIS: $409,605 1h vol, $433,478 mcap, +49% 1h  
+  CA `FdKdpz11GsTofLaNiddrhxrsE4APZYSSfLFqQ9YKpump`
+- Satoshi: $382,321 1h vol, $14,644 mcap, -66% 1h  
+  CA `Df7kaKskbRMAYEkPEGJ1e33n4RPWDNs9GP9pzPjgpump`
 - TRACER: $250,467 1h vol, $191,004 mcap, +400% 1h  
   CA `28dYWwEA6w8WFY2Uiakidujkq6ZPDzBDsGGZ1tM2pump`
-- AAPLCAT: $242,551 1h vol, $140,497 mcap, +225% 1h  
-  CA `GYKnd6jGUSQoBUnj6LdGCBtCWYDgr2Zd6QwNPcy5pump`
-- HALLOWEEN: $196,337 1h vol, $48,784 mcap, +17% 1h  
-  CA `74LvYN8vbt7USs8vQy51CMqNgJ1tbbBWDSswBjTTpump`
-- BNB: $192,677 1h vol, $305,775 mcap, -35% 1h  
-  CA `EYqygbhZjP7EbM4fSn8devctnksAvPAD1Bt57XBFpump`
-- HYPEPAD: $95,419 1h vol, $26,934 mcap, +94% 1h  
-  CA `hypePw3aDJdYz3msJdg8nkAUt5uEKTYL7XMkUi7Con2`
+- SUPER: $169,982 1h vol, $100,584 mcap, +116% 1h  
+  CA `8DKHFW32ApiG6xLYrTDTxkWMGxdDyASfNnSaWwCbpump`
