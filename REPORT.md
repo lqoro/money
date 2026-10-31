@@ -1,13 +1,13 @@
 # Trencher live report
 
-Updated 2026-10-31T11:37:33Z (paper trading, never real money)
+Updated 2026-10-31T11:52:41Z (paper trading, never real money)
 
 - Equity: $90.20 (-9.8% vs $100 start)
-- Goal: $1,000 by 2026-11-05 05:03Z (pressing for it): at 9% of it, 4.7 days left, needs +66.4% a day from here
+- Goal: $1,000 by 2026-11-05 05:03Z (pressing for it): at 9% of it, 4.7 days left, needs +66.6% a day from here
 - Closed trades: 14, 2 wins
 - Fees paid: $8.84 (axiom $1.30, network $6.14, pool $1.26), plus $1.92 lost to slippage
 - New trades: on
-- Brain: subscription, 635 calls and 1 plan-limit hits in 48h
+- Brain: subscription, 633 calls and 1 plan-limit hits in 48h
 
 ## Scorecard (after fees)
 - 14 closed, 2 won (14%), net $-9.80
@@ -74,9 +74,11 @@ Updated 2026-10-31T11:37:33Z (paper trading, never real money)
   CA `J5jxG3PFaWpj6BLEQExyC6FSqSvaTKNdQ9G3sZwBpump`
 
 ## Last scan
-- 11:37Z: 6 coins, 6 with pairs, 0 passed the market filters, 0 researched
+- 11:51Z: 6 coins, 6 with pairs, 0 passed the market filters, 0 researched
 
 ## Coins it looked at, and why it passed
+- 11:42Z JOB (MIGRATED, $3,286,330 mcap, $2,238 5m vol): PASS at conviction 2, PASS — $2.2k 5m volume with 0.39 buy ratio, sellers in control and no crowd. Flow below the bar. (V1, V6)  
+  CA `9Pq7aLAbhDG2tTnS22cm6kuysZVcZpLFE368HWuypump`
 - 11:31Z GATO (MIGRATED, $5,278,782 mcap, $2,135 5m vol): PASS at conviction 2, PASS: GATO only did $2.1k on the 5m with more sells than buys (0.44), sitting 10% under its high. That's a sleepy $5M chart, not a pullback with a crowd. Blocker: flow below pace (V1, V6).  
   CA `HsprHxBRgiVaQdRf3TnKNuZZtaX9JUSPgMFdAkk6pump`
 - 11:29Z Wojak (FINAL_STRETCH, $31,369 mcap, $35,562 5m vol): PASS at conviction 2, PASS — 5-minute-old Wojak copy (9 bigger same-ticker tokens) on a +813% 5m spike with RugCheck not loaded. Blocker: chasing a spike. (V1, V3, V5)  
@@ -95,19 +97,17 @@ Updated 2026-10-31T11:37:33Z (paper trading, never real money)
   CA `FWatMYieKhRuJ1yuTcmVG1njRhZWwqHwjR11pBympump`
 - 11:11Z BNB (MIGRATED, $475,735 mcap, $16,092 5m vol): PASS at conviction 2, PASS: the BNB "hot wallet got cooked" parody is a Binance-hack story coin (owner rule), and RugCheck didn't load (learned hard block). Blocker: hack story.  
   CA `EYqygbhZjP7EbM4fSn8devctnksAvPAD1Bt57XBFpump`
-- 11:10Z FUN (DIP, $158,268 mcap, $13,787 5m vol): REJECT, Dip with fading attention is a falling knife, not a dip (5m at 0.31x the hour's pace, under 0.6x)  
-  CA `FcZuu76twm89BKVN6WoWhFwfCmAVFPx24NkT8hKvpump`
 
 ## What its skips did next (last 48h)
 A skip "ran" if the coin reached the first target (1.5x) from the skip price before a 20% drop, "dumped" if the drop came first. Sampled every 10 min, followed 6h.
-- too new / sniping: blocked 53, ran 7, dumped 45, flat 0, open 1 (saving losses: keep it)
+- too new / sniping: blocked 53, ran 7, dumped 46, flat 0, open 0 (saving losses: keep it)
   - ran: ZI up to 1.7x  
     CA `5q45EK4mRhuiuBmRYoaDs4m2xweaV7gn3zsFhsvcpump`
   - ran: BEAR up to 1.59x  
     CA `6i4ebPt8dpGchB2A1ELpTz3B72dy5DkzNpFMNtUSpump`
   - ran: HyPepe up to 1.5x  
     CA `G8TdzgpUQXQAxJvarNKPXRGv2kh9CsJDK7dCC7Xupump`
-- near the high / chasing: blocked 43, ran 8, dumped 26, flat 2, open 7 (saving losses: keep it)
+- near the high / chasing: blocked 43, ran 9, dumped 26, flat 2, open 6 (saving losses: keep it)
   - ran: DESSA up to 1.52x  
     CA `npz2FhoufQ7pKqhGpaipYWacrAkidyW2yDpVWSvpump`
   - ran: OREN up to 1.58x  
@@ -128,11 +128,13 @@ A skip "ran" if the coin reached the first target (1.5x) from the skip price bef
     CA `2orqEGSdkm5BMmhdM8TpKCpACk32a3Zaj3Lef7ceqsc6`
   - ran: Bear up to 2.66x  
     CA `Dv6gYYkTav8Pm36UwAywxNCccwSZV1VL1tjiSpDLpump`
-- falling knife (code): blocked 19, ran 2, dumped 15, flat 0, open 2 (saving losses: keep it)
+- falling knife (code): blocked 19, ran 3, dumped 16, flat 0, open 0 (saving losses: keep it)
   - ran: TYGR up to 1.58x  
     CA `5wCqCq6jbppuTocMeq6zd4UywAm64L1QNNxvEDAHpump`
   - ran: LUMI up to 1.76x  
     CA `653joYuZ5EntuKd1bspZakjHdueMxHGs5Lvm7RdWpump`
+  - ran: FUN up to 1.56x  
+    CA `FDSG65a94jA3mdC47VPikD5WARCJN5ffSgot3TfHpump`
 - falling knife / no higher low: blocked 15, ran 0, dumped 11, flat 2, open 2 (saving losses: keep it)
 - crowd leaving / fading volume: blocked 14, ran 4, dumped 10, flat 0, open 0 (saving losses: keep it)
   - ran: STABLEPAD up to 2.13x  
@@ -141,7 +143,7 @@ A skip "ran" if the coin reached the first target (1.5x) from the skip price bef
     CA `BzndCZ2ZrjUA21aVW7t6AWEENRAps3EmdQg9hf94pump`
   - ran: AXIO up to 1.51x  
     CA `3mUcXkpVVkQ5ZJMctz2f1VBk4rwu3NRfNwVQZtDzpump`
-- RugCheck didn't load: blocked 12, ran 0, dumped 7, flat 0, open 5 (saving losses: keep it)
+- RugCheck didn't load: blocked 12, ran 0, dumped 8, flat 0, open 4 (saving losses: keep it)
 - dev share over 1%: blocked 12, ran 0, dumped 11, flat 1, open 0 (saving losses: keep it)
 - hack story (owner rule): blocked 12, ran 1, dumped 4, flat 6, open 1 (saving losses: keep it)
   - ran: ACT:H up to 1.53x  
@@ -170,16 +172,16 @@ A skip "ran" if the coin reached the first target (1.5x) from the skip price bef
 - [2026-10-30 21:37] Expected PILLSEY, the flow leader in the pump.fun meta at $125k 5m, to break its $414k high toward 1.5x; it peaked at 1.32x, never reached initials, fell back through the -20% stop inside 18 minutes, and the half-hold on review only made the loss bigger (-31%). It sat about 20% under the high, so it passed my pullback rule, but I bought right after a +31% five-minute candle at 4.2x the hourly pace, which is chasing a spike, not buying a pullback (V1, V6), and it fits my "near-high skips mostly dump" data. Next time a coin that is up more than ~25% in the last 5 minutes counts as "chasing" even if it's 20% off the high: wait for that candle to retrace and a higher low to form. And once a trade has hit ~1.3x, an early-shakeout stop review sells all of it instead of trimming half.
 
 ## Meta right now
-The meta right now is fresh pumpswap launches under an hour old that borrow a big name or a one-word joke. FUN has two live copies, the 0.2h one at $156k up 287% and the 0.6h one at $58k with $14k 5m volume. VAMPCAT is at $45k with $20.5k 5m, and the blank-name ㅤㅤㅤ is up 407% on the curve. AI jokes are holding as jokes: ATI (Artificial Tax Intelligence) still does $30.8k 5m at $124k. Self-serious coins are fading: AgenC is -57% on $3.6k 5m, and 发发 is -82%. Ignore the crawler's ATI and BNB numbers, the scan is fresher. BNB "Broke Nigga Baddie" has cooled to $7.3k 5m, so it fails the 5m volume bar now even with 0.79 buys (V6). I'd look at three setups. First, ATI as a DIP: down 60% on the hour, but 5m volume is about 0.76x its hourly pace, so attention is holding (V1). Second, the FUN pair: settle which one is the original before touching either, because vamps rarely beat the original (V1, V3). Third, VAMPCAT as MIGRATED, if its holders come back clean. PASS on $LAPTOP: a political figure pushed it (V13). PASS on the hack/drain headlines: hack-story coins are blocked in code. Owner, I hear you on being aggressive, and clean coins will get 7–9. But the hard lines and the 35% max risk don't move for a deadline.
+The meta right now is cats and fresh pumpswap launches under an hour old. Garrett the Apple Cat ($216k, $89k 5m, 0.3h old, 0.65 buys) and Vamp Cat ($109k, $61k 5m, 0.9h, 0.60 buys) are taking most of the volume, and Wojak is running the classic-meme lane on the curve ($31k, $35k 5m, +813%, 6 minutes old). Those are rising. What's fading is the first wave of sub-hour launches: FUN is -57% on $2.6k 5m, ㅤㅤㅤ is -81% on $820, and old cats like GATO ($2.1k 5m), JOB and GLITCH are basically flat. The crawler's own summary is stale (its ATI, BNB and two-FUN numbers aren't in this scan), so I'm going off the scan. Setups I'd look at: Garrett as MIGRATED (the lead cat, best flow; watch for a top since it's +395% on the hour, so I want an entry off the local high, not a chase), Vamp Cat as MIGRATED (the name is a vamp joke, so confirm it isn't a copy of another cat first, V1/V3), and Wojak as FINAL_STRETCH (V1: watch for the pre-bond dump, and out if it stalls). PASS on $LAPTOP, blocker: a political figure pushed it (V13). The hack/drain headlines are no setups at all. Owner, I hear you: clean coins with live flow will get rated 7–9 and sized up, but the hard lines and the 35% max risk don't move.
 
 ## Moving most in its scans, last 30 min (1h volume)
 - Garrett: $619,121 1h vol, $216,362 mcap, +395% 1h  
   CA `7H69zC4jZXBqrHQYT2KZUoatSizMJpp26V7H3SAkpump`
-- FUN: $541,987 1h vol, $158,268 mcap, +300% 1h  
-  CA `FcZuu76twm89BKVN6WoWhFwfCmAVFPx24NkT8hKvpump`
 - VAMPCAT: $434,058 1h vol, $109,190 mcap, +192% 1h  
   CA `4rsSV6L6mQ6jN587eKi5tNgkbgdzc8c9fxEVY8wapump`
-- BNB: $192,727 1h vol, $475,735 mcap, -1% 1h  
-  CA `EYqygbhZjP7EbM4fSn8devctnksAvPAD1Bt57XBFpump`
-- FUN: $146,452 1h vol, $32,232 mcap, -57% 1h  
-  CA `FDSG65a94jA3mdC47VPikD5WARCJN5ffSgot3TfHpump`
+- Stories: $52,568 1h vol, $3,121 mcap, +3% 1h  
+  CA `BxTcVNDFARmSXUVFgJrS1hN4rejjw9L3cxJUiKuypump`
+- ㅤㅤㅤ: $36,148 1h vol, $7,320 mcap, -81% 1h  
+  CA `HAJcmgd5Y4r3Y6yzLSf3sSW18TJEkwvZy2awjaDypump`
+- Wojak: $35,562 1h vol, $31,369 mcap, +813% 1h  
+  CA `BbNuEtiT77Swr4WqGHuUkQY5kZ67M7au7bXkxcArpump`
