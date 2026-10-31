@@ -1,9 +1,9 @@
 # Trencher live report
 
-Updated 2026-10-31T12:38:03Z (paper trading, never real money)
+Updated 2026-10-31T12:53:04Z (paper trading, never real money)
 
 - Equity: $90.20 (-9.8% vs $100 start)
-- Goal: $1,000 by 2026-11-05 05:03Z (pressing for it): at 9% of it, 4.7 days left, needs +67.1% a day from here
+- Goal: $1,000 by 2026-11-05 05:03Z (pressing for it): at 9% of it, 4.7 days left, needs +67.3% a day from here
 - Closed trades: 14, 2 wins
 - Fees paid: $8.84 (axiom $1.30, network $6.14, pool $1.26), plus $1.92 lost to slippage
 - New trades: on
@@ -74,9 +74,15 @@ Updated 2026-10-31T12:38:03Z (paper trading, never real money)
   CA `J5jxG3PFaWpj6BLEQExyC6FSqSvaTKNdQ9G3sZwBpump`
 
 ## Last scan
-- 12:37Z: 5 coins, 5 with pairs, 0 passed the market filters, 0 researched
+- 12:52Z: 3 coins, 3 with pairs, 0 passed the market filters, 0 researched
 
 ## Coins it looked at, and why it passed
+- 12:45Z Leverhedge (MIGRATED, $767,027 mcap, $3,999 5m vol): PASS at conviction 3, PASS — sitting on its hourly low with no higher low and 5m at $4k. That's a falling knife, not a pullback. Blocker: no higher low / flow under $10k (V1, V6).  
+  CA `FWatMYieKhRuJ1yuTcmVG1njRhZWwqHwjR11pBympump`
+- 12:44Z AgenC (MIGRATED, $297,654 mcap, $4,496 5m vol): PASS at conviction 3, PASS: AgenC is 87% off its $2.3M peak with only $4.5k on the 5m. That's a falling knife with a ticker ten bigger coins already use, not a dip. (V1, V6)  
+  CA `DDG8rjV3TViCqKRQED2QZq4MEaE1uqXgEiosBNpapump`
+- 12:42Z BNB (MIGRATED, $350,364 mcap, $17,766 5m vol): PASS at conviction 1, PASS: a Binance-hack parody coin ("hot wallet got cooked"), 82.7% off the peak and sitting on the hourly low with no higher low. Hack story plus falling knife. (Owner hack rule, V1)  
+  CA `EYqygbhZjP7EbM4fSn8devctnksAvPAD1Bt57XBFpump`
 - 12:31Z 삼성찬 (MIGRATED, $127,973 mcap, $38,625 5m vol): PASS at conviction 3, PASS — 12 minutes old, last 5m candle up 27%, RugCheck blind. That's chasing a fresh bond spike. Wait for a base (V1).  
   CA `8WNQQvdcPaNMn6mJLpT64SEMBoDFyjKsHmbB5tknpump`
 - 12:27Z JOB (MIGRATED, $3,260,900 mcap, $2,473 5m vol): PASS at conviction 2, PASS — 11% off the high with the only target at 1.12x, 5m flow $2.5k at 0.91x pace, sellers winning. Blocker: target below initials (V1, V6).  
@@ -91,16 +97,10 @@ Updated 2026-10-31T12:38:03Z (paper trading, never real money)
   CA `FxANinsd5YGbFrGji9Ni1uZFJMMSyFfcVVFXiKzppump`
 - 12:14Z VAMPCAT (MIGRATED, $157,336 mcap, $20,319 5m vol): PASS at conviction 3, PASS: Vamp Cat is only 9% off a high it set 12 minutes ago, holders didn't load, and 13 other coins use the same ticker. That's chasing (V1, V6).  
   CA `4rsSV6L6mQ6jN587eKi5tNgkbgdzc8c9fxEVY8wapump`
-- 12:09Z SUPERELON (MIGRATED, $37,655 mcap, $10,605 5m vol): PASS at conviction 2, PASS — 9 minutes old, RugCheck blind, buying a +31% candle near the high. Blockers: RugCheck didn't load, plus too new and chasing (V1, V6, V13).  
-  CA `DiXxTwKBaL9Mf7heTpx32E1XhYjz1c1zZsZB59cZpump`
-- 12:02Z CATPAD (MIGRATED, $150,894 mcap, $3,025 5m vol): REJECT, RugCheck report unavailable: can't verify mint/freeze/holders, skip  
-  CA `2gTbp2gwH46rqExzabSyrdR3294SLwCp2rSqWDS6Sim1`
-- 12:01Z FUN (DIP, $52,314 mcap, $5,737 5m vol): PASS at conviction 3, PASS — RugCheck didn't load, so holders and bundles are blind, on a launchpad token that bonded and dropped under $70k on thin $5.7k flow. No-load skips went 0 ran, 8 dumped (V6, V13).  
-  CA `FDSG65a94jA3mdC47VPikD5WARCJN5ffSgot3TfHpump`
 
 ## What its skips did next (last 48h)
 A skip "ran" if the coin reached the first target (1.5x) from the skip price before a 20% drop, "dumped" if the drop came first. Sampled every 10 min, followed 6h.
-- too new / sniping: blocked 54, ran 7, dumped 46, flat 0, open 1 (saving losses: keep it)
+- too new / sniping: blocked 54, ran 7, dumped 47, flat 0, open 0 (saving losses: keep it)
   - ran: ZI up to 1.7x  
     CA `5q45EK4mRhuiuBmRYoaDs4m2xweaV7gn3zsFhsvcpump`
   - ran: BEAR up to 1.59x  
@@ -133,10 +133,10 @@ A skip "ran" if the coin reached the first target (1.5x) from the skip price bef
     CA `5wCqCq6jbppuTocMeq6zd4UywAm64L1QNNxvEDAHpump`
   - ran: LUMI up to 1.76x  
     CA `653joYuZ5EntuKd1bspZakjHdueMxHGs5Lvm7RdWpump`
-- RugCheck didn't load: blocked 16, ran 1, dumped 7, flat 0, open 8 (saving losses: keep it)
+- RugCheck didn't load: blocked 16, ran 1, dumped 8, flat 0, open 7 (saving losses: keep it)
   - ran: SUPERELON up to 1.81x  
     CA `DiXxTwKBaL9Mf7heTpx32E1XhYjz1c1zZsZB59cZpump`
-- falling knife / no higher low: blocked 15, ran 0, dumped 12, flat 2, open 1 (saving losses: keep it)
+- falling knife / no higher low: blocked 15, ran 0, dumped 11, flat 2, open 2 (saving losses: keep it)
 - crowd leaving / fading volume: blocked 14, ran 4, dumped 10, flat 0, open 0 (saving losses: keep it)
   - ran: STABLEPAD up to 2.13x  
     CA `AABM3NrYSwKMsEDyanuskY43EH6ySbPpdPZNG1u7pump`
@@ -145,7 +145,7 @@ A skip "ran" if the coin reached the first target (1.5x) from the skip price bef
   - ran: AXIO up to 1.51x  
     CA `3mUcXkpVVkQ5ZJMctz2f1VBk4rwu3NRfNwVQZtDzpump`
 - dev share over 1%: blocked 12, ran 0, dumped 11, flat 1, open 0 (saving losses: keep it)
-- hack story (owner rule): blocked 12, ran 1, dumped 5, flat 6, open 0 (saving losses: keep it)
+- hack story (owner rule): blocked 12, ran 1, dumped 4, flat 6, open 1 (saving losses: keep it)
   - ran: ACT:H up to 1.53x  
     CA `3B3SJFo8kvVoMvvkzrUCPdpDeSeCL773AJ3kNLWJpump`
 
@@ -172,16 +172,16 @@ A skip "ran" if the coin reached the first target (1.5x) from the skip price bef
 - [2026-10-30 21:37] Expected PILLSEY, the flow leader in the pump.fun meta at $125k 5m, to break its $414k high toward 1.5x; it peaked at 1.32x, never reached initials, fell back through the -20% stop inside 18 minutes, and the half-hold on review only made the loss bigger (-31%). It sat about 20% under the high, so it passed my pullback rule, but I bought right after a +31% five-minute candle at 4.2x the hourly pace, which is chasing a spike, not buying a pullback (V1, V6), and it fits my "near-high skips mostly dump" data. Next time a coin that is up more than ~25% in the last 5 minutes counts as "chasing" even if it's 20% off the high: wait for that candle to retrace and a higher low to form. And once a trade has hit ~1.3x, an early-shakeout stop review sells all of it instead of trimming half.
 
 ## Meta right now
-The meta right now is cats and fresh pumpswap launches under an hour old. Garrett the Apple Cat ($216k, $89k 5m, 0.3h old, 0.65 buys) and Vamp Cat ($109k, $61k 5m, 0.9h, 0.60 buys) are taking most of the volume, and Wojak is running the classic-meme lane on the curve ($31k, $35k 5m, +813%, 6 minutes old). Those are rising. What's fading is the first wave of sub-hour launches: FUN is -57% on $2.6k 5m, ㅤㅤㅤ is -81% on $820, and old cats like GATO ($2.1k 5m), JOB and GLITCH are basically flat. The crawler's own summary is stale (its ATI, BNB and two-FUN numbers aren't in this scan), so I'm going off the scan. Setups I'd look at: Garrett as MIGRATED (the lead cat, best flow; watch for a top since it's +395% on the hour, so I want an entry off the local high, not a chase), Vamp Cat as MIGRATED (the name is a vamp joke, so confirm it isn't a copy of another cat first, V1/V3), and Wojak as FINAL_STRETCH (V1: watch for the pre-bond dump, and out if it stalls). PASS on $LAPTOP, blocker: a political figure pushed it (V13). The hack/drain headlines are no setups at all. Owner, I hear you: clean coins with live flow will get rated 7–9 and sized up, but the hard lines and the 35% max risk don't move.
+The meta right now is fresh PumpSwap launches named after big brands and tech figures: SamsungChan ($128k, $38.6k 5m, 12 minutes old, +217%, 0.62 buys) leads it, with AMAZON ($468k, +388%) and Ram Altman ($48k, 0.76 buys) in the same lane. Amazon's flow is only $3.2k on the 5m and RAM's is $2.9k, so the brand theme is rising but SamsungChan is the only one with real volume. What's fading hard is the sub-hour pump-and-dump wave and the AI lane: Wojak is -94% on $123, one FUN and COMPUTE are -98% and -94% on zero volume, GenZ is down to $1.4k, and AgenC, Lily AI and Leverhedge have gone flat. The crawler's summary is stale (Garrett, Vamp Cat and its Wojak numbers aren't in this scan), so I'm ignoring it. Setups I'd look at: SamsungChan as MIGRATED (V1/V6), entry only 10% or more off the local high since it's +217% on the hour, initials at 1.5x, 20% stop. Second, BNB as a DIP: 15.9h old, $350k, -31% on the hour, but 5m volume is $17.8k vs a $13.9k hourly average (1.3x, clears the 0.7x gate) with 0.67 buys. It borrows the BNB ticker and has a crude name that shrinks its audience, so it gets a probe at most. PASS on AMAZON and RAM, blocker: 5m volume under the $10k bar (V6). PASS on $LAPTOP, blocker: a political figure pushed it, and it's already down 98% (V13). Owner, I'll press on clean coins and give them 8 or 9 when the checks earn it, but the hard lines and the 35% max risk don't move.
 
 ## Moving most in its scans, last 30 min (1h volume)
-- VAMPCAT: $358,058 1h vol, $157,336 mcap, +26% 1h  
-  CA `4rsSV6L6mQ6jN587eKi5tNgkbgdzc8c9fxEVY8wapump`
-- Wojak: $230,311 1h vol, $4,389 mcap, -95% 1h  
-  CA `BbNuEtiT77Swr4WqGHuUkQY5kZ67M7au7bXkxcArpump`
 - 삼성찬: $219,532 1h vol, $127,973 mcap, +217% 1h  
   CA `8WNQQvdcPaNMn6mJLpT64SEMBoDFyjKsHmbB5tknpump`
-- FUN: $127,727 1h vol, $1,861 mcap, -99% 1h  
-  CA `FcZuu76twm89BKVN6WoWhFwfCmAVFPx24NkT8hKvpump`
-- GATO: $84,994 1h vol, $6,065,036 mcap, +17% 1h  
-  CA `HsprHxBRgiVaQdRf3TnKNuZZtaX9JUSPgMFdAkk6pump`
+- BNB: $166,638 1h vol, $350,364 mcap, -31% 1h  
+  CA `EYqygbhZjP7EbM4fSn8devctnksAvPAD1Bt57XBFpump`
+- Wojak: $96,883 1h vol, $4,255 mcap, -94% 1h  
+  CA `BbNuEtiT77Swr4WqGHuUkQY5kZ67M7au7bXkxcArpump`
+- AgenC: $75,517 1h vol, $297,654 mcap, +5% 1h  
+  CA `DDG8rjV3TViCqKRQED2QZq4MEaE1uqXgEiosBNpapump`
+- GenZ: $64,748 1h vol, $15,265 mcap, +396% 1h  
+  CA `2ZratH16pqfaV62XnCiPBHeh8UjSihXmSWBRoQZCpump`
