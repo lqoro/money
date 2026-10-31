@@ -1,13 +1,13 @@
 # Trencher live report
 
-Updated 2026-10-31T17:25:41Z (paper trading, never real money)
+Updated 2026-10-31T17:40:44Z (paper trading, never real money)
 
 - Equity: $90.20 (-9.8% vs $100 start)
-- Goal: $1,000 by 2026-11-05 05:03Z (pressing for it): at 9% of it, 4.5 days left, needs +71% a day from here
+- Goal: $1,000 by 2026-11-05 05:03Z (pressing for it): at 9% of it, 4.5 days left, needs +71.2% a day from here
 - Closed trades: 14, 2 wins
 - Fees paid: $8.84 (axiom $1.30, network $6.14, pool $1.26), plus $1.92 lost to slippage
 - New trades: on
-- Brain: subscription, 657 calls and 1 plan-limit hits in 48h
+- Brain: subscription, 653 calls and 1 plan-limit hits in 48h
 
 ## Scorecard (after fees)
 - 14 closed, 2 won (14%), net $-9.80
@@ -74,9 +74,17 @@ Updated 2026-10-31T17:25:41Z (paper trading, never real money)
   CA `J5jxG3PFaWpj6BLEQExyC6FSqSvaTKNdQ9G3sZwBpump`
 
 ## Last scan
-- 17:25Z: 1 coins, 1 with pairs, 0 passed the market filters, 0 researched
+- 17:39Z: 2 coins, 2 with pairs, 0 passed the market filters, 0 researched
 
 ## Coins it looked at, and why it passed
+- 17:37Z LumiBot (DIP, $102,041 mcap, $2,114 5m vol): REJECT, Dip with fading attention is a falling knife, not a dip (5m at 0.28x the hour's pace, under 0.6x)  
+  CA `Dqwrb1YVyL9Ewf5C8eWFhjnqMzZocMC8bbwt2tetpump`
+- 17:31Z HELL (MIGRATED, $2,902,420 mcap, $2,386 5m vol): PASS at conviction 2, PASS — 5m is $2.4k on a $2.9M coin 13% off the high; the shallow band needs $10k+. Flow below pace, and the 'Rockstar partner' story is unverified borrowed branding. (V1, V6)  
+  CA `A75Xx6SeftAmWduv9KGwb2GCjXUAhxozcCUCys9jpump`
+- 17:31Z ROYALE (FINAL_STRETCH, $28,800 mcap, $18,497 5m vol): REJECT, RugCheck danger: Creator history of rugged tokens  
+  CA `8e7rkycmmQLyAvULWA3x37N18RHo1kdQSTpPxnuhpump`
+- 17:28Z David (DIP, $435,089 mcap, $40,989 5m vol): PASS at conviction 3, PASS: 5th-best copy in a vamp field of at least 6 David Dobrik coins, still sliding -34% on the 5m, and nothing ties Dobrik to this CA. Blockers: vamp, not the leader, and no higher low (V1, V2, V3).  
+  CA `AFqw58vGV6vdP5WyqeE4C7aj7qirPpG9dByFGXMYpump`
 - 17:22Z JOB (MIGRATED, $3,455,749 mcap, $2,122 5m vol): PASS at conviction 3, PASS — flow below pace: 12.5% off the high with $2.1k on the 5m at 0.35x the hourly pace and sellers in control. Clean holders don't fix a crowd that left (V1, V6).  
   CA `9Pq7aLAbhDG2tTnS22cm6kuysZVcZpLFE368HWuypump`
 - 17:20Z Leverhedge (DIP, $792,523 mcap, $6,796 5m vol): PASS at conviction 4, PASS — no higher low: three red 15m closes bleeding off the $1.19M spike, nothing reclaimed, and 5m volume of $6.8k is under the $10k bar. Wait for the base. (V1, V6)  
@@ -89,32 +97,24 @@ Updated 2026-10-31T17:25:41Z (paper trading, never real money)
   CA `HvitmAeh6TkToQonoiNwqWcrZsYdYiaSZHP7yMmspump`
 - 17:05Z DAVID (MIGRATED, $582,536 mcap, $49,506 5m vol): REJECT, RugCheck danger: Top 10 holders high ownership  
   CA `6a81PfhejwCM3bB4F3Rnbzk9ALNmg4YGeyjKd5Nxpump`
-- 17:01Z GATO (MIGRATED, $5,919,222 mcap, $5,589 5m vol): REJECT, Dev holds 3.3% (>1%) (V13, V17)  
-  CA `HsprHxBRgiVaQdRf3TnKNuZZtaX9JUSPgMFdAkk6pump`
-- 17:01Z DAVID (MIGRATED, $170,946 mcap, $14,045 5m vol): PASS at conviction 3, PASS — 4th-5th place David Dobrik vamp with $14k on the 5m while Dubrik does $255k and Dobrick $170k. Not the leader. (V1, V2)  
-  CA `7ku3pcgXiGBqCCd6VZ8AyGe7t89BXtVpe6cVXwCLpump`
-- 17:01Z Dobrick (MIGRATED, $348,700 mcap, $170,224 5m vol): PASS at conviction 3, PASS — not the leader of a 14-coin David Dobrik vamp field (Dubrik has more volume), 10 min old and spiking at 5.4x pace. Copy plus chase. (V1, V2, V13)  
-  CA `Bah798iibfrkMginmR845KrwqUtEESPfUPyhgEuwpump`
-- 17:01Z Dubrik (MIGRATED, $708,408 mcap, $255,541 5m vol): PASS at conviction 2, PASS: chasing. It's 8% off the high, the last 5m candle is up 34%, and volume is running 3.9x the hourly pace on a 13-minute-old misspelled David coin (V1, V6).  
-  CA `9iphYfioEjd299fYMDSGSHbixdeTNg7VCdRXhMPGpump`
 
 ## What its skips did next (last 48h)
 A skip "ran" if the coin reached the first target (1.5x) from the skip price before a 20% drop, "dumped" if the drop came first. Sampled every 10 min, followed 6h.
-- too new / sniping: blocked 59, ran 8, dumped 51, flat 0, open 0 (saving losses: keep it)
+- too new / sniping: blocked 58, ran 7, dumped 51, flat 0, open 0 (saving losses: keep it)
   - ran: ZI up to 1.7x  
     CA `5q45EK4mRhuiuBmRYoaDs4m2xweaV7gn3zsFhsvcpump`
   - ran: BEAR up to 1.59x  
     CA `6i4ebPt8dpGchB2A1ELpTz3B72dy5DkzNpFMNtUSpump`
   - ran: HyPepe up to 1.5x  
     CA `G8TdzgpUQXQAxJvarNKPXRGv2kh9CsJDK7dCC7Xupump`
-- near the high / chasing: blocked 44, ran 8, dumped 30, flat 3, open 3 (saving losses: keep it)
+- near the high / chasing: blocked 44, ran 8, dumped 29, flat 3, open 4 (saving losses: keep it)
   - ran: DESSA up to 1.52x  
     CA `npz2FhoufQ7pKqhGpaipYWacrAkidyW2yDpVWSvpump`
   - ran: Catori up to 1.52x  
     CA `FDwCosavNvMiFB812ajJp3gG7eZ9c4bpgcnY6fDQpump`
   - ran: FLYWHEEL up to 2.23x  
     CA `BWMf44rD724R2bdgHWd88CDTVEjuPNQauw8s6S7ipump`
-- top 10 over 25%: blocked 44, ran 7, dumped 34, flat 2, open 1 (saving losses: keep it)
+- top 10 over 25%: blocked 44, ran 7, dumped 35, flat 2, open 0 (saving losses: keep it)
   - ran: HYPERGAMY up to 2.05x  
     CA `CUyNDWGdLPXZ3Gyj1H6TBh5pACgu5nY9WNkSqfMApump`
   - ran: Catori up to 1.52x  
@@ -128,20 +128,20 @@ A skip "ran" if the coin reached the first target (1.5x) from the skip price bef
     CA `DUTxGHL2LmpfjQaoK6LdZp8WQPoDiwvtDHVDf4fMpump`
   - ran: whitepaper up to 2.16x  
     CA `4tEvXHpd6JrCWJGByBS3qFBAtJbeoiEpgvWLw9hkpump`
-- falling knife (code): blocked 23, ran 2, dumped 20, flat 0, open 1 (saving losses: keep it)
+- falling knife (code): blocked 24, ran 2, dumped 20, flat 0, open 2 (saving losses: keep it)
   - ran: TYGR up to 1.58x  
     CA `5wCqCq6jbppuTocMeq6zd4UywAm64L1QNNxvEDAHpump`
   - ran: LUMI up to 1.76x  
     CA `653joYuZ5EntuKd1bspZakjHdueMxHGs5Lvm7RdWpump`
-- falling knife / no higher low: blocked 19, ran 0, dumped 15, flat 2, open 2 (saving losses: keep it)
-- RugCheck danger: blocked 19, ran 5, dumped 13, flat 0, open 1 (saving losses: keep it)
+- falling knife / no higher low: blocked 20, ran 0, dumped 15, flat 2, open 3 (saving losses: keep it)
+- RugCheck danger: blocked 20, ran 5, dumped 14, flat 0, open 1 (saving losses: keep it)
   - ran: HYPEINU up to 1.57x  
     CA `6eccVGkbi8cvAYBGzfDmUwFYrMj8eGZF2xyZqZLkpump`
   - ran: ETF up to 1.87x  
     CA `2orqEGSdkm5BMmhdM8TpKCpACk32a3Zaj3Lef7ceqsc6`
   - ran: Bear up to 2.66x  
     CA `Dv6gYYkTav8Pm36UwAywxNCccwSZV1VL1tjiSpDLpump`
-- dev share over 1%: blocked 14, ran 0, dumped 11, flat 1, open 2 (saving losses: keep it)
+- dev share over 1%: blocked 14, ran 0, dumped 12, flat 1, open 1 (saving losses: keep it)
 - crowd leaving / fading volume: blocked 13, ran 4, dumped 9, flat 0, open 0 (saving losses: keep it)
   - ran: STABLEPAD up to 2.13x  
     CA `AABM3NrYSwKMsEDyanuskY43EH6ySbPpdPZNG1u7pump`
@@ -179,13 +179,13 @@ A skip "ran" if the coin reached the first target (1.5x) from the skip price bef
 Meta: fresh pump.fun launches that spike and die within the hour, plus one live celebrity coin. HALLOWTRUMP, SIS, whitepaper, AgenC, billy and CAP are all down 95-99%, so the Halloween and AI-name lanes are dead. The crawler's meta_summary is wrong: it calls whitepaper surging at $145k, but the scan has it at $2k and -99.6%. I ignored that summary and traded off the movers. Live movers: David Dobrik Coin ($206k, $42k on the 5m, 0.79 buys, 0.2h old), Leverhedge ($1.29M, +42%, $12.6k on the 5m at about 1.8x its hourly pace, 0.88 buys) and STARBASE (on the curve at $16k, $9k on the 5m). Setups: 1) David, MIGRATED, only if Dobrik himself posted this CA (otherwise vamp or farm, V1/V3/V13); buy 10%+ off the local high, 20% stop. 2) Leverhedge, MIGRATED, after a LARP check for real product or GitHub work (V1). 3) STARBASE, FINAL_STRETCH; watch the pre-bond dump and top-50 holder behavior (V1). PASS BNB, blocker: 5m volume is 0.44x the hourly average, under the 0.7x dip gate. PASS DESSA, blocker: $24.5M is above the ~$11M V6 range. PASS anything tied to LAPTOP or HALLOWTRUMP, blocker: political-figure coins are a hard line (V13), and both are dead.
 
 ## Moving most in its scans, last 30 min (1h volume)
-- DAVID: $2,316,850 1h vol, $582,536 mcap, +791% 1h  
-  CA `6a81PfhejwCM3bB4F3Rnbzk9ALNmg4YGeyjKd5Nxpump`
-- Dubrik: $789,029 1h vol, $708,408 mcap, +1245% 1h  
-  CA `9iphYfioEjd299fYMDSGSHbixdeTNg7VCdRXhMPGpump`
-- Dobrick: $380,552 1h vol, $348,700 mcap, +626% 1h  
-  CA `Bah798iibfrkMginmR845KrwqUtEESPfUPyhgEuwpump`
-- DAVID: $223,964 1h vol, $170,946 mcap, +324% 1h  
-  CA `7ku3pcgXiGBqCCd6VZ8AyGe7t89BXtVpe6cVXwCLpump`
-- DavidPizza: $221,765 1h vol, $235,227 mcap, +437% 1h  
-  CA `9jktyPB8BSsmvhdypo8GSMRdZtQv4UFLWDGuHyrBpump`
+- David: $651,326 1h vol, $435,089 mcap, +609% 1h  
+  CA `AFqw58vGV6vdP5WyqeE4C7aj7qirPpG9dByFGXMYpump`
+- whitepaper: $265,253 1h vol, $1,932 mcap, -99% 1h  
+  CA `42yUJZF3AarkppccT6MFQqgvh1LnL47GnQezetWipump`
+- BNB: $190,613 1h vol, $324,017 mcap, +10% 1h  
+  CA `EYqygbhZjP7EbM4fSn8devctnksAvPAD1Bt57XBFpump`
+- KIM: $124,185 1h vol, $10,348 mcap, +142% 1h  
+  CA `J19PfsQAUrgEbBdG56CMthThKYDmoP2NDf4GUqqHpump`
+- Floki: $106,359 1h vol, $3,614 mcap, -89% 1h  
+  CA `DDpovfKqWUBQPpjYYp3u1jUNHCuaigRSHjA9edsgpump`
