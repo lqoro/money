@@ -1,13 +1,13 @@
 # Trencher live report
 
-Updated 2026-10-31T00:30:37Z (paper trading, never real money)
+Updated 2026-10-31T00:45:42Z (paper trading, never real money)
 
 - Equity: $90.20 (-9.8% vs $100 start)
-- Goal: $1,000 by 2026-11-05 05:03Z (pressing for it): at 9% of it, 5.2 days left, needs +59% a day from here
+- Goal: $1,000 by 2026-11-05 05:03Z (pressing for it): at 9% of it, 5.2 days left, needs +59.1% a day from here
 - Closed trades: 14, 2 wins
 - Fees paid: $8.84 (axiom $1.30, network $6.14, pool $1.26), plus $1.92 lost to slippage
 - New trades: on
-- Brain: subscription, 588 calls and 1 plan-limit hits in 48h
+- Brain: subscription, 589 calls and 1 plan-limit hits in 48h
 
 ## Scorecard (after fees)
 - 14 closed, 2 won (14%), net $-9.80
@@ -74,9 +74,21 @@ Updated 2026-10-31T00:30:37Z (paper trading, never real money)
   CA `J5jxG3PFaWpj6BLEQExyC6FSqSvaTKNdQ9G3sZwBpump`
 
 ## Last scan
-- 00:29Z: 5 coins, 5 with pairs, 0 passed the market filters, 0 researched
+- 00:44Z: 3 coins, 3 with pairs, 0 passed the market filters, 0 researched
 
 ## Coins it looked at, and why it passed
+- 00:41Z STANK (DIP, $170,045 mcap, $3,987 5m vol): PASS at conviction 3, PASS: falling knife. STANK is sitting on its hourly low after an -18% five-minute candle, with no higher low and $4k of 5m volume. (V1, V6)  
+  CA `5wsjHxT5nW5jQuVupXUNnYszF3WoWCfGGk9LMcsCJzY8`
+- 00:40Z HYPERCHAN (MIGRATED, $351,240 mcap, $10,596 5m vol): PASS at conviction 3, PASS. HYPERCHAN is 88% off its $2.98M peak, its last 5 minutes are a +116% spike, and flow is at 0.61x the hourly pace. That's a knife with a bounce on it, not a dip (V1, V6).  
+  CA `3ApVr1xphYMpi9dn3rpqU4hwvpmCQDVwxET1rdCDpump`
+- 00:36Z DESSA (MIGRATED, $10,464,519 mcap, $8,598 5m vol): PASS at conviction 3, PASS: chasing. DESSA is 0.5% off a 24h high it printed six minutes ago, with $8.6k of 5m volume, at $10.5M and off the Apple meta. (V1, V6)  
+  CA `npz2FhoufQ7pKqhGpaipYWacrAkidyW2yDpVWSvpump`
+- 00:35Z BNB (MIGRATED, $725,354 mcap, $7,649 5m vol): PASS at conviction 2, PASS — the story is a Binance hot-wallet hack parody, so the hack-story rule blocks it, and 5m flow is $7.6k at 0.48x the hourly pace with the crowd leaving (owner rule, V1, V6).  
+  CA `EYqygbhZjP7EbM4fSn8devctnksAvPAD1Bt57XBFpump`
+- 00:34Z AgenC (MIGRATED, $1,421,130 mcap, $14,178 5m vol): PASS at conviction 3, PASS — flow below pace: 5m volume is 0.25x the hourly pace in the 10–20% band, it's an AI-agent LARP off the meta, and 21 coins share the ticker (V1, V6, HYPERCHAN #1).  
+  CA `DDG8rjV3TViCqKRQED2QZq4MEaE1uqXgEiosBNpapump`
+- 00:34Z $1 (MIGRATED, $95,746 mcap, $50,034 5m vol): PASS at conviction 3, PASS — 9 minutes old, at its high with a +70% 5m candle at 5x hourly volume. That's chasing a post-bond spike with no target to name (V1, V6).  
+  CA `dKySSjXqXMrnAaXwjEJibNq7okM4zPGudayi3vjpump`
 - 00:24Z GATO (MIGRATED, $4,670,963 mcap, $4,415 5m vol): REJECT, Dev holds 3.3% (>1%) (V13, V17)  
   CA `HsprHxBRgiVaQdRf3TnKNuZZtaX9JUSPgMFdAkk6pump`
 - 00:23Z NETWORK (MIGRATED, $254,776 mcap, $3,717 5m vol): REJECT, Dev holds 2.2% (>1%) (V13, V17)  
@@ -85,18 +97,6 @@ Updated 2026-10-31T00:30:37Z (paper trading, never real money)
   CA `66auXVTRw9ZekMeB8h5jdJS9WhMRVz8zfMyzqeinpump`
 - 00:13Z HELL (MIGRATED, $2,887,524 mcap, $5,411 5m vol): PASS at conviction 3, PASS — 7.6% off the high right after a +20% candle, on $5.4k of 5m volume with sells ahead of buys. That's chasing a spike on thin flow (V1, V6).  
   CA `A75Xx6SeftAmWduv9KGwb2GCjXUAhxozcCUCys9jpump`
-- 00:08Z JOB (MIGRATED, $3,177,487 mcap, $4,774 5m vol): PASS at conviction 3, PASS: flow below pace. 5m is $4.8k with sells outnumbering buys on a 13% pullback that's still bleeding. Clean holders don't buy a coin nobody is buying. (V1, V6)  
-  CA `9Pq7aLAbhDG2tTnS22cm6kuysZVcZpLFE368HWuypump`
-- 00:03Z AAPL (MIGRATED, $202,554 mcap, $19,461 5m vol): REJECT, Top 10 hold 33.2% ex-pool (>25%) (V13)  
-  CA `5Afz2mwDXjasvHXZHTT8anNxpec2QYdCiHHhubAWpump`
-- 23:55Z HYPERCHAN (MIGRATED, $323,524 mcap, $2,985 5m vol): PASS at conviction 2, PASS: HYPERCHAN is 89% off its peak with $3k on the 5m at 0.34x the hourly pace and sellers in control. The crowd has left. Falling knife. (V1, V6)  
-  CA `3ApVr1xphYMpi9dn3rpqU4hwvpmCQDVwxET1rdCDpump`
-- 23:54Z AXIO (FINAL_STRETCH, $32,833 mcap, $2,458 5m vol): PASS at conviction 3, PASS: $2.5k on the 5m at 0.54x its hourly pace, 83% bonded and fading inside the 30–40k zone where most new coins die. Flow is below pace (V1, V6).  
-  CA `3mUcXkpVVkQ5ZJMctz2f1VBk4rwu3NRfNwVQZtDzpump`
-- 23:54Z Nvidia (MIGRATED, $392,460 mcap, $125,491 5m vol): PASS at conviction 3, PASS: chasing. It's 6.5% off the high, the last 5m candle is up 40% at 3.6x the hourly pace, and the coin is 13 minutes old. Clean holders don't make a vertical candle a pullback (V1, V6).  
-  CA `EjKydyBwN4rTasguqvakwfarAxxsYUCivqMP95arpump`
-- 23:53Z GLITCH (MIGRATED, $3,640,307 mcap, $2,650 5m vol): REJECT, Top 10 hold 27.9% ex-pool (>25%) (V13)  
-  CA `8Xg89xT8Ve34sKiYqYuMs46mycREsCA2F362UscRpump`
 
 ## What its skips did next (last 48h)
 A skip "ran" if the coin reached the first target (1.5x) from the skip price before a 20% drop, "dumped" if the drop came first. Sampled every 10 min, followed 6h.
@@ -107,14 +107,14 @@ A skip "ran" if the coin reached the first target (1.5x) from the skip price bef
     CA `FDwCosavNvMiFB812ajJp3gG7eZ9c4bpgcnY6fDQpump`
   - ran: ZERO up to 1.8x  
     CA `Ddwf94wedgCuMHAkwgti8A7sL2CxvBYJStJBj2cFpump`
-- too new / sniping: blocked 36, ran 7, dumped 29, flat 0, open 0 (saving losses: keep it)
+- too new / sniping: blocked 37, ran 7, dumped 29, flat 0, open 1 (saving losses: keep it)
   - ran: ZI up to 1.7x  
     CA `5q45EK4mRhuiuBmRYoaDs4m2xweaV7gn3zsFhsvcpump`
   - ran: BEAR up to 1.59x  
     CA `6i4ebPt8dpGchB2A1ELpTz3B72dy5DkzNpFMNtUSpump`
   - ran: HyPepe up to 1.5x  
     CA `G8TdzgpUQXQAxJvarNKPXRGv2kh9CsJDK7dCC7Xupump`
-- near the high / chasing: blocked 32, ran 6, dumped 19, flat 2, open 5 (saving losses: keep it)
+- near the high / chasing: blocked 31, ran 6, dumped 18, flat 1, open 6 (saving losses: keep it)
   - ran: OREN up to 1.58x  
     CA `57vAaMsnAJXkvULtAz7fsi6gRn3bHRJFJsJV1okNpump`
   - ran: Catori up to 1.52x  
@@ -132,8 +132,8 @@ A skip "ran" if the coin reached the first target (1.5x) from the skip price bef
   - ran: TYGR up to 1.58x  
     CA `5wCqCq6jbppuTocMeq6zd4UywAm64L1QNNxvEDAHpump`
 - dev share over 1%: blocked 14, ran 0, dumped 11, flat 1, open 2 (saving losses: keep it)
-- falling knife / no higher low: blocked 11, ran 0, dumped 10, flat 1, open 0 (saving losses: keep it)
-- crowd leaving / fading volume: blocked 9, ran 3, dumped 6, flat 0, open 0 (saving losses: keep it)
+- falling knife / no higher low: blocked 12, ran 0, dumped 9, flat 1, open 2 (saving losses: keep it)
+- crowd leaving / fading volume: blocked 11, ran 3, dumped 6, flat 0, open 2 (saving losses: keep it)
   - ran: STABLEPAD up to 2.13x  
     CA `AABM3NrYSwKMsEDyanuskY43EH6ySbPpdPZNG1u7pump`
   - ran: HYDESK up to 1.78x  
@@ -173,13 +173,13 @@ A skip "ran" if the coin reached the first target (1.5x) from the skip price bef
 The meta is Apple and "i-" brand memes on fresh pump.fun launches. AAPLCAT ($115k, migrated 1.6h ago, +27% 1h), AAPL ($203k, 24 minutes old, +326% 1h, $19.5k 5m volume at about 2x its hourly pace), iApe, iFruit, iWould, APPLE and the old iCoin all carry it, with cats (AAPLCAT, GATO) riding along as a second theme. What's fading is the sub-1h pumps that already round-tripped: George -69%, Zazu -80%, retARDmAx dead at $5 of 5m volume. So I disagree with the crawler on Zazu: that's a falling knife, not a final-stretch setup (V1). TOT and PUMPCAT don't show up in my scan, so they stay unverified until I research them. My best setup is AAPL as MIGRATED, but only on a 10%+ pullback from its local high with 5m volume holding, because chasing a 4x candle on a 24-minute chart is how you become exit liquidity (V1, V6). AAPLCAT is second: its 5m volume is at 0.44x its hourly pace and $7.9k is under the $10k bar, so it fails the DIP gate until flow comes back. Hard no on $LAPTOP: a politician's family pushed it and it already crashed 98% (V13). The "hack/drained" headlines are blocked coins, not a meta.
 
 ## Moving most in its scans, last 30 min (1h volume)
-- George: $302,145 1h vol, $12,349 mcap, -69% 1h  
+- AgenC: $687,607 1h vol, $1,421,130 mcap, +153% 1h  
+  CA `DDG8rjV3TViCqKRQED2QZq4MEaE1uqXgEiosBNpapump`
+- Nvidia: $650,581 1h vol, $1,873 mcap, -96% 1h  
+  CA `EjKydyBwN4rTasguqvakwfarAxxsYUCivqMP95arpump`
+- George: $311,877 1h vol, $16,473 mcap, -58% 1h  
   CA `4poKLzPuwjKJgXM6eF3EqBbMzWgkapi96vbNSkZipump`
+- NATIONS: $230,183 1h vol, $6,266 mcap, -83% 1h  
+  CA `5ahor7yZ9EdXLzfS43aEPsfBsLtgocsi5sGc2Rsa58PG`
 - AAPLCAT: $214,981 1h vol, $114,531 mcap, +27% 1h  
   CA `66auXVTRw9ZekMeB8h5jdJS9WhMRVz8zfMyzqeinpump`
-- iApe: $130,980 1h vol, $11,226 mcap, +22% 1h  
-  CA `9t4JYVrNW8pyjhSqAdSM57svukMFYmnrXziHtjaxpump`
-- AAPL: $110,694 1h vol, $202,554 mcap, +326% 1h  
-  CA `5Afz2mwDXjasvHXZHTT8anNxpec2QYdCiHHhubAWpump`
-- retARDmAx: $76,262 1h vol, $4,025 mcap, -41% 1h  
-  CA `663R8DS144nSPbZNZVyc2LHCBKUPNoLBV7BW6Bojpump`
