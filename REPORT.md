@@ -1,13 +1,13 @@
 # Trencher live report
 
-Updated 2026-10-31T09:20:58Z (paper trading, never real money)
+Updated 2026-10-31T09:36:13Z (paper trading, never real money)
 
 - Equity: $90.20 (-9.8% vs $100 start)
-- Goal: $1,000 by 2026-11-05 05:03Z (pressing for it): at 9% of it, 4.8 days left, needs +64.7% a day from here
+- Goal: $1,000 by 2026-11-05 05:03Z (pressing for it): at 9% of it, 4.8 days left, needs +64.9% a day from here
 - Closed trades: 14, 2 wins
 - Fees paid: $8.84 (axiom $1.30, network $6.14, pool $1.26), plus $1.92 lost to slippage
 - New trades: on
-- Brain: subscription, 624 calls and 1 plan-limit hits in 48h
+- Brain: subscription, 623 calls and 1 plan-limit hits in 48h
 
 ## Scorecard (after fees)
 - 14 closed, 2 won (14%), net $-9.80
@@ -74,7 +74,7 @@ Updated 2026-10-31T09:20:58Z (paper trading, never real money)
   CA `J5jxG3PFaWpj6BLEQExyC6FSqSvaTKNdQ9G3sZwBpump`
 
 ## Last scan
-- 09:20Z: 6 coins, 5 with pairs, 0 passed the market filters, 0 researched
+- 09:35Z: 6 coins, 5 with pairs, 0 passed the market filters, 0 researched
 
 ## Coins it looked at, and why it passed
 - 09:15Z JOB (MIGRATED, $3,282,454 mcap, $2,179 5m vol): PASS at conviction 3, PASS: flow below pace. JOB has $2.2k on the 5m at 0.64x its hourly pace, and sellers outnumber buyers 39 to 17. It's 10% off the high, so this would be paying near-high prices into a crowd that's leaving (V1, V6).  
@@ -100,7 +100,7 @@ Updated 2026-10-31T09:20:58Z (paper trading, never real money)
 
 ## What its skips did next (last 48h)
 A skip "ran" if the coin reached the first target (1.5x) from the skip price before a 20% drop, "dumped" if the drop came first. Sampled every 10 min, followed 6h.
-- too new / sniping: blocked 54, ran 7, dumped 45, flat 0, open 2 (saving losses: keep it)
+- too new / sniping: blocked 54, ran 8, dumped 45, flat 0, open 1 (saving losses: keep it)
   - ran: ZI up to 1.7x  
     CA `5q45EK4mRhuiuBmRYoaDs4m2xweaV7gn3zsFhsvcpump`
   - ran: BEAR up to 1.59x  
@@ -175,13 +175,13 @@ A skip "ran" if the coin reached the first target (1.5x) from the skip price bef
 The meta right now is fresh pump.fun coins under 2 hours old with people and character jokes: Cramersan ($145k, +74% 1h, $11k 5m, 0.56 buys), Nikita Boar ($121k, $32.6k 5m) and Javits. Animals are spread across the board too: Boar, Anita the Space Spider, iApe. Cats are fading (GATO 0.40 buys, $1.2k 5m) and so is AI/agent (AgenC is down to $5.3k on the 5m, under the $10k bar). Chinese-ticker launches are rising: FĀFĀ is at $31k on the curve with $18k on the 5m and +634% in 18 minutes, and crude humor (CUM) is pulling volume on tiny caps. The setups I'd look at: Cramersan as MIGRATED, only on a 10%+ pullback from its local high with buyers coming back. Nikita Boar as a DIP candidate: it's -52% on the hour, but 5m volume is about 1.2x its hourly pace and buys are 0.60, so attention looks like it's holding (V1). FĀFĀ goes on FINAL_STRETCH watch once it's past the sniping window (V5). PASS on $LAPTOP (a political figure pushed it, V13), GLITCH and NETWORK (5m volume under $1k, dead, V1/V6) and CUM/Anita/LB (5m volume under the $10k bar and still in the sniping window, V1/V5). Owner's push noted: clean setups can earn a 7–9. The hard lines and checks still decide every buy.
 
 ## Moving most in its scans, last 30 min (1h volume)
-- 发发: $332,060 1h vol, $243,640 mcap, +438% 1h  
-  CA `CcSRXUReR3VVG92C4rE8FqsLomzwmH6Dn1WhTGebpump`
-- AgenC: $239,077 1h vol, $645,876 mcap, +28% 1h  
-  CA `DDG8rjV3TViCqKRQED2QZq4MEaE1uqXgEiosBNpapump`
-- CRAMERSAN: $193,592 1h vol, $1,864 mcap, -99% 1h  
+- CRAMERSAN: $91,137 1h vol, $1,860 mcap, -99% 1h  
   CA `AhyWCaBF1U1ssTWgjFRrEvqNQdy4NsFCvLYRSJKppump`
-- ATI: $176,161 1h vol, $157,019 mcap, +291% 1h  
-  CA `419P2wrVug9cW5hMwsjEEdhM5aLBt7YFnwn1p7dypump`
-- BNB: $164,813 1h vol, $662,717 mcap, +36% 1h  
-  CA `EYqygbhZjP7EbM4fSn8devctnksAvPAD1Bt57XBFpump`
+- JOB: $40,987 1h vol, $3,282,454 mcap, -1% 1h  
+  CA `9Pq7aLAbhDG2tTnS22cm6kuysZVcZpLFE368HWuypump`
+- LB: $34,863 1h vol, $6,112 mcap, -55% 1h  
+  CA `Dm4hMN9j4HPtRsyLaYWV3pwUhcgh3wiPVTj4UhHKpump`
+- Anita: $32,843 1h vol, $3,798 mcap, -76% 1h  
+  CA `EsKnqXKPVGTyBqpRrWGw5Ltz9Qj4t71ZPCDUWhQNpump`
+- GATO: $23,721 1h vol, $5,615,890 mcap, +10% 1h  
+  CA `HsprHxBRgiVaQdRf3TnKNuZZtaX9JUSPgMFdAkk6pump`
