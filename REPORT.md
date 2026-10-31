@@ -1,13 +1,13 @@
 # Trencher live report
 
-Updated 2026-10-31T06:49:14Z (paper trading, never real money)
+Updated 2026-10-31T07:04:26Z (paper trading, never real money)
 
 - Equity: $90.20 (-9.8% vs $100 start)
-- Goal: $1,000 by 2026-11-05 05:03Z (pressing for it): at 9% of it, 4.9 days left, needs +63% a day from here
+- Goal: $1,000 by 2026-11-05 05:03Z (pressing for it): at 9% of it, 4.9 days left, needs +63.1% a day from here
 - Closed trades: 14, 2 wins
 - Fees paid: $8.84 (axiom $1.30, network $6.14, pool $1.26), plus $1.92 lost to slippage
 - New trades: on
-- Brain: subscription, 613 calls and 1 plan-limit hits in 48h
+- Brain: subscription, 617 calls and 1 plan-limit hits in 48h
 
 ## Scorecard (after fees)
 - 14 closed, 2 won (14%), net $-9.80
@@ -74,9 +74,21 @@ Updated 2026-10-31T06:49:14Z (paper trading, never real money)
   CA `J5jxG3PFaWpj6BLEQExyC6FSqSvaTKNdQ9G3sZwBpump`
 
 ## Last scan
-- 06:48Z: 9 coins, 8 with pairs, 0 passed the market filters, 0 researched
+- 07:03Z: 9 coins, 8 with pairs, 1 passed the market filters, 1 researched
 
 ## Coins it looked at, and why it passed
+- 07:03Z TITTYVERSE (DIP, $156,496 mcap, $41,630 5m vol): PASS at conviction 2, PASS: falling knife. It's down 33% in the last 5 minutes, 60% off a peak from 18 minutes ago, with no higher low, and its own website shows a different CA. Blocker: no higher low (V1, V3).  
+  CA `4rYEicv2uE1MnV6gB754MivhbXELEPRoykqTp6Mypump`
+- 07:02Z iCat (MIGRATED, $440,524 mcap, $4,603 5m vol): PASS at conviction 3, PASS: 5m volume is $4.6k, only 0.28x its hourly pace, and the coin sits in the shallow band 13.6% off its high. The blocker is flow below pace. The crowd that pushed it to $510k has gone quiet (V1, V6).  
+  CA `FHHxyowUnk6oVKF9FV1U9zyt9YFEr2vu68gbpkKcpump`
+- 06:59Z JOB (MIGRATED, $3,344,480 mcap, $3,377 5m vol): PASS at conviction 2, PASS: JOB is a fading old dog. 5m volume is $3.4k, sellers outnumber buyers and price sits 8.8% under its high. No flow, no pullback, no trade. (V1, V6)  
+  CA `9Pq7aLAbhDG2tTnS22cm6kuysZVcZpLFE368HWuypump`
+- 06:57Z Ape (MIGRATED, $49,085 mcap, $43,806 5m vol): PASS at conviction 2, PASS — 6 minutes old, 6% off the high right after a +50% candle, five bigger 'Ape' tokens. That's chasing a fresh spike on a probable vamp (V1, V5).  
+  CA `Fo4Tz8HwQrp8wvn2pJwRRCzYcE5P1zeRHYwCtwAjpump`
+- 06:55Z BOAR (MIGRATED, $123,061 mcap, $44,392 5m vol): PASS at conviction 4, PASS: it's 12 minutes old with 15+ copies of the ticker, and the only level I can see above is the $147k high, which is just 1.2x. Blocker: target below initials. Too new to buy without a base (V1, V5).  
+  CA `HRdx7yxRVd8cPbuYva1kzMDodtoiHCEQxWSA3Y2dpump`
+- 06:50Z MONEKO (DIP, $129,899 mcap, $16,928 5m vol): PASS at conviction 3, PASS: falling knife. Down 11.5% on the 5m and 37% on the hour, no higher low, 70% off the high with no story I can see. (V1, DIP rule)  
+  CA `49t765AnJMQAzSUutr9T7rC4QAtGxbqiL374qxsHpump`
 - 06:45Z offline (DIP, $53,674 mcap, $4,205 5m vol): PASS at conviction 2, PASS — bonded, dumped back under $70k without proving anything, likely a vamp of 4 bigger 'offline' tickers, and I'd be buying a +70% 15m spike on a saw-tooth chart. (V6, V1, V13)  
   CA `F7ZQtqwJjwQs4VRUAnxg6KRZWPzMvLpKKmUsx4x9pump`
 - 06:40Z AgenC (MIGRATED, $554,344 mcap, $4,969 5m vol): PASS at conviction 3, PASS: down 76% off a $2.3M peak and the crowd is leaving. 5m volume is $5k, 0.53x its hourly pace, which is under my 0.7x DIP gate. Thin "agent" story with no GitHub. Falling knife (V1, V6).  
@@ -85,22 +97,10 @@ Updated 2026-10-31T06:49:14Z (paper trading, never real money)
   CA `EYqygbhZjP7EbM4fSn8devctnksAvPAD1Bt57XBFpump`
 - 06:36Z GATO (MIGRATED, $5,177,827 mcap, $5,778 5m vol): PASS at conviction 3, PASS: "chasing". It's 7.7% off the high with $5.8k on the 5m, sellers leading, and the only target is about 1.08x. (V1, V6)  
   CA `HsprHxBRgiVaQdRf3TnKNuZZtaX9JUSPgMFdAkk6pump`
-- 06:34Z TELEMETRY (FINAL_STRETCH, $26,654 mcap, $59,022 5m vol): PASS at conviction 2, PASS: TELEMETRY is a Binance-hack headline coin, five minutes old, with 13 copies of the ticker. Hack story, sniper's game. Not mine. (Owner hack rule, V5, V1)  
-  CA `GRYvZ8koEDWKWAu31qP3PXZDBHM37FWUyLN99tYDpump`
-- 06:30Z Hyped (MIGRATED, $42,957 mcap, $3,034 5m vol): PASS at conviction 2, PASS: the last 5m candle is +31% at 3.9x the hourly pace on $3k of volume. That's chasing a spike on a $43k coin that never got past $64k. Blocker: chasing (V1, V6).  
-  CA `ADpzsC5eB1yDD5T9LocQ8kpN7jrcW5gobA4FBHuipump`
-- 06:28Z Leverhedge (MIGRATED, $657,473 mcap, $2,800 5m vol): PASS at conviction 3, PASS — $2.8k on the 5m is under my $10k MIGRATED bar, and the only target ($874k high, ~1.33x) is below 1.5x initials. Blocker: flow below gate. (V1, V6)  
-  CA `FWatMYieKhRuJ1yuTcmVG1njRhZWwqHwjR11pBympump`
-- 06:17Z TITTYVERSE (MIGRATED, $126,846 mcap, $41,395 5m vol): PASS at conviction 3, PASS — chasing: +79% 5m candle on a 13-minute-old migration, and the site shows a different CA among 21 same-ticker coins. Wait for a higher low, confirm the original. (V1, V3)  
-  CA `4rYEicv2uE1MnV6gB754MivhbXELEPRoykqTp6Mypump`
-- 06:16Z iCat (MIGRATED, $425,221 mcap, $45,180 5m vol): PASS at conviction 3, PASS — 0.9% off the high after a +24% 5m spike at 2.6x pace. That's chasing, on a site with a placeholder CA and holders unverified (V1, V3, V6).  
-  CA `FHHxyowUnk6oVKF9FV1U9zyt9YFEr2vu68gbpkKcpump`
-- 06:15Z ACT:H (no setup, $3,611 mcap, $228 5m vol): REJECT, Hack story ("hack" in the name or ticker): these tend to go down, owner rule  
-  CA `3B3SJFo8kvVoMvvkzrUCPdpDeSeCL773AJ3kNLWJpump`
 
 ## What its skips did next (last 48h)
 A skip "ran" if the coin reached the first target (1.5x) from the skip price before a 20% drop, "dumped" if the drop came first. Sampled every 10 min, followed 6h.
-- too new / sniping: blocked 49, ran 7, dumped 42, flat 0, open 0 (saving losses: keep it)
+- too new / sniping: blocked 51, ran 7, dumped 42, flat 0, open 2 (saving losses: keep it)
   - ran: ZI up to 1.7x  
     CA `5q45EK4mRhuiuBmRYoaDs4m2xweaV7gn3zsFhsvcpump`
   - ran: BEAR up to 1.59x  
@@ -114,14 +114,13 @@ A skip "ran" if the coin reached the first target (1.5x) from the skip price bef
     CA `FDwCosavNvMiFB812ajJp3gG7eZ9c4bpgcnY6fDQpump`
   - ran: ZERO up to 1.8x  
     CA `Ddwf94wedgCuMHAkwgti8A7sL2CxvBYJStJBj2cFpump`
-- near the high / chasing: blocked 38, ran 9, dumped 24, flat 2, open 3 (saving losses: keep it)
+- near the high / chasing: blocked 39, ran 8, dumped 24, flat 2, open 5 (saving losses: keep it)
   - ran: DESSA up to 1.52x  
     CA `npz2FhoufQ7pKqhGpaipYWacrAkidyW2yDpVWSvpump`
   - ran: OREN up to 1.58x  
     CA `57vAaMsnAJXkvULtAz7fsi6gRn3bHRJFJsJV1okNpump`
   - ran: Catori up to 1.52x  
     CA `FDwCosavNvMiFB812ajJp3gG7eZ9c4bpgcnY6fDQpump`
-- falling knife / no higher low: blocked 19, ran 0, dumped 14, flat 2, open 3 (saving losses: keep it)
 - RugCheck danger: blocked 19, ran 5, dumped 13, flat 1, open 0 (saving losses: keep it)
   - ran: HYPEINU up to 1.57x  
     CA `6eccVGkbi8cvAYBGzfDmUwFYrMj8eGZF2xyZqZLkpump`
@@ -129,10 +128,11 @@ A skip "ran" if the coin reached the first target (1.5x) from the skip price bef
     CA `2orqEGSdkm5BMmhdM8TpKCpACk32a3Zaj3Lef7ceqsc6`
   - ran: Bear up to 2.66x  
     CA `Dv6gYYkTav8Pm36UwAywxNCccwSZV1VL1tjiSpDLpump`
+- falling knife / no higher low: blocked 18, ran 0, dumped 13, flat 2, open 3 (saving losses: keep it)
 - falling knife (code): blocked 17, ran 1, dumped 15, flat 0, open 1 (saving losses: keep it)
   - ran: TYGR up to 1.58x  
     CA `5wCqCq6jbppuTocMeq6zd4UywAm64L1QNNxvEDAHpump`
-- crowd leaving / fading volume: blocked 15, ran 4, dumped 11, flat 0, open 0 (saving losses: keep it)
+- crowd leaving / fading volume: blocked 14, ran 4, dumped 10, flat 0, open 0 (saving losses: keep it)
   - ran: STABLEPAD up to 2.13x  
     CA `AABM3NrYSwKMsEDyanuskY43EH6ySbPpdPZNG1u7pump`
   - ran: HYDESK up to 1.78x  
@@ -140,7 +140,7 @@ A skip "ran" if the coin reached the first target (1.5x) from the skip price bef
   - ran: AXIO up to 1.51x  
     CA `3mUcXkpVVkQ5ZJMctz2f1VBk4rwu3NRfNwVQZtDzpump`
 - dev share over 1%: blocked 13, ran 0, dumped 12, flat 1, open 0 (saving losses: keep it)
-- hack story (owner rule): blocked 11, ran 0, dumped 3, flat 4, open 4 (saving losses: keep it)
+- hack story (owner rule): blocked 11, ran 0, dumped 4, flat 4, open 3 (saving losses: keep it)
 - vamp / copycat: blocked 7, ran 1, dumped 6, flat 0, open 0 (saving losses: keep it)
   - ran: Hedge up to 1.78x  
     CA `7eQagAYSYYhRqRZF5L97Ku8AK94TEpsmnrrsssUkpump`
@@ -171,13 +171,13 @@ A skip "ran" if the coin reached the first target (1.5x) from the skip price bef
 The meta is degen humor plus cats. Crude-joke launches (LUMI, TITTYVERSE, the last nut, HIMS, Broke Nigga Baddie) mostly die within an hour: LUMI -96%, HIMS dead. Cats are holding: iCat is +62% on the hour at $425k with $45k on the 5m (about 2.6x its hourly pace, so the crawler's 0.34x was stale), and GATO is steady at $5M. Old dogs and last cycle's mid-caps are fading (JOB 0.40 buy ratio, Leverhedge $2.8k on the 5m). Setups: iCat MIGRATED only on a pullback of at least 10% from the local high with buyers returning, no chasing. BNB ($590k per scan, not the crawler's $1.1M) is 9.8h old, -11.5% on the hour, $16.7k on the 5m (about 0.71x, just over the gate), 0.72 buys, so a borderline DIP pending checks. PASS TITTYVERSE, nut, TELEMETRY: under 15 minutes old, sniping (V5). PASS $LAPTOP: political figure (V13).
 
 ## Moving most in its scans, last 30 min (1h volume)
+- TITTYVERSE: $647,957 1h vol, $156,496 mcap, +295% 1h  
+  CA `4rYEicv2uE1MnV6gB754MivhbXELEPRoykqTp6Mypump`
 - BNB: $281,170 1h vol, $590,553 mcap, -11% 1h  
   CA `EYqygbhZjP7EbM4fSn8devctnksAvPAD1Bt57XBFpump`
-- LUMI: $255,501 1h vol, $1,849 mcap, -98% 1h  
-  CA `HPPspGtHi9kP9RoC2x4qDYbSmrxv7gY1ZRpeEQXqpump`
+- iCat: $199,394 1h vol, $440,524 mcap, +36% 1h  
+  CA `FHHxyowUnk6oVKF9FV1U9zyt9YFEr2vu68gbpkKcpump`
+- BOAR: $182,504 1h vol, $123,061 mcap, +205% 1h  
+  CA `HRdx7yxRVd8cPbuYva1kzMDodtoiHCEQxWSA3Y2dpump`
 - AgenC: $112,269 1h vol, $554,344 mcap, -4% 1h  
   CA `DDG8rjV3TViCqKRQED2QZq4MEaE1uqXgEiosBNpapump`
-- nut: $87,707 1h vol, $4,600 mcap, +69% 1h  
-  CA `63DGTFAHyspFizrSkwNyfrWEadJzvHhAQh6fGUAkpump`
-- offline: $71,658 1h vol, $53,674 mcap, -3% 1h  
-  CA `F7ZQtqwJjwQs4VRUAnxg6KRZWPzMvLpKKmUsx4x9pump`
