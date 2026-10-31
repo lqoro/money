@@ -1,13 +1,13 @@
 # Trencher live report
 
-Updated 2026-10-31T16:25:09Z (paper trading, never real money)
+Updated 2026-10-31T16:40:18Z (paper trading, never real money)
 
 - Equity: $90.20 (-9.8% vs $100 start)
-- Goal: $1,000 by 2026-11-05 05:03Z (pressing for it): at 9% of it, 4.5 days left, needs +70.1% a day from here
+- Goal: $1,000 by 2026-11-05 05:03Z (pressing for it): at 9% of it, 4.5 days left, needs +70.4% a day from here
 - Closed trades: 14, 2 wins
 - Fees paid: $8.84 (axiom $1.30, network $6.14, pool $1.26), plus $1.92 lost to slippage
 - New trades: on
-- Brain: subscription, 658 calls and 1 plan-limit hits in 48h
+- Brain: subscription, 657 calls and 1 plan-limit hits in 48h
 
 ## Scorecard (after fees)
 - 14 closed, 2 won (14%), net $-9.80
@@ -74,9 +74,17 @@ Updated 2026-10-31T16:25:09Z (paper trading, never real money)
   CA `J5jxG3PFaWpj6BLEQExyC6FSqSvaTKNdQ9G3sZwBpump`
 
 ## Last scan
-- 16:24Z: 6 coins, 5 with pairs, 0 passed the market filters, 0 researched
+- 16:39Z: 1 coins, 1 with pairs, 0 passed the market filters, 0 researched
 
 ## Coins it looked at, and why it passed
+- 16:34Z Leverhedge (MIGRATED, $1,288,226 mcap, $12,650 5m vol): PASS at conviction 3, PASS: it's up 64% in five minutes and the only target I can see is the $1.71M high at 1.33x. That's chasing a spike toward a target below initials. Watchlist it for a higher low. (V1, V6)  
+  CA `FWatMYieKhRuJ1yuTcmVG1njRhZWwqHwjR11pBympump`
+- 16:33Z Jason (MIGRATED, $149,341 mcap, $2,865 5m vol): REJECT, Dev holds 1.3% (>1%) (V13, V17)  
+  CA `3qjBR3LfzEAKVS6QXuR2QZ1RFUsXzATWvmjbGB5Dpump`
+- 16:31Z BNB (MIGRATED, $307,731 mcap, $8,344 5m vol): PASS at conviction 2, PASS — blocker "hack story". It's a Binance hack joke ("hot wallet got cooked", "withdrawals paused"), 85% off the peak with 5m volume at 0.44x the hourly pace. A dead story on a fading crowd (owner hack rule, V1, V6).  
+  CA `EYqygbhZjP7EbM4fSn8devctnksAvPAD1Bt57XBFpump`
+- 16:26Z JOB (MIGRATED, $3,127,432 mcap, $3,626 5m vol): PASS at conviction 3, PASS: flow below pace. $3.6k on the 5m, sellers ahead 49 to 39, 15% off the high. Holders are clean but nobody's showing up. (V1, V6)  
+  CA `9Pq7aLAbhDG2tTnS22cm6kuysZVcZpLFE368HWuypump`
 - 16:20Z DAVID (MIGRATED, $1,000,925 mcap, $282,414 5m vol): REJECT, RugCheck danger: Top 10 holders high ownership  
   CA `6a81PfhejwCM3bB4F3Rnbzk9ALNmg4YGeyjKd5Nxpump`
 - 16:19Z Waffles (FINAL_STRETCH, $21,757 mcap, $2,653 5m vol): REJECT, Top 10 hold 27.3% ex-pool (>25%) (V13)  
@@ -89,25 +97,17 @@ Updated 2026-10-31T16:25:09Z (paper trading, never real money)
   CA `AqtAQxLmzoQFJNdxgZN5BLxzYeGuVJNWc2riYCRDpump`
 - 16:14Z MAX (MIGRATED, $71,046 mcap, $131,525 5m vol): PASS at conviction 3, PASS: a single linked wallet cluster holds 14.6% of a 5-minute-old coin, and price is up 61% in the last 5 minutes. That's a bundle with an exit button (V3, V17).  
   CA `2pSQXSwa1FMgAHjZc1oJByQhp8JFJDfqzoRGjPjwpump`
-- 16:09Z whitepaper (MIGRATED, $156,839 mcap, $15,951 5m vol): PASS at conviction 3, PASS: 5.4% off the high, 12 minutes after migrating, last candle +24%. Chasing a fresh spike (V1, V6).  
-  CA `42yUJZF3AarkppccT6MFQqgvh1LnL47GnQezetWipump`
-- 16:08Z CHAIRMAN (FINAL_STRETCH, $21,041 mcap, $33,702 5m vol): REJECT, Top 10 hold 26.2% ex-pool (>25%) (V13)  
-  CA `5D66et62hQ8mv7ymhycuvdyB3pR7871AQL2GK6eTpump`
-- 16:08Z HALLOCAT (MIGRATED, $208,345 mcap, $96,540 5m vol): PASS at conviction 3, PASS: blocker "chasing". Ten minutes old, last 5m candle up 26%, and volume at 5x the hourly pace. That's a spike, not a pullback (V1).  
-  CA `7sPbWf4X2FAKzHffSbfHoAaoHYonjzyAE8bmWYJ4pump`
-- 16:04Z SIS (MIGRATED, $97,963 mcap, $30,218 5m vol): PASS at conviction 2, PASS: SIS is down 87.8% from an $806k peak 18 minutes ago and -73% on the 5m, with volume at 0.4x the hourly pace. Falling knife, no higher low. (V1, V6)  
-  CA `8S49oCFR9Shcvibo42fJft2GH3X5rKgcFisZ57jopump`
 
 ## What its skips did next (last 48h)
 A skip "ran" if the coin reached the first target (1.5x) from the skip price before a 20% drop, "dumped" if the drop came first. Sampled every 10 min, followed 6h.
-- too new / sniping: blocked 56, ran 7, dumped 48, flat 0, open 1 (saving losses: keep it)
+- too new / sniping: blocked 56, ran 7, dumped 49, flat 0, open 0 (saving losses: keep it)
   - ran: ZI up to 1.7x  
     CA `5q45EK4mRhuiuBmRYoaDs4m2xweaV7gn3zsFhsvcpump`
   - ran: BEAR up to 1.59x  
     CA `6i4ebPt8dpGchB2A1ELpTz3B72dy5DkzNpFMNtUSpump`
   - ran: HyPepe up to 1.5x  
     CA `G8TdzgpUQXQAxJvarNKPXRGv2kh9CsJDK7dCC7Xupump`
-- near the high / chasing: blocked 44, ran 8, dumped 29, flat 4, open 3 (saving losses: keep it)
+- near the high / chasing: blocked 45, ran 8, dumped 28, flat 4, open 5 (saving losses: keep it)
   - ran: DESSA up to 1.52x  
     CA `npz2FhoufQ7pKqhGpaipYWacrAkidyW2yDpVWSvpump`
   - ran: Catori up to 1.52x  
@@ -131,15 +131,15 @@ A skip "ran" if the coin reached the first target (1.5x) from the skip price bef
     CA `5wCqCq6jbppuTocMeq6zd4UywAm64L1QNNxvEDAHpump`
   - ran: LUMI up to 1.76x  
     CA `653joYuZ5EntuKd1bspZakjHdueMxHGs5Lvm7RdWpump`
-- RugCheck danger: blocked 19, ran 5, dumped 13, flat 0, open 1 (saving losses: keep it)
+- RugCheck danger: blocked 19, ran 6, dumped 13, flat 0, open 0 (saving losses: keep it)
   - ran: HYPEINU up to 1.57x  
     CA `6eccVGkbi8cvAYBGzfDmUwFYrMj8eGZF2xyZqZLkpump`
   - ran: ETF up to 1.87x  
     CA `2orqEGSdkm5BMmhdM8TpKCpACk32a3Zaj3Lef7ceqsc6`
   - ran: Bear up to 2.66x  
     CA `Dv6gYYkTav8Pm36UwAywxNCccwSZV1VL1tjiSpDLpump`
-- falling knife / no higher low: blocked 18, ran 0, dumped 16, flat 2, open 0 (saving losses: keep it)
-- dev share over 1%: blocked 13, ran 0, dumped 11, flat 1, open 1 (saving losses: keep it)
+- falling knife / no higher low: blocked 17, ran 0, dumped 15, flat 2, open 0 (saving losses: keep it)
+- dev share over 1%: blocked 14, ran 0, dumped 11, flat 1, open 2 (saving losses: keep it)
 - crowd leaving / fading volume: blocked 13, ran 4, dumped 9, flat 0, open 0 (saving losses: keep it)
   - ran: STABLEPAD up to 2.13x  
     CA `AABM3NrYSwKMsEDyanuskY43EH6ySbPpdPZNG1u7pump`
@@ -187,13 +187,13 @@ PASS on BNB for now. Blocker: it's up 35% on the hour, so it isn't a dip, and th
 Owner's push noted. Clean setups can earn an 8, but only if the checks come back clean. The deadline doesn't lower the bar.
 
 ## Moving most in its scans, last 30 min (1h volume)
-- SIS: $903,730 1h vol, $97,963 mcap, +106% 1h  
-  CA `8S49oCFR9Shcvibo42fJft2GH3X5rKgcFisZ57jopump`
-- billy: $607,032 1h vol, $12,065 mcap, -72% 1h  
+- HALLOWTRUMP: $988,646 1h vol, $2,069 mcap, -96% 1h  
+  CA `5kCcoN8Xy2tPWEYi7pGLCxym5kmh3znMT3odrhWvpump`
+- billy: $428,967 1h vol, $10,969 mcap, -90% 1h  
   CA `DUTxGHL2LmpfjQaoK6LdZp8WQPoDiwvtDHVDf4fMpump`
-- DESSA: $478,219 1h vol, $23,407,120 mcap, -12% 1h  
-  CA `npz2FhoufQ7pKqhGpaipYWacrAkidyW2yDpVWSvpump`
 - DAVID: $405,581 1h vol, $1,000,925 mcap, +1420% 1h  
   CA `6a81PfhejwCM3bB4F3Rnbzk9ALNmg4YGeyjKd5Nxpump`
-- whitepaper: $397,959 1h vol, $2,040 mcap, -97% 1h  
+- DESSA: $380,408 1h vol, $23,002,125 mcap, -21% 1h  
+  CA `npz2FhoufQ7pKqhGpaipYWacrAkidyW2yDpVWSvpump`
+- whitepaper: $287,364 1h vol, $2,000 mcap, -99% 1h  
   CA `4tEvXHpd6JrCWJGByBS3qFBAtJbeoiEpgvWLw9hkpump`
