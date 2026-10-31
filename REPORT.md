@@ -1,13 +1,13 @@
 # Trencher live report
 
-Updated 2026-10-31T14:54:28Z (paper trading, never real money)
+Updated 2026-10-31T15:09:40Z (paper trading, never real money)
 
 - Equity: $90.20 (-9.8% vs $100 start)
-- Goal: $1,000 by 2026-11-05 05:03Z (pressing for it): at 9% of it, 4.6 days left, needs +68.9% a day from here
+- Goal: $1,000 by 2026-11-05 05:03Z (pressing for it): at 9% of it, 4.6 days left, needs +69.1% a day from here
 - Closed trades: 14, 2 wins
 - Fees paid: $8.84 (axiom $1.30, network $6.14, pool $1.26), plus $1.92 lost to slippage
 - New trades: on
-- Brain: subscription, 649 calls and 1 plan-limit hits in 48h
+- Brain: subscription, 650 calls and 1 plan-limit hits in 48h
 
 ## Scorecard (after fees)
 - 14 closed, 2 won (14%), net $-9.80
@@ -74,9 +74,21 @@ Updated 2026-10-31T14:54:28Z (paper trading, never real money)
   CA `J5jxG3PFaWpj6BLEQExyC6FSqSvaTKNdQ9G3sZwBpump`
 
 ## Last scan
-- 14:54Z: 16 coins, 14 with pairs, 0 passed the market filters, 0 researched
+- 15:09Z: 6 coins, 4 with pairs, 0 passed the market filters, 0 researched
 
 ## Coins it looked at, and why it passed
+- 15:07Z PUMPE (DIP, $80,649 mcap, $12,661 5m vol): PASS at conviction 3, PASS — 68% dip with 5m at 0.61x hourly pace and 50/50 buys, no higher low, RugCheck blind. Crowd's leaving. (V1, V6)  
+  CA `7Nr1NvVdsczHyLsVT1z3uAJ1tLBL7n6PkP8fYkFbpump`
+- 15:07Z Pikmin (MIGRATED, $140,147 mcap, $26,574 5m vol): PASS at conviction 3, PASS: flow is below pace. 5m volume is only 0.55x the hourly average in the shallow band, RugCheck didn't load, and the prior high is just 1.2x away. Watchlist it. (V1, V6, V13)  
+  CA `2MXhpKgHBREgYYj3bSdorqbuJjkPAve1LTNHtk8Lpump`
+- 15:03Z UNSAFU (DIP, $171,509 mcap, $3,086 5m vol): REJECT, RugCheck report unavailable: can't verify mint/freeze/holders, skip  
+  CA `4eq4JfnpdgqZTzeyR3GnRGHJQ3QhQT6Lp7nKnQ2nS7Rv`
+- 15:03Z Leverhedge (MIGRATED, $1,383,188 mcap, $4,591 5m vol): PASS at conviction 3, PASS: flow below pace. 5m is $4.6k at 0.71x the hourly pace in the shallow band, and RugCheck didn't load. (V1, V6)  
+  CA `FWatMYieKhRuJ1yuTcmVG1njRhZWwqHwjR11pBympump`
+- 15:02Z AgenC (MIGRATED, $163,546 mcap, $3,639 5m vol): PASS at conviction 2, PASS — 93% off the peak with 5m at 0.55x hourly pace and no higher low. A thin AI LARP whose crowd is leaving. Blocker: dead story / falling knife (V1, V6).  
+  CA `DDG8rjV3TViCqKRQED2QZq4MEaE1uqXgEiosBNpapump`
+- 14:59Z BNB (MIGRATED, $327,934 mcap, $17,854 5m vol): PASS at conviction 2, PASS: Binance-hack parody ("hot wallet got cooked, withdrawals paused") and RugCheck didn't load. Hack story plus blind holders. (Owner hack rule, V6, V13)  
+  CA `EYqygbhZjP7EbM4fSn8devctnksAvPAD1Bt57XBFpump`
 - 14:52Z OREN (MIGRATED, $113,742 mcap, $3,718 5m vol): PASS at conviction 2, PASS — $3.7k on the 5m at 5x the hourly pace, sellers ahead, 13% off the high. Thin spike on an AI/tokenized-stock LARP. Blocker: flow below pace (V1, V6).  
   CA `57vAaMsnAJXkvULtAz7fsi6gRn3bHRJFJsJV1okNpump`
 - 14:50Z Hallowinu (DIP, $98,568 mcap, $14,964 5m vol): REJECT, Dip with fading attention is a falling knife, not a dip (5m at 0.23x the hour's pace, under 0.6x)  
@@ -85,29 +97,17 @@ Updated 2026-10-31T14:54:28Z (paper trading, never real money)
   CA `9Pq7aLAbhDG2tTnS22cm6kuysZVcZpLFE368HWuypump`
 - 14:36Z UNSAFU (MIGRATED, $238,012 mcap, $2,035 5m vol): REJECT, RugCheck report unavailable: can't verify mint/freeze/holders, skip  
   CA `4eq4JfnpdgqZTzeyR3GnRGHJQ3QhQT6Lp7nKnQ2nS7Rv`
-- 14:33Z GATO (MIGRATED, $6,148,824 mcap, $2,698 5m vol): PASS at conviction 2, PASS — 7% off the high with $2.7k on the 5m at 0.59x pace and sellers in control. That's chasing a dead tape. (V1, V6)  
-  CA `HsprHxBRgiVaQdRf3TnKNuZZtaX9JUSPgMFdAkk6pump`
-- 14:31Z UNSAFU (MIGRATED, $245,743 mcap, $3,717 5m vol): REJECT, RugCheck report unavailable: can't verify mint/freeze/holders, skip  
-  CA `4eq4JfnpdgqZTzeyR3GnRGHJQ3QhQT6Lp7nKnQ2nS7Rv`
-- 14:25Z UNSAFU (MIGRATED, $212,381 mcap, $3,289 5m vol): REJECT, RugCheck report unavailable: can't verify mint/freeze/holders, skip  
-  CA `4eq4JfnpdgqZTzeyR3GnRGHJQ3QhQT6Lp7nKnQ2nS7Rv`
-- 14:22Z PUMPE (MIGRATED, $190,943 mcap, $8,434 5m vol): PASS at conviction 2, PASS: last 5m candle is up 33% while 5m volume runs at 0.41x the hourly pace. That's a spike on fading flow, 20 minutes after migration. Chasing. (V1, V6)  
-  CA `7Nr1NvVdsczHyLsVT1z3uAJ1tLBL7n6PkP8fYkFbpump`
-- 14:21Z Pikmin (MIGRATED, $37,435 mcap, $54,597 5m vol): PASS at conviction 3, PASS: Pikmin is 4 minutes past migration, 32% off a bond spike, holder data is blank and 26 other coins share the ticker. Blocker: too new, unverified. (V1, V3, V13)  
-  CA `2MXhpKgHBREgYYj3bSdorqbuJjkPAve1LTNHtk8Lpump`
-- 14:17Z WTAIL (MIGRATED, $84,369 mcap, $2,366 5m vol): REJECT, RugCheck report unavailable: can't verify mint/freeze/holders, skip  
-  CA `HBFxk72r4xVqhT8yK8ZFXEEGvpfkoeeSTQXiewZP7SZM`
 
 ## What its skips did next (last 48h)
 A skip "ran" if the coin reached the first target (1.5x) from the skip price before a 20% drop, "dumped" if the drop came first. Sampled every 10 min, followed 6h.
-- too new / sniping: blocked 55, ran 8, dumped 47, flat 0, open 0 (saving losses: keep it)
+- too new / sniping: blocked 54, ran 7, dumped 47, flat 0, open 0 (saving losses: keep it)
   - ran: ZI up to 1.7x  
     CA `5q45EK4mRhuiuBmRYoaDs4m2xweaV7gn3zsFhsvcpump`
   - ran: BEAR up to 1.59x  
     CA `6i4ebPt8dpGchB2A1ELpTz3B72dy5DkzNpFMNtUSpump`
   - ran: HyPepe up to 1.5x  
     CA `G8TdzgpUQXQAxJvarNKPXRGv2kh9CsJDK7dCC7Xupump`
-- near the high / chasing: blocked 44, ran 8, dumped 30, flat 3, open 3 (saving losses: keep it)
+- near the high / chasing: blocked 43, ran 8, dumped 28, flat 3, open 4 (saving losses: keep it)
   - ran: DESSA up to 1.52x  
     CA `npz2FhoufQ7pKqhGpaipYWacrAkidyW2yDpVWSvpump`
   - ran: Catori up to 1.52x  
@@ -122,7 +122,7 @@ A skip "ran" if the coin reached the first target (1.5x) from the skip price bef
   - ran: ZERO up to 1.8x  
     CA `Ddwf94wedgCuMHAkwgti8A7sL2CxvBYJStJBj2cFpump`
 - RugCheck didn't load: blocked 24, ran 0, dumped 15, flat 1, open 8 (saving losses: keep it)
-- falling knife (code): blocked 21, ran 2, dumped 18, flat 0, open 1 (saving losses: keep it)
+- falling knife (code): blocked 21, ran 2, dumped 19, flat 0, open 0 (saving losses: keep it)
   - ran: TYGR up to 1.58x  
     CA `5wCqCq6jbppuTocMeq6zd4UywAm64L1QNNxvEDAHpump`
   - ran: LUMI up to 1.76x  
@@ -134,7 +134,7 @@ A skip "ran" if the coin reached the first target (1.5x) from the skip price bef
     CA `2orqEGSdkm5BMmhdM8TpKCpACk32a3Zaj3Lef7ceqsc6`
   - ran: Bear up to 2.66x  
     CA `Dv6gYYkTav8Pm36UwAywxNCccwSZV1VL1tjiSpDLpump`
-- falling knife / no higher low: blocked 15, ran 0, dumped 13, flat 2, open 0 (saving losses: keep it)
+- falling knife / no higher low: blocked 15, ran 0, dumped 12, flat 2, open 1 (saving losses: keep it)
 - crowd leaving / fading volume: blocked 14, ran 4, dumped 10, flat 0, open 0 (saving losses: keep it)
   - ran: STABLEPAD up to 2.13x  
     CA `AABM3NrYSwKMsEDyanuskY43EH6ySbPpdPZNG1u7pump`
@@ -182,13 +182,13 @@ PASS on PUMPE for now. Blocker: 5m volume of $8.4k is about 0.4x its hourly pace
 Owner's note: I'll press on clean setups, but conviction comes from what the checks find, not from the Nov 5 target. The hard lines don't move.
 
 ## Moving most in its scans, last 30 min (1h volume)
-- DESSA: $871,842 1h vol, $28,656,903 mcap, +60% 1h  
+- DESSA: $1,094,488 1h vol, $29,551,135 mcap, +55% 1h  
   CA `npz2FhoufQ7pKqhGpaipYWacrAkidyW2yDpVWSvpump`
 - Hallowinu: $774,253 1h vol, $98,568 mcap, -54% 1h  
   CA `5YREyyZig2rjst2rZv5e5UtNqP5FrWSjCdPNMcm7pump`
-- NUTS: $122,595 1h vol, $2,943 mcap, -38% 1h  
-  CA `DUDzd9LHATPcvdLLBZsKUPu7HMx4SYt25Wj6XjLspump`
-- SIS: $85,808 1h vol, $17,520 mcap, -58% 1h  
-  CA `3LgReEUsJxzdJz95zCsBXeMzqs8grMGRoUH34jz1pump`
-- 삼성찬: $81,145 1h vol, $1,889 mcap, -99% 1h  
-  CA `8WNQQvdcPaNMn6mJLpT64SEMBoDFyjKsHmbB5tknpump`
+- Pikmin: $578,697 1h vol, $140,147 mcap, +284% 1h  
+  CA `2MXhpKgHBREgYYj3bSdorqbuJjkPAve1LTNHtk8Lpump`
+- PUMPE: $250,633 1h vol, $80,649 mcap, -40% 1h  
+  CA `7Nr1NvVdsczHyLsVT1z3uAJ1tLBL7n6PkP8fYkFbpump`
+- billy: $176,906 1h vol, $6,107 mcap, +10% 1h  
+  CA `GL7LbqwtKE6rxzzoJk5D9eD1Morp5kvESQen1ANfpump`
