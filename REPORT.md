@@ -1,13 +1,13 @@
 # Trencher live report
 
-Updated 2026-10-31T12:53:04Z (paper trading, never real money)
+Updated 2026-10-31T13:08:06Z (paper trading, never real money)
 
 - Equity: $90.20 (-9.8% vs $100 start)
-- Goal: $1,000 by 2026-11-05 05:03Z (pressing for it): at 9% of it, 4.7 days left, needs +67.3% a day from here
+- Goal: $1,000 by 2026-11-05 05:03Z (pressing for it): at 9% of it, 4.7 days left, needs +67.5% a day from here
 - Closed trades: 14, 2 wins
 - Fees paid: $8.84 (axiom $1.30, network $6.14, pool $1.26), plus $1.92 lost to slippage
 - New trades: on
-- Brain: subscription, 637 calls and 1 plan-limit hits in 48h
+- Brain: subscription, 640 calls and 1 plan-limit hits in 48h
 
 ## Scorecard (after fees)
 - 14 closed, 2 won (14%), net $-9.80
@@ -74,9 +74,21 @@ Updated 2026-10-31T12:53:04Z (paper trading, never real money)
   CA `J5jxG3PFaWpj6BLEQExyC6FSqSvaTKNdQ9G3sZwBpump`
 
 ## Last scan
-- 12:52Z: 3 coins, 3 with pairs, 0 passed the market filters, 0 researched
+- 13:07Z: 9 coins, 9 with pairs, 0 passed the market filters, 0 researched
 
 ## Coins it looked at, and why it passed
+- 13:05Z AMAZON (MIGRATED, $804,632 mcap, $2,838 5m vol): PASS at conviction 2, PASS — AMAZON is at its high (0% drawdown, +104% in 1h) on $2.8k 5m with RugCheck dark. Blockers: chasing and holders unverified (V1, V6, V13).  
+  CA `9L2FD9gNEu8h9NdD9VqRWCqhNgh1UznG8Ve7VZWpump`
+- 13:02Z GATO (MIGRATED, $5,401,300 mcap, $10,386 5m vol): PASS at conviction 3, PASS — flow below pace (0.69x hourly in the shallow band), sellers outnumber buyers 241 to 216, and RugCheck didn't load. A tired old cat. (V6, V13)  
+  CA `HsprHxBRgiVaQdRf3TnKNuZZtaX9JUSPgMFdAkk6pump`
+- 13:01Z NIL (MIGRATED, $158,552 mcap, $34,156 5m vol): PASS at conviction 2, PASS — blocker "chasing": 13 minutes old, at its high, last 5m candle +35%, and RugCheck didn't load. Wait for the bond dump to base (V1, V6).  
+  CA `5EH4bo9k5omHfD1mRSKfpUsSgPRyeRjaaFdhHGq1pump`
+- 12:59Z VAMPCAT (MIGRATED, $121,743 mcap, $3,550 5m vol): PASS at conviction 3, PASS — 5m volume $3.5k at 0.24x the hourly pace, and RugCheck didn't load. A pullback without its crowd is a knife (V1, V6).  
+  CA `4rsSV6L6mQ6jN587eKi5tNgkbgdzc8c9fxEVY8wapump`
+- 12:57Z FUN (MIGRATED, $58,360 mcap, $3,389 5m vol): PASS at conviction 3, PASS: $3.4k on the 5m against my $10k bar, RugCheck blind, and the website is 5 hours old. Too thin to trust. (V1, V6)  
+  CA `FDSG65a94jA3mdC47VPikD5WARCJN5ffSgot3TfHpump`
+- 12:54Z SUPERELON (DIP, $44,243 mcap, $4,611 5m vol): REJECT, Dip with fading attention is a falling knife, not a dip (5m at 0.27x the hour's pace, under 0.6x)  
+  CA `DiXxTwKBaL9Mf7heTpx32E1XhYjz1c1zZsZB59cZpump`
 - 12:45Z Leverhedge (MIGRATED, $767,027 mcap, $3,999 5m vol): PASS at conviction 3, PASS — sitting on its hourly low with no higher low and 5m at $4k. That's a falling knife, not a pullback. Blocker: no higher low / flow under $10k (V1, V6).  
   CA `FWatMYieKhRuJ1yuTcmVG1njRhZWwqHwjR11pBympump`
 - 12:44Z AgenC (MIGRATED, $297,654 mcap, $4,496 5m vol): PASS at conviction 3, PASS: AgenC is 87% off its $2.3M peak with only $4.5k on the 5m. That's a falling knife with a ticker ten bigger coins already use, not a dip. (V1, V6)  
@@ -85,18 +97,6 @@ Updated 2026-10-31T12:53:04Z (paper trading, never real money)
   CA `EYqygbhZjP7EbM4fSn8devctnksAvPAD1Bt57XBFpump`
 - 12:31Z 삼성찬 (MIGRATED, $127,973 mcap, $38,625 5m vol): PASS at conviction 3, PASS — 12 minutes old, last 5m candle up 27%, RugCheck blind. That's chasing a fresh bond spike. Wait for a base (V1).  
   CA `8WNQQvdcPaNMn6mJLpT64SEMBoDFyjKsHmbB5tknpump`
-- 12:27Z JOB (MIGRATED, $3,260,900 mcap, $2,473 5m vol): PASS at conviction 2, PASS — 11% off the high with the only target at 1.12x, 5m flow $2.5k at 0.91x pace, sellers winning. Blocker: target below initials (V1, V6).  
-  CA `9Pq7aLAbhDG2tTnS22cm6kuysZVcZpLFE368HWuypump`
-- 12:20Z RAM (DIP, $48,087 mcap, $2,854 5m vol): PASS at conviction 2, PASS — RugCheck didn't load (hard block), and the last 5m is a +41% spike on $2.8k with the coin back under $70k after bonding. Chasing a thin bounce (V6, V1).  
-  CA `6QUHcqYuiPRHxhnYZoygewXtNQr9kUrhc9Tmwgtbpump`
-- 12:20Z AMAZON (MIGRATED, $467,938 mcap, $3,180 5m vol): PASS at conviction 3, PASS: $3.2k on the 5m in a field of 21 AMAZONs, with RugCheck dark. Not enough flow to call it the leader. (V1, V6, V13)  
-  CA `9L2FD9gNEu8h9NdD9VqRWCqhNgh1UznG8Ve7VZWpump`
-- 12:16Z GATO (MIGRATED, $6,065,036 mcap, $11,669 5m vol): PASS at conviction 2, PASS — 6% off the high with sellers ahead of buyers (46%), and RugCheck didn't load. Chasing into profit-taking, holders unverified. (V1, V6, V13)  
-  CA `HsprHxBRgiVaQdRf3TnKNuZZtaX9JUSPgMFdAkk6pump`
-- 12:14Z Dogeween (MIGRATED, $43,340 mcap, $9,970 5m vol): PASS at conviction 2, PASS: about a minute old, sitting at its own high, RugCheck didn't load and 20 coins share the ticker. That's a snipe, not a setup. (V1, V6, V13)  
-  CA `FxANinsd5YGbFrGji9Ni1uZFJMMSyFfcVVFXiKzppump`
-- 12:14Z VAMPCAT (MIGRATED, $157,336 mcap, $20,319 5m vol): PASS at conviction 3, PASS: Vamp Cat is only 9% off a high it set 12 minutes ago, holders didn't load, and 13 other coins use the same ticker. That's chasing (V1, V6).  
-  CA `4rsSV6L6mQ6jN587eKi5tNgkbgdzc8c9fxEVY8wapump`
 
 ## What its skips did next (last 48h)
 A skip "ran" if the coin reached the first target (1.5x) from the skip price before a 20% drop, "dumped" if the drop came first. Sampled every 10 min, followed 6h.
@@ -107,7 +107,7 @@ A skip "ran" if the coin reached the first target (1.5x) from the skip price bef
     CA `6i4ebPt8dpGchB2A1ELpTz3B72dy5DkzNpFMNtUSpump`
   - ran: HyPepe up to 1.5x  
     CA `G8TdzgpUQXQAxJvarNKPXRGv2kh9CsJDK7dCC7Xupump`
-- near the high / chasing: blocked 42, ran 9, dumped 26, flat 2, open 5 (saving losses: keep it)
+- near the high / chasing: blocked 43, ran 9, dumped 26, flat 3, open 5 (saving losses: keep it)
   - ran: DESSA up to 1.52x  
     CA `npz2FhoufQ7pKqhGpaipYWacrAkidyW2yDpVWSvpump`
   - ran: OREN up to 1.58x  
@@ -128,14 +128,12 @@ A skip "ran" if the coin reached the first target (1.5x) from the skip price bef
     CA `2orqEGSdkm5BMmhdM8TpKCpACk32a3Zaj3Lef7ceqsc6`
   - ran: Bear up to 2.66x  
     CA `Dv6gYYkTav8Pm36UwAywxNCccwSZV1VL1tjiSpDLpump`
-- falling knife (code): blocked 18, ran 2, dumped 16, flat 0, open 0 (saving losses: keep it)
+- falling knife (code): blocked 19, ran 2, dumped 16, flat 0, open 1 (saving losses: keep it)
   - ran: TYGR up to 1.58x  
     CA `5wCqCq6jbppuTocMeq6zd4UywAm64L1QNNxvEDAHpump`
   - ran: LUMI up to 1.76x  
     CA `653joYuZ5EntuKd1bspZakjHdueMxHGs5Lvm7RdWpump`
-- RugCheck didn't load: blocked 16, ran 1, dumped 8, flat 0, open 7 (saving losses: keep it)
-  - ran: SUPERELON up to 1.81x  
-    CA `DiXxTwKBaL9Mf7heTpx32E1XhYjz1c1zZsZB59cZpump`
+- RugCheck didn't load: blocked 16, ran 0, dumped 7, flat 0, open 9 (saving losses: keep it)
 - falling knife / no higher low: blocked 15, ran 0, dumped 11, flat 2, open 2 (saving losses: keep it)
 - crowd leaving / fading volume: blocked 14, ran 4, dumped 10, flat 0, open 0 (saving losses: keep it)
   - ran: STABLEPAD up to 2.13x  
@@ -175,13 +173,13 @@ A skip "ran" if the coin reached the first target (1.5x) from the skip price bef
 The meta right now is fresh PumpSwap launches named after big brands and tech figures: SamsungChan ($128k, $38.6k 5m, 12 minutes old, +217%, 0.62 buys) leads it, with AMAZON ($468k, +388%) and Ram Altman ($48k, 0.76 buys) in the same lane. Amazon's flow is only $3.2k on the 5m and RAM's is $2.9k, so the brand theme is rising but SamsungChan is the only one with real volume. What's fading hard is the sub-hour pump-and-dump wave and the AI lane: Wojak is -94% on $123, one FUN and COMPUTE are -98% and -94% on zero volume, GenZ is down to $1.4k, and AgenC, Lily AI and Leverhedge have gone flat. The crawler's summary is stale (Garrett, Vamp Cat and its Wojak numbers aren't in this scan), so I'm ignoring it. Setups I'd look at: SamsungChan as MIGRATED (V1/V6), entry only 10% or more off the local high since it's +217% on the hour, initials at 1.5x, 20% stop. Second, BNB as a DIP: 15.9h old, $350k, -31% on the hour, but 5m volume is $17.8k vs a $13.9k hourly average (1.3x, clears the 0.7x gate) with 0.67 buys. It borrows the BNB ticker and has a crude name that shrinks its audience, so it gets a probe at most. PASS on AMAZON and RAM, blocker: 5m volume under the $10k bar (V6). PASS on $LAPTOP, blocker: a political figure pushed it, and it's already down 98% (V13). Owner, I'll press on clean coins and give them 8 or 9 when the checks earn it, but the hard lines and the 35% max risk don't move.
 
 ## Moving most in its scans, last 30 min (1h volume)
-- 삼성찬: $219,532 1h vol, $127,973 mcap, +217% 1h  
-  CA `8WNQQvdcPaNMn6mJLpT64SEMBoDFyjKsHmbB5tknpump`
+- SUPERELON: $208,564 1h vol, $44,243 mcap, +14% 1h  
+  CA `DiXxTwKBaL9Mf7heTpx32E1XhYjz1c1zZsZB59cZpump`
+- NIL: $182,044 1h vol, $158,552 mcap, +293% 1h  
+  CA `5EH4bo9k5omHfD1mRSKfpUsSgPRyeRjaaFdhHGq1pump`
+- GATO: $179,572 1h vol, $5,401,300 mcap, -8% 1h  
+  CA `HsprHxBRgiVaQdRf3TnKNuZZtaX9JUSPgMFdAkk6pump`
+- VAMPCAT: $179,406 1h vol, $121,743 mcap, -0% 1h  
+  CA `4rsSV6L6mQ6jN587eKi5tNgkbgdzc8c9fxEVY8wapump`
 - BNB: $166,638 1h vol, $350,364 mcap, -31% 1h  
   CA `EYqygbhZjP7EbM4fSn8devctnksAvPAD1Bt57XBFpump`
-- Wojak: $96,883 1h vol, $4,255 mcap, -94% 1h  
-  CA `BbNuEtiT77Swr4WqGHuUkQY5kZ67M7au7bXkxcArpump`
-- AgenC: $75,517 1h vol, $297,654 mcap, +5% 1h  
-  CA `DDG8rjV3TViCqKRQED2QZq4MEaE1uqXgEiosBNpapump`
-- GenZ: $64,748 1h vol, $15,265 mcap, +396% 1h  
-  CA `2ZratH16pqfaV62XnCiPBHeh8UjSihXmSWBRoQZCpump`
