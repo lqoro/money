@@ -1,13 +1,13 @@
 # Trencher live report
 
-Updated 2026-10-31T10:06:40Z (paper trading, never real money)
+Updated 2026-10-31T10:21:45Z (paper trading, never real money)
 
 - Equity: $90.20 (-9.8% vs $100 start)
-- Goal: $1,000 by 2026-11-05 05:03Z (pressing for it): at 9% of it, 4.8 days left, needs +65.3% a day from here
+- Goal: $1,000 by 2026-11-05 05:03Z (pressing for it): at 9% of it, 4.8 days left, needs +65.4% a day from here
 - Closed trades: 14, 2 wins
 - Fees paid: $8.84 (axiom $1.30, network $6.14, pool $1.26), plus $1.92 lost to slippage
 - New trades: on
-- Brain: subscription, 625 calls and 1 plan-limit hits in 48h
+- Brain: subscription, 623 calls and 1 plan-limit hits in 48h
 
 ## Scorecard (after fees)
 - 14 closed, 2 won (14%), net $-9.80
@@ -74,7 +74,7 @@ Updated 2026-10-31T10:06:40Z (paper trading, never real money)
   CA `J5jxG3PFaWpj6BLEQExyC6FSqSvaTKNdQ9G3sZwBpump`
 
 ## Last scan
-- 10:06Z: 6 coins, 5 with pairs, 0 passed the market filters, 0 researched
+- 10:21Z: 5 coins, 4 with pairs, 0 passed the market filters, 0 researched
 
 ## Coins it looked at, and why it passed
 - 10:01Z JOB (MIGRATED, $3,258,685 mcap, $3,191 5m vol): PASS at conviction 3, PASS: $3.2k on the 5m, more sellers than buyers, and the prior high is only 1.12x away. Nothing here to chase. (V1, V6)  
@@ -150,14 +150,14 @@ A skip "ran" if the coin reached the first target (1.5x) from the skip price bef
     CA `7eQagAYSYYhRqRZF5L97Ku8AK94TEpsmnrrsssUkpump`
 
 ## Rules it changed from results and skips
-- 10-31 01:08Z dropped: All fee, friction and $5-minimum-size rules from the lessons (Code now checks fees (target ≥ 3x round-trip, round-trip ≤ 20%). Per instructions these don't belong in learned rules.)
-- 10-31 04:12Z tightened: Conviction ladder merged with the owner's 'press the goal' (Merged two bullets into one to make room. Clean = 7 and leader/low-bundle = 8–9 per the owner. The 9 profile matches my only two winners (CATBOT, FLOATER: leader, clean holders, 20–40% pullback, flow at pace). The meaning didn't change.)
 - 10-31 04:12Z dropped: Lesson-level 'tighten trail to 25% past 4x' and all fee/min-size notes (The owner sets the trail (35%), initials (1.5x) and stop (20%), and code enforces them. Code also owns the fee/size checks. None of these may live in learned rules.)
 - 10-31 04:12Z dropped: Conviction ladder, then press (owner goal).** Hard lines passed + live flow (5m ≥ $10k, buys > sells) + a named target ≥ 1.5x = **7**. **8** = 7 + leader/original of a live meta OR verified low bundle_pct. **9** = leader + low bundles + 20–60% pullback + 5m ≥ hourly pace (the CATBOT/FLOATER profile, my only two winners). Take −1 each for a non-hard-line RugCheck danger, an unverified community, or a weak/LARP story. 5–6 = probe; under 5 = PASS naming the blocker. Take every setup that clears this and don't under-rate clean ones. (Owner override: the goal is set to push)
 - 10-31 07:15Z added: Press the proven setup: meta/vamp leader 25-45% off the high, with a higher low, clean holders and 5m at or above pace, rated 8-9; any clean pass with flow and a target rated at least 7 (Both wins were exactly this pattern: CATBOT +93.8% (4.44x peak) and FLOATER +50.5% (2.19x), both 34-38% off the high with clean holders. The owner wants clean setups rated 8-9 so code sizes them up.)
 - 10-31 07:15Z tightened: Shallow band (10-20% off the high): flow leader only, conviction capped at 7 (Near-high entries went 0 for 5: HYPERCHAN -15.2% and -4.9%, PILLSEY -31.2%, SI -38%, CATCULUS -59%. Near-high skips ran 8 and dumped 25. The owner's 10% floor stays; only the size is capped.)
 - 10-31 07:15Z dropped: Tighten the trail to 25% past 4x (from the CATBOT lesson) (The owner fixed the trail at 35% from the peak after initials, and code enforces it, so a learned trail rule doesn't belong.)
 - 10-31 07:15Z dropped: Any fee, friction or minimum-size rule from lessons (The code fee check owns this now (target at least 3x round-trip cost, round trip at most 20% of the position).)
+- 10-31 10:18Z tightened: DIP attention gate at 0.7x the hourly average, plus a live story (code line raised from 0.6 to 0.7) (Owner set 0.7x. DIPs 0/3 for −$3.07. Falling-knife skips: code 2 ran / 16 dumped, no-higher-low 0 / 14. HEXN lost twice on a thin tech story.)
+- 10-31 10:18Z dropped: Any fee, friction or minimum-size rule, and any rule setting the stop, initials or trail (Code checks fees, size and the owner's 1.5x initials / 20% stop / 35% trail. The DIP rule that set its own stop under the higher low was reworded into an entry filter.)
 
 ## Recent lessons
 - [2026-10-29 02:03] Expected: the FLOATER that had the crowd out of 23 same-ticker coins ($141k 5m volume, 78% buys, clean holders, 34% off the high) would keep climbing toward $500k on the tokenized-stock meta. What happened: it ran to 2.19x, I took initials as planned (V11), and the trailing stop sold the rest at 1.5x from a $255k mcap for +$1.48, but fees and slippage ($0.89) ate about 30% of the $2.94 cost and nearly a third of the gross gain. Next time I keep picking the vamp-field winner by volume and attention (V1, V6) and keep the 2x initials plus 30% trail, but I don't open a position under ~$5 because fixed fees turn a 2x winner into a 1.5x one.
@@ -175,13 +175,13 @@ A skip "ran" if the coin reached the first target (1.5x) from the skip price bef
 Meta: parody tickers that borrow a big name (ATI "Artificial Tax Intelligence", BNB "Broke Nigga Baddie") are rising. AI jokes work as jokes (ATI) while self-serious agent coins fade (AgenC -60%, $4.3k 5m). The other fresh sub-2h launches are dying (Anita, CUM, LUMI). The crawler's Cramersan call is stale: it's at $1.9k, down 99%, a corpse. Setups: ATI as MIGRATED ($321k, $30k 5m, 0.55 buys) on a 10%+ pullback from its local high with buyers returning. BNB as V6 recon ($613k, $14.6k 5m, 0.71 buys), just past the 12h age filter. PASS: $LAPTOP (political, V13); AgenC/JOB/Leverhedge/GLITCH/NETWORK (5m volume under $10k, V1/V6); Cramersan/Anita/CUM/LUMI (dead flow, V1).
 
 ## Moving most in its scans, last 30 min (1h volume)
-- 发发: $772,922 1h vol, $226,618 mcap, +144% 1h  
-  CA `CcSRXUReR3VVG92C4rE8FqsLomzwmH6Dn1WhTGebpump`
-- ATI: $754,896 1h vol, $321,139 mcap, +307% 1h  
-  CA `419P2wrVug9cW5hMwsjEEdhM5aLBt7YFnwn1p7dypump`
-- AgenC: $218,025 1h vol, $271,437 mcap, -60% 1h  
-  CA `DDG8rjV3TViCqKRQED2QZq4MEaE1uqXgEiosBNpapump`
-- BNB: $183,390 1h vol, $613,021 mcap, +15% 1h  
-  CA `EYqygbhZjP7EbM4fSn8devctnksAvPAD1Bt57XBFpump`
-- Leverhedge: $38,184 1h vol, $811,697 mcap, -1% 1h  
-  CA `FWatMYieKhRuJ1yuTcmVG1njRhZWwqHwjR11pBympump`
+- BOOBIES: $45,702 1h vol, $3,004 mcap, +11% 1h  
+  CA `DzJ3oax8inwSeE2RkLfQk7pE1eCybyiTHfgGQAw6pump`
+- JOB: $37,928 1h vol, $3,258,685 mcap, +0% 1h  
+  CA `9Pq7aLAbhDG2tTnS22cm6kuysZVcZpLFE368HWuypump`
+- GATO: $17,352 1h vol, $5,332,637 mcap, -4% 1h  
+  CA `HsprHxBRgiVaQdRf3TnKNuZZtaX9JUSPgMFdAkk6pump`
+- CATPAD: $13,375 1h vol, $163,796 mcap, +10% 1h  
+  CA `2gTbp2gwH46rqExzabSyrdR3294SLwCp2rSqWDS6Sim1`
+- Jason: $9,792 1h vol, $112,166 mcap, +7% 1h  
+  CA `3qjBR3LfzEAKVS6QXuR2QZ1RFUsXzATWvmjbGB5Dpump`
