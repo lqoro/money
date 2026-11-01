@@ -1,13 +1,13 @@
 # Trencher live report
 
-Updated 2026-11-01T20:12:47Z (paper trading, never real money)
+Updated 2026-11-01T20:27:53Z (paper trading, never real money)
 
 - Equity: $80.53 (-19.5% vs $100 start)
-- Goal: $1,000 by 2026-11-05 05:03Z (pressing for it): at 8.1% of it, 3.4 days left, needs +111.3% a day from here
+- Goal: $1,000 by 2026-11-05 05:03Z (pressing for it): at 8.1% of it, 3.4 days left, needs +111.8% a day from here
 - Closed trades: 19, 3 wins
 - Fees paid: $12.66 (axiom $2.26, network $8.06, pool $2.21), plus $3.34 lost to slippage
 - New trades: on
-- Brain: subscription, 616 calls and 0 plan-limit hits in 48h
+- Brain: subscription, 613 calls and 0 plan-limit hits in 48h
 
 ## Scorecard (after fees)
 - 19 closed, 3 won (16%), net $-19.48
@@ -74,9 +74,17 @@ Updated 2026-11-01T20:12:47Z (paper trading, never real money)
   CA `GYKnd6jGUSQoBUnj6LdGCBtCWYDgr2Zd6QwNPcy5pump`
 
 ## Last scan
-- 20:12Z: 3 coins, 3 with pairs, 0 passed the market filters, 0 researched
+- 20:26Z: 5 coins, 5 with pairs, 0 passed the market filters, 0 researched
 
 ## Coins it looked at, and why it passed
+- 20:24Z GATO (MIGRATED, $7,540,170 mcap, $12,074 5m vol): REJECT, Dev holds 3.3% (>1%) (V13, V17)  
+  CA `HsprHxBRgiVaQdRf3TnKNuZZtaX9JUSPgMFdAkk6pump`
+- 20:21Z Dacity (MIGRATED, $7,484,921 mcap, $6,150 5m vol): REJECT, Bundles: 10 linked wallet cluster(s) hold 23.9% of supply (>20%) (V17)  
+  CA `nxPqZ4F7ux8Vph5NFu25rEP6Kx9Gr1U6Fmj36Rjpump`
+- 20:16Z AAPLCAT (MIGRATED, $534,564 mcap, $61,786 5m vol): PASS at conviction 3, PASS — chasing spike: last 5m +52% at 4x hourly pace, 75% off peak, no higher low printed. Clean holders don't fix a bad entry (V1).  
+  CA `GYKnd6jGUSQoBUnj6LdGCBtCWYDgr2Zd6QwNPcy5pump`
+- 20:14Z CBUCKS (MIGRATED, $1,765,167 mcap, $3,373 5m vol): REJECT, Top 10 hold 26.4% ex-pool (>25%) (V13)  
+  CA `DtcicPCKTKeAh7TDEzTym3hXeoHAoMiBdYJhMYxZpump`
 - 20:11Z AI (MIGRATED, $147,341 mcap, $20,104 5m vol): PASS at conviction 3, PASS — 48-minute-old coin bleeding off its spike, 5m at 0.28x pace and a 7.6% bundle cluster. Crowd's leaving, not arriving. (V1, V3)  
   CA `HNxyGpz8AkLqmfBBKMzmugkPE5Bahj2bGPPTNgWGpump`
 - 20:07Z BABYKIN (MIGRATED, $98,326 mcap, $89,334 5m vol): PASS at conviction 3, PASS: 9 minutes old and spiking (+39% on the 5m, 6.2x pace). Blocker "too new", then "chasing spike". Clean holders don't change that. Watchlist it for a base after 1h (V1, V5).  
@@ -89,14 +97,6 @@ Updated 2026-11-01T20:12:47Z (paper trading, never real money)
   CA `GvXhSHnWrkAasjAUZeRzRfUBV2BJiiduaHarCWAEpump`
 - 19:41Z Maxxmas (DIP, $73,780 mcap, $6,614 5m vol): REJECT, Dip with fading attention is a falling knife, not a dip (5m at 0.52x the hour's pace, under 0.6x)  
   CA `MAXXib7SQAQn4ymrwhhR9qMRUcYv8BNhbQxizJn5CCk`
-- 19:36Z Dacity (MIGRATED, $7,244,908 mcap, $17,547 5m vol): REJECT, Bundles: 10 linked wallet cluster(s) hold 23.8% of supply (>20%) (V17)  
-  CA `nxPqZ4F7ux8Vph5NFu25rEP6Kx9Gr1U6Fmj36Rjpump`
-- 19:35Z jeff (DIP, $1,807,311 mcap, $2,548 5m vol): REJECT, Top 10 hold 39.3% ex-pool (>25%) (V13)  
-  CA `HAsTKXYvv65zM7J6Cu5o5PcZsiKMQYo5oz4WPjgqwP6k`
-- 19:30Z AAPLCAT (DIP, $863,963 mcap, $6,510 5m vol): REJECT, Dip with fading attention is a falling knife, not a dip (5m at 0.12x the hour's pace, under 0.6x)  
-  CA `GYKnd6jGUSQoBUnj6LdGCBtCWYDgr2Zd6QwNPcy5pump`
-- 19:28Z GATO (MIGRATED, $6,942,877 mcap, $10,545 5m vol): REJECT, Dev holds 3.3% (>1%) (V13, V17)  
-  CA `HsprHxBRgiVaQdRf3TnKNuZZtaX9JUSPgMFdAkk6pump`
 
 ## What its skips did next (last 48h)
 A skip "ran" if the coin reached the first target (1.5x) from the skip price before a 20% drop, "dumped" if the drop came first. Sampled every 10 min, followed 6h.
@@ -114,14 +114,14 @@ A skip "ran" if the coin reached the first target (1.5x) from the skip price bef
     CA `J73efZvH6rkrJbFJdP2rqe473YJW7tyWmrNARUSzpump`
   - ran: paws up to 1.51x  
     CA `CCF6ui6YjjhLaVtuYLH8b5jza8jHathqww5VbrMapump`
-- top 10 over 25%: blocked 41, ran 7, dumped 28, flat 3, open 3 (saving losses: keep it)
+- top 10 over 25%: blocked 40, ran 7, dumped 27, flat 3, open 3 (saving losses: keep it)
   - ran: George up to 1.88x  
     CA `4poKLzPuwjKJgXM6eF3EqBbMzWgkapi96vbNSkZipump`
   - ran: Beaver up to 2.56x  
     CA `5h44wfzwGHFnfVhNKtMLapAJNV9iqqbUgUB2FqyWpump`
   - ran: timmy up to 1.66x  
     CA `TiMSdJrkVwUpeEWJpuqRvHt4wVS7uH77LbNPGGVJXNw`
-- falling knife (code): blocked 26, ran 3, dumped 20, flat 1, open 2 (saving losses: keep it)
+- falling knife (code): blocked 24, ran 3, dumped 18, flat 1, open 2 (saving losses: keep it)
   - ran: LUMI up to 1.76x  
     CA `653joYuZ5EntuKd1bspZakjHdueMxHGs5Lvm7RdWpump`
   - ran: KIM up to 1.55x  
@@ -193,11 +193,11 @@ Passes: AI (Authentic Inu) is zero hours old and I don't snipe; RAYDOG has $4k o
 ## Moving most in its scans, last 30 min (1h volume)
 - AI: $871,754 1h vol, $147,341 mcap, +325% 1h  
   CA `HNxyGpz8AkLqmfBBKMzmugkPE5Bahj2bGPPTNgWGpump`
+- AAPLCAT: $187,652 1h vol, $534,564 mcap, -36% 1h  
+  CA `GYKnd6jGUSQoBUnj6LdGCBtCWYDgr2Zd6QwNPcy5pump`
 - BABYKIN: $173,049 1h vol, $98,326 mcap, +109% 1h  
   CA `8BxKRVNTRzM7LTJ9Q6rqKQFwXtMjZjjSNYNDyjLSpump`
-- HEN: $161,644 1h vol, $18,545 mcap, -49% 1h  
+- HEN: $166,236 1h vol, $14,833 mcap, -59% 1h  
   CA `B1aBkk76gihamPjuKyHz7c7cgjdNxwBxc2NoJZCbpump`
-- CHOO: $113,485 1h vol, $2,273,744 mcap, -6% 1h  
-  CA `EJAxERvKU4kEVXn3NarjvRtgaMaJyP9ZuMeKA7JJpump`
-- FARM: $88,121 1h vol, $7,279 mcap, +57% 1h  
-  CA `82Ln9M32HgpWxkPYeWodseAVyKv6U42dPKMKhkDjpump`
+- Dacity: $115,648 1h vol, $7,484,921 mcap, -2% 1h  
+  CA `nxPqZ4F7ux8Vph5NFu25rEP6Kx9Gr1U6Fmj36Rjpump`
