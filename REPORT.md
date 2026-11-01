@@ -1,13 +1,13 @@
 # Trencher live report
 
-Updated 2026-11-01T12:23:27Z (paper trading, never real money)
+Updated 2026-11-01T12:38:31Z (paper trading, never real money)
 
 - Equity: $80.53 (-19.5% vs $100 start)
-- Goal: $1,000 by 2026-11-05 05:03Z (pressing for it): at 8.1% of it, 3.7 days left, needs +97.8% a day from here
+- Goal: $1,000 by 2026-11-05 05:03Z (pressing for it): at 8.1% of it, 3.7 days left, needs +98.2% a day from here
 - Closed trades: 19, 3 wins
 - Fees paid: $12.66 (axiom $2.26, network $8.06, pool $2.21), plus $3.34 lost to slippage
 - New trades: on
-- Brain: subscription, 647 calls and 1 plan-limit hits in 48h
+- Brain: subscription, 645 calls and 1 plan-limit hits in 48h
 
 ## Scorecard (after fees)
 - 19 closed, 3 won (16%), net $-19.48
@@ -74,9 +74,15 @@ Updated 2026-11-01T12:23:27Z (paper trading, never real money)
   CA `GYKnd6jGUSQoBUnj6LdGCBtCWYDgr2Zd6QwNPcy5pump`
 
 ## Last scan
-- 12:23Z: 8 coins, 8 with pairs, 0 passed the market filters, 0 researched
+- 12:38Z: 7 coins, 7 with pairs, 0 passed the market filters, 0 researched
 
 ## Coins it looked at, and why it passed
+- 12:31Z SIS (MIGRATED, $251,632 mcap, $4,565 5m vol): PASS at conviction 2, PASS: SIS is 80.6% off its peak, past the 70% DIP limit, with $4.5k on the 5m and no reclaim of the level I was stopped out at. A dead story bleeding out. (V1, V6)  
+  CA `FdKdpz11GsTofLaNiddrhxrsE4APZYSSfLFqQ9YKpump`
+- 12:28Z BLUE (DIP, $249,240 mcap, $5,289 5m vol): PASS at conviction 2, PASS: BLUE is −8% on the 5m and −19% on the hour, 69% off the high with no higher low, and 5m flow is only 0.72x pace. The reason I sold it at 03:30 still holds. Falling knife. (V1, V6)  
+  CA `CPoGSmcjprCvzA2MFYLJMpQkGjmgVzKg4RVwMdrzpump`
+- 12:27Z 白いヤク (DIP, $86,214 mcap, $8,360 5m vol): PASS at conviction 3, PASS: a fading Yak vamp, 5m at 0.62x pace, no higher low. Blocker "flow below pace" plus "split crowd" (V1, V3, V6).  
+  CA `6jFcYpa95qnzX3Kui4TTyPCEzQorHRCHXhoCAg5tpump`
 - 12:21Z PAWCAT (MIGRATED, $6,326,202 mcap, $136,922 5m vol): PASS at conviction 4, PASS — clean leader, bad entry: peak printed 6 min ago, 5m volume 3.4x pace with a −11% candle, and the $8M high is only 1.26x away, under 1.5x initials. Blocker: target below initials (V1, V6).  
   CA `762ZqBCd5m2q3QJ5UPkFL5rqdEUeygNkfTZrpGEZpump`
 - 12:17Z GATO (MIGRATED, $6,959,322 mcap, $5,119 5m vol): REJECT, Dev holds 3.3% (>1%) (V13, V17)  
@@ -91,16 +97,10 @@ Updated 2026-11-01T12:23:27Z (paper trading, never real money)
   CA `nxPqZ4F7ux8Vph5NFu25rEP6Kx9Gr1U6Fmj36Rjpump`
 - 11:54Z AAPLCAT (DIP, $850,074 mcap, $4,452 5m vol): PASS at conviction 3, PASS: flow below pace. $4.4k on the 5m at 0.63x the hourly pace, on a cat coin my radar already calls fading. Holders are clean, but nobody's arriving. (V1, V6)  
   CA `GYKnd6jGUSQoBUnj6LdGCBtCWYDgr2Zd6QwNPcy5pump`
-- 11:54Z MARVIN (MIGRATED, $124,515 mcap, $29,096 5m vol): PASS at conviction 2, PASS: chasing. 0.7% off a 6-minute-old peak after a +40% 5m candle on a 26-minute-old migration, with a 6.2% bundle cluster in a 16-copy ticker field (V1, V3, V6).  
-  CA `5L1efZj4ymwKfE4dUQf5rYVLBSL6eJL2xe9EGnHGpump`
-- 11:48Z KO (FINAL_STRETCH, $29,310 mcap, $6,522 5m vol): PASS at conviction 3, PASS: 5m is $6.5k at 0.83x the hourly pace, right after a +24% candle, 75% of the way to bond, and top 10 hold 21%. That's chasing into the pre-bond dump (V1, V6).  
-  CA `GEHj3yYtnnS2Fv3GSkjb3FEQzSZuehHqyEbKc45vpump`
-- 11:46Z SIS (MIGRATED, $229,922 mcap, $3,273 5m vol): PASS at conviction 2, PASS: falling knife. SIS is 82% off its peak, past my 70% DIP limit, and 5m volume is only 0.43x the hourly pace, under the 0.7x gate. I was stopped out of this exact coin 20 minutes ago and the reason still holds. The crowd is leaving. (V1, V6)  
-  CA `FdKdpz11GsTofLaNiddrhxrsE4APZYSSfLFqQ9YKpump`
 
 ## What its skips did next (last 48h)
 A skip "ran" if the coin reached the first target (1.5x) from the skip price before a 20% drop, "dumped" if the drop came first. Sampled every 10 min, followed 6h.
-- near the high / chasing: blocked 60, ran 8, dumped 40, flat 9, open 3 (saving losses: keep it)
+- near the high / chasing: blocked 61, ran 8, dumped 40, flat 9, open 4 (saving losses: keep it)
   - ran: DESSA up to 1.52x  
     CA `npz2FhoufQ7pKqhGpaipYWacrAkidyW2yDpVWSvpump`
   - ran: FLYWHEEL up to 2.23x  
@@ -114,14 +114,14 @@ A skip "ran" if the coin reached the first target (1.5x) from the skip price bef
     CA `61h4rUn7C21QNv1NJADc2oAxpAhr7f2WGqbXRDEupump`
   - ran: xpad up to 2.54x  
     CA `EV116Y5Y6cYvcugmXwLVZPhbZus1NxV5WbArJxtUxxxx`
-- top 10 over 25%: blocked 42, ran 6, dumped 30, flat 4, open 2 (saving losses: keep it)
-  - ran: HYDESK up to 1.78x  
-    CA `BzndCZ2ZrjUA21aVW7t6AWEENRAps3EmdQg9hf94pump`
+- top 10 over 25%: blocked 41, ran 5, dumped 30, flat 4, open 2 (saving losses: keep it)
   - ran: Goyim up to 2.88x  
     CA `7aeDqEi2PfoYpJfw2eawzLnRH9NjQJ6jWMZ9FH1Hpump`
   - ran: George up to 1.88x  
     CA `4poKLzPuwjKJgXM6eF3EqBbMzWgkapi96vbNSkZipump`
-- falling knife (code): blocked 29, ran 3, dumped 24, flat 1, open 1 (saving losses: keep it)
+  - ran: Beaver up to 2.56x  
+    CA `5h44wfzwGHFnfVhNKtMLapAJNV9iqqbUgUB2FqyWpump`
+- falling knife (code): blocked 27, ran 3, dumped 22, flat 1, open 1 (saving losses: keep it)
   - ran: TYGR up to 1.58x  
     CA `5wCqCq6jbppuTocMeq6zd4UywAm64L1QNNxvEDAHpump`
   - ran: LUMI up to 1.76x  
@@ -135,6 +135,11 @@ A skip "ran" if the coin reached the first target (1.5x) from the skip price bef
     CA `DUTxGHL2LmpfjQaoK6LdZp8WQPoDiwvtDHVDf4fMpump`
   - ran: whitepaper up to 2.16x  
     CA `4tEvXHpd6JrCWJGByBS3qFBAtJbeoiEpgvWLw9hkpump`
+- falling knife / no higher low: blocked 19, ran 2, dumped 14, flat 2, open 1 (saving losses: keep it)
+  - ran: CREDIT up to 1.56x  
+    CA `Ewyifvp8X9NxeaKawXamGXBFDisuMfcFfcdvSZ8opump`
+  - ran: WASTED up to 1.64x  
+    CA `GexThZHgaswpAQ7Fi8QrHFubjPimUNSYhJiAA7XZpump`
 - RugCheck danger: blocked 19, ran 3, dumped 16, flat 0, open 0 (saving losses: keep it)
   - ran: PROBE up to 1.53x  
     CA `DR3Jtxwzkw9uBpi6Bz7qJX7zuFSJkNKXthD8nB1mpump`
@@ -142,14 +147,7 @@ A skip "ran" if the coin reached the first target (1.5x) from the skip price bef
     CA `HLzTFsX99uqzAP7uK36gJ2pPHGfRM8ugvxXWJzjSpump`
   - ran: P2P up to 1.61x  
     CA `8ANLUXihz9FrSy6Jbg85CGsuPCpPjf5S9ZUXNRG5pump`
-- falling knife / no higher low: blocked 18, ran 2, dumped 14, flat 2, open 0 (saving losses: keep it)
-  - ran: CREDIT up to 1.56x  
-    CA `Ewyifvp8X9NxeaKawXamGXBFDisuMfcFfcdvSZ8opump`
-  - ran: WASTED up to 1.64x  
-    CA `GexThZHgaswpAQ7Fi8QrHFubjPimUNSYhJiAA7XZpump`
-- crowd leaving / fading volume: blocked 13, ran 3, dumped 7, flat 2, open 1 (saving losses: keep it)
-  - ran: HYDESK up to 1.78x  
-    CA `BzndCZ2ZrjUA21aVW7t6AWEENRAps3EmdQg9hf94pump`
+- crowd leaving / fading volume: blocked 11, ran 2, dumped 6, flat 2, open 1 (saving losses: keep it)
   - ran: AXIO up to 1.51x  
     CA `3mUcXkpVVkQ5ZJMctz2f1VBk4rwu3NRfNwVQZtDzpump`
   - ran: Apple up to 1.58x  
@@ -195,9 +193,9 @@ Setups I'd look at: SA as a MIGRATED buy within 10% of its local high. It's a te
   CA `762ZqBCd5m2q3QJ5UPkFL5rqdEUeygNkfTZrpGEZpump`
 - SA: $199,892 1h vol, $170,119 mcap, +324% 1h  
   CA `EpciamcHuELQsgQQiMUhk8LKx5Hz16iNqJ3D5r5fpump`
-- MARVIN: $193,606 1h vol, $124,515 mcap, +210% 1h  
-  CA `5L1efZj4ymwKfE4dUQf5rYVLBSL6eJL2xe9EGnHGpump`
-- P2P: $128,510 1h vol, $19,742 mcap, +74% 1h  
-  CA `8ANLUXihz9FrSy6Jbg85CGsuPCpPjf5S9ZUXNRG5pump`
-- Dacity: $87,741 1h vol, $7,592,362 mcap, -3% 1h  
-  CA `nxPqZ4F7ux8Vph5NFu25rEP6Kx9Gr1U6Fmj36Rjpump`
+- 白いヤク: $162,772 1h vol, $86,214 mcap, +123% 1h  
+  CA `6jFcYpa95qnzX3Kui4TTyPCEzQorHRCHXhoCAg5tpump`
+- BLUE: $88,447 1h vol, $249,240 mcap, -19% 1h  
+  CA `CPoGSmcjprCvzA2MFYLJMpQkGjmgVzKg4RVwMdrzpump`
+- DESSA: $81,099 1h vol, $23,620,946 mcap, +3% 1h  
+  CA `npz2FhoufQ7pKqhGpaipYWacrAkidyW2yDpVWSvpump`
