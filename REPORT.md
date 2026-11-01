@@ -1,9 +1,9 @@
 # Trencher live report
 
-Updated 2026-11-01T22:59:32Z (paper trading, never real money)
+Updated 2026-11-01T23:14:36Z (paper trading, never real money)
 
 - Equity: $80.53 (-19.5% vs $100 start)
-- Goal: $1,000 by 2026-11-05 05:03Z (pressing for it): at 8.1% of it, 3.3 days left, needs +117% a day from here
+- Goal: $1,000 by 2026-11-05 05:03Z (pressing for it): at 8.1% of it, 3.2 days left, needs +117.5% a day from here
 - Closed trades: 19, 3 wins
 - Fees paid: $12.66 (axiom $2.26, network $8.06, pool $2.21), plus $3.34 lost to slippage
 - New trades: on
@@ -74,9 +74,19 @@ Updated 2026-11-01T22:59:32Z (paper trading, never real money)
   CA `GYKnd6jGUSQoBUnj6LdGCBtCWYDgr2Zd6QwNPcy5pump`
 
 ## Last scan
-- 22:58Z: 2 coins, 2 with pairs, 0 passed the market filters, 0 researched
+- 23:13Z: 2 coins, 2 with pairs, 1 passed the market filters, 1 researched
 
 ## Coins it looked at, and why it passed
+- 23:13Z CHOO (MIGRATED, $2,040,691 mcap, $2,352 5m vol): PASS at conviction 3, PASS: $2.4k on the 5m for a $2M coin, buys and sells even at 8/8, and the radar already lists it as fading. Blocker: thin flow / crowd leaving (V1, V6).  
+  CA `EJAxERvKU4kEVXn3NarjvRtgaMaJyP9ZuMeKA7JJpump`
+- 23:12Z ALON (MIGRATED, $49,669 mcap, $36,064 5m vol): PASS at conviction 2, PASS: migrated 2 minutes ago, buying at its high, and 8 bigger coins share the ticker. Too new, chasing a spike, copycat (V1, V3, V6).  
+  CA `4zWkHRuH4zrCLYyvhj12x2Zxvjoo4pFJE6PPhozspump`
+- 23:10Z LEARJET (MIGRATED, $58,635 mcap, $61,502 5m vol): REJECT, Bundles: 4 linked wallet cluster(s) hold 22.8% of supply (>20%) (V17)  
+  CA `4zhDF9CgyPFMWi8qoamrY4RXHrnbbHfGL4oBANk5pump`
+- 23:09Z ARNOLD (MIGRATED, $82,155 mcap, $3,514 5m vol): PASS at conviction 3, PASS: no breakout. ARNOLD is a 49-hour-old coin drifting 18.6% under its high on $3.5k of 5m volume, with nothing in the crowd or the story to push it there (V1, V6).  
+  CA `nG3jfPQHU2ZQhPERkTZD8YPSAsrrWiePPDcm9jxpump`
+- 23:06Z Anakinius (MIGRATED, $254,780 mcap, $78,276 5m vol): PASS at conviction 2, PASS — 12-minute-old copy of the Star Wars run, 2% off its high after a +31% candle. That's buying the spike on a copy while ANAKIN has 3x the flow. Blocker: chasing spike / too new (V1, V13).  
+  CA `2pKpMwUQXNZeAf93LoomnZSworH3ezFzweCiuvrppump`
 - 22:53Z NNN (MIGRATED, $40,035 mcap, $3,605 5m vol): PASS at conviction 2, PASS: NNN migrated 2 minutes ago, sits 3.4% under its high, and has $3.6k on the 5m with 25 other coins on the same ticker. That's sniping a vamp field, not a trade (V1, V5, V6).  
   CA `GCM6bnuh6KiN696Wk8tu7QTfrpLmXUEWEW7rDwcEpump`
 - 22:52Z BingBingBing (FINAL_STRETCH, $34,162 mcap, $26,548 5m vol): PASS at conviction 3, PASS: 27 minutes old, sitting at its high at 89% bonded with top 10 holding 23.6%. That's sniping a pre-bond spike, not trading a setup. Blocker: "too new / chasing" (V1, V5, V6).  
@@ -87,34 +97,24 @@ Updated 2026-11-01T22:59:32Z (paper trading, never real money)
   CA `6g16UK4wHoFhC7PCmw8LYYCdt9q8m99fyoAwxeCrpump`
 - 22:41Z GATO (MIGRATED, $7,942,203 mcap, $33,465 5m vol): REJECT, Dev holds 3.3% (>1%) (V13, V17)  
   CA `HsprHxBRgiVaQdRf3TnKNuZZtaX9JUSPgMFdAkk6pump`
-- 22:40Z ANAKIN (MIGRATED, $718,492 mcap, $230,829 5m vol): PASS at conviction 2, PASS: chasing spike. 11 minutes old, 5.5% off the high, +66% in 5 minutes at 5x pace, and possibly a vamp of ANAKINCORE. I won't be exit liquidity (V1, V6).  
-  CA `8s4bNqEztH1JP7mkU747uMr7AckCQdiV47FDqYnDpump`
-- 22:38Z Dacity (MIGRATED, $7,251,100 mcap, $5,799 5m vol): REJECT, Bundles: 10 linked wallet cluster(s) hold 23.9% of supply (>20%) (V17)  
-  CA `nxPqZ4F7ux8Vph5NFu25rEP6Kx9Gr1U6Fmj36Rjpump`
-- 22:37Z Rockhорper (FINAL_STRETCH, $21,611 mcap, $27,274 5m vol): PASS at conviction 2, PASS — 13-minute-old pair, +62% on the last 5m candle, Cyrillic ticker spoof with 7 bigger same-ticker coins. Blocker: chasing spike / too new in a vamp field (V1, V3, V5).  
-  CA `733cBmN17bYDUWMH1s8ExypB4JYNuF1dTUjTfofBpump`
-- 22:34Z CBUCKS (MIGRATED, $1,695,799 mcap, $4,474 5m vol): REJECT, Top 10 hold 26.4% ex-pool (>25%) (V13)  
-  CA `DtcicPCKTKeAh7TDEzTym3hXeoHAoMiBdYJhMYxZpump`
-- 22:34Z uni (MIGRATED, $57,818,520 mcap, $19,069 5m vol): PASS at conviction 2, PASS — uni is 71.6% off its $203M peak with 5m volume at 0.08x the hourly pace. The crowd left, so this is a falling knife, not a dip (V1, V6).  
-  CA `jM9r9PJFyPaMEbhGZPbDeZJiysn2pfyz5TzdDs5pump`
 
 ## What its skips did next (last 48h)
 A skip "ran" if the coin reached the first target (1.5x) from the skip price before a 20% drop, "dumped" if the drop came first. Sampled every 10 min, followed 6h.
-- near the high / chasing: blocked 60, ran 7, dumped 43, flat 8, open 2 (saving losses: keep it)
-  - ran: AXIO up to 1.51x  
-    CA `3mUcXkpVVkQ5ZJMctz2f1VBk4rwu3NRfNwVQZtDzpump`
+- near the high / chasing: blocked 59, ran 6, dumped 43, flat 8, open 2 (saving losses: keep it)
   - ran: NATIONS up to 1.54x  
     CA `5ahor7yZ9EdXLzfS43aEPsfBsLtgocsi5sGc2Rsa58PG`
   - ran: Hyped up to 2.02x  
     CA `ADpzsC5eB1yDD5T9LocQ8kpN7jrcW5gobA4FBHuipump`
-- too new / sniping: blocked 51, ran 3, dumped 43, flat 0, open 5 (saving losses: keep it)
+  - ran: Wojak up to 2.51x  
+    CA `BbNuEtiT77Swr4WqGHuUkQY5kZ67M7au7bXkxcArpump`
+- too new / sniping: blocked 53, ran 4, dumped 45, flat 0, open 4 (saving losses: keep it)
   - ran: onlypump up to 1.92x  
     CA `J73efZvH6rkrJbFJdP2rqe473YJW7tyWmrNARUSzpump`
   - ran: paws up to 1.51x  
     CA `CCF6ui6YjjhLaVtuYLH8b5jza8jHathqww5VbrMapump`
   - ran: ANAKIN up to 1.59x  
     CA `8s4bNqEztH1JP7mkU747uMr7AckCQdiV47FDqYnDpump`
-- top 10 over 25%: blocked 40, ran 7, dumped 27, flat 3, open 3 (saving losses: keep it)
+- top 10 over 25%: blocked 39, ran 7, dumped 26, flat 3, open 3 (saving losses: keep it)
   - ran: George up to 1.88x  
     CA `4poKLzPuwjKJgXM6eF3EqBbMzWgkapi96vbNSkZipump`
   - ran: Beaver up to 2.56x  
@@ -142,16 +142,14 @@ A skip "ran" if the coin reached the first target (1.5x) from the skip price bef
     CA `2T9WZjVC6L3BvusUtjKDT6HcZeEYgU9T5xhfJQxFpump`
   - ran: ZECRET up to 1.62x  
     CA `ChCi2x2bpevrNyeRoPHLXHzmaCdGQPuU15CNqxY1pump`
-- crowd leaving / fading volume: blocked 15, ran 2, dumped 7, flat 2, open 4 (saving losses: keep it)
-  - ran: AXIO up to 1.51x  
-    CA `3mUcXkpVVkQ5ZJMctz2f1VBk4rwu3NRfNwVQZtDzpump`
-  - ran: Apple up to 1.58x  
-    CA `6nJVg7wV1UBaWBpHuP7pEHLBd26U4cj6vXnGShobpump`
 - falling knife / no higher low: blocked 15, ran 2, dumped 12, flat 1, open 0 (saving losses: keep it)
   - ran: CREDIT up to 1.56x  
     CA `Ewyifvp8X9NxeaKawXamGXBFDisuMfcFfcdvSZ8opump`
   - ran: PI up to 1.6x  
     CA `93VGqXL76voGxc43apJTDJoKkqnxTht1BKWoEmUypump`
+- crowd leaving / fading volume: blocked 14, ran 1, dumped 7, flat 2, open 4 (saving losses: keep it)
+  - ran: Apple up to 1.58x  
+    CA `6nJVg7wV1UBaWBpHuP7pEHLBd26U4cj6vXnGShobpump`
 - dev share over 1%: blocked 10, ran 3, dumped 5, flat 0, open 2 (mixed)
   - ran: IGLU up to 1.54x  
     CA `34YQhrgkWoeFnm6LrcnmV3PLyDaMSNZikzUjyMmupump`
@@ -164,14 +162,14 @@ A skip "ran" if the coin reached the first target (1.5x) from the skip price bef
     CA `3B3SJFo8kvVoMvvkzrUCPdpDeSeCL773AJ3kNLWJpump`
 
 ## Rules it changed from results and skips
-- 11-01 13:51Z dropped: Any fee, friction or minimum-size wording and any trail-tightening idea from the lessons (The code fee check owns sizing. Initials (1.5x), the 20% stop and the 35% trail are set by the owner, so they're not learned rules.)
-- 11-01 16:56Z tightened: DIP gate: 0.7x volume line (code param raised from 0.6), live story, catalyst-printed dips rate 5–6 until reclaim (DIPs 0 for 5 (−$6.70). Falling-knife (code) skips: 4 ran, 20 dumped. SIS's news catalyst had already printed and it lost 31%. Owner set 0.7 with no 'rising' requirement, so no rising requirement is added.)
-- 11-01 16:56Z dropped: Tighten trail to 25% past 4x (CATBOT lesson) (Owner sets the trail at 35% from peak after initials and code enforces it; a learned rule may not set a different trail.)
 - 11-01 16:56Z dropped: Any fee/friction cap or minimum position size (The code fee check owns this (target must pay 3x round-trip, round trip at most 20% of position); fix the pick or the exit instead.)
 - 11-01 20:00Z loosened: First-resistance target: was a flat PASS under 1.5x; now 1.3–1.5x rates max 7 with a half-sell on rejection, under 1.3x is PASS (Only two trades were behind this ban, and both scratched: PAWCAT +0.7% (resistance 1.32x) and SWAN -0.7% (1.4x, peaked exactly at resistance). The flat 1.5x rule also quietly removed the 25–33% part of my own money shape, because the prior high there sits under 1.5x. The owner wants more trades on clean setups, and blocking this zone saves almost nothing.)
 - 11-01 20:00Z tightened: DIP needs a printed higher low AND flow at or above pace (The higher low alone didn't hold: HEXN's second trade and SIS both printed higher lows and broke them. DIPs are 0 for 5. No-higher-low skips went 1 ran, 10 dumped. The owner dropped only the 'rising volume' requirement, and I'm not adding it back: the pace test is a level, not a trend.)
 - 11-01 20:00Z tightened: Stop review defaults to SELL; the hold condition is now based on visible holder data (8 of 8 reviews closed worse than the stop (-27% to -59%). I replaced 'bundle exit visible / story intact' with things I can check: the top-10/insider share dropped, the trade went green first, and 5m volume is at or above pace.)
 - 11-01 20:00Z dropped: All fee/friction/minimum-size rules and anything setting initials, stop or trail (Code owns fees and sizing now. Owner exits are fixed at 1.5x initials, a -20% stop and a 35% trail. The old 'tighten the trail to 25% past 4x' from the CATBOT lesson is dropped.)
+- 11-01 23:03Z tightened: Never-green cut moved from 15 to 10 minutes (The never-green losers (SI, HEXN, BLUE, SIS) blew through the −20% stop within 7–11 minutes and closed −30% to −38%, so a 15-minute check came too late.)
+- 11-01 23:03Z dropped: Any fee, friction or minimum-size wording (Code owns the fee and size checks; lessons with fee/size parts are already retired. None remain in the rules.)
+- 11-01 23:03Z dropped: Owner floor: hard lines passed + live flow + a clear target = at least 7.** Rate 8–9 when it earns it so code sizes it up; the goal is a reason to press clean setups, not to lower the hard lines. (Owner override: the goal is set to push)
 
 ## Recent lessons
 - [2026-10-30 01:19] Expected: SWAN was a MIGRATED pullback buy, 29% off its high with a higher-low base and $49k on the 5m, and I wanted to retest $166k (about 1.4x) before taking initials at 1.5x (V1, V6). What happened: it peaked at exactly 1.40x, the retest level my own thesis named, then rejected there, and the break-even stop sold it at 1.16x for -0.7%. The pullback-entry rule and the 1.3x break-even rule both did their jobs, since a 1.4x peak didn't turn into a real loss. Rule for next time: when the prior high I'm targeting sits below my initials multiple, sell part of the position at that level (sell initials or half, V11) instead of waiting for 1.5x. That changes the exit, not the pick, so it's a refinement from one trade, not a new ban.
@@ -192,13 +190,13 @@ The meta is fresh pumpswap migrations less than an hour old, and anything older 
 - **TAILED (FINAL_STRETCH, watch only).** It has real flow ($22.9k on the 5-minute at $11k), but it's 6 minutes old, so it's a PASS until it has some age. I don't snipe new pairs (V5, V6).
 
 ## Moving most in its scans, last 30 min (1h volume)
-- uni: $2,861,680 1h vol, $57,818,520 mcap, -71% 1h  
-  CA `jM9r9PJFyPaMEbhGZPbDeZJiysn2pfyz5TzdDs5pump`
-- ANAKINCORE: $650,192 1h vol, $355,531 mcap, +654% 1h  
-  CA `EZZ4WS7XXKgWP2btL2iTjHz4of9PT16tCDMd1LTCpump`
-- ANAKIN: $556,441 1h vol, $718,492 mcap, +1300% 1h  
-  CA `8s4bNqEztH1JP7mkU747uMr7AckCQdiV47FDqYnDpump`
-- GATO: $217,322 1h vol, $7,942,203 mcap, +3% 1h  
-  CA `HsprHxBRgiVaQdRf3TnKNuZZtaX9JUSPgMFdAkk6pump`
+- Anakinius: $223,764 1h vol, $254,780 mcap, +504% 1h  
+  CA `2pKpMwUQXNZeAf93LoomnZSworH3ezFzweCiuvrppump`
+- LEARJET: $123,761 1h vol, $58,635 mcap, +42% 1h  
+  CA `4zhDF9CgyPFMWi8qoamrY4RXHrnbbHfGL4oBANk5pump`
 - VETOTRUMP: $118,867 1h vol, $175,286 mcap, +98% 1h  
   CA `6g16UK4wHoFhC7PCmw8LYYCdt9q8m99fyoAwxeCrpump`
+- BingBingBing: $108,294 1h vol, $34,162 mcap, +412% 1h  
+  CA `FqmuGbw5jtX5D8vsNvEG5M83py2s3RcWyxbWczw3pump`
+- ALON: $87,050 1h vol, $8,611 mcap, +84% 1h  
+  CA `FgcEkQrHw26jzt38KD33oSU95bTTGPsva8cBxb9Ppump`
