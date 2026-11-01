@@ -1,13 +1,13 @@
 # Trencher live report
 
-Updated 2026-11-01T14:24:13Z (paper trading, never real money)
+Updated 2026-11-01T14:39:15Z (paper trading, never real money)
 
 - Equity: $80.53 (-19.5% vs $100 start)
-- Goal: $1,000 by 2026-11-05 05:03Z (pressing for it): at 8.1% of it, 3.6 days left, needs +100.9% a day from here
+- Goal: $1,000 by 2026-11-05 05:03Z (pressing for it): at 8.1% of it, 3.6 days left, needs +101.3% a day from here
 - Closed trades: 19, 3 wins
 - Fees paid: $12.66 (axiom $2.26, network $8.06, pool $2.21), plus $3.34 lost to slippage
 - New trades: on
-- Brain: subscription, 637 calls and 1 plan-limit hits in 48h
+- Brain: subscription, 639 calls and 1 plan-limit hits in 48h
 
 ## Scorecard (after fees)
 - 19 closed, 3 won (16%), net $-19.48
@@ -74,9 +74,21 @@ Updated 2026-11-01T14:24:13Z (paper trading, never real money)
   CA `GYKnd6jGUSQoBUnj6LdGCBtCWYDgr2Zd6QwNPcy5pump`
 
 ## Last scan
-- 14:23Z: 2 coins, 2 with pairs, 0 passed the market filters, 0 researched
+- 14:38Z: 6 coins, 6 with pairs, 0 passed the market filters, 0 researched
 
 ## Coins it looked at, and why it passed
+- 14:38Z PAWCAT (DIP, $2,702,300 mcap, $12,627 5m vol): PASS at conviction 3, PASS — 68% off the high, -12% on the 5m and sliding back to the pullback low with no higher low printed; cat meta is cooling. Falling knife. (V1)  
+  CA `762ZqBCd5m2q3QJ5UPkFL5rqdEUeygNkfTZrpGEZpump`
+- 14:37Z SOL (MIGRATED, $195,459 mcap, $112,006 5m vol): PASS at conviction 3, PASS — blocker "chasing": 10-minute-old coin 1.5% off its high right after a +56% 5m candle at 5.4x pace. Clean holders don't make that a pullback (V1).  
+  CA `Ccm5ZnTrKY7YNskkiQJ4nrL4GHSGoXniik9pyV4Jpump`
+- 14:36Z tipr (MIGRATED, $44,517 mcap, $2,652 5m vol): PASS at conviction 2, PASS: down 87% from a $345k peak and back to $44k, which is a bonded coin that dumped under $70k with nothing left to prove. Falling knife, and a dead story too (V6).  
+  CA `3kRQDKPGqMWwBdGjiVPpPqVzFsnYG5PDqvrVz1D2pump`
+- 14:35Z GATO (MIGRATED, $7,223,273 mcap, $4,558 5m vol): REJECT, Dev holds 3.3% (>1%) (V13, V17)  
+  CA `HsprHxBRgiVaQdRf3TnKNuZZtaX9JUSPgMFdAkk6pump`
+- 14:33Z DESSA (DIP, $19,027,733 mcap, $3,384 5m vol): REJECT, Dip with fading attention is a falling knife, not a dip (5m at 0.30x the hour's pace, under 0.6x)  
+  CA `npz2FhoufQ7pKqhGpaipYWacrAkidyW2yDpVWSvpump`
+- 14:31Z PARITY (FINAL_STRETCH, $20,393 mcap, $8,326 5m vol): REJECT, RugCheck danger: Creator history of rugged tokens  
+  CA `ETHgDzFEG9gqBrjpPyiLvi12LSN9m7aPSdvWWjyZpump`
 - 14:23Z Dante (FINAL_STRETCH, $29,796 mcap, $35,919 5m vol): PASS at conviction 2, PASS: chasing. Up 130% in the last 5m, flow at 5.5x the hourly pace, 8 minutes old, and 8 bigger "Dante" tokens already exist. That's a spike inside a vamp field, not a setup (V1, V3).  
   CA `4s8PpvyFsg1EnZxSpogVdsVwMU2R8gg46rKABG3Bs6Tt`
 - 14:21Z Ghost (MIGRATED, $131,430 mcap, $75,350 5m vol): REJECT, Dev holds 6.8% (>1%) (V13, V17)  
@@ -85,29 +97,17 @@ Updated 2026-11-01T14:24:13Z (paper trading, never real money)
   CA `nxPqZ4F7ux8Vph5NFu25rEP6Kx9Gr1U6Fmj36Rjpump`
 - 14:11Z AAPLCAT (DIP, $899,821 mcap, $5,464 5m vol): PASS at conviction 3, PASS: I lost 31% on AAPLCAT two hours ago and nothing that made me leave has changed. Flow is $5.4k on the 5m, under the hourly pace, the cat meta is cooling, and this candle is the first bounce, not a higher low. (V1, V6)  
   CA `GYKnd6jGUSQoBUnj6LdGCBtCWYDgr2Zd6QwNPcy5pump`
-- 14:08Z BLUE (DIP, $359,774 mcap, $2,850 5m vol): REJECT, Dip with fading attention is a falling knife, not a dip (5m at 0.56x the hour's pace, under 0.6x)  
-  CA `CPoGSmcjprCvzA2MFYLJMpQkGjmgVzKg4RVwMdrzpump`
-- 14:02Z SIS (MIGRATED, $178,040 mcap, $2,445 5m vol): PASS at conviction 2, PASS: SIS is 86% off its peak and 5m volume is at half the hourly pace. The crowd that left when I was stopped out never came back. Blocker: "flow below pace" (V1, V6).  
-  CA `FdKdpz11GsTofLaNiddrhxrsE4APZYSSfLFqQ9YKpump`
-- 14:02Z GTA1s (MIGRATED, $63,717 mcap, $90,264 5m vol): PASS at conviction 2, PASS — 5 minutes old, 3% off a high it set this minute, after a +99% candle on 9x pace. Blockers: too new and chasing (V1).  
-  CA `JCPAaUXNnHjFWFG69HcdVh4QNWS1Ec5B1DYwZgsqpump`
-- 13:57Z HELL (MIGRATED, $2,990,588 mcap, $4,552 5m vol): PASS at conviction 3, PASS — target below initials: the $3.46M high is 1.16x away, the 'surge' is $4.5k on a dead hour, and the site claims a Rockstar/Xbox/PlayStation partnership that it admits isn't announced. LARP in a shallow band (V1, V6).  
-  CA `A75Xx6SeftAmWduv9KGwb2GCjXUAhxozcCUCys9jpump`
-- 13:52Z PAWCAT (DIP, $3,146,243 mcap, $10,708 5m vol): PASS at conviction 3, PASS — blocker "no higher low / flow below pace": eight straight lower 15m closes and 5m volume at 0.66x the hourly pace, under the 0.7x DIP gate, while the cat meta fades. Clean holders, but no floor. (V1, V6)  
-  CA `762ZqBCd5m2q3QJ5UPkFL5rqdEUeygNkfTZrpGEZpump`
-- 13:49Z GATO (MIGRATED, $7,047,340 mcap, $3,692 5m vol): REJECT, Dev holds 3.3% (>1%) (V13, V17)  
-  CA `HsprHxBRgiVaQdRf3TnKNuZZtaX9JUSPgMFdAkk6pump`
 
 ## What its skips did next (last 48h)
 A skip "ran" if the coin reached the first target (1.5x) from the skip price before a 20% drop, "dumped" if the drop came first. Sampled every 10 min, followed 6h.
-- near the high / chasing: blocked 60, ran 10, dumped 40, flat 8, open 2 (saving losses: keep it)
-  - ran: DESSA up to 1.52x  
-    CA `npz2FhoufQ7pKqhGpaipYWacrAkidyW2yDpVWSvpump`
+- near the high / chasing: blocked 61, ran 9, dumped 40, flat 8, open 4 (saving losses: keep it)
   - ran: FLYWHEEL up to 2.23x  
     CA `BWMf44rD724R2bdgHWd88CDTVEjuPNQauw8s6S7ipump`
   - ran: iCoin up to 1.68x  
     CA `HgxEGTZ1Epb64RrYqcuHkqb1gGWWnF5WcPTCDWzApump`
-- too new / sniping: blocked 54, ran 4, dumped 49, flat 0, open 1 (saving losses: keep it)
+  - ran: AXIO up to 1.51x  
+    CA `3mUcXkpVVkQ5ZJMctz2f1VBk4rwu3NRfNwVQZtDzpump`
+- too new / sniping: blocked 54, ran 4, dumped 50, flat 0, open 0 (saving losses: keep it)
   - ran: SPACECAT up to 1.56x  
     CA `61h4rUn7C21QNv1NJADc2oAxpAhr7f2WGqbXRDEupump`
   - ran: xpad up to 2.54x  
@@ -121,7 +121,7 @@ A skip "ran" if the coin reached the first target (1.5x) from the skip price bef
     CA `4poKLzPuwjKJgXM6eF3EqBbMzWgkapi96vbNSkZipump`
   - ran: Beaver up to 2.56x  
     CA `5h44wfzwGHFnfVhNKtMLapAJNV9iqqbUgUB2FqyWpump`
-- falling knife (code): blocked 27, ran 4, dumped 20, flat 1, open 2 (saving losses: keep it)
+- falling knife (code): blocked 28, ran 4, dumped 20, flat 1, open 3 (saving losses: keep it)
   - ran: TYGR up to 1.58x  
     CA `5wCqCq6jbppuTocMeq6zd4UywAm64L1QNNxvEDAHpump`
   - ran: LUMI up to 1.76x  
@@ -135,27 +135,29 @@ A skip "ran" if the coin reached the first target (1.5x) from the skip price bef
     CA `DUTxGHL2LmpfjQaoK6LdZp8WQPoDiwvtDHVDf4fMpump`
   - ran: whitepaper up to 2.16x  
     CA `4tEvXHpd6JrCWJGByBS3qFBAtJbeoiEpgvWLw9hkpump`
-- falling knife / no higher low: blocked 20, ran 2, dumped 14, flat 2, open 2 (saving losses: keep it)
+- falling knife / no higher low: blocked 20, ran 2, dumped 13, flat 2, open 3 (saving losses: keep it)
   - ran: CREDIT up to 1.56x  
     CA `Ewyifvp8X9NxeaKawXamGXBFDisuMfcFfcdvSZ8opump`
   - ran: WASTED up to 1.64x  
     CA `GexThZHgaswpAQ7Fi8QrHFubjPimUNSYhJiAA7XZpump`
-- RugCheck danger: blocked 17, ran 2, dumped 15, flat 0, open 0 (saving losses: keep it)
+- RugCheck danger: blocked 18, ran 2, dumped 15, flat 0, open 1 (saving losses: keep it)
   - ran: PROBE up to 1.53x  
     CA `DR3Jtxwzkw9uBpi6Bz7qJX7zuFSJkNKXthD8nB1mpump`
   - ran: SUGAR up to 1.74x  
     CA `HLzTFsX99uqzAP7uK36gJ2pPHGfRM8ugvxXWJzjSpump`
-- dev share over 1%: blocked 11, ran 2, dumped 6, flat 0, open 3 (saving losses: keep it)
+- dev share over 1%: blocked 11, ran 2, dumped 7, flat 0, open 2 (saving losses: keep it)
   - ran: IGLU up to 1.54x  
     CA `34YQhrgkWoeFnm6LrcnmV3PLyDaMSNZikzUjyMmupump`
   - ran: MINTED up to 1.61x  
     CA `9yEKBwczdqoox7Red6GGPTrJ2dUbMvFUagdjxFqHpump`
-- crowd leaving / fading volume: blocked 11, ran 2, dumped 6, flat 2, open 1 (saving losses: keep it)
+- crowd leaving / fading volume: blocked 10, ran 2, dumped 5, flat 2, open 1 (saving losses: keep it)
   - ran: AXIO up to 1.51x  
     CA `3mUcXkpVVkQ5ZJMctz2f1VBk4rwu3NRfNwVQZtDzpump`
   - ran: Apple up to 1.58x  
     CA `6nJVg7wV1UBaWBpHuP7pEHLBd26U4cj6vXnGShobpump`
-- thin 5m volume: blocked 9, ran 0, dumped 5, flat 3, open 1 (saving losses: keep it)
+- hack story (owner rule): blocked 9, ran 1, dumped 3, flat 5, open 0 (saving losses: keep it)
+  - ran: ACT:H up to 1.53x  
+    CA `3B3SJFo8kvVoMvvkzrUCPdpDeSeCL773AJ3kNLWJpump`
 
 ## Rules it changed from results and skips
 - 11-01 07:42Z dropped: Any fee, friction or minimum-position-size rule, and any rule setting initials, stop or trail (Code owns the fee check (3x cost target, 20% max friction). Owner fixed initials at 1.5x, stop at 20% and trail at 35%. The old '4x → 25% trail' idea from the CATBOT lesson is not written back.)
@@ -183,13 +185,13 @@ A skip "ran" if the coin reached the first target (1.5x) from the skip price bef
 The meta is fresh pump.fun launches under an hour old that hit a big first wave, and the volume is rotating fast. GTA1s ($64k, $90k on the 5m, 0.1h old, +66%), BB ($38k 5m in its first minutes), PARITY (+379%), PR, SATOSHI and "then i walk in" all show it. The jokes are random gaming, culture and Satoshi tickers, not one shared theme. Cats are fading: PAWCAT is -37% on the hour with 5m volume at about 0.66x its hourly pace, AAPLCAT is flat, and SIS is bleeding at about 0.48x. Politics is a hard pass (LAPTOP, V13), and the crawler summary is stale: REGRET and P2P aren't in the scan, and SAFU is down 81% with $1.2k on the 5m, so it's dead. The one setup worth researching now is GTA1s as MIGRATED: it's above $30k with real flow, but a 0.49 buy ratio on a 6-minute-old chart could be churn, so I'll only buy it if holders, bundles and dev come back clean. PAWCAT is the only DIP candidate, and it's blocked by the 0.7x volume gate at 0.66x. I'll check it again if 5m volume climbs back over 0.7x its hourly pace. BB and PARITY are still far from bond on the curve, so they stay watch-only until they show Final Stretch flow (V1).
 
 ## Moving most in its scans, last 30 min (1h volume)
-- REGRETAMINE: $285,047 1h vol, $1,833 mcap, -95% 1h  
+- SOL: $249,017 1h vol, $195,459 mcap, +389% 1h  
+  CA `Ccm5ZnTrKY7YNskkiQJ4nrL4GHSGoXniik9pyV4Jpump`
+- PAWCAT: $215,749 1h vol, $2,702,300 mcap, -31% 1h  
+  CA `762ZqBCd5m2q3QJ5UPkFL5rqdEUeygNkfTZrpGEZpump`
+- REGRETAMINE: $161,410 1h vol, $1,821 mcap, -98% 1h  
   CA `57piTgZ3PUbrf3C59qJXrCwAms5VEa5ys1KPZNYSpump`
-- DESSA: $162,816 1h vol, $19,402,795 mcap, -13% 1h  
-  CA `npz2FhoufQ7pKqhGpaipYWacrAkidyW2yDpVWSvpump`
 - Ghost: $142,558 1h vol, $131,430 mcap, +229% 1h  
   CA `F4rbj1erkDbUp7ifK8gqJfs9ixDyqDTNACqAkHqQpump`
-- GTA1s: $120,676 1h vol, $63,717 mcap, +66% 1h  
-  CA `JCPAaUXNnHjFWFG69HcdVh4QNWS1Ec5B1DYwZgsqpump`
-- Dante: $78,971 1h vol, $29,796 mcap, +477% 1h  
-  CA `4s8PpvyFsg1EnZxSpogVdsVwMU2R8gg46rKABG3Bs6Tt`
+- DESSA: $137,315 1h vol, $19,027,733 mcap, -10% 1h  
+  CA `npz2FhoufQ7pKqhGpaipYWacrAkidyW2yDpVWSvpump`
