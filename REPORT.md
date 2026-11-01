@@ -1,9 +1,9 @@
 # Trencher live report
 
-Updated 2026-11-01T21:28:41Z (paper trading, never real money)
+Updated 2026-11-01T21:43:51Z (paper trading, never real money)
 
 - Equity: $80.53 (-19.5% vs $100 start)
-- Goal: $1,000 by 2026-11-05 05:03Z (pressing for it): at 8.1% of it, 3.3 days left, needs +113.8% a day from here
+- Goal: $1,000 by 2026-11-05 05:03Z (pressing for it): at 8.1% of it, 3.3 days left, needs +114.3% a day from here
 - Closed trades: 19, 3 wins
 - Fees paid: $12.66 (axiom $2.26, network $8.06, pool $2.21), plus $3.34 lost to slippage
 - New trades: on
@@ -74,9 +74,15 @@ Updated 2026-11-01T21:28:41Z (paper trading, never real money)
   CA `GYKnd6jGUSQoBUnj6LdGCBtCWYDgr2Zd6QwNPcy5pump`
 
 ## Last scan
-- 21:28Z: 6 coins, 5 with pairs, 0 passed the market filters, 0 researched
+- 21:43Z: 2 coins, 1 with pairs, 1 passed the market filters, 1 researched
 
 ## Coins it looked at, and why it passed
+- 21:43Z uni (MIGRATED, $132,446 mcap, $20,022 5m vol): REJECT, RugCheck report unavailable: can't verify mint/freeze/holders, skip  
+  CA `6pGyajBJsvKWLvgDZPNebH5uZcHXc7hVQAJ3y1uuVXNd`
+- 21:42Z MOVEMBER (DIP, $41,506 mcap, $11,204 5m vol): PASS at conviction 3, PASS: chasing spike. Up 73% in the last 5m on a $41k coin that bonded, peaked at $80k and fell back under $70k, with top 10 at 24.4%, one point under the hard line, and 2 bigger tokens on the same ticker (V1, V6, V13).  
+  CA `DTVcrMAEMwpSSBvu6W7P3BLZsRhFZb6bSzARFDqobfCT`
+- 21:38Z ARNOLD (MIGRATED, $81,019 mcap, $2,884 5m vol): PASS at conviction 3, PASS: $2.9k on the 5m at 0.74x the hourly pace, with buys and sells split 49/49. Flow below pace. Nobody's arriving (V1, V6).  
+  CA `nG3jfPQHU2ZQhPERkTZD8YPSAsrrWiePPDcm9jxpump`
 - 21:26Z PI (MIGRATED, $32,508 mcap, $4,547 5m vol): PASS at conviction 2, PASS: the crowd is gone. 5m volume is $4.5k, which is 0.15x the hourly pace, on a 1-hour-old coin down 72% that's still bleeding. Blocker: "flow below pace" / falling knife (V1, V6).  
   CA `93VGqXL76voGxc43apJTDJoKkqnxTht1BKWoEmUypump`
 - 21:25Z BABYUNI (MIGRATED, $142,575 mcap, $24,134 5m vol): REJECT, RugCheck danger: Large Amount of LP Unlocked 100.00%  
@@ -91,30 +97,24 @@ Updated 2026-11-01T21:28:41Z (paper trading, never real money)
   CA `jM9r9PJFyPaMEbhGZPbDeZJiysn2pfyz5TzdDs5pump`
 - 21:02Z AAPLCAT (MIGRATED, $83,830 mcap, $130,658 5m vol): PASS at conviction 2, PASS: AAPLCAT just fell 87% in five minutes and sits 96% off its $2.18M peak. That's a collapse, not a dip. Blocker "falling knife / no higher low" (V1, V6).  
   CA `GYKnd6jGUSQoBUnj6LdGCBtCWYDgr2Zd6QwNPcy5pump`
-- 20:58Z uni (MIGRATED, $91,472 mcap, $91,702 5m vol): PASS at conviction 3, PASS: 17 minutes old, last 5m candle up 42%, and the story is one Elon tweet. Blockers: "too new" and "chasing spike" (V1, V5).  
-  CA `6pGyajBJsvKWLvgDZPNebH5uZcHXc7hVQAJ3y1uuVXNd`
-- 20:56Z AI (DIP, $90,694 mcap, $13,013 5m vol): REJECT, Dip with fading attention is a falling knife, not a dip (5m at 0.48x the hour's pace, under 0.6x)  
-  CA `HNxyGpz8AkLqmfBBKMzmugkPE5Bahj2bGPPTNgWGpump`
-- 20:52Z ARNOLD (MIGRATED, $80,151 mcap, $3,342 5m vol): PASS at conviction 3, PASS — chasing spike: $3.3k 5m at 3.1x pace after a +26% hour, buys 55 vs sells 58, and the first resistance is only 1.33x away. Thin pump, no base. (V1, V6)  
-  CA `nG3jfPQHU2ZQhPERkTZD8YPSAsrrWiePPDcm9jxpump`
 
 ## What its skips did next (last 48h)
 A skip "ran" if the coin reached the first target (1.5x) from the skip price before a 20% drop, "dumped" if the drop came first. Sampled every 10 min, followed 6h.
-- near the high / chasing: blocked 62, ran 8, dumped 43, flat 7, open 4 (saving losses: keep it)
+- near the high / chasing: blocked 62, ran 8, dumped 44, flat 7, open 3 (saving losses: keep it)
   - ran: iCoin up to 1.68x  
     CA `HgxEGTZ1Epb64RrYqcuHkqb1gGWWnF5WcPTCDWzApump`
   - ran: AXIO up to 1.51x  
     CA `3mUcXkpVVkQ5ZJMctz2f1VBk4rwu3NRfNwVQZtDzpump`
   - ran: NATIONS up to 1.54x  
     CA `5ahor7yZ9EdXLzfS43aEPsfBsLtgocsi5sGc2Rsa58PG`
-- too new / sniping: blocked 49, ran 4, dumped 45, flat 0, open 0 (saving losses: keep it)
+- too new / sniping: blocked 48, ran 4, dumped 44, flat 0, open 0 (saving losses: keep it)
   - ran: onlypump up to 1.92x  
     CA `J73efZvH6rkrJbFJdP2rqe473YJW7tyWmrNARUSzpump`
   - ran: paws up to 1.51x  
     CA `CCF6ui6YjjhLaVtuYLH8b5jza8jHathqww5VbrMapump`
   - ran: Learjet up to 1.54x  
     CA `8Wi25nQhEay9KwAsoguEs3y1uxaJmCRQxRYnSY9dpump`
-- top 10 over 25%: blocked 39, ran 7, dumped 27, flat 3, open 2 (saving losses: keep it)
+- top 10 over 25%: blocked 39, ran 7, dumped 26, flat 3, open 3 (saving losses: keep it)
   - ran: George up to 1.88x  
     CA `4poKLzPuwjKJgXM6eF3EqBbMzWgkapi96vbNSkZipump`
   - ran: Beaver up to 2.56x  
@@ -128,24 +128,26 @@ A skip "ran" if the coin reached the first target (1.5x) from the skip price bef
     CA `8pjfN5Ayb4rucGpYE3tZWN6v3EysizjPx1v62zx1pump`
   - ran: BLUE up to 1.53x  
     CA `CPoGSmcjprCvzA2MFYLJMpQkGjmgVzKg4RVwMdrzpump`
-- RugCheck didn't load: blocked 22, ran 3, dumped 16, flat 3, open 0 (saving losses: keep it)
+- RugCheck didn't load: blocked 23, ran 3, dumped 16, flat 3, open 1 (saving losses: keep it)
   - ran: UNSAFU up to 1.61x  
     CA `4eq4JfnpdgqZTzeyR3GnRGHJQ3QhQT6Lp7nKnQ2nS7Rv`
   - ran: billy up to 3.75x  
     CA `DUTxGHL2LmpfjQaoK6LdZp8WQPoDiwvtDHVDf4fMpump`
   - ran: whitepaper up to 2.16x  
     CA `4tEvXHpd6JrCWJGByBS3qFBAtJbeoiEpgvWLw9hkpump`
-- RugCheck danger: blocked 22, ran 4, dumped 17, flat 0, open 1 (saving losses: keep it)
+- RugCheck danger: blocked 22, ran 4, dumped 18, flat 0, open 0 (saving losses: keep it)
   - ran: SUGAR up to 1.74x  
     CA `HLzTFsX99uqzAP7uK36gJ2pPHGfRM8ugvxXWJzjSpump`
   - ran: AIC up to 1.6x  
     CA `2T9WZjVC6L3BvusUtjKDT6HcZeEYgU9T5xhfJQxFpump`
   - ran: ZECRET up to 1.62x  
     CA `ChCi2x2bpevrNyeRoPHLXHzmaCdGQPuU15CNqxY1pump`
-- falling knife / no higher low: blocked 15, ran 1, dumped 11, flat 1, open 2 (saving losses: keep it)
+- falling knife / no higher low: blocked 15, ran 2, dumped 12, flat 1, open 0 (saving losses: keep it)
   - ran: CREDIT up to 1.56x  
     CA `Ewyifvp8X9NxeaKawXamGXBFDisuMfcFfcdvSZ8opump`
-- crowd leaving / fading volume: blocked 12, ran 2, dumped 7, flat 2, open 1 (saving losses: keep it)
+  - ran: PI up to 1.6x  
+    CA `93VGqXL76voGxc43apJTDJoKkqnxTht1BKWoEmUypump`
+- crowd leaving / fading volume: blocked 13, ran 2, dumped 8, flat 2, open 1 (saving losses: keep it)
   - ran: AXIO up to 1.51x  
     CA `3mUcXkpVVkQ5ZJMctz2f1VBk4rwu3NRfNwVQZtDzpump`
   - ran: Apple up to 1.58x  
@@ -184,24 +186,16 @@ A skip "ran" if the coin reached the first target (1.5x) from the skip price bef
 - [2026-11-01 06:19] Expected AAPLCAT, 36% off its $1.8M high with a printed higher-low base, clean holders and $12.6k on the 5m, to retest the peak at about 1.57x. It peaked at 1.01x, broke the 0.000981 higher low, and the "unclear" stop review sold at −31% instead of −20%. That makes 7 of 7 stop reviews closing worse than the stop. This confirms my existing rules rather than adding a new one: the proven band needs 5m at or above the hourly pace and a meta with the crowd still arriving (V1, V6). I bought with pace under the hourly average and a cooling meta, so next time a band entry with flow below pace is a PASS (blocker "flow below pace"), not a probe, and a broken higher low sells right away.
 
 ## Meta right now
-The meta is cartoon characters and pop-culture names: Apple Cat, Baby Anakin, GTA6CAT, drool cat, Cartoon Money. Two kinds of coins are moving. Fresh launches are ripping and then dying within the hour: HEN is down 73%, and FARM, CALLOUT and DROOL each have under $200 on the 5m. Older coins that already proved themselves are holding steadier flow: GATO, CBUCKS, HELL and Dacity. Parts of my crawler's summary are stale. GATO's buy ratio is now 0.19, which means sellers, not 0.60. MOLE has faded to $1.4k on the 5m, which is dead under the $2k line (V1).
-
-The setup I like most right now is AAPLCAT as a DIP. It's 25 hours old, $535k market cap, down 36% on the hour. Its 5m volume is $62k, about 4x its hourly pace, and the buy ratio is 0.77. That's buyers stepping into the pullback (V1), so it's my first coin to research once holders and bundles come back clean.
-
-GATO is on watch. It's GTA6, it's in the V6 range ($7.5M market cap) and it has $12k on the 5m, but the blocker is that the 0.19 buy ratio means it's being sold into. HELL is up 17.5% on the hour, but the blocker is its $5.6k 5m, under my $10k bar.
-
-PASS on BABYKIN, CASE and AI. The blocker is age: they're 0.1–0.8 hours old, and I don't snipe new pairs (V5, V6). LAPTOP is a political-figure coin (V13), and anything tied to the hack story is blocked.
-
-On the owner's note: I'll press setups that clear my checks. But the $1k goal doesn't add points to a rating. Only the holder and flow data do.
+Meta: "uni" is the hot theme (uni at $77M market cap, 0.2h old, $432k 5m; vamp Baby Uni +269%, 0.1h old), probably feeding off UNI trending on CoinGecko (unconfirmed). Fresh launches are dying within the hour (PI, Learjet, OP, MANATEE, REFORM, UpDown down 14-62% with thin 5m). Cartoon/cat runners are cooling but alive (GATO, Dacity, CHOO, CBUCKS at $1.8-7.8M on slow flow; GATO buy ratio 0.38 = sellers). Crawler summary is stale: AAPLCAT is now down 85% on the hour at $84k, past the 70% house limit, so not a DIP setup; only revisit if holder data shows insiders/bundle already out. HELL dead at $234 5m. Setup to research: uni as MIGRATED, once at least 1h old and holder/bundle checks come back clean. PASS Baby Uni (6-minute-old vamp, V1). PASS LAPTOP (political-figure coin, V13). Owner's note taken, but nothing here has earned an 8 yet.
 
 ## Moving most in its scans, last 30 min (1h volume)
-- uni: $2,187,283 1h vol, $77,590,441 mcap, +201% 1h  
-  CA `jM9r9PJFyPaMEbhGZPbDeZJiysn2pfyz5TzdDs5pump`
-- AAPLCAT: $495,671 1h vol, $83,830 mcap, -85% 1h  
-  CA `GYKnd6jGUSQoBUnj6LdGCBtCWYDgr2Zd6QwNPcy5pump`
+- uni: $923,718 1h vol, $132,446 mcap, +42% 1h  
+  CA `6pGyajBJsvKWLvgDZPNebH5uZcHXc7hVQAJ3y1uuVXNd`
 - PI: $371,701 1h vol, $32,508 mcap, -48% 1h  
   CA `93VGqXL76voGxc43apJTDJoKkqnxTht1BKWoEmUypump`
-- Learjet: $115,669 1h vol, $22,070 mcap, -39% 1h  
-  CA `8Wi25nQhEay9KwAsoguEs3y1uxaJmCRQxRYnSY9dpump`
+- BABYKIN: $211,686 1h vol, $2,140 mcap, -98% 1h  
+  CA `8BxKRVNTRzM7LTJ9Q6rqKQFwXtMjZjjSNYNDyjLSpump`
+- MOVEMBER: $115,384 1h vol, $41,506 mcap, +30% 1h  
+  CA `DTVcrMAEMwpSSBvu6W7P3BLZsRhFZb6bSzARFDqobfCT`
 - CHOO: $112,544 1h vol, $1,938,360 mcap, +7% 1h  
   CA `EJAxERvKU4kEVXn3NarjvRtgaMaJyP9ZuMeKA7JJpump`
