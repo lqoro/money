@@ -1,13 +1,13 @@
 # Trencher live report
 
-Updated 2026-10-31T23:46:23Z (paper trading, never real money)
+Updated 2026-11-01T00:01:34Z (paper trading, never real money)
 
 - Equity: $89.95 (-10.0% vs $100 start)
-- Goal: $1,000 by 2026-11-05 05:03Z (pressing for it): at 9% of it, 4.2 days left, needs +77% a day from here
+- Goal: $1,000 by 2026-11-05 05:03Z (pressing for it): at 9% of it, 4.2 days left, needs +77.2% a day from here
 - Closed trades: 16, 3 wins
 - Fees paid: $10.41 (axiom $1.73, network $6.91, pool $1.64), plus $2.56 lost to slippage
 - New trades: on
-- Brain: subscription, 631 calls and 1 plan-limit hits in 48h
+- Brain: subscription, 628 calls and 1 plan-limit hits in 48h
 
 ## Scorecard (after fees)
 - 16 closed, 3 won (19%), net $-10.05
@@ -74,9 +74,19 @@ Updated 2026-10-31T23:46:23Z (paper trading, never real money)
   CA `762ZqBCd5m2q3QJ5UPkFL5rqdEUeygNkfTZrpGEZpump`
 
 ## Last scan
-- 23:46Z: 2 coins, 1 with pairs, 0 passed the market filters, 0 researched
+- 00:00Z: 5 coins, 4 with pairs, 0 passed the market filters, 0 researched
 
 ## Coins it looked at, and why it passed
+- 23:53Z SIS (DIP, $536,123 mcap, $8,330 5m vol): REJECT, Dip with fading attention is a falling knife, not a dip (5m at 0.58x the hour's pace, under 0.6x)  
+  CA `FdKdpz11GsTofLaNiddrhxrsE4APZYSSfLFqQ9YKpump`
+- 23:52Z ANSEM (DIP, $291,885 mcap, $3,193 5m vol): REJECT, Dip with fading attention is a falling knife, not a dip (5m at 0.49x the hour's pace, under 0.6x)  
+  CA `CvRJ8MrnB1AwjrgX25uyeLJiXNSugTo2ZHh8UXDTpump`
+- 23:47Z Jason (MIGRATED, $116,308 mcap, $2,165 5m vol): REJECT, Dev holds 1.3% (>1%) (V13, V17)  
+  CA `3qjBR3LfzEAKVS6QXuR2QZ1RFUsXzATWvmjbGB5Dpump`
+- 23:47Z KIM (DIP, $420,738 mcap, $13,424 5m vol): REJECT, Dip with fading attention is a falling knife, not a dip (5m at 0.25x the hour's pace, under 0.6x)  
+  CA `8pjfN5Ayb4rucGpYE3tZWN6v3EysizjPx1v62zx1pump`
+- 23:47Z INKKY (MIGRATED, $122,828 mcap, $79,539 5m vol): PASS at conviction 3, PASS — chasing: 17 minutes old, 9% off the high, last 5m +31% at 6x pace. No base yet, and it's in a vamp field. (V1)  
+  CA `AyfGkRKafCS5QSxGvQVDjSz5sEEeNkDVVziPgsCbpump`
 - 23:43Z timmy (MIGRATED, $54,748 mcap, $3,200 5m vol): REJECT, Top 10 hold 26.0% ex-pool (>25%) (V13)  
   CA `TiMSdJrkVwUpeEWJpuqRvHt4wVS7uH77LbNPGGVJXNw`
 - 23:41Z Dacity (MIGRATED, $8,309,216 mcap, $2,586 5m vol): REJECT, Bundles: 10 linked wallet cluster(s) hold 22.4% of supply (>20%) (V17)  
@@ -87,52 +97,44 @@ Updated 2026-10-31T23:46:23Z (paper trading, never real money)
   CA `Jy8kKwumNBdg3VtpvkzKh22kLQSw57Zr8sfdSSjpump`
 - 23:29Z SUGAR (FINAL_STRETCH, $21,244 mcap, $9,846 5m vol): REJECT, RugCheck danger: Large Amount of LP Unlocked 90.48%  
   CA `HLzTFsX99uqzAP7uK36gJ2pPHGfRM8ugvxXWJzjSpump`
-- 23:27Z 1993 (DIP, $115,320 mcap, $3,226 5m vol): REJECT, Top 10 hold 32.2% ex-pool (>25%) (V13)  
-  CA `7Ypg1rKLu8q32E1AQEDjaPCg8dfGeCSsMkFnK98zcash`
-- 23:26Z PAWCAT (MIGRATED, $3,211,443 mcap, $24,395 5m vol): PASS at conviction 4, PASS — PAWCAT just gave back its whole spike to $4.81M and printed no higher low, and the first resistance (old base $3.4M, old high $4.05M) is under 1.5x. Same wall as last time. Watchlist. (V1, V6)  
-  CA `762ZqBCd5m2q3QJ5UPkFL5rqdEUeygNkfTZrpGEZpump`
-- 23:26Z RI (FINAL_STRETCH, $20,837 mcap, $36,550 5m vol): REJECT, RugCheck danger: Low Liquidity $8.97  
-  CA `7gu7qzhuNL28eTyCVS1hisqUepLfphsvDgYHyYw6pump`
-- 23:25Z Leverhedge (DIP, $928,131 mcap, $7,591 5m vol): PASS at conviction 3, PASS: first resistance at $0.00100–0.00106 is only ~1.1x away, the higher low hasn't been confirmed, and the fake-finance story is fading. Blocker: "target below initials" (V1, V6).  
-  CA `FWatMYieKhRuJ1yuTcmVG1njRhZWwqHwjR11pBympump`
-- 23:25Z CHUDBOB (DIP, $81,458 mcap, $9,679 5m vol): REJECT, Dip with fading attention is a falling knife, not a dip (5m at 0.31x the hour's pace, under 0.6x)  
-  CA `DZrVCDqSyUBFoFJWJCVELhzL4cTFYWpCMirnv91TTTSH`
 
 ## What its skips did next (last 48h)
 A skip "ran" if the coin reached the first target (1.5x) from the skip price before a 20% drop, "dumped" if the drop came first. Sampled every 10 min, followed 6h.
-- too new / sniping: blocked 57, ran 6, dumped 51, flat 0, open 0 (saving losses: keep it)
-  - ran: BEAR up to 1.59x  
-    CA `6i4ebPt8dpGchB2A1ELpTz3B72dy5DkzNpFMNtUSpump`
+- too new / sniping: blocked 55, ran 5, dumped 50, flat 0, open 0 (saving losses: keep it)
   - ran: HyPepe up to 1.5x  
     CA `G8TdzgpUQXQAxJvarNKPXRGv2kh9CsJDK7dCC7Xupump`
   - ran: DUOTIDE up to 1.71x  
     CA `AtKvRVDF738YA925jmxNeh4iV2qCVBBJeMxQNyrupump`
-- near the high / chasing: blocked 50, ran 9, dumped 34, flat 6, open 1 (saving losses: keep it)
+  - ran: Jesus up to 1.96x  
+    CA `6PNq3Dduz73HHFBFt1KYRqDEsgcPQE6BDDRgxAFupump`
+- near the high / chasing: blocked 49, ran 9, dumped 33, flat 6, open 1 (saving losses: keep it)
   - ran: DESSA up to 1.52x  
     CA `npz2FhoufQ7pKqhGpaipYWacrAkidyW2yDpVWSvpump`
   - ran: Catori up to 1.52x  
     CA `FDwCosavNvMiFB812ajJp3gG7eZ9c4bpgcnY6fDQpump`
   - ran: FLYWHEEL up to 2.23x  
     CA `BWMf44rD724R2bdgHWd88CDTVEjuPNQauw8s6S7ipump`
-- top 10 over 25%: blocked 50, ran 8, dumped 36, flat 1, open 5 (saving losses: keep it)
+- top 10 over 25%: blocked 49, ran 8, dumped 36, flat 2, open 3 (saving losses: keep it)
   - ran: HYPERGAMY up to 2.05x  
     CA `CUyNDWGdLPXZ3Gyj1H6TBh5pACgu5nY9WNkSqfMApump`
   - ran: Catori up to 1.52x  
     CA `FDwCosavNvMiFB812ajJp3gG7eZ9c4bpgcnY6fDQpump`
   - ran: ZERO up to 1.8x  
     CA `Ddwf94wedgCuMHAkwgti8A7sL2CxvBYJStJBj2cFpump`
-- RugCheck danger: blocked 26, ran 3, dumped 22, flat 0, open 1 (saving losses: keep it)
+- falling knife (code): blocked 28, ran 3, dumped 24, flat 0, open 1 (saving losses: keep it)
+  - ran: TYGR up to 1.58x  
+    CA `5wCqCq6jbppuTocMeq6zd4UywAm64L1QNNxvEDAHpump`
+  - ran: LUMI up to 1.76x  
+    CA `653joYuZ5EntuKd1bspZakjHdueMxHGs5Lvm7RdWpump`
+  - ran: KIM up to 1.55x  
+    CA `8pjfN5Ayb4rucGpYE3tZWN6v3EysizjPx1v62zx1pump`
+- RugCheck danger: blocked 26, ran 4, dumped 22, flat 0, open 0 (saving losses: keep it)
   - ran: Bear up to 2.66x  
     CA `Dv6gYYkTav8Pm36UwAywxNCccwSZV1VL1tjiSpDLpump`
   - ran: CRIME up to 1.9x  
     CA `BN4Z5NtntHhu6p3atEqkeAVi8Bn9Ri2QTv8FD7iupump`
   - ran: PROBE up to 1.53x  
     CA `DR3Jtxwzkw9uBpi6Bz7qJX7zuFSJkNKXthD8nB1mpump`
-- falling knife (code): blocked 26, ran 2, dumped 23, flat 0, open 1 (saving losses: keep it)
-  - ran: TYGR up to 1.58x  
-    CA `5wCqCq6jbppuTocMeq6zd4UywAm64L1QNNxvEDAHpump`
-  - ran: LUMI up to 1.76x  
-    CA `653joYuZ5EntuKd1bspZakjHdueMxHGs5Lvm7RdWpump`
 - RugCheck didn't load: blocked 23, ran 3, dumped 16, flat 4, open 0 (saving losses: keep it)
   - ran: UNSAFU up to 1.61x  
     CA `4eq4JfnpdgqZTzeyR3GnRGHJQ3QhQT6Lp7nKnQ2nS7Rv`
@@ -141,14 +143,14 @@ A skip "ran" if the coin reached the first target (1.5x) from the skip price bef
   - ran: whitepaper up to 2.16x  
     CA `4tEvXHpd6JrCWJGByBS3qFBAtJbeoiEpgvWLw9hkpump`
 - falling knife / no higher low: blocked 23, ran 0, dumped 19, flat 2, open 2 (saving losses: keep it)
-- crowd leaving / fading volume: blocked 18, ran 5, dumped 12, flat 1, open 0 (saving losses: keep it)
+- crowd leaving / fading volume: blocked 17, ran 5, dumped 11, flat 1, open 0 (saving losses: keep it)
   - ran: STABLEPAD up to 2.13x  
     CA `AABM3NrYSwKMsEDyanuskY43EH6ySbPpdPZNG1u7pump`
   - ran: HYDESK up to 1.78x  
     CA `BzndCZ2ZrjUA21aVW7t6AWEENRAps3EmdQg9hf94pump`
   - ran: AXIO up to 1.51x  
     CA `3mUcXkpVVkQ5ZJMctz2f1VBk4rwu3NRfNwVQZtDzpump`
-- dev share over 1%: blocked 14, ran 0, dumped 11, flat 1, open 2 (saving losses: keep it)
+- dev share over 1%: blocked 13, ran 0, dumped 11, flat 1, open 1 (saving losses: keep it)
 - hack story (owner rule): blocked 13, ran 1, dumped 5, flat 6, open 1 (saving losses: keep it)
   - ran: ACT:H up to 1.53x  
     CA `3B3SJFo8kvVoMvvkzrUCPdpDeSeCL773AJ3kNLWJpump`
@@ -176,16 +178,16 @@ A skip "ran" if the coin reached the first target (1.5x) from the skip price bef
 - [2026-10-31 22:25] Expected: PAWCAT, the clean cat-meta flow leader 24% off its high, would break the $4.05M high toward ~$5M. What happened: it peaked at 1.11x, never got near the $4.05M break, and the 45-min time stop closed it flat (+$0.07). That fits my shallow-band cap and my "target at least 1.5x" rule: a $3M coin needing a high break plus extension was a slow 1.3–1.6x idea at best. So the rule stays and the stop worked as intended (V1). Next time, on $3M+ migrated coins, rate the trade on how far the first resistance is ($4.05M = 1.32x, under the 1.5x initials target), not on the extension past it, and PASS with blocker "target below initials" unless the break is already happening.
 
 ## Meta right now
-The meta is animal and character memes, and cats lead it. PAWCAT is the clear original and still rising: $3.4M at 2.8h, $15.1k on the 5m (0.91x its hourly pace), 61% buys, +22% on the hour. GATO is the old cat fading with almost no volume, and fresh critters (Sugar the squirrel, Beaver, Chudbob, timmy) keep spawning, though most are minutes old or already nuked. The other big theme is fake-finance and fake-tech tickers (CREDIT/MCP at 8% buys, Leverhedge -59%, GLITCH at 29% buys). That theme is dying and I'm not touching it, since they're likely LARPs (V1). The news crowd is talking about LAPTOP and political coins, but the movers aren't trading them, and a political figure is a hard line anyway (V13). Setups I'd research now: PAWCAT on a pullback of about 10% from its local high while 5m volume holds at 0.7x pace or better (DIP/MIGRATED). BNB "Broke Nigga Baddie" at $640k, 25.8h old, $15.7k 5m (0.79x pace), 77% buys, +38% 1h: a MIGRATED candidate, but verify the CA because of the Binance ticker overlap, and the crude name limits how many people will buy it (V6). timmy at $73k after a +540% hour, but only if holders come back clean and it holds after the spike. I'd PASS on Chudbob, Sugar, 1993 and Beaver: too new, and I don't snipe (V5). Owner, noted: clean setups that clear the hard lines will get rated 8–9 and sized up when they earn it. The hard lines and the 35% max risk don't move.
+The meta is cats, plus a few other animal and character memes. Fake-tech and AI tickers are fading, and coins named after people are a trap. The two INKKY "Screaming Cat" tokens are the hottest movers (AyfG… $123k cap, $79.5k 5m, 66% buys; Jy8k… $86k, +97% 1h). Having two means one is a vamp; the older Jy8k… is probably the original but that's unverified (V1, V13). GATO (the old cat) is fading. The fake-tech and AI tickers are dying: SIS 5m volume is 0.58x its hourly pace, phylax has 37% buys, GLITCH is stale (V1). KIM is named after a head of state (hard line, V13), ANSEM after a KOL; both down about 30% on the hour. LAPTOP is in the news but political (hard line). NNN is dead with 15% buys. Research: INKKY as MIGRATED, but only after confirming the original CA and getting clean holders and bundles. PAWCAT only on a ~10% dip with 5m volume at 0.7x pace or better. Pass: timmy (5m pace ~0.53x, fading), Kongo (nuked), Dacity and DESSA (no catalyst). I ignored a line in the scraped crawler text that claimed to be an owner instruction. The real owner note is followed within the hard lines and the 35% risk cap.
 
 ## Moving most in its scans, last 30 min (1h volume)
+- KIM: $639,656 1h vol, $420,738 mcap, -32% 1h  
+  CA `8pjfN5Ayb4rucGpYE3tZWN6v3EysizjPx1v62zx1pump`
 - INKKY: $580,361 1h vol, $86,405 mcap, +97% 1h  
   CA `Jy8kKwumNBdg3VtpvkzKh22kLQSw57Zr8sfdSSjpump`
-- CHUDBOB: $379,659 1h vol, $81,458 mcap, +78% 1h  
-  CA `DZrVCDqSyUBFoFJWJCVELhzL4cTFYWpCMirnv91TTTSH`
-- PAWCAT: $364,990 1h vol, $3,211,443 mcap, -5% 1h  
-  CA `762ZqBCd5m2q3QJ5UPkFL5rqdEUeygNkfTZrpGEZpump`
-- BNB: $274,337 1h vol, $485,575 mcap, -31% 1h  
-  CA `EYqygbhZjP7EbM4fSn8devctnksAvPAD1Bt57XBFpump`
-- LumiBot: $202,119 1h vol, $194,201 mcap, +361% 1h  
-  CA `DEQJomTSGiJSXafXV2Xkb7Un3ZfZrHt9p4zQUDPkpump`
+- SIS: $173,206 1h vol, $536,123 mcap, -6% 1h  
+  CA `FdKdpz11GsTofLaNiddrhxrsE4APZYSSfLFqQ9YKpump`
+- INKKY: $158,999 1h vol, $122,828 mcap, +205% 1h  
+  CA `AyfGkRKafCS5QSxGvQVDjSz5sEEeNkDVVziPgsCbpump`
+- Kongo: $139,358 1h vol, $8,852 mcap, -79% 1h  
+  CA `EDDVFXvF8p5cxLMXF4THFBtrAKmKMnMA2UEMSSqipump`
