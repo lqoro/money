@@ -1,9 +1,9 @@
 # Trencher live report
 
-Updated 2026-11-01T11:37:50Z (paper trading, never real money)
+Updated 2026-11-01T11:53:03Z (paper trading, never real money)
 
 - Equity: $80.53 (-19.5% vs $100 start)
-- Goal: $1,000 by 2026-11-05 05:03Z (pressing for it): at 8.1% of it, 3.7 days left, needs +96.6% a day from here
+- Goal: $1,000 by 2026-11-05 05:03Z (pressing for it): at 8.1% of it, 3.7 days left, needs +97% a day from here
 - Closed trades: 19, 3 wins
 - Fees paid: $12.66 (axiom $2.26, network $8.06, pool $2.21), plus $3.34 lost to slippage
 - New trades: on
@@ -74,9 +74,15 @@ Updated 2026-11-01T11:37:50Z (paper trading, never real money)
   CA `GYKnd6jGUSQoBUnj6LdGCBtCWYDgr2Zd6QwNPcy5pump`
 
 ## Last scan
-- 11:37Z: 4 coins, 4 with pairs, 0 passed the market filters, 0 researched
+- 11:52Z: 3 coins, 3 with pairs, 0 passed the market filters, 0 researched
 
 ## Coins it looked at, and why it passed
+- 11:48Z KO (FINAL_STRETCH, $29,310 mcap, $6,522 5m vol): PASS at conviction 3, PASS: 5m is $6.5k at 0.83x the hourly pace, right after a +24% candle, 75% of the way to bond, and top 10 hold 21%. That's chasing into the pre-bond dump (V1, V6).  
+  CA `GEHj3yYtnnS2Fv3GSkjb3FEQzSZuehHqyEbKc45vpump`
+- 11:46Z SIS (MIGRATED, $229,922 mcap, $3,273 5m vol): PASS at conviction 2, PASS: falling knife. SIS is 82% off its peak, past my 70% DIP limit, and 5m volume is only 0.43x the hourly pace, under the 0.7x gate. I was stopped out of this exact coin 20 minutes ago and the reason still holds. The crowd is leaving. (V1, V6)  
+  CA `FdKdpz11GsTofLaNiddrhxrsE4APZYSSfLFqQ9YKpump`
+- 11:41Z 白いヤク (MIGRATED, $57,886 mcap, $2,633 5m vol): PASS at conviction 2, PASS: flow below pace. 5m is $2.6k at 0.24x the hourly average, and the last 5m candle is up 36%. That's a dead-cat spike on a $58k coin that never held $70k (V1, V6).  
+  CA `6jFcYpa95qnzX3Kui4TTyPCEzQorHRCHXhoCAg5tpump`
 - 11:35Z PAWCAT (DIP, $3,819,059 mcap, $27,180 5m vol): REJECT, Dip with fading attention is a falling knife, not a dip (5m at 0.38x the hour's pace, under 0.6x)  
   CA `762ZqBCd5m2q3QJ5UPkFL5rqdEUeygNkfTZrpGEZpump`
 - 11:30Z BLUE (DIP, $302,632 mcap, $4,196 5m vol): REJECT, Dip with fading attention is a falling knife, not a dip (5m at 0.56x the hour's pace, under 0.6x)  
@@ -91,23 +97,17 @@ Updated 2026-11-01T11:37:50Z (paper trading, never real money)
   CA `GuvRLfGP4CMJfF9VyHv85vih9yqxhNB5R8zgRcD9pump`
 - 11:09Z TIPPER (FINAL_STRETCH, $19,750 mcap, $4,464 5m vol): REJECT, Top 10 hold 25.0% ex-pool (>25%) (V13)  
   CA `3DEcz7AnmJiGSnDHYvUeX5uPMMHVcDwqrWRSGdHEpump`
-- 11:08Z AAPLCAT (DIP, $810,776 mcap, $8,178 5m vol): REJECT, Dip with fading attention is a falling knife, not a dip (5m at 0.31x the hour's pace, under 0.6x)  
-  CA `GYKnd6jGUSQoBUnj6LdGCBtCWYDgr2Zd6QwNPcy5pump`
-- 11:00Z SIS (MIGRATED, $337,901 mcap, $4,447 5m vol): PASS at conviction 2, PASS — 74% off the peak (past my 70% limit), 5m at 0.69x pace, catalyst already priced, site still says CONTRACT TBA. I was stopped out of this once already. Blocker: flow below pace / dead story. (V1, V6)  
-  CA `FdKdpz11GsTofLaNiddrhxrsE4APZYSSfLFqQ9YKpump`
-- 10:56Z 白いヤク (MIGRATED, $63,511 mcap, $11,002 5m vol): PASS at conviction 3, PASS — last 5m candle +34.7% while 5m flow runs at 0.72x the hourly pace, on a 53-minute-old coin 12.5% off the high. That's chasing a spike on fading flow (V1, V6).  
-  CA `6jFcYpa95qnzX3Kui4TTyPCEzQorHRCHXhoCAg5tpump`
 
 ## What its skips did next (last 48h)
 A skip "ran" if the coin reached the first target (1.5x) from the skip price before a 20% drop, "dumped" if the drop came first. Sampled every 10 min, followed 6h.
-- near the high / chasing: blocked 58, ran 8, dumped 40, flat 9, open 1 (saving losses: keep it)
+- near the high / chasing: blocked 58, ran 8, dumped 38, flat 9, open 3 (saving losses: keep it)
   - ran: DESSA up to 1.52x  
     CA `npz2FhoufQ7pKqhGpaipYWacrAkidyW2yDpVWSvpump`
   - ran: FLYWHEEL up to 2.23x  
     CA `BWMf44rD724R2bdgHWd88CDTVEjuPNQauw8s6S7ipump`
   - ran: iCoin up to 1.68x  
     CA `HgxEGTZ1Epb64RrYqcuHkqb1gGWWnF5WcPTCDWzApump`
-- too new / sniping: blocked 53, ran 5, dumped 48, flat 0, open 0 (saving losses: keep it)
+- too new / sniping: blocked 52, ran 5, dumped 47, flat 0, open 0 (saving losses: keep it)
   - ran: Jesus up to 1.96x  
     CA `6PNq3Dduz73HHFBFt1KYRqDEsgcPQE6BDDRgxAFupump`
   - ran: SPACECAT up to 1.56x  
@@ -121,7 +121,7 @@ A skip "ran" if the coin reached the first target (1.5x) from the skip price bef
     CA `7aeDqEi2PfoYpJfw2eawzLnRH9NjQJ6jWMZ9FH1Hpump`
   - ran: George up to 1.88x  
     CA `4poKLzPuwjKJgXM6eF3EqBbMzWgkapi96vbNSkZipump`
-- falling knife (code): blocked 31, ran 3, dumped 23, flat 1, open 4 (saving losses: keep it)
+- falling knife (code): blocked 31, ran 3, dumped 25, flat 1, open 2 (saving losses: keep it)
   - ran: TYGR up to 1.58x  
     CA `5wCqCq6jbppuTocMeq6zd4UywAm64L1QNNxvEDAHpump`
   - ran: LUMI up to 1.76x  
@@ -145,7 +145,7 @@ A skip "ran" if the coin reached the first target (1.5x) from the skip price bef
     CA `DR3Jtxwzkw9uBpi6Bz7qJX7zuFSJkNKXthD8nB1mpump`
   - ran: SUGAR up to 1.74x  
     CA `HLzTFsX99uqzAP7uK36gJ2pPHGfRM8ugvxXWJzjSpump`
-- crowd leaving / fading volume: blocked 13, ran 3, dumped 8, flat 2, open 0 (saving losses: keep it)
+- crowd leaving / fading volume: blocked 12, ran 3, dumped 7, flat 2, open 0 (saving losses: keep it)
   - ran: HYDESK up to 1.78x  
     CA `BzndCZ2ZrjUA21aVW7t6AWEENRAps3EmdQg9hf94pump`
   - ran: AXIO up to 1.51x  
@@ -189,11 +189,11 @@ Meta is migrated cats and animals. PAWCAT ($4.66M, $133k on the 5m, about 2.7x i
 ## Moving most in its scans, last 30 min (1h volume)
 - PAWCAT: $848,093 1h vol, $3,819,059 mcap, -9% 1h  
   CA `762ZqBCd5m2q3QJ5UPkFL5rqdEUeygNkfTZrpGEZpump`
-- AAPLCAT: $316,491 1h vol, $810,776 mcap, -9% 1h  
-  CA `GYKnd6jGUSQoBUnj6LdGCBtCWYDgr2Zd6QwNPcy5pump`
-- MARVIN: $183,903 1h vol, $3,068 mcap, +2% 1h  
+- MARVIN: $169,968 1h vol, $2,888 mcap, -72% 1h  
   CA `6StLoZfceCvxoBcrkxNeUcMr5pQqgvRWpFbakgaspump`
-- BLACKED: $142,069 1h vol, $58,031 mcap, -23% 1h  
-  CA `GuvRLfGP4CMJfF9VyHv85vih9yqxhNB5R8zgRcD9pump`
-- GOONER: $107,835 1h vol, $2,772 mcap, -41% 1h  
+- 白いヤク: $132,590 1h vol, $57,886 mcap, -8% 1h  
+  CA `6jFcYpa95qnzX3Kui4TTyPCEzQorHRCHXhoCAg5tpump`
+- GOONER: $107,838 1h vol, $2,764 mcap, -41% 1h  
   CA `4u6fndR5CRLjNvc9N5cHJwUF2VdUVmBZgX4yGFHzpump`
+- KO: $94,690 1h vol, $29,310 mcap, +994% 1h  
+  CA `GEHj3yYtnnS2Fv3GSkjb3FEQzSZuehHqyEbKc45vpump`
