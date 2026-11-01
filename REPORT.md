@@ -1,13 +1,13 @@
 # Trencher live report
 
-Updated 2026-11-01T23:14:36Z (paper trading, never real money)
+Updated 2026-11-01T23:29:38Z (paper trading, never real money)
 
 - Equity: $80.53 (-19.5% vs $100 start)
-- Goal: $1,000 by 2026-11-05 05:03Z (pressing for it): at 8.1% of it, 3.2 days left, needs +117.5% a day from here
+- Goal: $1,000 by 2026-11-05 05:03Z (pressing for it): at 8.1% of it, 3.2 days left, needs +118.1% a day from here
 - Closed trades: 19, 3 wins
 - Fees paid: $12.66 (axiom $2.26, network $8.06, pool $2.21), plus $3.34 lost to slippage
 - New trades: on
-- Brain: subscription, 617 calls and 0 plan-limit hits in 48h
+- Brain: subscription, 616 calls and 0 plan-limit hits in 48h
 
 ## Scorecard (after fees)
 - 19 closed, 3 won (16%), net $-19.48
@@ -74,9 +74,17 @@ Updated 2026-11-01T23:14:36Z (paper trading, never real money)
   CA `GYKnd6jGUSQoBUnj6LdGCBtCWYDgr2Zd6QwNPcy5pump`
 
 ## Last scan
-- 23:13Z: 2 coins, 2 with pairs, 1 passed the market filters, 1 researched
+- 23:28Z: 1 coins, 1 with pairs, 0 passed the market filters, 0 researched
 
 ## Coins it looked at, and why it passed
+- 23:27Z GATO (MIGRATED, $7,635,125 mcap, $7,928 5m vol): REJECT, Dev holds 3.3% (>1%) (V13, V17)  
+  CA `HsprHxBRgiVaQdRf3TnKNuZZtaX9JUSPgMFdAkk6pump`
+- 23:25Z ANAKIN (MIGRATED, $1,470,527 mcap, $20,112 5m vol): PASS at conviction 3, PASS: ANAKIN's 5m volume is running at 0.12x its hourly pace, so the crowd that pumped it is leaving. Blocker: flow below pace (V1, V6).  
+  CA `8s4bNqEztH1JP7mkU747uMr7AckCQdiV47FDqYnDpump`
+- 23:18Z MIDTERMS (FINAL_STRETCH, $19,604 mcap, $25,474 5m vol): PASS at conviction 2, PASS — 2.4 minutes old, +451% in five, four same-ticker copies and a site that doesn't show the CA. That's a snipe on a spike, not a setup. Blocker: chasing spike / too new (V1, V5, V6).  
+  CA `74Np8Ga5DomwZVx5bZBGFcHgFavPhgkvkJ2LPdWdpump`
+- 23:16Z ANAKINCORE (DIP, $319,930 mcap, $8,009 5m vol): REJECT, Dip with fading attention is a falling knife, not a dip (5m at 0.43x the hour's pace, under 0.6x)  
+  CA `EZZ4WS7XXKgWP2btL2iTjHz4of9PT16tCDMd1LTCpump`
 - 23:13Z CHOO (MIGRATED, $2,040,691 mcap, $2,352 5m vol): PASS at conviction 3, PASS: $2.4k on the 5m for a $2M coin, buys and sells even at 8/8, and the radar already lists it as fading. Blocker: thin flow / crowd leaving (V1, V6).  
   CA `EJAxERvKU4kEVXn3NarjvRtgaMaJyP9ZuMeKA7JJpump`
 - 23:12Z ALON (MIGRATED, $49,669 mcap, $36,064 5m vol): PASS at conviction 2, PASS: migrated 2 minutes ago, buying at its high, and 8 bigger coins share the ticker. Too new, chasing a spike, copycat (V1, V3, V6).  
@@ -89,14 +97,6 @@ Updated 2026-11-01T23:14:36Z (paper trading, never real money)
   CA `2pKpMwUQXNZeAf93LoomnZSworH3ezFzweCiuvrppump`
 - 22:53Z NNN (MIGRATED, $40,035 mcap, $3,605 5m vol): PASS at conviction 2, PASS: NNN migrated 2 minutes ago, sits 3.4% under its high, and has $3.6k on the 5m with 25 other coins on the same ticker. That's sniping a vamp field, not a trade (V1, V5, V6).  
   CA `GCM6bnuh6KiN696Wk8tu7QTfrpLmXUEWEW7rDwcEpump`
-- 22:52Z BingBingBing (FINAL_STRETCH, $34,162 mcap, $26,548 5m vol): PASS at conviction 3, PASS: 27 minutes old, sitting at its high at 89% bonded with top 10 holding 23.6%. That's sniping a pre-bond spike, not trading a setup. Blocker: "too new / chasing" (V1, V5, V6).  
-  CA `FqmuGbw5jtX5D8vsNvEG5M83py2s3RcWyxbWczw3pump`
-- 22:52Z TAILED (FINAL_STRETCH, $20,084 mcap, $5,992 5m vol): PASS at conviction 2, PASS: 26 minutes old on the curve, $6k on the 5m, and a bigger token already has the TAILED ticker. Too new, possibly the wrong coin. (V1, V3, V5)  
-  CA `93k3Awd9QGhSvxFAsDVeDqJLJeCJ6cXAzJXSYtP6pump`
-- 22:51Z VETOTRUMP (MIGRATED, $175,286 mcap, $8,776 5m vol): PASS at conviction 4, PASS: flow below pace and still dropping off the spike. 5m is 0.89x the hourly pace, the last candle is -14%, and the first resistance is only 1.33x away. Blocker: "flow below pace". (V1, V6)  
-  CA `6g16UK4wHoFhC7PCmw8LYYCdt9q8m99fyoAwxeCrpump`
-- 22:41Z GATO (MIGRATED, $7,942,203 mcap, $33,465 5m vol): REJECT, Dev holds 3.3% (>1%) (V13, V17)  
-  CA `HsprHxBRgiVaQdRf3TnKNuZZtaX9JUSPgMFdAkk6pump`
 
 ## What its skips did next (last 48h)
 A skip "ran" if the coin reached the first target (1.5x) from the skip price before a 20% drop, "dumped" if the drop came first. Sampled every 10 min, followed 6h.
@@ -107,21 +107,21 @@ A skip "ran" if the coin reached the first target (1.5x) from the skip price bef
     CA `ADpzsC5eB1yDD5T9LocQ8kpN7jrcW5gobA4FBHuipump`
   - ran: Wojak up to 2.51x  
     CA `BbNuEtiT77Swr4WqGHuUkQY5kZ67M7au7bXkxcArpump`
-- too new / sniping: blocked 53, ran 4, dumped 45, flat 0, open 4 (saving losses: keep it)
+- too new / sniping: blocked 53, ran 3, dumped 46, flat 0, open 4 (saving losses: keep it)
   - ran: onlypump up to 1.92x  
     CA `J73efZvH6rkrJbFJdP2rqe473YJW7tyWmrNARUSzpump`
   - ran: paws up to 1.51x  
     CA `CCF6ui6YjjhLaVtuYLH8b5jza8jHathqww5VbrMapump`
-  - ran: ANAKIN up to 1.59x  
-    CA `8s4bNqEztH1JP7mkU747uMr7AckCQdiV47FDqYnDpump`
-- top 10 over 25%: blocked 39, ran 7, dumped 26, flat 3, open 3 (saving losses: keep it)
+  - ran: NNN up to 1.67x  
+    CA `GCM6bnuh6KiN696Wk8tu7QTfrpLmXUEWEW7rDwcEpump`
+- top 10 over 25%: blocked 39, ran 7, dumped 26, flat 4, open 2 (saving losses: keep it)
   - ran: George up to 1.88x  
     CA `4poKLzPuwjKJgXM6eF3EqBbMzWgkapi96vbNSkZipump`
   - ran: Beaver up to 2.56x  
     CA `5h44wfzwGHFnfVhNKtMLapAJNV9iqqbUgUB2FqyWpump`
   - ran: timmy up to 1.66x  
     CA `TiMSdJrkVwUpeEWJpuqRvHt4wVS7uH77LbNPGGVJXNw`
-- falling knife (code): blocked 23, ran 3, dumped 18, flat 2, open 0 (saving losses: keep it)
+- falling knife (code): blocked 24, ran 3, dumped 18, flat 2, open 1 (saving losses: keep it)
   - ran: LUMI up to 1.76x  
     CA `653joYuZ5EntuKd1bspZakjHdueMxHGs5Lvm7RdWpump`
   - ran: KIM up to 1.55x  
@@ -142,14 +142,14 @@ A skip "ran" if the coin reached the first target (1.5x) from the skip price bef
     CA `2T9WZjVC6L3BvusUtjKDT6HcZeEYgU9T5xhfJQxFpump`
   - ran: ZECRET up to 1.62x  
     CA `ChCi2x2bpevrNyeRoPHLXHzmaCdGQPuU15CNqxY1pump`
+- crowd leaving / fading volume: blocked 15, ran 1, dumped 7, flat 2, open 5 (saving losses: keep it)
+  - ran: Apple up to 1.58x  
+    CA `6nJVg7wV1UBaWBpHuP7pEHLBd26U4cj6vXnGShobpump`
 - falling knife / no higher low: blocked 15, ran 2, dumped 12, flat 1, open 0 (saving losses: keep it)
   - ran: CREDIT up to 1.56x  
     CA `Ewyifvp8X9NxeaKawXamGXBFDisuMfcFfcdvSZ8opump`
   - ran: PI up to 1.6x  
     CA `93VGqXL76voGxc43apJTDJoKkqnxTht1BKWoEmUypump`
-- crowd leaving / fading volume: blocked 14, ran 1, dumped 7, flat 2, open 4 (saving losses: keep it)
-  - ran: Apple up to 1.58x  
-    CA `6nJVg7wV1UBaWBpHuP7pEHLBd26U4cj6vXnGShobpump`
 - dev share over 1%: blocked 10, ran 3, dumped 5, flat 0, open 2 (mixed)
   - ran: IGLU up to 1.54x  
     CA `34YQhrgkWoeFnm6LrcnmV3PLyDaMSNZikzUjyMmupump`
@@ -190,13 +190,13 @@ The meta is fresh pumpswap migrations less than an hour old, and anything older 
 - **TAILED (FINAL_STRETCH, watch only).** It has real flow ($22.9k on the 5-minute at $11k), but it's 6 minutes old, so it's a PASS until it has some age. I don't snipe new pairs (V5, V6).
 
 ## Moving most in its scans, last 30 min (1h volume)
+- ANAKIN: $1,954,791 1h vol, $1,470,527 mcap, +2778% 1h  
+  CA `8s4bNqEztH1JP7mkU747uMr7AckCQdiV47FDqYnDpump`
+- ANAKINCORE: $223,842 1h vol, $319,930 mcap, +8% 1h  
+  CA `EZZ4WS7XXKgWP2btL2iTjHz4of9PT16tCDMd1LTCpump`
 - Anakinius: $223,764 1h vol, $254,780 mcap, +504% 1h  
   CA `2pKpMwUQXNZeAf93LoomnZSworH3ezFzweCiuvrppump`
+- GATO: $185,824 1h vol, $7,635,125 mcap, -5% 1h  
+  CA `HsprHxBRgiVaQdRf3TnKNuZZtaX9JUSPgMFdAkk6pump`
 - LEARJET: $123,761 1h vol, $58,635 mcap, +42% 1h  
   CA `4zhDF9CgyPFMWi8qoamrY4RXHrnbbHfGL4oBANk5pump`
-- VETOTRUMP: $118,867 1h vol, $175,286 mcap, +98% 1h  
-  CA `6g16UK4wHoFhC7PCmw8LYYCdt9q8m99fyoAwxeCrpump`
-- BingBingBing: $108,294 1h vol, $34,162 mcap, +412% 1h  
-  CA `FqmuGbw5jtX5D8vsNvEG5M83py2s3RcWyxbWczw3pump`
-- ALON: $87,050 1h vol, $8,611 mcap, +84% 1h  
-  CA `FgcEkQrHw26jzt38KD33oSU95bTTGPsva8cBxb9Ppump`
