@@ -1,13 +1,13 @@
 # Trencher live report
 
-Updated 2026-11-01T12:53:34Z (paper trading, never real money)
+Updated 2026-11-01T13:08:36Z (paper trading, never real money)
 
 - Equity: $80.53 (-19.5% vs $100 start)
-- Goal: $1,000 by 2026-11-05 05:03Z (pressing for it): at 8.1% of it, 3.7 days left, needs +98.5% a day from here
+- Goal: $1,000 by 2026-11-05 05:03Z (pressing for it): at 8.1% of it, 3.7 days left, needs +98.9% a day from here
 - Closed trades: 19, 3 wins
 - Fees paid: $12.66 (axiom $2.26, network $8.06, pool $2.21), plus $3.34 lost to slippage
 - New trades: on
-- Brain: subscription, 646 calls and 1 plan-limit hits in 48h
+- Brain: subscription, 645 calls and 1 plan-limit hits in 48h
 
 ## Scorecard (after fees)
 - 19 closed, 3 won (16%), net $-19.48
@@ -74,9 +74,15 @@ Updated 2026-11-01T12:53:34Z (paper trading, never real money)
   CA `GYKnd6jGUSQoBUnj6LdGCBtCWYDgr2Zd6QwNPcy5pump`
 
 ## Last scan
-- 12:53Z: 12 coins, 11 with pairs, 0 passed the market filters, 0 researched
+- 13:07Z: 3 coins, 3 with pairs, 0 passed the market filters, 0 researched
 
 ## Coins it looked at, and why it passed
+- 13:06Z PAWCAT (DIP, $4,531,609 mcap, $17,300 5m vol): REJECT, Dip with fading attention is a falling knife, not a dip (5m at 0.36x the hour's pace, under 0.6x)  
+  CA `762ZqBCd5m2q3QJ5UPkFL5rqdEUeygNkfTZrpGEZpump`
+- 13:03Z GATO (MIGRATED, $6,945,608 mcap, $4,238 5m vol): REJECT, Dev holds 3.3% (>1%) (V13, V17)  
+  CA `HsprHxBRgiVaQdRf3TnKNuZZtaX9JUSPgMFdAkk6pump`
+- 13:03Z REGRET (MIGRATED, $113,421 mcap, $73,035 5m vol): PASS at conviction 3, PASS: 8 minutes old, 6% off the high, right after a +59% candle at 7.5x pace. That's chasing a bond spike, not a setup. Watchlist for a higher low (V1).  
+  CA `Ae6TX54cU8EgcG6kVX4i5j1oz3FoZf2zRG7xvzmtpump`
 - 12:49Z P2P (MIGRATED, $31,102 mcap, $19,346 5m vol): REJECT, RugCheck danger: Creator history of rugged tokens  
   CA `8ANLUXihz9FrSy6Jbg85CGsuPCpPjf5S9ZUXNRG5pump`
 - 12:47Z Dacity (MIGRATED, $7,520,607 mcap, $5,308 5m vol): REJECT, Bundles: 10 linked wallet cluster(s) hold 22.4% of supply (>20%) (V17)  
@@ -91,12 +97,6 @@ Updated 2026-11-01T12:53:34Z (paper trading, never real money)
   CA `FdKdpz11GsTofLaNiddrhxrsE4APZYSSfLFqQ9YKpump`
 - 12:28Z BLUE (DIP, $249,240 mcap, $5,289 5m vol): PASS at conviction 2, PASS: BLUE is −8% on the 5m and −19% on the hour, 69% off the high with no higher low, and 5m flow is only 0.72x pace. The reason I sold it at 03:30 still holds. Falling knife. (V1, V6)  
   CA `CPoGSmcjprCvzA2MFYLJMpQkGjmgVzKg4RVwMdrzpump`
-- 12:27Z 白いヤク (DIP, $86,214 mcap, $8,360 5m vol): PASS at conviction 3, PASS: a fading Yak vamp, 5m at 0.62x pace, no higher low. Blocker "flow below pace" plus "split crowd" (V1, V3, V6).  
-  CA `6jFcYpa95qnzX3Kui4TTyPCEzQorHRCHXhoCAg5tpump`
-- 12:21Z PAWCAT (MIGRATED, $6,326,202 mcap, $136,922 5m vol): PASS at conviction 4, PASS — clean leader, bad entry: peak printed 6 min ago, 5m volume 3.4x pace with a −11% candle, and the $8M high is only 1.26x away, under 1.5x initials. Blocker: target below initials (V1, V6).  
-  CA `762ZqBCd5m2q3QJ5UPkFL5rqdEUeygNkfTZrpGEZpump`
-- 12:17Z GATO (MIGRATED, $6,959,322 mcap, $5,119 5m vol): REJECT, Dev holds 3.3% (>1%) (V13, V17)  
-  CA `HsprHxBRgiVaQdRf3TnKNuZZtaX9JUSPgMFdAkk6pump`
 
 ## What its skips did next (last 48h)
 A skip "ran" if the coin reached the first target (1.5x) from the skip price before a 20% drop, "dumped" if the drop came first. Sampled every 10 min, followed 6h.
@@ -107,7 +107,7 @@ A skip "ran" if the coin reached the first target (1.5x) from the skip price bef
     CA `BWMf44rD724R2bdgHWd88CDTVEjuPNQauw8s6S7ipump`
   - ran: iCoin up to 1.68x  
     CA `HgxEGTZ1Epb64RrYqcuHkqb1gGWWnF5WcPTCDWzApump`
-- too new / sniping: blocked 52, ran 4, dumped 48, flat 0, open 0 (saving losses: keep it)
+- too new / sniping: blocked 53, ran 4, dumped 48, flat 0, open 1 (saving losses: keep it)
   - ran: SPACECAT up to 1.56x  
     CA `61h4rUn7C21QNv1NJADc2oAxpAhr7f2WGqbXRDEupump`
   - ran: xpad up to 2.54x  
@@ -121,7 +121,7 @@ A skip "ran" if the coin reached the first target (1.5x) from the skip price bef
     CA `4poKLzPuwjKJgXM6eF3EqBbMzWgkapi96vbNSkZipump`
   - ran: Beaver up to 2.56x  
     CA `5h44wfzwGHFnfVhNKtMLapAJNV9iqqbUgUB2FqyWpump`
-- falling knife (code): blocked 27, ran 3, dumped 22, flat 1, open 1 (saving losses: keep it)
+- falling knife (code): blocked 28, ran 3, dumped 22, flat 1, open 2 (saving losses: keep it)
   - ran: TYGR up to 1.58x  
     CA `5wCqCq6jbppuTocMeq6zd4UywAm64L1QNNxvEDAHpump`
   - ran: LUMI up to 1.76x  
@@ -147,16 +147,16 @@ A skip "ran" if the coin reached the first target (1.5x) from the skip price bef
     CA `DR3Jtxwzkw9uBpi6Bz7qJX7zuFSJkNKXthD8nB1mpump`
   - ran: SUGAR up to 1.74x  
     CA `HLzTFsX99uqzAP7uK36gJ2pPHGfRM8ugvxXWJzjSpump`
-- dev share over 1%: blocked 11, ran 2, dumped 6, flat 1, open 2 (saving losses: keep it)
-  - ran: IGLU up to 1.54x  
-    CA `34YQhrgkWoeFnm6LrcnmV3PLyDaMSNZikzUjyMmupump`
-  - ran: MINTED up to 1.61x  
-    CA `9yEKBwczdqoox7Red6GGPTrJ2dUbMvFUagdjxFqHpump`
 - crowd leaving / fading volume: blocked 11, ran 2, dumped 6, flat 2, open 1 (saving losses: keep it)
   - ran: AXIO up to 1.51x  
     CA `3mUcXkpVVkQ5ZJMctz2f1VBk4rwu3NRfNwVQZtDzpump`
   - ran: Apple up to 1.58x  
     CA `6nJVg7wV1UBaWBpHuP7pEHLBd26U4cj6vXnGShobpump`
+- dev share over 1%: blocked 10, ran 2, dumped 6, flat 0, open 2 (saving losses: keep it)
+  - ran: IGLU up to 1.54x  
+    CA `34YQhrgkWoeFnm6LrcnmV3PLyDaMSNZikzUjyMmupump`
+  - ran: MINTED up to 1.61x  
+    CA `9yEKBwczdqoox7Red6GGPTrJ2dUbMvFUagdjxFqHpump`
 - hack story (owner rule): blocked 10, ran 1, dumped 4, flat 5, open 0 (saving losses: keep it)
   - ran: ACT:H up to 1.53x  
     CA `3B3SJFo8kvVoMvvkzrUCPdpDeSeCL773AJ3kNLWJpump`
@@ -189,13 +189,13 @@ The meta right now is fresh pump.fun graduates under an hour old with tech/agent
 Setups I'd look at: SA as a MIGRATED buy within 10% of its local high. It's a tech/agent name, so it needs a real product or GitHub or it's a LARP and drops to a probe (V1). MARVIN 5L1e as a MIGRATED buy too, only the original: 6StL is a dead copy at $2.8k with zero buys (V1, V3). Both get a 20% stop, initials at 1.5x and break-even at 1.3x. Owner says press on clean setups, and I will, but only if holders and bundles come back clean.
 
 ## Moving most in its scans, last 30 min (1h volume)
+- PAWCAT: $584,077 1h vol, $4,531,609 mcap, -5% 1h  
+  CA `762ZqBCd5m2q3QJ5UPkFL5rqdEUeygNkfTZrpGEZpump`
 - P2P: $363,397 1h vol, $31,102 mcap, -19% 1h  
   CA `8ANLUXihz9FrSy6Jbg85CGsuPCpPjf5S9ZUXNRG5pump`
-- 白いヤク: $162,772 1h vol, $86,214 mcap, +123% 1h  
-  CA `6jFcYpa95qnzX3Kui4TTyPCEzQorHRCHXhoCAg5tpump`
-- DESSA: $89,579 1h vol, $23,697,800 mcap, +4% 1h  
+- SA: $250,223 1h vol, $1,846 mcap, -95% 1h  
+  CA `EpciamcHuELQsgQQiMUhk8LKx5Hz16iNqJ3D5r5fpump`
+- REGRET: $117,482 1h vol, $113,421 mcap, +185% 1h  
+  CA `Ae6TX54cU8EgcG6kVX4i5j1oz3FoZf2zRG7xvzmtpump`
+- DESSA: $99,003 1h vol, $23,915,708 mcap, +2% 1h  
   CA `npz2FhoufQ7pKqhGpaipYWacrAkidyW2yDpVWSvpump`
-- BLUE: $88,447 1h vol, $249,240 mcap, -19% 1h  
-  CA `CPoGSmcjprCvzA2MFYLJMpQkGjmgVzKg4RVwMdrzpump`
-- MARVIN: $81,360 1h vol, $1,832 mcap, -98% 1h  
-  CA `5L1efZj4ymwKfE4dUQf5rYVLBSL6eJL2xe9EGnHGpump`
