@@ -1,13 +1,13 @@
 # Trencher live report
 
-Updated 2026-11-01T00:01:34Z (paper trading, never real money)
+Updated 2026-11-01T00:16:39Z (paper trading, never real money)
 
 - Equity: $89.95 (-10.0% vs $100 start)
-- Goal: $1,000 by 2026-11-05 05:03Z (pressing for it): at 9% of it, 4.2 days left, needs +77.2% a day from here
+- Goal: $1,000 by 2026-11-05 05:03Z (pressing for it): at 9% of it, 4.2 days left, needs +77.5% a day from here
 - Closed trades: 16, 3 wins
 - Fees paid: $10.41 (axiom $1.73, network $6.91, pool $1.64), plus $2.56 lost to slippage
 - New trades: on
-- Brain: subscription, 628 calls and 1 plan-limit hits in 48h
+- Brain: subscription, 630 calls and 1 plan-limit hits in 48h
 
 ## Scorecard (after fees)
 - 16 closed, 3 won (19%), net $-10.05
@@ -74,9 +74,21 @@ Updated 2026-11-01T00:01:34Z (paper trading, never real money)
   CA `762ZqBCd5m2q3QJ5UPkFL5rqdEUeygNkfTZrpGEZpump`
 
 ## Last scan
-- 00:00Z: 5 coins, 4 with pairs, 0 passed the market filters, 0 researched
+- 00:15Z: 6 coins, 5 with pairs, 0 passed the market filters, 0 researched
 
 ## Coins it looked at, and why it passed
+- 00:11Z PAWCAT (MIGRATED, $4,235,744 mcap, $8,219 5m vol): PASS at conviction 3, PASS — first resistance ($5.69M) is 1.34x away and 5m flow is 0.17x the hourly pace. Target below initials, crowd leaving. (V1, V6)  
+  CA `762ZqBCd5m2q3QJ5UPkFL5rqdEUeygNkfTZrpGEZpump`
+- 00:10Z GATO (MIGRATED, $6,214,719 mcap, $2,854 5m vol): REJECT, Dev holds 3.3% (>1%) (V13, V17)  
+  CA `HsprHxBRgiVaQdRf3TnKNuZZtaX9JUSPgMFdAkk6pump`
+- 00:10Z Leverhedge (DIP, $840,833 mcap, $4,830 5m vol): PASS at conviction 3, PASS: Leverhedge is bouncing for the first time off the hourly low on $4.8k 5m volume. No higher low has printed and the crowd is thinning. Blocker: "no higher low". (V1, V6)  
+  CA `FWatMYieKhRuJ1yuTcmVG1njRhZWwqHwjR11pBympump`
+- 00:09Z NNN (MIGRATED, $171,416 mcap, $2,427 5m vol): PASS at conviction 2, PASS — 5.8% off the high after a +26% candle, with 20% buys and $2.4k on the 5m. Chasing into a sell wall. (V1, V6)  
+  CA `57YQJbgdE32ZMCQzBivhjcXmnMLY5iw2MwrtcPYWpump`
+- 00:06Z BNB (MIGRATED, $426,019 mcap, $16,034 5m vol): PASS at conviction 2, PASS: this is a Binance-hack coin wearing a parody costume. The site says "broke after the hot wallet got cooked, withdrawals paused." Hack stories are a hard line. Blocker: hack story (owner rule).  
+  CA `EYqygbhZjP7EbM4fSn8devctnksAvPAD1Bt57XBFpump`
+- 00:04Z LUMI (MIGRATED, $70,389 mcap, $2,225 5m vol): PASS at conviction 2, PASS: LUMI is 91.6% off its $839k peak and trading $2.2k on the 5m. That's a corpse riding a robot company's press release, not a dip. (V1, V6)  
+  CA `HvitmAeh6TkToQonoiNwqWcrZsYdYiaSZHP7yMmspump`
 - 23:53Z SIS (DIP, $536,123 mcap, $8,330 5m vol): REJECT, Dip with fading attention is a falling knife, not a dip (5m at 0.58x the hour's pace, under 0.6x)  
   CA `FdKdpz11GsTofLaNiddrhxrsE4APZYSSfLFqQ9YKpump`
 - 23:52Z ANSEM (DIP, $291,885 mcap, $3,193 5m vol): REJECT, Dip with fading attention is a falling knife, not a dip (5m at 0.49x the hour's pace, under 0.6x)  
@@ -85,18 +97,6 @@ Updated 2026-11-01T00:01:34Z (paper trading, never real money)
   CA `3qjBR3LfzEAKVS6QXuR2QZ1RFUsXzATWvmjbGB5Dpump`
 - 23:47Z KIM (DIP, $420,738 mcap, $13,424 5m vol): REJECT, Dip with fading attention is a falling knife, not a dip (5m at 0.25x the hour's pace, under 0.6x)  
   CA `8pjfN5Ayb4rucGpYE3tZWN6v3EysizjPx1v62zx1pump`
-- 23:47Z INKKY (MIGRATED, $122,828 mcap, $79,539 5m vol): PASS at conviction 3, PASS — chasing: 17 minutes old, 9% off the high, last 5m +31% at 6x pace. No base yet, and it's in a vamp field. (V1)  
-  CA `AyfGkRKafCS5QSxGvQVDjSz5sEEeNkDVVziPgsCbpump`
-- 23:43Z timmy (MIGRATED, $54,748 mcap, $3,200 5m vol): REJECT, Top 10 hold 26.0% ex-pool (>25%) (V13)  
-  CA `TiMSdJrkVwUpeEWJpuqRvHt4wVS7uH77LbNPGGVJXNw`
-- 23:41Z Dacity (MIGRATED, $8,309,216 mcap, $2,586 5m vol): REJECT, Bundles: 10 linked wallet cluster(s) hold 22.4% of supply (>20%) (V17)  
-  CA `nxPqZ4F7ux8Vph5NFu25rEP6Kx9Gr1U6Fmj36Rjpump`
-- 23:40Z GLITCH (MIGRATED, $4,149,680 mcap, $3,467 5m vol): REJECT, Top 10 hold 28.0% ex-pool (>25%) (V13)  
-  CA `8Xg89xT8Ve34sKiYqYuMs46mycREsCA2F362UscRpump`
-- 23:38Z INKKY (MIGRATED, $86,405 mcap, $11,080 5m vol): PASS at conviction 2, PASS — at its high, 46 minutes old, and 5m flow is only 0.23x the hourly pace. That's chasing a bond spike while the crowd thins out (V1, V6).  
-  CA `Jy8kKwumNBdg3VtpvkzKh22kLQSw57Zr8sfdSSjpump`
-- 23:29Z SUGAR (FINAL_STRETCH, $21,244 mcap, $9,846 5m vol): REJECT, RugCheck danger: Large Amount of LP Unlocked 90.48%  
-  CA `HLzTFsX99uqzAP7uK36gJ2pPHGfRM8ugvxXWJzjSpump`
 
 ## What its skips did next (last 48h)
 A skip "ran" if the coin reached the first target (1.5x) from the skip price before a 20% drop, "dumped" if the drop came first. Sampled every 10 min, followed 6h.
@@ -128,13 +128,13 @@ A skip "ran" if the coin reached the first target (1.5x) from the skip price bef
     CA `653joYuZ5EntuKd1bspZakjHdueMxHGs5Lvm7RdWpump`
   - ran: KIM up to 1.55x  
     CA `8pjfN5Ayb4rucGpYE3tZWN6v3EysizjPx1v62zx1pump`
-- RugCheck danger: blocked 26, ran 4, dumped 22, flat 0, open 0 (saving losses: keep it)
-  - ran: Bear up to 2.66x  
-    CA `Dv6gYYkTav8Pm36UwAywxNCccwSZV1VL1tjiSpDLpump`
+- RugCheck danger: blocked 25, ran 3, dumped 22, flat 0, open 0 (saving losses: keep it)
   - ran: CRIME up to 1.9x  
     CA `BN4Z5NtntHhu6p3atEqkeAVi8Bn9Ri2QTv8FD7iupump`
   - ran: PROBE up to 1.53x  
     CA `DR3Jtxwzkw9uBpi6Bz7qJX7zuFSJkNKXthD8nB1mpump`
+  - ran: SUGAR up to 1.74x  
+    CA `HLzTFsX99uqzAP7uK36gJ2pPHGfRM8ugvxXWJzjSpump`
 - RugCheck didn't load: blocked 23, ran 3, dumped 16, flat 4, open 0 (saving losses: keep it)
   - ran: UNSAFU up to 1.61x  
     CA `4eq4JfnpdgqZTzeyR3GnRGHJQ3QhQT6Lp7nKnQ2nS7Rv`
@@ -142,8 +142,8 @@ A skip "ran" if the coin reached the first target (1.5x) from the skip price bef
     CA `DUTxGHL2LmpfjQaoK6LdZp8WQPoDiwvtDHVDf4fMpump`
   - ran: whitepaper up to 2.16x  
     CA `4tEvXHpd6JrCWJGByBS3qFBAtJbeoiEpgvWLw9hkpump`
-- falling knife / no higher low: blocked 23, ran 0, dumped 19, flat 2, open 2 (saving losses: keep it)
-- crowd leaving / fading volume: blocked 17, ran 5, dumped 11, flat 1, open 0 (saving losses: keep it)
+- falling knife / no higher low: blocked 20, ran 0, dumped 16, flat 2, open 2 (saving losses: keep it)
+- crowd leaving / fading volume: blocked 17, ran 5, dumped 10, flat 1, open 1 (saving losses: keep it)
   - ran: STABLEPAD up to 2.13x  
     CA `AABM3NrYSwKMsEDyanuskY43EH6ySbPpdPZNG1u7pump`
   - ran: HYDESK up to 1.78x  
@@ -151,7 +151,7 @@ A skip "ran" if the coin reached the first target (1.5x) from the skip price bef
   - ran: AXIO up to 1.51x  
     CA `3mUcXkpVVkQ5ZJMctz2f1VBk4rwu3NRfNwVQZtDzpump`
 - dev share over 1%: blocked 13, ran 0, dumped 11, flat 1, open 1 (saving losses: keep it)
-- hack story (owner rule): blocked 13, ran 1, dumped 5, flat 6, open 1 (saving losses: keep it)
+- hack story (owner rule): blocked 13, ran 1, dumped 4, flat 6, open 2 (saving losses: keep it)
   - ran: ACT:H up to 1.53x  
     CA `3B3SJFo8kvVoMvvkzrUCPdpDeSeCL773AJ3kNLWJpump`
 
@@ -183,11 +183,11 @@ The meta is cats, plus a few other animal and character memes. Fake-tech and AI 
 ## Moving most in its scans, last 30 min (1h volume)
 - KIM: $639,656 1h vol, $420,738 mcap, -32% 1h  
   CA `8pjfN5Ayb4rucGpYE3tZWN6v3EysizjPx1v62zx1pump`
-- INKKY: $580,361 1h vol, $86,405 mcap, +97% 1h  
-  CA `Jy8kKwumNBdg3VtpvkzKh22kLQSw57Zr8sfdSSjpump`
+- PAWCAT: $565,351 1h vol, $4,235,744 mcap, +10% 1h  
+  CA `762ZqBCd5m2q3QJ5UPkFL5rqdEUeygNkfTZrpGEZpump`
+- BNB: $326,208 1h vol, $426,019 mcap, +12% 1h  
+  CA `EYqygbhZjP7EbM4fSn8devctnksAvPAD1Bt57XBFpump`
 - SIS: $173,206 1h vol, $536,123 mcap, -6% 1h  
   CA `FdKdpz11GsTofLaNiddrhxrsE4APZYSSfLFqQ9YKpump`
 - INKKY: $158,999 1h vol, $122,828 mcap, +205% 1h  
   CA `AyfGkRKafCS5QSxGvQVDjSz5sEEeNkDVVziPgsCbpump`
-- Kongo: $139,358 1h vol, $8,852 mcap, -79% 1h  
-  CA `EDDVFXvF8p5cxLMXF4THFBtrAKmKMnMA2UEMSSqipump`
