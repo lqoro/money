@@ -1,13 +1,13 @@
 # Trencher live report
 
-Updated 2026-11-01T02:02:18Z (paper trading, never real money)
+Updated 2026-11-01T02:17:27Z (paper trading, never real money)
 
 - Equity: $89.95 (-10.0% vs $100 start)
-- Goal: $1,000 by 2026-11-05 05:03Z (pressing for it): at 9% of it, 4.1 days left, needs +79.3% a day from here
+- Goal: $1,000 by 2026-11-05 05:03Z (pressing for it): at 9% of it, 4.1 days left, needs +79.6% a day from here
 - Closed trades: 16, 3 wins
 - Fees paid: $10.41 (axiom $1.73, network $6.91, pool $1.64), plus $2.56 lost to slippage
 - New trades: on
-- Brain: subscription, 628 calls and 1 plan-limit hits in 48h
+- Brain: subscription, 630 calls and 1 plan-limit hits in 48h
 
 ## Scorecard (after fees)
 - 16 closed, 3 won (19%), net $-10.05
@@ -74,9 +74,15 @@ Updated 2026-11-01T02:02:18Z (paper trading, never real money)
   CA `762ZqBCd5m2q3QJ5UPkFL5rqdEUeygNkfTZrpGEZpump`
 
 ## Last scan
-- 02:02Z: 5 coins, 4 with pairs, 0 passed the market filters, 0 researched
+- 02:16Z: 4 coins, 3 with pairs, 0 passed the market filters, 0 researched
 
 ## Coins it looked at, and why it passed
+- 02:11Z ANTS (MIGRATED, $367,413 mcap, $12,470 5m vol): PASS at conviction 3, PASS: chasing. ANTS is 4% under its high just after a +57% five-minute candle, and sellers outnumber buyers 2 to 1 inside that spike. That's distribution, not a pullback (V1, V6).  
+  CA `wMHBD2B8KbDagvXUEapginhtJdrH4QSvSezBM8Tpump`
+- 02:09Z SIS (DIP, $544,947 mcap, $7,970 5m vol): PASS at conviction 4, PASS: no higher low. SIS bounced, then lost its own pullback low at $0.000572 and trades at $0.000548 on a red 5m candle, with 5m flow under $10k. Clean holders don't fix a broken structure (V1, V6).  
+  CA `FdKdpz11GsTofLaNiddrhxrsE4APZYSSfLFqQ9YKpump`
+- 02:08Z ANSEM (MIGRATED, $347,974 mcap, $4,485 5m vol): PASS at conviction 3, PASS — $4.5k 5m on a ticker 16 bigger coins already use, top 10 at 24.1% and a 5.1% bundle. Flow below the bar on a probable vamp (V1, V3, V6).  
+  CA `CvRJ8MrnB1AwjrgX25uyeLJiXNSugTo2ZHh8UXDTpump`
 - 01:49Z AAPLCAT (MIGRATED, $1,200,232 mcap, $11,117 5m vol): PASS at conviction 3, PASS: 8.7% off the high with 5m volume at 0.41x the hourly pace, and two bigger coins share the ticker. That's chasing a fading copy. (V1, V6)  
   CA `GYKnd6jGUSQoBUnj6LdGCBtCWYDgr2Zd6QwNPcy5pump`
 - 01:48Z TRUMP (FINAL_STRETCH, $27,244 mcap, $42,861 5m vol): PASS at conviction 2, PASS: a 16-minute-old "Donald Trump Coin" with nine bigger coins on the same ticker. It's a political vamp and a chase, not a setup. Blocker: vamp + political (V1, V3, V13).  
@@ -91,30 +97,24 @@ Updated 2026-11-01T02:02:18Z (paper trading, never real money)
   CA `FdKdpz11GsTofLaNiddrhxrsE4APZYSSfLFqQ9YKpump`
 - 01:23Z ANSEM (MIGRATED, $394,317 mcap, $2,434 5m vol): PASS at conviction 2, PASS: 5m is $2.4k at 0.35x its hourly pace, 19% off the high. Shallow band with no flow, and the ticker is shared by 15 bigger copies. Blocker: flow below pace (V1, V6).  
   CA `CvRJ8MrnB1AwjrgX25uyeLJiXNSugTo2ZHh8UXDTpump`
-- 01:12Z TRADERS (MIGRATED, $50,160 mcap, $11,275 5m vol): REJECT, Top 10 hold 39.4% ex-pool (>25%) (V13)  
-  CA `2mZwefm2rvQBAW6DBQLseD82cwXc5tnN7JTQbmaVpump`
-- 01:02Z AAPLCAT (MIGRATED, $1,313,902 mcap, $73,896 5m vol): PASS at conviction 3, PASS: chasing. AAPLCAT is 6.3% off its high, and the last 5m candle was +38.8% on 2.4x the hourly pace. Two bigger coins also share the ticker. Clean holders don't make a spike a pullback. (V1, V6)  
-  CA `GYKnd6jGUSQoBUnj6LdGCBtCWYDgr2Zd6QwNPcy5pump`
-- 00:57Z PAWCAT (MIGRATED, $3,965,347 mcap, $13,672 5m vol): PASS at conviction 3, PASS — first resistance $4.39M is 1.10x, the peak is 1.43x, both under the 1.5x initials target, and 5m volume is at 0.8x its hourly pace. Blocker: target below initials (V1, V6).  
-  CA `762ZqBCd5m2q3QJ5UPkFL5rqdEUeygNkfTZrpGEZpump`
 
 ## What its skips did next (last 48h)
 A skip "ran" if the coin reached the first target (1.5x) from the skip price before a 20% drop, "dumped" if the drop came first. Sampled every 10 min, followed 6h.
-- too new / sniping: blocked 54, ran 5, dumped 48, flat 0, open 1 (saving losses: keep it)
+- too new / sniping: blocked 54, ran 6, dumped 48, flat 0, open 0 (saving losses: keep it)
   - ran: HyPepe up to 1.5x  
     CA `G8TdzgpUQXQAxJvarNKPXRGv2kh9CsJDK7dCC7Xupump`
   - ran: DUOTIDE up to 1.71x  
     CA `AtKvRVDF738YA925jmxNeh4iV2qCVBBJeMxQNyrupump`
   - ran: Jesus up to 1.96x  
     CA `6PNq3Dduz73HHFBFt1KYRqDEsgcPQE6BDDRgxAFupump`
-- near the high / chasing: blocked 53, ran 10, dumped 35, flat 6, open 2 (saving losses: keep it)
+- near the high / chasing: blocked 53, ran 11, dumped 35, flat 6, open 1 (saving losses: keep it)
   - ran: DESSA up to 1.52x  
     CA `npz2FhoufQ7pKqhGpaipYWacrAkidyW2yDpVWSvpump`
   - ran: Catori up to 1.52x  
     CA `FDwCosavNvMiFB812ajJp3gG7eZ9c4bpgcnY6fDQpump`
   - ran: FLYWHEEL up to 2.23x  
     CA `BWMf44rD724R2bdgHWd88CDTVEjuPNQauw8s6S7ipump`
-- top 10 over 25%: blocked 51, ran 9, dumped 37, flat 2, open 3 (saving losses: keep it)
+- top 10 over 25%: blocked 51, ran 9, dumped 38, flat 2, open 2 (saving losses: keep it)
   - ran: HYPERGAMY up to 2.05x  
     CA `CUyNDWGdLPXZ3Gyj1H6TBh5pACgu5nY9WNkSqfMApump`
   - ran: Catori up to 1.52x  
@@ -142,12 +142,12 @@ A skip "ran" if the coin reached the first target (1.5x) from the skip price bef
     CA `DUTxGHL2LmpfjQaoK6LdZp8WQPoDiwvtDHVDf4fMpump`
   - ran: whitepaper up to 2.16x  
     CA `4tEvXHpd6JrCWJGByBS3qFBAtJbeoiEpgvWLw9hkpump`
-- falling knife / no higher low: blocked 22, ran 2, dumped 17, flat 2, open 1 (saving losses: keep it)
+- falling knife / no higher low: blocked 23, ran 2, dumped 17, flat 2, open 2 (saving losses: keep it)
   - ran: CREDIT up to 1.56x  
     CA `Ewyifvp8X9NxeaKawXamGXBFDisuMfcFfcdvSZ8opump`
   - ran: WASTED up to 1.64x  
     CA `GexThZHgaswpAQ7Fi8QrHFubjPimUNSYhJiAA7XZpump`
-- crowd leaving / fading volume: blocked 17, ran 4, dumped 11, flat 1, open 1 (saving losses: keep it)
+- crowd leaving / fading volume: blocked 16, ran 4, dumped 10, flat 1, open 1 (saving losses: keep it)
   - ran: STABLEPAD up to 2.13x  
     CA `AABM3NrYSwKMsEDyanuskY43EH6ySbPpdPZNG1u7pump`
   - ran: HYDESK up to 1.78x  
@@ -186,16 +186,16 @@ A skip "ran" if the coin reached the first target (1.5x) from the skip price bef
 - [2026-10-31 22:25] Expected: PAWCAT, the clean cat-meta flow leader 24% off its high, would break the $4.05M high toward ~$5M. What happened: it peaked at 1.11x, never got near the $4.05M break, and the 45-min time stop closed it flat (+$0.07). That fits my shallow-band cap and my "target at least 1.5x" rule: a $3M coin needing a high break plus extension was a slow 1.3–1.6x idea at best. So the rule stays and the stop worked as intended (V1). Next time, on $3M+ migrated coins, rate the trade on how far the first resistance is ($4.05M = 1.32x, under the 1.5x initials target), not on the extension past it, and PASS with blocker "target below initials" unless the break is already happening.
 
 ## Meta right now
-Today's movers say the meta is the November calendar. NNN ($33k 5m, 54% buys) and Movember ($42.5k 5m, 23k cap) are both under half an hour old, up 650–700% on the hour and sitting near bond. That's V5 holiday front-running, and Nov 1 is tomorrow. Cats are second and fading: the crawler called them the hot meta, but INKKY Jy8k is down 49% on the hour with only $2.3k on the 5m, right at the dead line (V1), and CatInu is dead. The cat still worth a look is PAWCAT ($4M cap, down 20% on the hour, 60% buys), which runs its 5m at about 0.8x its hourly pace. Fresh one-off launches (BLUE, HINA) are rising, while fake-tech (SIS, Leverhedge) and people coins (ANSEM, Racket, and LAPTOP, which is political and a hard line under V13) are fading or blocked. Setups I'd research now: Movember and NNN as FINAL_STRETCH (the original seasonal tickers, but expect the pre-bond dump and get out if they stall under bond), and PAWCAT as a DIP under the owner's 0.7x gate. Each one still has to pass the holder, dev and bundle checks, and the owner's push to be aggressive doesn't move the hard lines.
+Meta is cats plus fresh one-word tickers, not the November calendar the crawler summary pushed (NNN and Movember aren't in the movers). Cats carry the migrated flow: PAWCAT ($3.2M) is down 16.5% on the hour, but its 5m is $15.9k, 1.09x its hourly pace, with 83% buys. AAPLCAT is fading (5m at 0.41x its hourly pace). Fresh sub-hour launches are mostly vamp fights: the original BLUE (CPoG…, $62.8k cap, $73.9k 5m) is beating its copy (49Vr…, -75%). NUT is dead ($0 5m). The fresh 'Donald Trump Coin' is a political-name knockoff, skip (V1, V13). Research now: PAWCAT as a DIP (clears the 0.7x gate). BNB 'Broke Nigga Baddie' ($542k, 5m 1.2x its hourly pace, 78% buys) as a V6-range migrated play; at 28.8h it's past the 12h migrated filter. BLUE CPoG only as a small probe if holder and bundle checks come back clean, since six minutes old is sniper territory (V5, V6). The Binance-hack narrative stays off the board.
 
 ## Moving most in its scans, last 30 min (1h volume)
 - AAPLCAT: $324,575 1h vol, $1,200,232 mcap, +69% 1h  
   CA `GYKnd6jGUSQoBUnj6LdGCBtCWYDgr2Zd6QwNPcy5pump`
-- BNB: $261,360 1h vol, $542,139 mcap, +12% 1h  
-  CA `EYqygbhZjP7EbM4fSn8devctnksAvPAD1Bt57XBFpump`
-- PAWCAT: $175,227 1h vol, $3,210,590 mcap, -17% 1h  
-  CA `762ZqBCd5m2q3QJ5UPkFL5rqdEUeygNkfTZrpGEZpump`
-- DESSA: $137,169 1h vol, $21,295,020 mcap, -15% 1h  
+- DESSA: $133,693 1h vol, $21,791,989 mcap, -6% 1h  
   CA `npz2FhoufQ7pKqhGpaipYWacrAkidyW2yDpVWSvpump`
 - TRUMP: $100,256 1h vol, $27,244 mcap, +576% 1h  
   CA `BKHvD2DLXD1BmjhEZHehq4tbG3bW9mFPiWtDGfatpump`
+- NUT: $97,087 1h vol, $39,231 mcap, +1235% 1h  
+  CA `5U7cD5cXVMVFFhYVRhcm1Ruerg6RzVnUQkGcraZepump`
+- SIS: $92,586 1h vol, $544,947 mcap, -2% 1h  
+  CA `FdKdpz11GsTofLaNiddrhxrsE4APZYSSfLFqQ9YKpump`
