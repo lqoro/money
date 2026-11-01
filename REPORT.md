@@ -1,13 +1,13 @@
 # Trencher live report
 
-Updated 2026-11-01T19:27:18Z (paper trading, never real money)
+Updated 2026-11-01T19:42:31Z (paper trading, never real money)
 
 - Equity: $80.53 (-19.5% vs $100 start)
-- Goal: $1,000 by 2026-11-05 05:03Z (pressing for it): at 8.1% of it, 3.4 days left, needs +109.8% a day from here
+- Goal: $1,000 by 2026-11-05 05:03Z (pressing for it): at 8.1% of it, 3.4 days left, needs +110.3% a day from here
 - Closed trades: 19, 3 wins
 - Fees paid: $12.66 (axiom $2.26, network $8.06, pool $2.21), plus $3.34 lost to slippage
 - New trades: on
-- Brain: subscription, 622 calls and 0 plan-limit hits in 48h
+- Brain: subscription, 618 calls and 0 plan-limit hits in 48h
 
 ## Scorecard (after fees)
 - 19 closed, 3 won (16%), net $-19.48
@@ -74,9 +74,19 @@ Updated 2026-11-01T19:27:18Z (paper trading, never real money)
   CA `GYKnd6jGUSQoBUnj6LdGCBtCWYDgr2Zd6QwNPcy5pump`
 
 ## Last scan
-- 19:26Z: 5 coins, 4 with pairs, 0 passed the market filters, 0 researched
+- 19:42Z: 7 coins, 6 with pairs, 0 passed the market filters, 0 researched
 
 ## Coins it looked at, and why it passed
+- 19:41Z Maxxmas (DIP, $73,780 mcap, $6,614 5m vol): REJECT, Dip with fading attention is a falling knife, not a dip (5m at 0.52x the hour's pace, under 0.6x)  
+  CA `MAXXib7SQAQn4ymrwhhR9qMRUcYv8BNhbQxizJn5CCk`
+- 19:36Z Dacity (MIGRATED, $7,244,908 mcap, $17,547 5m vol): REJECT, Bundles: 10 linked wallet cluster(s) hold 23.8% of supply (>20%) (V17)  
+  CA `nxPqZ4F7ux8Vph5NFu25rEP6Kx9Gr1U6Fmj36Rjpump`
+- 19:35Z jeff (DIP, $1,807,311 mcap, $2,548 5m vol): REJECT, Top 10 hold 39.3% ex-pool (>25%) (V13)  
+  CA `HAsTKXYvv65zM7J6Cu5o5PcZsiKMQYo5oz4WPjgqwP6k`
+- 19:30Z AAPLCAT (DIP, $863,963 mcap, $6,510 5m vol): REJECT, Dip with fading attention is a falling knife, not a dip (5m at 0.12x the hour's pace, under 0.6x)  
+  CA `GYKnd6jGUSQoBUnj6LdGCBtCWYDgr2Zd6QwNPcy5pump`
+- 19:28Z GATO (MIGRATED, $6,942,877 mcap, $10,545 5m vol): REJECT, Dev holds 3.3% (>1%) (V13, V17)  
+  CA `HsprHxBRgiVaQdRf3TnKNuZZtaX9JUSPgMFdAkk6pump`
 - 19:25Z AI (MIGRATED, $79,907 mcap, $110,668 5m vol): PASS at conviction 2, PASS: 2 minutes old and still bleeding off its bond spike, at 12x pace with a 6.2% bundle and a borrowed ticker. Blocker "too new" (V1, V3, V6).  
   CA `HNxyGpz8AkLqmfBBKMzmugkPE5Bahj2bGPPTNgWGpump`
 - 19:23Z RAYDOG (MIGRATED, $93,420 mcap, $3,991 5m vol): REJECT, Top 10 hold 31.5% ex-pool (>25%) (V13)  
@@ -87,41 +97,31 @@ Updated 2026-11-01T19:27:18Z (paper trading, never real money)
   CA `DtcicPCKTKeAh7TDEzTym3hXeoHAoMiBdYJhMYxZpump`
 - 19:05Z CHOO (MIGRATED, $2,264,500 mcap, $10,750 5m vol): PASS at conviction 3, PASS: CHOO's 5m volume is $10.7k against a $94k-per-5m hourly pace (0.23x), so the crowd that pumped it is leaving, and the $2.99M high is only 1.32x away. Blocker: "flow below pace" (V1, V6).  
   CA `EJAxERvKU4kEVXn3NarjvRtgaMaJyP9ZuMeKA7JJpump`
-- 19:01Z Jason (DIP, $73,068 mcap, $2,912 5m vol): REJECT, Dev holds 1.3% (>1%) (V13, V17)  
-  CA `3qjBR3LfzEAKVS6QXuR2QZ1RFUsXzATWvmjbGB5Dpump`
-- 18:58Z REGRETAMINE (DIP, $111,873 mcap, $2,890 5m vol): PASS at conviction 3, PASS — $2.9k on the 5m, a single old Elon tweet for a story, top 10 at 23.5% with an 8% wallet and a 3.9% bundle. Not a crowd coming back. (V1, V3, V6)  
-  CA `Dbyy9LSMVHjxw2ZnPPRrCheSLVeuHq2GMkpxUs3t5xeT`
-- 18:56Z Maxxmas (MIGRATED, $81,750 mcap, $16,213 5m vol): REJECT, Top 10 hold 25.1% ex-pool (>25%) (V13)  
-  CA `MAXXib7SQAQn4ymrwhhR9qMRUcYv8BNhbQxizJn5CCk`
-- 18:51Z Peekhole (MIGRATED, $318,544 mcap, $3,692 5m vol): PASS at conviction 3, PASS — 12.7% off the high with $3.7k on the 5m and a red candle. Shallow band without a breakout, plus a 5.8% bundle. Blocker: no breakout (V1, V3, V6).  
-  CA `2Nyb2GXVoXM42hVQxJg5RppTbiN5SCZFL4LtZVVDpump`
-- 18:50Z Dacity (MIGRATED, $8,109,974 mcap, $8,246 5m vol): REJECT, Bundles: 10 linked wallet cluster(s) hold 23.8% of supply (>20%) (V17)  
-  CA `nxPqZ4F7ux8Vph5NFu25rEP6Kx9Gr1U6Fmj36Rjpump`
 
 ## What its skips did next (last 48h)
 A skip "ran" if the coin reached the first target (1.5x) from the skip price before a 20% drop, "dumped" if the drop came first. Sampled every 10 min, followed 6h.
-- near the high / chasing: blocked 65, ran 8, dumped 45, flat 8, open 4 (saving losses: keep it)
+- near the high / chasing: blocked 64, ran 8, dumped 44, flat 8, open 4 (saving losses: keep it)
   - ran: iCoin up to 1.68x  
     CA `HgxEGTZ1Epb64RrYqcuHkqb1gGWWnF5WcPTCDWzApump`
   - ran: AXIO up to 1.51x  
     CA `3mUcXkpVVkQ5ZJMctz2f1VBk4rwu3NRfNwVQZtDzpump`
   - ran: NATIONS up to 1.54x  
     CA `5ahor7yZ9EdXLzfS43aEPsfBsLtgocsi5sGc2Rsa58PG`
-- too new / sniping: blocked 50, ran 3, dumped 46, flat 0, open 1 (saving losses: keep it)
+- too new / sniping: blocked 49, ran 4, dumped 45, flat 0, open 0 (saving losses: keep it)
   - ran: xpad up to 2.54x  
     CA `EV116Y5Y6cYvcugmXwLVZPhbZus1NxV5WbArJxtUxxxx`
   - ran: onlypump up to 1.92x  
     CA `J73efZvH6rkrJbFJdP2rqe473YJW7tyWmrNARUSzpump`
   - ran: paws up to 1.51x  
     CA `CCF6ui6YjjhLaVtuYLH8b5jza8jHathqww5VbrMapump`
-- top 10 over 25%: blocked 42, ran 7, dumped 28, flat 3, open 4 (saving losses: keep it)
+- top 10 over 25%: blocked 43, ran 7, dumped 29, flat 3, open 4 (saving losses: keep it)
   - ran: Goyim up to 2.88x  
     CA `7aeDqEi2PfoYpJfw2eawzLnRH9NjQJ6jWMZ9FH1Hpump`
   - ran: George up to 1.88x  
     CA `4poKLzPuwjKJgXM6eF3EqBbMzWgkapi96vbNSkZipump`
   - ran: Beaver up to 2.56x  
     CA `5h44wfzwGHFnfVhNKtMLapAJNV9iqqbUgUB2FqyWpump`
-- falling knife (code): blocked 24, ran 3, dumped 19, flat 1, open 1 (saving losses: keep it)
+- falling knife (code): blocked 26, ran 3, dumped 19, flat 1, open 3 (saving losses: keep it)
   - ran: LUMI up to 1.76x  
     CA `653joYuZ5EntuKd1bspZakjHdueMxHGs5Lvm7RdWpump`
   - ran: KIM up to 1.55x  
@@ -182,16 +182,22 @@ A skip "ran" if the coin reached the first target (1.5x) from the skip price bef
 - [2026-11-01 06:19] Expected AAPLCAT, 36% off its $1.8M high with a printed higher-low base, clean holders and $12.6k on the 5m, to retest the peak at about 1.57x. It peaked at 1.01x, broke the 0.000981 higher low, and the "unclear" stop review sold at −31% instead of −20%. That makes 7 of 7 stop reviews closing worse than the stop. This confirms my existing rules rather than adding a new one: the proven band needs 5m at or above the hourly pace and a meta with the crowd still arriving (V1, V6). I bought with pace under the hourly average and a cooling meta, so next time a band entry with flow below pace is a PASS (blocker "flow below pace"), not a probe, and a broken higher low sells right away.
 
 ## Meta right now
-The volume is in older coins waking back up. The sub-hour launch-and-rip style has already burned out: AiCoin (-92%), Reverse-Engineer-Anything (-93%) and JEPA all went to near zero within an hour. Popu is at $11k with $48 on the 5m, so the crawler's "$83k POPU" is stale; I'm ignoring that summary and going by the scanner. The rising theme is coins that already proved themselves and are now getting fresh attention. The clearest is CHOO: $2.4M market cap, +155% on the hour, $50k on the 5m, 0.69 buy ratio, 11 days old. Dacity and Cartoon Money are showing steadier buying behind it. Cat coins are fading: Apple Cat's 5m is only about 0.26x its hourly pace, so it fails the DIP gate, and GATO's buy ratio is 0.36. PAWCAT is the exception. It's down 76% on the hour at $96k with a 0.89 buy ratio, but its 5m is 0.49x the hourly pace, under the 0.7x bar, so it's a DIP watch and not a buy until volume returns. The setups I'd research now are CHOO as MIGRATED momentum (V6 range, real flow, and I only enter on a pullback of at least 10% from its local high), PAWCAT as a DIP if its volume reclaims, and OREX ($20k on the curve, +626%, 0.67 buy ratio) as a FINAL_STRETCH to watch, with a quick exit if it stalls before bond (V1). Maxxmas is minutes old and I don't snipe, and LAPTOP is a political-figure coin (V13). The owner's $1k deadline doesn't raise any of these ratings. The holder and bundle checks will.
+The meta: older coins that already proved themselves are waking up, and GTA6 coins are getting a second look. Brand-new launch-and-rip coins are dying: ZECRET, EVOLVE, OREX, DAFFY and PAWCAT are 90-97% down with $0-76 on the 5m. Crypto news isn't driving it. The crawler summary is stale: PAWCAT is at $2.8k and dead, not a $96k dip; OREX is at $2k with zero volume; CHOO is +21% on the hour, not +155%.
+
+Rising: old coins coming back (CHOO, 11 days old, $2.26M, $10.7k on the 5m; CBUCKS, 26 days old, $2M, +15% on the hour, buy ratio 0.62; GATO, 68 days old, $6.9M) and GTA6 (GATO/GTA6CAT has $10.5k on the 5m, about 2.5x its hourly pace, buy ratio 0.60; Jason Duval is at $73k but thin with $2.9k on the 5m).
+
+Setups to research: (1) GATO as MIGRATED momentum, inside the V6 range with rising flow, my top look if holders are clean; (2) CHOO as MIGRATED, but the 5m has cooled to about 0.23x its hourly pace, so only on a pullback of at least 10% from the high with volume returning; (3) MOLE as a FINAL_STRETCH watch, $19.6k on the curve, $5.6k on the 5m, buy ratio 0.68, only 24 minutes old, so watch the pre-bond dump (V1).
+
+Passes: AI (Authentic Inu) is zero hours old and I don't snipe; RAYDOG has $4k on the 5m, under the $10k bar; LAPTOP is a political-figure coin (V13) and already crashed about 98%; the Binance-hack story is blocked by the hack rule. On the owner's note: I'll take every setup that clears the hard lines and rate clean ones 8 or 9 when they earn it, but the $1k deadline doesn't add a point to any rating. Only the holder and bundle checks do.
 
 ## Moving most in its scans, last 30 min (1h volume)
-- CHOO: $565,909 1h vol, $2,264,500 mcap, +22% 1h  
-  CA `EJAxERvKU4kEVXn3NarjvRtgaMaJyP9ZuMeKA7JJpump`
+- AAPLCAT: $628,041 1h vol, $863,963 mcap, +59% 1h  
+  CA `GYKnd6jGUSQoBUnj6LdGCBtCWYDgr2Zd6QwNPcy5pump`
+- Maxxmas: $153,334 1h vol, $73,780 mcap, +145% 1h  
+  CA `MAXXib7SQAQn4ymrwhhR9qMRUcYv8BNhbQxizJn5CCk`
+- Dacity: $119,640 1h vol, $7,244,908 mcap, -10% 1h  
+  CA `nxPqZ4F7ux8Vph5NFu25rEP6Kx9Gr1U6Fmj36Rjpump`
 - AI: $110,668 1h vol, $79,907 mcap, +125% 1h  
   CA `HNxyGpz8AkLqmfBBKMzmugkPE5Bahj2bGPPTNgWGpump`
-- ZECRET: $73,501 1h vol, $2,459 mcap, -94% 1h  
-  CA `ChCi2x2bpevrNyeRoPHLXHzmaCdGQPuU15CNqxY1pump`
-- EVOLVE: $72,234 1h vol, $2,384 mcap, -94% 1h  
-  CA `1f3soMcKyii7AFPNDCq9XWcgB8oEzCp4XMuZBzs7evo`
 - RAYDOG: $71,041 1h vol, $93,420 mcap, +80% 1h  
   CA `7Y6QNhQ2FxL6JEqZHooqgkXQubeQNC6N9emJxytdWp65`
