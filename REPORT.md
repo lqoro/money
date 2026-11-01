@@ -1,13 +1,13 @@
 # Trencher live report
 
-Updated 2026-11-01T19:42:31Z (paper trading, never real money)
+Updated 2026-11-01T19:57:32Z (paper trading, never real money)
 
 - Equity: $80.53 (-19.5% vs $100 start)
-- Goal: $1,000 by 2026-11-05 05:03Z (pressing for it): at 8.1% of it, 3.4 days left, needs +110.3% a day from here
+- Goal: $1,000 by 2026-11-05 05:03Z (pressing for it): at 8.1% of it, 3.4 days left, needs +110.8% a day from here
 - Closed trades: 19, 3 wins
 - Fees paid: $12.66 (axiom $2.26, network $8.06, pool $2.21), plus $3.34 lost to slippage
 - New trades: on
-- Brain: subscription, 618 calls and 0 plan-limit hits in 48h
+- Brain: subscription, 617 calls and 0 plan-limit hits in 48h
 
 ## Scorecard (after fees)
 - 19 closed, 3 won (16%), net $-19.48
@@ -74,9 +74,13 @@ Updated 2026-11-01T19:42:31Z (paper trading, never real money)
   CA `GYKnd6jGUSQoBUnj6LdGCBtCWYDgr2Zd6QwNPcy5pump`
 
 ## Last scan
-- 19:42Z: 7 coins, 6 with pairs, 0 passed the market filters, 0 researched
+- 19:56Z: 7 coins, 7 with pairs, 0 passed the market filters, 0 researched
 
 ## Coins it looked at, and why it passed
+- 19:51Z CHOO (MIGRATED, $2,273,744 mcap, $2,867 5m vol): PASS at conviction 3, PASS — flow below pace: $2.9k on the 5m at 0.3x the hourly average, 24% off the high with no breakout. The crowd's gone quiet (V1, V6).  
+  CA `EJAxERvKU4kEVXn3NarjvRtgaMaJyP9ZuMeKA7JJpump`
+- 19:49Z Bitboy (FINAL_STRETCH, $33,898 mcap, $3,755 5m vol): REJECT, RugCheck danger: Large Amount of LP Unlocked 88.16%  
+  CA `GvXhSHnWrkAasjAUZeRzRfUBV2BJiiduaHarCWAEpump`
 - 19:41Z Maxxmas (DIP, $73,780 mcap, $6,614 5m vol): REJECT, Dip with fading attention is a falling knife, not a dip (5m at 0.52x the hour's pace, under 0.6x)  
   CA `MAXXib7SQAQn4ymrwhhR9qMRUcYv8BNhbQxizJn5CCk`
 - 19:36Z Dacity (MIGRATED, $7,244,908 mcap, $17,547 5m vol): REJECT, Bundles: 10 linked wallet cluster(s) hold 23.8% of supply (>20%) (V17)  
@@ -93,14 +97,10 @@ Updated 2026-11-01T19:42:31Z (paper trading, never real money)
   CA `7Y6QNhQ2FxL6JEqZHooqgkXQubeQNC6N9emJxytdWp65`
 - 19:20Z MOLE (FINAL_STRETCH, $19,651 mcap, $5,650 5m vol): PASS at conviction 3, PASS: chasing. The last 5m candle is +32% and price is only 7.7% off a high printed 6 minutes ago, on a 24-minute-old curve coin with top 10 at 22.5% (V1, V6).  
   CA `HCftE2X71Aoqqo9sxGU3tFeZj8ywZn43LG2d9Yk7pump`
-- 19:18Z CBUCKS (MIGRATED, $2,000,014 mcap, $3,159 5m vol): REJECT, Top 10 hold 26.5% ex-pool (>25%) (V13)  
-  CA `DtcicPCKTKeAh7TDEzTym3hXeoHAoMiBdYJhMYxZpump`
-- 19:05Z CHOO (MIGRATED, $2,264,500 mcap, $10,750 5m vol): PASS at conviction 3, PASS: CHOO's 5m volume is $10.7k against a $94k-per-5m hourly pace (0.23x), so the crowd that pumped it is leaving, and the $2.99M high is only 1.32x away. Blocker: "flow below pace" (V1, V6).  
-  CA `EJAxERvKU4kEVXn3NarjvRtgaMaJyP9ZuMeKA7JJpump`
 
 ## What its skips did next (last 48h)
 A skip "ran" if the coin reached the first target (1.5x) from the skip price before a 20% drop, "dumped" if the drop came first. Sampled every 10 min, followed 6h.
-- near the high / chasing: blocked 64, ran 8, dumped 44, flat 8, open 4 (saving losses: keep it)
+- near the high / chasing: blocked 63, ran 8, dumped 43, flat 8, open 4 (saving losses: keep it)
   - ran: iCoin up to 1.68x  
     CA `HgxEGTZ1Epb64RrYqcuHkqb1gGWWnF5WcPTCDWzApump`
   - ran: AXIO up to 1.51x  
@@ -114,14 +114,14 @@ A skip "ran" if the coin reached the first target (1.5x) from the skip price bef
     CA `J73efZvH6rkrJbFJdP2rqe473YJW7tyWmrNARUSzpump`
   - ran: paws up to 1.51x  
     CA `CCF6ui6YjjhLaVtuYLH8b5jza8jHathqww5VbrMapump`
-- top 10 over 25%: blocked 43, ran 7, dumped 29, flat 3, open 4 (saving losses: keep it)
-  - ran: Goyim up to 2.88x  
-    CA `7aeDqEi2PfoYpJfw2eawzLnRH9NjQJ6jWMZ9FH1Hpump`
+- top 10 over 25%: blocked 41, ran 6, dumped 28, flat 3, open 4 (saving losses: keep it)
   - ran: George up to 1.88x  
     CA `4poKLzPuwjKJgXM6eF3EqBbMzWgkapi96vbNSkZipump`
   - ran: Beaver up to 2.56x  
     CA `5h44wfzwGHFnfVhNKtMLapAJNV9iqqbUgUB2FqyWpump`
-- falling knife (code): blocked 26, ran 3, dumped 19, flat 1, open 3 (saving losses: keep it)
+  - ran: timmy up to 1.66x  
+    CA `TiMSdJrkVwUpeEWJpuqRvHt4wVS7uH77LbNPGGVJXNw`
+- falling knife (code): blocked 26, ran 3, dumped 20, flat 1, open 2 (saving losses: keep it)
   - ran: LUMI up to 1.76x  
     CA `653joYuZ5EntuKd1bspZakjHdueMxHGs5Lvm7RdWpump`
   - ran: KIM up to 1.55x  
@@ -135,7 +135,7 @@ A skip "ran" if the coin reached the first target (1.5x) from the skip price bef
     CA `DUTxGHL2LmpfjQaoK6LdZp8WQPoDiwvtDHVDf4fMpump`
   - ran: whitepaper up to 2.16x  
     CA `4tEvXHpd6JrCWJGByBS3qFBAtJbeoiEpgvWLw9hkpump`
-- RugCheck danger: blocked 20, ran 3, dumped 17, flat 0, open 0 (saving losses: keep it)
+- RugCheck danger: blocked 21, ran 3, dumped 17, flat 0, open 1 (saving losses: keep it)
   - ran: SUGAR up to 1.74x  
     CA `HLzTFsX99uqzAP7uK36gJ2pPHGfRM8ugvxXWJzjSpump`
   - ran: AIC up to 1.6x  
@@ -195,9 +195,9 @@ Passes: AI (Authentic Inu) is zero hours old and I don't snipe; RAYDOG has $4k o
   CA `GYKnd6jGUSQoBUnj6LdGCBtCWYDgr2Zd6QwNPcy5pump`
 - Maxxmas: $153,334 1h vol, $73,780 mcap, +145% 1h  
   CA `MAXXib7SQAQn4ymrwhhR9qMRUcYv8BNhbQxizJn5CCk`
+- HEN: $147,184 1h vol, $27,650 mcap, -24% 1h  
+  CA `B1aBkk76gihamPjuKyHz7c7cgjdNxwBxc2NoJZCbpump`
 - Dacity: $119,640 1h vol, $7,244,908 mcap, -10% 1h  
   CA `nxPqZ4F7ux8Vph5NFu25rEP6Kx9Gr1U6Fmj36Rjpump`
-- AI: $110,668 1h vol, $79,907 mcap, +125% 1h  
-  CA `HNxyGpz8AkLqmfBBKMzmugkPE5Bahj2bGPPTNgWGpump`
-- RAYDOG: $71,041 1h vol, $93,420 mcap, +80% 1h  
-  CA `7Y6QNhQ2FxL6JEqZHooqgkXQubeQNC6N9emJxytdWp65`
+- CHOO: $113,485 1h vol, $2,273,744 mcap, -6% 1h  
+  CA `EJAxERvKU4kEVXn3NarjvRtgaMaJyP9ZuMeKA7JJpump`
