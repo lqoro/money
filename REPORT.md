@@ -1,9 +1,9 @@
 # Trencher live report
 
-Updated 2026-11-01T07:20:37Z (paper trading, never real money)
+Updated 2026-11-01T07:35:37Z (paper trading, never real money)
 
 - Equity: $80.53 (-19.5% vs $100 start)
-- Goal: $1,000 by 2026-11-05 05:03Z (pressing for it): at 8.1% of it, 3.9 days left, needs +90.6% a day from here
+- Goal: $1,000 by 2026-11-05 05:03Z (pressing for it): at 8.1% of it, 3.9 days left, needs +91% a day from here
 - Closed trades: 19, 3 wins
 - Fees paid: $12.66 (axiom $2.26, network $8.06, pool $2.21), plus $3.34 lost to slippage
 - New trades: on
@@ -74,9 +74,13 @@ Updated 2026-11-01T07:20:37Z (paper trading, never real money)
   CA `GYKnd6jGUSQoBUnj6LdGCBtCWYDgr2Zd6QwNPcy5pump`
 
 ## Last scan
-- 07:19Z: 3 coins, 2 with pairs, 0 passed the market filters, 0 researched
+- 07:35Z: 6 coins, 5 with pairs, 0 passed the market filters, 0 researched
 
 ## Coins it looked at, and why it passed
+- 07:33Z BLUE (DIP, $327,846 mcap, $2,880 5m vol): REJECT, Dip with fading attention is a falling knife, not a dip (5m at 0.56x the hour's pace, under 0.6x)  
+  CA `CPoGSmcjprCvzA2MFYLJMpQkGjmgVzKg4RVwMdrzpump`
+- 07:20Z AAPLCAT (DIP, $1,023,757 mcap, $3,557 5m vol): REJECT, Dip with fading attention is a falling knife, not a dip (5m at 0.44x the hour's pace, under 0.6x)  
+  CA `GYKnd6jGUSQoBUnj6LdGCBtCWYDgr2Zd6QwNPcy5pump`
 - 07:17Z Bitcoin (MIGRATED, $335,458 mcap, $2,325 5m vol): PASS at conviction 3, PASS: flow below pace. It's 18% off the high with $2.3k on the 5m at 0.67x the hourly pace, and the top 10 hold 24%, just under my 25% hard line. Shallow band, no breakout. (V1, V6)  
   CA `HytpiyuR3sVXGB5UqoqrnThCPH2X1tWVm5neep3Dpump`
 - 07:16Z YUME (DIP, $109,228 mcap, $24,382 5m vol): REJECT, Dip with fading attention is a falling knife, not a dip (5m at 0.56x the hour's pace, under 0.6x)  
@@ -93,14 +97,10 @@ Updated 2026-11-01T07:20:37Z (paper trading, never real money)
   CA `HsprHxBRgiVaQdRf3TnKNuZZtaX9JUSPgMFdAkk6pump`
 - 06:34Z AAPLCAT (DIP, $857,492 mcap, $4,095 5m vol): REJECT, Dip with fading attention is a falling knife, not a dip (5m at 0.34x the hour's pace, under 0.6x)  
   CA `GYKnd6jGUSQoBUnj6LdGCBtCWYDgr2Zd6QwNPcy5pump`
-- 06:33Z iTech (MIGRATED, $260,933 mcap, $3,590 5m vol): PASS at conviction 3, PASS: iTech's holders are clean, but 5m volume is only $3.6k, at 0.68x the hourly pace, and it's 27% off the high. The crowd is leaving. Blocker: flow below pace (V1, V6).  
-  CA `x94ouReAXGWHfNnGokusmmfNttSNEXyfY4ZCQq9pump`
-- 06:32Z Bitcoin (MIGRATED, $363,180 mcap, $3,283 5m vol): PASS at conviction 3, PASS: 7% off a one-hour-old high on $3.3k of 5m volume at 0.83x pace, top 10 at 24.2%. Blocker: chasing (V1, V6).  
-  CA `HytpiyuR3sVXGB5UqoqrnThCPH2X1tWVm5neep3Dpump`
 
 ## What its skips did next (last 48h)
 A skip "ran" if the coin reached the first target (1.5x) from the skip price before a 20% drop, "dumped" if the drop came first. Sampled every 10 min, followed 6h.
-- too new / sniping: blocked 55, ran 5, dumped 49, flat 0, open 1 (saving losses: keep it)
+- too new / sniping: blocked 55, ran 6, dumped 49, flat 0, open 0 (saving losses: keep it)
   - ran: DUOTIDE up to 1.71x  
     CA `AtKvRVDF738YA925jmxNeh4iV2qCVBBJeMxQNyrupump`
   - ran: Jesus up to 1.96x  
@@ -114,14 +114,14 @@ A skip "ran" if the coin reached the first target (1.5x) from the skip price bef
     CA `BWMf44rD724R2bdgHWd88CDTVEjuPNQauw8s6S7ipump`
   - ran: iCoin up to 1.68x  
     CA `HgxEGTZ1Epb64RrYqcuHkqb1gGWWnF5WcPTCDWzApump`
-- top 10 over 25%: blocked 46, ran 6, dumped 34, flat 3, open 3 (saving losses: keep it)
-  - ran: BEAST up to 2.52x  
-    CA `3mh5pgk58HPZwEinnZNUbsJpUoyqYa23zS2n442Zpump`
+- top 10 over 25%: blocked 45, ran 5, dumped 34, flat 3, open 3 (saving losses: keep it)
   - ran: HYDESK up to 1.78x  
     CA `BzndCZ2ZrjUA21aVW7t6AWEENRAps3EmdQg9hf94pump`
   - ran: Goyim up to 2.88x  
     CA `7aeDqEi2PfoYpJfw2eawzLnRH9NjQJ6jWMZ9FH1Hpump`
-- falling knife (code): blocked 30, ran 3, dumped 21, flat 0, open 6 (saving losses: keep it)
+  - ran: George up to 1.88x  
+    CA `4poKLzPuwjKJgXM6eF3EqBbMzWgkapi96vbNSkZipump`
+- falling knife (code): blocked 30, ran 3, dumped 22, flat 0, open 5 (saving losses: keep it)
   - ran: TYGR up to 1.58x  
     CA `5wCqCq6jbppuTocMeq6zd4UywAm64L1QNNxvEDAHpump`
   - ran: LUMI up to 1.76x  
@@ -189,11 +189,11 @@ The movers are a meme-name lottery. Fresh pump.fun launches are taking huge hour
 ## Moving most in its scans, last 30 min (1h volume)
 - YUME: $522,619 1h vol, $109,228 mcap, +175% 1h  
   CA `39tkEU5ox4BA7jKPgEoCraoVmi9jzKXzytoYwhHZpump`
-- Jose: $113,056 1h vol, $4,318 mcap, +26% 1h  
-  CA `HtJaNqCek98PcMpzcZer6k7LoDBXa5n4MWoZrzzhpump`
+- AAPLCAT: $98,085 1h vol, $1,023,757 mcap, +11% 1h  
+  CA `GYKnd6jGUSQoBUnj6LdGCBtCWYDgr2Zd6QwNPcy5pump`
+- nut: $84,537 1h vol, $16,525 mcap, +508% 1h  
+  CA `ERXoTjSZ58XdAdeinR4Mp9b3aQr375FvHdE9W5L2pump`
 - SIS: $80,771 1h vol, $509,841 mcap, +26% 1h  
   CA `FdKdpz11GsTofLaNiddrhxrsE4APZYSSfLFqQ9YKpump`
-- PAWCAT: $61,300 1h vol, $3,172,339 mcap, -0% 1h  
-  CA `762ZqBCd5m2q3QJ5UPkFL5rqdEUeygNkfTZrpGEZpump`
-- DESSA: $53,665 1h vol, $29,605,412 mcap, -1% 1h  
-  CA `npz2FhoufQ7pKqhGpaipYWacrAkidyW2yDpVWSvpump`
+- BLUE: $61,722 1h vol, $327,846 mcap, -2% 1h  
+  CA `CPoGSmcjprCvzA2MFYLJMpQkGjmgVzKg4RVwMdrzpump`
