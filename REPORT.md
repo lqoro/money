@@ -1,13 +1,13 @@
 # Trencher live report
 
-Updated 2026-11-01T13:23:37Z (paper trading, never real money)
+Updated 2026-11-01T13:38:50Z (paper trading, never real money)
 
 - Equity: $80.53 (-19.5% vs $100 start)
-- Goal: $1,000 by 2026-11-05 05:03Z (pressing for it): at 8.1% of it, 3.7 days left, needs +99.3% a day from here
+- Goal: $1,000 by 2026-11-05 05:03Z (pressing for it): at 8.1% of it, 3.6 days left, needs +99.7% a day from here
 - Closed trades: 19, 3 wins
 - Fees paid: $12.66 (axiom $2.26, network $8.06, pool $2.21), plus $3.34 lost to slippage
 - New trades: on
-- Brain: subscription, 642 calls and 1 plan-limit hits in 48h
+- Brain: subscription, 643 calls and 1 plan-limit hits in 48h
 
 ## Scorecard (after fees)
 - 19 closed, 3 won (16%), net $-19.48
@@ -74,9 +74,15 @@ Updated 2026-11-01T13:23:37Z (paper trading, never real money)
   CA `GYKnd6jGUSQoBUnj6LdGCBtCWYDgr2Zd6QwNPcy5pump`
 
 ## Last scan
-- 13:23Z: 2 coins, 2 with pairs, 1 passed the market filters, 1 researched
+- 13:38Z: 1 coins, 1 with pairs, 0 passed the market filters, 0 researched
 
 ## Coins it looked at, and why it passed
+- 13:36Z REGRETAMINE (MIGRATED, $126,973 mcap, $18,519 5m vol): PASS at conviction 3, PASS — 12 minutes old, 3% off a high set six minutes ago, last 5m candle +46%. That's a spike to chase, not a setup. Holders are clean; wait for the base (V1).  
+  CA `57piTgZ3PUbrf3C59qJXrCwAms5VEa5ys1KPZNYSpump`
+- 13:33Z Dacity (MIGRATED, $7,704,825 mcap, $6,923 5m vol): REJECT, Bundles: 10 linked wallet cluster(s) hold 22.4% of supply (>20%) (V17)  
+  CA `nxPqZ4F7ux8Vph5NFu25rEP6Kx9Gr1U6Fmj36Rjpump`
+- 13:25Z AAPLCAT (DIP, $858,102 mcap, $7,375 5m vol): PASS at conviction 3, PASS: stopped out of AAPLCAT an hour ago and it's 12% under the higher low it broke, still printing lower highs on fading cat flow. Blocker: no reclaim. (V1, V6)  
+  CA `GYKnd6jGUSQoBUnj6LdGCBtCWYDgr2Zd6QwNPcy5pump`
 - 13:23Z BLUE (DIP, $275,555 mcap, $3,014 5m vol): PASS at conviction 3, PASS: flow below pace. $3k on the 5m at 0.84x the hourly pace, 66% off the high, and a 6.8% bundle cluster in a split same-ticker field. This is the BLUE that already cost me −29.8% four hours ago (V1, V3, V6).  
   CA `CPoGSmcjprCvzA2MFYLJMpQkGjmgVzKg4RVwMdrzpump`
 - 13:17Z SIS (MIGRATED, $207,443 mcap, $3,395 5m vol): PASS at conviction 2, PASS: SIS is 84% off its peak with $3.4k on the 5m at 0.71x pace. The crowd that was leaving at 05:24 still hasn't come back. Flow below pace, dead story. (V1, V6)  
@@ -91,30 +97,24 @@ Updated 2026-11-01T13:23:37Z (paper trading, never real money)
   CA `HsprHxBRgiVaQdRf3TnKNuZZtaX9JUSPgMFdAkk6pump`
 - 13:03Z REGRET (MIGRATED, $113,421 mcap, $73,035 5m vol): PASS at conviction 3, PASS: 8 minutes old, 6% off the high, right after a +59% candle at 7.5x pace. That's chasing a bond spike, not a setup. Watchlist for a higher low (V1).  
   CA `Ae6TX54cU8EgcG6kVX4i5j1oz3FoZf2zRG7xvzmtpump`
-- 12:49Z P2P (MIGRATED, $31,102 mcap, $19,346 5m vol): REJECT, RugCheck danger: Creator history of rugged tokens  
-  CA `8ANLUXihz9FrSy6Jbg85CGsuPCpPjf5S9ZUXNRG5pump`
-- 12:47Z Dacity (MIGRATED, $7,520,607 mcap, $5,308 5m vol): REJECT, Bundles: 10 linked wallet cluster(s) hold 22.4% of supply (>20%) (V17)  
-  CA `nxPqZ4F7ux8Vph5NFu25rEP6Kx9Gr1U6Fmj36Rjpump`
-- 12:41Z PIRATE (FINAL_STRETCH, $20,091 mcap, $29,367 5m vol): PASS at conviction 2, PASS — 7-minute-old bonding-curve coin, +274% in 5m at 8x pace, 8% off the high, top 10 at 24.2%, two bigger same-ticker coins. Chasing a spike (V1, V6).  
-  CA `gzQXRwGRzfKLHfaV1f84QT7e5mt4vevu7MgacEfpump`
 
 ## What its skips did next (last 48h)
 A skip "ran" if the coin reached the first target (1.5x) from the skip price before a 20% drop, "dumped" if the drop came first. Sampled every 10 min, followed 6h.
-- near the high / chasing: blocked 62, ran 9, dumped 42, flat 9, open 2 (saving losses: keep it)
+- near the high / chasing: blocked 63, ran 9, dumped 42, flat 9, open 3 (saving losses: keep it)
   - ran: DESSA up to 1.52x  
     CA `npz2FhoufQ7pKqhGpaipYWacrAkidyW2yDpVWSvpump`
   - ran: FLYWHEEL up to 2.23x  
     CA `BWMf44rD724R2bdgHWd88CDTVEjuPNQauw8s6S7ipump`
   - ran: iCoin up to 1.68x  
     CA `HgxEGTZ1Epb64RrYqcuHkqb1gGWWnF5WcPTCDWzApump`
-- too new / sniping: blocked 53, ran 4, dumped 48, flat 0, open 1 (saving losses: keep it)
+- too new / sniping: blocked 54, ran 4, dumped 49, flat 0, open 1 (saving losses: keep it)
   - ran: SPACECAT up to 1.56x  
     CA `61h4rUn7C21QNv1NJADc2oAxpAhr7f2WGqbXRDEupump`
   - ran: xpad up to 2.54x  
     CA `EV116Y5Y6cYvcugmXwLVZPhbZus1NxV5WbArJxtUxxxx`
   - ran: onlypump up to 1.92x  
     CA `J73efZvH6rkrJbFJdP2rqe473YJW7tyWmrNARUSzpump`
-- top 10 over 25%: blocked 42, ran 5, dumped 31, flat 4, open 2 (saving losses: keep it)
+- top 10 over 25%: blocked 42, ran 5, dumped 32, flat 4, open 1 (saving losses: keep it)
   - ran: Goyim up to 2.88x  
     CA `7aeDqEi2PfoYpJfw2eawzLnRH9NjQJ6jWMZ9FH1Hpump`
   - ran: George up to 1.88x  
@@ -140,7 +140,7 @@ A skip "ran" if the coin reached the first target (1.5x) from the skip price bef
     CA `Ewyifvp8X9NxeaKawXamGXBFDisuMfcFfcdvSZ8opump`
   - ran: WASTED up to 1.64x  
     CA `GexThZHgaswpAQ7Fi8QrHFubjPimUNSYhJiAA7XZpump`
-- RugCheck danger: blocked 18, ran 2, dumped 16, flat 0, open 0 (saving losses: keep it)
+- RugCheck danger: blocked 17, ran 2, dumped 15, flat 0, open 0 (saving losses: keep it)
   - ran: PROBE up to 1.53x  
     CA `DR3Jtxwzkw9uBpi6Bz7qJX7zuFSJkNKXthD8nB1mpump`
   - ran: SUGAR up to 1.74x  
@@ -185,13 +185,13 @@ A skip "ran" if the coin reached the first target (1.5x) from the skip price bef
 Meta: fresh pump.fun launches under 1h old are taking the volume: REGRET ($113k, $73k 5m, 0.68 buys, 0.1h), SAFU ($24k bonding curve, $27k 5m) and P2P ($31k, $19k 5m, -19% 1h, wash suspicion). Fading: cats (PAWCAT 5m about 0.36x hourly pace, GATO 0.37 buys), the Yak copy, KO, and politics (LAPTOP is a pass on the V13 politician rule; MARS is dead). The crawler summary is stale: SA rugged (-98%, $1.8k, 0 vol) and MARVIN isn't in the scan, so no trade on either. Setups: REGRET as MIGRATED only if holders, bundles and dev come back clean (young-chart risk). P2P only if holders show the volume isn't wash. SAFU is watch-only until it's older (V1).
 
 ## Moving most in its scans, last 30 min (1h volume)
-- PAWCAT: $584,077 1h vol, $4,531,609 mcap, -5% 1h  
-  CA `762ZqBCd5m2q3QJ5UPkFL5rqdEUeygNkfTZrpGEZpump`
+- P2P: $174,359 1h vol, $15,399 mcap, -88% 1h  
+  CA `8ANLUXihz9FrSy6Jbg85CGsuPCpPjf5S9ZUXNRG5pump`
 - 白いヤク: $164,545 1h vol, $80,839 mcap, -33% 1h  
   CA `6jFcYpa95qnzX3Kui4TTyPCEzQorHRCHXhoCAg5tpump`
-- DESSA: $141,631 1h vol, $22,234,764 mcap, -8% 1h  
+- REGRETAMINE: $133,628 1h vol, $126,973 mcap, +218% 1h  
+  CA `57piTgZ3PUbrf3C59qJXrCwAms5VEa5ys1KPZNYSpump`
+- PIRATE: $125,173 1h vol, $6,184 mcap, -84% 1h  
+  CA `gzQXRwGRzfKLHfaV1f84QT7e5mt4vevu7MgacEfpump`
+- DESSA: $117,806 1h vol, $22,509,084 mcap, -4% 1h  
   CA `npz2FhoufQ7pKqhGpaipYWacrAkidyW2yDpVWSvpump`
-- REGRET: $117,482 1h vol, $113,421 mcap, +185% 1h  
-  CA `Ae6TX54cU8EgcG6kVX4i5j1oz3FoZf2zRG7xvzmtpump`
-- MARS: $59,899 1h vol, $5,018 mcap, +67% 1h  
-  CA `6v3MRV3EZjSVDrwKAVrqvLafFmpzAf9vSoVb1dTfpump`
