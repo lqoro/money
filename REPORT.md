@@ -1,13 +1,13 @@
 # Trencher live report
 
-Updated 2026-11-01T17:10:55Z (paper trading, never real money)
+Updated 2026-11-01T17:26:03Z (paper trading, never real money)
 
 - Equity: $80.53 (-19.5% vs $100 start)
-- Goal: $1,000 by 2026-11-05 05:03Z (pressing for it): at 8.1% of it, 3.5 days left, needs +105.6% a day from here
+- Goal: $1,000 by 2026-11-05 05:03Z (pressing for it): at 8.1% of it, 3.5 days left, needs +106.1% a day from here
 - Closed trades: 19, 3 wins
 - Fees paid: $12.66 (axiom $2.26, network $8.06, pool $2.21), plus $3.34 lost to slippage
 - New trades: on
-- Brain: subscription, 624 calls and 1 plan-limit hits in 48h
+- Brain: subscription, 621 calls and 1 plan-limit hits in 48h
 
 ## Scorecard (after fees)
 - 19 closed, 3 won (16%), net $-19.48
@@ -74,9 +74,19 @@ Updated 2026-11-01T17:10:55Z (paper trading, never real money)
   CA `GYKnd6jGUSQoBUnj6LdGCBtCWYDgr2Zd6QwNPcy5pump`
 
 ## Last scan
-- 17:10Z: 5 coins, 4 with pairs, 0 passed the market filters, 0 researched
+- 17:25Z: 7 coins, 6 with pairs, 0 passed the market filters, 0 researched
 
 ## Coins it looked at, and why it passed
+- 17:22Z AIC (MIGRATED, $44,966 mcap, $8,632 5m vol): REJECT, RugCheck danger: Creator history of rugged tokens  
+  CA `2T9WZjVC6L3BvusUtjKDT6HcZeEYgU9T5xhfJQxFpump`
+- 17:20Z Dacity (MIGRATED, $7,919,238 mcap, $4,320 5m vol): REJECT, Bundles: 10 linked wallet cluster(s) hold 23.8% of supply (>20%) (V17)  
+  CA `nxPqZ4F7ux8Vph5NFu25rEP6Kx9Gr1U6Fmj36Rjpump`
+- 17:15Z CBUCKS (MIGRATED, $1,529,202 mcap, $7,940 5m vol): REJECT, Top 10 hold 26.5% ex-pool (>25%) (V13)  
+  CA `DtcicPCKTKeAh7TDEzTym3hXeoHAoMiBdYJhMYxZpump`
+- 17:15Z POPU (MIGRATED, $82,927 mcap, $97,791 5m vol): PASS at conviction 3, PASS: POPU migrated about 6 minutes ago, it's still swinging off its bond spike, and the ticker is shared with 27 other coins. Blocker: too new (V1).  
+  CA `JBuEiMHw7NJjns8epvNBGyyViWbo8oTAAh8r7QGepump`
+- 17:13Z AAPLCAT (DIP, $786,287 mcap, $12,552 5m vol): REJECT, Dip with fading attention is a falling knife, not a dip (5m at 0.49x the hour's pace, under 0.6x)  
+  CA `GYKnd6jGUSQoBUnj6LdGCBtCWYDgr2Zd6QwNPcy5pump`
 - 17:05Z SIS (MIGRATED, $83,174 mcap, $3,256 5m vol): PASS at conviction 2, PASS — SIS is 93.6% off its peak and 5m volume is at 0.43x the hourly pace. That's a corpse, not a dip. Blocker: "dead story" plus "flow below pace" (V1, V6).  
   CA `FdKdpz11GsTofLaNiddrhxrsE4APZYSSfLFqQ9YKpump`
 - 17:04Z GOON (FINAL_STRETCH, $29,473 mcap, $47,614 5m vol): REJECT, RugCheck danger: Large Amount of LP Unlocked 100.00%  
@@ -87,26 +97,16 @@ Updated 2026-11-01T17:10:55Z (paper trading, never real money)
   CA `2Nyb2GXVoXM42hVQxJg5RppTbiN5SCZFL4LtZVVDpump`
 - 16:55Z PAWCAT (MIGRATED, $561,047 mcap, $20,082 5m vol): PASS at conviction 2, PASS — 93% off an $8.4M peak, lower 15m closes every candle, no higher low. Falling knife, not a dip (V1, V6).  
   CA `762ZqBCd5m2q3QJ5UPkFL5rqdEUeygNkfTZrpGEZpump`
-- 16:51Z GATO (MIGRATED, $7,242,300 mcap, $5,919 5m vol): REJECT, Dev holds 3.3% (>1%) (V13, V17)  
-  CA `HsprHxBRgiVaQdRf3TnKNuZZtaX9JUSPgMFdAkk6pump`
-- 16:42Z pairless (MIGRATED, $45,930 mcap, $12,893 5m vol): PASS at conviction 2, PASS: second-place pairless, 80% off the high, −38% on the 5m, and the crowd is on the other CA. Split crowd and a falling knife (V1, V3).  
-  CA `DoPuTpyJnKEvZeQpDTr5cbZ1vRsTuQuJNCM4S4gPyPZA`
-- 16:41Z Capri (MIGRATED, $36,732 mcap, $2,914 5m vol): REJECT, Top 10 hold 26.9% ex-pool (>25%) (V13)  
-  CA `6qhnbvdJuWVUQ7EQpgz5GNraV7pty7cqc8MmfQTEpump`
-- 16:35Z Dacity (MIGRATED, $7,991,895 mcap, $4,332 5m vol): REJECT, Bundles: 10 linked wallet cluster(s) hold 23.8% of supply (>20%) (V17)  
-  CA `nxPqZ4F7ux8Vph5NFu25rEP6Kx9Gr1U6Fmj36Rjpump`
-- 16:28Z AAPLCAT (MIGRATED, $559,895 mcap, $3,969 5m vol): PASS at conviction 2, PASS. 72.5% off the high with 5m volume at 0.57x the hourly pace. The crowd is leaving. Blocker: flow below pace (V1, V6).  
-  CA `GYKnd6jGUSQoBUnj6LdGCBtCWYDgr2Zd6QwNPcy5pump`
 
 ## What its skips did next (last 48h)
 A skip "ran" if the coin reached the first target (1.5x) from the skip price before a 20% drop, "dumped" if the drop came first. Sampled every 10 min, followed 6h.
-- near the high / chasing: blocked 65, ran 10, dumped 44, flat 8, open 3 (saving losses: keep it)
-  - ran: FLYWHEEL up to 2.23x  
-    CA `BWMf44rD724R2bdgHWd88CDTVEjuPNQauw8s6S7ipump`
+- near the high / chasing: blocked 62, ran 8, dumped 43, flat 8, open 3 (saving losses: keep it)
   - ran: iCoin up to 1.68x  
     CA `HgxEGTZ1Epb64RrYqcuHkqb1gGWWnF5WcPTCDWzApump`
   - ran: AXIO up to 1.51x  
     CA `3mUcXkpVVkQ5ZJMctz2f1VBk4rwu3NRfNwVQZtDzpump`
+  - ran: NATIONS up to 1.54x  
+    CA `5ahor7yZ9EdXLzfS43aEPsfBsLtgocsi5sGc2Rsa58PG`
 - too new / sniping: blocked 49, ran 3, dumped 46, flat 0, open 0 (saving losses: keep it)
   - ran: xpad up to 2.54x  
     CA `EV116Y5Y6cYvcugmXwLVZPhbZus1NxV5WbArJxtUxxxx`
@@ -114,14 +114,14 @@ A skip "ran" if the coin reached the first target (1.5x) from the skip price bef
     CA `J73efZvH6rkrJbFJdP2rqe473YJW7tyWmrNARUSzpump`
   - ran: paws up to 1.51x  
     CA `CCF6ui6YjjhLaVtuYLH8b5jza8jHathqww5VbrMapump`
-- top 10 over 25%: blocked 42, ran 6, dumped 30, flat 4, open 2 (saving losses: keep it)
+- top 10 over 25%: blocked 41, ran 6, dumped 30, flat 3, open 2 (saving losses: keep it)
   - ran: Goyim up to 2.88x  
     CA `7aeDqEi2PfoYpJfw2eawzLnRH9NjQJ6jWMZ9FH1Hpump`
   - ran: George up to 1.88x  
     CA `4poKLzPuwjKJgXM6eF3EqBbMzWgkapi96vbNSkZipump`
   - ran: Beaver up to 2.56x  
     CA `5h44wfzwGHFnfVhNKtMLapAJNV9iqqbUgUB2FqyWpump`
-- falling knife (code): blocked 26, ran 4, dumped 20, flat 1, open 1 (saving losses: keep it)
+- falling knife (code): blocked 27, ran 4, dumped 20, flat 1, open 2 (saving losses: keep it)
   - ran: TYGR up to 1.58x  
     CA `5wCqCq6jbppuTocMeq6zd4UywAm64L1QNNxvEDAHpump`
   - ran: LUMI up to 1.76x  
@@ -135,7 +135,7 @@ A skip "ran" if the coin reached the first target (1.5x) from the skip price bef
     CA `DUTxGHL2LmpfjQaoK6LdZp8WQPoDiwvtDHVDf4fMpump`
   - ran: whitepaper up to 2.16x  
     CA `4tEvXHpd6JrCWJGByBS3qFBAtJbeoiEpgvWLw9hkpump`
-- RugCheck danger: blocked 17, ran 1, dumped 16, flat 0, open 0 (saving losses: keep it)
+- RugCheck danger: blocked 18, ran 1, dumped 16, flat 0, open 1 (saving losses: keep it)
   - ran: SUGAR up to 1.74x  
     CA `HLzTFsX99uqzAP7uK36gJ2pPHGfRM8ugvxXWJzjSpump`
 - falling knife / no higher low: blocked 16, ran 1, dumped 12, flat 2, open 1 (saving losses: keep it)
@@ -185,13 +185,13 @@ The meta is sub-hour pump.fun launches that run several hundred percent in their
 On the owner's note: a clean pass on the checklist earns a 7–9. A deadline doesn't.
 
 ## Moving most in its scans, last 30 min (1h volume)
-- VETO: $260,987 1h vol, $1,827 mcap, -98% 1h  
+- AAPLCAT: $307,002 1h vol, $786,287 mcap, +48% 1h  
+  CA `GYKnd6jGUSQoBUnj6LdGCBtCWYDgr2Zd6QwNPcy5pump`
+- VETO: $216,789 1h vol, $1,827 mcap, -99% 1h  
   CA `EM6awuXD9bFZfbchFFioeNpHyKur9bmD5kj3svHpump`
-- pairless: $198,255 1h vol, $45,930 mcap, -71% 1h  
-  CA `DoPuTpyJnKEvZeQpDTr5cbZ1vRsTuQuJNCM4S4gPyPZA`
-- PAWCAT: $172,201 1h vol, $561,047 mcap, -51% 1h  
-  CA `762ZqBCd5m2q3QJ5UPkFL5rqdEUeygNkfTZrpGEZpump`
-- pairless: $145,267 1h vol, $1,838 mcap, -98% 1h  
-  CA `DvFiCjUe7kQsj8okUfu6qSegVAa4BvKnbX2jTgMSpump`
-- Useful: $92,120 1h vol, $27,680 mcap, -15% 1h  
-  CA `7k4h6e913NxWNcshaTzSm5pT2EskWK3hyRzCSDzdbonk`
+- POPU: $204,941 1h vol, $82,927 mcap, +122% 1h  
+  CA `JBuEiMHw7NJjns8epvNBGyyViWbo8oTAAh8r7QGepump`
+- SIS: $89,956 1h vol, $83,174 mcap, -5% 1h  
+  CA `FdKdpz11GsTofLaNiddrhxrsE4APZYSSfLFqQ9YKpump`
+- Sperm: $74,131 1h vol, $25,021 mcap, +680% 1h  
+  CA `2kcek9XLEGoCcYpVsSaoJGanegcFW81Ti1kyYEQzGDXi`
