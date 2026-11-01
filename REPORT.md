@@ -1,13 +1,13 @@
 # Trencher live report
 
-Updated 2026-11-01T14:54:24Z (paper trading, never real money)
+Updated 2026-11-01T15:09:54Z (paper trading, never real money)
 
 - Equity: $80.53 (-19.5% vs $100 start)
-- Goal: $1,000 by 2026-11-05 05:03Z (pressing for it): at 8.1% of it, 3.6 days left, needs +101.7% a day from here
+- Goal: $1,000 by 2026-11-05 05:03Z (pressing for it): at 8.1% of it, 3.6 days left, needs +102.2% a day from here
 - Closed trades: 19, 3 wins
 - Fees paid: $12.66 (axiom $2.26, network $8.06, pool $2.21), plus $3.34 lost to slippage
 - New trades: on
-- Brain: subscription, 634 calls and 1 plan-limit hits in 48h
+- Brain: subscription, 635 calls and 1 plan-limit hits in 48h
 
 ## Scorecard (after fees)
 - 19 closed, 3 won (16%), net $-19.48
@@ -74,9 +74,21 @@ Updated 2026-11-01T14:54:24Z (paper trading, never real money)
   CA `GYKnd6jGUSQoBUnj6LdGCBtCWYDgr2Zd6QwNPcy5pump`
 
 ## Last scan
-- 14:53Z: 3 coins, 3 with pairs, 0 passed the market filters, 0 researched
+- 15:09Z: 9 coins, 9 with pairs, 2 passed the market filters, 2 researched
 
 ## Coins it looked at, and why it passed
+- 15:09Z GOAT (MIGRATED, $33,195 mcap, $2,305 5m vol): REJECT, Top 10 hold 30.4% ex-pool (>25%) (V13)  
+  CA `5AWBTmZzYZ3twtKQLe1eziWw9yMcUyUiR6iRnCpXPv7f`
+- 15:09Z Solana500 (FINAL_STRETCH, $19,758 mcap, $7,529 5m vol): PASS at conviction 3, PASS: the first wall is the $28.4k peak, only 1.44x away, and initials sit at 1.5x. The coin is a recycled 14-month-old pump.fun curve with no X of its own, just a link to Solana's official tweet. Target below initials (V1, V3).  
+  CA `6eJVydkBQEj7ixuVAckfMiBGCy4ZTot16uvLbu1Ppump`
+- 15:05Z bob (FINAL_STRETCH, $21,744 mcap, $61,405 5m vol): PASS at conviction 3, PASS — blocker: chasing. 6-minute-old coin just off a +230% 5m candle at 10x pace, top 10 at 24.3% in a 14-copy ticker field. Wait for the base (V1, V6).  
+  CA `9SZnPDqxCjdgPKRosc1qzxTfrR9n7ZVE39SsbCRmpump`
+- 15:03Z Dacity (MIGRATED, $7,769,288 mcap, $6,997 5m vol): REJECT, Bundles: 10 linked wallet cluster(s) hold 22.4% of supply (>20%) (V17)  
+  CA `nxPqZ4F7ux8Vph5NFu25rEP6Kx9Gr1U6Fmj36Rjpump`
+- 14:58Z DOJAK (MIGRATED, $40,900 mcap, $6,615 5m vol): REJECT, Dev holds 5.2% (>1%) (V13, V17)  
+  CA `E5aeDjgq6ZSzAmihKoh9JPEhwK2bMCbZLJf6LYT9pump`
+- 14:56Z AAPLCAT (DIP, $759,306 mcap, $3,693 5m vol): REJECT, Dip with fading attention is a falling knife, not a dip (5m at 0.51x the hour's pace, under 0.6x)  
+  CA `GYKnd6jGUSQoBUnj6LdGCBtCWYDgr2Zd6QwNPcy5pump`
 - 14:48Z SIS (MIGRATED, $153,176 mcap, $4,293 5m vol): PASS at conviction 2, PASS on SIS. It's 88% off its $1.3M peak, well past my 60% MIGRATED band and the 70% DIP max, and it already stopped me out once today. Falling knife. (V1, V6)  
   CA `FdKdpz11GsTofLaNiddrhxrsE4APZYSSfLFqQ9YKpump`
 - 14:42Z SA (MIGRATED, $572,213 mcap, $9,355 5m vol): PASS at conviction 3, PASS: 9.9% off a 12-minute-old high with 5m flow at 0.62x pace. That's chasing and flow below pace, and it's an AI LARP with a 0.1-day-old site that still says CA TBA (V1, V6).  
@@ -85,22 +97,10 @@ Updated 2026-11-01T14:54:24Z (paper trading, never real money)
   CA `762ZqBCd5m2q3QJ5UPkFL5rqdEUeygNkfTZrpGEZpump`
 - 14:37Z SOL (MIGRATED, $195,459 mcap, $112,006 5m vol): PASS at conviction 3, PASS — blocker "chasing": 10-minute-old coin 1.5% off its high right after a +56% 5m candle at 5.4x pace. Clean holders don't make that a pullback (V1).  
   CA `Ccm5ZnTrKY7YNskkiQJ4nrL4GHSGoXniik9pyV4Jpump`
-- 14:36Z tipr (MIGRATED, $44,517 mcap, $2,652 5m vol): PASS at conviction 2, PASS: down 87% from a $345k peak and back to $44k, which is a bonded coin that dumped under $70k with nothing left to prove. Falling knife, and a dead story too (V6).  
-  CA `3kRQDKPGqMWwBdGjiVPpPqVzFsnYG5PDqvrVz1D2pump`
-- 14:35Z GATO (MIGRATED, $7,223,273 mcap, $4,558 5m vol): REJECT, Dev holds 3.3% (>1%) (V13, V17)  
-  CA `HsprHxBRgiVaQdRf3TnKNuZZtaX9JUSPgMFdAkk6pump`
-- 14:33Z DESSA (DIP, $19,027,733 mcap, $3,384 5m vol): REJECT, Dip with fading attention is a falling knife, not a dip (5m at 0.30x the hour's pace, under 0.6x)  
-  CA `npz2FhoufQ7pKqhGpaipYWacrAkidyW2yDpVWSvpump`
-- 14:31Z PARITY (FINAL_STRETCH, $20,393 mcap, $8,326 5m vol): REJECT, RugCheck danger: Creator history of rugged tokens  
-  CA `ETHgDzFEG9gqBrjpPyiLvi12LSN9m7aPSdvWWjyZpump`
-- 14:23Z Dante (FINAL_STRETCH, $29,796 mcap, $35,919 5m vol): PASS at conviction 2, PASS: chasing. Up 130% in the last 5m, flow at 5.5x the hourly pace, 8 minutes old, and 8 bigger "Dante" tokens already exist. That's a spike inside a vamp field, not a setup (V1, V3).  
-  CA `4s8PpvyFsg1EnZxSpogVdsVwMU2R8gg46rKABG3Bs6Tt`
-- 14:21Z Ghost (MIGRATED, $131,430 mcap, $75,350 5m vol): REJECT, Dev holds 6.8% (>1%) (V13, V17)  
-  CA `F4rbj1erkDbUp7ifK8gqJfs9ixDyqDTNACqAkHqQpump`
 
 ## What its skips did next (last 48h)
 A skip "ran" if the coin reached the first target (1.5x) from the skip price before a 20% drop, "dumped" if the drop came first. Sampled every 10 min, followed 6h.
-- near the high / chasing: blocked 62, ran 9, dumped 42, flat 8, open 3 (saving losses: keep it)
+- near the high / chasing: blocked 63, ran 9, dumped 43, flat 8, open 3 (saving losses: keep it)
   - ran: FLYWHEEL up to 2.23x  
     CA `BWMf44rD724R2bdgHWd88CDTVEjuPNQauw8s6S7ipump`
   - ran: iCoin up to 1.68x  
@@ -114,7 +114,7 @@ A skip "ran" if the coin reached the first target (1.5x) from the skip price bef
     CA `EV116Y5Y6cYvcugmXwLVZPhbZus1NxV5WbArJxtUxxxx`
   - ran: onlypump up to 1.92x  
     CA `J73efZvH6rkrJbFJdP2rqe473YJW7tyWmrNARUSzpump`
-- top 10 over 25%: blocked 40, ran 5, dumped 30, flat 4, open 1 (saving losses: keep it)
+- top 10 over 25%: blocked 40, ran 5, dumped 29, flat 4, open 2 (saving losses: keep it)
   - ran: Goyim up to 2.88x  
     CA `7aeDqEi2PfoYpJfw2eawzLnRH9NjQJ6jWMZ9FH1Hpump`
   - ran: George up to 1.88x  
@@ -135,7 +135,7 @@ A skip "ran" if the coin reached the first target (1.5x) from the skip price bef
     CA `DUTxGHL2LmpfjQaoK6LdZp8WQPoDiwvtDHVDf4fMpump`
   - ran: whitepaper up to 2.16x  
     CA `4tEvXHpd6JrCWJGByBS3qFBAtJbeoiEpgvWLw9hkpump`
-- falling knife / no higher low: blocked 21, ran 2, dumped 15, flat 2, open 2 (saving losses: keep it)
+- falling knife / no higher low: blocked 21, ran 2, dumped 16, flat 2, open 1 (saving losses: keep it)
   - ran: CREDIT up to 1.56x  
     CA `Ewyifvp8X9NxeaKawXamGXBFDisuMfcFfcdvSZ8opump`
   - ran: WASTED up to 1.64x  
@@ -145,7 +145,7 @@ A skip "ran" if the coin reached the first target (1.5x) from the skip price bef
     CA `DR3Jtxwzkw9uBpi6Bz7qJX7zuFSJkNKXthD8nB1mpump`
   - ran: SUGAR up to 1.74x  
     CA `HLzTFsX99uqzAP7uK36gJ2pPHGfRM8ugvxXWJzjSpump`
-- dev share over 1%: blocked 11, ran 2, dumped 7, flat 1, open 1 (saving losses: keep it)
+- dev share over 1%: blocked 12, ran 2, dumped 7, flat 1, open 2 (saving losses: keep it)
   - ran: IGLU up to 1.54x  
     CA `34YQhrgkWoeFnm6LrcnmV3PLyDaMSNZikzUjyMmupump`
   - ran: MINTED up to 1.61x  
@@ -185,13 +185,13 @@ A skip "ran" if the coin reached the first target (1.5x) from the skip price bef
 The meta is fresh pump.fun launches under an hour old that hit a big first wave, and the volume is rotating fast. GTA1s ($64k, $90k on the 5m, 0.1h old, +66%), BB ($38k 5m in its first minutes), PARITY (+379%), PR, SATOSHI and "then i walk in" all show it. The jokes are random gaming, culture and Satoshi tickers, not one shared theme. Cats are fading: PAWCAT is -37% on the hour with 5m volume at about 0.66x its hourly pace, AAPLCAT is flat, and SIS is bleeding at about 0.48x. Politics is a hard pass (LAPTOP, V13), and the crawler summary is stale: REGRET and P2P aren't in the scan, and SAFU is down 81% with $1.2k on the 5m, so it's dead. The one setup worth researching now is GTA1s as MIGRATED: it's above $30k with real flow, but a 0.49 buy ratio on a 6-minute-old chart could be churn, so I'll only buy it if holders, bundles and dev come back clean. PAWCAT is the only DIP candidate, and it's blocked by the 0.7x volume gate at 0.66x. I'll check it again if 5m volume climbs back over 0.7x its hourly pace. BB and PARITY are still far from bond on the curve, so they stay watch-only until they show Final Stretch flow (V1).
 
 ## Moving most in its scans, last 30 min (1h volume)
-- SOL: $249,017 1h vol, $195,459 mcap, +389% 1h  
-  CA `Ccm5ZnTrKY7YNskkiQJ4nrL4GHSGoXniik9pyV4Jpump`
-- GTA1s: $239,459 1h vol, $7,399 mcap, -80% 1h  
-  CA `JCPAaUXNnHjFWFG69HcdVh4QNWS1Ec5B1DYwZgsqpump`
-- PAWCAT: $215,749 1h vol, $2,702,300 mcap, -31% 1h  
-  CA `762ZqBCd5m2q3QJ5UPkFL5rqdEUeygNkfTZrpGEZpump`
+- Ghost: $203,884 1h vol, $1,827 mcap, -95% 1h  
+  CA `F4rbj1erkDbUp7ifK8gqJfs9ixDyqDTNACqAkHqQpump`
+- TESTES: $191,784 1h vol, $19,169 mcap, +431% 1h  
+  CA `EwofMNzRodVxmSHSACFKcNUbcz8ithzU7xfiXRg2pump`
 - SA: $180,423 1h vol, $572,213 mcap, +18% 1h  
   CA `DgkKGYiJZMCah6iphatZeqCGJ5S51ND7qxQZQdP5pump`
-- DESSA: $137,315 1h vol, $19,027,733 mcap, -10% 1h  
-  CA `npz2FhoufQ7pKqhGpaipYWacrAkidyW2yDpVWSvpump`
+- Dante: $101,136 1h vol, $5,097 mcap, -86% 1h  
+  CA `4s8PpvyFsg1EnZxSpogVdsVwMU2R8gg46rKABG3Bs6Tt`
+- AAPLCAT: $86,547 1h vol, $759,306 mcap, -8% 1h  
+  CA `GYKnd6jGUSQoBUnj6LdGCBtCWYDgr2Zd6QwNPcy5pump`
