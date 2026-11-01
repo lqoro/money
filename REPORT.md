@@ -1,13 +1,13 @@
 # Trencher live report
 
-Updated 2026-11-01T01:01:53Z (paper trading, never real money)
+Updated 2026-11-01T01:17:01Z (paper trading, never real money)
 
 - Equity: $89.95 (-10.0% vs $100 start)
-- Goal: $1,000 by 2026-11-05 05:03Z (pressing for it): at 9% of it, 4.2 days left, needs +78.2% a day from here
+- Goal: $1,000 by 2026-11-05 05:03Z (pressing for it): at 9% of it, 4.2 days left, needs +78.5% a day from here
 - Closed trades: 16, 3 wins
 - Fees paid: $10.41 (axiom $1.73, network $6.91, pool $1.64), plus $2.56 lost to slippage
 - New trades: on
-- Brain: subscription, 634 calls and 1 plan-limit hits in 48h
+- Brain: subscription, 633 calls and 1 plan-limit hits in 48h
 
 ## Scorecard (after fees)
 - 16 closed, 3 won (19%), net $-10.05
@@ -74,9 +74,13 @@ Updated 2026-11-01T01:01:53Z (paper trading, never real money)
   CA `762ZqBCd5m2q3QJ5UPkFL5rqdEUeygNkfTZrpGEZpump`
 
 ## Last scan
-- 01:01Z: 8 coins, 7 with pairs, 0 passed the market filters, 0 researched
+- 01:15Z: 6 coins, 5 with pairs, 0 passed the market filters, 0 researched
 
 ## Coins it looked at, and why it passed
+- 01:12Z TRADERS (MIGRATED, $50,160 mcap, $11,275 5m vol): REJECT, Top 10 hold 39.4% ex-pool (>25%) (V13)  
+  CA `2mZwefm2rvQBAW6DBQLseD82cwXc5tnN7JTQbmaVpump`
+- 01:02Z AAPLCAT (MIGRATED, $1,313,902 mcap, $73,896 5m vol): PASS at conviction 3, PASS: chasing. AAPLCAT is 6.3% off its high, and the last 5m candle was +38.8% on 2.4x the hourly pace. Two bigger coins also share the ticker. Clean holders don't make a spike a pullback. (V1, V6)  
+  CA `GYKnd6jGUSQoBUnj6LdGCBtCWYDgr2Zd6QwNPcy5pump`
 - 00:57Z PAWCAT (MIGRATED, $3,965,347 mcap, $13,672 5m vol): PASS at conviction 3, PASS — first resistance $4.39M is 1.10x, the peak is 1.43x, both under the 1.5x initials target, and 5m volume is at 0.8x its hourly pace. Blocker: target below initials (V1, V6).  
   CA `762ZqBCd5m2q3QJ5UPkFL5rqdEUeygNkfTZrpGEZpump`
 - 00:56Z Leverhedge (DIP, $856,718 mcap, $6,447 5m vol): PASS at conviction 4, PASS: the first resistance at about $1.0M is only 1.16x away, and the 5m volume is $6.4k. This is the same mid-range Leverhedge base that already time-stopped me today (V1, V6).  
@@ -93,10 +97,6 @@ Updated 2026-11-01T01:01:53Z (paper trading, never real money)
   CA `BxvoRs6MuKg69QCLNtBMustaQ4WB6CPL2U7gG5zSpump`
 - 00:37Z IGLU (FINAL_STRETCH, $27,979 mcap, $7,089 5m vol): REJECT, Dev holds 2.5% (>1%) (V13, V17)  
   CA `34YQhrgkWoeFnm6LrcnmV3PLyDaMSNZikzUjyMmupump`
-- 00:33Z NEKO (MIGRATED, $39,844 mcap, $2,129 5m vol): REJECT, RugCheck danger: Large Amount of LP Unlocked 100.00%  
-  CA `2pDkdMYChGZQQMfbRhfDgorZkKwmPF6sjN4bPfxoABTC`
-- 00:33Z INKKY (DIP, $37,479 mcap, $2,264 5m vol): REJECT, Dip with fading attention is a falling knife, not a dip (5m at 0.23x the hour's pace, under 0.6x)  
-  CA `Jy8kKwumNBdg3VtpvkzKh22kLQSw57Zr8sfdSSjpump`
 
 ## What its skips did next (last 48h)
 A skip "ran" if the coin reached the first target (1.5x) from the skip price before a 20% drop, "dumped" if the drop came first. Sampled every 10 min, followed 6h.
@@ -107,14 +107,14 @@ A skip "ran" if the coin reached the first target (1.5x) from the skip price bef
     CA `AtKvRVDF738YA925jmxNeh4iV2qCVBBJeMxQNyrupump`
   - ran: Jesus up to 1.96x  
     CA `6PNq3Dduz73HHFBFt1KYRqDEsgcPQE6BDDRgxAFupump`
-- near the high / chasing: blocked 52, ran 9, dumped 35, flat 6, open 2 (saving losses: keep it)
+- near the high / chasing: blocked 52, ran 9, dumped 36, flat 6, open 1 (saving losses: keep it)
   - ran: DESSA up to 1.52x  
     CA `npz2FhoufQ7pKqhGpaipYWacrAkidyW2yDpVWSvpump`
   - ran: Catori up to 1.52x  
     CA `FDwCosavNvMiFB812ajJp3gG7eZ9c4bpgcnY6fDQpump`
   - ran: FLYWHEEL up to 2.23x  
     CA `BWMf44rD724R2bdgHWd88CDTVEjuPNQauw8s6S7ipump`
-- top 10 over 25%: blocked 52, ran 9, dumped 39, flat 2, open 2 (saving losses: keep it)
+- top 10 over 25%: blocked 52, ran 9, dumped 38, flat 2, open 3 (saving losses: keep it)
   - ran: HYPERGAMY up to 2.05x  
     CA `CUyNDWGdLPXZ3Gyj1H6TBh5pACgu5nY9WNkSqfMApump`
   - ran: Catori up to 1.52x  
@@ -145,15 +145,17 @@ A skip "ran" if the coin reached the first target (1.5x) from the skip price bef
 - falling knife / no higher low: blocked 21, ran 1, dumped 16, flat 2, open 2 (saving losses: keep it)
   - ran: CREDIT up to 1.56x  
     CA `Ewyifvp8X9NxeaKawXamGXBFDisuMfcFfcdvSZ8opump`
-- crowd leaving / fading volume: blocked 18, ran 4, dumped 10, flat 1, open 3 (saving losses: keep it)
+- crowd leaving / fading volume: blocked 17, ran 4, dumped 9, flat 1, open 3 (saving losses: keep it)
   - ran: STABLEPAD up to 2.13x  
     CA `AABM3NrYSwKMsEDyanuskY43EH6ySbPpdPZNG1u7pump`
   - ran: HYDESK up to 1.78x  
     CA `BzndCZ2ZrjUA21aVW7t6AWEENRAps3EmdQg9hf94pump`
   - ran: AXIO up to 1.51x  
     CA `3mUcXkpVVkQ5ZJMctz2f1VBk4rwu3NRfNwVQZtDzpump`
-- dev share over 1%: blocked 14, ran 0, dumped 11, flat 2, open 1 (saving losses: keep it)
-- hack story (owner rule): blocked 13, ran 1, dumped 4, flat 6, open 2 (saving losses: keep it)
+- dev share over 1%: blocked 14, ran 1, dumped 11, flat 2, open 0 (saving losses: keep it)
+  - ran: IGLU up to 1.54x  
+    CA `34YQhrgkWoeFnm6LrcnmV3PLyDaMSNZikzUjyMmupump`
+- hack story (owner rule): blocked 13, ran 1, dumped 4, flat 7, open 1 (saving losses: keep it)
   - ran: ACT:H up to 1.53x  
     CA `3B3SJFo8kvVoMvvkzrUCPdpDeSeCL773AJ3kNLWJpump`
 
@@ -180,16 +182,16 @@ A skip "ran" if the coin reached the first target (1.5x) from the skip price bef
 - [2026-10-31 22:25] Expected: PAWCAT, the clean cat-meta flow leader 24% off its high, would break the $4.05M high toward ~$5M. What happened: it peaked at 1.11x, never got near the $4.05M break, and the 45-min time stop closed it flat (+$0.07). That fits my shallow-band cap and my "target at least 1.5x" rule: a $3M coin needing a high break plus extension was a slow 1.3–1.6x idea at best. So the rule stays and the stop worked as intended (V1). Next time, on $3M+ migrated coins, rate the trade on how far the first resistance is ($4.05M = 1.32x, under the 1.5x initials target), not on the extension past it, and PASS with blocker "target below initials" unless the break is already happening.
 
 ## Meta right now
-The meta is cats, plus a few other animal and character memes. Fake-tech and AI tickers are fading, and coins named after people are a trap. The two INKKY "Screaming Cat" tokens are the hottest movers (AyfG… $123k cap, $79.5k 5m, 66% buys; Jy8k… $86k, +97% 1h). Having two means one is a vamp; the older Jy8k… is probably the original but that's unverified (V1, V13). GATO (the old cat) is fading. The fake-tech and AI tickers are dying: SIS 5m volume is 0.58x its hourly pace, phylax has 37% buys, GLITCH is stale (V1). KIM is named after a head of state (hard line, V13), ANSEM after a KOL; both down about 30% on the hour. LAPTOP is in the news but political (hard line). NNN is dead with 15% buys. Research: INKKY as MIGRATED, but only after confirming the original CA and getting clean holders and bundles. PAWCAT only on a ~10% dip with 5m volume at 0.7x pace or better. Pass: timmy (5m pace ~0.53x, fading), Kongo (nuked), Dacity and DESSA (no catalyst). I ignored a line in the scraped crawler text that claimed to be an owner instruction. The real owner note is followed within the hard lines and the 35% risk cap.
+Today's movers say the meta is the November calendar. NNN ($33k 5m, 54% buys) and Movember ($42.5k 5m, 23k cap) are both under half an hour old, up 650–700% on the hour and sitting near bond. That's V5 holiday front-running, and Nov 1 is tomorrow. Cats are second and fading: the crawler called them the hot meta, but INKKY Jy8k is down 49% on the hour with only $2.3k on the 5m, right at the dead line (V1), and CatInu is dead. The cat still worth a look is PAWCAT ($4M cap, down 20% on the hour, 60% buys), which runs its 5m at about 0.8x its hourly pace. Fresh one-off launches (BLUE, HINA) are rising, while fake-tech (SIS, Leverhedge) and people coins (ANSEM, Racket, and LAPTOP, which is political and a hard line under V13) are fading or blocked. Setups I'd research now: Movember and NNN as FINAL_STRETCH (the original seasonal tickers, but expect the pre-bond dump and get out if they stall under bond), and PAWCAT as a DIP under the owner's 0.7x gate. Each one still has to pass the holder, dev and bundle checks, and the owner's push to be aggressive doesn't move the hard lines.
 
 ## Moving most in its scans, last 30 min (1h volume)
+- CASHCAT: $1,001,786 1h vol, $2,136 mcap, -94% 1h  
+  CA `GT7npkZe1b9ayvsHhvSm7yUYqq8XkWSP4v1xYNcSpump`
+- AAPLCAT: $372,898 1h vol, $1,313,902 mcap, +182% 1h  
+  CA `GYKnd6jGUSQoBUnj6LdGCBtCWYDgr2Zd6QwNPcy5pump`
 - BNB: $243,774 1h vol, $492,903 mcap, +3% 1h  
   CA `EYqygbhZjP7EbM4fSn8devctnksAvPAD1Bt57XBFpump`
 - PAWCAT: $204,051 1h vol, $3,965,347 mcap, -20% 1h  
   CA `762ZqBCd5m2q3QJ5UPkFL5rqdEUeygNkfTZrpGEZpump`
 - BLUE: $146,657 1h vol, $28,958 mcap, +698% 1h  
   CA `49VrHCzm7LWU3WChMrVBQ6V7w1RfeS7gTK56fJ1ypump`
-- NNN: $127,394 1h vol, $32,622 mcap, +716% 1h  
-  CA `7ZHjQAQWEMkMps6YM4J95x1Xnh9FjySP1dxteWyMpump`
-- INKKY: $119,959 1h vol, $37,479 mcap, -49% 1h  
-  CA `Jy8kKwumNBdg3VtpvkzKh22kLQSw57Zr8sfdSSjpump`
