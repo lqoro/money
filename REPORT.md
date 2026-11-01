@@ -1,13 +1,13 @@
 # Trencher live report
 
-Updated 2026-11-01T04:48:50Z (paper trading, never real money)
+Updated 2026-11-01T05:03:55Z (paper trading, never real money)
 
 - Equity: $86.97 (-13.0% vs $100 start)
-- Goal: $1,000 by 2026-11-05 05:03Z (pressing for it): at 8.7% of it, 4 days left, needs +83.9% a day from here
+- Goal: $1,000 by 2026-11-05 05:03Z (pressing for it): at 8.7% of it, 4 days left, needs +84.2% a day from here
 - Closed trades: 17, 3 wins
 - Fees paid: $11.16 (axiom $1.90, network $7.29, pool $1.83), plus $2.81 lost to slippage
 - New trades: on
-- Brain: subscription, 635 calls and 1 plan-limit hits in 48h
+- Brain: subscription, 638 calls and 1 plan-limit hits in 48h
 
 ## Scorecard (after fees)
 - 17 closed, 3 won (18%), net $-13.03
@@ -74,9 +74,19 @@ Updated 2026-11-01T04:48:50Z (paper trading, never real money)
   CA `CPoGSmcjprCvzA2MFYLJMpQkGjmgVzKg4RVwMdrzpump`
 
 ## Last scan
-- 04:48Z: 5 coins, 5 with pairs, 0 passed the market filters, 0 researched
+- 05:02Z: 7 coins, 7 with pairs, 0 passed the market filters, 0 researched
 
 ## Coins it looked at, and why it passed
+- 05:02Z iTech (MIGRATED, $265,853 mcap, $4,388 5m vol): PASS at conviction 4, PASS — shallow band 13% off the high with 5m at $4.4k and 0.91x pace, red last 5m, and the first resistance is only 1.15x away. Blocker: flow below pace / target below initials (V1, V6).  
+  CA `x94ouReAXGWHfNnGokusmmfNttSNEXyfY4ZCQq9pump`
+- 05:01Z Bitcoin (MIGRATED, $298,360 mcap, $2,170 5m vol): PASS at conviction 3, PASS: 5m volume is $2.2k on a shallow-band setup, and the first target ($365k high) is only 1.22x away. Blocker: flow below pace. (V1, V6)  
+  CA `HytpiyuR3sVXGB5UqoqrnThCPH2X1tWVm5neep3Dpump`
+- 04:52Z BALLS (MIGRATED, $36,069 mcap, $2,308 5m vol): REJECT, Top 10 hold 26.0% ex-pool (>25%) (V13)  
+  CA `HhBuvegE7Ew2stS5svkMcxL8povkaL8brwt9JUtfpump`
+- 04:52Z BLOB (MIGRATED, $1,361,256 mcap, $3,172 5m vol): PASS at conviction 3, PASS: chasing. 8.8% off a high printed 6 minutes ago, with $3k on the 5m and 22 other tokens sharing the ticker. Clean holders don't make a thin top a buy (V1, V6).  
+  CA `8s11PkgQt4ZzdZ7oo84hK5t9HG1EvdgAjcg4W7Lpump`
+- 04:51Z AAPLCAT (MIGRATED, $1,269,950 mcap, $10,700 5m vol): PASS at conviction 3, PASS: the first resistance at the $1.8M high is only 1.42x away, below initials, and the 5m is at half its hourly pace. That's a fading cat, not a setup. (V1, V6)  
+  CA `GYKnd6jGUSQoBUnj6LdGCBtCWYDgr2Zd6QwNPcy5pump`
 - 04:45Z PAWCAT (MIGRATED, $3,748,003 mcap, $5,409 5m vol): PASS at conviction 3, PASS: first resistance at $4.05–4.24M is only 1.08–1.13x away and 5m flow is $5.4k at 0.79x pace. Target below initials, same as the flat PAWCAT trade 2h ago (V1, V6).  
   CA `762ZqBCd5m2q3QJ5UPkFL5rqdEUeygNkfTZrpGEZpump`
 - 04:40Z SS (no setup, $39,227 mcap, $0 5m vol): REJECT, Hack story ("stolen" in the name or ticker): these tend to go down, owner rule  
@@ -87,16 +97,6 @@ Updated 2026-11-01T04:48:50Z (paper trading, never real money)
   CA `CPoGSmcjprCvzA2MFYLJMpQkGjmgVzKg4RVwMdrzpump`
 - 04:29Z ANTS (MIGRATED, $1,404,461 mcap, $3,425 5m vol): PASS at conviction 3, PASS — 5.5% off the high with $3.4k on the 5m. That's chasing on thin flow, and the site still says "CA coming soon" across a 10-copy ticker (V1, V6, V13).  
   CA `wMHBD2B8KbDagvXUEapginhtJdrH4QSvSezBM8Tpump`
-- 04:28Z tipr (MIGRATED, $122,846 mcap, $12,463 5m vol): PASS at conviction 3, PASS: last 5m up 64% at a fresh high on a 50-minute-old migration with 5m flow at 0.48x the hourly pace. That's chasing a spike. Blocker: "chasing" (V1, V6).  
-  CA `3kRQDKPGqMWwBdGjiVPpPqVzFsnYG5PDqvrVz1D2pump`
-- 04:26Z SIS (MIGRATED, $643,763 mcap, $8,650 5m vol): PASS at conviction 4, PASS: SIS has clean holders but the volume is fading. 5m is $8.6k, only 0.62x its hourly pace, and the first resistance is just 1.13x away. The blocker is "flow below pace".  
-  CA `FdKdpz11GsTofLaNiddrhxrsE4APZYSSfLFqQ9YKpump`
-- 04:24Z ANSEM (DIP, $251,271 mcap, $2,219 5m vol): REJECT, Dip with fading attention is a falling knife, not a dip (5m at 0.55x the hour's pace, under 0.6x)  
-  CA `CvRJ8MrnB1AwjrgX25uyeLJiXNSugTo2ZHh8UXDTpump`
-- 04:16Z iTech (MIGRATED, $224,385 mcap, $4,665 5m vol): PASS at conviction 3, PASS: iTech is sitting 4.9% under a high it printed this minute, and 5m volume is $4.7k at 0.56x the hourly pace. Buying here is chasing a fading spike (V1, V6).  
-  CA `x94ouReAXGWHfNnGokusmmfNttSNEXyfY4ZCQq9pump`
-- 04:07Z BLOB (MIGRATED, $1,270,353 mcap, $3,713 5m vol): PASS at conviction 3, PASS: chasing. It's 8.5% under the high while 5m volume runs at half its hourly pace, and the AI-tribute story has no X and no GitHub behind it. Clean holders don't fix a crowd that's leaving. (V1, V6)  
-  CA `8s11PkgQt4ZzdZ7oo84hK5t9HG1EvdgAjcg4W7Lpump`
 
 ## What its skips did next (last 48h)
 A skip "ran" if the coin reached the first target (1.5x) from the skip price before a 20% drop, "dumped" if the drop came first. Sampled every 10 min, followed 6h.
@@ -107,27 +107,27 @@ A skip "ran" if the coin reached the first target (1.5x) from the skip price bef
     CA `6PNq3Dduz73HHFBFt1KYRqDEsgcPQE6BDDRgxAFupump`
   - ran: SPACECAT up to 1.56x  
     CA `61h4rUn7C21QNv1NJADc2oAxpAhr7f2WGqbXRDEupump`
-- near the high / chasing: blocked 54, ran 9, dumped 33, flat 5, open 7 (saving losses: keep it)
+- near the high / chasing: blocked 54, ran 10, dumped 33, flat 5, open 6 (saving losses: keep it)
   - ran: DESSA up to 1.52x  
     CA `npz2FhoufQ7pKqhGpaipYWacrAkidyW2yDpVWSvpump`
   - ran: Catori up to 1.52x  
     CA `FDwCosavNvMiFB812ajJp3gG7eZ9c4bpgcnY6fDQpump`
   - ran: FLYWHEEL up to 2.23x  
     CA `BWMf44rD724R2bdgHWd88CDTVEjuPNQauw8s6S7ipump`
-- top 10 over 25%: blocked 45, ran 8, dumped 32, flat 3, open 2 (saving losses: keep it)
+- top 10 over 25%: blocked 46, ran 8, dumped 32, flat 3, open 3 (saving losses: keep it)
   - ran: Catori up to 1.52x  
     CA `FDwCosavNvMiFB812ajJp3gG7eZ9c4bpgcnY6fDQpump`
   - ran: ZERO up to 1.8x  
     CA `Ddwf94wedgCuMHAkwgti8A7sL2CxvBYJStJBj2cFpump`
   - ran: BEAST up to 2.52x  
     CA `3mh5pgk58HPZwEinnZNUbsJpUoyqYa23zS2n442Zpump`
-- falling knife (code): blocked 28, ran 3, dumped 22, flat 0, open 3 (saving losses: keep it)
+- falling knife (code): blocked 28, ran 4, dumped 22, flat 0, open 2 (saving losses: keep it)
   - ran: TYGR up to 1.58x  
     CA `5wCqCq6jbppuTocMeq6zd4UywAm64L1QNNxvEDAHpump`
   - ran: LUMI up to 1.76x  
     CA `653joYuZ5EntuKd1bspZakjHdueMxHGs5Lvm7RdWpump`
-  - ran: KIM up to 1.55x  
-    CA `8pjfN5Ayb4rucGpYE3tZWN6v3EysizjPx1v62zx1pump`
+  - ran: SIS up to 2.05x  
+    CA `FdKdpz11GsTofLaNiddrhxrsE4APZYSSfLFqQ9YKpump`
 - RugCheck didn't load: blocked 23, ran 3, dumped 16, flat 4, open 0 (saving losses: keep it)
   - ran: UNSAFU up to 1.61x  
     CA `4eq4JfnpdgqZTzeyR3GnRGHJQ3QhQT6Lp7nKnQ2nS7Rv`
@@ -142,12 +142,14 @@ A skip "ran" if the coin reached the first target (1.5x) from the skip price bef
     CA `DR3Jtxwzkw9uBpi6Bz7qJX7zuFSJkNKXthD8nB1mpump`
   - ran: SUGAR up to 1.74x  
     CA `HLzTFsX99uqzAP7uK36gJ2pPHGfRM8ugvxXWJzjSpump`
-- falling knife / no higher low: blocked 20, ran 2, dumped 15, flat 1, open 2 (saving losses: keep it)
+- falling knife / no higher low: blocked 19, ran 3, dumped 14, flat 2, open 0 (saving losses: keep it)
+  - ran: SIS up to 2.05x  
+    CA `FdKdpz11GsTofLaNiddrhxrsE4APZYSSfLFqQ9YKpump`
   - ran: CREDIT up to 1.56x  
     CA `Ewyifvp8X9NxeaKawXamGXBFDisuMfcFfcdvSZ8opump`
   - ran: WASTED up to 1.64x  
     CA `GexThZHgaswpAQ7Fi8QrHFubjPimUNSYhJiAA7XZpump`
-- crowd leaving / fading volume: blocked 17, ran 4, dumped 9, flat 1, open 3 (saving losses: keep it)
+- crowd leaving / fading volume: blocked 17, ran 5, dumped 9, flat 1, open 2 (mixed)
   - ran: STABLEPAD up to 2.13x  
     CA `AABM3NrYSwKMsEDyanuskY43EH6ySbPpdPZNG1u7pump`
   - ran: HYDESK up to 1.78x  
@@ -187,13 +189,13 @@ A skip "ran" if the coin reached the first target (1.5x) from the skip price bef
 The meta right now is fresh pump.fun launches under an hour old taking the flow. Mamesuke ($39k, $38k 5m vol) and NIGUIN ($29k, $31k) are still on the curve, and tipr ($62k, $41k 5m) and "the blue pill" onlypump ($161k, $19k 5m) have already migrated. Next to them, BLUE ($357k, $78k 5m, 59% buys, 2h old, only -5.6% on the hour) gives a small blue/pill theme two coins of support. Cats are fading: AAPLCAT's 5m volume is about 0.5x its hourly pace, which fails the 0.7x DIP gate, and PAWCAT is at $2.9k 5m on a $3.5M cap. AI names are split. SIS ($725k) is holding real flow at about 1.0x pace with 67% buys. ANTS ("Anthropic") is down to $2.3k on the 5m, has nothing behind the name, and looks like a LARP (V1). The crawler's own summary is stale and I'm not using it: IF has already dumped 84% to $7k and is dead. Political coins (LAPTOP, TRUMP) are out under V13, and the hack story is out by the owner's rule. Setups to research now: BLUE as MIGRATED, buying only from 10%+ off its local high with clean bundle and sniper checks. SIS as MIGRATED, but only if real GitHub work backs the AI claim. Mamesuke and NIGUIN as FINAL_STRETCH once they stop being ten-minute-old snipes, watching for the pre-bond dump (V1). Conviction comes from the checklist, not the Nov 5 deadline.
 
 ## Moving most in its scans, last 30 min (1h volume)
-- BLUE: $359,311 1h vol, $263,986 mcap, -38% 1h  
-  CA `CPoGSmcjprCvzA2MFYLJMpQkGjmgVzKg4RVwMdrzpump`
-- tipr: $313,382 1h vol, $122,846 mcap, +226% 1h  
-  CA `3kRQDKPGqMWwBdGjiVPpPqVzFsnYG5PDqvrVz1D2pump`
-- DESSA: $269,727 1h vol, $30,685,532 mcap, +16% 1h  
+- AAPLCAT: $262,736 1h vol, $1,269,950 mcap, +12% 1h  
+  CA `GYKnd6jGUSQoBUnj6LdGCBtCWYDgr2Zd6QwNPcy5pump`
+- DESSA: $224,122 1h vol, $30,323,093 mcap, +14% 1h  
   CA `npz2FhoufQ7pKqhGpaipYWacrAkidyW2yDpVWSvpump`
-- onlypump: $261,098 1h vol, $1,866 mcap, -99% 1h  
+- BALLS: $205,814 1h vol, $36,069 mcap, -77% 1h  
+  CA `HhBuvegE7Ew2stS5svkMcxL8povkaL8brwt9JUtfpump`
+- onlypump: $160,389 1h vol, $1,840 mcap, -99% 1h  
   CA `J73efZvH6rkrJbFJdP2rqe473YJW7tyWmrNARUSzpump`
-- SIS: $167,987 1h vol, $643,763 mcap, -7% 1h  
-  CA `FdKdpz11GsTofLaNiddrhxrsE4APZYSSfLFqQ9YKpump`
+- Movember: $158,685 1h vol, $3,206 mcap, -91% 1h  
+  CA `5u8mRy6L3pAxjWL9wG61fsXpTgzMDMSNKYySgKBypump`
