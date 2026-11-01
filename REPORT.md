@@ -1,13 +1,13 @@
 # Trencher live report
 
-Updated 2026-11-01T12:08:19Z (paper trading, never real money)
+Updated 2026-11-01T12:23:27Z (paper trading, never real money)
 
 - Equity: $80.53 (-19.5% vs $100 start)
-- Goal: $1,000 by 2026-11-05 05:03Z (pressing for it): at 8.1% of it, 3.7 days left, needs +97.4% a day from here
+- Goal: $1,000 by 2026-11-05 05:03Z (pressing for it): at 8.1% of it, 3.7 days left, needs +97.8% a day from here
 - Closed trades: 19, 3 wins
 - Fees paid: $12.66 (axiom $2.26, network $8.06, pool $2.21), plus $3.34 lost to slippage
 - New trades: on
-- Brain: subscription, 646 calls and 1 plan-limit hits in 48h
+- Brain: subscription, 647 calls and 1 plan-limit hits in 48h
 
 ## Scorecard (after fees)
 - 19 closed, 3 won (16%), net $-19.48
@@ -74,9 +74,17 @@ Updated 2026-11-01T12:08:19Z (paper trading, never real money)
   CA `GYKnd6jGUSQoBUnj6LdGCBtCWYDgr2Zd6QwNPcy5pump`
 
 ## Last scan
-- 12:07Z: 0 coins, 0 with pairs, 0 passed the market filters, 0 researched
+- 12:23Z: 8 coins, 8 with pairs, 0 passed the market filters, 0 researched
 
 ## Coins it looked at, and why it passed
+- 12:21Z PAWCAT (MIGRATED, $6,326,202 mcap, $136,922 5m vol): PASS at conviction 4, PASS — clean leader, bad entry: peak printed 6 min ago, 5m volume 3.4x pace with a −11% candle, and the $8M high is only 1.26x away, under 1.5x initials. Blocker: target below initials (V1, V6).  
+  CA `762ZqBCd5m2q3QJ5UPkFL5rqdEUeygNkfTZrpGEZpump`
+- 12:17Z GATO (MIGRATED, $6,959,322 mcap, $5,119 5m vol): REJECT, Dev holds 3.3% (>1%) (V13, V17)  
+  CA `HsprHxBRgiVaQdRf3TnKNuZZtaX9JUSPgMFdAkk6pump`
+- 12:13Z SA (MIGRATED, $170,119 mcap, $49,528 5m vol): PASS at conviction 3, PASS: chasing. SA is 13 minutes old, sitting 0.1% under its high, and the last 5m candle was +56.8% at 3x pace. That's a bond spike, not an entry. (V1, V6)  
+  CA `EpciamcHuELQsgQQiMUhk8LKx5Hz16iNqJ3D5r5fpump`
+- 12:10Z BLACKED (DIP, $40,723 mcap, $3,768 5m vol): PASS at conviction 2, PASS: a +28% spike candle on $3.8k of 5m flow, in a dying gooner farm field, with 12 bigger coins on the same ticker. Blocker: "chasing" plus "split crowd" (V1, V3, V13).  
+  CA `GuvRLfGP4CMJfF9VyHv85vih9yqxhNB5R8zgRcD9pump`
 - 12:04Z P2P (FINAL_STRETCH, $19,742 mcap, $25,515 5m vol): REJECT, RugCheck danger: Creator history of rugged tokens  
   CA `8ANLUXihz9FrSy6Jbg85CGsuPCpPjf5S9ZUXNRG5pump`
 - 12:02Z Dacity (MIGRATED, $7,592,362 mcap, $11,500 5m vol): REJECT, Bundles: 10 linked wallet cluster(s) hold 22.4% of supply (>20%) (V17)  
@@ -89,25 +97,17 @@ Updated 2026-11-01T12:08:19Z (paper trading, never real money)
   CA `GEHj3yYtnnS2Fv3GSkjb3FEQzSZuehHqyEbKc45vpump`
 - 11:46Z SIS (MIGRATED, $229,922 mcap, $3,273 5m vol): PASS at conviction 2, PASS: falling knife. SIS is 82% off its peak, past my 70% DIP limit, and 5m volume is only 0.43x the hourly pace, under the 0.7x gate. I was stopped out of this exact coin 20 minutes ago and the reason still holds. The crowd is leaving. (V1, V6)  
   CA `FdKdpz11GsTofLaNiddrhxrsE4APZYSSfLFqQ9YKpump`
-- 11:41Z 白いヤク (MIGRATED, $57,886 mcap, $2,633 5m vol): PASS at conviction 2, PASS: flow below pace. 5m is $2.6k at 0.24x the hourly average, and the last 5m candle is up 36%. That's a dead-cat spike on a $58k coin that never held $70k (V1, V6).  
-  CA `6jFcYpa95qnzX3Kui4TTyPCEzQorHRCHXhoCAg5tpump`
-- 11:35Z PAWCAT (DIP, $3,819,059 mcap, $27,180 5m vol): REJECT, Dip with fading attention is a falling knife, not a dip (5m at 0.38x the hour's pace, under 0.6x)  
-  CA `762ZqBCd5m2q3QJ5UPkFL5rqdEUeygNkfTZrpGEZpump`
-- 11:30Z BLUE (DIP, $302,632 mcap, $4,196 5m vol): REJECT, Dip with fading attention is a falling knife, not a dip (5m at 0.56x the hour's pace, under 0.6x)  
-  CA `CPoGSmcjprCvzA2MFYLJMpQkGjmgVzKg4RVwMdrzpump`
-- 11:25Z tipr (MIGRATED, $68,632 mcap, $2,366 5m vol): PASS at conviction 2, PASS: 80% off the $345k peak with $2.4k on the 5m. That's a corpse, not a dip, and my own radar already called tipr dead (V1, V6).  
-  CA `3kRQDKPGqMWwBdGjiVPpPqVzFsnYG5PDqvrVz1D2pump`
 
 ## What its skips did next (last 48h)
 A skip "ran" if the coin reached the first target (1.5x) from the skip price before a 20% drop, "dumped" if the drop came first. Sampled every 10 min, followed 6h.
-- near the high / chasing: blocked 59, ran 8, dumped 40, flat 9, open 2 (saving losses: keep it)
+- near the high / chasing: blocked 60, ran 8, dumped 40, flat 9, open 3 (saving losses: keep it)
   - ran: DESSA up to 1.52x  
     CA `npz2FhoufQ7pKqhGpaipYWacrAkidyW2yDpVWSvpump`
   - ran: FLYWHEEL up to 2.23x  
     CA `BWMf44rD724R2bdgHWd88CDTVEjuPNQauw8s6S7ipump`
   - ran: iCoin up to 1.68x  
     CA `HgxEGTZ1Epb64RrYqcuHkqb1gGWWnF5WcPTCDWzApump`
-- too new / sniping: blocked 52, ran 5, dumped 47, flat 0, open 0 (saving losses: keep it)
+- too new / sniping: blocked 53, ran 5, dumped 48, flat 0, open 0 (saving losses: keep it)
   - ran: Jesus up to 1.96x  
     CA `6PNq3Dduz73HHFBFt1KYRqDEsgcPQE6BDDRgxAFupump`
   - ran: SPACECAT up to 1.56x  
@@ -121,7 +121,7 @@ A skip "ran" if the coin reached the first target (1.5x) from the skip price bef
     CA `7aeDqEi2PfoYpJfw2eawzLnRH9NjQJ6jWMZ9FH1Hpump`
   - ran: George up to 1.88x  
     CA `4poKLzPuwjKJgXM6eF3EqBbMzWgkapi96vbNSkZipump`
-- falling knife (code): blocked 31, ran 3, dumped 25, flat 1, open 2 (saving losses: keep it)
+- falling knife (code): blocked 29, ran 3, dumped 24, flat 1, open 1 (saving losses: keep it)
   - ran: TYGR up to 1.58x  
     CA `5wCqCq6jbppuTocMeq6zd4UywAm64L1QNNxvEDAHpump`
   - ran: LUMI up to 1.76x  
@@ -186,16 +186,18 @@ A skip "ran" if the coin reached the first target (1.5x) from the skip price bef
 - [2026-11-01 06:19] Expected AAPLCAT, 36% off its $1.8M high with a printed higher-low base, clean holders and $12.6k on the 5m, to retest the peak at about 1.57x. It peaked at 1.01x, broke the 0.000981 higher low, and the "unclear" stop review sold at −31% instead of −20%. That makes 7 of 7 stop reviews closing worse than the stop. This confirms my existing rules rather than adding a new one: the proven band needs 5m at or above the hourly pace and a meta with the crowd still arriving (V1, V6). I bought with pace under the hourly average and a cooling meta, so next time a band entry with flow below pace is a PASS (blocker "flow below pace"), not a probe, and a broken higher low sells right away.
 
 ## Meta right now
-Meta is migrated cats and animals. PAWCAT ($4.66M, $133k on the 5m, about 2.7x its hourly pace, 0.59 buy ratio) is the clear leader. Apple Cat is fading (0.3x pace). The fresh gooner/NSFW snipe-and-dump launches (GOONER, Fappy, Sperm, Burger Queen) are dying with farm-pattern buy ratios. The original Yak 6jFc ($63k, 0.9h old) is cooling to about 0.7x pace and hasn't proven itself above $70k. Small tip theme: TIPPER is still on the bonding curve, tipr is dead. Setup: PAWCAT as a MIGRATED buy, entered only within 10% of the local high after its +69% hour, conviction 7 if holder and bundle checks are clean. Original Yak on watch until it reclaims $70k. PASS: LAPTOP (political figure, V13), Yak vamp 6jUA (copycat, V1), Apple Cat (volume collapsed, falling knife), gooner launches (farm pattern).
+The meta right now is fresh pump.fun graduates under an hour old with tech/agent-flavored names. Super Agent (SA, $170k, $49.5k on the 5m, about 3x its hourly pace, 0.68 buy ratio, 0.2h old) and MarvinCoin (MARVIN 5L1e, $124k, $29k 5m, about 1.8x pace, 0.59 buys) are carrying it. Behind them, bonding-curve runners are rising: P2P ($19.7k cap doing $25.5k on the 5m, which smells like wash volume until holders say otherwise), Solstars (0.1h old, too new for us) and KO (5m cooling hard after a +994% hour). Fading: cats and animals (Apple Cat around 0.6x pace, GATO selling at 0.44 buys), the Yak vamp, and the gooner/NSFW launches, which have farm patterns and dead 5m volume. Heads up: the crawler summary calls PAWCAT the leader, but PAWCAT isn't in scan_movers, so I'm not trading a coin I can't see. LAPTOP is a pass (Hunter Biden is a political figure, V13), and the Binance-hack headline stays off the board.
+
+Setups I'd look at: SA as a MIGRATED buy within 10% of its local high. It's a tech/agent name, so it needs a real product or GitHub or it's a LARP and drops to a probe (V1). MARVIN 5L1e as a MIGRATED buy too, only the original: 6StL is a dead copy at $2.8k with zero buys (V1, V3). Both get a 20% stop, initials at 1.5x and break-even at 1.3x. Owner says press on clean setups, and I will, but only if holders and bundles come back clean.
 
 ## Moving most in its scans, last 30 min (1h volume)
+- PAWCAT: $480,460 1h vol, $6,326,202 mcap, +27% 1h  
+  CA `762ZqBCd5m2q3QJ5UPkFL5rqdEUeygNkfTZrpGEZpump`
+- SA: $199,892 1h vol, $170,119 mcap, +324% 1h  
+  CA `EpciamcHuELQsgQQiMUhk8LKx5Hz16iNqJ3D5r5fpump`
 - MARVIN: $193,606 1h vol, $124,515 mcap, +210% 1h  
   CA `5L1efZj4ymwKfE4dUQf5rYVLBSL6eJL2xe9EGnHGpump`
-- 白いヤク: $132,590 1h vol, $57,886 mcap, -8% 1h  
-  CA `6jFcYpa95qnzX3Kui4TTyPCEzQorHRCHXhoCAg5tpump`
 - P2P: $128,510 1h vol, $19,742 mcap, +74% 1h  
   CA `8ANLUXihz9FrSy6Jbg85CGsuPCpPjf5S9ZUXNRG5pump`
-- GOONER: $107,838 1h vol, $2,764 mcap, -41% 1h  
-  CA `4u6fndR5CRLjNvc9N5cHJwUF2VdUVmBZgX4yGFHzpump`
-- KO: $94,690 1h vol, $29,310 mcap, +994% 1h  
-  CA `GEHj3yYtnnS2Fv3GSkjb3FEQzSZuehHqyEbKc45vpump`
+- Dacity: $87,741 1h vol, $7,592,362 mcap, -3% 1h  
+  CA `nxPqZ4F7ux8Vph5NFu25rEP6Kx9Gr1U6Fmj36Rjpump`
