@@ -1,13 +1,13 @@
 # Trencher live report
 
-Updated 2026-11-01T21:59:01Z (paper trading, never real money)
+Updated 2026-11-01T22:14:13Z (paper trading, never real money)
 
 - Equity: $80.53 (-19.5% vs $100 start)
-- Goal: $1,000 by 2026-11-05 05:03Z (pressing for it): at 8.1% of it, 3.3 days left, needs +114.8% a day from here
+- Goal: $1,000 by 2026-11-05 05:03Z (pressing for it): at 8.1% of it, 3.3 days left, needs +115.4% a day from here
 - Closed trades: 19, 3 wins
 - Fees paid: $12.66 (axiom $2.26, network $8.06, pool $2.21), plus $3.34 lost to slippage
 - New trades: on
-- Brain: subscription, 618 calls and 0 plan-limit hits in 48h
+- Brain: subscription, 617 calls and 0 plan-limit hits in 48h
 
 ## Scorecard (after fees)
 - 19 closed, 3 won (16%), net $-19.48
@@ -74,9 +74,15 @@ Updated 2026-11-01T21:59:01Z (paper trading, never real money)
   CA `GYKnd6jGUSQoBUnj6LdGCBtCWYDgr2Zd6QwNPcy5pump`
 
 ## Last scan
-- 21:58Z: 3 coins, 2 with pairs, 0 passed the market filters, 0 researched
+- 22:13Z: 8 coins, 8 with pairs, 0 passed the market filters, 0 researched
 
 ## Coins it looked at, and why it passed
+- 22:08Z WASTED (MIGRATED, $214,193 mcap, $2,933 5m vol): REJECT, Top 10 hold 25.6% ex-pool (>25%) (V13)  
+  CA `GexThZHgaswpAQ7Fi8QrHFubjPimUNSYhJiAA7XZpump`
+- 22:06Z VETOTRUMP (MIGRATED, $132,946 mcap, $11,661 5m vol): PASS at conviction 3, PASS: chasing. It's 9.9% off a high set 6 minutes ago, flow is below pace at 0.83x, and the coin is 38 minutes old. Three separate blockers (V1, V6).  
+  CA `6g16UK4wHoFhC7PCmw8LYYCdt9q8m99fyoAwxeCrpump`
+- 22:05Z LILY (FINAL_STRETCH, $22,920 mcap, $4,060 5m vol): PASS at conviction 3, PASS: chasing a spike. LILY is up 55% in 5 minutes and sits 4% under its high, with only $4k on the 5m, top 10 at 21% and 10 other coins on the same ticker (V1, V6).  
+  CA `FZs4YUPyD5sMzUv5fwiWBQx3s9Nzgvw62g8ytohwpump`
 - 21:56Z GATO (MIGRATED, $8,094,197 mcap, $13,546 5m vol): REJECT, Dev holds 3.3% (>1%) (V13, V17)  
   CA `HsprHxBRgiVaQdRf3TnKNuZZtaX9JUSPgMFdAkk6pump`
 - 21:52Z Dacity (MIGRATED, $7,242,717 mcap, $13,650 5m vol): REJECT, Bundles: 10 linked wallet cluster(s) hold 23.9% of supply (>20%) (V17)  
@@ -91,12 +97,6 @@ Updated 2026-11-01T21:59:01Z (paper trading, never real money)
   CA `8Wi25nQhEay9KwAsoguEs3y1uxaJmCRQxRYnSY9dpump`
 - 21:45Z ANAKINCORE (MIGRATED, $349,322 mcap, $173,325 5m vol): PASS at conviction 2, PASS: 8 minutes old, 6.5% off the high after a +20% candle at 6.7x pace. Blockers: too new and chasing spike (V1).  
   CA `EZZ4WS7XXKgWP2btL2iTjHz4of9PT16tCDMd1LTCpump`
-- 21:43Z uni (MIGRATED, $132,446 mcap, $20,022 5m vol): REJECT, RugCheck report unavailable: can't verify mint/freeze/holders, skip  
-  CA `6pGyajBJsvKWLvgDZPNebH5uZcHXc7hVQAJ3y1uuVXNd`
-- 21:42Z MOVEMBER (DIP, $41,506 mcap, $11,204 5m vol): PASS at conviction 3, PASS: chasing spike. Up 73% in the last 5m on a $41k coin that bonded, peaked at $80k and fell back under $70k, with top 10 at 24.4%, one point under the hard line, and 2 bigger tokens on the same ticker (V1, V6, V13).  
-  CA `DTVcrMAEMwpSSBvu6W7P3BLZsRhFZb6bSzARFDqobfCT`
-- 21:38Z ARNOLD (MIGRATED, $81,019 mcap, $2,884 5m vol): PASS at conviction 3, PASS: $2.9k on the 5m at 0.74x the hourly pace, with buys and sells split 49/49. Flow below pace. Nobody's arriving (V1, V6).  
-  CA `nG3jfPQHU2ZQhPERkTZD8YPSAsrrWiePPDcm9jxpump`
 
 ## What its skips did next (last 48h)
 A skip "ran" if the coin reached the first target (1.5x) from the skip price before a 20% drop, "dumped" if the drop came first. Sampled every 10 min, followed 6h.
@@ -107,12 +107,12 @@ A skip "ran" if the coin reached the first target (1.5x) from the skip price bef
     CA `3mUcXkpVVkQ5ZJMctz2f1VBk4rwu3NRfNwVQZtDzpump`
   - ran: NATIONS up to 1.54x  
     CA `5ahor7yZ9EdXLzfS43aEPsfBsLtgocsi5sGc2Rsa58PG`
-- too new / sniping: blocked 48, ran 2, dumped 45, flat 0, open 1 (saving losses: keep it)
+- too new / sniping: blocked 49, ran 2, dumped 45, flat 0, open 2 (saving losses: keep it)
   - ran: onlypump up to 1.92x  
     CA `J73efZvH6rkrJbFJdP2rqe473YJW7tyWmrNARUSzpump`
   - ran: paws up to 1.51x  
     CA `CCF6ui6YjjhLaVtuYLH8b5jza8jHathqww5VbrMapump`
-- top 10 over 25%: blocked 39, ran 7, dumped 26, flat 3, open 3 (saving losses: keep it)
+- top 10 over 25%: blocked 40, ran 7, dumped 27, flat 3, open 3 (saving losses: keep it)
   - ran: George up to 1.88x  
     CA `4poKLzPuwjKJgXM6eF3EqBbMzWgkapi96vbNSkZipump`
   - ran: Beaver up to 2.56x  
@@ -133,7 +133,7 @@ A skip "ran" if the coin reached the first target (1.5x) from the skip price bef
     CA `DUTxGHL2LmpfjQaoK6LdZp8WQPoDiwvtDHVDf4fMpump`
   - ran: whitepaper up to 2.16x  
     CA `4tEvXHpd6JrCWJGByBS3qFBAtJbeoiEpgvWLw9hkpump`
-- RugCheck danger: blocked 21, ran 4, dumped 17, flat 0, open 0 (saving losses: keep it)
+- RugCheck danger: blocked 20, ran 4, dumped 16, flat 0, open 0 (saving losses: keep it)
   - ran: SUGAR up to 1.74x  
     CA `HLzTFsX99uqzAP7uK36gJ2pPHGfRM8ugvxXWJzjSpump`
   - ran: AIC up to 1.6x  
@@ -150,7 +150,7 @@ A skip "ran" if the coin reached the first target (1.5x) from the skip price bef
     CA `3mUcXkpVVkQ5ZJMctz2f1VBk4rwu3NRfNwVQZtDzpump`
   - ran: Apple up to 1.58x  
     CA `6nJVg7wV1UBaWBpHuP7pEHLBd26U4cj6vXnGShobpump`
-- dev share over 1%: blocked 10, ran 3, dumped 5, flat 0, open 2 (mixed)
+- dev share over 1%: blocked 10, ran 3, dumped 5, flat 1, open 1 (mixed)
   - ran: IGLU up to 1.54x  
     CA `34YQhrgkWoeFnm6LrcnmV3PLyDaMSNZikzUjyMmupump`
   - ran: MINTED up to 1.61x  
@@ -193,7 +193,7 @@ Meta: "uni" is the hot theme (uni at $77M market cap, 0.2h old, $432k 5m; vamp B
   CA `6pGyajBJsvKWLvgDZPNebH5uZcHXc7hVQAJ3y1uuVXNd`
 - ANAKINCORE: $308,561 1h vol, $349,322 mcap, +637% 1h  
   CA `EZZ4WS7XXKgWP2btL2iTjHz4of9PT16tCDMd1LTCpump`
-- BABYKIN: $211,686 1h vol, $2,140 mcap, -98% 1h  
-  CA `8BxKRVNTRzM7LTJ9Q6rqKQFwXtMjZjjSNYNDyjLSpump`
-- AAPLCAT: $176,353 1h vol, $2,486 mcap, -99% 1h  
-  CA `GYKnd6jGUSQoBUnj6LdGCBtCWYDgr2Zd6QwNPcy5pump`
+- GATO: $173,576 1h vol, $8,094,197 mcap, +7% 1h  
+  CA `HsprHxBRgiVaQdRf3TnKNuZZtaX9JUSPgMFdAkk6pump`
+- VETOTRUMP: $168,893 1h vol, $132,946 mcap, +228% 1h  
+  CA `6g16UK4wHoFhC7PCmw8LYYCdt9q8m99fyoAwxeCrpump`
