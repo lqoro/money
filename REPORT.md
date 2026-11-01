@@ -1,13 +1,13 @@
 # Trencher live report
 
-Updated 2026-11-01T08:35:55Z (paper trading, never real money)
+Updated 2026-11-01T08:51:11Z (paper trading, never real money)
 
 - Equity: $80.53 (-19.5% vs $100 start)
-- Goal: $1,000 by 2026-11-05 05:03Z (pressing for it): at 8.1% of it, 3.9 days left, needs +92.3% a day from here
+- Goal: $1,000 by 2026-11-05 05:03Z (pressing for it): at 8.1% of it, 3.8 days left, needs +92.7% a day from here
 - Closed trades: 19, 3 wins
 - Fees paid: $12.66 (axiom $2.26, network $8.06, pool $2.21), plus $3.34 lost to slippage
 - New trades: on
-- Brain: subscription, 647 calls and 1 plan-limit hits in 48h
+- Brain: subscription, 648 calls and 1 plan-limit hits in 48h
 
 ## Scorecard (after fees)
 - 19 closed, 3 won (16%), net $-19.48
@@ -74,9 +74,21 @@ Updated 2026-11-01T08:35:55Z (paper trading, never real money)
   CA `GYKnd6jGUSQoBUnj6LdGCBtCWYDgr2Zd6QwNPcy5pump`
 
 ## Last scan
-- 08:35Z: 7 coins, 7 with pairs, 2 passed the market filters, 2 researched
+- 08:50Z: 12 coins, 12 with pairs, 1 passed the market filters, 1 researched
 
 ## Coins it looked at, and why it passed
+- 08:50Z Dacity (MIGRATED, $8,129,153 mcap, $2,666 5m vol): REJECT, Bundles: 10 linked wallet cluster(s) hold 22.4% of supply (>20%) (V17)  
+  CA `nxPqZ4F7ux8Vph5NFu25rEP6Kx9Gr1U6Fmj36Rjpump`
+- 08:48Z Jason (DIP, $89,534 mcap, $3,058 5m vol): REJECT, Dev holds 1.3% (>1%) (V13, V17)  
+  CA `3qjBR3LfzEAKVS6QXuR2QZ1RFUsXzATWvmjbGB5Dpump`
+- 08:48Z BTC (DIP, $78,533 mcap, $6,378 5m vol): REJECT, Dip with fading attention is a falling knife, not a dip (5m at 0.19x the hour's pace, under 0.6x)  
+  CA `48Uo5fMMicwgWy4BPN2smoMh4q2zvUR5MaKqZbQRpump`
+- 08:47Z tipr (MIGRATED, $215,547 mcap, $2,793 5m vol): PASS at conviction 3, PASS: flow below pace. tipr is only doing $2.8k on the 5m at 0.7x its hourly pace, sells and buys are even, and the "tip router" product has zero network activity. (V1, V6)  
+  CA `3kRQDKPGqMWwBdGjiVPpPqVzFsnYG5PDqvrVz1D2pump`
+- 08:43Z SIS (DIP, $492,601 mcap, $4,229 5m vol): PASS at conviction 3, PASS: flow below pace. 5m is $4.2k at 0.61x the hourly, under the 0.7x DIP gate, on an AI-name coin whose site still says "CONTRACT TBA" (V1, V6).  
+  CA `FdKdpz11GsTofLaNiddrhxrsE4APZYSSfLFqQ9YKpump`
+- 08:42Z KO (FINAL_STRETCH, $20,094 mcap, $3,719 5m vol): PASS at conviction 2, PASS: the project's own site lists a different CA, 17 coins share the ticker, and it just spiked 31% on $3.7k of flow. Probable vamp, and a chase. (V1, V3)  
+  CA `7Qb5q3Jd5cTfCUYm9ycuRFxiMvHB8hCvSA4CXmKGpump`
 - 08:35Z niketyson (MIGRATED, $148,506 mcap, $10,364 5m vol): PASS at conviction 3, PASS — blocker "chasing": at its high with 0% drawdown and a +48% 5m candle. Original pun, real flow, wrong entry. Wait for the pullback and a higher low (V1).  
   CA `nikemwCaTqBamHqfRVqPzwtWsmuwdXb6To25xJ2znwT`
 - 08:35Z White (FINAL_STRETCH, $22,521 mcap, $13,987 5m vol): REJECT, Top 10 hold 26.2% ex-pool (>25%) (V13)  
@@ -85,43 +97,31 @@ Updated 2026-11-01T08:35:55Z (paper trading, never real money)
   CA `762ZqBCd5m2q3QJ5UPkFL5rqdEUeygNkfTZrpGEZpump`
 - 08:33Z ELONPAD (FINAL_STRETCH, $26,191 mcap, $20,689 5m vol): PASS at conviction 3, PASS — last 5m up 28.6% at 4x the hourly pace, on a 2-hour-old "AI launchpad" site with no GitHub. That's a spike chase on a probable LARP (V1).  
   CA `Cz1H9x9BQfVtVNYkzvhJyptCsJZTVXsaMoWJbs2ipump`
-- 08:18Z BLUE (DIP, $410,287 mcap, $5,344 5m vol): REJECT, Dip with fading attention is a falling knife, not a dip (5m at 0.48x the hour's pace, under 0.6x)  
-  CA `CPoGSmcjprCvzA2MFYLJMpQkGjmgVzKg4RVwMdrzpump`
-- 08:06Z AAPLCAT (DIP, $1,053,119 mcap, $3,923 5m vol): PASS at conviction 3, PASS: flow is below pace. $3.9k on the 5m at 0.76x the hourly average, on a coin that stopped me out hours ago and hasn't reclaimed anything. Same trade, same mistake. (V1, V6)  
-  CA `GYKnd6jGUSQoBUnj6LdGCBtCWYDgr2Zd6QwNPcy5pump`
-- 08:04Z BTC (MIGRATED, $164,208 mcap, $15,284 5m vol): PASS at conviction 3, PASS — 15 minutes old, 2.3% off the high, last 5m +50.7%. Clean holders don't fix a chase. Blocker: chasing (V1).  
-  CA `48Uo5fMMicwgWy4BPN2smoMh4q2zvUR5MaKqZbQRpump`
-- 07:58Z SIS (DIP, $479,960 mcap, $10,633 5m vol): PASS at conviction 4, PASS — stopped out of SIS at $588k and it's back at $480k with no reclaim; the rebrand catalyst already printed and the first resistance sits at initials. Blocker: re-entry without reclaim (V1, V5).  
-  CA `FdKdpz11GsTofLaNiddrhxrsE4APZYSSfLFqQ9YKpump`
-- 07:57Z 150MS (MIGRATED, $153,871 mcap, $40,322 5m vol): PASS at conviction 3, PASS — 11 minutes old, 3.6% off the high, +29.5% last candle. That's chasing a spike with no base. Wait for the pullback and a higher low (V1, V6).  
-  CA `71BRzdkExamfxDZnvHtGnvYuTAjVBzRiHCcNLTZEpump`
-- 07:57Z PUMPFUN (FINAL_STRETCH, $34,752 mcap, $59,245 5m vol): PASS at conviction 3, PASS: chasing. It's up 37% in the last 5m on 5.5x the hourly pace, 88.8% of the way to bond, so it's set up for the pre-bond dump. It's riding Shaw's name, and I couldn't verify that link. (V1, V6)  
-  CA `FkRUMUutcSp6rgu7fWmXf6fMzjHuyqrDtWDEvYYJpump`
 
 ## What its skips did next (last 48h)
 A skip "ran" if the coin reached the first target (1.5x) from the skip price before a 20% drop, "dumped" if the drop came first. Sampled every 10 min, followed 6h.
-- too new / sniping: blocked 55, ran 5, dumped 50, flat 0, open 0 (saving losses: keep it)
-  - ran: DUOTIDE up to 1.71x  
-    CA `AtKvRVDF738YA925jmxNeh4iV2qCVBBJeMxQNyrupump`
-  - ran: Jesus up to 1.96x  
-    CA `6PNq3Dduz73HHFBFt1KYRqDEsgcPQE6BDDRgxAFupump`
-  - ran: SPACECAT up to 1.56x  
-    CA `61h4rUn7C21QNv1NJADc2oAxpAhr7f2WGqbXRDEupump`
-- near the high / chasing: blocked 54, ran 8, dumped 33, flat 6, open 7 (saving losses: keep it)
+- near the high / chasing: blocked 55, ran 8, dumped 34, flat 6, open 7 (saving losses: keep it)
   - ran: DESSA up to 1.52x  
     CA `npz2FhoufQ7pKqhGpaipYWacrAkidyW2yDpVWSvpump`
   - ran: FLYWHEEL up to 2.23x  
     CA `BWMf44rD724R2bdgHWd88CDTVEjuPNQauw8s6S7ipump`
   - ran: iCoin up to 1.68x  
     CA `HgxEGTZ1Epb64RrYqcuHkqb1gGWWnF5WcPTCDWzApump`
-- top 10 over 25%: blocked 46, ran 5, dumped 34, flat 4, open 3 (saving losses: keep it)
+- too new / sniping: blocked 53, ran 4, dumped 49, flat 0, open 0 (saving losses: keep it)
+  - ran: Jesus up to 1.96x  
+    CA `6PNq3Dduz73HHFBFt1KYRqDEsgcPQE6BDDRgxAFupump`
+  - ran: SPACECAT up to 1.56x  
+    CA `61h4rUn7C21QNv1NJADc2oAxpAhr7f2WGqbXRDEupump`
+  - ran: xpad up to 2.54x  
+    CA `EV116Y5Y6cYvcugmXwLVZPhbZus1NxV5WbArJxtUxxxx`
+- top 10 over 25%: blocked 46, ran 5, dumped 35, flat 4, open 2 (saving losses: keep it)
   - ran: HYDESK up to 1.78x  
     CA `BzndCZ2ZrjUA21aVW7t6AWEENRAps3EmdQg9hf94pump`
   - ran: Goyim up to 2.88x  
     CA `7aeDqEi2PfoYpJfw2eawzLnRH9NjQJ6jWMZ9FH1Hpump`
   - ran: George up to 1.88x  
     CA `4poKLzPuwjKJgXM6eF3EqBbMzWgkapi96vbNSkZipump`
-- falling knife (code): blocked 29, ran 3, dumped 22, flat 0, open 4 (saving losses: keep it)
+- falling knife (code): blocked 30, ran 3, dumped 22, flat 0, open 5 (saving losses: keep it)
   - ran: TYGR up to 1.58x  
     CA `5wCqCq6jbppuTocMeq6zd4UywAm64L1QNNxvEDAHpump`
   - ran: LUMI up to 1.76x  
@@ -135,7 +135,7 @@ A skip "ran" if the coin reached the first target (1.5x) from the skip price bef
     CA `DUTxGHL2LmpfjQaoK6LdZp8WQPoDiwvtDHVDf4fMpump`
   - ran: whitepaper up to 2.16x  
     CA `4tEvXHpd6JrCWJGByBS3qFBAtJbeoiEpgvWLw9hkpump`
-- RugCheck danger: blocked 22, ran 3, dumped 19, flat 0, open 0 (saving losses: keep it)
+- RugCheck danger: blocked 21, ran 3, dumped 18, flat 0, open 0 (saving losses: keep it)
   - ran: CRIME up to 1.9x  
     CA `BN4Z5NtntHhu6p3atEqkeAVi8Bn9Ri2QTv8FD7iupump`
   - ran: PROBE up to 1.53x  
@@ -154,10 +154,10 @@ A skip "ran" if the coin reached the first target (1.5x) from the skip price bef
     CA `3mUcXkpVVkQ5ZJMctz2f1VBk4rwu3NRfNwVQZtDzpump`
   - ran: Apple up to 1.58x  
     CA `6nJVg7wV1UBaWBpHuP7pEHLBd26U4cj6vXnGShobpump`
-- hack story (owner rule): blocked 11, ran 1, dumped 4, flat 5, open 1 (saving losses: keep it)
+- hack story (owner rule): blocked 11, ran 1, dumped 4, flat 6, open 0 (saving losses: keep it)
   - ran: ACT:H up to 1.53x  
     CA `3B3SJFo8kvVoMvvkzrUCPdpDeSeCL773AJ3kNLWJpump`
-- dev share over 1%: blocked 9, ran 1, dumped 6, flat 1, open 1 (saving losses: keep it)
+- dev share over 1%: blocked 9, ran 1, dumped 5, flat 1, open 2 (saving losses: keep it)
   - ran: IGLU up to 1.54x  
     CA `34YQhrgkWoeFnm6LrcnmV3PLyDaMSNZikzUjyMmupump`
 
@@ -187,13 +187,13 @@ A skip "ran" if the coin reached the first target (1.5x) from the skip price bef
 The meta right now is minutes-old pump.fun launches with crude or pun names, and they're pulling almost all the flow. 150ms ($154k cap, $40k on the 5m, 12 minutes old), Big Titty Crime ($164k, $15k on the 5m) and Nike Tyson ($75k, $13.6k on the 5m) have all migrated, and PUMPFUN.HOW, Purple Coin and SEI are ripping on the curve. The trap is the same as always: Yumecoin, glorp and Grok Tyson did $40k–$80k in the hour and now print $0–$20 on the 5m, so snipe-and-dump is still the main way these die (V1, V13). Celebrity puns are mixed. Nike Tyson is the original and still trading, while Grok Tyson, its vamp, is already dead (V1). Colors are a small rising theme (Purple Coin; F7931A is Bitcoin orange but fading). The cats (PAWCAT, Apple Cat) are slow background noise and not leading. Political stuff like the Hunter Biden LAPTOP headlines stays off the list (V13). The setups I'd research are 150ms and Big Titty Crime as MIGRATED probes, since they're well past $70k with $10k+ on the 5m, and Nike Tyson only if it holds above 0.7x its hourly pace (it's at about 0.67x now). Super Intelligence Satellite ($480k, $10.6k on the 5m) is a MIGRATED look, but it's an AI name, so I need GitHub proof or it's a LARP (V1). PUMPFUN.HOW "by Shaw" is a FINAL_STRETCH candidate with $59k on the 5m, but the "by Shaw" credit is unverified and could be someone faking a name, so it's a probe at most. All of these are minutes old, so stop at 20% and cut fast if the flow stalls (V5, V6).
 
 ## Moving most in its scans, last 30 min (1h volume)
-- BLUE: $132,404 1h vol, $410,287 mcap, +9% 1h  
-  CA `CPoGSmcjprCvzA2MFYLJMpQkGjmgVzKg4RVwMdrzpump`
-- DESSA: $128,253 1h vol, $25,534,152 mcap, -12% 1h  
+- BTC: $393,621 1h vol, $78,533 mcap, -22% 1h  
+  CA `48Uo5fMMicwgWy4BPN2smoMh4q2zvUR5MaKqZbQRpump`
+- 150MS: $321,534 1h vol, $1,911 mcap, -95% 1h  
+  CA `71BRzdkExamfxDZnvHtGnvYuTAjVBzRiHCcNLTZEpump`
+- PUMPFUN: $187,674 1h vol, $18,262 mcap, +33% 1h  
+  CA `FkRUMUutcSp6rgu7fWmXf6fMzjHuyqrDtWDEvYYJpump`
+- DESSA: $128,652 1h vol, $25,121,541 mcap, -16% 1h  
   CA `npz2FhoufQ7pKqhGpaipYWacrAkidyW2yDpVWSvpump`
 - niketyson: $110,623 1h vol, $148,506 mcap, +17% 1h  
   CA `nikemwCaTqBamHqfRVqPzwtWsmuwdXb6To25xJ2znwT`
-- Purple: $102,087 1h vol, $3,826 mcap, +18% 1h  
-  CA `FPujsiHMbvh4mGnC1oW83ii16JR1kmUaF6a5A9Fqpump`
-- SEI: $78,610 1h vol, $10,138 mcap, +196% 1h  
-  CA `4UK1TNpMDkijYzs2EycrbRN5nBcBSB2FbzWBTcNRpump`
