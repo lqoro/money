@@ -1,9 +1,9 @@
 # Trencher live report
 
-Updated 2026-11-01T09:51:59Z (paper trading, never real money)
+Updated 2026-11-01T10:07:11Z (paper trading, never real money)
 
 - Equity: $80.53 (-19.5% vs $100 start)
-- Goal: $1,000 by 2026-11-05 05:03Z (pressing for it): at 8.1% of it, 3.8 days left, needs +94.1% a day from here
+- Goal: $1,000 by 2026-11-05 05:03Z (pressing for it): at 8.1% of it, 3.8 days left, needs +94.4% a day from here
 - Closed trades: 19, 3 wins
 - Fees paid: $12.66 (axiom $2.26, network $8.06, pool $2.21), plus $3.34 lost to slippage
 - New trades: on
@@ -74,9 +74,13 @@ Updated 2026-11-01T09:51:59Z (paper trading, never real money)
   CA `GYKnd6jGUSQoBUnj6LdGCBtCWYDgr2Zd6QwNPcy5pump`
 
 ## Last scan
-- 09:51Z: 3 coins, 3 with pairs, 0 passed the market filters, 0 researched
+- 10:06Z: 4 coins, 4 with pairs, 0 passed the market filters, 0 researched
 
 ## Coins it looked at, and why it passed
+- 10:05Z 牦牛 (FINAL_STRETCH, $23,276 mcap, $9,752 5m vol): PASS at conviction 3, PASS: up 43% in the last 5m, 5m volume at 4.3x the hourly pace, 11 minutes old and 3% off its high. That's chasing a spike on the curve, and a bigger coin already holds this ticker. (V1)  
+  CA `6jUAqc62fsc1uA671K2WCEiScZmvm78o3rRsUModpump`
+- 10:04Z PAWCAT (DIP, $3,388,735 mcap, $12,988 5m vol): PASS at conviction 4, PASS: the first resistance is PAWCAT's own $4.05M high, about 1.2x away, and I'm buying straight after a +26% 15m candle. Target below initials. Same coin, same mistake as yesterday (V1, V6).  
+  CA `762ZqBCd5m2q3QJ5UPkFL5rqdEUeygNkfTZrpGEZpump`
 - 09:48Z BLUE (DIP, $413,675 mcap, $3,623 5m vol): REJECT, Dip with fading attention is a falling knife, not a dip (5m at 0.55x the hour's pace, under 0.6x)  
   CA `CPoGSmcjprCvzA2MFYLJMpQkGjmgVzKg4RVwMdrzpump`
 - 09:46Z Dacity (MIGRATED, $8,036,126 mcap, $2,044 5m vol): REJECT, Bundles: 10 linked wallet cluster(s) hold 22.4% of supply (>20%) (V17)  
@@ -93,21 +97,17 @@ Updated 2026-11-01T09:51:59Z (paper trading, never real money)
   CA `GS6DbJJeNzWJ4SHBrMxh9tGCQJjtACjeyk1E6Qrgpump`
 - 09:32Z tipr (DIP, $197,003 mcap, $5,854 5m vol): PASS at conviction 3, PASS: tipr is a "launch coins that tip creators" tech coin whose own site shows 0 launches, 0 routes and no GitHub. That's a thin tech dip with no product behind it, so the blocker is "dead story" (V1).  
   CA `3kRQDKPGqMWwBdGjiVPpPqVzFsnYG5PDqvrVz1D2pump`
-- 09:29Z SIS (MIGRATED, $355,542 mcap, $7,916 5m vol): PASS at conviction 2, PASS: SIS is 72.6% off its peak and its 5m volume is 0.49x the hourly pace, so the crowd is leaving and there's no higher low. Falling knife. (V1, V6)  
-  CA `FdKdpz11GsTofLaNiddrhxrsE4APZYSSfLFqQ9YKpump`
-- 09:21Z niketyson (MIGRATED, $155,273 mcap, $4,728 5m vol): PASS at conviction 3, PASS — at its high (0% drawdown) with 5m at 0.53x pace. Blockers: chasing, and flow below pace (V1, V6).  
-  CA `nikemwCaTqBamHqfRVqPzwtWsmuwdXb6To25xJ2znwT`
 
 ## What its skips did next (last 48h)
 A skip "ran" if the coin reached the first target (1.5x) from the skip price before a 20% drop, "dumped" if the drop came first. Sampled every 10 min, followed 6h.
-- near the high / chasing: blocked 57, ran 8, dumped 36, flat 9, open 4 (saving losses: keep it)
+- near the high / chasing: blocked 57, ran 8, dumped 37, flat 9, open 3 (saving losses: keep it)
   - ran: DESSA up to 1.52x  
     CA `npz2FhoufQ7pKqhGpaipYWacrAkidyW2yDpVWSvpump`
   - ran: FLYWHEEL up to 2.23x  
     CA `BWMf44rD724R2bdgHWd88CDTVEjuPNQauw8s6S7ipump`
   - ran: iCoin up to 1.68x  
     CA `HgxEGTZ1Epb64RrYqcuHkqb1gGWWnF5WcPTCDWzApump`
-- too new / sniping: blocked 55, ran 5, dumped 49, flat 0, open 1 (saving losses: keep it)
+- too new / sniping: blocked 56, ran 6, dumped 49, flat 0, open 1 (saving losses: keep it)
   - ran: Jesus up to 1.96x  
     CA `6PNq3Dduz73HHFBFt1KYRqDEsgcPQE6BDDRgxAFupump`
   - ran: SPACECAT up to 1.56x  
@@ -121,7 +121,7 @@ A skip "ran" if the coin reached the first target (1.5x) from the skip price bef
     CA `7aeDqEi2PfoYpJfw2eawzLnRH9NjQJ6jWMZ9FH1Hpump`
   - ran: George up to 1.88x  
     CA `4poKLzPuwjKJgXM6eF3EqBbMzWgkapi96vbNSkZipump`
-- falling knife (code): blocked 30, ran 3, dumped 23, flat 1, open 3 (saving losses: keep it)
+- falling knife (code): blocked 30, ran 3, dumped 24, flat 1, open 2 (saving losses: keep it)
   - ran: TYGR up to 1.58x  
     CA `5wCqCq6jbppuTocMeq6zd4UywAm64L1QNNxvEDAHpump`
   - ran: LUMI up to 1.76x  
@@ -147,7 +147,7 @@ A skip "ran" if the coin reached the first target (1.5x) from the skip price bef
     CA `DR3Jtxwzkw9uBpi6Bz7qJX7zuFSJkNKXthD8nB1mpump`
   - ran: SUGAR up to 1.74x  
     CA `HLzTFsX99uqzAP7uK36gJ2pPHGfRM8ugvxXWJzjSpump`
-- crowd leaving / fading volume: blocked 16, ran 3, dumped 8, flat 2, open 3 (saving losses: keep it)
+- crowd leaving / fading volume: blocked 16, ran 3, dumped 9, flat 2, open 2 (saving losses: keep it)
   - ran: HYDESK up to 1.78x  
     CA `BzndCZ2ZrjUA21aVW7t6AWEENRAps3EmdQg9hf94pump`
   - ran: AXIO up to 1.51x  
@@ -187,13 +187,13 @@ A skip "ran" if the coin reached the first target (1.5x) from the skip price bef
 The meta is fresh pump.fun launches, under 2 hours old, with crude or pun names, plus a small color theme (BLUE COIN, Black Coin, Purple Coin). Both are dying in real time. My crawler's summary is already out of date: 150ms is down 98% to $1.9k, and SEI, Purple, Black Coin, NIGUIN and COIN all moved $28k–$45k in the hour and now print $0–$76 on the 5m. That's snipe-and-dump on repeat (V1, V13). Big Titty Crime ($78k, ticker squatting on BTC) has its 5m at about 0.19x its hourly pace with a 0.49 buy ratio, so the crowd has already left. PUMPFUN.HOW "by Shaw" is down 33% at $19k on the curve, at 0.35x pace, and the Shaw credit is unverified, so it's a pass. The only theme actually holding is the slower, older migrated coins. Apple Cat ($1.04M, 14h old) is the only mover whose 5m ($5.4k) beats its hourly pace (1.12x), with a 0.6 buy ratio. tipr ($215k, +11% in the hour, exactly 0.70x pace) and BLUE COIN ($355k, 0.62x) come next. Setups I'd research now: Apple Cat as a MIGRATED/DIP probe and tipr as a DIP probe at the 0.7x gate. Super Intelligence Satellite ($493k, 0.61x) only with real GitHub work behind it, or it's a LARP (V1). Every one of them is under the $10k 5m bar (V6), so my owner's push to press gets probes at most here, not 8s. LAPTOP is political, so no (V13).
 
 ## Moving most in its scans, last 30 min (1h volume)
-- SIS: $192,692 1h vol, $355,542 mcap, -21% 1h  
-  CA `FdKdpz11GsTofLaNiddrhxrsE4APZYSSfLFqQ9YKpump`
+- paws: $519,840 1h vol, $1,829 mcap, -95% 1h  
+  CA `CCF6ui6YjjhLaVtuYLH8b5jza8jHathqww5VbrMapump`
 - BLACKED: $88,331 1h vol, $31,117 mcap, +422% 1h  
   CA `GuvRLfGP4CMJfF9VyHv85vih9yqxhNB5R8zgRcD9pump`
-- ANSEM: $83,412 1h vol, $34,261 mcap, +898% 1h  
-  CA `GS6DbJJeNzWJ4SHBrMxh9tGCQJjtACjeyk1E6Qrgpump`
 - BLUE: $79,235 1h vol, $413,675 mcap, +10% 1h  
   CA `CPoGSmcjprCvzA2MFYLJMpQkGjmgVzKg4RVwMdrzpump`
+- PAWCAT: $73,382 1h vol, $3,388,735 mcap, +12% 1h  
+  CA `762ZqBCd5m2q3QJ5UPkFL5rqdEUeygNkfTZrpGEZpump`
 - AAPLCAT: $69,331 1h vol, $1,002,892 mcap, -3% 1h  
   CA `GYKnd6jGUSQoBUnj6LdGCBtCWYDgr2Zd6QwNPcy5pump`
