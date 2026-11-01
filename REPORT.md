@@ -1,19 +1,19 @@
 # Trencher live report
 
-Updated 2026-11-01T03:17:55Z (paper trading, never real money)
+Updated 2026-11-01T03:33:07Z (paper trading, never real money)
 
-- Equity: $89.95 (-10.0% vs $100 start)
-- Goal: $1,000 by 2026-11-05 05:03Z (pressing for it): at 9% of it, 4.1 days left, needs +80.6% a day from here
-- Closed trades: 16, 3 wins
-- Fees paid: $10.41 (axiom $1.73, network $6.91, pool $1.64), plus $2.56 lost to slippage
+- Equity: $86.97 (-13.0% vs $100 start)
+- Goal: $1,000 by 2026-11-05 05:03Z (pressing for it): at 8.7% of it, 4.1 days left, needs +82.4% a day from here
+- Closed trades: 17, 3 wins
+- Fees paid: $11.16 (axiom $1.90, network $7.29, pool $1.83), plus $2.81 lost to slippage
 - New trades: on
-- Brain: subscription, 631 calls and 1 plan-limit hits in 48h
+- Brain: subscription, 635 calls and 1 plan-limit hits in 48h
 
 ## Scorecard (after fees)
-- 16 closed, 3 won (19%), net $-10.05
-- Per trade (expectancy) $-0.63; avg win $+1.43, avg loss $-1.10
-- Gross $+2.81; costs $12.86 (fees $10.29 + slippage $2.57), 458% of it
-- Give-back: peaked 1.49x on average, banked 0.91x
+- 17 closed, 3 won (18%), net $-13.03
+- Per trade (expectancy) $-0.77; avg win $+1.43, avg loss $-1.24
+- Gross $+0.84; costs $13.87 (fees $11.04 + slippage $2.83), 1651% of it
+- Give-back: peaked 1.46x on average, banked 0.89x
 - Hit 1.5x+ and still closed red: 2
   - CPU peaked 1.63x, $-0.43  
     CA `5JbRYEz844bwnKbGx4dRHhrJ6zjrJ194CKdDXtzwgaXo`
@@ -21,21 +21,15 @@ Updated 2026-11-01T03:17:55Z (paper trading, never real money)
     CA `Bv1a7cEj5aRnJQhMw4kRQqAFesMSd5LwcDnUzq52BMmr`
 - By exit:
   - time stop: 8, 1 won, net $-4.79, fees+slip $6.40, peak 1.25x → 0.87x
-  - stop loss: 5, 0 won, net $-9.44, fees+slip $3.75, peak 1.14x → 0.62x
+  - stop loss: 6, 0 won, net $-12.42, fees+slip $4.76, peak 1.12x → 0.63x
   - trailing stop: 2, 2 won, net $+4.21, fees+slip $2.04, peak 3.32x → 1.72x
   - other: 1, 0 won, net $-0.03, fees+slip $0.67, peak 1.4x → 0.99x
-- To $1,000: $910.05 to go; at $-0.63 a trade this pace doesn't get there
+- To $1,000: $913.03 to go; at $-0.77 a trade this pace doesn't get there
 
 ## Open positions
 - none
 
 ## Recent trades
-- 21:19Z BUY PILLSEY $11.53, fees $0.43  
-  CA `J5jxG3PFaWpj6BLEQExyC6FSqSvaTKNdQ9G3sZwBpump`
-- 21:20Z SELL PILLSEY for $3.98, fees $0.28  
-  CA `J5jxG3PFaWpj6BLEQExyC6FSqSvaTKNdQ9G3sZwBpump`
-- 21:37Z SELL PILLSEY for $3.96, fees $0.28  
-  CA `J5jxG3PFaWpj6BLEQExyC6FSqSvaTKNdQ9G3sZwBpump`
 - 21:37Z CLOSE PILLSEY -31% ($-3.59), fees $0.99  
   CA `J5jxG3PFaWpj6BLEQExyC6FSqSvaTKNdQ9G3sZwBpump`
 - 18:05Z BUY Leverhedge $10.00, fees $0.39  
@@ -50,10 +44,14 @@ Updated 2026-11-01T03:17:55Z (paper trading, never real money)
   CA `762ZqBCd5m2q3QJ5UPkFL5rqdEUeygNkfTZrpGEZpump`
 - 22:25Z CLOSE PAWCAT +1% ($+0.07), fees $0.80  
   CA `762ZqBCd5m2q3QJ5UPkFL5rqdEUeygNkfTZrpGEZpump`
+- 03:19Z BUY BLUE $10.00, fees $0.40  
+  CA `CPoGSmcjprCvzA2MFYLJMpQkGjmgVzKg4RVwMdrzpump`
+- 03:30Z SELL BLUE for $7.02, fees $0.35  
+  CA `CPoGSmcjprCvzA2MFYLJMpQkGjmgVzKg4RVwMdrzpump`
+- 03:30Z CLOSE BLUE -30% ($-2.98), fees $0.75  
+  CA `CPoGSmcjprCvzA2MFYLJMpQkGjmgVzKg4RVwMdrzpump`
 
 ## Last closes
-- FLOAT: -24% ($-0.76), time stop: 158 min and only 0.92x  
-  CA `Bv1a7cEj5aRnJQhMw4kRQqAFesMSd5LwcDnUzq52BMmr`
 - SI: -38% ($-1.54), stop loss -20% hit (0.75x)  
   CA `6zuDiAw3NviBwcLZfTztHJgtCmeNWfyFxYVoXtNYpump`
 - HEXN: -36% ($-1.46), stop loss -20% hit (0.76x)  
@@ -72,11 +70,23 @@ Updated 2026-11-01T03:17:55Z (paper trading, never real money)
   CA `FWatMYieKhRuJ1yuTcmVG1njRhZWwqHwjR11pBympump`
 - PAWCAT: +1% ($+0.07), time stop: 45 min and only 1.10x  
   CA `762ZqBCd5m2q3QJ5UPkFL5rqdEUeygNkfTZrpGEZpump`
+- BLUE: -30% ($-2.98), stop loss -20% hit (0.78x)  
+  CA `CPoGSmcjprCvzA2MFYLJMpQkGjmgVzKg4RVwMdrzpump`
 
 ## Last scan
-- 03:17Z: 1 coins, 1 with pairs, 0 passed the market filters, 0 researched
+- 03:32Z: 4 coins, 4 with pairs, 1 passed the market filters, 1 researched
 
 ## Coins it looked at, and why it passed
+- 03:32Z CLARITY (MIGRATED, $38,916 mcap, $15,974 5m vol): PASS at conviction 3, PASS: 3 minutes old, 8.8% off the high, and three bigger coins share the ticker. That's sniping a vamp, not buying a pullback. Blocker: too new / chasing (V1, V5).  
+  CA `Cy3tMYihpgaNX6Nc39hC81KFWC9thTSFSrHoUpUfpump`
+- 03:22Z BLOB (MIGRATED, $1,114,664 mcap, $8,748 5m vol): PASS at conviction 3, PASS: flow below pace. BLOB is 11.6% off the high with $8.7k on the 5m, only 0.41x its hourly pace. That's a shallow-band breakout setup with no volume behind the breakout (V1, V6).  
+  CA `8s11PkgQt4ZzdZ7oo84hK5t9HG1EvdgAjcg4W7Lpump`
+- 03:21Z BALLS (DIP, $50,776 mcap, $17,574 5m vol): PASS at conviction 3, PASS: chasing. The last 5m candle is up 49% on a 39-minute-old coin that bonded and is now at $50k, under the $70k line. Three bigger BALLS tickers already exist, so this one is probably a vamp. (V1, V6)  
+  CA `HhBuvegE7Ew2stS5svkMcxL8povkaL8brwt9JUtfpump`
+- 03:20Z AAPLCAT (MIGRATED, $1,249,820 mcap, $8,300 5m vol): PASS at conviction 4, PASS — shallow-band breakout with flow below pace ($8.3k, 0.69x hourly) and first resistance only 1.26x away. Blocker: flow below pace / target below initials. (V1, V6)  
+  CA `GYKnd6jGUSQoBUnj6LdGCBtCWYDgr2Zd6QwNPcy5pump`
+- 03:19Z BLUE (MIGRATED, $507,907 mcap, $41,531 5m vol): BUY at conviction 5, BUY, conviction 5 (probe): 36.6% pullback holding a base on the 0.618, $41k 5m, ticker leader, but a 6.75% bundle and 0.41x pace keep it small (V1, V3, V6).  
+  CA `CPoGSmcjprCvzA2MFYLJMpQkGjmgVzKg4RVwMdrzpump`
 - 03:16Z NNN (DIP, $124,043 mcap, $21,679 5m vol): REJECT, Dip with fading attention is a falling knife, not a dip (5m at 0.59x the hour's pace, under 0.6x)  
   CA `4RGFCEspCXydaXwH4siYcyeNduY2MABG1nWsTUAjpump`
 - 03:14Z PAWCAT (MIGRATED, $3,418,353 mcap, $7,485 5m vol): PASS at conviction 4, PASS: the first resistance is about $4.2M, only 1.21x from here, and 5m volume is $7.5k, under the $10k bar. I traded this exact idea on PAWCAT already and it scratched flat. Blocker: target below initials (V1, V6).  
@@ -87,27 +97,17 @@ Updated 2026-11-01T03:17:55Z (paper trading, never real money)
   CA `HsprHxBRgiVaQdRf3TnKNuZZtaX9JUSPgMFdAkk6pump`
 - 02:57Z ANTS (MIGRATED, $785,721 mcap, $27,225 5m vol): PASS at conviction 3, PASS: chasing. It's 9.7% off an $870k high after a 273% hour, and 5m volume is 3.3x the hourly pace with sellers outnumbering buyers 337 to 156. That's distribution into a spike, not a pullback (V1, V6).  
   CA `wMHBD2B8KbDagvXUEapginhtJdrH4QSvSezBM8Tpump`
-- 02:55Z SIS (MIGRATED, $646,612 mcap, $6,944 5m vol): PASS at conviction 4, PASS: 5m volume is $6.9k, under the $10k bar, and I'd be buying right after a +25% 15m candle. The site is a 10-hour-old template showing "CA TBA". Blocker: flow below bar (V1, V6).  
-  CA `FdKdpz11GsTofLaNiddrhxrsE4APZYSSfLFqQ9YKpump`
-- 02:54Z ANSEM (DIP, $242,156 mcap, $2,395 5m vol): REJECT, Dip with fading attention is a falling knife, not a dip (5m at 0.35x the hour's pace, under 0.6x)  
-  CA `CvRJ8MrnB1AwjrgX25uyeLJiXNSugTo2ZHh8UXDTpump`
-- 02:53Z GLITCH (MIGRATED, $3,583,001 mcap, $2,078 5m vol): REJECT, Top 10 hold 28.0% ex-pool (>25%) (V13)  
-  CA `8Xg89xT8Ve34sKiYqYuMs46mycREsCA2F362UscRpump`
-- 02:45Z LUMI (MIGRATED, $91,944 mcap, $3,162 5m vol): PASS at conviction 2, PASS: an 89% bleed with one 36% green candle on $3k of 5m volume and more sellers than buyers is a spike off the floor, not a recovery. Blocker: chasing a spike. (V1, V6)  
-  CA `HvitmAeh6TkToQonoiNwqWcrZsYdYiaSZHP7yMmspump`
-- 02:39Z SS (no setup, $39,227 mcap, $0 5m vol): REJECT, Hack story ("stolen" in the name or ticker): these tend to go down, owner rule  
-  CA `DNxivTUF4ycZUzUxK6J3w7u5Fq3pSYvrXCTV5Vwwpump`
 
 ## What its skips did next (last 48h)
 A skip "ran" if the coin reached the first target (1.5x) from the skip price before a 20% drop, "dumped" if the drop came first. Sampled every 10 min, followed 6h.
-- too new / sniping: blocked 55, ran 5, dumped 49, flat 0, open 1 (saving losses: keep it)
+- too new / sniping: blocked 56, ran 5, dumped 49, flat 0, open 2 (saving losses: keep it)
   - ran: DUOTIDE up to 1.71x  
     CA `AtKvRVDF738YA925jmxNeh4iV2qCVBBJeMxQNyrupump`
   - ran: Jesus up to 1.96x  
     CA `6PNq3Dduz73HHFBFt1KYRqDEsgcPQE6BDDRgxAFupump`
   - ran: SPACECAT up to 1.56x  
     CA `61h4rUn7C21QNv1NJADc2oAxpAhr7f2WGqbXRDEupump`
-- near the high / chasing: blocked 54, ran 11, dumped 34, flat 6, open 3 (saving losses: keep it)
+- near the high / chasing: blocked 54, ran 10, dumped 34, flat 6, open 4 (saving losses: keep it)
   - ran: DESSA up to 1.52x  
     CA `npz2FhoufQ7pKqhGpaipYWacrAkidyW2yDpVWSvpump`
   - ran: Catori up to 1.52x  
@@ -121,7 +121,7 @@ A skip "ran" if the coin reached the first target (1.5x) from the skip price bef
     CA `Ddwf94wedgCuMHAkwgti8A7sL2CxvBYJStJBj2cFpump`
   - ran: BEAST up to 2.52x  
     CA `3mh5pgk58HPZwEinnZNUbsJpUoyqYa23zS2n442Zpump`
-- falling knife (code): blocked 27, ran 3, dumped 21, flat 0, open 3 (saving losses: keep it)
+- falling knife (code): blocked 27, ran 3, dumped 22, flat 0, open 2 (saving losses: keep it)
   - ran: TYGR up to 1.58x  
     CA `5wCqCq6jbppuTocMeq6zd4UywAm64L1QNNxvEDAHpump`
   - ran: LUMI up to 1.76x  
@@ -172,7 +172,6 @@ A skip "ran" if the coin reached the first target (1.5x) from the skip price bef
 - 11-01 01:34Z dropped: Any flat fee/friction cap or minimum position size wording (Code owns the fee check (first target must pay 3x the round trip, round trip at most 20% of the position). The retired fee parts of my lessons are not carried into the rules.)
 
 ## Recent lessons
-- [2026-10-29 02:49] I expected FLOAT, the leading tokenized-stock coin, to run from its $1.04M higher-low reclaim toward $3M (V1, V6), and it did reach 1.64x. Then it faded, and I sat past the 45-minute time stop and got out at 158 minutes. Mcap was only down 7%, but I lost 24.5% because $0.56 of fees and slippage ate 18% of a $3.09 position, which broke my own $5-minimum and friction-gate rules. Next time: no entry under $5 or above 5% friction, no exceptions. If a trade gets past 1.5x before initials, move the stop up to break-even plus fees so a 1.6x peak can't turn into a loss (V11: plan the exit before the entry).
 - [2026-10-29 21:37] Expected: SI, a 35-minute-old migrated coin with $65k 5m volume and verified low bundles (0.65%), would retest its $256k peak, since I bought near the high under my bundle-verified exception. What happened: it never went green (0.99x peak), fell 27% from $218k to $160k in 7 minutes and closed −38% after a stop review, so clean bundle data did not protect a near-high momentum entry in a fresh post-migration dump (V1 pre/post-bond dumps, V6). This backs my "MIGRATED entries come on a pullback" rule over the exception, so next time a migrated coin within ~20% of its high waits for the 0.618 or POC retest even with clean bundles; it's one sample, so I'm not banning the exception, just watching whether it keeps losing.
 - [2026-10-29 21:37] Expected: HEXN, down 59.5% from a $1.8M peak with $19.9k of 5m volume and buyers outnumbering sellers 5:1, would turn its bounce off the hourly low into a higher low and retest the $0.0009–0.0012 band. Instead it never went green (0.99x peak) and lost the hourly low within 7 minutes. The exit came at -36% against a -20% stop, with $0.53 in fees and $0.10 in slippage on a $4 position. This confirms my existing DIP rule, not a new ban: my thesis itself said "if the bounce holds and becomes a higher low", so I bought the first bounce before the higher low printed, which is exactly the "no entry on the first red-to-green candle" mistake (V1). Next time on a DIP, wait for a confirmed higher low above the hourly low with 5m volume rising before entering, and set the stop under that higher low, so the gap risk is fixed at the entry, not with a wider stop.
 - [2026-10-30 01:19] Expected: SWAN was a MIGRATED pullback buy, 29% off its high with a higher-low base and $49k on the 5m, and I wanted to retest $166k (about 1.4x) before taking initials at 1.5x (V1, V6). What happened: it peaked at exactly 1.40x, the retest level my own thesis named, then rejected there, and the break-even stop sold it at 1.16x for -0.7%. The pullback-entry rule and the 1.3x break-even rule both did their jobs, since a 1.4x peak didn't turn into a real loss. Rule for next time: when the prior high I'm targeting sits below my initials multiple, sell part of the position at that level (sell initials or half, V11) instead of waiting for 1.5x. That changes the exit, not the pick, so it's a refinement from one trade, not a new ban.
@@ -182,18 +181,19 @@ A skip "ran" if the coin reached the first target (1.5x) from the skip price bef
 - [2026-10-30 21:37] Expected PILLSEY, the flow leader in the pump.fun meta at $125k 5m, to break its $414k high toward 1.5x; it peaked at 1.32x, never reached initials, fell back through the -20% stop inside 18 minutes, and the half-hold on review only made the loss bigger (-31%). It sat about 20% under the high, so it passed my pullback rule, but I bought right after a +31% five-minute candle at 4.2x the hourly pace, which is chasing a spike, not buying a pullback (V1, V6), and it fits my "near-high skips mostly dump" data. Next time a coin that is up more than ~25% in the last 5 minutes counts as "chasing" even if it's 20% off the high: wait for that candle to retrace and a higher low to form. And once a trade has hit ~1.3x, an early-shakeout stop review sells all of it instead of trimming half.
 - [2026-10-31 19:21] Expected: a clean DIP on the proven Leverhedge original (top 10 at 4.6%, a higher low holding, buys 0.73 of the 5m flow) would retest the $1.71M high, with initials at 1.5x (V1 big buys on a dip, V6/V13 clean holders). What happened: it peaked at 1.28x, just under my 1.3x break-even trigger, then faded, and I used the over-$1M extension to hold past 45 min. The time stop sold it at 76 min at 1.06x mcap, which came out -3.2% after fees. This confirms the time-stop rule and refines the extension: "green on mcap" now means at least 1.08x so the ~5.5% round trip is covered, otherwise exit at 45 min. One near-miss at 1.28x isn't enough data to lower the 1.3x break-even trigger.
 - [2026-10-31 22:25] Expected: PAWCAT, the clean cat-meta flow leader 24% off its high, would break the $4.05M high toward ~$5M. What happened: it peaked at 1.11x, never got near the $4.05M break, and the 45-min time stop closed it flat (+$0.07). That fits my shallow-band cap and my "target at least 1.5x" rule: a $3M coin needing a high break plus extension was a slow 1.3–1.6x idea at best. So the rule stays and the stop worked as intended (V1). Next time, on $3M+ migrated coins, rate the trade on how far the first resistance is ($4.05M = 1.32x, under the 1.5x initials target), not on the extension past it, and PASS with blocker "target below initials" unless the break is already happening.
+- [2026-11-01 03:30] Expected: BLUE, the flow leader in a 14-coin same-ticker field, would bounce off its 0.618 base 36.6% below the high. Instead it never went green (peak 0.99x), the stop review fired at 11 minutes, and I closed at −29.8%, worse than the −20% stop. That makes 6 of 6 stop reviews closing worse than the stop. This confirms two of my rules. "Confirm the entry": a fib touch with fading pace is a guess, not a printed higher low (V1, V6). "Stop review defaults to SELL": a probe that never went green should be sold at the stop with no review delay. A noted bundle cluster plus fading pace is a PASS, not a probe, because a 14-copy vamp field splits the crowd even for the leader (V1, V3).
 
 ## Meta right now
 Meta, read from the movers: fresh sub-hour launches are the strongest flow. BLUE is 0.8h old, migrated at $339k, +759% this hour with $57k of 5m volume. IF is 0.4h old on the bonding curve at $40k with $27k of 5m volume. stache is 12 minutes old. Cats are holding but slowing: AAPLCAT is at $1.09M, 5m volume about 0.74x its hourly pace, 76% buys. AI/tech names are moving but being sold: ANTS ("Anthropic") is +273% with only 32% buys, so it's LARP risk without GitHub proof (V1). Political names (TRUMP, LAPTOP) and the Binance-hack story are skipped (V13). Setups to research: BLUE as MIGRATED, only on a pullback of 10%+ off the high and with clean bundle and sniper checks. IF as FINAL_STRETCH, watching for the pre-bond dump (V1). AAPLCAT stays on the watchlist as a DIP because it's only -2.7% on the hour. BLOB is a maybe: 5m volume is about 2x its hourly pace, but buys and sells are split 48/52. The crawler summary's PAWCAT and BNB picks aren't in this scan, so I'm not using them. Clean setups get sized up per the owner's note, but conviction comes from the checklist and the hard lines and 35% risk cap don't move.
 
 ## Moving most in its scans, last 30 min (1h volume)
+- BLUE: $1,216,495 1h vol, $507,907 mcap, +37% 1h  
+  CA `CPoGSmcjprCvzA2MFYLJMpQkGjmgVzKg4RVwMdrzpump`
 - NNN: $440,618 1h vol, $124,043 mcap, +123% 1h  
   CA `4RGFCEspCXydaXwH4siYcyeNduY2MABG1nWsTUAjpump`
-- BALLS: $210,701 1h vol, $27,569 mcap, -30% 1h  
-  CA `HhBuvegE7Ew2stS5svkMcxL8povkaL8brwt9JUtfpump`
-- DESSA: $144,944 1h vol, $21,040,147 mcap, -4% 1h  
+- DESSA: $263,062 1h vol, $24,367,333 mcap, +11% 1h  
   CA `npz2FhoufQ7pKqhGpaipYWacrAkidyW2yDpVWSvpump`
-- ANTS: $100,090 1h vol, $785,721 mcap, +273% 1h  
-  CA `wMHBD2B8KbDagvXUEapginhtJdrH4QSvSezBM8Tpump`
-- PAWCAT: $99,960 1h vol, $3,418,353 mcap, -4% 1h  
-  CA `762ZqBCd5m2q3QJ5UPkFL5rqdEUeygNkfTZrpGEZpump`
+- BLOB: $254,688 1h vol, $1,114,664 mcap, +201% 1h  
+  CA `8s11PkgQt4ZzdZ7oo84hK5t9HG1EvdgAjcg4W7Lpump`
+- BALLS: $243,197 1h vol, $50,776 mcap, +35% 1h  
+  CA `HhBuvegE7Ew2stS5svkMcxL8povkaL8brwt9JUtfpump`
