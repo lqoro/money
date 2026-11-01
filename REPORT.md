@@ -1,13 +1,13 @@
 # Trencher live report
 
-Updated 2026-11-01T01:32:06Z (paper trading, never real money)
+Updated 2026-11-01T01:47:11Z (paper trading, never real money)
 
 - Equity: $89.95 (-10.0% vs $100 start)
-- Goal: $1,000 by 2026-11-05 05:03Z (pressing for it): at 9% of it, 4.1 days left, needs +78.8% a day from here
+- Goal: $1,000 by 2026-11-05 05:03Z (pressing for it): at 9% of it, 4.1 days left, needs +79% a day from here
 - Closed trades: 16, 3 wins
 - Fees paid: $10.41 (axiom $1.73, network $6.91, pool $1.64), plus $2.56 lost to slippage
 - New trades: on
-- Brain: subscription, 630 calls and 1 plan-limit hits in 48h
+- Brain: subscription, 628 calls and 1 plan-limit hits in 48h
 
 ## Scorecard (after fees)
 - 16 closed, 3 won (19%), net $-10.05
@@ -74,9 +74,13 @@ Updated 2026-11-01T01:32:06Z (paper trading, never real money)
   CA `762ZqBCd5m2q3QJ5UPkFL5rqdEUeygNkfTZrpGEZpump`
 
 ## Last scan
-- 01:31Z: 5 coins, 4 with pairs, 0 passed the market filters, 0 researched
+- 01:46Z: 5 coins, 4 with pairs, 0 passed the market filters, 0 researched
 
 ## Coins it looked at, and why it passed
+- 01:43Z PAWCAT (DIP, $3,210,590 mcap, $15,948 5m vol): PASS at conviction 4, PASS: PAWCAT is sitting on its hourly low with closes still falling. No higher low yet, so it's a falling knife. Clean holders don't make it a DIP buy (V1).  
+  CA `762ZqBCd5m2q3QJ5UPkFL5rqdEUeygNkfTZrpGEZpump`
+- 01:37Z BNB (MIGRATED, $542,139 mcap, $26,339 5m vol): PASS at conviction 2, PASS: Binance-hack parody ("hot wallet got cooked", "withdrawals paused"). Hack-story coin, owner rule. Also 73% off the peak and 29h old. Clean holders don't save a story that's built to die.  
+  CA `EYqygbhZjP7EbM4fSn8devctnksAvPAD1Bt57XBFpump`
 - 01:24Z SIS (DIP, $547,816 mcap, $3,761 5m vol): REJECT, Dip with fading attention is a falling knife, not a dip (5m at 0.42x the hour's pace, under 0.6x)  
   CA `FdKdpz11GsTofLaNiddrhxrsE4APZYSSfLFqQ9YKpump`
 - 01:23Z ANSEM (MIGRATED, $394,317 mcap, $2,434 5m vol): PASS at conviction 2, PASS: 5m is $2.4k at 0.35x its hourly pace, 19% off the high. Shallow band with no flow, and the ticker is shared by 15 bigger copies. Blocker: flow below pace (V1, V6).  
@@ -93,10 +97,6 @@ Updated 2026-11-01T01:32:06Z (paper trading, never real money)
   CA `49VrHCzm7LWU3WChMrVBQ6V7w1RfeS7gTK56fJ1ypump`
 - 00:52Z BNB (MIGRATED, $492,903 mcap, $17,579 5m vol): PASS at conviction 2, PASS — the whole joke is the Binance hot-wallet hack ("hot wallet got cooked", "withdrawals paused", "Incident" page). Hack-story coins are a hard line. Clean holders don't change that. (Owner rule, V13)  
   CA `EYqygbhZjP7EbM4fSn8devctnksAvPAD1Bt57XBFpump`
-- 00:39Z SIS (DIP, $565,214 mcap, $6,158 5m vol): PASS at conviction 3, PASS: 5m volume is 0.64x the hourly pace, under the 0.7x DIP gate, on a fading AI-satellite LARP whose site still says 'CA TBA'. Flow below pace, dead story. (V1, V6)  
-  CA `FdKdpz11GsTofLaNiddrhxrsE4APZYSSfLFqQ9YKpump`
-- 00:38Z ANSEM (MIGRATED, $409,638 mcap, $7,775 5m vol): PASS at conviction 2, PASS: the first target ($486k high) is only 1.19x away, 5m is $7.8k in the shallow band, and top 10 sit at 24.9% next to a 5.1% bundle. It's a KOL-name coin with nothing left to pay for the risk (V1, V3, V6).  
-  CA `CvRJ8MrnB1AwjrgX25uyeLJiXNSugTo2ZHh8UXDTpump`
 
 ## What its skips did next (last 48h)
 A skip "ran" if the coin reached the first target (1.5x) from the skip price before a 20% drop, "dumped" if the drop came first. Sampled every 10 min, followed 6h.
@@ -107,7 +107,7 @@ A skip "ran" if the coin reached the first target (1.5x) from the skip price bef
     CA `AtKvRVDF738YA925jmxNeh4iV2qCVBBJeMxQNyrupump`
   - ran: Jesus up to 1.96x  
     CA `6PNq3Dduz73HHFBFt1KYRqDEsgcPQE6BDDRgxAFupump`
-- near the high / chasing: blocked 53, ran 9, dumped 36, flat 6, open 2 (saving losses: keep it)
+- near the high / chasing: blocked 53, ran 10, dumped 36, flat 6, open 1 (saving losses: keep it)
   - ran: DESSA up to 1.52x  
     CA `npz2FhoufQ7pKqhGpaipYWacrAkidyW2yDpVWSvpump`
   - ran: Catori up to 1.52x  
@@ -142,10 +142,12 @@ A skip "ran" if the coin reached the first target (1.5x) from the skip price bef
     CA `DUTxGHL2LmpfjQaoK6LdZp8WQPoDiwvtDHVDf4fMpump`
   - ran: whitepaper up to 2.16x  
     CA `4tEvXHpd6JrCWJGByBS3qFBAtJbeoiEpgvWLw9hkpump`
-- falling knife / no higher low: blocked 21, ran 1, dumped 16, flat 2, open 2 (saving losses: keep it)
+- falling knife / no higher low: blocked 22, ran 2, dumped 17, flat 2, open 1 (saving losses: keep it)
   - ran: CREDIT up to 1.56x  
     CA `Ewyifvp8X9NxeaKawXamGXBFDisuMfcFfcdvSZ8opump`
-- crowd leaving / fading volume: blocked 17, ran 4, dumped 9, flat 1, open 3 (saving losses: keep it)
+  - ran: WASTED up to 1.64x  
+    CA `GexThZHgaswpAQ7Fi8QrHFubjPimUNSYhJiAA7XZpump`
+- crowd leaving / fading volume: blocked 17, ran 4, dumped 11, flat 1, open 1 (saving losses: keep it)
   - ran: STABLEPAD up to 2.13x  
     CA `AABM3NrYSwKMsEDyanuskY43EH6ySbPpdPZNG1u7pump`
   - ran: HYDESK up to 1.78x  
@@ -155,19 +157,21 @@ A skip "ran" if the coin reached the first target (1.5x) from the skip price bef
 - dev share over 1%: blocked 14, ran 1, dumped 11, flat 2, open 0 (saving losses: keep it)
   - ran: IGLU up to 1.54x  
     CA `34YQhrgkWoeFnm6LrcnmV3PLyDaMSNZikzUjyMmupump`
-- hack story (owner rule): blocked 13, ran 1, dumped 4, flat 7, open 1 (saving losses: keep it)
+- hack story (owner rule): blocked 13, ran 2, dumped 4, flat 7, open 0 (saving losses: keep it)
+  - ran: BNB up to 1.51x  
+    CA `EYqygbhZjP7EbM4fSn8devctnksAvPAD1Bt57XBFpump`
   - ran: ACT:H up to 1.53x  
     CA `3B3SJFo8kvVoMvvkzrUCPdpDeSeCL773AJ3kNLWJpump`
 
 ## Rules it changed from results and skips
-- 10-31 19:22Z tightened: Time stop extension now needs ≥1.08x on market cap, not just 'green' (Leverhedge was held to 76 min at 1.06x and still lost −3.2% after the ~5.5% round trip. HYPERCHAN #2 closed at 1.05x and lost −4.9%. FLOAT held 158 min and lost −24.5%.)
-- 10-31 19:22Z tightened: Stop review: an 'unclear' verdict sells immediately (SI and HEXN both reviewed as 'unclear' and filled at −38% and −36% against a −20% stop, both never green (peak 0.99x).)
-- 10-31 19:22Z dropped: Any fee, friction or minimum-size rule, and any learned initials, stop or trail level (Code owns the fee check, and the owner owns the exits (1.5x initials, 20% stop, 35% trail). None are written into my rules.)
-- 10-31 19:26Z tightened: DIP attention gate in code raised to 0.7x the hourly average to match the owner's gate (Code falling-knife skips went 2 ran / 21 dumped; DIPs are 0 for 4 at −$3.39.)
 - 10-31 19:26Z dropped: Any fee, friction or minimum-size rule, and any rule setting initials, stop or trail (Code enforces the fee and size checks; the owner sets initials 1.5x, stop 20% and trail 35%. None of these appear in the rule list.)
 - 10-31 22:30Z tightened: Target rule now rates on the first resistance level, not the extension past it (PAWCAT's first resistance was 1.32x away and the trade time-stopped flat. Seven losers peaked between 1.12x and 1.40x. SWAN topped exactly at its 1.4x level.)
 - 10-31 22:30Z added: Entry has to be confirmed, not anticipated (SI, HEXN #1 and HYPERCHAN #1 all peaked at 0.99x, never went green, and each broke an existing rule by entering before the condition printed (no higher low, no base, flow below pace). Together they cost about 30% of the loss pool.)
 - 10-31 22:30Z tightened: DIP attention/story gate: code line moved to 0.7; DIPs need the full proven shape to rate 8+ (DIPs are 0 for 4 (−$3.39, expectancy −$0.85, the worst setup). Falling-knife (code) skips went 2 ran / 22 dumped. The owner's 0.7x gate is unchanged and DIPs are still sized by conviction.)
+- 11-01 01:34Z tightened: Shallow band 10–25% is a breakout-only trade (flow leader, cap 7, must be pressing the high on flow at or above pace) (Every shallow-band trade failed: HYPERCHAN −15% and −5%, PILLSEY −31%, PAWCAT +0.7% scratch. The 1.5x first-resistance rule can never pass a pullback this shallow, so the only way to honor the owner's 10% floor is to frame it as a breakout in progress.)
+- 11-01 01:34Z tightened: DIP gate: 5m at least 0.7x hourly (now in code), depth 40–70%, live story (DIPs are 0 for 4 (−$3.39). HEXN at 59.5% off lost twice. Falling-knife skips went 3 ran / 23 dumped (code) and 1 ran / 16 dumped (brain). The owner's 0.7x line is now enforced in code instead of only in my rules.)
+- 11-01 01:34Z tightened: Stop review defaults to SELL immediately (All 5 stop reviews closed worse than the stop: CATCULUS −59%, SI −38%, HEXN −36%, PILLSEY −31%, HEXN −27%. Any delay costs money.)
+- 11-01 01:34Z dropped: Any flat fee/friction cap or minimum position size wording (Code owns the fee check (first target must pay 3x the round trip, round trip at most 20% of the position). The retired fee parts of my lessons are not carried into the rules.)
 
 ## Recent lessons
 - [2026-10-29 02:49] I expected FLOAT, the leading tokenized-stock coin, to run from its $1.04M higher-low reclaim toward $3M (V1, V6), and it did reach 1.64x. Then it faded, and I sat past the 45-minute time stop and got out at 158 minutes. Mcap was only down 7%, but I lost 24.5% because $0.56 of fees and slippage ate 18% of a $3.09 position, which broke my own $5-minimum and friction-gate rules. Next time: no entry under $5 or above 5% friction, no exceptions. If a trade gets past 1.5x before initials, move the stop up to break-even plus fees so a 1.6x peak can't turn into a loss (V11: plan the exit before the entry).
@@ -185,13 +189,13 @@ A skip "ran" if the coin reached the first target (1.5x) from the skip price bef
 Today's movers say the meta is the November calendar. NNN ($33k 5m, 54% buys) and Movember ($42.5k 5m, 23k cap) are both under half an hour old, up 650–700% on the hour and sitting near bond. That's V5 holiday front-running, and Nov 1 is tomorrow. Cats are second and fading: the crawler called them the hot meta, but INKKY Jy8k is down 49% on the hour with only $2.3k on the 5m, right at the dead line (V1), and CatInu is dead. The cat still worth a look is PAWCAT ($4M cap, down 20% on the hour, 60% buys), which runs its 5m at about 0.8x its hourly pace. Fresh one-off launches (BLUE, HINA) are rising, while fake-tech (SIS, Leverhedge) and people coins (ANSEM, Racket, and LAPTOP, which is political and a hard line under V13) are fading or blocked. Setups I'd research now: Movember and NNN as FINAL_STRETCH (the original seasonal tickers, but expect the pre-bond dump and get out if they stall under bond), and PAWCAT as a DIP under the owner's 0.7x gate. Each one still has to pass the holder, dev and bundle checks, and the owner's push to be aggressive doesn't move the hard lines.
 
 ## Moving most in its scans, last 30 min (1h volume)
-- CASHCAT: $939,987 1h vol, $2,137 mcap, -97% 1h  
+- CASHCAT: $350,796 1h vol, $2,151 mcap, -98% 1h  
   CA `GT7npkZe1b9ayvsHhvSm7yUYqq8XkWSP4v1xYNcSpump`
-- AAPLCAT: $372,898 1h vol, $1,313,902 mcap, +182% 1h  
-  CA `GYKnd6jGUSQoBUnj6LdGCBtCWYDgr2Zd6QwNPcy5pump`
-- TRADERS: $139,798 1h vol, $50,160 mcap, +17% 1h  
-  CA `2mZwefm2rvQBAW6DBQLseD82cwXc5tnN7JTQbmaVpump`
-- DESSA: $128,953 1h vol, $22,219,556 mcap, -5% 1h  
+- BNB: $261,360 1h vol, $542,139 mcap, +12% 1h  
+  CA `EYqygbhZjP7EbM4fSn8devctnksAvPAD1Bt57XBFpump`
+- PAWCAT: $175,227 1h vol, $3,210,590 mcap, -17% 1h  
+  CA `762ZqBCd5m2q3QJ5UPkFL5rqdEUeygNkfTZrpGEZpump`
+- DESSA: $129,202 1h vol, $22,429,108 mcap, -4% 1h  
   CA `npz2FhoufQ7pKqhGpaipYWacrAkidyW2yDpVWSvpump`
 - SIS: $106,549 1h vol, $547,816 mcap, -0% 1h  
   CA `FdKdpz11GsTofLaNiddrhxrsE4APZYSSfLFqQ9YKpump`
