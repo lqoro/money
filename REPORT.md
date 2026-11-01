@@ -1,13 +1,13 @@
 # Trencher live report
 
-Updated 2026-11-01T21:13:40Z (paper trading, never real money)
+Updated 2026-11-01T21:28:41Z (paper trading, never real money)
 
 - Equity: $80.53 (-19.5% vs $100 start)
-- Goal: $1,000 by 2026-11-05 05:03Z (pressing for it): at 8.1% of it, 3.3 days left, needs +113.3% a day from here
+- Goal: $1,000 by 2026-11-05 05:03Z (pressing for it): at 8.1% of it, 3.3 days left, needs +113.8% a day from here
 - Closed trades: 19, 3 wins
 - Fees paid: $12.66 (axiom $2.26, network $8.06, pool $2.21), plus $3.34 lost to slippage
 - New trades: on
-- Brain: subscription, 619 calls and 0 plan-limit hits in 48h
+- Brain: subscription, 616 calls and 0 plan-limit hits in 48h
 
 ## Scorecard (after fees)
 - 19 closed, 3 won (16%), net $-19.48
@@ -74,9 +74,15 @@ Updated 2026-11-01T21:13:40Z (paper trading, never real money)
   CA `GYKnd6jGUSQoBUnj6LdGCBtCWYDgr2Zd6QwNPcy5pump`
 
 ## Last scan
-- 21:12Z: 6 coins, 5 with pairs, 0 passed the market filters, 0 researched
+- 21:28Z: 6 coins, 5 with pairs, 0 passed the market filters, 0 researched
 
 ## Coins it looked at, and why it passed
+- 21:26Z PI (MIGRATED, $32,508 mcap, $4,547 5m vol): PASS at conviction 2, PASS: the crowd is gone. 5m volume is $4.5k, which is 0.15x the hourly pace, on a 1-hour-old coin down 72% that's still bleeding. Blocker: "flow below pace" / falling knife (V1, V6).  
+  CA `93VGqXL76voGxc43apJTDJoKkqnxTht1BKWoEmUypump`
+- 21:25Z BABYUNI (MIGRATED, $142,575 mcap, $24,134 5m vol): REJECT, RugCheck danger: Large Amount of LP Unlocked 100.00%  
+  CA `EaYd9uBdkMpgDB6JAu2igUAXKmNrJGB1hiL22PeMpump`
+- 21:22Z CHOO (MIGRATED, $1,938,360 mcap, $5,015 5m vol): PASS at conviction 3, PASS: flow below pace. CHOO has $5k on the 5m at 0.53x its hourly pace and more sells than buys, so the crowd is leaving, not stepping into the dip (V1, V6).  
+  CA `EJAxERvKU4kEVXn3NarjvRtgaMaJyP9ZuMeKA7JJpump`
 - 21:10Z GATO (MIGRATED, $7,758,374 mcap, $10,202 5m vol): REJECT, Dev holds 3.3% (>1%) (V13, V17)  
   CA `HsprHxBRgiVaQdRf3TnKNuZZtaX9JUSPgMFdAkk6pump`
 - 21:07Z Dacity (MIGRATED, $7,483,408 mcap, $5,873 5m vol): REJECT, Bundles: 10 linked wallet cluster(s) hold 23.9% of supply (>20%) (V17)  
@@ -91,23 +97,17 @@ Updated 2026-11-01T21:13:40Z (paper trading, never real money)
   CA `HNxyGpz8AkLqmfBBKMzmugkPE5Bahj2bGPPTNgWGpump`
 - 20:52Z ARNOLD (MIGRATED, $80,151 mcap, $3,342 5m vol): PASS at conviction 3, PASS — chasing spike: $3.3k 5m at 3.1x pace after a +26% hour, buys 55 vs sells 58, and the first resistance is only 1.33x away. Thin pump, no base. (V1, V6)  
   CA `nG3jfPQHU2ZQhPERkTZD8YPSAsrrWiePPDcm9jxpump`
-- 20:52Z BABYKIN (DIP, $80,119 mcap, $13,450 5m vol): REJECT, Dip with fading attention is a falling knife, not a dip (5m at 0.33x the hour's pace, under 0.6x)  
-  CA `8BxKRVNTRzM7LTJ9Q6rqKQFwXtMjZjjSNYNDyjLSpump`
-- 20:46Z MOVEMBER (MIGRATED, $54,054 mcap, $8,204 5m vol): REJECT, Top 10 hold 26.4% ex-pool (>25%) (V13)  
-  CA `DTVcrMAEMwpSSBvu6W7P3BLZsRhFZb6bSzARFDqobfCT`
-- 20:41Z PI (MIGRATED, $75,979 mcap, $33,654 5m vol): PASS at conviction 3, PASS: 19-minute-old migration with a 6.2% bundle cluster and top 10 at 20.4%. Fresh launch, no base. Blocker "too new" (V1, V3, V6).  
-  CA `93VGqXL76voGxc43apJTDJoKkqnxTht1BKWoEmUypump`
 
 ## What its skips did next (last 48h)
 A skip "ran" if the coin reached the first target (1.5x) from the skip price before a 20% drop, "dumped" if the drop came first. Sampled every 10 min, followed 6h.
-- near the high / chasing: blocked 63, ran 8, dumped 43, flat 8, open 4 (saving losses: keep it)
+- near the high / chasing: blocked 62, ran 8, dumped 43, flat 7, open 4 (saving losses: keep it)
   - ran: iCoin up to 1.68x  
     CA `HgxEGTZ1Epb64RrYqcuHkqb1gGWWnF5WcPTCDWzApump`
   - ran: AXIO up to 1.51x  
     CA `3mUcXkpVVkQ5ZJMctz2f1VBk4rwu3NRfNwVQZtDzpump`
   - ran: NATIONS up to 1.54x  
     CA `5ahor7yZ9EdXLzfS43aEPsfBsLtgocsi5sGc2Rsa58PG`
-- too new / sniping: blocked 50, ran 3, dumped 45, flat 0, open 2 (saving losses: keep it)
+- too new / sniping: blocked 49, ran 4, dumped 45, flat 0, open 0 (saving losses: keep it)
   - ran: onlypump up to 1.92x  
     CA `J73efZvH6rkrJbFJdP2rqe473YJW7tyWmrNARUSzpump`
   - ran: paws up to 1.51x  
@@ -135,14 +135,14 @@ A skip "ran" if the coin reached the first target (1.5x) from the skip price bef
     CA `DUTxGHL2LmpfjQaoK6LdZp8WQPoDiwvtDHVDf4fMpump`
   - ran: whitepaper up to 2.16x  
     CA `4tEvXHpd6JrCWJGByBS3qFBAtJbeoiEpgvWLw9hkpump`
-- RugCheck danger: blocked 21, ran 4, dumped 17, flat 0, open 0 (saving losses: keep it)
+- RugCheck danger: blocked 22, ran 4, dumped 17, flat 0, open 1 (saving losses: keep it)
   - ran: SUGAR up to 1.74x  
     CA `HLzTFsX99uqzAP7uK36gJ2pPHGfRM8ugvxXWJzjSpump`
   - ran: AIC up to 1.6x  
     CA `2T9WZjVC6L3BvusUtjKDT6HcZeEYgU9T5xhfJQxFpump`
   - ran: ZECRET up to 1.62x  
     CA `ChCi2x2bpevrNyeRoPHLXHzmaCdGQPuU15CNqxY1pump`
-- falling knife / no higher low: blocked 15, ran 1, dumped 10, flat 2, open 2 (saving losses: keep it)
+- falling knife / no higher low: blocked 15, ran 1, dumped 11, flat 1, open 2 (saving losses: keep it)
   - ran: CREDIT up to 1.56x  
     CA `Ewyifvp8X9NxeaKawXamGXBFDisuMfcFfcdvSZ8opump`
 - crowd leaving / fading volume: blocked 12, ran 2, dumped 7, flat 2, open 1 (saving losses: keep it)
@@ -197,11 +197,11 @@ On the owner's note: I'll press setups that clear my checks. But the $1k goal do
 ## Moving most in its scans, last 30 min (1h volume)
 - uni: $2,187,283 1h vol, $77,590,441 mcap, +201% 1h  
   CA `jM9r9PJFyPaMEbhGZPbDeZJiysn2pfyz5TzdDs5pump`
-- uni: $689,418 1h vol, $91,472 mcap, +138% 1h  
-  CA `6pGyajBJsvKWLvgDZPNebH5uZcHXc7hVQAJ3y1uuVXNd`
 - AAPLCAT: $495,671 1h vol, $83,830 mcap, -85% 1h  
   CA `GYKnd6jGUSQoBUnj6LdGCBtCWYDgr2Zd6QwNPcy5pump`
-- BABYKIN: $490,351 1h vol, $80,119 mcap, +73% 1h  
-  CA `8BxKRVNTRzM7LTJ9Q6rqKQFwXtMjZjjSNYNDyjLSpump`
-- AI: $325,519 1h vol, $90,694 mcap, -40% 1h  
-  CA `HNxyGpz8AkLqmfBBKMzmugkPE5Bahj2bGPPTNgWGpump`
+- PI: $371,701 1h vol, $32,508 mcap, -48% 1h  
+  CA `93VGqXL76voGxc43apJTDJoKkqnxTht1BKWoEmUypump`
+- Learjet: $115,669 1h vol, $22,070 mcap, -39% 1h  
+  CA `8Wi25nQhEay9KwAsoguEs3y1uxaJmCRQxRYnSY9dpump`
+- CHOO: $112,544 1h vol, $1,938,360 mcap, +7% 1h  
+  CA `EJAxERvKU4kEVXn3NarjvRtgaMaJyP9ZuMeKA7JJpump`
