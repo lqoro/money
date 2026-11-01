@@ -1,13 +1,13 @@
 # Trencher live report
 
-Updated 2026-11-01T15:09:54Z (paper trading, never real money)
+Updated 2026-11-01T15:24:59Z (paper trading, never real money)
 
 - Equity: $80.53 (-19.5% vs $100 start)
-- Goal: $1,000 by 2026-11-05 05:03Z (pressing for it): at 8.1% of it, 3.6 days left, needs +102.2% a day from here
+- Goal: $1,000 by 2026-11-05 05:03Z (pressing for it): at 8.1% of it, 3.6 days left, needs +102.6% a day from here
 - Closed trades: 19, 3 wins
 - Fees paid: $12.66 (axiom $2.26, network $8.06, pool $2.21), plus $3.34 lost to slippage
 - New trades: on
-- Brain: subscription, 635 calls and 1 plan-limit hits in 48h
+- Brain: subscription, 632 calls and 1 plan-limit hits in 48h
 
 ## Scorecard (after fees)
 - 19 closed, 3 won (16%), net $-19.48
@@ -74,9 +74,17 @@ Updated 2026-11-01T15:09:54Z (paper trading, never real money)
   CA `GYKnd6jGUSQoBUnj6LdGCBtCWYDgr2Zd6QwNPcy5pump`
 
 ## Last scan
-- 15:09Z: 9 coins, 9 with pairs, 2 passed the market filters, 2 researched
+- 15:24Z: 4 coins, 4 with pairs, 0 passed the market filters, 0 researched
 
 ## Coins it looked at, and why it passed
+- 15:23Z PAWCAT (MIGRATED, $1,769,758 mcap, $13,129 5m vol): PASS at conviction 2, PASS: flow below pace. 5m volume is 0.34x the hourly average on a coin 79% off its $8.4M peak, which is a falling knife (DIP gate, V1, V6).  
+  CA `762ZqBCd5m2q3QJ5UPkFL5rqdEUeygNkfTZrpGEZpump`
+- 15:20Z GATO (MIGRATED, $7,316,306 mcap, $3,459 5m vol): REJECT, Dev holds 3.3% (>1%) (V13, V17)  
+  CA `HsprHxBRgiVaQdRf3TnKNuZZtaX9JUSPgMFdAkk6pump`
+- 15:13Z SCARECROW (MIGRATED, $77,301 mcap, $10,191 5m vol): REJECT, Dev holds 14.1% (>1%) (V13, V17)  
+  CA `Dm7uQVngPSs82eWfVnx3rb7hbqoDb6f2E455R783pump`
+- 15:11Z pairless (MIGRATED, $59,248 mcap, $76,709 5m vol): PASS at conviction 3, PASS: 8 minutes old, 5m volume at 5.7x the hourly pace, and a bigger coin already holds this ticker. That's a fresh-launch spike with a possible vamp on top. Too new. (V1, V3)  
+  CA `DoPuTpyJnKEvZeQpDTr5cbZ1vRsTuQuJNCM4S4gPyPZA`
 - 15:09Z GOAT (MIGRATED, $33,195 mcap, $2,305 5m vol): REJECT, Top 10 hold 30.4% ex-pool (>25%) (V13)  
   CA `5AWBTmZzYZ3twtKQLe1eziWw9yMcUyUiR6iRnCpXPv7f`
 - 15:09Z Solana500 (FINAL_STRETCH, $19,758 mcap, $7,529 5m vol): PASS at conviction 3, PASS: the first wall is the $28.4k peak, only 1.44x away, and initials sit at 1.5x. The coin is a recycled 14-month-old pump.fun curve with no X of its own, just a link to Solana's official tweet. Target below initials (V1, V3).  
@@ -89,39 +97,31 @@ Updated 2026-11-01T15:09:54Z (paper trading, never real money)
   CA `E5aeDjgq6ZSzAmihKoh9JPEhwK2bMCbZLJf6LYT9pump`
 - 14:56Z AAPLCAT (DIP, $759,306 mcap, $3,693 5m vol): REJECT, Dip with fading attention is a falling knife, not a dip (5m at 0.51x the hour's pace, under 0.6x)  
   CA `GYKnd6jGUSQoBUnj6LdGCBtCWYDgr2Zd6QwNPcy5pump`
-- 14:48Z SIS (MIGRATED, $153,176 mcap, $4,293 5m vol): PASS at conviction 2, PASS on SIS. It's 88% off its $1.3M peak, well past my 60% MIGRATED band and the 70% DIP max, and it already stopped me out once today. Falling knife. (V1, V6)  
-  CA `FdKdpz11GsTofLaNiddrhxrsE4APZYSSfLFqQ9YKpump`
-- 14:42Z SA (MIGRATED, $572,213 mcap, $9,355 5m vol): PASS at conviction 3, PASS: 9.9% off a 12-minute-old high with 5m flow at 0.62x pace. That's chasing and flow below pace, and it's an AI LARP with a 0.1-day-old site that still says CA TBA (V1, V6).  
-  CA `DgkKGYiJZMCah6iphatZeqCGJ5S51ND7qxQZQdP5pump`
-- 14:38Z PAWCAT (DIP, $2,702,300 mcap, $12,627 5m vol): PASS at conviction 3, PASS — 68% off the high, -12% on the 5m and sliding back to the pullback low with no higher low printed; cat meta is cooling. Falling knife. (V1)  
-  CA `762ZqBCd5m2q3QJ5UPkFL5rqdEUeygNkfTZrpGEZpump`
-- 14:37Z SOL (MIGRATED, $195,459 mcap, $112,006 5m vol): PASS at conviction 3, PASS — blocker "chasing": 10-minute-old coin 1.5% off its high right after a +56% 5m candle at 5.4x pace. Clean holders don't make that a pullback (V1).  
-  CA `Ccm5ZnTrKY7YNskkiQJ4nrL4GHSGoXniik9pyV4Jpump`
 
 ## What its skips did next (last 48h)
 A skip "ran" if the coin reached the first target (1.5x) from the skip price before a 20% drop, "dumped" if the drop came first. Sampled every 10 min, followed 6h.
-- near the high / chasing: blocked 63, ran 9, dumped 43, flat 8, open 3 (saving losses: keep it)
+- near the high / chasing: blocked 62, ran 9, dumped 45, flat 8, open 0 (saving losses: keep it)
   - ran: FLYWHEEL up to 2.23x  
     CA `BWMf44rD724R2bdgHWd88CDTVEjuPNQauw8s6S7ipump`
   - ran: iCoin up to 1.68x  
     CA `HgxEGTZ1Epb64RrYqcuHkqb1gGWWnF5WcPTCDWzApump`
   - ran: AXIO up to 1.51x  
     CA `3mUcXkpVVkQ5ZJMctz2f1VBk4rwu3NRfNwVQZtDzpump`
-- too new / sniping: blocked 54, ran 4, dumped 50, flat 0, open 0 (saving losses: keep it)
+- too new / sniping: blocked 53, ran 5, dumped 48, flat 0, open 0 (saving losses: keep it)
   - ran: SPACECAT up to 1.56x  
     CA `61h4rUn7C21QNv1NJADc2oAxpAhr7f2WGqbXRDEupump`
   - ran: xpad up to 2.54x  
     CA `EV116Y5Y6cYvcugmXwLVZPhbZus1NxV5WbArJxtUxxxx`
   - ran: onlypump up to 1.92x  
     CA `J73efZvH6rkrJbFJdP2rqe473YJW7tyWmrNARUSzpump`
-- top 10 over 25%: blocked 40, ran 5, dumped 29, flat 4, open 2 (saving losses: keep it)
+- top 10 over 25%: blocked 39, ran 5, dumped 29, flat 3, open 2 (saving losses: keep it)
   - ran: Goyim up to 2.88x  
     CA `7aeDqEi2PfoYpJfw2eawzLnRH9NjQJ6jWMZ9FH1Hpump`
   - ran: George up to 1.88x  
     CA `4poKLzPuwjKJgXM6eF3EqBbMzWgkapi96vbNSkZipump`
   - ran: Beaver up to 2.56x  
     CA `5h44wfzwGHFnfVhNKtMLapAJNV9iqqbUgUB2FqyWpump`
-- falling knife (code): blocked 28, ran 4, dumped 20, flat 1, open 3 (saving losses: keep it)
+- falling knife (code): blocked 28, ran 4, dumped 21, flat 1, open 2 (saving losses: keep it)
   - ran: TYGR up to 1.58x  
     CA `5wCqCq6jbppuTocMeq6zd4UywAm64L1QNNxvEDAHpump`
   - ran: LUMI up to 1.76x  
@@ -135,7 +135,7 @@ A skip "ran" if the coin reached the first target (1.5x) from the skip price bef
     CA `DUTxGHL2LmpfjQaoK6LdZp8WQPoDiwvtDHVDf4fMpump`
   - ran: whitepaper up to 2.16x  
     CA `4tEvXHpd6JrCWJGByBS3qFBAtJbeoiEpgvWLw9hkpump`
-- falling knife / no higher low: blocked 21, ran 2, dumped 16, flat 2, open 1 (saving losses: keep it)
+- falling knife / no higher low: blocked 20, ran 2, dumped 15, flat 2, open 1 (saving losses: keep it)
   - ran: CREDIT up to 1.56x  
     CA `Ewyifvp8X9NxeaKawXamGXBFDisuMfcFfcdvSZ8opump`
   - ran: WASTED up to 1.64x  
@@ -145,12 +145,12 @@ A skip "ran" if the coin reached the first target (1.5x) from the skip price bef
     CA `DR3Jtxwzkw9uBpi6Bz7qJX7zuFSJkNKXthD8nB1mpump`
   - ran: SUGAR up to 1.74x  
     CA `HLzTFsX99uqzAP7uK36gJ2pPHGfRM8ugvxXWJzjSpump`
-- dev share over 1%: blocked 12, ran 2, dumped 7, flat 1, open 2 (saving losses: keep it)
+- dev share over 1%: blocked 13, ran 2, dumped 8, flat 1, open 2 (saving losses: keep it)
   - ran: IGLU up to 1.54x  
     CA `34YQhrgkWoeFnm6LrcnmV3PLyDaMSNZikzUjyMmupump`
   - ran: MINTED up to 1.61x  
     CA `9yEKBwczdqoox7Red6GGPTrJ2dUbMvFUagdjxFqHpump`
-- crowd leaving / fading volume: blocked 10, ran 2, dumped 5, flat 2, open 1 (saving losses: keep it)
+- crowd leaving / fading volume: blocked 10, ran 2, dumped 6, flat 2, open 0 (saving losses: keep it)
   - ran: AXIO up to 1.51x  
     CA `3mUcXkpVVkQ5ZJMctz2f1VBk4rwu3NRfNwVQZtDzpump`
   - ran: Apple up to 1.58x  
@@ -182,16 +182,16 @@ A skip "ran" if the coin reached the first target (1.5x) from the skip price bef
 - [2026-11-01 06:19] Expected AAPLCAT, 36% off its $1.8M high with a printed higher-low base, clean holders and $12.6k on the 5m, to retest the peak at about 1.57x. It peaked at 1.01x, broke the 0.000981 higher low, and the "unclear" stop review sold at −31% instead of −20%. That makes 7 of 7 stop reviews closing worse than the stop. This confirms my existing rules rather than adding a new one: the proven band needs 5m at or above the hourly pace and a meta with the crowd still arriving (V1, V6). I bought with pace under the hourly average and a cooling meta, so next time a band entry with flow below pace is a PASS (blocker "flow below pace"), not a probe, and a broken higher low sells right away.
 
 ## Meta right now
-The meta is fresh pump.fun launches under an hour old that hit a big first wave, and the volume is rotating fast. GTA1s ($64k, $90k on the 5m, 0.1h old, +66%), BB ($38k 5m in its first minutes), PARITY (+379%), PR, SATOSHI and "then i walk in" all show it. The jokes are random gaming, culture and Satoshi tickers, not one shared theme. Cats are fading: PAWCAT is -37% on the hour with 5m volume at about 0.66x its hourly pace, AAPLCAT is flat, and SIS is bleeding at about 0.48x. Politics is a hard pass (LAPTOP, V13), and the crawler summary is stale: REGRET and P2P aren't in the scan, and SAFU is down 81% with $1.2k on the 5m, so it's dead. The one setup worth researching now is GTA1s as MIGRATED: it's above $30k with real flow, but a 0.49 buy ratio on a 6-minute-old chart could be churn, so I'll only buy it if holders, bundles and dev come back clean. PAWCAT is the only DIP candidate, and it's blocked by the 0.7x volume gate at 0.66x. I'll check it again if 5m volume climbs back over 0.7x its hourly pace. BB and PARITY are still far from bond on the curve, so they stay watch-only until they show Final Stretch flow (V1).
+The meta is fast pump.fun launches under an hour old that pump hard and then either hold or go to zero. SCARECROW ($77k, $10.2k on the 5m, 12 minutes old), pairless ($59k with $76.7k on the 5m) and bob ($21.7k on the curve, $61k on the 5m, +503%) are still holding. SOL "Selling Our Liquidity" (-95%), NASA Ghost (-98%) and Dante (-84%) are the same kind of launch an hour later, at zero. The second theme is jokes about memes versus stocks: bob says fuck your stocks, Solana500 and AAPLCAT. bob is the one rising. Solana500's 10,000-hour age next to an on-curve chart doesn't add up, so I don't trust that data. Cats are fading (AAPLCAT -8%, GATO's buy ratio is 0.38) and TESTES is dying (5m volume is about 6% of its hourly pace). Politics is a hard pass: LAPTOP was pushed by a political figure (V13), and the Binance-hacker PEPE story is a hack coin, so it's out. The setups I'd research now are SCARECROW as MIGRATED (above $70k with real flow, V6), pairless as MIGRATED, but only if holders and bundles come back clean because volume that size next to the market cap smells like churn, and bob as an early FINAL_STRETCH watch, plus Wen and PARITY (0.70 buy ratio) if they push toward bond with $10k+ on the 5m (V1). The crawler's own summary talks about GTA1s and BB, which aren't in this scan, so I'm ignoring it. On the owner's note: clean setups that clear the hard lines get a 7–9, but each number has to come from what the checks show, not from the Nov 5 target.
 
 ## Moving most in its scans, last 30 min (1h volume)
-- Ghost: $203,884 1h vol, $1,827 mcap, -95% 1h  
-  CA `F4rbj1erkDbUp7ifK8gqJfs9ixDyqDTNACqAkHqQpump`
-- TESTES: $191,784 1h vol, $19,169 mcap, +431% 1h  
+- PAWCAT: $458,302 1h vol, $1,769,758 mcap, -28% 1h  
+  CA `762ZqBCd5m2q3QJ5UPkFL5rqdEUeygNkfTZrpGEZpump`
+- SOL: $440,423 1h vol, $1,789 mcap, -95% 1h  
+  CA `Ccm5ZnTrKY7YNskkiQJ4nrL4GHSGoXniik9pyV4Jpump`
+- TESTES: $209,609 1h vol, $19,428 mcap, +438% 1h  
   CA `EwofMNzRodVxmSHSACFKcNUbcz8ithzU7xfiXRg2pump`
-- SA: $180,423 1h vol, $572,213 mcap, +18% 1h  
-  CA `DgkKGYiJZMCah6iphatZeqCGJ5S51ND7qxQZQdP5pump`
-- Dante: $101,136 1h vol, $5,097 mcap, -86% 1h  
-  CA `4s8PpvyFsg1EnZxSpogVdsVwMU2R8gg46rKABG3Bs6Tt`
-- AAPLCAT: $86,547 1h vol, $759,306 mcap, -8% 1h  
-  CA `GYKnd6jGUSQoBUnj6LdGCBtCWYDgr2Zd6QwNPcy5pump`
+- SCARECROW: $168,500 1h vol, $77,301 mcap, +87% 1h  
+  CA `Dm7uQVngPSs82eWfVnx3rb7hbqoDb6f2E455R783pump`
+- pairless: $162,902 1h vol, $59,248 mcap, +55% 1h  
+  CA `DoPuTpyJnKEvZeQpDTr5cbZ1vRsTuQuJNCM4S4gPyPZA`
