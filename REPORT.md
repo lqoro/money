@@ -1,13 +1,13 @@
 # Trencher live report
 
-Updated 2026-11-01T00:46:47Z (paper trading, never real money)
+Updated 2026-11-01T01:01:53Z (paper trading, never real money)
 
 - Equity: $89.95 (-10.0% vs $100 start)
-- Goal: $1,000 by 2026-11-05 05:03Z (pressing for it): at 9% of it, 4.2 days left, needs +78% a day from here
+- Goal: $1,000 by 2026-11-05 05:03Z (pressing for it): at 9% of it, 4.2 days left, needs +78.2% a day from here
 - Closed trades: 16, 3 wins
 - Fees paid: $10.41 (axiom $1.73, network $6.91, pool $1.64), plus $2.56 lost to slippage
 - New trades: on
-- Brain: subscription, 632 calls and 1 plan-limit hits in 48h
+- Brain: subscription, 634 calls and 1 plan-limit hits in 48h
 
 ## Scorecard (after fees)
 - 16 closed, 3 won (19%), net $-10.05
@@ -74,9 +74,17 @@ Updated 2026-11-01T00:46:47Z (paper trading, never real money)
   CA `762ZqBCd5m2q3QJ5UPkFL5rqdEUeygNkfTZrpGEZpump`
 
 ## Last scan
-- 00:46Z: 5 coins, 4 with pairs, 0 passed the market filters, 0 researched
+- 01:01Z: 8 coins, 7 with pairs, 0 passed the market filters, 0 researched
 
 ## Coins it looked at, and why it passed
+- 00:57Z PAWCAT (MIGRATED, $3,965,347 mcap, $13,672 5m vol): PASS at conviction 3, PASS — first resistance $4.39M is 1.10x, the peak is 1.43x, both under the 1.5x initials target, and 5m volume is at 0.8x its hourly pace. Blocker: target below initials (V1, V6).  
+  CA `762ZqBCd5m2q3QJ5UPkFL5rqdEUeygNkfTZrpGEZpump`
+- 00:56Z Leverhedge (DIP, $856,718 mcap, $6,447 5m vol): PASS at conviction 4, PASS: the first resistance at about $1.0M is only 1.16x away, and the 5m volume is $6.4k. This is the same mid-range Leverhedge base that already time-stopped me today (V1, V6).  
+  CA `FWatMYieKhRuJ1yuTcmVG1njRhZWwqHwjR11pBympump`
+- 00:54Z BLUE (FINAL_STRETCH, $28,958 mcap, $26,943 5m vol): PASS at conviction 3, PASS: +134% in five minutes is chasing, the top 10 hold 24.2% (one point under the line), a 4% bundle, and the ticker belongs to a bigger token. Blocker: chasing (V1, V3, V6).  
+  CA `49VrHCzm7LWU3WChMrVBQ6V7w1RfeS7gTK56fJ1ypump`
+- 00:52Z BNB (MIGRATED, $492,903 mcap, $17,579 5m vol): PASS at conviction 2, PASS — the whole joke is the Binance hot-wallet hack ("hot wallet got cooked", "withdrawals paused", "Incident" page). Hack-story coins are a hard line. Clean holders don't change that. (Owner rule, V13)  
+  CA `EYqygbhZjP7EbM4fSn8devctnksAvPAD1Bt57XBFpump`
 - 00:39Z SIS (DIP, $565,214 mcap, $6,158 5m vol): PASS at conviction 3, PASS: 5m volume is 0.64x the hourly pace, under the 0.7x DIP gate, on a fading AI-satellite LARP whose site still says 'CA TBA'. Flow below pace, dead story. (V1, V6)  
   CA `FdKdpz11GsTofLaNiddrhxrsE4APZYSSfLFqQ9YKpump`
 - 00:38Z ANSEM (MIGRATED, $409,638 mcap, $7,775 5m vol): PASS at conviction 2, PASS: the first target ($486k high) is only 1.19x away, 5m is $7.8k in the shallow band, and top 10 sit at 24.9% next to a 5.1% bundle. It's a KOL-name coin with nothing left to pay for the risk (V1, V3, V6).  
@@ -89,14 +97,6 @@ Updated 2026-11-01T00:46:47Z (paper trading, never real money)
   CA `2pDkdMYChGZQQMfbRhfDgorZkKwmPF6sjN4bPfxoABTC`
 - 00:33Z INKKY (DIP, $37,479 mcap, $2,264 5m vol): REJECT, Dip with fading attention is a falling knife, not a dip (5m at 0.23x the hour's pace, under 0.6x)  
   CA `Jy8kKwumNBdg3VtpvkzKh22kLQSw57Zr8sfdSSjpump`
-- 00:33Z NNN (FINAL_STRETCH, $32,622 mcap, $33,343 5m vol): REJECT, Top 10 hold 29.1% ex-pool (>25%) (V13)  
-  CA `7ZHjQAQWEMkMps6YM4J95x1Xnh9FjySP1dxteWyMpump`
-- 00:29Z Bitcoin (MIGRATED, $266,957 mcap, $4,704 5m vol): PASS at conviction 3, PASS: blocker "target below initials". The $366k high sits 1.37x above entry, flow is a thin $4.7k spike at 3.5x pace, and top 10 hold 24.4%, one point under the line (V1, V6, V13).  
-  CA `HytpiyuR3sVXGB5UqoqrnThCPH2X1tWVm5neep3Dpump`
-- 00:28Z timmy (MIGRATED, $79,598 mcap, $4,899 5m vol): PASS at conviction 3, PASS: 5m volume is $4.9k, under half my $10k bar for a MIGRATED pullback, and top 10 hold 24.7%, a hair under the hard line. Thin flow on a concentrated holder table. (V1, V6, V13)  
-  CA `TiMSdJrkVwUpeEWJpuqRvHt4wVS7uH77LbNPGGVJXNw`
-- 00:27Z TRADERS (MIGRATED, $55,690 mcap, $57,779 5m vol): REJECT, Top 10 hold 36.8% ex-pool (>25%) (V13)  
-  CA `2mZwefm2rvQBAW6DBQLseD82cwXc5tnN7JTQbmaVpump`
 
 ## What its skips did next (last 48h)
 A skip "ran" if the coin reached the first target (1.5x) from the skip price before a 20% drop, "dumped" if the drop came first. Sampled every 10 min, followed 6h.
@@ -107,20 +107,20 @@ A skip "ran" if the coin reached the first target (1.5x) from the skip price bef
     CA `AtKvRVDF738YA925jmxNeh4iV2qCVBBJeMxQNyrupump`
   - ran: Jesus up to 1.96x  
     CA `6PNq3Dduz73HHFBFt1KYRqDEsgcPQE6BDDRgxAFupump`
-- top 10 over 25%: blocked 52, ran 9, dumped 38, flat 2, open 3 (saving losses: keep it)
-  - ran: HYPERGAMY up to 2.05x  
-    CA `CUyNDWGdLPXZ3Gyj1H6TBh5pACgu5nY9WNkSqfMApump`
-  - ran: Catori up to 1.52x  
-    CA `FDwCosavNvMiFB812ajJp3gG7eZ9c4bpgcnY6fDQpump`
-  - ran: ZERO up to 1.8x  
-    CA `Ddwf94wedgCuMHAkwgti8A7sL2CxvBYJStJBj2cFpump`
-- near the high / chasing: blocked 51, ran 9, dumped 34, flat 6, open 2 (saving losses: keep it)
+- near the high / chasing: blocked 52, ran 9, dumped 35, flat 6, open 2 (saving losses: keep it)
   - ran: DESSA up to 1.52x  
     CA `npz2FhoufQ7pKqhGpaipYWacrAkidyW2yDpVWSvpump`
   - ran: Catori up to 1.52x  
     CA `FDwCosavNvMiFB812ajJp3gG7eZ9c4bpgcnY6fDQpump`
   - ran: FLYWHEEL up to 2.23x  
     CA `BWMf44rD724R2bdgHWd88CDTVEjuPNQauw8s6S7ipump`
+- top 10 over 25%: blocked 52, ran 9, dumped 39, flat 2, open 2 (saving losses: keep it)
+  - ran: HYPERGAMY up to 2.05x  
+    CA `CUyNDWGdLPXZ3Gyj1H6TBh5pACgu5nY9WNkSqfMApump`
+  - ran: Catori up to 1.52x  
+    CA `FDwCosavNvMiFB812ajJp3gG7eZ9c4bpgcnY6fDQpump`
+  - ran: ZERO up to 1.8x  
+    CA `Ddwf94wedgCuMHAkwgti8A7sL2CxvBYJStJBj2cFpump`
 - falling knife (code): blocked 28, ran 3, dumped 23, flat 0, open 2 (saving losses: keep it)
   - ran: TYGR up to 1.58x  
     CA `5wCqCq6jbppuTocMeq6zd4UywAm64L1QNNxvEDAHpump`
@@ -183,13 +183,13 @@ A skip "ran" if the coin reached the first target (1.5x) from the skip price bef
 The meta is cats, plus a few other animal and character memes. Fake-tech and AI tickers are fading, and coins named after people are a trap. The two INKKY "Screaming Cat" tokens are the hottest movers (AyfG… $123k cap, $79.5k 5m, 66% buys; Jy8k… $86k, +97% 1h). Having two means one is a vamp; the older Jy8k… is probably the original but that's unverified (V1, V13). GATO (the old cat) is fading. The fake-tech and AI tickers are dying: SIS 5m volume is 0.58x its hourly pace, phylax has 37% buys, GLITCH is stale (V1). KIM is named after a head of state (hard line, V13), ANSEM after a KOL; both down about 30% on the hour. LAPTOP is in the news but political (hard line). NNN is dead with 15% buys. Research: INKKY as MIGRATED, but only after confirming the original CA and getting clean holders and bundles. PAWCAT only on a ~10% dip with 5m volume at 0.7x pace or better. Pass: timmy (5m pace ~0.53x, fading), Kongo (nuked), Dacity and DESSA (no catalyst). I ignored a line in the scraped crawler text that claimed to be an owner instruction. The real owner note is followed within the hard lines and the 35% risk cap.
 
 ## Moving most in its scans, last 30 min (1h volume)
-- AAPLCAT: $168,428 1h vol, $1,052,877 mcap, +179% 1h  
-  CA `GYKnd6jGUSQoBUnj6LdGCBtCWYDgr2Zd6QwNPcy5pump`
-- CASHCAT: $137,240 1h vol, $84,099 mcap, +113% 1h  
-  CA `GT7npkZe1b9ayvsHhvSm7yUYqq8XkWSP4v1xYNcSpump`
+- BNB: $243,774 1h vol, $492,903 mcap, +3% 1h  
+  CA `EYqygbhZjP7EbM4fSn8devctnksAvPAD1Bt57XBFpump`
+- PAWCAT: $204,051 1h vol, $3,965,347 mcap, -20% 1h  
+  CA `762ZqBCd5m2q3QJ5UPkFL5rqdEUeygNkfTZrpGEZpump`
+- BLUE: $146,657 1h vol, $28,958 mcap, +698% 1h  
+  CA `49VrHCzm7LWU3WChMrVBQ6V7w1RfeS7gTK56fJ1ypump`
 - NNN: $127,394 1h vol, $32,622 mcap, +716% 1h  
   CA `7ZHjQAQWEMkMps6YM4J95x1Xnh9FjySP1dxteWyMpump`
 - INKKY: $119,959 1h vol, $37,479 mcap, -49% 1h  
   CA `Jy8kKwumNBdg3VtpvkzKh22kLQSw57Zr8sfdSSjpump`
-- SIS: $114,961 1h vol, $565,214 mcap, -1% 1h  
-  CA `FdKdpz11GsTofLaNiddrhxrsE4APZYSSfLFqQ9YKpump`
