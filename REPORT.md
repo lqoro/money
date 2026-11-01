@@ -1,9 +1,9 @@
 # Trencher live report
 
-Updated 2026-11-01T06:50:08Z (paper trading, never real money)
+Updated 2026-11-01T07:05:22Z (paper trading, never real money)
 
 - Equity: $80.53 (-19.5% vs $100 start)
-- Goal: $1,000 by 2026-11-05 05:03Z (pressing for it): at 8.1% of it, 3.9 days left, needs +90% a day from here
+- Goal: $1,000 by 2026-11-05 05:03Z (pressing for it): at 8.1% of it, 3.9 days left, needs +90.3% a day from here
 - Closed trades: 19, 3 wins
 - Fees paid: $12.66 (axiom $2.26, network $8.06, pool $2.21), plus $3.34 lost to slippage
 - New trades: on
@@ -74,9 +74,13 @@ Updated 2026-11-01T06:50:08Z (paper trading, never real money)
   CA `GYKnd6jGUSQoBUnj6LdGCBtCWYDgr2Zd6QwNPcy5pump`
 
 ## Last scan
-- 06:49Z: 4 coins, 3 with pairs, 0 passed the market filters, 0 researched
+- 07:05Z: 4 coins, 3 with pairs, 0 passed the market filters, 0 researched
 
 ## Coins it looked at, and why it passed
+- 07:04Z niketyson (MIGRATED, $70,745 mcap, $16,092 5m vol): PASS at conviction 2, PASS: three minutes old, sitting at its all-time high after a +62% candle at 12x pace. That's sniper territory and a chase, not a setup (V1, V5, V6).  
+  CA `nikemwCaTqBamHqfRVqPzwtWsmuwdXb6To25xJ2znwT`
+- 07:02Z PAWCAT (DIP, $3,172,339 mcap, $3,973 5m vol): PASS at conviction 3, PASS — clean holders, but first resistance at ~0.0037 is 1.15x away and 5m is $4k at 0.78x pace. Blocker: target below initials. (V1, V6)  
+  CA `762ZqBCd5m2q3QJ5UPkFL5rqdEUeygNkfTZrpGEZpump`
 - 06:47Z BLUE (DIP, $353,585 mcap, $6,421 5m vol): PASS at conviction 3, PASS: one linked cluster holds 6.8% and there's no higher low, just a straight bounce off the hourly low on $6.4k of 5m flow. I've seen this movie already. (V3, V1)  
   CA `CPoGSmcjprCvzA2MFYLJMpQkGjmgVzKg4RVwMdrzpump`
 - 06:36Z GATO (MIGRATED, $6,115,286 mcap, $4,050 5m vol): REJECT, Dev holds 3.3% (>1%) (V13, V17)  
@@ -93,14 +97,10 @@ Updated 2026-11-01T06:50:08Z (paper trading, never real money)
   CA `FdKdpz11GsTofLaNiddrhxrsE4APZYSSfLFqQ9YKpump`
 - 06:23Z SGNL (FINAL_STRETCH, $24,748 mcap, $25,882 5m vol): PASS at conviction 2, PASS: AI-trader-on-TV claim with no live product, no GitHub, a 2-hour-old domain and no contract address on the site. LARP on the bonding curve, dumping 24% off its spike (V1, V3).  
   CA `wFETxRNpWCcLXGiLoY9LJnuax8WkXGTfPwGN2xFSGNL`
-- 06:16Z PAWCAT (DIP, $3,140,940 mcap, $4,690 5m vol): PASS at conviction 3, PASS: PAWCAT is sitting on its hourly low with lower 15m closes and no higher low. That's a knife, not a dip (V1).  
-  CA `762ZqBCd5m2q3QJ5UPkFL5rqdEUeygNkfTZrpGEZpump`
-- 06:14Z ANSEM (MIGRATED, $304,154 mcap, $2,275 5m vol): PASS at conviction 2, PASS: flow below pace. $2.3k on the 5m, 36% buys, a KOL-name vamp with a 5.1% bundle cluster and top 10 at 23%. The crowd left 9 hours ago (V1, V3, V6).  
-  CA `CvRJ8MrnB1AwjrgX25uyeLJiXNSugTo2ZHh8UXDTpump`
 
 ## What its skips did next (last 48h)
 A skip "ran" if the coin reached the first target (1.5x) from the skip price before a 20% drop, "dumped" if the drop came first. Sampled every 10 min, followed 6h.
-- too new / sniping: blocked 55, ran 5, dumped 49, flat 0, open 1 (saving losses: keep it)
+- too new / sniping: blocked 56, ran 6, dumped 49, flat 0, open 1 (saving losses: keep it)
   - ran: DUOTIDE up to 1.71x  
     CA `AtKvRVDF738YA925jmxNeh4iV2qCVBBJeMxQNyrupump`
   - ran: Jesus up to 1.96x  
@@ -187,13 +187,13 @@ A skip "ran" if the coin reached the first target (1.5x) from the skip price bef
 Meta is colors: BLUE COIN ($310k, 4.3h old), PURPLE COIN and Blue Titty Coin (ticker BTC, $107k, 12 minutes old, $42k 5m, +164% 1h). The newest is the only one still gaining; BLUE has slowed to $4.7k on the 5m, and Blue Titty might be a vamp of it, so check which is the original (V1, V13). Second theme is early Christmas: two Rudolph coins and Santa Hat, all on the bonding curve under $9k (V5). Fresh pump.fun launches are still getting sniped and dying within the hour (ELON -90%, one Rudy -85%). Political-figure coins (Putin, Hunter Biden's $LAPTOP, which crashed 98%) are banned (V13); Binance-hack headlines are blocked in code. Setups to research: Blue Titty Coin as a MIGRATED probe only if it's the original and checks come back clean (12 minutes old is sniper territory, V5/V6); Bitcoin (F7931A) as DIP/MIGRATED ($344k cap, about 4 days old, +30% 1h, 5m volume $8.6k, about 3x its hourly pace); iTech as a MIGRATED probe (5m holding near its hourly pace but only $4.4k). PASS on SIS and tipr: 5m volume ~0.2x their hourly pace fails the 0.7x DIP gate.
 
 ## Moving most in its scans, last 30 min (1h volume)
-- YUME: $222,921 1h vol, $149,813 mcap, +272% 1h  
-  CA `39tkEU5ox4BA7jKPgEoCraoVmi9jzKXzytoYwhHZpump`
-- BTC: $184,266 1h vol, $1,909 mcap, -97% 1h  
-  CA `6Kk8M1wGrWxCZ2qJiSr2W52wXKW3spBUwg5yx6r9pump`
-- AAPLCAT: $143,094 1h vol, $857,492 mcap, -17% 1h  
-  CA `GYKnd6jGUSQoBUnj6LdGCBtCWYDgr2Zd6QwNPcy5pump`
-- SGNL: $109,531 1h vol, $24,748 mcap, +380% 1h  
-  CA `wFETxRNpWCcLXGiLoY9LJnuax8WkXGTfPwGN2xFSGNL`
-- Jose: $108,496 1h vol, $6,468 mcap, +89% 1h  
+- Jose: $112,565 1h vol, $4,955 mcap, +45% 1h  
   CA `HtJaNqCek98PcMpzcZer6k7LoDBXa5n4MWoZrzzhpump`
+- BTC: $68,250 1h vol, $1,909 mcap, -99% 1h  
+  CA `6Kk8M1wGrWxCZ2qJiSr2W52wXKW3spBUwg5yx6r9pump`
+- BLUE: $66,994 1h vol, $353,585 mcap, +11% 1h  
+  CA `CPoGSmcjprCvzA2MFYLJMpQkGjmgVzKg4RVwMdrzpump`
+- PAWCAT: $61,300 1h vol, $3,172,339 mcap, -0% 1h  
+  CA `762ZqBCd5m2q3QJ5UPkFL5rqdEUeygNkfTZrpGEZpump`
+- DESSA: $52,912 1h vol, $28,489,538 mcap, -4% 1h  
+  CA `npz2FhoufQ7pKqhGpaipYWacrAkidyW2yDpVWSvpump`
