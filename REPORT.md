@@ -1,13 +1,13 @@
 # Trencher live report
 
-Updated 2026-11-01T03:48:14Z (paper trading, never real money)
+Updated 2026-11-01T04:03:21Z (paper trading, never real money)
 
 - Equity: $86.97 (-13.0% vs $100 start)
-- Goal: $1,000 by 2026-11-05 05:03Z (pressing for it): at 8.7% of it, 4.1 days left, needs +82.7% a day from here
+- Goal: $1,000 by 2026-11-05 05:03Z (pressing for it): at 8.7% of it, 4 days left, needs +83% a day from here
 - Closed trades: 17, 3 wins
 - Fees paid: $11.16 (axiom $1.90, network $7.29, pool $1.83), plus $2.81 lost to slippage
 - New trades: on
-- Brain: subscription, 638 calls and 1 plan-limit hits in 48h
+- Brain: subscription, 633 calls and 1 plan-limit hits in 48h
 
 ## Scorecard (after fees)
 - 17 closed, 3 won (18%), net $-13.03
@@ -74,9 +74,17 @@ Updated 2026-11-01T03:48:14Z (paper trading, never real money)
   CA `CPoGSmcjprCvzA2MFYLJMpQkGjmgVzKg4RVwMdrzpump`
 
 ## Last scan
-- 03:47Z: 4 coins, 3 with pairs, 0 passed the market filters, 0 researched
+- 04:02Z: 5 coins, 4 with pairs, 0 passed the market filters, 0 researched
 
 ## Coins it looked at, and why it passed
+- 03:59Z PAWCAT (MIGRATED, $3,460,095 mcap, $2,855 5m vol): PASS at conviction 3, PASS — 5m volume $2.9k at 0.39x the hourly pace. Crowd's leaving; clean holders don't save a coin nobody's trading (V1, V6).  
+  CA `762ZqBCd5m2q3QJ5UPkFL5rqdEUeygNkfTZrpGEZpump`
+- 03:55Z NIGUIN (FINAL_STRETCH, $29,338 mcap, $31,008 5m vol): PASS at conviction 2, PASS — 8 minutes old, +50% on the 5m at 6.3x pace, 3% off the high, and named like a slur. Chasing a spike on a coin with a thin crowd (V1, V6).  
+  CA `5F9xEPdXPPYj7ioLMZeNNMuRaADrP8r8NfcsoBwEpump`
+- 03:49Z Dacity (MIGRATED, $8,484,498 mcap, $2,911 5m vol): REJECT, Bundles: 10 linked wallet cluster(s) hold 22.4% of supply (>20%) (V17)  
+  CA `nxPqZ4F7ux8Vph5NFu25rEP6Kx9Gr1U6Fmj36Rjpump`
+- 03:49Z GATO (MIGRATED, $5,973,433 mcap, $9,022 5m vol): REJECT, Dev holds 3.3% (>1%) (V13, V17)  
+  CA `HsprHxBRgiVaQdRf3TnKNuZZtaX9JUSPgMFdAkk6pump`
 - 03:46Z BLUE (DIP, $356,733 mcap, $78,445 5m vol): PASS at conviction 3, PASS — stopped out of BLUE at $402k and it's at $357k, mid-range, no reclaim, no higher low, 6.75% bundle still sitting in it. Blocker: re-entry rule / no higher low (V1, V3).  
   CA `CPoGSmcjprCvzA2MFYLJMpQkGjmgVzKg4RVwMdrzpump`
 - 03:43Z ANTS (MIGRATED, $1,360,247 mcap, $2,348 5m vol): PASS at conviction 2, PASS: 8.5% off the high with 5m volume at $2.3k, only 0.17x its hourly pace. That's chasing a coin the crowd is already leaving. (V1, V6)  
@@ -89,25 +97,17 @@ Updated 2026-11-01T03:48:14Z (paper trading, never real money)
   CA `J73efZvH6rkrJbFJdP2rqe473YJW7tyWmrNARUSzpump`
 - 03:40Z SS (no setup, $39,227 mcap, $0 5m vol): REJECT, Hack story ("stolen" in the name or ticker): these tend to go down, owner rule  
   CA `DNxivTUF4ycZUzUxK6J3w7u5Fq3pSYvrXCTV5Vwwpump`
-- 03:39Z ANSEM (MIGRATED, $292,188 mcap, $15,031 5m vol): PASS at conviction 3, PASS: chasing. The last 5m candle is up 32% on 3.3x the hourly pace, sells outnumber buys, and it's a copy of a ticker 16 bigger coins already hold (V1, V3).  
-  CA `CvRJ8MrnB1AwjrgX25uyeLJiXNSugTo2ZHh8UXDTpump`
-- 03:32Z CLARITY (MIGRATED, $38,916 mcap, $15,974 5m vol): PASS at conviction 3, PASS: 3 minutes old, 8.8% off the high, and three bigger coins share the ticker. That's sniping a vamp, not buying a pullback. Blocker: too new / chasing (V1, V5).  
-  CA `Cy3tMYihpgaNX6Nc39hC81KFWC9thTSFSrHoUpUfpump`
-- 03:22Z BLOB (MIGRATED, $1,114,664 mcap, $8,748 5m vol): PASS at conviction 3, PASS: flow below pace. BLOB is 11.6% off the high with $8.7k on the 5m, only 0.41x its hourly pace. That's a shallow-band breakout setup with no volume behind the breakout (V1, V6).  
-  CA `8s11PkgQt4ZzdZ7oo84hK5t9HG1EvdgAjcg4W7Lpump`
-- 03:21Z BALLS (DIP, $50,776 mcap, $17,574 5m vol): PASS at conviction 3, PASS: chasing. The last 5m candle is up 49% on a 39-minute-old coin that bonded and is now at $50k, under the $70k line. Three bigger BALLS tickers already exist, so this one is probably a vamp. (V1, V6)  
-  CA `HhBuvegE7Ew2stS5svkMcxL8povkaL8brwt9JUtfpump`
 
 ## What its skips did next (last 48h)
 A skip "ran" if the coin reached the first target (1.5x) from the skip price before a 20% drop, "dumped" if the drop came first. Sampled every 10 min, followed 6h.
-- too new / sniping: blocked 57, ran 5, dumped 51, flat 0, open 1 (saving losses: keep it)
+- too new / sniping: blocked 56, ran 5, dumped 50, flat 0, open 1 (saving losses: keep it)
   - ran: DUOTIDE up to 1.71x  
     CA `AtKvRVDF738YA925jmxNeh4iV2qCVBBJeMxQNyrupump`
   - ran: Jesus up to 1.96x  
     CA `6PNq3Dduz73HHFBFt1KYRqDEsgcPQE6BDDRgxAFupump`
   - ran: SPACECAT up to 1.56x  
     CA `61h4rUn7C21QNv1NJADc2oAxpAhr7f2WGqbXRDEupump`
-- near the high / chasing: blocked 55, ran 10, dumped 34, flat 6, open 5 (saving losses: keep it)
+- near the high / chasing: blocked 54, ran 10, dumped 33, flat 6, open 5 (saving losses: keep it)
   - ran: DESSA up to 1.52x  
     CA `npz2FhoufQ7pKqhGpaipYWacrAkidyW2yDpVWSvpump`
   - ran: Catori up to 1.52x  
@@ -142,7 +142,7 @@ A skip "ran" if the coin reached the first target (1.5x) from the skip price bef
     CA `DR3Jtxwzkw9uBpi6Bz7qJX7zuFSJkNKXthD8nB1mpump`
   - ran: SUGAR up to 1.74x  
     CA `HLzTFsX99uqzAP7uK36gJ2pPHGfRM8ugvxXWJzjSpump`
-- falling knife / no higher low: blocked 22, ran 2, dumped 15, flat 2, open 3 (saving losses: keep it)
+- falling knife / no higher low: blocked 21, ran 2, dumped 14, flat 2, open 3 (saving losses: keep it)
   - ran: CREDIT up to 1.56x  
     CA `Ewyifvp8X9NxeaKawXamGXBFDisuMfcFfcdvSZ8opump`
   - ran: WASTED up to 1.64x  
@@ -189,11 +189,11 @@ Meta, read from the movers: fresh sub-hour launches are the strongest flow. BLUE
 ## Moving most in its scans, last 30 min (1h volume)
 - BLUE: $1,061,150 1h vol, $356,733 mcap, -6% 1h  
   CA `CPoGSmcjprCvzA2MFYLJMpQkGjmgVzKg4RVwMdrzpump`
-- DESSA: $309,829 1h vol, $26,832,684 mcap, +15% 1h  
+- DESSA: $325,470 1h vol, $26,525,222 mcap, +28% 1h  
   CA `npz2FhoufQ7pKqhGpaipYWacrAkidyW2yDpVWSvpump`
-- BLOB: $254,688 1h vol, $1,114,664 mcap, +201% 1h  
-  CA `8s11PkgQt4ZzdZ7oo84hK5t9HG1EvdgAjcg4W7Lpump`
-- BALLS: $243,197 1h vol, $50,776 mcap, +35% 1h  
-  CA `HhBuvegE7Ew2stS5svkMcxL8povkaL8brwt9JUtfpump`
 - onlypump: $200,384 1h vol, $160,862 mcap, +298% 1h  
   CA `J73efZvH6rkrJbFJdP2rqe473YJW7tyWmrNARUSzpump`
+- ANTS: $162,483 1h vol, $1,360,247 mcap, +85% 1h  
+  CA `wMHBD2B8KbDagvXUEapginhtJdrH4QSvSezBM8Tpump`
+- SIS: $142,407 1h vol, $724,916 mcap, +37% 1h  
+  CA `FdKdpz11GsTofLaNiddrhxrsE4APZYSSfLFqQ9YKpump`
