@@ -1,9 +1,9 @@
 # Trencher live report
 
-Updated 2026-11-01T13:38:50Z (paper trading, never real money)
+Updated 2026-11-01T13:53:50Z (paper trading, never real money)
 
 - Equity: $80.53 (-19.5% vs $100 start)
-- Goal: $1,000 by 2026-11-05 05:03Z (pressing for it): at 8.1% of it, 3.6 days left, needs +99.7% a day from here
+- Goal: $1,000 by 2026-11-05 05:03Z (pressing for it): at 8.1% of it, 3.6 days left, needs +100.1% a day from here
 - Closed trades: 19, 3 wins
 - Fees paid: $12.66 (axiom $2.26, network $8.06, pool $2.21), plus $3.34 lost to slippage
 - New trades: on
@@ -74,9 +74,13 @@ Updated 2026-11-01T13:38:50Z (paper trading, never real money)
   CA `GYKnd6jGUSQoBUnj6LdGCBtCWYDgr2Zd6QwNPcy5pump`
 
 ## Last scan
-- 13:38Z: 1 coins, 1 with pairs, 0 passed the market filters, 0 researched
+- 13:52Z: 4 coins, 4 with pairs, 0 passed the market filters, 0 researched
 
 ## Coins it looked at, and why it passed
+- 13:52Z PAWCAT (DIP, $3,146,243 mcap, $10,708 5m vol): PASS at conviction 3, PASS — blocker "no higher low / flow below pace": eight straight lower 15m closes and 5m volume at 0.66x the hourly pace, under the 0.7x DIP gate, while the cat meta fades. Clean holders, but no floor. (V1, V6)  
+  CA `762ZqBCd5m2q3QJ5UPkFL5rqdEUeygNkfTZrpGEZpump`
+- 13:49Z GATO (MIGRATED, $7,047,340 mcap, $3,692 5m vol): REJECT, Dev holds 3.3% (>1%) (V13, V17)  
+  CA `HsprHxBRgiVaQdRf3TnKNuZZtaX9JUSPgMFdAkk6pump`
 - 13:36Z REGRETAMINE (MIGRATED, $126,973 mcap, $18,519 5m vol): PASS at conviction 3, PASS — 12 minutes old, 3% off a high set six minutes ago, last 5m candle +46%. That's a spike to chase, not a setup. Holders are clean; wait for the base (V1).  
   CA `57piTgZ3PUbrf3C59qJXrCwAms5VEa5ys1KPZNYSpump`
 - 13:33Z Dacity (MIGRATED, $7,704,825 mcap, $6,923 5m vol): REJECT, Bundles: 10 linked wallet cluster(s) hold 22.4% of supply (>20%) (V17)  
@@ -93,35 +97,31 @@ Updated 2026-11-01T13:38:50Z (paper trading, never real money)
   CA `6jFcYpa95qnzX3Kui4TTyPCEzQorHRCHXhoCAg5tpump`
 - 13:06Z PAWCAT (DIP, $4,531,609 mcap, $17,300 5m vol): REJECT, Dip with fading attention is a falling knife, not a dip (5m at 0.36x the hour's pace, under 0.6x)  
   CA `762ZqBCd5m2q3QJ5UPkFL5rqdEUeygNkfTZrpGEZpump`
-- 13:03Z GATO (MIGRATED, $6,945,608 mcap, $4,238 5m vol): REJECT, Dev holds 3.3% (>1%) (V13, V17)  
-  CA `HsprHxBRgiVaQdRf3TnKNuZZtaX9JUSPgMFdAkk6pump`
-- 13:03Z REGRET (MIGRATED, $113,421 mcap, $73,035 5m vol): PASS at conviction 3, PASS: 8 minutes old, 6% off the high, right after a +59% candle at 7.5x pace. That's chasing a bond spike, not a setup. Watchlist for a higher low (V1).  
-  CA `Ae6TX54cU8EgcG6kVX4i5j1oz3FoZf2zRG7xvzmtpump`
 
 ## What its skips did next (last 48h)
 A skip "ran" if the coin reached the first target (1.5x) from the skip price before a 20% drop, "dumped" if the drop came first. Sampled every 10 min, followed 6h.
-- near the high / chasing: blocked 63, ran 9, dumped 42, flat 9, open 3 (saving losses: keep it)
+- near the high / chasing: blocked 63, ran 9, dumped 43, flat 9, open 2 (saving losses: keep it)
   - ran: DESSA up to 1.52x  
     CA `npz2FhoufQ7pKqhGpaipYWacrAkidyW2yDpVWSvpump`
   - ran: FLYWHEEL up to 2.23x  
     CA `BWMf44rD724R2bdgHWd88CDTVEjuPNQauw8s6S7ipump`
   - ran: iCoin up to 1.68x  
     CA `HgxEGTZ1Epb64RrYqcuHkqb1gGWWnF5WcPTCDWzApump`
-- too new / sniping: blocked 54, ran 4, dumped 49, flat 0, open 1 (saving losses: keep it)
+- too new / sniping: blocked 53, ran 4, dumped 48, flat 0, open 1 (saving losses: keep it)
   - ran: SPACECAT up to 1.56x  
     CA `61h4rUn7C21QNv1NJADc2oAxpAhr7f2WGqbXRDEupump`
   - ran: xpad up to 2.54x  
     CA `EV116Y5Y6cYvcugmXwLVZPhbZus1NxV5WbArJxtUxxxx`
   - ran: onlypump up to 1.92x  
     CA `J73efZvH6rkrJbFJdP2rqe473YJW7tyWmrNARUSzpump`
-- top 10 over 25%: blocked 42, ran 5, dumped 32, flat 4, open 1 (saving losses: keep it)
+- top 10 over 25%: blocked 41, ran 5, dumped 31, flat 4, open 1 (saving losses: keep it)
   - ran: Goyim up to 2.88x  
     CA `7aeDqEi2PfoYpJfw2eawzLnRH9NjQJ6jWMZ9FH1Hpump`
   - ran: George up to 1.88x  
     CA `4poKLzPuwjKJgXM6eF3EqBbMzWgkapi96vbNSkZipump`
   - ran: Beaver up to 2.56x  
     CA `5h44wfzwGHFnfVhNKtMLapAJNV9iqqbUgUB2FqyWpump`
-- falling knife (code): blocked 29, ran 3, dumped 22, flat 1, open 3 (saving losses: keep it)
+- falling knife (code): blocked 27, ran 3, dumped 21, flat 1, open 2 (saving losses: keep it)
   - ran: TYGR up to 1.58x  
     CA `5wCqCq6jbppuTocMeq6zd4UywAm64L1QNNxvEDAHpump`
   - ran: LUMI up to 1.76x  
@@ -135,7 +135,7 @@ A skip "ran" if the coin reached the first target (1.5x) from the skip price bef
     CA `DUTxGHL2LmpfjQaoK6LdZp8WQPoDiwvtDHVDf4fMpump`
   - ran: whitepaper up to 2.16x  
     CA `4tEvXHpd6JrCWJGByBS3qFBAtJbeoiEpgvWLw9hkpump`
-- falling knife / no higher low: blocked 18, ran 2, dumped 14, flat 2, open 0 (saving losses: keep it)
+- falling knife / no higher low: blocked 19, ran 2, dumped 14, flat 2, open 1 (saving losses: keep it)
   - ran: CREDIT up to 1.56x  
     CA `Ewyifvp8X9NxeaKawXamGXBFDisuMfcFfcdvSZ8opump`
   - ran: WASTED up to 1.64x  
@@ -160,14 +160,14 @@ A skip "ran" if the coin reached the first target (1.5x) from the skip price bef
     CA `3B3SJFo8kvVoMvvkzrUCPdpDeSeCL773AJ3kNLWJpump`
 
 ## Rules it changed from results and skips
-- 11-01 07:42Z tightened: Confirm the entry and the flow: MIGRATED entries need 5m at or above the hourly pace; below pace is a PASS, not a probe (6 of 16 losers never went above 1.01x. HYPERCHAN (0.73x pace, −15%), BLUE (fading pace, −30%) and AAPLCAT (below pace, −31%) were all probes bought below pace. Both real winners (CATBOT, FLOATER) had flow well above pace. Merged the old standalone confirm-entry rule into this one.)
-- 11-01 07:42Z tightened: DIP gate: an already-printed catalyst rates a probe at most until it reclaims the pullback high (SIS had 1.16x pace and clean holders, but the rebrand story was already half-priced after $3.2M of 24h volume. It never went green and lost 31%. DIPs are 0 for 5, so a DIP still needs the full proven shape for 8+. Owner's 0.7x gate and conviction sizing are kept.)
-- 11-01 07:42Z tightened: Stop review defaults to SELL; holding once now also requires that the trade went green first (7 of 7 stop reviews closed worse than the stop: CATCULUS −59%, SI −38%, HEXN −36%, SIS −31%, AAPLCAT −31%, PILLSEY −31%, BLUE −30%, against a −20% stop. Waiting costs about 10 points a time.)
 - 11-01 07:42Z dropped: Any fee, friction or minimum-position-size rule, and any rule setting initials, stop or trail (Code owns the fee check (3x cost target, 20% max friction). Owner fixed initials at 1.5x, stop at 20% and trail at 35%. The old '4x → 25% trail' idea from the CATBOT lesson is not written back.)
 - 11-01 10:46Z tightened: Proven shape (MIGRATED leader 25–45% off the high) rates 8/9, with pace at or above hourly as a must (Band trades: CATBOT +93.8%, FLOATER +50.5%, SWAN −0.7%, CPU and FLOAT peaked at 1.63–1.64x (under today's 1.5x initials both would have banked their cost). BLUE and AAPLCAT were the band's never-green losers, and both were bought below pace. Wording made sharper, substance unchanged.)
 - 11-01 10:46Z tightened: DIP gate: 5m ≥0.7x hourly (now enforced in code at 0.7, was 0.6), 40–70% drawdown, live story; LARP dip = PASS; printed catalyst = probe until reclaim (Owner set 0.7 with no 'rising' needed. Falling-knife code skips went 4 ran, 23 dumped. DIPs taken are 0 for 5 (−$6.70; HEXN twice on a thin LARP story, SIS with its catalyst already priced in). Probation is over per the owner, so DIPs are sized by conviction, and conviction 8+ needs the full shape.)
 - 11-01 10:46Z dropped: Any fee, friction, minimum-size, initials, stop or trail rule (Code owns the fee/size check, and the owner sets initials 1.5x / stop 20% / trail 35%. None of these are in the new list. The retired fee notes in my lessons stay retired.)
 - 11-01 10:46Z dropped: Rating scale (owner: press clean setups).** If the hard lines pass, flow is live (5m volume at least $10k and at or above the hourly pace) and the first target is at least 1.5x away, rate it 7. A 5–6 is a probe. Under 5 is a PASS, and every PASS names its blocker. The goal is a reason to rate the proven shape 8–9. It never waives a hard line. (Owner override: the goal is set to push)
+- 11-01 13:51Z added: Never-green cut: sell at market if the trade isn't at 1.05x within 15 minutes and 5m volume is under the hourly pace (5 losers never went green (SI −38%, HEXN −36%, BLUE −30%, SIS −31%, AAPLCAT −31%). Each one gapped through the −20% stop during the stop review, and those trades alone cost about $15 of the −$19.48 total. Cutting earlier when there's no flow is how losses stay small.)
+- 11-01 13:51Z tightened: DIP attention gate aligned to 0.7x in code (it was 0.6) (Falling-knife skips went 3 ran, 23 dumped, and DIPs are 0 for 5 (−$6.70). This brings the code line in line with the owner's 0.7x.)
+- 11-01 13:51Z dropped: Any fee, friction or minimum-size wording and any trail-tightening idea from the lessons (The code fee check owns sizing. Initials (1.5x), the 20% stop and the 35% trail are set by the owner, so they're not learned rules.)
 
 ## Recent lessons
 - [2026-10-30 01:19] Expected: SWAN was a MIGRATED pullback buy, 29% off its high with a higher-low base and $49k on the 5m, and I wanted to retest $166k (about 1.4x) before taking initials at 1.5x (V1, V6). What happened: it peaked at exactly 1.40x, the retest level my own thesis named, then rejected there, and the break-even stop sold it at 1.16x for -0.7%. The pullback-entry rule and the 1.3x break-even rule both did their jobs, since a 1.4x peak didn't turn into a real loss. Rule for next time: when the prior high I'm targeting sits below my initials multiple, sell part of the position at that level (sell initials or half, V11) instead of waiting for 1.5x. That changes the exit, not the pick, so it's a refinement from one trade, not a new ban.
@@ -185,13 +185,13 @@ A skip "ran" if the coin reached the first target (1.5x) from the skip price bef
 Meta: fresh pump.fun launches under 1h old are taking the volume: REGRET ($113k, $73k 5m, 0.68 buys, 0.1h), SAFU ($24k bonding curve, $27k 5m) and P2P ($31k, $19k 5m, -19% 1h, wash suspicion). Fading: cats (PAWCAT 5m about 0.36x hourly pace, GATO 0.37 buys), the Yak copy, KO, and politics (LAPTOP is a pass on the V13 politician rule; MARS is dead). The crawler summary is stale: SA rugged (-98%, $1.8k, 0 vol) and MARVIN isn't in the scan, so no trade on either. Setups: REGRET as MIGRATED only if holders, bundles and dev come back clean (young-chart risk). P2P only if holders show the volume isn't wash. SAFU is watch-only until it's older (V1).
 
 ## Moving most in its scans, last 30 min (1h volume)
-- P2P: $174,359 1h vol, $15,399 mcap, -88% 1h  
-  CA `8ANLUXihz9FrSy6Jbg85CGsuPCpPjf5S9ZUXNRG5pump`
-- 白いヤク: $164,545 1h vol, $80,839 mcap, -33% 1h  
-  CA `6jFcYpa95qnzX3Kui4TTyPCEzQorHRCHXhoCAg5tpump`
+- REGRET: $207,888 1h vol, $2,177 mcap, -94% 1h  
+  CA `Ae6TX54cU8EgcG6kVX4i5j1oz3FoZf2zRG7xvzmtpump`
+- PAWCAT: $194,310 1h vol, $3,146,243 mcap, -37% 1h  
+  CA `762ZqBCd5m2q3QJ5UPkFL5rqdEUeygNkfTZrpGEZpump`
+- DESSA: $152,153 1h vol, $20,739,751 mcap, -12% 1h  
+  CA `npz2FhoufQ7pKqhGpaipYWacrAkidyW2yDpVWSvpump`
 - REGRETAMINE: $133,628 1h vol, $126,973 mcap, +218% 1h  
   CA `57piTgZ3PUbrf3C59qJXrCwAms5VEa5ys1KPZNYSpump`
-- PIRATE: $125,173 1h vol, $6,184 mcap, -84% 1h  
+- PIRATE: $96,827 1h vol, $6,139 mcap, -86% 1h  
   CA `gzQXRwGRzfKLHfaV1f84QT7e5mt4vevu7MgacEfpump`
-- DESSA: $117,806 1h vol, $22,509,084 mcap, -4% 1h  
-  CA `npz2FhoufQ7pKqhGpaipYWacrAkidyW2yDpVWSvpump`
