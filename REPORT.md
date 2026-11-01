@@ -1,9 +1,9 @@
 # Trencher live report
 
-Updated 2026-11-01T05:49:19Z (paper trading, never real money)
+Updated 2026-11-01T06:04:24Z (paper trading, never real money)
 
-- Equity: $82.22 (-17.8% vs $100 start)
-- Goal: $1,000 by 2026-11-05 05:03Z (pressing for it): at 8.2% of it, 4 days left, needs +87.7% a day from here
+- Equity: $82.43 (-17.6% vs $100 start)
+- Goal: $1,000 by 2026-11-05 05:03Z (pressing for it): at 8.2% of it, 4 days left, needs +87.9% a day from here
 - Closed trades: 18, 3 wins
 - Fees paid: $12.31 (axiom $2.19, network $7.87, pool $2.13), plus $3.23 lost to slippage
 - New trades: on
@@ -24,10 +24,10 @@ Updated 2026-11-01T05:49:19Z (paper trading, never real money)
   - stop loss: 7, 0 won, net $-15.73, fees+slip $5.79, peak 1.1x → 0.64x
   - trailing stop: 2, 2 won, net $+4.21, fees+slip $2.04, peak 3.32x → 1.72x
   - other: 1, 0 won, net $-0.03, fees+slip $0.67, peak 1.4x → 0.99x
-- To $1,000: $917.78 to go; at $-0.91 a trade this pace doesn't get there
+- To $1,000: $917.57 to go; at $-0.91 a trade this pace doesn't get there
 
 ## Open positions
-- AAPLCAT (MIGRATED): cost $10.0, 0.89x, fees $0.39  
+- AAPLCAT (MIGRATED): cost $10.0, 0.91x, fees $0.39  
   CA `GYKnd6jGUSQoBUnj6LdGCBtCWYDgr2Zd6QwNPcy5pump`
 
 ## Recent trades
@@ -75,9 +75,15 @@ Updated 2026-11-01T05:49:19Z (paper trading, never real money)
   CA `FdKdpz11GsTofLaNiddrhxrsE4APZYSSfLFqQ9YKpump`
 
 ## Last scan
-- 05:48Z: 4 coins, 3 with pairs, 0 passed the market filters, 0 researched
+- 06:04Z: 4 coins, 3 with pairs, 0 passed the market filters, 0 researched
 
 ## Coins it looked at, and why it passed
+- 06:02Z BLUE (DIP, $309,663 mcap, $4,754 5m vol): REJECT, Dip with fading attention is a falling knife, not a dip (5m at 0.40x the hour's pace, under 0.6x)  
+  CA `CPoGSmcjprCvzA2MFYLJMpQkGjmgVzKg4RVwMdrzpump`
+- 05:58Z tipr (DIP, $173,971 mcap, $6,027 5m vol): REJECT, Dip with fading attention is a falling knife, not a dip (5m at 0.21x the hour's pace, under 0.6x)  
+  CA `3kRQDKPGqMWwBdGjiVPpPqVzFsnYG5PDqvrVz1D2pump`
+- 05:49Z BTC (MIGRATED, $106,711 mcap, $42,273 5m vol): REJECT, Top 10 hold 28.6% ex-pool (>25%) (V13)  
+  CA `6Kk8M1wGrWxCZ2qJiSr2W52wXKW3spBUwg5yx6r9pump`
 - 05:47Z iTech (MIGRATED, $251,823 mcap, $4,367 5m vol): PASS at conviction 4, PASS — iTech is 22% off the high with $4.4k on the 5m and a red last candle, and the $324k high is only 1.29x away. Blockers: flow below pace, target below initials (V1, V6).  
   CA `x94ouReAXGWHfNnGokusmmfNttSNEXyfY4ZCQq9pump`
 - 05:46Z Bitcoin (MIGRATED, $343,603 mcap, $8,566 5m vol): PASS at conviction 3, PASS: shallow-band breakout without the breakout. 5m is $8.6k and down 4%, the first resistance is only 1.14x away, and top 10 hold 24.1%. Blocker: target below initials (V1, V6).  
@@ -92,12 +98,6 @@ Updated 2026-11-01T05:49:19Z (paper trading, never real money)
   CA `GYKnd6jGUSQoBUnj6LdGCBtCWYDgr2Zd6QwNPcy5pump`
 - 05:30Z PAWCAT (DIP, $3,302,604 mcap, $3,676 5m vol): REJECT, Dip with fading attention is a falling knife, not a dip (5m at 0.57x the hour's pace, under 0.6x)  
   CA `762ZqBCd5m2q3QJ5UPkFL5rqdEUeygNkfTZrpGEZpump`
-- 05:20Z GATO (MIGRATED, $6,327,313 mcap, $2,187 5m vol): REJECT, Dev holds 3.3% (>1%) (V13, V17)  
-  CA `HsprHxBRgiVaQdRf3TnKNuZZtaX9JUSPgMFdAkk6pump`
-- 05:18Z Rudy (MIGRATED, $42,264 mcap, $27,247 5m vol): PASS at conviction 2, PASS — 9 minutes old, 7.6% off the high on a +36% 5m spike at 4.6x pace, and the other Rudy has twice its 5m volume. Chasing a fresh migration in a vamp field (V1, V3, V6).  
-  CA `CnMPESvPAmdgZzXuYzydyXtyE1QsyN97jnjDKFtqpump`
-- 05:17Z BLUE (DIP, $343,940 mcap, $8,081 5m vol): PASS at conviction 3, PASS: stopped out of BLUE at $402k, now $344k mid-range with the same 6.75% bundle cluster and 5m under $10k. The reasons I left still hold. (V3, V1, V6)  
-  CA `CPoGSmcjprCvzA2MFYLJMpQkGjmgVzKg4RVwMdrzpump`
 
 ## What its skips did next (last 48h)
 A skip "ran" if the coin reached the first target (1.5x) from the skip price before a 20% drop, "dumped" if the drop came first. Sampled every 10 min, followed 6h.
@@ -108,21 +108,21 @@ A skip "ran" if the coin reached the first target (1.5x) from the skip price bef
     CA `6PNq3Dduz73HHFBFt1KYRqDEsgcPQE6BDDRgxAFupump`
   - ran: SPACECAT up to 1.56x  
     CA `61h4rUn7C21QNv1NJADc2oAxpAhr7f2WGqbXRDEupump`
-- near the high / chasing: blocked 53, ran 8, dumped 34, flat 5, open 6 (saving losses: keep it)
+- near the high / chasing: blocked 52, ran 8, dumped 33, flat 5, open 6 (saving losses: keep it)
   - ran: DESSA up to 1.52x  
     CA `npz2FhoufQ7pKqhGpaipYWacrAkidyW2yDpVWSvpump`
   - ran: FLYWHEEL up to 2.23x  
     CA `BWMf44rD724R2bdgHWd88CDTVEjuPNQauw8s6S7ipump`
   - ran: iCoin up to 1.68x  
     CA `HgxEGTZ1Epb64RrYqcuHkqb1gGWWnF5WcPTCDWzApump`
-- top 10 over 25%: blocked 45, ran 7, dumped 32, flat 3, open 3 (saving losses: keep it)
+- top 10 over 25%: blocked 46, ran 7, dumped 33, flat 3, open 3 (saving losses: keep it)
   - ran: ZERO up to 1.8x  
     CA `Ddwf94wedgCuMHAkwgti8A7sL2CxvBYJStJBj2cFpump`
   - ran: BEAST up to 2.52x  
     CA `3mh5pgk58HPZwEinnZNUbsJpUoyqYa23zS2n442Zpump`
   - ran: HYDESK up to 1.78x  
     CA `BzndCZ2ZrjUA21aVW7t6AWEENRAps3EmdQg9hf94pump`
-- falling knife (code): blocked 28, ran 3, dumped 21, flat 0, open 4 (saving losses: keep it)
+- falling knife (code): blocked 29, ran 3, dumped 22, flat 0, open 4 (saving losses: keep it)
   - ran: TYGR up to 1.58x  
     CA `5wCqCq6jbppuTocMeq6zd4UywAm64L1QNNxvEDAHpump`
   - ran: LUMI up to 1.76x  
@@ -158,7 +158,7 @@ A skip "ran" if the coin reached the first target (1.5x) from the skip price bef
 - dev share over 1%: blocked 11, ran 1, dumped 8, flat 1, open 1 (saving losses: keep it)
   - ran: IGLU up to 1.54x  
     CA `34YQhrgkWoeFnm6LrcnmV3PLyDaMSNZikzUjyMmupump`
-- hack story (owner rule): blocked 11, ran 1, dumped 3, flat 5, open 2 (saving losses: keep it)
+- hack story (owner rule): blocked 11, ran 1, dumped 4, flat 5, open 1 (saving losses: keep it)
   - ran: ACT:H up to 1.53x  
     CA `3B3SJFo8kvVoMvvkzrUCPdpDeSeCL773AJ3kNLWJpump`
 
@@ -190,11 +190,11 @@ Meta: fresh pump.fun launches getting farmed. onlypump -99%, HODL -92%, Movember
 ## Moving most in its scans, last 30 min (1h volume)
 - SIS: $440,474 1h vol, $549,941 mcap, -18% 1h  
   CA `FdKdpz11GsTofLaNiddrhxrsE4APZYSSfLFqQ9YKpump`
+- tipr: $346,945 1h vol, $173,971 mcap, -29% 1h  
+  CA `3kRQDKPGqMWwBdGjiVPpPqVzFsnYG5PDqvrVz1D2pump`
 - AAPLCAT: $176,231 1h vol, $1,143,723 mcap, -4% 1h  
   CA `GYKnd6jGUSQoBUnj6LdGCBtCWYDgr2Zd6QwNPcy5pump`
-- PURPLE: $110,111 1h vol, $8,969 mcap, +155% 1h  
-  CA `GfrPYpkdkEPzMMYKUdJcZtMsKQnqmPBN39uewoJppump`
-- ELON: $106,004 1h vol, $2,368 mcap, -94% 1h  
-  CA `J84L4fxm3WwKvxWYzcRwV1fgLyTTUGHZomX7VurSpump`
-- PAWCAT: $77,340 1h vol, $3,302,604 mcap, -8% 1h  
-  CA `762ZqBCd5m2q3QJ5UPkFL5rqdEUeygNkfTZrpGEZpump`
+- Rudy: $158,799 1h vol, $8,697 mcap, +91% 1h  
+  CA `635MGwH377EQyGGwNuEEB7VAC1mGyAbXec6BTQRxpump`
+- BLUE: $142,001 1h vol, $309,663 mcap, -8% 1h  
+  CA `CPoGSmcjprCvzA2MFYLJMpQkGjmgVzKg4RVwMdrzpump`
