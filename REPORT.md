@@ -1,13 +1,13 @@
 # Trencher live report
 
-Updated 2026-11-01T19:12:08Z (paper trading, never real money)
+Updated 2026-11-01T19:27:18Z (paper trading, never real money)
 
 - Equity: $80.53 (-19.5% vs $100 start)
-- Goal: $1,000 by 2026-11-05 05:03Z (pressing for it): at 8.1% of it, 3.4 days left, needs +109.3% a day from here
+- Goal: $1,000 by 2026-11-05 05:03Z (pressing for it): at 8.1% of it, 3.4 days left, needs +109.8% a day from here
 - Closed trades: 19, 3 wins
 - Fees paid: $12.66 (axiom $2.26, network $8.06, pool $2.21), plus $3.34 lost to slippage
 - New trades: on
-- Brain: subscription, 621 calls and 0 plan-limit hits in 48h
+- Brain: subscription, 622 calls and 0 plan-limit hits in 48h
 
 ## Scorecard (after fees)
 - 19 closed, 3 won (16%), net $-19.48
@@ -74,9 +74,17 @@ Updated 2026-11-01T19:12:08Z (paper trading, never real money)
   CA `GYKnd6jGUSQoBUnj6LdGCBtCWYDgr2Zd6QwNPcy5pump`
 
 ## Last scan
-- 19:11Z: 5 coins, 5 with pairs, 0 passed the market filters, 0 researched
+- 19:26Z: 5 coins, 4 with pairs, 0 passed the market filters, 0 researched
 
 ## Coins it looked at, and why it passed
+- 19:25Z AI (MIGRATED, $79,907 mcap, $110,668 5m vol): PASS at conviction 2, PASS: 2 minutes old and still bleeding off its bond spike, at 12x pace with a 6.2% bundle and a borrowed ticker. Blocker "too new" (V1, V3, V6).  
+  CA `HNxyGpz8AkLqmfBBKMzmugkPE5Bahj2bGPPTNgWGpump`
+- 19:23Z RAYDOG (MIGRATED, $93,420 mcap, $3,991 5m vol): REJECT, Top 10 hold 31.5% ex-pool (>25%) (V13)  
+  CA `7Y6QNhQ2FxL6JEqZHooqgkXQubeQNC6N9emJxytdWp65`
+- 19:20Z MOLE (FINAL_STRETCH, $19,651 mcap, $5,650 5m vol): PASS at conviction 3, PASS: chasing. The last 5m candle is +32% and price is only 7.7% off a high printed 6 minutes ago, on a 24-minute-old curve coin with top 10 at 22.5% (V1, V6).  
+  CA `HCftE2X71Aoqqo9sxGU3tFeZj8ywZn43LG2d9Yk7pump`
+- 19:18Z CBUCKS (MIGRATED, $2,000,014 mcap, $3,159 5m vol): REJECT, Top 10 hold 26.5% ex-pool (>25%) (V13)  
+  CA `DtcicPCKTKeAh7TDEzTym3hXeoHAoMiBdYJhMYxZpump`
 - 19:05Z CHOO (MIGRATED, $2,264,500 mcap, $10,750 5m vol): PASS at conviction 3, PASS: CHOO's 5m volume is $10.7k against a $94k-per-5m hourly pace (0.23x), so the crowd that pumped it is leaving, and the $2.99M high is only 1.32x away. Blocker: "flow below pace" (V1, V6).  
   CA `EJAxERvKU4kEVXn3NarjvRtgaMaJyP9ZuMeKA7JJpump`
 - 19:01Z Jason (DIP, $73,068 mcap, $2,912 5m vol): REJECT, Dev holds 1.3% (>1%) (V13, V17)  
@@ -89,25 +97,17 @@ Updated 2026-11-01T19:12:08Z (paper trading, never real money)
   CA `2Nyb2GXVoXM42hVQxJg5RppTbiN5SCZFL4LtZVVDpump`
 - 18:50Z Dacity (MIGRATED, $8,109,974 mcap, $8,246 5m vol): REJECT, Bundles: 10 linked wallet cluster(s) hold 23.8% of supply (>20%) (V17)  
   CA `nxPqZ4F7ux8Vph5NFu25rEP6Kx9Gr1U6Fmj36Rjpump`
-- 18:45Z AAPLCAT (DIP, $1,164,271 mcap, $177,844 5m vol): PASS at conviction 3, PASS: the 5m candle is up 48.5% on 7x the hourly volume pace, and 61% of the flow is sells. That's a spike being sold into, not a dip. Blocker: chasing (V1).  
-  CA `GYKnd6jGUSQoBUnj6LdGCBtCWYDgr2Zd6QwNPcy5pump`
-- 18:43Z Bitboy (FINAL_STRETCH, $24,727 mcap, $14,670 5m vol): REJECT, Top 10 hold 26.5% ex-pool (>25%) (V13)  
-  CA `GvXhSHnWrkAasjAUZeRzRfUBV2BJiiduaHarCWAEpump`
-- 18:38Z RAYDOG (MIGRATED, $114,657 mcap, $9,592 5m vol): REJECT, Top 10 hold 31.6% ex-pool (>25%) (V13)  
-  CA `7Y6QNhQ2FxL6JEqZHooqgkXQubeQNC6N9emJxytdWp65`
-- 18:25Z PAWCAT (MIGRATED, $95,864 mcap, $11,525 5m vol): PASS at conviction 2, PASS: 98.9% off an $8.37M peak, way past the 60% buy zone and 70% deepest dip, with 5m volume at 0.49x pace and still falling. Falling knife. (V1, V6)  
-  CA `762ZqBCd5m2q3QJ5UPkFL5rqdEUeygNkfTZrpGEZpump`
 
 ## What its skips did next (last 48h)
 A skip "ran" if the coin reached the first target (1.5x) from the skip price before a 20% drop, "dumped" if the drop came first. Sampled every 10 min, followed 6h.
-- near the high / chasing: blocked 64, ran 8, dumped 44, flat 8, open 4 (saving losses: keep it)
+- near the high / chasing: blocked 65, ran 8, dumped 45, flat 8, open 4 (saving losses: keep it)
   - ran: iCoin up to 1.68x  
     CA `HgxEGTZ1Epb64RrYqcuHkqb1gGWWnF5WcPTCDWzApump`
   - ran: AXIO up to 1.51x  
     CA `3mUcXkpVVkQ5ZJMctz2f1VBk4rwu3NRfNwVQZtDzpump`
   - ran: NATIONS up to 1.54x  
     CA `5ahor7yZ9EdXLzfS43aEPsfBsLtgocsi5sGc2Rsa58PG`
-- too new / sniping: blocked 49, ran 3, dumped 46, flat 0, open 0 (saving losses: keep it)
+- too new / sniping: blocked 50, ran 3, dumped 46, flat 0, open 1 (saving losses: keep it)
   - ran: xpad up to 2.54x  
     CA `EV116Y5Y6cYvcugmXwLVZPhbZus1NxV5WbArJxtUxxxx`
   - ran: onlypump up to 1.92x  
@@ -121,13 +121,13 @@ A skip "ran" if the coin reached the first target (1.5x) from the skip price bef
     CA `4poKLzPuwjKJgXM6eF3EqBbMzWgkapi96vbNSkZipump`
   - ran: Beaver up to 2.56x  
     CA `5h44wfzwGHFnfVhNKtMLapAJNV9iqqbUgUB2FqyWpump`
-- falling knife (code): blocked 25, ran 4, dumped 19, flat 1, open 1 (saving losses: keep it)
-  - ran: TYGR up to 1.58x  
-    CA `5wCqCq6jbppuTocMeq6zd4UywAm64L1QNNxvEDAHpump`
+- falling knife (code): blocked 24, ran 3, dumped 19, flat 1, open 1 (saving losses: keep it)
   - ran: LUMI up to 1.76x  
     CA `653joYuZ5EntuKd1bspZakjHdueMxHGs5Lvm7RdWpump`
   - ran: KIM up to 1.55x  
     CA `8pjfN5Ayb4rucGpYE3tZWN6v3EysizjPx1v62zx1pump`
+  - ran: BLUE up to 1.53x  
+    CA `CPoGSmcjprCvzA2MFYLJMpQkGjmgVzKg4RVwMdrzpump`
 - RugCheck didn't load: blocked 22, ran 3, dumped 16, flat 3, open 0 (saving losses: keep it)
   - ran: UNSAFU up to 1.61x  
     CA `4eq4JfnpdgqZTzeyR3GnRGHJQ3QhQT6Lp7nKnQ2nS7Rv`
@@ -187,11 +187,11 @@ The volume is in older coins waking back up. The sub-hour launch-and-rip style h
 ## Moving most in its scans, last 30 min (1h volume)
 - CHOO: $565,909 1h vol, $2,264,500 mcap, +22% 1h  
   CA `EJAxERvKU4kEVXn3NarjvRtgaMaJyP9ZuMeKA7JJpump`
-- AAPLCAT: $304,771 1h vol, $1,164,271 mcap, +84% 1h  
-  CA `GYKnd6jGUSQoBUnj6LdGCBtCWYDgr2Zd6QwNPcy5pump`
-- Maxxmas: $135,295 1h vol, $81,750 mcap, +99% 1h  
-  CA `MAXXib7SQAQn4ymrwhhR9qMRUcYv8BNhbQxizJn5CCk`
-- Dacity: $116,682 1h vol, $8,109,974 mcap, +3% 1h  
-  CA `nxPqZ4F7ux8Vph5NFu25rEP6Kx9Gr1U6Fmj36Rjpump`
-- ZECRET: $83,097 1h vol, $2,518 mcap, -95% 1h  
+- AI: $110,668 1h vol, $79,907 mcap, +125% 1h  
+  CA `HNxyGpz8AkLqmfBBKMzmugkPE5Bahj2bGPPTNgWGpump`
+- ZECRET: $73,501 1h vol, $2,459 mcap, -94% 1h  
   CA `ChCi2x2bpevrNyeRoPHLXHzmaCdGQPuU15CNqxY1pump`
+- EVOLVE: $72,234 1h vol, $2,384 mcap, -94% 1h  
+  CA `1f3soMcKyii7AFPNDCq9XWcgB8oEzCp4XMuZBzs7evo`
+- RAYDOG: $71,041 1h vol, $93,420 mcap, +80% 1h  
+  CA `7Y6QNhQ2FxL6JEqZHooqgkXQubeQNC6N9emJxytdWp65`
