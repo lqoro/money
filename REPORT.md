@@ -1,13 +1,13 @@
 # Trencher live report
 
-Updated 2026-11-01T19:57:32Z (paper trading, never real money)
+Updated 2026-11-01T20:12:47Z (paper trading, never real money)
 
 - Equity: $80.53 (-19.5% vs $100 start)
-- Goal: $1,000 by 2026-11-05 05:03Z (pressing for it): at 8.1% of it, 3.4 days left, needs +110.8% a day from here
+- Goal: $1,000 by 2026-11-05 05:03Z (pressing for it): at 8.1% of it, 3.4 days left, needs +111.3% a day from here
 - Closed trades: 19, 3 wins
 - Fees paid: $12.66 (axiom $2.26, network $8.06, pool $2.21), plus $3.34 lost to slippage
 - New trades: on
-- Brain: subscription, 617 calls and 0 plan-limit hits in 48h
+- Brain: subscription, 616 calls and 0 plan-limit hits in 48h
 
 ## Scorecard (after fees)
 - 19 closed, 3 won (16%), net $-19.48
@@ -74,9 +74,15 @@ Updated 2026-11-01T19:57:32Z (paper trading, never real money)
   CA `GYKnd6jGUSQoBUnj6LdGCBtCWYDgr2Zd6QwNPcy5pump`
 
 ## Last scan
-- 19:56Z: 7 coins, 7 with pairs, 0 passed the market filters, 0 researched
+- 20:12Z: 3 coins, 3 with pairs, 0 passed the market filters, 0 researched
 
 ## Coins it looked at, and why it passed
+- 20:11Z AI (MIGRATED, $147,341 mcap, $20,104 5m vol): PASS at conviction 3, PASS — 48-minute-old coin bleeding off its spike, 5m at 0.28x pace and a 7.6% bundle cluster. Crowd's leaving, not arriving. (V1, V3)  
+  CA `HNxyGpz8AkLqmfBBKMzmugkPE5Bahj2bGPPTNgWGpump`
+- 20:07Z BABYKIN (MIGRATED, $98,326 mcap, $89,334 5m vol): PASS at conviction 3, PASS: 9 minutes old and spiking (+39% on the 5m, 6.2x pace). Blocker "too new", then "chasing spike". Clean holders don't change that. Watchlist it for a base after 1h (V1, V5).  
+  CA `8BxKRVNTRzM7LTJ9Q6rqKQFwXtMjZjjSNYNDyjLSpump`
+- 19:58Z WaterMark (FINAL_STRETCH, $30,305 mcap, $24,966 5m vol): PASS at conviction 3, PASS — 14 minutes old, last 5m candle +32% on 5x pace near bond. That's chasing a spike into the pre-bond dump with no story behind it. Blocker: chasing / too new (V1, V5).  
+  CA `3Y6MtLKM7NeaBCAffACi8a94f7vvdrrawd4wkRt4pump`
 - 19:51Z CHOO (MIGRATED, $2,273,744 mcap, $2,867 5m vol): PASS at conviction 3, PASS — flow below pace: $2.9k on the 5m at 0.3x the hourly average, 24% off the high with no breakout. The crowd's gone quiet (V1, V6).  
   CA `EJAxERvKU4kEVXn3NarjvRtgaMaJyP9ZuMeKA7JJpump`
 - 19:49Z Bitboy (FINAL_STRETCH, $33,898 mcap, $3,755 5m vol): REJECT, RugCheck danger: Large Amount of LP Unlocked 88.16%  
@@ -91,30 +97,24 @@ Updated 2026-11-01T19:57:32Z (paper trading, never real money)
   CA `GYKnd6jGUSQoBUnj6LdGCBtCWYDgr2Zd6QwNPcy5pump`
 - 19:28Z GATO (MIGRATED, $6,942,877 mcap, $10,545 5m vol): REJECT, Dev holds 3.3% (>1%) (V13, V17)  
   CA `HsprHxBRgiVaQdRf3TnKNuZZtaX9JUSPgMFdAkk6pump`
-- 19:25Z AI (MIGRATED, $79,907 mcap, $110,668 5m vol): PASS at conviction 2, PASS: 2 minutes old and still bleeding off its bond spike, at 12x pace with a 6.2% bundle and a borrowed ticker. Blocker "too new" (V1, V3, V6).  
-  CA `HNxyGpz8AkLqmfBBKMzmugkPE5Bahj2bGPPTNgWGpump`
-- 19:23Z RAYDOG (MIGRATED, $93,420 mcap, $3,991 5m vol): REJECT, Top 10 hold 31.5% ex-pool (>25%) (V13)  
-  CA `7Y6QNhQ2FxL6JEqZHooqgkXQubeQNC6N9emJxytdWp65`
-- 19:20Z MOLE (FINAL_STRETCH, $19,651 mcap, $5,650 5m vol): PASS at conviction 3, PASS: chasing. The last 5m candle is +32% and price is only 7.7% off a high printed 6 minutes ago, on a 24-minute-old curve coin with top 10 at 22.5% (V1, V6).  
-  CA `HCftE2X71Aoqqo9sxGU3tFeZj8ywZn43LG2d9Yk7pump`
 
 ## What its skips did next (last 48h)
 A skip "ran" if the coin reached the first target (1.5x) from the skip price before a 20% drop, "dumped" if the drop came first. Sampled every 10 min, followed 6h.
-- near the high / chasing: blocked 63, ran 8, dumped 43, flat 8, open 4 (saving losses: keep it)
+- near the high / chasing: blocked 62, ran 8, dumped 43, flat 8, open 3 (saving losses: keep it)
   - ran: iCoin up to 1.68x  
     CA `HgxEGTZ1Epb64RrYqcuHkqb1gGWWnF5WcPTCDWzApump`
   - ran: AXIO up to 1.51x  
     CA `3mUcXkpVVkQ5ZJMctz2f1VBk4rwu3NRfNwVQZtDzpump`
   - ran: NATIONS up to 1.54x  
     CA `5ahor7yZ9EdXLzfS43aEPsfBsLtgocsi5sGc2Rsa58PG`
-- too new / sniping: blocked 49, ran 4, dumped 45, flat 0, open 0 (saving losses: keep it)
+- too new / sniping: blocked 49, ran 3, dumped 45, flat 0, open 1 (saving losses: keep it)
   - ran: xpad up to 2.54x  
     CA `EV116Y5Y6cYvcugmXwLVZPhbZus1NxV5WbArJxtUxxxx`
   - ran: onlypump up to 1.92x  
     CA `J73efZvH6rkrJbFJdP2rqe473YJW7tyWmrNARUSzpump`
   - ran: paws up to 1.51x  
     CA `CCF6ui6YjjhLaVtuYLH8b5jza8jHathqww5VbrMapump`
-- top 10 over 25%: blocked 41, ran 6, dumped 28, flat 3, open 4 (saving losses: keep it)
+- top 10 over 25%: blocked 41, ran 7, dumped 28, flat 3, open 3 (saving losses: keep it)
   - ran: George up to 1.88x  
     CA `4poKLzPuwjKJgXM6eF3EqBbMzWgkapi96vbNSkZipump`
   - ran: Beaver up to 2.56x  
@@ -135,7 +135,7 @@ A skip "ran" if the coin reached the first target (1.5x) from the skip price bef
     CA `DUTxGHL2LmpfjQaoK6LdZp8WQPoDiwvtDHVDf4fMpump`
   - ran: whitepaper up to 2.16x  
     CA `4tEvXHpd6JrCWJGByBS3qFBAtJbeoiEpgvWLw9hkpump`
-- RugCheck danger: blocked 21, ran 3, dumped 17, flat 0, open 1 (saving losses: keep it)
+- RugCheck danger: blocked 21, ran 4, dumped 17, flat 0, open 0 (saving losses: keep it)
   - ran: SUGAR up to 1.74x  
     CA `HLzTFsX99uqzAP7uK36gJ2pPHGfRM8ugvxXWJzjSpump`
   - ran: AIC up to 1.6x  
@@ -145,7 +145,7 @@ A skip "ran" if the coin reached the first target (1.5x) from the skip price bef
 - falling knife / no higher low: blocked 13, ran 1, dumped 10, flat 2, open 0 (saving losses: keep it)
   - ran: CREDIT up to 1.56x  
     CA `Ewyifvp8X9NxeaKawXamGXBFDisuMfcFfcdvSZ8opump`
-- crowd leaving / fading volume: blocked 12, ran 2, dumped 6, flat 2, open 2 (saving losses: keep it)
+- crowd leaving / fading volume: blocked 13, ran 2, dumped 7, flat 2, open 2 (saving losses: keep it)
   - ran: AXIO up to 1.51x  
     CA `3mUcXkpVVkQ5ZJMctz2f1VBk4rwu3NRfNwVQZtDzpump`
   - ran: Apple up to 1.58x  
@@ -157,17 +157,17 @@ A skip "ran" if the coin reached the first target (1.5x) from the skip price bef
     CA `9yEKBwczdqoox7Red6GGPTrJ2dUbMvFUagdjxFqHpump`
   - ran: DOJAK up to 2.62x  
     CA `E5aeDjgq6ZSzAmihKoh9JPEhwK2bMCbZLJf6LYT9pump`
-- thin 5m volume: blocked 7, ran 0, dumped 3, flat 3, open 1 (saving losses: keep it)
+- thin 5m volume: blocked 7, ran 0, dumped 3, flat 4, open 0 (saving losses: keep it)
 
 ## Rules it changed from results and skips
-- 11-01 10:46Z dropped: Any fee, friction, minimum-size, initials, stop or trail rule (Code owns the fee/size check, and the owner sets initials 1.5x / stop 20% / trail 35%. None of these are in the new list. The retired fee notes in my lessons stay retired.)
-- 11-01 10:46Z dropped: Rating scale (owner: press clean setups).** If the hard lines pass, flow is live (5m volume at least $10k and at or above the hourly pace) and the first target is at least 1.5x away, rate it 7. A 5–6 is a probe. Under 5 is a PASS, and every PASS names its blocker. The goal is a reason to rate the proven shape 8–9. It never waives a hard line. (Owner override: the goal is set to push)
-- 11-01 13:51Z added: Never-green cut: sell at market if the trade isn't at 1.05x within 15 minutes and 5m volume is under the hourly pace (5 losers never went green (SI −38%, HEXN −36%, BLUE −30%, SIS −31%, AAPLCAT −31%). Each one gapped through the −20% stop during the stop review, and those trades alone cost about $15 of the −$19.48 total. Cutting earlier when there's no flow is how losses stay small.)
-- 11-01 13:51Z tightened: DIP attention gate aligned to 0.7x in code (it was 0.6) (Falling-knife skips went 3 ran, 23 dumped, and DIPs are 0 for 5 (−$6.70). This brings the code line in line with the owner's 0.7x.)
 - 11-01 13:51Z dropped: Any fee, friction or minimum-size wording and any trail-tightening idea from the lessons (The code fee check owns sizing. Initials (1.5x), the 20% stop and the 35% trail are set by the owner, so they're not learned rules.)
 - 11-01 16:56Z tightened: DIP gate: 0.7x volume line (code param raised from 0.6), live story, catalyst-printed dips rate 5–6 until reclaim (DIPs 0 for 5 (−$6.70). Falling-knife (code) skips: 4 ran, 20 dumped. SIS's news catalyst had already printed and it lost 31%. Owner set 0.7 with no 'rising' requirement, so no rising requirement is added.)
 - 11-01 16:56Z dropped: Tighten trail to 25% past 4x (CATBOT lesson) (Owner sets the trail at 35% from peak after initials and code enforces it; a learned rule may not set a different trail.)
 - 11-01 16:56Z dropped: Any fee/friction cap or minimum position size (The code fee check owns this (target must pay 3x round-trip, round trip at most 20% of position); fix the pick or the exit instead.)
+- 11-01 20:00Z loosened: First-resistance target: was a flat PASS under 1.5x; now 1.3–1.5x rates max 7 with a half-sell on rejection, under 1.3x is PASS (Only two trades were behind this ban, and both scratched: PAWCAT +0.7% (resistance 1.32x) and SWAN -0.7% (1.4x, peaked exactly at resistance). The flat 1.5x rule also quietly removed the 25–33% part of my own money shape, because the prior high there sits under 1.5x. The owner wants more trades on clean setups, and blocking this zone saves almost nothing.)
+- 11-01 20:00Z tightened: DIP needs a printed higher low AND flow at or above pace (The higher low alone didn't hold: HEXN's second trade and SIS both printed higher lows and broke them. DIPs are 0 for 5. No-higher-low skips went 1 ran, 10 dumped. The owner dropped only the 'rising volume' requirement, and I'm not adding it back: the pace test is a level, not a trend.)
+- 11-01 20:00Z tightened: Stop review defaults to SELL; the hold condition is now based on visible holder data (8 of 8 reviews closed worse than the stop (-27% to -59%). I replaced 'bundle exit visible / story intact' with things I can check: the top-10/insider share dropped, the trade went green first, and 5m volume is at or above pace.)
+- 11-01 20:00Z dropped: All fee/friction/minimum-size rules and anything setting initials, stop or trail (Code owns fees and sizing now. Owner exits are fixed at 1.5x initials, a -20% stop and a 35% trail. The old 'tighten the trail to 25% past 4x' from the CATBOT lesson is dropped.)
 
 ## Recent lessons
 - [2026-10-30 01:19] Expected: SWAN was a MIGRATED pullback buy, 29% off its high with a higher-low base and $49k on the 5m, and I wanted to retest $166k (about 1.4x) before taking initials at 1.5x (V1, V6). What happened: it peaked at exactly 1.40x, the retest level my own thesis named, then rejected there, and the break-even stop sold it at 1.16x for -0.7%. The pullback-entry rule and the 1.3x break-even rule both did their jobs, since a 1.4x peak didn't turn into a real loss. Rule for next time: when the prior high I'm targeting sits below my initials multiple, sell part of the position at that level (sell initials or half, V11) instead of waiting for 1.5x. That changes the exit, not the pick, so it's a refinement from one trade, not a new ban.
@@ -191,13 +191,13 @@ Setups to research: (1) GATO as MIGRATED momentum, inside the V6 range with risi
 Passes: AI (Authentic Inu) is zero hours old and I don't snipe; RAYDOG has $4k on the 5m, under the $10k bar; LAPTOP is a political-figure coin (V13) and already crashed about 98%; the Binance-hack story is blocked by the hack rule. On the owner's note: I'll take every setup that clears the hard lines and rate clean ones 8 or 9 when they earn it, but the $1k deadline doesn't add a point to any rating. Only the holder and bundle checks do.
 
 ## Moving most in its scans, last 30 min (1h volume)
-- AAPLCAT: $628,041 1h vol, $863,963 mcap, +59% 1h  
-  CA `GYKnd6jGUSQoBUnj6LdGCBtCWYDgr2Zd6QwNPcy5pump`
-- Maxxmas: $153,334 1h vol, $73,780 mcap, +145% 1h  
-  CA `MAXXib7SQAQn4ymrwhhR9qMRUcYv8BNhbQxizJn5CCk`
-- HEN: $147,184 1h vol, $27,650 mcap, -24% 1h  
+- AI: $871,754 1h vol, $147,341 mcap, +325% 1h  
+  CA `HNxyGpz8AkLqmfBBKMzmugkPE5Bahj2bGPPTNgWGpump`
+- BABYKIN: $173,049 1h vol, $98,326 mcap, +109% 1h  
+  CA `8BxKRVNTRzM7LTJ9Q6rqKQFwXtMjZjjSNYNDyjLSpump`
+- HEN: $161,644 1h vol, $18,545 mcap, -49% 1h  
   CA `B1aBkk76gihamPjuKyHz7c7cgjdNxwBxc2NoJZCbpump`
-- Dacity: $119,640 1h vol, $7,244,908 mcap, -10% 1h  
-  CA `nxPqZ4F7ux8Vph5NFu25rEP6Kx9Gr1U6Fmj36Rjpump`
 - CHOO: $113,485 1h vol, $2,273,744 mcap, -6% 1h  
   CA `EJAxERvKU4kEVXn3NarjvRtgaMaJyP9ZuMeKA7JJpump`
+- FARM: $88,121 1h vol, $7,279 mcap, +57% 1h  
+  CA `82Ln9M32HgpWxkPYeWodseAVyKv6U42dPKMKhkDjpump`
