@@ -1,13 +1,13 @@
 # Trencher live report
 
-Updated 2026-11-01T04:33:40Z (paper trading, never real money)
+Updated 2026-11-01T04:48:50Z (paper trading, never real money)
 
 - Equity: $86.97 (-13.0% vs $100 start)
-- Goal: $1,000 by 2026-11-05 05:03Z (pressing for it): at 8.7% of it, 4 days left, needs +83.6% a day from here
+- Goal: $1,000 by 2026-11-05 05:03Z (pressing for it): at 8.7% of it, 4 days left, needs +83.9% a day from here
 - Closed trades: 17, 3 wins
 - Fees paid: $11.16 (axiom $1.90, network $7.29, pool $1.83), plus $2.81 lost to slippage
 - New trades: on
-- Brain: subscription, 637 calls and 1 plan-limit hits in 48h
+- Brain: subscription, 635 calls and 1 plan-limit hits in 48h
 
 ## Scorecard (after fees)
 - 17 closed, 3 won (18%), net $-13.03
@@ -74,9 +74,15 @@ Updated 2026-11-01T04:33:40Z (paper trading, never real money)
   CA `CPoGSmcjprCvzA2MFYLJMpQkGjmgVzKg4RVwMdrzpump`
 
 ## Last scan
-- 04:33Z: 2 coins, 2 with pairs, 0 passed the market filters, 0 researched
+- 04:48Z: 5 coins, 5 with pairs, 0 passed the market filters, 0 researched
 
 ## Coins it looked at, and why it passed
+- 04:45Z PAWCAT (MIGRATED, $3,748,003 mcap, $5,409 5m vol): PASS at conviction 3, PASS: first resistance at $4.05–4.24M is only 1.08–1.13x away and 5m flow is $5.4k at 0.79x pace. Target below initials, same as the flat PAWCAT trade 2h ago (V1, V6).  
+  CA `762ZqBCd5m2q3QJ5UPkFL5rqdEUeygNkfTZrpGEZpump`
+- 04:40Z SS (no setup, $39,227 mcap, $0 5m vol): REJECT, Hack story ("stolen" in the name or ticker): these tend to go down, owner rule  
+  CA `DNxivTUF4ycZUzUxK6J3w7u5Fq3pSYvrXCTV5Vwwpump`
+- 04:34Z GATO (MIGRATED, $6,179,389 mcap, $6,911 5m vol): REJECT, Dev holds 3.3% (>1%) (V13, V17)  
+  CA `HsprHxBRgiVaQdRf3TnKNuZZtaX9JUSPgMFdAkk6pump`
 - 04:31Z BLUE (DIP, $263,986 mcap, $10,405 5m vol): REJECT, Dip with fading attention is a falling knife, not a dip (5m at 0.35x the hour's pace, under 0.6x)  
   CA `CPoGSmcjprCvzA2MFYLJMpQkGjmgVzKg4RVwMdrzpump`
 - 04:29Z ANTS (MIGRATED, $1,404,461 mcap, $3,425 5m vol): PASS at conviction 3, PASS — 5.5% off the high with $3.4k on the 5m. That's chasing on thin flow, and the site still says "CA coming soon" across a 10-copy ticker (V1, V6, V13).  
@@ -91,12 +97,6 @@ Updated 2026-11-01T04:33:40Z (paper trading, never real money)
   CA `x94ouReAXGWHfNnGokusmmfNttSNEXyfY4ZCQq9pump`
 - 04:07Z BLOB (MIGRATED, $1,270,353 mcap, $3,713 5m vol): PASS at conviction 3, PASS: chasing. It's 8.5% under the high while 5m volume runs at half its hourly pace, and the AI-tribute story has no X and no GitHub behind it. Clean holders don't fix a crowd that's leaving. (V1, V6)  
   CA `8s11PkgQt4ZzdZ7oo84hK5t9HG1EvdgAjcg4W7Lpump`
-- 04:07Z BALLS (MIGRATED, $149,915 mcap, $24,004 5m vol): PASS at conviction 3, PASS: no higher low yet. BALLS is 6 minutes off a 4x spike, down 15.5% in the last 5m, and the only resistance overhead ($209k) is 1.39x away. It's also a copy of a ticker that two bigger coins already hold. (V1, V3)  
-  CA `HhBuvegE7Ew2stS5svkMcxL8povkaL8brwt9JUtfpump`
-- 04:06Z AAPLCAT (MIGRATED, $1,089,677 mcap, $5,030 5m vol): PASS at conviction 3, PASS: AAPLCAT. Clean holders, but 5m is $5k at 0.5x hourly pace and two bigger coins share the ticker. Blocker: flow below pace (V1, V6).  
-  CA `GYKnd6jGUSQoBUnj6LdGCBtCWYDgr2Zd6QwNPcy5pump`
-- 03:59Z PAWCAT (MIGRATED, $3,460,095 mcap, $2,855 5m vol): PASS at conviction 3, PASS — 5m volume $2.9k at 0.39x the hourly pace. Crowd's leaving; clean holders don't save a coin nobody's trading (V1, V6).  
-  CA `762ZqBCd5m2q3QJ5UPkFL5rqdEUeygNkfTZrpGEZpump`
 
 ## What its skips did next (last 48h)
 A skip "ran" if the coin reached the first target (1.5x) from the skip price before a 20% drop, "dumped" if the drop came first. Sampled every 10 min, followed 6h.
@@ -114,7 +114,7 @@ A skip "ran" if the coin reached the first target (1.5x) from the skip price bef
     CA `FDwCosavNvMiFB812ajJp3gG7eZ9c4bpgcnY6fDQpump`
   - ran: FLYWHEEL up to 2.23x  
     CA `BWMf44rD724R2bdgHWd88CDTVEjuPNQauw8s6S7ipump`
-- top 10 over 25%: blocked 47, ran 8, dumped 34, flat 3, open 2 (saving losses: keep it)
+- top 10 over 25%: blocked 45, ran 8, dumped 32, flat 3, open 2 (saving losses: keep it)
   - ran: Catori up to 1.52x  
     CA `FDwCosavNvMiFB812ajJp3gG7eZ9c4bpgcnY6fDQpump`
   - ran: ZERO up to 1.8x  
@@ -154,7 +154,7 @@ A skip "ran" if the coin reached the first target (1.5x) from the skip price bef
     CA `BzndCZ2ZrjUA21aVW7t6AWEENRAps3EmdQg9hf94pump`
   - ran: AXIO up to 1.51x  
     CA `3mUcXkpVVkQ5ZJMctz2f1VBk4rwu3NRfNwVQZtDzpump`
-- dev share over 1%: blocked 13, ran 1, dumped 10, flat 1, open 1 (saving losses: keep it)
+- dev share over 1%: blocked 12, ran 1, dumped 9, flat 1, open 1 (saving losses: keep it)
   - ran: IGLU up to 1.54x  
     CA `34YQhrgkWoeFnm6LrcnmV3PLyDaMSNZikzUjyMmupump`
 - hack story (owner rule): blocked 11, ran 1, dumped 3, flat 5, open 2 (saving losses: keep it)
@@ -162,14 +162,14 @@ A skip "ran" if the coin reached the first target (1.5x) from the skip price bef
     CA `3B3SJFo8kvVoMvvkzrUCPdpDeSeCL773AJ3kNLWJpump`
 
 ## Rules it changed from results and skips
-- 10-31 19:26Z dropped: Any fee, friction or minimum-size rule, and any rule setting initials, stop or trail (Code enforces the fee and size checks; the owner sets initials 1.5x, stop 20% and trail 35%. None of these appear in the rule list.)
-- 10-31 22:30Z tightened: Target rule now rates on the first resistance level, not the extension past it (PAWCAT's first resistance was 1.32x away and the trade time-stopped flat. Seven losers peaked between 1.12x and 1.40x. SWAN topped exactly at its 1.4x level.)
-- 10-31 22:30Z added: Entry has to be confirmed, not anticipated (SI, HEXN #1 and HYPERCHAN #1 all peaked at 0.99x, never went green, and each broke an existing rule by entering before the condition printed (no higher low, no base, flow below pace). Together they cost about 30% of the loss pool.)
 - 10-31 22:30Z tightened: DIP attention/story gate: code line moved to 0.7; DIPs need the full proven shape to rate 8+ (DIPs are 0 for 4 (−$3.39, expectancy −$0.85, the worst setup). Falling-knife (code) skips went 2 ran / 22 dumped. The owner's 0.7x gate is unchanged and DIPs are still sized by conviction.)
 - 11-01 01:34Z tightened: Shallow band 10–25% is a breakout-only trade (flow leader, cap 7, must be pressing the high on flow at or above pace) (Every shallow-band trade failed: HYPERCHAN −15% and −5%, PILLSEY −31%, PAWCAT +0.7% scratch. The 1.5x first-resistance rule can never pass a pullback this shallow, so the only way to honor the owner's 10% floor is to frame it as a breakout in progress.)
 - 11-01 01:34Z tightened: DIP gate: 5m at least 0.7x hourly (now in code), depth 40–70%, live story (DIPs are 0 for 4 (−$3.39). HEXN at 59.5% off lost twice. Falling-knife skips went 3 ran / 23 dumped (code) and 1 ran / 16 dumped (brain). The owner's 0.7x line is now enforced in code instead of only in my rules.)
 - 11-01 01:34Z tightened: Stop review defaults to SELL immediately (All 5 stop reviews closed worse than the stop: CATCULUS −59%, SI −38%, HEXN −36%, PILLSEY −31%, HEXN −27%. Any delay costs money.)
 - 11-01 01:34Z dropped: Any flat fee/friction cap or minimum position size wording (Code owns the fee check (first target must pay 3x the round trip, round trip at most 20% of the position). The retired fee parts of my lessons are not carried into the rules.)
+- 11-01 04:39Z tightened: Proven shape (flow leader 25–45% off the high, clean holders, pace at or above hourly) rates 8, or 9 with a live meta (Of 5 entries in this band, 4 reached at least 1.4x: CATBOT 4.44x (+94%), FLOATER 2.19x (+51%), CPU 1.63x, SWAN 1.40x. BLUE failed with fading pace and a bundle cluster. Both real winners came from this shape.)
+- 11-01 04:39Z tightened: Vamp field: leader only, and a bundle cluster in a big field is a PASS (Vamp skips: 1 ran, 5 dumped. BLUE, the leader of a 14-coin field with a noted bundle cluster, lost 30%. FLOATER, the leader of 23 copies with clean holders, won 51%.)
+- 11-01 04:39Z dropped: Separate 'hack stories: PASS' bullet (Merged into the hard-blocks bullet to stay within 15 rules. The rule itself is unchanged and the code still blocks hack stories.)
 
 ## Recent lessons
 - [2026-10-29 21:37] Expected: SI, a 35-minute-old migrated coin with $65k 5m volume and verified low bundles (0.65%), would retest its $256k peak, since I bought near the high under my bundle-verified exception. What happened: it never went green (0.99x peak), fell 27% from $218k to $160k in 7 minutes and closed −38% after a stop review, so clean bundle data did not protect a near-high momentum entry in a fresh post-migration dump (V1 pre/post-bond dumps, V6). This backs my "MIGRATED entries come on a pullback" rule over the exception, so next time a migrated coin within ~20% of its high waits for the 0.618 or POC retest even with clean bundles; it's one sample, so I'm not banning the exception, just watching whether it keeps losing.
@@ -187,13 +187,13 @@ A skip "ran" if the coin reached the first target (1.5x) from the skip price bef
 The meta right now is fresh pump.fun launches under an hour old taking the flow. Mamesuke ($39k, $38k 5m vol) and NIGUIN ($29k, $31k) are still on the curve, and tipr ($62k, $41k 5m) and "the blue pill" onlypump ($161k, $19k 5m) have already migrated. Next to them, BLUE ($357k, $78k 5m, 59% buys, 2h old, only -5.6% on the hour) gives a small blue/pill theme two coins of support. Cats are fading: AAPLCAT's 5m volume is about 0.5x its hourly pace, which fails the 0.7x DIP gate, and PAWCAT is at $2.9k 5m on a $3.5M cap. AI names are split. SIS ($725k) is holding real flow at about 1.0x pace with 67% buys. ANTS ("Anthropic") is down to $2.3k on the 5m, has nothing behind the name, and looks like a LARP (V1). The crawler's own summary is stale and I'm not using it: IF has already dumped 84% to $7k and is dead. Political coins (LAPTOP, TRUMP) are out under V13, and the hack story is out by the owner's rule. Setups to research now: BLUE as MIGRATED, buying only from 10%+ off its local high with clean bundle and sniper checks. SIS as MIGRATED, but only if real GitHub work backs the AI claim. Mamesuke and NIGUIN as FINAL_STRETCH once they stop being ten-minute-old snipes, watching for the pre-bond dump (V1). Conviction comes from the checklist, not the Nov 5 deadline.
 
 ## Moving most in its scans, last 30 min (1h volume)
-- onlypump: $568,355 1h vol, $1,842 mcap, -99% 1h  
-  CA `J73efZvH6rkrJbFJdP2rqe473YJW7tyWmrNARUSzpump`
 - BLUE: $359,311 1h vol, $263,986 mcap, -38% 1h  
   CA `CPoGSmcjprCvzA2MFYLJMpQkGjmgVzKg4RVwMdrzpump`
 - tipr: $313,382 1h vol, $122,846 mcap, +226% 1h  
   CA `3kRQDKPGqMWwBdGjiVPpPqVzFsnYG5PDqvrVz1D2pump`
-- DESSA: $298,517 1h vol, $28,953,951 mcap, +14% 1h  
+- DESSA: $269,727 1h vol, $30,685,532 mcap, +16% 1h  
   CA `npz2FhoufQ7pKqhGpaipYWacrAkidyW2yDpVWSvpump`
-- BALLS: $229,115 1h vol, $149,915 mcap, +235% 1h  
-  CA `HhBuvegE7Ew2stS5svkMcxL8povkaL8brwt9JUtfpump`
+- onlypump: $261,098 1h vol, $1,866 mcap, -99% 1h  
+  CA `J73efZvH6rkrJbFJdP2rqe473YJW7tyWmrNARUSzpump`
+- SIS: $167,987 1h vol, $643,763 mcap, -7% 1h  
+  CA `FdKdpz11GsTofLaNiddrhxrsE4APZYSSfLFqQ9YKpump`
