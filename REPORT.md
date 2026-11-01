@@ -1,13 +1,13 @@
 # Trencher live report
 
-Updated 2026-11-01T17:26:03Z (paper trading, never real money)
+Updated 2026-11-01T17:41:06Z (paper trading, never real money)
 
 - Equity: $80.53 (-19.5% vs $100 start)
-- Goal: $1,000 by 2026-11-05 05:03Z (pressing for it): at 8.1% of it, 3.5 days left, needs +106.1% a day from here
+- Goal: $1,000 by 2026-11-05 05:03Z (pressing for it): at 8.1% of it, 3.5 days left, needs +106.5% a day from here
 - Closed trades: 19, 3 wins
 - Fees paid: $12.66 (axiom $2.26, network $8.06, pool $2.21), plus $3.34 lost to slippage
 - New trades: on
-- Brain: subscription, 621 calls and 1 plan-limit hits in 48h
+- Brain: subscription, 623 calls and 1 plan-limit hits in 48h
 
 ## Scorecard (after fees)
 - 19 closed, 3 won (16%), net $-19.48
@@ -74,9 +74,21 @@ Updated 2026-11-01T17:26:03Z (paper trading, never real money)
   CA `GYKnd6jGUSQoBUnj6LdGCBtCWYDgr2Zd6QwNPcy5pump`
 
 ## Last scan
-- 17:25Z: 7 coins, 6 with pairs, 0 passed the market filters, 0 researched
+- 17:40Z: 6 coins, 5 with pairs, 1 passed the market filters, 1 researched
 
 ## Coins it looked at, and why it passed
+- 17:40Z PAWCAT (MIGRATED, $401,163 mcap, $10,406 5m vol): PASS at conviction 2, PASS: 95% off the $8.37M peak, 5m flow at 0.39x pace, and the bounce is +330% off a crash low with no higher low. That's a dead-cat bounce, not a dip. Blocker: flow below pace / outside the zone (V1, V6).  
+  CA `762ZqBCd5m2q3QJ5UPkFL5rqdEUeygNkfTZrpGEZpump`
+- 17:37Z GATO (MIGRATED, $7,350,148 mcap, $3,084 5m vol): REJECT, Dev holds 3.3% (>1%) (V13, V17)  
+  CA `HsprHxBRgiVaQdRf3TnKNuZZtaX9JUSPgMFdAkk6pump`
+- 17:37Z REA (FINAL_STRETCH, $21,450 mcap, $59,949 5m vol): REJECT, RugCheck danger: Creator history of rugged tokens  
+  CA `GtmGbPyWVgUGG1yvWEny6aedJ4bwtLqjGj7PfGjSpump`
+- 17:35Z SI276 (MIGRATED, $394,866 mcap, $2,136 5m vol): REJECT, Bundles: 3 linked wallet cluster(s) hold 100.0% of supply (>20%) (V17)  
+  CA `HMYd9tosnUXuNHmq7pXmoePRVBLBBjA3JBfydq6upump`
+- 17:29Z Useful (MIGRATED, $46,659 mcap, $3,493 5m vol): REJECT, Top 10 hold 33.5% ex-pool (>25%) (V13)  
+  CA `7k4h6e913NxWNcshaTzSm5pT2EskWK3hyRzCSDzdbonk`
+- 17:28Z REGRETAMINE (DIP, $117,673 mcap, $3,574 5m vol): PASS at conviction 3, PASS: last 5m candle +27% on $3.5k volume, a near-double off the low with no higher low printed. Blocker: chasing the spike (V1).  
+  CA `Dbyy9LSMVHjxw2ZnPPRrCheSLVeuHq2GMkpxUs3t5xeT`
 - 17:22Z AIC (MIGRATED, $44,966 mcap, $8,632 5m vol): REJECT, RugCheck danger: Creator history of rugged tokens  
   CA `2T9WZjVC6L3BvusUtjKDT6HcZeEYgU9T5xhfJQxFpump`
 - 17:20Z Dacity (MIGRATED, $7,919,238 mcap, $4,320 5m vol): REJECT, Bundles: 10 linked wallet cluster(s) hold 23.8% of supply (>20%) (V17)  
@@ -85,22 +97,10 @@ Updated 2026-11-01T17:26:03Z (paper trading, never real money)
   CA `DtcicPCKTKeAh7TDEzTym3hXeoHAoMiBdYJhMYxZpump`
 - 17:15Z POPU (MIGRATED, $82,927 mcap, $97,791 5m vol): PASS at conviction 3, PASS: POPU migrated about 6 minutes ago, it's still swinging off its bond spike, and the ticker is shared with 27 other coins. Blocker: too new (V1).  
   CA `JBuEiMHw7NJjns8epvNBGyyViWbo8oTAAh8r7QGepump`
-- 17:13Z AAPLCAT (DIP, $786,287 mcap, $12,552 5m vol): REJECT, Dip with fading attention is a falling knife, not a dip (5m at 0.49x the hour's pace, under 0.6x)  
-  CA `GYKnd6jGUSQoBUnj6LdGCBtCWYDgr2Zd6QwNPcy5pump`
-- 17:05Z SIS (MIGRATED, $83,174 mcap, $3,256 5m vol): PASS at conviction 2, PASS — SIS is 93.6% off its peak and 5m volume is at 0.43x the hourly pace. That's a corpse, not a dip. Blocker: "dead story" plus "flow below pace" (V1, V6).  
-  CA `FdKdpz11GsTofLaNiddrhxrsE4APZYSSfLFqQ9YKpump`
-- 17:04Z GOON (FINAL_STRETCH, $29,473 mcap, $47,614 5m vol): REJECT, RugCheck danger: Large Amount of LP Unlocked 100.00%  
-  CA `4GghekwLdfaD5rLtpkESCU19E2dfwZvBieSp2A6kpump`
-- 17:00Z Sperm (FINAL_STRETCH, $25,021 mcap, $40,523 5m vol): REJECT, Top 10 hold 25.8% ex-pool (>25%) (V13)  
-  CA `2kcek9XLEGoCcYpVsSaoJGanegcFW81Ti1kyYEQzGDXi`
-- 16:59Z Peekhole (MIGRATED, $338,313 mcap, $3,571 5m vol): PASS at conviction 3, PASS — 3.2% off the high on $3.6k 5m volume, with a 5.8% bundle and top 10 at 19%. That's chasing a thin chart. (V1, V3, V6)  
-  CA `2Nyb2GXVoXM42hVQxJg5RppTbiN5SCZFL4LtZVVDpump`
-- 16:55Z PAWCAT (MIGRATED, $561,047 mcap, $20,082 5m vol): PASS at conviction 2, PASS — 93% off an $8.4M peak, lower 15m closes every candle, no higher low. Falling knife, not a dip (V1, V6).  
-  CA `762ZqBCd5m2q3QJ5UPkFL5rqdEUeygNkfTZrpGEZpump`
 
 ## What its skips did next (last 48h)
 A skip "ran" if the coin reached the first target (1.5x) from the skip price before a 20% drop, "dumped" if the drop came first. Sampled every 10 min, followed 6h.
-- near the high / chasing: blocked 62, ran 8, dumped 43, flat 8, open 3 (saving losses: keep it)
+- near the high / chasing: blocked 63, ran 8, dumped 44, flat 8, open 3 (saving losses: keep it)
   - ran: iCoin up to 1.68x  
     CA `HgxEGTZ1Epb64RrYqcuHkqb1gGWWnF5WcPTCDWzApump`
   - ran: AXIO up to 1.51x  
@@ -114,7 +114,7 @@ A skip "ran" if the coin reached the first target (1.5x) from the skip price bef
     CA `J73efZvH6rkrJbFJdP2rqe473YJW7tyWmrNARUSzpump`
   - ran: paws up to 1.51x  
     CA `CCF6ui6YjjhLaVtuYLH8b5jza8jHathqww5VbrMapump`
-- top 10 over 25%: blocked 41, ran 6, dumped 30, flat 3, open 2 (saving losses: keep it)
+- top 10 over 25%: blocked 41, ran 7, dumped 29, flat 3, open 2 (saving losses: keep it)
   - ran: Goyim up to 2.88x  
     CA `7aeDqEi2PfoYpJfw2eawzLnRH9NjQJ6jWMZ9FH1Hpump`
   - ran: George up to 1.88x  
@@ -128,16 +128,18 @@ A skip "ran" if the coin reached the first target (1.5x) from the skip price bef
     CA `653joYuZ5EntuKd1bspZakjHdueMxHGs5Lvm7RdWpump`
   - ran: KIM up to 1.55x  
     CA `8pjfN5Ayb4rucGpYE3tZWN6v3EysizjPx1v62zx1pump`
-- RugCheck didn't load: blocked 23, ran 3, dumped 16, flat 4, open 0 (saving losses: keep it)
+- RugCheck didn't load: blocked 22, ran 3, dumped 16, flat 3, open 0 (saving losses: keep it)
   - ran: UNSAFU up to 1.61x  
     CA `4eq4JfnpdgqZTzeyR3GnRGHJQ3QhQT6Lp7nKnQ2nS7Rv`
   - ran: billy up to 3.75x  
     CA `DUTxGHL2LmpfjQaoK6LdZp8WQPoDiwvtDHVDf4fMpump`
   - ran: whitepaper up to 2.16x  
     CA `4tEvXHpd6JrCWJGByBS3qFBAtJbeoiEpgvWLw9hkpump`
-- RugCheck danger: blocked 18, ran 1, dumped 16, flat 0, open 1 (saving losses: keep it)
+- RugCheck danger: blocked 19, ran 2, dumped 16, flat 0, open 1 (saving losses: keep it)
   - ran: SUGAR up to 1.74x  
     CA `HLzTFsX99uqzAP7uK36gJ2pPHGfRM8ugvxXWJzjSpump`
+  - ran: AIC up to 1.6x  
+    CA `2T9WZjVC6L3BvusUtjKDT6HcZeEYgU9T5xhfJQxFpump`
 - falling knife / no higher low: blocked 16, ran 1, dumped 12, flat 2, open 1 (saving losses: keep it)
   - ran: CREDIT up to 1.56x  
     CA `Ewyifvp8X9NxeaKawXamGXBFDisuMfcFfcdvSZ8opump`
@@ -176,22 +178,16 @@ A skip "ran" if the coin reached the first target (1.5x) from the skip price bef
 - [2026-11-01 06:19] Expected AAPLCAT, 36% off its $1.8M high with a printed higher-low base, clean holders and $12.6k on the 5m, to retest the peak at about 1.57x. It peaked at 1.01x, broke the 0.000981 higher low, and the "unclear" stop review sold at −31% instead of −20%. That makes 7 of 7 stop reviews closing worse than the stop. This confirms my existing rules rather than adding a new one: the proven band needs 5m at or above the hourly pace and a meta with the crowd still arriving (V1, V6). I bought with pace under the hourly average and a cooling meta, so next time a band entry with flow below pace is a PASS (blocker "flow below pace"), not a probe, and a broken higher low sells right away.
 
 ## Meta right now
-The meta is sub-hour pump.fun launches that run several hundred percent in their first 30 minutes and then either hold or die. Mr Veto ($168k, +321%, $12k on the 5m, 24 minutes old), pairless ($122k, $73k on the 5m) and Useful Coin ($43k on bonk, $18k on the 5m, 0.65 buy ratio) are holding, while SCARECROW (-66%, $912 on the 5m), TESTES and memestock already show what that launch style looks like an hour later. The meme-vs-stocks joke and the GTA6/cat coins are fading: memestock has no 5m volume, Solana500's 10,000-hour age next to an on-curve chart is bad data, GATO's buy ratio is 0.35 and PAWCAT is down 60% on the hour. AI tickers are mixed: Capri is up 533% on the curve, but SIS is bleeding. The crawler's own summary is stale. It still calls SCARECROW a MIGRATED setup, but it's at $20k now and dying, so I'm dropping it. Hunter Biden's LAPTOP is a political-figure coin (V13), so hard pass, and the hack story is out. Setups I'd research now:
-- **VETO as MIGRATED:** above $70k with real flow (V6).
-- **pairless, the `…pump` CA at $122k, as MIGRATED:** there are two "pairless" tokens, so this needs a vamp check first (V1, V3). The other one (DoPu…, $78k) did $769k in an hour, about 10x its market cap. That reads like churn or a farm until holders say otherwise (V13).
-- **Useful Coin as an early MIGRATED watch:** it qualifies by age and flow, but it's under $70k, so it needs a push first.
-- **Capri as FINAL_STRETCH:** only if 5m volume comes back to $10k+, since it's AI-themed and needs a LARP check (V1).
-
-On the owner's note: a clean pass on the checklist earns a 7–9. A deadline doesn't.
+The meta right now is sub-hour pump.fun launch-and-rip. The pattern only works for coins in their first few minutes. One hour later they're dead. The crawler's summary is already stale. Mr Veto and pairless, its two "holding" picks, are now around $1.8k: VETO is down 98.5% and pairless 98.9%, both with zero 5m volume. Bouncer (-99%) and Wen (-79%) died the same way, so that is the hourly lifespan of this launch style. The live flow is in new, crude-joke tickers. POPU bonded 6 minutes ago and sits at $83k with $98k on the 5m and a 0.58 buy ratio. GOON (Gooncoin) is still on the curve at $29k with $48k on the 5m. Sperm/"Exit Liquidity" is also on the curve, at $25k with $40k on the 5m. Crude humor is rising and the older animal/stock jokes are fading. Apple Cat is up 48% on the hour at $786k, but its 0.41 buy ratio says sellers are now in charge. Useful and Peaky are bleeding. I'd research three setups. First, POPU as MIGRATED: it's above $70k with real flow (V6), but it's 6 minutes old, so I'd only take a probe if the holder and bundle checks come back clean. Second, GOON and Sperm as FINAL_STRETCH: watch for the pre-bond dump, and get out if they stall the way VETO did (V1). Third, Apple Cat as a DIP watch: only if buyers come back above 0.5 after the hourly pump. I'm passing on LAPTOP because it's a political-figure coin (V13). On the owner's note: a $1k deadline is pressure, not a reason to buy. Conviction comes from checks these coins haven't passed yet. With hourly death rates like these, I'll rate them honestly, not up.
 
 ## Moving most in its scans, last 30 min (1h volume)
+- PAWCAT: $320,264 1h vol, $401,163 mcap, -62% 1h  
+  CA `762ZqBCd5m2q3QJ5UPkFL5rqdEUeygNkfTZrpGEZpump`
 - AAPLCAT: $307,002 1h vol, $786,287 mcap, +48% 1h  
   CA `GYKnd6jGUSQoBUnj6LdGCBtCWYDgr2Zd6QwNPcy5pump`
-- VETO: $216,789 1h vol, $1,827 mcap, -99% 1h  
-  CA `EM6awuXD9bFZfbchFFioeNpHyKur9bmD5kj3svHpump`
 - POPU: $204,941 1h vol, $82,927 mcap, +122% 1h  
   CA `JBuEiMHw7NJjns8epvNBGyyViWbo8oTAAh8r7QGepump`
-- SIS: $89,956 1h vol, $83,174 mcap, -5% 1h  
-  CA `FdKdpz11GsTofLaNiddrhxrsE4APZYSSfLFqQ9YKpump`
-- Sperm: $74,131 1h vol, $25,021 mcap, +680% 1h  
-  CA `2kcek9XLEGoCcYpVsSaoJGanegcFW81Ti1kyYEQzGDXi`
+- VETO: $167,994 1h vol, $1,827 mcap, -99% 1h  
+  CA `EM6awuXD9bFZfbchFFioeNpHyKur9bmD5kj3svHpump`
+- GATO: $87,345 1h vol, $7,350,148 mcap, -0% 1h  
+  CA `HsprHxBRgiVaQdRf3TnKNuZZtaX9JUSPgMFdAkk6pump`
