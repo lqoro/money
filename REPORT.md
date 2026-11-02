@@ -1,13 +1,13 @@
 # Trencher live report
 
-Updated 2026-11-02T04:03:55Z (paper trading, never real money)
+Updated 2026-11-02T04:19:08Z (paper trading, never real money)
 
 - Equity: $80.53 (-19.5% vs $100 start)
-- Goal: $1,000 by 2026-11-05 05:03Z (pressing for it): at 8.1% of it, 3 days left, needs +129% a day from here
+- Goal: $1,000 by 2026-11-05 05:03Z (pressing for it): at 8.1% of it, 3 days left, needs +129.6% a day from here
 - Closed trades: 19, 3 wins
 - Fees paid: $12.66 (axiom $2.26, network $8.06, pool $2.21), plus $3.34 lost to slippage
 - New trades: on
-- Brain: subscription, 585 calls and 0 plan-limit hits in 48h
+- Brain: subscription, 582 calls and 0 plan-limit hits in 48h
 
 ## Scorecard (after fees)
 - 19 closed, 3 won (16%), net $-19.48
@@ -74,7 +74,7 @@ Updated 2026-11-02T04:03:55Z (paper trading, never real money)
   CA `GYKnd6jGUSQoBUnj6LdGCBtCWYDgr2Zd6QwNPcy5pump`
 
 ## Last scan
-- 04:03Z: 5 coins, 3 with pairs, 0 passed the market filters, 0 researched
+- 04:18Z: 18 coins, 17 with pairs, 0 passed the market filters, 0 researched
 
 ## Coins it looked at, and why it passed
 - 04:00Z PEACE (MIGRATED, $32,066 mcap, $16,064 5m vol): PASS at conviction 2, PASS: two minutes old and still bleeding off the bond spike, with 23 coins on the same ticker and no account of its own. Blocker "too new" (V5, V6).  
@@ -107,7 +107,7 @@ A skip "ran" if the coin reached the first target (1.5x) from the skip price bef
     CA `BbNuEtiT77Swr4WqGHuUkQY5kZ67M7au7bXkxcArpump`
   - ran: BBOTS up to 1.51x  
     CA `4TCevs5EC2RFsdWo3YPVifqe9dX2acCGGa9VHNtppump`
-- too new / sniping: blocked 47, ran 4, dumped 42, flat 0, open 1 (saving losses: keep it)
+- too new / sniping: blocked 46, ran 5, dumped 41, flat 0, open 0 (saving losses: keep it)
   - ran: onlypump up to 1.92x  
     CA `J73efZvH6rkrJbFJdP2rqe473YJW7tyWmrNARUSzpump`
   - ran: paws up to 1.51x  
@@ -147,12 +147,12 @@ A skip "ran" if the coin reached the first target (1.5x) from the skip price bef
     CA `Ewyifvp8X9NxeaKawXamGXBFDisuMfcFfcdvSZ8opump`
   - ran: PI up to 1.6x  
     CA `93VGqXL76voGxc43apJTDJoKkqnxTht1BKWoEmUypump`
-- crowd leaving / fading volume: blocked 12, ran 2, dumped 7, flat 2, open 1 (saving losses: keep it)
+- crowd leaving / fading volume: blocked 11, ran 2, dumped 6, flat 2, open 1 (saving losses: keep it)
   - ran: VETOTRUMP up to 1.66x  
     CA `6g16UK4wHoFhC7PCmw8LYYCdt9q8m99fyoAwxeCrpump`
   - ran: Anakinius up to 1.93x  
     CA `2pKpMwUQXNZeAf93LoomnZSworH3ezFzweCiuvrppump`
-- bundles over the line: blocked 11, ran 1, dumped 7, flat 2, open 1 (saving losses: keep it)
+- bundles over the line: blocked 11, ran 1, dumped 8, flat 2, open 0 (saving losses: keep it)
   - ran: Nuts up to 1.53x  
     CA `APH9FRoKst66E4a7uZXcEfE8NjtwybUC8Jq7ue8upump`
 - dev share over 1%: blocked 10, ran 3, dumped 5, flat 1, open 1 (mixed)
@@ -208,11 +208,11 @@ The owner's Nov 5 target is a reason to look harder at setups like these. It doe
 ## Moving most in its scans, last 30 min (1h volume)
 - Cryptocrat: $436,800 1h vol, $66,388 mcap, +79% 1h  
   CA `Er8sRVFaGBicA6jnYrEX91Gcwp1aCaYZsVHtFMA3pump`
-- NNH: $177,166 1h vol, $107,213 mcap, +168% 1h  
-  CA `4hdA5F5TJiEeH59XrYjESYrqMuR4aBrwPxuNwijLpump`
-- ANAKIN: $124,010 1h vol, $3,071,565 mcap, +9% 1h  
-  CA `8s4bNqEztH1JP7mkU747uMr7AckCQdiV47FDqYnDpump`
+- ANUKOON: $173,533 1h vol, $2,618 mcap, -98% 1h  
+  CA `91QMBp6GNEfMmDg2VWH7iWkyUSpePRkdhc44W7oapump`
 - Nuts: $110,312 1h vol, $1,888 mcap, -99% 1h  
   CA `APH9FRoKst66E4a7uZXcEfE8NjtwybUC8Jq7ue8upump`
-- HOPE: $97,480 1h vol, $52,949 mcap, +34% 1h  
-  CA `4wmT5vPBJ3iiFRmNhciCZ67yasiXSjzz3g9VukXrpump`
+- Peace: $82,294 1h vol, $13,923 mcap, +308% 1h  
+  CA `Hb1dtD8bkU2M2fYQ552UYzcbLUn1NgE8kvvtc1j1pump`
+- hugpad: $75,559 1h vol, $2,082 mcap, -94% 1h  
+  CA `2VsMRCfPZJgnGAtRQ7HGzLPpmz67EmRcUXmXYqtJpump`
