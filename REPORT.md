@@ -1,13 +1,13 @@
 # Trencher live report
 
-Updated 2026-11-02T08:36:32Z (paper trading, never real money)
+Updated 2026-11-02T08:51:44Z (paper trading, never real money)
 
 - Equity: $79.10 (-20.9% vs $100 start)
-- Goal: $1,000 by 2026-11-05 05:03Z (pressing for it): at 7.9% of it, 2.9 days left, needs +143.4% a day from here
+- Goal: $1,000 by 2026-11-05 05:03Z (pressing for it): at 7.9% of it, 2.8 days left, needs +144.2% a day from here
 - Closed trades: 20, 3 wins
 - Fees paid: $13.36 (axiom $2.45, network $8.44, pool $2.34), plus $3.62 lost to slippage
 - New trades: on
-- Brain: subscription, 552 calls and 0 plan-limit hits in 48h
+- Brain: subscription, 553 calls and 0 plan-limit hits in 48h
 
 ## Scorecard (after fees)
 - 20 closed, 3 won (15%), net $-20.91
@@ -74,9 +74,11 @@ Updated 2026-11-02T08:36:32Z (paper trading, never real money)
   CA `8s4bNqEztH1JP7mkU747uMr7AckCQdiV47FDqYnDpump`
 
 ## Last scan
-- 08:35Z: 2 coins, 2 with pairs, 0 passed the market filters, 0 researched
+- 08:50Z: 9 coins, 9 with pairs, 0 passed the market filters, 0 researched
 
 ## Coins it looked at, and why it passed
+- 08:38Z ANAKIN (MIGRATED, $4,221,115 mcap, $6,501 5m vol): PASS at conviction 3, PASS: ANAKIN's 5m volume is $6.5k, half its hourly pace. The crowd is leaving, and it's the same setup that time-stopped me hours ago. Blocker: flow below pace (V1, V6).  
+  CA `8s4bNqEztH1JP7mkU747uMr7AckCQdiV47FDqYnDpump`
 - 08:34Z Anakin (MIGRATED, $3,230,048 mcap, $3,401 5m vol): PASS at conviction 2, PASS: this is the old 85h Anakin. The crowd is on the other ANAKIN, and this chart has $3.4k on the 5m at 0.69x pace with sellers in control. Blockers: flow below pace, split crowd (V1, V6).  
   CA `ExxzYBTt3jwU5MUxuw2F4toYbTLdFwThSjyaCn6Xpump`
 - 08:28Z jeff (DIP, $1,590,233 mcap, $2,111 5m vol): REJECT, Top 10 hold 39.5% ex-pool (>25%) (V13)  
@@ -95,8 +97,6 @@ Updated 2026-11-02T08:36:32Z (paper trading, never real money)
   CA `8Xg89xT8Ve34sKiYqYuMs46mycREsCA2F362UscRpump`
 - 07:42Z Tumulun (FINAL_STRETCH, $25,871 mcap, $17,396 5m vol): PASS at conviction 3, PASS: up 108% in the last 5 minutes, 3% off its high, 18 minutes old, and 9 other coins share the ticker. This is chasing a spike on the curve, not a setup (V1, V5).  
   CA `E84psoV4rJQYBoyTkzTrh1hzjZJv81VGFRX9gMLHpump`
-- 07:37Z Anakin (MIGRATED, $3,546,218 mcap, $3,101 5m vol): PASS at conviction 2, PASS: this is the wrong Anakin. Anakin Coin (the one I already hold) is doing $104k on the 5m against this one's $3.1k, and the prior high is only 1.18x away. Blocker: split crowd / target too close (V1, V13).  
-  CA `ExxzYBTt3jwU5MUxuw2F4toYbTLdFwThSjyaCn6Xpump`
 
 ## What its skips did next (last 48h)
 A skip "ran" if the coin reached the first target (1.5x) from the skip price before a 20% drop, "dumped" if the drop came first. Sampled every 10 min, followed 6h.
@@ -121,7 +121,7 @@ A skip "ran" if the coin reached the first target (1.5x) from the skip price bef
     CA `TiMSdJrkVwUpeEWJpuqRvHt4wVS7uH77LbNPGGVJXNw`
   - ran: WASTED up to 1.93x  
     CA `GexThZHgaswpAQ7Fi8QrHFubjPimUNSYhJiAA7XZpump`
-- falling knife (code): blocked 32, ran 6, dumped 22, flat 2, open 2 (saving losses: keep it)
+- falling knife (code): blocked 31, ran 5, dumped 23, flat 2, open 1 (saving losses: keep it)
   - ran: KIM up to 1.55x  
     CA `8pjfN5Ayb4rucGpYE3tZWN6v3EysizjPx1v62zx1pump`
   - ran: BLUE up to 1.53x  
@@ -142,13 +142,11 @@ A skip "ran" if the coin reached the first target (1.5x) from the skip price bef
     CA `DUTxGHL2LmpfjQaoK6LdZp8WQPoDiwvtDHVDf4fMpump`
   - ran: whitepaper up to 2.16x  
     CA `4tEvXHpd6JrCWJGByBS3qFBAtJbeoiEpgvWLw9hkpump`
-- falling knife / no higher low: blocked 16, ran 3, dumped 12, flat 1, open 0 (saving losses: keep it)
+- falling knife / no higher low: blocked 15, ran 2, dumped 12, flat 1, open 0 (saving losses: keep it)
   - ran: CREDIT up to 1.56x  
     CA `Ewyifvp8X9NxeaKawXamGXBFDisuMfcFfcdvSZ8opump`
   - ran: PI up to 1.6x  
     CA `93VGqXL76voGxc43apJTDJoKkqnxTht1BKWoEmUypump`
-  - ran: ANAKIN up to 1.55x  
-    CA `8s4bNqEztH1JP7mkU747uMr7AckCQdiV47FDqYnDpump`
 - bundles over the line: blocked 13, ran 2, dumped 9, flat 2, open 0 (saving losses: keep it)
   - ran: Nuts up to 1.53x  
     CA `APH9FRoKst66E4a7uZXcEfE8NjtwybUC8Jq7ue8upump`
@@ -190,23 +188,16 @@ A skip "ran" if the coin reached the first target (1.5x) from the skip price bef
 - [2026-11-02 08:22] I expected ANAKIN, the clean 5m-volume leader 34% off its $6.05M high with a 63% buy share, to retest the high for about 1.5x. It never reached 1.05x, the time stop sold it at 0.95x on mcap, and fees plus slippage turned that into −14%. I took the buy share as the bounce and never saw a printed higher low, so the money shape was only half there. The lesson backs my existing rule, not a new ban: a buy share is not a higher low (V1 says big buys on a dip are bullish, but only once they hold a level). Next time a MIGRATED dip buy needs a printed higher low above the hourly low before entry, and the 45-minute time stop did its job by cutting it small.
 
 ## Meta right now
-The war/peace and political meta is over. TRUMP rugged, WAR and WARDOG are down 80%+, and LAPTOP is a politician's-family coin down 98%, so it's out under V13 no matter how many headlines it gets. Right now the trenches are trading two things. First, very young off-theme pump.fun launches under an hour old, mostly abstract or idea names: CI "Central Intelligence" ($159k, $176k on the hour), TripleH "Hype Hope Hubris" ($124k, $29.5k 5m), "tokenization is inevitable", PEER (+861%), plus character jokes like Tumulun and Karlusha the talking raven. That theme is rising, but it burns fast: Tradition, Flat Eric, vibedog and the second CI have already round-tripped to $3k. Second, a Star Wars/Anakin theme is holding up at higher caps. ANAKIN is at $3.9M, 9h old, $104k on the 5m, buys 0.63, and the older 84h "Anakin Skywalker" sits beside it at $3.4M with almost no volume. The crawler's faucet setup is dead: it's -58% on the hour and $3k on the 5m, a falling knife, so PASS.
-
-What I'd research now:
-1. **ANAKIN (8s4b…pump) as a MIGRATED setup.** It's inside the V6 range with real flow. First I have to confirm it's the original and not a vamp of the 84h coin (V1, V3). Entry only on a ~10% pullback from the local high.
-2. **PEER as a FINAL_STRETCH setup.** It's on the curve at $27k with $35k on the 5m. Watch for the pre-bond dump (V1).
-3. **TripleH and CI (gg1z…) as MIGRATED setups.** Both only if a pullback holds volume. There are two CI contracts, so the original check comes first; at 0.3–0.5h old I'm also slower than the players setting the price (V5).
-
-PASS: Nathalia (named after a real person's death, and 5m volume has collapsed to $3.5k), inu (sells outweigh buys, 0.37), and anything hack-themed. My owner wants me pushing toward $1k. These are all cases for pressing if the checks come back clean, but the deadline doesn't change my conviction scores.
+The meta is young pump.fun launches under 2 hours old with abstract idea names. TripleH "Hype Hope Hubris" ($89k mcap, $27k on the 5m, buys 0.57, +136% on the hour) and CI "Central Intelligence" ($133k, but only $7.2k on the 5m now) are leading it. The theme is still alive but burning out fast: Tumulun (-47%), "tokenization is inevitable" (-70%), Karlusha (-45%) and the second CI have already round-tripped. Most of these die within an hour (V1). The war/nuke jokes are fading. WWIII is +102% at $7k on the curve, but it's a late copy while WAR and inu bleed out, and inu's buy ratio is 0.00. Being late to a meta that's ending is how you become exit liquidity (V5). The Star Wars theme is holding price but losing attention. ANAKIN is flat at $4.2M, but its 5m volume fell from $104k to $6.5k, under the $10k bar (V6). The 85h "Anakin Skywalker" next to it has buys at 0.32. The one setup I'd research now is TripleH as MIGRATED: inside the V6 range with live flow. Entry only on a pullback of about 10% that keeps 5m volume above roughly 0.7x the hourly pace, with a 20% stop. At 1.1h old I'm slower than the players setting the price (V5), so it earns a 7 only if holders and bundles come back clean. Watching CI if 5m volume gets back above $10k, after confirming it's the original contract (V1, V3). ANAKIN only if attention comes back. PASS on WWIII: late to a fading theme, too far below the ~$30k bar for migrated coins (V1). The $1k push makes me take more of what clears the checks. It doesn't make thin volume look thick.
 
 ## Moving most in its scans, last 30 min (1h volume)
-- TripleH: $474,729 1h vol, $88,758 mcap, +136% 1h  
-  CA `ATnGk91tqFpXhiqAnDfGav7YYMUiocQ2YHgY4gPBpump`
-- CI: $312,566 1h vol, $133,361 mcap, +71% 1h  
-  CA `gg1zQUgUoXd8hVmkTmLooyzC1QBT1cvJDnCXHLPpump`
-- Tumulun: $148,966 1h vol, $22,708 mcap, -39% 1h  
+- ANAKIN: $158,913 1h vol, $4,221,115 mcap, +1% 1h  
+  CA `8s4bNqEztH1JP7mkU747uMr7AckCQdiV47FDqYnDpump`
+- Tumulun: $148,604 1h vol, $26,425 mcap, -27% 1h  
   CA `E84psoV4rJQYBoyTkzTrh1hzjZJv81VGFRX9gMLHpump`
-- inu: $82,600 1h vol, $4,195 mcap, -8% 1h  
+- WWIII: $72,758 1h vol, $7,227 mcap, +102% 1h  
+  CA `7LQHFp2Yc4WehRsBLWT2yX2trjBo6oS92s81SzyPpump`
+- Anakin: $61,472 1h vol, $3,304,097 mcap, -3% 1h  
+  CA `ExxzYBTt3jwU5MUxuw2F4toYbTLdFwThSjyaCn6Xpump`
+- inu: $53,058 1h vol, $4,042 mcap, -64% 1h  
   CA `J2F2povtZ5WJxWSmTr8iSgfvPYxUJ7fGAicQSBKEpump`
-- WWIII: $63,846 1h vol, $28,427 mcap, +743% 1h  
-  CA `GD52VfoPZdad4hiNPg4UnjtDGsS4WiM3mqS8j1czpump`
