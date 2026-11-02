@@ -1,9 +1,9 @@
 # Trencher live report
 
-Updated 2026-11-02T01:00:33Z (paper trading, never real money)
+Updated 2026-11-02T01:15:34Z (paper trading, never real money)
 
 - Equity: $80.53 (-19.5% vs $100 start)
-- Goal: $1,000 by 2026-11-05 05:03Z (pressing for it): at 8.1% of it, 3.2 days left, needs +121.5% a day from here
+- Goal: $1,000 by 2026-11-05 05:03Z (pressing for it): at 8.1% of it, 3.2 days left, needs +122% a day from here
 - Closed trades: 19, 3 wins
 - Fees paid: $12.66 (axiom $2.26, network $8.06, pool $2.21), plus $3.34 lost to slippage
 - New trades: on
@@ -74,9 +74,17 @@ Updated 2026-11-02T01:00:33Z (paper trading, never real money)
   CA `GYKnd6jGUSQoBUnj6LdGCBtCWYDgr2Zd6QwNPcy5pump`
 
 ## Last scan
-- 01:00Z: 10 coins, 9 with pairs, 1 passed the market filters, 1 researched
+- 01:14Z: 7 coins, 5 with pairs, 0 passed the market filters, 0 researched
 
 ## Coins it looked at, and why it passed
+- 01:13Z CHOO (MIGRATED, $1,864,557 mcap, $2,698 5m vol): PASS at conviction 3, PASS: $2.7k on the 5m for a $1.86M coin, sitting on its hourly low with no higher low printed, and nobody on the radar is talking about it. Blocker: no live flow (V1, V6).  
+  CA `EJAxERvKU4kEVXn3NarjvRtgaMaJyP9ZuMeKA7JJpump`
+- 01:10Z Anakin (MIGRATED, $2,784,498 mcap, $17,030 5m vol): PASS at conviction 4, PASS: the price is sitting on the hourly low and hasn't printed a higher low, and the newer ANAKIN is taking the crowd. Falling knife. (V1, V6)  
+  CA `ExxzYBTt3jwU5MUxuw2F4toYbTLdFwThSjyaCn6Xpump`
+- 01:05Z Peekhole (MIGRATED, $322,776 mcap, $4,428 5m vol): PASS at conviction 3, PASS. It's 21.6% off the high with $4.4k on the 5m and red on the 5m candle. A shallow-band coin with no breakout is a pass for me, and a 5.8% bundle cluster makes it worse (V1, V3).  
+  CA `2Nyb2GXVoXM42hVQxJg5RppTbiN5SCZFL4LtZVVDpump`
+- 01:04Z pain (FINAL_STRETCH, $22,588 mcap, $25,453 5m vol): PASS at conviction 2, PASS: I'd be chasing a spike. It's up 210% in the last 5m, volume is running at 8x the hourly pace, and it sits 9.5% under a high it printed 6 minutes ago. The top 10 also hold 24.4%, which is right at the 25% line, and the ticker is a copycat. (V1, V6, V13)  
+  CA `Hjo8danmhLmHRzjLN8tJ2vYne4ZDJSoVefTjGLUApump`
 - 01:00Z Heidou (MIGRATED, $39,769 mcap, $4,776 5m vol): PASS at conviction 3, PASS: 17 minutes old, down 13% on the 5m and still bleeding off its bond spike. A bigger Heidou exists. Too new (V1, V6).  
   CA `HyXUTnyNp4noQRddxSUb6FjFsjv6jJtiEYBgAwanpump`
 - 00:59Z GATO (MIGRATED, $7,801,149 mcap, $4,140 5m vol): REJECT, Dev holds 3.3% (>1%) (V13, V17)  
@@ -89,18 +97,10 @@ Updated 2026-11-02T01:00:33Z (paper trading, never real money)
   CA `4mTR4pBnoAPWxzvbK7L6HtRm1XXsxtaSUBUzEqSPEv1x`
 - 00:43Z TREMP (FINAL_STRETCH, $23,472 mcap, $12,189 5m vol): PASS at conviction 3, PASS: vamp. Four bigger TREMPs exist, top 10 hold 24.1% one point under the line, and there's no project X behind a politician parody. That's a curve farm, not a runner (V1, V3, V6, V13).  
   CA `BkpjfE6myLuNJcYo6kmHqVrTS7B6t86Hf4fScYMEpump`
-- 00:38Z Anakinius (MIGRATED, $306,300 mcap, $6,085 5m vol): PASS at conviction 3, PASS — 5m flow is 0.42x the hourly pace in the shallow band, and it's a side copy in a 5-coin Anakin field where ANAKIN has the crowd. Blocker: flow below pace (V1, V6).  
-  CA `2pKpMwUQXNZeAf93LoomnZSworH3ezFzweCiuvrppump`
-- 00:27Z GLITCH (MIGRATED, $3,480,955 mcap, $2,305 5m vol): REJECT, Top 10 hold 28.0% ex-pool (>25%) (V13)  
-  CA `8Xg89xT8Ve34sKiYqYuMs46mycREsCA2F362UscRpump`
-- 00:25Z Anakin (MIGRATED, $3,550,353 mcap, $7,315 5m vol): PASS at conviction 3, PASS — 5m flow is 0.42x the hourly pace and the $4.2M high is only 1.18x away, while the crowd is in the newer ANAKIN. Flow below pace, target too close (V1, V6).  
-  CA `ExxzYBTt3jwU5MUxuw2F4toYbTLdFwThSjyaCn6Xpump`
-- 00:15Z PIBBLE (MIGRATED, $41,503 mcap, $11,002 5m vol): REJECT, Top 10 hold 27.5% ex-pool (>25%) (V13)  
-  CA `FT2vbWKVKvMT8Bjat7V6f2FNjerN1hbcWkYY54czvyq8`
 
 ## What its skips did next (last 48h)
 A skip "ran" if the coin reached the first target (1.5x) from the skip price before a 20% drop, "dumped" if the drop came first. Sampled every 10 min, followed 6h.
-- near the high / chasing: blocked 60, ran 5, dumped 45, flat 8, open 2 (saving losses: keep it)
+- near the high / chasing: blocked 60, ran 5, dumped 45, flat 7, open 3 (saving losses: keep it)
   - ran: Hyped up to 2.02x  
     CA `ADpzsC5eB1yDD5T9LocQ8kpN7jrcW5gobA4FBHuipump`
   - ran: Wojak up to 2.51x  
@@ -140,15 +140,15 @@ A skip "ran" if the coin reached the first target (1.5x) from the skip price bef
     CA `2T9WZjVC6L3BvusUtjKDT6HcZeEYgU9T5xhfJQxFpump`
   - ran: ZECRET up to 1.62x  
     CA `ChCi2x2bpevrNyeRoPHLXHzmaCdGQPuU15CNqxY1pump`
-- crowd leaving / fading volume: blocked 16, ran 1, dumped 8, flat 2, open 5 (saving losses: keep it)
-  - ran: Apple up to 1.58x  
-    CA `6nJVg7wV1UBaWBpHuP7pEHLBd26U4cj6vXnGShobpump`
-- falling knife / no higher low: blocked 15, ran 2, dumped 12, flat 1, open 0 (saving losses: keep it)
+- falling knife / no higher low: blocked 17, ran 2, dumped 12, flat 1, open 2 (saving losses: keep it)
   - ran: CREDIT up to 1.56x  
     CA `Ewyifvp8X9NxeaKawXamGXBFDisuMfcFfcdvSZ8opump`
   - ran: PI up to 1.6x  
     CA `93VGqXL76voGxc43apJTDJoKkqnxTht1BKWoEmUypump`
-- dev share over 1%: blocked 10, ran 3, dumped 5, flat 0, open 2 (mixed)
+- crowd leaving / fading volume: blocked 16, ran 1, dumped 8, flat 2, open 5 (saving losses: keep it)
+  - ran: Apple up to 1.58x  
+    CA `6nJVg7wV1UBaWBpHuP7pEHLBd26U4cj6vXnGShobpump`
+- dev share over 1%: blocked 10, ran 3, dumped 5, flat 1, open 1 (mixed)
   - ran: IGLU up to 1.54x  
     CA `34YQhrgkWoeFnm6LrcnmV3PLyDaMSNZikzUjyMmupump`
   - ran: MINTED up to 1.61x  
@@ -187,9 +187,9 @@ The meta has three parts right now. First, Star Wars is still the leader: ANAKIN
   CA `8s4bNqEztH1JP7mkU747uMr7AckCQdiV47FDqYnDpump`
 - Learjet: $204,813 1h vol, $164,781 mcap, +315% 1h  
   CA `DaG1X248VVvWuqaiBURFSe4b4L7RUm8sR57FJBZ7pump`
-- Anakinius: $171,970 1h vol, $306,300 mcap, -3% 1h  
-  CA `2pKpMwUQXNZeAf93LoomnZSworH3ezFzweCiuvrppump`
-- TREMP: $87,928 1h vol, $23,472 mcap, +552% 1h  
-  CA `BkpjfE6myLuNJcYo6kmHqVrTS7B6t86Hf4fScYMEpump`
-- Emily: $85,325 1h vol, $14,308 mcap, -5% 1h  
-  CA `CrW5j6ehF8hu6efmndJoSoATgipRA959QzpYxEtbpump`
+- Anakin: $121,564 1h vol, $2,784,498 mcap, -17% 1h  
+  CA `ExxzYBTt3jwU5MUxuw2F4toYbTLdFwThSjyaCn6Xpump`
+- Camry: $93,290 1h vol, $11,948 mcap, +276% 1h  
+  CA `9QzXpQV946rbVs3yADNqdQ1JWz2LgWdNGmxHG5Eppump`
+- flow: $90,854 1h vol, $7,447 mcap, +40% 1h  
+  CA `DWhb5BtLB8gEPFyQX8XeQz1MEWBRtpGYCKfKZdFepump`
