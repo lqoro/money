@@ -1,9 +1,9 @@
 # Trencher live report
 
-Updated 2026-11-02T07:21:02Z (paper trading, never real money)
+Updated 2026-11-02T07:36:04Z (paper trading, never real money)
 
 - Equity: $80.53 (-19.5% vs $100 start)
-- Goal: $1,000 by 2026-11-05 05:03Z (pressing for it): at 8.1% of it, 2.9 days left, needs +138.1% a day from here
+- Goal: $1,000 by 2026-11-05 05:03Z (pressing for it): at 8.1% of it, 2.9 days left, needs +138.8% a day from here
 - Closed trades: 19, 3 wins
 - Fees paid: $12.66 (axiom $2.26, network $8.06, pool $2.21), plus $3.34 lost to slippage
 - New trades: on
@@ -74,9 +74,15 @@ Updated 2026-11-02T07:21:02Z (paper trading, never real money)
   CA `GYKnd6jGUSQoBUnj6LdGCBtCWYDgr2Zd6QwNPcy5pump`
 
 ## Last scan
-- 07:20Z: 4 coins, 4 with pairs, 0 passed the market filters, 0 researched
+- 07:35Z: 3 coins, 3 with pairs, 0 passed the market filters, 0 researched
 
 ## Coins it looked at, and why it passed
+- 07:35Z TripleH (MIGRATED, $124,047 mcap, $29,569 5m vol): PASS at conviction 4, PASS: 17 minutes old, 10% under a high it printed six minutes ago, and the first resistance is 1.11x away. That's chasing a news pump, not a setup. Blocker: target too close (V1, V6).  
+  CA `ATnGk91tqFpXhiqAnDfGav7YYMUiocQ2YHgY4gPBpump`
+- 07:32Z CI (MIGRATED, $159,025 mcap, $8,243 5m vol): REJECT, Bundles: 1 linked wallet cluster(s) hold 27.6% of supply (>20%) (V17)  
+  CA `gg1zQUgUoXd8hVmkTmLooyzC1QBT1cvJDnCXHLPpump`
+- 07:25Z PEER (FINAL_STRETCH, $31,485 mcap, $33,770 5m vol): PASS at conviction 3, PASS: chasing a spike. The last 5m candle is up 86% at 3.3x the hourly pace, on a 30-minute-old curve coin with a day-old "protocol" site. I'll wait for the pre-bond dump and a higher low (V1).  
+  CA `BbtvdRYnvHLeAsVg6ErBEYXYRg2329RXkAtFfcCTpump`
 - 07:16Z CUMFACE (FINAL_STRETCH, $21,894 mcap, $1,937 5m vol): REJECT, 5m volume $1,937 is dead (<$2,000) (V1)  
   CA `J1D3X8znX4AzUPMHVWyBLNHqBBqWDPNSjX4KwK3Qpump`
 - 07:12Z GATO (MIGRATED, $9,050,481 mcap, $3,392 5m vol): REJECT, Dev holds 3.3% (>1%) (V13, V17)  
@@ -91,16 +97,10 @@ Updated 2026-11-02T07:21:02Z (paper trading, never real money)
   CA `6nuBXMpJxTAsu7AsWQe6k7G1Sd5zttwayAPQWnbxDvWf`
 - 06:42Z faucet (MIGRATED, $68,002 mcap, $14,364 5m vol): PASS at conviction 3, PASS: 5m flow is only 0.56x the hourly pace on a 39-minute-old migration. Blocker "flow below pace". The "free SOL, paste your wallet" site gimmick doesn't help (V1, V3, V7).  
   CA `99V36NFUcueC2tHjd1JV5bfhFux73NKWRiSBnxJ8pump`
-- 06:39Z Tradition (FINAL_STRETCH, $32,241 mcap, $7,514 5m vol): REJECT, RugCheck danger: Creator history of rugged tokens  
-  CA `B6fSFYV84wjjPN2Rej1fai1tgF9qbVtj4a32Kej9pump`
-- 06:38Z CI (MIGRATED, $33,185 mcap, $22,826 5m vol): REJECT, Top 10 hold 27.6% ex-pool (>25%) (V13)  
-  CA `DkpL2e59QKGdrHnNHUDmy9ieWbmMHeHfMh4kA6bEpump`
-- 06:26Z GATO (MIGRATED, $8,370,731 mcap, $2,308 5m vol): REJECT, Dev holds 3.3% (>1%) (V13, V17)  
-  CA `HsprHxBRgiVaQdRf3TnKNuZZtaX9JUSPgMFdAkk6pump`
 
 ## What its skips did next (last 48h)
 A skip "ran" if the coin reached the first target (1.5x) from the skip price before a 20% drop, "dumped" if the drop came first. Sampled every 10 min, followed 6h.
-- near the high / chasing: blocked 54, ran 4, dumped 42, flat 7, open 1 (saving losses: keep it)
+- near the high / chasing: blocked 55, ran 4, dumped 42, flat 7, open 2 (saving losses: keep it)
   - ran: Wojak up to 2.51x  
     CA `BbNuEtiT77Swr4WqGHuUkQY5kZ67M7au7bXkxcArpump`
   - ran: BBOTS up to 1.51x  
@@ -114,14 +114,14 @@ A skip "ran" if the coin reached the first target (1.5x) from the skip price bef
     CA `TiMSdJrkVwUpeEWJpuqRvHt4wVS7uH77LbNPGGVJXNw`
   - ran: WASTED up to 1.93x  
     CA `GexThZHgaswpAQ7Fi8QrHFubjPimUNSYhJiAA7XZpump`
-- too new / sniping: blocked 40, ran 4, dumped 36, flat 0, open 0 (saving losses: keep it)
+- too new / sniping: blocked 41, ran 4, dumped 36, flat 0, open 1 (saving losses: keep it)
   - ran: onlypump up to 1.92x  
     CA `J73efZvH6rkrJbFJdP2rqe473YJW7tyWmrNARUSzpump`
   - ran: paws up to 1.51x  
     CA `CCF6ui6YjjhLaVtuYLH8b5jza8jHathqww5VbrMapump`
   - ran: VETOTRUMP up to 1.66x  
     CA `6g16UK4wHoFhC7PCmw8LYYCdt9q8m99fyoAwxeCrpump`
-- falling knife (code): blocked 29, ran 5, dumped 21, flat 2, open 1 (saving losses: keep it)
+- falling knife (code): blocked 29, ran 6, dumped 21, flat 2, open 0 (saving losses: keep it)
   - ran: KIM up to 1.55x  
     CA `8pjfN5Ayb4rucGpYE3tZWN6v3EysizjPx1v62zx1pump`
   - ran: BLUE up to 1.53x  
@@ -142,12 +142,14 @@ A skip "ran" if the coin reached the first target (1.5x) from the skip price bef
     CA `2T9WZjVC6L3BvusUtjKDT6HcZeEYgU9T5xhfJQxFpump`
   - ran: ZECRET up to 1.62x  
     CA `ChCi2x2bpevrNyeRoPHLXHzmaCdGQPuU15CNqxY1pump`
-- falling knife / no higher low: blocked 17, ran 2, dumped 12, flat 1, open 2 (saving losses: keep it)
+- falling knife / no higher low: blocked 17, ran 3, dumped 12, flat 1, open 1 (saving losses: keep it)
   - ran: CREDIT up to 1.56x  
     CA `Ewyifvp8X9NxeaKawXamGXBFDisuMfcFfcdvSZ8opump`
   - ran: PI up to 1.6x  
     CA `93VGqXL76voGxc43apJTDJoKkqnxTht1BKWoEmUypump`
-- bundles over the line: blocked 13, ran 2, dumped 9, flat 2, open 0 (saving losses: keep it)
+  - ran: ANAKIN up to 1.55x  
+    CA `8s4bNqEztH1JP7mkU747uMr7AckCQdiV47FDqYnDpump`
+- bundles over the line: blocked 14, ran 2, dumped 9, flat 2, open 1 (saving losses: keep it)
   - ran: Nuts up to 1.53x  
     CA `APH9FRoKst66E4a7uZXcEfE8NjtwybUC8Jq7ue8upump`
   - ran: NA up to 1.97x  
@@ -191,13 +193,13 @@ A skip "ran" if the coin reached the first target (1.5x) from the skip price bef
 War/peace meta is dying: TRUMP rugged (-98%, $0 5m), WAR -80%, WARDOG -87%, PEACE -34% at ~0.17x hourly pace (fails 0.7x DIP gate). Crawler summary is stale. Flow has moved to young off-theme pumpswap coins under 1h old at $30-70k mcap: faucet ($68k, +76%/1h, $14.4k 5m, buys 0.63, cooling to ~0.56x), CI ($22.8k 5m, 6 min old), XMRISE (privacy, fading ~0.37x). Setup: faucet MIGRATED on a 10%+ pullback if checks come back clean, conviction 6-7. Watch: CI (too new, V5), Tradition (still on the curve, sell-heavy 0.43). PASS: TRUMP (rugged, political name, V13), PEACE (volume falling), LAPTOP (politician's son's coin, down 98%, V13), WAR/WARDOG/WARCAT (dead flow).
 
 ## Moving most in its scans, last 30 min (1h volume)
-- ANAKIN: $122,757 1h vol, $3,382,856 mcap, +5% 1h  
-  CA `8s4bNqEztH1JP7mkU747uMr7AckCQdiV47FDqYnDpump`
-- inevitable: $60,080 1h vol, $4,466 mcap, +25% 1h  
-  CA `FxFaz4oaoE8tnLKozVoPVXR4vCSEeJnp6PxKAWUmpump`
-- Abdul: $50,386 1h vol, $20,329 mcap, +503% 1h  
-  CA `H2x9x3wkUFDMvAXJrsXWwSxeYLCw369n1mjpuEgcpump`
-- GATO: $44,576 1h vol, $9,050,481 mcap, +8% 1h  
-  CA `HsprHxBRgiVaQdRf3TnKNuZZtaX9JUSPgMFdAkk6pump`
-- XMRISE: $41,856 1h vol, $6,117 mcap, -90% 1h  
-  CA `5GNDhmKmNks2ELBCmLHPZYBeYu2NCDqnrhKnBBr99xmr`
+- CI: $175,963 1h vol, $159,025 mcap, +301% 1h  
+  CA `gg1zQUgUoXd8hVmkTmLooyzC1QBT1cvJDnCXHLPpump`
+- TripleH: $173,367 1h vol, $124,047 mcap, +212% 1h  
+  CA `ATnGk91tqFpXhiqAnDfGav7YYMUiocQ2YHgY4gPBpump`
+- faucet: $165,356 1h vol, $22,333 mcap, -68% 1h  
+  CA `99V36NFUcueC2tHjd1JV5bfhFux73NKWRiSBnxJ8pump`
+- PEER: $126,500 1h vol, $27,042 mcap, +861% 1h  
+  CA `BbtvdRYnvHLeAsVg6ErBEYXYRg2329RXkAtFfcCTpump`
+- CI: $74,600 1h vol, $3,033 mcap, -91% 1h  
+  CA `DkpL2e59QKGdrHnNHUDmy9ieWbmMHeHfMh4kA6bEpump`
