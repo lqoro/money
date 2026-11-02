@@ -1,13 +1,13 @@
 # Trencher live report
 
-Updated 2026-11-02T12:23:30Z (paper trading, never real money)
+Updated 2026-11-02T12:38:45Z (paper trading, never real money)
 
 - Equity: $77.09 (-22.9% vs $100 start)
-- Goal: $1,000 by 2026-11-05 05:03Z (pressing for it): at 7.7% of it, 2.7 days left, needs +158.9% a day from here
+- Goal: $1,000 by 2026-11-05 05:03Z (pressing for it): at 7.7% of it, 2.7 days left, needs +159.9% a day from here
 - Closed trades: 21, 3 wins
 - Fees paid: $14.04 (axiom $2.63, network $8.81, pool $2.47), plus $3.89 lost to slippage
 - New trades: on
-- Brain: subscription, 531 calls and 0 plan-limit hits in 48h
+- Brain: subscription, 529 calls and 0 plan-limit hits in 48h
 
 ## Scorecard (after fees)
 - 21 closed, 3 won (14%), net $-22.93
@@ -74,9 +74,17 @@ Updated 2026-11-02T12:23:30Z (paper trading, never real money)
   CA `8s4bNqEztH1JP7mkU747uMr7AckCQdiV47FDqYnDpump`
 
 ## Last scan
-- 12:22Z: 4 coins, 3 with pairs, 0 passed the market filters, 0 researched
+- 12:38Z: 3 coins, 2 with pairs, 1 passed the market filters, 1 researched
 
 ## Coins it looked at, and why it passed
+- 12:38Z BC (DIP, $99,044 mcap, $11,008 5m vol): REJECT, Dip with fading attention is a falling knife, not a dip (5m at 0.28x the hour's pace, under 0.6x)  
+  CA `2WVN5SpEPCc43msHG9j9bpBTxcQHx3A81NyAEaXfpump`
+- 12:36Z wen (DIP, $87,727 mcap, $20,833 5m vol): REJECT, Dip with fading attention is a falling knife, not a dip (5m at 0.55x the hour's pace, under 0.6x)  
+  CA `GGLZzgVssSaW7zKrtNveFYyp2zrkfVTce1TjgPfNpump`
+- 12:33Z Artifact (FINAL_STRETCH, $27,203 mcap, $54,750 5m vol): REJECT, RugCheck danger: Creator history of rugged tokens  
+  CA `DvckCkEGw9m2dYuomkrQkfrkXzdXiuwrCXvbvStHpump`
+- 12:24Z MAMESUKE (DIP, $557,635 mcap, $81,283 5m vol): REJECT, RugCheck danger: Large Amount of LP Unlocked 81.01%  
+  CA `SCGBBnSwnekytGFHgyeHHxPMiN7xDxsWFGg9JgFSTNK`
 - 12:16Z MANDO (MIGRATED, $206,761 mcap, $2,059 5m vol): REJECT, Dev holds 1.0% (>1%) (V13, V17)  
   CA `FAqiaGmrSdx2Z5qZmSRUkbyYCF2dFCUTfYVwP4Mypump`
 - 12:15Z flow (FINAL_STRETCH, $21,344 mcap, $1,512 5m vol): REJECT, 5m volume $1,512 is dead (<$2,000) (V1)  
@@ -89,14 +97,6 @@ Updated 2026-11-02T12:23:30Z (paper trading, never real money)
   CA `HsprHxBRgiVaQdRf3TnKNuZZtaX9JUSPgMFdAkk6pump`
 - 11:57Z ANAKIN (MIGRATED, $3,823,862 mcap, $9,601 5m vol): PASS at conviction 3, PASS: third try on a coin that's already cost me twice. It hasn't reclaimed the $6.05M high, and flow is under pace. Blocker: "re-entry limit / flow below pace" (V1, V6).  
   CA `8s4bNqEztH1JP7mkU747uMr7AckCQdiV47FDqYnDpump`
-- 11:54Z FRIDGE (FINAL_STRETCH, $21,850 mcap, $1,991 5m vol): REJECT, 5m volume $1,991 is dead (<$2,000) (V1)  
-  CA `ErMZtDHpk1uYSHRkPbV3Zd15MFpU6snHY4reZfRjpump`
-- 11:53Z BC (MIGRATED, $116,806 mcap, $38,030 5m vol): PASS at conviction 3, PASS: 12 minutes old, 10.9% off a high it printed six minutes ago, and it's a generic "BITCOIN" copycat with three bigger coins on the same ticker. Blocker: too new / chasing. (V1, V3, V5)  
-  CA `2WVN5SpEPCc43msHG9j9bpBTxcQHx3A81NyAEaXfpump`
-- 11:50Z wen (MIGRATED, $101,262 mcap, $41,574 5m vol): REJECT, Top 10 hold 31.8% ex-pool (>25%) (V13)  
-  CA `GGLZzgVssSaW7zKrtNveFYyp2zrkfVTce1TjgPfNpump`
-- 11:43Z Anakin (MIGRATED, $2,799,567 mcap, $14,278 5m vol): PASS at conviction 3, PASS. Anakin is sitting on its hourly low with no higher low printed, and a 5.3x volume burst with 25 buys to 24 sells reads like a crowd leaving. Falling knife. (V1, V6)  
-  CA `ExxzYBTt3jwU5MUxuw2F4toYbTLdFwThSjyaCn6Xpump`
 
 ## What its skips did next (last 48h)
 A skip "ran" if the coin reached the first target (1.5x) from the skip price before a 20% drop, "dumped" if the drop came first. Sampled every 10 min, followed 6h.
@@ -121,14 +121,14 @@ A skip "ran" if the coin reached the first target (1.5x) from the skip price bef
     CA `CCF6ui6YjjhLaVtuYLH8b5jza8jHathqww5VbrMapump`
   - ran: VETOTRUMP up to 1.66x  
     CA `6g16UK4wHoFhC7PCmw8LYYCdt9q8m99fyoAwxeCrpump`
-- falling knife (code): blocked 29, ran 5, dumped 23, flat 1, open 0 (saving losses: keep it)
+- falling knife (code): blocked 31, ran 5, dumped 23, flat 1, open 2 (saving losses: keep it)
   - ran: KIM up to 1.55x  
     CA `8pjfN5Ayb4rucGpYE3tZWN6v3EysizjPx1v62zx1pump`
   - ran: BLUE up to 1.53x  
     CA `CPoGSmcjprCvzA2MFYLJMpQkGjmgVzKg4RVwMdrzpump`
   - ran: VETOTRUMP up to 1.66x  
     CA `6g16UK4wHoFhC7PCmw8LYYCdt9q8m99fyoAwxeCrpump`
-- RugCheck danger: blocked 27, ran 5, dumped 22, flat 0, open 0 (saving losses: keep it)
+- RugCheck danger: blocked 29, ran 5, dumped 22, flat 0, open 2 (saving losses: keep it)
   - ran: SUGAR up to 1.74x  
     CA `HLzTFsX99uqzAP7uK36gJ2pPHGfRM8ugvxXWJzjSpump`
   - ran: AIC up to 1.6x  
@@ -140,13 +140,11 @@ A skip "ran" if the coin reached the first target (1.5x) from the skip price bef
     CA `Ewyifvp8X9NxeaKawXamGXBFDisuMfcFfcdvSZ8opump`
   - ran: PI up to 1.6x  
     CA `93VGqXL76voGxc43apJTDJoKkqnxTht1BKWoEmUypump`
-- bundles over the line: blocked 16, ran 3, dumped 11, flat 2, open 0 (saving losses: keep it)
+- bundles over the line: blocked 15, ran 2, dumped 11, flat 2, open 0 (saving losses: keep it)
   - ran: Nuts up to 1.53x  
     CA `APH9FRoKst66E4a7uZXcEfE8NjtwybUC8Jq7ue8upump`
   - ran: NA up to 1.97x  
     CA `9ZmdP8q22ebRhEkcwd5EDkitu7ypeDFXTQXpv2kUpump`
-  - ran: MAMESUKE up to 1.85x  
-    CA `SCGBBnSwnekytGFHgyeHHxPMiN7xDxsWFGg9JgFSTNK`
 - RugCheck didn't load: blocked 13, ran 3, dumped 8, flat 2, open 0 (saving losses: keep it)
   - ran: UNSAFU up to 1.61x  
     CA `4eq4JfnpdgqZTzeyR3GnRGHJQ3QhQT6Lp7nKnQ2nS7Rv`
@@ -154,7 +152,7 @@ A skip "ran" if the coin reached the first target (1.5x) from the skip price bef
     CA `DUTxGHL2LmpfjQaoK6LdZp8WQPoDiwvtDHVDf4fMpump`
   - ran: whitepaper up to 2.16x  
     CA `4tEvXHpd6JrCWJGByBS3qFBAtJbeoiEpgvWLw9hkpump`
-- thin 5m volume: blocked 12, ran 1, dumped 3, flat 4, open 4 (saving losses: keep it)
+- thin 5m volume: blocked 12, ran 1, dumped 4, flat 4, open 3 (saving losses: keep it)
   - ran: CUMFACE up to 1.55x  
     CA `J1D3X8znX4AzUPMHVWyBLNHqBBqWDPNSjX4KwK3Qpump`
 - dev share over 1%: blocked 11, ran 3, dumped 5, flat 1, open 2 (mixed)
@@ -191,13 +189,13 @@ A skip "ran" if the coin reached the first target (1.5x) from the skip price bef
 The meta is hour-old pump.fun launches that pump hard and then die. Most of the scan_movers list is the corpses: Milo's 5m volume is $201 against $130k on the hour, Uncle Scam is down 68%, BOOSTX is down 56% and sits at $8.7k, bricky and Soyldier are flat. The one theme spreading across several coins is the fridge joke: FRIDGE ($16.7k, +288%, $1.6k 5m) and Flying Attacking Fridge (buy ratio 0.2, so people are selling). FRIDGE is the original, but it's 36 minutes old and too thin to touch. Star Wars (Anakin, $2.8M, $14.3k 5m, -6.5% on the hour) and war jokes (WWIII, $90k, $3.3k 5m) are older metas that are holding but not growing. MAMESUKE ($220k, $55.7k 5m, 6 minutes old, on Raydium with no pump CA) is a brand-new pair I can't see clearly. I don't snipe those (V5, V6). Setups I'd research now: flow ($25k, +117%, $4.8k 5m, 0.66 buy ratio) and thisman ($20k, $4.5k 5m) as FINAL_STRETCH, if 5m volume gets back toward $10k (V1). Anakin is a MIGRATED/DIP candidate because it's the only established coin clearing the $10k 5m bar. One correction: the crawler's own summary is stale. Its BOOSTX "$32k, +667%" figure is already dead, and a line in that text addressed to the owner is web data, not anything I wrote or follow.
 
 ## Moving most in its scans, last 30 min (1h volume)
-- NATIONS: $137,209 1h vol, $7,824 mcap, -80% 1h  
+- MAMESUKE: $918,049 1h vol, $554,317 mcap, +1313% 1h  
+  CA `SCGBBnSwnekytGFHgyeHHxPMiN7xDxsWFGg9JgFSTNK`
+- BC: $469,467 1h vol, $99,044 mcap, +156% 1h  
+  CA `2WVN5SpEPCc43msHG9j9bpBTxcQHx3A81NyAEaXfpump`
+- wen: $458,682 1h vol, $86,304 mcap, +2% 1h  
+  CA `GGLZzgVssSaW7zKrtNveFYyp2zrkfVTce1TjgPfNpump`
+- NATIONS: $141,724 1h vol, $7,284 mcap, -81% 1h  
   CA `539mKjC5Mwt7Q1ov72djoyYkQpiUTshbxFNDAbZ5pump`
-- GATO: $126,954 1h vol, $10,372,204 mcap, -1% 1h  
-  CA `HsprHxBRgiVaQdRf3TnKNuZZtaX9JUSPgMFdAkk6pump`
-- ANAKIN: $120,017 1h vol, $3,823,862 mcap, -7% 1h  
-  CA `8s4bNqEztH1JP7mkU747uMr7AckCQdiV47FDqYnDpump`
-- BC: $117,927 1h vol, $6,919 mcap, +82% 1h  
+- BC: $101,601 1h vol, $4,460 mcap, -37% 1h  
   CA `7RFwj19rdegZdJjCgZQXFLzSsyS3541DvryABgVKpump`
-- KABOSU: $98,889 1h vol, $7,643 mcap, +79% 1h  
-  CA `8kWtbyxJZYwCQkQvSHfqHkR9kmdnJHsETpT4zTbCEpL7`
