@@ -1,13 +1,13 @@
 # Trencher live report
 
-Updated 2026-11-02T21:30:31Z (paper trading, never real money)
+Updated 2026-11-02T21:45:34Z (paper trading, never real money)
 
 - Equity: $74.23 (-25.8% vs $100 start)
-- Goal: $1,000 by 2026-11-05 05:03Z (pressing for it): at 7.4% of it, 2.3 days left, needs +207.6% a day from here
+- Goal: $1,000 by 2026-11-05 05:03Z (pressing for it): at 7.4% of it, 2.3 days left, needs +209.2% a day from here
 - Closed trades: 22, 3 wins
 - Fees paid: $14.78 (axiom $2.81, network $9.18, pool $2.66), plus $4.15 lost to slippage
 - New trades: on
-- Brain: subscription, 502 calls and 0 plan-limit hits in 48h
+- Brain: subscription, 500 calls and 0 plan-limit hits in 48h
 
 ## Scorecard (after fees)
 - 22 closed, 3 won (14%), net $-25.79
@@ -74,9 +74,17 @@ Updated 2026-11-02T21:30:31Z (paper trading, never real money)
   CA `H4gHnZ3NCU7Z9XQwGX6YYJNyieGEW8pqwGRUcdSxpump`
 
 ## Last scan
-- 21:29Z: 6 coins, 6 with pairs, 0 passed the market filters, 0 researched
+- 21:45Z: 7 coins, 6 with pairs, 0 passed the market filters, 0 researched
 
 ## Coins it looked at, and why it passed
+- 21:41Z Anakin (DIP, $1,288,588 mcap, $2,692 5m vol): REJECT, Dip with fading attention is a falling knife, not a dip (5m at 0.49x the hour's pace, under 0.6x)  
+  CA `ExxzYBTt3jwU5MUxuw2F4toYbTLdFwThSjyaCn6Xpump`
+- 21:32Z HEDGE (MIGRATED, $258,323 mcap, $25,075 5m vol): PASS at conviction 3, PASS: 5m flow is only 0.4x the hourly pace and there's no printed higher low. That's attention leaving, not a pullback to buy (V1, V6).  
+  CA `wDSAqt4tEZpDAwB9XY6ejkZvMFuT1zUMjUh67txeYhf`
+- 21:31Z Daisuke (MIGRATED, $64,367 mcap, $64,509 5m vol): PASS at conviction 3, PASS: 11 minutes old, 5m volume 4x the hourly pace, no higher low, in a 26-coin ticker field. Too new and chasing a spike. (V1, V5, V6)  
+  CA `3oEMST7PYBrJs6KcXddeuqaSsLYs8qZpEPWaUGdgpump`
+- 21:30Z MAMESUKE (DIP, $886,529 mcap, $7,203 5m vol): REJECT, Bundles: 4 linked wallet cluster(s) hold 65.8% of supply (>20%) (V17)  
+  CA `SCGBBnSwnekytGFHgyeHHxPMiN7xDxsWFGg9JgFSTNK`
 - 21:26Z cap (FINAL_STRETCH, $24,825 mcap, $2,707 5m vol): REJECT, Top 10 hold 27.7% ex-pool (>25%) (V13)  
   CA `77a2CtqscpPTD2is7Xf1u6SNfz6GpYqK4wPGf6c8pump`
 - 21:26Z WASTED (MIGRATED, $1,221,473 mcap, $3,325 5m vol): REJECT, Dev holds 3.0% (>1%) (V13, V17)  
@@ -89,17 +97,16 @@ Updated 2026-11-02T21:30:31Z (paper trading, never real money)
   CA `HsprHxBRgiVaQdRf3TnKNuZZtaX9JUSPgMFdAkk6pump`
 - 21:18Z CHUDDY (FINAL_STRETCH, $20,397 mcap, $10,082 5m vol): REJECT, RugCheck danger: Large Amount of LP Unlocked 88.32%  
   CA `Ci3PWEdhGwrKNxT3C36ATxVSLMDSFjktCnNRZdYGvm5r`
-- 21:17Z 豆助 (MIGRATED, $203,806 mcap, $12,605 5m vol): PASS at conviction 2, PASS — 86% off a 30-min-old $1.47M peak with 5m flow at 0.16x hourly pace. Falling knife, past the 70% DIP ceiling (V1, V6).  
-  CA `Ei19qkvBM3amMyrveNLqKSPB1ESMEUQ6MrqDYwZVpump`
-- 21:16Z RICO (MIGRATED, $373,429 mcap, $27,396 5m vol): MOVED at conviction 6, wanted to buy, but the price moved -19.7% while deciding (limits -8% / +10%)  
-  CA `8kuQg3WivDtL85VEdw2jEmSXjYt6EEeYBATJ4DtQpump`
-- 21:14Z DESSA (DIP, $12,492,761 mcap, $3,354 5m vol): PASS at conviction 3, PASS — $3.4k on the 5m, 38% buys, $12.5M mcap above the V6 ceiling, and zero radar mentions. Clean holders, but nobody's around. Blocker: flow below the bar (V1, V6).  
-  CA `npz2FhoufQ7pKqhGpaipYWacrAkidyW2yDpVWSvpump`
-- 21:13Z ALOKA (MIGRATED, $296,150 mcap, $5,512 5m vol): PASS at conviction 3, PASS: 5m flow is $5.5k, which is 0.13x the hourly pace. The crowd that made the 615% hour has left. Flow below pace (V1, V6).  
-  CA `GiLp6P4xcrGWRCGBJdMFTj4YxUgSqm1a195vuWqvpump`
 
 ## What its skips did next (last 48h)
 A skip "ran" if the coin reached the first target (1.5x) from the skip price before a 20% drop, "dumped" if the drop came first. Sampled every 10 min, followed 6h.
+- too new / sniping: blocked 49, ran 9, dumped 40, flat 0, open 0 (saving losses: keep it)
+  - ran: onlypump up to 1.92x  
+    CA `J73efZvH6rkrJbFJdP2rqe473YJW7tyWmrNARUSzpump`
+  - ran: paws up to 1.51x  
+    CA `CCF6ui6YjjhLaVtuYLH8b5jza8jHathqww5VbrMapump`
+  - ran: VETOTRUMP up to 1.66x  
+    CA `6g16UK4wHoFhC7PCmw8LYYCdt9q8m99fyoAwxeCrpump`
 - near the high / chasing: blocked 48, ran 3, dumped 38, flat 6, open 1 (saving losses: keep it)
   - ran: BBOTS up to 1.51x  
     CA `4TCevs5EC2RFsdWo3YPVifqe9dX2acCGGa9VHNtppump`
@@ -107,40 +114,33 @@ A skip "ran" if the coin reached the first target (1.5x) from the skip price bef
     CA `CPoGSmcjprCvzA2MFYLJMpQkGjmgVzKg4RVwMdrzpump`
   - ran: PIRATE up to 2.27x  
     CA `gzQXRwGRzfKLHfaV1f84QT7e5mt4vevu7MgacEfpump`
-- too new / sniping: blocked 48, ran 8, dumped 38, flat 0, open 2 (saving losses: keep it)
-  - ran: onlypump up to 1.92x  
-    CA `J73efZvH6rkrJbFJdP2rqe473YJW7tyWmrNARUSzpump`
-  - ran: paws up to 1.51x  
-    CA `CCF6ui6YjjhLaVtuYLH8b5jza8jHathqww5VbrMapump`
-  - ran: VETOTRUMP up to 1.66x  
-    CA `6g16UK4wHoFhC7PCmw8LYYCdt9q8m99fyoAwxeCrpump`
-- top 10 over 25%: blocked 44, ran 7, dumped 31, flat 2, open 4 (saving losses: keep it)
+- top 10 over 25%: blocked 44, ran 7, dumped 32, flat 3, open 2 (saving losses: keep it)
   - ran: Beaver up to 2.56x  
     CA `5h44wfzwGHFnfVhNKtMLapAJNV9iqqbUgUB2FqyWpump`
   - ran: timmy up to 1.66x  
     CA `TiMSdJrkVwUpeEWJpuqRvHt4wVS7uH77LbNPGGVJXNw`
   - ran: TIPPER up to 1.55x  
     CA `3DEcz7AnmJiGSnDHYvUeX5uPMMHVcDwqrWRSGdHEpump`
-- falling knife (code): blocked 30, ran 6, dumped 21, flat 1, open 2 (saving losses: keep it)
+- falling knife (code): blocked 31, ran 6, dumped 21, flat 1, open 3 (saving losses: keep it)
   - ran: KIM up to 1.55x  
     CA `8pjfN5Ayb4rucGpYE3tZWN6v3EysizjPx1v62zx1pump`
   - ran: BLUE up to 1.53x  
     CA `CPoGSmcjprCvzA2MFYLJMpQkGjmgVzKg4RVwMdrzpump`
   - ran: VETOTRUMP up to 1.66x  
     CA `6g16UK4wHoFhC7PCmw8LYYCdt9q8m99fyoAwxeCrpump`
-- RugCheck danger: blocked 30, ran 4, dumped 23, flat 0, open 3 (saving losses: keep it)
+- RugCheck danger: blocked 29, ran 4, dumped 22, flat 0, open 3 (saving losses: keep it)
   - ran: SUGAR up to 1.74x  
     CA `HLzTFsX99uqzAP7uK36gJ2pPHGfRM8ugvxXWJzjSpump`
   - ran: AIC up to 1.6x  
     CA `2T9WZjVC6L3BvusUtjKDT6HcZeEYgU9T5xhfJQxFpump`
   - ran: ZECRET up to 1.62x  
     CA `ChCi2x2bpevrNyeRoPHLXHzmaCdGQPuU15CNqxY1pump`
-- flow below pace: blocked 17, ran 2, dumped 11, flat 0, open 4 (saving losses: keep it)
+- flow below pace: blocked 18, ran 2, dumped 12, flat 0, open 4 (saving losses: keep it)
   - ran: Ahsoka up to 1.54x  
     CA `4nuj5NLHMtQSezfmz6CwBpCRJisFie6F6MxNNz1dpump`
   - ran: KOROSUKE up to 1.54x  
     CA `7ha4HFgdvkXaDcR2biCsuBpoCZzoLSRjb5we34Gbpump`
-- bundles over the line: blocked 15, ran 2, dumped 10, flat 2, open 1 (saving losses: keep it)
+- bundles over the line: blocked 15, ran 2, dumped 11, flat 2, open 0 (saving losses: keep it)
   - ran: Nuts up to 1.53x  
     CA `APH9FRoKst66E4a7uZXcEfE8NjtwybUC8Jq7ue8upump`
   - ran: NA up to 1.97x  
@@ -155,7 +155,7 @@ A skip "ran" if the coin reached the first target (1.5x) from the skip price bef
     CA `9yEKBwczdqoox7Red6GGPTrJ2dUbMvFUagdjxFqHpump`
   - ran: DOJAK up to 2.62x  
     CA `E5aeDjgq6ZSzAmihKoh9JPEhwK2bMCbZLJf6LYT9pump`
-- thin 5m volume: blocked 12, ran 2, dumped 3, flat 4, open 3 (mixed)
+- thin 5m volume: blocked 12, ran 2, dumped 3, flat 5, open 2 (mixed)
   - ran: CUMFACE up to 1.55x  
     CA `J1D3X8znX4AzUPMHVWyBLNHqBBqWDPNSjX4KwK3Qpump`
   - ran: KIDS up to 1.73x  
@@ -189,11 +189,11 @@ The movers show two things right now. One is fresh AI/dev-jargon launches under 
 ## Moving most in its scans, last 30 min (1h volume)
 - 豆助: $955,483 1h vol, $203,806 mcap, -9% 1h  
   CA `Ei19qkvBM3amMyrveNLqKSPB1ESMEUQ6MrqDYwZVpump`
-- ALOKA: $510,657 1h vol, $296,150 mcap, +615% 1h  
-  CA `GiLp6P4xcrGWRCGBJdMFTj4YxUgSqm1a195vuWqvpump`
+- HEDGE: $758,032 1h vol, $262,997 mcap, +77% 1h  
+  CA `wDSAqt4tEZpDAwB9XY6ejkZvMFuT1zUMjUh67txeYhf`
+- 1WIN: $261,711 1h vol, $19,668,712 mcap, +10% 1h  
+  CA `FjPKUGnF5zBpdEv18gT8FJCtxh3MKrFkoeYekgYr1win`
 - Slingoor: $241,428 1h vol, $105,633 mcap, -54% 1h  
   CA `H4gHnZ3NCU7Z9XQwGX6YYJNyieGEW8pqwGRUcdSxpump`
-- RICO: $173,672 1h vol, $433,460 mcap, +124% 1h  
-  CA `8kuQg3WivDtL85VEdw2jEmSXjYt6EEeYBATJ4DtQpump`
-- GATO: $157,466 1h vol, $10,766,844 mcap, -6% 1h  
-  CA `HsprHxBRgiVaQdRf3TnKNuZZtaX9JUSPgMFdAkk6pump`
+- Daisuke: $194,253 1h vol, $64,367 mcap, +67% 1h  
+  CA `3oEMST7PYBrJs6KcXddeuqaSsLYs8qZpEPWaUGdgpump`
