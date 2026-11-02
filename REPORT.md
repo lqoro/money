@@ -1,13 +1,13 @@
 # Trencher live report
 
-Updated 2026-11-02T14:55:39Z (paper trading, never real money)
+Updated 2026-11-02T15:10:52Z (paper trading, never real money)
 
 - Equity: $77.09 (-22.9% vs $100 start)
-- Goal: $1,000 by 2026-11-05 05:03Z (pressing for it): at 7.7% of it, 2.6 days left, needs +169.1% a day from here
+- Goal: $1,000 by 2026-11-05 05:03Z (pressing for it): at 7.7% of it, 2.6 days left, needs +170.2% a day from here
 - Closed trades: 21, 3 wins
 - Fees paid: $14.04 (axiom $2.63, network $8.81, pool $2.47), plus $3.89 lost to slippage
 - New trades: on
-- Brain: subscription, 514 calls and 0 plan-limit hits in 48h
+- Brain: subscription, 512 calls and 0 plan-limit hits in 48h
 
 ## Scorecard (after fees)
 - 21 closed, 3 won (14%), net $-22.93
@@ -74,9 +74,17 @@ Updated 2026-11-02T14:55:39Z (paper trading, never real money)
   CA `8s4bNqEztH1JP7mkU747uMr7AckCQdiV47FDqYnDpump`
 
 ## Last scan
-- 14:54Z: 3 coins, 3 with pairs, 2 passed the market filters, 2 researched
+- 15:10Z: 3 coins, 3 with pairs, 0 passed the market filters, 0 researched
 
 ## Coins it looked at, and why it passed
+- 15:08Z MANDO (DIP, $139,147 mcap, $2,128 5m vol): REJECT, Dev holds 1.0% (>1%) (V13, V17)  
+  CA `FAqiaGmrSdx2Z5qZmSRUkbyYCF2dFCUTfYVwP4Mypump`
+- 15:01Z MameStonk (DIP, $96,550 mcap, $24,347 5m vol): PASS at conviction 4, PASS: a 30-minute-old spin-off with no socials, still bleeding off its launch spike, and no higher low printed. Blocker "too new" (V1, V6).  
+  CA `57eJSmN1ecANrnZjGPrXzWUMyGhQsQgMS9eHdxM3pump`
+- 14:59Z ANAKIN (DIP, $3,148,339 mcap, $7,807 5m vol): PASS at conviction 3, PASS: flow below pace. ANAKIN's 5m is $7.8k at 0.63x its hourly average, under the 0.7x DIP gate, and the bounce off the hourly low hasn't printed a higher low yet. It's also already burned me twice. (V1, V6)  
+  CA `8s4bNqEztH1JP7mkU747uMr7AckCQdiV47FDqYnDpump`
+- 14:56Z VICECITY (MIGRATED, $110,228 mcap, $13,379 5m vol): PASS at conviction 3, PASS: clean holders, but 5m flow is 0.55x pace on a dead GTA6 meta, plus a +36% bounce candle. Flow below pace. (V1, V6)  
+  CA `8cGKGiSUiwm1KDqUzqYtQnsSRCJw4WcyoyW74LHspump`
 - 14:55Z KIFU (FINAL_STRETCH, $26,392 mcap, $4,873 5m vol): REJECT, Top 10 hold 28.0% ex-pool (>25%) (V13)  
   CA `AHescQSZA5UNfbXpkj2WhT2e3qKSFZ9xJeAHztJ5zoi3`
 - 14:55Z Marutaro (DIP, $139,554 mcap, $72,750 5m vol): PASS at conviction 3, PASS — 11 minutes post-migration, still bleeding off the bond spike with no higher low and 4.2x pace churn. Too new. (V1, V6)  
@@ -89,14 +97,6 @@ Updated 2026-11-02T14:55:39Z (paper trading, never real money)
   CA `SCGBBnSwnekytGFHgyeHHxPMiN7xDxsWFGg9JgFSTNK`
 - 14:40Z fridge (FINAL_STRETCH, $22,263 mcap, $7,008 5m vol): REJECT, Top 10 hold 28.3% ex-pool (>25%) (V13)  
   CA `6W1cSeNGi3WN5mpenwC2fCAc555dAKaucskheC7fpump`
-- 14:36Z jeff (DIP, $1,265,259 mcap, $6,420 5m vol): REJECT, Top 10 hold 39.5% ex-pool (>25%) (V13)  
-  CA `HAsTKXYvv65zM7J6Cu5o5PcZsiKMQYo5oz4WPjgqwP6k`
-- 14:32Z WWIII (MIGRATED, $30,665 mcap, $3,116 5m vol): REJECT, RugCheck danger: Creator history of rugged tokens  
-  CA `GD52VfoPZdad4hiNPg4UnjtDGsS4WiM3mqS8j1czpump`
-- 14:32Z MAYA (MIGRATED, $151,433 mcap, $86,956 5m vol): PASS at conviction 3, PASS — 7 minutes old, 9.8% off the high, last 5m candle +31% on 6.6x pace. Chasing a spike on a coin too new to have a level. Blocker: chasing spike (V1, V6).  
-  CA `G9r7CoaAEKzsFudkAhSWmuFi2huQpAqZ7w7TMfYqpump`
-- 14:26Z DESSA (DIP, $14,629,838 mcap, $22,277 5m vol): PASS at conviction 3, PASS: $14.6M coin with holder data that didn't load, sitting just above the hourly low with no higher low printed. Nearest resistance is about 1.1x away. Blocker: "target too close" (V6, learned rules).  
-  CA `npz2FhoufQ7pKqhGpaipYWacrAkidyW2yDpVWSvpump`
 
 ## What its skips did next (last 48h)
 A skip "ran" if the coin reached the first target (1.5x) from the skip price before a 20% drop, "dumped" if the drop came first. Sampled every 10 min, followed 6h.
@@ -107,7 +107,7 @@ A skip "ran" if the coin reached the first target (1.5x) from the skip price bef
     CA `CPoGSmcjprCvzA2MFYLJMpQkGjmgVzKg4RVwMdrzpump`
   - ran: PIRATE up to 2.27x  
     CA `gzQXRwGRzfKLHfaV1f84QT7e5mt4vevu7MgacEfpump`
-- top 10 over 25%: blocked 46, ran 7, dumped 33, flat 3, open 3 (saving losses: keep it)
+- top 10 over 25%: blocked 46, ran 7, dumped 34, flat 3, open 2 (saving losses: keep it)
   - ran: Beaver up to 2.56x  
     CA `5h44wfzwGHFnfVhNKtMLapAJNV9iqqbUgUB2FqyWpump`
   - ran: timmy up to 1.66x  
@@ -135,11 +135,6 @@ A skip "ran" if the coin reached the first target (1.5x) from the skip price bef
     CA `2T9WZjVC6L3BvusUtjKDT6HcZeEYgU9T5xhfJQxFpump`
   - ran: ZECRET up to 1.62x  
     CA `ChCi2x2bpevrNyeRoPHLXHzmaCdGQPuU15CNqxY1pump`
-- falling knife / no higher low: blocked 17, ran 2, dumped 13, flat 1, open 1 (saving losses: keep it)
-  - ran: CREDIT up to 1.56x  
-    CA `Ewyifvp8X9NxeaKawXamGXBFDisuMfcFfcdvSZ8opump`
-  - ran: PI up to 1.6x  
-    CA `93VGqXL76voGxc43apJTDJoKkqnxTht1BKWoEmUypump`
 - bundles over the line: blocked 16, ran 3, dumped 11, flat 2, open 0 (saving losses: keep it)
   - ran: Nuts up to 1.53x  
     CA `APH9FRoKst66E4a7uZXcEfE8NjtwybUC8Jq7ue8upump`
@@ -147,7 +142,12 @@ A skip "ran" if the coin reached the first target (1.5x) from the skip price bef
     CA `9ZmdP8q22ebRhEkcwd5EDkitu7ypeDFXTQXpv2kUpump`
   - ran: MAMESUKE up to 1.75x  
     CA `SCGBBnSwnekytGFHgyeHHxPMiN7xDxsWFGg9JgFSTNK`
-- dev share over 1%: blocked 11, ran 3, dumped 6, flat 1, open 1 (saving losses: keep it)
+- falling knife / no higher low: blocked 15, ran 2, dumped 11, flat 1, open 1 (saving losses: keep it)
+  - ran: CREDIT up to 1.56x  
+    CA `Ewyifvp8X9NxeaKawXamGXBFDisuMfcFfcdvSZ8opump`
+  - ran: PI up to 1.6x  
+    CA `93VGqXL76voGxc43apJTDJoKkqnxTht1BKWoEmUypump`
+- dev share over 1%: blocked 11, ran 3, dumped 5, flat 1, open 2 (mixed)
   - ran: IGLU up to 1.54x  
     CA `34YQhrgkWoeFnm6LrcnmV3PLyDaMSNZikzUjyMmupump`
   - ran: MINTED up to 1.61x  
@@ -208,11 +208,11 @@ The owner wants $1k by Nov 5. I've noted that, but a deadline doesn't make a coi
 ## Moving most in its scans, last 30 min (1h volume)
 - MAMESUKE: $321,673 1h vol, $898,760 mcap, +13% 1h  
   CA `SCGBBnSwnekytGFHgyeHHxPMiN7xDxsWFGg9JgFSTNK`
+- CI: $301,376 1h vol, $20,736 mcap, -45% 1h  
+  CA `HckPgvvNVNnFRZsYRNGMbeSs362dLLhZGjzNmqpgf9gk`
+- VICECITY: $294,105 1h vol, $110,228 mcap, +184% 1h  
+  CA `8cGKGiSUiwm1KDqUzqYtQnsSRCJw4WcyoyW74LHspump`
 - Ahsoka: $245,385 1h vol, $263,692 mcap, +554% 1h  
   CA `4nuj5NLHMtQSezfmz6CwBpCRJisFie6F6MxNNz1dpump`
-- GTA6STAR: $220,170 1h vol, $1,854 mcap, -99% 1h  
-  CA `9JnYh2Rbww5vypYxaJm98gRRGUZn36M5UPgFY3Fkpump`
 - Marutaro: $213,221 1h vol, $142,323 mcap, +230% 1h  
   CA `At3jYPUKVEFYrss5a58myVuqKLjGxMuBP5MwqMk9pump`
-- DESSA: $166,550 1h vol, $14,629,838 mcap, -4% 1h  
-  CA `npz2FhoufQ7pKqhGpaipYWacrAkidyW2yDpVWSvpump`
