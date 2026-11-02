@@ -1,13 +1,13 @@
 # Trencher live report
 
-Updated 2026-11-02T00:30:07Z (paper trading, never real money)
+Updated 2026-11-02T00:45:10Z (paper trading, never real money)
 
 - Equity: $80.53 (-19.5% vs $100 start)
-- Goal: $1,000 by 2026-11-05 05:03Z (pressing for it): at 8.1% of it, 3.2 days left, needs +120.3% a day from here
+- Goal: $1,000 by 2026-11-05 05:03Z (pressing for it): at 8.1% of it, 3.2 days left, needs +120.9% a day from here
 - Closed trades: 19, 3 wins
 - Fees paid: $12.66 (axiom $2.26, network $8.06, pool $2.21), plus $3.34 lost to slippage
 - New trades: on
-- Brain: subscription, 615 calls and 0 plan-limit hits in 48h
+- Brain: subscription, 611 calls and 0 plan-limit hits in 48h
 
 ## Scorecard (after fees)
 - 19 closed, 3 won (16%), net $-19.48
@@ -74,9 +74,15 @@ Updated 2026-11-02T00:30:07Z (paper trading, never real money)
   CA `GYKnd6jGUSQoBUnj6LdGCBtCWYDgr2Zd6QwNPcy5pump`
 
 ## Last scan
-- 00:29Z: 3 coins, 2 with pairs, 0 passed the market filters, 0 researched
+- 00:44Z: 4 coins, 3 with pairs, 0 passed the market filters, 0 researched
 
 ## Coins it looked at, and why it passed
+- 00:43Z WASTED (MIGRATED, $53,779 mcap, $8,577 5m vol): REJECT, RugCheck danger: Large Amount of LP Unlocked 100.00%  
+  CA `4mTR4pBnoAPWxzvbK7L6HtRm1XXsxtaSUBUzEqSPEv1x`
+- 00:43Z TREMP (FINAL_STRETCH, $23,472 mcap, $12,189 5m vol): PASS at conviction 3, PASS: vamp. Four bigger TREMPs exist, top 10 hold 24.1% one point under the line, and there's no project X behind a politician parody. That's a curve farm, not a runner (V1, V3, V6, V13).  
+  CA `BkpjfE6myLuNJcYo6kmHqVrTS7B6t86Hf4fScYMEpump`
+- 00:38Z Anakinius (MIGRATED, $306,300 mcap, $6,085 5m vol): PASS at conviction 3, PASS — 5m flow is 0.42x the hourly pace in the shallow band, and it's a side copy in a 5-coin Anakin field where ANAKIN has the crowd. Blocker: flow below pace (V1, V6).  
+  CA `2pKpMwUQXNZeAf93LoomnZSworH3ezFzweCiuvrppump`
 - 00:27Z GLITCH (MIGRATED, $3,480,955 mcap, $2,305 5m vol): REJECT, Top 10 hold 28.0% ex-pool (>25%) (V13)  
   CA `8Xg89xT8Ve34sKiYqYuMs46mycREsCA2F362UscRpump`
 - 00:25Z Anakin (MIGRATED, $3,550,353 mcap, $7,315 5m vol): PASS at conviction 3, PASS — 5m flow is 0.42x the hourly pace and the $4.2M high is only 1.18x away, while the crowd is in the newer ANAKIN. Flow below pace, target too close (V1, V6).  
@@ -91,23 +97,17 @@ Updated 2026-11-02T00:30:07Z (paper trading, never real money)
   CA `CrW5j6ehF8hu6efmndJoSoATgipRA959QzpYxEtbpump`
 - 00:13Z GATO (MIGRATED, $8,431,129 mcap, $4,518 5m vol): REJECT, Dev holds 3.3% (>1%) (V13, V17)  
   CA `HsprHxBRgiVaQdRf3TnKNuZZtaX9JUSPgMFdAkk6pump`
-- 00:11Z ANAKIN (MIGRATED, $1,997,738 mcap, $14,794 5m vol): PASS at conviction 3, PASS — ANAKIN is clean but the $2.42M high is only 1.21x away, under initials, and 5m flow is at 0.55x pace while it fades off the top. Blocker: target too close / flow below pace. (V1, V6)  
-  CA `8s4bNqEztH1JP7mkU747uMr7AckCQdiV47FDqYnDpump`
-- 00:07Z WASTED (MIGRATED, $410,284 mcap, $10,781 5m vol): REJECT, Top 10 hold 25.6% ex-pool (>25%) (V13)  
-  CA `GexThZHgaswpAQ7Fi8QrHFubjPimUNSYhJiAA7XZpump`
-- 00:03Z MIDTERMS (DIP, $40,397 mcap, $7,380 5m vol): REJECT, Dip with fading attention is a falling knife, not a dip (5m at 0.48x the hour's pace, under 0.6x)  
-  CA `74Np8Ga5DomwZVx5bZBGFcHgFavPhgkvkJ2LPdWdpump`
 
 ## What its skips did next (last 48h)
 A skip "ran" if the coin reached the first target (1.5x) from the skip price before a 20% drop, "dumped" if the drop came first. Sampled every 10 min, followed 6h.
-- near the high / chasing: blocked 61, ran 5, dumped 44, flat 8, open 4 (saving losses: keep it)
+- near the high / chasing: blocked 61, ran 5, dumped 45, flat 8, open 3 (saving losses: keep it)
   - ran: Hyped up to 2.02x  
     CA `ADpzsC5eB1yDD5T9LocQ8kpN7jrcW5gobA4FBHuipump`
   - ran: Wojak up to 2.51x  
     CA `BbNuEtiT77Swr4WqGHuUkQY5kZ67M7au7bXkxcArpump`
   - ran: BBOTS up to 1.51x  
     CA `4TCevs5EC2RFsdWo3YPVifqe9dX2acCGGa9VHNtppump`
-- too new / sniping: blocked 51, ran 2, dumped 46, flat 0, open 3 (saving losses: keep it)
+- too new / sniping: blocked 50, ran 2, dumped 45, flat 0, open 3 (saving losses: keep it)
   - ran: onlypump up to 1.92x  
     CA `J73efZvH6rkrJbFJdP2rqe473YJW7tyWmrNARUSzpump`
   - ran: paws up to 1.51x  
@@ -133,17 +133,17 @@ A skip "ran" if the coin reached the first target (1.5x) from the skip price bef
     CA `DUTxGHL2LmpfjQaoK6LdZp8WQPoDiwvtDHVDf4fMpump`
   - ran: whitepaper up to 2.16x  
     CA `4tEvXHpd6JrCWJGByBS3qFBAtJbeoiEpgvWLw9hkpump`
-- RugCheck danger: blocked 19, ran 4, dumped 15, flat 0, open 0 (saving losses: keep it)
+- RugCheck danger: blocked 20, ran 4, dumped 15, flat 0, open 1 (saving losses: keep it)
   - ran: SUGAR up to 1.74x  
     CA `HLzTFsX99uqzAP7uK36gJ2pPHGfRM8ugvxXWJzjSpump`
   - ran: AIC up to 1.6x  
     CA `2T9WZjVC6L3BvusUtjKDT6HcZeEYgU9T5xhfJQxFpump`
   - ran: ZECRET up to 1.62x  
     CA `ChCi2x2bpevrNyeRoPHLXHzmaCdGQPuU15CNqxY1pump`
-- crowd leaving / fading volume: blocked 16, ran 1, dumped 7, flat 2, open 6 (saving losses: keep it)
+- crowd leaving / fading volume: blocked 16, ran 1, dumped 8, flat 2, open 5 (saving losses: keep it)
   - ran: Apple up to 1.58x  
     CA `6nJVg7wV1UBaWBpHuP7pEHLBd26U4cj6vXnGShobpump`
-- falling knife / no higher low: blocked 15, ran 2, dumped 11, flat 1, open 1 (saving losses: keep it)
+- falling knife / no higher low: blocked 15, ran 2, dumped 12, flat 1, open 0 (saving losses: keep it)
   - ran: CREDIT up to 1.56x  
     CA `Ewyifvp8X9NxeaKawXamGXBFDisuMfcFfcdvSZ8opump`
   - ran: PI up to 1.6x  
@@ -182,16 +182,16 @@ A skip "ran" if the coin reached the first target (1.5x) from the skip price bef
 - [2026-11-01 06:19] Expected AAPLCAT, 36% off its $1.8M high with a printed higher-low base, clean holders and $12.6k on the 5m, to retest the peak at about 1.57x. It peaked at 1.01x, broke the 0.000981 higher low, and the "unclear" stop review sold at −31% instead of −20%. That makes 7 of 7 stop reviews closing worse than the stop. This confirms my existing rules rather than adding a new one: the proven band needs 5m at or above the hourly pace and a meta with the crowd still arriving (V1, V6). I bought with pace under the hourly average and a cooling meta, so next time a band entry with flow below pace is a PASS (blocker "flow below pace"), not a probe, and a broken higher low sells right away.
 
 ## Meta right now
-The meta is Star Wars, and the leader is ANAKIN, not ANAKINCORE. ANAKIN is at $1.47M, up 2,778% in an hour at 0.9h old, with a 0.75 buy ratio. But its $20k on the 5-minute is only about 0.12x its hourly pace, so the blowoff is cooling. ANAKINCORE ($320k, 0.8 buys) and Anakinius ($255k, 12 minutes old, $78k on the 5m) are chasing the same money, so first I have to figure out which one is the original and which are vamps (V1, V3). The second theme is fresh pumpswap migrations under an hour old trading news and political jokes: LEARJET ($59k, $61k on the 5m), the migrated ALON ($50k, $36k on the 5m, while its pump.fun twin is dead at 0.05 buys), and MIDTERMS still on the curve with $25k flow. Old coins are fading. GATO, GLITCH, CHOO and ARNOLD have thin flow and sell-heavy ratios, and VETOTRUMP and LAPTOP aren't even in the movers anymore, so the crawler's notes on them are stale. Setups I'd research now: ANAKIN as a DIP only once it pulls back 10%+ and 5m volume gets back to 0.7x the hourly average; LEARJET and ALON as MIGRATED once they've aged past a few minutes and holder/bundle checks pass; and MIDTERMS as FINAL_STRETCH only if no political figure pushed the CA (V13). Owner, I'll take more of the clean setups and rate them as high as they earn, but the hard lines stay where they are.
+The meta has three parts right now. First, Star Wars is still the leader: ANAKIN ($2.0M, 1.7h old, +23% in the hour, 0.73 buys, $14.8k on the 5m) and the older Anakin Skywalker ($3.55M, 77h old, 0.74 buys). The crawler's summary is stale. It talked about ANAKINCORE and Anakinius, but neither is in the movers anymore, and since two Anakins are both getting money, I need to check which one is the original before I touch either (V1, V3). Second, political-joke launches on the curve are rising: Vunce (JD Vance parody, $15k, 6 minutes old, $62k on the 5m), TREMP ($12k, $10.7k on the 5m) and Emily ($27k, +658%). All three are named after people, not pushed by them, but a parody of a politician is close to my politician line (V13), so each one needs a check on who posted the CA. Third, GTA nostalgia is back: WASTED ($410k, 54h old, +84%, 0.72 buys, $10.8k on the 5m) is the original. The young Raydium WASTED copy is a vamp, and GATO is bleeding with 0.41 buys. The quick pumps are fading hard: DIH is down 85%, ALON is down 81% at 0.14 buys, and MIP is dead. The setups I'd research now are WASTED as a MIGRATED/DIP continuation, ANAKIN as a DIP once 5m volume holds at 0.7x the hourly pace or better, PIBBLE as a MIGRATED candidate ($41k, $11k on the 5m, 0.64 buys) if its Raydium pool shows burned liquidity, and Emily as FINAL_STRETCH if holders come back clean. Owner, I'll press on clean setups, but each conviction number gets earned on the checklist, not on the deadline.
 
 ## Moving most in its scans, last 30 min (1h volume)
-- DIH: $414,141 1h vol, $5,663 mcap, -85% 1h  
+- DIH: $424,054 1h vol, $8,708 mcap, -77% 1h  
   CA `FaWS19fD8TrF2GpSXgghP9JN46LZBZ3FRown8qg1pump`
-- ANAKIN: $323,296 1h vol, $1,997,738 mcap, +23% 1h  
-  CA `8s4bNqEztH1JP7mkU747uMr7AckCQdiV47FDqYnDpump`
 - Anakin: $207,020 1h vol, $3,550,353 mcap, +2% 1h  
   CA `ExxzYBTt3jwU5MUxuw2F4toYbTLdFwThSjyaCn6Xpump`
-- MIDTERMS: $184,471 1h vol, $40,397 mcap, +8% 1h  
-  CA `74Np8Ga5DomwZVx5bZBGFcHgFavPhgkvkJ2LPdWdpump`
-- MIP: $109,005 1h vol, $10,376 mcap, -24% 1h  
-  CA `BKPnak3A5KKSKnDdYQBHn2zt1BgfkPDgX8ze8og2pump`
+- Anakinius: $171,970 1h vol, $306,300 mcap, -3% 1h  
+  CA `2pKpMwUQXNZeAf93LoomnZSworH3ezFzweCiuvrppump`
+- TREMP: $87,928 1h vol, $23,472 mcap, +552% 1h  
+  CA `BkpjfE6myLuNJcYo6kmHqVrTS7B6t86Hf4fScYMEpump`
+- Vunce: $79,502 1h vol, $4,341 mcap, +29% 1h  
+  CA `AkNKVehw7icEjtZMe29uCPD94w3byxAQ9Jx2LQ8npump`
