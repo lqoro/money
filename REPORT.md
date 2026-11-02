@@ -1,13 +1,13 @@
 # Trencher live report
 
-Updated 2026-11-02T18:44:01Z (paper trading, never real money)
+Updated 2026-11-02T18:59:29Z (paper trading, never real money)
 
 - Equity: $77.09 (-22.9% vs $100 start)
-- Goal: $1,000 by 2026-11-05 05:03Z (pressing for it): at 7.7% of it, 2.4 days left, needs +187.1% a day from here
+- Goal: $1,000 by 2026-11-05 05:03Z (pressing for it): at 7.7% of it, 2.4 days left, needs +188.5% a day from here
 - Closed trades: 21, 3 wins
 - Fees paid: $14.04 (axiom $2.63, network $8.81, pool $2.47), plus $3.89 lost to slippage
 - New trades: on
-- Brain: subscription, 500 calls and 0 plan-limit hits in 48h
+- Brain: subscription, 497 calls and 0 plan-limit hits in 48h
 
 ## Scorecard (after fees)
 - 21 closed, 3 won (14%), net $-22.93
@@ -74,40 +74,40 @@ Updated 2026-11-02T18:44:01Z (paper trading, never real money)
   CA `8s4bNqEztH1JP7mkU747uMr7AckCQdiV47FDqYnDpump`
 
 ## Last scan
-- 18:43Z: 5 coins, 5 with pairs, 0 passed the market filters, 0 researched
+- 18:59Z: 6 coins, 6 with pairs, 2 passed the market filters, 2 researched
 
 ## Coins it looked at, and why it passed
+- 18:59Z PI (no setup, $44,230 mcap, $1,305 5m vol): REJECT, No setup fits: not Final Stretch, not a migrated runner, not a healthy dip  
+  CA `93VGqXL76voGxc43apJTDJoKkqnxTht1BKWoEmUypump`
+- 18:59Z RICO (MIGRATED, $174,546 mcap, $5,587 5m vol): REJECT, RugCheck danger: Creator history of rugged tokens  
+  CA `8kuQg3WivDtL85VEdw2jEmSXjYt6EEeYBATJ4DtQpump`
+- 18:56Z OPTIC (FINAL_STRETCH, $20,840 mcap, $3,664 5m vol): PASS at conviction 3, PASS: the project's own site lists a different pump CA (ePR29…pump), so this may be a vamp, 5m flow is only $3.7k, and it's 4% off the high. Wrong token, thin flow, chasing. (V1, V3, V6)  
+  CA `HcUWHmM5QgpPMDekGTKYWTGEFzAndG4t9ZUrYBm6pump`
+- 18:49Z HACKCAT (no setup, $3,038 mcap, $0 5m vol): REJECT, Hack story ("hack" in the name or ticker): these tend to go down, owner rule  
+  CA `wLjTQSsKmoy9pjE7ZcdtU1Vf5HKhKPU2piR3vXGpump`
+- 18:48Z PizzaGate (FINAL_STRETCH, $32,365 mcap, $39,450 5m vol): PASS at conviction 2, PASS: it's an 8-minute-old pair that just printed a +266% 5m candle at 6x its hourly pace. That's sniping a spike, not buying a setup. Blocker: "chasing spike" / "too new" (V1, V5, V6).  
+  CA `ALTRgkReDWGmhisjTXwqHvbZRUcVoJicj54bQzVCpump`
+- 18:47Z GATO (MIGRATED, $10,936,131 mcap, $19,276 5m vol): REJECT, Dev holds 3.3% (>1%) (V13, V17)  
+  CA `HsprHxBRgiVaQdRf3TnKNuZZtaX9JUSPgMFdAkk6pump`
+- 18:47Z ANAKIN (MIGRATED, $1,476,801 mcap, $16,645 5m vol): PASS at conviction 2, PASS — ANAKIN is 79% off its high and down 24% in the last 5 minutes. That's past the 70% DIP limit, there's no higher low, and this coin has already cost me twice. Falling knife. (V1, V6)  
+  CA `8s4bNqEztH1JP7mkU747uMr7AckCQdiV47FDqYnDpump`
 - 18:42Z ADCY (MIGRATED, $139,786 mcap, $60,284 5m vol): PASS at conviction 2, PASS: chasing spike. It's 6 minutes old, sitting at its high, up 176% in the last 5m on 9x the hourly pace. That's somebody else's exit liquidity (V1, V6).  
   CA `6qnAerbLSGbhS3i6Xyh8AcsLTrutS1Rb7kuHsfwZpump`
 - 18:37Z horse (DIP, $39,788 mcap, $6,182 5m vol): REJECT, Dip with fading attention is a falling knife, not a dip (5m at 0.25x the hour's pace, under 0.6x)  
   CA `9nutvj678qvbouYKqHkSJu3n5cQUEZw42wtPdjekpump`
 - 18:36Z DIGS (MIGRATED, $82,332 mcap, $2,073 5m vol): REJECT, Dev holds 3.2% (>1%) (V13, V17)  
   CA `9QT8K685Hrae4k11dhGXirdtpfAaimExtyfwt8cPpump`
-- 18:28Z Anakin (DIP, $1,449,791 mcap, $2,618 5m vol): REJECT, Dip with fading attention is a falling knife, not a dip (5m at 0.45x the hour's pace, under 0.6x)  
-  CA `ExxzYBTt3jwU5MUxuw2F4toYbTLdFwThSjyaCn6Xpump`
-- 18:27Z MAMESUKE (MIGRATED, $1,320,623 mcap, $36,169 5m vol): REJECT, Bundles: 4 linked wallet cluster(s) hold 64.9% of supply (>20%) (V17)  
-  CA `SCGBBnSwnekytGFHgyeHHxPMiN7xDxsWFGg9JgFSTNK`
-- 18:24Z DESSA (DIP, $10,604,745 mcap, $8,603 5m vol): PASS at conviction 3, PASS: falling knife, no higher low. Price is at the hourly low, sellers hold 59% of 5m trades, and the story isn't on the radar. (V1, V6)  
-  CA `npz2FhoufQ7pKqhGpaipYWacrAkidyW2yDpVWSvpump`
-- 18:13Z RICO (MIGRATED, $82,810 mcap, $2,242 5m vol): REJECT, RugCheck danger: Creator history of rugged tokens  
-  CA `8kuQg3WivDtL85VEdw2jEmSXjYt6EEeYBATJ4DtQpump`
-- 18:11Z SELFBET (MIGRATED, $88,790 mcap, $142,037 5m vol): REJECT, LP only 0% burned/locked (V2, V3, V6)  
-  CA `DtspS4D5sX9rZqi5oeWnd8YFQsCsqkrwmuR4NvAYpump`
-- 18:07Z Slingoor (MIGRATED, $235,619 mcap, $22,465 5m vol): PASS at conviction 3, PASS — +74.7% on the last 5m candle, a 30-minute-old pair, and a same-ticker clone is pulling double its 5m volume. Chasing spike in a split crowd (V1, V3).  
-  CA `7LzPdsBxMoR9FrjgizvxNRvDtjGSP423quJ4M7Jqpump`
-- 18:07Z SLINGOOR (MIGRATED, $113,060 mcap, $45,864 5m vol): PASS at conviction 3, PASS: 10 minutes old, 5m volume at 3.9x pace, 6 bigger tokens share the ticker. Blocker: chasing spike / too new (V1, V3).  
-  CA `4MnM6aAuayLRhejDSuiaEm2QGyR4ye4Sxhdywt37pump`
 
 ## What its skips did next (last 48h)
 A skip "ran" if the coin reached the first target (1.5x) from the skip price before a 20% drop, "dumped" if the drop came first. Sampled every 10 min, followed 6h.
-- near the high / chasing: blocked 51, ran 3, dumped 41, flat 7, open 0 (saving losses: keep it)
+- near the high / chasing: blocked 51, ran 3, dumped 40, flat 6, open 2 (saving losses: keep it)
   - ran: BBOTS up to 1.51x  
     CA `4TCevs5EC2RFsdWo3YPVifqe9dX2acCGGa9VHNtppump`
   - ran: BLUE up to 1.53x  
     CA `CPoGSmcjprCvzA2MFYLJMpQkGjmgVzKg4RVwMdrzpump`
   - ran: PIRATE up to 2.27x  
     CA `gzQXRwGRzfKLHfaV1f84QT7e5mt4vevu7MgacEfpump`
-- too new / sniping: blocked 46, ran 8, dumped 37, flat 0, open 1 (saving losses: keep it)
+- too new / sniping: blocked 47, ran 8, dumped 38, flat 0, open 1 (saving losses: keep it)
   - ran: onlypump up to 1.92x  
     CA `J73efZvH6rkrJbFJdP2rqe473YJW7tyWmrNARUSzpump`
   - ran: paws up to 1.51x  
@@ -121,14 +121,14 @@ A skip "ran" if the coin reached the first target (1.5x) from the skip price bef
     CA `TiMSdJrkVwUpeEWJpuqRvHt4wVS7uH77LbNPGGVJXNw`
   - ran: WASTED up to 1.93x  
     CA `GexThZHgaswpAQ7Fi8QrHFubjPimUNSYhJiAA7XZpump`
-- RugCheck danger: blocked 31, ran 5, dumped 26, flat 0, open 0 (saving losses: keep it)
+- RugCheck danger: blocked 31, ran 4, dumped 26, flat 0, open 1 (saving losses: keep it)
   - ran: SUGAR up to 1.74x  
     CA `HLzTFsX99uqzAP7uK36gJ2pPHGfRM8ugvxXWJzjSpump`
   - ran: AIC up to 1.6x  
     CA `2T9WZjVC6L3BvusUtjKDT6HcZeEYgU9T5xhfJQxFpump`
   - ran: ZECRET up to 1.62x  
     CA `ChCi2x2bpevrNyeRoPHLXHzmaCdGQPuU15CNqxY1pump`
-- falling knife (code): blocked 30, ran 7, dumped 20, flat 1, open 2 (saving losses: keep it)
+- falling knife (code): blocked 29, ran 7, dumped 20, flat 1, open 1 (saving losses: keep it)
   - ran: KIM up to 1.55x  
     CA `8pjfN5Ayb4rucGpYE3tZWN6v3EysizjPx1v62zx1pump`
   - ran: BLUE up to 1.53x  
@@ -142,10 +142,10 @@ A skip "ran" if the coin reached the first target (1.5x) from the skip price bef
     CA `9ZmdP8q22ebRhEkcwd5EDkitu7ypeDFXTQXpv2kUpump`
   - ran: MAMESUKE up to 1.51x  
     CA `SCGBBnSwnekytGFHgyeHHxPMiN7xDxsWFGg9JgFSTNK`
-- falling knife / no higher low: blocked 13, ran 1, dumped 9, flat 2, open 1 (saving losses: keep it)
+- falling knife / no higher low: blocked 12, ran 1, dumped 8, flat 2, open 1 (saving losses: keep it)
   - ran: CREDIT up to 1.56x  
     CA `Ewyifvp8X9NxeaKawXamGXBFDisuMfcFfcdvSZ8opump`
-- dev share over 1%: blocked 12, ran 3, dumped 5, flat 2, open 2 (mixed)
+- dev share over 1%: blocked 12, ran 3, dumped 5, flat 1, open 3 (mixed)
   - ran: IGLU up to 1.54x  
     CA `34YQhrgkWoeFnm6LrcnmV3PLyDaMSNZikzUjyMmupump`
   - ran: MINTED up to 1.61x  
@@ -184,16 +184,16 @@ A skip "ran" if the coin reached the first target (1.5x) from the skip price bef
 - [2026-11-02 10:56] I re-entered ANAKIN at $4.49M expecting a breakout through the 0.0043 range high to carry toward a retest of the $6.05M peak. That target was only 1.35x away, so I sized it as a probe. It peaked at 1.08x, failed back into the range and hit the 45-minute time stop at 0.88x for −20%. This was my second loss on the same coin and it backs my existing re-entry rule rather than adding a new one: buying back a coin that already burned me needs it to reclaim its prior high (here the $6.05M peak) with flow at or above pace, and a range-high break 1.35x under that peak is a mid-range entry (V1 plan the exit, V6 only trade when everything lines up).
 
 ## Meta right now
-The meta has moved on from what my crawler says. Star Wars has cooled and the Japanese dogs are dead. Anakin is at $1.6M, about 74% off the crawler's $6.3M. Its 5-minute volume is $3.1k, about 0.17x its hourly pace, so it fails the 0.7x DIP gate (V1). Korosuke and the Slingoor clone are both down about 99% with no volume (that's what a clone swarm leaves behind, V1/V13), and MAMESUKE is down 16% and fading. Two themes are rising. One is **GTA6 animals**: GATO at $12M is up 9% with steady flow, and its newer sibling RICO, the GTA6 dog, is up 50% in its first hour. The other is **fresh pump.fun launches under 1 hour old, running on live flow**: pumpcat, Valerie and Escobahh. Setups worth researching now: **pumpcat** as MIGRATED. It's just at the $70k line, 5-minute volume is $27.6k at about 0.72x its hourly pace with 0.56 buys, and I'd enter only around 10% off the local high. **Escobahh** and **Valerie** as FINAL_STRETCH, both with $35–39k 5-minute volume near bond. Escobahh is the cleaner one, 4.5h old with 0.63 buys. At 12 minutes old, Valerie is the very kind of new pair I don't snipe, so the pre-bond dump risk is high (V1). RICO is watchlist only: its $5.2k 5-minute volume is under the $10k bar and it sits below $70k after migrating (V6). GATO is a pass because at $12M it's above the ~$11M recon ceiling (V6). $LAPTOP is a pass because a politician's family pushed it and it's down 98% (V13).
+Meta: pump.fun launches under 1h old, rotating fast. Rising: ADCY ($140k, +200%, $60k 5m vol, also on CoinGecko trending as DACITYCOIN), PizzaGate, Boba, OPTIC. Dead: Slingoor/SELFBET/NULL clone swarm (-94 to -98%, no volume, V1/V13). Fading: Star Wars (ANAKIN -52%). Steady: GTA6 animals, GATO $10.9M with 5m vol ~1.5x its hourly pace. Research now: ADCY as MIGRATED, only on a pullback to ~10% off the high since it's 6 min old; GATO as MIGRATED/DIP, just under the ~$11M ceiling. Watch only: PizzaGate (political-conspiracy name, close to the V13 line, needs a clean check) and horse (fading, $7k 5m vs ~$25k average). The crawler's pumpcat/Valerie/Escobahh/RICO aren't in scan_movers, so they're unverified.
 
 ## Moving most in its scans, last 30 min (1h volume)
 - horse: $302,151 1h vol, $40,301 mcap, -30% 1h  
   CA `9nutvj678qvbouYKqHkSJu3n5cQUEZw42wtPdjekpump`
-- MAMESUKE: $235,930 1h vol, $1,320,623 mcap, +55% 1h  
-  CA `SCGBBnSwnekytGFHgyeHHxPMiN7xDxsWFGg9JgFSTNK`
-- NULL: $160,712 1h vol, $3,880 mcap, -90% 1h  
-  CA `5LoukJze454D696R3nGUiUQDGvsTaaakbmC3kQTcpump`
-- GATO: $156,929 1h vol, $11,884,119 mcap, -1% 1h  
+- SLINGOOR: $274,338 1h vol, $1,797 mcap, -96% 1h  
+  CA `4MnM6aAuayLRhejDSuiaEm2QGyR4ye4Sxhdywt37pump`
+- Slingoor: $272,786 1h vol, $1,690 mcap, -98% 1h  
+  CA `7LzPdsBxMoR9FrjgizvxNRvDtjGSP423quJ4M7Jqpump`
+- SELFBET: $244,473 1h vol, $2,260 mcap, -95% 1h  
+  CA `DtspS4D5sX9rZqi5oeWnd8YFQsCsqkrwmuR4NvAYpump`
+- GATO: $155,152 1h vol, $10,936,131 mcap, -8% 1h  
   CA `HsprHxBRgiVaQdRf3TnKNuZZtaX9JUSPgMFdAkk6pump`
-- Escobahh: $109,674 1h vol, $37,719 mcap, +977% 1h  
-  CA `3R6C9YD2Mmmm96H4UbpwTTyC4emnBxY3QGAgVwxepump`
