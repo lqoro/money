@@ -1,13 +1,13 @@
 # Trencher live report
 
-Updated 2026-11-02T02:47:28Z (paper trading, never real money)
+Updated 2026-11-02T03:03:16Z (paper trading, never real money)
 
 - Equity: $80.53 (-19.5% vs $100 start)
-- Goal: $1,000 by 2026-11-05 05:03Z (pressing for it): at 8.1% of it, 3.1 days left, needs +125.7% a day from here
+- Goal: $1,000 by 2026-11-05 05:03Z (pressing for it): at 8.1% of it, 3.1 days left, needs +126.4% a day from here
 - Closed trades: 19, 3 wins
 - Fees paid: $12.66 (axiom $2.26, network $8.06, pool $2.21), plus $3.34 lost to slippage
 - New trades: on
-- Brain: subscription, 599 calls and 0 plan-limit hits in 48h
+- Brain: subscription, 596 calls and 0 plan-limit hits in 48h
 
 ## Scorecard (after fees)
 - 19 closed, 3 won (16%), net $-19.48
@@ -74,9 +74,15 @@ Updated 2026-11-02T02:47:28Z (paper trading, never real money)
   CA `GYKnd6jGUSQoBUnj6LdGCBtCWYDgr2Zd6QwNPcy5pump`
 
 ## Last scan
-- 02:46Z: 2 coins, 1 with pairs, 0 passed the market filters, 0 researched
+- 03:02Z: 5 coins, 4 with pairs, 1 passed the market filters, 1 researched
 
 ## Coins it looked at, and why it passed
+- 03:03Z ANAKIN (DIP, $2,863,491 mcap, $8,099 5m vol): PASS at conviction 4, PASS — clean holders, but the first ceiling is ~1.15x away and flow is at 0.79x pace on a fading Star Wars meta. Target too close. (V1, V6)  
+  CA `8s4bNqEztH1JP7mkU747uMr7AckCQdiV47FDqYnDpump`
+- 02:51Z Ribon (FINAL_STRETCH, $24,639 mcap, $26,341 5m vol): REJECT, Top 10 hold 27.5% ex-pool (>25%) (V13)  
+  CA `4eUnpVfNDzJB1vxMKgzj5CSi39MD79Q7zNtXzY1ypump`
+- 02:49Z GTA 6 Coin (MIGRATED, $1,614,134 mcap, $1,791 5m vol): REJECT, 5m volume $1,791 is dead (<$2,000) (V1)  
+  CA `EaxAUcXxNnVwcqm2BBocbows7D1XVY2Q63V38NEypump`
 - 02:44Z UNI (MIGRATED, $92,117 mcap, $11,487 5m vol): PASS at conviction 3, PASS — flow below pace (5m at 0.57x the hourly average), a single 7.1% bundle cluster, and a borrowed Uniswap ticker with zero buzz. A crowd that's leaving is not a buy (V1, V3, V6).  
   CA `8Jz7NgcjEMsWNPAXF3AvUHuHfN1bJ9nYZFHKiKkZUBeV`
 - 02:39Z TrumpWars (DIP, $57,472 mcap, $9,305 5m vol): REJECT, Dip with fading attention is a falling knife, not a dip (5m at 0.49x the hour's pace, under 0.6x)  
@@ -91,12 +97,6 @@ Updated 2026-11-02T02:47:28Z (paper trading, never real money)
   CA `APH9FRoKst66E4a7uZXcEfE8NjtwybUC8Jq7ue8upump`
 - 02:20Z MEMECOINS (FINAL_STRETCH, $19,774 mcap, $27,974 5m vol): REJECT, Bundles: 6 linked wallet cluster(s) hold 27.4% of supply (>20%) (V17)  
   CA `CCq2wyPifiDYaABfyrV8f6se4znvVqVu2TX6dByrpump`
-- 02:19Z STEALTH (DIP, $237,948 mcap, $37,838 5m vol): REJECT, Dip with fading attention is a falling knife, not a dip (5m at 0.52x the hour's pace, under 0.6x)  
-  CA `GoDSW31bTxfkoup9yA1qcGGx9RMXdTEWgApv3xzBmoA`
-- 02:17Z Anakin (MIGRATED, $2,986,982 mcap, $2,781 5m vol): PASS at conviction 2, PASS: the old Anakin is losing its crowd to the new ANAKIN. 5m volume is $2.8k at 0.41x the hourly pace, and sellers outnumber buyers 25 to 15. Blocker: flow below pace (learned rule; V1, V6).  
-  CA `ExxzYBTt3jwU5MUxuw2F4toYbTLdFwThSjyaCn6Xpump`
-- 02:17Z GATO (MIGRATED, $8,931,385 mcap, $5,791 5m vol): REJECT, Dev holds 3.3% (>1%) (V13, V17)  
-  CA `HsprHxBRgiVaQdRf3TnKNuZZtaX9JUSPgMFdAkk6pump`
 
 ## What its skips did next (last 48h)
 A skip "ran" if the coin reached the first target (1.5x) from the skip price before a 20% drop, "dumped" if the drop came first. Sampled every 10 min, followed 6h.
@@ -107,14 +107,14 @@ A skip "ran" if the coin reached the first target (1.5x) from the skip price bef
     CA `BbNuEtiT77Swr4WqGHuUkQY5kZ67M7au7bXkxcArpump`
   - ran: BBOTS up to 1.51x  
     CA `4TCevs5EC2RFsdWo3YPVifqe9dX2acCGGa9VHNtppump`
-- too new / sniping: blocked 49, ran 4, dumped 44, flat 0, open 1 (saving losses: keep it)
+- too new / sniping: blocked 49, ran 4, dumped 45, flat 0, open 0 (saving losses: keep it)
   - ran: onlypump up to 1.92x  
     CA `J73efZvH6rkrJbFJdP2rqe473YJW7tyWmrNARUSzpump`
   - ran: paws up to 1.51x  
     CA `CCF6ui6YjjhLaVtuYLH8b5jza8jHathqww5VbrMapump`
   - ran: VETOTRUMP up to 1.66x  
     CA `6g16UK4wHoFhC7PCmw8LYYCdt9q8m99fyoAwxeCrpump`
-- top 10 over 25%: blocked 38, ran 7, dumped 26, flat 2, open 3 (saving losses: keep it)
+- top 10 over 25%: blocked 39, ran 7, dumped 28, flat 2, open 2 (saving losses: keep it)
   - ran: Beaver up to 2.56x  
     CA `5h44wfzwGHFnfVhNKtMLapAJNV9iqqbUgUB2FqyWpump`
   - ran: timmy up to 1.66x  
@@ -147,7 +147,7 @@ A skip "ran" if the coin reached the first target (1.5x) from the skip price bef
     CA `Ewyifvp8X9NxeaKawXamGXBFDisuMfcFfcdvSZ8opump`
   - ran: PI up to 1.6x  
     CA `93VGqXL76voGxc43apJTDJoKkqnxTht1BKWoEmUypump`
-- crowd leaving / fading volume: blocked 13, ran 2, dumped 8, flat 2, open 1 (saving losses: keep it)
+- crowd leaving / fading volume: blocked 12, ran 2, dumped 7, flat 2, open 1 (saving losses: keep it)
   - ran: VETOTRUMP up to 1.66x  
     CA `6g16UK4wHoFhC7PCmw8LYYCdt9q8m99fyoAwxeCrpump`
   - ran: Anakinius up to 1.93x  
@@ -159,7 +159,9 @@ A skip "ran" if the coin reached the first target (1.5x) from the skip price bef
     CA `9yEKBwczdqoox7Red6GGPTrJ2dUbMvFUagdjxFqHpump`
   - ran: DOJAK up to 2.62x  
     CA `E5aeDjgq6ZSzAmihKoh9JPEhwK2bMCbZLJf6LYT9pump`
-- bundles over the line: blocked 10, ran 0, dumped 7, flat 2, open 1 (saving losses: keep it)
+- bundles over the line: blocked 10, ran 1, dumped 7, flat 2, open 0 (saving losses: keep it)
+  - ran: Nuts up to 1.53x  
+    CA `APH9FRoKst66E4a7uZXcEfE8NjtwybUC8Jq7ue8upump`
 
 ## Rules it changed from results and skips
 - 11-01 23:03Z dropped: Any fee, friction or minimum-size wording (Code owns the fee and size checks; lessons with fee/size parts are already retired. None remain in the rules.)
@@ -187,13 +189,13 @@ A skip "ran" if the coin reached the first target (1.5x) from the skip price bef
 The crawler's summary is already stale, so I'm going by the scanner. pain and Learjet are both down about 98% with $0 on the 5m. Those are rugs, not a rising theme. Two themes are actually moving right now. The first is pump.fun joking about itself on young migrated pools: Nuts ($115k, 18 minutes old, $23k on the 5m), BABYPUMP ($462k, +1257% on the hour but only $7k on the 5m, so it's cooling) and MEMECOINS ($21k, still on the curve, $28k on the 5m). That one is rising. The second is Star Wars, which is fading fast: new ANAKIN ($3.2M) did $1.46M in the last hour but only $12k in the last 5 minutes, about 0.1x its hourly pace. The old Anakin Skywalker and GATO are bleeding, with sell-heavy flow (buy ratios 0.38 and 0.36). The coins I'd research now are Nuts as MIGRATED (original idea, fresh flow, 0.57 buys) and STEALTH as MIGRATED ($238k, $38k on the 5m, about 0.5x its hourly pace, so wait for a 10%+ pullback; the CA doesn't end in pump, so the pool and LP burn need checking). MEMECOINS is the one to watch as FINAL_STRETCH if it holds its flow into bond. ANAKIN is no DIP buy until its 5m volume gets back to 0.7x the hourly average. Owner: I'll press clean setups and rate them 8 when they earn it, but a 20-minute-old coin I haven't verified starts as a probe, not a 9.
 
 ## Moving most in its scans, last 30 min (1h volume)
-- STEALTH: $879,795 1h vol, $237,948 mcap, +118% 1h  
-  CA `GoDSW31bTxfkoup9yA1qcGGx9RMXdTEWgApv3xzBmoA`
 - UNI: $244,213 1h vol, $93,215 mcap, +54% 1h  
   CA `8Jz7NgcjEMsWNPAXF3AvUHuHfN1bJ9nYZFHKiKkZUBeV`
+- BABYPUMP: $239,277 1h vol, $478,022 mcap, +61% 1h  
+  CA `6w12CQQFkw2fRWhRxHuKULVE6QEuMzjyrcASq6NQpump`
 - TrumpWars: $228,776 1h vol, $57,472 mcap, +52% 1h  
   CA `31HzUsjzTt7FBCGnDy68cBnELayVsnd3zYEBtsXXpump`
 - Nuts: $144,901 1h vol, $114,765 mcap, +187% 1h  
   CA `APH9FRoKst66E4a7uZXcEfE8NjtwybUC8Jq7ue8upump`
-- pain: $127,276 1h vol, $1,963 mcap, -98% 1h  
-  CA `CTLeZu8CxiYXL6zTmBbsycaG35smxJMmAyNHCbWzpump`
+- ANAKIN: $122,297 1h vol, $2,891,892 mcap, +2% 1h  
+  CA `8s4bNqEztH1JP7mkU747uMr7AckCQdiV47FDqYnDpump`
