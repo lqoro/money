@@ -1,13 +1,13 @@
 # Trencher live report
 
-Updated 2026-11-02T03:18:19Z (paper trading, never real money)
+Updated 2026-11-02T03:33:31Z (paper trading, never real money)
 
 - Equity: $80.53 (-19.5% vs $100 start)
-- Goal: $1,000 by 2026-11-05 05:03Z (pressing for it): at 8.1% of it, 3.1 days left, needs +127% a day from here
+- Goal: $1,000 by 2026-11-05 05:03Z (pressing for it): at 8.1% of it, 3.1 days left, needs +127.7% a day from here
 - Closed trades: 19, 3 wins
 - Fees paid: $12.66 (axiom $2.26, network $8.06, pool $2.21), plus $3.34 lost to slippage
 - New trades: on
-- Brain: subscription, 592 calls and 0 plan-limit hits in 48h
+- Brain: subscription, 589 calls and 0 plan-limit hits in 48h
 
 ## Scorecard (after fees)
 - 19 closed, 3 won (16%), net $-19.48
@@ -74,9 +74,17 @@ Updated 2026-11-02T03:18:19Z (paper trading, never real money)
   CA `GYKnd6jGUSQoBUnj6LdGCBtCWYDgr2Zd6QwNPcy5pump`
 
 ## Last scan
-- 03:17Z: 6 coins, 5 with pairs, 0 passed the market filters, 0 researched
+- 03:32Z: 2 coins, 0 with pairs, 0 passed the market filters, 0 researched
 
 ## Coins it looked at, and why it passed
+- 03:30Z UNI (DIP, $116,934 mcap, $17,739 5m vol): PASS at conviction 3, PASS: falling knife. The last 5m candle was −26.5% and it's in its first leg down from a peak 18 minutes ago, with no higher low yet. On top of that there's a 7.1% bundle cluster on a ticker shared with Uniswap and nothing on the radar. (V1, V3)  
+  CA `8Jz7NgcjEMsWNPAXF3AvUHuHfN1bJ9nYZFHKiKkZUBeV`
+- 03:26Z CHOO (MIGRATED, $1,805,577 mcap, $509 5m vol): REJECT, 5m volume $509 is dead (<$2,000) (V1)  
+  CA `EJAxERvKU4kEVXn3NarjvRtgaMaJyP9ZuMeKA7JJpump`
+- 03:25Z TrumpWars (DIP, $45,262 mcap, $3,693 5m vol): REJECT, Dip with fading attention is a falling knife, not a dip (5m at 0.28x the hour's pace, under 0.6x)  
+  CA `31HzUsjzTt7FBCGnDy68cBnELayVsnd3zYEBtsXXpump`
+- 03:24Z ANUKOON (MIGRATED, $150,561 mcap, $8,290 5m vol): PASS at conviction 3, PASS: 5m flow is 0.44x the hourly pace and the last 5m candle is up 27%. The crowd is leaving and I'd be buying a spike into it. (V1, V6)  
+  CA `91QMBp6GNEfMmDg2VWH7iWkyUSpePRkdhc44W7oapump`
 - 03:12Z BABYPUMP (MIGRATED, $508,035 mcap, $7,302 5m vol): REJECT, RugCheck danger: Top 10 holders high ownership  
   CA `6w12CQQFkw2fRWhRxHuKULVE6QEuMzjyrcASq6NQpump`
 - 03:07Z 45-47 (no setup, $17,743 mcap, $10,478 5m vol): REJECT, No setup fits: not Final Stretch, not a migrated runner, not a healthy dip  
@@ -89,14 +97,6 @@ Updated 2026-11-02T03:18:19Z (paper trading, never real money)
   CA `HsprHxBRgiVaQdRf3TnKNuZZtaX9JUSPgMFdAkk6pump`
 - 03:03Z ANAKIN (DIP, $2,863,491 mcap, $8,099 5m vol): PASS at conviction 4, PASS — clean holders, but the first ceiling is ~1.15x away and flow is at 0.79x pace on a fading Star Wars meta. Target too close. (V1, V6)  
   CA `8s4bNqEztH1JP7mkU747uMr7AckCQdiV47FDqYnDpump`
-- 02:51Z Ribon (FINAL_STRETCH, $24,639 mcap, $26,341 5m vol): REJECT, Top 10 hold 27.5% ex-pool (>25%) (V13)  
-  CA `4eUnpVfNDzJB1vxMKgzj5CSi39MD79Q7zNtXzY1ypump`
-- 02:49Z GTA 6 Coin (MIGRATED, $1,614,134 mcap, $1,791 5m vol): REJECT, 5m volume $1,791 is dead (<$2,000) (V1)  
-  CA `EaxAUcXxNnVwcqm2BBocbows7D1XVY2Q63V38NEypump`
-- 02:44Z UNI (MIGRATED, $92,117 mcap, $11,487 5m vol): PASS at conviction 3, PASS — flow below pace (5m at 0.57x the hourly average), a single 7.1% bundle cluster, and a borrowed Uniswap ticker with zero buzz. A crowd that's leaving is not a buy (V1, V3, V6).  
-  CA `8Jz7NgcjEMsWNPAXF3AvUHuHfN1bJ9nYZFHKiKkZUBeV`
-- 02:39Z TrumpWars (DIP, $57,472 mcap, $9,305 5m vol): REJECT, Dip with fading attention is a falling knife, not a dip (5m at 0.49x the hour's pace, under 0.6x)  
-  CA `31HzUsjzTt7FBCGnDy68cBnELayVsnd3zYEBtsXXpump`
 
 ## What its skips did next (last 48h)
 A skip "ran" if the coin reached the first target (1.5x) from the skip price before a 20% drop, "dumped" if the drop came first. Sampled every 10 min, followed 6h.
@@ -107,21 +107,21 @@ A skip "ran" if the coin reached the first target (1.5x) from the skip price bef
     CA `BbNuEtiT77Swr4WqGHuUkQY5kZ67M7au7bXkxcArpump`
   - ran: BBOTS up to 1.51x  
     CA `4TCevs5EC2RFsdWo3YPVifqe9dX2acCGGa9VHNtppump`
-- too new / sniping: blocked 48, ran 4, dumped 44, flat 0, open 0 (saving losses: keep it)
+- too new / sniping: blocked 47, ran 4, dumped 43, flat 0, open 0 (saving losses: keep it)
   - ran: onlypump up to 1.92x  
     CA `J73efZvH6rkrJbFJdP2rqe473YJW7tyWmrNARUSzpump`
   - ran: paws up to 1.51x  
     CA `CCF6ui6YjjhLaVtuYLH8b5jza8jHathqww5VbrMapump`
   - ran: VETOTRUMP up to 1.66x  
     CA `6g16UK4wHoFhC7PCmw8LYYCdt9q8m99fyoAwxeCrpump`
-- top 10 over 25%: blocked 40, ran 7, dumped 28, flat 2, open 3 (saving losses: keep it)
+- top 10 over 25%: blocked 39, ran 8, dumped 27, flat 2, open 2 (saving losses: keep it)
   - ran: Beaver up to 2.56x  
     CA `5h44wfzwGHFnfVhNKtMLapAJNV9iqqbUgUB2FqyWpump`
   - ran: timmy up to 1.66x  
     CA `TiMSdJrkVwUpeEWJpuqRvHt4wVS7uH77LbNPGGVJXNw`
   - ran: WASTED up to 1.93x  
     CA `GexThZHgaswpAQ7Fi8QrHFubjPimUNSYhJiAA7XZpump`
-- falling knife (code): blocked 27, ran 4, dumped 20, flat 2, open 1 (saving losses: keep it)
+- falling knife (code): blocked 27, ran 5, dumped 19, flat 2, open 1 (saving losses: keep it)
   - ran: LUMI up to 1.76x  
     CA `653joYuZ5EntuKd1bspZakjHdueMxHGs5Lvm7RdWpump`
   - ran: KIM up to 1.55x  
@@ -142,7 +142,7 @@ A skip "ran" if the coin reached the first target (1.5x) from the skip price bef
     CA `2T9WZjVC6L3BvusUtjKDT6HcZeEYgU9T5xhfJQxFpump`
   - ran: ZECRET up to 1.62x  
     CA `ChCi2x2bpevrNyeRoPHLXHzmaCdGQPuU15CNqxY1pump`
-- falling knife / no higher low: blocked 16, ran 2, dumped 12, flat 1, open 1 (saving losses: keep it)
+- falling knife / no higher low: blocked 17, ran 2, dumped 12, flat 1, open 2 (saving losses: keep it)
   - ran: CREDIT up to 1.56x  
     CA `Ewyifvp8X9NxeaKawXamGXBFDisuMfcFfcdvSZ8opump`
   - ran: PI up to 1.6x  
@@ -191,11 +191,11 @@ The crawler's summary is already stale, so I'm going by the scanner. pain and Le
 ## Moving most in its scans, last 30 min (1h volume)
 - STEALTH: $331,863 1h vol, $214,302 mcap, -41% 1h  
   CA `GoDSW31bTxfkoup9yA1qcGGx9RMXdTEWgApv3xzBmoA`
+- Nuts: $275,004 1h vol, $1,883 mcap, -98% 1h  
+  CA `APH9FRoKst66E4a7uZXcEfE8NjtwybUC8Jq7ue8upump`
+- ANUKOON: $228,072 1h vol, $151,769 mcap, +24% 1h  
+  CA `91QMBp6GNEfMmDg2VWH7iWkyUSpePRkdhc44W7oapump`
 - BABYPUMP: $223,656 1h vol, $508,035 mcap, +19% 1h  
   CA `6w12CQQFkw2fRWhRxHuKULVE6QEuMzjyrcASq6NQpump`
-- TEC: $185,023 1h vol, $3,532 mcap, -92% 1h  
-  CA `7CqDQwYmntfXXknh8JphaadCP6KevKSVXHRQJRn2pump`
-- ANAKIN: $122,297 1h vol, $2,891,892 mcap, +2% 1h  
-  CA `8s4bNqEztH1JP7mkU747uMr7AckCQdiV47FDqYnDpump`
-- MEMECOINS: $95,150 1h vol, $3,304 mcap, -73% 1h  
-  CA `CCq2wyPifiDYaABfyrV8f6se4znvVqVu2TX6dByrpump`
+- UNI: $193,146 1h vol, $116,934 mcap, -1% 1h  
+  CA `8Jz7NgcjEMsWNPAXF3AvUHuHfN1bJ9nYZFHKiKkZUBeV`
