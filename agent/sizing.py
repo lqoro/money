@@ -121,7 +121,7 @@ def loss_at_stop_frac(stop_loss_pct: float, cfg: Config, venue_pct: float | None
 def open_risk_usd(pf: Portfolio, cfg: Config) -> float:
     """At-stop risk still on the table. Positions with initials out are free rides."""
     total = 0.0
-    for p in pf.positions.values():
+    for p in list(pf.positions.values()):  # the exit thread may close one meanwhile
         if p.initials_taken:
             continue
         stop = (p.exit_plan or {}).get("stop_loss_pct", cfg.stop_loss_pct)

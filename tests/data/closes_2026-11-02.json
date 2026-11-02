@@ -1,0 +1,587 @@
+{
+ "source": "trencher-live status.json history, Oct 28 - Nov 2 2026 (19 closed paper trades)",
+ "fees_by_kind_usd": {
+  "axiom": 2.26,
+  "network": 8.06,
+  "pool": 2.21
+ },
+ "paper_costs": {
+  "platform_fee_pct": 1.0,
+  "pumpfun_curve_fee_pct": 1.25,
+  "other_dex_fee_pct": 0.25,
+  "priority_fee_sol": 0.001,
+  "bribe_sol": 0.001,
+  "base_slippage_pct": 1.5,
+  "max_slippage_pct": 20.0,
+  "min_target_cost_multiple": 3.0,
+  "max_round_trip_cost_pct": 20.0,
+  "probe_max_risk_pct": 5,
+  "conviction_risk_scale": 1.5,
+  "min_entry_usd": 10.0
+ },
+ "closes": [
+  {
+   "ts": "2026-10-28T14:15:40Z",
+   "id": "98bd92f6",
+   "symbol": "Something",
+   "ca": "AZdhikmyj6ibsejv7EjML9SfNmuiMvwDrKXTEU2zpump",
+   "setup": "DIP",
+   "cost_usd": 3.33,
+   "proceeds_usd": 2.82,
+   "fees_usd": 0.26,
+   "slippage_usd": 0.05,
+   "pnl_usd": -0.51,
+   "pnl_pct": -15.4,
+   "held_minutes": 60,
+   "entry_mcap": 1208302.0,
+   "exit_mcap": 1200686.0,
+   "peak_multiple": 1.09,
+   "exit_reasons": [
+    "time stop: 60 min and only 0.98x"
+   ],
+   "stop_reviews": 0,
+   "exit_plan": {
+    "take_initials_multiple": 2.0,
+    "stop_loss_pct": 25.0,
+    "trailing_stop_pct": 35.0,
+    "time_stop_minutes": 60.0,
+    "target_mcap_usd": 2200000.0
+   },
+   "event": "CLOSE"
+  },
+  {
+   "ts": "2026-10-28T22:50:47Z",
+   "id": "ca28bb15",
+   "symbol": "CATCULUS",
+   "ca": "AfPhjrZx3oyh38G28ZVViP4p7h53N5kTxEeg5tzhpump",
+   "setup": "MIGRATED",
+   "cost_usd": 2.96,
+   "proceeds_usd": 1.21,
+   "fees_usd": 0.5,
+   "slippage_usd": 0.06,
+   "pnl_usd": -1.75,
+   "pnl_pct": -59.1,
+   "held_minutes": 42,
+   "entry_mcap": 460747.0,
+   "exit_mcap": 254937.0,
+   "peak_multiple": 1.24,
+   "exit_reasons": [
+    "stop review: SELL (bundle_or_insider_dump)",
+    "stop loss -30% hit (0.55x)"
+   ],
+   "stop_reviews": 1,
+   "exit_plan": {
+    "take_initials_multiple": 2.0,
+    "stop_loss_pct": 30.0,
+    "trailing_stop_pct": 35.0,
+    "time_stop_minutes": 45.0,
+    "target_mcap_usd": 1500000.0
+   },
+   "event": "CLOSE"
+  },
+  {
+   "ts": "2026-10-28T22:59:46Z",
+   "id": "9c87dd2b",
+   "symbol": "CATBOT",
+   "ca": "dyw5fDNv91eknniMG4tGCU1ZrzjuxbpsLiEzih6pump",
+   "setup": "MIGRATED",
+   "cost_usd": 2.91,
+   "proceeds_usd": 5.64,
+   "fees_usd": 1.01,
+   "slippage_usd": 0.14,
+   "pnl_usd": 2.73,
+   "pnl_pct": 93.8,
+   "held_minutes": 78,
+   "entry_mcap": 638465.0,
+   "exit_mcap": 1706603.0,
+   "peak_multiple": 4.44,
+   "exit_reasons": [
+    "took initials at 2.02x",
+    "target mcap $2,000,000 reached",
+    "trailing stop: -35% from peak"
+   ],
+   "stop_reviews": 0,
+   "exit_plan": {
+    "take_initials_multiple": 2.0,
+    "stop_loss_pct": 30.0,
+    "trailing_stop_pct": 35.0,
+    "time_stop_minutes": 30.0,
+    "target_mcap_usd": 2000000.0
+   },
+   "event": "CLOSE"
+  },
+  {
+   "ts": "2026-10-29T01:32:05Z",
+   "id": "c4b98b40",
+   "symbol": "CATBOT",
+   "ca": "dyw5fDNv91eknniMG4tGCU1ZrzjuxbpsLiEzih6pump",
+   "setup": "MIGRATED",
+   "cost_usd": 3.42,
+   "proceeds_usd": 2.59,
+   "fees_usd": 0.53,
+   "slippage_usd": 0.09,
+   "pnl_usd": -0.83,
+   "pnl_pct": -24.3,
+   "held_minutes": 45,
+   "entry_mcap": 2587547.0,
+   "exit_mcap": 2409704.0,
+   "peak_multiple": 1.12,
+   "exit_reasons": [
+    "time stop: 45 min and only 0.92x"
+   ],
+   "stop_reviews": 0,
+   "exit_plan": {
+    "take_initials_multiple": 2.0,
+    "stop_loss_pct": 25.0,
+    "trailing_stop_pct": 30.0,
+    "time_stop_minutes": 45.0,
+    "target_mcap_usd": 7000000.0
+   },
+   "event": "CLOSE"
+  },
+  {
+   "ts": "2026-10-29T02:03:25Z",
+   "id": "10966815",
+   "symbol": "FLOATER",
+   "ca": "J7cqsaTuXUavwA3sp238tSpartUfYwDrJAaHuDvypump",
+   "setup": "MIGRATED",
+   "cost_usd": 2.94,
+   "proceeds_usd": 4.42,
+   "fees_usd": 0.77,
+   "slippage_usd": 0.12,
+   "pnl_usd": 1.48,
+   "pnl_pct": 50.5,
+   "held_minutes": 80,
+   "entry_mcap": 167812.0,
+   "exit_mcap": 255471.0,
+   "peak_multiple": 2.19,
+   "exit_reasons": [
+    "took initials at 2.19x",
+    "trailing stop: -30% from peak"
+   ],
+   "stop_reviews": 0,
+   "exit_plan": {
+    "take_initials_multiple": 2.0,
+    "stop_loss_pct": 30.0,
+    "trailing_stop_pct": 30.0,
+    "time_stop_minutes": 30.0,
+    "target_mcap_usd": 500000.0
+   },
+   "event": "CLOSE"
+  },
+  {
+   "ts": "2026-10-29T02:10:52Z",
+   "id": "ee1bc722",
+   "symbol": "CPU",
+   "ca": "5JbRYEz844bwnKbGx4dRHhrJ6zjrJ194CKdDXtzwgaXo",
+   "setup": "MIGRATED",
+   "cost_usd": 3.16,
+   "proceeds_usd": 2.73,
+   "fees_usd": 0.48,
+   "slippage_usd": 0.09,
+   "pnl_usd": -0.43,
+   "pnl_pct": -13.7,
+   "held_minutes": 52,
+   "entry_mcap": 167866.0,
+   "exit_mcap": 175870.0,
+   "peak_multiple": 1.63,
+   "exit_reasons": [
+    "time stop: 52 min and only 1.03x"
+   ],
+   "stop_reviews": 0,
+   "exit_plan": {
+    "take_initials_multiple": 2.0,
+    "stop_loss_pct": 30.0,
+    "trailing_stop_pct": 30.0,
+    "time_stop_minutes": 45.0,
+    "target_mcap_usd": 500000.0
+   },
+   "event": "CLOSE"
+  },
+  {
+   "ts": "2026-10-29T02:49:13Z",
+   "id": "50223efb",
+   "symbol": "FLOAT",
+   "ca": "Bv1a7cEj5aRnJQhMw4kRQqAFesMSd5LwcDnUzq52BMmr",
+   "setup": "MIGRATED",
+   "cost_usd": 3.09,
+   "proceeds_usd": 2.33,
+   "fees_usd": 0.48,
+   "slippage_usd": 0.08,
+   "pnl_usd": -0.76,
+   "pnl_pct": -24.5,
+   "held_minutes": 158,
+   "entry_mcap": 1507059.0,
+   "exit_mcap": 1400013.0,
+   "peak_multiple": 1.64,
+   "exit_reasons": [
+    "time stop: 158 min and only 0.92x"
+   ],
+   "stop_reviews": 0,
+   "exit_plan": {
+    "take_initials_multiple": 2.0,
+    "stop_loss_pct": 30.0,
+    "trailing_stop_pct": 30.0,
+    "time_stop_minutes": 45.0,
+    "target_mcap_usd": 3000000.0
+   },
+   "event": "CLOSE"
+  },
+  {
+   "ts": "2026-10-29T21:37:07Z",
+   "id": "71ef9b7d",
+   "symbol": "SI",
+   "ca": "6zuDiAw3NviBwcLZfTztHJgtCmeNWfyFxYVoXtNYpump",
+   "setup": "MIGRATED",
+   "cost_usd": 4.06,
+   "proceeds_usd": 2.52,
+   "fees_usd": 0.54,
+   "slippage_usd": 0.1,
+   "pnl_usd": -1.54,
+   "pnl_pct": -38.0,
+   "held_minutes": 7,
+   "entry_mcap": 218582.0,
+   "exit_mcap": 160271.0,
+   "peak_multiple": 0.99,
+   "exit_reasons": [
+    "stop review: SELL (unclear)",
+    "stop loss -20% hit (0.75x)"
+   ],
+   "stop_reviews": 1,
+   "exit_plan": {
+    "take_initials_multiple": 1.5,
+    "stop_loss_pct": 20.0,
+    "trailing_stop_pct": 20.0,
+    "time_stop_minutes": 45.0,
+    "target_mcap_usd": 450000.0
+   },
+   "event": "CLOSE"
+  },
+  {
+   "ts": "2026-10-29T21:37:32Z",
+   "id": "67ce0d6f",
+   "symbol": "HEXN",
+   "ca": "ANVLA6eKiAq4nstD2Sg3SZhfVkSEwfnGccn12UQWpump",
+   "setup": "DIP",
+   "cost_usd": 4.0,
+   "proceeds_usd": 2.54,
+   "fees_usd": 0.53,
+   "slippage_usd": 0.1,
+   "pnl_usd": -1.46,
+   "pnl_pct": -36.4,
+   "held_minutes": 7,
+   "entry_mcap": 732807.0,
+   "exit_mcap": 567985.0,
+   "peak_multiple": 0.99,
+   "exit_reasons": [
+    "stop review: SELL (unclear)",
+    "stop loss -20% hit (0.76x)"
+   ],
+   "stop_reviews": 1,
+   "exit_plan": {
+    "take_initials_multiple": 1.5,
+    "stop_loss_pct": 20.0,
+    "trailing_stop_pct": 20.0,
+    "time_stop_minutes": 45.0,
+    "target_mcap_usd": 1500000.0
+   },
+   "event": "CLOSE"
+  },
+  {
+   "ts": "2026-10-30T01:19:14Z",
+   "id": "dae477fe",
+   "symbol": "SWAN",
+   "ca": "EFaQg27P3c3PHob2mFw4mHCUcWBHHDdatAEsXq2xpump",
+   "setup": "MIGRATED",
+   "cost_usd": 3.92,
+   "proceeds_usd": 3.89,
+   "fees_usd": 0.55,
+   "slippage_usd": 0.12,
+   "pnl_usd": -0.03,
+   "pnl_pct": -0.7,
+   "held_minutes": 7,
+   "entry_mcap": 118144.0,
+   "exit_mcap": 139360.0,
+   "peak_multiple": 1.4,
+   "exit_reasons": [
+    "break-even stop: peaked 1.40x, back to 1.16x"
+   ],
+   "stop_reviews": 0,
+   "exit_plan": {
+    "take_initials_multiple": 1.5,
+    "stop_loss_pct": 20.0,
+    "trailing_stop_pct": 20.0,
+    "time_stop_minutes": 45.0,
+    "target_mcap_usd": 250000.0
+   },
+   "event": "CLOSE"
+  },
+  {
+   "ts": "2026-10-30T02:26:09Z",
+   "id": "cb379bd0",
+   "symbol": "HEXN",
+   "ca": "ANVLA6eKiAq4nstD2Sg3SZhfVkSEwfnGccn12UQWpump",
+   "setup": "DIP",
+   "cost_usd": 4.0,
+   "proceeds_usd": 2.9,
+   "fees_usd": 0.53,
+   "slippage_usd": 0.1,
+   "pnl_usd": -1.1,
+   "pnl_pct": -27.4,
+   "held_minutes": 45,
+   "entry_mcap": 500979.0,
+   "exit_mcap": 437556.0,
+   "peak_multiple": 1.17,
+   "exit_reasons": [
+    "stop review: SELL (unclear)",
+    "stop loss -13% hit (0.86x)"
+   ],
+   "stop_reviews": 1,
+   "exit_plan": {
+    "take_initials_multiple": 1.5,
+    "stop_loss_pct": 13.0,
+    "trailing_stop_pct": 20.0,
+    "time_stop_minutes": 45.0,
+    "target_mcap_usd": 900000.0
+   },
+   "event": "CLOSE"
+  },
+  {
+   "ts": "2026-10-30T09:52:30Z",
+   "id": "076f3313",
+   "symbol": "HYPERCHAN",
+   "ca": "3ApVr1xphYMpi9dn3rpqU4hwvpmCQDVwxET1rdCDpump",
+   "setup": "MIGRATED",
+   "cost_usd": 10.0,
+   "proceeds_usd": 8.48,
+   "fees_usd": 0.76,
+   "slippage_usd": 0.28,
+   "pnl_usd": -1.52,
+   "pnl_pct": -15.2,
+   "held_minutes": 45,
+   "entry_mcap": 1971639.0,
+   "exit_mcap": 1870337.0,
+   "peak_multiple": 0.99,
+   "exit_reasons": [
+    "time stop: 45 min and only 0.93x"
+   ],
+   "stop_reviews": 0,
+   "exit_plan": {
+    "take_initials_multiple": 1.5,
+    "stop_loss_pct": 20.0,
+    "trailing_stop_pct": 35.0,
+    "time_stop_minutes": 45.0,
+    "target_mcap_usd": 2900000.0
+   },
+   "event": "CLOSE"
+  },
+  {
+   "ts": "2026-10-30T10:53:57Z",
+   "id": "4ce5a2d7",
+   "symbol": "HYPERCHAN",
+   "ca": "3ApVr1xphYMpi9dn3rpqU4hwvpmCQDVwxET1rdCDpump",
+   "setup": "MIGRATED",
+   "cost_usd": 10.0,
+   "proceeds_usd": 9.51,
+   "fees_usd": 0.78,
+   "slippage_usd": 0.3,
+   "pnl_usd": -0.49,
+   "pnl_pct": -4.9,
+   "held_minutes": 45,
+   "entry_mcap": 1986836.0,
+   "exit_mcap": 2107968.0,
+   "peak_multiple": 1.18,
+   "exit_reasons": [
+    "time stop: 45 min and only 1.05x"
+   ],
+   "stop_reviews": 0,
+   "exit_plan": {
+    "take_initials_multiple": 1.5,
+    "stop_loss_pct": 20.0,
+    "trailing_stop_pct": 35.0,
+    "time_stop_minutes": 45.0,
+    "target_mcap_usd": 3000000.0
+   },
+   "event": "CLOSE"
+  },
+  {
+   "ts": "2026-10-30T21:37:16Z",
+   "id": "147fdb02",
+   "symbol": "PILLSEY",
+   "ca": "J5jxG3PFaWpj6BLEQExyC6FSqSvaTKNdQ9G3sZwBpump",
+   "setup": "MIGRATED",
+   "cost_usd": 11.53,
+   "proceeds_usd": 7.94,
+   "fees_usd": 0.99,
+   "slippage_usd": 0.3,
+   "pnl_usd": -3.59,
+   "pnl_pct": -31.2,
+   "held_minutes": 18,
+   "entry_mcap": 332280.0,
+   "exit_mcap": 261820.0,
+   "peak_multiple": 1.32,
+   "exit_reasons": [
+    "stop review: SELL_HALF (early_shakeout)",
+    "stop loss -20% hit (0.78x); trimmed half on review",
+    "stop loss -20% hit (0.78x)"
+   ],
+   "stop_reviews": 1,
+   "exit_plan": {
+    "take_initials_multiple": 1.5,
+    "stop_loss_pct": 20.0,
+    "trailing_stop_pct": 35.0,
+    "time_stop_minutes": 45.0,
+    "target_mcap_usd": 650000.0
+   },
+   "event": "CLOSE"
+  },
+  {
+   "ts": "2026-10-31T19:21:27Z",
+   "id": "5abc3fbd",
+   "symbol": "Leverhedge",
+   "ca": "FWatMYieKhRuJ1yuTcmVG1njRhZWwqHwjR11pBympump",
+   "setup": "DIP",
+   "cost_usd": 10.0,
+   "proceeds_usd": 9.68,
+   "fees_usd": 0.78,
+   "slippage_usd": 0.3,
+   "pnl_usd": -0.32,
+   "pnl_pct": -3.2,
+   "held_minutes": 76,
+   "entry_mcap": 985176.0,
+   "exit_mcap": 1064056.0,
+   "peak_multiple": 1.28,
+   "exit_reasons": [
+    "time stop: 76 min and only 1.06x"
+   ],
+   "stop_reviews": 0,
+   "exit_plan": {
+    "take_initials_multiple": 1.5,
+    "stop_loss_pct": 20.0,
+    "trailing_stop_pct": 35.0,
+    "time_stop_minutes": 45.0,
+    "target_mcap_usd": 1700000.0
+   },
+   "event": "CLOSE"
+  },
+  {
+   "ts": "2026-10-31T22:25:43Z",
+   "id": "1bee88ae",
+   "symbol": "PAWCAT",
+   "ca": "762ZqBCd5m2q3QJ5UPkFL5rqdEUeygNkfTZrpGEZpump",
+   "setup": "MIGRATED",
+   "cost_usd": 11.1,
+   "proceeds_usd": 11.17,
+   "fees_usd": 0.8,
+   "slippage_usd": 0.34,
+   "pnl_usd": 0.07,
+   "pnl_pct": 0.7,
+   "held_minutes": 45,
+   "entry_mcap": 3068511.0,
+   "exit_mcap": 3420321.0,
+   "peak_multiple": 1.11,
+   "exit_reasons": [
+    "time stop: 45 min and only 1.10x"
+   ],
+   "stop_reviews": 0,
+   "exit_plan": {
+    "take_initials_multiple": 1.5,
+    "stop_loss_pct": 20.0,
+    "trailing_stop_pct": 35.0,
+    "time_stop_minutes": 45.0,
+    "target_mcap_usd": 6000000.0
+   },
+   "event": "CLOSE"
+  },
+  {
+   "ts": "2026-11-01T03:30:46Z",
+   "id": "1a17bc43",
+   "symbol": "BLUE",
+   "ca": "CPoGSmcjprCvzA2MFYLJMpQkGjmgVzKg4RVwMdrzpump",
+   "setup": "MIGRATED",
+   "cost_usd": 10.0,
+   "proceeds_usd": 7.02,
+   "fees_usd": 0.75,
+   "slippage_usd": 0.26,
+   "pnl_usd": -2.98,
+   "pnl_pct": -29.8,
+   "held_minutes": 11,
+   "entry_mcap": 507907.0,
+   "exit_mcap": 401785.0,
+   "peak_multiple": 0.99,
+   "exit_reasons": [
+    "stop review: SELL (early_shakeout)",
+    "stop loss -20% hit (0.78x)"
+   ],
+   "stop_reviews": 1,
+   "exit_plan": {
+    "take_initials_multiple": 1.5,
+    "stop_loss_pct": 20.0,
+    "trailing_stop_pct": 35.0,
+    "time_stop_minutes": 45.0,
+    "target_mcap_usd": 800000.0
+   },
+   "event": "CLOSE"
+  },
+  {
+   "ts": "2026-11-01T05:24:19Z",
+   "id": "d0a264c8",
+   "symbol": "SIS",
+   "ca": "FdKdpz11GsTofLaNiddrhxrsE4APZYSSfLFqQ9YKpump",
+   "setup": "DIP",
+   "cost_usd": 10.58,
+   "proceeds_usd": 7.27,
+   "fees_usd": 0.76,
+   "slippage_usd": 0.27,
+   "pnl_usd": -3.31,
+   "pnl_pct": -31.3,
+   "held_minutes": 11,
+   "entry_mcap": 760536.0,
+   "exit_mcap": 588123.0,
+   "peak_multiple": 1.01,
+   "exit_reasons": [
+    "stop review: SELL (narrative_dead)",
+    "stop loss -20% hit (0.76x)"
+   ],
+   "stop_reviews": 1,
+   "exit_plan": {
+    "take_initials_multiple": 1.5,
+    "stop_loss_pct": 20.0,
+    "trailing_stop_pct": 35.0,
+    "time_stop_minutes": 45.0,
+    "target_mcap_usd": 1300000.0
+   },
+   "event": "CLOSE"
+  },
+  {
+   "ts": "2026-11-01T06:19:43Z",
+   "id": "c64339ef",
+   "symbol": "AAPLCAT",
+   "ca": "GYKnd6jGUSQoBUnj6LdGCBtCWYDgr2Zd6QwNPcy5pump",
+   "setup": "MIGRATED",
+   "cost_usd": 10.0,
+   "proceeds_usd": 6.86,
+   "fees_usd": 0.73,
+   "slippage_usd": 0.26,
+   "pnl_usd": -3.14,
+   "pnl_pct": -31.4,
+   "held_minutes": 42,
+   "entry_mcap": 1143723.0,
+   "exit_mcap": 883318.0,
+   "peak_multiple": 1.01,
+   "exit_reasons": [
+    "stop review: SELL (unclear)",
+    "stop loss -20% hit (0.76x)"
+   ],
+   "stop_reviews": 1,
+   "exit_plan": {
+    "take_initials_multiple": 1.5,
+    "stop_loss_pct": 20.0,
+    "trailing_stop_pct": 35.0,
+    "time_stop_minutes": 45.0,
+    "target_mcap_usd": 1800000.0
+   },
+   "event": "CLOSE"
+  }
+ ]
+}

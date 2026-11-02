@@ -37,10 +37,14 @@ GATES = (
     ("RugCheck danger", r"rugcheck danger|rugged|mint authority|freeze authority|transfer tax|lp only"),
     ("RugCheck didn't load", r"rugcheck report unavailable|didn't load"),
     ("falling knife (code)", r"dip with fading attention"),
+    ("price moved while deciding", r"moved [+-]?\d[\d.]*% while deciding|no live price at buy time"),
     ("fees or size", r"fee|too small|minimum|no probe fits"),
     ("brain paced", r"paced or paused|brain unavailable"),
     ("political figure", r"politic"),
     ("too new / sniping", r"snip|seconds old|minutes? old|\bmin old\b|new pair|brand.new|too (new|young|fresh)"),
+    # Before "near the high": a pass that names both a pullback and slow flow was blocked by
+    # the pace rule (86 of 163 passes from Nov 1 06:19Z to Nov 2 01:00Z cite pace).
+    ("flow below pace", r"flow below pace|below (the |its )?(hourly )?pace|\b0\.\d+x (the |its )?(hourly )?pace"),
     ("near the high / chasing", r"chas|near (its|the) (high|top)|off (a|the|its) (\d+-minute-old )?(high|peak|top)"
                                 r"|under (its|the) high|at (its|the) (all-time )?high|local high|catculus|entry location"),
     ("falling knife / no higher low", r"falling knife|higher low|knife"),

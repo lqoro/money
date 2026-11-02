@@ -122,10 +122,10 @@ class Portfolio:
 
     # ---------------------------------------------------------------- views
     def equity(self) -> float:
-        return self.cash_usd + sum(p.value() for p in self.positions.values())
+        return self.cash_usd + sum(p.value() for p in list(self.positions.values()))
 
     def holds(self, address: str) -> bool:
-        return any(p.address == address for p in self.positions.values())
+        return any(p.address == address for p in list(self.positions.values()))
 
     def roll_day(self) -> None:
         today = time.strftime("%Y-%m-%d", time.gmtime())

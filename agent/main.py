@@ -8,6 +8,7 @@ import json
 import logging
 import signal
 import sys
+import threading
 import time
 from collections import deque
 
@@ -53,6 +54,14 @@ class Agent:
         self.skips: dict = skips.load(cfg)
         self.last_skip_review = 0.0
         self.bridge = DuetBridge(cfg, self)
+        # Exits run on their own thread (see run()), so a scan's brain calls can't leave an
+        # open position unwatched for minutes. The lock guards the wallet, the watchlist and
+        # the cooldowns; closed trades wait in a queue for their lesson, which is a brain
+        # call the exit thread shouldn't make.
+        self.lock = threading.RLock()
+        self.async_reflect = False
+        self.closed_queue: list[dict] = []
+        self.monitor_thread: threading.Thread | None = None
 
     # ---------------------------------------------------------------- web crawler
     def refresh_radar(self, force: bool = False) -> None:
@@ -72,9 +81,10 @@ class Agent:
 
     def save_watch(self) -> None:
         now = time.time()
-        self.peaks = {k: v for k, v in self.peaks.items() if now - v[1] < 48 * 3600}
-        self.watchlist = {k: v for k, v in self.watchlist.items() if v.get("until", 0) > now}
-        (self.cfg.memory_dir / "watch.json").write_text(json.dumps({"peaks": self.peaks, "watchlist": self.watchlist}))
+        with self.lock:
+            self.peaks = {k: v for k, v in list(self.peaks.items()) if now - v[1] < 48 * 3600}
+            self.watchlist = {k: v for k, v in list(self.watchlist.items()) if v.get("until", 0) > now}
+            (self.cfg.memory_dir / "watch.json").write_text(json.dumps({"peaks": self.peaks, "watchlist": self.watchlist}))
 
     def track_peak(self, snap: dict) -> None:
         """Remember the highest market cap we've seen, so we can tell a dip from a dud."""
@@ -90,6 +100,10 @@ class Agent:
 
     # ---------------------------------------------------------------- views
     def portfolio_view(self) -> dict:
+        with self.lock:
+            return self._portfolio_view()
+
+    def _portfolio_view(self) -> dict:
         pf = self.pf
         return {
             "equity_usd": round(pf.equity(), 2),
@@ -104,7 +118,7 @@ class Agent:
                  "value_usd": round(p.value(), 2), "multiple": round((p.last_price or p.entry_price) / p.entry_price, 2),
                  "fees_usd": round(p.fees_usd, 2), "slippage_usd": round(p.slippage_usd, 2),
                  "initials_taken": p.initials_taken}
-                for p in pf.positions.values()
+                for p in list(pf.positions.values())
             ],
         }
 
@@ -124,9 +138,10 @@ class Agent:
         # Contract addresses the crawler saw called on Telegram/Reddit in the last 2h.
         discovered += [a for a, v in self.meta.get("called_cas", {}).items()
                        if now - v.get("last_seen", 0) < 7200 and a not in discovered]
-        watched = [t for t, w in self.watchlist.items() if w.get("until", 0) > now and t not in discovered]
-        tokens = [t for t in discovered + watched
-                  if self.cooldown.get(t, 0) < now and not self.pf.holds(t)]
+        with self.lock:
+            watched = [t for t, w in list(self.watchlist.items()) if w.get("until", 0) > now and t not in discovered]
+            tokens = [t for t in discovered + watched
+                      if self.cooldown.get(t, 0) < now and not self.pf.holds(t)]
         pairs = data.get_pairs(tokens)
         candidates, snaps = [], []
         for addr, pair in pairs.items():
@@ -207,7 +222,7 @@ class Agent:
             "vol_5m": round(snap.get("vol_5m") or 0), "outcome": outcome, "conviction": conviction,
             "reason": str(reason)[:300],
         })
-        if outcome in ("PASS", "REJECT", "TOO_SMALL", "FEE_SKIP"):
+        if outcome in ("PASS", "REJECT", "TOO_SMALL", "FEE_SKIP", "MOVED"):
             skips.record(self.cfg, self.skips, snap, outcome, reason)
 
     # ---------------------------------------------------------------- skip review
@@ -238,10 +253,25 @@ class Agent:
                 log.info(summary)
                 notify(cfg, summary)
 
+    def fresh_snapshot(self, addr: str) -> dict | None:
+        """The coin's live pair right now, or None if DexScreener has nothing for it."""
+        pair = data.get_pairs([addr]).get(addr)
+        if pair is None:
+            return None
+        snap = data.pair_snapshot(pair)
+        with self.lock:
+            self.track_peak(snap)
+        return snap
+
     def research(self, snap: dict, sol: float) -> None:
         cfg = self.cfg
         addr = snap["address"]
         self.cooldown[addr] = time.time() + cfg.reject_cooldown_min * 60
+        # A scan researches several coins in a row, each with a brain call: by the time
+        # this one's turn comes its scan price can be minutes old. Judge the live one.
+        live = self.fresh_snapshot(addr)
+        if live is not None and live.get("price_usd", 0) > 0:
+            snap = live
         check = self.build_dossier(snap, sol)
         if not check.passed:
             if check.fails and "RugCheck report unavailable" in check.fails[0]:
@@ -311,22 +341,44 @@ class Agent:
         if self.dry_run:
             log.info("    [dry run] would buy $%.2f", size)
             return
-        try:
-            pos = self.pf.buy(cfg, snap, size, sol, check.setup, plan, decision.get("thesis", ""))
-        except ValueError as e:
-            log.info("    skipping: %s", e)
+        # The brain took its time: buy at the price the coin trades at now, the way a real
+        # order would fill, and not at all if it moved too far while the brain was reading.
+        judged = snap["price_usd"]
+        live = self.fresh_snapshot(addr)
+        if live is None or live.get("price_usd", 0) <= 0:
+            log.info("    no live price for %s at buy time, skipping", snap["symbol"])
+            self.note_look(snap, check.setup, "MOVED", "wanted to buy, but there was no live price at buy time",
+                           conviction=decision.get("conviction"))
             return
-        pos.entry_holders = check.holders
+        moved = 100 * (live["price_usd"] / judged - 1) if judged else 0.0
+        if moved <= -cfg.entry_max_drop_pct or moved >= cfg.entry_max_rise_pct:
+            log.info("    %s moved %+.1f%% while the brain decided, skipping", snap["symbol"], moved)
+            self.note_look(live, check.setup, "MOVED",
+                           f"wanted to buy, but the price moved {moved:+.1f}% while deciding "
+                           f"(limits -{cfg.entry_max_drop_pct:g}% / +{cfg.entry_max_rise_pct:g}%)",
+                           conviction=decision.get("conviction"))
+            return
+        snap = {**snap, **{k: live[k] for k in ("price_usd", "mcap_usd", "liquidity_usd", "vol_5m", "vol_1h",
+                                                 "dex", "change_5m", "vol_5m_vs_hour_avg", "buy_ratio_5m")
+                           if k in live}}
+        with self.lock:
+            try:
+                pos = self.pf.buy(cfg, snap, size, sol, check.setup, plan, decision.get("thesis", ""))
+            except ValueError as e:
+                log.info("    skipping: %s", e)
+                return
+            pos.entry_holders = check.holders
+            self.watchlist.pop(addr, None)
+            self.pf.save(cfg)
         self.note_look(snap, check.setup, "BUY", decision.get("verdict") or f"bought ${size:.2f}",
                        conviction=decision.get("conviction"))
-        self.watchlist.pop(addr, None)
-        self.pf.save(cfg)
         journal.log_trade(cfg, {"event": "BUY", "id": pos.id, "token": addr, "ca": addr, "symbol": pos.symbol,
                                 "setup": pos.setup, "size_usd": size, "conviction": decision.get("conviction"),
                                 "risk_usd": sizing.risk_usd, "price": pos.entry_price,
                                 "fees_usd": round(pos.fees_usd, 4), "slippage_usd": round(pos.slippage_usd, 4),
                                 "dex": pos.dex, "pool_fee_pct": pos.venue_fee_pct,
-                                "mcap": snap["mcap_usd"], "exit_plan": plan, "thesis": pos.thesis})
+                                "mcap": snap["mcap_usd"], "judged_price": judged, "moved_pct": round(moved, 2),
+                                "exit_plan": plan, "thesis": pos.thesis})
         notify(cfg, f"🟢 BUY ${size:.2f} {pos.symbol} ({pos.setup}, conviction {decision.get('conviction')}/10, "
                     f"risking ${sizing.risk_usd:.2f}) @ ${snap['mcap_usd']:,.0f} mcap, "
                     f"fees ${pos.fees_usd:.2f} + slippage ${pos.slippage_usd:.2f}\n"
@@ -334,24 +386,36 @@ class Agent:
 
     # ---------------------------------------------------------------- monitor
     def monitor(self) -> None:
-        if not self.pf.positions:
+        with self.lock:
+            addrs = list({p.address for p in list(self.pf.positions.values())})
+        if not addrs:
             return
         sol = data.sol_price_usd()
-        pairs = data.get_pairs(list({p.address for p in self.pf.positions.values()}))
-        for pos in list(self.pf.positions.values()):
-            pair = pairs.get(pos.address)
-            if pair is None:
-                log.warning("No market data for %s this tick", pos.symbol)
-                continue
-            snap = data.pair_snapshot(pair)
-            pos.last_price = snap["price_usd"]
-            pos.peak_price = max(pos.peak_price, snap["price_usd"])
-            signal_ = check_exit(pos, snap, self.cfg, sol_usd=sol)
-            if signal_ and signal_.review:
-                self.review_stop(pos, snap, signal_.reason, sol)
-            elif signal_:
-                self.execute_exit(pos, snap, signal_.fraction, signal_.reason, signal_.rugged, sol)
-        self.pf.save(self.cfg)
+        pairs = data.get_pairs(addrs)
+        with self.lock:
+            for pos in list(self.pf.positions.values()):
+                pair = pairs.get(pos.address)
+                if pair is None:
+                    log.warning("No market data for %s this tick", pos.symbol)
+                    continue
+                snap = data.pair_snapshot(pair)
+                pos.last_price = snap["price_usd"]
+                pos.peak_price = max(pos.peak_price, snap["price_usd"])
+                signal_ = check_exit(pos, snap, self.cfg, sol_usd=sol)
+                if signal_ and signal_.review:
+                    self.review_stop(pos, snap, signal_.reason, sol)
+                elif signal_:
+                    self.execute_exit(pos, snap, signal_.fraction, signal_.reason, signal_.rugged, sol)
+            self.pf.save(self.cfg)
+
+    def monitor_loop(self) -> None:
+        """Watch open positions every monitor_interval_sec, whatever the scan is doing."""
+        while self.running:
+            try:
+                self.monitor()
+            except Exception:
+                log.exception("monitor tick failed")
+            time.sleep(self.cfg.monitor_interval_sec)
 
     def review_stop(self, pos: Position, snap: dict, reason: str, sol: float) -> None:
         """The stop hit. A stop is a decision point: was it a bundle exit / shakeout with
@@ -370,6 +434,12 @@ class Agent:
         }
         rv = self.brain.review_stop(pos_view, snap, holders_now)
         action = rv.get("action", "SELL")
+        # The review took a brain call; a real sell after it fills at the price then, not
+        # at the price that triggered the stop.
+        later = data.get_pairs([pos.address]).get(pos.address)
+        if later is not None and float(later.get("priceUsd") or 0) > 0:
+            snap = data.pair_snapshot(later)
+            pos.last_price = snap["price_usd"]
         new_stop = min(cfg.hard_stop_pct, max(float(rv.get("new_stop_loss_pct") or 0),
                                               pos.exit_plan.get("stop_loss_pct", cfg.stop_loss_pct)))
         # Holding to a deeper stop puts more at risk; it must still fit the total risk budget.
@@ -424,28 +494,47 @@ class Agent:
                 "stop_reviews": pos.stop_reviews,
                 "thesis": pos.thesis, "exit_plan": pos.exit_plan,
             }
-            lesson = self.brain.reflect(trade)
-            journal.add_lesson(cfg, lesson)
-            journal.log_trade(cfg, {"event": "CLOSE", **trade, "lesson": lesson})
             if "stop" in reason and not rugged:
                 # Stopped out, not rugged: keep watching in case the narrative holds and it reclaims.
                 self.watchlist[pos.address] = {
                     "symbol": pos.symbol, "stopped_out_at_mcap": round(snap["mcap_usd"]),
                     "entry_mcap": round(pos.entry_mcap), "pnl_pct": trade["pnl_pct"], "why": reason,
-                    "lesson": lesson, "until": time.time() + cfg.reentry_window_hours * 3600,
+                    "lesson": "", "until": time.time() + cfg.reentry_window_hours * 3600,
                 }
                 self.cooldown[pos.address] = time.time() + 15 * 60
                 self.save_watch()
-            emoji = "✅" if pnl > 0 else "🔴"
-            notify(cfg, f"{emoji} CLOSED {pos.symbol} {trade['pnl_pct']:+.0f}% (${pnl:+.2f}, after "
-                        f"${pos.fees_usd:.2f} fees + ${pos.slippage_usd:.2f} slippage) — {reason}\n"
-                        f"CA {pos.address}\nEquity ${self.pf.equity():.2f}\nLesson: {lesson}")
-            log.info("  ■ CLOSED %s %+.2f USD. Equity $%.2f. Lesson: %s", pos.symbol, pnl, self.pf.equity(), lesson)
-            if self.pf.trades_closed % cfg.reflect_every_n_trades == 0:
-                summary = evolve(cfg, self.brain)
-                if summary:
-                    log.info(summary)
-                    notify(cfg, summary)
+            closed = {"trade": trade, "reason": reason, "pnl": pnl, "equity": self.pf.equity(),
+                      "evolve": self.pf.trades_closed % cfg.reflect_every_n_trades == 0}
+            if self.async_reflect:
+                self.closed_queue.append(closed)  # the main loop writes the lesson
+            else:
+                self.finish_close(closed)
+
+    def finish_close(self, closed: dict) -> None:
+        """The brain's lesson on a closed trade, the CLOSE log line and the notification."""
+        cfg, trade, reason, pnl = self.cfg, closed["trade"], closed["reason"], closed["pnl"]
+        lesson = self.brain.reflect(trade)
+        journal.add_lesson(cfg, lesson)
+        journal.log_trade(cfg, {"event": "CLOSE", **trade, "lesson": lesson})
+        with self.lock:
+            if trade["token"] in self.watchlist:
+                self.watchlist[trade["token"]]["lesson"] = lesson
+        emoji = "✅" if pnl > 0 else "🔴"
+        notify(cfg, f"{emoji} CLOSED {trade['symbol']} {trade['pnl_pct']:+.0f}% (${pnl:+.2f}, after "
+                    f"${trade['fees_usd']:.2f} fees + ${trade['slippage_usd']:.2f} slippage) — {reason}\n"
+                    f"CA {trade['ca']}\nEquity ${closed['equity']:.2f}\nLesson: {lesson}")
+        log.info("  ■ CLOSED %s %+.2f USD. Equity $%.2f. Lesson: %s", trade["symbol"], pnl, closed["equity"], lesson)
+        if closed["evolve"]:
+            summary = evolve(cfg, self.brain)
+            if summary:
+                log.info(summary)
+                notify(cfg, summary)
+
+    def drain_closed(self) -> None:
+        while self.closed_queue:
+            with self.lock:
+                closed = self.closed_queue.pop(0)
+            self.finish_close(closed)
 
     # ---------------------------------------------------------------- loop
     def run(self, once: bool = False) -> None:
@@ -458,11 +547,17 @@ class Agent:
         else:
             log.info("Claude Duet bridge off (DUET_SYNC_DIR not set).")
         self.bridge.tick(force=True)
+        if not once:
+            self.async_reflect = True
+            self.monitor_thread = threading.Thread(target=self.monitor_loop, name="exits", daemon=True)
+            self.monitor_thread.start()
         while self.running:
             try:
                 self.bridge.tick()
                 self.refresh_radar()
-                self.monitor()
+                if once:
+                    self.monitor()
+                self.drain_closed()
                 self.review_skips()
                 if time.time() - last_scan >= self.cfg.scan_interval_sec:
                     last_scan = time.time()
@@ -472,7 +567,11 @@ class Agent:
             if once:
                 break
             time.sleep(self.cfg.monitor_interval_sec)
-        self.pf.save(self.cfg)
+        if self.monitor_thread:
+            self.monitor_thread.join(timeout=self.cfg.monitor_interval_sec + 30)
+        self.drain_closed()
+        with self.lock:
+            self.pf.save(self.cfg)
         if self.bridge.dir:
             try:
                 self.bridge.sync()  # last report before going offline
@@ -522,6 +621,8 @@ def main(argv: list[str] | None = None) -> None:
     r.add_argument("--dry-run", action="store_true", help="research and decide, but don't place paper trades")
     sub.add_parser("status", help="show the paper wallet")
     sub.add_parser("evolve", help="study closed trades now and evolve the strategy")
+    rp = sub.add_parser("replay", help="where the money went: picks vs the stop vs costs, from the trade log")
+    rp.add_argument("--file", help="a JSON/JSONL file of CLOSE records instead of memory/trades.jsonl")
     sub.add_parser("meta", help="crawl the web now and show the meta radar")
     sub.add_parser("brain", help="check that the Claude brain answers (one small call)")
     cr = sub.add_parser("crawl", help="crawl + checklist one token (no trade, no Claude)")
@@ -557,6 +658,9 @@ def main(argv: list[str] | None = None) -> None:
                       "required": ["summary"], "additionalProperties": False}, "low", web=False)
         print(f"{b.backend}: {out['summary']}" if out else f"{b.backend}: no answer, see the log above.")
         sys.exit(0 if out else 1)
+    elif args.cmd == "replay":
+        from . import replay
+        replay.main(args.file, cfg)
     elif args.cmd == "evolve":
         print(evolve(cfg, Brain(cfg)) or "Nothing to evolve yet (needs closed trades and the Claude brain).")
     elif args.cmd == "reset":

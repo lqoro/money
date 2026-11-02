@@ -185,7 +185,16 @@ def test_dip_too_deep_is_not_a_dip(cfg):
     assert run_checklist(dead, report(), [], cfg, SOL).setup is None
 
 
+def test_a_stop_sells_at_once_by_default(cfg):
+    """Every stop review in the log (8 of 8) closed worse than the stop: a stop now sells."""
+    pf = Portfolio(cash_usd=100.0)
+    pos = pf.buy(cfg, snap(), 10.0, SOL, "MIGRATED", sanitize_exit_plan({}, cfg), "")
+    sig = check_exit(pos, snap(price_usd=pos.entry_price * 0.65), cfg)
+    assert "stop loss" in sig.reason and sig.fraction == 1.0 and not sig.review
+
+
 def test_stop_is_a_review_once_then_final(cfg):
+    cfg.max_stop_reviews = 1  # reviews still work when turned back on
     pf = Portfolio(cash_usd=100.0)
     pos = pf.buy(cfg, snap(), 10.0, SOL, "MIGRATED", sanitize_exit_plan({}, cfg), "")
     e = pos.entry_price
@@ -214,6 +223,7 @@ def _agent(cfg, monkeypatch, holders_now_top10):
     rep = report(topHolders=[{"address": f"H{i}", "owner": f"O{i}", "pct": holders_now_top10 / 10} for i in range(10)])
     monkeypatch.setattr(m.data, "rugcheck_report", lambda addr: rep)
     monkeypatch.setattr(m, "notify", lambda *a, **k: None)
+    monkeypatch.setattr(m.data, "get_pairs", lambda cas: {})  # no newer price after the review
     agent = m.Agent(cfg)
     pos = agent.pf.buy(cfg, snap(), 10.0, SOL, "MIGRATED", sanitize_exit_plan({}, cfg), "")
     pos.entry_holders = {"top10_pct_ex_pool": 20.0, "insider_pct": 0}
@@ -735,6 +745,7 @@ def _agent_with_decision(cfg, monkeypatch, decision):
         return decision
 
     monkeypatch.setattr(agent.brain, "decide", decide)
+    monkeypatch.setattr(agent, "fresh_snapshot", lambda addr: snap())  # live price = the judged price
     return agent, seen
 
 
@@ -1125,3 +1136,85 @@ def test_survive_stance_keeps_a_goal_rule(cfg, monkeypatch):
     monkeypatch.setattr(b, "evolve", lambda trades, skip_review="": {"rules_markdown": GOAL_BRAKE_RULE})
     ev.evolve(cfg, b)
     assert "deadline never sets size" in journal.learned_rules(cfg)
+
+
+# --- Live-price entries and exits on their own thread (Nov 2) ------------------
+
+def test_buy_fills_at_the_live_price_not_the_judged_one(cfg, monkeypatch):
+    from agent import journal
+    agent, _ = _agent_with_decision(cfg, monkeypatch, {
+        "action": "BUY", "verdict": "BUY", "conviction": 7, "thesis": "", "exit_plan": _plan(1.5)})
+    judged = snap()
+    seq = iter([snap(), snap(price_usd=judged["price_usd"] * 1.04)])  # before the brain, at buy time
+    monkeypatch.setattr(agent, "fresh_snapshot", lambda addr: next(seq))
+    agent.research(judged, SOL)
+    pos = list(agent.pf.positions.values())[0]
+    assert pos.entry_price > judged["price_usd"] * 1.04  # live price plus slippage
+    buy = [t for t in journal.read_trades(cfg) if t["event"] == "BUY"][0]
+    assert buy["moved_pct"] == pytest.approx(4.0, abs=0.01)
+
+
+@pytest.mark.parametrize("move", [0.90, 1.12])
+def test_a_coin_that_moved_while_the_brain_decided_is_skipped(cfg, monkeypatch, move):
+    agent, _ = _agent_with_decision(cfg, monkeypatch, {
+        "action": "BUY", "verdict": "BUY", "conviction": 7, "thesis": "", "exit_plan": _plan(1.5)})
+    judged = snap()
+    calls = []
+
+    def fresh(addr):  # first call: before the brain reads it; second: at buy time
+        calls.append(addr)
+        return snap() if len(calls) == 1 else snap(price_usd=judged["price_usd"] * move)
+
+    monkeypatch.setattr(agent, "fresh_snapshot", fresh)
+    agent.research(judged, SOL)
+    assert not agent.pf.positions
+    look = agent.recent_looks[-1]
+    assert look["outcome"] == "MOVED" and "while deciding" in look["reason"]
+    from agent import skips
+    assert skips.gate_for(look["reason"]) == "price moved while deciding"
+
+
+def test_no_live_price_at_buy_time_means_no_buy(cfg, monkeypatch):
+    agent, _ = _agent_with_decision(cfg, monkeypatch, {
+        "action": "BUY", "verdict": "BUY", "conviction": 7, "thesis": "", "exit_plan": _plan(1.5)})
+    seq = iter([snap(), None])
+    monkeypatch.setattr(agent, "fresh_snapshot", lambda addr: next(seq))
+    agent.research(snap(), SOL)
+    assert not agent.pf.positions and agent.recent_looks[-1]["outcome"] == "MOVED"
+
+
+def test_exits_keep_running_while_the_main_loop_is_busy(cfg, monkeypatch):
+    """Before: a scan's brain calls (minutes each) held up the 15s stop checks."""
+    import threading
+    from agent import main as m
+    monkeypatch.setattr(m, "notify", lambda *a, **k: None)
+    agent = m.Agent(cfg)
+    pos = agent.pf.buy(cfg, snap(), 10.0, SOL, "MIGRATED", sanitize_exit_plan({}, cfg), "")
+    below = snap(price_usd=pos.entry_price * 0.6)
+    monkeypatch.setattr(m.data, "sol_price_usd", lambda: SOL)
+    monkeypatch.setattr(m.data, "get_pairs", lambda cas: {c: below for c in cas})
+    monkeypatch.setattr(m.data, "pair_snapshot", lambda pair: dict(pair))
+    cfg.monitor_interval_sec = 0.01
+    agent.async_reflect = True
+    reflected = []
+    monkeypatch.setattr(agent.brain, "reflect", lambda trade: reflected.append(trade) or "lesson")
+    t = threading.Thread(target=agent.monitor_loop, daemon=True)
+    t.start()
+    for _ in range(300):  # the main thread is "busy": it never calls monitor() itself
+        if not agent.pf.positions:
+            break
+        time.sleep(0.01)
+    agent.running = False
+    t.join(2)
+    assert not agent.pf.positions
+    assert not reflected and len(agent.closed_queue) == 1  # no brain call on the exit thread
+    agent.drain_closed()
+    assert reflected and not agent.closed_queue
+    assert agent.watchlist[pos.address]["lesson"] == "lesson"
+
+
+def test_skips_file_slow_flow_under_the_pace_gate():
+    from agent import skips
+    assert skips.gate_for("PASS — ANAKIN is 11.9% off its high, 1.13x away, while 5m flow runs at "
+                          "0.56x the hourly pace. Target too close, flow below pace.") == "flow below pace"
+    assert skips.gate_for("PASS: 11.6% off a peak set 12 minutes ago") == "near the high / chasing"

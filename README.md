@@ -99,15 +99,18 @@ every 5    Claude studies its results ──► rewrites learned rules + retunes
    1.1-1.3x depending on size, because network fees are flat. It sells outright,
    gaps included. **Fading volume**: when a green position's 5m volume drops
    under half the last hour's 5m average for a minute, it sells half, once (all
-   of it if half would be under $4). **A stop is a decision point**: when the −30% stop hits, Claude
-   compares holders now vs at entry and checks the narrative. If a bundle came
-   out (top 10 / insider share dropped) and attention is still alive, it can
-   hold once with a deeper stop and a deadline to reclaim; otherwise it sells.
-   The −60% hard floor and rug exits never wait for a review, and a hold must
-   still fit the total risk budget (otherwise it trims half).
+   of it if half would be under $4). **A stop sells.** It used to go to Claude for a review first
+   (hold once through a "bundle exit" shakeout); all 8 reviews in the log closed
+   worse than the stop, so reviews are off (`MAX_STOP_REVIEWS=1` turns them back
+   on, and then the sell fills at the price after the review, as it would for
+   real). Exits run on their own thread every 15s, so a scan's Claude calls
+   can't leave a position unwatched. The −60% hard floor and rug exits always sell.
 8. **Re-entry**: coins it got stopped out of (not rugged) stay on a watchlist
    for 3h and get re-scanned; Claude sees why it left and can buy back if the
    narrative held.
+   **Live-price entries**: Claude takes a minute or more per coin, so the buy is
+   re-priced at the live price and skipped (logged as MOVED) if the coin fell 8%
+   or rose 10% while it decided.
 9. **Learning and evolving**: after every closed trade Claude writes a lesson to
    `memory/lessons.md`. Every 5 trades (or `python -m agent evolve`) it studies
    its stats by setup, rewrites `memory/learned_rules.md`, and **retunes its own
@@ -142,6 +145,7 @@ set -a; . ./.env; set +a
 .venv/bin/python -m agent run                    # the 24/7 loop
 .venv/bin/python -m agent status                 # wallet, positions, lessons, evolved strategy
 .venv/bin/python -m agent evolve                 # study results and evolve the strategy now
+.venv/bin/python -m agent replay                 # where the money went: picks vs stop vs costs
 .venv/bin/python -m agent meta                   # crawl the web now, show the meta radar
 .venv/bin/python -m agent crawl <address>        # crawl + checklist one token
 .venv/bin/python -m agent reset                  # back to $100 (keeps lessons)
