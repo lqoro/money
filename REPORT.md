@@ -1,13 +1,13 @@
 # Trencher live report
 
-Updated 2026-11-02T19:30:35Z (paper trading, never real money)
+Updated 2026-11-02T19:44:49Z (paper trading, never real money)
 
 - Equity: $77.09 (-22.9% vs $100 start)
-- Goal: $1,000 by 2026-11-05 05:03Z (pressing for it): at 7.7% of it, 2.4 days left, needs +191.2% a day from here
+- Goal: $1,000 by 2026-11-05 05:03Z (pressing for it): at 7.7% of it, 2.4 days left, needs +192.5% a day from here
 - Closed trades: 21, 3 wins
 - Fees paid: $14.04 (axiom $2.63, network $8.81, pool $2.47), plus $3.89 lost to slippage
 - New trades: on
-- Brain: subscription, 493 calls and 0 plan-limit hits in 48h
+- Brain: subscription, 494 calls and 0 plan-limit hits in 48h
 
 ## Scorecard (after fees)
 - 21 closed, 3 won (14%), net $-22.93
@@ -74,54 +74,54 @@ Updated 2026-11-02T19:30:35Z (paper trading, never real money)
   CA `8s4bNqEztH1JP7mkU747uMr7AckCQdiV47FDqYnDpump`
 
 ## Last scan
-- 19:28Z: 5 coins, 4 with pairs, 0 passed the market filters, 0 researched
+- 19:43Z: 8 coins, 8 with pairs, 3 passed the market filters, 3 researched
 
 ## Coins it looked at, and why it passed
+- 19:44Z Alouatta (FINAL_STRETCH, $18,957 mcap, $2,194 5m vol): REJECT, Top 10 hold 28.6% ex-pool (>25%) (V13)  
+  CA `6Ng4MHjMbNAUySLKXQDsRpCrvKdCeTUb2cePRXCSpump`
+- 19:44Z GATO (MIGRATED, $10,536,598 mcap, $5,128 5m vol): REJECT, Dev holds 3.3% (>1%) (V13, V17)  
+  CA `HsprHxBRgiVaQdRf3TnKNuZZtaX9JUSPgMFdAkk6pump`
+- 19:44Z CAPY (MIGRATED, $156,159 mcap, $39,658 5m vol): PASS at conviction 3, PASS — 1 minute old, 5% under its high, 5m volume 12x pace. That's chasing a spike on a fresh launch (V1, V6).  
+  CA `DBPTU2oKLDHXQjAEJ3rZi8bUGmt2uxUbipgg6xmXoMqr`
+- 19:39Z GTA (FINAL_STRETCH, $30,356 mcap, $2,158 5m vol): REJECT, RugCheck danger: Creator history of rugged tokens  
+  CA `G6F6SYSUAUxsnKLyeRW29hE5A4BGCbw91x7HMPySpump`
+- 19:36Z Slingoor (MIGRATED, $125,235 mcap, $17,423 5m vol): PASS at conviction 3, PASS: the last 5m candle is up 42%, it's 30 minutes old, and it belongs to a Slingoor clone swarm the radar already lists as dead. Chasing spike. (V1, V6)  
+  CA `H4gHnZ3NCU7Z9XQwGX6YYJNyieGEW8pqwGRUcdSxpump`
+- 19:34Z MemesSt (FINAL_STRETCH, $19,381 mcap, $10,780 5m vol): PASS at conviction 3, PASS: "Memes Street" is a generic ticker in a field of 20 same-ticker coins, the radar has zero mentions of it, and its prior high is only 1.36x away. That's a split crowd with no story behind it (V1, V13).  
+  CA `BFKk1RFCz6527KbtcRKYjdvgtxaTCWZbw8dmF1txpump`
+- 19:32Z ANAKIN (MIGRATED, $1,092,380 mcap, $3,708 5m vol): PASS at conviction 2, PASS: ANAKIN is down 84.7% from its $7.16M peak with 5m flow at 0.39x the hourly pace. The crowd has left; this is a falling knife, not a dip (V1, V6).  
+  CA `8s4bNqEztH1JP7mkU747uMr7AckCQdiV47FDqYnDpump`
 - 19:26Z COLLECTOR (MIGRATED, $265,414 mcap, $27,498 5m vol): REJECT, Dev holds 36.2% (>1%) (V13, V17)  
   CA `6kKETm8xPeZ2z1DBYjXmxMTFAJudvGHJvRHu5Wt8uGtf`
 - 19:22Z DIGS (MIGRATED, $79,502 mcap, $3,759 5m vol): REJECT, Dev holds 3.2% (>1%) (V13, V17)  
   CA `9QT8K685Hrae4k11dhGXirdtpfAaimExtyfwt8cPpump`
 - 19:21Z PEPPER (FINAL_STRETCH, $28,486 mcap, $54,097 5m vol): PASS at conviction 3, PASS: chasing spike. It's up 159% in five minutes, 5m volume is running 8.3x the hourly pace, the coin is 7 minutes old, and seven bigger coins already use the PEPPER ticker. Wait for a base (V1, V5).  
   CA `92jz5dgWVfN5y1fmev5xu1D3fPmD4td6pzQ3muBpump`
-- 19:15Z Anakin (DIP, $1,713,907 mcap, $5,916 5m vol): PASS at conviction 3, PASS: no higher low. This is a straight bounce off the hourly low, sellers hold 65% of the 5m flow, 5m volume is under $10k, and it's the second-place coin in a fading Star Wars field (V1, V6).  
-  CA `ExxzYBTt3jwU5MUxuw2F4toYbTLdFwThSjyaCn6Xpump`
-- 19:14Z MAMESUKE (MIGRATED, $1,442,872 mcap, $14,388 5m vol): REJECT, Bundles: 4 linked wallet cluster(s) hold 65.8% of supply (>20%) (V17)  
-  CA `SCGBBnSwnekytGFHgyeHHxPMiN7xDxsWFGg9JgFSTNK`
-- 19:14Z CAPY (DIP, $227,954 mcap, $111,519 5m vol): PASS at conviction 3, PASS: the coin's own linked site shows a different CA, it's one of 19 CAPYs, and one bundle holds 8.2%. Probably a vamp, and too new. (V1, V3, V13)  
-  CA `5DnWmSL9t3YqK5MeYq8ozJpna46VcdePWzHvyN8avg2g`
-- 19:11Z DESSA (DIP, $12,908,513 mcap, $2,422 5m vol): REJECT, Dip with fading attention is a falling knife, not a dip (5m at 0.56x the hour's pace, under 0.6x)  
-  CA `npz2FhoufQ7pKqhGpaipYWacrAkidyW2yDpVWSvpump`
-- 19:10Z KIDS (MIGRATED, $51,710 mcap, $13,531 5m vol): PASS at conviction 3, PASS: chasing a spike. Up 49% in the last 5m on a 14-minute-old migration, and top 10 at 24% sit one point under the line. Wait for a higher low (V1, V6).  
-  CA `7uwr9Zoz8WW9UyRVC22nmmAXRbPoFTUpVjsN8q7kids`
-- 19:04Z HELL (MIGRATED, $3,072,078 mcap, $2,407 5m vol): PASS at conviction 2, PASS — $3M coin with the peak only 1.22x away, $2.4k 5m flow and a website claiming fake Rockstar/Xbox/PlayStation partnerships. Target too close. (V1, V6)  
-  CA `A75Xx6SeftAmWduv9KGwb2GCjXUAhxozcCUCys9jpump`
-- 19:03Z CAPYTISTAS (MIGRATED, $156,451 mcap, $89,253 5m vol): PASS at conviction 3, PASS: it's 2.6% off the high, up 48% in the last 5 minutes, and 21 minutes old. That's chasing a spike, not buying a pullback (V1, V6).  
-  CA `xRtT8q7g7NsAnbTgvCtim8jtxKVVc5epoLoAYmqpump`
 
 ## What its skips did next (last 48h)
 A skip "ran" if the coin reached the first target (1.5x) from the skip price before a 20% drop, "dumped" if the drop came first. Sampled every 10 min, followed 6h.
-- near the high / chasing: blocked 51, ran 3, dumped 42, flat 6, open 0 (saving losses: keep it)
-  - ran: BBOTS up to 1.51x  
-    CA `4TCevs5EC2RFsdWo3YPVifqe9dX2acCGGa9VHNtppump`
-  - ran: BLUE up to 1.53x  
-    CA `CPoGSmcjprCvzA2MFYLJMpQkGjmgVzKg4RVwMdrzpump`
-  - ran: PIRATE up to 2.27x  
-    CA `gzQXRwGRzfKLHfaV1f84QT7e5mt4vevu7MgacEfpump`
-- too new / sniping: blocked 49, ran 9, dumped 38, flat 0, open 2 (saving losses: keep it)
+- too new / sniping: blocked 51, ran 10, dumped 40, flat 0, open 1 (saving losses: keep it)
   - ran: onlypump up to 1.92x  
     CA `J73efZvH6rkrJbFJdP2rqe473YJW7tyWmrNARUSzpump`
   - ran: paws up to 1.51x  
     CA `CCF6ui6YjjhLaVtuYLH8b5jza8jHathqww5VbrMapump`
   - ran: VETOTRUMP up to 1.66x  
     CA `6g16UK4wHoFhC7PCmw8LYYCdt9q8m99fyoAwxeCrpump`
-- top 10 over 25%: blocked 42, ran 7, dumped 32, flat 1, open 2 (saving losses: keep it)
+- near the high / chasing: blocked 50, ran 3, dumped 41, flat 6, open 0 (saving losses: keep it)
+  - ran: BBOTS up to 1.51x  
+    CA `4TCevs5EC2RFsdWo3YPVifqe9dX2acCGGa9VHNtppump`
+  - ran: BLUE up to 1.53x  
+    CA `CPoGSmcjprCvzA2MFYLJMpQkGjmgVzKg4RVwMdrzpump`
+  - ran: PIRATE up to 2.27x  
+    CA `gzQXRwGRzfKLHfaV1f84QT7e5mt4vevu7MgacEfpump`
+- top 10 over 25%: blocked 43, ran 7, dumped 32, flat 1, open 3 (saving losses: keep it)
   - ran: Beaver up to 2.56x  
     CA `5h44wfzwGHFnfVhNKtMLapAJNV9iqqbUgUB2FqyWpump`
   - ran: timmy up to 1.66x  
     CA `TiMSdJrkVwUpeEWJpuqRvHt4wVS7uH77LbNPGGVJXNw`
   - ran: WASTED up to 1.93x  
     CA `GexThZHgaswpAQ7Fi8QrHFubjPimUNSYhJiAA7XZpump`
-- RugCheck danger: blocked 30, ran 4, dumped 26, flat 0, open 0 (saving losses: keep it)
+- RugCheck danger: blocked 31, ran 4, dumped 26, flat 0, open 1 (saving losses: keep it)
   - ran: SUGAR up to 1.74x  
     CA `HLzTFsX99uqzAP7uK36gJ2pPHGfRM8ugvxXWJzjSpump`
   - ran: AIC up to 1.6x  
@@ -143,21 +143,21 @@ A skip "ran" if the coin reached the first target (1.5x) from the skip price bef
 - falling knife / no higher low: blocked 13, ran 1, dumped 8, flat 2, open 2 (saving losses: keep it)
   - ran: CREDIT up to 1.56x  
     CA `Ewyifvp8X9NxeaKawXamGXBFDisuMfcFfcdvSZ8opump`
-- dev share over 1%: blocked 13, ran 3, dumped 5, flat 1, open 4 (mixed)
+- dev share over 1%: blocked 13, ran 3, dumped 6, flat 1, open 3 (saving losses: keep it)
   - ran: IGLU up to 1.54x  
     CA `34YQhrgkWoeFnm6LrcnmV3PLyDaMSNZikzUjyMmupump`
   - ran: MINTED up to 1.61x  
     CA `9yEKBwczdqoox7Red6GGPTrJ2dUbMvFUagdjxFqHpump`
   - ran: DOJAK up to 2.62x  
     CA `E5aeDjgq6ZSzAmihKoh9JPEhwK2bMCbZLJf6LYT9pump`
-- thin 5m volume: blocked 11, ran 1, dumped 3, flat 3, open 4 (saving losses: keep it)
-  - ran: CUMFACE up to 1.55x  
-    CA `J1D3X8znX4AzUPMHVWyBLNHqBBqWDPNSjX4KwK3Qpump`
-- flow below pace: blocked 11, ran 2, dumped 8, flat 0, open 1 (saving losses: keep it)
+- flow below pace: blocked 12, ran 2, dumped 10, flat 0, open 0 (saving losses: keep it)
   - ran: Ahsoka up to 1.54x  
     CA `4nuj5NLHMtQSezfmz6CwBpCRJisFie6F6MxNNz1dpump`
   - ran: KOROSUKE up to 1.54x  
     CA `7ha4HFgdvkXaDcR2biCsuBpoCZzoLSRjb5we34Gbpump`
+- thin 5m volume: blocked 11, ran 1, dumped 3, flat 3, open 4 (saving losses: keep it)
+  - ran: CUMFACE up to 1.55x  
+    CA `J1D3X8znX4AzUPMHVWyBLNHqBBqWDPNSjX4KwK3Qpump`
 
 ## Rules it changed from results and skips
 - 11-02 11:20Z tightened: DIP gate merged with the higher-low rule; flow at least 0.7x pace (DIPs are 0 for 5 (−$6.70). Falling-knife (code) skips: 23 of 29 dumped. No-higher-low skips: 12 of 16 dumped. This now matches the owner's 0.7x gate and the parameter.)
@@ -185,13 +185,13 @@ A skip "ran" if the coin reached the first target (1.5x) from the skip price bef
 Meta: pump.fun launches under 1h old, rotating fast. Rising: ADCY ($140k, +200%, $60k 5m vol, also on CoinGecko trending as DACITYCOIN), PizzaGate, Boba, OPTIC. Dead: Slingoor/SELFBET/NULL clone swarm (-94 to -98%, no volume, V1/V13). Fading: Star Wars (ANAKIN -52%). Steady: GTA6 animals, GATO $10.9M with 5m vol ~1.5x its hourly pace. Research now: ADCY as MIGRATED, only on a pullback to ~10% off the high since it's 6 min old; GATO as MIGRATED/DIP, just under the ~$11M ceiling. Watch only: PizzaGate (political-conspiracy name, close to the V13 line, needs a clean check) and horse (fading, $7k 5m vs ~$25k average). The crawler's pumpcat/Valerie/Escobahh/RICO aren't in scan_movers, so they're unverified.
 
 ## Moving most in its scans, last 30 min (1h volume)
-- CAPY: $946,679 1h vol, $227,954 mcap, +513% 1h  
-  CA `5DnWmSL9t3YqK5MeYq8ozJpna46VcdePWzHvyN8avg2g`
-- MAMESUKE: $503,385 1h vol, $1,471,792 mcap, +62% 1h  
-  CA `SCGBBnSwnekytGFHgyeHHxPMiN7xDxsWFGg9JgFSTNK`
-- CAPYTISTAS: $491,817 1h vol, $156,451 mcap, +316% 1h  
-  CA `xRtT8q7g7NsAnbTgvCtim8jtxKVVc5epoLoAYmqpump`
-- ADCY: $248,649 1h vol, $29,256 mcap, -35% 1h  
+- GATO: $295,165 1h vol, $10,890,243 mcap, +1% 1h  
+  CA `HsprHxBRgiVaQdRf3TnKNuZZtaX9JUSPgMFdAkk6pump`
+- ADCY: $238,502 1h vol, $23,299 mcap, -61% 1h  
   CA `6qnAerbLSGbhS3i6Xyh8AcsLTrutS1Rb7kuHsfwZpump`
+- PizzaGate: $182,302 1h vol, $27,055 mcap, -32% 1h  
+  CA `ALTRgkReDWGmhisjTXwqHvbZRUcVoJicj54bQzVCpump`
 - COLLECTOR: $178,634 1h vol, $261,671 mcap, +184% 1h  
   CA `6kKETm8xPeZ2z1DBYjXmxMTFAJudvGHJvRHu5Wt8uGtf`
+- MemesSt: $163,906 1h vol, $20,716 mcap, +493% 1h  
+  CA `BFKk1RFCz6527KbtcRKYjdvgtxaTCWZbw8dmF1txpump`
