@@ -1,13 +1,13 @@
 # Trencher live report
 
-Updated 2026-11-01T23:59:54Z (paper trading, never real money)
+Updated 2026-11-02T00:15:02Z (paper trading, never real money)
 
 - Equity: $80.53 (-19.5% vs $100 start)
-- Goal: $1,000 by 2026-11-05 05:03Z (pressing for it): at 8.1% of it, 3.2 days left, needs +119.2% a day from here
+- Goal: $1,000 by 2026-11-05 05:03Z (pressing for it): at 8.1% of it, 3.2 days left, needs +119.7% a day from here
 - Closed trades: 19, 3 wins
 - Fees paid: $12.66 (axiom $2.26, network $8.06, pool $2.21), plus $3.34 lost to slippage
 - New trades: on
-- Brain: subscription, 613 calls and 0 plan-limit hits in 48h
+- Brain: subscription, 614 calls and 0 plan-limit hits in 48h
 
 ## Scorecard (after fees)
 - 19 closed, 3 won (16%), net $-19.48
@@ -74,46 +74,44 @@ Updated 2026-11-01T23:59:54Z (paper trading, never real money)
   CA `GYKnd6jGUSQoBUnj6LdGCBtCWYDgr2Zd6QwNPcy5pump`
 
 ## Last scan
-- 23:59Z: 6 coins, 5 with pairs, 0 passed the market filters, 0 researched
+- 00:14Z: 10 coins, 9 with pairs, 3 passed the market filters, 3 researched
 
 ## Coins it looked at, and why it passed
+- 00:14Z Heidou (FINAL_STRETCH, $24,218 mcap, $2,160 5m vol): PASS at conviction 3, PASS — flow below pace. $2.2k on the 5m at 0.63x hourly, 4.5% off the peak, no meta it belongs to. It's cooling into the bond, not breaking through (V1).  
+  CA `HyXUTnyNp4noQRddxSUb6FjFsjv6jJtiEYBgAwanpump`
+- 00:14Z 10M (MIGRATED, $35,240 mcap, $6,075 5m vol): PASS at conviction 2, PASS — chasing spike: 9-minute-old pool, last 5m candle +29.6% at 3.7x the hourly pace, and the only high is 1.18x away. No story, no crowd (V1, V6).  
+  CA `HV2BJ1SZ2tQSD9cufeS7JGsiY9Z1ug8LEPp5imV6pump`
+- 00:14Z Emily (FINAL_STRETCH, $27,149 mcap, $13,354 5m vol): REJECT, Top 10 hold 29.1% ex-pool (>25%) (V13)  
+  CA `CrW5j6ehF8hu6efmndJoSoATgipRA959QzpYxEtbpump`
+- 00:13Z GATO (MIGRATED, $8,431,129 mcap, $4,518 5m vol): REJECT, Dev holds 3.3% (>1%) (V13, V17)  
+  CA `HsprHxBRgiVaQdRf3TnKNuZZtaX9JUSPgMFdAkk6pump`
+- 00:11Z ANAKIN (MIGRATED, $1,997,738 mcap, $14,794 5m vol): PASS at conviction 3, PASS — ANAKIN is clean but the $2.42M high is only 1.21x away, under initials, and 5m flow is at 0.55x pace while it fades off the top. Blocker: target too close / flow below pace. (V1, V6)  
+  CA `8s4bNqEztH1JP7mkU747uMr7AckCQdiV47FDqYnDpump`
+- 00:07Z WASTED (MIGRATED, $410,284 mcap, $10,781 5m vol): REJECT, Top 10 hold 25.6% ex-pool (>25%) (V13)  
+  CA `GexThZHgaswpAQ7Fi8QrHFubjPimUNSYhJiAA7XZpump`
+- 00:03Z MIDTERMS (DIP, $40,397 mcap, $7,380 5m vol): REJECT, Dip with fading attention is a falling knife, not a dip (5m at 0.48x the hour's pace, under 0.6x)  
+  CA `74Np8Ga5DomwZVx5bZBGFcHgFavPhgkvkJ2LPdWdpump`
 - 23:58Z TikTok (FINAL_STRETCH, $20,036 mcap, $16,717 5m vol): PASS at conviction 2, PASS: chasing spike. It's up 90% in the last 5 minutes at 8x the hourly pace, 6% off its peak, 7 minutes old, and it's a vamp of a ticker three bigger coins already own. (V1, V3)  
   CA `5bVj1AmdRcB3J9vvCzZ51i4o5zdtfMAUxXBi81Hdpump`
 - 23:55Z ARNOLD (MIGRATED, $72,061 mcap, $3,154 5m vol): PASS at conviction 3, PASS: $3.1k on the 5m at 0.79x pace, sellers ahead, sitting on the hourly low. Blocker: flow below pace (V1, V6).  
   CA `nG3jfPQHU2ZQhPERkTZD8YPSAsrrWiePPDcm9jxpump`
 - 23:52Z Anakinius (MIGRATED, $278,087 mcap, $8,861 5m vol): PASS at conviction 3, PASS: a Star Wars vamp with its 5m flow at 0.23x the hourly pace, and the crowd is with ANAKIN, not this one. Blocker "flow below pace" (V1, V6).  
   CA `2pKpMwUQXNZeAf93LoomnZSworH3ezFzweCiuvrppump`
-- 23:40Z NNN (DIP, $57,603 mcap, $2,655 5m vol): PASS at conviction 2, PASS: falling knife. It's down 35% in the last 5 minutes, only 29% of trades are buys, there's no higher low yet and 25 other coins share the ticker. Blocker: "falling knife / no higher low" (V1, V13).  
-  CA `GCM6bnuh6KiN696Wk8tu7QTfrpLmXUEWEW7rDwcEpump`
-- 23:37Z VETOTRUMP (DIP, $135,117 mcap, $4,434 5m vol): REJECT, Dip with fading attention is a falling knife, not a dip (5m at 0.56x the hour's pace, under 0.6x)  
-  CA `6g16UK4wHoFhC7PCmw8LYYCdt9q8m99fyoAwxeCrpump`
-- 23:35Z MIP (FINAL_STRETCH, $21,571 mcap, $17,493 5m vol): PASS at conviction 3, PASS: up 89% in the last 5 minutes with the top 10 sitting at exactly 25%. That's chasing a spike into a borderline holder table. (V1, V6, V13)  
-  CA `BKPnak3A5KKSKnDdYQBHn2zt1BgfkPDgX8ze8og2pump`
-- 23:32Z GLITCH (MIGRATED, $3,658,077 mcap, $4,977 5m vol): REJECT, Top 10 hold 28.0% ex-pool (>25%) (V13)  
-  CA `8Xg89xT8Ve34sKiYqYuMs46mycREsCA2F362UscRpump`
-- 23:27Z GATO (MIGRATED, $7,635,125 mcap, $7,928 5m vol): REJECT, Dev holds 3.3% (>1%) (V13, V17)  
-  CA `HsprHxBRgiVaQdRf3TnKNuZZtaX9JUSPgMFdAkk6pump`
-- 23:25Z ANAKIN (MIGRATED, $1,470,527 mcap, $20,112 5m vol): PASS at conviction 3, PASS: ANAKIN's 5m volume is running at 0.12x its hourly pace, so the crowd that pumped it is leaving. Blocker: flow below pace (V1, V6).  
-  CA `8s4bNqEztH1JP7mkU747uMr7AckCQdiV47FDqYnDpump`
-- 23:18Z MIDTERMS (FINAL_STRETCH, $19,604 mcap, $25,474 5m vol): PASS at conviction 2, PASS — 2.4 minutes old, +451% in five, four same-ticker copies and a site that doesn't show the CA. That's a snipe on a spike, not a setup. Blocker: chasing spike / too new (V1, V5, V6).  
-  CA `74Np8Ga5DomwZVx5bZBGFcHgFavPhgkvkJ2LPdWdpump`
 
 ## What its skips did next (last 48h)
 A skip "ran" if the coin reached the first target (1.5x) from the skip price before a 20% drop, "dumped" if the drop came first. Sampled every 10 min, followed 6h.
-- near the high / chasing: blocked 58, ran 5, dumped 43, flat 8, open 2 (saving losses: keep it)
+- near the high / chasing: blocked 61, ran 5, dumped 43, flat 8, open 5 (saving losses: keep it)
   - ran: Hyped up to 2.02x  
     CA `ADpzsC5eB1yDD5T9LocQ8kpN7jrcW5gobA4FBHuipump`
   - ran: Wojak up to 2.51x  
     CA `BbNuEtiT77Swr4WqGHuUkQY5kZ67M7au7bXkxcArpump`
   - ran: BBOTS up to 1.51x  
     CA `4TCevs5EC2RFsdWo3YPVifqe9dX2acCGGa9VHNtppump`
-- too new / sniping: blocked 52, ran 3, dumped 45, flat 0, open 4 (saving losses: keep it)
+- too new / sniping: blocked 51, ran 2, dumped 46, flat 0, open 3 (saving losses: keep it)
   - ran: onlypump up to 1.92x  
     CA `J73efZvH6rkrJbFJdP2rqe473YJW7tyWmrNARUSzpump`
   - ran: paws up to 1.51x  
     CA `CCF6ui6YjjhLaVtuYLH8b5jza8jHathqww5VbrMapump`
-  - ran: MIDTERMS up to 2.76x  
-    CA `74Np8Ga5DomwZVx5bZBGFcHgFavPhgkvkJ2LPdWdpump`
 - top 10 over 25%: blocked 36, ran 6, dumped 24, flat 3, open 3 (saving losses: keep it)
   - ran: Beaver up to 2.56x  
     CA `5h44wfzwGHFnfVhNKtMLapAJNV9iqqbUgUB2FqyWpump`
@@ -121,7 +119,7 @@ A skip "ran" if the coin reached the first target (1.5x) from the skip price bef
     CA `TiMSdJrkVwUpeEWJpuqRvHt4wVS7uH77LbNPGGVJXNw`
   - ran: TIPPER up to 1.55x  
     CA `3DEcz7AnmJiGSnDHYvUeX5uPMMHVcDwqrWRSGdHEpump`
-- falling knife (code): blocked 24, ran 3, dumped 17, flat 2, open 2 (saving losses: keep it)
+- falling knife (code): blocked 25, ran 3, dumped 17, flat 2, open 3 (saving losses: keep it)
   - ran: LUMI up to 1.76x  
     CA `653joYuZ5EntuKd1bspZakjHdueMxHGs5Lvm7RdWpump`
   - ran: KIM up to 1.55x  
@@ -142,10 +140,10 @@ A skip "ran" if the coin reached the first target (1.5x) from the skip price bef
     CA `2T9WZjVC6L3BvusUtjKDT6HcZeEYgU9T5xhfJQxFpump`
   - ran: ZECRET up to 1.62x  
     CA `ChCi2x2bpevrNyeRoPHLXHzmaCdGQPuU15CNqxY1pump`
-- crowd leaving / fading volume: blocked 16, ran 1, dumped 7, flat 2, open 6 (saving losses: keep it)
+- crowd leaving / fading volume: blocked 15, ran 1, dumped 7, flat 2, open 5 (saving losses: keep it)
   - ran: Apple up to 1.58x  
     CA `6nJVg7wV1UBaWBpHuP7pEHLBd26U4cj6vXnGShobpump`
-- falling knife / no higher low: blocked 16, ran 2, dumped 12, flat 1, open 1 (saving losses: keep it)
+- falling knife / no higher low: blocked 15, ran 2, dumped 11, flat 1, open 1 (saving losses: keep it)
   - ran: CREDIT up to 1.56x  
     CA `Ewyifvp8X9NxeaKawXamGXBFDisuMfcFfcdvSZ8opump`
   - ran: PI up to 1.6x  
@@ -189,11 +187,11 @@ The meta is Star Wars, and the leader is ANAKIN, not ANAKINCORE. ANAKIN is at $1
 ## Moving most in its scans, last 30 min (1h volume)
 - Anakinius: $467,646 1h vol, $278,087 mcap, +565% 1h  
   CA `2pKpMwUQXNZeAf93LoomnZSworH3ezFzweCiuvrppump`
-- ALON: $365,068 1h vol, $6,288 mcap, -85% 1h  
+- ALON: $365,798 1h vol, $5,583 mcap, -87% 1h  
   CA `4zWkHRuH4zrCLYyvhj12x2Zxvjoo4pFJE6PPhozspump`
-- LEARJET: $188,173 1h vol, $14,503 mcap, -64% 1h  
-  CA `4zhDF9CgyPFMWi8qoamrY4RXHrnbbHfGL4oBANk5pump`
-- ALON: $97,718 1h vol, $3,890 mcap, -17% 1h  
-  CA `FgcEkQrHw26jzt38KD33oSU95bTTGPsva8cBxb9Ppump`
-- MIP: $96,396 1h vol, $21,571 mcap, +577% 1h  
-  CA `BKPnak3A5KKSKnDdYQBHn2zt1BgfkPDgX8ze8og2pump`
+- ANAKIN: $323,296 1h vol, $1,997,738 mcap, +23% 1h  
+  CA `8s4bNqEztH1JP7mkU747uMr7AckCQdiV47FDqYnDpump`
+- MIDTERMS: $184,471 1h vol, $40,397 mcap, +8% 1h  
+  CA `74Np8Ga5DomwZVx5bZBGFcHgFavPhgkvkJ2LPdWdpump`
+- GATO: $105,947 1h vol, $8,431,129 mcap, +11% 1h  
+  CA `HsprHxBRgiVaQdRf3TnKNuZZtaX9JUSPgMFdAkk6pump`
