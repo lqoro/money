@@ -1,6 +1,6 @@
 # Trencher live report
 
-Updated 2026-11-02T01:31:04Z (paper trading, never real money)
+Updated 2026-11-02T01:31:08Z (paper trading, never real money)
 
 - Equity: $80.53 (-19.5% vs $100 start)
 - Goal: $1,000 by 2026-11-05 05:03Z (pressing for it): at 8.1% of it, 3.1 days left, needs +122.7% a day from here
@@ -74,29 +74,10 @@ Updated 2026-11-02T01:31:04Z (paper trading, never real money)
   CA `GYKnd6jGUSQoBUnj6LdGCBtCWYDgr2Zd6QwNPcy5pump`
 
 ## Last scan
-- 01:30Z: 4 coins, 2 with pairs, 0 passed the market filters, 0 researched
+- no scan yet since the last restart
 
 ## Coins it looked at, and why it passed
-- 01:25Z DOGE (MIGRATED, $39,602 mcap, $3,195 5m vol): REJECT, Top 10 hold 30.3% ex-pool (>25%) (V13)  
-  CA `EAu7C4RUPtFWG1G2vUBQPJufEiXX4Z5mmuadjEsKpump`
-- 01:25Z pain (MIGRATED, $92,348 mcap, $14,467 5m vol): PASS at conviction 2, PASS: the first resistance is only 1.21x away, it's 21 minutes past migration with sells ahead of buys, and it's a flagged copycat with a 12.9% whale. Target too close. (V1, V3, V6)  
-  CA `CTLeZu8CxiYXL6zTmBbsycaG35smxJMmAyNHCbWzpump`
-- 01:13Z CHOO (MIGRATED, $1,864,557 mcap, $2,698 5m vol): PASS at conviction 3, PASS: $2.7k on the 5m for a $1.86M coin, sitting on its hourly low with no higher low printed, and nobody on the radar is talking about it. Blocker: no live flow (V1, V6).  
-  CA `EJAxERvKU4kEVXn3NarjvRtgaMaJyP9ZuMeKA7JJpump`
-- 01:10Z Anakin (MIGRATED, $2,784,498 mcap, $17,030 5m vol): PASS at conviction 4, PASS: the price is sitting on the hourly low and hasn't printed a higher low, and the newer ANAKIN is taking the crowd. Falling knife. (V1, V6)  
-  CA `ExxzYBTt3jwU5MUxuw2F4toYbTLdFwThSjyaCn6Xpump`
-- 01:05Z Peekhole (MIGRATED, $322,776 mcap, $4,428 5m vol): PASS at conviction 3, PASS. It's 21.6% off the high with $4.4k on the 5m and red on the 5m candle. A shallow-band coin with no breakout is a pass for me, and a 5.8% bundle cluster makes it worse (V1, V3).  
-  CA `2Nyb2GXVoXM42hVQxJg5RppTbiN5SCZFL4LtZVVDpump`
-- 01:04Z pain (FINAL_STRETCH, $22,588 mcap, $25,453 5m vol): PASS at conviction 2, PASS: I'd be chasing a spike. It's up 210% in the last 5m, volume is running at 8x the hourly pace, and it sits 9.5% under a high it printed 6 minutes ago. The top 10 also hold 24.4%, which is right at the 25% line, and the ticker is a copycat. (V1, V6, V13)  
-  CA `Hjo8danmhLmHRzjLN8tJ2vYne4ZDJSoVefTjGLUApump`
-- 01:00Z Heidou (MIGRATED, $39,769 mcap, $4,776 5m vol): PASS at conviction 3, PASS: 17 minutes old, down 13% on the 5m and still bleeding off its bond spike. A bigger Heidou exists. Too new (V1, V6).  
-  CA `HyXUTnyNp4noQRddxSUb6FjFsjv6jJtiEYBgAwanpump`
-- 00:59Z GATO (MIGRATED, $7,801,149 mcap, $4,140 5m vol): REJECT, Dev holds 3.3% (>1%) (V13, V17)  
-  CA `HsprHxBRgiVaQdRf3TnKNuZZtaX9JUSPgMFdAkk6pump`
-- 00:56Z Learjet (MIGRATED, $164,781 mcap, $27,501 5m vol): REJECT, Bundles: 6 linked wallet cluster(s) hold 20.4% of supply (>20%) (V17)  
-  CA `DaG1X248VVvWuqaiBURFSe4b4L7RUm8sR57FJBZ7pump`
-- 00:56Z ANAKIN (MIGRATED, $2,151,343 mcap, $13,223 5m vol): PASS at conviction 3, PASS — ANAKIN is 11.9% off its high and the only resistance is that high at $2.44M, just 1.13x away, while 5m flow runs at 0.56x the hourly pace. Target too close, flow below pace. (V1, V6)  
-  CA `8s4bNqEztH1JP7mkU747uMr7AckCQdiV47FDqYnDpump`
+- none since the last restart
 
 ## What its skips did next (last 48h)
 A skip "ran" if the coin reached the first target (1.5x) from the skip price before a 20% drop, "dumped" if the drop came first. Sampled every 10 min, followed 6h.
@@ -183,13 +164,13 @@ A skip "ran" if the coin reached the first target (1.5x) from the skip price bef
 The meta has three parts right now. First, Star Wars is still the leader: ANAKIN ($2.0M, 1.7h old, +23% in the hour, 0.73 buys, $14.8k on the 5m) and the older Anakin Skywalker ($3.55M, 77h old, 0.74 buys). The crawler's summary is stale. It talked about ANAKINCORE and Anakinius, but neither is in the movers anymore, and since two Anakins are both getting money, I need to check which one is the original before I touch either (V1, V3). Second, political-joke launches on the curve are rising: Vunce (JD Vance parody, $15k, 6 minutes old, $62k on the 5m), TREMP ($12k, $10.7k on the 5m) and Emily ($27k, +658%). All three are named after people, not pushed by them, but a parody of a politician is close to my politician line (V13), so each one needs a check on who posted the CA. Third, GTA nostalgia is back: WASTED ($410k, 54h old, +84%, 0.72 buys, $10.8k on the 5m) is the original. The young Raydium WASTED copy is a vamp, and GATO is bleeding with 0.41 buys. The quick pumps are fading hard: DIH is down 85%, ALON is down 81% at 0.14 buys, and MIP is dead. The setups I'd research now are WASTED as a MIGRATED/DIP continuation, ANAKIN as a DIP once 5m volume holds at 0.7x the hourly pace or better, PIBBLE as a MIGRATED candidate ($41k, $11k on the 5m, 0.64 buys) if its Raydium pool shows burned liquidity, and Emily as FINAL_STRETCH if holders come back clean. Owner, I'll press on clean setups, but each conviction number gets earned on the checklist, not on the deadline.
 
 ## Moving most in its scans, last 30 min (1h volume)
-- megatron: $150,322 1h vol, $14,024 mcap, +333% 1h  
-  CA `7yhyJaE5AcNyUGVcfmATy5AxcgFfq1Jtvw71BjGcpump`
+- ANAKIN: $283,526 1h vol, $2,151,343 mcap, +22% 1h  
+  CA `8s4bNqEztH1JP7mkU747uMr7AckCQdiV47FDqYnDpump`
+- Learjet: $204,813 1h vol, $164,781 mcap, +315% 1h  
+  CA `DaG1X248VVvWuqaiBURFSe4b4L7RUm8sR57FJBZ7pump`
 - pain: $144,647 1h vol, $92,348 mcap, +133% 1h  
   CA `CTLeZu8CxiYXL6zTmBbsycaG35smxJMmAyNHCbWzpump`
+- megatron: $139,932 1h vol, $13,292 mcap, +311% 1h  
+  CA `7yhyJaE5AcNyUGVcfmATy5AxcgFfq1Jtvw71BjGcpump`
 - Anakin: $121,564 1h vol, $2,784,498 mcap, -17% 1h  
   CA `ExxzYBTt3jwU5MUxuw2F4toYbTLdFwThSjyaCn6Xpump`
-- Camry: $101,284 1h vol, $7,849 mcap, +147% 1h  
-  CA `9QzXpQV946rbVs3yADNqdQ1JWz2LgWdNGmxHG5Eppump`
-- flow: $97,568 1h vol, $4,164 mcap, -22% 1h  
-  CA `DWhb5BtLB8gEPFyQX8XeQz1MEWBRtpGYCKfKZdFepump`
