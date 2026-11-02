@@ -1,13 +1,13 @@
 # Trencher live report
 
-Updated 2026-11-02T05:19:54Z (paper trading, never real money)
+Updated 2026-11-02T05:35:06Z (paper trading, never real money)
 
 - Equity: $80.53 (-19.5% vs $100 start)
-- Goal: $1,000 by 2026-11-05 05:03Z (pressing for it): at 8.1% of it, 3 days left, needs +132.3% a day from here
+- Goal: $1,000 by 2026-11-05 05:03Z (pressing for it): at 8.1% of it, 3 days left, needs +133% a day from here
 - Closed trades: 19, 3 wins
 - Fees paid: $12.66 (axiom $2.26, network $8.06, pool $2.21), plus $3.34 lost to slippage
 - New trades: on
-- Brain: subscription, 576 calls and 0 plan-limit hits in 48h
+- Brain: subscription, 575 calls and 0 plan-limit hits in 48h
 
 ## Scorecard (after fees)
 - 19 closed, 3 won (16%), net $-19.48
@@ -74,9 +74,21 @@ Updated 2026-11-02T05:19:54Z (paper trading, never real money)
   CA `GYKnd6jGUSQoBUnj6LdGCBtCWYDgr2Zd6QwNPcy5pump`
 
 ## Last scan
-- 05:19Z: 3 coins, 3 with pairs, 1 passed the market filters, 1 researched
+- 05:34Z: 2 coins, 2 with pairs, 0 passed the market filters, 0 researched
 
 ## Coins it looked at, and why it passed
+- 05:31Z Warcoin (no setup, $15,771 mcap, $6,965 5m vol): REJECT, No setup fits: not Final Stretch, not a migrated runner, not a healthy dip  
+  CA `H86pLyqzZMim3pxrC29YWsMKoxL6xGFM1nQyVtyRpump`
+- 05:31Z TRUMP (MIGRATED, $119,726 mcap, $140,885 5m vol): REJECT, Bundles: 2 linked wallet cluster(s) hold 100.0% of supply (>20%) (V17)  
+  CA `En5icDhYYCuGXTtCLmfWiGR4C9nMiYMKojLdBRfVpump`
+- 05:31Z XMRISE (MIGRATED, $72,643 mcap, $14,109 5m vol): PASS at conviction 2, PASS: 15 minutes old, sitting right at its high after a +46% five-minute candle. That's chasing a spike on a fresh migration, and the "launchpad" has a website that's a few hours old with nothing behind it. (V1, V5, V6)  
+  CA `5GNDhmKmNks2ELBCmLHPZYBeYu2NCDqnrhKnBBr99xmr`
+- 05:30Z PEACE (DIP, $140,651 mcap, $73,362 5m vol): PASS at conviction 3, PASS: down 28.7% in the last 5 minutes. That's a dump in progress, not a higher low. Blocker "no higher low" (V1).  
+  CA `BngAfLZxaWN2QvpFhRbUHydYGr8zA7YTSA178G8Epump`
+- 05:27Z Anakin (MIGRATED, $2,774,671 mcap, $3,561 5m vol): PASS at conviction 3, PASS: $3.6k on the 5m, more sellers than buyers, and it's the number two Anakin in a fading Star Wars field. Wrong token. (V1, V6, V13)  
+  CA `ExxzYBTt3jwU5MUxuw2F4toYbTLdFwThSjyaCn6Xpump`
+- 05:20Z GATO (MIGRATED, $8,758,970 mcap, $3,818 5m vol): REJECT, Dev holds 3.3% (>1%) (V13, V17)  
+  CA `HsprHxBRgiVaQdRf3TnKNuZZtaX9JUSPgMFdAkk6pump`
 - 05:19Z ANAKIN (DIP, $3,069,443 mcap, $6,297 5m vol): REJECT, Dip with fading attention is a falling knife, not a dip (5m at 0.49x the hour's pace, under 0.6x)  
   CA `8s4bNqEztH1JP7mkU747uMr7AckCQdiV47FDqYnDpump`
 - 05:18Z WARDOG (FINAL_STRETCH, $28,530 mcap, $7,235 5m vol): REJECT, Top 10 hold 28.2% ex-pool (>25%) (V13)  
@@ -85,18 +97,6 @@ Updated 2026-11-02T05:19:54Z (paper trading, never real money)
   CA `DKSBXMtJaJQYsi8rFegxzZJZDXvK3JDai56YZ7CRpump`
 - 05:00Z XAR (FINAL_STRETCH, $25,079 mcap, $33,939 5m vol): PASS at conviction 2, PASS — 3.5 minutes old, +522% in one candle, still on the curve at $25k. That's sniping a spike, not a setup. Blocker: too new / sniping (V5, V1).  
   CA `mb9PoUuicZgj2tgZ9Ze95XiaKUZgmQegCewitj5pump`
-- 04:46Z Warcoin (FINAL_STRETCH, $23,335 mcap, $15,707 5m vol): PASS at conviction 3, PASS: Warcoin is 16 minutes old, still on the bonding curve at 60%, and just printed a +28% five-minute candle. Buying now is chasing a spike on a new pair. (V1, V5)  
-  CA `H86pLyqzZMim3pxrC29YWsMKoxL6xGFM1nQyVtyRpump`
-- 04:45Z PEACE (MIGRATED, $216,519 mcap, $168,423 5m vol): PASS at conviction 3, PASS: 47 minutes old, -25% on the 5m, still bleeding off its bond spike with no higher low. Wait for a base. (V1, too new)  
-  CA `BngAfLZxaWN2QvpFhRbUHydYGr8zA7YTSA178G8Epump`
-- 04:35Z INU (MIGRATED, $132,367 mcap, $63,761 5m vol): PASS at conviction 2, PASS — 14 minutes old, 8% off the high on a +46% candle, and one wallet holds 17.6%. Blocker: "chasing spike" (V1, V6).  
-  CA `F3q2mwxMz4bieoDgZDKbKdHJVVEUTBM2a1yGeQiHpump`
-- 04:34Z GATO (MIGRATED, $9,120,149 mcap, $7,277 5m vol): REJECT, Dev holds 3.3% (>1%) (V13, V17)  
-  CA `HsprHxBRgiVaQdRf3TnKNuZZtaX9JUSPgMFdAkk6pump`
-- 04:34Z ANAKIN (DIP, $2,691,118 mcap, $7,547 5m vol): PASS at conviction 4, PASS — clean holders, but four lower 15m closes and no higher low printed yet. That's a falling knife, not a dip. Blocker: "no higher low" (V1).  
-  CA `8s4bNqEztH1JP7mkU747uMr7AckCQdiV47FDqYnDpump`
-- 04:33Z NA (MIGRATED, $116,020 mcap, $23,020 5m vol): PASS at conviction 3, PASS: 16 minutes old, 8.8% off its high, and one linked wallet cluster holds 10.2%. That's chasing a fresh political-news pump with a bundle sitting on top. Blocker: "chasing". (V1, V3, V13)  
-  CA `9ZmdP8q22ebRhEkcwd5EDkitu7ypeDFXTQXpv2kUpump`
 
 ## What its skips did next (last 48h)
 A skip "ran" if the coin reached the first target (1.5x) from the skip price before a 20% drop, "dumped" if the drop came first. Sampled every 10 min, followed 6h.
@@ -107,7 +107,7 @@ A skip "ran" if the coin reached the first target (1.5x) from the skip price bef
     CA `BbNuEtiT77Swr4WqGHuUkQY5kZ67M7au7bXkxcArpump`
   - ran: BBOTS up to 1.51x  
     CA `4TCevs5EC2RFsdWo3YPVifqe9dX2acCGGa9VHNtppump`
-- too new / sniping: blocked 46, ran 5, dumped 40, flat 0, open 1 (saving losses: keep it)
+- too new / sniping: blocked 46, ran 5, dumped 39, flat 0, open 2 (saving losses: keep it)
   - ran: onlypump up to 1.92x  
     CA `J73efZvH6rkrJbFJdP2rqe473YJW7tyWmrNARUSzpump`
   - ran: paws up to 1.51x  
@@ -142,22 +142,22 @@ A skip "ran" if the coin reached the first target (1.5x) from the skip price bef
     CA `2T9WZjVC6L3BvusUtjKDT6HcZeEYgU9T5xhfJQxFpump`
   - ran: ZECRET up to 1.62x  
     CA `ChCi2x2bpevrNyeRoPHLXHzmaCdGQPuU15CNqxY1pump`
-- falling knife / no higher low: blocked 19, ran 2, dumped 12, flat 2, open 3 (saving losses: keep it)
+- falling knife / no higher low: blocked 20, ran 2, dumped 12, flat 2, open 4 (saving losses: keep it)
   - ran: CREDIT up to 1.56x  
     CA `Ewyifvp8X9NxeaKawXamGXBFDisuMfcFfcdvSZ8opump`
   - ran: PI up to 1.6x  
     CA `93VGqXL76voGxc43apJTDJoKkqnxTht1BKWoEmUypump`
-- bundles over the line: blocked 12, ran 2, dumped 8, flat 2, open 0 (saving losses: keep it)
+- bundles over the line: blocked 13, ran 2, dumped 8, flat 2, open 1 (saving losses: keep it)
   - ran: Nuts up to 1.53x  
     CA `APH9FRoKst66E4a7uZXcEfE8NjtwybUC8Jq7ue8upump`
   - ran: NA up to 1.97x  
     CA `9ZmdP8q22ebRhEkcwd5EDkitu7ypeDFXTQXpv2kUpump`
-- crowd leaving / fading volume: blocked 11, ran 2, dumped 6, flat 3, open 0 (saving losses: keep it)
+- crowd leaving / fading volume: blocked 12, ran 2, dumped 6, flat 3, open 1 (saving losses: keep it)
   - ran: VETOTRUMP up to 1.66x  
     CA `6g16UK4wHoFhC7PCmw8LYYCdt9q8m99fyoAwxeCrpump`
   - ran: Anakinius up to 1.93x  
     CA `2pKpMwUQXNZeAf93LoomnZSworH3ezFzweCiuvrppump`
-- dev share over 1%: blocked 10, ran 3, dumped 5, flat 2, open 0 (mixed)
+- dev share over 1%: blocked 10, ran 3, dumped 5, flat 1, open 1 (mixed)
   - ran: IGLU up to 1.54x  
     CA `34YQhrgkWoeFnm6LrcnmV3PLyDaMSNZikzUjyMmupump`
   - ran: MINTED up to 1.61x  
@@ -191,13 +191,13 @@ A skip "ran" if the coin reached the first target (1.5x) from the skip price bef
 Meta: war and patriotism jokes are rising. INU (I Nuke You) is at $134k with $67k on the 5m and +234% on the hour; NA (New America) is at $114k with $19k on the 5m; Warcoin, World Peace and America Coin are moving lower down. Star Wars parodies are fading: ANUKOON rugged, while the original ANAKIN holds $2.7M, -13% on the hour, 5m volume about 0.78x hourly, 0.72 buys. Edgy NoNut jokes are dead (NNH -98%, the crawler's summary was stale), and Kabosu and DOGE also rugged within an hour. Setups to research: INU as MIGRATED (12 minutes old, so a probe at 5-6 if checks are clean, not an automatic 7), NA as MIGRATED (probe, needs a check that no politician pushed the CA, V13), ANAKIN as DIP (clears the 0.7x volume gate; buy only on a real pullback with buyers stepping in). PASS on HOPE: the slur kills wide appeal (V6) and 5m volume is only about 0.15x hourly. PASS on Warcoin and World Peace: 6-40 minutes old and still on the bonding curve, so it would be sniping new pairs (V5). Hard lines and the 20% stop stay in place despite the owner's push.
 
 ## Moving most in its scans, last 30 min (1h volume)
-- NA: $462,659 1h vol, $1,833 mcap, -98% 1h  
+- PEACE: $728,256 1h vol, $140,651 mcap, -45% 1h  
+  CA `BngAfLZxaWN2QvpFhRbUHydYGr8zA7YTSA178G8Epump`
+- NA: $312,337 1h vol, $1,816 mcap, -98% 1h  
   CA `9ZmdP8q22ebRhEkcwd5EDkitu7ypeDFXTQXpv2kUpump`
+- TRUMP: $274,906 1h vol, $123,543 mcap, +209% 1h  
+  CA `En5icDhYYCuGXTtCLmfWiGR4C9nMiYMKojLdBRfVpump`
+- Warcoin: $155,759 1h vol, $20,645 mcap, +101% 1h  
+  CA `H86pLyqzZMim3pxrC29YWsMKoxL6xGFM1nQyVtyRpump`
 - ANAKIN: $155,507 1h vol, $3,069,443 mcap, -4% 1h  
   CA `8s4bNqEztH1JP7mkU747uMr7AckCQdiV47FDqYnDpump`
-- GROWER: $78,236 1h vol, $2,906 mcap, -10% 1h  
-  CA `64aLKvdq6RVDR19wynfF65VSnhiPQJyEC9hwBWi8grow`
-- HOPE: $55,728 1h vol, $35,898 mcap, +3% 1h  
-  CA `4wmT5vPBJ3iiFRmNhciCZ67yasiXSjzz3g9VukXrpump`
-- Peace: $48,602 1h vol, $3,475 mcap, -91% 1h  
-  CA `Hb1dtD8bkU2M2fYQ552UYzcbLUn1NgE8kvvtc1j1pump`
