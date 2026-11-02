@@ -1,13 +1,13 @@
 # Trencher live report
 
-Updated 2026-11-02T13:24:13Z (paper trading, never real money)
+Updated 2026-11-02T13:39:27Z (paper trading, never real money)
 
 - Equity: $77.09 (-22.9% vs $100 start)
-- Goal: $1,000 by 2026-11-05 05:03Z (pressing for it): at 7.7% of it, 2.7 days left, needs +162.8% a day from here
+- Goal: $1,000 by 2026-11-05 05:03Z (pressing for it): at 7.7% of it, 2.6 days left, needs +163.9% a day from here
 - Closed trades: 21, 3 wins
 - Fees paid: $14.04 (axiom $2.63, network $8.81, pool $2.47), plus $3.89 lost to slippage
 - New trades: on
-- Brain: subscription, 520 calls and 0 plan-limit hits in 48h
+- Brain: subscription, 519 calls and 0 plan-limit hits in 48h
 
 ## Scorecard (after fees)
 - 21 closed, 3 won (14%), net $-22.93
@@ -74,9 +74,21 @@ Updated 2026-11-02T13:24:13Z (paper trading, never real money)
   CA `8s4bNqEztH1JP7mkU747uMr7AckCQdiV47FDqYnDpump`
 
 ## Last scan
-- 13:23Z: 3 coins, 3 with pairs, 0 passed the market filters, 0 researched
+- 13:38Z: 1 coins, 1 with pairs, 0 passed the market filters, 0 researched
 
 ## Coins it looked at, and why it passed
+- 13:36Z Anakin (MIGRATED, $2,556,280 mcap, $2,519 5m vol): PASS at conviction 3, PASS: split crowd. This is the fading second Anakin in a Star Wars vamp field, with $2.5k on the 5m at a $2.5M cap. The leader is Anakin Coin, and this isn't it. (V1, V3, V6)  
+  CA `ExxzYBTt3jwU5MUxuw2F4toYbTLdFwThSjyaCn6Xpump`
+- 13:29Z GATO (MIGRATED, $10,579,768 mcap, $4,662 5m vol): REJECT, Dev holds 3.3% (>1%) (V13, V17)  
+  CA `HsprHxBRgiVaQdRf3TnKNuZZtaX9JUSPgMFdAkk6pump`
+- 13:29Z ANAKIN (MIGRATED, $4,457,901 mcap, $10,616 5m vol): PASS at conviction 3, PASS: third time on ANAKIN, and the $6.05M high is only 1.36x away. Target too close, and I've already used my one re-entry on this coin.  
+  CA `8s4bNqEztH1JP7mkU747uMr7AckCQdiV47FDqYnDpump`
+- 13:28Z GTA6STAR (MIGRATED, $120,449 mcap, $65,499 5m vol): PASS at conviction 2, PASS. It's 3.4% off the high, the last 5m candle is up 51% and flow is 4.2x pace on a 16-minute-old pair. That's three chasing blockers at once. Blocker: "chasing spike" (V1, V6).  
+  CA `9JnYh2Rbww5vypYxaJm98gRRGUZn36M5UPgFY3Fkpump`
+- 13:27Z RELAY (FINAL_STRETCH, $30,304 mcap, $10,550 5m vol): REJECT, Top 10 hold 33.7% ex-pool (>25%) (V13)  
+  CA `7yi43ZRByqKPBZRPoRhEX2Y1221dYB9Ax7fFxXSKpump`
+- 13:25Z WWIII (DIP, $74,167 mcap, $14,404 5m vol): REJECT, RugCheck danger: Creator history of rugged tokens  
+  CA `GD52VfoPZdad4hiNPg4UnjtDGsS4WiM3mqS8j1czpump`
 - 13:16Z CLIPPED (FINAL_STRETCH, $23,296 mcap, $34,158 5m vol): PASS at conviction 3, PASS: chasing spike. A 7-minute-old coin up 117% in 5m at 8x pace, 5% off its high and approaching the pre-bond dump zone. Clean holders don't fix a sniping entry (V1, V5, V6).  
   CA `Bxyp4L6EbDys4fo51qxMEQTx41sj6McnsbPZTdvipump`
 - 13:12Z FRIDGE (FINAL_STRETCH, $21,016 mcap, $4,324 5m vol): PASS at conviction 3, PASS — chasing spike: +42.8% in 5m on a $21k curve coin with $4.3k flow, top 10 at 23.8%, and a fridge meta the radar already calls fading. (V1, V6, V13)  
@@ -85,29 +97,17 @@ Updated 2026-11-02T13:24:13Z (paper trading, never real money)
   CA `SCGBBnSwnekytGFHgyeHHxPMiN7xDxsWFGg9JgFSTNK`
 - 13:04Z BABEL (MIGRATED, $38,923 mcap, $9,239 5m vol): REJECT, Top 10 hold 27.3% ex-pool (>25%) (V13)  
   CA `8JYp1NkAfReWHjW3UGnGuGhib7ZAUpnMHoEZ1kkEpump`
-- 13:00Z YES (MIGRATED, $95,225 mcap, $19,919 5m vol): REJECT, Top 10 hold 26.6% ex-pool (>25%) (V13)  
-  CA `B7Cj19ke2F8S6fazbBvGMxHYNNMYuDaAn3Sn2Zikpump`
-- 12:58Z ber (FINAL_STRETCH, $26,954 mcap, $48,238 5m vol): PASS at conviction 2, PASS — 5-minute-old pair up 698% in 5m with volume at 12x pace; that's chasing a spike on a snipe, not a final-stretch setup. Blocker "too new / chasing spike". (V1, V5, V6)  
-  CA `ETn7wL5VdAKqhgvjR5B7G8DdcYZkW39QQZ3xuaKgpump`
-- 12:55Z DESSA (DIP, $15,189,155 mcap, $2,778 5m vol): PASS at conviction 3, PASS: DESSA is a $15M coin trading $2.8k in 5 minutes at 0.69x its hourly pace. That's under the DIP gate and nowhere near $10k. Blocker: flow below pace (V1, V6).  
-  CA `npz2FhoufQ7pKqhGpaipYWacrAkidyW2yDpVWSvpump`
-- 12:43Z GATO (MIGRATED, $10,938,932 mcap, $4,855 5m vol): REJECT, Dev holds 3.3% (>1%) (V13, V17)  
-  CA `HsprHxBRgiVaQdRf3TnKNuZZtaX9JUSPgMFdAkk6pump`
-- 12:43Z ANAKIN (MIGRATED, $3,841,831 mcap, $9,410 5m vol): PASS at conviction 3, PASS: re-entry limit. ANAKIN has beaten me twice, and it's at $3.84M, under the $3.99M where I last got stopped out and nowhere near reclaiming the $6.05M high. A third try would be revenge trading, not a setup (V8, V1).  
-  CA `8s4bNqEztH1JP7mkU747uMr7AckCQdiV47FDqYnDpump`
-- 12:39Z Anakin (DIP, $2,316,185 mcap, $3,301 5m vol): REJECT, Dip with fading attention is a falling knife, not a dip (5m at 0.52x the hour's pace, under 0.6x)  
-  CA `ExxzYBTt3jwU5MUxuw2F4toYbTLdFwThSjyaCn6Xpump`
 
 ## What its skips did next (last 48h)
 A skip "ran" if the coin reached the first target (1.5x) from the skip price before a 20% drop, "dumped" if the drop came first. Sampled every 10 min, followed 6h.
-- near the high / chasing: blocked 52, ran 3, dumped 41, flat 8, open 0 (saving losses: keep it)
+- near the high / chasing: blocked 53, ran 3, dumped 42, flat 8, open 0 (saving losses: keep it)
   - ran: BBOTS up to 1.51x  
     CA `4TCevs5EC2RFsdWo3YPVifqe9dX2acCGGa9VHNtppump`
   - ran: BLUE up to 1.53x  
     CA `CPoGSmcjprCvzA2MFYLJMpQkGjmgVzKg4RVwMdrzpump`
   - ran: PIRATE up to 2.27x  
     CA `gzQXRwGRzfKLHfaV1f84QT7e5mt4vevu7MgacEfpump`
-- top 10 over 25%: blocked 44, ran 7, dumped 32, flat 2, open 3 (saving losses: keep it)
+- top 10 over 25%: blocked 45, ran 7, dumped 33, flat 2, open 3 (saving losses: keep it)
   - ran: Beaver up to 2.56x  
     CA `5h44wfzwGHFnfVhNKtMLapAJNV9iqqbUgUB2FqyWpump`
   - ran: timmy up to 1.66x  
@@ -128,7 +128,7 @@ A skip "ran" if the coin reached the first target (1.5x) from the skip price bef
     CA `CPoGSmcjprCvzA2MFYLJMpQkGjmgVzKg4RVwMdrzpump`
   - ran: VETOTRUMP up to 1.66x  
     CA `6g16UK4wHoFhC7PCmw8LYYCdt9q8m99fyoAwxeCrpump`
-- RugCheck danger: blocked 29, ran 4, dumped 24, flat 0, open 1 (saving losses: keep it)
+- RugCheck danger: blocked 29, ran 4, dumped 23, flat 0, open 2 (saving losses: keep it)
   - ran: SUGAR up to 1.74x  
     CA `HLzTFsX99uqzAP7uK36gJ2pPHGfRM8ugvxXWJzjSpump`
   - ran: AIC up to 1.6x  
@@ -155,13 +155,11 @@ A skip "ran" if the coin reached the first target (1.5x) from the skip price bef
     CA `9yEKBwczdqoox7Red6GGPTrJ2dUbMvFUagdjxFqHpump`
   - ran: DOJAK up to 2.62x  
     CA `E5aeDjgq6ZSzAmihKoh9JPEhwK2bMCbZLJf6LYT9pump`
-- RugCheck didn't load: blocked 10, ran 3, dumped 5, flat 2, open 0 (mixed)
-  - ran: UNSAFU up to 1.61x  
-    CA `4eq4JfnpdgqZTzeyR3GnRGHJQ3QhQT6Lp7nKnQ2nS7Rv`
-  - ran: billy up to 3.75x  
-    CA `DUTxGHL2LmpfjQaoK6LdZp8WQPoDiwvtDHVDf4fMpump`
-  - ran: whitepaper up to 2.16x  
-    CA `4tEvXHpd6JrCWJGByBS3qFBAtJbeoiEpgvWLw9hkpump`
+- crowd leaving / fading volume: blocked 11, ran 2, dumped 6, flat 2, open 1 (saving losses: keep it)
+  - ran: VETOTRUMP up to 1.66x  
+    CA `6g16UK4wHoFhC7PCmw8LYYCdt9q8m99fyoAwxeCrpump`
+  - ran: Anakinius up to 1.93x  
+    CA `2pKpMwUQXNZeAf93LoomnZSworH3ezFzweCiuvrppump`
 
 ## Rules it changed from results and skips
 - 11-02 08:24Z loosened: DIP gate now sizes by conviction when higher low and pace are confirmed (owner override) (Owner (Oct 30): DIP probation is over, gate at 0.7x pace with no 'rising' needed. I kept the higher-low requirement because 0 for 5 says entry timing is the problem, and only flow below pace is capped at a 6 probe. Also enforced 0.7x in code via dip_min_attention_ratio.)
@@ -191,11 +189,11 @@ Meta: hour-old pump.fun launches bonding fast then holding or dying (BC 'BITCOIN
 ## Moving most in its scans, last 30 min (1h volume)
 - MAMESUKE: $747,146 1h vol, $664,300 mcap, +109% 1h  
   CA `SCGBBnSwnekytGFHgyeHHxPMiN7xDxsWFGg9JgFSTNK`
-- Artifact: $160,178 1h vol, $16,473 mcap, +513% 1h  
+- GTA6STAR: $187,989 1h vol, $120,449 mcap, +205% 1h  
+  CA `9JnYh2Rbww5vypYxaJm98gRRGUZn36M5UPgFY3Fkpump`
+- Artifact: $163,642 1h vol, $22,961 mcap, +754% 1h  
   CA `DvckCkEGw9m2dYuomkrQkfrkXzdXiuwrCXvbvStHpump`
-- YES: $111,654 1h vol, $95,225 mcap, +113% 1h  
-  CA `B7Cj19ke2F8S6fazbBvGMxHYNNMYuDaAn3Sn2Zikpump`
-- wen: $105,526 1h vol, $1,817 mcap, -98% 1h  
-  CA `GGLZzgVssSaW7zKrtNveFYyp2zrkfVTce1TjgPfNpump`
-- Polarbear: $69,432 1h vol, $38,582 mcap, +1312% 1h  
-  CA `4RH4TRGFpVpJsiHDJ2BJGYnnshSRrYtnk365BGMwpump`
+- WWIII: $126,669 1h vol, $74,167 mcap, -62% 1h  
+  CA `GD52VfoPZdad4hiNPg4UnjtDGsS4WiM3mqS8j1czpump`
+- ANAKIN: $122,352 1h vol, $4,457,901 mcap, +19% 1h  
+  CA `8s4bNqEztH1JP7mkU747uMr7AckCQdiV47FDqYnDpump`
