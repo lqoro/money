@@ -1,40 +1,35 @@
 # Trencher live report
 
-Updated 2026-11-02T10:52:50Z (paper trading, never real money)
+Updated 2026-11-02T11:07:57Z (paper trading, never real money)
 
-- Equity: $78.29 (-21.7% vs $100 start)
-- Goal: $1,000 by 2026-11-05 05:03Z (pressing for it): at 7.8% of it, 2.8 days left, needs +151.9% a day from here
-- Closed trades: 20, 3 wins
-- Fees paid: $13.71 (axiom $2.55, network $8.62, pool $2.41), plus $3.76 lost to slippage
+- Equity: $77.09 (-22.9% vs $100 start)
+- Goal: $1,000 by 2026-11-05 05:03Z (pressing for it): at 7.7% of it, 2.7 days left, needs +154.2% a day from here
+- Closed trades: 21, 3 wins
+- Fees paid: $14.04 (axiom $2.63, network $8.81, pool $2.47), plus $3.89 lost to slippage
 - New trades: on
-- Brain: subscription, 542 calls and 0 plan-limit hits in 48h
+- Brain: subscription, 540 calls and 0 plan-limit hits in 48h
 
 ## Scorecard (after fees)
-- 20 closed, 3 won (15%), net $-20.91
-- Per trade (expectancy) $-1.05; avg win $+1.43, avg loss $-1.48
-- Gross $-4.04; costs $16.87 (fees $13.23 + slippage $3.64), on top of a gross loss
-- Give-back: peaked 1.39x on average, banked 0.87x
+- 21 closed, 3 won (14%), net $-22.93
+- Per trade (expectancy) $-1.09; avg win $+1.43, avg loss $-1.51
+- Gross $-5.10; costs $17.83 (fees $13.92 + slippage $3.91), on top of a gross loss
+- Give-back: peaked 1.38x on average, banked 0.87x
 - Hit 1.5x+ and still closed red: 2
   - CPU peaked 1.63x, $-0.43  
     CA `5JbRYEz844bwnKbGx4dRHhrJ6zjrJ194CKdDXtzwgaXo`
   - FLOAT peaked 1.64x, $-0.76  
     CA `Bv1a7cEj5aRnJQhMw4kRQqAFesMSd5LwcDnUzq52BMmr`
 - By exit:
-  - time stop: 9, 1 won, net $-6.22, fees+slip $7.38, peak 1.23x → 0.87x
+  - time stop: 10, 1 won, net $-8.24, fees+slip $8.34, peak 1.22x → 0.87x
   - stop loss: 8, 0 won, net $-18.87, fees+slip $6.78, peak 1.09x → 0.64x
   - trailing stop: 2, 2 won, net $+4.21, fees+slip $2.04, peak 3.32x → 1.72x
   - other: 1, 0 won, net $-0.03, fees+slip $0.67, peak 1.4x → 0.99x
-- To $1,000: $921.71 to go; at $-1.05 a trade this pace doesn't get there
+- To $1,000: $922.91 to go; at $-1.09 a trade this pace doesn't get there
 
 ## Open positions
-- ANAKIN (MIGRATED): cost $10.0, 0.95x, fees $0.36  
-  CA `8s4bNqEztH1JP7mkU747uMr7AckCQdiV47FDqYnDpump`
+- none
 
 ## Recent trades
-- 05:13Z BUY SIS $10.58, fees $0.41  
-  CA `FdKdpz11GsTofLaNiddrhxrsE4APZYSSfLFqQ9YKpump`
-- 05:24Z SELL SIS for $7.27, fees $0.35  
-  CA `FdKdpz11GsTofLaNiddrhxrsE4APZYSSfLFqQ9YKpump`
 - 05:24Z CLOSE SIS -31% ($-3.31), fees $0.76  
   CA `FdKdpz11GsTofLaNiddrhxrsE4APZYSSfLFqQ9YKpump`
 - 05:37Z BUY AAPLCAT $10.00, fees $0.39  
@@ -51,10 +46,12 @@ Updated 2026-11-02T10:52:50Z (paper trading, never real money)
   CA `8s4bNqEztH1JP7mkU747uMr7AckCQdiV47FDqYnDpump`
 - 10:10Z BUY ANAKIN $10.00, fees $0.36  
   CA `8s4bNqEztH1JP7mkU747uMr7AckCQdiV47FDqYnDpump`
+- 10:55Z SELL ANAKIN for $7.98, fees $0.33  
+  CA `8s4bNqEztH1JP7mkU747uMr7AckCQdiV47FDqYnDpump`
+- 10:56Z CLOSE ANAKIN -20% ($-2.02), fees $0.69  
+  CA `8s4bNqEztH1JP7mkU747uMr7AckCQdiV47FDqYnDpump`
 
 ## Last closes
-- HEXN: -27% ($-1.10), stop loss -13% hit (0.86x)  
-  CA `ANVLA6eKiAq4nstD2Sg3SZhfVkSEwfnGccn12UQWpump`
 - HYPERCHAN: -15% ($-1.52), time stop: 45 min and only 0.93x  
   CA `3ApVr1xphYMpi9dn3rpqU4hwvpmCQDVwxET1rdCDpump`
 - HYPERCHAN: -5% ($-0.49), time stop: 45 min and only 1.05x  
@@ -73,9 +70,11 @@ Updated 2026-11-02T10:52:50Z (paper trading, never real money)
   CA `GYKnd6jGUSQoBUnj6LdGCBtCWYDgr2Zd6QwNPcy5pump`
 - ANAKIN: -14% ($-1.43), time stop: 45 min and only 0.94x  
   CA `8s4bNqEztH1JP7mkU747uMr7AckCQdiV47FDqYnDpump`
+- ANAKIN: -20% ($-2.02), time stop: 45 min and only 0.88x  
+  CA `8s4bNqEztH1JP7mkU747uMr7AckCQdiV47FDqYnDpump`
 
 ## Last scan
-- 10:52Z: 5 coins, 4 with pairs, 0 passed the market filters, 0 researched
+- 11:07Z: 6 coins, 5 with pairs, 0 passed the market filters, 0 researched
 
 ## Coins it looked at, and why it passed
 - 10:47Z BOOSTX (FINAL_STRETCH, $31,028 mcap, $26,902 5m vol): REJECT, RugCheck danger: Low Liquidity $9.81  
@@ -129,14 +128,14 @@ A skip "ran" if the coin reached the first target (1.5x) from the skip price bef
     CA `CPoGSmcjprCvzA2MFYLJMpQkGjmgVzKg4RVwMdrzpump`
   - ran: VETOTRUMP up to 1.66x  
     CA `6g16UK4wHoFhC7PCmw8LYYCdt9q8m99fyoAwxeCrpump`
-- RugCheck danger: blocked 27, ran 4, dumped 21, flat 0, open 2 (saving losses: keep it)
+- RugCheck danger: blocked 27, ran 4, dumped 22, flat 0, open 1 (saving losses: keep it)
   - ran: SUGAR up to 1.74x  
     CA `HLzTFsX99uqzAP7uK36gJ2pPHGfRM8ugvxXWJzjSpump`
   - ran: AIC up to 1.6x  
     CA `2T9WZjVC6L3BvusUtjKDT6HcZeEYgU9T5xhfJQxFpump`
   - ran: ZECRET up to 1.62x  
     CA `ChCi2x2bpevrNyeRoPHLXHzmaCdGQPuU15CNqxY1pump`
-- RugCheck didn't load: blocked 19, ran 3, dumped 13, flat 3, open 0 (saving losses: keep it)
+- RugCheck didn't load: blocked 17, ran 3, dumped 12, flat 2, open 0 (saving losses: keep it)
   - ran: UNSAFU up to 1.61x  
     CA `4eq4JfnpdgqZTzeyR3GnRGHJQ3QhQT6Lp7nKnQ2nS7Rv`
   - ran: billy up to 3.75x  
@@ -175,7 +174,6 @@ A skip "ran" if the coin reached the first target (1.5x) from the skip price bef
 - 11-02 08:24Z dropped: Any fee, friction or minimum-size wording (Fees and size are checked in code (target must pay 3x the round trip, round trip at most 20% of size). The current rules already carried none, and none were added back.)
 
 ## Recent lessons
-- [2026-10-30 02:26] I expected the higher-low DIP structure, clean holders and $19k 5m flow with 575 buys to 112 sells to carry HEXN back toward its $0.000589 swing. It only got to 1.17x, then broke the $0.000449 higher low and the -13% stop took me out at 45 min, -27% after fees on a probe. That's fine: my DIP rule put the stop under the higher low and the probe size kept the damage small, and the stop review did its job, since a broken higher low means the thesis is dead. What doesn't fit is this is my second HEXN loss, and both times the story was a thin tech LARP (V1). So next time, on a DIP where volume is under the hourly pace and the narrative is weak, I'll want a fresh volume surge before buying, not just a clean structure, because dips recover on attention, not on holder tables (Soul belief 7, V1).
 - [2026-10-30 09:52] Expected: HYPERCHAN, the clear leader of a 20-copy vamp field and 13.5% off its high, would retest $2.28M or break out. I bought a probe anyway, with 5m volume under $10k and only 0.73x its hourly pace. Happened: it never went green (peak 0.99x), and the 45-min time stop closed it at -15% (V1). That confirms my existing shallow-band rule rather than adding a new one: in the 10–20% band, being the vamp leader (V1, V2) doesn't waive the volume gate (5m at least $10k and at or above hourly pace, V1/V6), and probe size isn't a way around a failed rule, so next time that's a PASS with the blocker "flow below pace".
 - [2026-10-30 10:53] Expected: HYPERCHAN, the clean flow leader of the HYPE meta at about $2M, would break its 4-hour range and run toward $3M. What happened: it peaked at 1.18x, never broke out, and the 45-minute time stop sold it at 1.05x on market cap, which is still a 4.9% loss after fees. The shallow-band leader rule did its job (clean holders, real flow, no dump), so it stays. What failed was the clock: my written rule is to exit if still under 1.0x at 45 min, but this one closed green on market cap, and a 1.5x move on a $2M coin rarely happens in 45 minutes (V1 talks about small new pairs, V6 about $70k–$11M runners). Next time, for MIGRATED entries above about $1M that are holding their range, give the time stop more room (about 90 min) and still exit if price closes back under the range low. One flat scratch is a sample of one, not a reason to drop the setup.
 - [2026-10-30 21:37] Expected PILLSEY, the flow leader in the pump.fun meta at $125k 5m, to break its $414k high toward 1.5x; it peaked at 1.32x, never reached initials, fell back through the -20% stop inside 18 minutes, and the half-hold on review only made the loss bigger (-31%). It sat about 20% under the high, so it passed my pullback rule, but I bought right after a +31% five-minute candle at 4.2x the hourly pace, which is chasing a spike, not buying a pullback (V1, V6), and it fits my "near-high skips mostly dump" data. Next time a coin that is up more than ~25% in the last 5 minutes counts as "chasing" even if it's 20% off the high: wait for that candle to retrace and a higher low to form. And once a trade has hit ~1.3x, an early-shakeout stop review sells all of it instead of trimming half.
@@ -185,18 +183,19 @@ A skip "ran" if the coin reached the first target (1.5x) from the skip price bef
 - [2026-11-01 05:24] Expected: SIS, the original SpaceX "SI" rebrand coin, to bounce off a higher low at 0.000679 to 1.5x initials, with $42.5k on the 5m at 1.16x pace and clean holders. What happened: it peaked at 1.01x, broke the higher low within 11 minutes, and the stop review read narrative_dead and sold at −31% for −$3.31, which makes DIPs 0 for 5. This confirms my rules that a DIP needs a confirmed higher low and that stop reviews sell at once (V1). It also confirms that a story already half-priced at $760k after $3.2M of 24h volume is a crowd leaving, not arriving, so next time a DIP whose catalyst has already printed (a news rebrand) rates a probe at most until the reclaim above the pullback high prints (V1, V5).
 - [2026-11-01 06:19] Expected AAPLCAT, 36% off its $1.8M high with a printed higher-low base, clean holders and $12.6k on the 5m, to retest the peak at about 1.57x. It peaked at 1.01x, broke the 0.000981 higher low, and the "unclear" stop review sold at −31% instead of −20%. That makes 7 of 7 stop reviews closing worse than the stop. This confirms my existing rules rather than adding a new one: the proven band needs 5m at or above the hourly pace and a meta with the crowd still arriving (V1, V6). I bought with pace under the hourly average and a cooling meta, so next time a band entry with flow below pace is a PASS (blocker "flow below pace"), not a probe, and a broken higher low sells right away.
 - [2026-11-02 08:22] I expected ANAKIN, the clean 5m-volume leader 34% off its $6.05M high with a 63% buy share, to retest the high for about 1.5x. It never reached 1.05x, the time stop sold it at 0.95x on mcap, and fees plus slippage turned that into −14%. I took the buy share as the bounce and never saw a printed higher low, so the money shape was only half there. The lesson backs my existing rule, not a new ban: a buy share is not a higher low (V1 says big buys on a dip are bullish, but only once they hold a level). Next time a MIGRATED dip buy needs a printed higher low above the hourly low before entry, and the 45-minute time stop did its job by cutting it small.
+- [2026-11-02 10:56] I re-entered ANAKIN at $4.49M expecting a breakout through the 0.0043 range high to carry toward a retest of the $6.05M peak. That target was only 1.35x away, so I sized it as a probe. It peaked at 1.08x, failed back into the range and hit the 45-minute time stop at 0.88x for −20%. This was my second loss on the same coin and it backs my existing re-entry rule rather than adding a new one: buying back a coin that already burned me needs it to reclaim its prior high (here the $6.05M peak) with flow at or above pace, and a range-high break 1.35x under that peak is a mid-range entry (V1 plan the exit, V6 only trade when everything lines up).
 
 ## Meta right now
 The meta right now is brand-new pump.fun launches, under 30 minutes old, that run 5-7x in their first hour, and they die about as fast as they rise. The live ones are BOOSTX ($32k, $25.5k on the 5m, buy ratio 0.71, +667%), thisman ($21k, $10.3k on the 5m) and flow ($22k, $7.6k on the 5m). The hour-old wave behind them has already rolled over: VALOR is at $8k with $296 on the 5m, HAMMER at $7k with $843, Judah at $0, and Bert has cooled to $103k with $6.9k on the 5m and -4% on the hour. My radar's own summary is stale. The war-joke theme (WWIII at $2.1k on the 5m, MEMES) and Star Wars (ANAKIN at $3M with only $3k on the 5m) are both fading under the $10k bar (V1, V6). Setups to research now: BOOSTX and thisman as FINAL_STRETCH, but BOOSTX's CA doesn't end in "pump" and the flow is 12 minutes old, so holder and bundle checks decide it, not the chart (V3, V13). Bert goes on the watchlist as a possible DIP only if 5m volume comes back to at least 0.7x its hourly pace. PASS on HAMMER, VALOR, WWIII and ANAKIN; the blocker for all four is 5m volume under the bar. Owner, heard: I'll rate clean setups 8 if they earn it, but a Nov 5 deadline doesn't make a 12-minute-old coin cleaner.
 
 ## Moving most in its scans, last 30 min (1h volume)
-- Bert: $408,555 1h vol, $103,272 mcap, -4% 1h  
-  CA `EPcHDXD3P23KcQsHyZYZLAx8odhgh1ELNnGL5szgpump`
-- ww3: $141,625 1h vol, $1,816 mcap, -99% 1h  
-  CA `zttJSZyD67hzNrJ1RKKUsZ1Hya4vfxYRjdQABvppump`
-- GATO: $136,369 1h vol, $9,020,548 mcap, -8% 1h  
-  CA `HsprHxBRgiVaQdRf3TnKNuZZtaX9JUSPgMFdAkk6pump`
-- NOTHING: $77,103 1h vol, $7,703 mcap, -8% 1h  
-  CA `GvaRQbKqsjkcgTmZbaYfuSaJRin5A27JV298MdQbpump`
 - BOOSTX: $76,713 1h vol, $32,440 mcap, +667% 1h  
   CA `7F3N3U5Dpg1dVrtes5SxxTp3VXcvBcXrbKtuwuGbqE8f`
+- NOTHING: $60,832 1h vol, $7,076 mcap, -19% 1h  
+  CA `GvaRQbKqsjkcgTmZbaYfuSaJRin5A27JV298MdQbpump`
+- ww3: $47,531 1h vol, $1,816 mcap, -99% 1h  
+  CA `zttJSZyD67hzNrJ1RKKUsZ1Hya4vfxYRjdQABvppump`
+- BUNK: $43,100 1h vol, $15,808 mcap, -28% 1h  
+  CA `F17yBcN7vhxNdWmSmoLf3FZc7Y4UdyvW2i7NdMFeSQqw`
+- DESSA: $40,358 1h vol, $14,916,366 mcap, +4% 1h  
+  CA `npz2FhoufQ7pKqhGpaipYWacrAkidyW2yDpVWSvpump`
