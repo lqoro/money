@@ -1,13 +1,13 @@
 # Trencher live report
 
-Updated 2026-11-02T17:12:36Z (paper trading, never real money)
+Updated 2026-11-02T17:28:13Z (paper trading, never real money)
 
 - Equity: $77.09 (-22.9% vs $100 start)
-- Goal: $1,000 by 2026-11-05 05:03Z (pressing for it): at 7.7% of it, 2.5 days left, needs +179.5% a day from here
+- Goal: $1,000 by 2026-11-05 05:03Z (pressing for it): at 7.7% of it, 2.5 days left, needs +180.8% a day from here
 - Closed trades: 21, 3 wins
 - Fees paid: $14.04 (axiom $2.63, network $8.81, pool $2.47), plus $3.89 lost to slippage
 - New trades: on
-- Brain: subscription, 502 calls and 0 plan-limit hits in 48h
+- Brain: subscription, 499 calls and 0 plan-limit hits in 48h
 
 ## Scorecard (after fees)
 - 21 closed, 3 won (14%), net $-22.93
@@ -74,9 +74,15 @@ Updated 2026-11-02T17:12:36Z (paper trading, never real money)
   CA `8s4bNqEztH1JP7mkU747uMr7AckCQdiV47FDqYnDpump`
 
 ## Last scan
-- 17:12Z: 6 coins, 6 with pairs, 2 passed the market filters, 2 researched
+- 17:27Z: 4 coins, 4 with pairs, 2 passed the market filters, 2 researched
 
 ## Coins it looked at, and why it passed
+- 17:27Z RICO (MIGRATED, $55,690 mcap, $5,195 5m vol): REJECT, RugCheck danger: Creator history of rugged tokens  
+  CA `8kuQg3WivDtL85VEdw2jEmSXjYt6EEeYBATJ4DtQpump`
+- 17:27Z jeff (DIP, $1,025,339 mcap, $5,196 5m vol): REJECT, Top 10 hold 39.5% ex-pool (>25%) (V13)  
+  CA `HAsTKXYvv65zM7J6Cu5o5PcZsiKMQYo5oz4WPjgqwP6k`
+- 17:16Z ANAKIN (DIP, $3,126,360 mcap, $8,674 5m vol): REJECT, Dip with fading attention is a falling knife, not a dip (5m at 0.08x the hour's pace, under 0.6x)  
+  CA `8s4bNqEztH1JP7mkU747uMr7AckCQdiV47FDqYnDpump`
 - 17:12Z FEAR (DIP, $111,154 mcap, $34,829 5m vol): REJECT, Bundles: 10 linked wallet cluster(s) hold 34.7% of supply (>20%) (V17)  
   CA `3Z8mK9QRy3ZphSTqoi1Duzok8an4WCND9XrHWfgKpump`
 - 17:12Z Slingoor (MIGRATED, $2,034,700 mcap, $34,147 5m vol): REJECT, RugCheck danger: Top 10 holders high ownership  
@@ -91,51 +97,45 @@ Updated 2026-11-02T17:12:36Z (paper trading, never real money)
   CA `ExxzYBTt3jwU5MUxuw2F4toYbTLdFwThSjyaCn6Xpump`
 - 16:57Z MAMESUKE (DIP, $925,978 mcap, $21,988 5m vol): REJECT, RugCheck danger: Large Amount of LP Unlocked 80.47%  
   CA `SCGBBnSwnekytGFHgyeHHxPMiN7xDxsWFGg9JgFSTNK`
-- 16:47Z GATO (MIGRATED, $10,727,133 mcap, $2,679 5m vol): REJECT, Dev holds 3.3% (>1%) (V13, V17)  
-  CA `HsprHxBRgiVaQdRf3TnKNuZZtaX9JUSPgMFdAkk6pump`
-- 16:46Z ALON (MIGRATED, $148,217 mcap, $73,899 5m vol): REJECT, RugCheck danger: Single holder ownership 60.90%  
-  CA `5uo1mMxffwCYpdCimWeP16EyW1JGpw2vbtNnem1Hpump`
-- 16:44Z DIGS (MIGRATED, $70,640 mcap, $2,331 5m vol): REJECT, Dev holds 3.2% (>1%) (V13, V17)  
-  CA `9QT8K685Hrae4k11dhGXirdtpfAaimExtyfwt8cPpump`
 
 ## What its skips did next (last 48h)
 A skip "ran" if the coin reached the first target (1.5x) from the skip price before a 20% drop, "dumped" if the drop came first. Sampled every 10 min, followed 6h.
-- near the high / chasing: blocked 51, ran 3, dumped 41, flat 6, open 1 (saving losses: keep it)
+- near the high / chasing: blocked 50, ran 3, dumped 40, flat 6, open 1 (saving losses: keep it)
   - ran: BBOTS up to 1.51x  
     CA `4TCevs5EC2RFsdWo3YPVifqe9dX2acCGGa9VHNtppump`
   - ran: BLUE up to 1.53x  
     CA `CPoGSmcjprCvzA2MFYLJMpQkGjmgVzKg4RVwMdrzpump`
   - ran: PIRATE up to 2.27x  
     CA `gzQXRwGRzfKLHfaV1f84QT7e5mt4vevu7MgacEfpump`
-- top 10 over 25%: blocked 45, ran 7, dumped 34, flat 2, open 2 (saving losses: keep it)
+- top 10 over 25%: blocked 44, ran 7, dumped 33, flat 2, open 2 (saving losses: keep it)
   - ran: Beaver up to 2.56x  
     CA `5h44wfzwGHFnfVhNKtMLapAJNV9iqqbUgUB2FqyWpump`
   - ran: timmy up to 1.66x  
     CA `TiMSdJrkVwUpeEWJpuqRvHt4wVS7uH77LbNPGGVJXNw`
   - ran: WASTED up to 1.93x  
     CA `GexThZHgaswpAQ7Fi8QrHFubjPimUNSYhJiAA7XZpump`
-- too new / sniping: blocked 44, ran 8, dumped 35, flat 0, open 1 (saving losses: keep it)
+- too new / sniping: blocked 44, ran 9, dumped 35, flat 0, open 0 (saving losses: keep it)
   - ran: onlypump up to 1.92x  
     CA `J73efZvH6rkrJbFJdP2rqe473YJW7tyWmrNARUSzpump`
   - ran: paws up to 1.51x  
     CA `CCF6ui6YjjhLaVtuYLH8b5jza8jHathqww5VbrMapump`
   - ran: VETOTRUMP up to 1.66x  
     CA `6g16UK4wHoFhC7PCmw8LYYCdt9q8m99fyoAwxeCrpump`
-- RugCheck danger: blocked 33, ran 4, dumped 26, flat 0, open 3 (saving losses: keep it)
+- RugCheck danger: blocked 33, ran 4, dumped 27, flat 0, open 2 (saving losses: keep it)
   - ran: SUGAR up to 1.74x  
     CA `HLzTFsX99uqzAP7uK36gJ2pPHGfRM8ugvxXWJzjSpump`
   - ran: AIC up to 1.6x  
     CA `2T9WZjVC6L3BvusUtjKDT6HcZeEYgU9T5xhfJQxFpump`
   - ran: ZECRET up to 1.62x  
     CA `ChCi2x2bpevrNyeRoPHLXHzmaCdGQPuU15CNqxY1pump`
-- falling knife (code): blocked 30, ran 6, dumped 23, flat 1, open 0 (saving losses: keep it)
+- falling knife (code): blocked 31, ran 6, dumped 23, flat 1, open 1 (saving losses: keep it)
   - ran: KIM up to 1.55x  
     CA `8pjfN5Ayb4rucGpYE3tZWN6v3EysizjPx1v62zx1pump`
   - ran: BLUE up to 1.53x  
     CA `CPoGSmcjprCvzA2MFYLJMpQkGjmgVzKg4RVwMdrzpump`
   - ran: VETOTRUMP up to 1.66x  
     CA `6g16UK4wHoFhC7PCmw8LYYCdt9q8m99fyoAwxeCrpump`
-- bundles over the line: blocked 14, ran 2, dumped 9, flat 2, open 1 (saving losses: keep it)
+- bundles over the line: blocked 14, ran 2, dumped 10, flat 2, open 0 (saving losses: keep it)
   - ran: Nuts up to 1.53x  
     CA `APH9FRoKst66E4a7uZXcEfE8NjtwybUC8Jq7ue8upump`
   - ran: NA up to 1.97x  
@@ -153,21 +153,21 @@ A skip "ran" if the coin reached the first target (1.5x) from the skip price bef
     CA `9yEKBwczdqoox7Red6GGPTrJ2dUbMvFUagdjxFqHpump`
   - ran: DOJAK up to 2.62x  
     CA `E5aeDjgq6ZSzAmihKoh9JPEhwK2bMCbZLJf6LYT9pump`
-- other: blocked 10, ran 2, dumped 6, flat 1, open 1 (saving losses: keep it)
+- other: blocked 10, ran 2, dumped 7, flat 1, open 0 (saving losses: keep it)
   - ran: thisman up to 1.6x  
     CA `6d6J2kWJiimgqmxjLVTu31hxDyBFt2zBguYdjSripump`
   - ran: Slingoor up to 1.58x  
     CA `AYDL7DTa6AidQ1nUSAEAnzVAFDDewDXbSyy8Hh2wpump`
 
 ## Rules it changed from results and skips
-- 11-02 08:24Z dropped: Any fee, friction or minimum-size wording (Fees and size are checked in code (target must pay 3x the round trip, round trip at most 20% of size). The current rules already carried none, and none were added back.)
-- 11-02 11:20Z added: Entries above ~$1M mcap capped at 7 and need the first resistance at least 1.5x away (10 entries above ~$1M (CATBOT buy-back, FLOAT, HYPERCHAN x2, Leverhedge, PAWCAT, AAPLCAT, ANAKIN x2, Something): 0 wins, one +0.7% scratch, about −15% average. Only FLOAT got past 1.5x.)
 - 11-02 11:20Z tightened: DIP gate merged with the higher-low rule; flow at least 0.7x pace (DIPs are 0 for 5 (−$6.70). Falling-knife (code) skips: 23 of 29 dumped. No-higher-low skips: 12 of 16 dumped. This now matches the owner's 0.7x gate and the parameter.)
 - 11-02 11:20Z tightened: Time stop: dropped the 90-minute extension for >$1M coins (Holding past the time stop lost both times: FLOAT at 158 min, −24.5%, and Leverhedge at 76 min, −3.2%. No time-stopped trade later became a winner.)
 - 11-02 11:20Z tightened: Stops sell with no review; re-entry at most once per coin, only on a prior-high reclaim (8 of 8 stop reviews closed worse than the stop. Re-entries are 0 for 4.)
 - 11-02 11:20Z dropped: Separate DIP gate bullet (Merged into the DIP higher-low rule to stay at 15 bullets; nothing was lost.)
 - 11-02 14:24Z loosened: RugCheck not loading: moved out of the hard blocks and now allows a probe (max 6) when the dossier's top-10 and dev numbers are clean, mcap is under $1M and the setup is the money shape (Skip review: 6 blocked, 3 ran (UNSAFU, billy, whitepaper), 2 dumped, 1 flat. This block cost more winners than it saved. It's not a soul hard line: the soul says an unverified check is weighed as risk and handled with a probe. Small sample, so it's a probe only, not full size.)
 - 11-02 14:24Z dropped: Leftover fee/size wording (the $5 minimum, friction gate, 1.08x 'covers round trip' extension test) (The code fee check now owns cost and size. Per the owner, any flat fee or size rule is removed from my learned rules.)
+- 11-02 17:27Z tightened: Time stop exception limited to one 15-minute extension with a live surge (The old wording said both 'no extensions' and 'unless a surge prints', which contradict each other. Every extension so far lost: FLOAT 158 min −24.5%, Leverhedge 76 min −3.2%.)
+- 11-02 17:27Z dropped: Retired fee/size annotations on the money-shape and RugCheck rules (The code fee check owns friction and minimum size, so these notes are removed from the rule text.)
 
 ## Recent lessons
 - [2026-10-30 09:52] Expected: HYPERCHAN, the clear leader of a 20-copy vamp field and 13.5% off its high, would retest $2.28M or break out. I bought a probe anyway, with 5m volume under $10k and only 0.73x its hourly pace. Happened: it never went green (peak 0.99x), and the 45-min time stop closed it at -15% (V1). That confirms my existing shallow-band rule rather than adding a new one: in the 10–20% band, being the vamp leader (V1, V2) doesn't waive the volume gate (5m at least $10k and at or above hourly pace, V1/V6), and probe size isn't a way around a failed rule, so next time that's a PASS with the blocker "flow below pace".
@@ -185,13 +185,13 @@ A skip "ran" if the coin reached the first target (1.5x) from the skip price bef
 Star Wars and clone swarms are the meta. Anakin ($6.3M, 18h, +117% on the hour, 5m volume $283k at about 2.5x pace, 0.58 buys) leads; I'd enter it as MIGRATED only on a 10%+ pullback from the local high, not chase it. Clone swarms: two Slingoor copies (the $855k one is cooling at about 0.36x pace) and two BUY THE FEAR copies (the older $128k one holds about 0.7x pace). FEAR is a candidate only if research confirms it's the original. Japanese dogs are fading: Korosuke is down to about 0.33x pace and Marutaro is off the list. Skipping THE KOL (6 minutes old), sub-$20k pump.fun pairs, the political $LAPTOP coin (down about 98%) and the Binance hack story.
 
 ## Moving most in its scans, last 30 min (1h volume)
+- ANAKIN: $1,381,355 1h vol, $3,171,966 mcap, +2% 1h  
+  CA `8s4bNqEztH1JP7mkU747uMr7AckCQdiV47FDqYnDpump`
 - Slingoor: $803,070 1h vol, $1,971,672 mcap, +136% 1h  
   CA `9rZR9nCQbaiBvotWVpifN8z1vckVFshnsATuAJrXpump`
 - FEAR: $515,160 1h vol, $96,303 mcap, +63% 1h  
   CA `3Z8mK9QRy3ZphSTqoi1Duzok8an4WCND9XrHWfgKpump`
-- MAMESUKE: $229,322 1h vol, $944,041 mcap, -37% 1h  
-  CA `SCGBBnSwnekytGFHgyeHHxPMiN7xDxsWFGg9JgFSTNK`
-- ALON: $164,960 1h vol, $148,217 mcap, +188% 1h  
-  CA `5uo1mMxffwCYpdCimWeP16EyW1JGpw2vbtNnem1Hpump`
+- KOROSUKE: $215,295 1h vol, $1,929 mcap, -99% 1h  
+  CA `7ha4HFgdvkXaDcR2biCsuBpoCZzoLSRjb5we34Gbpump`
 - Slingoor: $139,406 1h vol, $140,277 mcap, +203% 1h  
   CA `AYDL7DTa6AidQ1nUSAEAnzVAFDDewDXbSyy8Hh2wpump`
