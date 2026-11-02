@@ -1,13 +1,13 @@
 # Trencher live report
 
-Updated 2026-11-02T23:31:32Z (paper trading, never real money)
+Updated 2026-11-02T23:46:45Z (paper trading, never real money)
 
 - Equity: $74.23 (-25.8% vs $100 start)
-- Goal: $1,000 by 2026-11-05 05:03Z (pressing for it): at 7.4% of it, 2.2 days left, needs +220.9% a day from here
+- Goal: $1,000 by 2026-11-05 05:03Z (pressing for it): at 7.4% of it, 2.2 days left, needs +222.7% a day from here
 - Closed trades: 22, 3 wins
 - Fees paid: $14.78 (axiom $2.81, network $9.18, pool $2.66), plus $4.15 lost to slippage
 - New trades: on
-- Brain: subscription, 496 calls and 0 plan-limit hits in 48h
+- Brain: subscription, 498 calls and 0 plan-limit hits in 48h
 
 ## Scorecard (after fees)
 - 22 closed, 3 won (14%), net $-25.79
@@ -74,9 +74,15 @@ Updated 2026-11-02T23:31:32Z (paper trading, never real money)
   CA `H4gHnZ3NCU7Z9XQwGX6YYJNyieGEW8pqwGRUcdSxpump`
 
 ## Last scan
-- 23:31Z: 6 coins, 4 with pairs, 2 passed the market filters, 2 researched
+- 23:46Z: 3 coins, 2 with pairs, 0 passed the market filters, 0 researched
 
 ## Coins it looked at, and why it passed
+- 23:45Z Anakin (DIP, $1,313,106 mcap, $8,571 5m vol): PASS at conviction 3, PASS — third-largest Anakin in a Star Wars meta my radar already called dead, and buying it here chases a 3.7x-pace spike with no higher low. Blocker: split crowd / dead story (V1, V3).  
+  CA `ExxzYBTt3jwU5MUxuw2F4toYbTLdFwThSjyaCn6Xpump`
+- 23:44Z WASTED (MIGRATED, $1,387,969 mcap, $4,070 5m vol): REJECT, Dev holds 3.0% (>1%) (V13, V17)  
+  CA `GexThZHgaswpAQ7Fi8QrHFubjPimUNSYhJiAA7XZpump`
+- 23:33Z Looong (DIP, $133,476 mcap, $85,777 5m vol): PASS at conviction 3, PASS — 13-minute-old dog with a +96% 5m candle at 5.3x pace. That's a spike, not a dip. Blocker "chasing spike" / "too new" (V1, V5).  
+  CA `2LChwWUqp9bby4bsLaJrKX5y4LpYzaaMzMvPBwjupump`
 - 23:31Z RICO (DIP, $190,058 mcap, $4,464 5m vol): REJECT, Dip with fading attention is a falling knife, not a dip (5m at 0.47x the hour's pace, under 0.6x)  
   CA `8kuQg3WivDtL85VEdw2jEmSXjYt6EEeYBATJ4DtQpump`
 - 23:31Z GLITCH (MIGRATED, $3,632,176 mcap, $15,795 5m vol): REJECT, Top 10 hold 28.1% ex-pool (>25%) (V13)  
@@ -91,16 +97,10 @@ Updated 2026-11-02T23:31:32Z (paper trading, never real money)
   CA `9rZR9nCQbaiBvotWVpifN8z1vckVFshnsATuAJrXpump`
 - 23:20Z HAMSTER (MIGRATED, $242,323 mcap, $18,624 5m vol): PASS at conviction 3, PASS: 8.8% off a 46-minute-old high with 5m flow at 0.53x pace. That's chasing a fading candle and I'd be exit liquidity (V1, V6).  
   CA `7gCND4jhgJ8Mq1XxNhRdercinXh7fcCDPjA9uEQLk3f2`
-- 23:17Z ZERO (MIGRATED, $237,506 mcap, $12,590 5m vol): PASS at conviction 3, PASS — flow below pace (0.56x) and red 5m, 10% off the high with no breakout; 13-copy ticker, bare 2.5-day site with no CA. Blockers: "flow below pace" / "no breakout" (V1, V6).  
-  CA `Aes6XNH9BboLZuchD5PnDwaX6Zj1nU79TU3gNtPEpump`
-- 23:06Z ᑓହꚡई (DIP, $104,880 mcap, $34,206 5m vol): PASS at conviction 3, PASS — 53 minutes old, -39% on the 5m, sitting on the hourly low with no higher low printed. That's a falling knife, not a dip (V1).  
-  CA `7kYXsF59Cc3HBjL1mW5y9eutEWYh3dTUuvBvnNV7pump`
-- 23:02Z HEDGE (MIGRATED, $104,285 mcap, $27,250 5m vol): PASS at conviction 2, PASS: falling knife, −42% on the 5m, 4% above the hourly low, no higher low, sellers in charge (V1, V6). Blocker: no higher low.  
-  CA `wDSAqt4tEZpDAwB9XY6ejkZvMFuT1zUMjUh67txeYhf`
 
 ## What its skips did next (last 48h)
 A skip "ran" if the coin reached the first target (1.5x) from the skip price before a 20% drop, "dumped" if the drop came first. Sampled every 10 min, followed 6h.
-- too new / sniping: blocked 53, ran 11, dumped 41, flat 0, open 1 (saving losses: keep it)
+- too new / sniping: blocked 54, ran 11, dumped 43, flat 0, open 0 (saving losses: keep it)
   - ran: onlypump up to 1.92x  
     CA `J73efZvH6rkrJbFJdP2rqe473YJW7tyWmrNARUSzpump`
   - ran: paws up to 1.51x  
@@ -112,13 +112,13 @@ A skip "ran" if the coin reached the first target (1.5x) from the skip price bef
     CA `CPoGSmcjprCvzA2MFYLJMpQkGjmgVzKg4RVwMdrzpump`
   - ran: PIRATE up to 2.27x  
     CA `gzQXRwGRzfKLHfaV1f84QT7e5mt4vevu7MgacEfpump`
-- top 10 over 25%: blocked 47, ran 6, dumped 36, flat 3, open 2 (saving losses: keep it)
-  - ran: timmy up to 1.66x  
-    CA `TiMSdJrkVwUpeEWJpuqRvHt4wVS7uH77LbNPGGVJXNw`
+- top 10 over 25%: blocked 46, ran 5, dumped 37, flat 3, open 1 (saving losses: keep it)
   - ran: TIPPER up to 1.55x  
     CA `3DEcz7AnmJiGSnDHYvUeX5uPMMHVcDwqrWRSGdHEpump`
   - ran: Capri up to 1.84x  
     CA `6qhnbvdJuWVUQ7EQpgz5GNraV7pty7cqc8MmfQTEpump`
+  - ran: PEAKY up to 1.53x  
+    CA `2EQxezWgXPRU6V3UD7DKr5m12mxqeFGPWNRx9wbqy9fC`
 - falling knife (code): blocked 32, ran 5, dumped 22, flat 1, open 4 (saving losses: keep it)
   - ran: BLUE up to 1.53x  
     CA `CPoGSmcjprCvzA2MFYLJMpQkGjmgVzKg4RVwMdrzpump`
@@ -126,14 +126,14 @@ A skip "ran" if the coin reached the first target (1.5x) from the skip price bef
     CA `6g16UK4wHoFhC7PCmw8LYYCdt9q8m99fyoAwxeCrpump`
   - ran: STEALTH up to 1.77x  
     CA `GoDSW31bTxfkoup9yA1qcGGx9RMXdTEWgApv3xzBmoA`
-- RugCheck danger: blocked 27, ran 5, dumped 21, flat 0, open 1 (saving losses: keep it)
+- RugCheck danger: blocked 27, ran 6, dumped 21, flat 0, open 0 (saving losses: keep it)
   - ran: AIC up to 1.6x  
     CA `2T9WZjVC6L3BvusUtjKDT6HcZeEYgU9T5xhfJQxFpump`
   - ran: ZECRET up to 1.62x  
     CA `ChCi2x2bpevrNyeRoPHLXHzmaCdGQPuU15CNqxY1pump`
   - ran: Bitboy up to 1.6x  
     CA `GvXhSHnWrkAasjAUZeRzRfUBV2BJiiduaHarCWAEpump`
-- flow below pace: blocked 19, ran 3, dumped 13, flat 0, open 3 (saving losses: keep it)
+- flow below pace: blocked 19, ran 4, dumped 13, flat 0, open 2 (saving losses: keep it)
   - ran: Ahsoka up to 1.54x  
     CA `4nuj5NLHMtQSezfmz6CwBpCRJisFie6F6MxNNz1dpump`
   - ran: KOROSUKE up to 1.54x  
@@ -162,14 +162,14 @@ A skip "ran" if the coin reached the first target (1.5x) from the skip price bef
     CA `7uwr9Zoz8WW9UyRVC22nmmAXRbPoFTUpVjsN8q7kids`
 
 ## Rules it changed from results and skips
-- 11-02 11:20Z dropped: Separate DIP gate bullet (Merged into the DIP higher-low rule to stay at 15 bullets; nothing was lost.)
-- 11-02 14:24Z loosened: RugCheck not loading: moved out of the hard blocks and now allows a probe (max 6) when the dossier's top-10 and dev numbers are clean, mcap is under $1M and the setup is the money shape (Skip review: 6 blocked, 3 ran (UNSAFU, billy, whitepaper), 2 dumped, 1 flat. This block cost more winners than it saved. It's not a soul hard line: the soul says an unverified check is weighed as risk and handled with a probe. Small sample, so it's a probe only, not full size.)
-- 11-02 14:24Z dropped: Leftover fee/size wording (the $5 minimum, friction gate, 1.08x 'covers round trip' extension test) (The code fee check now owns cost and size. Per the owner, any flat fee or size rule is removed from my learned rules.)
 - 11-02 17:27Z tightened: Time stop exception limited to one 15-minute extension with a live surge (The old wording said both 'no extensions' and 'unless a surge prints', which contradict each other. Every extension so far lost: FLOAT 158 min −24.5%, Leverhedge 76 min −3.2%.)
 - 11-02 17:27Z dropped: Retired fee/size annotations on the money-shape and RugCheck rules (The code fee check owns friction and minimum size, so these notes are removed from the rule text.)
 - 11-02 20:34Z tightened: MIGRATED with no printed higher low is a PASS (merged with flow-below-pace) (8 of 22 entries peaked ≤1.01x (SI, HEXN, HYPERCHAN, BLUE, SIS, AAPLCAT, Slingoor, ANAKIN), all bought without a printed higher low. 'Falling knife / no higher low' skips: 12 blocked, 1 ran, 8 dumped. Flow-below-pace skips: 16 blocked, 2 ran, 11 dumped.)
 - 11-02 20:34Z loosened: DIP sizing: probation over, size by conviction when all gates pass (Owner override (Oct 30). Gates kept because DIPs went 0 for 5, all entered before the structure confirmed. The flow gate now matches the code param at 0.7.)
 - 11-02 20:34Z dropped: All retired fee/size/minimum-position fragments (The code fee check owns this (3x round-trip on the first target, ≤20% friction). Exits (1.5x initials, 20% stop, 35% trail) are owner-set and not restated.)
+- 11-02 23:38Z tightened: DIP gate: flow at least 0.7x the hourly pace plus a printed higher low (DIPs 0 for 5 (-$6.70), every one bought before the higher low held (HEXN x2, SIS, Something, Leverhedge). The code line is now aligned to the owner's 0.7x.)
+- 11-02 23:38Z dropped: Never-green cut at under 0.92x in the first 10 minutes (It works as a tighter stop than the owner's code-enforced 20%, which I was told not to set. Replaced by a thesis exit (sell when the printed higher low breaks) plus the existing time-based check at minute 10 (under 1.05x with flow under pace).)
+- 11-02 23:38Z added: Thesis exit: sell when the printed higher low the entry rested on breaks (HEXN #2, SIS and AAPLCAT all broke the higher low first and then slid through the stop to -27% to -31%. This exit is set by structure, not by a percent.)
 
 ## Recent lessons
 - [2026-10-30 10:53] Expected: HYPERCHAN, the clean flow leader of the HYPE meta at about $2M, would break its 4-hour range and run toward $3M. What happened: it peaked at 1.18x, never broke out, and the 45-minute time stop sold it at 1.05x on market cap, which is still a 4.9% loss after fees. The shallow-band leader rule did its job (clean holders, real flow, no dump), so it stays. What failed was the clock: my written rule is to exit if still under 1.0x at 45 min, but this one closed green on market cap, and a 1.5x move on a $2M coin rarely happens in 45 minutes (V1 talks about small new pairs, V6 about $70k–$11M runners). Next time, for MIGRATED entries above about $1M that are holding their range, give the time stop more room (about 90 min) and still exit if price closes back under the range low. One flat scratch is a sample of one, not a reason to drop the setup.
@@ -187,13 +187,13 @@ A skip "ran" if the coin reached the first target (1.5x) from the skip price bef
 The meta has moved to dogs and GTA6 animals, and Star Wars is finished. The crawler's own summary is stale: Darth Vader is now $1.9k after a -95% hour, so that was a farm, not a setup (V13), and Anakin is drifting at $3k on the 5m. The dog swarm is the one getting fresh buyers. TikTok dog is 12 minutes old at $234k with $54k on the 5m and a 0.90 buy ratio, iNu is bleeding at a 0.41 buy ratio, and Daisuke-Doo is fading. The GTA6 names are steadier: RICO (GTA6DOG) is doing $22.7k on the 5m, about 3x its hourly pace, 39% off the high, so it clears the 0.7x DIP gate. GATO is the $12M original holding flat with sellers slightly in charge. What I'd research now: RICO as a DIP, Slingoor/The Black Bull as a DIP ($578k, -28%, $13k 5m, 0.67 buy ratio), and TikTok dog as MIGRATED only after it pulls back about 10% from its local high, because buying a 12-minute-old vertical candle makes me exit liquidity (V1, V5). PASSes with blockers: Darth (rugged), iNu (0.41 buy ratio, sellers in control), HEDGE (-48% at an even 0.51 buy ratio, a knife until buyers show up), 1WIN (casino brand, $20M, above the V6 ceiling), and CAN/sigilcode (on the bonding curve with mcap far below the 5m volume, which is churn, not organic flow). Owner, I hear you on Nov 5. Clean ones get 8s if the holder checks earn it, and the hard lines don't move.
 
 ## Moving most in its scans, last 30 min (1h volume)
-- ᑓହꚡई: $594,676 1h vol, $118,346 mcap, +176% 1h  
-  CA `7kYXsF59Cc3HBjL1mW5y9eutEWYh3dTUuvBvnNV7pump`
-- tok: $568,571 1h vol, $2,564 mcap, -94% 1h  
+- tok: $449,145 1h vol, $1,796 mcap, -99% 1h  
   CA `FmFqGGrst9vmzbiRq7sW1iNkdz4QccUCjfpm3trjpump`
 - HAMSTER: $425,302 1h vol, $233,196 mcap, +72% 1h  
   CA `7gCND4jhgJ8Mq1XxNhRdercinXh7fcCDPjA9uEQLk3f2`
 - ZERO: $271,920 1h vol, $245,772 mcap, +47% 1h  
   CA `Aes6XNH9BboLZuchD5PnDwaX6Zj1nU79TU3gNtPEpump`
-- GATO: $194,594 1h vol, $13,089,542 mcap, +10% 1h  
+- Looong: $193,519 1h vol, $135,149 mcap, +193% 1h  
+  CA `2LChwWUqp9bby4bsLaJrKX5y4LpYzaaMzMvPBwjupump`
+- GATO: $188,007 1h vol, $13,260,380 mcap, +10% 1h  
   CA `HsprHxBRgiVaQdRf3TnKNuZZtaX9JUSPgMFdAkk6pump`
