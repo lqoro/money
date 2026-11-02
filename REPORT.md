@@ -1,13 +1,13 @@
 # Trencher live report
 
-Updated 2026-11-02T11:07:57Z (paper trading, never real money)
+Updated 2026-11-02T11:23:11Z (paper trading, never real money)
 
 - Equity: $77.09 (-22.9% vs $100 start)
-- Goal: $1,000 by 2026-11-05 05:03Z (pressing for it): at 7.7% of it, 2.7 days left, needs +154.2% a day from here
+- Goal: $1,000 by 2026-11-05 05:03Z (pressing for it): at 7.7% of it, 2.7 days left, needs +155.2% a day from here
 - Closed trades: 21, 3 wins
 - Fees paid: $14.04 (axiom $2.63, network $8.81, pool $2.47), plus $3.89 lost to slippage
 - New trades: on
-- Brain: subscription, 540 calls and 0 plan-limit hits in 48h
+- Brain: subscription, 538 calls and 0 plan-limit hits in 48h
 
 ## Scorecard (after fees)
 - 21 closed, 3 won (14%), net $-22.93
@@ -74,9 +74,17 @@ Updated 2026-11-02T11:07:57Z (paper trading, never real money)
   CA `8s4bNqEztH1JP7mkU747uMr7AckCQdiV47FDqYnDpump`
 
 ## Last scan
-- 11:07Z: 6 coins, 5 with pairs, 0 passed the market filters, 0 researched
+- 11:22Z: 4 coins, 3 with pairs, 0 passed the market filters, 0 researched
 
 ## Coins it looked at, and why it passed
+- 11:21Z WWIII (MIGRATED, $92,291 mcap, $3,192 5m vol): REJECT, RugCheck danger: Creator history of rugged tokens  
+  CA `GD52VfoPZdad4hiNPg4UnjtDGsS4WiM3mqS8j1czpump`
+- 11:17Z SPERM (FINAL_STRETCH, $22,017 mcap, $52,507 5m vol): REJECT, RugCheck danger: Creator history of rugged tokens  
+  CA `8mCBqQsvLtyaW93PGWFGZrj7ZjWn395TBZ9TCsvipump`
+- 11:11Z GATO (MIGRATED, $10,513,466 mcap, $4,268 5m vol): REJECT, Dev holds 3.3% (>1%) (V13, V17)  
+  CA `HsprHxBRgiVaQdRf3TnKNuZZtaX9JUSPgMFdAkk6pump`
+- 11:11Z ANAKIN (MIGRATED, $4,013,870 mcap, $11,524 5m vol): PASS at conviction 3, PASS: ANAKIN has burned me twice. It's at $4.0M, not back at the $6.05M high, with flow at 0.93x pace and no printed higher low. Blockers: re-entry rule unmet and flow below pace (V1, V6).  
+  CA `8s4bNqEztH1JP7mkU747uMr7AckCQdiV47FDqYnDpump`
 - 10:47Z BOOSTX (FINAL_STRETCH, $31,028 mcap, $26,902 5m vol): REJECT, RugCheck danger: Low Liquidity $9.81  
   CA `7F3N3U5Dpg1dVrtes5SxxTp3VXcvBcXrbKtuwuGbqE8f`
 - 10:39Z DESSA (DIP, $14,916,366 mcap, $5,840 5m vol): PASS at conviction 4, PASS: $5.8k 5m flow on a $15M cap with zero radar mentions. Clean holders, but no crowd to carry a 1.5x. (V1, V6)  
@@ -89,18 +97,10 @@ Updated 2026-11-02T11:07:57Z (paper trading, never real money)
   CA `Fj7xiaMe8fLGa1gMVTX8JJr54WsMyzbBJnm3Vx6fpump`
 - 10:29Z thisman (FINAL_STRETCH, $19,582 mcap, $10,661 5m vol): REJECT, RugCheck danger: Creator history of rugged tokens  
   CA `6d6J2kWJiimgqmxjLVTu31hxDyBFt2zBguYdjSripump`
-- 10:25Z GATO (MIGRATED, $9,020,548 mcap, $13,025 5m vol): REJECT, Dev holds 3.3% (>1%) (V13, V17)  
-  CA `HsprHxBRgiVaQdRf3TnKNuZZtaX9JUSPgMFdAkk6pump`
-- 10:25Z Bert (DIP, $101,447 mcap, $7,475 5m vol): REJECT, Dip with fading attention is a falling knife, not a dip (5m at 0.21x the hour's pace, under 0.6x)  
-  CA `EPcHDXD3P23KcQsHyZYZLAx8odhgh1ELNnGL5szgpump`
-- 10:22Z Tumulun (MIGRATED, $44,191 mcap, $2,690 5m vol): PASS at conviction 2, PASS — $2.7k 5m flow on a +21% spike, first resistance only 1.37x away, six bigger same-ticker coins. Thin story, no setup. (V1, V6)  
-  CA `E84psoV4rJQYBoyTkzTrh1hzjZJv81VGFRX9gMLHpump`
-- 10:10Z ANAKIN (MIGRATED, $4,485,118 mcap, $11,979 5m vol): BUY at conviction 6, BUY, conviction 6 probe. ANAKIN printed the higher low it was missing last time and is reclaiming its range on 1.2x pace. But the $6.05M high is only 1.35x away and the crowd is thinner than it was this morning, so it's a probe, not a 7 (V1, V6).  
-  CA `8s4bNqEztH1JP7mkU747uMr7AckCQdiV47FDqYnDpump`
 
 ## What its skips did next (last 48h)
 A skip "ran" if the coin reached the first target (1.5x) from the skip price before a 20% drop, "dumped" if the drop came first. Sampled every 10 min, followed 6h.
-- near the high / chasing: blocked 54, ran 4, dumped 41, flat 8, open 1 (saving losses: keep it)
+- near the high / chasing: blocked 54, ran 4, dumped 42, flat 8, open 0 (saving losses: keep it)
   - ran: Wojak up to 2.51x  
     CA `BbNuEtiT77Swr4WqGHuUkQY5kZ67M7au7bXkxcArpump`
   - ran: BBOTS up to 1.51x  
@@ -128,7 +128,7 @@ A skip "ran" if the coin reached the first target (1.5x) from the skip price bef
     CA `CPoGSmcjprCvzA2MFYLJMpQkGjmgVzKg4RVwMdrzpump`
   - ran: VETOTRUMP up to 1.66x  
     CA `6g16UK4wHoFhC7PCmw8LYYCdt9q8m99fyoAwxeCrpump`
-- RugCheck danger: blocked 27, ran 4, dumped 22, flat 0, open 1 (saving losses: keep it)
+- RugCheck danger: blocked 28, ran 4, dumped 22, flat 0, open 2 (saving losses: keep it)
   - ran: SUGAR up to 1.74x  
     CA `HLzTFsX99uqzAP7uK36gJ2pPHGfRM8ugvxXWJzjSpump`
   - ran: AIC up to 1.6x  
@@ -164,14 +164,14 @@ A skip "ran" if the coin reached the first target (1.5x) from the skip price bef
     CA `J1D3X8znX4AzUPMHVWyBLNHqBBqWDPNSjX4KwK3Qpump`
 
 ## Rules it changed from results and skips
-- 11-02 05:16Z tightened: DIP needs a printed higher low; the higher low is the invalidation, and I wait if it sits far below entry (rewritten so it no longer sets its own stop) (DIPs are 0 for 5 (−$6.70). HEXN's first-bounce entry went −36%; SIS and AAPLCAT broke their higher lows within minutes. The old wording set a stop under the higher low (HEXN used −13%), and the owner fixes the stop at 20%, so I rewrote it to filter the entry instead of moving the stop.)
-- 11-02 05:16Z dropped: Any learned trail, stop, initials, fee or size rule (e.g. 'tighten trail to 25% past 4x', '$5 minimum', '5% friction cap') (The owner fixes initials at 1.5x, the stop at 20% and the trail at 35%, and code owns the fee and size checks. Those lessons stay as history but are not active rules.)
-- 11-02 08:17Z tightened: Flow below pace is a PASS on both MIGRATED and DIP (HYPERCHAN, BLUE and AAPLCAT were all entered below pace and never went green (peaks 0.99–1.01x). Flow-below-pace skips: 1 ran, 4 dumped. I widened the wording to cover DIPs, since SIS and HEXN also died.)
-- 11-02 08:17Z dropped: Any fee, friction or minimum-position-size rule, and any rule setting the initials, stop or trail (Code owns the fee checks, and the owner fixes initials at 1.5x, the stop at 20% and the trail at 35%. The old CATBOT lesson (tighten the trail to 25% past 4x) is not carried into the rules. Honest note: getting from about $80 to $1k by Nov 5 needs roughly 12x in 3 days. I'll press on clean 8–9 setups as told, but the 35% risk ceiling and the hard lines still hold.)
-- 11-02 08:24Z tightened: Flow below pace is a PASS: now firm on MIGRATED, while DIPs follow the owner's 0.7x gate as a probe at most (MIGRATED entries below pace (HYPERCHAN #1, BLUE, AAPLCAT) never went green, for −15%, −30% and −31%. 'Flow below pace' skips: 1 ran, 4 dumped. The owner's DIP gate is 0.7x, so the old rule ('PASS on DIP alike') conflicted with an owner override. DIPs between 0.7x and 1.0x pace now get a 6 probe only.)
 - 11-02 08:24Z loosened: DIP gate now sizes by conviction when higher low and pace are confirmed (owner override) (Owner (Oct 30): DIP probation is over, gate at 0.7x pace with no 'rising' needed. I kept the higher-low requirement because 0 for 5 says entry timing is the problem, and only flow below pace is capped at a 6 probe. Also enforced 0.7x in code via dip_min_attention_ratio.)
 - 11-02 08:24Z tightened: Never-green cut: also sell at market if under 0.92x inside the first 10 minutes with flow under pace (Five trades peaked at 1.01x or lower and closed −30% to −38% against a −20% stop (SI, HEXN, BLUE, SIS, AAPLCAT). SI and HEXN fell through the stop within 7 minutes, before the old 10-minute check could fire.)
 - 11-02 08:24Z dropped: Any fee, friction or minimum-size wording (Fees and size are checked in code (target must pay 3x the round trip, round trip at most 20% of size). The current rules already carried none, and none were added back.)
+- 11-02 11:20Z added: Entries above ~$1M mcap capped at 7 and need the first resistance at least 1.5x away (10 entries above ~$1M (CATBOT buy-back, FLOAT, HYPERCHAN x2, Leverhedge, PAWCAT, AAPLCAT, ANAKIN x2, Something): 0 wins, one +0.7% scratch, about −15% average. Only FLOAT got past 1.5x.)
+- 11-02 11:20Z tightened: DIP gate merged with the higher-low rule; flow at least 0.7x pace (DIPs are 0 for 5 (−$6.70). Falling-knife (code) skips: 23 of 29 dumped. No-higher-low skips: 12 of 16 dumped. This now matches the owner's 0.7x gate and the parameter.)
+- 11-02 11:20Z tightened: Time stop: dropped the 90-minute extension for >$1M coins (Holding past the time stop lost both times: FLOAT at 158 min, −24.5%, and Leverhedge at 76 min, −3.2%. No time-stopped trade later became a winner.)
+- 11-02 11:20Z tightened: Stops sell with no review; re-entry at most once per coin, only on a prior-high reclaim (8 of 8 stop reviews closed worse than the stop. Re-entries are 0 for 4.)
+- 11-02 11:20Z dropped: Separate DIP gate bullet (Merged into the DIP higher-low rule to stay at 15 bullets; nothing was lost.)
 
 ## Recent lessons
 - [2026-10-30 09:52] Expected: HYPERCHAN, the clear leader of a 20-copy vamp field and 13.5% off its high, would retest $2.28M or break out. I bought a probe anyway, with 5m volume under $10k and only 0.73x its hourly pace. Happened: it never went green (peak 0.99x), and the 45-min time stop closed it at -15% (V1). That confirms my existing shallow-band rule rather than adding a new one: in the 10–20% band, being the vamp leader (V1, V2) doesn't waive the volume gate (5m at least $10k and at or above hourly pace, V1/V6), and probe size isn't a way around a failed rule, so next time that's a PASS with the blocker "flow below pace".
@@ -189,13 +189,13 @@ A skip "ran" if the coin reached the first target (1.5x) from the skip price bef
 The meta right now is brand-new pump.fun launches, under 30 minutes old, that run 5-7x in their first hour, and they die about as fast as they rise. The live ones are BOOSTX ($32k, $25.5k on the 5m, buy ratio 0.71, +667%), thisman ($21k, $10.3k on the 5m) and flow ($22k, $7.6k on the 5m). The hour-old wave behind them has already rolled over: VALOR is at $8k with $296 on the 5m, HAMMER at $7k with $843, Judah at $0, and Bert has cooled to $103k with $6.9k on the 5m and -4% on the hour. My radar's own summary is stale. The war-joke theme (WWIII at $2.1k on the 5m, MEMES) and Star Wars (ANAKIN at $3M with only $3k on the 5m) are both fading under the $10k bar (V1, V6). Setups to research now: BOOSTX and thisman as FINAL_STRETCH, but BOOSTX's CA doesn't end in "pump" and the flow is 12 minutes old, so holder and bundle checks decide it, not the chart (V3, V13). Bert goes on the watchlist as a possible DIP only if 5m volume comes back to at least 0.7x its hourly pace. PASS on HAMMER, VALOR, WWIII and ANAKIN; the blocker for all four is 5m volume under the bar. Owner, heard: I'll rate clean setups 8 if they earn it, but a Nov 5 deadline doesn't make a 12-minute-old coin cleaner.
 
 ## Moving most in its scans, last 30 min (1h volume)
-- BOOSTX: $76,713 1h vol, $32,440 mcap, +667% 1h  
-  CA `7F3N3U5Dpg1dVrtes5SxxTp3VXcvBcXrbKtuwuGbqE8f`
-- NOTHING: $60,832 1h vol, $7,076 mcap, -19% 1h  
-  CA `GvaRQbKqsjkcgTmZbaYfuSaJRin5A27JV298MdQbpump`
-- ww3: $47,531 1h vol, $1,816 mcap, -99% 1h  
-  CA `zttJSZyD67hzNrJ1RKKUsZ1Hya4vfxYRjdQABvppump`
-- BUNK: $43,100 1h vol, $15,808 mcap, -28% 1h  
-  CA `F17yBcN7vhxNdWmSmoLf3FZc7Y4UdyvW2i7NdMFeSQqw`
-- DESSA: $40,358 1h vol, $14,916,366 mcap, +4% 1h  
-  CA `npz2FhoufQ7pKqhGpaipYWacrAkidyW2yDpVWSvpump`
+- ANAKIN: $147,293 1h vol, $4,013,870 mcap, -12% 1h  
+  CA `8s4bNqEztH1JP7mkU747uMr7AckCQdiV47FDqYnDpump`
+- GATO: $124,747 1h vol, $10,513,466 mcap, +15% 1h  
+  CA `HsprHxBRgiVaQdRf3TnKNuZZtaX9JUSPgMFdAkk6pump`
+- マイロ: $116,559 1h vol, $11,485 mcap, +184% 1h  
+  CA `BnX42wN82J4NHqz2dCY9YUaNzJHLYqrS3gRC72Z1AesP`
+- flow: $107,423 1h vol, $17,536 mcap, +41% 1h  
+  CA `Fj7xiaMe8fLGa1gMVTX8JJr54WsMyzbBJnm3Vx6fpump`
+- thisman: $83,814 1h vol, $17,489 mcap, +73% 1h  
+  CA `6d6J2kWJiimgqmxjLVTu31hxDyBFt2zBguYdjSripump`
