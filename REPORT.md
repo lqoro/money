@@ -1,13 +1,13 @@
 # Trencher live report
 
-Updated 2026-11-02T19:14:34Z (paper trading, never real money)
+Updated 2026-11-02T19:30:35Z (paper trading, never real money)
 
 - Equity: $77.09 (-22.9% vs $100 start)
-- Goal: $1,000 by 2026-11-05 05:03Z (pressing for it): at 7.7% of it, 2.4 days left, needs +189.8% a day from here
+- Goal: $1,000 by 2026-11-05 05:03Z (pressing for it): at 7.7% of it, 2.4 days left, needs +191.2% a day from here
 - Closed trades: 21, 3 wins
 - Fees paid: $14.04 (axiom $2.63, network $8.81, pool $2.47), plus $3.89 lost to slippage
 - New trades: on
-- Brain: subscription, 496 calls and 0 plan-limit hits in 48h
+- Brain: subscription, 493 calls and 0 plan-limit hits in 48h
 
 ## Scorecard (after fees)
 - 21 closed, 3 won (14%), net $-22.93
@@ -74,9 +74,17 @@ Updated 2026-11-02T19:14:34Z (paper trading, never real money)
   CA `8s4bNqEztH1JP7mkU747uMr7AckCQdiV47FDqYnDpump`
 
 ## Last scan
-- 19:13Z: 6 coins, 6 with pairs, 2 passed the market filters, 2 researched
+- 19:28Z: 5 coins, 4 with pairs, 0 passed the market filters, 0 researched
 
 ## Coins it looked at, and why it passed
+- 19:26Z COLLECTOR (MIGRATED, $265,414 mcap, $27,498 5m vol): REJECT, Dev holds 36.2% (>1%) (V13, V17)  
+  CA `6kKETm8xPeZ2z1DBYjXmxMTFAJudvGHJvRHu5Wt8uGtf`
+- 19:22Z DIGS (MIGRATED, $79,502 mcap, $3,759 5m vol): REJECT, Dev holds 3.2% (>1%) (V13, V17)  
+  CA `9QT8K685Hrae4k11dhGXirdtpfAaimExtyfwt8cPpump`
+- 19:21Z PEPPER (FINAL_STRETCH, $28,486 mcap, $54,097 5m vol): PASS at conviction 3, PASS: chasing spike. It's up 159% in five minutes, 5m volume is running 8.3x the hourly pace, the coin is 7 minutes old, and seven bigger coins already use the PEPPER ticker. Wait for a base (V1, V5).  
+  CA `92jz5dgWVfN5y1fmev5xu1D3fPmD4td6pzQ3muBpump`
+- 19:15Z Anakin (DIP, $1,713,907 mcap, $5,916 5m vol): PASS at conviction 3, PASS: no higher low. This is a straight bounce off the hourly low, sellers hold 65% of the 5m flow, 5m volume is under $10k, and it's the second-place coin in a fading Star Wars field (V1, V6).  
+  CA `ExxzYBTt3jwU5MUxuw2F4toYbTLdFwThSjyaCn6Xpump`
 - 19:14Z MAMESUKE (MIGRATED, $1,442,872 mcap, $14,388 5m vol): REJECT, Bundles: 4 linked wallet cluster(s) hold 65.8% of supply (>20%) (V17)  
   CA `SCGBBnSwnekytGFHgyeHHxPMiN7xDxsWFGg9JgFSTNK`
 - 19:14Z CAPY (DIP, $227,954 mcap, $111,519 5m vol): PASS at conviction 3, PASS: the coin's own linked site shows a different CA, it's one of 19 CAPYs, and one bundle holds 8.2%. Probably a vamp, and too new. (V1, V3, V13)  
@@ -89,25 +97,17 @@ Updated 2026-11-02T19:14:34Z (paper trading, never real money)
   CA `A75Xx6SeftAmWduv9KGwb2GCjXUAhxozcCUCys9jpump`
 - 19:03Z CAPYTISTAS (MIGRATED, $156,451 mcap, $89,253 5m vol): PASS at conviction 3, PASS: it's 2.6% off the high, up 48% in the last 5 minutes, and 21 minutes old. That's chasing a spike, not buying a pullback (V1, V6).  
   CA `xRtT8q7g7NsAnbTgvCtim8jtxKVVc5epoLoAYmqpump`
-- 18:59Z PI (no setup, $44,230 mcap, $1,305 5m vol): REJECT, No setup fits: not Final Stretch, not a migrated runner, not a healthy dip  
-  CA `93VGqXL76voGxc43apJTDJoKkqnxTht1BKWoEmUypump`
-- 18:59Z RICO (MIGRATED, $174,546 mcap, $5,587 5m vol): REJECT, RugCheck danger: Creator history of rugged tokens  
-  CA `8kuQg3WivDtL85VEdw2jEmSXjYt6EEeYBATJ4DtQpump`
-- 18:56Z OPTIC (FINAL_STRETCH, $20,840 mcap, $3,664 5m vol): PASS at conviction 3, PASS: the project's own site lists a different pump CA (ePR29…pump), so this may be a vamp, 5m flow is only $3.7k, and it's 4% off the high. Wrong token, thin flow, chasing. (V1, V3, V6)  
-  CA `HcUWHmM5QgpPMDekGTKYWTGEFzAndG4t9ZUrYBm6pump`
-- 18:49Z HACKCAT (no setup, $3,038 mcap, $0 5m vol): REJECT, Hack story ("hack" in the name or ticker): these tend to go down, owner rule  
-  CA `wLjTQSsKmoy9pjE7ZcdtU1Vf5HKhKPU2piR3vXGpump`
 
 ## What its skips did next (last 48h)
 A skip "ran" if the coin reached the first target (1.5x) from the skip price before a 20% drop, "dumped" if the drop came first. Sampled every 10 min, followed 6h.
-- near the high / chasing: blocked 52, ran 3, dumped 41, flat 6, open 2 (saving losses: keep it)
+- near the high / chasing: blocked 51, ran 3, dumped 42, flat 6, open 0 (saving losses: keep it)
   - ran: BBOTS up to 1.51x  
     CA `4TCevs5EC2RFsdWo3YPVifqe9dX2acCGGa9VHNtppump`
   - ran: BLUE up to 1.53x  
     CA `CPoGSmcjprCvzA2MFYLJMpQkGjmgVzKg4RVwMdrzpump`
   - ran: PIRATE up to 2.27x  
     CA `gzQXRwGRzfKLHfaV1f84QT7e5mt4vevu7MgacEfpump`
-- too new / sniping: blocked 48, ran 8, dumped 38, flat 0, open 2 (saving losses: keep it)
+- too new / sniping: blocked 49, ran 9, dumped 38, flat 0, open 2 (saving losses: keep it)
   - ran: onlypump up to 1.92x  
     CA `J73efZvH6rkrJbFJdP2rqe473YJW7tyWmrNARUSzpump`
   - ran: paws up to 1.51x  
@@ -140,10 +140,10 @@ A skip "ran" if the coin reached the first target (1.5x) from the skip price bef
     CA `APH9FRoKst66E4a7uZXcEfE8NjtwybUC8Jq7ue8upump`
   - ran: NA up to 1.97x  
     CA `9ZmdP8q22ebRhEkcwd5EDkitu7ypeDFXTQXpv2kUpump`
-- falling knife / no higher low: blocked 12, ran 1, dumped 8, flat 2, open 1 (saving losses: keep it)
+- falling knife / no higher low: blocked 13, ran 1, dumped 8, flat 2, open 2 (saving losses: keep it)
   - ran: CREDIT up to 1.56x  
     CA `Ewyifvp8X9NxeaKawXamGXBFDisuMfcFfcdvSZ8opump`
-- dev share over 1%: blocked 12, ran 3, dumped 5, flat 1, open 3 (mixed)
+- dev share over 1%: blocked 13, ran 3, dumped 5, flat 1, open 4 (mixed)
   - ran: IGLU up to 1.54x  
     CA `34YQhrgkWoeFnm6LrcnmV3PLyDaMSNZikzUjyMmupump`
   - ran: MINTED up to 1.61x  
@@ -191,7 +191,7 @@ Meta: pump.fun launches under 1h old, rotating fast. Rising: ADCY ($140k, +200%,
   CA `SCGBBnSwnekytGFHgyeHHxPMiN7xDxsWFGg9JgFSTNK`
 - CAPYTISTAS: $491,817 1h vol, $156,451 mcap, +316% 1h  
   CA `xRtT8q7g7NsAnbTgvCtim8jtxKVVc5epoLoAYmqpump`
-- Slingoor: $165,376 1h vol, $1,696 mcap, -99% 1h  
-  CA `7LzPdsBxMoR9FrjgizvxNRvDtjGSP423quJ4M7Jqpump`
-- GATO: $155,152 1h vol, $10,936,131 mcap, -8% 1h  
-  CA `HsprHxBRgiVaQdRf3TnKNuZZtaX9JUSPgMFdAkk6pump`
+- ADCY: $248,649 1h vol, $29,256 mcap, -35% 1h  
+  CA `6qnAerbLSGbhS3i6Xyh8AcsLTrutS1Rb7kuHsfwZpump`
+- COLLECTOR: $178,634 1h vol, $261,671 mcap, +184% 1h  
+  CA `6kKETm8xPeZ2z1DBYjXmxMTFAJudvGHJvRHu5Wt8uGtf`
