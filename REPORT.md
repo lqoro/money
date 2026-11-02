@@ -1,13 +1,13 @@
 # Trencher live report
 
-Updated 2026-11-02T09:06:47Z (paper trading, never real money)
+Updated 2026-11-02T09:21:57Z (paper trading, never real money)
 
 - Equity: $79.10 (-20.9% vs $100 start)
-- Goal: $1,000 by 2026-11-05 05:03Z (pressing for it): at 7.9% of it, 2.8 days left, needs +145% a day from here
+- Goal: $1,000 by 2026-11-05 05:03Z (pressing for it): at 7.9% of it, 2.8 days left, needs +145.9% a day from here
 - Closed trades: 20, 3 wins
 - Fees paid: $13.36 (axiom $2.45, network $8.44, pool $2.34), plus $3.62 lost to slippage
 - New trades: on
-- Brain: subscription, 549 calls and 0 plan-limit hits in 48h
+- Brain: subscription, 550 calls and 0 plan-limit hits in 48h
 
 ## Scorecard (after fees)
 - 20 closed, 3 won (15%), net $-20.91
@@ -74,9 +74,19 @@ Updated 2026-11-02T09:06:47Z (paper trading, never real money)
   CA `8s4bNqEztH1JP7mkU747uMr7AckCQdiV47FDqYnDpump`
 
 ## Last scan
-- 09:06Z: 2 coins, 2 with pairs, 0 passed the market filters, 0 researched
+- 09:21Z: 4 coins, 4 with pairs, 2 passed the market filters, 2 researched
 
 ## Coins it looked at, and why it passed
+- 09:21Z HELL (MIGRATED, $2,445,702 mcap, $2,575 5m vol): PASS at conviction 2, PASS: thin flow. $2.6k on the 5m with sellers in control, and the website claims an "official partnership" with Rockstar, Xbox and PlayStation that its own copy says was never announced. (V1, V6)  
+  CA `A75Xx6SeftAmWduv9KGwb2GCjXUAhxozcCUCys9jpump`
+- 09:21Z MANDO (MIGRATED, $206,773 mcap, $8,488 5m vol): REJECT, Dev holds 1.0% (>1%) (V13, V17)  
+  CA `FAqiaGmrSdx2Z5qZmSRUkbyYCF2dFCUTfYVwP4Mypump`
+- 09:20Z Anakin (MIGRATED, $3,143,531 mcap, $2,075 5m vol): PASS at conviction 2, PASS: flow below pace. $2k on the 5m at 0.74x the hourly average, 5 buys against 16 sells, sitting at the hourly low in a 10-coin ticker field. The crowd is leaving. (V1, V6)  
+  CA `ExxzYBTt3jwU5MUxuw2F4toYbTLdFwThSjyaCn6Xpump`
+- 09:20Z HAMMER (FINAL_STRETCH, $35,300 mcap, $23,170 5m vol): REJECT, RugCheck danger: Low Liquidity $124.71  
+  CA `FQpyYoUGfAd2vQwhtthdHFyBYizAQHdCVMWeC3bZpump`
+- 09:17Z ww3 (MIGRATED, $116,493 mcap, $14,680 5m vol): PASS at conviction 2, PASS: chasing a spike. It's 4.4% off a high set this minute, the last 5m candle is +42%, it's 16 minutes old, and the only social link is a Tucker Carlson tweet on a copycat ticker in a fading war meta (V1, V13).  
+  CA `zttJSZyD67hzNrJ1RKKUsZ1Hya4vfxYRjdQABvppump`
 - 09:05Z OILCOIN (FINAL_STRETCH, $23,713 mcap, $22,358 5m vol): REJECT, RugCheck danger: Low Liquidity $5.16  
   CA `7NwMcsud7zxu1L4XkHkyjHQFMq8Zazk5dGQqBuUppump`
 - 09:03Z CI (MIGRATED, $71,808 mcap, $11,181 5m vol): REJECT, Bundles: 10 linked wallet cluster(s) hold 77.4% of supply (>20%) (V17)  
@@ -87,16 +97,6 @@ Updated 2026-11-02T09:06:47Z (paper trading, never real money)
   CA `GD52VfoPZdad4hiNPg4UnjtDGsS4WiM3mqS8j1czpump`
 - 08:38Z ANAKIN (MIGRATED, $4,221,115 mcap, $6,501 5m vol): PASS at conviction 3, PASS: ANAKIN's 5m volume is $6.5k, half its hourly pace. The crowd is leaving, and it's the same setup that time-stopped me hours ago. Blocker: flow below pace (V1, V6).  
   CA `8s4bNqEztH1JP7mkU747uMr7AckCQdiV47FDqYnDpump`
-- 08:34Z Anakin (MIGRATED, $3,230,048 mcap, $3,401 5m vol): PASS at conviction 2, PASS: this is the old 85h Anakin. The crowd is on the other ANAKIN, and this chart has $3.4k on the 5m at 0.69x pace with sellers in control. Blockers: flow below pace, split crowd (V1, V6).  
-  CA `ExxzYBTt3jwU5MUxuw2F4toYbTLdFwThSjyaCn6Xpump`
-- 08:28Z jeff (DIP, $1,590,233 mcap, $2,111 5m vol): REJECT, Top 10 hold 39.5% ex-pool (>25%) (V13)  
-  CA `HAsTKXYvv65zM7J6Cu5o5PcZsiKMQYo5oz4WPjgqwP6k`
-- 08:25Z HELL (MIGRATED, $3,087,617 mcap, $2,174 5m vol): PASS at conviction 2, PASS: $2.2k on the 5m on a $3.1M coin, 17.7% off a high it isn't pushing into, and the last 15m candle was red. Blocker: "no breakout" / flow under $10k (V1, V6).  
-  CA `A75Xx6SeftAmWduv9KGwb2GCjXUAhxozcCUCys9jpump`
-- 08:20Z TripleH (DIP, $83,951 mcap, $19,300 5m vol): REJECT, Dip with fading attention is a falling knife, not a dip (5m at 0.50x the hour's pace, under 0.6x)  
-  CA `ATnGk91tqFpXhiqAnDfGav7YYMUiocQ2YHgY4gPBpump`
-- 08:17Z CI (DIP, $133,030 mcap, $6,825 5m vol): REJECT, Dip with fading attention is a falling knife, not a dip (5m at 0.26x the hour's pace, under 0.6x)  
-  CA `gg1zQUgUoXd8hVmkTmLooyzC1QBT1cvJDnCXHLPpump`
 
 ## What its skips did next (last 48h)
 A skip "ran" if the coin reached the first target (1.5x) from the skip price before a 20% drop, "dumped" if the drop came first. Sampled every 10 min, followed 6h.
@@ -107,7 +107,7 @@ A skip "ran" if the coin reached the first target (1.5x) from the skip price bef
     CA `4TCevs5EC2RFsdWo3YPVifqe9dX2acCGGa9VHNtppump`
   - ran: BLUE up to 1.53x  
     CA `CPoGSmcjprCvzA2MFYLJMpQkGjmgVzKg4RVwMdrzpump`
-- too new / sniping: blocked 40, ran 5, dumped 35, flat 0, open 0 (saving losses: keep it)
+- too new / sniping: blocked 41, ran 5, dumped 35, flat 0, open 1 (saving losses: keep it)
   - ran: onlypump up to 1.92x  
     CA `J73efZvH6rkrJbFJdP2rqe473YJW7tyWmrNARUSzpump`
   - ran: paws up to 1.51x  
@@ -128,7 +128,7 @@ A skip "ran" if the coin reached the first target (1.5x) from the skip price bef
     CA `CPoGSmcjprCvzA2MFYLJMpQkGjmgVzKg4RVwMdrzpump`
   - ran: VETOTRUMP up to 1.66x  
     CA `6g16UK4wHoFhC7PCmw8LYYCdt9q8m99fyoAwxeCrpump`
-- RugCheck danger: blocked 24, ran 4, dumped 18, flat 0, open 2 (saving losses: keep it)
+- RugCheck danger: blocked 25, ran 4, dumped 20, flat 0, open 1 (saving losses: keep it)
   - ran: SUGAR up to 1.74x  
     CA `HLzTFsX99uqzAP7uK36gJ2pPHGfRM8ugvxXWJzjSpump`
   - ran: AIC up to 1.6x  
@@ -147,12 +147,12 @@ A skip "ran" if the coin reached the first target (1.5x) from the skip price bef
     CA `Ewyifvp8X9NxeaKawXamGXBFDisuMfcFfcdvSZ8opump`
   - ran: PI up to 1.6x  
     CA `93VGqXL76voGxc43apJTDJoKkqnxTht1BKWoEmUypump`
-- bundles over the line: blocked 14, ran 2, dumped 9, flat 2, open 1 (saving losses: keep it)
+- bundles over the line: blocked 14, ran 2, dumped 10, flat 2, open 0 (saving losses: keep it)
   - ran: Nuts up to 1.53x  
     CA `APH9FRoKst66E4a7uZXcEfE8NjtwybUC8Jq7ue8upump`
   - ran: NA up to 1.97x  
     CA `9ZmdP8q22ebRhEkcwd5EDkitu7ypeDFXTQXpv2kUpump`
-- dev share over 1%: blocked 10, ran 3, dumped 5, flat 1, open 1 (mixed)
+- dev share over 1%: blocked 11, ran 3, dumped 5, flat 1, open 2 (mixed)
   - ran: IGLU up to 1.54x  
     CA `34YQhrgkWoeFnm6LrcnmV3PLyDaMSNZikzUjyMmupump`
   - ran: MINTED up to 1.61x  
@@ -191,13 +191,13 @@ A skip "ran" if the coin reached the first target (1.5x) from the skip price bef
 The meta is young pump.fun launches under 2 hours old with abstract idea names. TripleH "Hype Hope Hubris" ($89k mcap, $27k on the 5m, buys 0.57, +136% on the hour) and CI "Central Intelligence" ($133k, but only $7.2k on the 5m now) are leading it. The theme is still alive but burning out fast: Tumulun (-47%), "tokenization is inevitable" (-70%), Karlusha (-45%) and the second CI have already round-tripped. Most of these die within an hour (V1). The war/nuke jokes are fading. WWIII is +102% at $7k on the curve, but it's a late copy while WAR and inu bleed out, and inu's buy ratio is 0.00. Being late to a meta that's ending is how you become exit liquidity (V5). The Star Wars theme is holding price but losing attention. ANAKIN is flat at $4.2M, but its 5m volume fell from $104k to $6.5k, under the $10k bar (V6). The 85h "Anakin Skywalker" next to it has buys at 0.32. The one setup I'd research now is TripleH as MIGRATED: inside the V6 range with live flow. Entry only on a pullback of about 10% that keeps 5m volume above roughly 0.7x the hourly pace, with a 20% stop. At 1.1h old I'm slower than the players setting the price (V5), so it earns a 7 only if holders and bundles come back clean. Watching CI if 5m volume gets back above $10k, after confirming it's the original contract (V1, V3). ANAKIN only if attention comes back. PASS on WWIII: late to a fading theme, too far below the ~$30k bar for migrated coins (V1). The $1k push makes me take more of what clears the checks. It doesn't make thin volume look thick.
 
 ## Moving most in its scans, last 30 min (1h volume)
-- TripleH: $294,890 1h vol, $1,920 mcap, -97% 1h  
+- TripleH: $262,392 1h vol, $1,918 mcap, -97% 1h  
   CA `ATnGk91tqFpXhiqAnDfGav7YYMUiocQ2YHgY4gPBpump`
 - WWIII: $232,792 1h vol, $63,760 mcap, +58% 1h  
   CA `GD52VfoPZdad4hiNPg4UnjtDGsS4WiM3mqS8j1czpump`
 - CI: $189,851 1h vol, $62,955 mcap, -66% 1h  
   CA `gg1zQUgUoXd8hVmkTmLooyzC1QBT1cvJDnCXHLPpump`
-- ANAKIN: $158,913 1h vol, $4,221,115 mcap, +1% 1h  
-  CA `8s4bNqEztH1JP7mkU747uMr7AckCQdiV47FDqYnDpump`
-- Tumulun: $122,758 1h vol, $23,245 mcap, -42% 1h  
-  CA `E84psoV4rJQYBoyTkzTrh1hzjZJv81VGFRX9gMLHpump`
+- ww3: $139,966 1h vol, $108,426 mcap, +172% 1h  
+  CA `zttJSZyD67hzNrJ1RKKUsZ1Hya4vfxYRjdQABvppump`
+- HAMMER: $74,241 1h vol, $35,300 mcap, +875% 1h  
+  CA `FQpyYoUGfAd2vQwhtthdHFyBYizAQHdCVMWeC3bZpump`
