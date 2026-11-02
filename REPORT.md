@@ -1,13 +1,13 @@
 # Trencher live report
 
-Updated 2026-11-02T15:57:07Z (paper trading, never real money)
+Updated 2026-11-02T16:12:07Z (paper trading, never real money)
 
 - Equity: $77.09 (-22.9% vs $100 start)
-- Goal: $1,000 by 2026-11-05 05:03Z (pressing for it): at 7.7% of it, 2.5 days left, needs +173.7% a day from here
+- Goal: $1,000 by 2026-11-05 05:03Z (pressing for it): at 7.7% of it, 2.5 days left, needs +174.8% a day from here
 - Closed trades: 21, 3 wins
 - Fees paid: $14.04 (axiom $2.63, network $8.81, pool $2.47), plus $3.89 lost to slippage
 - New trades: on
-- Brain: subscription, 509 calls and 0 plan-limit hits in 48h
+- Brain: subscription, 506 calls and 0 plan-limit hits in 48h
 
 ## Scorecard (after fees)
 - 21 closed, 3 won (14%), net $-22.93
@@ -74,9 +74,17 @@ Updated 2026-11-02T15:57:07Z (paper trading, never real money)
   CA `8s4bNqEztH1JP7mkU747uMr7AckCQdiV47FDqYnDpump`
 
 ## Last scan
-- 15:56Z: 1 coins, 1 with pairs, 0 passed the market filters, 0 researched
+- 16:11Z: 8 coins, 8 with pairs, 0 passed the market filters, 0 researched
 
 ## Coins it looked at, and why it passed
+- 16:07Z PI (no setup, $47,504 mcap, $2,701 5m vol): REJECT, No setup fits: not Final Stretch, not a migrated runner, not a healthy dip  
+  CA `93VGqXL76voGxc43apJTDJoKkqnxTht1BKWoEmUypump`
+- 16:02Z GATO (MIGRATED, $10,819,588 mcap, $13,246 5m vol): REJECT, Dev holds 3.3% (>1%) (V13, V17)  
+  CA `HsprHxBRgiVaQdRf3TnKNuZZtaX9JUSPgMFdAkk6pump`
+- 16:01Z HI (no setup, $38,467 mcap, $31,969 5m vol): REJECT, Hack story ("hack" in the name or ticker): these tend to go down, owner rule  
+  CA `cMzxKhgHsL3HQdnjMHRt2b6FYmQAWr29fR8GUTWpump`
+- 15:57Z DESSA (DIP, $12,372,807 mcap, $3,731 5m vol): REJECT, Dip with fading attention is a falling knife, not a dip (5m at 0.21x the hour's pace, under 0.6x)  
+  CA `npz2FhoufQ7pKqhGpaipYWacrAkidyW2yDpVWSvpump`
 - 15:52Z FEAR (MIGRATED, $58,782 mcap, $41,580 5m vol): PASS at conviction 3, PASS: an 11-minute-old FEAR that isn't the leader of a 26-coin same-ticker field, bleeding −25% on the 5m off its bond spike. Split crowd, too new. (V1, V3, V13)  
   CA `CHtXwJ3qa2ozS9vQkxhR3MmNwkoUqkh3icGXgZPepump`
 - 15:47Z FEAR (MIGRATED, $62,940 mcap, $164,449 5m vol): REJECT, RugCheck danger: Top 10 holders high ownership  
@@ -89,14 +97,6 @@ Updated 2026-11-02T15:57:07Z (paper trading, never real money)
   CA `8s4bNqEztH1JP7mkU747uMr7AckCQdiV47FDqYnDpump`
 - 15:41Z Marutaro (MIGRATED, $221,289 mcap, $59,497 5m vol): MOVED at conviction 8, wanted to buy, but the price moved +14.5% while deciding (limits -8% / +10%)  
   CA `At3jYPUKVEFYrss5a58myVuqKLjGxMuBP5MwqMk9pump`
-- 15:30Z Ahsoka (MIGRATED, $491,157 mcap, $10,222 5m vol): PASS at conviction 3, PASS: Ahsoka is 16% off its high, but 5m flow is 0.49x the hourly pace. That's a crowd leaving, not a breakout. Blocker: flow below pace. (V1, V6)  
-  CA `4nuj5NLHMtQSezfmz6CwBpCRJisFie6F6MxNNz1dpump`
-- 15:28Z CBUCKS (MIGRATED, $1,842,835 mcap, $1,729 5m vol): REJECT, 5m volume $1,729 is dead (<$2,000) (V1)  
-  CA `DtcicPCKTKeAh7TDEzTym3hXeoHAoMiBdYJhMYxZpump`
-- 15:27Z Anakin (DIP, $2,241,697 mcap, $2,816 5m vol): REJECT, Dip with fading attention is a falling knife, not a dip (5m at 0.54x the hour's pace, under 0.6x)  
-  CA `ExxzYBTt3jwU5MUxuw2F4toYbTLdFwThSjyaCn6Xpump`
-- 15:26Z MAMESUKE (MIGRATED, $1,095,422 mcap, $17,455 5m vol): REJECT, RugCheck danger: Large Amount of LP Unlocked 81.39%  
-  CA `SCGBBnSwnekytGFHgyeHHxPMiN7xDxsWFGg9JgFSTNK`
 
 ## What its skips did next (last 48h)
 A skip "ran" if the coin reached the first target (1.5x) from the skip price before a 20% drop, "dumped" if the drop came first. Sampled every 10 min, followed 6h.
@@ -107,14 +107,14 @@ A skip "ran" if the coin reached the first target (1.5x) from the skip price bef
     CA `CPoGSmcjprCvzA2MFYLJMpQkGjmgVzKg4RVwMdrzpump`
   - ran: PIRATE up to 2.27x  
     CA `gzQXRwGRzfKLHfaV1f84QT7e5mt4vevu7MgacEfpump`
-- too new / sniping: blocked 48, ran 7, dumped 38, flat 0, open 3 (saving losses: keep it)
+- too new / sniping: blocked 47, ran 7, dumped 37, flat 0, open 3 (saving losses: keep it)
   - ran: onlypump up to 1.92x  
     CA `J73efZvH6rkrJbFJdP2rqe473YJW7tyWmrNARUSzpump`
   - ran: paws up to 1.51x  
     CA `CCF6ui6YjjhLaVtuYLH8b5jza8jHathqww5VbrMapump`
   - ran: VETOTRUMP up to 1.66x  
     CA `6g16UK4wHoFhC7PCmw8LYYCdt9q8m99fyoAwxeCrpump`
-- top 10 over 25%: blocked 46, ran 7, dumped 34, flat 2, open 3 (saving losses: keep it)
+- top 10 over 25%: blocked 45, ran 7, dumped 33, flat 2, open 3 (saving losses: keep it)
   - ran: Beaver up to 2.56x  
     CA `5h44wfzwGHFnfVhNKtMLapAJNV9iqqbUgUB2FqyWpump`
   - ran: timmy up to 1.66x  
@@ -140,7 +140,7 @@ A skip "ran" if the coin reached the first target (1.5x) from the skip price bef
     CA `APH9FRoKst66E4a7uZXcEfE8NjtwybUC8Jq7ue8upump`
   - ran: NA up to 1.97x  
     CA `9ZmdP8q22ebRhEkcwd5EDkitu7ypeDFXTQXpv2kUpump`
-- falling knife / no higher low: blocked 13, ran 1, dumped 9, flat 1, open 2 (saving losses: keep it)
+- falling knife / no higher low: blocked 12, ran 1, dumped 8, flat 1, open 2 (saving losses: keep it)
   - ran: CREDIT up to 1.56x  
     CA `Ewyifvp8X9NxeaKawXamGXBFDisuMfcFfcdvSZ8opump`
 - thin 5m volume: blocked 11, ran 1, dumped 3, flat 4, open 3 (saving losses: keep it)
@@ -183,13 +183,13 @@ A skip "ran" if the coin reached the first target (1.5x) from the skip price bef
 Meta is Japanese dog names plus Star Wars, with clone launches swarming around them. Rising: Marutaro ($193k, 0.9h, $59k on the 5m at 1.4x its hourly pace, 0.76 buys) and Korosuke ($158k, 12 minutes old, $78k 5m, 0.85 buys). Cooling: MAMESUKE (0.44x pace); its vamp MameStonk is dead at -98%. Star Wars holds through Anakin ($1.9M, 17h): down 37% on the hour but $45.6k on the 5m (about 2.9x pace, 0.75 buys), so buyers are taking the dip. Ahsoka has faded to 0.49x pace, under the DIP gate. Noise: two BUY THE FEAR clones and three Slingoor clones under 30 minutes old. Fading: GTA6 and political names like WTP. Setups: Anakin as a DIP first, Marutaro as a MIGRATED entry only on a 10%+ pullback from its local high, Korosuke watch-only for now because it's too new (V5/V6). The crawler's meta summary is stale, so I'm using scan_movers. The deadline means more trades on clean setups, but conviction still comes from the checks and the hard lines don't move.
 
 ## Moving most in its scans, last 30 min (1h volume)
-- Marutaro: $498,973 1h vol, $193,255 mcap, +352% 1h  
-  CA `At3jYPUKVEFYrss5a58myVuqKLjGxMuBP5MwqMk9pump`
-- Ahsoka: $251,940 1h vol, $491,157 mcap, +111% 1h  
-  CA `4nuj5NLHMtQSezfmz6CwBpCRJisFie6F6MxNNz1dpump`
+- MUCHAN: $517,344 1h vol, $1,835 mcap, -99% 1h  
+  CA `5focFU1VGb1ywCFcpBNGrg2VWedoQ6EXU6p2ZTqZpump`
+-  Muu-chan: $244,365 1h vol, $2,238 mcap, -87% 1h  
+  CA `G5SbP44FNV8RvQqxnWhCRJVscNghwDMwT5sTkCa4pump`
 - FEAR: $230,243 1h vol, $57,642 mcap, +54% 1h  
   CA `CHtXwJ3qa2ozS9vQkxhR3MmNwkoUqkh3icGXgZPepump`
 - KOROSUKE: $221,054 1h vol, $157,706 mcap, +234% 1h  
   CA `7ha4HFgdvkXaDcR2biCsuBpoCZzoLSRjb5we34Gbpump`
-- ANAKIN: $188,365 1h vol, $1,926,396 mcap, -38% 1h  
-  CA `8s4bNqEztH1JP7mkU747uMr7AckCQdiV47FDqYnDpump`
+- DESSA: $209,931 1h vol, $12,403,461 mcap, -10% 1h  
+  CA `npz2FhoufQ7pKqhGpaipYWacrAkidyW2yDpVWSvpump`
