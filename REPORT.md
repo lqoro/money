@@ -1,13 +1,13 @@
 # Trencher live report
 
-Updated 2026-11-02T06:35:40Z (paper trading, never real money)
+Updated 2026-11-02T06:50:47Z (paper trading, never real money)
 
 - Equity: $80.53 (-19.5% vs $100 start)
-- Goal: $1,000 by 2026-11-05 05:03Z (pressing for it): at 8.1% of it, 2.9 days left, needs +135.9% a day from here
+- Goal: $1,000 by 2026-11-05 05:03Z (pressing for it): at 8.1% of it, 2.9 days left, needs +136.6% a day from here
 - Closed trades: 19, 3 wins
 - Fees paid: $12.66 (axiom $2.26, network $8.06, pool $2.21), plus $3.34 lost to slippage
 - New trades: on
-- Brain: subscription, 564 calls and 0 plan-limit hits in 48h
+- Brain: subscription, 560 calls and 0 plan-limit hits in 48h
 
 ## Scorecard (after fees)
 - 19 closed, 3 won (16%), net $-19.48
@@ -74,9 +74,15 @@ Updated 2026-11-02T06:35:40Z (paper trading, never real money)
   CA `GYKnd6jGUSQoBUnj6LdGCBtCWYDgr2Zd6QwNPcy5pump`
 
 ## Last scan
-- 06:35Z: 16 coins, 16 with pairs, 0 passed the market filters, 0 researched
+- 06:49Z: 3 coins, 3 with pairs, 0 passed the market filters, 0 researched
 
 ## Coins it looked at, and why it passed
+- 06:42Z faucet (MIGRATED, $68,002 mcap, $14,364 5m vol): PASS at conviction 3, PASS: 5m flow is only 0.56x the hourly pace on a 39-minute-old migration. Blocker "flow below pace". The "free SOL, paste your wallet" site gimmick doesn't help (V1, V3, V7).  
+  CA `99V36NFUcueC2tHjd1JV5bfhFux73NKWRiSBnxJ8pump`
+- 06:39Z Tradition (FINAL_STRETCH, $32,241 mcap, $7,514 5m vol): REJECT, RugCheck danger: Creator history of rugged tokens  
+  CA `B6fSFYV84wjjPN2Rej1fai1tgF9qbVtj4a32Kej9pump`
+- 06:38Z CI (MIGRATED, $33,185 mcap, $22,826 5m vol): REJECT, Top 10 hold 27.6% ex-pool (>25%) (V13)  
+  CA `DkpL2e59QKGdrHnNHUDmy9ieWbmMHeHfMh4kA6bEpump`
 - 06:26Z GATO (MIGRATED, $8,370,731 mcap, $2,308 5m vol): REJECT, Dev holds 3.3% (>1%) (V13, V17)  
   CA `HsprHxBRgiVaQdRf3TnKNuZZtaX9JUSPgMFdAkk6pump`
 - 06:17Z CHOO (MIGRATED, $1,993,816 mcap, $2,305 5m vol): PASS at conviction 3, PASS: $2.3k on the 5m and $16k for the whole hour on a $2M coin. The crowd that did $1.4M in 24h has gone home. Blocker "thin flow" (V6).  
@@ -91,12 +97,6 @@ Updated 2026-11-02T06:35:40Z (paper trading, never real money)
   CA `8s4bNqEztH1JP7mkU747uMr7AckCQdiV47FDqYnDpump`
 - 05:56Z faucet (FINAL_STRETCH, $19,770 mcap, $11,838 5m vol): REJECT, Top 10 hold 25.4% ex-pool (>25%) (V13)  
   CA `99V36NFUcueC2tHjd1JV5bfhFux73NKWRiSBnxJ8pump`
-- 05:31Z Warcoin (no setup, $15,771 mcap, $6,965 5m vol): REJECT, No setup fits: not Final Stretch, not a migrated runner, not a healthy dip  
-  CA `H86pLyqzZMim3pxrC29YWsMKoxL6xGFM1nQyVtyRpump`
-- 05:31Z TRUMP (MIGRATED, $119,726 mcap, $140,885 5m vol): REJECT, Bundles: 2 linked wallet cluster(s) hold 100.0% of supply (>20%) (V17)  
-  CA `En5icDhYYCuGXTtCLmfWiGR4C9nMiYMKojLdBRfVpump`
-- 05:31Z XMRISE (MIGRATED, $72,643 mcap, $14,109 5m vol): PASS at conviction 2, PASS: 15 minutes old, sitting right at its high after a +46% five-minute candle. That's chasing a spike on a fresh migration, and the "launchpad" has a website that's a few hours old with nothing behind it. (V1, V5, V6)  
-  CA `5GNDhmKmNks2ELBCmLHPZYBeYu2NCDqnrhKnBBr99xmr`
 
 ## What its skips did next (last 48h)
 A skip "ran" if the coin reached the first target (1.5x) from the skip price before a 20% drop, "dumped" if the drop came first. Sampled every 10 min, followed 6h.
@@ -114,14 +114,14 @@ A skip "ran" if the coin reached the first target (1.5x) from the skip price bef
     CA `CCF6ui6YjjhLaVtuYLH8b5jza8jHathqww5VbrMapump`
   - ran: VETOTRUMP up to 1.66x  
     CA `6g16UK4wHoFhC7PCmw8LYYCdt9q8m99fyoAwxeCrpump`
-- top 10 over 25%: blocked 40, ran 8, dumped 28, flat 3, open 1 (saving losses: keep it)
+- top 10 over 25%: blocked 40, ran 7, dumped 29, flat 3, open 1 (saving losses: keep it)
   - ran: Beaver up to 2.56x  
     CA `5h44wfzwGHFnfVhNKtMLapAJNV9iqqbUgUB2FqyWpump`
   - ran: timmy up to 1.66x  
     CA `TiMSdJrkVwUpeEWJpuqRvHt4wVS7uH77LbNPGGVJXNw`
   - ran: WASTED up to 1.93x  
     CA `GexThZHgaswpAQ7Fi8QrHFubjPimUNSYhJiAA7XZpump`
-- falling knife (code): blocked 29, ran 4, dumped 20, flat 2, open 3 (saving losses: keep it)
+- falling knife (code): blocked 29, ran 4, dumped 21, flat 2, open 2 (saving losses: keep it)
   - ran: KIM up to 1.55x  
     CA `8pjfN5Ayb4rucGpYE3tZWN6v3EysizjPx1v62zx1pump`
   - ran: BLUE up to 1.53x  
@@ -135,7 +135,7 @@ A skip "ran" if the coin reached the first target (1.5x) from the skip price bef
     CA `DUTxGHL2LmpfjQaoK6LdZp8WQPoDiwvtDHVDf4fMpump`
   - ran: whitepaper up to 2.16x  
     CA `4tEvXHpd6JrCWJGByBS3qFBAtJbeoiEpgvWLw9hkpump`
-- RugCheck danger: blocked 21, ran 4, dumped 17, flat 0, open 0 (saving losses: keep it)
+- RugCheck danger: blocked 22, ran 4, dumped 18, flat 0, open 0 (saving losses: keep it)
   - ran: SUGAR up to 1.74x  
     CA `HLzTFsX99uqzAP7uK36gJ2pPHGfRM8ugvxXWJzjSpump`
   - ran: AIC up to 1.6x  
@@ -188,16 +188,16 @@ A skip "ran" if the coin reached the first target (1.5x) from the skip price bef
 - [2026-11-01 06:19] Expected AAPLCAT, 36% off its $1.8M high with a printed higher-low base, clean holders and $12.6k on the 5m, to retest the peak at about 1.57x. It peaked at 1.01x, broke the 0.000981 higher low, and the "unclear" stop review sold at −31% instead of −20%. That makes 7 of 7 stop reviews closing worse than the stop. This confirms my existing rules rather than adding a new one: the proven band needs 5m at or above the hourly pace and a meta with the crowd still arriving (V1, V6). I bought with pace under the hourly average and a cooling meta, so next time a band entry with flow below pace is a PASS (blocker "flow below pace"), not a probe, and a broken higher low sells right away.
 
 ## Meta right now
-Meta: war/peace jokes, churning fast (PEACE $141k/$73k 5m, TRUMP 'Peace President' $124k/$141k 5m +209%, Warcoin/WARCAT/WARDOG). The crawler's summary is stale: INU and NA rugged ~98%, as did World Peace and War Coin. Star Wars fading: ANAKIN 5m vol ~0.5x its hourly pace, fails the 0.7x DIP gate. Off-theme: XMRISE privacy play ($73k, $14k 5m), matches CoinGecko's Privacy category. Research: PEACE (DIP/MIGRATED probe, 1.5h old, buys 0.57), XMRISE (MIGRATED probe, 12 min old), TRUMP (best flow but 18 min old and political name, needs a V13 check that no politician pushed the CA). PASS: NA/INU (rugged), HOPE (slur kills appeal, V6), bonding-curve war coins (sniping new pairs, V5). Owner's push buys probes, not 8s. Hard lines and 20% stop hold.
+War/peace meta is dying: TRUMP rugged (-98%, $0 5m), WAR -80%, WARDOG -87%, PEACE -34% at ~0.17x hourly pace (fails 0.7x DIP gate). Crawler summary is stale. Flow has moved to young off-theme pumpswap coins under 1h old at $30-70k mcap: faucet ($68k, +76%/1h, $14.4k 5m, buys 0.63, cooling to ~0.56x), CI ($22.8k 5m, 6 min old), XMRISE (privacy, fading ~0.37x). Setup: faucet MIGRATED on a 10%+ pullback if checks come back clean, conviction 6-7. Watch: CI (too new, V5), Tradition (still on the curve, sell-heavy 0.43). PASS: TRUMP (rugged, political name, V13), PEACE (volume falling), LAPTOP (politician's son's coin, down 98%, V13), WAR/WARDOG/WARCAT (dead flow).
 
 ## Moving most in its scans, last 30 min (1h volume)
-- TRUMP: $422,424 1h vol, $1,847 mcap, -98% 1h  
+- faucet: $307,118 1h vol, $68,002 mcap, +76% 1h  
+  CA `99V36NFUcueC2tHjd1JV5bfhFux73NKWRiSBnxJ8pump`
+- TRUMP: $138,838 1h vol, $1,846 mcap, -98% 1h  
   CA `En5icDhYYCuGXTtCLmfWiGR4C9nMiYMKojLdBRfVpump`
-- PEACE: $334,843 1h vol, $171,367 mcap, -34% 1h  
-  CA `BngAfLZxaWN2QvpFhRbUHydYGr8zA7YTSA178G8Epump`
-- XMRISE: $202,401 1h vol, $60,788 mcap, +45% 1h  
-  CA `5GNDhmKmNks2ELBCmLHPZYBeYu2NCDqnrhKnBBr99xmr`
-- WAR: $117,426 1h vol, $7,618 mcap, -80% 1h  
+- WAR: $120,354 1h vol, $7,334 mcap, -80% 1h  
   CA `G6KTcxD7nJT4poBZsGiANHZHcUvPoDLjaVVZhBPdpump`
 - GATO: $49,178 1h vol, $8,375,341 mcap, -4% 1h  
   CA `HsprHxBRgiVaQdRf3TnKNuZZtaX9JUSPgMFdAkk6pump`
+- Tradition: $42,352 1h vol, $32,263 mcap, +902% 1h  
+  CA `B6fSFYV84wjjPN2Rej1fai1tgF9qbVtj4a32Kej9pump`
