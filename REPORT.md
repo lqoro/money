@@ -1,13 +1,13 @@
 # Trencher live report
 
-Updated 2026-11-02T11:53:23Z (paper trading, never real money)
+Updated 2026-11-02T12:08:23Z (paper trading, never real money)
 
 - Equity: $77.09 (-22.9% vs $100 start)
-- Goal: $1,000 by 2026-11-05 05:03Z (pressing for it): at 7.7% of it, 2.7 days left, needs +157% a day from here
+- Goal: $1,000 by 2026-11-05 05:03Z (pressing for it): at 7.7% of it, 2.7 days left, needs +157.9% a day from here
 - Closed trades: 21, 3 wins
 - Fees paid: $14.04 (axiom $2.63, network $8.81, pool $2.47), plus $3.89 lost to slippage
 - New trades: on
-- Brain: subscription, 538 calls and 0 plan-limit hits in 48h
+- Brain: subscription, 535 calls and 0 plan-limit hits in 48h
 
 ## Scorecard (after fees)
 - 21 closed, 3 won (14%), net $-22.93
@@ -74,9 +74,15 @@ Updated 2026-11-02T11:53:23Z (paper trading, never real money)
   CA `8s4bNqEztH1JP7mkU747uMr7AckCQdiV47FDqYnDpump`
 
 ## Last scan
-- 11:52Z: 5 coins, 4 with pairs, 1 passed the market filters, 1 researched
+- 12:07Z: 2 coins, 1 with pairs, 0 passed the market filters, 0 researched
 
 ## Coins it looked at, and why it passed
+- 11:57Z GATO (MIGRATED, $10,372,204 mcap, $3,560 5m vol): REJECT, Dev holds 3.3% (>1%) (V13, V17)  
+  CA `HsprHxBRgiVaQdRf3TnKNuZZtaX9JUSPgMFdAkk6pump`
+- 11:57Z ANAKIN (MIGRATED, $3,823,862 mcap, $9,601 5m vol): PASS at conviction 3, PASS: third try on a coin that's already cost me twice. It hasn't reclaimed the $6.05M high, and flow is under pace. Blocker: "re-entry limit / flow below pace" (V1, V6).  
+  CA `8s4bNqEztH1JP7mkU747uMr7AckCQdiV47FDqYnDpump`
+- 11:54Z FRIDGE (FINAL_STRETCH, $21,850 mcap, $1,991 5m vol): REJECT, 5m volume $1,991 is dead (<$2,000) (V1)  
+  CA `ErMZtDHpk1uYSHRkPbV3Zd15MFpU6snHY4reZfRjpump`
 - 11:53Z BC (MIGRATED, $116,806 mcap, $38,030 5m vol): PASS at conviction 3, PASS: 12 minutes old, 10.9% off a high it printed six minutes ago, and it's a generic "BITCOIN" copycat with three bigger coins on the same ticker. Blocker: too new / chasing. (V1, V3, V5)  
   CA `2WVN5SpEPCc43msHG9j9bpBTxcQHx3A81NyAEaXfpump`
 - 11:50Z wen (MIGRATED, $101,262 mcap, $41,574 5m vol): REJECT, Top 10 hold 31.8% ex-pool (>25%) (V13)  
@@ -91,12 +97,6 @@ Updated 2026-11-02T11:53:23Z (paper trading, never real money)
   CA `Fj7xiaMe8fLGa1gMVTX8JJr54WsMyzbBJnm3Vx6fpump`
 - 11:26Z thisman (no setup, $16,537 mcap, $3,741 5m vol): REJECT, No setup fits: not Final Stretch, not a migrated runner, not a healthy dip  
   CA `6d6J2kWJiimgqmxjLVTu31hxDyBFt2zBguYdjSripump`
-- 11:24Z DESSA (DIP, $15,276,969 mcap, $4,076 5m vol): PASS at conviction 3, PASS: a $15M coin trading $4k on the 5m with more sells than buys. The crowd isn't coming back. Blocker: "flow below bar" (V1, V6).  
-  CA `npz2FhoufQ7pKqhGpaipYWacrAkidyW2yDpVWSvpump`
-- 11:21Z WWIII (MIGRATED, $92,291 mcap, $3,192 5m vol): REJECT, RugCheck danger: Creator history of rugged tokens  
-  CA `GD52VfoPZdad4hiNPg4UnjtDGsS4WiM3mqS8j1czpump`
-- 11:17Z SPERM (FINAL_STRETCH, $22,017 mcap, $52,507 5m vol): REJECT, RugCheck danger: Creator history of rugged tokens  
-  CA `8mCBqQsvLtyaW93PGWFGZrj7ZjWn395TBZ9TCsvipump`
 
 ## What its skips did next (last 48h)
 A skip "ran" if the coin reached the first target (1.5x) from the skip price before a 20% drop, "dumped" if the drop came first. Sampled every 10 min, followed 6h.
@@ -140,26 +140,26 @@ A skip "ran" if the coin reached the first target (1.5x) from the skip price bef
     CA `Ewyifvp8X9NxeaKawXamGXBFDisuMfcFfcdvSZ8opump`
   - ran: PI up to 1.6x  
     CA `93VGqXL76voGxc43apJTDJoKkqnxTht1BKWoEmUypump`
-- RugCheck didn't load: blocked 16, ran 3, dumped 11, flat 2, open 0 (saving losses: keep it)
+- bundles over the line: blocked 16, ran 2, dumped 11, flat 2, open 1 (saving losses: keep it)
+  - ran: Nuts up to 1.53x  
+    CA `APH9FRoKst66E4a7uZXcEfE8NjtwybUC8Jq7ue8upump`
+  - ran: NA up to 1.97x  
+    CA `9ZmdP8q22ebRhEkcwd5EDkitu7ypeDFXTQXpv2kUpump`
+- RugCheck didn't load: blocked 14, ran 3, dumped 9, flat 2, open 0 (saving losses: keep it)
   - ran: UNSAFU up to 1.61x  
     CA `4eq4JfnpdgqZTzeyR3GnRGHJQ3QhQT6Lp7nKnQ2nS7Rv`
   - ran: billy up to 3.75x  
     CA `DUTxGHL2LmpfjQaoK6LdZp8WQPoDiwvtDHVDf4fMpump`
   - ran: whitepaper up to 2.16x  
     CA `4tEvXHpd6JrCWJGByBS3qFBAtJbeoiEpgvWLw9hkpump`
-- bundles over the line: blocked 16, ran 2, dumped 11, flat 2, open 1 (saving losses: keep it)
-  - ran: Nuts up to 1.53x  
-    CA `APH9FRoKst66E4a7uZXcEfE8NjtwybUC8Jq7ue8upump`
-  - ran: NA up to 1.97x  
-    CA `9ZmdP8q22ebRhEkcwd5EDkitu7ypeDFXTQXpv2kUpump`
-- dev share over 1%: blocked 11, ran 3, dumped 5, flat 2, open 1 (mixed)
+- dev share over 1%: blocked 11, ran 3, dumped 5, flat 1, open 2 (mixed)
   - ran: IGLU up to 1.54x  
     CA `34YQhrgkWoeFnm6LrcnmV3PLyDaMSNZikzUjyMmupump`
   - ran: MINTED up to 1.61x  
     CA `9yEKBwczdqoox7Red6GGPTrJ2dUbMvFUagdjxFqHpump`
   - ran: DOJAK up to 2.62x  
     CA `E5aeDjgq6ZSzAmihKoh9JPEhwK2bMCbZLJf6LYT9pump`
-- thin 5m volume: blocked 10, ran 1, dumped 4, flat 3, open 2 (saving losses: keep it)
+- thin 5m volume: blocked 10, ran 1, dumped 3, flat 3, open 3 (saving losses: keep it)
   - ran: CUMFACE up to 1.55x  
     CA `J1D3X8znX4AzUPMHVWyBLNHqBBqWDPNSjX4KwK3Qpump`
 
@@ -193,9 +193,9 @@ The meta is hour-old pump.fun launches that pump hard and then die. Most of the 
   CA `2WVN5SpEPCc43msHG9j9bpBTxcQHx3A81NyAEaXfpump`
 - wen: $140,680 1h vol, $104,524 mcap, +164% 1h  
   CA `GGLZzgVssSaW7zKrtNveFYyp2zrkfVTce1TjgPfNpump`
-- マイロ: $130,585 1h vol, $4,180 mcap, +3% 1h  
-  CA `BnX42wN82J4NHqz2dCY9YUaNzJHLYqrS3gRC72Z1AesP`
-- Scam: $117,333 1h vol, $11,822 mcap, -68% 1h  
-  CA `p1UeRax45z4x8GYjFojAgFKz8hkoZitKLTiCjdeib5F`
-- BOOSTX: $89,400 1h vol, $8,706 mcap, -56% 1h  
-  CA `7F3N3U5Dpg1dVrtes5SxxTp3VXcvBcXrbKtuwuGbqE8f`
+- NATIONS: $128,323 1h vol, $13,719 mcap, -65% 1h  
+  CA `539mKjC5Mwt7Q1ov72djoyYkQpiUTshbxFNDAbZ5pump`
+- GATO: $126,954 1h vol, $10,372,204 mcap, -1% 1h  
+  CA `HsprHxBRgiVaQdRf3TnKNuZZtaX9JUSPgMFdAkk6pump`
+- ANAKIN: $120,017 1h vol, $3,823,862 mcap, -7% 1h  
+  CA `8s4bNqEztH1JP7mkU747uMr7AckCQdiV47FDqYnDpump`
