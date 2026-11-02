@@ -1,13 +1,13 @@
 # Trencher live report
 
-Updated 2026-11-02T00:45:10Z (paper trading, never real money)
+Updated 2026-11-02T01:00:33Z (paper trading, never real money)
 
 - Equity: $80.53 (-19.5% vs $100 start)
-- Goal: $1,000 by 2026-11-05 05:03Z (pressing for it): at 8.1% of it, 3.2 days left, needs +120.9% a day from here
+- Goal: $1,000 by 2026-11-05 05:03Z (pressing for it): at 8.1% of it, 3.2 days left, needs +121.5% a day from here
 - Closed trades: 19, 3 wins
 - Fees paid: $12.66 (axiom $2.26, network $8.06, pool $2.21), plus $3.34 lost to slippage
 - New trades: on
-- Brain: subscription, 611 calls and 0 plan-limit hits in 48h
+- Brain: subscription, 609 calls and 0 plan-limit hits in 48h
 
 ## Scorecard (after fees)
 - 19 closed, 3 won (16%), net $-19.48
@@ -74,9 +74,17 @@ Updated 2026-11-02T00:45:10Z (paper trading, never real money)
   CA `GYKnd6jGUSQoBUnj6LdGCBtCWYDgr2Zd6QwNPcy5pump`
 
 ## Last scan
-- 00:44Z: 4 coins, 3 with pairs, 0 passed the market filters, 0 researched
+- 01:00Z: 10 coins, 9 with pairs, 1 passed the market filters, 1 researched
 
 ## Coins it looked at, and why it passed
+- 01:00Z Heidou (MIGRATED, $39,769 mcap, $4,776 5m vol): PASS at conviction 3, PASS: 17 minutes old, down 13% on the 5m and still bleeding off its bond spike. A bigger Heidou exists. Too new (V1, V6).  
+  CA `HyXUTnyNp4noQRddxSUb6FjFsjv6jJtiEYBgAwanpump`
+- 00:59Z GATO (MIGRATED, $7,801,149 mcap, $4,140 5m vol): REJECT, Dev holds 3.3% (>1%) (V13, V17)  
+  CA `HsprHxBRgiVaQdRf3TnKNuZZtaX9JUSPgMFdAkk6pump`
+- 00:56Z Learjet (MIGRATED, $164,781 mcap, $27,501 5m vol): REJECT, Bundles: 6 linked wallet cluster(s) hold 20.4% of supply (>20%) (V17)  
+  CA `DaG1X248VVvWuqaiBURFSe4b4L7RUm8sR57FJBZ7pump`
+- 00:56Z ANAKIN (MIGRATED, $2,151,343 mcap, $13,223 5m vol): PASS at conviction 3, PASS — ANAKIN is 11.9% off its high and the only resistance is that high at $2.44M, just 1.13x away, while 5m flow runs at 0.56x the hourly pace. Target too close, flow below pace. (V1, V6)  
+  CA `8s4bNqEztH1JP7mkU747uMr7AckCQdiV47FDqYnDpump`
 - 00:43Z WASTED (MIGRATED, $53,779 mcap, $8,577 5m vol): REJECT, RugCheck danger: Large Amount of LP Unlocked 100.00%  
   CA `4mTR4pBnoAPWxzvbK7L6HtRm1XXsxtaSUBUzEqSPEv1x`
 - 00:43Z TREMP (FINAL_STRETCH, $23,472 mcap, $12,189 5m vol): PASS at conviction 3, PASS: vamp. Four bigger TREMPs exist, top 10 hold 24.1% one point under the line, and there's no project X behind a politician parody. That's a curve farm, not a runner (V1, V3, V6, V13).  
@@ -89,30 +97,22 @@ Updated 2026-11-02T00:45:10Z (paper trading, never real money)
   CA `ExxzYBTt3jwU5MUxuw2F4toYbTLdFwThSjyaCn6Xpump`
 - 00:15Z PIBBLE (MIGRATED, $41,503 mcap, $11,002 5m vol): REJECT, Top 10 hold 27.5% ex-pool (>25%) (V13)  
   CA `FT2vbWKVKvMT8Bjat7V6f2FNjerN1hbcWkYY54czvyq8`
-- 00:14Z Heidou (FINAL_STRETCH, $24,218 mcap, $2,160 5m vol): PASS at conviction 3, PASS — flow below pace. $2.2k on the 5m at 0.63x hourly, 4.5% off the peak, no meta it belongs to. It's cooling into the bond, not breaking through (V1).  
-  CA `HyXUTnyNp4noQRddxSUb6FjFsjv6jJtiEYBgAwanpump`
-- 00:14Z 10M (MIGRATED, $35,240 mcap, $6,075 5m vol): PASS at conviction 2, PASS — chasing spike: 9-minute-old pool, last 5m candle +29.6% at 3.7x the hourly pace, and the only high is 1.18x away. No story, no crowd (V1, V6).  
-  CA `HV2BJ1SZ2tQSD9cufeS7JGsiY9Z1ug8LEPp5imV6pump`
-- 00:14Z Emily (FINAL_STRETCH, $27,149 mcap, $13,354 5m vol): REJECT, Top 10 hold 29.1% ex-pool (>25%) (V13)  
-  CA `CrW5j6ehF8hu6efmndJoSoATgipRA959QzpYxEtbpump`
-- 00:13Z GATO (MIGRATED, $8,431,129 mcap, $4,518 5m vol): REJECT, Dev holds 3.3% (>1%) (V13, V17)  
-  CA `HsprHxBRgiVaQdRf3TnKNuZZtaX9JUSPgMFdAkk6pump`
 
 ## What its skips did next (last 48h)
 A skip "ran" if the coin reached the first target (1.5x) from the skip price before a 20% drop, "dumped" if the drop came first. Sampled every 10 min, followed 6h.
-- near the high / chasing: blocked 61, ran 5, dumped 45, flat 8, open 3 (saving losses: keep it)
+- near the high / chasing: blocked 60, ran 5, dumped 45, flat 8, open 2 (saving losses: keep it)
   - ran: Hyped up to 2.02x  
     CA `ADpzsC5eB1yDD5T9LocQ8kpN7jrcW5gobA4FBHuipump`
   - ran: Wojak up to 2.51x  
     CA `BbNuEtiT77Swr4WqGHuUkQY5kZ67M7au7bXkxcArpump`
   - ran: BBOTS up to 1.51x  
     CA `4TCevs5EC2RFsdWo3YPVifqe9dX2acCGGa9VHNtppump`
-- too new / sniping: blocked 50, ran 2, dumped 45, flat 0, open 3 (saving losses: keep it)
+- too new / sniping: blocked 51, ran 2, dumped 45, flat 0, open 4 (saving losses: keep it)
   - ran: onlypump up to 1.92x  
     CA `J73efZvH6rkrJbFJdP2rqe473YJW7tyWmrNARUSzpump`
   - ran: paws up to 1.51x  
     CA `CCF6ui6YjjhLaVtuYLH8b5jza8jHathqww5VbrMapump`
-- top 10 over 25%: blocked 37, ran 7, dumped 25, flat 3, open 2 (saving losses: keep it)
+- top 10 over 25%: blocked 37, ran 7, dumped 26, flat 3, open 1 (saving losses: keep it)
   - ran: Beaver up to 2.56x  
     CA `5h44wfzwGHFnfVhNKtMLapAJNV9iqqbUgUB2FqyWpump`
   - ran: timmy up to 1.66x  
@@ -155,9 +155,7 @@ A skip "ran" if the coin reached the first target (1.5x) from the skip price bef
     CA `9yEKBwczdqoox7Red6GGPTrJ2dUbMvFUagdjxFqHpump`
   - ran: DOJAK up to 2.62x  
     CA `E5aeDjgq6ZSzAmihKoh9JPEhwK2bMCbZLJf6LYT9pump`
-- hack story (owner rule): blocked 7, ran 1, dumped 2, flat 4, open 0 (saving losses: keep it)
-  - ran: ACT:H up to 1.53x  
-    CA `3B3SJFo8kvVoMvvkzrUCPdpDeSeCL773AJ3kNLWJpump`
+- bundles over the line: blocked 8, ran 0, dumped 5, flat 2, open 1 (saving losses: keep it)
 
 ## Rules it changed from results and skips
 - 11-01 16:56Z dropped: Any fee/friction cap or minimum position size (The code fee check owns this (target must pay 3x round-trip, round trip at most 20% of position); fix the pick or the exit instead.)
@@ -185,13 +183,13 @@ A skip "ran" if the coin reached the first target (1.5x) from the skip price bef
 The meta has three parts right now. First, Star Wars is still the leader: ANAKIN ($2.0M, 1.7h old, +23% in the hour, 0.73 buys, $14.8k on the 5m) and the older Anakin Skywalker ($3.55M, 77h old, 0.74 buys). The crawler's summary is stale. It talked about ANAKINCORE and Anakinius, but neither is in the movers anymore, and since two Anakins are both getting money, I need to check which one is the original before I touch either (V1, V3). Second, political-joke launches on the curve are rising: Vunce (JD Vance parody, $15k, 6 minutes old, $62k on the 5m), TREMP ($12k, $10.7k on the 5m) and Emily ($27k, +658%). All three are named after people, not pushed by them, but a parody of a politician is close to my politician line (V13), so each one needs a check on who posted the CA. Third, GTA nostalgia is back: WASTED ($410k, 54h old, +84%, 0.72 buys, $10.8k on the 5m) is the original. The young Raydium WASTED copy is a vamp, and GATO is bleeding with 0.41 buys. The quick pumps are fading hard: DIH is down 85%, ALON is down 81% at 0.14 buys, and MIP is dead. The setups I'd research now are WASTED as a MIGRATED/DIP continuation, ANAKIN as a DIP once 5m volume holds at 0.7x the hourly pace or better, PIBBLE as a MIGRATED candidate ($41k, $11k on the 5m, 0.64 buys) if its Raydium pool shows burned liquidity, and Emily as FINAL_STRETCH if holders come back clean. Owner, I'll press on clean setups, but each conviction number gets earned on the checklist, not on the deadline.
 
 ## Moving most in its scans, last 30 min (1h volume)
-- DIH: $424,054 1h vol, $8,708 mcap, -77% 1h  
-  CA `FaWS19fD8TrF2GpSXgghP9JN46LZBZ3FRown8qg1pump`
-- Anakin: $207,020 1h vol, $3,550,353 mcap, +2% 1h  
-  CA `ExxzYBTt3jwU5MUxuw2F4toYbTLdFwThSjyaCn6Xpump`
+- ANAKIN: $283,526 1h vol, $2,151,343 mcap, +22% 1h  
+  CA `8s4bNqEztH1JP7mkU747uMr7AckCQdiV47FDqYnDpump`
+- Learjet: $204,813 1h vol, $164,781 mcap, +315% 1h  
+  CA `DaG1X248VVvWuqaiBURFSe4b4L7RUm8sR57FJBZ7pump`
 - Anakinius: $171,970 1h vol, $306,300 mcap, -3% 1h  
   CA `2pKpMwUQXNZeAf93LoomnZSworH3ezFzweCiuvrppump`
 - TREMP: $87,928 1h vol, $23,472 mcap, +552% 1h  
   CA `BkpjfE6myLuNJcYo6kmHqVrTS7B6t86Hf4fScYMEpump`
-- Vunce: $79,502 1h vol, $4,341 mcap, +29% 1h  
-  CA `AkNKVehw7icEjtZMe29uCPD94w3byxAQ9Jx2LQ8npump`
+- Emily: $85,325 1h vol, $14,308 mcap, -5% 1h  
+  CA `CrW5j6ehF8hu6efmndJoSoATgipRA959QzpYxEtbpump`
