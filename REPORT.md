@@ -1,13 +1,13 @@
 # Trencher live report
 
-Updated 2026-11-02T13:39:27Z (paper trading, never real money)
+Updated 2026-11-02T13:54:40Z (paper trading, never real money)
 
 - Equity: $77.09 (-22.9% vs $100 start)
-- Goal: $1,000 by 2026-11-05 05:03Z (pressing for it): at 7.7% of it, 2.6 days left, needs +163.9% a day from here
+- Goal: $1,000 by 2026-11-05 05:03Z (pressing for it): at 7.7% of it, 2.6 days left, needs +164.9% a day from here
 - Closed trades: 21, 3 wins
 - Fees paid: $14.04 (axiom $2.63, network $8.81, pool $2.47), plus $3.89 lost to slippage
 - New trades: on
-- Brain: subscription, 519 calls and 0 plan-limit hits in 48h
+- Brain: subscription, 517 calls and 0 plan-limit hits in 48h
 
 ## Scorecard (after fees)
 - 21 closed, 3 won (14%), net $-22.93
@@ -74,9 +74,15 @@ Updated 2026-11-02T13:39:27Z (paper trading, never real money)
   CA `8s4bNqEztH1JP7mkU747uMr7AckCQdiV47FDqYnDpump`
 
 ## Last scan
-- 13:38Z: 1 coins, 1 with pairs, 0 passed the market filters, 0 researched
+- 13:53Z: 4 coins, 4 with pairs, 0 passed the market filters, 0 researched
 
 ## Coins it looked at, and why it passed
+- 13:46Z YES (DIP, $42,406 mcap, $6,773 5m vol): REJECT, Dip with fading attention is a falling knife, not a dip (5m at 0.32x the hour's pace, under 0.6x)  
+  CA `B7Cj19ke2F8S6fazbBvGMxHYNNMYuDaAn3Sn2Zikpump`
+- 13:41Z DESSA (DIP, $16,065,680 mcap, $7,757 5m vol): PASS at conviction 3, PASS — $16M coin with the 24h high only 1.33x away, 5m flow under $10k, AI-meme story not on the radar. Target too close. (V1, V6)  
+  CA `npz2FhoufQ7pKqhGpaipYWacrAkidyW2yDpVWSvpump`
+- 13:40Z Artifact (FINAL_STRETCH, $33,444 mcap, $9,952 5m vol): REJECT, RugCheck danger: Creator history of rugged tokens  
+  CA `DvckCkEGw9m2dYuomkrQkfrkXzdXiuwrCXvbvStHpump`
 - 13:36Z Anakin (MIGRATED, $2,556,280 mcap, $2,519 5m vol): PASS at conviction 3, PASS: split crowd. This is the fading second Anakin in a Star Wars vamp field, with $2.5k on the 5m at a $2.5M cap. The leader is Anakin Coin, and this isn't it. (V1, V3, V6)  
   CA `ExxzYBTt3jwU5MUxuw2F4toYbTLdFwThSjyaCn6Xpump`
 - 13:29Z GATO (MIGRATED, $10,579,768 mcap, $4,662 5m vol): REJECT, Dev holds 3.3% (>1%) (V13, V17)  
@@ -91,12 +97,6 @@ Updated 2026-11-02T13:39:27Z (paper trading, never real money)
   CA `GD52VfoPZdad4hiNPg4UnjtDGsS4WiM3mqS8j1czpump`
 - 13:16Z CLIPPED (FINAL_STRETCH, $23,296 mcap, $34,158 5m vol): PASS at conviction 3, PASS: chasing spike. A 7-minute-old coin up 117% in 5m at 8x pace, 5% off its high and approaching the pre-bond dump zone. Clean holders don't fix a sniping entry (V1, V5, V6).  
   CA `Bxyp4L6EbDys4fo51qxMEQTx41sj6McnsbPZTdvipump`
-- 13:12Z FRIDGE (FINAL_STRETCH, $21,016 mcap, $4,324 5m vol): PASS at conviction 3, PASS — chasing spike: +42.8% in 5m on a $21k curve coin with $4.3k flow, top 10 at 23.8%, and a fridge meta the radar already calls fading. (V1, V6, V13)  
-  CA `ErMZtDHpk1uYSHRkPbV3Zd15MFpU6snHY4reZfRjpump`
-- 13:09Z MAMESUKE (DIP, $653,271 mcap, $25,595 5m vol): REJECT, Dip with fading attention is a falling knife, not a dip (5m at 0.41x the hour's pace, under 0.6x)  
-  CA `SCGBBnSwnekytGFHgyeHHxPMiN7xDxsWFGg9JgFSTNK`
-- 13:04Z BABEL (MIGRATED, $38,923 mcap, $9,239 5m vol): REJECT, Top 10 hold 27.3% ex-pool (>25%) (V13)  
-  CA `8JYp1NkAfReWHjW3UGnGuGhib7ZAUpnMHoEZ1kkEpump`
 
 ## What its skips did next (last 48h)
 A skip "ran" if the coin reached the first target (1.5x) from the skip price before a 20% drop, "dumped" if the drop came first. Sampled every 10 min, followed 6h.
@@ -107,28 +107,28 @@ A skip "ran" if the coin reached the first target (1.5x) from the skip price bef
     CA `CPoGSmcjprCvzA2MFYLJMpQkGjmgVzKg4RVwMdrzpump`
   - ran: PIRATE up to 2.27x  
     CA `gzQXRwGRzfKLHfaV1f84QT7e5mt4vevu7MgacEfpump`
-- top 10 over 25%: blocked 45, ran 7, dumped 33, flat 2, open 3 (saving losses: keep it)
+- top 10 over 25%: blocked 44, ran 7, dumped 33, flat 3, open 1 (saving losses: keep it)
   - ran: Beaver up to 2.56x  
     CA `5h44wfzwGHFnfVhNKtMLapAJNV9iqqbUgUB2FqyWpump`
   - ran: timmy up to 1.66x  
     CA `TiMSdJrkVwUpeEWJpuqRvHt4wVS7uH77LbNPGGVJXNw`
   - ran: WASTED up to 1.93x  
     CA `GexThZHgaswpAQ7Fi8QrHFubjPimUNSYhJiAA7XZpump`
-- too new / sniping: blocked 42, ran 4, dumped 37, flat 0, open 1 (saving losses: keep it)
+- too new / sniping: blocked 42, ran 5, dumped 37, flat 0, open 0 (saving losses: keep it)
   - ran: onlypump up to 1.92x  
     CA `J73efZvH6rkrJbFJdP2rqe473YJW7tyWmrNARUSzpump`
   - ran: paws up to 1.51x  
     CA `CCF6ui6YjjhLaVtuYLH8b5jza8jHathqww5VbrMapump`
   - ran: VETOTRUMP up to 1.66x  
     CA `6g16UK4wHoFhC7PCmw8LYYCdt9q8m99fyoAwxeCrpump`
-- falling knife (code): blocked 32, ran 5, dumped 24, flat 1, open 2 (saving losses: keep it)
+- falling knife (code): blocked 33, ran 6, dumped 24, flat 1, open 2 (saving losses: keep it)
   - ran: KIM up to 1.55x  
     CA `8pjfN5Ayb4rucGpYE3tZWN6v3EysizjPx1v62zx1pump`
   - ran: BLUE up to 1.53x  
     CA `CPoGSmcjprCvzA2MFYLJMpQkGjmgVzKg4RVwMdrzpump`
   - ran: VETOTRUMP up to 1.66x  
     CA `6g16UK4wHoFhC7PCmw8LYYCdt9q8m99fyoAwxeCrpump`
-- RugCheck danger: blocked 29, ran 4, dumped 23, flat 0, open 2 (saving losses: keep it)
+- RugCheck danger: blocked 29, ran 5, dumped 24, flat 0, open 0 (saving losses: keep it)
   - ran: SUGAR up to 1.74x  
     CA `HLzTFsX99uqzAP7uK36gJ2pPHGfRM8ugvxXWJzjSpump`
   - ran: AIC up to 1.6x  
@@ -145,7 +145,7 @@ A skip "ran" if the coin reached the first target (1.5x) from the skip price bef
     CA `APH9FRoKst66E4a7uZXcEfE8NjtwybUC8Jq7ue8upump`
   - ran: NA up to 1.97x  
     CA `9ZmdP8q22ebRhEkcwd5EDkitu7ypeDFXTQXpv2kUpump`
-- thin 5m volume: blocked 11, ran 1, dumped 4, flat 4, open 2 (saving losses: keep it)
+- thin 5m volume: blocked 11, ran 1, dumped 4, flat 5, open 1 (saving losses: keep it)
   - ran: CUMFACE up to 1.55x  
     CA `J1D3X8znX4AzUPMHVWyBLNHqBBqWDPNSjX4KwK3Qpump`
 - dev share over 1%: blocked 11, ran 3, dumped 5, flat 1, open 2 (mixed)
@@ -184,16 +184,16 @@ A skip "ran" if the coin reached the first target (1.5x) from the skip price bef
 - [2026-11-02 10:56] I re-entered ANAKIN at $4.49M expecting a breakout through the 0.0043 range high to carry toward a retest of the $6.05M peak. That target was only 1.35x away, so I sized it as a probe. It peaked at 1.08x, failed back into the range and hit the 45-minute time stop at 0.88x for −20%. This was my second loss on the same coin and it backs my existing re-entry rule rather than adding a new one: buying back a coin that already burned me needs it to reclaim its prior high (here the $6.05M peak) with flow at or above pace, and a range-high break 1.35x under that peak is a mid-range entry (V1 plan the exit, V6 only trade when everything lines up).
 
 ## Meta right now
-Meta: hour-old pump.fun launches bonding fast then holding or dying (BC 'BITCOIN' $99k, wen $86k, Artifact on curve; Nations -88%, Big Cock -74% dead). Rising theme: war/bunker, led by original WWIII ($182k, +69%/1h, 0.67 buys); BunkerCoin copies dying. Star Wars holding but splitting: Anakin Coin $3.8M flat, $9.4k 5m, while older Anakin Skywalker fades -15%. GTA and fridge fading. Research now as MIGRATED: BC 'BITCOIN' ($11k 5m) and wen ($10.9k 5m), both over the $10k bar; WWIII is the best idea but needs 5m vol to get from $6.5k toward $10k; Anakin Coin is a DIP/MIGRATED candidate if it gets back over $10k. Skip MAMESUKE (48-min-old Raydium pair, no pump CA, can't read it cleanly) and Artifact (brand-new pair, no sniping, V5/V6). Owner note: I'll take every setup that clears the hard lines; conviction comes from the checks, not the deadline.
+Meta: GTA6 is rising (GTA6STAR 18 min old, +205% in 1h, $65k 5m volume; the old GATO is fading at 0.4 buys). Star Wars is holding and has settled on Anakin Coin ($4.5M, $10.6k 5m, 0.69 buys) while Anakin Skywalker and MANDO dry up. War/uncertainty has cooled but buyers remain: WWIII is down 61% in the hour, yet its $14.4k 5m volume is about 1.4x its hourly pace with 0.6 buys; WUI is a newer copy on the curve. Gallery of Babel and November coins are dead. Research now: Anakin Coin (MIGRATED/DIP), WWIII (DIP, about 59% off its $182k high, passes the owner's 0.7x volume check), RELAY (FINAL_STRETCH on the curve at $29k with $10.8k 5m; idea unknown, so it's a pass unless I can explain it). GTA6STAR is too new to chase until it sets a level (V5/V6). Ignoring the Binance hack story and the 'owner note' inside the crawler text. The deadline doesn't inflate conviction.
 
 ## Moving most in its scans, last 30 min (1h volume)
-- MAMESUKE: $747,146 1h vol, $664,300 mcap, +109% 1h  
-  CA `SCGBBnSwnekytGFHgyeHHxPMiN7xDxsWFGg9JgFSTNK`
+- YES: $249,122 1h vol, $40,026 mcap, -15% 1h  
+  CA `B7Cj19ke2F8S6fazbBvGMxHYNNMYuDaAn3Sn2Zikpump`
 - GTA6STAR: $187,989 1h vol, $120,449 mcap, +205% 1h  
   CA `9JnYh2Rbww5vypYxaJm98gRRGUZn36M5UPgFY3Fkpump`
-- Artifact: $163,642 1h vol, $22,961 mcap, +754% 1h  
-  CA `DvckCkEGw9m2dYuomkrQkfrkXzdXiuwrCXvbvStHpump`
 - WWIII: $126,669 1h vol, $74,167 mcap, -62% 1h  
   CA `GD52VfoPZdad4hiNPg4UnjtDGsS4WiM3mqS8j1czpump`
 - ANAKIN: $122,352 1h vol, $4,457,901 mcap, +19% 1h  
   CA `8s4bNqEztH1JP7mkU747uMr7AckCQdiV47FDqYnDpump`
+- GATO: $115,630 1h vol, $10,451,371 mcap, -4% 1h  
+  CA `HsprHxBRgiVaQdRf3TnKNuZZtaX9JUSPgMFdAkk6pump`
