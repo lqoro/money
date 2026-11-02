@@ -1,13 +1,13 @@
 # Trencher live report
 
-Updated 2026-11-02T08:06:19Z (paper trading, never real money)
+Updated 2026-11-02T08:21:25Z (paper trading, never real money)
 
-- Equity: $80.17 (-19.8% vs $100 start)
-- Goal: $1,000 by 2026-11-05 05:03Z (pressing for it): at 8% of it, 2.9 days left, needs +140.7% a day from here
+- Equity: $79.55 (-20.5% vs $100 start)
+- Goal: $1,000 by 2026-11-05 05:03Z (pressing for it): at 8% of it, 2.9 days left, needs +142.2% a day from here
 - Closed trades: 19, 3 wins
 - Fees paid: $13.01 (axiom $2.36, network $8.25, pool $2.28), plus $3.48 lost to slippage
 - New trades: on
-- Brain: subscription, 554 calls and 0 plan-limit hits in 48h
+- Brain: subscription, 551 calls and 0 plan-limit hits in 48h
 
 ## Scorecard (after fees)
 - 19 closed, 3 won (16%), net $-19.48
@@ -24,10 +24,10 @@ Updated 2026-11-02T08:06:19Z (paper trading, never real money)
   - time stop: 8, 1 won, net $-4.79, fees+slip $6.40, peak 1.25x → 0.87x
   - trailing stop: 2, 2 won, net $+4.21, fees+slip $2.04, peak 3.32x → 1.72x
   - other: 1, 0 won, net $-0.03, fees+slip $0.67, peak 1.4x → 0.99x
-- To $1,000: $919.83 to go; at $-1.03 a trade this pace doesn't get there
+- To $1,000: $920.45 to go; at $-1.03 a trade this pace doesn't get there
 
 ## Open positions
-- ANAKIN (MIGRATED): cost $10.01, 1.0x, fees $0.36  
+- ANAKIN (MIGRATED): cost $10.01, 0.94x, fees $0.36  
   CA `8s4bNqEztH1JP7mkU747uMr7AckCQdiV47FDqYnDpump`
 
 ## Recent trades
@@ -75,9 +75,15 @@ Updated 2026-11-02T08:06:19Z (paper trading, never real money)
   CA `GYKnd6jGUSQoBUnj6LdGCBtCWYDgr2Zd6QwNPcy5pump`
 
 ## Last scan
-- 08:06Z: 4 coins, 4 with pairs, 0 passed the market filters, 0 researched
+- 08:20Z: 4 coins, 4 with pairs, 1 passed the market filters, 1 researched
 
 ## Coins it looked at, and why it passed
+- 08:20Z TripleH (DIP, $83,951 mcap, $19,300 5m vol): REJECT, Dip with fading attention is a falling knife, not a dip (5m at 0.50x the hour's pace, under 0.6x)  
+  CA `ATnGk91tqFpXhiqAnDfGav7YYMUiocQ2YHgY4gPBpump`
+- 08:17Z CI (DIP, $133,030 mcap, $6,825 5m vol): REJECT, Dip with fading attention is a falling knife, not a dip (5m at 0.26x the hour's pace, under 0.6x)  
+  CA `gg1zQUgUoXd8hVmkTmLooyzC1QBT1cvJDnCXHLPpump`
+- 08:08Z WWIII (FINAL_STRETCH, $26,851 mcap, $35,531 5m vol): REJECT, RugCheck danger: Creator history of rugged tokens  
+  CA `GD52VfoPZdad4hiNPg4UnjtDGsS4WiM3mqS8j1czpump`
 - 07:57Z GATO (MIGRATED, $9,104,578 mcap, $4,743 5m vol): REJECT, Dev holds 3.3% (>1%) (V13, V17)  
   CA `HsprHxBRgiVaQdRf3TnKNuZZtaX9JUSPgMFdAkk6pump`
 - 07:48Z GLITCH (MIGRATED, $3,803,317 mcap, $317 5m vol): REJECT, 5m volume $317 is dead (<$2,000) (V1)  
@@ -92,12 +98,6 @@ Updated 2026-11-02T08:06:19Z (paper trading, never real money)
   CA `8s4bNqEztH1JP7mkU747uMr7AckCQdiV47FDqYnDpump`
 - 07:35Z TripleH (MIGRATED, $124,047 mcap, $29,569 5m vol): PASS at conviction 4, PASS: 17 minutes old, 10% under a high it printed six minutes ago, and the first resistance is 1.11x away. That's chasing a news pump, not a setup. Blocker: target too close (V1, V6).  
   CA `ATnGk91tqFpXhiqAnDfGav7YYMUiocQ2YHgY4gPBpump`
-- 07:32Z CI (MIGRATED, $159,025 mcap, $8,243 5m vol): REJECT, Bundles: 1 linked wallet cluster(s) hold 27.6% of supply (>20%) (V17)  
-  CA `gg1zQUgUoXd8hVmkTmLooyzC1QBT1cvJDnCXHLPpump`
-- 07:25Z PEER (FINAL_STRETCH, $31,485 mcap, $33,770 5m vol): PASS at conviction 3, PASS: chasing a spike. The last 5m candle is up 86% at 3.3x the hourly pace, on a 30-minute-old curve coin with a day-old "protocol" site. I'll wait for the pre-bond dump and a higher low (V1).  
-  CA `BbtvdRYnvHLeAsVg6ErBEYXYRg2329RXkAtFfcCTpump`
-- 07:16Z CUMFACE (FINAL_STRETCH, $21,894 mcap, $1,937 5m vol): REJECT, 5m volume $1,937 is dead (<$2,000) (V1)  
-  CA `J1D3X8znX4AzUPMHVWyBLNHqBBqWDPNSjX4KwK3Qpump`
 
 ## What its skips did next (last 48h)
 A skip "ran" if the coin reached the first target (1.5x) from the skip price before a 20% drop, "dumped" if the drop came first. Sampled every 10 min, followed 6h.
@@ -108,7 +108,7 @@ A skip "ran" if the coin reached the first target (1.5x) from the skip price bef
     CA `4TCevs5EC2RFsdWo3YPVifqe9dX2acCGGa9VHNtppump`
   - ran: BLUE up to 1.53x  
     CA `CPoGSmcjprCvzA2MFYLJMpQkGjmgVzKg4RVwMdrzpump`
-- too new / sniping: blocked 41, ran 4, dumped 35, flat 0, open 2 (saving losses: keep it)
+- too new / sniping: blocked 40, ran 5, dumped 35, flat 0, open 0 (saving losses: keep it)
   - ran: onlypump up to 1.92x  
     CA `J73efZvH6rkrJbFJdP2rqe473YJW7tyWmrNARUSzpump`
   - ran: paws up to 1.51x  
@@ -122,13 +122,20 @@ A skip "ran" if the coin reached the first target (1.5x) from the skip price bef
     CA `TiMSdJrkVwUpeEWJpuqRvHt4wVS7uH77LbNPGGVJXNw`
   - ran: WASTED up to 1.93x  
     CA `GexThZHgaswpAQ7Fi8QrHFubjPimUNSYhJiAA7XZpump`
-- falling knife (code): blocked 30, ran 6, dumped 21, flat 2, open 1 (saving losses: keep it)
+- falling knife (code): blocked 32, ran 6, dumped 22, flat 2, open 2 (saving losses: keep it)
   - ran: KIM up to 1.55x  
     CA `8pjfN5Ayb4rucGpYE3tZWN6v3EysizjPx1v62zx1pump`
   - ran: BLUE up to 1.53x  
     CA `CPoGSmcjprCvzA2MFYLJMpQkGjmgVzKg4RVwMdrzpump`
   - ran: VETOTRUMP up to 1.66x  
     CA `6g16UK4wHoFhC7PCmw8LYYCdt9q8m99fyoAwxeCrpump`
+- RugCheck danger: blocked 23, ran 5, dumped 18, flat 0, open 0 (saving losses: keep it)
+  - ran: SUGAR up to 1.74x  
+    CA `HLzTFsX99uqzAP7uK36gJ2pPHGfRM8ugvxXWJzjSpump`
+  - ran: AIC up to 1.6x  
+    CA `2T9WZjVC6L3BvusUtjKDT6HcZeEYgU9T5xhfJQxFpump`
+  - ran: ZECRET up to 1.62x  
+    CA `ChCi2x2bpevrNyeRoPHLXHzmaCdGQPuU15CNqxY1pump`
 - RugCheck didn't load: blocked 22, ran 3, dumped 16, flat 3, open 0 (saving losses: keep it)
   - ran: UNSAFU up to 1.61x  
     CA `4eq4JfnpdgqZTzeyR3GnRGHJQ3QhQT6Lp7nKnQ2nS7Rv`
@@ -136,13 +143,6 @@ A skip "ran" if the coin reached the first target (1.5x) from the skip price bef
     CA `DUTxGHL2LmpfjQaoK6LdZp8WQPoDiwvtDHVDf4fMpump`
   - ran: whitepaper up to 2.16x  
     CA `4tEvXHpd6JrCWJGByBS3qFBAtJbeoiEpgvWLw9hkpump`
-- RugCheck danger: blocked 22, ran 4, dumped 18, flat 0, open 0 (saving losses: keep it)
-  - ran: SUGAR up to 1.74x  
-    CA `HLzTFsX99uqzAP7uK36gJ2pPHGfRM8ugvxXWJzjSpump`
-  - ran: AIC up to 1.6x  
-    CA `2T9WZjVC6L3BvusUtjKDT6HcZeEYgU9T5xhfJQxFpump`
-  - ran: ZECRET up to 1.62x  
-    CA `ChCi2x2bpevrNyeRoPHLXHzmaCdGQPuU15CNqxY1pump`
 - falling knife / no higher low: blocked 16, ran 3, dumped 12, flat 1, open 0 (saving losses: keep it)
   - ran: CREDIT up to 1.56x  
     CA `Ewyifvp8X9NxeaKawXamGXBFDisuMfcFfcdvSZ8opump`
@@ -150,7 +150,7 @@ A skip "ran" if the coin reached the first target (1.5x) from the skip price bef
     CA `93VGqXL76voGxc43apJTDJoKkqnxTht1BKWoEmUypump`
   - ran: ANAKIN up to 1.55x  
     CA `8s4bNqEztH1JP7mkU747uMr7AckCQdiV47FDqYnDpump`
-- bundles over the line: blocked 14, ran 2, dumped 10, flat 2, open 0 (saving losses: keep it)
+- bundles over the line: blocked 13, ran 2, dumped 9, flat 2, open 0 (saving losses: keep it)
   - ran: Nuts up to 1.53x  
     CA `APH9FRoKst66E4a7uZXcEfE8NjtwybUC8Jq7ue8upump`
   - ran: NA up to 1.97x  
@@ -169,14 +169,14 @@ A skip "ran" if the coin reached the first target (1.5x) from the skip price bef
     CA `2pKpMwUQXNZeAf93LoomnZSworH3ezFzweCiuvrppump`
 
 ## Rules it changed from results and skips
-- 11-02 02:13Z tightened: Flow below pace is a PASS, now scoped to MIGRATED, with DIPs at the owner's 0.7x (HYPERCHAN (0.73x pace), BLUE and AAPLCAT were all bought below pace and none went green. Crowd-leaving skips: 1 ran, 9 dumped. Split from the DIP gate so the two rules don't conflict with the owner's 0.7x DIP line.)
-- 11-02 02:13Z loosened: DIP gate: 0.7x pace, no 'rising' needed, DIP probation removed, size by conviction (Owner override. I kept the dead-story PASS (HEXN, a thin LARP, lost twice) and the catalyst-already-printed cap at 6 (SIS, one sample). Raised the code line to 0.7 to match.)
 - 11-02 02:13Z tightened: Stops sell with no review; re-entry only on a reclaim of the prior high with flow at pace (replaces 'stop review defaults to SELL') (8 of 8 stop reviews closed worse than the stop, and the soul now says a stop is a stop. CATBOT's mid-range buy-back lost −24.3%, hence the added flow-at-pace condition.)
 - 11-02 02:13Z dropped: Any fee, friction or minimum-size rule, and any rule setting initials, stop or trail (Code enforces fees and size before every entry, and the owner fixed initials 1.5x, stop 20% and trail 35%. The current rules carried none of these, and I wrote none back.)
 - 11-02 02:13Z dropped: Clean baseline is a 7 (owner):** hard lines passed, 5m vol ≥ $10k and ≥ hourly pace (1h/12), and a first target ≥1.5x away. Don't under-rate it. Press the goal by taking these, not by lowering the bar. (Owner override: the goal is set to push)
 - 11-02 05:16Z added: Owner's floor: hard lines passed, live flow and a first target at least 1.5x away is at least a 7 (Owner note (Oct 30): 'hard lines passed, live flow and a clear target is a 7', and don't under-rate clean setups. I tied 'live flow' to the volume and pace data I can actually see, so the rule can be satisfied.)
 - 11-02 05:16Z tightened: DIP needs a printed higher low; the higher low is the invalidation, and I wait if it sits far below entry (rewritten so it no longer sets its own stop) (DIPs are 0 for 5 (−$6.70). HEXN's first-bounce entry went −36%; SIS and AAPLCAT broke their higher lows within minutes. The old wording set a stop under the higher low (HEXN used −13%), and the owner fixes the stop at 20%, so I rewrote it to filter the entry instead of moving the stop.)
 - 11-02 05:16Z dropped: Any learned trail, stop, initials, fee or size rule (e.g. 'tighten trail to 25% past 4x', '$5 minimum', '5% friction cap') (The owner fixes initials at 1.5x, the stop at 20% and the trail at 35%, and code owns the fee and size checks. Those lessons stay as history but are not active rules.)
+- 11-02 08:17Z tightened: Flow below pace is a PASS on both MIGRATED and DIP (HYPERCHAN, BLUE and AAPLCAT were all entered below pace and never went green (peaks 0.99–1.01x). Flow-below-pace skips: 1 ran, 4 dumped. I widened the wording to cover DIPs, since SIS and HEXN also died.)
+- 11-02 08:17Z dropped: Any fee, friction or minimum-position-size rule, and any rule setting the initials, stop or trail (Code owns the fee checks, and the owner fixes initials at 1.5x, the stop at 20% and the trail at 35%. The old CATBOT lesson (tighten the trail to 25% past 4x) is not carried into the rules. Honest note: getting from about $80 to $1k by Nov 5 needs roughly 12x in 3 days. I'll press on clean 8–9 setups as told, but the 35% risk ceiling and the hard lines still hold.)
 
 ## Recent lessons
 - [2026-10-30 01:19] Expected: SWAN was a MIGRATED pullback buy, 29% off its high with a higher-low base and $49k on the 5m, and I wanted to retest $166k (about 1.4x) before taking initials at 1.5x (V1, V6). What happened: it peaked at exactly 1.40x, the retest level my own thesis named, then rejected there, and the break-even stop sold it at 1.16x for -0.7%. The pullback-entry rule and the 1.3x break-even rule both did their jobs, since a 1.4x peak didn't turn into a real loss. Rule for next time: when the prior high I'm targeting sits below my initials multiple, sell part of the position at that level (sell initials or half, V11) instead of waiting for 1.5x. That changes the exit, not the pick, so it's a refinement from one trade, not a new ban.
@@ -201,13 +201,13 @@ What I'd research now:
 PASS: Nathalia (named after a real person's death, and 5m volume has collapsed to $3.5k), inu (sells outweigh buys, 0.37), and anything hack-themed. My owner wants me pushing toward $1k. These are all cases for pressing if the checks come back clean, but the deadline doesn't change my conviction scores.
 
 ## Moving most in its scans, last 30 min (1h volume)
-- ANAKIN: $550,485 1h vol, $3,905,005 mcap, +12% 1h  
-  CA `8s4bNqEztH1JP7mkU747uMr7AckCQdiV47FDqYnDpump`
-- Nathalia: $154,471 1h vol, $35,751 mcap, -5% 1h  
-  CA `6nuBXMpJxTAsu7AsWQe6k7G1Sd5zttwayAPQWnbxDvWf`
-- Karlusha: $103,674 1h vol, $8,349 mcap, +196% 1h  
-  CA `BPT1ProvKQmYzjYYkDZkwSoPoxuv1EivTyHcdv3Epump`
-- Tumulun: $97,586 1h vol, $25,871 mcap, +340% 1h  
-  CA `E84psoV4rJQYBoyTkzTrh1hzjZJv81VGFRX9gMLHpump`
+- TripleH: $474,729 1h vol, $88,758 mcap, +136% 1h  
+  CA `ATnGk91tqFpXhiqAnDfGav7YYMUiocQ2YHgY4gPBpump`
+- CI: $312,566 1h vol, $133,361 mcap, +71% 1h  
+  CA `gg1zQUgUoXd8hVmkTmLooyzC1QBT1cvJDnCXHLPpump`
+- PEER: $146,762 1h vol, $10,531 mcap, -60% 1h  
+  CA `BbtvdRYnvHLeAsVg6ErBEYXYRg2329RXkAtFfcCTpump`
+- inu: $80,299 1h vol, $13,815 mcap, +285% 1h  
+  CA `J2F2povtZ5WJxWSmTr8iSgfvPYxUJ7fGAicQSBKEpump`
 - GATO: $74,495 1h vol, $9,104,578 mcap, +5% 1h  
   CA `HsprHxBRgiVaQdRf3TnKNuZZtaX9JUSPgMFdAkk6pump`
