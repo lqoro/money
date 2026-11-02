@@ -1,13 +1,13 @@
 # Trencher live report
 
-Updated 2026-11-02T05:50:06Z (paper trading, never real money)
+Updated 2026-11-02T06:05:31Z (paper trading, never real money)
 
 - Equity: $80.53 (-19.5% vs $100 start)
-- Goal: $1,000 by 2026-11-05 05:03Z (pressing for it): at 8.1% of it, 3 days left, needs +133.7% a day from here
+- Goal: $1,000 by 2026-11-05 05:03Z (pressing for it): at 8.1% of it, 3 days left, needs +134.4% a day from here
 - Closed trades: 19, 3 wins
 - Fees paid: $12.66 (axiom $2.26, network $8.06, pool $2.21), plus $3.34 lost to slippage
 - New trades: on
-- Brain: subscription, 574 calls and 0 plan-limit hits in 48h
+- Brain: subscription, 568 calls and 0 plan-limit hits in 48h
 
 ## Scorecard (after fees)
 - 19 closed, 3 won (16%), net $-19.48
@@ -74,9 +74,13 @@ Updated 2026-11-02T05:50:06Z (paper trading, never real money)
   CA `GYKnd6jGUSQoBUnj6LdGCBtCWYDgr2Zd6QwNPcy5pump`
 
 ## Last scan
-- 05:49Z: 3 coins, 3 with pairs, 0 passed the market filters, 0 researched
+- 06:04Z: 3 coins, 3 with pairs, 1 passed the market filters, 1 researched
 
 ## Coins it looked at, and why it passed
+- 06:05Z ANAKIN (MIGRATED, $3,378,350 mcap, $8,987 5m vol): PASS at conviction 4, PASS: holders are spotless, but 5m flow is $9.0k at 0.81x the hourly pace on a Star Wars meta the radar calls fading. Flow below pace, never a probe (V1, V6).  
+  CA `8s4bNqEztH1JP7mkU747uMr7AckCQdiV47FDqYnDpump`
+- 05:56Z faucet (FINAL_STRETCH, $19,770 mcap, $11,838 5m vol): REJECT, Top 10 hold 25.4% ex-pool (>25%) (V13)  
+  CA `99V36NFUcueC2tHjd1JV5bfhFux73NKWRiSBnxJ8pump`
 - 05:31Z Warcoin (no setup, $15,771 mcap, $6,965 5m vol): REJECT, No setup fits: not Final Stretch, not a migrated runner, not a healthy dip  
   CA `H86pLyqzZMim3pxrC29YWsMKoxL6xGFM1nQyVtyRpump`
 - 05:31Z TRUMP (MIGRATED, $119,726 mcap, $140,885 5m vol): REJECT, Bundles: 2 linked wallet cluster(s) hold 100.0% of supply (>20%) (V17)  
@@ -93,10 +97,6 @@ Updated 2026-11-02T05:50:06Z (paper trading, never real money)
   CA `8s4bNqEztH1JP7mkU747uMr7AckCQdiV47FDqYnDpump`
 - 05:18Z WARDOG (FINAL_STRETCH, $28,530 mcap, $7,235 5m vol): REJECT, Top 10 hold 28.2% ex-pool (>25%) (V13)  
   CA `2yZyDmMj6PD1LFh8TpeeezHhDcfS4uWsPvNddKh6pump`
-- 05:00Z Unseen (FINAL_STRETCH, $29,679 mcap, $10,042 5m vol): PASS at conviction 3, PASS: chasing a spike. It's up 53% in the last 5 minutes on 2.6x the hourly volume pace, 9% off its high, 38 minutes old, and still on the curve. That's a candle to wait out, not an entry. (V1, V6)  
-  CA `DKSBXMtJaJQYsi8rFegxzZJZDXvK3JDai56YZ7CRpump`
-- 05:00Z XAR (FINAL_STRETCH, $25,079 mcap, $33,939 5m vol): PASS at conviction 2, PASS — 3.5 minutes old, +522% in one candle, still on the curve at $25k. That's sniping a spike, not a setup. Blocker: too new / sniping (V5, V1).  
-  CA `mb9PoUuicZgj2tgZ9Ze95XiaKUZgmQegCewitj5pump`
 
 ## What its skips did next (last 48h)
 A skip "ran" if the coin reached the first target (1.5x) from the skip price before a 20% drop, "dumped" if the drop came first. Sampled every 10 min, followed 6h.
@@ -114,7 +114,7 @@ A skip "ran" if the coin reached the first target (1.5x) from the skip price bef
     CA `CCF6ui6YjjhLaVtuYLH8b5jza8jHathqww5VbrMapump`
   - ran: VETOTRUMP up to 1.66x  
     CA `6g16UK4wHoFhC7PCmw8LYYCdt9q8m99fyoAwxeCrpump`
-- top 10 over 25%: blocked 39, ran 7, dumped 27, flat 3, open 2 (saving losses: keep it)
+- top 10 over 25%: blocked 40, ran 7, dumped 28, flat 3, open 2 (saving losses: keep it)
   - ran: Beaver up to 2.56x  
     CA `5h44wfzwGHFnfVhNKtMLapAJNV9iqqbUgUB2FqyWpump`
   - ran: timmy up to 1.66x  
@@ -128,7 +128,7 @@ A skip "ran" if the coin reached the first target (1.5x) from the skip price bef
     CA `CPoGSmcjprCvzA2MFYLJMpQkGjmgVzKg4RVwMdrzpump`
   - ran: VETOTRUMP up to 1.66x  
     CA `6g16UK4wHoFhC7PCmw8LYYCdt9q8m99fyoAwxeCrpump`
-- RugCheck didn't load: blocked 23, ran 3, dumped 17, flat 3, open 0 (saving losses: keep it)
+- RugCheck didn't load: blocked 22, ran 3, dumped 16, flat 3, open 0 (saving losses: keep it)
   - ran: UNSAFU up to 1.61x  
     CA `4eq4JfnpdgqZTzeyR3GnRGHJQ3QhQT6Lp7nKnQ2nS7Rv`
   - ran: billy up to 3.75x  
@@ -142,7 +142,7 @@ A skip "ran" if the coin reached the first target (1.5x) from the skip price bef
     CA `2T9WZjVC6L3BvusUtjKDT6HcZeEYgU9T5xhfJQxFpump`
   - ran: ZECRET up to 1.62x  
     CA `ChCi2x2bpevrNyeRoPHLXHzmaCdGQPuU15CNqxY1pump`
-- falling knife / no higher low: blocked 20, ran 2, dumped 14, flat 2, open 2 (saving losses: keep it)
+- falling knife / no higher low: blocked 19, ran 2, dumped 13, flat 2, open 2 (saving losses: keep it)
   - ran: CREDIT up to 1.56x  
     CA `Ewyifvp8X9NxeaKawXamGXBFDisuMfcFfcdvSZ8opump`
   - ran: PI up to 1.6x  
@@ -191,13 +191,13 @@ A skip "ran" if the coin reached the first target (1.5x) from the skip price bef
 Meta: war/peace jokes, churning fast (PEACE $141k/$73k 5m, TRUMP 'Peace President' $124k/$141k 5m +209%, Warcoin/WARCAT/WARDOG). The crawler's summary is stale: INU and NA rugged ~98%, as did World Peace and War Coin. Star Wars fading: ANAKIN 5m vol ~0.5x its hourly pace, fails the 0.7x DIP gate. Off-theme: XMRISE privacy play ($73k, $14k 5m), matches CoinGecko's Privacy category. Research: PEACE (DIP/MIGRATED probe, 1.5h old, buys 0.57), XMRISE (MIGRATED probe, 12 min old), TRUMP (best flow but 18 min old and political name, needs a V13 check that no politician pushed the CA). PASS: NA/INU (rugged), HOPE (slur kills appeal, V6), bonding-curve war coins (sniping new pairs, V5). Owner's push buys probes, not 8s. Hard lines and 20% stop hold.
 
 ## Moving most in its scans, last 30 min (1h volume)
-- PEACE: $728,256 1h vol, $140,651 mcap, -45% 1h  
-  CA `BngAfLZxaWN2QvpFhRbUHydYGr8zA7YTSA178G8Epump`
-- TRUMP: $274,906 1h vol, $123,543 mcap, +209% 1h  
-  CA `En5icDhYYCuGXTtCLmfWiGR4C9nMiYMKojLdBRfVpump`
-- NA: $229,458 1h vol, $1,816 mcap, -99% 1h  
-  CA `9ZmdP8q22ebRhEkcwd5EDkitu7ypeDFXTQXpv2kUpump`
-- Unseen: $205,123 1h vol, $21,455 mcap, -49% 1h  
+- Unseen: $213,056 1h vol, $10,650 mcap, -75% 1h  
   CA `DKSBXMtJaJQYsi8rFegxzZJZDXvK3JDai56YZ7CRpump`
-- Warcoin: $155,759 1h vol, $20,645 mcap, +101% 1h  
-  CA `H86pLyqzZMim3pxrC29YWsMKoxL6xGFM1nQyVtyRpump`
+- ANAKIN: $133,274 1h vol, $3,378,350 mcap, +4% 1h  
+  CA `8s4bNqEztH1JP7mkU747uMr7AckCQdiV47FDqYnDpump`
+- XAR: $93,979 1h vol, $3,632 mcap, -10% 1h  
+  CA `mb9PoUuicZgj2tgZ9Ze95XiaKUZgmQegCewitj5pump`
+- Cybercoin: $89,205 1h vol, $3,319 mcap, +3% 1h  
+  CA `aCTVSzP5ab9hSewSc8M9Ltfq9uT2YJcjSq4Feuopump`
+- WAR: $82,023 1h vol, $25,075 mcap, -36% 1h  
+  CA `G6KTcxD7nJT4poBZsGiANHZHcUvPoDLjaVVZhBPdpump`
