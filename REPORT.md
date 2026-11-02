@@ -1,13 +1,13 @@
 # Trencher live report
 
-Updated 2026-11-02T16:12:07Z (paper trading, never real money)
+Updated 2026-11-02T16:27:17Z (paper trading, never real money)
 
 - Equity: $77.09 (-22.9% vs $100 start)
-- Goal: $1,000 by 2026-11-05 05:03Z (pressing for it): at 7.7% of it, 2.5 days left, needs +174.8% a day from here
+- Goal: $1,000 by 2026-11-05 05:03Z (pressing for it): at 7.7% of it, 2.5 days left, needs +175.9% a day from here
 - Closed trades: 21, 3 wins
 - Fees paid: $14.04 (axiom $2.63, network $8.81, pool $2.47), plus $3.89 lost to slippage
 - New trades: on
-- Brain: subscription, 506 calls and 0 plan-limit hits in 48h
+- Brain: subscription, 504 calls and 0 plan-limit hits in 48h
 
 ## Scorecard (after fees)
 - 21 closed, 3 won (14%), net $-22.93
@@ -74,9 +74,17 @@ Updated 2026-11-02T16:12:07Z (paper trading, never real money)
   CA `8s4bNqEztH1JP7mkU747uMr7AckCQdiV47FDqYnDpump`
 
 ## Last scan
-- 16:11Z: 8 coins, 8 with pairs, 0 passed the market filters, 0 researched
+- 16:26Z: 9 coins, 9 with pairs, 2 passed the market filters, 2 researched
 
 ## Coins it looked at, and why it passed
+- 16:27Z Slingoor (MIGRATED, $848,902 mcap, $18,230 5m vol): REJECT, RugCheck danger: Top 10 holders high ownership  
+  CA `9rZR9nCQbaiBvotWVpifN8z1vckVFshnsATuAJrXpump`
+- 16:27Z FEAR (MIGRATED, $132,507 mcap, $18,616 5m vol): PASS at conviction 3, PASS: the only resistance is the $150k high, 1.13x away. Target too close, on a 19-minute-old clone with a 4.7% bundle. (V1, V3, V6)  
+  CA `3Z8mK9QRy3ZphSTqoi1Duzok8an4WCND9XrHWfgKpump`
+- 16:13Z Anakin (DIP, $2,306,935 mcap, $8,015 5m vol): PASS at conviction 3, PASS: Anakin Skywalker is a copy in a 9-coin ticker field, not the leader, with $8k on the 5m and 26% buys. Split crowd, no higher low. (V1, V3, V13)  
+  CA `ExxzYBTt3jwU5MUxuw2F4toYbTLdFwThSjyaCn6Xpump`
+- 16:12Z MAMESUKE (MIGRATED, $1,376,419 mcap, $21,447 5m vol): REJECT, RugCheck danger: Large Amount of LP Unlocked 81.32%  
+  CA `SCGBBnSwnekytGFHgyeHHxPMiN7xDxsWFGg9JgFSTNK`
 - 16:07Z PI (no setup, $47,504 mcap, $2,701 5m vol): REJECT, No setup fits: not Final Stretch, not a migrated runner, not a healthy dip  
   CA `93VGqXL76voGxc43apJTDJoKkqnxTht1BKWoEmUypump`
 - 16:02Z GATO (MIGRATED, $10,819,588 mcap, $13,246 5m vol): REJECT, Dev holds 3.3% (>1%) (V13, V17)  
@@ -89,14 +97,6 @@ Updated 2026-11-02T16:12:07Z (paper trading, never real money)
   CA `CHtXwJ3qa2ozS9vQkxhR3MmNwkoUqkh3icGXgZPepump`
 - 15:47Z FEAR (MIGRATED, $62,940 mcap, $164,449 5m vol): REJECT, RugCheck danger: Top 10 holders high ownership  
   CA `DhkXJc8yZPQobJ9hjqqtJm7fJ8JZceuepVbaaAv3pump`
-- 15:46Z Slingoor (MIGRATED, $148,571 mcap, $26,747 5m vol): PASS at conviction 3, PASS: the last 5m candle is up 37%, it's 12.5% off a high it printed this minute, and the coin is 22 minutes old. That's chasing a spike, and one bundle holds 5.2% (V1, V3).  
-  CA `GWJ96ggVUfZPX5ghcD5sUaAWWwqcT1cdntNGew8Jpump`
-- 15:46Z KOROSUKE (MIGRATED, $150,539 mcap, $71,702 5m vol): PASS at conviction 3, PASS: chasing spike. The last 5m candle is up 33.7%, flow is running at 4.0x the hourly pace, and the coin is 12 minutes old and 10% off a high it set this minute. Clean holders don't change the entry (V1, V6).  
-  CA `7ha4HFgdvkXaDcR2biCsuBpoCZzoLSRjb5we34Gbpump`
-- 15:45Z ANAKIN (DIP, $1,887,714 mcap, $45,031 5m vol): PASS at conviction 2, PASS: ANAKIN just dropped 35% in five minutes and is now below its hourly low. That's a falling knife with no higher low, and I've already lost on this coin twice. (V1, V6)  
-  CA `8s4bNqEztH1JP7mkU747uMr7AckCQdiV47FDqYnDpump`
-- 15:41Z Marutaro (MIGRATED, $221,289 mcap, $59,497 5m vol): MOVED at conviction 8, wanted to buy, but the price moved +14.5% while deciding (limits -8% / +10%)  
-  CA `At3jYPUKVEFYrss5a58myVuqKLjGxMuBP5MwqMk9pump`
 
 ## What its skips did next (last 48h)
 A skip "ran" if the coin reached the first target (1.5x) from the skip price before a 20% drop, "dumped" if the drop came first. Sampled every 10 min, followed 6h.
@@ -107,7 +107,7 @@ A skip "ran" if the coin reached the first target (1.5x) from the skip price bef
     CA `CPoGSmcjprCvzA2MFYLJMpQkGjmgVzKg4RVwMdrzpump`
   - ran: PIRATE up to 2.27x  
     CA `gzQXRwGRzfKLHfaV1f84QT7e5mt4vevu7MgacEfpump`
-- too new / sniping: blocked 47, ran 7, dumped 37, flat 0, open 3 (saving losses: keep it)
+- too new / sniping: blocked 47, ran 8, dumped 38, flat 0, open 1 (saving losses: keep it)
   - ran: onlypump up to 1.92x  
     CA `J73efZvH6rkrJbFJdP2rqe473YJW7tyWmrNARUSzpump`
   - ran: paws up to 1.51x  
@@ -121,6 +121,13 @@ A skip "ran" if the coin reached the first target (1.5x) from the skip price bef
     CA `TiMSdJrkVwUpeEWJpuqRvHt4wVS7uH77LbNPGGVJXNw`
   - ran: WASTED up to 1.93x  
     CA `GexThZHgaswpAQ7Fi8QrHFubjPimUNSYhJiAA7XZpump`
+- RugCheck danger: blocked 31, ran 4, dumped 25, flat 0, open 2 (saving losses: keep it)
+  - ran: SUGAR up to 1.74x  
+    CA `HLzTFsX99uqzAP7uK36gJ2pPHGfRM8ugvxXWJzjSpump`
+  - ran: AIC up to 1.6x  
+    CA `2T9WZjVC6L3BvusUtjKDT6HcZeEYgU9T5xhfJQxFpump`
+  - ran: ZECRET up to 1.62x  
+    CA `ChCi2x2bpevrNyeRoPHLXHzmaCdGQPuU15CNqxY1pump`
 - falling knife (code): blocked 30, ran 6, dumped 21, flat 1, open 2 (saving losses: keep it)
   - ran: KIM up to 1.55x  
     CA `8pjfN5Ayb4rucGpYE3tZWN6v3EysizjPx1v62zx1pump`
@@ -128,21 +135,16 @@ A skip "ran" if the coin reached the first target (1.5x) from the skip price bef
     CA `CPoGSmcjprCvzA2MFYLJMpQkGjmgVzKg4RVwMdrzpump`
   - ran: VETOTRUMP up to 1.66x  
     CA `6g16UK4wHoFhC7PCmw8LYYCdt9q8m99fyoAwxeCrpump`
-- RugCheck danger: blocked 30, ran 4, dumped 25, flat 0, open 1 (saving losses: keep it)
-  - ran: SUGAR up to 1.74x  
-    CA `HLzTFsX99uqzAP7uK36gJ2pPHGfRM8ugvxXWJzjSpump`
-  - ran: AIC up to 1.6x  
-    CA `2T9WZjVC6L3BvusUtjKDT6HcZeEYgU9T5xhfJQxFpump`
-  - ran: ZECRET up to 1.62x  
-    CA `ChCi2x2bpevrNyeRoPHLXHzmaCdGQPuU15CNqxY1pump`
-- bundles over the line: blocked 15, ran 2, dumped 11, flat 2, open 0 (saving losses: keep it)
+- bundles over the line: blocked 14, ran 2, dumped 10, flat 2, open 0 (saving losses: keep it)
   - ran: Nuts up to 1.53x  
     CA `APH9FRoKst66E4a7uZXcEfE8NjtwybUC8Jq7ue8upump`
   - ran: NA up to 1.97x  
     CA `9ZmdP8q22ebRhEkcwd5EDkitu7ypeDFXTQXpv2kUpump`
-- falling knife / no higher low: blocked 12, ran 1, dumped 8, flat 1, open 2 (saving losses: keep it)
+- falling knife / no higher low: blocked 13, ran 2, dumped 8, flat 1, open 2 (saving losses: keep it)
   - ran: CREDIT up to 1.56x  
     CA `Ewyifvp8X9NxeaKawXamGXBFDisuMfcFfcdvSZ8opump`
+  - ran: ANAKIN up to 1.99x  
+    CA `8s4bNqEztH1JP7mkU747uMr7AckCQdiV47FDqYnDpump`
 - thin 5m volume: blocked 11, ran 1, dumped 3, flat 4, open 3 (saving losses: keep it)
   - ran: CUMFACE up to 1.55x  
     CA `J1D3X8znX4AzUPMHVWyBLNHqBBqWDPNSjX4KwK3Qpump`
@@ -183,13 +185,13 @@ A skip "ran" if the coin reached the first target (1.5x) from the skip price bef
 Meta is Japanese dog names plus Star Wars, with clone launches swarming around them. Rising: Marutaro ($193k, 0.9h, $59k on the 5m at 1.4x its hourly pace, 0.76 buys) and Korosuke ($158k, 12 minutes old, $78k 5m, 0.85 buys). Cooling: MAMESUKE (0.44x pace); its vamp MameStonk is dead at -98%. Star Wars holds through Anakin ($1.9M, 17h): down 37% on the hour but $45.6k on the 5m (about 2.9x pace, 0.75 buys), so buyers are taking the dip. Ahsoka has faded to 0.49x pace, under the DIP gate. Noise: two BUY THE FEAR clones and three Slingoor clones under 30 minutes old. Fading: GTA6 and political names like WTP. Setups: Anakin as a DIP first, Marutaro as a MIGRATED entry only on a 10%+ pullback from its local high, Korosuke watch-only for now because it's too new (V5/V6). The crawler's meta summary is stale, so I'm using scan_movers. The deadline means more trades on clean setups, but conviction still comes from the checks and the hard lines don't move.
 
 ## Moving most in its scans, last 30 min (1h volume)
-- MUCHAN: $517,344 1h vol, $1,835 mcap, -99% 1h  
+- Slingoor: $593,716 1h vol, $855,263 mcap, +131% 1h  
+  CA `9rZR9nCQbaiBvotWVpifN8z1vckVFshnsATuAJrXpump`
+- MAMESUKE: $288,669 1h vol, $1,376,419 mcap, +18% 1h  
+  CA `SCGBBnSwnekytGFHgyeHHxPMiN7xDxsWFGg9JgFSTNK`
+- MUCHAN: $269,630 1h vol, $1,809 mcap, -99% 1h  
   CA `5focFU1VGb1ywCFcpBNGrg2VWedoQ6EXU6p2ZTqZpump`
--  Muu-chan: $244,365 1h vol, $2,238 mcap, -87% 1h  
-  CA `G5SbP44FNV8RvQqxnWhCRJVscNghwDMwT5sTkCa4pump`
-- FEAR: $230,243 1h vol, $57,642 mcap, +54% 1h  
-  CA `CHtXwJ3qa2ozS9vQkxhR3MmNwkoUqkh3icGXgZPepump`
-- KOROSUKE: $221,054 1h vol, $157,706 mcap, +234% 1h  
-  CA `7ha4HFgdvkXaDcR2biCsuBpoCZzoLSRjb5we34Gbpump`
 - DESSA: $209,931 1h vol, $12,403,461 mcap, -10% 1h  
   CA `npz2FhoufQ7pKqhGpaipYWacrAkidyW2yDpVWSvpump`
+- FEAR: $173,503 1h vol, $132,507 mcap, +236% 1h  
+  CA `3Z8mK9QRy3ZphSTqoi1Duzok8an4WCND9XrHWfgKpump`
