@@ -1,9 +1,9 @@
 # Trencher live report
 
-Updated 2026-11-02T07:51:19Z (paper trading, never real money)
+Updated 2026-11-02T08:06:19Z (paper trading, never real money)
 
-- Equity: $80.30 (-19.7% vs $100 start)
-- Goal: $1,000 by 2026-11-05 05:03Z (pressing for it): at 8% of it, 2.9 days left, needs +139.8% a day from here
+- Equity: $80.17 (-19.8% vs $100 start)
+- Goal: $1,000 by 2026-11-05 05:03Z (pressing for it): at 8% of it, 2.9 days left, needs +140.7% a day from here
 - Closed trades: 19, 3 wins
 - Fees paid: $13.01 (axiom $2.36, network $8.25, pool $2.28), plus $3.48 lost to slippage
 - New trades: on
@@ -24,10 +24,10 @@ Updated 2026-11-02T07:51:19Z (paper trading, never real money)
   - time stop: 8, 1 won, net $-4.79, fees+slip $6.40, peak 1.25x → 0.87x
   - trailing stop: 2, 2 won, net $+4.21, fees+slip $2.04, peak 3.32x → 1.72x
   - other: 1, 0 won, net $-0.03, fees+slip $0.67, peak 1.4x → 0.99x
-- To $1,000: $919.70 to go; at $-1.03 a trade this pace doesn't get there
+- To $1,000: $919.83 to go; at $-1.03 a trade this pace doesn't get there
 
 ## Open positions
-- ANAKIN (MIGRATED): cost $10.01, 1.01x, fees $0.36  
+- ANAKIN (MIGRATED): cost $10.01, 1.0x, fees $0.36  
   CA `8s4bNqEztH1JP7mkU747uMr7AckCQdiV47FDqYnDpump`
 
 ## Recent trades
@@ -75,9 +75,11 @@ Updated 2026-11-02T07:51:19Z (paper trading, never real money)
   CA `GYKnd6jGUSQoBUnj6LdGCBtCWYDgr2Zd6QwNPcy5pump`
 
 ## Last scan
-- 07:50Z: 3 coins, 3 with pairs, 0 passed the market filters, 0 researched
+- 08:06Z: 4 coins, 4 with pairs, 0 passed the market filters, 0 researched
 
 ## Coins it looked at, and why it passed
+- 07:57Z GATO (MIGRATED, $9,104,578 mcap, $4,743 5m vol): REJECT, Dev holds 3.3% (>1%) (V13, V17)  
+  CA `HsprHxBRgiVaQdRf3TnKNuZZtaX9JUSPgMFdAkk6pump`
 - 07:48Z GLITCH (MIGRATED, $3,803,317 mcap, $317 5m vol): REJECT, 5m volume $317 is dead (<$2,000) (V1)  
   CA `8Xg89xT8Ve34sKiYqYuMs46mycREsCA2F362UscRpump`
 - 07:42Z Tumulun (FINAL_STRETCH, $25,871 mcap, $17,396 5m vol): PASS at conviction 3, PASS: up 108% in the last 5 minutes, 3% off its high, 18 minutes old, and 9 other coins share the ticker. This is chasing a spike on the curve, not a setup (V1, V5).  
@@ -96,8 +98,6 @@ Updated 2026-11-02T07:51:19Z (paper trading, never real money)
   CA `BbtvdRYnvHLeAsVg6ErBEYXYRg2329RXkAtFfcCTpump`
 - 07:16Z CUMFACE (FINAL_STRETCH, $21,894 mcap, $1,937 5m vol): REJECT, 5m volume $1,937 is dead (<$2,000) (V1)  
   CA `J1D3X8znX4AzUPMHVWyBLNHqBBqWDPNSjX4KwK3Qpump`
-- 07:12Z GATO (MIGRATED, $9,050,481 mcap, $3,392 5m vol): REJECT, Dev holds 3.3% (>1%) (V13, V17)  
-  CA `HsprHxBRgiVaQdRf3TnKNuZZtaX9JUSPgMFdAkk6pump`
 
 ## What its skips did next (last 48h)
 A skip "ran" if the coin reached the first target (1.5x) from the skip price before a 20% drop, "dumped" if the drop came first. Sampled every 10 min, followed 6h.
@@ -203,11 +203,11 @@ PASS: Nathalia (named after a real person's death, and 5m volume has collapsed t
 ## Moving most in its scans, last 30 min (1h volume)
 - ANAKIN: $550,485 1h vol, $3,905,005 mcap, +12% 1h  
   CA `8s4bNqEztH1JP7mkU747uMr7AckCQdiV47FDqYnDpump`
-- CI: $175,963 1h vol, $159,025 mcap, +301% 1h  
-  CA `gg1zQUgUoXd8hVmkTmLooyzC1QBT1cvJDnCXHLPpump`
-- TripleH: $173,367 1h vol, $124,047 mcap, +212% 1h  
-  CA `ATnGk91tqFpXhiqAnDfGav7YYMUiocQ2YHgY4gPBpump`
 - Nathalia: $154,471 1h vol, $35,751 mcap, -5% 1h  
   CA `6nuBXMpJxTAsu7AsWQe6k7G1Sd5zttwayAPQWnbxDvWf`
-- PEER: $126,500 1h vol, $27,042 mcap, +861% 1h  
-  CA `BbtvdRYnvHLeAsVg6ErBEYXYRg2329RXkAtFfcCTpump`
+- Karlusha: $103,674 1h vol, $8,349 mcap, +196% 1h  
+  CA `BPT1ProvKQmYzjYYkDZkwSoPoxuv1EivTyHcdv3Epump`
+- Tumulun: $97,586 1h vol, $25,871 mcap, +340% 1h  
+  CA `E84psoV4rJQYBoyTkzTrh1hzjZJv81VGFRX9gMLHpump`
+- GATO: $74,495 1h vol, $9,104,578 mcap, +5% 1h  
+  CA `HsprHxBRgiVaQdRf3TnKNuZZtaX9JUSPgMFdAkk6pump`
