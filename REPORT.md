@@ -1,13 +1,13 @@
 # Trencher live report
 
-Updated 2026-11-02T01:46:14Z (paper trading, never real money)
+Updated 2026-11-02T02:01:24Z (paper trading, never real money)
 
 - Equity: $80.53 (-19.5% vs $100 start)
-- Goal: $1,000 by 2026-11-05 05:03Z (pressing for it): at 8.1% of it, 3.1 days left, needs +123.3% a day from here
+- Goal: $1,000 by 2026-11-05 05:03Z (pressing for it): at 8.1% of it, 3.1 days left, needs +123.9% a day from here
 - Closed trades: 19, 3 wins
 - Fees paid: $12.66 (axiom $2.26, network $8.06, pool $2.21), plus $3.34 lost to slippage
 - New trades: on
-- Brain: subscription, 607 calls and 0 plan-limit hits in 48h
+- Brain: subscription, 606 calls and 0 plan-limit hits in 48h
 
 ## Scorecard (after fees)
 - 19 closed, 3 won (16%), net $-19.48
@@ -74,9 +74,15 @@ Updated 2026-11-02T01:46:14Z (paper trading, never real money)
   CA `GYKnd6jGUSQoBUnj6LdGCBtCWYDgr2Zd6QwNPcy5pump`
 
 ## Last scan
-- 01:45Z: 1 coins, 0 with pairs, 0 passed the market filters, 0 researched
+- 02:00Z: 1 coins, 0 with pairs, 0 passed the market filters, 0 researched
 
 ## Coins it looked at, and why it passed
+- 01:59Z UNI (MIGRATED, $66,468 mcap, $19,389 5m vol): PASS at conviction 2, PASS — 18-minute-old copy of the UNI ticker, still bleeding off its spike (−17% on the last 5m candle), with one 7.1% bundle cluster on a $21k pool. Blocker: too new (V1, V3, V6).  
+  CA `8Jz7NgcjEMsWNPAXF3AvUHuHfN1bJ9nYZFHKiKkZUBeV`
+- 01:52Z BLOBBO (FINAL_STRETCH, $21,263 mcap, $54,088 5m vol): PASS at conviction 3, PASS — 10-minute-old curve coin on a 7.3x volume spike with three bigger tickers sharing its name. Too new and chasing (V1, V5, V6).  
+  CA `E2Y6k3e6LauUoMS11vVz3k2toXmh77n8HGicZygRpump`
+- 01:48Z F7931A (MIGRATED, $43,002 mcap, $5,107 5m vol): REJECT, Top 10 hold 27.4% ex-pool (>25%) (V13)  
+  CA `3Di8HztV3HPKXnch6SBr3r8NGEoW7DgbmRsAipG5A67E`
 - 01:34Z STEALTH (MIGRATED, $108,707 mcap, $18,122 5m vol): PASS at conviction 3, PASS — 17.6% off a 6-minute-old high and dropping, with the high only 1.21x away. Blocker: target too close. No higher low yet and no crowd outside the chart (V1, V6).  
   CA `GoDSW31bTxfkoup9yA1qcGGx9RMXdTEWgApv3xzBmoA`
 - 01:33Z HELL (MIGRATED, $3,230,449 mcap, $2,177 5m vol): PASS at conviction 2, PASS. $2.2k on the 5m for a $3.2M coin is a dead tape, and the first resistance is the $3.75M high, only 1.16x away. Blocker: "target too close" (V1, V6).  
@@ -91,28 +97,24 @@ Updated 2026-11-02T01:46:14Z (paper trading, never real money)
   CA `HsprHxBRgiVaQdRf3TnKNuZZtaX9JUSPgMFdAkk6pump`
 - 01:32Z Learjet (MIGRATED, $142,139 mcap, $16,382 5m vol): REJECT, Bundles: 10 linked wallet cluster(s) hold 32.2% of supply (>20%) (V17)  
   CA `DaG1X248VVvWuqaiBURFSe4b4L7RUm8sR57FJBZ7pump`
-- 01:32Z pain (MIGRATED, $126,204 mcap, $48,405 5m vol): PASS at conviction 3, PASS: pain is sitting on its high (0% off the peak), migrated 28 minutes ago, with 5m volume at 2.9x the hourly pace. That's chasing a fresh spike, not a pullback (V1, V6).  
-  CA `CTLeZu8CxiYXL6zTmBbsycaG35smxJMmAyNHCbWzpump`
-- 01:31Z ANAKIN (MIGRATED, $3,742,534 mcap, $458,657 5m vol): PASS at conviction 4, PASS: chasing spike. 5m volume is 4.1x the hourly pace, 18 minutes after the top, and price is still falling with no higher low printed. Right coin, wrong minute. Watchlist. (V1, V6)  
-  CA `8s4bNqEztH1JP7mkU747uMr7AckCQdiV47FDqYnDpump`
 
 ## What its skips did next (last 48h)
 A skip "ran" if the coin reached the first target (1.5x) from the skip price before a 20% drop, "dumped" if the drop came first. Sampled every 10 min, followed 6h.
-- near the high / chasing: blocked 63, ran 5, dumped 46, flat 7, open 5 (saving losses: keep it)
+- near the high / chasing: blocked 62, ran 5, dumped 46, flat 7, open 4 (saving losses: keep it)
   - ran: Hyped up to 2.02x  
     CA `ADpzsC5eB1yDD5T9LocQ8kpN7jrcW5gobA4FBHuipump`
   - ran: Wojak up to 2.51x  
     CA `BbNuEtiT77Swr4WqGHuUkQY5kZ67M7au7bXkxcArpump`
   - ran: BBOTS up to 1.51x  
     CA `4TCevs5EC2RFsdWo3YPVifqe9dX2acCGGa9VHNtppump`
-- too new / sniping: blocked 51, ran 3, dumped 47, flat 0, open 1 (saving losses: keep it)
+- too new / sniping: blocked 53, ran 3, dumped 47, flat 0, open 3 (saving losses: keep it)
   - ran: onlypump up to 1.92x  
     CA `J73efZvH6rkrJbFJdP2rqe473YJW7tyWmrNARUSzpump`
   - ran: paws up to 1.51x  
     CA `CCF6ui6YjjhLaVtuYLH8b5jza8jHathqww5VbrMapump`
   - ran: VETOTRUMP up to 1.66x  
     CA `6g16UK4wHoFhC7PCmw8LYYCdt9q8m99fyoAwxeCrpump`
-- top 10 over 25%: blocked 37, ran 7, dumped 25, flat 3, open 2 (saving losses: keep it)
+- top 10 over 25%: blocked 38, ran 7, dumped 26, flat 3, open 2 (saving losses: keep it)
   - ran: Beaver up to 2.56x  
     CA `5h44wfzwGHFnfVhNKtMLapAJNV9iqqbUgUB2FqyWpump`
   - ran: timmy up to 1.66x  
@@ -155,7 +157,7 @@ A skip "ran" if the coin reached the first target (1.5x) from the skip price bef
     CA `9yEKBwczdqoox7Red6GGPTrJ2dUbMvFUagdjxFqHpump`
   - ran: DOJAK up to 2.62x  
     CA `E5aeDjgq6ZSzAmihKoh9JPEhwK2bMCbZLJf6LYT9pump`
-- bundles over the line: blocked 8, ran 0, dumped 5, flat 2, open 1 (saving losses: keep it)
+- bundles over the line: blocked 8, ran 0, dumped 6, flat 2, open 0 (saving losses: keep it)
 
 ## Rules it changed from results and skips
 - 11-01 16:56Z dropped: Any fee/friction cap or minimum position size (The code fee check owns this (target must pay 3x round-trip, round trip at most 20% of position); fix the pick or the exit instead.)
@@ -189,7 +191,7 @@ Meta: Star Wars still leads. New ANAKIN (8s4b…pump) is the clear leader: $3.7M
   CA `DaG1X248VVvWuqaiBURFSe4b4L7RUm8sR57FJBZ7pump`
 - pain: $197,214 1h vol, $113,541 mcap, +186% 1h  
   CA `CTLeZu8CxiYXL6zTmBbsycaG35smxJMmAyNHCbWzpump`
-- megatron: $155,680 1h vol, $8,054 mcap, +149% 1h  
+- megatron: $158,842 1h vol, $4,666 mcap, +44% 1h  
   CA `7yhyJaE5AcNyUGVcfmATy5AxcgFfq1Jtvw71BjGcpump`
 - STEALTH: $128,733 1h vol, $108,707 mcap, +112% 1h  
   CA `GoDSW31bTxfkoup9yA1qcGGx9RMXdTEWgApv3xzBmoA`
