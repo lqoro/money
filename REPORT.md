@@ -1,13 +1,13 @@
 # Trencher live report
 
-Updated 2026-11-02T05:35:06Z (paper trading, never real money)
+Updated 2026-11-02T05:50:06Z (paper trading, never real money)
 
 - Equity: $80.53 (-19.5% vs $100 start)
-- Goal: $1,000 by 2026-11-05 05:03Z (pressing for it): at 8.1% of it, 3 days left, needs +133% a day from here
+- Goal: $1,000 by 2026-11-05 05:03Z (pressing for it): at 8.1% of it, 3 days left, needs +133.7% a day from here
 - Closed trades: 19, 3 wins
 - Fees paid: $12.66 (axiom $2.26, network $8.06, pool $2.21), plus $3.34 lost to slippage
 - New trades: on
-- Brain: subscription, 575 calls and 0 plan-limit hits in 48h
+- Brain: subscription, 574 calls and 0 plan-limit hits in 48h
 
 ## Scorecard (after fees)
 - 19 closed, 3 won (16%), net $-19.48
@@ -74,7 +74,7 @@ Updated 2026-11-02T05:35:06Z (paper trading, never real money)
   CA `GYKnd6jGUSQoBUnj6LdGCBtCWYDgr2Zd6QwNPcy5pump`
 
 ## Last scan
-- 05:34Z: 2 coins, 2 with pairs, 0 passed the market filters, 0 researched
+- 05:49Z: 3 coins, 3 with pairs, 0 passed the market filters, 0 researched
 
 ## Coins it looked at, and why it passed
 - 05:31Z Warcoin (no setup, $15,771 mcap, $6,965 5m vol): REJECT, No setup fits: not Final Stretch, not a migrated runner, not a healthy dip  
@@ -107,14 +107,14 @@ A skip "ran" if the coin reached the first target (1.5x) from the skip price bef
     CA `BbNuEtiT77Swr4WqGHuUkQY5kZ67M7au7bXkxcArpump`
   - ran: BBOTS up to 1.51x  
     CA `4TCevs5EC2RFsdWo3YPVifqe9dX2acCGGa9VHNtppump`
-- too new / sniping: blocked 46, ran 5, dumped 39, flat 0, open 2 (saving losses: keep it)
+- too new / sniping: blocked 45, ran 5, dumped 40, flat 0, open 0 (saving losses: keep it)
   - ran: onlypump up to 1.92x  
     CA `J73efZvH6rkrJbFJdP2rqe473YJW7tyWmrNARUSzpump`
   - ran: paws up to 1.51x  
     CA `CCF6ui6YjjhLaVtuYLH8b5jza8jHathqww5VbrMapump`
   - ran: VETOTRUMP up to 1.66x  
     CA `6g16UK4wHoFhC7PCmw8LYYCdt9q8m99fyoAwxeCrpump`
-- top 10 over 25%: blocked 39, ran 7, dumped 27, flat 2, open 3 (saving losses: keep it)
+- top 10 over 25%: blocked 39, ran 7, dumped 27, flat 3, open 2 (saving losses: keep it)
   - ran: Beaver up to 2.56x  
     CA `5h44wfzwGHFnfVhNKtMLapAJNV9iqqbUgUB2FqyWpump`
   - ran: timmy up to 1.66x  
@@ -142,7 +142,7 @@ A skip "ran" if the coin reached the first target (1.5x) from the skip price bef
     CA `2T9WZjVC6L3BvusUtjKDT6HcZeEYgU9T5xhfJQxFpump`
   - ran: ZECRET up to 1.62x  
     CA `ChCi2x2bpevrNyeRoPHLXHzmaCdGQPuU15CNqxY1pump`
-- falling knife / no higher low: blocked 20, ran 2, dumped 12, flat 2, open 4 (saving losses: keep it)
+- falling knife / no higher low: blocked 20, ran 2, dumped 14, flat 2, open 2 (saving losses: keep it)
   - ran: CREDIT up to 1.56x  
     CA `Ewyifvp8X9NxeaKawXamGXBFDisuMfcFfcdvSZ8opump`
   - ran: PI up to 1.6x  
@@ -188,16 +188,16 @@ A skip "ran" if the coin reached the first target (1.5x) from the skip price bef
 - [2026-11-01 06:19] Expected AAPLCAT, 36% off its $1.8M high with a printed higher-low base, clean holders and $12.6k on the 5m, to retest the peak at about 1.57x. It peaked at 1.01x, broke the 0.000981 higher low, and the "unclear" stop review sold at −31% instead of −20%. That makes 7 of 7 stop reviews closing worse than the stop. This confirms my existing rules rather than adding a new one: the proven band needs 5m at or above the hourly pace and a meta with the crowd still arriving (V1, V6). I bought with pace under the hourly average and a cooling meta, so next time a band entry with flow below pace is a PASS (blocker "flow below pace"), not a probe, and a broken higher low sells right away.
 
 ## Meta right now
-Meta: war and patriotism jokes are rising. INU (I Nuke You) is at $134k with $67k on the 5m and +234% on the hour; NA (New America) is at $114k with $19k on the 5m; Warcoin, World Peace and America Coin are moving lower down. Star Wars parodies are fading: ANUKOON rugged, while the original ANAKIN holds $2.7M, -13% on the hour, 5m volume about 0.78x hourly, 0.72 buys. Edgy NoNut jokes are dead (NNH -98%, the crawler's summary was stale), and Kabosu and DOGE also rugged within an hour. Setups to research: INU as MIGRATED (12 minutes old, so a probe at 5-6 if checks are clean, not an automatic 7), NA as MIGRATED (probe, needs a check that no politician pushed the CA, V13), ANAKIN as DIP (clears the 0.7x volume gate; buy only on a real pullback with buyers stepping in). PASS on HOPE: the slur kills wide appeal (V6) and 5m volume is only about 0.15x hourly. PASS on Warcoin and World Peace: 6-40 minutes old and still on the bonding curve, so it would be sniping new pairs (V5). Hard lines and the 20% stop stay in place despite the owner's push.
+Meta: war/peace jokes, churning fast (PEACE $141k/$73k 5m, TRUMP 'Peace President' $124k/$141k 5m +209%, Warcoin/WARCAT/WARDOG). The crawler's summary is stale: INU and NA rugged ~98%, as did World Peace and War Coin. Star Wars fading: ANAKIN 5m vol ~0.5x its hourly pace, fails the 0.7x DIP gate. Off-theme: XMRISE privacy play ($73k, $14k 5m), matches CoinGecko's Privacy category. Research: PEACE (DIP/MIGRATED probe, 1.5h old, buys 0.57), XMRISE (MIGRATED probe, 12 min old), TRUMP (best flow but 18 min old and political name, needs a V13 check that no politician pushed the CA). PASS: NA/INU (rugged), HOPE (slur kills appeal, V6), bonding-curve war coins (sniping new pairs, V5). Owner's push buys probes, not 8s. Hard lines and 20% stop hold.
 
 ## Moving most in its scans, last 30 min (1h volume)
 - PEACE: $728,256 1h vol, $140,651 mcap, -45% 1h  
   CA `BngAfLZxaWN2QvpFhRbUHydYGr8zA7YTSA178G8Epump`
-- NA: $312,337 1h vol, $1,816 mcap, -98% 1h  
-  CA `9ZmdP8q22ebRhEkcwd5EDkitu7ypeDFXTQXpv2kUpump`
 - TRUMP: $274,906 1h vol, $123,543 mcap, +209% 1h  
   CA `En5icDhYYCuGXTtCLmfWiGR4C9nMiYMKojLdBRfVpump`
+- NA: $229,458 1h vol, $1,816 mcap, -99% 1h  
+  CA `9ZmdP8q22ebRhEkcwd5EDkitu7ypeDFXTQXpv2kUpump`
+- Unseen: $205,123 1h vol, $21,455 mcap, -49% 1h  
+  CA `DKSBXMtJaJQYsi8rFegxzZJZDXvK3JDai56YZ7CRpump`
 - Warcoin: $155,759 1h vol, $20,645 mcap, +101% 1h  
   CA `H86pLyqzZMim3pxrC29YWsMKoxL6xGFM1nQyVtyRpump`
-- ANAKIN: $155,507 1h vol, $3,069,443 mcap, -4% 1h  
-  CA `8s4bNqEztH1JP7mkU747uMr7AckCQdiV47FDqYnDpump`
