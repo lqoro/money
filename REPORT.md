@@ -1,11 +1,11 @@
 # Trencher live report
 
-Updated 2026-11-02T10:07:10Z (paper trading, never real money)
+Updated 2026-11-02T10:22:25Z (paper trading, never real money)
 
-- Equity: $79.10 (-20.9% vs $100 start)
-- Goal: $1,000 by 2026-11-05 05:03Z (pressing for it): at 7.9% of it, 2.8 days left, needs +148.4% a day from here
+- Equity: $78.91 (-21.1% vs $100 start)
+- Goal: $1,000 by 2026-11-05 05:03Z (pressing for it): at 7.9% of it, 2.8 days left, needs +149.4% a day from here
 - Closed trades: 20, 3 wins
-- Fees paid: $13.36 (axiom $2.45, network $8.44, pool $2.34), plus $3.62 lost to slippage
+- Fees paid: $13.71 (axiom $2.55, network $8.62, pool $2.41), plus $3.76 lost to slippage
 - New trades: on
 - Brain: subscription, 547 calls and 0 plan-limit hits in 48h
 
@@ -24,14 +24,13 @@ Updated 2026-11-02T10:07:10Z (paper trading, never real money)
   - stop loss: 8, 0 won, net $-18.87, fees+slip $6.78, peak 1.09x → 0.64x
   - trailing stop: 2, 2 won, net $+4.21, fees+slip $2.04, peak 3.32x → 1.72x
   - other: 1, 0 won, net $-0.03, fees+slip $0.67, peak 1.4x → 0.99x
-- To $1,000: $920.90 to go; at $-1.05 a trade this pace doesn't get there
+- To $1,000: $921.09 to go; at $-1.05 a trade this pace doesn't get there
 
 ## Open positions
-- none
+- ANAKIN (MIGRATED): cost $10.0, 1.02x, fees $0.36  
+  CA `8s4bNqEztH1JP7mkU747uMr7AckCQdiV47FDqYnDpump`
 
 ## Recent trades
-- 03:30Z CLOSE BLUE -30% ($-2.98), fees $0.75  
-  CA `CPoGSmcjprCvzA2MFYLJMpQkGjmgVzKg4RVwMdrzpump`
 - 05:13Z BUY SIS $10.58, fees $0.41  
   CA `FdKdpz11GsTofLaNiddrhxrsE4APZYSSfLFqQ9YKpump`
 - 05:24Z SELL SIS for $7.27, fees $0.35  
@@ -49,6 +48,8 @@ Updated 2026-11-02T10:07:10Z (paper trading, never real money)
 - 08:22Z SELL ANAKIN for $8.58, fees $0.34  
   CA `8s4bNqEztH1JP7mkU747uMr7AckCQdiV47FDqYnDpump`
 - 08:22Z CLOSE ANAKIN -14% ($-1.43), fees $0.70  
+  CA `8s4bNqEztH1JP7mkU747uMr7AckCQdiV47FDqYnDpump`
+- 10:10Z BUY ANAKIN $10.00, fees $0.36  
   CA `8s4bNqEztH1JP7mkU747uMr7AckCQdiV47FDqYnDpump`
 
 ## Last closes
@@ -74,9 +75,11 @@ Updated 2026-11-02T10:07:10Z (paper trading, never real money)
   CA `8s4bNqEztH1JP7mkU747uMr7AckCQdiV47FDqYnDpump`
 
 ## Last scan
-- 10:06Z: 3 coins, 2 with pairs, 1 passed the market filters, 1 researched
+- 10:21Z: 4 coins, 3 with pairs, 0 passed the market filters, 0 researched
 
 ## Coins it looked at, and why it passed
+- 10:10Z ANAKIN (MIGRATED, $4,485,118 mcap, $11,979 5m vol): BUY at conviction 6, BUY, conviction 6 probe. ANAKIN printed the higher low it was missing last time and is reclaiming its range on 1.2x pace. But the $6.05M high is only 1.35x away and the crowd is thinner than it was this morning, so it's a probe, not a 7 (V1, V6).  
+  CA `8s4bNqEztH1JP7mkU747uMr7AckCQdiV47FDqYnDpump`
 - 10:06Z MANDO (MIGRATED, $228,535 mcap, $2,337 5m vol): REJECT, Dev holds 1.0% (>1%) (V13, V17)  
   CA `FAqiaGmrSdx2Z5qZmSRUkbyYCF2dFCUTfYVwP4Mypump`
 - 10:03Z BUNK (FINAL_STRETCH, $27,336 mcap, $8,422 5m vol): REJECT, Top 10 hold 28.3% ex-pool (>25%) (V13)  
@@ -95,8 +98,6 @@ Updated 2026-11-02T10:07:10Z (paper trading, never real money)
   CA `EPcHDXD3P23KcQsHyZYZLAx8odhgh1ELNnGL5szgpump`
 - 09:36Z GLITCH (MIGRATED, $3,523,739 mcap, $2,627 5m vol): REJECT, Top 10 hold 28.0% ex-pool (>25%) (V13)  
   CA `8Xg89xT8Ve34sKiYqYuMs46mycREsCA2F362UscRpump`
-- 09:24Z ANAKIN (MIGRATED, $3,934,073 mcap, $13,382 5m vol): PASS at conviction 4, PASS — same mid-range spot that time-stopped me at $3.86M, no printed higher low, and the first resistance (0.0043) is only ~1.09x away. Blockers: no higher low / target too close (V1, V6).  
-  CA `8s4bNqEztH1JP7mkU747uMr7AckCQdiV47FDqYnDpump`
 
 ## What its skips did next (last 48h)
 A skip "ran" if the coin reached the first target (1.5x) from the skip price before a 20% drop, "dumped" if the drop came first. Sampled every 10 min, followed 6h.
@@ -114,14 +115,14 @@ A skip "ran" if the coin reached the first target (1.5x) from the skip price bef
     CA `CCF6ui6YjjhLaVtuYLH8b5jza8jHathqww5VbrMapump`
   - ran: VETOTRUMP up to 1.66x  
     CA `6g16UK4wHoFhC7PCmw8LYYCdt9q8m99fyoAwxeCrpump`
-- top 10 over 25%: blocked 41, ran 7, dumped 29, flat 2, open 3 (saving losses: keep it)
+- top 10 over 25%: blocked 41, ran 7, dumped 30, flat 2, open 2 (saving losses: keep it)
   - ran: Beaver up to 2.56x  
     CA `5h44wfzwGHFnfVhNKtMLapAJNV9iqqbUgUB2FqyWpump`
   - ran: timmy up to 1.66x  
     CA `TiMSdJrkVwUpeEWJpuqRvHt4wVS7uH77LbNPGGVJXNw`
   - ran: WASTED up to 1.93x  
     CA `GexThZHgaswpAQ7Fi8QrHFubjPimUNSYhJiAA7XZpump`
-- falling knife (code): blocked 31, ran 5, dumped 23, flat 2, open 1 (saving losses: keep it)
+- falling knife (code): blocked 31, ran 6, dumped 23, flat 2, open 0 (saving losses: keep it)
   - ran: KIM up to 1.55x  
     CA `8pjfN5Ayb4rucGpYE3tZWN6v3EysizjPx1v62zx1pump`
   - ran: BLUE up to 1.53x  
@@ -147,7 +148,7 @@ A skip "ran" if the coin reached the first target (1.5x) from the skip price bef
     CA `Ewyifvp8X9NxeaKawXamGXBFDisuMfcFfcdvSZ8opump`
   - ran: PI up to 1.6x  
     CA `93VGqXL76voGxc43apJTDJoKkqnxTht1BKWoEmUypump`
-- bundles over the line: blocked 15, ran 2, dumped 10, flat 2, open 1 (saving losses: keep it)
+- bundles over the line: blocked 15, ran 2, dumped 11, flat 2, open 0 (saving losses: keep it)
   - ran: Nuts up to 1.53x  
     CA `APH9FRoKst66E4a7uZXcEfE8NjtwybUC8Jq7ue8upump`
   - ran: NA up to 1.97x  
@@ -193,11 +194,11 @@ The meta is brand-new pump.fun launches, about 20 minutes old, that run 3-9x in 
 ## Moving most in its scans, last 30 min (1h volume)
 - ww3: $477,501 1h vol, $132,408 mcap, +88% 1h  
   CA `zttJSZyD67hzNrJ1RKKUsZ1Hya4vfxYRjdQABvppump`
-- Bert: $192,662 1h vol, $150,542 mcap, +278% 1h  
-  CA `EPcHDXD3P23KcQsHyZYZLAx8odhgh1ELNnGL5szgpump`
-- WWIII: $165,616 1h vol, $53,892 mcap, -44% 1h  
-  CA `GD52VfoPZdad4hiNPg4UnjtDGsS4WiM3mqS8j1czpump`
-- GATO: $152,290 1h vol, $9,425,611 mcap, +3% 1h  
-  CA `HsprHxBRgiVaQdRf3TnKNuZZtaX9JUSPgMFdAkk6pump`
-- HAMMER: $144,060 1h vol, $11,713 mcap, +116% 1h  
+- ANAKIN: $125,521 1h vol, $4,473,760 mcap, +2% 1h  
+  CA `8s4bNqEztH1JP7mkU747uMr7AckCQdiV47FDqYnDpump`
+- BUNK: $110,483 1h vol, $26,630 mcap, +320% 1h  
+  CA `F17yBcN7vhxNdWmSmoLf3FZc7Y4UdyvW2i7NdMFeSQqw`
+- HAMMER: $107,053 1h vol, $9,122 mcap, -42% 1h  
   CA `FQpyYoUGfAd2vQwhtthdHFyBYizAQHdCVMWeC3bZpump`
+- BCC: $63,233 1h vol, $2,739 mcap, -69% 1h  
+  CA `6aaeAe9QCtyiRbW4LhsFiseXazdZma5o4DEnn82fpump`
