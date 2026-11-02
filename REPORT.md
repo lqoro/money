@@ -1,9 +1,9 @@
 # Trencher live report
 
-Updated 2026-11-02T01:30:46Z (paper trading, never real money)
+Updated 2026-11-02T01:31:04Z (paper trading, never real money)
 
 - Equity: $80.53 (-19.5% vs $100 start)
-- Goal: $1,000 by 2026-11-05 05:03Z (pressing for it): at 8.1% of it, 3.1 days left, needs +122.6% a day from here
+- Goal: $1,000 by 2026-11-05 05:03Z (pressing for it): at 8.1% of it, 3.1 days left, needs +122.7% a day from here
 - Closed trades: 19, 3 wins
 - Fees paid: $12.66 (axiom $2.26, network $8.06, pool $2.21), plus $3.34 lost to slippage
 - New trades: on
