@@ -1,13 +1,13 @@
 # Trencher live report
 
-Updated 2026-11-02T16:57:29Z (paper trading, never real money)
+Updated 2026-11-02T17:12:36Z (paper trading, never real money)
 
 - Equity: $77.09 (-22.9% vs $100 start)
-- Goal: $1,000 by 2026-11-05 05:03Z (pressing for it): at 7.7% of it, 2.5 days left, needs +178.3% a day from here
+- Goal: $1,000 by 2026-11-05 05:03Z (pressing for it): at 7.7% of it, 2.5 days left, needs +179.5% a day from here
 - Closed trades: 21, 3 wins
 - Fees paid: $14.04 (axiom $2.63, network $8.81, pool $2.47), plus $3.89 lost to slippage
 - New trades: on
-- Brain: subscription, 503 calls and 0 plan-limit hits in 48h
+- Brain: subscription, 502 calls and 0 plan-limit hits in 48h
 
 ## Scorecard (after fees)
 - 21 closed, 3 won (14%), net $-22.93
@@ -74,9 +74,21 @@ Updated 2026-11-02T16:57:29Z (paper trading, never real money)
   CA `8s4bNqEztH1JP7mkU747uMr7AckCQdiV47FDqYnDpump`
 
 ## Last scan
-- 16:57Z: 2 coins, 2 with pairs, 1 passed the market filters, 1 researched
+- 17:12Z: 6 coins, 6 with pairs, 2 passed the market filters, 2 researched
 
 ## Coins it looked at, and why it passed
+- 17:12Z FEAR (DIP, $111,154 mcap, $34,829 5m vol): REJECT, Bundles: 10 linked wallet cluster(s) hold 34.7% of supply (>20%) (V17)  
+  CA `3Z8mK9QRy3ZphSTqoi1Duzok8an4WCND9XrHWfgKpump`
+- 17:12Z Slingoor (MIGRATED, $2,034,700 mcap, $34,147 5m vol): REJECT, RugCheck danger: Top 10 holders high ownership  
+  CA `9rZR9nCQbaiBvotWVpifN8z1vckVFshnsATuAJrXpump`
+- 17:05Z pumpcat (MIGRATED, $55,796 mcap, $96,035 5m vol): PASS at conviction 2, PASS — 5 minutes old, at the high, +27% in the last 5m on 12x pace. Chasing spike on a fresh migration, with 3 bigger same-ticker coins. Blocker: chasing spike / too new. (V1, V5, V6)  
+  CA `8KwLDzEDYdp9hP8YNsx29Kjzp3pNHTacQHdYgjibpump`
+- 17:02Z HI (no setup, $3,778 mcap, $133 5m vol): REJECT, Hack story ("hack" in the name or ticker): these tend to go down, owner rule  
+  CA `cMzxKhgHsL3HQdnjMHRt2b6FYmQAWr29fR8GUTWpump`
+- 17:00Z Slingoor (MIGRATED, $133,177 mcap, $21,704 5m vol): PASS at conviction 4, PASS: the $164k high is only 1.23x away, and the coin is drifting at +1% on the 5m instead of breaking out. Target too close, no breakout. (V1, V6)  
+  CA `AYDL7DTa6AidQ1nUSAEAnzVAFDDewDXbSyy8Hh2wpump`
+- 16:58Z Anakin (DIP, $1,840,132 mcap, $20,396 5m vol): PASS at conviction 2, PASS: falling knife on the wrong Anakin. It's closing at the hourly low with a 0.45 buy share, and the crowd is on the $6.3M leader. Blocker: no higher low / split crowd (V1, V3, V6).  
+  CA `ExxzYBTt3jwU5MUxuw2F4toYbTLdFwThSjyaCn6Xpump`
 - 16:57Z MAMESUKE (DIP, $925,978 mcap, $21,988 5m vol): REJECT, RugCheck danger: Large Amount of LP Unlocked 80.47%  
   CA `SCGBBnSwnekytGFHgyeHHxPMiN7xDxsWFGg9JgFSTNK`
 - 16:47Z GATO (MIGRATED, $10,727,133 mcap, $2,679 5m vol): REJECT, Dev holds 3.3% (>1%) (V13, V17)  
@@ -85,22 +97,10 @@ Updated 2026-11-02T16:57:29Z (paper trading, never real money)
   CA `5uo1mMxffwCYpdCimWeP16EyW1JGpw2vbtNnem1Hpump`
 - 16:44Z DIGS (MIGRATED, $70,640 mcap, $2,331 5m vol): REJECT, Dev holds 3.2% (>1%) (V13, V17)  
   CA `9QT8K685Hrae4k11dhGXirdtpfAaimExtyfwt8cPpump`
-- 16:43Z DESSA (DIP, $11,958,150 mcap, $3,163 5m vol): REJECT, Dip with fading attention is a falling knife, not a dip (5m at 0.56x the hour's pace, under 0.6x)  
-  CA `npz2FhoufQ7pKqhGpaipYWacrAkidyW2yDpVWSvpump`
-- 16:37Z FEAR (MIGRATED, $135,885 mcap, $34,459 5m vol): PASS at conviction 3, PASS: the first resistance is the $157k high, only 1.15x away. Flow is running at 0.78x the hourly pace, and a 4.8% bundle sits inside a four-coin FEAR clone field. Target too close (V1, V3, V6).  
-  CA `CHtXwJ3qa2ozS9vQkxhR3MmNwkoUqkh3icGXgZPepump`
-- 16:32Z KOROSUKE (MIGRATED, $211,781 mcap, $14,670 5m vol): PASS at conviction 3, PASS — clean holders, but 5m flow is 0.33x the hour's pace on a sub-1h migration still bleeding off its spike. Flow below pace (V1, V6).  
-  CA `7ha4HFgdvkXaDcR2biCsuBpoCZzoLSRjb5we34Gbpump`
-- 16:32Z Slingoor (DIP, $76,904 mcap, $16,436 5m vol): PASS at conviction 2, PASS: this is a $77k copy of Slingoor. The $855k "The Black Bull" with the same name is the leader, and this one has a 6.6% bundle cluster and is still falling with no higher low. Split crowd (V1, V3).  
-  CA `GWJ96ggVUfZPX5ghcD5sUaAWWwqcT1cdntNGew8Jpump`
-- 16:31Z WWIII (MIGRATED, $31,037 mcap, $10,707 5m vol): REJECT, RugCheck danger: Creator history of rugged tokens  
-  CA `GD52VfoPZdad4hiNPg4UnjtDGsS4WiM3mqS8j1czpump`
-- 16:31Z RICO (MIGRATED, $44,624 mcap, $30,100 5m vol): REJECT, RugCheck danger: Creator history of rugged tokens  
-  CA `8kuQg3WivDtL85VEdw2jEmSXjYt6EEeYBATJ4DtQpump`
 
 ## What its skips did next (last 48h)
 A skip "ran" if the coin reached the first target (1.5x) from the skip price before a 20% drop, "dumped" if the drop came first. Sampled every 10 min, followed 6h.
-- near the high / chasing: blocked 52, ran 3, dumped 42, flat 6, open 1 (saving losses: keep it)
+- near the high / chasing: blocked 51, ran 3, dumped 41, flat 6, open 1 (saving losses: keep it)
   - ran: BBOTS up to 1.51x  
     CA `4TCevs5EC2RFsdWo3YPVifqe9dX2acCGGa9VHNtppump`
   - ran: BLUE up to 1.53x  
@@ -114,35 +114,35 @@ A skip "ran" if the coin reached the first target (1.5x) from the skip price bef
     CA `TiMSdJrkVwUpeEWJpuqRvHt4wVS7uH77LbNPGGVJXNw`
   - ran: WASTED up to 1.93x  
     CA `GexThZHgaswpAQ7Fi8QrHFubjPimUNSYhJiAA7XZpump`
-- too new / sniping: blocked 45, ran 8, dumped 37, flat 0, open 0 (saving losses: keep it)
+- too new / sniping: blocked 44, ran 8, dumped 35, flat 0, open 1 (saving losses: keep it)
   - ran: onlypump up to 1.92x  
     CA `J73efZvH6rkrJbFJdP2rqe473YJW7tyWmrNARUSzpump`
   - ran: paws up to 1.51x  
     CA `CCF6ui6YjjhLaVtuYLH8b5jza8jHathqww5VbrMapump`
   - ran: VETOTRUMP up to 1.66x  
     CA `6g16UK4wHoFhC7PCmw8LYYCdt9q8m99fyoAwxeCrpump`
-- RugCheck danger: blocked 33, ran 5, dumped 26, flat 0, open 2 (saving losses: keep it)
+- RugCheck danger: blocked 33, ran 4, dumped 26, flat 0, open 3 (saving losses: keep it)
   - ran: SUGAR up to 1.74x  
     CA `HLzTFsX99uqzAP7uK36gJ2pPHGfRM8ugvxXWJzjSpump`
   - ran: AIC up to 1.6x  
     CA `2T9WZjVC6L3BvusUtjKDT6HcZeEYgU9T5xhfJQxFpump`
   - ran: ZECRET up to 1.62x  
     CA `ChCi2x2bpevrNyeRoPHLXHzmaCdGQPuU15CNqxY1pump`
-- falling knife (code): blocked 30, ran 6, dumped 22, flat 1, open 1 (saving losses: keep it)
+- falling knife (code): blocked 30, ran 6, dumped 23, flat 1, open 0 (saving losses: keep it)
   - ran: KIM up to 1.55x  
     CA `8pjfN5Ayb4rucGpYE3tZWN6v3EysizjPx1v62zx1pump`
   - ran: BLUE up to 1.53x  
     CA `CPoGSmcjprCvzA2MFYLJMpQkGjmgVzKg4RVwMdrzpump`
   - ran: VETOTRUMP up to 1.66x  
     CA `6g16UK4wHoFhC7PCmw8LYYCdt9q8m99fyoAwxeCrpump`
-- falling knife / no higher low: blocked 13, ran 1, dumped 8, flat 1, open 3 (saving losses: keep it)
-  - ran: CREDIT up to 1.56x  
-    CA `Ewyifvp8X9NxeaKawXamGXBFDisuMfcFfcdvSZ8opump`
-- bundles over the line: blocked 13, ran 2, dumped 9, flat 2, open 0 (saving losses: keep it)
+- bundles over the line: blocked 14, ran 2, dumped 9, flat 2, open 1 (saving losses: keep it)
   - ran: Nuts up to 1.53x  
     CA `APH9FRoKst66E4a7uZXcEfE8NjtwybUC8Jq7ue8upump`
   - ran: NA up to 1.97x  
     CA `9ZmdP8q22ebRhEkcwd5EDkitu7ypeDFXTQXpv2kUpump`
+- falling knife / no higher low: blocked 13, ran 1, dumped 10, flat 1, open 1 (saving losses: keep it)
+  - ran: CREDIT up to 1.56x  
+    CA `Ewyifvp8X9NxeaKawXamGXBFDisuMfcFfcdvSZ8opump`
 - thin 5m volume: blocked 11, ran 1, dumped 4, flat 4, open 2 (saving losses: keep it)
   - ran: CUMFACE up to 1.55x  
     CA `J1D3X8znX4AzUPMHVWyBLNHqBBqWDPNSjX4KwK3Qpump`
@@ -153,11 +153,11 @@ A skip "ran" if the coin reached the first target (1.5x) from the skip price bef
     CA `9yEKBwczdqoox7Red6GGPTrJ2dUbMvFUagdjxFqHpump`
   - ran: DOJAK up to 2.62x  
     CA `E5aeDjgq6ZSzAmihKoh9JPEhwK2bMCbZLJf6LYT9pump`
-- flow below pace: blocked 10, ran 2, dumped 6, flat 0, open 2 (saving losses: keep it)
-  - ran: Ahsoka up to 1.54x  
-    CA `4nuj5NLHMtQSezfmz6CwBpCRJisFie6F6MxNNz1dpump`
-  - ran: KOROSUKE up to 1.54x  
-    CA `7ha4HFgdvkXaDcR2biCsuBpoCZzoLSRjb5we34Gbpump`
+- other: blocked 10, ran 2, dumped 6, flat 1, open 1 (saving losses: keep it)
+  - ran: thisman up to 1.6x  
+    CA `6d6J2kWJiimgqmxjLVTu31hxDyBFt2zBguYdjSripump`
+  - ran: Slingoor up to 1.58x  
+    CA `AYDL7DTa6AidQ1nUSAEAnzVAFDDewDXbSyy8Hh2wpump`
 
 ## Rules it changed from results and skips
 - 11-02 08:24Z dropped: Any fee, friction or minimum-size wording (Fees and size are checked in code (target must pay 3x the round trip, round trip at most 20% of size). The current rules already carried none, and none were added back.)
@@ -185,13 +185,13 @@ A skip "ran" if the coin reached the first target (1.5x) from the skip price bef
 Star Wars and clone swarms are the meta. Anakin ($6.3M, 18h, +117% on the hour, 5m volume $283k at about 2.5x pace, 0.58 buys) leads; I'd enter it as MIGRATED only on a 10%+ pullback from the local high, not chase it. Clone swarms: two Slingoor copies (the $855k one is cooling at about 0.36x pace) and two BUY THE FEAR copies (the older $128k one holds about 0.7x pace). FEAR is a candidate only if research confirms it's the original. Japanese dogs are fading: Korosuke is down to about 0.33x pace and Marutaro is off the list. Skipping THE KOL (6 minutes old), sub-$20k pump.fun pairs, the political $LAPTOP coin (down about 98%) and the Binance hack story.
 
 ## Moving most in its scans, last 30 min (1h volume)
-- ANAKIN: $1,381,500 1h vol, $6,282,730 mcap, +117% 1h  
-  CA `8s4bNqEztH1JP7mkU747uMr7AckCQdiV47FDqYnDpump`
-- FEAR: $534,018 1h vol, $128,278 mcap, +251% 1h  
-  CA `CHtXwJ3qa2ozS9vQkxhR3MmNwkoUqkh3icGXgZPepump`
-- KOROSUKE: $529,297 1h vol, $211,781 mcap, +355% 1h  
-  CA `7ha4HFgdvkXaDcR2biCsuBpoCZzoLSRjb5we34Gbpump`
-- Slingoor: $303,179 1h vol, $76,904 mcap, -8% 1h  
-  CA `GWJ96ggVUfZPX5ghcD5sUaAWWwqcT1cdntNGew8Jpump`
+- Slingoor: $803,070 1h vol, $1,971,672 mcap, +136% 1h  
+  CA `9rZR9nCQbaiBvotWVpifN8z1vckVFshnsATuAJrXpump`
+- FEAR: $515,160 1h vol, $96,303 mcap, +63% 1h  
+  CA `3Z8mK9QRy3ZphSTqoi1Duzok8an4WCND9XrHWfgKpump`
 - MAMESUKE: $229,322 1h vol, $944,041 mcap, -37% 1h  
   CA `SCGBBnSwnekytGFHgyeHHxPMiN7xDxsWFGg9JgFSTNK`
+- ALON: $164,960 1h vol, $148,217 mcap, +188% 1h  
+  CA `5uo1mMxffwCYpdCimWeP16EyW1JGpw2vbtNnem1Hpump`
+- Slingoor: $139,406 1h vol, $140,277 mcap, +203% 1h  
+  CA `AYDL7DTa6AidQ1nUSAEAnzVAFDDewDXbSyy8Hh2wpump`
