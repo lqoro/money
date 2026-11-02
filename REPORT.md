@@ -1,13 +1,13 @@
 # Trencher live report
 
-Updated 2026-11-02T11:23:11Z (paper trading, never real money)
+Updated 2026-11-02T11:38:21Z (paper trading, never real money)
 
 - Equity: $77.09 (-22.9% vs $100 start)
-- Goal: $1,000 by 2026-11-05 05:03Z (pressing for it): at 7.7% of it, 2.7 days left, needs +155.2% a day from here
+- Goal: $1,000 by 2026-11-05 05:03Z (pressing for it): at 7.7% of it, 2.7 days left, needs +156.1% a day from here
 - Closed trades: 21, 3 wins
 - Fees paid: $14.04 (axiom $2.63, network $8.81, pool $2.47), plus $3.89 lost to slippage
 - New trades: on
-- Brain: subscription, 538 calls and 0 plan-limit hits in 48h
+- Brain: subscription, 536 calls and 0 plan-limit hits in 48h
 
 ## Scorecard (after fees)
 - 21 closed, 3 won (14%), net $-22.93
@@ -74,9 +74,15 @@ Updated 2026-11-02T11:23:11Z (paper trading, never real money)
   CA `8s4bNqEztH1JP7mkU747uMr7AckCQdiV47FDqYnDpump`
 
 ## Last scan
-- 11:22Z: 4 coins, 3 with pairs, 0 passed the market filters, 0 researched
+- 11:37Z: 6 coins, 5 with pairs, 0 passed the market filters, 0 researched
 
 ## Coins it looked at, and why it passed
+- 11:30Z flow (FINAL_STRETCH, $25,434 mcap, $4,838 5m vol): PASS at conviction 3, PASS — chasing a +26% 5m spike on flow at 0.74x pace, top 10 parked at 24.99%, and a generic name with no meta behind it. Blocker: chasing spike / flow below pace (V1, V6).  
+  CA `Fj7xiaMe8fLGa1gMVTX8JJr54WsMyzbBJnm3Vx6fpump`
+- 11:26Z thisman (no setup, $16,537 mcap, $3,741 5m vol): REJECT, No setup fits: not Final Stretch, not a migrated runner, not a healthy dip  
+  CA `6d6J2kWJiimgqmxjLVTu31hxDyBFt2zBguYdjSripump`
+- 11:24Z DESSA (DIP, $15,276,969 mcap, $4,076 5m vol): PASS at conviction 3, PASS: a $15M coin trading $4k on the 5m with more sells than buys. The crowd isn't coming back. Blocker: "flow below bar" (V1, V6).  
+  CA `npz2FhoufQ7pKqhGpaipYWacrAkidyW2yDpVWSvpump`
 - 11:21Z WWIII (MIGRATED, $92,291 mcap, $3,192 5m vol): REJECT, RugCheck danger: Creator history of rugged tokens  
   CA `GD52VfoPZdad4hiNPg4UnjtDGsS4WiM3mqS8j1czpump`
 - 11:17Z SPERM (FINAL_STRETCH, $22,017 mcap, $52,507 5m vol): REJECT, RugCheck danger: Creator history of rugged tokens  
@@ -91,22 +97,16 @@ Updated 2026-11-02T11:23:11Z (paper trading, never real money)
   CA `npz2FhoufQ7pKqhGpaipYWacrAkidyW2yDpVWSvpump`
 - 10:37Z Anakin (MIGRATED, $3,037,028 mcap, $3,073 5m vol): PASS at conviction 3, PASS — split crowd: a copy in a 10-token Anakin field doing $3k on the 5m while the leader (which I already hold) does $12.5k. Sellers own the hour. (V1, V3, V13)  
   CA `ExxzYBTt3jwU5MUxuw2F4toYbTLdFwThSjyaCn6Xpump`
-- 10:35Z WWIII (MIGRATED, $86,011 mcap, $2,152 5m vol): REJECT, RugCheck danger: Creator history of rugged tokens  
-  CA `GD52VfoPZdad4hiNPg4UnjtDGsS4WiM3mqS8j1czpump`
-- 10:34Z flow (FINAL_STRETCH, $20,475 mcap, $7,541 5m vol): PASS at conviction 3, PASS: chasing spike. A 16-minute-old curve coin up 44% in its last 5m candle, with a generic ticker that a bigger token already uses. (V1, V6)  
-  CA `Fj7xiaMe8fLGa1gMVTX8JJr54WsMyzbBJnm3Vx6fpump`
-- 10:29Z thisman (FINAL_STRETCH, $19,582 mcap, $10,661 5m vol): REJECT, RugCheck danger: Creator history of rugged tokens  
-  CA `6d6J2kWJiimgqmxjLVTu31hxDyBFt2zBguYdjSripump`
 
 ## What its skips did next (last 48h)
 A skip "ran" if the coin reached the first target (1.5x) from the skip price before a 20% drop, "dumped" if the drop came first. Sampled every 10 min, followed 6h.
-- near the high / chasing: blocked 54, ran 4, dumped 42, flat 8, open 0 (saving losses: keep it)
-  - ran: Wojak up to 2.51x  
-    CA `BbNuEtiT77Swr4WqGHuUkQY5kZ67M7au7bXkxcArpump`
+- near the high / chasing: blocked 52, ran 3, dumped 41, flat 8, open 0 (saving losses: keep it)
   - ran: BBOTS up to 1.51x  
     CA `4TCevs5EC2RFsdWo3YPVifqe9dX2acCGGa9VHNtppump`
   - ran: BLUE up to 1.53x  
     CA `CPoGSmcjprCvzA2MFYLJMpQkGjmgVzKg4RVwMdrzpump`
+  - ran: PIRATE up to 2.27x  
+    CA `gzQXRwGRzfKLHfaV1f84QT7e5mt4vevu7MgacEfpump`
 - top 10 over 25%: blocked 41, ran 7, dumped 30, flat 2, open 2 (saving losses: keep it)
   - ran: Beaver up to 2.56x  
     CA `5h44wfzwGHFnfVhNKtMLapAJNV9iqqbUgUB2FqyWpump`
@@ -128,14 +128,14 @@ A skip "ran" if the coin reached the first target (1.5x) from the skip price bef
     CA `CPoGSmcjprCvzA2MFYLJMpQkGjmgVzKg4RVwMdrzpump`
   - ran: VETOTRUMP up to 1.66x  
     CA `6g16UK4wHoFhC7PCmw8LYYCdt9q8m99fyoAwxeCrpump`
-- RugCheck danger: blocked 28, ran 4, dumped 22, flat 0, open 2 (saving losses: keep it)
+- RugCheck danger: blocked 27, ran 4, dumped 21, flat 0, open 2 (saving losses: keep it)
   - ran: SUGAR up to 1.74x  
     CA `HLzTFsX99uqzAP7uK36gJ2pPHGfRM8ugvxXWJzjSpump`
   - ran: AIC up to 1.6x  
     CA `2T9WZjVC6L3BvusUtjKDT6HcZeEYgU9T5xhfJQxFpump`
   - ran: ZECRET up to 1.62x  
     CA `ChCi2x2bpevrNyeRoPHLXHzmaCdGQPuU15CNqxY1pump`
-- RugCheck didn't load: blocked 17, ran 3, dumped 12, flat 2, open 0 (saving losses: keep it)
+- RugCheck didn't load: blocked 16, ran 3, dumped 11, flat 2, open 0 (saving losses: keep it)
   - ran: UNSAFU up to 1.61x  
     CA `4eq4JfnpdgqZTzeyR3GnRGHJQ3QhQT6Lp7nKnQ2nS7Rv`
   - ran: billy up to 3.75x  
@@ -152,7 +152,7 @@ A skip "ran" if the coin reached the first target (1.5x) from the skip price bef
     CA `APH9FRoKst66E4a7uZXcEfE8NjtwybUC8Jq7ue8upump`
   - ran: NA up to 1.97x  
     CA `9ZmdP8q22ebRhEkcwd5EDkitu7ypeDFXTQXpv2kUpump`
-- dev share over 1%: blocked 11, ran 3, dumped 5, flat 1, open 2 (mixed)
+- dev share over 1%: blocked 11, ran 3, dumped 5, flat 2, open 1 (mixed)
   - ran: IGLU up to 1.54x  
     CA `34YQhrgkWoeFnm6LrcnmV3PLyDaMSNZikzUjyMmupump`
   - ran: MINTED up to 1.61x  
@@ -191,11 +191,11 @@ The meta right now is brand-new pump.fun launches, under 30 minutes old, that ru
 ## Moving most in its scans, last 30 min (1h volume)
 - ANAKIN: $147,293 1h vol, $4,013,870 mcap, -12% 1h  
   CA `8s4bNqEztH1JP7mkU747uMr7AckCQdiV47FDqYnDpump`
+- BOOSTX: $143,053 1h vol, $9,442 mcap, +123% 1h  
+  CA `7F3N3U5Dpg1dVrtes5SxxTp3VXcvBcXrbKtuwuGbqE8f`
+- マイロ: $129,658 1h vol, $4,464 mcap, +10% 1h  
+  CA `BnX42wN82J4NHqz2dCY9YUaNzJHLYqrS3gRC72Z1AesP`
 - GATO: $124,747 1h vol, $10,513,466 mcap, +15% 1h  
   CA `HsprHxBRgiVaQdRf3TnKNuZZtaX9JUSPgMFdAkk6pump`
-- マイロ: $116,559 1h vol, $11,485 mcap, +184% 1h  
-  CA `BnX42wN82J4NHqz2dCY9YUaNzJHLYqrS3gRC72Z1AesP`
-- flow: $107,423 1h vol, $17,536 mcap, +41% 1h  
-  CA `Fj7xiaMe8fLGa1gMVTX8JJr54WsMyzbBJnm3Vx6fpump`
-- thisman: $83,814 1h vol, $17,489 mcap, +73% 1h  
-  CA `6d6J2kWJiimgqmxjLVTu31hxDyBFt2zBguYdjSripump`
+- Scam: $114,990 1h vol, $10,294 mcap, -74% 1h  
+  CA `p1UeRax45z4x8GYjFojAgFKz8hkoZitKLTiCjdeib5F`
