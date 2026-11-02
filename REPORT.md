@@ -1,13 +1,13 @@
 # Trencher live report
 
-Updated 2026-11-02T07:36:04Z (paper trading, never real money)
+Updated 2026-11-02T07:51:19Z (paper trading, never real money)
 
-- Equity: $80.53 (-19.5% vs $100 start)
-- Goal: $1,000 by 2026-11-05 05:03Z (pressing for it): at 8.1% of it, 2.9 days left, needs +138.8% a day from here
+- Equity: $80.30 (-19.7% vs $100 start)
+- Goal: $1,000 by 2026-11-05 05:03Z (pressing for it): at 8% of it, 2.9 days left, needs +139.8% a day from here
 - Closed trades: 19, 3 wins
-- Fees paid: $12.66 (axiom $2.26, network $8.06, pool $2.21), plus $3.34 lost to slippage
+- Fees paid: $13.01 (axiom $2.36, network $8.25, pool $2.28), plus $3.48 lost to slippage
 - New trades: on
-- Brain: subscription, 555 calls and 0 plan-limit hits in 48h
+- Brain: subscription, 554 calls and 0 plan-limit hits in 48h
 
 ## Scorecard (after fees)
 - 19 closed, 3 won (16%), net $-19.48
@@ -24,14 +24,13 @@ Updated 2026-11-02T07:36:04Z (paper trading, never real money)
   - time stop: 8, 1 won, net $-4.79, fees+slip $6.40, peak 1.25x → 0.87x
   - trailing stop: 2, 2 won, net $+4.21, fees+slip $2.04, peak 3.32x → 1.72x
   - other: 1, 0 won, net $-0.03, fees+slip $0.67, peak 1.4x → 0.99x
-- To $1,000: $919.47 to go; at $-1.03 a trade this pace doesn't get there
+- To $1,000: $919.70 to go; at $-1.03 a trade this pace doesn't get there
 
 ## Open positions
-- none
+- ANAKIN (MIGRATED): cost $10.01, 1.01x, fees $0.36  
+  CA `8s4bNqEztH1JP7mkU747uMr7AckCQdiV47FDqYnDpump`
 
 ## Recent trades
-- 22:25Z CLOSE PAWCAT +1% ($+0.07), fees $0.80  
-  CA `762ZqBCd5m2q3QJ5UPkFL5rqdEUeygNkfTZrpGEZpump`
 - 03:19Z BUY BLUE $10.00, fees $0.40  
   CA `CPoGSmcjprCvzA2MFYLJMpQkGjmgVzKg4RVwMdrzpump`
 - 03:30Z SELL BLUE for $7.02, fees $0.35  
@@ -50,6 +49,8 @@ Updated 2026-11-02T07:36:04Z (paper trading, never real money)
   CA `GYKnd6jGUSQoBUnj6LdGCBtCWYDgr2Zd6QwNPcy5pump`
 - 06:19Z CLOSE AAPLCAT -31% ($-3.14), fees $0.73  
   CA `GYKnd6jGUSQoBUnj6LdGCBtCWYDgr2Zd6QwNPcy5pump`
+- 07:37Z BUY ANAKIN $10.01, fees $0.36  
+  CA `8s4bNqEztH1JP7mkU747uMr7AckCQdiV47FDqYnDpump`
 
 ## Last closes
 - SWAN: -1% ($-0.03), break-even stop: peaked 1.40x, back to 1.16x  
@@ -74,9 +75,19 @@ Updated 2026-11-02T07:36:04Z (paper trading, never real money)
   CA `GYKnd6jGUSQoBUnj6LdGCBtCWYDgr2Zd6QwNPcy5pump`
 
 ## Last scan
-- 07:35Z: 3 coins, 3 with pairs, 0 passed the market filters, 0 researched
+- 07:50Z: 3 coins, 3 with pairs, 0 passed the market filters, 0 researched
 
 ## Coins it looked at, and why it passed
+- 07:48Z GLITCH (MIGRATED, $3,803,317 mcap, $317 5m vol): REJECT, 5m volume $317 is dead (<$2,000) (V1)  
+  CA `8Xg89xT8Ve34sKiYqYuMs46mycREsCA2F362UscRpump`
+- 07:42Z Tumulun (FINAL_STRETCH, $25,871 mcap, $17,396 5m vol): PASS at conviction 3, PASS: up 108% in the last 5 minutes, 3% off its high, 18 minutes old, and 9 other coins share the ticker. This is chasing a spike on the curve, not a setup (V1, V5).  
+  CA `E84psoV4rJQYBoyTkzTrh1hzjZJv81VGFRX9gMLHpump`
+- 07:37Z Anakin (MIGRATED, $3,546,218 mcap, $3,101 5m vol): PASS at conviction 2, PASS: this is the wrong Anakin. Anakin Coin (the one I already hold) is doing $104k on the 5m against this one's $3.1k, and the prior high is only 1.18x away. Blocker: split crowd / target too close (V1, V13).  
+  CA `ExxzYBTt3jwU5MUxuw2F4toYbTLdFwThSjyaCn6Xpump`
+- 07:37Z Nathalia (DIP, $35,836 mcap, $3,555 5m vol): REJECT, Dip with fading attention is a falling knife, not a dip (5m at 0.28x the hour's pace, under 0.6x)  
+  CA `6nuBXMpJxTAsu7AsWQe6k7G1Sd5zttwayAPQWnbxDvWf`
+- 07:37Z ANAKIN (MIGRATED, $4,044,762 mcap, $62,888 5m vol): BUY at conviction 7, BUY, conviction 7: the ANAKIN volume leader is 34% off its high with buys still 63% of trades, top 10 at 0.7% and no bundles. No higher low yet, so it isn't an 8. (V1, V6, V13)  
+  CA `8s4bNqEztH1JP7mkU747uMr7AckCQdiV47FDqYnDpump`
 - 07:35Z TripleH (MIGRATED, $124,047 mcap, $29,569 5m vol): PASS at conviction 4, PASS: 17 minutes old, 10% under a high it printed six minutes ago, and the first resistance is 1.11x away. That's chasing a news pump, not a setup. Blocker: target too close (V1, V6).  
   CA `ATnGk91tqFpXhiqAnDfGav7YYMUiocQ2YHgY4gPBpump`
 - 07:32Z CI (MIGRATED, $159,025 mcap, $8,243 5m vol): REJECT, Bundles: 1 linked wallet cluster(s) hold 27.6% of supply (>20%) (V17)  
@@ -87,41 +98,31 @@ Updated 2026-11-02T07:36:04Z (paper trading, never real money)
   CA `J1D3X8znX4AzUPMHVWyBLNHqBBqWDPNSjX4KwK3Qpump`
 - 07:12Z GATO (MIGRATED, $9,050,481 mcap, $3,392 5m vol): REJECT, Dev holds 3.3% (>1%) (V13, V17)  
   CA `HsprHxBRgiVaQdRf3TnKNuZZtaX9JUSPgMFdAkk6pump`
-- 06:59Z Abdul (FINAL_STRETCH, $20,329 mcap, $16,889 5m vol): PASS at conviction 2, PASS — a coin named for a sitting political candidate, 13 minutes old and up 66% in its last 5-minute candle. Political plus chasing a spike. (V13, V1)  
-  CA `H2x9x3wkUFDMvAXJrsXWwSxeYLCw369n1mjpuEgcpump`
-- 06:58Z Unseen (MIGRATED, $40,583 mcap, $3,434 5m vol): PASS at conviction 3, PASS: $3.4k of 5m volume in a ticker field where 3 bigger coins already share the name, and one linked cluster holds 6.5%. That's a thin vamp with a bundle in it (V1, V3, V6).  
-  CA `DKSBXMtJaJQYsi8rFegxzZJZDXvK3JDai56YZ7CRpump`
-- 06:51Z ANAKIN (MIGRATED, $3,382,856 mcap, $9,854 5m vol): PASS at conviction 4, PASS: ANAKIN's holders are clean, but 5m flow is $9.9k at 0.96x the hourly pace and the last candle is red. That's the "flow below pace" setup that lost on HYPERCHAN, BLUE and AAPLCAT. Blocker: flow below pace (V1, V6).  
-  CA `8s4bNqEztH1JP7mkU747uMr7AckCQdiV47FDqYnDpump`
-- 06:50Z Nathalia (MIGRATED, $54,175 mcap, $40,433 5m vol): REJECT, Top 10 hold 27.8% ex-pool (>25%) (V13)  
-  CA `6nuBXMpJxTAsu7AsWQe6k7G1Sd5zttwayAPQWnbxDvWf`
-- 06:42Z faucet (MIGRATED, $68,002 mcap, $14,364 5m vol): PASS at conviction 3, PASS: 5m flow is only 0.56x the hourly pace on a 39-minute-old migration. Blocker "flow below pace". The "free SOL, paste your wallet" site gimmick doesn't help (V1, V3, V7).  
-  CA `99V36NFUcueC2tHjd1JV5bfhFux73NKWRiSBnxJ8pump`
 
 ## What its skips did next (last 48h)
 A skip "ran" if the coin reached the first target (1.5x) from the skip price before a 20% drop, "dumped" if the drop came first. Sampled every 10 min, followed 6h.
-- near the high / chasing: blocked 55, ran 4, dumped 42, flat 7, open 2 (saving losses: keep it)
+- near the high / chasing: blocked 55, ran 4, dumped 43, flat 8, open 0 (saving losses: keep it)
   - ran: Wojak up to 2.51x  
     CA `BbNuEtiT77Swr4WqGHuUkQY5kZ67M7au7bXkxcArpump`
   - ran: BBOTS up to 1.51x  
     CA `4TCevs5EC2RFsdWo3YPVifqe9dX2acCGGa9VHNtppump`
   - ran: BLUE up to 1.53x  
     CA `CPoGSmcjprCvzA2MFYLJMpQkGjmgVzKg4RVwMdrzpump`
-- top 10 over 25%: blocked 41, ran 7, dumped 30, flat 3, open 1 (saving losses: keep it)
-  - ran: Beaver up to 2.56x  
-    CA `5h44wfzwGHFnfVhNKtMLapAJNV9iqqbUgUB2FqyWpump`
-  - ran: timmy up to 1.66x  
-    CA `TiMSdJrkVwUpeEWJpuqRvHt4wVS7uH77LbNPGGVJXNw`
-  - ran: WASTED up to 1.93x  
-    CA `GexThZHgaswpAQ7Fi8QrHFubjPimUNSYhJiAA7XZpump`
-- too new / sniping: blocked 41, ran 4, dumped 36, flat 0, open 1 (saving losses: keep it)
+- too new / sniping: blocked 41, ran 4, dumped 35, flat 0, open 2 (saving losses: keep it)
   - ran: onlypump up to 1.92x  
     CA `J73efZvH6rkrJbFJdP2rqe473YJW7tyWmrNARUSzpump`
   - ran: paws up to 1.51x  
     CA `CCF6ui6YjjhLaVtuYLH8b5jza8jHathqww5VbrMapump`
   - ran: VETOTRUMP up to 1.66x  
     CA `6g16UK4wHoFhC7PCmw8LYYCdt9q8m99fyoAwxeCrpump`
-- falling knife (code): blocked 29, ran 6, dumped 21, flat 2, open 0 (saving losses: keep it)
+- top 10 over 25%: blocked 39, ran 7, dumped 29, flat 3, open 0 (saving losses: keep it)
+  - ran: Beaver up to 2.56x  
+    CA `5h44wfzwGHFnfVhNKtMLapAJNV9iqqbUgUB2FqyWpump`
+  - ran: timmy up to 1.66x  
+    CA `TiMSdJrkVwUpeEWJpuqRvHt4wVS7uH77LbNPGGVJXNw`
+  - ran: WASTED up to 1.93x  
+    CA `GexThZHgaswpAQ7Fi8QrHFubjPimUNSYhJiAA7XZpump`
+- falling knife (code): blocked 30, ran 6, dumped 21, flat 2, open 1 (saving losses: keep it)
   - ran: KIM up to 1.55x  
     CA `8pjfN5Ayb4rucGpYE3tZWN6v3EysizjPx1v62zx1pump`
   - ran: BLUE up to 1.53x  
@@ -142,23 +143,18 @@ A skip "ran" if the coin reached the first target (1.5x) from the skip price bef
     CA `2T9WZjVC6L3BvusUtjKDT6HcZeEYgU9T5xhfJQxFpump`
   - ran: ZECRET up to 1.62x  
     CA `ChCi2x2bpevrNyeRoPHLXHzmaCdGQPuU15CNqxY1pump`
-- falling knife / no higher low: blocked 17, ran 3, dumped 12, flat 1, open 1 (saving losses: keep it)
+- falling knife / no higher low: blocked 16, ran 3, dumped 12, flat 1, open 0 (saving losses: keep it)
   - ran: CREDIT up to 1.56x  
     CA `Ewyifvp8X9NxeaKawXamGXBFDisuMfcFfcdvSZ8opump`
   - ran: PI up to 1.6x  
     CA `93VGqXL76voGxc43apJTDJoKkqnxTht1BKWoEmUypump`
   - ran: ANAKIN up to 1.55x  
     CA `8s4bNqEztH1JP7mkU747uMr7AckCQdiV47FDqYnDpump`
-- bundles over the line: blocked 14, ran 2, dumped 9, flat 2, open 1 (saving losses: keep it)
+- bundles over the line: blocked 14, ran 2, dumped 10, flat 2, open 0 (saving losses: keep it)
   - ran: Nuts up to 1.53x  
     CA `APH9FRoKst66E4a7uZXcEfE8NjtwybUC8Jq7ue8upump`
   - ran: NA up to 1.97x  
     CA `9ZmdP8q22ebRhEkcwd5EDkitu7ypeDFXTQXpv2kUpump`
-- crowd leaving / fading volume: blocked 11, ran 2, dumped 6, flat 2, open 1 (saving losses: keep it)
-  - ran: VETOTRUMP up to 1.66x  
-    CA `6g16UK4wHoFhC7PCmw8LYYCdt9q8m99fyoAwxeCrpump`
-  - ran: Anakinius up to 1.93x  
-    CA `2pKpMwUQXNZeAf93LoomnZSworH3ezFzweCiuvrppump`
 - dev share over 1%: blocked 10, ran 3, dumped 5, flat 1, open 1 (mixed)
   - ran: IGLU up to 1.54x  
     CA `34YQhrgkWoeFnm6LrcnmV3PLyDaMSNZikzUjyMmupump`
@@ -166,6 +162,11 @@ A skip "ran" if the coin reached the first target (1.5x) from the skip price bef
     CA `9yEKBwczdqoox7Red6GGPTrJ2dUbMvFUagdjxFqHpump`
   - ran: DOJAK up to 2.62x  
     CA `E5aeDjgq6ZSzAmihKoh9JPEhwK2bMCbZLJf6LYT9pump`
+- crowd leaving / fading volume: blocked 10, ran 2, dumped 6, flat 2, open 0 (saving losses: keep it)
+  - ran: VETOTRUMP up to 1.66x  
+    CA `6g16UK4wHoFhC7PCmw8LYYCdt9q8m99fyoAwxeCrpump`
+  - ran: Anakinius up to 1.93x  
+    CA `2pKpMwUQXNZeAf93LoomnZSworH3ezFzweCiuvrppump`
 
 ## Rules it changed from results and skips
 - 11-02 02:13Z tightened: Flow below pace is a PASS, now scoped to MIGRATED, with DIPs at the owner's 0.7x (HYPERCHAN (0.73x pace), BLUE and AAPLCAT were all bought below pace and none went green. Crowd-leaving skips: 1 ran, 9 dumped. Split from the DIP gate so the two rules don't conflict with the owner's 0.7x DIP line.)
@@ -190,16 +191,23 @@ A skip "ran" if the coin reached the first target (1.5x) from the skip price bef
 - [2026-11-01 06:19] Expected AAPLCAT, 36% off its $1.8M high with a printed higher-low base, clean holders and $12.6k on the 5m, to retest the peak at about 1.57x. It peaked at 1.01x, broke the 0.000981 higher low, and the "unclear" stop review sold at −31% instead of −20%. That makes 7 of 7 stop reviews closing worse than the stop. This confirms my existing rules rather than adding a new one: the proven band needs 5m at or above the hourly pace and a meta with the crowd still arriving (V1, V6). I bought with pace under the hourly average and a cooling meta, so next time a band entry with flow below pace is a PASS (blocker "flow below pace"), not a probe, and a broken higher low sells right away.
 
 ## Meta right now
-War/peace meta is dying: TRUMP rugged (-98%, $0 5m), WAR -80%, WARDOG -87%, PEACE -34% at ~0.17x hourly pace (fails 0.7x DIP gate). Crawler summary is stale. Flow has moved to young off-theme pumpswap coins under 1h old at $30-70k mcap: faucet ($68k, +76%/1h, $14.4k 5m, buys 0.63, cooling to ~0.56x), CI ($22.8k 5m, 6 min old), XMRISE (privacy, fading ~0.37x). Setup: faucet MIGRATED on a 10%+ pullback if checks come back clean, conviction 6-7. Watch: CI (too new, V5), Tradition (still on the curve, sell-heavy 0.43). PASS: TRUMP (rugged, political name, V13), PEACE (volume falling), LAPTOP (politician's son's coin, down 98%, V13), WAR/WARDOG/WARCAT (dead flow).
+The war/peace and political meta is over. TRUMP rugged, WAR and WARDOG are down 80%+, and LAPTOP is a politician's-family coin down 98%, so it's out under V13 no matter how many headlines it gets. Right now the trenches are trading two things. First, very young off-theme pump.fun launches under an hour old, mostly abstract or idea names: CI "Central Intelligence" ($159k, $176k on the hour), TripleH "Hype Hope Hubris" ($124k, $29.5k 5m), "tokenization is inevitable", PEER (+861%), plus character jokes like Tumulun and Karlusha the talking raven. That theme is rising, but it burns fast: Tradition, Flat Eric, vibedog and the second CI have already round-tripped to $3k. Second, a Star Wars/Anakin theme is holding up at higher caps. ANAKIN is at $3.9M, 9h old, $104k on the 5m, buys 0.63, and the older 84h "Anakin Skywalker" sits beside it at $3.4M with almost no volume. The crawler's faucet setup is dead: it's -58% on the hour and $3k on the 5m, a falling knife, so PASS.
+
+What I'd research now:
+1. **ANAKIN (8s4b…pump) as a MIGRATED setup.** It's inside the V6 range with real flow. First I have to confirm it's the original and not a vamp of the 84h coin (V1, V3). Entry only on a ~10% pullback from the local high.
+2. **PEER as a FINAL_STRETCH setup.** It's on the curve at $27k with $35k on the 5m. Watch for the pre-bond dump (V1).
+3. **TripleH and CI (gg1z…) as MIGRATED setups.** Both only if a pullback holds volume. There are two CI contracts, so the original check comes first; at 0.3–0.5h old I'm also slower than the players setting the price (V5).
+
+PASS: Nathalia (named after a real person's death, and 5m volume has collapsed to $3.5k), inu (sells outweigh buys, 0.37), and anything hack-themed. My owner wants me pushing toward $1k. These are all cases for pressing if the checks come back clean, but the deadline doesn't change my conviction scores.
 
 ## Moving most in its scans, last 30 min (1h volume)
+- ANAKIN: $550,485 1h vol, $3,905,005 mcap, +12% 1h  
+  CA `8s4bNqEztH1JP7mkU747uMr7AckCQdiV47FDqYnDpump`
 - CI: $175,963 1h vol, $159,025 mcap, +301% 1h  
   CA `gg1zQUgUoXd8hVmkTmLooyzC1QBT1cvJDnCXHLPpump`
 - TripleH: $173,367 1h vol, $124,047 mcap, +212% 1h  
   CA `ATnGk91tqFpXhiqAnDfGav7YYMUiocQ2YHgY4gPBpump`
-- faucet: $165,356 1h vol, $22,333 mcap, -68% 1h  
-  CA `99V36NFUcueC2tHjd1JV5bfhFux73NKWRiSBnxJ8pump`
+- Nathalia: $154,471 1h vol, $35,751 mcap, -5% 1h  
+  CA `6nuBXMpJxTAsu7AsWQe6k7G1Sd5zttwayAPQWnbxDvWf`
 - PEER: $126,500 1h vol, $27,042 mcap, +861% 1h  
   CA `BbtvdRYnvHLeAsVg6ErBEYXYRg2329RXkAtFfcCTpump`
-- CI: $74,600 1h vol, $3,033 mcap, -91% 1h  
-  CA `DkpL2e59QKGdrHnNHUDmy9ieWbmMHeHfMh4kA6bEpump`
