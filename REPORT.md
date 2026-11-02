@@ -1,13 +1,13 @@
 # Trencher live report
 
-Updated 2026-11-02T04:49:42Z (paper trading, never real money)
+Updated 2026-11-02T05:04:52Z (paper trading, never real money)
 
 - Equity: $80.53 (-19.5% vs $100 start)
-- Goal: $1,000 by 2026-11-05 05:03Z (pressing for it): at 8.1% of it, 3 days left, needs +131% a day from here
+- Goal: $1,000 by 2026-11-05 05:03Z (pressing for it): at 8.1% of it, 3 days left, needs +131.7% a day from here
 - Closed trades: 19, 3 wins
 - Fees paid: $12.66 (axiom $2.26, network $8.06, pool $2.21), plus $3.34 lost to slippage
 - New trades: on
-- Brain: subscription, 579 calls and 0 plan-limit hits in 48h
+- Brain: subscription, 581 calls and 0 plan-limit hits in 48h
 
 ## Scorecard (after fees)
 - 19 closed, 3 won (16%), net $-19.48
@@ -74,9 +74,13 @@ Updated 2026-11-02T04:49:42Z (paper trading, never real money)
   CA `GYKnd6jGUSQoBUnj6LdGCBtCWYDgr2Zd6QwNPcy5pump`
 
 ## Last scan
-- 04:49Z: 3 coins, 3 with pairs, 0 passed the market filters, 0 researched
+- 05:04Z: 3 coins, 3 with pairs, 0 passed the market filters, 0 researched
 
 ## Coins it looked at, and why it passed
+- 05:00Z Unseen (FINAL_STRETCH, $29,679 mcap, $10,042 5m vol): PASS at conviction 3, PASS: chasing a spike. It's up 53% in the last 5 minutes on 2.6x the hourly volume pace, 9% off its high, 38 minutes old, and still on the curve. That's a candle to wait out, not an entry. (V1, V6)  
+  CA `DKSBXMtJaJQYsi8rFegxzZJZDXvK3JDai56YZ7CRpump`
+- 05:00Z XAR (FINAL_STRETCH, $25,079 mcap, $33,939 5m vol): PASS at conviction 2, PASS — 3.5 minutes old, +522% in one candle, still on the curve at $25k. That's sniping a spike, not a setup. Blocker: too new / sniping (V5, V1).  
+  CA `mb9PoUuicZgj2tgZ9Ze95XiaKUZgmQegCewitj5pump`
 - 04:46Z Warcoin (FINAL_STRETCH, $23,335 mcap, $15,707 5m vol): PASS at conviction 3, PASS: Warcoin is 16 minutes old, still on the bonding curve at 60%, and just printed a +28% five-minute candle. Buying now is chasing a spike on a new pair. (V1, V5)  
   CA `H86pLyqzZMim3pxrC29YWsMKoxL6xGFM1nQyVtyRpump`
 - 04:45Z PEACE (MIGRATED, $216,519 mcap, $168,423 5m vol): PASS at conviction 3, PASS: 47 minutes old, -25% on the 5m, still bleeding off its bond spike with no higher low. Wait for a base. (V1, too new)  
@@ -93,10 +97,6 @@ Updated 2026-11-02T04:49:42Z (paper trading, never real money)
   CA `ExxzYBTt3jwU5MUxuw2F4toYbTLdFwThSjyaCn6Xpump`
 - 04:20Z HOPE (MIGRATED, $38,560 mcap, $2,920 5m vol): PASS at conviction 2, PASS. The crowd already left: 5m volume is $2.9k against $228k in the last hour (0.15x pace), and this isn't even the biggest coin on its own ticker. Flow below pace. (V1, V6)  
   CA `4wmT5vPBJ3iiFRmNhciCZ67yasiXSjzz3g9VukXrpump`
-- 04:00Z PEACE (MIGRATED, $32,066 mcap, $16,064 5m vol): PASS at conviction 2, PASS: two minutes old and still bleeding off the bond spike, with 23 coins on the same ticker and no account of its own. Blocker "too new" (V5, V6).  
-  CA `BngAfLZxaWN2QvpFhRbUHydYGr8zA7YTSA178G8Epump`
-- 03:50Z Cryptocrat (DIP, $69,531 mcap, $11,857 5m vol): REJECT, Dip with fading attention is a falling knife, not a dip (5m at 0.33x the hour's pace, under 0.6x)  
-  CA `Er8sRVFaGBicA6jnYrEX91Gcwp1aCaYZsVHtFMA3pump`
 
 ## What its skips did next (last 48h)
 A skip "ran" if the coin reached the first target (1.5x) from the skip price before a 20% drop, "dumped" if the drop came first. Sampled every 10 min, followed 6h.
@@ -107,7 +107,7 @@ A skip "ran" if the coin reached the first target (1.5x) from the skip price bef
     CA `BbNuEtiT77Swr4WqGHuUkQY5kZ67M7au7bXkxcArpump`
   - ran: BBOTS up to 1.51x  
     CA `4TCevs5EC2RFsdWo3YPVifqe9dX2acCGGa9VHNtppump`
-- too new / sniping: blocked 46, ran 4, dumped 39, flat 0, open 3 (saving losses: keep it)
+- too new / sniping: blocked 48, ran 4, dumped 41, flat 0, open 3 (saving losses: keep it)
   - ran: onlypump up to 1.92x  
     CA `J73efZvH6rkrJbFJdP2rqe473YJW7tyWmrNARUSzpump`
   - ran: paws up to 1.51x  
@@ -147,9 +147,11 @@ A skip "ran" if the coin reached the first target (1.5x) from the skip price bef
     CA `Ewyifvp8X9NxeaKawXamGXBFDisuMfcFfcdvSZ8opump`
   - ran: PI up to 1.6x  
     CA `93VGqXL76voGxc43apJTDJoKkqnxTht1BKWoEmUypump`
-- bundles over the line: blocked 12, ran 1, dumped 8, flat 2, open 1 (saving losses: keep it)
+- bundles over the line: blocked 12, ran 2, dumped 8, flat 2, open 0 (saving losses: keep it)
   - ran: Nuts up to 1.53x  
     CA `APH9FRoKst66E4a7uZXcEfE8NjtwybUC8Jq7ue8upump`
+  - ran: NA up to 1.97x  
+    CA `9ZmdP8q22ebRhEkcwd5EDkitu7ypeDFXTQXpv2kUpump`
 - crowd leaving / fading volume: blocked 11, ran 2, dumped 6, flat 3, open 0 (saving losses: keep it)
   - ran: VETOTRUMP up to 1.66x  
     CA `6g16UK4wHoFhC7PCmw8LYYCdt9q8m99fyoAwxeCrpump`
@@ -191,11 +193,11 @@ Meta: war and patriotism jokes are rising. INU (I Nuke You) is at $134k with $67
 ## Moving most in its scans, last 30 min (1h volume)
 - PEACE: $909,994 1h vol, $207,300 mcap, +446% 1h  
   CA `BngAfLZxaWN2QvpFhRbUHydYGr8zA7YTSA178G8Epump`
-- HOPE: $228,078 1h vol, $38,560 mcap, +3% 1h  
-  CA `4wmT5vPBJ3iiFRmNhciCZ67yasiXSjzz3g9VukXrpump`
-- NA: $185,279 1h vol, $113,524 mcap, +181% 1h  
-  CA `9ZmdP8q22ebRhEkcwd5EDkitu7ypeDFXTQXpv2kUpump`
-- NNH: $177,483 1h vol, $1,827 mcap, -99% 1h  
-  CA `4hdA5F5TJiEeH59XrYjESYrqMuR4aBrwPxuNwijLpump`
 - INU: $135,180 1h vol, $134,488 mcap, +234% 1h  
   CA `F3q2mwxMz4bieoDgZDKbKdHJVVEUTBM2a1yGeQiHpump`
+- NNH: $112,314 1h vol, $1,819 mcap, -99% 1h  
+  CA `4hdA5F5TJiEeH59XrYjESYrqMuR4aBrwPxuNwijLpump`
+- ACC: $90,697 1h vol, $3,118 mcap, -3% 1h  
+  CA `afYcnoGhuKomcLRERYnXHuxNw4bkSWArS8Xy9Smpump`
+- Warcoin: $88,920 1h vol, $26,581 mcap, +654% 1h  
+  CA `H86pLyqzZMim3pxrC29YWsMKoxL6xGFM1nQyVtyRpump`
