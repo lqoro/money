@@ -1,13 +1,13 @@
 # Trencher live report
 
-Updated 2026-11-02T06:50:47Z (paper trading, never real money)
+Updated 2026-11-02T07:05:49Z (paper trading, never real money)
 
 - Equity: $80.53 (-19.5% vs $100 start)
-- Goal: $1,000 by 2026-11-05 05:03Z (pressing for it): at 8.1% of it, 2.9 days left, needs +136.6% a day from here
+- Goal: $1,000 by 2026-11-05 05:03Z (pressing for it): at 8.1% of it, 2.9 days left, needs +137.3% a day from here
 - Closed trades: 19, 3 wins
 - Fees paid: $12.66 (axiom $2.26, network $8.06, pool $2.21), plus $3.34 lost to slippage
 - New trades: on
-- Brain: subscription, 560 calls and 0 plan-limit hits in 48h
+- Brain: subscription, 558 calls and 0 plan-limit hits in 48h
 
 ## Scorecard (after fees)
 - 19 closed, 3 won (16%), net $-19.48
@@ -74,9 +74,17 @@ Updated 2026-11-02T06:50:47Z (paper trading, never real money)
   CA `GYKnd6jGUSQoBUnj6LdGCBtCWYDgr2Zd6QwNPcy5pump`
 
 ## Last scan
-- 06:49Z: 3 coins, 3 with pairs, 0 passed the market filters, 0 researched
+- 07:05Z: 4 coins, 4 with pairs, 0 passed the market filters, 0 researched
 
 ## Coins it looked at, and why it passed
+- 06:59Z Abdul (FINAL_STRETCH, $20,329 mcap, $16,889 5m vol): PASS at conviction 2, PASS — a coin named for a sitting political candidate, 13 minutes old and up 66% in its last 5-minute candle. Political plus chasing a spike. (V13, V1)  
+  CA `H2x9x3wkUFDMvAXJrsXWwSxeYLCw369n1mjpuEgcpump`
+- 06:58Z Unseen (MIGRATED, $40,583 mcap, $3,434 5m vol): PASS at conviction 3, PASS: $3.4k of 5m volume in a ticker field where 3 bigger coins already share the name, and one linked cluster holds 6.5%. That's a thin vamp with a bundle in it (V1, V3, V6).  
+  CA `DKSBXMtJaJQYsi8rFegxzZJZDXvK3JDai56YZ7CRpump`
+- 06:51Z ANAKIN (MIGRATED, $3,382,856 mcap, $9,854 5m vol): PASS at conviction 4, PASS: ANAKIN's holders are clean, but 5m flow is $9.9k at 0.96x the hourly pace and the last candle is red. That's the "flow below pace" setup that lost on HYPERCHAN, BLUE and AAPLCAT. Blocker: flow below pace (V1, V6).  
+  CA `8s4bNqEztH1JP7mkU747uMr7AckCQdiV47FDqYnDpump`
+- 06:50Z Nathalia (MIGRATED, $54,175 mcap, $40,433 5m vol): REJECT, Top 10 hold 27.8% ex-pool (>25%) (V13)  
+  CA `6nuBXMpJxTAsu7AsWQe6k7G1Sd5zttwayAPQWnbxDvWf`
 - 06:42Z faucet (MIGRATED, $68,002 mcap, $14,364 5m vol): PASS at conviction 3, PASS: 5m flow is only 0.56x the hourly pace on a 39-minute-old migration. Blocker "flow below pace". The "free SOL, paste your wallet" site gimmick doesn't help (V1, V3, V7).  
   CA `99V36NFUcueC2tHjd1JV5bfhFux73NKWRiSBnxJ8pump`
 - 06:39Z Tradition (FINAL_STRETCH, $32,241 mcap, $7,514 5m vol): REJECT, RugCheck danger: Creator history of rugged tokens  
@@ -89,38 +97,30 @@ Updated 2026-11-02T06:50:47Z (paper trading, never real money)
   CA `EJAxERvKU4kEVXn3NarjvRtgaMaJyP9ZuMeKA7JJpump`
 - 06:16Z PEACE (DIP, $171,367 mcap, $4,875 5m vol): REJECT, Dip with fading attention is a falling knife, not a dip (5m at 0.17x the hour's pace, under 0.6x)  
   CA `BngAfLZxaWN2QvpFhRbUHydYGr8zA7YTSA178G8Epump`
-- 06:16Z XMRISE (MIGRATED, $64,418 mcap, $7,463 5m vol): PASS at conviction 3, PASS: flow below pace. 5m volume is 0.43x the hourly average, the last 5m candle is up 29%, and the prior high is only 1.13x away. That's a spike on a fading crowd (V1, V6).  
-  CA `5GNDhmKmNks2ELBCmLHPZYBeYu2NCDqnrhKnBBr99xmr`
-- 06:09Z jeff (DIP, $1,360,692 mcap, $9,978 5m vol): REJECT, Top 10 hold 39.4% ex-pool (>25%) (V13)  
-  CA `HAsTKXYvv65zM7J6Cu5o5PcZsiKMQYo5oz4WPjgqwP6k`
-- 06:05Z ANAKIN (MIGRATED, $3,378,350 mcap, $8,987 5m vol): PASS at conviction 4, PASS: holders are spotless, but 5m flow is $9.0k at 0.81x the hourly pace on a Star Wars meta the radar calls fading. Flow below pace, never a probe (V1, V6).  
-  CA `8s4bNqEztH1JP7mkU747uMr7AckCQdiV47FDqYnDpump`
-- 05:56Z faucet (FINAL_STRETCH, $19,770 mcap, $11,838 5m vol): REJECT, Top 10 hold 25.4% ex-pool (>25%) (V13)  
-  CA `99V36NFUcueC2tHjd1JV5bfhFux73NKWRiSBnxJ8pump`
 
 ## What its skips did next (last 48h)
 A skip "ran" if the coin reached the first target (1.5x) from the skip price before a 20% drop, "dumped" if the drop came first. Sampled every 10 min, followed 6h.
-- near the high / chasing: blocked 56, ran 4, dumped 43, flat 7, open 2 (saving losses: keep it)
+- near the high / chasing: blocked 54, ran 4, dumped 42, flat 6, open 2 (saving losses: keep it)
   - ran: Wojak up to 2.51x  
     CA `BbNuEtiT77Swr4WqGHuUkQY5kZ67M7au7bXkxcArpump`
   - ran: BBOTS up to 1.51x  
     CA `4TCevs5EC2RFsdWo3YPVifqe9dX2acCGGa9VHNtppump`
   - ran: BLUE up to 1.53x  
     CA `CPoGSmcjprCvzA2MFYLJMpQkGjmgVzKg4RVwMdrzpump`
-- too new / sniping: blocked 43, ran 5, dumped 38, flat 0, open 0 (saving losses: keep it)
-  - ran: onlypump up to 1.92x  
-    CA `J73efZvH6rkrJbFJdP2rqe473YJW7tyWmrNARUSzpump`
-  - ran: paws up to 1.51x  
-    CA `CCF6ui6YjjhLaVtuYLH8b5jza8jHathqww5VbrMapump`
-  - ran: VETOTRUMP up to 1.66x  
-    CA `6g16UK4wHoFhC7PCmw8LYYCdt9q8m99fyoAwxeCrpump`
-- top 10 over 25%: blocked 40, ran 7, dumped 29, flat 3, open 1 (saving losses: keep it)
+- top 10 over 25%: blocked 41, ran 7, dumped 30, flat 3, open 1 (saving losses: keep it)
   - ran: Beaver up to 2.56x  
     CA `5h44wfzwGHFnfVhNKtMLapAJNV9iqqbUgUB2FqyWpump`
   - ran: timmy up to 1.66x  
     CA `TiMSdJrkVwUpeEWJpuqRvHt4wVS7uH77LbNPGGVJXNw`
   - ran: WASTED up to 1.93x  
     CA `GexThZHgaswpAQ7Fi8QrHFubjPimUNSYhJiAA7XZpump`
+- too new / sniping: blocked 41, ran 4, dumped 37, flat 0, open 0 (saving losses: keep it)
+  - ran: onlypump up to 1.92x  
+    CA `J73efZvH6rkrJbFJdP2rqe473YJW7tyWmrNARUSzpump`
+  - ran: paws up to 1.51x  
+    CA `CCF6ui6YjjhLaVtuYLH8b5jza8jHathqww5VbrMapump`
+  - ran: VETOTRUMP up to 1.66x  
+    CA `6g16UK4wHoFhC7PCmw8LYYCdt9q8m99fyoAwxeCrpump`
 - falling knife (code): blocked 29, ran 4, dumped 21, flat 2, open 2 (saving losses: keep it)
   - ran: KIM up to 1.55x  
     CA `8pjfN5Ayb4rucGpYE3tZWN6v3EysizjPx1v62zx1pump`
@@ -193,11 +193,11 @@ War/peace meta is dying: TRUMP rugged (-98%, $0 5m), WAR -80%, WARDOG -87%, PEAC
 ## Moving most in its scans, last 30 min (1h volume)
 - faucet: $307,118 1h vol, $68,002 mcap, +76% 1h  
   CA `99V36NFUcueC2tHjd1JV5bfhFux73NKWRiSBnxJ8pump`
-- TRUMP: $138,838 1h vol, $1,846 mcap, -98% 1h  
-  CA `En5icDhYYCuGXTtCLmfWiGR4C9nMiYMKojLdBRfVpump`
-- WAR: $120,354 1h vol, $7,334 mcap, -80% 1h  
+- ANAKIN: $122,757 1h vol, $3,382,856 mcap, +5% 1h  
+  CA `8s4bNqEztH1JP7mkU747uMr7AckCQdiV47FDqYnDpump`
+- WAR: $93,383 1h vol, $9,217 mcap, -74% 1h  
   CA `G6KTcxD7nJT4poBZsGiANHZHcUvPoDLjaVVZhBPdpump`
-- GATO: $49,178 1h vol, $8,375,341 mcap, -4% 1h  
-  CA `HsprHxBRgiVaQdRf3TnKNuZZtaX9JUSPgMFdAkk6pump`
-- Tradition: $42,352 1h vol, $32,263 mcap, +902% 1h  
-  CA `B6fSFYV84wjjPN2Rej1fai1tgF9qbVtj4a32Kej9pump`
+- TRUMP: $89,955 1h vol, $1,847 mcap, -99% 1h  
+  CA `En5icDhYYCuGXTtCLmfWiGR4C9nMiYMKojLdBRfVpump`
+- XMRISE: $60,195 1h vol, $16,559 mcap, -79% 1h  
+  CA `5GNDhmKmNks2ELBCmLHPZYBeYu2NCDqnrhKnBBr99xmr`
