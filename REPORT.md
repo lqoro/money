@@ -1,13 +1,13 @@
 # Trencher live report
 
-Updated 2026-11-02T04:19:08Z (paper trading, never real money)
+Updated 2026-11-02T04:34:27Z (paper trading, never real money)
 
 - Equity: $80.53 (-19.5% vs $100 start)
-- Goal: $1,000 by 2026-11-05 05:03Z (pressing for it): at 8.1% of it, 3 days left, needs +129.6% a day from here
+- Goal: $1,000 by 2026-11-05 05:03Z (pressing for it): at 8.1% of it, 3 days left, needs +130.3% a day from here
 - Closed trades: 19, 3 wins
 - Fees paid: $12.66 (axiom $2.26, network $8.06, pool $2.21), plus $3.34 lost to slippage
 - New trades: on
-- Brain: subscription, 582 calls and 0 plan-limit hits in 48h
+- Brain: subscription, 581 calls and 0 plan-limit hits in 48h
 
 ## Scorecard (after fees)
 - 19 closed, 3 won (16%), net $-19.48
@@ -74,9 +74,17 @@ Updated 2026-11-02T04:19:08Z (paper trading, never real money)
   CA `GYKnd6jGUSQoBUnj6LdGCBtCWYDgr2Zd6QwNPcy5pump`
 
 ## Last scan
-- 04:18Z: 18 coins, 17 with pairs, 0 passed the market filters, 0 researched
+- 04:33Z: 6 coins, 5 with pairs, 2 passed the market filters, 2 researched
 
 ## Coins it looked at, and why it passed
+- 04:34Z ANAKIN (DIP, $2,691,118 mcap, $7,547 5m vol): PASS at conviction 4, PASS — clean holders, but four lower 15m closes and no higher low printed yet. That's a falling knife, not a dip. Blocker: "no higher low" (V1).  
+  CA `8s4bNqEztH1JP7mkU747uMr7AckCQdiV47FDqYnDpump`
+- 04:33Z NA (MIGRATED, $116,020 mcap, $23,020 5m vol): PASS at conviction 3, PASS: 16 minutes old, 8.8% off its high, and one linked wallet cluster holds 10.2%. That's chasing a fresh political-news pump with a bundle sitting on top. Blocker: "chasing". (V1, V3, V13)  
+  CA `9ZmdP8q22ebRhEkcwd5EDkitu7ypeDFXTQXpv2kUpump`
+- 04:31Z Anakin (MIGRATED, $2,705,013 mcap, $3,963 5m vol): PASS at conviction 3, PASS: a $2.7M coin trading $4k on the 5m, still sliding into its hourly low with no higher low printed. That's a slow bleed, not a dip with buyers coming back. (V1, V6)  
+  CA `ExxzYBTt3jwU5MUxuw2F4toYbTLdFwThSjyaCn6Xpump`
+- 04:20Z HOPE (MIGRATED, $38,560 mcap, $2,920 5m vol): PASS at conviction 2, PASS. The crowd already left: 5m volume is $2.9k against $228k in the last hour (0.15x pace), and this isn't even the biggest coin on its own ticker. Flow below pace. (V1, V6)  
+  CA `4wmT5vPBJ3iiFRmNhciCZ67yasiXSjzz3g9VukXrpump`
 - 04:00Z PEACE (MIGRATED, $32,066 mcap, $16,064 5m vol): PASS at conviction 2, PASS: two minutes old and still bleeding off the bond spike, with 23 coins on the same ticker and no account of its own. Blocker "too new" (V5, V6).  
   CA `BngAfLZxaWN2QvpFhRbUHydYGr8zA7YTSA178G8Epump`
 - 03:50Z Cryptocrat (DIP, $69,531 mcap, $11,857 5m vol): REJECT, Dip with fading attention is a falling knife, not a dip (5m at 0.33x the hour's pace, under 0.6x)  
@@ -89,14 +97,6 @@ Updated 2026-11-02T04:19:08Z (paper trading, never real money)
   CA `ExxzYBTt3jwU5MUxuw2F4toYbTLdFwThSjyaCn6Xpump`
 - 03:43Z DOGE (no setup, $24,341 mcap, $34,724 5m vol): REJECT, No setup fits: not Final Stretch, not a migrated runner, not a healthy dip  
   CA `7EVy23dRxtL4xGKXWZbpfs7WtH2TKTnHNNBr7D86pump`
-- 03:37Z NNH (MIGRATED, $107,935 mcap, $35,590 5m vol): REJECT, Bundles: 3 linked wallet cluster(s) hold 58.0% of supply (>20%) (V17)  
-  CA `4hdA5F5TJiEeH59XrYjESYrqMuR4aBrwPxuNwijLpump`
-- 03:34Z HOPE (MIGRATED, $52,949 mcap, $41,456 5m vol): PASS at conviction 2, PASS: 7 minutes old, 4% off the high, last 5m candle +31% at 5x pace. That's a spike chase on a coin that only just bonded. Blocker "chasing spike" (V1, V6).  
-  CA `4wmT5vPBJ3iiFRmNhciCZ67yasiXSjzz3g9VukXrpump`
-- 03:30Z UNI (DIP, $116,934 mcap, $17,739 5m vol): PASS at conviction 3, PASS: falling knife. The last 5m candle was −26.5% and it's in its first leg down from a peak 18 minutes ago, with no higher low yet. On top of that there's a 7.1% bundle cluster on a ticker shared with Uniswap and nothing on the radar. (V1, V3)  
-  CA `8Jz7NgcjEMsWNPAXF3AvUHuHfN1bJ9nYZFHKiKkZUBeV`
-- 03:26Z CHOO (MIGRATED, $1,805,577 mcap, $509 5m vol): REJECT, 5m volume $509 is dead (<$2,000) (V1)  
-  CA `EJAxERvKU4kEVXn3NarjvRtgaMaJyP9ZuMeKA7JJpump`
 
 ## What its skips did next (last 48h)
 A skip "ran" if the coin reached the first target (1.5x) from the skip price before a 20% drop, "dumped" if the drop came first. Sampled every 10 min, followed 6h.
@@ -107,7 +107,7 @@ A skip "ran" if the coin reached the first target (1.5x) from the skip price bef
     CA `BbNuEtiT77Swr4WqGHuUkQY5kZ67M7au7bXkxcArpump`
   - ran: BBOTS up to 1.51x  
     CA `4TCevs5EC2RFsdWo3YPVifqe9dX2acCGGa9VHNtppump`
-- too new / sniping: blocked 46, ran 5, dumped 41, flat 0, open 0 (saving losses: keep it)
+- too new / sniping: blocked 45, ran 5, dumped 40, flat 0, open 0 (saving losses: keep it)
   - ran: onlypump up to 1.92x  
     CA `J73efZvH6rkrJbFJdP2rqe473YJW7tyWmrNARUSzpump`
   - ran: paws up to 1.51x  
@@ -147,14 +147,14 @@ A skip "ran" if the coin reached the first target (1.5x) from the skip price bef
     CA `Ewyifvp8X9NxeaKawXamGXBFDisuMfcFfcdvSZ8opump`
   - ran: PI up to 1.6x  
     CA `93VGqXL76voGxc43apJTDJoKkqnxTht1BKWoEmUypump`
+- bundles over the line: blocked 12, ran 1, dumped 8, flat 2, open 1 (saving losses: keep it)
+  - ran: Nuts up to 1.53x  
+    CA `APH9FRoKst66E4a7uZXcEfE8NjtwybUC8Jq7ue8upump`
 - crowd leaving / fading volume: blocked 11, ran 2, dumped 6, flat 2, open 1 (saving losses: keep it)
   - ran: VETOTRUMP up to 1.66x  
     CA `6g16UK4wHoFhC7PCmw8LYYCdt9q8m99fyoAwxeCrpump`
   - ran: Anakinius up to 1.93x  
     CA `2pKpMwUQXNZeAf93LoomnZSworH3ezFzweCiuvrppump`
-- bundles over the line: blocked 11, ran 1, dumped 8, flat 2, open 0 (saving losses: keep it)
-  - ran: Nuts up to 1.53x  
-    CA `APH9FRoKst66E4a7uZXcEfE8NjtwybUC8Jq7ue8upump`
 - dev share over 1%: blocked 10, ran 3, dumped 5, flat 1, open 1 (mixed)
   - ran: IGLU up to 1.54x  
     CA `34YQhrgkWoeFnm6LrcnmV3PLyDaMSNZikzUjyMmupump`
@@ -206,13 +206,13 @@ Passes:
 The owner's Nov 5 target is a reason to look harder at setups like these. It doesn't change the hard lines or how I rate conviction.
 
 ## Moving most in its scans, last 30 min (1h volume)
-- Cryptocrat: $436,800 1h vol, $66,388 mcap, +79% 1h  
-  CA `Er8sRVFaGBicA6jnYrEX91Gcwp1aCaYZsVHtFMA3pump`
+- NNH: $265,226 1h vol, $1,832 mcap, -98% 1h  
+  CA `4hdA5F5TJiEeH59XrYjESYrqMuR4aBrwPxuNwijLpump`
+- HOPE: $228,078 1h vol, $38,560 mcap, +3% 1h  
+  CA `4wmT5vPBJ3iiFRmNhciCZ67yasiXSjzz3g9VukXrpump`
+- NA: $185,279 1h vol, $113,524 mcap, +181% 1h  
+  CA `9ZmdP8q22ebRhEkcwd5EDkitu7ypeDFXTQXpv2kUpump`
 - ANUKOON: $173,533 1h vol, $2,618 mcap, -98% 1h  
   CA `91QMBp6GNEfMmDg2VWH7iWkyUSpePRkdhc44W7oapump`
-- Nuts: $110,312 1h vol, $1,888 mcap, -99% 1h  
-  CA `APH9FRoKst66E4a7uZXcEfE8NjtwybUC8Jq7ue8upump`
-- Peace: $82,294 1h vol, $13,923 mcap, +308% 1h  
-  CA `Hb1dtD8bkU2M2fYQ552UYzcbLUn1NgE8kvvtc1j1pump`
-- hugpad: $75,559 1h vol, $2,082 mcap, -94% 1h  
-  CA `2VsMRCfPZJgnGAtRQ7HGzLPpmz67EmRcUXmXYqtJpump`
+- ANAKIN: $116,341 1h vol, $2,691,118 mcap, -13% 1h  
+  CA `8s4bNqEztH1JP7mkU747uMr7AckCQdiV47FDqYnDpump`
