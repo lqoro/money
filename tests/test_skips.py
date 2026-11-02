@@ -83,6 +83,7 @@ def _research(cfg, monkeypatch, conviction, partial=False, sol=REAL_SOL):
     check.partial = partial
     monkeypatch.setattr(agent, "build_dossier", lambda s, sol_, always_crawl=False: check)
     monkeypatch.setattr(agent.brain, "has_budget", lambda: True)
+    monkeypatch.setattr(agent, "fresh_snapshot", lambda addr: snap())
     monkeypatch.setattr(agent.brain, "decide", lambda *a, **k: {
         "action": "BUY", "verdict": "BUY", "conviction": conviction, "thesis": "",
         "exit_plan": {"take_initials_multiple": 1.5, "stop_loss_pct": 20, "trailing_stop_pct": 20,

@@ -75,6 +75,7 @@ def test_float_replay_closes_green_not_red(cfg):
 
 def test_not_armed_until_it_has_run(cfg):
     """CATCULUS peaked at 1.24x: too little room to arm, the normal stop still applies."""
+    cfg.max_stop_reviews = 1
     _, pos = opened(cfg, 5.0)
     assert tick(pos, cfg, 1.24) is None
     assert tick(pos, cfg, 1.02) is None

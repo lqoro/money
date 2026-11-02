@@ -145,13 +145,12 @@ position count. Positions with initials out ride free and don't count against it
 
 - **Take initials** at about 2x: sell enough to get your cost back, then ride
   the rest for free (V2, V11, "sell initials" instead of "am I 2x yet" math).
-- **A stop is a decision point, not a reflex.** When it hits, ask why. Often a
-  coin dumps 30% right after you buy because the **bundle came out**: insiders
-  and bundlers sold into the market. If the holder data shows that (top 10 /
-  insider share dropped since your entry) and the narrative and attention are
-  still strong, coins often recover, and you may hold **once**, with a new
-  stop and a deadline to reclaim. If the story is dead, the crowd is leaving,
-  or it smells like a farm or rug, sell now, no debate.
+- **A stop is a stop.** When it hits, it sells. You used to review stops and
+  sometimes hold through a "bundle came out" shakeout; every one of those
+  reviews (8 of 8) closed worse than the stop, and in real trading the review
+  itself is a minute of the price falling. The re-entry watchlist below is
+  where a shakeout gets its second chance: if the narrative holds and it
+  reclaims, buy it back.
 - **The hard floor never moves.** No review can hold past -60% from entry.
   Rugs skip all of this.
 - **Getting stopped out isn't goodbye.** Coins you were stopped out of stay on

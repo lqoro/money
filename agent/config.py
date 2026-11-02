@@ -90,7 +90,10 @@ class Config:
     max_hold_hours: float = 12.0  # "hold hours, maybe overnight" (V8)
     rug_liquidity_drop_pct: float = 70.0
     hard_stop_pct: float = 60.0  # floor no stop review can ever hold past
-    max_stop_reviews: int = 1  # times a position may be held through its stop
+    # Times a position may be held through its stop while the brain reviews it. Off: every
+    # review in the log (8 of 8) closed worse than the stop, and in real trading the review
+    # (a Claude call of a minute or more) is time the price keeps falling. A stop sells.
+    max_stop_reviews: int = 0
     # Break-even stop: once a coin has run, a winner can't turn into a loss. The stop
     # is the price where selling everything gets the cost back after the sell's fees
     # and slippage (about 1.1-1.3x for $3-10 positions; flat network fees make small
@@ -115,6 +118,14 @@ class Config:
     dip_min_attention_ratio: float = 0.5
     dip_min_peak_mcap_usd: float = 70_000.0  # only dips of coins that proved themselves (V6)
     reentry_window_hours: float = 3.0  # stopped-out coins stay on the watchlist this long
+
+    # --- Entry freshness ----------------------------------------------------
+    # The brain takes a minute or more to decide, and a scan researches several coins in a
+    # row, so the price it judged can be minutes old. The buy is re-priced at the live
+    # price, and skipped if the coin moved this far since the brain read it: down means
+    # the setup broke while it thought, up means the buy would chase the move.
+    entry_max_drop_pct: float = 8.0
+    entry_max_rise_pct: float = 10.0
 
     # --- Loop timing --------------------------------------------------------
     scan_interval_sec: float = 60.0
