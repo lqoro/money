@@ -1,13 +1,13 @@
 # Trencher live report
 
-Updated 2026-11-02T06:20:39Z (paper trading, never real money)
+Updated 2026-11-02T06:35:40Z (paper trading, never real money)
 
 - Equity: $80.53 (-19.5% vs $100 start)
-- Goal: $1,000 by 2026-11-05 05:03Z (pressing for it): at 8.1% of it, 2.9 days left, needs +135.2% a day from here
+- Goal: $1,000 by 2026-11-05 05:03Z (pressing for it): at 8.1% of it, 2.9 days left, needs +135.9% a day from here
 - Closed trades: 19, 3 wins
 - Fees paid: $12.66 (axiom $2.26, network $8.06, pool $2.21), plus $3.34 lost to slippage
 - New trades: on
-- Brain: subscription, 567 calls and 0 plan-limit hits in 48h
+- Brain: subscription, 564 calls and 0 plan-limit hits in 48h
 
 ## Scorecard (after fees)
 - 19 closed, 3 won (16%), net $-19.48
@@ -74,9 +74,11 @@ Updated 2026-11-02T06:20:39Z (paper trading, never real money)
   CA `GYKnd6jGUSQoBUnj6LdGCBtCWYDgr2Zd6QwNPcy5pump`
 
 ## Last scan
-- 06:19Z: 1 coins, 1 with pairs, 0 passed the market filters, 0 researched
+- 06:35Z: 16 coins, 16 with pairs, 0 passed the market filters, 0 researched
 
 ## Coins it looked at, and why it passed
+- 06:26Z GATO (MIGRATED, $8,370,731 mcap, $2,308 5m vol): REJECT, Dev holds 3.3% (>1%) (V13, V17)  
+  CA `HsprHxBRgiVaQdRf3TnKNuZZtaX9JUSPgMFdAkk6pump`
 - 06:17Z CHOO (MIGRATED, $1,993,816 mcap, $2,305 5m vol): PASS at conviction 3, PASS: $2.3k on the 5m and $16k for the whole hour on a $2M coin. The crowd that did $1.4M in 24h has gone home. Blocker "thin flow" (V6).  
   CA `EJAxERvKU4kEVXn3NarjvRtgaMaJyP9ZuMeKA7JJpump`
 - 06:16Z PEACE (DIP, $171,367 mcap, $4,875 5m vol): REJECT, Dip with fading attention is a falling knife, not a dip (5m at 0.17x the hour's pace, under 0.6x)  
@@ -95,18 +97,16 @@ Updated 2026-11-02T06:20:39Z (paper trading, never real money)
   CA `En5icDhYYCuGXTtCLmfWiGR4C9nMiYMKojLdBRfVpump`
 - 05:31Z XMRISE (MIGRATED, $72,643 mcap, $14,109 5m vol): PASS at conviction 2, PASS: 15 minutes old, sitting right at its high after a +46% five-minute candle. That's chasing a spike on a fresh migration, and the "launchpad" has a website that's a few hours old with nothing behind it. (V1, V5, V6)  
   CA `5GNDhmKmNks2ELBCmLHPZYBeYu2NCDqnrhKnBBr99xmr`
-- 05:30Z PEACE (DIP, $140,651 mcap, $73,362 5m vol): PASS at conviction 3, PASS: down 28.7% in the last 5 minutes. That's a dump in progress, not a higher low. Blocker "no higher low" (V1).  
-  CA `BngAfLZxaWN2QvpFhRbUHydYGr8zA7YTSA178G8Epump`
 
 ## What its skips did next (last 48h)
 A skip "ran" if the coin reached the first target (1.5x) from the skip price before a 20% drop, "dumped" if the drop came first. Sampled every 10 min, followed 6h.
-- near the high / chasing: blocked 57, ran 5, dumped 43, flat 7, open 2 (saving losses: keep it)
-  - ran: Hyped up to 2.02x  
-    CA `ADpzsC5eB1yDD5T9LocQ8kpN7jrcW5gobA4FBHuipump`
+- near the high / chasing: blocked 56, ran 4, dumped 43, flat 7, open 2 (saving losses: keep it)
   - ran: Wojak up to 2.51x  
     CA `BbNuEtiT77Swr4WqGHuUkQY5kZ67M7au7bXkxcArpump`
   - ran: BBOTS up to 1.51x  
     CA `4TCevs5EC2RFsdWo3YPVifqe9dX2acCGGa9VHNtppump`
+  - ran: BLUE up to 1.53x  
+    CA `CPoGSmcjprCvzA2MFYLJMpQkGjmgVzKg4RVwMdrzpump`
 - too new / sniping: blocked 43, ran 5, dumped 38, flat 0, open 0 (saving losses: keep it)
   - ran: onlypump up to 1.92x  
     CA `J73efZvH6rkrJbFJdP2rqe473YJW7tyWmrNARUSzpump`
@@ -147,7 +147,7 @@ A skip "ran" if the coin reached the first target (1.5x) from the skip price bef
     CA `Ewyifvp8X9NxeaKawXamGXBFDisuMfcFfcdvSZ8opump`
   - ran: PI up to 1.6x  
     CA `93VGqXL76voGxc43apJTDJoKkqnxTht1BKWoEmUypump`
-- bundles over the line: blocked 13, ran 2, dumped 8, flat 2, open 1 (saving losses: keep it)
+- bundles over the line: blocked 13, ran 2, dumped 9, flat 2, open 0 (saving losses: keep it)
   - ran: Nuts up to 1.53x  
     CA `APH9FRoKst66E4a7uZXcEfE8NjtwybUC8Jq7ue8upump`
   - ran: NA up to 1.97x  
@@ -191,13 +191,13 @@ A skip "ran" if the coin reached the first target (1.5x) from the skip price bef
 Meta: war/peace jokes, churning fast (PEACE $141k/$73k 5m, TRUMP 'Peace President' $124k/$141k 5m +209%, Warcoin/WARCAT/WARDOG). The crawler's summary is stale: INU and NA rugged ~98%, as did World Peace and War Coin. Star Wars fading: ANAKIN 5m vol ~0.5x its hourly pace, fails the 0.7x DIP gate. Off-theme: XMRISE privacy play ($73k, $14k 5m), matches CoinGecko's Privacy category. Research: PEACE (DIP/MIGRATED probe, 1.5h old, buys 0.57), XMRISE (MIGRATED probe, 12 min old), TRUMP (best flow but 18 min old and political name, needs a V13 check that no politician pushed the CA). PASS: NA/INU (rugged), HOPE (slur kills appeal, V6), bonding-curve war coins (sniping new pairs, V5). Owner's push buys probes, not 8s. Hard lines and 20% stop hold.
 
 ## Moving most in its scans, last 30 min (1h volume)
-- TRUMP: $564,237 1h vol, $2,258 mcap, -97% 1h  
+- TRUMP: $422,424 1h vol, $1,847 mcap, -98% 1h  
   CA `En5icDhYYCuGXTtCLmfWiGR4C9nMiYMKojLdBRfVpump`
 - PEACE: $334,843 1h vol, $171,367 mcap, -34% 1h  
   CA `BngAfLZxaWN2QvpFhRbUHydYGr8zA7YTSA178G8Epump`
 - XMRISE: $202,401 1h vol, $60,788 mcap, +45% 1h  
   CA `5GNDhmKmNks2ELBCmLHPZYBeYu2NCDqnrhKnBBr99xmr`
-- ANAKIN: $133,274 1h vol, $3,378,350 mcap, +4% 1h  
-  CA `8s4bNqEztH1JP7mkU747uMr7AckCQdiV47FDqYnDpump`
-- WAR: $105,732 1h vol, $10,901 mcap, -72% 1h  
+- WAR: $117,426 1h vol, $7,618 mcap, -80% 1h  
   CA `G6KTcxD7nJT4poBZsGiANHZHcUvPoDLjaVVZhBPdpump`
+- GATO: $49,178 1h vol, $8,375,341 mcap, -4% 1h  
+  CA `HsprHxBRgiVaQdRf3TnKNuZZtaX9JUSPgMFdAkk6pump`
