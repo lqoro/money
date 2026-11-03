@@ -1,13 +1,13 @@
 # Trencher live report
 
-Updated 2026-11-03T15:42:33Z (paper trading, never real money)
+Updated 2026-11-03T15:57:40Z (paper trading, never real money)
 
 - Equity: $74.23 (-25.8% vs $100 start)
 - Closed trades: 22, 3 wins
 - Fees paid: $14.78 (axiom $2.81, network $9.18, pool $2.66), plus $4.15 lost to slippage
 - New trades: WATCH-ONLY (scans and decides, buys nothing)
-- Brain: subscription, claude-haiku-5-5 for routine calls, claude-opus-5-5 for the daily review; 442 routine calls and 1 plan-limit hits in 48h
-- Watch log: 96 coins being followed, 59 filed, 0 would-buys (6h follow, sampled every 2 min)
+- Brain: subscription, claude-haiku-5-5 for routine calls, claude-opus-5-5 for the daily review; 443 routine calls and 1 plan-limit hits in 48h
+- Watch log: 96 coins being followed, 63 filed, 0 would-buys (6h follow, sampled every 2 min)
 
 ## Scorecard (after fees)
 - 22 closed, 3 won (14%), net $-25.79
@@ -73,9 +73,17 @@ Updated 2026-11-03T15:42:33Z (paper trading, never real money)
   CA `H4gHnZ3NCU7Z9XQwGX6YYJNyieGEW8pqwGRUcdSxpump`
 
 ## Last scan
-- 15:41Z: 4 coins, 1 with pairs, 0 passed the market filters, 0 researched
+- 15:57Z: 10 coins, 7 with pairs, 0 passed the market filters, 0 researched
 
 ## Coins it looked at, and why it passed
+- 15:54Z DJT (MIGRATED, $148,901 mcap, $44,445 5m vol): REJECT, Bundles: 10 linked wallet cluster(s) hold 28.3% of supply (>20%) (V17)  
+  CA `2Csio9ZpB2U526YD8xusoFrTBk7y4Yu9gLtVitYcpump`
+- 15:51Z SARAH (MIGRATED, $42,977 mcap, $6,968 5m vol): REJECT, Top 10 hold 36.4% ex-pool (>25%) (V13)  
+  CA `4LT4uDp694w7soJerjRjSEVr2884J33EjLNG1WGzcash`
+- 15:50Z DESSA (MIGRATED, $8,658,838 mcap, $2,234 5m vol): PASS at conviction 2, PASS: DESSA has $2.2k of 5m flow at 0.38x its hourly pace, a 43% buy ratio, and an $8.7M cap with a tech claim and no GitHub. Dead money. (V1, V6, V13)  
+  CA `npz2FhoufQ7pKqhGpaipYWacrAkidyW2yDpVWSvpump`
+- 15:46Z BINGUS (MIGRATED, $301,941 mcap, $27,547 5m vol): PASS at conviction 3, PASS — BINGUS flow is at 0.63x its hourly pace, the first resistance is only 1.27x away, and the Bingus theme runs at 0.97x pace across 16 copies with no catalyst. Blockers: "flow below pace", "target too close", "bottom buy without catalyst". (V1, V6, V13)  
+  CA `2HbNwnhiL8HBK5mkdrcB9nbDxknPqGmJdXrtuH5fLoat`
 - 15:40Z SPHERE (MIGRATED, $214,082 mcap, $1,859 5m vol): REJECT, 5m volume $1,859 is dead (<$2,000) (V1)  
   CA `31SYoqWFhx3i9UsfnoXTjFp4ZwJA8F8UPrMxymfDpump`
 - 15:40Z ANONVOYAGE (MIGRATED, $1,635,060 mcap, $58,732 5m vol): REJECT, Bundles: 10 linked wallet cluster(s) hold 50.3% of supply (>20%) (V17)  
@@ -88,65 +96,57 @@ Updated 2026-11-03T15:42:33Z (paper trading, never real money)
   CA `Ea17SQuUXSV7wDv4kqbFPSjrVr5WmDXBFLJvKR1Mpump`
 - 15:28Z HI (MIGRATED, $99,428 mcap, $3,515 5m vol): PASS at conviction 2, PASS — 5m flow at 0.22x its hourly pace and the "reveal the hi" theme at 0.28x across 18 copies. Blocker: flow below pace, no breakout, split crowd (V1, V6, V3).  
   CA `6JrsviCgzki77Zr35RBGYpuKDGo628hDYDCuB7mBpump`
-- 15:24Z WASTED (DIP, $935,541 mcap, $2,633 5m vol): REJECT, Dev holds 3.5% (>1%) (V13, V17)  
-  CA `GexThZHgaswpAQ7Fi8QrHFubjPimUNSYhJiAA7XZpump`
-- 15:24Z RED (FINAL_STRETCH, $23,847 mcap, $5,085 5m vol): PASS at conviction 3, PASS: RED is a chasing spike, not a pullback. +65% on the 5m, 5m flow $5k (below the $10k bar) and a 17-copy "red vote" field with the theme at 0.27x pace. Blockers: chasing spike, flow below bar, no catalyst (V1, V6, V3).  
-  CA `A78rRtMTz8NpoEctuERvAZwt8rm67wAW2gmnEZUBahtD`
-- 15:20Z RICO (DIP, $473,121 mcap, $3,411 5m vol): PASS at conviction 3, PASS: no printed higher low, 5m flow $3.4k under the $10k bar, and it's the 20th copy of a fading GTA6 name. The Nov 19 date is real, but it's 16 days out and the chart is still making lower lows. Blocker: "no higher low" (V1, V6, V13).  
-  CA `8kuQg3WivDtL85VEdw2jEmSXjYt6EEeYBATJ4DtQpump`
-- 15:20Z PIRATE (DIP, $110,490 mcap, $17,026 5m vol): REJECT, Dip with fading attention is a falling knife, not a dip (5m at 0.31x the hour's pace, under 0.6x)  
-  CA `JAFQtEgsG9ezrbA2LJVv6oYZeo1svoa2VaoaZsN2pump`
 
 ## What its skips did next (last 48h)
 A skip "ran" if the coin reached the first target (1.5x) from the skip price before a 20% drop, "dumped" if the drop came first. Sampled every 10 min, followed 6h.
-- top 10 over 25%: blocked 59, ran 11, dumped 45, flat 2, open 1 (saving losses: keep it)
+- top 10 over 25%: blocked 58, ran 10, dumped 44, flat 2, open 2 (saving losses: keep it)
   - ran: Capri up to 1.84x  
     CA `6qhnbvdJuWVUQ7EQpgz5GNraV7pty7cqc8MmfQTEpump`
-  - ran: PEAKY up to 1.53x  
-    CA `2EQxezWgXPRU6V3UD7DKr5m12mxqeFGPWNRx9wbqy9fC`
   - ran: Bitboy up to 1.6x  
     CA `GvXhSHnWrkAasjAUZeRzRfUBV2BJiiduaHarCWAEpump`
-- too new / sniping: blocked 53, ran 8, dumped 43, flat 0, open 2 (saving losses: keep it)
+  - ran: GODHOUSE up to 3.19x  
+    CA `CSGTuLtWhCfGZ5S5TvASQ6a5su91NCfRpNqfPczfpump`
+- too new / sniping: blocked 53, ran 8, dumped 44, flat 0, open 1 (saving losses: keep it)
   - ran: VETOTRUMP up to 1.66x  
     CA `6g16UK4wHoFhC7PCmw8LYYCdt9q8m99fyoAwxeCrpump`
   - ran: Anakinius up to 1.93x  
     CA `2pKpMwUQXNZeAf93LoomnZSworH3ezFzweCiuvrppump`
   - ran: CLIPPED up to 1.65x  
     CA `Bxyp4L6EbDys4fo51qxMEQTx41sj6McnsbPZTdvipump`
-- flow below pace: blocked 36, ran 7, dumped 26, flat 1, open 2 (saving losses: keep it)
+- flow below pace: blocked 37, ran 7, dumped 25, flat 1, open 4 (saving losses: keep it)
   - ran: KOROSUKE up to 1.54x  
     CA `7ha4HFgdvkXaDcR2biCsuBpoCZzoLSRjb5we34Gbpump`
   - ran: CAPY up to 1.51x  
     CA `DBPTU2oKLDHXQjAEJ3rZi8bUGmt2uxUbipgg6xmXoMqr`
   - ran: ZERO up to 1.61x  
     CA `Aes6XNH9BboLZuchD5PnDwaX6Zj1nU79TU3gNtPEpump`
-- near the high / chasing: blocked 33, ran 2, dumped 27, flat 4, open 0 (saving losses: keep it)
+- near the high / chasing: blocked 32, ran 2, dumped 26, flat 4, open 0 (saving losses: keep it)
   - ran: underdog up to 1.64x  
     CA `BZXh2LcnNNyypxsdfVeFzXawqmoGoSShC5i4NEQQpump`
   - ran: LUCIA up to 1.83x  
     CA `Cbtnpg6SL9jvZxtZTYYFPtVQXkuuqSUxCU5aXeTkpump`
-- RugCheck danger: blocked 30, ran 6, dumped 23, flat 1, open 0 (saving losses: keep it)
+- RugCheck danger: blocked 29, ran 6, dumped 22, flat 1, open 0 (saving losses: keep it)
   - ran: AIC up to 1.6x  
     CA `2T9WZjVC6L3BvusUtjKDT6HcZeEYgU9T5xhfJQxFpump`
   - ran: ZECRET up to 1.62x  
     CA `ChCi2x2bpevrNyeRoPHLXHzmaCdGQPuU15CNqxY1pump`
   - ran: Bitboy up to 1.6x  
     CA `GvXhSHnWrkAasjAUZeRzRfUBV2BJiiduaHarCWAEpump`
-- falling knife (code): blocked 28, ran 5, dumped 21, flat 1, open 1 (saving losses: keep it)
+- falling knife (code): blocked 26, ran 5, dumped 19, flat 1, open 1 (saving losses: keep it)
   - ran: VETOTRUMP up to 1.66x  
     CA `6g16UK4wHoFhC7PCmw8LYYCdt9q8m99fyoAwxeCrpump`
   - ran: STEALTH up to 1.77x  
     CA `GoDSW31bTxfkoup9yA1qcGGx9RMXdTEWgApv3xzBmoA`
   - ran: PEACE up to 1.75x  
     CA `BngAfLZxaWN2QvpFhRbUHydYGr8zA7YTSA178G8Epump`
-- bundles over the line: blocked 22, ran 3, dumped 16, flat 1, open 2 (saving losses: keep it)
+- bundles over the line: blocked 23, ran 3, dumped 16, flat 1, open 3 (saving losses: keep it)
   - ran: Nuts up to 1.53x  
     CA `APH9FRoKst66E4a7uZXcEfE8NjtwybUC8Jq7ue8upump`
   - ran: NA up to 1.97x  
     CA `9ZmdP8q22ebRhEkcwd5EDkitu7ypeDFXTQXpv2kUpump`
   - ran: MAMESUKE up to 1.95x  
     CA `SCGBBnSwnekytGFHgyeHHxPMiN7xDxsWFGg9JgFSTNK`
-- thin 5m volume: blocked 16, ran 3, dumped 8, flat 4, open 1 (saving losses: keep it)
+- thin 5m volume: blocked 15, ran 3, dumped 7, flat 4, open 1 (saving losses: keep it)
   - ran: CUMFACE up to 1.55x  
     CA `J1D3X8znX4AzUPMHVWyBLNHqBBqWDPNSjX4KwK3Qpump`
   - ran: KIDS up to 1.73x  
@@ -205,11 +205,11 @@ Two themes carry the volume right now. First, Trump and political-name launches:
 ## Moving most in its scans, last 30 min (1h volume)
 - ANONVOYAGE: $795,076 1h vol, $1,650,475 mcap, +67% 1h  
   CA `8muc9DdhqWfAPcvmEebNQCG89bLiwi12T2KtBtzVpump`
-- PIRATE: $635,234 1h vol, $110,398 mcap, +69% 1h  
-  CA `JAFQtEgsG9ezrbA2LJVv6oYZeo1svoa2VaoaZsN2pump`
-- 1WIN: $360,941 1h vol, $16,466,743 mcap, -7% 1h  
+- BINGUS: $527,005 1h vol, $307,244 mcap, +105% 1h  
+  CA `2HbNwnhiL8HBK5mkdrcB9nbDxknPqGmJdXrtuH5fLoat`
+- 1WIN: $340,173 1h vol, $16,527,950 mcap, -6% 1h  
   CA `FjPKUGnF5zBpdEv18gT8FJCtxh3MKrFkoeYekgYr1win`
-- HI: $189,611 1h vol, $90,417 mcap, +9% 1h  
-  CA `6JrsviCgzki77Zr35RBGYpuKDGo628hDYDCuB7mBpump`
-- erection: $150,639 1h vol, $15,850 mcap, -57% 1h  
-  CA `DvVru1oZTnwxakgyhw71Gj678QVi56L5B22oDmWSpump`
+- DJT: $336,083 1h vol, $134,387 mcap, +31% 1h  
+  CA `2Csio9ZpB2U526YD8xusoFrTBk7y4Yu9gLtVitYcpump`
+- PMT: $330,584 1h vol, $2,140 mcap, -96% 1h  
+  CA `96dzMNxHP2eJdpBr8VfR719PnQyStE31pMVTgXc6pump`
