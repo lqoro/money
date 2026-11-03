@@ -1,13 +1,13 @@
 # Trencher live report
 
-Updated 2026-11-03T16:12:49Z (paper trading, never real money)
+Updated 2026-11-03T16:27:56Z (paper trading, never real money)
 
 - Equity: $74.23 (-25.8% vs $100 start)
 - Closed trades: 22, 3 wins
 - Fees paid: $14.78 (axiom $2.81, network $9.18, pool $2.66), plus $4.15 lost to slippage
 - New trades: WATCH-ONLY (scans and decides, buys nothing)
-- Brain: subscription, claude-haiku-5-5 for routine calls, claude-opus-5-5 for the daily review; 443 routine calls and 1 plan-limit hits in 48h
-- Watch log: 96 coins being followed, 66 filed, 0 would-buys (6h follow, sampled every 2 min)
+- Brain: subscription, claude-haiku-5-5 for routine calls, claude-opus-5-5 for the daily review; 446 routine calls and 1 plan-limit hits in 48h
+- Watch log: 101 coins being followed, 68 filed, 0 would-buys (6h follow, sampled every 2 min)
 
 ## Scorecard (after fees)
 - 22 closed, 3 won (14%), net $-25.79
@@ -73,54 +73,54 @@ Updated 2026-11-03T16:12:49Z (paper trading, never real money)
   CA `H4gHnZ3NCU7Z9XQwGX6YYJNyieGEW8pqwGRUcdSxpump`
 
 ## Last scan
-- 16:12Z: 8 coins, 5 with pairs, 0 passed the market filters, 0 researched
+- 16:27Z: 5 coins, 2 with pairs, 0 passed the market filters, 0 researched
 
 ## Coins it looked at, and why it passed
+- 16:26Z ANONVOYAGE (MIGRATED, $2,004,565 mcap, $17,847 5m vol): REJECT, Bundles: 10 linked wallet cluster(s) hold 50.3% of supply (>20%) (V17)  
+  CA `8muc9DdhqWfAPcvmEebNQCG89bLiwi12T2KtBtzVpump`
+- 16:25Z NALA (MIGRATED, $174,044 mcap, $12,482 5m vol): PASS at conviction 3, PASS: flow below pace. 5m is 0.41x the hourly pace on a 6-copy cat field with no catalyst, and the coin is under an hour old. Clean holders don't fix that. (flow below pace)  
+  CA `Ea17SQuUXSV7wDv4kqbFPSjrVr5WmDXBFLJvKR1Mpump`
+- 16:24Z SNOWMEI (FINAL_STRETCH, $23,630 mcap, $5,910 5m vol): PASS at conviction 3, PASS — chasing spike. 5m up 45%, 1h up 649%, 17 minutes old, 7 copies on the same name, no story behind it. Wait for the retrace and a printed higher low (V1, V6).  
+  CA `ETVD787UcTkJqrhZMt15bVet7CQ4SDzCga7DfBm8pump`
+- 16:21Z RED (FINAL_STRETCH, $24,155 mcap, $2,107 5m vol): PASS at conviction 3, PASS — $2.1k 5m flow at 0.75x pace in a 16-copy "red/vote" field, saw-tooth candles, top 10 at 24%, no project X or site. Farm-shaped. Blocker: thin 5m volume / split crowd (V1, V6, V13).  
+  CA `A78rRtMTz8NpoEctuERvAZwt8rm67wAW2gmnEZUBahtD`
+- 16:21Z OFF (FINAL_STRETCH, $26,434 mcap, $33,365 5m vol): PASS at conviction 3, PASS: chasing spike. OFF is up 822% in 5 minutes, its site doesn't show this CA, the domain is 1.3 days old, and five coins share the ticker. Blocker: "chasing spike" (V1, V6, V13).  
+  CA `BfYkuqnsxbLpQGzjrg6QdFPKs5Kt48hTMAWfA1a5pump`
+- 16:20Z CYBRLK (DIP, $153,669 mcap, $247,168 5m vol): PASS at conviction 3, PASS — no printed higher low on a 12-minute-old coin that's down 39% in 5m, one of 15 copies with zero radar mentions, and a 5.3% bundle cluster. That's a knife in a crowd, not a dip (V1, V3, V6).  
+  CA `Farisr1LVuzWrHBhLmcRwjdAaZAstTnXtRfifFbwLEEK`
+- 16:16Z HUGO (MIGRATED, $76,989 mcap, $83,686 5m vol): PASS at conviction 3, PASS — too new, chasing a +104% 5m candle, no printed higher low, and 26 copies splitting the crowd. Blockers: "too new", "chasing spike", "no higher low". (V1, V6)  
+  CA `2KwPc4FxdNm92DKo6Zy8vUF9sGYsXuKjykXEhXkdpump`
 - 16:05Z RICO (DIP, $392,974 mcap, $5,264 5m vol): REJECT, Dip with fading attention is a falling knife, not a dip (5m at 0.57x the hour's pace, under 0.6x)  
   CA `8kuQg3WivDtL85VEdw2jEmSXjYt6EEeYBATJ4DtQpump`
 - 16:02Z Ahsoka (DIP, $921,030 mcap, $3,916 5m vol): PASS at conviction 2, PASS: DIP with no catalyst, 5m buy ratio 0.45, and a fan-meme site that doesn't show this CA. Dead story, blocker "dead story". (V1, V13)  
   CA `4nuj5NLHMtQSezfmz6CwBpCRJisFie6F6MxNNz1dpump`
 - 16:01Z Dacity (MIGRATED, $7,055,937 mcap, $8,744 5m vol): REJECT, Bundles: 10 linked wallet cluster(s) hold 24.0% of supply (>20%) (V17)  
   CA `nxPqZ4F7ux8Vph5NFu25rEP6Kx9Gr1U6Fmj36Rjpump`
-- 15:54Z DJT (MIGRATED, $148,901 mcap, $44,445 5m vol): REJECT, Bundles: 10 linked wallet cluster(s) hold 28.3% of supply (>20%) (V17)  
-  CA `2Csio9ZpB2U526YD8xusoFrTBk7y4Yu9gLtVitYcpump`
-- 15:51Z SARAH (MIGRATED, $42,977 mcap, $6,968 5m vol): REJECT, Top 10 hold 36.4% ex-pool (>25%) (V13)  
-  CA `4LT4uDp694w7soJerjRjSEVr2884J33EjLNG1WGzcash`
-- 15:50Z DESSA (MIGRATED, $8,658,838 mcap, $2,234 5m vol): PASS at conviction 2, PASS: DESSA has $2.2k of 5m flow at 0.38x its hourly pace, a 43% buy ratio, and an $8.7M cap with a tech claim and no GitHub. Dead money. (V1, V6, V13)  
-  CA `npz2FhoufQ7pKqhGpaipYWacrAkidyW2yDpVWSvpump`
-- 15:46Z BINGUS (MIGRATED, $301,941 mcap, $27,547 5m vol): PASS at conviction 3, PASS — BINGUS flow is at 0.63x its hourly pace, the first resistance is only 1.27x away, and the Bingus theme runs at 0.97x pace across 16 copies with no catalyst. Blockers: "flow below pace", "target too close", "bottom buy without catalyst". (V1, V6, V13)  
-  CA `2HbNwnhiL8HBK5mkdrcB9nbDxknPqGmJdXrtuH5fLoat`
-- 15:40Z SPHERE (MIGRATED, $214,082 mcap, $1,859 5m vol): REJECT, 5m volume $1,859 is dead (<$2,000) (V1)  
-  CA `31SYoqWFhx3i9UsfnoXTjFp4ZwJA8F8UPrMxymfDpump`
-- 15:40Z ANONVOYAGE (MIGRATED, $1,635,060 mcap, $58,732 5m vol): REJECT, Bundles: 10 linked wallet cluster(s) hold 50.3% of supply (>20%) (V17)  
-  CA `8muc9DdhqWfAPcvmEebNQCG89bLiwi12T2KtBtzVpump`
-- 15:40Z HUND  (MIGRATED, $38,788 mcap, $9,842 5m vol): REJECT, Dev holds 1.5% (>1%) (V13, V17)  
-  CA `HAjc6B1MfdjnYPiB2xcETPb25kb85Pxg9nq9i4D5pump`
 
 ## What its skips did next (last 48h)
 A skip "ran" if the coin reached the first target (1.5x) from the skip price before a 20% drop, "dumped" if the drop came first. Sampled every 10 min, followed 6h.
-- top 10 over 25%: blocked 58, ran 11, dumped 44, flat 2, open 1 (saving losses: keep it)
+- top 10 over 25%: blocked 57, ran 11, dumped 43, flat 2, open 1 (saving losses: keep it)
   - ran: Capri up to 1.84x  
     CA `6qhnbvdJuWVUQ7EQpgz5GNraV7pty7cqc8MmfQTEpump`
   - ran: Bitboy up to 1.6x  
     CA `GvXhSHnWrkAasjAUZeRzRfUBV2BJiiduaHarCWAEpump`
   - ran: GODHOUSE up to 3.19x  
     CA `CSGTuLtWhCfGZ5S5TvASQ6a5su91NCfRpNqfPczfpump`
-- too new / sniping: blocked 53, ran 8, dumped 44, flat 0, open 1 (saving losses: keep it)
+- too new / sniping: blocked 55, ran 8, dumped 44, flat 0, open 3 (saving losses: keep it)
   - ran: VETOTRUMP up to 1.66x  
     CA `6g16UK4wHoFhC7PCmw8LYYCdt9q8m99fyoAwxeCrpump`
   - ran: Anakinius up to 1.93x  
     CA `2pKpMwUQXNZeAf93LoomnZSworH3ezFzweCiuvrppump`
   - ran: CLIPPED up to 1.65x  
     CA `Bxyp4L6EbDys4fo51qxMEQTx41sj6McnsbPZTdvipump`
-- flow below pace: blocked 36, ran 7, dumped 24, flat 1, open 4 (saving losses: keep it)
+- flow below pace: blocked 37, ran 7, dumped 23, flat 1, open 6 (saving losses: keep it)
   - ran: KOROSUKE up to 1.54x  
     CA `7ha4HFgdvkXaDcR2biCsuBpoCZzoLSRjb5we34Gbpump`
   - ran: CAPY up to 1.51x  
     CA `DBPTU2oKLDHXQjAEJ3rZi8bUGmt2uxUbipgg6xmXoMqr`
   - ran: ZERO up to 1.61x  
     CA `Aes6XNH9BboLZuchD5PnDwaX6Zj1nU79TU3gNtPEpump`
-- near the high / chasing: blocked 32, ran 2, dumped 26, flat 4, open 0 (saving losses: keep it)
+- near the high / chasing: blocked 33, ran 2, dumped 27, flat 4, open 0 (saving losses: keep it)
   - ran: underdog up to 1.64x  
     CA `BZXh2LcnNNyypxsdfVeFzXawqmoGoSShC5i4NEQQpump`
   - ran: LUCIA up to 1.83x  
@@ -139,7 +139,7 @@ A skip "ran" if the coin reached the first target (1.5x) from the skip price bef
     CA `GoDSW31bTxfkoup9yA1qcGGx9RMXdTEWgApv3xzBmoA`
   - ran: PEACE up to 1.75x  
     CA `BngAfLZxaWN2QvpFhRbUHydYGr8zA7YTSA178G8Epump`
-- bundles over the line: blocked 23, ran 3, dumped 16, flat 1, open 3 (saving losses: keep it)
+- bundles over the line: blocked 21, ran 3, dumped 15, flat 1, open 2 (saving losses: keep it)
   - ran: Nuts up to 1.53x  
     CA `APH9FRoKst66E4a7uZXcEfE8NjtwybUC8Jq7ue8upump`
   - ran: NA up to 1.97x  
@@ -153,7 +153,7 @@ A skip "ran" if the coin reached the first target (1.5x) from the skip price bef
     CA `7uwr9Zoz8WW9UyRVC22nmmAXRbPoFTUpVjsN8q7kids`
   - ran: 404 up to 1.89x  
     CA `9gKArqT6qp3goHfuwAnfG7LioqwUtJ8TFu7P1Bhbpump`
-- falling knife / no higher low: blocked 13, ran 1, dumped 10, flat 2, open 0 (saving losses: keep it)
+- falling knife / no higher low: blocked 14, ran 1, dumped 10, flat 2, open 1 (saving losses: keep it)
   - ran: HEDGE up to 1.77x  
     CA `wDSAqt4tEZpDAwB9XY6ejkZvMFuT1zUMjUh67txeYhf`
 - other: blocked 10, ran 4, dumped 5, flat 1, open 0 (mixed)
@@ -203,13 +203,13 @@ There's no positive after-cost edge yet. The 13 settled coins averaged -6.7% net
 Two themes carry the volume right now. First, Trump and political-name launches: PMT (0.3h old, $217k cap, 78% buys, $45k on the 5m), DJT (0.4h, 51% buys), and RED "Vote Red" ($24k cap, 76% buys, $5k 5m). Second, sub-hour cat and absurd-joke launches: KITTY (0.3h, +545%, 50% buys, $15k 5m) and HI ($90k cap, 70% buys). Both are rising on fresh tokens, but the same pattern is already dying nearby: JIFFPOM and Biwa are down 96-98% under $2k, erection day is down 57%, and the GTA6 name is fading (GATO flat on $11M with a 42% buy ratio). The only larger coins with buyers outside the joke pattern are BINGUS (migrated on Raydium, $280k cap, 61% buys, $76k 5m) and LUCIA (0h old, $96k 5m), but LUCIA's 5m volume equals its 1h volume, which looks like a launch burst rather than organic flow. Setups I'd research now: PMT only on a pullback that holds a buy ratio above 60% with 5m volume above $10k, and BINGUS after the full holder and bundle check. DJT is a pass on the name alone because it is built on an antisemitic slur, and I'd skip the political-name launches unless they hold real volume. The market isn't quiet; it's fast and mostly bad.
 
 ## Moving most in its scans, last 30 min (1h volume)
-- LUCIA: $530,017 1h vol, $3,009 mcap, -92% 1h  
-  CA `Cbtnpg6SL9jvZxtZTYYFPtVQXkuuqSUxCU5aXeTkpump`
-- BINGUS: $527,005 1h vol, $307,244 mcap, +105% 1h  
-  CA `2HbNwnhiL8HBK5mkdrcB9nbDxknPqGmJdXrtuH5fLoat`
-- 1WIN: $340,881 1h vol, $16,614,861 mcap, -3% 1h  
+- CYBRLK: $580,508 1h vol, $149,065 mcap, +252% 1h  
+  CA `Farisr1LVuzWrHBhLmcRwjdAaZAstTnXtRfifFbwLEEK`
+- NALA: $369,598 1h vol, $174,044 mcap, +280% 1h  
+  CA `Ea17SQuUXSV7wDv4kqbFPSjrVr5WmDXBFLJvKR1Mpump`
+- HUGO: $333,241 1h vol, $76,989 mcap, +102% 1h  
+  CA `2KwPc4FxdNm92DKo6Zy8vUF9sGYsXuKjykXEhXkdpump`
+- 1WIN: $306,536 1h vol, $16,611,238 mcap, +7% 1h  
   CA `FjPKUGnF5zBpdEv18gT8FJCtxh3MKrFkoeYekgYr1win`
-- DJT: $336,083 1h vol, $134,387 mcap, +31% 1h  
-  CA `2Csio9ZpB2U526YD8xusoFrTBk7y4Yu9gLtVitYcpump`
-- PMT: $232,641 1h vol, $2,146 mcap, -99% 1h  
-  CA `96dzMNxHP2eJdpBr8VfR719PnQyStE31pMVTgXc6pump`
+- ANONVOYAGE: $292,597 1h vol, $2,004,565 mcap, +11% 1h  
+  CA `8muc9DdhqWfAPcvmEebNQCG89bLiwi12T2KtBtzVpump`
