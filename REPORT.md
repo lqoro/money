@@ -1,13 +1,13 @@
 # Trencher live report
 
-Updated 2026-11-03T03:18:32Z (paper trading, never real money)
+Updated 2026-11-03T03:33:37Z (paper trading, never real money)
 
 - Equity: $74.23 (-25.8% vs $100 start)
-- Goal: $1,000 by 2026-11-05 05:03Z (pressing for it): at 7.4% of it, 2.1 days left, needs +250.7% a day from here
+- Goal: $1,000 by 2026-11-05 05:03Z (pressing for it): at 7.4% of it, 2.1 days left, needs +253% a day from here
 - Closed trades: 22, 3 wins
 - Fees paid: $14.78 (axiom $2.81, network $9.18, pool $2.66), plus $4.15 lost to slippage
 - New trades: on
-- Brain: subscription, 477 calls and 0 plan-limit hits in 48h
+- Brain: subscription, 471 calls and 0 plan-limit hits in 48h
 
 ## Scorecard (after fees)
 - 22 closed, 3 won (14%), net $-25.79
@@ -74,9 +74,17 @@ Updated 2026-11-03T03:18:32Z (paper trading, never real money)
   CA `H4gHnZ3NCU7Z9XQwGX6YYJNyieGEW8pqwGRUcdSxpump`
 
 ## Last scan
-- 03:18Z: 7 coins, 6 with pairs, 0 passed the market filters, 0 researched
+- 03:32Z: 7 coins, 7 with pairs, 0 passed the market filters, 0 researched
 
 ## Coins it looked at, and why it passed
+- 03:29Z WIF (MIGRATED, $162,842 mcap, $4,170 5m vol): REJECT, Top 10 hold 27.1% ex-pool (>25%) (V13)  
+  CA `E7ayy5Se6gjwCNtw9NP629AucnTgqab4SSmSxDpUpump`
+- 03:28Z BAWSAQS (FINAL_STRETCH, $26,155 mcap, $2,266 5m vol): REJECT, Top 10 hold 27.6% ex-pool (>25%) (V13)  
+  CA `4MNdQw5iYUZfuCT7pRq99YtAXLXbpu2xTXsfT7pFpump`
+- 03:24Z 1WIN (MIGRATED, $20,547,542 mcap, $4,822 5m vol): REJECT, RugCheck danger: Freeze Authority still enabled  
+  CA `FjPKUGnF5zBpdEv18gT8FJCtxh3MKrFkoeYekgYr1win`
+- 03:19Z DRIPSTOCK (MIGRATED, $35,074 mcap, $2,091 5m vol): PASS at conviction 2, PASS. DRIPSTOCK is 57 seconds old, sellers outnumber buyers 30 to 11, and 5m volume is only $2k. That's a sniper's chart, and I'm too slow to win it (V5, V1).  
+  CA `3AATisbEvs3xSzJoE8wgGEVvwKnig5pn4bvXTsYKnb1g`
 - 03:17Z MEM (MIGRATED, $49,829 mcap, $32,295 5m vol): REJECT, Top 10 hold 25.3% ex-pool (>25%) (V13)  
   CA `8UdrZzuCPbZAY2tiSErRED2KUrggJaRxEsHrzgWLpump`
 - 03:12Z SPHERE (MIGRATED, $1,314,339 mcap, $8,409 5m vol): PASS at conviction 2, PASS: 5m volume is 0.07x the hourly pace on a $1.3M coin whose prior high is only 1.26x away. The crowd already left. Blockers: "flow below pace" and "big cap, no room" (V1, V6).  
@@ -89,14 +97,6 @@ Updated 2026-11-03T03:18:32Z (paper trading, never real money)
   CA `SCGBBnSwnekytGFHgyeHHxPMiN7xDxsWFGg9JgFSTNK`
 - 02:51Z ANON (FINAL_STRETCH, $23,067 mcap, $3,901 5m vol): REJECT, Top 10 hold 30.1% ex-pool (>25%) (V13)  
   CA `6YBtjnNbmHVMsu7CB3ugvCadmbPXjDY6hf14YP2apump`
-- 02:49Z Boomer (FINAL_STRETCH, $20,264 mcap, $32,033 5m vol): REJECT, Top 10 hold 27.4% ex-pool (>25%) (V13)  
-  CA `C5Q9mWVdM4yoVsydDYxTVtfCUsgibXj1giFSfHBkpump`
-- 02:48Z inu (MIGRATED, $82,758 mcap, $44,457 5m vol): REJECT, Bundles: 1 linked wallet cluster(s) hold 37.8% of supply (>20%) (V17)  
-  CA `DAiwoNEeVefNzf9Tvt7gWmbnSpTzAydEqHvX4zoupump`
-- 02:46Z WASTED (MIGRATED, $1,021,466 mcap, $3,383 5m vol): REJECT, Dev holds 3.5% (>1%) (V13, V17)  
-  CA `GexThZHgaswpAQ7Fi8QrHFubjPimUNSYhJiAA7XZpump`
-- 02:45Z MAGACREW (MIGRATED, $111,512 mcap, $51,968 5m vol): REJECT, Top 10 hold 28.7% ex-pool (>25%) (V13)  
-  CA `9LAu2WFQGV2FDSoa36S25LMmQSg5E2yUPT33j519pump`
 
 ## What its skips did next (last 48h)
 A skip "ran" if the coin reached the first target (1.5x) from the skip price before a 20% drop, "dumped" if the drop came first. Sampled every 10 min, followed 6h.
@@ -107,14 +107,14 @@ A skip "ran" if the coin reached the first target (1.5x) from the skip price bef
     CA `CCF6ui6YjjhLaVtuYLH8b5jza8jHathqww5VbrMapump`
   - ran: VETOTRUMP up to 1.66x  
     CA `6g16UK4wHoFhC7PCmw8LYYCdt9q8m99fyoAwxeCrpump`
-- top 10 over 25%: blocked 53, ran 6, dumped 41, flat 2, open 4 (saving losses: keep it)
+- top 10 over 25%: blocked 53, ran 8, dumped 41, flat 2, open 2 (saving losses: keep it)
   - ran: TIPPER up to 1.55x  
     CA `3DEcz7AnmJiGSnDHYvUeX5uPMMHVcDwqrWRSGdHEpump`
   - ran: Capri up to 1.84x  
     CA `6qhnbvdJuWVUQ7EQpgz5GNraV7pty7cqc8MmfQTEpump`
   - ran: PEAKY up to 1.53x  
     CA `2EQxezWgXPRU6V3UD7DKr5m12mxqeFGPWNRx9wbqy9fC`
-- near the high / chasing: blocked 44, ran 2, dumped 37, flat 5, open 0 (saving losses: keep it)
+- near the high / chasing: blocked 43, ran 2, dumped 37, flat 4, open 0 (saving losses: keep it)
   - ran: BLUE up to 1.53x  
     CA `CPoGSmcjprCvzA2MFYLJMpQkGjmgVzKg4RVwMdrzpump`
   - ran: PIRATE up to 2.27x  
@@ -126,7 +126,7 @@ A skip "ran" if the coin reached the first target (1.5x) from the skip price bef
     CA `ChCi2x2bpevrNyeRoPHLXHzmaCdGQPuU15CNqxY1pump`
   - ran: Bitboy up to 1.6x  
     CA `GvXhSHnWrkAasjAUZeRzRfUBV2BJiiduaHarCWAEpump`
-- falling knife (code): blocked 29, ran 5, dumped 20, flat 2, open 2 (saving losses: keep it)
+- falling knife (code): blocked 29, ran 5, dumped 21, flat 2, open 1 (saving losses: keep it)
   - ran: BLUE up to 1.53x  
     CA `CPoGSmcjprCvzA2MFYLJMpQkGjmgVzKg4RVwMdrzpump`
   - ran: VETOTRUMP up to 1.66x  
@@ -189,11 +189,11 @@ The meta is fresh pumpswap graduates under 1.5 hours old, and they're taking the
 ## Moving most in its scans, last 30 min (1h volume)
 - SPHERE: $1,384,402 1h vol, $1,314,339 mcap, +2517% 1h  
   CA `31SYoqWFhx3i9UsfnoXTjFp4ZwJA8F8UPrMxymfDpump`
+- MAGACREW: $613,136 1h vol, $1,861 mcap, -95% 1h  
+  CA `9LAu2WFQGV2FDSoa36S25LMmQSg5E2yUPT33j519pump`
 - SMUGLY: $518,909 1h vol, $400,164 mcap, +358% 1h  
   CA `DayjoyjxCA2SVTApEW7oBFG3WMvrYZRMjAnqsetLpump`
 - GOAT: $289,574 1h vol, $55,402 mcap, +42% 1h  
   CA `Egarx4TpHajwcCSQi5u5qiv1kVac2ei5HMhoiXszpump`
-- Wanted: $71,001 1h vol, $1,801 mcap, -100% 1h  
-  CA `8oUGdPdyxVaCSJSZpcVZuxqoyiZAmc2Z22FsDRZ3pump`
-- GATO: $66,355 1h vol, $12,819,463 mcap, -2% 1h  
-  CA `HsprHxBRgiVaQdRf3TnKNuZZtaX9JUSPgMFdAkk6pump`
+- BabyTrump: $114,684 1h vol, $3,634 mcap, -6% 1h  
+  CA `9FLGLFKRgD1zR8L8WLngAnqgxTakEQN3u4JMYjmfpump`
