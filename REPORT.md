@@ -1,13 +1,13 @@
 # Trencher live report
 
-Updated 2026-11-03T04:34:51Z (paper trading, never real money)
+Updated 2026-11-03T04:50:04Z (paper trading, never real money)
 
 - Equity: $74.23 (-25.8% vs $100 start)
-- Goal: $1,000 by 2026-11-05 05:03Z (pressing for it): at 7.4% of it, 2 days left, needs +262.4% a day from here
+- Goal: $1,000 by 2026-11-05 05:03Z (pressing for it): at 7.4% of it, 2 days left, needs +264.9% a day from here
 - Closed trades: 22, 3 wins
 - Fees paid: $14.78 (axiom $2.81, network $9.18, pool $2.66), plus $4.15 lost to slippage
 - New trades: on
-- Brain: subscription, 467 calls and 1 plan-limit hits in 48h
+- Brain: subscription, 465 calls and 1 plan-limit hits in 48h
 
 ## Scorecard (after fees)
 - 22 closed, 3 won (14%), net $-25.79
@@ -74,9 +74,15 @@ Updated 2026-11-03T04:34:51Z (paper trading, never real money)
   CA `H4gHnZ3NCU7Z9XQwGX6YYJNyieGEW8pqwGRUcdSxpump`
 
 ## Last scan
-- 04:34Z: 1 coins, 0 with pairs, 0 passed the market filters, 0 researched
+- 04:49Z: 2 coins, 1 with pairs, 0 passed the market filters, 0 researched
 
 ## Coins it looked at, and why it passed
+- 04:40Z MAMESUKE (DIP, $1,066,067 mcap, $4,173 5m vol): REJECT, Bundles: 5 linked wallet cluster(s) hold 65.9% of supply (>20%) (V17)  
+  CA `SCGBBnSwnekytGFHgyeHHxPMiN7xDxsWFGg9JgFSTNK`
+- 04:40Z WASTED (DIP, $983,984 mcap, $6,080 5m vol): REJECT, Dev holds 3.5% (>1%) (V13, V17)  
+  CA `GexThZHgaswpAQ7Fi8QrHFubjPimUNSYhJiAA7XZpump`
+- 04:36Z j*b (FINAL_STRETCH, $27,601 mcap, $27,943 5m vol): REJECT, Top 10 hold 26.3% ex-pool (>25%) (V13)  
+  CA `7uHBhrdN1UNf1vggnvoZMHVA6Du4NQe2USP2oMnYpump`
 - 04:28Z LeTwerk (MIGRATED, $112,322 mcap, $38,665 5m vol): PASS at conviction 3, PASS: it's 2% off the high, 15 minutes old, and 5m volume is running at 3.3x the hourly pace. That's a spike, not a pullback. Blocker "chasing" (V1, V6).  
   CA `GtRH3cGYWPLLjjvcgMV1Fb3Jd25rhGRQmXgwu79Npump`
 - 04:22Z Memestock (MIGRATED, $116,742 mcap, $19,431 5m vol): PASS at conviction 3, PASS: Memestock is 21 minutes old, 17% off a peak printed 6 minutes ago, down 8.7% on the 5m with sellers ahead, no socials, and 15.7% of supply sits in linked clusters. That's a fresh graduate still bleeding, not a breakout. Blockers: "no breakout" / "too new" (V1, V6).  
@@ -94,26 +100,26 @@ Updated 2026-11-03T04:34:51Z (paper trading, never real money)
 
 ## What its skips did next (last 48h)
 A skip "ran" if the coin reached the first target (1.5x) from the skip price before a 20% drop, "dumped" if the drop came first. Sampled every 10 min, followed 6h.
-- too new / sniping: blocked 54, ran 9, dumped 43, flat 0, open 2 (saving losses: keep it)
-  - ran: paws up to 1.51x  
-    CA `CCF6ui6YjjhLaVtuYLH8b5jza8jHathqww5VbrMapump`
-  - ran: VETOTRUMP up to 1.66x  
-    CA `6g16UK4wHoFhC7PCmw8LYYCdt9q8m99fyoAwxeCrpump`
-  - ran: Anakinius up to 1.93x  
-    CA `2pKpMwUQXNZeAf93LoomnZSworH3ezFzweCiuvrppump`
-- top 10 over 25%: blocked 53, ran 7, dumped 43, flat 2, open 1 (saving losses: keep it)
+- top 10 over 25%: blocked 54, ran 8, dumped 43, flat 2, open 1 (saving losses: keep it)
   - ran: TIPPER up to 1.55x  
     CA `3DEcz7AnmJiGSnDHYvUeX5uPMMHVcDwqrWRSGdHEpump`
   - ran: Capri up to 1.84x  
     CA `6qhnbvdJuWVUQ7EQpgz5GNraV7pty7cqc8MmfQTEpump`
   - ran: PEAKY up to 1.53x  
     CA `2EQxezWgXPRU6V3UD7DKr5m12mxqeFGPWNRx9wbqy9fC`
+- too new / sniping: blocked 54, ran 10, dumped 43, flat 0, open 1 (saving losses: keep it)
+  - ran: paws up to 1.51x  
+    CA `CCF6ui6YjjhLaVtuYLH8b5jza8jHathqww5VbrMapump`
+  - ran: VETOTRUMP up to 1.66x  
+    CA `6g16UK4wHoFhC7PCmw8LYYCdt9q8m99fyoAwxeCrpump`
+  - ran: Anakinius up to 1.93x  
+    CA `2pKpMwUQXNZeAf93LoomnZSworH3ezFzweCiuvrppump`
 - near the high / chasing: blocked 42, ran 2, dumped 36, flat 3, open 1 (saving losses: keep it)
   - ran: BLUE up to 1.53x  
     CA `CPoGSmcjprCvzA2MFYLJMpQkGjmgVzKg4RVwMdrzpump`
   - ran: PIRATE up to 2.27x  
     CA `gzQXRwGRzfKLHfaV1f84QT7e5mt4vevu7MgacEfpump`
-- RugCheck danger: blocked 31, ran 6, dumped 23, flat 0, open 2 (saving losses: keep it)
+- RugCheck danger: blocked 31, ran 7, dumped 23, flat 0, open 1 (saving losses: keep it)
   - ran: AIC up to 1.6x  
     CA `2T9WZjVC6L3BvusUtjKDT6HcZeEYgU9T5xhfJQxFpump`
   - ran: ZECRET up to 1.62x  
@@ -127,7 +133,7 @@ A skip "ran" if the coin reached the first target (1.5x) from the skip price bef
     CA `6g16UK4wHoFhC7PCmw8LYYCdt9q8m99fyoAwxeCrpump`
   - ran: STEALTH up to 1.77x  
     CA `GoDSW31bTxfkoup9yA1qcGGx9RMXdTEWgApv3xzBmoA`
-- flow below pace: blocked 25, ran 5, dumped 17, flat 1, open 2 (saving losses: keep it)
+- flow below pace: blocked 25, ran 5, dumped 19, flat 1, open 0 (saving losses: keep it)
   - ran: Ahsoka up to 1.54x  
     CA `4nuj5NLHMtQSezfmz6CwBpCRJisFie6F6MxNNz1dpump`
   - ran: KOROSUKE up to 1.54x  
