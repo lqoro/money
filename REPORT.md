@@ -1,13 +1,13 @@
 # Trencher live report
 
-Updated 2026-11-03T01:32:39Z (paper trading, never real money)
+Updated 2026-11-03T01:47:52Z (paper trading, never real money)
 
 - Equity: $74.23 (-25.8% vs $100 start)
-- Goal: $1,000 by 2026-11-05 05:03Z (pressing for it): at 7.4% of it, 2.1 days left, needs +235.9% a day from here
+- Goal: $1,000 by 2026-11-05 05:03Z (pressing for it): at 7.4% of it, 2.1 days left, needs +238% a day from here
 - Closed trades: 22, 3 wins
 - Fees paid: $14.78 (axiom $2.81, network $9.18, pool $2.66), plus $4.15 lost to slippage
 - New trades: on
-- Brain: subscription, 488 calls and 0 plan-limit hits in 48h
+- Brain: subscription, 487 calls and 0 plan-limit hits in 48h
 
 ## Scorecard (after fees)
 - 22 closed, 3 won (14%), net $-25.79
@@ -74,9 +74,17 @@ Updated 2026-11-03T01:32:39Z (paper trading, never real money)
   CA `H4gHnZ3NCU7Z9XQwGX6YYJNyieGEW8pqwGRUcdSxpump`
 
 ## Last scan
-- 01:32Z: 10 coins, 4 with pairs, 0 passed the market filters, 0 researched
+- 01:47Z: 7 coins, 3 with pairs, 0 passed the market filters, 0 researched
 
 ## Coins it looked at, and why it passed
+- 01:46Z KYBER (FINAL_STRETCH, $24,153 mcap, $2,401 5m vol): REJECT, Top 10 hold 25.7% ex-pool (>25%) (V13)  
+  CA `BasL6j1MNkjFyuvRRFsmbm3bKqFPr6Yg3UhShii6pump`
+- 01:43Z ascend (MIGRATED, $142,031 mcap, $30,438 5m vol): PASS at conviction 3, PASS: flow below pace. The 5m is only 0.36x the hourly average, it's a 48-minute-old graduate still bleeding off its spike, and there's no printed higher low. The crowd is leaving. (V1, V6)  
+  CA `8vFdgGFWkKS1euogVW4qmMurdnso8CPrfQNpB4qqpump`
+- 01:41Z 1WIN (MIGRATED, $20,655,329 mcap, $5,736 5m vol): REJECT, RugCheck danger: Freeze Authority still enabled  
+  CA `FjPKUGnF5zBpdEv18gT8FJCtxh3MKrFkoeYekgYr1win`
+- 01:36Z Wanted (MIGRATED, $237,477 mcap, $8,596 5m vol): PASS at conviction 3, PASS: 4.5% off a 6-minute-old high with 5m flow at 0.26x the hourly pace. That's chasing into a fading crowd. Blockers: "chasing" and "flow below pace" (V1, V6).  
+  CA `8oUGdPdyxVaCSJSZpcVZuxqoyiZAmc2Z22FsDRZ3pump`
 - 01:31Z Slingoor (FINAL_STRETCH, $19,463 mcap, $6,808 5m vol): REJECT, Top 10 hold 48.1% ex-pool (>25%) (V13)  
   CA `FydUK4ArdkSNNnvUv1hsJ8PfE4x3Pw3YQjLUK4Vpump`
 - 01:26Z RUGSEM (MIGRATED, $132,829 mcap, $29,385 5m vol): REJECT, Top 10 hold 29.6% ex-pool (>25%) (V13)  
@@ -89,25 +97,17 @@ Updated 2026-11-03T01:32:39Z (paper trading, never real money)
   CA `SCGBBnSwnekytGFHgyeHHxPMiN7xDxsWFGg9JgFSTNK`
 - 01:18Z ANON (MIGRATED, $67,827 mcap, $7,013 5m vol): PASS at conviction 3, PASS — 5m flow $7k at 0.28x the hourly pace, 49 min old, third ANON by size. The crowd already left. Blocker: flow below pace (V1, V6).  
   CA `CcDxdWZknjKxucq6SgQtHSc5w1amottoBkheaaePpump`
-- 01:16Z USDC (MIGRATED, $100,240 mcap, $41,152 5m vol): PASS at conviction 3, PASS: chasing a spike. The last 5m candle is up 85% and 5m volume is 3.6x the hourly pace on a 36-minute-old migration. Clean holders don't make a vertical candle a pullback (V1, V6).  
-  CA `DLsvm8VGQMucYFjagmv6j7WAr1NZiX2qMFVtGz8pump`
-- 01:15Z WASTED (DIP, $820,452 mcap, $2,698 5m vol): REJECT, Dip with fading attention is a falling knife, not a dip (5m at 0.09x the hour's pace, under 0.6x)  
-  CA `GexThZHgaswpAQ7Fi8QrHFubjPimUNSYhJiAA7XZpump`
-- 01:05Z PerpScape (MIGRATED, $92,932 mcap, $34,142 5m vol): REJECT, RugCheck danger: Creator history of rugged tokens  
-  CA `2aEFMMGa6emADiboQB8PidxRCstKjYHGUUNoqcdLpump`
-- 01:04Z Slingoor (MIGRATED, $489,740 mcap, $13,869 5m vol): REJECT, RugCheck danger: Top 10 holders high ownership  
-  CA `9rZR9nCQbaiBvotWVpifN8z1vckVFshnsATuAJrXpump`
 
 ## What its skips did next (last 48h)
 A skip "ran" if the coin reached the first target (1.5x) from the skip price before a 20% drop, "dumped" if the drop came first. Sampled every 10 min, followed 6h.
-- too new / sniping: blocked 55, ran 12, dumped 43, flat 0, open 0 (saving losses: keep it)
+- too new / sniping: blocked 54, ran 11, dumped 43, flat 0, open 0 (saving losses: keep it)
   - ran: onlypump up to 1.92x  
     CA `J73efZvH6rkrJbFJdP2rqe473YJW7tyWmrNARUSzpump`
   - ran: paws up to 1.51x  
     CA `CCF6ui6YjjhLaVtuYLH8b5jza8jHathqww5VbrMapump`
   - ran: VETOTRUMP up to 1.66x  
     CA `6g16UK4wHoFhC7PCmw8LYYCdt9q8m99fyoAwxeCrpump`
-- top 10 over 25%: blocked 48, ran 5, dumped 35, flat 3, open 5 (saving losses: keep it)
+- top 10 over 25%: blocked 48, ran 5, dumped 37, flat 3, open 3 (saving losses: keep it)
   - ran: TIPPER up to 1.55x  
     CA `3DEcz7AnmJiGSnDHYvUeX5uPMMHVcDwqrWRSGdHEpump`
   - ran: Capri up to 1.84x  
@@ -135,7 +135,7 @@ A skip "ran" if the coin reached the first target (1.5x) from the skip price bef
     CA `ChCi2x2bpevrNyeRoPHLXHzmaCdGQPuU15CNqxY1pump`
   - ran: Bitboy up to 1.6x  
     CA `GvXhSHnWrkAasjAUZeRzRfUBV2BJiiduaHarCWAEpump`
-- flow below pace: blocked 21, ran 4, dumped 16, flat 0, open 1 (saving losses: keep it)
+- flow below pace: blocked 23, ran 4, dumped 16, flat 0, open 3 (saving losses: keep it)
   - ran: Ahsoka up to 1.54x  
     CA `4nuj5NLHMtQSezfmz6CwBpCRJisFie6F6MxNNz1dpump`
   - ran: KOROSUKE up to 1.54x  
@@ -187,10 +187,10 @@ A skip "ran" if the coin reached the first target (1.5x) from the skip price bef
 The meta right now is fresh pumpswap graduates under an hour old soaking up most of the volume. Ansum ($46k, $56k on the 5m, $1M in the last hour), ascend ($53k, 0h old) and PerpScape ($85k, 6 min old) are all pulling $40k+ per 5 minutes with 0.55–0.6 buy ratios. The GTA6 animal theme is fading: GATO is -10% on the hour and RICO -8%, both on thin 5m volume. Thanksgiving is starting early, the way metas get front-run before holidays (V5): TURKEY is +40% on the hour and $GIVING keeps getting mentioned, but TURKEY's 5m volume is only $2.7k, under the V1/V6 bar, so it's early and unproven. The tiny pump.fun spikes are already dead (MINTLINGS, Shopifi, HYPER, Bear). $LAPTOP is a political-figure coin and it already crashed 98% on day one, so I won't touch it (V13). Setups I'd research now: Ansum as MIGRATED once it's about 10% off its local high, per the owner's new rule. Slingoor as a DIP: $490k, -42% on the hour, but 5m volume is about 3x the hourly pace with 0.67 buys, so attention is still there and the 0.7x gate clears. PerpScape and ascend go on the watchlist until they're old enough to have a chart I'm not sniping (V5, V6). PerpScape's name suggests a tech/perps idea, so it needs a GitHub check before I call it more than a LARP (V1). Hard lines and the 35% max risk stay put, whatever the deadline.
 
 ## Moving most in its scans, last 30 min (1h volume)
-- Ansum: $368,168 1h vol, $13,552 mcap, -92% 1h  
-  CA `8fpZM9y8UxmFQnXScNbzYKBpkeRJ4AzA6aDCdoRpump`
-- WASTED: $358,886 1h vol, $820,452 mcap, -38% 1h  
-  CA `GexThZHgaswpAQ7Fi8QrHFubjPimUNSYhJiAA7XZpump`
+- ascend: $1,017,007 1h vol, $174,635 mcap, +386% 1h  
+  CA `8vFdgGFWkKS1euogVW4qmMurdnso8CPrfQNpB4qqpump`
+- Wanted: $391,665 1h vol, $242,683 mcap, +473% 1h  
+  CA `8oUGdPdyxVaCSJSZpcVZuxqoyiZAmc2Z22FsDRZ3pump`
 - ANON: $304,164 1h vol, $83,962 mcap, +94% 1h  
   CA `CcDxdWZknjKxucq6SgQtHSc5w1amottoBkheaaePpump`
 - OnlyCats: $280,871 1h vol, $232,790 mcap, +401% 1h  
