@@ -1,13 +1,13 @@
 # Trencher live report
 
-Updated 2026-11-03T21:00:03Z (paper trading, never real money)
+Updated 2026-11-03T21:15:17Z (paper trading, never real money)
 
 - Equity: $74.23 (-25.8% vs $100 start)
 - Closed trades: 22, 3 wins
 - Fees paid: $14.78 (axiom $2.81, network $9.18, pool $2.66), plus $4.15 lost to slippage
 - New trades: WATCH-ONLY (scans and decides, buys nothing)
-- Brain: subscription, claude-haiku-5-5 for routine calls, claude-opus-5-5 for the daily review; 465 routine calls and 1 plan-limit hits in 48h
-- Watch log: 135 coins being followed, 134 filed, 0 would-buys (6h follow, sampled every 2 min)
+- Brain: subscription, claude-haiku-5-5 for routine calls, claude-opus-5-5 for the daily review; 466 routine calls and 1 plan-limit hits in 48h
+- Watch log: 136 coins being followed, 139 filed, 0 would-buys (6h follow, sampled every 2 min)
 
 ## Scorecard (after fees)
 - 22 closed, 3 won (14%), net $-25.79
@@ -73,9 +73,21 @@ Updated 2026-11-03T21:00:03Z (paper trading, never real money)
   CA `H4gHnZ3NCU7Z9XQwGX6YYJNyieGEW8pqwGRUcdSxpump`
 
 ## Last scan
-- 20:58Z: 7 coins, 7 with pairs, 1 passed the market filters, 1 researched
+- 21:14Z: 3 coins, 3 with pairs, 0 passed the market filters, 0 researched
 
 ## Coins it looked at, and why it passed
+- 21:13Z STONKCAT (MIGRATED, $260,616 mcap, $29,087 5m vol): PASS at conviction 3, PASS: spiking into the high on a 11-minute-old coin with no printed higher low, and the stonk/cat theme is pacing at 0.69x. Blocker: "chasing spike" (V1, V6).  
+  CA `7135AgJW8Qqh8sDveTGdVZhjSAjeBsbw8tpeVb38pump`
+- 21:09Z Rise (MIGRATED, $45,064 mcap, $8,717 5m vol): PASS at conviction 3, PASS: Rise is 8% off a two-minute-old high with no printed higher low, a 5-day-old domain selling an AI-agent credit story with no GitHub, and no buzz anywhere. Blockers: chasing, too new, no higher low (V1, V3, V6, V13).  
+  CA `BHuxfp9qjCNuhSHXmgVbEy7tGV58YRZzVMpLamXGpump`
+- 21:08Z Sexbot (MIGRATED, $54,544 mcap, $36,329 5m vol): REJECT, Top 10 hold 28.1% ex-pool (>25%) (V13)  
+  CA `6Na6huTtPekKeeJpmtpq8mw2ZVAC2qCaRBj8KeB4pump`
+- 21:05Z MSTRT (MIGRATED, $102,442 mcap, $13,458 5m vol): PASS at conviction 3, PASS. Chasing spike: up 143% on the 5m with no printed higher low, and the narrative is a two-coin MSTR-style stub. (V1, V6)  
+  CA `2nUaDdA3TvSFVx2EENX3WxWc2AYiEKo7xJU2jzYrpump`
+- 21:04Z CHATCOIN (MIGRATED, $132,459 mcap, $5,058 5m vol): REJECT, RugCheck danger: Large Amount of LP Unlocked 100.00%  
+  CA `ChatbxK32pGJ3Gm6ga36aHzXiJ1w2EmhJ3m8jA5UCoiN`
+- 21:00Z GATO (MIGRATED, $10,978,182 mcap, $16,336 5m vol): REJECT, Dev holds 3.3% (>1%) (V13, V17)  
+  CA `HsprHxBRgiVaQdRf3TnKNuZZtaX9JUSPgMFdAkk6pump`
 - 20:59Z SEXYANSEM (MIGRATED, $273,552 mcap, $67,637 5m vol): REJECT, Dev holds 2.5% (>1%) (V13, V17)  
   CA `7B85zY7xFXypiEZ2W4YsPQ8AP9V5TYV8Na9aoB16pump`
 - 20:57Z ANONVOYAGE (MIGRATED, $2,296,631 mcap, $6,709 5m vol): REJECT, Bundles: 10 linked wallet cluster(s) hold 50.3% of supply (>20%) (V17)  
@@ -84,47 +96,37 @@ Updated 2026-11-03T21:00:03Z (paper trading, never real money)
   CA `BHzH8z58Vx2WiKBR2AGCNfYm54s1YnqHr8Z1YxS3pump`
 - 20:53Z Mag (DIP, $351,788 mcap, $32,006 5m vol): REJECT, Dip with fading attention is a falling knife, not a dip (5m at 0.20x the hour's pace, under 0.6x)  
   CA `AxPzkSJKU3ACqZu7qpq8ov29g4BENZBM4SAZwUUUFo8M`
-- 20:51Z WOOP (DIP, $130,342 mcap, $3,663 5m vol): REJECT, Top 10 hold 28.4% ex-pool (>25%) (V13)  
-  CA `2724239D1JhWQGV5WZ7tdBTN5Jz4FZ3pdmvj3iD4LsVE`
-- 20:47Z Ahsoka (DIP, $764,036 mcap, $2,679 5m vol): PASS at conviction 3, PASS: deep dip on a coin with no live story. No catalyst, theme flow at 0.87x pace, site doesn't show the CA. Blockers: "no narrative" and "theme pace below 1x." (V1, V13)  
-  CA `4nuj5NLHMtQSezfmz6CwBpCRJisFie6F6MxNNz1dpump`
-- 20:41Z meganfox (FINAL_STRETCH, $28,229 mcap, $16,697 5m vol): PASS at conviction 2, PASS: chasing spike. 5m up 236%, 2% off a peak that's 8x its hourly low, on a sawtooth chart, with a celebrity name and no official link. (V1, V3, V6, V13)  
-  CA `21sLaTZeDqZJ41ss14MZ7SmrvWgdH2x3xRgV7ZS2B5FP`
-- 20:39Z Pog (DIP, $44,664 mcap, $31,175 5m vol): PASS at conviction 2, PASS — 18 copies of "pog", the theme's 5m flow is 0.09x its hourly pace, no catalyst, and the chart is a saw-tooth with sellers ahead (44% buys). Blocker: theme pace and vamp field (V1, V3, V6).  
-  CA `JcPLcB4WN61b2i6cZctiXW2R9AYCAKCQo6tqFVNpump`
-- 20:38Z CHOOBOT (MIGRATED, $114,571 mcap, $12,750 5m vol): PASS at conviction 3, PASS: sells are 442 to 64 in the last 5m and nothing has printed a higher low. The bottom-buy rule also fails on narrative. Copy of a rescue-dog story with no catalyst. (V1, V6)  
-  CA `CMPgvtyfyQwXGeT8hDFGqegm5ehvJnmti7LMadjvpump`
-- 20:35Z Dacity (MIGRATED, $6,964,222 mcap, $4,653 5m vol): REJECT, Bundles: 10 linked wallet cluster(s) hold 24.0% of supply (>20%) (V17)  
-  CA `nxPqZ4F7ux8Vph5NFu25rEP6Kx9Gr1U6Fmj36Rjpump`
 
 ## What its skips did next (last 48h)
 A skip "ran" if the coin reached the first target (1.5x) from the skip price before a 20% drop, "dumped" if the drop came first. Sampled every 10 min, followed 6h.
-- too new / sniping: blocked 61, ran 12, dumped 48, flat 0, open 1 (saving losses: keep it)
+- too new / sniping: blocked 62, ran 12, dumped 48, flat 0, open 2 (saving losses: keep it)
   - ran: VETOTRUMP up to 1.66x  
     CA `6g16UK4wHoFhC7PCmw8LYYCdt9q8m99fyoAwxeCrpump`
   - ran: Anakinius up to 1.93x  
     CA `2pKpMwUQXNZeAf93LoomnZSworH3ezFzweCiuvrppump`
   - ran: CLIPPED up to 1.65x  
     CA `Bxyp4L6EbDys4fo51qxMEQTx41sj6McnsbPZTdvipump`
-- top 10 over 25%: blocked 55, ran 9, dumped 42, flat 2, open 2 (saving losses: keep it)
+- top 10 over 25%: blocked 56, ran 9, dumped 42, flat 2, open 3 (saving losses: keep it)
   - ran: GODHOUSE up to 3.19x  
     CA `CSGTuLtWhCfGZ5S5TvASQ6a5su91NCfRpNqfPczfpump`
   - ran: KYBER up to 1.83x  
     CA `BasL6j1MNkjFyuvRRFsmbm3bKqFPr6Yg3UhShii6pump`
   - ran: WIF up to 1.67x  
     CA `E7ayy5Se6gjwCNtw9NP629AucnTgqab4SSmSxDpUpump`
-- flow below pace: blocked 45, ran 8, dumped 31, flat 2, open 4 (saving losses: keep it)
+- flow below pace: blocked 45, ran 8, dumped 32, flat 2, open 3 (saving losses: keep it)
   - ran: KOROSUKE up to 1.54x  
     CA `7ha4HFgdvkXaDcR2biCsuBpoCZzoLSRjb5we34Gbpump`
   - ran: CAPY up to 1.51x  
     CA `DBPTU2oKLDHXQjAEJ3rZi8bUGmt2uxUbipgg6xmXoMqr`
   - ran: ZERO up to 1.61x  
     CA `Aes6XNH9BboLZuchD5PnDwaX6Zj1nU79TU3gNtPEpump`
-- near the high / chasing: blocked 36, ran 2, dumped 28, flat 4, open 2 (saving losses: keep it)
+- near the high / chasing: blocked 38, ran 3, dumped 28, flat 4, open 3 (saving losses: keep it)
   - ran: underdog up to 1.64x  
     CA `BZXh2LcnNNyypxsdfVeFzXawqmoGoSShC5i4NEQQpump`
   - ran: LUCIA up to 1.83x  
     CA `Cbtnpg6SL9jvZxtZTYYFPtVQXkuuqSUxCU5aXeTkpump`
+  - ran: meganfox up to 2.46x  
+    CA `21sLaTZeDqZJ41ss14MZ7SmrvWgdH2x3xRgV7ZS2B5FP`
 - falling knife (code): blocked 29, ran 5, dumped 21, flat 1, open 2 (saving losses: keep it)
   - ran: VETOTRUMP up to 1.66x  
     CA `6g16UK4wHoFhC7PCmw8LYYCdt9q8m99fyoAwxeCrpump`
@@ -132,21 +134,21 @@ A skip "ran" if the coin reached the first target (1.5x) from the skip price bef
     CA `GoDSW31bTxfkoup9yA1qcGGx9RMXdTEWgApv3xzBmoA`
   - ran: PEACE up to 1.75x  
     CA `BngAfLZxaWN2QvpFhRbUHydYGr8zA7YTSA178G8Epump`
-- RugCheck danger: blocked 26, ran 3, dumped 20, flat 1, open 2 (saving losses: keep it)
+- RugCheck danger: blocked 27, ran 3, dumped 21, flat 1, open 2 (saving losses: keep it)
   - ran: COLLECTOR up to 1.62x  
     CA `6kKETm8xPeZ2z1DBYjXmxMTFAJudvGHJvRHu5Wt8uGtf`
   - ran: GTA up to 1.74x  
     CA `G6F6SYSUAUxsnKLyeRW29hE5A4BGCbw91x7HMPySpump`
   - ran: Wanted up to 1.53x  
     CA `8oUGdPdyxVaCSJSZpcVZuxqoyiZAmc2Z22FsDRZ3pump`
-- bundles over the line: blocked 21, ran 3, dumped 15, flat 0, open 3 (saving losses: keep it)
+- bundles over the line: blocked 21, ran 4, dumped 15, flat 0, open 2 (saving losses: keep it)
   - ran: Nuts up to 1.53x  
     CA `APH9FRoKst66E4a7uZXcEfE8NjtwybUC8Jq7ue8upump`
   - ran: NA up to 1.97x  
     CA `9ZmdP8q22ebRhEkcwd5EDkitu7ypeDFXTQXpv2kUpump`
   - ran: MAMESUKE up to 1.95x  
     CA `SCGBBnSwnekytGFHgyeHHxPMiN7xDxsWFGg9JgFSTNK`
-- falling knife / no higher low: blocked 16, ran 1, dumped 11, flat 2, open 2 (saving losses: keep it)
+- falling knife / no higher low: blocked 15, ran 1, dumped 10, flat 2, open 2 (saving losses: keep it)
   - ran: HEDGE up to 1.77x  
     CA `wDSAqt4tEZpDAwB9XY6ejkZvMFuT1zUMjUh67txeYhf`
 - thin 5m volume: blocked 14, ran 3, dumped 6, flat 3, open 2 (saving losses: keep it)
@@ -156,11 +158,13 @@ A skip "ran" if the coin reached the first target (1.5x) from the skip price bef
     CA `7uwr9Zoz8WW9UyRVC22nmmAXRbPoFTUpVjsN8q7kids`
   - ran: 404 up to 1.89x  
     CA `9gKArqT6qp3goHfuwAnfG7LioqwUtJ8TFu7P1Bhbpump`
-- dev share over 1%: blocked 11, ran 2, dumped 5, flat 1, open 3 (saving losses: keep it)
+- dev share over 1%: blocked 11, ran 3, dumped 5, flat 1, open 2 (mixed)
   - ran: Firecube up to 1.88x  
     CA `Ebih1KdijjpQBaM83gUfGhRtTCpHzDkBZhCZedZwpump`
   - ran: HUND  up to 1.63x  
     CA `HAjc6B1MfdjnYPiB2xcETPb25kb85Pxg9nq9i4D5pump`
+  - ran: SEXYANSEM up to 1.69x  
+    CA `7B85zY7xFXypiEZ2W4YsPQ8AP9V5TYV8Na9aoB16pump`
 
 ## Daily review (2026-11-03, claude-opus-5-5)
 There's no positive after-cost edge yet. The 13 settled coins averaged -6.7% net under the simple plan, which is about +3.6% gross minus a 10.3% round-trip cost. The best bucket, MIGRATED, is break-even at -0.4% (n=8). With a 1.5x target, a -20% stop and about 10% cost, a winner nets about +40% and a loser about -30%, so a coin has to hit the target first about 43% of the time just to break even. Nothing big enough to trust gets there: the whole set is at 31% and MIGRATED at 37.5%. With n=13 the confidence intervals run roughly ±25 points, and the simulator flatters losses (see data issues), so the real numbers are probably worse. The routine model logged zero would-buys, so there's nothing to compare against the coins it passed on. Its PASSes did worse (-20.5% net, n=7) than the coins the checklist rejected (+9.4%, n=6). So passing was mostly right, but that gap rests on 2–3 coins (3/6 vs 1/7 ran, Fisher p≈0.3). It also passed on the day's two best runners, LIFEVAL at 4.2x and XDG at 2.7x.
@@ -203,11 +207,11 @@ The trenches are trading a stonk-and-person-name launch burst, and it's rising. 
 ## Moving most in its scans, last 30 min (1h volume)
 - Mag: $1,970,142 1h vol, $363,563 mcap, +720% 1h  
   CA `AxPzkSJKU3ACqZu7qpq8ov29g4BENZBM4SAZwUUUFo8M`
-- Pog: $416,896 1h vol, $39,960 mcap, +9% 1h  
-  CA `JcPLcB4WN61b2i6cZctiXW2R9AYCAKCQo6tqFVNpump`
 - MAIN: $331,096 1h vol, $41,424 mcap, +12% 1h  
   CA `BHzH8z58Vx2WiKBR2AGCNfYm54s1YnqHr8Z1YxS3pump`
-- mag: $200,872 1h vol, $2,282 mcap, -99% 1h  
-  CA `BZYkZXtHNK7g1ZQ26iNgkLe1ufDrLUX8EcCGLGF7pump`
-- SEXYANSEM: $188,972 1h vol, $273,552 mcap, +457% 1h  
-  CA `7B85zY7xFXypiEZ2W4YsPQ8AP9V5TYV8Na9aoB16pump`
+- STONKINU: $289,440 1h vol, $1,700 mcap, -96% 1h  
+  CA `796Jj7bdqkqGmYaUQq9QTvjB6eBkEkkjHQ4LdVJJpump`
+- STONKCAT: $216,064 1h vol, $260,616 mcap, +527% 1h  
+  CA `7135AgJW8Qqh8sDveTGdVZhjSAjeBsbw8tpeVb38pump`
+- Sexbot: $213,975 1h vol, $54,539 mcap, +49% 1h  
+  CA `6Na6huTtPekKeeJpmtpq8mw2ZVAC2qCaRBj8KeB4pump`
