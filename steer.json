@@ -1,5 +1,5 @@
 {
- "pause_new_trades": false,
+ "pause_new_trades": true,
  "settings": {
   "take_initials_multiple": 1.5,
   "trailing_stop_pct": 35,
