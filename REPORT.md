@@ -1,13 +1,13 @@
 # Trencher live report
 
-Updated 2026-11-03T04:50:04Z (paper trading, never real money)
+Updated 2026-11-03T05:05:24Z (paper trading, never real money)
 
 - Equity: $74.23 (-25.8% vs $100 start)
-- Goal: $1,000 by 2026-11-05 05:03Z (pressing for it): at 7.4% of it, 2 days left, needs +264.9% a day from here
+- Goal: $1,000 by 2026-11-05 05:03Z (pressing for it): at 7.4% of it, 2 days left, needs +267.4% a day from here
 - Closed trades: 22, 3 wins
 - Fees paid: $14.78 (axiom $2.81, network $9.18, pool $2.66), plus $4.15 lost to slippage
 - New trades: on
-- Brain: subscription, 465 calls and 1 plan-limit hits in 48h
+- Brain: subscription, 462 calls and 1 plan-limit hits in 48h
 
 ## Scorecard (after fees)
 - 22 closed, 3 won (14%), net $-25.79
@@ -74,9 +74,13 @@ Updated 2026-11-03T04:50:04Z (paper trading, never real money)
   CA `H4gHnZ3NCU7Z9XQwGX6YYJNyieGEW8pqwGRUcdSxpump`
 
 ## Last scan
-- 04:49Z: 2 coins, 1 with pairs, 0 passed the market filters, 0 researched
+- 05:04Z: 2 coins, 1 with pairs, 1 passed the market filters, 1 researched
 
 ## Coins it looked at, and why it passed
+- 05:05Z METEORITE (MIGRATED, $171,458 mcap, $22,301 5m vol): PASS at conviction 4, PASS: 19% off the high is breakout territory, but flow is 0.92x pace, sellers lead 126 to 93, and it's an AI tool with no GitHub. No breakout. (V1, V6)  
+  CA `67RBmGztx8ciVyWr8yi6R8fwrc3EG86XejYT7mespump`
+- 05:00Z RICO (DIP, $339,848 mcap, $1,706 5m vol): REJECT, 5m volume $1,706 is dead (<$2,000) (V1)  
+  CA `8kuQg3WivDtL85VEdw2jEmSXjYt6EEeYBATJ4DtQpump`
 - 04:40Z MAMESUKE (DIP, $1,066,067 mcap, $4,173 5m vol): REJECT, Bundles: 5 linked wallet cluster(s) hold 65.9% of supply (>20%) (V17)  
   CA `SCGBBnSwnekytGFHgyeHHxPMiN7xDxsWFGg9JgFSTNK`
 - 04:40Z WASTED (DIP, $983,984 mcap, $6,080 5m vol): REJECT, Dev holds 3.5% (>1%) (V13, V17)  
@@ -93,39 +97,28 @@ Updated 2026-11-03T04:50:04Z (paper trading, never real money)
   CA `31SYoqWFhx3i9UsfnoXTjFp4ZwJA8F8UPrMxymfDpump`
 - 04:20Z SMUGLY (DIP, $310,784 mcap, $10,103 5m vol): PASS at conviction 3, PASS — clean holders, but theme flow is at 0.77x pace and there's no catalyst. Bottom-buy gate fails. No higher low yet either (V1, V6).  
   CA `DayjoyjxCA2SVTApEW7oBFG3WMvrYZRMjAnqsetLpump`
-- 04:20Z MEM (MIGRATED, $110,289 mcap, $12,247 5m vol): PASS at conviction 3, PASS: 5m flow is at 0.31x the hourly pace and this isn't even the MEM leader. The crowd is leaving this pair. Blocker: flow below pace (V1, V6).  
-  CA `8UdrZzuCPbZAY2tiSErRED2KUrggJaRxEsHrzgWLpump`
-- 04:20Z METEORITE (MIGRATED, $127,480 mcap, $26,687 5m vol): PASS at conviction 3, PASS — 9.3% off a 22-minute-old high, sells beating buys, AI site with no GitHub. Chasing a fresh spike on a probable LARP (V1, V6).  
-  CA `67RBmGztx8ciVyWr8yi6R8fwrc3EG86XejYT7mespump`
 
 ## What its skips did next (last 48h)
 A skip "ran" if the coin reached the first target (1.5x) from the skip price before a 20% drop, "dumped" if the drop came first. Sampled every 10 min, followed 6h.
-- top 10 over 25%: blocked 54, ran 8, dumped 43, flat 2, open 1 (saving losses: keep it)
-  - ran: TIPPER up to 1.55x  
-    CA `3DEcz7AnmJiGSnDHYvUeX5uPMMHVcDwqrWRSGdHEpump`
-  - ran: Capri up to 1.84x  
-    CA `6qhnbvdJuWVUQ7EQpgz5GNraV7pty7cqc8MmfQTEpump`
-  - ran: PEAKY up to 1.53x  
-    CA `2EQxezWgXPRU6V3UD7DKr5m12mxqeFGPWNRx9wbqy9fC`
-- too new / sniping: blocked 54, ran 10, dumped 43, flat 0, open 1 (saving losses: keep it)
+- too new / sniping: blocked 54, ran 11, dumped 43, flat 0, open 0 (saving losses: keep it)
   - ran: paws up to 1.51x  
     CA `CCF6ui6YjjhLaVtuYLH8b5jza8jHathqww5VbrMapump`
   - ran: VETOTRUMP up to 1.66x  
     CA `6g16UK4wHoFhC7PCmw8LYYCdt9q8m99fyoAwxeCrpump`
   - ran: Anakinius up to 1.93x  
     CA `2pKpMwUQXNZeAf93LoomnZSworH3ezFzweCiuvrppump`
+- top 10 over 25%: blocked 53, ran 8, dumped 42, flat 2, open 1 (saving losses: keep it)
+  - ran: TIPPER up to 1.55x  
+    CA `3DEcz7AnmJiGSnDHYvUeX5uPMMHVcDwqrWRSGdHEpump`
+  - ran: Capri up to 1.84x  
+    CA `6qhnbvdJuWVUQ7EQpgz5GNraV7pty7cqc8MmfQTEpump`
+  - ran: PEAKY up to 1.53x  
+    CA `2EQxezWgXPRU6V3UD7DKr5m12mxqeFGPWNRx9wbqy9fC`
 - near the high / chasing: blocked 42, ran 2, dumped 36, flat 3, open 1 (saving losses: keep it)
   - ran: BLUE up to 1.53x  
     CA `CPoGSmcjprCvzA2MFYLJMpQkGjmgVzKg4RVwMdrzpump`
   - ran: PIRATE up to 2.27x  
     CA `gzQXRwGRzfKLHfaV1f84QT7e5mt4vevu7MgacEfpump`
-- RugCheck danger: blocked 31, ran 7, dumped 23, flat 0, open 1 (saving losses: keep it)
-  - ran: AIC up to 1.6x  
-    CA `2T9WZjVC6L3BvusUtjKDT6HcZeEYgU9T5xhfJQxFpump`
-  - ran: ZECRET up to 1.62x  
-    CA `ChCi2x2bpevrNyeRoPHLXHzmaCdGQPuU15CNqxY1pump`
-  - ran: Bitboy up to 1.6x  
-    CA `GvXhSHnWrkAasjAUZeRzRfUBV2BJiiduaHarCWAEpump`
 - falling knife (code): blocked 30, ran 5, dumped 22, flat 2, open 1 (saving losses: keep it)
   - ran: BLUE up to 1.53x  
     CA `CPoGSmcjprCvzA2MFYLJMpQkGjmgVzKg4RVwMdrzpump`
@@ -133,7 +126,14 @@ A skip "ran" if the coin reached the first target (1.5x) from the skip price bef
     CA `6g16UK4wHoFhC7PCmw8LYYCdt9q8m99fyoAwxeCrpump`
   - ran: STEALTH up to 1.77x  
     CA `GoDSW31bTxfkoup9yA1qcGGx9RMXdTEWgApv3xzBmoA`
-- flow below pace: blocked 25, ran 5, dumped 19, flat 1, open 0 (saving losses: keep it)
+- RugCheck danger: blocked 30, ran 6, dumped 23, flat 0, open 1 (saving losses: keep it)
+  - ran: AIC up to 1.6x  
+    CA `2T9WZjVC6L3BvusUtjKDT6HcZeEYgU9T5xhfJQxFpump`
+  - ran: ZECRET up to 1.62x  
+    CA `ChCi2x2bpevrNyeRoPHLXHzmaCdGQPuU15CNqxY1pump`
+  - ran: Bitboy up to 1.6x  
+    CA `GvXhSHnWrkAasjAUZeRzRfUBV2BJiiduaHarCWAEpump`
+- flow below pace: blocked 26, ran 5, dumped 19, flat 1, open 1 (saving losses: keep it)
   - ran: Ahsoka up to 1.54x  
     CA `4nuj5NLHMtQSezfmz6CwBpCRJisFie6F6MxNNz1dpump`
   - ran: KOROSUKE up to 1.54x  
@@ -148,7 +148,7 @@ A skip "ran" if the coin reached the first target (1.5x) from the skip price bef
 - falling knife / no higher low: blocked 13, ran 1, dumped 9, flat 3, open 0 (saving losses: keep it)
   - ran: HEDGE up to 1.77x  
     CA `wDSAqt4tEZpDAwB9XY6ejkZvMFuT1zUMjUh67txeYhf`
-- thin 5m volume: blocked 11, ran 2, dumped 3, flat 5, open 1 (mixed)
+- thin 5m volume: blocked 12, ran 2, dumped 3, flat 5, open 2 (mixed)
   - ran: CUMFACE up to 1.55x  
     CA `J1D3X8znX4AzUPMHVWyBLNHqBBqWDPNSjX4KwK3Qpump`
   - ran: KIDS up to 1.73x  
@@ -185,13 +185,13 @@ A skip "ran" if the coin reached the first target (1.5x) from the skip price bef
 The meta is memes about memecoins, on fresh pumpswap graduates under 2.5 hours old. MEM "Memecoin" ($110k, 0.9h, $16k on the 5m, +151% on the hour), Memestock ($30k, 0.1h, $42k on the 5m) and SMUGLY ($479k, 2.3h, $14k on the 5m) are the coins getting the flow. Two themes are fading. Political names are dead: MAGACREW went from $115k to $1.8k (-99%), and Hunter Biden's $LAPTOP is crashing in the headlines, so that's a stay-away whatever happens (V13). GTA6 is flat too: GATO at $12M with $4.6k on the 5m, WASTED at $1k. Most fresh graduates are corpses within an hour (SLUDGE -91%, GOAT -70%, DOB -70%), so being early only works on the original with live volume. The setups I'd look at are all MIGRATED. First is MEM, the plainest version of the joke, with the most volume and buys/sells balanced at 0.48; I buy a pullback of about 10% off the local high, not a green candle. Second is SMUGLY, which has cooled to +18% on the hour, same pullback rule. Memestock is a PASS: it's already -28% and sitting at ~$30k, right where bonded coins go to die (V1, V6). The owner's push to be aggressive changes my size on clean setups. It doesn't move the hard lines, and every one of these still has to pass the holder, dev and bundle checks.
 
 ## Moving most in its scans, last 30 min (1h volume)
-- MEM: $465,404 1h vol, $125,555 mcap, +179% 1h  
-  CA `8UdrZzuCPbZAY2tiSErRED2KUrggJaRxEsHrzgWLpump`
-- Memestock: $190,165 1h vol, $116,235 mcap, +200% 1h  
-  CA `9hKJb9YEf5RYb4f71Xr3Kr86hZq86Xad5X7gdyv1pump`
-- METEORITE: $181,073 1h vol, $127,480 mcap, +234% 1h  
+- METEORITE: $292,408 1h vol, $181,823 mcap, +100% 1h  
   CA `67RBmGztx8ciVyWr8yi6R8fwrc3EG86XejYT7mespump`
-- SMUGLY: $157,488 1h vol, $320,117 mcap, -28% 1h  
-  CA `DayjoyjxCA2SVTApEW7oBFG3WMvrYZRMjAnqsetLpump`
-- LeTwerk: $143,083 1h vol, $101,304 mcap, +161% 1h  
-  CA `GtRH3cGYWPLLjjvcgMV1Fb3Jd25rhGRQmXgwu79Npump`
+- GATO: $87,763 1h vol, $12,977,475 mcap, +4% 1h  
+  CA `HsprHxBRgiVaQdRf3TnKNuZZtaX9JUSPgMFdAkk6pump`
+- coon: $84,867 1h vol, $14,396 mcap, +362% 1h  
+  CA `FkkQroBqQ85vpNkUwbJ6qvUDX7Rn5PKb8szyT6Etpump`
+- Beast: $72,487 1h vol, $2,411 mcap, -93% 1h  
+  CA `6dqMUCteaLvBPEHJfvwc3RGgFhY4ThPrRMY6MHqwpump`
+- Graft: $47,850 1h vol, $13,425 mcap, -64% 1h  
+  CA `HQUk9fNaMUn3jPGsbBKdbmWBF2D1JCc3VaoP5GGhpump`
