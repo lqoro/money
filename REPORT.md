@@ -1,13 +1,13 @@
 # Trencher live report
 
-Updated 2026-11-03T09:54:54Z (paper trading, never real money)
+Updated 2026-11-03T10:10:00Z (paper trading, never real money)
 
 - Equity: $74.23 (-25.8% vs $100 start)
 - Closed trades: 22, 3 wins
 - Fees paid: $14.78 (axiom $2.81, network $9.18, pool $2.66), plus $4.15 lost to slippage
 - New trades: WATCH-ONLY (scans and decides, buys nothing)
 - Brain: subscription, claude-haiku-5-5 for routine calls, claude-opus-5-5 for the daily review; 447 routine calls and 1 plan-limit hits in 48h
-- Watch log: 63 coins being followed, 0 filed, 0 would-buys (6h follow, sampled every 2 min)
+- Watch log: 66 coins being followed, 0 filed, 0 would-buys (6h follow, sampled every 2 min)
 
 ## Scorecard (after fees)
 - 22 closed, 3 won (14%), net $-25.79
@@ -73,9 +73,15 @@ Updated 2026-11-03T09:54:54Z (paper trading, never real money)
   CA `H4gHnZ3NCU7Z9XQwGX6YYJNyieGEW8pqwGRUcdSxpump`
 
 ## Last scan
-- 09:53Z: 2 coins, 2 with pairs, 0 passed the market filters, 0 researched
+- 10:09Z: 5 coins, 5 with pairs, 1 passed the market filters, 1 researched
 
 ## Coins it looked at, and why it passed
+- 10:09Z SPHERE (DIP, $711,116 mcap, $3,825 5m vol): PASS at conviction 3, PASS: SPHERE is a 17-copy "Project Sphere" field with 5m flow at 0.62x pace, no catalyst and a 0.5-day-old site that doesn't show this CA. Blocker: flow below pace (V1, V6, V13).  
+  CA `31SYoqWFhx3i9UsfnoXTjFp4ZwJA8F8UPrMxymfDpump`
+- 10:08Z 김여정 (MIGRATED, $75,574 mcap, $60,164 5m vol): PASS at conviction 2, PASS: chasing spike. 5m volume is 7.2x the hourly pace, the coin is 10 minutes old, and no higher low has printed. It's also one of 9 same-ticker copies with no catalyst. Wait (V1, V6).  
+  CA `3imKAhTuUakBCGK1aXxihc13Qe5prGzQb7eWMn1gpump`
+- 10:03Z MAMESUKE (DIP, $1,124,930 mcap, $3,394 5m vol): REJECT, Bundles: 5 linked wallet cluster(s) hold 66.3% of supply (>20%) (V17)  
+  CA `SCGBBnSwnekytGFHgyeHHxPMiN7xDxsWFGg9JgFSTNK`
 - 09:48Z GENESIS (MIGRATED, $56,222 mcap, $21,982 5m vol): PASS at conviction 3, PASS: chasing spike, too new, target too close. GENESIS is one of 12 copies of a generic word with no radar mention, and its first resistance is only 1.14x away. (V1, V6, V13)  
   CA `9W7Dyv9CV9UhwKfW9gCuYoPncAY8M3EScLiD8ZHemDAr`
 - 09:47Z OMBRO (MIGRATED, $224,629 mcap, $25,233 5m vol): PASS at conviction 3, PASS: OMBRO is the cleanest holder table I've seen this hour, but its 5m flow is 0.67x pace and nothing is bottoming. Blocker: "flow below pace," plus "bottom buy, no catalyst." (V1, V6)  
@@ -90,12 +96,6 @@ Updated 2026-11-03T09:54:54Z (paper trading, never real money)
   CA `9rZR9nCQbaiBvotWVpifN8z1vckVFshnsATuAJrXpump`
 - 09:31Z WASTED (DIP, $1,483,595 mcap, $2,351 5m vol): REJECT, Dev holds 3.5% (>1%) (V13, V17)  
   CA `GexThZHgaswpAQ7Fi8QrHFubjPimUNSYhJiAA7XZpump`
-- 09:24Z SPHERE (DIP, $701,546 mcap, $11,442 5m vol): PASS at conviction 3, PASS: no catalyst, no story. A 0.5-day-old generic name with 14 copies and a clean chart is still a bounce bet, not a trade. (V1, V3, V13)  
-  CA `31SYoqWFhx3i9UsfnoXTjFp4ZwJA8F8UPrMxymfDpump`
-- 09:18Z RATIO (MIGRATED, $58,437 mcap, $2,119 5m vol): REJECT, Top 10 hold 26.5% ex-pool (>25%) (V13)  
-  CA `3JdeP1VBHgRPunmjTj1D6w6ZZePwGAwjUr2tCufwpump`
-- 09:17Z MAMESUKE (DIP, $1,071,098 mcap, $4,563 5m vol): REJECT, Bundles: 5 linked wallet cluster(s) hold 66.0% of supply (>20%) (V17)  
-  CA `SCGBBnSwnekytGFHgyeHHxPMiN7xDxsWFGg9JgFSTNK`
 
 ## What its skips did next (last 48h)
 A skip "ran" if the coin reached the first target (1.5x) from the skip price before a 20% drop, "dumped" if the drop came first. Sampled every 10 min, followed 6h.
@@ -106,14 +106,14 @@ A skip "ran" if the coin reached the first target (1.5x) from the skip price bef
     CA `6qhnbvdJuWVUQ7EQpgz5GNraV7pty7cqc8MmfQTEpump`
   - ran: PEAKY up to 1.53x  
     CA `2EQxezWgXPRU6V3UD7DKr5m12mxqeFGPWNRx9wbqy9fC`
-- too new / sniping: blocked 51, ran 8, dumped 42, flat 0, open 1 (saving losses: keep it)
+- too new / sniping: blocked 51, ran 8, dumped 41, flat 0, open 2 (saving losses: keep it)
   - ran: VETOTRUMP up to 1.66x  
     CA `6g16UK4wHoFhC7PCmw8LYYCdt9q8m99fyoAwxeCrpump`
   - ran: Anakinius up to 1.93x  
     CA `2pKpMwUQXNZeAf93LoomnZSworH3ezFzweCiuvrppump`
   - ran: CLIPPED up to 1.65x  
     CA `Bxyp4L6EbDys4fo51qxMEQTx41sj6McnsbPZTdvipump`
-- near the high / chasing: blocked 38, ran 2, dumped 31, flat 3, open 2 (saving losses: keep it)
+- near the high / chasing: blocked 38, ran 2, dumped 32, flat 3, open 1 (saving losses: keep it)
   - ran: BLUE up to 1.53x  
     CA `CPoGSmcjprCvzA2MFYLJMpQkGjmgVzKg4RVwMdrzpump`
   - ran: PIRATE up to 2.27x  
@@ -139,7 +139,7 @@ A skip "ran" if the coin reached the first target (1.5x) from the skip price bef
     CA `6g16UK4wHoFhC7PCmw8LYYCdt9q8m99fyoAwxeCrpump`
   - ran: STEALTH up to 1.77x  
     CA `GoDSW31bTxfkoup9yA1qcGGx9RMXdTEWgApv3xzBmoA`
-- bundles over the line: blocked 19, ran 2, dumped 13, flat 2, open 2 (saving losses: keep it)
+- bundles over the line: blocked 19, ran 2, dumped 14, flat 2, open 1 (saving losses: keep it)
   - ran: Nuts up to 1.53x  
     CA `APH9FRoKst66E4a7uZXcEfE8NjtwybUC8Jq7ue8upump`
   - ran: NA up to 1.97x  
@@ -190,9 +190,9 @@ Meta read from scan_movers: the money is in pump.fun coins under an hour old. OM
   CA `Bmn5qFwQHxteaoM1et9FLdHsi52DmuXZyzWinih8pump`
 - OMBRO: $452,075 1h vol, $224,629 mcap, +112% 1h  
   CA `8DB8Fw5UiC1AzugQAfRyw3qL8omw772LJbdehNWhpump`
-- FBI: $225,370 1h vol, $1,826 mcap, -99% 1h  
-  CA `EAqmgSTREypN7rgsPinZzzzG8NwtqwZAvbgMhnxmpump`
 - ABDUL: $175,734 1h vol, $137,143 mcap, +254% 1h  
   CA `94exwLui2KfAzYnbATkX8iKh4tcjMDW6YwckkSJVpump`
-- 1WIN: $135,540 1h vol, $16,953,748 mcap, +3% 1h  
+- 1WIN: $114,180 1h vol, $16,567,926 mcap, -1% 1h  
   CA `FjPKUGnF5zBpdEv18gT8FJCtxh3MKrFkoeYekgYr1win`
+- 김여정: $100,772 1h vol, $75,574 mcap, +97% 1h  
+  CA `3imKAhTuUakBCGK1aXxihc13Qe5prGzQb7eWMn1gpump`
