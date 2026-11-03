@@ -1,12 +1,12 @@
 {
- "updated_at": "2026-11-03T06:06:04Z",
+ "updated_at": "2026-11-03T06:21:11Z",
  "paused_new_trades": true,
  "brain": {
   "mode": "subscription",
   "paused_until": null,
   "usage_48h": {
    "hours": 48,
-   "brain_calls": 455,
+   "brain_calls": 451,
    "plan_limit_hits": 1,
    "candidates_skipped_no_brain": 7,
    "stop_reviews_without_brain": 0
@@ -571,8 +571,8 @@
  ],
  "learned_rules": "- **The money shape rates 8, or 9 if the radar shows the story still climbing and mcap is under ~$1M.** It looks like this: a MIGRATED coin leading on 5m volume, 25\u201345% off its local high, a printed higher low above the hourly low, 5m flow at or above the hourly pace, more buys than sells, top 10 under 15%, low RugCheck bundles. Both real winners looked like this (CATBOT 4.44x, FLOATER 2.19x, both under $1M) (V1, V6, V13). Rate it what it earns so code sizes it up (owner goal).\n- **Owner floor: 7 under ~$1M mcap.** If the hard lines pass, flow is live (5m \u2265 $10k and at or above pace), a higher low is printed and the first resistance is \u22651.5x away, rate it 7 or higher. Don't dock points for things the checklist already measured.\n- **The MIGRATED buy zone is 10\u201360% off the local high** (owner rule). Within 10% of the high is a PASS, blocker \"chasing\" (42 skips: 3 ran, 36 dumped).\n- **The shallow band (10\u201325% off the high) is a breakout trade, capped at 7.** It must be the 5m volume leader, pushing into the high right now, with flow at or above pace. Otherwise PASS, blocker \"no breakout\".\n- **A spike counts as chasing anywhere in the zone.** If the last 5m candle is up more than 25% or 5m volume is more than 3x the hourly pace, wait for a retrace and a printed higher low. Blocker \"chasing spike\" (PILLSEY).\n- **On MIGRATED, flow below pace or no printed higher low is a PASS, never a probe.** A printed higher low means three things: a bounce off the hourly low, a pullback that holds above it, and price back above that bounce's high. A buy share, a fib touch or a first green candle is not one. Blockers \"flow below pace\" / \"no higher low\" (Slingoor, ANAKIN, BLUE, SI, AAPLCAT never got past 1.01x).\n- **Buy close to the structure.** Enter only within ~12% above the printed higher low, so the thesis breaks before the hard stop. Further above it is a mid-range entry: wait for a pullback or PASS, blocker \"mid-range\". Stops fill around \u221230 to \u221238%, not \u221220%, so entry distance is the real risk control.\n- **Rate on the first resistance (prior high, POC or 0.618).** At \u22651.5x away it can rate 8\u20139. At 1.3\u20131.5x the cap is 7. Under 1.3x is a PASS, blocker \"target too close\" (PAWCAT, SWAN).\n- **Above ~$1M mcap, a probe (6) is the most you take.** Only take it if the first resistance is \u22651.5x away and a breakout with flow at or above pace is printing right now. Otherwise PASS, blocker \"big cap, no room\" (1 green in 10).\n- **A migration under 1h old that is still bleeding off its bond spike waits for a base above the hourly low.** Blocker \"too new\" (50 skips: 9 ran, 41 dumped).\n- **In a vamp field, buy only the leader by 5m volume and radar mentions.** A bundle cluster inside a big same-ticker field is a PASS, blocker \"split crowd\" (V1, V3).\n- **A DIP needs all of these:** a 40\u201370% drawdown, 5m flow at least 0.7x the hourly pace (owner gate, no \"rising\" needed), the story still on the radar, and a printed higher low with entry within ~12% of it. If all pass, size by conviction (7\u20138 when clean). A DIP whose catalyst already printed (news, rebrand) is a probe (6) at most until it reclaims its pullback high. A thin tech/LARP story is a PASS, blocker \"dead story\" (HEXN x2, SIS; DIPs 0 for 5).\n- **Hard blocks:** top 10 over 25%, dev over 1%, bundles or insiders over the line, mint or freeze authority live, LP not burned, a political figure, RugCheck danger, any hack/exploit/drain story (V6, V13, V17, owner). Name the blocker in every PASS.\n- **If RugCheck didn't load, it's a probe at most (6), not a block.** That needs the dossier's top-10 and dev numbers clean, mcap under $1M and the rest in the money shape. Say bundles are unverified.\n- **Manage the trade; stops sell with no review.** If the printed higher low breaks, sell. If it hasn't reached 1.05x by minute 10 with flow under pace, exit. If it's green before initials and 5m volume drops under half the hourly pace, sell half. At the time stop, exit; the only extension is one 15-minute window while a volume surge at or above pace is printing. Re-enter a stopped-out coin only once, and only when it reclaims its prior high with flow at or above pace (re-entries 0 for 4).\n",
  "meta": {
-  "age_minutes": 7,
-  "meta_summary": "The meta right now is fresh PumpSwap graduates about an hour old, $150k\u2013$250k caps, with jokes about celebrities and about memecoins themselves. The celebrity-parody wave is rising: LeTwerk James ($153k, +121% on the hour, $27.8k on the 5m, buy ratio 0.64) and the brand-new World's Hardest Worker ($40k, 6 minutes old, $39k on the 5m). The memecoin/market-parody wave is mixed. Memestock is the live one ($235k, +283%, $25k on the 5m, flow balanced at 0.53). The crawler's own pick MEM has already died ($9k, -93%), and SMUGLY is fading (-55% on the hour, under $10k on the 5m). So the meta summary above it is stale and I'm not using it. Also fading or dead: anything political ($LAPTOP, MAGACREW, stay away per V13), GTA6 (GATO flat at $3.8k on the 5m), and most 1-hour corpses (Beast, Graft, Fartcoin2). Setups I'd research, all MIGRATED: LeTwerk first, because it has the strongest buyer share and a joke anyone gets. Then Memestock, but only on a pullback of about 10% off the local high, not at the top of a +283% candle. METEORITE has volume ($23.6k) but sellers lead at 0.43, so it's a watch until buyers come back. WORKER is 6 minutes old and still finding a price, so I won't snipe it (V5). Owner's push noted: clean setups that pass the hard lines and the holder, dev and bundle checks get real size, but a conviction number still has to be earned, not handed out.",
+  "age_minutes": 2,
+  "meta_summary": "The meta is PumpSwap graduates about 2 hours old, and the jokes are about memecoins themselves and celebrity parodies. That wave is already cooling. The crawler's summary is stale: LeTwerk James, which it calls the leader, has rugged to $1.8k (-99% on the hour, zero 5m volume), and WORKER has fallen to $1.4k on the 5m with a vamp (Ollybee) already dead next to it. Memestock is the live one. It sits at $122k, down 47% off its high, with $22.6k on the 5m and buyers at 0.60. That 5m is about 0.69x its hourly pace, just under the 0.7x DIP gate, so it's a DIP I'd research and could buy if volume holds there and the holder and bundle checks come back clean. METEORITE ($199k, +14%) has buyers and sellers split evenly at 0.50 and its 5m is down to about 0.37x its hourly pace, so it's fading and I'm not chasing it. The GTA6 animal coins (GATO, RICO) are flat and political coins are a hard no (V13). Sketchy Cat (+461% at $15k, 18 minutes old) is too new to touch (V5).",
   "top_narratives": [
    "binance",
    "hack",
@@ -580,50 +580,54 @@
    "code",
    "referral",
    "referral code",
-   "trump",
    "app",
+   "trump",
    "newuser50",
-   "guide",
    "fees",
+   "guide",
    "stock",
    "tokenized",
-   "theft",
-   "outflows",
    "app referral",
+   "outflows",
+   "theft",
    "hunter",
    "platform",
    "exchange",
-   "pepe"
+   "wallet"
   ],
   "trending_categories": [
-   "Liquid Staking Governance Tokens",
-   "Parallelized EVM",
-   "Exchange-based Tokens",
-   "Governance",
+   "Privacy Coins",
+   "Automated Market Maker (AMM)",
+   "Robotics",
    "Alleged SEC Securities",
-   "Metaverse"
+   "The Boy\u2019s Club",
+   "Made in USA"
   ],
   "trending_coins": [
    "BTC",
-   "MON",
    "HYPE",
+   "MON",
    "NEAR",
    "LIT",
    "SOL",
-   "SUI",
-   "PENGU",
    "PEARL",
    "ZEC",
-   "RENDER",
-   "QTC",
    "KNTQ",
+   "SUI",
+   "PENGU",
+   "QTC",
    "PUMP",
-   "ZAMA"
+   "PEPE",
+   "AXIS"
   ],
   "hot_tickers": [
    {
     "ticker": "$LAPTOP",
-    "mentions": 2
+    "mentions": 3
+   },
+   {
+    "ticker": "$TRUMP",
+    "mentions": 1
    },
    {
     "ticker": "$CUMFACE",
@@ -654,17 +658,13 @@
     "mentions": 1
    },
    {
-    "ticker": "$METEORITE",
-    "mentions": 1
-   },
-   {
     "ticker": "$ONECOIN",
     "mentions": 1
    }
   ],
   "headlines": [
+   "The Dogecoin Foundation Just Delivered Fantastic News to DOGE Investors. Is This Popular Meme Coin Now Worth a Closer Look?",
    "Pepe and Shiba Inu Became Meme Coin Legends: Could Apeing's",
-   "Pump.fun Adds Polygon Support as Memecoin Platform Widens Multichain Push Beyond Solana",
    "Visa to close Crossmint memecoin rewards loophole following The Block investigation: report",
    "Hunter Biden lashes out after $LAPTOP meme coin collapse",
    "Exclusive | Hunter Biden (and His Laptop) Enter the Cryptosphere With New Meme Coin"
@@ -852,21 +852,10 @@
    }
   ]
  },
- "goal": {
-  "target_usd": 1000.0,
-  "deadline": "2026-11-05T05:03:00Z",
-  "equity_usd": 74.23,
-  "progress_pct": 7.4,
-  "days_left": 2.0,
-  "needed_daily_growth_pct": 277.9,
-  "stance": "push"
- },
+ "goal": null,
  "last_scan": {
-  "at": 1793685948.137417,
-  "tokens": 6,
-  "pairs": 3,
-  "passed_market_filters": 0,
-  "researched": 0
+  "at": 1793686810.198136,
+  "blocked": "paused from Claude Duet"
  },
  "recent_looks": [
   {
@@ -1040,8 +1029,8 @@
    "blocked": 53,
    "ran": 9,
    "dumped": 41,
-   "flat": 2,
-   "pending": 1,
+   "flat": 3,
+   "pending": 0,
    "ran_examples": [
     {
      "symbol": "TIPPER",
@@ -1173,11 +1162,17 @@
   },
   "falling knife (code)": {
    "blocked": 30,
-   "ran": 5,
+   "ran": 6,
    "dumped": 22,
    "flat": 2,
-   "pending": 1,
+   "pending": 0,
    "ran_examples": [
+    {
+     "symbol": "WASTED",
+     "ca": "GexThZHgaswpAQ7Fi8QrHFubjPimUNSYhJiAA7XZpump",
+     "best_x": 1.88,
+     "worst_x": 0.9
+    },
     {
      "symbol": "BLUE",
      "ca": "CPoGSmcjprCvzA2MFYLJMpQkGjmgVzKg4RVwMdrzpump",
@@ -1189,12 +1184,6 @@
      "ca": "6g16UK4wHoFhC7PCmw8LYYCdt9q8m99fyoAwxeCrpump",
      "best_x": 1.66,
      "worst_x": 1.0
-    },
-    {
-     "symbol": "STEALTH",
-     "ca": "GoDSW31bTxfkoup9yA1qcGGx9RMXdTEWgApv3xzBmoA",
-     "best_x": 1.77,
-     "worst_x": 0.87
     }
    ],
    "dumped_examples": [
@@ -1222,8 +1211,8 @@
    "blocked": 30,
    "ran": 6,
    "dumped": 23,
-   "flat": 0,
-   "pending": 1,
+   "flat": 1,
+   "pending": 0,
    "ran_examples": [
     {
      "symbol": "AIC",
@@ -1315,9 +1304,9 @@
   "bundles over the line": {
    "blocked": 17,
    "ran": 2,
-   "dumped": 11,
+   "dumped": 12,
    "flat": 2,
-   "pending": 2,
+   "pending": 1,
    "ran_examples": [
     {
      "symbol": "Nuts",
@@ -1392,8 +1381,8 @@
    "blocked": 13,
    "ran": 3,
    "dumped": 4,
-   "flat": 5,
-   "pending": 1,
+   "flat": 6,
+   "pending": 0,
    "ran_examples": [
     {
      "symbol": "CUMFACE",
@@ -1437,11 +1426,17 @@
   },
   "dev share over 1%": {
    "blocked": 11,
-   "ran": 2,
+   "ran": 3,
    "dumped": 5,
    "flat": 3,
-   "pending": 1,
+   "pending": 0,
    "ran_examples": [
+    {
+     "symbol": "WASTED",
+     "ca": "GexThZHgaswpAQ7Fi8QrHFubjPimUNSYhJiAA7XZpump",
+     "best_x": 1.88,
+     "worst_x": 0.9
+    },
     {
      "symbol": "MINTED",
      "ca": "9yEKBwczdqoox7Red6GGPTrJ2dUbMvFUagdjxFqHpump",
@@ -1606,8 +1601,8 @@
    "blocked": 2,
    "ran": 0,
    "dumped": 1,
-   "flat": 0,
-   "pending": 1,
+   "flat": 1,
+   "pending": 0,
    "ran_examples": [],
    "dumped_examples": [
     {
@@ -1847,11 +1842,6 @@
     "avg_peak_x": 1.4,
     "avg_banked_x": 0.99
    }
-  },
-  "goal": {
-   "target_usd": 1000.0,
-   "to_go_usd": 925.77,
-   "trades_needed_at_this_pace": null
   }
  }
 }

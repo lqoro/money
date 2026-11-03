@@ -1,13 +1,12 @@
 # Trencher live report
 
-Updated 2026-11-03T06:06:04Z (paper trading, never real money)
+Updated 2026-11-03T06:21:11Z (paper trading, never real money)
 
 - Equity: $74.23 (-25.8% vs $100 start)
-- Goal: $1,000 by 2026-11-05 05:03Z (pressing for it): at 7.4% of it, 2 days left, needs +277.9% a day from here
 - Closed trades: 22, 3 wins
 - Fees paid: $14.78 (axiom $2.81, network $9.18, pool $2.66), plus $4.15 lost to slippage
 - New trades: PAUSED by Duet
-- Brain: subscription, 455 calls and 1 plan-limit hits in 48h
+- Brain: subscription, 451 calls and 1 plan-limit hits in 48h
 
 ## Scorecard (after fees)
 - 22 closed, 3 won (14%), net $-25.79
@@ -24,7 +23,6 @@ Updated 2026-11-03T06:06:04Z (paper trading, never real money)
   - stop loss: 9, 0 won, net $-21.73, fees+slip $7.78, peak 1.08x → 0.65x
   - trailing stop: 2, 2 won, net $+4.21, fees+slip $2.04, peak 3.32x → 1.72x
   - other: 1, 0 won, net $-0.03, fees+slip $0.67, peak 1.4x → 0.99x
-- To $1,000: $925.77 to go; at $-1.17 a trade this pace doesn't get there
 
 ## Open positions
 - none
@@ -74,7 +72,7 @@ Updated 2026-11-03T06:06:04Z (paper trading, never real money)
   CA `H4gHnZ3NCU7Z9XQwGX6YYJNyieGEW8pqwGRUcdSxpump`
 
 ## Last scan
-- 06:05Z: 6 coins, 3 with pairs, 0 passed the market filters, 0 researched
+- Not opening trades: paused from Claude Duet
 
 ## Coins it looked at, and why it passed
 - 05:54Z Memestock (MIGRATED, $117,094 mcap, $21,829 5m vol): REJECT, Bundles: 9 linked wallet cluster(s) hold 24.3% of supply (>20%) (V17)  
@@ -100,7 +98,7 @@ Updated 2026-11-03T06:06:04Z (paper trading, never real money)
 
 ## What its skips did next (last 48h)
 A skip "ran" if the coin reached the first target (1.5x) from the skip price before a 20% drop, "dumped" if the drop came first. Sampled every 10 min, followed 6h.
-- top 10 over 25%: blocked 53, ran 9, dumped 41, flat 2, open 1 (saving losses: keep it)
+- top 10 over 25%: blocked 53, ran 9, dumped 41, flat 3, open 0 (saving losses: keep it)
   - ran: TIPPER up to 1.55x  
     CA `3DEcz7AnmJiGSnDHYvUeX5uPMMHVcDwqrWRSGdHEpump`
   - ran: Capri up to 1.84x  
@@ -119,14 +117,14 @@ A skip "ran" if the coin reached the first target (1.5x) from the skip price bef
     CA `CPoGSmcjprCvzA2MFYLJMpQkGjmgVzKg4RVwMdrzpump`
   - ran: PIRATE up to 2.27x  
     CA `gzQXRwGRzfKLHfaV1f84QT7e5mt4vevu7MgacEfpump`
-- falling knife (code): blocked 30, ran 5, dumped 22, flat 2, open 1 (saving losses: keep it)
+- falling knife (code): blocked 30, ran 6, dumped 22, flat 2, open 0 (saving losses: keep it)
+  - ran: WASTED up to 1.88x  
+    CA `GexThZHgaswpAQ7Fi8QrHFubjPimUNSYhJiAA7XZpump`
   - ran: BLUE up to 1.53x  
     CA `CPoGSmcjprCvzA2MFYLJMpQkGjmgVzKg4RVwMdrzpump`
   - ran: VETOTRUMP up to 1.66x  
     CA `6g16UK4wHoFhC7PCmw8LYYCdt9q8m99fyoAwxeCrpump`
-  - ran: STEALTH up to 1.77x  
-    CA `GoDSW31bTxfkoup9yA1qcGGx9RMXdTEWgApv3xzBmoA`
-- RugCheck danger: blocked 30, ran 6, dumped 23, flat 0, open 1 (saving losses: keep it)
+- RugCheck danger: blocked 30, ran 6, dumped 23, flat 1, open 0 (saving losses: keep it)
   - ran: AIC up to 1.6x  
     CA `2T9WZjVC6L3BvusUtjKDT6HcZeEYgU9T5xhfJQxFpump`
   - ran: ZECRET up to 1.62x  
@@ -140,7 +138,7 @@ A skip "ran" if the coin reached the first target (1.5x) from the skip price bef
     CA `7ha4HFgdvkXaDcR2biCsuBpoCZzoLSRjb5we34Gbpump`
   - ran: CAPY up to 1.51x  
     CA `DBPTU2oKLDHXQjAEJ3rZi8bUGmt2uxUbipgg6xmXoMqr`
-- bundles over the line: blocked 17, ran 2, dumped 11, flat 2, open 2 (saving losses: keep it)
+- bundles over the line: blocked 17, ran 2, dumped 12, flat 2, open 1 (saving losses: keep it)
   - ran: Nuts up to 1.53x  
     CA `APH9FRoKst66E4a7uZXcEfE8NjtwybUC8Jq7ue8upump`
   - ran: NA up to 1.97x  
@@ -148,14 +146,16 @@ A skip "ran" if the coin reached the first target (1.5x) from the skip price bef
 - falling knife / no higher low: blocked 14, ran 1, dumped 9, flat 3, open 1 (saving losses: keep it)
   - ran: HEDGE up to 1.77x  
     CA `wDSAqt4tEZpDAwB9XY6ejkZvMFuT1zUMjUh67txeYhf`
-- thin 5m volume: blocked 13, ran 3, dumped 4, flat 5, open 1 (mixed)
+- thin 5m volume: blocked 13, ran 3, dumped 4, flat 6, open 0 (mixed)
   - ran: CUMFACE up to 1.55x  
     CA `J1D3X8znX4AzUPMHVWyBLNHqBBqWDPNSjX4KwK3Qpump`
   - ran: RICO up to 1.56x  
     CA `8kuQg3WivDtL85VEdw2jEmSXjYt6EEeYBATJ4DtQpump`
   - ran: KIDS up to 1.73x  
     CA `7uwr9Zoz8WW9UyRVC22nmmAXRbPoFTUpVjsN8q7kids`
-- dev share over 1%: blocked 11, ran 2, dumped 5, flat 3, open 1 (saving losses: keep it)
+- dev share over 1%: blocked 11, ran 3, dumped 5, flat 3, open 0 (mixed)
+  - ran: WASTED up to 1.88x  
+    CA `GexThZHgaswpAQ7Fi8QrHFubjPimUNSYhJiAA7XZpump`
   - ran: MINTED up to 1.61x  
     CA `9yEKBwczdqoox7Red6GGPTrJ2dUbMvFUagdjxFqHpump`
   - ran: DOJAK up to 2.62x  
@@ -184,7 +184,7 @@ A skip "ran" if the coin reached the first target (1.5x) from the skip price bef
 - [2026-11-02 20:25] I expected Slingoor, a clean MIGRATED leader with $25k of 5m flow at pace and a 0.77 buy share, to retest its $408k high from $304k. It never went green (0.98x peak) and hit the -20% stop in 2 minutes, a -$2.86 probe. My own thesis admitted there was no printed higher low after a peak only 6 minutes old, so this confirms the money-shape rule: buy share and flow are not structure (V1, V6). Next time a MIGRATED pullback with no higher low above the hourly low is a PASS with blocker "no higher low", not a probe. This is one loss, so it adds no new ban beyond the rule I already have.
 
 ## Meta right now
-The meta right now is fresh PumpSwap graduates about an hour old, $150k–$250k caps, with jokes about celebrities and about memecoins themselves. The celebrity-parody wave is rising: LeTwerk James ($153k, +121% on the hour, $27.8k on the 5m, buy ratio 0.64) and the brand-new World's Hardest Worker ($40k, 6 minutes old, $39k on the 5m). The memecoin/market-parody wave is mixed. Memestock is the live one ($235k, +283%, $25k on the 5m, flow balanced at 0.53). The crawler's own pick MEM has already died ($9k, -93%), and SMUGLY is fading (-55% on the hour, under $10k on the 5m). So the meta summary above it is stale and I'm not using it. Also fading or dead: anything political ($LAPTOP, MAGACREW, stay away per V13), GTA6 (GATO flat at $3.8k on the 5m), and most 1-hour corpses (Beast, Graft, Fartcoin2). Setups I'd research, all MIGRATED: LeTwerk first, because it has the strongest buyer share and a joke anyone gets. Then Memestock, but only on a pullback of about 10% off the local high, not at the top of a +283% candle. METEORITE has volume ($23.6k) but sellers lead at 0.43, so it's a watch until buyers come back. WORKER is 6 minutes old and still finding a price, so I won't snipe it (V5). Owner's push noted: clean setups that pass the hard lines and the holder, dev and bundle checks get real size, but a conviction number still has to be earned, not handed out.
+The meta is PumpSwap graduates about 2 hours old, and the jokes are about memecoins themselves and celebrity parodies. That wave is already cooling. The crawler's summary is stale: LeTwerk James, which it calls the leader, has rugged to $1.8k (-99% on the hour, zero 5m volume), and WORKER has fallen to $1.4k on the 5m with a vamp (Ollybee) already dead next to it. Memestock is the live one. It sits at $122k, down 47% off its high, with $22.6k on the 5m and buyers at 0.60. That 5m is about 0.69x its hourly pace, just under the 0.7x DIP gate, so it's a DIP I'd research and could buy if volume holds there and the holder and bundle checks come back clean. METEORITE ($199k, +14%) has buyers and sellers split evenly at 0.50 and its 5m is down to about 0.37x its hourly pace, so it's fading and I'm not chasing it. The GTA6 animal coins (GATO, RICO) are flat and political coins are a hard no (V13). Sketchy Cat (+461% at $15k, 18 minutes old) is too new to touch (V5).
 
 ## Moving most in its scans, last 30 min (1h volume)
 - Memestock: $390,442 1h vol, $122,727 mcap, -47% 1h  
