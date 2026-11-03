@@ -1,13 +1,13 @@
 # Trencher live report
 
-Updated 2026-11-03T15:12:12Z (paper trading, never real money)
+Updated 2026-11-03T15:27:20Z (paper trading, never real money)
 
 - Equity: $74.23 (-25.8% vs $100 start)
 - Closed trades: 22, 3 wins
 - Fees paid: $14.78 (axiom $2.81, network $9.18, pool $2.66), plus $4.15 lost to slippage
 - New trades: WATCH-ONLY (scans and decides, buys nothing)
-- Brain: subscription, claude-haiku-5-5 for routine calls, claude-opus-5-5 for the daily review; 442 routine calls and 1 plan-limit hits in 48h
-- Watch log: 86 coins being followed, 53 filed, 0 would-buys (6h follow, sampled every 2 min)
+- Brain: subscription, claude-haiku-5-5 for routine calls, claude-opus-5-5 for the daily review; 444 routine calls and 1 plan-limit hits in 48h
+- Watch log: 93 coins being followed, 56 filed, 0 would-buys (6h follow, sampled every 2 min)
 
 ## Scorecard (after fees)
 - 22 closed, 3 won (14%), net $-25.79
@@ -73,33 +73,33 @@ Updated 2026-11-03T15:12:12Z (paper trading, never real money)
   CA `H4gHnZ3NCU7Z9XQwGX6YYJNyieGEW8pqwGRUcdSxpump`
 
 ## Last scan
-- 15:11Z: 1 coins, 0 with pairs, 0 passed the market filters, 0 researched
+- 15:26Z: 11 coins, 10 with pairs, 0 passed the market filters, 0 researched
 
 ## Coins it looked at, and why it passed
-- 15:10Z PMT (MIGRATED, $217,383 mcap, $44,988 5m vol): PASS at conviction 3, PASS: 17-minute-old Trump clone, up 266% in an hour and 44% on the last 5m candle, with no printed higher low. Chasing a spike (V1, V6).  
-  CA `96dzMNxHP2eJdpBr8VfR719PnQyStE31pMVTgXc6pump`
-- 15:08Z DJT (MIGRATED, $152,266 mcap, $10,460 5m vol): PASS at conviction 3, PASS: copycat field, theme pace 0.16x, and it's chasing a 288% hour with no printed higher low. Blockers: "chasing", "flow below pace", "split crowd". (V1, V6, V13)  
-  CA `2Csio9ZpB2U526YD8xusoFrTBk7y4Yu9gLtVitYcpump`
-- 15:07Z MIDTURDS (MIGRATED, $47,192 mcap, $1,270 5m vol): REJECT, 5m volume $1,270 is dead (<$2,000) (V1)  
-  CA `JCdE6KcCEUcgmhiCQfXTL11524wSgqJCnGtYDA757q4a`
-- 15:04Z DESSA (MIGRATED, $8,672,371 mcap, $12,259 5m vol): PASS at conviction 3, PASS: DESSA is a ~$8.7M migrated meme with no catalyst, no radar presence and a LARP-style AI claim. Blocker: "dead story" plus "big cap, no room" (V1, V6, V13).  
-  CA `npz2FhoufQ7pKqhGpaipYWacrAkidyW2yDpVWSvpump`
-- 15:01Z BINGUS (MIGRATED, $279,233 mcap, $68,814 5m vol): PASS at conviction 3, PASS: chasing spike, too new, and a 24-copy vamp field. BINGUS is 7 minutes old, 5% off a $294k peak, up 75% on the 5m at 8.7x the hourly pace. Not a pullback. (V1, V6, V13)  
-  CA `2HbNwnhiL8HBK5mkdrcB9nbDxknPqGmJdXrtuH5fLoat`
-- 14:58Z GTAMAS (MIGRATED, $262,957 mcap, $30,458 5m vol): REJECT, Dev holds 1.5% (>1%) (V13, V17)  
-  CA `BeUYUVw2n3hPVoKd65mUxpDCDE9eGxdbUVDNGoUPpump`
-- 14:54Z ANONVOYAGE (MIGRATED, $1,230,646 mcap, $37,163 5m vol): REJECT, Bundles: 10 linked wallet cluster(s) hold 50.3% of supply (>20%) (V17)  
-  CA `8muc9DdhqWfAPcvmEebNQCG89bLiwi12T2KtBtzVpump`
-- 14:53Z BZERO (MIGRATED, $40,621 mcap, $9,136 5m vol): PASS at conviction 2, PASS: BlockZero is under a minute old, 6% off a $43k spike with no higher low printed, $9.1k on the 5m, and a site with no GitHub on a 5-hour-old domain that doesn't show this CA. Blocker: "too new" (V1, V3, V6).  
-  CA `22ct38potNHBEUKNWPipontxQNvU4H54kdAMsQJ7pump`
-- 14:44Z SPHERE (MIGRATED, $203,040 mcap, $1,985 5m vol): REJECT, 5m volume $1,985 is dead (<$2,000) (V1)  
-  CA `31SYoqWFhx3i9UsfnoXTjFp4ZwJA8F8UPrMxymfDpump`
-- 14:44Z Pascal (FINAL_STRETCH, $20,576 mcap, $17,825 5m vol): REJECT, RugCheck danger: Creator history of rugged tokens  
-  CA `864LDRm68LQPQo1H4xMcVGozSxm5iSmFZVyW8TCgpump`
+- 15:24Z WASTED (DIP, $935,541 mcap, $2,633 5m vol): REJECT, Dev holds 3.5% (>1%) (V13, V17)  
+  CA `GexThZHgaswpAQ7Fi8QrHFubjPimUNSYhJiAA7XZpump`
+- 15:24Z RED (FINAL_STRETCH, $23,847 mcap, $5,085 5m vol): PASS at conviction 3, PASS: RED is a chasing spike, not a pullback. +65% on the 5m, 5m flow $5k (below the $10k bar) and a 17-copy "red vote" field with the theme at 0.27x pace. Blockers: chasing spike, flow below bar, no catalyst (V1, V6, V3).  
+  CA `A78rRtMTz8NpoEctuERvAZwt8rm67wAW2gmnEZUBahtD`
+- 15:20Z RICO (DIP, $473,121 mcap, $3,411 5m vol): PASS at conviction 3, PASS: no printed higher low, 5m flow $3.4k under the $10k bar, and it's the 20th copy of a fading GTA6 name. The Nov 19 date is real, but it's 16 days out and the chart is still making lower lows. Blocker: "no higher low" (V1, V6, V13).  
+  CA `8kuQg3WivDtL85VEdw2jEmSXjYt6EEeYBATJ4DtQpump`
+- 15:20Z PIRATE (DIP, $110,490 mcap, $17,026 5m vol): REJECT, Dip with fading attention is a falling knife, not a dip (5m at 0.31x the hour's pace, under 0.6x)  
+  CA `JAFQtEgsG9ezrbA2LJVv6oYZeo1svoa2VaoaZsN2pump`
+- 15:18Z KITTY (no setup, $19,004 mcap, $15,813 5m vol): REJECT, No setup fits: not Final Stretch, not a migrated runner, not a healthy dip  
+  CA `89ZLaW7uR8vf6nZjmfZ63cWWtXzt4J7uqkmLYrRFpump`
+- 15:18Z ANY (MIGRATED, $58,672 mcap, $38,330 5m vol): REJECT, Top 10 hold 27.9% ex-pool (>25%) (V13)  
+  CA `2G1uc6R97HYiuMFpbwSDitToYEPRdmQ1qk2opbtDpair`
+- 15:17Z Ahsoka (DIP, $926,324 mcap, $3,329 5m vol): PASS at conviction 2, PASS — Ahsoka is a 59.5% DIP on a fan-meme with no catalyst, no printed higher low, 5m flow at 0.75x pace and sellers still in control. Dead story, blocker "dead story" (V1, V5, V13).  
+  CA `4nuj5NLHMtQSezfmz6CwBpCRJisFie6F6MxNNz1dpump`
+- 15:16Z Dacity (MIGRATED, $7,140,819 mcap, $4,191 5m vol): REJECT, Bundles: 10 linked wallet cluster(s) hold 24.0% of supply (>20%) (V17)  
+  CA `nxPqZ4F7ux8Vph5NFu25rEP6Kx9Gr1U6Fmj36Rjpump`
+- 15:16Z GATO (MIGRATED, $10,927,183 mcap, $16,572 5m vol): REJECT, Dev holds 3.3% (>1%) (V13, V17)  
+  CA `HsprHxBRgiVaQdRf3TnKNuZZtaX9JUSPgMFdAkk6pump`
+- 15:16Z LUCIA (MIGRATED, $59,471 mcap, $79,104 5m vol): PASS at conviction 3, PASS: chasing spike, no higher low, and the story is a 19-copy vamp field with zero mentions. Nothing printed yet to buy against. (V1, V6)  
+  CA `Cbtnpg6SL9jvZxtZTYYFPtVQXkuuqSUxCU5aXeTkpump`
 
 ## What its skips did next (last 48h)
 A skip "ran" if the coin reached the first target (1.5x) from the skip price before a 20% drop, "dumped" if the drop came first. Sampled every 10 min, followed 6h.
-- top 10 over 25%: blocked 58, ran 11, dumped 44, flat 2, open 1 (saving losses: keep it)
+- top 10 over 25%: blocked 59, ran 11, dumped 44, flat 2, open 2 (saving losses: keep it)
   - ran: Capri up to 1.84x  
     CA `6qhnbvdJuWVUQ7EQpgz5GNraV7pty7cqc8MmfQTEpump`
   - ran: PEAKY up to 1.53x  
@@ -113,24 +113,26 @@ A skip "ran" if the coin reached the first target (1.5x) from the skip price bef
     CA `2pKpMwUQXNZeAf93LoomnZSworH3ezFzweCiuvrppump`
   - ran: CLIPPED up to 1.65x  
     CA `Bxyp4L6EbDys4fo51qxMEQTx41sj6McnsbPZTdvipump`
-- near the high / chasing: blocked 34, ran 1, dumped 27, flat 4, open 2 (saving losses: keep it)
+- near the high / chasing: blocked 35, ran 2, dumped 28, flat 4, open 1 (saving losses: keep it)
   - ran: underdog up to 1.64x  
     CA `BZXh2LcnNNyypxsdfVeFzXawqmoGoSShC5i4NEQQpump`
-- flow below pace: blocked 33, ran 7, dumped 22, flat 1, open 3 (saving losses: keep it)
+  - ran: LUCIA up to 1.83x  
+    CA `Cbtnpg6SL9jvZxtZTYYFPtVQXkuuqSUxCU5aXeTkpump`
+- flow below pace: blocked 35, ran 7, dumped 23, flat 1, open 4 (saving losses: keep it)
   - ran: KOROSUKE up to 1.54x  
     CA `7ha4HFgdvkXaDcR2biCsuBpoCZzoLSRjb5we34Gbpump`
   - ran: CAPY up to 1.51x  
     CA `DBPTU2oKLDHXQjAEJ3rZi8bUGmt2uxUbipgg6xmXoMqr`
   - ran: ZERO up to 1.61x  
     CA `Aes6XNH9BboLZuchD5PnDwaX6Zj1nU79TU3gNtPEpump`
-- RugCheck danger: blocked 31, ran 6, dumped 23, flat 1, open 1 (saving losses: keep it)
+- RugCheck danger: blocked 30, ran 6, dumped 23, flat 1, open 0 (saving losses: keep it)
   - ran: AIC up to 1.6x  
     CA `2T9WZjVC6L3BvusUtjKDT6HcZeEYgU9T5xhfJQxFpump`
   - ran: ZECRET up to 1.62x  
     CA `ChCi2x2bpevrNyeRoPHLXHzmaCdGQPuU15CNqxY1pump`
   - ran: Bitboy up to 1.6x  
     CA `GvXhSHnWrkAasjAUZeRzRfUBV2BJiiduaHarCWAEpump`
-- falling knife (code): blocked 27, ran 5, dumped 19, flat 1, open 2 (saving losses: keep it)
+- falling knife (code): blocked 28, ran 5, dumped 19, flat 1, open 3 (saving losses: keep it)
   - ran: VETOTRUMP up to 1.66x  
     CA `6g16UK4wHoFhC7PCmw8LYYCdt9q8m99fyoAwxeCrpump`
   - ran: STEALTH up to 1.77x  
@@ -151,12 +153,16 @@ A skip "ran" if the coin reached the first target (1.5x) from the skip price bef
     CA `7uwr9Zoz8WW9UyRVC22nmmAXRbPoFTUpVjsN8q7kids`
   - ran: 404 up to 1.89x  
     CA `9gKArqT6qp3goHfuwAnfG7LioqwUtJ8TFu7P1Bhbpump`
-- falling knife / no higher low: blocked 13, ran 1, dumped 10, flat 2, open 0 (saving losses: keep it)
+- falling knife / no higher low: blocked 14, ran 1, dumped 10, flat 2, open 1 (saving losses: keep it)
   - ran: HEDGE up to 1.77x  
     CA `wDSAqt4tEZpDAwB9XY6ejkZvMFuT1zUMjUh67txeYhf`
-- dev share over 1%: blocked 9, ran 1, dumped 4, flat 3, open 1 (saving losses: keep it)
-  - ran: Firecube up to 1.88x  
-    CA `Ebih1KdijjpQBaM83gUfGhRtTCpHzDkBZhCZedZwpump`
+- other: blocked 10, ran 4, dumped 4, flat 1, open 1 (mixed)
+  - ran: thisman up to 1.6x  
+    CA `6d6J2kWJiimgqmxjLVTu31hxDyBFt2zBguYdjSripump`
+  - ran: FEAR up to 125.22x  
+    CA `CHtXwJ3qa2ozS9vQkxhR3MmNwkoUqkh3icGXgZPepump`
+  - ran: Slingoor up to 1.58x  
+    CA `AYDL7DTa6AidQ1nUSAEAnzVAFDDewDXbSyy8Hh2wpump`
 
 ## Daily review (2026-11-03, claude-opus-5-5)
 There's no positive after-cost edge yet. The 13 settled coins averaged -6.7% net under the simple plan, which is about +3.6% gross minus a 10.3% round-trip cost. The best bucket, MIGRATED, is break-even at -0.4% (n=8). With a 1.5x target, a -20% stop and about 10% cost, a winner nets about +40% and a loser about -30%, so a coin has to hit the target first about 43% of the time just to break even. Nothing big enough to trust gets there: the whole set is at 31% and MIGRATED at 37.5%. With n=13 the confidence intervals run roughly ±25 points, and the simulator flatters losses (see data issues), so the real numbers are probably worse. The routine model logged zero would-buys, so there's nothing to compare against the coins it passed on. Its PASSes did worse (-20.5% net, n=7) than the coins the checklist rejected (+9.4%, n=6). So passing was mostly right, but that gap rests on 2–3 coins (3/6 vs 1/7 ran, Fisher p≈0.3). It also passed on the day's two best runners, LIFEVAL at 4.2x and XDG at 2.7x.
@@ -197,13 +203,13 @@ There's no positive after-cost edge yet. The 13 settled coins averaged -6.7% net
 The meta is fast and split: sub-hour pump.fun launches with joke names are where the flow is, and most of them are dying within the hour. The one new coin with real money is ANONVOYAGE (0.5h old, $662k cap, $100k 5m, 74% buys, +997% in the hour). It's parabolic, so it's a research candidate only on a pullback that holds buy ratio, not a chase. The GTA6 name is fading: GATO (1,682h old, $11.6M, 37% buys, -6.8%) is the same name bleeding, and RICO/GTA6DOG (21h, $583k, 60% buys) has only $4.9k on the 5m, below the $10k bar, so it's a watch, not a setup. Sub-hour joke and political-sounding launches (erection day, underdog, PWESIDENT, MOMOTA, Demorat, Fric, Still) are mostly down 45-97% on tiny caps; erection day's +273% is a snipe, and the $LAPTOP Hunter Biden coin is a political-figure pass. The crawler's MOGMAS isn't in the scan movers at all, and its RICO and 1WIN figures don't match the scan, so I'm using scan numbers only. The market isn't quiet, just fast and mostly bad.
 
 ## Moving most in its scans, last 30 min (1h volume)
-- ANONVOYAGE: $1,074,525 1h vol, $1,238,317 mcap, +150% 1h  
-  CA `8muc9DdhqWfAPcvmEebNQCG89bLiwi12T2KtBtzVpump`
-- 1WIN: $339,147 1h vol, $16,740,326 mcap, -6% 1h  
+- PIRATE: $635,234 1h vol, $110,398 mcap, +69% 1h  
+  CA `JAFQtEgsG9ezrbA2LJVv6oYZeo1svoa2VaoaZsN2pump`
+- 1WIN: $314,885 1h vol, $17,164,602 mcap, -5% 1h  
   CA `FjPKUGnF5zBpdEv18gT8FJCtxh3MKrFkoeYekgYr1win`
 - PMT: $248,631 1h vol, $217,383 mcap, +266% 1h  
   CA `96dzMNxHP2eJdpBr8VfR719PnQyStE31pMVTgXc6pump`
-- HI: $233,248 1h vol, $90,243 mcap, +148% 1h  
-  CA `6JrsviCgzki77Zr35RBGYpuKDGo628hDYDCuB7mBpump`
+- JIFFPOM: $243,461 1h vol, $1,731 mcap, -96% 1h  
+  CA `HjkX6rLUAsiKYZ1hwkD4TV1bsEoXgkSjVTF4gHSmpump`
 - DJT: $211,393 1h vol, $152,266 mcap, +287% 1h  
   CA `2Csio9ZpB2U526YD8xusoFrTBk7y4Yu9gLtVitYcpump`
