@@ -1,13 +1,13 @@
 # Trencher live report
 
-Updated 2026-11-03T07:22:06Z (paper trading, never real money)
+Updated 2026-11-03T07:37:20Z (paper trading, never real money)
 
 - Equity: $74.23 (-25.8% vs $100 start)
 - Closed trades: 22, 3 wins
 - Fees paid: $14.78 (axiom $2.81, network $9.18, pool $2.66), plus $4.15 lost to slippage
 - New trades: WATCH-ONLY (scans and decides, buys nothing)
 - Brain: subscription, claude-haiku-5-5 for routine calls, claude-opus-5-5 for the daily review; 453 routine calls and 1 plan-limit hits in 48h
-- Watch log: 23 coins being followed, 0 filed, 0 would-buys (6h follow, sampled every 2 min)
+- Watch log: 25 coins being followed, 0 filed, 0 would-buys (6h follow, sampled every 2 min)
 
 ## Scorecard (after fees)
 - 22 closed, 3 won (14%), net $-25.79
@@ -73,9 +73,13 @@ Updated 2026-11-03T07:22:06Z (paper trading, never real money)
   CA `H4gHnZ3NCU7Z9XQwGX6YYJNyieGEW8pqwGRUcdSxpump`
 
 ## Last scan
-- 07:21Z: 1 coins, 0 with pairs, 0 passed the market filters, 0 researched
+- 07:36Z: 4 coins, 3 with pairs, 1 passed the market filters, 1 researched
 
 ## Coins it looked at, and why it passed
+- 07:36Z RATIO (MIGRATED, $71,293 mcap, $17,976 5m vol): REJECT, Top 10 hold 28.0% ex-pool (>25%) (V13)  
+  CA `3JdeP1VBHgRPunmjTj1D6w6ZZePwGAwjUr2tCufwpump`
+- 07:25Z LIFEVAL (MIGRATED, $154,357 mcap, $44,009 5m vol): REJECT, Bundles: 10 linked wallet cluster(s) hold 33.0% of supply (>20%) (V17)  
+  CA `Bmn5qFwQHxteaoM1et9FLdHsi52DmuXZyzWinih8pump`
 - 07:18Z DESSA (DIP, $13,073,665 mcap, $2,838 5m vol): PASS at conviction 2, PASS: DESSA is a $13M meme with $2.8k of 5m flow and no catalyst. Dead story at a big cap. Blocker "dead story" (V1, V6).  
   CA `npz2FhoufQ7pKqhGpaipYWacrAkidyW2yDpVWSvpump`
 - 07:14Z BEES (FINAL_STRETCH, $22,373 mcap, $2,117 5m vol): REJECT, Top 10 hold 30.3% ex-pool (>25%) (V13)  
@@ -92,14 +96,10 @@ Updated 2026-11-03T07:22:06Z (paper trading, never real money)
   CA `FjPKUGnF5zBpdEv18gT8FJCtxh3MKrFkoeYekgYr1win`
 - 07:08Z SPHERE (DIP, $800,446 mcap, $12,734 5m vol): PASS at conviction 2, PASS — 51% off a $1.65M high, but no catalyst, no story on the radar, a 10-hour-old website and 18 same-ticker copies. Blocker: "no catalyst / dead story." Bottom buy with nothing behind it (V1, V13).  
   CA `31SYoqWFhx3i9UsfnoXTjFp4ZwJA8F8UPrMxymfDpump`
-- 07:06Z PumpFun (DIP, $64,573 mcap, $16,256 5m vol): REJECT, Dip with fading attention is a falling knife, not a dip (5m at 0.58x the hour's pace, under 0.6x)  
-  CA `9X5UwHT7gWSPtAH5yeEzrLHqv3Nedmhy3HyZN3Yspump`
-- 07:04Z UNPOOLED (MIGRATED, $89,861 mcap, $21,144 5m vol): PASS at conviction 3, PASS: target too close and too new. The first resistance is only 1.12x away, and it's a 24-minute-old spike with no base. (V1, V6)  
-  CA `FxQ5GbqCBxNHDpFTpiL9RDVHiP58ar5nMkR3eMwepump`
 
 ## What its skips did next (last 48h)
 A skip "ran" if the coin reached the first target (1.5x) from the skip price before a 20% drop, "dumped" if the drop came first. Sampled every 10 min, followed 6h.
-- top 10 over 25%: blocked 53, ran 9, dumped 40, flat 3, open 1 (saving losses: keep it)
+- top 10 over 25%: blocked 54, ran 9, dumped 40, flat 3, open 2 (saving losses: keep it)
   - ran: TIPPER up to 1.55x  
     CA `3DEcz7AnmJiGSnDHYvUeX5uPMMHVcDwqrWRSGdHEpump`
   - ran: Capri up to 1.84x  
@@ -132,24 +132,24 @@ A skip "ran" if the coin reached the first target (1.5x) from the skip price bef
     CA `6g16UK4wHoFhC7PCmw8LYYCdt9q8m99fyoAwxeCrpump`
   - ran: STEALTH up to 1.77x  
     CA `GoDSW31bTxfkoup9yA1qcGGx9RMXdTEWgApv3xzBmoA`
-- flow below pace: blocked 27, ran 6, dumped 18, flat 1, open 2 (saving losses: keep it)
+- flow below pace: blocked 27, ran 7, dumped 19, flat 1, open 0 (saving losses: keep it)
   - ran: Ahsoka up to 1.54x  
     CA `4nuj5NLHMtQSezfmz6CwBpCRJisFie6F6MxNNz1dpump`
   - ran: KOROSUKE up to 1.54x  
     CA `7ha4HFgdvkXaDcR2biCsuBpoCZzoLSRjb5we34Gbpump`
   - ran: CAPY up to 1.51x  
     CA `DBPTU2oKLDHXQjAEJ3rZi8bUGmt2uxUbipgg6xmXoMqr`
-- bundles over the line: blocked 18, ran 2, dumped 12, flat 2, open 2 (saving losses: keep it)
+- bundles over the line: blocked 19, ran 2, dumped 12, flat 2, open 3 (saving losses: keep it)
   - ran: Nuts up to 1.53x  
     CA `APH9FRoKst66E4a7uZXcEfE8NjtwybUC8Jq7ue8upump`
   - ran: NA up to 1.97x  
     CA `9ZmdP8q22ebRhEkcwd5EDkitu7ypeDFXTQXpv2kUpump`
-- thin 5m volume: blocked 13, ran 2, dumped 4, flat 5, open 2 (saving losses: keep it)
+- thin 5m volume: blocked 13, ran 2, dumped 5, flat 5, open 1 (saving losses: keep it)
   - ran: CUMFACE up to 1.55x  
     CA `J1D3X8znX4AzUPMHVWyBLNHqBBqWDPNSjX4KwK3Qpump`
   - ran: KIDS up to 1.73x  
     CA `7uwr9Zoz8WW9UyRVC22nmmAXRbPoFTUpVjsN8q7kids`
-- falling knife / no higher low: blocked 13, ran 1, dumped 9, flat 2, open 1 (saving losses: keep it)
+- falling knife / no higher low: blocked 13, ran 1, dumped 10, flat 2, open 0 (saving losses: keep it)
   - ran: HEDGE up to 1.77x  
     CA `wDSAqt4tEZpDAwB9XY6ejkZvMFuT1zUMjUh67txeYhf`
 - dev share over 1%: blocked 12, ran 3, dumped 5, flat 3, open 1 (mixed)
@@ -186,13 +186,13 @@ A skip "ran" if the coin reached the first target (1.5x) from the skip price bef
 Meta right now is fresh anonymous/crime-flavored pump.fun runners (AnonCrime, Anonymous Dog, fog, WASTED), with pump.fun self-referential jokes (PumpFun, unpooled, Dollar, perpetual) fading behind them. AnonCrime is the cleanest mover: $78k cap, $23k 5m, 0.57 buy ratio, +104% 1h, 18 min old. fog's $29.5k 5m on a $9k cap and XDG's -43% look like farm or fade, not a setup. PumpFun is -33% on the hour, and GATO and 1WIN are flat, so the old coins are not the meta. Research AnonCrime as a MIGRATED-style setup (check holders and bundles, initials at 2x, stop at -30%). SPHERE ($800k, $12.7k 5m, 0.70 buys, +7% 1h) is the other one to research. Dollar, Steve and the sub-$10k lottery tickets are New Pairs-range noise, so I'd pass. The crawler's LeTwerk and Memestock calls aren't in the movers, so I'm not counting them.
 
 ## Moving most in its scans, last 30 min (1h volume)
-- PumpFun: $333,655 1h vol, $64,216 mcap, -33% 1h  
-  CA `9X5UwHT7gWSPtAH5yeEzrLHqv3Nedmhy3HyZN3Yspump`
-- UNPOOLED: $181,081 1h vol, $89,861 mcap, +141% 1h  
-  CA `FxQ5GbqCBxNHDpFTpiL9RDVHiP58ar5nMkR3eMwepump`
+- LIFEVAL: $637,832 1h vol, $164,106 mcap, +118% 1h  
+  CA `Bmn5qFwQHxteaoM1et9FLdHsi52DmuXZyzWinih8pump`
 - AnonCrime: $141,634 1h vol, $78,541 mcap, +104% 1h  
   CA `4NPHWnrS9UjtGKkt4iAc5EQQ2zD1LsYJxeXRvGJZpump`
 - 1WIN: $135,997 1h vol, $16,662,870 mcap, -6% 1h  
   CA `FjPKUGnF5zBpdEv18gT8FJCtxh3MKrFkoeYekgYr1win`
-- GATO: $135,371 1h vol, $13,408,107 mcap, +5% 1h  
-  CA `HsprHxBRgiVaQdRf3TnKNuZZtaX9JUSPgMFdAkk6pump`
+- XDG: $109,527 1h vol, $87,653 mcap, -43% 1h  
+  CA `J1pZjNKh4BnbXBsroE4acJv3TYzCGxTn46VrZii6orEZ`
+- WASTED: $98,275 1h vol, $1,491,354 mcap, -10% 1h  
+  CA `GexThZHgaswpAQ7Fi8QrHFubjPimUNSYhJiAA7XZpump`
