@@ -1,13 +1,13 @@
 # Trencher live report
 
-Updated 2026-11-03T00:47:06Z (paper trading, never real money)
+Updated 2026-11-03T01:02:13Z (paper trading, never real money)
 
 - Equity: $74.23 (-25.8% vs $100 start)
-- Goal: $1,000 by 2026-11-05 05:03Z (pressing for it): at 7.4% of it, 2.2 days left, needs +230.1% a day from here
+- Goal: $1,000 by 2026-11-05 05:03Z (pressing for it): at 7.4% of it, 2.2 days left, needs +232% a day from here
 - Closed trades: 22, 3 wins
 - Fees paid: $14.78 (axiom $2.81, network $9.18, pool $2.66), plus $4.15 lost to slippage
 - New trades: on
-- Brain: subscription, 490 calls and 0 plan-limit hits in 48h
+- Brain: subscription, 486 calls and 0 plan-limit hits in 48h
 
 ## Scorecard (after fees)
 - 22 closed, 3 won (14%), net $-25.79
@@ -74,9 +74,15 @@ Updated 2026-11-03T00:47:06Z (paper trading, never real money)
   CA `H4gHnZ3NCU7Z9XQwGX6YYJNyieGEW8pqwGRUcdSxpump`
 
 ## Last scan
-- 00:46Z: 7 coins, 2 with pairs, 0 passed the market filters, 0 researched
+- 01:01Z: 10 coins, 6 with pairs, 0 passed the market filters, 0 researched
 
 ## Coins it looked at, and why it passed
+- 00:57Z ascend (MIGRATED, $41,281 mcap, $24,416 5m vol): PASS at conviction 3, PASS: ascend migrated under 2 minutes ago and is already 32% off its bond spike. There's no base and no higher low, and 23 other coins share the ticker. Blocker: too new. (V1, V6)  
+  CA `8vFdgGFWkKS1euogVW4qmMurdnso8CPrfQNpB4qqpump`
+- 00:55Z 1WIN (MIGRATED, $20,171,012 mcap, $5,306 5m vol): REJECT, RugCheck danger: Freeze Authority still enabled  
+  CA `FjPKUGnF5zBpdEv18gT8FJCtxh3MKrFkoeYekgYr1win`
+- 00:49Z KYBER (FINAL_STRETCH, $21,838 mcap, $2,771 5m vol): REJECT, Top 10 hold 34.5% ex-pool (>25%) (V13)  
+  CA `BasL6j1MNkjFyuvRRFsmbm3bKqFPr6Yg3UhShii6pump`
 - 00:41Z TURKEY (MIGRATED, $63,203 mcap, $2,538 5m vol): REJECT, Top 10 hold 28.4% ex-pool (>25%) (V13)  
   CA `8VdrHbx444YZJZp1vNb9pXAv5aW4Kv7E7bk7Zwaapump`
 - 00:40Z Ansum (MIGRATED, $45,777 mcap, $56,480 5m vol): PASS at conviction 2, PASS — 47-min-old migration down 81% off its peak and −53% on the last 5m, no base, flow under pace, 6 bigger same-ticker coins. Too new, still bleeding. (V1, V6)  
@@ -91,30 +97,24 @@ Updated 2026-11-03T00:47:06Z (paper trading, never real money)
   CA `GexThZHgaswpAQ7Fi8QrHFubjPimUNSYhJiAA7XZpump`
 - 00:27Z FEAR (no setup, $11,045 mcap, $2,937 5m vol): REJECT, No setup fits: not Final Stretch, not a migrated runner, not a healthy dip  
   CA `CHtXwJ3qa2ozS9vQkxhR3MmNwkoUqkh3icGXgZPepump`
-- 00:24Z Slingoor (FINAL_STRETCH, $19,111 mcap, $58,265 5m vol): REJECT, Top 10 hold 45.1% ex-pool (>25%) (V13)  
-  CA `FydUK4ArdkSNNnvUv1hsJ8PfE4x3Pw3YQjLUK4Vpump`
-- 00:23Z Normie (MIGRATED, $39,715 mcap, $2,589 5m vol): REJECT, Top 10 hold 30.8% ex-pool (>25%) (V13)  
-  CA `6KCWfcpUDFKutmVGbV9DvBZbHRasXG8Rwa1RHoa4pump`
-- 00:16Z GLITCH (MIGRATED, $3,658,679 mcap, $2,378 5m vol): REJECT, Top 10 hold 28.1% ex-pool (>25%) (V13)  
-  CA `8Xg89xT8Ve34sKiYqYuMs46mycREsCA2F362UscRpump`
 
 ## What its skips did next (last 48h)
 A skip "ran" if the coin reached the first target (1.5x) from the skip price before a 20% drop, "dumped" if the drop came first. Sampled every 10 min, followed 6h.
-- too new / sniping: blocked 53, ran 11, dumped 41, flat 0, open 1 (saving losses: keep it)
+- too new / sniping: blocked 54, ran 12, dumped 41, flat 0, open 1 (saving losses: keep it)
   - ran: onlypump up to 1.92x  
     CA `J73efZvH6rkrJbFJdP2rqe473YJW7tyWmrNARUSzpump`
   - ran: paws up to 1.51x  
     CA `CCF6ui6YjjhLaVtuYLH8b5jza8jHathqww5VbrMapump`
   - ran: VETOTRUMP up to 1.66x  
     CA `6g16UK4wHoFhC7PCmw8LYYCdt9q8m99fyoAwxeCrpump`
-- top 10 over 25%: blocked 46, ran 5, dumped 36, flat 3, open 2 (saving losses: keep it)
+- top 10 over 25%: blocked 47, ran 5, dumped 36, flat 3, open 3 (saving losses: keep it)
   - ran: TIPPER up to 1.55x  
     CA `3DEcz7AnmJiGSnDHYvUeX5uPMMHVcDwqrWRSGdHEpump`
   - ran: Capri up to 1.84x  
     CA `6qhnbvdJuWVUQ7EQpgz5GNraV7pty7cqc8MmfQTEpump`
   - ran: PEAKY up to 1.53x  
     CA `2EQxezWgXPRU6V3UD7DKr5m12mxqeFGPWNRx9wbqy9fC`
-- near the high / chasing: blocked 44, ran 2, dumped 36, flat 5, open 1 (saving losses: keep it)
+- near the high / chasing: blocked 43, ran 2, dumped 35, flat 5, open 1 (saving losses: keep it)
   - ran: BLUE up to 1.53x  
     CA `CPoGSmcjprCvzA2MFYLJMpQkGjmgVzKg4RVwMdrzpump`
   - ran: PIRATE up to 2.27x  
@@ -148,7 +148,7 @@ A skip "ran" if the coin reached the first target (1.5x) from the skip price bef
 - falling knife / no higher low: blocked 13, ran 1, dumped 9, flat 2, open 1 (saving losses: keep it)
   - ran: HEDGE up to 1.77x  
     CA `wDSAqt4tEZpDAwB9XY6ejkZvMFuT1zUMjUh67txeYhf`
-- dev share over 1%: blocked 11, ran 3, dumped 5, flat 2, open 1 (mixed)
+- dev share over 1%: blocked 11, ran 3, dumped 5, flat 3, open 0 (mixed)
   - ran: WASTED up to 2.33x  
     CA `GexThZHgaswpAQ7Fi8QrHFubjPimUNSYhJiAA7XZpump`
   - ran: MINTED up to 1.61x  
@@ -189,11 +189,11 @@ The crawler's summary is out of date: TikTok dog rugged (now $1.8k, -98.8% 1h, z
 ## Moving most in its scans, last 30 min (1h volume)
 - Ansum: $1,033,338 1h vol, $45,777 mcap, +24% 1h  
   CA `8fpZM9y8UxmFQnXScNbzYKBpkeRJ4AzA6aDCdoRpump`
-- WASTED: $269,486 1h vol, $500,669 mcap, -63% 1h  
-  CA `GexThZHgaswpAQ7Fi8QrHFubjPimUNSYhJiAA7XZpump`
-- GATO: $152,624 1h vol, $11,867,244 mcap, -14% 1h  
+- walter: $128,627 1h vol, $13,175 mcap, -73% 1h  
+  CA `CHjgAurRkfkcoJpiFCVhpU7uxbm1jKkDcNcnG64xpump`
+- GATO: $126,589 1h vol, $11,691,336 mcap, -15% 1h  
   CA `HsprHxBRgiVaQdRf3TnKNuZZtaX9JUSPgMFdAkk6pump`
-- GLITCH: $72,598 1h vol, $3,640,533 mcap, +6% 1h  
-  CA `8Xg89xT8Ve34sKiYqYuMs46mycREsCA2F362UscRpump`
-- Slingoor: $58,265 1h vol, $19,111 mcap, +86% 1h  
-  CA `FydUK4ArdkSNNnvUv1hsJ8PfE4x3Pw3YQjLUK4Vpump`
+- 1WIN: $80,626 1h vol, $20,168,166 mcap, +1% 1h  
+  CA `FjPKUGnF5zBpdEv18gT8FJCtxh3MKrFkoeYekgYr1win`
+- MAMESUKE: $50,985 1h vol, $692,856 mcap, -24% 1h  
+  CA `SCGBBnSwnekytGFHgyeHHxPMiN7xDxsWFGg9JgFSTNK`
