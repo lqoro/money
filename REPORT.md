@@ -1,13 +1,13 @@
 # Trencher live report
 
-Updated 2026-11-03T05:50:52Z (paper trading, never real money)
+Updated 2026-11-03T06:06:04Z (paper trading, never real money)
 
 - Equity: $74.23 (-25.8% vs $100 start)
-- Goal: $1,000 by 2026-11-05 05:03Z (pressing for it): at 7.4% of it, 2 days left, needs +275.2% a day from here
+- Goal: $1,000 by 2026-11-05 05:03Z (pressing for it): at 7.4% of it, 2 days left, needs +277.9% a day from here
 - Closed trades: 22, 3 wins
 - Fees paid: $14.78 (axiom $2.81, network $9.18, pool $2.66), plus $4.15 lost to slippage
-- New trades: on
-- Brain: subscription, 454 calls and 1 plan-limit hits in 48h
+- New trades: PAUSED by Duet
+- Brain: subscription, 455 calls and 1 plan-limit hits in 48h
 
 ## Scorecard (after fees)
 - 22 closed, 3 won (14%), net $-25.79
@@ -74,9 +74,15 @@ Updated 2026-11-03T05:50:52Z (paper trading, never real money)
   CA `H4gHnZ3NCU7Z9XQwGX6YYJNyieGEW8pqwGRUcdSxpump`
 
 ## Last scan
-- 05:49Z: 4 coins, 2 with pairs, 1 passed the market filters, 1 researched
+- 06:05Z: 6 coins, 3 with pairs, 0 passed the market filters, 0 researched
 
 ## Coins it looked at, and why it passed
+- 05:54Z Memestock (MIGRATED, $117,094 mcap, $21,829 5m vol): REJECT, Bundles: 9 linked wallet cluster(s) hold 24.3% of supply (>20%) (V17)  
+  CA `9hKJb9YEf5RYb4f71Xr3Kr86hZq86Xad5X7gdyv1pump`
+- 05:53Z 1WIN (MIGRATED, $17,654,903 mcap, $18,802 5m vol): REJECT, RugCheck danger: Freeze Authority still enabled  
+  CA `FjPKUGnF5zBpdEv18gT8FJCtxh3MKrFkoeYekgYr1win`
+- 05:52Z SPHERE (DIP, $795,168 mcap, $7,741 5m vol): PASS at conviction 3, PASS — DIP on a story nobody's telling: zero mentions, 0.3-day-old site, no catalyst, still bleeding toward the hourly low with no higher low. Falling knife. (V1, V6)  
+  CA `31SYoqWFhx3i9UsfnoXTjFp4ZwJA8F8UPrMxymfDpump`
 - 05:50Z METEORITE (MIGRATED, $198,689 mcap, $9,407 5m vol): PASS at conviction 3, PASS: 5m flow is 0.37x its hourly pace across all 7 meteorite coins, and the "AI market intelligence" site has no GitHub behind it. The crowd is leaving a LARP (V1, V6).  
   CA `67RBmGztx8ciVyWr8yi6R8fwrc3EG86XejYT7mespump`
 - 05:46Z WASTED (DIP, $906,958 mcap, $3,314 5m vol): REJECT, Dev holds 3.5% (>1%) (V13, V17)  
@@ -91,12 +97,6 @@ Updated 2026-11-03T05:50:52Z (paper trading, never real money)
   CA `GtRH3cGYWPLLjjvcgMV1Fb3Jd25rhGRQmXgwu79Npump`
 - 05:08Z Memestock (DIP, $223,588 mcap, $23,251 5m vol): REJECT, Bundles: 8 linked wallet cluster(s) hold 21.6% of supply (>20%) (V17)  
   CA `9hKJb9YEf5RYb4f71Xr3Kr86hZq86Xad5X7gdyv1pump`
-- 05:07Z 1WIN (MIGRATED, $19,233,399 mcap, $6,759 5m vol): REJECT, RugCheck danger: Freeze Authority still enabled  
-  CA `FjPKUGnF5zBpdEv18gT8FJCtxh3MKrFkoeYekgYr1win`
-- 05:06Z SPHERE (DIP, $975,737 mcap, $6,173 5m vol): PASS at conviction 3, PASS — DIP with no catalyst and theme volume at 0.88x pace; bottom-buy rule fails. Clean holders don't make a story. (V1, V5, V6)  
-  CA `31SYoqWFhx3i9UsfnoXTjFp4ZwJA8F8UPrMxymfDpump`
-- 05:06Z SMUGLY (MIGRATED, $162,155 mcap, $9,889 5m vol): PASS at conviction 2, PASS: SMUGLY is down 74% from its $632k peak, flow is running at 0.62x its hourly pace and the newest 15m candle dropped 39% to the hourly low. That's a falling knife, not a dip (V1, V6).  
-  CA `DayjoyjxCA2SVTApEW7oBFG3WMvrYZRMjAnqsetLpump`
 
 ## What its skips did next (last 48h)
 A skip "ran" if the coin reached the first target (1.5x) from the skip price before a 20% drop, "dumped" if the drop came first. Sampled every 10 min, followed 6h.
@@ -145,14 +145,16 @@ A skip "ran" if the coin reached the first target (1.5x) from the skip price bef
     CA `APH9FRoKst66E4a7uZXcEfE8NjtwybUC8Jq7ue8upump`
   - ran: NA up to 1.97x  
     CA `9ZmdP8q22ebRhEkcwd5EDkitu7ypeDFXTQXpv2kUpump`
-- thin 5m volume: blocked 13, ran 2, dumped 4, flat 5, open 2 (saving losses: keep it)
-  - ran: CUMFACE up to 1.55x  
-    CA `J1D3X8znX4AzUPMHVWyBLNHqBBqWDPNSjX4KwK3Qpump`
-  - ran: KIDS up to 1.73x  
-    CA `7uwr9Zoz8WW9UyRVC22nmmAXRbPoFTUpVjsN8q7kids`
-- falling knife / no higher low: blocked 13, ran 1, dumped 9, flat 3, open 0 (saving losses: keep it)
+- falling knife / no higher low: blocked 14, ran 1, dumped 9, flat 3, open 1 (saving losses: keep it)
   - ran: HEDGE up to 1.77x  
     CA `wDSAqt4tEZpDAwB9XY6ejkZvMFuT1zUMjUh67txeYhf`
+- thin 5m volume: blocked 13, ran 3, dumped 4, flat 5, open 1 (mixed)
+  - ran: CUMFACE up to 1.55x  
+    CA `J1D3X8znX4AzUPMHVWyBLNHqBBqWDPNSjX4KwK3Qpump`
+  - ran: RICO up to 1.56x  
+    CA `8kuQg3WivDtL85VEdw2jEmSXjYt6EEeYBATJ4DtQpump`
+  - ran: KIDS up to 1.73x  
+    CA `7uwr9Zoz8WW9UyRVC22nmmAXRbPoFTUpVjsN8q7kids`
 - dev share over 1%: blocked 11, ran 2, dumped 5, flat 3, open 1 (saving losses: keep it)
   - ran: MINTED up to 1.61x  
     CA `9yEKBwczdqoox7Red6GGPTrJ2dUbMvFUagdjxFqHpump`
@@ -185,13 +187,13 @@ A skip "ran" if the coin reached the first target (1.5x) from the skip price bef
 The meta right now is fresh PumpSwap graduates about an hour old, $150k–$250k caps, with jokes about celebrities and about memecoins themselves. The celebrity-parody wave is rising: LeTwerk James ($153k, +121% on the hour, $27.8k on the 5m, buy ratio 0.64) and the brand-new World's Hardest Worker ($40k, 6 minutes old, $39k on the 5m). The memecoin/market-parody wave is mixed. Memestock is the live one ($235k, +283%, $25k on the 5m, flow balanced at 0.53). The crawler's own pick MEM has already died ($9k, -93%), and SMUGLY is fading (-55% on the hour, under $10k on the 5m). So the meta summary above it is stale and I'm not using it. Also fading or dead: anything political ($LAPTOP, MAGACREW, stay away per V13), GTA6 (GATO flat at $3.8k on the 5m), and most 1-hour corpses (Beast, Graft, Fartcoin2). Setups I'd research, all MIGRATED: LeTwerk first, because it has the strongest buyer share and a joke anyone gets. Then Memestock, but only on a pullback of about 10% off the local high, not at the top of a +283% candle. METEORITE has volume ($23.6k) but sellers lead at 0.43, so it's a watch until buyers come back. WORKER is 6 minutes old and still finding a price, so I won't snipe it (V5). Owner's push noted: clean setups that pass the hard lines and the holder, dev and bundle checks get real size, but a conviction number still has to be earned, not handed out.
 
 ## Moving most in its scans, last 30 min (1h volume)
+- Memestock: $390,442 1h vol, $122,727 mcap, -47% 1h  
+  CA `9hKJb9YEf5RYb4f71Xr3Kr86hZq86Xad5X7gdyv1pump`
+- LeTwerk: $373,987 1h vol, $1,836 mcap, -99% 1h  
+  CA `GtRH3cGYWPLLjjvcgMV1Fb3Jd25rhGRQmXgwu79Npump`
 - METEORITE: $308,486 1h vol, $198,689 mcap, +14% 1h  
   CA `67RBmGztx8ciVyWr8yi6R8fwrc3EG86XejYT7mespump`
-- GATO: $170,637 1h vol, $11,901,489 mcap, -10% 1h  
+- WORKER: $263,286 1h vol, $40,307 mcap, +16% 1h  
+  CA `9DwPa8v7DTCgPWEgXbCLeg7F5FpruHHTHCsNnjR9pump`
+- GATO: $183,691 1h vol, $12,088,818 mcap, -4% 1h  
   CA `HsprHxBRgiVaQdRf3TnKNuZZtaX9JUSPgMFdAkk6pump`
-- j*b: $133,885 1h vol, $2,882 mcap, -94% 1h  
-  CA `7uHBhrdN1UNf1vggnvoZMHVA6Du4NQe2USP2oMnYpump`
-- coon: $125,377 1h vol, $3,304 mcap, +6% 1h  
-  CA `FkkQroBqQ85vpNkUwbJ6qvUDX7Rn5PKb8szyT6Etpump`
-- Graft: $64,887 1h vol, $13,358 mcap, -62% 1h  
-  CA `HQUk9fNaMUn3jPGsbBKdbmWBF2D1JCc3VaoP5GGhpump`
