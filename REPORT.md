@@ -1,13 +1,13 @@
 # Trencher live report
 
-Updated 2026-11-03T23:16:25Z (paper trading, never real money)
+Updated 2026-11-03T23:31:34Z (paper trading, never real money)
 
 - Equity: $74.23 (-25.8% vs $100 start)
 - Closed trades: 22, 3 wins
 - Fees paid: $14.78 (axiom $2.81, network $9.18, pool $2.66), plus $4.15 lost to slippage
 - New trades: WATCH-ONLY (scans and decides, buys nothing)
-- Brain: subscription, claude-haiku-5-5 for routine calls, claude-opus-5-5 for the daily review; 468 routine calls and 1 plan-limit hits in 48h
-- Watch log: 140 coins being followed, 186 filed, 0 would-buys (6h follow, sampled every 2 min)
+- Brain: subscription, claude-haiku-5-5 for routine calls, claude-opus-5-5 for the daily review; 466 routine calls and 1 plan-limit hits in 48h
+- Watch log: 136 coins being followed, 192 filed, 0 would-buys (6h follow, sampled every 2 min)
 
 ## Scorecard (after fees)
 - 22 closed, 3 won (14%), net $-25.79
@@ -73,9 +73,13 @@ Updated 2026-11-03T23:16:25Z (paper trading, never real money)
   CA `H4gHnZ3NCU7Z9XQwGX6YYJNyieGEW8pqwGRUcdSxpump`
 
 ## Last scan
-- 23:15Z: 5 coins, 5 with pairs, 1 passed the market filters, 1 researched
+- 23:31Z: 5 coins, 5 with pairs, 2 passed the market filters, 2 researched
 
 ## Coins it looked at, and why it passed
+- 23:31Z E  (MIGRATED, $85,152 mcap, $38,500 5m vol): REJECT, Dev holds 4.4% (>1%) (V13, V17)  
+  CA `EfRnwABuWZKxri55se639twy4jy3FRgYfri7wLJ5pump`
+- 23:31Z TWUMP (no setup, $19,003 mcap, $74,185 5m vol): REJECT, No setup fits: not Final Stretch, not a migrated runner, not a healthy dip  
+  CA `3DYBAnkeAXQWv68nEjwxZXJGobkXZchEGi4mwW6Tu7ci`
 - 23:15Z RICO (MIGRATED, $201,835 mcap, $2,200 5m vol): REJECT, RugCheck danger: Creator history of rugged tokens  
   CA `8kuQg3WivDtL85VEdw2jEmSXjYt6EEeYBATJ4DtQpump`
 - 23:14Z Ahsoka (MIGRATED, $596,082 mcap, $2,584 5m vol): PASS at conviction 2, PASS. Ahsoka is a 74% drawdown with $2.6k of 5m flow, on a ticker with four copies and a website that doesn't show this CA. Blocker: narrative dead, no catalyst (V1, V13).  
@@ -92,10 +96,6 @@ Updated 2026-11-03T23:16:25Z (paper trading, never real money)
   CA `FK5tP4Zw7ujWzaz3TgeJ5NcqGe5LFufo7m6zH6YQpump`
 - 23:04Z GATO (MIGRATED, $10,340,763 mcap, $8,584 5m vol): REJECT, Dev holds 3.3% (>1%) (V13, V17)  
   CA `HsprHxBRgiVaQdRf3TnKNuZZtaX9JUSPgMFdAkk6pump`
-- 23:04Z AMD (MIGRATED, $184,526 mcap, $15,747 5m vol): REJECT, Top 10 hold 31.4% ex-pool (>25%) (V13)  
-  CA `5HsVcH8KmoUTH79HqbDtgR8eZs2KgJiEejWQELJnpump`
-- 23:04Z VALOR (FINAL_STRETCH, $29,919 mcap, $22,834 5m vol): PASS at conviction 3, PASS: 13-minute-old pump.fun coin, 5m candle up 43% at 3.4x hourly pace, inside a 25-copy vamp field. Chasing spike. (V1, V6)  
-  CA `697qJWKHWoAmPWioDEQvJ4P4C9UjuWYLvYK5nA5Mpump`
 
 ## What its skips did next (last 48h)
 A skip "ran" if the coin reached the first target (1.5x) from the skip price before a 20% drop, "dumped" if the drop came first. Sampled every 10 min, followed 6h.
@@ -106,25 +106,27 @@ A skip "ran" if the coin reached the first target (1.5x) from the skip price bef
     CA `BasL6j1MNkjFyuvRRFsmbm3bKqFPr6Yg3UhShii6pump`
   - ran: WIF up to 1.67x  
     CA `E7ayy5Se6gjwCNtw9NP629AucnTgqab4SSmSxDpUpump`
-- too new / sniping: blocked 58, ran 11, dumped 46, flat 0, open 1 (saving losses: keep it)
+- too new / sniping: blocked 58, ran 11, dumped 47, flat 0, open 0 (saving losses: keep it)
   - ran: CLIPPED up to 1.65x  
     CA `Bxyp4L6EbDys4fo51qxMEQTx41sj6McnsbPZTdvipump`
   - ran: Marutaro up to 1.62x  
     CA `At3jYPUKVEFYrss5a58myVuqKLjGxMuBP5MwqMk9pump`
   - ran: MameStonk up to 1.67x  
     CA `57eJSmN1ecANrnZjGPrXzWUMyGhQsQgMS9eHdxM3pump`
-- flow below pace: blocked 48, ran 7, dumped 32, flat 3, open 6 (saving losses: keep it)
+- flow below pace: blocked 48, ran 9, dumped 34, flat 3, open 2 (saving losses: keep it)
   - ran: KOROSUKE up to 1.54x  
     CA `7ha4HFgdvkXaDcR2biCsuBpoCZzoLSRjb5we34Gbpump`
   - ran: CAPY up to 1.51x  
     CA `DBPTU2oKLDHXQjAEJ3rZi8bUGmt2uxUbipgg6xmXoMqr`
   - ran: ZERO up to 1.61x  
     CA `Aes6XNH9BboLZuchD5PnDwaX6Zj1nU79TU3gNtPEpump`
-- near the high / chasing: blocked 40, ran 2, dumped 29, flat 4, open 5 (saving losses: keep it)
+- near the high / chasing: blocked 40, ran 3, dumped 31, flat 4, open 2 (saving losses: keep it)
   - ran: underdog up to 1.64x  
     CA `BZXh2LcnNNyypxsdfVeFzXawqmoGoSShC5i4NEQQpump`
   - ran: LUCIA up to 1.83x  
     CA `Cbtnpg6SL9jvZxtZTYYFPtVQXkuuqSUxCU5aXeTkpump`
+  - ran: AMD up to 2.02x  
+    CA `3MfZ4URVxmB4mfPuy4AxUxpcC5U7aXe7TDA7XVoGpump`
 - RugCheck danger: blocked 29, ran 3, dumped 22, flat 1, open 3 (saving losses: keep it)
   - ran: COLLECTOR up to 1.62x  
     CA `6kKETm8xPeZ2z1DBYjXmxMTFAJudvGHJvRHu5Wt8uGtf`
@@ -146,7 +148,7 @@ A skip "ran" if the coin reached the first target (1.5x) from the skip price bef
     CA `9ZmdP8q22ebRhEkcwd5EDkitu7ypeDFXTQXpv2kUpump`
   - ran: MAMESUKE up to 1.95x  
     CA `SCGBBnSwnekytGFHgyeHHxPMiN7xDxsWFGg9JgFSTNK`
-- thin 5m volume: blocked 16, ran 3, dumped 7, flat 4, open 2 (saving losses: keep it)
+- thin 5m volume: blocked 16, ran 3, dumped 8, flat 4, open 1 (saving losses: keep it)
   - ran: CUMFACE up to 1.55x  
     CA `J1D3X8znX4AzUPMHVWyBLNHqBBqWDPNSjX4KwK3Qpump`
   - ran: KIDS up to 1.73x  
@@ -156,7 +158,7 @@ A skip "ran" if the coin reached the first target (1.5x) from the skip price bef
 - falling knife / no higher low: blocked 14, ran 1, dumped 10, flat 3, open 0 (saving losses: keep it)
   - ran: HEDGE up to 1.77x  
     CA `wDSAqt4tEZpDAwB9XY6ejkZvMFuT1zUMjUh67txeYhf`
-- other: blocked 11, ran 4, dumped 6, flat 1, open 0 (mixed)
+- other: blocked 12, ran 4, dumped 6, flat 1, open 1 (mixed)
   - ran: thisman up to 1.6x  
     CA `6d6J2kWJiimgqmxjLVTu31hxDyBFt2zBguYdjSripump`
   - ran: FEAR up to 125.22x  
@@ -205,11 +207,11 @@ The meta is the "A Meme ___" animal-pun family (A Meme Cat, A Meme Duck, Advance
 ## Moving most in its scans, last 30 min (1h volume)
 - AMC: $718,651 1h vol, $41,817 mcap, -34% 1h  
   CA `3p1XAKNnkTZ1iXcW5xy4xMSq6nb4Y3gsGZpjUqMCpump`
+- E : $415,781 1h vol, $85,152 mcap, +120% 1h  
+  CA `EfRnwABuWZKxri55se639twy4jy3FRgYfri7wLJ5pump`
 - AMD: $225,590 1h vol, $228,297 mcap, +448% 1h  
   CA `3MfZ4URVxmB4mfPuy4AxUxpcC5U7aXe7TDA7XVoGpump`
-- AMC : $190,913 1h vol, $12,689 mcap, -74% 1h  
-  CA `61nPLZLFkGGGNSEHr4c7LmF82jESvagFsV3jfYLYpump`
-- GTA: $164,798 1h vol, $1,897 mcap, -99% 1h  
-  CA `GyGtUAKA4vzAB5w7wMwcPm6xFpdnEHLPa77gTD7ipump`
+- MU: $125,056 1h vol, $14,540 mcap, +218% 1h  
+  CA `7sTfS2jxuBRCcfGF45XabsxUv3gFXN83JCRpDciqpump`
 - GATO: $122,547 1h vol, $10,309,306 mcap, -8% 1h  
   CA `HsprHxBRgiVaQdRf3TnKNuZZtaX9JUSPgMFdAkk6pump`
