@@ -191,6 +191,14 @@ class Config:
     watch_reobserve_min: float = 30.0  # a coin still passing the filters gets a fresh observation this often
     watch_max_live: int = 900  # cap on coins followed at once (DexScreener calls stay ~30 per sample)
     watch_keep_days: float = 14.0
+    # Owner (Nov 3): "ideally should be as the migrate/graduate". In watch-only mode, every
+    # pump.fun coin that just graduated to PumpSwap is logged at that moment, whether or
+    # not it passes the market filters, with a RugCheck holder snapshot, so the Nov 10 test
+    # can include a "buy at migration" rule set against real costs.
+    migration_feed: bool = True
+    migration_dexes: tuple = ("pumpswap",)  # GeckoTerminal dex ids a pump.fun coin graduates to
+    migration_max_age_min: float = 20.0  # pools older than this aren't "at migration" any more
+    migration_holder_checks_per_scan: int = 8  # RugCheck calls for holder snapshots, per scan
 
     # --- Web crawler: meta radar + project crawler --------------------------
     radar_interval_min: float = 10.0

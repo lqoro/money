@@ -60,6 +60,34 @@ def discover_solana_tokens() -> list[str]:
     return list(seen)
 
 
+def new_migrations(dexes: tuple = ("pumpswap",), max_age_min: float = 20.0, pages: int = 2) -> list[dict] | None:
+    """Pump.fun coins that just graduated: new pools on the given dexes from GeckoTerminal's
+    Solana new-pools feed, created in the last `max_age_min` minutes. Each item has the
+    mint, pool, dex and created_at (unix seconds). None when the feed didn't answer."""
+    from datetime import datetime
+
+    out, answered, now = [], False, time.time()
+    for page in range(1, pages + 1):
+        data = _get(f"{GECKO}/networks/solana/new_pools", {"page": page}, retries=2)
+        if data is None:
+            break
+        answered = True
+        for pool in data.get("data") or []:
+            rel = pool.get("relationships") or {}
+            dex = ((rel.get("dex") or {}).get("data") or {}).get("id")
+            mint = (((rel.get("base_token") or {}).get("data") or {}).get("id") or "").removeprefix("solana_")
+            attrs = pool.get("attributes") or {}
+            try:
+                created = datetime.fromisoformat(str(attrs.get("pool_created_at")).replace("Z", "+00:00")).timestamp()
+            except ValueError:
+                continue
+            # A PumpSwap pool for a pump.fun mint is the graduation pool; anyone can open
+            # other PumpSwap pools, and those mints don't end in "pump".
+            if dex in dexes and mint.endswith("pump") and now - created <= max_age_min * 60:
+                out.append({"mint": mint, "pool": attrs.get("address"), "dex": dex, "created_at": created})
+    return out if answered else None
+
+
 def get_pairs(token_addresses: list[str]) -> dict[str, dict]:
     """Best (most liquid) Solana pair per token, batched 30 at a time."""
     best: dict[str, dict] = {}

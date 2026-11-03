@@ -31,6 +31,8 @@ observations, skips and trades and writes what they show into the report.
 `steer.json` can set `brain_model` and `head_model` (Haiku, Sonnet or Opus 5.5),
 which win over `.env`.
 
+Coins are also logged **at graduation**. Every scan reads GeckoTerminal's Solana new-pools feed. Each pump.fun coin whose PumpSwap pool opened in the last 20 minutes is logged right away, even when it fails the market filters, with its setup set to `AT_MIGRATION`. The log records the minutes since migration and a RugCheck holder snapshot: top 10, insiders, dev, bundles. That gives the Nov 10 test a "buy at migration" rule set to run against real costs. The daily digest splits those coins by holder concentration. The feed only runs in watch-only mode.
+
 ## How it works
 
 ```

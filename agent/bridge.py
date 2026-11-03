@@ -157,6 +157,7 @@ def build_report(agent) -> tuple[dict, str]:
         "skip_review": skips.stats(getattr(agent, "skips", {}) or {}),
         "rule_changes": recent_rule_changes(cfg),
         "watch": watch.summary(cfg, getattr(agent, "watch", {}) or {}),
+        "migration_feed": getattr(agent, "migration_feed", {}) or {},
         "daily_reviews": recent_daily_reviews(cfg, 3),
     }
 
@@ -186,6 +187,9 @@ def build_report(agent) -> tuple[dict, str]:
         *([f"- Watch log: {w['live']} coins being followed, {w['settled']} filed, {w['would_buys']} would-buys "
            f"({w['follow_hours']:g}h follow, sampled every {w['sample_min']:g} min)"]
           if (w := status["watch"]) and (w["on"] or w["settled"]) else []),
+        *([f"- Graduations: {w['at_migration']} coins logged at migration; last feed check "
+           f"{'found ' + str(f.get('found', 0)) + ' new PumpSwap pools' if f.get('ok') else 'got no answer'}"]
+          if (w := status["watch"]) and w["on"] and (f := status.get("migration_feed")) else []),
         "",
         *scorecard.lines(status["scorecard"]),
         "",

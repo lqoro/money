@@ -12,6 +12,10 @@ minutes, so a rule set can be replayed offline against the real price path:
     down_at    minutes until it first fell to 0.9x, 0.8x, 0.7x, 0.5x
     max_x/min_x and when the high came
 
+Coins that just graduated from pump.fun to PumpSwap are logged at that moment even when
+they don't pass the market filters (setup AT_MIGRATION unless another setup fits), with a
+`migration` block: pool, minutes since the pool opened, and a RugCheck holder snapshot.
+
 Live observations are kept in memory_dir/watch_live.json; settled ones are appended to
 memory_dir/observations/YYYY-MM-DD.jsonl (UTC day they started), which the Duet bridge
 copies to the trencher-live branch.
@@ -175,7 +179,7 @@ def prune_files(cfg: Config, now: float | None = None) -> None:
 def summary(cfg: Config, book: dict) -> dict:
     """Counts for the Duet report."""
     files = sorted(obs_dir(cfg).glob("*.jsonl")) if obs_dir(cfg).exists() else []
-    settled = would = brain = 0
+    settled = would = brain = migs = 0
     for path in files:
         for line in path.read_text().splitlines():
             try:
@@ -185,8 +189,10 @@ def summary(cfg: Config, book: dict) -> dict:
             settled += 1
             would += bool(rec.get("would_buy"))
             brain += rec.get("brain") is not None
+            migs += bool(rec.get("migration"))
     live = [r for r in book.values() if r.get("result") is None]
     return {"on": cfg.watch_only, "live": len(live), "settled": settled, "brain_reads": brain,
+            "at_migration": migs + sum(1 for r in live if r.get("migration")),
             "would_buys": would + sum(1 for r in live if r.get("would_buy")),
             "days": [p.stem for p in files], "follow_hours": cfg.watch_follow_hours,
             "sample_min": cfg.watch_sample_min}
@@ -259,6 +265,15 @@ def digest(cfg: Config, book: dict, hours: float = 24.0, now: float | None = Non
         "would_buy": [r for r in recs if r.get("would_buy")],
         "not_researched": [r for r in recs if r.get("checklist") is None],
     }
+    # Logged right at graduation (owner, Nov 3): split by how concentrated the holders were.
+    at_mig = [r for r in recs if (r.get("migration") or {}).get("minutes_since") is not None
+              and r["migration"]["minutes_since"] <= 10]
+    by_top10: dict[str, list] = {}
+    for r in at_mig:
+        top10 = ((r["migration"].get("holders") or {}).get("top10_pct_ex_pool"))
+        band = ("unknown" if top10 is None else "top10 under 20%" if top10 < 20
+                else "top10 20-35%" if top10 <= 35 else "top10 over 35%")
+        by_top10.setdefault(band, []).append(r)
     runners = sorted(recs, key=lambda r: r.get("max_x", 1.0), reverse=True)[:5]
     return {
         "hours": hours, "settled": len(recs),
@@ -266,6 +281,8 @@ def digest(cfg: Config, book: dict, hours: float = 24.0, now: float | None = Non
         "all": _group(cfg, recs),
         "by_setup": {k: _group(cfg, v) for k, v in by_setup.items()},
         "by_stage": {k: _group(cfg, v) for k, v in stage.items()},
+        "at_migration": _group(cfg, at_mig),
+        "at_migration_by_holders": {k: _group(cfg, v) for k, v in by_top10.items()},
         "top_runners": [{"symbol": (r.get("features") or {}).get("symbol"), "ca": r["ca"], "setup": r.get("setup"),
                          "max_x": r.get("max_x"), "minutes_to_high": r.get("max_at_min"),
                          "mcap": (r.get("features") or {}).get("mcap_usd"),

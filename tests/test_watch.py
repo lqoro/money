@@ -156,3 +156,75 @@ def test_digest_counts_after_costs(cfg):
     assert d["settled"] == 3 and g["ran_pct"] == pytest.approx(33.3) and g["dumped_pct"] == pytest.approx(33.3)
     # (+50 - 20 + 0)/3 = +10% before costs; costs come off.
     assert g["avg_net_pct"] == pytest.approx(10 - g["avg_cost_pct"], abs=0.1)
+
+
+# --- Graduation feed (owner, Nov 3: "ideally should be as the migrate/graduate") ------
+
+def test_graduation_feed_keeps_fresh_pumpswap_pools_of_pump_mints(monkeypatch):
+    import time as _time
+    from agent import data
+
+    def iso(ago_min):
+        return _time.strftime("%Y-%m-%dT%H:%M:%SZ", _time.gmtime(_time.time() - ago_min * 60))
+
+    def pool(mint, dex, ago):
+        return {"attributes": {"address": f"pool-{mint}", "pool_created_at": iso(ago)},
+                "relationships": {"dex": {"data": {"id": dex}}, "base_token": {"data": {"id": f"solana_{mint}"}}}}
+
+    pages = {1: {"data": [pool("Aaapump", "pumpswap", 2), pool("Bbbpump", "raydium", 2),
+                          pool("Ccc111", "pumpswap", 2), pool("Dddpump", "pumpswap", 45)]},
+             2: {"data": []}}
+    monkeypatch.setattr(data, "_get", lambda url, params=None, retries=3: pages[params["page"]])
+    found = data.new_migrations(("pumpswap",), 20)
+    assert [m["mint"] for m in found] == ["Aaapump"] and found[0]["pool"] == "pool-Aaapump"
+    monkeypatch.setattr(data, "_get", lambda *a, **k: None)
+    assert data.new_migrations() is None  # no answer is not "no graduations"
+
+
+def test_a_coin_is_logged_at_graduation_even_when_it_fails_the_filters(cfg, monkeypatch):
+    import time as _time
+    from agent import data
+    from agent.bridge import build_report
+    from agent.main import Agent
+    from test_agent import _scan_with
+
+    agent = Agent(cfg)
+    fresh = snap(address="Grad1pump", symbol="GRAD", mcap_usd=45_000, vol_5m=900, age_hours=0.05)
+    monkeypatch.setattr(data, "new_migrations", lambda *a, **k: [
+        {"mint": "Grad1pump", "pool": "PoolGrad", "dex": "pumpswap", "created_at": _time.time() - 180}])
+    _scan_with(agent, monkeypatch, {"Grad1pump": fresh}, {"action": "PASS", "verdict": "PASS", "conviction": 3})
+    rec = next(iter(agent.watch.values()))
+    assert rec["setup"] == "AT_MIGRATION" and rec["features"]["mcap_usd"] == 45_000
+    assert 2.5 <= rec["migration"]["minutes_since"] <= 3.5
+    assert rec["migration"]["holders"]["top10_pct_ex_pool"] is not None
+    assert agent.migration_feed["ok"] and agent.migration_feed["logged"] == 1
+    status, text = build_report(agent)
+    assert status["watch"]["at_migration"] == 1 and "1 coins logged at migration" in text
+
+
+def test_graduation_feed_is_off_outside_watch_mode(cfg, monkeypatch):
+    from agent import data
+    from agent.main import Agent
+    from test_agent import _scan_with
+
+    cfg.watch_only = False
+    agent = Agent(cfg)
+    called = []
+    monkeypatch.setattr(data, "new_migrations", lambda *a, **k: called.append(1) or [])
+    _scan_with(agent, monkeypatch, {"X1": snap(address="X1")}, {"action": "PASS", "verdict": "PASS", "conviction": 3})
+    assert not called and not agent.watch
+
+
+def test_digest_splits_graduation_logs_by_holder_concentration(cfg):
+    book = {}
+    for i, (top10, x) in enumerate(((12.0, 1.6), (48.0, 0.7))):
+        s = snap(price_usd=1.0)
+        s["address"] = f"grad{i}"
+        rec = watch.observe(cfg, book, s, "AT_MIGRATION", SOL, now=T0)
+        rec["migration"] = {"minutes_since": 2.0, "holders": {"top10_pct_ex_pool": top10}}
+        watch.sample(cfg, book, now=T0 + 600, prices={rec["ca"]: x})
+    watch.sample(cfg, book, now=T0 + 7 * 3600, prices={f"grad{i}": 1.0 for i in range(2)})
+    d = watch.digest(cfg, book, hours=24, now=T0 + 7 * 3600)
+    assert d["at_migration"]["n"] == 2
+    assert d["at_migration_by_holders"]["top10 under 20%"]["ran_pct"] == 100.0
+    assert d["at_migration_by_holders"]["top10 over 35%"]["dumped_pct"] == 100.0
