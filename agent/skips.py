@@ -29,6 +29,8 @@ log = logging.getLogger(__name__)
 
 # First match names the gate. Code hard lines first, then the brain's own reasons.
 GATES = (
+    # Owner rules first: their reasons can mention words other gates match ("off the high").
+    ("narrative gate (owner rule)", r"narrative gate"),
     ("hack story (owner rule)", r"hack story"),
     ("bundles over the line", r"linked wallet cluster|bundles:"),
     ("dev share over 1%", r"dev holds"),

@@ -49,12 +49,18 @@ DECISION_SCHEMA = {
         "conviction_reason": {"type": "string", "description": "Why this conviction level and not one higher or lower"},
         "setup": {"type": "string"},
         "meta": {"type": "string", "description": "The narrative/meta this token rides, or 'none'"},
+        "narrative_trend": {"type": "string", "enum": ["rising", "holding", "fading", "none"],
+                            "description": "Is the story this coin rides gaining attention right now, across its coins and the web?"},
+        "narrative_strength": {"type": "integer", "description": "1-10: how alive and strong that story is right now"},
+        "catalyst": {"type": "string", "description": "The specific thing that brings new buyers next (fresh news, a listing, "
+                     "an event on a date, a big account posting about it) and where you found it; 'none' if you found none"},
         "thesis": {"type": "string", "description": "Why this trade, in 2-4 sentences, citing V-numbers"},
         "red_flags": {"type": "array", "items": {"type": "string"}},
         "unverified": {"type": "array", "items": {"type": "string"}, "description": "Checklist items you could not verify"},
         "exit_plan": EXIT_PLAN_SCHEMA,
     },
-    "required": ["action", "verdict", "conviction", "conviction_reason", "setup", "meta", "thesis", "red_flags", "unverified", "exit_plan"],
+    "required": ["action", "verdict", "conviction", "conviction_reason", "setup", "meta", "narrative_trend",
+                 "narrative_strength", "catalyst", "thesis", "red_flags", "unverified", "exit_plan"],
     "additionalProperties": False,
 }
 
@@ -508,9 +514,10 @@ paid, pro-trader ratio, X admin identity. Treat them as unverified risk.
 {web_note}
 Trade the narrative and the attention: is the story still being told, is the crowd
 arriving or leaving? The meta is whatever the coins in scan_movers are being traded on
-right now, across many coins; don't wait for one theme or one upcoming event. For a DIP,
+right now, across many coins; for a buy near the high, don't wait for one theme or one
+upcoming event (a bottom buy is different: see the owner rule below). For a DIP,
 a 40-50% pullback is normal and ~70% is deep; it's a buy only if the narrative is intact
-and buyers are stepping back in. If you were stopped out of
+and buyers are stepping back in.{self._narrative_rule(snap)} If you were stopped out of
 this coin recently, say whether the reason you left still holds.
 Then decide BUY or PASS as Trencher. Passing is a position (V6). If BUY, rate your
 conviction honestly (it sets the size) and write the exit plan before the entry (V1, V11)."""
@@ -519,6 +526,30 @@ conviction honestly (it sets the size) and write the exit plan before the entry 
             return {"action": "PASS", "verdict": "PASS — brain unavailable, not trading blind.",
                     "exit_plan": default_exit_plan(self.cfg), "thesis": "", "red_flags": [], "conviction": 0}
         return out
+
+    def _narrative_rule(self, snap: dict) -> str:
+        """The owner's narrative and catalyst gate for bottom buys, in the brain's words."""
+        cfg = self.cfg
+        if cfg.narrative_min_strength <= 0:
+            return ""
+        theme = snap.get("theme") or {}
+        pace_rule = f" (at least {cfg.theme_min_pace:g}x its hourly average)" if cfg.theme_min_pace > 0 else ""
+        measured = ""
+        if theme.get("pace") is not None:
+            lead = "" if theme.get("this_is_leader") else f", and {theme.get('leader')} leads it"
+            measured = (f" Code measured this coin's theme ({'/'.join(theme.get('words') or [])}) across "
+                        f"{theme.get('copies')} coin(s): 5m volume at {theme['pace']}x the theme's hourly pace{lead}.")
+        return f"""
+
+Owner rule for bottom buys (a DIP, or a MIGRATED buy {cfg.pullback_min_drawdown_pct:g}%+ off its high): the
+narrative has to be alive and strong, and a catalyst should be coming. Your dip and pullback
+buys on themes your own meta read called fading, holding or didn't name went 0 for 11; the ones
+on a theme with real outside news behind it all ran past 1.6x. So code blocks a bottom buy
+unless you rate narrative_trend "rising" and narrative_strength {cfg.narrative_min_strength:g}+, you name a specific
+catalyst you actually found (fresh news, a listing, an event on a date, a big account posting
+about it; buyers stepping in or a higher low is not a catalyst), and the theme's volume across
+all its coins is keeping pace{pace_rule}.{measured} If it
+doesn't qualify, PASS and name this as the blocker. Rate these three honestly on every coin."""
 
     def summarize_meta(self, radar_view: dict) -> str | None:
         """One paragraph: what's the meta right now? Refreshed about hourly."""
