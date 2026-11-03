@@ -1,9 +1,9 @@
 # Trencher live report
 
-Updated 2026-11-02T23:46:45Z (paper trading, never real money)
+Updated 2026-11-03T00:01:51Z (paper trading, never real money)
 
 - Equity: $74.23 (-25.8% vs $100 start)
-- Goal: $1,000 by 2026-11-05 05:03Z (pressing for it): at 7.4% of it, 2.2 days left, needs +222.7% a day from here
+- Goal: $1,000 by 2026-11-05 05:03Z (pressing for it): at 7.4% of it, 2.2 days left, needs +224.5% a day from here
 - Closed trades: 22, 3 wins
 - Fees paid: $14.78 (axiom $2.81, network $9.18, pool $2.66), plus $4.15 lost to slippage
 - New trades: on
@@ -74,9 +74,17 @@ Updated 2026-11-02T23:46:45Z (paper trading, never real money)
   CA `H4gHnZ3NCU7Z9XQwGX6YYJNyieGEW8pqwGRUcdSxpump`
 
 ## Last scan
-- 23:46Z: 3 coins, 2 with pairs, 0 passed the market filters, 0 researched
+- 00:01Z: 9 coins, 6 with pairs, 0 passed the market filters, 0 researched
 
 ## Coins it looked at, and why it passed
+- 23:55Z TURKEY (FINAL_STRETCH, $35,824 mcap, $5,843 5m vol): REJECT, Top 10 hold 28.5% ex-pool (>25%) (V13)  
+  CA `8VdrHbx444YZJZp1vNb9pXAv5aW4Kv7E7bk7Zwaapump`
+- 23:55Z Ansum (MIGRATED, $41,376 mcap, $20,829 5m vol): PASS at conviction 2, PASS: Ansum migrated about 2 minutes ago and is already 28% off its bond spike with no base under it. That's sniping, not a setup. Blocker: "too new" (V1, V5).  
+  CA `8fpZM9y8UxmFQnXScNbzYKBpkeRJ4AzA6aDCdoRpump`
+- 23:51Z ᑓହꚡई (MIGRATED, $154,367 mcap, $10,991 5m vol): PASS at conviction 3, PASS: 5m flow is only 0.35x the hourly pace and there's no printed higher low. The crowd is leaving, it isn't arriving. Blocker "flow below pace" (V1, V6).  
+  CA `7kYXsF59Cc3HBjL1mW5y9eutEWYh3dTUuvBvnNV7pump`
+- 23:47Z MAMESUKE (DIP, $729,117 mcap, $5,301 5m vol): REJECT, Bundles: 5 linked wallet cluster(s) hold 65.9% of supply (>20%) (V17)  
+  CA `SCGBBnSwnekytGFHgyeHHxPMiN7xDxsWFGg9JgFSTNK`
 - 23:45Z Anakin (DIP, $1,313,106 mcap, $8,571 5m vol): PASS at conviction 3, PASS — third-largest Anakin in a Star Wars meta my radar already called dead, and buying it here chases a 3.7x-pace spike with no higher low. Blocker: split crowd / dead story (V1, V3).  
   CA `ExxzYBTt3jwU5MUxuw2F4toYbTLdFwThSjyaCn6Xpump`
 - 23:44Z WASTED (MIGRATED, $1,387,969 mcap, $4,070 5m vol): REJECT, Dev holds 3.0% (>1%) (V13, V17)  
@@ -89,18 +97,10 @@ Updated 2026-11-02T23:46:45Z (paper trading, never real money)
   CA `8Xg89xT8Ve34sKiYqYuMs46mycREsCA2F362UscRpump`
 - 23:28Z GTA (FINAL_STRETCH, $30,379 mcap, $2,115 5m vol): REJECT, RugCheck danger: Creator history of rugged tokens  
   CA `G6F6SYSUAUxsnKLyeRW29hE5A4BGCbw91x7HMPySpump`
-- 23:26Z CYBERCOIN (FINAL_STRETCH, $21,384 mcap, $17,522 5m vol): REJECT, Top 10 hold 27.0% ex-pool (>25%) (V13)  
-  CA `3FkqmPxdnzffiX3qEQtvuNL4zAWLew1nkDFnLZakpump`
-- 23:26Z walter (MIGRATED, $40,777 mcap, $63,864 5m vol): PASS at conviction 2, PASS: too new. It migrated 4 minutes ago and sits at $40k, bleeding off a $57k bond spike, with 5 bigger coins on the same ticker. No base, no higher low, no story (V1, V6).  
-  CA `CHjgAurRkfkcoJpiFCVhpU7uxbm1jKkDcNcnG64xpump`
-- 23:22Z Slingoor (DIP, $843,350 mcap, $8,090 5m vol): REJECT, RugCheck danger: Top 10 holders high ownership  
-  CA `9rZR9nCQbaiBvotWVpifN8z1vckVFshnsATuAJrXpump`
-- 23:20Z HAMSTER (MIGRATED, $242,323 mcap, $18,624 5m vol): PASS at conviction 3, PASS: 8.8% off a 46-minute-old high with 5m flow at 0.53x pace. That's chasing a fading candle and I'd be exit liquidity (V1, V6).  
-  CA `7gCND4jhgJ8Mq1XxNhRdercinXh7fcCDPjA9uEQLk3f2`
 
 ## What its skips did next (last 48h)
 A skip "ran" if the coin reached the first target (1.5x) from the skip price before a 20% drop, "dumped" if the drop came first. Sampled every 10 min, followed 6h.
-- too new / sniping: blocked 54, ran 11, dumped 43, flat 0, open 0 (saving losses: keep it)
+- too new / sniping: blocked 53, ran 11, dumped 42, flat 0, open 0 (saving losses: keep it)
   - ran: onlypump up to 1.92x  
     CA `J73efZvH6rkrJbFJdP2rqe473YJW7tyWmrNARUSzpump`
   - ran: paws up to 1.51x  
@@ -112,14 +112,14 @@ A skip "ran" if the coin reached the first target (1.5x) from the skip price bef
     CA `CPoGSmcjprCvzA2MFYLJMpQkGjmgVzKg4RVwMdrzpump`
   - ran: PIRATE up to 2.27x  
     CA `gzQXRwGRzfKLHfaV1f84QT7e5mt4vevu7MgacEfpump`
-- top 10 over 25%: blocked 46, ran 5, dumped 37, flat 3, open 1 (saving losses: keep it)
+- top 10 over 25%: blocked 47, ran 5, dumped 37, flat 3, open 2 (saving losses: keep it)
   - ran: TIPPER up to 1.55x  
     CA `3DEcz7AnmJiGSnDHYvUeX5uPMMHVcDwqrWRSGdHEpump`
   - ran: Capri up to 1.84x  
     CA `6qhnbvdJuWVUQ7EQpgz5GNraV7pty7cqc8MmfQTEpump`
   - ran: PEAKY up to 1.53x  
     CA `2EQxezWgXPRU6V3UD7DKr5m12mxqeFGPWNRx9wbqy9fC`
-- falling knife (code): blocked 32, ran 5, dumped 22, flat 1, open 4 (saving losses: keep it)
+- falling knife (code): blocked 32, ran 6, dumped 22, flat 2, open 2 (saving losses: keep it)
   - ran: BLUE up to 1.53x  
     CA `CPoGSmcjprCvzA2MFYLJMpQkGjmgVzKg4RVwMdrzpump`
   - ran: VETOTRUMP up to 1.66x  
@@ -133,7 +133,7 @@ A skip "ran" if the coin reached the first target (1.5x) from the skip price bef
     CA `ChCi2x2bpevrNyeRoPHLXHzmaCdGQPuU15CNqxY1pump`
   - ran: Bitboy up to 1.6x  
     CA `GvXhSHnWrkAasjAUZeRzRfUBV2BJiiduaHarCWAEpump`
-- flow below pace: blocked 19, ran 4, dumped 13, flat 0, open 2 (saving losses: keep it)
+- flow below pace: blocked 20, ran 4, dumped 13, flat 0, open 3 (saving losses: keep it)
   - ran: Ahsoka up to 1.54x  
     CA `4nuj5NLHMtQSezfmz6CwBpCRJisFie6F6MxNNz1dpump`
   - ran: KOROSUKE up to 1.54x  
@@ -145,7 +145,7 @@ A skip "ran" if the coin reached the first target (1.5x) from the skip price bef
     CA `APH9FRoKst66E4a7uZXcEfE8NjtwybUC8Jq7ue8upump`
   - ran: NA up to 1.97x  
     CA `9ZmdP8q22ebRhEkcwd5EDkitu7ypeDFXTQXpv2kUpump`
-- falling knife / no higher low: blocked 13, ran 1, dumped 9, flat 1, open 2 (saving losses: keep it)
+- falling knife / no higher low: blocked 13, ran 1, dumped 9, flat 2, open 1 (saving losses: keep it)
   - ran: HEDGE up to 1.77x  
     CA `wDSAqt4tEZpDAwB9XY6ejkZvMFuT1zUMjUh67txeYhf`
 - dev share over 1%: blocked 12, ran 3, dumped 5, flat 2, open 2 (mixed)
@@ -155,7 +155,7 @@ A skip "ran" if the coin reached the first target (1.5x) from the skip price bef
     CA `9yEKBwczdqoox7Red6GGPTrJ2dUbMvFUagdjxFqHpump`
   - ran: DOJAK up to 2.62x  
     CA `E5aeDjgq6ZSzAmihKoh9JPEhwK2bMCbZLJf6LYT9pump`
-- thin 5m volume: blocked 11, ran 2, dumped 3, flat 4, open 2 (mixed)
+- thin 5m volume: blocked 11, ran 2, dumped 3, flat 5, open 1 (mixed)
   - ran: CUMFACE up to 1.55x  
     CA `J1D3X8znX4AzUPMHVWyBLNHqBBqWDPNSjX4KwK3Qpump`
   - ran: KIDS up to 1.73x  
@@ -187,13 +187,13 @@ A skip "ran" if the coin reached the first target (1.5x) from the skip price bef
 The meta has moved to dogs and GTA6 animals, and Star Wars is finished. The crawler's own summary is stale: Darth Vader is now $1.9k after a -95% hour, so that was a farm, not a setup (V13), and Anakin is drifting at $3k on the 5m. The dog swarm is the one getting fresh buyers. TikTok dog is 12 minutes old at $234k with $54k on the 5m and a 0.90 buy ratio, iNu is bleeding at a 0.41 buy ratio, and Daisuke-Doo is fading. The GTA6 names are steadier: RICO (GTA6DOG) is doing $22.7k on the 5m, about 3x its hourly pace, 39% off the high, so it clears the 0.7x DIP gate. GATO is the $12M original holding flat with sellers slightly in charge. What I'd research now: RICO as a DIP, Slingoor/The Black Bull as a DIP ($578k, -28%, $13k 5m, 0.67 buy ratio), and TikTok dog as MIGRATED only after it pulls back about 10% from its local high, because buying a 12-minute-old vertical candle makes me exit liquidity (V1, V5). PASSes with blockers: Darth (rugged), iNu (0.41 buy ratio, sellers in control), HEDGE (-48% at an even 0.51 buy ratio, a knife until buyers show up), 1WIN (casino brand, $20M, above the V6 ceiling), and CAN/sigilcode (on the bonding curve with mcap far below the 5m volume, which is churn, not organic flow). Owner, I hear you on Nov 5. Clean ones get 8s if the holder checks earn it, and the hard lines don't move.
 
 ## Moving most in its scans, last 30 min (1h volume)
-- tok: $449,145 1h vol, $1,796 mcap, -99% 1h  
-  CA `FmFqGGrst9vmzbiRq7sW1iNkdz4QccUCjfpm3trjpump`
-- HAMSTER: $425,302 1h vol, $233,196 mcap, +72% 1h  
-  CA `7gCND4jhgJ8Mq1XxNhRdercinXh7fcCDPjA9uEQLk3f2`
-- ZERO: $271,920 1h vol, $245,772 mcap, +47% 1h  
-  CA `Aes6XNH9BboLZuchD5PnDwaX6Zj1nU79TU3gNtPEpump`
+- ᑓହꚡई: $366,657 1h vol, $157,001 mcap, -21% 1h  
+  CA `7kYXsF59Cc3HBjL1mW5y9eutEWYh3dTUuvBvnNV7pump`
+- GATO: $209,672 1h vol, $13,859,477 mcap, +11% 1h  
+  CA `HsprHxBRgiVaQdRf3TnKNuZZtaX9JUSPgMFdAkk6pump`
 - Looong: $193,519 1h vol, $135,149 mcap, +193% 1h  
   CA `2LChwWUqp9bby4bsLaJrKX5y4LpYzaaMzMvPBwjupump`
-- GATO: $188,007 1h vol, $13,260,380 mcap, +10% 1h  
-  CA `HsprHxBRgiVaQdRf3TnKNuZZtaX9JUSPgMFdAkk6pump`
+- RICO: $114,560 1h vol, $189,465 mcap, -59% 1h  
+  CA `8kuQg3WivDtL85VEdw2jEmSXjYt6EEeYBATJ4DtQpump`
+- MAMESUKE: $80,232 1h vol, $735,512 mcap, +10% 1h  
+  CA `SCGBBnSwnekytGFHgyeHHxPMiN7xDxsWFGg9JgFSTNK`
