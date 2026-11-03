@@ -1,13 +1,13 @@
 # Trencher live report
 
-Updated 2026-11-03T05:35:49Z (paper trading, never real money)
+Updated 2026-11-03T05:50:52Z (paper trading, never real money)
 
 - Equity: $74.23 (-25.8% vs $100 start)
-- Goal: $1,000 by 2026-11-05 05:03Z (pressing for it): at 7.4% of it, 2 days left, needs +272.6% a day from here
+- Goal: $1,000 by 2026-11-05 05:03Z (pressing for it): at 7.4% of it, 2 days left, needs +275.2% a day from here
 - Closed trades: 22, 3 wins
 - Fees paid: $14.78 (axiom $2.81, network $9.18, pool $2.66), plus $4.15 lost to slippage
 - New trades: on
-- Brain: subscription, 456 calls and 1 plan-limit hits in 48h
+- Brain: subscription, 454 calls and 1 plan-limit hits in 48h
 
 ## Scorecard (after fees)
 - 22 closed, 3 won (14%), net $-25.79
@@ -74,9 +74,13 @@ Updated 2026-11-03T05:35:49Z (paper trading, never real money)
   CA `H4gHnZ3NCU7Z9XQwGX6YYJNyieGEW8pqwGRUcdSxpump`
 
 ## Last scan
-- 05:35Z: 2 coins, 0 with pairs, 0 passed the market filters, 0 researched
+- 05:49Z: 4 coins, 2 with pairs, 1 passed the market filters, 1 researched
 
 ## Coins it looked at, and why it passed
+- 05:50Z METEORITE (MIGRATED, $198,689 mcap, $9,407 5m vol): PASS at conviction 3, PASS: 5m flow is 0.37x its hourly pace across all 7 meteorite coins, and the "AI market intelligence" site has no GitHub behind it. The crowd is leaving a LARP (V1, V6).  
+  CA `67RBmGztx8ciVyWr8yi6R8fwrc3EG86XejYT7mespump`
+- 05:46Z WASTED (DIP, $906,958 mcap, $3,314 5m vol): REJECT, Dev holds 3.5% (>1%) (V13, V17)  
+  CA `GexThZHgaswpAQ7Fi8QrHFubjPimUNSYhJiAA7XZpump`
 - 05:24Z stoke (FINAL_STRETCH, $21,627 mcap, $1,996 5m vol): REJECT, 5m volume $1,996 is dead (<$2,000) (V1)  
   CA `H1kK18Wk7W5B16VkXotDKwk3MGSeuhymZLiQp2GbZEqS`
 - 05:21Z GLITCH (MIGRATED, $3,636,312 mcap, $2,645 5m vol): REJECT, Top 10 hold 28.1% ex-pool (>25%) (V13)  
@@ -93,14 +97,10 @@ Updated 2026-11-03T05:35:49Z (paper trading, never real money)
   CA `31SYoqWFhx3i9UsfnoXTjFp4ZwJA8F8UPrMxymfDpump`
 - 05:06Z SMUGLY (MIGRATED, $162,155 mcap, $9,889 5m vol): PASS at conviction 2, PASS: SMUGLY is down 74% from its $632k peak, flow is running at 0.62x its hourly pace and the newest 15m candle dropped 39% to the hourly low. That's a falling knife, not a dip (V1, V6).  
   CA `DayjoyjxCA2SVTApEW7oBFG3WMvrYZRMjAnqsetLpump`
-- 05:05Z METEORITE (MIGRATED, $171,458 mcap, $22,301 5m vol): PASS at conviction 4, PASS: 19% off the high is breakout territory, but flow is 0.92x pace, sellers lead 126 to 93, and it's an AI tool with no GitHub. No breakout. (V1, V6)  
-  CA `67RBmGztx8ciVyWr8yi6R8fwrc3EG86XejYT7mespump`
-- 05:00Z RICO (DIP, $339,848 mcap, $1,706 5m vol): REJECT, 5m volume $1,706 is dead (<$2,000) (V1)  
-  CA `8kuQg3WivDtL85VEdw2jEmSXjYt6EEeYBATJ4DtQpump`
 
 ## What its skips did next (last 48h)
 A skip "ran" if the coin reached the first target (1.5x) from the skip price before a 20% drop, "dumped" if the drop came first. Sampled every 10 min, followed 6h.
-- top 10 over 25%: blocked 54, ran 9, dumped 42, flat 2, open 1 (saving losses: keep it)
+- top 10 over 25%: blocked 53, ran 9, dumped 41, flat 2, open 1 (saving losses: keep it)
   - ran: TIPPER up to 1.55x  
     CA `3DEcz7AnmJiGSnDHYvUeX5uPMMHVcDwqrWRSGdHEpump`
   - ran: Capri up to 1.84x  
@@ -114,13 +114,11 @@ A skip "ran" if the coin reached the first target (1.5x) from the skip price bef
     CA `6g16UK4wHoFhC7PCmw8LYYCdt9q8m99fyoAwxeCrpump`
   - ran: Anakinius up to 1.93x  
     CA `2pKpMwUQXNZeAf93LoomnZSworH3ezFzweCiuvrppump`
-- near the high / chasing: blocked 42, ran 3, dumped 36, flat 3, open 0 (saving losses: keep it)
+- near the high / chasing: blocked 41, ran 2, dumped 36, flat 3, open 0 (saving losses: keep it)
   - ran: BLUE up to 1.53x  
     CA `CPoGSmcjprCvzA2MFYLJMpQkGjmgVzKg4RVwMdrzpump`
   - ran: PIRATE up to 2.27x  
     CA `gzQXRwGRzfKLHfaV1f84QT7e5mt4vevu7MgacEfpump`
-  - ran: METEORITE up to 1.59x  
-    CA `67RBmGztx8ciVyWr8yi6R8fwrc3EG86XejYT7mespump`
 - falling knife (code): blocked 30, ran 5, dumped 22, flat 2, open 1 (saving losses: keep it)
   - ran: BLUE up to 1.53x  
     CA `CPoGSmcjprCvzA2MFYLJMpQkGjmgVzKg4RVwMdrzpump`
@@ -135,7 +133,7 @@ A skip "ran" if the coin reached the first target (1.5x) from the skip price bef
     CA `ChCi2x2bpevrNyeRoPHLXHzmaCdGQPuU15CNqxY1pump`
   - ran: Bitboy up to 1.6x  
     CA `GvXhSHnWrkAasjAUZeRzRfUBV2BJiiduaHarCWAEpump`
-- flow below pace: blocked 26, ran 6, dumped 17, flat 1, open 2 (saving losses: keep it)
+- flow below pace: blocked 26, ran 5, dumped 18, flat 1, open 2 (saving losses: keep it)
   - ran: Ahsoka up to 1.54x  
     CA `4nuj5NLHMtQSezfmz6CwBpCRJisFie6F6MxNNz1dpump`
   - ran: KOROSUKE up to 1.54x  
@@ -147,7 +145,7 @@ A skip "ran" if the coin reached the first target (1.5x) from the skip price bef
     CA `APH9FRoKst66E4a7uZXcEfE8NjtwybUC8Jq7ue8upump`
   - ran: NA up to 1.97x  
     CA `9ZmdP8q22ebRhEkcwd5EDkitu7ypeDFXTQXpv2kUpump`
-- thin 5m volume: blocked 13, ran 2, dumped 3, flat 5, open 3 (mixed)
+- thin 5m volume: blocked 13, ran 2, dumped 4, flat 5, open 2 (saving losses: keep it)
   - ran: CUMFACE up to 1.55x  
     CA `J1D3X8znX4AzUPMHVWyBLNHqBBqWDPNSjX4KwK3Qpump`
   - ran: KIDS up to 1.73x  
@@ -162,14 +160,14 @@ A skip "ran" if the coin reached the first target (1.5x) from the skip price bef
     CA `E5aeDjgq6ZSzAmihKoh9JPEhwK2bMCbZLJf6LYT9pump`
 
 ## Rules it changed from results and skips
-- 11-02 20:34Z loosened: DIP sizing: probation over, size by conviction when all gates pass (Owner override (Oct 30). Gates kept because DIPs went 0 for 5, all entered before the structure confirmed. The flow gate now matches the code param at 0.7.)
-- 11-02 20:34Z dropped: All retired fee/size/minimum-position fragments (The code fee check owns this (3x round-trip on the first target, ≤20% friction). Exits (1.5x initials, 20% stop, 35% trail) are owner-set and not restated.)
 - 11-02 23:38Z tightened: DIP gate: flow at least 0.7x the hourly pace plus a printed higher low (DIPs 0 for 5 (-$6.70), every one bought before the higher low held (HEXN x2, SIS, Something, Leverhedge). The code line is now aligned to the owner's 0.7x.)
 - 11-02 23:38Z dropped: Never-green cut at under 0.92x in the first 10 minutes (It works as a tighter stop than the owner's code-enforced 20%, which I was told not to set. Replaced by a thesis exit (sell when the printed higher low breaks) plus the existing time-based check at minute 10 (under 1.05x with flow under pace).)
 - 11-02 23:38Z added: Thesis exit: sell when the printed higher low the entry rested on breaks (HEXN #2, SIS and AAPLCAT all broke the higher low first and then slid through the stop to -27% to -31%. This exit is set by structure, not by a percent.)
 - 11-03 02:40Z tightened: Entries above ~$1M mcap (was capped at 7; now a probe at most, and only with a breakout printing) (10 trades above $1M: Something, CATBOT re-entry, FLOAT, HYPERCHAN x2, Leverhedge, PAWCAT, AAPLCAT, ANAKIN x2. Only one closed green, PAWCAT at +0.7%; the rest lost between -3% and -31%. Only FLOAT got past 1.3x, and it gave it all back. This goes below the owner's 7 floor for this band only. 10 samples with one scratch win is the strongest pattern in the book, and on a ~$74 wallet each of these was mostly fees. The floor still stands under $1M.)
 - 11-03 02:40Z added: Buy close to the structure: entry within ~12% above the printed higher low, otherwise PASS 'mid-range' (The 20% stop is set by the owner, so I fix the entry instead. The 9 stop exits filled at -59, -38, -36, -27, -31, -30, -31, -31 and -29%, about -35% on average after fees and gaps. HEXN #2, with its invalidation 13% under entry, was the smallest of them. Entering near the level lets the thesis-break exit fire before the price gaps through the hard stop.)
 - 11-03 02:40Z dropped: All retired fee/size/minimum-position fragments (The code fee check owns this now (target must pay 3x the round trip, round trip capped at 20% of the position), so per the owner's instruction these are no longer learned rules.)
+- 11-03 05:41Z tightened: DIP flow gate set to ≥0.7x hourly pace (owner gate, also the code param) (DIPs 0 for 5, −$6.70. Falling-knife (code) skips: 30 blocked, 5 ran, 22 dumped. The owner's Oct 30 note sets 0.7x.)
+- 11-03 05:41Z dropped: All retired fee/size/friction/minimum-position text (Code now enforces the fee check (target ≥3x round trip, round trip ≤20% of the position), so these notes are removed from the rules.)
 
 ## Recent lessons
 - [2026-10-30 10:53] Expected: HYPERCHAN, the clean flow leader of the HYPE meta at about $2M, would break its 4-hour range and run toward $3M. What happened: it peaked at 1.18x, never broke out, and the 45-minute time stop sold it at 1.05x on market cap, which is still a 4.9% loss after fees. The shallow-band leader rule did its job (clean holders, real flow, no dump), so it stays. What failed was the clock: my written rule is to exit if still under 1.0x at 45 min, but this one closed green on market cap, and a 1.5x move on a $2M coin rarely happens in 45 minutes (V1 talks about small new pairs, V6 about $70k–$11M runners). Next time, for MIGRATED entries above about $1M that are holding their range, give the time stop more room (about 90 min) and still exit if price closes back under the range low. One flat scratch is a sample of one, not a reason to drop the setup.
@@ -187,13 +185,13 @@ A skip "ran" if the coin reached the first target (1.5x) from the skip price bef
 The meta right now is fresh PumpSwap graduates about an hour old, $150k–$250k caps, with jokes about celebrities and about memecoins themselves. The celebrity-parody wave is rising: LeTwerk James ($153k, +121% on the hour, $27.8k on the 5m, buy ratio 0.64) and the brand-new World's Hardest Worker ($40k, 6 minutes old, $39k on the 5m). The memecoin/market-parody wave is mixed. Memestock is the live one ($235k, +283%, $25k on the 5m, flow balanced at 0.53). The crawler's own pick MEM has already died ($9k, -93%), and SMUGLY is fading (-55% on the hour, under $10k on the 5m). So the meta summary above it is stale and I'm not using it. Also fading or dead: anything political ($LAPTOP, MAGACREW, stay away per V13), GTA6 (GATO flat at $3.8k on the 5m), and most 1-hour corpses (Beast, Graft, Fartcoin2). Setups I'd research, all MIGRATED: LeTwerk first, because it has the strongest buyer share and a joke anyone gets. Then Memestock, but only on a pullback of about 10% off the local high, not at the top of a +283% candle. METEORITE has volume ($23.6k) but sellers lead at 0.43, so it's a watch until buyers come back. WORKER is 6 minutes old and still finding a price, so I won't snipe it (V5). Owner's push noted: clean setups that pass the hard lines and the holder, dev and bundle checks get real size, but a conviction number still has to be earned, not handed out.
 
 ## Moving most in its scans, last 30 min (1h volume)
-- LeTwerk: $638,844 1h vol, $153,327 mcap, +121% 1h  
-  CA `GtRH3cGYWPLLjjvcgMV1Fb3Jd25rhGRQmXgwu79Npump`
-- Memestock: $421,192 1h vol, $235,277 mcap, +283% 1h  
-  CA `9hKJb9YEf5RYb4f71Xr3Kr86hZq86Xad5X7gdyv1pump`
-- j*b: $203,885 1h vol, $3,230 mcap, -91% 1h  
-  CA `7uHBhrdN1UNf1vggnvoZMHVA6Du4NQe2USP2oMnYpump`
-- SMUGLY: $189,877 1h vol, $162,155 mcap, -56% 1h  
-  CA `DayjoyjxCA2SVTApEW7oBFG3WMvrYZRMjAnqsetLpump`
-- GATO: $150,747 1h vol, $11,075,862 mcap, -13% 1h  
+- METEORITE: $308,486 1h vol, $198,689 mcap, +14% 1h  
+  CA `67RBmGztx8ciVyWr8yi6R8fwrc3EG86XejYT7mespump`
+- GATO: $170,637 1h vol, $11,901,489 mcap, -10% 1h  
   CA `HsprHxBRgiVaQdRf3TnKNuZZtaX9JUSPgMFdAkk6pump`
+- j*b: $133,885 1h vol, $2,882 mcap, -94% 1h  
+  CA `7uHBhrdN1UNf1vggnvoZMHVA6Du4NQe2USP2oMnYpump`
+- coon: $125,377 1h vol, $3,304 mcap, +6% 1h  
+  CA `FkkQroBqQ85vpNkUwbJ6qvUDX7Rn5PKb8szyT6Etpump`
+- Graft: $64,887 1h vol, $13,358 mcap, -62% 1h  
+  CA `HQUk9fNaMUn3jPGsbBKdbmWBF2D1JCc3VaoP5GGhpump`
