@@ -1,13 +1,13 @@
 # Trencher live report
 
-Updated 2026-11-03T12:41:13Z (paper trading, never real money)
+Updated 2026-11-03T12:56:21Z (paper trading, never real money)
 
 - Equity: $74.23 (-25.8% vs $100 start)
 - Closed trades: 22, 3 wins
 - Fees paid: $14.78 (axiom $2.81, network $9.18, pool $2.66), plus $4.15 lost to slippage
 - New trades: WATCH-ONLY (scans and decides, buys nothing)
 - Brain: subscription, claude-haiku-5-5 for routine calls, claude-opus-5-5 for the daily review; 442 routine calls and 1 plan-limit hits in 48h
-- Watch log: 88 coins being followed, 12 filed, 0 would-buys (6h follow, sampled every 2 min)
+- Watch log: 88 coins being followed, 13 filed, 0 would-buys (6h follow, sampled every 2 min)
 
 ## Scorecard (after fees)
 - 22 closed, 3 won (14%), net $-25.79
@@ -73,9 +73,11 @@ Updated 2026-11-03T12:41:13Z (paper trading, never real money)
   CA `H4gHnZ3NCU7Z9XQwGX6YYJNyieGEW8pqwGRUcdSxpump`
 
 ## Last scan
-- 12:40Z: 3 coins, 3 with pairs, 0 passed the market filters, 0 researched
+- 12:56Z: 2 coins, 1 with pairs, 0 passed the market filters, 0 researched
 
 ## Coins it looked at, and why it passed
+- 12:48Z DESSA (DIP, $14,952,820 mcap, $9,536 5m vol): PASS at conviction 3, PASS. DESSA is a $15M bottom-buy with no catalyst and no breakout. Blocker: "no catalyst, narrative not rising." Only 1.79x hourly pace, and the story is a 10-day-old AI joke with no GitHub. (Owner bottom-buy rule, V1, V6, V13)  
+  CA `npz2FhoufQ7pKqhGpaipYWacrAkidyW2yDpVWSvpump`
 - 12:39Z PUMP (DIP, $106,837 mcap, $26,746 5m vol): REJECT, Dip with fading attention is a falling knife, not a dip (5m at 0.49x the hour's pace, under 0.6x)  
   CA `Hxqh7Fxsz11pyqDRdEkBgP8vP44BPLPnQDrxzPYZpump`
 - 12:36Z WASTED (DIP, $1,347,725 mcap, $5,074 5m vol): REJECT, Dev holds 3.5% (>1%) (V13, V17)  
@@ -94,8 +96,6 @@ Updated 2026-11-03T12:41:13Z (paper trading, never real money)
   CA `npz2FhoufQ7pKqhGpaipYWacrAkidyW2yDpVWSvpump`
 - 12:02Z RICO (MIGRATED, $560,722 mcap, $37,950 5m vol): PASS at conviction 2, PASS: RICO is riding a GTA 6 leak story that the sources tie to hackers and dumped memecoins, and it's a -22% 5m candle on 3.6x pace with no printed higher low. Blockers: hack-linked story, chasing spike, no higher low. (V6, V13)  
   CA `8kuQg3WivDtL85VEdw2jEmSXjYt6EEeYBATJ4DtQpump`
-- 11:54Z PUMP (MIGRATED, $44,346 mcap, $61,859 5m vol): PASS at conviction 2, PASS: copy of a bigger ticker, not the original. 20 larger same-ticker tokens, a site that doesn't show this CA and is 1.2 days old, and 12x hourly volume on a 4-minute-old pair is chasing. (V1, V3, V6)  
-  CA `Hxqh7Fxsz11pyqDRdEkBgP8vP44BPLPnQDrxzPYZpump`
 
 ## What its skips did next (last 48h)
 A skip "ran" if the coin reached the first target (1.5x) from the skip price before a 20% drop, "dumped" if the drop came first. Sampled every 10 min, followed 6h.
@@ -113,9 +113,6 @@ A skip "ran" if the coin reached the first target (1.5x) from the skip price bef
     CA `2pKpMwUQXNZeAf93LoomnZSworH3ezFzweCiuvrppump`
   - ran: CLIPPED up to 1.65x  
     CA `Bxyp4L6EbDys4fo51qxMEQTx41sj6McnsbPZTdvipump`
-- near the high / chasing: blocked 35, ran 1, dumped 29, flat 3, open 2 (saving losses: keep it)
-  - ran: PIRATE up to 2.27x  
-    CA `gzQXRwGRzfKLHfaV1f84QT7e5mt4vevu7MgacEfpump`
 - flow below pace: blocked 34, ran 7, dumped 21, flat 1, open 5 (saving losses: keep it)
   - ran: Ahsoka up to 1.54x  
     CA `4nuj5NLHMtQSezfmz6CwBpCRJisFie6F6MxNNz1dpump`
@@ -123,7 +120,8 @@ A skip "ran" if the coin reached the first target (1.5x) from the skip price bef
     CA `7ha4HFgdvkXaDcR2biCsuBpoCZzoLSRjb5we34Gbpump`
   - ran: CAPY up to 1.51x  
     CA `DBPTU2oKLDHXQjAEJ3rZi8bUGmt2uxUbipgg6xmXoMqr`
-- RugCheck danger: blocked 31, ran 6, dumped 24, flat 1, open 0 (saving losses: keep it)
+- near the high / chasing: blocked 34, ran 0, dumped 29, flat 3, open 2 (saving losses: keep it)
+- RugCheck danger: blocked 30, ran 6, dumped 23, flat 1, open 0 (saving losses: keep it)
   - ran: AIC up to 1.6x  
     CA `2T9WZjVC6L3BvusUtjKDT6HcZeEYgU9T5xhfJQxFpump`
   - ran: ZECRET up to 1.62x  
@@ -184,11 +182,11 @@ The trenches are trading fresh pump.fun and PumpSwap coins with real 5-minute vo
 ## Moving most in its scans, last 30 min (1h volume)
 - PUMP: $662,124 1h vol, $114,902 mcap, +222% 1h  
   CA `Hxqh7Fxsz11pyqDRdEkBgP8vP44BPLPnQDrxzPYZpump`
-- 1WIN: $375,489 1h vol, $18,009,347 mcap, +0% 1h  
+- 1WIN: $344,648 1h vol, $17,664,144 mcap, -5% 1h  
   CA `FjPKUGnF5zBpdEv18gT8FJCtxh3MKrFkoeYekgYr1win`
 - zkSnark: $177,200 1h vol, $129,396 mcap, +231% 1h  
   CA `ESqXTLxmuYeU2MeUzZfdxFP81EXpTPR5sgWkzmAVpump`
-- MOGGING: $166,922 1h vol, $10,314 mcap, -71% 1h  
+- MOGGING: $122,547 1h vol, $6,907 mcap, -85% 1h  
   CA `Ez1zGM23iZgzxvinkNEnTuSkyicwbahvRjfpRDaWnzbj`
-- 404: $98,916 1h vol, $23,071 mcap, +776% 1h  
-  CA `9gKArqT6qp3goHfuwAnfG7LioqwUtJ8TFu7P1Bhbpump`
+- RICO: $104,745 1h vol, $652,669 mcap, -14% 1h  
+  CA `8kuQg3WivDtL85VEdw2jEmSXjYt6EEeYBATJ4DtQpump`
