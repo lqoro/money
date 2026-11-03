@@ -1,13 +1,13 @@
 # Trencher live report
 
-Updated 2026-11-03T17:28:32Z (paper trading, never real money)
+Updated 2026-11-03T17:43:37Z (paper trading, never real money)
 
 - Equity: $74.23 (-25.8% vs $100 start)
 - Closed trades: 22, 3 wins
 - Fees paid: $14.78 (axiom $2.81, network $9.18, pool $2.66), plus $4.15 lost to slippage
 - New trades: WATCH-ONLY (scans and decides, buys nothing)
-- Brain: subscription, claude-haiku-5-5 for routine calls, claude-opus-5-5 for the daily review; 451 routine calls and 1 plan-limit hits in 48h
-- Watch log: 106 coins being followed, 86 filed, 0 would-buys (6h follow, sampled every 2 min)
+- Brain: subscription, claude-haiku-5-5 for routine calls, claude-opus-5-5 for the daily review; 454 routine calls and 1 plan-limit hits in 48h
+- Watch log: 110 coins being followed, 89 filed, 0 would-buys (6h follow, sampled every 2 min)
 
 ## Scorecard (after fees)
 - 22 closed, 3 won (14%), net $-25.79
@@ -73,47 +73,47 @@ Updated 2026-11-03T17:28:32Z (paper trading, never real money)
   CA `H4gHnZ3NCU7Z9XQwGX6YYJNyieGEW8pqwGRUcdSxpump`
 
 ## Last scan
-- 17:28Z: 9 coins, 7 with pairs, 0 passed the market filters, 0 researched
+- 17:43Z: 8 coins, 6 with pairs, 0 passed the market filters, 0 researched
 
 ## Coins it looked at, and why it passed
+- 17:42Z DESSA (MIGRATED, $8,983,430 mcap, $2,098 5m vol): PASS at conviction 2, PASS: DESSA is a sell-heavy, unlisted-story bag with no printed higher low and $2.1k of 5m volume. Blocker "dead story" plus "no higher low". Farm-shaped, not a bottom (V1, V6, V13).  
+  CA `npz2FhoufQ7pKqhGpaipYWacrAkidyW2yDpVWSvpump`
+- 17:37Z WASTED (DIP, $923,836 mcap, $2,138 5m vol): REJECT, Dev holds 3.5% (>1%) (V13, V17)  
+  CA `GexThZHgaswpAQ7Fi8QrHFubjPimUNSYhJiAA7XZpump`
+- 17:36Z MANIFEST (MIGRATED, $3,769,685 mcap, $3,245 5m vol): REJECT, Bundles: 10 linked wallet cluster(s) hold 26.5% of supply (>20%) (V17)  
+  CA `BCdwQBAn8dYB5YjTsoB6TdHAWokxv28k2oZUodERpump`
+- 17:34Z HIGH (MIGRATED, $214,861 mcap, $29,438 5m vol): REJECT, Dev holds 5.0% (>1%) (V13, V17)  
+  CA `7ymF66Z6VhgNiwadtVhjTtT6U7iQRpSxeiRrhfufhigh`
+- 17:33Z Ahsoka (DIP, $763,897 mcap, $4,301 5m vol): PASS at conviction 3, PASS — Ahsoka is a fan-meme DIP with no live story on the radar, theme flow at 0.84x pace, and a site that says "CA drops soon" instead of showing this CA. Blocker: "no catalyst / dead story" (owner bottom-buy rule). (V1, V13)  
+  CA `4nuj5NLHMtQSezfmz6CwBpCRJisFie6F6MxNNz1dpump`
+- 17:32Z Dacity (MIGRATED, $6,909,470 mcap, $6,876 5m vol): REJECT, Bundles: 10 linked wallet cluster(s) hold 24.0% of supply (>20%) (V17)  
+  CA `nxPqZ4F7ux8Vph5NFu25rEP6Kx9Gr1U6Fmj36Rjpump`
+- 17:32Z Votter (FINAL_STRETCH, $25,194 mcap, $46,634 5m vol): PASS at conviction 3, PASS: an 18-copy "voted" vamp field with zero radar mentions, a 20-minute-old +370% spike, no catalyst, and top 10 at 23.1%. A launch burst until proven otherwise (V1, V13).  
+  CA `GMvusXXQaNzV6AzSzvoKzjeZmnQ4j8jWVSCk53supump`
 - 17:27Z 2500 (DIP, $98,162 mcap, $22,703 5m vol): REJECT, Dip with fading attention is a falling knife, not a dip (5m at 0.49x the hour's pace, under 0.6x)  
   CA `DaBhddL4WRF1JKiZAruSBYdDmVCH3ocaajFoon89pump`
 - 17:24Z AMERICA (MIGRATED, $39,386 mcap, $22,800 5m vol): PASS at conviction 3, PASS — third-ticker copy in a 20-coin AMERICA field, not the leader, about 2 minutes old at 12x hourly pace. Split crowd, too new, chasing spike (V1, V3, V6).  
   CA `9Vt3E7j4Vm5KQgMcXJCEENbhUQ21GHDyqvoEDAewjy7Q`
 - 17:21Z VOTTER (FINAL_STRETCH, $29,368 mcap, $11,127 5m vol): REJECT, Top 10 hold 26.2% ex-pool (>25%) (V13)  
   CA `4YBfjTYRNkicmagujrxKdQpYv93XYwnThSXPpqcApump`
-- 17:19Z ElunMesk (MIGRATED, $247,807 mcap, $71,037 5m vol): REJECT, Dev holds 1.2% (>1%) (V13, V17)  
-  CA `ByaRBuSE7KYAjHcb6h1MdK6dbAZv4ycRFmXSdK2Cpump`
-- 17:19Z KOTANOSUKE (MIGRATED, $298,715 mcap, $89,207 5m vol): PASS at conviction 3, PASS: chasing spike, 6.6% off a $320k high after a +31% 5m candle at 4.1x hourly pace. Wait for a retrace and a printed higher low. (V1, V6)  
-  CA `2JPSdYmf9tkKu1ks479jYourtwu8ewAqzkGyXuyXpump`
-- 17:16Z OFF (FINAL_STRETCH, $20,145 mcap, $4,764 5m vol): PASS at conviction 3, PASS: OFF is a 1-day-old "dark pool for memes" with 5m flow at 0.47x its hourly pace, a theme running at 0.08x across 8 copies, and a saw-tooth 15m chart. Blocker: flow below pace. (V1, V6, V13)  
-  CA `BfYkuqnsxbLpQGzjrg6QdFPKs5Kt48hTMAWfA1a5pump`
-- 17:12Z GTAVI (MIGRATED, $92,362 mcap, $174,017 5m vol): PASS at conviction 3, PASS: chasing spike, no base. GTAVI is 6 minutes old, up 48% on the 5m at 9.5x hourly pace, with no printed higher low. Blockers: "chasing spike" and "too new" (V1, V6).  
-  CA `HekahVohmeokPUhscg5taNme3Qs2fcSQoNgEeUPMpump`
-- 17:11Z ANONVOYAGE (MIGRATED, $1,816,802 mcap, $7,836 5m vol): REJECT, Bundles: 10 linked wallet cluster(s) hold 50.3% of supply (>20%) (V17)  
-  CA `8muc9DdhqWfAPcvmEebNQCG89bLiwi12T2KtBtzVpump`
-- 17:10Z NALA (MIGRATED, $181,155 mcap, $9,331 5m vol): PASS at conviction 4, PASS: NALA flow is at 0.45x its hourly pace and the cat theme is running at 0.46x. The bottom-buy gate fails on both counts (V1, V6).  
-  CA `Ea17SQuUXSV7wDv4kqbFPSjrVr5WmDXBFLJvKR1Mpump`
-- 17:08Z SPHERE (MIGRATED, $191,977 mcap, $3,557 5m vol): PASS at conviction 2, PASS. SPHERE is an 88% drawdown with a 0.8-day-old website that doesn't show the CA, 5m flow under $10k, and no story behind it. Blocker: dead story. (V1, V6, V13)  
-  CA `31SYoqWFhx3i9UsfnoXTjFp4ZwJA8F8UPrMxymfDpump`
 
 ## What its skips did next (last 48h)
 A skip "ran" if the coin reached the first target (1.5x) from the skip price before a 20% drop, "dumped" if the drop came first. Sampled every 10 min, followed 6h.
-- too new / sniping: blocked 58, ran 10, dumped 46, flat 0, open 2 (saving losses: keep it)
+- too new / sniping: blocked 58, ran 10, dumped 47, flat 0, open 1 (saving losses: keep it)
   - ran: VETOTRUMP up to 1.66x  
     CA `6g16UK4wHoFhC7PCmw8LYYCdt9q8m99fyoAwxeCrpump`
   - ran: Anakinius up to 1.93x  
     CA `2pKpMwUQXNZeAf93LoomnZSworH3ezFzweCiuvrppump`
   - ran: CLIPPED up to 1.65x  
     CA `Bxyp4L6EbDys4fo51qxMEQTx41sj6McnsbPZTdvipump`
-- top 10 over 25%: blocked 55, ran 9, dumped 42, flat 1, open 3 (saving losses: keep it)
+- top 10 over 25%: blocked 54, ran 9, dumped 42, flat 1, open 2 (saving losses: keep it)
   - ran: Bitboy up to 1.6x  
     CA `GvXhSHnWrkAasjAUZeRzRfUBV2BJiiduaHarCWAEpump`
   - ran: GODHOUSE up to 3.19x  
     CA `CSGTuLtWhCfGZ5S5TvASQ6a5su91NCfRpNqfPczfpump`
   - ran: KYBER up to 1.83x  
     CA `BasL6j1MNkjFyuvRRFsmbm3bKqFPr6Yg3UhShii6pump`
-- flow below pace: blocked 38, ran 7, dumped 27, flat 2, open 2 (saving losses: keep it)
+- flow below pace: blocked 38, ran 7, dumped 26, flat 2, open 3 (saving losses: keep it)
   - ran: KOROSUKE up to 1.54x  
     CA `7ha4HFgdvkXaDcR2biCsuBpoCZzoLSRjb5we34Gbpump`
   - ran: CAPY up to 1.51x  
@@ -125,38 +125,38 @@ A skip "ran" if the coin reached the first target (1.5x) from the skip price bef
     CA `BZXh2LcnNNyypxsdfVeFzXawqmoGoSShC5i4NEQQpump`
   - ran: LUCIA up to 1.83x  
     CA `Cbtnpg6SL9jvZxtZTYYFPtVQXkuuqSUxCU5aXeTkpump`
-- falling knife (code): blocked 30, ran 5, dumped 20, flat 1, open 4 (saving losses: keep it)
+- falling knife (code): blocked 29, ran 5, dumped 19, flat 1, open 4 (saving losses: keep it)
   - ran: VETOTRUMP up to 1.66x  
     CA `6g16UK4wHoFhC7PCmw8LYYCdt9q8m99fyoAwxeCrpump`
   - ran: STEALTH up to 1.77x  
     CA `GoDSW31bTxfkoup9yA1qcGGx9RMXdTEWgApv3xzBmoA`
   - ran: PEACE up to 1.75x  
     CA `BngAfLZxaWN2QvpFhRbUHydYGr8zA7YTSA178G8Epump`
-- RugCheck danger: blocked 27, ran 5, dumped 21, flat 1, open 0 (saving losses: keep it)
+- RugCheck danger: blocked 26, ran 5, dumped 20, flat 1, open 0 (saving losses: keep it)
   - ran: ZECRET up to 1.62x  
     CA `ChCi2x2bpevrNyeRoPHLXHzmaCdGQPuU15CNqxY1pump`
   - ran: Bitboy up to 1.6x  
     CA `GvXhSHnWrkAasjAUZeRzRfUBV2BJiiduaHarCWAEpump`
   - ran: COLLECTOR up to 1.62x  
     CA `6kKETm8xPeZ2z1DBYjXmxMTFAJudvGHJvRHu5Wt8uGtf`
-- bundles over the line: blocked 21, ran 3, dumped 15, flat 1, open 2 (saving losses: keep it)
+- bundles over the line: blocked 21, ran 3, dumped 15, flat 0, open 3 (saving losses: keep it)
   - ran: Nuts up to 1.53x  
     CA `APH9FRoKst66E4a7uZXcEfE8NjtwybUC8Jq7ue8upump`
   - ran: NA up to 1.97x  
     CA `9ZmdP8q22ebRhEkcwd5EDkitu7ypeDFXTQXpv2kUpump`
   - ran: MAMESUKE up to 1.95x  
     CA `SCGBBnSwnekytGFHgyeHHxPMiN7xDxsWFGg9JgFSTNK`
-- thin 5m volume: blocked 15, ran 3, dumped 7, flat 3, open 2 (saving losses: keep it)
+- falling knife / no higher low: blocked 15, ran 1, dumped 11, flat 2, open 1 (saving losses: keep it)
+  - ran: HEDGE up to 1.77x  
+    CA `wDSAqt4tEZpDAwB9XY6ejkZvMFuT1zUMjUh67txeYhf`
+- thin 5m volume: blocked 14, ran 3, dumped 7, flat 3, open 1 (saving losses: keep it)
   - ran: CUMFACE up to 1.55x  
     CA `J1D3X8znX4AzUPMHVWyBLNHqBBqWDPNSjX4KwK3Qpump`
   - ran: KIDS up to 1.73x  
     CA `7uwr9Zoz8WW9UyRVC22nmmAXRbPoFTUpVjsN8q7kids`
   - ran: 404 up to 1.89x  
     CA `9gKArqT6qp3goHfuwAnfG7LioqwUtJ8TFu7P1Bhbpump`
-- falling knife / no higher low: blocked 15, ran 1, dumped 12, flat 2, open 0 (saving losses: keep it)
-  - ran: HEDGE up to 1.77x  
-    CA `wDSAqt4tEZpDAwB9XY6ejkZvMFuT1zUMjUh67txeYhf`
-- dev share over 1%: blocked 10, ran 2, dumped 3, flat 2, open 3 (mixed)
+- dev share over 1%: blocked 11, ran 2, dumped 3, flat 2, open 4 (mixed)
   - ran: Firecube up to 1.88x  
     CA `Ebih1KdijjpQBaM83gUfGhRtTCpHzDkBZhCZedZwpump`
   - ran: HUND  up to 1.63x  
@@ -198,16 +198,16 @@ There's no positive after-cost edge yet. The 13 settled coins averaged -6.7% net
 - [2026-11-02 20:25] I expected Slingoor, a clean MIGRATED leader with $25k of 5m flow at pace and a 0.77 buy share, to retest its $408k high from $304k. It never went green (0.98x peak) and hit the -20% stop in 2 minutes, a -$2.86 probe. My own thesis admitted there was no printed higher low after a peak only 6 minutes old, so this confirms the money-shape rule: buy share and flow are not structure (V1, V6). Next time a MIGRATED pullback with no higher low above the hourly low is a PASS with blocker "no higher low", not a probe. This is one loss, so it adds no new ban beyond the rule I already have.
 
 ## Meta right now
-The scan shows an animal and cat theme plus fresh one-hour bursts, not a Trump-name meta. NALA (Shark Cat, $174k cap, 78% buys, $12.5k 5m, 0.9h old) is the only cat coin with real buyers and volume, while CATEMAS shows the same theme fading (down 83%, $654 on the 5m). The GTA6 name is fading too (GATO flat at $11.8M with 39% buys, GTAMAS down 99%), and the Trump launches are already dead on-chain: PMT scans at $2.1k with zero 5m volume, so the web read's $217k figure is stale and I'm trusting the scan. CYBRLK ($149k, $205k 5m, 60% buys, 0.2h old) and HUGO ($77k, $61k 5m, 51% buys) are rising, but volume that size on a token this young is a launch burst until proven organic. Setups to research now: NALA, after the full holder and bundle check, with a stop below the cat-theme low; CYBRLK only if the burst cools and buy ratio holds above 60%. BINGUS, HI, KITTY and DJT aren't in the scan, so I can't verify them and they aren't setups, and no hack-named coins.
+The trenches are trading three things right now. First, GTA and cat names: GTAVI ARC ($104k cap, $189k 5m, 56% buys, 0.1h old) is the freshest and biggest, NALA (Shark Cat) has the cleanest buy ratio at 76%, and the old GTA6CAT/GATO ($12M, flat, 38% buys) and pincat are fading. Second, famous-name and election jokes: ElunMesk ($248k cap, $71k 5m, 69% buys) and "I Voted" (Votter, $26k cap, $45k 5m, 62% buys) are both up 380-400% in an hour, which is attention, not proof. Third, launch bursts with turnover far above market cap, like Kotanosuke (+602% in 1h, $89k 5m on $299k cap) and CYBRLK ($1.18M 1h on $70k cap), which is a launch burst until the holder and bundle checks say otherwise. Rising: GTAVI ARC, ElunMesk, Votter, Kotanosuke, OFF, 2500. Fading: GATO, pincat, nut (15% buys), SARAH. Setups to research, not buys: GTAVI ARC first, since it has the most volume on the GTA theme, and NALA only if 5m volume holds above $10k; ElunMesk is a famous-name impersonation risk, so it needs similar-token and holder checks before anything. The crawler's meta_summary doesn't match scan_movers (CYBRLK $149k vs $70k, NALA $174k vs $152k), so I'm using the scan figures; the LAPTOP headlines are a political-figure coin that crashed 98%, a PASS, and no hack-named coins showed up in the movers.
 
 ## Moving most in its scans, last 30 min (1h volume)
-- CYBRLK: $1,182,158 1h vol, $69,878 mcap, +68% 1h  
-  CA `Farisr1LVuzWrHBhLmcRwjdAaZAstTnXtRfifFbwLEEK`
-- HUGO: $575,981 1h vol, $42,987 mcap, +18% 1h  
-  CA `2KwPc4FxdNm92DKo6Zy8vUF9sGYsXuKjykXEhXkdpump`
 - 2500: $553,613 1h vol, $101,850 mcap, +165% 1h  
   CA `DaBhddL4WRF1JKiZAruSBYdDmVCH3ocaajFoon89pump`
-- ANONVOYAGE: $384,909 1h vol, $1,816,802 mcap, -4% 1h  
-  CA `8muc9DdhqWfAPcvmEebNQCG89bLiwi12T2KtBtzVpump`
 - KOTANOSUKE: $262,377 1h vol, $298,715 mcap, +602% 1h  
   CA `2JPSdYmf9tkKu1ks479jYourtwu8ewAqzkGyXuyXpump`
+- HIGH: $258,646 1h vol, $205,820 mcap, +307% 1h  
+  CA `7ymF66Z6VhgNiwadtVhjTtT6U7iQRpSxeiRrhfufhigh`
+- 1WIN: $249,251 1h vol, $16,004,257 mcap, -4% 1h  
+  CA `FjPKUGnF5zBpdEv18gT8FJCtxh3MKrFkoeYekgYr1win`
+- ElunMesk: $247,042 1h vol, $247,807 mcap, +405% 1h  
+  CA `ByaRBuSE7KYAjHcb6h1MdK6dbAZv4ycRFmXSdK2Cpump`
