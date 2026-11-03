@@ -141,8 +141,14 @@ class Config:
     max_candidates_per_scan: int = 6
 
     # --- Brain (Claude) -----------------------------------------------------
-    model: str = "claude-opus-5-5"
+    # Owner (Nov 3): Haiku for the routine per-coin calls (decide, stop review, lessons,
+    # meta summary), Opus only at the head of the chain: the daily log review and rule
+    # rewrites. steer.json's "brain_model" / "head_model" override these and MODEL in .env.
+    model: str = "claude-haiku-5-5"
     effort: str = "medium"  # low | medium | high | xhigh | max
+    head_model: str = "claude-opus-5-5"
+    head_effort: str = "high"
+    daily_review_hour_utc: float = 13.0  # 7 AM in Fort Worth (CST)
     # Pacing, not a bill: on a Claude plan every call draws on the same usage window
     # you use yourself. 0 = no hourly cap (it runs until the plan's limit, then waits
     # for the reset). Evolvable: Trencher sets its own pace from how its usage goes.
@@ -174,6 +180,17 @@ class Config:
     skip_review_interval_min: float = 10.0
     skip_evolve_every_hours: float = 3.0  # evolve from skips this often, even with no closed trades
     skip_evolve_min_resolved: int = 10  # ...once at least this many skips have played out
+
+    # --- Watch-only mode (owner, Nov 3): scan, research and decide, buy nothing -------
+    # Set only through steer.json's top-level "watch_only". Every coin that passes the
+    # market filters is logged with its numbers and followed for watch_follow_hours, so
+    # rule sets can be tested against the real price path and real costs (agent/watch.py).
+    watch_only: bool = False
+    watch_follow_hours: float = 6.0
+    watch_sample_min: float = 2.0
+    watch_reobserve_min: float = 30.0  # a coin still passing the filters gets a fresh observation this often
+    watch_max_live: int = 900  # cap on coins followed at once (DexScreener calls stay ~30 per sample)
+    watch_keep_days: float = 14.0
 
     # --- Web crawler: meta radar + project crawler --------------------------
     radar_interval_min: float = 10.0

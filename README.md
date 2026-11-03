@@ -7,6 +7,30 @@ hard rules live in **[`SOUL.md`](SOUL.md)**. Claude is its brain.
 
 No real money, wallet or keys are involved. It only simulates trades.
 
+## Watch-only week and the daily review (Nov 3)
+
+After 22 paper trades lost $25.79 (most of it fees and slippage), the owner paused
+trading for a week of watch-only. With `"watch_only": true` in `steer.json`,
+Trencher scans, researches and decides exactly as before but buys nothing
+(`agent/watch.py`):
+
+- Every coin that passes the market filters becomes an observation: its numbers at
+  that moment, what the checklist and the brain said, and the buy it would have made.
+- Each is followed for 6h, sampled every 2 min: the price multiple at fixed
+  checkpoints, minutes to 1.3/1.5/2/3/5x and to 0.9/0.8/0.7/0.5x, and its high.
+- Settled observations go to `memory/observations/YYYY-MM-DD.jsonl` and are copied
+  to `watch/` on the trencher-live branch, so rule sets can be replayed offline
+  against real costs.
+- Its learned rules stay frozen during the week, so the test measures one rule set.
+
+The brain runs on two models: `MODEL` (Haiku 5.5 by default) for the routine
+per-coin calls (research, stop reviews, lessons, the meta summary), and
+`HEAD_MODEL` (Opus 5.5) at the head of the chain, which once a day after
+`DAILY_REVIEW_HOUR_UTC` (13:00 UTC, 7 AM in Fort Worth) reads the day's
+observations, skips and trades and writes what they show into the report.
+`steer.json` can set `brain_model` and `head_model` (Haiku, Sonnet or Opus 5.5),
+which win over `.env`.
+
 ## How it works
 
 ```
