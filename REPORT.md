@@ -1,13 +1,13 @@
 # Trencher live report
 
-Updated 2026-11-03T19:59:23Z (paper trading, never real money)
+Updated 2026-11-03T20:14:27Z (paper trading, never real money)
 
 - Equity: $74.23 (-25.8% vs $100 start)
 - Closed trades: 22, 3 wins
 - Fees paid: $14.78 (axiom $2.81, network $9.18, pool $2.66), plus $4.15 lost to slippage
 - New trades: WATCH-ONLY (scans and decides, buys nothing)
-- Brain: subscription, claude-haiku-5-5 for routine calls, claude-opus-5-5 for the daily review; 466 routine calls and 1 plan-limit hits in 48h
-- Watch log: 133 coins being followed, 116 filed, 0 would-buys (6h follow, sampled every 2 min)
+- Brain: subscription, claude-haiku-5-5 for routine calls, claude-opus-5-5 for the daily review; 465 routine calls and 1 plan-limit hits in 48h
+- Watch log: 134 coins being followed, 120 filed, 0 would-buys (6h follow, sampled every 2 min)
 
 ## Scorecard (after fees)
 - 22 closed, 3 won (14%), net $-25.79
@@ -73,9 +73,19 @@ Updated 2026-11-03T19:59:23Z (paper trading, never real money)
   CA `H4gHnZ3NCU7Z9XQwGX6YYJNyieGEW8pqwGRUcdSxpump`
 
 ## Last scan
-- 19:58Z: 4 coins, 3 with pairs, 0 passed the market filters, 0 researched
+- 20:13Z: 4 coins, 3 with pairs, 0 passed the market filters, 0 researched
 
 ## Coins it looked at, and why it passed
+- 20:12Z ANONVOYAGE (MIGRATED, $2,133,383 mcap, $5,514 5m vol): REJECT, Bundles: 10 linked wallet cluster(s) hold 50.3% of supply (>20%) (V17)  
+  CA `8muc9DdhqWfAPcvmEebNQCG89bLiwi12T2KtBtzVpump`
+- 20:11Z MAIN (FINAL_STRETCH, $22,515 mcap, $11,810 5m vol): REJECT, Top 10 hold 25.9% ex-pool (>25%) (V13)  
+  CA `BHzH8z58Vx2WiKBR2AGCNfYm54s1YnqHr8Z1YxS3pump`
+- 20:09Z SPHERE (MIGRATED, $198,019 mcap, $2,142 5m vol): PASS at conviction 2, PASS: bottom buy with no story. SPHERE is 88% off its $1.65M high, flow is 0.86x pace, and 20 coins share the name. Blocker: "no catalyst". (V1, V6, V13)  
+  CA `31SYoqWFhx3i9UsfnoXTjFp4ZwJA8F8UPrMxymfDpump`
+- 20:08Z Mag (MIGRATED, $503,506 mcap, $503,003 5m vol): PASS at conviction 2, PASS: chasing spike. Mag is the 5m leader of a 21-copy same-name field, up 86% on the last 5m candle at 3.5x hourly pace, with 12.4% in linked bundles and no printed higher low. Blocker: "chasing spike" (V1, V6, V13).  
+  CA `AxPzkSJKU3ACqZu7qpq8ov29g4BENZBM4SAZwUUUFo8M`
+- 20:05Z WASTED (DIP, $824,116 mcap, $4,892 5m vol): REJECT, Dev holds 3.5% (>1%) (V13, V17)  
+  CA `GexThZHgaswpAQ7Fi8QrHFubjPimUNSYhJiAA7XZpump`
 - 19:54Z Pog (FINAL_STRETCH, $24,581 mcap, $49,351 5m vol): PASS at conviction 2, PASS: chasing spike, 5 minutes old, 20-copy "Pog" field, no story behind it. Blockers: "chasing spike" + "too new" + "split crowd". Lottery ticket, not a trade (V1, V6, V13).  
   CA `JcPLcB4WN61b2i6cZctiXW2R9AYCAKCQo6tqFVNpump`
 - 19:54Z GTA$ (MIGRATED, $31,347 mcap, $3,670 5m vol): PASS at conviction 2, PASS — 5m flow at 0.22x its hourly pace, 29 copies of the ticker, and a 33-minute-old migration still bleeding off its spike. Not a probe. (V1, V6, V13)  
@@ -86,46 +96,36 @@ Updated 2026-11-03T19:59:23Z (paper trading, never real money)
   CA `4nuj5NLHMtQSezfmz6CwBpCRJisFie6F6MxNNz1dpump`
 - 19:50Z Dacity (MIGRATED, $6,750,744 mcap, $5,825 5m vol): REJECT, Bundles: 10 linked wallet cluster(s) hold 24.0% of supply (>20%) (V17)  
   CA `nxPqZ4F7ux8Vph5NFu25rEP6Kx9Gr1U6Fmj36Rjpump`
-- 19:49Z Relic (FINAL_STRETCH, $25,750 mcap, $3,755 5m vol): REJECT, Top 10 hold 28.8% ex-pool (>25%) (V13)  
-  CA `FfH6zeDiDYjySz4npwSzT2iwkezyJpopfS8JFvEVpump`
-- 19:39Z DCYC (MIGRATED, $134,400 mcap, $11,374 5m vol): PASS at conviction 3, PASS — DCYC is at its high after a +43% five-minute spike, with no printed higher low and 22 copies splitting the crowd. Chasing, in a vamp field (blocker: chasing spike). (V1, V6)  
-  CA `EJPWoVgMrkZrqZAtRkGvA4jppbo15rMF2hhe1EPzpump`
-- 19:38Z XingXing (MIGRATED, $33,853 mcap, $3,992 5m vol): PASS at conviction 2, PASS: too new, chasing a spike, no printed higher low, and 8 copies of the ticker. Clean holders don't fix any of that. (V1, V6, V13)  
-  CA `AdNqCG9CeMb8i6KjQBCDLyuUkBRtb5AMnfNqzjUcpump`
-- 19:37Z mag (MIGRATED, $241,150 mcap, $75,960 5m vol): PASS at conviction 3, PASS: chasing spike. 5m is +75% and the coin is 12 minutes old with no printed higher low, inside a 13-copy vamp field. Wait. (V1, V6)  
-  CA `BZYkZXtHNK7g1ZQ26iNgkLe1ufDrLUX8EcCGLGF7pump`
-- 19:36Z MEOWNERO (MIGRATED, $201,301 mcap, $2,841 5m vol): PASS at conviction 2, PASS: flow below pace, one 12.4% bundle cluster, no higher low, and the price data is broken. Farm-shaped until proven otherwise (V1, V3, V6).  
-  CA `6gnB2H2hbTVvKUWCzNuqjWY8Rod6EVBmfHi7YxZpTWa7`
 
 ## What its skips did next (last 48h)
 A skip "ran" if the coin reached the first target (1.5x) from the skip price before a 20% drop, "dumped" if the drop came first. Sampled every 10 min, followed 6h.
-- too new / sniping: blocked 61, ran 12, dumped 46, flat 0, open 3 (saving losses: keep it)
+- too new / sniping: blocked 61, ran 12, dumped 48, flat 0, open 1 (saving losses: keep it)
   - ran: VETOTRUMP up to 1.66x  
     CA `6g16UK4wHoFhC7PCmw8LYYCdt9q8m99fyoAwxeCrpump`
   - ran: Anakinius up to 1.93x  
     CA `2pKpMwUQXNZeAf93LoomnZSworH3ezFzweCiuvrppump`
   - ran: CLIPPED up to 1.65x  
     CA `Bxyp4L6EbDys4fo51qxMEQTx41sj6McnsbPZTdvipump`
-- top 10 over 25%: blocked 55, ran 9, dumped 42, flat 2, open 2 (saving losses: keep it)
+- top 10 over 25%: blocked 56, ran 9, dumped 42, flat 2, open 3 (saving losses: keep it)
   - ran: GODHOUSE up to 3.19x  
     CA `CSGTuLtWhCfGZ5S5TvASQ6a5su91NCfRpNqfPczfpump`
   - ran: KYBER up to 1.83x  
     CA `BasL6j1MNkjFyuvRRFsmbm3bKqFPr6Yg3UhShii6pump`
   - ran: WIF up to 1.67x  
     CA `E7ayy5Se6gjwCNtw9NP629AucnTgqab4SSmSxDpUpump`
-- flow below pace: blocked 44, ran 7, dumped 30, flat 2, open 5 (saving losses: keep it)
+- flow below pace: blocked 45, ran 7, dumped 31, flat 2, open 5 (saving losses: keep it)
   - ran: KOROSUKE up to 1.54x  
     CA `7ha4HFgdvkXaDcR2biCsuBpoCZzoLSRjb5we34Gbpump`
   - ran: CAPY up to 1.51x  
     CA `DBPTU2oKLDHXQjAEJ3rZi8bUGmt2uxUbipgg6xmXoMqr`
   - ran: ZERO up to 1.61x  
     CA `Aes6XNH9BboLZuchD5PnDwaX6Zj1nU79TU3gNtPEpump`
-- near the high / chasing: blocked 34, ran 2, dumped 26, flat 4, open 2 (saving losses: keep it)
+- near the high / chasing: blocked 35, ran 2, dumped 27, flat 4, open 2 (saving losses: keep it)
   - ran: underdog up to 1.64x  
     CA `BZXh2LcnNNyypxsdfVeFzXawqmoGoSShC5i4NEQQpump`
   - ran: LUCIA up to 1.83x  
     CA `Cbtnpg6SL9jvZxtZTYYFPtVQXkuuqSUxCU5aXeTkpump`
-- falling knife (code): blocked 30, ran 5, dumped 22, flat 1, open 2 (saving losses: keep it)
+- falling knife (code): blocked 30, ran 5, dumped 23, flat 1, open 1 (saving losses: keep it)
   - ran: VETOTRUMP up to 1.66x  
     CA `6g16UK4wHoFhC7PCmw8LYYCdt9q8m99fyoAwxeCrpump`
   - ran: STEALTH up to 1.77x  
@@ -203,13 +203,13 @@ There's no positive after-cost edge yet. The 13 settled coins averaged -6.7% net
 The meta is pump.fun launch bursts: sub-1.5h-old coins with 1h volume several times market cap, led by PEPTDOG (0.1h old, $97k cap, $132k 5m, 58% buys), GIVE Musk (0.0h, $14k cap, +351%) and PEPECOIN (0.2h, $27k cap, +754%, 63% buys), with dog, frog and cat jokes riding along (PEPTDOG, MAYA, GATO). The crawler's name-fight numbers don't match the scan: the Dacity and Kotanosuke figures aren't in it, and the scan's $DCYC (9iFR) is a $2.1k cap, down 97% in an hour, with $619 on 5m and 50% buys, so it isn't the organic setup the summary claims. GTA is split: GTA$ is still running ($66k 5m, 68% buys) while GATO sits at 34% buys and is fading. Setups to research, not buys: PEPTDOG and GTA$ for flow, and GIVE Musk and PEPECOIN only after a similar-token check, since an Elon or Pepe name next to a bigger original is a vamp until proven otherwise. These are sub-hour new pairs, which we don't snipe, so any position waits for holder and bundle checks and a settled chart, and nothing clears conviction 5 on the scan alone.
 
 ## Moving most in its scans, last 30 min (1h volume)
-- mag: $317,624 1h vol, $218,672 mcap, +272% 1h  
-  CA `BZYkZXtHNK7g1ZQ26iNgkLe1ufDrLUX8EcCGLGF7pump`
-- stocky: $220,433 1h vol, $34,630 mcap, +32% 1h  
-  CA `G1sPgsNMMfEY8ebZUd6ioQyUmyo8Z93FUqG3xfQdpump`
+- Mag: $1,757,645 1h vol, $476,273 mcap, +2411% 1h  
+  CA `AxPzkSJKU3ACqZu7qpq8ov29g4BENZBM4SAZwUUUFo8M`
 - GTA$: $203,049 1h vol, $31,461 mcap, -28% 1h  
   CA `J9298rzfgWxxTGSTmqsTiPQ1ZfdfADgV6UuFYKMFpump`
-- DCYC: $148,296 1h vol, $121,116 mcap, +314% 1h  
-  CA `EJPWoVgMrkZrqZAtRkGvA4jppbo15rMF2hhe1EPzpump`
-- 1WIN: $147,314 1h vol, $15,176,017 mcap, -3% 1h  
+- 1WIN: $150,476 1h vol, $14,605,224 mcap, -5% 1h  
   CA `FjPKUGnF5zBpdEv18gT8FJCtxh3MKrFkoeYekgYr1win`
+- CHOOBOT: $142,858 1h vol, $146,684 mcap, +221% 1h  
+  CA `CMPgvtyfyQwXGeT8hDFGqegm5ehvJnmti7LMadjvpump`
+- GATO: $109,607 1h vol, $12,314,809 mcap, +8% 1h  
+  CA `HsprHxBRgiVaQdRf3TnKNuZZtaX9JUSPgMFdAkk6pump`
