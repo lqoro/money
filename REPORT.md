@@ -1,13 +1,13 @@
 # Trencher live report
 
-Updated 2026-11-03T01:47:52Z (paper trading, never real money)
+Updated 2026-11-03T02:03:05Z (paper trading, never real money)
 
 - Equity: $74.23 (-25.8% vs $100 start)
-- Goal: $1,000 by 2026-11-05 05:03Z (pressing for it): at 7.4% of it, 2.1 days left, needs +238% a day from here
+- Goal: $1,000 by 2026-11-05 05:03Z (pressing for it): at 7.4% of it, 2.1 days left, needs +240% a day from here
 - Closed trades: 22, 3 wins
 - Fees paid: $14.78 (axiom $2.81, network $9.18, pool $2.66), plus $4.15 lost to slippage
 - New trades: on
-- Brain: subscription, 487 calls and 0 plan-limit hits in 48h
+- Brain: subscription, 484 calls and 0 plan-limit hits in 48h
 
 ## Scorecard (after fees)
 - 22 closed, 3 won (14%), net $-25.79
@@ -74,9 +74,19 @@ Updated 2026-11-03T01:47:52Z (paper trading, never real money)
   CA `H4gHnZ3NCU7Z9XQwGX6YYJNyieGEW8pqwGRUcdSxpump`
 
 ## Last scan
-- 01:47Z: 7 coins, 3 with pairs, 0 passed the market filters, 0 researched
+- 02:02Z: 4 coins, 2 with pairs, 0 passed the market filters, 0 researched
 
 ## Coins it looked at, and why it passed
+- 02:02Z USDC (MIGRATED, $298,395 mcap, $24,542 5m vol): PASS at conviction 3, PASS: chasing spike. It's up 44% in the last 5 minutes, only 13% off a high set minutes ago, and it shares a ticker with Circle's stablecoin (learned rule, V1, V6).  
+  CA `DLsvm8VGQMucYFjagmv6j7WAr1NZiX2qMFVtGz8pump`
+- 02:00Z WASTED (DIP, $773,919 mcap, $4,313 5m vol): REJECT, Dip with fading attention is a falling knife, not a dip (5m at 0.52x the hour's pace, under 0.6x)  
+  CA `GexThZHgaswpAQ7Fi8QrHFubjPimUNSYhJiAA7XZpump`
+- 01:58Z WIF (MIGRATED, $94,093 mcap, $7,010 5m vol): REJECT, Top 10 hold 27.4% ex-pool (>25%) (V13)  
+  CA `E7ayy5Se6gjwCNtw9NP629AucnTgqab4SSmSxDpUpump`
+- 01:50Z PerpScape (MIGRATED, $71,391 mcap, $4,387 5m vol): REJECT, RugCheck danger: Creator history of rugged tokens  
+  CA `2aEFMMGa6emADiboQB8PidxRCstKjYHGUUNoqcdLpump`
+- 01:49Z Slingoor (MIGRATED, $420,154 mcap, $4,858 5m vol): REJECT, RugCheck danger: Top 10 holders high ownership  
+  CA `9rZR9nCQbaiBvotWVpifN8z1vckVFshnsATuAJrXpump`
 - 01:46Z KYBER (FINAL_STRETCH, $24,153 mcap, $2,401 5m vol): REJECT, Top 10 hold 25.7% ex-pool (>25%) (V13)  
   CA `BasL6j1MNkjFyuvRRFsmbm3bKqFPr6Yg3UhShii6pump`
 - 01:43Z ascend (MIGRATED, $142,031 mcap, $30,438 5m vol): PASS at conviction 3, PASS: flow below pace. The 5m is only 0.36x the hourly average, it's a 48-minute-old graduate still bleeding off its spike, and there's no printed higher low. The crowd is leaving. (V1, V6)  
@@ -87,16 +97,6 @@ Updated 2026-11-03T01:47:52Z (paper trading, never real money)
   CA `8oUGdPdyxVaCSJSZpcVZuxqoyiZAmc2Z22FsDRZ3pump`
 - 01:31Z Slingoor (FINAL_STRETCH, $19,463 mcap, $6,808 5m vol): REJECT, Top 10 hold 48.1% ex-pool (>25%) (V13)  
   CA `FydUK4ArdkSNNnvUv1hsJ8PfE4x3Pw3YQjLUK4Vpump`
-- 01:26Z RUGSEM (MIGRATED, $132,829 mcap, $29,385 5m vol): REJECT, Top 10 hold 29.6% ex-pool (>25%) (V13)  
-  CA `HAZCmiEEKcRL9pQpLDxJhjLAqZzViXQiQSEWntHVpump`
-- 01:23Z RICO (MIGRATED, $177,240 mcap, $6,430 5m vol): REJECT, RugCheck danger: Creator history of rugged tokens  
-  CA `8kuQg3WivDtL85VEdw2jEmSXjYt6EEeYBATJ4DtQpump`
-- 01:21Z OnlyCats (MIGRATED, $183,374 mcap, $75,832 5m vol): PASS at conviction 3, PASS: an 11-minute-old migration with 5m volume at 3.4x pace is a spike, not a base. Too new and chasing a spike; no higher low printed. Holders are clean, the timing isn't. (V1, V5, V6)  
-  CA `GFay6ncgKkKmkxCdQbLc2V68z6WLoffRofvEQDNgpump`
-- 01:18Z MAMESUKE (DIP, $901,829 mcap, $2,418 5m vol): REJECT, Bundles: 5 linked wallet cluster(s) hold 65.9% of supply (>20%) (V17)  
-  CA `SCGBBnSwnekytGFHgyeHHxPMiN7xDxsWFGg9JgFSTNK`
-- 01:18Z ANON (MIGRATED, $67,827 mcap, $7,013 5m vol): PASS at conviction 3, PASS — 5m flow $7k at 0.28x the hourly pace, 49 min old, third ANON by size. The crowd already left. Blocker: flow below pace (V1, V6).  
-  CA `CcDxdWZknjKxucq6SgQtHSc5w1amottoBkheaaePpump`
 
 ## What its skips did next (last 48h)
 A skip "ran" if the coin reached the first target (1.5x) from the skip price before a 20% drop, "dumped" if the drop came first. Sampled every 10 min, followed 6h.
@@ -107,20 +107,18 @@ A skip "ran" if the coin reached the first target (1.5x) from the skip price bef
     CA `CCF6ui6YjjhLaVtuYLH8b5jza8jHathqww5VbrMapump`
   - ran: VETOTRUMP up to 1.66x  
     CA `6g16UK4wHoFhC7PCmw8LYYCdt9q8m99fyoAwxeCrpump`
-- top 10 over 25%: blocked 48, ran 5, dumped 37, flat 3, open 3 (saving losses: keep it)
+- top 10 over 25%: blocked 49, ran 5, dumped 37, flat 3, open 4 (saving losses: keep it)
   - ran: TIPPER up to 1.55x  
     CA `3DEcz7AnmJiGSnDHYvUeX5uPMMHVcDwqrWRSGdHEpump`
   - ran: Capri up to 1.84x  
     CA `6qhnbvdJuWVUQ7EQpgz5GNraV7pty7cqc8MmfQTEpump`
   - ran: PEAKY up to 1.53x  
     CA `2EQxezWgXPRU6V3UD7DKr5m12mxqeFGPWNRx9wbqy9fC`
-- near the high / chasing: blocked 44, ran 3, dumped 35, flat 5, open 1 (saving losses: keep it)
+- near the high / chasing: blocked 44, ran 2, dumped 35, flat 5, open 2 (saving losses: keep it)
   - ran: BLUE up to 1.53x  
     CA `CPoGSmcjprCvzA2MFYLJMpQkGjmgVzKg4RVwMdrzpump`
   - ran: PIRATE up to 2.27x  
     CA `gzQXRwGRzfKLHfaV1f84QT7e5mt4vevu7MgacEfpump`
-  - ran: USDC up to 2.03x  
-    CA `DLsvm8VGQMucYFjagmv6j7WAr1NZiX2qMFVtGz8pump`
 - falling knife (code): blocked 31, ran 5, dumped 21, flat 2, open 3 (saving losses: keep it)
   - ran: BLUE up to 1.53x  
     CA `CPoGSmcjprCvzA2MFYLJMpQkGjmgVzKg4RVwMdrzpump`
@@ -191,9 +189,9 @@ The meta right now is fresh pumpswap graduates under an hour old soaking up most
   CA `8vFdgGFWkKS1euogVW4qmMurdnso8CPrfQNpB4qqpump`
 - Wanted: $391,665 1h vol, $242,683 mcap, +473% 1h  
   CA `8oUGdPdyxVaCSJSZpcVZuxqoyiZAmc2Z22FsDRZ3pump`
-- ANON: $304,164 1h vol, $83,962 mcap, +94% 1h  
-  CA `CcDxdWZknjKxucq6SgQtHSc5w1amottoBkheaaePpump`
-- OnlyCats: $280,871 1h vol, $232,790 mcap, +401% 1h  
-  CA `GFay6ncgKkKmkxCdQbLc2V68z6WLoffRofvEQDNgpump`
-- RUGSEM: $147,305 1h vol, $125,322 mcap, +221% 1h  
-  CA `HAZCmiEEKcRL9pQpLDxJhjLAqZzViXQiQSEWntHVpump`
+- USDC: $270,313 1h vol, $298,395 mcap, +334% 1h  
+  CA `DLsvm8VGQMucYFjagmv6j7WAr1NZiX2qMFVtGz8pump`
+- PerpScape: $167,897 1h vol, $71,391 mcap, +33% 1h  
+  CA `2aEFMMGa6emADiboQB8PidxRCstKjYHGUUNoqcdLpump`
+- GATO: $123,408 1h vol, $13,334,878 mcap, +13% 1h  
+  CA `HsprHxBRgiVaQdRf3TnKNuZZtaX9JUSPgMFdAkk6pump`
