@@ -1,13 +1,13 @@
 # Trencher live report
 
-Updated 2026-11-03T06:21:32Z (paper trading, never real money)
+Updated 2026-11-03T06:36:43Z (paper trading, never real money)
 
 - Equity: $74.23 (-25.8% vs $100 start)
 - Closed trades: 22, 3 wins
 - Fees paid: $14.78 (axiom $2.81, network $9.18, pool $2.66), plus $4.15 lost to slippage
 - New trades: WATCH-ONLY (scans and decides, buys nothing)
-- Brain: subscription, claude-haiku-5-5 for routine calls, claude-opus-5-5 for the daily review; 451 routine calls and 1 plan-limit hits in 48h
-- Watch log: 0 coins being followed, 0 filed, 0 would-buys (6h follow, sampled every 2 min)
+- Brain: subscription, claude-haiku-5-5 for routine calls, claude-opus-5-5 for the daily review; 452 routine calls and 1 plan-limit hits in 48h
+- Watch log: 10 coins being followed, 0 filed, 0 would-buys (6h follow, sampled every 2 min)
 
 ## Scorecard (after fees)
 - 22 closed, 3 won (14%), net $-25.79
@@ -73,54 +73,73 @@ Updated 2026-11-03T06:21:32Z (paper trading, never real money)
   CA `H4gHnZ3NCU7Z9XQwGX6YYJNyieGEW8pqwGRUcdSxpump`
 
 ## Last scan
-- no scan yet since the last restart
+- 06:36Z: 2 coins, 1 with pairs, 0 passed the market filters, 0 researched
 
 ## Coins it looked at, and why it passed
-- none since the last restart
+- 06:32Z TrumpWars (DIP, $98,501 mcap, $3,414 5m vol): PASS at conviction 3, PASS: TrumpWars is a DIP with one bundle at 10.7% (V3 says over 3-4% is sus), top 10 at 22.7%, $3.4k on the 5m, and no catalyst. It's one of 17 "trump war" copies. Blocker: bundles over the line, no catalyst. (V1, V3, V6, V13)  
+  CA `31HzUsjzTt7FBCGnDy68cBnELayVsnd3zYEBtsXXpump`
+- 06:29Z WarPup (FINAL_STRETCH, $20,037 mcap, $31,586 5m vol): PASS at conviction 3, PASS: War Pup is a spike, not a setup. It's up 635% in an hour, about 8 minutes old, with 9 same-ticker copies and a 5% bundle cluster. Blocker: "chasing spike" (V1, V6, V13).  
+  CA `5Zke3gk1ByYGwAjiFpqYT65WG5fTdSQ1ErwWo5JApump`
+- 06:23Z SC (FINAL_STRETCH, $24,193 mcap, $2,947 5m vol): PASS at conviction 2, PASS: Sketchy Cat is a 13-copy cat vamp field at $24k, with 5m flow at 0.58x pace, no higher low, and a theme at 0.01x pace. It's a spike that is still deflating. Blocker "flow below pace", plus "no higher low" and "split crowd". (V1, V3, V6)  
+  CA `B5VFttFTXibUHukJMEK2xugfxMrydSKCWtA6C9iNpump`
+- 06:22Z RICO (DIP, $480,403 mcap, $2,901 5m vol): REJECT, Dip with fading attention is a falling knife, not a dip (5m at 0.47x the hour's pace, under 0.6x)  
+  CA `8kuQg3WivDtL85VEdw2jEmSXjYt6EEeYBATJ4DtQpump`
+- 06:22Z 1WIN (MIGRATED, $17,174,406 mcap, $4,537 5m vol): REJECT, RugCheck danger: Freeze Authority still enabled  
+  CA `FjPKUGnF5zBpdEv18gT8FJCtxh3MKrFkoeYekgYr1win`
+- 06:22Z SPHERE (DIP, $885,872 mcap, $6,579 5m vol): PASS at conviction 3, PASS: no bottom-buy catalyst, theme flow under pace, and a 0.3-day-old domain that doesn't show the CA. Blocker: no catalyst. (V1, V6, V13)  
+  CA `31SYoqWFhx3i9UsfnoXTjFp4ZwJA8F8UPrMxymfDpump`
+- 06:22Z XDG (MIGRATED, $145,954 mcap, $9,140 5m vol): PASS at conviction 3, PASS: XDG is under two minutes old, the feed's peak-mcap math is broken, and it's the third copy in a 3-coin dog field. Blocker: too new. (V1, V6, V13)  
+  CA `J1pZjNKh4BnbXBsroE4acJv3TYzCGxTn46VrZii6orEZ`
+- 06:21Z WASTED (MIGRATED, $1,608,201 mcap, $11,732 5m vol): REJECT, Dev holds 3.5% (>1%) (V13, V17)  
+  CA `GexThZHgaswpAQ7Fi8QrHFubjPimUNSYhJiAA7XZpump`
+- 06:21Z Memestock (MIGRATED, $113,765 mcap, $22,891 5m vol): REJECT, Bundles: 10 linked wallet cluster(s) hold 27.1% of supply (>20%) (V17)  
+  CA `9hKJb9YEf5RYb4f71Xr3Kr86hZq86Xad5X7gdyv1pump`
+- 06:21Z PumpFun (MIGRATED, $147,553 mcap, $36,537 5m vol): PASS at conviction 3, PASS: chasing a 318% hour, 9.8% off the high, no higher low printed, and the site is a 1.4-day-old AI show that doesn't list this CA. (V1, V6, V13)  
+  CA `9X5UwHT7gWSPtAH5yeEzrLHqv3Nedmhy3HyZN3Yspump`
 
 ## What its skips did next (last 48h)
 A skip "ran" if the coin reached the first target (1.5x) from the skip price before a 20% drop, "dumped" if the drop came first. Sampled every 10 min, followed 6h.
-- top 10 over 25%: blocked 53, ran 9, dumped 41, flat 3, open 0 (saving losses: keep it)
+- top 10 over 25%: blocked 52, ran 9, dumped 40, flat 3, open 0 (saving losses: keep it)
   - ran: TIPPER up to 1.55x  
     CA `3DEcz7AnmJiGSnDHYvUeX5uPMMHVcDwqrWRSGdHEpump`
   - ran: Capri up to 1.84x  
     CA `6qhnbvdJuWVUQ7EQpgz5GNraV7pty7cqc8MmfQTEpump`
   - ran: PEAKY up to 1.53x  
     CA `2EQxezWgXPRU6V3UD7DKr5m12mxqeFGPWNRx9wbqy9fC`
-- too new / sniping: blocked 50, ran 9, dumped 41, flat 0, open 0 (saving losses: keep it)
+- too new / sniping: blocked 51, ran 9, dumped 42, flat 0, open 0 (saving losses: keep it)
   - ran: paws up to 1.51x  
     CA `CCF6ui6YjjhLaVtuYLH8b5jza8jHathqww5VbrMapump`
   - ran: VETOTRUMP up to 1.66x  
     CA `6g16UK4wHoFhC7PCmw8LYYCdt9q8m99fyoAwxeCrpump`
   - ran: Anakinius up to 1.93x  
     CA `2pKpMwUQXNZeAf93LoomnZSworH3ezFzweCiuvrppump`
-- near the high / chasing: blocked 41, ran 2, dumped 36, flat 3, open 0 (saving losses: keep it)
+- near the high / chasing: blocked 41, ran 2, dumped 35, flat 3, open 1 (saving losses: keep it)
   - ran: BLUE up to 1.53x  
     CA `CPoGSmcjprCvzA2MFYLJMpQkGjmgVzKg4RVwMdrzpump`
   - ran: PIRATE up to 2.27x  
     CA `gzQXRwGRzfKLHfaV1f84QT7e5mt4vevu7MgacEfpump`
-- falling knife (code): blocked 30, ran 6, dumped 22, flat 2, open 0 (saving losses: keep it)
-  - ran: WASTED up to 1.88x  
-    CA `GexThZHgaswpAQ7Fi8QrHFubjPimUNSYhJiAA7XZpump`
-  - ran: BLUE up to 1.53x  
-    CA `CPoGSmcjprCvzA2MFYLJMpQkGjmgVzKg4RVwMdrzpump`
-  - ran: VETOTRUMP up to 1.66x  
-    CA `6g16UK4wHoFhC7PCmw8LYYCdt9q8m99fyoAwxeCrpump`
-- RugCheck danger: blocked 30, ran 6, dumped 23, flat 1, open 0 (saving losses: keep it)
+- RugCheck danger: blocked 30, ran 6, dumped 23, flat 0, open 1 (saving losses: keep it)
   - ran: AIC up to 1.6x  
     CA `2T9WZjVC6L3BvusUtjKDT6HcZeEYgU9T5xhfJQxFpump`
   - ran: ZECRET up to 1.62x  
     CA `ChCi2x2bpevrNyeRoPHLXHzmaCdGQPuU15CNqxY1pump`
   - ran: Bitboy up to 1.6x  
     CA `GvXhSHnWrkAasjAUZeRzRfUBV2BJiiduaHarCWAEpump`
-- flow below pace: blocked 26, ran 5, dumped 18, flat 1, open 2 (saving losses: keep it)
+- falling knife (code): blocked 29, ran 5, dumped 21, flat 2, open 1 (saving losses: keep it)
+  - ran: BLUE up to 1.53x  
+    CA `CPoGSmcjprCvzA2MFYLJMpQkGjmgVzKg4RVwMdrzpump`
+  - ran: VETOTRUMP up to 1.66x  
+    CA `6g16UK4wHoFhC7PCmw8LYYCdt9q8m99fyoAwxeCrpump`
+  - ran: STEALTH up to 1.77x  
+    CA `GoDSW31bTxfkoup9yA1qcGGx9RMXdTEWgApv3xzBmoA`
+- flow below pace: blocked 27, ran 5, dumped 18, flat 1, open 3 (saving losses: keep it)
   - ran: Ahsoka up to 1.54x  
     CA `4nuj5NLHMtQSezfmz6CwBpCRJisFie6F6MxNNz1dpump`
   - ran: KOROSUKE up to 1.54x  
     CA `7ha4HFgdvkXaDcR2biCsuBpoCZzoLSRjb5we34Gbpump`
   - ran: CAPY up to 1.51x  
     CA `DBPTU2oKLDHXQjAEJ3rZi8bUGmt2uxUbipgg6xmXoMqr`
-- bundles over the line: blocked 17, ran 2, dumped 12, flat 2, open 1 (saving losses: keep it)
+- bundles over the line: blocked 17, ran 2, dumped 11, flat 2, open 2 (saving losses: keep it)
   - ran: Nuts up to 1.53x  
     CA `APH9FRoKst66E4a7uZXcEfE8NjtwybUC8Jq7ue8upump`
   - ran: NA up to 1.97x  
@@ -128,16 +147,12 @@ A skip "ran" if the coin reached the first target (1.5x) from the skip price bef
 - falling knife / no higher low: blocked 14, ran 1, dumped 9, flat 3, open 1 (saving losses: keep it)
   - ran: HEDGE up to 1.77x  
     CA `wDSAqt4tEZpDAwB9XY6ejkZvMFuT1zUMjUh67txeYhf`
-- thin 5m volume: blocked 13, ran 3, dumped 4, flat 6, open 0 (mixed)
+- thin 5m volume: blocked 12, ran 2, dumped 4, flat 6, open 0 (saving losses: keep it)
   - ran: CUMFACE up to 1.55x  
     CA `J1D3X8znX4AzUPMHVWyBLNHqBBqWDPNSjX4KwK3Qpump`
-  - ran: RICO up to 1.56x  
-    CA `8kuQg3WivDtL85VEdw2jEmSXjYt6EEeYBATJ4DtQpump`
   - ran: KIDS up to 1.73x  
     CA `7uwr9Zoz8WW9UyRVC22nmmAXRbPoFTUpVjsN8q7kids`
-- dev share over 1%: blocked 11, ran 3, dumped 5, flat 3, open 0 (mixed)
-  - ran: WASTED up to 1.88x  
-    CA `GexThZHgaswpAQ7Fi8QrHFubjPimUNSYhJiAA7XZpump`
+- dev share over 1%: blocked 11, ran 2, dumped 5, flat 3, open 1 (saving losses: keep it)
   - ran: MINTED up to 1.61x  
     CA `9yEKBwczdqoox7Red6GGPTrJ2dUbMvFUagdjxFqHpump`
   - ran: DOJAK up to 2.62x  
@@ -169,13 +184,13 @@ A skip "ran" if the coin reached the first target (1.5x) from the skip price bef
 The meta is PumpSwap graduates about 2 hours old, and the jokes are about memecoins themselves and celebrity parodies. That wave is already cooling. The crawler's summary is stale: LeTwerk James, which it calls the leader, has rugged to $1.8k (-99% on the hour, zero 5m volume), and WORKER has fallen to $1.4k on the 5m with a vamp (Ollybee) already dead next to it. Memestock is the live one. It sits at $122k, down 47% off its high, with $22.6k on the 5m and buyers at 0.60. That 5m is about 0.69x its hourly pace, just under the 0.7x DIP gate, so it's a DIP I'd research and could buy if volume holds there and the holder and bundle checks come back clean. METEORITE ($199k, +14%) has buyers and sellers split evenly at 0.50 and its 5m is down to about 0.37x its hourly pace, so it's fading and I'm not chasing it. The GTA6 animal coins (GATO, RICO) are flat and political coins are a hard no (V13). Sketchy Cat (+461% at $15k, 18 minutes old) is too new to touch (V5).
 
 ## Moving most in its scans, last 30 min (1h volume)
-- Memestock: $390,442 1h vol, $122,727 mcap, -47% 1h  
+- PumpFun: $410,238 1h vol, $147,553 mcap, +318% 1h  
+  CA `9X5UwHT7gWSPtAH5yeEzrLHqv3Nedmhy3HyZN3Yspump`
+- Memestock: $298,360 1h vol, $119,192 mcap, -44% 1h  
   CA `9hKJb9YEf5RYb4f71Xr3Kr86hZq86Xad5X7gdyv1pump`
-- LeTwerk: $373,987 1h vol, $1,836 mcap, -99% 1h  
-  CA `GtRH3cGYWPLLjjvcgMV1Fb3Jd25rhGRQmXgwu79Npump`
-- METEORITE: $308,486 1h vol, $198,689 mcap, +14% 1h  
-  CA `67RBmGztx8ciVyWr8yi6R8fwrc3EG86XejYT7mespump`
-- WORKER: $263,286 1h vol, $40,307 mcap, +16% 1h  
-  CA `9DwPa8v7DTCgPWEgXbCLeg7F5FpruHHTHCsNnjR9pump`
-- GATO: $183,691 1h vol, $12,088,818 mcap, -4% 1h  
+- GATO: $139,406 1h vol, $13,716,608 mcap, +25% 1h  
   CA `HsprHxBRgiVaQdRf3TnKNuZZtaX9JUSPgMFdAkk6pump`
+- 1WIN: $138,168 1h vol, $17,110,905 mcap, -10% 1h  
+  CA `FjPKUGnF5zBpdEv18gT8FJCtxh3MKrFkoeYekgYr1win`
+- WASTED: $120,183 1h vol, $1,608,201 mcap, +68% 1h  
+  CA `GexThZHgaswpAQ7Fi8QrHFubjPimUNSYhJiAA7XZpump`
