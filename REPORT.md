@@ -1,13 +1,13 @@
 # Trencher live report
 
-Updated 2026-11-03T09:24:43Z (paper trading, never real money)
+Updated 2026-11-03T09:39:49Z (paper trading, never real money)
 
 - Equity: $74.23 (-25.8% vs $100 start)
 - Closed trades: 22, 3 wins
 - Fees paid: $14.78 (axiom $2.81, network $9.18, pool $2.66), plus $4.15 lost to slippage
 - New trades: WATCH-ONLY (scans and decides, buys nothing)
-- Brain: subscription, claude-haiku-5-5 for routine calls, claude-opus-5-5 for the daily review; 448 routine calls and 1 plan-limit hits in 48h
-- Watch log: 56 coins being followed, 0 filed, 0 would-buys (6h follow, sampled every 2 min)
+- Brain: subscription, claude-haiku-5-5 for routine calls, claude-opus-5-5 for the daily review; 445 routine calls and 1 plan-limit hits in 48h
+- Watch log: 59 coins being followed, 0 filed, 0 would-buys (6h follow, sampled every 2 min)
 
 ## Scorecard (after fees)
 - 22 closed, 3 won (14%), net $-25.79
@@ -73,9 +73,15 @@ Updated 2026-11-03T09:24:43Z (paper trading, never real money)
   CA `H4gHnZ3NCU7Z9XQwGX6YYJNyieGEW8pqwGRUcdSxpump`
 
 ## Last scan
-- 09:23Z: 4 coins, 4 with pairs, 1 passed the market filters, 1 researched
+- 09:39Z: 1 coins, 1 with pairs, 0 passed the market filters, 0 researched
 
 ## Coins it looked at, and why it passed
+- 09:34Z DESSA (DIP, $14,049,001 mcap, $2,682 5m vol): REJECT, Dip with fading attention is a falling knife, not a dip (5m at 0.46x the hour's pace, under 0.6x)  
+  CA `npz2FhoufQ7pKqhGpaipYWacrAkidyW2yDpVWSvpump`
+- 09:33Z Slingoor (MIGRATED, $134,251 mcap, $3,003 5m vol): PASS at conviction 3, PASS: Slingoor is 95% off its $2.62M high, 5m flow is 0.68x pace, and no higher low has printed. Blocker: flow below pace on a MIGRATED pullback (V1, V6).  
+  CA `9rZR9nCQbaiBvotWVpifN8z1vckVFshnsATuAJrXpump`
+- 09:31Z WASTED (DIP, $1,483,595 mcap, $2,351 5m vol): REJECT, Dev holds 3.5% (>1%) (V13, V17)  
+  CA `GexThZHgaswpAQ7Fi8QrHFubjPimUNSYhJiAA7XZpump`
 - 09:24Z SPHERE (DIP, $701,546 mcap, $11,442 5m vol): PASS at conviction 3, PASS: no catalyst, no story. A 0.5-day-old generic name with 14 copies and a clean chart is still a bounce bet, not a trade. (V1, V3, V13)  
   CA `31SYoqWFhx3i9UsfnoXTjFp4ZwJA8F8UPrMxymfDpump`
 - 09:18Z RATIO (MIGRATED, $58,437 mcap, $2,119 5m vol): REJECT, Top 10 hold 26.5% ex-pool (>25%) (V13)  
@@ -90,16 +96,10 @@ Updated 2026-11-03T09:24:43Z (paper trading, never real money)
   CA `8z9URc6TkM1PwXA1pQqhifJkktLfZbtwBCXAk1zapump`
 - 08:50Z XDG (MIGRATED, $198,862 mcap, $9,963 5m vol): REJECT, Top 10 hold 26.1% ex-pool (>25%) (V13)  
   CA `J1pZjNKh4BnbXBsroE4acJv3TYzCGxTn46VrZii6orEZ`
-- 08:49Z DESSA (DIP, $13,102,353 mcap, $2,820 5m vol): PASS at conviction 2, PASS: DESSA is a $13M AI-meme with $2.8k of 5m flow, sellers in control, no higher low, and no story on the radar. Blocker: dead story. (V1, V6, V13)  
-  CA `npz2FhoufQ7pKqhGpaipYWacrAkidyW2yDpVWSvpump`
-- 08:47Z Slingoor (MIGRATED, $71,897 mcap, $10,352 5m vol): REJECT, Top 10 hold 25.5% ex-pool (>25%) (V13)  
-  CA `9rZR9nCQbaiBvotWVpifN8z1vckVFshnsATuAJrXpump`
-- 08:39Z 1WIN (MIGRATED, $16,526,756 mcap, $9,539 5m vol): REJECT, RugCheck danger: Freeze Authority still enabled  
-  CA `FjPKUGnF5zBpdEv18gT8FJCtxh3MKrFkoeYekgYr1win`
 
 ## What its skips did next (last 48h)
 A skip "ran" if the coin reached the first target (1.5x) from the skip price before a 20% drop, "dumped" if the drop came first. Sampled every 10 min, followed 6h.
-- top 10 over 25%: blocked 55, ran 9, dumped 40, flat 3, open 3 (saving losses: keep it)
+- top 10 over 25%: blocked 54, ran 9, dumped 40, flat 3, open 2 (saving losses: keep it)
   - ran: TIPPER up to 1.55x  
     CA `3DEcz7AnmJiGSnDHYvUeX5uPMMHVcDwqrWRSGdHEpump`
   - ran: Capri up to 1.84x  
@@ -113,12 +113,12 @@ A skip "ran" if the coin reached the first target (1.5x) from the skip price bef
     CA `2pKpMwUQXNZeAf93LoomnZSworH3ezFzweCiuvrppump`
   - ran: CLIPPED up to 1.65x  
     CA `Bxyp4L6EbDys4fo51qxMEQTx41sj6McnsbPZTdvipump`
-- near the high / chasing: blocked 38, ran 2, dumped 32, flat 3, open 1 (saving losses: keep it)
+- near the high / chasing: blocked 37, ran 2, dumped 31, flat 3, open 1 (saving losses: keep it)
   - ran: BLUE up to 1.53x  
     CA `CPoGSmcjprCvzA2MFYLJMpQkGjmgVzKg4RVwMdrzpump`
   - ran: PIRATE up to 2.27x  
     CA `gzQXRwGRzfKLHfaV1f84QT7e5mt4vevu7MgacEfpump`
-- flow below pace: blocked 30, ran 6, dumped 20, flat 1, open 3 (saving losses: keep it)
+- flow below pace: blocked 31, ran 6, dumped 20, flat 1, open 4 (saving losses: keep it)
   - ran: Ahsoka up to 1.54x  
     CA `4nuj5NLHMtQSezfmz6CwBpCRJisFie6F6MxNNz1dpump`
   - ran: KOROSUKE up to 1.54x  
@@ -132,7 +132,7 @@ A skip "ran" if the coin reached the first target (1.5x) from the skip price bef
     CA `ChCi2x2bpevrNyeRoPHLXHzmaCdGQPuU15CNqxY1pump`
   - ran: Bitboy up to 1.6x  
     CA `GvXhSHnWrkAasjAUZeRzRfUBV2BJiiduaHarCWAEpump`
-- falling knife (code): blocked 28, ran 6, dumped 19, flat 1, open 2 (saving losses: keep it)
+- falling knife (code): blocked 29, ran 6, dumped 19, flat 1, open 3 (saving losses: keep it)
   - ran: BLUE up to 1.53x  
     CA `CPoGSmcjprCvzA2MFYLJMpQkGjmgVzKg4RVwMdrzpump`
   - ran: VETOTRUMP up to 1.66x  
@@ -186,13 +186,13 @@ A skip "ran" if the coin reached the first target (1.5x) from the skip price bef
 Meta read from scan_movers: the money is in pump.fun coins under an hour old. OMBRO ($106k cap, $19.5k 5m, 0.64 buy ratio, +137% 1h) is the strongest, and PUPER (+298%, $4.4k 5m) and peach (+644%, $3.4k 5m) are the same fresh animal and joke launches on thinner volume. Fading: the GTA6 pair (GATO, RICO) and the older names (ARNOLD, WASTED, MAMESUKE) are on thin 5m volume, and PRESSURE (-50%) and UNPOOLED (-55%) are dumping. Setup to research: OMBRO only, since it is the one clearing the $10k 5m bar. I won't chase the +137%. I'd wait for a pullback that holds buy ratio above 0.5, take initials at 2x, stop at -30%, and check Similar tokens for the original. Conviction 5, probe size, until holders and bundles are checked (MIGRATED, V1, V6). PASS on peach, PUPER and RATIO for now because 5m volume is under $10k. Donkey is political-adjacent and thin, and $LAPTOP is a Hunter Biden coin, so both are off the table. The crawler's AnonCrime and XDG numbers aren't in this scan, so I'm ignoring them until they show up here. No hack-named coin is in the movers, so nothing is blocked on that rule.
 
 ## Moving most in its scans, last 30 min (1h volume)
-- LIFEVAL: $443,784 1h vol, $214,715 mcap, +1% 1h  
-  CA `Bmn5qFwQHxteaoM1et9FLdHsi52DmuXZyzWinih8pump`
-- OMBRO: $348,165 1h vol, $106,296 mcap, +137% 1h  
-  CA `8DB8Fw5UiC1AzugQAfRyw3qL8omw772LJbdehNWhpump`
-- UNPOOLED: $114,659 1h vol, $56,060 mcap, -55% 1h  
+- FBI: $283,134 1h vol, $1,873 mcap, -98% 1h  
+  CA `EAqmgSTREypN7rgsPinZzzzG8NwtqwZAvbgMhnxmpump`
+- 1WIN: $145,920 1h vol, $16,575,699 mcap, -0% 1h  
+  CA `FjPKUGnF5zBpdEv18gT8FJCtxh3MKrFkoeYekgYr1win`
+- UNPOOLED: $90,057 1h vol, $59,465 mcap, -29% 1h  
   CA `FxQ5GbqCBxNHDpFTpiL9RDVHiP58ar5nMkR3eMwepump`
-- GATO: $88,095 1h vol, $12,935,858 mcap, -4% 1h  
+- GATO: $87,025 1h vol, $12,796,815 mcap, -4% 1h  
   CA `HsprHxBRgiVaQdRf3TnKNuZZtaX9JUSPgMFdAkk6pump`
 - SPHERE: $79,056 1h vol, $707,686 mcap, +21% 1h  
   CA `31SYoqWFhx3i9UsfnoXTjFp4ZwJA8F8UPrMxymfDpump`
