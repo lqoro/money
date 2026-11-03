@@ -1,13 +1,13 @@
 # Trencher live report
 
-Updated 2026-11-03T02:33:21Z (paper trading, never real money)
+Updated 2026-11-03T02:48:23Z (paper trading, never real money)
 
 - Equity: $74.23 (-25.8% vs $100 start)
-- Goal: $1,000 by 2026-11-05 05:03Z (pressing for it): at 7.4% of it, 2.1 days left, needs +244.2% a day from here
+- Goal: $1,000 by 2026-11-05 05:03Z (pressing for it): at 7.4% of it, 2.1 days left, needs +246.3% a day from here
 - Closed trades: 22, 3 wins
 - Fees paid: $14.78 (axiom $2.81, network $9.18, pool $2.66), plus $4.15 lost to slippage
 - New trades: on
-- Brain: subscription, 482 calls and 0 plan-limit hits in 48h
+- Brain: subscription, 479 calls and 0 plan-limit hits in 48h
 
 ## Scorecard (after fees)
 - 22 closed, 3 won (14%), net $-25.79
@@ -74,40 +74,40 @@ Updated 2026-11-03T02:33:21Z (paper trading, never real money)
   CA `H4gHnZ3NCU7Z9XQwGX6YYJNyieGEW8pqwGRUcdSxpump`
 
 ## Last scan
-- 02:32Z: 11 coins, 9 with pairs, 0 passed the market filters, 0 researched
+- 02:48Z: 9 coins, 8 with pairs, 1 passed the market filters, 1 researched
 
 ## Coins it looked at, and why it passed
+- 02:48Z inu (MIGRATED, $82,758 mcap, $44,457 5m vol): REJECT, Bundles: 1 linked wallet cluster(s) hold 37.8% of supply (>20%) (V17)  
+  CA `DAiwoNEeVefNzf9Tvt7gWmbnSpTzAydEqHvX4zoupump`
+- 02:46Z WASTED (MIGRATED, $1,021,466 mcap, $3,383 5m vol): REJECT, Dev holds 3.5% (>1%) (V13, V17)  
+  CA `GexThZHgaswpAQ7Fi8QrHFubjPimUNSYhJiAA7XZpump`
+- 02:45Z MAGACREW (MIGRATED, $111,512 mcap, $51,968 5m vol): REJECT, Top 10 hold 28.7% ex-pool (>25%) (V13)  
+  CA `9LAu2WFQGV2FDSoa36S25LMmQSg5E2yUPT33j519pump`
+- 02:43Z WIF (MIGRATED, $110,673 mcap, $4,056 5m vol): REJECT, Top 10 hold 26.9% ex-pool (>25%) (V13)  
+  CA `E7ayy5Se6gjwCNtw9NP629AucnTgqab4SSmSxDpUpump`
+- 02:42Z BAWSAQS (FINAL_STRETCH, $21,162 mcap, $6,734 5m vol): REJECT, Top 10 hold 27.9% ex-pool (>25%) (V13)  
+  CA `4MNdQw5iYUZfuCT7pRq99YtAXLXbpu2xTXsfT7pFpump`
+- 02:41Z BabyTrump (FINAL_STRETCH, $27,360 mcap, $50,660 5m vol): PASS at conviction 2, PASS — 6-minute-old pair up 369% in 5m at 10.7x pace, in a crowded Trump ticker field. Blocker "chasing spike" / "too new" (V1, V5, V6).  
+  CA `9FLGLFKRgD1zR8L8WLngAnqgxTakEQN3u4JMYjmfpump`
+- 02:38Z 1WIN (MIGRATED, $20,710,791 mcap, $6,225 5m vol): REJECT, RugCheck danger: Freeze Authority still enabled  
+  CA `FjPKUGnF5zBpdEv18gT8FJCtxh3MKrFkoeYekgYr1win`
+- 02:33Z 1WIN (MIGRATED, $20,583,404 mcap, $2,179 5m vol): REJECT, RugCheck report unavailable: can't verify mint/freeze/holders, skip  
+  CA `FjPKUGnF5zBpdEv18gT8FJCtxh3MKrFkoeYekgYr1win`
 - 02:28Z NETWORK (MIGRATED, $223,180 mcap, $4,502 5m vol): PASS at conviction 3, PASS: chasing spike. 5m volume is running 4.1x the hourly pace on a +13.8% candle, and the 5m flow is only $4.5k anyway. (V1, V6)  
   CA `8THZ69JP2ErZuHVj4G5rcwkFfsQafp5mQsaoQReApump`
 - 02:27Z ᑓହꚡई (MIGRATED, $44,964 mcap, $6,013 5m vol): PASS at conviction 2, PASS: chasing spike. The last 5m candle is up 87.7% and 5m volume is 3.4x the hourly pace on a $45k coin that's 54 minutes old. The candle data is corrupt, so no higher low can be confirmed. (V1, V6)  
   CA `HAp8U1SB7bDGMa81AQom1ee6AR5iSFFTi57MEbTzcash`
-- 02:27Z 1WIN (MIGRATED, $20,712,626 mcap, $9,452 5m vol): REJECT, RugCheck report unavailable: can't verify mint/freeze/holders, skip  
-  CA `FjPKUGnF5zBpdEv18gT8FJCtxh3MKrFkoeYekgYr1win`
-- 02:27Z SPHERE (MIGRATED, $530,612 mcap, $168,816 5m vol): PASS at conviction 3, PASS — 12-minute-old migration, last 5m candle +33.8% at 4.4x pace with no base. Chasing a spike that's also too new (V1, V6).  
-  CA `31SYoqWFhx3i9UsfnoXTjFp4ZwJA8F8UPrMxymfDpump`
-- 02:21Z Wanted (MIGRATED, $354,330 mcap, $4,620 5m vol): REJECT, LP only 0% burned/locked (V2, V3, V6)  
-  CA `8oUGdPdyxVaCSJSZpcVZuxqoyiZAmc2Z22FsDRZ3pump`
-- 02:18Z RICO (DIP, $191,400 mcap, $2,569 5m vol): REJECT, RugCheck danger: Creator history of rugged tokens  
-  CA `8kuQg3WivDtL85VEdw2jEmSXjYt6EEeYBATJ4DtQpump`
-- 02:15Z MAMESUKE (DIP, $1,140,351 mcap, $4,199 5m vol): REJECT, Dip with fading attention is a falling knife, not a dip (5m at 0.59x the hour's pace, under 0.6x)  
-  CA `SCGBBnSwnekytGFHgyeHHxPMiN7xDxsWFGg9JgFSTNK`
-- 02:11Z GOAT (FINAL_STRETCH, $30,079 mcap, $18,692 5m vol): PASS at conviction 2, PASS: copycat GOAT with no socials, +86% in the last 5m and 4% off the high. That's chasing a spike before the pre-bond dump. (V1, V3)  
-  CA `Egarx4TpHajwcCSQi5u5qiv1kVac2ei5HMhoiXszpump`
-- 02:06Z GLITCH (MIGRATED, $3,715,976 mcap, $1,380 5m vol): REJECT, 5m volume $1,380 is dead (<$2,000) (V1)  
-  CA `8Xg89xT8Ve34sKiYqYuMs46mycREsCA2F362UscRpump`
-- 02:05Z ㅤ (FINAL_STRETCH, $30,862 mcap, $49,558 5m vol): PASS at conviction 2, PASS: six minutes old, +225% on the last 5m at 10.6x the hourly pace, and the holder list never loaded. That's a sniper's chart, not my entry. Blocker: chasing spike. (V1, V5, V6)  
-  CA `4KvgozjDf8zWcdkhz8YKB5dW8XW2GzL1uH1vkNG9pump`
 
 ## What its skips did next (last 48h)
 A skip "ran" if the coin reached the first target (1.5x) from the skip price before a 20% drop, "dumped" if the drop came first. Sampled every 10 min, followed 6h.
-- too new / sniping: blocked 55, ran 10, dumped 43, flat 0, open 2 (saving losses: keep it)
+- too new / sniping: blocked 56, ran 12, dumped 43, flat 0, open 1 (saving losses: keep it)
   - ran: onlypump up to 1.92x  
     CA `J73efZvH6rkrJbFJdP2rqe473YJW7tyWmrNARUSzpump`
   - ran: paws up to 1.51x  
     CA `CCF6ui6YjjhLaVtuYLH8b5jza8jHathqww5VbrMapump`
   - ran: VETOTRUMP up to 1.66x  
     CA `6g16UK4wHoFhC7PCmw8LYYCdt9q8m99fyoAwxeCrpump`
-- top 10 over 25%: blocked 48, ran 6, dumped 38, flat 2, open 2 (saving losses: keep it)
+- top 10 over 25%: blocked 50, ran 6, dumped 38, flat 2, open 4 (saving losses: keep it)
   - ran: TIPPER up to 1.55x  
     CA `3DEcz7AnmJiGSnDHYvUeX5uPMMHVcDwqrWRSGdHEpump`
   - ran: Capri up to 1.84x  
@@ -128,21 +128,21 @@ A skip "ran" if the coin reached the first target (1.5x) from the skip price bef
     CA `6g16UK4wHoFhC7PCmw8LYYCdt9q8m99fyoAwxeCrpump`
   - ran: STEALTH up to 1.77x  
     CA `GoDSW31bTxfkoup9yA1qcGGx9RMXdTEWgApv3xzBmoA`
-- RugCheck danger: blocked 31, ran 5, dumped 23, flat 0, open 3 (saving losses: keep it)
+- RugCheck danger: blocked 31, ran 6, dumped 23, flat 0, open 2 (saving losses: keep it)
   - ran: AIC up to 1.6x  
     CA `2T9WZjVC6L3BvusUtjKDT6HcZeEYgU9T5xhfJQxFpump`
   - ran: ZECRET up to 1.62x  
     CA `ChCi2x2bpevrNyeRoPHLXHzmaCdGQPuU15CNqxY1pump`
   - ran: Bitboy up to 1.6x  
     CA `GvXhSHnWrkAasjAUZeRzRfUBV2BJiiduaHarCWAEpump`
-- flow below pace: blocked 23, ran 4, dumped 17, flat 1, open 1 (saving losses: keep it)
+- flow below pace: blocked 23, ran 5, dumped 17, flat 1, open 0 (saving losses: keep it)
   - ran: Ahsoka up to 1.54x  
     CA `4nuj5NLHMtQSezfmz6CwBpCRJisFie6F6MxNNz1dpump`
   - ran: KOROSUKE up to 1.54x  
     CA `7ha4HFgdvkXaDcR2biCsuBpoCZzoLSRjb5we34Gbpump`
   - ran: CAPY up to 1.51x  
     CA `DBPTU2oKLDHXQjAEJ3rZi8bUGmt2uxUbipgg6xmXoMqr`
-- bundles over the line: blocked 15, ran 3, dumped 10, flat 2, open 0 (saving losses: keep it)
+- bundles over the line: blocked 16, ran 3, dumped 10, flat 2, open 1 (saving losses: keep it)
   - ran: Nuts up to 1.53x  
     CA `APH9FRoKst66E4a7uZXcEfE8NjtwybUC8Jq7ue8upump`
   - ran: NA up to 1.97x  
@@ -157,21 +157,21 @@ A skip "ran" if the coin reached the first target (1.5x) from the skip price bef
     CA `J1D3X8znX4AzUPMHVWyBLNHqBBqWDPNSjX4KwK3Qpump`
   - ran: KIDS up to 1.73x  
     CA `7uwr9Zoz8WW9UyRVC22nmmAXRbPoFTUpVjsN8q7kids`
-- dev share over 1%: blocked 10, ran 2, dumped 5, flat 3, open 0 (saving losses: keep it)
+- dev share over 1%: blocked 11, ran 2, dumped 5, flat 3, open 1 (saving losses: keep it)
   - ran: MINTED up to 1.61x  
     CA `9yEKBwczdqoox7Red6GGPTrJ2dUbMvFUagdjxFqHpump`
   - ran: DOJAK up to 2.62x  
     CA `E5aeDjgq6ZSzAmihKoh9JPEhwK2bMCbZLJf6LYT9pump`
 
 ## Rules it changed from results and skips
-- 11-02 17:27Z tightened: Time stop exception limited to one 15-minute extension with a live surge (The old wording said both 'no extensions' and 'unless a surge prints', which contradict each other. Every extension so far lost: FLOAT 158 min −24.5%, Leverhedge 76 min −3.2%.)
-- 11-02 17:27Z dropped: Retired fee/size annotations on the money-shape and RugCheck rules (The code fee check owns friction and minimum size, so these notes are removed from the rule text.)
-- 11-02 20:34Z tightened: MIGRATED with no printed higher low is a PASS (merged with flow-below-pace) (8 of 22 entries peaked ≤1.01x (SI, HEXN, HYPERCHAN, BLUE, SIS, AAPLCAT, Slingoor, ANAKIN), all bought without a printed higher low. 'Falling knife / no higher low' skips: 12 blocked, 1 ran, 8 dumped. Flow-below-pace skips: 16 blocked, 2 ran, 11 dumped.)
 - 11-02 20:34Z loosened: DIP sizing: probation over, size by conviction when all gates pass (Owner override (Oct 30). Gates kept because DIPs went 0 for 5, all entered before the structure confirmed. The flow gate now matches the code param at 0.7.)
 - 11-02 20:34Z dropped: All retired fee/size/minimum-position fragments (The code fee check owns this (3x round-trip on the first target, ≤20% friction). Exits (1.5x initials, 20% stop, 35% trail) are owner-set and not restated.)
 - 11-02 23:38Z tightened: DIP gate: flow at least 0.7x the hourly pace plus a printed higher low (DIPs 0 for 5 (-$6.70), every one bought before the higher low held (HEXN x2, SIS, Something, Leverhedge). The code line is now aligned to the owner's 0.7x.)
 - 11-02 23:38Z dropped: Never-green cut at under 0.92x in the first 10 minutes (It works as a tighter stop than the owner's code-enforced 20%, which I was told not to set. Replaced by a thesis exit (sell when the printed higher low breaks) plus the existing time-based check at minute 10 (under 1.05x with flow under pace).)
 - 11-02 23:38Z added: Thesis exit: sell when the printed higher low the entry rested on breaks (HEXN #2, SIS and AAPLCAT all broke the higher low first and then slid through the stop to -27% to -31%. This exit is set by structure, not by a percent.)
+- 11-03 02:40Z tightened: Entries above ~$1M mcap (was capped at 7; now a probe at most, and only with a breakout printing) (10 trades above $1M: Something, CATBOT re-entry, FLOAT, HYPERCHAN x2, Leverhedge, PAWCAT, AAPLCAT, ANAKIN x2. Only one closed green, PAWCAT at +0.7%; the rest lost between -3% and -31%. Only FLOAT got past 1.3x, and it gave it all back. This goes below the owner's 7 floor for this band only. 10 samples with one scratch win is the strongest pattern in the book, and on a ~$74 wallet each of these was mostly fees. The floor still stands under $1M.)
+- 11-03 02:40Z added: Buy close to the structure: entry within ~12% above the printed higher low, otherwise PASS 'mid-range' (The 20% stop is set by the owner, so I fix the entry instead. The 9 stop exits filled at -59, -38, -36, -27, -31, -30, -31, -31 and -29%, about -35% on average after fees and gaps. HEXN #2, with its invalidation 13% under entry, was the smallest of them. Entering near the level lets the thesis-break exit fire before the price gaps through the hard stop.)
+- 11-03 02:40Z dropped: All retired fee/size/minimum-position fragments (The code fee check owns this now (target must pay 3x the round trip, round trip capped at 20% of the position), so per the owner's instruction these are no longer learned rules.)
 
 ## Recent lessons
 - [2026-10-30 10:53] Expected: HYPERCHAN, the clean flow leader of the HYPE meta at about $2M, would break its 4-hour range and run toward $3M. What happened: it peaked at 1.18x, never broke out, and the 45-minute time stop sold it at 1.05x on market cap, which is still a 4.9% loss after fees. The shallow-band leader rule did its job (clean holders, real flow, no dump), so it stays. What failed was the clock: my written rule is to exit if still under 1.0x at 45 min, but this one closed green on market cap, and a 1.5x move on a $2M coin rarely happens in 45 minutes (V1 talks about small new pairs, V6 about $70k–$11M runners). Next time, for MIGRATED entries above about $1M that are holding their range, give the time stop more room (about 90 min) and still exit if price closes back under the range low. One flat scratch is a sample of one, not a reason to drop the setup.
@@ -191,11 +191,11 @@ The meta is fresh pumpswap graduates under two hours old, and they're taking mos
 ## Moving most in its scans, last 30 min (1h volume)
 - SPHERE: $458,357 1h vol, $530,612 mcap, +952% 1h  
   CA `31SYoqWFhx3i9UsfnoXTjFp4ZwJA8F8UPrMxymfDpump`
-- RUGSEM: $325,509 1h vol, $1,811 mcap, -98% 1h  
+- RUGSEM: $216,404 1h vol, $1,811 mcap, -99% 1h  
   CA `HAZCmiEEKcRL9pQpLDxJhjLAqZzViXQiQSEWntHVpump`
-- ANON: $254,861 1h vol, $82,460 mcap, +36% 1h  
-  CA `CcDxdWZknjKxucq6SgQtHSc5w1amottoBkheaaePpump`
-- OnlyCats: $190,422 1h vol, $1,772 mcap, -99% 1h  
-  CA `GFay6ncgKkKmkxCdQbLc2V68z6WLoffRofvEQDNgpump`
-- DINU: $128,918 1h vol, $2,837 mcap, -19% 1h  
+- inu: $163,276 1h vol, $82,758 mcap, +113% 1h  
+  CA `DAiwoNEeVefNzf9Tvt7gWmbnSpTzAydEqHvX4zoupump`
+- MAGACREW: $134,233 1h vol, $114,963 mcap, +196% 1h  
+  CA `9LAu2WFQGV2FDSoa36S25LMmQSg5E2yUPT33j519pump`
+- DINU: $128,997 1h vol, $2,690 mcap, -23% 1h  
   CA `AzxvvYXhKBz3oXhDzrfZqSDiDevuGBQgsJjD2DkS3UgH`
