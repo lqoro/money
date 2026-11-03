@@ -1,9 +1,9 @@
 # Trencher live report
 
-Updated 2026-11-03T04:03:52Z (paper trading, never real money)
+Updated 2026-11-03T04:19:13Z (paper trading, never real money)
 
 - Equity: $74.23 (-25.8% vs $100 start)
-- Goal: $1,000 by 2026-11-05 05:03Z (pressing for it): at 7.4% of it, 2 days left, needs +257.6% a day from here
+- Goal: $1,000 by 2026-11-05 05:03Z (pressing for it): at 7.4% of it, 2 days left, needs +260% a day from here
 - Closed trades: 22, 3 wins
 - Fees paid: $14.78 (axiom $2.81, network $9.18, pool $2.66), plus $4.15 lost to slippage
 - New trades: on
@@ -74,9 +74,21 @@ Updated 2026-11-03T04:03:52Z (paper trading, never real money)
   CA `H4gHnZ3NCU7Z9XQwGX6YYJNyieGEW8pqwGRUcdSxpump`
 
 ## Last scan
-- 04:03Z: 5 coins, 5 with pairs, 3 passed the market filters, 3 researched
+- 04:18Z: 7 coins, 7 with pairs, 1 passed the market filters, 1 researched
 
 ## Coins it looked at, and why it passed
+- 04:18Z METEORITE (MIGRATED, $113,340 mcap, $20,028 5m vol): PASS at conviction 3, PASS. It's 20 minutes old, 19% off the high with sellers in control, and it's an AI tool with no GitHub. Not a breakout, not a base. Blocker: "no breakout" / "too new" (V1, V6).  
+  CA `67RBmGztx8ciVyWr8yi6R8fwrc3EG86XejYT7mespump`
+- 04:14Z WASTED (DIP, $973,768 mcap, $2,037 5m vol): REJECT, Dev holds 3.5% (>1%) (V13, V17)  
+  CA `GexThZHgaswpAQ7Fi8QrHFubjPimUNSYhJiAA7XZpump`
+- 04:10Z 1WIN (MIGRATED, $20,027,585 mcap, $5,628 5m vol): REJECT, RugCheck danger: Freeze Authority still enabled  
+  CA `FjPKUGnF5zBpdEv18gT8FJCtxh3MKrFkoeYekgYr1win`
+- 04:09Z SPHERE (MIGRATED, $1,213,563 mcap, $5,982 5m vol): PASS at conviction 3, PASS: $1.2M cap, flow at 0.68x pace and falling, and the high is only 1.36x away. Big cap, no room. (V1, V6)  
+  CA `31SYoqWFhx3i9UsfnoXTjFp4ZwJA8F8UPrMxymfDpump`
+- 04:09Z SMUGLY (MIGRATED, $478,663 mcap, $14,412 5m vol): PASS at conviction 4, PASS: SMUGLY is the original and its holders are clean, but it sits 24% under the high with a 50/50 tape. Price is about 15% above its higher low and the prior high is only 1.32x away. That's a mid-range entry, not a breakout. Blocker: "no breakout / mid-range" (V1, V6).  
+  CA `DayjoyjxCA2SVTApEW7oBFG3WMvrYZRMjAnqsetLpump`
+- 04:08Z MEM (MIGRATED, $102,546 mcap, $16,994 5m vol): PASS at conviction 2, PASS — 5m flow is 0.41x pace and sellers outnumber buyers, on a 55-min-old coin borrowing a 2013 coin's ticker and story. Flow below pace, vamp, too new (V1, V3, V6).  
+  CA `8UdrZzuCPbZAY2tiSErRED2KUrggJaRxEsHrzgWLpump`
 - 04:03Z SPHERE (MIGRATED, $1,256,594 mcap, $6,350 5m vol): SKIP, passed the checklist, but the brain was paced or paused  
   CA `31SYoqWFhx3i9UsfnoXTjFp4ZwJA8F8UPrMxymfDpump`
 - 04:03Z SMUGLY (MIGRATED, $490,607 mcap, $10,257 5m vol): SKIP, passed the checklist, but the brain was paced or paused  
@@ -85,35 +97,23 @@ Updated 2026-11-03T04:03:52Z (paper trading, never real money)
   CA `8UdrZzuCPbZAY2tiSErRED2KUrggJaRxEsHrzgWLpump`
 - 03:57Z SPHERE (MIGRATED, $1,194,757 mcap, $6,122 5m vol): SKIP, passed the checklist, but the brain was paced or paused  
   CA `31SYoqWFhx3i9UsfnoXTjFp4ZwJA8F8UPrMxymfDpump`
-- 03:57Z SMUGLY (MIGRATED, $412,064 mcap, $8,030 5m vol): SKIP, passed the checklist, but the brain was paced or paused  
-  CA `DayjoyjxCA2SVTApEW7oBFG3WMvrYZRMjAnqsetLpump`
-- 03:54Z ᑓହꚡई (MIGRATED, $52,408 mcap, $2,733 5m vol): REJECT, Top 10 hold 34.1% ex-pool (>25%) (V13)  
-  CA `HAp8U1SB7bDGMa81AQom1ee6AR5iSFFTi57MEbTzcash`
-- 03:52Z SMUGLY (MIGRATED, $400,246 mcap, $10,469 5m vol): SKIP, passed the checklist, but the brain was paced or paused  
-  CA `DayjoyjxCA2SVTApEW7oBFG3WMvrYZRMjAnqsetLpump`
-- 03:48Z SLUDGE (FINAL_STRETCH, $27,440 mcap, $50,914 5m vol): SKIP, passed the checklist, but the brain was paced or paused  
-  CA `9qF5ryRTnFn9NwL1MQNeZpqeR9HMZZxzJym1xdLHpump`
-- 03:37Z TRENCHER (MIGRATED, $32,025 mcap, $3,555 5m vol): PASS, PASS — brain unavailable, not trading blind.  
-  CA `8rMKmGTdLqx6xNvjLMARQxRQMXtvE4jnDY8ZqN2wpump`
-- 03:33Z inu (DIP, $102,854 mcap, $21,731 5m vol): REJECT, Dip with fading attention is a falling knife, not a dip (5m at 0.47x the hour's pace, under 0.6x)  
-  CA `DAiwoNEeVefNzf9Tvt7gWmbnSpTzAydEqHvX4zoupump`
 
 ## What its skips did next (last 48h)
 A skip "ran" if the coin reached the first target (1.5x) from the skip price before a 20% drop, "dumped" if the drop came first. Sampled every 10 min, followed 6h.
-- top 10 over 25%: blocked 54, ran 8, dumped 42, flat 2, open 2 (saving losses: keep it)
-  - ran: TIPPER up to 1.55x  
-    CA `3DEcz7AnmJiGSnDHYvUeX5uPMMHVcDwqrWRSGdHEpump`
-  - ran: Capri up to 1.84x  
-    CA `6qhnbvdJuWVUQ7EQpgz5GNraV7pty7cqc8MmfQTEpump`
-  - ran: PEAKY up to 1.53x  
-    CA `2EQxezWgXPRU6V3UD7DKr5m12mxqeFGPWNRx9wbqy9fC`
-- too new / sniping: blocked 52, ran 9, dumped 42, flat 0, open 1 (saving losses: keep it)
+- too new / sniping: blocked 54, ran 9, dumped 43, flat 0, open 2 (saving losses: keep it)
   - ran: paws up to 1.51x  
     CA `CCF6ui6YjjhLaVtuYLH8b5jza8jHathqww5VbrMapump`
   - ran: VETOTRUMP up to 1.66x  
     CA `6g16UK4wHoFhC7PCmw8LYYCdt9q8m99fyoAwxeCrpump`
   - ran: Anakinius up to 1.93x  
     CA `2pKpMwUQXNZeAf93LoomnZSworH3ezFzweCiuvrppump`
+- top 10 over 25%: blocked 53, ran 7, dumped 42, flat 2, open 2 (saving losses: keep it)
+  - ran: TIPPER up to 1.55x  
+    CA `3DEcz7AnmJiGSnDHYvUeX5uPMMHVcDwqrWRSGdHEpump`
+  - ran: Capri up to 1.84x  
+    CA `6qhnbvdJuWVUQ7EQpgz5GNraV7pty7cqc8MmfQTEpump`
+  - ran: PEAKY up to 1.53x  
+    CA `2EQxezWgXPRU6V3UD7DKr5m12mxqeFGPWNRx9wbqy9fC`
 - near the high / chasing: blocked 42, ran 2, dumped 37, flat 3, open 0 (saving losses: keep it)
   - ran: BLUE up to 1.53x  
     CA `CPoGSmcjprCvzA2MFYLJMpQkGjmgVzKg4RVwMdrzpump`
@@ -182,16 +182,16 @@ A skip "ran" if the coin reached the first target (1.5x) from the skip price bef
 - [2026-11-02 20:25] I expected Slingoor, a clean MIGRATED leader with $25k of 5m flow at pace and a 0.77 buy share, to retest its $408k high from $304k. It never went green (0.98x peak) and hit the -20% stop in 2 minutes, a -$2.86 probe. My own thesis admitted there was no printed higher low after a peak only 6 minutes old, so this confirms the money-shape rule: buy share and flow are not structure (V1, V6). Next time a MIGRATED pullback with no higher low above the hourly low is a PASS with blocker "no higher low", not a probe. This is one loss, so it adds no new ban beyond the rule I already have.
 
 ## Meta right now
-The meta is fresh pumpswap graduates under 1.5 hours old, and they're taking the flow. SMUGLY ($400k, 1.3h, $26.8k on the 5m, 0.58 buys) is the leader, with inu ($83k, 0.3h, $44k on the 5m) and MAGACREW ($115k, 0.2h, $55k) behind it. The crawler's summary is stale: ascend and Double Cups aren't even on the board now, so I'm ignoring it. The second theme is Trump/MAGA names (MAGACREW, Official Baby Trump at 0.1h). That's political-figure bait (V13), and "Official" on a 6-minute-old pump.fun coin means it's impersonating someone, so I won't touch it. Boomer and Baby Trump are brand-new pump.fun spikes, and I don't snipe those (V5). The GTA6 theme is fading: GATO is flat at $13M with $5k on the 5m and only 0.4 buys, and WASTED has slowed to $3.4k on the 5m. The tiny spikes are already corpses (RUGSEM -99%, Wanted -99%, ㅤ -67%). Setups I'd look at now, all MIGRATED: SMUGLY is the original smug-face meme with real volume, but it's up 358% on the hour, so I only buy a pullback of about 10% off the local high, never a green candle. inu is the second look, on the same pullback rule, if holders and bundles come back clean. MAGACREW passes until I confirm no political figure pushed the CA. WIF "What if?" passes because it borrows dogwifhat's ticker (vamp risk, V1/V3) and only has $4k on the 5m. My owner wants me to press harder on clean setups, and I will, but that changes my size, not the hard lines.
+The meta is memes about memecoins, on fresh pumpswap graduates under 2.5 hours old. MEM "Memecoin" ($110k, 0.9h, $16k on the 5m, +151% on the hour), Memestock ($30k, 0.1h, $42k on the 5m) and SMUGLY ($479k, 2.3h, $14k on the 5m) are the coins getting the flow. Two themes are fading. Political names are dead: MAGACREW went from $115k to $1.8k (-99%), and Hunter Biden's $LAPTOP is crashing in the headlines, so that's a stay-away whatever happens (V13). GTA6 is flat too: GATO at $12M with $4.6k on the 5m, WASTED at $1k. Most fresh graduates are corpses within an hour (SLUDGE -91%, GOAT -70%, DOB -70%), so being early only works on the original with live volume. The setups I'd look at are all MIGRATED. First is MEM, the plainest version of the joke, with the most volume and buys/sells balanced at 0.48; I buy a pullback of about 10% off the local high, not a green candle. Second is SMUGLY, which has cooled to +18% on the hour, same pullback rule. Memestock is a PASS: it's already -28% and sitting at ~$30k, right where bonded coins go to die (V1, V6). The owner's push to be aggressive changes my size on clean setups. It doesn't move the hard lines, and every one of these still has to pass the holder, dev and bundle checks.
 
 ## Moving most in its scans, last 30 min (1h volume)
-- inu: $551,056 1h vol, $102,854 mcap, +65% 1h  
-  CA `DAiwoNEeVefNzf9Tvt7gWmbnSpTzAydEqHvX4zoupump`
-- MEM: $485,664 1h vol, $93,813 mcap, +114% 1h  
+- MEM: $504,222 1h vol, $110,134 mcap, +151% 1h  
   CA `8UdrZzuCPbZAY2tiSErRED2KUrggJaRxEsHrzgWLpump`
-- MAGACREW: $292,201 1h vol, $1,853 mcap, -99% 1h  
-  CA `9LAu2WFQGV2FDSoa36S25LMmQSg5E2yUPT33j519pump`
-- SMUGLY: $186,260 1h vol, $493,489 mcap, +4% 1h  
+- METEORITE: $172,246 1h vol, $113,340 mcap, +197% 1h  
+  CA `67RBmGztx8ciVyWr8yi6R8fwrc3EG86XejYT7mespump`
+- SMUGLY: $169,044 1h vol, $478,663 mcap, +19% 1h  
   CA `DayjoyjxCA2SVTApEW7oBFG3WMvrYZRMjAnqsetLpump`
-- SPHERE: $113,120 1h vol, $1,256,594 mcap, -10% 1h  
+- MAGACREW: $141,187 1h vol, $1,854 mcap, -99% 1h  
+  CA `9LAu2WFQGV2FDSoa36S25LMmQSg5E2yUPT33j519pump`
+- SPHERE: $104,561 1h vol, $1,246,045 mcap, -4% 1h  
   CA `31SYoqWFhx3i9UsfnoXTjFp4ZwJA8F8UPrMxymfDpump`
