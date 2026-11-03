@@ -12,7 +12,7 @@ import threading
 import time
 from collections import deque
 
-from . import data, journal, narrative, radar, skips
+from . import data, journal, narrative, radar, skips, watch
 from .api import start_api
 from .brain import Brain
 from .bridge import DuetBridge
@@ -40,9 +40,9 @@ class Agent:
         self.running = True
         # peaks: token → [highest mcap seen, last seen]; watchlist: coins we were stopped out of
         watch_path = cfg.memory_dir / "watch.json"
-        watch = json.loads(watch_path.read_text()) if watch_path.exists() else {}
-        self.peaks: dict[str, list[float]] = watch.get("peaks", {})
-        self.watchlist: dict[str, dict] = watch.get("watchlist", {})
+        saved = json.loads(watch_path.read_text()) if watch_path.exists() else {}
+        self.peaks: dict[str, list[float]] = saved.get("peaks", {})
+        self.watchlist: dict[str, dict] = saved.get("watchlist", {})
         self.meta: dict = radar.load_radar(cfg)  # the web crawler's view of the meta
         # For the Duet report: what the last scan saw, and every coin it looked at and why it passed.
         self.last_scan: dict = {}
@@ -53,6 +53,9 @@ class Agent:
         # Every coin it passed on, followed to see whether the skip cost a winner or saved a loss.
         self.skips: dict = skips.load(cfg)
         self.last_skip_review = 0.0
+        # Watch-only mode: every coin that passes the market filters, followed to see what it did.
+        self.watch: dict = watch.load(cfg)
+        self.last_watch_sample = 0.0
         self.bridge = DuetBridge(cfg, self)
         # Exits run on their own thread (see run()), so a scan's brain calls can't leave an
         # open position unwatched for minutes. The lock guards the wallet, the watchlist and
@@ -126,7 +129,9 @@ class Agent:
     def scan(self) -> None:
         self.pf.roll_day()
         ok, why = self.pf.can_open(self.cfg)
-        if ok and self.cfg.pause_new_trades:
+        if self.cfg.watch_only:
+            ok, why = True, ""  # nothing gets bought, so the wallet's limits don't apply
+        elif ok and self.cfg.pause_new_trades:
             ok, why = False, "paused from Claude Duet"
         if not ok:
             log.info("Not opening new trades: %s", why)
@@ -157,6 +162,9 @@ class Agent:
             setup = market_prefilter(snap, self.cfg, sol)
             if setup:
                 candidates.append(snap)
+                if self.cfg.watch_only:
+                    with self.lock:
+                        watch.observe(self.cfg, self.watch, snap, setup, sol, now)
             else:
                 self.cooldown[addr] = now + 10 * 60
         candidates.sort(key=lambda s: s["vol_5m"], reverse=True)
@@ -176,7 +184,7 @@ class Agent:
         self.save_watch()
 
         for snap in candidates[: self.cfg.max_candidates_per_scan]:
-            if not self.running or not self.pf.can_open(self.cfg)[0]:
+            if not self.running or not (self.cfg.watch_only or self.pf.can_open(self.cfg)[0]):
                 break
             self.research(snap, sol)
 
@@ -259,6 +267,8 @@ class Agent:
             last = 0.0
             stamp.write_text(str(now))  # first run: give the skips time to play out
             return
+        if cfg.watch_only:
+            return  # watch week: rules stay frozen so the test measures one rule set
         if (now - last >= cfg.skip_evolve_every_hours * 3600
                 and skips.resolved_since(self.skips, last) >= cfg.skip_evolve_min_resolved):
             stamp.write_text(str(now))
@@ -266,6 +276,57 @@ class Agent:
             if summary:
                 log.info(summary)
                 notify(cfg, summary)
+
+    def review_watch(self, now: float | None = None) -> None:
+        """Price the coins being watched and file the ones whose follow window is over."""
+        cfg = self.cfg
+        now = now or time.time()
+        if now - self.last_watch_sample < cfg.watch_sample_min * 60:
+            return
+        with self.lock:
+            if not any(r.get("result") is None for r in self.watch.values()):
+                return
+        self.last_watch_sample = now
+        with self.lock:
+            book = self.watch
+        settled = watch.sample(cfg, book, now)
+        with self.lock:
+            watch.save(cfg, book)
+            if settled:
+                watch.prune_files(cfg, now)
+                log.info("Watch: %d observation(s) filed", settled)
+
+    def daily_review(self, now: float | None = None) -> None:
+        """Once a day, after daily_review_hour_utc, the head model (Opus) reads the logs."""
+        cfg = self.cfg
+        now = now or time.time()
+        day = time.strftime("%Y-%m-%d", time.gmtime(now))
+        hour = time.gmtime(now).tm_hour + time.gmtime(now).tm_min / 60
+        stamp = cfg.memory_dir / "daily_review_day"
+        try:
+            last = stamp.read_text().strip()
+        except OSError:
+            last = ""
+        if hour < cfg.daily_review_hour_utc or last == day:
+            return
+        stamp.write_text(day)  # once a day, even if the call fails
+        with self.lock:
+            dig = watch.digest(cfg, self.watch, now=now)
+        dig["skips_48h"] = skips.stats(self.skips)
+        dig["closed_trades_24h"] = [t for t in journal.read_trades(cfg)
+                                    if t.get("event") == "CLOSE" and t.get("ts", "") >= time.strftime(
+                                        "%Y-%m-%dT%H:%M:%SZ", time.gmtime(now - 86400))]
+        dig["routine_brain_usage_48h"] = self.brain.usage_view()
+        out = self.brain.daily_review(dig)
+        if not out:
+            log.info("Daily review skipped (brain off, paced or failed)")
+            return
+        entry = {"day": day, "model": cfg.head_model, "digest": {k: dig[k] for k in ("settled", "all", "by_stage")},
+                 **out}
+        with (cfg.memory_dir / "daily_reviews.jsonl").open("a") as f:
+            f.write(json.dumps(entry, default=str) + "\n")
+        log.info("Daily review: %s", out.get("summary", "")[:300])
+        notify(cfg, f"🧠 Daily review ({cfg.head_model})\n{out.get('summary', '')}")
 
     def fresh_snapshot(self, addr: str) -> dict | None:
         """The coin's live pair right now, or None if DexScreener has nothing for it."""
@@ -287,6 +348,13 @@ class Agent:
         if live is not None and live.get("price_usd", 0) > 0:
             snap = live
         check = self.build_dossier(snap, sol)
+        if cfg.watch_only:
+            with self.lock:
+                watch.annotate(self.watch, addr, cfg, checklist={
+                    "passed": check.passed, "setup": check.setup, "fails": check.fails[:5],
+                    "warns": check.warns[:8], "partial": check.partial, "holders": check.holders,
+                    "theme": snap.get("theme"), "buzz": snap.get("buzz"),
+                    "drawdown_pct": snap.get("drawdown_pct"), "peak_mcap_usd": snap.get("peak_mcap_usd")})
         if not check.passed:
             if check.fails and "RugCheck report unavailable" in check.fails[0]:
                 self.cooldown[addr] = time.time() + 5 * 60  # a timeout, not a verdict: look again soon
@@ -317,6 +385,12 @@ class Agent:
                         "verdict": f"PASS: {blocked}"}
         plan = sanitize_exit_plan(decision.get("exit_plan"), cfg)
         conviction = int(decision.get("conviction") or 0)
+        if cfg.watch_only:
+            with self.lock:
+                watch.annotate(self.watch, addr, cfg, brain={
+                    k: decision.get(k) for k in ("action", "conviction", "verdict", "brain_verdict",
+                                                 "narrative_trend", "narrative_strength", "catalyst")
+                } | {"exit_plan": plan, "narrative_gate": blocked or None})
         first_target = first_target_multiple(plan, snap["mcap_usd"])
         sizing = position_size(conviction, plan["stop_loss_pct"], self.pf, cfg, sol, venue)
         fees = fee_check(sizing.size_usd, first_target, cfg, sol, venue, snap["liquidity_usd"])
@@ -361,6 +435,20 @@ class Agent:
             return
         if self.dry_run:
             log.info("    [dry run] would buy $%.2f", size)
+            return
+        if cfg.watch_only or cfg.pause_new_trades:
+            # Watch-only: record the buy it would have made, at the live price, and stop there.
+            live = self.fresh_snapshot(addr)
+            live_price = (live or {}).get("price_usd") or 0
+            moved = 100 * (live_price / snap["price_usd"] - 1) if live_price and snap["price_usd"] else None
+            with self.lock:
+                watch.annotate(self.watch, addr, cfg, would_buy={
+                    "size_usd": round(size, 2), "risk_usd": round(sizing.risk_usd, 2), "conviction": conviction,
+                    "live_price": live_price or None, "moved_pct": round(moved, 2) if moved is not None else None,
+                    "venue_fee_pct": venue, "fee_note": fees.note, "thesis": decision.get("thesis", "")[:600]})
+            log.info("    [watch only] would buy $%.2f %s", size, snap["symbol"])
+            self.note_look(snap, check.setup, "WATCH_BUY", f"would have bought ${size:.2f} (watch-only, no buy)",
+                           conviction=decision.get("conviction"))
             return
         # The brain took its time: buy at the price the coin trades at now, the way a real
         # order would fill, and not at all if it moved too far while the brain was reading.
@@ -580,6 +668,8 @@ class Agent:
                     self.monitor()
                 self.drain_closed()
                 self.review_skips()
+                self.review_watch()
+                self.daily_review()
                 if time.time() - last_scan >= self.cfg.scan_interval_sec:
                     last_scan = time.time()
                     self.scan()

@@ -10,7 +10,10 @@ in this repo, checked out at DUET_SYNC_DIR:
                                     "settings": {"stop_loss_pct": 25, "bribe_sol": 0.002, ...},
                                     "owner_note": "short guidance for the brain",
                                     "goal": {"equity_usd": 1000, "deadline": "2026-11-05T05:00:00Z",
-                                             "stance": "survive" or "push"}}
+                                             "stance": "survive" or "push"},
+                                    "watch_only": bool,  # scan and decide, buy nothing, log outcomes
+                                    "brain_model": "claude-haiku-5-5",  # routine calls
+                                    "head_model": "claude-opus-5-5"}  # daily log review
 
 Every DUET_SYNC_INTERVAL_MIN minutes Trencher pulls the branch, applies steer.json,
 writes its status and pushes. Steering is data, never code: only a pause flag,
@@ -31,13 +34,17 @@ import subprocess
 import time
 from pathlib import Path
 
-from . import journal, radar, scorecard, skips
+from . import journal, radar, scorecard, skips, watch
 from .config import EVOLVABLE, ROOT, STEERABLE, Config
 
 log = logging.getLogger(__name__)
 
 STEER_FILE = "steer.json"
 MAX_NOTE_CHARS = 1000
+# Models the owner may pick through steer.json ("brain_model" for routine calls,
+# "head_model" for the daily review). Anything else is ignored.
+ALLOWED_MODELS = ("claude-haiku-5-5", "claude-sonnet-5-5", "claude-opus-5-5")
+OBS_DIR = "watch"  # observation day files, copied to the branch
 
 
 def git(repo: Path, *args: str, timeout: float = 60) -> subprocess.CompletedProcess:
@@ -52,6 +59,28 @@ def apply_steering(cfg: Config, steer: dict) -> dict:
     if pause != cfg.pause_new_trades:
         log.info("Duet steering: new trades %s", "paused" if pause else "resumed")
     cfg.pause_new_trades = applied["pause_new_trades"] = pause
+
+    watch_only = bool(steer.get("watch_only", False))
+    if watch_only != cfg.watch_only:
+        log.info("Duet steering: watch-only %s", "on" if watch_only else "off")
+    cfg.watch_only = applied["watch_only"] = watch_only
+
+    # The brain's models: steer.json wins over MODEL / HEAD_MODEL in .env, and dropping
+    # the key puts the .env (or default) model back.
+    for key, attr in (("brain_model", "model"), ("head_model", "head_model")):
+        pinned = f"_{attr}"
+        chosen = steer.get(key)
+        if chosen in ALLOWED_MODELS:
+            cfg.steer_pinned.setdefault(pinned, getattr(cfg, attr))
+            if getattr(cfg, attr) != chosen:
+                log.info("Duet steering: %s %s → %s", key, getattr(cfg, attr), chosen)
+            setattr(cfg, attr, chosen)
+            applied[key] = chosen
+        else:
+            if chosen is not None:
+                log.warning("Duet steering: ignoring %s %r (not one of %s)", key, chosen, ", ".join(ALLOWED_MODELS))
+            if pinned in cfg.steer_pinned:
+                setattr(cfg, attr, cfg.steer_pinned.pop(pinned))
 
     settings = steer.get("settings") or {}
     if isinstance(settings, dict):
@@ -72,7 +101,7 @@ def apply_steering(cfg: Config, steer: dict) -> dict:
             applied[name] = value
     # Settings dropped from steer.json go back to what they were (then to anything
     # Trencher has evolved for itself since).
-    for name in [n for n in cfg.steer_pinned if n not in applied]:
+    for name in [n for n in cfg.steer_pinned if n not in applied and not n.startswith("_")]:
         setattr(cfg, name, cfg.steer_pinned.pop(name))
         log.info("Duet steering: %s back to %g", name, getattr(cfg, name))
     cfg.apply_strategy()
@@ -112,8 +141,9 @@ def build_report(agent) -> tuple[dict, str]:
     status = {
         "updated_at": time.strftime("%Y-%m-%dT%H:%M:%SZ", time.gmtime()),
         "paused_new_trades": cfg.pause_new_trades,
-        "brain": {"mode": agent.brain.backend or "rules", "paused_until": agent.brain.paused_until or None,
-                  "usage_48h": agent.brain.usage_view()},
+        "watch_only": cfg.watch_only,
+        "brain": {"mode": agent.brain.backend or "rules", "model": cfg.model, "head_model": cfg.head_model,
+                  "paused_until": agent.brain.paused_until or None, "usage_48h": agent.brain.usage_view()},
         **view,
         "strategy": cfg.strategy_view(),
         "paper_costs": {name: getattr(cfg, name) for name in STEERABLE},
@@ -126,6 +156,8 @@ def build_report(agent) -> tuple[dict, str]:
         "recent_looks": list(getattr(agent, "recent_looks", []))[-15:],
         "skip_review": skips.stats(getattr(agent, "skips", {}) or {}),
         "rule_changes": recent_rule_changes(cfg),
+        "watch": watch.summary(cfg, getattr(agent, "watch", {}) or {}),
+        "daily_reviews": recent_daily_reviews(cfg, 3),
     }
 
     eq = view.get("equity_usd", agent.pf.equity())
@@ -147,9 +179,13 @@ def build_report(agent) -> tuple[dict, str]:
         + (" (" + ", ".join(f"{k} ${v:.2f}" for k, v in (view.get("fees_by_kind_usd") or {}).items()) + ")"
            if view.get("fees_by_kind_usd") else "")
         + f", plus ${view.get('slippage_paid_usd', 0):.2f} lost to slippage",
-        f"- New trades: {'PAUSED by Duet' if cfg.pause_new_trades else 'on'}",
-        f"- Brain: {status['brain']['mode']}, {status['brain']['usage_48h']['brain_calls']} calls and "
+        f"- New trades: {'WATCH-ONLY (scans and decides, buys nothing)' if cfg.watch_only else 'PAUSED by Duet' if cfg.pause_new_trades else 'on'}",
+        f"- Brain: {status['brain']['mode']}, {cfg.model} for routine calls, {cfg.head_model} for the daily review; "
+        f"{status['brain']['usage_48h']['brain_calls']} routine calls and "
         f"{status['brain']['usage_48h']['plan_limit_hits']} plan-limit hits in 48h",
+        *([f"- Watch log: {w['live']} coins being followed, {w['settled']} filed, {w['would_buys']} would-buys "
+           f"({w['follow_hours']:g}h follow, sampled every {w['sample_min']:g} min)"]
+          if (w := status["watch"]) and (w["on"] or w["settled"]) else []),
         "",
         *scorecard.lines(status["scorecard"]),
         "",
@@ -197,6 +233,12 @@ def build_report(agent) -> tuple[dict, str]:
         lines += [f"  - ran: {e['symbol']} up to {e['best_x']:g}x  \n    CA `{e['ca']}`" for e in g["ran_examples"]]
     if not review:
         lines.append("- nothing followed yet since the last restart")
+    reviews = status["daily_reviews"]
+    if reviews:
+        r = reviews[-1]
+        lines += ["", f"## Daily review ({r.get('day')}, {r.get('model')})", r.get("summary", "")]
+        lines += [f"- finding: {x}" for x in (r.get("findings") or [])[:5]]
+        lines += [f"- idea to test: {x}" for x in (r.get("rule_ideas") or [])[:5]]
     lines += ["", "## Rules it changed from results and skips"]
     lines += [f"- {time.strftime('%m-%d %H:%MZ', time.gmtime(r.get('t', 0)))} {r.get('change')}: {r.get('rule')} "
               f"({r.get('evidence')})" for r in status["rule_changes"]] or ["- none yet"]
@@ -210,6 +252,36 @@ def build_report(agent) -> tuple[dict, str]:
                   + (f", {m['change_1h']:+.0f}% 1h" if isinstance(m.get("change_1h"), (int, float)) else "")
                   + f"  \n  CA `{m.get('ca')}`" for m in movers]
     return status, "\n".join(lines) + "\n"
+
+
+def recent_daily_reviews(cfg: Config, n: int = 3) -> list[dict]:
+    path = cfg.memory_dir / "daily_reviews.jsonl"
+    if not path.exists():
+        return []
+    out = []
+    for line in path.read_text().splitlines()[-n:]:
+        try:
+            out.append(json.loads(line))
+        except json.JSONDecodeError:
+            continue
+    return out
+
+
+def copy_observations(cfg: Config, dest: Path) -> bool:
+    """Mirror the observation day files into the sync checkout. Returns True if any changed."""
+    src = watch.obs_dir(cfg)
+    if not src.exists():
+        return False
+    out = dest / OBS_DIR
+    changed = False
+    for path in src.glob("*.jsonl"):
+        target = out / path.name
+        data = path.read_bytes()
+        if not target.exists() or target.read_bytes() != data:
+            out.mkdir(parents=True, exist_ok=True)
+            target.write_bytes(data)
+            changed = True
+    return changed
 
 
 def recent_rule_changes(cfg: Config, n: int = 8) -> list[dict]:
@@ -265,6 +337,8 @@ class DuetBridge:
         (self.dir / "status.json").write_text(json.dumps(status, indent=1, default=str))
         (self.dir / "REPORT.md").write_text(report)
         git(self.dir, "add", "status.json", "REPORT.md")
+        if copy_observations(self.cfg, self.dir):
+            git(self.dir, "add", OBS_DIR)
         if git(self.dir, "diff", "--cached", "--quiet").returncode == 0:
             return
         git(self.dir, "-c", "user.name=Trencher", "-c", "user.email=trencher@localhost",
