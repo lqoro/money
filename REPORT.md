@@ -1,13 +1,13 @@
 # Trencher live report
 
-Updated 2026-11-03T08:53:12Z (paper trading, never real money)
+Updated 2026-11-03T09:08:14Z (paper trading, never real money)
 
 - Equity: $74.23 (-25.8% vs $100 start)
 - Closed trades: 22, 3 wins
 - Fees paid: $14.78 (axiom $2.81, network $9.18, pool $2.66), plus $4.15 lost to slippage
 - New trades: WATCH-ONLY (scans and decides, buys nothing)
-- Brain: subscription, claude-haiku-5-5 for routine calls, claude-opus-5-5 for the daily review; 449 routine calls and 1 plan-limit hits in 48h
-- Watch log: 50 coins being followed, 0 filed, 0 would-buys (6h follow, sampled every 2 min)
+- Brain: subscription, claude-haiku-5-5 for routine calls, claude-opus-5-5 for the daily review; 450 routine calls and 1 plan-limit hits in 48h
+- Watch log: 53 coins being followed, 0 filed, 0 would-buys (6h follow, sampled every 2 min)
 
 ## Scorecard (after fees)
 - 22 closed, 3 won (14%), net $-25.79
@@ -73,9 +73,15 @@ Updated 2026-11-03T08:53:12Z (paper trading, never real money)
   CA `H4gHnZ3NCU7Z9XQwGX6YYJNyieGEW8pqwGRUcdSxpump`
 
 ## Last scan
-- 08:52Z: 3 coins, 3 with pairs, 0 passed the market filters, 0 researched
+- 09:07Z: 2 coins, 2 with pairs, 0 passed the market filters, 0 researched
 
 ## Coins it looked at, and why it passed
+- 09:02Z OMBRO (MIGRATED, $97,312 mcap, $21,928 5m vol): PASS at conviction 2, PASS — 34 minutes old, 8.5% off a $106k peak, 5m flow at 0.76x pace, and one of 20 OMBRO copies. Too new, too close to the high, too quiet. (V1, V6, V3)  
+  CA `8DB8Fw5UiC1AzugQAfRyw3qL8omw772LJbdehNWhpump`
+- 08:56Z LIFEVAL (DIP, $232,541 mcap, $15,273 5m vol): REJECT, Dip with fading attention is a falling knife, not a dip (5m at 0.40x the hour's pace, under 0.6x)  
+  CA `Bmn5qFwQHxteaoM1et9FLdHsi52DmuXZyzWinih8pump`
+- 08:53Z peach (FINAL_STRETCH, $20,650 mcap, $3,386 5m vol): PASS at conviction 2, PASS: peach is a 9-copy vamp field with its theme at 0.02x pace, 5m flow at $3.4k, and a +644% hour off the low. Blocker: "split crowd" plus "chasing spike" (V1, V3, V6).  
+  CA `8z9URc6TkM1PwXA1pQqhifJkktLfZbtwBCXAk1zapump`
 - 08:50Z XDG (MIGRATED, $198,862 mcap, $9,963 5m vol): REJECT, Top 10 hold 26.1% ex-pool (>25%) (V13)  
   CA `J1pZjNKh4BnbXBsroE4acJv3TYzCGxTn46VrZii6orEZ`
 - 08:49Z DESSA (DIP, $13,102,353 mcap, $2,820 5m vol): PASS at conviction 2, PASS: DESSA is a $13M AI-meme with $2.8k of 5m flow, sellers in control, no higher low, and no story on the radar. Blocker: dead story. (V1, V6, V13)  
@@ -90,12 +96,6 @@ Updated 2026-11-03T08:53:12Z (paper trading, never real money)
   CA `31SYoqWFhx3i9UsfnoXTjFp4ZwJA8F8UPrMxymfDpump`
 - 08:37Z PumpFun (MIGRATED, $50,615 mcap, $1,953 5m vol): REJECT, 5m volume $1,953 is dead (<$2,000) (V1)  
   CA `9X5UwHT7gWSPtAH5yeEzrLHqv3Nedmhy3HyZN3Yspump`
-- 08:35Z UNPOOLED (DIP, $90,598 mcap, $14,614 5m vol): PASS at conviction 3, PASS — DIP with no catalyst, theme flow at 0.15x pace, and a vamp field with a 5-hour-old site. Blocker: "dead story." (V1, V3, V6)  
-  CA `FxQ5GbqCBxNHDpFTpiL9RDVHiP58ar5nMkR3eMwepump`
-- 08:26Z RICO (MIGRATED, $634,801 mcap, $2,918 5m vol): PASS at conviction 3, PASS — 5m flow is below pace (0.69x the coin's hourly, theme 0.65x) in a 21-copy GTA6 field, and the bottom-buy gate fails on theme volume. Lore site is half a day old. (V1, V6, V13)  
-  CA `8kuQg3WivDtL85VEdw2jEmSXjYt6EEeYBATJ4DtQpump`
-- 08:22Z RATIO (DIP, $40,786 mcap, $3,361 5m vol): REJECT, Dip with fading attention is a falling knife, not a dip (5m at 0.21x the hour's pace, under 0.6x)  
-  CA `3JdeP1VBHgRPunmjTj1D6w6ZZePwGAwjUr2tCufwpump`
 
 ## What its skips did next (last 48h)
 A skip "ran" if the coin reached the first target (1.5x) from the skip price before a 20% drop, "dumped" if the drop came first. Sampled every 10 min, followed 6h.
@@ -106,7 +106,7 @@ A skip "ran" if the coin reached the first target (1.5x) from the skip price bef
     CA `6qhnbvdJuWVUQ7EQpgz5GNraV7pty7cqc8MmfQTEpump`
   - ran: PEAKY up to 1.53x  
     CA `2EQxezWgXPRU6V3UD7DKr5m12mxqeFGPWNRx9wbqy9fC`
-- too new / sniping: blocked 51, ran 9, dumped 41, flat 0, open 1 (saving losses: keep it)
+- too new / sniping: blocked 52, ran 10, dumped 42, flat 0, open 0 (saving losses: keep it)
   - ran: paws up to 1.51x  
     CA `CCF6ui6YjjhLaVtuYLH8b5jza8jHathqww5VbrMapump`
   - ran: VETOTRUMP up to 1.66x  
@@ -118,6 +118,13 @@ A skip "ran" if the coin reached the first target (1.5x) from the skip price bef
     CA `CPoGSmcjprCvzA2MFYLJMpQkGjmgVzKg4RVwMdrzpump`
   - ran: PIRATE up to 2.27x  
     CA `gzQXRwGRzfKLHfaV1f84QT7e5mt4vevu7MgacEfpump`
+- flow below pace: blocked 30, ran 6, dumped 20, flat 1, open 3 (saving losses: keep it)
+  - ran: Ahsoka up to 1.54x  
+    CA `4nuj5NLHMtQSezfmz6CwBpCRJisFie6F6MxNNz1dpump`
+  - ran: KOROSUKE up to 1.54x  
+    CA `7ha4HFgdvkXaDcR2biCsuBpoCZzoLSRjb5we34Gbpump`
+  - ran: CAPY up to 1.51x  
+    CA `DBPTU2oKLDHXQjAEJ3rZi8bUGmt2uxUbipgg6xmXoMqr`
 - RugCheck danger: blocked 30, ran 6, dumped 23, flat 0, open 1 (saving losses: keep it)
   - ran: AIC up to 1.6x  
     CA `2T9WZjVC6L3BvusUtjKDT6HcZeEYgU9T5xhfJQxFpump`
@@ -125,21 +132,14 @@ A skip "ran" if the coin reached the first target (1.5x) from the skip price bef
     CA `ChCi2x2bpevrNyeRoPHLXHzmaCdGQPuU15CNqxY1pump`
   - ran: Bitboy up to 1.6x  
     CA `GvXhSHnWrkAasjAUZeRzRfUBV2BJiiduaHarCWAEpump`
-- flow below pace: blocked 29, ran 6, dumped 19, flat 1, open 3 (saving losses: keep it)
-  - ran: Ahsoka up to 1.54x  
-    CA `4nuj5NLHMtQSezfmz6CwBpCRJisFie6F6MxNNz1dpump`
-  - ran: KOROSUKE up to 1.54x  
-    CA `7ha4HFgdvkXaDcR2biCsuBpoCZzoLSRjb5we34Gbpump`
-  - ran: CAPY up to 1.51x  
-    CA `DBPTU2oKLDHXQjAEJ3rZi8bUGmt2uxUbipgg6xmXoMqr`
-- falling knife (code): blocked 27, ran 5, dumped 19, flat 1, open 2 (saving losses: keep it)
+- falling knife (code): blocked 28, ran 6, dumped 19, flat 1, open 2 (saving losses: keep it)
   - ran: BLUE up to 1.53x  
     CA `CPoGSmcjprCvzA2MFYLJMpQkGjmgVzKg4RVwMdrzpump`
   - ran: VETOTRUMP up to 1.66x  
     CA `6g16UK4wHoFhC7PCmw8LYYCdt9q8m99fyoAwxeCrpump`
   - ran: STEALTH up to 1.77x  
     CA `GoDSW31bTxfkoup9yA1qcGGx9RMXdTEWgApv3xzBmoA`
-- bundles over the line: blocked 19, ran 3, dumped 14, flat 2, open 0 (saving losses: keep it)
+- bundles over the line: blocked 18, ran 3, dumped 13, flat 2, open 0 (saving losses: keep it)
   - ran: Nuts up to 1.53x  
     CA `APH9FRoKst66E4a7uZXcEfE8NjtwybUC8Jq7ue8upump`
   - ran: NA up to 1.97x  
@@ -188,13 +188,13 @@ A skip "ran" if the coin reached the first target (1.5x) from the skip price bef
 The meta is anonymous/crime-flavored pump.fun runners. AnonCrime ($177k cap, $57k 5m, 0.61 buy ratio, +292% 1h) and Anonymous Dog/XDG ($214k cap, $22k 5m, 0.62 buys, +151% 1h) are the two with real volume and buyers across two coins (V1). A second theme is tiny sub-$30k pump.fun pumps: hash (+276%) and PRESSURE (+321%, $17.8k 5m on a $24k cap, a volume-to-cap ratio I'd check for farming before trusting it, V13). Fading: PumpFun Research Facility (-30%), hedge (-66%), HORSE (-42% with about $0 5m), BEES (-29%) and SPHERE (-49%, $6.8k 5m); the older coins (DESSA, GATO, WASTED, ARNOLD) have thin 5m volume, so they aren't the meta. Setups to research now are AnonCrime and XDG, but both are up 150%+ in an hour, so I won't chase: I'd wait for a pullback that holds volume, take initials at 2x, stop at -30%, and check Similar tokens for the original. The crawler summary's numbers (AnonCrime $78k/+104%, SPHERE $800k/+7%) don't match scan_movers, so I'm trusting the scan.
 
 ## Moving most in its scans, last 30 min (1h volume)
-- AnonCrime: $275,514 1h vol, $1,862 mcap, -99% 1h  
-  CA `4NPHWnrS9UjtGKkt4iAc5EQQ2zD1LsYJxeXRvGJZpump`
+- LIFEVAL: $443,784 1h vol, $214,715 mcap, +1% 1h  
+  CA `Bmn5qFwQHxteaoM1et9FLdHsi52DmuXZyzWinih8pump`
+- OMBRO: $348,165 1h vol, $106,296 mcap, +137% 1h  
+  CA `8DB8Fw5UiC1AzugQAfRyw3qL8omw772LJbdehNWhpump`
 - FBI: $202,865 1h vol, $135,266 mcap, +250% 1h  
   CA `EAqmgSTREypN7rgsPinZzzzG8NwtqwZAvbgMhnxmpump`
-- RATIO: $190,923 1h vol, $41,142 mcap, +12% 1h  
-  CA `3JdeP1VBHgRPunmjTj1D6w6ZZePwGAwjUr2tCufwpump`
-- UNPOOLED: $184,690 1h vol, $91,751 mcap, -17% 1h  
-  CA `FxQ5GbqCBxNHDpFTpiL9RDVHiP58ar5nMkR3eMwepump`
 - XDG: $184,336 1h vol, $202,495 mcap, +106% 1h  
   CA `J1pZjNKh4BnbXBsroE4acJv3TYzCGxTn46VrZii6orEZ`
+- 1WIN: $136,626 1h vol, $16,655,033 mcap, -4% 1h  
+  CA `FjPKUGnF5zBpdEv18gT8FJCtxh3MKrFkoeYekgYr1win`
