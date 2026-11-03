@@ -1,13 +1,13 @@
 # Trencher live report
 
-Updated 2026-11-03T12:56:21Z (paper trading, never real money)
+Updated 2026-11-03T13:11:33Z (paper trading, never real money)
 
 - Equity: $74.23 (-25.8% vs $100 start)
 - Closed trades: 22, 3 wins
 - Fees paid: $14.78 (axiom $2.81, network $9.18, pool $2.66), plus $4.15 lost to slippage
 - New trades: WATCH-ONLY (scans and decides, buys nothing)
 - Brain: subscription, claude-haiku-5-5 for routine calls, claude-opus-5-5 for the daily review; 442 routine calls and 1 plan-limit hits in 48h
-- Watch log: 88 coins being followed, 13 filed, 0 would-buys (6h follow, sampled every 2 min)
+- Watch log: 84 coins being followed, 19 filed, 0 would-buys (6h follow, sampled every 2 min)
 
 ## Scorecard (after fees)
 - 22 closed, 3 won (14%), net $-25.79
@@ -73,9 +73,13 @@ Updated 2026-11-03T12:56:21Z (paper trading, never real money)
   CA `H4gHnZ3NCU7Z9XQwGX6YYJNyieGEW8pqwGRUcdSxpump`
 
 ## Last scan
-- 12:56Z: 2 coins, 1 with pairs, 0 passed the market filters, 0 researched
+- 13:10Z: 2 coins, 0 with pairs, 0 passed the market filters, 0 researched
 
 ## Coins it looked at, and why it passed
+- 13:09Z RICO (MIGRATED, $549,159 mcap, $9,940 5m vol): PASS, PASS — brain unavailable, not trading blind.  
+  CA `8kuQg3WivDtL85VEdw2jEmSXjYt6EEeYBATJ4DtQpump`
+- 12:59Z Dacity (MIGRATED, $7,145,414 mcap, $3,854 5m vol): REJECT, Bundles: 10 linked wallet cluster(s) hold 24.0% of supply (>20%) (V17)  
+  CA `nxPqZ4F7ux8Vph5NFu25rEP6Kx9Gr1U6Fmj36Rjpump`
 - 12:48Z DESSA (DIP, $14,952,820 mcap, $9,536 5m vol): PASS at conviction 3, PASS. DESSA is a $15M bottom-buy with no catalyst and no breakout. Blocker: "no catalyst, narrative not rising." Only 1.79x hourly pace, and the story is a 10-day-old AI joke with no GitHub. (Owner bottom-buy rule, V1, V6, V13)  
   CA `npz2FhoufQ7pKqhGpaipYWacrAkidyW2yDpVWSvpump`
 - 12:39Z PUMP (DIP, $106,837 mcap, $26,746 5m vol): REJECT, Dip with fading attention is a falling knife, not a dip (5m at 0.49x the hour's pace, under 0.6x)  
@@ -92,10 +96,6 @@ Updated 2026-11-03T12:56:21Z (paper trading, never real money)
   CA `9gKArqT6qp3goHfuwAnfG7LioqwUtJ8TFu7P1Bhbpump`
 - 12:05Z AI (DIP, $60,331 mcap, $6,381 5m vol): REJECT, Dip with fading attention is a falling knife, not a dip (5m at 0.28x the hour's pace, under 0.6x)  
   CA `8ozpQfvuPzxaLiKnX6cqTDbqs8HMzqduHUe1J15mpump`
-- 12:02Z DESSA (DIP, $14,713,229 mcap, $2,970 5m vol): REJECT, Dip with fading attention is a falling knife, not a dip (5m at 0.55x the hour's pace, under 0.6x)  
-  CA `npz2FhoufQ7pKqhGpaipYWacrAkidyW2yDpVWSvpump`
-- 12:02Z RICO (MIGRATED, $560,722 mcap, $37,950 5m vol): PASS at conviction 2, PASS: RICO is riding a GTA 6 leak story that the sources tie to hackers and dumped memecoins, and it's a -22% 5m candle on 3.6x pace with no printed higher low. Blockers: hack-linked story, chasing spike, no higher low. (V6, V13)  
-  CA `8kuQg3WivDtL85VEdw2jEmSXjYt6EEeYBATJ4DtQpump`
 
 ## What its skips did next (last 48h)
 A skip "ran" if the coin reached the first target (1.5x) from the skip price before a 20% drop, "dumped" if the drop came first. Sampled every 10 min, followed 6h.
@@ -106,7 +106,7 @@ A skip "ran" if the coin reached the first target (1.5x) from the skip price bef
     CA `2EQxezWgXPRU6V3UD7DKr5m12mxqeFGPWNRx9wbqy9fC`
   - ran: Bitboy up to 1.6x  
     CA `GvXhSHnWrkAasjAUZeRzRfUBV2BJiiduaHarCWAEpump`
-- too new / sniping: blocked 52, ran 8, dumped 43, flat 0, open 1 (saving losses: keep it)
+- too new / sniping: blocked 51, ran 8, dumped 43, flat 0, open 0 (saving losses: keep it)
   - ran: VETOTRUMP up to 1.66x  
     CA `6g16UK4wHoFhC7PCmw8LYYCdt9q8m99fyoAwxeCrpump`
   - ran: Anakinius up to 1.93x  
@@ -128,14 +128,14 @@ A skip "ran" if the coin reached the first target (1.5x) from the skip price bef
     CA `ChCi2x2bpevrNyeRoPHLXHzmaCdGQPuU15CNqxY1pump`
   - ran: Bitboy up to 1.6x  
     CA `GvXhSHnWrkAasjAUZeRzRfUBV2BJiiduaHarCWAEpump`
-- falling knife (code): blocked 28, ran 5, dumped 20, flat 1, open 2 (saving losses: keep it)
+- falling knife (code): blocked 28, ran 5, dumped 21, flat 1, open 1 (saving losses: keep it)
   - ran: VETOTRUMP up to 1.66x  
     CA `6g16UK4wHoFhC7PCmw8LYYCdt9q8m99fyoAwxeCrpump`
   - ran: STEALTH up to 1.77x  
     CA `GoDSW31bTxfkoup9yA1qcGGx9RMXdTEWgApv3xzBmoA`
   - ran: PEACE up to 1.75x  
     CA `BngAfLZxaWN2QvpFhRbUHydYGr8zA7YTSA178G8Epump`
-- bundles over the line: blocked 21, ran 2, dumped 16, flat 2, open 1 (saving losses: keep it)
+- bundles over the line: blocked 21, ran 2, dumped 16, flat 1, open 2 (saving losses: keep it)
   - ran: Nuts up to 1.53x  
     CA `APH9FRoKst66E4a7uZXcEfE8NjtwybUC8Jq7ue8upump`
   - ran: NA up to 1.97x  
@@ -153,6 +153,19 @@ A skip "ran" if the coin reached the first target (1.5x) from the skip price bef
     CA `E5aeDjgq6ZSzAmihKoh9JPEhwK2bMCbZLJf6LYT9pump`
   - ran: Firecube up to 1.88x  
     CA `Ebih1KdijjpQBaM83gUfGhRtTCpHzDkBZhCZedZwpump`
+
+## Daily review (2026-11-03, claude-opus-5-5)
+There's no positive after-cost edge yet. The 13 settled coins averaged -6.7% net under the simple plan, which is about +3.6% gross minus a 10.3% round-trip cost. The best bucket, MIGRATED, is break-even at -0.4% (n=8). With a 1.5x target, a -20% stop and about 10% cost, a winner nets about +40% and a loser about -30%, so a coin has to hit the target first about 43% of the time just to break even. Nothing big enough to trust gets there: the whole set is at 31% and MIGRATED at 37.5%. With n=13 the confidence intervals run roughly ±25 points, and the simulator flatters losses (see data issues), so the real numbers are probably worse. The routine model logged zero would-buys, so there's nothing to compare against the coins it passed on. Its PASSes did worse (-20.5% net, n=7) than the coins the checklist rejected (+9.4%, n=6). So passing was mostly right, but that gap rests on 2–3 coins (3/6 vs 1/7 ran, Fisher p≈0.3). It also passed on the day's two best runners, LIFEVAL at 4.2x and XDG at 2.7x.
+- finding: Costs are the whole story. Overall: n=13, ran 30.8%, dumped 61.5%, average net -6.7% against 10.3% cost, so gross price action was slightly positive (+3.6%). The one real trade in the window (Slingoor) cost $1.00 on $10, the same 10%. That matches the pre-pause record, where fees and slippage were $18.83 of the $25.79 lost.
+- finding: Break-even maths: at a 1.5x target, -20% stop and 10% cost, a strategy needs about 43% of trades to hit the target first. No sample of 6 or more reaches that. By setup: MIGRATED 37.5%, FINAL_STRETCH 33.3%, DIP 0%.
+- finding: MIGRATED, n=8: ran 37.5%, dumped 50%, median peak 1.6x, hit 2x 25%, net -0.4%. It's the only setup near zero, and it's still not positive.
+- finding: DIP, n=2: both dumped, net -30.7% each. That is exactly -20% plus 10.7% cost, which shows the simulator fills every stop at exactly -20%. Two coins is not evidence about the setup.
+- finding: FINAL_STRETCH, n=3: one ran (Firecube, 2.09x high 13.6 min after logging, rejected by the checklist for dev share over 1%), net -7.5%.
+- idea to test: Cost gate. Hypothesis: low-cost pools are the only place an edge can survive. Test: on all logged coins, bucket by estimated round-trip cost (<5%, 5–8%, >8%) and compare simple-plan net. Also re-price at $25 and $50 notional if the cost model splits fixed fees from slippage, to see where fixed fees stop dominating.
+- idea to test: Older, larger migrated coins. Hypothesis: the RICO/MAMESUKE pattern. Test setup=MIGRATED AND age_hours 6–48 AND mcap $300k–$3M AND 5m volume ≥ $10k AND flow ratio ≥ 0.8 AND drawdown from high 20–50%, with no time stop or a 6h one. Compare its hit rate with the 43% break-even.
+- idea to test: Very young migrated coins. Hypothesis: the LIFEVAL/XDG pattern. Test setup=MIGRATED AND age_hours < 0.5 AND mcap $100k–$250k AND 5m volume ≥ $15k AND buy ratio ≥ 0.6 AND checklist pass, against the same age band that 'too new' blocks (15% ran). Keep it only if an mcap or volume floor clearly separates the runners.
+- idea to test: Time-stop comparison. On every settled coin, run the simple plan three ways: no time stop, a 45-minute time stop (current live plans), and a 6h time stop. Several runners peaked after 150–360 minutes, so the 45-minute stop may be cutting the only gains there are.
+- idea to test: Stop/target geometry. Compare -20%/1.5x, -30%/2x and -25%/1.5x with the 2x initials from the soul file. At least one 2x coin dropped through -20% before it ran. Stops must fill at the first sample at or below the level, not at the level itself.
 
 ## Rules it changed from results and skips
 - 11-02 23:38Z tightened: DIP gate: flow at least 0.7x the hourly pace plus a printed higher low (DIPs 0 for 5 (-$6.70), every one bought before the higher low held (HEXN x2, SIS, Something, Leverhedge). The code line is now aligned to the owner's 0.7x.)
@@ -180,13 +193,13 @@ A skip "ran" if the coin reached the first target (1.5x) from the skip price bef
 The trenches are trading fresh pump.fun and PumpSwap coins with real 5-minute volume and buy-heavy flow, and the theme is joke naming. Two clusters show up: a GTA6 pair (GTA6DOG/RICO at $561k cap with $38k 5m and 68% buys; GTA6CAT/GATO, a 70-day-old $13M coin, quiet at $5.6k 5m and 36% buys) and a "mog" pair (MOGMAS at $47k with $20k 5m and 65% buys, 12 minutes old; MOGGING with zero 5m volume). The fast spikes are launches under an hour old: SATMINE ($11.5k cap, $21k 5m, +229% 1h, 61% buys) and 404 ($23k cap, +776% 1h, but only $5.5k 5m). Fading: the "Anonymous inu" (AI) and inucrypted are down 53% and 78% in an hour, and the crawler summary's +221% and +602% figures contradict the scan data, so I'm trusting the scan. Research only, not buys: MOGMAS is the one that clears the MIGRATED volume bar, but it's too young, so I want a pullback that holds buy ratio above 0.5, a check of similar tokens for the original, then holders and bundles. SATMINE is a snipe on a vertical spike with no exit plan; it's a pass unless its holder and bundle checks come back clean, and even then conviction is 3-4. Nothing here is a hack-named coin, and the movers are active, so this isn't a quiet market.
 
 ## Moving most in its scans, last 30 min (1h volume)
-- PUMP: $662,124 1h vol, $114,902 mcap, +222% 1h  
-  CA `Hxqh7Fxsz11pyqDRdEkBgP8vP44BPLPnQDrxzPYZpump`
-- 1WIN: $344,648 1h vol, $17,664,144 mcap, -5% 1h  
+- 1WIN: $345,139 1h vol, $17,954,438 mcap, -4% 1h  
   CA `FjPKUGnF5zBpdEv18gT8FJCtxh3MKrFkoeYekgYr1win`
-- zkSnark: $177,200 1h vol, $129,396 mcap, +231% 1h  
-  CA `ESqXTLxmuYeU2MeUzZfdxFP81EXpTPR5sgWkzmAVpump`
-- MOGGING: $122,547 1h vol, $6,907 mcap, -85% 1h  
-  CA `Ez1zGM23iZgzxvinkNEnTuSkyicwbahvRjfpRDaWnzbj`
-- RICO: $104,745 1h vol, $652,669 mcap, -14% 1h  
-  CA `8kuQg3WivDtL85VEdw2jEmSXjYt6EEeYBATJ4DtQpump`
+- GATO: $108,962 1h vol, $11,722,561 mcap, -11% 1h  
+  CA `HsprHxBRgiVaQdRf3TnKNuZZtaX9JUSPgMFdAkk6pump`
+- SATMINE: $90,650 1h vol, $8,380 mcap, +139% 1h  
+  CA `4up8RwmTFU6qVaZaS4pWa8R8qH8DE13NvAF6rRo2pump`
+- DUO: $73,836 1h vol, $17,534 mcap, +561% 1h  
+  CA `6MFJZLFcz4Nj4yYjCze25EHCyhQsFAaKd8B6PWYdpump`
+- Dacity: $71,835 1h vol, $7,145,414 mcap, -3% 1h  
+  CA `nxPqZ4F7ux8Vph5NFu25rEP6Kx9Gr1U6Fmj36Rjpump`
