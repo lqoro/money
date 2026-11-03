@@ -1,13 +1,13 @@
 # Trencher live report
 
-Updated 2026-11-03T08:22:53Z (paper trading, never real money)
+Updated 2026-11-03T08:38:06Z (paper trading, never real money)
 
 - Equity: $74.23 (-25.8% vs $100 start)
 - Closed trades: 22, 3 wins
 - Fees paid: $14.78 (axiom $2.81, network $9.18, pool $2.66), plus $4.15 lost to slippage
 - New trades: WATCH-ONLY (scans and decides, buys nothing)
-- Brain: subscription, claude-haiku-5-5 for routine calls, claude-opus-5-5 for the daily review; 451 routine calls and 1 plan-limit hits in 48h
-- Watch log: 41 coins being followed, 0 filed, 0 would-buys (6h follow, sampled every 2 min)
+- Brain: subscription, claude-haiku-5-5 for routine calls, claude-opus-5-5 for the daily review; 450 routine calls and 1 plan-limit hits in 48h
+- Watch log: 44 coins being followed, 0 filed, 0 would-buys (6h follow, sampled every 2 min)
 
 ## Scorecard (after fees)
 - 22 closed, 3 won (14%), net $-25.79
@@ -73,9 +73,15 @@ Updated 2026-11-03T08:22:53Z (paper trading, never real money)
   CA `H4gHnZ3NCU7Z9XQwGX6YYJNyieGEW8pqwGRUcdSxpump`
 
 ## Last scan
-- 08:22Z: 2 coins, 2 with pairs, 1 passed the market filters, 1 researched
+- 08:37Z: 27 coins, 27 with pairs, 1 passed the market filters, 1 researched
 
 ## Coins it looked at, and why it passed
+- 08:37Z PumpFun (MIGRATED, $50,615 mcap, $1,953 5m vol): REJECT, 5m volume $1,953 is dead (<$2,000) (V1)  
+  CA `9X5UwHT7gWSPtAH5yeEzrLHqv3Nedmhy3HyZN3Yspump`
+- 08:35Z UNPOOLED (DIP, $90,598 mcap, $14,614 5m vol): PASS at conviction 3, PASS — DIP with no catalyst, theme flow at 0.15x pace, and a vamp field with a 5-hour-old site. Blocker: "dead story." (V1, V3, V6)  
+  CA `FxQ5GbqCBxNHDpFTpiL9RDVHiP58ar5nMkR3eMwepump`
+- 08:26Z RICO (MIGRATED, $634,801 mcap, $2,918 5m vol): PASS at conviction 3, PASS — 5m flow is below pace (0.69x the coin's hourly, theme 0.65x) in a 21-copy GTA6 field, and the bottom-buy gate fails on theme volume. Lore site is half a day old. (V1, V6, V13)  
+  CA `8kuQg3WivDtL85VEdw2jEmSXjYt6EEeYBATJ4DtQpump`
 - 08:22Z RATIO (DIP, $40,786 mcap, $3,361 5m vol): REJECT, Dip with fading attention is a falling knife, not a dip (5m at 0.21x the hour's pace, under 0.6x)  
   CA `3JdeP1VBHgRPunmjTj1D6w6ZZePwGAwjUr2tCufwpump`
 - 08:21Z PRESSURE (FINAL_STRETCH, $24,770 mcap, $17,641 5m vol): PASS at conviction 3, PASS: blocker "target too close" plus "no narrative". PRESSURE is a $24.8k pump.fun runner, 1.16x from its own 30-min high. Its first real target sits in the $30-40k zone where new pairs usually die (V1). Farm-shaped, not a setup. (V1, V6, V13)  
@@ -90,16 +96,10 @@ Updated 2026-11-03T08:22:53Z (paper trading, never real money)
   CA `npz2FhoufQ7pKqhGpaipYWacrAkidyW2yDpVWSvpump`
 - 07:59Z ARNOLD (MIGRATED, $105,212 mcap, $4,473 5m vol): PASS at conviction 3, PASS: ARNOLD is 5.5% off its high after a ~90% run in four hours, on $4.5k of 5m flow with a 50/50 buy split. Blocker: chasing (V1, V6).  
   CA `nG3jfPQHU2ZQhPERkTZD8YPSAsrrWiePPDcm9jxpump`
-- 07:57Z AnonCrime (MIGRATED, $188,800 mcap, $54,758 5m vol): REJECT, Bundles: 10 linked wallet cluster(s) hold 100.0% of supply (>20%) (V17)  
-  CA `4NPHWnrS9UjtGKkt4iAc5EQQ2zD1LsYJxeXRvGJZpump`
-- 07:53Z 1WIN (MIGRATED, $17,793,807 mcap, $2,848 5m vol): REJECT, RugCheck danger: Freeze Authority still enabled  
-  CA `FjPKUGnF5zBpdEv18gT8FJCtxh3MKrFkoeYekgYr1win`
-- 07:53Z SPHERE (DIP, $523,093 mcap, $6,818 5m vol): PASS at conviction 2, PASS: DIP with no story. Theme volume is 0.72x pace, website is 10 hours old and doesn't show this CA, and 15+ copies share the name. Dead story (V1, V3, V13).  
-  CA `31SYoqWFhx3i9UsfnoXTjFp4ZwJA8F8UPrMxymfDpump`
 
 ## What its skips did next (last 48h)
 A skip "ran" if the coin reached the first target (1.5x) from the skip price before a 20% drop, "dumped" if the drop came first. Sampled every 10 min, followed 6h.
-- top 10 over 25%: blocked 54, ran 9, dumped 41, flat 3, open 1 (saving losses: keep it)
+- top 10 over 25%: blocked 53, ran 9, dumped 40, flat 3, open 1 (saving losses: keep it)
   - ran: TIPPER up to 1.55x  
     CA `3DEcz7AnmJiGSnDHYvUeX5uPMMHVcDwqrWRSGdHEpump`
   - ran: Capri up to 1.84x  
@@ -113,7 +113,7 @@ A skip "ran" if the coin reached the first target (1.5x) from the skip price bef
     CA `6g16UK4wHoFhC7PCmw8LYYCdt9q8m99fyoAwxeCrpump`
   - ran: Anakinius up to 1.93x  
     CA `2pKpMwUQXNZeAf93LoomnZSworH3ezFzweCiuvrppump`
-- near the high / chasing: blocked 41, ran 2, dumped 35, flat 3, open 1 (saving losses: keep it)
+- near the high / chasing: blocked 39, ran 2, dumped 33, flat 3, open 1 (saving losses: keep it)
   - ran: BLUE up to 1.53x  
     CA `CPoGSmcjprCvzA2MFYLJMpQkGjmgVzKg4RVwMdrzpump`
   - ran: PIRATE up to 2.27x  
@@ -125,20 +125,20 @@ A skip "ran" if the coin reached the first target (1.5x) from the skip price bef
     CA `ChCi2x2bpevrNyeRoPHLXHzmaCdGQPuU15CNqxY1pump`
   - ran: Bitboy up to 1.6x  
     CA `GvXhSHnWrkAasjAUZeRzRfUBV2BJiiduaHarCWAEpump`
-- falling knife (code): blocked 29, ran 5, dumped 20, flat 1, open 3 (saving losses: keep it)
-  - ran: BLUE up to 1.53x  
-    CA `CPoGSmcjprCvzA2MFYLJMpQkGjmgVzKg4RVwMdrzpump`
-  - ran: VETOTRUMP up to 1.66x  
-    CA `6g16UK4wHoFhC7PCmw8LYYCdt9q8m99fyoAwxeCrpump`
-  - ran: STEALTH up to 1.77x  
-    CA `GoDSW31bTxfkoup9yA1qcGGx9RMXdTEWgApv3xzBmoA`
-- flow below pace: blocked 27, ran 6, dumped 18, flat 1, open 2 (saving losses: keep it)
+- flow below pace: blocked 29, ran 6, dumped 18, flat 1, open 4 (saving losses: keep it)
   - ran: Ahsoka up to 1.54x  
     CA `4nuj5NLHMtQSezfmz6CwBpCRJisFie6F6MxNNz1dpump`
   - ran: KOROSUKE up to 1.54x  
     CA `7ha4HFgdvkXaDcR2biCsuBpoCZzoLSRjb5we34Gbpump`
   - ran: CAPY up to 1.51x  
     CA `DBPTU2oKLDHXQjAEJ3rZi8bUGmt2uxUbipgg6xmXoMqr`
+- falling knife (code): blocked 28, ran 5, dumped 20, flat 1, open 2 (saving losses: keep it)
+  - ran: BLUE up to 1.53x  
+    CA `CPoGSmcjprCvzA2MFYLJMpQkGjmgVzKg4RVwMdrzpump`
+  - ran: VETOTRUMP up to 1.66x  
+    CA `6g16UK4wHoFhC7PCmw8LYYCdt9q8m99fyoAwxeCrpump`
+  - ran: STEALTH up to 1.77x  
+    CA `GoDSW31bTxfkoup9yA1qcGGx9RMXdTEWgApv3xzBmoA`
 - bundles over the line: blocked 19, ran 3, dumped 14, flat 2, open 0 (saving losses: keep it)
   - ran: Nuts up to 1.53x  
     CA `APH9FRoKst66E4a7uZXcEfE8NjtwybUC8Jq7ue8upump`
@@ -146,14 +146,11 @@ A skip "ran" if the coin reached the first target (1.5x) from the skip price bef
     CA `9ZmdP8q22ebRhEkcwd5EDkitu7ypeDFXTQXpv2kUpump`
   - ran: MAMESUKE up to 1.51x  
     CA `SCGBBnSwnekytGFHgyeHHxPMiN7xDxsWFGg9JgFSTNK`
-- thin 5m volume: blocked 13, ran 2, dumped 4, flat 5, open 2 (saving losses: keep it)
+- thin 5m volume: blocked 14, ran 2, dumped 4, flat 5, open 3 (saving losses: keep it)
   - ran: CUMFACE up to 1.55x  
     CA `J1D3X8znX4AzUPMHVWyBLNHqBBqWDPNSjX4KwK3Qpump`
   - ran: KIDS up to 1.73x  
     CA `7uwr9Zoz8WW9UyRVC22nmmAXRbPoFTUpVjsN8q7kids`
-- falling knife / no higher low: blocked 13, ran 1, dumped 9, flat 2, open 1 (saving losses: keep it)
-  - ran: HEDGE up to 1.77x  
-    CA `wDSAqt4tEZpDAwB9XY6ejkZvMFuT1zUMjUh67txeYhf`
 - dev share over 1%: blocked 12, ran 3, dumped 5, flat 3, open 1 (mixed)
   - ran: MINTED up to 1.61x  
     CA `9yEKBwczdqoox7Red6GGPTrJ2dUbMvFUagdjxFqHpump`
@@ -161,6 +158,9 @@ A skip "ran" if the coin reached the first target (1.5x) from the skip price bef
     CA `E5aeDjgq6ZSzAmihKoh9JPEhwK2bMCbZLJf6LYT9pump`
   - ran: Firecube up to 1.88x  
     CA `Ebih1KdijjpQBaM83gUfGhRtTCpHzDkBZhCZedZwpump`
+- falling knife / no higher low: blocked 12, ran 1, dumped 9, flat 2, open 0 (saving losses: keep it)
+  - ran: HEDGE up to 1.77x  
+    CA `wDSAqt4tEZpDAwB9XY6ejkZvMFuT1zUMjUh67txeYhf`
 
 ## Rules it changed from results and skips
 - 11-02 23:38Z tightened: DIP gate: flow at least 0.7x the hourly pace plus a printed higher low (DIPs 0 for 5 (-$6.70), every one bought before the higher low held (HEXN x2, SIS, Something, Leverhedge). The code line is now aligned to the owner's 0.7x.)
@@ -190,11 +190,11 @@ The meta is anonymous/crime-flavored pump.fun runners. AnonCrime ($177k cap, $57
 ## Moving most in its scans, last 30 min (1h volume)
 - LIFEVAL: $764,895 1h vol, $289,360 mcap, +64% 1h  
   CA `Bmn5qFwQHxteaoM1et9FLdHsi52DmuXZyzWinih8pump`
-- AnonCrime: $501,422 1h vol, $177,305 mcap, +292% 1h  
-  CA `4NPHWnrS9UjtGKkt4iAc5EQQ2zD1LsYJxeXRvGJZpump`
+- SOLAKIT: $626,093 1h vol, $1,910 mcap, -98% 1h  
+  CA `Bj4UUitguoioQ2MQHHAb36maVANu9L38Bcwh29hzpump`
 - RATIO: $190,923 1h vol, $41,142 mcap, +12% 1h  
   CA `3JdeP1VBHgRPunmjTj1D6w6ZZePwGAwjUr2tCufwpump`
-- hash: $166,811 1h vol, $13,105 mcap, +276% 1h  
+- UNPOOLED: $184,690 1h vol, $91,751 mcap, -17% 1h  
+  CA `FxQ5GbqCBxNHDpFTpiL9RDVHiP58ar5nMkR3eMwepump`
+- hash: $174,606 1h vol, $7,570 mcap, +117% 1h  
   CA `DV6hTfn4pEJkB9K16TX8mvqZzNbjfBxEZt4Q4vBypump`
-- 1WIN: $123,650 1h vol, $16,695,108 mcap, -3% 1h  
-  CA `FjPKUGnF5zBpdEv18gT8FJCtxh3MKrFkoeYekgYr1win`
