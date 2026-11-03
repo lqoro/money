@@ -1,13 +1,13 @@
 # Trencher live report
 
-Updated 2026-11-03T20:29:49Z (paper trading, never real money)
+Updated 2026-11-03T20:44:50Z (paper trading, never real money)
 
 - Equity: $74.23 (-25.8% vs $100 start)
 - Closed trades: 22, 3 wins
 - Fees paid: $14.78 (axiom $2.81, network $9.18, pool $2.66), plus $4.15 lost to slippage
 - New trades: WATCH-ONLY (scans and decides, buys nothing)
-- Brain: subscription, claude-haiku-5-5 for routine calls, claude-opus-5-5 for the daily review; 465 routine calls and 1 plan-limit hits in 48h
-- Watch log: 136 coins being followed, 122 filed, 0 would-buys (6h follow, sampled every 2 min)
+- Brain: subscription, claude-haiku-5-5 for routine calls, claude-opus-5-5 for the daily review; 466 routine calls and 1 plan-limit hits in 48h
+- Watch log: 132 coins being followed, 131 filed, 0 would-buys (6h follow, sampled every 2 min)
 
 ## Scorecard (after fees)
 - 22 closed, 3 won (14%), net $-25.79
@@ -73,9 +73,19 @@ Updated 2026-11-03T20:29:49Z (paper trading, never real money)
   CA `H4gHnZ3NCU7Z9XQwGX6YYJNyieGEW8pqwGRUcdSxpump`
 
 ## Last scan
-- 20:28Z: 3 coins, 2 with pairs, 0 passed the market filters, 0 researched
+- 20:44Z: 10 coins, 9 with pairs, 0 passed the market filters, 0 researched
 
 ## Coins it looked at, and why it passed
+- 20:41Z meganfox (FINAL_STRETCH, $28,229 mcap, $16,697 5m vol): PASS at conviction 2, PASS: chasing spike. 5m up 236%, 2% off a peak that's 8x its hourly low, on a sawtooth chart, with a celebrity name and no official link. (V1, V3, V6, V13)  
+  CA `21sLaTZeDqZJ41ss14MZ7SmrvWgdH2x3xRgV7ZS2B5FP`
+- 20:39Z Pog (DIP, $44,664 mcap, $31,175 5m vol): PASS at conviction 2, PASS — 18 copies of "pog", the theme's 5m flow is 0.09x its hourly pace, no catalyst, and the chart is a saw-tooth with sellers ahead (44% buys). Blocker: theme pace and vamp field (V1, V3, V6).  
+  CA `JcPLcB4WN61b2i6cZctiXW2R9AYCAKCQo6tqFVNpump`
+- 20:38Z CHOOBOT (MIGRATED, $114,571 mcap, $12,750 5m vol): PASS at conviction 3, PASS: sells are 442 to 64 in the last 5m and nothing has printed a higher low. The bottom-buy rule also fails on narrative. Copy of a rescue-dog story with no catalyst. (V1, V6)  
+  CA `CMPgvtyfyQwXGeT8hDFGqegm5ehvJnmti7LMadjvpump`
+- 20:35Z Dacity (MIGRATED, $6,964,222 mcap, $4,653 5m vol): REJECT, Bundles: 10 linked wallet cluster(s) hold 24.0% of supply (>20%) (V17)  
+  CA `nxPqZ4F7ux8Vph5NFu25rEP6Kx9Gr1U6Fmj36Rjpump`
+- 20:30Z RICO (DIP, $325,047 mcap, $13,782 5m vol): PASS at conviction 4, PASS — no printed higher low. The 15m candle just fell 21% and the price sits 20% above the hourly low without a bounce that held. The GTA meta is real, but RICO is a dog in a 22-copy field with top 10 at 21%. Blocker: "no higher low" (V1, V6).  
+  CA `8kuQg3WivDtL85VEdw2jEmSXjYt6EEeYBATJ4DtQpump`
 - 20:21Z MEOWNERO (MIGRATED, $198,155 mcap, $2,537 5m vol): PASS at conviction 2, PASS: flow below pace, no bottom-buy catalyst, and the chart data is corrupt (peak mcap $637B vs $198k now). Farm-shaped until proven otherwise (V1, V6, V13).  
   CA `6gnB2H2hbTVvKUWCzNuqjWY8Rod6EVBmfHi7YxZpTWa7`
 - 20:20Z STONKINU (DIP, $176,865 mcap, $82,686 5m vol): PASS at conviction 3, PASS: migrated 9 minutes ago and still bleeding off its own spike (-45% from a $325k peak 18 min ago). No higher low, no buzz. Blocker: too new (V1, V6).  
@@ -86,20 +96,10 @@ Updated 2026-11-03T20:29:49Z (paper trading, never real money)
   CA `U53zhvKrjvXCxGt6xhT9jE2yzU3uJ81Q1dxd1Hbpump`
 - 20:12Z ANONVOYAGE (MIGRATED, $2,133,383 mcap, $5,514 5m vol): REJECT, Bundles: 10 linked wallet cluster(s) hold 50.3% of supply (>20%) (V17)  
   CA `8muc9DdhqWfAPcvmEebNQCG89bLiwi12T2KtBtzVpump`
-- 20:11Z MAIN (FINAL_STRETCH, $22,515 mcap, $11,810 5m vol): REJECT, Top 10 hold 25.9% ex-pool (>25%) (V13)  
-  CA `BHzH8z58Vx2WiKBR2AGCNfYm54s1YnqHr8Z1YxS3pump`
-- 20:09Z SPHERE (MIGRATED, $198,019 mcap, $2,142 5m vol): PASS at conviction 2, PASS: bottom buy with no story. SPHERE is 88% off its $1.65M high, flow is 0.86x pace, and 20 coins share the name. Blocker: "no catalyst". (V1, V6, V13)  
-  CA `31SYoqWFhx3i9UsfnoXTjFp4ZwJA8F8UPrMxymfDpump`
-- 20:08Z Mag (MIGRATED, $503,506 mcap, $503,003 5m vol): PASS at conviction 2, PASS: chasing spike. Mag is the 5m leader of a 21-copy same-name field, up 86% on the last 5m candle at 3.5x hourly pace, with 12.4% in linked bundles and no printed higher low. Blocker: "chasing spike" (V1, V6, V13).  
-  CA `AxPzkSJKU3ACqZu7qpq8ov29g4BENZBM4SAZwUUUFo8M`
-- 20:05Z WASTED (DIP, $824,116 mcap, $4,892 5m vol): REJECT, Dev holds 3.5% (>1%) (V13, V17)  
-  CA `GexThZHgaswpAQ7Fi8QrHFubjPimUNSYhJiAA7XZpump`
-- 19:54Z Pog (FINAL_STRETCH, $24,581 mcap, $49,351 5m vol): PASS at conviction 2, PASS: chasing spike, 5 minutes old, 20-copy "Pog" field, no story behind it. Blockers: "chasing spike" + "too new" + "split crowd". Lottery ticket, not a trade (V1, V6, V13).  
-  CA `JcPLcB4WN61b2i6cZctiXW2R9AYCAKCQo6tqFVNpump`
 
 ## What its skips did next (last 48h)
 A skip "ran" if the coin reached the first target (1.5x) from the skip price before a 20% drop, "dumped" if the drop came first. Sampled every 10 min, followed 6h.
-- too new / sniping: blocked 62, ran 12, dumped 48, flat 0, open 2 (saving losses: keep it)
+- too new / sniping: blocked 61, ran 12, dumped 48, flat 0, open 1 (saving losses: keep it)
   - ran: VETOTRUMP up to 1.66x  
     CA `6g16UK4wHoFhC7PCmw8LYYCdt9q8m99fyoAwxeCrpump`
   - ran: Anakinius up to 1.93x  
@@ -113,19 +113,19 @@ A skip "ran" if the coin reached the first target (1.5x) from the skip price bef
     CA `BasL6j1MNkjFyuvRRFsmbm3bKqFPr6Yg3UhShii6pump`
   - ran: WIF up to 1.67x  
     CA `E7ayy5Se6gjwCNtw9NP629AucnTgqab4SSmSxDpUpump`
-- flow below pace: blocked 45, ran 7, dumped 31, flat 2, open 5 (saving losses: keep it)
+- flow below pace: blocked 45, ran 7, dumped 30, flat 2, open 6 (saving losses: keep it)
   - ran: KOROSUKE up to 1.54x  
     CA `7ha4HFgdvkXaDcR2biCsuBpoCZzoLSRjb5we34Gbpump`
   - ran: CAPY up to 1.51x  
     CA `DBPTU2oKLDHXQjAEJ3rZi8bUGmt2uxUbipgg6xmXoMqr`
   - ran: ZERO up to 1.61x  
     CA `Aes6XNH9BboLZuchD5PnDwaX6Zj1nU79TU3gNtPEpump`
-- near the high / chasing: blocked 36, ran 2, dumped 27, flat 4, open 3 (saving losses: keep it)
+- near the high / chasing: blocked 37, ran 2, dumped 29, flat 4, open 2 (saving losses: keep it)
   - ran: underdog up to 1.64x  
     CA `BZXh2LcnNNyypxsdfVeFzXawqmoGoSShC5i4NEQQpump`
   - ran: LUCIA up to 1.83x  
     CA `Cbtnpg6SL9jvZxtZTYYFPtVQXkuuqSUxCU5aXeTkpump`
-- falling knife (code): blocked 30, ran 5, dumped 24, flat 1, open 0 (saving losses: keep it)
+- falling knife (code): blocked 29, ran 5, dumped 23, flat 1, open 0 (saving losses: keep it)
   - ran: VETOTRUMP up to 1.66x  
     CA `6g16UK4wHoFhC7PCmw8LYYCdt9q8m99fyoAwxeCrpump`
   - ran: STEALTH up to 1.77x  
@@ -146,6 +146,9 @@ A skip "ran" if the coin reached the first target (1.5x) from the skip price bef
     CA `9ZmdP8q22ebRhEkcwd5EDkitu7ypeDFXTQXpv2kUpump`
   - ran: MAMESUKE up to 1.95x  
     CA `SCGBBnSwnekytGFHgyeHHxPMiN7xDxsWFGg9JgFSTNK`
+- falling knife / no higher low: blocked 16, ran 1, dumped 10, flat 2, open 3 (saving losses: keep it)
+  - ran: HEDGE up to 1.77x  
+    CA `wDSAqt4tEZpDAwB9XY6ejkZvMFuT1zUMjUh67txeYhf`
 - thin 5m volume: blocked 14, ran 3, dumped 6, flat 3, open 2 (saving losses: keep it)
   - ran: CUMFACE up to 1.55x  
     CA `J1D3X8znX4AzUPMHVWyBLNHqBBqWDPNSjX4KwK3Qpump`
@@ -153,16 +156,11 @@ A skip "ran" if the coin reached the first target (1.5x) from the skip price bef
     CA `7uwr9Zoz8WW9UyRVC22nmmAXRbPoFTUpVjsN8q7kids`
   - ran: 404 up to 1.89x  
     CA `9gKArqT6qp3goHfuwAnfG7LioqwUtJ8TFu7P1Bhbpump`
-- falling knife / no higher low: blocked 14, ran 1, dumped 10, flat 2, open 1 (saving losses: keep it)
-  - ran: HEDGE up to 1.77x  
-    CA `wDSAqt4tEZpDAwB9XY6ejkZvMFuT1zUMjUh67txeYhf`
-- other: blocked 11, ran 4, dumped 6, flat 1, open 0 (mixed)
-  - ran: thisman up to 1.6x  
-    CA `6d6J2kWJiimgqmxjLVTu31hxDyBFt2zBguYdjSripump`
-  - ran: FEAR up to 125.22x  
-    CA `CHtXwJ3qa2ozS9vQkxhR3MmNwkoUqkh3icGXgZPepump`
-  - ran: Slingoor up to 1.58x  
-    CA `AYDL7DTa6AidQ1nUSAEAnzVAFDDewDXbSyy8Hh2wpump`
+- dev share over 1%: blocked 10, ran 2, dumped 5, flat 1, open 2 (saving losses: keep it)
+  - ran: Firecube up to 1.88x  
+    CA `Ebih1KdijjpQBaM83gUfGhRtTCpHzDkBZhCZedZwpump`
+  - ran: HUND  up to 1.63x  
+    CA `HAjc6B1MfdjnYPiB2xcETPb25kb85Pxg9nq9i4D5pump`
 
 ## Daily review (2026-11-03, claude-opus-5-5)
 There's no positive after-cost edge yet. The 13 settled coins averaged -6.7% net under the simple plan, which is about +3.6% gross minus a 10.3% round-trip cost. The best bucket, MIGRATED, is break-even at -0.4% (n=8). With a 1.5x target, a -20% stop and about 10% cost, a winner nets about +40% and a loser about -30%, so a coin has to hit the target first about 43% of the time just to break even. Nothing big enough to trust gets there: the whole set is at 31% and MIGRATED at 37.5%. With n=13 the confidence intervals run roughly ±25 points, and the simulator flatters losses (see data issues), so the real numbers are probably worse. The routine model logged zero would-buys, so there's nothing to compare against the coins it passed on. Its PASSes did worse (-20.5% net, n=7) than the coins the checklist rejected (+9.4%, n=6). So passing was mostly right, but that gap rests on 2–3 coins (3/6 vs 1/7 ran, Fisher p≈0.3). It also passed on the day's two best runners, LIFEVAL at 4.2x and XDG at 2.7x.
@@ -200,14 +198,14 @@ There's no positive after-cost edge yet. The 13 settled coins averaged -6.7% net
 - [2026-11-02 20:25] I expected Slingoor, a clean MIGRATED leader with $25k of 5m flow at pace and a 0.77 buy share, to retest its $408k high from $304k. It never went green (0.98x peak) and hit the -20% stop in 2 minutes, a -$2.86 probe. My own thesis admitted there was no printed higher low after a peak only 6 minutes old, so this confirms the money-shape rule: buy share and flow are not structure (V1, V6). Next time a MIGRATED pullback with no higher low above the hourly low is a PASS with blocker "no higher low", not a probe. This is one loss, so it adds no new ban beyond the rule I already have.
 
 ## Meta right now
-The meta is pump.fun launch bursts: sub-1.5h-old coins with 1h volume several times market cap, led by PEPTDOG (0.1h old, $97k cap, $132k 5m, 58% buys), GIVE Musk (0.0h, $14k cap, +351%) and PEPECOIN (0.2h, $27k cap, +754%, 63% buys), with dog, frog and cat jokes riding along (PEPTDOG, MAYA, GATO). The crawler's name-fight numbers don't match the scan: the Dacity and Kotanosuke figures aren't in it, and the scan's $DCYC (9iFR) is a $2.1k cap, down 97% in an hour, with $619 on 5m and 50% buys, so it isn't the organic setup the summary claims. GTA is split: GTA$ is still running ($66k 5m, 68% buys) while GATO sits at 34% buys and is fading. Setups to research, not buys: PEPTDOG and GTA$ for flow, and GIVE Musk and PEPECOIN only after a similar-token check, since an Elon or Pepe name next to a bigger original is a vamp until proven otherwise. These are sub-hour new pairs, which we don't snipe, so any position waits for holder and bundle checks and a settled chart, and nothing clears conviction 5 on the scan alone.
+The trenches are trading a stonk-and-person-name launch burst, and it's rising. The coins with real money are under about 1h old: STONKINU ($166k cap, $89k 5m, 76% buys) and MEMESTONK ($142k cap, $64k 5m, 86% buys) are the cleanest flow, and they corroborate each other. Person-name coins are the second theme: Burger King Guy ($31k cap, $47k 5m, +1062% 1h) and Megan Fox ($8k cap, 65% buys, thin). Mag Screenland shows up three times under different addresses, and only the $476k one has real 5m volume, so treat the name as a vamp farm until you find the original. The dog/frog theme is fading on the scan: PEPTDOG reads $1.9k cap, zero 5m volume and -95% in the hour, which contradicts the crawler's $97k, so I'm dropping it; GATO and Dacity are old $7-12M coins with flat 5m volume. Setups to research, not buys: STONKINU and MEMESTONK for flow, and Burger King Guy only if its holder and bundle checks come back clean. Nothing clears conviction 5 on the scan alone, and each still needs holder, dev and bundle checks before any size.
 
 ## Moving most in its scans, last 30 min (1h volume)
-- Mag: $1,757,645 1h vol, $476,273 mcap, +2411% 1h  
-  CA `AxPzkSJKU3ACqZu7qpq8ov29g4BENZBM4SAZwUUUFo8M`
-- mag: $821,501 1h vol, $2,126 mcap, -96% 1h  
+- Pog: $416,896 1h vol, $39,960 mcap, +9% 1h  
+  CA `JcPLcB4WN61b2i6cZctiXW2R9AYCAKCQo6tqFVNpump`
+- mag: $388,165 1h vol, $2,344 mcap, -99% 1h  
   CA `BZYkZXtHNK7g1ZQ26iNgkLe1ufDrLUX8EcCGLGF7pump`
-- PEPTDOG: $722,521 1h vol, $1,956 mcap, -95% 1h  
+- PEPTDOG: $326,571 1h vol, $2,122 mcap, -98% 1h  
   CA `GExwMYa2tnJwGfKTmzR4ERiQKptfNceN9GTXc82Lpump`
 - STONKINU: $224,007 1h vol, $165,729 mcap, +291% 1h  
   CA `796Jj7bdqkqGmYaUQq9QTvjB6eBkEkkjHQ4LdVJJpump`
