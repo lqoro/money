@@ -1,13 +1,13 @@
 # Trencher live report
 
-Updated 2026-11-03T23:31:34Z (paper trading, never real money)
+Updated 2026-11-03T23:46:39Z (paper trading, never real money)
 
 - Equity: $74.23 (-25.8% vs $100 start)
 - Closed trades: 22, 3 wins
 - Fees paid: $14.78 (axiom $2.81, network $9.18, pool $2.66), plus $4.15 lost to slippage
 - New trades: WATCH-ONLY (scans and decides, buys nothing)
-- Brain: subscription, claude-haiku-5-5 for routine calls, claude-opus-5-5 for the daily review; 466 routine calls and 1 plan-limit hits in 48h
-- Watch log: 136 coins being followed, 192 filed, 0 would-buys (6h follow, sampled every 2 min)
+- Brain: subscription, claude-haiku-5-5 for routine calls, claude-opus-5-5 for the daily review; 464 routine calls and 1 plan-limit hits in 48h
+- Watch log: 130 coins being followed, 201 filed, 0 would-buys (6h follow, sampled every 2 min)
 
 ## Scorecard (after fees)
 - 22 closed, 3 won (14%), net $-25.79
@@ -73,9 +73,15 @@ Updated 2026-11-03T23:31:34Z (paper trading, never real money)
   CA `H4gHnZ3NCU7Z9XQwGX6YYJNyieGEW8pqwGRUcdSxpump`
 
 ## Last scan
-- 23:31Z: 5 coins, 5 with pairs, 2 passed the market filters, 2 researched
+- 23:46Z: 2 coins, 2 with pairs, 0 passed the market filters, 0 researched
 
 ## Coins it looked at, and why it passed
+- 23:43Z HARRIET (FINAL_STRETCH, $24,546 mcap, $7,929 5m vol): REJECT, Top 10 hold 27.7% ex-pool (>25%) (V13)  
+  CA `DTmP2zzzakbV99e41nzCKp7BosgzHo63FNpUG88Dpump`
+- 23:39Z MU (FINAL_STRETCH, $21,810 mcap, $2,750 5m vol): REJECT, RugCheck danger: Low Liquidity $11.00  
+  CA `7sTfS2jxuBRCcfGF45XabsxUv3gFXN83JCRpDciqpump`
+- 23:38Z Dacity (MIGRATED, $6,769,054 mcap, $12,283 5m vol): REJECT, Bundles: 10 linked wallet cluster(s) hold 24.0% of supply (>20%) (V17)  
+  CA `nxPqZ4F7ux8Vph5NFu25rEP6Kx9Gr1U6Fmj36Rjpump`
 - 23:31Z E  (MIGRATED, $85,152 mcap, $38,500 5m vol): REJECT, Dev holds 4.4% (>1%) (V13, V17)  
   CA `EfRnwABuWZKxri55se639twy4jy3FRgYfri7wLJ5pump`
 - 23:31Z TWUMP (no setup, $19,003 mcap, $74,185 5m vol): REJECT, No setup fits: not Final Stretch, not a migrated runner, not a healthy dip  
@@ -90,16 +96,10 @@ Updated 2026-11-03T23:31:34Z (paper trading, never real money)
   CA `E73zQP7U7mN7Ti91YvNvFX2VJAwc6ou9eqjRT29Lpump`
 - 23:06Z AMD (MIGRATED, $232,421 mcap, $89,317 5m vol): PASS at conviction 3, PASS: chasing spike, 9% off the high after +458% in an hour, and it's not the vamp-field leader (blocker "chasing spike"). (V1, V6, V13)  
   CA `3MfZ4URVxmB4mfPuy4AxUxpcC5U7aXe7TDA7XVoGpump`
-- 23:05Z SPHERE (MIGRATED, $180,510 mcap, $2,445 5m vol): PASS at conviction 2, PASS: 89% off the high with no story, $2.4k on the 5m, and 20 copies of its own name. Dead money. (V1, V6, V13)  
-  CA `31SYoqWFhx3i9UsfnoXTjFp4ZwJA8F8UPrMxymfDpump`
-- 23:04Z 5STAR (MIGRATED, $94,674 mcap, $3,017 5m vol): PASS at conviction 3, PASS — chasing the high at 7% off a $102k peak, a 6.7% linked bundle, $3k 5m in a 30-copy field with no original picked, and a 2-hour-old site that doesn't show the CA. Blocker: "chasing" (V1, V6, V13).  
-  CA `FK5tP4Zw7ujWzaz3TgeJ5NcqGe5LFufo7m6zH6YQpump`
-- 23:04Z GATO (MIGRATED, $10,340,763 mcap, $8,584 5m vol): REJECT, Dev holds 3.3% (>1%) (V13, V17)  
-  CA `HsprHxBRgiVaQdRf3TnKNuZZtaX9JUSPgMFdAkk6pump`
 
 ## What its skips did next (last 48h)
 A skip "ran" if the coin reached the first target (1.5x) from the skip price before a 20% drop, "dumped" if the drop came first. Sampled every 10 min, followed 6h.
-- top 10 over 25%: blocked 59, ran 10, dumped 46, flat 3, open 0 (saving losses: keep it)
+- top 10 over 25%: blocked 60, ran 10, dumped 46, flat 3, open 1 (saving losses: keep it)
   - ran: GODHOUSE up to 3.19x  
     CA `CSGTuLtWhCfGZ5S5TvASQ6a5su91NCfRpNqfPczfpump`
   - ran: KYBER up to 1.83x  
@@ -120,14 +120,14 @@ A skip "ran" if the coin reached the first target (1.5x) from the skip price bef
     CA `DBPTU2oKLDHXQjAEJ3rZi8bUGmt2uxUbipgg6xmXoMqr`
   - ran: ZERO up to 1.61x  
     CA `Aes6XNH9BboLZuchD5PnDwaX6Zj1nU79TU3gNtPEpump`
-- near the high / chasing: blocked 40, ran 3, dumped 31, flat 4, open 2 (saving losses: keep it)
+- near the high / chasing: blocked 39, ran 3, dumped 30, flat 4, open 2 (saving losses: keep it)
   - ran: underdog up to 1.64x  
     CA `BZXh2LcnNNyypxsdfVeFzXawqmoGoSShC5i4NEQQpump`
   - ran: LUCIA up to 1.83x  
     CA `Cbtnpg6SL9jvZxtZTYYFPtVQXkuuqSUxCU5aXeTkpump`
   - ran: AMD up to 2.02x  
     CA `3MfZ4URVxmB4mfPuy4AxUxpcC5U7aXe7TDA7XVoGpump`
-- RugCheck danger: blocked 29, ran 3, dumped 22, flat 1, open 3 (saving losses: keep it)
+- RugCheck danger: blocked 30, ran 3, dumped 22, flat 1, open 4 (saving losses: keep it)
   - ran: COLLECTOR up to 1.62x  
     CA `6kKETm8xPeZ2z1DBYjXmxMTFAJudvGHJvRHu5Wt8uGtf`
   - ran: GTA up to 1.74x  
@@ -141,7 +141,7 @@ A skip "ran" if the coin reached the first target (1.5x) from the skip price bef
     CA `BngAfLZxaWN2QvpFhRbUHydYGr8zA7YTSA178G8Epump`
   - ran: YES up to 1.71x  
     CA `B7Cj19ke2F8S6fazbBvGMxHYNNMYuDaAn3Sn2Zikpump`
-- bundles over the line: blocked 21, ran 3, dumped 15, flat 0, open 3 (saving losses: keep it)
+- bundles over the line: blocked 21, ran 3, dumped 15, flat 1, open 2 (saving losses: keep it)
   - ran: Nuts up to 1.53x  
     CA `APH9FRoKst66E4a7uZXcEfE8NjtwybUC8Jq7ue8upump`
   - ran: NA up to 1.97x  
@@ -155,10 +155,10 @@ A skip "ran" if the coin reached the first target (1.5x) from the skip price bef
     CA `7uwr9Zoz8WW9UyRVC22nmmAXRbPoFTUpVjsN8q7kids`
   - ran: 404 up to 1.89x  
     CA `9gKArqT6qp3goHfuwAnfG7LioqwUtJ8TFu7P1Bhbpump`
-- falling knife / no higher low: blocked 14, ran 1, dumped 10, flat 3, open 0 (saving losses: keep it)
+- falling knife / no higher low: blocked 13, ran 1, dumped 9, flat 3, open 0 (saving losses: keep it)
   - ran: HEDGE up to 1.77x  
     CA `wDSAqt4tEZpDAwB9XY6ejkZvMFuT1zUMjUh67txeYhf`
-- other: blocked 12, ran 4, dumped 6, flat 1, open 1 (mixed)
+- other: blocked 12, ran 4, dumped 7, flat 1, open 0 (mixed)
   - ran: thisman up to 1.6x  
     CA `6d6J2kWJiimgqmxjLVTu31hxDyBFt2zBguYdjSripump`
   - ran: FEAR up to 125.22x  
@@ -202,16 +202,16 @@ There's no positive after-cost edge yet. The 13 settled coins averaged -6.7% net
 - [2026-11-02 20:25] I expected Slingoor, a clean MIGRATED leader with $25k of 5m flow at pace and a 0.77 buy share, to retest its $408k high from $304k. It never went green (0.98x peak) and hit the -20% stop in 2 minutes, a -$2.86 probe. My own thesis admitted there was no printed higher low after a peak only 6 minutes old, so this confirms the money-shape rule: buy share and flow are not structure (V1, V6). Next time a MIGRATED pullback with no higher low above the hourly low is a PASS with blocker "no higher low", not a probe. This is one loss, so it adds no new ban beyond the rule I already have.
 
 ## Meta right now
-The meta is the "A Meme ___" animal-pun family (A Meme Cat, A Meme Duck, Advanced Micro Dog) riding stock-ticker jokes (AMC, AMD, MSTRT, Ryzen, FYRM). That's rising. The stonk and launch-style junk (STONKCAT, MSTRT, SAMSARA, GTA, SU) is dumping 90%+ in the hour on thin volume, so that's fading (V1, V6). Live coins: AMC (A Meme Cat, $171k, 0.3h old, +325% in 1h, 57% buys, $121k 5m on PumpSwap) has the cleanest flow and fits the MIGRATED research setup. AMD (A Meme Duck, $22k, 67% buys, $13k 5m) and Voter Dog ($16k, $68k 5m, 0.1h old) fit FINAL_STRETCH research, but Voter Dog's name is political-adjacent, so confirm no politician posted its CA, and there are several AMD tickers, so check Similar Tokens for the original first. Holder, dev and bundle checks come before any size, and each entry needs a written invalidation level; a 0.1h coin up 464% is where bundles hide (V1, V13). Hunter Biden's $LAPTOP in the headlines is a political-figure coin, so that's an automatic pass (V13).
+The trenches are running animal and creature names on pump.fun plus self-referential "meme" names, and the stock-ticker jokes are fading. Rising: FUN (Just For Fun, pumpfun, $18k mcap, +571% in 1h, $24.8k 5m, 59% buys), TWUMP (0.1h old, $20.6k mcap, $75k 5m, 61% buys), and E (exposure, PumpSwap, $85k mcap, $38.5k 5m, 56% buys). Animal-named Hypha and Chipmunk show some 5m flow, while Froblin is dead at $459 5m. Fading: AMC (A Meme Cat) is down 74% in 1h on $1.3k 5m, THE AMD BULL and Alona are at $1 of 5m volume with zero buys, and Voter Dog has $101k of 1h volume but no 5m buys. Setups to research: FUN as FINAL_STRETCH (near bond, 5m clears $10k), E as MIGRATED (under 12h, above $30k, 5m clears $10k), and TWUMP only after holder and bundle checks, since a 0.1h coin up 255% is where bundles hide. Voter Dog is a pass: its name is political-adjacent and its 5m flow is gone. The web summary's AMC figures ($171k mcap, $121k 5m) conflict with scan_movers ($15k, $1.3k), so I'm trusting scan_movers.
 
 ## Moving most in its scans, last 30 min (1h volume)
-- AMC: $718,651 1h vol, $41,817 mcap, -34% 1h  
-  CA `3p1XAKNnkTZ1iXcW5xy4xMSq6nb4Y3gsGZpjUqMCpump`
 - E : $415,781 1h vol, $85,152 mcap, +120% 1h  
   CA `EfRnwABuWZKxri55se639twy4jy3FRgYfri7wLJ5pump`
-- AMD: $225,590 1h vol, $228,297 mcap, +448% 1h  
-  CA `3MfZ4URVxmB4mfPuy4AxUxpcC5U7aXe7TDA7XVoGpump`
-- MU: $125,056 1h vol, $14,540 mcap, +218% 1h  
+- MU: $133,279 1h vol, $21,798 mcap, +376% 1h  
   CA `7sTfS2jxuBRCcfGF45XabsxUv3gFXN83JCRpDciqpump`
-- GATO: $122,547 1h vol, $10,309,306 mcap, -8% 1h  
-  CA `HsprHxBRgiVaQdRf3TnKNuZZtaX9JUSPgMFdAkk6pump`
+- CLAWD: $119,628 1h vol, $10,433 mcap, -71% 1h  
+  CA `BgsoS8jassxtUcwFZoT7FBnUSSSi3uKEuEo7GbS37eKB`
+- HARRIET: $114,573 1h vol, $25,269 mcap, +656% 1h  
+  CA `DTmP2zzzakbV99e41nzCKp7BosgzHo63FNpUG88Dpump`
+- FUN: $114,144 1h vol, $15,237 mcap, +329% 1h  
+  CA `FUNtwYkmTzxeHtTJu8hVJZ9nEXXdFh18e32eLZCEyaEM`
