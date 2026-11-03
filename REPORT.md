@@ -1,13 +1,13 @@
 # Trencher live report
 
-Updated 2026-11-03T14:57:04Z (paper trading, never real money)
+Updated 2026-11-03T15:12:12Z (paper trading, never real money)
 
 - Equity: $74.23 (-25.8% vs $100 start)
 - Closed trades: 22, 3 wins
 - Fees paid: $14.78 (axiom $2.81, network $9.18, pool $2.66), plus $4.15 lost to slippage
 - New trades: WATCH-ONLY (scans and decides, buys nothing)
-- Brain: subscription, claude-haiku-5-5 for routine calls, claude-opus-5-5 for the daily review; 441 routine calls and 1 plan-limit hits in 48h
-- Watch log: 82 coins being followed, 51 filed, 0 would-buys (6h follow, sampled every 2 min)
+- Brain: subscription, claude-haiku-5-5 for routine calls, claude-opus-5-5 for the daily review; 442 routine calls and 1 plan-limit hits in 48h
+- Watch log: 86 coins being followed, 53 filed, 0 would-buys (6h follow, sampled every 2 min)
 
 ## Scorecard (after fees)
 - 22 closed, 3 won (14%), net $-25.79
@@ -73,9 +73,21 @@ Updated 2026-11-03T14:57:04Z (paper trading, never real money)
   CA `H4gHnZ3NCU7Z9XQwGX6YYJNyieGEW8pqwGRUcdSxpump`
 
 ## Last scan
-- 14:56Z: 3 coins, 1 with pairs, 0 passed the market filters, 0 researched
+- 15:11Z: 1 coins, 0 with pairs, 0 passed the market filters, 0 researched
 
 ## Coins it looked at, and why it passed
+- 15:10Z PMT (MIGRATED, $217,383 mcap, $44,988 5m vol): PASS at conviction 3, PASS: 17-minute-old Trump clone, up 266% in an hour and 44% on the last 5m candle, with no printed higher low. Chasing a spike (V1, V6).  
+  CA `96dzMNxHP2eJdpBr8VfR719PnQyStE31pMVTgXc6pump`
+- 15:08Z DJT (MIGRATED, $152,266 mcap, $10,460 5m vol): PASS at conviction 3, PASS: copycat field, theme pace 0.16x, and it's chasing a 288% hour with no printed higher low. Blockers: "chasing", "flow below pace", "split crowd". (V1, V6, V13)  
+  CA `2Csio9ZpB2U526YD8xusoFrTBk7y4Yu9gLtVitYcpump`
+- 15:07Z MIDTURDS (MIGRATED, $47,192 mcap, $1,270 5m vol): REJECT, 5m volume $1,270 is dead (<$2,000) (V1)  
+  CA `JCdE6KcCEUcgmhiCQfXTL11524wSgqJCnGtYDA757q4a`
+- 15:04Z DESSA (MIGRATED, $8,672,371 mcap, $12,259 5m vol): PASS at conviction 3, PASS: DESSA is a ~$8.7M migrated meme with no catalyst, no radar presence and a LARP-style AI claim. Blocker: "dead story" plus "big cap, no room" (V1, V6, V13).  
+  CA `npz2FhoufQ7pKqhGpaipYWacrAkidyW2yDpVWSvpump`
+- 15:01Z BINGUS (MIGRATED, $279,233 mcap, $68,814 5m vol): PASS at conviction 3, PASS: chasing spike, too new, and a 24-copy vamp field. BINGUS is 7 minutes old, 5% off a $294k peak, up 75% on the 5m at 8.7x the hourly pace. Not a pullback. (V1, V6, V13)  
+  CA `2HbNwnhiL8HBK5mkdrcB9nbDxknPqGmJdXrtuH5fLoat`
+- 14:58Z GTAMAS (MIGRATED, $262,957 mcap, $30,458 5m vol): REJECT, Dev holds 1.5% (>1%) (V13, V17)  
+  CA `BeUYUVw2n3hPVoKd65mUxpDCDE9eGxdbUVDNGoUPpump`
 - 14:54Z ANONVOYAGE (MIGRATED, $1,230,646 mcap, $37,163 5m vol): REJECT, Bundles: 10 linked wallet cluster(s) hold 50.3% of supply (>20%) (V17)  
   CA `8muc9DdhqWfAPcvmEebNQCG89bLiwi12T2KtBtzVpump`
 - 14:53Z BZERO (MIGRATED, $40,621 mcap, $9,136 5m vol): PASS at conviction 2, PASS: BlockZero is under a minute old, 6% off a $43k spike with no higher low printed, $9.1k on the 5m, and a site with no GitHub on a 5-hour-old domain that doesn't show this CA. Blocker: "too new" (V1, V3, V6).  
@@ -84,18 +96,6 @@ Updated 2026-11-03T14:57:04Z (paper trading, never real money)
   CA `31SYoqWFhx3i9UsfnoXTjFp4ZwJA8F8UPrMxymfDpump`
 - 14:44Z Pascal (FINAL_STRETCH, $20,576 mcap, $17,825 5m vol): REJECT, RugCheck danger: Creator history of rugged tokens  
   CA `864LDRm68LQPQo1H4xMcVGozSxm5iSmFZVyW8TCgpump`
-- 14:43Z HI (MIGRATED, $86,287 mcap, $31,319 5m vol): PASS at conviction 2, PASS: too new. HI is 44 minutes old, up 137% in the hour, and hasn't printed a higher low above its bounce high. No socials, no catalyst. Sub-hour copies of this theme are dying. (V1, V6)  
-  CA `6JrsviCgzki77Zr35RBGYpuKDGo628hDYDCuB7mBpump`
-- 14:41Z JIFFPOM (MIGRATED, $109,453 mcap, $69,919 5m vol): PASS at conviction 3, PASS — 9-minute-old dog coin at 5.5x its hourly flow, no printed higher low, and a 0-day-old site riding a real dog's brand. Chasing a spike on a too-new migration (V1, V6).  
-  CA `HjkX6rLUAsiKYZ1hwkD4TV1bsEoXgkSjVTF4gHSmpump`
-- 14:35Z Biwa (MIGRATED, $133,012 mcap, $7,479 5m vol): PASS at conviction 3, PASS: chasing (8.6% off a fresh 0.1h peak), flow below pace (0.53x), no printed higher low, and a 16-copy vamp field with the theme at 0.15x its hourly pace. Farm-shaped chart, no entry. (V1, V6, V13)  
-  CA `AfxPrmPAM1iUZJYJWjwnQmpXFB1heZpD8BYdtrcEpump`
-- 14:34Z PIRATE (MIGRATED, $144,985 mcap, $33,993 5m vol): PASS at conviction 3, PASS. Chasing a +30% five-minute spike 7% off a 15-minute-old peak, and the peak is the only resistance. Blocker: chasing spike. (V1, V6)  
-  CA `JAFQtEgsG9ezrbA2LJVv6oYZeo1svoa2VaoaZsN2pump`
-- 14:33Z erection (FINAL_STRETCH, $32,008 mcap, $24,913 5m vol): REJECT, Top 10 hold 28.7% ex-pool (>25%) (V13)  
-  CA `DvVru1oZTnwxakgyhw71Gj678QVi56L5B22oDmWSpump`
-- 14:31Z Ahsoka (DIP, $1,112,627 mcap, $3,158 5m vol): REJECT, Dip with fading attention is a falling knife, not a dip (5m at 0.16x the hour's pace, under 0.6x)  
-  CA `4nuj5NLHMtQSezfmz6CwBpCRJisFie6F6MxNNz1dpump`
 
 ## What its skips did next (last 48h)
 A skip "ran" if the coin reached the first target (1.5x) from the skip price before a 20% drop, "dumped" if the drop came first. Sampled every 10 min, followed 6h.
@@ -106,17 +106,17 @@ A skip "ran" if the coin reached the first target (1.5x) from the skip price bef
     CA `2EQxezWgXPRU6V3UD7DKr5m12mxqeFGPWNRx9wbqy9fC`
   - ran: Bitboy up to 1.6x  
     CA `GvXhSHnWrkAasjAUZeRzRfUBV2BJiiduaHarCWAEpump`
-- too new / sniping: blocked 51, ran 8, dumped 41, flat 0, open 2 (saving losses: keep it)
+- too new / sniping: blocked 52, ran 8, dumped 42, flat 0, open 2 (saving losses: keep it)
   - ran: VETOTRUMP up to 1.66x  
     CA `6g16UK4wHoFhC7PCmw8LYYCdt9q8m99fyoAwxeCrpump`
   - ran: Anakinius up to 1.93x  
     CA `2pKpMwUQXNZeAf93LoomnZSworH3ezFzweCiuvrppump`
   - ran: CLIPPED up to 1.65x  
     CA `Bxyp4L6EbDys4fo51qxMEQTx41sj6McnsbPZTdvipump`
-- near the high / chasing: blocked 34, ran 1, dumped 28, flat 4, open 1 (saving losses: keep it)
+- near the high / chasing: blocked 34, ran 1, dumped 27, flat 4, open 2 (saving losses: keep it)
   - ran: underdog up to 1.64x  
     CA `BZXh2LcnNNyypxsdfVeFzXawqmoGoSShC5i4NEQQpump`
-- flow below pace: blocked 32, ran 7, dumped 22, flat 1, open 2 (saving losses: keep it)
+- flow below pace: blocked 33, ran 7, dumped 22, flat 1, open 3 (saving losses: keep it)
   - ran: KOROSUKE up to 1.54x  
     CA `7ha4HFgdvkXaDcR2biCsuBpoCZzoLSRjb5we34Gbpump`
   - ran: CAPY up to 1.51x  
@@ -137,14 +137,14 @@ A skip "ran" if the coin reached the first target (1.5x) from the skip price bef
     CA `GoDSW31bTxfkoup9yA1qcGGx9RMXdTEWgApv3xzBmoA`
   - ran: PEACE up to 1.75x  
     CA `BngAfLZxaWN2QvpFhRbUHydYGr8zA7YTSA178G8Epump`
-- bundles over the line: blocked 22, ran 3, dumped 16, flat 1, open 2 (saving losses: keep it)
+- bundles over the line: blocked 22, ran 4, dumped 16, flat 1, open 1 (saving losses: keep it)
   - ran: Nuts up to 1.53x  
     CA `APH9FRoKst66E4a7uZXcEfE8NjtwybUC8Jq7ue8upump`
   - ran: NA up to 1.97x  
     CA `9ZmdP8q22ebRhEkcwd5EDkitu7ypeDFXTQXpv2kUpump`
   - ran: MAMESUKE up to 1.95x  
     CA `SCGBBnSwnekytGFHgyeHHxPMiN7xDxsWFGg9JgFSTNK`
-- thin 5m volume: blocked 14, ran 3, dumped 5, flat 4, open 2 (mixed)
+- thin 5m volume: blocked 16, ran 3, dumped 6, flat 4, open 3 (saving losses: keep it)
   - ran: CUMFACE up to 1.55x  
     CA `J1D3X8znX4AzUPMHVWyBLNHqBBqWDPNSjX4KwK3Qpump`
   - ran: KIDS up to 1.73x  
@@ -154,13 +154,9 @@ A skip "ran" if the coin reached the first target (1.5x) from the skip price bef
 - falling knife / no higher low: blocked 13, ran 1, dumped 10, flat 2, open 0 (saving losses: keep it)
   - ran: HEDGE up to 1.77x  
     CA `wDSAqt4tEZpDAwB9XY6ejkZvMFuT1zUMjUh67txeYhf`
-- other: blocked 10, ran 4, dumped 5, flat 1, open 0 (mixed)
-  - ran: thisman up to 1.6x  
-    CA `6d6J2kWJiimgqmxjLVTu31hxDyBFt2zBguYdjSripump`
-  - ran: FEAR up to 125.22x  
-    CA `CHtXwJ3qa2ozS9vQkxhR3MmNwkoUqkh3icGXgZPepump`
-  - ran: Slingoor up to 1.58x  
-    CA `AYDL7DTa6AidQ1nUSAEAnzVAFDDewDXbSyy8Hh2wpump`
+- dev share over 1%: blocked 9, ran 1, dumped 4, flat 3, open 1 (saving losses: keep it)
+  - ran: Firecube up to 1.88x  
+    CA `Ebih1KdijjpQBaM83gUfGhRtTCpHzDkBZhCZedZwpump`
 
 ## Daily review (2026-11-03, claude-opus-5-5)
 There's no positive after-cost edge yet. The 13 settled coins averaged -6.7% net under the simple plan, which is about +3.6% gross minus a 10.3% round-trip cost. The best bucket, MIGRATED, is break-even at -0.4% (n=8). With a 1.5x target, a -20% stop and about 10% cost, a winner nets about +40% and a loser about -30%, so a coin has to hit the target first about 43% of the time just to break even. Nothing big enough to trust gets there: the whole set is at 31% and MIGRATED at 37.5%. With n=13 the confidence intervals run roughly ±25 points, and the simulator flatters losses (see data issues), so the real numbers are probably worse. The routine model logged zero would-buys, so there's nothing to compare against the coins it passed on. Its PASSes did worse (-20.5% net, n=7) than the coins the checklist rejected (+9.4%, n=6). So passing was mostly right, but that gap rests on 2–3 coins (3/6 vs 1/7 ran, Fisher p≈0.3). It also passed on the day's two best runners, LIFEVAL at 4.2x and XDG at 2.7x.
@@ -203,11 +199,11 @@ The meta is fast and split: sub-hour pump.fun launches with joke names are where
 ## Moving most in its scans, last 30 min (1h volume)
 - ANONVOYAGE: $1,074,525 1h vol, $1,238,317 mcap, +150% 1h  
   CA `8muc9DdhqWfAPcvmEebNQCG89bLiwi12T2KtBtzVpump`
-- 1WIN: $381,547 1h vol, $17,505,766 mcap, -3% 1h  
+- 1WIN: $339,147 1h vol, $16,740,326 mcap, -6% 1h  
   CA `FjPKUGnF5zBpdEv18gT8FJCtxh3MKrFkoeYekgYr1win`
+- PMT: $248,631 1h vol, $217,383 mcap, +266% 1h  
+  CA `96dzMNxHP2eJdpBr8VfR719PnQyStE31pMVTgXc6pump`
 - HI: $233,248 1h vol, $90,243 mcap, +148% 1h  
   CA `6JrsviCgzki77Zr35RBGYpuKDGo628hDYDCuB7mBpump`
-- Ahsoka: $209,754 1h vol, $1,118,916 mcap, -30% 1h  
-  CA `4nuj5NLHMtQSezfmz6CwBpCRJisFie6F6MxNNz1dpump`
-- Biwa: $169,544 1h vol, $126,708 mcap, +224% 1h  
-  CA `AfxPrmPAM1iUZJYJWjwnQmpXFB1heZpD8BYdtrcEpump`
+- DJT: $211,393 1h vol, $152,266 mcap, +287% 1h  
+  CA `2Csio9ZpB2U526YD8xusoFrTBk7y4Yu9gLtVitYcpump`
