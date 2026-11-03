@@ -1,13 +1,13 @@
 # Trencher live report
 
-Updated 2026-11-03T18:59:00Z (paper trading, never real money)
+Updated 2026-11-03T19:14:18Z (paper trading, never real money)
 
 - Equity: $74.23 (-25.8% vs $100 start)
 - Closed trades: 22, 3 wins
 - Fees paid: $14.78 (axiom $2.81, network $9.18, pool $2.66), plus $4.15 lost to slippage
 - New trades: WATCH-ONLY (scans and decides, buys nothing)
 - Brain: subscription, claude-haiku-5-5 for routine calls, claude-opus-5-5 for the daily review; 460 routine calls and 1 plan-limit hits in 48h
-- Watch log: 129 coins being followed, 101 filed, 0 would-buys (6h follow, sampled every 2 min)
+- Watch log: 129 coins being followed, 104 filed, 0 would-buys (6h follow, sampled every 2 min)
 
 ## Scorecard (after fees)
 - 22 closed, 3 won (14%), net $-25.79
@@ -73,9 +73,15 @@ Updated 2026-11-03T18:59:00Z (paper trading, never real money)
   CA `H4gHnZ3NCU7Z9XQwGX6YYJNyieGEW8pqwGRUcdSxpump`
 
 ## Last scan
-- 18:57Z: 12 coins, 11 with pairs, 0 passed the market filters, 0 researched
+- 19:13Z: 4 coins, 2 with pairs, 0 passed the market filters, 0 researched
 
 ## Coins it looked at, and why it passed
+- 19:06Z PEPECOIN (FINAL_STRETCH, $30,996 mcap, $13,686 5m vol): REJECT, Top 10 hold 25.8% ex-pool (>25%) (V13)  
+  CA `GeuSL76R5FgWPuHZpJJc9MUP78wMyf6crwTPHSzXpump`
+- 19:05Z Ahsoka (DIP, $708,067 mcap, $3,807 5m vol): PASS at conviction 2, PASS: Ahsoka is a dead fan-meme DIP with 0.65x theme flow, no catalyst, and the CA isn't on its own site. Blocker: "dead story" / "flow below pace". (V1, V6, V13)  
+  CA `4nuj5NLHMtQSezfmz6CwBpCRJisFie6F6MxNNz1dpump`
+- 19:04Z Dacity (MIGRATED, $6,782,567 mcap, $5,388 5m vol): REJECT, Bundles: 10 linked wallet cluster(s) hold 24.0% of supply (>20%) (V17)  
+  CA `nxPqZ4F7ux8Vph5NFu25rEP6Kx9Gr1U6Fmj36Rjpump`
 - 18:55Z STONKS (MIGRATED, $998,533 mcap, $102,972 5m vol): PASS, PASS — brain unavailable, not trading blind.  
   CA `22r9JGoWRBYc4Z1pkSFw8p2tdjefS2ZZshw1vr8bBC2K`
 - 18:54Z DCYC (MIGRATED, $51,317 mcap, $3,128 5m vol): PASS at conviction 2, PASS — 7% off a $55k high after a +26.5% 5m candle, and 5m flow at 0.3x pace in a 19-copy Dacity field. Chasing a spike in a fading name fight. (V1, V6)  
@@ -90,12 +96,6 @@ Updated 2026-11-03T18:59:00Z (paper trading, never real money)
   CA `FqBVbBeoxJfLi5corNFsrDG54SFfBfFwjqtjgZK8pump`
 - 18:42Z ANONVOYAGE (MIGRATED, $1,664,336 mcap, $8,055 5m vol): REJECT, Bundles: 10 linked wallet cluster(s) hold 50.3% of supply (>20%) (V17)  
   CA `8muc9DdhqWfAPcvmEebNQCG89bLiwi12T2KtBtzVpump`
-- 18:40Z MEOWNERO (MIGRATED, $188,288 mcap, $2,190 5m vol): REJECT, Top 10 hold 25.2% ex-pool (>25%) (V13)  
-  CA `6gnB2H2hbTVvKUWCzNuqjWY8Rod6EVBmfHi7YxZpTWa7`
-- 18:40Z CBUCKS (MIGRATED, $1,623,026 mcap, $2,329 5m vol): REJECT, Top 10 hold 26.1% ex-pool (>25%) (V13)  
-  CA `DtcicPCKTKeAh7TDEzTym3hXeoHAoMiBdYJhMYxZpump`
-- 18:39Z SPHERE (MIGRATED, $155,311 mcap, $2,518 5m vol): PASS at conviction 2, PASS: 90.6% off a $1.65M high is a corpse, not a dip, and the only story is 19 copies of "project sphere" with a day-old website. Blocker "dead story" (V1, V3, V6).  
-  CA `31SYoqWFhx3i9UsfnoXTjFp4ZwJA8F8UPrMxymfDpump`
 
 ## What its skips did next (last 48h)
 A skip "ran" if the coin reached the first target (1.5x) from the skip price before a 20% drop, "dumped" if the drop came first. Sampled every 10 min, followed 6h.
@@ -106,7 +106,7 @@ A skip "ran" if the coin reached the first target (1.5x) from the skip price bef
     CA `2pKpMwUQXNZeAf93LoomnZSworH3ezFzweCiuvrppump`
   - ran: CLIPPED up to 1.65x  
     CA `Bxyp4L6EbDys4fo51qxMEQTx41sj6McnsbPZTdvipump`
-- top 10 over 25%: blocked 53, ran 9, dumped 40, flat 1, open 3 (saving losses: keep it)
+- top 10 over 25%: blocked 54, ran 9, dumped 40, flat 1, open 4 (saving losses: keep it)
   - ran: GODHOUSE up to 3.19x  
     CA `CSGTuLtWhCfGZ5S5TvASQ6a5su91NCfRpNqfPczfpump`
   - ran: KYBER up to 1.83x  
@@ -139,7 +139,7 @@ A skip "ran" if the coin reached the first target (1.5x) from the skip price bef
     CA `G6F6SYSUAUxsnKLyeRW29hE5A4BGCbw91x7HMPySpump`
   - ran: Wanted up to 1.53x  
     CA `8oUGdPdyxVaCSJSZpcVZuxqoyiZAmc2Z22FsDRZ3pump`
-- bundles over the line: blocked 21, ran 3, dumped 15, flat 0, open 3 (saving losses: keep it)
+- bundles over the line: blocked 21, ran 3, dumped 15, flat 1, open 2 (saving losses: keep it)
   - ran: Nuts up to 1.53x  
     CA `APH9FRoKst66E4a7uZXcEfE8NjtwybUC8Jq7ue8upump`
   - ran: NA up to 1.97x  
@@ -207,11 +207,11 @@ The movers say the trenches are running launch bursts: fresh coins, under about 
 ## Moving most in its scans, last 30 min (1h volume)
 - STONKS: $2,112,279 1h vol, $1,007,584 mcap, +565% 1h  
   CA `22r9JGoWRBYc4Z1pkSFw8p2tdjefS2ZZshw1vr8bBC2K`
+- $DCYC : $359,905 1h vol, $1,951 mcap, -99% 1h  
+  CA `9iFR4DuinJ96rUHdf7uRutJYbdAPZKrFbkRzVzSepump`
 - stocky: $209,190 1h vol, $38,058 mcap, -2% 1h  
   CA `G1sPgsNMMfEY8ebZUd6ioQyUmyo8Z93FUqG3xfQdpump`
-- 1WIN: $193,790 1h vol, $15,946,266 mcap, +1% 1h  
+- 1WIN: $191,070 1h vol, $15,461,355 mcap, -4% 1h  
   CA `FjPKUGnF5zBpdEv18gT8FJCtxh3MKrFkoeYekgYr1win`
-- QUESTLY: $137,588 1h vol, $2,022 mcap, -95% 1h  
-  CA `A91BW4GPsVLj1sANJ2ajnSA7aC8Ywyx4jtyjNhVRpump`
 - DCYC: $126,139 1h vol, $55,095 mcap, +30% 1h  
   CA `EJPWoVgMrkZrqZAtRkGvA4jppbo15rMF2hhe1EPzpump`
