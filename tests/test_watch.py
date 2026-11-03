@@ -160,29 +160,52 @@ def test_digest_counts_after_costs(cfg):
 
 # --- Graduation feed (owner, Nov 3: "ideally should be as the migrate/graduate") ------
 
-def test_graduation_feed_keeps_fresh_pumpswap_pools_of_pump_mints(monkeypatch):
+FEEDS = (("pump.fun", "solana", "solana", "pump", ("pumpswap",)),
+         ("bonk.fun", "solana", "solana", "bonk", ("raydium",)),
+         ("four.meme", "bsc", "bsc", "4444", ("pancakeswap",)))
+BONDING = ("launch", "pump-fun")
+
+
+def _pool(mint, dex, ago_min, network="solana"):
     import time as _time
+    created = _time.strftime("%Y-%m-%dT%H:%M:%SZ", _time.gmtime(_time.time() - ago_min * 60))
+    return {"attributes": {"address": f"pool-{mint}", "pool_created_at": created},
+            "relationships": {"dex": {"data": {"id": dex}}, "base_token": {"data": {"id": f"{network}_{mint}"}}}}
+
+
+def test_graduation_feed_matches_each_launchpad_on_its_own_chain(monkeypatch):
     from agent import data
+    pools = {
+        "solana": [_pool("Aaapump", "pumpswap", 2), _pool("Bbbpump", "raydium", 2), _pool("Ccc111", "pumpswap", 2),
+                   _pool("Dddpump", "pumpswap", 45), _pool("Eeebonk", "raydium-launchlab", 1),
+                   _pool("Fffbonk", "raydium-cpmm", 3)],
+        "bsc": [_pool("0xABC4444", "pancakeswap_v2", 4, "bsc"), _pool("0xABC1234", "pancakeswap_v2", 4, "bsc")],
+    }
 
-    def iso(ago_min):
-        return _time.strftime("%Y-%m-%dT%H:%M:%SZ", _time.gmtime(_time.time() - ago_min * 60))
+    def get(url, params=None, retries=3):
+        net = url.split("/networks/")[1].split("/")[0]
+        return {"data": pools[net] if params["page"] == 1 else []}
 
-    def pool(mint, dex, ago):
-        return {"attributes": {"address": f"pool-{mint}", "pool_created_at": iso(ago)},
-                "relationships": {"dex": {"data": {"id": dex}}, "base_token": {"data": {"id": f"solana_{mint}"}}}}
-
-    pages = {1: {"data": [pool("Aaapump", "pumpswap", 2), pool("Bbbpump", "raydium", 2),
-                          pool("Ccc111", "pumpswap", 2), pool("Dddpump", "pumpswap", 45)]},
-             2: {"data": []}}
-    monkeypatch.setattr(data, "_get", lambda url, params=None, retries=3: pages[params["page"]])
-    found = data.new_migrations(("pumpswap",), 20)
-    assert [m["mint"] for m in found] == ["Aaapump"] and found[0]["pool"] == "pool-Aaapump"
+    monkeypatch.setattr(data, "_get", get)
+    got = data.new_migrations(FEEDS, 20, bonding_words=BONDING)
+    assert [(m["mint"], m["launchpad"], m["chain"]) for m in got["migrations"]] == [
+        ("Aaapump", "pump.fun", "solana"), ("Fffbonk", "bonk.fun", "solana"), ("0xABC4444", "four.meme", "bsc")]
+    assert got["answered"] == {"solana": True, "bsc": True}
+    assert got["dex_seen"]["solana"]["pumpswap"] == 3 and got["dex_seen"]["bsc"] == {"pancakeswap_v2": 2}
     monkeypatch.setattr(data, "_get", lambda *a, **k: None)
-    assert data.new_migrations() is None  # no answer is not "no graduations"
+    got = data.new_migrations(FEEDS)
+    assert got["answered"] == {"solana": False, "bsc": False} and not got["migrations"]  # no answer, not "none"
+
+
+def _migs(*rows):
+    import time as _time
+    return lambda *a, **k: {
+        "migrations": [{"mint": m, "pool": f"P{m}", "dex": d, "chain": c, "network": c, "launchpad": pad,
+                        "created_at": _time.time() - 180} for m, d, c, pad in rows],
+        "answered": {"solana": True, "bsc": True}, "dex_seen": {"solana": {"pumpswap": 4}}}
 
 
 def test_a_coin_is_logged_at_graduation_even_when_it_fails_the_filters(cfg, monkeypatch):
-    import time as _time
     from agent import data
     from agent.bridge import build_report
     from agent.main import Agent
@@ -190,16 +213,54 @@ def test_a_coin_is_logged_at_graduation_even_when_it_fails_the_filters(cfg, monk
 
     agent = Agent(cfg)
     fresh = snap(address="Grad1pump", symbol="GRAD", mcap_usd=45_000, vol_5m=900, age_hours=0.05)
-    monkeypatch.setattr(data, "new_migrations", lambda *a, **k: [
-        {"mint": "Grad1pump", "pool": "PoolGrad", "dex": "pumpswap", "created_at": _time.time() - 180}])
+    monkeypatch.setattr(data, "new_migrations", _migs(("Grad1pump", "pumpswap", "solana", "pump.fun")))
     _scan_with(agent, monkeypatch, {"Grad1pump": fresh}, {"action": "PASS", "verdict": "PASS", "conviction": 3})
     rec = next(iter(agent.watch.values()))
-    assert rec["setup"] == "AT_MIGRATION" and rec["features"]["mcap_usd"] == 45_000
-    assert 2.5 <= rec["migration"]["minutes_since"] <= 3.5
+    assert rec["setup"] == "AT_MIGRATION" and rec["chain"] == "solana" and rec["features"]["mcap_usd"] == 45_000
+    assert 2.5 <= rec["migration"]["minutes_since"] <= 3.5 and rec["migration"]["launchpad"] == "pump.fun"
     assert rec["migration"]["holders"]["top10_pct_ex_pool"] is not None
     assert agent.migration_feed["ok"] and agent.migration_feed["logged"] == 1
     status, text = build_report(agent)
-    assert status["watch"]["at_migration"] == 1 and "1 coins logged at migration" in text
+    assert status["watch"]["at_migration"] == 1 and "1 coins logged at migration (pump.fun 1)" in text
+    assert "solana answered, bsc answered" in text and "solana pools by venue: pumpswap 4" in text
+
+
+def test_a_bsc_graduation_is_logged_and_followed_on_its_own_chain(cfg, monkeypatch):
+    from agent import data
+    from agent.main import Agent
+    from test_agent import _scan_with
+
+    agent = Agent(cfg)
+    asked = []
+    bsc = {"0xabc4444": snap(address="0xABC4444", symbol="FOUR", dex="pancakeswap", mcap_usd=30_000, priceUsd="0.0012")}
+    monkeypatch.setattr(data, "new_migrations", _migs(("0xabc4444", "pancakeswap_v2", "bsc", "four.meme")))
+    monkeypatch.setattr(data, "sol_price_usd", lambda: SOL)
+    monkeypatch.setattr(data, "discover_solana_tokens", lambda: [])
+    monkeypatch.setattr(data, "pair_snapshot", lambda pair: dict(pair))
+    monkeypatch.setattr(data, "rugcheck_report", lambda a: pytest.fail("RugCheck is Solana's"))
+    monkeypatch.setattr(data, "get_pairs", lambda tokens, chain="solana": asked.append(chain) or (
+        {t: bsc[t] for t in tokens if t in bsc} if chain == "bsc" else {}))
+    agent.scan()
+    rec = next(iter(agent.watch.values()))
+    assert "bsc" in asked and rec["chain"] == "bsc" and rec["setup"] == "AT_MIGRATION"
+    assert rec["migration"]["launchpad"] == "four.meme" and rec["migration"]["holders"] is None  # RugCheck is Solana's
+    assert rec["ca"] == "0xabc4444" and watch.cost_pct(cfg, rec) is None
+    asked.clear()
+    watch.sample(cfg, agent.watch, now=rec["at"] + 600)
+    assert asked == ["bsc"] and rec["samples"] == 1
+
+
+def test_steering_can_replace_the_launchpad_list(cfg):
+    from agent.bridge import apply_steering
+    default = cfg.migration_feeds
+    apply_steering(cfg, {"migration_feeds": [{"name": "zora", "network": "base", "ending": "", "dexes": ["uniswap"]},
+                                             {"name": "x", "network": "eth"}]})
+    assert cfg.migration_feeds == default  # an empty ending would match everything: ignored, and a bad row too
+    applied = apply_steering(cfg, {"migration_feeds": [
+        {"name": "four.meme", "network": "bsc", "ending": "4444", "dexes": ["pancake"]}]})
+    assert applied["migration_feeds"] == ["four.meme"] and cfg.migration_feeds == (("four.meme", "bsc", "bsc", "4444", ("pancake",)),)
+    apply_steering(cfg, {})
+    assert cfg.migration_feeds == default
 
 
 def test_graduation_feed_is_off_outside_watch_mode(cfg, monkeypatch):
@@ -221,10 +282,24 @@ def test_digest_splits_graduation_logs_by_holder_concentration(cfg):
         s = snap(price_usd=1.0)
         s["address"] = f"grad{i}"
         rec = watch.observe(cfg, book, s, "AT_MIGRATION", SOL, now=T0)
-        rec["migration"] = {"minutes_since": 2.0, "holders": {"top10_pct_ex_pool": top10}}
+        rec["migration"] = {"launchpad": "pump.fun", "minutes_since": 2.0, "holders": {"top10_pct_ex_pool": top10}}
         watch.sample(cfg, book, now=T0 + 600, prices={rec["ca"]: x})
     watch.sample(cfg, book, now=T0 + 7 * 3600, prices={f"grad{i}": 1.0 for i in range(2)})
     d = watch.digest(cfg, book, hours=24, now=T0 + 7 * 3600)
     assert d["at_migration"]["n"] == 2
     assert d["at_migration_by_holders"]["top10 under 20%"]["ran_pct"] == 100.0
     assert d["at_migration_by_holders"]["top10 over 35%"]["dumped_pct"] == 100.0
+    assert d["at_migration_by_launchpad"]["pump.fun"]["n"] == 2
+
+
+def test_off_solana_coins_count_in_gross_but_not_after_costs(cfg):
+    book = {}
+    for i, (chain, x) in enumerate((("solana", 1.6), ("bsc", 0.7))):
+        s = snap(price_usd=1.0)
+        s["address"] = f"c{i}"
+        watch.observe(cfg, book, s, "AT_MIGRATION", SOL, now=T0, chain=chain)
+        watch.sample(cfg, book, now=T0 + 600, prices={f"c{i}": x})
+    watch.sample(cfg, book, now=T0 + 7 * 3600, prices={"c0": 1.0, "c1": 1.0})
+    g = watch.digest(cfg, book, hours=24, now=T0 + 7 * 3600)["all"]
+    assert g["n"] == 2 and g["costed"] == 1 and g["avg_gross_pct"] == 15.0
+    assert g["avg_net_pct"] == pytest.approx(50 - g["avg_cost_pct"], abs=0.1)

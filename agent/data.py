@@ -60,42 +60,61 @@ def discover_solana_tokens() -> list[str]:
     return list(seen)
 
 
-def new_migrations(dexes: tuple = ("pumpswap",), max_age_min: float = 20.0, pages: int = 2) -> list[dict] | None:
-    """Pump.fun coins that just graduated: new pools on the given dexes from GeckoTerminal's
-    Solana new-pools feed, created in the last `max_age_min` minutes. Each item has the
-    mint, pool, dex and created_at (unix seconds). None when the feed didn't answer."""
+def new_migrations(feeds, max_age_min: float = 20.0, pages: int = 2,
+                   bonding_words: tuple = ()) -> dict:
+    """Coins that just graduated from a launchpad's bonding curve, on any chain in `feeds`
+    (rows of name, GeckoTerminal network, DexScreener chain, address ending, dex words),
+    from GeckoTerminal's per-network new-pools feed: pools opened in the last
+    `max_age_min` minutes whose token address ends the launchpad's way and whose dex id
+    names the venue it graduates to. Returns
+        {"migrations": [{mint, pool, dex, chain, network, launchpad, created_at}],
+         "answered": {network: bool}, "dex_seen": {network: {dex id: pools}}}
+    dex_seen lists every venue in the feed, so a wrong dex id in a row shows in the report."""
     from datetime import datetime
 
-    out, answered, now = [], False, time.time()
-    for page in range(1, pages + 1):
-        data = _get(f"{GECKO}/networks/solana/new_pools", {"page": page}, retries=2)
-        if data is None:
-            break
-        answered = True
-        for pool in data.get("data") or []:
-            rel = pool.get("relationships") or {}
-            dex = ((rel.get("dex") or {}).get("data") or {}).get("id")
-            mint = (((rel.get("base_token") or {}).get("data") or {}).get("id") or "").removeprefix("solana_")
-            attrs = pool.get("attributes") or {}
-            try:
-                created = datetime.fromisoformat(str(attrs.get("pool_created_at")).replace("Z", "+00:00")).timestamp()
-            except ValueError:
-                continue
-            # A PumpSwap pool for a pump.fun mint is the graduation pool; anyone can open
-            # other PumpSwap pools, and those mints don't end in "pump".
-            if dex in dexes and mint.endswith("pump") and now - created <= max_age_min * 60:
-                out.append({"mint": mint, "pool": attrs.get("address"), "dex": dex, "created_at": created})
-    return out if answered else None
+    out: list[dict] = []
+    answered: dict[str, bool] = {}
+    seen: dict[str, dict[str, int]] = {}
+    now = time.time()
+    for network in dict.fromkeys(f[1] for f in feeds):
+        rows = [f for f in feeds if f[1] == network]
+        answered[network] = False
+        for page in range(1, pages + 1):
+            data = _get(f"{GECKO}/networks/{network}/new_pools", {"page": page}, retries=2)
+            if data is None:
+                break
+            answered[network] = True
+            for pool in data.get("data") or []:
+                rel = pool.get("relationships") or {}
+                dex = str(((rel.get("dex") or {}).get("data") or {}).get("id") or "")
+                seen.setdefault(network, {})[dex] = seen.get(network, {}).get(dex, 0) + 1
+                mint = (((rel.get("base_token") or {}).get("data") or {}).get("id") or "").removeprefix(f"{network}_")
+                attrs = pool.get("attributes") or {}
+                try:
+                    created = datetime.fromisoformat(str(attrs.get("pool_created_at")).replace("Z", "+00:00")).timestamp()
+                except ValueError:
+                    continue
+                if now - created > max_age_min * 60 or any(w in dex for w in bonding_words):
+                    continue
+                for name, _net, chain, ending, dex_words in rows:
+                    if mint.lower().endswith(ending.lower()) and any(w in dex for w in dex_words):
+                        out.append({"mint": mint, "pool": attrs.get("address"), "dex": dex, "chain": chain,
+                                    "network": network, "launchpad": name, "created_at": created})
+                        break
+    return {"migrations": out, "answered": answered, "dex_seen": seen}
 
 
-def get_pairs(token_addresses: list[str]) -> dict[str, dict]:
-    """Best (most liquid) Solana pair per token, batched 30 at a time."""
+def get_pairs(token_addresses: list[str], chain: str = "solana") -> dict[str, dict]:
+    """Best (most liquid) pair per token on one chain (Solana unless named), batched 30 at
+    a time. Keys are the addresses as given (EVM addresses match in any case)."""
     best: dict[str, dict] = {}
     for i in range(0, len(token_addresses), 30):
         chunk = token_addresses[i : i + 30]
-        for pair in _get(f"{DEX}/tokens/v1/solana/{','.join(chunk)}") or []:
+        asked = {a if chain == "solana" else a.lower(): a for a in chunk}
+        for pair in _get(f"{DEX}/tokens/v1/{chain}/{','.join(chunk)}") or []:
             addr = pair.get("baseToken", {}).get("address")
-            if not addr or addr not in chunk:
+            addr = asked.get(addr if chain == "solana" else str(addr).lower()) if addr else None
+            if not addr:
                 continue
             liq = (pair.get("liquidity") or {}).get("usd") or 0
             cur = best.get(addr)

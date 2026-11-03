@@ -196,9 +196,21 @@ class Config:
     # not it passes the market filters, with a RugCheck holder snapshot, so the Nov 10 test
     # can include a "buy at migration" rule set against real costs.
     migration_feed: bool = True
-    migration_dexes: tuple = ("pumpswap",)  # GeckoTerminal dex ids a pump.fun coin graduates to
+    # Owner (Nov 3): "from when they bond/migrate/graduate on any chain". One row per
+    # launchpad: name, GeckoTerminal network, DexScreener chain, the vanity ending its
+    # token addresses share, and words in the dex id of the pool it graduates to. A new
+    # pool counts as a graduation when both match. steer.json "migration_feeds" replaces
+    # this list, so a wrong dex id can be fixed from the report without a code change.
+    migration_feeds: tuple = (
+        ("pump.fun", "solana", "solana", "pump", ("pumpswap",)),
+        ("bonk.fun", "solana", "solana", "bonk", ("raydium",)),
+        ("four.meme", "bsc", "bsc", "4444", ("pancakeswap",)),
+    )
+    # Pools on these are the launchpad's own bonding curve (a launch, not a graduation).
+    migration_bonding_dex_words: tuple = ("launch", "bonding", "curve", "dbc", "pump-fun", "pumpfun", "four-meme",
+                                          "fourmeme", "moonshot")
     migration_max_age_min: float = 20.0  # pools older than this aren't "at migration" any more
-    migration_holder_checks_per_scan: int = 8  # RugCheck calls for holder snapshots, per scan
+    migration_holder_checks_per_scan: int = 8  # RugCheck calls for holder snapshots, per scan (Solana only)
 
     # --- Web crawler: meta radar + project crawler --------------------------
     radar_interval_min: float = 10.0
