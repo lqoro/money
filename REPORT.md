@@ -1,13 +1,13 @@
 # Trencher live report
 
-Updated 2026-11-03T06:36:43Z (paper trading, never real money)
+Updated 2026-11-03T06:51:50Z (paper trading, never real money)
 
 - Equity: $74.23 (-25.8% vs $100 start)
 - Closed trades: 22, 3 wins
 - Fees paid: $14.78 (axiom $2.81, network $9.18, pool $2.66), plus $4.15 lost to slippage
 - New trades: WATCH-ONLY (scans and decides, buys nothing)
 - Brain: subscription, claude-haiku-5-5 for routine calls, claude-opus-5-5 for the daily review; 452 routine calls and 1 plan-limit hits in 48h
-- Watch log: 10 coins being followed, 0 filed, 0 would-buys (6h follow, sampled every 2 min)
+- Watch log: 13 coins being followed, 0 filed, 0 would-buys (6h follow, sampled every 2 min)
 
 ## Scorecard (after fees)
 - 22 closed, 3 won (14%), net $-25.79
@@ -73,9 +73,15 @@ Updated 2026-11-03T06:36:43Z (paper trading, never real money)
   CA `H4gHnZ3NCU7Z9XQwGX6YYJNyieGEW8pqwGRUcdSxpump`
 
 ## Last scan
-- 06:36Z: 2 coins, 1 with pairs, 0 passed the market filters, 0 researched
+- 06:51Z: 1 coins, 0 with pairs, 0 passed the market filters, 0 researched
 
 ## Coins it looked at, and why it passed
+- 06:42Z MAMESUKE (DIP, $1,204,212 mcap, $2,794 5m vol): REJECT, Bundles: 5 linked wallet cluster(s) hold 65.9% of supply (>20%) (V17)  
+  CA `SCGBBnSwnekytGFHgyeHHxPMiN7xDxsWFGg9JgFSTNK`
+- 06:40Z LIFEVAL (MIGRATED, $130,203 mcap, $52,972 5m vol): PASS at conviction 3, PASS: chasing spike, no higher low, 15 minutes old. Blocker "chasing spike" (V1, V6).  
+  CA `Bmn5qFwQHxteaoM1et9FLdHsi52DmuXZyzWinih8pump`
+- 06:38Z Firecube (FINAL_STRETCH, $26,296 mcap, $5,032 5m vol): REJECT, Dev holds 5.0% (>1%) (V13, V17)  
+  CA `Ebih1KdijjpQBaM83gUfGhRtTCpHzDkBZhCZedZwpump`
 - 06:32Z TrumpWars (DIP, $98,501 mcap, $3,414 5m vol): PASS at conviction 3, PASS: TrumpWars is a DIP with one bundle at 10.7% (V3 says over 3-4% is sus), top 10 at 22.7%, $3.4k on the 5m, and no catalyst. It's one of 17 "trump war" copies. Blocker: bundles over the line, no catalyst. (V1, V3, V6, V13)  
   CA `31HzUsjzTt7FBCGnDy68cBnELayVsnd3zYEBtsXXpump`
 - 06:29Z WarPup (FINAL_STRETCH, $20,037 mcap, $31,586 5m vol): PASS at conviction 3, PASS: War Pup is a spike, not a setup. It's up 635% in an hour, about 8 minutes old, with 9 same-ticker copies and a 5% bundle cluster. Blocker: "chasing spike" (V1, V6, V13).  
@@ -90,12 +96,6 @@ Updated 2026-11-03T06:36:43Z (paper trading, never real money)
   CA `31SYoqWFhx3i9UsfnoXTjFp4ZwJA8F8UPrMxymfDpump`
 - 06:22Z XDG (MIGRATED, $145,954 mcap, $9,140 5m vol): PASS at conviction 3, PASS: XDG is under two minutes old, the feed's peak-mcap math is broken, and it's the third copy in a 3-coin dog field. Blocker: too new. (V1, V6, V13)  
   CA `J1pZjNKh4BnbXBsroE4acJv3TYzCGxTn46VrZii6orEZ`
-- 06:21Z WASTED (MIGRATED, $1,608,201 mcap, $11,732 5m vol): REJECT, Dev holds 3.5% (>1%) (V13, V17)  
-  CA `GexThZHgaswpAQ7Fi8QrHFubjPimUNSYhJiAA7XZpump`
-- 06:21Z Memestock (MIGRATED, $113,765 mcap, $22,891 5m vol): REJECT, Bundles: 10 linked wallet cluster(s) hold 27.1% of supply (>20%) (V17)  
-  CA `9hKJb9YEf5RYb4f71Xr3Kr86hZq86Xad5X7gdyv1pump`
-- 06:21Z PumpFun (MIGRATED, $147,553 mcap, $36,537 5m vol): PASS at conviction 3, PASS: chasing a 318% hour, 9.8% off the high, no higher low printed, and the site is a 1.4-day-old AI show that doesn't list this CA. (V1, V6, V13)  
-  CA `9X5UwHT7gWSPtAH5yeEzrLHqv3Nedmhy3HyZN3Yspump`
 
 ## What its skips did next (last 48h)
 A skip "ran" if the coin reached the first target (1.5x) from the skip price before a 20% drop, "dumped" if the drop came first. Sampled every 10 min, followed 6h.
@@ -106,7 +106,7 @@ A skip "ran" if the coin reached the first target (1.5x) from the skip price bef
     CA `6qhnbvdJuWVUQ7EQpgz5GNraV7pty7cqc8MmfQTEpump`
   - ran: PEAKY up to 1.53x  
     CA `2EQxezWgXPRU6V3UD7DKr5m12mxqeFGPWNRx9wbqy9fC`
-- too new / sniping: blocked 51, ran 9, dumped 42, flat 0, open 0 (saving losses: keep it)
+- too new / sniping: blocked 52, ran 9, dumped 42, flat 0, open 1 (saving losses: keep it)
   - ran: paws up to 1.51x  
     CA `CCF6ui6YjjhLaVtuYLH8b5jza8jHathqww5VbrMapump`
   - ran: VETOTRUMP up to 1.66x  
@@ -139,7 +139,7 @@ A skip "ran" if the coin reached the first target (1.5x) from the skip price bef
     CA `7ha4HFgdvkXaDcR2biCsuBpoCZzoLSRjb5we34Gbpump`
   - ran: CAPY up to 1.51x  
     CA `DBPTU2oKLDHXQjAEJ3rZi8bUGmt2uxUbipgg6xmXoMqr`
-- bundles over the line: blocked 17, ran 2, dumped 11, flat 2, open 2 (saving losses: keep it)
+- bundles over the line: blocked 17, ran 2, dumped 12, flat 2, open 1 (saving losses: keep it)
   - ran: Nuts up to 1.53x  
     CA `APH9FRoKst66E4a7uZXcEfE8NjtwybUC8Jq7ue8upump`
   - ran: NA up to 1.97x  
@@ -152,7 +152,7 @@ A skip "ran" if the coin reached the first target (1.5x) from the skip price bef
     CA `J1D3X8znX4AzUPMHVWyBLNHqBBqWDPNSjX4KwK3Qpump`
   - ran: KIDS up to 1.73x  
     CA `7uwr9Zoz8WW9UyRVC22nmmAXRbPoFTUpVjsN8q7kids`
-- dev share over 1%: blocked 11, ran 2, dumped 5, flat 3, open 1 (saving losses: keep it)
+- dev share over 1%: blocked 12, ran 2, dumped 5, flat 3, open 2 (saving losses: keep it)
   - ran: MINTED up to 1.61x  
     CA `9yEKBwczdqoox7Red6GGPTrJ2dUbMvFUagdjxFqHpump`
   - ran: DOJAK up to 2.62x  
@@ -188,9 +188,9 @@ The meta is PumpSwap graduates about 2 hours old, and the jokes are about memeco
   CA `9X5UwHT7gWSPtAH5yeEzrLHqv3Nedmhy3HyZN3Yspump`
 - Memestock: $298,360 1h vol, $119,192 mcap, -44% 1h  
   CA `9hKJb9YEf5RYb4f71Xr3Kr86hZq86Xad5X7gdyv1pump`
-- GATO: $139,406 1h vol, $13,716,608 mcap, +25% 1h  
+- LIFEVAL: $148,743 1h vol, $130,203 mcap, +238% 1h  
+  CA `Bmn5qFwQHxteaoM1et9FLdHsi52DmuXZyzWinih8pump`
+- GATO: $139,892 1h vol, $13,135,233 mcap, +10% 1h  
   CA `HsprHxBRgiVaQdRf3TnKNuZZtaX9JUSPgMFdAkk6pump`
 - 1WIN: $138,168 1h vol, $17,110,905 mcap, -10% 1h  
   CA `FjPKUGnF5zBpdEv18gT8FJCtxh3MKrFkoeYekgYr1win`
-- WASTED: $120,183 1h vol, $1,608,201 mcap, +68% 1h  
-  CA `GexThZHgaswpAQ7Fi8QrHFubjPimUNSYhJiAA7XZpump`
