@@ -56,6 +56,7 @@ class Agent:
         # Watch-only mode: every coin that passes the market filters, followed to see what it did.
         self.watch: dict = watch.load(cfg)
         self.last_watch_sample = 0.0
+        self.migration_feed: dict = {}  # last fetch of the graduation feed, for the report
         self.bridge = DuetBridge(cfg, self)
         # Exits run on their own thread (see run()), so a scan's brain calls can't leave an
         # open position unwatched for minutes. The lock guards the wallet, the watchlist and
@@ -140,6 +141,10 @@ class Agent:
         sol = data.sol_price_usd()
         now = time.time()
         discovered = data.discover_solana_tokens()
+        migs = self.fetch_migrations(now) if self.cfg.watch_only and self.cfg.migration_feed else {}
+        discovered += [m for m, g in migs.items() if g["chain"] == "solana" and m not in discovered]
+        if migs:
+            self.log_other_chain_graduations(migs, sol, now)
         # Contract addresses the crawler saw called on Telegram/Reddit in the last 2h.
         discovered += [a for a, v in self.meta.get("called_cas", {}).items()
                        if now - v.get("last_seen", 0) < 7200 and a not in discovered]
@@ -160,11 +165,15 @@ class Agent:
                 self.cooldown[addr] = now + 60 * 60
                 continue
             setup = market_prefilter(snap, self.cfg, sol)
+            mig = migs.get(addr)
+            if self.cfg.watch_only and (setup or mig):
+                # A coin that just graduated is logged whether or not it passes the filters.
+                with self.lock:
+                    rec = watch.observe(self.cfg, self.watch, snap, setup or "AT_MIGRATION", sol, now)
+                if rec is not None and mig and "migration" not in rec:
+                    self.note_migration(rec, snap, mig, now)
             if setup:
                 candidates.append(snap)
-                if self.cfg.watch_only:
-                    with self.lock:
-                        watch.observe(self.cfg, self.watch, snap, setup, sol, now)
             else:
                 self.cooldown[addr] = now + 10 * 60
         candidates.sort(key=lambda s: s["vol_5m"], reverse=True)
@@ -187,6 +196,63 @@ class Agent:
             if not self.running or not (self.cfg.watch_only or self.pf.can_open(self.cfg)[0]):
                 break
             self.research(snap, sol)
+
+    def fetch_migrations(self, now: float) -> dict[str, dict]:
+        """Coins that graduated from a launchpad in the last few minutes, on every chain
+        in migration_feeds, by token address."""
+        got = data.new_migrations(self.cfg.migration_feeds, self.cfg.migration_max_age_min,
+                                  bonding_words=tuple(self.cfg.migration_bonding_dex_words))
+        prev = self.migration_feed
+        found = got["migrations"]
+        self.migration_feed = {
+            "at": now, "ok": any(got["answered"].values()), "answered": got["answered"], "found": len(found),
+            "found_by_launchpad": {n: sum(1 for m in found if m["launchpad"] == n) for n in {m["launchpad"] for m in found}},
+            "dex_seen": {net: dict(sorted(c.items(), key=lambda kv: -kv[1])[:8]) for net, c in got["dex_seen"].items()},
+            "logged": prev.get("logged", 0), "holder_checks": prev.get("holder_checks", 0),
+            "holder_checks_this_scan": 0}
+        for net, ok in got["answered"].items():
+            if not ok:
+                log.info("Graduation feed for %s didn't answer this scan", net)
+        return {m["mint"]: m for m in found}
+
+    def log_other_chain_graduations(self, migs: dict[str, dict], sol: float, now: float) -> None:
+        """Graduations off Solana: logged and followed only. Research, RugCheck and the
+        paper cost model are Solana's, so these never reach the brain."""
+        by_chain: dict[str, list[str]] = {}
+        for mint, g in migs.items():
+            if g["chain"] != "solana":
+                by_chain.setdefault(g["chain"], []).append(mint)
+        for chain, mints in by_chain.items():
+            for addr, pair in data.get_pairs(mints, chain).items():
+                snap = data.pair_snapshot(pair)
+                snap["address"] = addr
+                if hack_story(snap, self.cfg):
+                    continue
+                with self.lock:
+                    rec = watch.observe(self.cfg, self.watch, snap, "AT_MIGRATION", sol, now, chain=chain)
+                if rec is not None and "migration" not in rec:
+                    self.note_migration(rec, snap, migs[addr], now)
+
+    def note_migration(self, rec: dict, snap: dict, mig: dict, now: float) -> None:
+        """Mark an observation as made at graduation, with when the pool opened and who
+        held the coin right then (top 10, insiders, dev, bundles from RugCheck)."""
+        feed = self.migration_feed
+        holders = None
+        if mig.get("chain", "solana") == "solana" and \
+                feed.get("holder_checks_this_scan", 0) < self.cfg.migration_holder_checks_per_scan:
+            feed["holder_checks_this_scan"] = feed.get("holder_checks_this_scan", 0) + 1
+            feed["holder_checks"] = feed.get("holder_checks", 0) + 1
+            report = data.rugcheck_report(snap["address"])
+            if report:
+                holders = holder_stats(report, snap)
+                holders["risk_score"] = report.get("score_normalised", report.get("score"))
+        with self.lock:
+            rec["migration"] = {"launchpad": mig.get("launchpad"), "chain": mig.get("chain", "solana"),
+                                "pool": mig.get("pool"), "dex": mig.get("dex"),
+                                "pool_created_at": mig.get("created_at"),
+                                "minutes_since": round((now - mig["created_at"]) / 60, 1),
+                                "holders": holders}
+        feed["logged"] = feed.get("logged", 0) + 1
 
     def build_dossier(self, snap: dict, sol: float, always_crawl: bool = False):
         """Everything we can learn about a token without asking Claude."""

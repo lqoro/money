@@ -31,6 +31,16 @@ observations, skips and trades and writes what they show into the report.
 `steer.json` can set `brain_model` and `head_model` (Haiku, Sonnet or Opus 5.5),
 which win over `.env`.
 
+Coins are also logged **at graduation, on any chain**. Each scan reads GeckoTerminal's new-pools feed for each network in `migration_feeds`. It logs every coin that just left a launchpad's bonding curve, even when it fails the market filters, with its setup set to `AT_MIGRATION`. A row matches when the token address ends the launchpad's way and the pool's venue names the DEX that launchpad graduates to. Built in:
+
+| Launchpad | Chain | Address ends | Graduates to |
+|---|---|---|---|
+| pump.fun | Solana | `pump` | PumpSwap |
+| bonk.fun | Solana | `bonk` | Raydium |
+| four.meme | BNB Chain | `4444` | PancakeSwap |
+
+Solana graduations get a RugCheck holder snapshot (top 10, insiders, dev, bundles) and can also be researched. Other chains are only logged and followed, and their paper costs aren't modeled yet: the daily digest gives them a gross figure, and its after-costs numbers cover Solana only. The report lists every venue each feed saw, so a wrong row shows up there. steer.json `migration_feeds` can then replace the list without a code change. The feed only runs in watch-only mode.
+
 ## How it works
 
 ```

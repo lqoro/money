@@ -12,6 +12,9 @@ in this repo, checked out at DUET_SYNC_DIR:
                                     "goal": {"equity_usd": 1000, "deadline": "2026-11-05T05:00:00Z",
                                              "stance": "survive" or "push"},
                                     "watch_only": bool,  # scan and decide, buy nothing, log outcomes
+                                    "migration_feeds": [{"name": "four.meme", "network": "bsc",
+                                                         "chain": "bsc", "ending": "4444",
+                                                         "dexes": ["pancakeswap"]}],  # graduations to log
                                     "brain_model": "claude-haiku-5-5",  # routine calls
                                     "head_model": "claude-opus-5-5"}  # daily log review
 
@@ -81,6 +84,27 @@ def apply_steering(cfg: Config, steer: dict) -> dict:
                 log.warning("Duet steering: ignoring %s %r (not one of %s)", key, chosen, ", ".join(ALLOWED_MODELS))
             if pinned in cfg.steer_pinned:
                 setattr(cfg, attr, cfg.steer_pinned.pop(pinned))
+
+    # Which launchpads count as graduations, and where (owner, Nov 3: any chain).
+    # Dropping the key puts the built-in list back.
+    feeds = steer.get("migration_feeds")
+    parsed = []
+    if isinstance(feeds, list):
+        for row in feeds:
+            try:
+                name, network, chain = str(row["name"]), str(row["network"]), str(row.get("chain") or row["network"])
+                ending, dexes = str(row["ending"]), tuple(str(d) for d in row["dexes"])
+            except (KeyError, TypeError):
+                log.warning("Duet steering: ignoring migration feed %r (needs name, network, ending, dexes)", row)
+                continue
+            if name and network and ending and dexes:
+                parsed.append((name, network, chain, ending, dexes))
+    if parsed:
+        cfg.steer_pinned.setdefault("_migration_feeds", cfg.migration_feeds)
+        cfg.migration_feeds = tuple(parsed)
+        applied["migration_feeds"] = [p[0] for p in parsed]
+    elif "_migration_feeds" in cfg.steer_pinned:
+        cfg.migration_feeds = cfg.steer_pinned.pop("_migration_feeds")
 
     settings = steer.get("settings") or {}
     if isinstance(settings, dict):
@@ -157,6 +181,7 @@ def build_report(agent) -> tuple[dict, str]:
         "skip_review": skips.stats(getattr(agent, "skips", {}) or {}),
         "rule_changes": recent_rule_changes(cfg),
         "watch": watch.summary(cfg, getattr(agent, "watch", {}) or {}),
+        "migration_feed": getattr(agent, "migration_feed", {}) or {},
         "daily_reviews": recent_daily_reviews(cfg, 3),
     }
 
@@ -186,6 +211,15 @@ def build_report(agent) -> tuple[dict, str]:
         *([f"- Watch log: {w['live']} coins being followed, {w['settled']} filed, {w['would_buys']} would-buys "
            f"({w['follow_hours']:g}h follow, sampled every {w['sample_min']:g} min)"]
           if (w := status["watch"]) and (w["on"] or w["settled"]) else []),
+        *([f"- Graduations: {w['at_migration']} coins logged at migration"
+           + (f" ({', '.join(f'{k} {v}' for k, v in sorted(w['at_migration_by_launchpad'].items()))})"
+              if w.get("at_migration_by_launchpad") else "")
+           + "; last feed check: "
+           + ", ".join(f"{net} {'answered' if ok else 'NO ANSWER'}" for net, ok in (f.get("answered") or {}).items())
+           + f", {f.get('found', 0)} new graduations",
+           *(f"  - {net} pools by venue: " + ", ".join(f"{d} {n}" for d, n in seen.items())
+             for net, seen in (f.get("dex_seen") or {}).items())]
+          if (w := status["watch"]) and w["on"] and (f := status.get("migration_feed")) else []),
         "",
         *scorecard.lines(status["scorecard"]),
         "",
