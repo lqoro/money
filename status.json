@@ -1,8 +1,11 @@
 {
- "updated_at": "2026-11-03T06:21:29Z",
+ "updated_at": "2026-11-03T06:21:32Z",
  "paused_new_trades": true,
+ "watch_only": true,
  "brain": {
   "mode": "subscription",
+  "model": "claude-haiku-5-5",
+  "head_model": "claude-opus-5-5",
   "paused_until": null,
   "usage_48h": {
    "hours": 48,
@@ -853,177 +856,8 @@
   ]
  },
  "goal": null,
- "last_scan": {
-  "at": 1793686873.869267,
-  "blocked": "paused from Claude Duet"
- },
- "recent_looks": [
-  {
-   "ts": "2026-11-03T05:00:39Z",
-   "symbol": "RICO",
-   "ca": "8kuQg3WivDtL85VEdw2jEmSXjYt6EEeYBATJ4DtQpump",
-   "setup": "DIP",
-   "mcap_usd": 339848,
-   "vol_5m": 1706,
-   "outcome": "REJECT",
-   "conviction": null,
-   "reason": "5m volume $1,706 is dead (<$2,000) (V1)"
-  },
-  {
-   "ts": "2026-11-03T05:05:09Z",
-   "symbol": "METEORITE",
-   "ca": "67RBmGztx8ciVyWr8yi6R8fwrc3EG86XejYT7mespump",
-   "setup": "MIGRATED",
-   "mcap_usd": 171458,
-   "vol_5m": 22301,
-   "outcome": "PASS",
-   "conviction": 4,
-   "reason": "PASS: 19% off the high is breakout territory, but flow is 0.92x pace, sellers lead 126 to 93, and it's an AI tool with no GitHub. No breakout. (V1, V6)"
-  },
-  {
-   "ts": "2026-11-03T05:06:14Z",
-   "symbol": "SMUGLY",
-   "ca": "DayjoyjxCA2SVTApEW7oBFG3WMvrYZRMjAnqsetLpump",
-   "setup": "MIGRATED",
-   "mcap_usd": 162155,
-   "vol_5m": 9889,
-   "outcome": "PASS",
-   "conviction": 2,
-   "reason": "PASS: SMUGLY is down 74% from its $632k peak, flow is running at 0.62x its hourly pace and the newest 15m candle dropped 39% to the hourly low. That's a falling knife, not a dip (V1, V6)."
-  },
-  {
-   "ts": "2026-11-03T05:06:34Z",
-   "symbol": "SPHERE",
-   "ca": "31SYoqWFhx3i9UsfnoXTjFp4ZwJA8F8UPrMxymfDpump",
-   "setup": "DIP",
-   "mcap_usd": 975737,
-   "vol_5m": 6173,
-   "outcome": "PASS",
-   "conviction": 3,
-   "reason": "PASS \u2014 DIP with no catalyst and theme volume at 0.88x pace; bottom-buy rule fails. Clean holders don't make a story. (V1, V5, V6)"
-  },
-  {
-   "ts": "2026-11-03T05:07:06Z",
-   "symbol": "1WIN",
-   "ca": "FjPKUGnF5zBpdEv18gT8FJCtxh3MKrFkoeYekgYr1win",
-   "setup": "MIGRATED",
-   "mcap_usd": 19233399,
-   "vol_5m": 6759,
-   "outcome": "REJECT",
-   "conviction": null,
-   "reason": "RugCheck danger: Freeze Authority still enabled"
-  },
-  {
-   "ts": "2026-11-03T05:08:12Z",
-   "symbol": "Memestock",
-   "ca": "9hKJb9YEf5RYb4f71Xr3Kr86hZq86Xad5X7gdyv1pump",
-   "setup": "DIP",
-   "mcap_usd": 223588,
-   "vol_5m": 23251,
-   "outcome": "REJECT",
-   "conviction": null,
-   "reason": "Bundles: 8 linked wallet cluster(s) hold 21.6% of supply (>20%) (V17)"
-  },
-  {
-   "ts": "2026-11-03T05:13:20Z",
-   "symbol": "LeTwerk",
-   "ca": "GtRH3cGYWPLLjjvcgMV1Fb3Jd25rhGRQmXgwu79Npump",
-   "setup": "MIGRATED",
-   "mcap_usd": 153923,
-   "vol_5m": 33051,
-   "outcome": "REJECT",
-   "conviction": null,
-   "reason": "Bundles: 10 linked wallet cluster(s) hold 44.0% of supply (>20%) (V17)"
-  },
-  {
-   "ts": "2026-11-03T05:14:22Z",
-   "symbol": "WORKER",
-   "ca": "9DwPa8v7DTCgPWEgXbCLeg7F5FpruHHTHCsNnjR9pump",
-   "setup": "MIGRATED",
-   "mcap_usd": 40669,
-   "vol_5m": 39259,
-   "outcome": "REJECT",
-   "conviction": null,
-   "reason": "Top 10 hold 28.3% ex-pool (>25%) (V13)"
-  },
-  {
-   "ts": "2026-11-03T05:21:40Z",
-   "symbol": "GLITCH",
-   "ca": "8Xg89xT8Ve34sKiYqYuMs46mycREsCA2F362UscRpump",
-   "setup": "MIGRATED",
-   "mcap_usd": 3636312,
-   "vol_5m": 2645,
-   "outcome": "REJECT",
-   "conviction": null,
-   "reason": "Top 10 hold 28.1% ex-pool (>25%) (V13)"
-  },
-  {
-   "ts": "2026-11-03T05:24:44Z",
-   "symbol": "stoke",
-   "ca": "H1kK18Wk7W5B16VkXotDKwk3MGSeuhymZLiQp2GbZEqS",
-   "setup": "FINAL_STRETCH",
-   "mcap_usd": 21627,
-   "vol_5m": 1996,
-   "outcome": "REJECT",
-   "conviction": null,
-   "reason": "5m volume $1,996 is dead (<$2,000) (V1)"
-  },
-  {
-   "ts": "2026-11-03T05:46:30Z",
-   "symbol": "WASTED",
-   "ca": "GexThZHgaswpAQ7Fi8QrHFubjPimUNSYhJiAA7XZpump",
-   "setup": "DIP",
-   "mcap_usd": 906958,
-   "vol_5m": 3314,
-   "outcome": "REJECT",
-   "conviction": null,
-   "reason": "Dev holds 3.5% (>1%) (V13, V17)"
-  },
-  {
-   "ts": "2026-11-03T05:50:06Z",
-   "symbol": "METEORITE",
-   "ca": "67RBmGztx8ciVyWr8yi6R8fwrc3EG86XejYT7mespump",
-   "setup": "MIGRATED",
-   "mcap_usd": 198689,
-   "vol_5m": 9407,
-   "outcome": "PASS",
-   "conviction": 3,
-   "reason": "PASS: 5m flow is 0.37x its hourly pace across all 7 meteorite coins, and the \"AI market intelligence\" site has no GitHub behind it. The crowd is leaving a LARP (V1, V6)."
-  },
-  {
-   "ts": "2026-11-03T05:52:23Z",
-   "symbol": "SPHERE",
-   "ca": "31SYoqWFhx3i9UsfnoXTjFp4ZwJA8F8UPrMxymfDpump",
-   "setup": "DIP",
-   "mcap_usd": 795168,
-   "vol_5m": 7741,
-   "outcome": "PASS",
-   "conviction": 3,
-   "reason": "PASS \u2014 DIP on a story nobody's telling: zero mentions, 0.3-day-old site, no catalyst, still bleeding toward the hourly low with no higher low. Falling knife. (V1, V6)"
-  },
-  {
-   "ts": "2026-11-03T05:53:10Z",
-   "symbol": "1WIN",
-   "ca": "FjPKUGnF5zBpdEv18gT8FJCtxh3MKrFkoeYekgYr1win",
-   "setup": "MIGRATED",
-   "mcap_usd": 17654903,
-   "vol_5m": 18802,
-   "outcome": "REJECT",
-   "conviction": null,
-   "reason": "RugCheck danger: Freeze Authority still enabled"
-  },
-  {
-   "ts": "2026-11-03T05:54:12Z",
-   "symbol": "Memestock",
-   "ca": "9hKJb9YEf5RYb4f71Xr3Kr86hZq86Xad5X7gdyv1pump",
-   "setup": "MIGRATED",
-   "mcap_usd": 117094,
-   "vol_5m": 21829,
-   "outcome": "REJECT",
-   "conviction": null,
-   "reason": "Bundles: 9 linked wallet cluster(s) hold 24.3% of supply (>20%) (V17)"
-  }
- ],
+ "last_scan": {},
+ "recent_looks": [],
  "skip_review": {
   "top 10 over 25%": {
    "blocked": 53,
@@ -1757,6 +1591,17 @@
    "evidence": "Code now enforces the fee check (target \u22653x round trip, round trip \u226420% of the position), so these notes are removed from the rules."
   }
  ],
+ "watch": {
+  "on": true,
+  "live": 0,
+  "settled": 0,
+  "brain_reads": 0,
+  "would_buys": 0,
+  "days": [],
+  "follow_hours": 6.0,
+  "sample_min": 2.0
+ },
+ "daily_reviews": [],
  "scorecard": {
   "trades": 22,
   "wins": 3,

@@ -1,12 +1,13 @@
 # Trencher live report
 
-Updated 2026-11-03T06:21:29Z (paper trading, never real money)
+Updated 2026-11-03T06:21:32Z (paper trading, never real money)
 
 - Equity: $74.23 (-25.8% vs $100 start)
 - Closed trades: 22, 3 wins
 - Fees paid: $14.78 (axiom $2.81, network $9.18, pool $2.66), plus $4.15 lost to slippage
-- New trades: PAUSED by Duet
-- Brain: subscription, 451 calls and 1 plan-limit hits in 48h
+- New trades: WATCH-ONLY (scans and decides, buys nothing)
+- Brain: subscription, claude-haiku-5-5 for routine calls, claude-opus-5-5 for the daily review; 451 routine calls and 1 plan-limit hits in 48h
+- Watch log: 0 coins being followed, 0 filed, 0 would-buys (6h follow, sampled every 2 min)
 
 ## Scorecard (after fees)
 - 22 closed, 3 won (14%), net $-25.79
@@ -72,29 +73,10 @@ Updated 2026-11-03T06:21:29Z (paper trading, never real money)
   CA `H4gHnZ3NCU7Z9XQwGX6YYJNyieGEW8pqwGRUcdSxpump`
 
 ## Last scan
-- Not opening trades: paused from Claude Duet
+- no scan yet since the last restart
 
 ## Coins it looked at, and why it passed
-- 05:54Z Memestock (MIGRATED, $117,094 mcap, $21,829 5m vol): REJECT, Bundles: 9 linked wallet cluster(s) hold 24.3% of supply (>20%) (V17)  
-  CA `9hKJb9YEf5RYb4f71Xr3Kr86hZq86Xad5X7gdyv1pump`
-- 05:53Z 1WIN (MIGRATED, $17,654,903 mcap, $18,802 5m vol): REJECT, RugCheck danger: Freeze Authority still enabled  
-  CA `FjPKUGnF5zBpdEv18gT8FJCtxh3MKrFkoeYekgYr1win`
-- 05:52Z SPHERE (DIP, $795,168 mcap, $7,741 5m vol): PASS at conviction 3, PASS — DIP on a story nobody's telling: zero mentions, 0.3-day-old site, no catalyst, still bleeding toward the hourly low with no higher low. Falling knife. (V1, V6)  
-  CA `31SYoqWFhx3i9UsfnoXTjFp4ZwJA8F8UPrMxymfDpump`
-- 05:50Z METEORITE (MIGRATED, $198,689 mcap, $9,407 5m vol): PASS at conviction 3, PASS: 5m flow is 0.37x its hourly pace across all 7 meteorite coins, and the "AI market intelligence" site has no GitHub behind it. The crowd is leaving a LARP (V1, V6).  
-  CA `67RBmGztx8ciVyWr8yi6R8fwrc3EG86XejYT7mespump`
-- 05:46Z WASTED (DIP, $906,958 mcap, $3,314 5m vol): REJECT, Dev holds 3.5% (>1%) (V13, V17)  
-  CA `GexThZHgaswpAQ7Fi8QrHFubjPimUNSYhJiAA7XZpump`
-- 05:24Z stoke (FINAL_STRETCH, $21,627 mcap, $1,996 5m vol): REJECT, 5m volume $1,996 is dead (<$2,000) (V1)  
-  CA `H1kK18Wk7W5B16VkXotDKwk3MGSeuhymZLiQp2GbZEqS`
-- 05:21Z GLITCH (MIGRATED, $3,636,312 mcap, $2,645 5m vol): REJECT, Top 10 hold 28.1% ex-pool (>25%) (V13)  
-  CA `8Xg89xT8Ve34sKiYqYuMs46mycREsCA2F362UscRpump`
-- 05:14Z WORKER (MIGRATED, $40,669 mcap, $39,259 5m vol): REJECT, Top 10 hold 28.3% ex-pool (>25%) (V13)  
-  CA `9DwPa8v7DTCgPWEgXbCLeg7F5FpruHHTHCsNnjR9pump`
-- 05:13Z LeTwerk (MIGRATED, $153,923 mcap, $33,051 5m vol): REJECT, Bundles: 10 linked wallet cluster(s) hold 44.0% of supply (>20%) (V17)  
-  CA `GtRH3cGYWPLLjjvcgMV1Fb3Jd25rhGRQmXgwu79Npump`
-- 05:08Z Memestock (DIP, $223,588 mcap, $23,251 5m vol): REJECT, Bundles: 8 linked wallet cluster(s) hold 21.6% of supply (>20%) (V17)  
-  CA `9hKJb9YEf5RYb4f71Xr3Kr86hZq86Xad5X7gdyv1pump`
+- none since the last restart
 
 ## What its skips did next (last 48h)
 A skip "ran" if the coin reached the first target (1.5x) from the skip price before a 20% drop, "dumped" if the drop came first. Sampled every 10 min, followed 6h.
