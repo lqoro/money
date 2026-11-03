@@ -1,13 +1,13 @@
 # Trencher live report
 
-Updated 2026-11-03T13:41:39Z (paper trading, never real money)
+Updated 2026-11-03T13:56:42Z (paper trading, never real money)
 
 - Equity: $74.23 (-25.8% vs $100 start)
 - Closed trades: 22, 3 wins
 - Fees paid: $14.78 (axiom $2.81, network $9.18, pool $2.66), plus $4.15 lost to slippage
 - New trades: WATCH-ONLY (scans and decides, buys nothing)
-- Brain: subscription, claude-haiku-5-5 for routine calls, claude-opus-5-5 for the daily review; 443 routine calls and 1 plan-limit hits in 48h
-- Watch log: 86 coins being followed, 27 filed, 0 would-buys (6h follow, sampled every 2 min)
+- Brain: subscription, claude-haiku-5-5 for routine calls, claude-opus-5-5 for the daily review; 442 routine calls and 1 plan-limit hits in 48h
+- Watch log: 82 coins being followed, 33 filed, 0 would-buys (6h follow, sampled every 2 min)
 
 ## Scorecard (after fees)
 - 22 closed, 3 won (14%), net $-25.79
@@ -73,9 +73,13 @@ Updated 2026-11-03T13:41:39Z (paper trading, never real money)
   CA `H4gHnZ3NCU7Z9XQwGX6YYJNyieGEW8pqwGRUcdSxpump`
 
 ## Last scan
-- 13:40Z: 16 coins, 15 with pairs, 1 passed the market filters, 1 researched
+- 13:56Z: 2 coins, 1 with pairs, 0 passed the market filters, 0 researched
 
 ## Coins it looked at, and why it passed
+- 13:47Z VANCE2028 (MIGRATED, $133,469 mcap, $13,978 5m vol): PASS at conviction 2, PASS: chasing spike, too new, no higher low, and a 23-copy same-ticker field on a politician's name. Blockers: "chasing spike", "chasing", "no higher low". (V1, V3, V6, V13)  
+  CA `66uCeEPjjnoeGgqBZKHE1ieWo9Uw5mufK9XaFY23pump`
+- 13:45Z Dacity (MIGRATED, $7,305,249 mcap, $8,245 5m vol): REJECT, Bundles: 10 linked wallet cluster(s) hold 24.0% of supply (>20%) (V17)  
+  CA `nxPqZ4F7ux8Vph5NFu25rEP6Kx9Gr1U6Fmj36Rjpump`
 - 13:40Z 404 (FINAL_STRETCH, $29,028 mcap, $1,949 5m vol): REJECT, 5m volume $1,949 is dead (<$2,000) (V1)  
   CA `9gKArqT6qp3goHfuwAnfG7LioqwUtJ8TFu7P1Bhbpump`
 - 13:39Z PWESIDENT (FINAL_STRETCH, $25,444 mcap, $15,925 5m vol): REJECT, Top 10 hold 25.8% ex-pool (>25%) (V13)  
@@ -92,14 +96,10 @@ Updated 2026-11-03T13:41:39Z (paper trading, never real money)
   CA `8Xg89xT8Ve34sKiYqYuMs46mycREsCA2F362UscRpump`
 - 13:25Z PUMP (MIGRATED, $45,514 mcap, $6,130 5m vol): PASS at conviction 2, PASS. Copycat named "Pump" sitting on the PUMP ticker, 84.5% off its high, flow at 0.32x pace. Not a dip I'll catch (V6, V13).  
   CA `Hxqh7Fxsz11pyqDRdEkBgP8vP44BPLPnQDrxzPYZpump`
-- 13:12Z SPHERE (DIP, $827,552 mcap, $3,119 5m vol): REJECT, Dip with fading attention is a falling knife, not a dip (5m at 0.59x the hour's pace, under 0.6x)  
-  CA `31SYoqWFhx3i9UsfnoXTjFp4ZwJA8F8UPrMxymfDpump`
-- 13:11Z MOGMAS (MIGRATED, $82,032 mcap, $23,782 5m vol): PASS at conviction 3, PASS: chasing spike, too new, 25-copy vamp field. Blocker: "chasing spike" (5m +49%). Wait. (V1, V6)  
-  CA `4yxnt3xAdyBFFbzMWJy9sjGEoiBNkjwdSQZ8ZyULpump`
 
 ## What its skips did next (last 48h)
 A skip "ran" if the coin reached the first target (1.5x) from the skip price before a 20% drop, "dumped" if the drop came first. Sampled every 10 min, followed 6h.
-- top 10 over 25%: blocked 57, ran 10, dumped 42, flat 2, open 3 (saving losses: keep it)
+- top 10 over 25%: blocked 57, ran 11, dumped 42, flat 2, open 2 (saving losses: keep it)
   - ran: Capri up to 1.84x  
     CA `6qhnbvdJuWVUQ7EQpgz5GNraV7pty7cqc8MmfQTEpump`
   - ran: PEAKY up to 1.53x  
@@ -197,13 +197,13 @@ There's no positive after-cost edge yet. The 13 settled coins averaged -6.7% net
 Meta right now is joke-name "mog" and GTA6 coins with real flow, plus a layer of fresh launches under an hour old. The scan has MOGMAS ($84k cap, $26k 5m, 55% buys, +121% in an hour, 0.9h old) and RICO/GTA6DOG ($574k, $10.6k 5m, 70% buys, 21h old) as the two with real buyers. The older GTA6CAT/GATO ($12.4M, 37% buys, -6.5% in the hour) is the same name fading, and norms, DUO and lolcat are sub-hour spikes on thin caps, so those are snipes, not setups. Fading: PUMP (-75%), SATMINE, hush, zkSnark, and 1WIN (28% buys on a $17.6M cap). The crawler's $LAPTOP crash is a Hunter Biden political coin, so it's a pass, and its hack/binance headlines don't show up in the movers; I'm trusting the scan over the crawler's contradicting figures. Research only, not buys yet: MOGMAS on a pullback that holds buy ratio above 0.5 after a similar-tokens check for the original, and RICO after checking it isn't a vamp of GATO; holder and bundle checks run before any entry. The movers are active, so this is not a quiet market.
 
 ## Moving most in its scans, last 30 min (1h volume)
-- 1WIN: $369,249 1h vol, $17,856,901 mcap, -0% 1h  
+- 1WIN: $387,866 1h vol, $17,794,301 mcap, -1% 1h  
   CA `FjPKUGnF5zBpdEv18gT8FJCtxh3MKrFkoeYekgYr1win`
-- MOGMAS: $245,992 1h vol, $84,180 mcap, +121% 1h  
-  CA `4yxnt3xAdyBFFbzMWJy9sjGEoiBNkjwdSQZ8ZyULpump`
-- PUMP: $228,399 1h vol, $45,752 mcap, -75% 1h  
-  CA `Hxqh7Fxsz11pyqDRdEkBgP8vP44BPLPnQDrxzPYZpump`
+- GATO: $172,582 1h vol, $11,819,425 mcap, -9% 1h  
+  CA `HsprHxBRgiVaQdRf3TnKNuZZtaX9JUSPgMFdAkk6pump`
+- VANCE2028: $157,314 1h vol, $126,625 mcap, +225% 1h  
+  CA `66uCeEPjjnoeGgqBZKHE1ieWo9Uw5mufK9XaFY23pump`
 - MOMOTA: $150,047 1h vol, $134,293 mcap, +244% 1h  
   CA `CJtMhVNByRBDmtP5zEwY6JBS98w3K3LFMtzcLnuKpump`
-- GATO: $135,915 1h vol, $12,137,009 mcap, -7% 1h  
-  CA `HsprHxBRgiVaQdRf3TnKNuZZtaX9JUSPgMFdAkk6pump`
+- DESSA: $126,087 1h vol, $13,371,801 mcap, -6% 1h  
+  CA `npz2FhoufQ7pKqhGpaipYWacrAkidyW2yDpVWSvpump`
