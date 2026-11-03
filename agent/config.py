@@ -118,6 +118,13 @@ class Config:
     dip_min_attention_ratio: float = 0.5
     dip_min_peak_mcap_usd: float = 70_000.0  # only dips of coins that proved themselves (V6)
     reentry_window_hours: float = 3.0  # stopped-out coins stay on the watchlist this long
+    # Narrative and catalyst gate for bottom buys (owner rule, agent/narrative.py). A DIP,
+    # or a MIGRATED buy this far off its high, needs a rising narrative rated at least
+    # narrative_min_strength (0 = gate off), a named catalyst, and its theme's 5m volume
+    # across all its copies at least theme_min_pace x the theme's hourly average (0 = off).
+    narrative_min_strength: float = 7.0
+    theme_min_pace: float = 1.0
+    pullback_min_drawdown_pct: float = 20.0
 
     # --- Entry freshness ----------------------------------------------------
     # The brain takes a minute or more to decide, and a scan researches several coins in a
@@ -310,4 +317,8 @@ STEERABLE: dict[str, tuple[float, float]] = {
     "probe_max_risk_pct": (0, 5),  # 0 = no probes
     "conviction_risk_scale": (0.25, 3),
     "min_entry_usd": (0, 50),  # 0 = off
+    # The owner's narrative and catalyst gate for bottom buys: Trencher can't loosen it.
+    "narrative_min_strength": (0, 10),  # 0 = gate off
+    "theme_min_pace": (0, 3),  # 0 = no theme volume check
+    "pullback_min_drawdown_pct": (5, 40),
 }

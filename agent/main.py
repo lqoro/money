@@ -12,7 +12,7 @@ import threading
 import time
 from collections import deque
 
-from . import data, journal, radar, skips
+from . import data, journal, narrative, radar, skips
 from .api import start_api
 from .brain import Brain
 from .bridge import DuetBridge
@@ -193,12 +193,26 @@ class Agent:
         snap["buzz"] = radar.token_buzz(snap, self.meta)
         report = data.rugcheck_report(snap["address"])
         same = data.search_same_name(snap["symbol"]) if snap["symbol"] else []
+        snap["theme"] = narrative.theme_flow(snap, self.theme_peers(snap, same))
         check = run_checklist(snap, report, same, cfg, sol)
         # Only crawl the project's site once it clears the hard lines (it's slow).
         if check.passed or always_crawl:
             snap["web"] = project_report(snap, cfg)
             check = run_checklist(snap, report, same, cfg, sol)
         return check
+
+    def theme_peers(self, snap: dict, same_ticker_pairs: list[dict]) -> list[dict]:
+        """Other coins to measure this one's theme against: everything scanned in the last
+        30 minutes, plus the same-ticker pairs the vamp check already fetched."""
+        peers = [s for a, s in self.seen_snaps.items() if a != snap["address"]]
+        for pair in same_ticker_pairs:
+            try:
+                other = data.pair_snapshot(pair)
+            except (KeyError, TypeError, ValueError):
+                continue
+            if other.get("address") != snap["address"]:
+                peers.append(other)
+        return peers
 
     def inspect_token(self, address: str) -> dict | None:
         """Full crawl + checklist on any token, for the CLI and the API. No Claude call."""
@@ -294,6 +308,13 @@ class Agent:
         decision = self.brain.decide(snap, check, self.portfolio_view(), guide,
                                      history=self.watchlist.get(addr), radar_view=radar.public_view(self.meta))
         log.info("  ◆ %-10s %s", snap["symbol"], decision.get("verdict"))
+        blocked = narrative.gate(decision, check.setup, snap, cfg)
+        if blocked:
+            # Owner rule: a bottom buy needs a rising narrative, a named catalyst and a theme
+            # keeping pace. The brain said BUY without all three, so it's a PASS.
+            log.info("    %s", blocked)
+            decision = {**decision, "action": "PASS", "brain_verdict": decision.get("verdict"),
+                        "verdict": f"PASS: {blocked}"}
         plan = sanitize_exit_plan(decision.get("exit_plan"), cfg)
         conviction = int(decision.get("conviction") or 0)
         first_target = first_target_multiple(plan, snap["mcap_usd"])

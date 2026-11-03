@@ -45,6 +45,16 @@ every 5    Claude studies its results ──► rewrites learned rules + retunes
    its learned rules and recent lessons, the wallet, and the token dossier. It
    can search the web for scam accusations, the project's X and the current meta
    (V13), then answers BUY or PASS with a conviction score, thesis and exit plan as JSON.
+   **Narrative gate for bottom buys** (`agent/narrative.py`, owner rule): a DIP, or a
+   MIGRATED buy 20%+ off its high, only goes through if the brain rates the narrative
+   *rising* at 7/10 or more, names a specific catalyst it found (fresh news, a listing,
+   a dated event, a big account posting; "buyers stepping in" isn't one), and the
+   theme's 5m volume summed across all its copies (coins scanned in the last 30 min
+   plus same-ticker pairs) keeps at least 1.0x the theme's hourly pace. Otherwise
+   it's a PASS, filed in the skip review as "narrative gate (owner rule)". The
+   owner tunes it through `steer.json` (`narrative_min_strength`, 0 = off;
+   `theme_min_pace`, 0 = no theme check; `pullback_min_drawdown_pct`); Trencher
+   can't. With the rules-only brain there's no narrative read, so no bottom buys.
 5. **Sizing** (`agent/sizing.py`): no fixed bet size. Only risk what you're
    willing to lose (V8): Claude's conviction (1–10, from its due diligence) sets
    how much of equity it's willing to lose if the stop hits, and the stop
