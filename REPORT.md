@@ -1,6 +1,6 @@
 # Trencher live report
 
-Updated 2026-11-03T04:19:31Z (paper trading, never real money)
+Updated 2026-11-03T04:19:35Z (paper trading, never real money)
 
 - Equity: $74.23 (-25.8% vs $100 start)
 - Goal: $1,000 by 2026-11-05 05:03Z (pressing for it): at 7.4% of it, 2 days left, needs +260% a day from here
@@ -74,39 +74,13 @@ Updated 2026-11-03T04:19:31Z (paper trading, never real money)
   CA `H4gHnZ3NCU7Z9XQwGX6YYJNyieGEW8pqwGRUcdSxpump`
 
 ## Last scan
-- 04:18Z: 7 coins, 7 with pairs, 1 passed the market filters, 1 researched
+- no scan yet since the last restart
 
 ## Coins it looked at, and why it passed
-- 04:18Z METEORITE (MIGRATED, $113,340 mcap, $20,028 5m vol): PASS at conviction 3, PASS. It's 20 minutes old, 19% off the high with sellers in control, and it's an AI tool with no GitHub. Not a breakout, not a base. Blocker: "no breakout" / "too new" (V1, V6).  
-  CA `67RBmGztx8ciVyWr8yi6R8fwrc3EG86XejYT7mespump`
-- 04:14Z WASTED (DIP, $973,768 mcap, $2,037 5m vol): REJECT, Dev holds 3.5% (>1%) (V13, V17)  
-  CA `GexThZHgaswpAQ7Fi8QrHFubjPimUNSYhJiAA7XZpump`
-- 04:10Z 1WIN (MIGRATED, $20,027,585 mcap, $5,628 5m vol): REJECT, RugCheck danger: Freeze Authority still enabled  
-  CA `FjPKUGnF5zBpdEv18gT8FJCtxh3MKrFkoeYekgYr1win`
-- 04:09Z SPHERE (MIGRATED, $1,213,563 mcap, $5,982 5m vol): PASS at conviction 3, PASS: $1.2M cap, flow at 0.68x pace and falling, and the high is only 1.36x away. Big cap, no room. (V1, V6)  
-  CA `31SYoqWFhx3i9UsfnoXTjFp4ZwJA8F8UPrMxymfDpump`
-- 04:09Z SMUGLY (MIGRATED, $478,663 mcap, $14,412 5m vol): PASS at conviction 4, PASS: SMUGLY is the original and its holders are clean, but it sits 24% under the high with a 50/50 tape. Price is about 15% above its higher low and the prior high is only 1.32x away. That's a mid-range entry, not a breakout. Blocker: "no breakout / mid-range" (V1, V6).  
-  CA `DayjoyjxCA2SVTApEW7oBFG3WMvrYZRMjAnqsetLpump`
-- 04:08Z MEM (MIGRATED, $102,546 mcap, $16,994 5m vol): PASS at conviction 2, PASS — 5m flow is 0.41x pace and sellers outnumber buyers, on a 55-min-old coin borrowing a 2013 coin's ticker and story. Flow below pace, vamp, too new (V1, V3, V6).  
-  CA `8UdrZzuCPbZAY2tiSErRED2KUrggJaRxEsHrzgWLpump`
-- 04:03Z SPHERE (MIGRATED, $1,256,594 mcap, $6,350 5m vol): SKIP, passed the checklist, but the brain was paced or paused  
-  CA `31SYoqWFhx3i9UsfnoXTjFp4ZwJA8F8UPrMxymfDpump`
-- 04:03Z SMUGLY (MIGRATED, $490,607 mcap, $10,257 5m vol): SKIP, passed the checklist, but the brain was paced or paused  
-  CA `DayjoyjxCA2SVTApEW7oBFG3WMvrYZRMjAnqsetLpump`
-- 04:03Z MEM (MIGRATED, $92,638 mcap, $10,149 5m vol): SKIP, passed the checklist, but the brain was paced or paused  
-  CA `8UdrZzuCPbZAY2tiSErRED2KUrggJaRxEsHrzgWLpump`
-- 03:57Z SPHERE (MIGRATED, $1,194,757 mcap, $6,122 5m vol): SKIP, passed the checklist, but the brain was paced or paused  
-  CA `31SYoqWFhx3i9UsfnoXTjFp4ZwJA8F8UPrMxymfDpump`
+- none since the last restart
 
 ## What its skips did next (last 48h)
 A skip "ran" if the coin reached the first target (1.5x) from the skip price before a 20% drop, "dumped" if the drop came first. Sampled every 10 min, followed 6h.
-- too new / sniping: blocked 54, ran 9, dumped 43, flat 0, open 2 (saving losses: keep it)
-  - ran: paws up to 1.51x  
-    CA `CCF6ui6YjjhLaVtuYLH8b5jza8jHathqww5VbrMapump`
-  - ran: VETOTRUMP up to 1.66x  
-    CA `6g16UK4wHoFhC7PCmw8LYYCdt9q8m99fyoAwxeCrpump`
-  - ran: Anakinius up to 1.93x  
-    CA `2pKpMwUQXNZeAf93LoomnZSworH3ezFzweCiuvrppump`
 - top 10 over 25%: blocked 53, ran 7, dumped 42, flat 2, open 2 (saving losses: keep it)
   - ran: TIPPER up to 1.55x  
     CA `3DEcz7AnmJiGSnDHYvUeX5uPMMHVcDwqrWRSGdHEpump`
@@ -114,6 +88,13 @@ A skip "ran" if the coin reached the first target (1.5x) from the skip price bef
     CA `6qhnbvdJuWVUQ7EQpgz5GNraV7pty7cqc8MmfQTEpump`
   - ran: PEAKY up to 1.53x  
     CA `2EQxezWgXPRU6V3UD7DKr5m12mxqeFGPWNRx9wbqy9fC`
+- too new / sniping: blocked 53, ran 9, dumped 43, flat 0, open 1 (saving losses: keep it)
+  - ran: paws up to 1.51x  
+    CA `CCF6ui6YjjhLaVtuYLH8b5jza8jHathqww5VbrMapump`
+  - ran: VETOTRUMP up to 1.66x  
+    CA `6g16UK4wHoFhC7PCmw8LYYCdt9q8m99fyoAwxeCrpump`
+  - ran: Anakinius up to 1.93x  
+    CA `2pKpMwUQXNZeAf93LoomnZSworH3ezFzweCiuvrppump`
 - near the high / chasing: blocked 42, ran 2, dumped 37, flat 3, open 0 (saving losses: keep it)
   - ran: BLUE up to 1.53x  
     CA `CPoGSmcjprCvzA2MFYLJMpQkGjmgVzKg4RVwMdrzpump`
@@ -187,11 +168,11 @@ The meta is memes about memecoins, on fresh pumpswap graduates under 2.5 hours o
 ## Moving most in its scans, last 30 min (1h volume)
 - MEM: $504,222 1h vol, $110,134 mcap, +151% 1h  
   CA `8UdrZzuCPbZAY2tiSErRED2KUrggJaRxEsHrzgWLpump`
-- METEORITE: $172,246 1h vol, $113,340 mcap, +197% 1h  
-  CA `67RBmGztx8ciVyWr8yi6R8fwrc3EG86XejYT7mespump`
+- MAGACREW: $292,201 1h vol, $1,853 mcap, -99% 1h  
+  CA `9LAu2WFQGV2FDSoa36S25LMmQSg5E2yUPT33j519pump`
 - SMUGLY: $169,044 1h vol, $478,663 mcap, +19% 1h  
   CA `DayjoyjxCA2SVTApEW7oBFG3WMvrYZRMjAnqsetLpump`
-- MAGACREW: $141,187 1h vol, $1,854 mcap, -99% 1h  
-  CA `9LAu2WFQGV2FDSoa36S25LMmQSg5E2yUPT33j519pump`
 - SPHERE: $104,561 1h vol, $1,246,045 mcap, -4% 1h  
   CA `31SYoqWFhx3i9UsfnoXTjFp4ZwJA8F8UPrMxymfDpump`
+- SLUDGE: $92,204 1h vol, $3,765 mcap, -91% 1h  
+  CA `9qF5ryRTnFn9NwL1MQNeZpqeR9HMZZxzJym1xdLHpump`
