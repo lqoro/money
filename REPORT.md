@@ -1,13 +1,13 @@
 # Trencher live report
 
-Updated 2026-11-03T10:25:14Z (paper trading, never real money)
+Updated 2026-11-03T10:40:25Z (paper trading, never real money)
 
 - Equity: $74.23 (-25.8% vs $100 start)
 - Closed trades: 22, 3 wins
 - Fees paid: $14.78 (axiom $2.81, network $9.18, pool $2.66), plus $4.15 lost to slippage
 - New trades: WATCH-ONLY (scans and decides, buys nothing)
-- Brain: subscription, claude-haiku-5-5 for routine calls, claude-opus-5-5 for the daily review; 444 routine calls and 1 plan-limit hits in 48h
-- Watch log: 68 coins being followed, 0 filed, 0 would-buys (6h follow, sampled every 2 min)
+- Brain: subscription, claude-haiku-5-5 for routine calls, claude-opus-5-5 for the daily review; 446 routine calls and 1 plan-limit hits in 48h
+- Watch log: 73 coins being followed, 0 filed, 0 would-buys (6h follow, sampled every 2 min)
 
 ## Scorecard (after fees)
 - 22 closed, 3 won (14%), net $-25.79
@@ -73,9 +73,19 @@ Updated 2026-11-03T10:25:14Z (paper trading, never real money)
   CA `H4gHnZ3NCU7Z9XQwGX6YYJNyieGEW8pqwGRUcdSxpump`
 
 ## Last scan
-- 10:24Z: 5 coins, 5 with pairs, 0 passed the market filters, 0 researched
+- 10:39Z: 4 coins, 4 with pairs, 0 passed the market filters, 0 researched
 
 ## Coins it looked at, and why it passed
+- 10:33Z OMBRO (MIGRATED, $221,403 mcap, $9,846 5m vol): PASS at conviction 3, PASS: OMBRO is a clean-holder MIGRATED leader, but flow is at 0.43x its hourly pace, no higher low has printed, and there's no bottom-buy catalyst. Blocker: flow below pace. (V1, V6)  
+  CA `8DB8Fw5UiC1AzugQAfRyw3qL8omw772LJbdehNWhpump`
+- 10:30Z DESSA (DIP, $14,876,289 mcap, $3,072 5m vol): REJECT, Dip with fading attention is a falling knife, not a dip (5m at 0.59x the hour's pace, under 0.6x)  
+  CA `npz2FhoufQ7pKqhGpaipYWacrAkidyW2yDpVWSvpump`
+- 10:29Z zANT (FINAL_STRETCH, $28,990 mcap, $69,146 5m vol): PASS at conviction 3, PASS: zANT is 258% up in 5 minutes, 12% off a fresh 33k peak, inside a 17-copy vamp field with no story behind it. Chasing a spike with copycat churn. (V1, V6, V13)  
+  CA `81D4ws8vvEs37Tv4TvjWaUXv7kJn98BGdaK59d8Apump`
+- 10:28Z ABDUL (MIGRATED, $123,028 mcap, $21,392 5m vol): REJECT, Bundles: 10 linked wallet cluster(s) hold 33.8% of supply (>20%) (V17)  
+  CA `94exwLui2KfAzYnbATkX8iKh4tcjMDW6YwckkSJVpump`
+- 10:27Z MENTIONS (FINAL_STRETCH, $25,106 mcap, $3,040 5m vol): PASS at conviction 3, PASS. Blocker: chasing spike. It's 0.8% off a +574% hour, 5m flow is 0.49x pace, and the "mentions" theme is at 0.04x across 9 coins. Dead story, no catalyst. (V1, V6)  
+  CA `BJUFxaSPF5S1K9rPayANzWQNjqkCjq3yWheKrMxdpump`
 - 10:18Z Slingoor (MIGRATED, $118,265 mcap, $6,321 5m vol): REJECT, Top 10 hold 26.4% ex-pool (>25%) (V13)  
   CA `9rZR9nCQbaiBvotWVpifN8z1vckVFshnsATuAJrXpump`
 - 10:13Z UNPOOLED (MIGRATED, $70,385 mcap, $5,132 5m vol): PASS at conviction 3, PASS: no printed higher low, 47% buy share, and a theme that's dumping with no catalyst. The site is 7 hours old and doesn't show this CA. (V1, V6, V13)  
@@ -86,20 +96,10 @@ Updated 2026-11-03T10:25:14Z (paper trading, never real money)
   CA `3imKAhTuUakBCGK1aXxihc13Qe5prGzQb7eWMn1gpump`
 - 10:03Z MAMESUKE (DIP, $1,124,930 mcap, $3,394 5m vol): REJECT, Bundles: 5 linked wallet cluster(s) hold 66.3% of supply (>20%) (V17)  
   CA `SCGBBnSwnekytGFHgyeHHxPMiN7xDxsWFGg9JgFSTNK`
-- 09:48Z GENESIS (MIGRATED, $56,222 mcap, $21,982 5m vol): PASS at conviction 3, PASS: chasing spike, too new, target too close. GENESIS is one of 12 copies of a generic word with no radar mention, and its first resistance is only 1.14x away. (V1, V6, V13)  
-  CA `9W7Dyv9CV9UhwKfW9gCuYoPncAY8M3EScLiD8ZHemDAr`
-- 09:47Z OMBRO (MIGRATED, $224,629 mcap, $25,233 5m vol): PASS at conviction 3, PASS: OMBRO is the cleanest holder table I've seen this hour, but its 5m flow is 0.67x pace and nothing is bottoming. Blocker: "flow below pace," plus "bottom buy, no catalyst." (V1, V6)  
-  CA `8DB8Fw5UiC1AzugQAfRyw3qL8omw772LJbdehNWhpump`
-- 09:42Z LIFEVAL (MIGRATED, $95,522 mcap, $18,627 5m vol): REJECT, Bundles: 10 linked wallet cluster(s) hold 100.0% of supply (>20%) (V17)  
-  CA `Bmn5qFwQHxteaoM1et9FLdHsi52DmuXZyzWinih8pump`
-- 09:42Z ABDUL (MIGRATED, $141,894 mcap, $22,735 5m vol): PASS at conviction 3, PASS: chasing spike. ABDUL is up 37% on its last 5m candle, 10.8% off a peak printed 12 minutes ago, with no higher low yet. Wait for the retrace (V1, V6).  
-  CA `94exwLui2KfAzYnbATkX8iKh4tcjMDW6YwckkSJVpump`
-- 09:34Z DESSA (DIP, $14,049,001 mcap, $2,682 5m vol): REJECT, Dip with fading attention is a falling knife, not a dip (5m at 0.46x the hour's pace, under 0.6x)  
-  CA `npz2FhoufQ7pKqhGpaipYWacrAkidyW2yDpVWSvpump`
 
 ## What its skips did next (last 48h)
 A skip "ran" if the coin reached the first target (1.5x) from the skip price before a 20% drop, "dumped" if the drop came first. Sampled every 10 min, followed 6h.
-- top 10 over 25%: blocked 55, ran 10, dumped 40, flat 3, open 2 (saving losses: keep it)
+- top 10 over 25%: blocked 55, ran 10, dumped 41, flat 3, open 1 (saving losses: keep it)
   - ran: TIPPER up to 1.55x  
     CA `3DEcz7AnmJiGSnDHYvUeX5uPMMHVcDwqrWRSGdHEpump`
   - ran: Capri up to 1.84x  
@@ -113,12 +113,12 @@ A skip "ran" if the coin reached the first target (1.5x) from the skip price bef
     CA `2pKpMwUQXNZeAf93LoomnZSworH3ezFzweCiuvrppump`
   - ran: CLIPPED up to 1.65x  
     CA `Bxyp4L6EbDys4fo51qxMEQTx41sj6McnsbPZTdvipump`
-- near the high / chasing: blocked 38, ran 2, dumped 32, flat 3, open 1 (saving losses: keep it)
+- near the high / chasing: blocked 38, ran 2, dumped 31, flat 3, open 2 (saving losses: keep it)
   - ran: BLUE up to 1.53x  
     CA `CPoGSmcjprCvzA2MFYLJMpQkGjmgVzKg4RVwMdrzpump`
   - ran: PIRATE up to 2.27x  
     CA `gzQXRwGRzfKLHfaV1f84QT7e5mt4vevu7MgacEfpump`
-- flow below pace: blocked 31, ran 7, dumped 19, flat 1, open 4 (saving losses: keep it)
+- flow below pace: blocked 32, ran 8, dumped 20, flat 1, open 3 (saving losses: keep it)
   - ran: Ahsoka up to 1.54x  
     CA `4nuj5NLHMtQSezfmz6CwBpCRJisFie6F6MxNNz1dpump`
   - ran: KOROSUKE up to 1.54x  
@@ -139,7 +139,7 @@ A skip "ran" if the coin reached the first target (1.5x) from the skip price bef
     CA `6g16UK4wHoFhC7PCmw8LYYCdt9q8m99fyoAwxeCrpump`
   - ran: STEALTH up to 1.77x  
     CA `GoDSW31bTxfkoup9yA1qcGGx9RMXdTEWgApv3xzBmoA`
-- bundles over the line: blocked 19, ran 2, dumped 14, flat 2, open 1 (saving losses: keep it)
+- bundles over the line: blocked 20, ran 2, dumped 14, flat 2, open 2 (saving losses: keep it)
   - ran: Nuts up to 1.53x  
     CA `APH9FRoKst66E4a7uZXcEfE8NjtwybUC8Jq7ue8upump`
   - ran: NA up to 1.97x  
@@ -154,9 +154,7 @@ A skip "ran" if the coin reached the first target (1.5x) from the skip price bef
     CA `8kuQg3WivDtL85VEdw2jEmSXjYt6EEeYBATJ4DtQpump`
   - ran: KIDS up to 1.73x  
     CA `7uwr9Zoz8WW9UyRVC22nmmAXRbPoFTUpVjsN8q7kids`
-- dev share over 1%: blocked 12, ran 3, dumped 5, flat 3, open 1 (mixed)
-  - ran: MINTED up to 1.61x  
-    CA `9yEKBwczdqoox7Red6GGPTrJ2dUbMvFUagdjxFqHpump`
+- dev share over 1%: blocked 11, ran 2, dumped 5, flat 3, open 1 (saving losses: keep it)
   - ran: DOJAK up to 2.62x  
     CA `E5aeDjgq6ZSzAmihKoh9JPEhwK2bMCbZLJf6LYT9pump`
   - ran: Firecube up to 1.88x  
@@ -188,13 +186,13 @@ A skip "ran" if the coin reached the first target (1.5x) from the skip price bef
 Meta: the volume is in pump.fun launches under an hour old with joke and meta-commentary names (MENTIONS +379% at $17.8k cap, Stonkero.fun, Terminal of Truths, Nori, Cooked), but most sit under the $10k 5m bar, so they're New Pairs and out of scope for me. The second theme is fresh coins already past migration with real flow: 김여정 "Crypto Final Boss" ($75.6k cap, $60k 5m, 0.67 buy ratio, +97% 1h, pumpswap, 0.2h old). Fading: old names on thin 5m volume (GATO/GTA6CAT at 1,678h, WASTED, MAMESUKE, DESSA). Politics dominates the headlines (LAPTOP crash, Trump, Hunter Biden), but none of it is in the movers, so I treat it as background, not a setup. Only setup to research: Crypto Final Boss under MIGRATED rules (V1, V6). Its name is a real politician's name (Kim Yo-jong), so check for political pushing before anything else, and don't chase the +97% spike; wait for a pullback that holds buy ratio above 0.5, check similar tokens for an original, and check holders and bundles. Conviction is 4 for now, so this is a research-only pass, not a buy. Not in this scan, so ignored: OMBRO, PUPER, peach, PRESSURE, and Donkey. Also, the crawler's UNPOOLED -55% doesn't match the scan (+13% 1h), so I'm not using it.
 
 ## Moving most in its scans, last 30 min (1h volume)
-- 1WIN: $112,499 1h vol, $16,487,635 mcap, +0% 1h  
+- ABDUL: $404,218 1h vol, $123,028 mcap, +54% 1h  
+  CA `94exwLui2KfAzYnbATkX8iKh4tcjMDW6YwckkSJVpump`
+- OMBRO: $273,553 1h vol, $221,403 mcap, +8% 1h  
+  CA `8DB8Fw5UiC1AzugQAfRyw3qL8omw772LJbdehNWhpump`
+- GENESIS: $159,801 1h vol, $16,428 mcap, -57% 1h  
+  CA `9W7Dyv9CV9UhwKfW9gCuYoPncAY8M3EScLiD8ZHemDAr`
+- 1WIN: $116,553 1h vol, $16,842,504 mcap, +1% 1h  
   CA `FjPKUGnF5zBpdEv18gT8FJCtxh3MKrFkoeYekgYr1win`
-- 김여정: $100,772 1h vol, $75,574 mcap, +97% 1h  
-  CA `3imKAhTuUakBCGK1aXxihc13Qe5prGzQb7eWMn1gpump`
-- SPHERE: $73,680 1h vol, $721,236 mcap, +0% 1h  
-  CA `31SYoqWFhx3i9UsfnoXTjFp4ZwJA8F8UPrMxymfDpump`
-- Slingoor: $72,886 1h vol, $116,584 mcap, +2% 1h  
-  CA `9rZR9nCQbaiBvotWVpifN8z1vckVFshnsATuAJrXpump`
-- GATO: $68,636 1h vol, $13,299,523 mcap, +3% 1h  
-  CA `HsprHxBRgiVaQdRf3TnKNuZZtaX9JUSPgMFdAkk6pump`
+- zANT: $95,112 1h vol, $28,659 mcap, +772% 1h  
+  CA `81D4ws8vvEs37Tv4TvjWaUXv7kJn98BGdaK59d8Apump`
