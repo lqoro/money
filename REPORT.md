@@ -1,13 +1,13 @@
 # Trencher live report
 
-Updated 2026-11-04T09:38:40Z (paper trading, never real money)
+Updated 2026-11-04T09:53:46Z (paper trading, never real money)
 
 - Equity: $74.23 (-25.8% vs $100 start)
 - Closed trades: 22, 3 wins
 - Fees paid: $14.78 (axiom $2.81, network $9.18, pool $2.66), plus $4.15 lost to slippage
 - New trades: WATCH-ONLY (scans and decides, buys nothing)
-- Brain: subscription, claude-haiku-5-5 for routine calls, claude-opus-5-5 for the daily review; 472 routine calls and 1 plan-limit hits in 48h
-- Watch log: 106 coins being followed, 393 filed, 0 would-buys (6h follow, sampled every 2 min)
+- Brain: subscription, claude-haiku-5-5 for routine calls, claude-opus-5-5 for the daily review; 471 routine calls and 1 plan-limit hits in 48h
+- Watch log: 108 coins being followed, 396 filed, 0 would-buys (6h follow, sampled every 2 min)
 
 ## Scorecard (after fees)
 - 22 closed, 3 won (14%), net $-25.79
@@ -73,9 +73,19 @@ Updated 2026-11-04T09:38:40Z (paper trading, never real money)
   CA `H4gHnZ3NCU7Z9XQwGX6YYJNyieGEW8pqwGRUcdSxpump`
 
 ## Last scan
-- 09:37Z: 11 coins, 10 with pairs, 1 passed the market filters, 1 researched
+- 09:52Z: 5 coins, 4 with pairs, 0 passed the market filters, 0 researched
 
 ## Coins it looked at, and why it passed
+- 09:51Z ANONVOYAGE (MIGRATED, $485,554 mcap, $5,749 5m vol): REJECT, Bundles: 10 linked wallet cluster(s) hold 50.3% of supply (>20%) (V17)  
+  CA `8muc9DdhqWfAPcvmEebNQCG89bLiwi12T2KtBtzVpump`
+- 09:51Z MEOWNERO (MIGRATED, $215,219 mcap, $2,319 5m vol): PASS at conviction 2, PASS. MEOWNERO has no story, no X, no site, and its price history is broken, so I can't read the money shape. Blocker: "dead story" plus "no higher low". (V1, V6, V13)  
+  CA `6gnB2H2hbTVvKUWCzNuqjWY8Rod6EVBmfHi7YxZpTWa7`
+- 09:48Z X (MIGRATED, $31,209 mcap, $4,328 5m vol): PASS at conviction 2, PASS. Blocker: "no narrative". A single-word name with no meta, down 82% from a $177k peak two hours ago, and no catalyst. (V1, V13)  
+  CA `FQE9h4fL65oDHMsR2MHcSe6d6DF4hFrFarsQQkVJpump`
+- 09:46Z CHATBLT (MIGRATED, $81,826 mcap, $12,737 5m vol): REJECT, Bundles: 10 linked wallet cluster(s) hold 100.0% of supply (>20%) (V17)  
+  CA `BM1Q9KfjgVoERj1eipkPqueMvhz1kfkUfE835ZjJpump`
+- 09:43Z APU (FINAL_STRETCH, $19,390 mcap, $3,089 5m vol): REJECT, Top 10 hold 25.6% ex-pool (>25%) (V13)  
+  CA `8wzq9hZD5LZ969Q5mttHkJh4ZFNrVb1tmowdp7Yspump`
 - 09:38Z AMD (DIP, $1,348,659 mcap, $6,378 5m vol): PASS at conviction 3, PASS. Mid-range dip with a 12% bundle on one wallet cluster. Blocker: "mid-range" and "bundles over the line" (V3, V17).  
   CA `DDmGnuvroxVrb7CSyjYcezFU8gnAfhKasg4ZZezmpump`
 - 09:33Z VI (MIGRATED, $844,214 mcap, $7,421 5m vol): PASS at conviction 3, PASS: within 8% of the $916k high, and the chart is chasing a bounce. Blocker: "chasing." (V1, V6)  
@@ -86,27 +96,17 @@ Updated 2026-11-04T09:38:40Z (paper trading, never real money)
   CA `4BCbx4hB1XPmC5mLHsFyHEghC5fb9Afu7THLGXiHpump`
 - 09:18Z Doge (FINAL_STRETCH, $32,739 mcap, $21,434 5m vol): PASS at conviction 2, PASS. Doge party is up 629% in an hour, 12 minutes old, and its last 5m candle is +94%. That's a spike, not a pullback, and it sits in the $33k zone where most new pairs die (V1, V6).  
   CA `9CRbVZxQshb9dMkh3yGvyARJRAHMGVuxiQRGhUsppump`
-- 09:14Z POOLS (MIGRATED, $53,446 mcap, $29,790 5m vol): PASS at conviction 2, PASS: POOLS sits 9% off a 37-minute-old peak after a -27% 5m candle, inside a 17-copy same-name field with a 6.3% bundle cluster. Blocker: chasing / split crowd / no higher low.  
-  CA `Fu9n4TS5QkEKzMW66djz6T6fUspAbTuYsb7gcHSApump`
-- 09:06Z ANONVOYAGE (MIGRATED, $481,593 mcap, $5,256 5m vol): REJECT, Bundles: 10 linked wallet cluster(s) hold 50.3% of supply (>20%) (V17)  
-  CA `8muc9DdhqWfAPcvmEebNQCG89bLiwi12T2KtBtzVpump`
-- 09:01Z CHATBLT (MIGRATED, $75,637 mcap, $4,407 5m vol): REJECT, Bundles: 10 linked wallet cluster(s) hold 100.0% of supply (>20%) (V17)  
-  CA `BM1Q9KfjgVoERj1eipkPqueMvhz1kfkUfE835ZjJpump`
-- 08:54Z PayIF (FINAL_STRETCH, $19,551 mcap, $2,946 5m vol): PASS at conviction 3, PASS: chasing spike. Up 623% in an hour, last 5m candle +53%, and it's a payments pitch with no meme and no crowd (V1, V6).  
-  CA `FfuBMS3rh9M61apXJDs14yAngVnYLWR7xkcX5FxMpump`
-- 08:52Z AMD (DIP, $1,161,314 mcap, $5,361 5m vol): REJECT, Dip with fading attention is a falling knife, not a dip (5m at 0.59x the hour's pace, under 0.6x)  
-  CA `DDmGnuvroxVrb7CSyjYcezFU8gnAfhKasg4ZZezmpump`
 
 ## What its skips did next (last 48h)
 A skip "ran" if the coin reached the first target (1.5x) from the skip price before a 20% drop, "dumped" if the drop came first. Sampled every 10 min, followed 6h.
-- too new / sniping: blocked 67, ran 14, dumped 53, flat 0, open 0 (saving losses: keep it)
+- too new / sniping: blocked 66, ran 14, dumped 52, flat 0, open 0 (saving losses: keep it)
   - ran: CLIPPED up to 1.65x  
     CA `Bxyp4L6EbDys4fo51qxMEQTx41sj6McnsbPZTdvipump`
   - ran: Marutaro up to 1.62x  
     CA `At3jYPUKVEFYrss5a58myVuqKLjGxMuBP5MwqMk9pump`
   - ran: MameStonk up to 1.67x  
     CA `57eJSmN1ecANrnZjGPrXzWUMyGhQsQgMS9eHdxM3pump`
-- top 10 over 25%: blocked 62, ran 10, dumped 49, flat 3, open 0 (saving losses: keep it)
+- top 10 over 25%: blocked 63, ran 10, dumped 49, flat 3, open 1 (saving losses: keep it)
   - ran: GODHOUSE up to 3.19x  
     CA `CSGTuLtWhCfGZ5S5TvASQ6a5su91NCfRpNqfPczfpump`
   - ran: KYBER up to 1.83x  
@@ -134,7 +134,7 @@ A skip "ran" if the coin reached the first target (1.5x) from the skip price bef
     CA `G6F6SYSUAUxsnKLyeRW29hE5A4BGCbw91x7HMPySpump`
   - ran: Wanted up to 1.53x  
     CA `8oUGdPdyxVaCSJSZpcVZuxqoyiZAmc2Z22FsDRZ3pump`
-- falling knife (code): blocked 27, ran 2, dumped 22, flat 1, open 2 (saving losses: keep it)
+- falling knife (code): blocked 26, ran 2, dumped 21, flat 1, open 2 (saving losses: keep it)
   - ran: YES up to 1.71x  
     CA `B7Cj19ke2F8S6fazbBvGMxHYNNMYuDaAn3Sn2Zikpump`
   - ran: RATIO up to 1.51x  
@@ -149,10 +149,10 @@ A skip "ran" if the coin reached the first target (1.5x) from the skip price bef
     CA `9gKArqT6qp3goHfuwAnfG7LioqwUtJ8TFu7P1Bhbpump`
   - ran: TTPRO up to 1.71x  
     CA `FrSrp9P3bgiFHwr6h5PQHVh55iC8Dae4eZCKPUo9pump`
-- falling knife / no higher low: blocked 15, ran 1, dumped 10, flat 4, open 0 (saving losses: keep it)
+- falling knife / no higher low: blocked 16, ran 1, dumped 10, flat 4, open 1 (saving losses: keep it)
   - ran: HEDGE up to 1.77x  
     CA `wDSAqt4tEZpDAwB9XY6ejkZvMFuT1zUMjUh67txeYhf`
-- other: blocked 12, ran 6, dumped 5, flat 1, open 0 (cost more winners than it saved: loosen it)
+- other: blocked 12, ran 6, dumped 4, flat 1, open 1 (cost more winners than it saved: loosen it)
   - ran: thisman up to 1.6x  
     CA `6d6J2kWJiimgqmxjLVTu31hxDyBFt2zBguYdjSripump`
   - ran: FEAR up to 125.22x  
@@ -199,13 +199,13 @@ There's no positive after-cost edge yet. The 13 settled coins averaged -6.7% net
 The meta is fresh pump.fun launches pumping on 5m volume (space inu, POOLS, Transinu, Twitter): 0.3 to 1h old, +300% to +700% on the hour, and this is the highest-risk lane where bundles and dumps live (V1, V13). A second theme is dog and animal names at bigger caps, Vice Inu ($864k, +103%), A Meme Dog ($1.16M, -11%) and CHILLCATS ($177k, 71% buys, -35% off its hour high), which look like slower, cleaner trades than the launches. Space names are cooling: icapy is -95%, RAM is -90%, and the second space inu sits at 17% buys, a copy under the original (V1 vamp). Trump-named DJT is in the movers, and I pass on political-named coins (V13). Setups to research: Transinu (migrated, $162k, $18k on 5m, but only 47% buys, so it needs a pullback with buyers back above 50%) and CHILLCATS as a DIP, if its 5m volume holds and buyers keep stepping in. I won't chase the 0.3 to 0.5h launches. I used scan_movers numbers; the crawler's Transinu and CHILLCATS figures don't match them.
 
 ## Moving most in its scans, last 30 min (1h volume)
-- POOLS: $332,564 1h vol, $58,678 mcap, +29% 1h  
-  CA `Fu9n4TS5QkEKzMW66djz6T6fUspAbTuYsb7gcHSApump`
-- CHILLCATS: $166,045 1h vol, $165,991 mcap, +18% 1h  
-  CA `4BCbx4hB1XPmC5mLHsFyHEghC5fb9Afu7THLGXiHpump`
+- CHATBLT: $91,695 1h vol, $77,900 mcap, -9% 1h  
+  CA `BM1Q9KfjgVoERj1eipkPqueMvhz1kfkUfE835ZjJpump`
 - VI: $81,200 1h vol, $856,292 mcap, +45% 1h  
   CA `FpWWSqLNrjTTMDM41EXkvBmHBDkNdWrf9RwHL57xpump`
-- APU: $70,933 1h vol, $15,843 mcap, +325% 1h  
+- APU: $75,858 1h vol, $19,882 mcap, +434% 1h  
   CA `8wzq9hZD5LZ969Q5mttHkJh4ZFNrVb1tmowdp7Yspump`
-- Doge: $69,639 1h vol, $36,154 mcap, +705% 1h  
-  CA `9CRbVZxQshb9dMkh3yGvyARJRAHMGVuxiQRGhUsppump`
+- ANONVOYAGE: $68,756 1h vol, $485,554 mcap, +1% 1h  
+  CA `8muc9DdhqWfAPcvmEebNQCG89bLiwi12T2KtBtzVpump`
+- Dacity: $68,587 1h vol, $7,313,884 mcap, -3% 1h  
+  CA `nxPqZ4F7ux8Vph5NFu25rEP6Kx9Gr1U6Fmj36Rjpump`
