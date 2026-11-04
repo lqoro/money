@@ -1,13 +1,13 @@
 # Trencher live report
 
-Updated 2026-11-04T15:12:08Z (paper trading, never real money)
+Updated 2026-11-04T15:27:20Z (paper trading, never real money)
 
 - Equity: $74.23 (-25.8% vs $100 start)
 - Closed trades: 22, 3 wins
 - Fees paid: $14.78 (axiom $2.81, network $9.18, pool $2.66), plus $4.15 lost to slippage
 - New trades: WATCH-ONLY (scans and decides, buys nothing)
-- Brain: subscription, claude-haiku-5-5 for routine calls, claude-opus-5-5 for the daily review; 473 routine calls and 1 plan-limit hits in 48h
-- Watch log: 96 coins being followed, 493 filed, 0 would-buys (6h follow, sampled every 2 min)
+- Brain: subscription, claude-haiku-5-5 for routine calls, claude-opus-5-5 for the daily review; 475 routine calls and 1 plan-limit hits in 48h
+- Watch log: 100 coins being followed, 496 filed, 0 would-buys (6h follow, sampled every 2 min)
 
 ## Scorecard (after fees)
 - 22 closed, 3 won (14%), net $-25.79
@@ -73,54 +73,54 @@ Updated 2026-11-04T15:12:08Z (paper trading, never real money)
   CA `H4gHnZ3NCU7Z9XQwGX6YYJNyieGEW8pqwGRUcdSxpump`
 
 ## Last scan
-- 15:11Z: 4 coins, 3 with pairs, 0 passed the market filters, 0 researched
+- 15:27Z: 4 coins, 3 with pairs, 0 passed the market filters, 0 researched
 
 ## Coins it looked at, and why it passed
+- 15:26Z LEOMAN (MIGRATED, $209,082 mcap, $4,961 5m vol): PASS at conviction 3, PASS: no breakout, mid-range, and no catalyst for this coin. A GTA-trailer meme with a 2-hour-old site that doesn't show its own CA (V3, V13).  
+  CA `CPZguakzrJSPZDvyB2BY7wdk25eKFwuwtYxSPYHmpump`
+- 15:24Z WASTED (DIP, $796,312 mcap, $2,933 5m vol): REJECT, Dev holds 3.5% (>1%) (V13, V17)  
+  CA `GexThZHgaswpAQ7Fi8QrHFubjPimUNSYhJiAA7XZpump`
+- 15:24Z RAMBO (MIGRATED, $2,724,585 mcap, $39,761 5m vol): PASS at conviction 2, PASS — RAMBO is up 225% in an hour, its last 5m candle is up 25.5%, and it sits 8% off a $2.97M high. That's a spike being chased, not a pullback. Clean holders don't change that (V1, V6).  
+  CA `KMifrkYmDdAKtVXAVBEPEQxJ7qP2iLgUcfZjUZipump`
+- 15:22Z FLOAT (DIP, $2,406,170 mcap, $3,788 5m vol): PASS at conviction 3, PASS: FLOAT is a DIP on a tokenized-stock story the radar already calls stale, with no catalyst, price 16% above the hourly low and no printed higher low. Blocker: "dead story" / no catalyst (owner bottom-buy rule). (V1, V6, V13)  
+  CA `Bv1a7cEj5aRnJQhMw4kRQqAFesMSd5LwcDnUzq52BMmr`
+- 15:20Z Democat (FINAL_STRETCH, $25,752 mcap, $56,425 5m vol): PASS at conviction 3, PASS — 5m up 159% at 5.9x hourly pace is a spike, not a pullback. Leader of a 28-copy political-donkey field with a 7.6% bundle cluster and no catalyst. Blockers: chasing spike, split crowd, no catalyst. (V1, V6, V13)  
+  CA `4bhYVkScUMVYvNUDsECf9rJxGpSLCzm1GEFEnNRopump`
+- 15:19Z MBG (MIGRATED, $1,284,129 mcap, $431,448 5m vol): REJECT, Top 10 hold 29.7% ex-pool (>25%) (V13)  
+  CA `HzQQyPcBZgqiarw9R8jYDqb89xLUsyHAwezk8CvEpump`
+- 15:16Z PREFIRE (FINAL_STRETCH, $29,345 mcap, $4,994 5m vol): PASS at conviction 3, PASS: 5m flow is under pace, sellers outnumber buyers after a +927% hour, and the "story" is a Telegram trading bot with no GitHub. Blocker: flow below pace / chasing spike (V1, V6, V13).  
+  CA `3vajh3wXe3EuLSXfSaCikyoCnzyhUJ3KPSoFhyAgpump`
 - 15:09Z BunThing (DIP, $36,852 mcap, $1,099 5m vol): REJECT, 5m volume $1,099 is dead (<$2,000) (V1)  
   CA `29jQSLyMDP3y1DRkVDVi4FxyeR66p5JCMqsaifMEpump`
 - 14:58Z SWIPEY (FINAL_STRETCH, $23,846 mcap, $4,379 5m vol): PASS at conviction 2, PASS — the project's own site doesn't show this CA and the domain is about a day old. It's one of six "swipey" copies on a theme running at 0.75x pace, with no story behind it. Farm-shaped (V3, V13).  
   CA `EV3VSC3E1cPwAaKSPaaPTmDFf463THaxNUWc54Jbpump`
 - 14:57Z AMD (DIP, $1,424,198 mcap, $4,034 5m vol): REJECT, Bundles: 10 linked wallet cluster(s) hold 22.7% of supply (>20%) (V17)  
   CA `DDmGnuvroxVrb7CSyjYcezFU8gnAfhKasg4ZZezmpump`
-- 14:57Z CATPAD (MIGRATED, $132,973 mcap, $4,547 5m vol): PASS at conviction 2, PASS: CATPAD is 8% off its high with 5m sellers ahead (38% buys). Chasing, crowded cat field, cat lane fading. (V1, V13)  
-  CA `2gTbp2gwH46rqExzabSyrdR3294SLwCp2rSqWDS6Sim1`
-- 14:56Z DONKEY (FINAL_STRETCH, $26,961 mcap, $32,005 5m vol): PASS at conviction 2, PASS: DONKEY is a 7-minute-old pump.fun coin up 694% in an hour, chasing a spike, and it isn't the leader of its 23-copy donkey field. Blocker: "split crowd" plus "chasing spike" (V1, V3, V6).  
-  CA `9izcJRdeQtuuVouHfyaqqB8TQJ4MSbbNqATpQyxJpump`
-- 14:53Z VI (MIGRATED, $778,431 mcap, $4,223 5m vol): PASS at conviction 3, PASS: 5m flow at 0.73x pace, it isn't the leader of a 29-copy "inu" field, and the chart is a saw-tooth with no printed higher low. (V1, V3, V13)  
-  CA `FpWWSqLNrjTTMDM41EXkvBmHBDkNdWrf9RwHL57xpump`
-- 14:47Z RICO (MIGRATED, $502,168 mcap, $4,027 5m vol): PASS at conviction 3, PASS — first resistance is 1.07x away, sellers hold 66% of 5m trades, and the GTA6 animal riff is cooling. Blocker: "target too close" (V1, V6).  
-  CA `8kuQg3WivDtL85VEdw2jEmSXjYt6EEeYBATJ4DtQpump`
-- 14:40Z LEOMAN (MIGRATED, $131,136 mcap, $2,661 5m vol): PASS at conviction 3, PASS: flow below pace ($2.7k 5m at 0.78x the hourly average) and the first resistance is only 1.29x away. The theme is cooling and the site is 2 hours old. Sawtooth, not a higher low (V1, V3, V13).  
-  CA `CPZguakzrJSPZDvyB2BY7wdk25eKFwuwtYxSPYHmpump`
-- 14:38Z RAMBO (MIGRATED, $942,196 mcap, $12,039 5m vol): PASS at conviction 2, PASS: RAMBO is 5.7% off its $999k high, sellers hold the last hour (1h 710 buys vs 1,763 sells, 5m buy share 0.43), and the first resistance is 1.06x away. Blockers: "chasing", "target too close". (V1, V6)  
-  CA `KMifrkYmDdAKtVXAVBEPEQxJ7qP2iLgUcfZjUZipump`
-- 14:37Z SHORT (FINAL_STRETCH, $20,214 mcap, $35,885 5m vol): REJECT, Top 10 hold 25.8% ex-pool (>25%) (V13)  
-  CA `3p2uEerHoGoKyKcUMabNuLdPXrRmFNLign5ybspkpump`
 
 ## What its skips did next (last 48h)
 A skip "ran" if the coin reached the first target (1.5x) from the skip price before a 20% drop, "dumped" if the drop came first. Sampled every 10 min, followed 6h.
-- too new / sniping: blocked 65, ran 11, dumped 53, flat 0, open 1 (saving losses: keep it)
+- too new / sniping: blocked 64, ran 11, dumped 52, flat 0, open 1 (saving losses: keep it)
   - ran: KOROSUKE up to 1.54x  
     CA `7ha4HFgdvkXaDcR2biCsuBpoCZzoLSRjb5we34Gbpump`
   - ran: ANSEMKIN up to 2.57x  
     CA `zD3jimD97YkcjMucBEmwZ6fUV7N4wjzz8Revkwmpump`
   - ran: Darth up to 1.76x  
     CA `7xgnrvzn6DvfdzFcpLuybg2GQwHg933Np5kMjx4qpump`
-- top 10 over 25%: blocked 64, ran 11, dumped 51, flat 2, open 0 (saving losses: keep it)
+- top 10 over 25%: blocked 63, ran 11, dumped 49, flat 2, open 1 (saving losses: keep it)
   - ran: GODHOUSE up to 3.19x  
     CA `CSGTuLtWhCfGZ5S5TvASQ6a5su91NCfRpNqfPczfpump`
   - ran: KYBER up to 1.83x  
     CA `BasL6j1MNkjFyuvRRFsmbm3bKqFPr6Yg3UhShii6pump`
   - ran: WIF up to 1.67x  
     CA `E7ayy5Se6gjwCNtw9NP629AucnTgqab4SSmSxDpUpump`
-- flow below pace: blocked 51, ran 11, dumped 32, flat 5, open 3 (saving losses: keep it)
+- flow below pace: blocked 51, ran 11, dumped 33, flat 5, open 2 (saving losses: keep it)
   - ran: KOROSUKE up to 1.54x  
     CA `7ha4HFgdvkXaDcR2biCsuBpoCZzoLSRjb5we34Gbpump`
   - ran: CAPY up to 1.51x  
     CA `DBPTU2oKLDHXQjAEJ3rZi8bUGmt2uxUbipgg6xmXoMqr`
   - ran: ZERO up to 1.61x  
     CA `Aes6XNH9BboLZuchD5PnDwaX6Zj1nU79TU3gNtPEpump`
-- near the high / chasing: blocked 41, ran 7, dumped 30, flat 3, open 1 (saving losses: keep it)
+- near the high / chasing: blocked 40, ran 6, dumped 29, flat 3, open 2 (saving losses: keep it)
   - ran: underdog up to 1.64x  
     CA `BZXh2LcnNNyypxsdfVeFzXawqmoGoSShC5i4NEQQpump`
   - ran: LUCIA up to 1.83x  
@@ -147,7 +147,7 @@ A skip "ran" if the coin reached the first target (1.5x) from the skip price bef
     CA `9gKArqT6qp3goHfuwAnfG7LioqwUtJ8TFu7P1Bhbpump`
   - ran: TTPRO up to 1.71x  
     CA `FrSrp9P3bgiFHwr6h5PQHVh55iC8Dae4eZCKPUo9pump`
-- falling knife / no higher low: blocked 14, ran 1, dumped 9, flat 3, open 1 (saving losses: keep it)
+- falling knife / no higher low: blocked 15, ran 1, dumped 9, flat 3, open 2 (saving losses: keep it)
   - ran: HEDGE up to 1.77x  
     CA `wDSAqt4tEZpDAwB9XY6ejkZvMFuT1zUMjUh67txeYhf`
 - other: blocked 13, ran 5, dumped 7, flat 0, open 1 (mixed)
@@ -197,13 +197,13 @@ No. After costs, every bucket loses money. Across 355 settled coins the simple p
 Meta, 2026-11-04, from scan_movers: the volume and buyers are in fresh pump.fun and PumpSwap launches under about 1.1h old with $6-40k caps and 55-59% buys (DONKEY, FROTH MAPS, SWIPEY, madape, PAIRITY). That fresh-launch lane is rising. The animal and dog lane is fading (AMD 36% buys, GTA6CAT 37% buys at $11M). Names with big 1h volume but almost none on 5m (Jamie Downey Jr, a/acc, LORE, FLOAT) are stale, not live. The crawler's PAIRITY numbers (+168%, $103k cap, 0.4h) don't match scan_movers (-58% 1h, $39k cap, 1.1h), so I'm working from the scan. Setups to research now, not buy on the scan alone: PAIRITY first, since it clears the MIGRATED bar ($12.5k 5m, under 12h, over $30k cap) but is down 58% in an hour, so it needs holder and bundle checks to show buyers came back. DONKEY is the only fresh launch over $10k on 5m with 59% buys, but its 5m volume ($32k) is bigger than its $27k cap, which looks like a farm until proven otherwise. FROTH MAPS, SWIPEY and madape have decent buy ratios but only $3-4k on 5m, so they fail the volume bar right now. No hack-named coins in this scan. Paper trading, not financial advice.
 
 ## Moving most in its scans, last 30 min (1h volume)
+- MBG: $1,044,125 1h vol, $1,284,129 mcap, +2752% 1h  
+  CA `HzQQyPcBZgqiarw9R8jYDqb89xLUsyHAwezk8CvEpump`
+- RAMBO: $434,806 1h vol, $2,724,585 mcap, +225% 1h  
+  CA `KMifrkYmDdAKtVXAVBEPEQxJ7qP2iLgUcfZjUZipump`
 - GATO: $122,029 1h vol, $11,073,260 mcap, -3% 1h  
   CA `HsprHxBRgiVaQdRf3TnKNuZZtaX9JUSPgMFdAkk6pump`
-- AMD: $80,202 1h vol, $1,414,524 mcap, -1% 1h  
-  CA `DDmGnuvroxVrb7CSyjYcezFU8gnAfhKasg4ZZezmpump`
-- VI: $69,615 1h vol, $778,431 mcap, +11% 1h  
-  CA `FpWWSqLNrjTTMDM41EXkvBmHBDkNdWrf9RwHL57xpump`
-- Jackass: $67,038 1h vol, $49,941 mcap, +1395% 1h  
+- Democat: $120,620 1h vol, $34,837 mcap, +839% 1h  
+  CA `4bhYVkScUMVYvNUDsECf9rJxGpSLCzm1GEFEnNRopump`
+- Jackass: $105,223 1h vol, $48,002 mcap, +1306% 1h  
   CA `FaXtNnm14opBcapY2v2bGRSKCAriAmjyAEFmVdCo1Y6T`
-- FROTH: $59,850 1h vol, $7,652 mcap, +175% 1h  
-  CA `AKM9c2D1fBGUsLYP3AQWKrdYQjDYTEAtT8ccGQGupump`
