@@ -1,13 +1,13 @@
 # Trencher live report
 
-Updated 2026-11-04T01:17:33Z (paper trading, never real money)
+Updated 2026-11-04T01:32:40Z (paper trading, never real money)
 
 - Equity: $74.23 (-25.8% vs $100 start)
 - Closed trades: 22, 3 wins
 - Fees paid: $14.78 (axiom $2.81, network $9.18, pool $2.66), plus $4.15 lost to slippage
 - New trades: WATCH-ONLY (scans and decides, buys nothing)
-- Brain: subscription, claude-haiku-5-5 for routine calls, claude-opus-5-5 for the daily review; 459 routine calls and 1 plan-limit hits in 48h
-- Watch log: 124 coins being followed, 233 filed, 0 would-buys (6h follow, sampled every 2 min)
+- Brain: subscription, claude-haiku-5-5 for routine calls, claude-opus-5-5 for the daily review; 454 routine calls and 1 plan-limit hits in 48h
+- Watch log: 121 coins being followed, 237 filed, 0 would-buys (6h follow, sampled every 2 min)
 
 ## Scorecard (after fees)
 - 22 closed, 3 won (14%), net $-25.79
@@ -73,9 +73,11 @@ Updated 2026-11-04T01:17:33Z (paper trading, never real money)
   CA `H4gHnZ3NCU7Z9XQwGX6YYJNyieGEW8pqwGRUcdSxpump`
 
 ## Last scan
-- 01:16Z: 8 coins, 8 with pairs, 0 passed the market filters, 0 researched
+- 01:32Z: 8 coins, 7 with pairs, 0 passed the market filters, 0 researched
 
 ## Coins it looked at, and why it passed
+- 01:30Z ANONVOYAGE (DIP, $1,467,577 mcap, $6,653 5m vol): REJECT, Bundles: 10 linked wallet cluster(s) hold 50.3% of supply (>20%) (V17)  
+  CA `8muc9DdhqWfAPcvmEebNQCG89bLiwi12T2KtBtzVpump`
 - 01:11Z PUP (FINAL_STRETCH, $25,062 mcap, $15,159 5m vol): PASS at conviction 3, PASS: this is the second PUP in an 18-copy field, and the leader is the other one doing $60k on the 5m. It's also up 55% in 5m, which is chasing. (V1, V6, V3)  
   CA `69GXjuoQGxNb75BgQ54qUf6j2aDgXHVSkAcefuiqe58u`
 - 01:09Z Dacity (MIGRATED, $6,651,417 mcap, $3,880 5m vol): REJECT, Bundles: 10 linked wallet cluster(s) hold 24.0% of supply (>20%) (V17)  
@@ -94,12 +96,10 @@ Updated 2026-11-04T01:17:33Z (paper trading, never real money)
   CA `2Nhb9M58caMHufHzEa2DhNA1FEsVVL8axXu6iidvQfDe`
 - 00:46Z GATO (MIGRATED, $10,908,874 mcap, $5,052 5m vol): REJECT, Dev holds 3.3% (>1%) (V13, V17)  
   CA `HsprHxBRgiVaQdRf3TnKNuZZtaX9JUSPgMFdAkk6pump`
-- 00:46Z PUP (FINAL_STRETCH, $20,313 mcap, $60,222 5m vol): PASS at conviction 2, PASS: split crowd. 21 copies of a joke name, 8 minutes old, 5m flow at 7x pace with no printed higher low and no catalyst. Blocker: split crowd + chasing spike (V1, V3, V6).  
-  CA `DyUR3ZpJj5iu8WBG7zk1YbamJE5k9afZhoM7xYCbpump`
 
 ## What its skips did next (last 48h)
 A skip "ran" if the coin reached the first target (1.5x) from the skip price before a 20% drop, "dumped" if the drop came first. Sampled every 10 min, followed 6h.
-- top 10 over 25%: blocked 63, ran 10, dumped 47, flat 3, open 3 (saving losses: keep it)
+- top 10 over 25%: blocked 62, ran 10, dumped 46, flat 3, open 3 (saving losses: keep it)
   - ran: GODHOUSE up to 3.19x  
     CA `CSGTuLtWhCfGZ5S5TvASQ6a5su91NCfRpNqfPczfpump`
   - ran: KYBER up to 1.83x  
@@ -120,7 +120,7 @@ A skip "ran" if the coin reached the first target (1.5x) from the skip price bef
     CA `8kuQg3WivDtL85VEdw2jEmSXjYt6EEeYBATJ4DtQpump`
   - ran: CAPY up to 1.51x  
     CA `DBPTU2oKLDHXQjAEJ3rZi8bUGmt2uxUbipgg6xmXoMqr`
-- near the high / chasing: blocked 37, ran 3, dumped 29, flat 3, open 2 (saving losses: keep it)
+- near the high / chasing: blocked 36, ran 3, dumped 29, flat 3, open 1 (saving losses: keep it)
   - ran: underdog up to 1.64x  
     CA `BZXh2LcnNNyypxsdfVeFzXawqmoGoSShC5i4NEQQpump`
   - ran: LUCIA up to 1.83x  
@@ -141,7 +141,7 @@ A skip "ran" if the coin reached the first target (1.5x) from the skip price bef
     CA `BngAfLZxaWN2QvpFhRbUHydYGr8zA7YTSA178G8Epump`
   - ran: YES up to 1.71x  
     CA `B7Cj19ke2F8S6fazbBvGMxHYNNMYuDaAn3Sn2Zikpump`
-- bundles over the line: blocked 21, ran 3, dumped 15, flat 1, open 2 (saving losses: keep it)
+- bundles over the line: blocked 20, ran 3, dumped 14, flat 1, open 2 (saving losses: keep it)
   - ran: Nuts up to 1.53x  
     CA `APH9FRoKst66E4a7uZXcEfE8NjtwybUC8Jq7ue8upump`
   - ran: NA up to 1.97x  
@@ -203,13 +203,13 @@ There's no positive after-cost edge yet. The 13 settled coins averaged -6.7% net
 Trencher: The movers are mostly fresh pump.fun launches (most under 2h old), and two themes run across several coins: animal and creature names (Froblin, Harriet The Badger, Hypha, GTA6CAT) and self-referential joke names (nothing ever happens, ungone, I Can't Hold Money Coin, Everything Inu). A politics-adjacent lane (dumocrats) is showing up too, and I treat that as a caution, not a theme to chase. Rising with real 5m flow: ungone ($33k mcap, $44k 5m, 59% buys, 0.1h old, +1125% 1h), Froblin ($28.5k, $22k 5m, 59% buys, 1.9h old), and E/exposure ($186k on PumpSwap, $108k 5m, 53% buys, 1.3h old). Fading: AMD (A Meme Doge) down 99% on zero 5m buys, Harriet down 95% on $4 of 5m volume, and nothing ever happens at $27 of 5m. Setups to research now: E as MIGRATED (under 12h, above $30k, 5m well above $10k, but up 193% in an hour, so holder and bundle checks come first), and ungone or Froblin only as bundle-checked curve plays with a clear exit near bond. The web's FUN, E and TWUMP figures conflict with scan_movers, so I used scan_movers; FUN shows only $2k 5m here and is not a setup. This is not a quiet market.
 
 ## Moving most in its scans, last 30 min (1h volume)
-- E : $1,014,263 1h vol, $279,954 mcap, -41% 1h  
-  CA `EfRnwABuWZKxri55se639twy4jy3FRgYfri7wLJ5pump`
-- AMC: $390,514 1h vol, $184,416 mcap, +343% 1h  
-  CA `YUduqrb8kK4p9VfV2JXyHnV4yCXBiUoKgH7znLNpump`
 - PREDICTINU: $227,821 1h vol, $94,628 mcap, +144% 1h  
   CA `GT7kQdT3JvZ8vFBW4jjYGYBsrNrE9U4UFspJJAXapump`
-- PREDICTOOR: $193,427 1h vol, $28,233 mcap, -73% 1h  
-  CA `DX51xEuEckZ3Jc6x333fTFUVz2pYQriNQ2cUb1Cupump`
+- Ahsoka: $195,397 1h vol, $144,796 mcap, -66% 1h  
+  CA `4nuj5NLHMtQSezfmz6CwBpCRJisFie6F6MxNNz1dpump`
+- PUP: $163,691 1h vol, $3,181 mcap, +3% 1h  
+  CA `DyUR3ZpJj5iu8WBG7zk1YbamJE5k9afZhoM7xYCbpump`
 - TWUMP: $131,916 1h vol, $5,799 mcap, -84% 1h  
   CA `3DYBAnkeAXQWv68nEjwxZXJGobkXZchEGi4mwW6Tu7ci`
+- GATO: $121,612 1h vol, $11,707,250 mcap, +12% 1h  
+  CA `HsprHxBRgiVaQdRf3TnKNuZZtaX9JUSPgMFdAkk6pump`
