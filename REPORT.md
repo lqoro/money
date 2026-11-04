@@ -1,13 +1,13 @@
 # Trencher live report
 
-Updated 2026-11-04T09:53:46Z (paper trading, never real money)
+Updated 2026-11-04T10:08:50Z (paper trading, never real money)
 
 - Equity: $74.23 (-25.8% vs $100 start)
 - Closed trades: 22, 3 wins
 - Fees paid: $14.78 (axiom $2.81, network $9.18, pool $2.66), plus $4.15 lost to slippage
 - New trades: WATCH-ONLY (scans and decides, buys nothing)
-- Brain: subscription, claude-haiku-5-5 for routine calls, claude-opus-5-5 for the daily review; 471 routine calls and 1 plan-limit hits in 48h
-- Watch log: 108 coins being followed, 396 filed, 0 would-buys (6h follow, sampled every 2 min)
+- Brain: subscription, claude-haiku-5-5 for routine calls, claude-opus-5-5 for the daily review; 473 routine calls and 1 plan-limit hits in 48h
+- Watch log: 102 coins being followed, 403 filed, 0 would-buys (6h follow, sampled every 2 min)
 
 ## Scorecard (after fees)
 - 22 closed, 3 won (14%), net $-25.79
@@ -73,9 +73,11 @@ Updated 2026-11-04T09:53:46Z (paper trading, never real money)
   CA `H4gHnZ3NCU7Z9XQwGX6YYJNyieGEW8pqwGRUcdSxpump`
 
 ## Last scan
-- 09:52Z: 5 coins, 4 with pairs, 0 passed the market filters, 0 researched
+- 10:08Z: 5 coins, 4 with pairs, 0 passed the market filters, 0 researched
 
 ## Coins it looked at, and why it passed
+- 10:07Z CHILLCATS (MIGRATED, $114,093 mcap, $9,589 5m vol): PASS at conviction 3, PASS: CHILLCATS is 74% off its high, outside the 40-70% dip band, still falling into its hourly low with no printed higher low, and the cat theme runs at 0.75x pace with no catalyst. Blocker: "bottom buy, no catalyst" (V1, V6).  
+  CA `4BCbx4hB1XPmC5mLHsFyHEghC5fb9Afu7THLGXiHpump`
 - 09:51Z ANONVOYAGE (MIGRATED, $485,554 mcap, $5,749 5m vol): REJECT, Bundles: 10 linked wallet cluster(s) hold 50.3% of supply (>20%) (V17)  
   CA `8muc9DdhqWfAPcvmEebNQCG89bLiwi12T2KtBtzVpump`
 - 09:51Z MEOWNERO (MIGRATED, $215,219 mcap, $2,319 5m vol): PASS at conviction 2, PASS. MEOWNERO has no story, no X, no site, and its price history is broken, so I can't read the money shape. Blocker: "dead story" plus "no higher low". (V1, V6, V13)  
@@ -94,8 +96,6 @@ Updated 2026-11-04T09:53:46Z (paper trading, never real money)
   CA `nxPqZ4F7ux8Vph5NFu25rEP6Kx9Gr1U6Fmj36Rjpump`
 - 09:21Z CHILLCATS (DIP, $165,991 mcap, $12,083 5m vol): PASS at conviction 4, PASS: CHILLCATS is a clean-holder flow leader in a 28-copy cat field, but it has no printed higher low, the first resistance is about 1.14x away, and the theme is not carrying enough volume to back a bottom buy. Mid-range. Let it come to us (V1, V6, V13).  
   CA `4BCbx4hB1XPmC5mLHsFyHEghC5fb9Afu7THLGXiHpump`
-- 09:18Z Doge (FINAL_STRETCH, $32,739 mcap, $21,434 5m vol): PASS at conviction 2, PASS. Doge party is up 629% in an hour, 12 minutes old, and its last 5m candle is +94%. That's a spike, not a pullback, and it sits in the $33k zone where most new pairs die (V1, V6).  
-  CA `9CRbVZxQshb9dMkh3yGvyARJRAHMGVuxiQRGhUsppump`
 
 ## What its skips did next (last 48h)
 A skip "ran" if the coin reached the first target (1.5x) from the skip price before a 20% drop, "dumped" if the drop came first. Sampled every 10 min, followed 6h.
@@ -106,14 +106,14 @@ A skip "ran" if the coin reached the first target (1.5x) from the skip price bef
     CA `At3jYPUKVEFYrss5a58myVuqKLjGxMuBP5MwqMk9pump`
   - ran: MameStonk up to 1.67x  
     CA `57eJSmN1ecANrnZjGPrXzWUMyGhQsQgMS9eHdxM3pump`
-- top 10 over 25%: blocked 63, ran 10, dumped 49, flat 3, open 1 (saving losses: keep it)
+- top 10 over 25%: blocked 62, ran 10, dumped 49, flat 3, open 0 (saving losses: keep it)
   - ran: GODHOUSE up to 3.19x  
     CA `CSGTuLtWhCfGZ5S5TvASQ6a5su91NCfRpNqfPczfpump`
   - ran: KYBER up to 1.83x  
     CA `BasL6j1MNkjFyuvRRFsmbm3bKqFPr6Yg3UhShii6pump`
   - ran: WIF up to 1.67x  
     CA `E7ayy5Se6gjwCNtw9NP629AucnTgqab4SSmSxDpUpump`
-- flow below pace: blocked 49, ran 11, dumped 32, flat 4, open 2 (saving losses: keep it)
+- flow below pace: blocked 49, ran 11, dumped 31, flat 4, open 3 (saving losses: keep it)
   - ran: KOROSUKE up to 1.54x  
     CA `7ha4HFgdvkXaDcR2biCsuBpoCZzoLSRjb5we34Gbpump`
   - ran: CAPY up to 1.51x  
@@ -139,7 +139,7 @@ A skip "ran" if the coin reached the first target (1.5x) from the skip price bef
     CA `B7Cj19ke2F8S6fazbBvGMxHYNNMYuDaAn3Sn2Zikpump`
   - ran: RATIO up to 1.51x  
     CA `3JdeP1VBHgRPunmjTj1D6w6ZZePwGAwjUr2tCufwpump`
-- bundles over the line: blocked 19, ran 1, dumped 13, flat 1, open 4 (saving losses: keep it)
+- bundles over the line: blocked 18, ran 1, dumped 13, flat 1, open 3 (saving losses: keep it)
   - ran: MAMESUKE up to 1.95x  
     CA `SCGBBnSwnekytGFHgyeHHxPMiN7xDxsWFGg9JgFSTNK`
 - thin 5m volume: blocked 17, ran 3, dumped 9, flat 3, open 2 (saving losses: keep it)
@@ -149,7 +149,7 @@ A skip "ran" if the coin reached the first target (1.5x) from the skip price bef
     CA `9gKArqT6qp3goHfuwAnfG7LioqwUtJ8TFu7P1Bhbpump`
   - ran: TTPRO up to 1.71x  
     CA `FrSrp9P3bgiFHwr6h5PQHVh55iC8Dae4eZCKPUo9pump`
-- falling knife / no higher low: blocked 16, ran 1, dumped 10, flat 4, open 1 (saving losses: keep it)
+- falling knife / no higher low: blocked 15, ran 1, dumped 9, flat 4, open 1 (saving losses: keep it)
   - ran: HEDGE up to 1.77x  
     CA `wDSAqt4tEZpDAwB9XY6ejkZvMFuT1zUMjUh67txeYhf`
 - other: blocked 12, ran 6, dumped 4, flat 1, open 1 (cost more winners than it saved: loosen it)
@@ -196,16 +196,16 @@ There's no positive after-cost edge yet. The 13 settled coins averaged -6.7% net
 - [2026-11-02 20:25] I expected Slingoor, a clean MIGRATED leader with $25k of 5m flow at pace and a 0.77 buy share, to retest its $408k high from $304k. It never went green (0.98x peak) and hit the -20% stop in 2 minutes, a -$2.86 probe. My own thesis admitted there was no printed higher low after a peak only 6 minutes old, so this confirms the money-shape rule: buy share and flow are not structure (V1, V6). Next time a MIGRATED pullback with no higher low above the hourly low is a PASS with blocker "no higher low", not a probe. This is one loss, so it adds no new ban beyond the rule I already have.
 
 ## Meta right now
-The meta is fresh pump.fun launches pumping on 5m volume (space inu, POOLS, Transinu, Twitter): 0.3 to 1h old, +300% to +700% on the hour, and this is the highest-risk lane where bundles and dumps live (V1, V13). A second theme is dog and animal names at bigger caps, Vice Inu ($864k, +103%), A Meme Dog ($1.16M, -11%) and CHILLCATS ($177k, 71% buys, -35% off its hour high), which look like slower, cleaner trades than the launches. Space names are cooling: icapy is -95%, RAM is -90%, and the second space inu sits at 17% buys, a copy under the original (V1 vamp). Trump-named DJT is in the movers, and I pass on political-named coins (V13). Setups to research: Transinu (migrated, $162k, $18k on 5m, but only 47% buys, so it needs a pullback with buyers back above 50%) and CHILLCATS as a DIP, if its 5m volume holds and buyers keep stepping in. I won't chase the 0.3 to 0.5h launches. I used scan_movers numbers; the crawler's Transinu and CHILLCATS figures don't match them.
+Meta from scan_movers: dog and animal names are the one theme running across market caps, with Vice Inu ($856k, 78% buys, +45% on the hour), A Meme Dog ($1.3M) and GATO/Dacity at $7-10M. None of them clears the $10k 5-minute volume bar, so it's a rising but thin lane. The fresh pump.fun lane (APU +434%, Moonman +119%, both under 1h old and under $20k) is hot and thin, which is where bundles and dumps live (V1, V13), so I'm not touching it. Self-referential "meme" and party names (AMP, Doge Party, Anon Voyage) look like noise, and 5STAR, Twitter and Doge are fading. The crawler's space, Trump/LAPTOP and "binance hack" stories don't appear in these movers; the political and hack-named coins are off the table anyway, so I'm not calling them a meta. Setup to research: ChatBLT (pumpswap, $78k mcap, $18.3k on 5m, 67% buys, 5m pace running above its hourly pace, -9% on the hour). It's the one mover that clears the volume bar, so check holders and bundles before any entry and set the stop at the thesis break when researching. Not verified: the crawler's Transinu and CHILLCATS figures don't match scan_movers, so I'm not using them.
 
 ## Moving most in its scans, last 30 min (1h volume)
+- Doge: $178,476 1h vol, $18,245 mcap, -61% 1h  
+  CA `9CRbVZxQshb9dMkh3yGvyARJRAHMGVuxiQRGhUsppump`
+- CHILLCATS: $154,016 1h vol, $114,093 mcap, -19% 1h  
+  CA `4BCbx4hB1XPmC5mLHsFyHEghC5fb9Afu7THLGXiHpump`
+- POOLS: $138,650 1h vol, $12,948 mcap, -87% 1h  
+  CA `Fu9n4TS5QkEKzMW66djz6T6fUspAbTuYsb7gcHSApump`
 - CHATBLT: $91,695 1h vol, $77,900 mcap, -9% 1h  
   CA `BM1Q9KfjgVoERj1eipkPqueMvhz1kfkUfE835ZjJpump`
-- VI: $81,200 1h vol, $856,292 mcap, +45% 1h  
-  CA `FpWWSqLNrjTTMDM41EXkvBmHBDkNdWrf9RwHL57xpump`
 - APU: $75,858 1h vol, $19,882 mcap, +434% 1h  
   CA `8wzq9hZD5LZ969Q5mttHkJh4ZFNrVb1tmowdp7Yspump`
-- ANONVOYAGE: $68,756 1h vol, $485,554 mcap, +1% 1h  
-  CA `8muc9DdhqWfAPcvmEebNQCG89bLiwi12T2KtBtzVpump`
-- Dacity: $68,587 1h vol, $7,313,884 mcap, -3% 1h  
-  CA `nxPqZ4F7ux8Vph5NFu25rEP6Kx9Gr1U6Fmj36Rjpump`
