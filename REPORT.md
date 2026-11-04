@@ -1,13 +1,13 @@
 # Trencher live report
 
-Updated 2026-11-04T00:17:25Z (paper trading, never real money)
+Updated 2026-11-04T00:32:25Z (paper trading, never real money)
 
 - Equity: $74.23 (-25.8% vs $100 start)
 - Closed trades: 22, 3 wins
 - Fees paid: $14.78 (axiom $2.81, network $9.18, pool $2.66), plus $4.15 lost to slippage
 - New trades: WATCH-ONLY (scans and decides, buys nothing)
 - Brain: subscription, claude-haiku-5-5 for routine calls, claude-opus-5-5 for the daily review; 463 routine calls and 1 plan-limit hits in 48h
-- Watch log: 126 coins being followed, 214 filed, 0 would-buys (6h follow, sampled every 2 min)
+- Watch log: 124 coins being followed, 219 filed, 0 would-buys (6h follow, sampled every 2 min)
 
 ## Scorecard (after fees)
 - 22 closed, 3 won (14%), net $-25.79
@@ -73,9 +73,15 @@ Updated 2026-11-04T00:17:25Z (paper trading, never real money)
   CA `H4gHnZ3NCU7Z9XQwGX6YYJNyieGEW8pqwGRUcdSxpump`
 
 ## Last scan
-- 00:16Z: 4 coins, 4 with pairs, 2 passed the market filters, 2 researched
+- 00:31Z: 4 coins, 4 with pairs, 0 passed the market filters, 0 researched
 
 ## Coins it looked at, and why it passed
+- 00:25Z ONE (MIGRATED, $68,311 mcap, $13,299 5m vol): REJECT, Dev holds 2.1% (>1%) (V13, V17)  
+  CA `9xU9DLJer45mJocspDuyhFfqvSuBTYf2bLcTKcFLpump`
+- 00:24Z Dacity (MIGRATED, $6,583,660 mcap, $5,692 5m vol): REJECT, Bundles: 10 linked wallet cluster(s) hold 24.0% of supply (>20%) (V17)  
+  CA `nxPqZ4F7ux8Vph5NFu25rEP6Kx9Gr1U6Fmj36Rjpump`
+- 00:22Z ungone (FINAL_STRETCH, $32,358 mcap, $59,304 5m vol): PASS at conviction 3, PASS: up 1102% in 5 minutes at 12x the hourly pace, sitting at $32k on the 30–40k zone where new pairs usually die, and the website says "launching soon." Chasing a spike with no story (V1, V6, V13).  
+  CA `FGrJjaKYT2et7voESztVF1T4qFQhrVjusaV3dRxJpump`
 - 00:17Z TWUMP (FINAL_STRETCH, $23,021 mcap, $6,421 5m vol): REJECT, RugCheck danger: Creator history of rugged tokens  
   CA `3DYBAnkeAXQWv68nEjwxZXJGobkXZchEGi4mwW6Tu7ci`
 - 00:17Z E  (DIP, $160,144 mcap, $120,273 5m vol): PASS at conviction 3, PASS: falling knife with no catalyst. Down 40% in the last 5 minutes, no printed higher low, and no news behind a self-referential "exposure" story. (V1, V6)  
@@ -90,12 +96,6 @@ Updated 2026-11-04T00:17:25Z (paper trading, never real money)
   CA `7JB2w8yD1dyjvUdu3LeTvKDWPYFb9qMpVBq8nWAzpump`
 - 00:00Z Ahsoka (MIGRATED, $462,863 mcap, $2,969 5m vol): PASS at conviction 2, PASS — Ahsoka is a dead fan-meme at 80% off a $2.29M peak, with $2,969 on the 5m and 0.08x theme pace. Blocker: flow below pace. Nothing to buy (V1, V6).  
   CA `4nuj5NLHMtQSezfmz6CwBpCRJisFie6F6MxNNz1dpump`
-- 23:59Z ANONVOYAGE (MIGRATED, $1,917,928 mcap, $6,986 5m vol): REJECT, Bundles: 10 linked wallet cluster(s) hold 50.3% of supply (>20%) (V17)  
-  CA `8muc9DdhqWfAPcvmEebNQCG89bLiwi12T2KtBtzVpump`
-- 23:50Z GATO (MIGRATED, $10,438,459 mcap, $24,142 5m vol): REJECT, Dev holds 3.3% (>1%) (V13, V17)  
-  CA `HsprHxBRgiVaQdRf3TnKNuZZtaX9JUSPgMFdAkk6pump`
-- 23:43Z HARRIET (FINAL_STRETCH, $24,546 mcap, $7,929 5m vol): REJECT, Top 10 hold 27.7% ex-pool (>25%) (V13)  
-  CA `DTmP2zzzakbV99e41nzCKp7BosgzHo63FNpUG88Dpump`
 
 ## What its skips did next (last 48h)
 A skip "ran" if the coin reached the first target (1.5x) from the skip price before a 20% drop, "dumped" if the drop came first. Sampled every 10 min, followed 6h.
@@ -106,7 +106,7 @@ A skip "ran" if the coin reached the first target (1.5x) from the skip price bef
     CA `BasL6j1MNkjFyuvRRFsmbm3bKqFPr6Yg3UhShii6pump`
   - ran: WIF up to 1.67x  
     CA `E7ayy5Se6gjwCNtw9NP629AucnTgqab4SSmSxDpUpump`
-- too new / sniping: blocked 58, ran 11, dumped 46, flat 0, open 1 (saving losses: keep it)
+- too new / sniping: blocked 59, ran 11, dumped 46, flat 0, open 2 (saving losses: keep it)
   - ran: CLIPPED up to 1.65x  
     CA `Bxyp4L6EbDys4fo51qxMEQTx41sj6McnsbPZTdvipump`
   - ran: Marutaro up to 1.62x  
@@ -155,16 +155,16 @@ A skip "ran" if the coin reached the first target (1.5x) from the skip price bef
     CA `7uwr9Zoz8WW9UyRVC22nmmAXRbPoFTUpVjsN8q7kids`
   - ran: 404 up to 1.89x  
     CA `9gKArqT6qp3goHfuwAnfG7LioqwUtJ8TFu7P1Bhbpump`
-- falling knife / no higher low: blocked 14, ran 1, dumped 9, flat 3, open 1 (saving losses: keep it)
+- falling knife / no higher low: blocked 14, ran 2, dumped 9, flat 3, open 0 (saving losses: keep it)
   - ran: HEDGE up to 1.77x  
     CA `wDSAqt4tEZpDAwB9XY6ejkZvMFuT1zUMjUh67txeYhf`
-- other: blocked 11, ran 4, dumped 6, flat 1, open 0 (mixed)
-  - ran: thisman up to 1.6x  
-    CA `6d6J2kWJiimgqmxjLVTu31hxDyBFt2zBguYdjSripump`
-  - ran: FEAR up to 125.22x  
-    CA `CHtXwJ3qa2ozS9vQkxhR3MmNwkoUqkh3icGXgZPepump`
-  - ran: Slingoor up to 1.58x  
-    CA `AYDL7DTa6AidQ1nUSAEAnzVAFDDewDXbSyy8Hh2wpump`
+  - ran: E  up to 1.5x  
+    CA `EfRnwABuWZKxri55se639twy4jy3FRgYfri7wLJ5pump`
+- dev share over 1%: blocked 11, ran 2, dumped 5, flat 1, open 3 (saving losses: keep it)
+  - ran: Firecube up to 1.88x  
+    CA `Ebih1KdijjpQBaM83gUfGhRtTCpHzDkBZhCZedZwpump`
+  - ran: HUND  up to 1.63x  
+    CA `HAjc6B1MfdjnYPiB2xcETPb25kb85Pxg9nq9i4D5pump`
 
 ## Daily review (2026-11-03, claude-opus-5-5)
 There's no positive after-cost edge yet. The 13 settled coins averaged -6.7% net under the simple plan, which is about +3.6% gross minus a 10.3% round-trip cost. The best bucket, MIGRATED, is break-even at -0.4% (n=8). With a 1.5x target, a -20% stop and about 10% cost, a winner nets about +40% and a loser about -30%, so a coin has to hit the target first about 43% of the time just to break even. Nothing big enough to trust gets there: the whole set is at 31% and MIGRATED at 37.5%. With n=13 the confidence intervals run roughly ±25 points, and the simulator flatters losses (see data issues), so the real numbers are probably worse. The routine model logged zero would-buys, so there's nothing to compare against the coins it passed on. Its PASSes did worse (-20.5% net, n=7) than the coins the checklist rejected (+9.4%, n=6). So passing was mostly right, but that gap rests on 2–3 coins (3/6 vs 1/7 ran, Fisher p≈0.3). It also passed on the day's two best runners, LIFEVAL at 4.2x and XDG at 2.7x.
@@ -207,11 +207,11 @@ The trenches are running animal and creature names on pump.fun plus self-referen
 ## Moving most in its scans, last 30 min (1h volume)
 - E : $1,443,373 1h vol, $185,999 mcap, +193% 1h  
   CA `EfRnwABuWZKxri55se639twy4jy3FRgYfri7wLJ5pump`
-- Ahsoka: $457,680 1h vol, $462,863 mcap, -21% 1h  
-  CA `4nuj5NLHMtQSezfmz6CwBpCRJisFie6F6MxNNz1dpump`
-- GATO: $360,881 1h vol, $10,488,205 mcap, -1% 1h  
-  CA `HsprHxBRgiVaQdRf3TnKNuZZtaX9JUSPgMFdAkk6pump`
 - AMC: $272,981 1h vol, $195,977 mcap, +368% 1h  
   CA `YUduqrb8kK4p9VfV2JXyHnV4yCXBiUoKgH7znLNpump`
+- ONE: $145,903 1h vol, $65,971 mcap, +75% 1h  
+  CA `9xU9DLJer45mJocspDuyhFfqvSuBTYf2bLcTKcFLpump`
 - TWUMP: $145,726 1h vol, $21,978 mcap, +277% 1h  
   CA `3DYBAnkeAXQWv68nEjwxZXJGobkXZchEGi4mwW6Tu7ci`
+- Hypha: $89,436 1h vol, $4,206 mcap, -37% 1h  
+  CA `5XvbZrTnfUCLhUBxABtPn3ShM5Q1TefuDtNtptwapump`
