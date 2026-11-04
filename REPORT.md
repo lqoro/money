@@ -1,13 +1,13 @@
 # Trencher live report
 
-Updated 2026-11-04T20:44:52Z (paper trading, never real money)
+Updated 2026-11-04T20:59:56Z (paper trading, never real money)
 
 - Equity: $74.23 (-25.8% vs $100 start)
 - Closed trades: 22, 3 wins
 - Fees paid: $14.78 (axiom $2.81, network $9.18, pool $2.66), plus $4.15 lost to slippage
 - New trades: WATCH-ONLY (scans and decides, buys nothing)
-- Brain: subscription, claude-haiku-5-5 for routine calls, claude-opus-5-5 for the daily review; 498 routine calls and 1 plan-limit hits in 48h
-- Watch log: 122 coins being followed, 582 filed, 0 would-buys (6h follow, sampled every 2 min)
+- Brain: subscription, claude-haiku-5-5 for routine calls, claude-opus-5-5 for the daily review; 497 routine calls and 1 plan-limit hits in 48h
+- Watch log: 126 coins being followed, 587 filed, 0 would-buys (6h follow, sampled every 2 min)
 
 ## Scorecard (after fees)
 - 22 closed, 3 won (14%), net $-25.79
@@ -73,82 +73,84 @@ Updated 2026-11-04T20:44:52Z (paper trading, never real money)
   CA `H4gHnZ3NCU7Z9XQwGX6YYJNyieGEW8pqwGRUcdSxpump`
 
 ## Last scan
-- 20:44Z: 2 coins, 1 with pairs, 1 passed the market filters, 1 researched
+- 20:59Z: 8 coins, 7 with pairs, 2 passed the market filters, 2 researched
 
 ## Coins it looked at, and why it passed
+- 20:59Z VI (DIP, $343,220 mcap, $4,112 5m vol): PASS at conviction 3, PASS: deep dip on a 20-hour-old copy in a 19-coin field, with the story not rising, no catalyst found, 5m flow at $4.1k, and no printed higher low. Passing (V1, V6, V13).  
+  CA `FpWWSqLNrjTTMDM41EXkvBmHBDkNdWrf9RwHL57xpump`
+- 20:59Z NOLAN (no setup, $19,278 mcap, $6,653 5m vol): REJECT, No setup fits: not Final Stretch, not a migrated runner, not a healthy dip  
+  CA `5TCWcaY4C2j1c2bmYizrwGsLLVggjQrY9NJKZim3pump`
+- 20:58Z JOB (MIGRATED, $3,763,966 mcap, $5,039 5m vol): PASS at conviction 3, PASS — JOB is sitting on its hourly low with 31% buys and 5m flow at 0.77x pace, and no higher low has printed. It's the leader of a 7-copy field, but the team's own site doesn't show this CA. (V1, V6, V13)  
+  CA `9Pq7aLAbhDG2tTnS22cm6kuysZVcZpLFE368HWuypump`
+- 20:57Z WASTED (DIP, $706,341 mcap, $6,064 5m vol): REJECT, Dev holds 2.0% (>1%) (V13, V17)  
+  CA `GexThZHgaswpAQ7Fi8QrHFubjPimUNSYhJiAA7XZpump`
+- 20:57Z GHOST (DIP, $177,178 mcap, $3,316 5m vol): PASS at conviction 3, PASS — DIP with no story behind it: zero ticker or name mentions, no CA calls, sellers in control (36% buys on 5m), no printed higher low, and a 0.5-day-old site. Blocker: dead story. (V1, V6, V13)  
+  CA `42qKoGmEPTRJsa5jWrYwpydL8RkBwMvg2ykYVoerpump`
+- 20:52Z SUPERBOWL (FINAL_STRETCH, $24,834 mcap, $4,501 5m vol): REJECT, Top 10 hold 27.7% ex-pool (>25%) (V13)  
+  CA `92j5cWKjdVKDC7skBw1HjvYtrTU8nMM1zKjC4dqmpump`
+- 20:52Z OUR (FINAL_STRETCH, $23,196 mcap, $24,390 5m vol): REJECT, Top 10 hold 26.1% ex-pool (>25%) (V13)  
+  CA `Dcht3Y7BBykVGzcACrBTRriYmGMKisgEMTXJxUY3pump`
+- 20:51Z tism (FINAL_STRETCH, $29,475 mcap, $6,845 5m vol): REJECT, Top 10 hold 28.3% ex-pool (>25%) (V13)  
+  CA `27Y4WwxHiconrfhwQKGotJ5nVEbrcFiDnJnoRBbCpump`
+- 20:50Z Hirebot (FINAL_STRETCH, $19,857 mcap, $2,643 5m vol): REJECT, Dev holds 5.0% (>1%) (V13, V17)  
+  CA `CSjN4T4mm3m18MwUrxzhM3sZL5wJeUEuwqUFJ1S7pump`
 - 20:44Z AMD (MIGRATED, $903,191 mcap, $5,045 5m vol): PASS at conviction 3, PASS: AMD is not the flow leader of its own vamp field. The 12-copy "always moist" theme does $32.7k on 5m and AMD does $5k of it. Fails the bottom-buy gate too. (V1, V13)  
   CA `5tdWkbqhTqVyPmksqX8WVKrHbjjqmvQfrMGwZoZPpump`
-- 20:42Z ABTC (MIGRATED, $39,578 mcap, $65,495 5m vol): PASS at conviction 2, PASS: four minutes old, no printed higher low, and one bundle cluster at 11.5% in an 18-copy vamp field. Blocker "too new" with "split crowd" behind it. Watch it, don't buy it. (V1, V3, V6)  
-  CA `DRVhtx9ktSecBXRVD35RkQQHo8ugcSz9gYmxjevnpump`
-- 20:40Z GTA (MIGRATED, $419,617 mcap, $75,708 5m vol): PASS at conviction 4, PASS — first resistance is only 1.26x away ($531k peak) and no higher low has printed off the hourly low. Leader of a GTA-name cluster, but it's 15 minutes old and still a MIGRATED bounce without structure. (V1, V6)  
-  CA `7F8BkfhPaDGMeNkaYeVa99WAqo86LpXDKsLQXpM7pump`
-- 20:39Z Aren (MIGRATED, $91,344 mcap, $71,125 5m vol): REJECT, Top 10 hold 25.2% ex-pool (>25%) (V13)  
-  CA `HkyNkVXpJWg1H7hAWjnSW58J22Cx7gnWwUHhFtf5pump`
-- 20:33Z ORBIE (MIGRATED, $183,277 mcap, $3,251 5m vol): REJECT, RugCheck danger: Single holder ownership 60.14%  
-  CA `HEb2dwDNbBhnrCusoNXXvba9MymYTTmMQcHKaptxmfun`
-- 20:30Z PAD (MIGRATED, $40,325 mcap, $3,796 5m vol): PASS at conviction 3, PASS: one-minute-old migrated "MCP tech" token with $3.8k 5m flow, 0.33x its theme's pace, a 1-day-old domain and no code. Blocker: "too new" plus "flow below pace" and "dead story" (V1, V6, V13).  
-  CA `2qTqXQ4vB72PEn7JTwa2N4k8puX7AsxHXUnMwLngwvPY`
-- 20:30Z ABTC (MIGRATED, $32,427 mcap, $17,896 5m vol): REJECT, RugCheck danger: Large Amount of LP Unlocked 100.00%  
-  CA `ERs7y4nMGLFVmHcXyDxiS7iDKpp4jWHz2VUuE2gxpump`
-- 20:25Z Joe (MIGRATED, $78,319 mcap, $23,346 5m vol): REJECT, Top 10 hold 25.7% ex-pool (>25%) (V13)  
-  CA `J1jZ2kLdEXwkr5sNMRyg8bTtmAMQDxE71JYQCqSqCrsu`
-- 20:18Z MALA (FINAL_STRETCH, $19,541 mcap, $21,554 5m vol): PASS at conviction 3, PASS — 8-minute-old pump.fun kangaroo copy, +212% in the hour, 3.9x hourly pace, no printed higher low, 27 same-theme copies. Chasing a spike in a split crowd (V1, V6).  
-  CA `4tQzwzDS6sraijcovNbuMCxUuqcGWcJnBz25PUmTpump`
-- 20:13Z VI (DIP, $470,335 mcap, $4,212 5m vol): PASS at conviction 3, PASS: Vice Inu is a DIP in an inu vamp field where AI has the flow, the theme runs at 0.2x pace, and nothing is catalyzing a bottom buy (V6, V13).  
-  CA `FpWWSqLNrjTTMDM41EXkvBmHBDkNdWrf9RwHL57xpump`
 
 ## What its skips did next (last 48h)
 A skip "ran" if the coin reached the first target (1.5x) from the skip price before a 20% drop, "dumped" if the drop came first. Sampled every 10 min, followed 6h.
-- top 10 over 25%: blocked 69, ran 11, dumped 55, flat 1, open 2 (saving losses: keep it)
-  - ran: GODHOUSE up to 3.19x  
-    CA `CSGTuLtWhCfGZ5S5TvASQ6a5su91NCfRpNqfPczfpump`
+- top 10 over 25%: blocked 70, ran 11, dumped 54, flat 1, open 4 (saving losses: keep it)
   - ran: KYBER up to 1.83x  
     CA `BasL6j1MNkjFyuvRRFsmbm3bKqFPr6Yg3UhShii6pump`
   - ran: WIF up to 1.67x  
     CA `E7ayy5Se6gjwCNtw9NP629AucnTgqab4SSmSxDpUpump`
-- too new / sniping: blocked 66, ran 10, dumped 53, flat 1, open 2 (saving losses: keep it)
+  - ran: j*b up to 1.97x  
+    CA `7uHBhrdN1UNf1vggnvoZMHVA6Du4NQe2USP2oMnYpump`
+- too new / sniping: blocked 66, ran 12, dumped 53, flat 1, open 0 (saving losses: keep it)
   - ran: ANSEMKIN up to 2.57x  
     CA `zD3jimD97YkcjMucBEmwZ6fUV7N4wjzz8Revkwmpump`
   - ran: Darth up to 1.76x  
     CA `7xgnrvzn6DvfdzFcpLuybg2GQwHg933Np5kMjx4qpump`
   - ran: SNOWMEI up to 1.76x  
     CA `ETVD787UcTkJqrhZMt15bVet7CQ4SDzCga7DfBm8pump`
-- flow below pace: blocked 56, ran 10, dumped 37, flat 3, open 6 (saving losses: keep it)
+- flow below pace: blocked 54, ran 10, dumped 35, flat 3, open 6 (saving losses: keep it)
   - ran: ZERO up to 1.61x  
     CA `Aes6XNH9BboLZuchD5PnDwaX6Zj1nU79TU3gNtPEpump`
   - ran: Wanted up to 1.53x  
     CA `8oUGdPdyxVaCSJSZpcVZuxqoyiZAmc2Z22FsDRZ3pump`
   - ran: METEORITE up to 1.58x  
     CA `67RBmGztx8ciVyWr8yi6R8fwrc3EG86XejYT7mespump`
-- near the high / chasing: blocked 41, ran 7, dumped 30, flat 2, open 2 (saving losses: keep it)
+- near the high / chasing: blocked 39, ran 7, dumped 28, flat 2, open 2 (saving losses: keep it)
   - ran: underdog up to 1.64x  
     CA `BZXh2LcnNNyypxsdfVeFzXawqmoGoSShC5i4NEQQpump`
   - ran: LUCIA up to 1.83x  
     CA `Cbtnpg6SL9jvZxtZTYYFPtVQXkuuqSUxCU5aXeTkpump`
   - ran: AMD up to 2.02x  
     CA `3MfZ4URVxmB4mfPuy4AxUxpcC5U7aXe7TDA7XVoGpump`
-- RugCheck danger: blocked 26, ran 3, dumped 18, flat 2, open 3 (saving losses: keep it)
+- RugCheck danger: blocked 26, ran 5, dumped 18, flat 2, open 1 (saving losses: keep it)
   - ran: Wanted up to 1.53x  
     CA `8oUGdPdyxVaCSJSZpcVZuxqoyiZAmc2Z22FsDRZ3pump`
   - ran: RAM up to 1.63x  
     CA `72QNkZqiTBsq5dvn4DEwaC5qBPDkc7SZJ38xXy4jpump`
   - ran: $LIBCOIN up to 1.54x  
     CA `2UxjHoidyefQxJrCS8qT23JsbqKFcpPCa8ywBYZupump`
-- falling knife (code): blocked 23, ran 2, dumped 20, flat 0, open 1 (saving losses: keep it)
+- falling knife (code): blocked 23, ran 3, dumped 20, flat 0, open 0 (saving losses: keep it)
   - ran: DESSA up to 1.54x  
     CA `npz2FhoufQ7pKqhGpaipYWacrAkidyW2yDpVWSvpump`
   - ran: RATIO up to 1.51x  
     CA `3JdeP1VBHgRPunmjTj1D6w6ZZePwGAwjUr2tCufwpump`
-- bundles over the line: blocked 19, ran 1, dumped 15, flat 3, open 0 (saving losses: keep it)
-  - ran: MAMESUKE up to 1.95x  
-    CA `SCGBBnSwnekytGFHgyeHHxPMiN7xDxsWFGg9JgFSTNK`
-- falling knife / no higher low: blocked 17, ran 3, dumped 11, flat 2, open 1 (saving losses: keep it)
+  - ran: ORBIE up to 1.83x  
+    CA `HEb2dwDNbBhnrCusoNXXvba9MymYTTmMQcHKaptxmfun`
+- falling knife / no higher low: blocked 19, ran 3, dumped 11, flat 2, open 3 (saving losses: keep it)
   - ran: DESSA up to 1.54x  
     CA `npz2FhoufQ7pKqhGpaipYWacrAkidyW2yDpVWSvpump`
   - ran: HEDGE up to 1.77x  
     CA `wDSAqt4tEZpDAwB9XY6ejkZvMFuT1zUMjUh67txeYhf`
   - ran: MEOWNERO up to 1.76x  
     CA `6gnB2H2hbTVvKUWCzNuqjWY8Rod6EVBmfHi7YxZpTWa7`
+- bundles over the line: blocked 19, ran 1, dumped 15, flat 3, open 0 (saving losses: keep it)
+  - ran: MAMESUKE up to 1.95x  
+    CA `SCGBBnSwnekytGFHgyeHHxPMiN7xDxsWFGg9JgFSTNK`
 - thin 5m volume: blocked 16, ran 4, dumped 9, flat 1, open 2 (saving losses: keep it)
   - ran: DESSA up to 1.54x  
     CA `npz2FhoufQ7pKqhGpaipYWacrAkidyW2yDpVWSvpump`
@@ -156,7 +158,7 @@ A skip "ran" if the coin reached the first target (1.5x) from the skip price bef
     CA `9gKArqT6qp3goHfuwAnfG7LioqwUtJ8TFu7P1Bhbpump`
   - ran: MEOWNERO up to 1.76x  
     CA `6gnB2H2hbTVvKUWCzNuqjWY8Rod6EVBmfHi7YxZpTWa7`
-- other: blocked 14, ran 5, dumped 7, flat 1, open 1 (mixed)
+- other: blocked 15, ran 5, dumped 7, flat 1, open 2 (mixed)
   - ran: DESSA up to 1.54x  
     CA `npz2FhoufQ7pKqhGpaipYWacrAkidyW2yDpVWSvpump`
   - ran: FEAR up to 125.22x  
@@ -205,11 +207,11 @@ Meta: fresh pump.fun animal and joke-name launches are pulling flow, mostly as o
 ## Moving most in its scans, last 30 min (1h volume)
 - GTA: $445,198 1h vol, $393,772 mcap, +653% 1h  
   CA `7F8BkfhPaDGMeNkaYeVa99WAqo86LpXDKsLQXpM7pump`
-- Joe: $396,588 1h vol, $67,508 mcap, +83% 1h  
-  CA `J1jZ2kLdEXwkr5sNMRyg8bTtmAMQDxE71JYQCqSqCrsu`
+- DESSA: $246,339 1h vol, $20,021,161 mcap, +19% 1h  
+  CA `npz2FhoufQ7pKqhGpaipYWacrAkidyW2yDpVWSvpump`
 - Aren: $171,135 1h vol, $93,855 mcap, +143% 1h  
   CA `HkyNkVXpJWg1H7hAWjnSW58J22Cx7gnWwUHhFtf5pump`
-- trencher: $78,212 1h vol, $8,158 mcap, -15% 1h  
-  CA `CVBsB9yCQwqqqQwEAvPFCsWwMU3vgT4m75JjRbQ4pump`
-- META: $77,653 1h vol, $3,310 mcap, -20% 1h  
-  CA `8DLiuwsDVdxMTAa1WfAw5PVd9G9j7peMwkgqX7Fzpump`
+- OUR: $93,548 1h vol, $20,289 mcap, +463% 1h  
+  CA `Dcht3Y7BBykVGzcACrBTRriYmGMKisgEMTXJxUY3pump`
+- monke: $93,110 1h vol, $7,481 mcap, -55% 1h  
+  CA `4W9nejfSpTPtLHKbx4GhWGZ1e7YBA1FsKBcgrQRkpump`
