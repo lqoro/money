@@ -1,13 +1,13 @@
 # Trencher live report
 
-Updated 2026-11-04T14:26:04Z (paper trading, never real money)
+Updated 2026-11-04T14:41:23Z (paper trading, never real money)
 
 - Equity: $74.23 (-25.8% vs $100 start)
 - Closed trades: 22, 3 wins
 - Fees paid: $14.78 (axiom $2.81, network $9.18, pool $2.66), plus $4.15 lost to slippage
 - New trades: WATCH-ONLY (scans and decides, buys nothing)
-- Brain: subscription, claude-haiku-5-5 for routine calls, claude-opus-5-5 for the daily review; 472 routine calls and 1 plan-limit hits in 48h
-- Watch log: 93 coins being followed, 482 filed, 0 would-buys (6h follow, sampled every 2 min)
+- Brain: subscription, claude-haiku-5-5 for routine calls, claude-opus-5-5 for the daily review; 474 routine calls and 1 plan-limit hits in 48h
+- Watch log: 96 coins being followed, 486 filed, 0 would-buys (6h follow, sampled every 2 min)
 
 ## Scorecard (after fees)
 - 22 closed, 3 won (14%), net $-25.79
@@ -73,54 +73,54 @@ Updated 2026-11-04T14:26:04Z (paper trading, never real money)
   CA `H4gHnZ3NCU7Z9XQwGX6YYJNyieGEW8pqwGRUcdSxpump`
 
 ## Last scan
-- 14:25Z: 7 coins, 5 with pairs, 0 passed the market filters, 0 researched
+- 14:40Z: 8 coins, 6 with pairs, 1 passed the market filters, 1 researched
 
 ## Coins it looked at, and why it passed
+- 14:40Z LEOMAN (MIGRATED, $131,136 mcap, $2,661 5m vol): PASS at conviction 3, PASS: flow below pace ($2.7k 5m at 0.78x the hourly average) and the first resistance is only 1.29x away. The theme is cooling and the site is 2 hours old. Sawtooth, not a higher low (V1, V3, V13).  
+  CA `CPZguakzrJSPZDvyB2BY7wdk25eKFwuwtYxSPYHmpump`
+- 14:38Z RAMBO (MIGRATED, $942,196 mcap, $12,039 5m vol): PASS at conviction 2, PASS: RAMBO is 5.7% off its $999k high, sellers hold the last hour (1h 710 buys vs 1,763 sells, 5m buy share 0.43), and the first resistance is 1.06x away. Blockers: "chasing", "target too close". (V1, V6)  
+  CA `KMifrkYmDdAKtVXAVBEPEQxJ7qP2iLgUcfZjUZipump`
+- 14:37Z SHORT (FINAL_STRETCH, $20,214 mcap, $35,885 5m vol): REJECT, Top 10 hold 25.8% ex-pool (>25%) (V13)  
+  CA `3p2uEerHoGoKyKcUMabNuLdPXrRmFNLign5ybspkpump`
+- 14:36Z HELL (MIGRATED, $2,924,322 mcap, $3,184 5m vol): PASS at conviction 2, PASS: target too close. The prior high is only 1.29x from here, 5m flow is $3.2k with buys even with sells, and the GTA6 riff is cooling. (V1, V6)  
+  CA `A75Xx6SeftAmWduv9KGwb2GCjXUAhxozcCUCys9jpump`
+- 14:32Z PAIRITY (MIGRATED, $36,293 mcap, $11,608 5m vol): PASS at conviction 2, PASS: flow below pace, 74% off the high, no bottom-buy catalyst. Pairity is a 13-day-old AI-claim launchpad with no GitHub. Not this one (V1, V6).  
+  CA `CaQR7CNrXvXaFQLC2ChWBZHpUed4EYfVVJxjR34ipair`
+- 14:31Z PREFIRE (FINAL_STRETCH, $20,400 mcap, $24,204 5m vol): REJECT, Top 10 hold 27.4% ex-pool (>25%) (V13)  
+  CA `3vajh3wXe3EuLSXfSaCikyoCnzyhUJ3KPSoFhyAgpump`
+- 14:28Z AI (no setup, $38,183 mcap, $84,347 5m vol): REJECT, No setup fits: not Final Stretch, not a migrated runner, not a healthy dip  
+  CA `2f6TQQHxce6DuaoRD5U4V621KAFjMaWCvgAJ363bpump`
 - 14:24Z ANONVOYAGE (MIGRATED, $141,010 mcap, $10,894 5m vol): REJECT, Bundles: 10 linked wallet cluster(s) hold 50.3% of supply (>20%) (V17)  
   CA `8muc9DdhqWfAPcvmEebNQCG89bLiwi12T2KtBtzVpump`
 - 14:23Z BunThing (DIP, $36,123 mcap, $2,916 5m vol): REJECT, Top 10 hold 26.7% ex-pool (>25%) (V13)  
   CA `29jQSLyMDP3y1DRkVDVi4FxyeR66p5JCMqsaifMEpump`
 - 14:22Z STARMIND (MIGRATED, $37,407 mcap, $8,234 5m vol): REJECT, Top 10 hold 25.2% ex-pool (>25%) (V13)  
   CA `B2hrd6M7z4xaY4Cxe6eYBSedmYxDhyFDaEAaLyZhpump`
-- 14:20Z Stonked (MIGRATED, $39,894 mcap, $7,446 5m vol): REJECT, Top 10 hold 26.2% ex-pool (>25%) (V13)  
-  CA `PPMPyWTbpVMJysBoHdDj6acQNbM4Y6eD7omhxPwtXtG`
-- 14:20Z TOLY (MIGRATED, $61,969 mcap, $41,182 5m vol): PASS at conviction 3, PASS: split crowd. TOLY is one of 19 "toly" copies, the bundle cluster is 4.55% and 5m flow is 57% buys with the last 5m down 30%. Name-only impersonation of a real person, no official token found (V1, V3, V13).  
-  CA `CttHJahfpRU3V1cAMKDCPcN3L8sNikgLWREWYg6Cpump`
-- 14:18Z WASTED (DIP, $741,253 mcap, $6,115 5m vol): REJECT, Dev holds 3.5% (>1%) (V13, V17)  
-  CA `GexThZHgaswpAQ7Fi8QrHFubjPimUNSYhJiAA7XZpump`
-- 14:17Z $LIBCOIN (MIGRATED, $31,647 mcap, $2,064 5m vol): REJECT, RugCheck danger: Top 10 holders high ownership  
-  CA `2UxjHoidyefQxJrCS8qT23JsbqKFcpPCa8ywBYZupump`
-- 14:15Z FLOAT (DIP, $2,402,033 mcap, $1,998 5m vol): REJECT, 5m volume $1,998 is dead (<$2,000) (V1)  
-  CA `Bv1a7cEj5aRnJQhMw4kRQqAFesMSd5LwcDnUzq52BMmr`
-- 14:11Z AMD (DIP, $1,354,880 mcap, $4,504 5m vol): REJECT, Dip with fading attention is a falling knife, not a dip (5m at 0.39x the hour's pace, under 0.6x)  
-  CA `DDmGnuvroxVrb7CSyjYcezFU8gnAfhKasg4ZZezmpump`
-- 14:09Z MONKAI (MIGRATED, $72,395 mcap, $2,011 5m vol): PASS at conviction 2, PASS: MONKAI is 4% off its high on $2k of 5m flow at 0.67x pace, one of four copies, under an hour old. Blockers: chasing, flow below pace, too new. (V1, V6)  
-  CA `3jXeQDkmM1N7gAS3iubWwmZTaAS4hdMDJ5e5B2uswWaK`
 
 ## What its skips did next (last 48h)
 A skip "ran" if the coin reached the first target (1.5x) from the skip price before a 20% drop, "dumped" if the drop came first. Sampled every 10 min, followed 6h.
-- too new / sniping: blocked 68, ran 13, dumped 54, flat 0, open 1 (saving losses: keep it)
+- too new / sniping: blocked 67, ran 13, dumped 53, flat 0, open 1 (saving losses: keep it)
   - ran: Marutaro up to 1.62x  
     CA `At3jYPUKVEFYrss5a58myVuqKLjGxMuBP5MwqMk9pump`
   - ran: MameStonk up to 1.67x  
     CA `57eJSmN1ecANrnZjGPrXzWUMyGhQsQgMS9eHdxM3pump`
   - ran: KOROSUKE up to 1.54x  
     CA `7ha4HFgdvkXaDcR2biCsuBpoCZzoLSRjb5we34Gbpump`
-- top 10 over 25%: blocked 66, ran 11, dumped 49, flat 3, open 3 (saving losses: keep it)
+- top 10 over 25%: blocked 66, ran 11, dumped 50, flat 3, open 2 (saving losses: keep it)
   - ran: GODHOUSE up to 3.19x  
     CA `CSGTuLtWhCfGZ5S5TvASQ6a5su91NCfRpNqfPczfpump`
   - ran: KYBER up to 1.83x  
     CA `BasL6j1MNkjFyuvRRFsmbm3bKqFPr6Yg3UhShii6pump`
   - ran: WIF up to 1.67x  
     CA `E7ayy5Se6gjwCNtw9NP629AucnTgqab4SSmSxDpUpump`
-- flow below pace: blocked 51, ran 11, dumped 33, flat 6, open 1 (saving losses: keep it)
+- flow below pace: blocked 52, ran 11, dumped 32, flat 6, open 3 (saving losses: keep it)
   - ran: KOROSUKE up to 1.54x  
     CA `7ha4HFgdvkXaDcR2biCsuBpoCZzoLSRjb5we34Gbpump`
   - ran: CAPY up to 1.51x  
     CA `DBPTU2oKLDHXQjAEJ3rZi8bUGmt2uxUbipgg6xmXoMqr`
   - ran: ZERO up to 1.61x  
     CA `Aes6XNH9BboLZuchD5PnDwaX6Zj1nU79TU3gNtPEpump`
-- near the high / chasing: blocked 39, ran 6, dumped 30, flat 3, open 0 (saving losses: keep it)
+- near the high / chasing: blocked 39, ran 6, dumped 29, flat 3, open 1 (saving losses: keep it)
   - ran: underdog up to 1.64x  
     CA `BZXh2LcnNNyypxsdfVeFzXawqmoGoSShC5i4NEQQpump`
   - ran: LUCIA up to 1.83x  
@@ -150,9 +150,13 @@ A skip "ran" if the coin reached the first target (1.5x) from the skip price bef
 - falling knife / no higher low: blocked 15, ran 1, dumped 9, flat 4, open 1 (saving losses: keep it)
   - ran: HEDGE up to 1.77x  
     CA `wDSAqt4tEZpDAwB9XY6ejkZvMFuT1zUMjUh67txeYhf`
-- dev share over 1%: blocked 12, ran 1, dumped 6, flat 2, open 3 (saving losses: keep it)
-  - ran: Firecube up to 1.88x  
-    CA `Ebih1KdijjpQBaM83gUfGhRtTCpHzDkBZhCZedZwpump`
+- other: blocked 14, ran 5, dumped 7, flat 1, open 1 (mixed)
+  - ran: FEAR up to 125.22x  
+    CA `CHtXwJ3qa2ozS9vQkxhR3MmNwkoUqkh3icGXgZPepump`
+  - ran: Slingoor up to 1.58x  
+    CA `AYDL7DTa6AidQ1nUSAEAnzVAFDDewDXbSyy8Hh2wpump`
+  - ran: ZERO up to 1.61x  
+    CA `Aes6XNH9BboLZuchD5PnDwaX6Zj1nU79TU3gNtPEpump`
 
 ## Daily review (2026-11-04, claude-opus-5-5)
 No. After costs, every bucket loses money. Across 355 settled coins the simple plan (sell at 1.5x or -20%) averaged -10.1%, and before costs it was only about +0.4%. So the 10.5% round-trip cost on a $10 buy is the whole loss, and no group gets close to clearing it. The best group is MIGRATED at -8.1% net (about +2.3% before costs). With ~355 samples the all-coin result is clearly below zero, about -10% ± 3%. But the samples overlap: the same coin gets logged more than once, a few metas cluster, and it's all one market day. So the real uncertainty is wider, and a single day can't show any subgroup edge. The question about would-buys can't be answered: the routine model made zero BUY calls (would_buy n=0) and said PASS on all 181 coins it reviewed. Those passed coins ran more often than the checklist rejects (30.4% vs 16.1%) and lost less (-7.2% vs -13.1% net). That says the checklist filters somewhat, but nothing here is buyable.
@@ -193,13 +197,13 @@ No. After costs, every bucket loses money. Across 355 settled coins the simple p
 Meta, 2026-11-04: the loud lane is fresh pumpswap launches getting volume with buyers in control. PAIRITY (+168% 1h, $25k 5m on a $103k cap, 57% buys, 0.4h old), TOLY ($26k 5m on $36k, 58% buys, minutes old) and ANONVOYAGE ($18k 5m on $290k, 76% buys, 24h old) lead it. IMPEACH ($15.6k 5m, +193% 1h) is pulling flow on a political-joke theme but only 48% buys, so sellers still have the chart. The animal and dog lane is fading: The Chihuahua, CADENCE and PUMP10 are down 50-80% in an hour with almost no 5m volume, and the GTA6 riff is cooling too (GTA6CAT at $10.9M with $6.9k 5m and 35% buys; GTA6DOG at $622 5m). Setups to research, not buy: PAIRITY first, since it clears the MIGRATED bar (under 12h, over $30k cap, over $10k 5m, 57% buys), with holder, dev and bundle checks still to run; TOLY second only if its 5m holds above $10k with buys over 60%. The crawler summary cites A Meme Dog, GTA6DOG at $22.7k 5m, AMD and other coins that are not in this scan, and its numbers do not match scan_movers, so I worked from scan_movers only. No hack-named coins here. IMPEACH is a political theme, not a block by itself, but if a politician posted its CA it is a stay-away (V13). Paper trading, not financial advice.
 
 ## Moving most in its scans, last 30 min (1h volume)
+- PAIRITY: $499,861 1h vol, $39,264 mcap, -58% 1h  
+  CA `CaQR7CNrXvXaFQLC2ChWBZHpUed4EYfVVJxjR34ipair`
 - TOLY: $385,139 1h vol, $61,969 mcap, +75% 1h  
   CA `CttHJahfpRU3V1cAMKDCPcN3L8sNikgLWREWYg6Cpump`
 - ANONVOYAGE: $248,159 1h vol, $141,010 mcap, -40% 1h  
   CA `8muc9DdhqWfAPcvmEebNQCG89bLiwi12T2KtBtzVpump`
-- Impeach: $167,587 1h vol, $1,786 mcap, -97% 1h  
-  CA `Hm6ADi76B6aenNsmazi9xVqhvk1PvvDf2yr9yZhDpump`
 - AMD: $139,878 1h vol, $1,356,655 mcap, -20% 1h  
   CA `DDmGnuvroxVrb7CSyjYcezFU8gnAfhKasg4ZZezmpump`
-- SOLUNA: $123,947 1h vol, $2,034 mcap, -94% 1h  
-  CA `3brY153eRNKLxUY3zfBYW9LvarfHUFhgSW66tbQupump`
+- GATO: $126,556 1h vol, $11,349,258 mcap, +2% 1h  
+  CA `HsprHxBRgiVaQdRf3TnKNuZZtaX9JUSPgMFdAkk6pump`
