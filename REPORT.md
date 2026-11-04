@@ -1,13 +1,13 @@
 # Trencher live report
 
-Updated 2026-11-04T22:16:09Z (paper trading, never real money)
+Updated 2026-11-04T22:31:43Z (paper trading, never real money)
 
 - Equity: $74.23 (-25.8% vs $100 start)
 - Closed trades: 22, 3 wins
 - Fees paid: $14.78 (axiom $2.81, network $9.18, pool $2.66), plus $4.15 lost to slippage
 - New trades: WATCH-ONLY (scans and decides, buys nothing)
-- Brain: subscription, claude-haiku-5-5 for routine calls, claude-opus-5-5 for the daily review; 495 routine calls and 1 plan-limit hits in 48h
-- Watch log: 120 coins being followed, 613 filed, 0 would-buys (6h follow, sampled every 2 min)
+- Brain: subscription, claude-haiku-5-5 for routine calls, claude-opus-5-5 for the daily review; 499 routine calls and 1 plan-limit hits in 48h
+- Watch log: 123 coins being followed, 619 filed, 0 would-buys (6h follow, sampled every 2 min)
 
 ## Scorecard (after fees)
 - 22 closed, 3 won (14%), net $-25.79
@@ -73,54 +73,54 @@ Updated 2026-11-04T22:16:09Z (paper trading, never real money)
   CA `H4gHnZ3NCU7Z9XQwGX6YYJNyieGEW8pqwGRUcdSxpump`
 
 ## Last scan
-- 22:15Z: 5 coins, 5 with pairs, 0 passed the market filters, 0 researched
+- 22:30Z: 2 coins, 2 with pairs, 1 passed the market filters, 1 researched
 
 ## Coins it looked at, and why it passed
+- 22:31Z VI (DIP, $349,660 mcap, $5,781 5m vol): PASS at conviction 4, PASS — Vice Inu is a 69% dip with a real catalyst 15 days out, but the story is fading on the radar, the 5m is under $10k, the domain is under a day old, and the bottom-buy gate needs a rising narrative. Blocker: "narrative not rising" (V1, V13).  
+  CA `FpWWSqLNrjTTMDM41EXkvBmHBDkNdWrf9RwHL57xpump`
+- 22:29Z GDA (FINAL_STRETCH, $28,554 mcap, $36,621 5m vol): REJECT, Top 10 hold 25.7% ex-pool (>25%) (V13)  
+  CA `F1FiJdqfUzEx8BtfdSCRwGwrKBAZHJs6JkNEfVYYpump`
+- 22:28Z JOB (MIGRATED, $3,593,465 mcap, $5,518 5m vol): PASS at conviction 3, PASS: flow below pace, no printed higher low, and a bottom buy on a theme the radar doesn't name. It's a copy in an 8-coin vamp field. (V1, V6, V13)  
+  CA `9Pq7aLAbhDG2tTnS22cm6kuysZVcZpLFE368HWuypump`
+- 22:26Z nuLL (DIP, $134,710 mcap, $11,128 5m vol): REJECT, Dev holds 5.2% (>1%) (V13, V17)  
+  CA `A72sK9mPWTvU4f5RQFy7upBCeJi9HZx3Q2Wgr7QBnuLL`
+- 22:26Z MSFT (MIGRATED, $35,931 mcap, $12,335 5m vol): PASS at conviction 2, PASS: "Microsoft" (MSFT) is down 47% from a $68k peak in 11 minutes, with no printed higher low and no story on the radar. Too new, falling knife (V1, V6).  
+  CA `CggrqcmnVyppSAgyaVMDPrESybPHhq9dZgVV788Vpump`
+- 22:19Z RICO (DIP, $227,828 mcap, $2,388 5m vol): PASS, PASS — brain unavailable, not trading blind.  
+  CA `8kuQg3WivDtL85VEdw2jEmSXjYt6EEeYBATJ4DtQpump`
+- 22:17Z AMD (MIGRATED, $899,041 mcap, $5,344 5m vol): PASS at conviction 3, PASS — bottom buy on a theme running at 0.82x its hourly pace, no catalyst, no printed higher low, and it's one of 10 same-ticker copies. Blocker: "theme volume below pace." (V1, V6, V13)  
+  CA `5tdWkbqhTqVyPmksqX8WVKrHbjjqmvQfrMGwZoZPpump`
+- 22:16Z Root (MIGRATED, $50,912 mcap, $19,452 5m vol): PASS at conviction 3, PASS: Root is a 4-minute-old migration sitting on its high, with more sells than buys (151 vs 198) and no printed higher low. It is one of 15 same-ticker copies, and the site shows other CAs. Blocker: "chasing" plus "flow below pace" (V1, V6, V13).  
+  CA `4NHomKfjdKknD19BVz7ebWMoKCQeZb1cx6DWkoxapump`
+- 22:16Z Democat (MIGRATED, $548,624 mcap, $122,242 5m vol): PASS at conviction 4, PASS — chasing spike. The 5m candle is up 33% and the coin sits 2% off a 26-minute-old peak, with no printed higher low above an hourly low 10x beneath price. The site doesn't show this CA and is 7 hours old. (V1, V6, V13)  
+  CA `9Y1F6dZ6HpjZDYZdYuUGwMbkUiPsyU7WPTqTQU4Tpump`
 - 22:11Z GTA (MIGRATED, $2,654,921 mcap, $14,086 5m vol): PASS at conviction 4, PASS: flow below pace (0.47x hourly), no bottom-buy catalyst on a fading theme, and a $2.65M cap with the first resistance only 1.42x away. The site is 0.1 days old and doesn't show this CA. Farm-shaped, not a setup (V1, V6, V13).  
   CA `7F8BkfhPaDGMeNkaYeVa99WAqo86LpXDKsLQXpM7pump`
-- 22:02Z AMC (MIGRATED, $64,207 mcap, $31,264 5m vol): PASS at conviction 3, PASS — one minute old, up 44% in 5 minutes and sitting on its own high. That's a spike being chased, not a pullback (V1, V6).  
-  CA `A4U3vQSiF6cG7uEgKViYk2KVBsfJAHM4kqD9Us5fpump`
-- 22:02Z Sasha (MIGRATED, $115,783 mcap, $65,062 5m vol): PASS at conviction 3, PASS — 17 minutes old, down 21% on the 5m with no printed higher low, and the theme is running below its hourly pace. Blocker: "no higher low" plus "chasing spike" (5m at 3.1x pace after +192% in the hour). Wait for it. (V1, V6)  
-  CA `5ooMWLgkiCHR5tSgcU9b43ESwwY3qXXWoxLC4Q6gPmoT`
-- 21:57Z PI (MIGRATED, $46,403 mcap, $21,057 5m vol): REJECT, Top 10 hold 47.5% ex-pool (>25%) (V13)  
-  CA `G4bjr2e9BwqkPxfjUfpsk3B8ySvNYq4rBu2RrQMJpump`
-- 21:55Z FED (MIGRATED, $46,200 mcap, $4,006 5m vol): PASS at conviction 2, PASS: 16-minute-old copy in a 25-coin "cat/fed" field, 5m flow at 0.5x its hourly pace, no catalyst and no X. Blocked on flow and crowd. Farm bait until proven otherwise. (V1, V6, V13)  
-  CA `88JgZHVfWtdfhXqZbgb4ZniwSQ3UWnGh2Qv882mxmece`
-- 21:53Z GATO (MIGRATED, $10,850,787 mcap, $5,985 5m vol): REJECT, Dev holds 3.3% (>1%) (V13, V17)  
-  CA `HsprHxBRgiVaQdRf3TnKNuZZtaX9JUSPgMFdAkk6pump`
-- 21:53Z WASTED (DIP, $668,994 mcap, $8,479 5m vol): PASS at conviction 2, PASS: bottom buy on a dead theme. "wasted" runs at 0.14x its 20-coin theme pace, and the story isn't on the radar. (DIP, owner rule)  
-  CA `GexThZHgaswpAQ7Fi8QrHFubjPimUNSYhJiAA7XZpump`
-- 21:45Z VI (MIGRATED, $314,603 mcap, $5,207 5m vol): PASS at conviction 3, PASS. Deep dip (72% off a $1.14M high) on a fading story, with 5m flow under the $10k bar. A falling knife with a placeholder website (V1, V6, V13).  
-  CA `FpWWSqLNrjTTMDM41EXkvBmHBDkNdWrf9RwHL57xpump`
-- 21:43Z JOB (MIGRATED, $4,455,058 mcap, $7,045 5m vol): PASS at conviction 2, PASS. Flow below pace, the first resistance is 1.15x away, and the site doesn't show this CA. Eight copies of the ticker. (V1, V3, V6)  
-  CA `9Pq7aLAbhDG2tTnS22cm6kuysZVcZpLFE368HWuypump`
-- 21:36Z TAKE1 (FINAL_STRETCH, $25,344 mcap, $3,384 5m vol): PASS at conviction 2, PASS. Take1 is a 14-copy same-ticker field with $3.4k of 5m volume, 0.1x its theme's pace, and a site that doesn't show this CA. Blocker: thin 5m volume and no live story. (V1, V6, V13)  
-  CA `BT3fJYBgfKbsWrrvCQtgnSw37pxtZcAv7AK6jkSepump`
 
 ## What its skips did next (last 48h)
 A skip "ran" if the coin reached the first target (1.5x) from the skip price before a 20% drop, "dumped" if the drop came first. Sampled every 10 min, followed 6h.
-- top 10 over 25%: blocked 68, ran 12, dumped 53, flat 1, open 2 (saving losses: keep it)
+- top 10 over 25%: blocked 69, ran 12, dumped 53, flat 1, open 3 (saving losses: keep it)
   - ran: KYBER up to 1.83x  
     CA `BasL6j1MNkjFyuvRRFsmbm3bKqFPr6Yg3UhShii6pump`
   - ran: WIF up to 1.67x  
     CA `E7ayy5Se6gjwCNtw9NP629AucnTgqab4SSmSxDpUpump`
   - ran: j*b up to 1.97x  
     CA `7uHBhrdN1UNf1vggnvoZMHVA6Du4NQe2USP2oMnYpump`
-- too new / sniping: blocked 64, ran 8, dumped 55, flat 1, open 0 (saving losses: keep it)
+- too new / sniping: blocked 65, ran 8, dumped 55, flat 1, open 1 (saving losses: keep it)
   - ran: SNOWMEI up to 1.76x  
     CA `ETVD787UcTkJqrhZMt15bVet7CQ4SDzCga7DfBm8pump`
   - ran: GTAVI up to 2.31x  
     CA `HekahVohmeokPUhscg5taNme3Qs2fcSQoNgEeUPMpump`
   - ran: PEPTDOG up to 1.88x  
     CA `GExwMYa2tnJwGfKTmzR4ERiQKptfNceN9GTXc82Lpump`
-- flow below pace: blocked 56, ran 11, dumped 37, flat 4, open 4 (saving losses: keep it)
+- flow below pace: blocked 57, ran 11, dumped 37, flat 4, open 5 (saving losses: keep it)
   - ran: ZERO up to 1.61x  
     CA `Aes6XNH9BboLZuchD5PnDwaX6Zj1nU79TU3gNtPEpump`
   - ran: Wanted up to 1.53x  
     CA `8oUGdPdyxVaCSJSZpcVZuxqoyiZAmc2Z22FsDRZ3pump`
   - ran: METEORITE up to 1.58x  
     CA `67RBmGztx8ciVyWr8yi6R8fwrc3EG86XejYT7mespump`
-- near the high / chasing: blocked 38, ran 7, dumped 27, flat 3, open 1 (saving losses: keep it)
+- near the high / chasing: blocked 39, ran 7, dumped 27, flat 3, open 2 (saving losses: keep it)
   - ran: underdog up to 1.64x  
     CA `BZXh2LcnNNyypxsdfVeFzXawqmoGoSShC5i4NEQQpump`
   - ran: LUCIA up to 1.83x  
@@ -144,13 +144,6 @@ A skip "ran" if the coin reached the first target (1.5x) from the skip price bef
 - bundles over the line: blocked 19, ran 1, dumped 15, flat 3, open 0 (saving losses: keep it)
   - ran: MAMESUKE up to 1.95x  
     CA `SCGBBnSwnekytGFHgyeHHxPMiN7xDxsWFGg9JgFSTNK`
-- thin 5m volume: blocked 16, ran 4, dumped 10, flat 1, open 1 (saving losses: keep it)
-  - ran: DESSA up to 1.54x  
-    CA `npz2FhoufQ7pKqhGpaipYWacrAkidyW2yDpVWSvpump`
-  - ran: 404 up to 1.89x  
-    CA `9gKArqT6qp3goHfuwAnfG7LioqwUtJ8TFu7P1Bhbpump`
-  - ran: MEOWNERO up to 1.76x  
-    CA `6gnB2H2hbTVvKUWCzNuqjWY8Rod6EVBmfHi7YxZpTWa7`
 - falling knife / no higher low: blocked 16, ran 3, dumped 9, flat 2, open 2 (saving losses: keep it)
   - ran: DESSA up to 1.54x  
     CA `npz2FhoufQ7pKqhGpaipYWacrAkidyW2yDpVWSvpump`
@@ -165,6 +158,13 @@ A skip "ran" if the coin reached the first target (1.5x) from the skip price bef
     CA `CHtXwJ3qa2ozS9vQkxhR3MmNwkoUqkh3icGXgZPepump`
   - ran: ZERO up to 1.61x  
     CA `Aes6XNH9BboLZuchD5PnDwaX6Zj1nU79TU3gNtPEpump`
+- thin 5m volume: blocked 15, ran 4, dumped 9, flat 1, open 1 (saving losses: keep it)
+  - ran: DESSA up to 1.54x  
+    CA `npz2FhoufQ7pKqhGpaipYWacrAkidyW2yDpVWSvpump`
+  - ran: 404 up to 1.89x  
+    CA `9gKArqT6qp3goHfuwAnfG7LioqwUtJ8TFu7P1Bhbpump`
+  - ran: MEOWNERO up to 1.76x  
+    CA `6gnB2H2hbTVvKUWCzNuqjWY8Rod6EVBmfHi7YxZpTWa7`
 
 ## Daily review (2026-11-04, claude-opus-5-5)
 No. After costs, every bucket loses money. Across 355 settled coins the simple plan (sell at 1.5x or -20%) averaged -10.1%, and before costs it was only about +0.4%. So the 10.5% round-trip cost on a $10 buy is the whole loss, and no group gets close to clearing it. The best group is MIGRATED at -8.1% net (about +2.3% before costs). With ~355 samples the all-coin result is clearly below zero, about -10% ± 3%. But the samples overlap: the same coin gets logged more than once, a few metas cluster, and it's all one market day. So the real uncertainty is wider, and a single day can't show any subgroup edge. The question about would-buys can't be answered: the routine model made zero BUY calls (would_buy n=0) and said PASS on all 181 coins it reviewed. Those passed coins ran more often than the checklist rejects (30.4% vs 16.1%) and lost less (-7.2% vs -13.1% net). That says the checklist filters somewhat, but nothing here is buyable.
@@ -205,13 +205,13 @@ No. After costs, every bucket loses money. Across 355 settled coins the simple p
 Meta right now is cat coins plus Bitcoin/satoshi names, mostly launched in the last one to two hours. The cat cluster is Sasha "Bitcoin cat" ($126k cap, $61k 5m, 56% buys, +217% 1h), FED Fedora Cat, GG Golden Goose and GATO GTA6CAT, with the satoshi-name cluster (satoshi/Len Sassaman, Central Intelligence) riding alongside. Joke and event-hook launches like AMC "Another Meme Coin" ($28k cap, $55k 5m, 61% buys, +481% in six minutes) are the other fresh flow. Rising with buyers: Sasha, AMC, and GTA "Grab That Ass" ($2.65M cap, $14k 5m, 73% buys) as the bigger, cleaner-flow name. Fading: older $1M+ coins (JOB at 194h, VI at 21h, GATO at 1,713h) doing a few thousand 5m, Sisyphean Leopard down 80% in the hour, and MortgageCoin with zero buys in 5m. Setups to research, no entry: Sasha and AMC first, conviction about 4/10 until holder, dev and bundle checks come back; GTA only if its buyers hold. The crawler's ABTC, Ourcoin and tism figures don't match scan_movers, so I ignored them. $LAPTOP is out: it's tied to a political figure (Hunter Biden). Paper trading only, not financial advice.
 
 ## Moving most in its scans, last 30 min (1h volume)
+- Democat: $780,206 1h vol, $548,624 mcap, +954% 1h  
+  CA `9Y1F6dZ6HpjZDYZdYuUGwMbkUiPsyU7WPTqTQU4Tpump`
 - GTA: $363,256 1h vol, $2,654,921 mcap, +36% 1h  
   CA `7F8BkfhPaDGMeNkaYeVa99WAqo86LpXDKsLQXpM7pump`
 - Sasha: $246,585 1h vol, $125,738 mcap, +217% 1h  
   CA `5ooMWLgkiCHR5tSgcU9b43ESwwY3qXXWoxLC4Q6gPmoT`
-- satoshi: $187,278 1h vol, $11,714 mcap, -70% 1h  
+- PHIL: $233,754 1h vol, $10,332 mcap, -87% 1h  
+  CA `6X6E4frRadiUEcVqUKTyUVS2FhGmwN359TocEaHXtBX5`
+- satoshi: $188,348 1h vol, $9,194 mcap, -76% 1h  
   CA `4NK1dfCNtMwh5BK4yycH5EjXXQXtjARvsD7VX47LDdB2`
-- Aren: $130,292 1h vol, $13,266 mcap, -80% 1h  
-  CA `HkyNkVXpJWg1H7hAWjnSW58J22Cx7gnWwUHhFtf5pump`
-- FED: $96,965 1h vol, $46,076 mcap, +19% 1h  
-  CA `88JgZHVfWtdfhXqZbgb4ZniwSQ3UWnGh2Qv882mxmece`
