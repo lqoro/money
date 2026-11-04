@@ -1,13 +1,13 @@
 # Trencher live report
 
-Updated 2026-11-04T14:41:23Z (paper trading, never real money)
+Updated 2026-11-04T14:56:58Z (paper trading, never real money)
 
 - Equity: $74.23 (-25.8% vs $100 start)
 - Closed trades: 22, 3 wins
 - Fees paid: $14.78 (axiom $2.81, network $9.18, pool $2.66), plus $4.15 lost to slippage
 - New trades: WATCH-ONLY (scans and decides, buys nothing)
-- Brain: subscription, claude-haiku-5-5 for routine calls, claude-opus-5-5 for the daily review; 474 routine calls and 1 plan-limit hits in 48h
-- Watch log: 96 coins being followed, 486 filed, 0 would-buys (6h follow, sampled every 2 min)
+- Brain: subscription, claude-haiku-5-5 for routine calls, claude-opus-5-5 for the daily review; 472 routine calls and 1 plan-limit hits in 48h
+- Watch log: 94 coins being followed, 491 filed, 0 would-buys (6h follow, sampled every 2 min)
 
 ## Scorecard (after fees)
 - 22 closed, 3 won (14%), net $-25.79
@@ -73,9 +73,15 @@ Updated 2026-11-04T14:41:23Z (paper trading, never real money)
   CA `H4gHnZ3NCU7Z9XQwGX6YYJNyieGEW8pqwGRUcdSxpump`
 
 ## Last scan
-- 14:40Z: 8 coins, 6 with pairs, 1 passed the market filters, 1 researched
+- 14:56Z: 6 coins, 4 with pairs, 1 passed the market filters, 1 researched
 
 ## Coins it looked at, and why it passed
+- 14:56Z DONKEY (FINAL_STRETCH, $26,961 mcap, $32,005 5m vol): PASS at conviction 2, PASS: DONKEY is a 7-minute-old pump.fun coin up 694% in an hour, chasing a spike, and it isn't the leader of its 23-copy donkey field. Blocker: "split crowd" plus "chasing spike" (V1, V3, V6).  
+  CA `9izcJRdeQtuuVouHfyaqqB8TQJ4MSbbNqATpQyxJpump`
+- 14:53Z VI (MIGRATED, $778,431 mcap, $4,223 5m vol): PASS at conviction 3, PASS: 5m flow at 0.73x pace, it isn't the leader of a 29-copy "inu" field, and the chart is a saw-tooth with no printed higher low. (V1, V3, V13)  
+  CA `FpWWSqLNrjTTMDM41EXkvBmHBDkNdWrf9RwHL57xpump`
+- 14:47Z RICO (MIGRATED, $502,168 mcap, $4,027 5m vol): PASS at conviction 3, PASS — first resistance is 1.07x away, sellers hold 66% of 5m trades, and the GTA6 animal riff is cooling. Blocker: "target too close" (V1, V6).  
+  CA `8kuQg3WivDtL85VEdw2jEmSXjYt6EEeYBATJ4DtQpump`
 - 14:40Z LEOMAN (MIGRATED, $131,136 mcap, $2,661 5m vol): PASS at conviction 3, PASS: flow below pace ($2.7k 5m at 0.78x the hourly average) and the first resistance is only 1.29x away. The theme is cooling and the site is 2 hours old. Sawtooth, not a higher low (V1, V3, V13).  
   CA `CPZguakzrJSPZDvyB2BY7wdk25eKFwuwtYxSPYHmpump`
 - 14:38Z RAMBO (MIGRATED, $942,196 mcap, $12,039 5m vol): PASS at conviction 2, PASS: RAMBO is 5.7% off its $999k high, sellers hold the last hour (1h 710 buys vs 1,763 sells, 5m buy share 0.43), and the first resistance is 1.06x away. Blockers: "chasing", "target too close". (V1, V6)  
@@ -90,37 +96,31 @@ Updated 2026-11-04T14:41:23Z (paper trading, never real money)
   CA `3vajh3wXe3EuLSXfSaCikyoCnzyhUJ3KPSoFhyAgpump`
 - 14:28Z AI (no setup, $38,183 mcap, $84,347 5m vol): REJECT, No setup fits: not Final Stretch, not a migrated runner, not a healthy dip  
   CA `2f6TQQHxce6DuaoRD5U4V621KAFjMaWCvgAJ363bpump`
-- 14:24Z ANONVOYAGE (MIGRATED, $141,010 mcap, $10,894 5m vol): REJECT, Bundles: 10 linked wallet cluster(s) hold 50.3% of supply (>20%) (V17)  
-  CA `8muc9DdhqWfAPcvmEebNQCG89bLiwi12T2KtBtzVpump`
-- 14:23Z BunThing (DIP, $36,123 mcap, $2,916 5m vol): REJECT, Top 10 hold 26.7% ex-pool (>25%) (V13)  
-  CA `29jQSLyMDP3y1DRkVDVi4FxyeR66p5JCMqsaifMEpump`
-- 14:22Z STARMIND (MIGRATED, $37,407 mcap, $8,234 5m vol): REJECT, Top 10 hold 25.2% ex-pool (>25%) (V13)  
-  CA `B2hrd6M7z4xaY4Cxe6eYBSedmYxDhyFDaEAaLyZhpump`
 
 ## What its skips did next (last 48h)
 A skip "ran" if the coin reached the first target (1.5x) from the skip price before a 20% drop, "dumped" if the drop came first. Sampled every 10 min, followed 6h.
-- too new / sniping: blocked 67, ran 13, dumped 53, flat 0, open 1 (saving losses: keep it)
-  - ran: Marutaro up to 1.62x  
-    CA `At3jYPUKVEFYrss5a58myVuqKLjGxMuBP5MwqMk9pump`
+- too new / sniping: blocked 66, ran 12, dumped 53, flat 0, open 1 (saving losses: keep it)
   - ran: MameStonk up to 1.67x  
     CA `57eJSmN1ecANrnZjGPrXzWUMyGhQsQgMS9eHdxM3pump`
   - ran: KOROSUKE up to 1.54x  
     CA `7ha4HFgdvkXaDcR2biCsuBpoCZzoLSRjb5we34Gbpump`
-- top 10 over 25%: blocked 66, ran 11, dumped 50, flat 3, open 2 (saving losses: keep it)
+  - ran: ANSEMKIN up to 2.57x  
+    CA `zD3jimD97YkcjMucBEmwZ6fUV7N4wjzz8Revkwmpump`
+- top 10 over 25%: blocked 65, ran 12, dumped 51, flat 2, open 0 (saving losses: keep it)
   - ran: GODHOUSE up to 3.19x  
     CA `CSGTuLtWhCfGZ5S5TvASQ6a5su91NCfRpNqfPczfpump`
   - ran: KYBER up to 1.83x  
     CA `BasL6j1MNkjFyuvRRFsmbm3bKqFPr6Yg3UhShii6pump`
   - ran: WIF up to 1.67x  
     CA `E7ayy5Se6gjwCNtw9NP629AucnTgqab4SSmSxDpUpump`
-- flow below pace: blocked 52, ran 11, dumped 32, flat 6, open 3 (saving losses: keep it)
+- flow below pace: blocked 50, ran 11, dumped 31, flat 5, open 3 (saving losses: keep it)
   - ran: KOROSUKE up to 1.54x  
     CA `7ha4HFgdvkXaDcR2biCsuBpoCZzoLSRjb5we34Gbpump`
   - ran: CAPY up to 1.51x  
     CA `DBPTU2oKLDHXQjAEJ3rZi8bUGmt2uxUbipgg6xmXoMqr`
   - ran: ZERO up to 1.61x  
     CA `Aes6XNH9BboLZuchD5PnDwaX6Zj1nU79TU3gNtPEpump`
-- near the high / chasing: blocked 39, ran 6, dumped 29, flat 3, open 1 (saving losses: keep it)
+- near the high / chasing: blocked 40, ran 7, dumped 29, flat 3, open 1 (saving losses: keep it)
   - ran: underdog up to 1.64x  
     CA `BZXh2LcnNNyypxsdfVeFzXawqmoGoSShC5i4NEQQpump`
   - ran: LUCIA up to 1.83x  
@@ -134,23 +134,25 @@ A skip "ran" if the coin reached the first target (1.5x) from the skip price bef
     CA `G6F6SYSUAUxsnKLyeRW29hE5A4BGCbw91x7HMPySpump`
   - ran: Wanted up to 1.53x  
     CA `8oUGdPdyxVaCSJSZpcVZuxqoyiZAmc2Z22FsDRZ3pump`
-- falling knife (code): blocked 23, ran 1, dumped 19, flat 1, open 2 (saving losses: keep it)
+- falling knife (code): blocked 23, ran 2, dumped 19, flat 1, open 1 (saving losses: keep it)
   - ran: RATIO up to 1.51x  
     CA `3JdeP1VBHgRPunmjTj1D6w6ZZePwGAwjUr2tCufwpump`
+  - ran: BunThing up to 1.62x  
+    CA `29jQSLyMDP3y1DRkVDVi4FxyeR66p5JCMqsaifMEpump`
 - bundles over the line: blocked 18, ran 1, dumped 13, flat 2, open 2 (saving losses: keep it)
   - ran: MAMESUKE up to 1.95x  
     CA `SCGBBnSwnekytGFHgyeHHxPMiN7xDxsWFGg9JgFSTNK`
-- thin 5m volume: blocked 15, ran 3, dumped 7, flat 3, open 2 (saving losses: keep it)
+- thin 5m volume: blocked 14, ran 3, dumped 8, flat 2, open 1 (saving losses: keep it)
   - ran: KIDS up to 1.73x  
     CA `7uwr9Zoz8WW9UyRVC22nmmAXRbPoFTUpVjsN8q7kids`
   - ran: 404 up to 1.89x  
     CA `9gKArqT6qp3goHfuwAnfG7LioqwUtJ8TFu7P1Bhbpump`
   - ran: TTPRO up to 1.71x  
     CA `FrSrp9P3bgiFHwr6h5PQHVh55iC8Dae4eZCKPUo9pump`
-- falling knife / no higher low: blocked 15, ran 1, dumped 9, flat 4, open 1 (saving losses: keep it)
+- falling knife / no higher low: blocked 14, ran 1, dumped 9, flat 3, open 1 (saving losses: keep it)
   - ran: HEDGE up to 1.77x  
     CA `wDSAqt4tEZpDAwB9XY6ejkZvMFuT1zUMjUh67txeYhf`
-- other: blocked 14, ran 5, dumped 7, flat 1, open 1 (mixed)
+- other: blocked 13, ran 5, dumped 7, flat 0, open 1 (mixed)
   - ran: FEAR up to 125.22x  
     CA `CHtXwJ3qa2ozS9vQkxhR3MmNwkoUqkh3icGXgZPepump`
   - ran: Slingoor up to 1.58x  
@@ -199,11 +201,11 @@ Meta, 2026-11-04: the loud lane is fresh pumpswap launches getting volume with b
 ## Moving most in its scans, last 30 min (1h volume)
 - PAIRITY: $499,861 1h vol, $39,264 mcap, -58% 1h  
   CA `CaQR7CNrXvXaFQLC2ChWBZHpUed4EYfVVJxjR34ipair`
-- TOLY: $385,139 1h vol, $61,969 mcap, +75% 1h  
-  CA `CttHJahfpRU3V1cAMKDCPcN3L8sNikgLWREWYg6Cpump`
-- ANONVOYAGE: $248,159 1h vol, $141,010 mcap, -40% 1h  
-  CA `8muc9DdhqWfAPcvmEebNQCG89bLiwi12T2KtBtzVpump`
-- AMD: $139,878 1h vol, $1,356,655 mcap, -20% 1h  
-  CA `DDmGnuvroxVrb7CSyjYcezFU8gnAfhKasg4ZZezmpump`
-- GATO: $126,556 1h vol, $11,349,258 mcap, +2% 1h  
+- GATO: $127,962 1h vol, $11,207,371 mcap, -0% 1h  
   CA `HsprHxBRgiVaQdRf3TnKNuZZtaX9JUSPgMFdAkk6pump`
+- RAMBO: $122,635 1h vol, $942,196 mcap, +15% 1h  
+  CA `KMifrkYmDdAKtVXAVBEPEQxJ7qP2iLgUcfZjUZipump`
+- VI: $69,615 1h vol, $778,431 mcap, +11% 1h  
+  CA `FpWWSqLNrjTTMDM41EXkvBmHBDkNdWrf9RwHL57xpump`
+- madape: $56,604 1h vol, $10,659 mcap, +237% 1h  
+  CA `46ZWzAWbMN1QZXbPdeNxnkrGAYsqh7mw3ELbq5s1pump`
