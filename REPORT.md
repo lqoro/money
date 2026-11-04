@@ -1,13 +1,13 @@
 # Trencher live report
 
-Updated 2026-11-04T21:45:55Z (paper trading, never real money)
+Updated 2026-11-04T22:00:58Z (paper trading, never real money)
 
 - Equity: $74.23 (-25.8% vs $100 start)
 - Closed trades: 22, 3 wins
 - Fees paid: $14.78 (axiom $2.81, network $9.18, pool $2.66), plus $4.15 lost to slippage
 - New trades: WATCH-ONLY (scans and decides, buys nothing)
 - Brain: subscription, claude-haiku-5-5 for routine calls, claude-opus-5-5 for the daily review; 495 routine calls and 1 plan-limit hits in 48h
-- Watch log: 124 coins being followed, 602 filed, 0 would-buys (6h follow, sampled every 2 min)
+- Watch log: 120 coins being followed, 610 filed, 0 would-buys (6h follow, sampled every 2 min)
 
 ## Scorecard (after fees)
 - 22 closed, 3 won (14%), net $-25.79
@@ -73,9 +73,17 @@ Updated 2026-11-04T21:45:55Z (paper trading, never real money)
   CA `H4gHnZ3NCU7Z9XQwGX6YYJNyieGEW8pqwGRUcdSxpump`
 
 ## Last scan
-- 21:45Z: 2 coins, 2 with pairs, 1 passed the market filters, 1 researched
+- 21:59Z: 7 coins, 7 with pairs, 0 passed the market filters, 0 researched
 
 ## Coins it looked at, and why it passed
+- 21:57Z PI (MIGRATED, $46,403 mcap, $21,057 5m vol): REJECT, Top 10 hold 47.5% ex-pool (>25%) (V13)  
+  CA `G4bjr2e9BwqkPxfjUfpsk3B8ySvNYq4rBu2RrQMJpump`
+- 21:55Z FED (MIGRATED, $46,200 mcap, $4,006 5m vol): PASS at conviction 2, PASS: 16-minute-old copy in a 25-coin "cat/fed" field, 5m flow at 0.5x its hourly pace, no catalyst and no X. Blocked on flow and crowd. Farm bait until proven otherwise. (V1, V6, V13)  
+  CA `88JgZHVfWtdfhXqZbgb4ZniwSQ3UWnGh2Qv882mxmece`
+- 21:53Z GATO (MIGRATED, $10,850,787 mcap, $5,985 5m vol): REJECT, Dev holds 3.3% (>1%) (V13, V17)  
+  CA `HsprHxBRgiVaQdRf3TnKNuZZtaX9JUSPgMFdAkk6pump`
+- 21:53Z WASTED (DIP, $668,994 mcap, $8,479 5m vol): PASS at conviction 2, PASS: bottom buy on a dead theme. "wasted" runs at 0.14x its 20-coin theme pace, and the story isn't on the radar. (DIP, owner rule)  
+  CA `GexThZHgaswpAQ7Fi8QrHFubjPimUNSYhJiAA7XZpump`
 - 21:45Z VI (MIGRATED, $314,603 mcap, $5,207 5m vol): PASS at conviction 3, PASS. Deep dip (72% off a $1.14M high) on a fading story, with 5m flow under the $10k bar. A falling knife with a placeholder website (V1, V6, V13).  
   CA `FpWWSqLNrjTTMDM41EXkvBmHBDkNdWrf9RwHL57xpump`
 - 21:43Z JOB (MIGRATED, $4,455,058 mcap, $7,045 5m vol): PASS at conviction 2, PASS. Flow below pace, the first resistance is 1.15x away, and the site doesn't show this CA. Eight copies of the ticker. (V1, V3, V6)  
@@ -88,18 +96,10 @@ Updated 2026-11-04T21:45:55Z (paper trading, never real money)
   CA `DRVhtx9ktSecBXRVD35RkQQHo8ugcSz9gYmxjevnpump`
 - 21:25Z GTA (MIGRATED, $2,087,489 mcap, $9,981 5m vol): PASS at conviction 2, PASS. Flow below pace (0.12x the hour), 5m volume under $10k, and the theme is dying. Spike with no base. (V1, V6)  
   CA `7F8BkfhPaDGMeNkaYeVa99WAqo86LpXDKsLQXpM7pump`
-- 21:19Z nuLL (MIGRATED, $171,743 mcap, $3,419 5m vol): REJECT, Dev holds 5.2% (>1%) (V13, V17)  
-  CA `A72sK9mPWTvU4f5RQFy7upBCeJi9HZx3Q2Wgr7QBnuLL`
-- 21:16Z ABTC (MIGRATED, $178,155 mcap, $21,911 5m vol): REJECT, RugCheck danger: Large Amount of LP Unlocked 100.00%  
-  CA `ERs7y4nMGLFVmHcXyDxiS7iDKpp4jWHz2VUuE2gxpump`
-- 21:15Z 5STAR (MIGRATED, $113,679 mcap, $3,336 5m vol): REJECT, Dev holds 2.5% (>1%) (V13, V17)  
-  CA `FK5tP4Zw7ujWzaz3TgeJ5NcqGe5LFufo7m6zH6YQpump`
-- 21:13Z RICO (DIP, $283,678 mcap, $2,627 5m vol): PASS, PASS — brain unavailable, not trading blind.  
-  CA `8kuQg3WivDtL85VEdw2jEmSXjYt6EEeYBATJ4DtQpump`
 
 ## What its skips did next (last 48h)
 A skip "ran" if the coin reached the first target (1.5x) from the skip price before a 20% drop, "dumped" if the drop came first. Sampled every 10 min, followed 6h.
-- top 10 over 25%: blocked 69, ran 12, dumped 55, flat 1, open 1 (saving losses: keep it)
+- top 10 over 25%: blocked 70, ran 12, dumped 55, flat 1, open 2 (saving losses: keep it)
   - ran: KYBER up to 1.83x  
     CA `BasL6j1MNkjFyuvRRFsmbm3bKqFPr6Yg3UhShii6pump`
   - ran: WIF up to 1.67x  
@@ -113,7 +113,7 @@ A skip "ran" if the coin reached the first target (1.5x) from the skip price bef
     CA `ETVD787UcTkJqrhZMt15bVet7CQ4SDzCga7DfBm8pump`
   - ran: GTAVI up to 2.31x  
     CA `HekahVohmeokPUhscg5taNme3Qs2fcSQoNgEeUPMpump`
-- flow below pace: blocked 55, ran 12, dumped 36, flat 4, open 3 (saving losses: keep it)
+- flow below pace: blocked 56, ran 12, dumped 36, flat 4, open 4 (saving losses: keep it)
   - ran: ZERO up to 1.61x  
     CA `Aes6XNH9BboLZuchD5PnDwaX6Zj1nU79TU3gNtPEpump`
   - ran: Wanted up to 1.53x  
@@ -209,13 +209,13 @@ The flow is in fresh pump.fun launches under about an hour old, with animal, jok
 Setups to research, no entry: ABTC and Ourcoin first, Against All Odds only if it holds. Conviction is low (about 4 to 5/10) because everything is under an hour old and holder, dev and bundle checks have not run yet. Probe only if those come back clean. DOOM ("Doctor Doom") is in the news for a Bethesda legal action, which is a separate risk to weigh before anything else. Paper trading only, not financial advice.
 
 ## Moving most in its scans, last 30 min (1h volume)
-- GTA: $1,035,472 1h vol, $2,087,489 mcap, +560% 1h  
-  CA `7F8BkfhPaDGMeNkaYeVa99WAqo86LpXDKsLQXpM7pump`
-- ABTC: $824,171 1h vol, $98,119 mcap, +161% 1h  
-  CA `DRVhtx9ktSecBXRVD35RkQQHo8ugcSz9gYmxjevnpump`
-- Aren: $668,244 1h vol, $10,011 mcap, -85% 1h  
+- satoshi: $143,438 1h vol, $16,051 mcap, -59% 1h  
+  CA `4NK1dfCNtMwh5BK4yycH5EjXXQXtjARvsD7VX47LDdB2`
+- Aren: $143,269 1h vol, $13,787 mcap, -75% 1h  
+  CA `E4brwTWpx8anGcsJ11REmwcP149UD1yfwyCRYEQppump`
+- Aren: $130,292 1h vol, $13,266 mcap, -80% 1h  
   CA `HkyNkVXpJWg1H7hAWjnSW58J22Cx7gnWwUHhFtf5pump`
-- ABTC: $239,668 1h vol, $178,155 mcap, +347% 1h  
-  CA `ERs7y4nMGLFVmHcXyDxiS7iDKpp4jWHz2VUuE2gxpump`
-- OUR: $112,864 1h vol, $3,468 mcap, -4% 1h  
-  CA `Dcht3Y7BBykVGzcACrBTRriYmGMKisgEMTXJxUY3pump`
+- FED: $96,965 1h vol, $46,076 mcap, +19% 1h  
+  CA `88JgZHVfWtdfhXqZbgb4ZniwSQ3UWnGh2Qv882mxmece`
+- JOB: $90,466 1h vol, $4,450,394 mcap, +4% 1h  
+  CA `9Pq7aLAbhDG2tTnS22cm6kuysZVcZpLFE368HWuypump`
