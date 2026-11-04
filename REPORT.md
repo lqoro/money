@@ -1,13 +1,13 @@
 # Trencher live report
 
-Updated 2026-11-04T13:10:28Z (paper trading, never real money)
+Updated 2026-11-04T13:25:29Z (paper trading, never real money)
 
 - Equity: $74.23 (-25.8% vs $100 start)
 - Closed trades: 22, 3 wins
 - Fees paid: $14.78 (axiom $2.81, network $9.18, pool $2.66), plus $4.15 lost to slippage
 - New trades: WATCH-ONLY (scans and decides, buys nothing)
 - Brain: subscription, claude-haiku-5-5 for routine calls, claude-opus-5-5 for the daily review; 474 routine calls and 1 plan-limit hits in 48h
-- Watch log: 92 coins being followed, 460 filed, 0 would-buys (6h follow, sampled every 2 min)
+- Watch log: 90 coins being followed, 464 filed, 0 would-buys (6h follow, sampled every 2 min)
 
 ## Scorecard (after fees)
 - 22 closed, 3 won (14%), net $-25.79
@@ -73,9 +73,13 @@ Updated 2026-11-04T13:10:28Z (paper trading, never real money)
   CA `H4gHnZ3NCU7Z9XQwGX6YYJNyieGEW8pqwGRUcdSxpump`
 
 ## Last scan
-- 13:10Z: 2 coins, 1 with pairs, 0 passed the market filters, 0 researched
+- 13:24Z: 2 coins, 1 with pairs, 0 passed the market filters, 0 researched
 
 ## Coins it looked at, and why it passed
+- 13:21Z VI (MIGRATED, $900,167 mcap, $4,868 5m vol): PASS at conviction 2, PASS. Vice Inu is 21% off a $1.14M peak, but 5m flow is $4.9k, under the $10k bar and under pace, and the hour is 912 buys to 5,351 sells. Blocker: flow below pace, and no breakout. The lane is fading and 27 tokens share the ticker. (V1, V6, V13)  
+  CA `FpWWSqLNrjTTMDM41EXkvBmHBDkNdWrf9RwHL57xpump`
+- 13:19Z SOLUNA (FINAL_STRETCH, $32,376 mcap, $19,141 5m vol): PASS at conviction 3, PASS: chasing spike, no higher low, nothing to rate it on. Blockers: "chasing spike" and "no higher low". It's up 132% on 5m and 932% on 1h from a $2.8e-6 hourly low, sitting on its 24h peak. Vic's rule is to wait for the retrace (V1, V6).  
+  CA `3brY153eRNKLxUY3zfBYW9LvarfHUFhgSW66tbQupump`
 - 13:05Z VETO (MIGRATED, $370,189 mcap, $4,874 5m vol): PASS at conviction 3, PASS — target too close and no catalyst. The nearest prior high is about 1.18x away, and the veto theme has no named catalyst. The FoxNews link is unverified. (V1, V6, V13)  
   CA `B93V9uyYRaQDKSG8iCQyyP61j3NCqCRRXPCgU3gpump`
 - 13:01Z NEMO (FINAL_STRETCH, $19,827 mcap, $4,550 5m vol): REJECT, Top 10 hold 31.5% ex-pool (>25%) (V13)  
@@ -92,20 +96,16 @@ Updated 2026-11-04T13:10:28Z (paper trading, never real money)
   CA `AzAyQkzdVdH9jzLRpHQwhTPNMtAN8i6fRBRwXAUNpump`
 - 12:40Z AMD (DIP, $1,938,518 mcap, $16,145 5m vol): REJECT, Bundles: 10 linked wallet cluster(s) hold 21.3% of supply (>20%) (V17)  
   CA `DDmGnuvroxVrb7CSyjYcezFU8gnAfhKasg4ZZezmpump`
-- 12:36Z VI (MIGRATED, $856,088 mcap, $4,383 5m vol): PASS at conviction 3, PASS: Vice Inu flow is below pace (5m $4.4k at 0.69x hourly) and there is no printed higher low. Blocker "flow below pace." Watch it. (V1, V6)  
-  CA `FpWWSqLNrjTTMDM41EXkvBmHBDkNdWrf9RwHL57xpump`
-- 12:31Z Dacity (MIGRATED, $7,970,180 mcap, $4,903 5m vol): REJECT, Bundles: 10 linked wallet cluster(s) hold 24.0% of supply (>20%) (V17)  
-  CA `nxPqZ4F7ux8Vph5NFu25rEP6Kx9Gr1U6Fmj36Rjpump`
 
 ## What its skips did next (last 48h)
 A skip "ran" if the coin reached the first target (1.5x) from the skip price before a 20% drop, "dumped" if the drop came first. Sampled every 10 min, followed 6h.
-- too new / sniping: blocked 67, ran 14, dumped 53, flat 0, open 0 (saving losses: keep it)
-  - ran: CLIPPED up to 1.65x  
-    CA `Bxyp4L6EbDys4fo51qxMEQTx41sj6McnsbPZTdvipump`
+- too new / sniping: blocked 66, ran 13, dumped 53, flat 0, open 0 (saving losses: keep it)
   - ran: Marutaro up to 1.62x  
     CA `At3jYPUKVEFYrss5a58myVuqKLjGxMuBP5MwqMk9pump`
   - ran: MameStonk up to 1.67x  
     CA `57eJSmN1ecANrnZjGPrXzWUMyGhQsQgMS9eHdxM3pump`
+  - ran: KOROSUKE up to 1.54x  
+    CA `7ha4HFgdvkXaDcR2biCsuBpoCZzoLSRjb5we34Gbpump`
 - top 10 over 25%: blocked 65, ran 11, dumped 51, flat 3, open 0 (saving losses: keep it)
   - ran: GODHOUSE up to 3.19x  
     CA `CSGTuLtWhCfGZ5S5TvASQ6a5su91NCfRpNqfPczfpump`
@@ -113,14 +113,14 @@ A skip "ran" if the coin reached the first target (1.5x) from the skip price bef
     CA `BasL6j1MNkjFyuvRRFsmbm3bKqFPr6Yg3UhShii6pump`
   - ran: WIF up to 1.67x  
     CA `E7ayy5Se6gjwCNtw9NP629AucnTgqab4SSmSxDpUpump`
-- flow below pace: blocked 50, ran 11, dumped 33, flat 5, open 1 (saving losses: keep it)
+- flow below pace: blocked 50, ran 11, dumped 32, flat 5, open 2 (saving losses: keep it)
   - ran: KOROSUKE up to 1.54x  
     CA `7ha4HFgdvkXaDcR2biCsuBpoCZzoLSRjb5we34Gbpump`
   - ran: CAPY up to 1.51x  
     CA `DBPTU2oKLDHXQjAEJ3rZi8bUGmt2uxUbipgg6xmXoMqr`
   - ran: ZERO up to 1.61x  
     CA `Aes6XNH9BboLZuchD5PnDwaX6Zj1nU79TU3gNtPEpump`
-- near the high / chasing: blocked 41, ran 5, dumped 32, flat 3, open 1 (saving losses: keep it)
+- near the high / chasing: blocked 40, ran 5, dumped 30, flat 3, open 2 (saving losses: keep it)
   - ran: underdog up to 1.64x  
     CA `BZXh2LcnNNyypxsdfVeFzXawqmoGoSShC5i4NEQQpump`
   - ran: LUCIA up to 1.83x  
@@ -195,13 +195,13 @@ No. After costs, every bucket loses money. Across 355 settled coins the simple p
 Trencher read, 2026-11-04. Two lanes, both animal and joke tickers. The fresh pump.fun lane is loud: Chihuahua (about 6 min old, $21.5k 5m on a $14k cap, 63% buys), CADENCE ($6.2k 5m on $27k, 65% buys), PUMP10 (+488% in 1h on a $17k cap, 69% buys) and BunThing ($7.8k 5m on $75k). Volume at 1x to 1.5x the cap in the first hour is where bundles and dumps live (V1, V13), so these are research only, not entries. The older animal lane reads cleaner: A Meme Dog (15h, $1.78M, $22.7k 5m, 64% buys) is the one clearing the $10k bar with buyers in control, and GTA6DOG (44h, $450k, 75% buys) is building but at $5.4k 5m, below the bar. Fading: Ram inu (13% buys), GTApad (-85% in 1h), SAN (-24%), and Vice Inu (50% buys, $4.9k 5m, -20% in 1h), which is losing its lane. Setups to research now: AMD first, a probe only if its holder and bundle checks come back clean and 5m holds above $10k with buys above 60% (V6). GTA6DOG second, if its 5m crosses the bar. The crawler's Binance, Trump and Hunter Biden $LAPTOP stories are not in these movers, and $LAPTOP is a political-figure coin, so no trade there. Nothing here is a buy yet. Holder, dev and bundle checks still run per coin, and this is paper trading, not financial advice.
 
 ## Moving most in its scans, last 30 min (1h volume)
-- Dumocrat: $242,552 1h vol, $1,786 mcap, -99% 1h  
+- Dumocrat: $199,968 1h vol, $1,785 mcap, -98% 1h  
   CA `3Y2TGH3AvFFEL48rZfCgtiNJZJ84Eu75akYWmhyXpump`
-- BunThing: $212,806 1h vol, $74,890 mcap, +108% 1h  
-  CA `29jQSLyMDP3y1DRkVDVi4FxyeR66p5JCMqsaifMEpump`
+- P10: $102,256 1h vol, $4,364 mcap, +53% 1h  
+  CA `5swCxtB6Y1kC5EWzrmACxw6qsnJSk3vWdJuWr7qHpump`
 - GATO: $93,444 1h vol, $10,879,828 mcap, +3% 1h  
   CA `HsprHxBRgiVaQdRf3TnKNuZZtaX9JUSPgMFdAkk6pump`
-- P10: $92,430 1h vol, $14,045 mcap, +391% 1h  
-  CA `5swCxtB6Y1kC5EWzrmACxw6qsnJSk3vWdJuWr7qHpump`
-- AMD: $85,845 1h vol, $1,781,098 mcap, +9% 1h  
-  CA `DDmGnuvroxVrb7CSyjYcezFU8gnAfhKasg4ZZezmpump`
+- VI: $72,877 1h vol, $900,167 mcap, +7% 1h  
+  CA `FpWWSqLNrjTTMDM41EXkvBmHBDkNdWrf9RwHL57xpump`
+- SOLUNA: $71,769 1h vol, $33,512 mcap, +968% 1h  
+  CA `3brY153eRNKLxUY3zfBYW9LvarfHUFhgSW66tbQupump`
