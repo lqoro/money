@@ -1,13 +1,13 @@
 # Trencher live report
 
-Updated 2026-11-04T13:55:51Z (paper trading, never real money)
+Updated 2026-11-04T14:10:53Z (paper trading, never real money)
 
 - Equity: $74.23 (-25.8% vs $100 start)
 - Closed trades: 22, 3 wins
 - Fees paid: $14.78 (axiom $2.81, network $9.18, pool $2.66), plus $4.15 lost to slippage
 - New trades: WATCH-ONLY (scans and decides, buys nothing)
-- Brain: subscription, claude-haiku-5-5 for routine calls, claude-opus-5-5 for the daily review; 473 routine calls and 1 plan-limit hits in 48h
-- Watch log: 90 coins being followed, 473 filed, 0 would-buys (6h follow, sampled every 2 min)
+- Brain: subscription, claude-haiku-5-5 for routine calls, claude-opus-5-5 for the daily review; 475 routine calls and 1 plan-limit hits in 48h
+- Watch log: 88 coins being followed, 478 filed, 0 would-buys (6h follow, sampled every 2 min)
 
 ## Scorecard (after fees)
 - 22 closed, 3 won (14%), net $-25.79
@@ -73,9 +73,15 @@ Updated 2026-11-04T13:55:51Z (paper trading, never real money)
   CA `H4gHnZ3NCU7Z9XQwGX6YYJNyieGEW8pqwGRUcdSxpump`
 
 ## Last scan
-- 13:55Z: 6 coins, 3 with pairs, 0 passed the market filters, 0 researched
+- 14:09Z: 9 coins, 6 with pairs, 0 passed the market filters, 0 researched
 
 ## Coins it looked at, and why it passed
+- 14:09Z MONKAI (MIGRATED, $72,395 mcap, $2,011 5m vol): PASS at conviction 2, PASS: MONKAI is 4% off its high on $2k of 5m flow at 0.67x pace, one of four copies, under an hour old. Blockers: chasing, flow below pace, too new. (V1, V6)  
+  CA `3jXeQDkmM1N7gAS3iubWwmZTaAS4hdMDJ5e5B2uswWaK`
+- 14:08Z VI (MIGRATED, $815,682 mcap, $5,899 5m vol): PASS at conviction 3, PASS — flow below pace (5m at 0.92x the hourly average), sellers are 5x buyers over the hour, and no higher low has printed. The bounce is a first green leg on a fading GTA/Vice City riff, and the site says "CA: TBA" on a 0.6-day-old domain. (V1, V6, V13)  
+  CA `FpWWSqLNrjTTMDM41EXkvBmHBDkNdWrf9RwHL57xpump`
+- 14:01Z RICO (MIGRATED, $476,429 mcap, $2,366 5m vol): PASS at conviction 3, PASS — GTA6DOG/RICO: 1.26x to its first resistance, a cooling GTA lane, 5m flow of $2.4k, and a 1.8-day-old domain. Blocker: "target too close" plus the bottom-buy narrative rule. (V1, V3, V6)  
+  CA `8kuQg3WivDtL85VEdw2jEmSXjYt6EEeYBATJ4DtQpump`
 - 13:49Z VETO (MIGRATED, $474,981 mcap, $1,676 5m vol): REJECT, 5m volume $1,676 is dead (<$2,000) (V1)  
   CA `B93V9uyYRaQDKSG8iCQyyP61j3NCqCRRXPCgU3gpump`
 - 13:47Z PAIRITY (MIGRATED, $103,146 mcap, $25,222 5m vol): PASS at conviction 3, PASS: flow below pace (0.88x hourly), no breakout, 24.5% off a spiked high in a 16-copy vamp field. Wait for the flow. (V1, V6)  
@@ -90,16 +96,10 @@ Updated 2026-11-04T13:55:51Z (paper trading, never real money)
   CA `CttHJahfpRU3V1cAMKDCPcN3L8sNikgLWREWYg6Cpump`
 - 13:30Z Dumocrats (MIGRATED, $33,927 mcap, $13,230 5m vol): PASS at conviction 2, PASS: too new, chasing a spike, and a 23-copy field with no printed higher low. Blockers: "too new", "chasing spike", "no higher low", "split crowd". (V1, V6, V13)  
   CA `4eEDTyors4YReX5fBoRFBYNkKs6w66oyQ5CvPcckpump`
-- 13:27Z BunThing (DIP, $31,000 mcap, $3,567 5m vol): REJECT, Dip with fading attention is a falling knife, not a dip (5m at 0.35x the hour's pace, under 0.6x)  
-  CA `29jQSLyMDP3y1DRkVDVi4FxyeR66p5JCMqsaifMEpump`
-- 13:26Z AMD (DIP, $1,878,956 mcap, $10,250 5m vol): REJECT, Bundles: 10 linked wallet cluster(s) hold 22.1% of supply (>20%) (V17)  
-  CA `DDmGnuvroxVrb7CSyjYcezFU8gnAfhKasg4ZZezmpump`
-- 13:21Z VI (MIGRATED, $900,167 mcap, $4,868 5m vol): PASS at conviction 2, PASS. Vice Inu is 21% off a $1.14M peak, but 5m flow is $4.9k, under the $10k bar and under pace, and the hour is 912 buys to 5,351 sells. Blocker: flow below pace, and no breakout. The lane is fading and 27 tokens share the ticker. (V1, V6, V13)  
-  CA `FpWWSqLNrjTTMDM41EXkvBmHBDkNdWrf9RwHL57xpump`
 
 ## What its skips did next (last 48h)
 A skip "ran" if the coin reached the first target (1.5x) from the skip price before a 20% drop, "dumped" if the drop came first. Sampled every 10 min, followed 6h.
-- too new / sniping: blocked 69, ran 13, dumped 56, flat 0, open 0 (saving losses: keep it)
+- too new / sniping: blocked 70, ran 13, dumped 56, flat 0, open 1 (saving losses: keep it)
   - ran: Marutaro up to 1.62x  
     CA `At3jYPUKVEFYrss5a58myVuqKLjGxMuBP5MwqMk9pump`
   - ran: MameStonk up to 1.67x  
@@ -113,7 +113,7 @@ A skip "ran" if the coin reached the first target (1.5x) from the skip price bef
     CA `BasL6j1MNkjFyuvRRFsmbm3bKqFPr6Yg3UhShii6pump`
   - ran: WIF up to 1.67x  
     CA `E7ayy5Se6gjwCNtw9NP629AucnTgqab4SSmSxDpUpump`
-- flow below pace: blocked 51, ran 11, dumped 33, flat 5, open 2 (saving losses: keep it)
+- flow below pace: blocked 51, ran 11, dumped 32, flat 6, open 2 (saving losses: keep it)
   - ran: KOROSUKE up to 1.54x  
     CA `7ha4HFgdvkXaDcR2biCsuBpoCZzoLSRjb5we34Gbpump`
   - ran: CAPY up to 1.51x  
@@ -134,16 +134,16 @@ A skip "ran" if the coin reached the first target (1.5x) from the skip price bef
     CA `G6F6SYSUAUxsnKLyeRW29hE5A4BGCbw91x7HMPySpump`
   - ran: Wanted up to 1.53x  
     CA `8oUGdPdyxVaCSJSZpcVZuxqoyiZAmc2Z22FsDRZ3pump`
-- falling knife (code): blocked 23, ran 1, dumped 19, flat 1, open 2 (saving losses: keep it)
+- falling knife (code): blocked 23, ran 1, dumped 20, flat 1, open 1 (saving losses: keep it)
   - ran: RATIO up to 1.51x  
     CA `3JdeP1VBHgRPunmjTj1D6w6ZZePwGAwjUr2tCufwpump`
-- bundles over the line: blocked 19, ran 1, dumped 13, flat 2, open 3 (saving losses: keep it)
+- bundles over the line: blocked 19, ran 1, dumped 14, flat 2, open 2 (saving losses: keep it)
   - ran: MAMESUKE up to 1.95x  
     CA `SCGBBnSwnekytGFHgyeHHxPMiN7xDxsWFGg9JgFSTNK`
-- falling knife / no higher low: blocked 15, ran 1, dumped 9, flat 3, open 2 (saving losses: keep it)
+- falling knife / no higher low: blocked 15, ran 1, dumped 9, flat 4, open 1 (saving losses: keep it)
   - ran: HEDGE up to 1.77x  
     CA `wDSAqt4tEZpDAwB9XY6ejkZvMFuT1zUMjUh67txeYhf`
-- thin 5m volume: blocked 14, ran 3, dumped 7, flat 2, open 2 (saving losses: keep it)
+- thin 5m volume: blocked 14, ran 3, dumped 7, flat 3, open 1 (saving losses: keep it)
   - ran: KIDS up to 1.73x  
     CA `7uwr9Zoz8WW9UyRVC22nmmAXRbPoFTUpVjsN8q7kids`
   - ran: 404 up to 1.89x  
@@ -190,16 +190,16 @@ No. After costs, every bucket loses money. Across 355 settled coins the simple p
 - [2026-11-02 20:25] I expected Slingoor, a clean MIGRATED leader with $25k of 5m flow at pace and a 0.77 buy share, to retest its $408k high from $304k. It never went green (0.98x peak) and hit the -20% stop in 2 minutes, a -$2.86 probe. My own thesis admitted there was no printed higher low after a peak only 6 minutes old, so this confirms the money-shape rule: buy share and flow are not structure (V1, V6). Next time a MIGRATED pullback with no higher low above the hourly low is a PASS with blocker "no higher low", not a probe. This is one loss, so it adds no new ban beyond the rule I already have.
 
 ## Meta right now
-Trencher read, 2026-11-04. Two lanes, both animal and joke tickers. The fresh pump.fun lane is loud: Chihuahua (about 6 min old, $21.5k 5m on a $14k cap, 63% buys), CADENCE ($6.2k 5m on $27k, 65% buys), PUMP10 (+488% in 1h on a $17k cap, 69% buys) and BunThing ($7.8k 5m on $75k). Volume at 1x to 1.5x the cap in the first hour is where bundles and dumps live (V1, V13), so these are research only, not entries. The older animal lane reads cleaner: A Meme Dog (15h, $1.78M, $22.7k 5m, 64% buys) is the one clearing the $10k bar with buyers in control, and GTA6DOG (44h, $450k, 75% buys) is building but at $5.4k 5m, below the bar. Fading: Ram inu (13% buys), GTApad (-85% in 1h), SAN (-24%), and Vice Inu (50% buys, $4.9k 5m, -20% in 1h), which is losing its lane. Setups to research now: AMD first, a probe only if its holder and bundle checks come back clean and 5m holds above $10k with buys above 60% (V6). GTA6DOG second, if its 5m crosses the bar. The crawler's Binance, Trump and Hunter Biden $LAPTOP stories are not in these movers, and $LAPTOP is a political-figure coin, so no trade there. Nothing here is a buy yet. Holder, dev and bundle checks still run per coin, and this is paper trading, not financial advice.
+Meta, 2026-11-04: the loud lane is fresh pumpswap launches getting volume with buyers in control. PAIRITY (+168% 1h, $25k 5m on a $103k cap, 57% buys, 0.4h old), TOLY ($26k 5m on $36k, 58% buys, minutes old) and ANONVOYAGE ($18k 5m on $290k, 76% buys, 24h old) lead it. IMPEACH ($15.6k 5m, +193% 1h) is pulling flow on a political-joke theme but only 48% buys, so sellers still have the chart. The animal and dog lane is fading: The Chihuahua, CADENCE and PUMP10 are down 50-80% in an hour with almost no 5m volume, and the GTA6 riff is cooling too (GTA6CAT at $10.9M with $6.9k 5m and 35% buys; GTA6DOG at $622 5m). Setups to research, not buy: PAIRITY first, since it clears the MIGRATED bar (under 12h, over $30k cap, over $10k 5m, 57% buys), with holder, dev and bundle checks still to run; TOLY second only if its 5m holds above $10k with buys over 60%. The crawler summary cites A Meme Dog, GTA6DOG at $22.7k 5m, AMD and other coins that are not in this scan, and its numbers do not match scan_movers, so I worked from scan_movers only. No hack-named coins here. IMPEACH is a political theme, not a block by itself, but if a politician posted its CA it is a stay-away (V13). Paper trading, not financial advice.
 
 ## Moving most in its scans, last 30 min (1h volume)
 - PAIRITY: $345,474 1h vol, $103,146 mcap, +168% 1h  
   CA `CaQR7CNrXvXaFQLC2ChWBZHpUed4EYfVVJxjR34ipair`
-- Impeach: $184,841 1h vol, $114,476 mcap, +193% 1h  
-  CA `Hm6ADi76B6aenNsmazi9xVqhvk1PvvDf2yr9yZhDpump`
-- BunThing: $121,235 1h vol, $32,326 mcap, -63% 1h  
-  CA `29jQSLyMDP3y1DRkVDVi4FxyeR66p5JCMqsaifMEpump`
-- AMD: $108,608 1h vol, $1,902,924 mcap, +20% 1h  
-  CA `DDmGnuvroxVrb7CSyjYcezFU8gnAfhKasg4ZZezmpump`
+- SOLUNA: $123,944 1h vol, $2,046 mcap, -94% 1h  
+  CA `3brY153eRNKLxUY3zfBYW9LvarfHUFhgSW66tbQupump`
 - GATO: $106,857 1h vol, $10,895,480 mcap, +2% 1h  
   CA `HsprHxBRgiVaQdRf3TnKNuZZtaX9JUSPgMFdAkk6pump`
+- NEMO: $82,318 1h vol, $26,407 mcap, +10% 1h  
+  CA `5ja9qQuE5V9g5TVAFZVdtVQQqoThkAWxEKUaPcC5jN3F`
+- VI: $77,321 1h vol, $815,682 mcap, -3% 1h  
+  CA `FpWWSqLNrjTTMDM41EXkvBmHBDkNdWrf9RwHL57xpump`
