@@ -1,13 +1,13 @@
 # Trencher live report
 
-Updated 2026-11-04T08:22:38Z (paper trading, never real money)
+Updated 2026-11-04T08:37:40Z (paper trading, never real money)
 
 - Equity: $74.23 (-25.8% vs $100 start)
 - Closed trades: 22, 3 wins
 - Fees paid: $14.78 (axiom $2.81, network $9.18, pool $2.66), plus $4.15 lost to slippage
 - New trades: WATCH-ONLY (scans and decides, buys nothing)
-- Brain: subscription, claude-haiku-5-5 for routine calls, claude-opus-5-5 for the daily review; 471 routine calls and 1 plan-limit hits in 48h
-- Watch log: 108 coins being followed, 373 filed, 0 would-buys (6h follow, sampled every 2 min)
+- Brain: subscription, claude-haiku-5-5 for routine calls, claude-opus-5-5 for the daily review; 469 routine calls and 1 plan-limit hits in 48h
+- Watch log: 112 coins being followed, 374 filed, 0 would-buys (6h follow, sampled every 2 min)
 
 ## Scorecard (after fees)
 - 22 closed, 3 won (14%), net $-25.79
@@ -73,9 +73,19 @@ Updated 2026-11-04T08:22:38Z (paper trading, never real money)
   CA `H4gHnZ3NCU7Z9XQwGX6YYJNyieGEW8pqwGRUcdSxpump`
 
 ## Last scan
-- 08:22Z: 3 coins, 2 with pairs, 0 passed the market filters, 0 researched
+- 08:36Z: 6 coins, 5 with pairs, 0 passed the market filters, 0 researched
 
 ## Coins it looked at, and why it passed
+- 08:36Z CHILLCATS (DIP, $177,142 mcap, $14,065 5m vol): PASS at conviction 3, PASS: CHILLCATS is a clean-holder DIP, but the crowd is leaving its cat theme and 5m flow is under the 0.7x gate. Blocker "dead story" with "flow below pace." (V1, V6)  
+  CA `4BCbx4hB1XPmC5mLHsFyHEghC5fb9Afu7THLGXiHpump`
+- 08:28Z POOLS (FINAL_STRETCH, $34,252 mcap, $12,516 5m vol): REJECT, Top 10 hold 28.1% ex-pool (>25%) (V13)  
+  CA `Fu9n4TS5QkEKzMW66djz6T6fUspAbTuYsb7gcHSApump`
+- 08:28Z Transinu (MIGRATED, $156,251 mcap, $20,847 5m vol): REJECT, Bundles: 10 linked wallet cluster(s) hold 26.8% of supply (>20%) (V17)  
+  CA `5ZndeMaC36YapnG4UpXsFg2DXDquHw6xEpBXGfmfpump`
+- 08:24Z DJT (FINAL_STRETCH, $27,291 mcap, $8,205 5m vol): REJECT, RugCheck danger: Low Liquidity $125.16  
+  CA `8ZehpeBs3RG7bNck3HowFybXA5NTZrHMKvE1Qq48pump`
+- 08:23Z BLOOM (FINAL_STRETCH, $28,440 mcap, $3,139 5m vol): PASS at conviction 2, PASS: the project's own site says its volume comes from its own wallet, "not organic demand." That's a farm, and the 5m flow is $3.1k on top of it (V13, V6).  
+  CA `ExdQxJcXzNzhW6CC9phvoEVpKvJQJyg98CE228Uxpump`
 - 08:21Z ANONVOYAGE (MIGRATED, $476,987 mcap, $6,606 5m vol): REJECT, Bundles: 10 linked wallet cluster(s) hold 50.3% of supply (>20%) (V17)  
   CA `8muc9DdhqWfAPcvmEebNQCG89bLiwi12T2KtBtzVpump`
 - 08:20Z X (DIP, $69,990 mcap, $14,604 5m vol): REJECT, Dip with fading attention is a falling knife, not a dip (5m at 0.39x the hour's pace, under 0.6x)  
@@ -86,27 +96,17 @@ Updated 2026-11-04T08:22:38Z (paper trading, never real money)
   CA `DDmGnuvroxVrb7CSyjYcezFU8gnAfhKasg4ZZezmpump`
 - 08:07Z RICO (DIP, $345,354 mcap, $3,297 5m vol): PASS at conviction 3, PASS — RICO is the 'where's the dog' copy of GATO's $11M GTA 6 cat, in a 20-23 copy field, with $3.3k 5m flow and 1h volume down to $7.8k from $842k a day. Blocker: vamp, thin flow. (V1, V13)  
   CA `8kuQg3WivDtL85VEdw2jEmSXjYt6EEeYBATJ4DtQpump`
-- 08:03Z VI (MIGRATED, $431,294 mcap, $4,050 5m vol): PASS at conviction 4, PASS: 5m flow at 0.89x its hourly pace, $4k on the 5m, and a 22-copy Vice field where the theme is at 0.55x pace. Blocker: flow below pace (V1, V6, V13).  
-  CA `FpWWSqLNrjTTMDM41EXkvBmHBDkNdWrf9RwHL57xpump`
-- 08:00Z icapy (MIGRATED, $202,646 mcap, $164,989 5m vol): REJECT, LP only 57% burned/locked (V2, V3, V6)  
-  CA `5fgJwPNtsohc1FwjkjvmVWoXTbSzD8Z3zzbcuXdepump`
-- 07:59Z Dacity (MIGRATED, $7,717,755 mcap, $3,847 5m vol): REJECT, Bundles: 10 linked wallet cluster(s) hold 24.0% of supply (>20%) (V17)  
-  CA `nxPqZ4F7ux8Vph5NFu25rEP6Kx9Gr1U6Fmj36Rjpump`
-- 07:51Z GATO (MIGRATED, $10,836,768 mcap, $2,612 5m vol): REJECT, Dev holds 3.3% (>1%) (V13, V17)  
-  CA `HsprHxBRgiVaQdRf3TnKNuZZtaX9JUSPgMFdAkk6pump`
-- 07:50Z CHILLCATS (MIGRATED, $112,375 mcap, $22,214 5m vol): PASS at conviction 2, PASS: CHILLCATS is 75% off its $442k peak with no printed higher low, the theme runs at 0.66x pace, and the site is 2 days old. Falling knife in a 27-copy field (V1, V3, V6).  
-  CA `4BCbx4hB1XPmC5mLHsFyHEghC5fb9Afu7THLGXiHpump`
 
 ## What its skips did next (last 48h)
 A skip "ran" if the coin reached the first target (1.5x) from the skip price before a 20% drop, "dumped" if the drop came first. Sampled every 10 min, followed 6h.
-- too new / sniping: blocked 66, ran 13, dumped 52, flat 0, open 1 (saving losses: keep it)
+- too new / sniping: blocked 66, ran 13, dumped 53, flat 0, open 0 (saving losses: keep it)
   - ran: CLIPPED up to 1.65x  
     CA `Bxyp4L6EbDys4fo51qxMEQTx41sj6McnsbPZTdvipump`
   - ran: Marutaro up to 1.62x  
     CA `At3jYPUKVEFYrss5a58myVuqKLjGxMuBP5MwqMk9pump`
   - ran: MameStonk up to 1.67x  
     CA `57eJSmN1ecANrnZjGPrXzWUMyGhQsQgMS9eHdxM3pump`
-- top 10 over 25%: blocked 62, ran 10, dumped 49, flat 3, open 0 (saving losses: keep it)
+- top 10 over 25%: blocked 63, ran 10, dumped 49, flat 3, open 1 (saving losses: keep it)
   - ran: GODHOUSE up to 3.19x  
     CA `CSGTuLtWhCfGZ5S5TvASQ6a5su91NCfRpNqfPczfpump`
   - ran: KYBER up to 1.83x  
@@ -127,19 +127,19 @@ A skip "ran" if the coin reached the first target (1.5x) from the skip price bef
     CA `Cbtnpg6SL9jvZxtZTYYFPtVQXkuuqSUxCU5aXeTkpump`
   - ran: AMD up to 2.02x  
     CA `3MfZ4URVxmB4mfPuy4AxUxpcC5U7aXe7TDA7XVoGpump`
-- RugCheck danger: blocked 31, ran 4, dumped 24, flat 3, open 0 (saving losses: keep it)
+- RugCheck danger: blocked 32, ran 4, dumped 25, flat 3, open 0 (saving losses: keep it)
   - ran: COLLECTOR up to 1.62x  
     CA `6kKETm8xPeZ2z1DBYjXmxMTFAJudvGHJvRHu5Wt8uGtf`
   - ran: GTA up to 1.74x  
     CA `G6F6SYSUAUxsnKLyeRW29hE5A4BGCbw91x7HMPySpump`
   - ran: Wanted up to 1.53x  
     CA `8oUGdPdyxVaCSJSZpcVZuxqoyiZAmc2Z22FsDRZ3pump`
-- falling knife (code): blocked 27, ran 2, dumped 21, flat 1, open 3 (saving losses: keep it)
+- falling knife (code): blocked 27, ran 2, dumped 22, flat 1, open 2 (saving losses: keep it)
   - ran: YES up to 1.71x  
     CA `B7Cj19ke2F8S6fazbBvGMxHYNNMYuDaAn3Sn2Zikpump`
   - ran: RATIO up to 1.51x  
     CA `3JdeP1VBHgRPunmjTj1D6w6ZZePwGAwjUr2tCufwpump`
-- bundles over the line: blocked 19, ran 1, dumped 13, flat 1, open 4 (saving losses: keep it)
+- bundles over the line: blocked 20, ran 1, dumped 14, flat 1, open 4 (saving losses: keep it)
   - ran: MAMESUKE up to 1.95x  
     CA `SCGBBnSwnekytGFHgyeHHxPMiN7xDxsWFGg9JgFSTNK`
 - thin 5m volume: blocked 17, ran 3, dumped 9, flat 2, open 3 (saving losses: keep it)
@@ -149,9 +149,11 @@ A skip "ran" if the coin reached the first target (1.5x) from the skip price bef
     CA `9gKArqT6qp3goHfuwAnfG7LioqwUtJ8TFu7P1Bhbpump`
   - ran: TTPRO up to 1.71x  
     CA `FrSrp9P3bgiFHwr6h5PQHVh55iC8Dae4eZCKPUo9pump`
-- falling knife / no higher low: blocked 15, ran 1, dumped 9, flat 3, open 2 (saving losses: keep it)
+- falling knife / no higher low: blocked 15, ran 2, dumped 9, flat 3, open 1 (saving losses: keep it)
   - ran: HEDGE up to 1.77x  
     CA `wDSAqt4tEZpDAwB9XY6ejkZvMFuT1zUMjUh67txeYhf`
+  - ran: VI up to 1.56x  
+    CA `FpWWSqLNrjTTMDM41EXkvBmHBDkNdWrf9RwHL57xpump`
 - other: blocked 12, ran 5, dumped 5, flat 1, open 1 (mixed)
   - ran: thisman up to 1.6x  
     CA `6d6J2kWJiimgqmxjLVTu31hxDyBFt2zBguYdjSripump`
@@ -199,13 +201,13 @@ There's no positive after-cost edge yet. The 13 settled coins averaged -6.7% net
 The meta right now is fresh pump.fun launches with buyers piling in. Transinu (0.2h old, $129k cap, $75k on 5m, 66% buys, +228% over 1h), X (0.2h, $24k cap, $19.8k on 5m, 65% buys), enu (0.1h, $13k cap, $19k on 5m) and Elun and RAM (both under 0.5h, 59-71% buys) are rising, but that's the highest-risk lane (V1, V13). Transinu's 5m volume is about 58% of its market cap, which looks more like a farm than organic flow until the trades panel says otherwise. The second theme is cute animals with slower candles: ChickPot ($792k, +26% 1h, 53% buys, $15.5k on 5m) and CHILLCATS ($129k, $27k on 5m, 65% buys, but -60% over 1h) are fading from their highs, not dying, so they read as DIP candidates (V1). Space and star names are fading hard: STARMIND shows up twice at -77% and -98% with almost no buys, and the second is a copy of the first (vamp, V1). Setups to research now: Transinu first (volume bar cleared; bundle and dev checks decide it), then CHILLCATS and ChickPot as DIP/migrated candidates that need 5m volume and buy ratio holding. X's name is a placeholder, so its idea has to earn a look. The crawler's STARMIND and mypin figures didn't match scan_movers (STARMIND is 1.2h at $1.8k-$4.5k, not 0h at $39k), so I used scan_movers only; no hack or political-named coins are in this set.
 
 ## Moving most in its scans, last 30 min (1h volume)
-- icapy: $575,832 1h vol, $200,972 mcap, +421% 1h  
-  CA `5fgJwPNtsohc1FwjkjvmVWoXTbSzD8Z3zzbcuXdepump`
+- Transinu: $504,512 1h vol, $161,853 mcap, +321% 1h  
+  CA `5ZndeMaC36YapnG4UpXsFg2DXDquHw6xEpBXGfmfpump`
 - X: $449,422 1h vol, $69,990 mcap, +82% 1h  
   CA `FQE9h4fL65oDHMsR2MHcSe6d6DF4hFrFarsQQkVJpump`
-- CHATBLT: $114,696 1h vol, $77,517 mcap, +98% 1h  
-  CA `BM1Q9KfjgVoERj1eipkPqueMvhz1kfkUfE835ZjJpump`
-- Twitter: $102,503 1h vol, $16,454 mcap, +184% 1h  
+- CHILLCATS: $243,197 1h vol, $177,142 mcap, -35% 1h  
+  CA `4BCbx4hB1XPmC5mLHsFyHEghC5fb9Afu7THLGXiHpump`
+- RAM: $157,003 1h vol, $11,161 mcap, -71% 1h  
+  CA `72QNkZqiTBsq5dvn4DEwaC5qBPDkc7SZJ38xXy4jpump`
+- Twitter: $136,389 1h vol, $10,375 mcap, +79% 1h  
   CA `64M1Z76Qd4S2eW11uX15sNPp97KCvunR4bhFFMFbpump`
-- AMD: $95,329 1h vol, $1,271,283 mcap, +6% 1h  
-  CA `DDmGnuvroxVrb7CSyjYcezFU8gnAfhKasg4ZZezmpump`
