@@ -1,13 +1,13 @@
 # Trencher live report
 
-Updated 2026-11-04T11:24:38Z (paper trading, never real money)
+Updated 2026-11-04T11:39:42Z (paper trading, never real money)
 
 - Equity: $74.23 (-25.8% vs $100 start)
 - Closed trades: 22, 3 wins
 - Fees paid: $14.78 (axiom $2.81, network $9.18, pool $2.66), plus $4.15 lost to slippage
 - New trades: WATCH-ONLY (scans and decides, buys nothing)
-- Brain: subscription, claude-haiku-5-5 for routine calls, claude-opus-5-5 for the daily review; 474 routine calls and 1 plan-limit hits in 48h
-- Watch log: 99 coins being followed, 428 filed, 0 would-buys (6h follow, sampled every 2 min)
+- Brain: subscription, claude-haiku-5-5 for routine calls, claude-opus-5-5 for the daily review; 473 routine calls and 1 plan-limit hits in 48h
+- Watch log: 98 coins being followed, 431 filed, 0 would-buys (6h follow, sampled every 2 min)
 
 ## Scorecard (after fees)
 - 22 closed, 3 won (14%), net $-25.79
@@ -73,9 +73,13 @@ Updated 2026-11-04T11:24:38Z (paper trading, never real money)
   CA `H4gHnZ3NCU7Z9XQwGX6YYJNyieGEW8pqwGRUcdSxpump`
 
 ## Last scan
-- 11:24Z: 6 coins, 5 with pairs, 0 passed the market filters, 0 researched
+- 11:38Z: 1 coins, 1 with pairs, 0 passed the market filters, 0 researched
 
 ## Coins it looked at, and why it passed
+- 11:37Z CHILLCATS (MIGRATED, $51,688 mcap, $5,431 5m vol): REJECT, Top 10 hold 30.8% ex-pool (>25%) (V13)  
+  CA `4BCbx4hB1XPmC5mLHsFyHEghC5fb9Afu7THLGXiHpump`
+- 11:28Z GATO (MIGRATED, $10,485,166 mcap, $9,934 5m vol): REJECT, Dev holds 3.3% (>1%) (V13, V17)  
+  CA `HsprHxBRgiVaQdRf3TnKNuZZtaX9JUSPgMFdAkk6pump`
 - 11:23Z HELL (MIGRATED, $3,503,997 mcap, $3,140 5m vol): PASS at conviction 3, PASS: HELL is at $3.5M, 4.5% off its 24h high, with the first resistance only 1.08x away and a 50/50 5m tape. That's chasing a crowded ticker, not a buy zone. (V1, V6)  
   CA `A75Xx6SeftAmWduv9KGwb2GCjXUAhxozcCUCys9jpump`
 - 11:23Z PerpScape (MIGRATED, $37,253 mcap, $13,357 5m vol): REJECT, RugCheck danger: Creator history of rugged tokens  
@@ -92,10 +96,6 @@ Updated 2026-11-04T11:24:38Z (paper trading, never real money)
   CA `8kuQg3WivDtL85VEdw2jEmSXjYt6EEeYBATJ4DtQpump`
 - 11:09Z AMD (DIP, $1,708,956 mcap, $8,001 5m vol): REJECT, Dip with fading attention is a falling knife, not a dip (5m at 0.47x the hour's pace, under 0.6x)  
   CA `DDmGnuvroxVrb7CSyjYcezFU8gnAfhKasg4ZZezmpump`
-- 11:05Z WASTED (DIP, $821,879 mcap, $2,206 5m vol): REJECT, Dev holds 3.5% (>1%) (V13, V17)  
-  CA `GexThZHgaswpAQ7Fi8QrHFubjPimUNSYhJiAA7XZpump`
-- 11:05Z VI (MIGRATED, $1,005,260 mcap, $5,648 5m vol): PASS at conviction 3, PASS: chasing, flow below pace, and the first resistance is 1.08x away. Clean holders don't fix that (V1, V6).  
-  CA `FpWWSqLNrjTTMDM41EXkvBmHBDkNdWrf9RwHL57xpump`
 
 ## What its skips did next (last 48h)
 A skip "ran" if the coin reached the first target (1.5x) from the skip price before a 20% drop, "dumped" if the drop came first. Sampled every 10 min, followed 6h.
@@ -106,14 +106,14 @@ A skip "ran" if the coin reached the first target (1.5x) from the skip price bef
     CA `At3jYPUKVEFYrss5a58myVuqKLjGxMuBP5MwqMk9pump`
   - ran: MameStonk up to 1.67x  
     CA `57eJSmN1ecANrnZjGPrXzWUMyGhQsQgMS9eHdxM3pump`
-- top 10 over 25%: blocked 63, ran 10, dumped 49, flat 3, open 1 (saving losses: keep it)
+- top 10 over 25%: blocked 64, ran 10, dumped 50, flat 3, open 1 (saving losses: keep it)
   - ran: GODHOUSE up to 3.19x  
     CA `CSGTuLtWhCfGZ5S5TvASQ6a5su91NCfRpNqfPczfpump`
   - ran: KYBER up to 1.83x  
     CA `BasL6j1MNkjFyuvRRFsmbm3bKqFPr6Yg3UhShii6pump`
   - ran: WIF up to 1.67x  
     CA `E7ayy5Se6gjwCNtw9NP629AucnTgqab4SSmSxDpUpump`
-- flow below pace: blocked 50, ran 11, dumped 32, flat 5, open 2 (saving losses: keep it)
+- flow below pace: blocked 49, ran 11, dumped 31, flat 5, open 2 (saving losses: keep it)
   - ran: KOROSUKE up to 1.54x  
     CA `7ha4HFgdvkXaDcR2biCsuBpoCZzoLSRjb5we34Gbpump`
   - ran: CAPY up to 1.51x  
@@ -127,7 +127,7 @@ A skip "ran" if the coin reached the first target (1.5x) from the skip price bef
     CA `Cbtnpg6SL9jvZxtZTYYFPtVQXkuuqSUxCU5aXeTkpump`
   - ran: AMD up to 2.02x  
     CA `3MfZ4URVxmB4mfPuy4AxUxpcC5U7aXe7TDA7XVoGpump`
-- RugCheck danger: blocked 29, ran 4, dumped 21, flat 3, open 1 (saving losses: keep it)
+- RugCheck danger: blocked 29, ran 4, dumped 22, flat 3, open 0 (saving losses: keep it)
   - ran: COLLECTOR up to 1.62x  
     CA `6kKETm8xPeZ2z1DBYjXmxMTFAJudvGHJvRHu5Wt8uGtf`
   - ran: GTA up to 1.74x  
@@ -145,14 +145,14 @@ A skip "ran" if the coin reached the first target (1.5x) from the skip price bef
 - falling knife / no higher low: blocked 16, ran 1, dumped 9, flat 4, open 2 (saving losses: keep it)
   - ran: HEDGE up to 1.77x  
     CA `wDSAqt4tEZpDAwB9XY6ejkZvMFuT1zUMjUh67txeYhf`
-- thin 5m volume: blocked 15, ran 3, dumped 8, flat 3, open 1 (saving losses: keep it)
+- thin 5m volume: blocked 14, ran 3, dumped 8, flat 2, open 1 (saving losses: keep it)
   - ran: KIDS up to 1.73x  
     CA `7uwr9Zoz8WW9UyRVC22nmmAXRbPoFTUpVjsN8q7kids`
   - ran: 404 up to 1.89x  
     CA `9gKArqT6qp3goHfuwAnfG7LioqwUtJ8TFu7P1Bhbpump`
   - ran: TTPRO up to 1.71x  
     CA `FrSrp9P3bgiFHwr6h5PQHVh55iC8Dae4eZCKPUo9pump`
-- dev share over 1%: blocked 12, ran 1, dumped 6, flat 3, open 2 (saving losses: keep it)
+- dev share over 1%: blocked 12, ran 1, dumped 6, flat 2, open 3 (saving losses: keep it)
   - ran: Firecube up to 1.88x  
     CA `Ebih1KdijjpQBaM83gUfGhRtTCpHzDkBZhCZedZwpump`
 
@@ -197,11 +197,11 @@ Meta: animal coins are the one theme running across several movers (CHILLCATS $1
 ## Moving most in its scans, last 30 min (1h volume)
 - AMD: $204,794 1h vol, $1,708,956 mcap, +29% 1h  
   CA `DDmGnuvroxVrb7CSyjYcezFU8gnAfhKasg4ZZezmpump`
+- CHILLCATS: $162,340 1h vol, $52,525 mcap, -52% 1h  
+  CA `4BCbx4hB1XPmC5mLHsFyHEghC5fb9Afu7THLGXiHpump`
 - ANONVOYAGE: $122,877 1h vol, $206,764 mcap, -60% 1h  
   CA `8muc9DdhqWfAPcvmEebNQCG89bLiwi12T2KtBtzVpump`
+- GATO: $111,938 1h vol, $10,497,567 mcap, -3% 1h  
+  CA `HsprHxBRgiVaQdRf3TnKNuZZtaX9JUSPgMFdAkk6pump`
 - PerpScape: $110,201 1h vol, $37,253 mcap, -28% 1h  
   CA `FWTurdziu8qVHLc61kvRc4UzMgG5c76DdzowYhL1pump`
-- VI: $75,670 1h vol, $1,019,375 mcap, +7% 1h  
-  CA `FpWWSqLNrjTTMDM41EXkvBmHBDkNdWrf9RwHL57xpump`
-- brkout: $63,640 1h vol, $19,447 mcap, +525% 1h  
-  CA `14U9w9vmMx662z6EDLgXoYncJTWZEw21B1X55QaNpump`
