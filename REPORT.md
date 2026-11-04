@@ -1,13 +1,13 @@
 # Trencher live report
 
-Updated 2026-11-04T10:24:13Z (paper trading, never real money)
+Updated 2026-11-04T10:39:17Z (paper trading, never real money)
 
 - Equity: $74.23 (-25.8% vs $100 start)
 - Closed trades: 22, 3 wins
 - Fees paid: $14.78 (axiom $2.81, network $9.18, pool $2.66), plus $4.15 lost to slippage
 - New trades: WATCH-ONLY (scans and decides, buys nothing)
-- Brain: subscription, claude-haiku-5-5 for routine calls, claude-opus-5-5 for the daily review; 473 routine calls and 1 plan-limit hits in 48h
-- Watch log: 98 coins being followed, 411 filed, 0 would-buys (6h follow, sampled every 2 min)
+- Brain: subscription, claude-haiku-5-5 for routine calls, claude-opus-5-5 for the daily review; 472 routine calls and 1 plan-limit hits in 48h
+- Watch log: 98 coins being followed, 415 filed, 0 would-buys (6h follow, sampled every 2 min)
 
 ## Scorecard (after fees)
 - 22 closed, 3 won (14%), net $-25.79
@@ -73,9 +73,17 @@ Updated 2026-11-04T10:24:13Z (paper trading, never real money)
   CA `H4gHnZ3NCU7Z9XQwGX6YYJNyieGEW8pqwGRUcdSxpump`
 
 ## Last scan
-- 10:23Z: 9 coins, 8 with pairs, 2 passed the market filters, 2 researched
+- 10:38Z: 6 coins, 5 with pairs, 0 passed the market filters, 0 researched
 
 ## Coins it looked at, and why it passed
+- 10:37Z PerpScape (MIGRATED, $55,155 mcap, $6,402 5m vol): REJECT, RugCheck danger: Creator history of rugged tokens  
+  CA `FWTurdziu8qVHLc61kvRc4UzMgG5c76DdzowYhL1pump`
+- 10:37Z ANONVOYAGE (MIGRATED, $608,732 mcap, $12,747 5m vol): REJECT, Bundles: 10 linked wallet cluster(s) hold 50.3% of supply (>20%) (V17)  
+  CA `8muc9DdhqWfAPcvmEebNQCG89bLiwi12T2KtBtzVpump`
+- 10:36Z MEOWNERO (MIGRATED, $340,718 mcap, $2,293 5m vol): PASS at conviction 2, PASS. Blocker: bottom-buy rule (no catalyst, no rising narrative), chart data broken, and the bundle cluster is 12.4% in one network. Farm-shaped until proven otherwise (V1, V3, V6, V13).  
+  CA `6gnB2H2hbTVvKUWCzNuqjWY8Rod6EVBmfHi7YxZpTWa7`
+- 10:27Z RICO (DIP, $362,906 mcap, $2,282 5m vol): PASS at conviction 4, PASS: no printed higher low, 5m flow is $2.3k, and it's the 21-copy GTA6 vamp field. Blocker "no higher low" (V1, V6, V13).  
+  CA `8kuQg3WivDtL85VEdw2jEmSXjYt6EEeYBATJ4DtQpump`
 - 10:23Z 5STAR (MIGRATED, $81,078 mcap, $2,458 5m vol): REJECT, Dev holds 1.4% (>1%) (V13, V17)  
   CA `FK5tP4Zw7ujWzaz3TgeJ5NcqGe5LFufo7m6zH6YQpump`
 - 10:23Z AMD (DIP, $1,505,167 mcap, $9,068 5m vol): PASS at conviction 3, PASS: no catalyst for a bottom buy, one bundle cluster holds 12.1%, and the entry is 26% above the printed higher low. Mid-range, no edge. (V1, V13, V17)  
@@ -88,14 +96,6 @@ Updated 2026-11-04T10:24:13Z (paper trading, never real money)
   CA `4BCbx4hB1XPmC5mLHsFyHEghC5fb9Afu7THLGXiHpump`
 - 09:51Z ANONVOYAGE (MIGRATED, $485,554 mcap, $5,749 5m vol): REJECT, Bundles: 10 linked wallet cluster(s) hold 50.3% of supply (>20%) (V17)  
   CA `8muc9DdhqWfAPcvmEebNQCG89bLiwi12T2KtBtzVpump`
-- 09:51Z MEOWNERO (MIGRATED, $215,219 mcap, $2,319 5m vol): PASS at conviction 2, PASS. MEOWNERO has no story, no X, no site, and its price history is broken, so I can't read the money shape. Blocker: "dead story" plus "no higher low". (V1, V6, V13)  
-  CA `6gnB2H2hbTVvKUWCzNuqjWY8Rod6EVBmfHi7YxZpTWa7`
-- 09:48Z X (MIGRATED, $31,209 mcap, $4,328 5m vol): PASS at conviction 2, PASS. Blocker: "no narrative". A single-word name with no meta, down 82% from a $177k peak two hours ago, and no catalyst. (V1, V13)  
-  CA `FQE9h4fL65oDHMsR2MHcSe6d6DF4hFrFarsQQkVJpump`
-- 09:46Z CHATBLT (MIGRATED, $81,826 mcap, $12,737 5m vol): REJECT, Bundles: 10 linked wallet cluster(s) hold 100.0% of supply (>20%) (V17)  
-  CA `BM1Q9KfjgVoERj1eipkPqueMvhz1kfkUfE835ZjJpump`
-- 09:43Z APU (FINAL_STRETCH, $19,390 mcap, $3,089 5m vol): REJECT, Top 10 hold 25.6% ex-pool (>25%) (V13)  
-  CA `8wzq9hZD5LZ969Q5mttHkJh4ZFNrVb1tmowdp7Yspump`
 
 ## What its skips did next (last 48h)
 A skip "ran" if the coin reached the first target (1.5x) from the skip price before a 20% drop, "dumped" if the drop came first. Sampled every 10 min, followed 6h.
@@ -113,7 +113,7 @@ A skip "ran" if the coin reached the first target (1.5x) from the skip price bef
     CA `BasL6j1MNkjFyuvRRFsmbm3bKqFPr6Yg3UhShii6pump`
   - ran: WIF up to 1.67x  
     CA `E7ayy5Se6gjwCNtw9NP629AucnTgqab4SSmSxDpUpump`
-- flow below pace: blocked 50, ran 11, dumped 31, flat 4, open 4 (saving losses: keep it)
+- flow below pace: blocked 50, ran 12, dumped 32, flat 4, open 2 (saving losses: keep it)
   - ran: KOROSUKE up to 1.54x  
     CA `7ha4HFgdvkXaDcR2biCsuBpoCZzoLSRjb5we34Gbpump`
   - ran: CAPY up to 1.51x  
@@ -127,18 +127,20 @@ A skip "ran" if the coin reached the first target (1.5x) from the skip price bef
     CA `Cbtnpg6SL9jvZxtZTYYFPtVQXkuuqSUxCU5aXeTkpump`
   - ran: AMD up to 2.02x  
     CA `3MfZ4URVxmB4mfPuy4AxUxpcC5U7aXe7TDA7XVoGpump`
-- RugCheck danger: blocked 30, ran 4, dumped 23, flat 3, open 0 (saving losses: keep it)
+- RugCheck danger: blocked 31, ran 4, dumped 23, flat 3, open 1 (saving losses: keep it)
   - ran: COLLECTOR up to 1.62x  
     CA `6kKETm8xPeZ2z1DBYjXmxMTFAJudvGHJvRHu5Wt8uGtf`
   - ran: GTA up to 1.74x  
     CA `G6F6SYSUAUxsnKLyeRW29hE5A4BGCbw91x7HMPySpump`
   - ran: Wanted up to 1.53x  
     CA `8oUGdPdyxVaCSJSZpcVZuxqoyiZAmc2Z22FsDRZ3pump`
-- falling knife (code): blocked 26, ran 2, dumped 21, flat 1, open 2 (saving losses: keep it)
+- falling knife (code): blocked 25, ran 3, dumped 21, flat 1, open 0 (saving losses: keep it)
   - ran: YES up to 1.71x  
     CA `B7Cj19ke2F8S6fazbBvGMxHYNNMYuDaAn3Sn2Zikpump`
   - ran: RATIO up to 1.51x  
     CA `3JdeP1VBHgRPunmjTj1D6w6ZZePwGAwjUr2tCufwpump`
+  - ran: AMD up to 1.67x  
+    CA `DDmGnuvroxVrb7CSyjYcezFU8gnAfhKasg4ZZezmpump`
 - bundles over the line: blocked 18, ran 1, dumped 13, flat 1, open 3 (saving losses: keep it)
   - ran: MAMESUKE up to 1.95x  
     CA `SCGBBnSwnekytGFHgyeHHxPMiN7xDxsWFGg9JgFSTNK`
@@ -149,9 +151,11 @@ A skip "ran" if the coin reached the first target (1.5x) from the skip price bef
     CA `9gKArqT6qp3goHfuwAnfG7LioqwUtJ8TFu7P1Bhbpump`
   - ran: TTPRO up to 1.71x  
     CA `FrSrp9P3bgiFHwr6h5PQHVh55iC8Dae4eZCKPUo9pump`
-- falling knife / no higher low: blocked 16, ran 1, dumped 9, flat 4, open 2 (saving losses: keep it)
+- falling knife / no higher low: blocked 16, ran 2, dumped 9, flat 4, open 1 (saving losses: keep it)
   - ran: HEDGE up to 1.77x  
     CA `wDSAqt4tEZpDAwB9XY6ejkZvMFuT1zUMjUh67txeYhf`
+  - ran: AMD up to 1.67x  
+    CA `DDmGnuvroxVrb7CSyjYcezFU8gnAfhKasg4ZZezmpump`
 - dev share over 1%: blocked 12, ran 1, dumped 6, flat 3, open 2 (saving losses: keep it)
   - ran: Firecube up to 1.88x  
     CA `Ebih1KdijjpQBaM83gUfGhRtTCpHzDkBZhCZedZwpump`
@@ -195,13 +199,13 @@ There's no positive after-cost edge yet. The 13 settled coins averaged -6.7% net
 Meta from scan_movers: dog and animal names are the one theme running across market caps, with Vice Inu ($856k, 78% buys, +45% on the hour), A Meme Dog ($1.3M) and GATO/Dacity at $7-10M. None of them clears the $10k 5-minute volume bar, so it's a rising but thin lane. The fresh pump.fun lane (APU +434%, Moonman +119%, both under 1h old and under $20k) is hot and thin, which is where bundles and dumps live (V1, V13), so I'm not touching it. Self-referential "meme" and party names (AMP, Doge Party, Anon Voyage) look like noise, and 5STAR, Twitter and Doge are fading. The crawler's space, Trump/LAPTOP and "binance hack" stories don't appear in these movers; the political and hack-named coins are off the table anyway, so I'm not calling them a meta. Setup to research: ChatBLT (pumpswap, $78k mcap, $18.3k on 5m, 67% buys, 5m pace running above its hourly pace, -9% on the hour). It's the one mover that clears the volume bar, so check holders and bundles before any entry and set the stop at the thesis break when researching. Not verified: the crawler's Transinu and CHILLCATS figures don't match scan_movers, so I'm not using them.
 
 ## Moving most in its scans, last 30 min (1h volume)
-- Doge: $165,163 1h vol, $22,421 mcap, -65% 1h  
+- Doge: $90,407 1h vol, $18,437 mcap, -58% 1h  
   CA `9CRbVZxQshb9dMkh3yGvyARJRAHMGVuxiQRGhUsppump`
-- CHILLCATS: $154,016 1h vol, $114,093 mcap, -19% 1h  
-  CA `4BCbx4hB1XPmC5mLHsFyHEghC5fb9Afu7THLGXiHpump`
+- ANONVOYAGE: $87,848 1h vol, $608,732 mcap, +26% 1h  
+  CA `8muc9DdhqWfAPcvmEebNQCG89bLiwi12T2KtBtzVpump`
 - VI: $81,825 1h vol, $820,414 mcap, +1% 1h  
   CA `FpWWSqLNrjTTMDM41EXkvBmHBDkNdWrf9RwHL57xpump`
-- MEMY: $76,052 1h vol, $9,034 mcap, +156% 1h  
+- MEMY: $80,569 1h vol, $8,477 mcap, +141% 1h  
   CA `7zje2znMLwRgWwzbYAz2fp97cxBCKSaZTZovKKH54kti`
 - AMD: $73,275 1h vol, $1,505,167 mcap, +16% 1h  
   CA `DDmGnuvroxVrb7CSyjYcezFU8gnAfhKasg4ZZezmpump`
