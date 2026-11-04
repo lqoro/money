@@ -1,13 +1,13 @@
 # Trencher live report
 
-Updated 2026-11-04T01:02:33Z (paper trading, never real money)
+Updated 2026-11-04T01:17:33Z (paper trading, never real money)
 
 - Equity: $74.23 (-25.8% vs $100 start)
 - Closed trades: 22, 3 wins
 - Fees paid: $14.78 (axiom $2.81, network $9.18, pool $2.66), plus $4.15 lost to slippage
 - New trades: WATCH-ONLY (scans and decides, buys nothing)
-- Brain: subscription, claude-haiku-5-5 for routine calls, claude-opus-5-5 for the daily review; 462 routine calls and 1 plan-limit hits in 48h
-- Watch log: 122 coins being followed, 230 filed, 0 would-buys (6h follow, sampled every 2 min)
+- Brain: subscription, claude-haiku-5-5 for routine calls, claude-opus-5-5 for the daily review; 459 routine calls and 1 plan-limit hits in 48h
+- Watch log: 124 coins being followed, 233 filed, 0 would-buys (6h follow, sampled every 2 min)
 
 ## Scorecard (after fees)
 - 22 closed, 3 won (14%), net $-25.79
@@ -73,9 +73,19 @@ Updated 2026-11-04T01:02:33Z (paper trading, never real money)
   CA `H4gHnZ3NCU7Z9XQwGX6YYJNyieGEW8pqwGRUcdSxpump`
 
 ## Last scan
-- 01:02Z: 2 coins, 2 with pairs, 1 passed the market filters, 1 researched
+- 01:16Z: 8 coins, 8 with pairs, 0 passed the market filters, 0 researched
 
 ## Coins it looked at, and why it passed
+- 01:11Z PUP (FINAL_STRETCH, $25,062 mcap, $15,159 5m vol): PASS at conviction 3, PASS: this is the second PUP in an 18-copy field, and the leader is the other one doing $60k on the 5m. It's also up 55% in 5m, which is chasing. (V1, V6, V3)  
+  CA `69GXjuoQGxNb75BgQ54qUf6j2aDgXHVSkAcefuiqe58u`
+- 01:09Z Dacity (MIGRATED, $6,651,417 mcap, $3,880 5m vol): REJECT, Bundles: 10 linked wallet cluster(s) hold 24.0% of supply (>20%) (V17)  
+  CA `nxPqZ4F7ux8Vph5NFu25rEP6Kx9Gr1U6Fmj36Rjpump`
+- 01:09Z YETI (MIGRATED, $38,930 mcap, $6,090 5m vol): REJECT, Top 10 hold 25.2% ex-pool (>25%) (V13)  
+  CA `FDGdzwKowt4hLkgMFtNik3dL5JeCrvFQqkgxJyGgSG6x`
+- 01:08Z MEOWNERO (MIGRATED, $426,560 mcap, $149 5m vol): REJECT, 5m volume $149 is dead (<$2,000) (V1)  
+  CA `6gnB2H2hbTVvKUWCzNuqjWY8Rod6EVBmfHi7YxZpTWa7`
+- 01:05Z PREDICTINU (MIGRATED, $94,628 mcap, $84,618 5m vol): REJECT, Top 10 hold 29.5% ex-pool (>25%) (V13)  
+  CA `GT7kQdT3JvZ8vFBW4jjYGYBsrNrE9U4UFspJJAXapump`
 - 01:02Z E  (DIP, $279,954 mcap, $24,198 5m vol): REJECT, Dip with fading attention is a falling knife, not a dip (5m at 0.29x the hour's pace, under 0.6x)  
   CA `EfRnwABuWZKxri55se639twy4jy3FRgYfri7wLJ5pump`
 - 00:50Z AMC (DIP, $184,416 mcap, $4,150 5m vol): REJECT, Dip with fading attention is a falling knife, not a dip (5m at 0.13x the hour's pace, under 0.6x)  
@@ -86,20 +96,10 @@ Updated 2026-11-04T01:02:33Z (paper trading, never real money)
   CA `HsprHxBRgiVaQdRf3TnKNuZZtaX9JUSPgMFdAkk6pump`
 - 00:46Z PUP (FINAL_STRETCH, $20,313 mcap, $60,222 5m vol): PASS at conviction 2, PASS: split crowd. 21 copies of a joke name, 8 minutes old, 5m flow at 7x pace with no printed higher low and no catalyst. Blocker: split crowd + chasing spike (V1, V3, V6).  
   CA `DyUR3ZpJj5iu8WBG7zk1YbamJE5k9afZhoM7xYCbpump`
-- 00:45Z Ahsoka (MIGRATED, $470,786 mcap, $2,370 5m vol): PASS at conviction 2, PASS. Down 79% from a $2.29M peak, and the story has no pulse. Blocker: bottom-buy gate (theme pace 0.69x, narrative not rising, no catalyst). (V1, V6)  
-  CA `4nuj5NLHMtQSezfmz6CwBpCRJisFie6F6MxNNz1dpump`
-- 00:45Z ANONVOYAGE (DIP, $1,388,820 mcap, $9,968 5m vol): REJECT, Bundles: 10 linked wallet cluster(s) hold 50.3% of supply (>20%) (V17)  
-  CA `8muc9DdhqWfAPcvmEebNQCG89bLiwi12T2KtBtzVpump`
-- 00:41Z CJ (DIP, $49,381 mcap, $2,381 5m vol): REJECT, Top 10 hold 30.5% ex-pool (>25%) (V13)  
-  CA `F4vEFNoH9H2oLYRabaQQ2Z6jAAi2AhRVdTdVH6Nn2J1q`
-- 00:32Z Froblin (FINAL_STRETCH, $28,487 mcap, $21,957 5m vol): PASS at conviction 2, PASS: Froblin is up 76% in 5 minutes on 6.3x its hourly pace, after a 7x run off a ~$4k floor, with 19 copies of the same word and a saw-tooth chart. That's a spike, not a pullback. Blocker: chasing spike (V1, V6, V13).  
-  CA `5UQXX1HTkumx7T4nyHRFz5eqdgimEU9LZT5SqTzh5SKr`
-- 00:25Z ONE (MIGRATED, $68,311 mcap, $13,299 5m vol): REJECT, Dev holds 2.1% (>1%) (V13, V17)  
-  CA `9xU9DLJer45mJocspDuyhFfqvSuBTYf2bLcTKcFLpump`
 
 ## What its skips did next (last 48h)
 A skip "ran" if the coin reached the first target (1.5x) from the skip price before a 20% drop, "dumped" if the drop came first. Sampled every 10 min, followed 6h.
-- top 10 over 25%: blocked 61, ran 10, dumped 47, flat 3, open 1 (saving losses: keep it)
+- top 10 over 25%: blocked 63, ran 10, dumped 47, flat 3, open 3 (saving losses: keep it)
   - ran: GODHOUSE up to 3.19x  
     CA `CSGTuLtWhCfGZ5S5TvASQ6a5su91NCfRpNqfPczfpump`
   - ran: KYBER up to 1.83x  
@@ -113,14 +113,14 @@ A skip "ran" if the coin reached the first target (1.5x) from the skip price bef
     CA `At3jYPUKVEFYrss5a58myVuqKLjGxMuBP5MwqMk9pump`
   - ran: MameStonk up to 1.67x  
     CA `57eJSmN1ecANrnZjGPrXzWUMyGhQsQgMS9eHdxM3pump`
-- flow below pace: blocked 50, ran 10, dumped 35, flat 3, open 2 (saving losses: keep it)
+- flow below pace: blocked 50, ran 10, dumped 36, flat 3, open 1 (saving losses: keep it)
   - ran: KOROSUKE up to 1.54x  
     CA `7ha4HFgdvkXaDcR2biCsuBpoCZzoLSRjb5we34Gbpump`
   - ran: RICO up to 1.73x  
     CA `8kuQg3WivDtL85VEdw2jEmSXjYt6EEeYBATJ4DtQpump`
   - ran: CAPY up to 1.51x  
     CA `DBPTU2oKLDHXQjAEJ3rZi8bUGmt2uxUbipgg6xmXoMqr`
-- near the high / chasing: blocked 38, ran 3, dumped 30, flat 4, open 1 (saving losses: keep it)
+- near the high / chasing: blocked 37, ran 3, dumped 29, flat 3, open 2 (saving losses: keep it)
   - ran: underdog up to 1.64x  
     CA `BZXh2LcnNNyypxsdfVeFzXawqmoGoSShC5i4NEQQpump`
   - ran: LUCIA up to 1.83x  
@@ -134,7 +134,7 @@ A skip "ran" if the coin reached the first target (1.5x) from the skip price bef
     CA `6kKETm8xPeZ2z1DBYjXmxMTFAJudvGHJvRHu5Wt8uGtf`
   - ran: GTA up to 1.74x  
     CA `G6F6SYSUAUxsnKLyeRW29hE5A4BGCbw91x7HMPySpump`
-- falling knife (code): blocked 29, ran 4, dumped 23, flat 1, open 1 (saving losses: keep it)
+- falling knife (code): blocked 29, ran 4, dumped 24, flat 1, open 0 (saving losses: keep it)
   - ran: STEALTH up to 1.77x  
     CA `GoDSW31bTxfkoup9yA1qcGGx9RMXdTEWgApv3xzBmoA`
   - ran: PEACE up to 1.75x  
@@ -148,7 +148,7 @@ A skip "ran" if the coin reached the first target (1.5x) from the skip price bef
     CA `9ZmdP8q22ebRhEkcwd5EDkitu7ypeDFXTQXpv2kUpump`
   - ran: MAMESUKE up to 1.95x  
     CA `SCGBBnSwnekytGFHgyeHHxPMiN7xDxsWFGg9JgFSTNK`
-- thin 5m volume: blocked 14, ran 3, dumped 7, flat 4, open 0 (saving losses: keep it)
+- thin 5m volume: blocked 15, ran 3, dumped 7, flat 4, open 1 (saving losses: keep it)
   - ran: CUMFACE up to 1.55x  
     CA `J1D3X8znX4AzUPMHVWyBLNHqBBqWDPNSjX4KwK3Qpump`
   - ran: KIDS up to 1.73x  
@@ -158,7 +158,7 @@ A skip "ran" if the coin reached the first target (1.5x) from the skip price bef
 - falling knife / no higher low: blocked 13, ran 1, dumped 9, flat 3, open 0 (saving losses: keep it)
   - ran: HEDGE up to 1.77x  
     CA `wDSAqt4tEZpDAwB9XY6ejkZvMFuT1zUMjUh67txeYhf`
-- dev share over 1%: blocked 11, ran 2, dumped 5, flat 1, open 3 (saving losses: keep it)
+- dev share over 1%: blocked 11, ran 2, dumped 6, flat 1, open 2 (saving losses: keep it)
   - ran: Firecube up to 1.88x  
     CA `Ebih1KdijjpQBaM83gUfGhRtTCpHzDkBZhCZedZwpump`
   - ran: HUND  up to 1.63x  
@@ -207,9 +207,9 @@ Trencher: The movers are mostly fresh pump.fun launches (most under 2h old), and
   CA `EfRnwABuWZKxri55se639twy4jy3FRgYfri7wLJ5pump`
 - AMC: $390,514 1h vol, $184,416 mcap, +343% 1h  
   CA `YUduqrb8kK4p9VfV2JXyHnV4yCXBiUoKgH7znLNpump`
-- GATO: $173,587 1h vol, $10,912,012 mcap, +4% 1h  
-  CA `HsprHxBRgiVaQdRf3TnKNuZZtaX9JUSPgMFdAkk6pump`
-- ANONVOYAGE: $122,605 1h vol, $1,379,383 mcap, -25% 1h  
-  CA `8muc9DdhqWfAPcvmEebNQCG89bLiwi12T2KtBtzVpump`
-- PUP: $103,533 1h vol, $20,313 mcap, +555% 1h  
-  CA `DyUR3ZpJj5iu8WBG7zk1YbamJE5k9afZhoM7xYCbpump`
+- PREDICTINU: $227,821 1h vol, $94,628 mcap, +144% 1h  
+  CA `GT7kQdT3JvZ8vFBW4jjYGYBsrNrE9U4UFspJJAXapump`
+- PREDICTOOR: $193,427 1h vol, $28,233 mcap, -73% 1h  
+  CA `DX51xEuEckZ3Jc6x333fTFUVz2pYQriNQ2cUb1Cupump`
+- TWUMP: $131,916 1h vol, $5,799 mcap, -84% 1h  
+  CA `3DYBAnkeAXQWv68nEjwxZXJGobkXZchEGi4mwW6Tu7ci`
