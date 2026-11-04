@@ -1,13 +1,13 @@
 # Trencher live report
 
-Updated 2026-11-04T05:35:21Z (paper trading, never real money)
+Updated 2026-11-04T05:50:30Z (paper trading, never real money)
 
 - Equity: $74.23 (-25.8% vs $100 start)
 - Closed trades: 22, 3 wins
 - Fees paid: $14.78 (axiom $2.81, network $9.18, pool $2.66), plus $4.15 lost to slippage
 - New trades: WATCH-ONLY (scans and decides, buys nothing)
-- Brain: subscription, claude-haiku-5-5 for routine calls, claude-opus-5-5 for the daily review; 461 routine calls and 1 plan-limit hits in 48h
-- Watch log: 103 coins being followed, 328 filed, 0 would-buys (6h follow, sampled every 2 min)
+- Brain: subscription, claude-haiku-5-5 for routine calls, claude-opus-5-5 for the daily review; 464 routine calls and 1 plan-limit hits in 48h
+- Watch log: 105 coins being followed, 331 filed, 0 would-buys (6h follow, sampled every 2 min)
 
 ## Scorecard (after fees)
 - 22 closed, 3 won (14%), net $-25.79
@@ -73,9 +73,19 @@ Updated 2026-11-04T05:35:21Z (paper trading, never real money)
   CA `H4gHnZ3NCU7Z9XQwGX6YYJNyieGEW8pqwGRUcdSxpump`
 
 ## Last scan
-- 05:34Z: 6 coins, 5 with pairs, 0 passed the market filters, 0 researched
+- 05:49Z: 8 coins, 7 with pairs, 0 passed the market filters, 0 researched
 
 ## Coins it looked at, and why it passed
+- 05:47Z Link (DIP, $114,633 mcap, $6,132 5m vol): PASS at conviction 3, PASS: "Link" ($115k, DIP -47%) is a thin Zelda vamp with 5m flow at 0.49x the theme's pace, no catalyst, and a site that doesn't show the CA. Blocker: "dead story" (V1, V6, V13).  
+  CA `7kqWni27vRVCKjcuBAmAbs8t7PxXgxdEjUSyRfeFpump`
+- 05:46Z VI (MIGRATED, $490,476 mcap, $4,241 5m vol): PASS at conviction 3, PASS: flow below pace, $4.2k 5m, and it's one of 15-21 "Inu/Vice" copies with a 5-hour-old site. Blocker: "flow below pace." (V1, V6, V13)  
+  CA `FpWWSqLNrjTTMDM41EXkvBmHBDkNdWrf9RwHL57xpump`
+- 05:42Z Dacity (MIGRATED, $7,241,418 mcap, $8,213 5m vol): PASS at conviction 3, PASS — $7.2M mcap, 4.8% under its 24h high, 5m volume under the $10k floor. Chasing a vamp leader with no room to 1.5x. (V1, V6)  
+  CA `nxPqZ4F7ux8Vph5NFu25rEP6Kx9Gr1U6Fmj36Rjpump`
+- 05:40Z TTPRO (DIP, $83,018 mcap, $9,029 5m vol): REJECT, Dev holds 2.7% (>1%) (V13, V17)  
+  CA `FrSrp9P3bgiFHwr6h5PQHVh55iC8Dae4eZCKPUo9pump`
+- 05:39Z CPU (MIGRATED, $130,440 mcap, $8,910 5m vol): PASS at conviction 3, PASS: chasing spike, too new, flow below pace, split crowd. Blockers: "chasing spike", "too new", "flow below pace", "split crowd" (V1, V6, V3).  
+  CA `Bz7kUDwG1KWZX9m9JrZyzhveUUcw6RTXVbjHseMjpump`
 - 05:34Z CHILLCATS (DIP, $85,241 mcap, $28,159 5m vol): PASS at conviction 3, PASS — CHILLCATS is falling -21% in 5m, 18 minutes off a 1.63x peak, with no printed higher low and no catalyst. Too new and a 27-copy field. Wait. (V1, V6)  
   CA `4BCbx4hB1XPmC5mLHsFyHEghC5fb9Afu7THLGXiHpump`
 - 05:28Z AMC (MIGRATED, $422,596 mcap, $3,304 5m vol): PASS at conviction 3, PASS: flow below pace. A Meme Coin has clean holders, but $3.3k of 5m volume at 0.39x the hourly pace is not a live MIGRATED setup, and it's a probe-less pass (V1, V6).  
@@ -86,19 +96,16 @@ Updated 2026-11-04T05:35:21Z (paper trading, never real money)
   CA `F4Um7uHXRoXZ92DXVZ6FoDUstnubJgaSzwEZuBZcpump`
 - 05:18Z ANONVOYAGE (MIGRATED, $497,244 mcap, $21,834 5m vol): REJECT, Bundles: 10 linked wallet cluster(s) hold 50.3% of supply (>20%) (V17)  
   CA `8muc9DdhqWfAPcvmEebNQCG89bLiwi12T2KtBtzVpump`
-- 05:18Z CHICKPOT (MIGRATED, $880,263 mcap, $16,979 5m vol): PASS at conviction 2, PASS — 16% off a +1,877% hour, 5m flow at half its hourly pace, sells ahead of buys, no printed higher low, and it's under an hour old. Blocker: "flow below pace" (V1, V6).  
-  CA `8B6ZZAC2FQ7AJrZPz7veXJrod5t2MG1C5MZBLNbUpump`
-- 05:13Z GATO (MIGRATED, $10,822,804 mcap, $4,127 5m vol): REJECT, Dev holds 3.3% (>1%) (V13, V17)  
-  CA `HsprHxBRgiVaQdRf3TnKNuZZtaX9JUSPgMFdAkk6pump`
-- 05:05Z VETO (DIP, $476,698 mcap, $87,908 5m vol): REJECT, Top 10 hold 25.5% ex-pool (>25%) (V13)  
-  CA `4xWRsdRkre5ibf3ZyS2eje6sUY8wGnmtSHx7gkGtpump`
-- 05:02Z Link (DIP, $120,392 mcap, $10,206 5m vol): PASS at conviction 3, PASS: bottom buy with no catalyst, theme volume at 0.56x pace, and the first resistance is only 1.2x away. Vamp field of 12 copies on a 1.5-day-old domain. (V1, V3, V6)  
-  CA `7kqWni27vRVCKjcuBAmAbs8t7PxXgxdEjUSyRfeFpump`
-- 05:01Z VI (MIGRATED, $467,964 mcap, $4,443 5m vol): PASS at conviction 3, PASS — 5m flow is $4.4k, under the $10k live-flow floor, and it's 11.6% off the high without pushing into it. Fifteen copies split the crowd, and the domain is about five hours old. Blocker: "flow below pace" plus "no breakout" (V1, V6, V13).  
-  CA `FpWWSqLNrjTTMDM41EXkvBmHBDkNdWrf9RwHL57xpump`
 
 ## What its skips did next (last 48h)
 A skip "ran" if the coin reached the first target (1.5x) from the skip price before a 20% drop, "dumped" if the drop came first. Sampled every 10 min, followed 6h.
+- too new / sniping: blocked 64, ran 13, dumped 50, flat 0, open 1 (saving losses: keep it)
+  - ran: CLIPPED up to 1.65x  
+    CA `Bxyp4L6EbDys4fo51qxMEQTx41sj6McnsbPZTdvipump`
+  - ran: Marutaro up to 1.62x  
+    CA `At3jYPUKVEFYrss5a58myVuqKLjGxMuBP5MwqMk9pump`
+  - ran: MameStonk up to 1.67x  
+    CA `57eJSmN1ecANrnZjGPrXzWUMyGhQsQgMS9eHdxM3pump`
 - top 10 over 25%: blocked 63, ran 10, dumped 50, flat 3, open 0 (saving losses: keep it)
   - ran: GODHOUSE up to 3.19x  
     CA `CSGTuLtWhCfGZ5S5TvASQ6a5su91NCfRpNqfPczfpump`
@@ -106,13 +113,6 @@ A skip "ran" if the coin reached the first target (1.5x) from the skip price bef
     CA `BasL6j1MNkjFyuvRRFsmbm3bKqFPr6Yg3UhShii6pump`
   - ran: WIF up to 1.67x  
     CA `E7ayy5Se6gjwCNtw9NP629AucnTgqab4SSmSxDpUpump`
-- too new / sniping: blocked 63, ran 13, dumped 49, flat 0, open 1 (saving losses: keep it)
-  - ran: CLIPPED up to 1.65x  
-    CA `Bxyp4L6EbDys4fo51qxMEQTx41sj6McnsbPZTdvipump`
-  - ran: Marutaro up to 1.62x  
-    CA `At3jYPUKVEFYrss5a58myVuqKLjGxMuBP5MwqMk9pump`
-  - ran: MameStonk up to 1.67x  
-    CA `57eJSmN1ecANrnZjGPrXzWUMyGhQsQgMS9eHdxM3pump`
 - flow below pace: blocked 51, ran 9, dumped 34, flat 3, open 5 (saving losses: keep it)
   - ran: KOROSUKE up to 1.54x  
     CA `7ha4HFgdvkXaDcR2biCsuBpoCZzoLSRjb5we34Gbpump`
@@ -120,7 +120,7 @@ A skip "ran" if the coin reached the first target (1.5x) from the skip price bef
     CA `DBPTU2oKLDHXQjAEJ3rZi8bUGmt2uxUbipgg6xmXoMqr`
   - ran: ZERO up to 1.61x  
     CA `Aes6XNH9BboLZuchD5PnDwaX6Zj1nU79TU3gNtPEpump`
-- near the high / chasing: blocked 37, ran 3, dumped 31, flat 3, open 0 (saving losses: keep it)
+- near the high / chasing: blocked 38, ran 3, dumped 31, flat 3, open 1 (saving losses: keep it)
   - ran: underdog up to 1.64x  
     CA `BZXh2LcnNNyypxsdfVeFzXawqmoGoSShC5i4NEQQpump`
   - ran: LUCIA up to 1.83x  
@@ -144,7 +144,7 @@ A skip "ran" if the coin reached the first target (1.5x) from the skip price bef
 - bundles over the line: blocked 16, ran 1, dumped 13, flat 1, open 1 (saving losses: keep it)
   - ran: MAMESUKE up to 1.95x  
     CA `SCGBBnSwnekytGFHgyeHHxPMiN7xDxsWFGg9JgFSTNK`
-- thin 5m volume: blocked 15, ran 3, dumped 6, flat 3, open 3 (saving losses: keep it)
+- thin 5m volume: blocked 15, ran 3, dumped 7, flat 3, open 2 (saving losses: keep it)
   - ran: CUMFACE up to 1.55x  
     CA `J1D3X8znX4AzUPMHVWyBLNHqBBqWDPNSjX4KwK3Qpump`
   - ran: KIDS up to 1.73x  
@@ -154,7 +154,7 @@ A skip "ran" if the coin reached the first target (1.5x) from the skip price bef
 - falling knife / no higher low: blocked 14, ran 1, dumped 9, flat 3, open 1 (saving losses: keep it)
   - ran: HEDGE up to 1.77x  
     CA `wDSAqt4tEZpDAwB9XY6ejkZvMFuT1zUMjUh67txeYhf`
-- dev share over 1%: blocked 12, ran 1, dumped 6, flat 1, open 4 (saving losses: keep it)
+- dev share over 1%: blocked 12, ran 1, dumped 7, flat 1, open 3 (saving losses: keep it)
   - ran: Firecube up to 1.88x  
     CA `Ebih1KdijjpQBaM83gUfGhRtTCpHzDkBZhCZedZwpump`
 
@@ -197,13 +197,13 @@ There's no positive after-cost edge yet. The 13 settled coins averaged -6.7% net
 The meta right now is culture-war and political-satire names, the loudest lane on volume: LIBBING ($150k mcap, $47.7k 5m, 62% buys, +286% in 1h), the libtard ($28k mcap, $29k 5m, 59% buys, +805% in 1h), and Groyper, America First, Ubikistan and jd vence. Several are named after real public figures, so the political-figure rule keeps me out until a CA push is ruled out (V13). The second lane is memes about memes: A Meme Coin ($396k, 73% buys, $6.6k 5m, under 1h old) is the cleanest version but sits under my $10k 5m floor, while "I Identify as a Memecoin" is -75% in 1h and fading. Anon Voyage ($841k, 15h old, $10.2k 5m, 58% buys, -4.5% in 1h) is the only older coin with real flow; it's a migrated-coin candidate under the MIGRATED setup, which still needs holder, dev and bundle checks. The crawler summary does not match the raw scan: it puts Groyper at ~135k mcap with $45k 5m, but the scan shows $1.7k mcap, zero 5m volume and -98% in 1h, and it gives Neural Wars an age of six minutes against 1.2h in the data, so I trust scan_movers. Setups to research, not buy: LIBBING and the libtard only after a name and CA check against real-figure pushes plus clean holders and bundles, A Meme Coin only if 5m volume passes $10k with buys holding above 60%, and Anon Voyage under MIGRATED after TA. No hack-named coin appears in the scan.
 
 ## Moving most in its scans, last 30 min (1h volume)
-- VETO: $724,659 1h vol, $464,695 mcap, +669% 1h  
-  CA `4xWRsdRkre5ibf3ZyS2eje6sUY8wGnmtSHx7gkGtpump`
-- CHICKPOT: $406,484 1h vol, $880,263 mcap, +1877% 1h  
-  CA `8B6ZZAC2FQ7AJrZPz7veXJrod5t2MG1C5MZBLNbUpump`
-- LIBBING: $275,823 1h vol, $1,783 mcap, -98% 1h  
-  CA `Bc8Nks1nyxXumWQDqqm8N6FF1ruwtqbD3DaezGwrpump`
 - CHILLCATS: $218,588 1h vol, $85,241 mcap, +126% 1h  
   CA `4BCbx4hB1XPmC5mLHsFyHEghC5fb9Afu7THLGXiHpump`
-- libtard: $163,018 1h vol, $38,204 mcap, +8% 1h  
-  CA `F4Um7uHXRoXZ92DXVZ6FoDUstnubJgaSzwEZuBZcpump`
+- Fuck: $193,690 1h vol, $1,853 mcap, -99% 1h  
+  CA `DjHKt7MrZQ1cCiBJgtD6aomQcUBsnxedrHqgdCTupump`
+- TTPRO: $179,262 1h vol, $83,018 mcap, +44% 1h  
+  CA `FrSrp9P3bgiFHwr6h5PQHVh55iC8Dae4eZCKPUo9pump`
+- CPU: $174,608 1h vol, $133,457 mcap, +244% 1h  
+  CA `Bz7kUDwG1KWZX9m9JrZyzhveUUcw6RTXVbjHseMjpump`
+- Link: $104,348 1h vol, $113,793 mcap, -13% 1h  
+  CA `7kqWni27vRVCKjcuBAmAbs8t7PxXgxdEjUSyRfeFpump`
