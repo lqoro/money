@@ -1,13 +1,13 @@
 # Trencher live report
 
-Updated 2026-11-04T12:24:52Z (paper trading, never real money)
+Updated 2026-11-04T12:39:58Z (paper trading, never real money)
 
 - Equity: $74.23 (-25.8% vs $100 start)
 - Closed trades: 22, 3 wins
 - Fees paid: $14.78 (axiom $2.81, network $9.18, pool $2.66), plus $4.15 lost to slippage
 - New trades: WATCH-ONLY (scans and decides, buys nothing)
-- Brain: subscription, claude-haiku-5-5 for routine calls, claude-opus-5-5 for the daily review; 473 routine calls and 1 plan-limit hits in 48h
-- Watch log: 97 coins being followed, 445 filed, 0 would-buys (6h follow, sampled every 2 min)
+- Brain: subscription, claude-haiku-5-5 for routine calls, claude-opus-5-5 for the daily review; 474 routine calls and 1 plan-limit hits in 48h
+- Watch log: 92 coins being followed, 452 filed, 0 would-buys (6h follow, sampled every 2 min)
 
 ## Scorecard (after fees)
 - 22 closed, 3 won (14%), net $-25.79
@@ -73,9 +73,13 @@ Updated 2026-11-04T12:24:52Z (paper trading, never real money)
   CA `H4gHnZ3NCU7Z9XQwGX6YYJNyieGEW8pqwGRUcdSxpump`
 
 ## Last scan
-- 12:24Z: 5 coins, 4 with pairs, 0 passed the market filters, 0 researched
+- 12:39Z: 5 coins, 4 with pairs, 0 passed the market filters, 0 researched
 
 ## Coins it looked at, and why it passed
+- 12:36Z VI (MIGRATED, $856,088 mcap, $4,383 5m vol): PASS at conviction 3, PASS: Vice Inu flow is below pace (5m $4.4k at 0.69x hourly) and there is no printed higher low. Blocker "flow below pace." Watch it. (V1, V6)  
+  CA `FpWWSqLNrjTTMDM41EXkvBmHBDkNdWrf9RwHL57xpump`
+- 12:31Z Dacity (MIGRATED, $7,970,180 mcap, $4,903 5m vol): REJECT, Bundles: 10 linked wallet cluster(s) hold 24.0% of supply (>20%) (V17)  
+  CA `nxPqZ4F7ux8Vph5NFu25rEP6Kx9Gr1U6Fmj36Rjpump`
 - 12:23Z CHILLCATS (MIGRATED, $82,617 mcap, $7,524 5m vol): REJECT, Top 10 hold 45.9% ex-pool (>25%) (V13)  
   CA `4BCbx4hB1XPmC5mLHsFyHEghC5fb9Afu7THLGXiHpump`
 - 12:13Z GATO (MIGRATED, $10,406,536 mcap, $5,377 5m vol): REJECT, Dev holds 3.3% (>1%) (V13, V17)  
@@ -92,14 +96,10 @@ Updated 2026-11-04T12:24:52Z (paper trading, never real money)
   CA `8kuQg3WivDtL85VEdw2jEmSXjYt6EEeYBATJ4DtQpump`
 - 11:56Z BunThing (FINAL_STRETCH, $32,566 mcap, $36,452 5m vol): PASS at conviction 3, PASS: chasing spike. BunThing is up 866% in 1h and 68% in the last 5m, at 5.6x its hourly pace, with no printed higher low. That's a pump, not a pullback (V1, V6).  
   CA `29jQSLyMDP3y1DRkVDVi4FxyeR66p5JCMqsaifMEpump`
-- 11:54Z AMD (DIP, $1,751,044 mcap, $8,935 5m vol): REJECT, Bundles: 10 linked wallet cluster(s) hold 20.9% of supply (>20%) (V17)  
-  CA `DDmGnuvroxVrb7CSyjYcezFU8gnAfhKasg4ZZezmpump`
-- 11:50Z VI (MIGRATED, $998,120 mcap, $5,753 5m vol): PASS at conviction 3, PASS: target too close, flow below pace, and the chart is a saw-tooth in a 26-copy field. Clean holders don't fix that. (V1, V6, V13)  
-  CA `FpWWSqLNrjTTMDM41EXkvBmHBDkNdWrf9RwHL57xpump`
 
 ## What its skips did next (last 48h)
 A skip "ran" if the coin reached the first target (1.5x) from the skip price before a 20% drop, "dumped" if the drop came first. Sampled every 10 min, followed 6h.
-- too new / sniping: blocked 67, ran 14, dumped 52, flat 0, open 1 (saving losses: keep it)
+- too new / sniping: blocked 67, ran 14, dumped 53, flat 0, open 0 (saving losses: keep it)
   - ran: CLIPPED up to 1.65x  
     CA `Bxyp4L6EbDys4fo51qxMEQTx41sj6McnsbPZTdvipump`
   - ran: Marutaro up to 1.62x  
@@ -113,7 +113,7 @@ A skip "ran" if the coin reached the first target (1.5x) from the skip price bef
     CA `BasL6j1MNkjFyuvRRFsmbm3bKqFPr6Yg3UhShii6pump`
   - ran: WIF up to 1.67x  
     CA `E7ayy5Se6gjwCNtw9NP629AucnTgqab4SSmSxDpUpump`
-- flow below pace: blocked 50, ran 11, dumped 31, flat 5, open 3 (saving losses: keep it)
+- flow below pace: blocked 50, ran 11, dumped 32, flat 5, open 2 (saving losses: keep it)
   - ran: KOROSUKE up to 1.54x  
     CA `7ha4HFgdvkXaDcR2biCsuBpoCZzoLSRjb5we34Gbpump`
   - ran: CAPY up to 1.51x  
@@ -201,7 +201,7 @@ The meta is animal and joke-name tickers, running in two lanes. Lane one is pump
   CA `4BCbx4hB1XPmC5mLHsFyHEghC5fb9Afu7THLGXiHpump`
 - GATO: $138,432 1h vol, $10,406,536 mcap, +2% 1h  
   CA `HsprHxBRgiVaQdRf3TnKNuZZtaX9JUSPgMFdAkk6pump`
-- Creed: $136,493 1h vol, $4,445 mcap, -85% 1h  
-  CA `5iuqZtGthqTYnFVZTBHxMkXNXX31mjLsKJYy5Y8TAR9V`
-- AMD: $97,000 1h vol, $1,751,044 mcap, +5% 1h  
-  CA `DDmGnuvroxVrb7CSyjYcezFU8gnAfhKasg4ZZezmpump`
+- Dacity: $76,809 1h vol, $7,958,866 mcap, -4% 1h  
+  CA `nxPqZ4F7ux8Vph5NFu25rEP6Kx9Gr1U6Fmj36Rjpump`
+- VI: $76,694 1h vol, $859,048 mcap, -20% 1h  
+  CA `FpWWSqLNrjTTMDM41EXkvBmHBDkNdWrf9RwHL57xpump`
