@@ -1,13 +1,13 @@
 # Trencher live report
 
-Updated 2026-11-04T07:06:14Z (paper trading, never real money)
+Updated 2026-11-04T07:21:22Z (paper trading, never real money)
 
 - Equity: $74.23 (-25.8% vs $100 start)
 - Closed trades: 22, 3 wins
 - Fees paid: $14.78 (axiom $2.81, network $9.18, pool $2.66), plus $4.15 lost to slippage
 - New trades: WATCH-ONLY (scans and decides, buys nothing)
-- Brain: subscription, claude-haiku-5-5 for routine calls, claude-opus-5-5 for the daily review; 469 routine calls and 1 plan-limit hits in 48h
-- Watch log: 107 coins being followed, 352 filed, 0 would-buys (6h follow, sampled every 2 min)
+- Brain: subscription, claude-haiku-5-5 for routine calls, claude-opus-5-5 for the daily review; 471 routine calls and 1 plan-limit hits in 48h
+- Watch log: 106 coins being followed, 357 filed, 0 would-buys (6h follow, sampled every 2 min)
 
 ## Scorecard (after fees)
 - 22 closed, 3 won (14%), net $-25.79
@@ -73,9 +73,17 @@ Updated 2026-11-04T07:06:14Z (paper trading, never real money)
   CA `H4gHnZ3NCU7Z9XQwGX6YYJNyieGEW8pqwGRUcdSxpump`
 
 ## Last scan
-- 07:05Z: 4 coins, 2 with pairs, 1 passed the market filters, 1 researched
+- 07:20Z: 7 coins, 5 with pairs, 0 passed the market filters, 0 researched
 
 ## Coins it looked at, and why it passed
+- 07:17Z VI (MIGRATED, $407,496 mcap, $4,524 5m vol): PASS at conviction 3, PASS: not the vamp-field leader, no printed higher low, and the site's domain is 7 hours old. Blockers: "split crowd" and "no higher low." (V1, V3, V13)  
+  CA `FpWWSqLNrjTTMDM41EXkvBmHBDkNdWrf9RwHL57xpump`
+- 07:13Z Dacity (MIGRATED, $7,494,681 mcap, $4,945 5m vol): REJECT, Bundles: 10 linked wallet cluster(s) hold 24.0% of supply (>20%) (V17)  
+  CA `nxPqZ4F7ux8Vph5NFu25rEP6Kx9Gr1U6Fmj36Rjpump`
+- 07:11Z AMD (DIP, $1,344,548 mcap, $2,938 5m vol): REJECT, Dip with fading attention is a falling knife, not a dip (5m at 0.37x the hour's pace, under 0.6x)  
+  CA `DDmGnuvroxVrb7CSyjYcezFU8gnAfhKasg4ZZezmpump`
+- 07:08Z Spacecoin (MIGRATED, $36,846 mcap, $2,122 5m vol): PASS at conviction 3, PASS: Spacecoin is about a minute old, one of ten same-name copies, with no printed higher low and no catalyst. Blocker "too new". Let it prove a base. (V1, V3, V6)  
+  CA `5XsGvzqH1V5o7G6eTtQkb442AHisDjTuVULt5oHCpump`
 - 07:05Z GATO (MIGRATED, $10,382,397 mcap, $779 5m vol): REJECT, 5m volume $779 is dead (<$2,000) (V1)  
   CA `HsprHxBRgiVaQdRf3TnKNuZZtaX9JUSPgMFdAkk6pump`
 - 07:04Z CHILLCATS (MIGRATED, $416,030 mcap, $30,173 5m vol): PASS at conviction 3, PASS: CHILLCATS is 1.2% off its high after a ~6x run in the last hour. That's chasing, and it's one of 26 cat copies with a 2.1-day-old site that doesn't show this CA. (V1, V6, V13)  
@@ -88,18 +96,10 @@ Updated 2026-11-04T07:06:14Z (paper trading, never real money)
   CA `8muc9DdhqWfAPcvmEebNQCG89bLiwi12T2KtBtzVpump`
 - 06:48Z CHICKPOT (DIP, $433,367 mcap, $6,938 5m vol): REJECT, Dip with fading attention is a falling knife, not a dip (5m at 0.40x the hour's pace, under 0.6x)  
   CA `8B6ZZAC2FQ7AJrZPz7veXJrod5t2MG1C5MZBLNbUpump`
-- 06:43Z STARMIND (MIGRATED, $39,136 mcap, $40,844 5m vol): PASS at conviction 3, PASS: 3 minutes old, bleeding off a $51k bond peak, 5m flow at 12x pace with no printed higher low, and 23 copies of the name. Blocker: "too new" plus "chasing spike" (V1, V6, V13).  
-  CA `8djG15hUCgQ3x992CqDj5YKu79Xzinw83cpULvwwpump`
-- 06:36Z VETO (DIP, $247,739 mcap, $2,083 5m vol): REJECT, Dip with fading attention is a falling knife, not a dip (5m at 0.30x the hour's pace, under 0.6x)  
-  CA `4xWRsdRkre5ibf3ZyS2eje6sUY8wGnmtSHx7gkGtpump`
-- 06:32Z VI (MIGRATED, $465,952 mcap, $4,104 5m vol): PASS at conviction 3, PASS: flow below pace (0.85x), no printed higher low, price sitting on the hourly low. Clean holders are not enough. (V1, V6)  
-  CA `FpWWSqLNrjTTMDM41EXkvBmHBDkNdWrf9RwHL57xpump`
-- 06:30Z BLOOM (FINAL_STRETCH, $25,404 mcap, $2,886 5m vol): PASS at conviction 2, PASS: BLOOM's own site says its volume comes from the project's wallet, not organic demand. That's a farm, not a chart (V13).  
-  CA `ExdQxJcXzNzhW6CC9phvoEVpKvJQJyg98CE228Uxpump`
 
 ## What its skips did next (last 48h)
 A skip "ran" if the coin reached the first target (1.5x) from the skip price before a 20% drop, "dumped" if the drop came first. Sampled every 10 min, followed 6h.
-- too new / sniping: blocked 64, ran 13, dumped 51, flat 0, open 0 (saving losses: keep it)
+- too new / sniping: blocked 65, ran 13, dumped 52, flat 0, open 0 (saving losses: keep it)
   - ran: CLIPPED up to 1.65x  
     CA `Bxyp4L6EbDys4fo51qxMEQTx41sj6McnsbPZTdvipump`
   - ran: Marutaro up to 1.62x  
@@ -134,7 +134,7 @@ A skip "ran" if the coin reached the first target (1.5x) from the skip price bef
     CA `G6F6SYSUAUxsnKLyeRW29hE5A4BGCbw91x7HMPySpump`
   - ran: Wanted up to 1.53x  
     CA `8oUGdPdyxVaCSJSZpcVZuxqoyiZAmc2Z22FsDRZ3pump`
-- falling knife (code): blocked 28, ran 2, dumped 23, flat 1, open 2 (saving losses: keep it)
+- falling knife (code): blocked 29, ran 2, dumped 24, flat 1, open 2 (saving losses: keep it)
   - ran: YES up to 1.71x  
     CA `B7Cj19ke2F8S6fazbBvGMxHYNNMYuDaAn3Sn2Zikpump`
   - ran: RATIO up to 1.51x  
@@ -142,14 +142,12 @@ A skip "ran" if the coin reached the first target (1.5x) from the skip price bef
 - bundles over the line: blocked 18, ran 1, dumped 12, flat 1, open 4 (saving losses: keep it)
   - ran: MAMESUKE up to 1.95x  
     CA `SCGBBnSwnekytGFHgyeHHxPMiN7xDxsWFGg9JgFSTNK`
-- thin 5m volume: blocked 17, ran 3, dumped 7, flat 2, open 5 (saving losses: keep it)
-  - ran: CUMFACE up to 1.55x  
-    CA `J1D3X8znX4AzUPMHVWyBLNHqBBqWDPNSjX4KwK3Qpump`
+- thin 5m volume: blocked 16, ran 2, dumped 8, flat 2, open 4 (saving losses: keep it)
   - ran: KIDS up to 1.73x  
     CA `7uwr9Zoz8WW9UyRVC22nmmAXRbPoFTUpVjsN8q7kids`
   - ran: 404 up to 1.89x  
     CA `9gKArqT6qp3goHfuwAnfG7LioqwUtJ8TFu7P1Bhbpump`
-- falling knife / no higher low: blocked 15, ran 2, dumped 9, flat 3, open 1 (saving losses: keep it)
+- falling knife / no higher low: blocked 16, ran 2, dumped 9, flat 3, open 2 (saving losses: keep it)
   - ran: RICO up to 1.52x  
     CA `8kuQg3WivDtL85VEdw2jEmSXjYt6EEeYBATJ4DtQpump`
   - ran: HEDGE up to 1.77x  
@@ -199,11 +197,11 @@ The trenches are young and loud. Fresh launches (STARMIND 0h at $39k with $44k o
 ## Moving most in its scans, last 30 min (1h volume)
 - CHILLCATS: $377,805 1h vol, $414,063 mcap, +391% 1h  
   CA `4BCbx4hB1XPmC5mLHsFyHEghC5fb9Afu7THLGXiHpump`
-- CHICKPOT: $208,660 1h vol, $435,666 mcap, -46% 1h  
-  CA `8B6ZZAC2FQ7AJrZPz7veXJrod5t2MG1C5MZBLNbUpump`
 - STARMIND: $138,444 1h vol, $84,761 mcap, +116% 1h  
   CA `Hey3e2voJQXYAo7fWSzC9XLYqcZ4TC9Dm3RCiW1tpump`
-- CPU: $130,226 1h vol, $1,764 mcap, -99% 1h  
-  CA `Bz7kUDwG1KWZX9m9JrZyzhveUUcw6RTXVbjHseMjpump`
-- FSD: $120,397 1h vol, $4,824 mcap, +74% 1h  
+- AMD: $94,445 1h vol, $1,344,548 mcap, +23% 1h  
+  CA `DDmGnuvroxVrb7CSyjYcezFU8gnAfhKasg4ZZezmpump`
+- FSD: $93,465 1h vol, $4,669 mcap, -46% 1h  
   CA `D4yQgQruhFDKT3nqq84ZtqQKSHduUYJDU1iEK61Fpump`
+- BOW: $73,898 1h vol, $5,529 mcap, +96% 1h  
+  CA `HjUWqS5w1rtD6widqXwkbzPVFSn2qLHbXRRmNKQzpump`
