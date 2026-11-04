@@ -1,13 +1,13 @@
 # Trencher live report
 
-Updated 2026-11-04T10:39:17Z (paper trading, never real money)
+Updated 2026-11-04T10:54:26Z (paper trading, never real money)
 
 - Equity: $74.23 (-25.8% vs $100 start)
 - Closed trades: 22, 3 wins
 - Fees paid: $14.78 (axiom $2.81, network $9.18, pool $2.66), plus $4.15 lost to slippage
 - New trades: WATCH-ONLY (scans and decides, buys nothing)
 - Brain: subscription, claude-haiku-5-5 for routine calls, claude-opus-5-5 for the daily review; 472 routine calls and 1 plan-limit hits in 48h
-- Watch log: 98 coins being followed, 415 filed, 0 would-buys (6h follow, sampled every 2 min)
+- Watch log: 96 coins being followed, 419 filed, 0 would-buys (6h follow, sampled every 2 min)
 
 ## Scorecard (after fees)
 - 22 closed, 3 won (14%), net $-25.79
@@ -73,9 +73,13 @@ Updated 2026-11-04T10:39:17Z (paper trading, never real money)
   CA `H4gHnZ3NCU7Z9XQwGX6YYJNyieGEW8pqwGRUcdSxpump`
 
 ## Last scan
-- 10:38Z: 6 coins, 5 with pairs, 0 passed the market filters, 0 researched
+- 10:53Z: 2 coins, 1 with pairs, 0 passed the market filters, 0 researched
 
 ## Coins it looked at, and why it passed
+- 10:53Z CHILLCATS (DIP, $146,938 mcap, $7,963 5m vol): PASS at conviction 3, PASS: CHILLCATS is a 67% dip in a cat lane whose volume is at 0.78x its hourly pace, so it fails the bottom-buy gate. (V1, V6, V13)  
+  CA `4BCbx4hB1XPmC5mLHsFyHEghC5fb9Afu7THLGXiHpump`
+- 10:43Z GATO (MIGRATED, $10,350,186 mcap, $7,191 5m vol): REJECT, Dev holds 3.3% (>1%) (V13, V17)  
+  CA `HsprHxBRgiVaQdRf3TnKNuZZtaX9JUSPgMFdAkk6pump`
 - 10:37Z PerpScape (MIGRATED, $55,155 mcap, $6,402 5m vol): REJECT, RugCheck danger: Creator history of rugged tokens  
   CA `FWTurdziu8qVHLc61kvRc4UzMgG5c76DdzowYhL1pump`
 - 10:37Z ANONVOYAGE (MIGRATED, $608,732 mcap, $12,747 5m vol): REJECT, Bundles: 10 linked wallet cluster(s) hold 50.3% of supply (>20%) (V17)  
@@ -92,10 +96,6 @@ Updated 2026-11-04T10:39:17Z (paper trading, never real money)
   CA `FpWWSqLNrjTTMDM41EXkvBmHBDkNdWrf9RwHL57xpump`
 - 10:15Z Dacity (MIGRATED, $7,372,021 mcap, $4,637 5m vol): REJECT, Bundles: 10 linked wallet cluster(s) hold 24.0% of supply (>20%) (V17)  
   CA `nxPqZ4F7ux8Vph5NFu25rEP6Kx9Gr1U6Fmj36Rjpump`
-- 10:07Z CHILLCATS (MIGRATED, $114,093 mcap, $9,589 5m vol): PASS at conviction 3, PASS: CHILLCATS is 74% off its high, outside the 40-70% dip band, still falling into its hourly low with no printed higher low, and the cat theme runs at 0.75x pace with no catalyst. Blocker: "bottom buy, no catalyst" (V1, V6).  
-  CA `4BCbx4hB1XPmC5mLHsFyHEghC5fb9Afu7THLGXiHpump`
-- 09:51Z ANONVOYAGE (MIGRATED, $485,554 mcap, $5,749 5m vol): REJECT, Bundles: 10 linked wallet cluster(s) hold 50.3% of supply (>20%) (V17)  
-  CA `8muc9DdhqWfAPcvmEebNQCG89bLiwi12T2KtBtzVpump`
 
 ## What its skips did next (last 48h)
 A skip "ran" if the coin reached the first target (1.5x) from the skip price before a 20% drop, "dumped" if the drop came first. Sampled every 10 min, followed 6h.
@@ -113,7 +113,7 @@ A skip "ran" if the coin reached the first target (1.5x) from the skip price bef
     CA `BasL6j1MNkjFyuvRRFsmbm3bKqFPr6Yg3UhShii6pump`
   - ran: WIF up to 1.67x  
     CA `E7ayy5Se6gjwCNtw9NP629AucnTgqab4SSmSxDpUpump`
-- flow below pace: blocked 50, ran 12, dumped 32, flat 4, open 2 (saving losses: keep it)
+- flow below pace: blocked 50, ran 12, dumped 31, flat 5, open 2 (saving losses: keep it)
   - ran: KOROSUKE up to 1.54x  
     CA `7ha4HFgdvkXaDcR2biCsuBpoCZzoLSRjb5we34Gbpump`
   - ran: CAPY up to 1.51x  
@@ -127,7 +127,7 @@ A skip "ran" if the coin reached the first target (1.5x) from the skip price bef
     CA `Cbtnpg6SL9jvZxtZTYYFPtVQXkuuqSUxCU5aXeTkpump`
   - ran: AMD up to 2.02x  
     CA `3MfZ4URVxmB4mfPuy4AxUxpcC5U7aXe7TDA7XVoGpump`
-- RugCheck danger: blocked 31, ran 4, dumped 23, flat 3, open 1 (saving losses: keep it)
+- RugCheck danger: blocked 30, ran 4, dumped 22, flat 3, open 1 (saving losses: keep it)
   - ran: COLLECTOR up to 1.62x  
     CA `6kKETm8xPeZ2z1DBYjXmxMTFAJudvGHJvRHu5Wt8uGtf`
   - ran: GTA up to 1.74x  
@@ -199,13 +199,13 @@ There's no positive after-cost edge yet. The 13 settled coins averaged -6.7% net
 Meta from scan_movers: dog and animal names are the one theme running across market caps, with Vice Inu ($856k, 78% buys, +45% on the hour), A Meme Dog ($1.3M) and GATO/Dacity at $7-10M. None of them clears the $10k 5-minute volume bar, so it's a rising but thin lane. The fresh pump.fun lane (APU +434%, Moonman +119%, both under 1h old and under $20k) is hot and thin, which is where bundles and dumps live (V1, V13), so I'm not touching it. Self-referential "meme" and party names (AMP, Doge Party, Anon Voyage) look like noise, and 5STAR, Twitter and Doge are fading. The crawler's space, Trump/LAPTOP and "binance hack" stories don't appear in these movers; the political and hack-named coins are off the table anyway, so I'm not calling them a meta. Setup to research: ChatBLT (pumpswap, $78k mcap, $18.3k on 5m, 67% buys, 5m pace running above its hourly pace, -9% on the hour). It's the one mover that clears the volume bar, so check holders and bundles before any entry and set the stop at the thesis break when researching. Not verified: the crawler's Transinu and CHILLCATS figures don't match scan_movers, so I'm not using them.
 
 ## Moving most in its scans, last 30 min (1h volume)
-- Doge: $90,407 1h vol, $18,437 mcap, -58% 1h  
-  CA `9CRbVZxQshb9dMkh3yGvyARJRAHMGVuxiQRGhUsppump`
+- CHILLCATS: $122,445 1h vol, $150,429 mcap, +9% 1h  
+  CA `4BCbx4hB1XPmC5mLHsFyHEghC5fb9Afu7THLGXiHpump`
 - ANONVOYAGE: $87,848 1h vol, $608,732 mcap, +26% 1h  
   CA `8muc9DdhqWfAPcvmEebNQCG89bLiwi12T2KtBtzVpump`
-- VI: $81,825 1h vol, $820,414 mcap, +1% 1h  
-  CA `FpWWSqLNrjTTMDM41EXkvBmHBDkNdWrf9RwHL57xpump`
-- MEMY: $80,569 1h vol, $8,477 mcap, +141% 1h  
-  CA `7zje2znMLwRgWwzbYAz2fp97cxBCKSaZTZovKKH54kti`
-- AMD: $73,275 1h vol, $1,505,167 mcap, +16% 1h  
-  CA `DDmGnuvroxVrb7CSyjYcezFU8gnAfhKasg4ZZezmpump`
+- Daumen: $71,832 1h vol, $7,380 mcap, +115% 1h  
+  CA `5HzUM3Wy96PpeurUp4vv3Lk4cBPmLjDXCdaxK4z8pump`
+- POWERMAXX: $68,905 1h vol, $5,752 mcap, +42% 1h  
+  CA `FYV6rXKEecTgoCqGjFnSK52BZZfux5UMabw8qGvbpump`
+- SpaceDuck: $68,681 1h vol, $5,606 mcap, +32% 1h  
+  CA `APWThVHgwuJLfaHmXXAhWV2aTsrSwGyJVreGAoyPpump`
