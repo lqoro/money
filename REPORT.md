@@ -1,13 +1,13 @@
 # Trencher live report
 
-Updated 2026-11-04T03:33:53Z (paper trading, never real money)
+Updated 2026-11-04T03:48:53Z (paper trading, never real money)
 
 - Equity: $74.23 (-25.8% vs $100 start)
 - Closed trades: 22, 3 wins
 - Fees paid: $14.78 (axiom $2.81, network $9.18, pool $2.66), plus $4.15 lost to slippage
 - New trades: WATCH-ONLY (scans and decides, buys nothing)
-- Brain: subscription, claude-haiku-5-5 for routine calls, claude-opus-5-5 for the daily review; 459 routine calls and 1 plan-limit hits in 48h
-- Watch log: 112 coins being followed, 281 filed, 0 would-buys (6h follow, sampled every 2 min)
+- Brain: subscription, claude-haiku-5-5 for routine calls, claude-opus-5-5 for the daily review; 458 routine calls and 1 plan-limit hits in 48h
+- Watch log: 108 coins being followed, 288 filed, 0 would-buys (6h follow, sampled every 2 min)
 
 ## Scorecard (after fees)
 - 22 closed, 3 won (14%), net $-25.79
@@ -73,9 +73,15 @@ Updated 2026-11-04T03:33:53Z (paper trading, never real money)
   CA `H4gHnZ3NCU7Z9XQwGX6YYJNyieGEW8pqwGRUcdSxpump`
 
 ## Last scan
-- 03:33Z: 5 coins, 4 with pairs, 1 passed the market filters, 1 researched
+- 03:48Z: 6 coins, 6 with pairs, 0 passed the market filters, 0 researched
 
 ## Coins it looked at, and why it passed
+- 03:47Z ANONVOYAGE (DIP, $854,628 mcap, $5,252 5m vol): REJECT, Bundles: 10 linked wallet cluster(s) hold 50.3% of supply (>20%) (V17)  
+  CA `8muc9DdhqWfAPcvmEebNQCG89bLiwi12T2KtBtzVpump`
+- 03:46Z DELUSIONAL (DIP, $42,671 mcap, $3,868 5m vol): PASS at conviction 3, PASS: no catalyst, 8 copies of the same name, and one 13% bundle cluster. Blocker: "no catalyst" on a bottom buy. (V1, V3, V13)  
+  CA `5uY4RXyTkkHBkhatNzCmTphAhBS3LU6yaLd9b9uAhQAb`
+- 03:45Z Groyper (MIGRATED, $157,414 mcap, $43,465 5m vol): PASS at conviction 3, PASS — chasing spike. Up 38% in 5m, 1.2% off a 4x hour high, no printed higher low. Political-adjacent groyper meme with no project site. Clean holders don't fix a spike (V1, V6).  
+  CA `HvRdss17AKoeYZbfLVtN5gt7SGDU1MRKHyTnHZikpump`
 - 03:33Z three (MIGRATED, $621,434 mcap, $20 5m vol): REJECT, 5m volume $20 is dead (<$2,000) (V1)  
   CA `FeMbDoX7R1Psc4GEcvJdsbNbZA3bfztcyDCatJVJpump`
 - 03:30Z VI (MIGRATED, $383,655 mcap, $4,285 5m vol): PASS at conviction 3, PASS. Vice Inu ($VI) is in the 10-60% buy zone, but 5m flow is 0.72x its hourly pace on a MIGRATED coin, and the theme is at 0.71x. Blocker: "flow below pace". (V1, V6)  
@@ -90,23 +96,17 @@ Updated 2026-11-04T03:33:53Z (paper trading, never real money)
   CA `HAjc6B1MfdjnYPiB2xcETPb25kb85Pxg9nq9i4D5pump`
 - 03:12Z GIMODELO (MIGRATED, $104,446 mcap, $23,159 5m vol): PASS at conviction 3, PASS — 26 minutes old, up 175% off its hourly low and still bleeding off the launch spike, with no printed higher low and buys at 49%. Too new, and a 4-copy ticker field (V1, V13).  
   CA `GJam2w9yczvryb19MawYw7kejTdDBCWMphoUPXYzpump`
-- 03:11Z MEOWNERO (MIGRATED, $264,400 mcap, $2,639 5m vol): PASS at conviction 3, PASS — 11-copy "meownero" field with a 12.4% bundle cluster sitting in the leader, top 10 at 24%, no X, no site, and the price feed is broken so I can't read the structure. Split crowd. Farm until proven otherwise. (V1, V3, V6)  
-  CA `6gnB2H2hbTVvKUWCzNuqjWY8Rod6EVBmfHi7YxZpTWa7`
-- 03:08Z L0ng (MIGRATED, $41,987 mcap, $41,410 5m vol): REJECT, RugCheck danger: Creator history of rugged tokens  
-  CA `DYgjAqwkr2EDkGYstsLEEpDdb7SHYjrSJyzu9RQ8pump`
-- 03:05Z RICO (DIP, $270,801 mcap, $6,994 5m vol): PASS at conviction 3, PASS: RICO is a 68%-off dog copy in a 23-coin GTA6 field, still falling on 5m with no printed higher low. The bottom-buy gate needs a rising narrative and this one is holding. Revisit around Nov 19 if it prints a base. (V1, V6, V13)  
-  CA `8kuQg3WivDtL85VEdw2jEmSXjYt6EEeYBATJ4DtQpump`
 
 ## What its skips did next (last 48h)
 A skip "ran" if the coin reached the first target (1.5x) from the skip price before a 20% drop, "dumped" if the drop came first. Sampled every 10 min, followed 6h.
-- too new / sniping: blocked 65, ran 15, dumped 50, flat 0, open 0 (saving losses: keep it)
+- too new / sniping: blocked 64, ran 14, dumped 50, flat 0, open 0 (saving losses: keep it)
   - ran: CLIPPED up to 1.65x  
     CA `Bxyp4L6EbDys4fo51qxMEQTx41sj6McnsbPZTdvipump`
   - ran: Marutaro up to 1.62x  
     CA `At3jYPUKVEFYrss5a58myVuqKLjGxMuBP5MwqMk9pump`
   - ran: MameStonk up to 1.67x  
     CA `57eJSmN1ecANrnZjGPrXzWUMyGhQsQgMS9eHdxM3pump`
-- top 10 over 25%: blocked 62, ran 10, dumped 48, flat 3, open 1 (saving losses: keep it)
+- top 10 over 25%: blocked 62, ran 10, dumped 49, flat 3, open 0 (saving losses: keep it)
   - ran: GODHOUSE up to 3.19x  
     CA `CSGTuLtWhCfGZ5S5TvASQ6a5su91NCfRpNqfPczfpump`
   - ran: KYBER up to 1.83x  
@@ -120,7 +120,7 @@ A skip "ran" if the coin reached the first target (1.5x) from the skip price bef
     CA `DBPTU2oKLDHXQjAEJ3rZi8bUGmt2uxUbipgg6xmXoMqr`
   - ran: ZERO up to 1.61x  
     CA `Aes6XNH9BboLZuchD5PnDwaX6Zj1nU79TU3gNtPEpump`
-- near the high / chasing: blocked 36, ran 3, dumped 30, flat 2, open 1 (saving losses: keep it)
+- near the high / chasing: blocked 36, ran 3, dumped 30, flat 3, open 0 (saving losses: keep it)
   - ran: underdog up to 1.64x  
     CA `BZXh2LcnNNyypxsdfVeFzXawqmoGoSShC5i4NEQQpump`
   - ran: LUCIA up to 1.83x  
@@ -141,7 +141,7 @@ A skip "ran" if the coin reached the first target (1.5x) from the skip price bef
     CA `B7Cj19ke2F8S6fazbBvGMxHYNNMYuDaAn3Sn2Zikpump`
   - ran: RATIO up to 1.51x  
     CA `3JdeP1VBHgRPunmjTj1D6w6ZZePwGAwjUr2tCufwpump`
-- bundles over the line: blocked 18, ran 2, dumped 13, flat 1, open 2 (saving losses: keep it)
+- bundles over the line: blocked 17, ran 2, dumped 12, flat 1, open 2 (saving losses: keep it)
   - ran: NA up to 1.97x  
     CA `9ZmdP8q22ebRhEkcwd5EDkitu7ypeDFXTQXpv2kUpump`
   - ran: MAMESUKE up to 1.95x  
@@ -196,16 +196,16 @@ There's no positive after-cost edge yet. The 13 settled coins averaged -6.7% net
 - [2026-11-02 20:25] I expected Slingoor, a clean MIGRATED leader with $25k of 5m flow at pace and a 0.77 buy share, to retest its $408k high from $304k. It never went green (0.98x peak) and hit the -20% stop in 2 minutes, a -$2.86 probe. My own thesis admitted there was no printed higher low after a peak only 6 minutes old, so this confirms the money-shape rule: buy share and flow are not structure (V1, V6). Next time a MIGRATED pullback with no higher low above the hourly low is a PASS with blocker "no higher low", not a probe. This is one loss, so it adds no new ban beyond the rule I already have.
 
 ## Meta right now
-Not a quiet tape, but a narrow one. Two lanes have real buying: fresh pump.fun character launches with big first-5-minute volume (TITO "Pumpfun Monkey" at $22k mcap, $68k 5m, 59% buys; Topan "The Chubby Tiger" at $23k, $63k 5m, 60% buys, both about six minutes old), and self-mocking trench-humor names (Pooliticians, Delusional Optimist, and AMD "Always Moist Downstairs," which is cooling at 38% buys and -25% over the hour). The animal and cat lane is fading: GATO is at 36% buys, BTC "Big Titty Coin" at 13%, and "A Meme Donkey" is -97% with almost no volume. The web's political and hack-adjacent themes (the $LAPTOP collapse, Trump, Milei) don't show up in the movers, so I'm treating them as noise and steering clear of political-adjacent names. Setups I'd research now: Pooliticians (pumpswap, $85k, $25k 5m, 58% buys, about 12 minutes old) and Delusional Optimist (raydium, $32k, $21k 5m, 56% buys) under MIGRATED rules, at probe size with the stop under the first flush low; I'd first confirm Pooliticians isn't a politician pushing its CA. TITO and Topan are too fresh to enter because I don't snipe new pairs, so I'd only revisit them after they migrate and hold. The web's DOC and AMD figures don't match scan_movers, so I ignored them.
+Not quiet, but narrow: only four of fifteen scan_movers clear $10k on the 5-minute (Groyper $45k, MEME/COIN $38k, Neural Wars $23k, jon assoff $17k). The loudest lane is political-satire and culture-war names (Groyper at ~135k mcap and +251% in an hour, The Antifa Frog, Woke Mind Virus, Official Nick Fuentes, jd vence, MAGA), and it's rising on volume, but several are named after real politicians or public figures, so the political-figure rule keeps me out. It's attention I'm observing, not trading. The second lane is memes about memes and AI jokes: "I Identify as a Memecoin" is already -28% in an hour at 49% buys, so it's fading, while Neural Wars is six minutes old with 59% buys and $23k 5m. The old cat and animal lane is fading (GATO at 38% buys on $5k 5m, Dacity flat on $5k), and no hack-named coin appears in the scan. Setups to research, not buy: Neural Wars under FINAL_STRETCH only if it survives its first ~10 minutes and holds $10k+ 5m with organic buys, and MEME/COIN only if it reclaims with buys back above 55%; jon assoff only after I confirm the name isn't a politician pushing its CA. The crawler's Pooliticians, Delusional Optimist, TITO and Topan don't appear in scan_movers, so I'm not using them, and holder, dev and bundle checks still have to run on anything I pick up.
 
 ## Moving most in its scans, last 30 min (1h volume)
-- GIMODELO: $161,509 1h vol, $102,871 mcap, +171% 1h  
-  CA `GJam2w9yczvryb19MawYw7kejTdDBCWMphoUPXYzpump`
-- DELUSIONAL: $82,534 1h vol, $48,566 mcap, -40% 1h  
-  CA `5uY4RXyTkkHBkhatNzCmTphAhBS3LU6yaLd9b9uAhQAb`
-- GATO: $77,946 1h vol, $10,642,389 mcap, -3% 1h  
-  CA `HsprHxBRgiVaQdRf3TnKNuZZtaX9JUSPgMFdAkk6pump`
-- ANTIFROG: $76,236 1h vol, $3,143 mcap, -52% 1h  
-  CA `6JzG565xGV5NbsfLW564XvwSyTAq8xJ2o5df2cq2pump`
-- WMV: $74,606 1h vol, $3,630 mcap, +6% 1h  
-  CA `KxwAdKe6GKv6BExpP3HAnBd5k22d2jbqNXebgD5pump`
+- Pooliticians: $345,432 1h vol, $1,818 mcap, -98% 1h  
+  CA `GRWVAfwa6PJtWZtfG6jdu5vAVe4AckQiKT8Jsga6pump`
+- WOKE: $202,276 1h vol, $1,803 mcap, -98% 1h  
+  CA `37WT55retvbw33cx6NwHtwhpDCcU4twyg46BKFRrpump`
+- Groyper: $189,605 1h vol, $134,804 mcap, +251% 1h  
+  CA `HvRdss17AKoeYZbfLVtN5gt7SGDU1MRKHyTnHZikpump`
+- MEME/COIN: $138,704 1h vol, $29,610 mcap, -28% 1h  
+  CA `FicTXnzYTUSA3ahseJQ5RMroB2Fr2kqZ2WqPnJDnpump`
+- ANONVOYAGE: $82,594 1h vol, $854,628 mcap, -9% 1h  
+  CA `8muc9DdhqWfAPcvmEebNQCG89bLiwi12T2KtBtzVpump`
