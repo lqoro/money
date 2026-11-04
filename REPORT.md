@@ -1,13 +1,13 @@
 # Trencher live report
 
-Updated 2026-11-04T16:42:49Z (paper trading, never real money)
+Updated 2026-11-04T16:57:58Z (paper trading, never real money)
 
 - Equity: $74.23 (-25.8% vs $100 start)
 - Closed trades: 22, 3 wins
 - Fees paid: $14.78 (axiom $2.81, network $9.18, pool $2.66), plus $4.15 lost to slippage
 - New trades: WATCH-ONLY (scans and decides, buys nothing)
-- Brain: subscription, claude-haiku-5-5 for routine calls, claude-opus-5-5 for the daily review; 483 routine calls and 1 plan-limit hits in 48h
-- Watch log: 112 coins being followed, 513 filed, 0 would-buys (6h follow, sampled every 2 min)
+- Brain: subscription, claude-haiku-5-5 for routine calls, claude-opus-5-5 for the daily review; 484 routine calls and 1 plan-limit hits in 48h
+- Watch log: 113 coins being followed, 515 filed, 0 would-buys (6h follow, sampled every 2 min)
 
 ## Scorecard (after fees)
 - 22 closed, 3 won (14%), net $-25.79
@@ -73,9 +73,15 @@ Updated 2026-11-04T16:42:49Z (paper trading, never real money)
   CA `H4gHnZ3NCU7Z9XQwGX6YYJNyieGEW8pqwGRUcdSxpump`
 
 ## Last scan
-- 16:42Z: 7 coins, 5 with pairs, 0 passed the market filters, 0 researched
+- 16:57Z: 8 coins, 6 with pairs, 0 passed the market filters, 0 researched
 
 ## Coins it looked at, and why it passed
+- 16:50Z RICO (MIGRATED, $466,804 mcap, $2,688 5m vol): PASS at conviction 3, PASS. GTA6DOG is a 23-copy GTA dog field, 23% off its high with no breakout and 5m flow under $3k. The dog lane is fading and the 1.9-day-old site is a fan-fiction "leak" pitch. Blocker: no breakout (V1, V3, V6).  
+  CA `8kuQg3WivDtL85VEdw2jEmSXjYt6EEeYBATJ4DtQpump`
+- 16:47Z TrumpWars (MIGRATED, $279,565 mcap, $2,899 5m vol): PASS at conviction 3, PASS: TrumpWars is 6% off its $297k high, inside the 10% chasing zone, with 5m flow at 0.88x pace and $2.9k on the 5m. Blocker "chasing" plus "flow below pace". (V1, V6)  
+  CA `31HzUsjzTt7FBCGnDy68cBnELayVsnd3zYEBtsXXpump`
+- 16:46Z Pump (DIP, $92,026 mcap, $33,544 5m vol): REJECT, Top 10 hold 31.7% ex-pool (>25%) (V13)  
+  CA `EjH9dQSAFmzMH9Jy6aJk95FdtY7xkc1cWvXLetaNpump`
 - 16:40Z $TAPE (MIGRATED, $205,546 mcap, $64,740 5m vol): REJECT, RugCheck danger: Creator history of rugged tokens  
   CA `7xP2r4Vtjy5opBZjbPcCc4N7BkRhhQddqsFQDpDopump`
 - 16:38Z EMBERS (FINAL_STRETCH, $31,771 mcap, $8,983 5m vol): REJECT, RugCheck danger: Creator history of rugged tokens  
@@ -90,12 +96,6 @@ Updated 2026-11-04T16:42:49Z (paper trading, never real money)
   CA `4p6r56BxuEDzWVschNeXVTuDvxyGdZgHBGbZ1fp5pump`
 - 16:29Z AMD (MIGRATED, $915,203 mcap, $9,362 5m vol): REJECT, Bundles: 10 linked wallet cluster(s) hold 24.2% of supply (>20%) (V17)  
   CA `DDmGnuvroxVrb7CSyjYcezFU8gnAfhKasg4ZZezmpump`
-- 16:29Z CATPAD (MIGRATED, $146,995 mcap, $2,296 5m vol): PASS at conviction 4, PASS: CATPAD is a shallow-band breakout with no breakout. It's down 4% on 5m, not the volume leader, and has no printed higher low. Blocker "no breakout" (V1, V6).  
-  CA `2gTbp2gwH46rqExzabSyrdR3294SLwCp2rSqWDS6Sim1`
-- 16:26Z Donkey (MIGRATED, $131,199 mcap, $40,727 5m vol): REJECT, Bundles: 10 linked wallet cluster(s) hold 44.8% of supply (>20%) (V17)  
-  CA `APj59xtb4dRp49bXwKSq5E1XWKLrFbtaYfoQZ9Arpump`
-- 16:24Z VI (MIGRATED, $933,299 mcap, $5,829 5m vol): PASS at conviction 3, PASS: flow below pace, no breakout, and the dog lane is fading. Saw-tooth chart on a $933k coin. (V1, V6, V13)  
-  CA `FpWWSqLNrjTTMDM41EXkvBmHBDkNdWrf9RwHL57xpump`
 
 ## What its skips did next (last 48h)
 A skip "ran" if the coin reached the first target (1.5x) from the skip price before a 20% drop, "dumped" if the drop came first. Sampled every 10 min, followed 6h.
@@ -106,28 +106,28 @@ A skip "ran" if the coin reached the first target (1.5x) from the skip price bef
     CA `7xgnrvzn6DvfdzFcpLuybg2GQwHg933Np5kMjx4qpump`
   - ran: SNOWMEI up to 1.76x  
     CA `ETVD787UcTkJqrhZMt15bVet7CQ4SDzCga7DfBm8pump`
-- top 10 over 25%: blocked 64, ran 11, dumped 50, flat 2, open 1 (saving losses: keep it)
+- top 10 over 25%: blocked 65, ran 11, dumped 51, flat 2, open 1 (saving losses: keep it)
   - ran: GODHOUSE up to 3.19x  
     CA `CSGTuLtWhCfGZ5S5TvASQ6a5su91NCfRpNqfPczfpump`
   - ran: KYBER up to 1.83x  
     CA `BasL6j1MNkjFyuvRRFsmbm3bKqFPr6Yg3UhShii6pump`
   - ran: WIF up to 1.67x  
     CA `E7ayy5Se6gjwCNtw9NP629AucnTgqab4SSmSxDpUpump`
-- flow below pace: blocked 53, ran 11, dumped 33, flat 4, open 5 (saving losses: keep it)
+- flow below pace: blocked 54, ran 11, dumped 33, flat 4, open 6 (saving losses: keep it)
   - ran: CAPY up to 1.51x  
     CA `DBPTU2oKLDHXQjAEJ3rZi8bUGmt2uxUbipgg6xmXoMqr`
   - ran: ZERO up to 1.61x  
     CA `Aes6XNH9BboLZuchD5PnDwaX6Zj1nU79TU3gNtPEpump`
   - ran: Wanted up to 1.53x  
     CA `8oUGdPdyxVaCSJSZpcVZuxqoyiZAmc2Z22FsDRZ3pump`
-- near the high / chasing: blocked 42, ran 7, dumped 29, flat 3, open 3 (saving losses: keep it)
+- near the high / chasing: blocked 43, ran 7, dumped 29, flat 3, open 4 (saving losses: keep it)
   - ran: underdog up to 1.64x  
     CA `BZXh2LcnNNyypxsdfVeFzXawqmoGoSShC5i4NEQQpump`
   - ran: LUCIA up to 1.83x  
     CA `Cbtnpg6SL9jvZxtZTYYFPtVQXkuuqSUxCU5aXeTkpump`
   - ran: AMD up to 2.02x  
     CA `3MfZ4URVxmB4mfPuy4AxUxpcC5U7aXe7TDA7XVoGpump`
-- RugCheck danger: blocked 29, ran 4, dumped 19, flat 3, open 3 (saving losses: keep it)
+- RugCheck danger: blocked 28, ran 4, dumped 18, flat 3, open 3 (saving losses: keep it)
   - ran: COLLECTOR up to 1.62x  
     CA `6kKETm8xPeZ2z1DBYjXmxMTFAJudvGHJvRHu5Wt8uGtf`
   - ran: GTA up to 1.74x  
@@ -140,7 +140,7 @@ A skip "ran" if the coin reached the first target (1.5x) from the skip price bef
 - bundles over the line: blocked 20, ran 1, dumped 15, flat 3, open 1 (saving losses: keep it)
   - ran: MAMESUKE up to 1.95x  
     CA `SCGBBnSwnekytGFHgyeHHxPMiN7xDxsWFGg9JgFSTNK`
-- falling knife / no higher low: blocked 16, ran 2, dumped 8, flat 3, open 3 (saving losses: keep it)
+- falling knife / no higher low: blocked 16, ran 2, dumped 9, flat 3, open 2 (saving losses: keep it)
   - ran: HEDGE up to 1.77x  
     CA `wDSAqt4tEZpDAwB9XY6ejkZvMFuT1zUMjUh67txeYhf`
   - ran: PREFIRE up to 1.52x  
@@ -199,13 +199,13 @@ No. After costs, every bucket loses money. Across 355 settled coins the simple p
 Meta: the donkey lane is the live one. Fresh pump.fun and PumpSwap launches 0.2-0.5h old (DONKEY, A Meme Donkey, The Donkey, Democrat Donkey, and Willow "The Democat") are carrying $150k-$480k of 1h volume with +270% to +440% moves and 50-78% buys, with a political "democrat" joke riding along. The animal/dog lane is fading: A Meme Dog is -7% at $1.26M with 48% buys, GTA6DOG is -12%, and Vice Inu is -33%. America is Back (AIB, 0.1h, $60k cap, $48k on 5m, 56% buys) is a fresh patriotic-political spinoff, and it is the newest and riskiest name on the board. Setups to research, not buy on the scan: A Meme Donkey ($237k, $40k on 5m, 73% buys) and DONKEY ($269k, $76k on 5m, 78% buys) clear the volume bar, but DONKEY's 5m volume is bigger than its cap, so treat it as a farm until holders and bundles say otherwise; Always Moist Downstairs ($607k, 3.6h, $12.6k on 5m, +25%) clears the MIGRATED bar, but its 96% buy ratio looks bot-like, so check it hard. UAV and the 1h-only names are stale: big 1h volume with about $2k on 5m is not live. Caveat: PAIRITY, FROTH MAPS, SWIPEY, and madape from the crawler summary do not appear in scan_movers, and the DONKEY figures in the summary differ from the scan, so I am working from the scan. Political-named coins need the politician-CA check before anything else. No coin in this scan is named for a hack. Paper trading, not financial advice.
 
 ## Moving most in its scans, last 30 min (1h volume)
-- AIB: $953,123 1h vol, $121,338 mcap, +222% 1h  
-  CA `EwHV6XfuMmBirGSiDVSypVkHcw7jD7Mho1s5xGwjpump`
-- Donkey: $459,170 1h vol, $70,576 mcap, -63% 1h  
-  CA `G8Lf8uthQp5YHoswQZDRdeRxaWiUqnNFNoZ45y68pump`
-- Donkey: $451,947 1h vol, $130,502 mcap, +47% 1h  
-  CA `APj59xtb4dRp49bXwKSq5E1XWKLrFbtaYfoQZ9Arpump`
 - tremp: $347,114 1h vol, $62,357 mcap, +254% 1h  
   CA `82BH9WFmtsJGRCdW147cM24K6X8kAkUx2jSd2NyRLfv6`
-- donkey: $261,453 1h vol, $1,985 mcap, -99% 1h  
-  CA `9YZ8c8v91Dn6GnS8Lxd2gBjCCoBxyyeq29CnzcPxpump`
+- $TAPE: $192,345 1h vol, $205,546 mcap, +353% 1h  
+  CA `7xP2r4Vtjy5opBZjbPcCc4N7BkRhhQddqsFQDpDopump`
+- AMD: $191,119 1h vol, $917,171 mcap, -29% 1h  
+  CA `DDmGnuvroxVrb7CSyjYcezFU8gnAfhKasg4ZZezmpump`
+- Pump: $168,189 1h vol, $92,026 mcap, +4550% 1h  
+  CA `EjH9dQSAFmzMH9Jy6aJk95FdtY7xkc1cWvXLetaNpump`
+- DESSA: $125,574 1h vol, $14,719,808 mcap, +23% 1h  
+  CA `npz2FhoufQ7pKqhGpaipYWacrAkidyW2yDpVWSvpump`
