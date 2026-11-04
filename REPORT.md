@@ -1,13 +1,13 @@
 # Trencher live report
 
-Updated 2026-11-04T12:55:13Z (paper trading, never real money)
+Updated 2026-11-04T13:10:28Z (paper trading, never real money)
 
 - Equity: $74.23 (-25.8% vs $100 start)
 - Closed trades: 22, 3 wins
 - Fees paid: $14.78 (axiom $2.81, network $9.18, pool $2.66), plus $4.15 lost to slippage
 - New trades: WATCH-ONLY (scans and decides, buys nothing)
 - Brain: subscription, claude-haiku-5-5 for routine calls, claude-opus-5-5 for the daily review; 474 routine calls and 1 plan-limit hits in 48h
-- Watch log: 93 coins being followed, 456 filed, 0 would-buys (6h follow, sampled every 2 min)
+- Watch log: 92 coins being followed, 460 filed, 0 would-buys (6h follow, sampled every 2 min)
 
 ## Scorecard (after fees)
 - 22 closed, 3 won (14%), net $-25.79
@@ -73,9 +73,15 @@ Updated 2026-11-04T12:55:13Z (paper trading, never real money)
   CA `H4gHnZ3NCU7Z9XQwGX6YYJNyieGEW8pqwGRUcdSxpump`
 
 ## Last scan
-- 12:54Z: 2 coins, 1 with pairs, 0 passed the market filters, 0 researched
+- 13:10Z: 2 coins, 1 with pairs, 0 passed the market filters, 0 researched
 
 ## Coins it looked at, and why it passed
+- 13:05Z VETO (MIGRATED, $370,189 mcap, $4,874 5m vol): PASS at conviction 3, PASS — target too close and no catalyst. The nearest prior high is about 1.18x away, and the veto theme has no named catalyst. The FoxNews link is unverified. (V1, V6, V13)  
+  CA `B93V9uyYRaQDKSG8iCQyyP61j3NCqCRRXPCgU3gpump`
+- 13:01Z NEMO (FINAL_STRETCH, $19,827 mcap, $4,550 5m vol): REJECT, Top 10 hold 31.5% ex-pool (>25%) (V13)  
+  CA `5ja9qQuE5V9g5TVAFZVdtVQQqoThkAWxEKUaPcC5jN3F`
+- 12:59Z GATO (MIGRATED, $10,834,015 mcap, $5,857 5m vol): REJECT, Dev holds 3.3% (>1%) (V13, V17)  
+  CA `HsprHxBRgiVaQdRf3TnKNuZZtaX9JUSPgMFdAkk6pump`
 - 12:53Z ANONVOYAGE (MIGRATED, $257,012 mcap, $5,751 5m vol): REJECT, Bundles: 10 linked wallet cluster(s) hold 50.3% of supply (>20%) (V17)  
   CA `8muc9DdhqWfAPcvmEebNQCG89bLiwi12T2KtBtzVpump`
 - 12:44Z RICO (DIP, $450,159 mcap, $5,342 5m vol): PASS at conviction 3, PASS — DIP on a GTA-dog copy in a 22-coin vamp field, theme volume 0.85x pace and the story isn't rising on the radar. Blocker: "dead story" plus "split crowd". (V1, V3, V6)  
@@ -90,37 +96,31 @@ Updated 2026-11-04T12:55:13Z (paper trading, never real money)
   CA `FpWWSqLNrjTTMDM41EXkvBmHBDkNdWrf9RwHL57xpump`
 - 12:31Z Dacity (MIGRATED, $7,970,180 mcap, $4,903 5m vol): REJECT, Bundles: 10 linked wallet cluster(s) hold 24.0% of supply (>20%) (V17)  
   CA `nxPqZ4F7ux8Vph5NFu25rEP6Kx9Gr1U6Fmj36Rjpump`
-- 12:23Z CHILLCATS (MIGRATED, $82,617 mcap, $7,524 5m vol): REJECT, Top 10 hold 45.9% ex-pool (>25%) (V13)  
-  CA `4BCbx4hB1XPmC5mLHsFyHEghC5fb9Afu7THLGXiHpump`
-- 12:13Z GATO (MIGRATED, $10,406,536 mcap, $5,377 5m vol): REJECT, Dev holds 3.3% (>1%) (V13, V17)  
-  CA `HsprHxBRgiVaQdRf3TnKNuZZtaX9JUSPgMFdAkk6pump`
-- 12:13Z Dumocrat (MIGRATED, $135,786 mcap, $11,965 5m vol): PASS at conviction 3, PASS: 2.3% off the high, not the theme leader, and 5m flow at 0.7x pace. Chasing a candle that hasn't made a higher low yet. (V1, V6, V13)  
-  CA `3Y2TGH3AvFFEL48rZfCgtiNJZJ84Eu75akYWmhyXpump`
 
 ## What its skips did next (last 48h)
 A skip "ran" if the coin reached the first target (1.5x) from the skip price before a 20% drop, "dumped" if the drop came first. Sampled every 10 min, followed 6h.
-- too new / sniping: blocked 68, ran 14, dumped 53, flat 0, open 1 (saving losses: keep it)
+- too new / sniping: blocked 67, ran 14, dumped 53, flat 0, open 0 (saving losses: keep it)
   - ran: CLIPPED up to 1.65x  
     CA `Bxyp4L6EbDys4fo51qxMEQTx41sj6McnsbPZTdvipump`
   - ran: Marutaro up to 1.62x  
     CA `At3jYPUKVEFYrss5a58myVuqKLjGxMuBP5MwqMk9pump`
   - ran: MameStonk up to 1.67x  
     CA `57eJSmN1ecANrnZjGPrXzWUMyGhQsQgMS9eHdxM3pump`
-- top 10 over 25%: blocked 65, ran 10, dumped 52, flat 3, open 0 (saving losses: keep it)
+- top 10 over 25%: blocked 65, ran 11, dumped 51, flat 3, open 0 (saving losses: keep it)
   - ran: GODHOUSE up to 3.19x  
     CA `CSGTuLtWhCfGZ5S5TvASQ6a5su91NCfRpNqfPczfpump`
   - ran: KYBER up to 1.83x  
     CA `BasL6j1MNkjFyuvRRFsmbm3bKqFPr6Yg3UhShii6pump`
   - ran: WIF up to 1.67x  
     CA `E7ayy5Se6gjwCNtw9NP629AucnTgqab4SSmSxDpUpump`
-- flow below pace: blocked 50, ran 11, dumped 32, flat 5, open 2 (saving losses: keep it)
+- flow below pace: blocked 50, ran 11, dumped 33, flat 5, open 1 (saving losses: keep it)
   - ran: KOROSUKE up to 1.54x  
     CA `7ha4HFgdvkXaDcR2biCsuBpoCZzoLSRjb5we34Gbpump`
   - ran: CAPY up to 1.51x  
     CA `DBPTU2oKLDHXQjAEJ3rZi8bUGmt2uxUbipgg6xmXoMqr`
   - ran: ZERO up to 1.61x  
     CA `Aes6XNH9BboLZuchD5PnDwaX6Zj1nU79TU3gNtPEpump`
-- near the high / chasing: blocked 41, ran 5, dumped 31, flat 3, open 2 (saving losses: keep it)
+- near the high / chasing: blocked 41, ran 5, dumped 32, flat 3, open 1 (saving losses: keep it)
   - ran: underdog up to 1.64x  
     CA `BZXh2LcnNNyypxsdfVeFzXawqmoGoSShC5i4NEQQpump`
   - ran: LUCIA up to 1.83x  
@@ -156,18 +156,18 @@ A skip "ran" if the coin reached the first target (1.5x) from the skip price bef
   - ran: Firecube up to 1.88x  
     CA `Ebih1KdijjpQBaM83gUfGhRtTCpHzDkBZhCZedZwpump`
 
-## Daily review (2026-11-03, claude-opus-5-5)
-There's no positive after-cost edge yet. The 13 settled coins averaged -6.7% net under the simple plan, which is about +3.6% gross minus a 10.3% round-trip cost. The best bucket, MIGRATED, is break-even at -0.4% (n=8). With a 1.5x target, a -20% stop and about 10% cost, a winner nets about +40% and a loser about -30%, so a coin has to hit the target first about 43% of the time just to break even. Nothing big enough to trust gets there: the whole set is at 31% and MIGRATED at 37.5%. With n=13 the confidence intervals run roughly ±25 points, and the simulator flatters losses (see data issues), so the real numbers are probably worse. The routine model logged zero would-buys, so there's nothing to compare against the coins it passed on. Its PASSes did worse (-20.5% net, n=7) than the coins the checklist rejected (+9.4%, n=6). So passing was mostly right, but that gap rests on 2–3 coins (3/6 vs 1/7 ran, Fisher p≈0.3). It also passed on the day's two best runners, LIFEVAL at 4.2x and XDG at 2.7x.
-- finding: Costs are the whole story. Overall: n=13, ran 30.8%, dumped 61.5%, average net -6.7% against 10.3% cost, so gross price action was slightly positive (+3.6%). The one real trade in the window (Slingoor) cost $1.00 on $10, the same 10%. That matches the pre-pause record, where fees and slippage were $18.83 of the $25.79 lost.
-- finding: Break-even maths: at a 1.5x target, -20% stop and 10% cost, a strategy needs about 43% of trades to hit the target first. No sample of 6 or more reaches that. By setup: MIGRATED 37.5%, FINAL_STRETCH 33.3%, DIP 0%.
-- finding: MIGRATED, n=8: ran 37.5%, dumped 50%, median peak 1.6x, hit 2x 25%, net -0.4%. It's the only setup near zero, and it's still not positive.
-- finding: DIP, n=2: both dumped, net -30.7% each. That is exactly -20% plus 10.7% cost, which shows the simulator fills every stop at exactly -20%. Two coins is not evidence about the setup.
-- finding: FINAL_STRETCH, n=3: one ran (Firecube, 2.09x high 13.6 min after logging, rejected by the checklist for dev share over 1%), net -7.5%.
-- idea to test: Cost gate. Hypothesis: low-cost pools are the only place an edge can survive. Test: on all logged coins, bucket by estimated round-trip cost (<5%, 5–8%, >8%) and compare simple-plan net. Also re-price at $25 and $50 notional if the cost model splits fixed fees from slippage, to see where fixed fees stop dominating.
-- idea to test: Older, larger migrated coins. Hypothesis: the RICO/MAMESUKE pattern. Test setup=MIGRATED AND age_hours 6–48 AND mcap $300k–$3M AND 5m volume ≥ $10k AND flow ratio ≥ 0.8 AND drawdown from high 20–50%, with no time stop or a 6h one. Compare its hit rate with the 43% break-even.
-- idea to test: Very young migrated coins. Hypothesis: the LIFEVAL/XDG pattern. Test setup=MIGRATED AND age_hours < 0.5 AND mcap $100k–$250k AND 5m volume ≥ $15k AND buy ratio ≥ 0.6 AND checklist pass, against the same age band that 'too new' blocks (15% ran). Keep it only if an mcap or volume floor clearly separates the runners.
-- idea to test: Time-stop comparison. On every settled coin, run the simple plan three ways: no time stop, a 45-minute time stop (current live plans), and a 6h time stop. Several runners peaked after 150–360 minutes, so the 45-minute stop may be cutting the only gains there are.
-- idea to test: Stop/target geometry. Compare -20%/1.5x, -30%/2x and -25%/1.5x with the 2x initials from the soul file. At least one 2x coin dropped through -20% before it ran. Stops must fill at the first sample at or below the level, not at the level itself.
+## Daily review (2026-11-04, claude-opus-5-5)
+No. After costs, every bucket loses money. Across 355 settled coins the simple plan (sell at 1.5x or -20%) averaged -10.1%, and before costs it was only about +0.4%. So the 10.5% round-trip cost on a $10 buy is the whole loss, and no group gets close to clearing it. The best group is MIGRATED at -8.1% net (about +2.3% before costs). With ~355 samples the all-coin result is clearly below zero, about -10% ± 3%. But the samples overlap: the same coin gets logged more than once, a few metas cluster, and it's all one market day. So the real uncertainty is wider, and a single day can't show any subgroup edge. The question about would-buys can't be answered: the routine model made zero BUY calls (would_buy n=0) and said PASS on all 181 coins it reviewed. Those passed coins ran more often than the checklist rejects (30.4% vs 16.1%) and lost less (-7.2% vs -13.1% net). That says the checklist filters somewhat, but nothing here is buyable.
+- finding: Costs are the whole story. All coins (n=355): 23.4% ran, 59.2% dumped, median peak 1.25x, 18.0% hit 2x. Before costs about +0.4%; after the 10.5% cost, -10.1%. A typical coin that peaks at 1.25x can't pay a 10.5% round trip.
+- finding: MIGRATED is the least bad setup (n=250): 24.8% ran, 53.6% dumped, -8.1% net (about +2.3% before costs). It's the only setup positive before costs, and the margin is small enough to be noise.
+- finding: DIP is clearly the worst (n=51): only 11.8% ran (6 coins), 72.5% dumped, 5.9% hit 2x, -18.4% net and about -8% even before costs. Its run rate is roughly half of MIGRATED's 24.8% on 250. With this gap it's unlikely to be just noise, though it's still only one day of data. Dip-buying as currently defined catches falling knives.
+- finding: FINAL_STRETCH (n=54) has the biggest upside and still loses: median peak 1.45x, 27.8% hit 2x, but 72.2% dumped and -11.5% net. Ran plus dumped is exactly 100% and 'ran' equals 'hit 2x' exactly (27.8%), which looks like an artifact, not a real pattern (see data issues).
+- finding: The checklist separates a little. Rejects (n=174): 16.1% ran, -13.1% net, about -2.8% before costs. Coins it let through to the model (n=181, all declined): 30.4% ran, -7.2% net, about +3.4% before costs. Dump rates are about the same (57.5% vs 60.8%), so the checklist finds more runners but doesn't avoid dumps.
+- idea to test: Cost gate: add the condition est_round_trip_cost_pct ≤ 5 and re-run every setup on the week's data. With costs at ~10.5%, a cost filter is the only lever big enough to matter. If the low-cost subset is still negative, the setups have no edge.
+- idea to test: Drop or rebuild DIP: test setup=DIP only when drawdown_from_high is between 40% and 55%, 5m volume ≥ the 1h average pace (flow ratio ≥ 1.0), buy ratio ≥ 0.55, and the previous high was ≥ $150k mcap. If that subset doesn't beat -5% net on n≥40, turn DIP off.
+- idea to test: MIGRATED focus: test setup=MIGRATED AND checklist passed AND mcap between $40k and $300k AND age between 0.5h and 6h AND 5m volume ≥ $10k AND buy ratio ≥ 0.55. Also split by mcap band to see whether the small positive before costs is concentrated anywhere.
+- idea to test: FINAL_STRETCH exit variant: once the bonding-curve price switch is confirmed not to cause fake 2x hits, test selling half at 2x and trailing the rest (or a -30% stop), against the current all-out at 1.5x / -20%. 27.8% hit 2x, but the 1.5x target caps them while 72% eat the full stop.
+- idea to test: Agreement signal: test whether coins where the checklist passed AND the model's conviction was ≥ 6 (even when it said PASS) beat the other checklist passes. To do this the model must log a conviction score on every PASS, not just a verdict.
 
 ## Rules it changed from results and skips
 - 11-02 23:38Z tightened: DIP gate: flow at least 0.7x the hourly pace plus a printed higher low (DIPs 0 for 5 (-$6.70), every one bought before the higher low held (HEXN x2, SIS, Something, Leverhedge). The code line is now aligned to the owner's 0.7x.)
@@ -192,16 +192,16 @@ There's no positive after-cost edge yet. The 13 settled coins averaged -6.7% net
 - [2026-11-02 20:25] I expected Slingoor, a clean MIGRATED leader with $25k of 5m flow at pace and a 0.77 buy share, to retest its $408k high from $304k. It never went green (0.98x peak) and hit the -20% stop in 2 minutes, a -$2.86 probe. My own thesis admitted there was no printed higher low after a peak only 6 minutes old, so this confirms the money-shape rule: buy share and flow are not structure (V1, V6). Next time a MIGRATED pullback with no higher low above the hourly low is a PASS with blocker "no higher low", not a probe. This is one loss, so it adds no new ban beyond the rule I already have.
 
 ## Meta right now
-The meta is animal and joke-name tickers, running in two lanes. Lane one is pump.fun animal and joke tickers under an hour old (META, BunThing/Boonthung, ram). They are buy-heavy at 54-60% on $15-36k of 5m volume against $8-33k caps, which is where bundles and dumps live (V1, V13), so research only, no entry until holder and bundle checks come back clean. Lane two is older animal coins that split by direction: A Meme Dog (AMD, 14h, $1.75M, 63% buys, $8.9k 5m) and Vice Inu (VI, 11h, $1.0M, 70% buys, $5.7k 5m) are picking up buyers, while CHILLCATS is fading (-52% in 1h) and GTA6CAT ($10.5M, 37% buys) has sellers winning. The fading names (SAN -67%, MOON -69%, hope -76%) show how fragile the lane is. Setups to research: AMD and VI are the two I'd watch, but neither clears the $10k 5m bar yet (V6), so they're watch-until-volume, not buys; a probe only after 5m crosses $10k with buys holding above 60%. The crawler's narratives (Binance, referral codes, Trump, the Hunter Biden $LAPTOP coin, which is a political-figure coin and a stay-away) aren't showing up in these movers, so I'm not trading them.
+Trencher read, 2026-11-04. Two lanes, both animal and joke tickers. The fresh pump.fun lane is loud: Chihuahua (about 6 min old, $21.5k 5m on a $14k cap, 63% buys), CADENCE ($6.2k 5m on $27k, 65% buys), PUMP10 (+488% in 1h on a $17k cap, 69% buys) and BunThing ($7.8k 5m on $75k). Volume at 1x to 1.5x the cap in the first hour is where bundles and dumps live (V1, V13), so these are research only, not entries. The older animal lane reads cleaner: A Meme Dog (15h, $1.78M, $22.7k 5m, 64% buys) is the one clearing the $10k bar with buyers in control, and GTA6DOG (44h, $450k, 75% buys) is building but at $5.4k 5m, below the bar. Fading: Ram inu (13% buys), GTApad (-85% in 1h), SAN (-24%), and Vice Inu (50% buys, $4.9k 5m, -20% in 1h), which is losing its lane. Setups to research now: AMD first, a probe only if its holder and bundle checks come back clean and 5m holds above $10k with buys above 60% (V6). GTA6DOG second, if its 5m crosses the bar. The crawler's Binance, Trump and Hunter Biden $LAPTOP stories are not in these movers, and $LAPTOP is a political-figure coin, so no trade there. Nothing here is a buy yet. Holder, dev and bundle checks still run per coin, and this is paper trading, not financial advice.
 
 ## Moving most in its scans, last 30 min (1h volume)
+- Dumocrat: $242,552 1h vol, $1,786 mcap, -99% 1h  
+  CA `3Y2TGH3AvFFEL48rZfCgtiNJZJ84Eu75akYWmhyXpump`
 - BunThing: $212,806 1h vol, $74,890 mcap, +108% 1h  
   CA `29jQSLyMDP3y1DRkVDVi4FxyeR66p5JCMqsaifMEpump`
+- GATO: $93,444 1h vol, $10,879,828 mcap, +3% 1h  
+  CA `HsprHxBRgiVaQdRf3TnKNuZZtaX9JUSPgMFdAkk6pump`
+- P10: $92,430 1h vol, $14,045 mcap, +391% 1h  
+  CA `5swCxtB6Y1kC5EWzrmACxw6qsnJSk3vWdJuWr7qHpump`
 - AMD: $85,845 1h vol, $1,781,098 mcap, +9% 1h  
   CA `DDmGnuvroxVrb7CSyjYcezFU8gnAfhKasg4ZZezmpump`
-- Dacity: $76,809 1h vol, $7,958,866 mcap, -4% 1h  
-  CA `nxPqZ4F7ux8Vph5NFu25rEP6Kx9Gr1U6Fmj36Rjpump`
-- VI: $76,694 1h vol, $859,048 mcap, -20% 1h  
-  CA `FpWWSqLNrjTTMDM41EXkvBmHBDkNdWrf9RwHL57xpump`
-- GTAPAD: $71,805 1h vol, $11,240 mcap, -70% 1h  
-  CA `F92cYmoxRaobkAh5VJJstNEEFsEvtkqS86ftXRL7pump`
