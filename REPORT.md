@@ -1,13 +1,13 @@
 # Trencher live report
 
-Updated 2026-11-04T10:54:26Z (paper trading, never real money)
+Updated 2026-11-04T11:09:26Z (paper trading, never real money)
 
 - Equity: $74.23 (-25.8% vs $100 start)
 - Closed trades: 22, 3 wins
 - Fees paid: $14.78 (axiom $2.81, network $9.18, pool $2.66), plus $4.15 lost to slippage
 - New trades: WATCH-ONLY (scans and decides, buys nothing)
-- Brain: subscription, claude-haiku-5-5 for routine calls, claude-opus-5-5 for the daily review; 472 routine calls and 1 plan-limit hits in 48h
-- Watch log: 96 coins being followed, 419 filed, 0 would-buys (6h follow, sampled every 2 min)
+- Brain: subscription, claude-haiku-5-5 for routine calls, claude-opus-5-5 for the daily review; 474 routine calls and 1 plan-limit hits in 48h
+- Watch log: 95 coins being followed, 424 filed, 0 would-buys (6h follow, sampled every 2 min)
 
 ## Scorecard (after fees)
 - 22 closed, 3 won (14%), net $-25.79
@@ -73,9 +73,17 @@ Updated 2026-11-04T10:54:26Z (paper trading, never real money)
   CA `H4gHnZ3NCU7Z9XQwGX6YYJNyieGEW8pqwGRUcdSxpump`
 
 ## Last scan
-- 10:53Z: 2 coins, 1 with pairs, 0 passed the market filters, 0 researched
+- 11:08Z: 6 coins, 5 with pairs, 0 passed the market filters, 0 researched
 
 ## Coins it looked at, and why it passed
+- 11:05Z WASTED (DIP, $821,879 mcap, $2,206 5m vol): REJECT, Dev holds 3.5% (>1%) (V13, V17)  
+  CA `GexThZHgaswpAQ7Fi8QrHFubjPimUNSYhJiAA7XZpump`
+- 11:05Z VI (MIGRATED, $1,005,260 mcap, $5,648 5m vol): PASS at conviction 3, PASS: chasing, flow below pace, and the first resistance is 1.08x away. Clean holders don't fix that (V1, V6).  
+  CA `FpWWSqLNrjTTMDM41EXkvBmHBDkNdWrf9RwHL57xpump`
+- 11:01Z Dacity (MIGRATED, $7,435,071 mcap, $5,834 5m vol): REJECT, Bundles: 10 linked wallet cluster(s) hold 24.0% of supply (>20%) (V17)  
+  CA `nxPqZ4F7ux8Vph5NFu25rEP6Kx9Gr1U6Fmj36Rjpump`
+- 10:59Z SAN (FINAL_STRETCH, $24,601 mcap, $16,260 5m vol): PASS at conviction 3, PASS: chasing spike, top 10 at 24.6% ex-pool, and an AI story with no GitHub, no catalyst and zero buzz. Blocker: "chasing spike." (V1, V6, V13)  
+  CA `8kfp8MzuFuj3vrnmG3KBcYVctYmu2JYerdFhPnX4pump`
 - 10:53Z CHILLCATS (DIP, $146,938 mcap, $7,963 5m vol): PASS at conviction 3, PASS: CHILLCATS is a 67% dip in a cat lane whose volume is at 0.78x its hourly pace, so it fails the bottom-buy gate. (V1, V6, V13)  
   CA `4BCbx4hB1XPmC5mLHsFyHEghC5fb9Afu7THLGXiHpump`
 - 10:43Z GATO (MIGRATED, $10,350,186 mcap, $7,191 5m vol): REJECT, Dev holds 3.3% (>1%) (V13, V17)  
@@ -88,14 +96,6 @@ Updated 2026-11-04T10:54:26Z (paper trading, never real money)
   CA `6gnB2H2hbTVvKUWCzNuqjWY8Rod6EVBmfHi7YxZpTWa7`
 - 10:27Z RICO (DIP, $362,906 mcap, $2,282 5m vol): PASS at conviction 4, PASS: no printed higher low, 5m flow is $2.3k, and it's the 21-copy GTA6 vamp field. Blocker "no higher low" (V1, V6, V13).  
   CA `8kuQg3WivDtL85VEdw2jEmSXjYt6EEeYBATJ4DtQpump`
-- 10:23Z 5STAR (MIGRATED, $81,078 mcap, $2,458 5m vol): REJECT, Dev holds 1.4% (>1%) (V13, V17)  
-  CA `FK5tP4Zw7ujWzaz3TgeJ5NcqGe5LFufo7m6zH6YQpump`
-- 10:23Z AMD (DIP, $1,505,167 mcap, $9,068 5m vol): PASS at conviction 3, PASS: no catalyst for a bottom buy, one bundle cluster holds 12.1%, and the entry is 26% above the printed higher low. Mid-range, no edge. (V1, V13, V17)  
-  CA `DDmGnuvroxVrb7CSyjYcezFU8gnAfhKasg4ZZezmpump`
-- 10:19Z VI (MIGRATED, $820,414 mcap, $4,439 5m vol): PASS at conviction 3, PASS: VI is the theme leader, but 5m flow is at 0.65x its hourly pace and the first resistance is only 1.22x away. Blocker: "flow below pace" (V1, V6).  
-  CA `FpWWSqLNrjTTMDM41EXkvBmHBDkNdWrf9RwHL57xpump`
-- 10:15Z Dacity (MIGRATED, $7,372,021 mcap, $4,637 5m vol): REJECT, Bundles: 10 linked wallet cluster(s) hold 24.0% of supply (>20%) (V17)  
-  CA `nxPqZ4F7ux8Vph5NFu25rEP6Kx9Gr1U6Fmj36Rjpump`
 
 ## What its skips did next (last 48h)
 A skip "ran" if the coin reached the first target (1.5x) from the skip price before a 20% drop, "dumped" if the drop came first. Sampled every 10 min, followed 6h.
@@ -113,21 +113,21 @@ A skip "ran" if the coin reached the first target (1.5x) from the skip price bef
     CA `BasL6j1MNkjFyuvRRFsmbm3bKqFPr6Yg3UhShii6pump`
   - ran: WIF up to 1.67x  
     CA `E7ayy5Se6gjwCNtw9NP629AucnTgqab4SSmSxDpUpump`
-- flow below pace: blocked 50, ran 12, dumped 31, flat 5, open 2 (saving losses: keep it)
+- flow below pace: blocked 50, ran 12, dumped 32, flat 5, open 1 (saving losses: keep it)
   - ran: KOROSUKE up to 1.54x  
     CA `7ha4HFgdvkXaDcR2biCsuBpoCZzoLSRjb5we34Gbpump`
   - ran: CAPY up to 1.51x  
     CA `DBPTU2oKLDHXQjAEJ3rZi8bUGmt2uxUbipgg6xmXoMqr`
   - ran: ZERO up to 1.61x  
     CA `Aes6XNH9BboLZuchD5PnDwaX6Zj1nU79TU3gNtPEpump`
-- near the high / chasing: blocked 39, ran 4, dumped 31, flat 3, open 1 (saving losses: keep it)
+- near the high / chasing: blocked 40, ran 5, dumped 31, flat 3, open 1 (saving losses: keep it)
   - ran: underdog up to 1.64x  
     CA `BZXh2LcnNNyypxsdfVeFzXawqmoGoSShC5i4NEQQpump`
   - ran: LUCIA up to 1.83x  
     CA `Cbtnpg6SL9jvZxtZTYYFPtVQXkuuqSUxCU5aXeTkpump`
   - ran: AMD up to 2.02x  
     CA `3MfZ4URVxmB4mfPuy4AxUxpcC5U7aXe7TDA7XVoGpump`
-- RugCheck danger: blocked 30, ran 4, dumped 22, flat 3, open 1 (saving losses: keep it)
+- RugCheck danger: blocked 30, ran 4, dumped 23, flat 3, open 0 (saving losses: keep it)
   - ran: COLLECTOR up to 1.62x  
     CA `6kKETm8xPeZ2z1DBYjXmxMTFAJudvGHJvRHu5Wt8uGtf`
   - ran: GTA up to 1.74x  
@@ -141,7 +141,7 @@ A skip "ran" if the coin reached the first target (1.5x) from the skip price bef
     CA `3JdeP1VBHgRPunmjTj1D6w6ZZePwGAwjUr2tCufwpump`
   - ran: AMD up to 1.67x  
     CA `DDmGnuvroxVrb7CSyjYcezFU8gnAfhKasg4ZZezmpump`
-- bundles over the line: blocked 18, ran 1, dumped 13, flat 1, open 3 (saving losses: keep it)
+- bundles over the line: blocked 18, ran 1, dumped 14, flat 1, open 2 (saving losses: keep it)
   - ran: MAMESUKE up to 1.95x  
     CA `SCGBBnSwnekytGFHgyeHHxPMiN7xDxsWFGg9JgFSTNK`
 - thin 5m volume: blocked 16, ran 3, dumped 8, flat 3, open 2 (saving losses: keep it)
@@ -156,7 +156,7 @@ A skip "ran" if the coin reached the first target (1.5x) from the skip price bef
     CA `wDSAqt4tEZpDAwB9XY6ejkZvMFuT1zUMjUh67txeYhf`
   - ran: AMD up to 1.67x  
     CA `DDmGnuvroxVrb7CSyjYcezFU8gnAfhKasg4ZZezmpump`
-- dev share over 1%: blocked 12, ran 1, dumped 6, flat 3, open 2 (saving losses: keep it)
+- dev share over 1%: blocked 12, ran 1, dumped 6, flat 2, open 3 (saving losses: keep it)
   - ran: Firecube up to 1.88x  
     CA `Ebih1KdijjpQBaM83gUfGhRtTCpHzDkBZhCZedZwpump`
 
@@ -196,16 +196,16 @@ There's no positive after-cost edge yet. The 13 settled coins averaged -6.7% net
 - [2026-11-02 20:25] I expected Slingoor, a clean MIGRATED leader with $25k of 5m flow at pace and a 0.77 buy share, to retest its $408k high from $304k. It never went green (0.98x peak) and hit the -20% stop in 2 minutes, a -$2.86 probe. My own thesis admitted there was no printed higher low after a peak only 6 minutes old, so this confirms the money-shape rule: buy share and flow are not structure (V1, V6). Next time a MIGRATED pullback with no higher low above the hourly low is a PASS with blocker "no higher low", not a probe. This is one loss, so it adds no new ban beyond the rule I already have.
 
 ## Meta right now
-Meta from scan_movers: dog and animal names are the one theme running across market caps, with Vice Inu ($856k, 78% buys, +45% on the hour), A Meme Dog ($1.3M) and GATO/Dacity at $7-10M. None of them clears the $10k 5-minute volume bar, so it's a rising but thin lane. The fresh pump.fun lane (APU +434%, Moonman +119%, both under 1h old and under $20k) is hot and thin, which is where bundles and dumps live (V1, V13), so I'm not touching it. Self-referential "meme" and party names (AMP, Doge Party, Anon Voyage) look like noise, and 5STAR, Twitter and Doge are fading. The crawler's space, Trump/LAPTOP and "binance hack" stories don't appear in these movers; the political and hack-named coins are off the table anyway, so I'm not calling them a meta. Setup to research: ChatBLT (pumpswap, $78k mcap, $18.3k on 5m, 67% buys, 5m pace running above its hourly pace, -9% on the hour). It's the one mover that clears the volume bar, so check holders and bundles before any entry and set the stop at the thesis break when researching. Not verified: the crawler's Transinu and CHILLCATS figures don't match scan_movers, so I'm not using them.
+Meta: animal coins are the one theme running across several movers (CHILLCATS $150k, GTA6CAT/GATO $10M, MEOWNERO $334k, The DOGE Party $12k, GTA6DOG/RICO $363k, SpaceDuck), spread across ages and caps, but most have thin 5-minute volume. The hot lane is fresh pump.fun joke and animal tickers under 1h old (MOON +398%, WOKEJAK +470%, hope +254%, brkout +122%), all under $20k, buy-heavy on $5-18k of 5m volume with no holder data yet. That's where bundles and dumps live (V1, V13), so no entry there; research only. Fading: DOGE Party -46%, APU -74%, MEMY -43%. Setups to research: Anon Voyage ($609k, 21h old, pumpswap, $12.7k 5m, 58% buys) is the one that clears the V6 band with real volume, though the idea is weak; CHILLCATS ($8.3k 5m, 76% buys) is a watch until its 5m clears $10k. Not verified: the crawler's ChatBLT, Vice Inu and Transinu figures are not in scan_movers, so I didn't use them. Holder, dev and bundle checks run on each coin at research time.
 
 ## Moving most in its scans, last 30 min (1h volume)
 - CHILLCATS: $122,445 1h vol, $150,429 mcap, +9% 1h  
   CA `4BCbx4hB1XPmC5mLHsFyHEghC5fb9Afu7THLGXiHpump`
-- ANONVOYAGE: $87,848 1h vol, $608,732 mcap, +26% 1h  
-  CA `8muc9DdhqWfAPcvmEebNQCG89bLiwi12T2KtBtzVpump`
-- Daumen: $71,832 1h vol, $7,380 mcap, +115% 1h  
-  CA `5HzUM3Wy96PpeurUp4vv3Lk4cBPmLjDXCdaxK4z8pump`
-- POWERMAXX: $68,905 1h vol, $5,752 mcap, +42% 1h  
+- VI: $75,670 1h vol, $1,019,375 mcap, +7% 1h  
+  CA `FpWWSqLNrjTTMDM41EXkvBmHBDkNdWrf9RwHL57xpump`
+- POWERMAXX: $72,231 1h vol, $3,576 mcap, -12% 1h  
   CA `FYV6rXKEecTgoCqGjFnSK52BZZfux5UMabw8qGvbpump`
 - SpaceDuck: $68,681 1h vol, $5,606 mcap, +32% 1h  
   CA `APWThVHgwuJLfaHmXXAhWV2aTsrSwGyJVreGAoyPpump`
+- Dacity: $61,000 1h vol, $7,435,071 mcap, +1% 1h  
+  CA `nxPqZ4F7ux8Vph5NFu25rEP6Kx9Gr1U6Fmj36Rjpump`
