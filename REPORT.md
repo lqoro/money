@@ -1,13 +1,13 @@
 # Trencher live report
 
-Updated 2026-11-04T17:13:02Z (paper trading, never real money)
+Updated 2026-11-04T17:28:15Z (paper trading, never real money)
 
 - Equity: $74.23 (-25.8% vs $100 start)
 - Closed trades: 22, 3 wins
 - Fees paid: $14.78 (axiom $2.81, network $9.18, pool $2.66), plus $4.15 lost to slippage
 - New trades: WATCH-ONLY (scans and decides, buys nothing)
-- Brain: subscription, claude-haiku-5-5 for routine calls, claude-opus-5-5 for the daily review; 487 routine calls and 1 plan-limit hits in 48h
-- Watch log: 113 coins being followed, 520 filed, 0 would-buys (6h follow, sampled every 2 min)
+- Brain: subscription, claude-haiku-5-5 for routine calls, claude-opus-5-5 for the daily review; 488 routine calls and 1 plan-limit hits in 48h
+- Watch log: 109 coins being followed, 527 filed, 0 would-buys (6h follow, sampled every 2 min)
 
 ## Scorecard (after fees)
 - 22 closed, 3 won (14%), net $-25.79
@@ -73,9 +73,15 @@ Updated 2026-11-04T17:13:02Z (paper trading, never real money)
   CA `H4gHnZ3NCU7Z9XQwGX6YYJNyieGEW8pqwGRUcdSxpump`
 
 ## Last scan
-- 17:12Z: 8 coins, 6 with pairs, 0 passed the market filters, 0 researched
+- 17:27Z: 4 coins, 2 with pairs, 0 passed the market filters, 0 researched
 
 ## Coins it looked at, and why it passed
+- 17:26Z Meaningless (FINAL_STRETCH, $24,147 mcap, $21,238 5m vol): PASS at conviction 2, PASS: chasing spike. +78% on 5m at 5.5x hourly pace, 10 minutes old, top 10 at 24.9% with 5 flagged insider wallets, and the only website is a Congressional Record link. Farm until proven otherwise (V1, V6, V13).  
+  CA `HmANFmkTXT8b4Jox5pNTuX5wEcBXhHufNB8i2fXGpump`
+- 17:20Z PAI (MIGRATED, $33,864 mcap, $4,760 5m vol): PASS at conviction 3, PASS: PAI is a 2-minute-old copy in a 9-coin PAI field, and PAI the leader has 56x its 5m volume. Blockers: too new, no higher low, split crowd. (V1, V3)  
+  CA `GXS1XuYuZJX7NuQvXPJPbpe4YfTsm3UyK4AmqsMcpump`
+- 17:15Z AMD (MIGRATED, $891,405 mcap, $4,276 5m vol): REJECT, Bundles: 10 linked wallet cluster(s) hold 24.2% of supply (>20%) (V17)  
+  CA `DDmGnuvroxVrb7CSyjYcezFU8gnAfhKasg4ZZezmpump`
 - 17:10Z VI (DIP, $662,443 mcap, $4,168 5m vol): PASS at conviction 2, PASS: Vice Inu is a clean-holder DIP, but the theme is at 0.76x pace, the 5m flow is $4k, and there's no catalyst. Blocker: bottom buy with no catalyst and theme volume under pace (V1, V6, V13).  
   CA `FpWWSqLNrjTTMDM41EXkvBmHBDkNdWrf9RwHL57xpump`
 - 17:04Z Donkey (MIGRATED, $67,997 mcap, $6,511 5m vol): PASS at conviction 3, PASS: The Donkey is a copy in a 16-coin donkey field, not the leader. 5m flow is 0.35x its hourly pace and it is 77% off a $301k peak. Blocker: "split crowd" plus "flow below pace". (V1, V13)  
@@ -90,16 +96,10 @@ Updated 2026-11-04T17:13:02Z (paper trading, never real money)
   CA `8kuQg3WivDtL85VEdw2jEmSXjYt6EEeYBATJ4DtQpump`
 - 16:47Z TrumpWars (MIGRATED, $279,565 mcap, $2,899 5m vol): PASS at conviction 3, PASS: TrumpWars is 6% off its $297k high, inside the 10% chasing zone, with 5m flow at 0.88x pace and $2.9k on the 5m. Blocker "chasing" plus "flow below pace". (V1, V6)  
   CA `31HzUsjzTt7FBCGnDy68cBnELayVsnd3zYEBtsXXpump`
-- 16:46Z Pump (DIP, $92,026 mcap, $33,544 5m vol): REJECT, Top 10 hold 31.7% ex-pool (>25%) (V13)  
-  CA `EjH9dQSAFmzMH9Jy6aJk95FdtY7xkc1cWvXLetaNpump`
-- 16:40Z $TAPE (MIGRATED, $205,546 mcap, $64,740 5m vol): REJECT, RugCheck danger: Creator history of rugged tokens  
-  CA `7xP2r4Vtjy5opBZjbPcCc4N7BkRhhQddqsFQDpDopump`
-- 16:38Z EMBERS (FINAL_STRETCH, $31,771 mcap, $8,983 5m vol): REJECT, RugCheck danger: Creator history of rugged tokens  
-  CA `GtcTZaFGTeF5rAyhpJYDcqjFXWaqyTsRKWSg9tMSpump`
 
 ## What its skips did next (last 48h)
 A skip "ran" if the coin reached the first target (1.5x) from the skip price before a 20% drop, "dumped" if the drop came first. Sampled every 10 min, followed 6h.
-- too new / sniping: blocked 67, ran 10, dumped 56, flat 0, open 1 (saving losses: keep it)
+- too new / sniping: blocked 69, ran 11, dumped 56, flat 0, open 2 (saving losses: keep it)
   - ran: ANSEMKIN up to 2.57x  
     CA `zD3jimD97YkcjMucBEmwZ6fUV7N4wjzz8Revkwmpump`
   - ran: Darth up to 1.76x  
@@ -113,7 +113,7 @@ A skip "ran" if the coin reached the first target (1.5x) from the skip price bef
     CA `BasL6j1MNkjFyuvRRFsmbm3bKqFPr6Yg3UhShii6pump`
   - ran: WIF up to 1.67x  
     CA `E7ayy5Se6gjwCNtw9NP629AucnTgqab4SSmSxDpUpump`
-- flow below pace: blocked 54, ran 10, dumped 33, flat 4, open 7 (saving losses: keep it)
+- flow below pace: blocked 54, ran 11, dumped 33, flat 4, open 6 (saving losses: keep it)
   - ran: CAPY up to 1.51x  
     CA `DBPTU2oKLDHXQjAEJ3rZi8bUGmt2uxUbipgg6xmXoMqr`
   - ran: ZERO up to 1.61x  
@@ -127,7 +127,7 @@ A skip "ran" if the coin reached the first target (1.5x) from the skip price bef
     CA `Cbtnpg6SL9jvZxtZTYYFPtVQXkuuqSUxCU5aXeTkpump`
   - ran: AMD up to 2.02x  
     CA `3MfZ4URVxmB4mfPuy4AxUxpcC5U7aXe7TDA7XVoGpump`
-- RugCheck danger: blocked 28, ran 4, dumped 19, flat 3, open 2 (saving losses: keep it)
+- RugCheck danger: blocked 28, ran 4, dumped 20, flat 3, open 1 (saving losses: keep it)
   - ran: COLLECTOR up to 1.62x  
     CA `6kKETm8xPeZ2z1DBYjXmxMTFAJudvGHJvRHu5Wt8uGtf`
   - ran: GTA up to 1.74x  
@@ -197,13 +197,13 @@ No. After costs, every bucket loses money. Across 355 settled coins the simple p
 Meta: the live flow is fresh political-joke coins and brand/mascot launches under an hour old, while the dog lane is fading. Donkey and Trump-named coins are rising: tremp ($62k cap, $55k on 5m, 61% buys, +254% in 1h) and The Donkey ($74k, 63% buys, but only $7k on 5m). The Democat is fading (-67% in 1h, 35% buys). The strongest flow is in fresh brand and mascot pumps: Rosie (AMD Mascot, $549k, $91k on 5m, 82% buys, 0.3h old, +932% in 1h), Tidal Tape ($206k, $38k on 5m, 77% buys, 0.1h old), and zkEMBERS (ZK/privacy, which matches the trending category; $32k cap, $9.5k on 5m, still on pump.fun and just under the volume bar). DogWifJob and Dessa are old, large and thin on 5m, so the animal lane is fading. Setups to research, not buy on the scan: tremp first, but run the politician-CA check before anything else; Tidal Tape; and Rosie only if it pulls back, since buying a +932% hour is chasing. Pass A Meme Donkey (0 5m volume at a $1.8k cap), Cryptocrat (dead), Always Moist Downstairs (96% buys on $2.9k of 5m volume, bot-shaped), and UAV (stale). I worked from scan_movers, because the crawler's DONKEY figures don't match the scan. No coin on the board is named for a hack, so none is blocked. Paper trading, not financial advice.
 
 ## Moving most in its scans, last 30 min (1h volume)
+- $TAPE: $624,778 1h vol, $27,472 mcap, -39% 1h  
+  CA `7xP2r4Vtjy5opBZjbPcCc4N7BkRhhQddqsFQDpDopump`
 - Rosie: $519,398 1h vol, $548,929 mcap, +932% 1h  
   CA `CSwW7z5to9mFVonsNtAp71hAdhEH5x1eH6fwKv13pump`
 - Donkey: $224,410 1h vol, $74,200 mcap, +13% 1h  
   CA `G8Lf8uthQp5YHoswQZDRdeRxaWiUqnNFNoZ45y68pump`
-- Pump: $168,189 1h vol, $92,026 mcap, +4550% 1h  
-  CA `EjH9dQSAFmzMH9Jy6aJk95FdtY7xkc1cWvXLetaNpump`
-- UAV: $97,785 1h vol, $440,287 mcap, -20% 1h  
-  CA `95kvFsVDJ5Lr4GH9Uau4dUgstft6gwnVagpKwYt2pump`
-- VI: $64,492 1h vol, $662,443 mcap, -18% 1h  
-  CA `FpWWSqLNrjTTMDM41EXkvBmHBDkNdWrf9RwHL57xpump`
+- AMD: $122,049 1h vol, $893,261 mcap, +1% 1h  
+  CA `DDmGnuvroxVrb7CSyjYcezFU8gnAfhKasg4ZZezmpump`
+- PENNY: $85,889 1h vol, $12,370 mcap, +348% 1h  
+  CA `72ikDQjxZGxg3wPW8r2NW6WiYSZYTyFqVnWH4Hbbpump`
