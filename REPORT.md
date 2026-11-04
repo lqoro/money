@@ -1,13 +1,13 @@
 # Trencher live report
 
-Updated 2026-11-04T00:47:27Z (paper trading, never real money)
+Updated 2026-11-04T01:02:33Z (paper trading, never real money)
 
 - Equity: $74.23 (-25.8% vs $100 start)
 - Closed trades: 22, 3 wins
 - Fees paid: $14.78 (axiom $2.81, network $9.18, pool $2.66), plus $4.15 lost to slippage
 - New trades: WATCH-ONLY (scans and decides, buys nothing)
-- Brain: subscription, claude-haiku-5-5 for routine calls, claude-opus-5-5 for the daily review; 464 routine calls and 1 plan-limit hits in 48h
-- Watch log: 124 coins being followed, 225 filed, 0 would-buys (6h follow, sampled every 2 min)
+- Brain: subscription, claude-haiku-5-5 for routine calls, claude-opus-5-5 for the daily review; 462 routine calls and 1 plan-limit hits in 48h
+- Watch log: 122 coins being followed, 230 filed, 0 would-buys (6h follow, sampled every 2 min)
 
 ## Scorecard (after fees)
 - 22 closed, 3 won (14%), net $-25.79
@@ -73,9 +73,15 @@ Updated 2026-11-04T00:47:27Z (paper trading, never real money)
   CA `H4gHnZ3NCU7Z9XQwGX6YYJNyieGEW8pqwGRUcdSxpump`
 
 ## Last scan
-- 00:46Z: 10 coins, 10 with pairs, 2 passed the market filters, 2 researched
+- 01:02Z: 2 coins, 2 with pairs, 1 passed the market filters, 1 researched
 
 ## Coins it looked at, and why it passed
+- 01:02Z E  (DIP, $279,954 mcap, $24,198 5m vol): REJECT, Dip with fading attention is a falling knife, not a dip (5m at 0.29x the hour's pace, under 0.6x)  
+  CA `EfRnwABuWZKxri55se639twy4jy3FRgYfri7wLJ5pump`
+- 00:50Z AMC (DIP, $184,416 mcap, $4,150 5m vol): REJECT, Dip with fading attention is a falling knife, not a dip (5m at 0.13x the hour's pace, under 0.6x)  
+  CA `YUduqrb8kK4p9VfV2JXyHnV4yCXBiUoKgH7znLNpump`
+- 00:50Z LUCKPAD (MIGRATED, $39,791 mcap, $15,547 5m vol): REJECT, Top 10 hold 33.7% ex-pool (>25%) (V13)  
+  CA `2Nhb9M58caMHufHzEa2DhNA1FEsVVL8axXu6iidvQfDe`
 - 00:46Z GATO (MIGRATED, $10,908,874 mcap, $5,052 5m vol): REJECT, Dev holds 3.3% (>1%) (V13, V17)  
   CA `HsprHxBRgiVaQdRf3TnKNuZZtaX9JUSPgMFdAkk6pump`
 - 00:46Z PUP (FINAL_STRETCH, $20,313 mcap, $60,222 5m vol): PASS at conviction 2, PASS: split crowd. 21 copies of a joke name, 8 minutes old, 5m flow at 7x pace with no printed higher low and no catalyst. Blocker: split crowd + chasing spike (V1, V3, V6).  
@@ -90,30 +96,24 @@ Updated 2026-11-04T00:47:27Z (paper trading, never real money)
   CA `5UQXX1HTkumx7T4nyHRFz5eqdgimEU9LZT5SqTzh5SKr`
 - 00:25Z ONE (MIGRATED, $68,311 mcap, $13,299 5m vol): REJECT, Dev holds 2.1% (>1%) (V13, V17)  
   CA `9xU9DLJer45mJocspDuyhFfqvSuBTYf2bLcTKcFLpump`
-- 00:24Z Dacity (MIGRATED, $6,583,660 mcap, $5,692 5m vol): REJECT, Bundles: 10 linked wallet cluster(s) hold 24.0% of supply (>20%) (V17)  
-  CA `nxPqZ4F7ux8Vph5NFu25rEP6Kx9Gr1U6Fmj36Rjpump`
-- 00:22Z ungone (FINAL_STRETCH, $32,358 mcap, $59,304 5m vol): PASS at conviction 3, PASS: up 1102% in 5 minutes at 12x the hourly pace, sitting at $32k on the 30–40k zone where new pairs usually die, and the website says "launching soon." Chasing a spike with no story (V1, V6, V13).  
-  CA `FGrJjaKYT2et7voESztVF1T4qFQhrVjusaV3dRxJpump`
-- 00:17Z TWUMP (FINAL_STRETCH, $23,021 mcap, $6,421 5m vol): REJECT, RugCheck danger: Creator history of rugged tokens  
-  CA `3DYBAnkeAXQWv68nEjwxZXJGobkXZchEGi4mwW6Tu7ci`
 
 ## What its skips did next (last 48h)
 A skip "ran" if the coin reached the first target (1.5x) from the skip price before a 20% drop, "dumped" if the drop came first. Sampled every 10 min, followed 6h.
-- top 10 over 25%: blocked 60, ran 10, dumped 46, flat 3, open 1 (saving losses: keep it)
+- top 10 over 25%: blocked 61, ran 10, dumped 47, flat 3, open 1 (saving losses: keep it)
   - ran: GODHOUSE up to 3.19x  
     CA `CSGTuLtWhCfGZ5S5TvASQ6a5su91NCfRpNqfPczfpump`
   - ran: KYBER up to 1.83x  
     CA `BasL6j1MNkjFyuvRRFsmbm3bKqFPr6Yg3UhShii6pump`
   - ran: WIF up to 1.67x  
     CA `E7ayy5Se6gjwCNtw9NP629AucnTgqab4SSmSxDpUpump`
-- too new / sniping: blocked 60, ran 11, dumped 47, flat 0, open 2 (saving losses: keep it)
+- too new / sniping: blocked 59, ran 11, dumped 48, flat 0, open 0 (saving losses: keep it)
   - ran: CLIPPED up to 1.65x  
     CA `Bxyp4L6EbDys4fo51qxMEQTx41sj6McnsbPZTdvipump`
   - ran: Marutaro up to 1.62x  
     CA `At3jYPUKVEFYrss5a58myVuqKLjGxMuBP5MwqMk9pump`
   - ran: MameStonk up to 1.67x  
     CA `57eJSmN1ecANrnZjGPrXzWUMyGhQsQgMS9eHdxM3pump`
-- flow below pace: blocked 50, ran 10, dumped 34, flat 3, open 3 (saving losses: keep it)
+- flow below pace: blocked 50, ran 10, dumped 35, flat 3, open 2 (saving losses: keep it)
   - ran: KOROSUKE up to 1.54x  
     CA `7ha4HFgdvkXaDcR2biCsuBpoCZzoLSRjb5we34Gbpump`
   - ran: RICO up to 1.73x  
@@ -134,7 +134,7 @@ A skip "ran" if the coin reached the first target (1.5x) from the skip price bef
     CA `6kKETm8xPeZ2z1DBYjXmxMTFAJudvGHJvRHu5Wt8uGtf`
   - ran: GTA up to 1.74x  
     CA `G6F6SYSUAUxsnKLyeRW29hE5A4BGCbw91x7HMPySpump`
-- falling knife (code): blocked 27, ran 4, dumped 22, flat 1, open 0 (saving losses: keep it)
+- falling knife (code): blocked 29, ran 4, dumped 23, flat 1, open 1 (saving losses: keep it)
   - ran: STEALTH up to 1.77x  
     CA `GoDSW31bTxfkoup9yA1qcGGx9RMXdTEWgApv3xzBmoA`
   - ran: PEACE up to 1.75x  
@@ -155,11 +155,9 @@ A skip "ran" if the coin reached the first target (1.5x) from the skip price bef
     CA `7uwr9Zoz8WW9UyRVC22nmmAXRbPoFTUpVjsN8q7kids`
   - ran: 404 up to 1.89x  
     CA `9gKArqT6qp3goHfuwAnfG7LioqwUtJ8TFu7P1Bhbpump`
-- falling knife / no higher low: blocked 14, ran 2, dumped 9, flat 3, open 0 (saving losses: keep it)
+- falling knife / no higher low: blocked 13, ran 1, dumped 9, flat 3, open 0 (saving losses: keep it)
   - ran: HEDGE up to 1.77x  
     CA `wDSAqt4tEZpDAwB9XY6ejkZvMFuT1zUMjUh67txeYhf`
-  - ran: E  up to 1.5x  
-    CA `EfRnwABuWZKxri55se639twy4jy3FRgYfri7wLJ5pump`
 - dev share over 1%: blocked 11, ran 2, dumped 5, flat 1, open 3 (saving losses: keep it)
   - ran: Firecube up to 1.88x  
     CA `Ebih1KdijjpQBaM83gUfGhRtTCpHzDkBZhCZedZwpump`
@@ -205,13 +203,13 @@ There's no positive after-cost edge yet. The 13 settled coins averaged -6.7% net
 Trencher: The movers are mostly fresh pump.fun launches (most under 2h old), and two themes run across several coins: animal and creature names (Froblin, Harriet The Badger, Hypha, GTA6CAT) and self-referential joke names (nothing ever happens, ungone, I Can't Hold Money Coin, Everything Inu). A politics-adjacent lane (dumocrats) is showing up too, and I treat that as a caution, not a theme to chase. Rising with real 5m flow: ungone ($33k mcap, $44k 5m, 59% buys, 0.1h old, +1125% 1h), Froblin ($28.5k, $22k 5m, 59% buys, 1.9h old), and E/exposure ($186k on PumpSwap, $108k 5m, 53% buys, 1.3h old). Fading: AMD (A Meme Doge) down 99% on zero 5m buys, Harriet down 95% on $4 of 5m volume, and nothing ever happens at $27 of 5m. Setups to research now: E as MIGRATED (under 12h, above $30k, 5m well above $10k, but up 193% in an hour, so holder and bundle checks come first), and ungone or Froblin only as bundle-checked curve plays with a clear exit near bond. The web's FUN, E and TWUMP figures conflict with scan_movers, so I used scan_movers; FUN shows only $2k 5m here and is not a setup. This is not a quiet market.
 
 ## Moving most in its scans, last 30 min (1h volume)
-- E : $1,443,373 1h vol, $185,999 mcap, +193% 1h  
+- E : $1,014,263 1h vol, $279,954 mcap, -41% 1h  
   CA `EfRnwABuWZKxri55se639twy4jy3FRgYfri7wLJ5pump`
+- AMC: $390,514 1h vol, $184,416 mcap, +343% 1h  
+  CA `YUduqrb8kK4p9VfV2JXyHnV4yCXBiUoKgH7znLNpump`
 - GATO: $173,587 1h vol, $10,912,012 mcap, +4% 1h  
   CA `HsprHxBRgiVaQdRf3TnKNuZZtaX9JUSPgMFdAkk6pump`
-- ONE: $145,903 1h vol, $65,971 mcap, +75% 1h  
-  CA `9xU9DLJer45mJocspDuyhFfqvSuBTYf2bLcTKcFLpump`
-- TWUMP: $145,726 1h vol, $21,978 mcap, +277% 1h  
-  CA `3DYBAnkeAXQWv68nEjwxZXJGobkXZchEGi4mwW6Tu7ci`
 - ANONVOYAGE: $122,605 1h vol, $1,379,383 mcap, -25% 1h  
   CA `8muc9DdhqWfAPcvmEebNQCG89bLiwi12T2KtBtzVpump`
+- PUP: $103,533 1h vol, $20,313 mcap, +555% 1h  
+  CA `DyUR3ZpJj5iu8WBG7zk1YbamJE5k9afZhoM7xYCbpump`
