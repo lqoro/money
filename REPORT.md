@@ -1,13 +1,13 @@
 # Trencher live report
 
-Updated 2026-11-04T07:36:22Z (paper trading, never real money)
+Updated 2026-11-04T07:51:26Z (paper trading, never real money)
 
 - Equity: $74.23 (-25.8% vs $100 start)
 - Closed trades: 22, 3 wins
 - Fees paid: $14.78 (axiom $2.81, network $9.18, pool $2.66), plus $4.15 lost to slippage
 - New trades: WATCH-ONLY (scans and decides, buys nothing)
-- Brain: subscription, claude-haiku-5-5 for routine calls, claude-opus-5-5 for the daily review; 470 routine calls and 1 plan-limit hits in 48h
-- Watch log: 111 coins being followed, 358 filed, 0 would-buys (6h follow, sampled every 2 min)
+- Brain: subscription, claude-haiku-5-5 for routine calls, claude-opus-5-5 for the daily review; 468 routine calls and 1 plan-limit hits in 48h
+- Watch log: 111 coins being followed, 361 filed, 0 would-buys (6h follow, sampled every 2 min)
 
 ## Scorecard (after fees)
 - 22 closed, 3 won (14%), net $-25.79
@@ -73,9 +73,15 @@ Updated 2026-11-04T07:36:22Z (paper trading, never real money)
   CA `H4gHnZ3NCU7Z9XQwGX6YYJNyieGEW8pqwGRUcdSxpump`
 
 ## Last scan
-- 07:36Z: 3 coins, 2 with pairs, 0 passed the market filters, 0 researched
+- 07:50Z: 5 coins, 4 with pairs, 1 passed the market filters, 1 researched
 
 ## Coins it looked at, and why it passed
+- 07:50Z CHILLCATS (MIGRATED, $112,375 mcap, $22,214 5m vol): PASS at conviction 2, PASS: CHILLCATS is 75% off its $442k peak with no printed higher low, the theme runs at 0.66x pace, and the site is 2 days old. Falling knife in a 27-copy field (V1, V3, V6).  
+  CA `4BCbx4hB1XPmC5mLHsFyHEghC5fb9Afu7THLGXiHpump`
+- 07:48Z RAM (FINAL_STRETCH, $22,057 mcap, $10,133 5m vol): REJECT, RugCheck danger: Creator history of rugged tokens  
+  CA `72QNkZqiTBsq5dvn4DEwaC5qBPDkc7SZJ38xXy4jpump`
+- 07:43Z Transinu (MIGRATED, $128,701 mcap, $75,480 5m vol): PASS at conviction 3, PASS: chasing a spike. Transinu is 12 minutes old, 2.8% off a high it printed 6 minutes ago, up 28.7% on the last 5m candle, with 5m volume at 4.6x pace. No printed higher low, no catalyst, and 21 copies on the ticker. Blocker: "chasing spike" (V1, V6).  
+  CA `5ZndeMaC36YapnG4UpXsFg2DXDquHw6xEpBXGfmfpump`
 - 07:35Z ANONVOYAGE (MIGRATED, $590,217 mcap, $5,820 5m vol): REJECT, Bundles: 10 linked wallet cluster(s) hold 50.3% of supply (>20%) (V17)  
   CA `8muc9DdhqWfAPcvmEebNQCG89bLiwi12T2KtBtzVpump`
 - 07:34Z CHICKPOT (MIGRATED, $792,034 mcap, $15,505 5m vol): PASS at conviction 3, PASS: flow 0.92x pace, no printed higher low near entry, and it's a bottom-type buy with no catalyst. Blockers: "flow below pace", "mid-range", "dead story". (V1, V3, V6)  
@@ -90,51 +96,45 @@ Updated 2026-11-04T07:36:22Z (paper trading, never real money)
   CA `FrSrp9P3bgiFHwr6h5PQHVh55iC8Dae4eZCKPUo9pump`
 - 07:17Z VI (MIGRATED, $407,496 mcap, $4,524 5m vol): PASS at conviction 3, PASS: not the vamp-field leader, no printed higher low, and the site's domain is 7 hours old. Blockers: "split crowd" and "no higher low." (V1, V3, V13)  
   CA `FpWWSqLNrjTTMDM41EXkvBmHBDkNdWrf9RwHL57xpump`
-- 07:13Z Dacity (MIGRATED, $7,494,681 mcap, $4,945 5m vol): REJECT, Bundles: 10 linked wallet cluster(s) hold 24.0% of supply (>20%) (V17)  
-  CA `nxPqZ4F7ux8Vph5NFu25rEP6Kx9Gr1U6Fmj36Rjpump`
-- 07:11Z AMD (DIP, $1,344,548 mcap, $2,938 5m vol): REJECT, Dip with fading attention is a falling knife, not a dip (5m at 0.37x the hour's pace, under 0.6x)  
-  CA `DDmGnuvroxVrb7CSyjYcezFU8gnAfhKasg4ZZezmpump`
-- 07:08Z Spacecoin (MIGRATED, $36,846 mcap, $2,122 5m vol): PASS at conviction 3, PASS: Spacecoin is about a minute old, one of ten same-name copies, with no printed higher low and no catalyst. Blocker "too new". Let it prove a base. (V1, V3, V6)  
-  CA `5XsGvzqH1V5o7G6eTtQkb442AHisDjTuVULt5oHCpump`
 
 ## What its skips did next (last 48h)
 A skip "ran" if the coin reached the first target (1.5x) from the skip price before a 20% drop, "dumped" if the drop came first. Sampled every 10 min, followed 6h.
-- too new / sniping: blocked 65, ran 13, dumped 52, flat 0, open 0 (saving losses: keep it)
+- too new / sniping: blocked 66, ran 13, dumped 52, flat 0, open 1 (saving losses: keep it)
   - ran: CLIPPED up to 1.65x  
     CA `Bxyp4L6EbDys4fo51qxMEQTx41sj6McnsbPZTdvipump`
   - ran: Marutaro up to 1.62x  
     CA `At3jYPUKVEFYrss5a58myVuqKLjGxMuBP5MwqMk9pump`
   - ran: MameStonk up to 1.67x  
     CA `57eJSmN1ecANrnZjGPrXzWUMyGhQsQgMS9eHdxM3pump`
-- top 10 over 25%: blocked 63, ran 10, dumped 49, flat 3, open 1 (saving losses: keep it)
+- top 10 over 25%: blocked 63, ran 11, dumped 49, flat 3, open 0 (saving losses: keep it)
   - ran: GODHOUSE up to 3.19x  
     CA `CSGTuLtWhCfGZ5S5TvASQ6a5su91NCfRpNqfPczfpump`
   - ran: KYBER up to 1.83x  
     CA `BasL6j1MNkjFyuvRRFsmbm3bKqFPr6Yg3UhShii6pump`
   - ran: WIF up to 1.67x  
     CA `E7ayy5Se6gjwCNtw9NP629AucnTgqab4SSmSxDpUpump`
-- flow below pace: blocked 48, ran 10, dumped 31, flat 3, open 4 (saving losses: keep it)
+- flow below pace: blocked 49, ran 10, dumped 31, flat 3, open 5 (saving losses: keep it)
   - ran: KOROSUKE up to 1.54x  
     CA `7ha4HFgdvkXaDcR2biCsuBpoCZzoLSRjb5we34Gbpump`
   - ran: CAPY up to 1.51x  
     CA `DBPTU2oKLDHXQjAEJ3rZi8bUGmt2uxUbipgg6xmXoMqr`
   - ran: ZERO up to 1.61x  
     CA `Aes6XNH9BboLZuchD5PnDwaX6Zj1nU79TU3gNtPEpump`
-- near the high / chasing: blocked 38, ran 3, dumped 31, flat 3, open 1 (saving losses: keep it)
+- near the high / chasing: blocked 37, ran 3, dumped 30, flat 3, open 1 (saving losses: keep it)
   - ran: underdog up to 1.64x  
     CA `BZXh2LcnNNyypxsdfVeFzXawqmoGoSShC5i4NEQQpump`
   - ran: LUCIA up to 1.83x  
     CA `Cbtnpg6SL9jvZxtZTYYFPtVQXkuuqSUxCU5aXeTkpump`
   - ran: AMD up to 2.02x  
     CA `3MfZ4URVxmB4mfPuy4AxUxpcC5U7aXe7TDA7XVoGpump`
-- RugCheck danger: blocked 29, ran 3, dumped 23, flat 3, open 0 (saving losses: keep it)
+- RugCheck danger: blocked 30, ran 3, dumped 23, flat 3, open 1 (saving losses: keep it)
   - ran: COLLECTOR up to 1.62x  
     CA `6kKETm8xPeZ2z1DBYjXmxMTFAJudvGHJvRHu5Wt8uGtf`
   - ran: GTA up to 1.74x  
     CA `G6F6SYSUAUxsnKLyeRW29hE5A4BGCbw91x7HMPySpump`
   - ran: Wanted up to 1.53x  
     CA `8oUGdPdyxVaCSJSZpcVZuxqoyiZAmc2Z22FsDRZ3pump`
-- falling knife (code): blocked 28, ran 2, dumped 23, flat 1, open 2 (saving losses: keep it)
+- falling knife (code): blocked 27, ran 2, dumped 22, flat 1, open 2 (saving losses: keep it)
   - ran: YES up to 1.71x  
     CA `B7Cj19ke2F8S6fazbBvGMxHYNNMYuDaAn3Sn2Zikpump`
   - ran: RATIO up to 1.51x  
@@ -142,11 +142,13 @@ A skip "ran" if the coin reached the first target (1.5x) from the skip price bef
 - bundles over the line: blocked 18, ran 1, dumped 13, flat 1, open 3 (saving losses: keep it)
   - ran: MAMESUKE up to 1.95x  
     CA `SCGBBnSwnekytGFHgyeHHxPMiN7xDxsWFGg9JgFSTNK`
-- thin 5m volume: blocked 16, ran 2, dumped 7, flat 2, open 5 (saving losses: keep it)
+- thin 5m volume: blocked 16, ran 3, dumped 8, flat 2, open 3 (saving losses: keep it)
   - ran: KIDS up to 1.73x  
     CA `7uwr9Zoz8WW9UyRVC22nmmAXRbPoFTUpVjsN8q7kids`
   - ran: 404 up to 1.89x  
     CA `9gKArqT6qp3goHfuwAnfG7LioqwUtJ8TFu7P1Bhbpump`
+  - ran: TTPRO up to 1.71x  
+    CA `FrSrp9P3bgiFHwr6h5PQHVh55iC8Dae4eZCKPUo9pump`
 - falling knife / no higher low: blocked 16, ran 2, dumped 9, flat 3, open 2 (saving losses: keep it)
   - ran: RICO up to 1.52x  
     CA `8kuQg3WivDtL85VEdw2jEmSXjYt6EEeYBATJ4DtQpump`
@@ -199,13 +201,13 @@ There's no positive after-cost edge yet. The 13 settled coins averaged -6.7% net
 The trenches are young and loud. Fresh launches (STARMIND 0h at $39k with $44k on 5m and 59% buys; mypin, BLOOM and TTPRO, all $9k to $55k and 2h old or less) carry most of the live flow, with 59 to 62% buys on the ones still rising. Cute animals are the steadiest lane: A Meme Dog (8.9h, $1.07M, $27k on 5m, 50% buys) and Anon Voyage (17h, 74% buys) have real volume but slow candles, while jackass and ChickPot are already down 46 to 81%. Crude shock-joke names and political satire are fading hard (CPU -98%, libtard -92% at 25% buys, jackass -81%), and I'm not touching anything political anyway. BTC "Big Titty Coin" (1,235h old, $14.7M) is a right-token problem, not a setup. Setups to research now: STARMIND, which clears the $10k 5m bar but is 0h old, so bundle and dev checks come first; mypin ($4.8k 5m) and BLOOM ($2.4k 5m) only qualify once 5m volume clears $10k with buys holding. The crawler summary's CHILLCATS, Legend of Zelda and LIBBING figures don't appear in this scan, so I'm treating scan_movers as the only source of truth.
 
 ## Moving most in its scans, last 30 min (1h volume)
+- CHILLCATS: $411,426 1h vol, $129,282 mcap, -60% 1h  
+  CA `4BCbx4hB1XPmC5mLHsFyHEghC5fb9Afu7THLGXiHpump`
+- STARMIND: $244,612 1h vol, $1,826 mcap, -96% 1h  
+  CA `Hey3e2voJQXYAo7fWSzC9XLYqcZ4TC9Dm3RCiW1tpump`
 - CHICKPOT: $201,773 1h vol, $792,034 mcap, +26% 1h  
   CA `8B6ZZAC2FQ7AJrZPz7veXJrod5t2MG1C5MZBLNbUpump`
-- STARMIND: $195,825 1h vol, $6,005 mcap, -85% 1h  
-  CA `8djG15hUCgQ3x992CqDj5YKu79Xzinw83cpULvwwpump`
+- Transinu: $197,728 1h vol, $128,701 mcap, +228% 1h  
+  CA `5ZndeMaC36YapnG4UpXsFg2DXDquHw6xEpBXGfmfpump`
 - ANONVOYAGE: $99,284 1h vol, $573,246 mcap, -3% 1h  
   CA `8muc9DdhqWfAPcvmEebNQCG89bLiwi12T2KtBtzVpump`
-- AMD: $94,445 1h vol, $1,344,548 mcap, +23% 1h  
-  CA `DDmGnuvroxVrb7CSyjYcezFU8gnAfhKasg4ZZezmpump`
-- BOW: $80,763 1h vol, $3,802 mcap, +34% 1h  
-  CA `HjUWqS5w1rtD6widqXwkbzPVFSn2qLHbXRRmNKQzpump`
