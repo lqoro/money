@@ -1,13 +1,13 @@
 # Trencher live report
 
-Updated 2026-11-04T16:27:44Z (paper trading, never real money)
+Updated 2026-11-04T16:42:49Z (paper trading, never real money)
 
 - Equity: $74.23 (-25.8% vs $100 start)
 - Closed trades: 22, 3 wins
 - Fees paid: $14.78 (axiom $2.81, network $9.18, pool $2.66), plus $4.15 lost to slippage
 - New trades: WATCH-ONLY (scans and decides, buys nothing)
-- Brain: subscription, claude-haiku-5-5 for routine calls, claude-opus-5-5 for the daily review; 484 routine calls and 1 plan-limit hits in 48h
-- Watch log: 108 coins being followed, 509 filed, 0 would-buys (6h follow, sampled every 2 min)
+- Brain: subscription, claude-haiku-5-5 for routine calls, claude-opus-5-5 for the daily review; 483 routine calls and 1 plan-limit hits in 48h
+- Watch log: 112 coins being followed, 513 filed, 0 would-buys (6h follow, sampled every 2 min)
 
 ## Scorecard (after fees)
 - 22 closed, 3 won (14%), net $-25.79
@@ -73,47 +73,47 @@ Updated 2026-11-04T16:27:44Z (paper trading, never real money)
   CA `H4gHnZ3NCU7Z9XQwGX6YYJNyieGEW8pqwGRUcdSxpump`
 
 ## Last scan
-- 16:26Z: 11 coins, 10 with pairs, 1 passed the market filters, 1 researched
+- 16:42Z: 7 coins, 5 with pairs, 0 passed the market filters, 0 researched
 
 ## Coins it looked at, and why it passed
+- 16:40Z $TAPE (MIGRATED, $205,546 mcap, $64,740 5m vol): REJECT, RugCheck danger: Creator history of rugged tokens  
+  CA `7xP2r4Vtjy5opBZjbPcCc4N7BkRhhQddqsFQDpDopump`
+- 16:38Z EMBERS (FINAL_STRETCH, $31,771 mcap, $8,983 5m vol): REJECT, RugCheck danger: Creator history of rugged tokens  
+  CA `GtcTZaFGTeF5rAyhpJYDcqjFXWaqyTsRKWSg9tMSpump`
+- 16:37Z AMD (MIGRATED, $676,297 mcap, $2,905 5m vol): PASS at conviction 2, PASS — 5m flow at 0.39x its hourly pace on $2.9k, 425 buys to 19 sells is bot-shaped, and it's a shallow pullback with no breakout. Flow below pace (V1, V6).  
+  CA `5tdWkbqhTqVyPmksqX8WVKrHbjjqmvQfrMGwZoZPpump`
+- 16:36Z DESSA (DIP, $14,729,574 mcap, $4,579 5m vol): REJECT, Dip with fading attention is a falling knife, not a dip (5m at 0.44x the hour's pace, under 0.6x)  
+  CA `npz2FhoufQ7pKqhGpaipYWacrAkidyW2yDpVWSvpump`
+- 16:34Z tremp (DIP, $65,982 mcap, $53,859 5m vol): PASS at conviction 3, PASS: no printed higher low, not the theme leader, and no catalyst on a bottom buy. Falling knife. (V1, V6)  
+  CA `82BH9WFmtsJGRCdW147cM24K6X8kAkUx2jSd2NyRLfv6`
+- 16:31Z ossuf (FINAL_STRETCH, $28,514 mcap, $16,716 5m vol): REJECT, Top 10 hold 26.7% ex-pool (>25%) (V13)  
+  CA `4p6r56BxuEDzWVschNeXVTuDvxyGdZgHBGbZ1fp5pump`
+- 16:29Z AMD (MIGRATED, $915,203 mcap, $9,362 5m vol): REJECT, Bundles: 10 linked wallet cluster(s) hold 24.2% of supply (>20%) (V17)  
+  CA `DDmGnuvroxVrb7CSyjYcezFU8gnAfhKasg4ZZezmpump`
+- 16:29Z CATPAD (MIGRATED, $146,995 mcap, $2,296 5m vol): PASS at conviction 4, PASS: CATPAD is a shallow-band breakout with no breakout. It's down 4% on 5m, not the volume leader, and has no printed higher low. Blocker "no breakout" (V1, V6).  
+  CA `2gTbp2gwH46rqExzabSyrdR3294SLwCp2rSqWDS6Sim1`
 - 16:26Z Donkey (MIGRATED, $131,199 mcap, $40,727 5m vol): REJECT, Bundles: 10 linked wallet cluster(s) hold 44.8% of supply (>20%) (V17)  
   CA `APj59xtb4dRp49bXwKSq5E1XWKLrFbtaYfoQZ9Arpump`
 - 16:24Z VI (MIGRATED, $933,299 mcap, $5,829 5m vol): PASS at conviction 3, PASS: flow below pace, no breakout, and the dog lane is fading. Saw-tooth chart on a $933k coin. (V1, V6, V13)  
   CA `FpWWSqLNrjTTMDM41EXkvBmHBDkNdWrf9RwHL57xpump`
-- 16:19Z AIB (MIGRATED, $121,338 mcap, $29,179 5m vol): PASS at conviction 3, PASS. AIB is the leader of a 15-copy same-name field, but its 5m flow is 0.37x the hourly pace and it's still a spike under 1h old. Blockers: "flow below pace", "too new", "no higher low". (V1, V6)  
-  CA `EwHV6XfuMmBirGSiDVSypVkHcw7jD7Mho1s5xGwjpump`
-- 16:18Z Donkey (MIGRATED, $70,576 mcap, $11,001 5m vol): PASS at conviction 3, PASS. Donkey is a 76.5% drawdown in a 22-coin donkey field, the 5m flow is 0.29x its hourly pace, and the candles are a saw-tooth. Blocker: flow below pace. (V1, V3, V6, V13)  
-  CA `G8Lf8uthQp5YHoswQZDRdeRxaWiUqnNFNoZ45y68pump`
-- 16:08Z FLOAT (DIP, $2,026,962 mcap, $2,552 5m vol): PASS at conviction 3, PASS — FLOAT is a DIP with the right drawdown and flow, but the theme runs at 0.89x its hourly pace and the bottom-buy gate needs 1x. Blocker: "theme volume under pace." It's also a coin I already lost on. (V1, V6)  
-  CA `Bv1a7cEj5aRnJQhMw4kRQqAFesMSd5LwcDnUzq52BMmr`
-- 16:02Z PREFIRE (MIGRATED, $53,535 mcap, $5,386 5m vol): PASS at conviction 3, PASS. Target too close: the peak is only 1.2x away and the coin is a trading-bot launch with no radar mentions. Let it come back to a printed higher low (V1, V6).  
-  CA `3vajh3wXe3EuLSXfSaCikyoCnzyhUJ3KPSoFhyAgpump`
-- 16:01Z Cryptocrat (FINAL_STRETCH, $26,694 mcap, $29,173 5m vol): PASS at conviction 2, PASS: 2.7-minute-old pump.fun coin, up 460% on 5m, in a 25-copy ticker field with no outside story. Too new, chasing, split crowd (V1, V6, V13).  
-  CA `Dy4SZ7u9waYm9LaSi9da5tiGuo8miUx1nwXzhWL4pump`
-- 15:59Z AMD (MIGRATED, $237,865 mcap, $34,988 5m vol): PASS at conviction 3, PASS: AMD is a 14-minute-old copy in a 10-coin donkey field, not the leader, and it has no printed higher low. Blockers: "too new", "split crowd", "no higher low". (V1, V3, V6)  
-  CA `6K4E5iCNikDcjAnMQYDxLnqEEixRdfoGe8oFUvkjpump`
-- 15:55Z UAV (DIP, $659,683 mcap, $2,558 5m vol): REJECT, Dip with fading attention is a falling knife, not a dip (5m at 0.06x the hour's pace, under 0.6x)  
-  CA `95kvFsVDJ5Lr4GH9Uau4dUgstft6gwnVagpKwYt2pump`
-- 15:55Z HTZ (FINAL_STRETCH, $21,572 mcap, $3,625 5m vol): PASS at conviction 2, PASS: chasing spike. HTZ is 2.5% off its high after a +56% 5m candle, with a 1h move of +477%. Top 10 at 24%, 5m flow only $3.6k, and 8 bigger same-ticker copies. Blocker: "chasing spike" (V1, V6).  
-  CA `FJYz5u3K1Dv3odTxb6mz8U2KsKVt7aMotfKQKfftJGB1`
 
 ## What its skips did next (last 48h)
 A skip "ran" if the coin reached the first target (1.5x) from the skip price before a 20% drop, "dumped" if the drop came first. Sampled every 10 min, followed 6h.
-- too new / sniping: blocked 67, ran 10, dumped 55, flat 0, open 2 (saving losses: keep it)
+- too new / sniping: blocked 67, ran 10, dumped 56, flat 0, open 1 (saving losses: keep it)
   - ran: ANSEMKIN up to 2.57x  
     CA `zD3jimD97YkcjMucBEmwZ6fUV7N4wjzz8Revkwmpump`
   - ran: Darth up to 1.76x  
     CA `7xgnrvzn6DvfdzFcpLuybg2GQwHg933Np5kMjx4qpump`
   - ran: SNOWMEI up to 1.76x  
     CA `ETVD787UcTkJqrhZMt15bVet7CQ4SDzCga7DfBm8pump`
-- top 10 over 25%: blocked 64, ran 12, dumped 49, flat 2, open 1 (saving losses: keep it)
+- top 10 over 25%: blocked 64, ran 11, dumped 50, flat 2, open 1 (saving losses: keep it)
   - ran: GODHOUSE up to 3.19x  
     CA `CSGTuLtWhCfGZ5S5TvASQ6a5su91NCfRpNqfPczfpump`
   - ran: KYBER up to 1.83x  
     CA `BasL6j1MNkjFyuvRRFsmbm3bKqFPr6Yg3UhShii6pump`
   - ran: WIF up to 1.67x  
     CA `E7ayy5Se6gjwCNtw9NP629AucnTgqab4SSmSxDpUpump`
-- flow below pace: blocked 52, ran 10, dumped 33, flat 4, open 5 (saving losses: keep it)
+- flow below pace: blocked 53, ran 11, dumped 33, flat 4, open 5 (saving losses: keep it)
   - ran: CAPY up to 1.51x  
     CA `DBPTU2oKLDHXQjAEJ3rZi8bUGmt2uxUbipgg6xmXoMqr`
   - ran: ZERO up to 1.61x  
@@ -127,20 +127,20 @@ A skip "ran" if the coin reached the first target (1.5x) from the skip price bef
     CA `Cbtnpg6SL9jvZxtZTYYFPtVQXkuuqSUxCU5aXeTkpump`
   - ran: AMD up to 2.02x  
     CA `3MfZ4URVxmB4mfPuy4AxUxpcC5U7aXe7TDA7XVoGpump`
-- RugCheck danger: blocked 28, ran 4, dumped 20, flat 3, open 1 (saving losses: keep it)
+- RugCheck danger: blocked 29, ran 4, dumped 19, flat 3, open 3 (saving losses: keep it)
   - ran: COLLECTOR up to 1.62x  
     CA `6kKETm8xPeZ2z1DBYjXmxMTFAJudvGHJvRHu5Wt8uGtf`
   - ran: GTA up to 1.74x  
     CA `G6F6SYSUAUxsnKLyeRW29hE5A4BGCbw91x7HMPySpump`
   - ran: Wanted up to 1.53x  
     CA `8oUGdPdyxVaCSJSZpcVZuxqoyiZAmc2Z22FsDRZ3pump`
-- falling knife (code): blocked 23, ran 1, dumped 21, flat 1, open 0 (saving losses: keep it)
+- falling knife (code): blocked 23, ran 1, dumped 20, flat 1, open 1 (saving losses: keep it)
   - ran: RATIO up to 1.51x  
     CA `3JdeP1VBHgRPunmjTj1D6w6ZZePwGAwjUr2tCufwpump`
 - bundles over the line: blocked 20, ran 1, dumped 15, flat 3, open 1 (saving losses: keep it)
   - ran: MAMESUKE up to 1.95x  
     CA `SCGBBnSwnekytGFHgyeHHxPMiN7xDxsWFGg9JgFSTNK`
-- falling knife / no higher low: blocked 15, ran 2, dumped 9, flat 3, open 1 (saving losses: keep it)
+- falling knife / no higher low: blocked 16, ran 2, dumped 8, flat 3, open 3 (saving losses: keep it)
   - ran: HEDGE up to 1.77x  
     CA `wDSAqt4tEZpDAwB9XY6ejkZvMFuT1zUMjUh67txeYhf`
   - ran: PREFIRE up to 1.52x  
@@ -205,7 +205,7 @@ Meta: the donkey lane is the live one. Fresh pump.fun and PumpSwap launches 0.2-
   CA `G8Lf8uthQp5YHoswQZDRdeRxaWiUqnNFNoZ45y68pump`
 - Donkey: $451,947 1h vol, $130,502 mcap, +47% 1h  
   CA `APj59xtb4dRp49bXwKSq5E1XWKLrFbtaYfoQZ9Arpump`
-- donkey: $374,572 1h vol, $2,071 mcap, -98% 1h  
+- tremp: $347,114 1h vol, $62,357 mcap, +254% 1h  
+  CA `82BH9WFmtsJGRCdW147cM24K6X8kAkUx2jSd2NyRLfv6`
+- donkey: $261,453 1h vol, $1,985 mcap, -99% 1h  
   CA `9YZ8c8v91Dn6GnS8Lxd2gBjCCoBxyyeq29CnzcPxpump`
-- AMD: $306,714 1h vol, $237,008 mcap, +437% 1h  
-  CA `6K4E5iCNikDcjAnMQYDxLnqEEixRdfoGe8oFUvkjpump`
