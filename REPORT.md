@@ -1,13 +1,13 @@
 # Trencher live report
 
-Updated 2026-11-04T15:27:20Z (paper trading, never real money)
+Updated 2026-11-04T15:42:25Z (paper trading, never real money)
 
 - Equity: $74.23 (-25.8% vs $100 start)
 - Closed trades: 22, 3 wins
 - Fees paid: $14.78 (axiom $2.81, network $9.18, pool $2.66), plus $4.15 lost to slippage
 - New trades: WATCH-ONLY (scans and decides, buys nothing)
-- Brain: subscription, claude-haiku-5-5 for routine calls, claude-opus-5-5 for the daily review; 475 routine calls and 1 plan-limit hits in 48h
-- Watch log: 100 coins being followed, 496 filed, 0 would-buys (6h follow, sampled every 2 min)
+- Brain: subscription, claude-haiku-5-5 for routine calls, claude-opus-5-5 for the daily review; 477 routine calls and 1 plan-limit hits in 48h
+- Watch log: 101 coins being followed, 499 filed, 0 would-buys (6h follow, sampled every 2 min)
 
 ## Scorecard (after fees)
 - 22 closed, 3 won (14%), net $-25.79
@@ -73,9 +73,17 @@ Updated 2026-11-04T15:27:20Z (paper trading, never real money)
   CA `H4gHnZ3NCU7Z9XQwGX6YYJNyieGEW8pqwGRUcdSxpump`
 
 ## Last scan
-- 15:27Z: 4 coins, 3 with pairs, 0 passed the market filters, 0 researched
+- 15:41Z: 3 coins, 3 with pairs, 1 passed the market filters, 1 researched
 
 ## Coins it looked at, and why it passed
+- 15:41Z Donkey (MIGRATED, $144,051 mcap, $7,441 5m vol): PASS at conviction 2, PASS: chasing a +27.5% 5m spike 7% off the high, flow at 0.47x pace, and it's not the leader of a 20-copy donkey field. Blocker: "chasing spike" plus "flow below pace" (V1, V6).  
+  CA `APj59xtb4dRp49bXwKSq5E1XWKLrFbtaYfoQZ9Arpump`
+- 15:39Z VI (DIP, $643,433 mcap, $3,686 5m vol): PASS at conviction 3, PASS: VI is a 43.6% dip in a 21 to 29 copy GTA-meta field, sitting on its hourly low with 5m flow at 0.6x its hour, the theme at 0.32x pace, and no higher low printed. Blocker: "theme volume below pace" and "no higher low" (V1, V6, V13).  
+  CA `FpWWSqLNrjTTMDM41EXkvBmHBDkNdWrf9RwHL57xpump`
+- 15:39Z donkey (MIGRATED, $269,181 mcap, $76,068 5m vol): PASS at conviction 3, PASS: chasing spike, too new, no higher low, split crowd. A donkey on a 6x candle with 22 copies is not a base. (V1, V6, V13)  
+  CA `9YZ8c8v91Dn6GnS8Lxd2gBjCCoBxyyeq29CnzcPxpump`
+- 15:33Z AIB (MIGRATED, $48,241 mcap, $56,531 5m vol): PASS at conviction 2, PASS: AIB is 5 minutes old, up 23% on 5m at 12x the hourly pace, in a 22-copy "America is back" field with no printed higher low. Too new and chasing a spike (V1, V6, V13).  
+  CA `EwHV6XfuMmBirGSiDVSypVkHcw7jD7Mho1s5xGwjpump`
 - 15:26Z LEOMAN (MIGRATED, $209,082 mcap, $4,961 5m vol): PASS at conviction 3, PASS: no breakout, mid-range, and no catalyst for this coin. A GTA-trailer meme with a 2-hour-old site that doesn't show its own CA (V3, V13).  
   CA `CPZguakzrJSPZDvyB2BY7wdk25eKFwuwtYxSPYHmpump`
 - 15:24Z WASTED (DIP, $796,312 mcap, $2,933 5m vol): REJECT, Dev holds 3.5% (>1%) (V13, V17)  
@@ -88,18 +96,10 @@ Updated 2026-11-04T15:27:20Z (paper trading, never real money)
   CA `4bhYVkScUMVYvNUDsECf9rJxGpSLCzm1GEFEnNRopump`
 - 15:19Z MBG (MIGRATED, $1,284,129 mcap, $431,448 5m vol): REJECT, Top 10 hold 29.7% ex-pool (>25%) (V13)  
   CA `HzQQyPcBZgqiarw9R8jYDqb89xLUsyHAwezk8CvEpump`
-- 15:16Z PREFIRE (FINAL_STRETCH, $29,345 mcap, $4,994 5m vol): PASS at conviction 3, PASS: 5m flow is under pace, sellers outnumber buyers after a +927% hour, and the "story" is a Telegram trading bot with no GitHub. Blocker: flow below pace / chasing spike (V1, V6, V13).  
-  CA `3vajh3wXe3EuLSXfSaCikyoCnzyhUJ3KPSoFhyAgpump`
-- 15:09Z BunThing (DIP, $36,852 mcap, $1,099 5m vol): REJECT, 5m volume $1,099 is dead (<$2,000) (V1)  
-  CA `29jQSLyMDP3y1DRkVDVi4FxyeR66p5JCMqsaifMEpump`
-- 14:58Z SWIPEY (FINAL_STRETCH, $23,846 mcap, $4,379 5m vol): PASS at conviction 2, PASS — the project's own site doesn't show this CA and the domain is about a day old. It's one of six "swipey" copies on a theme running at 0.75x pace, with no story behind it. Farm-shaped (V3, V13).  
-  CA `EV3VSC3E1cPwAaKSPaaPTmDFf463THaxNUWc54Jbpump`
-- 14:57Z AMD (DIP, $1,424,198 mcap, $4,034 5m vol): REJECT, Bundles: 10 linked wallet cluster(s) hold 22.7% of supply (>20%) (V17)  
-  CA `DDmGnuvroxVrb7CSyjYcezFU8gnAfhKasg4ZZezmpump`
 
 ## What its skips did next (last 48h)
 A skip "ran" if the coin reached the first target (1.5x) from the skip price before a 20% drop, "dumped" if the drop came first. Sampled every 10 min, followed 6h.
-- too new / sniping: blocked 64, ran 11, dumped 52, flat 0, open 1 (saving losses: keep it)
+- too new / sniping: blocked 66, ran 11, dumped 52, flat 0, open 3 (saving losses: keep it)
   - ran: KOROSUKE up to 1.54x  
     CA `7ha4HFgdvkXaDcR2biCsuBpoCZzoLSRjb5we34Gbpump`
   - ran: ANSEMKIN up to 2.57x  
@@ -113,7 +113,7 @@ A skip "ran" if the coin reached the first target (1.5x) from the skip price bef
     CA `BasL6j1MNkjFyuvRRFsmbm3bKqFPr6Yg3UhShii6pump`
   - ran: WIF up to 1.67x  
     CA `E7ayy5Se6gjwCNtw9NP629AucnTgqab4SSmSxDpUpump`
-- flow below pace: blocked 51, ran 11, dumped 33, flat 5, open 2 (saving losses: keep it)
+- flow below pace: blocked 52, ran 12, dumped 33, flat 5, open 2 (saving losses: keep it)
   - ran: KOROSUKE up to 1.54x  
     CA `7ha4HFgdvkXaDcR2biCsuBpoCZzoLSRjb5we34Gbpump`
   - ran: CAPY up to 1.51x  
@@ -137,10 +137,10 @@ A skip "ran" if the coin reached the first target (1.5x) from the skip price bef
 - falling knife (code): blocked 22, ran 1, dumped 19, flat 1, open 1 (saving losses: keep it)
   - ran: RATIO up to 1.51x  
     CA `3JdeP1VBHgRPunmjTj1D6w6ZZePwGAwjUr2tCufwpump`
-- bundles over the line: blocked 19, ran 1, dumped 14, flat 2, open 2 (saving losses: keep it)
+- bundles over the line: blocked 19, ran 1, dumped 14, flat 3, open 1 (saving losses: keep it)
   - ran: MAMESUKE up to 1.95x  
     CA `SCGBBnSwnekytGFHgyeHHxPMiN7xDxsWFGg9JgFSTNK`
-- thin 5m volume: blocked 15, ran 3, dumped 8, flat 2, open 2 (saving losses: keep it)
+- thin 5m volume: blocked 15, ran 3, dumped 9, flat 2, open 1 (saving losses: keep it)
   - ran: KIDS up to 1.73x  
     CA `7uwr9Zoz8WW9UyRVC22nmmAXRbPoFTUpVjsN8q7kids`
   - ran: 404 up to 1.89x  
@@ -199,11 +199,11 @@ Meta, 2026-11-04, from scan_movers: the volume and buyers are in fresh pump.fun 
 ## Moving most in its scans, last 30 min (1h volume)
 - MBG: $1,044,125 1h vol, $1,284,129 mcap, +2752% 1h  
   CA `HzQQyPcBZgqiarw9R8jYDqb89xLUsyHAwezk8CvEpump`
+- donkey: $481,429 1h vol, $269,181 mcap, +351% 1h  
+  CA `9YZ8c8v91Dn6GnS8Lxd2gBjCCoBxyyeq29CnzcPxpump`
 - RAMBO: $434,806 1h vol, $2,724,585 mcap, +225% 1h  
   CA `KMifrkYmDdAKtVXAVBEPEQxJ7qP2iLgUcfZjUZipump`
-- GATO: $122,029 1h vol, $11,073,260 mcap, -3% 1h  
-  CA `HsprHxBRgiVaQdRf3TnKNuZZtaX9JUSPgMFdAkk6pump`
-- Democat: $120,620 1h vol, $34,837 mcap, +839% 1h  
-  CA `4bhYVkScUMVYvNUDsECf9rJxGpSLCzm1GEFEnNRopump`
-- Jackass: $105,223 1h vol, $48,002 mcap, +1306% 1h  
-  CA `FaXtNnm14opBcapY2v2bGRSKCAriAmjyAEFmVdCo1Y6T`
+- Donkey: $191,011 1h vol, $152,119 mcap, +272% 1h  
+  CA `APj59xtb4dRp49bXwKSq5E1XWKLrFbtaYfoQZ9Arpump`
+- DONKEY: $128,586 1h vol, $3,504 mcap, +3% 1h  
+  CA `9izcJRdeQtuuVouHfyaqqB8TQJ4MSbbNqATpQyxJpump`
