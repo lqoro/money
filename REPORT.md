@@ -1,13 +1,13 @@
 # Trencher live report
 
-Updated 2026-11-04T12:09:46Z (paper trading, never real money)
+Updated 2026-11-04T12:24:52Z (paper trading, never real money)
 
 - Equity: $74.23 (-25.8% vs $100 start)
 - Closed trades: 22, 3 wins
 - Fees paid: $14.78 (axiom $2.81, network $9.18, pool $2.66), plus $4.15 lost to slippage
 - New trades: WATCH-ONLY (scans and decides, buys nothing)
 - Brain: subscription, claude-haiku-5-5 for routine calls, claude-opus-5-5 for the daily review; 473 routine calls and 1 plan-limit hits in 48h
-- Watch log: 97 coins being followed, 442 filed, 0 would-buys (6h follow, sampled every 2 min)
+- Watch log: 97 coins being followed, 445 filed, 0 would-buys (6h follow, sampled every 2 min)
 
 ## Scorecard (after fees)
 - 22 closed, 3 won (14%), net $-25.79
@@ -73,9 +73,15 @@ Updated 2026-11-04T12:09:46Z (paper trading, never real money)
   CA `H4gHnZ3NCU7Z9XQwGX6YYJNyieGEW8pqwGRUcdSxpump`
 
 ## Last scan
-- 12:09Z: 3 coins, 3 with pairs, 0 passed the market filters, 0 researched
+- 12:24Z: 5 coins, 4 with pairs, 0 passed the market filters, 0 researched
 
 ## Coins it looked at, and why it passed
+- 12:23Z CHILLCATS (MIGRATED, $82,617 mcap, $7,524 5m vol): REJECT, Top 10 hold 45.9% ex-pool (>25%) (V13)  
+  CA `4BCbx4hB1XPmC5mLHsFyHEghC5fb9Afu7THLGXiHpump`
+- 12:13Z GATO (MIGRATED, $10,406,536 mcap, $5,377 5m vol): REJECT, Dev holds 3.3% (>1%) (V13, V17)  
+  CA `HsprHxBRgiVaQdRf3TnKNuZZtaX9JUSPgMFdAkk6pump`
+- 12:13Z Dumocrat (MIGRATED, $135,786 mcap, $11,965 5m vol): PASS at conviction 3, PASS: 2.3% off the high, not the theme leader, and 5m flow at 0.7x pace. Chasing a candle that hasn't made a higher low yet. (V1, V6, V13)  
+  CA `3Y2TGH3AvFFEL48rZfCgtiNJZJ84Eu75akYWmhyXpump`
 - 12:07Z ANONVOYAGE (MIGRATED, $205,371 mcap, $3,934 5m vol): REJECT, Bundles: 10 linked wallet cluster(s) hold 50.3% of supply (>20%) (V17)  
   CA `8muc9DdhqWfAPcvmEebNQCG89bLiwi12T2KtBtzVpump`
 - 11:59Z brkout (no setup, $18,861 mcap, $4,107 5m vol): REJECT, No setup fits: not Final Stretch, not a migrated runner, not a healthy dip  
@@ -90,12 +96,6 @@ Updated 2026-11-04T12:09:46Z (paper trading, never real money)
   CA `DDmGnuvroxVrb7CSyjYcezFU8gnAfhKasg4ZZezmpump`
 - 11:50Z VI (MIGRATED, $998,120 mcap, $5,753 5m vol): PASS at conviction 3, PASS: target too close, flow below pace, and the chart is a saw-tooth in a 26-copy field. Clean holders don't fix that. (V1, V6, V13)  
   CA `FpWWSqLNrjTTMDM41EXkvBmHBDkNdWrf9RwHL57xpump`
-- 11:46Z Dacity (MIGRATED, $8,007,774 mcap, $5,670 5m vol): REJECT, Bundles: 10 linked wallet cluster(s) hold 24.0% of supply (>20%) (V17)  
-  CA `nxPqZ4F7ux8Vph5NFu25rEP6Kx9Gr1U6Fmj36Rjpump`
-- 11:42Z Boonthung (FINAL_STRETCH, $20,913 mcap, $20,503 5m vol): REJECT, Top 10 hold 27.2% ex-pool (>25%) (V13)  
-  CA `9HcKpJ37FcfQmXH8hRCQ9rC9ZUHxvYAWHWQpvoBFpump`
-- 11:40Z higher (MIGRATED, $45,698 mcap, $6,313 5m vol): PASS at conviction 3, PASS: 11 minutes old, up 37% on 5m, no higher low printed, and 21 copies of the same phrase. Blockers: too new, chasing spike, no higher low (V1, V6, V13).  
-  CA `6KphvjhrxCUyQAtcAYg4HDoSwsj4qfn1uP2KDEg8qPrJ`
 
 ## What its skips did next (last 48h)
 A skip "ran" if the coin reached the first target (1.5x) from the skip price before a 20% drop, "dumped" if the drop came first. Sampled every 10 min, followed 6h.
@@ -113,7 +113,7 @@ A skip "ran" if the coin reached the first target (1.5x) from the skip price bef
     CA `BasL6j1MNkjFyuvRRFsmbm3bKqFPr6Yg3UhShii6pump`
   - ran: WIF up to 1.67x  
     CA `E7ayy5Se6gjwCNtw9NP629AucnTgqab4SSmSxDpUpump`
-- flow below pace: blocked 49, ran 11, dumped 31, flat 5, open 2 (saving losses: keep it)
+- flow below pace: blocked 50, ran 11, dumped 31, flat 5, open 3 (saving losses: keep it)
   - ran: KOROSUKE up to 1.54x  
     CA `7ha4HFgdvkXaDcR2biCsuBpoCZzoLSRjb5we34Gbpump`
   - ran: CAPY up to 1.51x  
@@ -145,7 +145,7 @@ A skip "ran" if the coin reached the first target (1.5x) from the skip price bef
 - falling knife / no higher low: blocked 15, ran 1, dumped 9, flat 3, open 2 (saving losses: keep it)
   - ran: HEDGE up to 1.77x  
     CA `wDSAqt4tEZpDAwB9XY6ejkZvMFuT1zUMjUh67txeYhf`
-- thin 5m volume: blocked 14, ran 3, dumped 8, flat 2, open 1 (saving losses: keep it)
+- thin 5m volume: blocked 13, ran 3, dumped 7, flat 2, open 1 (saving losses: keep it)
   - ran: KIDS up to 1.73x  
     CA `7uwr9Zoz8WW9UyRVC22nmmAXRbPoFTUpVjsN8q7kids`
   - ran: 404 up to 1.89x  
@@ -195,13 +195,13 @@ There's no positive after-cost edge yet. The 13 settled coins averaged -6.7% net
 The meta is animal and joke-name tickers, running in two lanes. Lane one is pump.fun animal and joke tickers under an hour old (META, BunThing/Boonthung, ram). They are buy-heavy at 54-60% on $15-36k of 5m volume against $8-33k caps, which is where bundles and dumps live (V1, V13), so research only, no entry until holder and bundle checks come back clean. Lane two is older animal coins that split by direction: A Meme Dog (AMD, 14h, $1.75M, 63% buys, $8.9k 5m) and Vice Inu (VI, 11h, $1.0M, 70% buys, $5.7k 5m) are picking up buyers, while CHILLCATS is fading (-52% in 1h) and GTA6CAT ($10.5M, 37% buys) has sellers winning. The fading names (SAN -67%, MOON -69%, hope -76%) show how fragile the lane is. Setups to research: AMD and VI are the two I'd watch, but neither clears the $10k 5m bar yet (V6), so they're watch-until-volume, not buys; a probe only after 5m crosses $10k with buys holding above 60%. The crawler's narratives (Binance, referral codes, Trump, the Hunter Biden $LAPTOP coin, which is a political-figure coin and a stay-away) aren't showing up in these movers, so I'm not trading them.
 
 ## Moving most in its scans, last 30 min (1h volume)
-- Creed: $139,913 1h vol, $5,041 mcap, -86% 1h  
+- Dumocrat: $204,504 1h vol, $135,786 mcap, +243% 1h  
+  CA `3Y2TGH3AvFFEL48rZfCgtiNJZJ84Eu75akYWmhyXpump`
+- CHILLCATS: $167,306 1h vol, $82,617 mcap, +26% 1h  
+  CA `4BCbx4hB1XPmC5mLHsFyHEghC5fb9Afu7THLGXiHpump`
+- GATO: $138,432 1h vol, $10,406,536 mcap, +2% 1h  
+  CA `HsprHxBRgiVaQdRf3TnKNuZZtaX9JUSPgMFdAkk6pump`
+- Creed: $136,493 1h vol, $4,445 mcap, -85% 1h  
   CA `5iuqZtGthqTYnFVZTBHxMkXNXX31mjLsKJYy5Y8TAR9V`
-- Dacity: $98,182 1h vol, $7,999,020 mcap, +6% 1h  
-  CA `nxPqZ4F7ux8Vph5NFu25rEP6Kx9Gr1U6Fmj36Rjpump`
 - AMD: $97,000 1h vol, $1,751,044 mcap, +5% 1h  
   CA `DDmGnuvroxVrb7CSyjYcezFU8gnAfhKasg4ZZezmpump`
-- ANONVOYAGE: $94,173 1h vol, $205,371 mcap, +6% 1h  
-  CA `8muc9DdhqWfAPcvmEebNQCG89bLiwi12T2KtBtzVpump`
-- VI: $86,666 1h vol, $998,120 mcap, +5% 1h  
-  CA `FpWWSqLNrjTTMDM41EXkvBmHBDkNdWrf9RwHL57xpump`
