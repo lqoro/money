@@ -1,13 +1,13 @@
 # Trencher live report
 
-Updated 2026-11-04T21:30:09Z (paper trading, never real money)
+Updated 2026-11-04T21:45:55Z (paper trading, never real money)
 
 - Equity: $74.23 (-25.8% vs $100 start)
 - Closed trades: 22, 3 wins
 - Fees paid: $14.78 (axiom $2.81, network $9.18, pool $2.66), plus $4.15 lost to slippage
 - New trades: WATCH-ONLY (scans and decides, buys nothing)
-- Brain: subscription, claude-haiku-5-5 for routine calls, claude-opus-5-5 for the daily review; 493 routine calls and 1 plan-limit hits in 48h
-- Watch log: 126 coins being followed, 596 filed, 0 would-buys (6h follow, sampled every 2 min)
+- Brain: subscription, claude-haiku-5-5 for routine calls, claude-opus-5-5 for the daily review; 495 routine calls and 1 plan-limit hits in 48h
+- Watch log: 124 coins being followed, 602 filed, 0 would-buys (6h follow, sampled every 2 min)
 
 ## Scorecard (after fees)
 - 22 closed, 3 won (14%), net $-25.79
@@ -73,9 +73,17 @@ Updated 2026-11-04T21:30:09Z (paper trading, never real money)
   CA `H4gHnZ3NCU7Z9XQwGX6YYJNyieGEW8pqwGRUcdSxpump`
 
 ## Last scan
-- 21:29Z: 3 coins, 3 with pairs, 0 passed the market filters, 0 researched
+- 21:45Z: 2 coins, 2 with pairs, 1 passed the market filters, 1 researched
 
 ## Coins it looked at, and why it passed
+- 21:45Z VI (MIGRATED, $314,603 mcap, $5,207 5m vol): PASS at conviction 3, PASS. Deep dip (72% off a $1.14M high) on a fading story, with 5m flow under the $10k bar. A falling knife with a placeholder website (V1, V6, V13).  
+  CA `FpWWSqLNrjTTMDM41EXkvBmHBDkNdWrf9RwHL57xpump`
+- 21:43Z JOB (MIGRATED, $4,455,058 mcap, $7,045 5m vol): PASS at conviction 2, PASS. Flow below pace, the first resistance is 1.15x away, and the site doesn't show this CA. Eight copies of the ticker. (V1, V3, V6)  
+  CA `9Pq7aLAbhDG2tTnS22cm6kuysZVcZpLFE368HWuypump`
+- 21:36Z TAKE1 (FINAL_STRETCH, $25,344 mcap, $3,384 5m vol): PASS at conviction 2, PASS. Take1 is a 14-copy same-ticker field with $3.4k of 5m volume, 0.1x its theme's pace, and a site that doesn't show this CA. Blocker: thin 5m volume and no live story. (V1, V6, V13)  
+  CA `BT3fJYBgfKbsWrrvCQtgnSw37pxtZcAv7AK6jkSepump`
+- 21:30Z AMD (MIGRATED, $904,180 mcap, $3,594 5m vol): PASS at conviction 3, PASS: the holders are clean, but the story is fading, 5m flow is $3.6k, and 12 copies share the ticker. Blocker: "bottom buy, theme fading." (V1, V6, V13)  
+  CA `5tdWkbqhTqVyPmksqX8WVKrHbjjqmvQfrMGwZoZPpump`
 - 21:28Z ABTC (MIGRATED, $104,710 mcap, $14,302 5m vol): PASS at conviction 3, PASS. Copy of the ABTC theme, not the leader, and 5m flow is at 0.21x its hourly pace. Blocker: "split crowd" (V1, V3).  
   CA `DRVhtx9ktSecBXRVD35RkQQHo8ugcSz9gYmxjevnpump`
 - 21:25Z GTA (MIGRATED, $2,087,489 mcap, $9,981 5m vol): PASS at conviction 2, PASS. Flow below pace (0.12x the hour), 5m volume under $10k, and the theme is dying. Spike with no base. (V1, V6)  
@@ -88,32 +96,24 @@ Updated 2026-11-04T21:30:09Z (paper trading, never real money)
   CA `FK5tP4Zw7ujWzaz3TgeJ5NcqGe5LFufo7m6zH6YQpump`
 - 21:13Z RICO (DIP, $283,678 mcap, $2,627 5m vol): PASS, PASS — brain unavailable, not trading blind.  
   CA `8kuQg3WivDtL85VEdw2jEmSXjYt6EEeYBATJ4DtQpump`
-- 21:07Z GATO (MIGRATED, $10,783,658 mcap, $2,950 5m vol): REJECT, Dev holds 3.3% (>1%) (V13, V17)  
-  CA `HsprHxBRgiVaQdRf3TnKNuZZtaX9JUSPgMFdAkk6pump`
-- 21:07Z MOAN (DIP, $60,939 mcap, $3,712 5m vol): REJECT, RugCheck danger: Large Amount of LP Unlocked 100.00%  
-  CA `AUcqE7gYFL6grKmFGK9LyxBvZyeYoZrzb41prA8qpump`
-- 21:04Z Aren (MIGRATED, $71,890 mcap, $64,787 5m vol): PASS at conviction 3, PASS: a 4.5-minute-old copy in a 26-coin "Against All Odds" vamp field, not the leader, and up 73% in one 5-minute candle with no higher low. Blockers: too new, chasing spike, split crowd (V1, V3, V6).  
-  CA `E4brwTWpx8anGcsJ11REmwcP149UD1yfwyCRYEQppump`
-- 20:59Z VI (DIP, $343,220 mcap, $4,112 5m vol): PASS at conviction 3, PASS: deep dip on a 20-hour-old copy in a 19-coin field, with the story not rising, no catalyst found, 5m flow at $4.1k, and no printed higher low. Passing (V1, V6, V13).  
-  CA `FpWWSqLNrjTTMDM41EXkvBmHBDkNdWrf9RwHL57xpump`
 
 ## What its skips did next (last 48h)
 A skip "ran" if the coin reached the first target (1.5x) from the skip price before a 20% drop, "dumped" if the drop came first. Sampled every 10 min, followed 6h.
-- top 10 over 25%: blocked 69, ran 12, dumped 54, flat 1, open 2 (saving losses: keep it)
+- top 10 over 25%: blocked 69, ran 12, dumped 55, flat 1, open 1 (saving losses: keep it)
   - ran: KYBER up to 1.83x  
     CA `BasL6j1MNkjFyuvRRFsmbm3bKqFPr6Yg3UhShii6pump`
   - ran: WIF up to 1.67x  
     CA `E7ayy5Se6gjwCNtw9NP629AucnTgqab4SSmSxDpUpump`
   - ran: j*b up to 1.97x  
     CA `7uHBhrdN1UNf1vggnvoZMHVA6Du4NQe2USP2oMnYpump`
-- too new / sniping: blocked 64, ran 9, dumped 54, flat 1, open 0 (saving losses: keep it)
+- too new / sniping: blocked 63, ran 9, dumped 53, flat 1, open 0 (saving losses: keep it)
   - ran: Darth up to 1.76x  
     CA `7xgnrvzn6DvfdzFcpLuybg2GQwHg933Np5kMjx4qpump`
   - ran: SNOWMEI up to 1.76x  
     CA `ETVD787UcTkJqrhZMt15bVet7CQ4SDzCga7DfBm8pump`
   - ran: GTAVI up to 2.31x  
     CA `HekahVohmeokPUhscg5taNme3Qs2fcSQoNgEeUPMpump`
-- flow below pace: blocked 55, ran 10, dumped 35, flat 4, open 6 (saving losses: keep it)
+- flow below pace: blocked 55, ran 12, dumped 36, flat 4, open 3 (saving losses: keep it)
   - ran: ZERO up to 1.61x  
     CA `Aes6XNH9BboLZuchD5PnDwaX6Zj1nU79TU3gNtPEpump`
   - ran: Wanted up to 1.53x  
@@ -127,7 +127,7 @@ A skip "ran" if the coin reached the first target (1.5x) from the skip price bef
     CA `Cbtnpg6SL9jvZxtZTYYFPtVQXkuuqSUxCU5aXeTkpump`
   - ran: AMD up to 2.02x  
     CA `3MfZ4URVxmB4mfPuy4AxUxpcC5U7aXe7TDA7XVoGpump`
-- RugCheck danger: blocked 26, ran 4, dumped 17, flat 2, open 3 (saving losses: keep it)
+- RugCheck danger: blocked 26, ran 5, dumped 17, flat 2, open 2 (saving losses: keep it)
   - ran: Wanted up to 1.53x  
     CA `8oUGdPdyxVaCSJSZpcVZuxqoyiZAmc2Z22FsDRZ3pump`
   - ran: RAM up to 1.63x  
@@ -213,9 +213,9 @@ Setups to research, no entry: ABTC and Ourcoin first, Against All Odds only if i
   CA `7F8BkfhPaDGMeNkaYeVa99WAqo86LpXDKsLQXpM7pump`
 - ABTC: $824,171 1h vol, $98,119 mcap, +161% 1h  
   CA `DRVhtx9ktSecBXRVD35RkQQHo8ugcSz9gYmxjevnpump`
-- Aren: $769,955 1h vol, $13,445 mcap, -64% 1h  
+- Aren: $668,244 1h vol, $10,011 mcap, -85% 1h  
   CA `HkyNkVXpJWg1H7hAWjnSW58J22Cx7gnWwUHhFtf5pump`
 - ABTC: $239,668 1h vol, $178,155 mcap, +347% 1h  
   CA `ERs7y4nMGLFVmHcXyDxiS7iDKpp4jWHz2VUuE2gxpump`
-- DESSA: $201,103 1h vol, $19,926,846 mcap, +14% 1h  
-  CA `npz2FhoufQ7pKqhGpaipYWacrAkidyW2yDpVWSvpump`
+- OUR: $112,864 1h vol, $3,468 mcap, -4% 1h  
+  CA `Dcht3Y7BBykVGzcACrBTRriYmGMKisgEMTXJxUY3pump`
