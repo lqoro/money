@@ -1,13 +1,13 @@
 # Trencher live report
 
-Updated 2026-11-04T22:46:53Z (paper trading, never real money)
+Updated 2026-11-04T23:02:22Z (paper trading, never real money)
 
 - Equity: $74.23 (-25.8% vs $100 start)
 - Closed trades: 22, 3 wins
 - Fees paid: $14.78 (axiom $2.81, network $9.18, pool $2.66), plus $4.15 lost to slippage
 - New trades: WATCH-ONLY (scans and decides, buys nothing)
-- Brain: subscription, claude-haiku-5-5 for routine calls, claude-opus-5-5 for the daily review; 496 routine calls and 1 plan-limit hits in 48h
-- Watch log: 120 coins being followed, 625 filed, 0 would-buys (6h follow, sampled every 2 min)
+- Brain: subscription, claude-haiku-5-5 for routine calls, claude-opus-5-5 for the daily review; 500 routine calls and 1 plan-limit hits in 48h
+- Watch log: 120 coins being followed, 631 filed, 0 would-buys (6h follow, sampled every 2 min)
 
 ## Scorecard (after fees)
 - 22 closed, 3 won (14%), net $-25.79
@@ -73,9 +73,21 @@ Updated 2026-11-04T22:46:53Z (paper trading, never real money)
   CA `H4gHnZ3NCU7Z9XQwGX6YYJNyieGEW8pqwGRUcdSxpump`
 
 ## Last scan
-- 22:45Z: 6 coins, 6 with pairs, 2 passed the market filters, 2 researched
+- 23:01Z: 9 coins, 9 with pairs, 1 passed the market filters, 1 researched
 
 ## Coins it looked at, and why it passed
+- 23:02Z Democat (MIGRATED, $564,520 mcap, $2,350 5m vol): PASS at conviction 2, PASS: Democat is a thin, fading cat-meta copy with 5m flow at 0.05x its hourly pace, a site that still says TBA, and no printed higher low. Blockers: flow below pace, no higher low, theme pace 0.17x. (V1, V6, V13)  
+  CA `9Y1F6dZ6HpjZDYZdYuUGwMbkUiPsyU7WPTqTQU4Tpump`
+- 23:01Z WASTED (DIP, $663,006 mcap, $2,838 5m vol): PASS at conviction 3, PASS: dead story. A dev-ran CTO with no catalyst, off the radar, in a 20-copy field. Blocker: "no catalyst" on a bottom buy. (V1, V6, V13)  
+  CA `GexThZHgaswpAQ7Fi8QrHFubjPimUNSYhJiAA7XZpump`
+- 22:56Z GTA (MIGRATED, $2,513,636 mcap, $11,481 5m vol): PASS at conviction 3, PASS: blocker "flow below pace". 5m is 0.65x the hourly pace, and the theme is at 0.65x too. The bottom-buy rule also fails on theme volume and catalyst. (V1, V6)  
+  CA `7F8BkfhPaDGMeNkaYeVa99WAqo86LpXDKsLQXpM7pump`
+- 22:53Z clippy (FINAL_STRETCH, $24,429 mcap, $26,316 5m vol): REJECT, Top 10 hold 27.7% ex-pool (>25%) (V13)  
+  CA `33CW4Q8xLSBYKmA55rQfEWPA8DSGVwSRQfo2pSs1pump`
+- 22:52Z FED (MIGRATED, $34,802 mcap, $3,980 5m vol): PASS at conviction 3, PASS: flow below pace, no higher low, and FED is a copy in a 25-coin cat field led by Sasha. Not the leader. (V1, V6, V13)  
+  CA `88JgZHVfWtdfhXqZbgb4ZniwSQ3UWnGh2Qv882mxmece`
+- 22:48Z Sasha (MIGRATED, $51,704 mcap, $5,945 5m vol): REJECT, Top 10 hold 26.3% ex-pool (>25%) (V13)  
+  CA `5ooMWLgkiCHR5tSgcU9b43ESwwY3qXXWoxLC4Q6gPmoT`
 - 22:46Z GHOST (MIGRATED, $235,507 mcap, $6,317 5m vol): PASS at conviction 3, PASS: target too close. The first resistance (the $306k peak) is only about 1.3x away, and 5m sells are running ahead of buys. Vamp field, no printed higher low. (V1, V6)  
   CA `42qKoGmEPTRJsa5jWrYwpydL8RkBwMvg2ykYVoerpump`
 - 22:46Z SLOP (MIGRATED, $119,452 mcap, $31,267 5m vol): PASS at conviction 3, PASS: flow below pace (5m at 0.2x the hour, theme at 0.18x), drawdown 72% is past the 70% DIP max, and 13 same-ticker copies split the crowd. Blocker: "flow below pace". (V1, V6)  
@@ -84,36 +96,24 @@ Updated 2026-11-04T22:46:53Z (paper trading, never real money)
   CA `HsprHxBRgiVaQdRf3TnKNuZZtaX9JUSPgMFdAkk6pump`
 - 22:31Z VI (DIP, $349,660 mcap, $5,781 5m vol): PASS at conviction 4, PASS — Vice Inu is a 69% dip with a real catalyst 15 days out, but the story is fading on the radar, the 5m is under $10k, the domain is under a day old, and the bottom-buy gate needs a rising narrative. Blocker: "narrative not rising" (V1, V13).  
   CA `FpWWSqLNrjTTMDM41EXkvBmHBDkNdWrf9RwHL57xpump`
-- 22:29Z GDA (FINAL_STRETCH, $28,554 mcap, $36,621 5m vol): REJECT, Top 10 hold 25.7% ex-pool (>25%) (V13)  
-  CA `F1FiJdqfUzEx8BtfdSCRwGwrKBAZHJs6JkNEfVYYpump`
-- 22:28Z JOB (MIGRATED, $3,593,465 mcap, $5,518 5m vol): PASS at conviction 3, PASS: flow below pace, no printed higher low, and a bottom buy on a theme the radar doesn't name. It's a copy in an 8-coin vamp field. (V1, V6, V13)  
-  CA `9Pq7aLAbhDG2tTnS22cm6kuysZVcZpLFE368HWuypump`
-- 22:26Z nuLL (DIP, $134,710 mcap, $11,128 5m vol): REJECT, Dev holds 5.2% (>1%) (V13, V17)  
-  CA `A72sK9mPWTvU4f5RQFy7upBCeJi9HZx3Q2Wgr7QBnuLL`
-- 22:26Z MSFT (MIGRATED, $35,931 mcap, $12,335 5m vol): PASS at conviction 2, PASS: "Microsoft" (MSFT) is down 47% from a $68k peak in 11 minutes, with no printed higher low and no story on the radar. Too new, falling knife (V1, V6).  
-  CA `CggrqcmnVyppSAgyaVMDPrESybPHhq9dZgVV788Vpump`
-- 22:19Z RICO (DIP, $227,828 mcap, $2,388 5m vol): PASS, PASS — brain unavailable, not trading blind.  
-  CA `8kuQg3WivDtL85VEdw2jEmSXjYt6EEeYBATJ4DtQpump`
-- 22:17Z AMD (MIGRATED, $899,041 mcap, $5,344 5m vol): PASS at conviction 3, PASS — bottom buy on a theme running at 0.82x its hourly pace, no catalyst, no printed higher low, and it's one of 10 same-ticker copies. Blocker: "theme volume below pace." (V1, V6, V13)  
-  CA `5tdWkbqhTqVyPmksqX8WVKrHbjjqmvQfrMGwZoZPpump`
 
 ## What its skips did next (last 48h)
 A skip "ran" if the coin reached the first target (1.5x) from the skip price before a 20% drop, "dumped" if the drop came first. Sampled every 10 min, followed 6h.
-- top 10 over 25%: blocked 68, ran 13, dumped 53, flat 1, open 1 (saving losses: keep it)
+- top 10 over 25%: blocked 70, ran 13, dumped 53, flat 1, open 3 (saving losses: keep it)
   - ran: KYBER up to 1.83x  
     CA `BasL6j1MNkjFyuvRRFsmbm3bKqFPr6Yg3UhShii6pump`
   - ran: WIF up to 1.67x  
     CA `E7ayy5Se6gjwCNtw9NP629AucnTgqab4SSmSxDpUpump`
   - ran: j*b up to 1.97x  
     CA `7uHBhrdN1UNf1vggnvoZMHVA6Du4NQe2USP2oMnYpump`
-- too new / sniping: blocked 64, ran 9, dumped 54, flat 1, open 0 (saving losses: keep it)
+- too new / sniping: blocked 63, ran 9, dumped 53, flat 1, open 0 (saving losses: keep it)
   - ran: SNOWMEI up to 1.76x  
     CA `ETVD787UcTkJqrhZMt15bVet7CQ4SDzCga7DfBm8pump`
   - ran: GTAVI up to 2.31x  
     CA `HekahVohmeokPUhscg5taNme3Qs2fcSQoNgEeUPMpump`
   - ran: PEPTDOG up to 1.88x  
     CA `GExwMYa2tnJwGfKTmzR4ERiQKptfNceN9GTXc82Lpump`
-- flow below pace: blocked 55, ran 10, dumped 37, flat 4, open 4 (saving losses: keep it)
+- flow below pace: blocked 56, ran 11, dumped 36, flat 4, open 5 (saving losses: keep it)
   - ran: Wanted up to 1.53x  
     CA `8oUGdPdyxVaCSJSZpcVZuxqoyiZAmc2Z22FsDRZ3pump`
   - ran: METEORITE up to 1.58x  
@@ -134,7 +134,7 @@ A skip "ran" if the coin reached the first target (1.5x) from the skip price bef
     CA `72QNkZqiTBsq5dvn4DEwaC5qBPDkc7SZJ38xXy4jpump`
   - ran: $LIBCOIN up to 1.54x  
     CA `2UxjHoidyefQxJrCS8qT23JsbqKFcpPCa8ywBYZupump`
-- falling knife (code): blocked 22, ran 3, dumped 19, flat 0, open 0 (saving losses: keep it)
+- falling knife (code): blocked 21, ran 3, dumped 18, flat 0, open 0 (saving losses: keep it)
   - ran: DESSA up to 1.54x  
     CA `npz2FhoufQ7pKqhGpaipYWacrAkidyW2yDpVWSvpump`
   - ran: RATIO up to 1.51x  
@@ -144,18 +144,18 @@ A skip "ran" if the coin reached the first target (1.5x) from the skip price bef
 - bundles over the line: blocked 19, ran 1, dumped 15, flat 3, open 0 (saving losses: keep it)
   - ran: MAMESUKE up to 1.95x  
     CA `SCGBBnSwnekytGFHgyeHHxPMiN7xDxsWFGg9JgFSTNK`
+- thin 5m volume: blocked 16, ran 4, dumped 9, flat 1, open 2 (saving losses: keep it)
+  - ran: DESSA up to 1.54x  
+    CA `npz2FhoufQ7pKqhGpaipYWacrAkidyW2yDpVWSvpump`
+  - ran: 404 up to 1.89x  
+    CA `9gKArqT6qp3goHfuwAnfG7LioqwUtJ8TFu7P1Bhbpump`
+  - ran: MEOWNERO up to 1.76x  
+    CA `6gnB2H2hbTVvKUWCzNuqjWY8Rod6EVBmfHi7YxZpTWa7`
 - falling knife / no higher low: blocked 16, ran 3, dumped 9, flat 2, open 2 (saving losses: keep it)
   - ran: DESSA up to 1.54x  
     CA `npz2FhoufQ7pKqhGpaipYWacrAkidyW2yDpVWSvpump`
   - ran: HEDGE up to 1.77x  
     CA `wDSAqt4tEZpDAwB9XY6ejkZvMFuT1zUMjUh67txeYhf`
-  - ran: MEOWNERO up to 1.76x  
-    CA `6gnB2H2hbTVvKUWCzNuqjWY8Rod6EVBmfHi7YxZpTWa7`
-- thin 5m volume: blocked 15, ran 4, dumped 9, flat 1, open 1 (saving losses: keep it)
-  - ran: DESSA up to 1.54x  
-    CA `npz2FhoufQ7pKqhGpaipYWacrAkidyW2yDpVWSvpump`
-  - ran: 404 up to 1.89x  
-    CA `9gKArqT6qp3goHfuwAnfG7LioqwUtJ8TFu7P1Bhbpump`
   - ran: MEOWNERO up to 1.76x  
     CA `6gnB2H2hbTVvKUWCzNuqjWY8Rod6EVBmfHi7YxZpTWa7`
 - other: blocked 14, ran 4, dumped 8, flat 1, open 1 (saving losses: keep it)
@@ -207,11 +207,11 @@ Meta right now is cat coins plus Bitcoin/satoshi names, mostly launched in the l
 ## Moving most in its scans, last 30 min (1h volume)
 - SLOP: $1,936,328 1h vol, $146,412 mcap, +279% 1h  
   CA `6z3cf9nDuxdA9xyccx8m8SonWdZGH5s9kbqAeaV5gajt`
-- Democat: $780,206 1h vol, $548,624 mcap, +954% 1h  
+- Democat: $517,399 1h vol, $557,004 mcap, +41% 1h  
   CA `9Y1F6dZ6HpjZDYZdYuUGwMbkUiPsyU7WPTqTQU4Tpump`
-- PHIL: $127,842 1h vol, $12,573 mcap, +19% 1h  
-  CA `6X6E4frRadiUEcVqUKTyUVS2FhGmwN359TocEaHXtBX5`
-- JOB: $103,431 1h vol, $3,593,465 mcap, -18% 1h  
-  CA `9Pq7aLAbhDG2tTnS22cm6kuysZVcZpLFE368HWuypump`
-- PI: $102,592 1h vol, $6,179 mcap, -86% 1h  
-  CA `G4bjr2e9BwqkPxfjUfpsk3B8ySvNYq4rBu2RrQMJpump`
+- Sasha: $380,944 1h vol, $52,659 mcap, -11% 1h  
+  CA `5ooMWLgkiCHR5tSgcU9b43ESwwY3qXXWoxLC4Q6gPmoT`
+- GTA: $213,866 1h vol, $2,531,237 mcap, -6% 1h  
+  CA `7F8BkfhPaDGMeNkaYeVa99WAqo86LpXDKsLQXpM7pump`
+- AMC: $181,780 1h vol, $4,406 mcap, -89% 1h  
+  CA `A4U3vQSiF6cG7uEgKViYk2KVBsfJAHM4kqD9Us5fpump`
