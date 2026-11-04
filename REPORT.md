@@ -1,13 +1,13 @@
 # Trencher live report
 
-Updated 2026-11-04T09:08:03Z (paper trading, never real money)
+Updated 2026-11-04T09:23:07Z (paper trading, never real money)
 
 - Equity: $74.23 (-25.8% vs $100 start)
 - Closed trades: 22, 3 wins
 - Fees paid: $14.78 (axiom $2.81, network $9.18, pool $2.66), plus $4.15 lost to slippage
 - New trades: WATCH-ONLY (scans and decides, buys nothing)
 - Brain: subscription, claude-haiku-5-5 for routine calls, claude-opus-5-5 for the daily review; 471 routine calls and 1 plan-limit hits in 48h
-- Watch log: 109 coins being followed, 384 filed, 0 would-buys (6h follow, sampled every 2 min)
+- Watch log: 107 coins being followed, 389 filed, 0 would-buys (6h follow, sampled every 2 min)
 
 ## Scorecard (after fees)
 - 22 closed, 3 won (14%), net $-25.79
@@ -73,9 +73,15 @@ Updated 2026-11-04T09:08:03Z (paper trading, never real money)
   CA `H4gHnZ3NCU7Z9XQwGX6YYJNyieGEW8pqwGRUcdSxpump`
 
 ## Last scan
-- 09:07Z: 7 coins, 6 with pairs, 0 passed the market filters, 0 researched
+- 09:22Z: 2 coins, 2 with pairs, 0 passed the market filters, 0 researched
 
 ## Coins it looked at, and why it passed
+- 09:21Z CHILLCATS (DIP, $165,991 mcap, $12,083 5m vol): PASS at conviction 4, PASS: CHILLCATS is a clean-holder flow leader in a 28-copy cat field, but it has no printed higher low, the first resistance is about 1.14x away, and the theme is not carrying enough volume to back a bottom buy. Mid-range. Let it come to us (V1, V6, V13).  
+  CA `4BCbx4hB1XPmC5mLHsFyHEghC5fb9Afu7THLGXiHpump`
+- 09:18Z Doge (FINAL_STRETCH, $32,739 mcap, $21,434 5m vol): PASS at conviction 2, PASS. Doge party is up 629% in an hour, 12 minutes old, and its last 5m candle is +94%. That's a spike, not a pullback, and it sits in the $33k zone where most new pairs die (V1, V6).  
+  CA `9CRbVZxQshb9dMkh3yGvyARJRAHMGVuxiQRGhUsppump`
+- 09:14Z POOLS (MIGRATED, $53,446 mcap, $29,790 5m vol): PASS at conviction 2, PASS: POOLS sits 9% off a 37-minute-old peak after a -27% 5m candle, inside a 17-copy same-name field with a 6.3% bundle cluster. Blocker: chasing / split crowd / no higher low.  
+  CA `Fu9n4TS5QkEKzMW66djz6T6fUspAbTuYsb7gcHSApump`
 - 09:06Z ANONVOYAGE (MIGRATED, $481,593 mcap, $5,256 5m vol): REJECT, Bundles: 10 linked wallet cluster(s) hold 50.3% of supply (>20%) (V17)  
   CA `8muc9DdhqWfAPcvmEebNQCG89bLiwi12T2KtBtzVpump`
 - 09:01Z CHATBLT (MIGRATED, $75,637 mcap, $4,407 5m vol): REJECT, Bundles: 10 linked wallet cluster(s) hold 100.0% of supply (>20%) (V17)  
@@ -90,23 +96,17 @@ Updated 2026-11-04T09:08:03Z (paper trading, never real money)
   CA `nxPqZ4F7ux8Vph5NFu25rEP6Kx9Gr1U6Fmj36Rjpump`
 - 08:42Z SI (FINAL_STRETCH, $28,627 mcap, $22,980 5m vol): PASS at conviction 3, PASS: chasing a 16-minute spike with its first resistance 1.15x away, inside a 14-copy space-inu field whose story already printed and died once (SIS). Blocker: "target too close" (V1, V6).  
   CA `5rZFiPbTz2AhZfQjSPo8BSEdPRsmtsf2tAVty13Ppump`
-- 08:36Z CHILLCATS (DIP, $177,142 mcap, $14,065 5m vol): PASS at conviction 3, PASS: CHILLCATS is a clean-holder DIP, but the crowd is leaving its cat theme and 5m flow is under the 0.7x gate. Blocker "dead story" with "flow below pace." (V1, V6)  
-  CA `4BCbx4hB1XPmC5mLHsFyHEghC5fb9Afu7THLGXiHpump`
-- 08:28Z POOLS (FINAL_STRETCH, $34,252 mcap, $12,516 5m vol): REJECT, Top 10 hold 28.1% ex-pool (>25%) (V13)  
-  CA `Fu9n4TS5QkEKzMW66djz6T6fUspAbTuYsb7gcHSApump`
-- 08:28Z Transinu (MIGRATED, $156,251 mcap, $20,847 5m vol): REJECT, Bundles: 10 linked wallet cluster(s) hold 26.8% of supply (>20%) (V17)  
-  CA `5ZndeMaC36YapnG4UpXsFg2DXDquHw6xEpBXGfmfpump`
 
 ## What its skips did next (last 48h)
 A skip "ran" if the coin reached the first target (1.5x) from the skip price before a 20% drop, "dumped" if the drop came first. Sampled every 10 min, followed 6h.
-- too new / sniping: blocked 66, ran 13, dumped 53, flat 0, open 0 (saving losses: keep it)
+- too new / sniping: blocked 67, ran 13, dumped 53, flat 0, open 1 (saving losses: keep it)
   - ran: CLIPPED up to 1.65x  
     CA `Bxyp4L6EbDys4fo51qxMEQTx41sj6McnsbPZTdvipump`
   - ran: Marutaro up to 1.62x  
     CA `At3jYPUKVEFYrss5a58myVuqKLjGxMuBP5MwqMk9pump`
   - ran: MameStonk up to 1.67x  
     CA `57eJSmN1ecANrnZjGPrXzWUMyGhQsQgMS9eHdxM3pump`
-- top 10 over 25%: blocked 63, ran 11, dumped 49, flat 3, open 0 (saving losses: keep it)
+- top 10 over 25%: blocked 62, ran 10, dumped 49, flat 3, open 0 (saving losses: keep it)
   - ran: GODHOUSE up to 3.19x  
     CA `CSGTuLtWhCfGZ5S5TvASQ6a5su91NCfRpNqfPczfpump`
   - ran: KYBER up to 1.83x  
@@ -120,14 +120,14 @@ A skip "ran" if the coin reached the first target (1.5x) from the skip price bef
     CA `DBPTU2oKLDHXQjAEJ3rZi8bUGmt2uxUbipgg6xmXoMqr`
   - ran: ZERO up to 1.61x  
     CA `Aes6XNH9BboLZuchD5PnDwaX6Zj1nU79TU3gNtPEpump`
-- near the high / chasing: blocked 40, ran 3, dumped 31, flat 4, open 2 (saving losses: keep it)
+- near the high / chasing: blocked 41, ran 3, dumped 31, flat 4, open 3 (saving losses: keep it)
   - ran: underdog up to 1.64x  
     CA `BZXh2LcnNNyypxsdfVeFzXawqmoGoSShC5i4NEQQpump`
   - ran: LUCIA up to 1.83x  
     CA `Cbtnpg6SL9jvZxtZTYYFPtVQXkuuqSUxCU5aXeTkpump`
   - ran: AMD up to 2.02x  
     CA `3MfZ4URVxmB4mfPuy4AxUxpcC5U7aXe7TDA7XVoGpump`
-- RugCheck danger: blocked 31, ran 4, dumped 24, flat 3, open 0 (saving losses: keep it)
+- RugCheck danger: blocked 30, ran 4, dumped 23, flat 3, open 0 (saving losses: keep it)
   - ran: COLLECTOR up to 1.62x  
     CA `6kKETm8xPeZ2z1DBYjXmxMTFAJudvGHJvRHu5Wt8uGtf`
   - ran: GTA up to 1.74x  
@@ -149,7 +149,7 @@ A skip "ran" if the coin reached the first target (1.5x) from the skip price bef
     CA `9gKArqT6qp3goHfuwAnfG7LioqwUtJ8TFu7P1Bhbpump`
   - ran: TTPRO up to 1.71x  
     CA `FrSrp9P3bgiFHwr6h5PQHVh55iC8Dae4eZCKPUo9pump`
-- falling knife / no higher low: blocked 14, ran 1, dumped 9, flat 3, open 1 (saving losses: keep it)
+- falling knife / no higher low: blocked 15, ran 1, dumped 9, flat 3, open 2 (saving losses: keep it)
   - ran: HEDGE up to 1.77x  
     CA `wDSAqt4tEZpDAwB9XY6ejkZvMFuT1zUMjUh67txeYhf`
 - other: blocked 12, ran 6, dumped 5, flat 1, open 0 (cost more winners than it saved: loosen it)
@@ -199,13 +199,13 @@ There's no positive after-cost edge yet. The 13 settled coins averaged -6.7% net
 The meta is fresh pump.fun launches pumping on 5m volume (space inu, POOLS, Transinu, Twitter): 0.3 to 1h old, +300% to +700% on the hour, and this is the highest-risk lane where bundles and dumps live (V1, V13). A second theme is dog and animal names at bigger caps, Vice Inu ($864k, +103%), A Meme Dog ($1.16M, -11%) and CHILLCATS ($177k, 71% buys, -35% off its hour high), which look like slower, cleaner trades than the launches. Space names are cooling: icapy is -95%, RAM is -90%, and the second space inu sits at 17% buys, a copy under the original (V1 vamp). Trump-named DJT is in the movers, and I pass on political-named coins (V13). Setups to research: Transinu (migrated, $162k, $18k on 5m, but only 47% buys, so it needs a pullback with buyers back above 50%) and CHILLCATS as a DIP, if its 5m volume holds and buyers keep stepping in. I won't chase the 0.3 to 0.5h launches. I used scan_movers numbers; the crawler's Transinu and CHILLCATS figures don't match them.
 
 ## Moving most in its scans, last 30 min (1h volume)
+- POOLS: $332,564 1h vol, $58,678 mcap, +29% 1h  
+  CA `Fu9n4TS5QkEKzMW66djz6T6fUspAbTuYsb7gcHSApump`
+- Transinu: $284,546 1h vol, $1,836 mcap, -99% 1h  
+  CA `5ZndeMaC36YapnG4UpXsFg2DXDquHw6xEpBXGfmfpump`
 - CHATBLT: $229,946 1h vol, $75,637 mcap, +64% 1h  
   CA `BM1Q9KfjgVoERj1eipkPqueMvhz1kfkUfE835ZjJpump`
-- X: $178,971 1h vol, $27,735 mcap, -74% 1h  
-  CA `FQE9h4fL65oDHMsR2MHcSe6d6DF4hFrFarsQQkVJpump`
-- RAM: $168,795 1h vol, $2,580 mcap, -93% 1h  
+- CHILLCATS: $166,045 1h vol, $165,991 mcap, +18% 1h  
+  CA `4BCbx4hB1XPmC5mLHsFyHEghC5fb9Afu7THLGXiHpump`
+- RAM: $159,270 1h vol, $2,770 mcap, -96% 1h  
   CA `72QNkZqiTBsq5dvn4DEwaC5qBPDkc7SZJ38xXy4jpump`
-- icapy: $158,241 1h vol, $1,930 mcap, -99% 1h  
-  CA `5fgJwPNtsohc1FwjkjvmVWoXTbSzD8Z3zzbcuXdepump`
-- AMD: $109,654 1h vol, $1,161,314 mcap, -11% 1h  
-  CA `DDmGnuvroxVrb7CSyjYcezFU8gnAfhKasg4ZZezmpump`
