@@ -1,13 +1,13 @@
 # Trencher live report
 
-Updated 2026-11-05T19:47:56Z (paper trading, never real money)
+Updated 2026-11-05T20:03:10Z (paper trading, never real money)
 
 - Equity: $74.23 (-25.8% vs $100 start)
 - Closed trades: 22, 3 wins
 - Fees paid: $14.78 (axiom $2.81, network $9.18, pool $2.66), plus $4.15 lost to slippage
 - New trades: WATCH-ONLY (scans and decides, buys nothing)
-- Brain: subscription, claude-haiku-5-5 for routine calls, claude-opus-5-5 for the daily review; 507 routine calls and 0 plan-limit hits in 48h
-- Watch log: 100 coins being followed, 1007 filed, 0 would-buys (6h follow, sampled every 2 min)
+- Brain: subscription, claude-haiku-5-5 for routine calls, claude-opus-5-5 for the daily review; 505 routine calls and 0 plan-limit hits in 48h
+- Watch log: 98 coins being followed, 1013 filed, 0 would-buys (6h follow, sampled every 2 min)
 
 ## Scorecard (after fees)
 - 22 closed, 3 won (14%), net $-25.79
@@ -73,9 +73,17 @@ Updated 2026-11-05T19:47:56Z (paper trading, never real money)
   CA `H4gHnZ3NCU7Z9XQwGX6YYJNyieGEW8pqwGRUcdSxpump`
 
 ## Last scan
-- 19:46Z: 9 coins, 8 with pairs, 4 passed the market filters, 4 researched
+- 20:02Z: 6 coins, 5 with pairs, 0 passed the market filters, 0 researched
 
 ## Coins it looked at, and why it passed
+- 19:58Z Democat (MIGRATED, $275,979 mcap, $2,733 5m vol): PASS at conviction 3, PASS: Democat is 77% off its $1.19M peak, outside the 40-70% dip band and the 10-60% migrated zone, on a fading election-night story with $2.7k 5m flow. Blocker: "dead story" plus "split crowd" (V1, V3, V6).  
+  CA `9Y1F6dZ6HpjZDYZdYuUGwMbkUiPsyU7WPTqTQU4Tpump`
+- 19:58Z ZAZU (MIGRATED, $49,072 mcap, $14,610 5m vol): REJECT, Top 10 hold 26.8% ex-pool (>25%) (V13)  
+  CA `BoSKFKyXoecufqntJCad8ds8QeTCqXFd3696nF3B9NWE`
+- 19:55Z PHILCOIN (DIP, $118,395 mcap, $2,458 5m vol): PASS at conviction 3, PASS. Philcoin is a 13-copy ticker field with no catalyst and no story on my radar. A DIP needs a catalyst. (V1, V6, V13)  
+  CA `Ea5dBrJZN58yV1nm1Q4DybJNYKeTvwpb2GEkXyW64bUH`
+- 19:54Z GLITCH (MIGRATED, $3,490,691 mcap, $7,405 5m vol): REJECT, Top 10 hold 28.1% ex-pool (>25%) (V13)  
+  CA `8Xg89xT8Ve34sKiYqYuMs46mycREsCA2F362UscRpump`
 - 19:47Z Edmond (FINAL_STRETCH, $26,496 mcap, $17,331 5m vol): PASS at conviction 3, PASS — seven Edmond copies, no story on the radar, top 10 at 23% and a saw-tooth chart at 72% bond. Bottom-buy gate blocks it anyway. (V1, V6, V13)  
   CA `E7cdaueM9tCakwmaRiZxs5h6QMTMMaC369dVAYfRpump`
 - 19:47Z LUCIA (MIGRATED, $212,530 mcap, $19,914 5m vol): PASS at conviction 2, PASS — LUCIA is 6% off a 26-minute-old $227k high after a +119% five-minute candle, and no higher low has printed. That's chasing, not a pullback (V1, V6).  
@@ -88,18 +96,10 @@ Updated 2026-11-05T19:47:56Z (paper trading, never real money)
   CA `DWdBJoNezK9itTwmPDYrScYpBxvWySxeWWV8N9RcmdrT`
 - 19:42Z LAMPORT (no setup, $28,675 mcap, $8,206 5m vol): REJECT, No setup fits: not Final Stretch, not a migrated runner, not a healthy dip  
   CA `D4CzGsZgusVj2K8R1its5H8WWdo9mazbDwBc6qvsmfun`
-- 19:34Z ACTII (no setup, $14,389 mcap, $12,675 5m vol): REJECT, No setup fits: not Final Stretch, not a migrated runner, not a healthy dip  
-  CA `BGUc7b8p54HCtr3AhSjvd88dSNwHtCpo57KWY2oWpump`
-- 19:34Z GATO (MIGRATED, $9,103,682 mcap, $20,752 5m vol): REJECT, Dev holds 3.3% (>1%) (V13, V17)  
-  CA `HsprHxBRgiVaQdRf3TnKNuZZtaX9JUSPgMFdAkk6pump`
-- 19:27Z Chewchan (MIGRATED, $199,551 mcap, $6,468 5m vol): PASS at conviction 3, PASS: flow below pace. Chewchan's 5m is $6.5k at 0.27x its hourly pace, under the $10k bar, in a 21-copy ticker field. Blocker: "flow below pace." (V1, V6, V13)  
-  CA `GMdkBYSKJuWnqd4vGdSnxiELNQTPhMhvdCmPb77dpump`
-- 19:26Z HELL (MIGRATED, $2,785,141 mcap, $874 5m vol): REJECT, 5m volume $874 is dead (<$2,000) (V1)  
-  CA `A75Xx6SeftAmWduv9KGwb2GCjXUAhxozcCUCys9jpump`
 
 ## What its skips did next (last 48h)
 A skip "ran" if the coin reached the first target (1.5x) from the skip price before a 20% drop, "dumped" if the drop came first. Sampled every 10 min, followed 6h.
-- top 10 over 25%: blocked 70, ran 11, dumped 54, flat 2, open 3 (saving losses: keep it)
+- top 10 over 25%: blocked 70, ran 11, dumped 53, flat 2, open 4 (saving losses: keep it)
   - ran: MEMECOIN up to 1.5x  
     CA `592MyuZiyHCEg8YJBnGJXCpcgfaK81vKiV83M3XMpump`
   - ran: NEMO up to 1.6x  
@@ -113,14 +113,14 @@ A skip "ran" if the coin reached the first target (1.5x) from the skip price bef
     CA `GCEEdGYx17shhJyudBTAHYAgcTEpKzntyiiqysmUpump`
   - ran: POLY up to 1.65x  
     CA `DMgry6A9C6U6jopS7bAawukAvAcgpUvWfJULcbnfpump`
-- flow below pace: blocked 44, ran 9, dumped 27, flat 5, open 3 (saving losses: keep it)
+- flow below pace: blocked 43, ran 9, dumped 26, flat 5, open 3 (saving losses: keep it)
   - ran: POLITICATS up to 1.85x  
     CA `ADvbwD9pgBeHHQBmBaiUir4zjC946FW2mDJbSejmpump`
   - ran: Pekka up to 1.81x  
     CA `BQ3yawMJwU7RCoFagJ3Go7AYMBDxzeNAKiRC2qTbpump`
   - ran: Link up to 1.57x  
     CA `7kqWni27vRVCKjcuBAmAbs8t7PxXgxdEjUSyRfeFpump`
-- near the high / chasing: blocked 41, ran 6, dumped 31, flat 2, open 2 (saving losses: keep it)
+- near the high / chasing: blocked 41, ran 6, dumped 32, flat 2, open 1 (saving losses: keep it)
   - ran: AMD up to 2.02x  
     CA `3MfZ4URVxmB4mfPuy4AxUxpcC5U7aXe7TDA7XVoGpump`
   - ran: PayIF up to 1.56x  
@@ -141,7 +141,7 @@ A skip "ran" if the coin reached the first target (1.5x) from the skip price bef
     CA `HEb2dwDNbBhnrCusoNXXvba9MymYTTmMQcHKaptxmfun`
   - ran: inu up to 1.5x  
     CA `Bid8i1ocWssjRmKh2kcUfHxD1K6Sk7E5pV2PSVdepump`
-- other: blocked 19, ran 5, dumped 11, flat 0, open 3 (saving losses: keep it)
+- other: blocked 20, ran 7, dumped 11, flat 0, open 2 (mixed)
   - ran: DESSA up to 1.54x  
     CA `npz2FhoufQ7pKqhGpaipYWacrAkidyW2yDpVWSvpump`
   - ran: MACHKA up to 1.52x  
@@ -203,9 +203,9 @@ Not quiet. The movers are mostly fresh launches that spike and die within the ho
   CA `DWdBJoNezK9itTwmPDYrScYpBxvWySxeWWV8N9RcmdrT`
 - COGE: $833,142 1h vol, $688,410 mcap, +1060% 1h  
   CA `FsTN7q7wVywYsCNBKfA7R1fJ97rADdvrMMtNSBWYpump`
-- Chewchan: $282,906 1h vol, $199,551 mcap, -10% 1h  
-  CA `GMdkBYSKJuWnqd4vGdSnxiELNQTPhMhvdCmPb77dpump`
-- COGE: $248,024 1h vol, $2,381 mcap, -93% 1h  
-  CA `Ch24dNtXQNWVsXEJvWihzbhzfggtMHumwKu9gVLQpump`
-- GTA: $176,638 1h vol, $557,138 mcap, -22% 1h  
-  CA `7F8BkfhPaDGMeNkaYeVa99WAqo86LpXDKsLQXpM7pump`
+- COGE: $334,454 1h vol, $18,128 mcap, -54% 1h  
+  CA `M5gr5LtdPHNS3SsKx7qeC4cqznxFbJNVqEkUyxqpump`
+- COGE: $299,258 1h vol, $7,877 mcap, -89% 1h  
+  CA `Fa93AEKdk5GJovkJseEjQ4geYuadFLimbKgy3BiPwiwS`
+- GATO: $141,839 1h vol, $9,149,627 mcap, -3% 1h  
+  CA `HsprHxBRgiVaQdRf3TnKNuZZtaX9JUSPgMFdAkk6pump`
