@@ -1,13 +1,13 @@
 # Trencher live report
 
-Updated 2026-11-05T08:56:12Z (paper trading, never real money)
+Updated 2026-11-05T09:11:18Z (paper trading, never real money)
 
 - Equity: $74.23 (-25.8% vs $100 start)
 - Closed trades: 22, 3 wins
 - Fees paid: $14.78 (axiom $2.81, network $9.18, pool $2.66), plus $4.15 lost to slippage
 - New trades: WATCH-ONLY (scans and decides, buys nothing)
-- Brain: subscription, claude-haiku-5-5 for routine calls, claude-opus-5-5 for the daily review; 527 routine calls and 0 plan-limit hits in 48h
-- Watch log: 107 coins being followed, 832 filed, 0 would-buys (6h follow, sampled every 2 min)
+- Brain: subscription, claude-haiku-5-5 for routine calls, claude-opus-5-5 for the daily review; 526 routine calls and 0 plan-limit hits in 48h
+- Watch log: 105 coins being followed, 837 filed, 0 would-buys (6h follow, sampled every 2 min)
 
 ## Scorecard (after fees)
 - 22 closed, 3 won (14%), net $-25.79
@@ -73,9 +73,15 @@ Updated 2026-11-05T08:56:12Z (paper trading, never real money)
   CA `H4gHnZ3NCU7Z9XQwGX6YYJNyieGEW8pqwGRUcdSxpump`
 
 ## Last scan
-- 08:55Z: 2 coins, 2 with pairs, 0 passed the market filters, 0 researched
+- 09:10Z: 5 coins, 5 with pairs, 0 passed the market filters, 0 researched
 
 ## Coins it looked at, and why it passed
+- 09:05Z $Gatto (DIP, $102,253 mcap, $2,233 5m vol): REJECT, Top 10 hold 34.0% ex-pool (>25%) (V13)  
+  CA `25Lrwta8CGeMt3pmxy7DivhJzRzBp5Ne76bdaxbPpump`
+- 09:04Z Retail (FINAL_STRETCH, $20,705 mcap, $4,735 5m vol): REJECT, RugCheck danger: Creator history of rugged tokens  
+  CA `DgoVJ1Up6gi9uZM2cLjTeENZ3GdefXVVnKHtidokpump`
+- 08:58Z GATO (MIGRATED, $10,272,687 mcap, $2,859 5m vol): REJECT, Dev holds 3.3% (>1%) (V13, V17)  
+  CA `HsprHxBRgiVaQdRf3TnKNuZZtaX9JUSPgMFdAkk6pump`
 - 08:47Z GTA (DIP, $2,272,390 mcap, $3,803 5m vol): REJECT, Dip with fading attention is a falling knife, not a dip (5m at 0.58x the hour's pace, under 0.6x)  
   CA `7F8BkfhPaDGMeNkaYeVa99WAqo86LpXDKsLQXpM7pump`
 - 08:41Z JOB (MIGRATED, $3,850,235 mcap, $4,506 5m vol): PASS at conviction 3, PASS: 24-copy vamp field, 5m flow $4.5k under the $10k bar, first resistance only 1.33x away, and the team's own site says "CA dropping soon" instead of this contract. Blockers: "no breakout", "target too close", "split crowd", "bottom buy: no catalyst." (V1, V3, V6, V13)  
@@ -90,16 +96,10 @@ Updated 2026-11-05T08:56:12Z (paper trading, never real money)
   CA `8kuQg3WivDtL85VEdw2jEmSXjYt6EEeYBATJ4DtQpump`
 - 08:12Z SHORT (FINAL_STRETCH, $20,154 mcap, $7,585 5m vol): PASS at conviction 3, PASS: blocker "no higher low". A 639% 1h spike on a $20k pump.fun curve, top 10 at 22%, 5m flow under $10k, and an 18-copy "short" ticker field. The product is a short-only betting desk on a 0.7-day-old domain that doesn't show this CA. Skip. (V1, V3, V6, V13)  
   CA `F7ok81gZ87Ni9LCzSeS9dvDwYYskn9g58FHmZDjkpump`
-- 08:07Z PTCG (FINAL_STRETCH, $29,427 mcap, $2,182 5m vol): REJECT, Top 10 hold 26.6% ex-pool (>25%) (V13)  
-  CA `FVn8r1xoEMzYCDSyykTpReWi9UbrfqGmBZrQfMBmpump`
-- 08:07Z d/acc (MIGRATED, $47,269 mcap, $83,914 5m vol): REJECT, Top 10 hold 25.1% ex-pool (>25%) (V13)  
-  CA `6owbUThBCH6UhgrgW69jYM2Q1yCWocxQD8C4p1Dppump`
-- 08:02Z GTA (DIP, $2,413,387 mcap, $4,813 5m vol): PASS at conviction 3, PASS: DIP with no higher low, no catalyst, and a 0.5-day-old website on a 17-copy ticker. Blockers: "no higher low", "dead story", "split crowd". (V1, V3, V6)  
-  CA `7F8BkfhPaDGMeNkaYeVa99WAqo86LpXDKsLQXpM7pump`
 
 ## What its skips did next (last 48h)
 A skip "ran" if the coin reached the first target (1.5x) from the skip price before a 20% drop, "dumped" if the drop came first. Sampled every 10 min, followed 6h.
-- top 10 over 25%: blocked 64, ran 11, dumped 50, flat 3, open 0 (saving losses: keep it)
+- top 10 over 25%: blocked 65, ran 11, dumped 50, flat 3, open 1 (saving losses: keep it)
   - ran: PWESIDENT up to 1.51x  
     CA `9Xxsoab47VknN15izoj2wE2x4BoYUfpnxQAUmroGpump`
   - ran: OPOL up to 2.02x  
@@ -127,7 +127,7 @@ A skip "ran" if the coin reached the first target (1.5x) from the skip price bef
     CA `Cbtnpg6SL9jvZxtZTYYFPtVQXkuuqSUxCU5aXeTkpump`
   - ran: AMD up to 2.02x  
     CA `3MfZ4URVxmB4mfPuy4AxUxpcC5U7aXe7TDA7XVoGpump`
-- RugCheck danger: blocked 30, ran 7, dumped 21, flat 2, open 0 (saving losses: keep it)
+- RugCheck danger: blocked 31, ran 7, dumped 21, flat 2, open 1 (saving losses: keep it)
   - ran: RAM up to 1.63x  
     CA `72QNkZqiTBsq5dvn4DEwaC5qBPDkc7SZJ38xXy4jpump`
   - ran: $LIBCOIN up to 1.54x  
@@ -141,9 +141,11 @@ A skip "ran" if the coin reached the first target (1.5x) from the skip price bef
     CA `HEb2dwDNbBhnrCusoNXXvba9MymYTTmMQcHKaptxmfun`
   - ran: inu up to 1.5x  
     CA `Bid8i1ocWssjRmKh2kcUfHxD1K6Sk7E5pV2PSVdepump`
-- bundles over the line: blocked 20, ran 1, dumped 14, flat 4, open 1 (saving losses: keep it)
+- bundles over the line: blocked 20, ran 2, dumped 14, flat 4, open 0 (saving losses: keep it)
   - ran: MAMESUKE up to 1.95x  
     CA `SCGBBnSwnekytGFHgyeHHxPMiN7xDxsWFGg9JgFSTNK`
+  - ran: ZELDA up to 1.87x  
+    CA `9okwT7syLTFXDv4W64Xp7QUgTx6yKE82SDjzitHNpump`
 - dev share over 1%: blocked 18, ran 0, dumped 14, flat 3, open 1 (saving losses: keep it)
 - thin 5m volume: blocked 17, ran 4, dumped 9, flat 4, open 0 (saving losses: keep it)
   - ran: DESSA up to 1.54x  
@@ -199,13 +201,13 @@ No. After costs, every bucket loses money. Across 355 settled coins the simple p
 Not quiet, but the movers are mostly fresh pump.fun launches collapsing: Pokémon/game-nostalgia coins (PIKACOIN -86%, Pokémon Dollar -87%, PokexS -95%, $419 to $909 of 5m volume) and joke launches (1Call -94%, JACOBITA -98%, SOLD -78% with 0% buys) are down 80%+ in an hour with almost no 5m flow, so that lane is fading, not rising. The live pockets are sub-hour launches with real money: Inu ($56k mcap, $38.6k 5m, 57% buys), Defective Acceleration ($47k, $84k 5m, 57% buys) and Short Pad (+631% 1h, $7.4k 5m, 58% buys, pump.fun); 5m volume near market cap is farm-shaped until proven otherwise (V13), so these are research, not buys, and the crawler's ZELDA, Democat and cat-coin figures don't appear in scan_movers (and PIKACOIN's feed mcap is $5.6k, not the $58k the summary claimed), so I'm ignoring them. Older coins are thin: GTA at $2.4M with $4.8k 5m and VETO at $708k with $1.2k are under the $10k bar. Setups to research now: Inu and d/acc, with holder, dev, bundle and top-50 checks in the first minutes; Short Pad only if it holds with buyers on a dip. Pokémon and Pikachu coins are passes unless they reclaim with real volume. Political and hack headlines from the crawler aren't in the movers, so no politician or hack coin is a setup. Everything is unverified; paper only, not financial advice.
 
 ## Moving most in its scans, last 30 min (1h volume)
-- d/acc: $424,095 1h vol, $23,644 mcap, -38% 1h  
+- d/acc: $443,340 1h vol, $18,843 mcap, -51% 1h  
   CA `6owbUThBCH6UhgrgW69jYM2Q1yCWocxQD8C4p1Dppump`
-- ZELDA: $152,649 1h vol, $88,223 mcap, +117% 1h  
-  CA `9okwT7syLTFXDv4W64Xp7QUgTx6yKE82SDjzitHNpump`
-- I: $119,485 1h vol, $2,484 mcap, -94% 1h  
-  CA `6sSkbS324Qu7xHT7YCMxrCfBXdXWzGzFNpawepzypump`
-- Democat: $91,714 1h vol, $713,275 mcap, -14% 1h  
-  CA `9Y1F6dZ6HpjZDYZdYuUGwMbkUiPsyU7WPTqTQU4Tpump`
-- GAVELDROP: $85,885 1h vol, $703,889 mcap, -7% 1h  
-  CA `9mWrj77gDZ7w4rwHF6STYXDZmYRMyf39L4go1mXepump`
+- GTA: $78,711 1h vol, $2,272,390 mcap, -5% 1h  
+  CA `7F8BkfhPaDGMeNkaYeVa99WAqo86LpXDKsLQXpM7pump`
+- JOB: $55,777 1h vol, $3,832,906 mcap, -4% 1h  
+  CA `9Pq7aLAbhDG2tTnS22cm6kuysZVcZpLFE368HWuypump`
+- SHORT: $43,411 1h vol, $5,400 mcap, -78% 1h  
+  CA `F7ok81gZ87Ni9LCzSeS9dvDwYYskn9g58FHmZDjkpump`
+- LEVERAGED: $40,998 1h vol, $7,591 mcap, +175% 1h  
+  CA `35TVjidU7ePGMWLM1r2UwEXXWCWH77kFyFndJ57xpump`
