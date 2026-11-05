@@ -1,13 +1,13 @@
 # Trencher live report
 
-Updated 2026-11-05T14:14:12Z (paper trading, never real money)
+Updated 2026-11-05T14:29:37Z (paper trading, never real money)
 
 - Equity: $74.23 (-25.8% vs $100 start)
 - Closed trades: 22, 3 wins
 - Fees paid: $14.78 (axiom $2.81, network $9.18, pool $2.66), plus $4.15 lost to slippage
 - New trades: WATCH-ONLY (scans and decides, buys nothing)
-- Brain: subscription, claude-haiku-5-5 for routine calls, claude-opus-5-5 for the daily review; 531 routine calls and 0 plan-limit hits in 48h
-- Watch log: 83 coins being followed, 933 filed, 0 would-buys (6h follow, sampled every 2 min)
+- Brain: subscription, claude-haiku-5-5 for routine calls, claude-opus-5-5 for the daily review; 532 routine calls and 0 plan-limit hits in 48h
+- Watch log: 87 coins being followed, 934 filed, 0 would-buys (6h follow, sampled every 2 min)
 
 ## Scorecard (after fees)
 - 22 closed, 3 won (14%), net $-25.79
@@ -73,9 +73,19 @@ Updated 2026-11-05T14:14:12Z (paper trading, never real money)
   CA `H4gHnZ3NCU7Z9XQwGX6YYJNyieGEW8pqwGRUcdSxpump`
 
 ## Last scan
-- 14:13Z: 9 coins, 5 with pairs, 0 passed the market filters, 0 researched
+- 14:28Z: 7 coins, 3 with pairs, 1 passed the market filters, 1 researched
 
 ## Coins it looked at, and why it passed
+- 14:29Z JOB (MIGRATED, $3,479,559 mcap, $4,048 5m vol): PASS at conviction 2, PASS: no catalyst, sellers outnumber buys 23 to 9, and the CA isn't on the project's site. Blocker: "no catalyst" on a bottom buy. (V1, V3, V13)  
+  CA `9Pq7aLAbhDG2tTnS22cm6kuysZVcZpLFE368HWuypump`
+- 14:21Z LIBRE (FINAL_STRETCH, $24,448 mcap, $2,157 5m vol): REJECT, Top 10 hold 27.3% ex-pool (>25%) (V13)  
+  CA `J4rP3zhpvk3r2tFasTAecU4g9gnxDDpaR2xAXnz873fu`
+- 14:21Z GBuk (FINAL_STRETCH, $20,426 mcap, $9,843 5m vol): PASS at conviction 3, PASS: GBuk is the 14th "galaxy bucks" copy, its website is a Samsung developer docs page that doesn't show this CA, and it's already +321% on the hour. Blocker: split crowd. (V1, V3, V6, V13)  
+  CA `9XoSWfK7ymz3r4FofpcWgz8gLHyE4ne5WZTcoznipump`
+- 14:20Z LION (MIGRATED, $35,607 mcap, $13,225 5m vol): REJECT, Top 10 hold 29.3% ex-pool (>25%) (V13)  
+  CA `4nQqYeHziRZaiYLodVt56q9AyubY693oGnSPXYcNpump`
+- 14:17Z GATO (MIGRATED, $9,029,093 mcap, $6,471 5m vol): REJECT, Dev holds 3.3% (>1%) (V13, V17)  
+  CA `HsprHxBRgiVaQdRf3TnKNuZZtaX9JUSPgMFdAkk6pump`
 - 14:05Z GTA (DIP, $2,795,731 mcap, $8,097 5m vol): REJECT, Dip with fading attention is a falling knife, not a dip (5m at 0.44x the hour's pace, under 0.6x)  
   CA `7F8BkfhPaDGMeNkaYeVa99WAqo86LpXDKsLQXpM7pump`
 - 14:05Z TOPLESS (MIGRATED, $106,111 mcap, $2,826 5m vol): REJECT, Top 10 hold 27.5% ex-pool (>25%) (V13)  
@@ -86,33 +96,23 @@ Updated 2026-11-05T14:14:12Z (paper trading, never real money)
   CA `9mWrj77gDZ7w4rwHF6STYXDZmYRMyf39L4go1mXepump`
 - 13:57Z Democat (DIP, $634,525 mcap, $3,918 5m vol): PASS at conviction 4, PASS — Democat is a DIP on a political-cat story whose catalyst (Election Night) already printed, and the cat theme is running 0.87x its hourly pace. Bottom-buy gate fails (V1, V6, V13).  
   CA `9Y1F6dZ6HpjZDYZdYuUGwMbkUiPsyU7WPTqTQU4Tpump`
-- 13:55Z GNusmas (FINAL_STRETCH, $30,128 mcap, $15,918 5m vol): PASS at conviction 2, PASS — 16-minute-old pump.fun copy sitting 1.4% off its high after a +76% 5m candle, and not the leader of its own 19-coin Samsung Mascot field. Blockers: chasing spike, split crowd. (V1, V6)  
-  CA `HX6pnETuZySVAsy8hT4a1zRFPYG4nXrfKVd1x66SPJ7c`
-- 13:50Z SOCIAL (MIGRATED, $118,477 mcap, $15,277 5m vol): REJECT, Bundles: 2 linked wallet cluster(s) hold 81.8% of supply (>20%) (V17)  
-  CA `EguhkH6CJpbV814hd8rTaCCC6qbkRCXfk3MU1yLdpump`
-- 13:49Z GLITCH (MIGRATED, $3,561,499 mcap, $4,331 5m vol): REJECT, Top 10 hold 28.1% ex-pool (>25%) (V13)  
-  CA `8Xg89xT8Ve34sKiYqYuMs46mycREsCA2F362UscRpump`
-- 13:49Z PILLHEADS (MIGRATED, $221,796 mcap, $54,847 5m vol): PASS at conviction 3, PASS: blocked by chasing spike. The last 5m candle is up 59% and the coin is 22 minutes old with no printed higher low. Its name is shared by 22 copies that split the crowd (V1, V6).  
-  CA `BFJd5mWCvu7yMivKCM7Xh8Dx17GgBbwaxcmFX3Aqpump`
-- 13:42Z FOTF (MIGRATED, $9,238,536 mcap, $2,550 5m vol): PASS at conviction 2, PASS — FOTF is 2.9% off a $9.5M high with $2.55k of 5m flow, $60k of liquidity and no X or site. Blockers: chasing, big cap no room, target too close, no higher low, vamp field (10 copies). Farm-shaped until proven otherwise (V1, V6, V13).  
-  CA `7gmxQoGqCNK9BJSaD5NNSPgCjpLV8eTSsStnhQuGArDM`
 
 ## What its skips did next (last 48h)
 A skip "ran" if the coin reached the first target (1.5x) from the skip price before a 20% drop, "dumped" if the drop came first. Sampled every 10 min, followed 6h.
-- too new / sniping: blocked 66, ran 10, dumped 53, flat 1, open 2 (saving losses: keep it)
-  - ran: SNOWMEI up to 1.76x  
-    CA `ETVD787UcTkJqrhZMt15bVet7CQ4SDzCga7DfBm8pump`
-  - ran: GTAVI up to 2.31x  
-    CA `HekahVohmeokPUhscg5taNme3Qs2fcSQoNgEeUPMpump`
-  - ran: PEPTDOG up to 1.88x  
-    CA `GExwMYa2tnJwGfKTmzR4ERiQKptfNceN9GTXc82Lpump`
-- top 10 over 25%: blocked 63, ran 10, dumped 49, flat 2, open 2 (saving losses: keep it)
+- top 10 over 25%: blocked 65, ran 10, dumped 49, flat 2, open 4 (saving losses: keep it)
   - ran: OPOL up to 2.02x  
     CA `7R6AYvHyU5MyaTt5MPtRdt2daRUKedvCz8CXZkaspump`
   - ran: MEMECOIN up to 1.5x  
     CA `592MyuZiyHCEg8YJBnGJXCpcgfaK81vKiV83M3XMpump`
   - ran: NEMO up to 1.6x  
     CA `5ja9qQuE5V9g5TVAFZVdtVQQqoThkAWxEKUaPcC5jN3F`
+- too new / sniping: blocked 65, ran 10, dumped 52, flat 1, open 2 (saving losses: keep it)
+  - ran: SNOWMEI up to 1.76x  
+    CA `ETVD787UcTkJqrhZMt15bVet7CQ4SDzCga7DfBm8pump`
+  - ran: GTAVI up to 2.31x  
+    CA `HekahVohmeokPUhscg5taNme3Qs2fcSQoNgEeUPMpump`
+  - ran: PEPTDOG up to 1.88x  
+    CA `GExwMYa2tnJwGfKTmzR4ERiQKptfNceN9GTXc82Lpump`
 - flow below pace: blocked 50, ran 9, dumped 34, flat 4, open 3 (saving losses: keep it)
   - ran: POLITICATS up to 1.85x  
     CA `ADvbwD9pgBeHHQBmBaiUir4zjC946FW2mDJbSejmpump`
@@ -199,13 +199,13 @@ Nothing has a positive edge after costs yet. All 359 settled coins averaged -10.
 The meta right now is fresh pump.fun launches with real flow, not the news. Pillheads, SOUNDER, TOPLESS and ELYSIUM are all under an hour old, up 39-722% on the hour, with 64-66% buys, so new money is still arriving; that theme is rising but decays fast (V1, V6). The political-cat cluster has buyers but runs on headlines: Democat ($593k, 75% buys) and GAVELDROP ($695k, 65% buys) are holding, while the web's Trump-slide story is a fade warning. The web says GAVELDROP is -31%, but the scan shows +14% on the hour, so I trust the scan. The GTA6 cat/dog names are fading: GATO is near $8.9M with 32% buys, GTA is down 33% on the hour, and only RICO's 66% buys look like someone stepping back in. Most movers fail the $10k 5-minute bar, so the setups to research are ELYSIUM as a tiny probe (5m $16k, 64% buys, holders and dev checks still pending) and GTA as a dip watch once I have its peak, since it needs roughly $70k+ to qualify. Pillheads is too new for me to snipe, so I wait for it to age. CR, Cristiano and LIBRE appear only in the crawler summary and not in scan_movers, so they are unverified and I am not researching them off that text. Paper only, not financial advice.
 
 ## Moving most in its scans, last 30 min (1h volume)
-- PILLHEADS: $383,279 1h vol, $242,950 mcap, +284% 1h  
-  CA `BFJd5mWCvu7yMivKCM7Xh8Dx17GgBbwaxcmFX3Aqpump`
-- DESSA: $325,435 1h vol, $29,409,641 mcap, +22% 1h  
+- DESSA: $430,154 1h vol, $31,282,695 mcap, +20% 1h  
   CA `npz2FhoufQ7pKqhGpaipYWacrAkidyW2yDpVWSvpump`
+- dump: $269,794 1h vol, $13,395 mcap, -64% 1h  
+  CA `Bu3h78FY2fsWVZ1MdyQVpFTvv5XsRotWX6VjszQTpump`
 - GTA: $222,063 1h vol, $2,795,731 mcap, -26% 1h  
   CA `7F8BkfhPaDGMeNkaYeVa99WAqo86LpXDKsLQXpM7pump`
-- SOCIAL: $169,027 1h vol, $118,477 mcap, +195% 1h  
-  CA `EguhkH6CJpbV814hd8rTaCCC6qbkRCXfk3MU1yLdpump`
-- ELYSIUM: $127,022 1h vol, $18,732 mcap, -60% 1h  
-  CA `LKsRfGJjy25VZQJZL5tBZ6aMdtxHHA6PZ7Fp4mohype`
+- SOUNDER: $157,476 1h vol, $14,456 mcap, -63% 1h  
+  CA `DBhWAqpAJFNM1A9XY6DDb1SJVkNCv87hRdYCoCoypump`
+- TOPLESS: $105,940 1h vol, $104,541 mcap, -12% 1h  
+  CA `CxYe8z7qnUFXDoPKce2pZ9xo9yP3KDktTojH5ZiCmWY9`
