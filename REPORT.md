@@ -1,13 +1,13 @@
 # Trencher live report
 
-Updated 2026-11-05T22:19:28Z (paper trading, never real money)
+Updated 2026-11-05T22:34:31Z (paper trading, never real money)
 
 - Equity: $74.23 (-25.8% vs $100 start)
 - Closed trades: 22, 3 wins
 - Fees paid: $14.78 (axiom $2.81, network $9.18, pool $2.66), plus $4.15 lost to slippage
 - New trades: WATCH-ONLY (scans and decides, buys nothing)
 - Brain: subscription, claude-haiku-5-5 for routine calls, claude-opus-5-5 for the daily review; 494 routine calls and 0 plan-limit hits in 48h
-- Watch log: 96 coins being followed, 1050 filed, 0 would-buys (6h follow, sampled every 2 min)
+- Watch log: 97 coins being followed, 1054 filed, 0 would-buys (6h follow, sampled every 2 min)
 
 ## Scorecard (after fees)
 - 22 closed, 3 won (14%), net $-25.79
@@ -73,9 +73,19 @@ Updated 2026-11-05T22:19:28Z (paper trading, never real money)
   CA `H4gHnZ3NCU7Z9XQwGX6YYJNyieGEW8pqwGRUcdSxpump`
 
 ## Last scan
-- 22:19Z: 8 coins, 6 with pairs, 0 passed the market filters, 0 researched
+- 22:33Z: 9 coins, 8 with pairs, 1 passed the market filters, 1 researched
 
 ## Coins it looked at, and why it passed
+- 22:34Z Horny (FINAL_STRETCH, $31,481 mcap, $6,500 5m vol): REJECT, Top 10 hold 31.4% ex-pool (>25%) (V13)  
+  CA `7oouLaJjqFVGRS1ZjGrPLRLTAx9pGpRtoAfydQcrpump`
+- 22:32Z Democat (MIGRATED, $171,160 mcap, $2,297 5m vol): PASS at conviction 2, PASS: Democat is 86% off its $1.19M peak on $2.3k of 5m flow, a political-adjacent name in a fading political-memecoin news cycle. Blocker: "dead story" plus no bottom-buy catalyst (V1, V6, V13).  
+  CA `9Y1F6dZ6HpjZDYZdYuUGwMbkUiPsyU7WPTqTQU4Tpump`
+- 22:28Z GAVELDROP (MIGRATED, $207,463 mcap, $5,341 5m vol): REJECT, Bundles: 10 linked wallet cluster(s) hold 47.8% of supply (>20%) (V17)  
+  CA `9mWrj77gDZ7w4rwHF6STYXDZmYRMyf39L4go1mXepump`
+- 22:26Z CBUCKS (MIGRATED, $1,451,312 mcap, $2,062 5m vol): REJECT, Top 10 hold 26.2% ex-pool (>25%) (V13)  
+  CA `DtcicPCKTKeAh7TDEzTym3hXeoHAoMiBdYJhMYxZpump`
+- 22:26Z NEARFUN (FINAL_STRETCH, $19,583 mcap, $17,283 5m vol): REJECT, RugCheck danger: Creator history of rugged tokens  
+  CA `nearFUCFULHhJy2iyJUkAHqxHcEn4La8PbAH1coy5dS`
 - 22:12Z bul (MIGRATED, $84,307 mcap, $2,934 5m vol): REJECT, Bundles: 3 linked wallet cluster(s) hold 29.5% of supply (>20%) (V17)  
   CA `GyWkSn2ah7dqLyPeZAjEZmfxuU2H4nwfGvgJhfYDVegn`
 - 22:02Z Bubbles (MIGRATED, $108,607 mcap, $3,962 5m vol): PASS at conviction 2, PASS: chasing. Bubbles is sitting on its high (0% off, +132% in 1h) with $4k of 5m volume in a 14-copy vamp field. Blocker: "chasing". (V1, V6)  
@@ -86,20 +96,10 @@ Updated 2026-11-05T22:19:28Z (paper trading, never real money)
   CA `A75Xx6SeftAmWduv9KGwb2GCjXUAhxozcCUCys9jpump`
 - 21:53Z FOTF (MIGRATED, $10,536,513 mcap, $2,204 5m vol): PASS at conviction 2, PASS — $10.5M mcap with the prior high only 1.15x away, $65k liquidity under a $10M cap, no X, no site, no story on the radar. Blocker: target too close, big cap no room. (V1, V6, V13)  
   CA `7gmxQoGqCNK9BJSaD5NNSPgCjpLV8eTSsStnhQuGArDM`
-- 21:53Z COGE (MIGRATED, $1,929,319 mcap, $4,748 5m vol): PASS at conviction 2, PASS — COGE is 0.5% off a $1.94M high on $4.7k 5m flow at 0.62x pace, with no printed higher low and 8 copies of the ticker. Chasing a spike into a crowded field (V1, V6, V13).  
-  CA `8UQdy5sHMVWUWSHeA5B3ZuuAVNumjSLPXdf19MXcpump`
-- 21:48Z Horny (FINAL_STRETCH, $18,996 mcap, $3,003 5m vol): REJECT, Top 10 hold 30.7% ex-pool (>25%) (V13)  
-  CA `7oouLaJjqFVGRS1ZjGrPLRLTAx9pGpRtoAfydQcrpump`
-- 21:47Z GTA (DIP, $147,689 mcap, $11,679 5m vol): PASS at conviction 4, PASS — clean holders and $11.7k 5m, but it's a +27% five-minute spike at 0.61x hourly pace, with no printed higher low and no catalyst for a bottom buy. Blockers: "chasing spike", "flow below pace", "no higher low" (V1, V6).  
-  CA `9vrEeQSTctTPSCdzbiHWLrb4xcjSn91YcoJFLDyopump`
-- 21:45Z Yams (MIGRATED, $32,794 mcap, $7,101 5m vol): REJECT, Top 10 hold 27.2% ex-pool (>25%) (V13)  
-  CA `81KNhgSwaCnWGR6PFS68E58WoYvwFeJ1AtE9KsGipump`
-- 21:43Z GAVELDROP (MIGRATED, $189,082 mcap, $23,143 5m vol): REJECT, Bundles: 10 linked wallet cluster(s) hold 47.8% of supply (>20%) (V17)  
-  CA `9mWrj77gDZ7w4rwHF6STYXDZmYRMyf39L4go1mXepump`
 
 ## What its skips did next (last 48h)
 A skip "ran" if the coin reached the first target (1.5x) from the skip price before a 20% drop, "dumped" if the drop came first. Sampled every 10 min, followed 6h.
-- top 10 over 25%: blocked 73, ran 13, dumped 55, flat 4, open 1 (saving losses: keep it)
+- top 10 over 25%: blocked 72, ran 12, dumped 54, flat 3, open 3 (saving losses: keep it)
   - ran: NEMO up to 1.6x  
     CA `5ja9qQuE5V9g5TVAFZVdtVQQqoThkAWxEKUaPcC5jN3F`
   - ran: Aren up to 1.75x  
@@ -113,21 +113,21 @@ A skip "ran" if the coin reached the first target (1.5x) from the skip price bef
     CA `DMgry6A9C6U6jopS7bAawukAvAcgpUvWfJULcbnfpump`
   - ran: Doge up to 1.72x  
     CA `9CRbVZxQshb9dMkh3yGvyARJRAHMGVuxiQRGhUsppump`
-- flow below pace: blocked 45, ran 9, dumped 28, flat 5, open 3 (saving losses: keep it)
+- flow below pace: blocked 44, ran 9, dumped 28, flat 5, open 2 (saving losses: keep it)
   - ran: Pekka up to 1.81x  
     CA `BQ3yawMJwU7RCoFagJ3Go7AYMBDxzeNAKiRC2qTbpump`
   - ran: Link up to 1.57x  
     CA `7kqWni27vRVCKjcuBAmAbs8t7PxXgxdEjUSyRfeFpump`
   - ran: CHICKPOT up to 1.55x  
     CA `8B6ZZAC2FQ7AJrZPz7veXJrod5t2MG1C5MZBLNbUpump`
-- near the high / chasing: blocked 39, ran 6, dumped 30, flat 1, open 2 (saving losses: keep it)
+- near the high / chasing: blocked 39, ran 6, dumped 31, flat 1, open 1 (saving losses: keep it)
   - ran: AMD up to 2.02x  
     CA `3MfZ4URVxmB4mfPuy4AxUxpcC5U7aXe7TDA7XVoGpump`
   - ran: PayIF up to 1.56x  
     CA `FfuBMS3rh9M61apXJDs14yAngVnYLWR7xkcX5FxMpump`
   - ran: SAN up to 1.63x  
     CA `8kfp8MzuFuj3vrnmG3KBcYVctYmu2JYerdFhPnX4pump`
-- RugCheck danger: blocked 30, ran 8, dumped 21, flat 1, open 0 (saving losses: keep it)
+- RugCheck danger: blocked 31, ran 8, dumped 22, flat 1, open 0 (saving losses: keep it)
   - ran: RAM up to 1.63x  
     CA `72QNkZqiTBsq5dvn4DEwaC5qBPDkc7SZJ38xXy4jpump`
   - ran: $LIBCOIN up to 1.54x  
@@ -201,13 +201,13 @@ Nothing has a positive edge after costs yet. All 359 settled coins averaged -10.
 Not quiet: about six of the fifteen movers have real 5-minute flow, and they share a pattern of fresh (roughly 10 minutes to 1 hour old), crude or joke names and animal mascots, with 1-hour pumps running hot and fading fast. Two themes carry the flow: meme mood and reaction names (COPE at $101k cap with $63k 5m and 88% buys; "aaaaaaaaaaaaaaaa" at $66k with $34k 5m and 59% buys; FAHHHH, but its $103k 5m on a $16k cap is about 6x market cap, a churn or farm smell, so pass for now) and animal mascots (voicecat at $21.5k with $13k 5m and 62% buys, still on the bonding curve). Penguin is the vamp lesson: both Penguin copies are down 64-98% with near-zero 5m flow, and The Democrat Cat (political-adjacent name, $124k cap) has dried to $1.3k 5m, so political-adjacent names look like they're fading, which matches the crawler's headlines about political memecoins sinking (headlines only, unverified as a meta read). Setups to research, not buy: COPE and voicecat first (voicecat clears the $10k 5m bar on the bonding curve); Horny is +517% but only $5.3k 5m, below the bar. Correction: the crawler's Edmond figures ($47k cap, $11.8k 5m, +25%) don't match the scan (about $28k cap, $2.9k 5m, -67% 1h), so it fails the MIGRATED screen and is dropped. Paper only, not financial advice.
 
 ## Moving most in its scans, last 30 min (1h volume)
-- COGE: $210,969 1h vol, $198,543 mcap, +340% 1h  
-  CA `ES9FintJPSGcoVuJhkLAsfSoug6B69bDoeTb3hJYpump`
-- COPE: $182,944 1h vol, $1,710 mcap, -96% 1h  
-  CA `GGVs673aVEFBvNZ6ZE4fPhojDSveWuatA1FgAD7Wpump`
-- LIZARD: $139,114 1h vol, $7,041 mcap, -78% 1h  
+- VC: $289,848 1h vol, $2,702 mcap, -94% 1h  
+  CA `EiYnLUuc8ondojNx7aBBq6gcrYESop3qe6fXHnswpump`
+- AAAAAAAAAAAAA: $269,111 1h vol, $15,947 mcap, -74% 1h  
+  CA `Bi59TGKZgLa7zVRz1BX3yPg6Cj8wWfZwfNc5FaCApump`
+- LIZARD: $140,212 1h vol, $5,480 mcap, -83% 1h  
   CA `A39LprdkW88LqaXKmAvnoH3EjTJ5uMQynsRbWzEjLmsU`
-- GATO: $120,607 1h vol, $11,298,034 mcap, +8% 1h  
-  CA `HsprHxBRgiVaQdRf3TnKNuZZtaX9JUSPgMFdAkk6pump`
-- zezu: $98,980 1h vol, $2,832 mcap, -93% 1h  
-  CA `HSF72vVdbSAbjjAfru1d6PhTavbSo3pd2gJvKVLvpump`
+- GTA: $138,793 1h vol, $1,780 mcap, -99% 1h  
+  CA `9vrEeQSTctTPSCdzbiHWLrb4xcjSn91YcoJFLDyopump`
+- GAVELDROP: $131,343 1h vol, $207,463 mcap, -40% 1h  
+  CA `9mWrj77gDZ7w4rwHF6STYXDZmYRMyf39L4go1mXepump`
