@@ -1,13 +1,13 @@
 # Trencher live report
 
-Updated 2026-11-05T22:34:31Z (paper trading, never real money)
+Updated 2026-11-05T22:49:36Z (paper trading, never real money)
 
 - Equity: $74.23 (-25.8% vs $100 start)
 - Closed trades: 22, 3 wins
 - Fees paid: $14.78 (axiom $2.81, network $9.18, pool $2.66), plus $4.15 lost to slippage
 - New trades: WATCH-ONLY (scans and decides, buys nothing)
-- Brain: subscription, claude-haiku-5-5 for routine calls, claude-opus-5-5 for the daily review; 494 routine calls and 0 plan-limit hits in 48h
-- Watch log: 97 coins being followed, 1054 filed, 0 would-buys (6h follow, sampled every 2 min)
+- Brain: subscription, claude-haiku-5-5 for routine calls, claude-opus-5-5 for the daily review; 493 routine calls and 0 plan-limit hits in 48h
+- Watch log: 100 coins being followed, 1055 filed, 0 would-buys (6h follow, sampled every 2 min)
 
 ## Scorecard (after fees)
 - 22 closed, 3 won (14%), net $-25.79
@@ -73,9 +73,17 @@ Updated 2026-11-05T22:34:31Z (paper trading, never real money)
   CA `H4gHnZ3NCU7Z9XQwGX6YYJNyieGEW8pqwGRUcdSxpump`
 
 ## Last scan
-- 22:33Z: 9 coins, 8 with pairs, 1 passed the market filters, 1 researched
+- 22:48Z: 2 coins, 1 with pairs, 0 passed the market filters, 0 researched
 
 ## Coins it looked at, and why it passed
+- 22:48Z Bubbles (MIGRATED, $171,720 mcap, $8,075 5m vol): PASS at conviction 2, PASS: Bubbles is sitting at its high after a +274% hour, under an hour old, with 16 copies of the ticker. Blocker "chasing" (V1, V6).  
+  CA `DNerJKigs1xZ5rCBDtU9a2ACxvskScMnSihWY9yYpump`
+- 22:47Z COGE (MIGRATED, $308,573 mcap, $16,605 5m vol): PASS at conviction 3, PASS: 5m flow is 0.38x its hourly pace and no higher low has printed. Seven copies of the theme, and the site's domain is 0 days old. (V1, V3, V6)  
+  CA `ES9FintJPSGcoVuJhkLAsfSoug6B69bDoeTb3hJYpump`
+- 22:38Z BFN (FINAL_STRETCH, $20,964 mcap, $2,192 5m vol): REJECT, Top 10 hold 29.0% ex-pool (>25%) (V13)  
+  CA `2WBx8bdnKC2PrY1hvbCjDSkYy2JLhPMda5UemmuBWDEW`
+- 22:38Z COGE (MIGRATED, $3,083,033 mcap, $3,663 5m vol): PASS at conviction 3, PASS: COGE is sitting on its 1h high at $3.08M after a parabolic run. Its 5m flow is $3.7k at 0.3x pace, with no higher low and no room above the top. Clean holders don't fix that (V1, V6).  
+  CA `8UQdy5sHMVWUWSHeA5B3ZuuAVNumjSLPXdf19MXcpump`
 - 22:34Z Horny (FINAL_STRETCH, $31,481 mcap, $6,500 5m vol): REJECT, Top 10 hold 31.4% ex-pool (>25%) (V13)  
   CA `7oouLaJjqFVGRS1ZjGrPLRLTAx9pGpRtoAfydQcrpump`
 - 22:32Z Democat (MIGRATED, $171,160 mcap, $2,297 5m vol): PASS at conviction 2, PASS: Democat is 86% off its $1.19M peak on $2.3k of 5m flow, a political-adjacent name in a fading political-memecoin news cycle. Blocker: "dead story" plus no bottom-buy catalyst (V1, V6, V13).  
@@ -88,18 +96,10 @@ Updated 2026-11-05T22:34:31Z (paper trading, never real money)
   CA `nearFUCFULHhJy2iyJUkAHqxHcEn4La8PbAH1coy5dS`
 - 22:12Z bul (MIGRATED, $84,307 mcap, $2,934 5m vol): REJECT, Bundles: 3 linked wallet cluster(s) hold 29.5% of supply (>20%) (V17)  
   CA `GyWkSn2ah7dqLyPeZAjEZmfxuU2H4nwfGvgJhfYDVegn`
-- 22:02Z Bubbles (MIGRATED, $108,607 mcap, $3,962 5m vol): PASS at conviction 2, PASS: chasing. Bubbles is sitting on its high (0% off, +132% in 1h) with $4k of 5m volume in a 14-copy vamp field. Blocker: "chasing". (V1, V6)  
-  CA `DNerJKigs1xZ5rCBDtU9a2ACxvskScMnSihWY9yYpump`
-- 22:01Z COGE (MIGRATED, $188,419 mcap, $106,783 5m vol): PASS at conviction 4, PASS: up 317% in an hour, 5m volume at 6.5x pace, and no printed higher low. That's a spike, and buying a spike makes you the exit liquidity (V1, V6).  
-  CA `ES9FintJPSGcoVuJhkLAsfSoug6B69bDoeTb3hJYpump`
-- 21:57Z HELL (MIGRATED, $2,523,166 mcap, $2,694 5m vol): PASS at conviction 4, PASS — target too close: the 24h high is only 1.23x away, the coin is sitting on its hourly low with no higher low printed, and 5m flow is $2.7k. Watch it on the GTA VI date. (V1, V6)  
-  CA `A75Xx6SeftAmWduv9KGwb2GCjXUAhxozcCUCys9jpump`
-- 21:53Z FOTF (MIGRATED, $10,536,513 mcap, $2,204 5m vol): PASS at conviction 2, PASS — $10.5M mcap with the prior high only 1.15x away, $65k liquidity under a $10M cap, no X, no site, no story on the radar. Blocker: target too close, big cap no room. (V1, V6, V13)  
-  CA `7gmxQoGqCNK9BJSaD5NNSPgCjpLV8eTSsStnhQuGArDM`
 
 ## What its skips did next (last 48h)
 A skip "ran" if the coin reached the first target (1.5x) from the skip price before a 20% drop, "dumped" if the drop came first. Sampled every 10 min, followed 6h.
-- top 10 over 25%: blocked 72, ran 12, dumped 54, flat 3, open 3 (saving losses: keep it)
+- top 10 over 25%: blocked 73, ran 12, dumped 54, flat 3, open 4 (saving losses: keep it)
   - ran: NEMO up to 1.6x  
     CA `5ja9qQuE5V9g5TVAFZVdtVQQqoThkAWxEKUaPcC5jN3F`
   - ran: Aren up to 1.75x  
@@ -114,12 +114,12 @@ A skip "ran" if the coin reached the first target (1.5x) from the skip price bef
   - ran: Doge up to 1.72x  
     CA `9CRbVZxQshb9dMkh3yGvyARJRAHMGVuxiQRGhUsppump`
 - flow below pace: blocked 44, ran 9, dumped 28, flat 5, open 2 (saving losses: keep it)
-  - ran: Pekka up to 1.81x  
-    CA `BQ3yawMJwU7RCoFagJ3Go7AYMBDxzeNAKiRC2qTbpump`
   - ran: Link up to 1.57x  
     CA `7kqWni27vRVCKjcuBAmAbs8t7PxXgxdEjUSyRfeFpump`
   - ran: CHICKPOT up to 1.55x  
     CA `8B6ZZAC2FQ7AJrZPz7veXJrod5t2MG1C5MZBLNbUpump`
+  - ran: Donkey up to 1.57x  
+    CA `G8Lf8uthQp5YHoswQZDRdeRxaWiUqnNFNoZ45y68pump`
 - near the high / chasing: blocked 39, ran 6, dumped 31, flat 1, open 1 (saving losses: keep it)
   - ran: AMD up to 2.02x  
     CA `3MfZ4URVxmB4mfPuy4AxUxpcC5U7aXe7TDA7XVoGpump`
@@ -134,13 +134,6 @@ A skip "ran" if the coin reached the first target (1.5x) from the skip price bef
     CA `2UxjHoidyefQxJrCS8qT23JsbqKFcpPCa8ywBYZupump`
   - ran: ORBIE up to 1.83x  
     CA `HEb2dwDNbBhnrCusoNXXvba9MymYTTmMQcHKaptxmfun`
-- other: blocked 18, ran 5, dumped 11, flat 0, open 2 (saving losses: keep it)
-  - ran: DESSA up to 1.54x  
-    CA `npz2FhoufQ7pKqhGpaipYWacrAkidyW2yDpVWSvpump`
-  - ran: MACHKA up to 1.52x  
-    CA `CG1DmSiMXw9WjQXCzP5JDnma5BDY3Cks9bRTdXNLpump`
-  - ran: BLOOM up to 1.74x  
-    CA `ExdQxJcXzNzhW6CC9phvoEVpKvJQJyg98CE228Uxpump`
 - falling knife (code): blocked 18, ran 4, dumped 13, flat 1, open 0 (saving losses: keep it)
   - ran: DESSA up to 1.54x  
     CA `npz2FhoufQ7pKqhGpaipYWacrAkidyW2yDpVWSvpump`
@@ -148,6 +141,13 @@ A skip "ran" if the coin reached the first target (1.5x) from the skip price bef
     CA `HEb2dwDNbBhnrCusoNXXvba9MymYTTmMQcHKaptxmfun`
   - ran: inu up to 1.5x  
     CA `Bid8i1ocWssjRmKh2kcUfHxD1K6Sk7E5pV2PSVdepump`
+- other: blocked 17, ran 5, dumped 10, flat 0, open 2 (saving losses: keep it)
+  - ran: DESSA up to 1.54x  
+    CA `npz2FhoufQ7pKqhGpaipYWacrAkidyW2yDpVWSvpump`
+  - ran: MACHKA up to 1.52x  
+    CA `CG1DmSiMXw9WjQXCzP5JDnma5BDY3Cks9bRTdXNLpump`
+  - ran: BLOOM up to 1.74x  
+    CA `ExdQxJcXzNzhW6CC9phvoEVpKvJQJyg98CE228Uxpump`
 - thin 5m volume: blocked 17, ran 3, dumped 9, flat 4, open 1 (saving losses: keep it)
   - ran: DESSA up to 1.54x  
     CA `npz2FhoufQ7pKqhGpaipYWacrAkidyW2yDpVWSvpump`
@@ -198,15 +198,15 @@ Nothing has a positive edge after costs yet. All 359 settled coins averaged -10.
 - [2026-11-02 20:25] I expected Slingoor, a clean MIGRATED leader with $25k of 5m flow at pace and a 0.77 buy share, to retest its $408k high from $304k. It never went green (0.98x peak) and hit the -20% stop in 2 minutes, a -$2.86 probe. My own thesis admitted there was no printed higher low after a peak only 6 minutes old, so this confirms the money-shape rule: buy share and flow are not structure (V1, V6). Next time a MIGRATED pullback with no higher low above the hourly low is a PASS with blocker "no higher low", not a probe. This is one loss, so it adds no new ban beyond the rule I already have.
 
 ## Meta right now
-Not quiet: about six of the fifteen movers have real 5-minute flow, and they share a pattern of fresh (roughly 10 minutes to 1 hour old), crude or joke names and animal mascots, with 1-hour pumps running hot and fading fast. Two themes carry the flow: meme mood and reaction names (COPE at $101k cap with $63k 5m and 88% buys; "aaaaaaaaaaaaaaaa" at $66k with $34k 5m and 59% buys; FAHHHH, but its $103k 5m on a $16k cap is about 6x market cap, a churn or farm smell, so pass for now) and animal mascots (voicecat at $21.5k with $13k 5m and 62% buys, still on the bonding curve). Penguin is the vamp lesson: both Penguin copies are down 64-98% with near-zero 5m flow, and The Democrat Cat (political-adjacent name, $124k cap) has dried to $1.3k 5m, so political-adjacent names look like they're fading, which matches the crawler's headlines about political memecoins sinking (headlines only, unverified as a meta read). Setups to research, not buy: COPE and voicecat first (voicecat clears the $10k 5m bar on the bonding curve); Horny is +517% but only $5.3k 5m, below the bar. Correction: the crawler's Edmond figures ($47k cap, $11.8k 5m, +25%) don't match the scan (about $28k cap, $2.9k 5m, -67% 1h), so it fails the MIGRATED screen and is dropped. Paper only, not financial advice.
+Not quiet: nine of the fifteen movers print at least $1.5k of 5-minute volume, and most of the flow sits in pump.fun launches under about 6 hours old. Three themes repeat across several coins: cat mascots (CAT, Meow Cult, the VoiceCat copies), reaction and crude-joke names (Horny, aaaaaaaaaaaaaaaa, plus one slur-named coin I won't name or touch), and fresh pump.fun bonding-curve launches with buyers (NEARFUN, CAT). Rising: fresh pump.fun tokens with 50-60% buys. Fading: the pumpswap copies and anything that pumped and then dumped (VoiceCat -94%, aaaa -74%, Lizard -67%, Gavel Drop -40%), so copies of a name die fast and the original is the only one worth a look. The crawler's named coins (COPE, Penguin, Edmond, political tickers) and its political headlines don't appear in this scan, so I'm treating them as news, not as the meta. Setups to research, not buy: NEARFUN ($19.8k cap, $16.2k 5m, 53% buys, still on the curve) and CAT ($18k cap, $13.1k 5m, 53% buys, but +492% in 1h, so it's a chase risk and I'd wait for a clean chart). Horny and Gavel Drop have good buyer ratios but sit under the $10k 5m bar. Paper only, not financial advice.
 
 ## Moving most in its scans, last 30 min (1h volume)
-- VC: $289,848 1h vol, $2,702 mcap, -94% 1h  
+- COGE: $521,091 1h vol, $308,573 mcap, +590% 1h  
+  CA `ES9FintJPSGcoVuJhkLAsfSoug6B69bDoeTb3hJYpump`
+- VC: $246,665 1h vol, $2,679 mcap, -96% 1h  
   CA `EiYnLUuc8ondojNx7aBBq6gcrYESop3qe6fXHnswpump`
-- AAAAAAAAAAAAA: $269,111 1h vol, $15,947 mcap, -74% 1h  
-  CA `Bi59TGKZgLa7zVRz1BX3yPg6Cj8wWfZwfNc5FaCApump`
-- LIZARD: $140,212 1h vol, $5,480 mcap, -83% 1h  
-  CA `A39LprdkW88LqaXKmAvnoH3EjTJ5uMQynsRbWzEjLmsU`
+- COGE: $144,957 1h vol, $3,055,897 mcap, +155% 1h  
+  CA `8UQdy5sHMVWUWSHeA5B3ZuuAVNumjSLPXdf19MXcpump`
 - GTA: $138,793 1h vol, $1,780 mcap, -99% 1h  
   CA `9vrEeQSTctTPSCdzbiHWLrb4xcjSn91YcoJFLDyopump`
 - GAVELDROP: $131,343 1h vol, $207,463 mcap, -40% 1h  
