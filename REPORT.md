@@ -1,13 +1,13 @@
 # Trencher live report
 
-Updated 2026-11-05T23:19:39Z (paper trading, never real money)
+Updated 2026-11-05T23:34:52Z (paper trading, never real money)
 
 - Equity: $74.23 (-25.8% vs $100 start)
 - Closed trades: 22, 3 wins
 - Fees paid: $14.78 (axiom $2.81, network $9.18, pool $2.66), plus $4.15 lost to slippage
 - New trades: WATCH-ONLY (scans and decides, buys nothing)
-- Brain: subscription, claude-haiku-5-5 for routine calls, claude-opus-5-5 for the daily review; 489 routine calls and 0 plan-limit hits in 48h
-- Watch log: 102 coins being followed, 1060 filed, 0 would-buys (6h follow, sampled every 2 min)
+- Brain: subscription, claude-haiku-5-5 for routine calls, claude-opus-5-5 for the daily review; 492 routine calls and 0 plan-limit hits in 48h
+- Watch log: 98 coins being followed, 1067 filed, 0 would-buys (6h follow, sampled every 2 min)
 
 ## Scorecard (after fees)
 - 22 closed, 3 won (14%), net $-25.79
@@ -73,9 +73,15 @@ Updated 2026-11-05T23:19:39Z (paper trading, never real money)
   CA `H4gHnZ3NCU7Z9XQwGX6YYJNyieGEW8pqwGRUcdSxpump`
 
 ## Last scan
-- 23:19Z: 12 coins, 10 with pairs, 0 passed the market filters, 0 researched
+- 23:34Z: 4 coins, 3 with pairs, 0 passed the market filters, 0 researched
 
 ## Coins it looked at, and why it passed
+- 23:32Z COGE (MIGRATED, $373,394 mcap, $8,769 5m vol): PASS at conviction 3, PASS: flow at 0.51x pace on a MIGRATED coin, and the first resistance is only 1.2x away. A bigger same-ticker copy is taking half the crowd. (V1, V3, V6)  
+  CA `ES9FintJPSGcoVuJhkLAsfSoug6B69bDoeTb3hJYpump`
+- 23:27Z sssdfg (MIGRATED, $90,695 mcap, $180,932 5m vol): PASS at conviction 3, PASS. Keyboard-mash name, 18 copies, five minutes old, up 111% on the 5m with no higher low printed. Blockers: chasing spike, too new, no higher low, target too close.  
+  CA `BQjiYCutv9LVtbgj7pKCN2Ce6k2eUM5RSKs6kDAzpump`
+- 23:23Z COGE (MIGRATED, $2,608,366 mcap, $3,104 5m vol): PASS at conviction 3, PASS: flow at 0.69x pace, first resistance only 1.21x away, and the site doesn't show this CA. A DOGE-riff copy with nothing new behind it (V1, V6, V13).  
+  CA `8UQdy5sHMVWUWSHeA5B3ZuuAVNumjSLPXdf19MXcpump`
 - 23:18Z MuseX402 (FINAL_STRETCH, $20,903 mcap, $13,938 5m vol): REJECT, Top 10 hold 30.2% ex-pool (>25%) (V13)  
   CA `8UNQV1W9tV13YKJ2kn48yLbrqNmFiYNN43RL6S49pump`
 - 23:15Z GATO (MIGRATED, $10,907,627 mcap, $2,656 5m vol): REJECT, Dev holds 3.3% (>1%) (V13, V17)  
@@ -90,12 +96,6 @@ Updated 2026-11-05T23:19:39Z (paper trading, never real money)
   CA `FqJu1nmcNP8fCJfAW7Y4dGmp6fF9iF2RxrqMSFAcpump`
 - 22:49Z GLITCH (MIGRATED, $3,344,745 mcap, $3,208 5m vol): REJECT, Top 10 hold 28.1% ex-pool (>25%) (V13)  
   CA `8Xg89xT8Ve34sKiYqYuMs46mycREsCA2F362UscRpump`
-- 22:48Z Bubbles (MIGRATED, $171,720 mcap, $8,075 5m vol): PASS at conviction 2, PASS: Bubbles is sitting at its high after a +274% hour, under an hour old, with 16 copies of the ticker. Blocker "chasing" (V1, V6).  
-  CA `DNerJKigs1xZ5rCBDtU9a2ACxvskScMnSihWY9yYpump`
-- 22:47Z COGE (MIGRATED, $308,573 mcap, $16,605 5m vol): PASS at conviction 3, PASS: 5m flow is 0.38x its hourly pace and no higher low has printed. Seven copies of the theme, and the site's domain is 0 days old. (V1, V3, V6)  
-  CA `ES9FintJPSGcoVuJhkLAsfSoug6B69bDoeTb3hJYpump`
-- 22:38Z BFN (FINAL_STRETCH, $20,964 mcap, $2,192 5m vol): REJECT, Top 10 hold 29.0% ex-pool (>25%) (V13)  
-  CA `2WBx8bdnKC2PrY1hvbCjDSkYy2JLhPMda5UemmuBWDEW`
 
 ## What its skips did next (last 48h)
 A skip "ran" if the coin reached the first target (1.5x) from the skip price before a 20% drop, "dumped" if the drop came first. Sampled every 10 min, followed 6h.
@@ -106,14 +106,14 @@ A skip "ran" if the coin reached the first target (1.5x) from the skip price bef
     CA `HkyNkVXpJWg1H7hAWjnSW58J22Cx7gnWwUHhFtf5pump`
   - ran: SUPERBOWL up to 1.61x  
     CA `92j5cWKjdVKDC7skBw1HjvYtrTU8nMM1zKjC4dqmpump`
-- too new / sniping: blocked 51, ran 5, dumped 43, flat 3, open 0 (saving losses: keep it)
+- too new / sniping: blocked 52, ran 5, dumped 43, flat 3, open 1 (saving losses: keep it)
   - ran: AMD up to 1.61x  
     CA `GCEEdGYx17shhJyudBTAHYAgcTEpKzntyiiqysmUpump`
   - ran: POLY up to 1.65x  
     CA `DMgry6A9C6U6jopS7bAawukAvAcgpUvWfJULcbnfpump`
   - ran: Doge up to 1.72x  
     CA `9CRbVZxQshb9dMkh3yGvyARJRAHMGVuxiQRGhUsppump`
-- flow below pace: blocked 43, ran 9, dumped 27, flat 5, open 2 (saving losses: keep it)
+- flow below pace: blocked 43, ran 8, dumped 27, flat 5, open 3 (saving losses: keep it)
   - ran: Link up to 1.57x  
     CA `7kqWni27vRVCKjcuBAmAbs8t7PxXgxdEjUSyRfeFpump`
   - ran: CHICKPOT up to 1.55x  
@@ -201,13 +201,13 @@ Nothing has a positive edge after costs yet. All 359 settled coins averaged -10.
 Not quiet: nine of the fifteen movers print at least $1.5k of 5-minute volume, and most of the flow sits in pump.fun launches under about 6 hours old. Three themes repeat across several coins: cat mascots (CAT, Meow Cult, the VoiceCat copies), reaction and crude-joke names (Horny, aaaaaaaaaaaaaaaa, plus one slur-named coin I won't name or touch), and fresh pump.fun bonding-curve launches with buyers (NEARFUN, CAT). Rising: fresh pump.fun tokens with 50-60% buys. Fading: the pumpswap copies and anything that pumped and then dumped (VoiceCat -94%, aaaa -74%, Lizard -67%, Gavel Drop -40%), so copies of a name die fast and the original is the only one worth a look. The crawler's named coins (COPE, Penguin, Edmond, political tickers) and its political headlines don't appear in this scan, so I'm treating them as news, not as the meta. Setups to research, not buy: NEARFUN ($19.8k cap, $16.2k 5m, 53% buys, still on the curve) and CAT ($18k cap, $13.1k 5m, 53% buys, but +492% in 1h, so it's a chase risk and I'd wait for a clean chart). Horny and Gavel Drop have good buyer ratios but sit under the $10k 5m bar. Paper only, not financial advice.
 
 ## Moving most in its scans, last 30 min (1h volume)
-- NEARFUN: $103,140 1h vol, $2,864 mcap, -76% 1h  
-  CA `nearFUCFULHhJy2iyJUkAHqxHcEn4La8PbAH1coy5dS`
+- COGE: $205,994 1h vol, $373,394 mcap, +66% 1h  
+  CA `ES9FintJPSGcoVuJhkLAsfSoug6B69bDoeTb3hJYpump`
+- sssdfg: $186,754 1h vol, $90,695 mcap, +150% 1h  
+  CA `BQjiYCutv9LVtbgj7pKCN2Ce6k2eUM5RSKs6kDAzpump`
+- LIFE: $89,928 1h vol, $22,825 mcap, -38% 1h  
+  CA `DLPeij9Bbs1XS27Re7eGcfd19ScXFr3obAuZuXespump`
 - GAVELDROP: $69,267 1h vol, $229,875 mcap, +0% 1h  
   CA `9mWrj77gDZ7w4rwHF6STYXDZmYRMyf39L4go1mXepump`
-- CAT: $66,699 1h vol, $2,639 mcap, -13% 1h  
-  CA `9wR7RuRRU9pHNvpoyuSYxCFS4TsX3e3kQtAW5ARFpump`
-- TOYS4KIDS: $63,593 1h vol, $35,567 mcap, -6% 1h  
-  CA `FqJu1nmcNP8fCJfAW7Y4dGmp6fF9iF2RxrqMSFAcpump`
-- Horny: $50,887 1h vol, $4,873 mcap, -83% 1h  
-  CA `7oouLaJjqFVGRS1ZjGrPLRLTAx9pGpRtoAfydQcrpump`
+- Bubbles: $61,753 1h vol, $185,341 mcap, +26% 1h  
+  CA `DNerJKigs1xZ5rCBDtU9a2ACxvskScMnSihWY9yYpump`
