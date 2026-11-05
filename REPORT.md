@@ -1,13 +1,13 @@
 # Trencher live report
 
-Updated 2026-11-05T01:19:09Z (paper trading, never real money)
+Updated 2026-11-05T01:34:14Z (paper trading, never real money)
 
 - Equity: $74.23 (-25.8% vs $100 start)
 - Closed trades: 22, 3 wins
 - Fees paid: $14.78 (axiom $2.81, network $9.18, pool $2.66), plus $4.15 lost to slippage
 - New trades: WATCH-ONLY (scans and decides, buys nothing)
-- Brain: subscription, claude-haiku-5-5 for routine calls, claude-opus-5-5 for the daily review; 512 routine calls and 1 plan-limit hits in 48h
-- Watch log: 130 coins being followed, 674 filed, 0 would-buys (6h follow, sampled every 2 min)
+- Brain: subscription, claude-haiku-5-5 for routine calls, claude-opus-5-5 for the daily review; 513 routine calls and 1 plan-limit hits in 48h
+- Watch log: 128 coins being followed, 681 filed, 0 would-buys (6h follow, sampled every 2 min)
 
 ## Scorecard (after fees)
 - 22 closed, 3 won (14%), net $-25.79
@@ -73,9 +73,19 @@ Updated 2026-11-05T01:19:09Z (paper trading, never real money)
   CA `H4gHnZ3NCU7Z9XQwGX6YYJNyieGEW8pqwGRUcdSxpump`
 
 ## Last scan
-- 01:17Z: 6 coins, 6 with pairs, 2 passed the market filters, 2 researched
+- 01:33Z: 4 coins, 4 with pairs, 0 passed the market filters, 0 researched
 
 ## Coins it looked at, and why it passed
+- 01:31Z JOB (MIGRATED, $3,911,715 mcap, $4,234 5m vol): PASS at conviction 2, PASS. $3.9M cap, 5m volume $4.2k at 0.65x pace, sellers outnumber buyers 29 to 12, and the project's own site doesn't show the CA. Nothing to buy here (V1, V6, V13).  
+  CA `9Pq7aLAbhDG2tTnS22cm6kuysZVcZpLFE368HWuypump`
+- 01:30Z inu (MIGRATED, $38,340 mcap, $9,219 5m vol): REJECT, Top 10 hold 29.1% ex-pool (>25%) (V13)  
+  CA `Bid8i1ocWssjRmKh2kcUfHxD1K6Sk7E5pV2PSVdepump`
+- 01:30Z PIRATE (MIGRATED, $301,498 mcap, $56,597 5m vol): PASS at conviction 3, PASS: PIRATE is 7.5% off a $326k high, 14 minutes old, with no higher low and a 3.4x volume spike. That's chasing a migration spike, not a pullback (V1, V6).  
+  CA `2StNe98imN7M6K341a7a4xvc8eNTvLCde5EugAKfLoat`
+- 01:21Z NUTS (MIGRATED, $46,866 mcap, $2,422 5m vol): REJECT, Top 10 hold 27.6% ex-pool (>25%) (V13)  
+  CA `6GjZvj8aT5t4jEi7xiMkK3nqqKNiYVes1n5Va8Zfpump`
+- 01:21Z SI (FINAL_STRETCH, $20,419 mcap, $3,402 5m vol): REJECT, Top 10 hold 27.9% ex-pool (>25%) (V13)  
+  CA `3AU9sxnfp1a6yziQjJxgBi1sXVUry6wkxokDBAHhpump`
 - 01:18Z Democat (MIGRATED, $862,806 mcap, $3,648 5m vol): PASS at conviction 2, PASS: 5m flow is $3.6k at 0.45x hourly pace, no breakout off a 21% pullback, and the Democrat-cat theme is fading with no catalyst. Political lane with a day-old site that doesn't show the CA. (V1, V6, V13)  
   CA `9Y1F6dZ6HpjZDYZdYuUGwMbkUiPsyU7WPTqTQU4Tpump`
 - 01:17Z mspaint (MIGRATED, $53,096 mcap, $36,801 5m vol): REJECT, Top 10 hold 26.3% ex-pool (>25%) (V13)  
@@ -86,16 +96,6 @@ Updated 2026-11-05T01:19:09Z (paper trading, never real money)
   CA `7F8BkfhPaDGMeNkaYeVa99WAqo86LpXDKsLQXpM7pump`
 - 01:06Z CALLINU (no setup, $18,473 mcap, $7,581 5m vol): REJECT, No setup fits: not Final Stretch, not a migrated runner, not a healthy dip  
   CA `79zuA7obQuVMdCWTdkS7uEY7KkctYyZF9nSjaFPVpump`
-- 01:05Z GAVELDROP (MIGRATED, $597,972 mcap, $6,608 5m vol): REJECT, Bundles: 10 linked wallet cluster(s) hold 47.8% of supply (>20%) (V17)  
-  CA `9mWrj77gDZ7w4rwHF6STYXDZmYRMyf39L4go1mXepump`
-- 01:04Z fsjal (FINAL_STRETCH, $24,862 mcap, $2,839 5m vol): REJECT, RugCheck danger: Low Liquidity $119.63  
-  CA `EvhNHxVDH16MZzcaFg8BP5pFX4rezTRUTbu2EbtJpump`
-- 01:03Z MOGE (MIGRATED, $116,755 mcap, $27,383 5m vol): REJECT, Dev holds 1.4% (>1%) (V13, V17)  
-  CA `Dc8qw7K8ohS74ZS1rHknvsuxnxV9hkJBCYNzX3gdpump`
-- 00:58Z nuLL (MIGRATED, $178,795 mcap, $3,185 5m vol): REJECT, Dev holds 5.2% (>1%) (V13, V17)  
-  CA `A72sK9mPWTvU4f5RQFy7upBCeJi9HZx3Q2Wgr7QBnuLL`
-- 00:56Z GATO (MIGRATED, $10,597,901 mcap, $5,411 5m vol): REJECT, Dev holds 3.3% (>1%) (V13, V17)  
-  CA `HsprHxBRgiVaQdRf3TnKNuZZtaX9JUSPgMFdAkk6pump`
 
 ## What its skips did next (last 48h)
 A skip "ran" if the coin reached the first target (1.5x) from the skip price before a 20% drop, "dumped" if the drop came first. Sampled every 10 min, followed 6h.
@@ -106,14 +106,14 @@ A skip "ran" if the coin reached the first target (1.5x) from the skip price bef
     CA `7uHBhrdN1UNf1vggnvoZMHVA6Du4NQe2USP2oMnYpump`
   - ran: WORKER up to 1.84x  
     CA `9DwPa8v7DTCgPWEgXbCLeg7F5FpruHHTHCsNnjR9pump`
-- too new / sniping: blocked 61, ran 9, dumped 51, flat 1, open 0 (saving losses: keep it)
+- too new / sniping: blocked 60, ran 8, dumped 50, flat 1, open 1 (saving losses: keep it)
   - ran: SNOWMEI up to 1.76x  
     CA `ETVD787UcTkJqrhZMt15bVet7CQ4SDzCga7DfBm8pump`
   - ran: GTAVI up to 2.31x  
     CA `HekahVohmeokPUhscg5taNme3Qs2fcSQoNgEeUPMpump`
   - ran: PEPTDOG up to 1.88x  
     CA `GExwMYa2tnJwGfKTmzR4ERiQKptfNceN9GTXc82Lpump`
-- flow below pace: blocked 54, ran 10, dumped 36, flat 4, open 4 (saving losses: keep it)
+- flow below pace: blocked 54, ran 10, dumped 37, flat 5, open 2 (saving losses: keep it)
   - ran: Wanted up to 1.53x  
     CA `8oUGdPdyxVaCSJSZpcVZuxqoyiZAmc2Z22FsDRZ3pump`
   - ran: METEORITE up to 1.58x  
@@ -199,13 +199,13 @@ No. After costs, every bucket loses money. Across 355 settled coins the simple p
 Meta: the trenches are running on animal and dog "Inu" names, fresh "call/callout" names, and crude joke names, mostly under $110k market cap and under an hour old. Rising (5m pace at or above hourly pace): PIGGY (+735% 1h, $24k cap), CALLINU (+335%, $20k), MOGE (+173%, $111k cap, $22.6k 5m, 66% buys, about 12 min old) and CALL (+156%, $97k cap, $58.6k 5m, 59% buys). Fading: Chihuahua, NUTS, SI, INFOMO and PENNY (-62%), with 5m running at roughly 20-40% of hourly pace, and GATO (GTA6CAT, 71 days old, $10.6M, 35% buys) is dead money; GTA (Grab That Ass) holds at $3M on 80% buys but is flat on the hour. The web does not confirm the political flow the crawler is seeing (Democat, $LAPTOP, midterms): none of it is in the movers, and the $LAPTOP collapse is a reason to stay out of that lane. Setups to research only, no entry: MOGE on a pullback that keeps 5m volume above $10k (conviction about 4, so pass until holder, dev and bundle checks run and similar tokens confirm it is the original); CALL on a pullback, treating the "call" name as a call-channel farm risk until proven otherwise (V7); PIGGY and CALLINU fail the $10k 5m bar and are chases after +300%, so pass. Paper trading only, not financial advice.
 
 ## Moving most in its scans, last 30 min (1h volume)
-- CALL: $646,619 1h vol, $96,534 mcap, +156% 1h  
-  CA `7UooapEDmXmP5hRJPoYvXqYDWMVh15Gi59gYu7hopump`
 - SLOP: $282,275 1h vol, $111,420 mcap, -21% 1h  
   CA `3SpVLU6UAYi7rqJxgWmsZYmfU5kvVTDK6HFxGPefLoat`
+- PIRATE: $199,080 1h vol, $294,713 mcap, +109% 1h  
+  CA `2StNe98imN7M6K341a7a4xvc8eNTvLCde5EugAKfLoat`
 - GTA: $178,872 1h vol, $2,955,963 mcap, -5% 1h  
   CA `7F8BkfhPaDGMeNkaYeVa99WAqo86LpXDKsLQXpM7pump`
 - mspaint: $137,671 1h vol, $53,096 mcap, +17% 1h  
   CA `FRAaAZeDEgiRytZ5Mq5ZXuExEeHcoidQ8qRRZPZJpump`
-- GAVELDROP: $104,579 1h vol, $597,972 mcap, +12% 1h  
-  CA `9mWrj77gDZ7w4rwHF6STYXDZmYRMyf39L4go1mXepump`
+- AMD: $122,547 1h vol, $1,845 mcap, -100% 1h  
+  CA `5tdWkbqhTqVyPmksqX8WVKrHbjjqmvQfrMGwZoZPpump`
