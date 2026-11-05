@@ -1,13 +1,13 @@
 # Trencher live report
 
-Updated 2026-11-05T19:02:26Z (paper trading, never real money)
+Updated 2026-11-05T19:17:34Z (paper trading, never real money)
 
 - Equity: $74.23 (-25.8% vs $100 start)
 - Closed trades: 22, 3 wins
 - Fees paid: $14.78 (axiom $2.81, network $9.18, pool $2.66), plus $4.15 lost to slippage
 - New trades: WATCH-ONLY (scans and decides, buys nothing)
 - Brain: subscription, claude-haiku-5-5 for routine calls, claude-opus-5-5 for the daily review; 506 routine calls and 0 plan-limit hits in 48h
-- Watch log: 96 coins being followed, 995 filed, 0 would-buys (6h follow, sampled every 2 min)
+- Watch log: 94 coins being followed, 999 filed, 0 would-buys (6h follow, sampled every 2 min)
 
 ## Scorecard (after fees)
 - 22 closed, 3 won (14%), net $-25.79
@@ -73,9 +73,13 @@ Updated 2026-11-05T19:02:26Z (paper trading, never real money)
   CA `H4gHnZ3NCU7Z9XQwGX6YYJNyieGEW8pqwGRUcdSxpump`
 
 ## Last scan
-- 19:02Z: 2 coins, 2 with pairs, 0 passed the market filters, 0 researched
+- 19:16Z: 5 coins, 5 with pairs, 0 passed the market filters, 0 researched
 
 ## Coins it looked at, and why it passed
+- 19:14Z COGE (MIGRATED, $104,310 mcap, $79,049 5m vol): REJECT, RugCheck danger: Creator history of rugged tokens  
+  CA `M5gr5LtdPHNS3SsKx7qeC4cqznxFbJNVqEkUyxqpump`
+- 19:05Z COGE (MIGRATED, $98,538 mcap, $99,903 5m vol): PASS at conviction 3, PASS: split crowd. This is a copy in a 20-coin COGE field, and it isn't the leader. The DWdB... CA is doing $163k on 5m to this one's $100k, and this one is up 38% in five minutes, so it's chasing. (V1, V3, V6)  
+  CA `Fa93AEKdk5GJovkJseEjQ4geYuadFLimbKgy3BiPwiwS`
 - 19:01Z COGE (MIGRATED, $233,089 mcap, $78,474 5m vol): PASS at conviction 2, PASS: chasing a +102% five-minute spike at the high, in a vamp field where a bigger same-name coin leads the flow. Blockers: chasing spike, split crowd, no higher low. (V1, V6)  
   CA `FsTN7q7wVywYsCNBKfA7R1fJ97rADdvrMMtNSBWYpump`
 - 18:58Z PHILCOIN (DIP, $102,510 mcap, $2,816 5m vol): PASS at conviction 3, PASS. Philcoin is a 52% dip with no story left: 5m flow is $2.8k with sellers in charge, and no catalyst. Blocker: no catalyst, dead story. (V1, V6, V13)  
@@ -92,14 +96,10 @@ Updated 2026-11-05T19:02:26Z (paper trading, never real money)
   CA `HsprHxBRgiVaQdRf3TnKNuZZtaX9JUSPgMFdAkk6pump`
 - 18:41Z Chewchan (MIGRATED, $162,805 mcap, $36,117 5m vol): REJECT, Top 10 hold 28.0% ex-pool (>25%) (V13)  
   CA `GMdkBYSKJuWnqd4vGdSnxiELNQTPhMhvdCmPb77dpump`
-- 18:40Z GAVELDROP (DIP, $671,918 mcap, $4,498 5m vol): REJECT, Dip with fading attention is a falling knife, not a dip (5m at 0.53x the hour's pace, under 0.6x)  
-  CA `9mWrj77gDZ7w4rwHF6STYXDZmYRMyf39L4go1mXepump`
-- 18:39Z GTA (MIGRATED, $545,668 mcap, $14,489 5m vol): PASS at conviction 2, PASS: 90% off a $5.7M peak, 5m flow at 0.57x its hourly pace, theme at 0.63x, and the site is 0.9 days old without this CA. Falling knife in a 23-coin ticker field (V1, V3, V13).  
-  CA `7F8BkfhPaDGMeNkaYeVa99WAqo86LpXDKsLQXpM7pump`
 
 ## What its skips did next (last 48h)
 A skip "ran" if the coin reached the first target (1.5x) from the skip price before a 20% drop, "dumped" if the drop came first. Sampled every 10 min, followed 6h.
-- top 10 over 25%: blocked 72, ran 12, dumped 55, flat 2, open 3 (saving losses: keep it)
+- top 10 over 25%: blocked 71, ran 12, dumped 54, flat 2, open 3 (saving losses: keep it)
   - ran: OPOL up to 2.02x  
     CA `7R6AYvHyU5MyaTt5MPtRdt2daRUKedvCz8CXZkaspump`
   - ran: MEMECOIN up to 1.5x  
@@ -120,14 +120,14 @@ A skip "ran" if the coin reached the first target (1.5x) from the skip price bef
     CA `BQ3yawMJwU7RCoFagJ3Go7AYMBDxzeNAKiRC2qTbpump`
   - ran: Link up to 1.57x  
     CA `7kqWni27vRVCKjcuBAmAbs8t7PxXgxdEjUSyRfeFpump`
-- near the high / chasing: blocked 39, ran 5, dumped 30, flat 2, open 2 (saving losses: keep it)
+- near the high / chasing: blocked 40, ran 5, dumped 30, flat 2, open 3 (saving losses: keep it)
   - ran: AMD up to 2.02x  
     CA `3MfZ4URVxmB4mfPuy4AxUxpcC5U7aXe7TDA7XVoGpump`
   - ran: PayIF up to 1.56x  
     CA `FfuBMS3rh9M61apXJDs14yAngVnYLWR7xkcX5FxMpump`
   - ran: SAN up to 1.63x  
     CA `8kfp8MzuFuj3vrnmG3KBcYVctYmu2JYerdFhPnX4pump`
-- RugCheck danger: blocked 30, ran 8, dumped 20, flat 1, open 1 (saving losses: keep it)
+- RugCheck danger: blocked 31, ran 8, dumped 20, flat 1, open 2 (saving losses: keep it)
   - ran: RAM up to 1.63x  
     CA `72QNkZqiTBsq5dvn4DEwaC5qBPDkc7SZJ38xXy4jpump`
   - ran: $LIBCOIN up to 1.54x  
@@ -201,11 +201,11 @@ Not quiet: the movers are mostly fresh launches that fade within the hour. Four 
 ## Moving most in its scans, last 30 min (1h volume)
 - COGE: $1,393,377 1h vol, $326,395 mcap, +773% 1h  
   CA `DWdBJoNezK9itTwmPDYrScYpBxvWySxeWWV8N9RcmdrT`
-- GTA: $305,687 1h vol, $545,668 mcap, -44% 1h  
-  CA `7F8BkfhPaDGMeNkaYeVa99WAqo86LpXDKsLQXpM7pump`
-- COGE: $238,340 1h vol, $7,643 mcap, -79% 1h  
+- COGE: $780,807 1h vol, $93,276 mcap, +141% 1h  
+  CA `Fa93AEKdk5GJovkJseEjQ4geYuadFLimbKgy3BiPwiwS`
+- COGE: $246,112 1h vol, $3,185 mcap, -91% 1h  
   CA `Ch24dNtXQNWVsXEJvWihzbhzfggtMHumwKu9gVLQpump`
 - COGE: $237,876 1h vol, $206,147 mcap, +243% 1h  
   CA `FsTN7q7wVywYsCNBKfA7R1fJ97rADdvrMMtNSBWYpump`
-- Chewchan: $161,875 1h vol, $169,743 mcap, +322% 1h  
-  CA `GMdkBYSKJuWnqd4vGdSnxiELNQTPhMhvdCmPb77dpump`
+- COGE: $191,350 1h vol, $104,310 mcap, +150% 1h  
+  CA `M5gr5LtdPHNS3SsKx7qeC4cqznxFbJNVqEkUyxqpump`
