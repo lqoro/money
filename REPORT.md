@@ -1,13 +1,13 @@
 # Trencher live report
 
-Updated 2026-11-05T09:42:06Z (paper trading, never real money)
+Updated 2026-11-05T09:57:07Z (paper trading, never real money)
 
 - Equity: $74.23 (-25.8% vs $100 start)
 - Closed trades: 22, 3 wins
 - Fees paid: $14.78 (axiom $2.81, network $9.18, pool $2.66), plus $4.15 lost to slippage
 - New trades: WATCH-ONLY (scans and decides, buys nothing)
-- Brain: subscription, claude-haiku-5-5 for routine calls, claude-opus-5-5 for the daily review; 527 routine calls and 0 plan-limit hits in 48h
-- Watch log: 100 coins being followed, 848 filed, 0 would-buys (6h follow, sampled every 2 min)
+- Brain: subscription, claude-haiku-5-5 for routine calls, claude-opus-5-5 for the daily review; 525 routine calls and 0 plan-limit hits in 48h
+- Watch log: 99 coins being followed, 851 filed, 0 would-buys (6h follow, sampled every 2 min)
 
 ## Scorecard (after fees)
 - 22 closed, 3 won (14%), net $-25.79
@@ -73,9 +73,13 @@ Updated 2026-11-05T09:42:06Z (paper trading, never real money)
   CA `H4gHnZ3NCU7Z9XQwGX6YYJNyieGEW8pqwGRUcdSxpump`
 
 ## Last scan
-- 09:41Z: 7 coins, 6 with pairs, 0 passed the market filters, 0 researched
+- 09:56Z: 3 coins, 2 with pairs, 0 passed the market filters, 0 researched
 
 ## Coins it looked at, and why it passed
+- 09:50Z LEVERAGED (FINAL_STRETCH, $22,296 mcap, $3,267 5m vol): PASS at conviction 3, PASS — 5m flow is $3.3k with the theme at 0.04x its hourly pace, the site is 6 hours old and doesn't show this CA, and it's a house-run leverage casino page. Farm-shaped vamp field. (V1, V13, V16)  
+  CA `35TVjidU7ePGMWLM1r2UwEXXWCWH77kFyFndJ57xpump`
+- 09:43Z GATO (MIGRATED, $10,205,650 mcap, $3,212 5m vol): REJECT, Dev holds 3.3% (>1%) (V13, V17)  
+  CA `HsprHxBRgiVaQdRf3TnKNuZZtaX9JUSPgMFdAkk6pump`
 - 09:32Z GTA (DIP, $2,475,396 mcap, $2,662 5m vol): REJECT, Dip with fading attention is a falling knife, not a dip (5m at 0.58x the hour's pace, under 0.6x)  
   CA `7F8BkfhPaDGMeNkaYeVa99WAqo86LpXDKsLQXpM7pump`
 - 09:26Z SLAB (FINAL_STRETCH, $21,548 mcap, $7,318 5m vol): PASS, PASS — brain unavailable, not trading blind.  
@@ -92,10 +96,6 @@ Updated 2026-11-05T09:42:06Z (paper trading, never real money)
   CA `25Lrwta8CGeMt3pmxy7DivhJzRzBp5Ne76bdaxbPpump`
 - 09:04Z Retail (FINAL_STRETCH, $20,705 mcap, $4,735 5m vol): REJECT, RugCheck danger: Creator history of rugged tokens  
   CA `DgoVJ1Up6gi9uZM2cLjTeENZ3GdefXVVnKHtidokpump`
-- 08:58Z GATO (MIGRATED, $10,272,687 mcap, $2,859 5m vol): REJECT, Dev holds 3.3% (>1%) (V13, V17)  
-  CA `HsprHxBRgiVaQdRf3TnKNuZZtaX9JUSPgMFdAkk6pump`
-- 08:47Z GTA (DIP, $2,272,390 mcap, $3,803 5m vol): REJECT, Dip with fading attention is a falling knife, not a dip (5m at 0.58x the hour's pace, under 0.6x)  
-  CA `7F8BkfhPaDGMeNkaYeVa99WAqo86LpXDKsLQXpM7pump`
 
 ## What its skips did next (last 48h)
 A skip "ran" if the coin reached the first target (1.5x) from the skip price before a 20% drop, "dumped" if the drop came first. Sampled every 10 min, followed 6h.
@@ -106,14 +106,14 @@ A skip "ran" if the coin reached the first target (1.5x) from the skip price bef
     CA `7R6AYvHyU5MyaTt5MPtRdt2daRUKedvCz8CXZkaspump`
   - ran: MEMECOIN up to 1.5x  
     CA `592MyuZiyHCEg8YJBnGJXCpcgfaK81vKiV83M3XMpump`
-- too new / sniping: blocked 62, ran 9, dumped 51, flat 1, open 1 (saving losses: keep it)
+- too new / sniping: blocked 61, ran 9, dumped 50, flat 1, open 1 (saving losses: keep it)
   - ran: SNOWMEI up to 1.76x  
     CA `ETVD787UcTkJqrhZMt15bVet7CQ4SDzCga7DfBm8pump`
   - ran: GTAVI up to 2.31x  
     CA `HekahVohmeokPUhscg5taNme3Qs2fcSQoNgEeUPMpump`
   - ran: PEPTDOG up to 1.88x  
     CA `GExwMYa2tnJwGfKTmzR4ERiQKptfNceN9GTXc82Lpump`
-- flow below pace: blocked 51, ran 9, dumped 34, flat 5, open 3 (saving losses: keep it)
+- flow below pace: blocked 52, ran 9, dumped 34, flat 5, open 4 (saving losses: keep it)
   - ran: OMBRO up to 1.54x  
     CA `8DB8Fw5UiC1AzugQAfRyw3qL8omw772LJbdehNWhpump`
   - ran: MOGMAS up to 1.68x  
@@ -141,10 +141,10 @@ A skip "ran" if the coin reached the first target (1.5x) from the skip price bef
     CA `HEb2dwDNbBhnrCusoNXXvba9MymYTTmMQcHKaptxmfun`
   - ran: inu up to 1.5x  
     CA `Bid8i1ocWssjRmKh2kcUfHxD1K6Sk7E5pV2PSVdepump`
-- bundles over the line: blocked 20, ran 1, dumped 15, flat 3, open 1 (saving losses: keep it)
+- bundles over the line: blocked 19, ran 1, dumped 14, flat 3, open 1 (saving losses: keep it)
   - ran: MAMESUKE up to 1.95x  
     CA `SCGBBnSwnekytGFHgyeHHxPMiN7xDxsWFGg9JgFSTNK`
-- dev share over 1%: blocked 18, ran 0, dumped 14, flat 4, open 0 (saving losses: keep it)
+- dev share over 1%: blocked 18, ran 0, dumped 14, flat 3, open 1 (saving losses: keep it)
 - thin 5m volume: blocked 17, ran 4, dumped 9, flat 4, open 0 (saving losses: keep it)
   - ran: DESSA up to 1.54x  
     CA `npz2FhoufQ7pKqhGpaipYWacrAkidyW2yDpVWSvpump`
@@ -199,13 +199,13 @@ No. After costs, every bucket loses money. Across 355 settled coins the simple p
 Not quiet, but the crawler's coin numbers don't match scan_movers. Inu, Defective Acceleration, the Pokémon coins and the joke launches aren't in the list, and d/acc shows $19.8k mcap, not $47k, so I'm reading only the movers. Two themes are rising: game and pop-culture nostalgia (ZELDA +448% 1h on $44k 5m with 60% buys, GTA6CAT in the same lane but thin at $3.3k 5m) and trading-jargon launches (Retail +528%, LEVERAGED +243%, PerpsNow +99%), though those three sit under the $10k 5m bar. A political lane is getting real money (Democat at $804k mcap with $4.4k 5m and 70% buys; GAVELDROP at $753k with $10.8k 5m and 78% buys), but it's a meme riding midterm noise, so I'd treat it as higher risk and research-only; d/acc (-55% 1h), Short Pad (-69%) and GIF are fading. Setups to research now: ZELDA first, checking global fees against roughly 27 SOL for a $267k cap and bundles before anything, and GAVELDROP as the cleaner-looking flow; Mei (+811% on a six-minute-old launch, $37k 5m on a $30k cap) is farm-shaped, so watch only. Everything is unverified; paper only, not financial advice.
 
 ## Moving most in its scans, last 30 min (1h volume)
-- ZELDA: $470,035 1h vol, $267,201 mcap, +448% 1h  
-  CA `9okwT7syLTFXDv4W64Xp7QUgTx6yKE82SDjzitHNpump`
-- d/acc: $149,659 1h vol, $14,294 mcap, -77% 1h  
-  CA `6owbUThBCH6UhgrgW69jYM2Q1yCWocxQD8C4p1Dppump`
-- GAVELDROP: $116,556 1h vol, $752,655 mcap, +7% 1h  
-  CA `9mWrj77gDZ7w4rwHF6STYXDZmYRMyf39L4go1mXepump`
-- GIF: $79,635 1h vol, $3,140 mcap, -4% 1h  
+- Retail: $90,178 1h vol, $3,162 mcap, -92% 1h  
+  CA `DgoVJ1Up6gi9uZM2cLjTeENZ3GdefXVVnKHtidokpump`
+- GIF: $80,117 1h vol, $2,733 mcap, -16% 1h  
   CA `9MRXakh9ofc4wvDwFLQr3xAMDbSy1EVEg5aJVPxPpump`
-- LEVERAGED: $69,730 1h vol, $15,453 mcap, +459% 1h  
+- GATO: $57,649 1h vol, $10,194,867 mcap, +1% 1h  
+  CA `HsprHxBRgiVaQdRf3TnKNuZZtaX9JUSPgMFdAkk6pump`
+- GTA: $55,511 1h vol, $2,481,466 mcap, +7% 1h  
+  CA `7F8BkfhPaDGMeNkaYeVa99WAqo86LpXDKsLQXpM7pump`
+- LEVERAGED: $45,350 1h vol, $22,296 mcap, +138% 1h  
   CA `35TVjidU7ePGMWLM1r2UwEXXWCWH77kFyFndJ57xpump`
