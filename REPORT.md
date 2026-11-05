@@ -1,13 +1,13 @@
 # Trencher live report
 
-Updated 2026-11-05T03:36:52Z (paper trading, never real money)
+Updated 2026-11-05T03:52:02Z (paper trading, never real money)
 
 - Equity: $74.23 (-25.8% vs $100 start)
 - Closed trades: 22, 3 wins
 - Fees paid: $14.78 (axiom $2.81, network $9.18, pool $2.66), plus $4.15 lost to slippage
 - New trades: WATCH-ONLY (scans and decides, buys nothing)
-- Brain: subscription, claude-haiku-5-5 for routine calls, claude-opus-5-5 for the daily review; 524 routine calls and 1 plan-limit hits in 48h
-- Watch log: 125 coins being followed, 723 filed, 0 would-buys (6h follow, sampled every 2 min)
+- Brain: subscription, claude-haiku-5-5 for routine calls, claude-opus-5-5 for the daily review; 525 routine calls and 0 plan-limit hits in 48h
+- Watch log: 125 coins being followed, 726 filed, 0 would-buys (6h follow, sampled every 2 min)
 
 ## Scorecard (after fees)
 - 22 closed, 3 won (14%), net $-25.79
@@ -73,9 +73,15 @@ Updated 2026-11-05T03:36:52Z (paper trading, never real money)
   CA `H4gHnZ3NCU7Z9XQwGX6YYJNyieGEW8pqwGRUcdSxpump`
 
 ## Last scan
-- 03:36Z: 8 coins, 8 with pairs, 0 passed the market filters, 0 researched
+- 03:51Z: 7 coins, 7 with pairs, 0 passed the market filters, 0 researched
 
 ## Coins it looked at, and why it passed
+- 03:48Z JOB (MIGRATED, $4,298,874 mcap, $6,590 5m vol): PASS at conviction 4, PASS: target too close. JOB's prior high is only 1.19x away, its own site doesn't show the CA, and it's one of 12 same-ticker copies. (V1, V6, V13)  
+  CA `9Pq7aLAbhDG2tTnS22cm6kuysZVcZpLFE368HWuypump`
+- 03:47Z PIRATE (MIGRATED, $436,339 mcap, $5,766 5m vol): PASS at conviction 3, PASS — 5m flow is 0.27x its hourly pace and the pirate theme is at 0.26x. Attention is leaving, not arriving. Blocker: flow below pace (V1, V6).  
+  CA `2StNe98imN7M6K341a7a4xvc8eNTvLCde5EugAKfLoat`
+- 03:42Z jeff (MIGRATED, $1,302,188 mcap, $2,496 5m vol): REJECT, Top 10 hold 39.8% ex-pool (>25%) (V13)  
+  CA `HAsTKXYvv65zM7J6Cu5o5PcZsiKMQYo5oz4WPjgqwP6k`
 - 03:34Z GATO (MIGRATED, $10,950,896 mcap, $2,406 5m vol): REJECT, Dev holds 3.3% (>1%) (V13, V17)  
   CA `HsprHxBRgiVaQdRf3TnKNuZZtaX9JUSPgMFdAkk6pump`
 - 03:33Z AMC (MIGRATED, $195,631 mcap, $3,543 5m vol): PASS at conviction 3, PASS — 7 copies of "amc" in the field and CI leads it on 5m volume, not AMC. 5m flow is $3.5k at 0.21x pace, the website doesn't show this CA, and the domain is 10 hours old. Blocker: flow below pace. (V1, V6, V13)  
@@ -90,16 +96,10 @@ Updated 2026-11-05T03:36:52Z (paper trading, never real money)
   CA `9FCjRfsuH4ziTqE39dH2wjcpRF5necYUKYpoNtCFdwKE`
 - 03:22Z GAVELDROP (DIP, $529,088 mcap, $7,424 5m vol): REJECT, Bundles: 10 linked wallet cluster(s) hold 47.8% of supply (>20%) (V17)  
   CA `9mWrj77gDZ7w4rwHF6STYXDZmYRMyf39L4go1mXepump`
-- 03:21Z Democat (MIGRATED, $782,556 mcap, $4,681 5m vol): PASS at conviction 3, PASS: Democat is a midterm cat, and the midterm already happened yesterday. Bottom buy with no catalyst. Blocker: narrative fading, no catalyst (V1, V5).  
-  CA `9Y1F6dZ6HpjZDYZdYuUGwMbkUiPsyU7WPTqTQU4Tpump`
-- 03:20Z LEEROY (DIP, $560,592 mcap, $260,256 5m vol): PASS at conviction 3, PASS: LEEROY is a spike and dump with no printed higher low, no catalyst, and a lookalike name field. Blocker "chasing spike" plus "no higher low" (V1, V6).  
-  CA `98HEU4TvXB3xjB1t15fgxHwYDLUH4fDomvp2DCzJpump`
-- 03:19Z SLOP (DIP, $78,817 mcap, $3,635 5m vol): PASS at conviction 3, PASS — DIP on SLOP, but the joke-clone story is fading, the theme runs at 0.84x pace, and no catalyst. Blocker: "dead story." (V1, V6)  
-  CA `3SpVLU6UAYi7rqJxgWmsZYmfU5kvVTDK6HFxGPefLoat`
 
 ## What its skips did next (last 48h)
 A skip "ran" if the coin reached the first target (1.5x) from the skip price before a 20% drop, "dumped" if the drop came first. Sampled every 10 min, followed 6h.
-- top 10 over 25%: blocked 64, ran 13, dumped 47, flat 2, open 2 (saving losses: keep it)
+- top 10 over 25%: blocked 64, ran 14, dumped 47, flat 2, open 1 (saving losses: keep it)
   - ran: j*b up to 1.97x  
     CA `7uHBhrdN1UNf1vggnvoZMHVA6Du4NQe2USP2oMnYpump`
   - ran: WORKER up to 1.84x  
@@ -120,7 +120,7 @@ A skip "ran" if the coin reached the first target (1.5x) from the skip price bef
     CA `8DB8Fw5UiC1AzugQAfRyw3qL8omw772LJbdehNWhpump`
   - ran: MOGMAS up to 1.68x  
     CA `4yxnt3xAdyBFFbzMWJy9sjGEoiBNkjwdSQZ8ZyULpump`
-- near the high / chasing: blocked 40, ran 7, dumped 28, flat 3, open 2 (saving losses: keep it)
+- near the high / chasing: blocked 40, ran 8, dumped 28, flat 3, open 1 (saving losses: keep it)
   - ran: underdog up to 1.64x  
     CA `BZXh2LcnNNyypxsdfVeFzXawqmoGoSShC5i4NEQQpump`
   - ran: LUCIA up to 1.83x  
@@ -201,13 +201,13 @@ No. After costs, every bucket loses money. Across 355 settled coins the simple p
 Meta from scan_movers: two lanes are rising, one is fading. Rising: young animal names (Crypto Inu/CI at $119k with $68k 5m and 65% buys, +194% 1h; Mog Coin/MOG at $22k with $27k 5m, 67% buys, +330% 1h) and "origin of memes" lineage names (A Meme Crypto/AMC at $177k with $27k 5m, 64% buys; mspaint and Pinocoin, both under 2h old but with 5m volume only $1.5k-4.3k, below the $10k bar). Fading: the spiked joke clones (SLOP -41% 1h with $1.4k 5m, BLISS -73%, EMPATHCHAN -31%, PUMP2 -19%) and PIRATE (-25% 1h, $11k 5m, slowing). The political lane isn't in scan_movers, so I'm not calling it a theme, and the crawler's inu, mspaint and MOGE figures don't match the movers feed, so I'm using scan_movers. Setups to research, not entries, pending holder, dev and bundle checks: CI and MOG first (MOG is 0.1h old, so bundle risk is the first check), then AMC after Similar Tokens confirms the original. Paper trading only, not financial advice.
 
 ## Moving most in its scans, last 30 min (1h volume)
-- LEEROY: $1,154,880 1h vol, $567,472 mcap, +660% 1h  
-  CA `98HEU4TvXB3xjB1t15fgxHwYDLUH4fDomvp2DCzJpump`
 - MOSQUE: $304,750 1h vol, $128,801 mcap, +211% 1h  
   CA `9FCjRfsuH4ziTqE39dH2wjcpRF5necYUKYpoNtCFdwKE`
+- PIRATE: $260,189 1h vol, $435,479 mcap, -2% 1h  
+  CA `2StNe98imN7M6K341a7a4xvc8eNTvLCde5EugAKfLoat`
 - AMC: $199,219 1h vol, $195,631 mcap, +45% 1h  
   CA `6Mt1oHb12F7JvJhFqcYERPJ3YqKgMGF9b8623uFYpump`
-- CI: $180,795 1h vol, $119,392 mcap, +194% 1h  
-  CA `2z1XKwy3yBujFujGAztZubTEtayhYSaGfjM39uVMpump`
 - GTA: $161,310 1h vol, $3,631,354 mcap, +12% 1h  
   CA `7F8BkfhPaDGMeNkaYeVa99WAqo86LpXDKsLQXpM7pump`
+- GAVELDROP: $109,952 1h vol, $529,088 mcap, -18% 1h  
+  CA `9mWrj77gDZ7w4rwHF6STYXDZmYRMyf39L4go1mXepump`
