@@ -1,13 +1,13 @@
 # Trencher live report
 
-Updated 2026-11-05T14:44:52Z (paper trading, never real money)
+Updated 2026-11-05T14:59:53Z (paper trading, never real money)
 
 - Equity: $74.23 (-25.8% vs $100 start)
 - Closed trades: 22, 3 wins
 - Fees paid: $14.78 (axiom $2.81, network $9.18, pool $2.66), plus $4.15 lost to slippage
 - New trades: WATCH-ONLY (scans and decides, buys nothing)
-- Brain: subscription, claude-haiku-5-5 for routine calls, claude-opus-5-5 for the daily review; 530 routine calls and 0 plan-limit hits in 48h
-- Watch log: 88 coins being followed, 938 filed, 0 would-buys (6h follow, sampled every 2 min)
+- Brain: subscription, claude-haiku-5-5 for routine calls, claude-opus-5-5 for the daily review; 531 routine calls and 0 plan-limit hits in 48h
+- Watch log: 91 coins being followed, 939 filed, 0 would-buys (6h follow, sampled every 2 min)
 
 ## Scorecard (after fees)
 - 22 closed, 3 won (14%), net $-25.79
@@ -73,9 +73,17 @@ Updated 2026-11-05T14:44:52Z (paper trading, never real money)
   CA `H4gHnZ3NCU7Z9XQwGX6YYJNyieGEW8pqwGRUcdSxpump`
 
 ## Last scan
-- 14:44Z: 10 coins, 8 with pairs, 0 passed the market filters, 0 researched
+- 14:59Z: 8 coins, 7 with pairs, 1 passed the market filters, 1 researched
 
 ## Coins it looked at, and why it passed
+- 14:59Z ███ (DIP, $644,507 mcap, $6,296 5m vol): REJECT, Top 10 hold 26.1% ex-pool (>25%) (V13)  
+  CA `EwX2T1p2PmgTsSq2Bi6XtQYxPC5krR4P2fxPfN4Qpump`
+- 14:55Z RICO (MIGRATED, $132,141 mcap, $2,821 5m vol): REJECT, RugCheck danger: Creator history of rugged tokens  
+  CA `8kuQg3WivDtL85VEdw2jEmSXjYt6EEeYBATJ4DtQpump`
+- 14:52Z GTA (DIP, $3,057,180 mcap, $23,983 5m vol): PASS at conviction 3, PASS: DIP on a dying name with no catalyst, the nearest resistance is only 1.14x away, and the website is 0.8 days old and doesn't show this CA. (V1, V3, V13)  
+  CA `7F8BkfhPaDGMeNkaYeVa99WAqo86LpXDKsLQXpM7pump`
+- 14:51Z titcoin (MIGRATED, $117,204 mcap, $78,990 5m vol): PASS at conviction 2, PASS: chasing spike. titcoin is 12 minutes old, up 194% on the hour, +27% on 5m at 5x its hourly pace, and only 9% off a $128k peak. No printed higher low yet. Come back if it pulls back 10-60% and prints one. (V1, V6)  
+  CA `3RWWrY7FcyikEb9V2PFxR7PCBJU6ZW9kkE6pTSYqpump`
 - 14:43Z GAVELDROP (MIGRATED, $923,227 mcap, $12,350 5m vol): REJECT, Bundles: 10 linked wallet cluster(s) hold 47.8% of supply (>20%) (V17)  
   CA `9mWrj77gDZ7w4rwHF6STYXDZmYRMyf39L4go1mXepump`
 - 14:42Z Democat (DIP, $662,239 mcap, $2,482 5m vol): REJECT, Dip with fading attention is a falling knife, not a dip (5m at 0.51x the hour's pace, under 0.6x)  
@@ -88,25 +96,17 @@ Updated 2026-11-05T14:44:52Z (paper trading, never real money)
   CA `EguhkH6CJpbV814hd8rTaCCC6qbkRCXfk3MU1yLdpump`
 - 14:29Z JOB (MIGRATED, $3,479,559 mcap, $4,048 5m vol): PASS at conviction 2, PASS: no catalyst, sellers outnumber buys 23 to 9, and the CA isn't on the project's site. Blocker: "no catalyst" on a bottom buy. (V1, V3, V13)  
   CA `9Pq7aLAbhDG2tTnS22cm6kuysZVcZpLFE368HWuypump`
-- 14:21Z LIBRE (FINAL_STRETCH, $24,448 mcap, $2,157 5m vol): REJECT, Top 10 hold 27.3% ex-pool (>25%) (V13)  
-  CA `J4rP3zhpvk3r2tFasTAecU4g9gnxDDpaR2xAXnz873fu`
-- 14:21Z GBuk (FINAL_STRETCH, $20,426 mcap, $9,843 5m vol): PASS at conviction 3, PASS: GBuk is the 14th "galaxy bucks" copy, its website is a Samsung developer docs page that doesn't show this CA, and it's already +321% on the hour. Blocker: split crowd. (V1, V3, V6, V13)  
-  CA `9XoSWfK7ymz3r4FofpcWgz8gLHyE4ne5WZTcoznipump`
-- 14:20Z LION (MIGRATED, $35,607 mcap, $13,225 5m vol): REJECT, Top 10 hold 29.3% ex-pool (>25%) (V13)  
-  CA `4nQqYeHziRZaiYLodVt56q9AyubY693oGnSPXYcNpump`
-- 14:17Z GATO (MIGRATED, $9,029,093 mcap, $6,471 5m vol): REJECT, Dev holds 3.3% (>1%) (V13, V17)  
-  CA `HsprHxBRgiVaQdRf3TnKNuZZtaX9JUSPgMFdAkk6pump`
 
 ## What its skips did next (last 48h)
 A skip "ran" if the coin reached the first target (1.5x) from the skip price before a 20% drop, "dumped" if the drop came first. Sampled every 10 min, followed 6h.
-- top 10 over 25%: blocked 65, ran 11, dumped 50, flat 2, open 2 (saving losses: keep it)
+- top 10 over 25%: blocked 66, ran 11, dumped 51, flat 2, open 2 (saving losses: keep it)
   - ran: OPOL up to 2.02x  
     CA `7R6AYvHyU5MyaTt5MPtRdt2daRUKedvCz8CXZkaspump`
   - ran: MEMECOIN up to 1.5x  
     CA `592MyuZiyHCEg8YJBnGJXCpcgfaK81vKiV83M3XMpump`
   - ran: NEMO up to 1.6x  
     CA `5ja9qQuE5V9g5TVAFZVdtVQQqoThkAWxEKUaPcC5jN3F`
-- too new / sniping: blocked 64, ran 10, dumped 51, flat 1, open 2 (saving losses: keep it)
+- too new / sniping: blocked 64, ran 10, dumped 50, flat 1, open 3 (saving losses: keep it)
   - ran: SNOWMEI up to 1.76x  
     CA `ETVD787UcTkJqrhZMt15bVet7CQ4SDzCga7DfBm8pump`
   - ran: GTAVI up to 2.31x  
@@ -127,7 +127,7 @@ A skip "ran" if the coin reached the first target (1.5x) from the skip price bef
     CA `3MfZ4URVxmB4mfPuy4AxUxpcC5U7aXe7TDA7XVoGpump`
   - ran: PayIF up to 1.56x  
     CA `FfuBMS3rh9M61apXJDs14yAngVnYLWR7xkcX5FxMpump`
-- RugCheck danger: blocked 29, ran 8, dumped 19, flat 2, open 0 (saving losses: keep it)
+- RugCheck danger: blocked 30, ran 8, dumped 19, flat 2, open 1 (saving losses: keep it)
   - ran: RAM up to 1.63x  
     CA `72QNkZqiTBsq5dvn4DEwaC5qBPDkc7SZJ38xXy4jpump`
   - ran: $LIBCOIN up to 1.54x  
@@ -141,8 +141,9 @@ A skip "ran" if the coin reached the first target (1.5x) from the skip price bef
     CA `HEb2dwDNbBhnrCusoNXXvba9MymYTTmMQcHKaptxmfun`
   - ran: inu up to 1.5x  
     CA `Bid8i1ocWssjRmKh2kcUfHxD1K6Sk7E5pV2PSVdepump`
-- dev share over 1%: blocked 18, ran 0, dumped 14, flat 3, open 1 (saving losses: keep it)
-- bundles over the line: blocked 18, ran 1, dumped 13, flat 3, open 1 (saving losses: keep it)
+- bundles over the line: blocked 18, ran 2, dumped 13, flat 3, open 0 (saving losses: keep it)
+  - ran: GAVELDROP up to 2x  
+    CA `9mWrj77gDZ7w4rwHF6STYXDZmYRMyf39L4go1mXepump`
   - ran: dump up to 1.72x  
     CA `Bu3h78FY2fsWVZ1MdyQVpFTvv5XsRotWX6VjszQTpump`
 - other: blocked 17, ran 4, dumped 12, flat 1, open 0 (saving losses: keep it)
@@ -152,7 +153,8 @@ A skip "ran" if the coin reached the first target (1.5x) from the skip price bef
     CA `CG1DmSiMXw9WjQXCzP5JDnma5BDY3Cks9bRTdXNLpump`
   - ran: BLOOM up to 1.74x  
     CA `ExdQxJcXzNzhW6CC9phvoEVpKvJQJyg98CE228Uxpump`
-- thin 5m volume: blocked 16, ran 3, dumped 9, flat 3, open 1 (saving losses: keep it)
+- dev share over 1%: blocked 17, ran 0, dumped 13, flat 3, open 1 (saving losses: keep it)
+- thin 5m volume: blocked 15, ran 3, dumped 9, flat 3, open 0 (saving losses: keep it)
   - ran: DESSA up to 1.54x  
     CA `npz2FhoufQ7pKqhGpaipYWacrAkidyW2yDpVWSvpump`
   - ran: MEOWNERO up to 1.76x  
@@ -199,13 +201,13 @@ Nothing has a positive edge after costs yet. All 359 settled coins averaged -10.
 The meta is fresh pump.fun launches with brand, mascot and joke names. Solana Phone (PHONE, $54k 5m, 65% buys, about 6 minutes old), Galaxy Bucks (GBuk, 67% buys, 12 minutes old), goomy (alien dog, 62% buys) and LIBRE (71% buys, +611% on the hour) are where the buyers are. It's rising but decays fast: Pillheads (-84%), SOUNDER (-63%) and donuld dump (-64%, 39% buys) are under an hour old and already dumped, so the first-hour pump is the trap (V1, V6). The old dog and cat names are fading: DogWifJob is at 28% buys on $3.5M, GATO is flat on $9M with $5.8k 5m, and GTA is -26% on the hour with 62% buys but only $8k 5m, under the $10k bar. Setups to research: GTA as a dip watch once I have its peak (it's far above the $70k floor), and PHONE and GBuk as watch-only, since I don't snipe coins under an hour old. The political headlines are attention, not a buy signal, and the crawler's CR, Cristiano and ELYSIUM aren't in scan_movers, so they stay unverified. Paper only, not financial advice.
 
 ## Moving most in its scans, last 30 min (1h volume)
-- DESSA: $775,758 1h vol, $36,499,829 mcap, +41% 1h  
+- DESSA: $1,094,682 1h vol, $37,204,520 mcap, +33% 1h  
   CA `npz2FhoufQ7pKqhGpaipYWacrAkidyW2yDpVWSvpump`
-- PILLHEADS: $514,758 1h vol, $1,984 mcap, -99% 1h  
+- PILLHEADS: $351,801 1h vol, $1,921 mcap, -99% 1h  
   CA `BFJd5mWCvu7yMivKCM7Xh8Dx17GgBbwaxcmFX3Aqpump`
 - SOCIAL: $330,429 1h vol, $62,564 mcap, -4% 1h  
   CA `EguhkH6CJpbV814hd8rTaCCC6qbkRCXfk3MU1yLdpump`
+- GTA: $280,988 1h vol, $3,057,180 mcap, +6% 1h  
+  CA `7F8BkfhPaDGMeNkaYeVa99WAqo86LpXDKsLQXpM7pump`
 - GAVELDROP: $236,500 1h vol, $909,038 mcap, +55% 1h  
   CA `9mWrj77gDZ7w4rwHF6STYXDZmYRMyf39L4go1mXepump`
-- SOUNDER: $168,816 1h vol, $16,602 mcap, -56% 1h  
-  CA `DBhWAqpAJFNM1A9XY6DDb1SJVkNCv87hRdYCoCoypump`
