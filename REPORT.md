@@ -1,13 +1,13 @@
 # Trencher live report
 
-Updated 2026-11-05T11:42:59Z (paper trading, never real money)
+Updated 2026-11-05T11:58:12Z (paper trading, never real money)
 
 - Equity: $74.23 (-25.8% vs $100 start)
 - Closed trades: 22, 3 wins
 - Fees paid: $14.78 (axiom $2.81, network $9.18, pool $2.66), plus $4.15 lost to slippage
 - New trades: WATCH-ONLY (scans and decides, buys nothing)
-- Brain: subscription, claude-haiku-5-5 for routine calls, claude-opus-5-5 for the daily review; 522 routine calls and 0 plan-limit hits in 48h
-- Watch log: 84 coins being followed, 889 filed, 0 would-buys (6h follow, sampled every 2 min)
+- Brain: subscription, claude-haiku-5-5 for routine calls, claude-opus-5-5 for the daily review; 523 routine calls and 0 plan-limit hits in 48h
+- Watch log: 85 coins being followed, 892 filed, 0 would-buys (6h follow, sampled every 2 min)
 
 ## Scorecard (after fees)
 - 22 closed, 3 won (14%), net $-25.79
@@ -73,9 +73,17 @@ Updated 2026-11-05T11:42:59Z (paper trading, never real money)
   CA `H4gHnZ3NCU7Z9XQwGX6YYJNyieGEW8pqwGRUcdSxpump`
 
 ## Last scan
-- 11:42Z: 7 coins, 5 with pairs, 0 passed the market filters, 0 researched
+- 11:57Z: 6 coins, 4 with pairs, 0 passed the market filters, 0 researched
 
 ## Coins it looked at, and why it passed
+- 11:53Z UMBRA (FINAL_STRETCH, $26,876 mcap, $8,990 5m vol): PASS at conviction 2, PASS — chasing spike: 5m up 31%, 886% in 1h, and 13% off a peak six minutes old. The chain site is five hours old with a 0-star repo, so it's a LARP until proven otherwise (V1, V6).  
+  CA `Cz2YM1CaVm8FDbET2fZ33hLkhSrUyJJMtCgQxmbhpump`
+- 11:49Z GTA (MIGRATED, $4,711,578 mcap, $15,710 5m vol): PASS at conviction 3, PASS: GTA is a $4.7M migrated coin with 5m flow at 0.53x its hourly pace, 19 copies of the ticker, and its first resistance (the $5.7M 24h peak) only 1.21x away. Big cap, no room, flow below pace. Holders are clean, but the money shape isn't there (V1, V6, V13).  
+  CA `7F8BkfhPaDGMeNkaYeVa99WAqo86LpXDKsLQXpM7pump`
+- 11:48Z 7 (MIGRATED, $55,300 mcap, $9,057 5m vol): REJECT, Top 10 hold 27.6% ex-pool (>25%) (V13)  
+  CA `AyJ3fiXTrd7s85YKCC56zrmXtHzwqtVqYvtb462ypump`
+- 11:47Z CR (MIGRATED, $99,194 mcap, $15,977 5m vol): PASS at conviction 3, PASS: split crowd. This CR is not the leader of a 12-copy Ronaldo field, the other CR out-volumes it, and the coin is 17 minutes old and still bleeding. Celebrity-name tokens here have a rug history. (V1, V3)  
+  CA `EbFJbnAMyf1hHHd2QNvHFRoKFntj1GZWHnFR2JYYpump`
 - 11:41Z GAVELDROP (MIGRATED, $869,747 mcap, $17,124 5m vol): REJECT, Bundles: 10 linked wallet cluster(s) hold 47.8% of supply (>20%) (V17)  
   CA `9mWrj77gDZ7w4rwHF6STYXDZmYRMyf39L4go1mXepump`
 - 11:40Z Democat (DIP, $498,495 mcap, $3,466 5m vol): REJECT, Dip with fading attention is a falling knife, not a dip (5m at 0.50x the hour's pace, under 0.6x)  
@@ -88,39 +96,31 @@ Updated 2026-11-05T11:42:59Z (paper trading, never real money)
   CA `8kuQg3WivDtL85VEdw2jEmSXjYt6EEeYBATJ4DtQpump`
 - 11:16Z JOB (MIGRATED, $3,740,463 mcap, $4,619 5m vol): PASS at conviction 3, PASS: the first resistance is 1.1x away, the narrative is fading, and no higher low has printed. Crowded copy field. (V1, V6, V13)  
   CA `9Pq7aLAbhDG2tTnS22cm6kuysZVcZpLFE368HWuypump`
-- 11:15Z GATO (MIGRATED, $9,931,490 mcap, $3,692 5m vol): REJECT, Dev holds 3.3% (>1%) (V13, V17)  
-  CA `HsprHxBRgiVaQdRf3TnKNuZZtaX9JUSPgMFdAkk6pump`
-- 11:03Z GTA (DIP, $2,306,432 mcap, $8,348 5m vol): PASS at conviction 4, PASS: bottom buy with no live story or catalyst. "Grab That Ass" is a 14h-old vamp-field leader on a fading theme with a 0.6-day-old website that doesn't show the CA (V1, V3, V13).  
-  CA `7F8BkfhPaDGMeNkaYeVa99WAqo86LpXDKsLQXpM7pump`
-- 11:02Z 7 (FINAL_STRETCH, $24,540 mcap, $28,963 5m vol): PASS at conviction 2, PASS — 10x in 19 minutes, 5m flow at 3.1x pace and no printed higher low. Chasing a spike on a celebrity name with no project account. (V1, V6)  
-  CA `AyJ3fiXTrd7s85YKCC56zrmXtHzwqtVqYvtb462ypump`
-- 10:56Z GAVELDROP (MIGRATED, $820,174 mcap, $11,853 5m vol): REJECT, Bundles: 10 linked wallet cluster(s) hold 47.8% of supply (>20%) (V17)  
-  CA `9mWrj77gDZ7w4rwHF6STYXDZmYRMyf39L4go1mXepump`
 
 ## What its skips did next (last 48h)
 A skip "ran" if the coin reached the first target (1.5x) from the skip price before a 20% drop, "dumped" if the drop came first. Sampled every 10 min, followed 6h.
-- top 10 over 25%: blocked 63, ran 11, dumped 48, flat 3, open 1 (saving losses: keep it)
+- top 10 over 25%: blocked 64, ran 11, dumped 48, flat 3, open 2 (saving losses: keep it)
   - ran: PWESIDENT up to 1.51x  
     CA `9Xxsoab47VknN15izoj2wE2x4BoYUfpnxQAUmroGpump`
   - ran: OPOL up to 2.02x  
     CA `7R6AYvHyU5MyaTt5MPtRdt2daRUKedvCz8CXZkaspump`
   - ran: MEMECOIN up to 1.5x  
     CA `592MyuZiyHCEg8YJBnGJXCpcgfaK81vKiV83M3XMpump`
-- too new / sniping: blocked 62, ran 9, dumped 50, flat 1, open 2 (saving losses: keep it)
+- too new / sniping: blocked 63, ran 9, dumped 49, flat 1, open 4 (saving losses: keep it)
   - ran: SNOWMEI up to 1.76x  
     CA `ETVD787UcTkJqrhZMt15bVet7CQ4SDzCga7DfBm8pump`
   - ran: GTAVI up to 2.31x  
     CA `HekahVohmeokPUhscg5taNme3Qs2fcSQoNgEeUPMpump`
   - ran: PEPTDOG up to 1.88x  
     CA `GExwMYa2tnJwGfKTmzR4ERiQKptfNceN9GTXc82Lpump`
-- flow below pace: blocked 49, ran 9, dumped 34, flat 4, open 2 (saving losses: keep it)
+- flow below pace: blocked 50, ran 9, dumped 34, flat 4, open 3 (saving losses: keep it)
   - ran: MOGMAS up to 1.68x  
     CA `4yxnt3xAdyBFFbzMWJy9sjGEoiBNkjwdSQZ8ZyULpump`
   - ran: POLITICATS up to 1.85x  
     CA `ADvbwD9pgBeHHQBmBaiUir4zjC946FW2mDJbSejmpump`
   - ran: Pekka up to 1.81x  
     CA `BQ3yawMJwU7RCoFagJ3Go7AYMBDxzeNAKiRC2qTbpump`
-- near the high / chasing: blocked 40, ran 8, dumped 29, flat 3, open 0 (saving losses: keep it)
+- near the high / chasing: blocked 39, ran 7, dumped 29, flat 3, open 0 (saving losses: keep it)
   - ran: underdog up to 1.64x  
     CA `BZXh2LcnNNyypxsdfVeFzXawqmoGoSShC5i4NEQQpump`
   - ran: LUCIA up to 1.83x  
@@ -197,13 +197,13 @@ No. After costs, every bucket loses money. Across 355 settled coins the simple p
 The meta in scan_movers is celebrity-football names and GTA6 jokes, and the fresh football lane is the loud one. CR (Cristiano Ronaldo, $128k cap, $24.6k 5m, 63% buys, 0.6h old, +229% 1h) and "7" (also Cristiano Ronaldo, $24k cap, $26.9k 5m, 49% buys, +681% 1h) plus two Ronaldinu tickers (+309% and +736% 1h) are all under an hour old, so copycats and vamps are already splitting the same money (V1, V6). The GTA6 name has two generations: GTA (Grab That Ass, $2.3M, 14.7h, $8.2k 5m, 56% buys) is holding but under the $10k 5m bar, while GATO (GTA6CAT, $9.9M) and RICO (GTA6DOG, -50% 1h, 50% buys) are fading. Older animal coins are flat (DogWifJob +7% at 208h old, $4.6k 5m), and the fresh dumpers are the warning: TREMPS -98%, INDEX -92%, WKC at 11% buys. The crawler's politics lane (GAVELDROP, Su The Cat, its TREMPS numbers) is not in scan_movers and contradicts the scan, so I'm ignoring it; the headline about Trump-linked assets sliding after the midterms supports that the political flow is fading. Setups to research, all unverified with holder, dev and bundle checks still pending: CR first, once I confirm it's the original Ronaldo token and not a copy; UMBRA ($13.6k, $7.8k 5m, 62% buys, 0.5h, pump.fun) if its volume holds above the bar; GTA only as a slower, older-name watch. Paper only, not financial advice.
 
 ## Moving most in its scans, last 30 min (1h volume)
-- CR: $431,528 1h vol, $128,235 mcap, +229% 1h  
-  CA `GpsEwFGmEhPHsobgJYuYnPcNtxc8EJi6CVRLZtYaVKj9`
+- GTA: $354,625 1h vol, $4,711,578 mcap, +112% 1h  
+  CA `7F8BkfhPaDGMeNkaYeVa99WAqo86LpXDKsLQXpM7pump`
+- 7: $211,068 1h vol, $56,221 mcap, +36% 1h  
+  CA `AyJ3fiXTrd7s85YKCC56zrmXtHzwqtVqYvtb462ypump`
 - GAVELDROP: $151,106 1h vol, $863,880 mcap, +6% 1h  
   CA `9mWrj77gDZ7w4rwHF6STYXDZmYRMyf39L4go1mXepump`
-- PEERLY: $133,101 1h vol, $3,634 mcap, -89% 1h  
-  CA `4WT81YNHWhRQ8oPV6y41XSF13fDqWfL8G1TUiEiApump`
-- RICO: $114,464 1h vol, $156,527 mcap, -50% 1h  
-  CA `8kuQg3WivDtL85VEdw2jEmSXjYt6EEeYBATJ4DtQpump`
-- UMBRA: $108,401 1h vol, $16,835 mcap, +518% 1h  
-  CA `Cz2YM1CaVm8FDbET2fZ33hLkhSrUyJJMtCgQxmbhpump`
+- CR: $148,631 1h vol, $91,863 mcap, +125% 1h  
+  CA `EbFJbnAMyf1hHHd2QNvHFRoKFntj1GZWHnFR2JYYpump`
+- Cristiano: $128,341 1h vol, $14,022 mcap, +357% 1h  
+  CA `F8deZwTLsQX6eKSnSB7H3BEBLoUTW7NV7WzaLduEpump`
