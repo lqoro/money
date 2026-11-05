@@ -1,13 +1,13 @@
 # Trencher live report
 
-Updated 2026-11-05T10:12:22Z (paper trading, never real money)
+Updated 2026-11-05T10:27:23Z (paper trading, never real money)
 
 - Equity: $74.23 (-25.8% vs $100 start)
 - Closed trades: 22, 3 wins
 - Fees paid: $14.78 (axiom $2.81, network $9.18, pool $2.66), plus $4.15 lost to slippage
 - New trades: WATCH-ONLY (scans and decides, buys nothing)
-- Brain: subscription, claude-haiku-5-5 for routine calls, claude-opus-5-5 for the daily review; 525 routine calls and 0 plan-limit hits in 48h
-- Watch log: 99 coins being followed, 856 filed, 0 would-buys (6h follow, sampled every 2 min)
+- Brain: subscription, claude-haiku-5-5 for routine calls, claude-opus-5-5 for the daily review; 523 routine calls and 0 plan-limit hits in 48h
+- Watch log: 94 coins being followed, 863 filed, 0 would-buys (6h follow, sampled every 2 min)
 
 ## Scorecard (after fees)
 - 22 closed, 3 won (14%), net $-25.79
@@ -73,9 +73,13 @@ Updated 2026-11-05T10:12:22Z (paper trading, never real money)
   CA `H4gHnZ3NCU7Z9XQwGX6YYJNyieGEW8pqwGRUcdSxpump`
 
 ## Last scan
-- 10:12Z: 4 coins, 4 with pairs, 0 passed the market filters, 0 researched
+- 10:26Z: 6 coins, 5 with pairs, 0 passed the market filters, 0 researched
 
 ## Coins it looked at, and why it passed
+- 10:19Z Su (no setup, $19,742 mcap, $9,344 5m vol): REJECT, No setup fits: not Final Stretch, not a migrated runner, not a healthy dip  
+  CA `9XD1tHPpByPmJi74HrohCMmkXWMs6G9s7BLRiE9Tpump`
+- 10:18Z GTA (DIP, $2,219,683 mcap, $3,496 5m vol): REJECT, Dip with fading attention is a falling knife, not a dip (5m at 0.52x the hour's pace, under 0.6x)  
+  CA `7F8BkfhPaDGMeNkaYeVa99WAqo86LpXDKsLQXpM7pump`
 - 10:11Z TREMPS (MIGRATED, $94,959 mcap, $9,502 5m vol): REJECT, Bundles: 2 linked wallet cluster(s) hold 82.1% of supply (>20%) (V17)  
   CA `EdD77xt9FZjj815Kdrygc2jDugYRsJfyPeUAc4Fdpump`
 - 10:11Z GAVELDROP (MIGRATED, $1,006,001 mcap, $78,978 5m vol): REJECT, Bundles: 10 linked wallet cluster(s) hold 47.8% of supply (>20%) (V17)  
@@ -92,10 +96,6 @@ Updated 2026-11-05T10:12:22Z (paper trading, never real money)
   CA `HsprHxBRgiVaQdRf3TnKNuZZtaX9JUSPgMFdAkk6pump`
 - 09:32Z GTA (DIP, $2,475,396 mcap, $2,662 5m vol): REJECT, Dip with fading attention is a falling knife, not a dip (5m at 0.58x the hour's pace, under 0.6x)  
   CA `7F8BkfhPaDGMeNkaYeVa99WAqo86LpXDKsLQXpM7pump`
-- 09:26Z SLAB (FINAL_STRETCH, $21,548 mcap, $7,318 5m vol): PASS, PASS — brain unavailable, not trading blind.  
-  CA `8upv7s9NasqQuvVfqiBH9gEADQGx4fXQNRRKcXFwiyUw`
-- 09:25Z GAVELDROP (MIGRATED, $750,274 mcap, $10,099 5m vol): REJECT, Bundles: 10 linked wallet cluster(s) hold 47.8% of supply (>20%) (V17)  
-  CA `9mWrj77gDZ7w4rwHF6STYXDZmYRMyf39L4go1mXepump`
 
 ## What its skips did next (last 48h)
 A skip "ran" if the coin reached the first target (1.5x) from the skip price before a 20% drop, "dumped" if the drop came first. Sampled every 10 min, followed 6h.
@@ -145,6 +145,13 @@ A skip "ran" if the coin reached the first target (1.5x) from the skip price bef
   - ran: MAMESUKE up to 1.95x  
     CA `SCGBBnSwnekytGFHgyeHHxPMiN7xDxsWFGg9JgFSTNK`
 - dev share over 1%: blocked 18, ran 0, dumped 14, flat 3, open 1 (saving losses: keep it)
+- other: blocked 17, ran 4, dumped 10, flat 0, open 3 (saving losses: keep it)
+  - ran: DESSA up to 1.54x  
+    CA `npz2FhoufQ7pKqhGpaipYWacrAkidyW2yDpVWSvpump`
+  - ran: MACHKA up to 1.52x  
+    CA `CG1DmSiMXw9WjQXCzP5JDnma5BDY3Cks9bRTdXNLpump`
+  - ran: BLOOM up to 1.74x  
+    CA `ExdQxJcXzNzhW6CC9phvoEVpKvJQJyg98CE228Uxpump`
 - thin 5m volume: blocked 17, ran 4, dumped 9, flat 4, open 0 (saving losses: keep it)
   - ran: DESSA up to 1.54x  
     CA `npz2FhoufQ7pKqhGpaipYWacrAkidyW2yDpVWSvpump`
@@ -152,13 +159,6 @@ A skip "ran" if the coin reached the first target (1.5x) from the skip price bef
     CA `9gKArqT6qp3goHfuwAnfG7LioqwUtJ8TFu7P1Bhbpump`
   - ran: MEOWNERO up to 1.76x  
     CA `6gnB2H2hbTVvKUWCzNuqjWY8Rod6EVBmfHi7YxZpTWa7`
-- other: blocked 16, ran 4, dumped 10, flat 0, open 2 (saving losses: keep it)
-  - ran: DESSA up to 1.54x  
-    CA `npz2FhoufQ7pKqhGpaipYWacrAkidyW2yDpVWSvpump`
-  - ran: MACHKA up to 1.52x  
-    CA `CG1DmSiMXw9WjQXCzP5JDnma5BDY3Cks9bRTdXNLpump`
-  - ran: BLOOM up to 1.74x  
-    CA `ExdQxJcXzNzhW6CC9phvoEVpKvJQJyg98CE228Uxpump`
 
 ## Daily review (2026-11-04, claude-opus-5-5)
 No. After costs, every bucket loses money. Across 355 settled coins the simple plan (sell at 1.5x or -20%) averaged -10.1%, and before costs it was only about +0.4%. So the 10.5% round-trip cost on a $10 buy is the whole loss, and no group gets close to clearing it. The best group is MIGRATED at -8.1% net (about +2.3% before costs). With ~355 samples the all-coin result is clearly below zero, about -10% ± 3%. But the samples overlap: the same coin gets logged more than once, a few metas cluster, and it's all one market day. So the real uncertainty is wider, and a single day can't show any subgroup edge. The question about would-buys can't be answered: the routine model made zero BUY calls (would_buy n=0) and said PASS on all 181 coins it reviewed. Those passed coins ran more often than the checklist rejects (30.4% vs 16.1%) and lost less (-7.2% vs -13.1% net). That says the checklist filters somewhat, but nothing here is buyable.
@@ -199,13 +199,13 @@ No. After costs, every bucket loses money. Across 355 settled coins the simple p
 Not quiet, but the crawler's coin numbers don't match scan_movers. Inu, Defective Acceleration, the Pokémon coins and the joke launches aren't in the list, and d/acc shows $19.8k mcap, not $47k, so I'm reading only the movers. Two themes are rising: game and pop-culture nostalgia (ZELDA +448% 1h on $44k 5m with 60% buys, GTA6CAT in the same lane but thin at $3.3k 5m) and trading-jargon launches (Retail +528%, LEVERAGED +243%, PerpsNow +99%), though those three sit under the $10k 5m bar. A political lane is getting real money (Democat at $804k mcap with $4.4k 5m and 70% buys; GAVELDROP at $753k with $10.8k 5m and 78% buys), but it's a meme riding midterm noise, so I'd treat it as higher risk and research-only; d/acc (-55% 1h), Short Pad (-69%) and GIF are fading. Setups to research now: ZELDA first, checking global fees against roughly 27 SOL for a $267k cap and bundles before anything, and GAVELDROP as the cleaner-looking flow; Mei (+811% on a six-minute-old launch, $37k 5m on a $30k cap) is farm-shaped, so watch only. Everything is unverified; paper only, not financial advice.
 
 ## Moving most in its scans, last 30 min (1h volume)
-- ZELDA: $280,342 1h vol, $1,952 mcap, -99% 1h  
-  CA `9okwT7syLTFXDv4W64Xp7QUgTx6yKE82SDjzitHNpump`
 - GAVELDROP: $263,517 1h vol, $1,006,668 mcap, +56% 1h  
   CA `9mWrj77gDZ7w4rwHF6STYXDZmYRMyf39L4go1mXepump`
+- ZELDA: $201,790 1h vol, $1,954 mcap, -99% 1h  
+  CA `9okwT7syLTFXDv4W64Xp7QUgTx6yKE82SDjzitHNpump`
 - TREMPS: $132,165 1h vol, $88,151 mcap, +115% 1h  
   CA `EdD77xt9FZjj815Kdrygc2jDugYRsJfyPeUAc4Fdpump`
-- Retail: $90,771 1h vol, $3,001 mcap, -92% 1h  
-  CA `DgoVJ1Up6gi9uZM2cLjTeENZ3GdefXVVnKHtidokpump`
-- Su: $74,739 1h vol, $18,810 mcap, +430% 1h  
+- Su: $103,498 1h vol, $21,364 mcap, +502% 1h  
   CA `9XD1tHPpByPmJi74HrohCMmkXWMs6G9s7BLRiE9Tpump`
+- GTA: $81,098 1h vol, $2,222,004 mcap, -4% 1h  
+  CA `7F8BkfhPaDGMeNkaYeVa99WAqo86LpXDKsLQXpM7pump`
