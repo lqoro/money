@@ -1,13 +1,13 @@
 # Trencher live report
 
-Updated 2026-11-05T17:01:22Z (paper trading, never real money)
+Updated 2026-11-05T17:16:39Z (paper trading, never real money)
 
 - Equity: $74.23 (-25.8% vs $100 start)
 - Closed trades: 22, 3 wins
 - Fees paid: $14.78 (axiom $2.81, network $9.18, pool $2.66), plus $4.15 lost to slippage
 - New trades: WATCH-ONLY (scans and decides, buys nothing)
-- Brain: subscription, claude-haiku-5-5 for routine calls, claude-opus-5-5 for the daily review; 516 routine calls and 0 plan-limit hits in 48h
-- Watch log: 93 coins being followed, 964 filed, 0 would-buys (6h follow, sampled every 2 min)
+- Brain: subscription, claude-haiku-5-5 for routine calls, claude-opus-5-5 for the daily review; 513 routine calls and 0 plan-limit hits in 48h
+- Watch log: 94 coins being followed, 966 filed, 0 would-buys (6h follow, sampled every 2 min)
 
 ## Scorecard (after fees)
 - 22 closed, 3 won (14%), net $-25.79
@@ -73,9 +73,15 @@ Updated 2026-11-05T17:01:22Z (paper trading, never real money)
   CA `H4gHnZ3NCU7Z9XQwGX6YYJNyieGEW8pqwGRUcdSxpump`
 
 ## Last scan
-- 17:00Z: 7 coins, 6 with pairs, 0 passed the market filters, 0 researched
+- 17:15Z: 3 coins, 2 with pairs, 0 passed the market filters, 0 researched
 
 ## Coins it looked at, and why it passed
+- 17:12Z GHOST (MIGRATED, $209,374 mcap, $3,371 5m vol): PASS at conviction 3, PASS: GHOST is a 5m spike (+30%, 8x hourly pace) with sellers ahead 7 to 4, no printed higher low, and no story anyone is telling. Chasing a spike on a copy-named coin (V1, V6).  
+  CA `42qKoGmEPTRJsa5jWrYwpydL8RkBwMvg2ykYVoerpump`
+- 17:08Z GTA (DIP, $1,885,266 mcap, $7,788 5m vol): REJECT, Dip with fading attention is a falling knife, not a dip (5m at 0.36x the hour's pace, under 0.6x)  
+  CA `7F8BkfhPaDGMeNkaYeVa99WAqo86LpXDKsLQXpM7pump`
+- 17:06Z fiat (FINAL_STRETCH, $26,466 mcap, $8,947 5m vol): PASS at conviction 2, PASS: fiat is a pre-bond launch that just spiked +39% in 5m, sits in a 17-to-19-copy field, and has $8.9k of 5m flow. Blocker: chasing spike. (V1, V6, V13)  
+  CA `ACiYG6QitgkPn7i8R6Q19bDc6JD6CNsUd1WFmt7fpump`
 - 16:59Z GAVELDROP (DIP, $749,384 mcap, $5,362 5m vol): REJECT, Bundles: 10 linked wallet cluster(s) hold 47.8% of supply (>20%) (V17)  
   CA `9mWrj77gDZ7w4rwHF6STYXDZmYRMyf39L4go1mXepump`
 - 16:58Z GLITCH (DIP, $2,736,635 mcap, $7,381 5m vol): REJECT, Top 10 hold 28.1% ex-pool (>25%) (V13)  
@@ -90,12 +96,6 @@ Updated 2026-11-05T17:01:22Z (paper trading, never real money)
   CA `HJTB9zW3vodjqUsmXXsEfewZoWPa6LjT8RCA1j7mpump`
 - 16:21Z JOB (MIGRATED, $3,581,368 mcap, $4,759 5m vol): PASS at conviction 2, PASS: DogWifJob ($JOB) is a 30%-off pullback in a dead vamp theme, and its first resistance is only 1.12x away. Blocker: "target too close" plus "dead story". Farm of copies, not a buy.  
   CA `9Pq7aLAbhDG2tTnS22cm6kuysZVcZpLFE368HWuypump`
-- 16:14Z GAVELDROP (DIP, $827,257 mcap, $7,611 5m vol): REJECT, Dip with fading attention is a falling knife, not a dip (5m at 0.59x the hour's pace, under 0.6x)  
-  CA `9mWrj77gDZ7w4rwHF6STYXDZmYRMyf39L4go1mXepump`
-- 16:14Z BTC (MIGRATED, $122,462 mcap, $42,035 5m vol): PASS at conviction 2, PASS: Big Testicle Coin is 11 minutes old, up 202% in the hour, and buying a 4x volume spike with no printed higher low and no catalyst. Blockers: "too new" and "chasing spike" (V1, V6).  
-  CA `GMXYEB8JfRRPxxLCBxWWxFePjMfSfdQUVmd8YHsupump`
-- 16:12Z PAWKET (DIP, $803,671 mcap, $3,619 5m vol): REJECT, Dip with fading attention is a falling knife, not a dip (5m at 0.03x the hour's pace, under 0.6x)  
-  CA `ECNQSQA7Y5bnXzbotgv6XcG15c6jpJ6V2BFbYzJrpump`
 
 ## What its skips did next (last 48h)
 A skip "ran" if the coin reached the first target (1.5x) from the skip price before a 20% drop, "dumped" if the drop came first. Sampled every 10 min, followed 6h.
@@ -106,21 +106,21 @@ A skip "ran" if the coin reached the first target (1.5x) from the skip price bef
     CA `592MyuZiyHCEg8YJBnGJXCpcgfaK81vKiV83M3XMpump`
   - ran: NEMO up to 1.6x  
     CA `5ja9qQuE5V9g5TVAFZVdtVQQqoThkAWxEKUaPcC5jN3F`
-- too new / sniping: blocked 61, ran 9, dumped 49, flat 2, open 1 (saving losses: keep it)
-  - ran: GTAVI up to 2.31x  
-    CA `HekahVohmeokPUhscg5taNme3Qs2fcSQoNgEeUPMpump`
+- too new / sniping: blocked 60, ran 8, dumped 49, flat 2, open 1 (saving losses: keep it)
   - ran: PEPTDOG up to 1.88x  
     CA `GExwMYa2tnJwGfKTmzR4ERiQKptfNceN9GTXc82Lpump`
   - ran: mag up to 1.85x  
     CA `BZYkZXtHNK7g1ZQ26iNgkLe1ufDrLUX8EcCGLGF7pump`
-- flow below pace: blocked 47, ran 9, dumped 31, flat 4, open 3 (saving losses: keep it)
+  - ran: AMC  up to 1.55x  
+    CA `61nPLZLFkGGGNSEHr4c7LmF82jESvagFsV3jfYLYpump`
+- flow below pace: blocked 46, ran 9, dumped 30, flat 4, open 3 (saving losses: keep it)
   - ran: POLITICATS up to 1.85x  
     CA `ADvbwD9pgBeHHQBmBaiUir4zjC946FW2mDJbSejmpump`
   - ran: Pekka up to 1.81x  
     CA `BQ3yawMJwU7RCoFagJ3Go7AYMBDxzeNAKiRC2qTbpump`
   - ran: Link up to 1.57x  
     CA `7kqWni27vRVCKjcuBAmAbs8t7PxXgxdEjUSyRfeFpump`
-- near the high / chasing: blocked 38, ran 5, dumped 30, flat 2, open 1 (saving losses: keep it)
+- near the high / chasing: blocked 40, ran 5, dumped 30, flat 2, open 3 (saving losses: keep it)
   - ran: AMD up to 2.02x  
     CA `3MfZ4URVxmB4mfPuy4AxUxpcC5U7aXe7TDA7XVoGpump`
   - ran: PayIF up to 1.56x  
@@ -149,7 +149,7 @@ A skip "ran" if the coin reached the first target (1.5x) from the skip price bef
   - ran: BLOOM up to 1.74x  
     CA `ExdQxJcXzNzhW6CC9phvoEVpKvJQJyg98CE228Uxpump`
 - dev share over 1%: blocked 17, ran 0, dumped 13, flat 3, open 1 (saving losses: keep it)
-- bundles over the line: blocked 17, ran 1, dumped 12, flat 3, open 1 (saving losses: keep it)
+- bundles over the line: blocked 17, ran 1, dumped 13, flat 3, open 0 (saving losses: keep it)
   - ran: dump up to 1.72x  
     CA `Bu3h78FY2fsWVZ1MdyQVpFTvv5XsRotWX6VjszQTpump`
 - thin 5m volume: blocked 16, ran 3, dumped 9, flat 3, open 1 (saving losses: keep it)
@@ -199,13 +199,13 @@ Nothing has a positive edge after costs yet. All 359 settled coins averaged -10.
 Meta right now is crude and cheeky names plus fresh launches, not one story. BTC (Big Testicle Coin, +142% on the hour, $38k 5m, 85% buys) and GTA ("Grab That Ass", $13.9k 5m, 86% buys) are the crude-name lane still drawing buyers. The other lane is pump.fun launches under an hour old (PEER +379%, commotitties +284% on $54k 5m at a $17k cap, JACKASS, catfish) that spike and die, so they're lottery tickets, not setups. Politics-joke and GTA VI event coins are fading: Dumocrat -83% on the hour, Gavel Drop -41% with 49% buys and only $7.6k 5m, GTAVI -81% on $373 5m, titcoin -97%. PAWKET is fading too, with $3.5k 5m against roughly $100k per 5 minutes at its hourly pace, so if you hold it, bank the initials. Setups to research, not buy: BTC under MIGRATED rules (age 0.2h, $98k cap, $38k 5m, probe size at most given the age), and GTA as a DIP candidate (-31% off the hour with buyers still stepping in) once its peak is confirmed. Pass on titcoin, GTAVI and the sub-$5k launches. Holder, dev and bundle checks still run on each coin before any entry. Paper only, not financial advice.
 
 ## Moving most in its scans, last 30 min (1h volume)
-- DESSA: $390,185 1h vol, $34,392,725 mcap, -14% 1h  
+- DESSA: $262,752 1h vol, $33,856,469 mcap, -4% 1h  
   CA `npz2FhoufQ7pKqhGpaipYWacrAkidyW2yDpVWSvpump`
-- BTC: $226,044 1h vol, $1,646 mcap, -96% 1h  
+- GTA: $256,362 1h vol, $1,885,266 mcap, +20% 1h  
+  CA `7F8BkfhPaDGMeNkaYeVa99WAqo86LpXDKsLQXpM7pump`
+- SWAN: $127,889 1h vol, $7,169 mcap, -80% 1h  
+  CA `HJTB9zW3vodjqUsmXXsEfewZoWPa6LjT8RCA1j7mpump`
+- BTC: $124,266 1h vol, $1,646 mcap, -99% 1h  
   CA `GMXYEB8JfRRPxxLCBxWWxFePjMfSfdQUVmd8YHsupump`
-- GATO: $117,546 1h vol, $8,849,190 mcap, +1% 1h  
-  CA `HsprHxBRgiVaQdRf3TnKNuZZtaX9JUSPgMFdAkk6pump`
 - GAVELDROP: $98,711 1h vol, $760,058 mcap, -4% 1h  
   CA `9mWrj77gDZ7w4rwHF6STYXDZmYRMyf39L4go1mXepump`
-- commotitties: $91,120 1h vol, $2,855 mcap, -37% 1h  
-  CA `BfDbWrxbbg89kXsofvp8ZHAt1nsnWzaV1KGJM6Wcpump`
