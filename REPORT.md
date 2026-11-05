@@ -1,13 +1,13 @@
 # Trencher live report
 
-Updated 2026-11-05T16:46:16Z (paper trading, never real money)
+Updated 2026-11-05T17:01:22Z (paper trading, never real money)
 
 - Equity: $74.23 (-25.8% vs $100 start)
 - Closed trades: 22, 3 wins
 - Fees paid: $14.78 (axiom $2.81, network $9.18, pool $2.66), plus $4.15 lost to slippage
 - New trades: WATCH-ONLY (scans and decides, buys nothing)
-- Brain: subscription, claude-haiku-5-5 for routine calls, claude-opus-5-5 for the daily review; 518 routine calls and 0 plan-limit hits in 48h
-- Watch log: 93 coins being followed, 962 filed, 0 would-buys (6h follow, sampled every 2 min)
+- Brain: subscription, claude-haiku-5-5 for routine calls, claude-opus-5-5 for the daily review; 516 routine calls and 0 plan-limit hits in 48h
+- Watch log: 93 coins being followed, 964 filed, 0 would-buys (6h follow, sampled every 2 min)
 
 ## Scorecard (after fees)
 - 22 closed, 3 won (14%), net $-25.79
@@ -73,9 +73,13 @@ Updated 2026-11-05T16:46:16Z (paper trading, never real money)
   CA `H4gHnZ3NCU7Z9XQwGX6YYJNyieGEW8pqwGRUcdSxpump`
 
 ## Last scan
-- 16:45Z: 6 coins, 6 with pairs, 0 passed the market filters, 0 researched
+- 17:00Z: 7 coins, 6 with pairs, 0 passed the market filters, 0 researched
 
 ## Coins it looked at, and why it passed
+- 16:59Z GAVELDROP (DIP, $749,384 mcap, $5,362 5m vol): REJECT, Bundles: 10 linked wallet cluster(s) hold 47.8% of supply (>20%) (V17)  
+  CA `9mWrj77gDZ7w4rwHF6STYXDZmYRMyf39L4go1mXepump`
+- 16:58Z GLITCH (DIP, $2,736,635 mcap, $7,381 5m vol): REJECT, Top 10 hold 28.1% ex-pool (>25%) (V13)  
+  CA `8Xg89xT8Ve34sKiYqYuMs46mycREsCA2F362UscRpump`
 - 16:35Z Zhdun (FINAL_STRETCH, $19,459 mcap, $23,041 5m vol): REJECT, Top 10 hold 28.8% ex-pool (>25%) (V13)  
   CA `9d2DpBARkhyGUn7AusgPRpDh3rDanYpTKb9GRvTdpump`
 - 16:33Z GATO (MIGRATED, $8,903,100 mcap, $11,290 5m vol): REJECT, Dev holds 3.3% (>1%) (V13, V17)  
@@ -92,21 +96,17 @@ Updated 2026-11-05T16:46:16Z (paper trading, never real money)
   CA `GMXYEB8JfRRPxxLCBxWWxFePjMfSfdQUVmd8YHsupump`
 - 16:12Z PAWKET (DIP, $803,671 mcap, $3,619 5m vol): REJECT, Dip with fading attention is a falling knife, not a dip (5m at 0.03x the hour's pace, under 0.6x)  
   CA `ECNQSQA7Y5bnXzbotgv6XcG15c6jpJ6V2BFbYzJrpump`
-- 15:56Z WEALTH (DIP, $144,135 mcap, $3,515 5m vol): REJECT, Dip with fading attention is a falling knife, not a dip (5m at 0.07x the hour's pace, under 0.6x)  
-  CA `8Mi9E1V2bdPeAaRkR5yxUsAvpzP6UBUEEUrYmgKNpump`
-- 15:52Z GLITCH (MIGRATED, $3,061,400 mcap, $12,081 5m vol): REJECT, Top 10 hold 28.1% ex-pool (>25%) (V13)  
-  CA `8Xg89xT8Ve34sKiYqYuMs46mycREsCA2F362UscRpump`
 
 ## What its skips did next (last 48h)
 A skip "ran" if the coin reached the first target (1.5x) from the skip price before a 20% drop, "dumped" if the drop came first. Sampled every 10 min, followed 6h.
-- top 10 over 25%: blocked 67, ran 11, dumped 51, flat 2, open 3 (saving losses: keep it)
+- top 10 over 25%: blocked 67, ran 11, dumped 52, flat 2, open 2 (saving losses: keep it)
   - ran: OPOL up to 2.02x  
     CA `7R6AYvHyU5MyaTt5MPtRdt2daRUKedvCz8CXZkaspump`
   - ran: MEMECOIN up to 1.5x  
     CA `592MyuZiyHCEg8YJBnGJXCpcgfaK81vKiV83M3XMpump`
   - ran: NEMO up to 1.6x  
     CA `5ja9qQuE5V9g5TVAFZVdtVQQqoThkAWxEKUaPcC5jN3F`
-- too new / sniping: blocked 62, ran 9, dumped 50, flat 2, open 1 (saving losses: keep it)
+- too new / sniping: blocked 61, ran 9, dumped 49, flat 2, open 1 (saving losses: keep it)
   - ran: GTAVI up to 2.31x  
     CA `HekahVohmeokPUhscg5taNme3Qs2fcSQoNgEeUPMpump`
   - ran: PEPTDOG up to 1.88x  
@@ -149,6 +149,9 @@ A skip "ran" if the coin reached the first target (1.5x) from the skip price bef
   - ran: BLOOM up to 1.74x  
     CA `ExdQxJcXzNzhW6CC9phvoEVpKvJQJyg98CE228Uxpump`
 - dev share over 1%: blocked 17, ran 0, dumped 13, flat 3, open 1 (saving losses: keep it)
+- bundles over the line: blocked 17, ran 1, dumped 12, flat 3, open 1 (saving losses: keep it)
+  - ran: dump up to 1.72x  
+    CA `Bu3h78FY2fsWVZ1MdyQVpFTvv5XsRotWX6VjszQTpump`
 - thin 5m volume: blocked 16, ran 3, dumped 9, flat 3, open 1 (saving losses: keep it)
   - ran: DESSA up to 1.54x  
     CA `npz2FhoufQ7pKqhGpaipYWacrAkidyW2yDpVWSvpump`
@@ -156,9 +159,6 @@ A skip "ran" if the coin reached the first target (1.5x) from the skip price bef
     CA `6gnB2H2hbTVvKUWCzNuqjWY8Rod6EVBmfHi7YxZpTWa7`
   - ran: TTPRO up to 1.71x  
     CA `FrSrp9P3bgiFHwr6h5PQHVh55iC8Dae4eZCKPUo9pump`
-- bundles over the line: blocked 16, ran 1, dumped 12, flat 3, open 0 (saving losses: keep it)
-  - ran: dump up to 1.72x  
-    CA `Bu3h78FY2fsWVZ1MdyQVpFTvv5XsRotWX6VjszQTpump`
 
 ## Daily review (2026-11-05, claude-opus-5-5)
 Nothing has a positive edge after costs yet. All 359 settled coins averaged -10.2% net on the simple plan. Before costs that is about +0.4%, so the round-trip cost on a $10 buy (10.6% on average) accounts for the entire loss, the same story as the 22 real trades. FINAL_STRETCH comes closest: about +5.9% before costs, -5.1% after (n=46). At this sample size that is roughly one standard error from zero, from a single day's market, so it is noise until the full week says otherwise. I can't say whether the routine model's would-buys beat its passes, because it made zero would-buys out of 217 decisions. The coins it passed on averaged -11.2% net, the coins that failed the checklist -8.7%, and that gap is also noise.
@@ -199,13 +199,13 @@ Nothing has a positive edge after costs yet. All 359 settled coins averaged -10.
 Meta right now is crude and cheeky names plus fresh launches, not one story. BTC (Big Testicle Coin, +142% on the hour, $38k 5m, 85% buys) and GTA ("Grab That Ass", $13.9k 5m, 86% buys) are the crude-name lane still drawing buyers. The other lane is pump.fun launches under an hour old (PEER +379%, commotitties +284% on $54k 5m at a $17k cap, JACKASS, catfish) that spike and die, so they're lottery tickets, not setups. Politics-joke and GTA VI event coins are fading: Dumocrat -83% on the hour, Gavel Drop -41% with 49% buys and only $7.6k 5m, GTAVI -81% on $373 5m, titcoin -97%. PAWKET is fading too, with $3.5k 5m against roughly $100k per 5 minutes at its hourly pace, so if you hold it, bank the initials. Setups to research, not buy: BTC under MIGRATED rules (age 0.2h, $98k cap, $38k 5m, probe size at most given the age), and GTA as a DIP candidate (-31% off the hour with buyers still stepping in) once its peak is confirmed. Pass on titcoin, GTAVI and the sub-$5k launches. Holder, dev and bundle checks still run on each coin before any entry. Paper only, not financial advice.
 
 ## Moving most in its scans, last 30 min (1h volume)
-- DESSA: $883,896 1h vol, $33,351,800 mcap, -21% 1h  
+- DESSA: $390,185 1h vol, $34,392,725 mcap, -14% 1h  
   CA `npz2FhoufQ7pKqhGpaipYWacrAkidyW2yDpVWSvpump`
-- GTA: $287,783 1h vol, $1,739,254 mcap, -31% 1h  
-  CA `7F8BkfhPaDGMeNkaYeVa99WAqo86LpXDKsLQXpM7pump`
+- BTC: $226,044 1h vol, $1,646 mcap, -96% 1h  
+  CA `GMXYEB8JfRRPxxLCBxWWxFePjMfSfdQUVmd8YHsupump`
 - GATO: $117,546 1h vol, $8,849,190 mcap, +1% 1h  
   CA `HsprHxBRgiVaQdRf3TnKNuZZtaX9JUSPgMFdAkk6pump`
-- GTAVI: $116,922 1h vol, $24,483 mcap, -61% 1h  
-  CA `27AYXq96kjPgsy2qMsLXTPAf47CJHZPHa5P2fQZ38Z77`
-- commotitties: $90,993 1h vol, $3,069 mcap, -32% 1h  
+- GAVELDROP: $98,711 1h vol, $760,058 mcap, -4% 1h  
+  CA `9mWrj77gDZ7w4rwHF6STYXDZmYRMyf39L4go1mXepump`
+- commotitties: $91,120 1h vol, $2,855 mcap, -37% 1h  
   CA `BfDbWrxbbg89kXsofvp8ZHAt1nsnWzaV1KGJM6Wcpump`
