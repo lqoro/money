@@ -1,13 +1,13 @@
 # Trencher live report
 
-Updated 2026-11-05T14:59:53Z (paper trading, never real money)
+Updated 2026-11-05T15:15:05Z (paper trading, never real money)
 
 - Equity: $74.23 (-25.8% vs $100 start)
 - Closed trades: 22, 3 wins
 - Fees paid: $14.78 (axiom $2.81, network $9.18, pool $2.66), plus $4.15 lost to slippage
 - New trades: WATCH-ONLY (scans and decides, buys nothing)
-- Brain: subscription, claude-haiku-5-5 for routine calls, claude-opus-5-5 for the daily review; 531 routine calls and 0 plan-limit hits in 48h
-- Watch log: 91 coins being followed, 939 filed, 0 would-buys (6h follow, sampled every 2 min)
+- Brain: subscription, claude-haiku-5-5 for routine calls, claude-opus-5-5 for the daily review; 529 routine calls and 0 plan-limit hits in 48h
+- Watch log: 92 coins being followed, 942 filed, 0 would-buys (6h follow, sampled every 2 min)
 
 ## Scorecard (after fees)
 - 22 closed, 3 won (14%), net $-25.79
@@ -73,9 +73,17 @@ Updated 2026-11-05T14:59:53Z (paper trading, never real money)
   CA `H4gHnZ3NCU7Z9XQwGX6YYJNyieGEW8pqwGRUcdSxpump`
 
 ## Last scan
-- 14:59Z: 8 coins, 7 with pairs, 1 passed the market filters, 1 researched
+- 15:14Z: 6 coins, 5 with pairs, 0 passed the market filters, 0 researched
 
 ## Coins it looked at, and why it passed
+- 15:11Z WEALTH (MIGRATED, $235,597 mcap, $220,579 5m vol): PASS at conviction 3, PASS: chasing spike, too new, no higher low. Five-minute flow is 5.1x pace and up 27% in one candle, on a 6-minute-old migration with a single candle of structure. Watch it, don't buy it. (V1, V6)  
+  CA `8Mi9E1V2bdPeAaRkR5yxUsAvpzP6UBUEEUrYmgKNpump`
+- 15:06Z GLITCH (MIGRATED, $3,161,816 mcap, $4,596 5m vol): REJECT, Top 10 hold 28.1% ex-pool (>25%) (V13)  
+  CA `8Xg89xT8Ve34sKiYqYuMs46mycREsCA2F362UscRpump`
+- 15:05Z AMD (MIGRATED, $299,368 mcap, $151,647 5m vol): PASS at conviction 3, PASS — chasing spike, and the first resistance is only 1.23x away. The holders are clean, but the setup isn't there yet. (V1, V6)  
+  CA `Eq8UZ5oadKvLtiDnPrb41dwDwU4BuB2tFXRT8rw8pump`
+- 15:02Z GATO (MIGRATED, $8,804,492 mcap, $6,159 5m vol): REJECT, Dev holds 3.3% (>1%) (V13, V17)  
+  CA `HsprHxBRgiVaQdRf3TnKNuZZtaX9JUSPgMFdAkk6pump`
 - 14:59Z ███ (DIP, $644,507 mcap, $6,296 5m vol): REJECT, Top 10 hold 26.1% ex-pool (>25%) (V13)  
   CA `EwX2T1p2PmgTsSq2Bi6XtQYxPC5krR4P2fxPfN4Qpump`
 - 14:55Z RICO (MIGRATED, $132,141 mcap, $2,821 5m vol): REJECT, RugCheck danger: Creator history of rugged tokens  
@@ -88,18 +96,10 @@ Updated 2026-11-05T14:59:53Z (paper trading, never real money)
   CA `9mWrj77gDZ7w4rwHF6STYXDZmYRMyf39L4go1mXepump`
 - 14:42Z Democat (DIP, $662,239 mcap, $2,482 5m vol): REJECT, Dip with fading attention is a falling knife, not a dip (5m at 0.51x the hour's pace, under 0.6x)  
   CA `9Y1F6dZ6HpjZDYZdYuUGwMbkUiPsyU7WPTqTQU4Tpump`
-- 14:42Z Fischer (MIGRATED, $40,993 mcap, $3,292 5m vol): REJECT, Top 10 hold 29.7% ex-pool (>25%) (V13)  
-  CA `ESWuXHiwswpkfhQtA6A1tAtiBJh9A5hUDYj5fEYhigh`
-- 14:41Z CULT (FINAL_STRETCH, $25,100 mcap, $18,567 5m vol): PASS at conviction 3, PASS: chasing spike, no catalyst, and the project site doesn't show the CA. 14-minute-old copy in a 16-coin cult field (V1, V6, V13).  
-  CA `7z1yhqx4igQR1xPoJvMGgKiCGLQpDLtUh9VYAn2Cpump`
-- 14:36Z SOCIAL (DIP, $62,329 mcap, $12,443 5m vol): REJECT, Dip with fading attention is a falling knife, not a dip (5m at 0.45x the hour's pace, under 0.6x)  
-  CA `EguhkH6CJpbV814hd8rTaCCC6qbkRCXfk3MU1yLdpump`
-- 14:29Z JOB (MIGRATED, $3,479,559 mcap, $4,048 5m vol): PASS at conviction 2, PASS: no catalyst, sellers outnumber buys 23 to 9, and the CA isn't on the project's site. Blocker: "no catalyst" on a bottom buy. (V1, V3, V13)  
-  CA `9Pq7aLAbhDG2tTnS22cm6kuysZVcZpLFE368HWuypump`
 
 ## What its skips did next (last 48h)
 A skip "ran" if the coin reached the first target (1.5x) from the skip price before a 20% drop, "dumped" if the drop came first. Sampled every 10 min, followed 6h.
-- top 10 over 25%: blocked 66, ran 11, dumped 51, flat 2, open 2 (saving losses: keep it)
+- top 10 over 25%: blocked 66, ran 11, dumped 52, flat 2, open 1 (saving losses: keep it)
   - ran: OPOL up to 2.02x  
     CA `7R6AYvHyU5MyaTt5MPtRdt2daRUKedvCz8CXZkaspump`
   - ran: MEMECOIN up to 1.5x  
@@ -113,14 +113,14 @@ A skip "ran" if the coin reached the first target (1.5x) from the skip price bef
     CA `HekahVohmeokPUhscg5taNme3Qs2fcSQoNgEeUPMpump`
   - ran: PEPTDOG up to 1.88x  
     CA `GExwMYa2tnJwGfKTmzR4ERiQKptfNceN9GTXc82Lpump`
-- flow below pace: blocked 48, ran 9, dumped 32, flat 4, open 3 (saving losses: keep it)
+- flow below pace: blocked 47, ran 9, dumped 31, flat 4, open 3 (saving losses: keep it)
   - ran: POLITICATS up to 1.85x  
     CA `ADvbwD9pgBeHHQBmBaiUir4zjC946FW2mDJbSejmpump`
   - ran: Pekka up to 1.81x  
     CA `BQ3yawMJwU7RCoFagJ3Go7AYMBDxzeNAKiRC2qTbpump`
   - ran: Link up to 1.57x  
     CA `7kqWni27vRVCKjcuBAmAbs8t7PxXgxdEjUSyRfeFpump`
-- near the high / chasing: blocked 40, ran 6, dumped 30, flat 2, open 2 (saving losses: keep it)
+- near the high / chasing: blocked 40, ran 7, dumped 29, flat 2, open 2 (saving losses: keep it)
   - ran: LUCIA up to 1.83x  
     CA `Cbtnpg6SL9jvZxtZTYYFPtVQXkuuqSUxCU5aXeTkpump`
   - ran: AMD up to 2.02x  
@@ -134,13 +134,13 @@ A skip "ran" if the coin reached the first target (1.5x) from the skip price bef
     CA `2UxjHoidyefQxJrCS8qT23JsbqKFcpPCa8ywBYZupump`
   - ran: ORBIE up to 1.83x  
     CA `HEb2dwDNbBhnrCusoNXXvba9MymYTTmMQcHKaptxmfun`
-- falling knife (code): blocked 24, ran 3, dumped 19, flat 0, open 2 (saving losses: keep it)
+- falling knife (code): blocked 24, ran 4, dumped 19, flat 0, open 1 (saving losses: keep it)
   - ran: DESSA up to 1.54x  
     CA `npz2FhoufQ7pKqhGpaipYWacrAkidyW2yDpVWSvpump`
   - ran: ORBIE up to 1.83x  
     CA `HEb2dwDNbBhnrCusoNXXvba9MymYTTmMQcHKaptxmfun`
-  - ran: inu up to 1.5x  
-    CA `Bid8i1ocWssjRmKh2kcUfHxD1K6Sk7E5pV2PSVdepump`
+  - ran: Democat up to 1.53x  
+    CA `9Y1F6dZ6HpjZDYZdYuUGwMbkUiPsyU7WPTqTQU4Tpump`
 - bundles over the line: blocked 18, ran 2, dumped 13, flat 3, open 0 (saving losses: keep it)
   - ran: GAVELDROP up to 2x  
     CA `9mWrj77gDZ7w4rwHF6STYXDZmYRMyf39L4go1mXepump`
@@ -201,13 +201,13 @@ Nothing has a positive edge after costs yet. All 359 settled coins averaged -10.
 The meta is fresh pump.fun launches with brand, mascot and joke names. Solana Phone (PHONE, $54k 5m, 65% buys, about 6 minutes old), Galaxy Bucks (GBuk, 67% buys, 12 minutes old), goomy (alien dog, 62% buys) and LIBRE (71% buys, +611% on the hour) are where the buyers are. It's rising but decays fast: Pillheads (-84%), SOUNDER (-63%) and donuld dump (-64%, 39% buys) are under an hour old and already dumped, so the first-hour pump is the trap (V1, V6). The old dog and cat names are fading: DogWifJob is at 28% buys on $3.5M, GATO is flat on $9M with $5.8k 5m, and GTA is -26% on the hour with 62% buys but only $8k 5m, under the $10k bar. Setups to research: GTA as a dip watch once I have its peak (it's far above the $70k floor), and PHONE and GBuk as watch-only, since I don't snipe coins under an hour old. The political headlines are attention, not a buy signal, and the crawler's CR, Cristiano and ELYSIUM aren't in scan_movers, so they stay unverified. Paper only, not financial advice.
 
 ## Moving most in its scans, last 30 min (1h volume)
-- DESSA: $1,094,682 1h vol, $37,204,520 mcap, +33% 1h  
+- DESSA: $1,756,576 1h vol, $42,266,454 mcap, +43% 1h  
   CA `npz2FhoufQ7pKqhGpaipYWacrAkidyW2yDpVWSvpump`
-- PILLHEADS: $351,801 1h vol, $1,921 mcap, -99% 1h  
-  CA `BFJd5mWCvu7yMivKCM7Xh8Dx17GgBbwaxcmFX3Aqpump`
-- SOCIAL: $330,429 1h vol, $62,564 mcap, -4% 1h  
-  CA `EguhkH6CJpbV814hd8rTaCCC6qbkRCXfk3MU1yLdpump`
+- WEALTH: $516,399 1h vol, $227,667 mcap, +393% 1h  
+  CA `8Mi9E1V2bdPeAaRkR5yxUsAvpzP6UBUEEUrYmgKNpump`
+- AMD: $482,919 1h vol, $310,856 mcap, +556% 1h  
+  CA `Eq8UZ5oadKvLtiDnPrb41dwDwU4BuB2tFXRT8rw8pump`
+- RATELLO: $371,166 1h vol, $69,872 mcap, -11% 1h  
+  CA `7tKA8ghhfzz27XMSRWHBTYkpyf7oPzziwZgsgyNZpump`
 - GTA: $280,988 1h vol, $3,057,180 mcap, +6% 1h  
   CA `7F8BkfhPaDGMeNkaYeVa99WAqo86LpXDKsLQXpM7pump`
-- GAVELDROP: $236,500 1h vol, $909,038 mcap, +55% 1h  
-  CA `9mWrj77gDZ7w4rwHF6STYXDZmYRMyf39L4go1mXepump`
