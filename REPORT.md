@@ -1,13 +1,13 @@
 # Trencher live report
 
-Updated 2026-11-05T15:30:17Z (paper trading, never real money)
+Updated 2026-11-05T15:45:27Z (paper trading, never real money)
 
 - Equity: $74.23 (-25.8% vs $100 start)
 - Closed trades: 22, 3 wins
 - Fees paid: $14.78 (axiom $2.81, network $9.18, pool $2.66), plus $4.15 lost to slippage
 - New trades: WATCH-ONLY (scans and decides, buys nothing)
-- Brain: subscription, claude-haiku-5-5 for routine calls, claude-opus-5-5 for the daily review; 524 routine calls and 0 plan-limit hits in 48h
-- Watch log: 90 coins being followed, 947 filed, 0 would-buys (6h follow, sampled every 2 min)
+- Brain: subscription, claude-haiku-5-5 for routine calls, claude-opus-5-5 for the daily review; 525 routine calls and 0 plan-limit hits in 48h
+- Watch log: 92 coins being followed, 949 filed, 0 would-buys (6h follow, sampled every 2 min)
 
 ## Scorecard (after fees)
 - 22 closed, 3 won (14%), net $-25.79
@@ -73,9 +73,17 @@ Updated 2026-11-05T15:30:17Z (paper trading, never real money)
   CA `H4gHnZ3NCU7Z9XQwGX6YYJNyieGEW8pqwGRUcdSxpump`
 
 ## Last scan
-- 15:29Z: 1 coins, 0 with pairs, 0 passed the market filters, 0 researched
+- 15:44Z: 5 coins, 4 with pairs, 0 passed the market filters, 0 researched
 
 ## Coins it looked at, and why it passed
+- 15:40Z RICO (MIGRATED, $70,620 mcap, $2,053 5m vol): REJECT, RugCheck danger: Creator history of rugged tokens  
+  CA `8kuQg3WivDtL85VEdw2jEmSXjYt6EEeYBATJ4DtQpump`
+- 15:38Z GTA (DIP, $2,285,748 mcap, $31,990 5m vol): PASS, PASS — brain unavailable, not trading blind.  
+  CA `7F8BkfhPaDGMeNkaYeVa99WAqo86LpXDKsLQXpM7pump`
+- 15:35Z JOB (MIGRATED, $3,463,727 mcap, $3,856 5m vol): PASS at conviction 3, PASS — $3.46M, first resistance only 1.15x away, no catalyst, and 475 sells vs 87 buys in the last hour. The site says "CA dropping soon." Crowded ticker field. (V1, V6, V13)  
+  CA `9Pq7aLAbhDG2tTnS22cm6kuysZVcZpLFE368HWuypump`
+- 15:33Z GTAVI (MIGRATED, $114,392 mcap, $129,878 5m vol): REJECT, Top 10 hold 27.6% ex-pool (>25%) (V13)  
+  CA `27AYXq96kjPgsy2qMsLXTPAf47CJHZPHa5P2fQZ38Z77`
 - 15:28Z GAVELDROP (MIGRATED, $1,201,887 mcap, $13,181 5m vol): REJECT, Bundles: 10 linked wallet cluster(s) hold 47.8% of supply (>20%) (V17)  
   CA `9mWrj77gDZ7w4rwHF6STYXDZmYRMyf39L4go1mXepump`
 - 15:20Z FOTF (MIGRATED, $9,655,147 mcap, $4,755 5m vol): PASS at conviction 2, PASS — $9.7M mcap, the $11M peak is only 1.14x away, and the 5m flow is $4.7k under the $10k bar with no story behind it. Target too close, big cap no room (V1, V6).  
@@ -88,32 +96,24 @@ Updated 2026-11-05T15:30:17Z (paper trading, never real money)
   CA `8Xg89xT8Ve34sKiYqYuMs46mycREsCA2F362UscRpump`
 - 15:05Z AMD (MIGRATED, $299,368 mcap, $151,647 5m vol): PASS at conviction 3, PASS — chasing spike, and the first resistance is only 1.23x away. The holders are clean, but the setup isn't there yet. (V1, V6)  
   CA `Eq8UZ5oadKvLtiDnPrb41dwDwU4BuB2tFXRT8rw8pump`
-- 15:02Z GATO (MIGRATED, $8,804,492 mcap, $6,159 5m vol): REJECT, Dev holds 3.3% (>1%) (V13, V17)  
-  CA `HsprHxBRgiVaQdRf3TnKNuZZtaX9JUSPgMFdAkk6pump`
-- 14:59Z ███ (DIP, $644,507 mcap, $6,296 5m vol): REJECT, Top 10 hold 26.1% ex-pool (>25%) (V13)  
-  CA `EwX2T1p2PmgTsSq2Bi6XtQYxPC5krR4P2fxPfN4Qpump`
-- 14:55Z RICO (MIGRATED, $132,141 mcap, $2,821 5m vol): REJECT, RugCheck danger: Creator history of rugged tokens  
-  CA `8kuQg3WivDtL85VEdw2jEmSXjYt6EEeYBATJ4DtQpump`
-- 14:52Z GTA (DIP, $3,057,180 mcap, $23,983 5m vol): PASS at conviction 3, PASS: DIP on a dying name with no catalyst, the nearest resistance is only 1.14x away, and the website is 0.8 days old and doesn't show this CA. (V1, V3, V13)  
-  CA `7F8BkfhPaDGMeNkaYeVa99WAqo86LpXDKsLQXpM7pump`
 
 ## What its skips did next (last 48h)
 A skip "ran" if the coin reached the first target (1.5x) from the skip price before a 20% drop, "dumped" if the drop came first. Sampled every 10 min, followed 6h.
-- top 10 over 25%: blocked 66, ran 11, dumped 52, flat 2, open 1 (saving losses: keep it)
+- top 10 over 25%: blocked 67, ran 11, dumped 53, flat 2, open 1 (saving losses: keep it)
   - ran: OPOL up to 2.02x  
     CA `7R6AYvHyU5MyaTt5MPtRdt2daRUKedvCz8CXZkaspump`
   - ran: MEMECOIN up to 1.5x  
     CA `592MyuZiyHCEg8YJBnGJXCpcgfaK81vKiV83M3XMpump`
   - ran: NEMO up to 1.6x  
     CA `5ja9qQuE5V9g5TVAFZVdtVQQqoThkAWxEKUaPcC5jN3F`
-- too new / sniping: blocked 64, ran 10, dumped 51, flat 2, open 1 (saving losses: keep it)
+- too new / sniping: blocked 63, ran 10, dumped 50, flat 2, open 1 (saving losses: keep it)
   - ran: SNOWMEI up to 1.76x  
     CA `ETVD787UcTkJqrhZMt15bVet7CQ4SDzCga7DfBm8pump`
   - ran: GTAVI up to 2.31x  
     CA `HekahVohmeokPUhscg5taNme3Qs2fcSQoNgEeUPMpump`
   - ran: PEPTDOG up to 1.88x  
     CA `GExwMYa2tnJwGfKTmzR4ERiQKptfNceN9GTXc82Lpump`
-- flow below pace: blocked 47, ran 9, dumped 31, flat 4, open 3 (saving losses: keep it)
+- flow below pace: blocked 46, ran 9, dumped 31, flat 4, open 2 (saving losses: keep it)
   - ran: POLITICATS up to 1.85x  
     CA `ADvbwD9pgBeHHQBmBaiUir4zjC946FW2mDJbSejmpump`
   - ran: Pekka up to 1.81x  
@@ -127,14 +127,14 @@ A skip "ran" if the coin reached the first target (1.5x) from the skip price bef
     CA `FfuBMS3rh9M61apXJDs14yAngVnYLWR7xkcX5FxMpump`
   - ran: SAN up to 1.63x  
     CA `8kfp8MzuFuj3vrnmG3KBcYVctYmu2JYerdFhPnX4pump`
-- RugCheck danger: blocked 30, ran 8, dumped 20, flat 2, open 0 (saving losses: keep it)
+- RugCheck danger: blocked 30, ran 8, dumped 19, flat 2, open 1 (saving losses: keep it)
   - ran: RAM up to 1.63x  
     CA `72QNkZqiTBsq5dvn4DEwaC5qBPDkc7SZJ38xXy4jpump`
   - ran: $LIBCOIN up to 1.54x  
     CA `2UxjHoidyefQxJrCS8qT23JsbqKFcpPCa8ywBYZupump`
   - ran: ORBIE up to 1.83x  
     CA `HEb2dwDNbBhnrCusoNXXvba9MymYTTmMQcHKaptxmfun`
-- falling knife (code): blocked 24, ran 4, dumped 19, flat 0, open 1 (saving losses: keep it)
+- falling knife (code): blocked 23, ran 4, dumped 19, flat 0, open 0 (saving losses: keep it)
   - ran: DESSA up to 1.54x  
     CA `npz2FhoufQ7pKqhGpaipYWacrAkidyW2yDpVWSvpump`
   - ran: ORBIE up to 1.83x  
@@ -151,7 +151,7 @@ A skip "ran" if the coin reached the first target (1.5x) from the skip price bef
     CA `CG1DmSiMXw9WjQXCzP5JDnma5BDY3Cks9bRTdXNLpump`
   - ran: BLOOM up to 1.74x  
     CA `ExdQxJcXzNzhW6CC9phvoEVpKvJQJyg98CE228Uxpump`
-- dev share over 1%: blocked 17, ran 0, dumped 13, flat 3, open 1 (saving losses: keep it)
+- dev share over 1%: blocked 17, ran 0, dumped 13, flat 4, open 0 (saving losses: keep it)
 - thin 5m volume: blocked 15, ran 3, dumped 9, flat 3, open 0 (saving losses: keep it)
   - ran: DESSA up to 1.54x  
     CA `npz2FhoufQ7pKqhGpaipYWacrAkidyW2yDpVWSvpump`
@@ -196,16 +196,16 @@ Nothing has a positive edge after costs yet. All 359 settled coins averaged -10.
 - [2026-11-02 20:25] I expected Slingoor, a clean MIGRATED leader with $25k of 5m flow at pace and a 0.77 buy share, to retest its $408k high from $304k. It never went green (0.98x peak) and hit the -20% stop in 2 minutes, a -$2.86 probe. My own thesis admitted there was no printed higher low after a peak only 6 minutes old, so this confirms the money-shape rule: buy share and flow are not structure (V1, V6). Next time a MIGRATED pullback with no higher low above the hourly low is a PASS with blocker "no higher low", not a probe. This is one loss, so it adds no new ban beyond the rule I already have.
 
 ## Meta right now
-The meta is fresh pump.fun launches with brand, mascot and joke names. Solana Phone (PHONE, $54k 5m, 65% buys, about 6 minutes old), Galaxy Bucks (GBuk, 67% buys, 12 minutes old), goomy (alien dog, 62% buys) and LIBRE (71% buys, +611% on the hour) are where the buyers are. It's rising but decays fast: Pillheads (-84%), SOUNDER (-63%) and donuld dump (-64%, 39% buys) are under an hour old and already dumped, so the first-hour pump is the trap (V1, V6). The old dog and cat names are fading: DogWifJob is at 28% buys on $3.5M, GATO is flat on $9M with $5.8k 5m, and GTA is -26% on the hour with 62% buys but only $8k 5m, under the $10k bar. Setups to research: GTA as a dip watch once I have its peak (it's far above the $70k floor), and PHONE and GBuk as watch-only, since I don't snipe coins under an hour old. The political headlines are attention, not a buy signal, and the crawler's CR, Cristiano and ELYSIUM aren't in scan_movers, so they stay unverified. Paper only, not financial advice.
+Meta right now is fresh political-meme and pop-culture event hype, not dog and cat names. AMD (A Meme Democrats, 0.4h old, $311k mcap, 71% buys, $141k 5m) and Gavel Drop (16.7h, $1.2M, 63% buys, $15k 5m) carry the midterm-politics theme, while Democat is fading (-12% on the hour, $2k 5m). Event hype is GTA VI, with two same-name tokens at $122k and $5k, so it's a vamp setup and the original has to be sorted first. The fading part is the first-hour pump: PILLHEADS is -99%, SOUNDER -55%, GAIA is dead on zero volume, and PAWKET (+3,822% on the hour, 24% buys at $1.7M) is a sell-side blowoff I'd treat as exit liquidity. Setups to research, not buy: Gavel Drop (past the first hour, well above the $70k floor, 5m volume over $10k), and the GTA VI pumpswap token once the copy is ruled out; AMD is watch-only until it's an hour old. The crawler's PHONE, GBuk, goomy, LIBRE and GTA -26% claims aren't in scan_movers, so they stay unverified and I'm not using them. Paper only, not financial advice.
 
 ## Moving most in its scans, last 30 min (1h volume)
-- DESSA: $2,039,492 1h vol, $39,664,738 mcap, +30% 1h  
+- DESSA: $2,054,015 1h vol, $38,687,317 mcap, +1% 1h  
   CA `npz2FhoufQ7pKqhGpaipYWacrAkidyW2yDpVWSvpump`
 - PAWKET: $532,506 1h vol, $1,712,344 mcap, +3822% 1h  
   CA `ECNQSQA7Y5bnXzbotgv6XcG15c6jpJ6V2BFbYzJrpump`
-- WEALTH: $516,399 1h vol, $227,667 mcap, +393% 1h  
-  CA `8Mi9E1V2bdPeAaRkR5yxUsAvpzP6UBUEEUrYmgKNpump`
-- AMD: $482,919 1h vol, $310,856 mcap, +556% 1h  
-  CA `Eq8UZ5oadKvLtiDnPrb41dwDwU4BuB2tFXRT8rw8pump`
+- titcoin: $520,389 1h vol, $1,761 mcap, -96% 1h  
+  CA `3RWWrY7FcyikEb9V2PFxR7PCBJU6ZW9kkE6pTSYqpump`
 - GAVELDROP: $481,007 1h vol, $1,215,117 mcap, +52% 1h  
   CA `9mWrj77gDZ7w4rwHF6STYXDZmYRMyf39L4go1mXepump`
+- RATELLO: $379,667 1h vol, $20,050 mcap, -74% 1h  
+  CA `7tKA8ghhfzz27XMSRWHBTYkpyf7oPzziwZgsgyNZpump`
