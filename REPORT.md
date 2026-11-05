@@ -1,13 +1,13 @@
 # Trencher live report
 
-Updated 2026-11-05T06:39:16Z (paper trading, never real money)
+Updated 2026-11-05T06:54:54Z (paper trading, never real money)
 
 - Equity: $74.23 (-25.8% vs $100 start)
 - Closed trades: 22, 3 wins
 - Fees paid: $14.78 (axiom $2.81, network $9.18, pool $2.66), plus $4.15 lost to slippage
 - New trades: WATCH-ONLY (scans and decides, buys nothing)
-- Brain: subscription, claude-haiku-5-5 for routine calls, claude-opus-5-5 for the daily review; 529 routine calls and 0 plan-limit hits in 48h
-- Watch log: 118 coins being followed, 787 filed, 0 would-buys (6h follow, sampled every 2 min)
+- Brain: subscription, claude-haiku-5-5 for routine calls, claude-opus-5-5 for the daily review; 530 routine calls and 0 plan-limit hits in 48h
+- Watch log: 114 coins being followed, 794 filed, 0 would-buys (6h follow, sampled every 2 min)
 
 ## Scorecard (after fees)
 - 22 closed, 3 won (14%), net $-25.79
@@ -73,9 +73,15 @@ Updated 2026-11-05T06:39:16Z (paper trading, never real money)
   CA `H4gHnZ3NCU7Z9XQwGX6YYJNyieGEW8pqwGRUcdSxpump`
 
 ## Last scan
-- 06:38Z: 2 coins, 2 with pairs, 0 passed the market filters, 0 researched
+- 06:54Z: 4 coins, 4 with pairs, 1 passed the market filters, 1 researched
 
 ## Coins it looked at, and why it passed
+- 06:54Z ZELDA (MIGRATED, $101,816 mcap, $17,357 5m vol): PASS at conviction 4, PASS — flow below pace. 5m volume is 0.49x the hour's pace, and it just ran 10x in an hour and gave back 37%. No printed higher low. Ocarina is a real story in a 22-copy field. Story good, entry not. (V1, V6)  
+  CA `E1PpVMPtWPhPUKL7DbF6f2eAmuwo3CHBkKusKk54pump`
+- 06:48Z SOUVENIR (MIGRATED, $340,102 mcap, $4,400 5m vol): REJECT, RugCheck danger: Top 10 holders high ownership  
+  CA `5wSQpQfbdSKs7amvyxa2XTzWXNyionERZWdDWykYm1At`
+- 06:47Z peng (FINAL_STRETCH, $27,681 mcap, $39,876 5m vol): PASS at conviction 3, PASS: chasing spike. 5m is up 43% at 6.8x the hourly pace, in a 19-copy PENG field where this is not the leader. The site doesn't show the CA and the domain is 0.1 days old. Farm bait until proven otherwise (V1, V3, V6).  
+  CA `8Q5duzpzzDq8E93sp7vu8Ci1hCSXYnjwuv7iiiTQpump`
 - 06:31Z GTA (DIP, $2,655,426 mcap, $3,704 5m vol): PASS at conviction 3, PASS: GTA ("Grab That Ass") is a DIP with clean holders, but 5m flow is 0.68x pace, no higher low has printed, and it's one of 17 copies in a fading ass/gta lane. Blocker: "flow below pace" (V1, V6).  
   CA `7F8BkfhPaDGMeNkaYeVa99WAqo86LpXDKsLQXpM7pump`
 - 06:27Z ASOL (MIGRATED, $132,318 mcap, $54,409 5m vol): PASS at conviction 4, PASS — 13 minutes old, 5.7% off a $140k peak, sitting on the bond spike with no printed higher low. Chasing (V1, V6).  
@@ -90,12 +96,6 @@ Updated 2026-11-05T06:39:16Z (paper trading, never real money)
   CA `HsprHxBRgiVaQdRf3TnKNuZZtaX9JUSPgMFdAkk6pump`
 - 06:10Z BOTTEGA (MIGRATED, $45,391 mcap, $37,083 5m vol): PASS at conviction 3, PASS: BOTTEGA is about 5 minutes old, 23% off a peak printed 12 minutes ago, with no printed higher low. Blocker: "too new". (V1, V6)  
   CA `zKag3PGuq5RYvN8z3KxwtX9ujmGckUKSJqdUr7sn7PQ`
-- 06:08Z ZELDA (FINAL_STRETCH, $31,265 mcap, $26,230 5m vol): PASS at conviction 3, PASS: Ocarina of Time (ZELDA), a 18-minute-old pump.fun bonding-curve coin that spiked +809% in an hour, is 16% off its peak with no radar mention, no X link, and top 10 at 21.5%. Blocker: "chasing spike" in a 17-copy vamp field with no story behind it. (V1, V6, V13)  
-  CA `E1PpVMPtWPhPUKL7DbF6f2eAmuwo3CHBkKusKk54pump`
-- 06:04Z JOB (MIGRATED, $3,503,979 mcap, $2,504 5m vol): PASS at conviction 2, PASS — sellers are 28 to 7 on 5m, flow is under pace, price sits 2% above the hourly low with no higher low, and the ticker has 24 copies. Blocker: "flow below pace" and "no higher low" (V1, V6, V13).  
-  CA `9Pq7aLAbhDG2tTnS22cm6kuysZVcZpLFE368HWuypump`
-- 06:03Z SOUVENIR (MIGRATED, $445,581 mcap, $6,841 5m vol): REJECT, RugCheck danger: Top 10 holders high ownership  
-  CA `5wSQpQfbdSKs7amvyxa2XTzWXNyionERZWdDWykYm1At`
 
 ## What its skips did next (last 48h)
 A skip "ran" if the coin reached the first target (1.5x) from the skip price before a 20% drop, "dumped" if the drop came first. Sampled every 10 min, followed 6h.
@@ -113,14 +113,14 @@ A skip "ran" if the coin reached the first target (1.5x) from the skip price bef
     CA `HekahVohmeokPUhscg5taNme3Qs2fcSQoNgEeUPMpump`
   - ran: PEPTDOG up to 1.88x  
     CA `GExwMYa2tnJwGfKTmzR4ERiQKptfNceN9GTXc82Lpump`
-- flow below pace: blocked 54, ran 8, dumped 37, flat 5, open 4 (saving losses: keep it)
+- flow below pace: blocked 55, ran 8, dumped 37, flat 5, open 5 (saving losses: keep it)
   - ran: OMBRO up to 1.54x  
     CA `8DB8Fw5UiC1AzugQAfRyw3qL8omw772LJbdehNWhpump`
   - ran: MOGMAS up to 1.68x  
     CA `4yxnt3xAdyBFFbzMWJy9sjGEoiBNkjwdSQZ8ZyULpump`
   - ran: POLITICATS up to 1.85x  
     CA `ADvbwD9pgBeHHQBmBaiUir4zjC946FW2mDJbSejmpump`
-- near the high / chasing: blocked 39, ran 8, dumped 27, flat 4, open 0 (saving losses: keep it)
+- near the high / chasing: blocked 39, ran 7, dumped 28, flat 4, open 0 (saving losses: keep it)
   - ran: underdog up to 1.64x  
     CA `BZXh2LcnNNyypxsdfVeFzXawqmoGoSShC5i4NEQQpump`
   - ran: LUCIA up to 1.83x  
@@ -141,7 +141,7 @@ A skip "ran" if the coin reached the first target (1.5x) from the skip price bef
     CA `3JdeP1VBHgRPunmjTj1D6w6ZZePwGAwjUr2tCufwpump`
   - ran: ORBIE up to 1.83x  
     CA `HEb2dwDNbBhnrCusoNXXvba9MymYTTmMQcHKaptxmfun`
-- bundles over the line: blocked 20, ran 1, dumped 14, flat 3, open 2 (saving losses: keep it)
+- bundles over the line: blocked 20, ran 1, dumped 15, flat 3, open 1 (saving losses: keep it)
   - ran: MAMESUKE up to 1.95x  
     CA `SCGBBnSwnekytGFHgyeHHxPMiN7xDxsWFGg9JgFSTNK`
 - thin 5m volume: blocked 17, ran 4, dumped 9, flat 3, open 1 (saving losses: keep it)
@@ -199,13 +199,13 @@ No. After costs, every bucket loses money. Across 355 settled coins the simple p
 Not quiet. The scan_movers feed is dominated by pump.fun and PumpSwap joke and pop-culture launches under about 1h old, the hottest lane by 5m volume: ZELDA "Ocarina of Time" (+872% 1h, $33k mcap, $26k 5m, 63% buys), GrokWorld (+203% at 0.2h, 57% buys), Big Testicle Coin (+289%, $179k mcap, $39k 5m, but only 50% buys), and BOTTEGA ($45k mcap, $37k 5m, flat, 56% buys). Dog and animal coins are fading (DogWifJob -7% at 203h on 20% buys, CHILLCATS -4%, GTA6CAT -6%). Halal Coin is -52% on 12% buys, so the religious-name lane is dead in this feed. Democat, a political-name coin, is -11% at $855k, which makes it a narrative to watch and a stay-away lane under V13. Under the Table (-75%) and Philosophy Web ($2 of 5m volume) are dead. The crawler's Souvenir +700% doesn't match the feed (-5% 1h, 43% buys), and Gavel Drop, Look At Coins, Crypto Inu, LEEROY and FURAX aren't in scan_movers, so I'm not using their figures. Setups to research, not buy: ZELDA as a Final Stretch candidate near the ~34k bond zone, checking for a pre-bond dump, bundles, and whether 5m volume above mcap is organic (V1, V6, V13); BOTTEGA only if buyers hold on the next prints; Big Testicle Coin only after a right-token check, since its ticker collides with Bitcoin (V3). Holder, dev and bundle checks have not run on any of these, so every candidate stays unverified until they come back clean. Paper trading only, not financial advice.
 
 ## Moving most in its scans, last 30 min (1h volume)
+- ZELDA: $426,134 1h vol, $116,377 mcap, +209% 1h  
+  CA `E1PpVMPtWPhPUKL7DbF6f2eAmuwo3CHBkKusKk54pump`
 - ASOL: $224,464 1h vol, $140,248 mcap, +247% 1h  
   CA `An2r9uFsEeHDhxhbkzFWVNtKB7LwHuEkCRUqqNTJpump`
-- GAVELDROP: $157,518 1h vol, $706,966 mcap, +13% 1h  
-  CA `9mWrj77gDZ7w4rwHF6STYXDZmYRMyf39L4go1mXepump`
-- Democat: $88,777 1h vol, $855,049 mcap, -11% 1h  
-  CA `9Y1F6dZ6HpjZDYZdYuUGwMbkUiPsyU7WPTqTQU4Tpump`
-- UTT: $76,483 1h vol, $9,990 mcap, -72% 1h  
-  CA `Diob9X1HTEGsFpp6iuBSXyr91HF3pw7iKM8AEhHppump`
-- ZELDA: $72,701 1h vol, $11,997 mcap, +180% 1h  
+- BTC: $199,211 1h vol, $5,681 mcap, -94% 1h  
+  CA `CprMhio8gWydFtxQnySgLkgFrw94UawTy5Ao6rpZpump`
+- CHILLCATS: $106,204 1h vol, $24,505 mcap, -64% 1h  
+  CA `4BCbx4hB1XPmC5mLHsFyHEghC5fb9Afu7THLGXiHpump`
+- ZELDA: $83,555 1h vol, $7,719 mcap, +80% 1h  
   CA `4ZrRNPtv7Wwpxb84bgtBTZzfRqjdbJa2DQNFfAZ4pump`
