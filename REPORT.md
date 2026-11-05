@@ -1,13 +1,13 @@
 # Trencher live report
 
-Updated 2026-11-05T06:54:54Z (paper trading, never real money)
+Updated 2026-11-05T07:09:58Z (paper trading, never real money)
 
 - Equity: $74.23 (-25.8% vs $100 start)
 - Closed trades: 22, 3 wins
 - Fees paid: $14.78 (axiom $2.81, network $9.18, pool $2.66), plus $4.15 lost to slippage
 - New trades: WATCH-ONLY (scans and decides, buys nothing)
 - Brain: subscription, claude-haiku-5-5 for routine calls, claude-opus-5-5 for the daily review; 530 routine calls and 0 plan-limit hits in 48h
-- Watch log: 114 coins being followed, 794 filed, 0 would-buys (6h follow, sampled every 2 min)
+- Watch log: 113 coins being followed, 800 filed, 0 would-buys (6h follow, sampled every 2 min)
 
 ## Scorecard (after fees)
 - 22 closed, 3 won (14%), net $-25.79
@@ -73,9 +73,19 @@ Updated 2026-11-05T06:54:54Z (paper trading, never real money)
   CA `H4gHnZ3NCU7Z9XQwGX6YYJNyieGEW8pqwGRUcdSxpump`
 
 ## Last scan
-- 06:54Z: 4 coins, 4 with pairs, 1 passed the market filters, 1 researched
+- 07:08Z: 5 coins, 5 with pairs, 1 passed the market filters, 1 researched
 
 ## Coins it looked at, and why it passed
+- 07:08Z GAVELDROP (MIGRATED, $722,330 mcap, $4,519 5m vol): REJECT, Bundles: 10 linked wallet cluster(s) hold 47.8% of supply (>20%) (V17)  
+  CA `9mWrj77gDZ7w4rwHF6STYXDZmYRMyf39L4go1mXepump`
+- 07:08Z Democat (MIGRATED, $978,732 mcap, $6,251 5m vol): PASS at conviction 3, PASS: flow below pace, no higher low, and it's a midterm cat in a 27-coin vamp field. Election night is over. (V1, V6, V13)  
+  CA `9Y1F6dZ6HpjZDYZdYuUGwMbkUiPsyU7WPTqTQU4Tpump`
+- 07:07Z PAIRS (DIP, $45,891 mcap, $2,048 5m vol): PASS at conviction 2, PASS: the site says this product is a devnet preview that isn't deployed, the CA on the site isn't this one, and 5m flow is $2k in a 19-copy field. Dead story, no catalyst (V1, V3, V13).  
+  CA `WecNBsywJKQLGfBKZzBSix3ykXJ11DfAGUiXCLypair`
+- 07:01Z PIKACOIN (MIGRATED, $58,426 mcap, $53,477 5m vol): PASS at conviction 2, PASS: too new, chasing a spike, and it's one of 12 Pikachu copies with no printed higher low. Blockers: "too new", "chasing spike", "split crowd". (V1, V3, V6)  
+  CA `9KASpPXxyL8DnV4Wrayg5dbae7GyV76YyJGpSK82pump`
+- 06:56Z GATO (MIGRATED, $9,686,101 mcap, $7,903 5m vol): REJECT, Dev holds 3.3% (>1%) (V13, V17)  
+  CA `HsprHxBRgiVaQdRf3TnKNuZZtaX9JUSPgMFdAkk6pump`
 - 06:54Z ZELDA (MIGRATED, $101,816 mcap, $17,357 5m vol): PASS at conviction 4, PASS — flow below pace. 5m volume is 0.49x the hour's pace, and it just ran 10x in an hour and gave back 37%. No printed higher low. Ocarina is a real story in a 22-copy field. Story good, entry not. (V1, V6)  
   CA `E1PpVMPtWPhPUKL7DbF6f2eAmuwo3CHBkKusKk54pump`
 - 06:48Z SOUVENIR (MIGRATED, $340,102 mcap, $4,400 5m vol): REJECT, RugCheck danger: Top 10 holders high ownership  
@@ -86,16 +96,6 @@ Updated 2026-11-05T06:54:54Z (paper trading, never real money)
   CA `7F8BkfhPaDGMeNkaYeVa99WAqo86LpXDKsLQXpM7pump`
 - 06:27Z ASOL (MIGRATED, $132,318 mcap, $54,409 5m vol): PASS at conviction 4, PASS — 13 minutes old, 5.7% off a $140k peak, sitting on the bond spike with no printed higher low. Chasing (V1, V6).  
   CA `An2r9uFsEeHDhxhbkzFWVNtKB7LwHuEkCRUqqNTJpump`
-- 06:26Z PTCG (FINAL_STRETCH, $22,789 mcap, $5,766 5m vol): REJECT, Dev holds 3.3% (>1%) (V13, V17)  
-  CA `FVn8r1xoEMzYCDSyykTpReWi9UbrfqGmBZrQfMBmpump`
-- 06:23Z GAVELDROP (MIGRATED, $696,337 mcap, $5,661 5m vol): REJECT, Bundles: 10 linked wallet cluster(s) hold 47.8% of supply (>20%) (V17)  
-  CA `9mWrj77gDZ7w4rwHF6STYXDZmYRMyf39L4go1mXepump`
-- 06:23Z Democat (MIGRATED, $855,049 mcap, $6,472 5m vol): PASS at conviction 3, PASS — Democat is a MIGRATED coin 28% off its high, but 5m flow is 0.87x pace on $6.5k, there's no confirmed higher low, and the election-night story it's built on already happened. Blocker: "flow below pace." (V1, V6)  
-  CA `9Y1F6dZ6HpjZDYZdYuUGwMbkUiPsyU7WPTqTQU4Tpump`
-- 06:11Z GATO (MIGRATED, $9,823,838 mcap, $13,075 5m vol): REJECT, Dev holds 3.3% (>1%) (V13, V17)  
-  CA `HsprHxBRgiVaQdRf3TnKNuZZtaX9JUSPgMFdAkk6pump`
-- 06:10Z BOTTEGA (MIGRATED, $45,391 mcap, $37,083 5m vol): PASS at conviction 3, PASS: BOTTEGA is about 5 minutes old, 23% off a peak printed 12 minutes ago, with no printed higher low. Blocker: "too new". (V1, V6)  
-  CA `zKag3PGuq5RYvN8z3KxwtX9ujmGckUKSJqdUr7sn7PQ`
 
 ## What its skips did next (last 48h)
 A skip "ran" if the coin reached the first target (1.5x) from the skip price before a 20% drop, "dumped" if the drop came first. Sampled every 10 min, followed 6h.
@@ -106,14 +106,14 @@ A skip "ran" if the coin reached the first target (1.5x) from the skip price bef
     CA `3JdeP1VBHgRPunmjTj1D6w6ZZePwGAwjUr2tCufwpump`
   - ran: PWESIDENT up to 1.51x  
     CA `9Xxsoab47VknN15izoj2wE2x4BoYUfpnxQAUmroGpump`
-- too new / sniping: blocked 61, ran 9, dumped 50, flat 1, open 1 (saving losses: keep it)
+- too new / sniping: blocked 62, ran 9, dumped 51, flat 1, open 1 (saving losses: keep it)
   - ran: SNOWMEI up to 1.76x  
     CA `ETVD787UcTkJqrhZMt15bVet7CQ4SDzCga7DfBm8pump`
   - ran: GTAVI up to 2.31x  
     CA `HekahVohmeokPUhscg5taNme3Qs2fcSQoNgEeUPMpump`
   - ran: PEPTDOG up to 1.88x  
     CA `GExwMYa2tnJwGfKTmzR4ERiQKptfNceN9GTXc82Lpump`
-- flow below pace: blocked 55, ran 8, dumped 37, flat 5, open 5 (saving losses: keep it)
+- flow below pace: blocked 54, ran 8, dumped 37, flat 5, open 4 (saving losses: keep it)
   - ran: OMBRO up to 1.54x  
     CA `8DB8Fw5UiC1AzugQAfRyw3qL8omw772LJbdehNWhpump`
   - ran: MOGMAS up to 1.68x  
@@ -144,7 +144,7 @@ A skip "ran" if the coin reached the first target (1.5x) from the skip price bef
 - bundles over the line: blocked 20, ran 1, dumped 15, flat 3, open 1 (saving losses: keep it)
   - ran: MAMESUKE up to 1.95x  
     CA `SCGBBnSwnekytGFHgyeHHxPMiN7xDxsWFGg9JgFSTNK`
-- thin 5m volume: blocked 17, ran 4, dumped 9, flat 3, open 1 (saving losses: keep it)
+- thin 5m volume: blocked 18, ran 4, dumped 9, flat 4, open 1 (saving losses: keep it)
   - ran: DESSA up to 1.54x  
     CA `npz2FhoufQ7pKqhGpaipYWacrAkidyW2yDpVWSvpump`
   - ran: 404 up to 1.89x  
@@ -158,7 +158,7 @@ A skip "ran" if the coin reached the first target (1.5x) from the skip price bef
     CA `8kuQg3WivDtL85VEdw2jEmSXjYt6EEeYBATJ4DtQpump`
   - ran: MEOWNERO up to 1.76x  
     CA `6gnB2H2hbTVvKUWCzNuqjWY8Rod6EVBmfHi7YxZpTWa7`
-- dev share over 1%: blocked 17, ran 0, dumped 12, flat 2, open 3 (saving losses: keep it)
+- dev share over 1%: blocked 17, ran 0, dumped 12, flat 3, open 2 (saving losses: keep it)
 
 ## Daily review (2026-11-04, claude-opus-5-5)
 No. After costs, every bucket loses money. Across 355 settled coins the simple plan (sell at 1.5x or -20%) averaged -10.1%, and before costs it was only about +0.4%. So the 10.5% round-trip cost on a $10 buy is the whole loss, and no group gets close to clearing it. The best group is MIGRATED at -8.1% net (about +2.3% before costs). With ~355 samples the all-coin result is clearly below zero, about -10% ± 3%. But the samples overlap: the same coin gets logged more than once, a few metas cluster, and it's all one market day. So the real uncertainty is wider, and a single day can't show any subgroup edge. The question about would-buys can't be answered: the routine model made zero BUY calls (would_buy n=0) and said PASS on all 181 coins it reviewed. Those passed coins ran more often than the checklist rejects (30.4% vs 16.1%) and lost less (-7.2% vs -13.1% net). That says the checklist filters somewhat, but nothing here is buyable.
@@ -201,11 +201,11 @@ Not quiet. The scan_movers feed is dominated by pump.fun and PumpSwap joke and p
 ## Moving most in its scans, last 30 min (1h volume)
 - ZELDA: $426,134 1h vol, $116,377 mcap, +209% 1h  
   CA `E1PpVMPtWPhPUKL7DbF6f2eAmuwo3CHBkKusKk54pump`
-- ASOL: $224,464 1h vol, $140,248 mcap, +247% 1h  
-  CA `An2r9uFsEeHDhxhbkzFWVNtKB7LwHuEkCRUqqNTJpump`
-- BTC: $199,211 1h vol, $5,681 mcap, -94% 1h  
-  CA `CprMhio8gWydFtxQnySgLkgFrw94UawTy5Ao6rpZpump`
-- CHILLCATS: $106,204 1h vol, $24,505 mcap, -64% 1h  
+- BOTTEGA: $120,403 1h vol, $20,987 mcap, -43% 1h  
+  CA `zKag3PGuq5RYvN8z3KxwtX9ujmGckUKSJqdUr7sn7PQ`
+- Democat: $102,641 1h vol, $978,732 mcap, +6% 1h  
+  CA `9Y1F6dZ6HpjZDYZdYuUGwMbkUiPsyU7WPTqTQU4Tpump`
+- CHILLCATS: $79,747 1h vol, $9,527 mcap, -85% 1h  
   CA `4BCbx4hB1XPmC5mLHsFyHEghC5fb9Afu7THLGXiHpump`
-- ZELDA: $83,555 1h vol, $7,719 mcap, +80% 1h  
-  CA `4ZrRNPtv7Wwpxb84bgtBTZzfRqjdbJa2DQNFfAZ4pump`
+- SOUVENIR: $78,641 1h vol, $340,102 mcap, -16% 1h  
+  CA `5wSQpQfbdSKs7amvyxa2XTzWXNyionERZWdDWykYm1At`
