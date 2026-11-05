@@ -1,13 +1,13 @@
 # Trencher live report
 
-Updated 2026-11-05T05:38:17Z (paper trading, never real money)
+Updated 2026-11-05T05:53:22Z (paper trading, never real money)
 
 - Equity: $74.23 (-25.8% vs $100 start)
 - Closed trades: 22, 3 wins
 - Fees paid: $14.78 (axiom $2.81, network $9.18, pool $2.66), plus $4.15 lost to slippage
 - New trades: WATCH-ONLY (scans and decides, buys nothing)
-- Brain: subscription, claude-haiku-5-5 for routine calls, claude-opus-5-5 for the daily review; 530 routine calls and 0 plan-limit hits in 48h
-- Watch log: 125 coins being followed, 762 filed, 0 would-buys (6h follow, sampled every 2 min)
+- Brain: subscription, claude-haiku-5-5 for routine calls, claude-opus-5-5 for the daily review; 528 routine calls and 0 plan-limit hits in 48h
+- Watch log: 124 coins being followed, 768 filed, 0 would-buys (6h follow, sampled every 2 min)
 
 ## Scorecard (after fees)
 - 22 closed, 3 won (14%), net $-25.79
@@ -73,9 +73,19 @@ Updated 2026-11-05T05:38:17Z (paper trading, never real money)
   CA `H4gHnZ3NCU7Z9XQwGX6YYJNyieGEW8pqwGRUcdSxpump`
 
 ## Last scan
-- 05:37Z: 9 coins, 9 with pairs, 1 passed the market filters, 1 researched
+- 05:52Z: 4 coins, 4 with pairs, 0 passed the market filters, 0 researched
 
 ## Coins it looked at, and why it passed
+- 05:48Z Look (MIGRATED, $234,680 mcap, $21,495 5m vol): REJECT, Bundles: 8 linked wallet cluster(s) hold 23.8% of supply (>20%) (V17)  
+  CA `F49ncWoGVf2EYpg4iqbkhuMvyLRgJYSrTMT3jCUSpump`
+- 05:46Z GTA (DIP, $2,673,083 mcap, $5,749 5m vol): PASS at conviction 2, PASS: Grab That Ass is a 45% DIP in a fading joke-name lane with no catalyst, flow under the gate, and a $2.7M cap that a probe can't justify. (V1, V6, V13)  
+  CA `7F8BkfhPaDGMeNkaYeVa99WAqo86LpXDKsLQXpM7pump`
+- 05:42Z MOSQUE (DIP, $99,816 mcap, $2,344 5m vol): REJECT, Dip with fading attention is a falling knife, not a dip (5m at 0.34x the hour's pace, under 0.6x)  
+  CA `9FCjRfsuH4ziTqE39dH2wjcpRF5necYUKYpoNtCFdwKE`
+- 05:38Z GAVELDROP (MIGRATED, $650,623 mcap, $9,669 5m vol): REJECT, Bundles: 10 linked wallet cluster(s) hold 47.8% of supply (>20%) (V17)  
+  CA `9mWrj77gDZ7w4rwHF6STYXDZmYRMyf39L4go1mXepump`
+- 05:38Z philosophyweb (MIGRATED, $33,185 mcap, $9,529 5m vol): REJECT, Top 10 hold 26.1% ex-pool (>25%) (V13)  
+  CA `7LfgSksfuUyhw3UpSU1jMp2u7ZwKZvgiCViLToHTpump`
 - 05:38Z Democat (MIGRATED, $927,315 mcap, $5,326 5m vol): PASS at conviction 4, PASS: flow below pace (0.69x hourly), and the political catalyst already printed on election night. Democat is a shallow-band leader that never got its breakout. (V1, V6)  
   CA `9Y1F6dZ6HpjZDYZdYuUGwMbkUiPsyU7WPTqTQU4Tpump`
 - 05:36Z LEEROY (MIGRATED, $261,244 mcap, $7,747 5m vol): PASS at conviction 3, PASS: LEEROY is 75% off its $1.06M high, past the 60% MIGRATED zone and the 70% DIP ceiling, with 5m flow at 0.54x pace and no catalyst. Blocker: flow below pace on a bottom buy. (V1, V6, V13)  
@@ -86,20 +96,10 @@ Updated 2026-11-05T05:38:17Z (paper trading, never real money)
   CA `A75Xx6SeftAmWduv9KGwb2GCjXUAhxozcCUCys9jpump`
 - 05:22Z UTT (FINAL_STRETCH, $31,425 mcap, $15,627 5m vol): REJECT, Top 10 hold 28.8% ex-pool (>25%) (V13)  
   CA `Diob9X1HTEGsFpp6iuBSXyr91HF3pw7iKM8AEhHppump`
-- 05:18Z JOB (MIGRATED, $3,701,373 mcap, $2,676 5m vol): PASS at conviction 2, PASS — $3.7M cap, 5m flow at 0.63x its hourly pace, 0.41 buy share, no printed higher low, and 24 copies of the ticker. Blocker: "big cap, no room." (V1, V6, V13)  
-  CA `9Pq7aLAbhDG2tTnS22cm6kuysZVcZpLFE368HWuypump`
-- 05:18Z SOUVENIR (MIGRATED, $357,711 mcap, $4,946 5m vol): REJECT, RugCheck danger: Top 10 holders high ownership  
-  CA `5wSQpQfbdSKs7amvyxa2XTzWXNyionERZWdDWykYm1At`
-- 05:16Z BTC (FINAL_STRETCH, $21,760 mcap, $11,901 5m vol): REJECT, RugCheck danger: Large Amount of LP Unlocked 97.45%  
-  CA `CprMhio8gWydFtxQnySgLkgFrw94UawTy5Ao6rpZpump`
-- 05:15Z STOA (MIGRATED, $31,794 mcap, $9,794 5m vol): PASS at conviction 2, PASS: STOA is 1.5 minutes old, down 19% from its first-minute peak with no higher low printed, and its own launchpad site was registered 2 hours ago. Blockers: too new, no breakout, no higher low (V1, V6).  
-  CA `AgNyxjdT17R78aNCbooraENiJysDLNMZbZnPtRzpump`
-- 05:04Z GATO (MIGRATED, $10,620,420 mcap, $2,333 5m vol): REJECT, Dev holds 3.3% (>1%) (V13, V17)  
-  CA `HsprHxBRgiVaQdRf3TnKNuZZtaX9JUSPgMFdAkk6pump`
 
 ## What its skips did next (last 48h)
 A skip "ran" if the coin reached the first target (1.5x) from the skip price before a 20% drop, "dumped" if the drop came first. Sampled every 10 min, followed 6h.
-- top 10 over 25%: blocked 63, ran 13, dumped 47, flat 2, open 1 (saving losses: keep it)
+- top 10 over 25%: blocked 64, ran 13, dumped 48, flat 2, open 1 (saving losses: keep it)
   - ran: XDG up to 1.54x  
     CA `J1pZjNKh4BnbXBsroE4acJv3TYzCGxTn46VrZii6orEZ`
   - ran: RATIO up to 1.51x  
@@ -113,13 +113,13 @@ A skip "ran" if the coin reached the first target (1.5x) from the skip price bef
     CA `HekahVohmeokPUhscg5taNme3Qs2fcSQoNgEeUPMpump`
   - ran: PEPTDOG up to 1.88x  
     CA `GExwMYa2tnJwGfKTmzR4ERiQKptfNceN9GTXc82Lpump`
-- flow below pace: blocked 54, ran 9, dumped 36, flat 6, open 3 (saving losses: keep it)
-  - ran: METEORITE up to 1.58x  
-    CA `67RBmGztx8ciVyWr8yi6R8fwrc3EG86XejYT7mespump`
+- flow below pace: blocked 53, ran 8, dumped 36, flat 6, open 3 (saving losses: keep it)
   - ran: OMBRO up to 1.54x  
     CA `8DB8Fw5UiC1AzugQAfRyw3qL8omw772LJbdehNWhpump`
   - ran: MOGMAS up to 1.68x  
     CA `4yxnt3xAdyBFFbzMWJy9sjGEoiBNkjwdSQZ8ZyULpump`
+  - ran: POLITICATS up to 1.85x  
+    CA `ADvbwD9pgBeHHQBmBaiUir4zjC946FW2mDJbSejmpump`
 - near the high / chasing: blocked 38, ran 7, dumped 27, flat 3, open 1 (saving losses: keep it)
   - ran: underdog up to 1.64x  
     CA `BZXh2LcnNNyypxsdfVeFzXawqmoGoSShC5i4NEQQpump`
@@ -134,18 +134,16 @@ A skip "ran" if the coin reached the first target (1.5x) from the skip price bef
     CA `2UxjHoidyefQxJrCS8qT23JsbqKFcpPCa8ywBYZupump`
   - ran: ORBIE up to 1.83x  
     CA `HEb2dwDNbBhnrCusoNXXvba9MymYTTmMQcHKaptxmfun`
-- falling knife (code): blocked 23, ran 4, dumped 19, flat 0, open 0 (saving losses: keep it)
+- falling knife (code): blocked 23, ran 4, dumped 18, flat 0, open 1 (saving losses: keep it)
   - ran: DESSA up to 1.54x  
     CA `npz2FhoufQ7pKqhGpaipYWacrAkidyW2yDpVWSvpump`
   - ran: RATIO up to 1.51x  
     CA `3JdeP1VBHgRPunmjTj1D6w6ZZePwGAwjUr2tCufwpump`
   - ran: ORBIE up to 1.83x  
     CA `HEb2dwDNbBhnrCusoNXXvba9MymYTTmMQcHKaptxmfun`
-- bundles over the line: blocked 21, ran 2, dumped 14, flat 3, open 2 (saving losses: keep it)
+- bundles over the line: blocked 21, ran 1, dumped 15, flat 3, open 2 (saving losses: keep it)
   - ran: MAMESUKE up to 1.95x  
     CA `SCGBBnSwnekytGFHgyeHHxPMiN7xDxsWFGg9JgFSTNK`
-  - ran: Look up to 1.57x  
-    CA `F49ncWoGVf2EYpg4iqbkhuMvyLRgJYSrTMT3jCUSpump`
 - thin 5m volume: blocked 17, ran 4, dumped 9, flat 3, open 1 (saving losses: keep it)
   - ran: DESSA up to 1.54x  
     CA `npz2FhoufQ7pKqhGpaipYWacrAkidyW2yDpVWSvpump`
@@ -203,13 +201,13 @@ No. After costs, every bucket loses money. Across 355 settled coins the simple p
 The trenches are not quiet. Volume is in fresh pump.fun/pumpswap joke-name launches, and four themes repeat across scan_movers: (1) joke and parody names (Look At Coins, Grab That Ass, Under the Table, Souvenir, Big Testicle Coin), mostly under 2h old and the hottest lane by 5m volume; (2) political-name coins (Democat at $1.13M, Gavel Drop at $613k with 82% buys 5m), rising, but this is the lane with the most stay-away risk, so it's a narrative to watch, not a theme to trade; (3) dog and animal coins, fading (DogWifJob -10% at 202h, CHILLCATS -15%, Dog Wif Hijab selling at 36% buys); (4) religious-named hype coins (Elon Mosque, Halal Coin, Dog Wif Hijab), a sensitive and unproven lane. Fading hard: FURAX (-98% 1h on $8 of 5m volume, dead), GTA (-23% with $4.6k 5m on $2.8M), and Souvenir (+700% 1h but 30% buys, looks like distribution). Setups to research, not buy yet: Look At Coins F49n... ($210k mcap, $77k 5m, 62% buys, +78% 1h) first; the 8LE6 "Look" at $5.5k with zero 5m buys is a vamp, ignore it. Gavel Drop only after a politician-CA check and holder/bundle checks come back clean. Caveat: the crawler's meta_summary doesn't match the movers feed. Crypto Inu, LEEROY and CALLINU aren't in scan_movers, and MOSQUE is +6% 1h, not +919%, so I'm not using those figures. Holder, dev and bundle checks still run on every coin before any entry. Paper trading only, not financial advice.
 
 ## Moving most in its scans, last 30 min (1h volume)
+- Look: $430,819 1h vol, $234,680 mcap, +80% 1h  
+  CA `F49ncWoGVf2EYpg4iqbkhuMvyLRgJYSrTMT3jCUSpump`
 - CI: $364,851 1h vol, $197,251 mcap, -52% 1h  
   CA `2z1XKwy3yBujFujGAztZubTEtayhYSaGfjM39uVMpump`
-- PAIRS: $218,558 1h vol, $79,948 mcap, -1% 1h  
-  CA `WecNBsywJKQLGfBKZzBSix3ykXJ11DfAGUiXCLypair`
+- GAVELDROP: $212,986 1h vol, $643,296 mcap, +8% 1h  
+  CA `9mWrj77gDZ7w4rwHF6STYXDZmYRMyf39L4go1mXepump`
 - LEEROY: $167,877 1h vol, $257,373 mcap, -13% 1h  
   CA `98HEU4TvXB3xjB1t15fgxHwYDLUH4fDomvp2DCzJpump`
-- FURAX: $107,750 1h vol, $1,999 mcap, -98% 1h  
-  CA `6xfCD17nTqpVtDwwALjFnchqxzQMMhocF7wELxC3pump`
-- Democat: $92,785 1h vol, $927,315 mcap, -5% 1h  
-  CA `9Y1F6dZ6HpjZDYZdYuUGwMbkUiPsyU7WPTqTQU4Tpump`
+- GTA: $104,142 1h vol, $2,708,046 mcap, -24% 1h  
+  CA `7F8BkfhPaDGMeNkaYeVa99WAqo86LpXDKsLQXpM7pump`
