@@ -1,13 +1,13 @@
 # Trencher live report
 
-Updated 2026-11-05T20:18:14Z (paper trading, never real money)
+Updated 2026-11-05T20:33:25Z (paper trading, never real money)
 
 - Equity: $74.23 (-25.8% vs $100 start)
 - Closed trades: 22, 3 wins
 - Fees paid: $14.78 (axiom $2.81, network $9.18, pool $2.66), plus $4.15 lost to slippage
 - New trades: WATCH-ONLY (scans and decides, buys nothing)
-- Brain: subscription, claude-haiku-5-5 for routine calls, claude-opus-5-5 for the daily review; 502 routine calls and 0 plan-limit hits in 48h
-- Watch log: 98 coins being followed, 1016 filed, 0 would-buys (6h follow, sampled every 2 min)
+- Brain: subscription, claude-haiku-5-5 for routine calls, claude-opus-5-5 for the daily review; 501 routine calls and 0 plan-limit hits in 48h
+- Watch log: 97 coins being followed, 1021 filed, 0 would-buys (6h follow, sampled every 2 min)
 
 ## Scorecard (after fees)
 - 22 closed, 3 won (14%), net $-25.79
@@ -73,9 +73,17 @@ Updated 2026-11-05T20:18:14Z (paper trading, never real money)
   CA `H4gHnZ3NCU7Z9XQwGX6YYJNyieGEW8pqwGRUcdSxpump`
 
 ## Last scan
-- 20:17Z: 7 coins, 6 with pairs, 0 passed the market filters, 0 researched
+- 20:32Z: 5 coins, 4 with pairs, 1 passed the market filters, 1 researched
 
 ## Coins it looked at, and why it passed
+- 20:32Z Edmond (DIP, $50,307 mcap, $11,462 5m vol): REJECT, Dip with fading attention is a falling knife, not a dip (5m at 0.51x the hour's pace, under 0.6x)  
+  CA `E7cdaueM9tCakwmaRiZxs5h6QMTMMaC369dVAYfRpump`
+- 20:27Z LAMPORT (MIGRATED, $63,164 mcap, $2,369 5m vol): PASS at conviction 3, PASS: 5m flow at 0.42x pace on $2.4k of 5m volume, under the $10k bar, and it's down 11% in the last 5m with sells ahead of buys. Blocker: "flow below pace". (V1, V6)  
+  CA `D4CzGsZgusVj2K8R1its5H8WWdo9mazbDwBc6qvsmfun`
+- 20:22Z COGE (MIGRATED, $909,014 mcap, $9,604 5m vol): PASS at conviction 2, PASS: chasing spike, flow at 0.13x pace, and the CA isn't on its own site. Blockers: "chasing spike" + "flow below pace" + "crowded ticker" (V1, V3, V13).  
+  CA `8UQdy5sHMVWUWSHeA5B3ZuuAVNumjSLPXdf19MXcpump`
+- 20:20Z GATO (MIGRATED, $9,538,739 mcap, $11,361 5m vol): REJECT, Dev holds 3.3% (>1%) (V13, V17)  
+  CA `HsprHxBRgiVaQdRf3TnKNuZZtaX9JUSPgMFdAkk6pump`
 - 20:16Z GIVEST (FINAL_STRETCH, $23,473 mcap, $11,929 5m vol): REJECT, Top 10 hold 27.1% ex-pool (>25%) (V13)  
   CA `F2AvkmDtZdXbWXaS1ja8Mjgjy54zsHhDErWzeFCNpump`
 - 20:12Z GAVELDROP (MIGRATED, $356,558 mcap, $5,593 5m vol): REJECT, Bundles: 10 linked wallet cluster(s) hold 47.8% of supply (>20%) (V17)  
@@ -88,32 +96,24 @@ Updated 2026-11-05T20:18:14Z (paper trading, never real money)
   CA `BoSKFKyXoecufqntJCad8ds8QeTCqXFd3696nF3B9NWE`
 - 19:55Z PHILCOIN (DIP, $118,395 mcap, $2,458 5m vol): PASS at conviction 3, PASS. Philcoin is a 13-copy ticker field with no catalyst and no story on my radar. A DIP needs a catalyst. (V1, V6, V13)  
   CA `Ea5dBrJZN58yV1nm1Q4DybJNYKeTvwpb2GEkXyW64bUH`
-- 19:54Z GLITCH (MIGRATED, $3,490,691 mcap, $7,405 5m vol): REJECT, Top 10 hold 28.1% ex-pool (>25%) (V13)  
-  CA `8Xg89xT8Ve34sKiYqYuMs46mycREsCA2F362UscRpump`
-- 19:47Z Edmond (FINAL_STRETCH, $26,496 mcap, $17,331 5m vol): PASS at conviction 3, PASS — seven Edmond copies, no story on the radar, top 10 at 23% and a saw-tooth chart at 72% bond. Bottom-buy gate blocks it anyway. (V1, V6, V13)  
-  CA `E7cdaueM9tCakwmaRiZxs5h6QMTMMaC369dVAYfRpump`
-- 19:47Z LUCIA (MIGRATED, $212,530 mcap, $19,914 5m vol): PASS at conviction 2, PASS — LUCIA is 6% off a 26-minute-old $227k high after a +119% five-minute candle, and no higher low has printed. That's chasing, not a pullback (V1, V6).  
-  CA `38sFzqRSerGhztsgsqQ26ToeAz5UU5ggTS6f5946pump`
-- 19:47Z COGE (MIGRATED, $688,410 mcap, $48,971 5m vol): PASS at conviction 2, PASS — the token's own social link points at an NYC Mayor X post, a political figure, and 5m flow is 0.71x pace in a 13-copy COGE field. Blockers: political figure, flow below pace. (V13, V1)  
-  CA `FsTN7q7wVywYsCNBKfA7R1fJ97rADdvrMMtNSBWYpump`
 
 ## What its skips did next (last 48h)
 A skip "ran" if the coin reached the first target (1.5x) from the skip price before a 20% drop, "dumped" if the drop came first. Sampled every 10 min, followed 6h.
-- top 10 over 25%: blocked 71, ran 11, dumped 54, flat 2, open 4 (saving losses: keep it)
+- top 10 over 25%: blocked 71, ran 12, dumped 54, flat 2, open 3 (saving losses: keep it)
   - ran: MEMECOIN up to 1.5x  
     CA `592MyuZiyHCEg8YJBnGJXCpcgfaK81vKiV83M3XMpump`
   - ran: NEMO up to 1.6x  
     CA `5ja9qQuE5V9g5TVAFZVdtVQQqoThkAWxEKUaPcC5jN3F`
   - ran: Aren up to 1.75x  
     CA `HkyNkVXpJWg1H7hAWjnSW58J22Cx7gnWwUHhFtf5pump`
-- too new / sniping: blocked 57, ran 6, dumped 48, flat 3, open 0 (saving losses: keep it)
+- too new / sniping: blocked 56, ran 6, dumped 47, flat 3, open 0 (saving losses: keep it)
   - ran: AMC  up to 1.55x  
     CA `61nPLZLFkGGGNSEHr4c7LmF82jESvagFsV3jfYLYpump`
   - ran: AMD up to 1.61x  
     CA `GCEEdGYx17shhJyudBTAHYAgcTEpKzntyiiqysmUpump`
   - ran: POLY up to 1.65x  
     CA `DMgry6A9C6U6jopS7bAawukAvAcgpUvWfJULcbnfpump`
-- flow below pace: blocked 43, ran 9, dumped 26, flat 5, open 3 (saving losses: keep it)
+- flow below pace: blocked 45, ran 9, dumped 26, flat 5, open 5 (saving losses: keep it)
   - ran: POLITICATS up to 1.85x  
     CA `ADvbwD9pgBeHHQBmBaiUir4zjC946FW2mDJbSejmpump`
   - ran: Pekka up to 1.81x  
@@ -134,20 +134,20 @@ A skip "ran" if the coin reached the first target (1.5x) from the skip price bef
     CA `2UxjHoidyefQxJrCS8qT23JsbqKFcpPCa8ywBYZupump`
   - ran: ORBIE up to 1.83x  
     CA `HEb2dwDNbBhnrCusoNXXvba9MymYTTmMQcHKaptxmfun`
-- other: blocked 20, ran 7, dumped 11, flat 0, open 2 (mixed)
-  - ran: DESSA up to 1.54x  
-    CA `npz2FhoufQ7pKqhGpaipYWacrAkidyW2yDpVWSvpump`
-  - ran: MACHKA up to 1.52x  
-    CA `CG1DmSiMXw9WjQXCzP5JDnma5BDY3Cks9bRTdXNLpump`
-  - ran: BLOOM up to 1.74x  
-    CA `ExdQxJcXzNzhW6CC9phvoEVpKvJQJyg98CE228Uxpump`
-- falling knife (code): blocked 20, ran 4, dumped 15, flat 0, open 1 (saving losses: keep it)
+- falling knife (code): blocked 21, ran 4, dumped 15, flat 0, open 2 (saving losses: keep it)
   - ran: DESSA up to 1.54x  
     CA `npz2FhoufQ7pKqhGpaipYWacrAkidyW2yDpVWSvpump`
   - ran: ORBIE up to 1.83x  
     CA `HEb2dwDNbBhnrCusoNXXvba9MymYTTmMQcHKaptxmfun`
   - ran: inu up to 1.5x  
     CA `Bid8i1ocWssjRmKh2kcUfHxD1K6Sk7E5pV2PSVdepump`
+- other: blocked 18, ran 5, dumped 11, flat 0, open 2 (saving losses: keep it)
+  - ran: DESSA up to 1.54x  
+    CA `npz2FhoufQ7pKqhGpaipYWacrAkidyW2yDpVWSvpump`
+  - ran: MACHKA up to 1.52x  
+    CA `CG1DmSiMXw9WjQXCzP5JDnma5BDY3Cks9bRTdXNLpump`
+  - ran: BLOOM up to 1.74x  
+    CA `ExdQxJcXzNzhW6CC9phvoEVpKvJQJyg98CE228Uxpump`
 - thin 5m volume: blocked 17, ran 3, dumped 9, flat 4, open 1 (saving losses: keep it)
   - ran: DESSA up to 1.54x  
     CA `npz2FhoufQ7pKqhGpaipYWacrAkidyW2yDpVWSvpump`
@@ -199,13 +199,13 @@ Nothing has a positive edge after costs yet. All 359 settled coins averaged -10.
 Not quiet. The movers are mostly fresh launches that spike and die within the hour, which is the meta right now (V1, V5). Two live themes: animal mascots (el gatito at $20.6k, $9k 5m, 58% buys, 1h old, on the pump.fun curve) and crude joke names (GTA "Grab That Ass" at $557k, $14.8k 5m, 92% buys, 23h old, -22% in the hour). Fading: duplicate-ticker COGE copies (one at -91%, the other at $104k with 45% buys after a 150% hour, a vamp pattern), TOLLS, BURNIT and "hold through the pain sir," all near -90% with dead 5m volume. Setups to research, not buy yet: gatito as a FINAL_STRETCH candidate if 5m volume holds near $10k, and GTA only as a dip candidate if it has a proven peak and pulls back toward 40-50% with buyers stepping in. I'm discarding the crawler's Giga Titty Ass setup because the scan shows $1.6k cap, zero 5m volume and -98%, and its Democat, GAVELDROP and Grand Tits figures don't match the scan either. The Trump and $LAPTOP headlines fit a PolitiFi fade, but no political mover in the scan is running. Paper only, not financial advice.
 
 ## Moving most in its scans, last 30 min (1h volume)
-- GTA: $223,771 1h vol, $17,549 mcap, -98% 1h  
-  CA `7F8BkfhPaDGMeNkaYeVa99WAqo86LpXDKsLQXpM7pump`
-- COGE: $213,324 1h vol, $14,565 mcap, -80% 1h  
-  CA `M5gr5LtdPHNS3SsKx7qeC4cqznxFbJNVqEkUyxqpump`
-- GAVELDROP: $162,530 1h vol, $357,284 mcap, -54% 1h  
-  CA `9mWrj77gDZ7w4rwHF6STYXDZmYRMyf39L4go1mXepump`
-- COGE: $138,477 1h vol, $10,846 mcap, -85% 1h  
-  CA `Fa93AEKdk5GJovkJseEjQ4geYuadFLimbKgy3BiPwiwS`
-- Envelope: $130,564 1h vol, $6,414 mcap, -85% 1h  
-  CA `FnN6ZLo2YB6bDF9AqyQ3juyAyLtsuJ62YcFTSbZGpump`
+- COGE: $888,447 1h vol, $909,014 mcap, +1734% 1h  
+  CA `8UQdy5sHMVWUWSHeA5B3ZuuAVNumjSLPXdf19MXcpump`
+- DNUT: $283,616 1h vol, $12,076 mcap, -73% 1h  
+  CA `7PriNMSQarKxpDcHHVKBkVh2AyK6rNZmdFF5D6Copump`
+- Edmond: $270,086 1h vol, $47,425 mcap, +25% 1h  
+  CA `E7cdaueM9tCakwmaRiZxs5h6QMTMMaC369dVAYfRpump`
+- GATO: $194,587 1h vol, $9,538,739 mcap, -1% 1h  
+  CA `HsprHxBRgiVaQdRf3TnKNuZZtaX9JUSPgMFdAkk6pump`
+- LUCIA: $190,908 1h vol, $1,644 mcap, -98% 1h  
+  CA `38sFzqRSerGhztsgsqQ26ToeAz5UU5ggTS6f5946pump`
