@@ -1,13 +1,13 @@
 # Trencher live report
 
-Updated 2026-11-05T10:57:30Z (paper trading, never real money)
+Updated 2026-11-05T11:12:43Z (paper trading, never real money)
 
 - Equity: $74.23 (-25.8% vs $100 start)
 - Closed trades: 22, 3 wins
 - Fees paid: $14.78 (axiom $2.81, network $9.18, pool $2.66), plus $4.15 lost to slippage
 - New trades: WATCH-ONLY (scans and decides, buys nothing)
-- Brain: subscription, claude-haiku-5-5 for routine calls, claude-opus-5-5 for the daily review; 522 routine calls and 0 plan-limit hits in 48h
-- Watch log: 92 coins being followed, 872 filed, 0 would-buys (6h follow, sampled every 2 min)
+- Brain: subscription, claude-haiku-5-5 for routine calls, claude-opus-5-5 for the daily review; 523 routine calls and 0 plan-limit hits in 48h
+- Watch log: 88 coins being followed, 878 filed, 0 would-buys (6h follow, sampled every 2 min)
 
 ## Scorecard (after fees)
 - 22 closed, 3 won (14%), net $-25.79
@@ -73,9 +73,13 @@ Updated 2026-11-05T10:57:30Z (paper trading, never real money)
   CA `H4gHnZ3NCU7Z9XQwGX6YYJNyieGEW8pqwGRUcdSxpump`
 
 ## Last scan
-- 10:57Z: 3 coins, 2 with pairs, 0 passed the market filters, 0 researched
+- 11:11Z: 8 coins, 6 with pairs, 0 passed the market filters, 0 researched
 
 ## Coins it looked at, and why it passed
+- 11:03Z GTA (DIP, $2,306,432 mcap, $8,348 5m vol): PASS at conviction 4, PASS: bottom buy with no live story or catalyst. "Grab That Ass" is a 14h-old vamp-field leader on a fading theme with a 0.6-day-old website that doesn't show the CA (V1, V3, V13).  
+  CA `7F8BkfhPaDGMeNkaYeVa99WAqo86LpXDKsLQXpM7pump`
+- 11:02Z 7 (FINAL_STRETCH, $24,540 mcap, $28,963 5m vol): PASS at conviction 2, PASS — 10x in 19 minutes, 5m flow at 3.1x pace and no printed higher low. Chasing a spike on a celebrity name with no project account. (V1, V6)  
+  CA `AyJ3fiXTrd7s85YKCC56zrmXtHzwqtVqYvtb462ypump`
 - 10:56Z GAVELDROP (MIGRATED, $820,174 mcap, $11,853 5m vol): REJECT, Bundles: 10 linked wallet cluster(s) hold 47.8% of supply (>20%) (V17)  
   CA `9mWrj77gDZ7w4rwHF6STYXDZmYRMyf39L4go1mXepump`
 - 10:55Z Democat (DIP, $672,989 mcap, $3,907 5m vol): REJECT, Dip with fading attention is a falling knife, not a dip (5m at 0.22x the hour's pace, under 0.6x)  
@@ -92,14 +96,10 @@ Updated 2026-11-05T10:57:30Z (paper trading, never real money)
   CA `HsprHxBRgiVaQdRf3TnKNuZZtaX9JUSPgMFdAkk6pump`
 - 10:19Z Su (no setup, $19,742 mcap, $9,344 5m vol): REJECT, No setup fits: not Final Stretch, not a migrated runner, not a healthy dip  
   CA `9XD1tHPpByPmJi74HrohCMmkXWMs6G9s7BLRiE9Tpump`
-- 10:18Z GTA (DIP, $2,219,683 mcap, $3,496 5m vol): REJECT, Dip with fading attention is a falling knife, not a dip (5m at 0.52x the hour's pace, under 0.6x)  
-  CA `7F8BkfhPaDGMeNkaYeVa99WAqo86LpXDKsLQXpM7pump`
-- 10:11Z TREMPS (MIGRATED, $94,959 mcap, $9,502 5m vol): REJECT, Bundles: 2 linked wallet cluster(s) hold 82.1% of supply (>20%) (V17)  
-  CA `EdD77xt9FZjj815Kdrygc2jDugYRsJfyPeUAc4Fdpump`
 
 ## What its skips did next (last 48h)
 A skip "ran" if the coin reached the first target (1.5x) from the skip price before a 20% drop, "dumped" if the drop came first. Sampled every 10 min, followed 6h.
-- top 10 over 25%: blocked 65, ran 11, dumped 50, flat 3, open 1 (saving losses: keep it)
+- top 10 over 25%: blocked 63, ran 11, dumped 48, flat 3, open 1 (saving losses: keep it)
   - ran: PWESIDENT up to 1.51x  
     CA `9Xxsoab47VknN15izoj2wE2x4BoYUfpnxQAUmroGpump`
   - ran: OPOL up to 2.02x  
@@ -120,7 +120,7 @@ A skip "ran" if the coin reached the first target (1.5x) from the skip price bef
     CA `4yxnt3xAdyBFFbzMWJy9sjGEoiBNkjwdSQZ8ZyULpump`
   - ran: POLITICATS up to 1.85x  
     CA `ADvbwD9pgBeHHQBmBaiUir4zjC946FW2mDJbSejmpump`
-- near the high / chasing: blocked 38, ran 7, dumped 28, flat 3, open 0 (saving losses: keep it)
+- near the high / chasing: blocked 39, ran 8, dumped 28, flat 3, open 0 (saving losses: keep it)
   - ran: underdog up to 1.64x  
     CA `BZXh2LcnNNyypxsdfVeFzXawqmoGoSShC5i4NEQQpump`
   - ran: LUCIA up to 1.83x  
@@ -134,7 +134,7 @@ A skip "ran" if the coin reached the first target (1.5x) from the skip price bef
     CA `2UxjHoidyefQxJrCS8qT23JsbqKFcpPCa8ywBYZupump`
   - ran: ORBIE up to 1.83x  
     CA `HEb2dwDNbBhnrCusoNXXvba9MymYTTmMQcHKaptxmfun`
-- falling knife (code): blocked 24, ran 3, dumped 20, flat 0, open 1 (saving losses: keep it)
+- falling knife (code): blocked 23, ran 3, dumped 19, flat 0, open 1 (saving losses: keep it)
   - ran: DESSA up to 1.54x  
     CA `npz2FhoufQ7pKqhGpaipYWacrAkidyW2yDpVWSvpump`
   - ran: ORBIE up to 1.83x  
@@ -201,11 +201,11 @@ Not quiet. Two real lanes in scan_movers: cats (Su The Cat, $21k cap, $8.5k 5m, 
 ## Moving most in its scans, last 30 min (1h volume)
 - GAVELDROP: $460,237 1h vol, $854,055 mcap, +8% 1h  
   CA `9mWrj77gDZ7w4rwHF6STYXDZmYRMyf39L4go1mXepump`
-- TREMPS: $331,739 1h vol, $1,929 mcap, -96% 1h  
+- TREMPS: $214,574 1h vol, $1,945 mcap, -98% 1h  
   CA `EdD77xt9FZjj815Kdrygc2jDugYRsJfyPeUAc4Fdpump`
 - Democat: $210,439 1h vol, $658,406 mcap, -22% 1h  
   CA `9Y1F6dZ6HpjZDYZdYuUGwMbkUiPsyU7WPTqTQU4Tpump`
-- INDEX: $132,649 1h vol, $7,749 mcap, -80% 1h  
+- 7: $112,393 1h vol, $24,019 mcap, +681% 1h  
+  CA `AyJ3fiXTrd7s85YKCC56zrmXtHzwqtVqYvtb462ypump`
+- INDEX: $75,066 1h vol, $7,090 mcap, -87% 1h  
   CA `EESvU4BaTq6yGfaCUbNVC8HCDtrsfnoecmrSpKzuVxDu`
-- mikedyson: $125,629 1h vol, $6,306 mcap, -46% 1h  
-  CA `GVnrZ8kXcnTp62jGWHdJG2RU7Xz7txobMKyqNnm5pump`
