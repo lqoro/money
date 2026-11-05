@@ -1,13 +1,13 @@
 # Trencher live report
 
-Updated 2026-11-05T21:18:54Z (paper trading, never real money)
+Updated 2026-11-05T21:33:56Z (paper trading, never real money)
 
 - Equity: $74.23 (-25.8% vs $100 start)
 - Closed trades: 22, 3 wins
 - Fees paid: $14.78 (axiom $2.81, network $9.18, pool $2.66), plus $4.15 lost to slippage
 - New trades: WATCH-ONLY (scans and decides, buys nothing)
-- Brain: subscription, claude-haiku-5-5 for routine calls, claude-opus-5-5 for the daily review; 500 routine calls and 0 plan-limit hits in 48h
-- Watch log: 98 coins being followed, 1035 filed, 0 would-buys (6h follow, sampled every 2 min)
+- Brain: subscription, claude-haiku-5-5 for routine calls, claude-opus-5-5 for the daily review; 497 routine calls and 0 plan-limit hits in 48h
+- Watch log: 97 coins being followed, 1037 filed, 0 would-buys (6h follow, sampled every 2 min)
 
 ## Scorecard (after fees)
 - 22 closed, 3 won (14%), net $-25.79
@@ -73,9 +73,11 @@ Updated 2026-11-05T21:18:54Z (paper trading, never real money)
   CA `H4gHnZ3NCU7Z9XQwGX6YYJNyieGEW8pqwGRUcdSxpump`
 
 ## Last scan
-- 21:18Z: 5 coins, 3 with pairs, 0 passed the market filters, 0 researched
+- 21:32Z: 8 coins, 6 with pairs, 0 passed the market filters, 0 researched
 
 ## Coins it looked at, and why it passed
+- 21:25Z COPE (MIGRATED, $101,130 mcap, $62,928 5m vol): PASS at conviction 3, PASS: COPE is 13 minutes old, up 125% in an hour, and 5m volume is 5.9x its hourly pace. That's a spike, not a base. No printed higher low, no catalyst. Blockers: chasing spike, too new. Watch, don't buy. (V1, V6)  
+  CA `GGVs673aVEFBvNZ6ZE4fPhojDSveWuatA1FgAD7Wpump`
 - 21:17Z zezu (MIGRATED, $40,514 mcap, $61,825 5m vol): REJECT, Top 10 hold 25.4% ex-pool (>25%) (V13)  
   CA `HSF72vVdbSAbjjAfru1d6PhTavbSo3pd2gJvKVLvpump`
 - 21:11Z ELSAYED (FINAL_STRETCH, $27,008 mcap, $14,267 5m vol): PASS at conviction 3, PASS — chasing spike. ELSAYED is up 125% on the 5m after a 10x run off its hour low, 27 minutes old, with no printed higher low and a politician's name on a seven-copy vamp field. Blocker: "chasing spike" (V1, V6).  
@@ -94,33 +96,31 @@ Updated 2026-11-05T21:18:54Z (paper trading, never real money)
   CA `9vrEeQSTctTPSCdzbiHWLrb4xcjSn91YcoJFLDyopump`
 - 21:00Z fun (FINAL_STRETCH, $34,757 mcap, $26,088 5m vol): REJECT, Top 10 hold 31.7% ex-pool (>25%) (V13)  
   CA `GY8qWXwZPiYuSadJRwRrJLZPhrXTj7pNVqdkfxoPpump`
-- 20:58Z GAVELDROP (MIGRATED, $424,096 mcap, $8,040 5m vol): REJECT, Bundles: 10 linked wallet cluster(s) hold 47.8% of supply (>20%) (V17)  
-  CA `9mWrj77gDZ7w4rwHF6STYXDZmYRMyf39L4go1mXepump`
 
 ## What its skips did next (last 48h)
 A skip "ran" if the coin reached the first target (1.5x) from the skip price before a 20% drop, "dumped" if the drop came first. Sampled every 10 min, followed 6h.
-- top 10 over 25%: blocked 73, ran 12, dumped 56, flat 3, open 2 (saving losses: keep it)
+- top 10 over 25%: blocked 73, ran 12, dumped 57, flat 3, open 1 (saving losses: keep it)
   - ran: MEMECOIN up to 1.5x  
     CA `592MyuZiyHCEg8YJBnGJXCpcgfaK81vKiV83M3XMpump`
   - ran: NEMO up to 1.6x  
     CA `5ja9qQuE5V9g5TVAFZVdtVQQqoThkAWxEKUaPcC5jN3F`
   - ran: Aren up to 1.75x  
     CA `HkyNkVXpJWg1H7hAWjnSW58J22Cx7gnWwUHhFtf5pump`
-- too new / sniping: blocked 54, ran 6, dumped 45, flat 3, open 0 (saving losses: keep it)
+- too new / sniping: blocked 53, ran 6, dumped 44, flat 3, open 0 (saving losses: keep it)
   - ran: AMC  up to 1.55x  
     CA `61nPLZLFkGGGNSEHr4c7LmF82jESvagFsV3jfYLYpump`
   - ran: AMD up to 1.61x  
     CA `GCEEdGYx17shhJyudBTAHYAgcTEpKzntyiiqysmUpump`
   - ran: POLY up to 1.65x  
     CA `DMgry6A9C6U6jopS7bAawukAvAcgpUvWfJULcbnfpump`
-- flow below pace: blocked 45, ran 10, dumped 27, flat 5, open 3 (saving losses: keep it)
+- flow below pace: blocked 45, ran 11, dumped 27, flat 5, open 2 (saving losses: keep it)
   - ran: POLITICATS up to 1.85x  
     CA `ADvbwD9pgBeHHQBmBaiUir4zjC946FW2mDJbSejmpump`
   - ran: Pekka up to 1.81x  
     CA `BQ3yawMJwU7RCoFagJ3Go7AYMBDxzeNAKiRC2qTbpump`
   - ran: Link up to 1.57x  
     CA `7kqWni27vRVCKjcuBAmAbs8t7PxXgxdEjUSyRfeFpump`
-- near the high / chasing: blocked 40, ran 6, dumped 30, flat 2, open 2 (saving losses: keep it)
+- near the high / chasing: blocked 39, ran 6, dumped 30, flat 1, open 2 (saving losses: keep it)
   - ran: AMD up to 2.02x  
     CA `3MfZ4URVxmB4mfPuy4AxUxpcC5U7aXe7TDA7XVoGpump`
   - ran: PayIF up to 1.56x  
@@ -148,17 +148,17 @@ A skip "ran" if the coin reached the first target (1.5x) from the skip price bef
     CA `CG1DmSiMXw9WjQXCzP5JDnma5BDY3Cks9bRTdXNLpump`
   - ran: BLOOM up to 1.74x  
     CA `ExdQxJcXzNzhW6CC9phvoEVpKvJQJyg98CE228Uxpump`
-- thin 5m volume: blocked 18, ran 3, dumped 9, flat 4, open 2 (saving losses: keep it)
+- thin 5m volume: blocked 18, ran 3, dumped 10, flat 4, open 1 (saving losses: keep it)
   - ran: DESSA up to 1.54x  
     CA `npz2FhoufQ7pKqhGpaipYWacrAkidyW2yDpVWSvpump`
   - ran: MEOWNERO up to 1.76x  
     CA `6gnB2H2hbTVvKUWCzNuqjWY8Rod6EVBmfHi7YxZpTWa7`
   - ran: TTPRO up to 1.71x  
     CA `FrSrp9P3bgiFHwr6h5PQHVh55iC8Dae4eZCKPUo9pump`
-- bundles over the line: blocked 17, ran 1, dumped 13, flat 2, open 1 (saving losses: keep it)
+- dev share over 1%: blocked 16, ran 0, dumped 11, flat 3, open 2 (saving losses: keep it)
+- bundles over the line: blocked 16, ran 1, dumped 12, flat 2, open 1 (saving losses: keep it)
   - ran: dump up to 1.72x  
     CA `Bu3h78FY2fsWVZ1MdyQVpFTvv5XsRotWX6VjszQTpump`
-- dev share over 1%: blocked 16, ran 0, dumped 11, flat 3, open 2 (saving losses: keep it)
 
 ## Daily review (2026-11-05, claude-opus-5-5)
 Nothing has a positive edge after costs yet. All 359 settled coins averaged -10.2% net on the simple plan. Before costs that is about +0.4%, so the round-trip cost on a $10 buy (10.6% on average) accounts for the entire loss, the same story as the 22 real trades. FINAL_STRETCH comes closest: about +5.9% before costs, -5.1% after (n=46). At this sample size that is roughly one standard error from zero, from a single day's market, so it is noise until the full week says otherwise. I can't say whether the routine model's would-buys beat its passes, because it made zero would-buys out of 217 decisions. The coins it passed on averaged -11.2% net, the coins that failed the checklist -8.7%, and that gap is also noise.
@@ -199,13 +199,13 @@ Nothing has a positive edge after costs yet. All 359 settled coins averaged -10.
 Not quiet, but it's the fresh-spike meta: 11 of 15 movers are under 2h old, and most show 1h volume far above 5m volume, so they pump and die (V1, V5). Themes: duplicate-name vamps with political-adjacent naming (COGE main at $909k with $9k 5m and +1734% in 1h, while the copy is already at -85%; the government-efficiency name is DOGE-adjacent and unverified as political promotion), crude joke names fading hard (LUCIA -98%, GTA -99% with $34 5m), and animal mascots that are thin (HAMMY at $9.9k cap but $691 5m; GATO is 1,736h old at $9.5M and flat). The one name with real flow is Edmond (Ed Mondial): $47k cap, $11.8k 5m, +25% in 1h, buys balanced at 49%, and it passes the MIGRATED screen (≤12h, ≥$30k, ≥$10k 5m), so it's the first to research, probably a 4-5 conviction until holders and bundles check out. Setups to research, not buy: COGE main only if 5m holds $10k on a pullback, and GAVELDROP (21h, $357k, -54%, 66% buys) as a DIP candidate only if buyers keep stepping in. I'm not using the crawler's el gatito, GTA at $557k, or Giga Titty Ass figures because they don't appear in the scan. Paper only, not financial advice.
 
 ## Moving most in its scans, last 30 min (1h volume)
-- penguin: $314,529 1h vol, $552,712 mcap, +847% 1h  
-  CA `Ge9u2FUrrcDVZmEpQgyRqPhcxXABWDz4kJWQ2KQBpump`
 - COGE: $205,785 1h vol, $1,090,260 mcap, +102% 1h  
   CA `8UQdy5sHMVWUWSHeA5B3ZuuAVNumjSLPXdf19MXcpump`
-- Snork: $159,406 1h vol, $12,494 mcap, +155% 1h  
-  CA `EZ4EucmvYQVfNKx5xuBESYvCGcXBGUxcn7FUgohjCXpA`
 - GATO: $140,774 1h vol, $10,634,460 mcap, +11% 1h  
   CA `HsprHxBRgiVaQdRf3TnKNuZZtaX9JUSPgMFdAkk6pump`
-- GTA: $130,076 1h vol, $191,418 mcap, +330% 1h  
-  CA `9vrEeQSTctTPSCdzbiHWLrb4xcjSn91YcoJFLDyopump`
+- COPE: $128,216 1h vol, $101,130 mcap, +125% 1h  
+  CA `GGVs673aVEFBvNZ6ZE4fPhojDSveWuatA1FgAD7Wpump`
+- FAHHHH: $117,515 1h vol, $16,359 mcap, +310% 1h  
+  CA `BWLEVaWm95oMLZHysNzxwJH7CPG61gDuVBA2MHrzpump`
+- zezu: $116,778 1h vol, $41,721 mcap, +17% 1h  
+  CA `HSF72vVdbSAbjjAfru1d6PhTavbSo3pd2gJvKVLvpump`
