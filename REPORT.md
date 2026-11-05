@@ -1,13 +1,13 @@
 # Trencher live report
 
-Updated 2026-11-05T22:49:36Z (paper trading, never real money)
+Updated 2026-11-05T23:04:39Z (paper trading, never real money)
 
 - Equity: $74.23 (-25.8% vs $100 start)
 - Closed trades: 22, 3 wins
 - Fees paid: $14.78 (axiom $2.81, network $9.18, pool $2.66), plus $4.15 lost to slippage
 - New trades: WATCH-ONLY (scans and decides, buys nothing)
-- Brain: subscription, claude-haiku-5-5 for routine calls, claude-opus-5-5 for the daily review; 493 routine calls and 0 plan-limit hits in 48h
-- Watch log: 100 coins being followed, 1055 filed, 0 would-buys (6h follow, sampled every 2 min)
+- Brain: subscription, claude-haiku-5-5 for routine calls, claude-opus-5-5 for the daily review; 490 routine calls and 0 plan-limit hits in 48h
+- Watch log: 100 coins being followed, 1057 filed, 0 would-buys (6h follow, sampled every 2 min)
 
 ## Scorecard (after fees)
 - 22 closed, 3 won (14%), net $-25.79
@@ -73,9 +73,13 @@ Updated 2026-11-05T22:49:36Z (paper trading, never real money)
   CA `H4gHnZ3NCU7Z9XQwGX6YYJNyieGEW8pqwGRUcdSxpump`
 
 ## Last scan
-- 22:48Z: 2 coins, 1 with pairs, 0 passed the market filters, 0 researched
+- 23:03Z: 7 coins, 5 with pairs, 0 passed the market filters, 0 researched
 
 ## Coins it looked at, and why it passed
+- 22:59Z TOYS4KIDS (MIGRATED, $35,567 mcap, $29,272 5m vol): PASS at conviction 3, PASS: spike and dump on a vamp copy, no printed higher low, no catalyst. Blockers: "chasing spike" and "no higher low" (V1, V6, V3).  
+  CA `FqJu1nmcNP8fCJfAW7Y4dGmp6fF9iF2RxrqMSFAcpump`
+- 22:49Z GLITCH (MIGRATED, $3,344,745 mcap, $3,208 5m vol): REJECT, Top 10 hold 28.1% ex-pool (>25%) (V13)  
+  CA `8Xg89xT8Ve34sKiYqYuMs46mycREsCA2F362UscRpump`
 - 22:48Z Bubbles (MIGRATED, $171,720 mcap, $8,075 5m vol): PASS at conviction 2, PASS: Bubbles is sitting at its high after a +274% hour, under an hour old, with 16 copies of the ticker. Blocker "chasing" (V1, V6).  
   CA `DNerJKigs1xZ5rCBDtU9a2ACxvskScMnSihWY9yYpump`
 - 22:47Z COGE (MIGRATED, $308,573 mcap, $16,605 5m vol): PASS at conviction 3, PASS: 5m flow is 0.38x its hourly pace and no higher low has printed. Seven copies of the theme, and the site's domain is 0 days old. (V1, V3, V6)  
@@ -92,42 +96,38 @@ Updated 2026-11-05T22:49:36Z (paper trading, never real money)
   CA `9mWrj77gDZ7w4rwHF6STYXDZmYRMyf39L4go1mXepump`
 - 22:26Z CBUCKS (MIGRATED, $1,451,312 mcap, $2,062 5m vol): REJECT, Top 10 hold 26.2% ex-pool (>25%) (V13)  
   CA `DtcicPCKTKeAh7TDEzTym3hXeoHAoMiBdYJhMYxZpump`
-- 22:26Z NEARFUN (FINAL_STRETCH, $19,583 mcap, $17,283 5m vol): REJECT, RugCheck danger: Creator history of rugged tokens  
-  CA `nearFUCFULHhJy2iyJUkAHqxHcEn4La8PbAH1coy5dS`
-- 22:12Z bul (MIGRATED, $84,307 mcap, $2,934 5m vol): REJECT, Bundles: 3 linked wallet cluster(s) hold 29.5% of supply (>20%) (V17)  
-  CA `GyWkSn2ah7dqLyPeZAjEZmfxuU2H4nwfGvgJhfYDVegn`
 
 ## What its skips did next (last 48h)
 A skip "ran" if the coin reached the first target (1.5x) from the skip price before a 20% drop, "dumped" if the drop came first. Sampled every 10 min, followed 6h.
-- top 10 over 25%: blocked 73, ran 12, dumped 54, flat 3, open 4 (saving losses: keep it)
+- top 10 over 25%: blocked 72, ran 12, dumped 54, flat 2, open 4 (saving losses: keep it)
   - ran: NEMO up to 1.6x  
     CA `5ja9qQuE5V9g5TVAFZVdtVQQqoThkAWxEKUaPcC5jN3F`
   - ran: Aren up to 1.75x  
     CA `HkyNkVXpJWg1H7hAWjnSW58J22Cx7gnWwUHhFtf5pump`
   - ran: SUPERBOWL up to 1.61x  
     CA `92j5cWKjdVKDC7skBw1HjvYtrTU8nMM1zKjC4dqmpump`
-- too new / sniping: blocked 52, ran 5, dumped 44, flat 3, open 0 (saving losses: keep it)
+- too new / sniping: blocked 51, ran 5, dumped 43, flat 3, open 0 (saving losses: keep it)
   - ran: AMD up to 1.61x  
     CA `GCEEdGYx17shhJyudBTAHYAgcTEpKzntyiiqysmUpump`
   - ran: POLY up to 1.65x  
     CA `DMgry6A9C6U6jopS7bAawukAvAcgpUvWfJULcbnfpump`
   - ran: Doge up to 1.72x  
     CA `9CRbVZxQshb9dMkh3yGvyARJRAHMGVuxiQRGhUsppump`
-- flow below pace: blocked 44, ran 9, dumped 28, flat 5, open 2 (saving losses: keep it)
+- flow below pace: blocked 43, ran 9, dumped 27, flat 5, open 2 (saving losses: keep it)
   - ran: Link up to 1.57x  
     CA `7kqWni27vRVCKjcuBAmAbs8t7PxXgxdEjUSyRfeFpump`
   - ran: CHICKPOT up to 1.55x  
     CA `8B6ZZAC2FQ7AJrZPz7veXJrod5t2MG1C5MZBLNbUpump`
   - ran: Donkey up to 1.57x  
     CA `G8Lf8uthQp5YHoswQZDRdeRxaWiUqnNFNoZ45y68pump`
-- near the high / chasing: blocked 39, ran 6, dumped 31, flat 1, open 1 (saving losses: keep it)
+- near the high / chasing: blocked 39, ran 7, dumped 30, flat 1, open 1 (saving losses: keep it)
   - ran: AMD up to 2.02x  
     CA `3MfZ4URVxmB4mfPuy4AxUxpcC5U7aXe7TDA7XVoGpump`
   - ran: PayIF up to 1.56x  
     CA `FfuBMS3rh9M61apXJDs14yAngVnYLWR7xkcX5FxMpump`
   - ran: SAN up to 1.63x  
     CA `8kfp8MzuFuj3vrnmG3KBcYVctYmu2JYerdFhPnX4pump`
-- RugCheck danger: blocked 31, ran 8, dumped 22, flat 1, open 0 (saving losses: keep it)
+- RugCheck danger: blocked 30, ran 8, dumped 21, flat 1, open 0 (saving losses: keep it)
   - ran: RAM up to 1.63x  
     CA `72QNkZqiTBsq5dvn4DEwaC5qBPDkc7SZJ38xXy4jpump`
   - ran: $LIBCOIN up to 1.54x  
@@ -203,11 +203,11 @@ Not quiet: nine of the fifteen movers print at least $1.5k of 5-minute volume, a
 ## Moving most in its scans, last 30 min (1h volume)
 - COGE: $521,091 1h vol, $308,573 mcap, +590% 1h  
   CA `ES9FintJPSGcoVuJhkLAsfSoug6B69bDoeTb3hJYpump`
-- VC: $246,665 1h vol, $2,679 mcap, -96% 1h  
-  CA `EiYnLUuc8ondojNx7aBBq6gcrYESop3qe6fXHnswpump`
 - COGE: $144,957 1h vol, $3,055,897 mcap, +155% 1h  
   CA `8UQdy5sHMVWUWSHeA5B3ZuuAVNumjSLPXdf19MXcpump`
-- GTA: $138,793 1h vol, $1,780 mcap, -99% 1h  
-  CA `9vrEeQSTctTPSCdzbiHWLrb4xcjSn91YcoJFLDyopump`
-- GAVELDROP: $131,343 1h vol, $207,463 mcap, -40% 1h  
-  CA `9mWrj77gDZ7w4rwHF6STYXDZmYRMyf39L4go1mXepump`
+- BFN: $95,562 1h vol, $20,142 mcap, +139% 1h  
+  CA `2WBx8bdnKC2PrY1hvbCjDSkYy2JLhPMda5UemmuBWDEW`
+- Bubbles: $84,815 1h vol, $171,388 mcap, +273% 1h  
+  CA `DNerJKigs1xZ5rCBDtU9a2ACxvskScMnSihWY9yYpump`
+- AAAAAAAAAAAAA: $68,406 1h vol, $8,806 mcap, -78% 1h  
+  CA `Bi59TGKZgLa7zVRz1BX3yPg6Cj8wWfZwfNc5FaCApump`
