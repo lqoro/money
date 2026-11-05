@@ -1,13 +1,13 @@
 # Trencher live report
 
-Updated 2026-11-05T05:23:08Z (paper trading, never real money)
+Updated 2026-11-05T05:38:17Z (paper trading, never real money)
 
 - Equity: $74.23 (-25.8% vs $100 start)
 - Closed trades: 22, 3 wins
 - Fees paid: $14.78 (axiom $2.81, network $9.18, pool $2.66), plus $4.15 lost to slippage
 - New trades: WATCH-ONLY (scans and decides, buys nothing)
-- Brain: subscription, claude-haiku-5-5 for routine calls, claude-opus-5-5 for the daily review; 527 routine calls and 0 plan-limit hits in 48h
-- Watch log: 125 coins being followed, 758 filed, 0 would-buys (6h follow, sampled every 2 min)
+- Brain: subscription, claude-haiku-5-5 for routine calls, claude-opus-5-5 for the daily review; 530 routine calls and 0 plan-limit hits in 48h
+- Watch log: 125 coins being followed, 762 filed, 0 would-buys (6h follow, sampled every 2 min)
 
 ## Scorecard (after fees)
 - 22 closed, 3 won (14%), net $-25.79
@@ -73,9 +73,17 @@ Updated 2026-11-05T05:23:08Z (paper trading, never real money)
   CA `H4gHnZ3NCU7Z9XQwGX6YYJNyieGEW8pqwGRUcdSxpump`
 
 ## Last scan
-- 05:22Z: 4 coins, 4 with pairs, 1 passed the market filters, 1 researched
+- 05:37Z: 9 coins, 9 with pairs, 1 passed the market filters, 1 researched
 
 ## Coins it looked at, and why it passed
+- 05:38Z Democat (MIGRATED, $927,315 mcap, $5,326 5m vol): PASS at conviction 4, PASS: flow below pace (0.69x hourly), and the political catalyst already printed on election night. Democat is a shallow-band leader that never got its breakout. (V1, V6)  
+  CA `9Y1F6dZ6HpjZDYZdYuUGwMbkUiPsyU7WPTqTQU4Tpump`
+- 05:36Z LEEROY (MIGRATED, $261,244 mcap, $7,747 5m vol): PASS at conviction 3, PASS: LEEROY is 75% off its $1.06M high, past the 60% MIGRATED zone and the 70% DIP ceiling, with 5m flow at 0.54x pace and no catalyst. Blocker: flow below pace on a bottom buy. (V1, V6, V13)  
+  CA `98HEU4TvXB3xjB1t15fgxHwYDLUH4fDomvp2DCzJpump`
+- 05:33Z CI (MIGRATED, $182,778 mcap, $6,684 5m vol): REJECT, Bundles: 10 linked wallet cluster(s) hold 29.7% of supply (>20%) (V17)  
+  CA `2z1XKwy3yBujFujGAztZubTEtayhYSaGfjM39uVMpump`
+- 05:27Z HELL (MIGRATED, $2,996,670 mcap, $2,184 5m vol): PASS at conviction 3, PASS: no breakout, first resistance only 1.26x away, and 5m flow is $2.2k on a $3M coin. The "AMD partner" page is a fan card. (V1, V6)  
+  CA `A75Xx6SeftAmWduv9KGwb2GCjXUAhxozcCUCys9jpump`
 - 05:22Z UTT (FINAL_STRETCH, $31,425 mcap, $15,627 5m vol): REJECT, Top 10 hold 28.8% ex-pool (>25%) (V13)  
   CA `Diob9X1HTEGsFpp6iuBSXyr91HF3pw7iKM8AEhHppump`
 - 05:18Z JOB (MIGRATED, $3,701,373 mcap, $2,676 5m vol): PASS at conviction 2, PASS — $3.7M cap, 5m flow at 0.63x its hourly pace, 0.41 buy share, no printed higher low, and 24 copies of the ticker. Blocker: "big cap, no room." (V1, V6, V13)  
@@ -88,18 +96,10 @@ Updated 2026-11-05T05:23:08Z (paper trading, never real money)
   CA `AgNyxjdT17R78aNCbooraENiJysDLNMZbZnPtRzpump`
 - 05:04Z GATO (MIGRATED, $10,620,420 mcap, $2,333 5m vol): REJECT, Dev holds 3.3% (>1%) (V13, V17)  
   CA `HsprHxBRgiVaQdRf3TnKNuZZtaX9JUSPgMFdAkk6pump`
-- 05:03Z AMC (MIGRATED, $325,072 mcap, $5,135 5m vol): PASS at conviction 2, PASS: seven copies of AMC share the ticker, CI is the volume leader, and this one's 5m flow is 50/50 at $5.1k. The project site doesn't show this CA. Blocker: split crowd. (V1, V3, V13)  
-  CA `6Mt1oHb12F7JvJhFqcYERPJ3YqKgMGF9b8623uFYpump`
-- 05:02Z Look (MIGRATED, $200,733 mcap, $81,745 5m vol): REJECT, Bundles: 7 linked wallet cluster(s) hold 21.3% of supply (>20%) (V17)  
-  CA `F49ncWoGVf2EYpg4iqbkhuMvyLRgJYSrTMT3jCUSpump`
-- 05:01Z CHILLCATS (MIGRATED, $82,257 mcap, $6,067 5m vol): REJECT, Top 10 hold 45.6% ex-pool (>25%) (V13)  
-  CA `4BCbx4hB1XPmC5mLHsFyHEghC5fb9Afu7THLGXiHpump`
-- 05:00Z GTA (DIP, $2,794,342 mcap, $8,827 5m vol): PASS at conviction 2, PASS: bottom buy on a copy-theme with no catalyst, no printed higher low, and a domain 10 hours old. (V1, V6, V13)  
-  CA `7F8BkfhPaDGMeNkaYeVa99WAqo86LpXDKsLQXpM7pump`
 
 ## What its skips did next (last 48h)
 A skip "ran" if the coin reached the first target (1.5x) from the skip price before a 20% drop, "dumped" if the drop came first. Sampled every 10 min, followed 6h.
-- top 10 over 25%: blocked 63, ran 12, dumped 47, flat 2, open 2 (saving losses: keep it)
+- top 10 over 25%: blocked 63, ran 13, dumped 47, flat 2, open 1 (saving losses: keep it)
   - ran: XDG up to 1.54x  
     CA `J1pZjNKh4BnbXBsroE4acJv3TYzCGxTn46VrZii6orEZ`
   - ran: RATIO up to 1.51x  
@@ -120,7 +120,7 @@ A skip "ran" if the coin reached the first target (1.5x) from the skip price bef
     CA `8DB8Fw5UiC1AzugQAfRyw3qL8omw772LJbdehNWhpump`
   - ran: MOGMAS up to 1.68x  
     CA `4yxnt3xAdyBFFbzMWJy9sjGEoiBNkjwdSQZ8ZyULpump`
-- near the high / chasing: blocked 39, ran 7, dumped 27, flat 3, open 2 (saving losses: keep it)
+- near the high / chasing: blocked 38, ran 7, dumped 27, flat 3, open 1 (saving losses: keep it)
   - ran: underdog up to 1.64x  
     CA `BZXh2LcnNNyypxsdfVeFzXawqmoGoSShC5i4NEQQpump`
   - ran: LUCIA up to 1.83x  
@@ -141,12 +141,12 @@ A skip "ran" if the coin reached the first target (1.5x) from the skip price bef
     CA `3JdeP1VBHgRPunmjTj1D6w6ZZePwGAwjUr2tCufwpump`
   - ran: ORBIE up to 1.83x  
     CA `HEb2dwDNbBhnrCusoNXXvba9MymYTTmMQcHKaptxmfun`
-- bundles over the line: blocked 21, ran 2, dumped 15, flat 3, open 1 (saving losses: keep it)
+- bundles over the line: blocked 21, ran 2, dumped 14, flat 3, open 2 (saving losses: keep it)
   - ran: MAMESUKE up to 1.95x  
     CA `SCGBBnSwnekytGFHgyeHHxPMiN7xDxsWFGg9JgFSTNK`
   - ran: Look up to 1.57x  
     CA `F49ncWoGVf2EYpg4iqbkhuMvyLRgJYSrTMT3jCUSpump`
-- thin 5m volume: blocked 18, ran 4, dumped 10, flat 3, open 1 (saving losses: keep it)
+- thin 5m volume: blocked 17, ran 4, dumped 9, flat 3, open 1 (saving losses: keep it)
   - ran: DESSA up to 1.54x  
     CA `npz2FhoufQ7pKqhGpaipYWacrAkidyW2yDpVWSvpump`
   - ran: 404 up to 1.89x  
@@ -203,13 +203,13 @@ No. After costs, every bucket loses money. Across 355 settled coins the simple p
 The trenches are not quiet. Volume is in fresh pump.fun/pumpswap joke-name launches, and four themes repeat across scan_movers: (1) joke and parody names (Look At Coins, Grab That Ass, Under the Table, Souvenir, Big Testicle Coin), mostly under 2h old and the hottest lane by 5m volume; (2) political-name coins (Democat at $1.13M, Gavel Drop at $613k with 82% buys 5m), rising, but this is the lane with the most stay-away risk, so it's a narrative to watch, not a theme to trade; (3) dog and animal coins, fading (DogWifJob -10% at 202h, CHILLCATS -15%, Dog Wif Hijab selling at 36% buys); (4) religious-named hype coins (Elon Mosque, Halal Coin, Dog Wif Hijab), a sensitive and unproven lane. Fading hard: FURAX (-98% 1h on $8 of 5m volume, dead), GTA (-23% with $4.6k 5m on $2.8M), and Souvenir (+700% 1h but 30% buys, looks like distribution). Setups to research, not buy yet: Look At Coins F49n... ($210k mcap, $77k 5m, 62% buys, +78% 1h) first; the 8LE6 "Look" at $5.5k with zero 5m buys is a vamp, ignore it. Gavel Drop only after a politician-CA check and holder/bundle checks come back clean. Caveat: the crawler's meta_summary doesn't match the movers feed. Crypto Inu, LEEROY and CALLINU aren't in scan_movers, and MOSQUE is +6% 1h, not +919%, so I'm not using those figures. Holder, dev and bundle checks still run on every coin before any entry. Paper trading only, not financial advice.
 
 ## Moving most in its scans, last 30 min (1h volume)
-- Look: $339,015 1h vol, $210,494 mcap, +78% 1h  
-  CA `F49ncWoGVf2EYpg4iqbkhuMvyLRgJYSrTMT3jCUSpump`
-- MOSQUE: $241,542 1h vol, $141,279 mcap, +6% 1h  
-  CA `9FCjRfsuH4ziTqE39dH2wjcpRF5necYUKYpoNtCFdwKE`
-- FURAX: $205,009 1h vol, $1,928 mcap, -98% 1h  
+- CI: $364,851 1h vol, $197,251 mcap, -52% 1h  
+  CA `2z1XKwy3yBujFujGAztZubTEtayhYSaGfjM39uVMpump`
+- PAIRS: $218,558 1h vol, $79,948 mcap, -1% 1h  
+  CA `WecNBsywJKQLGfBKZzBSix3ykXJ11DfAGUiXCLypair`
+- LEEROY: $167,877 1h vol, $257,373 mcap, -13% 1h  
+  CA `98HEU4TvXB3xjB1t15fgxHwYDLUH4fDomvp2DCzJpump`
+- FURAX: $107,750 1h vol, $1,999 mcap, -98% 1h  
   CA `6xfCD17nTqpVtDwwALjFnchqxzQMMhocF7wELxC3pump`
-- GTA: $143,833 1h vol, $2,794,342 mcap, -23% 1h  
-  CA `7F8BkfhPaDGMeNkaYeVa99WAqo86LpXDKsLQXpM7pump`
-- GAVELDROP: $142,458 1h vol, $613,309 mcap, +26% 1h  
-  CA `9mWrj77gDZ7w4rwHF6STYXDZmYRMyf39L4go1mXepump`
+- Democat: $92,785 1h vol, $927,315 mcap, -5% 1h  
+  CA `9Y1F6dZ6HpjZDYZdYuUGwMbkUiPsyU7WPTqTQU4Tpump`
