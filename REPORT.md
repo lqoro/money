@@ -1,13 +1,13 @@
 # Trencher live report
 
-Updated 2026-11-05T19:17:34Z (paper trading, never real money)
+Updated 2026-11-05T19:32:41Z (paper trading, never real money)
 
 - Equity: $74.23 (-25.8% vs $100 start)
 - Closed trades: 22, 3 wins
 - Fees paid: $14.78 (axiom $2.81, network $9.18, pool $2.66), plus $4.15 lost to slippage
 - New trades: WATCH-ONLY (scans and decides, buys nothing)
-- Brain: subscription, claude-haiku-5-5 for routine calls, claude-opus-5-5 for the daily review; 506 routine calls and 0 plan-limit hits in 48h
-- Watch log: 94 coins being followed, 999 filed, 0 would-buys (6h follow, sampled every 2 min)
+- Brain: subscription, claude-haiku-5-5 for routine calls, claude-opus-5-5 for the daily review; 508 routine calls and 0 plan-limit hits in 48h
+- Watch log: 97 coins being followed, 1002 filed, 0 would-buys (6h follow, sampled every 2 min)
 
 ## Scorecard (after fees)
 - 22 closed, 3 won (14%), net $-25.79
@@ -73,9 +73,21 @@ Updated 2026-11-05T19:17:34Z (paper trading, never real money)
   CA `H4gHnZ3NCU7Z9XQwGX6YYJNyieGEW8pqwGRUcdSxpump`
 
 ## Last scan
-- 19:16Z: 5 coins, 5 with pairs, 0 passed the market filters, 0 researched
+- 19:31Z: 5 coins, 4 with pairs, 0 passed the market filters, 0 researched
 
 ## Coins it looked at, and why it passed
+- 19:27Z Chewchan (MIGRATED, $199,551 mcap, $6,468 5m vol): PASS at conviction 3, PASS: flow below pace. Chewchan's 5m is $6.5k at 0.27x its hourly pace, under the $10k bar, in a 21-copy ticker field. Blocker: "flow below pace." (V1, V6, V13)  
+  CA `GMdkBYSKJuWnqd4vGdSnxiELNQTPhMhvdCmPb77dpump`
+- 19:26Z HELL (MIGRATED, $2,785,141 mcap, $874 5m vol): REJECT, 5m volume $874 is dead (<$2,000) (V1)  
+  CA `A75Xx6SeftAmWduv9KGwb2GCjXUAhxozcCUCys9jpump`
+- 19:26Z GAVELDROP (DIP, $771,440 mcap, $12,702 5m vol): REJECT, Bundles: 10 linked wallet cluster(s) hold 47.8% of supply (>20%) (V17)  
+  CA `9mWrj77gDZ7w4rwHF6STYXDZmYRMyf39L4go1mXepump`
+- 19:24Z GTA (MIGRATED, $600,958 mcap, $12,535 5m vol): PASS at conviction 2, PASS — 89.5% off the $5.7M peak, a 21-copy GTA field on a theme that's fading, and the bottom-buy gate fails on theme volume at 0.46x. Blocker: "chasing" plus theme volume. (V1, V6, V13)  
+  CA `7F8BkfhPaDGMeNkaYeVa99WAqo86LpXDKsLQXpM7pump`
+- 19:22Z Envelope (MIGRATED, $39,454 mcap, $24,385 5m vol): REJECT, RugCheck danger: Creator history of rugged tokens  
+  CA `FnN6ZLo2YB6bDF9AqyQ3juyAyLtsuJ62YcFTSbZGpump`
+- 19:21Z gatito (FINAL_STRETCH, $20,572 mcap, $7,674 5m vol): PASS at conviction 3, PASS — chasing spike: +62% in 5m on a 1-hour-old copy in a 16-coin field, top 10 at 20%, no printed higher low. (V1, V6, V13)  
+  CA `5izkW6J9Kp1Ph9P72J8YxYN9qpybMeZusd4M37hFpump`
 - 19:14Z COGE (MIGRATED, $104,310 mcap, $79,049 5m vol): REJECT, RugCheck danger: Creator history of rugged tokens  
   CA `M5gr5LtdPHNS3SsKx7qeC4cqznxFbJNVqEkUyxqpump`
 - 19:05Z COGE (MIGRATED, $98,538 mcap, $99,903 5m vol): PASS at conviction 3, PASS: split crowd. This is a copy in a 20-coin COGE field, and it isn't the leader. The DWdB... CA is doing $163k on 5m to this one's $100k, and this one is up 38% in five minutes, so it's chasing. (V1, V3, V6)  
@@ -84,28 +96,16 @@ Updated 2026-11-05T19:17:34Z (paper trading, never real money)
   CA `FsTN7q7wVywYsCNBKfA7R1fJ97rADdvrMMtNSBWYpump`
 - 18:58Z PHILCOIN (DIP, $102,510 mcap, $2,816 5m vol): PASS at conviction 3, PASS. Philcoin is a 52% dip with no story left: 5m flow is $2.8k with sellers in charge, and no catalyst. Blocker: no catalyst, dead story. (V1, V6, V13)  
   CA `Ea5dBrJZN58yV1nm1Q4DybJNYKeTvwpb2GEkXyW64bUH`
-- 18:58Z FOTF (MIGRATED, $9,968,063 mcap, $3,059 5m vol): PASS at conviction 3, PASS: $10M cap, first resistance only 1.22x away, $3k on the 5m, and no story behind the name. Big cap, no room, target too close (V1, V6).  
-  CA `7gmxQoGqCNK9BJSaD5NNSPgCjpLV8eTSsStnhQuGArDM`
-- 18:58Z GLITCH (MIGRATED, $3,025,044 mcap, $6,279 5m vol): REJECT, Top 10 hold 28.1% ex-pool (>25%) (V13)  
-  CA `8Xg89xT8Ve34sKiYqYuMs46mycREsCA2F362UscRpump`
-- 18:58Z COGE (MIGRATED, $318,509 mcap, $203,032 5m vol): PASS at conviction 2, PASS: 14 minutes old, 12x off its hourly low with no higher low printed, a 22-copy DOGE-style field, and the X link is a politician's post. Blockers: too new, bottom-buy gate, political link (V1, V6, V13).  
-  CA `DWdBJoNezK9itTwmPDYrScYpBxvWySxeWWV8N9RcmdrT`
-- 18:56Z RICO (MIGRATED, $90,009 mcap, $2,442 5m vol): REJECT, RugCheck danger: Creator history of rugged tokens  
-  CA `8kuQg3WivDtL85VEdw2jEmSXjYt6EEeYBATJ4DtQpump`
-- 18:49Z GATO (MIGRATED, $9,738,742 mcap, $10,489 5m vol): REJECT, Dev holds 3.3% (>1%) (V13, V17)  
-  CA `HsprHxBRgiVaQdRf3TnKNuZZtaX9JUSPgMFdAkk6pump`
-- 18:41Z Chewchan (MIGRATED, $162,805 mcap, $36,117 5m vol): REJECT, Top 10 hold 28.0% ex-pool (>25%) (V13)  
-  CA `GMdkBYSKJuWnqd4vGdSnxiELNQTPhMhvdCmPb77dpump`
 
 ## What its skips did next (last 48h)
 A skip "ran" if the coin reached the first target (1.5x) from the skip price before a 20% drop, "dumped" if the drop came first. Sampled every 10 min, followed 6h.
-- top 10 over 25%: blocked 71, ran 12, dumped 54, flat 2, open 3 (saving losses: keep it)
-  - ran: OPOL up to 2.02x  
-    CA `7R6AYvHyU5MyaTt5MPtRdt2daRUKedvCz8CXZkaspump`
+- top 10 over 25%: blocked 70, ran 11, dumped 54, flat 2, open 3 (saving losses: keep it)
   - ran: MEMECOIN up to 1.5x  
     CA `592MyuZiyHCEg8YJBnGJXCpcgfaK81vKiV83M3XMpump`
   - ran: NEMO up to 1.6x  
     CA `5ja9qQuE5V9g5TVAFZVdtVQQqoThkAWxEKUaPcC5jN3F`
+  - ran: Aren up to 1.75x  
+    CA `HkyNkVXpJWg1H7hAWjnSW58J22Cx7gnWwUHhFtf5pump`
 - too new / sniping: blocked 58, ran 8, dumped 47, flat 3, open 0 (saving losses: keep it)
   - ran: PEPTDOG up to 1.88x  
     CA `GExwMYa2tnJwGfKTmzR4ERiQKptfNceN9GTXc82Lpump`
@@ -113,21 +113,21 @@ A skip "ran" if the coin reached the first target (1.5x) from the skip price bef
     CA `BZYkZXtHNK7g1ZQ26iNgkLe1ufDrLUX8EcCGLGF7pump`
   - ran: AMC  up to 1.55x  
     CA `61nPLZLFkGGGNSEHr4c7LmF82jESvagFsV3jfYLYpump`
-- flow below pace: blocked 43, ran 9, dumped 26, flat 5, open 3 (saving losses: keep it)
+- flow below pace: blocked 44, ran 9, dumped 27, flat 5, open 3 (saving losses: keep it)
   - ran: POLITICATS up to 1.85x  
     CA `ADvbwD9pgBeHHQBmBaiUir4zjC946FW2mDJbSejmpump`
   - ran: Pekka up to 1.81x  
     CA `BQ3yawMJwU7RCoFagJ3Go7AYMBDxzeNAKiRC2qTbpump`
   - ran: Link up to 1.57x  
     CA `7kqWni27vRVCKjcuBAmAbs8t7PxXgxdEjUSyRfeFpump`
-- near the high / chasing: blocked 40, ran 5, dumped 30, flat 2, open 3 (saving losses: keep it)
+- near the high / chasing: blocked 42, ran 7, dumped 32, flat 2, open 1 (saving losses: keep it)
   - ran: AMD up to 2.02x  
     CA `3MfZ4URVxmB4mfPuy4AxUxpcC5U7aXe7TDA7XVoGpump`
   - ran: PayIF up to 1.56x  
     CA `FfuBMS3rh9M61apXJDs14yAngVnYLWR7xkcX5FxMpump`
   - ran: SAN up to 1.63x  
     CA `8kfp8MzuFuj3vrnmG3KBcYVctYmu2JYerdFhPnX4pump`
-- RugCheck danger: blocked 31, ran 8, dumped 20, flat 1, open 2 (saving losses: keep it)
+- RugCheck danger: blocked 32, ran 8, dumped 22, flat 1, open 1 (saving losses: keep it)
   - ran: RAM up to 1.63x  
     CA `72QNkZqiTBsq5dvn4DEwaC5qBPDkc7SZJ38xXy4jpump`
   - ran: $LIBCOIN up to 1.54x  
@@ -199,13 +199,13 @@ Nothing has a positive edge after costs yet. All 359 settled coins averaged -10.
 Not quiet: the movers are mostly fresh launches that fade within the hour. Four themes: animal mascots under an hour old are rising (SI at 0.1h and +613%, el gatito at 0.2h with 53% buys); crude names are rising (Giga Titty Ass at $104k, 90% buys, +137% in the hour, while its namesake is dead); PolitiFi is fading (Democat -39%, GAVELDROP 5m volume $766 on a $638k cap); spike-then-die is most of the list (MOONVEMBER -99%, BURNIT -89%, fiat, Jimothy). The crawler's "Grand Tits" setup doesn't match the scan (that CA is $1.7k, zero 5m volume, -98%), so it's dropped. Only migrated-tab candidate on paper: Giga Titty Ass (ca 2gst8QZdxtUam2usCWFzZX7yBddkgctVqjWtSw7epump, pumpswap, 0.4h old, $14.2k 5m). Already +137% in the hour, so research only; at most a probe (conviction 5), only if holder, dev and bundle checks come back clean. Not chasing the new pairs (SI, gatito, Tolls, whose entire 1h volume landed in the last 5 minutes). Rocco fails the 5m rule at $6.2k. Paper only, not financial advice.
 
 ## Moving most in its scans, last 30 min (1h volume)
-- COGE: $1,393,377 1h vol, $326,395 mcap, +773% 1h  
-  CA `DWdBJoNezK9itTwmPDYrScYpBxvWySxeWWV8N9RcmdrT`
 - COGE: $780,807 1h vol, $93,276 mcap, +141% 1h  
   CA `Fa93AEKdk5GJovkJseEjQ4geYuadFLimbKgy3BiPwiwS`
-- COGE: $246,112 1h vol, $3,185 mcap, -91% 1h  
+- Chewchan: $282,906 1h vol, $199,551 mcap, -10% 1h  
+  CA `GMdkBYSKJuWnqd4vGdSnxiELNQTPhMhvdCmPb77dpump`
+- COGE: $247,811 1h vol, $2,949 mcap, -91% 1h  
   CA `Ch24dNtXQNWVsXEJvWihzbhzfggtMHumwKu9gVLQpump`
-- COGE: $237,876 1h vol, $206,147 mcap, +243% 1h  
-  CA `FsTN7q7wVywYsCNBKfA7R1fJ97rADdvrMMtNSBWYpump`
 - COGE: $191,350 1h vol, $104,310 mcap, +150% 1h  
   CA `M5gr5LtdPHNS3SsKx7qeC4cqznxFbJNVqEkUyxqpump`
+- GTA: $176,638 1h vol, $557,138 mcap, -22% 1h  
+  CA `7F8BkfhPaDGMeNkaYeVa99WAqo86LpXDKsLQXpM7pump`
