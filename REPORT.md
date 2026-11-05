@@ -1,13 +1,13 @@
 # Trencher live report
 
-Updated 2026-11-05T09:57:07Z (paper trading, never real money)
+Updated 2026-11-05T10:12:22Z (paper trading, never real money)
 
 - Equity: $74.23 (-25.8% vs $100 start)
 - Closed trades: 22, 3 wins
 - Fees paid: $14.78 (axiom $2.81, network $9.18, pool $2.66), plus $4.15 lost to slippage
 - New trades: WATCH-ONLY (scans and decides, buys nothing)
 - Brain: subscription, claude-haiku-5-5 for routine calls, claude-opus-5-5 for the daily review; 525 routine calls and 0 plan-limit hits in 48h
-- Watch log: 99 coins being followed, 851 filed, 0 would-buys (6h follow, sampled every 2 min)
+- Watch log: 99 coins being followed, 856 filed, 0 would-buys (6h follow, sampled every 2 min)
 
 ## Scorecard (after fees)
 - 22 closed, 3 won (14%), net $-25.79
@@ -73,9 +73,19 @@ Updated 2026-11-05T09:57:07Z (paper trading, never real money)
   CA `H4gHnZ3NCU7Z9XQwGX6YYJNyieGEW8pqwGRUcdSxpump`
 
 ## Last scan
-- 09:56Z: 3 coins, 2 with pairs, 0 passed the market filters, 0 researched
+- 10:12Z: 4 coins, 4 with pairs, 0 passed the market filters, 0 researched
 
 ## Coins it looked at, and why it passed
+- 10:11Z TREMPS (MIGRATED, $94,959 mcap, $9,502 5m vol): REJECT, Bundles: 2 linked wallet cluster(s) hold 82.1% of supply (>20%) (V17)  
+  CA `EdD77xt9FZjj815Kdrygc2jDugYRsJfyPeUAc4Fdpump`
+- 10:11Z GAVELDROP (MIGRATED, $1,006,001 mcap, $78,978 5m vol): REJECT, Bundles: 10 linked wallet cluster(s) hold 47.8% of supply (>20%) (V17)  
+  CA `9mWrj77gDZ7w4rwHF6STYXDZmYRMyf39L4go1mXepump`
+- 10:10Z Democat (MIGRATED, $975,759 mcap, $5,219 5m vol): PASS at conviction 3, PASS: no breakout, flow under pace, and a same-ticker vamp field with bigger Democats in it. Not the leader, so not mine. (V1, V3, V6)  
+  CA `9Y1F6dZ6HpjZDYZdYuUGwMbkUiPsyU7WPTqTQU4Tpump`
+- 10:05Z INDEX (MIGRATED, $56,575 mcap, $9,043 5m vol): PASS at conviction 3, PASS. INDEX is 40 seconds old and already up 42% on 5m, sitting 6% off its own peak. That's a spike, not a buy, and the vamp field splits the crowd (V1, V6, V13).  
+  CA `EESvU4BaTq6yGfaCUbNVC8HCDtrsfnoecmrSpKzuVxDu`
+- 09:57Z mikedyson (FINAL_STRETCH, $24,163 mcap, $30,709 5m vol): REJECT, Top 10 hold 29.8% ex-pool (>25%) (V13)  
+  CA `GVnrZ8kXcnTp62jGWHdJG2RU7Xz7txobMKyqNnm5pump`
 - 09:50Z LEVERAGED (FINAL_STRETCH, $22,296 mcap, $3,267 5m vol): PASS at conviction 3, PASS — 5m flow is $3.3k with the theme at 0.04x its hourly pace, the site is 6 hours old and doesn't show this CA, and it's a house-run leverage casino page. Farm-shaped vamp field. (V1, V13, V16)  
   CA `35TVjidU7ePGMWLM1r2UwEXXWCWH77kFyFndJ57xpump`
 - 09:43Z GATO (MIGRATED, $10,205,650 mcap, $3,212 5m vol): REJECT, Dev holds 3.3% (>1%) (V13, V17)  
@@ -86,34 +96,24 @@ Updated 2026-11-05T09:57:07Z (paper trading, never real money)
   CA `8upv7s9NasqQuvVfqiBH9gEADQGx4fXQNRRKcXFwiyUw`
 - 09:25Z GAVELDROP (MIGRATED, $750,274 mcap, $10,099 5m vol): REJECT, Bundles: 10 linked wallet cluster(s) hold 47.8% of supply (>20%) (V17)  
   CA `9mWrj77gDZ7w4rwHF6STYXDZmYRMyf39L4go1mXepump`
-- 09:25Z Democat (MIGRATED, $790,624 mcap, $3,896 5m vol): PASS at conviction 3, PASS. Democat is a flow-below-pace MIGRATED bounce with no printed higher low, a political-party theme whose catalyst (election night) already printed, and a crowded DEMOCRAT ticker field. Blocker: "flow below pace" (V1, V6).  
-  CA `9Y1F6dZ6HpjZDYZdYuUGwMbkUiPsyU7WPTqTQU4Tpump`
-- 09:24Z ZELDA (MIGRATED, $223,572 mcap, $30,371 5m vol): REJECT, Bundles: 10 linked wallet cluster(s) hold 100.0% of supply (>20%) (V17)  
-  CA `9okwT7syLTFXDv4W64Xp7QUgTx6yKE82SDjzitHNpump`
-- 09:24Z Mei (FINAL_STRETCH, $30,182 mcap, $36,854 5m vol): PASS at conviction 3, PASS: chasing spike. Mei is 6 minutes old, up 397% on the 5m and printing 10x its hourly pace, with no higher low and no story behind it. Farm-shaped until proven otherwise (V1, V6, V13).  
-  CA `2CG7SCxXcZgkKoqmzGDPtMCwAfQooaUzNhfG7DVDpump`
-- 09:05Z $Gatto (DIP, $102,253 mcap, $2,233 5m vol): REJECT, Top 10 hold 34.0% ex-pool (>25%) (V13)  
-  CA `25Lrwta8CGeMt3pmxy7DivhJzRzBp5Ne76bdaxbPpump`
-- 09:04Z Retail (FINAL_STRETCH, $20,705 mcap, $4,735 5m vol): REJECT, RugCheck danger: Creator history of rugged tokens  
-  CA `DgoVJ1Up6gi9uZM2cLjTeENZ3GdefXVVnKHtidokpump`
 
 ## What its skips did next (last 48h)
 A skip "ran" if the coin reached the first target (1.5x) from the skip price before a 20% drop, "dumped" if the drop came first. Sampled every 10 min, followed 6h.
-- top 10 over 25%: blocked 64, ran 11, dumped 49, flat 3, open 1 (saving losses: keep it)
+- top 10 over 25%: blocked 65, ran 11, dumped 50, flat 3, open 1 (saving losses: keep it)
   - ran: PWESIDENT up to 1.51x  
     CA `9Xxsoab47VknN15izoj2wE2x4BoYUfpnxQAUmroGpump`
   - ran: OPOL up to 2.02x  
     CA `7R6AYvHyU5MyaTt5MPtRdt2daRUKedvCz8CXZkaspump`
   - ran: MEMECOIN up to 1.5x  
     CA `592MyuZiyHCEg8YJBnGJXCpcgfaK81vKiV83M3XMpump`
-- too new / sniping: blocked 61, ran 9, dumped 50, flat 1, open 1 (saving losses: keep it)
+- too new / sniping: blocked 61, ran 9, dumped 49, flat 1, open 2 (saving losses: keep it)
   - ran: SNOWMEI up to 1.76x  
     CA `ETVD787UcTkJqrhZMt15bVet7CQ4SDzCga7DfBm8pump`
   - ran: GTAVI up to 2.31x  
     CA `HekahVohmeokPUhscg5taNme3Qs2fcSQoNgEeUPMpump`
   - ran: PEPTDOG up to 1.88x  
     CA `GExwMYa2tnJwGfKTmzR4ERiQKptfNceN9GTXc82Lpump`
-- flow below pace: blocked 52, ran 9, dumped 34, flat 5, open 4 (saving losses: keep it)
+- flow below pace: blocked 52, ran 10, dumped 35, flat 5, open 2 (saving losses: keep it)
   - ran: OMBRO up to 1.54x  
     CA `8DB8Fw5UiC1AzugQAfRyw3qL8omw772LJbdehNWhpump`
   - ran: MOGMAS up to 1.68x  
@@ -141,7 +141,7 @@ A skip "ran" if the coin reached the first target (1.5x) from the skip price bef
     CA `HEb2dwDNbBhnrCusoNXXvba9MymYTTmMQcHKaptxmfun`
   - ran: inu up to 1.5x  
     CA `Bid8i1ocWssjRmKh2kcUfHxD1K6Sk7E5pV2PSVdepump`
-- bundles over the line: blocked 19, ran 1, dumped 14, flat 3, open 1 (saving losses: keep it)
+- bundles over the line: blocked 19, ran 1, dumped 13, flat 3, open 2 (saving losses: keep it)
   - ran: MAMESUKE up to 1.95x  
     CA `SCGBBnSwnekytGFHgyeHHxPMiN7xDxsWFGg9JgFSTNK`
 - dev share over 1%: blocked 18, ran 0, dumped 14, flat 3, open 1 (saving losses: keep it)
@@ -199,13 +199,13 @@ No. After costs, every bucket loses money. Across 355 settled coins the simple p
 Not quiet, but the crawler's coin numbers don't match scan_movers. Inu, Defective Acceleration, the Pokémon coins and the joke launches aren't in the list, and d/acc shows $19.8k mcap, not $47k, so I'm reading only the movers. Two themes are rising: game and pop-culture nostalgia (ZELDA +448% 1h on $44k 5m with 60% buys, GTA6CAT in the same lane but thin at $3.3k 5m) and trading-jargon launches (Retail +528%, LEVERAGED +243%, PerpsNow +99%), though those three sit under the $10k 5m bar. A political lane is getting real money (Democat at $804k mcap with $4.4k 5m and 70% buys; GAVELDROP at $753k with $10.8k 5m and 78% buys), but it's a meme riding midterm noise, so I'd treat it as higher risk and research-only; d/acc (-55% 1h), Short Pad (-69%) and GIF are fading. Setups to research now: ZELDA first, checking global fees against roughly 27 SOL for a $267k cap and bundles before anything, and GAVELDROP as the cleaner-looking flow; Mei (+811% on a six-minute-old launch, $37k 5m on a $30k cap) is farm-shaped, so watch only. Everything is unverified; paper only, not financial advice.
 
 ## Moving most in its scans, last 30 min (1h volume)
-- Retail: $90,178 1h vol, $3,162 mcap, -92% 1h  
+- ZELDA: $280,342 1h vol, $1,952 mcap, -99% 1h  
+  CA `9okwT7syLTFXDv4W64Xp7QUgTx6yKE82SDjzitHNpump`
+- GAVELDROP: $263,517 1h vol, $1,006,668 mcap, +56% 1h  
+  CA `9mWrj77gDZ7w4rwHF6STYXDZmYRMyf39L4go1mXepump`
+- TREMPS: $132,165 1h vol, $88,151 mcap, +115% 1h  
+  CA `EdD77xt9FZjj815Kdrygc2jDugYRsJfyPeUAc4Fdpump`
+- Retail: $90,771 1h vol, $3,001 mcap, -92% 1h  
   CA `DgoVJ1Up6gi9uZM2cLjTeENZ3GdefXVVnKHtidokpump`
-- GIF: $80,117 1h vol, $2,733 mcap, -16% 1h  
-  CA `9MRXakh9ofc4wvDwFLQr3xAMDbSy1EVEg5aJVPxPpump`
-- GATO: $57,649 1h vol, $10,194,867 mcap, +1% 1h  
-  CA `HsprHxBRgiVaQdRf3TnKNuZZtaX9JUSPgMFdAkk6pump`
-- GTA: $55,511 1h vol, $2,481,466 mcap, +7% 1h  
-  CA `7F8BkfhPaDGMeNkaYeVa99WAqo86LpXDKsLQXpM7pump`
-- LEVERAGED: $45,350 1h vol, $22,296 mcap, +138% 1h  
-  CA `35TVjidU7ePGMWLM1r2UwEXXWCWH77kFyFndJ57xpump`
+- Su: $74,739 1h vol, $18,810 mcap, +430% 1h  
+  CA `9XD1tHPpByPmJi74HrohCMmkXWMs6G9s7BLRiE9Tpump`
