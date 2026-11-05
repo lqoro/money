@@ -1,13 +1,13 @@
 # Trencher live report
 
-Updated 2026-11-05T15:15:05Z (paper trading, never real money)
+Updated 2026-11-05T15:30:17Z (paper trading, never real money)
 
 - Equity: $74.23 (-25.8% vs $100 start)
 - Closed trades: 22, 3 wins
 - Fees paid: $14.78 (axiom $2.81, network $9.18, pool $2.66), plus $4.15 lost to slippage
 - New trades: WATCH-ONLY (scans and decides, buys nothing)
-- Brain: subscription, claude-haiku-5-5 for routine calls, claude-opus-5-5 for the daily review; 529 routine calls and 0 plan-limit hits in 48h
-- Watch log: 92 coins being followed, 942 filed, 0 would-buys (6h follow, sampled every 2 min)
+- Brain: subscription, claude-haiku-5-5 for routine calls, claude-opus-5-5 for the daily review; 524 routine calls and 0 plan-limit hits in 48h
+- Watch log: 90 coins being followed, 947 filed, 0 would-buys (6h follow, sampled every 2 min)
 
 ## Scorecard (after fees)
 - 22 closed, 3 won (14%), net $-25.79
@@ -73,9 +73,15 @@ Updated 2026-11-05T15:15:05Z (paper trading, never real money)
   CA `H4gHnZ3NCU7Z9XQwGX6YYJNyieGEW8pqwGRUcdSxpump`
 
 ## Last scan
-- 15:14Z: 6 coins, 5 with pairs, 0 passed the market filters, 0 researched
+- 15:29Z: 1 coins, 0 with pairs, 0 passed the market filters, 0 researched
 
 ## Coins it looked at, and why it passed
+- 15:28Z GAVELDROP (MIGRATED, $1,201,887 mcap, $13,181 5m vol): REJECT, Bundles: 10 linked wallet cluster(s) hold 47.8% of supply (>20%) (V17)  
+  CA `9mWrj77gDZ7w4rwHF6STYXDZmYRMyf39L4go1mXepump`
+- 15:20Z FOTF (MIGRATED, $9,655,147 mcap, $4,755 5m vol): PASS at conviction 2, PASS — $9.7M mcap, the $11M peak is only 1.14x away, and the 5m flow is $4.7k under the $10k bar with no story behind it. Target too close, big cap no room (V1, V6).  
+  CA `7gmxQoGqCNK9BJSaD5NNSPgCjpLV8eTSsStnhQuGArDM`
+- 15:16Z PAWKET (MIGRATED, $1,623,185 mcap, $253,640 5m vol): REJECT, Top 10 hold 55.6% ex-pool (>25%) (V13)  
+  CA `ECNQSQA7Y5bnXzbotgv6XcG15c6jpJ6V2BFbYzJrpump`
 - 15:11Z WEALTH (MIGRATED, $235,597 mcap, $220,579 5m vol): PASS at conviction 3, PASS: chasing spike, too new, no higher low. Five-minute flow is 5.1x pace and up 27% in one candle, on a 6-minute-old migration with a single candle of structure. Watch it, don't buy it. (V1, V6)  
   CA `8Mi9E1V2bdPeAaRkR5yxUsAvpzP6UBUEEUrYmgKNpump`
 - 15:06Z GLITCH (MIGRATED, $3,161,816 mcap, $4,596 5m vol): REJECT, Top 10 hold 28.1% ex-pool (>25%) (V13)  
@@ -90,12 +96,6 @@ Updated 2026-11-05T15:15:05Z (paper trading, never real money)
   CA `8kuQg3WivDtL85VEdw2jEmSXjYt6EEeYBATJ4DtQpump`
 - 14:52Z GTA (DIP, $3,057,180 mcap, $23,983 5m vol): PASS at conviction 3, PASS: DIP on a dying name with no catalyst, the nearest resistance is only 1.14x away, and the website is 0.8 days old and doesn't show this CA. (V1, V3, V13)  
   CA `7F8BkfhPaDGMeNkaYeVa99WAqo86LpXDKsLQXpM7pump`
-- 14:51Z titcoin (MIGRATED, $117,204 mcap, $78,990 5m vol): PASS at conviction 2, PASS: chasing spike. titcoin is 12 minutes old, up 194% on the hour, +27% on 5m at 5x its hourly pace, and only 9% off a $128k peak. No printed higher low yet. Come back if it pulls back 10-60% and prints one. (V1, V6)  
-  CA `3RWWrY7FcyikEb9V2PFxR7PCBJU6ZW9kkE6pTSYqpump`
-- 14:43Z GAVELDROP (MIGRATED, $923,227 mcap, $12,350 5m vol): REJECT, Bundles: 10 linked wallet cluster(s) hold 47.8% of supply (>20%) (V17)  
-  CA `9mWrj77gDZ7w4rwHF6STYXDZmYRMyf39L4go1mXepump`
-- 14:42Z Democat (DIP, $662,239 mcap, $2,482 5m vol): REJECT, Dip with fading attention is a falling knife, not a dip (5m at 0.51x the hour's pace, under 0.6x)  
-  CA `9Y1F6dZ6HpjZDYZdYuUGwMbkUiPsyU7WPTqTQU4Tpump`
 
 ## What its skips did next (last 48h)
 A skip "ran" if the coin reached the first target (1.5x) from the skip price before a 20% drop, "dumped" if the drop came first. Sampled every 10 min, followed 6h.
@@ -106,7 +106,7 @@ A skip "ran" if the coin reached the first target (1.5x) from the skip price bef
     CA `592MyuZiyHCEg8YJBnGJXCpcgfaK81vKiV83M3XMpump`
   - ran: NEMO up to 1.6x  
     CA `5ja9qQuE5V9g5TVAFZVdtVQQqoThkAWxEKUaPcC5jN3F`
-- too new / sniping: blocked 64, ran 10, dumped 50, flat 1, open 3 (saving losses: keep it)
+- too new / sniping: blocked 64, ran 10, dumped 51, flat 2, open 1 (saving losses: keep it)
   - ran: SNOWMEI up to 1.76x  
     CA `ETVD787UcTkJqrhZMt15bVet7CQ4SDzCga7DfBm8pump`
   - ran: GTAVI up to 2.31x  
@@ -120,14 +120,14 @@ A skip "ran" if the coin reached the first target (1.5x) from the skip price bef
     CA `BQ3yawMJwU7RCoFagJ3Go7AYMBDxzeNAKiRC2qTbpump`
   - ran: Link up to 1.57x  
     CA `7kqWni27vRVCKjcuBAmAbs8t7PxXgxdEjUSyRfeFpump`
-- near the high / chasing: blocked 40, ran 7, dumped 29, flat 2, open 2 (saving losses: keep it)
-  - ran: LUCIA up to 1.83x  
-    CA `Cbtnpg6SL9jvZxtZTYYFPtVQXkuuqSUxCU5aXeTkpump`
+- near the high / chasing: blocked 39, ran 6, dumped 29, flat 2, open 2 (saving losses: keep it)
   - ran: AMD up to 2.02x  
     CA `3MfZ4URVxmB4mfPuy4AxUxpcC5U7aXe7TDA7XVoGpump`
   - ran: PayIF up to 1.56x  
     CA `FfuBMS3rh9M61apXJDs14yAngVnYLWR7xkcX5FxMpump`
-- RugCheck danger: blocked 30, ran 8, dumped 19, flat 2, open 1 (saving losses: keep it)
+  - ran: SAN up to 1.63x  
+    CA `8kfp8MzuFuj3vrnmG3KBcYVctYmu2JYerdFhPnX4pump`
+- RugCheck danger: blocked 30, ran 8, dumped 20, flat 2, open 0 (saving losses: keep it)
   - ran: RAM up to 1.63x  
     CA `72QNkZqiTBsq5dvn4DEwaC5qBPDkc7SZJ38xXy4jpump`
   - ran: $LIBCOIN up to 1.54x  
@@ -141,12 +141,10 @@ A skip "ran" if the coin reached the first target (1.5x) from the skip price bef
     CA `HEb2dwDNbBhnrCusoNXXvba9MymYTTmMQcHKaptxmfun`
   - ran: Democat up to 1.53x  
     CA `9Y1F6dZ6HpjZDYZdYuUGwMbkUiPsyU7WPTqTQU4Tpump`
-- bundles over the line: blocked 18, ran 2, dumped 13, flat 3, open 0 (saving losses: keep it)
-  - ran: GAVELDROP up to 2x  
-    CA `9mWrj77gDZ7w4rwHF6STYXDZmYRMyf39L4go1mXepump`
+- bundles over the line: blocked 18, ran 1, dumped 13, flat 3, open 1 (saving losses: keep it)
   - ran: dump up to 1.72x  
     CA `Bu3h78FY2fsWVZ1MdyQVpFTvv5XsRotWX6VjszQTpump`
-- other: blocked 17, ran 4, dumped 12, flat 1, open 0 (saving losses: keep it)
+- other: blocked 17, ran 4, dumped 11, flat 1, open 1 (saving losses: keep it)
   - ran: DESSA up to 1.54x  
     CA `npz2FhoufQ7pKqhGpaipYWacrAkidyW2yDpVWSvpump`
   - ran: MACHKA up to 1.52x  
@@ -201,13 +199,13 @@ Nothing has a positive edge after costs yet. All 359 settled coins averaged -10.
 The meta is fresh pump.fun launches with brand, mascot and joke names. Solana Phone (PHONE, $54k 5m, 65% buys, about 6 minutes old), Galaxy Bucks (GBuk, 67% buys, 12 minutes old), goomy (alien dog, 62% buys) and LIBRE (71% buys, +611% on the hour) are where the buyers are. It's rising but decays fast: Pillheads (-84%), SOUNDER (-63%) and donuld dump (-64%, 39% buys) are under an hour old and already dumped, so the first-hour pump is the trap (V1, V6). The old dog and cat names are fading: DogWifJob is at 28% buys on $3.5M, GATO is flat on $9M with $5.8k 5m, and GTA is -26% on the hour with 62% buys but only $8k 5m, under the $10k bar. Setups to research: GTA as a dip watch once I have its peak (it's far above the $70k floor), and PHONE and GBuk as watch-only, since I don't snipe coins under an hour old. The political headlines are attention, not a buy signal, and the crawler's CR, Cristiano and ELYSIUM aren't in scan_movers, so they stay unverified. Paper only, not financial advice.
 
 ## Moving most in its scans, last 30 min (1h volume)
-- DESSA: $1,756,576 1h vol, $42,266,454 mcap, +43% 1h  
+- DESSA: $2,039,492 1h vol, $39,664,738 mcap, +30% 1h  
   CA `npz2FhoufQ7pKqhGpaipYWacrAkidyW2yDpVWSvpump`
+- PAWKET: $532,506 1h vol, $1,712,344 mcap, +3822% 1h  
+  CA `ECNQSQA7Y5bnXzbotgv6XcG15c6jpJ6V2BFbYzJrpump`
 - WEALTH: $516,399 1h vol, $227,667 mcap, +393% 1h  
   CA `8Mi9E1V2bdPeAaRkR5yxUsAvpzP6UBUEEUrYmgKNpump`
 - AMD: $482,919 1h vol, $310,856 mcap, +556% 1h  
   CA `Eq8UZ5oadKvLtiDnPrb41dwDwU4BuB2tFXRT8rw8pump`
-- RATELLO: $371,166 1h vol, $69,872 mcap, -11% 1h  
-  CA `7tKA8ghhfzz27XMSRWHBTYkpyf7oPzziwZgsgyNZpump`
-- GTA: $280,988 1h vol, $3,057,180 mcap, +6% 1h  
-  CA `7F8BkfhPaDGMeNkaYeVa99WAqo86LpXDKsLQXpM7pump`
+- GAVELDROP: $481,007 1h vol, $1,215,117 mcap, +52% 1h  
+  CA `9mWrj77gDZ7w4rwHF6STYXDZmYRMyf39L4go1mXepump`
