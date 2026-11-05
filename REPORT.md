@@ -1,13 +1,13 @@
 # Trencher live report
 
-Updated 2026-11-05T05:53:22Z (paper trading, never real money)
+Updated 2026-11-05T06:08:51Z (paper trading, never real money)
 
 - Equity: $74.23 (-25.8% vs $100 start)
 - Closed trades: 22, 3 wins
 - Fees paid: $14.78 (axiom $2.81, network $9.18, pool $2.66), plus $4.15 lost to slippage
 - New trades: WATCH-ONLY (scans and decides, buys nothing)
-- Brain: subscription, claude-haiku-5-5 for routine calls, claude-opus-5-5 for the daily review; 528 routine calls and 0 plan-limit hits in 48h
-- Watch log: 124 coins being followed, 768 filed, 0 would-buys (6h follow, sampled every 2 min)
+- Brain: subscription, claude-haiku-5-5 for routine calls, claude-opus-5-5 for the daily review; 531 routine calls and 0 plan-limit hits in 48h
+- Watch log: 122 coins being followed, 776 filed, 0 would-buys (6h follow, sampled every 2 min)
 
 ## Scorecard (after fees)
 - 22 closed, 3 won (14%), net $-25.79
@@ -73,9 +73,21 @@ Updated 2026-11-05T05:53:22Z (paper trading, never real money)
   CA `H4gHnZ3NCU7Z9XQwGX6YYJNyieGEW8pqwGRUcdSxpump`
 
 ## Last scan
-- 05:52Z: 4 coins, 4 with pairs, 0 passed the market filters, 0 researched
+- 06:08Z: 4 coins, 4 with pairs, 1 passed the market filters, 1 researched
 
 ## Coins it looked at, and why it passed
+- 06:08Z ZELDA (FINAL_STRETCH, $31,265 mcap, $26,230 5m vol): PASS at conviction 3, PASS: Ocarina of Time (ZELDA), a 18-minute-old pump.fun bonding-curve coin that spiked +809% in an hour, is 16% off its peak with no radar mention, no X link, and top 10 at 21.5%. Blocker: "chasing spike" in a 17-copy vamp field with no story behind it. (V1, V6, V13)  
+  CA `E1PpVMPtWPhPUKL7DbF6f2eAmuwo3CHBkKusKk54pump`
+- 06:04Z JOB (MIGRATED, $3,503,979 mcap, $2,504 5m vol): PASS at conviction 2, PASS — sellers are 28 to 7 on 5m, flow is under pace, price sits 2% above the hourly low with no higher low, and the ticker has 24 copies. Blocker: "flow below pace" and "no higher low" (V1, V6, V13).  
+  CA `9Pq7aLAbhDG2tTnS22cm6kuysZVcZpLFE368HWuypump`
+- 06:03Z SOUVENIR (MIGRATED, $445,581 mcap, $6,841 5m vol): REJECT, RugCheck danger: Top 10 holders high ownership  
+  CA `5wSQpQfbdSKs7amvyxa2XTzWXNyionERZWdDWykYm1At`
+- 06:01Z BTC (MIGRATED, $193,553 mcap, $35,770 5m vol): REJECT, Dev holds 20.7% (>1%) (V13, V17)  
+  CA `CprMhio8gWydFtxQnySgLkgFrw94UawTy5Ao6rpZpump`
+- 06:01Z PAIRS (DIP, $55,426 mcap, $2,636 5m vol): PASS at conviction 3, PASS: PairsFun (PAIRS) is a DIP in a 19-copy "pairs" vamp field, its own site says it's a devnet preview with no live launches, and the theme is at 0.43x pace with no catalyst. Blocker: "dead story" plus "theme flow below pace."  
+  CA `WecNBsywJKQLGfBKZzBSix3ykXJ11DfAGUiXCLypair`
+- 05:57Z CHILLCATS (MIGRATED, $75,389 mcap, $13,825 5m vol): REJECT, Top 10 hold 45.2% ex-pool (>25%) (V13)  
+  CA `4BCbx4hB1XPmC5mLHsFyHEghC5fb9Afu7THLGXiHpump`
 - 05:48Z Look (MIGRATED, $234,680 mcap, $21,495 5m vol): REJECT, Bundles: 8 linked wallet cluster(s) hold 23.8% of supply (>20%) (V17)  
   CA `F49ncWoGVf2EYpg4iqbkhuMvyLRgJYSrTMT3jCUSpump`
 - 05:46Z GTA (DIP, $2,673,083 mcap, $5,749 5m vol): PASS at conviction 2, PASS: Grab That Ass is a 45% DIP in a fading joke-name lane with no catalyst, flow under the gate, and a $2.7M cap that a probe can't justify. (V1, V6, V13)  
@@ -84,50 +96,38 @@ Updated 2026-11-05T05:53:22Z (paper trading, never real money)
   CA `9FCjRfsuH4ziTqE39dH2wjcpRF5necYUKYpoNtCFdwKE`
 - 05:38Z GAVELDROP (MIGRATED, $650,623 mcap, $9,669 5m vol): REJECT, Bundles: 10 linked wallet cluster(s) hold 47.8% of supply (>20%) (V17)  
   CA `9mWrj77gDZ7w4rwHF6STYXDZmYRMyf39L4go1mXepump`
-- 05:38Z philosophyweb (MIGRATED, $33,185 mcap, $9,529 5m vol): REJECT, Top 10 hold 26.1% ex-pool (>25%) (V13)  
-  CA `7LfgSksfuUyhw3UpSU1jMp2u7ZwKZvgiCViLToHTpump`
-- 05:38Z Democat (MIGRATED, $927,315 mcap, $5,326 5m vol): PASS at conviction 4, PASS: flow below pace (0.69x hourly), and the political catalyst already printed on election night. Democat is a shallow-band leader that never got its breakout. (V1, V6)  
-  CA `9Y1F6dZ6HpjZDYZdYuUGwMbkUiPsyU7WPTqTQU4Tpump`
-- 05:36Z LEEROY (MIGRATED, $261,244 mcap, $7,747 5m vol): PASS at conviction 3, PASS: LEEROY is 75% off its $1.06M high, past the 60% MIGRATED zone and the 70% DIP ceiling, with 5m flow at 0.54x pace and no catalyst. Blocker: flow below pace on a bottom buy. (V1, V6, V13)  
-  CA `98HEU4TvXB3xjB1t15fgxHwYDLUH4fDomvp2DCzJpump`
-- 05:33Z CI (MIGRATED, $182,778 mcap, $6,684 5m vol): REJECT, Bundles: 10 linked wallet cluster(s) hold 29.7% of supply (>20%) (V17)  
-  CA `2z1XKwy3yBujFujGAztZubTEtayhYSaGfjM39uVMpump`
-- 05:27Z HELL (MIGRATED, $2,996,670 mcap, $2,184 5m vol): PASS at conviction 3, PASS: no breakout, first resistance only 1.26x away, and 5m flow is $2.2k on a $3M coin. The "AMD partner" page is a fan card. (V1, V6)  
-  CA `A75Xx6SeftAmWduv9KGwb2GCjXUAhxozcCUCys9jpump`
-- 05:22Z UTT (FINAL_STRETCH, $31,425 mcap, $15,627 5m vol): REJECT, Top 10 hold 28.8% ex-pool (>25%) (V13)  
-  CA `Diob9X1HTEGsFpp6iuBSXyr91HF3pw7iKM8AEhHppump`
 
 ## What its skips did next (last 48h)
 A skip "ran" if the coin reached the first target (1.5x) from the skip price before a 20% drop, "dumped" if the drop came first. Sampled every 10 min, followed 6h.
-- top 10 over 25%: blocked 64, ran 13, dumped 48, flat 2, open 1 (saving losses: keep it)
+- top 10 over 25%: blocked 64, ran 13, dumped 48, flat 3, open 0 (saving losses: keep it)
   - ran: XDG up to 1.54x  
     CA `J1pZjNKh4BnbXBsroE4acJv3TYzCGxTn46VrZii6orEZ`
   - ran: RATIO up to 1.51x  
     CA `3JdeP1VBHgRPunmjTj1D6w6ZZePwGAwjUr2tCufwpump`
   - ran: PWESIDENT up to 1.51x  
     CA `9Xxsoab47VknN15izoj2wE2x4BoYUfpnxQAUmroGpump`
-- too new / sniping: blocked 61, ran 9, dumped 51, flat 1, open 0 (saving losses: keep it)
+- too new / sniping: blocked 60, ran 9, dumped 50, flat 1, open 0 (saving losses: keep it)
   - ran: SNOWMEI up to 1.76x  
     CA `ETVD787UcTkJqrhZMt15bVet7CQ4SDzCga7DfBm8pump`
   - ran: GTAVI up to 2.31x  
     CA `HekahVohmeokPUhscg5taNme3Qs2fcSQoNgEeUPMpump`
   - ran: PEPTDOG up to 1.88x  
     CA `GExwMYa2tnJwGfKTmzR4ERiQKptfNceN9GTXc82Lpump`
-- flow below pace: blocked 53, ran 8, dumped 36, flat 6, open 3 (saving losses: keep it)
+- flow below pace: blocked 54, ran 8, dumped 37, flat 5, open 4 (saving losses: keep it)
   - ran: OMBRO up to 1.54x  
     CA `8DB8Fw5UiC1AzugQAfRyw3qL8omw772LJbdehNWhpump`
   - ran: MOGMAS up to 1.68x  
     CA `4yxnt3xAdyBFFbzMWJy9sjGEoiBNkjwdSQZ8ZyULpump`
   - ran: POLITICATS up to 1.85x  
     CA `ADvbwD9pgBeHHQBmBaiUir4zjC946FW2mDJbSejmpump`
-- near the high / chasing: blocked 38, ran 7, dumped 27, flat 3, open 1 (saving losses: keep it)
+- near the high / chasing: blocked 39, ran 7, dumped 27, flat 3, open 2 (saving losses: keep it)
   - ran: underdog up to 1.64x  
     CA `BZXh2LcnNNyypxsdfVeFzXawqmoGoSShC5i4NEQQpump`
   - ran: LUCIA up to 1.83x  
     CA `Cbtnpg6SL9jvZxtZTYYFPtVQXkuuqSUxCU5aXeTkpump`
   - ran: AMD up to 2.02x  
     CA `3MfZ4URVxmB4mfPuy4AxUxpcC5U7aXe7TDA7XVoGpump`
-- RugCheck danger: blocked 31, ran 7, dumped 20, flat 3, open 1 (saving losses: keep it)
+- RugCheck danger: blocked 30, ran 6, dumped 20, flat 3, open 1 (saving losses: keep it)
   - ran: RAM up to 1.63x  
     CA `72QNkZqiTBsq5dvn4DEwaC5qBPDkc7SZJ38xXy4jpump`
   - ran: $LIBCOIN up to 1.54x  
@@ -158,7 +158,7 @@ A skip "ran" if the coin reached the first target (1.5x) from the skip price bef
     CA `8kuQg3WivDtL85VEdw2jEmSXjYt6EEeYBATJ4DtQpump`
   - ran: MEOWNERO up to 1.76x  
     CA `6gnB2H2hbTVvKUWCzNuqjWY8Rod6EVBmfHi7YxZpTWa7`
-- dev share over 1%: blocked 16, ran 1, dumped 11, flat 2, open 2 (saving losses: keep it)
+- dev share over 1%: blocked 17, ran 1, dumped 11, flat 2, open 3 (saving losses: keep it)
   - ran: Firecube up to 1.88x  
     CA `Ebih1KdijjpQBaM83gUfGhRtTCpHzDkBZhCZedZwpump`
 
@@ -203,11 +203,11 @@ The trenches are not quiet. Volume is in fresh pump.fun/pumpswap joke-name launc
 ## Moving most in its scans, last 30 min (1h volume)
 - Look: $430,819 1h vol, $234,680 mcap, +80% 1h  
   CA `F49ncWoGVf2EYpg4iqbkhuMvyLRgJYSrTMT3jCUSpump`
-- CI: $364,851 1h vol, $197,251 mcap, -52% 1h  
-  CA `2z1XKwy3yBujFujGAztZubTEtayhYSaGfjM39uVMpump`
 - GAVELDROP: $212,986 1h vol, $643,296 mcap, +8% 1h  
   CA `9mWrj77gDZ7w4rwHF6STYXDZmYRMyf39L4go1mXepump`
-- LEEROY: $167,877 1h vol, $257,373 mcap, -13% 1h  
-  CA `98HEU4TvXB3xjB1t15fgxHwYDLUH4fDomvp2DCzJpump`
-- GTA: $104,142 1h vol, $2,708,046 mcap, -24% 1h  
-  CA `7F8BkfhPaDGMeNkaYeVa99WAqo86LpXDKsLQXpM7pump`
+- BTC: $156,528 1h vol, $179,457 mcap, +289% 1h  
+  CA `CprMhio8gWydFtxQnySgLkgFrw94UawTy5Ao6rpZpump`
+- SOUVENIR: $116,820 1h vol, $441,646 mcap, -5% 1h  
+  CA `5wSQpQfbdSKs7amvyxa2XTzWXNyionERZWdDWykYm1At`
+- CHILLCATS: $114,494 1h vol, $75,093 mcap, -4% 1h  
+  CA `4BCbx4hB1XPmC5mLHsFyHEghC5fb9Afu7THLGXiHpump`
