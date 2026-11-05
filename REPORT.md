@@ -1,13 +1,13 @@
 # Trencher live report
 
-Updated 2026-11-05T02:19:49Z (paper trading, never real money)
+Updated 2026-11-05T02:35:11Z (paper trading, never real money)
 
 - Equity: $74.23 (-25.8% vs $100 start)
 - Closed trades: 22, 3 wins
 - Fees paid: $14.78 (axiom $2.81, network $9.18, pool $2.66), plus $4.15 lost to slippage
 - New trades: WATCH-ONLY (scans and decides, buys nothing)
-- Brain: subscription, claude-haiku-5-5 for routine calls, claude-opus-5-5 for the daily review; 516 routine calls and 1 plan-limit hits in 48h
-- Watch log: 127 coins being followed, 696 filed, 0 would-buys (6h follow, sampled every 2 min)
+- Brain: subscription, claude-haiku-5-5 for routine calls, claude-opus-5-5 for the daily review; 514 routine calls and 1 plan-limit hits in 48h
+- Watch log: 125 coins being followed, 700 filed, 0 would-buys (6h follow, sampled every 2 min)
 
 ## Scorecard (after fees)
 - 22 closed, 3 won (14%), net $-25.79
@@ -73,9 +73,13 @@ Updated 2026-11-05T02:19:49Z (paper trading, never real money)
   CA `H4gHnZ3NCU7Z9XQwGX6YYJNyieGEW8pqwGRUcdSxpump`
 
 ## Last scan
-- 02:19Z: 0 coins, 0 with pairs, 0 passed the market filters, 0 researched
+- 02:34Z: 12 coins, 12 with pairs, 2 passed the market filters, 2 researched
 
 ## Coins it looked at, and why it passed
+- 02:34Z CALLINU (FINAL_STRETCH, $22,923 mcap, $2,591 5m vol): REJECT, RugCheck danger: Creator history of rugged tokens  
+  CA `79zuA7obQuVMdCWTdkS7uEY7KkctYyZF9nSjaFPVpump`
+- 02:34Z Democat (MIGRATED, $836,970 mcap, $3,198 5m vol): PASS at conviction 2, PASS: political cat in a 25-copy field, $3.2k on the 5m at 0.93x pace, no breakout, and the site doesn't show the CA. Blockers: no breakout, flow below pace, dead story, no catalyst (V1, V3, V6, V13).  
+  CA `9Y1F6dZ6HpjZDYZdYuUGwMbkUiPsyU7WPTqTQU4Tpump`
 - 02:17Z JOB (MIGRATED, $3,940,791 mcap, $3,418 5m vol): PASS at conviction 3, PASS — 5m flow at 0.75x pace on a $3.9M migrated coin, 12 copies share the ticker, and the team's own site says "CA dropping soon." Not even a probe. (V1, V3, V6, V13)  
   CA `9Pq7aLAbhDG2tTnS22cm6kuysZVcZpLFE368HWuypump`
 - 02:16Z inu (DIP, $53,879 mcap, $18,201 5m vol): REJECT, Top 10 hold 26.5% ex-pool (>25%) (V13)  
@@ -92,10 +96,6 @@ Updated 2026-11-05T02:19:49Z (paper trading, never real money)
   CA `4BCbx4hB1XPmC5mLHsFyHEghC5fb9Afu7THLGXiHpump`
 - 01:59Z GTA (MIGRATED, $4,092,794 mcap, $10,389 5m vol): PASS at conviction 3, PASS: GTA is a $4.1M coin with 5m flow at 0.41x its hourly pace, no printed higher low, and a 19-copy vamp field. Blocker: flow below pace. (V1, V6)  
   CA `7F8BkfhPaDGMeNkaYeVa99WAqo86LpXDKsLQXpM7pump`
-- 01:56Z GHOST (DIP, $166,374 mcap, $2,186 5m vol): PASS at conviction 3, PASS: GHOST is a 45% dip with $2.2k of 5m volume, no printed higher low, no catalyst, and a 0.7-day-old site in a 15-copy ghost/rider field. Blocker: no catalyst, flow under $10k, no higher low (V1, V6, V13).  
-  CA `42qKoGmEPTRJsa5jWrYwpydL8RkBwMvg2ykYVoerpump`
-- 01:52Z GATO (MIGRATED, $10,923,760 mcap, $8,012 5m vol): REJECT, Dev holds 3.3% (>1%) (V13, V17)  
-  CA `HsprHxBRgiVaQdRf3TnKNuZZtaX9JUSPgMFdAkk6pump`
 
 ## What its skips did next (last 48h)
 A skip "ran" if the coin reached the first target (1.5x) from the skip price before a 20% drop, "dumped" if the drop came first. Sampled every 10 min, followed 6h.
@@ -113,21 +113,21 @@ A skip "ran" if the coin reached the first target (1.5x) from the skip price bef
     CA `HekahVohmeokPUhscg5taNme3Qs2fcSQoNgEeUPMpump`
   - ran: PEPTDOG up to 1.88x  
     CA `GExwMYa2tnJwGfKTmzR4ERiQKptfNceN9GTXc82Lpump`
-- flow below pace: blocked 53, ran 9, dumped 36, flat 5, open 3 (saving losses: keep it)
+- flow below pace: blocked 53, ran 9, dumped 38, flat 5, open 1 (saving losses: keep it)
   - ran: METEORITE up to 1.58x  
     CA `67RBmGztx8ciVyWr8yi6R8fwrc3EG86XejYT7mespump`
   - ran: OMBRO up to 1.54x  
     CA `8DB8Fw5UiC1AzugQAfRyw3qL8omw772LJbdehNWhpump`
   - ran: MOGMAS up to 1.68x  
     CA `4yxnt3xAdyBFFbzMWJy9sjGEoiBNkjwdSQZ8ZyULpump`
-- near the high / chasing: blocked 39, ran 7, dumped 27, flat 3, open 2 (saving losses: keep it)
+- near the high / chasing: blocked 38, ran 7, dumped 26, flat 3, open 2 (saving losses: keep it)
   - ran: underdog up to 1.64x  
     CA `BZXh2LcnNNyypxsdfVeFzXawqmoGoSShC5i4NEQQpump`
   - ran: LUCIA up to 1.83x  
     CA `Cbtnpg6SL9jvZxtZTYYFPtVQXkuuqSUxCU5aXeTkpump`
   - ran: AMD up to 2.02x  
     CA `3MfZ4URVxmB4mfPuy4AxUxpcC5U7aXe7TDA7XVoGpump`
-- RugCheck danger: blocked 28, ran 5, dumped 20, flat 3, open 0 (saving losses: keep it)
+- RugCheck danger: blocked 29, ran 5, dumped 20, flat 3, open 1 (saving losses: keep it)
   - ran: RAM up to 1.63x  
     CA `72QNkZqiTBsq5dvn4DEwaC5qBPDkc7SZJ38xXy4jpump`
   - ran: $LIBCOIN up to 1.54x  
@@ -203,11 +203,11 @@ Meta right now is young animal and joke tokens under about 1.5h old. Dog/cat nam
 ## Moving most in its scans, last 30 min (1h volume)
 - PIRATE: $844,904 1h vol, $435,072 mcap, +208% 1h  
   CA `2StNe98imN7M6K341a7a4xvc8eNTvLCde5EugAKfLoat`
-- mspaint: $608,782 1h vol, $73,134 mcap, +67% 1h  
-  CA `FRAaAZeDEgiRytZ5Mq5ZXuExEeHcoidQ8qRRZPZJpump`
-- GTA: $300,850 1h vol, $4,092,794 mcap, +32% 1h  
-  CA `7F8BkfhPaDGMeNkaYeVa99WAqo86LpXDKsLQXpM7pump`
-- MOGE: $286,271 1h vol, $122,758 mcap, +205% 1h  
-  CA `Dc8qw7K8ohS74ZS1rHknvsuxnxV9hkJBCYNzX3gdpump`
 - inu: $193,476 1h vol, $54,976 mcap, +206% 1h  
   CA `Bid8i1ocWssjRmKh2kcUfHxD1K6Sk7E5pV2PSVdepump`
+- SLOP: $131,134 1h vol, $164,047 mcap, +72% 1h  
+  CA `3SpVLU6UAYi7rqJxgWmsZYmfU5kvVTDK6HFxGPefLoat`
+- ZERO: $66,116 1h vol, $5,284 mcap, +45% 1h  
+  CA `4DekG14fH6HE6Xe8tHMyU5jei3zeSDCzYRXtsVtZpump`
+- JOB: $54,772 1h vol, $3,940,791 mcap, -2% 1h  
+  CA `9Pq7aLAbhDG2tTnS22cm6kuysZVcZpLFE368HWuypump`
