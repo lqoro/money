@@ -1,13 +1,13 @@
 # Trencher live report
 
-Updated 2026-11-05T18:01:52Z (paper trading, never real money)
+Updated 2026-11-05T18:16:56Z (paper trading, never real money)
 
 - Equity: $74.23 (-25.8% vs $100 start)
 - Closed trades: 22, 3 wins
 - Fees paid: $14.78 (axiom $2.81, network $9.18, pool $2.66), plus $4.15 lost to slippage
 - New trades: WATCH-ONLY (scans and decides, buys nothing)
-- Brain: subscription, claude-haiku-5-5 for routine calls, claude-opus-5-5 for the daily review; 512 routine calls and 0 plan-limit hits in 48h
-- Watch log: 96 coins being followed, 978 filed, 0 would-buys (6h follow, sampled every 2 min)
+- Brain: subscription, claude-haiku-5-5 for routine calls, claude-opus-5-5 for the daily review; 506 routine calls and 0 plan-limit hits in 48h
+- Watch log: 95 coins being followed, 981 filed, 0 would-buys (6h follow, sampled every 2 min)
 
 ## Scorecard (after fees)
 - 22 closed, 3 won (14%), net $-25.79
@@ -73,9 +73,13 @@ Updated 2026-11-05T18:01:52Z (paper trading, never real money)
   CA `H4gHnZ3NCU7Z9XQwGX6YYJNyieGEW8pqwGRUcdSxpump`
 
 ## Last scan
-- 18:00Z: 6 coins, 5 with pairs, 0 passed the market filters, 0 researched
+- 18:16Z: 3 coins, 2 with pairs, 0 passed the market filters, 0 researched
 
 ## Coins it looked at, and why it passed
+- 18:09Z SP500 (MIGRATED, $39,859 mcap, $12,572 5m vol): REJECT, Top 10 hold 27.8% ex-pool (>25%) (V13)  
+  CA `ExugAjXhv9oyGpMZ6QxwifzfuxtBAnxCWJmAsy5nnUVt`
+- 18:04Z GATO (MIGRATED, $9,414,017 mcap, $7,974 5m vol): REJECT, Dev holds 3.3% (>1%) (V13, V17)  
+  CA `HsprHxBRgiVaQdRf3TnKNuZZtaX9JUSPgMFdAkk6pump`
 - 17:59Z HELL (MIGRATED, $2,828,415 mcap, $3,731 5m vol): PASS at conviction 3, PASS: target too close. The 24h peak is only 1.19x above price, and the $2.8M cap has nothing pushing into it. The "Rockstar/Xbox/PlayStation partner" line on the site is a claim, not a fact (V6, V13).  
   CA `A75Xx6SeftAmWduv9KGwb2GCjXUAhxozcCUCys9jpump`
 - 17:53Z GTA (MIGRATED, $1,317,603 mcap, $18,252 5m vol): PASS at conviction 3, PASS: 77% off a $5.7M peak, a fading GTA theme with no catalyst, and a 0.9-day-old website. Blocker: too deep and no story. (V1, V6, V13)  
@@ -92,14 +96,10 @@ Updated 2026-11-05T18:01:52Z (paper trading, never real money)
   CA `HZbiEpF2oM658EpjNRRqxharz5L9Ddm8akpSH2R5pump`
 - 17:32Z MOONVEMBER (MIGRATED, $120,653 mcap, $33,034 5m vol): PASS at conviction 3, PASS — 11 minutes old, down 22% off a spike with a red 5m candle, no printed higher low, and a 10-copy vamp field with zero radar mentions. Lottery ticket, not a setup (V1, V6).  
   CA `2CZ5sX3MZnwVXGUDLt2o6mBbrgKBey7tkhcXjUhTpump`
-- 17:29Z RICO (MIGRATED, $135,909 mcap, $3,129 5m vol): REJECT, RugCheck danger: Creator history of rugged tokens  
-  CA `8kuQg3WivDtL85VEdw2jEmSXjYt6EEeYBATJ4DtQpump`
-- 17:27Z Democat (DIP, $386,981 mcap, $2,473 5m vol): PASS at conviction 2, PASS: bottom buy on a political-joke cat with the theme at 0.62x pace and no catalyst. Dead crowd, not a dip. (V1, V6, owner bottom-buy rule)  
-  CA `9Y1F6dZ6HpjZDYZdYuUGwMbkUiPsyU7WPTqTQU4Tpump`
 
 ## What its skips did next (last 48h)
 A skip "ran" if the coin reached the first target (1.5x) from the skip price before a 20% drop, "dumped" if the drop came first. Sampled every 10 min, followed 6h.
-- top 10 over 25%: blocked 68, ran 11, dumped 51, flat 2, open 4 (saving losses: keep it)
+- top 10 over 25%: blocked 69, ran 11, dumped 52, flat 2, open 4 (saving losses: keep it)
   - ran: OPOL up to 2.02x  
     CA `7R6AYvHyU5MyaTt5MPtRdt2daRUKedvCz8CXZkaspump`
   - ran: MEMECOIN up to 1.5x  
@@ -120,14 +120,14 @@ A skip "ran" if the coin reached the first target (1.5x) from the skip price bef
     CA `BQ3yawMJwU7RCoFagJ3Go7AYMBDxzeNAKiRC2qTbpump`
   - ran: Link up to 1.57x  
     CA `7kqWni27vRVCKjcuBAmAbs8t7PxXgxdEjUSyRfeFpump`
-- near the high / chasing: blocked 39, ran 5, dumped 29, flat 2, open 3 (saving losses: keep it)
+- near the high / chasing: blocked 39, ran 5, dumped 30, flat 2, open 2 (saving losses: keep it)
   - ran: AMD up to 2.02x  
     CA `3MfZ4URVxmB4mfPuy4AxUxpcC5U7aXe7TDA7XVoGpump`
   - ran: PayIF up to 1.56x  
     CA `FfuBMS3rh9M61apXJDs14yAngVnYLWR7xkcX5FxMpump`
   - ran: SAN up to 1.63x  
     CA `8kfp8MzuFuj3vrnmG3KBcYVctYmu2JYerdFhPnX4pump`
-- RugCheck danger: blocked 31, ran 8, dumped 21, flat 2, open 0 (saving losses: keep it)
+- RugCheck danger: blocked 30, ran 8, dumped 21, flat 1, open 0 (saving losses: keep it)
   - ran: RAM up to 1.63x  
     CA `72QNkZqiTBsq5dvn4DEwaC5qBPDkc7SZJ38xXy4jpump`
   - ran: $LIBCOIN up to 1.54x  
@@ -199,13 +199,13 @@ Nothing has a positive edge after costs yet. All 359 settled coins averaged -10.
 Not quiet, but mostly lottery tickets. Four patterns show up across the scan_movers list: crude or cheeky names (GTA "Grand Tits of America", $184k cap, 86% buys, $28k on 5m, 18 minutes old), mascot launches under an hour old (Jimothy the Raccoon and dumbo, 56-60% buys), GTA VI-adjacent names that are fading (GATO at $9.1M with 36% buys, Democat down 19% with 5m volume about a tenth of its hourly pace), and a spike-then-die group (commotitties, BKG, SWAN, EM) with tens of thousands of volume in the hour and almost nothing in the last 5 minutes. The crawler summary doesn't match the scan data: "BTC" shows $1.7k cap, zero 5m volume and -99% in the scan, and "GTA" (Grab That Ass) is $1.9M, up 20% on the hour, not down 31%, so I'm using the scan numbers. Setup to research, not buy: Grand Tits GTA as a migrated probe candidate (age 0.3h, passes the cap, age and 5m rules on paper), probe size only, and only if holder, dev and bundle checks come back clean. Jimothy and dumbo are brand-new pairs I won't snipe. Paper only, not financial advice.
 
 ## Moving most in its scans, last 30 min (1h volume)
+- GTA: $201,139 1h vol, $1,685 mcap, -99% 1h  
+  CA `HR8a1erQ4LyTKW5XYrHzPy9na5Gd6GHhccXhQywzpump`
 - GTA: $186,917 1h vol, $1,339,553 mcap, +2% 1h  
   CA `7F8BkfhPaDGMeNkaYeVa99WAqo86LpXDKsLQXpM7pump`
-- MOONVEMBER: $130,842 1h vol, $115,249 mcap, +192% 1h  
-  CA `2CZ5sX3MZnwVXGUDLt2o6mBbrgKBey7tkhcXjUhTpump`
-- JIMOTHY : $106,185 1h vol, $7,367 mcap, +156% 1h  
+- Democat: $112,265 1h vol, $225,210 mcap, -45% 1h  
+  CA `9Y1F6dZ6HpjZDYZdYuUGwMbkUiPsyU7WPTqTQU4Tpump`
+- JIMOTHY : $109,928 1h vol, $3,367 mcap, +17% 1h  
   CA `4u1FvZgkmLr5Szn3qTuumZaxC53gUEeDxAtigWYfpump`
-- DOVID: $97,257 1h vol, $6,874 mcap, +157% 1h  
-  CA `H91KT64oPG3Fgx18DAzFi2wEEHMsHUpJN5bLm2PWpump`
-- GAVELDROP: $90,735 1h vol, $680,167 mcap, -12% 1h  
-  CA `9mWrj77gDZ7w4rwHF6STYXDZmYRMyf39L4go1mXepump`
+- GATO: $108,871 1h vol, $9,425,610 mcap, +3% 1h  
+  CA `HsprHxBRgiVaQdRf3TnKNuZZtaX9JUSPgMFdAkk6pump`
