@@ -1,13 +1,13 @@
 # Trencher live report
 
-Updated 2026-11-05T23:50:07Z (paper trading, never real money)
+Updated 2026-11-06T00:05:11Z (paper trading, never real money)
 
 - Equity: $74.23 (-25.8% vs $100 start)
 - Closed trades: 22, 3 wins
 - Fees paid: $14.78 (axiom $2.81, network $9.18, pool $2.66), plus $4.15 lost to slippage
 - New trades: WATCH-ONLY (scans and decides, buys nothing)
-- Brain: subscription, claude-haiku-5-5 for routine calls, claude-opus-5-5 for the daily review; 494 routine calls and 0 plan-limit hits in 48h
-- Watch log: 96 coins being followed, 1072 filed, 0 would-buys (6h follow, sampled every 2 min)
+- Brain: subscription, claude-haiku-5-5 for routine calls, claude-opus-5-5 for the daily review; 493 routine calls and 0 plan-limit hits in 48h
+- Watch log: 95 coins being followed, 1075 filed, 0 would-buys (6h follow, sampled every 2 min)
 
 ## Scorecard (after fees)
 - 22 closed, 3 won (14%), net $-25.79
@@ -73,9 +73,13 @@ Updated 2026-11-05T23:50:07Z (paper trading, never real money)
   CA `H4gHnZ3NCU7Z9XQwGX6YYJNyieGEW8pqwGRUcdSxpump`
 
 ## Last scan
-- 23:49Z: 4 coins, 3 with pairs, 0 passed the market filters, 0 researched
+- 00:04Z: 9 coins, 8 with pairs, 0 passed the market filters, 0 researched
 
 ## Coins it looked at, and why it passed
+- 23:54Z LEAP (FINAL_STRETCH, $26,877 mcap, $3,272 5m vol): REJECT, Top 10 hold 29.6% ex-pool (>25%) (V13)  
+  CA `Ex4sJY2KjgQhgwFTfyfPzPUbpUu5g53W9FxfvRVGpump`
+- 23:54Z Bubbles (MIGRATED, $162,819 mcap, $3,954 5m vol): PASS at conviction 3, PASS — 5m flow is $3.9k, under the $10k bar, and the coin sits 12% off its high with no breakout printing. It's one of 16 same-ticker copies with no narrative on the radar. Blocker: "no breakout" (V1, V6, V13).  
+  CA `DNerJKigs1xZ5rCBDtU9a2ACxvskScMnSihWY9yYpump`
 - 23:45Z TOYS4KIDS (MIGRATED, $73,556 mcap, $9,561 5m vol): PASS at conviction 3, PASS: TOYS4KIDS is the leader of a 9-copy same-name field running at 0.04x its theme's hourly pace, with 5m flow at 0.6x its own pace and $9.6k on the 5m. Blocker: flow below pace. (V1, V6)  
   CA `FqJu1nmcNP8fCJfAW7Y4dGmp6fF9iF2RxrqMSFAcpump`
 - 23:44Z COPE (MIGRATED, $396,179 mcap, $91,079 5m vol): PASS at conviction 3, PASS: chasing. COPE is 7.8% off a $430k high after +708% in an hour, with no printed higher low and a 1.08x first target. A farm-shaped spike, not a pullback (V1, V6).  
@@ -92,10 +96,6 @@ Updated 2026-11-05T23:50:07Z (paper trading, never real money)
   CA `8UNQV1W9tV13YKJ2kn48yLbrqNmFiYNN43RL6S49pump`
 - 23:15Z GATO (MIGRATED, $10,907,627 mcap, $2,656 5m vol): REJECT, Dev holds 3.3% (>1%) (V13, V17)  
   CA `HsprHxBRgiVaQdRf3TnKNuZZtaX9JUSPgMFdAkk6pump`
-- 23:14Z GAVELDROP (MIGRATED, $223,513 mcap, $4,182 5m vol): REJECT, Bundles: 10 linked wallet cluster(s) hold 47.8% of supply (>20%) (V17)  
-  CA `9mWrj77gDZ7w4rwHF6STYXDZmYRMyf39L4go1mXepump`
-- 23:13Z paws (MIGRATED, $160,931 mcap, $4,185 5m vol): PASS at conviction 3, PASS: no catalyst, narrative not on the radar, and a bottom buy into a 23-copy field. Blocker "no catalyst". (V1, V13)  
-  CA `Fp4JkqEcKYKBKhb9iMu9NSDeo71HWgq2q9QtXaaKpump`
 
 ## What its skips did next (last 48h)
 A skip "ran" if the coin reached the first target (1.5x) from the skip price before a 20% drop, "dumped" if the drop came first. Sampled every 10 min, followed 6h.
@@ -113,14 +113,14 @@ A skip "ran" if the coin reached the first target (1.5x) from the skip price bef
     CA `DMgry6A9C6U6jopS7bAawukAvAcgpUvWfJULcbnfpump`
   - ran: Doge up to 1.72x  
     CA `9CRbVZxQshb9dMkh3yGvyARJRAHMGVuxiQRGhUsppump`
-- flow below pace: blocked 44, ran 8, dumped 27, flat 5, open 4 (saving losses: keep it)
+- flow below pace: blocked 44, ran 9, dumped 27, flat 5, open 3 (saving losses: keep it)
   - ran: Link up to 1.57x  
     CA `7kqWni27vRVCKjcuBAmAbs8t7PxXgxdEjUSyRfeFpump`
   - ran: CHICKPOT up to 1.55x  
     CA `8B6ZZAC2FQ7AJrZPz7veXJrod5t2MG1C5MZBLNbUpump`
   - ran: Donkey up to 1.57x  
     CA `G8Lf8uthQp5YHoswQZDRdeRxaWiUqnNFNoZ45y68pump`
-- near the high / chasing: blocked 38, ran 6, dumped 30, flat 1, open 1 (saving losses: keep it)
+- near the high / chasing: blocked 38, ran 5, dumped 30, flat 1, open 2 (saving losses: keep it)
   - ran: PayIF up to 1.56x  
     CA `FfuBMS3rh9M61apXJDs14yAngVnYLWR7xkcX5FxMpump`
   - ran: SAN up to 1.63x  
@@ -203,11 +203,11 @@ Not quiet. Nine of fifteen movers print at least $1.5k of 5-minute volume, and m
 ## Moving most in its scans, last 30 min (1h volume)
 - COPE: $392,945 1h vol, $396,179 mcap, +708% 1h  
   CA `g8FFFJHQnd84dcbHGjvTRMLzRPaE7FVV2bmNs2wpump`
-- COGE: $205,994 1h vol, $373,394 mcap, +66% 1h  
-  CA `ES9FintJPSGcoVuJhkLAsfSoug6B69bDoeTb3hJYpump`
 - TOYS4KIDS: $192,276 1h vol, $73,556 mcap, +101% 1h  
   CA `FqJu1nmcNP8fCJfAW7Y4dGmp6fF9iF2RxrqMSFAcpump`
-- sssdfg: $186,754 1h vol, $90,695 mcap, +150% 1h  
-  CA `BQjiYCutv9LVtbgj7pKCN2Ce6k2eUM5RSKs6kDAzpump`
-- LIFE: $122,808 1h vol, $3,479 mcap, -91% 1h  
+- LIFE: $123,732 1h vol, $2,658 mcap, -92% 1h  
   CA `DLPeij9Bbs1XS27Re7eGcfd19ScXFr3obAuZuXespump`
+- funhog: $79,700 1h vol, $2,483 mcap, -92% 1h  
+  CA `H3fGfvRUNyvoeE1HZKwAeNtsSFfyYytoHGjKfdoupump`
+- BD: $75,356 1h vol, $23,223 mcap, +431% 1h  
+  CA `HiC6kWaZ19h3YDZcCQT455ECJZ9qpnSfVYRZJ2ktpump`
