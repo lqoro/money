@@ -1,13 +1,13 @@
 # Trencher live report
 
-Updated 2026-11-06T01:05:49Z (paper trading, never real money)
+Updated 2026-11-06T01:20:55Z (paper trading, never real money)
 
 - Equity: $74.23 (-25.8% vs $100 start)
 - Closed trades: 22, 3 wins
 - Fees paid: $14.78 (axiom $2.81, network $9.18, pool $2.66), plus $4.15 lost to slippage
 - New trades: WATCH-ONLY (scans and decides, buys nothing)
-- Brain: subscription, claude-haiku-5-5 for routine calls, claude-opus-5-5 for the daily review; 491 routine calls and 0 plan-limit hits in 48h
-- Watch log: 90 coins being followed, 1091 filed, 0 would-buys (6h follow, sampled every 2 min)
+- Brain: subscription, claude-haiku-5-5 for routine calls, claude-opus-5-5 for the daily review; 490 routine calls and 0 plan-limit hits in 48h
+- Watch log: 88 coins being followed, 1093 filed, 0 would-buys (6h follow, sampled every 2 min)
 
 ## Scorecard (after fees)
 - 22 closed, 3 won (14%), net $-25.79
@@ -73,7 +73,7 @@ Updated 2026-11-06T01:05:49Z (paper trading, never real money)
   CA `H4gHnZ3NCU7Z9XQwGX6YYJNyieGEW8pqwGRUcdSxpump`
 
 ## Last scan
-- 01:04Z: 1 coins, 1 with pairs, 1 passed the market filters, 1 researched
+- 01:20Z: 4 coins, 4 with pairs, 0 passed the market filters, 0 researched
 
 ## Coins it looked at, and why it passed
 - 01:05Z RETIRE (FINAL_STRETCH, $31,297 mcap, $2,764 5m vol): PASS at conviction 3, PASS: thin flow, top 10 at 22.5%, copy #1 of 12 in a dead-meme field, and a 0.6-day-old domain. Blocker: flow under the $10k bar. (V1, V6, V13)  
@@ -106,7 +106,7 @@ A skip "ran" if the coin reached the first target (1.5x) from the skip price bef
     CA `HkyNkVXpJWg1H7hAWjnSW58J22Cx7gnWwUHhFtf5pump`
   - ran: SUPERBOWL up to 1.61x  
     CA `92j5cWKjdVKDC7skBw1HjvYtrTU8nMM1zKjC4dqmpump`
-- too new / sniping: blocked 49, ran 5, dumped 40, flat 3, open 1 (saving losses: keep it)
+- too new / sniping: blocked 49, ran 5, dumped 41, flat 3, open 0 (saving losses: keep it)
   - ran: AMD up to 1.61x  
     CA `GCEEdGYx17shhJyudBTAHYAgcTEpKzntyiiqysmUpump`
   - ran: POLY up to 1.65x  
@@ -120,7 +120,7 @@ A skip "ran" if the coin reached the first target (1.5x) from the skip price bef
     CA `8B6ZZAC2FQ7AJrZPz7veXJrod5t2MG1C5MZBLNbUpump`
   - ran: Donkey up to 1.57x  
     CA `G8Lf8uthQp5YHoswQZDRdeRxaWiUqnNFNoZ45y68pump`
-- near the high / chasing: blocked 38, ran 5, dumped 30, flat 1, open 2 (saving losses: keep it)
+- near the high / chasing: blocked 37, ran 5, dumped 29, flat 1, open 2 (saving losses: keep it)
   - ran: PayIF up to 1.56x  
     CA `FfuBMS3rh9M61apXJDs14yAngVnYLWR7xkcX5FxMpump`
   - ran: SAN up to 1.63x  
@@ -134,7 +134,7 @@ A skip "ran" if the coin reached the first target (1.5x) from the skip price bef
     CA `2UxjHoidyefQxJrCS8qT23JsbqKFcpPCa8ywBYZupump`
   - ran: ORBIE up to 1.83x  
     CA `HEb2dwDNbBhnrCusoNXXvba9MymYTTmMQcHKaptxmfun`
-- other: blocked 19, ran 6, dumped 10, flat 0, open 3 (mixed)
+- other: blocked 19, ran 6, dumped 10, flat 2, open 1 (mixed)
   - ran: DESSA up to 1.54x  
     CA `npz2FhoufQ7pKqhGpaipYWacrAkidyW2yDpVWSvpump`
   - ran: MACHKA up to 1.52x  
@@ -148,7 +148,7 @@ A skip "ran" if the coin reached the first target (1.5x) from the skip price bef
     CA `6gnB2H2hbTVvKUWCzNuqjWY8Rod6EVBmfHi7YxZpTWa7`
   - ran: TTPRO up to 1.71x  
     CA `FrSrp9P3bgiFHwr6h5PQHVh55iC8Dae4eZCKPUo9pump`
-- falling knife (code): blocked 18, ran 4, dumped 11, flat 1, open 2 (saving losses: keep it)
+- falling knife (code): blocked 18, ran 5, dumped 12, flat 1, open 0 (saving losses: keep it)
   - ran: DESSA up to 1.54x  
     CA `npz2FhoufQ7pKqhGpaipYWacrAkidyW2yDpVWSvpump`
   - ran: ORBIE up to 1.83x  
@@ -201,13 +201,13 @@ Nothing has a positive edge after costs yet. All 359 settled coins averaged -10.
 Not quiet, but the trench volume is mostly spikes that die. Nine of fifteen movers print at least $1.5k on the 5-minute, and most are sub-6-hour pump.fun or pumpswap copies with $2k-$20k caps that are down 65-99% in the hour. Four themes repeat: animal mascots (GATO, BongoCat, BD Business Dog, Hermano the Chicken), promise names (1000x Gem, Infinite Money Glitch), joke and cult names (COPE, Toys4Kids, Mission Passed), and a generic-name "coin" (GdY4...) that is the only fresh mover with real money right now. Animals and promise names are fading (BongoCat -86%, BD -89%, 1000x -66% in 1h). The generic "coin" is rising at a $102k cap, $51.7k 5m, 53% buys, +186% in 1h, 0.9h old. Research, not buy: "coin" first, checking for the original versus copies, holders, dev and bundles, with initials and a stop planned before any entry since +186% is chase risk. GATO clears $10k on 5m but is a 72-day-old $12M token outside the trench range, and nothing else clears the bar with a rising chart. The crawler's BD, COPE and CAT figures conflict with the scan rows, so I'm trusting the scan and treating the crawler's numbers as unverified. The Trump and midterm headlines aren't showing up in the trenches, so they stay news. Paper only, not financial advice.
 
 ## Moving most in its scans, last 30 min (1h volume)
-- coin: $1,086,724 1h vol, $102,524 mcap, +186% 1h  
-  CA `GdY4Z6pYUcr3HFrABV5FEZay3J4GnjN1Uzsw6Dvxpump`
 - sssdfg: $448,023 1h vol, $144,171 mcap, -44% 1h  
   CA `BQjiYCutv9LVtbgj7pKCN2Ce6k2eUM5RSKs6kDAzpump`
-- GATO: $157,027 1h vol, $11,979,507 mcap, -2% 1h  
+- GATO: $194,549 1h vol, $11,009,480 mcap, -20% 1h  
   CA `HsprHxBRgiVaQdRf3TnKNuZZtaX9JUSPgMFdAkk6pump`
-- COPE: $120,872 1h vol, $1,697 mcap, -100% 1h  
-  CA `g8FFFJHQnd84dcbHGjvTRMLzRPaE7FVV2bmNs2wpump`
 - Chika: $115,984 1h vol, $69,215 mcap, +85% 1h  
   CA `9q17YrKCeBtSZ6qkBTmttyZnh5ZVEapF6TwTrtX2pump`
+- Bear: $80,669 1h vol, $2,887 mcap, -82% 1h  
+  CA `AX56XAixNhncCoqW3AdKmE6KsZuiuNTqPvNYTa5Ypump`
+- 1000x: $72,700 1h vol, $2,508 mcap, -94% 1h  
+  CA `FPu4Lbmttj2FcMXbRdpqbrj6hzg7wSoSQGD31VWkzGPZ`
