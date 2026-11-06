@@ -1,5 +1,5 @@
 {
- "updated_at": "2026-11-06T01:35:56Z",
+ "updated_at": "2026-11-06T01:51:01Z",
  "paused_new_trades": true,
  "watch_only": true,
  "brain": {
@@ -9,7 +9,7 @@
   "paused_until": null,
   "usage_48h": {
    "hours": 48,
-   "brain_calls": 492,
+   "brain_calls": 493,
    "plan_limit_hits": 0,
    "candidates_skipped_no_brain": 0,
    "stop_reviews_without_brain": 0
@@ -574,8 +574,8 @@
  ],
  "learned_rules": "- **The money shape rates 8, or 9 if the radar shows the story still climbing and mcap is under ~$1M.** It looks like this: a MIGRATED coin leading on 5m volume, 25\u201345% off its local high, a printed higher low above the hourly low, 5m flow at or above the hourly pace, more buys than sells, top 10 under 15%, low RugCheck bundles. Both real winners looked like this (CATBOT 4.44x, FLOATER 2.19x, both under $1M) (V1, V6, V13). Rate it what it earns so code sizes it up (owner goal).\n- **Owner floor: 7 under ~$1M mcap.** If the hard lines pass, flow is live (5m \u2265 $10k and at or above pace), a higher low is printed and the first resistance is \u22651.5x away, rate it 7 or higher. Don't dock points for things the checklist already measured.\n- **The MIGRATED buy zone is 10\u201360% off the local high** (owner rule). Within 10% of the high is a PASS, blocker \"chasing\" (42 skips: 3 ran, 36 dumped).\n- **The shallow band (10\u201325% off the high) is a breakout trade, capped at 7.** It must be the 5m volume leader, pushing into the high right now, with flow at or above pace. Otherwise PASS, blocker \"no breakout\".\n- **A spike counts as chasing anywhere in the zone.** If the last 5m candle is up more than 25% or 5m volume is more than 3x the hourly pace, wait for a retrace and a printed higher low. Blocker \"chasing spike\" (PILLSEY).\n- **On MIGRATED, flow below pace or no printed higher low is a PASS, never a probe.** A printed higher low means three things: a bounce off the hourly low, a pullback that holds above it, and price back above that bounce's high. A buy share, a fib touch or a first green candle is not one. Blockers \"flow below pace\" / \"no higher low\" (Slingoor, ANAKIN, BLUE, SI, AAPLCAT never got past 1.01x).\n- **Buy close to the structure.** Enter only within ~12% above the printed higher low, so the thesis breaks before the hard stop. Further above it is a mid-range entry: wait for a pullback or PASS, blocker \"mid-range\". Stops fill around \u221230 to \u221238%, not \u221220%, so entry distance is the real risk control.\n- **Rate on the first resistance (prior high, POC or 0.618).** At \u22651.5x away it can rate 8\u20139. At 1.3\u20131.5x the cap is 7. Under 1.3x is a PASS, blocker \"target too close\" (PAWCAT, SWAN).\n- **Above ~$1M mcap, a probe (6) is the most you take.** Only take it if the first resistance is \u22651.5x away and a breakout with flow at or above pace is printing right now. Otherwise PASS, blocker \"big cap, no room\" (1 green in 10).\n- **A migration under 1h old that is still bleeding off its bond spike waits for a base above the hourly low.** Blocker \"too new\" (50 skips: 9 ran, 41 dumped).\n- **In a vamp field, buy only the leader by 5m volume and radar mentions.** A bundle cluster inside a big same-ticker field is a PASS, blocker \"split crowd\" (V1, V3).\n- **A DIP needs all of these:** a 40\u201370% drawdown, 5m flow at least 0.7x the hourly pace (owner gate, no \"rising\" needed), the story still on the radar, and a printed higher low with entry within ~12% of it. If all pass, size by conviction (7\u20138 when clean). A DIP whose catalyst already printed (news, rebrand) is a probe (6) at most until it reclaims its pullback high. A thin tech/LARP story is a PASS, blocker \"dead story\" (HEXN x2, SIS; DIPs 0 for 5).\n- **Hard blocks:** top 10 over 25%, dev over 1%, bundles or insiders over the line, mint or freeze authority live, LP not burned, a political figure, RugCheck danger, any hack/exploit/drain story (V6, V13, V17, owner). Name the blocker in every PASS.\n- **If RugCheck didn't load, it's a probe at most (6), not a block.** That needs the dossier's top-10 and dev numbers clean, mcap under $1M and the rest in the money shape. Say bundles are unverified.\n- **Manage the trade; stops sell with no review.** If the printed higher low breaks, sell. If it hasn't reached 1.05x by minute 10 with flow under pace, exit. If it's green before initials and 5m volume drops under half the hourly pace, sell half. At the time stop, exit; the only extension is one 15-minute window while a volume surge at or above pace is printing. Re-enter a stopped-out coin only once, and only when it reclaims its prior high with flow at or above pace (re-entries 0 for 4).\n",
  "meta": {
-  "age_minutes": 9,
-  "meta_summary": "Not quiet, but the trench volume is mostly spikes that die. Nine of fifteen movers print at least $1.5k on the 5-minute, and most are sub-6-hour pump.fun or pumpswap copies with $2k-$20k caps that are down 65-99% in the hour. Four themes repeat: animal mascots (GATO, BongoCat, BD Business Dog, Hermano the Chicken), promise names (1000x Gem, Infinite Money Glitch), joke and cult names (COPE, Toys4Kids, Mission Passed), and a generic-name \"coin\" (GdY4...) that is the only fresh mover with real money right now. Animals and promise names are fading (BongoCat -86%, BD -89%, 1000x -66% in 1h). The generic \"coin\" is rising at a $102k cap, $51.7k 5m, 53% buys, +186% in 1h, 0.9h old. Research, not buy: \"coin\" first, checking for the original versus copies, holders, dev and bundles, with initials and a stop planned before any entry since +186% is chase risk. GATO clears $10k on 5m but is a 72-day-old $12M token outside the trench range, and nothing else clears the bar with a rising chart. The crawler's BD, COPE and CAT figures conflict with the scan rows, so I'm trusting the scan and treating the crawler's numbers as unverified. The Trump and midterm headlines aren't showing up in the trenches, so they stay news. Paper only, not financial advice.",
+  "age_minutes": 3,
+  "meta_summary": "Not quiet, but the movers are mostly spikes that die. Fresh pump.fun and pumpswap copies with joke, mascot and generic names (\"1000 Yard Stare\" -81% in 1h, \"Black Bear\" -91%, GATO as a 72-day-old $11M token outside the trench range) are fading, and the animal and joke-name theme is cooling. The only fresh name with real money and rising price is SHADOW \"THE BAGWORKER\" ($51.5k cap, $20k 5m, 71% buys, +39% 1h, 0.2h old), which fits the MIGRATED screen (age under 12h, cap over $30k, 5m over $10k). It's a research candidate, not a buy: check whether it's the original or a copy, then holders, dev and bundles, and set initials at 2x and a stop before any entry, since +39% in an hour is chase risk. The crawler's \"coin\" (GdY4...) numbers conflict with the scan: the scan shows $127.5k cap, $5.7k 5m and -39% in 1h, not the +186% rise the crawler reported, so I'm treating the crawler figures as unverified and that coin as fading. Bubbles ($203k, 87% buys) has thin 5m volume ($2k), so it's watch-only. Paper only, not financial advice.",
   "top_narratives": [
    "referral",
    "referral code",
@@ -585,43 +585,43 @@
    "binance",
    "stocks",
    "fees",
-   "midterms",
    "guide",
    "prediction",
+   "midterms",
    "fee",
-   "sweep",
    "adds",
    "scaramucci",
+   "sweep",
    "hours",
    "platform",
-   "democrats",
    "hack",
-   "act"
+   "act",
+   "clarity act"
   ],
   "trending_categories": [
-   "SocialFi",
-   "Quantum-Resistant",
-   "Zero Knowledge (ZK)",
-   "Launchpad",
+   "Base Native",
    "IP Meme",
-   "Airdropped Tokens by NFT Projects"
+   "Perpetuals",
+   "Derivatives",
+   "World Liberty Financial Portfolio",
+   "Governance"
   ],
   "trending_coins": [
    "BTC",
    "NEAR",
    "LIT",
    "ENA",
-   "ZEC",
    "ETH",
+   "VVV",
+   "SOL",
+   "ZEC",
    "HYPE",
    "PENGU",
    "PUMP",
-   "SOL",
-   "INJ",
+   "FET",
    "AERO",
-   "PONS",
-   "PEARL",
-   "AAVE"
+   "TAO",
+   "PEARL"
   ],
   "hot_tickers": [
    {
@@ -634,6 +634,10 @@
    },
    {
     "ticker": "$LICK",
+    "mentions": 1
+   },
+   {
+    "ticker": "$MEI",
     "mentions": 1
    },
    {
@@ -666,6 +670,18 @@
   ],
   "scan_movers": [
    {
+    "symbol": "Chika",
+    "name": "The Market Chan",
+    "ca": "9q17YrKCeBtSZ6qkBTmttyZnh5ZVEapF6TwTrtX2pump",
+    "dex": "pumpswap",
+    "mcap_usd": 42985,
+    "vol_5m": 5656,
+    "vol_1h": 528092,
+    "change_1h": 18.29,
+    "buy_ratio_5m": 0.68,
+    "age_hours": 0.8
+   },
+   {
     "symbol": "coin",
     "name": "coin",
     "ca": "GdY4Z6pYUcr3HFrABV5FEZay3J4GnjN1Uzsw6Dvxpump",
@@ -678,40 +694,76 @@
     "age_hours": 1.7
    },
    {
+    "symbol": "sssdfg",
+    "name": "sssdfg",
+    "ca": "BQjiYCutv9LVtbgj7pKCN2Ce6k2eUM5RSKs6kDAzpump",
+    "dex": "pumpswap",
+    "mcap_usd": 121518,
+    "vol_5m": 9242,
+    "vol_1h": 235371,
+    "change_1h": -10.18,
+    "buy_ratio_5m": 0.58,
+    "age_hours": 2.4
+   },
+   {
     "symbol": "GATO",
     "name": "GTA6CAT",
     "ca": "HsprHxBRgiVaQdRf3TnKNuZZtaX9JUSPgMFdAkk6pump",
     "dex": "pumpswap",
-    "mcap_usd": 11518546,
-    "vol_5m": 6805,
-    "vol_1h": 173388,
-    "change_1h": -12.49,
-    "buy_ratio_5m": 0.34,
-    "age_hours": 1741.1
+    "mcap_usd": 10970744,
+    "vol_5m": 5758,
+    "vol_1h": 166791,
+    "change_1h": -11.11,
+    "buy_ratio_5m": 0.38,
+    "age_hours": 1741.3
    },
    {
-    "symbol": "1000x",
-    "name": "1000x Gem",
-    "ca": "FPu4Lbmttj2FcMXbRdpqbrj6hzg7wSoSQGD31VWkzGPZ",
+    "symbol": "SHADOW",
+    "name": "THE BAGWORKER",
+    "ca": "M1biEJsfuZBTmTjHRqziTASP51dUhjSHrB5rDjPpump",
     "dex": "pumpswap",
-    "mcap_usd": 3515,
-    "vol_5m": 3312,
-    "vol_1h": 78667,
-    "change_1h": -91.27,
-    "buy_ratio_5m": 0.56,
-    "age_hours": 0.9
+    "mcap_usd": 51550,
+    "vol_5m": 19966,
+    "vol_1h": 159289,
+    "change_1h": 39.04,
+    "buy_ratio_5m": 0.71,
+    "age_hours": 0.2
+   },
+   {
+    "symbol": "STARE",
+    "name": "1000 Yard Stare",
+    "ca": "7wE17VifYPgK42xDjeqthzhje6D69ib8Dq2XfyFQpump",
+    "dex": "pumpswap",
+    "mcap_usd": 7021,
+    "vol_5m": 10839,
+    "vol_1h": 51868,
+    "change_1h": -81.27,
+    "buy_ratio_5m": 0.47,
+    "age_hours": 0.1
    },
    {
     "symbol": "MooNoom",
     "name": "Moo Noom",
     "ca": "HTcoyKgotEjjWpVgbGnzsGgnqv34yo5nQms47fjCpump",
     "dex": "pumpfun",
-    "mcap_usd": 7134,
-    "vol_5m": 3430,
-    "vol_1h": 45901,
-    "change_1h": 134,
-    "buy_ratio_5m": 0.58,
-    "age_hours": 0.3
+    "mcap_usd": 5837,
+    "vol_5m": 839,
+    "vol_1h": 51644,
+    "change_1h": 91.49,
+    "buy_ratio_5m": 0.56,
+    "age_hours": 0.5
+   },
+   {
+    "symbol": "COGE",
+    "name": "COGE COIN",
+    "ca": "8UQdy5sHMVWUWSHeA5B3ZuuAVNumjSLPXdf19MXcpump",
+    "dex": "pumpswap",
+    "mcap_usd": 3274679,
+    "vol_5m": 3545,
+    "vol_1h": 44438,
+    "change_1h": 9.06,
+    "buy_ratio_5m": 0.57,
+    "age_hours": 5.9
    },
    {
     "symbol": "CO-OP",
@@ -723,31 +775,31 @@
     "vol_1h": 37083,
     "change_1h": -30.95,
     "buy_ratio_5m": null,
-    "age_hours": 0.6
+    "age_hours": 0.8
+   },
+   {
+    "symbol": "BTC",
+    "name": "Big Testicle Coin",
+    "ca": "8uwhL5tgKsi1r1EodGijHrawkYUMtT94wmNsAF16pump",
+    "dex": "pumpfun",
+    "mcap_usd": 18316,
+    "vol_5m": 3264,
+    "vol_1h": 36001,
+    "change_1h": 147,
+    "buy_ratio_5m": 0.48,
+    "age_hours": 1.2
    },
    {
     "symbol": "Bear",
     "name": "The Black Bear",
     "ca": "AX56XAixNhncCoqW3AdKmE6KsZuiuNTqPvNYTa5Ypump",
     "dex": "pumpfun",
-    "mcap_usd": 2739,
-    "vol_5m": 0,
-    "vol_1h": 35844,
-    "change_1h": -85.06,
+    "mcap_usd": 2726,
+    "vol_5m": 9,
+    "vol_1h": 21757,
+    "change_1h": -90.97,
     "buy_ratio_5m": 0.0,
-    "age_hours": 1.4
-   },
-   {
-    "symbol": "BFN",
-    "name": "Bad Fucking Nigger",
-    "ca": "2WBx8bdnKC2PrY1hvbCjDSkYy2JLhPMda5UemmuBWDEW",
-    "dex": "pumpfun",
-    "mcap_usd": 8475,
-    "vol_5m": 104,
-    "vol_1h": 24048,
-    "change_1h": -2.83,
-    "buy_ratio_5m": 0.38,
-    "age_hours": 8.3
+    "age_hours": 1.6
    },
    {
     "symbol": "Unity",
@@ -759,7 +811,7 @@
     "vol_1h": 21038,
     "change_1h": -2.4,
     "buy_ratio_5m": null,
-    "age_hours": 0.8
+    "age_hours": 1.0
    },
    {
     "symbol": "Bubbles",
@@ -790,127 +842,24 @@
     "name": "Bad Fucking Nigger",
     "ca": "fN2DroYvzjsuGxRk6JDVrsmrijXNCnExvCWnBuSpump",
     "dex": "pumpfun",
-    "mcap_usd": 14964,
-    "vol_5m": 776,
-    "vol_1h": 18059,
-    "change_1h": 73.07,
-    "buy_ratio_5m": 0.62,
-    "age_hours": 8.6
-   },
-   {
-    "symbol": "TOYS4KIDS",
-    "name": "Toys4Kids",
-    "ca": "FqJu1nmcNP8fCJfAW7Y4dGmp6fF9iF2RxrqMSFAcpump",
-    "dex": "pumpswap",
-    "mcap_usd": 10637,
-    "vol_5m": 358,
-    "vol_1h": 11653,
-    "change_1h": -40.43,
-    "buy_ratio_5m": 0.8,
-    "age_hours": 2.7
-   },
-   {
-    "symbol": "GLITCH",
-    "name": "Infinite Money Glitch",
-    "ca": "8Xg89xT8Ve34sKiYqYuMs46mycREsCA2F362UscRpump",
-    "dex": "pumpswap",
-    "mcap_usd": 3206711,
-    "vol_5m": 168,
-    "vol_1h": 10912,
-    "change_1h": 0.2,
-    "buy_ratio_5m": 0.0,
-    "age_hours": 490.0
-   },
-   {
-    "symbol": "BOWL",
-    "name": "BOWL",
-    "ca": "2mqHwVq8GjUitZV5gffWwGi65tX6X2Nh6mSRcvsppump",
-    "dex": "pumpfun",
-    "mcap_usd": 7935,
-    "vol_5m": 1846,
-    "vol_1h": 7804,
-    "change_1h": 198,
-    "buy_ratio_5m": 0.64,
-    "age_hours": 0.2
-   },
-   {
-    "symbol": "bul",
-    "name": "bul",
-    "ca": "GyWkSn2ah7dqLyPeZAjEZmfxuU2H4nwfGvgJhfYDVegn",
-    "dex": "pumpswap",
-    "mcap_usd": 56285,
-    "vol_5m": 3736,
-    "vol_1h": 7141,
-    "change_1h": -30.08,
-    "buy_ratio_5m": 0.77,
-    "age_hours": 751.9
+    "mcap_usd": 13635,
+    "vol_5m": 159,
+    "vol_1h": 19167,
+    "change_1h": 21.66,
+    "buy_ratio_5m": 0.57,
+    "age_hours": 8.9
    }
   ]
  },
  "goal": null,
  "last_scan": {
-  "at": 1793928909.668013,
-  "tokens": 11,
-  "pairs": 11,
+  "at": 1793929799.125515,
+  "tokens": 7,
+  "pairs": 7,
   "passed_market_filters": 0,
   "researched": 0
  },
  "recent_looks": [
-  {
-   "ts": "2026-11-06T00:09:52Z",
-   "symbol": "COGE",
-   "ca": "8UQdy5sHMVWUWSHeA5B3ZuuAVNumjSLPXdf19MXcpump",
-   "setup": "MIGRATED",
-   "mcap_usd": 2883411,
-   "vol_5m": 4124,
-   "outcome": "PASS",
-   "conviction": 3,
-   "reason": "PASS. Chasing 9% off the high, the first resistance is only 1.10x away, 5m flow is under $10k in a crowded copy field, and the project's own site doesn't show this CA. (V1, V6, V13)"
-  },
-  {
-   "ts": "2026-11-06T00:12:32Z",
-   "symbol": "sssdfg",
-   "ca": "BQjiYCutv9LVtbgj7pKCN2Ce6k2eUM5RSKs6kDAzpump",
-   "setup": "DIP",
-   "mcap_usd": 183903,
-   "vol_5m": 56690,
-   "outcome": "REJECT",
-   "conviction": null,
-   "reason": "Dip with fading attention is a falling knife, not a dip (5m at 0.56x the hour's pace, under 0.6x)"
-  },
-  {
-   "ts": "2026-11-06T00:14:36Z",
-   "symbol": "Bear",
-   "ca": "AX56XAixNhncCoqW3AdKmE6KsZuiuNTqPvNYTa5Ypump",
-   "setup": null,
-   "mcap_usd": 17756,
-   "vol_5m": 17365,
-   "outcome": "REJECT",
-   "conviction": null,
-   "reason": "No setup fits: not Final Stretch, not a migrated runner, not a healthy dip"
-  },
-  {
-   "ts": "2026-11-06T00:28:11Z",
-   "symbol": "BFN",
-   "ca": "2WBx8bdnKC2PrY1hvbCjDSkYy2JLhPMda5UemmuBWDEW",
-   "setup": "FINAL_STRETCH",
-   "mcap_usd": 20956,
-   "vol_5m": 7973,
-   "outcome": "REJECT",
-   "conviction": null,
-   "reason": "Top 10 hold 25.6% ex-pool (>25%) (V13)"
-  },
-  {
-   "ts": "2026-11-06T00:28:12Z",
-   "symbol": "GLITCH",
-   "ca": "8Xg89xT8Ve34sKiYqYuMs46mycREsCA2F362UscRpump",
-   "setup": "MIGRATED",
-   "mcap_usd": 3132457,
-   "vol_5m": 943,
-   "outcome": "REJECT",
-   "conviction": null,
-   "reason": "5m volume $943 is dead (<$2,000) (V1)"
-  },
   {
    "ts": "2026-11-06T00:39:56Z",
    "symbol": "Bubbles",
@@ -1020,13 +969,68 @@
    "outcome": "REJECT",
    "conviction": null,
    "reason": "Dip with fading attention is a falling knife, not a dip (5m at 0.22x the hour's pace, under 0.6x)"
+  },
+  {
+   "ts": "2026-11-06T01:37:18Z",
+   "symbol": "SHADOW",
+   "ca": "M1biEJsfuZBTmTjHRqziTASP51dUhjSHrB5rDjPpump",
+   "setup": "DIP",
+   "mcap_usd": 52074,
+   "vol_5m": 24043,
+   "outcome": "REJECT",
+   "conviction": null,
+   "reason": "RugCheck danger: Creator history of rugged tokens"
+  },
+  {
+   "ts": "2026-11-06T01:39:25Z",
+   "symbol": "Chika",
+   "ca": "9q17YrKCeBtSZ6qkBTmttyZnh5ZVEapF6TwTrtX2pump",
+   "setup": "DIP",
+   "mcap_usd": 42985,
+   "vol_5m": 5656,
+   "outcome": "REJECT",
+   "conviction": null,
+   "reason": "Dip with fading attention is a falling knife, not a dip (5m at 0.13x the hour's pace, under 0.6x)"
+  },
+  {
+   "ts": "2026-11-06T01:40:43Z",
+   "symbol": "COGE",
+   "ca": "8UQdy5sHMVWUWSHeA5B3ZuuAVNumjSLPXdf19MXcpump",
+   "setup": "MIGRATED",
+   "mcap_usd": 3274679,
+   "vol_5m": 3545,
+   "outcome": "PASS",
+   "conviction": 2,
+   "reason": "PASS: chasing at $3.27M, 3.9% off the $3.41M high, with a $3.5k 5m and the first resistance 1.04x away. Blockers: \"chasing\", \"target too close\", \"big cap, no room\". (V1, V6)"
+  },
+  {
+   "ts": "2026-11-06T01:43:46Z",
+   "symbol": "sssdfg",
+   "ca": "BQjiYCutv9LVtbgj7pKCN2Ce6k2eUM5RSKs6kDAzpump",
+   "setup": "MIGRATED",
+   "mcap_usd": 115071,
+   "vol_5m": 8864,
+   "outcome": "PASS",
+   "conviction": 2,
+   "reason": "PASS: sssdfg is a keyboard-mash name with no story, 5m flow at 0.45x pace, and top 10 at 20.5%. A 71% drawdown from a $398k peak with a saw-tooth chart is a pump that already dumped, not a dip to buy (V1, V3, V13)."
+  },
+  {
+   "ts": "2026-11-06T01:45:50Z",
+   "symbol": "GATO",
+   "ca": "HsprHxBRgiVaQdRf3TnKNuZZtaX9JUSPgMFdAkk6pump",
+   "setup": "MIGRATED",
+   "mcap_usd": 10970744,
+   "vol_5m": 5758,
+   "outcome": "REJECT",
+   "conviction": null,
+   "reason": "Dev holds 3.3% (>1%) (V13, V17)"
   }
  ],
  "skip_review": {
   "top 10 over 25%": {
-   "blocked": 70,
+   "blocked": 69,
    "ran": 12,
-   "dumped": 54,
+   "dumped": 53,
    "flat": 2,
    "pending": 2,
    "ran_examples": [
@@ -1057,23 +1061,23 @@
      "worst_x": 0.77
     },
     {
-     "symbol": "DOC",
-     "ca": "3ekWNf8QZuxbNnXPGUA4t8dcG7rqvRvDkyM6Mf9hpump",
-     "best_x": 1.0,
-     "worst_x": 0.24
-    },
-    {
      "symbol": "Fuck",
      "ca": "8ZSui6xyBJpu8gWny98cTM6JWKYo6jm69SeWWvYbpump",
      "best_x": 1.0,
+     "worst_x": 0.34
+    },
+    {
+     "symbol": "assoff",
+     "ca": "4M5DceVdRSz6Cxjix5uU7PXFL6vuG2hJhQrydbk1pump",
+     "best_x": 1.05,
      "worst_x": 0.34
     }
    ]
   },
   "too new / sniping": {
-   "blocked": 49,
+   "blocked": 48,
    "ran": 5,
-   "dumped": 41,
+   "dumped": 40,
    "flat": 3,
    "pending": 0,
    "ran_examples": [
@@ -1118,11 +1122,11 @@
    ]
   },
   "flow below pace": {
-   "blocked": 45,
+   "blocked": 46,
    "ran": 9,
    "dumped": 28,
    "flat": 6,
-   "pending": 2,
+   "pending": 3,
    "ran_examples": [
     {
      "symbol": "Link",
@@ -1212,9 +1216,9 @@
    ]
   },
   "RugCheck danger": {
-   "blocked": 27,
+   "blocked": 28,
    "ran": 8,
-   "dumped": 18,
+   "dumped": 19,
    "flat": 1,
    "pending": 0,
    "ran_examples": [
@@ -1259,9 +1263,9 @@
    ]
   },
   "other": {
-   "blocked": 19,
+   "blocked": 18,
    "ran": 6,
-   "dumped": 10,
+   "dumped": 9,
    "flat": 2,
    "pending": 1,
    "ran_examples": [
@@ -1286,12 +1290,6 @@
    ],
    "dumped_examples": [
     {
-     "symbol": "SPHERE",
-     "ca": "31SYoqWFhx3i9UsfnoXTjFp4ZwJA8F8UPrMxymfDpump",
-     "best_x": 1.0,
-     "worst_x": 0.03
-    },
-    {
      "symbol": "MEME/COIN",
      "ca": "FicTXnzYTUSA3ahseJQ5RMroB2Fr2kqZ2WqPnJDnpump",
      "best_x": 1.0,
@@ -1302,15 +1300,21 @@
      "ca": "FQE9h4fL65oDHMsR2MHcSe6d6DF4hFrFarsQQkVJpump",
      "best_x": 1.25,
      "worst_x": 0.78
+    },
+    {
+     "symbol": "brkout",
+     "ca": "14U9w9vmMx662z6EDLgXoYncJTWZEw21B1X55QaNpump",
+     "best_x": 1.04,
+     "worst_x": 0.73
     }
    ]
   },
   "falling knife (code)": {
    "blocked": 18,
    "ran": 4,
-   "dumped": 12,
+   "dumped": 11,
    "flat": 1,
-   "pending": 1,
+   "pending": 2,
    "ran_examples": [
     {
      "symbol": "DESSA",
@@ -1762,9 +1766,9 @@
  ],
  "watch": {
   "on": true,
-  "live": 86,
-  "settled": 1099,
-  "brain_reads": 583,
+  "live": 83,
+  "settled": 1107,
+  "brain_reads": 587,
   "would_buys": 0,
   "days": [
    "2026-11-03",
