@@ -1,13 +1,13 @@
 # Trencher live report
 
-Updated 2026-11-06T00:35:23Z (paper trading, never real money)
+Updated 2026-11-06T00:50:36Z (paper trading, never real money)
 
 - Equity: $74.23 (-25.8% vs $100 start)
 - Closed trades: 22, 3 wins
 - Fees paid: $14.78 (axiom $2.81, network $9.18, pool $2.66), plus $4.15 lost to slippage
 - New trades: WATCH-ONLY (scans and decides, buys nothing)
-- Brain: subscription, claude-haiku-5-5 for routine calls, claude-opus-5-5 for the daily review; 489 routine calls and 0 plan-limit hits in 48h
-- Watch log: 96 coins being followed, 1079 filed, 0 would-buys (6h follow, sampled every 2 min)
+- Brain: subscription, claude-haiku-5-5 for routine calls, claude-opus-5-5 for the daily review; 488 routine calls and 0 plan-limit hits in 48h
+- Watch log: 93 coins being followed, 1084 filed, 0 would-buys (6h follow, sampled every 2 min)
 
 ## Scorecard (after fees)
 - 22 closed, 3 won (14%), net $-25.79
@@ -73,9 +73,13 @@ Updated 2026-11-06T00:35:23Z (paper trading, never real money)
   CA `H4gHnZ3NCU7Z9XQwGX6YYJNyieGEW8pqwGRUcdSxpump`
 
 ## Last scan
-- 00:34Z: 2 coins, 1 with pairs, 0 passed the market filters, 0 researched
+- 00:50Z: 3 coins, 3 with pairs, 0 passed the market filters, 0 researched
 
 ## Coins it looked at, and why it passed
+- 00:45Z coin (DIP, $102,524 mcap, $51,701 5m vol): REJECT, Dip with fading attention is a falling knife, not a dip (5m at 0.57x the hour's pace, under 0.6x)  
+  CA `GdY4Z6pYUcr3HFrABV5FEZay3J4GnjN1Uzsw6Dvxpump`
+- 00:39Z Bubbles (MIGRATED, $178,487 mcap, $2,367 5m vol): PASS at conviction 3, PASS — 3.7% off the high at $178k, 5m flow at 0.84x pace, no printed higher low, and 16 same-ticker copies. Blockers: chasing, flow below pace, no higher low, split crowd (V1, V6, V13).  
+  CA `DNerJKigs1xZ5rCBDtU9a2ACxvskScMnSihWY9yYpump`
 - 00:28Z GLITCH (MIGRATED, $3,132,457 mcap, $943 5m vol): REJECT, 5m volume $943 is dead (<$2,000) (V1)  
   CA `8Xg89xT8Ve34sKiYqYuMs46mycREsCA2F362UscRpump`
 - 00:28Z BFN (FINAL_STRETCH, $20,956 mcap, $7,973 5m vol): REJECT, Top 10 hold 25.6% ex-pool (>25%) (V13)  
@@ -92,28 +96,24 @@ Updated 2026-11-06T00:35:23Z (paper trading, never real money)
   CA `DNerJKigs1xZ5rCBDtU9a2ACxvskScMnSihWY9yYpump`
 - 23:45Z TOYS4KIDS (MIGRATED, $73,556 mcap, $9,561 5m vol): PASS at conviction 3, PASS: TOYS4KIDS is the leader of a 9-copy same-name field running at 0.04x its theme's hourly pace, with 5m flow at 0.6x its own pace and $9.6k on the 5m. Blocker: flow below pace. (V1, V6)  
   CA `FqJu1nmcNP8fCJfAW7Y4dGmp6fF9iF2RxrqMSFAcpump`
-- 23:44Z COPE (MIGRATED, $396,179 mcap, $91,079 5m vol): PASS at conviction 3, PASS: chasing. COPE is 7.8% off a $430k high after +708% in an hour, with no printed higher low and a 1.08x first target. A farm-shaped spike, not a pullback (V1, V6).  
-  CA `g8FFFJHQnd84dcbHGjvTRMLzRPaE7FVV2bmNs2wpump`
-- 23:37Z BD (FINAL_STRETCH, $22,836 mcap, $21,569 5m vol): REJECT, Top 10 hold 25.4% ex-pool (>25%) (V13)  
-  CA `HiC6kWaZ19h3YDZcCQT455ECJZ9qpnSfVYRZJ2ktpump`
 
 ## What its skips did next (last 48h)
 A skip "ran" if the coin reached the first target (1.5x) from the skip price before a 20% drop, "dumped" if the drop came first. Sampled every 10 min, followed 6h.
-- top 10 over 25%: blocked 73, ran 12, dumped 56, flat 2, open 3 (saving losses: keep it)
+- top 10 over 25%: blocked 72, ran 12, dumped 56, flat 2, open 2 (saving losses: keep it)
   - ran: NEMO up to 1.6x  
     CA `5ja9qQuE5V9g5TVAFZVdtVQQqoThkAWxEKUaPcC5jN3F`
   - ran: Aren up to 1.75x  
     CA `HkyNkVXpJWg1H7hAWjnSW58J22Cx7gnWwUHhFtf5pump`
   - ran: SUPERBOWL up to 1.61x  
     CA `92j5cWKjdVKDC7skBw1HjvYtrTU8nMM1zKjC4dqmpump`
-- too new / sniping: blocked 49, ran 5, dumped 41, flat 3, open 0 (saving losses: keep it)
+- too new / sniping: blocked 48, ran 5, dumped 40, flat 3, open 0 (saving losses: keep it)
   - ran: AMD up to 1.61x  
     CA `GCEEdGYx17shhJyudBTAHYAgcTEpKzntyiiqysmUpump`
   - ran: POLY up to 1.65x  
     CA `DMgry6A9C6U6jopS7bAawukAvAcgpUvWfJULcbnfpump`
   - ran: Doge up to 1.72x  
     CA `9CRbVZxQshb9dMkh3yGvyARJRAHMGVuxiQRGhUsppump`
-- flow below pace: blocked 44, ran 9, dumped 28, flat 6, open 1 (saving losses: keep it)
+- flow below pace: blocked 45, ran 9, dumped 28, flat 6, open 2 (saving losses: keep it)
   - ran: Link up to 1.57x  
     CA `7kqWni27vRVCKjcuBAmAbs8t7PxXgxdEjUSyRfeFpump`
   - ran: CHICKPOT up to 1.55x  
@@ -141,7 +141,7 @@ A skip "ran" if the coin reached the first target (1.5x) from the skip price bef
     CA `CG1DmSiMXw9WjQXCzP5JDnma5BDY3Cks9bRTdXNLpump`
   - ran: BLOOM up to 1.74x  
     CA `ExdQxJcXzNzhW6CC9phvoEVpKvJQJyg98CE228Uxpump`
-- falling knife (code): blocked 18, ran 4, dumped 12, flat 1, open 1 (saving losses: keep it)
+- falling knife (code): blocked 19, ran 4, dumped 13, flat 1, open 1 (saving losses: keep it)
   - ran: DESSA up to 1.54x  
     CA `npz2FhoufQ7pKqhGpaipYWacrAkidyW2yDpVWSvpump`
   - ran: ORBIE up to 1.83x  
@@ -198,16 +198,16 @@ Nothing has a positive edge after costs yet. All 359 settled coins averaged -10.
 - [2026-11-02 20:25] I expected Slingoor, a clean MIGRATED leader with $25k of 5m flow at pace and a 0.77 buy share, to retest its $408k high from $304k. It never went green (0.98x peak) and hit the -20% stop in 2 minutes, a -$2.86 probe. My own thesis admitted there was no printed higher low after a peak only 6 minutes old, so this confirms the money-shape rule: buy share and flow are not structure (V1, V6). Next time a MIGRATED pullback with no higher low above the hourly low is a PASS with blocker "no higher low", not a probe. This is one loss, so it adds no new ban beyond the rule I already have.
 
 ## Meta right now
-Not quiet. Nine of fifteen movers print at least $1.5k of 5-minute volume, and most of it sits in pump.fun launches under about 6 hours old and pumpswap copies. Two themes repeat across several coins: animal mascots (COGE cougar x2, BD Business Dog, Democat, CAT) and joke or reaction names (sssdfg, LIFE, Bubbles, Horny). Rising: BD ($23k cap, $22.8k 5m, 57% buys, on the curve) and MuseX402 ($22k cap, $14.6k 5m, 58% buys). Fading: Democat -98%, CAT -83%, Horny -81%, LIFE -86% in 1h, so copies die fast. Research only, not buys: BD and MuseX402 after +431% and +167% in an hour are chase risks, so I want a clean chart plus holder, dev and bundle checks first; COPE ($396k, $91k 5m, 78% buys, +708% in 1h) is a lottery ticket at best; COGE ($373k, $8.8k 5m) sits just under the $10k bar, so it's a watch. The crawler's NEARFUN and Gavel Drop aren't in the scan, and its CAT row ($18k cap, $13.1k 5m) contradicts the scan row ($2.6k, $0 5m), so I'm using the scan rows and treating the summary's numbers as unverified. The political headlines (Trump, Melania, $LAPTOP) aren't showing up in the trenches right now, so they stay news. Paper only, not financial advice.
+Not quiet, but the trench volume is mostly spikes that die. Nine of fifteen movers print at least $1.5k on the 5-minute, and most are sub-6-hour pump.fun or pumpswap copies with $2k-$20k caps that are down 65-99% in the hour. Four themes repeat: animal mascots (GATO, BongoCat, BD Business Dog, Hermano the Chicken), promise names (1000x Gem, Infinite Money Glitch), joke and cult names (COPE, Toys4Kids, Mission Passed), and a generic-name "coin" (GdY4...) that is the only fresh mover with real money right now. Animals and promise names are fading (BongoCat -86%, BD -89%, 1000x -66% in 1h). The generic "coin" is rising at a $102k cap, $51.7k 5m, 53% buys, +186% in 1h, 0.9h old. Research, not buy: "coin" first, checking for the original versus copies, holders, dev and bundles, with initials and a stop planned before any entry since +186% is chase risk. GATO clears $10k on 5m but is a 72-day-old $12M token outside the trench range, and nothing else clears the bar with a rising chart. The crawler's BD, COPE and CAT figures conflict with the scan rows, so I'm trusting the scan and treating the crawler's numbers as unverified. The Trump and midterm headlines aren't showing up in the trenches, so they stay news. Paper only, not financial advice.
 
 ## Moving most in its scans, last 30 min (1h volume)
-- sssdfg: $1,220,231 1h vol, $185,101 mcap, +420% 1h  
-  CA `BQjiYCutv9LVtbgj7pKCN2Ce6k2eUM5RSKs6kDAzpump`
-- COPE: $742,548 1h vol, $1,689 mcap, -99% 1h  
+- coin: $1,086,724 1h vol, $102,524 mcap, +186% 1h  
+  CA `GdY4Z6pYUcr3HFrABV5FEZay3J4GnjN1Uzsw6Dvxpump`
+- COPE: $478,931 1h vol, $1,692 mcap, -100% 1h  
   CA `g8FFFJHQnd84dcbHGjvTRMLzRPaE7FVV2bmNs2wpump`
-- GATO: $153,311 1h vol, $13,082,918 mcap, +18% 1h  
+- GATO: $171,479 1h vol, $12,282,816 mcap, +7% 1h  
   CA `HsprHxBRgiVaQdRf3TnKNuZZtaX9JUSPgMFdAkk6pump`
-- TOYS4KIDS: $93,318 1h vol, $21,154 mcap, -68% 1h  
-  CA `FqJu1nmcNP8fCJfAW7Y4dGmp6fF9iF2RxrqMSFAcpump`
-- BongoCat: $73,565 1h vol, $22,929 mcap, -38% 1h  
+- BongoCat: $84,274 1h vol, $2,388 mcap, -93% 1h  
   CA `GyPoNrioGXzY6d7uNHnFnW614Cw3XC1KQv9MVNS5pump`
+- TOYS4KIDS: $81,216 1h vol, $15,964 mcap, -76% 1h  
+  CA `FqJu1nmcNP8fCJfAW7Y4dGmp6fF9iF2RxrqMSFAcpump`
