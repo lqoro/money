@@ -1,13 +1,13 @@
 # Trencher live report
 
-Updated 2026-11-06T07:27:00Z (paper trading, never real money)
+Updated 2026-11-06T07:42:15Z (paper trading, never real money)
 
 - Equity: $74.23 (-25.8% vs $100 start)
 - Closed trades: 22, 3 wins
 - Fees paid: $14.78 (axiom $2.81, network $9.18, pool $2.66), plus $4.15 lost to slippage
 - New trades: WATCH-ONLY (scans and decides, buys nothing)
 - Brain: subscription, claude-haiku-5-5 for routine calls, claude-opus-5-5 for the daily review; 484 routine calls and 0 plan-limit hits in 48h
-- Watch log: 92 coins being followed, 1182 filed, 0 would-buys (6h follow, sampled every 2 min)
+- Watch log: 90 coins being followed, 1188 filed, 0 would-buys (6h follow, sampled every 2 min)
 
 ## Scorecard (after fees)
 - 22 closed, 3 won (14%), net $-25.79
@@ -73,9 +73,17 @@ Updated 2026-11-06T07:27:00Z (paper trading, never real money)
   CA `H4gHnZ3NCU7Z9XQwGX6YYJNyieGEW8pqwGRUcdSxpump`
 
 ## Last scan
-- 07:25Z: 3 coins, 2 with pairs, 0 passed the market filters, 0 researched
+- 07:41Z: 2 coins, 1 with pairs, 0 passed the market filters, 0 researched
 
 ## Coins it looked at, and why it passed
+- 07:39Z RED (MIGRATED, $31,438 mcap, $7,453 5m vol): REJECT, RugCheck danger: Creator history of rugged tokens  
+  CA `HuqKMcaEojnp4qRReE1dr5ed5TQhhMcjEn6wskRppump`
+- 07:35Z GLITCH (MIGRATED, $3,438,159 mcap, $2,828 5m vol): REJECT, Top 10 hold 28.1% ex-pool (>25%) (V13)  
+  CA `8Xg89xT8Ve34sKiYqYuMs46mycREsCA2F362UscRpump`
+- 07:33Z MarsCoin (FINAL_STRETCH, $19,425 mcap, $25,074 5m vol): REJECT, RugCheck danger: Low Liquidity $5.09  
+  CA `9tq9beEgem9zudg9BZshdhcT1nf9N8iUUkmcsRX6FJWu`
+- 07:32Z raea (FINAL_STRETCH, $21,189 mcap, $4,870 5m vol): PASS at conviction 3, PASS: parabolic pump.fun pre-bond coin, up 736% in the hour and sitting 2% off its peak, with top 10 at 24.97% against the 25% hard line and 5m volume under the $10k bar. Blockers: chasing, target too close, no story. (V1, V6, V13)  
+  CA `4RbXErm8gGuag4rGRJF9cuvYm655QW7stQ6nGtnHpump`
 - 07:16Z AMD (MIGRATED, $1,796,835 mcap, $8,161 5m vol): PASS at conviction 3, PASS: AMD is 5m flow at 0.81x pace, has no printed higher low, and sits at a $1.8M cap with no room to 1.5x. Blocker: flow below pace. (V1, V6)  
   CA `oCZHH8HnEBCPipEGdEcP3f45pQAaM7nh7P6EkRPpump`
 - 07:13Z fun (MIGRATED, $212,848 mcap, $11,980 5m vol): REJECT, Top 10 hold 25.2% ex-pool (>25%) (V13)  
@@ -88,31 +96,23 @@ Updated 2026-11-06T07:27:00Z (paper trading, never real money)
   CA `AHQKMSVEStWZNNgReBt8cck5fT8sBdo9ZFyo2m7cpump`
 - 07:05Z bracket (DIP, $155,985 mcap, $16,001 5m vol): PASS at conviction 3, PASS: bracket is an 11-copy same-ticker field with a 6% bundle cluster on the leader, no live narrative, and no catalyst. Split crowd. (V1, V3, V13)  
   CA `EFWotn2UtV2c5QXMMHbSzmyrkU7wnfj7VpkNQGr1wk1z`
-- 06:53Z paws (MIGRATED, $237,325 mcap, $3,137 5m vol): PASS at conviction 3, PASS: paws sits 1.5% under its 24h peak after a 7.9x volume spike on 5 buys against 11 sells. Chasing a spike in a 24-copy field. (V1, V6)  
-  CA `Fp4JkqEcKYKBKhb9iMu9NSDeo71HWgq2q9QtXaaKpump`
-- 06:50Z NWO (MIGRATED, $41,616 mcap, $2,037 5m vol): PASS, PASS — brain unavailable, not trading blind.  
-  CA `4VTnR3UmTquiCD1Quz5Z577XdgzehWBK8yTc9482pump`
-- 06:43Z BP (MIGRATED, $32,532 mcap, $16,145 5m vol): PASS at conviction 3, PASS - 8 minutes old, down 25% on a 6x volume spike with no printed higher low, and 27 same-ticker copies splitting the crowd. Wait for a base above the hourly low. (V1, V6)  
-  CA `GNNhU2SEArd5RGN49Yjo4YHTipRA3E5gMJeUPE4Gpump`
-- 06:31Z RETIRE (DIP, $230,679 mcap, $3,642 5m vol): REJECT, Dip with fading attention is a falling knife, not a dip (5m at 0.40x the hour's pace, under 0.6x)  
-  CA `519AMDtBqCpVk8CTYCg2i9kJQH62ZSkT5Uvfn71Upump`
 
 ## What its skips did next (last 48h)
 A skip "ran" if the coin reached the first target (1.5x) from the skip price before a 20% drop, "dumped" if the drop came first. Sampled every 10 min, followed 6h.
-- top 10 over 25%: blocked 71, ran 12, dumped 54, flat 4, open 1 (saving losses: keep it)
+- top 10 over 25%: blocked 72, ran 12, dumped 55, flat 3, open 2 (saving losses: keep it)
   - ran: NEMO up to 1.6x  
     CA `5ja9qQuE5V9g5TVAFZVdtVQQqoThkAWxEKUaPcC5jN3F`
   - ran: Aren up to 1.75x  
     CA `HkyNkVXpJWg1H7hAWjnSW58J22Cx7gnWwUHhFtf5pump`
   - ran: SUPERBOWL up to 1.61x  
     CA `92j5cWKjdVKDC7skBw1HjvYtrTU8nMM1zKjC4dqmpump`
-- flow below pace: blocked 47, ran 9, dumped 30, flat 4, open 4 (saving losses: keep it)
-  - ran: CHICKPOT up to 1.55x  
-    CA `8B6ZZAC2FQ7AJrZPz7veXJrod5t2MG1C5MZBLNbUpump`
+- flow below pace: blocked 46, ran 8, dumped 31, flat 4, open 3 (saving losses: keep it)
   - ran: Donkey up to 1.57x  
     CA `G8Lf8uthQp5YHoswQZDRdeRxaWiUqnNFNoZ45y68pump`
   - ran: AMD up to 1.64x  
     CA `9VHCDisE9pybDt5eCuKv1AyddCx8gksuxpoWi6vjpump`
+  - ran: LEEROY up to 1.55x  
+    CA `98HEU4TvXB3xjB1t15fgxHwYDLUH4fDomvp2DCzJpump`
 - too new / sniping: blocked 42, ran 3, dumped 36, flat 3, open 0 (saving losses: keep it)
   - ran: Doge up to 1.72x  
     CA `9CRbVZxQshb9dMkh3yGvyARJRAHMGVuxiQRGhUsppump`
@@ -120,14 +120,14 @@ A skip "ran" if the coin reached the first target (1.5x) from the skip price bef
     CA `5w9ZP4hRRX73oPiFXKKVu3gNxY9qm8zJhYFN8SMApump`
   - ran: PILLHEADS up to 1.63x  
     CA `BFJd5mWCvu7yMivKCM7Xh8Dx17GgBbwaxcmFX3Aqpump`
-- near the high / chasing: blocked 38, ran 5, dumped 30, flat 1, open 2 (saving losses: keep it)
+- near the high / chasing: blocked 38, ran 5, dumped 30, flat 2, open 1 (saving losses: keep it)
   - ran: PayIF up to 1.56x  
     CA `FfuBMS3rh9M61apXJDs14yAngVnYLWR7xkcX5FxMpump`
   - ran: SAN up to 1.63x  
     CA `8kfp8MzuFuj3vrnmG3KBcYVctYmu2JYerdFhPnX4pump`
   - ran: SOLUNA up to 2.13x  
     CA `3brY153eRNKLxUY3zfBYW9LvarfHUFhgSW66tbQupump`
-- RugCheck danger: blocked 29, ran 9, dumped 19, flat 1, open 0 (saving losses: keep it)
+- RugCheck danger: blocked 31, ran 9, dumped 19, flat 1, open 2 (saving losses: keep it)
   - ran: RAM up to 1.63x  
     CA `72QNkZqiTBsq5dvn4DEwaC5qBPDkc7SZJ38xXy4jpump`
   - ran: $LIBCOIN up to 1.54x  
@@ -155,14 +155,14 @@ A skip "ran" if the coin reached the first target (1.5x) from the skip price bef
     CA `Fyff8ZbT3omcwoqmAgLbXH25tzqQp1FoM4UYWtePpump`
   - ran: CALLING up to 1.6x  
     CA `5ve4fMHU4BsSgJvjF9NEMp5m9yNLqYkugPKbV7SZpump`
-- thin 5m volume: blocked 14, ran 2, dumped 6, flat 5, open 1 (saving losses: keep it)
+- dev share over 1%: blocked 14, ran 1, dumped 10, flat 2, open 1 (saving losses: keep it)
+  - ran: Leonida up to 2.03x  
+    CA `BWJfBNeXpapG7uoqByp5KSwWgCQba8QcDmA2DQiEpump`
+- thin 5m volume: blocked 13, ran 2, dumped 6, flat 5, open 0 (saving losses: keep it)
   - ran: DESSA up to 1.54x  
     CA `npz2FhoufQ7pKqhGpaipYWacrAkidyW2yDpVWSvpump`
   - ran: MEOWNERO up to 1.76x  
     CA `6gnB2H2hbTVvKUWCzNuqjWY8Rod6EVBmfHi7YxZpTWa7`
-- dev share over 1%: blocked 14, ran 1, dumped 10, flat 2, open 1 (saving losses: keep it)
-  - ran: Leonida up to 2.03x  
-    CA `BWJfBNeXpapG7uoqByp5KSwWgCQba8QcDmA2DQiEpump`
 
 ## Daily review (2026-11-05, claude-opus-5-5)
 Nothing has a positive edge after costs yet. All 359 settled coins averaged -10.2% net on the simple plan. Before costs that is about +0.4%, so the round-trip cost on a $10 buy (10.6% on average) accounts for the entire loss, the same story as the 22 real trades. FINAL_STRETCH comes closest: about +5.9% before costs, -5.1% after (n=46). At this sample size that is roughly one standard error from zero, from a single day's market, so it is noise until the full week says otherwise. I can't say whether the routine model's would-buys beat its passes, because it made zero would-buys out of 217 decisions. The coins it passed on averaged -11.2% net, the coins that failed the checklist -8.7%, and that gap is also noise.
@@ -205,11 +205,11 @@ The trenches are active, not quiet: Fun and BP each show over $16k of 5-minute v
 ## Moving most in its scans, last 30 min (1h volume)
 - fun: $394,740 1h vol, $208,989 mcap, +102% 1h  
   CA `5BWHo2duxhkRR4ftnZWErnB8GoXpFgZ4ZR9UN8LDpump`
-- bracket: $142,844 1h vol, $157,552 mcap, +30% 1h  
-  CA `EFWotn2UtV2c5QXMMHbSzmyrkU7wnfj7VpkNQGr1wk1z`
 - AMD: $121,413 1h vol, $1,796,835 mcap, -10% 1h  
   CA `oCZHH8HnEBCPipEGdEcP3f45pQAaM7nh7P6EkRPpump`
 - Fun: $119,584 1h vol, $3,041 mcap, -5% 1h  
   CA `G1dPxV39DGrnAxxr3DPHoZpJRqamdpQPNtPiieKGpump`
-- Bill: $69,562 1h vol, $110,270 mcap, +17% 1h  
-  CA `6RDff7NwDJFX9zLg53RJNPsWpdfRs1xxDxivhL3Ypump`
+- MarsCoin: $74,372 1h vol, $19,425 mcap, +362% 1h  
+  CA `9tq9beEgem9zudg9BZshdhcT1nf9N8iUUkmcsRX6FJWu`
+- BP: $52,894 1h vol, $16,419 mcap, -59% 1h  
+  CA `GNNhU2SEArd5RGN49Yjo4YHTipRA3E5gMJeUPE4Gpump`
