@@ -1,13 +1,13 @@
 # Trencher live report
 
-Updated 2026-11-06T03:22:00Z (paper trading, never real money)
+Updated 2026-11-06T03:37:15Z (paper trading, never real money)
 
 - Equity: $74.23 (-25.8% vs $100 start)
 - Closed trades: 22, 3 wins
 - Fees paid: $14.78 (axiom $2.81, network $9.18, pool $2.66), plus $4.15 lost to slippage
 - New trades: WATCH-ONLY (scans and decides, buys nothing)
-- Brain: subscription, claude-haiku-5-5 for routine calls, claude-opus-5-5 for the daily review; 488 routine calls and 0 plan-limit hits in 48h
-- Watch log: 77 coins being followed, 1133 filed, 0 would-buys (6h follow, sampled every 2 min)
+- Brain: subscription, claude-haiku-5-5 for routine calls, claude-opus-5-5 for the daily review; 489 routine calls and 0 plan-limit hits in 48h
+- Watch log: 84 coins being followed, 1134 filed, 0 would-buys (6h follow, sampled every 2 min)
 
 ## Scorecard (after fees)
 - 22 closed, 3 won (14%), net $-25.79
@@ -73,47 +73,47 @@ Updated 2026-11-06T03:22:00Z (paper trading, never real money)
   CA `H4gHnZ3NCU7Z9XQwGX6YYJNyieGEW8pqwGRUcdSxpump`
 
 ## Last scan
-- 03:21Z: 1 coins, 1 with pairs, 1 passed the market filters, 1 researched
+- 03:36Z: 3 coins, 3 with pairs, 0 passed the market filters, 0 researched
 
 ## Coins it looked at, and why it passed
+- 03:35Z RICO (MIGRATED, $72,933 mcap, $4,810 5m vol): REJECT, RugCheck danger: Creator history of rugged tokens  
+  CA `8kuQg3WivDtL85VEdw2jEmSXjYt6EEeYBATJ4DtQpump`
+- 03:35Z Diamond (MIGRATED, $322,355 mcap, $10,985 5m vol): PASS at conviction 3, PASS: Diamond is a generic one-word copy with 5m flow at 0.43x its hourly pace, no printed higher low, and a 5.2% single bundle. Blocker: flow below pace. (V1, V6, V13)  
+  CA `5VCEFq1aATjga39QtDunYjJqYBx67w8V8TXwHrqopump`
+- 03:30Z GLITCH (MIGRATED, $3,281,299 mcap, $2,087 5m vol): REJECT, Top 10 hold 28.1% ex-pool (>25%) (V13)  
+  CA `8Xg89xT8Ve34sKiYqYuMs46mycREsCA2F362UscRpump`
+- 03:27Z RETIRE (MIGRATED, $84,208 mcap, $7,478 5m vol): REJECT, Top 10 hold 28.9% ex-pool (>25%) (V13)  
+  CA `519AMDtBqCpVk8CTYCg2i9kJQH62ZSkT5Uvfn71Upump`
+- 03:27Z ELIZUBETH (MIGRATED, $32,450 mcap, $17,079 5m vol): REJECT, Top 10 hold 25.2% ex-pool (>25%) (V13)  
+  CA `HgitrELLEjavWQqSB88CsqafhyczZeebRDRCqLYipNWy`
+- 03:26Z AMD (DIP, $263,525 mcap, $14,210 5m vol): REJECT, Dip with fading attention is a falling knife, not a dip (5m at 0.34x the hour's pace, under 0.6x)  
+  CA `oCZHH8HnEBCPipEGdEcP3f45pQAaM7nh7P6EkRPpump`
+- 03:25Z GS (MIGRATED, $56,759 mcap, $12,294 5m vol): REJECT, RugCheck danger: Large Amount of LP Unlocked 100.00%  
+  CA `FdDM4cwd39gghgjXozi9q22jRiwydt9ffbpF1srFpump`
+- 03:22Z DEGEN (MIGRATED, $64,444 mcap, $8,064 5m vol): PASS at conviction 3, PASS — 5m flow is $8k at 0.36x its hourly pace, and the degen theme runs at 0.37x with no catalyst. Nothing is breaking out here. (V1, V6)  
+  CA `Dk2iHPgeStfACECMbmigRRcDtP8yzfTjdHnMq7hqpump`
 - 03:21Z LUNOX (MIGRATED, $100,094 mcap, $14,933 5m vol): PASS at conviction 4, PASS — 28-minute-old AI chat wrapper, buy share 0.45, no printed higher low, first resistance only 1.2x away. Blockers: "no higher low", "target too close". (V1, V6)  
   CA `GTTQWTy96Vr2NNqrUHjg854AYKKP51jQr2Fcies7pump`
 - 03:16Z callinu (MIGRATED, $72,603 mcap, $40,937 5m vol): REJECT, Top 10 hold 25.8% ex-pool (>25%) (V13)  
   CA `fF44qzhsdUR5VQuQAHYxxt25iHCrKadWM3fABAApump`
-- 03:14Z WABI (no setup, $28,347 mcap, $974 5m vol): REJECT, No setup fits: not Final Stretch, not a migrated runner, not a healthy dip  
-  CA `CMK5SEFQw3DDs6iGTBBAHeyQyMnBgtZvFnUp6tYwabi`
-- 03:10Z COGE (MIGRATED, $2,777,303 mcap, $2,306 5m vol): PASS at conviction 3, PASS: flow below pace, $2.8M cap with no breakout, and the CA isn't on its own site. Bottom-buy gate also fails. Let it go.  
-  CA `8UQdy5sHMVWUWSHeA5B3ZuuAVNumjSLPXdf19MXcpump`
-- 03:02Z coin (MIGRATED, $166,116 mcap, $5,474 5m vol): PASS at conviction 2, PASS — generic "coin" ticker in a 4-copy vamp field, 5m flow at 0.63x pace, no printed higher low, and no catalyst for a bottom buy. Sawtooth, not a base (V1, V3, V6, V13).  
-  CA `GdY4Z6pYUcr3HFrABV5FEZay3J4GnjN1Uzsw6Dvxpump`
-- 03:01Z three (MIGRATED, $617,760 mcap, $18,193 5m vol): PASS at conviction 3, PASS: one bundle cluster holds 9.7% and 12.5% is bundled in total, a 6x volume spike is printing into a -17.5% five-minute candle, and no higher low has printed. A tech/AI LARP with no GitHub. (V1, V3, V6, V13)  
-  CA `FeMbDoX7R1Psc4GEcvJdsbNbZA3bfztcyDCatJVJpump`
-- 02:53Z Chika (MIGRATED, $203,241 mcap, $38,862 5m vol): REJECT, Bundles: 10 linked wallet cluster(s) hold 85.8% of supply (>20%) (V17)  
-  CA `Fyff8ZbT3omcwoqmAgLbXH25tzqQp1FoM4UYWtePpump`
-- 02:50Z Diamond (MIGRATED, $414,824 mcap, $26,613 5m vol): PASS at conviction 2, PASS: flow at 0.45x its hourly pace, and the theme leader is a different "Diamond" CA in a 9-copy field. Blockers: flow below pace, split crowd (V1, V3, V6).  
-  CA `5VCEFq1aATjga39QtDunYjJqYBx67w8V8TXwHrqopump`
-- 02:49Z BLUE (FINAL_STRETCH, $18,954 mcap, $6,461 5m vol): PASS at conviction 3, PASS: copy field of 12 "always blue were" coins, pre-bond at 51% of bond, 29% off the high with no named catalyst and 5m flow of $6.5k under the $10k bar. Blocker: no catalyst on a bottom buy. (V1, V6, V13)  
-  CA `4cLaBCSvzcpiqECbMgchHLTK5dw5uc6AmrCjSD7Hpump`
-- 02:42Z RETIRE (MIGRATED, $61,438 mcap, $11,731 5m vol): REJECT, Top 10 hold 27.5% ex-pool (>25%) (V13)  
-  CA `519AMDtBqCpVk8CTYCg2i9kJQH62ZSkT5Uvfn71Upump`
 
 ## What its skips did next (last 48h)
 A skip "ran" if the coin reached the first target (1.5x) from the skip price before a 20% drop, "dumped" if the drop came first. Sampled every 10 min, followed 6h.
-- top 10 over 25%: blocked 69, ran 12, dumped 51, flat 2, open 4 (saving losses: keep it)
+- top 10 over 25%: blocked 70, ran 13, dumped 51, flat 2, open 4 (saving losses: keep it)
   - ran: NEMO up to 1.6x  
     CA `5ja9qQuE5V9g5TVAFZVdtVQQqoThkAWxEKUaPcC5jN3F`
   - ran: Aren up to 1.75x  
     CA `HkyNkVXpJWg1H7hAWjnSW58J22Cx7gnWwUHhFtf5pump`
   - ran: SUPERBOWL up to 1.61x  
     CA `92j5cWKjdVKDC7skBw1HjvYtrTU8nMM1zKjC4dqmpump`
-- flow below pace: blocked 48, ran 10, dumped 28, flat 5, open 5 (saving losses: keep it)
+- flow below pace: blocked 48, ran 9, dumped 29, flat 5, open 5 (saving losses: keep it)
   - ran: Link up to 1.57x  
     CA `7kqWni27vRVCKjcuBAmAbs8t7PxXgxdEjUSyRfeFpump`
   - ran: CHICKPOT up to 1.55x  
     CA `8B6ZZAC2FQ7AJrZPz7veXJrod5t2MG1C5MZBLNbUpump`
   - ran: Donkey up to 1.57x  
     CA `G8Lf8uthQp5YHoswQZDRdeRxaWiUqnNFNoZ45y68pump`
-- too new / sniping: blocked 44, ran 4, dumped 37, flat 3, open 0 (saving losses: keep it)
+- too new / sniping: blocked 43, ran 3, dumped 37, flat 3, open 0 (saving losses: keep it)
   - ran: Doge up to 1.72x  
     CA `9CRbVZxQshb9dMkh3yGvyARJRAHMGVuxiQRGhUsppump`
   - ran: MOG up to 1.87x  
@@ -127,7 +127,7 @@ A skip "ran" if the coin reached the first target (1.5x) from the skip price bef
     CA `8kfp8MzuFuj3vrnmG3KBcYVctYmu2JYerdFhPnX4pump`
   - ran: SOLUNA up to 2.13x  
     CA `3brY153eRNKLxUY3zfBYW9LvarfHUFhgSW66tbQupump`
-- RugCheck danger: blocked 28, ran 8, dumped 19, flat 1, open 0 (saving losses: keep it)
+- RugCheck danger: blocked 29, ran 8, dumped 19, flat 1, open 1 (saving losses: keep it)
   - ran: RAM up to 1.63x  
     CA `72QNkZqiTBsq5dvn4DEwaC5qBPDkc7SZJ38xXy4jpump`
   - ran: $LIBCOIN up to 1.54x  
@@ -141,6 +141,13 @@ A skip "ran" if the coin reached the first target (1.5x) from the skip price bef
     CA `CG1DmSiMXw9WjQXCzP5JDnma5BDY3Cks9bRTdXNLpump`
   - ran: BLOOM up to 1.74x  
     CA `ExdQxJcXzNzhW6CC9phvoEVpKvJQJyg98CE228Uxpump`
+- falling knife (code): blocked 18, ran 5, dumped 12, flat 1, open 0 (saving losses: keep it)
+  - ran: DESSA up to 1.54x  
+    CA `npz2FhoufQ7pKqhGpaipYWacrAkidyW2yDpVWSvpump`
+  - ran: ORBIE up to 1.83x  
+    CA `HEb2dwDNbBhnrCusoNXXvba9MymYTTmMQcHKaptxmfun`
+  - ran: inu up to 1.5x  
+    CA `Bid8i1ocWssjRmKh2kcUfHxD1K6Sk7E5pV2PSVdepump`
 - thin 5m volume: blocked 18, ran 3, dumped 9, flat 4, open 2 (saving losses: keep it)
   - ran: DESSA up to 1.54x  
     CA `npz2FhoufQ7pKqhGpaipYWacrAkidyW2yDpVWSvpump`
@@ -153,13 +160,6 @@ A skip "ran" if the coin reached the first target (1.5x) from the skip price bef
     CA `Bu3h78FY2fsWVZ1MdyQVpFTvv5XsRotWX6VjszQTpump`
   - ran: Chika up to 1.68x  
     CA `Fyff8ZbT3omcwoqmAgLbXH25tzqQp1FoM4UYWtePpump`
-- falling knife (code): blocked 17, ran 4, dumped 12, flat 1, open 0 (saving losses: keep it)
-  - ran: DESSA up to 1.54x  
-    CA `npz2FhoufQ7pKqhGpaipYWacrAkidyW2yDpVWSvpump`
-  - ran: ORBIE up to 1.83x  
-    CA `HEb2dwDNbBhnrCusoNXXvba9MymYTTmMQcHKaptxmfun`
-  - ran: inu up to 1.5x  
-    CA `Bid8i1ocWssjRmKh2kcUfHxD1K6Sk7E5pV2PSVdepump`
 - dev share over 1%: blocked 14, ran 1, dumped 10, flat 2, open 1 (saving losses: keep it)
   - ran: Leonida up to 2.03x  
     CA `BWJfBNeXpapG7uoqByp5KSwWgCQba8QcDmA2DQiEpump`
@@ -203,13 +203,13 @@ Nothing has a positive edge after costs yet. All 359 settled coins averaged -10.
 Trencher: The trenches are not quiet, but the money is on fresh pumpswap migrations, not on the pump.fun bonding-curve pups. Rising: brand-pun names on famous tickers, led by A Meme Dacity (AMD, $231k cap, $60k 5m, 84% buys, +484% in 1h, 12 min old), plus degen-slang DEGEN ($61k cap, $14k 5m, 56% buys). RETIRE "Mission Passed" ($61k cap, $10.7k 5m) fits the same pattern at lower conviction. Fading: animal names (NVDA "Nobody Values Dogs Anymore" and Pibblemas near zero 5m, GATO a 72-day-old $11M outside the trench range), self-referential joke names (copycat at zero 5m, "no ai, no code, just vibe" at zero buys, Chika down 92%), and the political-insult LIBTARD (down 73%). The headlines on political memecoins sinking fit that, but I'm using them only as confirmation, not as the signal. Setups to research now, none a buy yet: AMD is the strongest but is chase risk, so wait for a pullback that holds volume, and check it's the original and not a copy. DEGEN and RETIRE meet the MIGRATED screen (under 12h, over $30k cap, 5m over $10k), so check original-vs-copy, holders, dev and bundles, then set initials at 2x and a stop before any entry. Bubbles ($211k cap) is below the $10k 5m bar, so it waits on volume, not on holder data. No coin in this scan is named for a hack or exploit. Paper only, not financial advice.
 
 ## Moving most in its scans, last 30 min (1h volume)
-- Chika: $522,707 1h vol, $195,437 mcap, +169% 1h  
-  CA `Fyff8ZbT3omcwoqmAgLbXH25tzqQp1FoM4UYWtePpump`
+- AMD: $496,861 1h vol, $265,708 mcap, +580% 1h  
+  CA `oCZHH8HnEBCPipEGdEcP3f45pQAaM7nh7P6EkRPpump`
+- Diamond: $307,788 1h vol, $322,355 mcap, -17% 1h  
+  CA `5VCEFq1aATjga39QtDunYjJqYBx67w8V8TXwHrqopump`
+- DEGEN: $263,148 1h vol, $63,659 mcap, -22% 1h  
+  CA `Dk2iHPgeStfACECMbmigRRcDtP8yzfTjdHnMq7hqpump`
 - LUNOX: $126,554 1h vol, $100,094 mcap, +167% 1h  
   CA `GTTQWTy96Vr2NNqrUHjg854AYKKP51jQr2Fcies7pump`
 - COGE: $110,675 1h vol, $2,777,303 mcap, +3% 1h  
   CA `8UQdy5sHMVWUWSHeA5B3ZuuAVNumjSLPXdf19MXcpump`
-- coin: $104,507 1h vol, $171,232 mcap, +20% 1h  
-  CA `GdY4Z6pYUcr3HFrABV5FEZay3J4GnjN1Uzsw6Dvxpump`
-- GATO: $99,374 1h vol, $12,099,791 mcap, +6% 1h  
-  CA `HsprHxBRgiVaQdRf3TnKNuZZtaX9JUSPgMFdAkk6pump`
