@@ -1,13 +1,13 @@
 # Trencher live report
 
-Updated 2026-11-06T00:20:20Z (paper trading, never real money)
+Updated 2026-11-06T00:35:23Z (paper trading, never real money)
 
 - Equity: $74.23 (-25.8% vs $100 start)
 - Closed trades: 22, 3 wins
 - Fees paid: $14.78 (axiom $2.81, network $9.18, pool $2.66), plus $4.15 lost to slippage
 - New trades: WATCH-ONLY (scans and decides, buys nothing)
-- Brain: subscription, claude-haiku-5-5 for routine calls, claude-opus-5-5 for the daily review; 491 routine calls and 0 plan-limit hits in 48h
-- Watch log: 97 coins being followed, 1076 filed, 0 would-buys (6h follow, sampled every 2 min)
+- Brain: subscription, claude-haiku-5-5 for routine calls, claude-opus-5-5 for the daily review; 489 routine calls and 0 plan-limit hits in 48h
+- Watch log: 96 coins being followed, 1079 filed, 0 would-buys (6h follow, sampled every 2 min)
 
 ## Scorecard (after fees)
 - 22 closed, 3 won (14%), net $-25.79
@@ -73,9 +73,13 @@ Updated 2026-11-06T00:20:20Z (paper trading, never real money)
   CA `H4gHnZ3NCU7Z9XQwGX6YYJNyieGEW8pqwGRUcdSxpump`
 
 ## Last scan
-- 00:19Z: 5 coins, 4 with pairs, 0 passed the market filters, 0 researched
+- 00:34Z: 2 coins, 1 with pairs, 0 passed the market filters, 0 researched
 
 ## Coins it looked at, and why it passed
+- 00:28Z GLITCH (MIGRATED, $3,132,457 mcap, $943 5m vol): REJECT, 5m volume $943 is dead (<$2,000) (V1)  
+  CA `8Xg89xT8Ve34sKiYqYuMs46mycREsCA2F362UscRpump`
+- 00:28Z BFN (FINAL_STRETCH, $20,956 mcap, $7,973 5m vol): REJECT, Top 10 hold 25.6% ex-pool (>25%) (V13)  
+  CA `2WBx8bdnKC2PrY1hvbCjDSkYy2JLhPMda5UemmuBWDEW`
 - 00:14Z Bear (no setup, $17,756 mcap, $17,365 5m vol): REJECT, No setup fits: not Final Stretch, not a migrated runner, not a healthy dip  
   CA `AX56XAixNhncCoqW3AdKmE6KsZuiuNTqPvNYTa5Ypump`
 - 00:12Z sssdfg (DIP, $183,903 mcap, $56,690 5m vol): REJECT, Dip with fading attention is a falling knife, not a dip (5m at 0.56x the hour's pace, under 0.6x)  
@@ -92,35 +96,31 @@ Updated 2026-11-06T00:20:20Z (paper trading, never real money)
   CA `g8FFFJHQnd84dcbHGjvTRMLzRPaE7FVV2bmNs2wpump`
 - 23:37Z BD (FINAL_STRETCH, $22,836 mcap, $21,569 5m vol): REJECT, Top 10 hold 25.4% ex-pool (>25%) (V13)  
   CA `HiC6kWaZ19h3YDZcCQT455ECJZ9qpnSfVYRZJ2ktpump`
-- 23:32Z COGE (MIGRATED, $373,394 mcap, $8,769 5m vol): PASS at conviction 3, PASS: flow at 0.51x pace on a MIGRATED coin, and the first resistance is only 1.2x away. A bigger same-ticker copy is taking half the crowd. (V1, V3, V6)  
-  CA `ES9FintJPSGcoVuJhkLAsfSoug6B69bDoeTb3hJYpump`
-- 23:27Z sssdfg (MIGRATED, $90,695 mcap, $180,932 5m vol): PASS at conviction 3, PASS. Keyboard-mash name, 18 copies, five minutes old, up 111% on the 5m with no higher low printed. Blockers: chasing spike, too new, no higher low, target too close.  
-  CA `BQjiYCutv9LVtbgj7pKCN2Ce6k2eUM5RSKs6kDAzpump`
 
 ## What its skips did next (last 48h)
 A skip "ran" if the coin reached the first target (1.5x) from the skip price before a 20% drop, "dumped" if the drop came first. Sampled every 10 min, followed 6h.
-- top 10 over 25%: blocked 73, ran 12, dumped 57, flat 2, open 2 (saving losses: keep it)
+- top 10 over 25%: blocked 73, ran 12, dumped 56, flat 2, open 3 (saving losses: keep it)
   - ran: NEMO up to 1.6x  
     CA `5ja9qQuE5V9g5TVAFZVdtVQQqoThkAWxEKUaPcC5jN3F`
   - ran: Aren up to 1.75x  
     CA `HkyNkVXpJWg1H7hAWjnSW58J22Cx7gnWwUHhFtf5pump`
   - ran: SUPERBOWL up to 1.61x  
     CA `92j5cWKjdVKDC7skBw1HjvYtrTU8nMM1zKjC4dqmpump`
-- too new / sniping: blocked 50, ran 5, dumped 42, flat 3, open 0 (saving losses: keep it)
+- too new / sniping: blocked 49, ran 5, dumped 41, flat 3, open 0 (saving losses: keep it)
   - ran: AMD up to 1.61x  
     CA `GCEEdGYx17shhJyudBTAHYAgcTEpKzntyiiqysmUpump`
   - ran: POLY up to 1.65x  
     CA `DMgry6A9C6U6jopS7bAawukAvAcgpUvWfJULcbnfpump`
   - ran: Doge up to 1.72x  
     CA `9CRbVZxQshb9dMkh3yGvyARJRAHMGVuxiQRGhUsppump`
-- flow below pace: blocked 44, ran 9, dumped 28, flat 5, open 2 (saving losses: keep it)
+- flow below pace: blocked 44, ran 9, dumped 28, flat 6, open 1 (saving losses: keep it)
   - ran: Link up to 1.57x  
     CA `7kqWni27vRVCKjcuBAmAbs8t7PxXgxdEjUSyRfeFpump`
   - ran: CHICKPOT up to 1.55x  
     CA `8B6ZZAC2FQ7AJrZPz7veXJrod5t2MG1C5MZBLNbUpump`
   - ran: Donkey up to 1.57x  
     CA `G8Lf8uthQp5YHoswQZDRdeRxaWiUqnNFNoZ45y68pump`
-- near the high / chasing: blocked 39, ran 5, dumped 31, flat 1, open 2 (saving losses: keep it)
+- near the high / chasing: blocked 38, ran 5, dumped 30, flat 1, open 2 (saving losses: keep it)
   - ran: PayIF up to 1.56x  
     CA `FfuBMS3rh9M61apXJDs14yAngVnYLWR7xkcX5FxMpump`
   - ran: SAN up to 1.63x  
@@ -134,7 +134,7 @@ A skip "ran" if the coin reached the first target (1.5x) from the skip price bef
     CA `2UxjHoidyefQxJrCS8qT23JsbqKFcpPCa8ywBYZupump`
   - ran: ORBIE up to 1.83x  
     CA `HEb2dwDNbBhnrCusoNXXvba9MymYTTmMQcHKaptxmfun`
-- other: blocked 19, ran 5, dumped 10, flat 0, open 4 (saving losses: keep it)
+- other: blocked 19, ran 6, dumped 10, flat 0, open 3 (mixed)
   - ran: DESSA up to 1.54x  
     CA `npz2FhoufQ7pKqhGpaipYWacrAkidyW2yDpVWSvpump`
   - ran: MACHKA up to 1.52x  
@@ -148,7 +148,7 @@ A skip "ran" if the coin reached the first target (1.5x) from the skip price bef
     CA `HEb2dwDNbBhnrCusoNXXvba9MymYTTmMQcHKaptxmfun`
   - ran: inu up to 1.5x  
     CA `Bid8i1ocWssjRmKh2kcUfHxD1K6Sk7E5pV2PSVdepump`
-- thin 5m volume: blocked 17, ran 3, dumped 9, flat 5, open 0 (saving losses: keep it)
+- thin 5m volume: blocked 18, ran 3, dumped 9, flat 5, open 1 (saving losses: keep it)
   - ran: DESSA up to 1.54x  
     CA `npz2FhoufQ7pKqhGpaipYWacrAkidyW2yDpVWSvpump`
   - ran: MEOWNERO up to 1.76x  
@@ -158,7 +158,7 @@ A skip "ran" if the coin reached the first target (1.5x) from the skip price bef
 - bundles over the line: blocked 17, ran 1, dumped 13, flat 2, open 1 (saving losses: keep it)
   - ran: dump up to 1.72x  
     CA `Bu3h78FY2fsWVZ1MdyQVpFTvv5XsRotWX6VjszQTpump`
-- dev share over 1%: blocked 16, ran 1, dumped 11, flat 3, open 1 (saving losses: keep it)
+- dev share over 1%: blocked 15, ran 1, dumped 10, flat 3, open 1 (saving losses: keep it)
   - ran: Leonida up to 2.03x  
     CA `BWJfBNeXpapG7uoqByp5KSwWgCQba8QcDmA2DQiEpump`
 
@@ -203,11 +203,11 @@ Not quiet. Nine of fifteen movers print at least $1.5k of 5-minute volume, and m
 ## Moving most in its scans, last 30 min (1h volume)
 - sssdfg: $1,220,231 1h vol, $185,101 mcap, +420% 1h  
   CA `BQjiYCutv9LVtbgj7pKCN2Ce6k2eUM5RSKs6kDAzpump`
-- LIFE: $123,939 1h vol, $2,362 mcap, -93% 1h  
-  CA `DLPeij9Bbs1XS27Re7eGcfd19ScXFr3obAuZuXespump`
-- GATO: $89,658 1h vol, $13,430,540 mcap, +25% 1h  
+- COPE: $742,548 1h vol, $1,689 mcap, -99% 1h  
+  CA `g8FFFJHQnd84dcbHGjvTRMLzRPaE7FVV2bmNs2wpump`
+- GATO: $153,311 1h vol, $13,082,918 mcap, +18% 1h  
   CA `HsprHxBRgiVaQdRf3TnKNuZZtaX9JUSPgMFdAkk6pump`
-- BongoCat: $65,192 1h vol, $17,747 mcap, -52% 1h  
+- TOYS4KIDS: $93,318 1h vol, $21,154 mcap, -68% 1h  
+  CA `FqJu1nmcNP8fCJfAW7Y4dGmp6fF9iF2RxrqMSFAcpump`
+- BongoCat: $73,565 1h vol, $22,929 mcap, -38% 1h  
   CA `GyPoNrioGXzY6d7uNHnFnW614Cw3XC1KQv9MVNS5pump`
-- COGE: $51,185 1h vol, $2,779,565 mcap, +10% 1h  
-  CA `8UQdy5sHMVWUWSHeA5B3ZuuAVNumjSLPXdf19MXcpump`
