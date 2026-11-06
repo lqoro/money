@@ -1,13 +1,13 @@
 # Trencher live report
 
-Updated 2026-11-06T04:37:47Z (paper trading, never real money)
+Updated 2026-11-06T04:52:54Z (paper trading, never real money)
 
 - Equity: $74.23 (-25.8% vs $100 start)
 - Closed trades: 22, 3 wins
 - Fees paid: $14.78 (axiom $2.81, network $9.18, pool $2.66), plus $4.15 lost to slippage
 - New trades: WATCH-ONLY (scans and decides, buys nothing)
-- Brain: subscription, claude-haiku-5-5 for routine calls, claude-opus-5-5 for the daily review; 487 routine calls and 0 plan-limit hits in 48h
-- Watch log: 82 coins being followed, 1151 filed, 0 would-buys (6h follow, sampled every 2 min)
+- Brain: subscription, claude-haiku-5-5 for routine calls, claude-opus-5-5 for the daily review; 486 routine calls and 0 plan-limit hits in 48h
+- Watch log: 81 coins being followed, 1156 filed, 0 would-buys (6h follow, sampled every 2 min)
 
 ## Scorecard (after fees)
 - 22 closed, 3 won (14%), net $-25.79
@@ -73,9 +73,17 @@ Updated 2026-11-06T04:37:47Z (paper trading, never real money)
   CA `H4gHnZ3NCU7Z9XQwGX6YYJNyieGEW8pqwGRUcdSxpump`
 
 ## Last scan
-- 04:36Z: 4 coins, 4 with pairs, 0 passed the market filters, 0 researched
+- 04:52Z: 7 coins, 6 with pairs, 1 passed the market filters, 1 researched
 
 ## Coins it looked at, and why it passed
+- 04:52Z LUNOX (DIP, $91,180 mcap, $5,915 5m vol): REJECT, Dip with fading attention is a falling knife, not a dip (5m at 0.38x the hour's pace, under 0.6x)  
+  CA `GTTQWTy96Vr2NNqrUHjg854AYKKP51jQr2Fcies7pump`
+- 04:47Z GLITCH (MIGRATED, $3,237,064 mcap, $5,398 5m vol): REJECT, Top 10 hold 28.1% ex-pool (>25%) (V13)  
+  CA `8Xg89xT8Ve34sKiYqYuMs46mycREsCA2F362UscRpump`
+- 04:42Z COGE (MIGRATED, $2,916,044 mcap, $2,932 5m vol): PASS at conviction 2, PASS. COGE is a $2.9M migrated coin with $2.9k of 5m volume at 0.69x its hourly pace, no printed higher low, and a site that doesn't show this CA. Blocker: flow below pace. (V1, V6)  
+  CA `8UQdy5sHMVWUWSHeA5B3ZuuAVNumjSLPXdf19MXcpump`
+- 04:39Z Bill (MIGRATED, $51,221 mcap, $30,069 5m vol): PASS at conviction 2, PASS. Bill is up 116% on 5m after a 0.3-hour-old bond spike, one of 11 "bill" copies with no story behind it. Blockers: chasing spike, too new, no higher low, vamp field. (V1, V6)  
+  CA `6RDff7NwDJFX9zLg53RJNPsWpdfRs1xxDxivhL3Ypump`
 - 04:35Z bracket (MIGRATED, $53,185 mcap, $46,021 5m vol): PASS at conviction 3, PASS — six-minute-old migration up 37% on 5m at 9x its hourly pace, the leader of a 22-copy "bracket" field with a 6% bundle cluster. That's chasing a spike in a split crowd (V1, V3, V6).  
   CA `EFWotn2UtV2c5QXMMHbSzmyrkU7wnfj7VpkNQGr1wk1z`
 - 04:31Z GS (MIGRATED, $35,645 mcap, $2,062 5m vol): REJECT, RugCheck danger: Large Amount of LP Unlocked 100.00%  
@@ -88,39 +96,31 @@ Updated 2026-11-06T04:37:47Z (paper trading, never real money)
   CA `FzTKun7HZds4mnx1sgayLNjnTyM9AjG6X16KGNZepump`
 - 04:12Z RETIRE (MIGRATED, $142,727 mcap, $7,309 5m vol): REJECT, Top 10 hold 32.2% ex-pool (>25%) (V13)  
   CA `519AMDtBqCpVk8CTYCg2i9kJQH62ZSkT5Uvfn71Upump`
-- 04:12Z BTC (MIGRATED, $87,987 mcap, $10,059 5m vol): REJECT, LP only 0% burned/locked (V2, V3, V6)  
-  CA `CWHwGkR8MTvaxZUfWcyAuEsjz1JRTuRurXFh6PeUpump`
-- 04:12Z AMD (MIGRATED, $536,679 mcap, $8,314 5m vol): PASS at conviction 3, PASS. Flow below pace, and the first resistance is 1.14x away. Sixteen copies of the ticker and the theme is at 0.4x pace. The crowd is splitting, not arriving. (V1, V6, V13)  
-  CA `oCZHH8HnEBCPipEGdEcP3f45pQAaM7nh7P6EkRPpump`
-- 04:06Z LUNOX (DIP, $70,785 mcap, $3,027 5m vol): REJECT, Dip with fading attention is a falling knife, not a dip (5m at 0.18x the hour's pace, under 0.6x)  
-  CA `GTTQWTy96Vr2NNqrUHjg854AYKKP51jQr2Fcies7pump`
-- 04:02Z callinu (MIGRATED, $51,130 mcap, $29,499 5m vol): PASS at conviction 3, PASS: callinu is 52 minutes past migration, its flow is at 0.81x hourly pace, and it has no printed higher low. It's one of 22 copies with zero radar mentions. (blockers: too new, flow below pace, no higher low, split crowd)  
-  CA `fF44qzhsdUR5VQuQAHYxxt25iHCrKadWM3fABAApump`
 
 ## What its skips did next (last 48h)
 A skip "ran" if the coin reached the first target (1.5x) from the skip price before a 20% drop, "dumped" if the drop came first. Sampled every 10 min, followed 6h.
-- top 10 over 25%: blocked 69, ran 12, dumped 52, flat 3, open 2 (saving losses: keep it)
+- top 10 over 25%: blocked 69, ran 13, dumped 52, flat 4, open 0 (saving losses: keep it)
   - ran: NEMO up to 1.6x  
     CA `5ja9qQuE5V9g5TVAFZVdtVQQqoThkAWxEKUaPcC5jN3F`
   - ran: Aren up to 1.75x  
     CA `HkyNkVXpJWg1H7hAWjnSW58J22Cx7gnWwUHhFtf5pump`
   - ran: SUPERBOWL up to 1.61x  
     CA `92j5cWKjdVKDC7skBw1HjvYtrTU8nMM1zKjC4dqmpump`
-- flow below pace: blocked 48, ran 10, dumped 29, flat 5, open 4 (saving losses: keep it)
+- flow below pace: blocked 47, ran 11, dumped 29, flat 4, open 3 (saving losses: keep it)
   - ran: Link up to 1.57x  
     CA `7kqWni27vRVCKjcuBAmAbs8t7PxXgxdEjUSyRfeFpump`
   - ran: CHICKPOT up to 1.55x  
     CA `8B6ZZAC2FQ7AJrZPz7veXJrod5t2MG1C5MZBLNbUpump`
   - ran: Donkey up to 1.57x  
     CA `G8Lf8uthQp5YHoswQZDRdeRxaWiUqnNFNoZ45y68pump`
-- too new / sniping: blocked 44, ran 3, dumped 38, flat 3, open 0 (saving losses: keep it)
+- too new / sniping: blocked 45, ran 4, dumped 38, flat 3, open 0 (saving losses: keep it)
   - ran: Doge up to 1.72x  
     CA `9CRbVZxQshb9dMkh3yGvyARJRAHMGVuxiQRGhUsppump`
   - ran: MOG up to 1.87x  
     CA `5w9ZP4hRRX73oPiFXKKVu3gNxY9qm8zJhYFN8SMApump`
   - ran: PILLHEADS up to 1.63x  
     CA `BFJd5mWCvu7yMivKCM7Xh8Dx17GgBbwaxcmFX3Aqpump`
-- near the high / chasing: blocked 38, ran 5, dumped 29, flat 1, open 3 (saving losses: keep it)
+- near the high / chasing: blocked 37, ran 6, dumped 28, flat 1, open 2 (saving losses: keep it)
   - ran: PayIF up to 1.56x  
     CA `FfuBMS3rh9M61apXJDs14yAngVnYLWR7xkcX5FxMpump`
   - ran: SAN up to 1.63x  
@@ -134,18 +134,20 @@ A skip "ran" if the coin reached the first target (1.5x) from the skip price bef
     CA `2UxjHoidyefQxJrCS8qT23JsbqKFcpPCa8ywBYZupump`
   - ran: ORBIE up to 1.83x  
     CA `HEb2dwDNbBhnrCusoNXXvba9MymYTTmMQcHKaptxmfun`
-- falling knife (code): blocked 19, ran 4, dumped 13, flat 1, open 1 (saving losses: keep it)
+- falling knife (code): blocked 19, ran 5, dumped 12, flat 1, open 1 (saving losses: keep it)
   - ran: DESSA up to 1.54x  
     CA `npz2FhoufQ7pKqhGpaipYWacrAkidyW2yDpVWSvpump`
   - ran: ORBIE up to 1.83x  
     CA `HEb2dwDNbBhnrCusoNXXvba9MymYTTmMQcHKaptxmfun`
   - ran: inu up to 1.5x  
     CA `Bid8i1ocWssjRmKh2kcUfHxD1K6Sk7E5pV2PSVdepump`
-- bundles over the line: blocked 19, ran 2, dumped 14, flat 2, open 1 (saving losses: keep it)
+- bundles over the line: blocked 18, ran 3, dumped 13, flat 2, open 0 (saving losses: keep it)
   - ran: dump up to 1.72x  
     CA `Bu3h78FY2fsWVZ1MdyQVpFTvv5XsRotWX6VjszQTpump`
   - ran: Chika up to 1.68x  
     CA `Fyff8ZbT3omcwoqmAgLbXH25tzqQp1FoM4UYWtePpump`
+  - ran: CALLING up to 1.6x  
+    CA `5ve4fMHU4BsSgJvjF9NEMp5m9yNLqYkugPKbV7SZpump`
 - other: blocked 17, ran 5, dumped 9, flat 2, open 1 (mixed)
   - ran: DESSA up to 1.54x  
     CA `npz2FhoufQ7pKqhGpaipYWacrAkidyW2yDpVWSvpump`
@@ -153,7 +155,7 @@ A skip "ran" if the coin reached the first target (1.5x) from the skip price bef
     CA `ExdQxJcXzNzhW6CC9phvoEVpKvJQJyg98CE228Uxpump`
   - ran: x up to 1.54x  
     CA `2f95ogiEqQjDgWV74ksPx68i83yHLUbzDv92be4Rpump`
-- thin 5m volume: blocked 17, ran 3, dumped 7, flat 4, open 3 (saving losses: keep it)
+- thin 5m volume: blocked 17, ran 3, dumped 7, flat 5, open 2 (saving losses: keep it)
   - ran: DESSA up to 1.54x  
     CA `npz2FhoufQ7pKqhGpaipYWacrAkidyW2yDpVWSvpump`
   - ran: MEOWNERO up to 1.76x  
@@ -200,16 +202,16 @@ Nothing has a positive edge after costs yet. All 359 settled coins averaged -10.
 - [2026-11-02 20:25] I expected Slingoor, a clean MIGRATED leader with $25k of 5m flow at pace and a 0.77 buy share, to retest its $408k high from $304k. It never went green (0.98x peak) and hit the -20% stop in 2 minutes, a -$2.86 probe. My own thesis admitted there was no printed higher low after a peak only 6 minutes old, so this confirms the money-shape rule: buy share and flow are not structure (V1, V6). Next time a MIGRATED pullback with no higher low above the hourly low is a PASS with blocker "no higher low", not a probe. This is one loss, so it adds no new ban beyond the rule I already have.
 
 ## Meta right now
-Not quiet. The movers are fresh pumpswap migrations with real buying, and three themes show up across several of them. First, playful brand-pun names with buyers in control (AMD 84% buys, CALLING 64%, RETIRE 64%, DEGEN 60%), all under about 1.3 hours old, so this is an early-hours meta that moves fast. Second, the 1h spikes (AMD +580%, YUM +559%, CALLING +244%) are backed by real 5m volume on AMD and CALLING but thin on DEGEN and RETIRE (about $5-8k against the $10k bar). Fading: self-referential joke names with zero buys or collapsing (Chika -99%, wank -94%, BLUE -46% and -63% with zero 5m buys), and GATO, a 72-day-old $11.9M coin outside the trench range. The crawler's animal and political reads (NVDA, Pibblemas, Trump, LAPTOP) are not confirmed by these movers, and its 5m figures for AMD, DEGEN and RETIRE don't match the scan, so I used scan numbers. Setups to research, none a buy yet: AMD (chase risk; wait for a pullback that holds volume, confirm it's the original, set initials at 2x and a stop before entry), CALLING (0.3h old, 35k 5m, 131k cap, the freshest real flow here; check copy vs original, holders, dev and bundles), and DEGEN or RETIRE only if 5m volume clears $10k. Paper only, not financial advice.
+The trenches are not quiet. The movers are fresh pumpswap and pumpfun launches, and the real flow sits on short, punny names with buyers in control. Bill (0.3h old, $47k cap, $31k 5m, 60% buys), the pumpswap "bracket" ($64k cap, $50k 5m, 59% buys, +41% 1h) and GS ($36k cap, 69% buys but only $2k 5m) show it, with CALLING ($118k cap, $19k 5m, only 52% buys) as the weaker version. Fading: copy and self-referential names are collapsing (callinu -82% 1h with 32% buys, DEGEN -50%, SolGalaxy -50%, inu with zero 5m volume), and the older coins (GATO at 72 days and $11.6M, GLITCH, COGE with $2.9k 5m) are outside the trench range. There are two "bracket" tickers; the pumpfun one at $8.5k (+137%) is copy risk until the original is confirmed. Setups to research, none a buy yet: Bill and the pumpswap bracket, with CALLING as a copy-vs-original check; the crawler's AMD, RETIRE, NVDA and Pibblemas reads don't appear in these movers and its figures for them don't match the scan, so I ignored them. Paper only.
 
 ## Moving most in its scans, last 30 min (1h volume)
 - CALLING: $524,009 1h vol, $117,548 mcap, +43% 1h  
   CA `5ve4fMHU4BsSgJvjF9NEMp5m9yNLqYkugPKbV7SZpump`
-- AMD: $241,033 1h vol, $536,679 mcap, +55% 1h  
-  CA `oCZHH8HnEBCPipEGdEcP3f45pQAaM7nh7P6EkRPpump`
-- Diamond: $210,409 1h vol, $301,753 mcap, -24% 1h  
-  CA `5VCEFq1aATjga39QtDunYjJqYBx67w8V8TXwHrqopump`
-- RETIRE: $85,921 1h vol, $133,677 mcap, +101% 1h  
-  CA `519AMDtBqCpVk8CTYCg2i9kJQH62ZSkT5Uvfn71Upump`
-- inu: $82,049 1h vol, $3,173 mcap, +5% 1h  
-  CA `GsF1MkhseL9caCBiV3MRxJQbnmYJr5FpUKGKQsa1pump`
+- Bill: $202,022 1h vol, $46,603 mcap, +25% 1h  
+  CA `6RDff7NwDJFX9zLg53RJNPsWpdfRs1xxDxivhL3Ypump`
+- LUNOX: $178,898 1h vol, $87,610 mcap, -36% 1h  
+  CA `GTTQWTy96Vr2NNqrUHjg854AYKKP51jQr2Fcies7pump`
+- callinu: $127,122 1h vol, $21,160 mcap, -82% 1h  
+  CA `fF44qzhsdUR5VQuQAHYxxt25iHCrKadWM3fABAApump`
+- GATO: $86,554 1h vol, $11,576,189 mcap, -1% 1h  
+  CA `HsprHxBRgiVaQdRf3TnKNuZZtaX9JUSPgMFdAkk6pump`
