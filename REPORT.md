@@ -1,13 +1,13 @@
 # Trencher live report
 
-Updated 2026-11-06T02:21:17Z (paper trading, never real money)
+Updated 2026-11-06T02:36:27Z (paper trading, never real money)
 
 - Equity: $74.23 (-25.8% vs $100 start)
 - Closed trades: 22, 3 wins
 - Fees paid: $14.78 (axiom $2.81, network $9.18, pool $2.66), plus $4.15 lost to slippage
 - New trades: WATCH-ONLY (scans and decides, buys nothing)
-- Brain: subscription, claude-haiku-5-5 for routine calls, claude-opus-5-5 for the daily review; 487 routine calls and 0 plan-limit hits in 48h
-- Watch log: 80 coins being followed, 1115 filed, 0 would-buys (6h follow, sampled every 2 min)
+- Brain: subscription, claude-haiku-5-5 for routine calls, claude-opus-5-5 for the daily review; 489 routine calls and 0 plan-limit hits in 48h
+- Watch log: 80 coins being followed, 1118 filed, 0 would-buys (6h follow, sampled every 2 min)
 
 ## Scorecard (after fees)
 - 22 closed, 3 won (14%), net $-25.79
@@ -73,9 +73,15 @@ Updated 2026-11-06T02:21:17Z (paper trading, never real money)
   CA `H4gHnZ3NCU7Z9XQwGX6YYJNyieGEW8pqwGRUcdSxpump`
 
 ## Last scan
-- 02:20Z: 1 coins, 1 with pairs, 0 passed the market filters, 0 researched
+- 02:35Z: 4 coins, 4 with pairs, 0 passed the market filters, 0 researched
 
 ## Coins it looked at, and why it passed
+- 02:29Z WABI (no setup, $28,522 mcap, $2,531 5m vol): REJECT, No setup fits: not Final Stretch, not a migrated runner, not a healthy dip  
+  CA `CMK5SEFQw3DDs6iGTBBAHeyQyMnBgtZvFnUp6tYwabi`
+- 02:25Z COGE (MIGRATED, $2,766,493 mcap, $9,917 5m vol): PASS at conviction 3, PASS. Blocker: target too close. The first resistance (the $3.41M peak) is only 1.23x from $2.77M, and 5m flow is at 0.89x pace. A DOGE-mayor joke coin on a 7-hour-old domain doesn't change that. (V1, V6)  
+  CA `8UQdy5sHMVWUWSHeA5B3ZuuAVNumjSLPXdf19MXcpump`
+- 02:21Z Bubbles (MIGRATED, $190,758 mcap, $3,323 5m vol): PASS at conviction 3, PASS: thin 5m flow ($3.3k, under the $10k gate), price falling 16% in 5m, and it's one of 16 copies on a cooling theme. Blocker: "flow below pace" plus "no breakout". (V1, V6, V13)  
+  CA `DNerJKigs1xZ5rCBDtU9a2ACxvskScMnSihWY9yYpump`
 - 02:17Z coin (DIP, $144,850 mcap, $7,788 5m vol): PASS at conviction 3, PASS: "coin" is a generic word with 4 copies in its field, no catalyst, and theme flow at 0.98x pace, under the 1x bottom-buy gate. Blocker: no catalyst / dead story. (V1, V6, V13)  
   CA `GdY4Z6pYUcr3HFrABV5FEZay3J4GnjN1Uzsw6Dvxpump`
 - 02:16Z three (MIGRATED, $793,709 mcap, $1,988 5m vol): REJECT, 5m volume $1,988 is dead (<$2,000) (V1)  
@@ -90,12 +96,6 @@ Updated 2026-11-06T02:21:17Z (paper trading, never real money)
   CA `HsprHxBRgiVaQdRf3TnKNuZZtaX9JUSPgMFdAkk6pump`
 - 01:43Z sssdfg (MIGRATED, $115,071 mcap, $8,864 5m vol): PASS at conviction 2, PASS: sssdfg is a keyboard-mash name with no story, 5m flow at 0.45x pace, and top 10 at 20.5%. A 71% drawdown from a $398k peak with a saw-tooth chart is a pump that already dumped, not a dip to buy (V1, V3, V13).  
   CA `BQjiYCutv9LVtbgj7pKCN2Ce6k2eUM5RSKs6kDAzpump`
-- 01:40Z COGE (MIGRATED, $3,274,679 mcap, $3,545 5m vol): PASS at conviction 2, PASS: chasing at $3.27M, 3.9% off the $3.41M high, with a $3.5k 5m and the first resistance 1.04x away. Blockers: "chasing", "target too close", "big cap, no room". (V1, V6)  
-  CA `8UQdy5sHMVWUWSHeA5B3ZuuAVNumjSLPXdf19MXcpump`
-- 01:39Z Chika (DIP, $42,985 mcap, $5,656 5m vol): REJECT, Dip with fading attention is a falling knife, not a dip (5m at 0.13x the hour's pace, under 0.6x)  
-  CA `9q17YrKCeBtSZ6qkBTmttyZnh5ZVEapF6TwTrtX2pump`
-- 01:37Z SHADOW (DIP, $52,074 mcap, $24,043 5m vol): REJECT, RugCheck danger: Creator history of rugged tokens  
-  CA `M1biEJsfuZBTmTjHRqziTASP51dUhjSHrB5rDjPpump`
 
 ## What its skips did next (last 48h)
 A skip "ran" if the coin reached the first target (1.5x) from the skip price before a 20% drop, "dumped" if the drop came first. Sampled every 10 min, followed 6h.
@@ -120,7 +120,7 @@ A skip "ran" if the coin reached the first target (1.5x) from the skip price bef
     CA `5w9ZP4hRRX73oPiFXKKVu3gNxY9qm8zJhYFN8SMApump`
   - ran: PILLHEADS up to 1.63x  
     CA `BFJd5mWCvu7yMivKCM7Xh8Dx17GgBbwaxcmFX3Aqpump`
-- near the high / chasing: blocked 37, ran 6, dumped 28, flat 1, open 2 (saving losses: keep it)
+- near the high / chasing: blocked 36, ran 5, dumped 28, flat 1, open 2 (saving losses: keep it)
   - ran: PayIF up to 1.56x  
     CA `FfuBMS3rh9M61apXJDs14yAngVnYLWR7xkcX5FxMpump`
   - ran: SAN up to 1.63x  
@@ -134,7 +134,7 @@ A skip "ran" if the coin reached the first target (1.5x) from the skip price bef
     CA `2UxjHoidyefQxJrCS8qT23JsbqKFcpPCa8ywBYZupump`
   - ran: ORBIE up to 1.83x  
     CA `HEb2dwDNbBhnrCusoNXXvba9MymYTTmMQcHKaptxmfun`
-- other: blocked 19, ran 6, dumped 10, flat 2, open 1 (mixed)
+- other: blocked 20, ran 6, dumped 10, flat 2, open 2 (mixed)
   - ran: DESSA up to 1.54x  
     CA `npz2FhoufQ7pKqhGpaipYWacrAkidyW2yDpVWSvpump`
   - ran: MACHKA up to 1.52x  
@@ -148,7 +148,7 @@ A skip "ran" if the coin reached the first target (1.5x) from the skip price bef
     CA `6gnB2H2hbTVvKUWCzNuqjWY8Rod6EVBmfHi7YxZpTWa7`
   - ran: TTPRO up to 1.71x  
     CA `FrSrp9P3bgiFHwr6h5PQHVh55iC8Dae4eZCKPUo9pump`
-- falling knife (code): blocked 18, ran 4, dumped 12, flat 1, open 1 (saving losses: keep it)
+- falling knife (code): blocked 18, ran 5, dumped 12, flat 1, open 0 (saving losses: keep it)
   - ran: DESSA up to 1.54x  
     CA `npz2FhoufQ7pKqhGpaipYWacrAkidyW2yDpVWSvpump`
   - ran: ORBIE up to 1.83x  
@@ -203,11 +203,11 @@ Not quiet, but the movers are mostly spikes that die. Fresh pump.fun and pumpswa
 ## Moving most in its scans, last 30 min (1h volume)
 - Chika: $175,075 1h vol, $114,204 mcap, +200% 1h  
   CA `Fyff8ZbT3omcwoqmAgLbXH25tzqQp1FoM4UYWtePpump`
-- DEGEN: $104,831 1h vol, $31,926 mcap, +81% 1h  
-  CA `Dk2iHPgeStfACECMbmigRRcDtP8yzfTjdHnMq7hqpump`
+- COGE: $131,588 1h vol, $2,691,693 mcap, -12% 1h  
+  CA `8UQdy5sHMVWUWSHeA5B3ZuuAVNumjSLPXdf19MXcpump`
 - coin: $95,936 1h vol, $135,561 mcap, -13% 1h  
   CA `GdY4Z6pYUcr3HFrABV5FEZay3J4GnjN1Uzsw6Dvxpump`
-- MooNoom: $57,321 1h vol, $8,174 mcap, +168% 1h  
-  CA `HTcoyKgotEjjWpVgbGnzsGgnqv34yo5nQms47fjCpump`
-- STARE: $56,168 1h vol, $2,159 mcap, -93% 1h  
-  CA `7wE17VifYPgK42xDjeqthzhje6D69ib8Dq2XfyFQpump`
+- GATO: $89,939 1h vol, $11,256,667 mcap, -3% 1h  
+  CA `HsprHxBRgiVaQdRf3TnKNuZZtaX9JUSPgMFdAkk6pump`
+- Chika: $70,460 1h vol, $6,935 mcap, -86% 1h  
+  CA `9q17YrKCeBtSZ6qkBTmttyZnh5ZVEapF6TwTrtX2pump`
