@@ -1,13 +1,13 @@
 # Trencher live report
 
-Updated 2026-11-06T02:06:06Z (paper trading, never real money)
+Updated 2026-11-06T02:21:17Z (paper trading, never real money)
 
 - Equity: $74.23 (-25.8% vs $100 start)
 - Closed trades: 22, 3 wins
 - Fees paid: $14.78 (axiom $2.81, network $9.18, pool $2.66), plus $4.15 lost to slippage
 - New trades: WATCH-ONLY (scans and decides, buys nothing)
-- Brain: subscription, claude-haiku-5-5 for routine calls, claude-opus-5-5 for the daily review; 490 routine calls and 0 plan-limit hits in 48h
-- Watch log: 81 coins being followed, 1111 filed, 0 would-buys (6h follow, sampled every 2 min)
+- Brain: subscription, claude-haiku-5-5 for routine calls, claude-opus-5-5 for the daily review; 487 routine calls and 0 plan-limit hits in 48h
+- Watch log: 80 coins being followed, 1115 filed, 0 would-buys (6h follow, sampled every 2 min)
 
 ## Scorecard (after fees)
 - 22 closed, 3 won (14%), net $-25.79
@@ -73,9 +73,15 @@ Updated 2026-11-06T02:06:06Z (paper trading, never real money)
   CA `H4gHnZ3NCU7Z9XQwGX6YYJNyieGEW8pqwGRUcdSxpump`
 
 ## Last scan
-- 02:05Z: 2 coins, 2 with pairs, 0 passed the market filters, 0 researched
+- 02:20Z: 1 coins, 1 with pairs, 0 passed the market filters, 0 researched
 
 ## Coins it looked at, and why it passed
+- 02:17Z coin (DIP, $144,850 mcap, $7,788 5m vol): PASS at conviction 3, PASS: "coin" is a generic word with 4 copies in its field, no catalyst, and theme flow at 0.98x pace, under the 1x bottom-buy gate. Blocker: no catalyst / dead story. (V1, V6, V13)  
+  CA `GdY4Z6pYUcr3HFrABV5FEZay3J4GnjN1Uzsw6Dvxpump`
+- 02:16Z three (MIGRATED, $793,709 mcap, $1,988 5m vol): REJECT, 5m volume $1,988 is dead (<$2,000) (V1)  
+  CA `FeMbDoX7R1Psc4GEcvJdsbNbZA3bfztcyDCatJVJpump`
+- 02:08Z Chika (MIGRATED, $114,204 mcap, $44,892 5m vol): REJECT, Bundles: 6 linked wallet cluster(s) hold 73.8% of supply (>20%) (V17)  
+  CA `Fyff8ZbT3omcwoqmAgLbXH25tzqQp1FoM4UYWtePpump`
 - 01:51Z DEGEN (FINAL_STRETCH, $32,010 mcap, $10,613 5m vol): REJECT, Top 10 hold 29.6% ex-pool (>25%) (V13)  
   CA `Dk2iHPgeStfACECMbmigRRcDtP8yzfTjdHnMq7hqpump`
 - 01:51Z LIBTARD (no setup, $28,730 mcap, $36,354 5m vol): REJECT, No setup fits: not Final Stretch, not a migrated runner, not a healthy dip  
@@ -90,37 +96,31 @@ Updated 2026-11-06T02:06:06Z (paper trading, never real money)
   CA `9q17YrKCeBtSZ6qkBTmttyZnh5ZVEapF6TwTrtX2pump`
 - 01:37Z SHADOW (DIP, $52,074 mcap, $24,043 5m vol): REJECT, RugCheck danger: Creator history of rugged tokens  
   CA `M1biEJsfuZBTmTjHRqziTASP51dUhjSHrB5rDjPpump`
-- 01:31Z coin (DIP, $124,753 mcap, $5,320 5m vol): REJECT, Dip with fading attention is a falling knife, not a dip (5m at 0.22x the hour's pace, under 0.6x)  
-  CA `GdY4Z6pYUcr3HFrABV5FEZay3J4GnjN1Uzsw6Dvxpump`
-- 01:30Z three (MIGRATED, $663,651 mcap, $2,660 5m vol): PASS at conviction 3, PASS: chasing the high at $664k with $2.7k 5m flow, a 9.7% single bundle, and an AI claim with no GitHub. Blocker: "chasing". (V1, V6, V13)  
-  CA `FeMbDoX7R1Psc4GEcvJdsbNbZA3bfztcyDCatJVJpump`
-- 01:25Z Bubbles (MIGRATED, $202,876 mcap, $2,023 5m vol): PASS at conviction 3, PASS: chasing. Bubbles is printing its all-time high at $203k with 0% drawdown, and 5m volume is $2k in a 16-copy ticker field. Blocker: "chasing" (V1, V6).  
-  CA `DNerJKigs1xZ5rCBDtU9a2ACxvskScMnSihWY9yYpump`
 
 ## What its skips did next (last 48h)
 A skip "ran" if the coin reached the first target (1.5x) from the skip price before a 20% drop, "dumped" if the drop came first. Sampled every 10 min, followed 6h.
-- top 10 over 25%: blocked 69, ran 12, dumped 52, flat 2, open 3 (saving losses: keep it)
+- top 10 over 25%: blocked 69, ran 13, dumped 52, flat 2, open 2 (saving losses: keep it)
   - ran: NEMO up to 1.6x  
     CA `5ja9qQuE5V9g5TVAFZVdtVQQqoThkAWxEKUaPcC5jN3F`
   - ran: Aren up to 1.75x  
     CA `HkyNkVXpJWg1H7hAWjnSW58J22Cx7gnWwUHhFtf5pump`
   - ran: SUPERBOWL up to 1.61x  
     CA `92j5cWKjdVKDC7skBw1HjvYtrTU8nMM1zKjC4dqmpump`
-- too new / sniping: blocked 47, ran 4, dumped 40, flat 3, open 0 (saving losses: keep it)
-  - ran: POLY up to 1.65x  
-    CA `DMgry6A9C6U6jopS7bAawukAvAcgpUvWfJULcbnfpump`
-  - ran: Doge up to 1.72x  
-    CA `9CRbVZxQshb9dMkh3yGvyARJRAHMGVuxiQRGhUsppump`
-  - ran: MOG up to 1.87x  
-    CA `5w9ZP4hRRX73oPiFXKKVu3gNxY9qm8zJhYFN8SMApump`
-- flow below pace: blocked 46, ran 9, dumped 28, flat 6, open 3 (saving losses: keep it)
+- flow below pace: blocked 46, ran 10, dumped 28, flat 5, open 3 (saving losses: keep it)
   - ran: Link up to 1.57x  
     CA `7kqWni27vRVCKjcuBAmAbs8t7PxXgxdEjUSyRfeFpump`
   - ran: CHICKPOT up to 1.55x  
     CA `8B6ZZAC2FQ7AJrZPz7veXJrod5t2MG1C5MZBLNbUpump`
   - ran: Donkey up to 1.57x  
     CA `G8Lf8uthQp5YHoswQZDRdeRxaWiUqnNFNoZ45y68pump`
-- near the high / chasing: blocked 37, ran 5, dumped 28, flat 1, open 3 (saving losses: keep it)
+- too new / sniping: blocked 45, ran 3, dumped 39, flat 3, open 0 (saving losses: keep it)
+  - ran: Doge up to 1.72x  
+    CA `9CRbVZxQshb9dMkh3yGvyARJRAHMGVuxiQRGhUsppump`
+  - ran: MOG up to 1.87x  
+    CA `5w9ZP4hRRX73oPiFXKKVu3gNxY9qm8zJhYFN8SMApump`
+  - ran: PILLHEADS up to 1.63x  
+    CA `BFJd5mWCvu7yMivKCM7Xh8Dx17GgBbwaxcmFX3Aqpump`
+- near the high / chasing: blocked 37, ran 6, dumped 28, flat 1, open 2 (saving losses: keep it)
   - ran: PayIF up to 1.56x  
     CA `FfuBMS3rh9M61apXJDs14yAngVnYLWR7xkcX5FxMpump`
   - ran: SAN up to 1.63x  
@@ -141,6 +141,13 @@ A skip "ran" if the coin reached the first target (1.5x) from the skip price bef
     CA `CG1DmSiMXw9WjQXCzP5JDnma5BDY3Cks9bRTdXNLpump`
   - ran: BLOOM up to 1.74x  
     CA `ExdQxJcXzNzhW6CC9phvoEVpKvJQJyg98CE228Uxpump`
+- thin 5m volume: blocked 19, ran 3, dumped 9, flat 4, open 3 (saving losses: keep it)
+  - ran: DESSA up to 1.54x  
+    CA `npz2FhoufQ7pKqhGpaipYWacrAkidyW2yDpVWSvpump`
+  - ran: MEOWNERO up to 1.76x  
+    CA `6gnB2H2hbTVvKUWCzNuqjWY8Rod6EVBmfHi7YxZpTWa7`
+  - ran: TTPRO up to 1.71x  
+    CA `FrSrp9P3bgiFHwr6h5PQHVh55iC8Dae4eZCKPUo9pump`
 - falling knife (code): blocked 18, ran 4, dumped 12, flat 1, open 1 (saving losses: keep it)
   - ran: DESSA up to 1.54x  
     CA `npz2FhoufQ7pKqhGpaipYWacrAkidyW2yDpVWSvpump`
@@ -148,14 +155,7 @@ A skip "ran" if the coin reached the first target (1.5x) from the skip price bef
     CA `HEb2dwDNbBhnrCusoNXXvba9MymYTTmMQcHKaptxmfun`
   - ran: inu up to 1.5x  
     CA `Bid8i1ocWssjRmKh2kcUfHxD1K6Sk7E5pV2PSVdepump`
-- thin 5m volume: blocked 18, ran 3, dumped 9, flat 4, open 2 (saving losses: keep it)
-  - ran: DESSA up to 1.54x  
-    CA `npz2FhoufQ7pKqhGpaipYWacrAkidyW2yDpVWSvpump`
-  - ran: MEOWNERO up to 1.76x  
-    CA `6gnB2H2hbTVvKUWCzNuqjWY8Rod6EVBmfHi7YxZpTWa7`
-  - ran: TTPRO up to 1.71x  
-    CA `FrSrp9P3bgiFHwr6h5PQHVh55iC8Dae4eZCKPUo9pump`
-- bundles over the line: blocked 17, ran 1, dumped 14, flat 2, open 0 (saving losses: keep it)
+- bundles over the line: blocked 18, ran 1, dumped 14, flat 2, open 1 (saving losses: keep it)
   - ran: dump up to 1.72x  
     CA `Bu3h78FY2fsWVZ1MdyQVpFTvv5XsRotWX6VjszQTpump`
 - dev share over 1%: blocked 15, ran 1, dumped 10, flat 3, open 1 (saving losses: keep it)
@@ -201,13 +201,13 @@ Nothing has a positive edge after costs yet. All 359 settled coins averaged -10.
 Not quiet, but the movers are mostly spikes that die. Fresh pump.fun and pumpswap copies with joke, mascot and generic names ("1000 Yard Stare" -81% in 1h, "Black Bear" -91%, GATO as a 72-day-old $11M token outside the trench range) are fading, and the animal and joke-name theme is cooling. The only fresh name with real money and rising price is SHADOW "THE BAGWORKER" ($51.5k cap, $20k 5m, 71% buys, +39% 1h, 0.2h old), which fits the MIGRATED screen (age under 12h, cap over $30k, 5m over $10k). It's a research candidate, not a buy: check whether it's the original or a copy, then holders, dev and bundles, and set initials at 2x and a stop before any entry, since +39% in an hour is chase risk. The crawler's "coin" (GdY4...) numbers conflict with the scan: the scan shows $127.5k cap, $5.7k 5m and -39% in 1h, not the +186% rise the crawler reported, so I'm treating the crawler figures as unverified and that coin as fading. Bubbles ($203k, 87% buys) has thin 5m volume ($2k), so it's watch-only. Paper only, not financial advice.
 
 ## Moving most in its scans, last 30 min (1h volume)
-- Chika: $528,092 1h vol, $42,985 mcap, +18% 1h  
-  CA `9q17YrKCeBtSZ6qkBTmttyZnh5ZVEapF6TwTrtX2pump`
-- sssdfg: $235,371 1h vol, $121,518 mcap, -10% 1h  
-  CA `BQjiYCutv9LVtbgj7pKCN2Ce6k2eUM5RSKs6kDAzpump`
-- GATO: $166,791 1h vol, $10,970,744 mcap, -11% 1h  
-  CA `HsprHxBRgiVaQdRf3TnKNuZZtaX9JUSPgMFdAkk6pump`
-- SHADOW: $159,289 1h vol, $51,550 mcap, +39% 1h  
-  CA `M1biEJsfuZBTmTjHRqziTASP51dUhjSHrB5rDjPpump`
+- Chika: $175,075 1h vol, $114,204 mcap, +200% 1h  
+  CA `Fyff8ZbT3omcwoqmAgLbXH25tzqQp1FoM4UYWtePpump`
 - DEGEN: $104,831 1h vol, $31,926 mcap, +81% 1h  
   CA `Dk2iHPgeStfACECMbmigRRcDtP8yzfTjdHnMq7hqpump`
+- coin: $95,936 1h vol, $135,561 mcap, -13% 1h  
+  CA `GdY4Z6pYUcr3HFrABV5FEZay3J4GnjN1Uzsw6Dvxpump`
+- MooNoom: $57,321 1h vol, $8,174 mcap, +168% 1h  
+  CA `HTcoyKgotEjjWpVgbGnzsGgnqv34yo5nQms47fjCpump`
+- STARE: $56,168 1h vol, $2,159 mcap, -93% 1h  
+  CA `7wE17VifYPgK42xDjeqthzhje6D69ib8Dq2XfyFQpump`
