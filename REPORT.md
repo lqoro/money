@@ -1,13 +1,13 @@
 # Trencher live report
 
-Updated 2026-11-06T07:42:15Z (paper trading, never real money)
+Updated 2026-11-06T07:57:08Z (paper trading, never real money)
 
 - Equity: $74.23 (-25.8% vs $100 start)
 - Closed trades: 22, 3 wins
 - Fees paid: $14.78 (axiom $2.81, network $9.18, pool $2.66), plus $4.15 lost to slippage
 - New trades: WATCH-ONLY (scans and decides, buys nothing)
 - Brain: subscription, claude-haiku-5-5 for routine calls, claude-opus-5-5 for the daily review; 484 routine calls and 0 plan-limit hits in 48h
-- Watch log: 90 coins being followed, 1188 filed, 0 would-buys (6h follow, sampled every 2 min)
+- Watch log: 90 coins being followed, 1192 filed, 0 would-buys (6h follow, sampled every 2 min)
 
 ## Scorecard (after fees)
 - 22 closed, 3 won (14%), net $-25.79
@@ -73,9 +73,17 @@ Updated 2026-11-06T07:42:15Z (paper trading, never real money)
   CA `H4gHnZ3NCU7Z9XQwGX6YYJNyieGEW8pqwGRUcdSxpump`
 
 ## Last scan
-- 07:41Z: 2 coins, 1 with pairs, 0 passed the market filters, 0 researched
+- 07:56Z: 2 coins, 2 with pairs, 0 passed the market filters, 0 researched
 
 ## Coins it looked at, and why it passed
+- 07:55Z Bill (DIP, $68,368 mcap, $6,717 5m vol): PASS at conviction 3, PASS: Bill is a dead-story DIP with no catalyst, no printed higher low, and a jagged saw-tooth chart. Blocker "no catalyst". (V1, V3, V13)  
+  CA `6RDff7NwDJFX9zLg53RJNPsWpdfRs1xxDxivhL3Ypump`
+- 07:53Z COGE (MIGRATED, $2,831,896 mcap, $4,061 5m vol): PASS at conviction 3, PASS — first resistance is only 1.14x away ($3.25M prior high) and the coin is above $1M with no room. Blocker: "target too close". COGE is also a thin-flow DOGE-rebrand meme with a site that doesn't show the CA. (V1, V6, V3)  
+  CA `8UQdy5sHMVWUWSHeA5B3ZuuAVNumjSLPXdf19MXcpump`
+- 07:50Z RETIRE (DIP, $162,365 mcap, $1,779 5m vol): REJECT, 5m volume $1,779 is dead (<$2,000) (V1)  
+  CA `519AMDtBqCpVk8CTYCg2i9kJQH62ZSkT5Uvfn71Upump`
+- 07:48Z RM (MIGRATED, $240,436 mcap, $159,309 5m vol): PASS at conviction 3, PASS: chasing spike, too new, split crowd. Red morning is up 48% in 5m and 560% in an hour, 46 min old, one of 11 same-word copies with a 4.3% bundle cluster. Wait for a printed higher low. (V1, V6, V13)  
+  CA `EW1b9rcLAJe634mgxb5r4bVYxDoGU37o7YazBzjTpump`
 - 07:39Z RED (MIGRATED, $31,438 mcap, $7,453 5m vol): REJECT, RugCheck danger: Creator history of rugged tokens  
   CA `HuqKMcaEojnp4qRReE1dr5ed5TQhhMcjEn6wskRppump`
 - 07:35Z GLITCH (MIGRATED, $3,438,159 mcap, $2,828 5m vol): REJECT, Top 10 hold 28.1% ex-pool (>25%) (V13)  
@@ -88,18 +96,10 @@ Updated 2026-11-06T07:42:15Z (paper trading, never real money)
   CA `oCZHH8HnEBCPipEGdEcP3f45pQAaM7nh7P6EkRPpump`
 - 07:13Z fun (MIGRATED, $212,848 mcap, $11,980 5m vol): REJECT, Top 10 hold 25.2% ex-pool (>25%) (V13)  
   CA `5BWHo2duxhkRR4ftnZWErnB8GoXpFgZ4ZR9UN8LDpump`
-- 07:11Z Bill (DIP, $69,611 mcap, $5,160 5m vol): PASS at conviction 2, PASS. Bill is a same-name copy in a 7-coin "bill" field, with no catalyst and no higher low. It's already under its hourly low. (V6, V1)  
-  CA `6RDff7NwDJFX9zLg53RJNPsWpdfRs1xxDxivhL3Ypump`
-- 07:08Z COGE (MIGRATED, $2,682,980 mcap, $3,267 5m vol): PASS at conviction 3, PASS: flow below pace. COGE is clean on holders and bundles, but 5m is $3.3k at 0.67x its hourly pace and the coin is $2.7M, above the $1M probe ceiling. (V1, V6)  
-  CA `8UQdy5sHMVWUWSHeA5B3ZuuAVNumjSLPXdf19MXcpump`
-- 07:05Z TrollGiving (no setup, $14,129 mcap, $12,949 5m vol): REJECT, No setup fits: not Final Stretch, not a migrated runner, not a healthy dip  
-  CA `AHQKMSVEStWZNNgReBt8cck5fT8sBdo9ZFyo2m7cpump`
-- 07:05Z bracket (DIP, $155,985 mcap, $16,001 5m vol): PASS at conviction 3, PASS: bracket is an 11-copy same-ticker field with a 6% bundle cluster on the leader, no live narrative, and no catalyst. Split crowd. (V1, V3, V13)  
-  CA `EFWotn2UtV2c5QXMMHbSzmyrkU7wnfj7VpkNQGr1wk1z`
 
 ## What its skips did next (last 48h)
 A skip "ran" if the coin reached the first target (1.5x) from the skip price before a 20% drop, "dumped" if the drop came first. Sampled every 10 min, followed 6h.
-- top 10 over 25%: blocked 72, ran 12, dumped 55, flat 3, open 2 (saving losses: keep it)
+- top 10 over 25%: blocked 71, ran 12, dumped 54, flat 3, open 2 (saving losses: keep it)
   - ran: NEMO up to 1.6x  
     CA `5ja9qQuE5V9g5TVAFZVdtVQQqoThkAWxEKUaPcC5jN3F`
   - ran: Aren up to 1.75x  
@@ -113,7 +113,7 @@ A skip "ran" if the coin reached the first target (1.5x) from the skip price bef
     CA `9VHCDisE9pybDt5eCuKv1AyddCx8gksuxpoWi6vjpump`
   - ran: LEEROY up to 1.55x  
     CA `98HEU4TvXB3xjB1t15fgxHwYDLUH4fDomvp2DCzJpump`
-- too new / sniping: blocked 42, ran 3, dumped 36, flat 3, open 0 (saving losses: keep it)
+- too new / sniping: blocked 42, ran 3, dumped 35, flat 3, open 1 (saving losses: keep it)
   - ran: Doge up to 1.72x  
     CA `9CRbVZxQshb9dMkh3yGvyARJRAHMGVuxiQRGhUsppump`
   - ran: MOG up to 1.87x  
@@ -127,14 +127,14 @@ A skip "ran" if the coin reached the first target (1.5x) from the skip price bef
     CA `8kfp8MzuFuj3vrnmG3KBcYVctYmu2JYerdFhPnX4pump`
   - ran: SOLUNA up to 2.13x  
     CA `3brY153eRNKLxUY3zfBYW9LvarfHUFhgSW66tbQupump`
-- RugCheck danger: blocked 31, ran 9, dumped 19, flat 1, open 2 (saving losses: keep it)
-  - ran: RAM up to 1.63x  
-    CA `72QNkZqiTBsq5dvn4DEwaC5qBPDkc7SZJ38xXy4jpump`
+- RugCheck danger: blocked 30, ran 9, dumped 20, flat 1, open 0 (saving losses: keep it)
   - ran: $LIBCOIN up to 1.54x  
     CA `2UxjHoidyefQxJrCS8qT23JsbqKFcpPCa8ywBYZupump`
   - ran: ORBIE up to 1.83x  
     CA `HEb2dwDNbBhnrCusoNXXvba9MymYTTmMQcHKaptxmfun`
-- falling knife (code): blocked 19, ran 5, dumped 13, flat 1, open 0 (saving losses: keep it)
+  - ran: ABTC up to 1.62x  
+    CA `ERs7y4nMGLFVmHcXyDxiS7iDKpp4jWHz2VUuE2gxpump`
+- falling knife (code): blocked 18, ran 5, dumped 12, flat 1, open 0 (saving losses: keep it)
   - ran: DESSA up to 1.54x  
     CA `npz2FhoufQ7pKqhGpaipYWacrAkidyW2yDpVWSvpump`
   - ran: ORBIE up to 1.83x  
@@ -148,7 +148,12 @@ A skip "ran" if the coin reached the first target (1.5x) from the skip price bef
     CA `2f95ogiEqQjDgWV74ksPx68i83yHLUbzDv92be4Rpump`
   - ran: ACTII up to 2x  
     CA `BGUc7b8p54HCtr3AhSjvd88dSNwHtCpo57KWY2oWpump`
-- bundles over the line: blocked 16, ran 3, dumped 12, flat 1, open 0 (saving losses: keep it)
+- thin 5m volume: blocked 15, ran 2, dumped 6, flat 5, open 2 (saving losses: keep it)
+  - ran: DESSA up to 1.54x  
+    CA `npz2FhoufQ7pKqhGpaipYWacrAkidyW2yDpVWSvpump`
+  - ran: MEOWNERO up to 1.76x  
+    CA `6gnB2H2hbTVvKUWCzNuqjWY8Rod6EVBmfHi7YxZpTWa7`
+- bundles over the line: blocked 15, ran 3, dumped 11, flat 1, open 0 (saving losses: keep it)
   - ran: dump up to 1.72x  
     CA `Bu3h78FY2fsWVZ1MdyQVpFTvv5XsRotWX6VjszQTpump`
   - ran: Chika up to 1.68x  
@@ -158,11 +163,6 @@ A skip "ran" if the coin reached the first target (1.5x) from the skip price bef
 - dev share over 1%: blocked 14, ran 1, dumped 10, flat 2, open 1 (saving losses: keep it)
   - ran: Leonida up to 2.03x  
     CA `BWJfBNeXpapG7uoqByp5KSwWgCQba8QcDmA2DQiEpump`
-- thin 5m volume: blocked 13, ran 2, dumped 6, flat 5, open 0 (saving losses: keep it)
-  - ran: DESSA up to 1.54x  
-    CA `npz2FhoufQ7pKqhGpaipYWacrAkidyW2yDpVWSvpump`
-  - ran: MEOWNERO up to 1.76x  
-    CA `6gnB2H2hbTVvKUWCzNuqjWY8Rod6EVBmfHi7YxZpTWa7`
 
 ## Daily review (2026-11-05, claude-opus-5-5)
 Nothing has a positive edge after costs yet. All 359 settled coins averaged -10.2% net on the simple plan. Before costs that is about +0.4%, so the round-trip cost on a $10 buy (10.6% on average) accounts for the entire loss, the same story as the 22 real trades. FINAL_STRETCH comes closest: about +5.9% before costs, -5.1% after (n=46). At this sample size that is roughly one standard error from zero, from a single day's market, so it is noise until the full week says otherwise. I can't say whether the routine model's would-buys beat its passes, because it made zero would-buys out of 217 decisions. The coins it passed on averaged -11.2% net, the coins that failed the checklist -8.7%, and that gap is also noise.
@@ -203,13 +203,13 @@ Nothing has a positive edge after costs yet. All 359 settled coins averaged -10.
 The trenches are active, not quiet: Fun and BP each show over $16k of 5-minute volume, and both launched in the last few hours on pump.fun or PumpSwap. Three themes show up in the scan. First, fresh short plain-word launch names (Fun, BP, stockloan, NWO, Joe, GIRL) under about 2h old, where 1h volume is far larger than market cap. Second, the dog-style "inu" names (inu, Sunlight Inu) plus GIRL and Joe are the dead tail of that same wave: big 1h volume, near-zero 5m volume and 0-22% buys, so it's fading. Third, 4-hour-old PumpSwap coins (RETIRE, AMD) still get buyers, though AMD's 38% buy ratio says sellers are leading now. Setups to research, not buys yet: BP ($32k cap, $16k 5m, 52% buys, but down 25% in the hour, so it needs to reclaim before it's interesting) and RETIRE ($228k cap, 68% buys, but only $4k 5m, under the $10k bar). Fun is pump.fun pre-bond at $11k cap with 39% buys after +241% in an hour; that's a peak-risk chase, so I'd pass unless buyers flip back above 50%. I'm ignoring the crawler's Bill and Bracket figures because they don't match the scan, and Bracket's 0% buys and $1 of 5m volume make it a pass anyway. The Trump, midterm and referral headlines are not what's trading here (paper only, not advice).
 
 ## Moving most in its scans, last 30 min (1h volume)
-- fun: $394,740 1h vol, $208,989 mcap, +102% 1h  
-  CA `5BWHo2duxhkRR4ftnZWErnB8GoXpFgZ4ZR9UN8LDpump`
-- AMD: $121,413 1h vol, $1,796,835 mcap, -10% 1h  
-  CA `oCZHH8HnEBCPipEGdEcP3f45pQAaM7nh7P6EkRPpump`
-- Fun: $119,584 1h vol, $3,041 mcap, -5% 1h  
-  CA `G1dPxV39DGrnAxxr3DPHoZpJRqamdpQPNtPiieKGpump`
+- RM: $1,097,742 1h vol, $240,436 mcap, +560% 1h  
+  CA `EW1b9rcLAJe634mgxb5r4bVYxDoGU37o7YazBzjTpump`
+- bracket: $100,601 1h vol, $121,765 mcap, -44% 1h  
+  CA `EFWotn2UtV2c5QXMMHbSzmyrkU7wnfj7VpkNQGr1wk1z`
+- TrollGiving: $81,732 1h vol, $2,746 mcap, -10% 1h  
+  CA `AHQKMSVEStWZNNgReBt8cck5fT8sBdo9ZFyo2m7cpump`
 - MarsCoin: $74,372 1h vol, $19,425 mcap, +362% 1h  
   CA `9tq9beEgem9zudg9BZshdhcT1nf9N8iUUkmcsRX6FJWu`
-- BP: $52,894 1h vol, $16,419 mcap, -59% 1h  
-  CA `GNNhU2SEArd5RGN49Yjo4YHTipRA3E5gMJeUPE4Gpump`
+- COGE: $45,453 1h vol, $2,827,863 mcap, +7% 1h  
+  CA `8UQdy5sHMVWUWSHeA5B3ZuuAVNumjSLPXdf19MXcpump`
