@@ -1,13 +1,13 @@
 # Trencher live report
 
-Updated 2026-11-14T23:32:23Z (paper trading, never real money)
+Updated 2026-11-14T23:47:32Z (paper trading, never real money)
 
 - Equity: $74.23 (-25.8% vs $100 start)
 - Closed trades: 22, 3 wins
 - Fees paid: $14.78 (axiom $2.81, network $9.18, pool $2.66), plus $4.15 lost to slippage
 - New trades: WATCH-ONLY (scans and decides, buys nothing)
-- Brain: subscription, claude-haiku-5-5 for routine calls, claude-opus-5-5 for the daily review; 0 routine calls and 0 plan-limit hits in 48h
-- Watch log: 90 coins being followed, 1192 filed, 0 would-buys (6h follow, sampled every 2 min)
+- Brain: subscription, claude-haiku-5-5 for routine calls, claude-opus-5-5 for the daily review; 1 routine calls and 0 plan-limit hits in 48h
+- Watch log: 5 coins being followed, 1282 filed, 0 would-buys (6h follow, sampled every 2 min)
 
 ## Scorecard (after fees)
 - 22 closed, 3 won (14%), net $-25.79
@@ -73,27 +73,41 @@ Updated 2026-11-14T23:32:23Z (paper trading, never real money)
   CA `H4gHnZ3NCU7Z9XQwGX6YYJNyieGEW8pqwGRUcdSxpump`
 
 ## Last scan
-- no scan yet since the last restart
+- 23:46Z: 46 coins, 46 with pairs, 0 passed the market filters, 0 researched
 
 ## Coins it looked at, and why it passed
-- none since the last restart
+- 23:36Z GATO (DIP, $6,893,725 mcap, $2,415 5m vol): REJECT, Dev holds 3.0% (>1%) (V13, V17)  
+  CA `HsprHxBRgiVaQdRf3TnKNuZZtaX9JUSPgMFdAkk6pump`
+- 23:36Z JOB (MIGRATED, $46,157 mcap, $2,765 5m vol): REJECT, Top 10 hold 31.0% ex-pool (>25%) (V13)  
+  CA `7rBatsxwXiMLcz2PJjh8G45wZfHNHd4dvtBUMwsepump`
+- 23:36Z J*B (DIP, $64,403 mcap, $6,432 5m vol): REJECT, Dip with fading attention is a falling knife, not a dip (5m at 0.55x the hour's pace, under 0.6x)  
+  CA `3Kf7Jxy1dB5TH56qFkC6XUW9S3qtMZQJzuUPzbdMpump`
+- 23:36Z SWIF (MIGRATED, $146,234 mcap, $13,289 5m vol): REJECT, Top 10 hold 28.4% ex-pool (>25%) (V13)  
+  CA `Hi6qQHwHBnx9uaxT3KyBxaHaUn4JTAG6ijygQbiopump`
+- 23:36Z Bear (MIGRATED, $35,957 mcap, $27,741 5m vol): REJECT, RugCheck danger: Creator history of rugged tokens  
+  CA `AvRSpY1rPA9iVFxYHc5D5JQW6oU5tjGQZdsW2e5upump`
 
 ## What its skips did next (last 48h)
 A skip "ran" if the coin reached the first target (1.5x) from the skip price before a 20% drop, "dumped" if the drop came first. Sampled every 10 min, followed 6h.
-- nothing followed yet since the last restart
+- top 10 over 25%: blocked 2, ran 0, dumped 2, flat 0, open 0 (too few played out to judge)
+- dev share over 1%: blocked 1, ran 0, dumped 0, flat 0, open 1 (too few played out to judge)
+- RugCheck danger: blocked 1, ran 1, dumped 0, flat 0, open 0 (too few played out to judge)
+  - ran: Bear up to 1.82x  
+    CA `AvRSpY1rPA9iVFxYHc5D5JQW6oU5tjGQZdsW2e5upump`
+- falling knife (code): blocked 1, ran 0, dumped 0, flat 0, open 1 (too few played out to judge)
 
-## Daily review (2026-11-05, claude-opus-5-5)
-Nothing has a positive edge after costs yet. All 359 settled coins averaged -10.2% net on the simple plan. Before costs that is about +0.4%, so the round-trip cost on a $10 buy (10.6% on average) accounts for the entire loss, the same story as the 22 real trades. FINAL_STRETCH comes closest: about +5.9% before costs, -5.1% after (n=46). At this sample size that is roughly one standard error from zero, from a single day's market, so it is noise until the full week says otherwise. I can't say whether the routine model's would-buys beat its passes, because it made zero would-buys out of 217 decisions. The coins it passed on averaged -11.2% net, the coins that failed the checklist -8.7%, and that gap is also noise.
-- finding: Costs decide everything. Average round-trip cost is 10.6% at $10 size. Before costs: all coins +0.4%, MIGRATED about -1.9%, DIP about +5.3%, FINAL_STRETCH about +5.9%. With the 1.5x / -20% plan, ignoring flat outcomes, a coin needs to hit 1.5x first about 44% of the time just to break even after 10.6% cost. No setup gets there (best is 37%).
-- finding: FINAL_STRETCH (n=46): 37.0% hit 1.5x first, 63.0% hit the stop, median peak 1.54x, 39.1% touched 2x, net -5.1%. Over half of these coins peaked at 1.54x or more, yet only 37% reached 1.5x before -20%. Most of them shake out hard before moving, which fits the pre-bond dump in V1. Before costs: 0.37×50 − 0.63×20 = +5.9%, which matches the logged net once 11% cost is taken off.
-- finding: MIGRATED (n=252, 70% of the sample) is the worst bucket: 20.2% ran, 61.1% dumped, median peak 1.22x, 13.5% touched 2x, net -12.4%. It loses even before costs (about -1.9%), so most of the day's sample is negative-expectancy coins.
-- finding: DIP (n=61): 24.6% ran, 50.8% dumped (the lowest dump rate), net -5.2%. Only 4.9% touched 2x. Dips drift and rarely run, so on this data the 'let the runner run' idea has almost no tail to ride here. About +5.3% before costs, with a lot of it from coins that ended flat rather than from 1.5x exits.
-- finding: Checklist vs model: coins that failed the checklist (n=142) ran 25.4% and netted -8.7%. Coins the model passed on (n=217) ran 21.7% and netted -11.2%. The soft parts of the filter are not separating winners from losers on this data.
-- idea to test: Cost gate: only consider coins whose estimated round-trip cost is at most 5%. First break net% down by cost bucket (<5%, 5-10%, >10%) and by buy size ($10 / $25 / $50). If most of the cost is fixed (priority fee, account rent), size matters more than coin selection. Any bigger size still has to fit the conviction risk budget.
-- idea to test: FINAL_STRETCH with a clean checklist (no hard-line or soft fails) and 5m volume ≥ $10k (V1). Report n, share that ran, before-cost and after-cost net. Only adopt it if after-cost net is above zero with n ≥ 150 over the week.
-- idea to test: FINAL_STRETCH with mcap ≥ 85% of the bond estimate vs below that. Tests whether the edge is concentrated right at bond. Beware: the runners were picked after the fact.
-- idea to test: Exit variant for FINAL_STRETCH only: stop at -30% vs -20%, with the target at 1.5x and also tried at 2x. Check that the gain shows up in both halves of the week (Nov 3-6 vs Nov 7-10) before trusting it. Don't tune on a single day.
-- idea to test: MIGRATED limited to the V6 range (mcap $70k-$11M) AND 5m volume ≥ $10k AND buy ratio ≥ 0.55 AND flow ratio (5m vs hourly pace) ≥ 1.0. If no subset beats costs on the week's data, turn MIGRATED off rather than tuning it.
+## Daily review (2026-11-14, claude-opus-5-5)
+This window has no evidence in it. In 24 hours zero coins were logged at any stage: none failed the checklist, none were passed by the brain, none were would-buys and none went unresearched. Nothing settled, nothing is still being followed, and the brain was called once in 48 hours. With n=0, nobody can say anything about an after-cost edge, and the question of whether the routine model's would-buys beat the coins it passed on has no data to answer. The only real finding is that the pipeline looks stalled. A scanner running around the clock should pass at least a handful of coins through the market filters every day. It's also Nov 14, four days after the planned Nov 10 test, so it's worth confirming the watch-only week was captured and archived before anyone talks about edge.
+- finding: Every stage has n=0 in the last 24 hours: checklist_failed, brain_passed, would_buy and not_researched. There is no share that ran and no net % to report.
+- finding: No coins settled and none are still being followed, so the 6-hour price tracking has nothing to grade.
+- finding: skips_48h is empty and top_runners is empty, so there's no record of passed coins running either. You can't tell whether a rule cost us anything.
+- finding: The brain made 1 call in 48 hours with 0 plan-limit hits, 0 candidates skipped for lack of a brain and 0 stop reviews without a brain. The usage cap isn't the bottleneck. Too few candidates are reaching the brain at all.
+- finding: Cost context from before the pause: 22 trades lost $25.79, and fees plus slippage were $18.83 of that (73%). Fees alone, not bad picks, were most of the loss. Any rule tested later has to clear that cost first.
+- idea to test: These come from the guide and from the cost math, not from this window, which has no data. Test them on the full archived Nov 3–10 week only, and require n≥30 per group before believing a net % number.
+- idea to test: Cost gate: skip the coin if the estimated round-trip cost for a $10 buy on its pool is above about 4%. Test whether coins with lower costs have a positive net_pct under the simple plan while the rest don't. Fees were 73% of the past loss.
+- idea to test: Volume floor: setup=MIGRATED or FINAL_STRETCH and 5m volume ≥ $10k (V1, V6, V13). Compare against $2k–$10k. A small difference in net % after costs means the bar isn't earning its keep.
+- idea to test: Flow quality: buy ratio ≥ 0.55 and a flow ratio that shows 5m volume at or above its 1h pace. Check whether this separates coins that hit 1.5x from coins that hit -20% first.
+- idea to test: DIP setup: drawdown from the recent high between 40% and 55%, versus 55% to 70%, both with 5m volume ≥ $10k. This tests the house rule that a 70% dip is still buyable against the falling-knife cases.
 
 ## Rules it changed from results and skips
 - 11-02 23:38Z tightened: DIP gate: flow at least 0.7x the hourly pace plus a printed higher low (DIPs 0 for 5 (-$6.70), every one bought before the higher low held (HEXN x2, SIS, Something, Leverhedge). The code line is now aligned to the owner's 0.7x.)
@@ -118,16 +132,16 @@ Nothing has a positive edge after costs yet. All 359 settled coins averaged -10.
 - [2026-11-02 20:25] I expected Slingoor, a clean MIGRATED leader with $25k of 5m flow at pace and a 0.77 buy share, to retest its $408k high from $304k. It never went green (0.98x peak) and hit the -20% stop in 2 minutes, a -$2.86 probe. My own thesis admitted there was no printed higher low after a peak only 6 minutes old, so this confirms the money-shape rule: buy share and flow are not structure (V1, V6). Next time a MIGRATED pullback with no higher low above the hourly low is a PASS with blocker "no higher low", not a probe. This is one loss, so it adds no new ban beyond the rule I already have.
 
 ## Meta right now
-The trenches are active, not quiet: Fun and BP each show over $16k of 5-minute volume, and both launched in the last few hours on pump.fun or PumpSwap. Three themes show up in the scan. First, fresh short plain-word launch names (Fun, BP, stockloan, NWO, Joe, GIRL) under about 2h old, where 1h volume is far larger than market cap. Second, the dog-style "inu" names (inu, Sunlight Inu) plus GIRL and Joe are the dead tail of that same wave: big 1h volume, near-zero 5m volume and 0-22% buys, so it's fading. Third, 4-hour-old PumpSwap coins (RETIRE, AMD) still get buyers, though AMD's 38% buy ratio says sellers are leading now. Setups to research, not buys yet: BP ($32k cap, $16k 5m, 52% buys, but down 25% in the hour, so it needs to reclaim before it's interesting) and RETIRE ($228k cap, 68% buys, but only $4k 5m, under the $10k bar). Fun is pump.fun pre-bond at $11k cap with 39% buys after +241% in an hour; that's a peak-risk chase, so I'd pass unless buyers flip back above 50%. I'm ignoring the crawler's Bill and Bracket figures because they don't match the scan, and Bracket's 0% buys and $1 of 5m volume make it a pass anyway. The Trump, midterm and referral headlines are not what's trading here (paper only, not advice).
+The trenches are active, not quiet: most of the 5-minute volume in scan_movers sits in pump.fun and PumpSwap coins under about 1h old. Two themes are rising. The first is pump.fun self-referential names ("The Pump Fun Star", "I Will Pump It So Hard"), though the STAR and Fun coins have mostly stopped trading. The second is red and pill color names: "red morning" (RM) is the big mover at a $240k cap, $159k 5m volume, 53% buys and +560% in the hour, and "RED COIN" has $10k 5m at 59% buys. Fading: Fun's 5m volume is $64, BP is down 74% with 46% buys, and Bubbles has 7% buys. Setups to research, not buys yet: MarsCoin ($19k cap, $25k 5m, 63% buys, pump.fun) and RED COIN; RM only if it holds after the run, since chase risk is high. The crawler's figures for Fun, BP and RETIRE don't match the scan, so I'm using the scan numbers. Holder, dev and bundle checks still have to run on each coin before any buy (paper only, not advice).
 
 ## Moving most in its scans, last 30 min (1h volume)
-- RM: $1,097,742 1h vol, $240,436 mcap, +560% 1h  
-  CA `EW1b9rcLAJe634mgxb5r4bVYxDoGU37o7YazBzjTpump`
-- Fun: $119,584 1h vol, $3,041 mcap, -5% 1h  
-  CA `G1dPxV39DGrnAxxr3DPHoZpJRqamdpQPNtPiieKGpump`
-- bracket: $100,601 1h vol, $121,765 mcap, -44% 1h  
-  CA `EFWotn2UtV2c5QXMMHbSzmyrkU7wnfj7VpkNQGr1wk1z`
-- TrollGiving: $81,732 1h vol, $2,746 mcap, -10% 1h  
-  CA `AHQKMSVEStWZNNgReBt8cck5fT8sBdo9ZFyo2m7cpump`
-- MarsCoin: $74,372 1h vol, $19,425 mcap, +362% 1h  
-  CA `9tq9beEgem9zudg9BZshdhcT1nf9N8iUUkmcsRX6FJWu`
+- J*B: $140,199 1h vol, $64,403 mcap, -1% 1h  
+  CA `3Kf7Jxy1dB5TH56qFkC6XUW9S3qtMZQJzuUPzbdMpump`
+- Bear: $135,655 1h vol, $35,957 mcap, +30% 1h  
+  CA `AvRSpY1rPA9iVFxYHc5D5JQW6oU5tjGQZdsW2e5upump`
+- BEAR: $113,281 1h vol, $8,099 mcap, +13% 1h  
+  CA `FLTiTwvbBRZqjkwqAqAfpX4pVZuimFwx2Qi2467zpump`
+- SWIF: $101,549 1h vol, $146,234 mcap, +340% 1h  
+  CA `Hi6qQHwHBnx9uaxT3KyBxaHaUn4JTAG6ijygQbiopump`
+- Tampons: $73,166 1h vol, $9,867 mcap, -42% 1h  
+  CA `6N5NiqqEzBxxmbD2FHbHNhozt1VXvf22TvbbpQK6pump`
