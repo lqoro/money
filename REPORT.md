@@ -1,13 +1,13 @@
 # Trencher live report
 
-Updated 2026-11-15T02:49:30Z (paper trading, never real money)
+Updated 2026-11-15T03:04:43Z (paper trading, never real money)
 
 - Equity: $74.23 (-25.8% vs $100 start)
 - Closed trades: 22, 3 wins
 - Fees paid: $14.78 (axiom $2.81, network $9.18, pool $2.66), plus $4.15 lost to slippage
 - New trades: WATCH-ONLY (scans and decides, buys nothing)
-- Brain: subscription, claude-haiku-5-5 for routine calls, claude-opus-5-5 for the daily review; 22 routine calls and 0 plan-limit hits in 48h
-- Watch log: 54 coins being followed, 1282 filed, 0 would-buys (6h follow, sampled every 2 min)
+- Brain: subscription, claude-haiku-5-5 for routine calls, claude-opus-5-5 for the daily review; 23 routine calls and 0 plan-limit hits in 48h
+- Watch log: 56 coins being followed, 1282 filed, 0 would-buys (6h follow, sampled every 2 min)
 
 ## Scorecard (after fees)
 - 22 closed, 3 won (14%), net $-25.79
@@ -73,9 +73,13 @@ Updated 2026-11-15T02:49:30Z (paper trading, never real money)
   CA `H4gHnZ3NCU7Z9XQwGX6YYJNyieGEW8pqwGRUcdSxpump`
 
 ## Last scan
-- 02:49Z: 2 coins, 2 with pairs, 0 passed the market filters, 0 researched
+- 03:03Z: 2 coins, 2 with pairs, 0 passed the market filters, 0 researched
 
 ## Coins it looked at, and why it passed
+- 02:54Z USDUS (FINAL_STRETCH, $15,587 mcap, $6,811 5m vol): REJECT, RugCheck danger: Low Liquidity $286.93  
+  CA `GB5nqqAbsXf45noRWqeyM3rDsc6hD6iGAUqjXSc5pump`
+- 02:50Z HYGG (MIGRATED, $480,036 mcap, $2,022 5m vol): PASS at conviction 3, PASS: HYGG is the leader of an 18-copy HYPE field, but its 5m flow is 0.42x its hourly pace, sellers outnumber buyers, and the one site it links resolves to a bot-check page. The crowd is leaving, not arriving. (V1, V6, V13)  
+  CA `HHoDt9mEET28qFFWtUPNTqGcmRQPh3TJChAWHmBopump`
 - 02:47Z worth (MIGRATED, $126,475 mcap, $7,793 5m vol): REJECT, Top 10 hold 26.5% ex-pool (>25%) (V13)  
   CA `7mH4PaR9BMxAid2i1QNDBmziAwxyXBsPNKSMiWySpump`
 - 02:47Z penny (FINAL_STRETCH, $20,142 mcap, $28,498 5m vol): REJECT, RugCheck danger: Low Liquidity $529.71  
@@ -92,26 +96,20 @@ Updated 2026-11-15T02:49:30Z (paper trading, never real money)
   CA `Acgs6mb4PC7tQbDm9T4EeTfNx3ZDh5fNSjHcHZQLpump`
 - 02:14Z Ivy (FINAL_STRETCH, $22,165 mcap, $26,942 5m vol): REJECT, RugCheck danger: Creator history of rugged tokens  
   CA `DxNF3Qxd8XeUBdz7ReRdoiFzRmNDKbSz4c2oA7aRpump`
-- 02:05Z DOJE (MIGRATED, $205,463 mcap, $3,764 5m vol): PASS at conviction 3, PASS: flow below pace and not the leader of an 8-coin DOJE field. The clean holders don't change that. (V1, V3, V6)  
-  CA `7N2g5tHX2isAXyKmtUek72waREtNKSFuR6KW2xthpump`
-- 02:05Z HYGG (DIP, $320,655 mcap, $4,329 5m vol): PASS at conviction 3, PASS: HYGG is one of 18 HYPE copies, 5m flow is $4.3k, and nothing printed a higher low or a catalyst. Blocker: no catalyst, narrative fading (V1, V6, V13).  
-  CA `HHoDt9mEET28qFFWtUPNTqGcmRQPh3TJChAWHmBopump`
 
 ## What its skips did next (last 48h)
 A skip "ran" if the coin reached the first target (1.5x) from the skip price before a 20% drop, "dumped" if the drop came first. Sampled every 10 min, followed 6h.
-- RugCheck danger: blocked 7, ran 1, dumped 3, flat 0, open 3 (saving losses: keep it)
+- RugCheck danger: blocked 8, ran 1, dumped 5, flat 0, open 2 (saving losses: keep it)
   - ran: Ivy up to 1.88x  
     CA `DxNF3Qxd8XeUBdz7ReRdoiFzRmNDKbSz4c2oA7aRpump`
 - top 10 over 25%: blocked 6, ran 0, dumped 4, flat 0, open 2 (saving losses: keep it)
-- flow below pace: blocked 3, ran 0, dumped 1, flat 0, open 2 (too few played out to judge)
+- flow below pace: blocked 4, ran 0, dumped 3, flat 0, open 1 (saving losses: keep it)
 - falling knife (code): blocked 3, ran 0, dumped 3, flat 0, open 0 (saving losses: keep it)
 - crowd leaving / fading volume: blocked 2, ran 0, dumped 1, flat 0, open 1 (too few played out to judge)
-- falling knife / no higher low: blocked 2, ran 1, dumped 0, flat 0, open 1 (too few played out to judge)
-  - ran: HYGG up to 1.67x  
-    CA `HHoDt9mEET28qFFWtUPNTqGcmRQPh3TJChAWHmBopump`
 - too new / sniping: blocked 2, ran 0, dumped 2, flat 0, open 0 (too few played out to judge)
 - thin 5m volume: blocked 2, ran 0, dumped 0, flat 0, open 2 (too few played out to judge)
 - dev share over 1%: blocked 1, ran 0, dumped 0, flat 0, open 1 (too few played out to judge)
+- falling knife / no higher low: blocked 1, ran 0, dumped 0, flat 0, open 1 (too few played out to judge)
 - other: blocked 1, ran 0, dumped 1, flat 0, open 0 (too few played out to judge)
 
 ## Daily review (2026-11-14, claude-opus-5-5)
@@ -157,9 +155,9 @@ The meta is self-aware joke coins with fresh launches, and the trenches are not 
   CA `CiMyaPC9icicJxkFqvqpgL2YT2FjEQmGx1YVdG78pump`
 - penny: $166,312 1h vol, $25,130 mcap, +497% 1h  
   CA `5gmCPpuktJ7Svjgr4PPJBTosAFKB8K6Z45EGfSUmpump`
-- SI: $130,241 1h vol, $18,725 mcap, +107% 1h  
-  CA `AiQUqe4zjiDssth2FsCoeQVaGtCtHYyKGX8U52rWpump`
-- DACAT: $107,893 1h vol, $1,295 mcap, -99% 1h  
-  CA `ErtyXjRNeCkcKsrJJ8NwGCVQAoYQoVPnzs6Fr2Jmpump`
+- Ivy: $109,356 1h vol, $2,259 mcap, -92% 1h  
+  CA `DxNF3Qxd8XeUBdz7ReRdoiFzRmNDKbSz4c2oA7aRpump`
 - worth: $68,551 1h vol, $126,475 mcap, +240% 1h  
   CA `7mH4PaR9BMxAid2i1QNDBmziAwxyXBsPNKSMiWySpump`
+- DACAT: $59,280 1h vol, $1,295 mcap, -99% 1h  
+  CA `ErtyXjRNeCkcKsrJJ8NwGCVQAoYQoVPnzs6Fr2Jmpump`
