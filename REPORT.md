@@ -1,13 +1,13 @@
 # Trencher live report
 
-Updated 2026-11-15T08:22:26Z (paper trading, never real money)
+Updated 2026-11-15T08:37:37Z (paper trading, never real money)
 
 - Equity: $74.23 (-25.8% vs $100 start)
 - Closed trades: 22, 3 wins
 - Fees paid: $14.78 (axiom $2.81, network $9.18, pool $2.66), plus $4.15 lost to slippage
 - New trades: WATCH-ONLY (scans and decides, buys nothing)
-- Brain: subscription, claude-haiku-5-5 for routine calls, claude-opus-5-5 for the daily review; 54 routine calls and 0 plan-limit hits in 48h
-- Watch log: 57 coins being followed, 1330 filed, 0 would-buys (6h follow, sampled every 2 min)
+- Brain: subscription, claude-haiku-5-5 for routine calls, claude-opus-5-5 for the daily review; 55 routine calls and 0 plan-limit hits in 48h
+- Watch log: 57 coins being followed, 1332 filed, 0 would-buys (6h follow, sampled every 2 min)
 
 ## Scorecard (after fees)
 - 22 closed, 3 won (14%), net $-25.79
@@ -73,9 +73,13 @@ Updated 2026-11-15T08:22:26Z (paper trading, never real money)
   CA `H4gHnZ3NCU7Z9XQwGX6YYJNyieGEW8pqwGRUcdSxpump`
 
 ## Last scan
-- 08:21Z: 4 coins, 4 with pairs, 0 passed the market filters, 0 researched
+- 08:37Z: 6 coins, 6 with pairs, 0 passed the market filters, 0 researched
 
 ## Coins it looked at, and why it passed
+- 08:33Z starShit (FINAL_STRETCH, $23,673 mcap, $9,505 5m vol): PASS at conviction 3, PASS: chasing spike. StarShit is up 93% in 5 minutes and 366% in an hour, 11% off a peak printed six minutes ago, with no higher low. Vamp field with theme flow at 0.62x pace and no X. (V1, V6, V13)  
+  CA `85J9oUpaNRsELufsxopZPRbfYqNSNLhB6R2LNAWspump`
+- 08:29Z HOGE (DIP, $81,902 mcap, $17,722 5m vol): REJECT, Dip with fading attention is a falling knife, not a dip (5m at 0.57x the hour's pace, under 0.6x)  
+  CA `FVzqGqRmr4UH1Fif6dewmwbJ1p4YUZCu8dcw4Efopump`
 - 08:09Z CateGiving (FINAL_STRETCH, $16,414 mcap, $11,052 5m vol): PASS at conviction 2, PASS: CateGiving is up 592% in an hour, 106% in five minutes, and has no X, no site and no higher low. That's a spike with nothing under it (V1, V6).  
   CA `5XasjCnMPTczL9VZTDHgbK5sQzwkjnu41oLeHf5Wpump`
 - 07:56Z PumpBank (FINAL_STRETCH, $16,595 mcap, $46,229 5m vol): REJECT, RugCheck danger: Creator history of rugged tokens  
@@ -92,10 +96,6 @@ Updated 2026-11-15T08:22:26Z (paper trading, never real money)
   CA `G9ZMir6uh66Y7viPkXAy7myA9jjE4T1YgheVUmGDpump`
 - 07:26Z CBUCKS (MIGRATED, $2,955,743 mcap, $4,131 5m vol): REJECT, Top 10 hold 26.2% ex-pool (>25%) (V13)  
   CA `DtcicPCKTKeAh7TDEzTym3hXeoHAoMiBdYJhMYxZpump`
-- 07:21Z FUTA (MIGRATED, $106,658 mcap, $4,759 5m vol): REJECT, Top 10 hold 25.9% ex-pool (>25%) (V13)  
-  CA `8JCsa61htnPj2af7g1KSyU1UEncruHE1Ph9aNR6rpump`
-- 07:17Z TaoTao (FINAL_STRETCH, $15,829 mcap, $7,142 5m vol): PASS at conviction 3, PASS: TaoTao is the leader of a 6-copy "tao" field with $7.1k 5m, under the $10k bar, no radar mention, and a +662% hour with no story behind it. Not a probe. (V1, V6, V13)  
-  CA `G1KuEMuLrxWynFddQVnpdkQAhYFBwNJiuz1Lv7d9pump`
 
 ## What its skips did next (last 48h)
 A skip "ran" if the coin reached the first target (1.5x) from the skip price before a 20% drop, "dumped" if the drop came first. Sampled every 10 min, followed 6h.
@@ -107,12 +107,14 @@ A skip "ran" if the coin reached the first target (1.5x) from the skip price bef
   - ran: FUTA up to 2.77x  
     CA `FxoXV4C8DTSYeg5dSXrEsr45zzr8tpNbsrpoiZ8Kpump`
 - top 10 over 25%: blocked 10, ran 0, dumped 7, flat 1, open 2 (saving losses: keep it)
-- flow below pace: blocked 6, ran 0, dumped 4, flat 0, open 2 (saving losses: keep it)
+- flow below pace: blocked 7, ran 0, dumped 4, flat 0, open 3 (saving losses: keep it)
+- falling knife (code): blocked 5, ran 0, dumped 4, flat 0, open 1 (saving losses: keep it)
 - near the high / chasing: blocked 5, ran 1, dumped 4, flat 0, open 0 (saving losses: keep it)
   - ran: penny up to 1.6x  
     CA `5gmCPpuktJ7Svjgr4PPJBTosAFKB8K6Z45EGfSUmpump`
-- falling knife (code): blocked 4, ran 0, dumped 4, flat 0, open 0 (saving losses: keep it)
-- falling knife / no higher low: blocked 4, ran 0, dumped 0, flat 1, open 3 (too few played out to judge)
+- falling knife / no higher low: blocked 4, ran 1, dumped 0, flat 1, open 2 (too few played out to judge)
+  - ran: CateGiving up to 1.57x  
+    CA `5XasjCnMPTczL9VZTDHgbK5sQzwkjnu41oLeHf5Wpump`
 - too new / sniping: blocked 4, ran 1, dumped 3, flat 0, open 0 (saving losses: keep it)
   - ran: Chick up to 1.66x  
     CA `Dueav76X9spnoLomhM2jMkkWorVggbeWucLs3YLupump`
@@ -163,13 +165,13 @@ This window has no evidence in it. In 24 hours zero coins were logged at any sta
 The trenches are not quiet. The active meta is animal and dog riffs on pumpswap and pump.fun: HOGE (+234% 1h, 65% buys, $35k 5m at a $186k cap), TAIL (+289% 1h, 61% buys, $9.6k 5m), and PAW (55% buys, $8.4k 5m, still pre-bond). Fading: BabyDoge (25% buys), penny (-41%), and the duplicate FUTA tickers, while old coins like GATO, FUTA and DIGS have dead 5m volume. The crawler's numbers don't match scan_movers (Chick is -81% 1h with $1.7k 5m at a $13k cap, and its PAW and TAIL figures differ), so I'm trusting scan_movers and dropping Chick as a lead. Setups to research: HOGE only on a pullback that holds volume, stop under that low, and only after confirming it's the real Hoge and not a Doge copy (V1, V6); TAIL and PAW only if 5m clears $10k with buys holding above about 60% (V1, V6). PumpBank and Owed are six-minute-old spikes where 5m volume equals 1h volume, so they're passes until they show sustained flow (V13). Holder, dev and bundle checks still run on each coin before any size. Paper only, not advice.
 
 ## Moving most in its scans, last 30 min (1h volume)
-- PumpBank: $96,622 1h vol, $18,832 mcap, +144% 1h  
-  CA `AGMRDpWgZoVjnBBTjPpye522dtcaBUwLyb5LhT23pump`
-- TaoTao: $85,481 1h vol, $4,150 mcap, -85% 1h  
+- HOGE: $375,722 1h vol, $84,036 mcap, -59% 1h  
+  CA `FVzqGqRmr4UH1Fif6dewmwbJ1p4YUZCu8dcw4Efopump`
+- PAW: $75,009 1h vol, $22,891 mcap, -21% 1h  
+  CA `HxPrDS84HH3ijsJhiCLF55MN7DqLfxzbt99RnSuSpump`
+- TaoTao: $70,244 1h vol, $4,353 mcap, -85% 1h  
   CA `G1KuEMuLrxWynFddQVnpdkQAhYFBwNJiuz1Lv7d9pump`
-- Chick: $60,980 1h vol, $15,729 mcap, -71% 1h  
-  CA `Dueav76X9spnoLomhM2jMkkWorVggbeWucLs3YLupump`
-- GATO: $43,858 1h vol, $5,662 mcap, +51% 1h  
+- starShit: $63,207 1h vol, $25,681 mcap, +405% 1h  
+  CA `85J9oUpaNRsELufsxopZPRbfYqNSNLhB6R2LNAWspump`
+- GATO: $45,601 1h vol, $4,121 mcap, +10% 1h  
   CA `3xJUcnUzFwjhkibsAurfX28Kh8AbrraEo17p7pSqpump`
-- OWED: $36,403 1h vol, $2,297 mcap, -93% 1h  
-  CA `Dpgt4i8AExpDcumBwpEJ8rUzZwuj2RLMq2B9b12vpump`
