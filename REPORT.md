@@ -1,13 +1,13 @@
 # Trencher live report
 
-Updated 2026-11-15T04:50:38Z (paper trading, never real money)
+Updated 2026-11-15T05:05:51Z (paper trading, never real money)
 
 - Equity: $74.23 (-25.8% vs $100 start)
 - Closed trades: 22, 3 wins
 - Fees paid: $14.78 (axiom $2.81, network $9.18, pool $2.66), plus $4.15 lost to slippage
 - New trades: WATCH-ONLY (scans and decides, buys nothing)
-- Brain: subscription, claude-haiku-5-5 for routine calls, claude-opus-5-5 for the daily review; 33 routine calls and 0 plan-limit hits in 48h
-- Watch log: 72 coins being followed, 1282 filed, 0 would-buys (6h follow, sampled every 2 min)
+- Brain: subscription, claude-haiku-5-5 for routine calls, claude-opus-5-5 for the daily review; 34 routine calls and 0 plan-limit hits in 48h
+- Watch log: 74 coins being followed, 1282 filed, 0 would-buys (6h follow, sampled every 2 min)
 
 ## Scorecard (after fees)
 - 22 closed, 3 won (14%), net $-25.79
@@ -73,9 +73,13 @@ Updated 2026-11-15T04:50:38Z (paper trading, never real money)
   CA `H4gHnZ3NCU7Z9XQwGX6YYJNyieGEW8pqwGRUcdSxpump`
 
 ## Last scan
-- 04:49Z: 21 coins, 21 with pairs, 1 passed the market filters, 1 researched
+- 05:05Z: 3 coins, 3 with pairs, 0 passed the market filters, 0 researched
 
 ## Coins it looked at, and why it passed
+- 04:59Z WANTED (MIGRATED, $1,371,291 mcap, $4,827 5m vol): PASS at conviction 3, PASS: WANTED flow is below pace, no higher low has printed, and the theme is cooling. (V1, V6)  
+  CA `CiMyaPC9icicJxkFqvqpgL2YT2FjEQmGx1YVdG78pump`
+- 04:51Z HODL (FINAL_STRETCH, $17,787 mcap, $5,676 5m vol): REJECT, Top 10 hold 26.0% ex-pool (>25%) (V13)  
+  CA `F63zJ8AM4RnHHxnHzGAPgM8Amv8KTSqG9knPd7yvpump`
 - 04:49Z MIL (MIGRATED, $64,316 mcap, $11,029 5m vol): REJECT, RugCheck danger: Creator history of rugged tokens  
   CA `8655LtfvozXLSJWrzcmwVeK13s5Gvn49UXFHYcYzpump`
 - 04:45Z chudhaos (MIGRATED, $377,019 mcap, $2,838 5m vol): REJECT, RugCheck danger: Large Amount of LP Unlocked 100.00%  
@@ -92,10 +96,6 @@ Updated 2026-11-15T04:50:38Z (paper trading, never real money)
   CA `8655LtfvozXLSJWrzcmwVeK13s5Gvn49UXFHYcYzpump`
 - 03:54Z BOWSER (FINAL_STRETCH, $19,896 mcap, $9,972 5m vol): PASS at conviction 2, PASS: vamp field of 19 same-name copies, 5m volume $9,972 under the $10k bar, and no radar mention of the story. Blocker: "split crowd" (V1, V3).  
   CA `FThkP96RFL7NnuxTrrbhQza3keGQ4pVh5qGtHJ9Npump`
-- 03:40Z SI (MIGRATED, $40,327 mcap, $32,172 5m vol): REJECT, RugCheck danger: Large Amount of LP Unlocked 100.00%  
-  CA `4osu2k8desGt6mUcR2YWFTrsSt2V6yfoyuvnqzKdbNfD`
-- 03:37Z Angel (MIGRATED, $43,407 mcap, $4,744 5m vol): PASS at conviction 3, PASS — 20 copies of "Sonny Angel" in one vamp field, down 76% from a $180k peak, sellers ahead on 5m (45% buys), top 10 at 18.2%, and no story I can find. Blocker: split crowd plus no catalyst (V1, V3, V6).  
-  CA `5bzT7x5nYZx3grnRaL6cDRQuSKxEWDVwh2WUxd91pump`
 
 ## What its skips did next (last 48h)
 A skip "ran" if the coin reached the first target (1.5x) from the skip price before a 20% drop, "dumped" if the drop came first. Sampled every 10 min, followed 6h.
@@ -104,7 +104,9 @@ A skip "ran" if the coin reached the first target (1.5x) from the skip price bef
     CA `DxNF3Qxd8XeUBdz7ReRdoiFzRmNDKbSz4c2oA7aRpump`
   - ran: SI up to 1.93x  
     CA `AiQUqe4zjiDssth2FsCoeQVaGtCtHYyKGX8U52rWpump`
-- top 10 over 25%: blocked 6, ran 0, dumped 5, flat 0, open 1 (saving losses: keep it)
+- top 10 over 25%: blocked 7, ran 1, dumped 5, flat 0, open 1 (saving losses: keep it)
+  - ran: HODL up to 2.55x  
+    CA `F63zJ8AM4RnHHxnHzGAPgM8Amv8KTSqG9knPd7yvpump`
 - flow below pace: blocked 5, ran 0, dumped 4, flat 0, open 1 (saving losses: keep it)
 - falling knife (code): blocked 4, ran 0, dumped 3, flat 0, open 1 (saving losses: keep it)
 - too new / sniping: blocked 3, ran 0, dumped 3, flat 0, open 0 (saving losses: keep it)
@@ -157,11 +159,11 @@ Trencher: The trenches are active but thin. Animal and pet jokes are the most co
 ## Moving most in its scans, last 30 min (1h volume)
 - MIL: $195,479 1h vol, $64,634 mcap, +127% 1h  
   CA `8655LtfvozXLSJWrzcmwVeK13s5Gvn49UXFHYcYzpump`
-- BOWSER: $52,786 1h vol, $8,229 mcap, +120% 1h  
-  CA `FThkP96RFL7NnuxTrrbhQza3keGQ4pVh5qGtHJ9Npump`
-- BOWSER: $51,212 1h vol, $4,831 mcap, -39% 1h  
-  CA `E8BkLUzT3vzQHd5Ub8KrMv1XTtUzMY2vQgNvGmFNpump`
-- UI: $27,242 1h vol, $2,067 mcap, -19% 1h  
-  CA `DXEJEXXxjwYMSufE8siioScsDc7oCDjFpatmwSexpump`
-- SI: $21,180 1h vol, $20,090 mcap, -31% 1h  
-  CA `AiQUqe4zjiDssth2FsCoeQVaGtCtHYyKGX8U52rWpump`
+- penny: $95,632 1h vol, $27,924 mcap, -65% 1h  
+  CA `5gmCPpuktJ7Svjgr4PPJBTosAFKB8K6Z45EGfSUmpump`
+- WANTED: $94,434 1h vol, $1,371,291 mcap, -3% 1h  
+  CA `CiMyaPC9icicJxkFqvqpgL2YT2FjEQmGx1YVdG78pump`
+- JASON: $87,791 1h vol, $1,347 mcap, -100% 1h  
+  CA `FR4yp7buct5Rz8yfic4zwVVcfLySmrqw3tFp18UCpump`
+- HODL: $48,797 1h vol, $22,004 mcap, +873% 1h  
+  CA `F63zJ8AM4RnHHxnHzGAPgM8Amv8KTSqG9knPd7yvpump`
