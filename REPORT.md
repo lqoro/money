@@ -1,6 +1,6 @@
 # Trencher live report
 
-Updated 2026-11-15T10:23:58Z (paper trading, never real money)
+Updated 2026-11-15T10:39:00Z (paper trading, never real money)
 
 - Equity: $74.23 (-25.8% vs $100 start)
 - Closed trades: 22, 3 wins
@@ -73,7 +73,7 @@ Updated 2026-11-15T10:23:58Z (paper trading, never real money)
   CA `H4gHnZ3NCU7Z9XQwGX6YYJNyieGEW8pqwGRUcdSxpump`
 
 ## Last scan
-- 10:23Z: 3 coins, 3 with pairs, 0 passed the market filters, 0 researched
+- 10:38Z: 8 coins, 8 with pairs, 0 passed the market filters, 0 researched
 
 ## Coins it looked at, and why it passed
 - 10:21Z GATO (DIP, $6,588,749 mcap, $2,653 5m vol): REJECT, Dev holds 3.0% (>1%) (V13, V17)  
@@ -109,7 +109,9 @@ A skip "ran" if the coin reached the first target (1.5x) from the skip price bef
 - top 10 over 25%: blocked 10, ran 1, dumped 7, flat 1, open 1 (saving losses: keep it)
   - ran: FUTA up to 1.51x  
     CA `8JCsa61htnPj2af7g1KSyU1UEncruHE1Ph9aNR6rpump`
-- flow below pace: blocked 8, ran 0, dumped 4, flat 1, open 3 (saving losses: keep it)
+- flow below pace: blocked 8, ran 1, dumped 5, flat 1, open 1 (saving losses: keep it)
+  - ran: PASSED up to 1.73x  
+    CA `3XaH8VPUaUegqmnkYA8PXCWqQqD8doqdsGGfZyoYpump`
 - too new / sniping: blocked 6, ran 2, dumped 4, flat 0, open 0 (saving losses: keep it)
   - ran: Chick up to 1.66x  
     CA `Dueav76X9spnoLomhM2jMkkWorVggbeWucLs3YLupump`
@@ -128,7 +130,9 @@ A skip "ran" if the coin reached the first target (1.5x) from the skip price bef
 - other: blocked 3, ran 1, dumped 2, flat 0, open 0 (saving losses: keep it)
   - ran: TaoTao up to 1.53x  
     CA `G1KuEMuLrxWynFddQVnpdkQAhYFBwNJiuz1Lv7d9pump`
-- dev share over 1%: blocked 2, ran 0, dumped 0, flat 0, open 2 (too few played out to judge)
+- dev share over 1%: blocked 2, ran 1, dumped 0, flat 0, open 1 (too few played out to judge)
+  - ran: PANICSELL up to 1.74x  
+    CA `82Z6CcE5g3o1jW3vgtcqr95jP4XFx8jg1SJe8ikepump`
 
 ## Daily review (2026-11-14, claude-opus-5-5)
 This window has no evidence in it. In 24 hours zero coins were logged at any stage: none failed the checklist, none were passed by the brain, none were would-buys and none went unresearched. Nothing settled, nothing is still being followed, and the brain was called once in 48 hours. With n=0, nobody can say anything about an after-cost edge, and the question of whether the routine model's would-buys beat the coins it passed on has no data to answer. The only real finding is that the pipeline looks stalled. A scanner running around the clock should pass at least a handful of coins through the market filters every day. It's also Nov 14, four days after the planned Nov 10 test, so it's worth confirming the watch-only week was captured and archived before anyone talks about edge.
@@ -169,13 +173,13 @@ This window has no evidence in it. In 24 hours zero coins were logged at any sta
 Not quiet. About half of scan_movers is under two hours old, and the live flow is in fresh pump.fun cat and dog coins, not the finance jokes. Two themes are moving: animal riffs (NCAT at 27k 5m and 65% buys, dragoncat at 9k 5m and 73% buys, PAW at 15k 5m and 57% buys) and tech/NVIDIA-name riffs riding the Jensen Huang headlines (NCAT again). Fading: the finance/joke cluster (CLOCKED OUT at -26% 1h on 2.9k 5m with 40% buys, Useless Market at 983 5m), the dog coin HSI (-71% 1h on 126 5m), and LAIKA (zero 5m), and the web backs that (DOGE down about 40%, "is memecoin hype dead" headlines), though the cat coins still have real 5m flow. Setups to research, not buy: NCAT (youngest and strongest flow, but about 6 minutes old, so bundle risk is high), dragoncat (18 minutes old, $20k mcap, still on the bonding curve, a FINAL_STRETCH-style check), and PAW (migrated on PumpSwap at $101k mcap, a MIGRATED-style TA check that needs its volume to hold). The crawler's HSI and starShit 5m figures (12k and 9.6k) don't match scan_movers (126 and 2.4k), so I used scan_movers only. No hack-named coin is in the movers and none is a setup. Holder, dev and bundle checks have not run on any of these yet. Paper only, not advice.
 
 ## Moving most in its scans, last 30 min (1h volume)
-- Sumi: $129,053 1h vol, $19,372 mcap, +73% 1h  
-  CA `HvA8a4C1KAXfrZMnmd1VyvLh21HzMvr4rjUtxiezpump`
-- Socks: $120,841 1h vol, $43,614 mcap, +45% 1h  
-  CA `FS1pBmZKp2Qw1atC64GoLamHstECAos9ot8bGPgDpump`
-- NCAT: $103,738 1h vol, $7,633 mcap, +64% 1h  
+- NCAT: $97,998 1h vol, $10,421 mcap, -21% 1h  
   CA `CU6twK3evciYpdtf9xiiahxwV2tNd9FGoGjL6ewVpump`
-- HOGE: $45,722 1h vol, $50,982 mcap, -25% 1h  
-  CA `FVzqGqRmr4UH1Fif6dewmwbJ1p4YUZCu8dcw4Efopump`
-- PASSED: $43,676 1h vol, $18,873 mcap, +128% 1h  
-  CA `3XaH8VPUaUegqmnkYA8PXCWqQqD8doqdsGGfZyoYpump`
+- CLOCKED: $71,843 1h vol, $1,386 mcap, -100% 1h  
+  CA `5r6uX887ZxsPG6iEdyyU2sQTFMpwHVzqVFkANuepump`
+- dragoncat: $34,630 1h vol, $4,463 mcap, -84% 1h  
+  CA `3nbHBkEDdbPiF5zJMhsxucm25V6UHKv9BVQuTKJVpump`
+- GATO: $30,171 1h vol, $6,588,749 mcap, -4% 1h  
+  CA `HsprHxBRgiVaQdRf3TnKNuZZtaX9JUSPgMFdAkk6pump`
+- FUTA: $22,317 1h vol, $159,179 mcap, +19% 1h  
+  CA `8JCsa61htnPj2af7g1KSyU1UEncruHE1Ph9aNR6rpump`
