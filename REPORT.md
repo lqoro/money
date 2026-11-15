@@ -1,13 +1,13 @@
 # Trencher live report
 
-Updated 2026-11-15T11:54:54Z (paper trading, never real money)
+Updated 2026-11-15T12:10:00Z (paper trading, never real money)
 
 - Equity: $74.23 (-25.8% vs $100 start)
 - Closed trades: 22, 3 wins
 - Fees paid: $14.78 (axiom $2.81, network $9.18, pool $2.66), plus $4.15 lost to slippage
 - New trades: WATCH-ONLY (scans and decides, buys nothing)
-- Brain: subscription, claude-haiku-5-5 for routine calls, claude-opus-5-5 for the daily review; 71 routine calls and 0 plan-limit hits in 48h
-- Watch log: 51 coins being followed, 1362 filed, 0 would-buys (6h follow, sampled every 2 min)
+- Brain: subscription, claude-haiku-5-5 for routine calls, claude-opus-5-5 for the daily review; 73 routine calls and 0 plan-limit hits in 48h
+- Watch log: 46 coins being followed, 1369 filed, 0 would-buys (6h follow, sampled every 2 min)
 
 ## Scorecard (after fees)
 - 22 closed, 3 won (14%), net $-25.79
@@ -73,9 +73,13 @@ Updated 2026-11-15T11:54:54Z (paper trading, never real money)
   CA `H4gHnZ3NCU7Z9XQwGX6YYJNyieGEW8pqwGRUcdSxpump`
 
 ## Last scan
-- 11:54Z: 8 coins, 8 with pairs, 0 passed the market filters, 0 researched
+- 12:09Z: 2 coins, 2 with pairs, 0 passed the market filters, 0 researched
 
 ## Coins it looked at, and why it passed
+- 12:04Z Oli (FINAL_STRETCH, $16,728 mcap, $7,504 5m vol): PASS at conviction 2, PASS: chasing spike. Oli is up 580% in 1h and 75% on the 5m, sitting at the top of its own spike. Six copies share the ticker and the top 10 hold 23.9%. (V1, V6, V13)  
+  CA `8LBTmVfJxpjBDeggCdABThUrL6k67Q5XaEgEcoDoPMsG`
+- 12:01Z GTACOIN (FINAL_STRETCH, $16,510 mcap, $11,027 5m vol): REJECT, Top 10 hold 25.2% ex-pool (>25%) (V13)  
+  CA `Dtobp85WKE4sU1wSjC3m5eftCAKBojpsJjQWqUU1pump`
 - 11:52Z GATO (DIP, $6,951,549 mcap, $5,074 5m vol): REJECT, Dev holds 3.0% (>1%) (V13, V17)  
   CA `HsprHxBRgiVaQdRf3TnKNuZZtaX9JUSPgMFdAkk6pump`
 - 11:47Z Gomez (FINAL_STRETCH, $24,318 mcap, $41,054 5m vol): PASS at conviction 4, PASS — a four-minute-old name copy with no story, 7 same-ticker copies, and top 10 at 18.4%. A crowd with nothing behind it (V1, V13).  
@@ -92,10 +96,6 @@ Updated 2026-11-15T11:54:54Z (paper trading, never real money)
   CA `HsprHxBRgiVaQdRf3TnKNuZZtaX9JUSPgMFdAkk6pump`
 - 10:43Z Socks (DIP, $244,551 mcap, $40,012 5m vol): PASS at conviction 3, PASS: too new, a split crowd, and no catalyst I can verify. Socks is 57 minutes old, bleeding off a 10x hour spike, and sits in a 14-copy field. Blocker: "too new" and "split crowd" (V1, V3, V13).  
   CA `FS1pBmZKp2Qw1atC64GoLamHstECAos9ot8bGPgDpump`
-- 10:21Z GATO (DIP, $6,588,749 mcap, $2,653 5m vol): REJECT, Dev holds 3.0% (>1%) (V13, V17)  
-  CA `HsprHxBRgiVaQdRf3TnKNuZZtaX9JUSPgMFdAkk6pump`
-- 10:07Z PASSED (FINAL_STRETCH, $18,873 mcap, $4,184 5m vol): PASS at conviction 3, PASS: 19 copies of "Mission Passed", the theme is at 0.12x its hourly pace, and 5m flow is $4.2k, under the $10k bar. Split crowd with no leader on flow. (V1, V6, V13)  
-  CA `3XaH8VPUaUegqmnkYA8PXCWqQqD8doqdsGGfZyoYpump`
 
 ## What its skips did next (last 48h)
 A skip "ran" if the coin reached the first target (1.5x) from the skip price before a 20% drop, "dumped" if the drop came first. Sampled every 10 min, followed 6h.
@@ -106,31 +106,31 @@ A skip "ran" if the coin reached the first target (1.5x) from the skip price bef
     CA `AiQUqe4zjiDssth2FsCoeQVaGtCtHYyKGX8U52rWpump`
   - ran: FUTA up to 2.77x  
     CA `FxoXV4C8DTSYeg5dSXrEsr45zzr8tpNbsrpoiZ8Kpump`
-- top 10 over 25%: blocked 11, ran 1, dumped 8, flat 1, open 1 (saving losses: keep it)
+- top 10 over 25%: blocked 12, ran 1, dumped 9, flat 1, open 1 (saving losses: keep it)
   - ran: FUTA up to 1.51x  
     CA `8JCsa61htnPj2af7g1KSyU1UEncruHE1Ph9aNR6rpump`
 - flow below pace: blocked 8, ran 1, dumped 5, flat 1, open 1 (saving losses: keep it)
   - ran: PASSED up to 1.73x  
     CA `3XaH8VPUaUegqmnkYA8PXCWqQqD8doqdsGGfZyoYpump`
+- near the high / chasing: blocked 7, ran 1, dumped 5, flat 0, open 1 (saving losses: keep it)
+  - ran: penny up to 1.6x  
+    CA `5gmCPpuktJ7Svjgr4PPJBTosAFKB8K6Z45EGfSUmpump`
 - too new / sniping: blocked 6, ran 2, dumped 4, flat 0, open 0 (saving losses: keep it)
   - ran: Chick up to 1.66x  
     CA `Dueav76X9spnoLomhM2jMkkWorVggbeWucLs3YLupump`
   - ran: TOOLS up to 1.83x  
     CA `9Ei1d97U7M8m4t3fof7c8MUECtmzgqbQCo81cGGzpump`
-- near the high / chasing: blocked 6, ran 1, dumped 5, flat 0, open 0 (saving losses: keep it)
-  - ran: penny up to 1.6x  
-    CA `5gmCPpuktJ7Svjgr4PPJBTosAFKB8K6Z45EGfSUmpump`
 - falling knife (code): blocked 4, ran 0, dumped 4, flat 0, open 0 (saving losses: keep it)
 - falling knife / no higher low: blocked 4, ran 1, dumped 0, flat 1, open 2 (too few played out to judge)
   - ran: CateGiving up to 1.57x  
     CA `5XasjCnMPTczL9VZTDHgbK5sQzwkjnu41oLeHf5Wpump`
-- other: blocked 4, ran 1, dumped 2, flat 0, open 1 (saving losses: keep it)
+- other: blocked 4, ran 1, dumped 3, flat 0, open 0 (saving losses: keep it)
   - ran: TaoTao up to 1.53x  
     CA `G1KuEMuLrxWynFddQVnpdkQAhYFBwNJiuz1Lv7d9pump`
 - crowd leaving / fading volume: blocked 3, ran 1, dumped 2, flat 0, open 0 (saving losses: keep it)
   - ran: NUREMBERG up to 1.62x  
     CA `7R3RnGmpV9mZXwSyHyKN5LEddiZRmGsYrAZPgDJqpump`
-- dev share over 1%: blocked 2, ran 1, dumped 0, flat 0, open 1 (too few played out to judge)
+- dev share over 1%: blocked 2, ran 1, dumped 0, flat 1, open 0 (too few played out to judge)
   - ran: PANICSELL up to 1.74x  
     CA `82Z6CcE5g3o1jW3vgtcqr95jP4XFx8jg1SJe8ikepump`
 
@@ -170,16 +170,16 @@ This window has no evidence in it. In 24 hours zero coins were logged at any sta
 - [2026-11-02 20:25] I expected Slingoor, a clean MIGRATED leader with $25k of 5m flow at pace and a 0.77 buy share, to retest its $408k high from $304k. It never went green (0.98x peak) and hit the -20% stop in 2 minutes, a -$2.86 probe. My own thesis admitted there was no printed higher low after a peak only 6 minutes old, so this confirms the money-shape rule: buy share and flow are not structure (V1, V6). Next time a MIGRATED pullback with no higher low above the hourly low is a PASS with blocker "no higher low", not a probe. This is one loss, so it adds no new ban beyond the rule I already have.
 
 ## Meta right now
-Not quiet, but the flow is concentrated. Only Socks Neobank ($52k 5m, 60% buys, PumpSwap at $252k) and SEYONG ($25k 5m, 59% buys, six minutes old) clear the $10k 5-minute bar. The cat riffs are the most repeated name pattern (NCAT, dragoncat, poorcat, BABOON), but most have thin dollar volume (NCAT $642 5m, dragoncat $128) even where buy ratios hit 62-70%, so the animal theme is repeating without carrying money yet. Fading: the joke and finance cluster (CLOCKED -99.6% 1h, SOLA -89%, PASSED -86%) and older leftovers like UM and DIGS, which fits the launch-and-flush churn and the web's "memecoin hype dead" headlines. The crawler's NCAT, dragoncat, HSI and LAIKA figures don't match scan_movers (PAW and LAIKA aren't in the movers at all), so I used scan_movers only; the NVIDIA/Jensen tie is one coin, not a theme. Setups to research, not buys: Socks, a migrated coin with chase risk after +763% in 1h, needs a MIGRATED-style check on a clean pullback; SEYONG is a fresh bonding-curve launch with high bundle risk, so it needs a FINAL_STRETCH-style check. Holder, dev and bundle checks have not run on any of these, so every name stays unverified. Paper only, not advice.
+Not quiet. Three coins clear the $10k 5-minute bar on scan_movers (Socks $63.8k, Gomez $42.9k, Tools $14.3k), so the flow is real but concentrated. Themes in the movers: (1) brand-new pump.fun launches under an hour old with 300-665% 1h pops and 62-72% buy ratios (Gomez, Tools, PEARL). Gomez's entire 1h volume landed in its first five minutes, which is bundle-shaped until proven otherwise. (2) Cat riffs (Shvedin, GATO) that repeat in name but are fading or thin, with Shvedin at $0 5m volume. (3) A fading survival/finance-joke cluster (SLIDES -80%, Silk -67%, I Will Survive with $1 of 5m volume and zero buys). Socks is the only migrated name with real money (PumpSwap, 1.7h old, +52% 1h), so it's a MIGRATED-style research case that needs a clean pullback, not a chase. Tools and Gomez are minutes old on the curve, so they run at New Pairs speed. I wouldn't touch them without full bundle and holder checks. Nothing is verified: holder, dev and bundle checks haven't run on any coin. I ignored the crawler's NCAT, dragoncat and PAW figures because they don't match scan_movers. Paper only, not advice.
 
 ## Moving most in its scans, last 30 min (1h volume)
-- Socks: $618,695 1h vol, $364,215 mcap, +52% 1h  
-  CA `FS1pBmZKp2Qw1atC64GoLamHstECAos9ot8bGPgDpump`
-- GETAJOB: $97,913 1h vol, $666,962 mcap, +25% 1h  
+- GETAJOB: $102,542 1h vol, $660,550 mcap, +16% 1h  
   CA `ZGW9B644VgfmmKtBTv1xjWGarkjEhFrcUrQEaqepump`
-- SURVIVE: $59,854 1h vol, $3,350 mcap, +37% 1h  
-  CA `6fet2d2NkU5L1Qw46q2EsqKuXrt4nGsgFLQHW1iF7xbr`
-- PEARL: $48,167 1h vol, $10,540 mcap, +307% 1h  
+- PEARL: $50,276 1h vol, $11,895 mcap, +359% 1h  
   CA `gupczrr4u7wkyCQq9xTm4Rfc14NYxuCMpX4Rfpapump`
+- Oli: $45,413 1h vol, $16,017 mcap, +551% 1h  
+  CA `8LBTmVfJxpjBDeggCdABThUrL6k67Q5XaEgEcoDoPMsG`
 - GATO: $44,372 1h vol, $6,951,549 mcap, +3% 1h  
   CA `HsprHxBRgiVaQdRf3TnKNuZZtaX9JUSPgMFdAkk6pump`
+- Gomez: $42,901 1h vol, $19,216 mcap, +509% 1h  
+  CA `GmbC342to7Lab7LEh4aqkEY5mfCVbfDvs1X5TB8epump`
