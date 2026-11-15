@@ -1,13 +1,13 @@
 # Trencher live report
 
-Updated 2026-11-15T16:27:26Z (paper trading, never real money)
+Updated 2026-11-15T16:42:30Z (paper trading, never real money)
 
 - Equity: $74.23 (-25.8% vs $100 start)
 - Closed trades: 22, 3 wins
 - Fees paid: $14.78 (axiom $2.81, network $9.18, pool $2.66), plus $4.15 lost to slippage
 - New trades: WATCH-ONLY (scans and decides, buys nothing)
 - Brain: subscription, claude-haiku-5-5 for routine calls, claude-opus-5-5 for the daily review; 96 routine calls and 0 plan-limit hits in 48h
-- Watch log: 65 coins being followed, 1405 filed, 0 would-buys (6h follow, sampled every 2 min)
+- Watch log: 67 coins being followed, 1405 filed, 0 would-buys (6h follow, sampled every 2 min)
 
 ## Scorecard (after fees)
 - 22 closed, 3 won (14%), net $-25.79
@@ -73,9 +73,13 @@ Updated 2026-11-15T16:27:26Z (paper trading, never real money)
   CA `H4gHnZ3NCU7Z9XQwGX6YYJNyieGEW8pqwGRUcdSxpump`
 
 ## Last scan
-- 16:26Z: 6 coins, 6 with pairs, 2 passed the market filters, 2 researched
+- 16:41Z: 7 coins, 7 with pairs, 0 passed the market filters, 0 researched
 
 ## Coins it looked at, and why it passed
+- 16:34Z DIGS (MIGRATED, $159,203 mcap, $3,883 5m vol): REJECT, Bundles: 10 linked wallet cluster(s) hold 100.0% of supply (>20%) (V17)  
+  CA `9QT8K685Hrae4k11dhGXirdtpfAaimExtyfwt8cPpump`
+- 16:31Z PRIVAZ (FINAL_STRETCH, $24,290 mcap, $2,458 5m vol): REJECT, Top 10 hold 31.7% ex-pool (>25%) (V13)  
+  CA `DoqsX2uvZnZNTzbxuS5nbXLoxrrPUWE8BZXRQfEPpump`
 - 16:27Z GATO (DIP, $6,455,412 mcap, $2,206 5m vol): REJECT, Dev holds 3.0% (>1%) (V13, V17)  
   CA `HsprHxBRgiVaQdRf3TnKNuZZtaX9JUSPgMFdAkk6pump`
 - 16:27Z AICoin (MIGRATED, $105,742 mcap, $5,581 5m vol): PASS at conviction 2, PASS: chasing a 14-minute-old spike with flow under pace, no higher low, and 23 same-name copies. Blockers: chasing, flow below pace, no higher low, split crowd. (V1, V6)  
@@ -92,14 +96,10 @@ Updated 2026-11-15T16:27:26Z (paper trading, never real money)
   CA `4Dj8m9vWqu779F1KDBUttvXM8YFm7U92SDpvjBNKtEiB`
 - 15:52Z Helicat (FINAL_STRETCH, $23,890 mcap, $3,235 5m vol): REJECT, Top 10 hold 25.3% ex-pool (>25%) (V13)  
   CA `9aJAybSJMJUyNVuneNQdc6rDc8iXRMbXarLpGDrpump`
-- 15:49Z gtacoin (DIP, $406,963 mcap, $3,837 5m vol): REJECT, Dip with fading attention is a falling knife, not a dip (5m at 0.44x the hour's pace, under 0.6x)  
-  CA `DSKM3d518BBaQShSKqaqZcG1XMRf81UFB6a1eavhSTNK`
-- 15:47Z billy (MIGRATED, $81,166 mcap, $50,343 5m vol): PASS at conviction 3, PASS: billy is 6% off its high, 5m volume at 4.7x pace, and no printed higher low. Chasing a spike on a 10-minute-old migration (V1, V6).  
-  CA `Q7ZMt9VfQRfuka7QKgjRQ1xnLNV3rgVjqUVfUnBpump`
 
 ## What its skips did next (last 48h)
 A skip "ran" if the coin reached the first target (1.5x) from the skip price before a 20% drop, "dumped" if the drop came first. Sampled every 10 min, followed 6h.
-- top 10 over 25%: blocked 18, ran 2, dumped 12, flat 2, open 2 (saving losses: keep it)
+- top 10 over 25%: blocked 19, ran 2, dumped 12, flat 2, open 3 (saving losses: keep it)
   - ran: rockstar up to 1.95x  
     CA `9HFUEab7sompLDPTAaTGkryMNGbtBaFMhHMVpJEBpump`
   - ran: VI up to 1.71x  
@@ -111,7 +111,7 @@ A skip "ran" if the coin reached the first target (1.5x) from the skip price bef
     CA `AiQUqe4zjiDssth2FsCoeQVaGtCtHYyKGX8U52rWpump`
   - ran: FUTA up to 2.77x  
     CA `FxoXV4C8DTSYeg5dSXrEsr45zzr8tpNbsrpoiZ8Kpump`
-- flow below pace: blocked 15, ran 1, dumped 10, flat 2, open 2 (saving losses: keep it)
+- flow below pace: blocked 15, ran 1, dumped 12, flat 2, open 0 (saving losses: keep it)
   - ran: PASSED up to 1.73x  
     CA `3XaH8VPUaUegqmnkYA8PXCWqQqD8doqdsGGfZyoYpump`
 - too new / sniping: blocked 13, ran 3, dumped 10, flat 0, open 0 (saving losses: keep it)
@@ -179,13 +179,13 @@ Nothing shows a positive after-cost edge. Across all 93 settled coins the simple
 Not quiet, but the new-launch wave is bleeding. Most of the young movers are down 90%+ in an hour (Stripper Inu, Sexy Inu, Nyajira, WANTED, GTA), and the dog/inu and cat names have dead 5m tape: Stripper Inu is at 0% buys, and GATO, the old cat coin, is at 45% buys and fading. The themes still pulling buyers are short, odd, meme-style names under an hour old: billy ($77k cap, $51k 5m, 64% buys), Lend Cards ($10k cap, 68% buys, +402% 1h), Ni Hao Mas (59% buys, +618% 1h, only $3k 5m), and GTA VI ($56k cap, $34k 5m, 61% buys). Several of these have already run hard, so chase risk is high. The news (North Korea laundering through memecoins, the Trump coin collapse, "memecoin hype is dead") is the story, not the trench, so I'm not using it to pick anything, and I'm not naming GTA-headline coins as setups. Setups to research, not buy: billy is the only one that clears the $10k 5m bar, so it goes first. Holders, dev and bundles are unverified, and the invalidation is 5m buys falling below about 50% or 5m volume halving. Lend Cards and Ni Hao Mas are watch-only until their 5m volume reaches $10k. Paper only, nothing verified, not advice.
 
 ## Moving most in its scans, last 30 min (1h volume)
+- billy: $304,333 1h vol, $1,389 mcap, -95% 1h  
+  CA `Q7ZMt9VfQRfuka7QKgjRQ1xnLNV3rgVjqUVfUnBpump`
 - AICoin: $142,112 1h vol, $91,743 mcap, +206% 1h  
   CA `7Xkjbrr3s9u1JBaZyj66tTvwaHPSnFDAWon1qYNypump`
-- SI: $118,256 1h vol, $3,660 mcap, -96% 1h  
-  CA `H32xctVzxwiSTZ4vg7BgW5jZRAdfbC7aw2tXmqjwpump`
-- Nyajira: $90,488 1h vol, $40,340 mcap, -46% 1h  
-  CA `8cWGfiHyKqxgLrLtkPt2NnLkSUV2JbcLBf4RN6Fapump`
-- Nyajira: $79,662 1h vol, $1,373 mcap, -98% 1h  
-  CA `4KK5kAhvBjU5RD2CXjCnxpdtedKmvpG4i3KbMvTqpump`
-- SI: $73,993 1h vol, $3,460 mcap, -88% 1h  
+- SI: $75,340 1h vol, $3,560 mcap, -87% 1h  
   CA `CmUoTvE986qgTB1Kvo4NVbHXBH5Qa2PyGhe7GMDepump`
+- gtacoin: $73,605 1h vol, $395,623 mcap, -24% 1h  
+  CA `DSKM3d518BBaQShSKqaqZcG1XMRf81UFB6a1eavhSTNK`
+- Star: $67,230 1h vol, $4,972 mcap, +2% 1h  
+  CA `AJioyoixuytgtjmiXd6Wu9qs4enKxuGC5JrASSTr8hrX`
