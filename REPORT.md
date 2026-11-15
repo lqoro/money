@@ -1,13 +1,13 @@
 # Trencher live report
 
-Updated 2026-11-15T18:29:28Z (paper trading, never real money)
+Updated 2026-11-15T18:44:33Z (paper trading, never real money)
 
 - Equity: $74.23 (-25.8% vs $100 start)
 - Closed trades: 22, 3 wins
 - Fees paid: $14.78 (axiom $2.81, network $9.18, pool $2.66), plus $4.15 lost to slippage
 - New trades: WATCH-ONLY (scans and decides, buys nothing)
-- Brain: subscription, claude-haiku-5-5 for routine calls, claude-opus-5-5 for the daily review; 108 routine calls and 0 plan-limit hits in 48h
-- Watch log: 78 coins being followed, 1417 filed, 0 would-buys (6h follow, sampled every 2 min)
+- Brain: subscription, claude-haiku-5-5 for routine calls, claude-opus-5-5 for the daily review; 109 routine calls and 0 plan-limit hits in 48h
+- Watch log: 78 coins being followed, 1419 filed, 0 would-buys (6h follow, sampled every 2 min)
 
 ## Scorecard (after fees)
 - 22 closed, 3 won (14%), net $-25.79
@@ -73,9 +73,13 @@ Updated 2026-11-15T18:29:28Z (paper trading, never real money)
   CA `H4gHnZ3NCU7Z9XQwGX6YYJNyieGEW8pqwGRUcdSxpump`
 
 ## Last scan
-- 18:28Z: 3 coins, 3 with pairs, 0 passed the market filters, 0 researched
+- 18:44Z: 3 coins, 3 with pairs, 0 passed the market filters, 0 researched
 
 ## Coins it looked at, and why it passed
+- 18:36Z ANSEM (MIGRATED, $45,757 mcap, $4,983 5m vol): REJECT, Top 10 hold 34.1% ex-pool (>25%) (V13)  
+  CA `mAWnfGt4EHpsicnZnynCuZbPcK7YmrN5dNjnVLipump`
+- 18:33Z Nyajira (DIP, $65,801 mcap, $2,688 5m vol): PASS at conviction 3, PASS: Nyajira is a DIP with no catalyst, 5m flow at 0.67x pace, and its theme is at 0.67x. Bottom-buy rule and DIP flow gate both fail. (V1, V6)  
+  CA `8cWGfiHyKqxgLrLtkPt2NnLkSUV2JbcLBf4RN6Fapump`
 - 18:27Z 6STARS (FINAL_STRETCH, $21,198 mcap, $4,190 5m vol): PASS at conviction 3, PASS: 6STARS is a 1-hour-old pump.fun leader with $4.2k of 5m flow, one 5m candle up 23%, and 12 same-theme copies splitting the crowd. Blocker: flow below pace and chasing spike (V1, V6, V13).  
   CA `3VXqBquzevdXXBAMPJkJSX8sDnijLvZL9U1SxeGQpump`
 - 18:20Z BEAR (MIGRATED, $130,760 mcap, $5,363 5m vol): PASS at conviction 3, PASS: BEAR is 1.4% off a fresh high, 54 minutes old, with 5m flow at 0.27x its hourly pace. That's chasing a pump, not buying a pullback (V1, V6).  
@@ -92,14 +96,10 @@ Updated 2026-11-15T18:29:28Z (paper trading, never real money)
   CA `13EAww2eo8g1Xp9U7qrLNg1WoHFHKbs9xy2EQJjfpump`
 - 18:10Z TAIL (DIP, $70,750 mcap, $2,131 5m vol): REJECT, Dip with fading attention is a falling knife, not a dip (5m at 0.17x the hour's pace, under 0.6x)  
   CA `2tHPtosmh76mmJHeskid7nYUeHjGUQ4ZAYChwdGJpump`
-- 18:03Z gtacoin (DIP, $283,286 mcap, $9,521 5m vol): REJECT, Bundles: 6 linked wallet cluster(s) hold 96.9% of supply (>20%) (V17)  
-  CA `DSKM3d518BBaQShSKqaqZcG1XMRf81UFB6a1eavhSTNK`
-- 17:59Z GATO (DIP, $6,780,186 mcap, $2,407 5m vol): REJECT, Dev holds 3.0% (>1%) (V13, V17)  
-  CA `HsprHxBRgiVaQdRf3TnKNuZZtaX9JUSPgMFdAkk6pump`
 
 ## What its skips did next (last 48h)
 A skip "ran" if the coin reached the first target (1.5x) from the skip price before a 20% drop, "dumped" if the drop came first. Sampled every 10 min, followed 6h.
-- top 10 over 25%: blocked 19, ran 2, dumped 13, flat 2, open 2 (saving losses: keep it)
+- top 10 over 25%: blocked 20, ran 2, dumped 15, flat 2, open 1 (saving losses: keep it)
   - ran: rockstar up to 1.95x  
     CA `9HFUEab7sompLDPTAaTGkryMNGbtBaFMhHMVpJEBpump`
   - ran: VI up to 1.71x  
@@ -111,10 +111,10 @@ A skip "ran" if the coin reached the first target (1.5x) from the skip price bef
     CA `AiQUqe4zjiDssth2FsCoeQVaGtCtHYyKGX8U52rWpump`
   - ran: FUTA up to 2.77x  
     CA `FxoXV4C8DTSYeg5dSXrEsr45zzr8tpNbsrpoiZ8Kpump`
-- flow below pace: blocked 17, ran 1, dumped 12, flat 2, open 2 (saving losses: keep it)
+- flow below pace: blocked 18, ran 1, dumped 13, flat 2, open 2 (saving losses: keep it)
   - ran: PASSED up to 1.73x  
     CA `3XaH8VPUaUegqmnkYA8PXCWqQqD8doqdsGGfZyoYpump`
-- too new / sniping: blocked 16, ran 3, dumped 11, flat 0, open 2 (saving losses: keep it)
+- too new / sniping: blocked 16, ran 3, dumped 12, flat 0, open 1 (saving losses: keep it)
   - ran: Chick up to 1.66x  
     CA `Dueav76X9spnoLomhM2jMkkWorVggbeWucLs3YLupump`
   - ran: TOOLS up to 1.83x  
@@ -124,19 +124,19 @@ A skip "ran" if the coin reached the first target (1.5x) from the skip price bef
 - near the high / chasing: blocked 10, ran 1, dumped 9, flat 0, open 0 (saving losses: keep it)
   - ran: penny up to 1.6x  
     CA `5gmCPpuktJ7Svjgr4PPJBTosAFKB8K6Z45EGfSUmpump`
-- falling knife (code): blocked 6, ran 0, dumped 4, flat 0, open 2 (saving losses: keep it)
+- falling knife (code): blocked 6, ran 0, dumped 5, flat 1, open 0 (saving losses: keep it)
 - other: blocked 6, ran 2, dumped 3, flat 0, open 1 (mixed)
   - ran: TaoTao up to 1.53x  
     CA `G1KuEMuLrxWynFddQVnpdkQAhYFBwNJiuz1Lv7d9pump`
   - ran: SI up to 1.94x  
     CA `H2irVtPLfKoBJ69itZmhsedSPwBUTaubmUavc6Uapump`
-- falling knife / no higher low: blocked 5, ran 1, dumped 1, flat 3, open 0 (too few played out to judge)
-  - ran: CateGiving up to 1.57x  
-    CA `5XasjCnMPTczL9VZTDHgbK5sQzwkjnu41oLeHf5Wpump`
 - bundles over the line: blocked 5, ran 0, dumped 2, flat 0, open 3 (too few played out to judge)
 - crowd leaving / fading volume: blocked 4, ran 1, dumped 3, flat 0, open 0 (saving losses: keep it)
   - ran: NUREMBERG up to 1.62x  
     CA `7R3RnGmpV9mZXwSyHyKN5LEddiZRmGsYrAZPgDJqpump`
+- falling knife / no higher low: blocked 4, ran 1, dumped 0, flat 3, open 0 (too few played out to judge)
+  - ran: CateGiving up to 1.57x  
+    CA `5XasjCnMPTczL9VZTDHgbK5sQzwkjnu41oLeHf5Wpump`
 
 ## Daily review (2026-11-15, claude-opus-5-5)
 Nothing shows a positive after-cost edge. Across all 93 settled coins the simple plan nets -5.5%: about +4.3% before costs, wiped out by an estimated 9.8% round-trip cost on a $10 buy. With a 1.5x target, a -20% stop and 10% cost, a setup needs about 43% of coins to run just to break even. FINAL_STRETCH (n=20) sits at 45% and nets +1.5%, but its 95% range on that share is roughly 23-67%, and one winner turning into a loser moves the average by about 3 points. That result is probably optimistic anyway: the simulator appears to fill every stop at exactly -20%, while several coins in the logs went to about zero. The routine model logged zero would-buys in 24h (39 brain calls, all PASS), so there is nothing to compare against what it passed on. Its PASSed coins did better than the checklist failures (-3.3% vs -7.1% net), but both groups lose money. Honest answer: no edge yet, and one day of correlated samples can't show one.
@@ -179,11 +179,11 @@ Not quiet. The tape is fresh pump.fun and PumpSwap launches in their first hour,
 ## Moving most in its scans, last 30 min (1h volume)
 - BEAR: $235,205 1h vol, $130,760 mcap, +128% 1h  
   CA `3GN46GsmAUQSpHXtY3oasJFYAbp9RBzVoR7X8ar1pump`
-- TAIL: $154,812 1h vol, $70,750 mcap, +110% 1h  
-  CA `2tHPtosmh76mmJHeskid7nYUeHjGUQ4ZAYChwdGJpump`
-- YIELD: $145,500 1h vol, $12,972 mcap, -54% 1h  
-  CA `5Aj4qvLbvvnwokyNeHGWAFfgiRcpH8KodD1jLACqrYzf`
 - Pterodactyl: $121,555 1h vol, $35,753 mcap, +13% 1h  
   CA `8BMqmEFXDU6dWzU4we9Py5wRi8KpFQZSRPThQqLapump`
-- Nyajira: $71,564 1h vol, $66,555 mcap, -40% 1h  
-  CA `8cWGfiHyKqxgLrLtkPt2NnLkSUV2JbcLBf4RN6Fapump`
+- Busted: $91,083 1h vol, $1,407 mcap, -100% 1h  
+  CA `G69C53wwbhRDCpAkkoqBGWjeBfPoUsRMbNg3jmU8pump`
+- YIELD: $78,444 1h vol, $6,477 mcap, -67% 1h  
+  CA `5Aj4qvLbvvnwokyNeHGWAFfgiRcpH8KodD1jLACqrYzf`
+- 6STARS: $53,152 1h vol, $21,198 mcap, +952% 1h  
+  CA `3VXqBquzevdXXBAMPJkJSX8sDnijLvZL9U1SxeGQpump`
