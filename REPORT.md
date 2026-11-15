@@ -1,13 +1,13 @@
 # Trencher live report
 
-Updated 2026-11-15T05:05:51Z (paper trading, never real money)
+Updated 2026-11-15T05:20:57Z (paper trading, never real money)
 
 - Equity: $74.23 (-25.8% vs $100 start)
 - Closed trades: 22, 3 wins
 - Fees paid: $14.78 (axiom $2.81, network $9.18, pool $2.66), plus $4.15 lost to slippage
 - New trades: WATCH-ONLY (scans and decides, buys nothing)
-- Brain: subscription, claude-haiku-5-5 for routine calls, claude-opus-5-5 for the daily review; 34 routine calls and 0 plan-limit hits in 48h
-- Watch log: 74 coins being followed, 1282 filed, 0 would-buys (6h follow, sampled every 2 min)
+- Brain: subscription, claude-haiku-5-5 for routine calls, claude-opus-5-5 for the daily review; 36 routine calls and 0 plan-limit hits in 48h
+- Watch log: 77 coins being followed, 1282 filed, 0 would-buys (6h follow, sampled every 2 min)
 
 ## Scorecard (after fees)
 - 22 closed, 3 won (14%), net $-25.79
@@ -73,9 +73,15 @@ Updated 2026-11-15T05:05:51Z (paper trading, never real money)
   CA `H4gHnZ3NCU7Z9XQwGX6YYJNyieGEW8pqwGRUcdSxpump`
 
 ## Last scan
-- 05:05Z: 3 coins, 3 with pairs, 0 passed the market filters, 0 researched
+- 05:20Z: 2 coins, 2 with pairs, 0 passed the market filters, 0 researched
 
 ## Coins it looked at, and why it passed
+- 05:15Z meme (FINAL_STRETCH, $19,001 mcap, $33,787 5m vol): PASS at conviction 3, PASS: "memecoin" is a generic word with 8 same-ticker copies, a chasing spike (+27% on 5m, 6.6x hourly pace) and no printed higher low. Blocker: "chasing spike". (V1, V6, V13)  
+  CA `4ed5SsUJeXaDCyM7aGHoA5LBjQjEx3xzVGpYEcMvpump`
+- 05:12Z GATO (DIP, $6,838,995 mcap, $2,128 5m vol): REJECT, Dev holds 3.0% (>1%) (V13, V17)  
+  CA `HsprHxBRgiVaQdRf3TnKNuZZtaX9JUSPgMFdAkk6pump`
+- 05:12Z BOWSER (FINAL_STRETCH, $14,496 mcap, $4,758 5m vol): PASS at conviction 3, PASS: BOWSER chasing a spike, top 10 at 23.6%, and a bottom-buy gate with no catalyst and theme pace at 0.81x. Farm-shaped crowd of 24 copies. (V1, V6, V13)  
+  CA `FThkP96RFL7NnuxTrrbhQza3keGQ4pVh5qGtHJ9Npump`
 - 04:59Z WANTED (MIGRATED, $1,371,291 mcap, $4,827 5m vol): PASS at conviction 3, PASS: WANTED flow is below pace, no higher low has printed, and the theme is cooling. (V1, V6)  
   CA `CiMyaPC9icicJxkFqvqpgL2YT2FjEQmGx1YVdG78pump`
 - 04:51Z HODL (FINAL_STRETCH, $17,787 mcap, $5,676 5m vol): REJECT, Top 10 hold 26.0% ex-pool (>25%) (V13)  
@@ -90,16 +96,10 @@ Updated 2026-11-15T05:05:51Z (paper trading, never real money)
   CA `FR4yp7buct5Rz8yfic4zwVVcfLySmrqw3tFp18UCpump`
 - 04:13Z WANTED (MIGRATED, $1,405,343 mcap, $5,314 5m vol): PASS at conviction 3, PASS: 5m flow at 0.45x the hourly pace, first resistance only 1.13x away, theme fading in a 23-copy vamp field. (V1, V6)  
   CA `CiMyaPC9icicJxkFqvqpgL2YT2FjEQmGx1YVdG78pump`
-- 04:05Z GATO (DIP, $7,028,724 mcap, $4,668 5m vol): REJECT, Dip with fading attention is a falling knife, not a dip (5m at 0.49x the hour's pace, under 0.6x)  
-  CA `HsprHxBRgiVaQdRf3TnKNuZZtaX9JUSPgMFdAkk6pump`
-- 04:03Z MIL (FINAL_STRETCH, $20,352 mcap, $20,139 5m vol): REJECT, RugCheck danger: Creator history of rugged tokens  
-  CA `8655LtfvozXLSJWrzcmwVeK13s5Gvn49UXFHYcYzpump`
-- 03:54Z BOWSER (FINAL_STRETCH, $19,896 mcap, $9,972 5m vol): PASS at conviction 2, PASS: vamp field of 19 same-name copies, 5m volume $9,972 under the $10k bar, and no radar mention of the story. Blocker: "split crowd" (V1, V3).  
-  CA `FThkP96RFL7NnuxTrrbhQza3keGQ4pVh5qGtHJ9Npump`
 
 ## What its skips did next (last 48h)
 A skip "ran" if the coin reached the first target (1.5x) from the skip price before a 20% drop, "dumped" if the drop came first. Sampled every 10 min, followed 6h.
-- RugCheck danger: blocked 10, ran 2, dumped 5, flat 0, open 3 (saving losses: keep it)
+- RugCheck danger: blocked 10, ran 2, dumped 6, flat 0, open 2 (saving losses: keep it)
   - ran: Ivy up to 1.88x  
     CA `DxNF3Qxd8XeUBdz7ReRdoiFzRmNDKbSz4c2oA7aRpump`
   - ran: SI up to 1.93x  
@@ -110,13 +110,13 @@ A skip "ran" if the coin reached the first target (1.5x) from the skip price bef
 - flow below pace: blocked 5, ran 0, dumped 4, flat 0, open 1 (saving losses: keep it)
 - falling knife (code): blocked 4, ran 0, dumped 3, flat 0, open 1 (saving losses: keep it)
 - too new / sniping: blocked 3, ran 0, dumped 3, flat 0, open 0 (saving losses: keep it)
-- thin 5m volume: blocked 3, ran 0, dumped 3, flat 0, open 0 (saving losses: keep it)
+- near the high / chasing: blocked 3, ran 0, dumped 2, flat 0, open 1 (too few played out to judge)
 - crowd leaving / fading volume: blocked 2, ran 1, dumped 1, flat 0, open 0 (too few played out to judge)
   - ran: NUREMBERG up to 1.62x  
     CA `7R3RnGmpV9mZXwSyHyKN5LEddiZRmGsYrAZPgDJqpump`
+- thin 5m volume: blocked 2, ran 0, dumped 2, flat 0, open 0 (too few played out to judge)
 - dev share over 1%: blocked 1, ran 0, dumped 0, flat 0, open 1 (too few played out to judge)
 - falling knife / no higher low: blocked 1, ran 0, dumped 0, flat 0, open 1 (too few played out to judge)
-- other: blocked 1, ran 0, dumped 1, flat 0, open 0 (too few played out to judge)
 
 ## Daily review (2026-11-14, claude-opus-5-5)
 This window has no evidence in it. In 24 hours zero coins were logged at any stage: none failed the checklist, none were passed by the brain, none were would-buys and none went unresearched. Nothing settled, nothing is still being followed, and the brain was called once in 48 hours. With n=0, nobody can say anything about an after-cost edge, and the question of whether the routine model's would-buys beat the coins it passed on has no data to answer. The only real finding is that the pipeline looks stalled. A scanner running around the clock should pass at least a handful of coins through the market filters every day. It's also Nov 14, four days after the planned Nov 10 test, so it's worth confirming the watch-only week was captured and archived before anyone talks about edge.
@@ -157,13 +157,13 @@ This window has no evidence in it. In 24 hours zero coins were logged at any sta
 Trencher: The trenches are active but thin. Animal and pet jokes are the most common shape in the scan (Bowser Farts, Unstable and Stable Inu, a cat token, marmot "invest", AiDiglet), but most of them have almost no 5-minute flow, and the cat token and marmot are at 0 volume and falling. Person and object names are the other live group: penny ($85k cap, $3.8k 5m, 62% buys, +47% in the hour, 0.9h old) and Sonny Angel (29% buys, fading). Dollar and "useless" jokes are mixed (Stable Inu is $86 on 5m, Useless Market is -8%), and grand theft ape / GTA is fading (0% buys). No coin in this scan reaches the $10k 5-minute bar, so nothing is an entry; penny and Bowser Farts (FThkP96, 75% buys, +120% in the hour, $1.2k 5m) are research-only, and size waits for volume. The crawler's UpCat, JASON, WANTED and "Stable Inu on Raydium" don't appear in this scan, so I'm treating them as unverified and not using them as setups. Paper only, not advice.
 
 ## Moving most in its scans, last 30 min (1h volume)
-- MIL: $195,479 1h vol, $64,634 mcap, +127% 1h  
-  CA `8655LtfvozXLSJWrzcmwVeK13s5Gvn49UXFHYcYzpump`
-- penny: $95,632 1h vol, $27,924 mcap, -65% 1h  
-  CA `5gmCPpuktJ7Svjgr4PPJBTosAFKB8K6Z45EGfSUmpump`
 - WANTED: $94,434 1h vol, $1,371,291 mcap, -3% 1h  
   CA `CiMyaPC9icicJxkFqvqpgL2YT2FjEQmGx1YVdG78pump`
-- JASON: $87,791 1h vol, $1,347 mcap, -100% 1h  
+- penny: $80,939 1h vol, $25,733 mcap, -72% 1h  
+  CA `5gmCPpuktJ7Svjgr4PPJBTosAFKB8K6Z45EGfSUmpump`
+- JASON: $70,378 1h vol, $1,367 mcap, -100% 1h  
   CA `FR4yp7buct5Rz8yfic4zwVVcfLySmrqw3tFp18UCpump`
+- meme: $62,333 1h vol, $18,520 mcap, +516% 1h  
+  CA `4ed5SsUJeXaDCyM7aGHoA5LBjQjEx3xzVGpYEcMvpump`
 - HODL: $48,797 1h vol, $22,004 mcap, +873% 1h  
   CA `F63zJ8AM4RnHHxnHzGAPgM8Amv8KTSqG9knPd7yvpump`
