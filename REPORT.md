@@ -1,13 +1,13 @@
 # Trencher live report
 
-Updated 2026-11-15T08:37:37Z (paper trading, never real money)
+Updated 2026-11-15T08:52:37Z (paper trading, never real money)
 
 - Equity: $74.23 (-25.8% vs $100 start)
 - Closed trades: 22, 3 wins
 - Fees paid: $14.78 (axiom $2.81, network $9.18, pool $2.66), plus $4.15 lost to slippage
 - New trades: WATCH-ONLY (scans and decides, buys nothing)
-- Brain: subscription, claude-haiku-5-5 for routine calls, claude-opus-5-5 for the daily review; 55 routine calls and 0 plan-limit hits in 48h
-- Watch log: 57 coins being followed, 1332 filed, 0 would-buys (6h follow, sampled every 2 min)
+- Brain: subscription, claude-haiku-5-5 for routine calls, claude-opus-5-5 for the daily review; 58 routine calls and 0 plan-limit hits in 48h
+- Watch log: 54 coins being followed, 1337 filed, 0 would-buys (6h follow, sampled every 2 min)
 
 ## Scorecard (after fees)
 - 22 closed, 3 won (14%), net $-25.79
@@ -73,9 +73,13 @@ Updated 2026-11-15T08:37:37Z (paper trading, never real money)
   CA `H4gHnZ3NCU7Z9XQwGX6YYJNyieGEW8pqwGRUcdSxpump`
 
 ## Last scan
-- 08:37Z: 6 coins, 6 with pairs, 0 passed the market filters, 0 researched
+- 08:52Z: 4 coins, 4 with pairs, 0 passed the market filters, 0 researched
 
 ## Coins it looked at, and why it passed
+- 08:48Z PAW (MIGRATED, $37,098 mcap, $5,817 5m vol): PASS at conviction 3, PASS: chasing a 9% pullback, not the leader of its own ticker, and the first resistance is only 1.1x away. Blockers: "chasing", "vamp field", "target too close". (V1, V6)  
+  CA `HxPrDS84HH3ijsJhiCLF55MN7DqLfxzbt99RnSuSpump`
+- 08:40Z HSI (MIGRATED, $30,066 mcap, $12,190 5m vol): PASS at conviction 3, PASS: thirteen minutes old, 30 copies of the same name, and no higher low. Blocker "too new" with "split crowd" behind it. Not a bottom buy without a catalyst (V1, V6, V13).  
+  CA `FZjyGVc5Su7kJzLXUaz5ZqtotjT97LhWQ2jacrY4pump`
 - 08:33Z starShit (FINAL_STRETCH, $23,673 mcap, $9,505 5m vol): PASS at conviction 3, PASS: chasing spike. StarShit is up 93% in 5 minutes and 366% in an hour, 11% off a peak printed six minutes ago, with no higher low. Vamp field with theme flow at 0.62x pace and no X. (V1, V6, V13)  
   CA `85J9oUpaNRsELufsxopZPRbfYqNSNLhB6R2LNAWspump`
 - 08:29Z HOGE (DIP, $81,902 mcap, $17,722 5m vol): REJECT, Dip with fading attention is a falling knife, not a dip (5m at 0.57x the hour's pace, under 0.6x)  
@@ -92,10 +96,6 @@ Updated 2026-11-15T08:37:37Z (paper trading, never real money)
   CA `82Z6CcE5g3o1jW3vgtcqr95jP4XFx8jg1SJe8ikepump`
 - 07:41Z PAW (FINAL_STRETCH, $22,440 mcap, $8,425 5m vol): PASS at conviction 2, PASS: Light a Paw is a pet-memorial site with no real product, 5m flow under $10k, and the theme is at 0.23x pace. Wrong setup for a bottom buy. (V1, V6, V13)  
   CA `HxPrDS84HH3ijsJhiCLF55MN7DqLfxzbt99RnSuSpump`
-- 07:40Z GTA (MIGRATED, $82,585 mcap, $2,575 5m vol): PASS at conviction 3, PASS — 5m flow is $2.6k with buyers at 49%, no printed higher low, and the top 10 hold 21.5%. Nothing here is a breakout. (V1, V6, V13)  
-  CA `G9ZMir6uh66Y7viPkXAy7myA9jjE4T1YgheVUmGDpump`
-- 07:26Z CBUCKS (MIGRATED, $2,955,743 mcap, $4,131 5m vol): REJECT, Top 10 hold 26.2% ex-pool (>25%) (V13)  
-  CA `DtcicPCKTKeAh7TDEzTym3hXeoHAoMiBdYJhMYxZpump`
 
 ## What its skips did next (last 48h)
 A skip "ran" if the coin reached the first target (1.5x) from the skip price before a 20% drop, "dumped" if the drop came first. Sampled every 10 min, followed 6h.
@@ -107,17 +107,17 @@ A skip "ran" if the coin reached the first target (1.5x) from the skip price bef
   - ran: FUTA up to 2.77x  
     CA `FxoXV4C8DTSYeg5dSXrEsr45zzr8tpNbsrpoiZ8Kpump`
 - top 10 over 25%: blocked 10, ran 0, dumped 7, flat 1, open 2 (saving losses: keep it)
-- flow below pace: blocked 7, ran 0, dumped 4, flat 0, open 3 (saving losses: keep it)
-- falling knife (code): blocked 5, ran 0, dumped 4, flat 0, open 1 (saving losses: keep it)
-- near the high / chasing: blocked 5, ran 1, dumped 4, flat 0, open 0 (saving losses: keep it)
+- flow below pace: blocked 6, ran 0, dumped 3, flat 0, open 3 (saving losses: keep it)
+- near the high / chasing: blocked 6, ran 1, dumped 4, flat 0, open 1 (saving losses: keep it)
   - ran: penny up to 1.6x  
     CA `5gmCPpuktJ7Svjgr4PPJBTosAFKB8K6Z45EGfSUmpump`
+- falling knife (code): blocked 5, ran 0, dumped 4, flat 0, open 1 (saving losses: keep it)
+- too new / sniping: blocked 5, ran 1, dumped 4, flat 0, open 0 (saving losses: keep it)
+  - ran: Chick up to 1.66x  
+    CA `Dueav76X9spnoLomhM2jMkkWorVggbeWucLs3YLupump`
 - falling knife / no higher low: blocked 4, ran 1, dumped 0, flat 1, open 2 (too few played out to judge)
   - ran: CateGiving up to 1.57x  
     CA `5XasjCnMPTczL9VZTDHgbK5sQzwkjnu41oLeHf5Wpump`
-- too new / sniping: blocked 4, ran 1, dumped 3, flat 0, open 0 (saving losses: keep it)
-  - ran: Chick up to 1.66x  
-    CA `Dueav76X9spnoLomhM2jMkkWorVggbeWucLs3YLupump`
 - dev share over 1%: blocked 2, ran 0, dumped 0, flat 0, open 2 (too few played out to judge)
 - crowd leaving / fading volume: blocked 2, ran 1, dumped 1, flat 0, open 0 (too few played out to judge)
   - ran: NUREMBERG up to 1.62x  
@@ -162,16 +162,16 @@ This window has no evidence in it. In 24 hours zero coins were logged at any sta
 - [2026-11-02 20:25] I expected Slingoor, a clean MIGRATED leader with $25k of 5m flow at pace and a 0.77 buy share, to retest its $408k high from $304k. It never went green (0.98x peak) and hit the -20% stop in 2 minutes, a -$2.86 probe. My own thesis admitted there was no printed higher low after a peak only 6 minutes old, so this confirms the money-shape rule: buy share and flow are not structure (V1, V6). Next time a MIGRATED pullback with no higher low above the hourly low is a PASS with blocker "no higher low", not a probe. This is one loss, so it adds no new ban beyond the rule I already have.
 
 ## Meta right now
-The trenches are not quiet. The active meta is animal and dog riffs on pumpswap and pump.fun: HOGE (+234% 1h, 65% buys, $35k 5m at a $186k cap), TAIL (+289% 1h, 61% buys, $9.6k 5m), and PAW (55% buys, $8.4k 5m, still pre-bond). Fading: BabyDoge (25% buys), penny (-41%), and the duplicate FUTA tickers, while old coins like GATO, FUTA and DIGS have dead 5m volume. The crawler's numbers don't match scan_movers (Chick is -81% 1h with $1.7k 5m at a $13k cap, and its PAW and TAIL figures differ), so I'm trusting scan_movers and dropping Chick as a lead. Setups to research: HOGE only on a pullback that holds volume, stop under that low, and only after confirming it's the real Hoge and not a Doge copy (V1, V6); TAIL and PAW only if 5m clears $10k with buys holding above about 60% (V1, V6). PumpBank and Owed are six-minute-old spikes where 5m volume equals 1h volume, so they're passes until they show sustained flow (V13). Holder, dev and bundle checks still run on each coin before any size. Paper only, not advice.
+Not quiet. About half of the 15 scan_movers coins are under two hours old on PumpSwap or pump.fun, and about ten of them did $10k+ in the last hour. Two themes show up across several coins. Animal and dog riffs (HOGE, HSI, PAW, DIGS, Chick, GATO) are split: HSI and PAW are still buying while HOGE is down 59% in an hour. A finance/joke cluster (PumpBank, Owed, Useless Market, Good To Ape, CLOCKED OUT) has big 1h volume but almost no 5m flow, so it's fading. The web only confirms the fade: DOGE is down about 40% and headlines are asking whether memecoin hype is dead. Setups to research, not buy: HSI (12k 5m, 59% buys, 12 min old) and starShit (9.6k 5m, 64% buys, +405% 1h), only if 5m clears $10k with buyers holding. HOGE (-59% 1h, 55% buys) only on a pullback that holds volume, after confirming it's the real Hoge and not a Doge copy, with the stop under the recent low; its prior peak is unverified. The crawler's HOGE/TAIL/PAW numbers didn't match scan_movers, so I used scan_movers only. Holder, dev and bundle checks still run on each coin before any size. Paper only, not advice.
 
 ## Moving most in its scans, last 30 min (1h volume)
 - HOGE: $375,722 1h vol, $84,036 mcap, -59% 1h  
   CA `FVzqGqRmr4UH1Fif6dewmwbJ1p4YUZCu8dcw4Efopump`
-- PAW: $75,009 1h vol, $22,891 mcap, -21% 1h  
+- PumpBank: $82,771 1h vol, $5,646 mcap, -79% 1h  
+  CA `AGMRDpWgZoVjnBBTjPpye522dtcaBUwLyb5LhT23pump`
+- PAW: $65,863 1h vol, $37,098 mcap, +18% 1h  
   CA `HxPrDS84HH3ijsJhiCLF55MN7DqLfxzbt99RnSuSpump`
-- TaoTao: $70,244 1h vol, $4,353 mcap, -85% 1h  
-  CA `G1KuEMuLrxWynFddQVnpdkQAhYFBwNJiuz1Lv7d9pump`
 - starShit: $63,207 1h vol, $25,681 mcap, +405% 1h  
   CA `85J9oUpaNRsELufsxopZPRbfYqNSNLhB6R2LNAWspump`
-- GATO: $45,601 1h vol, $4,121 mcap, +10% 1h  
-  CA `3xJUcnUzFwjhkibsAurfX28Kh8AbrraEo17p7pSqpump`
+- HSI: $60,457 1h vol, $30,066 mcap, -34% 1h  
+  CA `FZjyGVc5Su7kJzLXUaz5ZqtotjT97LhWQ2jacrY4pump`
