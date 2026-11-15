@@ -1,13 +1,13 @@
 # Trencher live report
 
-Updated 2026-11-15T17:43:04Z (paper trading, never real money)
+Updated 2026-11-15T17:58:44Z (paper trading, never real money)
 
 - Equity: $74.23 (-25.8% vs $100 start)
 - Closed trades: 22, 3 wins
 - Fees paid: $14.78 (axiom $2.81, network $9.18, pool $2.66), plus $4.15 lost to slippage
 - New trades: WATCH-ONLY (scans and decides, buys nothing)
-- Brain: subscription, claude-haiku-5-5 for routine calls, claude-opus-5-5 for the daily review; 101 routine calls and 0 plan-limit hits in 48h
-- Watch log: 72 coins being followed, 1411 filed, 0 would-buys (6h follow, sampled every 2 min)
+- Brain: subscription, claude-haiku-5-5 for routine calls, claude-opus-5-5 for the daily review; 103 routine calls and 0 plan-limit hits in 48h
+- Watch log: 72 coins being followed, 1413 filed, 0 would-buys (6h follow, sampled every 2 min)
 
 ## Scorecard (after fees)
 - 22 closed, 3 won (14%), net $-25.79
@@ -73,9 +73,13 @@ Updated 2026-11-15T17:43:04Z (paper trading, never real money)
   CA `H4gHnZ3NCU7Z9XQwGX6YYJNyieGEW8pqwGRUcdSxpump`
 
 ## Last scan
-- 17:42Z: 5 coins, 5 with pairs, 0 passed the market filters, 0 researched
+- 17:57Z: 9 coins, 9 with pairs, 1 passed the market filters, 1 researched
 
 ## Coins it looked at, and why it passed
+- 17:58Z Busted (MIGRATED, $698,317 mcap, $13,813 5m vol): PASS at conviction 4, PASS: no catalyst for a bottom-zone buy, and 26 same-ticker copies with the project's own X unverified. Blocker "no catalyst" (V1, V13).  
+  CA `G69C53wwbhRDCpAkkoqBGWjeBfPoUsRMbNg3jmU8pump`
+- 17:51Z Helicat (FINAL_STRETCH, $25,567 mcap, $4,986 5m vol): PASS at conviction 4, PASS — chasing spike. Helicat is +58% on 5m at 6.9x its hourly pace, sitting on its high with no printed higher low, and its 5m flow is $5k under the $10k bar. (chasing spike)  
+  CA `9aJAybSJMJUyNVuneNQdc6rDc8iXRMbXarLpGDrpump`
 - 17:39Z Tagoh (MIGRATED, $30,784 mcap, $4,350 5m vol): REJECT, Top 10 hold 26.7% ex-pool (>25%) (V13)  
   CA `5Y281ZwmoS1c8kYYu32yqqMaKia7kHnDA7HwMfArcSo3`
 - 17:38Z Nyajira (MIGRATED, $97,209 mcap, $9,896 5m vol): PASS at conviction 4, PASS: no breakout. Nyajira is 23% off a $126k peak and still falling (5m -4%), not pushing back into the high. No printed higher low, and the 5m tape is $9.9k, just under the bar. Blocker: "no breakout" (V1, V6).  
@@ -92,14 +96,10 @@ Updated 2026-11-15T17:43:04Z (paper trading, never real money)
   CA `HsprHxBRgiVaQdRf3TnKNuZZtaX9JUSPgMFdAkk6pump`
 - 16:53Z Nyajira (MIGRATED, $60,978 mcap, $3,889 5m vol): PASS at conviction 3, PASS. Flow is below pace, 5m is under $10k, and the entry sits mid-range above a fresh higher low in a vamp field. Dead story, no catalyst. (V1, V6)  
   CA `8cWGfiHyKqxgLrLtkPt2NnLkSUV2JbcLBf4RN6Fapump`
-- 16:51Z BIG (MIGRATED, $1,421,964 mcap, $2,916 5m vol): REJECT, Bundles: 1 linked wallet cluster(s) hold 42.9% of supply (>20%) (V17)  
-  CA `34DXEU2ttEtBSb1TqGJm7izgvYTTkqKcCoiNWdPDpump`
-- 16:45Z gtacoin (DIP, $357,008 mcap, $2,761 5m vol): REJECT, Dip with fading attention is a falling knife, not a dip (5m at 0.57x the hour's pace, under 0.6x)  
-  CA `DSKM3d518BBaQShSKqaqZcG1XMRf81UFB6a1eavhSTNK`
 
 ## What its skips did next (last 48h)
 A skip "ran" if the coin reached the first target (1.5x) from the skip price before a 20% drop, "dumped" if the drop came first. Sampled every 10 min, followed 6h.
-- top 10 over 25%: blocked 21, ran 2, dumped 13, flat 2, open 4 (saving losses: keep it)
+- top 10 over 25%: blocked 20, ran 2, dumped 12, flat 2, open 4 (saving losses: keep it)
   - ran: rockstar up to 1.95x  
     CA `9HFUEab7sompLDPTAaTGkryMNGbtBaFMhHMVpJEBpump`
   - ran: VI up to 1.71x  
@@ -121,7 +121,7 @@ A skip "ran" if the coin reached the first target (1.5x) from the skip price bef
     CA `9Ei1d97U7M8m4t3fof7c8MUECtmzgqbQCo81cGGzpump`
   - ran: twert up to 1.81x  
     CA `8WvWwttzaLfW1nbjx6wmYL5jozWpvy95WktAg5cipump`
-- near the high / chasing: blocked 9, ran 1, dumped 8, flat 0, open 0 (saving losses: keep it)
+- near the high / chasing: blocked 10, ran 1, dumped 8, flat 0, open 1 (saving losses: keep it)
   - ran: penny up to 1.6x  
     CA `5gmCPpuktJ7Svjgr4PPJBTosAFKB8K6Z45EGfSUmpump`
 - falling knife (code): blocked 6, ran 0, dumped 4, flat 0, open 2 (saving losses: keep it)
@@ -181,9 +181,9 @@ Not quiet. The volume is in one cluster: short money and finance-pun names launc
   CA `3GN46GsmAUQSpHXtY3oasJFYAbp9RBzVoR7X8ar1pump`
 - Nyajira: $113,814 1h vol, $97,209 mcap, +139% 1h  
   CA `8cWGfiHyKqxgLrLtkPt2NnLkSUV2JbcLBf4RN6Fapump`
-- Dollar: $106,884 1h vol, $2,404 mcap, -92% 1h  
+- Dollar: $107,753 1h vol, $4,675 mcap, -83% 1h  
   CA `4JhX8T75P9z4gk91SBnQeAb7h7qCe7iWAiVgucVypump`
+- Busted: $97,355 1h vol, $698,317 mcap, +24% 1h  
+  CA `G69C53wwbhRDCpAkkoqBGWjeBfPoUsRMbNg3jmU8pump`
 - Pterodactyl: $68,989 1h vol, $30,259 mcap, -8% 1h  
   CA `8BMqmEFXDU6dWzU4we9Py5wRi8KpFQZSRPThQqLapump`
-- GATO: $38,793 1h vol, $6,633,582 mcap, +2% 1h  
-  CA `HsprHxBRgiVaQdRf3TnKNuZZtaX9JUSPgMFdAkk6pump`
