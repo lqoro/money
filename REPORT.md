@@ -1,13 +1,13 @@
 # Trencher live report
 
-Updated 2026-11-15T01:33:40Z (paper trading, never real money)
+Updated 2026-11-15T01:48:54Z (paper trading, never real money)
 
 - Equity: $74.23 (-25.8% vs $100 start)
 - Closed trades: 22, 3 wins
 - Fees paid: $14.78 (axiom $2.81, network $9.18, pool $2.66), plus $4.15 lost to slippage
 - New trades: WATCH-ONLY (scans and decides, buys nothing)
-- Brain: subscription, claude-haiku-5-5 for routine calls, claude-opus-5-5 for the daily review; 14 routine calls and 0 plan-limit hits in 48h
-- Watch log: 37 coins being followed, 1282 filed, 0 would-buys (6h follow, sampled every 2 min)
+- Brain: subscription, claude-haiku-5-5 for routine calls, claude-opus-5-5 for the daily review; 16 routine calls and 0 plan-limit hits in 48h
+- Watch log: 41 coins being followed, 1282 filed, 0 would-buys (6h follow, sampled every 2 min)
 
 ## Scorecard (after fees)
 - 22 closed, 3 won (14%), net $-25.79
@@ -73,9 +73,17 @@ Updated 2026-11-15T01:33:40Z (paper trading, never real money)
   CA `H4gHnZ3NCU7Z9XQwGX6YYJNyieGEW8pqwGRUcdSxpump`
 
 ## Last scan
-- 01:33Z: 4 coins, 4 with pairs, 0 passed the market filters, 0 researched
+- 01:48Z: 3 coins, 3 with pairs, 0 passed the market filters, 0 researched
 
 ## Coins it looked at, and why it passed
+- 01:45Z PEGCOIN (FINAL_STRETCH, $18,640 mcap, $1,998 5m vol): REJECT, 5m volume $1,998 is dead (<$2,000) (V1)  
+  CA `2Tie3KmpX86nQEAjVCddYQWxkziKgPw2E6L7t4oLpump`
+- 01:39Z JENSEN (MIGRATED, $79,229 mcap, $11,633 5m vol): PASS at conviction 3, PASS: JENSEN is down 96% off a $1.9M peak, down 78% in the last hour, and has no printed higher low. It's a falling knife with 19 copies riding the name. Blocker: falling knife (V1, V6).  
+  CA `B2YpP21vQBESJ2jtnuhPujEUT61KVRxZ2X5gsDcUpump`
+- 01:35Z AMS (MIGRATED, $71,051 mcap, $16,235 5m vol): REJECT, Top 10 hold 27.6% ex-pool (>25%) (V13)  
+  CA `4b3ypv8i8vKUfCfETpbbPSLtvvW39eQVt5M41PxCpump`
+- 01:34Z DACAT (MIGRATED, $125,317 mcap, $18,872 5m vol): REJECT, Top 10 hold 28.9% ex-pool (>25%) (V13)  
+  CA `ErtyXjRNeCkcKsrJJ8NwGCVQAoYQoVPnzs6Fr2Jmpump`
 - 01:32Z DUVAL (MIGRATED, $205,794 mcap, $27,355 5m vol): REJECT, RugCheck danger: Top 10 holders high ownership  
   CA `3k62fdCfbP9TsoWbdCUrUu21ExzKyxfPwJsZ2REYpump`
 - 01:30Z GTASZN (MIGRATED, $158,383 mcap, $9,188 5m vol): PASS at conviction 3, PASS — up 99% on the 5m, 7% off a 14-minute-old peak, and five coins share the ticker. Chasing a spike in a crowded field (V1, V6, V13).  
@@ -88,31 +96,19 @@ Updated 2026-11-15T01:33:40Z (paper trading, never real money)
   CA `7N2g5tHX2isAXyKmtUek72waREtNKSFuR6KW2xthpump`
 - 01:19Z HYGG (MIGRATED, $411,616 mcap, $4,883 5m vol): PASS at conviction 2, PASS: flow at 0.16x its hourly pace, sellers 111 to 67 on 5m, and no printed higher low. The HYPE riff is fading and 13 copies split the crowd. (V1, V6, V13)  
   CA `HHoDt9mEET28qFFWtUPNTqGcmRQPh3TJChAWHmBopump`
-- 01:16Z worth (MIGRATED, $52,585 mcap, $12,994 5m vol): REJECT, Top 10 hold 26.9% ex-pool (>25%) (V13)  
-  CA `7mH4PaR9BMxAid2i1QNDBmziAwxyXBsPNKSMiWySpump`
-- 01:07Z Bear (MIGRATED, $51,972 mcap, $3,237 5m vol): REJECT, RugCheck danger: Creator history of rugged tokens  
-  CA `AvRSpY1rPA9iVFxYHc5D5JQW6oU5tjGQZdsW2e5upump`
-- 01:07Z GATO (DIP, $7,566,623 mcap, $6,882 5m vol): REJECT, Dev holds 3.0% (>1%) (V13, V17)  
-  CA `HsprHxBRgiVaQdRf3TnKNuZZtaX9JUSPgMFdAkk6pump`
-- 00:55Z BUSTED (MIGRATED, $76,828 mcap, $73,070 5m vol): PASS at conviction 3, PASS: BUSTED is six minutes old, 11x its hourly 5m pace after a spike, with no printed higher low and 20 copies of its name in the field. Too new to touch. (V1, V6)  
-  CA `8p11yHxwiKtcFy1QZ68iec2xcFzpXJeMExXLFz8Hpump`
 
 ## What its skips did next (last 48h)
 A skip "ran" if the coin reached the first target (1.5x) from the skip price before a 20% drop, "dumped" if the drop came first. Sampled every 10 min, followed 6h.
-- RugCheck danger: blocked 5, ran 1, dumped 0, flat 0, open 4 (too few played out to judge)
-  - ran: PEGCOIN up to 1.57x  
-    CA `2Tie3KmpX86nQEAjVCddYQWxkziKgPw2E6L7t4oLpump`
-- top 10 over 25%: blocked 4, ran 0, dumped 2, flat 0, open 2 (too few played out to judge)
+- top 10 over 25%: blocked 6, ran 0, dumped 3, flat 0, open 3 (saving losses: keep it)
+- RugCheck danger: blocked 4, ran 0, dumped 3, flat 0, open 1 (saving losses: keep it)
 - flow below pace: blocked 3, ran 0, dumped 1, flat 0, open 2 (too few played out to judge)
 - falling knife (code): blocked 3, ran 0, dumped 1, flat 0, open 2 (too few played out to judge)
-- near the high / chasing: blocked 3, ran 1, dumped 1, flat 0, open 1 (too few played out to judge)
-  - ran: AMS up to 2.15x  
-    CA `4b3ypv8i8vKUfCfETpbbPSLtvvW39eQVt5M41PxCpump`
 - too new / sniping: blocked 2, ran 0, dumped 2, flat 0, open 0 (too few played out to judge)
 - dev share over 1%: blocked 1, ran 0, dumped 0, flat 0, open 1 (too few played out to judge)
 - crowd leaving / fading volume: blocked 1, ran 0, dumped 0, flat 0, open 1 (too few played out to judge)
-- thin 5m volume: blocked 1, ran 0, dumped 1, flat 0, open 0 (too few played out to judge)
+- falling knife / no higher low: blocked 1, ran 0, dumped 0, flat 0, open 1 (too few played out to judge)
 - other: blocked 1, ran 0, dumped 1, flat 0, open 0 (too few played out to judge)
+- thin 5m volume: blocked 1, ran 0, dumped 0, flat 0, open 1 (too few played out to judge)
 
 ## Daily review (2026-11-14, claude-opus-5-5)
 This window has no evidence in it. In 24 hours zero coins were logged at any stage: none failed the checklist, none were passed by the brain, none were would-buys and none went unresearched. Nothing settled, nothing is still being followed, and the brain was called once in 48 hours. With n=0, nobody can say anything about an after-cost edge, and the question of whether the routine model's would-buys beat the coins it passed on has no data to answer. The only real finding is that the pipeline looks stalled. A scanner running around the clock should pass at least a handful of coins through the market filters every day. It's also Nov 14, four days after the planned Nov 10 test, so it's worth confirming the watch-only week was captured and archived before anyone talks about edge.
@@ -150,16 +146,16 @@ This window has no evidence in it. In 24 hours zero coins were logged at any sta
 - [2026-11-02 20:25] I expected Slingoor, a clean MIGRATED leader with $25k of 5m flow at pace and a 0.77 buy share, to retest its $408k high from $304k. It never went green (0.98x peak) and hit the -20% stop in 2 minutes, a -$2.86 probe. My own thesis admitted there was no printed higher low after a peak only 6 minutes old, so this confirms the money-shape rule: buy share and flow are not structure (V1, V6). Next time a MIGRATED pullback with no higher low above the hourly low is a PASS with blocker "no higher low", not a probe. This is one loss, so it adds no new ban beyond the rule I already have.
 
 ## Meta right now
-The trenches are active and young: nearly every mover is under about 1.5h old, and the volume is in pump.fun/PumpSwap coins riffing on whatever is trending. Four themes repeat across several coins: name-drop riffs on people and big names (Lucia Caminos, $486k cap, +1158% in an hour; Doge Jensen, 82% buys), animal and dog riffs (The Black Bear and Snoopy Wif Hat, both with real 5m volume), trending-ticker copies (HYGG riding HYPE, +751% but only 43% buys now, so sellers are taking over), and RWA-style jokes (Real World Asses, 96% buys on $15k 5m at a $126k cap). Fading are the jokey names with no bid (begwork, JOB, mine pad, NUREMBERG, and PerpPairs at zero 5m volume). Setups to research, not buy yet: RWA for its buy pressure (the cleanest flow in the scan), Bear for its volume depth, and Lucia only as a dip watch since it is a chase at this cap; DOJE's $3.4k 5m is below the $10k line. The crawler's red-pill names (RM, RED COIN, MarsCoin) aren't in the scan, so I'm not using them, and holder, dev and bundle checks still have to run on each coin before anything (paper only, not advice).
+The meta right now is animal riffs on cats and bears, and they're the only theme with real volume and buyers across several coins. The White Bear (DUVAL, $227k cap, $23.9k 5m), Dacity Cat (DACAT, $127k cap, $17.1k 5m, 83% buys), UpSideDownCat (USDC, $234k cap, $15.4k 5m) and Catzilla (CATZILLA, $10.6k cap, $13.5k 5m) all sit on real 5m flow, and "one life, its worth an attempt" (67k cap, $17.9k 5m, 58% buys) and GTA Season (162k cap, 63% buys) are the GTA-style riffs holding up. Fading: HYGG riding HYPE (+1318% in an hour but only 38% buys and $5k 5m, so sellers have the chart), JENSEN (-78% in an hour, 25h old), and the zero-volume jokes BUSTED, STABLECOIN and TOILET ($8 5m on a $12.7M cap). The crawler's RWA story (96% buys) doesn't match the scan: Real World Asses shows 27% buys, $7.2k 5m and -41% in an hour, so I'm using the scan numbers; Lucia and Snoopy Wif Hat aren't in the scan at all, so they're unconfirmed, and no coin in the scan is named for a hack. Setups to research, not buy yet: DACAT for buy pressure, DUVAL only as a dip watch since it's already +298% in an hour, and USDC as a dip watch after its -14% with 55% buys. Holder, dev and bundle checks still have to run on each one before any paper entry (paper only, not advice).
 
 ## Moving most in its scans, last 30 min (1h volume)
 - HYGG: $356,359 1h vol, $409,153 mcap, +1318% 1h  
   CA `HHoDt9mEET28qFFWtUPNTqGcmRQPh3TJChAWHmBopump`
 - USDC: $345,158 1h vol, $233,676 mcap, -14% 1h  
   CA `Acgs6mb4PC7tQbDm9T4EeTfNx3ZDh5fNSjHcHZQLpump`
-- Bear: $340,103 1h vol, $51,972 mcap, -51% 1h  
-  CA `AvRSpY1rPA9iVFxYHc5D5JQW6oU5tjGQZdsW2e5upump`
 - RWA: $167,638 1h vol, $86,687 mcap, -41% 1h  
   CA `6edJUFSC85CyyLFB1QcCvYu7uzqaD4kV9o5YUPxrpump`
-- AMS: $161,444 1h vol, $30,213 mcap, +17% 1h  
-  CA `4b3ypv8i8vKUfCfETpbbPSLtvvW39eQVt5M41PxCpump`
+- BUSTED: $151,455 1h vol, $1,671 mcap, -95% 1h  
+  CA `8p11yHxwiKtcFy1QZ68iec2xcFzpXJeMExXLFz8Hpump`
+- DUVAL: $122,913 1h vol, $227,144 mcap, +298% 1h  
+  CA `3k62fdCfbP9TsoWbdCUrUu21ExzKyxfPwJsZ2REYpump`
