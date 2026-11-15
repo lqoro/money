@@ -1,13 +1,13 @@
 # Trencher live report
 
-Updated 2026-11-15T01:03:28Z (paper trading, never real money)
+Updated 2026-11-15T01:18:38Z (paper trading, never real money)
 
 - Equity: $74.23 (-25.8% vs $100 start)
 - Closed trades: 22, 3 wins
 - Fees paid: $14.78 (axiom $2.81, network $9.18, pool $2.66), plus $4.15 lost to slippage
 - New trades: WATCH-ONLY (scans and decides, buys nothing)
 - Brain: subscription, claude-haiku-5-5 for routine calls, claude-opus-5-5 for the daily review; 11 routine calls and 0 plan-limit hits in 48h
-- Watch log: 28 coins being followed, 1282 filed, 0 would-buys (6h follow, sampled every 2 min)
+- Watch log: 31 coins being followed, 1282 filed, 0 would-buys (6h follow, sampled every 2 min)
 
 ## Scorecard (after fees)
 - 22 closed, 3 won (14%), net $-25.79
@@ -73,9 +73,15 @@ Updated 2026-11-15T01:03:28Z (paper trading, never real money)
   CA `H4gHnZ3NCU7Z9XQwGX6YYJNyieGEW8pqwGRUcdSxpump`
 
 ## Last scan
-- 01:03Z: 2 coins, 2 with pairs, 0 passed the market filters, 0 researched
+- 01:17Z: 3 coins, 3 with pairs, 0 passed the market filters, 0 researched
 
 ## Coins it looked at, and why it passed
+- 01:16Z worth (MIGRATED, $52,585 mcap, $12,994 5m vol): REJECT, Top 10 hold 26.9% ex-pool (>25%) (V13)  
+  CA `7mH4PaR9BMxAid2i1QNDBmziAwxyXBsPNKSMiWySpump`
+- 01:07Z Bear (MIGRATED, $51,972 mcap, $3,237 5m vol): REJECT, RugCheck danger: Creator history of rugged tokens  
+  CA `AvRSpY1rPA9iVFxYHc5D5JQW6oU5tjGQZdsW2e5upump`
+- 01:07Z GATO (DIP, $7,566,623 mcap, $6,882 5m vol): REJECT, Dev holds 3.0% (>1%) (V13, V17)  
+  CA `HsprHxBRgiVaQdRf3TnKNuZZtaX9JUSPgMFdAkk6pump`
 - 00:55Z BUSTED (MIGRATED, $76,828 mcap, $73,070 5m vol): PASS at conviction 3, PASS: BUSTED is six minutes old, 11x its hourly 5m pace after a spike, with no printed higher low and 20 copies of its name in the field. Too new to touch. (V1, V6)  
   CA `8p11yHxwiKtcFy1QZ68iec2xcFzpXJeMExXLFz8Hpump`
 - 00:52Z JENSEN (MIGRATED, $218,859 mcap, $1,938 5m vol): REJECT, 5m volume $1,938 is dead (<$2,000) (V1)  
@@ -90,19 +96,17 @@ Updated 2026-11-15T01:03:28Z (paper trading, never real money)
   CA `ArokAnvdAKYidzJaEqYT48kSmnTMJLWzo9F3nFAgpump`
 - 00:44Z USDC (DIP, $226,645 mcap, $35,976 5m vol): REJECT, Dip with fading attention is a falling knife, not a dip (5m at 0.51x the hour's pace, under 0.6x)  
   CA `Acgs6mb4PC7tQbDm9T4EeTfNx3ZDh5fNSjHcHZQLpump`
-- 00:34Z RWA (DIP, $125,758 mcap, $14,949 5m vol): PASS at conviction 3, PASS: blocker "no catalyst, theme under pace." Holders are clean, but this is a 0.3-hour-old spike that fell 41%, with no printed higher low and no named catalyst (V1, V6).  
-  CA `6edJUFSC85CyyLFB1QcCvYu7uzqaD4kV9o5YUPxrpump`
-- 00:33Z DOJE (DIP, $138,349 mcap, $3,233 5m vol): REJECT, Dip with fading attention is a falling knife, not a dip (5m at 0.22x the hour's pace, under 0.6x)  
-  CA `7N2g5tHX2isAXyKmtUek72waREtNKSFuR6KW2xthpump`
-- 00:33Z HYGG (MIGRATED, $253,985 mcap, $35,487 5m vol): PASS at conviction 3, PASS: chasing the first 14 minutes of a migration, flow is sellers-led, and no higher low exists yet. Blockers: "chasing", "too new", "chasing spike", "no higher low". (V1, V6)  
-  CA `HHoDt9mEET28qFFWtUPNTqGcmRQPh3TJChAWHmBopump`
 
 ## What its skips did next (last 48h)
 A skip "ran" if the coin reached the first target (1.5x) from the skip price before a 20% drop, "dumped" if the drop came first. Sampled every 10 min, followed 6h.
-- top 10 over 25%: blocked 4, ran 0, dumped 2, flat 0, open 2 (too few played out to judge)
-- RugCheck danger: blocked 4, ran 0, dumped 1, flat 0, open 3 (too few played out to judge)
-- falling knife (code): blocked 3, ran 0, dumped 1, flat 0, open 2 (too few played out to judge)
-- too new / sniping: blocked 3, ran 1, dumped 0, flat 0, open 2 (too few played out to judge)
+- top 10 over 25%: blocked 5, ran 0, dumped 3, flat 0, open 2 (saving losses: keep it)
+- RugCheck danger: blocked 4, ran 1, dumped 0, flat 0, open 3 (too few played out to judge)
+  - ran: PEGCOIN up to 1.57x  
+    CA `2Tie3KmpX86nQEAjVCddYQWxkziKgPw2E6L7t4oLpump`
+- falling knife (code): blocked 3, ran 1, dumped 1, flat 0, open 1 (too few played out to judge)
+  - ran: DOJE up to 1.6x  
+    CA `7N2g5tHX2isAXyKmtUek72waREtNKSFuR6KW2xthpump`
+- too new / sniping: blocked 3, ran 1, dumped 1, flat 0, open 1 (too few played out to judge)
   - ran: HYGG up to 1.8x  
     CA `HHoDt9mEET28qFFWtUPNTqGcmRQPh3TJChAWHmBopump`
 - near the high / chasing: blocked 2, ran 1, dumped 1, flat 0, open 0 (too few played out to judge)
@@ -110,7 +114,7 @@ A skip "ran" if the coin reached the first target (1.5x) from the skip price bef
     CA `4b3ypv8i8vKUfCfETpbbPSLtvvW39eQVt5M41PxCpump`
 - dev share over 1%: blocked 1, ran 0, dumped 0, flat 0, open 1 (too few played out to judge)
 - flow below pace: blocked 1, ran 0, dumped 1, flat 0, open 0 (too few played out to judge)
-- falling knife / no higher low: blocked 1, ran 0, dumped 0, flat 0, open 1 (too few played out to judge)
+- falling knife / no higher low: blocked 1, ran 0, dumped 1, flat 0, open 0 (too few played out to judge)
 - crowd leaving / fading volume: blocked 1, ran 0, dumped 0, flat 0, open 1 (too few played out to judge)
 - thin 5m volume: blocked 1, ran 0, dumped 1, flat 0, open 0 (too few played out to judge)
 
@@ -153,13 +157,13 @@ This window has no evidence in it. In 24 hours zero coins were logged at any sta
 The trenches are active and young: nearly every mover is under about 1.5h old, and the volume is in pump.fun/PumpSwap coins riffing on whatever is trending. Four themes repeat across several coins: name-drop riffs on people and big names (Lucia Caminos, $486k cap, +1158% in an hour; Doge Jensen, 82% buys), animal and dog riffs (The Black Bear and Snoopy Wif Hat, both with real 5m volume), trending-ticker copies (HYGG riding HYPE, +751% but only 43% buys now, so sellers are taking over), and RWA-style jokes (Real World Asses, 96% buys on $15k 5m at a $126k cap). Fading are the jokey names with no bid (begwork, JOB, mine pad, NUREMBERG, and PerpPairs at zero 5m volume). Setups to research, not buy yet: RWA for its buy pressure (the cleanest flow in the scan), Bear for its volume depth, and Lucia only as a dip watch since it is a chase at this cap; DOJE's $3.4k 5m is below the $10k line. The crawler's red-pill names (RM, RED COIN, MarsCoin) aren't in the scan, so I'm not using them, and holder, dev and bundle checks still have to run on each coin before anything (paper only, not advice).
 
 ## Moving most in its scans, last 30 min (1h volume)
-- USDC: $841,412 1h vol, $226,645 mcap, +279% 1h  
-  CA `Acgs6mb4PC7tQbDm9T4EeTfNx3ZDh5fNSjHcHZQLpump`
-- Lucia: $380,970 1h vol, $1,258 mcap, -97% 1h  
+- Bear: $340,103 1h vol, $51,972 mcap, -51% 1h  
+  CA `AvRSpY1rPA9iVFxYHc5D5JQW6oU5tjGQZdsW2e5upump`
+- Lucia: $329,289 1h vol, $1,258 mcap, -100% 1h  
   CA `513YLzsTSHaqXidg6bgDs8LCk5LGixFWcMUTheQVpump`
-- RWA: $202,455 1h vol, $125,758 mcap, +11% 1h  
-  CA `6edJUFSC85CyyLFB1QcCvYu7uzqaD4kV9o5YUPxrpump`
+- AMS: $191,704 1h vol, $29,775 mcap, +199% 1h  
+  CA `4b3ypv8i8vKUfCfETpbbPSLtvvW39eQVt5M41PxCpump`
 - PEGCOIN: $87,330 1h vol, $18,624 mcap, +156% 1h  
   CA `2Tie3KmpX86nQEAjVCddYQWxkziKgPw2E6L7t4oLpump`
-- TOILET: $83,212 1h vol, $28,589 mcap, +1044% 1h  
-  CA `Gv7RZhha9hqEVV5x9FsQiFuEEs8ffyUwJ8YfGF31pump`
+- worth: $78,369 1h vol, $67,389 mcap, +115% 1h  
+  CA `7mH4PaR9BMxAid2i1QNDBmziAwxyXBsPNKSMiWySpump`
