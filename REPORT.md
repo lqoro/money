@@ -1,13 +1,13 @@
 # Trencher live report
 
-Updated 2026-11-15T22:46:31Z (paper trading, never real money)
+Updated 2026-11-15T23:01:38Z (paper trading, never real money)
 
 - Equity: $74.23 (-25.8% vs $100 start)
 - Closed trades: 22, 3 wins
 - Fees paid: $14.78 (axiom $2.81, network $9.18, pool $2.66), plus $4.15 lost to slippage
 - New trades: WATCH-ONLY (scans and decides, buys nothing)
-- Brain: subscription, claude-haiku-5-5 for routine calls, claude-opus-5-5 for the daily review; 165 routine calls and 0 plan-limit hits in 48h
-- Watch log: 117 coins being followed, 1473 filed, 0 would-buys (6h follow, sampled every 2 min)
+- Brain: subscription, claude-haiku-5-5 for routine calls, claude-opus-5-5 for the daily review; 167 routine calls and 0 plan-limit hits in 48h
+- Watch log: 118 coins being followed, 1476 filed, 0 would-buys (6h follow, sampled every 2 min)
 
 ## Scorecard (after fees)
 - 22 closed, 3 won (14%), net $-25.79
@@ -73,9 +73,17 @@ Updated 2026-11-15T22:46:31Z (paper trading, never real money)
   CA `H4gHnZ3NCU7Z9XQwGX6YYJNyieGEW8pqwGRUcdSxpump`
 
 ## Last scan
-- 22:45Z: 6 coins, 6 with pairs, 1 passed the market filters, 1 researched
+- 23:01Z: 7 coins, 7 with pairs, 1 passed the market filters, 1 researched
 
 ## Coins it looked at, and why it passed
+- 23:01Z BUTTHOLE (MIGRATED, $531,669 mcap, $1,486 5m vol): REJECT, 5m volume $1,486 is dead (<$2,000) (V1)  
+  CA `4B8CdHPZ8ng1CtMP2Jk2W8wGAwJ5nJnap1deVsz2pump`
+- 22:52Z Socks (MIGRATED, $142,072 mcap, $4,316 5m vol): PASS at conviction 3, PASS — 71% off the 24h peak with no bottom-buy qualifier: the radar never names Socks, no independent catalyst, and 5m flow is a 3x spike on $4.3k. Blocker: "no bottom-buy qualifier." (V1, V6, V13)  
+  CA `FS1pBmZKp2Qw1atC64GoLamHstECAos9ot8bGPgDpump`
+- 22:48Z CBUCKS (MIGRATED, $3,897,077 mcap, $3,200 5m vol): REJECT, Top 10 hold 26.2% ex-pool (>25%) (V13)  
+  CA `DtcicPCKTKeAh7TDEzTym3hXeoHAoMiBdYJhMYxZpump`
+- 22:48Z Retire (MIGRATED, $217,927 mcap, $5,678 5m vol): PASS at conviction 3, PASS: Retire ("Mission Passed"). Flow is at 0.33x its hourly pace, no higher low is printed, and it is 22% off a peak that came after a +515% hour. Blockers: "flow below pace", "no higher low", "no breakout", "theme pace 0.31x" on the bottom-buy gate. (V1, V6)  
+  CA `DQSHcUsHEKKz5gXzpj4Xp3ioEjmfNB5obb3saDFMpump`
 - 22:45Z BJB (MIGRATED, $1,514,908 mcap, $10,024 5m vol): REJECT, Top 10 hold 27.2% ex-pool (>25%) (V13)  
   CA `CHuLmJXz8F3YXUyv984PRxeECfSvqD5MZ3W1FoDmpump`
 - 22:41Z TITTYVERSE (MIGRATED, $162,437 mcap, $15,699 5m vol): PASS at conviction 4, PASS. TITTYVERSE spiked to $232k and fell 30% in about 12 minutes, with no printed higher low and 5m flow only at 0.97x pace. Wait and see. (V1, V6)  
@@ -88,31 +96,16 @@ Updated 2026-11-15T22:46:31Z (paper trading, never real money)
   CA `HsprHxBRgiVaQdRf3TnKNuZZtaX9JUSPgMFdAkk6pump`
 - 22:30Z FiveM (MIGRATED, $30,358 mcap, $9,352 5m vol): PASS at conviction 2, PASS: flow below pace, 75% off the high, and it's a copy in the GTA vamp field. Not the leader. (V1, V6)  
   CA `8dbLrW3ZTTu4qeAKYYBjuuSSAPhMvABwUes3eWoXpump`
-- 22:22Z GTAVI (MIGRATED, $153,432 mcap, $76,154 5m vol): PASS at conviction 4, PASS — 25-minute-old migration bleeding off its spike, no printed higher low, entry 34% above the base. Blocker: "too new" + "no higher low". The GTA VI date is real, but the chart isn't ready. (V1, V6)  
-  CA `HQjXLbFPkpJP1BmF55DgXj9F6614FURvGLKuyCZQpump`
-- 22:22Z Bustas (FINAL_STRETCH, $25,295 mcap, $15,731 5m vol): PASS at conviction 3, PASS: Bustas is up 38% on 5m at 2x hourly pace, 6 minutes off its peak, in a 23-copy GTA field with zero buzz. That's chasing a spike, not a pullback (V1, V6).  
-  CA `9rTgs58B3p11vXekTTgVYtv8vKxQ6oSoZFXPy4onpump`
-- 22:21Z WOKESTAR (FINAL_STRETCH, $15,869 mcap, $17,607 5m vol): PASS at conviction 3, PASS — chasing spike, no story. Seven minutes old, up 551% in an hour, 5m volume at 7x pace, and the name isn't on the radar at all. Blockers: "chasing spike" and "no narrative" (V1, V6).  
-  CA `8Xyisy1WyHsGj8dVJ8Zyu5EcfdguZ3KnJ4MLx7i5pump`
-- 22:21Z WIGGLES (MIGRATED, $36,663 mcap, $34,305 5m vol): PASS at conviction 2, PASS: WIGGLES is 7 minutes old, up 30% in 5m on 4.4x hourly pace, with no printed higher low and 10 copies of the same ticker. Chasing a spike. (V1, V6, V13)  
-  CA `2kWx47CUrcXtzptFNnbSXKq3vo1ebqyLBhRytKRGpump`
 
 ## What its skips did next (last 48h)
 A skip "ran" if the coin reached the first target (1.5x) from the skip price before a 20% drop, "dumped" if the drop came first. Sampled every 10 min, followed 6h.
-- flow below pace: blocked 28, ran 3, dumped 19, flat 2, open 4 (saving losses: keep it)
+- flow below pace: blocked 29, ran 4, dumped 20, flat 2, open 3 (saving losses: keep it)
   - ran: PASSED up to 1.73x  
     CA `3XaH8VPUaUegqmnkYA8PXCWqQqD8doqdsGGfZyoYpump`
   - ran: ANT up to 1.52x  
     CA `BDPm9gPHCRyo2qjcRrYPsXexmbRwuuHQZo2qhhYXpump`
   - ran: ANT up to 1.58x  
     CA `7H2sHeLHyHR8jxENGmsqn7RxTkYZa4KwXvKYcoxBpump`
-- too new / sniping: blocked 27, ran 6, dumped 20, flat 0, open 1 (saving losses: keep it)
-  - ran: Chick up to 1.66x  
-    CA `Dueav76X9spnoLomhM2jMkkWorVggbeWucLs3YLupump`
-  - ran: TOOLS up to 1.83x  
-    CA `9Ei1d97U7M8m4t3fof7c8MUECtmzgqbQCo81cGGzpump`
-  - ran: twert up to 1.81x  
-    CA `8WvWwttzaLfW1nbjx6wmYL5jozWpvy95WktAg5cipump`
 - top 10 over 25%: blocked 26, ran 6, dumped 14, flat 2, open 4 (saving losses: keep it)
   - ran: rockstar up to 1.95x  
     CA `9HFUEab7sompLDPTAaTGkryMNGbtBaFMhHMVpJEBpump`
@@ -120,6 +113,13 @@ A skip "ran" if the coin reached the first target (1.5x) from the skip price bef
     CA `4Dj8m9vWqu779F1KDBUttvXM8YFm7U92SDpvjBNKtEiB`
   - ran: ANT up to 1.52x  
     CA `BDPm9gPHCRyo2qjcRrYPsXexmbRwuuHQZo2qhhYXpump`
+- too new / sniping: blocked 26, ran 5, dumped 20, flat 0, open 1 (saving losses: keep it)
+  - ran: Chick up to 1.66x  
+    CA `Dueav76X9spnoLomhM2jMkkWorVggbeWucLs3YLupump`
+  - ran: TOOLS up to 1.83x  
+    CA `9Ei1d97U7M8m4t3fof7c8MUECtmzgqbQCo81cGGzpump`
+  - ran: twert up to 1.81x  
+    CA `8WvWwttzaLfW1nbjx6wmYL5jozWpvy95WktAg5cipump`
 - RugCheck danger: blocked 22, ran 7, dumped 13, flat 2, open 0 (mixed)
   - ran: Ivy up to 1.88x  
     CA `DxNF3Qxd8XeUBdz7ReRdoiFzRmNDKbSz4c2oA7aRpump`
@@ -127,24 +127,28 @@ A skip "ran" if the coin reached the first target (1.5x) from the skip price bef
     CA `AiQUqe4zjiDssth2FsCoeQVaGtCtHYyKGX8U52rWpump`
   - ran: FUTA up to 2.77x  
     CA `FxoXV4C8DTSYeg5dSXrEsr45zzr8tpNbsrpoiZ8Kpump`
-- near the high / chasing: blocked 16, ran 1, dumped 13, flat 0, open 2 (saving losses: keep it)
+- near the high / chasing: blocked 16, ran 2, dumped 13, flat 0, open 1 (saving losses: keep it)
   - ran: penny up to 1.6x  
     CA `5gmCPpuktJ7Svjgr4PPJBTosAFKB8K6Z45EGfSUmpump`
-- falling knife (code): blocked 7, ran 0, dumped 6, flat 0, open 1 (saving losses: keep it)
-- falling knife / no higher low: blocked 7, ran 1, dumped 2, flat 3, open 1 (saving losses: keep it)
-  - ran: CateGiving up to 1.57x  
-    CA `5XasjCnMPTczL9VZTDHgbK5sQzwkjnu41oLeHf5Wpump`
-- dev share over 1%: blocked 6, ran 1, dumped 3, flat 0, open 2 (saving losses: keep it)
-  - ran: PANICSELL up to 1.74x  
-    CA `82Z6CcE5g3o1jW3vgtcqr95jP4XFx8jg1SJe8ikepump`
-- crowd leaving / fading volume: blocked 6, ran 1, dumped 5, flat 0, open 0 (saving losses: keep it)
-  - ran: NUREMBERG up to 1.62x  
-    CA `7R3RnGmpV9mZXwSyHyKN5LEddiZRmGsYrAZPgDJqpump`
-- other: blocked 6, ran 2, dumped 4, flat 0, open 0 (saving losses: keep it)
+  - ran: Bustas up to 1.75x  
+    CA `9rTgs58B3p11vXekTTgVYtv8vKxQ6oSoZFXPy4onpump`
+- other: blocked 7, ran 2, dumped 4, flat 0, open 1 (saving losses: keep it)
   - ran: TaoTao up to 1.53x  
     CA `G1KuEMuLrxWynFddQVnpdkQAhYFBwNJiuz1Lv7d9pump`
   - ran: SI up to 1.94x  
     CA `H2irVtPLfKoBJ69itZmhsedSPwBUTaubmUavc6Uapump`
+- dev share over 1%: blocked 6, ran 1, dumped 3, flat 0, open 2 (saving losses: keep it)
+  - ran: PANICSELL up to 1.74x  
+    CA `82Z6CcE5g3o1jW3vgtcqr95jP4XFx8jg1SJe8ikepump`
+- falling knife (code): blocked 6, ran 0, dumped 5, flat 0, open 1 (saving losses: keep it)
+- crowd leaving / fading volume: blocked 6, ran 1, dumped 5, flat 0, open 0 (saving losses: keep it)
+  - ran: NUREMBERG up to 1.62x  
+    CA `7R3RnGmpV9mZXwSyHyKN5LEddiZRmGsYrAZPgDJqpump`
+- falling knife / no higher low: blocked 6, ran 2, dumped 1, flat 3, open 0 (cost more winners than it saved: loosen it)
+  - ran: CateGiving up to 1.57x  
+    CA `5XasjCnMPTczL9VZTDHgbK5sQzwkjnu41oLeHf5Wpump`
+  - ran: Nyajira up to 1.52x  
+    CA `8cWGfiHyKqxgLrLtkPt2NnLkSUV2JbcLBf4RN6Fapump`
 
 ## Daily review (2026-11-15, claude-opus-5-5)
 Nothing shows a positive after-cost edge. Across all 93 settled coins the simple plan nets -5.5%: about +4.3% before costs, wiped out by an estimated 9.8% round-trip cost on a $10 buy. With a 1.5x target, a -20% stop and 10% cost, a setup needs about 43% of coins to run just to break even. FINAL_STRETCH (n=20) sits at 45% and nets +1.5%, but its 95% range on that share is roughly 23-67%, and one winner turning into a loser moves the average by about 3 points. That result is probably optimistic anyway: the simulator appears to fill every stop at exactly -20%, while several coins in the logs went to about zero. The routine model logged zero would-buys in 24h (39 brain calls, all PASS), so there is nothing to compare against what it passed on. Its PASSed coins did better than the checklist failures (-3.3% vs -7.1% net), but both groups lose money. Honest answer: no edge yet, and one day of correlated samples can't show one.
@@ -185,13 +189,13 @@ Nothing shows a positive after-cost edge. Across all 93 settled coins the simple
 The meta is alive, not quiet. Three clusters are pulling real 5-minute volume and buyers: GTA/Vice City launches (FiveM "GRAND THEFT CRYPTO" at $121k cap, $40k 5m, 63% buys; GTACOIN "Official Grand Theft Auto VI" at $61k, $44k 5m, 55% buys; Retire "Mission Passed" at $141k, $44k 5m, 84% buys), cat tokens (Brian "Anthropic Cat" at $224k, $13.8k 5m, 89% buys), and a late Jensen cluster led by BJB "Bring Jensen Back" at $1.2M after +2,933% in 1h, which is too late to chase. Fading: Hemi "The Cat Party" (-66% 1h, 48% buys), FRANK (-80% 1h, $624 5m), UTYAN, BUTTHOLE (44% buys, $1k 5m) and the dead ANT in the scan (-99% 1h, zero 5m), and the web's HENSEN, NCAT and "ANT $264k" are not in scan_movers, so I'm not treating them as live. Setups to research: FiveM and GTACOIN as the early GTA-cluster names with volume present, with a hard stop and holder/dev/bundle checks before any entry; Brian only with a stop under the recent spike; and nothing on the Binance-hack/North Korea narrative, since that's headline noise and hack-named coins are blocked. Paper only, not advice.
 
 ## Moving most in its scans, last 30 min (1h volume)
-- GTAVI: $522,424 1h vol, $145,574 mcap, +218% 1h  
-  CA `HQjXLbFPkpJP1BmF55DgXj9F6614FURvGLKuyCZQpump`
-- FiveM: $390,357 1h vol, $30,553 mcap, +5% 1h  
-  CA `8dbLrW3ZTTu4qeAKYYBjuuSSAPhMvABwUes3eWoXpump`
 - BJB: $286,139 1h vol, $1,533,368 mcap, +108% 1h  
   CA `CHuLmJXz8F3YXUyv984PRxeECfSvqD5MZ3W1FoDmpump`
+- Retire: $206,677 1h vol, $233,492 mcap, +559% 1h  
+  CA `DQSHcUsHEKKz5gXzpj4Xp3ioEjmfNB5obb3saDFMpump`
 - TITTYVERSE: $192,880 1h vol, $162,468 mcap, +117% 1h  
   CA `6SAFNdumKYNWVsuM116C7XQSVaJaxkFRbmrxHrNipump`
-- GTACOIN: $154,173 1h vol, $2,686 mcap, -93% 1h  
+- GTACOIN: $154,768 1h vol, $3,887 mcap, -91% 1h  
   CA `8oFRfFF9GPFvL8HdEXL6V2gs7jxzxWMpmcgpwr6pump`
+- GATO: $153,976 1h vol, $7,407,693 mcap, -5% 1h  
+  CA `HsprHxBRgiVaQdRf3TnKNuZZtaX9JUSPgMFdAkk6pump`
