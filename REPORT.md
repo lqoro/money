@@ -1,13 +1,13 @@
 # Trencher live report
 
-Updated 2026-11-15T02:19:12Z (paper trading, never real money)
+Updated 2026-11-15T02:34:20Z (paper trading, never real money)
 
 - Equity: $74.23 (-25.8% vs $100 start)
 - Closed trades: 22, 3 wins
 - Fees paid: $14.78 (axiom $2.81, network $9.18, pool $2.66), plus $4.15 lost to slippage
 - New trades: WATCH-ONLY (scans and decides, buys nothing)
 - Brain: subscription, claude-haiku-5-5 for routine calls, claude-opus-5-5 for the daily review; 19 routine calls and 0 plan-limit hits in 48h
-- Watch log: 48 coins being followed, 1282 filed, 0 would-buys (6h follow, sampled every 2 min)
+- Watch log: 49 coins being followed, 1282 filed, 0 would-buys (6h follow, sampled every 2 min)
 
 ## Scorecard (after fees)
 - 22 closed, 3 won (14%), net $-25.79
@@ -73,9 +73,11 @@ Updated 2026-11-15T02:19:12Z (paper trading, never real money)
   CA `H4gHnZ3NCU7Z9XQwGX6YYJNyieGEW8pqwGRUcdSxpump`
 
 ## Last scan
-- 02:18Z: 0 coins, 0 with pairs, 0 passed the market filters, 0 researched
+- 02:33Z: 2 coins, 2 with pairs, 0 passed the market filters, 0 researched
 
 ## Coins it looked at, and why it passed
+- 02:22Z SI (FINAL_STRETCH, $18,725 mcap, $8,783 5m vol): REJECT, RugCheck danger: Low Liquidity $353.79  
+  CA `AiQUqe4zjiDssth2FsCoeQVaGtCtHYyKGX8U52rWpump`
 - 02:17Z USDC (DIP, $177,385 mcap, $11,449 5m vol): PASS at conviction 3, PASS: bottom buy with no catalyst and cat-meta volume under its hourly pace. Blocker "no catalyst / theme pace". Watch, don't buy (V1, V6, owner bottom-buy rule).  
   CA `Acgs6mb4PC7tQbDm9T4EeTfNx3ZDh5fNSjHcHZQLpump`
 - 02:14Z Ivy (FINAL_STRETCH, $22,165 mcap, $26,942 5m vol): REJECT, RugCheck danger: Creator history of rugged tokens  
@@ -94,18 +96,18 @@ Updated 2026-11-15T02:19:12Z (paper trading, never real money)
   CA `2Tie3KmpX86nQEAjVCddYQWxkziKgPw2E6L7t4oLpump`
 - 01:39Z JENSEN (MIGRATED, $79,229 mcap, $11,633 5m vol): PASS at conviction 3, PASS: JENSEN is down 96% off a $1.9M peak, down 78% in the last hour, and has no printed higher low. It's a falling knife with 19 copies riding the name. Blocker: falling knife (V1, V6).  
   CA `B2YpP21vQBESJ2jtnuhPujEUT61KVRxZ2X5gsDcUpump`
-- 01:35Z AMS (MIGRATED, $71,051 mcap, $16,235 5m vol): REJECT, Top 10 hold 27.6% ex-pool (>25%) (V13)  
-  CA `4b3ypv8i8vKUfCfETpbbPSLtvvW39eQVt5M41PxCpump`
 
 ## What its skips did next (last 48h)
 A skip "ran" if the coin reached the first target (1.5x) from the skip price before a 20% drop, "dumped" if the drop came first. Sampled every 10 min, followed 6h.
 - top 10 over 25%: blocked 7, ran 1, dumped 5, flat 0, open 1 (saving losses: keep it)
   - ran: worth up to 1.52x  
     CA `7mH4PaR9BMxAid2i1QNDBmziAwxyXBsPNKSMiWySpump`
-- RugCheck danger: blocked 5, ran 0, dumped 3, flat 0, open 2 (saving losses: keep it)
-- falling knife (code): blocked 3, ran 0, dumped 2, flat 0, open 1 (too few played out to judge)
+- RugCheck danger: blocked 6, ran 1, dumped 3, flat 0, open 2 (saving losses: keep it)
+  - ran: Ivy up to 1.88x  
+    CA `DxNF3Qxd8XeUBdz7ReRdoiFzRmNDKbSz4c2oA7aRpump`
+- falling knife (code): blocked 3, ran 0, dumped 3, flat 0, open 0 (saving losses: keep it)
 - flow below pace: blocked 2, ran 0, dumped 1, flat 0, open 1 (too few played out to judge)
-- crowd leaving / fading volume: blocked 2, ran 0, dumped 0, flat 0, open 2 (too few played out to judge)
+- crowd leaving / fading volume: blocked 2, ran 0, dumped 1, flat 0, open 1 (too few played out to judge)
 - falling knife / no higher low: blocked 2, ran 0, dumped 0, flat 0, open 2 (too few played out to judge)
 - too new / sniping: blocked 2, ran 0, dumped 2, flat 0, open 0 (too few played out to judge)
 - dev share over 1%: blocked 1, ran 0, dumped 0, flat 0, open 1 (too few played out to judge)
@@ -151,13 +153,13 @@ This window has no evidence in it. In 24 hours zero coins were logged at any sta
 The meta right now is animal riffs on cats and bears, and they're the only theme with real volume and buyers across several coins. The White Bear (DUVAL, $227k cap, $23.9k 5m), Dacity Cat (DACAT, $127k cap, $17.1k 5m, 83% buys), UpSideDownCat (USDC, $234k cap, $15.4k 5m) and Catzilla (CATZILLA, $10.6k cap, $13.5k 5m) all sit on real 5m flow, and "one life, its worth an attempt" (67k cap, $17.9k 5m, 58% buys) and GTA Season (162k cap, 63% buys) are the GTA-style riffs holding up. Fading: HYGG riding HYPE (+1318% in an hour but only 38% buys and $5k 5m, so sellers have the chart), JENSEN (-78% in an hour, 25h old), and the zero-volume jokes BUSTED, STABLECOIN and TOILET ($8 5m on a $12.7M cap). The crawler's RWA story (96% buys) doesn't match the scan: Real World Asses shows 27% buys, $7.2k 5m and -41% in an hour, so I'm using the scan numbers; Lucia and Snoopy Wif Hat aren't in the scan at all, so they're unconfirmed, and no coin in the scan is named for a hack. Setups to research, not buy yet: DACAT for buy pressure, DUVAL only as a dip watch since it's already +298% in an hour, and USDC as a dip watch after its -14% with 55% buys. Holder, dev and bundle checks still have to run on each one before any paper entry (paper only, not advice).
 
 ## Moving most in its scans, last 30 min (1h volume)
-- GTASZN: $201,599 1h vol, $1,336 mcap, -99% 1h  
-  CA `GWfkt89PP92cA1eg4NMRE2FqftZPwLgFyY2YRNLwpump`
 - USDC: $162,441 1h vol, $177,385 mcap, -12% 1h  
   CA `Acgs6mb4PC7tQbDm9T4EeTfNx3ZDh5fNSjHcHZQLpump`
-- DUVAL: $155,783 1h vol, $25,817 mcap, -74% 1h  
-  CA `3k62fdCfbP9TsoWbdCUrUu21ExzKyxfPwJsZ2REYpump`
-- WANTED: $121,404 1h vol, $503,396 mcap, +1247% 1h  
-  CA `CiMyaPC9icicJxkFqvqpgL2YT2FjEQmGx1YVdG78pump`
-- SI: $118,161 1h vol, $38,651 mcap, +866% 1h  
+- DACAT: $160,402 1h vol, $1,295 mcap, -99% 1h  
+  CA `ErtyXjRNeCkcKsrJJ8NwGCVQAoYQoVPnzs6Fr2Jmpump`
+- SI: $130,241 1h vol, $18,725 mcap, +107% 1h  
   CA `AiQUqe4zjiDssth2FsCoeQVaGtCtHYyKGX8U52rWpump`
+- GTASZN: $100,103 1h vol, $1,336 mcap, -99% 1h  
+  CA `GWfkt89PP92cA1eg4NMRE2FqftZPwLgFyY2YRNLwpump`
+- AMS: $90,376 1h vol, $1,770 mcap, -96% 1h  
+  CA `4b3ypv8i8vKUfCfETpbbPSLtvvW39eQVt5M41PxCpump`
