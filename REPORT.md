@@ -1,13 +1,13 @@
 # Trencher live report
 
-Updated 2026-11-15T14:26:19Z (paper trading, never real money)
+Updated 2026-11-15T14:41:29Z (paper trading, never real money)
 
 - Equity: $74.23 (-25.8% vs $100 start)
 - Closed trades: 22, 3 wins
 - Fees paid: $14.78 (axiom $2.81, network $9.18, pool $2.66), plus $4.15 lost to slippage
 - New trades: WATCH-ONLY (scans and decides, buys nothing)
-- Brain: subscription, claude-haiku-5-5 for routine calls, claude-opus-5-5 for the daily review; 82 routine calls and 0 plan-limit hits in 48h
-- Watch log: 50 coins being followed, 1387 filed, 0 would-buys (6h follow, sampled every 2 min)
+- Brain: subscription, claude-haiku-5-5 for routine calls, claude-opus-5-5 for the daily review; 84 routine calls and 0 plan-limit hits in 48h
+- Watch log: 54 coins being followed, 1389 filed, 0 would-buys (6h follow, sampled every 2 min)
 
 ## Scorecard (after fees)
 - 22 closed, 3 won (14%), net $-25.79
@@ -73,9 +73,21 @@ Updated 2026-11-15T14:26:19Z (paper trading, never real money)
   CA `H4gHnZ3NCU7Z9XQwGX6YYJNyieGEW8pqwGRUcdSxpump`
 
 ## Last scan
-- 14:25Z: 8 coins, 8 with pairs, 0 passed the market filters, 0 researched
+- 14:40Z: 1 coins, 1 with pairs, 0 passed the market filters, 0 researched
 
 ## Coins it looked at, and why it passed
+- 14:38Z XXX (FINAL_STRETCH, $17,891 mcap, $8,229 5m vol): PASS at conviction 3, PASS: XXX is the leader of a 12-copy ticker field with 0.13x theme pace, 5m flow under $10k, and a launcher-bot site with no GitHub. Blocker: "crowd leaving." (V1, V6, V13)  
+  CA `3JCcs5NAJ1VCuULokp7foUTJ9FaPUJW6PGQZAx5tpump`
+- 14:36Z FUTA (MIGRATED, $111,722 mcap, $2,336 5m vol): REJECT, Top 10 hold 26.0% ex-pool (>25%) (V13)  
+  CA `8JCsa61htnPj2af7g1KSyU1UEncruHE1Ph9aNR6rpump`
+- 14:36Z Nyajira (MIGRATED, $42,432 mcap, $9,332 5m vol): REJECT, Dev holds 2.0% (>1%) (V13, V17)  
+  CA `8cWGfiHyKqxgLrLtkPt2NnLkSUV2JbcLBf4RN6Fapump`
+- 14:35Z SDEX (MIGRATED, $1,397,366 mcap, $24,244 5m vol): REJECT, RugCheck danger: Top 10 holders high ownership  
+  CA `J1sHNawTwQrRCga3w5uREEwTbrDZKT5j6WobLQKZSDEX`
+- 14:32Z investinu (MIGRATED, $92,293 mcap, $31,549 5m vol): PASS at conviction 4, PASS: chasing a 13-minute-old pump, 2.9% off a $95k peak, with no catalyst and a crowded vamp field. Blocker: "too new" and "chasing spike" (V1, V6).  
+  CA `GSGf1YUfPfJu4JS7rXjrqYCAADNiwTdHnNPv2KcJpump`
+- 14:26Z WANTED (MIGRATED, $121,612 mcap, $15,922 5m vol): REJECT, Top 10 hold 29.9% ex-pool (>25%) (V13)  
+  CA `GUkwiQYxXzutiaF1io6i1j67BDd7UzJsgMinLRQ8pump`
 - 14:24Z Qubits (FINAL_STRETCH, $23,775 mcap, $5,066 5m vol): REJECT, RugCheck danger: Low Liquidity $90.21  
   CA `Bp5PCTcWrwjV9Sn87oJPCPEbqogDeXuetNaWDUT9pump`
 - 14:21Z DIGS (MIGRATED, $146,591 mcap, $2,031 5m vol): REJECT, Bundles: 10 linked wallet cluster(s) hold 100.0% of supply (>20%) (V17)  
@@ -84,35 +96,21 @@ Updated 2026-11-15T14:26:19Z (paper trading, never real money)
   CA `DSKM3d518BBaQShSKqaqZcG1XMRf81UFB6a1eavhSTNK`
 - 14:09Z GATO (DIP, $6,585,262 mcap, $3,918 5m vol): REJECT, Dev holds 3.0% (>1%) (V13, V17)  
   CA `HsprHxBRgiVaQdRf3TnKNuZZtaX9JUSPgMFdAkk6pump`
-- 13:59Z twert (MIGRATED, $70,173 mcap, $11,847 5m vol): PASS at conviction 3, PASS: twert is 24 minutes old, still bleeding off a 13x spike, with no printed higher low and flow under its hourly pace. Blockers: too new, no higher low, flow below pace, split crowd. (V1, V6)  
-  CA `8WvWwttzaLfW1nbjx6wmYL5jozWpvy95WktAg5cipump`
-- 13:53Z rockstar (MIGRATED, $101,194 mcap, $2,513 5m vol): PASS at conviction 2, PASS: blocker "chasing" and "flow below pace". Sitting at its peak with $2.5k 5m, 0.37x the hourly pace, and 20 other coins named "rockstar" (V1, V6, V13).  
-  CA `9HFUEab7sompLDPTAaTGkryMNGbtBaFMhHMVpJEBpump`
-- 13:49Z HSI (MIGRATED, $326,611 mcap, $194,746 5m vol): REJECT, Top 10 hold 27.3% ex-pool (>25%) (V13)  
-  CA `93hTYKGhD43KeW4eQVtpL95WKUZpdEXE2F3XCpNipump`
-- 13:39Z SDEX (MIGRATED, $1,309,704 mcap, $23,066 5m vol): REJECT, RugCheck danger: Top 10 holders high ownership  
-  CA `J1sHNawTwQrRCga3w5uREEwTbrDZKT5j6WobLQKZSDEX`
-- 13:35Z DIGS (MIGRATED, $143,004 mcap, $2,204 5m vol): REJECT, Bundles: 10 linked wallet cluster(s) hold 100.0% of supply (>20%) (V17)  
-  CA `9QT8K685Hrae4k11dhGXirdtpfAaimExtyfwt8cPpump`
-- 13:32Z gtacoin (MIGRATED, $366,232 mcap, $3,028 5m vol): REJECT, Bundles: 6 linked wallet cluster(s) hold 96.9% of supply (>20%) (V17)  
-  CA `DSKM3d518BBaQShSKqaqZcG1XMRf81UFB6a1eavhSTNK`
 
 ## What its skips did next (last 48h)
 A skip "ran" if the coin reached the first target (1.5x) from the skip price before a 20% drop, "dumped" if the drop came first. Sampled every 10 min, followed 6h.
-- RugCheck danger: blocked 18, ran 5, dumped 10, flat 1, open 2 (saving losses: keep it)
+- RugCheck danger: blocked 18, ran 5, dumped 11, flat 1, open 1 (saving losses: keep it)
   - ran: Ivy up to 1.88x  
     CA `DxNF3Qxd8XeUBdz7ReRdoiFzRmNDKbSz4c2oA7aRpump`
   - ran: SI up to 1.93x  
     CA `AiQUqe4zjiDssth2FsCoeQVaGtCtHYyKGX8U52rWpump`
   - ran: FUTA up to 2.77x  
     CA `FxoXV4C8DTSYeg5dSXrEsr45zzr8tpNbsrpoiZ8Kpump`
-- top 10 over 25%: blocked 14, ran 1, dumped 10, flat 2, open 1 (saving losses: keep it)
-  - ran: FUTA up to 1.51x  
-    CA `8JCsa61htnPj2af7g1KSyU1UEncruHE1Ph9aNR6rpump`
-- flow below pace: blocked 11, ran 1, dumped 6, flat 2, open 2 (saving losses: keep it)
+- top 10 over 25%: blocked 15, ran 0, dumped 12, flat 2, open 1 (saving losses: keep it)
+- flow below pace: blocked 11, ran 1, dumped 7, flat 2, open 1 (saving losses: keep it)
   - ran: PASSED up to 1.73x  
     CA `3XaH8VPUaUegqmnkYA8PXCWqQqD8doqdsGGfZyoYpump`
-- too new / sniping: blocked 9, ran 3, dumped 6, flat 0, open 0 (saving losses: keep it)
+- too new / sniping: blocked 10, ran 3, dumped 6, flat 0, open 1 (saving losses: keep it)
   - ran: Chick up to 1.66x  
     CA `Dueav76X9spnoLomhM2jMkkWorVggbeWucLs3YLupump`
   - ran: TOOLS up to 1.83x  
@@ -123,16 +121,18 @@ A skip "ran" if the coin reached the first target (1.5x) from the skip price bef
   - ran: penny up to 1.6x  
     CA `5gmCPpuktJ7Svjgr4PPJBTosAFKB8K6Z45EGfSUmpump`
 - falling knife (code): blocked 5, ran 0, dumped 4, flat 0, open 1 (saving losses: keep it)
-- crowd leaving / fading volume: blocked 4, ran 1, dumped 3, flat 0, open 0 (saving losses: keep it)
+- crowd leaving / fading volume: blocked 5, ran 1, dumped 3, flat 0, open 1 (saving losses: keep it)
   - ran: NUREMBERG up to 1.62x  
     CA `7R3RnGmpV9mZXwSyHyKN5LEddiZRmGsYrAZPgDJqpump`
 - falling knife / no higher low: blocked 4, ran 1, dumped 0, flat 3, open 0 (too few played out to judge)
   - ran: CateGiving up to 1.57x  
     CA `5XasjCnMPTczL9VZTDHgbK5sQzwkjnu41oLeHf5Wpump`
-- bundles over the line: blocked 4, ran 0, dumped 2, flat 0, open 2 (too few played out to judge)
-- other: blocked 3, ran 1, dumped 2, flat 0, open 0 (saving losses: keep it)
-  - ran: TaoTao up to 1.53x  
-    CA `G1KuEMuLrxWynFddQVnpdkQAhYFBwNJiuz1Lv7d9pump`
+- bundles over the line: blocked 4, ran 1, dumped 2, flat 0, open 1 (saving losses: keep it)
+  - ran: gtacoin up to 1.57x  
+    CA `DSKM3d518BBaQShSKqaqZcG1XMRf81UFB6a1eavhSTNK`
+- dev share over 1%: blocked 3, ran 1, dumped 0, flat 0, open 2 (too few played out to judge)
+  - ran: PANICSELL up to 1.74x  
+    CA `82Z6CcE5g3o1jW3vgtcqr95jP4XFx8jg1SJe8ikepump`
 
 ## Daily review (2026-11-15, claude-opus-5-5)
 Nothing shows a positive after-cost edge. Across all 93 settled coins the simple plan nets -5.5%: about +4.3% before costs, wiped out by an estimated 9.8% round-trip cost on a $10 buy. With a 1.5x target, a -20% stop and 10% cost, a setup needs about 43% of coins to run just to break even. FINAL_STRETCH (n=20) sits at 45% and nets +1.5%, but its 95% range on that share is roughly 23-67%, and one winner turning into a loser moves the average by about 3 points. That result is probably optimistic anyway: the simulator appears to fill every stop at exactly -20%, while several coins in the logs went to about zero. The routine model logged zero would-buys in 24h (39 brain calls, all PASS), so there is nothing to compare against what it passed on. Its PASSed coins did better than the checklist failures (-3.3% vs -7.1% net), but both groups lose money. Honest answer: no edge yet, and one day of correlated samples can't show one.
@@ -173,13 +173,13 @@ Nothing shows a positive after-cost edge. Across all 93 settled coins the simple
 Not quiet, but thin: three movers clear the $10k 5-minute bar on scan_movers, and only HSI and SDEX have it with real buy-leaning flow. The live theme is fresh pump.fun launches with buyers, HSI (Human Superinu, 12 min old, $334k mcap, $208k 5m, 68% buys, +302% 1h) and XXX (12 min old, $9.3k mcap, $7.4k 5m, 65% buys), with the animal/character name angle (HSI, DOUG, DIGS) only really alive on HSI, since DOUG and DIGS are fading. Joke and brand-style names that launched in the last few hours are dumping: pls -93%, hermano -89% ($64 on 5m), PEER -87% with zero 5m buys, BITLY -62%, Gomez -60%. The crawler's news narratives (hack laundering, Trump coin, DOGE) have no volume on this list, so attention is on new names, not stories. Setups to research now, not chase: HSI fits the MIGRATED screen on paper (under 12h, mcap over $30k, 5m over $10k) but is a 12-minute-old +300% hour, so holder, dev and bundle checks come first; SDEX is the cleanest (Raydium, $1.31M, $23k 5m, 62% buys, 5 hours old). I used scan_movers figures over the crawler's, since its hermano, PEER, SDEX and Gomez numbers don't match. Nothing verified; paper only, not advice.
 
 ## Moving most in its scans, last 30 min (1h volume)
-- SDEX: $282,721 1h vol, $1,369,535 mcap, +3% 1h  
+- HSI: $523,041 1h vol, $1,423 mcap, -98% 1h  
+  CA `93hTYKGhD43KeW4eQVtpL95WKUZpdEXE2F3XCpNipump`
+- SDEX: $217,652 1h vol, $1,397,366 mcap, +7% 1h  
   CA `J1sHNawTwQrRCga3w5uREEwTbrDZKT5j6WobLQKZSDEX`
-- twert: $160,019 1h vol, $70,173 mcap, +131% 1h  
-  CA `8WvWwttzaLfW1nbjx6wmYL5jozWpvy95WktAg5cipump`
-- XXX: $81,781 1h vol, $8,409 mcap, +50% 1h  
+- investinu: $141,806 1h vol, $92,293 mcap, +204% 1h  
+  CA `GSGf1YUfPfJu4JS7rXjrqYCAADNiwTdHnNPv2KcJpump`
+- XXX: $105,427 1h vol, $19,575 mcap, +250% 1h  
   CA `3JCcs5NAJ1VCuULokp7foUTJ9FaPUJW6PGQZAx5tpump`
-- gtacoin: $75,524 1h vol, $494,484 mcap, +31% 1h  
-  CA `DSKM3d518BBaQShSKqaqZcG1XMRf81UFB6a1eavhSTNK`
-- Buttly: $73,738 1h vol, $29,649 mcap, +976% 1h  
-  CA `B4D9FbwPyC94i8Ze9aoUaqrkhzbcMFzQafLfAoCJF68c`
+- WANTED: $87,250 1h vol, $121,612 mcap, +238% 1h  
+  CA `GUkwiQYxXzutiaF1io6i1j67BDd7UzJsgMinLRQ8pump`
