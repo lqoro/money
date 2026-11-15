@@ -1,13 +1,13 @@
 # Trencher live report
 
-Updated 2026-11-15T06:36:33Z (paper trading, never real money)
+Updated 2026-11-15T06:51:38Z (paper trading, never real money)
 
 - Equity: $74.23 (-25.8% vs $100 start)
 - Closed trades: 22, 3 wins
 - Fees paid: $14.78 (axiom $2.81, network $9.18, pool $2.66), plus $4.15 lost to slippage
 - New trades: WATCH-ONLY (scans and decides, buys nothing)
-- Brain: subscription, claude-haiku-5-5 for routine calls, claude-opus-5-5 for the daily review; 41 routine calls and 0 plan-limit hits in 48h
-- Watch log: 67 coins being followed, 1303 filed, 0 would-buys (6h follow, sampled every 2 min)
+- Brain: subscription, claude-haiku-5-5 for routine calls, claude-opus-5-5 for the daily review; 44 routine calls and 0 plan-limit hits in 48h
+- Watch log: 64 coins being followed, 1308 filed, 0 would-buys (6h follow, sampled every 2 min)
 
 ## Scorecard (after fees)
 - 22 closed, 3 won (14%), net $-25.79
@@ -73,9 +73,13 @@ Updated 2026-11-15T06:36:33Z (paper trading, never real money)
   CA `H4gHnZ3NCU7Z9XQwGX6YYJNyieGEW8pqwGRUcdSxpump`
 
 ## Last scan
-- 06:35Z: 0 coins, 0 with pairs, 0 passed the market filters, 0 researched
+- 06:51Z: 2 coins, 2 with pairs, 0 passed the market filters, 0 researched
 
 ## Coins it looked at, and why it passed
+- 06:49Z Chick (MIGRATED, $67,001 mcap, $34,351 5m vol): PASS at conviction 3, PASS: too new and still bleeding. 33 min old, down 23% on 5m, no printed higher low, and it's not the vamp leader. Blocker "too new" (V1, V6).  
+  CA `Dueav76X9spnoLomhM2jMkkWorVggbeWucLs3YLupump`
+- 06:45Z PAW (FINAL_STRETCH, $15,972 mcap, $7,459 5m vol): PASS at conviction 3, PASS: split crowd. 18 "light paw" copies share the theme, top 10 hold 17% ex-pool, and the project site is a pet memorial page with no link to this CA (V1, V3, V6, V13).  
+  CA `HxPrDS84HH3ijsJhiCLF55MN7DqLfxzbt99RnSuSpump`
 - 06:25Z FUTA (MIGRATED, $101,874 mcap, $4,183 5m vol): REJECT, Top 10 hold 25.8% ex-pool (>25%) (V13)  
   CA `8JCsa61htnPj2af7g1KSyU1UEncruHE1Ph9aNR6rpump`
 - 06:08Z GTA (MIGRATED, $84,302 mcap, $3,852 5m vol): PASS at conviction 2, PASS — 5m flow at 0.65x pace and $3.9k under the $10k bar, and the $94k peak is only 1.12x away. Blocker "flow below pace". (V1, V6)  
@@ -92,10 +96,6 @@ Updated 2026-11-15T06:36:33Z (paper trading, never real money)
   CA `FxoXV4C8DTSYeg5dSXrEsr45zzr8tpNbsrpoiZ8Kpump`
 - 05:57Z penny (MIGRATED, $32,062 mcap, $2,341 5m vol): PASS at conviction 3, PASS: penny is 76% off its peak in a 12-copy "penny" vamp field, with a 9.5% single bundle and $2.3k of 5m flow. Blocker: "split crowd" and "thin 5m volume" (V1, V3, V6).  
   CA `5gmCPpuktJ7Svjgr4PPJBTosAFKB8K6Z45EGfSUmpump`
-- 05:43Z afk (FINAL_STRETCH, $25,218 mcap, $22,595 5m vol): REJECT, RugCheck danger: Large Amount of LP Unlocked 100.00%  
-  CA `FWPMa5Z4iwtLbGDLpviBRcBoQkeWSabHYYK4HWUCpump`
-- 05:37Z HODL (MIGRATED, $35,268 mcap, $4,342 5m vol): REJECT, Top 10 hold 29.3% ex-pool (>25%) (V13)  
-  CA `F63zJ8AM4RnHHxnHzGAPgM8Amv8KTSqG9knPd7yvpump`
 
 ## What its skips did next (last 48h)
 A skip "ran" if the coin reached the first target (1.5x) from the skip price before a 20% drop, "dumped" if the drop came first. Sampled every 10 min, followed 6h.
@@ -106,10 +106,10 @@ A skip "ran" if the coin reached the first target (1.5x) from the skip price bef
     CA `AiQUqe4zjiDssth2FsCoeQVaGtCtHYyKGX8U52rWpump`
   - ran: FUTA up to 2.77x  
     CA `FxoXV4C8DTSYeg5dSXrEsr45zzr8tpNbsrpoiZ8Kpump`
-- top 10 over 25%: blocked 9, ran 0, dumped 7, flat 1, open 1 (saving losses: keep it)
+- top 10 over 25%: blocked 9, ran 0, dumped 8, flat 1, open 0 (saving losses: keep it)
 - flow below pace: blocked 5, ran 0, dumped 3, flat 0, open 2 (saving losses: keep it)
 - falling knife (code): blocked 4, ran 0, dumped 4, flat 0, open 0 (saving losses: keep it)
-- too new / sniping: blocked 4, ran 0, dumped 4, flat 0, open 0 (saving losses: keep it)
+- too new / sniping: blocked 4, ran 0, dumped 3, flat 0, open 1 (saving losses: keep it)
 - near the high / chasing: blocked 4, ran 1, dumped 3, flat 0, open 0 (saving losses: keep it)
   - ran: penny up to 1.6x  
     CA `5gmCPpuktJ7Svjgr4PPJBTosAFKB8K6Z45EGfSUmpump`
@@ -156,16 +156,16 @@ This window has no evidence in it. In 24 hours zero coins were logged at any sta
 - [2026-11-02 20:25] I expected Slingoor, a clean MIGRATED leader with $25k of 5m flow at pace and a 0.77 buy share, to retest its $408k high from $304k. It never went green (0.98x peak) and hit the -20% stop in 2 minutes, a -$2.86 probe. My own thesis admitted there was no printed higher low after a peak only 6 minutes old, so this confirms the money-shape rule: buy share and flow are not structure (V1, V6). Next time a MIGRATED pullback with no higher low above the hourly low is a PASS with blocker "no higher low", not a probe. This is one loss, so it adds no new ban beyond the rule I already have.
 
 ## Meta right now
-The meta is thin but not dead. The live shapes are animal jokes (COLE, TAIL, PELI, Begcat) and "just hold / go AFK" jokes (afk, HODL), while dollar and "useless" jokes (Stable Inu, Useless Market, MIL) are fading and the news backdrop is bearish. Rising: afk ("buy and go afk", $22.6k 5m, 58% buys, +1017% in the hour) and Trashed Panda (COLE, $9.8k cap, $4.3k 5m, 60% buys, +285%). Fading: MIL (-95%), Begcat and Pelicoin (almost no 5m flow), Stable Inu (-24%). afk is the only coin clearing the $10k 5m bar, but it is 0.3h old and parabolic, so it is research now, and at most a probe on a pullback that holds volume with the stop under that pullback low. COLE is the cleaner animal setup if its 5m reaches $10k with buys holding, and Diamond Hands (HODL, migrated, $35k cap, $4.3k 5m, 55% buys) is a DIP/MIGRATED research name. DOGE on pumpswap is a name-jack of the famous ticker, so verify the real token before anything else. The crawler summary conflicts with the scan (penny $85k vs $27.5k, "nothing reaches $10k" vs afk at $22.6k), so I trust the scan_movers numbers and ignore the unlisted names (Bowser Farts, marmot, Sonny Angel, UpCat). Paper only, not advice.
+The meta is animal and pet jokes on pump.fun and pumpswap, with the most real flow. "Just hold / go AFK" jokes and name-jacked dog tickers are fading. Chick (The Optimistic Chick, $67k cap, $34k 5m, 61% buys, +132% 1h) and PAW (Light a Paw, $16k cap, $7.4k 5m, 72% buys, +393% 1h) carry the animal theme, with Unstable Inu (UI, $5.9k cap, $6.3k 5m but only 30% buys) and TAIL (35% buys) as weaker versions. Fading: afk (0% buys, $29 5m, -77% 1h), HODL (Diamond Hands, -47%, $226 5m), DOGE (a name-jack on pumpswap, -90%) and the duplicate FUTA ticker. Research order: Chick first, and only as a probe on a pullback that holds volume, with the stop under that pullback low and only after confirming it's the original; PAW only if its 5m reaches $10k with buys holding. Holder, dev and bundle checks still have to run on each before any size, and this is research, not a buy. Paper only, not advice.
 
 ## Moving most in its scans, last 30 min (1h volume)
-- DOGE: $88,669 1h vol, $5,961 mcap, -94% 1h  
+- FUTA: $212,426 1h vol, $10,594 mcap, -62% 1h  
+  CA `FxoXV4C8DTSYeg5dSXrEsr45zzr8tpNbsrpoiZ8Kpump`
+- Chick: $208,010 1h vol, $67,001 mcap, +132% 1h  
+  CA `Dueav76X9spnoLomhM2jMkkWorVggbeWucLs3YLupump`
+- SNIFFER: $91,872 1h vol, $5,074 mcap, +88% 1h  
+  CA `6CDiNXJTtcgdJs1uGuhK5REFDRYT2AS3RifyanQ7pump`
+- DOGE: $80,182 1h vol, $6,180 mcap, -88% 1h  
   CA `D1noy4QtZiWkH3A8QJGq31HGaAvfvA3bti4C6HLEpump`
-- GTA: $71,716 1h vol, $82,648 mcap, +46% 1h  
-  CA `G9ZMir6uh66Y7viPkXAy7myA9jjE4T1YgheVUmGDpump`
-- BackBid: $59,148 1h vol, $1,733 mcap, -94% 1h  
+- BackBid: $59,180 1h vol, $1,793 mcap, -94% 1h  
   CA `CGajmY1RdMWy1QDD9fyUdnoGsmVLDW1xm4yqXdyo3ecs`
-- afk: $46,423 1h vol, $1,770 mcap, -93% 1h  
-  CA `FWPMa5Z4iwtLbGDLpviBRcBoQkeWSabHYYK4HWUCpump`
-- HODL: $34,822 1h vol, $12,324 mcap, -64% 1h  
-  CA `F63zJ8AM4RnHHxnHzGAPgM8Amv8KTSqG9knPd7yvpump`
