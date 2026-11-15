@@ -1,13 +1,13 @@
 # Trencher live report
 
-Updated 2026-11-15T13:40:45Z (paper trading, never real money)
+Updated 2026-11-15T13:56:00Z (paper trading, never real money)
 
 - Equity: $74.23 (-25.8% vs $100 start)
 - Closed trades: 22, 3 wins
 - Fees paid: $14.78 (axiom $2.81, network $9.18, pool $2.66), plus $4.15 lost to slippage
 - New trades: WATCH-ONLY (scans and decides, buys nothing)
-- Brain: subscription, claude-haiku-5-5 for routine calls, claude-opus-5-5 for the daily review; 79 routine calls and 0 plan-limit hits in 48h
-- Watch log: 50 coins being followed, 1380 filed, 0 would-buys (6h follow, sampled every 2 min)
+- Brain: subscription, claude-haiku-5-5 for routine calls, claude-opus-5-5 for the daily review; 80 routine calls and 0 plan-limit hits in 48h
+- Watch log: 47 coins being followed, 1385 filed, 0 would-buys (6h follow, sampled every 2 min)
 
 ## Scorecard (after fees)
 - 22 closed, 3 won (14%), net $-25.79
@@ -73,9 +73,13 @@ Updated 2026-11-15T13:40:45Z (paper trading, never real money)
   CA `H4gHnZ3NCU7Z9XQwGX6YYJNyieGEW8pqwGRUcdSxpump`
 
 ## Last scan
-- 13:40Z: 3 coins, 3 with pairs, 0 passed the market filters, 0 researched
+- 13:54Z: 4 coins, 4 with pairs, 0 passed the market filters, 0 researched
 
 ## Coins it looked at, and why it passed
+- 13:53Z rockstar (MIGRATED, $101,194 mcap, $2,513 5m vol): PASS at conviction 2, PASS: blocker "chasing" and "flow below pace". Sitting at its peak with $2.5k 5m, 0.37x the hourly pace, and 20 other coins named "rockstar" (V1, V6, V13).  
+  CA `9HFUEab7sompLDPTAaTGkryMNGbtBaFMhHMVpJEBpump`
+- 13:49Z HSI (MIGRATED, $326,611 mcap, $194,746 5m vol): REJECT, Top 10 hold 27.3% ex-pool (>25%) (V13)  
+  CA `93hTYKGhD43KeW4eQVtpL95WKUZpdEXE2F3XCpNipump`
 - 13:39Z SDEX (MIGRATED, $1,309,704 mcap, $23,066 5m vol): REJECT, RugCheck danger: Top 10 holders high ownership  
   CA `J1sHNawTwQrRCga3w5uREEwTbrDZKT5j6WobLQKZSDEX`
 - 13:35Z DIGS (MIGRATED, $143,004 mcap, $2,204 5m vol): REJECT, Bundles: 10 linked wallet cluster(s) hold 100.0% of supply (>20%) (V17)  
@@ -92,10 +96,6 @@ Updated 2026-11-15T13:40:45Z (paper trading, never real money)
   CA `9HFUEab7sompLDPTAaTGkryMNGbtBaFMhHMVpJEBpump`
 - 12:59Z pls (FINAL_STRETCH, $23,784 mcap, $34,440 5m vol): PASS at conviction 3, PASS: 8 minutes old, +159% on the 5m at 8.9x hourly pace, and 14 copies of "pls" with no story behind the name. Chasing a spike in a vamp field (V1, V6).  
   CA `3Ev32Ns2fkfEppgYnskq6rDL5TfXfjhtEXWkPz2Vpump`
-- 12:56Z hermano (FINAL_STRETCH, $15,933 mcap, $16,716 5m vol): REJECT, RugCheck danger: Creator history of rugged tokens  
-  CA `7eM3RsKhCCgBTVFeCrbHTtKuuSYewKbp4oUQWzavpump`
-- 12:54Z SDEX (MIGRATED, $1,106,905 mcap, $11,115 5m vol): REJECT, RugCheck danger: Top 10 holders high ownership  
-  CA `J1sHNawTwQrRCga3w5uREEwTbrDZKT5j6WobLQKZSDEX`
 
 ## What its skips did next (last 48h)
 A skip "ran" if the coin reached the first target (1.5x) from the skip price before a 20% drop, "dumped" if the drop came first. Sampled every 10 min, followed 6h.
@@ -106,12 +106,12 @@ A skip "ran" if the coin reached the first target (1.5x) from the skip price bef
     CA `AiQUqe4zjiDssth2FsCoeQVaGtCtHYyKGX8U52rWpump`
   - ran: FUTA up to 2.77x  
     CA `FxoXV4C8DTSYeg5dSXrEsr45zzr8tpNbsrpoiZ8Kpump`
-- top 10 over 25%: blocked 14, ran 2, dumped 9, flat 2, open 1 (saving losses: keep it)
+- top 10 over 25%: blocked 15, ran 2, dumped 9, flat 2, open 2 (saving losses: keep it)
   - ran: FUTA up to 1.51x  
     CA `8JCsa61htnPj2af7g1KSyU1UEncruHE1Ph9aNR6rpump`
   - ran: twert up to 1.98x  
     CA `8WvWwttzaLfW1nbjx6wmYL5jozWpvy95WktAg5cipump`
-- flow below pace: blocked 10, ran 1, dumped 6, flat 2, open 1 (saving losses: keep it)
+- flow below pace: blocked 11, ran 1, dumped 6, flat 2, open 2 (saving losses: keep it)
   - ran: PASSED up to 1.73x  
     CA `3XaH8VPUaUegqmnkYA8PXCWqQqD8doqdsGGfZyoYpump`
 - too new / sniping: blocked 8, ran 2, dumped 6, flat 0, open 0 (saving losses: keep it)
@@ -173,13 +173,13 @@ Nothing shows a positive after-cost edge. Across all 93 settled coins the simple
 Not quiet: three movers clear the $10k 5-minute bar in the scan data (hermano $16.7k, PEER $13.3k, SDEX $11.1k). The crawler's Socks, Gomez at $42.9k and Tools at $14.3k figures don't match scan_movers (Gomez is $1.6k 5m, Tools $0), so I ignored them. The live theme is fresh sub-$25k pump.fun launches under an hour old with 59-61% buy ratios (hermano, BITLY, PEER), while the cat theme is fading (GATO flat on $3.1k 5m at $7M, poorcat thin at $294 5m) and joke-named launches that pumped earlier are dumping (Buttom -72%, Tools -85% with zero 5m buys, Gomez -35%). The news narratives (Binance-hack laundering, Trump coin collapse, DOGE -40%) are cooling, so attention is on new names, not stories. Setups to research, not chase: SDEX is the cleanest (Raydium, $1.1M, 69% buys, passes the recon filters); hermano and PEER only after full holder, dev and bundle checks, since they are minutes old on the curve. Nothing is verified; paper only, not advice.
 
 ## Moving most in its scans, last 30 min (1h volume)
+- HSI: $471,764 1h vol, $333,741 mcap, +302% 1h  
+  CA `93hTYKGhD43KeW4eQVtpL95WKUZpdEXE2F3XCpNipump`
 - SDEX: $326,204 1h vol, $1,309,705 mcap, +22% 1h  
   CA `J1sHNawTwQrRCga3w5uREEwTbrDZKT5j6WobLQKZSDEX`
-- PEER: $53,567 1h vol, $1,854 mcap, -93% 1h  
+- rockstar: $81,024 1h vol, $101,194 mcap, +1% 1h  
+  CA `9HFUEab7sompLDPTAaTGkryMNGbtBaFMhHMVpJEBpump`
+- hermano: $59,245 1h vol, $3,478 mcap, -89% 1h  
+  CA `7eM3RsKhCCgBTVFeCrbHTtKuuSYewKbp4oUQWzavpump`
+- PEER: $53,590 1h vol, $1,801 mcap, -93% 1h  
   CA `B7kJAxdv9DsHzPNHKaKCnaEiUiEy7VYCeFbqiWoCpump`
-- GATO: $51,343 1h vol, $6,853,974 mcap, -1% 1h  
-  CA `HsprHxBRgiVaQdRf3TnKNuZZtaX9JUSPgMFdAkk6pump`
-- Buttom: $50,212 1h vol, $3,032 mcap, -89% 1h  
-  CA `4D1npvfDzsyb3HVTTK1j2RCqnMCzt5Y7RVS1zY7Fpump`
-- gtacoin: $42,092 1h vol, $366,232 mcap, +6% 1h  
-  CA `DSKM3d518BBaQShSKqaqZcG1XMRf81UFB6a1eavhSTNK`
