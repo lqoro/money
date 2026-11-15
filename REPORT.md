@@ -1,13 +1,13 @@
 # Trencher live report
 
-Updated 2026-11-15T11:39:46Z (paper trading, never real money)
+Updated 2026-11-15T11:54:54Z (paper trading, never real money)
 
 - Equity: $74.23 (-25.8% vs $100 start)
 - Closed trades: 22, 3 wins
 - Fees paid: $14.78 (axiom $2.81, network $9.18, pool $2.66), plus $4.15 lost to slippage
 - New trades: WATCH-ONLY (scans and decides, buys nothing)
-- Brain: subscription, claude-haiku-5-5 for routine calls, claude-opus-5-5 for the daily review; 70 routine calls and 0 plan-limit hits in 48h
-- Watch log: 50 coins being followed, 1361 filed, 0 would-buys (6h follow, sampled every 2 min)
+- Brain: subscription, claude-haiku-5-5 for routine calls, claude-opus-5-5 for the daily review; 71 routine calls and 0 plan-limit hits in 48h
+- Watch log: 51 coins being followed, 1362 filed, 0 would-buys (6h follow, sampled every 2 min)
 
 ## Scorecard (after fees)
 - 22 closed, 3 won (14%), net $-25.79
@@ -73,9 +73,13 @@ Updated 2026-11-15T11:39:46Z (paper trading, never real money)
   CA `H4gHnZ3NCU7Z9XQwGX6YYJNyieGEW8pqwGRUcdSxpump`
 
 ## Last scan
-- 11:38Z: 5 coins, 5 with pairs, 0 passed the market filters, 0 researched
+- 11:54Z: 8 coins, 8 with pairs, 0 passed the market filters, 0 researched
 
 ## Coins it looked at, and why it passed
+- 11:52Z GATO (DIP, $6,951,549 mcap, $5,074 5m vol): REJECT, Dev holds 3.0% (>1%) (V13, V17)  
+  CA `HsprHxBRgiVaQdRf3TnKNuZZtaX9JUSPgMFdAkk6pump`
+- 11:47Z Gomez (FINAL_STRETCH, $24,318 mcap, $41,054 5m vol): PASS at conviction 4, PASS — a four-minute-old name copy with no story, 7 same-ticker copies, and top 10 at 18.4%. A crowd with nothing behind it (V1, V13).  
+  CA `GmbC342to7Lab7LEh4aqkEY5mfCVbfDvs1X5TB8epump`
 - 11:35Z TOOLS (FINAL_STRETCH, $16,071 mcap, $14,336 5m vol): PASS at conviction 2, PASS: blocker "chasing spike" plus "too new". TOOLS is about 4 minutes old, up 665% in 5m, with 12x hourly pace, and its site domain is about 2.4 hours old. That's a launch pop, not a setup (V1, V13).  
   CA `9Ei1d97U7M8m4t3fof7c8MUECtmzgqbQCo81cGGzpump`
 - 11:29Z Socks (MIGRATED, $364,215 mcap, $63,828 5m vol): PASS at conviction 4, PASS: mid-range, no catalyst, and it's a card product with no meme. The 5m flow is fine. The entry is not. (V1, V6)  
@@ -92,10 +96,6 @@ Updated 2026-11-15T11:39:46Z (paper trading, never real money)
   CA `HsprHxBRgiVaQdRf3TnKNuZZtaX9JUSPgMFdAkk6pump`
 - 10:07Z PASSED (FINAL_STRETCH, $18,873 mcap, $4,184 5m vol): PASS at conviction 3, PASS: 19 copies of "Mission Passed", the theme is at 0.12x its hourly pace, and 5m flow is $4.2k, under the $10k bar. Split crowd with no leader on flow. (V1, V6, V13)  
   CA `3XaH8VPUaUegqmnkYA8PXCWqQqD8doqdsGGfZyoYpump`
-- 10:05Z Sumi (FINAL_STRETCH, $19,448 mcap, $3,509 5m vol): REJECT, RugCheck danger: Creator history of rugged tokens  
-  CA `HvA8a4C1KAXfrZMnmd1VyvLh21HzMvr4rjUtxiezpump`
-- 10:00Z HOGE (MIGRATED, $48,707 mcap, $3,494 5m vol): REJECT, Bundles: 5 linked wallet cluster(s) hold 22.6% of supply (>20%) (V17)  
-  CA `FVzqGqRmr4UH1Fif6dewmwbJ1p4YUZCu8dcw4Efopump`
 
 ## What its skips did next (last 48h)
 A skip "ran" if the coin reached the first target (1.5x) from the skip price before a 20% drop, "dumped" if the drop came first. Sampled every 10 min, followed 6h.
@@ -106,15 +106,17 @@ A skip "ran" if the coin reached the first target (1.5x) from the skip price bef
     CA `AiQUqe4zjiDssth2FsCoeQVaGtCtHYyKGX8U52rWpump`
   - ran: FUTA up to 2.77x  
     CA `FxoXV4C8DTSYeg5dSXrEsr45zzr8tpNbsrpoiZ8Kpump`
-- top 10 over 25%: blocked 11, ran 1, dumped 7, flat 1, open 2 (saving losses: keep it)
+- top 10 over 25%: blocked 11, ran 1, dumped 8, flat 1, open 1 (saving losses: keep it)
   - ran: FUTA up to 1.51x  
     CA `8JCsa61htnPj2af7g1KSyU1UEncruHE1Ph9aNR6rpump`
 - flow below pace: blocked 8, ran 1, dumped 5, flat 1, open 1 (saving losses: keep it)
   - ran: PASSED up to 1.73x  
     CA `3XaH8VPUaUegqmnkYA8PXCWqQqD8doqdsGGfZyoYpump`
-- too new / sniping: blocked 6, ran 1, dumped 4, flat 0, open 1 (saving losses: keep it)
+- too new / sniping: blocked 6, ran 2, dumped 4, flat 0, open 0 (saving losses: keep it)
   - ran: Chick up to 1.66x  
     CA `Dueav76X9spnoLomhM2jMkkWorVggbeWucLs3YLupump`
+  - ran: TOOLS up to 1.83x  
+    CA `9Ei1d97U7M8m4t3fof7c8MUECtmzgqbQCo81cGGzpump`
 - near the high / chasing: blocked 6, ran 1, dumped 5, flat 0, open 0 (saving losses: keep it)
   - ran: penny up to 1.6x  
     CA `5gmCPpuktJ7Svjgr4PPJBTosAFKB8K6Z45EGfSUmpump`
@@ -173,11 +175,11 @@ Not quiet, but the flow is concentrated. Only Socks Neobank ($52k 5m, 60% buys, 
 ## Moving most in its scans, last 30 min (1h volume)
 - Socks: $618,695 1h vol, $364,215 mcap, +52% 1h  
   CA `FS1pBmZKp2Qw1atC64GoLamHstECAos9ot8bGPgDpump`
-- SURVIVE: $59,686 1h vol, $3,684 mcap, +51% 1h  
+- GETAJOB: $97,913 1h vol, $666,962 mcap, +25% 1h  
+  CA `ZGW9B644VgfmmKtBTv1xjWGarkjEhFrcUrQEaqepump`
+- SURVIVE: $59,854 1h vol, $3,350 mcap, +37% 1h  
   CA `6fet2d2NkU5L1Qw46q2EsqKuXrt4nGsgFLQHW1iF7xbr`
-- SEYONG: $44,845 1h vol, $2,653 mcap, +3% 1h  
-  CA `CGdYJyGwy2txPAz15V35BkGH4ibBAjGskV6oQ1GWpump`
-- SOLA: $44,266 1h vol, $3,212 mcap, -88% 1h  
-  CA `3kTTVL6DtRzfSUVCMcBoaJoiAkNwLc2GY7zYvUbnpump`
-- PASSED: $29,986 1h vol, $4,299 mcap, -90% 1h  
-  CA `3XaH8VPUaUegqmnkYA8PXCWqQqD8doqdsGGfZyoYpump`
+- PEARL: $48,167 1h vol, $10,540 mcap, +307% 1h  
+  CA `gupczrr4u7wkyCQq9xTm4Rfc14NYxuCMpX4Rfpapump`
+- GATO: $44,372 1h vol, $6,951,549 mcap, +3% 1h  
+  CA `HsprHxBRgiVaQdRf3TnKNuZZtaX9JUSPgMFdAkk6pump`
