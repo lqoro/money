@@ -1,13 +1,13 @@
 # Trencher live report
 
-Updated 2026-11-15T04:35:35Z (paper trading, never real money)
+Updated 2026-11-15T04:50:38Z (paper trading, never real money)
 
 - Equity: $74.23 (-25.8% vs $100 start)
 - Closed trades: 22, 3 wins
 - Fees paid: $14.78 (axiom $2.81, network $9.18, pool $2.66), plus $4.15 lost to slippage
 - New trades: WATCH-ONLY (scans and decides, buys nothing)
-- Brain: subscription, claude-haiku-5-5 for routine calls, claude-opus-5-5 for the daily review; 32 routine calls and 0 plan-limit hits in 48h
-- Watch log: 70 coins being followed, 1282 filed, 0 would-buys (6h follow, sampled every 2 min)
+- Brain: subscription, claude-haiku-5-5 for routine calls, claude-opus-5-5 for the daily review; 33 routine calls and 0 plan-limit hits in 48h
+- Watch log: 72 coins being followed, 1282 filed, 0 would-buys (6h follow, sampled every 2 min)
 
 ## Scorecard (after fees)
 - 22 closed, 3 won (14%), net $-25.79
@@ -73,9 +73,13 @@ Updated 2026-11-15T04:35:35Z (paper trading, never real money)
   CA `H4gHnZ3NCU7Z9XQwGX6YYJNyieGEW8pqwGRUcdSxpump`
 
 ## Last scan
-- 04:35Z: 5 coins, 5 with pairs, 0 passed the market filters, 0 researched
+- 04:49Z: 21 coins, 21 with pairs, 1 passed the market filters, 1 researched
 
 ## Coins it looked at, and why it passed
+- 04:49Z MIL (MIGRATED, $64,316 mcap, $11,029 5m vol): REJECT, RugCheck danger: Creator history of rugged tokens  
+  CA `8655LtfvozXLSJWrzcmwVeK13s5Gvn49UXFHYcYzpump`
+- 04:45Z chudhaos (MIGRATED, $377,019 mcap, $2,838 5m vol): REJECT, RugCheck danger: Large Amount of LP Unlocked 100.00%  
+  CA `4W7BNgGspH3YFbLsP5T7AnKAzr6REGMMBGK9xDZKpump`
 - 04:18Z penny (MIGRATED, $85,233 mcap, $3,769 5m vol): PASS at conviction 2, PASS: 5m flow is at 0.16x the hourly pace and the coin is one of 13 "penny" copies with a 9.5% bundle cluster. No printed higher low. (V1, V6, V3)  
   CA `5gmCPpuktJ7Svjgr4PPJBTosAFKB8K6Z45EGfSUmpump`
 - 04:17Z JASON (MIGRATED, $336,875 mcap, $8,693 5m vol): PASS at conviction 2, PASS: JASON, flow below pace and too new. 5m is 0.4x the hour's pace after an +852% hour, and the coin is 0.9h old. Blocker "flow below pace" (V1, V6).  
@@ -92,24 +96,18 @@ Updated 2026-11-15T04:35:35Z (paper trading, never real money)
   CA `4osu2k8desGt6mUcR2YWFTrsSt2V6yfoyuvnqzKdbNfD`
 - 03:37Z Angel (MIGRATED, $43,407 mcap, $4,744 5m vol): PASS at conviction 3, PASS — 20 copies of "Sonny Angel" in one vamp field, down 76% from a $180k peak, sellers ahead on 5m (45% buys), top 10 at 18.2%, and no story I can find. Blocker: split crowd plus no catalyst (V1, V3, V6).  
   CA `5bzT7x5nYZx3grnRaL6cDRQuSKxEWDVwh2WUxd91pump`
-- 03:33Z worth (MIGRATED, $182,879 mcap, $7,028 5m vol): REJECT, Top 10 hold 27.2% ex-pool (>25%) (V13)  
-  CA `7mH4PaR9BMxAid2i1QNDBmziAwxyXBsPNKSMiWySpump`
-- 03:33Z penny (MIGRATED, $74,215 mcap, $21,416 5m vol): PASS at conviction 3, PASS: penny, $74k, 6 minutes old, 12% off an $84k peak on a 6.6x volume spike with no printed higher low and a 9.5% single bundle in a 16-copy field. Blocker: chasing spike. (V1, V6, V13)  
-  CA `5gmCPpuktJ7Svjgr4PPJBTosAFKB8K6Z45EGfSUmpump`
 
 ## What its skips did next (last 48h)
 A skip "ran" if the coin reached the first target (1.5x) from the skip price before a 20% drop, "dumped" if the drop came first. Sampled every 10 min, followed 6h.
-- RugCheck danger: blocked 9, ran 3, dumped 5, flat 0, open 1 (mixed)
+- RugCheck danger: blocked 10, ran 2, dumped 5, flat 0, open 3 (saving losses: keep it)
   - ran: Ivy up to 1.88x  
     CA `DxNF3Qxd8XeUBdz7ReRdoiFzRmNDKbSz4c2oA7aRpump`
   - ran: SI up to 1.93x  
     CA `AiQUqe4zjiDssth2FsCoeQVaGtCtHYyKGX8U52rWpump`
-  - ran: MIL up to 1.71x  
-    CA `8655LtfvozXLSJWrzcmwVeK13s5Gvn49UXFHYcYzpump`
 - top 10 over 25%: blocked 6, ran 0, dumped 5, flat 0, open 1 (saving losses: keep it)
 - flow below pace: blocked 5, ran 0, dumped 4, flat 0, open 1 (saving losses: keep it)
 - falling knife (code): blocked 4, ran 0, dumped 3, flat 0, open 1 (saving losses: keep it)
-- too new / sniping: blocked 3, ran 0, dumped 2, flat 0, open 1 (too few played out to judge)
+- too new / sniping: blocked 3, ran 0, dumped 3, flat 0, open 0 (saving losses: keep it)
 - thin 5m volume: blocked 3, ran 0, dumped 3, flat 0, open 0 (saving losses: keep it)
 - crowd leaving / fading volume: blocked 2, ran 1, dumped 1, flat 0, open 0 (too few played out to judge)
   - ran: NUREMBERG up to 1.62x  
@@ -154,16 +152,16 @@ This window has no evidence in it. In 24 hours zero coins were logged at any sta
 - [2026-11-02 20:25] I expected Slingoor, a clean MIGRATED leader with $25k of 5m flow at pace and a 0.77 buy share, to retest its $408k high from $304k. It never went green (0.98x peak) and hit the -20% stop in 2 minutes, a -$2.86 probe. My own thesis admitted there was no printed higher low after a peak only 6 minutes old, so this confirms the money-shape rule: buy share and flow are not structure (V1, V6). Next time a MIGRATED pullback with no higher low above the hourly low is a PASS with blocker "no higher low", not a probe. This is one loss, so it adds no new ban beyond the rule I already have.
 
 ## Meta right now
-The trenches are not quiet. Three themes show up across several scan_movers coins: fresh cat and animal jokes, person-name coins, and stable/dollar jokes. Cat and animal jokes are the strongest right now: UpCat (upcat, $14k cap, $15k 5m, 63% buys, +490% in the hour, 0.3h old) is the biggest flow in its group, and cat token #19028382 has $1.1k 5m with +129% in the hour. Person-name coins are rising: Jason Duval (JASON, $123k cap, $31k 5m, 83% buys, 0.2h old) and WANTED (scan shows $1.25M cap, $10.8k 5m, 74% buys, 1.6h old, so the crawler's $832k and +2133% numbers are stale and I'm not using them). Stable/dollar jokes are mixed, not clean: Stable Inu on Raydium (SI, $37k cap, $32.7k 5m, 55% buys) has real flow, while the pump.fun SI, USD (Useless Shit Dollar) and USDUS are thin or dead on the scan. Fading: old GTA and cat coins (GATO, CBUCKS), plus the dead dog and "danny" tickers. Setups to research next are UpCat, JASON and SI on Raydium, each gated by holder, dev and bundle checks before any entry; WANTED is a chase-risk watch only because it has already run hard. Paper only, not advice.
+Trencher: The trenches are active but thin. Animal and pet jokes are the most common shape in the scan (Bowser Farts, Unstable and Stable Inu, a cat token, marmot "invest", AiDiglet), but most of them have almost no 5-minute flow, and the cat token and marmot are at 0 volume and falling. Person and object names are the other live group: penny ($85k cap, $3.8k 5m, 62% buys, +47% in the hour, 0.9h old) and Sonny Angel (29% buys, fading). Dollar and "useless" jokes are mixed (Stable Inu is $86 on 5m, Useless Market is -8%), and grand theft ape / GTA is fading (0% buys). No coin in this scan reaches the $10k 5-minute bar, so nothing is an entry; penny and Bowser Farts (FThkP96, 75% buys, +120% in the hour, $1.2k 5m) are research-only, and size waits for volume. The crawler's UpCat, JASON, WANTED and "Stable Inu on Raydium" don't appear in this scan, so I'm treating them as unverified and not using them as setups. Paper only, not advice.
 
 ## Moving most in its scans, last 30 min (1h volume)
-- penny: $275,187 1h vol, $85,233 mcap, +47% 1h  
-  CA `5gmCPpuktJ7Svjgr4PPJBTosAFKB8K6Z45EGfSUmpump`
-- JASON: $260,146 1h vol, $336,875 mcap, +852% 1h  
-  CA `FR4yp7buct5Rz8yfic4zwVVcfLySmrqw3tFp18UCpump`
-- WANTED: $142,677 1h vol, $1,405,343 mcap, +57% 1h  
-  CA `CiMyaPC9icicJxkFqvqpgL2YT2FjEQmGx1YVdG78pump`
-- GATO: $114,540 1h vol, $7,028,724 mcap, -1% 1h  
-  CA `HsprHxBRgiVaQdRf3TnKNuZZtaX9JUSPgMFdAkk6pump`
-- BOWSER: $57,175 1h vol, $5,779 mcap, +138% 1h  
+- MIL: $195,479 1h vol, $64,634 mcap, +127% 1h  
+  CA `8655LtfvozXLSJWrzcmwVeK13s5Gvn49UXFHYcYzpump`
+- BOWSER: $52,786 1h vol, $8,229 mcap, +120% 1h  
+  CA `FThkP96RFL7NnuxTrrbhQza3keGQ4pVh5qGtHJ9Npump`
+- BOWSER: $51,212 1h vol, $4,831 mcap, -39% 1h  
   CA `E8BkLUzT3vzQHd5Ub8KrMv1XTtUzMY2vQgNvGmFNpump`
+- UI: $27,242 1h vol, $2,067 mcap, -19% 1h  
+  CA `DXEJEXXxjwYMSufE8siioScsDc7oCDjFpatmwSexpump`
+- SI: $21,180 1h vol, $20,090 mcap, -31% 1h  
+  CA `AiQUqe4zjiDssth2FsCoeQVaGtCtHYyKGX8U52rWpump`
