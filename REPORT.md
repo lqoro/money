@@ -1,13 +1,13 @@
 # Trencher live report
 
-Updated 2026-11-15T20:00:01Z (paper trading, never real money)
+Updated 2026-11-15T20:15:03Z (paper trading, never real money)
 
 - Equity: $74.23 (-25.8% vs $100 start)
 - Closed trades: 22, 3 wins
 - Fees paid: $14.78 (axiom $2.81, network $9.18, pool $2.66), plus $4.15 lost to slippage
 - New trades: WATCH-ONLY (scans and decides, buys nothing)
-- Brain: subscription, claude-haiku-5-5 for routine calls, claude-opus-5-5 for the daily review; 126 routine calls and 0 plan-limit hits in 48h
-- Watch log: 93 coins being followed, 1433 filed, 0 would-buys (6h follow, sampled every 2 min)
+- Brain: subscription, claude-haiku-5-5 for routine calls, claude-opus-5-5 for the daily review; 128 routine calls and 0 plan-limit hits in 48h
+- Watch log: 94 coins being followed, 1434 filed, 0 would-buys (6h follow, sampled every 2 min)
 
 ## Scorecard (after fees)
 - 22 closed, 3 won (14%), net $-25.79
@@ -73,9 +73,13 @@ Updated 2026-11-15T20:00:01Z (paper trading, never real money)
   CA `H4gHnZ3NCU7Z9XQwGX6YYJNyieGEW8pqwGRUcdSxpump`
 
 ## Last scan
-- 19:59Z: 3 coins, 2 with pairs, 0 passed the market filters, 0 researched
+- 20:14Z: 5 coins, 4 with pairs, 0 passed the market filters, 0 researched
 
 ## Coins it looked at, and why it passed
+- 20:11Z Bob (FINAL_STRETCH, $24,364 mcap, $6,391 5m vol): PASS at conviction 2, PASS: no printed higher low, the price is a 15m spike off a $7k hour low, and the story isn't on the radar. Blocker: "chasing spike" (V1, V6).  
+  CA `AQMq7HyW7unGhyktDTzFPjiioQt4TsPp7Wo6AYRApump`
+- 20:06Z gtacoin (MIGRATED, $195,485 mcap, $2,594 5m vol): REJECT, Bundles: 6 linked wallet cluster(s) hold 96.9% of supply (>20%) (V17)  
+  CA `DSKM3d518BBaQShSKqaqZcG1XMRf81UFB6a1eavhSTNK`
 - 19:57Z RIDE (FINAL_STRETCH, $14,842 mcap, $8,181 5m vol): PASS at conviction 3, PASS: "The Last Ride" is the leader of a 14-17 copy "last ride" field, but the theme is at 0.5x its hourly pace, 5m flow is $8.2k, there's no catalyst and no radar mention. Blockers: "flow below pace" and "split crowd" (V1, V3, V13).  
   CA `5VW1yLYY8bG6ibk5dztGYpQMHKsrj34RU5VmDP4SFMMg`
 - 19:56Z NCAT (MIGRATED, $55,199 mcap, $27,468 5m vol): PASS at conviction 2, PASS: chasing spike, target too close. NVIDIA Cat is up 42% on 5m and only 8% off its high, with $59.8k as the first resistance (1.08x away). (V1, V6)  
@@ -92,21 +96,21 @@ Updated 2026-11-15T20:00:01Z (paper trading, never real money)
   CA `4B8CdHPZ8ng1CtMP2Jk2W8wGAwJ5nJnap1deVsz2pump`
 - 19:47Z DIGS (MIGRATED, $191,971 mcap, $2,169 5m vol): REJECT, Bundles: 10 linked wallet cluster(s) hold 100.0% of supply (>20%) (V17)  
   CA `9QT8K685Hrae4k11dhGXirdtpfAaimExtyfwt8cPpump`
-- 19:40Z DYC (MIGRATED, $100,980 mcap, $215,570 5m vol): REJECT, Dev holds 1.1% (>1%) (V13, V17)  
-  CA `Da5Gbwd8GCuKwd5fv4pk7bBh12UKjUg5iH3VthDWCity`
-- 19:39Z ANT (MIGRATED, $116,851 mcap, $14,183 5m vol): REJECT, Top 10 hold 37.0% ex-pool (>25%) (V13)  
-  CA `7H2sHeLHyHR8jxENGmsqn7RxTkYZa4KwXvKYcoxBpump`
 
 ## What its skips did next (last 48h)
 A skip "ran" if the coin reached the first target (1.5x) from the skip price before a 20% drop, "dumped" if the drop came first. Sampled every 10 min, followed 6h.
-- flow below pace: blocked 23, ran 1, dumped 15, flat 2, open 5 (saving losses: keep it)
+- flow below pace: blocked 23, ran 2, dumped 16, flat 2, open 3 (saving losses: keep it)
   - ran: PASSED up to 1.73x  
     CA `3XaH8VPUaUegqmnkYA8PXCWqQqD8doqdsGGfZyoYpump`
-- top 10 over 25%: blocked 21, ran 2, dumped 14, flat 1, open 4 (saving losses: keep it)
+  - ran: ANT up to 1.52x  
+    CA `BDPm9gPHCRyo2qjcRrYPsXexmbRwuuHQZo2qhhYXpump`
+- top 10 over 25%: blocked 21, ran 3, dumped 14, flat 1, open 3 (saving losses: keep it)
   - ran: rockstar up to 1.95x  
     CA `9HFUEab7sompLDPTAaTGkryMNGbtBaFMhHMVpJEBpump`
   - ran: VI up to 1.71x  
     CA `4Dj8m9vWqu779F1KDBUttvXM8YFm7U92SDpvjBNKtEiB`
+  - ran: ANT up to 1.52x  
+    CA `BDPm9gPHCRyo2qjcRrYPsXexmbRwuuHQZo2qhhYXpump`
 - RugCheck danger: blocked 20, ran 7, dumped 10, flat 2, open 1 (mixed)
   - ran: Ivy up to 1.88x  
     CA `DxNF3Qxd8XeUBdz7ReRdoiFzRmNDKbSz4c2oA7aRpump`
@@ -121,7 +125,7 @@ A skip "ran" if the coin reached the first target (1.5x) from the skip price bef
     CA `9Ei1d97U7M8m4t3fof7c8MUECtmzgqbQCo81cGGzpump`
   - ran: twert up to 1.81x  
     CA `8WvWwttzaLfW1nbjx6wmYL5jozWpvy95WktAg5cipump`
-- near the high / chasing: blocked 14, ran 1, dumped 12, flat 0, open 1 (saving losses: keep it)
+- near the high / chasing: blocked 15, ran 1, dumped 12, flat 0, open 2 (saving losses: keep it)
   - ran: penny up to 1.6x  
     CA `5gmCPpuktJ7Svjgr4PPJBTosAFKB8K6Z45EGfSUmpump`
 - other: blocked 6, ran 2, dumped 4, flat 0, open 0 (saving losses: keep it)
@@ -129,7 +133,7 @@ A skip "ran" if the coin reached the first target (1.5x) from the skip price bef
     CA `G1KuEMuLrxWynFddQVnpdkQAhYFBwNJiuz1Lv7d9pump`
   - ran: SI up to 1.94x  
     CA `H2irVtPLfKoBJ69itZmhsedSPwBUTaubmUavc6Uapump`
-- dev share over 1%: blocked 5, ran 1, dumped 1, flat 0, open 3 (too few played out to judge)
+- dev share over 1%: blocked 5, ran 1, dumped 2, flat 0, open 2 (saving losses: keep it)
   - ran: PANICSELL up to 1.74x  
     CA `82Z6CcE5g3o1jW3vgtcqr95jP4XFx8jg1SJe8ikepump`
 - crowd leaving / fading volume: blocked 5, ran 1, dumped 4, flat 0, open 0 (saving losses: keep it)
@@ -138,7 +142,7 @@ A skip "ran" if the coin reached the first target (1.5x) from the skip price bef
 - falling knife / no higher low: blocked 5, ran 1, dumped 0, flat 3, open 1 (too few played out to judge)
   - ran: CateGiving up to 1.57x  
     CA `5XasjCnMPTczL9VZTDHgbK5sQzwkjnu41oLeHf5Wpump`
-- bundles over the line: blocked 5, ran 0, dumped 3, flat 0, open 2 (saving losses: keep it)
+- bundles over the line: blocked 5, ran 0, dumped 2, flat 0, open 3 (too few played out to judge)
 
 ## Daily review (2026-11-15, claude-opus-5-5)
 Nothing shows a positive after-cost edge. Across all 93 settled coins the simple plan nets -5.5%: about +4.3% before costs, wiped out by an estimated 9.8% round-trip cost on a $10 buy. With a 1.5x target, a -20% stop and 10% cost, a setup needs about 43% of coins to run just to break even. FINAL_STRETCH (n=20) sits at 45% and nets +1.5%, but its 95% range on that share is roughly 23-67%, and one winner turning into a loser moves the average by about 3 points. That result is probably optimistic anyway: the simulator appears to fill every stop at exactly -20%, while several coins in the logs went to about zero. The routine model logged zero would-buys in 24h (39 brain calls, all PASS), so there is nothing to compare against what it passed on. Its PASSed coins did better than the checklist failures (-3.3% vs -7.1% net), but both groups lose money. Honest answer: no edge yet, and one day of correlated samples can't show one.
@@ -176,16 +180,16 @@ Nothing shows a positive after-cost edge. Across all 93 settled coins the simple
 - [2026-11-02 20:25] I expected Slingoor, a clean MIGRATED leader with $25k of 5m flow at pace and a 0.77 buy share, to retest its $408k high from $304k. It never went green (0.98x peak) and hit the -20% stop in 2 minutes, a -$2.86 probe. My own thesis admitted there was no printed higher low after a peak only 6 minutes old, so this confirms the money-shape rule: buy share and flow are not structure (V1, V6). Next time a MIGRATED pullback with no higher low above the hourly low is a PASS with blocker "no higher low", not a probe. This is one loss, so it adds no new ban beyond the rule I already have.
 
 ## Meta right now
-Not quiet. The movers are fresh pump.fun and PumpSwap launches, and the scan, not the web summary, is my source: the web's Yield ($48k cap, $35k 5m) and Busted ($698k, migrated) figures don't match the scan's Yield ($2.9k, $362 5m) and Busted ($1.4k, $0 5m, -99.8% 1h), so both are dead on the tape. Four themes repeat: a holiday-animal play (RUDOLPH, reindeer, 0.1h old, $23k cap, $63k 5m, 64% buys, +905% 1h), which fits V5's point that holiday metas show up early, probably in November; banana names (Banana, $12.4k cap, $10.1k 5m, 62% buys; BFS, $39.7k cap, $46.5k 5m, 57% buys), both with real volume and a need to find the original; cat names (Nyajira, $66.7k, $2.8k 5m, 49% buys, -31% 1h), which look like they're fading; and Chinese-language puns (NINU, NIBULL) with 5m volume under $2k and 29-42% buys, also fading. Setups to research now: RUDOLPH (strongest move, but $63k 5m on a $23k cap is about 2.7x turnover, so bundle and farm checks come first, V13) and Banana (cleanest buyer share with real volume); BFS is the same idea with weaker conviction, and chip (73% buys, +84% 1h, $3.5k 5m) is a probe at most. Dead on the tape: PENGUIN, Busted, and YIELD, all with near-zero 5m volume. Paper only, not advice.
+Not quiet. The meta on the scan is AI-lab puns and cat animals, both with real volume. ANT (Anthropic, $264k cap, $11k 5m, 90% buys, +92% 1h), Anthropig and NVIDIA Cat (NCAT, $55k cap, $26k 5m) ride AI-company names, and MEIMEI (The Retarded Cat, $20.7k 5m, +1151% 1h) runs the animal lane. Chinese-language puns are split: NINU ($75k cap, $15k 5m, 65% buys) still has buyers, while NIBULL is dead at $7 of 5m volume. The holiday play is fading (The Xmas Bull, $2.5k 5m). Setups to research: ANT first, after confirming the original CA because two tokens share the ticker; NCAT as the cat-plus-NVIDIA cross; and DacityCoin (DYC) only after bundle and farm checks, since $215k 5m on a $101k cap is over 2x turnover (V13). RUDOLPH, Banana and BFS from the web brief don't appear in the scan, so they're unverified and not setups here, and no hack-named coins are included. Paper only, not advice.
 
 ## Moving most in its scans, last 30 min (1h volume)
-- BFS: $676,292 1h vol, $46,751 mcap, +8% 1h  
-  CA `A3vB4dggaaMScchjNW9WifagMRiWaWtDAzunooDYcREQ`
-- DYC: $625,488 1h vol, $100,980 mcap, +121% 1h  
-  CA `Da5Gbwd8GCuKwd5fv4pk7bBh12UKjUg5iH3VthDWCity`
 - ANT: $219,260 1h vol, $264,192 mcap, +92% 1h  
   CA `BDPm9gPHCRyo2qjcRrYPsXexmbRwuuHQZo2qhhYXpump`
 - NCAT: $116,227 1h vol, $55,199 mcap, +23% 1h  
   CA `Cxrw8hPBcbboL18wLhHJCt1CfLe3JSdfofLrZ8ABpump`
 - NINU: $107,051 1h vol, $75,244 mcap, +57% 1h  
   CA `7jGdREhmTaGj6EVkrhmiadSSiNSvE5w6qfGccud5pump`
+- Anthropig: $75,931 1h vol, $652,233 mcap, +147% 1h  
+  CA `2NUaS6Gfrm5rBuPBn7svHka8t33SrSkpXGQiUvZLpump`
+- RIDE: $62,785 1h vol, $14,842 mcap, +307% 1h  
+  CA `5VW1yLYY8bG6ibk5dztGYpQMHKsrj34RU5VmDP4SFMMg`
