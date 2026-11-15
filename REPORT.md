@@ -1,13 +1,13 @@
 # Trencher live report
 
-Updated 2026-11-15T12:55:22Z (paper trading, never real money)
+Updated 2026-11-15T13:10:34Z (paper trading, never real money)
 
 - Equity: $74.23 (-25.8% vs $100 start)
 - Closed trades: 22, 3 wins
 - Fees paid: $14.78 (axiom $2.81, network $9.18, pool $2.66), plus $4.15 lost to slippage
 - New trades: WATCH-ONLY (scans and decides, buys nothing)
-- Brain: subscription, claude-haiku-5-5 for routine calls, claude-opus-5-5 for the daily review; 76 routine calls and 0 plan-limit hits in 48h
-- Watch log: 49 coins being followed, 1372 filed, 0 would-buys (6h follow, sampled every 2 min)
+- Brain: subscription, claude-haiku-5-5 for routine calls, claude-opus-5-5 for the daily review; 78 routine calls and 0 plan-limit hits in 48h
+- Watch log: 47 coins being followed, 1377 filed, 0 would-buys (6h follow, sampled every 2 min)
 
 ## Scorecard (after fees)
 - 22 closed, 3 won (14%), net $-25.79
@@ -73,9 +73,15 @@ Updated 2026-11-15T12:55:22Z (paper trading, never real money)
   CA `H4gHnZ3NCU7Z9XQwGX6YYJNyieGEW8pqwGRUcdSxpump`
 
 ## Last scan
-- 12:55Z: 4 coins, 4 with pairs, 0 passed the market filters, 0 researched
+- 13:10Z: 3 coins, 3 with pairs, 0 passed the market filters, 0 researched
 
 ## Coins it looked at, and why it passed
+- 13:07Z rockstar (MIGRATED, $93,650 mcap, $9,063 5m vol): REJECT, Top 10 hold 25.0% ex-pool (>25%) (V13)  
+  CA `9HFUEab7sompLDPTAaTGkryMNGbtBaFMhHMVpJEBpump`
+- 12:59Z pls (FINAL_STRETCH, $23,784 mcap, $34,440 5m vol): PASS at conviction 3, PASS: 8 minutes old, +159% on the 5m at 8.9x hourly pace, and 14 copies of "pls" with no story behind the name. Chasing a spike in a vamp field (V1, V6).  
+  CA `3Ev32Ns2fkfEppgYnskq6rDL5TfXfjhtEXWkPz2Vpump`
+- 12:56Z hermano (FINAL_STRETCH, $15,933 mcap, $16,716 5m vol): REJECT, RugCheck danger: Creator history of rugged tokens  
+  CA `7eM3RsKhCCgBTVFeCrbHTtKuuSYewKbp4oUQWzavpump`
 - 12:54Z SDEX (MIGRATED, $1,106,905 mcap, $11,115 5m vol): REJECT, RugCheck danger: Top 10 holders high ownership  
   CA `J1sHNawTwQrRCga3w5uREEwTbrDZKT5j6WobLQKZSDEX`
 - 12:49Z DIGS (MIGRATED, $148,137 mcap, $3,751 5m vol): REJECT, Bundles: 10 linked wallet cluster(s) hold 100.0% of supply (>20%) (V17)  
@@ -90,38 +96,32 @@ Updated 2026-11-15T12:55:22Z (paper trading, never real money)
   CA `FS1pBmZKp2Qw1atC64GoLamHstECAos9ot8bGPgDpump`
 - 12:04Z Oli (FINAL_STRETCH, $16,728 mcap, $7,504 5m vol): PASS at conviction 2, PASS: chasing spike. Oli is up 580% in 1h and 75% on the 5m, sitting at the top of its own spike. Six copies share the ticker and the top 10 hold 23.9%. (V1, V6, V13)  
   CA `8LBTmVfJxpjBDeggCdABThUrL6k67Q5XaEgEcoDoPMsG`
-- 12:01Z GTACOIN (FINAL_STRETCH, $16,510 mcap, $11,027 5m vol): REJECT, Top 10 hold 25.2% ex-pool (>25%) (V13)  
-  CA `Dtobp85WKE4sU1wSjC3m5eftCAKBojpsJjQWqUU1pump`
-- 11:52Z GATO (DIP, $6,951,549 mcap, $5,074 5m vol): REJECT, Dev holds 3.0% (>1%) (V13, V17)  
-  CA `HsprHxBRgiVaQdRf3TnKNuZZtaX9JUSPgMFdAkk6pump`
-- 11:47Z Gomez (FINAL_STRETCH, $24,318 mcap, $41,054 5m vol): PASS at conviction 4, PASS — a four-minute-old name copy with no story, 7 same-ticker copies, and top 10 at 18.4%. A crowd with nothing behind it (V1, V13).  
-  CA `GmbC342to7Lab7LEh4aqkEY5mfCVbfDvs1X5TB8epump`
 
 ## What its skips did next (last 48h)
 A skip "ran" if the coin reached the first target (1.5x) from the skip price before a 20% drop, "dumped" if the drop came first. Sampled every 10 min, followed 6h.
-- RugCheck danger: blocked 16, ran 4, dumped 10, flat 1, open 1 (saving losses: keep it)
+- RugCheck danger: blocked 17, ran 5, dumped 10, flat 1, open 1 (saving losses: keep it)
   - ran: Ivy up to 1.88x  
     CA `DxNF3Qxd8XeUBdz7ReRdoiFzRmNDKbSz4c2oA7aRpump`
   - ran: SI up to 1.93x  
     CA `AiQUqe4zjiDssth2FsCoeQVaGtCtHYyKGX8U52rWpump`
   - ran: FUTA up to 2.77x  
     CA `FxoXV4C8DTSYeg5dSXrEsr45zzr8tpNbsrpoiZ8Kpump`
-- top 10 over 25%: blocked 12, ran 1, dumped 9, flat 1, open 1 (saving losses: keep it)
+- top 10 over 25%: blocked 13, ran 1, dumped 9, flat 1, open 2 (saving losses: keep it)
   - ran: FUTA up to 1.51x  
     CA `8JCsa61htnPj2af7g1KSyU1UEncruHE1Ph9aNR6rpump`
-- flow below pace: blocked 10, ran 1, dumped 5, flat 2, open 2 (saving losses: keep it)
+- flow below pace: blocked 10, ran 1, dumped 6, flat 2, open 1 (saving losses: keep it)
   - ran: PASSED up to 1.73x  
     CA `3XaH8VPUaUegqmnkYA8PXCWqQqD8doqdsGGfZyoYpump`
-- near the high / chasing: blocked 7, ran 1, dumped 6, flat 0, open 0 (saving losses: keep it)
-  - ran: penny up to 1.6x  
-    CA `5gmCPpuktJ7Svjgr4PPJBTosAFKB8K6Z45EGfSUmpump`
-- too new / sniping: blocked 6, ran 2, dumped 4, flat 0, open 0 (saving losses: keep it)
+- too new / sniping: blocked 7, ran 2, dumped 5, flat 0, open 0 (saving losses: keep it)
   - ran: Chick up to 1.66x  
     CA `Dueav76X9spnoLomhM2jMkkWorVggbeWucLs3YLupump`
   - ran: TOOLS up to 1.83x  
     CA `9Ei1d97U7M8m4t3fof7c8MUECtmzgqbQCo81cGGzpump`
+- near the high / chasing: blocked 7, ran 1, dumped 6, flat 0, open 0 (saving losses: keep it)
+  - ran: penny up to 1.6x  
+    CA `5gmCPpuktJ7Svjgr4PPJBTosAFKB8K6Z45EGfSUmpump`
 - falling knife (code): blocked 4, ran 0, dumped 4, flat 0, open 0 (saving losses: keep it)
-- crowd leaving / fading volume: blocked 4, ran 1, dumped 2, flat 0, open 1 (saving losses: keep it)
+- crowd leaving / fading volume: blocked 4, ran 1, dumped 3, flat 0, open 0 (saving losses: keep it)
   - ran: NUREMBERG up to 1.62x  
     CA `7R3RnGmpV9mZXwSyHyKN5LEddiZRmGsYrAZPgDJqpump`
 - falling knife / no higher low: blocked 4, ran 1, dumped 0, flat 3, open 0 (too few played out to judge)
@@ -132,18 +132,18 @@ A skip "ran" if the coin reached the first target (1.5x) from the skip price bef
     CA `G1KuEMuLrxWynFddQVnpdkQAhYFBwNJiuz1Lv7d9pump`
 - bundles over the line: blocked 3, ran 0, dumped 2, flat 0, open 1 (too few played out to judge)
 
-## Daily review (2026-11-14, claude-opus-5-5)
-This window has no evidence in it. In 24 hours zero coins were logged at any stage: none failed the checklist, none were passed by the brain, none were would-buys and none went unresearched. Nothing settled, nothing is still being followed, and the brain was called once in 48 hours. With n=0, nobody can say anything about an after-cost edge, and the question of whether the routine model's would-buys beat the coins it passed on has no data to answer. The only real finding is that the pipeline looks stalled. A scanner running around the clock should pass at least a handful of coins through the market filters every day. It's also Nov 14, four days after the planned Nov 10 test, so it's worth confirming the watch-only week was captured and archived before anyone talks about edge.
-- finding: Every stage has n=0 in the last 24 hours: checklist_failed, brain_passed, would_buy and not_researched. There is no share that ran and no net % to report.
-- finding: No coins settled and none are still being followed, so the 6-hour price tracking has nothing to grade.
-- finding: skips_48h is empty and top_runners is empty, so there's no record of passed coins running either. You can't tell whether a rule cost us anything.
-- finding: The brain made 1 call in 48 hours with 0 plan-limit hits, 0 candidates skipped for lack of a brain and 0 stop reviews without a brain. The usage cap isn't the bottleneck. Too few candidates are reaching the brain at all.
-- finding: Cost context from before the pause: 22 trades lost $25.79, and fees plus slippage were $18.83 of that (73%). Fees alone, not bad picks, were most of the loss. Any rule tested later has to clear that cost first.
-- idea to test: These come from the guide and from the cost math, not from this window, which has no data. Test them on the full archived Nov 3–10 week only, and require n≥30 per group before believing a net % number.
-- idea to test: Cost gate: skip the coin if the estimated round-trip cost for a $10 buy on its pool is above about 4%. Test whether coins with lower costs have a positive net_pct under the simple plan while the rest don't. Fees were 73% of the past loss.
-- idea to test: Volume floor: setup=MIGRATED or FINAL_STRETCH and 5m volume ≥ $10k (V1, V6, V13). Compare against $2k–$10k. A small difference in net % after costs means the bar isn't earning its keep.
-- idea to test: Flow quality: buy ratio ≥ 0.55 and a flow ratio that shows 5m volume at or above its 1h pace. Check whether this separates coins that hit 1.5x from coins that hit -20% first.
-- idea to test: DIP setup: drawdown from the recent high between 40% and 55%, versus 55% to 70%, both with 5m volume ≥ $10k. This tests the house rule that a 70% dip is still buyable against the falling-knife cases.
+## Daily review (2026-11-15, claude-opus-5-5)
+Nothing shows a positive after-cost edge. Across all 93 settled coins the simple plan nets -5.5%: about +4.3% before costs, wiped out by an estimated 9.8% round-trip cost on a $10 buy. With a 1.5x target, a -20% stop and 10% cost, a setup needs about 43% of coins to run just to break even. FINAL_STRETCH (n=20) sits at 45% and nets +1.5%, but its 95% range on that share is roughly 23-67%, and one winner turning into a loser moves the average by about 3 points. That result is probably optimistic anyway: the simulator appears to fill every stop at exactly -20%, while several coins in the logs went to about zero. The routine model logged zero would-buys in 24h (39 brain calls, all PASS), so there is nothing to compare against what it passed on. Its PASSed coins did better than the checklist failures (-3.3% vs -7.1% net), but both groups lose money. Honest answer: no edge yet, and one day of correlated samples can't show one.
+- finding: Costs are the whole story. All coins: n=93, 30.1% ran, 52.7% dumped, -5.5% net, 9.8% average cost, so about +4.3% before costs. The real trades say the same thing: $18.83 of the $25.79 lost over 22 trades was fees and slippage.
+- finding: Breakeven math for the simple plan at about 10% cost and no flats: win share p must satisfy p*50 - (1-p)*20 = 10, so p = 42.9%. Only FINAL_STRETCH (45%) clears it. MIGRATED (28.3%) and DIP (15.4%) are nowhere close.
+- finding: MIGRATED is the biggest bucket and among the worst: n=60, 28.3% ran, 60.0% dumped, -7.5% net. 23.3% of them hit 2x at some point, but the -20% stop usually triggers before the run.
+- finding: DIP mostly does nothing: n=13, 15.4% ran, 15.4% dumped, so about 69% flat. Net is -7.4%, roughly the cost. Over a 6h window the dips neither recover nor die; they just pay fees.
+- finding: FINAL_STRETCH: n=20, 45% ran, 55% dumped, 0% flat, +1.5% net, median peak 1.94x. The +1.5% is less than one winner's worth (one winner is about +40 net, or 2 points of the average). Four of the five top runners are FINAL_STRETCH entries, including a pump.fun token named USDC (13.6x) and Chick, entered 2 minutes after launch. If the USDC entry was one of the 1.5x winners and is removed as an impersonator, FINAL_STRETCH drops to about -0.5%.
+- idea to test: Before any rule comparison, rerun the simulation with stops that can gap: fill at the first sampled price below -20%, plus extra sell slippage on a falling pool. Every rule idea below should be scored that way.
+- idea to test: FINAL_STRETCH timing: setup == FINAL_STRETCH and age_hours >= 0.25 and 15k <= mcap <= 35k and 5m volume >= $10k. Report the share that ran, net %, and net with the single best coin removed. Compare against FINAL_STRETCH with age_hours < 0.25 (snipes, which SOUL already rules out).
+- idea to test: FINAL_STRETCH exit variant: same entries, target 2x (or sell half at 2x and trail the rest), -20% stop, with the order of target vs stop resolved from the price samples. Reason: hit-2x share = ran share = 45% in this sample.
+- idea to test: MIGRATED filter: setup == MIGRATED and 5m volume >= $10k and buy ratio >= 0.55 and flow ratio >= 1.0 and drawdown from high <= 30%. Keep MIGRATED only if some subset clears 43% ran after costs on the full week; otherwise stop trading MIGRATED.
+- idea to test: DIP rework: setup == DIP and 40% <= drawdown <= 70% and 5m volume >= 0.5x the hourly pace and buy ratio >= 0.55, with a time stop of 60-90 minutes instead of 6h, since most DIPs were flat and simply paid fees. If no version clears costs, drop DIP.
 
 ## Rules it changed from results and skips
 - 11-02 23:38Z tightened: DIP gate: flow at least 0.7x the hourly pace plus a printed higher low (DIPs 0 for 5 (-$6.70), every one bought before the higher low held (HEXN x2, SIS, Something, Leverhedge). The code line is now aligned to the owner's 0.7x.)
@@ -168,16 +168,16 @@ This window has no evidence in it. In 24 hours zero coins were logged at any sta
 - [2026-11-02 20:25] I expected Slingoor, a clean MIGRATED leader with $25k of 5m flow at pace and a 0.77 buy share, to retest its $408k high from $304k. It never went green (0.98x peak) and hit the -20% stop in 2 minutes, a -$2.86 probe. My own thesis admitted there was no printed higher low after a peak only 6 minutes old, so this confirms the money-shape rule: buy share and flow are not structure (V1, V6). Next time a MIGRATED pullback with no higher low above the hourly low is a PASS with blocker "no higher low", not a probe. This is one loss, so it adds no new ban beyond the rule I already have.
 
 ## Meta right now
-Not quiet. Three coins clear the $10k 5-minute bar on scan_movers (Socks $63.8k, Gomez $42.9k, Tools $14.3k), so the flow is real but concentrated. Themes in the movers: (1) brand-new pump.fun launches under an hour old with 300-665% 1h pops and 62-72% buy ratios (Gomez, Tools, PEARL). Gomez's entire 1h volume landed in its first five minutes, which is bundle-shaped until proven otherwise. (2) Cat riffs (Shvedin, GATO) that repeat in name but are fading or thin, with Shvedin at $0 5m volume. (3) A fading survival/finance-joke cluster (SLIDES -80%, Silk -67%, I Will Survive with $1 of 5m volume and zero buys). Socks is the only migrated name with real money (PumpSwap, 1.7h old, +52% 1h), so it's a MIGRATED-style research case that needs a clean pullback, not a chase. Tools and Gomez are minutes old on the curve, so they run at New Pairs speed. I wouldn't touch them without full bundle and holder checks. Nothing is verified: holder, dev and bundle checks haven't run on any coin. I ignored the crawler's NCAT, dragoncat and PAW figures because they don't match scan_movers. Paper only, not advice.
+Not quiet: three movers clear the $10k 5-minute bar in the scan data (hermano $16.7k, PEER $13.3k, SDEX $11.1k). The crawler's Socks, Gomez at $42.9k and Tools at $14.3k figures don't match scan_movers (Gomez is $1.6k 5m, Tools $0), so I ignored them. The live theme is fresh sub-$25k pump.fun launches under an hour old with 59-61% buy ratios (hermano, BITLY, PEER), while the cat theme is fading (GATO flat on $3.1k 5m at $7M, poorcat thin at $294 5m) and joke-named launches that pumped earlier are dumping (Buttom -72%, Tools -85% with zero 5m buys, Gomez -35%). The news narratives (Binance-hack laundering, Trump coin collapse, DOGE -40%) are cooling, so attention is on new names, not stories. Setups to research, not chase: SDEX is the cleanest (Raydium, $1.1M, 69% buys, passes the recon filters); hermano and PEER only after full holder, dev and bundle checks, since they are minutes old on the curve. Nothing is verified; paper only, not advice.
 
 ## Moving most in its scans, last 30 min (1h volume)
-- Gomez: $80,099 1h vol, $19,878 mcap, -35% 1h  
-  CA `GmbC342to7Lab7LEh4aqkEY5mfCVbfDvs1X5TB8epump`
-- GTACOIN: $50,050 1h vol, $3,696 mcap, -28% 1h  
-  CA `Dtobp85WKE4sU1wSjC3m5eftCAKBojpsJjQWqUU1pump`
-- GATO: $45,449 1h vol, $6,968,256 mcap, +1% 1h  
-  CA `HsprHxBRgiVaQdRf3TnKNuZZtaX9JUSPgMFdAkk6pump`
-- TOK: $44,813 1h vol, $2,393 mcap, +18% 1h  
-  CA `HV6uSHm6hx8Epm1iXGwp7s8Ckb6Bt1oawiJ1AS2xZToK`
-- Buttom: $42,920 1h vol, $8,345 mcap, -72% 1h  
+- rockstar: $97,915 1h vol, $93,650 mcap, +43% 1h  
+  CA `9HFUEab7sompLDPTAaTGkryMNGbtBaFMhHMVpJEBpump`
+- PEER: $48,736 1h vol, $2,945 mcap, -90% 1h  
+  CA `B7kJAxdv9DsHzPNHKaKCnaEiUiEy7VYCeFbqiWoCpump`
+- pls: $48,323 1h vol, $22,980 mcap, +834% 1h  
+  CA `3Ev32Ns2fkfEppgYnskq6rDL5TfXfjhtEXWkPz2Vpump`
+- Buttom: $45,274 1h vol, $7,491 mcap, -75% 1h  
   CA `4D1npvfDzsyb3HVTTK1j2RCqnMCzt5Y7RVS1zY7Fpump`
+- TOK: $44,911 1h vol, $2,210 mcap, +9% 1h  
+  CA `HV6uSHm6hx8Epm1iXGwp7s8Ckb6Bt1oawiJ1AS2xZToK`
