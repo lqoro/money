@@ -1,13 +1,13 @@
 # Trencher live report
 
-Updated 2026-11-15T21:30:43Z (paper trading, never real money)
+Updated 2026-11-15T21:45:46Z (paper trading, never real money)
 
 - Equity: $74.23 (-25.8% vs $100 start)
 - Closed trades: 22, 3 wins
 - Fees paid: $14.78 (axiom $2.81, network $9.18, pool $2.66), plus $4.15 lost to slippage
 - New trades: WATCH-ONLY (scans and decides, buys nothing)
-- Brain: subscription, claude-haiku-5-5 for routine calls, claude-opus-5-5 for the daily review; 145 routine calls and 0 plan-limit hits in 48h
-- Watch log: 105 coins being followed, 1457 filed, 0 would-buys (6h follow, sampled every 2 min)
+- Brain: subscription, claude-haiku-5-5 for routine calls, claude-opus-5-5 for the daily review; 146 routine calls and 0 plan-limit hits in 48h
+- Watch log: 103 coins being followed, 1460 filed, 0 would-buys (6h follow, sampled every 2 min)
 
 ## Scorecard (after fees)
 - 22 closed, 3 won (14%), net $-25.79
@@ -73,9 +73,11 @@ Updated 2026-11-15T21:30:43Z (paper trading, never real money)
   CA `H4gHnZ3NCU7Z9XQwGX6YYJNyieGEW8pqwGRUcdSxpump`
 
 ## Last scan
-- 21:30Z: 6 coins, 5 with pairs, 2 passed the market filters, 2 researched
+- 21:44Z: 7 coins, 6 with pairs, 0 passed the market filters, 0 researched
 
 ## Coins it looked at, and why it passed
+- 21:44Z FiveM (MIGRATED, $121,590 mcap, $40,301 5m vol): PASS at conviction 3, PASS: 10 minutes old, up 308% in the hour, and no printed higher low yet. Blocker "too new". Watch the theme leader, don't buy the spike (V1, V6).  
+  CA `8dbLrW3ZTTu4qeAKYYBjuuSSAPhMvABwUes3eWoXpump`
 - 21:30Z TAIL (DIP, $67,763 mcap, $13,949 5m vol): REJECT, Bundles: 4 linked wallet cluster(s) hold 21.6% of supply (>20%) (V17)  
   CA `2tHPtosmh76mmJHeskid7nYUeHjGUQ4ZAYChwdGJpump`
 - 21:30Z WISHMAS (DIP, $206,762 mcap, $22,175 5m vol): REJECT, Dip with fading attention is a falling knife, not a dip (5m at 0.53x the hour's pace, under 0.6x)  
@@ -94,8 +96,6 @@ Updated 2026-11-15T21:30:43Z (paper trading, never real money)
   CA `2oxHzSUA6qz4My8qxpz3YFhtweUd15khaDhx5N7mBAGS`
 - 21:19Z BUTTHOLE (DIP, $495,925 mcap, $3,427 5m vol): REJECT, Dip with fading attention is a falling knife, not a dip (5m at 0.20x the hour's pace, under 0.6x)  
   CA `4B8CdHPZ8ng1CtMP2Jk2W8wGAwJ5nJnap1deVsz2pump`
-- 21:17Z Hemi (MIGRATED, $58,607 mcap, $12,644 5m vol): PASS at conviction 3, PASS. Flow is at 0.63x its hourly pace, the largest bundle is 6.3%, and the top 10 hold 22.6% in a 23-copy cat field. Blocker: flow below pace (V1, V6, V13).  
-  CA `kuPfdpRtamZcPxNF8SbdcPCzuSqzFa54Xy1vR6xpump`
 
 ## What its skips did next (last 48h)
 A skip "ran" if the coin reached the first target (1.5x) from the skip price before a 20% drop, "dumped" if the drop came first. Sampled every 10 min, followed 6h.
@@ -120,7 +120,7 @@ A skip "ran" if the coin reached the first target (1.5x) from the skip price bef
     CA `AiQUqe4zjiDssth2FsCoeQVaGtCtHYyKGX8U52rWpump`
   - ran: FUTA up to 2.77x  
     CA `FxoXV4C8DTSYeg5dSXrEsr45zzr8tpNbsrpoiZ8Kpump`
-- too new / sniping: blocked 20, ran 5, dumped 14, flat 0, open 1 (saving losses: keep it)
+- too new / sniping: blocked 21, ran 5, dumped 14, flat 0, open 2 (saving losses: keep it)
   - ran: Chick up to 1.66x  
     CA `Dueav76X9spnoLomhM2jMkkWorVggbeWucLs3YLupump`
   - ran: TOOLS up to 1.83x  
@@ -185,11 +185,11 @@ The meta is alive, not quiet. Two themes show up across several movers: AI-compa
 ## Moving most in its scans, last 30 min (1h volume)
 - WISHMAS: $498,407 1h vol, $206,762 mcap, +78% 1h  
   CA `9cmXfuC26anZtH9AUWVzpUxU1UJ7PPogYxftYTepump`
-- FRANK: $392,157 1h vol, $11,134 mcap, -62% 1h  
+- FRANK: $396,009 1h vol, $20,233 mcap, -30% 1h  
   CA `52s4znkZ8Z6MSxMxNbssRedvEHUase3KSiLqKpzpump`
-- GTA: $261,989 1h vol, $106,135 mcap, +6% 1h  
-  CA `EwVUPKyysUxz1Ej2s6AczqqXjK8EwTNokCtvk38Xpump`
 - NCAT: $245,847 1h vol, $79,246 mcap, -12% 1h  
   CA `Cxrw8hPBcbboL18wLhHJCt1CfLe3JSdfofLrZ8ABpump`
 - Hemi: $244,736 1h vol, $63,315 mcap, +105% 1h  
   CA `kuPfdpRtamZcPxNF8SbdcPCzuSqzFa54Xy1vR6xpump`
+- BUTTHOLE: $210,000 1h vol, $495,925 mcap, +64% 1h  
+  CA `4B8CdHPZ8ng1CtMP2Jk2W8wGAwJ5nJnap1deVsz2pump`
