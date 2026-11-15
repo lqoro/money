@@ -1,13 +1,13 @@
 # Trencher live report
 
-Updated 2026-11-15T17:27:50Z (paper trading, never real money)
+Updated 2026-11-15T17:43:04Z (paper trading, never real money)
 
 - Equity: $74.23 (-25.8% vs $100 start)
 - Closed trades: 22, 3 wins
 - Fees paid: $14.78 (axiom $2.81, network $9.18, pool $2.66), plus $4.15 lost to slippage
 - New trades: WATCH-ONLY (scans and decides, buys nothing)
-- Brain: subscription, claude-haiku-5-5 for routine calls, claude-opus-5-5 for the daily review; 98 routine calls and 0 plan-limit hits in 48h
-- Watch log: 69 coins being followed, 1409 filed, 0 would-buys (6h follow, sampled every 2 min)
+- Brain: subscription, claude-haiku-5-5 for routine calls, claude-opus-5-5 for the daily review; 101 routine calls and 0 plan-limit hits in 48h
+- Watch log: 72 coins being followed, 1411 filed, 0 would-buys (6h follow, sampled every 2 min)
 
 ## Scorecard (after fees)
 - 22 closed, 3 won (14%), net $-25.79
@@ -73,9 +73,19 @@ Updated 2026-11-15T17:27:50Z (paper trading, never real money)
   CA `H4gHnZ3NCU7Z9XQwGX6YYJNyieGEW8pqwGRUcdSxpump`
 
 ## Last scan
-- 17:27Z: 6 coins, 6 with pairs, 0 passed the market filters, 0 researched
+- 17:42Z: 5 coins, 5 with pairs, 0 passed the market filters, 0 researched
 
 ## Coins it looked at, and why it passed
+- 17:39Z Tagoh (MIGRATED, $30,784 mcap, $4,350 5m vol): REJECT, Top 10 hold 26.7% ex-pool (>25%) (V13)  
+  CA `5Y281ZwmoS1c8kYYu32yqqMaKia7kHnDA7HwMfArcSo3`
+- 17:38Z Nyajira (MIGRATED, $97,209 mcap, $9,896 5m vol): PASS at conviction 4, PASS: no breakout. Nyajira is 23% off a $126k peak and still falling (5m -4%), not pushing back into the high. No printed higher low, and the 5m tape is $9.9k, just under the bar. Blocker: "no breakout" (V1, V6).  
+  CA `8cWGfiHyKqxgLrLtkPt2NnLkSUV2JbcLBf4RN6Fapump`
+- 17:36Z YIELD (MIGRATED, $47,883 mcap, $35,482 5m vol): PASS at conviction 2, PASS: YIELD is a 5-minute-old pump.fun copy at its own high, +65% in an hour on 12x pace volume, in a 7-copy ticker field with no story behind it. Blockers: "chasing spike", "too new", "split crowd". (V1, V6, V13)  
+  CA `5Aj4qvLbvvnwokyNeHGWAFfgiRcpH8KodD1jLACqrYzf`
+- 17:34Z Pterodactyl (MIGRATED, $30,259 mcap, $12,597 5m vol): REJECT, Top 10 hold 28.7% ex-pool (>25%) (V13)  
+  CA `8BMqmEFXDU6dWzU4we9Py5wRi8KpFQZSRPThQqLapump`
+- 17:34Z BEAR (MIGRATED, $80,609 mcap, $35,147 5m vol): PASS at conviction 3, PASS: BEAR is 8 minutes old, up 4x from its hourly low, and has no printed higher low. Blockers: too new, chasing spike, no higher low. (V1, V6)  
+  CA `3GN46GsmAUQSpHXtY3oasJFYAbp9RBzVoR7X8ar1pump`
 - 17:20Z DIGS (MIGRATED, $205,689 mcap, $5,288 5m vol): REJECT, Bundles: 10 linked wallet cluster(s) hold 100.0% of supply (>20%) (V17)  
   CA `9QT8K685Hrae4k11dhGXirdtpfAaimExtyfwt8cPpump`
 - 17:12Z GATO (DIP, $6,633,582 mcap, $2,176 5m vol): REJECT, Dev holds 3.0% (>1%) (V13, V17)  
@@ -86,20 +96,10 @@ Updated 2026-11-15T17:27:50Z (paper trading, never real money)
   CA `34DXEU2ttEtBSb1TqGJm7izgvYTTkqKcCoiNWdPDpump`
 - 16:45Z gtacoin (DIP, $357,008 mcap, $2,761 5m vol): REJECT, Dip with fading attention is a falling knife, not a dip (5m at 0.57x the hour's pace, under 0.6x)  
   CA `DSKM3d518BBaQShSKqaqZcG1XMRf81UFB6a1eavhSTNK`
-- 16:43Z Dollar (FINAL_STRETCH, $21,239 mcap, $11,692 5m vol): REJECT, RugCheck danger: Creator history of rugged tokens  
-  CA `4JhX8T75P9z4gk91SBnQeAb7h7qCe7iWAiVgucVypump`
-- 16:34Z DIGS (MIGRATED, $159,203 mcap, $3,883 5m vol): REJECT, Bundles: 10 linked wallet cluster(s) hold 100.0% of supply (>20%) (V17)  
-  CA `9QT8K685Hrae4k11dhGXirdtpfAaimExtyfwt8cPpump`
-- 16:31Z PRIVAZ (FINAL_STRETCH, $24,290 mcap, $2,458 5m vol): REJECT, Top 10 hold 31.7% ex-pool (>25%) (V13)  
-  CA `DoqsX2uvZnZNTzbxuS5nbXLoxrrPUWE8BZXRQfEPpump`
-- 16:27Z GATO (DIP, $6,455,412 mcap, $2,206 5m vol): REJECT, Dev holds 3.0% (>1%) (V13, V17)  
-  CA `HsprHxBRgiVaQdRf3TnKNuZZtaX9JUSPgMFdAkk6pump`
-- 16:27Z AICoin (MIGRATED, $105,742 mcap, $5,581 5m vol): PASS at conviction 2, PASS: chasing a 14-minute-old spike with flow under pace, no higher low, and 23 same-name copies. Blockers: chasing, flow below pace, no higher low, split crowd. (V1, V6)  
-  CA `7Xkjbrr3s9u1JBaZyj66tTvwaHPSnFDAWon1qYNypump`
 
 ## What its skips did next (last 48h)
 A skip "ran" if the coin reached the first target (1.5x) from the skip price before a 20% drop, "dumped" if the drop came first. Sampled every 10 min, followed 6h.
-- top 10 over 25%: blocked 19, ran 2, dumped 13, flat 2, open 2 (saving losses: keep it)
+- top 10 over 25%: blocked 21, ran 2, dumped 13, flat 2, open 4 (saving losses: keep it)
   - ran: rockstar up to 1.95x  
     CA `9HFUEab7sompLDPTAaTGkryMNGbtBaFMhHMVpJEBpump`
   - ran: VI up to 1.71x  
@@ -111,12 +111,10 @@ A skip "ran" if the coin reached the first target (1.5x) from the skip price bef
     CA `AiQUqe4zjiDssth2FsCoeQVaGtCtHYyKGX8U52rWpump`
   - ran: FUTA up to 2.77x  
     CA `FxoXV4C8DTSYeg5dSXrEsr45zzr8tpNbsrpoiZ8Kpump`
-- flow below pace: blocked 16, ran 2, dumped 12, flat 2, open 0 (saving losses: keep it)
+- flow below pace: blocked 15, ran 1, dumped 12, flat 2, open 0 (saving losses: keep it)
   - ran: PASSED up to 1.73x  
     CA `3XaH8VPUaUegqmnkYA8PXCWqQqD8doqdsGGfZyoYpump`
-  - ran: Nyajira up to 1.63x  
-    CA `8cWGfiHyKqxgLrLtkPt2NnLkSUV2JbcLBf4RN6Fapump`
-- too new / sniping: blocked 13, ran 3, dumped 10, flat 0, open 0 (saving losses: keep it)
+- too new / sniping: blocked 15, ran 3, dumped 11, flat 0, open 1 (saving losses: keep it)
   - ran: Chick up to 1.66x  
     CA `Dueav76X9spnoLomhM2jMkkWorVggbeWucLs3YLupump`
   - ran: TOOLS up to 1.83x  
@@ -127,6 +125,9 @@ A skip "ran" if the coin reached the first target (1.5x) from the skip price bef
   - ran: penny up to 1.6x  
     CA `5gmCPpuktJ7Svjgr4PPJBTosAFKB8K6Z45EGfSUmpump`
 - falling knife (code): blocked 6, ran 0, dumped 4, flat 0, open 2 (saving losses: keep it)
+- falling knife / no higher low: blocked 5, ran 1, dumped 0, flat 3, open 1 (too few played out to judge)
+  - ran: CateGiving up to 1.57x  
+    CA `5XasjCnMPTczL9VZTDHgbK5sQzwkjnu41oLeHf5Wpump`
 - other: blocked 5, ran 2, dumped 3, flat 0, open 0 (mixed)
   - ran: TaoTao up to 1.53x  
     CA `G1KuEMuLrxWynFddQVnpdkQAhYFBwNJiuz1Lv7d9pump`
@@ -135,9 +136,6 @@ A skip "ran" if the coin reached the first target (1.5x) from the skip price bef
 - crowd leaving / fading volume: blocked 4, ran 1, dumped 3, flat 0, open 0 (saving losses: keep it)
   - ran: NUREMBERG up to 1.62x  
     CA `7R3RnGmpV9mZXwSyHyKN5LEddiZRmGsYrAZPgDJqpump`
-- falling knife / no higher low: blocked 4, ran 1, dumped 0, flat 3, open 0 (too few played out to judge)
-  - ran: CateGiving up to 1.57x  
-    CA `5XasjCnMPTczL9VZTDHgbK5sQzwkjnu41oLeHf5Wpump`
 - bundles over the line: blocked 4, ran 0, dumped 2, flat 0, open 2 (too few played out to judge)
 
 ## Daily review (2026-11-15, claude-opus-5-5)
@@ -179,13 +177,13 @@ Nothing shows a positive after-cost edge. Across all 93 settled coins the simple
 Not quiet. The volume is in one cluster: short money and finance-pun names launched in the last hour (Just Buy One Dollar, Card Pad, sOHM, SOLANIDA), not dogs, cats, or GTA. Just Buy One Dollar ($21k cap, $12.7k 5m, 61% buys, 0.2h old) is the only mover clearing the $10k 5m bar with buyers on top, but it is +831% in an hour, so chase risk is high. Card Pad (86% buys), sOHM and SOLANIDA (62% buys) have the same tape at $290 to $847 5m, which is watch-tier until volume reaches the bar. Fading: the Inu names (Santa Inu 0% buys, -88%), the GTA-named tokens (GTA VI 24% buys, -73%), and billy and Ni Hao Mas, which show zero 5m volume after -92% to -98% in an hour; the web summary's numbers for billy, Ni Hao Mas and GTA VI do not match the scan, so I'm trusting the scan. The setup to research, not buy, is Just Buy One Dollar, with invalidation at 5m buys below about 50% or 5m volume halving; holder, dev and bundle checks still have to run, and no hack-named coins appear in the movers, so the North Korea and Binance headlines aren't moving this tape. Paper only, not advice.
 
 ## Moving most in its scans, last 30 min (1h volume)
-- AICoin: $88,427 1h vol, $1,354 mcap, -98% 1h  
-  CA `7Xkjbrr3s9u1JBaZyj66tTvwaHPSnFDAWon1qYNypump`
-- Star: $69,412 1h vol, $3,631 mcap, -26% 1h  
-  CA `AJioyoixuytgtjmiXd6Wu9qs4enKxuGC5JrASSTr8hrX`
-- CARDPAD: $42,911 1h vol, $7,516 mcap, +264% 1h  
-  CA `5e3UxCBJqiTd9HtRgUUKAgTFv4j9zag5fJDvQQjKpump`
+- BEAR: $140,314 1h vol, $84,087 mcap, +42% 1h  
+  CA `3GN46GsmAUQSpHXtY3oasJFYAbp9RBzVoR7X8ar1pump`
+- Nyajira: $113,814 1h vol, $97,209 mcap, +139% 1h  
+  CA `8cWGfiHyKqxgLrLtkPt2NnLkSUV2JbcLBf4RN6Fapump`
+- Dollar: $106,884 1h vol, $2,404 mcap, -92% 1h  
+  CA `4JhX8T75P9z4gk91SBnQeAb7h7qCe7iWAiVgucVypump`
+- Pterodactyl: $68,989 1h vol, $30,259 mcap, -8% 1h  
+  CA `8BMqmEFXDU6dWzU4we9Py5wRi8KpFQZSRPThQqLapump`
 - GATO: $38,793 1h vol, $6,633,582 mcap, +2% 1h  
   CA `HsprHxBRgiVaQdRf3TnKNuZZtaX9JUSPgMFdAkk6pump`
-- DIGS: $33,263 1h vol, $197,725 mcap, +35% 1h  
-  CA `9QT8K685Hrae4k11dhGXirdtpfAaimExtyfwt8cPpump`
