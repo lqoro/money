@@ -1,13 +1,13 @@
 # Trencher live report
 
-Updated 2026-11-15T07:52:10Z (paper trading, never real money)
+Updated 2026-11-15T08:07:24Z (paper trading, never real money)
 
 - Equity: $74.23 (-25.8% vs $100 start)
 - Closed trades: 22, 3 wins
 - Fees paid: $14.78 (axiom $2.81, network $9.18, pool $2.66), plus $4.15 lost to slippage
 - New trades: WATCH-ONLY (scans and decides, buys nothing)
 - Brain: subscription, claude-haiku-5-5 for routine calls, claude-opus-5-5 for the daily review; 53 routine calls and 0 plan-limit hits in 48h
-- Watch log: 62 coins being followed, 1323 filed, 0 would-buys (6h follow, sampled every 2 min)
+- Watch log: 58 coins being followed, 1328 filed, 0 would-buys (6h follow, sampled every 2 min)
 
 ## Scorecard (after fees)
 - 22 closed, 3 won (14%), net $-25.79
@@ -73,9 +73,11 @@ Updated 2026-11-15T07:52:10Z (paper trading, never real money)
   CA `H4gHnZ3NCU7Z9XQwGX6YYJNyieGEW8pqwGRUcdSxpump`
 
 ## Last scan
-- 07:51Z: 7 coins, 7 with pairs, 0 passed the market filters, 0 researched
+- 08:07Z: 4 coins, 4 with pairs, 0 passed the market filters, 0 researched
 
 ## Coins it looked at, and why it passed
+- 07:56Z PumpBank (FINAL_STRETCH, $16,595 mcap, $46,229 5m vol): REJECT, RugCheck danger: Creator history of rugged tokens  
+  CA `AGMRDpWgZoVjnBBTjPpye522dtcaBUwLyb5LhT23pump`
 - 07:44Z TAIL (MIGRATED, $69,536 mcap, $9,771 5m vol): PASS at conviction 2, PASS: 15.7% in one linked bundle and 18.3% across bundles, on a 24-copy "tail" field with no catalyst. Farm-shaped flow. (V3, V13, V17)  
   CA `2tHPtosmh76mmJHeskid7nYUeHjGUQ4ZAYChwdGJpump`
 - 07:43Z HOGE (MIGRATED, $196,074 mcap, $38,792 5m vol): REJECT, Bundles: 3 linked wallet cluster(s) hold 22.1% of supply (>20%) (V17)  
@@ -94,12 +96,10 @@ Updated 2026-11-15T07:52:10Z (paper trading, never real money)
   CA `G1KuEMuLrxWynFddQVnpdkQAhYFBwNJiuz1Lv7d9pump`
 - 07:04Z GATO (DIP, $6,674,197 mcap, $2,298 5m vol): REJECT, Dev holds 3.0% (>1%) (V13, V17)  
   CA `HsprHxBRgiVaQdRf3TnKNuZZtaX9JUSPgMFdAkk6pump`
-- 07:04Z OWED (FINAL_STRETCH, $20,379 mcap, $20,692 5m vol): PASS at conviction 3, PASS: chasing spike. OWED is up 50% on the 5m with 4.9x hourly pace, nine same-ticker copies, a 13-minute-old pump.fun launch and no printed higher low. Blocker: "chasing spike" (V1, V6).  
-  CA `Dpgt4i8AExpDcumBwpEJ8rUzZwuj2RLMq2B9b12vpump`
 
 ## What its skips did next (last 48h)
 A skip "ran" if the coin reached the first target (1.5x) from the skip price before a 20% drop, "dumped" if the drop came first. Sampled every 10 min, followed 6h.
-- RugCheck danger: blocked 12, ran 3, dumped 7, flat 1, open 1 (saving losses: keep it)
+- RugCheck danger: blocked 13, ran 4, dumped 8, flat 1, open 0 (saving losses: keep it)
   - ran: Ivy up to 1.88x  
     CA `DxNF3Qxd8XeUBdz7ReRdoiFzRmNDKbSz4c2oA7aRpump`
   - ran: SI up to 1.93x  
@@ -107,7 +107,7 @@ A skip "ran" if the coin reached the first target (1.5x) from the skip price bef
   - ran: FUTA up to 2.77x  
     CA `FxoXV4C8DTSYeg5dSXrEsr45zzr8tpNbsrpoiZ8Kpump`
 - top 10 over 25%: blocked 10, ran 0, dumped 7, flat 1, open 2 (saving losses: keep it)
-- flow below pace: blocked 6, ran 0, dumped 3, flat 0, open 3 (saving losses: keep it)
+- flow below pace: blocked 6, ran 0, dumped 4, flat 0, open 2 (saving losses: keep it)
 - near the high / chasing: blocked 5, ran 1, dumped 4, flat 0, open 0 (saving losses: keep it)
   - ran: penny up to 1.6x  
     CA `5gmCPpuktJ7Svjgr4PPJBTosAFKB8K6Z45EGfSUmpump`
@@ -165,11 +165,11 @@ The trenches are not quiet. The active meta is animal and dog riffs on pumpswap 
 ## Moving most in its scans, last 30 min (1h volume)
 - HOGE: $664,921 1h vol, $185,699 mcap, +234% 1h  
   CA `FVzqGqRmr4UH1Fif6dewmwbJ1p4YUZCu8dcw4Efopump`
-- Chick: $273,371 1h vol, $13,369 mcap, -81% 1h  
+- Chick: $103,804 1h vol, $15,578 mcap, -77% 1h  
   CA `Dueav76X9spnoLomhM2jMkkWorVggbeWucLs3YLupump`
-- BabyDoge: $90,716 1h vol, $3,874 mcap, +58% 1h  
-  CA `3sQ6WzsH1awpEaDj4XCyisjWmHcwfXySUx2EiDLLpump`
+- PumpBank: $96,622 1h vol, $18,832 mcap, +144% 1h  
+  CA `AGMRDpWgZoVjnBBTjPpye522dtcaBUwLyb5LhT23pump`
 - TAIL: $87,210 1h vol, $68,206 mcap, +289% 1h  
   CA `2tHPtosmh76mmJHeskid7nYUeHjGUQ4ZAYChwdGJpump`
-- PAW: $55,487 1h vol, $22,440 mcap, +38% 1h  
-  CA `HxPrDS84HH3ijsJhiCLF55MN7DqLfxzbt99RnSuSpump`
+- TaoTao: $83,270 1h vol, $5,082 mcap, -82% 1h  
+  CA `G1KuEMuLrxWynFddQVnpdkQAhYFBwNJiuz1Lv7d9pump`
