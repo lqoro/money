@@ -1,13 +1,13 @@
 # Trencher live report
 
-Updated 2026-11-15T09:53:29Z (paper trading, never real money)
+Updated 2026-11-15T10:08:45Z (paper trading, never real money)
 
 - Equity: $74.23 (-25.8% vs $100 start)
 - Closed trades: 22, 3 wins
 - Fees paid: $14.78 (axiom $2.81, network $9.18, pool $2.66), plus $4.15 lost to slippage
 - New trades: WATCH-ONLY (scans and decides, buys nothing)
-- Brain: subscription, claude-haiku-5-5 for routine calls, claude-opus-5-5 for the daily review; 63 routine calls and 0 plan-limit hits in 48h
-- Watch log: 54 coins being followed, 1346 filed, 0 would-buys (6h follow, sampled every 2 min)
+- Brain: subscription, claude-haiku-5-5 for routine calls, claude-opus-5-5 for the daily review; 65 routine calls and 0 plan-limit hits in 48h
+- Watch log: 55 coins being followed, 1349 filed, 0 would-buys (6h follow, sampled every 2 min)
 
 ## Scorecard (after fees)
 - 22 closed, 3 won (14%), net $-25.79
@@ -73,9 +73,17 @@ Updated 2026-11-15T09:53:29Z (paper trading, never real money)
   CA `H4gHnZ3NCU7Z9XQwGX6YYJNyieGEW8pqwGRUcdSxpump`
 
 ## Last scan
-- 09:52Z: 12 coins, 12 with pairs, 0 passed the market filters, 0 researched
+- 10:08Z: 4 coins, 4 with pairs, 0 passed the market filters, 0 researched
 
 ## Coins it looked at, and why it passed
+- 10:07Z PASSED (FINAL_STRETCH, $18,873 mcap, $4,184 5m vol): PASS at conviction 3, PASS: 19 copies of "Mission Passed", the theme is at 0.12x its hourly pace, and 5m flow is $4.2k, under the $10k bar. Split crowd with no leader on flow. (V1, V6, V13)  
+  CA `3XaH8VPUaUegqmnkYA8PXCWqQqD8doqdsGGfZyoYpump`
+- 10:05Z Sumi (FINAL_STRETCH, $19,448 mcap, $3,509 5m vol): REJECT, RugCheck danger: Creator history of rugged tokens  
+  CA `HvA8a4C1KAXfrZMnmd1VyvLh21HzMvr4rjUtxiezpump`
+- 10:00Z HOGE (MIGRATED, $48,707 mcap, $3,494 5m vol): REJECT, Bundles: 5 linked wallet cluster(s) hold 22.6% of supply (>20%) (V17)  
+  CA `FVzqGqRmr4UH1Fif6dewmwbJ1p4YUZCu8dcw4Efopump`
+- 09:57Z Socks (DIP, $44,748 mcap, $52,383 5m vol): PASS at conviction 3, PASS: Socks is 11 minutes old, peaked 12 minutes ago and is down 32% on the last 5m candle. No printed higher low, so it's a falling knife, not a DIP. Blockers: "too new" and "no higher low" (V1, V6).  
+  CA `FS1pBmZKp2Qw1atC64GoLamHstECAos9ot8bGPgDpump`
 - 09:51Z FUTA (MIGRATED, $104,837 mcap, $5,053 5m vol): REJECT, Top 10 hold 25.9% ex-pool (>25%) (V13)  
   CA `8JCsa61htnPj2af7g1KSyU1UEncruHE1Ph9aNR6rpump`
 - 09:46Z CLOCKED (DIP, $448,895 mcap, $3,205 5m vol): PASS at conviction 3, PASS: CLOCKED OUT is a bottom buy on a fading story, with sellers still in control and 5m flow under $10k. Blocker: "dead story" (V1, V5, V6).  
@@ -88,18 +96,10 @@ Updated 2026-11-15T09:53:29Z (paper trading, never real money)
   CA `HxPrDS84HH3ijsJhiCLF55MN7DqLfxzbt99RnSuSpump`
 - 09:19Z Sumi (FINAL_STRETCH, $18,081 mcap, $7,292 5m vol): REJECT, RugCheck danger: Creator history of rugged tokens  
   CA `HvA8a4C1KAXfrZMnmd1VyvLh21HzMvr4rjUtxiezpump`
-- 09:16Z TWEET (FINAL_STRETCH, $15,113 mcap, $29,795 5m vol): PASS at conviction 2, PASS: 15 same-name copies, a 10.2% bundle cluster, and a +455% five-minute spike six minutes after launch. That's a split crowd and a chase, not a setup (V1, V3, V6).  
-  CA `6Ao4S8TEnS4Xg5Uwr5TLipxKmrub88zBs81mipUMpump`
-- 09:14Z HOGE (DIP, $80,544 mcap, $2,040 5m vol): REJECT, Dip with fading attention is a falling knife, not a dip (5m at 0.21x the hour's pace, under 0.6x)  
-  CA `FVzqGqRmr4UH1Fif6dewmwbJ1p4YUZCu8dcw4Efopump`
-- 09:14Z GATO (DIP, $6,950,070 mcap, $2,540 5m vol): REJECT, Dev holds 3.0% (>1%) (V13, V17)  
-  CA `HsprHxBRgiVaQdRf3TnKNuZZtaX9JUSPgMFdAkk6pump`
-- 08:48Z PAW (MIGRATED, $37,098 mcap, $5,817 5m vol): PASS at conviction 3, PASS: chasing a 9% pullback, not the leader of its own ticker, and the first resistance is only 1.1x away. Blockers: "chasing", "vamp field", "target too close". (V1, V6)  
-  CA `HxPrDS84HH3ijsJhiCLF55MN7DqLfxzbt99RnSuSpump`
 
 ## What its skips did next (last 48h)
 A skip "ran" if the coin reached the first target (1.5x) from the skip price before a 20% drop, "dumped" if the drop came first. Sampled every 10 min, followed 6h.
-- RugCheck danger: blocked 15, ran 5, dumped 9, flat 1, open 0 (mixed)
+- RugCheck danger: blocked 15, ran 4, dumped 9, flat 1, open 1 (saving losses: keep it)
   - ran: Ivy up to 1.88x  
     CA `DxNF3Qxd8XeUBdz7ReRdoiFzRmNDKbSz4c2oA7aRpump`
   - ran: SI up to 1.93x  
@@ -107,21 +107,23 @@ A skip "ran" if the coin reached the first target (1.5x) from the skip price bef
   - ran: FUTA up to 2.77x  
     CA `FxoXV4C8DTSYeg5dSXrEsr45zzr8tpNbsrpoiZ8Kpump`
 - top 10 over 25%: blocked 10, ran 0, dumped 7, flat 1, open 2 (saving losses: keep it)
-- flow below pace: blocked 7, ran 0, dumped 4, flat 1, open 2 (saving losses: keep it)
+- flow below pace: blocked 8, ran 0, dumped 4, flat 1, open 3 (saving losses: keep it)
+- too new / sniping: blocked 6, ran 2, dumped 4, flat 0, open 0 (saving losses: keep it)
+  - ran: Chick up to 1.66x  
+    CA `Dueav76X9spnoLomhM2jMkkWorVggbeWucLs3YLupump`
+  - ran: Socks up to 1.72x  
+    CA `FS1pBmZKp2Qw1atC64GoLamHstECAos9ot8bGPgDpump`
 - near the high / chasing: blocked 6, ran 1, dumped 5, flat 0, open 0 (saving losses: keep it)
   - ran: penny up to 1.6x  
     CA `5gmCPpuktJ7Svjgr4PPJBTosAFKB8K6Z45EGfSUmpump`
-- falling knife (code): blocked 5, ran 0, dumped 4, flat 0, open 1 (saving losses: keep it)
-- too new / sniping: blocked 5, ran 1, dumped 4, flat 0, open 0 (saving losses: keep it)
-  - ran: Chick up to 1.66x  
-    CA `Dueav76X9spnoLomhM2jMkkWorVggbeWucLs3YLupump`
+- falling knife (code): blocked 4, ran 0, dumped 4, flat 0, open 0 (saving losses: keep it)
 - falling knife / no higher low: blocked 4, ran 1, dumped 0, flat 1, open 2 (too few played out to judge)
   - ran: CateGiving up to 1.57x  
     CA `5XasjCnMPTczL9VZTDHgbK5sQzwkjnu41oLeHf5Wpump`
-- crowd leaving / fading volume: blocked 3, ran 1, dumped 1, flat 0, open 1 (too few played out to judge)
+- crowd leaving / fading volume: blocked 3, ran 1, dumped 2, flat 0, open 0 (saving losses: keep it)
   - ran: NUREMBERG up to 1.62x  
     CA `7R3RnGmpV9mZXwSyHyKN5LEddiZRmGsYrAZPgDJqpump`
-- other: blocked 3, ran 1, dumped 1, flat 0, open 1 (too few played out to judge)
+- other: blocked 3, ran 1, dumped 2, flat 0, open 0 (saving losses: keep it)
   - ran: TaoTao up to 1.53x  
     CA `G1KuEMuLrxWynFddQVnpdkQAhYFBwNJiuz1Lv7d9pump`
 - dev share over 1%: blocked 2, ran 0, dumped 0, flat 0, open 2 (too few played out to judge)
@@ -165,13 +167,13 @@ This window has no evidence in it. In 24 hours zero coins were logged at any sta
 Not quiet. About half of scan_movers is under two hours old, and the live flow is in fresh pump.fun cat and dog coins, not the finance jokes. Two themes are moving: animal riffs (NCAT at 27k 5m and 65% buys, dragoncat at 9k 5m and 73% buys, PAW at 15k 5m and 57% buys) and tech/NVIDIA-name riffs riding the Jensen Huang headlines (NCAT again). Fading: the finance/joke cluster (CLOCKED OUT at -26% 1h on 2.9k 5m with 40% buys, Useless Market at 983 5m), the dog coin HSI (-71% 1h on 126 5m), and LAIKA (zero 5m), and the web backs that (DOGE down about 40%, "is memecoin hype dead" headlines), though the cat coins still have real 5m flow. Setups to research, not buy: NCAT (youngest and strongest flow, but about 6 minutes old, so bundle risk is high), dragoncat (18 minutes old, $20k mcap, still on the bonding curve, a FINAL_STRETCH-style check), and PAW (migrated on PumpSwap at $101k mcap, a MIGRATED-style TA check that needs its volume to hold). The crawler's HSI and starShit 5m figures (12k and 9.6k) don't match scan_movers (126 and 2.4k), so I used scan_movers only. No hack-named coin is in the movers and none is a setup. Holder, dev and bundle checks have not run on any of these yet. Paper only, not advice.
 
 ## Moving most in its scans, last 30 min (1h volume)
-- PAW: $156,460 1h vol, $101,011 mcap, +318% 1h  
-  CA `HxPrDS84HH3ijsJhiCLF55MN7DqLfxzbt99RnSuSpump`
+- Sumi: $129,053 1h vol, $19,372 mcap, +73% 1h  
+  CA `HvA8a4C1KAXfrZMnmd1VyvLh21HzMvr4rjUtxiezpump`
+- Socks: $120,841 1h vol, $43,614 mcap, +45% 1h  
+  CA `FS1pBmZKp2Qw1atC64GoLamHstECAos9ot8bGPgDpump`
 - dragoncat: $55,198 1h vol, $19,801 mcap, +711% 1h  
   CA `3nbHBkEDdbPiF5zJMhsxucm25V6UHKv9BVQuTKJVpump`
-- starShit: $40,176 1h vol, $8,949 mcap, -65% 1h  
-  CA `85J9oUpaNRsELufsxopZPRbfYqNSNLhB6R2LNAWspump`
-- NCAT: $33,023 1h vol, $23,999 mcap, +416% 1h  
-  CA `CU6twK3evciYpdtf9xiiahxwV2tNd9FGoGjL6ewVpump`
-- SXSI: $30,581 1h vol, $3,243 mcap, -14% 1h  
-  CA `AfkQYxSodrgDvdx6F4UrA39c3a8aSbjgGSyCqU6gpump`
+- HOGE: $45,722 1h vol, $50,982 mcap, -25% 1h  
+  CA `FVzqGqRmr4UH1Fif6dewmwbJ1p4YUZCu8dcw4Efopump`
+- PASSED: $43,676 1h vol, $18,873 mcap, +128% 1h  
+  CA `3XaH8VPUaUegqmnkYA8PXCWqQqD8doqdsGGfZyoYpump`
