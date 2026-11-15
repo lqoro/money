@@ -1,13 +1,13 @@
 # Trencher live report
 
-Updated 2026-11-15T05:51:07Z (paper trading, never real money)
+Updated 2026-11-15T06:06:16Z (paper trading, never real money)
 
 - Equity: $74.23 (-25.8% vs $100 start)
 - Closed trades: 22, 3 wins
 - Fees paid: $14.78 (axiom $2.81, network $9.18, pool $2.66), plus $4.15 lost to slippage
 - New trades: WATCH-ONLY (scans and decides, buys nothing)
-- Brain: subscription, claude-haiku-5-5 for routine calls, claude-opus-5-5 for the daily review; 37 routine calls and 0 plan-limit hits in 48h
-- Watch log: 73 coins being followed, 1289 filed, 0 would-buys (6h follow, sampled every 2 min)
+- Brain: subscription, claude-haiku-5-5 for routine calls, claude-opus-5-5 for the daily review; 39 routine calls and 0 plan-limit hits in 48h
+- Watch log: 74 coins being followed, 1293 filed, 0 would-buys (6h follow, sampled every 2 min)
 
 ## Scorecard (after fees)
 - 22 closed, 3 won (14%), net $-25.79
@@ -73,9 +73,19 @@ Updated 2026-11-15T05:51:07Z (paper trading, never real money)
   CA `H4gHnZ3NCU7Z9XQwGX6YYJNyieGEW8pqwGRUcdSxpump`
 
 ## Last scan
-- 05:50Z: 5 coins, 5 with pairs, 0 passed the market filters, 0 researched
+- 06:05Z: 1 coins, 1 with pairs, 0 passed the market filters, 0 researched
 
 ## Coins it looked at, and why it passed
+- 06:03Z Chick (FINAL_STRETCH, $19,039 mcap, $20,227 5m vol): PASS at conviction 2, PASS: chasing spike, 3 minutes old, +695% on the 5m, in a 14-copy "optimistic" vamp field with no radar story behind it. Blocker: "chasing spike" (V1, V6, V13).  
+  CA `Dueav76X9spnoLomhM2jMkkWorVggbeWucLs3YLupump`
+- 05:58Z GATO (DIP, $6,710,136 mcap, $2,491 5m vol): REJECT, Dev holds 3.0% (>1%) (V13, V17)  
+  CA `HsprHxBRgiVaQdRf3TnKNuZZtaX9JUSPgMFdAkk6pump`
+- 05:58Z SNIFFER (FINAL_STRETCH, $18,303 mcap, $19,686 5m vol): REJECT, Top 10 hold 25.5% ex-pool (>25%) (V13)  
+  CA `6CDiNXJTtcgdJs1uGuhK5REFDRYT2AS3RifyanQ7pump`
+- 05:58Z FUTA (FINAL_STRETCH, $18,013 mcap, $24,437 5m vol): REJECT, RugCheck danger: Large Amount of LP Unlocked 100.00%  
+  CA `FxoXV4C8DTSYeg5dSXrEsr45zzr8tpNbsrpoiZ8Kpump`
+- 05:57Z penny (MIGRATED, $32,062 mcap, $2,341 5m vol): PASS at conviction 3, PASS: penny is 76% off its peak in a 12-copy "penny" vamp field, with a 9.5% single bundle and $2.3k of 5m flow. Blocker: "split crowd" and "thin 5m volume" (V1, V3, V6).  
+  CA `5gmCPpuktJ7Svjgr4PPJBTosAFKB8K6Z45EGfSUmpump`
 - 05:43Z afk (FINAL_STRETCH, $25,218 mcap, $22,595 5m vol): REJECT, RugCheck danger: Large Amount of LP Unlocked 100.00%  
   CA `FWPMa5Z4iwtLbGDLpviBRcBoQkeWSabHYYK4HWUCpump`
 - 05:37Z HODL (MIGRATED, $35,268 mcap, $4,342 5m vol): REJECT, Top 10 hold 29.3% ex-pool (>25%) (V13)  
@@ -86,34 +96,28 @@ Updated 2026-11-15T05:51:07Z (paper trading, never real money)
   CA `4ed5SsUJeXaDCyM7aGHoA5LBjQjEx3xzVGpYEcMvpump`
 - 05:12Z GATO (DIP, $6,838,995 mcap, $2,128 5m vol): REJECT, Dev holds 3.0% (>1%) (V13, V17)  
   CA `HsprHxBRgiVaQdRf3TnKNuZZtaX9JUSPgMFdAkk6pump`
-- 05:12Z BOWSER (FINAL_STRETCH, $14,496 mcap, $4,758 5m vol): PASS at conviction 3, PASS: BOWSER chasing a spike, top 10 at 23.6%, and a bottom-buy gate with no catalyst and theme pace at 0.81x. Farm-shaped crowd of 24 copies. (V1, V6, V13)  
-  CA `FThkP96RFL7NnuxTrrbhQza3keGQ4pVh5qGtHJ9Npump`
-- 04:59Z WANTED (MIGRATED, $1,371,291 mcap, $4,827 5m vol): PASS at conviction 3, PASS: WANTED flow is below pace, no higher low has printed, and the theme is cooling. (V1, V6)  
-  CA `CiMyaPC9icicJxkFqvqpgL2YT2FjEQmGx1YVdG78pump`
-- 04:51Z HODL (FINAL_STRETCH, $17,787 mcap, $5,676 5m vol): REJECT, Top 10 hold 26.0% ex-pool (>25%) (V13)  
-  CA `F63zJ8AM4RnHHxnHzGAPgM8Amv8KTSqG9knPd7yvpump`
-- 04:49Z MIL (MIGRATED, $64,316 mcap, $11,029 5m vol): REJECT, RugCheck danger: Creator history of rugged tokens  
-  CA `8655LtfvozXLSJWrzcmwVeK13s5Gvn49UXFHYcYzpump`
-- 04:45Z chudhaos (MIGRATED, $377,019 mcap, $2,838 5m vol): REJECT, RugCheck danger: Large Amount of LP Unlocked 100.00%  
-  CA `4W7BNgGspH3YFbLsP5T7AnKAzr6REGMMBGK9xDZKpump`
 
 ## What its skips did next (last 48h)
 A skip "ran" if the coin reached the first target (1.5x) from the skip price before a 20% drop, "dumped" if the drop came first. Sampled every 10 min, followed 6h.
-- RugCheck danger: blocked 11, ran 2, dumped 7, flat 0, open 2 (saving losses: keep it)
+- RugCheck danger: blocked 12, ran 3, dumped 7, flat 1, open 1 (saving losses: keep it)
   - ran: Ivy up to 1.88x  
     CA `DxNF3Qxd8XeUBdz7ReRdoiFzRmNDKbSz4c2oA7aRpump`
   - ran: SI up to 1.93x  
     CA `AiQUqe4zjiDssth2FsCoeQVaGtCtHYyKGX8U52rWpump`
-- top 10 over 25%: blocked 7, ran 0, dumped 6, flat 0, open 1 (saving losses: keep it)
-- falling knife (code): blocked 5, ran 0, dumped 4, flat 1, open 0 (saving losses: keep it)
-- flow below pace: blocked 5, ran 0, dumped 4, flat 0, open 1 (saving losses: keep it)
-- too new / sniping: blocked 3, ran 0, dumped 3, flat 0, open 0 (saving losses: keep it)
-- near the high / chasing: blocked 3, ran 0, dumped 3, flat 0, open 0 (saving losses: keep it)
+  - ran: FUTA up to 2.77x  
+    CA `FxoXV4C8DTSYeg5dSXrEsr45zzr8tpNbsrpoiZ8Kpump`
+- top 10 over 25%: blocked 8, ran 0, dumped 6, flat 1, open 1 (saving losses: keep it)
+- flow below pace: blocked 4, ran 0, dumped 3, flat 0, open 1 (saving losses: keep it)
+- falling knife (code): blocked 4, ran 0, dumped 4, flat 0, open 0 (saving losses: keep it)
+- too new / sniping: blocked 4, ran 0, dumped 3, flat 0, open 1 (saving losses: keep it)
+- near the high / chasing: blocked 4, ran 1, dumped 3, flat 0, open 0 (saving losses: keep it)
+  - ran: penny up to 1.6x  
+    CA `5gmCPpuktJ7Svjgr4PPJBTosAFKB8K6Z45EGfSUmpump`
 - crowd leaving / fading volume: blocked 2, ran 1, dumped 1, flat 0, open 0 (too few played out to judge)
   - ran: NUREMBERG up to 1.62x  
     CA `7R3RnGmpV9mZXwSyHyKN5LEddiZRmGsYrAZPgDJqpump`
 - thin 5m volume: blocked 2, ran 0, dumped 2, flat 0, open 0 (too few played out to judge)
-- dev share over 1%: blocked 1, ran 0, dumped 0, flat 1, open 0 (too few played out to judge)
+- dev share over 1%: blocked 1, ran 0, dumped 0, flat 0, open 1 (too few played out to judge)
 - falling knife / no higher low: blocked 1, ran 0, dumped 0, flat 0, open 1 (too few played out to judge)
 
 ## Daily review (2026-11-14, claude-opus-5-5)
@@ -155,13 +159,13 @@ This window has no evidence in it. In 24 hours zero coins were logged at any sta
 The meta is thin but not dead. The live shapes are animal jokes (COLE, TAIL, PELI, Begcat) and "just hold / go AFK" jokes (afk, HODL), while dollar and "useless" jokes (Stable Inu, Useless Market, MIL) are fading and the news backdrop is bearish. Rising: afk ("buy and go afk", $22.6k 5m, 58% buys, +1017% in the hour) and Trashed Panda (COLE, $9.8k cap, $4.3k 5m, 60% buys, +285%). Fading: MIL (-95%), Begcat and Pelicoin (almost no 5m flow), Stable Inu (-24%). afk is the only coin clearing the $10k 5m bar, but it is 0.3h old and parabolic, so it is research now, and at most a probe on a pullback that holds volume with the stop under that pullback low. COLE is the cleaner animal setup if its 5m reaches $10k with buys holding, and Diamond Hands (HODL, migrated, $35k cap, $4.3k 5m, 55% buys) is a DIP/MIGRATED research name. DOGE on pumpswap is a name-jack of the famous ticker, so verify the real token before anything else. The crawler summary conflicts with the scan (penny $85k vs $27.5k, "nothing reaches $10k" vs afk at $22.6k), so I trust the scan_movers numbers and ignore the unlisted names (Bowser Farts, marmot, Sonny Angel, UpCat). Paper only, not advice.
 
 ## Moving most in its scans, last 30 min (1h volume)
-- DOGE: $165,041 1h vol, $89,245 mcap, +50% 1h  
-  CA `D1noy4QtZiWkH3A8QJGq31HGaAvfvA3bti4C6HLEpump`
-- MIL: $92,104 1h vol, $3,305 mcap, -95% 1h  
-  CA `8655LtfvozXLSJWrzcmwVeK13s5Gvn49UXFHYcYzpump`
 - HODL: $91,205 1h vol, $35,268 mcap, +22% 1h  
   CA `F63zJ8AM4RnHHxnHzGAPgM8Amv8KTSqG9knPd7yvpump`
-- afk: $58,358 1h vol, $25,218 mcap, +1017% 1h  
-  CA `FWPMa5Z4iwtLbGDLpviBRcBoQkeWSabHYYK4HWUCpump`
-- COLE: $46,226 1h vol, $9,792 mcap, +285% 1h  
-  CA `CMWmf7pjjU34YwuymLZhW4Jk7yey8J7EP7c3BSmNpump`
+- MIL: $67,376 1h vol, $2,971 mcap, -95% 1h  
+  CA `8655LtfvozXLSJWrzcmwVeK13s5Gvn49UXFHYcYzpump`
+- GTA: $64,728 1h vol, $90,229 mcap, +53% 1h  
+  CA `G9ZMir6uh66Y7viPkXAy7myA9jjE4T1YgheVUmGDpump`
+- meme: $58,942 1h vol, $2,608 mcap, -91% 1h  
+  CA `4ed5SsUJeXaDCyM7aGHoA5LBjQjEx3xzVGpYEcMvpump`
+- BackBid: $58,795 1h vol, $2,224 mcap, -92% 1h  
+  CA `CGajmY1RdMWy1QDD9fyUdnoGsmVLDW1xm4yqXdyo3ecs`
