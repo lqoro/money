@@ -1,13 +1,13 @@
 # Trencher live report
 
-Updated 2026-11-15T09:38:04Z (paper trading, never real money)
+Updated 2026-11-15T09:53:29Z (paper trading, never real money)
 
 - Equity: $74.23 (-25.8% vs $100 start)
 - Closed trades: 22, 3 wins
 - Fees paid: $14.78 (axiom $2.81, network $9.18, pool $2.66), plus $4.15 lost to slippage
 - New trades: WATCH-ONLY (scans and decides, buys nothing)
-- Brain: subscription, claude-haiku-5-5 for routine calls, claude-opus-5-5 for the daily review; 60 routine calls and 0 plan-limit hits in 48h
-- Watch log: 52 coins being followed, 1345 filed, 0 would-buys (6h follow, sampled every 2 min)
+- Brain: subscription, claude-haiku-5-5 for routine calls, claude-opus-5-5 for the daily review; 63 routine calls and 0 plan-limit hits in 48h
+- Watch log: 54 coins being followed, 1346 filed, 0 would-buys (6h follow, sampled every 2 min)
 
 ## Scorecard (after fees)
 - 22 closed, 3 won (14%), net $-25.79
@@ -73,9 +73,15 @@ Updated 2026-11-15T09:38:04Z (paper trading, never real money)
   CA `H4gHnZ3NCU7Z9XQwGX6YYJNyieGEW8pqwGRUcdSxpump`
 
 ## Last scan
-- 09:37Z: 5 coins, 5 with pairs, 1 passed the market filters, 1 researched
+- 09:52Z: 12 coins, 12 with pairs, 0 passed the market filters, 0 researched
 
 ## Coins it looked at, and why it passed
+- 09:51Z FUTA (MIGRATED, $104,837 mcap, $5,053 5m vol): REJECT, Top 10 hold 25.9% ex-pool (>25%) (V13)  
+  CA `8JCsa61htnPj2af7g1KSyU1UEncruHE1Ph9aNR6rpump`
+- 09:46Z CLOCKED (DIP, $448,895 mcap, $3,205 5m vol): PASS at conviction 3, PASS: CLOCKED OUT is a bottom buy on a fading story, with sellers still in control and 5m flow under $10k. Blocker: "dead story" (V1, V5, V6).  
+  CA `5r6uX887ZxsPG6iEdyyU2sQTFMpwHVzqVFkANuepump`
+- 09:41Z dragoncat (FINAL_STRETCH, $20,287 mcap, $9,067 5m vol): PASS at conviction 2, PASS: dragoncat is one of nine "dragoncat" copies and not the volume leader. NCAT and TWEET out-trade it. Split crowd, and it's a 20-minute-old +731% parabola. (V1, V3)  
+  CA `3nbHBkEDdbPiF5zJMhsxucm25V6UHKv9BVQuTKJVpump`
 - 09:37Z NCAT (FINAL_STRETCH, $23,999 mcap, $27,205 5m vol): REJECT, RugCheck danger: Low Liquidity $230.79  
   CA `CU6twK3evciYpdtf9xiiahxwV2tNd9FGoGjL6ewVpump`
 - 09:33Z PAW (MIGRATED, $101,011 mcap, $15,019 5m vol): PASS at conviction 4, PASS: PAW is a 31% dip on a theme running at 0.89x its hourly pace with no catalyst I can name, and the owner's bottom-buy gate blocks it. Blocker: "theme flow below pace / no catalyst" (V1, V6).  
@@ -90,16 +96,10 @@ Updated 2026-11-15T09:38:04Z (paper trading, never real money)
   CA `HsprHxBRgiVaQdRf3TnKNuZZtaX9JUSPgMFdAkk6pump`
 - 08:48Z PAW (MIGRATED, $37,098 mcap, $5,817 5m vol): PASS at conviction 3, PASS: chasing a 9% pullback, not the leader of its own ticker, and the first resistance is only 1.1x away. Blockers: "chasing", "vamp field", "target too close". (V1, V6)  
   CA `HxPrDS84HH3ijsJhiCLF55MN7DqLfxzbt99RnSuSpump`
-- 08:40Z HSI (MIGRATED, $30,066 mcap, $12,190 5m vol): PASS at conviction 3, PASS: thirteen minutes old, 30 copies of the same name, and no higher low. Blocker "too new" with "split crowd" behind it. Not a bottom buy without a catalyst (V1, V6, V13).  
-  CA `FZjyGVc5Su7kJzLXUaz5ZqtotjT97LhWQ2jacrY4pump`
-- 08:33Z starShit (FINAL_STRETCH, $23,673 mcap, $9,505 5m vol): PASS at conviction 3, PASS: chasing spike. StarShit is up 93% in 5 minutes and 366% in an hour, 11% off a peak printed six minutes ago, with no higher low. Vamp field with theme flow at 0.62x pace and no X. (V1, V6, V13)  
-  CA `85J9oUpaNRsELufsxopZPRbfYqNSNLhB6R2LNAWspump`
-- 08:29Z HOGE (DIP, $81,902 mcap, $17,722 5m vol): REJECT, Dip with fading attention is a falling knife, not a dip (5m at 0.57x the hour's pace, under 0.6x)  
-  CA `FVzqGqRmr4UH1Fif6dewmwbJ1p4YUZCu8dcw4Efopump`
 
 ## What its skips did next (last 48h)
 A skip "ran" if the coin reached the first target (1.5x) from the skip price before a 20% drop, "dumped" if the drop came first. Sampled every 10 min, followed 6h.
-- RugCheck danger: blocked 15, ran 5, dumped 8, flat 1, open 1 (mixed)
+- RugCheck danger: blocked 15, ran 5, dumped 9, flat 1, open 0 (mixed)
   - ran: Ivy up to 1.88x  
     CA `DxNF3Qxd8XeUBdz7ReRdoiFzRmNDKbSz4c2oA7aRpump`
   - ran: SI up to 1.93x  
@@ -118,13 +118,13 @@ A skip "ran" if the coin reached the first target (1.5x) from the skip price bef
 - falling knife / no higher low: blocked 4, ran 1, dumped 0, flat 1, open 2 (too few played out to judge)
   - ran: CateGiving up to 1.57x  
     CA `5XasjCnMPTczL9VZTDHgbK5sQzwkjnu41oLeHf5Wpump`
-- dev share over 1%: blocked 2, ran 0, dumped 0, flat 0, open 2 (too few played out to judge)
-- crowd leaving / fading volume: blocked 2, ran 1, dumped 1, flat 0, open 0 (too few played out to judge)
+- crowd leaving / fading volume: blocked 3, ran 1, dumped 1, flat 0, open 1 (too few played out to judge)
   - ran: NUREMBERG up to 1.62x  
     CA `7R3RnGmpV9mZXwSyHyKN5LEddiZRmGsYrAZPgDJqpump`
-- other: blocked 2, ran 1, dumped 1, flat 0, open 0 (too few played out to judge)
+- other: blocked 3, ran 1, dumped 1, flat 0, open 1 (too few played out to judge)
   - ran: TaoTao up to 1.53x  
     CA `G1KuEMuLrxWynFddQVnpdkQAhYFBwNJiuz1Lv7d9pump`
+- dev share over 1%: blocked 2, ran 0, dumped 0, flat 0, open 2 (too few played out to judge)
 
 ## Daily review (2026-11-14, claude-opus-5-5)
 This window has no evidence in it. In 24 hours zero coins were logged at any stage: none failed the checklist, none were passed by the brain, none were would-buys and none went unresearched. Nothing settled, nothing is still being followed, and the brain was called once in 48 hours. With n=0, nobody can say anything about an after-cost edge, and the question of whether the routine model's would-buys beat the coins it passed on has no data to answer. The only real finding is that the pipeline looks stalled. A scanner running around the clock should pass at least a handful of coins through the market filters every day. It's also Nov 14, four days after the planned Nov 10 test, so it's worth confirming the watch-only week was captured and archived before anyone talks about edge.
@@ -162,16 +162,16 @@ This window has no evidence in it. In 24 hours zero coins were logged at any sta
 - [2026-11-02 20:25] I expected Slingoor, a clean MIGRATED leader with $25k of 5m flow at pace and a 0.77 buy share, to retest its $408k high from $304k. It never went green (0.98x peak) and hit the -20% stop in 2 minutes, a -$2.86 probe. My own thesis admitted there was no printed higher low after a peak only 6 minutes old, so this confirms the money-shape rule: buy share and flow are not structure (V1, V6). Next time a MIGRATED pullback with no higher low above the hourly low is a PASS with blocker "no higher low", not a probe. This is one loss, so it adds no new ban beyond the rule I already have.
 
 ## Meta right now
-Not quiet. About half of the 15 scan_movers coins are under two hours old on PumpSwap or pump.fun, and about ten of them did $10k+ in the last hour. Two themes show up across several coins. Animal and dog riffs (HOGE, HSI, PAW, DIGS, Chick, GATO) are split: HSI and PAW are still buying while HOGE is down 59% in an hour. A finance/joke cluster (PumpBank, Owed, Useless Market, Good To Ape, CLOCKED OUT) has big 1h volume but almost no 5m flow, so it's fading. The web only confirms the fade: DOGE is down about 40% and headlines are asking whether memecoin hype is dead. Setups to research, not buy: HSI (12k 5m, 59% buys, 12 min old) and starShit (9.6k 5m, 64% buys, +405% 1h), only if 5m clears $10k with buyers holding. HOGE (-59% 1h, 55% buys) only on a pullback that holds volume, after confirming it's the real Hoge and not a Doge copy, with the stop under the recent low; its prior peak is unverified. The crawler's HOGE/TAIL/PAW numbers didn't match scan_movers, so I used scan_movers only. Holder, dev and bundle checks still run on each coin before any size. Paper only, not advice.
+Not quiet. About half of scan_movers is under two hours old, and the live flow is in fresh pump.fun cat and dog coins, not the finance jokes. Two themes are moving: animal riffs (NCAT at 27k 5m and 65% buys, dragoncat at 9k 5m and 73% buys, PAW at 15k 5m and 57% buys) and tech/NVIDIA-name riffs riding the Jensen Huang headlines (NCAT again). Fading: the finance/joke cluster (CLOCKED OUT at -26% 1h on 2.9k 5m with 40% buys, Useless Market at 983 5m), the dog coin HSI (-71% 1h on 126 5m), and LAIKA (zero 5m), and the web backs that (DOGE down about 40%, "is memecoin hype dead" headlines), though the cat coins still have real 5m flow. Setups to research, not buy: NCAT (youngest and strongest flow, but about 6 minutes old, so bundle risk is high), dragoncat (18 minutes old, $20k mcap, still on the bonding curve, a FINAL_STRETCH-style check), and PAW (migrated on PumpSwap at $101k mcap, a MIGRATED-style TA check that needs its volume to hold). The crawler's HSI and starShit 5m figures (12k and 9.6k) don't match scan_movers (126 and 2.4k), so I used scan_movers only. No hack-named coin is in the movers and none is a setup. Holder, dev and bundle checks have not run on any of these yet. Paper only, not advice.
 
 ## Moving most in its scans, last 30 min (1h volume)
 - PAW: $156,460 1h vol, $101,011 mcap, +318% 1h  
   CA `HxPrDS84HH3ijsJhiCLF55MN7DqLfxzbt99RnSuSpump`
-- HOGE: $117,038 1h vol, $81,357 mcap, -46% 1h  
-  CA `FVzqGqRmr4UH1Fif6dewmwbJ1p4YUZCu8dcw4Efopump`
-- starShit: $85,806 1h vol, $13,221 mcap, -6% 1h  
+- dragoncat: $55,198 1h vol, $19,801 mcap, +711% 1h  
+  CA `3nbHBkEDdbPiF5zJMhsxucm25V6UHKv9BVQuTKJVpump`
+- starShit: $40,176 1h vol, $8,949 mcap, -65% 1h  
   CA `85J9oUpaNRsELufsxopZPRbfYqNSNLhB6R2LNAWspump`
-- Sumi: $52,912 1h vol, $17,096 mcap, +127% 1h  
-  CA `HvA8a4C1KAXfrZMnmd1VyvLh21HzMvr4rjUtxiezpump`
-- TWEET: $33,320 1h vol, $18,621 mcap, +583% 1h  
-  CA `6Ao4S8TEnS4Xg5Uwr5TLipxKmrub88zBs81mipUMpump`
+- NCAT: $33,023 1h vol, $23,999 mcap, +416% 1h  
+  CA `CU6twK3evciYpdtf9xiiahxwV2tNd9FGoGjL6ewVpump`
+- SXSI: $30,581 1h vol, $3,243 mcap, -14% 1h  
+  CA `AfkQYxSodrgDvdx6F4UrA39c3a8aSbjgGSyCqU6gpump`
