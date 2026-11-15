@@ -1,13 +1,13 @@
 # Trencher live report
 
-Updated 2026-11-15T07:06:46Z (paper trading, never real money)
+Updated 2026-11-15T07:21:51Z (paper trading, never real money)
 
 - Equity: $74.23 (-25.8% vs $100 start)
 - Closed trades: 22, 3 wins
 - Fees paid: $14.78 (axiom $2.81, network $9.18, pool $2.66), plus $4.15 lost to slippage
 - New trades: WATCH-ONLY (scans and decides, buys nothing)
-- Brain: subscription, claude-haiku-5-5 for routine calls, claude-opus-5-5 for the daily review; 48 routine calls and 0 plan-limit hits in 48h
-- Watch log: 67 coins being followed, 1310 filed, 0 would-buys (6h follow, sampled every 2 min)
+- Brain: subscription, claude-haiku-5-5 for routine calls, claude-opus-5-5 for the daily review; 49 routine calls and 0 plan-limit hits in 48h
+- Watch log: 64 coins being followed, 1315 filed, 0 would-buys (6h follow, sampled every 2 min)
 
 ## Scorecard (after fees)
 - 22 closed, 3 won (14%), net $-25.79
@@ -73,9 +73,13 @@ Updated 2026-11-15T07:06:46Z (paper trading, never real money)
   CA `H4gHnZ3NCU7Z9XQwGX6YYJNyieGEW8pqwGRUcdSxpump`
 
 ## Last scan
-- 07:05Z: 14 coins, 14 with pairs, 0 passed the market filters, 0 researched
+- 07:21Z: 4 coins, 4 with pairs, 1 passed the market filters, 1 researched
 
 ## Coins it looked at, and why it passed
+- 07:21Z FUTA (MIGRATED, $106,658 mcap, $4,759 5m vol): REJECT, Top 10 hold 25.9% ex-pool (>25%) (V13)  
+  CA `8JCsa61htnPj2af7g1KSyU1UEncruHE1Ph9aNR6rpump`
+- 07:17Z TaoTao (FINAL_STRETCH, $15,829 mcap, $7,142 5m vol): PASS at conviction 3, PASS: TaoTao is the leader of a 6-copy "tao" field with $7.1k 5m, under the $10k bar, no radar mention, and a +662% hour with no story behind it. Not a probe. (V1, V6, V13)  
+  CA `G1KuEMuLrxWynFddQVnpdkQAhYFBwNJiuz1Lv7d9pump`
 - 07:04Z GATO (DIP, $6,674,197 mcap, $2,298 5m vol): REJECT, Dev holds 3.0% (>1%) (V13, V17)  
   CA `HsprHxBRgiVaQdRf3TnKNuZZtaX9JUSPgMFdAkk6pump`
 - 07:04Z OWED (FINAL_STRETCH, $20,379 mcap, $20,692 5m vol): PASS at conviction 3, PASS: chasing spike. OWED is up 50% on the 5m with 4.9x hourly pace, nine same-ticker copies, a 13-minute-old pump.fun launch and no printed higher low. Blocker: "chasing spike" (V1, V6).  
@@ -92,10 +96,6 @@ Updated 2026-11-15T07:06:46Z (paper trading, never real money)
   CA `HxPrDS84HH3ijsJhiCLF55MN7DqLfxzbt99RnSuSpump`
 - 06:25Z FUTA (MIGRATED, $101,874 mcap, $4,183 5m vol): REJECT, Top 10 hold 25.8% ex-pool (>25%) (V13)  
   CA `8JCsa61htnPj2af7g1KSyU1UEncruHE1Ph9aNR6rpump`
-- 06:08Z GTA (MIGRATED, $84,302 mcap, $3,852 5m vol): PASS at conviction 2, PASS — 5m flow at 0.65x pace and $3.9k under the $10k bar, and the $94k peak is only 1.12x away. Blocker "flow below pace". (V1, V6)  
-  CA `G9ZMir6uh66Y7viPkXAy7myA9jjE4T1YgheVUmGDpump`
-- 06:07Z PumpMas (MIGRATED, $40,273 mcap, $3,507 5m vol): PASS at conviction 3, PASS: no printed higher low, 19 copies of the same name, and the project site doesn't show this CA. A vamp field, not a base. (V1, V3, V6)  
-  CA `EwUVBpdM5vw1CJHRMSLywzVjyQSJZpy6qboxEPBKpump`
 
 ## What its skips did next (last 48h)
 A skip "ran" if the coin reached the first target (1.5x) from the skip price before a 20% drop, "dumped" if the drop came first. Sampled every 10 min, followed 6h.
@@ -106,21 +106,23 @@ A skip "ran" if the coin reached the first target (1.5x) from the skip price bef
     CA `AiQUqe4zjiDssth2FsCoeQVaGtCtHYyKGX8U52rWpump`
   - ran: FUTA up to 2.77x  
     CA `FxoXV4C8DTSYeg5dSXrEsr45zzr8tpNbsrpoiZ8Kpump`
-- top 10 over 25%: blocked 9, ran 0, dumped 8, flat 1, open 0 (saving losses: keep it)
-- near the high / chasing: blocked 6, ran 1, dumped 3, flat 0, open 2 (saving losses: keep it)
+- top 10 over 25%: blocked 9, ran 0, dumped 7, flat 1, open 1 (saving losses: keep it)
+- near the high / chasing: blocked 6, ran 1, dumped 4, flat 0, open 1 (saving losses: keep it)
   - ran: penny up to 1.6x  
     CA `5gmCPpuktJ7Svjgr4PPJBTosAFKB8K6Z45EGfSUmpump`
 - flow below pace: blocked 5, ran 0, dumped 3, flat 0, open 2 (saving losses: keep it)
-- too new / sniping: blocked 5, ran 1, dumped 3, flat 0, open 1 (saving losses: keep it)
+- too new / sniping: blocked 5, ran 2, dumped 3, flat 0, open 0 (mixed)
   - ran: Chick up to 1.66x  
     CA `Dueav76X9spnoLomhM2jMkkWorVggbeWucLs3YLupump`
+  - ran: HOGE up to 2.94x  
+    CA `FVzqGqRmr4UH1Fif6dewmwbJ1p4YUZCu8dcw4Efopump`
 - falling knife (code): blocked 4, ran 0, dumped 4, flat 0, open 0 (saving losses: keep it)
 - crowd leaving / fading volume: blocked 2, ran 1, dumped 1, flat 0, open 0 (too few played out to judge)
   - ran: NUREMBERG up to 1.62x  
     CA `7R3RnGmpV9mZXwSyHyKN5LEddiZRmGsYrAZPgDJqpump`
 - falling knife / no higher low: blocked 2, ran 0, dumped 0, flat 0, open 2 (too few played out to judge)
+- other: blocked 2, ran 0, dumped 1, flat 0, open 1 (too few played out to judge)
 - dev share over 1%: blocked 1, ran 0, dumped 0, flat 0, open 1 (too few played out to judge)
-- other: blocked 1, ran 0, dumped 1, flat 0, open 0 (too few played out to judge)
 
 ## Daily review (2026-11-14, claude-opus-5-5)
 This window has no evidence in it. In 24 hours zero coins were logged at any stage: none failed the checklist, none were passed by the brain, none were would-buys and none went unresearched. Nothing settled, nothing is still being followed, and the brain was called once in 48 hours. With n=0, nobody can say anything about an after-cost edge, and the question of whether the routine model's would-buys beat the coins it passed on has no data to answer. The only real finding is that the pipeline looks stalled. A scanner running around the clock should pass at least a handful of coins through the market filters every day. It's also Nov 14, four days after the planned Nov 10 test, so it's worth confirming the watch-only week was captured and archived before anyone talks about edge.
@@ -161,13 +163,13 @@ This window has no evidence in it. In 24 hours zero coins were logged at any sta
 The meta is animal and pet jokes on pump.fun and pumpswap, with the most real flow. "Just hold / go AFK" jokes and name-jacked dog tickers are fading. Chick (The Optimistic Chick, $67k cap, $34k 5m, 61% buys, +132% 1h) and PAW (Light a Paw, $16k cap, $7.4k 5m, 72% buys, +393% 1h) carry the animal theme, with Unstable Inu (UI, $5.9k cap, $6.3k 5m but only 30% buys) and TAIL (35% buys) as weaker versions. Fading: afk (0% buys, $29 5m, -77% 1h), HODL (Diamond Hands, -47%, $226 5m), DOGE (a name-jack on pumpswap, -90%) and the duplicate FUTA ticker. Research order: Chick first, and only as a probe on a pullback that holds volume, with the stop under that pullback low and only after confirming it's the original; PAW only if its 5m reaches $10k with buys holding. Holder, dev and bundle checks still have to run on each before any size, and this is research, not a buy. Paper only, not advice.
 
 ## Moving most in its scans, last 30 min (1h volume)
-- Chick: $208,010 1h vol, $67,001 mcap, +132% 1h  
-  CA `Dueav76X9spnoLomhM2jMkkWorVggbeWucLs3YLupump`
-- FUTA: $100,825 1h vol, $9,562 mcap, -68% 1h  
-  CA `FxoXV4C8DTSYeg5dSXrEsr45zzr8tpNbsrpoiZ8Kpump`
-- DOGE: $69,667 1h vol, $7,682 mcap, -80% 1h  
-  CA `D1noy4QtZiWkH3A8QJGq31HGaAvfvA3bti4C6HLEpump`
-- BabyDoge: $61,867 1h vol, $11,243 mcap, +358% 1h  
+- BabyDoge: $81,716 1h vol, $7,522 mcap, +206% 1h  
   CA `3sQ6WzsH1awpEaDj4XCyisjWmHcwfXySUx2EiDLLpump`
-- PAW: $58,126 1h vol, $16,247 mcap, +393% 1h  
-  CA `HxPrDS84HH3ijsJhiCLF55MN7DqLfxzbt99RnSuSpump`
+- FUTA: $56,493 1h vol, $8,643 mcap, -62% 1h  
+  CA `FxoXV4C8DTSYeg5dSXrEsr45zzr8tpNbsrpoiZ8Kpump`
+- OWED: $50,926 1h vol, $19,064 mcap, +868% 1h  
+  CA `Dpgt4i8AExpDcumBwpEJ8rUzZwuj2RLMq2B9b12vpump`
+- TaoTao: $31,820 1h vol, $15,829 mcap, +662% 1h  
+  CA `G1KuEMuLrxWynFddQVnpdkQAhYFBwNJiuz1Lv7d9pump`
+- GTA: $31,298 1h vol, $74,745 mcap, -14% 1h  
+  CA `G9ZMir6uh66Y7viPkXAy7myA9jjE4T1YgheVUmGDpump`
