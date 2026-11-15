@@ -1,13 +1,13 @@
 # Trencher live report
 
-Updated 2026-11-15T00:02:33Z (paper trading, never real money)
+Updated 2026-11-15T00:17:49Z (paper trading, never real money)
 
 - Equity: $74.23 (-25.8% vs $100 start)
 - Closed trades: 22, 3 wins
 - Fees paid: $14.78 (axiom $2.81, network $9.18, pool $2.66), plus $4.15 lost to slippage
 - New trades: WATCH-ONLY (scans and decides, buys nothing)
-- Brain: subscription, claude-haiku-5-5 for routine calls, claude-opus-5-5 for the daily review; 2 routine calls and 0 plan-limit hits in 48h
-- Watch log: 11 coins being followed, 1282 filed, 0 would-buys (6h follow, sampled every 2 min)
+- Brain: subscription, claude-haiku-5-5 for routine calls, claude-opus-5-5 for the daily review; 3 routine calls and 0 plan-limit hits in 48h
+- Watch log: 13 coins being followed, 1282 filed, 0 would-buys (6h follow, sampled every 2 min)
 
 ## Scorecard (after fees)
 - 22 closed, 3 won (14%), net $-25.79
@@ -73,9 +73,13 @@ Updated 2026-11-15T00:02:33Z (paper trading, never real money)
   CA `H4gHnZ3NCU7Z9XQwGX6YYJNyieGEW8pqwGRUcdSxpump`
 
 ## Last scan
-- 00:02Z: 0 coins, 0 with pairs, 0 passed the market filters, 0 researched
+- 00:17Z: 0 coins, 0 with pairs, 0 passed the market filters, 0 researched
 
 ## Coins it looked at, and why it passed
+- 00:15Z Lucia (MIGRATED, $486,056 mcap, $142,470 5m vol): REJECT, Top 10 hold 45.7% ex-pool (>25%) (V13)  
+  CA `513YLzsTSHaqXidg6bgDs8LCk5LGixFWcMUTheQVpump`
+- 00:07Z JENSEN (MIGRATED, $338,589 mcap, $2,192 5m vol): PASS at conviction 2, PASS: no catalyst, failed bounce back into the base, and a crowded ticker. Blocker "no higher low" plus "chasing" is not the issue here, the coin is 82% off its high and the bounce already gave up. (V1, V6, V13)  
+  CA `B2YpP21vQBESJ2jtnuhPujEUT61KVRxZ2X5gsDcUpump`
 - 23:59Z USDC (FINAL_STRETCH, $26,672 mcap, $6,323 5m vol): REJECT, RugCheck danger: Low Liquidity $529.47  
   CA `Acgs6mb4PC7tQbDm9T4EeTfNx3ZDh5fNSjHcHZQLpump`
 - 23:57Z GLITCH (DIP, $1,398,050 mcap, $2,027 5m vol): REJECT, Top 10 hold 27.2% ex-pool (>25%) (V13)  
@@ -92,20 +96,21 @@ Updated 2026-11-15T00:02:33Z (paper trading, never real money)
   CA `HsprHxBRgiVaQdRf3TnKNuZZtaX9JUSPgMFdAkk6pump`
 - 23:36Z JOB (MIGRATED, $46,157 mcap, $2,765 5m vol): REJECT, Top 10 hold 31.0% ex-pool (>25%) (V13)  
   CA `7rBatsxwXiMLcz2PJjh8G45wZfHNHd4dvtBUMwsepump`
-- 23:36Z J*B (DIP, $64,403 mcap, $6,432 5m vol): REJECT, Dip with fading attention is a falling knife, not a dip (5m at 0.55x the hour's pace, under 0.6x)  
-  CA `3Kf7Jxy1dB5TH56qFkC6XUW9S3qtMZQJzuUPzbdMpump`
-- 23:36Z SWIF (MIGRATED, $146,234 mcap, $13,289 5m vol): REJECT, Top 10 hold 28.4% ex-pool (>25%) (V13)  
-  CA `Hi6qQHwHBnx9uaxT3KyBxaHaUn4JTAG6ijygQbiopump`
 
 ## What its skips did next (last 48h)
 A skip "ran" if the coin reached the first target (1.5x) from the skip price before a 20% drop, "dumped" if the drop came first. Sampled every 10 min, followed 6h.
-- top 10 over 25%: blocked 5, ran 0, dumped 2, flat 0, open 3 (too few played out to judge)
-- RugCheck danger: blocked 3, ran 1, dumped 0, flat 0, open 2 (too few played out to judge)
+- top 10 over 25%: blocked 6, ran 1, dumped 2, flat 0, open 3 (saving losses: keep it)
+  - ran: DOJE up to 2.08x  
+    CA `7N2g5tHX2isAXyKmtUek72waREtNKSFuR6KW2xthpump`
+- RugCheck danger: blocked 3, ran 2, dumped 0, flat 0, open 1 (too few played out to judge)
   - ran: Bear up to 1.82x  
     CA `AvRSpY1rPA9iVFxYHc5D5JQW6oU5tjGQZdsW2e5upump`
+  - ran: USDC up to 2.01x  
+    CA `Acgs6mb4PC7tQbDm9T4EeTfNx3ZDh5fNSjHcHZQLpump`
 - dev share over 1%: blocked 1, ran 0, dumped 0, flat 0, open 1 (too few played out to judge)
 - falling knife (code): blocked 1, ran 0, dumped 1, flat 0, open 0 (too few played out to judge)
-- flow below pace: blocked 1, ran 0, dumped 0, flat 0, open 1 (too few played out to judge)
+- flow below pace: blocked 1, ran 0, dumped 1, flat 0, open 0 (too few played out to judge)
+- near the high / chasing: blocked 1, ran 0, dumped 0, flat 0, open 1 (too few played out to judge)
 
 ## Daily review (2026-11-14, claude-opus-5-5)
 This window has no evidence in it. In 24 hours zero coins were logged at any stage: none failed the checklist, none were passed by the brain, none were would-buys and none went unresearched. Nothing settled, nothing is still being followed, and the brain was called once in 48 hours. With n=0, nobody can say anything about an after-cost edge, and the question of whether the routine model's would-buys beat the coins it passed on has no data to answer. The only real finding is that the pipeline looks stalled. A scanner running around the clock should pass at least a handful of coins through the market filters every day. It's also Nov 14, four days after the planned Nov 10 test, so it's worth confirming the watch-only week was captured and archived before anyone talks about edge.
@@ -148,11 +153,11 @@ The trenches are active, not quiet: most of the 5-minute volume in scan_movers s
 ## Moving most in its scans, last 30 min (1h volume)
 - USDC: $210,546 1h vol, $26,672 mcap, -36% 1h  
   CA `Acgs6mb4PC7tQbDm9T4EeTfNx3ZDh5fNSjHcHZQLpump`
-- J*B: $140,199 1h vol, $64,403 mcap, -1% 1h  
-  CA `3Kf7Jxy1dB5TH56qFkC6XUW9S3qtMZQJzuUPzbdMpump`
-- Bear: $135,655 1h vol, $35,957 mcap, +30% 1h  
-  CA `AvRSpY1rPA9iVFxYHc5D5JQW6oU5tjGQZdsW2e5upump`
-- BEAR: $114,778 1h vol, $8,310 mcap, +16% 1h  
+- Lucia: $161,734 1h vol, $486,056 mcap, +1158% 1h  
+  CA `513YLzsTSHaqXidg6bgDs8LCk5LGixFWcMUTheQVpump`
+- BEAR: $103,326 1h vol, $8,292 mcap, -56% 1h  
   CA `FLTiTwvbBRZqjkwqAqAfpX4pVZuimFwx2Qi2467zpump`
-- SWIF: $101,549 1h vol, $146,234 mcap, +340% 1h  
-  CA `Hi6qQHwHBnx9uaxT3KyBxaHaUn4JTAG6ijygQbiopump`
+- DOJE: $86,004 1h vol, $103,197 mcap, +203% 1h  
+  CA `7N2g5tHX2isAXyKmtUek72waREtNKSFuR6KW2xthpump`
+- UM: $82,853 1h vol, $91,173 mcap, +4% 1h  
+  CA `FL3LnVeZTtn7uvcpytRLyAYsqUJtznskjdE4p1HSpump`
