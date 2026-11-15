@@ -1,13 +1,13 @@
 # Trencher live report
 
-Updated 2026-11-15T03:19:45Z (paper trading, never real money)
+Updated 2026-11-15T03:34:49Z (paper trading, never real money)
 
 - Equity: $74.23 (-25.8% vs $100 start)
 - Closed trades: 22, 3 wins
 - Fees paid: $14.78 (axiom $2.81, network $9.18, pool $2.66), plus $4.15 lost to slippage
 - New trades: WATCH-ONLY (scans and decides, buys nothing)
-- Brain: subscription, claude-haiku-5-5 for routine calls, claude-opus-5-5 for the daily review; 23 routine calls and 0 plan-limit hits in 48h
-- Watch log: 56 coins being followed, 1282 filed, 0 would-buys (6h follow, sampled every 2 min)
+- Brain: subscription, claude-haiku-5-5 for routine calls, claude-opus-5-5 for the daily review; 26 routine calls and 0 plan-limit hits in 48h
+- Watch log: 62 coins being followed, 1282 filed, 0 would-buys (6h follow, sampled every 2 min)
 
 ## Scorecard (after fees)
 - 22 closed, 3 won (14%), net $-25.79
@@ -73,9 +73,21 @@ Updated 2026-11-15T03:19:45Z (paper trading, never real money)
   CA `H4gHnZ3NCU7Z9XQwGX6YYJNyieGEW8pqwGRUcdSxpump`
 
 ## Last scan
-- 03:19Z: 6 coins, 6 with pairs, 0 passed the market filters, 0 researched
+- 03:33Z: 6 coins, 6 with pairs, 0 passed the market filters, 0 researched
 
 ## Coins it looked at, and why it passed
+- 03:33Z worth (MIGRATED, $182,879 mcap, $7,028 5m vol): REJECT, Top 10 hold 27.2% ex-pool (>25%) (V13)  
+  CA `7mH4PaR9BMxAid2i1QNDBmziAwxyXBsPNKSMiWySpump`
+- 03:33Z penny (MIGRATED, $74,215 mcap, $21,416 5m vol): PASS at conviction 3, PASS: penny, $74k, 6 minutes old, 12% off an $84k peak on a 6.6x volume spike with no printed higher low and a 9.5% single bundle in a 16-copy field. Blocker: chasing spike. (V1, V6, V13)  
+  CA `5gmCPpuktJ7Svjgr4PPJBTosAFKB8K6Z45EGfSUmpump`
+- 03:31Z JASON (MIGRATED, $127,905 mcap, $28,426 5m vol): PASS at conviction 4, PASS: chasing spike. JASON is up 220% on 5m, 2.4% off its high, and only 10 minutes old. Wait for a retrace and a printed higher low (V1, V6).  
+  CA `FR4yp7buct5Rz8yfic4zwVVcfLySmrqw3tFp18UCpump`
+- 03:28Z SI (FINAL_STRETCH, $21,480 mcap, $3,142 5m vol): REJECT, RugCheck danger: Low Liquidity $406.17  
+  CA `AiQUqe4zjiDssth2FsCoeQVaGtCtHYyKGX8U52rWpump`
+- 03:27Z WANTED (MIGRATED, $1,254,048 mcap, $10,831 5m vol): PASS at conviction 3, PASS: flow below pace (0.43x the hour) in a 23-copy WANTED field with no catalyst. Clean holders don't fix a dead breakout. (V1, V6, V13)  
+  CA `CiMyaPC9icicJxkFqvqpgL2YT2FjEQmGx1YVdG78pump`
+- 03:20Z GATO (DIP, $7,093,683 mcap, $2,180 5m vol): REJECT, Dev holds 3.0% (>1%) (V13, V17)  
+  CA `HsprHxBRgiVaQdRf3TnKNuZZtaX9JUSPgMFdAkk6pump`
 - 02:54Z USDUS (FINAL_STRETCH, $15,587 mcap, $6,811 5m vol): REJECT, RugCheck danger: Low Liquidity $286.93  
   CA `GB5nqqAbsXf45noRWqeyM3rDsc6hD6iGAUqjXSc5pump`
 - 02:50Z HYGG (MIGRATED, $480,036 mcap, $2,022 5m vol): PASS at conviction 3, PASS: HYGG is the leader of an 18-copy HYPE field, but its 5m flow is 0.42x its hourly pace, sellers outnumber buyers, and the one site it links resolves to a bot-check page. The crowd is leaving, not arriving. (V1, V6, V13)  
@@ -84,31 +96,17 @@ Updated 2026-11-15T03:19:45Z (paper trading, never real money)
   CA `7mH4PaR9BMxAid2i1QNDBmziAwxyXBsPNKSMiWySpump`
 - 02:47Z penny (FINAL_STRETCH, $20,142 mcap, $28,498 5m vol): REJECT, RugCheck danger: Low Liquidity $529.71  
   CA `5gmCPpuktJ7Svjgr4PPJBTosAFKB8K6Z45EGfSUmpump`
-- 02:45Z PumpMas (MIGRATED, $59,939 mcap, $3,682 5m vol): PASS at conviction 3, PASS — PumpMas is the volume leader of a 19-copy "pumpmas" field, but its 5m is $3.7k, under the $10k gate, it's red on the last 5m, and its own site doesn't show the CA (V1, V3, V6).  
-  CA `EwUVBpdM5vw1CJHRMSLywzVjyQSJZpy6qboxEPBKpump`
-- 02:42Z WANTED (MIGRATED, $831,794 mcap, $17,595 5m vol): PASS at conviction 2, PASS: WANTED is 9% off its high after a +66% 5m spike, with 5m flow at 0.44x pace and no printed higher low. Chasing, flow below pace. (V1, V6)  
-  CA `CiMyaPC9icicJxkFqvqpgL2YT2FjEQmGx1YVdG78pump`
-- 02:34Z GATO (DIP, $7,189,292 mcap, $2,119 5m vol): REJECT, Dev holds 3.0% (>1%) (V13, V17)  
-  CA `HsprHxBRgiVaQdRf3TnKNuZZtaX9JUSPgMFdAkk6pump`
-- 02:22Z SI (FINAL_STRETCH, $18,725 mcap, $8,783 5m vol): REJECT, RugCheck danger: Low Liquidity $353.79  
-  CA `AiQUqe4zjiDssth2FsCoeQVaGtCtHYyKGX8U52rWpump`
-- 02:17Z USDC (DIP, $177,385 mcap, $11,449 5m vol): PASS at conviction 3, PASS: bottom buy with no catalyst and cat-meta volume under its hourly pace. Blocker "no catalyst / theme pace". Watch, don't buy (V1, V6, owner bottom-buy rule).  
-  CA `Acgs6mb4PC7tQbDm9T4EeTfNx3ZDh5fNSjHcHZQLpump`
-- 02:14Z Ivy (FINAL_STRETCH, $22,165 mcap, $26,942 5m vol): REJECT, RugCheck danger: Creator history of rugged tokens  
-  CA `DxNF3Qxd8XeUBdz7ReRdoiFzRmNDKbSz4c2oA7aRpump`
 
 ## What its skips did next (last 48h)
 A skip "ran" if the coin reached the first target (1.5x) from the skip price before a 20% drop, "dumped" if the drop came first. Sampled every 10 min, followed 6h.
-- RugCheck danger: blocked 8, ran 2, dumped 5, flat 0, open 1 (saving losses: keep it)
+- RugCheck danger: blocked 7, ran 1, dumped 4, flat 0, open 2 (saving losses: keep it)
   - ran: Ivy up to 1.88x  
     CA `DxNF3Qxd8XeUBdz7ReRdoiFzRmNDKbSz4c2oA7aRpump`
-  - ran: penny up to 1.62x  
-    CA `5gmCPpuktJ7Svjgr4PPJBTosAFKB8K6Z45EGfSUmpump`
 - top 10 over 25%: blocked 6, ran 0, dumped 4, flat 0, open 2 (saving losses: keep it)
-- flow below pace: blocked 4, ran 0, dumped 4, flat 0, open 0 (saving losses: keep it)
+- flow below pace: blocked 4, ran 0, dumped 3, flat 0, open 1 (saving losses: keep it)
+- too new / sniping: blocked 4, ran 0, dumped 2, flat 0, open 2 (too few played out to judge)
 - falling knife (code): blocked 3, ran 0, dumped 3, flat 0, open 0 (saving losses: keep it)
 - crowd leaving / fading volume: blocked 2, ran 0, dumped 1, flat 0, open 1 (too few played out to judge)
-- too new / sniping: blocked 2, ran 0, dumped 2, flat 0, open 0 (too few played out to judge)
 - thin 5m volume: blocked 2, ran 0, dumped 1, flat 0, open 1 (too few played out to judge)
 - dev share over 1%: blocked 1, ran 0, dumped 0, flat 0, open 1 (too few played out to judge)
 - falling knife / no higher low: blocked 1, ran 0, dumped 0, flat 0, open 1 (too few played out to judge)
@@ -153,13 +151,13 @@ This window has no evidence in it. In 24 hours zero coins were logged at any sta
 The meta is self-aware joke coins with fresh launches, and the trenches are not quiet: USD (Useless Shit Dollar) at $16.6k 5m on a $24k cap and WANTED at $17.6k 5m are both trading hard. Stablecoin/dollar jokes are rising: USD (6 minutes old, 56% buys, -14% in the hour) and Stable Inu (SI, $8.8k 5m, 50% buys, +107% in the hour). Cat riffs are fading: Dacity Cat (DACAT) is at $0 5m and -99% in the hour, The White Bear (DUVAL) is at $87 5m and -81%, leaving only UpSideDownCat (USDC, $11.4k 5m, 67% buys, -12% in the hour) with real flow. Self-mocking "just buy" and "begwork" coins show buy-heavy but thin flow ($408 and $194 on 5m), and GTA riffs are dead, so the crawler's cat and GTA stories are out of date and I'm using the scan numbers. Setups to research: USD and USDC, after holder, dev and bundle checks run on each. WANTED ($832k cap, +2133% in the hour, 0.8h old) is a chase-risk watch only, not an entry. Paper only, not advice.
 
 ## Moving most in its scans, last 30 min (1h volume)
-- Ivy: $109,518 1h vol, $1,955 mcap, -93% 1h  
-  CA `DxNF3Qxd8XeUBdz7ReRdoiFzRmNDKbSz4c2oA7aRpump`
-- USD: $59,294 1h vol, $4,595 mcap, -82% 1h  
+- WANTED: $302,486 1h vol, $1,254,048 mcap, +103% 1h  
+  CA `CiMyaPC9icicJxkFqvqpgL2YT2FjEQmGx1YVdG78pump`
+- JASON: $153,276 1h vol, $122,687 mcap, +240% 1h  
+  CA `FR4yp7buct5Rz8yfic4zwVVcfLySmrqw3tFp18UCpump`
+- worth: $88,128 1h vol, $182,879 mcap, +111% 1h  
+  CA `7mH4PaR9BMxAid2i1QNDBmziAwxyXBsPNKSMiWySpump`
+- USD: $62,797 1h vol, $1,677 mcap, -94% 1h  
   CA `8UoGTkKbicJUsZXanq81ZNxgtcBNPB96e5wJpVCLNUSD`
-- HYGG: $57,490 1h vol, $468,289 mcap, +37% 1h  
-  CA `HHoDt9mEET28qFFWtUPNTqGcmRQPh3TJChAWHmBopump`
-- danny: $36,780 1h vol, $3,079 mcap, +28% 1h  
-  CA `HPiFc9x1dD23nR77Z2NFJx5HED9nopU8rEL2rf1zpump`
-- CBUCKS: $32,441 1h vol, $2,972,121 mcap, -6% 1h  
-  CA `DtcicPCKTKeAh7TDEzTym3hXeoHAoMiBdYJhMYxZpump`
+- upcat: $59,491 1h vol, $13,888 mcap, +471% 1h  
+  CA `fQKg71WHx88YaQT8xVM1nMSsTZTz8HkwaK2qAcwpump`
