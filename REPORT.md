@@ -1,13 +1,13 @@
 # Trencher live report
 
-Updated 2026-11-15T00:33:00Z (paper trading, never real money)
+Updated 2026-11-15T00:48:12Z (paper trading, never real money)
 
 - Equity: $74.23 (-25.8% vs $100 start)
 - Closed trades: 22, 3 wins
 - Fees paid: $14.78 (axiom $2.81, network $9.18, pool $2.66), plus $4.15 lost to slippage
 - New trades: WATCH-ONLY (scans and decides, buys nothing)
-- Brain: subscription, claude-haiku-5-5 for routine calls, claude-opus-5-5 for the daily review; 5 routine calls and 0 plan-limit hits in 48h
-- Watch log: 18 coins being followed, 1282 filed, 0 would-buys (6h follow, sampled every 2 min)
+- Brain: subscription, claude-haiku-5-5 for routine calls, claude-opus-5-5 for the daily review; 10 routine calls and 0 plan-limit hits in 48h
+- Watch log: 24 coins being followed, 1282 filed, 0 would-buys (6h follow, sampled every 2 min)
 
 ## Scorecard (after fees)
 - 22 closed, 3 won (14%), net $-25.79
@@ -73,9 +73,21 @@ Updated 2026-11-15T00:33:00Z (paper trading, never real money)
   CA `H4gHnZ3NCU7Z9XQwGX6YYJNyieGEW8pqwGRUcdSxpump`
 
 ## Last scan
-- 00:31Z: 3 coins, 3 with pairs, 0 passed the market filters, 0 researched
+- 00:47Z: 1 coins, 1 with pairs, 1 passed the market filters, 1 researched
 
 ## Coins it looked at, and why it passed
+- 00:47Z NUREMBERG (DIP, $84,677 mcap, $3,347 5m vol): PASS at conviction 3, PASS: blocker "dead story". NUREMBERG is a 13-copy name riff, the radar lists it as fading with no bid, and nothing outside is pushing it (V1, V5).  
+  CA `7R3RnGmpV9mZXwSyHyKN5LEddiZRmGsYrAZPgDJqpump`
+- 00:46Z gta (MIGRATED, $46,113 mcap, $9,959 5m vol): PASS at conviction 3, PASS: blocker "too new". Three minutes old, already on PumpSwap, sitting at its first-minute high with 5m volume just under $10k and no X, no site, no socials. A coin with no history is a bag in the making (V1, V6).  
+  CA `ArokAnvdAKYidzJaEqYT48kSmnTMJLWzo9F3nFAgpump`
+- 00:44Z USDC (DIP, $226,645 mcap, $35,976 5m vol): REJECT, Dip with fading attention is a falling knife, not a dip (5m at 0.51x the hour's pace, under 0.6x)  
+  CA `Acgs6mb4PC7tQbDm9T4EeTfNx3ZDh5fNSjHcHZQLpump`
+- 00:34Z RWA (DIP, $125,758 mcap, $14,949 5m vol): PASS at conviction 3, PASS: blocker "no catalyst, theme under pace." Holders are clean, but this is a 0.3-hour-old spike that fell 41%, with no printed higher low and no named catalyst (V1, V6).  
+  CA `6edJUFSC85CyyLFB1QcCvYu7uzqaD4kV9o5YUPxrpump`
+- 00:33Z DOJE (DIP, $138,349 mcap, $3,233 5m vol): REJECT, Dip with fading attention is a falling knife, not a dip (5m at 0.22x the hour's pace, under 0.6x)  
+  CA `7N2g5tHX2isAXyKmtUek72waREtNKSFuR6KW2xthpump`
+- 00:33Z HYGG (MIGRATED, $253,985 mcap, $35,487 5m vol): PASS at conviction 3, PASS: chasing the first 14 minutes of a migration, flow is sellers-led, and no higher low exists yet. Blockers: "chasing", "too new", "chasing spike", "no higher low". (V1, V6)  
+  CA `HHoDt9mEET28qFFWtUPNTqGcmRQPh3TJChAWHmBopump`
 - 00:21Z GATO (DIP, $6,964,263 mcap, $2,994 5m vol): REJECT, Dev holds 3.0% (>1%) (V13, V17)  
   CA `HsprHxBRgiVaQdRf3TnKNuZZtaX9JUSPgMFdAkk6pump`
 - 00:21Z SWIF (MIGRATED, $126,227 mcap, $8,604 5m vol): PASS at conviction 4, PASS: flow below pace (0.54x theme hourly, 5m $8.6k under $10k) and the 23.5% pullback is a bottom buy with no catalyst on a fading theme. Hats are not a meta here. (V1, V6)  
@@ -84,34 +96,23 @@ Updated 2026-11-15T00:33:00Z (paper trading, never real money)
   CA `AvRSpY1rPA9iVFxYHc5D5JQW6oU5tjGQZdsW2e5upump`
 - 00:20Z SWAN (no setup, $24,086 mcap, $5,448 5m vol): REJECT, No setup fits: not Final Stretch, not a migrated runner, not a healthy dip  
   CA `3vhbd6FNaKCobuK2ZNfAEXffTEv2AcuoYbhTtHf1pump`
-- 00:18Z AMS (FINAL_STRETCH, $15,725 mcap, $22,359 5m vol): PASS at conviction 3, PASS. Up 52% in 5 minutes at 9x the hourly pace, top 10 at 21.6%, and no story behind a ticker with nine copies. Blocker: chasing spike. (V1, V6, V13)  
-  CA `4b3ypv8i8vKUfCfETpbbPSLtvvW39eQVt5M41PxCpump`
-- 00:15Z Lucia (MIGRATED, $486,056 mcap, $142,470 5m vol): REJECT, Top 10 hold 45.7% ex-pool (>25%) (V13)  
-  CA `513YLzsTSHaqXidg6bgDs8LCk5LGixFWcMUTheQVpump`
-- 00:07Z JENSEN (MIGRATED, $338,589 mcap, $2,192 5m vol): PASS at conviction 2, PASS: no catalyst, failed bounce back into the base, and a crowded ticker. Blocker "no higher low" plus "chasing" is not the issue here, the coin is 82% off its high and the bounce already gave up. (V1, V6, V13)  
-  CA `B2YpP21vQBESJ2jtnuhPujEUT61KVRxZ2X5gsDcUpump`
-- 23:59Z USDC (FINAL_STRETCH, $26,672 mcap, $6,323 5m vol): REJECT, RugCheck danger: Low Liquidity $529.47  
-  CA `Acgs6mb4PC7tQbDm9T4EeTfNx3ZDh5fNSjHcHZQLpump`
-- 23:57Z GLITCH (DIP, $1,398,050 mcap, $2,027 5m vol): REJECT, Top 10 hold 27.2% ex-pool (>25%) (V13)  
-  CA `8Xg89xT8Ve34sKiYqYuMs46mycREsCA2F362UscRpump`
-- 23:52Z NUREMBERG (MIGRATED, $104,818 mcap, $3,967 5m vol): PASS at conviction 3, PASS. NUREMBERG is a 37%-off-high name-theme coin with 5m flow at 0.73x pace, a jagged saw-tooth chart and no printed higher low. Blocker: flow below pace. (V1, V6, V13)  
-  CA `7R3RnGmpV9mZXwSyHyKN5LEddiZRmGsYrAZPgDJqpump`
 
 ## What its skips did next (last 48h)
 A skip "ran" if the coin reached the first target (1.5x) from the skip price before a 20% drop, "dumped" if the drop came first. Sampled every 10 min, followed 6h.
-- top 10 over 25%: blocked 5, ran 1, dumped 1, flat 0, open 3 (too few played out to judge)
-  - ran: DOJE up to 2.08x  
-    CA `7N2g5tHX2isAXyKmtUek72waREtNKSFuR6KW2xthpump`
-- RugCheck danger: blocked 3, ran 1, dumped 0, flat 0, open 2 (too few played out to judge)
-  - ran: USDC up to 2.01x  
-    CA `Acgs6mb4PC7tQbDm9T4EeTfNx3ZDh5fNSjHcHZQLpump`
-- flow below pace: blocked 2, ran 0, dumped 1, flat 0, open 1 (too few played out to judge)
+- top 10 over 25%: blocked 4, ran 0, dumped 2, flat 0, open 2 (too few played out to judge)
+- falling knife (code): blocked 3, ran 0, dumped 1, flat 0, open 2 (too few played out to judge)
+- RugCheck danger: blocked 2, ran 0, dumped 0, flat 0, open 2 (too few played out to judge)
 - near the high / chasing: blocked 2, ran 1, dumped 0, flat 0, open 1 (too few played out to judge)
   - ran: AMS up to 2.15x  
     CA `4b3ypv8i8vKUfCfETpbbPSLtvvW39eQVt5M41PxCpump`
+- too new / sniping: blocked 2, ran 1, dumped 0, flat 0, open 1 (too few played out to judge)
+  - ran: HYGG up to 1.8x  
+    CA `HHoDt9mEET28qFFWtUPNTqGcmRQPh3TJChAWHmBopump`
 - dev share over 1%: blocked 1, ran 0, dumped 0, flat 0, open 1 (too few played out to judge)
-- falling knife (code): blocked 1, ran 0, dumped 1, flat 0, open 0 (too few played out to judge)
-- other: blocked 1, ran 0, dumped 0, flat 0, open 1 (too few played out to judge)
+- flow below pace: blocked 1, ran 0, dumped 1, flat 0, open 0 (too few played out to judge)
+- falling knife / no higher low: blocked 1, ran 0, dumped 0, flat 0, open 1 (too few played out to judge)
+- crowd leaving / fading volume: blocked 1, ran 0, dumped 0, flat 0, open 1 (too few played out to judge)
+- other: blocked 1, ran 0, dumped 1, flat 0, open 0 (too few played out to judge)
 
 ## Daily review (2026-11-14, claude-opus-5-5)
 This window has no evidence in it. In 24 hours zero coins were logged at any stage: none failed the checklist, none were passed by the brain, none were would-buys and none went unresearched. Nothing settled, nothing is still being followed, and the brain was called once in 48 hours. With n=0, nobody can say anything about an after-cost edge, and the question of whether the routine model's would-buys beat the coins it passed on has no data to answer. The only real finding is that the pipeline looks stalled. A scanner running around the clock should pass at least a handful of coins through the market filters every day. It's also Nov 14, four days after the planned Nov 10 test, so it's worth confirming the watch-only week was captured and archived before anyone talks about edge.
@@ -149,16 +150,16 @@ This window has no evidence in it. In 24 hours zero coins were logged at any sta
 - [2026-11-02 20:25] I expected Slingoor, a clean MIGRATED leader with $25k of 5m flow at pace and a 0.77 buy share, to retest its $408k high from $304k. It never went green (0.98x peak) and hit the -20% stop in 2 minutes, a -$2.86 probe. My own thesis admitted there was no printed higher low after a peak only 6 minutes old, so this confirms the money-shape rule: buy share and flow are not structure (V1, V6). Next time a MIGRATED pullback with no higher low above the hourly low is a PASS with blocker "no higher low", not a probe. This is one loss, so it adds no new ban beyond the rule I already have.
 
 ## Meta right now
-The trenches are active, not quiet: most of the 5-minute volume in scan_movers sits in pump.fun and PumpSwap coins under about 1h old. Two themes are rising. The first is pump.fun self-referential names ("The Pump Fun Star", "I Will Pump It So Hard"), though the STAR and Fun coins have mostly stopped trading. The second is red and pill color names: "red morning" (RM) is the big mover at a $240k cap, $159k 5m volume, 53% buys and +560% in the hour, and "RED COIN" has $10k 5m at 59% buys. Fading: Fun's 5m volume is $64, BP is down 74% with 46% buys, and Bubbles has 7% buys. Setups to research, not buys yet: MarsCoin ($19k cap, $25k 5m, 63% buys, pump.fun) and RED COIN; RM only if it holds after the run, since chase risk is high. The crawler's figures for Fun, BP and RETIRE don't match the scan, so I'm using the scan numbers. Holder, dev and bundle checks still have to run on each coin before any buy (paper only, not advice).
+The trenches are active and young: nearly every mover is under about 1.5h old, and the volume is in pump.fun/PumpSwap coins riffing on whatever is trending. Four themes repeat across several coins: name-drop riffs on people and big names (Lucia Caminos, $486k cap, +1158% in an hour; Doge Jensen, 82% buys), animal and dog riffs (The Black Bear and Snoopy Wif Hat, both with real 5m volume), trending-ticker copies (HYGG riding HYPE, +751% but only 43% buys now, so sellers are taking over), and RWA-style jokes (Real World Asses, 96% buys on $15k 5m at a $126k cap). Fading are the jokey names with no bid (begwork, JOB, mine pad, NUREMBERG, and PerpPairs at zero 5m volume). Setups to research, not buy yet: RWA for its buy pressure (the cleanest flow in the scan), Bear for its volume depth, and Lucia only as a dip watch since it is a chase at this cap; DOJE's $3.4k 5m is below the $10k line. The crawler's red-pill names (RM, RED COIN, MarsCoin) aren't in the scan, so I'm not using them, and holder, dev and bundle checks still have to run on each coin before anything (paper only, not advice).
 
 ## Moving most in its scans, last 30 min (1h volume)
+- USDC: $841,412 1h vol, $226,645 mcap, +279% 1h  
+  CA `Acgs6mb4PC7tQbDm9T4EeTfNx3ZDh5fNSjHcHZQLpump`
 - Bear: $440,979 1h vol, $125,037 mcap, +299% 1h  
   CA `AvRSpY1rPA9iVFxYHc5D5JQW6oU5tjGQZdsW2e5upump`
+- RWA: $202,455 1h vol, $125,758 mcap, +11% 1h  
+  CA `6edJUFSC85CyyLFB1QcCvYu7uzqaD4kV9o5YUPxrpump`
 - SWIF: $189,921 1h vol, $126,227 mcap, +12% 1h  
   CA `Hi6qQHwHBnx9uaxT3KyBxaHaUn4JTAG6ijygQbiopump`
-- Lucia: $161,734 1h vol, $486,056 mcap, +1158% 1h  
-  CA `513YLzsTSHaqXidg6bgDs8LCk5LGixFWcMUTheQVpump`
-- J*B: $76,776 1h vol, $23,340 mcap, -65% 1h  
-  CA `3Kf7Jxy1dB5TH56qFkC6XUW9S3qtMZQJzuUPzbdMpump`
-- mine: $68,004 1h vol, $10,040 mcap, +22% 1h  
-  CA `6akHw4LmWibB1uGhrr4vUf3FKkiK1NVfXVxucEuqmine`
+- DOJE: $178,797 1h vol, $141,322 mcap, +62% 1h  
+  CA `7N2g5tHX2isAXyKmtUek72waREtNKSFuR6KW2xthpump`
