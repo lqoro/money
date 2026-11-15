@@ -1,13 +1,13 @@
 # Trencher live report
 
-Updated 2026-11-15T23:16:38Z (paper trading, never real money)
+Updated 2026-11-15T23:31:40Z (paper trading, never real money)
 
 - Equity: $74.23 (-25.8% vs $100 start)
 - Closed trades: 22, 3 wins
 - Fees paid: $14.78 (axiom $2.81, network $9.18, pool $2.66), plus $4.15 lost to slippage
 - New trades: WATCH-ONLY (scans and decides, buys nothing)
-- Brain: subscription, claude-haiku-5-5 for routine calls, claude-opus-5-5 for the daily review; 170 routine calls and 0 plan-limit hits in 48h
-- Watch log: 121 coins being followed, 1477 filed, 0 would-buys (6h follow, sampled every 2 min)
+- Brain: subscription, claude-haiku-5-5 for routine calls, claude-opus-5-5 for the daily review; 173 routine calls and 0 plan-limit hits in 48h
+- Watch log: 125 coins being followed, 1478 filed, 0 would-buys (6h follow, sampled every 2 min)
 
 ## Scorecard (after fees)
 - 22 closed, 3 won (14%), net $-25.79
@@ -73,9 +73,19 @@ Updated 2026-11-15T23:16:38Z (paper trading, never real money)
   CA `H4gHnZ3NCU7Z9XQwGX6YYJNyieGEW8pqwGRUcdSxpump`
 
 ## Last scan
-- 23:15Z: 3 coins, 3 with pairs, 0 passed the market filters, 0 researched
+- 23:30Z: 5 coins, 5 with pairs, 1 passed the market filters, 1 researched
 
 ## Coins it looked at, and why it passed
+- 23:30Z BJB (DIP, $1,136,228 mcap, $10,741 5m vol): PASS at conviction 3, PASS — Jensen meme 47% off a $2.1M peak, but 5m flow is 0.67x pace, no higher low has printed, the theme runs at 0.65x pace, and it's one of 11 same-ticker copies. Falling knife in a crowded field (V1, V6, V13).  
+  CA `CHuLmJXz8F3YXUyv984PRxeECfSvqD5MZ3W1FoDmpump`
+- 23:27Z AI (MIGRATED, $171,565 mcap, $9,052 5m vol): PASS at conviction 2, PASS: 17 minutes old, up 423% in the hour, flow under pace on a $9k 5m and no printed higher low. Blockers: "too new", "flow below pace", "no higher low". (V1, V6)  
+  CA `GgDHtSGcXn5YrADnpsQSVHFAa5xLwVEuD7FWeRgvpump`
+- 23:22Z WISHMAS (DIP, $183,520 mcap, $2,634 5m vol): REJECT, Dip with fading attention is a falling knife, not a dip (5m at 0.59x the hour's pace, under 0.6x)  
+  CA `9cmXfuC26anZtH9AUWVzpUxU1UJ7PPogYxftYTepump`
+- 23:18Z GATO (DIP, $7,334,977 mcap, $8,900 5m vol): REJECT, Dev holds 3.0% (>1%) (V13, V17)  
+  CA `HsprHxBRgiVaQdRf3TnKNuZZtaX9JUSPgMFdAkk6pump`
+- 23:17Z ANIME (MIGRATED, $68,407 mcap, $30,037 5m vol): PASS at conviction 3, PASS: chasing spike, too new, no higher low. ANIME is 14 minutes old, its last 5m candle is up 126% on 4.1x hourly pace, and there's no base yet. It's also one of 20 anime copies with a 4.1% bundle cluster. (V1, V6, V13)  
+  CA `6XGN3oMrjLuWvDyvHL1VZNNPN5d7dTspD9N7LKjAnime`
 - 23:11Z Rally (FINAL_STRETCH, $22,022 mcap, $2,807 5m vol): REJECT, Top 10 hold 25.4% ex-pool (>25%) (V13)  
   CA `8uwWqV6a8HDmqGjhgY2WewRTKG2zJtznUL5hgTfHpump`
 - 23:07Z GTAVI (MIGRATED, $54,062 mcap, $2,769 5m vol): PASS at conviction 3, PASS: flow below pace (0.07x hourly), no higher low, and the last 15m candles are rolling over from 11.4e-5 to 4.7e-5. Blocker: "flow below pace". Dead tape, not a dip. (V1, V6)  
@@ -86,34 +96,24 @@ Updated 2026-11-15T23:16:38Z (paper trading, never real money)
   CA `EBM6Qa4yJzpyS7xfJueYfMgELRJGWUeaqomWe47Jpump`
 - 23:01Z BUTTHOLE (MIGRATED, $531,669 mcap, $1,486 5m vol): REJECT, 5m volume $1,486 is dead (<$2,000) (V1)  
   CA `4B8CdHPZ8ng1CtMP2Jk2W8wGAwJ5nJnap1deVsz2pump`
-- 22:52Z Socks (MIGRATED, $142,072 mcap, $4,316 5m vol): PASS at conviction 3, PASS — 71% off the 24h peak with no bottom-buy qualifier: the radar never names Socks, no independent catalyst, and 5m flow is a 3x spike on $4.3k. Blocker: "no bottom-buy qualifier." (V1, V6, V13)  
-  CA `FS1pBmZKp2Qw1atC64GoLamHstECAos9ot8bGPgDpump`
-- 22:48Z CBUCKS (MIGRATED, $3,897,077 mcap, $3,200 5m vol): REJECT, Top 10 hold 26.2% ex-pool (>25%) (V13)  
-  CA `DtcicPCKTKeAh7TDEzTym3hXeoHAoMiBdYJhMYxZpump`
-- 22:48Z Retire (MIGRATED, $217,927 mcap, $5,678 5m vol): PASS at conviction 3, PASS: Retire ("Mission Passed"). Flow is at 0.33x its hourly pace, no higher low is printed, and it is 22% off a peak that came after a +515% hour. Blockers: "flow below pace", "no higher low", "no breakout", "theme pace 0.31x" on the bottom-buy gate. (V1, V6)  
-  CA `DQSHcUsHEKKz5gXzpj4Xp3ioEjmfNB5obb3saDFMpump`
-- 22:45Z BJB (MIGRATED, $1,514,908 mcap, $10,024 5m vol): REJECT, Top 10 hold 27.2% ex-pool (>25%) (V13)  
-  CA `CHuLmJXz8F3YXUyv984PRxeECfSvqD5MZ3W1FoDmpump`
-- 22:41Z TITTYVERSE (MIGRATED, $162,437 mcap, $15,699 5m vol): PASS at conviction 4, PASS. TITTYVERSE spiked to $232k and fell 30% in about 12 minutes, with no printed higher low and 5m flow only at 0.97x pace. Wait and see. (V1, V6)  
-  CA `6SAFNdumKYNWVsuM116C7XQSVaJaxkFRbmrxHrNipump`
 
 ## What its skips did next (last 48h)
 A skip "ran" if the coin reached the first target (1.5x) from the skip price before a 20% drop, "dumped" if the drop came first. Sampled every 10 min, followed 6h.
-- flow below pace: blocked 30, ran 4, dumped 20, flat 2, open 4 (saving losses: keep it)
+- flow below pace: blocked 31, ran 5, dumped 21, flat 2, open 3 (saving losses: keep it)
   - ran: PASSED up to 1.73x  
     CA `3XaH8VPUaUegqmnkYA8PXCWqQqD8doqdsGGfZyoYpump`
   - ran: ANT up to 1.52x  
     CA `BDPm9gPHCRyo2qjcRrYPsXexmbRwuuHQZo2qhhYXpump`
   - ran: ANT up to 1.58x  
     CA `7H2sHeLHyHR8jxENGmsqn7RxTkYZa4KwXvKYcoxBpump`
-- top 10 over 25%: blocked 27, ran 5, dumped 15, flat 2, open 5 (saving losses: keep it)
+- top 10 over 25%: blocked 27, ran 5, dumped 16, flat 2, open 4 (saving losses: keep it)
   - ran: rockstar up to 1.95x  
     CA `9HFUEab7sompLDPTAaTGkryMNGbtBaFMhHMVpJEBpump`
   - ran: VI up to 1.71x  
     CA `4Dj8m9vWqu779F1KDBUttvXM8YFm7U92SDpvjBNKtEiB`
   - ran: ANT up to 1.52x  
     CA `BDPm9gPHCRyo2qjcRrYPsXexmbRwuuHQZo2qhhYXpump`
-- too new / sniping: blocked 25, ran 6, dumped 19, flat 0, open 0 (saving losses: keep it)
+- too new / sniping: blocked 27, ran 6, dumped 19, flat 0, open 2 (saving losses: keep it)
   - ran: Chick up to 1.66x  
     CA `Dueav76X9spnoLomhM2jMkkWorVggbeWucLs3YLupump`
   - ran: TOOLS up to 1.83x  
@@ -195,9 +195,9 @@ The scanner's meta is joke names with real buyers, not the GTA story the crawler
   CA `HQjXLbFPkpJP1BmF55DgXj9F6614FURvGLKuyCZQpump`
 - WIGGLES: $245,900 1h vol, $73,067 mcap, +155% 1h  
   CA `2kWx47CUrcXtzptFNnbSXKq3vo1ebqyLBhRytKRGpump`
-- Retire: $206,677 1h vol, $233,492 mcap, +559% 1h  
-  CA `DQSHcUsHEKKz5gXzpj4Xp3ioEjmfNB5obb3saDFMpump`
-- VI: $92,207 1h vol, $3,363 mcap, -32% 1h  
-  CA `3uFUzHuShvm9Mkf2K77DbHrC8eFJBRhqiFz7Y7M1jMVW`
-- Bustas: $83,231 1h vol, $8,687 mcap, -82% 1h  
-  CA `9rTgs58B3p11vXekTTgVYtv8vKxQ6oSoZFXPy4onpump`
+- BJB: $191,968 1h vol, $1,136,228 mcap, -26% 1h  
+  CA `CHuLmJXz8F3YXUyv984PRxeECfSvqD5MZ3W1FoDmpump`
+- GATO: $137,205 1h vol, $7,256,407 mcap, -2% 1h  
+  CA `HsprHxBRgiVaQdRf3TnKNuZZtaX9JUSPgMFdAkk6pump`
+- TITTYVERSE: $135,415 1h vol, $1,360 mcap, -99% 1h  
+  CA `6SAFNdumKYNWVsuM116C7XQSVaJaxkFRbmrxHrNipump`
