@@ -1,13 +1,13 @@
 # Trencher live report
 
-Updated 2026-11-15T10:08:45Z (paper trading, never real money)
+Updated 2026-11-15T10:23:58Z (paper trading, never real money)
 
 - Equity: $74.23 (-25.8% vs $100 start)
 - Closed trades: 22, 3 wins
 - Fees paid: $14.78 (axiom $2.81, network $9.18, pool $2.66), plus $4.15 lost to slippage
 - New trades: WATCH-ONLY (scans and decides, buys nothing)
 - Brain: subscription, claude-haiku-5-5 for routine calls, claude-opus-5-5 for the daily review; 65 routine calls and 0 plan-limit hits in 48h
-- Watch log: 55 coins being followed, 1349 filed, 0 would-buys (6h follow, sampled every 2 min)
+- Watch log: 53 coins being followed, 1352 filed, 0 would-buys (6h follow, sampled every 2 min)
 
 ## Scorecard (after fees)
 - 22 closed, 3 won (14%), net $-25.79
@@ -73,9 +73,11 @@ Updated 2026-11-15T10:08:45Z (paper trading, never real money)
   CA `H4gHnZ3NCU7Z9XQwGX6YYJNyieGEW8pqwGRUcdSxpump`
 
 ## Last scan
-- 10:08Z: 4 coins, 4 with pairs, 0 passed the market filters, 0 researched
+- 10:23Z: 3 coins, 3 with pairs, 0 passed the market filters, 0 researched
 
 ## Coins it looked at, and why it passed
+- 10:21Z GATO (DIP, $6,588,749 mcap, $2,653 5m vol): REJECT, Dev holds 3.0% (>1%) (V13, V17)  
+  CA `HsprHxBRgiVaQdRf3TnKNuZZtaX9JUSPgMFdAkk6pump`
 - 10:07Z PASSED (FINAL_STRETCH, $18,873 mcap, $4,184 5m vol): PASS at conviction 3, PASS: 19 copies of "Mission Passed", the theme is at 0.12x its hourly pace, and 5m flow is $4.2k, under the $10k bar. Split crowd with no leader on flow. (V1, V6, V13)  
   CA `3XaH8VPUaUegqmnkYA8PXCWqQqD8doqdsGGfZyoYpump`
 - 10:05Z Sumi (FINAL_STRETCH, $19,448 mcap, $3,509 5m vol): REJECT, RugCheck danger: Creator history of rugged tokens  
@@ -94,19 +96,19 @@ Updated 2026-11-15T10:08:45Z (paper trading, never real money)
   CA `CU6twK3evciYpdtf9xiiahxwV2tNd9FGoGjL6ewVpump`
 - 09:33Z PAW (MIGRATED, $101,011 mcap, $15,019 5m vol): PASS at conviction 4, PASS: PAW is a 31% dip on a theme running at 0.89x its hourly pace with no catalyst I can name, and the owner's bottom-buy gate blocks it. Blocker: "theme flow below pace / no catalyst" (V1, V6).  
   CA `HxPrDS84HH3ijsJhiCLF55MN7DqLfxzbt99RnSuSpump`
-- 09:19Z Sumi (FINAL_STRETCH, $18,081 mcap, $7,292 5m vol): REJECT, RugCheck danger: Creator history of rugged tokens  
-  CA `HvA8a4C1KAXfrZMnmd1VyvLh21HzMvr4rjUtxiezpump`
 
 ## What its skips did next (last 48h)
 A skip "ran" if the coin reached the first target (1.5x) from the skip price before a 20% drop, "dumped" if the drop came first. Sampled every 10 min, followed 6h.
-- RugCheck danger: blocked 15, ran 4, dumped 9, flat 1, open 1 (saving losses: keep it)
+- RugCheck danger: blocked 15, ran 4, dumped 10, flat 1, open 0 (saving losses: keep it)
   - ran: Ivy up to 1.88x  
     CA `DxNF3Qxd8XeUBdz7ReRdoiFzRmNDKbSz4c2oA7aRpump`
   - ran: SI up to 1.93x  
     CA `AiQUqe4zjiDssth2FsCoeQVaGtCtHYyKGX8U52rWpump`
   - ran: FUTA up to 2.77x  
     CA `FxoXV4C8DTSYeg5dSXrEsr45zzr8tpNbsrpoiZ8Kpump`
-- top 10 over 25%: blocked 10, ran 0, dumped 7, flat 1, open 2 (saving losses: keep it)
+- top 10 over 25%: blocked 10, ran 1, dumped 7, flat 1, open 1 (saving losses: keep it)
+  - ran: FUTA up to 1.51x  
+    CA `8JCsa61htnPj2af7g1KSyU1UEncruHE1Ph9aNR6rpump`
 - flow below pace: blocked 8, ran 0, dumped 4, flat 1, open 3 (saving losses: keep it)
 - too new / sniping: blocked 6, ran 2, dumped 4, flat 0, open 0 (saving losses: keep it)
   - ran: Chick up to 1.66x  
@@ -171,8 +173,8 @@ Not quiet. About half of scan_movers is under two hours old, and the live flow i
   CA `HvA8a4C1KAXfrZMnmd1VyvLh21HzMvr4rjUtxiezpump`
 - Socks: $120,841 1h vol, $43,614 mcap, +45% 1h  
   CA `FS1pBmZKp2Qw1atC64GoLamHstECAos9ot8bGPgDpump`
-- dragoncat: $55,198 1h vol, $19,801 mcap, +711% 1h  
-  CA `3nbHBkEDdbPiF5zJMhsxucm25V6UHKv9BVQuTKJVpump`
+- NCAT: $103,738 1h vol, $7,633 mcap, +64% 1h  
+  CA `CU6twK3evciYpdtf9xiiahxwV2tNd9FGoGjL6ewVpump`
 - HOGE: $45,722 1h vol, $50,982 mcap, -25% 1h  
   CA `FVzqGqRmr4UH1Fif6dewmwbJ1p4YUZCu8dcw4Efopump`
 - PASSED: $43,676 1h vol, $18,873 mcap, +128% 1h  
