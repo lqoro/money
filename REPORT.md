@@ -1,6 +1,6 @@
 # Trencher live report
 
-Updated 2026-11-15T04:20:21Z (paper trading, never real money)
+Updated 2026-11-15T04:35:35Z (paper trading, never real money)
 
 - Equity: $74.23 (-25.8% vs $100 start)
 - Closed trades: 22, 3 wins
@@ -73,7 +73,7 @@ Updated 2026-11-15T04:20:21Z (paper trading, never real money)
   CA `H4gHnZ3NCU7Z9XQwGX6YYJNyieGEW8pqwGRUcdSxpump`
 
 ## Last scan
-- 04:19Z: 0 coins, 0 with pairs, 0 passed the market filters, 0 researched
+- 04:35Z: 5 coins, 5 with pairs, 0 passed the market filters, 0 researched
 
 ## Coins it looked at, and why it passed
 - 04:18Z penny (MIGRATED, $85,233 mcap, $3,769 5m vol): PASS at conviction 2, PASS: 5m flow is at 0.16x the hourly pace and the coin is one of 13 "penny" copies with a 9.5% bundle cluster. No printed higher low. (V1, V6, V3)  
@@ -107,7 +107,7 @@ A skip "ran" if the coin reached the first target (1.5x) from the skip price bef
   - ran: MIL up to 1.71x  
     CA `8655LtfvozXLSJWrzcmwVeK13s5Gvn49UXFHYcYzpump`
 - top 10 over 25%: blocked 6, ran 0, dumped 5, flat 0, open 1 (saving losses: keep it)
-- flow below pace: blocked 5, ran 0, dumped 3, flat 0, open 2 (saving losses: keep it)
+- flow below pace: blocked 5, ran 0, dumped 4, flat 0, open 1 (saving losses: keep it)
 - falling knife (code): blocked 4, ran 0, dumped 3, flat 0, open 1 (saving losses: keep it)
 - too new / sniping: blocked 3, ran 0, dumped 2, flat 0, open 1 (too few played out to judge)
 - thin 5m volume: blocked 3, ran 0, dumped 3, flat 0, open 0 (saving losses: keep it)
@@ -165,5 +165,5 @@ The trenches are not quiet. Three themes show up across several scan_movers coin
   CA `CiMyaPC9icicJxkFqvqpgL2YT2FjEQmGx1YVdG78pump`
 - GATO: $114,540 1h vol, $7,028,724 mcap, -1% 1h  
   CA `HsprHxBRgiVaQdRf3TnKNuZZtaX9JUSPgMFdAkk6pump`
-- MIL: $69,169 1h vol, $22,432 mcap, +605% 1h  
-  CA `8655LtfvozXLSJWrzcmwVeK13s5Gvn49UXFHYcYzpump`
+- BOWSER: $57,175 1h vol, $5,779 mcap, +138% 1h  
+  CA `E8BkLUzT3vzQHd5Ub8KrMv1XTtUzMY2vQgNvGmFNpump`
