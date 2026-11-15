@@ -1,13 +1,13 @@
 # Trencher live report
 
-Updated 2026-11-15T12:25:04Z (paper trading, never real money)
+Updated 2026-11-15T12:40:07Z (paper trading, never real money)
 
 - Equity: $74.23 (-25.8% vs $100 start)
 - Closed trades: 22, 3 wins
 - Fees paid: $14.78 (axiom $2.81, network $9.18, pool $2.66), plus $4.15 lost to slippage
 - New trades: WATCH-ONLY (scans and decides, buys nothing)
-- Brain: subscription, claude-haiku-5-5 for routine calls, claude-opus-5-5 for the daily review; 75 routine calls and 0 plan-limit hits in 48h
-- Watch log: 48 coins being followed, 1369 filed, 0 would-buys (6h follow, sampled every 2 min)
+- Brain: subscription, claude-haiku-5-5 for routine calls, claude-opus-5-5 for the daily review; 76 routine calls and 0 plan-limit hits in 48h
+- Watch log: 49 coins being followed, 1370 filed, 0 would-buys (6h follow, sampled every 2 min)
 
 ## Scorecard (after fees)
 - 22 closed, 3 won (14%), net $-25.79
@@ -73,9 +73,13 @@ Updated 2026-11-15T12:25:04Z (paper trading, never real money)
   CA `H4gHnZ3NCU7Z9XQwGX6YYJNyieGEW8pqwGRUcdSxpump`
 
 ## Last scan
-- 12:24Z: 3 coins, 3 with pairs, 0 passed the market filters, 0 researched
+- 12:39Z: 10 coins, 10 with pairs, 0 passed the market filters, 0 researched
 
 ## Coins it looked at, and why it passed
+- 12:38Z GATO (DIP, $6,964,318 mcap, $3,615 5m vol): REJECT, Dev holds 3.0% (>1%) (V13, V17)  
+  CA `HsprHxBRgiVaQdRf3TnKNuZZtaX9JUSPgMFdAkk6pump`
+- 12:33Z SLIDES (DIP, $30,872 mcap, $2,026 5m vol): PASS at conviction 2, PASS: SLIDES is a DIP on a fading joke-cluster story with no catalyst, $2k 5m flow, and top 10 at 22.4%. Blocker: "no catalyst / narrative fading" (V1, V6, V13).  
+  CA `8JNcbK2bWFxQnZsR6xQtgB3en7DcFSXW5xSyh6fYpump`
 - 12:16Z GETAJOB (MIGRATED, $719,028 mcap, $4,071 5m vol): PASS at conviction 3, PASS: GETAJOB is 3.4% off its $745k high with 5m flow at 0.59x its hourly pace and no printed higher low. Chasing a top on a dead joke with an AI LARP claim. (V1, V6)  
   CA `ZGW9B644VgfmmKtBTv1xjWGarkjEhFrcUrQEaqepump`
 - 12:15Z Socks (MIGRATED, $347,035 mcap, $14,033 5m vol): PASS at conviction 3, PASS: flow below pace, no printed higher low, and the last 15m candle collapsed. Socks is a card-spend fintech with no meme idea. (V1, V6)  
@@ -92,10 +96,6 @@ Updated 2026-11-15T12:25:04Z (paper trading, never real money)
   CA `9Ei1d97U7M8m4t3fof7c8MUECtmzgqbQCo81cGGzpump`
 - 11:29Z Socks (MIGRATED, $364,215 mcap, $63,828 5m vol): PASS at conviction 4, PASS: mid-range, no catalyst, and it's a card product with no meme. The 5m flow is fine. The entry is not. (V1, V6)  
   CA `FS1pBmZKp2Qw1atC64GoLamHstECAos9ot8bGPgDpump`
-- 11:21Z poorcat (DIP, $79,256 mcap, $2,629 5m vol): REJECT, Top 10 hold 25.2% ex-pool (>25%) (V13)  
-  CA `G8Yp5m5VmBTh1myNUyoy1Gb7uY6ek3jkcTkYGxE8jQLN`
-- 11:09Z GETAJOB (MIGRATED, $575,595 mcap, $5,998 5m vol): PASS at conviction 3, PASS — target too close and no breakout. The 24h high is only 1.13x away, 5m flow is flat, and the "AI gets it wrong" joke has no radar mentions behind it. Clean holders don't make up for that (V6, V3).  
-  CA `ZGW9B644VgfmmKtBTv1xjWGarkjEhFrcUrQEaqepump`
 
 ## What its skips did next (last 48h)
 A skip "ran" if the coin reached the first target (1.5x) from the skip price before a 20% drop, "dumped" if the drop came first. Sampled every 10 min, followed 6h.
@@ -121,16 +121,16 @@ A skip "ran" if the coin reached the first target (1.5x) from the skip price bef
   - ran: TOOLS up to 1.83x  
     CA `9Ei1d97U7M8m4t3fof7c8MUECtmzgqbQCo81cGGzpump`
 - falling knife (code): blocked 4, ran 0, dumped 4, flat 0, open 0 (saving losses: keep it)
+- crowd leaving / fading volume: blocked 4, ran 1, dumped 2, flat 0, open 1 (saving losses: keep it)
+  - ran: NUREMBERG up to 1.62x  
+    CA `7R3RnGmpV9mZXwSyHyKN5LEddiZRmGsYrAZPgDJqpump`
 - falling knife / no higher low: blocked 4, ran 1, dumped 0, flat 3, open 0 (too few played out to judge)
   - ran: CateGiving up to 1.57x  
     CA `5XasjCnMPTczL9VZTDHgbK5sQzwkjnu41oLeHf5Wpump`
-- crowd leaving / fading volume: blocked 3, ran 1, dumped 2, flat 0, open 0 (saving losses: keep it)
-  - ran: NUREMBERG up to 1.62x  
-    CA `7R3RnGmpV9mZXwSyHyKN5LEddiZRmGsYrAZPgDJqpump`
 - other: blocked 3, ran 1, dumped 2, flat 0, open 0 (saving losses: keep it)
   - ran: TaoTao up to 1.53x  
     CA `G1KuEMuLrxWynFddQVnpdkQAhYFBwNJiuz1Lv7d9pump`
-- dev share over 1%: blocked 2, ran 1, dumped 0, flat 1, open 0 (too few played out to judge)
+- dev share over 1%: blocked 2, ran 1, dumped 0, flat 0, open 1 (too few played out to judge)
   - ran: PANICSELL up to 1.74x  
     CA `82Z6CcE5g3o1jW3vgtcqr95jP4XFx8jg1SJe8ikepump`
 
@@ -175,11 +175,11 @@ Not quiet. Three coins clear the $10k 5-minute bar on scan_movers (Socks $63.8k,
 ## Moving most in its scans, last 30 min (1h volume)
 - Socks: $454,838 1h vol, $337,734 mcap, -5% 1h  
   CA `FS1pBmZKp2Qw1atC64GoLamHstECAos9ot8bGPgDpump`
+- Gomez: $84,231 1h vol, $17,852 mcap, -36% 1h  
+  CA `GmbC342to7Lab7LEh4aqkEY5mfCVbfDvs1X5TB8epump`
 - GETAJOB: $82,831 1h vol, $719,028 mcap, +39% 1h  
   CA `ZGW9B644VgfmmKtBTv1xjWGarkjEhFrcUrQEaqepump`
-- TOOLS: $54,326 1h vol, $1,910 mcap, -93% 1h  
+- TOOLS: $55,502 1h vol, $2,481 mcap, -91% 1h  
   CA `9Ei1d97U7M8m4t3fof7c8MUECtmzgqbQCo81cGGzpump`
-- PEARL: $52,170 1h vol, $13,778 mcap, +432% 1h  
-  CA `gupczrr4u7wkyCQq9xTm4Rfc14NYxuCMpX4Rfpapump`
-- Oli: $45,413 1h vol, $16,017 mcap, +551% 1h  
-  CA `8LBTmVfJxpjBDeggCdABThUrL6k67Q5XaEgEcoDoPMsG`
+- GATO: $45,449 1h vol, $6,968,256 mcap, +1% 1h  
+  CA `HsprHxBRgiVaQdRf3TnKNuZZtaX9JUSPgMFdAkk6pump`
