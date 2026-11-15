@@ -1,13 +1,13 @@
 # Trencher live report
 
-Updated 2026-11-15T20:45:16Z (paper trading, never real money)
+Updated 2026-11-15T21:00:19Z (paper trading, never real money)
 
 - Equity: $74.23 (-25.8% vs $100 start)
 - Closed trades: 22, 3 wins
 - Fees paid: $14.78 (axiom $2.81, network $9.18, pool $2.66), plus $4.15 lost to slippage
 - New trades: WATCH-ONLY (scans and decides, buys nothing)
 - Brain: subscription, claude-haiku-5-5 for routine calls, claude-opus-5-5 for the daily review; 138 routine calls and 0 plan-limit hits in 48h
-- Watch log: 101 coins being followed, 1443 filed, 0 would-buys (6h follow, sampled every 2 min)
+- Watch log: 98 coins being followed, 1447 filed, 0 would-buys (6h follow, sampled every 2 min)
 
 ## Scorecard (after fees)
 - 22 closed, 3 won (14%), net $-25.79
@@ -73,9 +73,11 @@ Updated 2026-11-15T20:45:16Z (paper trading, never real money)
   CA `H4gHnZ3NCU7Z9XQwGX6YYJNyieGEW8pqwGRUcdSxpump`
 
 ## Last scan
-- 20:45Z: 5 coins, 4 with pairs, 0 passed the market filters, 0 researched
+- 20:59Z: 4 coins, 3 with pairs, 0 passed the market filters, 0 researched
 
 ## Coins it looked at, and why it passed
+- 20:57Z PURR (MIGRATED, $2,320,065 mcap, $5,732 5m vol): REJECT, Top 10 hold 26.6% ex-pool (>25%) (V13)  
+  CA `8RNUw4N655VSrZKuhGdywhbSMDTrheguFPfxbpE2NZHQ`
 - 20:42Z NCAT (DIP, $49,156 mcap, $35,330 5m vol): PASS at conviction 3, PASS — NVIDIA Cat is the leader of a cat/NVIDIA theme running at 0.41x its hourly pace, and I found no catalyst. A bottom buy needs both. Clean holders don't change that (V1, V6).  
   CA `Cxrw8hPBcbboL18wLhHJCt1CfLe3JSdfofLrZ8ABpump`
 - 20:41Z FRANK (FINAL_STRETCH, $27,475 mcap, $26,525 5m vol): PASS at conviction 2, PASS: chasing spike, one minute old, CA not on the project's site. Blocker "chasing spike" plus "too new". Farm until proven otherwise (V1, V3, V6, V13).  
@@ -94,19 +96,17 @@ Updated 2026-11-15T20:45:16Z (paper trading, never real money)
   CA `6wnMkKcJTsvFy2ksWeKopm9YMs2Xpy4jSHuQB12Mpump`
 - 20:35Z TAIL (MIGRATED, $131,810 mcap, $13,264 5m vol): PASS at conviction 3, PASS: target too close (prior high $168k is only 1.28x from $131.8k), a 15.7% single bundle cluster, and a 0.8-day-old site that doesn't show the CA. Farm pitch. (V3, V6, V13)  
   CA `2tHPtosmh76mmJHeskid7nYUeHjGUQ4ZAYChwdGJpump`
-- 20:34Z BUTTHOLE (DIP, $276,981 mcap, $8,065 5m vol): PASS at conviction 3, PASS: no catalyst, the story isn't on the radar, and no higher low has printed on a 67% drawdown. Blocker: "no catalyst" / "dead story". (V1, V6, V13)  
-  CA `4B8CdHPZ8ng1CtMP2Jk2W8wGAwJ5nJnap1deVsz2pump`
 
 ## What its skips did next (last 48h)
 A skip "ran" if the coin reached the first target (1.5x) from the skip price before a 20% drop, "dumped" if the drop came first. Sampled every 10 min, followed 6h.
-- flow below pace: blocked 25, ran 3, dumped 15, flat 2, open 5 (saving losses: keep it)
+- flow below pace: blocked 25, ran 4, dumped 16, flat 2, open 3 (saving losses: keep it)
   - ran: PASSED up to 1.73x  
     CA `3XaH8VPUaUegqmnkYA8PXCWqQqD8doqdsGGfZyoYpump`
   - ran: ANT up to 1.52x  
     CA `BDPm9gPHCRyo2qjcRrYPsXexmbRwuuHQZo2qhhYXpump`
   - ran: ANT up to 1.58x  
     CA `7H2sHeLHyHR8jxENGmsqn7RxTkYZa4KwXvKYcoxBpump`
-- top 10 over 25%: blocked 22, ran 4, dumped 14, flat 1, open 3 (saving losses: keep it)
+- top 10 over 25%: blocked 23, ran 4, dumped 14, flat 2, open 3 (saving losses: keep it)
   - ran: rockstar up to 1.95x  
     CA `9HFUEab7sompLDPTAaTGkryMNGbtBaFMhHMVpJEBpump`
   - ran: VI up to 1.71x  
@@ -120,7 +120,7 @@ A skip "ran" if the coin reached the first target (1.5x) from the skip price bef
     CA `AiQUqe4zjiDssth2FsCoeQVaGtCtHYyKGX8U52rWpump`
   - ran: FUTA up to 2.77x  
     CA `FxoXV4C8DTSYeg5dSXrEsr45zzr8tpNbsrpoiZ8Kpump`
-- too new / sniping: blocked 19, ran 3, dumped 13, flat 0, open 3 (saving losses: keep it)
+- too new / sniping: blocked 19, ran 5, dumped 13, flat 0, open 1 (saving losses: keep it)
   - ran: Chick up to 1.66x  
     CA `Dueav76X9spnoLomhM2jMkkWorVggbeWucLs3YLupump`
   - ran: TOOLS up to 1.83x  
@@ -141,9 +141,11 @@ A skip "ran" if the coin reached the first target (1.5x) from the skip price bef
 - crowd leaving / fading volume: blocked 5, ran 1, dumped 4, flat 0, open 0 (saving losses: keep it)
   - ran: NUREMBERG up to 1.62x  
     CA `7R3RnGmpV9mZXwSyHyKN5LEddiZRmGsYrAZPgDJqpump`
-- falling knife / no higher low: blocked 5, ran 1, dumped 0, flat 3, open 1 (too few played out to judge)
+- falling knife / no higher low: blocked 5, ran 2, dumped 0, flat 3, open 0 (too few played out to judge)
   - ran: CateGiving up to 1.57x  
     CA `5XasjCnMPTczL9VZTDHgbK5sQzwkjnu41oLeHf5Wpump`
+  - ran: BUTTHOLE up to 2.04x  
+    CA `4B8CdHPZ8ng1CtMP2Jk2W8wGAwJ5nJnap1deVsz2pump`
 - bundles over the line: blocked 5, ran 1, dumped 2, flat 0, open 2 (saving losses: keep it)
   - ran: gtacoin up to 1.64x  
     CA `DSKM3d518BBaQShSKqaqZcG1XMRf81UFB6a1eavhSTNK`
@@ -187,13 +189,13 @@ Nothing shows a positive after-cost edge. Across all 93 settled coins the simple
 Not quiet. The meta on the scan is AI-lab puns and cat animals, both with real volume. ANT (Anthropic, $264k cap, $11k 5m, 90% buys, +92% 1h), Anthropig and NVIDIA Cat (NCAT, $55k cap, $26k 5m) ride AI-company names, and MEIMEI (The Retarded Cat, $20.7k 5m, +1151% 1h) runs the animal lane. Chinese-language puns are split: NINU ($75k cap, $15k 5m, 65% buys) still has buyers, while NIBULL is dead at $7 of 5m volume. The holiday play is fading (The Xmas Bull, $2.5k 5m). Setups to research: ANT first, after confirming the original CA because two tokens share the ticker; NCAT as the cat-plus-NVIDIA cross; and DacityCoin (DYC) only after bundle and farm checks, since $215k 5m on a $101k cap is over 2x turnover (V13). RUDOLPH, Banana and BFS from the web brief don't appear in the scan, so they're unverified and not setups here, and no hack-named coins are included. Paper only, not advice.
 
 ## Moving most in its scans, last 30 min (1h volume)
-- DYC: $717,668 1h vol, $90,555 mcap, -30% 1h  
-  CA `Da5Gbwd8GCuKwd5fv4pk7bBh12UKjUg5iH3VthDWCity`
 - NCAT: $274,323 1h vol, $46,622 mcap, +37% 1h  
   CA `Cxrw8hPBcbboL18wLhHJCt1CfLe3JSdfofLrZ8ABpump`
-- ANT: $204,991 1h vol, $172,505 mcap, +77% 1h  
-  CA `7H2sHeLHyHR8jxENGmsqn7RxTkYZa4KwXvKYcoxBpump`
 - VICE: $136,054 1h vol, $171,991 mcap, +382% 1h  
   CA `CnXTC8NutHZq2zaPqYz6bxuLYnq775EnvUBHjRqxpump`
-- ANT: $117,350 1h vol, $1,358 mcap, -100% 1h  
-  CA `BDPm9gPHCRyo2qjcRrYPsXexmbRwuuHQZo2qhhYXpump`
+- CRIMECAT: $107,801 1h vol, $4,964 mcap, +25% 1h  
+  CA `ff5rD21oxjMznMZbmXoJWrrhcZtJVJQ2vgjeDYbpump`
+- HENSEN: $106,608 1h vol, $63,993 mcap, +78% 1h  
+  CA `FfXDcTtDk5tzETc9QGRsy8ZSV2TGm4DXXpHXpjVVpump`
+- Emojis: $91,842 1h vol, $468,173 mcap, +892% 1h  
+  CA `5yXxVaEA4mE9Xi5qJJwBqPNj192S2xaHrQBo3R3Xpump`
