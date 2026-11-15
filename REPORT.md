@@ -1,13 +1,13 @@
 # Trencher live report
 
-Updated 2026-11-15T13:25:40Z (paper trading, never real money)
+Updated 2026-11-15T13:40:45Z (paper trading, never real money)
 
 - Equity: $74.23 (-25.8% vs $100 start)
 - Closed trades: 22, 3 wins
 - Fees paid: $14.78 (axiom $2.81, network $9.18, pool $2.66), plus $4.15 lost to slippage
 - New trades: WATCH-ONLY (scans and decides, buys nothing)
 - Brain: subscription, claude-haiku-5-5 for routine calls, claude-opus-5-5 for the daily review; 79 routine calls and 0 plan-limit hits in 48h
-- Watch log: 48 coins being followed, 1379 filed, 0 would-buys (6h follow, sampled every 2 min)
+- Watch log: 50 coins being followed, 1380 filed, 0 would-buys (6h follow, sampled every 2 min)
 
 ## Scorecard (after fees)
 - 22 closed, 3 won (14%), net $-25.79
@@ -73,9 +73,15 @@ Updated 2026-11-15T13:25:40Z (paper trading, never real money)
   CA `H4gHnZ3NCU7Z9XQwGX6YYJNyieGEW8pqwGRUcdSxpump`
 
 ## Last scan
-- 13:24Z: 4 coins, 4 with pairs, 0 passed the market filters, 0 researched
+- 13:40Z: 3 coins, 3 with pairs, 0 passed the market filters, 0 researched
 
 ## Coins it looked at, and why it passed
+- 13:39Z SDEX (MIGRATED, $1,309,704 mcap, $23,066 5m vol): REJECT, RugCheck danger: Top 10 holders high ownership  
+  CA `J1sHNawTwQrRCga3w5uREEwTbrDZKT5j6WobLQKZSDEX`
+- 13:35Z DIGS (MIGRATED, $143,004 mcap, $2,204 5m vol): REJECT, Bundles: 10 linked wallet cluster(s) hold 100.0% of supply (>20%) (V17)  
+  CA `9QT8K685Hrae4k11dhGXirdtpfAaimExtyfwt8cPpump`
+- 13:32Z gtacoin (MIGRATED, $366,232 mcap, $3,028 5m vol): REJECT, Bundles: 6 linked wallet cluster(s) hold 96.9% of supply (>20%) (V17)  
+  CA `DSKM3d518BBaQShSKqaqZcG1XMRf81UFB6a1eavhSTNK`
 - 13:23Z GATO (DIP, $6,842,114 mcap, $2,408 5m vol): REJECT, Dip with fading attention is a falling knife, not a dip (5m at 0.57x the hour's pace, under 0.6x)  
   CA `HsprHxBRgiVaQdRf3TnKNuZZtaX9JUSPgMFdAkk6pump`
 - 13:15Z PNUT (MIGRATED, $38,506 mcap, $32,611 5m vol): PASS at conviction 3, PASS: chasing spike. PNUT is 3 minutes old, up 30% on 5m at 12x its hourly pace, with no printed higher low and a 16-copy farm field splitting the crowd. Blockers: "chasing spike", "too new", "split crowd" (V1, V3, V6).  
@@ -90,12 +96,6 @@ Updated 2026-11-15T13:25:40Z (paper trading, never real money)
   CA `7eM3RsKhCCgBTVFeCrbHTtKuuSYewKbp4oUQWzavpump`
 - 12:54Z SDEX (MIGRATED, $1,106,905 mcap, $11,115 5m vol): REJECT, RugCheck danger: Top 10 holders high ownership  
   CA `J1sHNawTwQrRCga3w5uREEwTbrDZKT5j6WobLQKZSDEX`
-- 12:49Z DIGS (MIGRATED, $148,137 mcap, $3,751 5m vol): REJECT, Bundles: 10 linked wallet cluster(s) hold 100.0% of supply (>20%) (V17)  
-  CA `9QT8K685Hrae4k11dhGXirdtpfAaimExtyfwt8cPpump`
-- 12:38Z GATO (DIP, $6,964,318 mcap, $3,615 5m vol): REJECT, Dev holds 3.0% (>1%) (V13, V17)  
-  CA `HsprHxBRgiVaQdRf3TnKNuZZtaX9JUSPgMFdAkk6pump`
-- 12:33Z SLIDES (DIP, $30,872 mcap, $2,026 5m vol): PASS at conviction 2, PASS: SLIDES is a DIP on a fading joke-cluster story with no catalyst, $2k 5m flow, and top 10 at 22.4%. Blocker: "no catalyst / narrative fading" (V1, V6, V13).  
-  CA `8JNcbK2bWFxQnZsR6xQtgB3en7DcFSXW5xSyh6fYpump`
 
 ## What its skips did next (last 48h)
 A skip "ran" if the coin reached the first target (1.5x) from the skip price before a 20% drop, "dumped" if the drop came first. Sampled every 10 min, followed 6h.
@@ -106,9 +106,11 @@ A skip "ran" if the coin reached the first target (1.5x) from the skip price bef
     CA `AiQUqe4zjiDssth2FsCoeQVaGtCtHYyKGX8U52rWpump`
   - ran: FUTA up to 2.77x  
     CA `FxoXV4C8DTSYeg5dSXrEsr45zzr8tpNbsrpoiZ8Kpump`
-- top 10 over 25%: blocked 14, ran 1, dumped 9, flat 1, open 3 (saving losses: keep it)
+- top 10 over 25%: blocked 14, ran 2, dumped 9, flat 2, open 1 (saving losses: keep it)
   - ran: FUTA up to 1.51x  
     CA `8JCsa61htnPj2af7g1KSyU1UEncruHE1Ph9aNR6rpump`
+  - ran: twert up to 1.98x  
+    CA `8WvWwttzaLfW1nbjx6wmYL5jozWpvy95WktAg5cipump`
 - flow below pace: blocked 10, ran 1, dumped 6, flat 2, open 1 (saving losses: keep it)
   - ran: PASSED up to 1.73x  
     CA `3XaH8VPUaUegqmnkYA8PXCWqQqD8doqdsGGfZyoYpump`
@@ -127,10 +129,10 @@ A skip "ran" if the coin reached the first target (1.5x) from the skip price bef
 - falling knife / no higher low: blocked 4, ran 1, dumped 0, flat 3, open 0 (too few played out to judge)
   - ran: CateGiving up to 1.57x  
     CA `5XasjCnMPTczL9VZTDHgbK5sQzwkjnu41oLeHf5Wpump`
+- bundles over the line: blocked 4, ran 0, dumped 2, flat 0, open 2 (too few played out to judge)
 - other: blocked 3, ran 1, dumped 2, flat 0, open 0 (saving losses: keep it)
   - ran: TaoTao up to 1.53x  
     CA `G1KuEMuLrxWynFddQVnpdkQAhYFBwNJiuz1Lv7d9pump`
-- bundles over the line: blocked 3, ran 0, dumped 2, flat 0, open 1 (too few played out to judge)
 
 ## Daily review (2026-11-15, claude-opus-5-5)
 Nothing shows a positive after-cost edge. Across all 93 settled coins the simple plan nets -5.5%: about +4.3% before costs, wiped out by an estimated 9.8% round-trip cost on a $10 buy. With a 1.5x target, a -20% stop and 10% cost, a setup needs about 43% of coins to run just to break even. FINAL_STRETCH (n=20) sits at 45% and nets +1.5%, but its 95% range on that share is roughly 23-67%, and one winner turning into a loser moves the average by about 3 points. That result is probably optimistic anyway: the simulator appears to fill every stop at exactly -20%, while several coins in the logs went to about zero. The routine model logged zero would-buys in 24h (39 brain calls, all PASS), so there is nothing to compare against what it passed on. Its PASSed coins did better than the checklist failures (-3.3% vs -7.1% net), but both groups lose money. Honest answer: no edge yet, and one day of correlated samples can't show one.
@@ -171,13 +173,13 @@ Nothing shows a positive after-cost edge. Across all 93 settled coins the simple
 Not quiet: three movers clear the $10k 5-minute bar in the scan data (hermano $16.7k, PEER $13.3k, SDEX $11.1k). The crawler's Socks, Gomez at $42.9k and Tools at $14.3k figures don't match scan_movers (Gomez is $1.6k 5m, Tools $0), so I ignored them. The live theme is fresh sub-$25k pump.fun launches under an hour old with 59-61% buy ratios (hermano, BITLY, PEER), while the cat theme is fading (GATO flat on $3.1k 5m at $7M, poorcat thin at $294 5m) and joke-named launches that pumped earlier are dumping (Buttom -72%, Tools -85% with zero 5m buys, Gomez -35%). The news narratives (Binance-hack laundering, Trump coin collapse, DOGE -40%) are cooling, so attention is on new names, not stories. Setups to research, not chase: SDEX is the cleanest (Raydium, $1.1M, 69% buys, passes the recon filters); hermano and PEER only after full holder, dev and bundle checks, since they are minutes old on the curve. Nothing is verified; paper only, not advice.
 
 ## Moving most in its scans, last 30 min (1h volume)
-- rockstar: $97,915 1h vol, $93,650 mcap, +43% 1h  
-  CA `9HFUEab7sompLDPTAaTGkryMNGbtBaFMhHMVpJEBpump`
+- SDEX: $326,204 1h vol, $1,309,705 mcap, +22% 1h  
+  CA `J1sHNawTwQrRCga3w5uREEwTbrDZKT5j6WobLQKZSDEX`
+- PEER: $53,567 1h vol, $1,854 mcap, -93% 1h  
+  CA `B7kJAxdv9DsHzPNHKaKCnaEiUiEy7VYCeFbqiWoCpump`
 - GATO: $51,343 1h vol, $6,853,974 mcap, -1% 1h  
   CA `HsprHxBRgiVaQdRf3TnKNuZZtaX9JUSPgMFdAkk6pump`
-- PEER: $49,919 1h vol, $1,959 mcap, -93% 1h  
-  CA `B7kJAxdv9DsHzPNHKaKCnaEiUiEy7VYCeFbqiWoCpump`
-- pls: $48,323 1h vol, $22,980 mcap, +834% 1h  
-  CA `3Ev32Ns2fkfEppgYnskq6rDL5TfXfjhtEXWkPz2Vpump`
-- Buttom: $47,981 1h vol, $6,172 mcap, -78% 1h  
+- Buttom: $50,212 1h vol, $3,032 mcap, -89% 1h  
   CA `4D1npvfDzsyb3HVTTK1j2RCqnMCzt5Y7RVS1zY7Fpump`
+- gtacoin: $42,092 1h vol, $366,232 mcap, +6% 1h  
+  CA `DSKM3d518BBaQShSKqaqZcG1XMRf81UFB6a1eavhSTNK`
