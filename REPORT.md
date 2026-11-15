@@ -1,13 +1,13 @@
 # Trencher live report
 
-Updated 2026-11-15T11:09:28Z (paper trading, never real money)
+Updated 2026-11-15T11:24:42Z (paper trading, never real money)
 
 - Equity: $74.23 (-25.8% vs $100 start)
 - Closed trades: 22, 3 wins
 - Fees paid: $14.78 (axiom $2.81, network $9.18, pool $2.66), plus $4.15 lost to slippage
 - New trades: WATCH-ONLY (scans and decides, buys nothing)
 - Brain: subscription, claude-haiku-5-5 for routine calls, claude-opus-5-5 for the daily review; 68 routine calls and 0 plan-limit hits in 48h
-- Watch log: 52 coins being followed, 1356 filed, 0 would-buys (6h follow, sampled every 2 min)
+- Watch log: 50 coins being followed, 1359 filed, 0 would-buys (6h follow, sampled every 2 min)
 
 ## Scorecard (after fees)
 - 22 closed, 3 won (14%), net $-25.79
@@ -73,9 +73,11 @@ Updated 2026-11-15T11:09:28Z (paper trading, never real money)
   CA `H4gHnZ3NCU7Z9XQwGX6YYJNyieGEW8pqwGRUcdSxpump`
 
 ## Last scan
-- 11:08Z: 5 coins, 5 with pairs, 1 passed the market filters, 1 researched
+- 11:24Z: 6 coins, 6 with pairs, 0 passed the market filters, 0 researched
 
 ## Coins it looked at, and why it passed
+- 11:21Z poorcat (DIP, $79,256 mcap, $2,629 5m vol): REJECT, Top 10 hold 25.2% ex-pool (>25%) (V13)  
+  CA `G8Yp5m5VmBTh1myNUyoy1Gb7uY6ek3jkcTkYGxE8jQLN`
 - 11:09Z GETAJOB (MIGRATED, $575,595 mcap, $5,998 5m vol): PASS at conviction 3, PASS — target too close and no breakout. The 24h high is only 1.13x away, 5m flow is flat, and the "AI gets it wrong" joke has no radar mentions behind it. Clean holders don't make up for that (V6, V3).  
   CA `ZGW9B644VgfmmKtBTv1xjWGarkjEhFrcUrQEaqepump`
 - 11:06Z GATO (DIP, $6,662,432 mcap, $2,493 5m vol): REJECT, Dev holds 3.0% (>1%) (V13, V17)  
@@ -94,8 +96,6 @@ Updated 2026-11-15T11:09:28Z (paper trading, never real money)
   CA `FS1pBmZKp2Qw1atC64GoLamHstECAos9ot8bGPgDpump`
 - 09:51Z FUTA (MIGRATED, $104,837 mcap, $5,053 5m vol): REJECT, Top 10 hold 25.9% ex-pool (>25%) (V13)  
   CA `8JCsa61htnPj2af7g1KSyU1UEncruHE1Ph9aNR6rpump`
-- 09:46Z CLOCKED (DIP, $448,895 mcap, $3,205 5m vol): PASS at conviction 3, PASS: CLOCKED OUT is a bottom buy on a fading story, with sellers still in control and 5m flow under $10k. Blocker: "dead story" (V1, V5, V6).  
-  CA `5r6uX887ZxsPG6iEdyyU2sQTFMpwHVzqVFkANuepump`
 
 ## What its skips did next (last 48h)
 A skip "ran" if the coin reached the first target (1.5x) from the skip price before a 20% drop, "dumped" if the drop came first. Sampled every 10 min, followed 6h.
@@ -106,7 +106,7 @@ A skip "ran" if the coin reached the first target (1.5x) from the skip price bef
     CA `AiQUqe4zjiDssth2FsCoeQVaGtCtHYyKGX8U52rWpump`
   - ran: FUTA up to 2.77x  
     CA `FxoXV4C8DTSYeg5dSXrEsr45zzr8tpNbsrpoiZ8Kpump`
-- top 10 over 25%: blocked 10, ran 1, dumped 7, flat 1, open 1 (saving losses: keep it)
+- top 10 over 25%: blocked 11, ran 1, dumped 7, flat 1, open 2 (saving losses: keep it)
   - ran: FUTA up to 1.51x  
     CA `8JCsa61htnPj2af7g1KSyU1UEncruHE1Ph9aNR6rpump`
 - flow below pace: blocked 8, ran 1, dumped 5, flat 1, open 1 (saving losses: keep it)
@@ -171,13 +171,13 @@ This window has no evidence in it. In 24 hours zero coins were logged at any sta
 Not quiet, but the flow is concentrated. Only Socks Neobank ($52k 5m, 60% buys, PumpSwap at $252k) and SEYONG ($25k 5m, 59% buys, six minutes old) clear the $10k 5-minute bar. The cat riffs are the most repeated name pattern (NCAT, dragoncat, poorcat, BABOON), but most have thin dollar volume (NCAT $642 5m, dragoncat $128) even where buy ratios hit 62-70%, so the animal theme is repeating without carrying money yet. Fading: the joke and finance cluster (CLOCKED -99.6% 1h, SOLA -89%, PASSED -86%) and older leftovers like UM and DIGS, which fits the launch-and-flush churn and the web's "memecoin hype dead" headlines. The crawler's NCAT, dragoncat, HSI and LAIKA figures don't match scan_movers (PAW and LAIKA aren't in the movers at all), so I used scan_movers only; the NVIDIA/Jensen tie is one coin, not a theme. Setups to research, not buys: Socks, a migrated coin with chase risk after +763% in 1h, needs a MIGRATED-style check on a clean pullback; SEYONG is a fresh bonding-curve launch with high bundle risk, so it needs a FINAL_STRETCH-style check. Holder, dev and bundle checks have not run on any of these, so every name stays unverified. Paper only, not advice.
 
 ## Moving most in its scans, last 30 min (1h volume)
-- Socks: $682,884 1h vol, $251,809 mcap, +763% 1h  
-  CA `FS1pBmZKp2Qw1atC64GoLamHstECAos9ot8bGPgDpump`
-- NCAT: $56,056 1h vol, $8,348 mcap, -47% 1h  
-  CA `CU6twK3evciYpdtf9xiiahxwV2tNd9FGoGjL6ewVpump`
-- SEYONG: $44,744 1h vol, $2,699 mcap, +5% 1h  
+- SURVIVE: $51,291 1h vol, $11,696 mcap, +378% 1h  
+  CA `6fet2d2NkU5L1Qw46q2EsqKuXrt4nGsgFLQHW1iF7xbr`
+- SEYONG: $44,807 1h vol, $2,570 mcap, -0% 1h  
   CA `CGdYJyGwy2txPAz15V35BkGH4ibBAjGskV6oQ1GWpump`
+- SOLA: $43,921 1h vol, $2,902 mcap, -90% 1h  
+  CA `3kTTVL6DtRzfSUVCMcBoaJoiAkNwLc2GY7zYvUbnpump`
 - GETAJOB: $43,324 1h vol, $575,595 mcap, +17% 1h  
   CA `ZGW9B644VgfmmKtBTv1xjWGarkjEhFrcUrQEaqepump`
-- SOLA: $43,260 1h vol, $3,517 mcap, -88% 1h  
-  CA `3kTTVL6DtRzfSUVCMcBoaJoiAkNwLc2GY7zYvUbnpump`
+- GATO: $35,154 1h vol, $6,662,432 mcap, -2% 1h  
+  CA `HsprHxBRgiVaQdRf3TnKNuZZtaX9JUSPgMFdAkk6pump`
