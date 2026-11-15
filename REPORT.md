@@ -1,13 +1,13 @@
 # Trencher live report
 
-Updated 2026-11-15T10:39:00Z (paper trading, never real money)
+Updated 2026-11-15T10:54:03Z (paper trading, never real money)
 
 - Equity: $74.23 (-25.8% vs $100 start)
 - Closed trades: 22, 3 wins
 - Fees paid: $14.78 (axiom $2.81, network $9.18, pool $2.66), plus $4.15 lost to slippage
 - New trades: WATCH-ONLY (scans and decides, buys nothing)
-- Brain: subscription, claude-haiku-5-5 for routine calls, claude-opus-5-5 for the daily review; 65 routine calls and 0 plan-limit hits in 48h
-- Watch log: 53 coins being followed, 1352 filed, 0 would-buys (6h follow, sampled every 2 min)
+- Brain: subscription, claude-haiku-5-5 for routine calls, claude-opus-5-5 for the daily review; 66 routine calls and 0 plan-limit hits in 48h
+- Watch log: 51 coins being followed, 1355 filed, 0 would-buys (6h follow, sampled every 2 min)
 
 ## Scorecard (after fees)
 - 22 closed, 3 won (14%), net $-25.79
@@ -73,9 +73,11 @@ Updated 2026-11-15T10:39:00Z (paper trading, never real money)
   CA `H4gHnZ3NCU7Z9XQwGX6YYJNyieGEW8pqwGRUcdSxpump`
 
 ## Last scan
-- 10:38Z: 8 coins, 8 with pairs, 0 passed the market filters, 0 researched
+- 10:53Z: 6 coins, 6 with pairs, 0 passed the market filters, 0 researched
 
 ## Coins it looked at, and why it passed
+- 10:43Z Socks (DIP, $244,551 mcap, $40,012 5m vol): PASS at conviction 3, PASS: too new, a split crowd, and no catalyst I can verify. Socks is 57 minutes old, bleeding off a 10x hour spike, and sits in a 14-copy field. Blocker: "too new" and "split crowd" (V1, V3, V13).  
+  CA `FS1pBmZKp2Qw1atC64GoLamHstECAos9ot8bGPgDpump`
 - 10:21Z GATO (DIP, $6,588,749 mcap, $2,653 5m vol): REJECT, Dev holds 3.0% (>1%) (V13, V17)  
   CA `HsprHxBRgiVaQdRf3TnKNuZZtaX9JUSPgMFdAkk6pump`
 - 10:07Z PASSED (FINAL_STRETCH, $18,873 mcap, $4,184 5m vol): PASS at conviction 3, PASS: 19 copies of "Mission Passed", the theme is at 0.12x its hourly pace, and 5m flow is $4.2k, under the $10k bar. Split crowd with no leader on flow. (V1, V6, V13)  
@@ -94,8 +96,6 @@ Updated 2026-11-15T10:39:00Z (paper trading, never real money)
   CA `3nbHBkEDdbPiF5zJMhsxucm25V6UHKv9BVQuTKJVpump`
 - 09:37Z NCAT (FINAL_STRETCH, $23,999 mcap, $27,205 5m vol): REJECT, RugCheck danger: Low Liquidity $230.79  
   CA `CU6twK3evciYpdtf9xiiahxwV2tNd9FGoGjL6ewVpump`
-- 09:33Z PAW (MIGRATED, $101,011 mcap, $15,019 5m vol): PASS at conviction 4, PASS: PAW is a 31% dip on a theme running at 0.89x its hourly pace with no catalyst I can name, and the owner's bottom-buy gate blocks it. Blocker: "theme flow below pace / no catalyst" (V1, V6).  
-  CA `HxPrDS84HH3ijsJhiCLF55MN7DqLfxzbt99RnSuSpump`
 
 ## What its skips did next (last 48h)
 A skip "ran" if the coin reached the first target (1.5x) from the skip price before a 20% drop, "dumped" if the drop came first. Sampled every 10 min, followed 6h.
@@ -112,11 +112,9 @@ A skip "ran" if the coin reached the first target (1.5x) from the skip price bef
 - flow below pace: blocked 8, ran 1, dumped 5, flat 1, open 1 (saving losses: keep it)
   - ran: PASSED up to 1.73x  
     CA `3XaH8VPUaUegqmnkYA8PXCWqQqD8doqdsGGfZyoYpump`
-- too new / sniping: blocked 6, ran 2, dumped 4, flat 0, open 0 (saving losses: keep it)
+- too new / sniping: blocked 6, ran 1, dumped 4, flat 0, open 1 (saving losses: keep it)
   - ran: Chick up to 1.66x  
     CA `Dueav76X9spnoLomhM2jMkkWorVggbeWucLs3YLupump`
-  - ran: Socks up to 1.72x  
-    CA `FS1pBmZKp2Qw1atC64GoLamHstECAos9ot8bGPgDpump`
 - near the high / chasing: blocked 6, ran 1, dumped 5, flat 0, open 0 (saving losses: keep it)
   - ran: penny up to 1.6x  
     CA `5gmCPpuktJ7Svjgr4PPJBTosAFKB8K6Z45EGfSUmpump`
@@ -173,13 +171,13 @@ This window has no evidence in it. In 24 hours zero coins were logged at any sta
 Not quiet. About half of scan_movers is under two hours old, and the live flow is in fresh pump.fun cat and dog coins, not the finance jokes. Two themes are moving: animal riffs (NCAT at 27k 5m and 65% buys, dragoncat at 9k 5m and 73% buys, PAW at 15k 5m and 57% buys) and tech/NVIDIA-name riffs riding the Jensen Huang headlines (NCAT again). Fading: the finance/joke cluster (CLOCKED OUT at -26% 1h on 2.9k 5m with 40% buys, Useless Market at 983 5m), the dog coin HSI (-71% 1h on 126 5m), and LAIKA (zero 5m), and the web backs that (DOGE down about 40%, "is memecoin hype dead" headlines), though the cat coins still have real 5m flow. Setups to research, not buy: NCAT (youngest and strongest flow, but about 6 minutes old, so bundle risk is high), dragoncat (18 minutes old, $20k mcap, still on the bonding curve, a FINAL_STRETCH-style check), and PAW (migrated on PumpSwap at $101k mcap, a MIGRATED-style TA check that needs its volume to hold). The crawler's HSI and starShit 5m figures (12k and 9.6k) don't match scan_movers (126 and 2.4k), so I used scan_movers only. No hack-named coin is in the movers and none is a setup. Holder, dev and bundle checks have not run on any of these yet. Paper only, not advice.
 
 ## Moving most in its scans, last 30 min (1h volume)
-- NCAT: $97,998 1h vol, $10,421 mcap, -21% 1h  
-  CA `CU6twK3evciYpdtf9xiiahxwV2tNd9FGoGjL6ewVpump`
-- CLOCKED: $71,843 1h vol, $1,386 mcap, -100% 1h  
+- Socks: $682,884 1h vol, $251,809 mcap, +763% 1h  
+  CA `FS1pBmZKp2Qw1atC64GoLamHstECAos9ot8bGPgDpump`
+- CLOCKED: $58,526 1h vol, $1,377 mcap, -100% 1h  
   CA `5r6uX887ZxsPG6iEdyyU2sQTFMpwHVzqVFkANuepump`
-- dragoncat: $34,630 1h vol, $4,463 mcap, -84% 1h  
-  CA `3nbHBkEDdbPiF5zJMhsxucm25V6UHKv9BVQuTKJVpump`
-- GATO: $30,171 1h vol, $6,588,749 mcap, -4% 1h  
-  CA `HsprHxBRgiVaQdRf3TnKNuZZtaX9JUSPgMFdAkk6pump`
-- FUTA: $22,317 1h vol, $159,179 mcap, +19% 1h  
-  CA `8JCsa61htnPj2af7g1KSyU1UEncruHE1Ph9aNR6rpump`
+- NCAT: $56,056 1h vol, $8,348 mcap, -47% 1h  
+  CA `CU6twK3evciYpdtf9xiiahxwV2tNd9FGoGjL6ewVpump`
+- SOLA: $39,772 1h vol, $3,309 mcap, -89% 1h  
+  CA `3kTTVL6DtRzfSUVCMcBoaJoiAkNwLc2GY7zYvUbnpump`
+- Sumi: $34,609 1h vol, $14,646 mcap, +3% 1h  
+  CA `HvA8a4C1KAXfrZMnmd1VyvLh21HzMvr4rjUtxiezpump`
