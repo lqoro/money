@@ -1,13 +1,13 @@
 # Trencher live report
 
-Updated 2026-11-15T02:34:20Z (paper trading, never real money)
+Updated 2026-11-15T02:49:30Z (paper trading, never real money)
 
 - Equity: $74.23 (-25.8% vs $100 start)
 - Closed trades: 22, 3 wins
 - Fees paid: $14.78 (axiom $2.81, network $9.18, pool $2.66), plus $4.15 lost to slippage
 - New trades: WATCH-ONLY (scans and decides, buys nothing)
-- Brain: subscription, claude-haiku-5-5 for routine calls, claude-opus-5-5 for the daily review; 19 routine calls and 0 plan-limit hits in 48h
-- Watch log: 49 coins being followed, 1282 filed, 0 would-buys (6h follow, sampled every 2 min)
+- Brain: subscription, claude-haiku-5-5 for routine calls, claude-opus-5-5 for the daily review; 22 routine calls and 0 plan-limit hits in 48h
+- Watch log: 54 coins being followed, 1282 filed, 0 would-buys (6h follow, sampled every 2 min)
 
 ## Scorecard (after fees)
 - 22 closed, 3 won (14%), net $-25.79
@@ -73,9 +73,19 @@ Updated 2026-11-15T02:34:20Z (paper trading, never real money)
   CA `H4gHnZ3NCU7Z9XQwGX6YYJNyieGEW8pqwGRUcdSxpump`
 
 ## Last scan
-- 02:33Z: 2 coins, 2 with pairs, 0 passed the market filters, 0 researched
+- 02:49Z: 2 coins, 2 with pairs, 0 passed the market filters, 0 researched
 
 ## Coins it looked at, and why it passed
+- 02:47Z worth (MIGRATED, $126,475 mcap, $7,793 5m vol): REJECT, Top 10 hold 26.5% ex-pool (>25%) (V13)  
+  CA `7mH4PaR9BMxAid2i1QNDBmziAwxyXBsPNKSMiWySpump`
+- 02:47Z penny (FINAL_STRETCH, $20,142 mcap, $28,498 5m vol): REJECT, RugCheck danger: Low Liquidity $529.71  
+  CA `5gmCPpuktJ7Svjgr4PPJBTosAFKB8K6Z45EGfSUmpump`
+- 02:45Z PumpMas (MIGRATED, $59,939 mcap, $3,682 5m vol): PASS at conviction 3, PASS — PumpMas is the volume leader of a 19-copy "pumpmas" field, but its 5m is $3.7k, under the $10k gate, it's red on the last 5m, and its own site doesn't show the CA (V1, V3, V6).  
+  CA `EwUVBpdM5vw1CJHRMSLywzVjyQSJZpy6qboxEPBKpump`
+- 02:42Z WANTED (MIGRATED, $831,794 mcap, $17,595 5m vol): PASS at conviction 2, PASS: WANTED is 9% off its high after a +66% 5m spike, with 5m flow at 0.44x pace and no printed higher low. Chasing, flow below pace. (V1, V6)  
+  CA `CiMyaPC9icicJxkFqvqpgL2YT2FjEQmGx1YVdG78pump`
+- 02:34Z GATO (DIP, $7,189,292 mcap, $2,119 5m vol): REJECT, Dev holds 3.0% (>1%) (V13, V17)  
+  CA `HsprHxBRgiVaQdRf3TnKNuZZtaX9JUSPgMFdAkk6pump`
 - 02:22Z SI (FINAL_STRETCH, $18,725 mcap, $8,783 5m vol): REJECT, RugCheck danger: Low Liquidity $353.79  
   CA `AiQUqe4zjiDssth2FsCoeQVaGtCtHYyKGX8U52rWpump`
 - 02:17Z USDC (DIP, $177,385 mcap, $11,449 5m vol): PASS at conviction 3, PASS: bottom buy with no catalyst and cat-meta volume under its hourly pace. Blocker "no catalyst / theme pace". Watch, don't buy (V1, V6, owner bottom-buy rule).  
@@ -86,33 +96,23 @@ Updated 2026-11-15T02:34:20Z (paper trading, never real money)
   CA `7N2g5tHX2isAXyKmtUek72waREtNKSFuR6KW2xthpump`
 - 02:05Z HYGG (DIP, $320,655 mcap, $4,329 5m vol): PASS at conviction 3, PASS: HYGG is one of 18 HYPE copies, 5m flow is $4.3k, and nothing printed a higher low or a catalyst. Blocker: no catalyst, narrative fading (V1, V6, V13).  
   CA `HHoDt9mEET28qFFWtUPNTqGcmRQPh3TJChAWHmBopump`
-- 02:01Z worth (MIGRATED, $55,636 mcap, $2,818 5m vol): REJECT, Top 10 hold 26.8% ex-pool (>25%) (V13)  
-  CA `7mH4PaR9BMxAid2i1QNDBmziAwxyXBsPNKSMiWySpump`
-- 01:56Z nilf (MIGRATED, $107,474 mcap, $2,395 5m vol): REJECT, Bundles: 7 linked wallet cluster(s) hold 44.6% of supply (>20%) (V17)  
-  CA `ABgXjaJ3iUg66vxhitQ77gj3cSechFJ3qyiPiRpqpump`
-- 01:56Z WANTED (MIGRATED, $476,859 mcap, $100,229 5m vol): REJECT, Top 10 hold 56.9% ex-pool (>25%) (V13)  
-  CA `CiMyaPC9icicJxkFqvqpgL2YT2FjEQmGx1YVdG78pump`
-- 01:45Z PEGCOIN (FINAL_STRETCH, $18,640 mcap, $1,998 5m vol): REJECT, 5m volume $1,998 is dead (<$2,000) (V1)  
-  CA `2Tie3KmpX86nQEAjVCddYQWxkziKgPw2E6L7t4oLpump`
-- 01:39Z JENSEN (MIGRATED, $79,229 mcap, $11,633 5m vol): PASS at conviction 3, PASS: JENSEN is down 96% off a $1.9M peak, down 78% in the last hour, and has no printed higher low. It's a falling knife with 19 copies riding the name. Blocker: falling knife (V1, V6).  
-  CA `B2YpP21vQBESJ2jtnuhPujEUT61KVRxZ2X5gsDcUpump`
 
 ## What its skips did next (last 48h)
 A skip "ran" if the coin reached the first target (1.5x) from the skip price before a 20% drop, "dumped" if the drop came first. Sampled every 10 min, followed 6h.
-- top 10 over 25%: blocked 7, ran 1, dumped 5, flat 0, open 1 (saving losses: keep it)
-  - ran: worth up to 1.52x  
-    CA `7mH4PaR9BMxAid2i1QNDBmziAwxyXBsPNKSMiWySpump`
-- RugCheck danger: blocked 6, ran 1, dumped 3, flat 0, open 2 (saving losses: keep it)
+- RugCheck danger: blocked 7, ran 1, dumped 3, flat 0, open 3 (saving losses: keep it)
   - ran: Ivy up to 1.88x  
     CA `DxNF3Qxd8XeUBdz7ReRdoiFzRmNDKbSz4c2oA7aRpump`
+- top 10 over 25%: blocked 6, ran 0, dumped 4, flat 0, open 2 (saving losses: keep it)
+- flow below pace: blocked 3, ran 0, dumped 1, flat 0, open 2 (too few played out to judge)
 - falling knife (code): blocked 3, ran 0, dumped 3, flat 0, open 0 (saving losses: keep it)
-- flow below pace: blocked 2, ran 0, dumped 1, flat 0, open 1 (too few played out to judge)
 - crowd leaving / fading volume: blocked 2, ran 0, dumped 1, flat 0, open 1 (too few played out to judge)
-- falling knife / no higher low: blocked 2, ran 0, dumped 0, flat 0, open 2 (too few played out to judge)
+- falling knife / no higher low: blocked 2, ran 1, dumped 0, flat 0, open 1 (too few played out to judge)
+  - ran: HYGG up to 1.67x  
+    CA `HHoDt9mEET28qFFWtUPNTqGcmRQPh3TJChAWHmBopump`
 - too new / sniping: blocked 2, ran 0, dumped 2, flat 0, open 0 (too few played out to judge)
+- thin 5m volume: blocked 2, ran 0, dumped 0, flat 0, open 2 (too few played out to judge)
 - dev share over 1%: blocked 1, ran 0, dumped 0, flat 0, open 1 (too few played out to judge)
 - other: blocked 1, ran 0, dumped 1, flat 0, open 0 (too few played out to judge)
-- thin 5m volume: blocked 1, ran 0, dumped 0, flat 0, open 1 (too few played out to judge)
 
 ## Daily review (2026-11-14, claude-opus-5-5)
 This window has no evidence in it. In 24 hours zero coins were logged at any stage: none failed the checklist, none were passed by the brain, none were would-buys and none went unresearched. Nothing settled, nothing is still being followed, and the brain was called once in 48 hours. With n=0, nobody can say anything about an after-cost edge, and the question of whether the routine model's would-buys beat the coins it passed on has no data to answer. The only real finding is that the pipeline looks stalled. A scanner running around the clock should pass at least a handful of coins through the market filters every day. It's also Nov 14, four days after the planned Nov 10 test, so it's worth confirming the watch-only week was captured and archived before anyone talks about edge.
@@ -150,16 +150,16 @@ This window has no evidence in it. In 24 hours zero coins were logged at any sta
 - [2026-11-02 20:25] I expected Slingoor, a clean MIGRATED leader with $25k of 5m flow at pace and a 0.77 buy share, to retest its $408k high from $304k. It never went green (0.98x peak) and hit the -20% stop in 2 minutes, a -$2.86 probe. My own thesis admitted there was no printed higher low after a peak only 6 minutes old, so this confirms the money-shape rule: buy share and flow are not structure (V1, V6). Next time a MIGRATED pullback with no higher low above the hourly low is a PASS with blocker "no higher low", not a probe. This is one loss, so it adds no new ban beyond the rule I already have.
 
 ## Meta right now
-The meta right now is animal riffs on cats and bears, and they're the only theme with real volume and buyers across several coins. The White Bear (DUVAL, $227k cap, $23.9k 5m), Dacity Cat (DACAT, $127k cap, $17.1k 5m, 83% buys), UpSideDownCat (USDC, $234k cap, $15.4k 5m) and Catzilla (CATZILLA, $10.6k cap, $13.5k 5m) all sit on real 5m flow, and "one life, its worth an attempt" (67k cap, $17.9k 5m, 58% buys) and GTA Season (162k cap, 63% buys) are the GTA-style riffs holding up. Fading: HYGG riding HYPE (+1318% in an hour but only 38% buys and $5k 5m, so sellers have the chart), JENSEN (-78% in an hour, 25h old), and the zero-volume jokes BUSTED, STABLECOIN and TOILET ($8 5m on a $12.7M cap). The crawler's RWA story (96% buys) doesn't match the scan: Real World Asses shows 27% buys, $7.2k 5m and -41% in an hour, so I'm using the scan numbers; Lucia and Snoopy Wif Hat aren't in the scan at all, so they're unconfirmed, and no coin in the scan is named for a hack. Setups to research, not buy yet: DACAT for buy pressure, DUVAL only as a dip watch since it's already +298% in an hour, and USDC as a dip watch after its -14% with 55% buys. Holder, dev and bundle checks still have to run on each one before any paper entry (paper only, not advice).
+The meta is self-aware joke coins with fresh launches, and the trenches are not quiet: USD (Useless Shit Dollar) at $16.6k 5m on a $24k cap and WANTED at $17.6k 5m are both trading hard. Stablecoin/dollar jokes are rising: USD (6 minutes old, 56% buys, -14% in the hour) and Stable Inu (SI, $8.8k 5m, 50% buys, +107% in the hour). Cat riffs are fading: Dacity Cat (DACAT) is at $0 5m and -99% in the hour, The White Bear (DUVAL) is at $87 5m and -81%, leaving only UpSideDownCat (USDC, $11.4k 5m, 67% buys, -12% in the hour) with real flow. Self-mocking "just buy" and "begwork" coins show buy-heavy but thin flow ($408 and $194 on 5m), and GTA riffs are dead, so the crawler's cat and GTA stories are out of date and I'm using the scan numbers. Setups to research: USD and USDC, after holder, dev and bundle checks run on each. WANTED ($832k cap, +2133% in the hour, 0.8h old) is a chase-risk watch only, not an entry. Paper only, not advice.
 
 ## Moving most in its scans, last 30 min (1h volume)
-- USDC: $162,441 1h vol, $177,385 mcap, -12% 1h  
-  CA `Acgs6mb4PC7tQbDm9T4EeTfNx3ZDh5fNSjHcHZQLpump`
-- DACAT: $160,402 1h vol, $1,295 mcap, -99% 1h  
-  CA `ErtyXjRNeCkcKsrJJ8NwGCVQAoYQoVPnzs6Fr2Jmpump`
+- WANTED: $482,809 1h vol, $831,794 mcap, +2133% 1h  
+  CA `CiMyaPC9icicJxkFqvqpgL2YT2FjEQmGx1YVdG78pump`
+- penny: $166,312 1h vol, $25,130 mcap, +497% 1h  
+  CA `5gmCPpuktJ7Svjgr4PPJBTosAFKB8K6Z45EGfSUmpump`
 - SI: $130,241 1h vol, $18,725 mcap, +107% 1h  
   CA `AiQUqe4zjiDssth2FsCoeQVaGtCtHYyKGX8U52rWpump`
-- GTASZN: $100,103 1h vol, $1,336 mcap, -99% 1h  
-  CA `GWfkt89PP92cA1eg4NMRE2FqftZPwLgFyY2YRNLwpump`
-- AMS: $90,376 1h vol, $1,770 mcap, -96% 1h  
-  CA `4b3ypv8i8vKUfCfETpbbPSLtvvW39eQVt5M41PxCpump`
+- DACAT: $107,893 1h vol, $1,295 mcap, -99% 1h  
+  CA `ErtyXjRNeCkcKsrJJ8NwGCVQAoYQoVPnzs6Fr2Jmpump`
+- worth: $68,551 1h vol, $126,475 mcap, +240% 1h  
+  CA `7mH4PaR9BMxAid2i1QNDBmziAwxyXBsPNKSMiWySpump`
