@@ -1,13 +1,13 @@
 # Trencher live report
 
-Updated 2026-11-15T13:10:34Z (paper trading, never real money)
+Updated 2026-11-15T13:25:40Z (paper trading, never real money)
 
 - Equity: $74.23 (-25.8% vs $100 start)
 - Closed trades: 22, 3 wins
 - Fees paid: $14.78 (axiom $2.81, network $9.18, pool $2.66), plus $4.15 lost to slippage
 - New trades: WATCH-ONLY (scans and decides, buys nothing)
-- Brain: subscription, claude-haiku-5-5 for routine calls, claude-opus-5-5 for the daily review; 78 routine calls and 0 plan-limit hits in 48h
-- Watch log: 47 coins being followed, 1377 filed, 0 would-buys (6h follow, sampled every 2 min)
+- Brain: subscription, claude-haiku-5-5 for routine calls, claude-opus-5-5 for the daily review; 79 routine calls and 0 plan-limit hits in 48h
+- Watch log: 48 coins being followed, 1379 filed, 0 would-buys (6h follow, sampled every 2 min)
 
 ## Scorecard (after fees)
 - 22 closed, 3 won (14%), net $-25.79
@@ -73,9 +73,15 @@ Updated 2026-11-15T13:10:34Z (paper trading, never real money)
   CA `H4gHnZ3NCU7Z9XQwGX6YYJNyieGEW8pqwGRUcdSxpump`
 
 ## Last scan
-- 13:10Z: 3 coins, 3 with pairs, 0 passed the market filters, 0 researched
+- 13:24Z: 4 coins, 4 with pairs, 0 passed the market filters, 0 researched
 
 ## Coins it looked at, and why it passed
+- 13:23Z GATO (DIP, $6,842,114 mcap, $2,408 5m vol): REJECT, Dip with fading attention is a falling knife, not a dip (5m at 0.57x the hour's pace, under 0.6x)  
+  CA `HsprHxBRgiVaQdRf3TnKNuZZtaX9JUSPgMFdAkk6pump`
+- 13:15Z PNUT (MIGRATED, $38,506 mcap, $32,611 5m vol): PASS at conviction 3, PASS: chasing spike. PNUT is 3 minutes old, up 30% on 5m at 12x its hourly pace, with no printed higher low and a 16-copy farm field splitting the crowd. Blockers: "chasing spike", "too new", "split crowd" (V1, V3, V6).  
+  CA `CNn4KxEs3wrTgBfgRaiL6bMbEb7SyWfLoaHiQNyopump`
+- 13:13Z twert (FINAL_STRETCH, $16,788 mcap, $6,943 5m vol): REJECT, Top 10 hold 29.1% ex-pool (>25%) (V13)  
+  CA `8WvWwttzaLfW1nbjx6wmYL5jozWpvy95WktAg5cipump`
 - 13:07Z rockstar (MIGRATED, $93,650 mcap, $9,063 5m vol): REJECT, Top 10 hold 25.0% ex-pool (>25%) (V13)  
   CA `9HFUEab7sompLDPTAaTGkryMNGbtBaFMhHMVpJEBpump`
 - 12:59Z pls (FINAL_STRETCH, $23,784 mcap, $34,440 5m vol): PASS at conviction 3, PASS: 8 minutes old, +159% on the 5m at 8.9x hourly pace, and 14 copies of "pls" with no story behind the name. Chasing a spike in a vamp field (V1, V6).  
@@ -90,12 +96,6 @@ Updated 2026-11-15T13:10:34Z (paper trading, never real money)
   CA `HsprHxBRgiVaQdRf3TnKNuZZtaX9JUSPgMFdAkk6pump`
 - 12:33Z SLIDES (DIP, $30,872 mcap, $2,026 5m vol): PASS at conviction 2, PASS: SLIDES is a DIP on a fading joke-cluster story with no catalyst, $2k 5m flow, and top 10 at 22.4%. Blocker: "no catalyst / narrative fading" (V1, V6, V13).  
   CA `8JNcbK2bWFxQnZsR6xQtgB3en7DcFSXW5xSyh6fYpump`
-- 12:16Z GETAJOB (MIGRATED, $719,028 mcap, $4,071 5m vol): PASS at conviction 3, PASS: GETAJOB is 3.4% off its $745k high with 5m flow at 0.59x its hourly pace and no printed higher low. Chasing a top on a dead joke with an AI LARP claim. (V1, V6)  
-  CA `ZGW9B644VgfmmKtBTv1xjWGarkjEhFrcUrQEaqepump`
-- 12:15Z Socks (MIGRATED, $347,035 mcap, $14,033 5m vol): PASS at conviction 3, PASS: flow below pace, no printed higher low, and the last 15m candle collapsed. Socks is a card-spend fintech with no meme idea. (V1, V6)  
-  CA `FS1pBmZKp2Qw1atC64GoLamHstECAos9ot8bGPgDpump`
-- 12:04Z Oli (FINAL_STRETCH, $16,728 mcap, $7,504 5m vol): PASS at conviction 2, PASS: chasing spike. Oli is up 580% in 1h and 75% on the 5m, sitting at the top of its own spike. Six copies share the ticker and the top 10 hold 23.9%. (V1, V6, V13)  
-  CA `8LBTmVfJxpjBDeggCdABThUrL6k67Q5XaEgEcoDoPMsG`
 
 ## What its skips did next (last 48h)
 A skip "ran" if the coin reached the first target (1.5x) from the skip price before a 20% drop, "dumped" if the drop came first. Sampled every 10 min, followed 6h.
@@ -106,13 +106,13 @@ A skip "ran" if the coin reached the first target (1.5x) from the skip price bef
     CA `AiQUqe4zjiDssth2FsCoeQVaGtCtHYyKGX8U52rWpump`
   - ran: FUTA up to 2.77x  
     CA `FxoXV4C8DTSYeg5dSXrEsr45zzr8tpNbsrpoiZ8Kpump`
-- top 10 over 25%: blocked 13, ran 1, dumped 9, flat 1, open 2 (saving losses: keep it)
+- top 10 over 25%: blocked 14, ran 1, dumped 9, flat 1, open 3 (saving losses: keep it)
   - ran: FUTA up to 1.51x  
     CA `8JCsa61htnPj2af7g1KSyU1UEncruHE1Ph9aNR6rpump`
 - flow below pace: blocked 10, ran 1, dumped 6, flat 2, open 1 (saving losses: keep it)
   - ran: PASSED up to 1.73x  
     CA `3XaH8VPUaUegqmnkYA8PXCWqQqD8doqdsGGfZyoYpump`
-- too new / sniping: blocked 7, ran 2, dumped 5, flat 0, open 0 (saving losses: keep it)
+- too new / sniping: blocked 8, ran 2, dumped 6, flat 0, open 0 (saving losses: keep it)
   - ran: Chick up to 1.66x  
     CA `Dueav76X9spnoLomhM2jMkkWorVggbeWucLs3YLupump`
   - ran: TOOLS up to 1.83x  
@@ -120,7 +120,7 @@ A skip "ran" if the coin reached the first target (1.5x) from the skip price bef
 - near the high / chasing: blocked 7, ran 1, dumped 6, flat 0, open 0 (saving losses: keep it)
   - ran: penny up to 1.6x  
     CA `5gmCPpuktJ7Svjgr4PPJBTosAFKB8K6Z45EGfSUmpump`
-- falling knife (code): blocked 4, ran 0, dumped 4, flat 0, open 0 (saving losses: keep it)
+- falling knife (code): blocked 5, ran 0, dumped 4, flat 0, open 1 (saving losses: keep it)
 - crowd leaving / fading volume: blocked 4, ran 1, dumped 3, flat 0, open 0 (saving losses: keep it)
   - ran: NUREMBERG up to 1.62x  
     CA `7R3RnGmpV9mZXwSyHyKN5LEddiZRmGsYrAZPgDJqpump`
@@ -173,11 +173,11 @@ Not quiet: three movers clear the $10k 5-minute bar in the scan data (hermano $1
 ## Moving most in its scans, last 30 min (1h volume)
 - rockstar: $97,915 1h vol, $93,650 mcap, +43% 1h  
   CA `9HFUEab7sompLDPTAaTGkryMNGbtBaFMhHMVpJEBpump`
-- PEER: $48,736 1h vol, $2,945 mcap, -90% 1h  
+- GATO: $51,343 1h vol, $6,853,974 mcap, -1% 1h  
+  CA `HsprHxBRgiVaQdRf3TnKNuZZtaX9JUSPgMFdAkk6pump`
+- PEER: $49,919 1h vol, $1,959 mcap, -93% 1h  
   CA `B7kJAxdv9DsHzPNHKaKCnaEiUiEy7VYCeFbqiWoCpump`
 - pls: $48,323 1h vol, $22,980 mcap, +834% 1h  
   CA `3Ev32Ns2fkfEppgYnskq6rDL5TfXfjhtEXWkPz2Vpump`
-- Buttom: $45,274 1h vol, $7,491 mcap, -75% 1h  
+- Buttom: $47,981 1h vol, $6,172 mcap, -78% 1h  
   CA `4D1npvfDzsyb3HVTTK1j2RCqnMCzt5Y7RVS1zY7Fpump`
-- TOK: $44,911 1h vol, $2,210 mcap, +9% 1h  
-  CA `HV6uSHm6hx8Epm1iXGwp7s8Ckb6Bt1oawiJ1AS2xZToK`
