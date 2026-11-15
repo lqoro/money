@@ -1,13 +1,13 @@
 # Trencher live report
 
-Updated 2026-11-15T09:07:50Z (paper trading, never real money)
+Updated 2026-11-15T09:22:57Z (paper trading, never real money)
 
 - Equity: $74.23 (-25.8% vs $100 start)
 - Closed trades: 22, 3 wins
 - Fees paid: $14.78 (axiom $2.81, network $9.18, pool $2.66), plus $4.15 lost to slippage
 - New trades: WATCH-ONLY (scans and decides, buys nothing)
-- Brain: subscription, claude-haiku-5-5 for routine calls, claude-opus-5-5 for the daily review; 58 routine calls and 0 plan-limit hits in 48h
-- Watch log: 53 coins being followed, 1338 filed, 0 would-buys (6h follow, sampled every 2 min)
+- Brain: subscription, claude-haiku-5-5 for routine calls, claude-opus-5-5 for the daily review; 59 routine calls and 0 plan-limit hits in 48h
+- Watch log: 56 coins being followed, 1339 filed, 0 would-buys (6h follow, sampled every 2 min)
 
 ## Scorecard (after fees)
 - 22 closed, 3 won (14%), net $-25.79
@@ -73,9 +73,17 @@ Updated 2026-11-15T09:07:50Z (paper trading, never real money)
   CA `H4gHnZ3NCU7Z9XQwGX6YYJNyieGEW8pqwGRUcdSxpump`
 
 ## Last scan
-- 09:06Z: 1 coins, 1 with pairs, 0 passed the market filters, 0 researched
+- 09:22Z: 0 coins, 0 with pairs, 0 passed the market filters, 0 researched
 
 ## Coins it looked at, and why it passed
+- 09:19Z Sumi (FINAL_STRETCH, $18,081 mcap, $7,292 5m vol): REJECT, RugCheck danger: Creator history of rugged tokens  
+  CA `HvA8a4C1KAXfrZMnmd1VyvLh21HzMvr4rjUtxiezpump`
+- 09:16Z TWEET (FINAL_STRETCH, $15,113 mcap, $29,795 5m vol): PASS at conviction 2, PASS: 15 same-name copies, a 10.2% bundle cluster, and a +455% five-minute spike six minutes after launch. That's a split crowd and a chase, not a setup (V1, V3, V6).  
+  CA `6Ao4S8TEnS4Xg5Uwr5TLipxKmrub88zBs81mipUMpump`
+- 09:14Z HOGE (DIP, $80,544 mcap, $2,040 5m vol): REJECT, Dip with fading attention is a falling knife, not a dip (5m at 0.21x the hour's pace, under 0.6x)  
+  CA `FVzqGqRmr4UH1Fif6dewmwbJ1p4YUZCu8dcw4Efopump`
+- 09:14Z GATO (DIP, $6,950,070 mcap, $2,540 5m vol): REJECT, Dev holds 3.0% (>1%) (V13, V17)  
+  CA `HsprHxBRgiVaQdRf3TnKNuZZtaX9JUSPgMFdAkk6pump`
 - 08:48Z PAW (MIGRATED, $37,098 mcap, $5,817 5m vol): PASS at conviction 3, PASS: chasing a 9% pullback, not the leader of its own ticker, and the first resistance is only 1.1x away. Blockers: "chasing", "vamp field", "target too close". (V1, V6)  
   CA `HxPrDS84HH3ijsJhiCLF55MN7DqLfxzbt99RnSuSpump`
 - 08:40Z HSI (MIGRATED, $30,066 mcap, $12,190 5m vol): PASS at conviction 3, PASS: thirteen minutes old, 30 copies of the same name, and no higher low. Blocker "too new" with "split crowd" behind it. Not a bottom buy without a catalyst (V1, V6, V13).  
@@ -88,18 +96,10 @@ Updated 2026-11-15T09:07:50Z (paper trading, never real money)
   CA `5XasjCnMPTczL9VZTDHgbK5sQzwkjnu41oLeHf5Wpump`
 - 07:56Z PumpBank (FINAL_STRETCH, $16,595 mcap, $46,229 5m vol): REJECT, RugCheck danger: Creator history of rugged tokens  
   CA `AGMRDpWgZoVjnBBTjPpye522dtcaBUwLyb5LhT23pump`
-- 07:44Z TAIL (MIGRATED, $69,536 mcap, $9,771 5m vol): PASS at conviction 2, PASS: 15.7% in one linked bundle and 18.3% across bundles, on a 24-copy "tail" field with no catalyst. Farm-shaped flow. (V3, V13, V17)  
-  CA `2tHPtosmh76mmJHeskid7nYUeHjGUQ4ZAYChwdGJpump`
-- 07:43Z HOGE (MIGRATED, $196,074 mcap, $38,792 5m vol): REJECT, Bundles: 3 linked wallet cluster(s) hold 22.1% of supply (>20%) (V17)  
-  CA `FVzqGqRmr4UH1Fif6dewmwbJ1p4YUZCu8dcw4Efopump`
-- 07:41Z PANICSELL (MIGRATED, $63,427 mcap, $2,413 5m vol): REJECT, Dev holds 36.9% (>1%) (V13, V17)  
-  CA `82Z6CcE5g3o1jW3vgtcqr95jP4XFx8jg1SJe8ikepump`
-- 07:41Z PAW (FINAL_STRETCH, $22,440 mcap, $8,425 5m vol): PASS at conviction 2, PASS: Light a Paw is a pet-memorial site with no real product, 5m flow under $10k, and the theme is at 0.23x pace. Wrong setup for a bottom buy. (V1, V6, V13)  
-  CA `HxPrDS84HH3ijsJhiCLF55MN7DqLfxzbt99RnSuSpump`
 
 ## What its skips did next (last 48h)
 A skip "ran" if the coin reached the first target (1.5x) from the skip price before a 20% drop, "dumped" if the drop came first. Sampled every 10 min, followed 6h.
-- RugCheck danger: blocked 13, ran 4, dumped 8, flat 1, open 0 (saving losses: keep it)
+- RugCheck danger: blocked 14, ran 4, dumped 8, flat 1, open 1 (saving losses: keep it)
   - ran: Ivy up to 1.88x  
     CA `DxNF3Qxd8XeUBdz7ReRdoiFzRmNDKbSz4c2oA7aRpump`
   - ran: SI up to 1.93x  
@@ -107,12 +107,12 @@ A skip "ran" if the coin reached the first target (1.5x) from the skip price bef
   - ran: FUTA up to 2.77x  
     CA `FxoXV4C8DTSYeg5dSXrEsr45zzr8tpNbsrpoiZ8Kpump`
 - top 10 over 25%: blocked 10, ran 0, dumped 7, flat 1, open 2 (saving losses: keep it)
-- flow below pace: blocked 6, ran 0, dumped 4, flat 0, open 2 (saving losses: keep it)
-- near the high / chasing: blocked 6, ran 2, dumped 4, flat 0, open 0 (saving losses: keep it)
+- near the high / chasing: blocked 7, ran 2, dumped 4, flat 0, open 1 (saving losses: keep it)
   - ran: penny up to 1.6x  
     CA `5gmCPpuktJ7Svjgr4PPJBTosAFKB8K6Z45EGfSUmpump`
   - ran: PAW up to 1.9x  
     CA `HxPrDS84HH3ijsJhiCLF55MN7DqLfxzbt99RnSuSpump`
+- flow below pace: blocked 6, ran 0, dumped 4, flat 0, open 2 (saving losses: keep it)
 - falling knife (code): blocked 5, ran 0, dumped 4, flat 0, open 1 (saving losses: keep it)
 - too new / sniping: blocked 5, ran 1, dumped 4, flat 0, open 0 (saving losses: keep it)
   - ran: Chick up to 1.66x  
@@ -167,13 +167,13 @@ This window has no evidence in it. In 24 hours zero coins were logged at any sta
 Not quiet. About half of the 15 scan_movers coins are under two hours old on PumpSwap or pump.fun, and about ten of them did $10k+ in the last hour. Two themes show up across several coins. Animal and dog riffs (HOGE, HSI, PAW, DIGS, Chick, GATO) are split: HSI and PAW are still buying while HOGE is down 59% in an hour. A finance/joke cluster (PumpBank, Owed, Useless Market, Good To Ape, CLOCKED OUT) has big 1h volume but almost no 5m flow, so it's fading. The web only confirms the fade: DOGE is down about 40% and headlines are asking whether memecoin hype is dead. Setups to research, not buy: HSI (12k 5m, 59% buys, 12 min old) and starShit (9.6k 5m, 64% buys, +405% 1h), only if 5m clears $10k with buyers holding. HOGE (-59% 1h, 55% buys) only on a pullback that holds volume, after confirming it's the real Hoge and not a Doge copy, with the stop under the recent low; its prior peak is unverified. The crawler's HOGE/TAIL/PAW numbers didn't match scan_movers, so I used scan_movers only. Holder, dev and bundle checks still run on each coin before any size. Paper only, not advice.
 
 ## Moving most in its scans, last 30 min (1h volume)
-- PAW: $65,863 1h vol, $37,098 mcap, +18% 1h  
-  CA `HxPrDS84HH3ijsJhiCLF55MN7DqLfxzbt99RnSuSpump`
-- HSI: $60,457 1h vol, $30,066 mcap, -34% 1h  
-  CA `FZjyGVc5Su7kJzLXUaz5ZqtotjT97LhWQ2jacrY4pump`
-- PumpBank: $44,830 1h vol, $5,915 mcap, -75% 1h  
-  CA `AGMRDpWgZoVjnBBTjPpye522dtcaBUwLyb5LhT23pump`
-- CateGiving: $32,517 1h vol, $1,458 mcap, -95% 1h  
-  CA `5XasjCnMPTczL9VZTDHgbK5sQzwkjnu41oLeHf5Wpump`
-- Sumi: $26,911 1h vol, $10,852 mcap, +44% 1h  
+- HOGE: $117,038 1h vol, $81,357 mcap, -46% 1h  
+  CA `FVzqGqRmr4UH1Fif6dewmwbJ1p4YUZCu8dcw4Efopump`
+- starShit: $101,698 1h vol, $15,187 mcap, +55% 1h  
+  CA `85J9oUpaNRsELufsxopZPRbfYqNSNLhB6R2LNAWspump`
+- Sumi: $52,912 1h vol, $17,096 mcap, +127% 1h  
   CA `HvA8a4C1KAXfrZMnmd1VyvLh21HzMvr4rjUtxiezpump`
+- TWEET: $33,320 1h vol, $18,621 mcap, +583% 1h  
+  CA `6Ao4S8TEnS4Xg5Uwr5TLipxKmrub88zBs81mipUMpump`
+- CateGiving: $32,517 1h vol, $1,466 mcap, -95% 1h  
+  CA `5XasjCnMPTczL9VZTDHgbK5sQzwkjnu41oLeHf5Wpump`
