@@ -1,13 +1,13 @@
 # Trencher live report
 
-Updated 2026-11-15T19:14:48Z (paper trading, never real money)
+Updated 2026-11-15T19:29:53Z (paper trading, never real money)
 
 - Equity: $74.23 (-25.8% vs $100 start)
 - Closed trades: 22, 3 wins
 - Fees paid: $14.78 (axiom $2.81, network $9.18, pool $2.66), plus $4.15 lost to slippage
 - New trades: WATCH-ONLY (scans and decides, buys nothing)
-- Brain: subscription, claude-haiku-5-5 for routine calls, claude-opus-5-5 for the daily review; 115 routine calls and 0 plan-limit hits in 48h
-- Watch log: 84 coins being followed, 1424 filed, 0 would-buys (6h follow, sampled every 2 min)
+- Brain: subscription, claude-haiku-5-5 for routine calls, claude-opus-5-5 for the daily review; 117 routine calls and 0 plan-limit hits in 48h
+- Watch log: 85 coins being followed, 1427 filed, 0 would-buys (6h follow, sampled every 2 min)
 
 ## Scorecard (after fees)
 - 22 closed, 3 won (14%), net $-25.79
@@ -73,9 +73,17 @@ Updated 2026-11-15T19:14:48Z (paper trading, never real money)
   CA `H4gHnZ3NCU7Z9XQwGX6YYJNyieGEW8pqwGRUcdSxpump`
 
 ## Last scan
-- 19:14Z: 5 coins, 5 with pairs, 0 passed the market filters, 0 researched
+- 19:29Z: 4 coins, 4 with pairs, 0 passed the market filters, 0 researched
 
 ## Coins it looked at, and why it passed
+- 19:28Z TAIL (MIGRATED, $82,736 mcap, $3,307 5m vol): PASS at conviction 3, PASS: one linked bundle cluster holds 15.7% of supply, the site doesn't show this CA, and the pitch is copy-bots funded to holders. That's a farm (V3, V4, V13).  
+  CA `2tHPtosmh76mmJHeskid7nYUeHjGUQ4ZAYChwdGJpump`
+- 19:21Z CBUCKS (MIGRATED, $3,467,666 mcap, $2,117 5m vol): REJECT, Top 10 hold 26.2% ex-pool (>25%) (V13)  
+  CA `DtcicPCKTKeAh7TDEzTym3hXeoHAoMiBdYJhMYxZpump`
+- 19:20Z 9LIVES (MIGRATED, $38,848 mcap, $2,663 5m vol): REJECT, Dev holds 2.5% (>1%) (V13, V17)  
+  CA `6iUizCbYh4nCWBcpK7DwZpR9PFcjnrkMcS48fE5wpump`
+- 19:20Z paperdog (MIGRATED, $31,821 mcap, $8,259 5m vol): PASS at conviction 3, PASS: paperdog is up 36% in 5m at 6.1x its hourly pace, with no printed higher low and no story behind it. Chasing spike, no narrative (V1, V6, V13).  
+  CA `6wnMkKcJTsvFy2ksWeKopm9YMs2Xpy4jSHuQB12Mpump`
 - 19:12Z chip (FINAL_STRETCH, $19,730 mcap, $5,993 5m vol): PASS at conviction 3, PASS: chip. Theme pace 0.14x, no catalyst, 5m flow $6k under the $10k bar, and it's a copy in an 11-coin field. Tech claims with no GitHub and a reward-fund pitch. Blocker: "no catalyst" (bottom-buy rule) plus "split crowd". (V1, V3, V6, V13)  
   CA `DockQT38ifhagGx95wfPjvW8qWrqJjdWapUv4oFDchip`
 - 19:07Z Banana (FINAL_STRETCH, $16,111 mcap, $4,146 5m vol): PASS at conviction 3, PASS — 13-copy banana field, and this is not the leader (BFS has 8x its 5m volume). Up 329% in the hour, 2% off the peak, $4k on the 5m at 0.84x pace. A spike in a crowd, not a setup (V1, V6, V13).  
@@ -88,18 +96,10 @@ Updated 2026-11-15T19:14:48Z (paper trading, never real money)
   CA `BDPm9gPHCRyo2qjcRrYPsXexmbRwuuHQZo2qhhYXpump`
 - 19:05Z WSB (DIP, $121,337 mcap, $11,577 5m vol): REJECT, Dev holds 5.8% (>1%) (V13, V17)  
   CA `B82PFKmT4aM38EUUqVoZs6sZdAfxDHHrB6DSXxCKpump`
-- 19:01Z DIGS (MIGRATED, $174,401 mcap, $2,025 5m vol): REJECT, Bundles: 10 linked wallet cluster(s) hold 100.0% of supply (>20%) (V17)  
-  CA `9QT8K685Hrae4k11dhGXirdtpfAaimExtyfwt8cPpump`
-- 18:59Z gtacoin (DIP, $277,069 mcap, $3,648 5m vol): REJECT, Bundles: 6 linked wallet cluster(s) hold 96.9% of supply (>20%) (V17)  
-  CA `DSKM3d518BBaQShSKqaqZcG1XMRf81UFB6a1eavhSTNK`
-- 18:47Z RUDOLPH (FINAL_STRETCH, $23,974 mcap, $62,663 5m vol): PASS at conviction 3, PASS: chasing spike. RUDOLPH is up 185% on 5m with volume 9x its hourly pace, sitting 9% off a $26k high in a 22-copy reindeer field. Blocker: "chasing spike" (V1, V6).  
-  CA `FiRgbSzUhrMstN2Errym9T7LrH6t9TvzwTxTEk61pump`
-- 18:46Z BFS (MIGRATED, $38,218 mcap, $40,441 5m vol): PASS at conviction 3, PASS: BFS is a 10-minute-old pumpswap coin in a 25-copy banana field. It's down 31% in 5 minutes and has printed no higher low. Blockers: "too new" and "no breakout" (V1, V3, V6).  
-  CA `A3vB4dggaaMScchjNW9WifagMRiWaWtDAzunooDYcREQ`
 
 ## What its skips did next (last 48h)
 A skip "ran" if the coin reached the first target (1.5x) from the skip price before a 20% drop, "dumped" if the drop came first. Sampled every 10 min, followed 6h.
-- top 10 over 25%: blocked 21, ran 2, dumped 15, flat 2, open 2 (saving losses: keep it)
+- top 10 over 25%: blocked 21, ran 2, dumped 15, flat 1, open 3 (saving losses: keep it)
   - ran: rockstar up to 1.95x  
     CA `9HFUEab7sompLDPTAaTGkryMNGbtBaFMhHMVpJEBpump`
   - ran: VI up to 1.71x  
@@ -121,7 +121,7 @@ A skip "ran" if the coin reached the first target (1.5x) from the skip price bef
     CA `9Ei1d97U7M8m4t3fof7c8MUECtmzgqbQCo81cGGzpump`
   - ran: twert up to 1.81x  
     CA `8WvWwttzaLfW1nbjx6wmYL5jozWpvy95WktAg5cipump`
-- near the high / chasing: blocked 11, ran 1, dumped 10, flat 0, open 0 (saving losses: keep it)
+- near the high / chasing: blocked 12, ran 1, dumped 10, flat 0, open 1 (saving losses: keep it)
   - ran: penny up to 1.6x  
     CA `5gmCPpuktJ7Svjgr4PPJBTosAFKB8K6Z45EGfSUmpump`
 - other: blocked 6, ran 2, dumped 4, flat 0, open 0 (saving losses: keep it)
@@ -129,14 +129,14 @@ A skip "ran" if the coin reached the first target (1.5x) from the skip price bef
     CA `G1KuEMuLrxWynFddQVnpdkQAhYFBwNJiuz1Lv7d9pump`
   - ran: SI up to 1.94x  
     CA `H2irVtPLfKoBJ69itZmhsedSPwBUTaubmUavc6Uapump`
-- falling knife (code): blocked 5, ran 0, dumped 5, flat 0, open 0 (saving losses: keep it)
-- crowd leaving / fading volume: blocked 5, ran 1, dumped 3, flat 0, open 1 (saving losses: keep it)
+- dev share over 1%: blocked 5, ran 1, dumped 0, flat 0, open 4 (too few played out to judge)
+  - ran: PANICSELL up to 1.74x  
+    CA `82Z6CcE5g3o1jW3vgtcqr95jP4XFx8jg1SJe8ikepump`
+- crowd leaving / fading volume: blocked 5, ran 1, dumped 4, flat 0, open 0 (saving losses: keep it)
   - ran: NUREMBERG up to 1.62x  
     CA `7R3RnGmpV9mZXwSyHyKN5LEddiZRmGsYrAZPgDJqpump`
 - bundles over the line: blocked 5, ran 0, dumped 2, flat 0, open 3 (too few played out to judge)
-- dev share over 1%: blocked 4, ran 1, dumped 0, flat 0, open 3 (too few played out to judge)
-  - ran: PANICSELL up to 1.74x  
-    CA `82Z6CcE5g3o1jW3vgtcqr95jP4XFx8jg1SJe8ikepump`
+- falling knife (code): blocked 4, ran 0, dumped 4, flat 0, open 0 (saving losses: keep it)
 
 ## Daily review (2026-11-15, claude-opus-5-5)
 Nothing shows a positive after-cost edge. Across all 93 settled coins the simple plan nets -5.5%: about +4.3% before costs, wiped out by an estimated 9.8% round-trip cost on a $10 buy. With a 1.5x target, a -20% stop and 10% cost, a setup needs about 43% of coins to run just to break even. FINAL_STRETCH (n=20) sits at 45% and nets +1.5%, but its 95% range on that share is roughly 23-67%, and one winner turning into a loser moves the average by about 3 points. That result is probably optimistic anyway: the simulator appears to fill every stop at exactly -20%, while several coins in the logs went to about zero. The routine model logged zero would-buys in 24h (39 brain calls, all PASS), so there is nothing to compare against what it passed on. Its PASSed coins did better than the checklist failures (-3.3% vs -7.1% net), but both groups lose money. Honest answer: no edge yet, and one day of correlated samples can't show one.
@@ -179,11 +179,11 @@ Not quiet. The movers are fresh pump.fun and PumpSwap launches, and the scan, no
 ## Moving most in its scans, last 30 min (1h volume)
 - NINU: $298,308 1h vol, $102,800 mcap, +106% 1h  
   CA `7jGdREhmTaGj6EVkrhmiadSSiNSvE5w6qfGccud5pump`
-- NIBULL: $211,863 1h vol, $35,156 mcap, -21% 1h  
-  CA `9Em8HMyBDWfii3ZNEjWvmg9S4HoQXEp5VHQfQartpump`
 - Anthropig: $181,568 1h vol, $375,393 mcap, +165% 1h  
   CA `2NUaS6Gfrm5rBuPBn7svHka8t33SrSkpXGQiUvZLpump`
 - ANT: $157,779 1h vol, $241,485 mcap, +578% 1h  
   CA `BDPm9gPHCRyo2qjcRrYPsXexmbRwuuHQZo2qhhYXpump`
-- BFS: $133,181 1h vol, $39,685 mcap, -12% 1h  
-  CA `A3vB4dggaaMScchjNW9WifagMRiWaWtDAzunooDYcREQ`
+- chip: $89,279 1h vol, $23,637 mcap, +217% 1h  
+  CA `DockQT38ifhagGx95wfPjvW8qWrqJjdWapUv4oFDchip`
+- Banana: $58,964 1h vol, $16,111 mcap, +329% 1h  
+  CA `CaCVdBeJP62xRiXnZcUWs9YyTBG9a7cDq7aE5HuMpump`
