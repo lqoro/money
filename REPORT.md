@@ -1,13 +1,13 @@
 # Trencher live report
 
-Updated 2026-11-15T14:11:04Z (paper trading, never real money)
+Updated 2026-11-15T14:26:19Z (paper trading, never real money)
 
 - Equity: $74.23 (-25.8% vs $100 start)
 - Closed trades: 22, 3 wins
 - Fees paid: $14.78 (axiom $2.81, network $9.18, pool $2.66), plus $4.15 lost to slippage
 - New trades: WATCH-ONLY (scans and decides, buys nothing)
 - Brain: subscription, claude-haiku-5-5 for routine calls, claude-opus-5-5 for the daily review; 82 routine calls and 0 plan-limit hits in 48h
-- Watch log: 48 coins being followed, 1386 filed, 0 would-buys (6h follow, sampled every 2 min)
+- Watch log: 50 coins being followed, 1387 filed, 0 would-buys (6h follow, sampled every 2 min)
 
 ## Scorecard (after fees)
 - 22 closed, 3 won (14%), net $-25.79
@@ -73,9 +73,15 @@ Updated 2026-11-15T14:11:04Z (paper trading, never real money)
   CA `H4gHnZ3NCU7Z9XQwGX6YYJNyieGEW8pqwGRUcdSxpump`
 
 ## Last scan
-- 14:10Z: 6 coins, 6 with pairs, 0 passed the market filters, 0 researched
+- 14:25Z: 8 coins, 8 with pairs, 0 passed the market filters, 0 researched
 
 ## Coins it looked at, and why it passed
+- 14:24Z Qubits (FINAL_STRETCH, $23,775 mcap, $5,066 5m vol): REJECT, RugCheck danger: Low Liquidity $90.21  
+  CA `Bp5PCTcWrwjV9Sn87oJPCPEbqogDeXuetNaWDUT9pump`
+- 14:21Z DIGS (MIGRATED, $146,591 mcap, $2,031 5m vol): REJECT, Bundles: 10 linked wallet cluster(s) hold 100.0% of supply (>20%) (V17)  
+  CA `9QT8K685Hrae4k11dhGXirdtpfAaimExtyfwt8cPpump`
+- 14:18Z gtacoin (MIGRATED, $494,484 mcap, $9,834 5m vol): REJECT, Bundles: 6 linked wallet cluster(s) hold 96.9% of supply (>20%) (V17)  
+  CA `DSKM3d518BBaQShSKqaqZcG1XMRf81UFB6a1eavhSTNK`
 - 14:09Z GATO (DIP, $6,585,262 mcap, $3,918 5m vol): REJECT, Dev holds 3.0% (>1%) (V13, V17)  
   CA `HsprHxBRgiVaQdRf3TnKNuZZtaX9JUSPgMFdAkk6pump`
 - 13:59Z twert (MIGRATED, $70,173 mcap, $11,847 5m vol): PASS at conviction 3, PASS: twert is 24 minutes old, still bleeding off a 13x spike, with no printed higher low and flow under its hourly pace. Blockers: too new, no higher low, flow below pace, split crowd. (V1, V6)  
@@ -90,16 +96,10 @@ Updated 2026-11-15T14:11:04Z (paper trading, never real money)
   CA `9QT8K685Hrae4k11dhGXirdtpfAaimExtyfwt8cPpump`
 - 13:32Z gtacoin (MIGRATED, $366,232 mcap, $3,028 5m vol): REJECT, Bundles: 6 linked wallet cluster(s) hold 96.9% of supply (>20%) (V17)  
   CA `DSKM3d518BBaQShSKqaqZcG1XMRf81UFB6a1eavhSTNK`
-- 13:23Z GATO (DIP, $6,842,114 mcap, $2,408 5m vol): REJECT, Dip with fading attention is a falling knife, not a dip (5m at 0.57x the hour's pace, under 0.6x)  
-  CA `HsprHxBRgiVaQdRf3TnKNuZZtaX9JUSPgMFdAkk6pump`
-- 13:15Z PNUT (MIGRATED, $38,506 mcap, $32,611 5m vol): PASS at conviction 3, PASS: chasing spike. PNUT is 3 minutes old, up 30% on 5m at 12x its hourly pace, with no printed higher low and a 16-copy farm field splitting the crowd. Blockers: "chasing spike", "too new", "split crowd" (V1, V3, V6).  
-  CA `CNn4KxEs3wrTgBfgRaiL6bMbEb7SyWfLoaHiQNyopump`
-- 13:13Z twert (FINAL_STRETCH, $16,788 mcap, $6,943 5m vol): REJECT, Top 10 hold 29.1% ex-pool (>25%) (V13)  
-  CA `8WvWwttzaLfW1nbjx6wmYL5jozWpvy95WktAg5cipump`
 
 ## What its skips did next (last 48h)
 A skip "ran" if the coin reached the first target (1.5x) from the skip price before a 20% drop, "dumped" if the drop came first. Sampled every 10 min, followed 6h.
-- RugCheck danger: blocked 17, ran 5, dumped 10, flat 1, open 1 (saving losses: keep it)
+- RugCheck danger: blocked 18, ran 5, dumped 10, flat 1, open 2 (saving losses: keep it)
   - ran: Ivy up to 1.88x  
     CA `DxNF3Qxd8XeUBdz7ReRdoiFzRmNDKbSz4c2oA7aRpump`
   - ran: SI up to 1.93x  
@@ -173,13 +173,13 @@ Nothing shows a positive after-cost edge. Across all 93 settled coins the simple
 Not quiet, but thin: three movers clear the $10k 5-minute bar on scan_movers, and only HSI and SDEX have it with real buy-leaning flow. The live theme is fresh pump.fun launches with buyers, HSI (Human Superinu, 12 min old, $334k mcap, $208k 5m, 68% buys, +302% 1h) and XXX (12 min old, $9.3k mcap, $7.4k 5m, 65% buys), with the animal/character name angle (HSI, DOUG, DIGS) only really alive on HSI, since DOUG and DIGS are fading. Joke and brand-style names that launched in the last few hours are dumping: pls -93%, hermano -89% ($64 on 5m), PEER -87% with zero 5m buys, BITLY -62%, Gomez -60%. The crawler's news narratives (hack laundering, Trump coin, DOGE) have no volume on this list, so attention is on new names, not stories. Setups to research now, not chase: HSI fits the MIGRATED screen on paper (under 12h, mcap over $30k, 5m over $10k) but is a 12-minute-old +300% hour, so holder, dev and bundle checks come first; SDEX is the cleanest (Raydium, $1.31M, $23k 5m, 62% buys, 5 hours old). I used scan_movers figures over the crawler's, since its hermano, PEER, SDEX and Gomez numbers don't match. Nothing verified; paper only, not advice.
 
 ## Moving most in its scans, last 30 min (1h volume)
-- HSI: $471,764 1h vol, $333,741 mcap, +302% 1h  
-  CA `93hTYKGhD43KeW4eQVtpL95WKUZpdEXE2F3XCpNipump`
+- SDEX: $282,721 1h vol, $1,369,535 mcap, +3% 1h  
+  CA `J1sHNawTwQrRCga3w5uREEwTbrDZKT5j6WobLQKZSDEX`
 - twert: $160,019 1h vol, $70,173 mcap, +131% 1h  
   CA `8WvWwttzaLfW1nbjx6wmYL5jozWpvy95WktAg5cipump`
-- PNUT: $91,766 1h vol, $1,837 mcap, -93% 1h  
-  CA `CNn4KxEs3wrTgBfgRaiL6bMbEb7SyWfLoaHiQNyopump`
-- rockstar: $81,024 1h vol, $101,194 mcap, +1% 1h  
-  CA `9HFUEab7sompLDPTAaTGkryMNGbtBaFMhHMVpJEBpump`
-- XXX: $74,965 1h vol, $8,989 mcap, +61% 1h  
+- XXX: $81,781 1h vol, $8,409 mcap, +50% 1h  
   CA `3JCcs5NAJ1VCuULokp7foUTJ9FaPUJW6PGQZAx5tpump`
+- gtacoin: $75,524 1h vol, $494,484 mcap, +31% 1h  
+  CA `DSKM3d518BBaQShSKqaqZcG1XMRf81UFB6a1eavhSTNK`
+- Buttly: $73,738 1h vol, $29,649 mcap, +976% 1h  
+  CA `B4D9FbwPyC94i8Ze9aoUaqrkhzbcMFzQafLfAoCJF68c`
