@@ -1,13 +1,13 @@
 # Trencher live report
 
-Updated 2026-11-15T21:00:19Z (paper trading, never real money)
+Updated 2026-11-15T21:15:30Z (paper trading, never real money)
 
 - Equity: $74.23 (-25.8% vs $100 start)
 - Closed trades: 22, 3 wins
 - Fees paid: $14.78 (axiom $2.81, network $9.18, pool $2.66), plus $4.15 lost to slippage
 - New trades: WATCH-ONLY (scans and decides, buys nothing)
-- Brain: subscription, claude-haiku-5-5 for routine calls, claude-opus-5-5 for the daily review; 138 routine calls and 0 plan-limit hits in 48h
-- Watch log: 98 coins being followed, 1447 filed, 0 would-buys (6h follow, sampled every 2 min)
+- Brain: subscription, claude-haiku-5-5 for routine calls, claude-opus-5-5 for the daily review; 141 routine calls and 0 plan-limit hits in 48h
+- Watch log: 97 coins being followed, 1455 filed, 0 would-buys (6h follow, sampled every 2 min)
 
 ## Scorecard (after fees)
 - 22 closed, 3 won (14%), net $-25.79
@@ -73,40 +73,40 @@ Updated 2026-11-15T21:00:19Z (paper trading, never real money)
   CA `H4gHnZ3NCU7Z9XQwGX6YYJNyieGEW8pqwGRUcdSxpump`
 
 ## Last scan
-- 20:59Z: 4 coins, 3 with pairs, 0 passed the market filters, 0 researched
+- 21:14Z: 6 coins, 5 with pairs, 1 passed the market filters, 1 researched
 
 ## Coins it looked at, and why it passed
+- 21:14Z BJB (MIGRATED, $469,564 mcap, $101,156 5m vol): REJECT, Top 10 hold 57.3% ex-pool (>25%) (V13)  
+  CA `CHuLmJXz8F3YXUyv984PRxeECfSvqD5MZ3W1FoDmpump`
+- 21:11Z DYC (MIGRATED, $68,523 mcap, $4,857 5m vol): REJECT, Dev holds 1.2% (>1%) (V13, V17)  
+  CA `Da5Gbwd8GCuKwd5fv4pk7bBh12UKjUg5iH3VthDWCity`
+- 21:11Z UTYAN (FINAL_STRETCH, $21,609 mcap, $10,569 5m vol): REJECT, Top 10 hold 26.7% ex-pool (>25%) (V13)  
+  CA `Anw7pNWsHR4oRT5Mb5fYDghjhBD4wNtJ9xqT8uvopump`
+- 21:07Z GTA (MIGRATED, $105,361 mcap, $13,153 5m vol): PASS at conviction 3, PASS: flow below pace and no printed higher low on a bottom buy. Theme pace is 0.56x. Wait. (V1, V6)  
+  CA `EwVUPKyysUxz1Ej2s6AczqqXjK8EwTNokCtvk38Xpump`
+- 21:03Z LittleGuy (FINAL_STRETCH, $19,929 mcap, $32,563 5m vol): PASS at conviction 3, PASS: LittleGuy is 2.6 minutes old, up 552% on the 5m, and one of 13 same-ticker copies with no story behind it. Blockers "too new", "chasing spike", "split crowd". (V1, V6, V13)  
+  CA `6Sc8jZcQT8zeM6j1v5bKbfyxY2Kn8j7EmrCXgmuZpump`
+- 21:01Z Brian (MIGRATED, $185,421 mcap, $23,354 5m vol): REJECT, Dev holds 1.9% (>1%) (V13, V17)  
+  CA `9WGvvKDQSkzwmPoGmDCx42C8t1xyvrV3hFExCgkrpump`
+- 21:00Z GATO (DIP, $7,018,962 mcap, $6,188 5m vol): REJECT, Dev holds 3.0% (>1%) (V13, V17)  
+  CA `HsprHxBRgiVaQdRf3TnKNuZZtaX9JUSPgMFdAkk6pump`
 - 20:57Z PURR (MIGRATED, $2,320,065 mcap, $5,732 5m vol): REJECT, Top 10 hold 26.6% ex-pool (>25%) (V13)  
   CA `8RNUw4N655VSrZKuhGdywhbSMDTrheguFPfxbpE2NZHQ`
 - 20:42Z NCAT (DIP, $49,156 mcap, $35,330 5m vol): PASS at conviction 3, PASS — NVIDIA Cat is the leader of a cat/NVIDIA theme running at 0.41x its hourly pace, and I found no catalyst. A bottom buy needs both. Clean holders don't change that (V1, V6).  
   CA `Cxrw8hPBcbboL18wLhHJCt1CfLe3JSdfofLrZ8ABpump`
 - 20:41Z FRANK (FINAL_STRETCH, $27,475 mcap, $26,525 5m vol): PASS at conviction 2, PASS: chasing spike, one minute old, CA not on the project's site. Blocker "chasing spike" plus "too new". Farm until proven otherwise (V1, V3, V6, V13).  
   CA `52s4znkZ8Z6MSxMxNbssRedvEHUase3KSiLqKpzpump`
-- 20:41Z HENSEN (DIP, $63,993 mcap, $56,996 5m vol): PASS at conviction 3, PASS: 8 minutes old, up 37% on the last 5m, no printed higher low, and its theme is moving at 0.66x its hourly pace across 21 copies. Clean holders don't fix any of that (V1, V6, V13).  
-  CA `FfXDcTtDk5tzETc9QGRsy8ZSV2TGm4DXXpHXpjVVpump`
-- 20:39Z VICE (MIGRATED, $159,306 mcap, $6,414 5m vol): REJECT, Top 10 hold 25.9% ex-pool (>25%) (V13)  
-  CA `CnXTC8NutHZq2zaPqYz6bxuLYnq775EnvUBHjRqxpump`
-- 20:38Z CBUCKS (MIGRATED, $3,639,104 mcap, $3,083 5m vol): REJECT, Top 10 hold 26.2% ex-pool (>25%) (V13)  
-  CA `DtcicPCKTKeAh7TDEzTym3hXeoHAoMiBdYJhMYxZpump`
-- 20:37Z Anthropig (MIGRATED, $754,621 mcap, $6,389 5m vol): PASS at conviction 4, PASS — clean original, but it's 4% off a $787k peak after a ~5x run in three hours. Chasing the top (V1, V6). Blocker: chasing.  
-  CA `2NUaS6Gfrm5rBuPBn7svHka8t33SrSkpXGQiUvZLpump`
-- 20:37Z Emojis (MIGRATED, $480,895 mcap, $10,127 5m vol): REJECT, RugCheck danger: Single holder ownership 47.87%  
-  CA `5yXxVaEA4mE9Xi5qJJwBqPNj192S2xaHrQBo3R3Xpump`
-- 20:36Z paperdog (MIGRATED, $54,691 mcap, $5,204 5m vol): PASS at conviction 3, PASS: paperdog is a 14-copy same-name field that spiked 105% in an hour, flow is net sell, and no higher low prints. Chasing a spike with no story behind it (V1, V6, V13).  
-  CA `6wnMkKcJTsvFy2ksWeKopm9YMs2Xpy4jSHuQB12Mpump`
-- 20:35Z TAIL (MIGRATED, $131,810 mcap, $13,264 5m vol): PASS at conviction 3, PASS: target too close (prior high $168k is only 1.28x from $131.8k), a 15.7% single bundle cluster, and a 0.8-day-old site that doesn't show the CA. Farm pitch. (V3, V6, V13)  
-  CA `2tHPtosmh76mmJHeskid7nYUeHjGUQ4ZAYChwdGJpump`
 
 ## What its skips did next (last 48h)
 A skip "ran" if the coin reached the first target (1.5x) from the skip price before a 20% drop, "dumped" if the drop came first. Sampled every 10 min, followed 6h.
-- flow below pace: blocked 25, ran 4, dumped 16, flat 2, open 3 (saving losses: keep it)
+- flow below pace: blocked 26, ran 4, dumped 16, flat 2, open 4 (saving losses: keep it)
   - ran: PASSED up to 1.73x  
     CA `3XaH8VPUaUegqmnkYA8PXCWqQqD8doqdsGGfZyoYpump`
   - ran: ANT up to 1.52x  
     CA `BDPm9gPHCRyo2qjcRrYPsXexmbRwuuHQZo2qhhYXpump`
   - ran: ANT up to 1.58x  
     CA `7H2sHeLHyHR8jxENGmsqn7RxTkYZa4KwXvKYcoxBpump`
-- top 10 over 25%: blocked 23, ran 4, dumped 14, flat 2, open 3 (saving losses: keep it)
+- top 10 over 25%: blocked 25, ran 4, dumped 15, flat 2, open 4 (saving losses: keep it)
   - ran: rockstar up to 1.95x  
     CA `9HFUEab7sompLDPTAaTGkryMNGbtBaFMhHMVpJEBpump`
   - ran: VI up to 1.71x  
@@ -120,7 +120,7 @@ A skip "ran" if the coin reached the first target (1.5x) from the skip price bef
     CA `AiQUqe4zjiDssth2FsCoeQVaGtCtHYyKGX8U52rWpump`
   - ran: FUTA up to 2.77x  
     CA `FxoXV4C8DTSYeg5dSXrEsr45zzr8tpNbsrpoiZ8Kpump`
-- too new / sniping: blocked 19, ran 5, dumped 13, flat 0, open 1 (saving losses: keep it)
+- too new / sniping: blocked 20, ran 5, dumped 13, flat 0, open 2 (saving losses: keep it)
   - ran: Chick up to 1.66x  
     CA `Dueav76X9spnoLomhM2jMkkWorVggbeWucLs3YLupump`
   - ran: TOOLS up to 1.83x  
@@ -130,14 +130,14 @@ A skip "ran" if the coin reached the first target (1.5x) from the skip price bef
 - near the high / chasing: blocked 15, ran 1, dumped 12, flat 0, open 2 (saving losses: keep it)
   - ran: penny up to 1.6x  
     CA `5gmCPpuktJ7Svjgr4PPJBTosAFKB8K6Z45EGfSUmpump`
+- dev share over 1%: blocked 6, ran 1, dumped 1, flat 0, open 4 (too few played out to judge)
+  - ran: PANICSELL up to 1.74x  
+    CA `82Z6CcE5g3o1jW3vgtcqr95jP4XFx8jg1SJe8ikepump`
 - other: blocked 6, ran 2, dumped 4, flat 0, open 0 (saving losses: keep it)
   - ran: TaoTao up to 1.53x  
     CA `G1KuEMuLrxWynFddQVnpdkQAhYFBwNJiuz1Lv7d9pump`
   - ran: SI up to 1.94x  
     CA `H2irVtPLfKoBJ69itZmhsedSPwBUTaubmUavc6Uapump`
-- dev share over 1%: blocked 5, ran 1, dumped 1, flat 0, open 3 (too few played out to judge)
-  - ran: PANICSELL up to 1.74x  
-    CA `82Z6CcE5g3o1jW3vgtcqr95jP4XFx8jg1SJe8ikepump`
 - crowd leaving / fading volume: blocked 5, ran 1, dumped 4, flat 0, open 0 (saving losses: keep it)
   - ran: NUREMBERG up to 1.62x  
     CA `7R3RnGmpV9mZXwSyHyKN5LEddiZRmGsYrAZPgDJqpump`
@@ -186,16 +186,16 @@ Nothing shows a positive after-cost edge. Across all 93 settled coins the simple
 - [2026-11-02 20:25] I expected Slingoor, a clean MIGRATED leader with $25k of 5m flow at pace and a 0.77 buy share, to retest its $408k high from $304k. It never went green (0.98x peak) and hit the -20% stop in 2 minutes, a -$2.86 probe. My own thesis admitted there was no printed higher low after a peak only 6 minutes old, so this confirms the money-shape rule: buy share and flow are not structure (V1, V6). Next time a MIGRATED pullback with no higher low above the hourly low is a PASS with blocker "no higher low", not a probe. This is one loss, so it adds no new ban beyond the rule I already have.
 
 ## Meta right now
-Not quiet. The meta on the scan is AI-lab puns and cat animals, both with real volume. ANT (Anthropic, $264k cap, $11k 5m, 90% buys, +92% 1h), Anthropig and NVIDIA Cat (NCAT, $55k cap, $26k 5m) ride AI-company names, and MEIMEI (The Retarded Cat, $20.7k 5m, +1151% 1h) runs the animal lane. Chinese-language puns are split: NINU ($75k cap, $15k 5m, 65% buys) still has buyers, while NIBULL is dead at $7 of 5m volume. The holiday play is fading (The Xmas Bull, $2.5k 5m). Setups to research: ANT first, after confirming the original CA because two tokens share the ticker; NCAT as the cat-plus-NVIDIA cross; and DacityCoin (DYC) only after bundle and farm checks, since $215k 5m on a $101k cap is over 2x turnover (V13). RUDOLPH, Banana and BFS from the web brief don't appear in the scan, so they're unverified and not setups here, and no hack-named coins are included. Paper only, not advice.
+The meta is alive, not quiet. Two themes show up across several movers: AI-company and Jensen Huang puns (Brian "Anthropic Cat" at $180k cap, $13.7k 5m, 89% buys; HENSEN at $64k cap, $33k 5m, 87% buys) and cat, animal and GTA/Vice City tokens (NCAT at $47k cap, $18k 5m, 57% buys; VICE "Meme Vice City" at $172k cap, $7k 5m, 68% buys; LittleGuy at $20k cap, $32k 5m, minutes old). Fading: Bob the Buck, JENSENATOR and VERIFIED have collapsed 5m volume, and the older GTA6CAT sits at $7M with $6k 5m and 44% buys. The web summary and the scan disagree: the "ANT" at $264k isn't what scan_movers shows (CA BDPm..., $1.4k cap, zero 5m, -99.5% 1h), and NINU shows $741 5m, not $15k, so I won't treat either as live, and any ANT research has to start by confirming the original CA. Setups to research: HENSEN and NCAT as the Jensen and cat-NVIDIA crosses, with the +78% and +37% 1h runs as a reason to be careful about entering late; Brian only with a hard stop under the recent spike. Holder, dev and bundle checks run per coin before any buy. Paper only, not advice.
 
 ## Moving most in its scans, last 30 min (1h volume)
-- NCAT: $274,323 1h vol, $46,622 mcap, +37% 1h  
-  CA `Cxrw8hPBcbboL18wLhHJCt1CfLe3JSdfofLrZ8ABpump`
-- VICE: $136,054 1h vol, $171,991 mcap, +382% 1h  
-  CA `CnXTC8NutHZq2zaPqYz6bxuLYnq775EnvUBHjRqxpump`
-- CRIMECAT: $107,801 1h vol, $4,964 mcap, +25% 1h  
-  CA `ff5rD21oxjMznMZbmXoJWrrhcZtJVJQ2vgjeDYbpump`
-- HENSEN: $106,608 1h vol, $63,993 mcap, +78% 1h  
-  CA `FfXDcTtDk5tzETc9QGRsy8ZSV2TGm4DXXpHXpjVVpump`
-- Emojis: $91,842 1h vol, $468,173 mcap, +892% 1h  
-  CA `5yXxVaEA4mE9Xi5qJJwBqPNj192S2xaHrQBo3R3Xpump`
+- GTA: $261,989 1h vol, $106,135 mcap, +6% 1h  
+  CA `EwVUPKyysUxz1Ej2s6AczqqXjK8EwTNokCtvk38Xpump`
+- ANT: $161,954 1h vol, $1,358 mcap, -98% 1h  
+  CA `7H2sHeLHyHR8jxENGmsqn7RxTkYZa4KwXvKYcoxBpump`
+- Brian: $142,018 1h vol, $179,857 mcap, +446% 1h  
+  CA `9WGvvKDQSkzwmPoGmDCx42C8t1xyvrV3hFExCgkrpump`
+- DYC: $135,900 1h vol, $69,737 mcap, -44% 1h  
+  CA `Da5Gbwd8GCuKwd5fv4pk7bBh12UKjUg5iH3VthDWCity`
+- BJB: $114,002 1h vol, $549,417 mcap, +1288% 1h  
+  CA `CHuLmJXz8F3YXUyv984PRxeECfSvqD5MZ3W1FoDmpump`
