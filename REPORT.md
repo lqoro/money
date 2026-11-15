@@ -1,13 +1,13 @@
 # Trencher live report
 
-Updated 2026-11-15T15:11:35Z (paper trading, never real money)
+Updated 2026-11-15T15:26:40Z (paper trading, never real money)
 
 - Equity: $74.23 (-25.8% vs $100 start)
 - Closed trades: 22, 3 wins
 - Fees paid: $14.78 (axiom $2.81, network $9.18, pool $2.66), plus $4.15 lost to slippage
 - New trades: WATCH-ONLY (scans and decides, buys nothing)
-- Brain: subscription, claude-haiku-5-5 for routine calls, claude-opus-5-5 for the daily review; 86 routine calls and 0 plan-limit hits in 48h
-- Watch log: 60 coins being followed, 1391 filed, 0 would-buys (6h follow, sampled every 2 min)
+- Brain: subscription, claude-haiku-5-5 for routine calls, claude-opus-5-5 for the daily review; 90 routine calls and 0 plan-limit hits in 48h
+- Watch log: 62 coins being followed, 1395 filed, 0 would-buys (6h follow, sampled every 2 min)
 
 ## Scorecard (after fees)
 - 22 closed, 3 won (14%), net $-25.79
@@ -73,9 +73,21 @@ Updated 2026-11-15T15:11:35Z (paper trading, never real money)
   CA `H4gHnZ3NCU7Z9XQwGX6YYJNyieGEW8pqwGRUcdSxpump`
 
 ## Last scan
-- 15:10Z: 5 coins, 5 with pairs, 0 passed the market filters, 0 researched
+- 15:26Z: 3 coins, 3 with pairs, 0 passed the market filters, 0 researched
 
 ## Coins it looked at, and why it passed
+- 15:24Z PUMPDEX (DIP, $34,959 mcap, $14,494 5m vol): PASS at conviction 3, PASS: PUMP INDEX is one of 18 "index" copies with the theme at 0.12x its hourly pace, no X, top 10 at 17.3%, and a 7-day-old launcher board as its only web footprint. Blocker: dead story on a DIP (V1, V3, V6, V13).  
+  CA `Dq2tWuLu9rtSP8TTJbxBRcds1avBgtFJ7y4VGV5vpump`
+- 15:22Z Nyajira (DIP, $51,930 mcap, $7,329 5m vol): REJECT, Dip with fading attention is a falling knife, not a dip (5m at 0.38x the hour's pace, under 0.6x)  
+  CA `8cWGfiHyKqxgLrLtkPt2NnLkSUV2JbcLBf4RN6Fapump`
+- 15:13Z FIX6900 (no setup, $13,424 mcap, $9,189 5m vol): REJECT, No setup fits: not Final Stretch, not a migrated runner, not a healthy dip  
+  CA `3unDHbPUsLqQtoHgvuCsRSArnuhVjhsn11vRht5Xpump`
+- 15:13Z HELL (FINAL_STRETCH, $20,192 mcap, $9,391 5m vol): PASS at conviction 3, PASS: chasing a spike, 11 minutes old, up 26% on 5m and 735% on the hour, with no story behind it. That's a farm candle (V1, V6, V13).  
+  CA `8cF5TrfQTQb1wtQosNPkRRPhfie2xKu8fGNMJuLdpump`
+- 15:12Z WANTED (DIP, $89,991 mcap, $17,242 5m vol): PASS at conviction 4, PASS — bottom-buy gate: Lucia theme volume is at 0.86x its hourly pace, under the 1x bar. The catalyst is real (GTA VI launches Nov 19), but the flow isn't there yet, and the 15m chart is saw-tooth with no printed higher low. (V1, V3, V13)  
+  CA `GUkwiQYxXzutiaF1io6i1j67BDd7UzJsgMinLRQ8pump`
+- 15:11Z SI (MIGRATED, $76,233 mcap, $24,687 5m vol): PASS at conviction 3, PASS: too new. Sexy Inu is 27 minutes old and still bleeding off its $125k spike, with 5m flow below pace and no printed higher low. Blocker: "too new" (V1, V6).  
+  CA `H32xctVzxwiSTZ4vg7BgW5jZRAdfbC7aw2tXmqjwpump`
 - 15:09Z Qubits (FINAL_STRETCH, $15,442 mcap, $2,323 5m vol): REJECT, RugCheck danger: Low Liquidity $63.05  
   CA `Bp5PCTcWrwjV9Sn87oJPCPEbqogDeXuetNaWDUT9pump`
 - 15:03Z gtacoin (MIGRATED, $603,172 mcap, $7,857 5m vol): REJECT, Bundles: 6 linked wallet cluster(s) hold 96.9% of supply (>20%) (V17)  
@@ -84,18 +96,6 @@ Updated 2026-11-15T15:11:35Z (paper trading, never real money)
   CA `4KK5kAhvBjU5RD2CXjCnxpdtedKmvpG4i3KbMvTqpump`
 - 15:01Z GTA (MIGRATED, $115,240 mcap, $10,234 5m vol): REJECT, Top 10 hold 34.1% ex-pool (>25%) (V13)  
   CA `9iypDvJZvy5RRC6gKdKVxNbLZevYViYqcW7jQ9nwpump`
-- 14:55Z GATO (DIP, $6,741,818 mcap, $4,133 5m vol): REJECT, Dev holds 3.0% (>1%) (V13, V17)  
-  CA `HsprHxBRgiVaQdRf3TnKNuZZtaX9JUSPgMFdAkk6pump`
-- 14:49Z DOUG (MIGRATED, $125,604 mcap, $2,079 5m vol): REJECT, Top 10 hold 31.2% ex-pool (>25%) (V13)  
-  CA `8UqE9m2rMoxUzrz4kBVWx5ia3PiA2aGD6kiZUoiUpump`
-- 14:49Z rockstar (DIP, $59,733 mcap, $3,190 5m vol): REJECT, Top 10 hold 25.2% ex-pool (>25%) (V13)  
-  CA `9HFUEab7sompLDPTAaTGkryMNGbtBaFMhHMVpJEBpump`
-- 14:49Z SI (no setup, $14,454 mcap, $21,396 5m vol): REJECT, No setup fits: not Final Stretch, not a migrated runner, not a healthy dip  
-  CA `H2irVtPLfKoBJ69itZmhsedSPwBUTaubmUavc6Uapump`
-- 14:38Z XXX (FINAL_STRETCH, $17,891 mcap, $8,229 5m vol): PASS at conviction 3, PASS: XXX is the leader of a 12-copy ticker field with 0.13x theme pace, 5m flow under $10k, and a launcher-bot site with no GitHub. Blocker: "crowd leaving." (V1, V6, V13)  
-  CA `3JCcs5NAJ1VCuULokp7foUTJ9FaPUJW6PGQZAx5tpump`
-- 14:36Z FUTA (MIGRATED, $111,722 mcap, $2,336 5m vol): REJECT, Top 10 hold 26.0% ex-pool (>25%) (V13)  
-  CA `8JCsa61htnPj2af7g1KSyU1UEncruHE1Ph9aNR6rpump`
 
 ## What its skips did next (last 48h)
 A skip "ran" if the coin reached the first target (1.5x) from the skip price before a 20% drop, "dumped" if the drop came first. Sampled every 10 min, followed 6h.
@@ -106,34 +106,34 @@ A skip "ran" if the coin reached the first target (1.5x) from the skip price bef
     CA `AiQUqe4zjiDssth2FsCoeQVaGtCtHYyKGX8U52rWpump`
   - ran: FUTA up to 2.77x  
     CA `FxoXV4C8DTSYeg5dSXrEsr45zzr8tpNbsrpoiZ8Kpump`
-- top 10 over 25%: blocked 17, ran 1, dumped 12, flat 2, open 2 (saving losses: keep it)
+- top 10 over 25%: blocked 16, ran 1, dumped 11, flat 2, open 2 (saving losses: keep it)
   - ran: rockstar up to 1.95x  
     CA `9HFUEab7sompLDPTAaTGkryMNGbtBaFMhHMVpJEBpump`
-- too new / sniping: blocked 11, ran 3, dumped 7, flat 0, open 1 (saving losses: keep it)
+- too new / sniping: blocked 13, ran 3, dumped 7, flat 0, open 3 (saving losses: keep it)
   - ran: Chick up to 1.66x  
     CA `Dueav76X9spnoLomhM2jMkkWorVggbeWucLs3YLupump`
   - ran: TOOLS up to 1.83x  
     CA `9Ei1d97U7M8m4t3fof7c8MUECtmzgqbQCo81cGGzpump`
   - ran: twert up to 1.81x  
     CA `8WvWwttzaLfW1nbjx6wmYL5jozWpvy95WktAg5cipump`
-- flow below pace: blocked 10, ran 1, dumped 7, flat 2, open 0 (saving losses: keep it)
+- flow below pace: blocked 12, ran 1, dumped 8, flat 2, open 1 (saving losses: keep it)
   - ran: PASSED up to 1.73x  
     CA `3XaH8VPUaUegqmnkYA8PXCWqQqD8doqdsGGfZyoYpump`
 - near the high / chasing: blocked 7, ran 1, dumped 6, flat 0, open 0 (saving losses: keep it)
   - ran: penny up to 1.6x  
     CA `5gmCPpuktJ7Svjgr4PPJBTosAFKB8K6Z45EGfSUmpump`
-- falling knife (code): blocked 5, ran 0, dumped 4, flat 0, open 1 (saving losses: keep it)
+- falling knife (code): blocked 6, ran 0, dumped 4, flat 0, open 2 (saving losses: keep it)
 - crowd leaving / fading volume: blocked 5, ran 1, dumped 4, flat 0, open 0 (saving losses: keep it)
   - ran: NUREMBERG up to 1.62x  
     CA `7R3RnGmpV9mZXwSyHyKN5LEddiZRmGsYrAZPgDJqpump`
-- falling knife / no higher low: blocked 4, ran 1, dumped 0, flat 3, open 0 (too few played out to judge)
-  - ran: CateGiving up to 1.57x  
-    CA `5XasjCnMPTczL9VZTDHgbK5sQzwkjnu41oLeHf5Wpump`
-- other: blocked 4, ran 2, dumped 2, flat 0, open 0 (mixed)
+- other: blocked 5, ran 2, dumped 3, flat 0, open 0 (mixed)
   - ran: TaoTao up to 1.53x  
     CA `G1KuEMuLrxWynFddQVnpdkQAhYFBwNJiuz1Lv7d9pump`
   - ran: SI up to 1.94x  
     CA `H2irVtPLfKoBJ69itZmhsedSPwBUTaubmUavc6Uapump`
+- falling knife / no higher low: blocked 4, ran 1, dumped 0, flat 3, open 0 (too few played out to judge)
+  - ran: CateGiving up to 1.57x  
+    CA `5XasjCnMPTczL9VZTDHgbK5sQzwkjnu41oLeHf5Wpump`
 - bundles over the line: blocked 4, ran 0, dumped 2, flat 0, open 2 (too few played out to judge)
 
 ## Daily review (2026-11-15, claude-opus-5-5)
@@ -175,13 +175,13 @@ Nothing shows a positive after-cost edge. Across all 93 settled coins the simple
 Not quiet. The live meta on scan_movers is fresh dog names on pump.fun with real flow. investinu (pumpswap, $92k mcap, $31.5k 5m, 62% buys, 12 min old) and Stripper Inu (SI, pump.fun, $15k mcap, $16.6k 5m, 56% buys, 6 min old) are the two that pair volume with buyers. A second investinu contract is sitting dead on pump.fun, so confirm which one is the original before anything else (V3, V1). The second theme is 6900-style big-meme riffs. FIX6900 is at $8.8k mcap with $19k 5m and 54% buys, which is more 5-minute volume than market cap, so I treat it as a farm until proven otherwise (V13). Cat and animal names are a smaller third: Nyajira ($42k mcap, $9.3k 5m, 58% buys) is alive, while the older cat coin GATO sits at 33% buys and is fading. Joke and person-brand names are fading: Buttly has zero 5m buys, Pebl and GO are selling, and Tom Pearl and Dogemas are down. Setups to research, not chase: SDEX (Raydium, $1.4M, $24k 5m, 62% buys, 6h old) is the cleanest migrated screen, and investinu and SI are the pump.fun ones to run holder, dev and bundle checks on first. The crawler's HSI isn't in scan_movers, so I didn't count it. Nothing verified; paper only, not advice.
 
 ## Moving most in its scans, last 30 min (1h volume)
-- PUMPDEX: $318,595 1h vol, $29,187 mcap, +7% 1h  
+- SI: $327,083 1h vol, $76,233 mcap, +158% 1h  
+  CA `H32xctVzxwiSTZ4vg7BgW5jZRAdfbC7aw2tXmqjwpump`
+- investinu: $276,220 1h vol, $1,658 mcap, -94% 1h  
+  CA `GSGf1YUfPfJu4JS7rXjrqYCAADNiwTdHnNPv2KcJpump`
+- PUMPDEX: $259,707 1h vol, $34,959 mcap, -41% 1h  
   CA `Dq2tWuLu9rtSP8TTJbxBRcds1avBgtFJ7y4VGV5vpump`
-- gtacoin: $130,433 1h vol, $595,362 mcap, +42% 1h  
-  CA `DSKM3d518BBaQShSKqaqZcG1XMRf81UFB6a1eavhSTNK`
-- Nyajira: $126,908 1h vol, $99,932 mcap, +232% 1h  
-  CA `4KK5kAhvBjU5RD2CXjCnxpdtedKmvpG4i3KbMvTqpump`
-- GTA: $71,930 1h vol, $119,455 mcap, +250% 1h  
-  CA `9iypDvJZvy5RRC6gKdKVxNbLZevYViYqcW7jQ9nwpump`
-- FIX6900: $65,330 1h vol, $8,445 mcap, +319% 1h  
-  CA `3unDHbPUsLqQtoHgvuCsRSArnuhVjhsn11vRht5Xpump`
+- Nyajira: $232,834 1h vol, $46,837 mcap, +68% 1h  
+  CA `8cWGfiHyKqxgLrLtkPt2NnLkSUV2JbcLBf4RN6Fapump`
+- WANTED: $214,401 1h vol, $89,991 mcap, +17% 1h  
+  CA `GUkwiQYxXzutiaF1io6i1j67BDd7UzJsgMinLRQ8pump`
