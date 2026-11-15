@@ -1,13 +1,13 @@
 # Trencher live report
 
-Updated 2026-11-15T16:57:42Z (paper trading, never real money)
+Updated 2026-11-15T17:12:48Z (paper trading, never real money)
 
 - Equity: $74.23 (-25.8% vs $100 start)
 - Closed trades: 22, 3 wins
 - Fees paid: $14.78 (axiom $2.81, network $9.18, pool $2.66), plus $4.15 lost to slippage
 - New trades: WATCH-ONLY (scans and decides, buys nothing)
-- Brain: subscription, claude-haiku-5-5 for routine calls, claude-opus-5-5 for the daily review; 97 routine calls and 0 plan-limit hits in 48h
-- Watch log: 70 coins being followed, 1406 filed, 0 would-buys (6h follow, sampled every 2 min)
+- Brain: subscription, claude-haiku-5-5 for routine calls, claude-opus-5-5 for the daily review; 98 routine calls and 0 plan-limit hits in 48h
+- Watch log: 68 coins being followed, 1408 filed, 0 would-buys (6h follow, sampled every 2 min)
 
 ## Scorecard (after fees)
 - 22 closed, 3 won (14%), net $-25.79
@@ -73,7 +73,7 @@ Updated 2026-11-15T16:57:42Z (paper trading, never real money)
   CA `H4gHnZ3NCU7Z9XQwGX6YYJNyieGEW8pqwGRUcdSxpump`
 
 ## Last scan
-- 16:57Z: 3 coins, 3 with pairs, 0 passed the market filters, 0 researched
+- 17:11Z: 2 coins, 2 with pairs, 0 passed the market filters, 0 researched
 
 ## Coins it looked at, and why it passed
 - 16:53Z Nyajira (MIGRATED, $60,978 mcap, $3,889 5m vol): PASS at conviction 3, PASS. Flow is below pace, 5m is under $10k, and the entry sits mid-range above a fresh higher low in a vamp field. Dead story, no catalyst. (V1, V6)  
@@ -99,12 +99,12 @@ Updated 2026-11-15T16:57:42Z (paper trading, never real money)
 
 ## What its skips did next (last 48h)
 A skip "ran" if the coin reached the first target (1.5x) from the skip price before a 20% drop, "dumped" if the drop came first. Sampled every 10 min, followed 6h.
-- top 10 over 25%: blocked 19, ran 2, dumped 12, flat 2, open 3 (saving losses: keep it)
+- top 10 over 25%: blocked 19, ran 2, dumped 13, flat 2, open 2 (saving losses: keep it)
   - ran: rockstar up to 1.95x  
     CA `9HFUEab7sompLDPTAaTGkryMNGbtBaFMhHMVpJEBpump`
   - ran: VI up to 1.71x  
     CA `4Dj8m9vWqu779F1KDBUttvXM8YFm7U92SDpvjBNKtEiB`
-- RugCheck danger: blocked 19, ran 5, dumped 10, flat 1, open 3 (saving losses: keep it)
+- RugCheck danger: blocked 19, ran 6, dumped 10, flat 1, open 2 (mixed)
   - ran: Ivy up to 1.88x  
     CA `DxNF3Qxd8XeUBdz7ReRdoiFzRmNDKbSz4c2oA7aRpump`
   - ran: SI up to 1.93x  
@@ -174,16 +174,16 @@ Nothing shows a positive after-cost edge. Across all 93 settled coins the simple
 - [2026-11-02 20:25] I expected Slingoor, a clean MIGRATED leader with $25k of 5m flow at pace and a 0.77 buy share, to retest its $408k high from $304k. It never went green (0.98x peak) and hit the -20% stop in 2 minutes, a -$2.86 probe. My own thesis admitted there was no printed higher low after a peak only 6 minutes old, so this confirms the money-shape rule: buy share and flow are not structure (V1, V6). Next time a MIGRATED pullback with no higher low above the hourly low is a PASS with blocker "no higher low", not a probe. This is one loss, so it adds no new ban beyond the rule I already have.
 
 ## Meta right now
-Not quiet, but the new-launch wave is bleeding. Most of the young movers are down 90%+ in an hour (Stripper Inu, Sexy Inu, Nyajira, WANTED, GTA), and the dog/inu and cat names have dead 5m tape: Stripper Inu is at 0% buys, and GATO, the old cat coin, is at 45% buys and fading. The themes still pulling buyers are short, odd, meme-style names under an hour old: billy ($77k cap, $51k 5m, 64% buys), Lend Cards ($10k cap, 68% buys, +402% 1h), Ni Hao Mas (59% buys, +618% 1h, only $3k 5m), and GTA VI ($56k cap, $34k 5m, 61% buys). Several of these have already run hard, so chase risk is high. The news (North Korea laundering through memecoins, the Trump coin collapse, "memecoin hype is dead") is the story, not the trench, so I'm not using it to pick anything, and I'm not naming GTA-headline coins as setups. Setups to research, not buy: billy is the only one that clears the $10k 5m bar, so it goes first. Holders, dev and bundles are unverified, and the invalidation is 5m buys falling below about 50% or 5m volume halving. Lend Cards and Ni Hao Mas are watch-only until their 5m volume reaches $10k. Paper only, nothing verified, not advice.
+Not quiet. The volume is in one cluster: short money and finance-pun names launched in the last hour (Just Buy One Dollar, Card Pad, sOHM, SOLANIDA), not dogs, cats, or GTA. Just Buy One Dollar ($21k cap, $12.7k 5m, 61% buys, 0.2h old) is the only mover clearing the $10k 5m bar with buyers on top, but it is +831% in an hour, so chase risk is high. Card Pad (86% buys), sOHM and SOLANIDA (62% buys) have the same tape at $290 to $847 5m, which is watch-tier until volume reaches the bar. Fading: the Inu names (Santa Inu 0% buys, -88%), the GTA-named tokens (GTA VI 24% buys, -73%), and billy and Ni Hao Mas, which show zero 5m volume after -92% to -98% in an hour; the web summary's numbers for billy, Ni Hao Mas and GTA VI do not match the scan, so I'm trusting the scan. The setup to research, not buy, is Just Buy One Dollar, with invalidation at 5m buys below about 50% or 5m volume halving; holder, dev and bundle checks still have to run, and no hack-named coins appear in the movers, so the North Korea and Binance headlines aren't moving this tape. Paper only, not advice.
 
 ## Moving most in its scans, last 30 min (1h volume)
-- VI: $240,254 1h vol, $7,160 mcap, -73% 1h  
-  CA `4Dj8m9vWqu779F1KDBUttvXM8YFm7U92SDpvjBNKtEiB`
-- SOLANIDA: $88,089 1h vol, $11,678 mcap, +465% 1h  
-  CA `EWyJ5Fe9HEPfHrHCqqvWiMB3FqWRfNMBjjQKTeGwpump`
-- billy: $86,022 1h vol, $1,394 mcap, -98% 1h  
-  CA `Q7ZMt9VfQRfuka7QKgjRQ1xnLNV3rgVjqUVfUnBpump`
-- SI: $75,433 1h vol, $3,422 mcap, -88% 1h  
-  CA `CmUoTvE986qgTB1Kvo4NVbHXBH5Qa2PyGhe7GMDepump`
 - Nyajira: $73,796 1h vol, $60,978 mcap, -2% 1h  
   CA `8cWGfiHyKqxgLrLtkPt2NnLkSUV2JbcLBf4RN6Fapump`
+- Star: $69,395 1h vol, $3,662 mcap, -25% 1h  
+  CA `AJioyoixuytgtjmiXd6Wu9qs4enKxuGC5JrASSTr8hrX`
+- gtacoin: $58,096 1h vol, $357,350 mcap, -24% 1h  
+  CA `DSKM3d518BBaQShSKqaqZcG1XMRf81UFB6a1eavhSTNK`
+- SOLANIDA: $45,351 1h vol, $11,158 mcap, -27% 1h  
+  CA `EWyJ5Fe9HEPfHrHCqqvWiMB3FqWRfNMBjjQKTeGwpump`
+- CARDPAD: $39,610 1h vol, $6,320 mcap, +206% 1h  
+  CA `5e3UxCBJqiTd9HtRgUUKAgTFv4j9zag5fJDvQQjKpump`
