@@ -1,13 +1,13 @@
 # Trencher live report
 
-Updated 2026-11-15T08:52:37Z (paper trading, never real money)
+Updated 2026-11-15T09:07:50Z (paper trading, never real money)
 
 - Equity: $74.23 (-25.8% vs $100 start)
 - Closed trades: 22, 3 wins
 - Fees paid: $14.78 (axiom $2.81, network $9.18, pool $2.66), plus $4.15 lost to slippage
 - New trades: WATCH-ONLY (scans and decides, buys nothing)
 - Brain: subscription, claude-haiku-5-5 for routine calls, claude-opus-5-5 for the daily review; 58 routine calls and 0 plan-limit hits in 48h
-- Watch log: 54 coins being followed, 1337 filed, 0 would-buys (6h follow, sampled every 2 min)
+- Watch log: 53 coins being followed, 1338 filed, 0 would-buys (6h follow, sampled every 2 min)
 
 ## Scorecard (after fees)
 - 22 closed, 3 won (14%), net $-25.79
@@ -73,7 +73,7 @@ Updated 2026-11-15T08:52:37Z (paper trading, never real money)
   CA `H4gHnZ3NCU7Z9XQwGX6YYJNyieGEW8pqwGRUcdSxpump`
 
 ## Last scan
-- 08:52Z: 4 coins, 4 with pairs, 0 passed the market filters, 0 researched
+- 09:06Z: 1 coins, 1 with pairs, 0 passed the market filters, 0 researched
 
 ## Coins it looked at, and why it passed
 - 08:48Z PAW (MIGRATED, $37,098 mcap, $5,817 5m vol): PASS at conviction 3, PASS: chasing a 9% pullback, not the leader of its own ticker, and the first resistance is only 1.1x away. Blockers: "chasing", "vamp field", "target too close". (V1, V6)  
@@ -107,10 +107,12 @@ A skip "ran" if the coin reached the first target (1.5x) from the skip price bef
   - ran: FUTA up to 2.77x  
     CA `FxoXV4C8DTSYeg5dSXrEsr45zzr8tpNbsrpoiZ8Kpump`
 - top 10 over 25%: blocked 10, ran 0, dumped 7, flat 1, open 2 (saving losses: keep it)
-- flow below pace: blocked 6, ran 0, dumped 3, flat 0, open 3 (saving losses: keep it)
-- near the high / chasing: blocked 6, ran 1, dumped 4, flat 0, open 1 (saving losses: keep it)
+- flow below pace: blocked 6, ran 0, dumped 4, flat 0, open 2 (saving losses: keep it)
+- near the high / chasing: blocked 6, ran 2, dumped 4, flat 0, open 0 (saving losses: keep it)
   - ran: penny up to 1.6x  
     CA `5gmCPpuktJ7Svjgr4PPJBTosAFKB8K6Z45EGfSUmpump`
+  - ran: PAW up to 1.9x  
+    CA `HxPrDS84HH3ijsJhiCLF55MN7DqLfxzbt99RnSuSpump`
 - falling knife (code): blocked 5, ran 0, dumped 4, flat 0, open 1 (saving losses: keep it)
 - too new / sniping: blocked 5, ran 1, dumped 4, flat 0, open 0 (saving losses: keep it)
   - ran: Chick up to 1.66x  
@@ -165,13 +167,13 @@ This window has no evidence in it. In 24 hours zero coins were logged at any sta
 Not quiet. About half of the 15 scan_movers coins are under two hours old on PumpSwap or pump.fun, and about ten of them did $10k+ in the last hour. Two themes show up across several coins. Animal and dog riffs (HOGE, HSI, PAW, DIGS, Chick, GATO) are split: HSI and PAW are still buying while HOGE is down 59% in an hour. A finance/joke cluster (PumpBank, Owed, Useless Market, Good To Ape, CLOCKED OUT) has big 1h volume but almost no 5m flow, so it's fading. The web only confirms the fade: DOGE is down about 40% and headlines are asking whether memecoin hype is dead. Setups to research, not buy: HSI (12k 5m, 59% buys, 12 min old) and starShit (9.6k 5m, 64% buys, +405% 1h), only if 5m clears $10k with buyers holding. HOGE (-59% 1h, 55% buys) only on a pullback that holds volume, after confirming it's the real Hoge and not a Doge copy, with the stop under the recent low; its prior peak is unverified. The crawler's HOGE/TAIL/PAW numbers didn't match scan_movers, so I used scan_movers only. Holder, dev and bundle checks still run on each coin before any size. Paper only, not advice.
 
 ## Moving most in its scans, last 30 min (1h volume)
-- HOGE: $375,722 1h vol, $84,036 mcap, -59% 1h  
-  CA `FVzqGqRmr4UH1Fif6dewmwbJ1p4YUZCu8dcw4Efopump`
-- PumpBank: $82,771 1h vol, $5,646 mcap, -79% 1h  
-  CA `AGMRDpWgZoVjnBBTjPpye522dtcaBUwLyb5LhT23pump`
 - PAW: $65,863 1h vol, $37,098 mcap, +18% 1h  
   CA `HxPrDS84HH3ijsJhiCLF55MN7DqLfxzbt99RnSuSpump`
-- starShit: $63,207 1h vol, $25,681 mcap, +405% 1h  
-  CA `85J9oUpaNRsELufsxopZPRbfYqNSNLhB6R2LNAWspump`
 - HSI: $60,457 1h vol, $30,066 mcap, -34% 1h  
   CA `FZjyGVc5Su7kJzLXUaz5ZqtotjT97LhWQ2jacrY4pump`
+- PumpBank: $44,830 1h vol, $5,915 mcap, -75% 1h  
+  CA `AGMRDpWgZoVjnBBTjPpye522dtcaBUwLyb5LhT23pump`
+- CateGiving: $32,517 1h vol, $1,458 mcap, -95% 1h  
+  CA `5XasjCnMPTczL9VZTDHgbK5sQzwkjnu41oLeHf5Wpump`
+- Sumi: $26,911 1h vol, $10,852 mcap, +44% 1h  
+  CA `HvA8a4C1KAXfrZMnmd1VyvLh21HzMvr4rjUtxiezpump`
