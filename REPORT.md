@@ -1,13 +1,13 @@
 # Trencher live report
 
-Updated 2026-11-15T19:29:53Z (paper trading, never real money)
+Updated 2026-11-15T19:44:54Z (paper trading, never real money)
 
 - Equity: $74.23 (-25.8% vs $100 start)
 - Closed trades: 22, 3 wins
 - Fees paid: $14.78 (axiom $2.81, network $9.18, pool $2.66), plus $4.15 lost to slippage
 - New trades: WATCH-ONLY (scans and decides, buys nothing)
-- Brain: subscription, claude-haiku-5-5 for routine calls, claude-opus-5-5 for the daily review; 117 routine calls and 0 plan-limit hits in 48h
-- Watch log: 85 coins being followed, 1427 filed, 0 would-buys (6h follow, sampled every 2 min)
+- Brain: subscription, claude-haiku-5-5 for routine calls, claude-opus-5-5 for the daily review; 120 routine calls and 0 plan-limit hits in 48h
+- Watch log: 88 coins being followed, 1430 filed, 0 would-buys (6h follow, sampled every 2 min)
 
 ## Scorecard (after fees)
 - 22 closed, 3 won (14%), net $-25.79
@@ -73,9 +73,21 @@ Updated 2026-11-15T19:29:53Z (paper trading, never real money)
   CA `H4gHnZ3NCU7Z9XQwGX6YYJNyieGEW8pqwGRUcdSxpump`
 
 ## Last scan
-- 19:29Z: 4 coins, 4 with pairs, 0 passed the market filters, 0 researched
+- 19:43Z: 3 coins, 3 with pairs, 0 passed the market filters, 0 researched
 
 ## Coins it looked at, and why it passed
+- 19:40Z DYC (MIGRATED, $100,980 mcap, $215,570 5m vol): REJECT, Dev holds 1.1% (>1%) (V13, V17)  
+  CA `Da5Gbwd8GCuKwd5fv4pk7bBh12UKjUg5iH3VthDWCity`
+- 19:39Z ANT (MIGRATED, $116,851 mcap, $14,183 5m vol): REJECT, Top 10 hold 37.0% ex-pool (>25%) (V13)  
+  CA `7H2sHeLHyHR8jxENGmsqn7RxTkYZa4KwXvKYcoxBpump`
+- 19:34Z MEIMEI (FINAL_STRETCH, $25,422 mcap, $20,663 5m vol): PASS at conviction 2, PASS: chasing spike, 5m up 91% at 4.6x hourly pace with sells ahead of buys (0.46), and a cat theme that's fading. Not a bottom buy. (V1, V6)  
+  CA `AS8ByXNzmtUqHDRshyUTxKeDuNkgNCWkRKWFUW3bpump`
+- 19:31Z BFS (MIGRATED, $46,751 mcap, $10,717 5m vol): PASS at conviction 2, PASS: BFS is a 75% dip from a $186k peak with 5m flow at 0.19x its hourly pace, in a 22-coin banana field where the theme is also at 0.35x pace. Blocker: flow below pace. (V1, V6)  
+  CA `A3vB4dggaaMScchjNW9WifagMRiWaWtDAzunooDYcREQ`
+- 19:30Z Nyajira (DIP, $65,860 mcap, $2,068 5m vol): PASS at conviction 2, PASS. Nyajira is a dead-tape cat-name DIP with 5m flow at $2k, sellers in control, and no catalyst. Blocker: "dead story" (V1, V6).  
+  CA `8cWGfiHyKqxgLrLtkPt2NnLkSUV2JbcLBf4RN6Fapump`
+- 19:30Z GATO (DIP, $7,133,114 mcap, $5,114 5m vol): REJECT, Dev holds 3.0% (>1%) (V13, V17)  
+  CA `HsprHxBRgiVaQdRf3TnKNuZZtaX9JUSPgMFdAkk6pump`
 - 19:28Z TAIL (MIGRATED, $82,736 mcap, $3,307 5m vol): PASS at conviction 3, PASS: one linked bundle cluster holds 15.7% of supply, the site doesn't show this CA, and the pitch is copy-bots funded to holders. That's a farm (V3, V4, V13).  
   CA `2tHPtosmh76mmJHeskid7nYUeHjGUQ4ZAYChwdGJpump`
 - 19:21Z CBUCKS (MIGRATED, $3,467,666 mcap, $2,117 5m vol): REJECT, Top 10 hold 26.2% ex-pool (>25%) (V13)  
@@ -84,29 +96,19 @@ Updated 2026-11-15T19:29:53Z (paper trading, never real money)
   CA `6iUizCbYh4nCWBcpK7DwZpR9PFcjnrkMcS48fE5wpump`
 - 19:20Z paperdog (MIGRATED, $31,821 mcap, $8,259 5m vol): PASS at conviction 3, PASS: paperdog is up 36% in 5m at 6.1x its hourly pace, with no printed higher low and no story behind it. Chasing spike, no narrative (V1, V6, V13).  
   CA `6wnMkKcJTsvFy2ksWeKopm9YMs2Xpy4jSHuQB12Mpump`
-- 19:12Z chip (FINAL_STRETCH, $19,730 mcap, $5,993 5m vol): PASS at conviction 3, PASS: chip. Theme pace 0.14x, no catalyst, 5m flow $6k under the $10k bar, and it's a copy in an 11-coin field. Tech claims with no GitHub and a reward-fund pitch. Blocker: "no catalyst" (bottom-buy rule) plus "split crowd". (V1, V3, V6, V13)  
-  CA `DockQT38ifhagGx95wfPjvW8qWrqJjdWapUv4oFDchip`
-- 19:07Z Banana (FINAL_STRETCH, $16,111 mcap, $4,146 5m vol): PASS at conviction 3, PASS — 13-copy banana field, and this is not the leader (BFS has 8x its 5m volume). Up 329% in the hour, 2% off the peak, $4k on the 5m at 0.84x pace. A spike in a crowd, not a setup (V1, V6, V13).  
-  CA `CaCVdBeJP62xRiXnZcUWs9YyTBG9a7cDq7aE5HuMpump`
-- 19:07Z NINU (MIGRATED, $102,800 mcap, $6,426 5m vol): REJECT, Dev holds 1.1% (>1%) (V13, V17)  
-  CA `7jGdREhmTaGj6EVkrhmiadSSiNSvE5w6qfGccud5pump`
-- 19:06Z Anthropig (MIGRATED, $375,393 mcap, $6,280 5m vol): PASS at conviction 3, PASS: Anthropig is 3.8% off its high, in the chasing zone, with 5m flow at 0.42x pace and no printed higher low. The $390k high is the first resistance, too close to target. (V1, V6)  
-  CA `2NUaS6Gfrm5rBuPBn7svHka8t33SrSkpXGQiUvZLpump`
-- 19:06Z ANT (MIGRATED, $241,485 mcap, $16,983 5m vol): REJECT, Top 10 hold 25.9% ex-pool (>25%) (V13)  
-  CA `BDPm9gPHCRyo2qjcRrYPsXexmbRwuuHQZo2qhhYXpump`
-- 19:05Z WSB (DIP, $121,337 mcap, $11,577 5m vol): REJECT, Dev holds 5.8% (>1%) (V13, V17)  
-  CA `B82PFKmT4aM38EUUqVoZs6sZdAfxDHHrB6DSXxCKpump`
 
 ## What its skips did next (last 48h)
 A skip "ran" if the coin reached the first target (1.5x) from the skip price before a 20% drop, "dumped" if the drop came first. Sampled every 10 min, followed 6h.
-- top 10 over 25%: blocked 21, ran 2, dumped 15, flat 1, open 3 (saving losses: keep it)
+- top 10 over 25%: blocked 22, ran 2, dumped 15, flat 1, open 4 (saving losses: keep it)
   - ran: rockstar up to 1.95x  
     CA `9HFUEab7sompLDPTAaTGkryMNGbtBaFMhHMVpJEBpump`
   - ran: VI up to 1.71x  
     CA `4Dj8m9vWqu779F1KDBUttvXM8YFm7U92SDpvjBNKtEiB`
-- flow below pace: blocked 20, ran 1, dumped 14, flat 2, open 3 (saving losses: keep it)
+- flow below pace: blocked 21, ran 2, dumped 15, flat 2, open 2 (saving losses: keep it)
   - ran: PASSED up to 1.73x  
     CA `3XaH8VPUaUegqmnkYA8PXCWqQqD8doqdsGGfZyoYpump`
+  - ran: Anthropig up to 1.59x  
+    CA `2NUaS6Gfrm5rBuPBn7svHka8t33SrSkpXGQiUvZLpump`
 - RugCheck danger: blocked 19, ran 7, dumped 10, flat 2, open 0 (mixed)
   - ran: Ivy up to 1.88x  
     CA `DxNF3Qxd8XeUBdz7ReRdoiFzRmNDKbSz4c2oA7aRpump`
@@ -114,28 +116,28 @@ A skip "ran" if the coin reached the first target (1.5x) from the skip price bef
     CA `AiQUqe4zjiDssth2FsCoeQVaGtCtHYyKGX8U52rWpump`
   - ran: FUTA up to 2.77x  
     CA `FxoXV4C8DTSYeg5dSXrEsr45zzr8tpNbsrpoiZ8Kpump`
-- too new / sniping: blocked 17, ran 4, dumped 12, flat 0, open 1 (saving losses: keep it)
+- too new / sniping: blocked 16, ran 3, dumped 13, flat 0, open 0 (saving losses: keep it)
   - ran: Chick up to 1.66x  
     CA `Dueav76X9spnoLomhM2jMkkWorVggbeWucLs3YLupump`
   - ran: TOOLS up to 1.83x  
     CA `9Ei1d97U7M8m4t3fof7c8MUECtmzgqbQCo81cGGzpump`
   - ran: twert up to 1.81x  
     CA `8WvWwttzaLfW1nbjx6wmYL5jozWpvy95WktAg5cipump`
-- near the high / chasing: blocked 12, ran 1, dumped 10, flat 0, open 1 (saving losses: keep it)
+- near the high / chasing: blocked 13, ran 1, dumped 10, flat 0, open 2 (saving losses: keep it)
   - ran: penny up to 1.6x  
     CA `5gmCPpuktJ7Svjgr4PPJBTosAFKB8K6Z45EGfSUmpump`
+- dev share over 1%: blocked 6, ran 1, dumped 2, flat 0, open 3 (saving losses: keep it)
+  - ran: PANICSELL up to 1.74x  
+    CA `82Z6CcE5g3o1jW3vgtcqr95jP4XFx8jg1SJe8ikepump`
 - other: blocked 6, ran 2, dumped 4, flat 0, open 0 (saving losses: keep it)
   - ran: TaoTao up to 1.53x  
     CA `G1KuEMuLrxWynFddQVnpdkQAhYFBwNJiuz1Lv7d9pump`
   - ran: SI up to 1.94x  
     CA `H2irVtPLfKoBJ69itZmhsedSPwBUTaubmUavc6Uapump`
-- dev share over 1%: blocked 5, ran 1, dumped 0, flat 0, open 4 (too few played out to judge)
-  - ran: PANICSELL up to 1.74x  
-    CA `82Z6CcE5g3o1jW3vgtcqr95jP4XFx8jg1SJe8ikepump`
 - crowd leaving / fading volume: blocked 5, ran 1, dumped 4, flat 0, open 0 (saving losses: keep it)
   - ran: NUREMBERG up to 1.62x  
     CA `7R3RnGmpV9mZXwSyHyKN5LEddiZRmGsYrAZPgDJqpump`
-- bundles over the line: blocked 5, ran 0, dumped 2, flat 0, open 3 (too few played out to judge)
+- bundles over the line: blocked 5, ran 0, dumped 3, flat 0, open 2 (saving losses: keep it)
 - falling knife (code): blocked 4, ran 0, dumped 4, flat 0, open 0 (saving losses: keep it)
 
 ## Daily review (2026-11-15, claude-opus-5-5)
@@ -177,13 +179,13 @@ Nothing shows a positive after-cost edge. Across all 93 settled coins the simple
 Not quiet. The movers are fresh pump.fun and PumpSwap launches, and the scan, not the web summary, is my source: the web's Yield ($48k cap, $35k 5m) and Busted ($698k, migrated) figures don't match the scan's Yield ($2.9k, $362 5m) and Busted ($1.4k, $0 5m, -99.8% 1h), so both are dead on the tape. Four themes repeat: a holiday-animal play (RUDOLPH, reindeer, 0.1h old, $23k cap, $63k 5m, 64% buys, +905% 1h), which fits V5's point that holiday metas show up early, probably in November; banana names (Banana, $12.4k cap, $10.1k 5m, 62% buys; BFS, $39.7k cap, $46.5k 5m, 57% buys), both with real volume and a need to find the original; cat names (Nyajira, $66.7k, $2.8k 5m, 49% buys, -31% 1h), which look like they're fading; and Chinese-language puns (NINU, NIBULL) with 5m volume under $2k and 29-42% buys, also fading. Setups to research now: RUDOLPH (strongest move, but $63k 5m on a $23k cap is about 2.7x turnover, so bundle and farm checks come first, V13) and Banana (cleanest buyer share with real volume); BFS is the same idea with weaker conviction, and chip (73% buys, +84% 1h, $3.5k 5m) is a probe at most. Dead on the tape: PENGUIN, Busted, and YIELD, all with near-zero 5m volume. Paper only, not advice.
 
 ## Moving most in its scans, last 30 min (1h volume)
-- NINU: $298,308 1h vol, $102,800 mcap, +106% 1h  
-  CA `7jGdREhmTaGj6EVkrhmiadSSiNSvE5w6qfGccud5pump`
-- Anthropig: $181,568 1h vol, $375,393 mcap, +165% 1h  
-  CA `2NUaS6Gfrm5rBuPBn7svHka8t33SrSkpXGQiUvZLpump`
-- ANT: $157,779 1h vol, $241,485 mcap, +578% 1h  
-  CA `BDPm9gPHCRyo2qjcRrYPsXexmbRwuuHQZo2qhhYXpump`
-- chip: $89,279 1h vol, $23,637 mcap, +217% 1h  
-  CA `DockQT38ifhagGx95wfPjvW8qWrqJjdWapUv4oFDchip`
-- Banana: $58,964 1h vol, $16,111 mcap, +329% 1h  
-  CA `CaCVdBeJP62xRiXnZcUWs9YyTBG9a7cDq7aE5HuMpump`
+- BFS: $676,292 1h vol, $46,751 mcap, +8% 1h  
+  CA `A3vB4dggaaMScchjNW9WifagMRiWaWtDAzunooDYcREQ`
+- DYC: $625,488 1h vol, $100,980 mcap, +121% 1h  
+  CA `Da5Gbwd8GCuKwd5fv4pk7bBh12UKjUg5iH3VthDWCity`
+- RUDOLPH: $118,872 1h vol, $4,592 mcap, -62% 1h  
+  CA `FiRgbSzUhrMstN2Errym9T7LrH6t9TvzwTxTEk61pump`
+- ANT: $74,709 1h vol, $116,851 mcap, +229% 1h  
+  CA `7H2sHeLHyHR8jxENGmsqn7RxTkYZa4KwXvKYcoxBpump`
+- MEIMEI: $54,173 1h vol, $25,422 mcap, +1151% 1h  
+  CA `AS8ByXNzmtUqHDRshyUTxKeDuNkgNCWkRKWFUW3bpump`
