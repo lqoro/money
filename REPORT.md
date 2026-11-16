@@ -1,13 +1,13 @@
 # Trencher live report
 
-Updated 2026-11-16T20:44:39Z (paper trading, never real money)
+Updated 2026-11-16T20:59:43Z (paper trading, never real money)
 
 - Equity: $74.23 (-25.8% vs $100 start)
 - Closed trades: 22, 3 wins
 - Fees paid: $14.78 (axiom $2.81, network $9.18, pool $2.66), plus $4.15 lost to slippage
 - New trades: WATCH-ONLY (scans and decides, buys nothing)
-- Brain: subscription, claude-haiku-5-5 for routine calls, claude-opus-5-5 for the daily review; 381 routine calls and 1 plan-limit hits in 48h
-- Watch log: 104 coins being followed, 1821 filed, 0 would-buys (6h follow, sampled every 2 min)
+- Brain: subscription, claude-haiku-5-5 for routine calls, claude-opus-5-5 for the daily review; 382 routine calls and 1 plan-limit hits in 48h
+- Watch log: 105 coins being followed, 1824 filed, 0 would-buys (6h follow, sampled every 2 min)
 
 ## Scorecard (after fees)
 - 22 closed, 3 won (14%), net $-25.79
@@ -73,9 +73,17 @@ Updated 2026-11-16T20:44:39Z (paper trading, never real money)
   CA `H4gHnZ3NCU7Z9XQwGX6YYJNyieGEW8pqwGRUcdSxpump`
 
 ## Last scan
-- 20:44Z: 5 coins, 5 with pairs, 1 passed the market filters, 1 researched
+- 20:58Z: 3 coins, 3 with pairs, 1 passed the market filters, 1 researched
 
 ## Coins it looked at, and why it passed
+- 20:58Z GATO (DIP, $5,429,542 mcap, $2,871 5m vol): REJECT, Dev holds 2.7% (>1%) (V13, V17)  
+  CA `HsprHxBRgiVaQdRf3TnKNuZZtaX9JUSPgMFdAkk6pump`
+- 20:52Z VI (DIP, $45,963 mcap, $1,763 5m vol): REJECT, 5m volume $1,763 is dead (<$2,000) (V1)  
+  CA `3yjHj9s9MukEHr7b7qhMiUfH5fSUz97Eb5J8SRjdpump`
+- 20:51Z Trader (MIGRATED, $157,150 mcap, $5,306 5m vol): PASS at conviction 2, PASS. "Trader" is a KOL-meta copy with 5m flow at 0.4x its hourly pace, the theme at 0.13x across 18 copies, and no printed higher low. Clean holders don't fix a dead story (V1, V6).  
+  CA `7TnXXR1ytJ9PZDxgSA8VwbyKmEWZmiA2YAn55YyVpump`
+- 20:50Z DIGS (MIGRATED, $231,759 mcap, $2,645 5m vol): REJECT, Bundles: 10 linked wallet cluster(s) hold 100.0% of supply (>20%) (V17)  
+  CA `9QT8K685Hrae4k11dhGXirdtpfAaimExtyfwt8cPpump`
 - 20:44Z CBUCKS (MIGRATED, $4,662,801 mcap, $2,574 5m vol): REJECT, Top 10 hold 25.9% ex-pool (>25%) (V13)  
   CA `DtcicPCKTKeAh7TDEzTym3hXeoHAoMiBdYJhMYxZpump`
 - 20:41Z VICECAT (DIP, $138,656 mcap, $3,406 5m vol): REJECT, Dip with fading attention is a falling knife, not a dip (5m at 0.38x the hour's pace, under 0.6x)  
@@ -88,14 +96,6 @@ Updated 2026-11-16T20:44:39Z (paper trading, never real money)
   CA `3Ag5XsdWbPZrrcdfcsQqfHPv2syhZWpNx8CDaDcWpump`
 - 20:30Z BAWSAQ (MIGRATED, $887,633 mcap, $16,799 5m vol): PASS at conviction 3, PASS: flow at 0.3x its hourly pace and the first resistance is only 1.22x away. Vice-city theme is crowded and cooling. (MIGRATED, V1, V6)  
   CA `D9EcoQZeAytCrF1kQFSpRNpoPhibJUvJcmRHXhubpump`
-- 20:24Z COGE (MIGRATED, $240,592 mcap, $2,960 5m vol): REJECT, Top 10 hold 36.7% ex-pool (>25%) (V13)  
-  CA `BRf3SXRk8BdXmBZDJfKyEhbYmqBVf8843ctEMcD4pump`
-- 20:24Z JOB (MIGRATED, $1,952,200 mcap, $24,361 5m vol): PASS at conviction 3, PASS. JOB is a 20-day-old, 23-copy dog-job field at $1.95M with a 17% bundle cluster, and its prior high is only 1.33x away, under my 1.5x initials. Big cap, no room (V1, V3, V13).  
-  CA `9Pq7aLAbhDG2tTnS22cm6kuysZVcZpLFE368HWuypump`
-- 20:23Z BANKLESS (FINAL_STRETCH, $25,669 mcap, $12,792 5m vol): REJECT, RugCheck danger: Large Amount of LP Unlocked 90.31%  
-  CA `BTSkBxZhJnZpV1fsnMbEHrXxWDMzwfEGs3RLNmNfpump`
-- 20:20Z GTA (MIGRATED, $700,258 mcap, $3,086 5m vol): PASS at conviction 3, PASS — at the high, chasing a +110% hour, on 5m flow at 0.57x pace, in a 20-copy GTA field where it isn't the leader. Wait for a retrace and a printed higher low (V1, V6).  
-  CA `2NWgu4fqN2AxS5pp5v3f3SH54qArP9JepQFJm58gpump`
 
 ## What its skips did next (last 48h)
 A skip "ran" if the coin reached the first target (1.5x) from the skip price before a 20% drop, "dumped" if the drop came first. Sampled every 10 min, followed 6h.
@@ -113,7 +113,7 @@ A skip "ran" if the coin reached the first target (1.5x) from the skip price bef
     CA `4Dj8m9vWqu779F1KDBUttvXM8YFm7U92SDpvjBNKtEiB`
   - ran: ANT up to 1.52x  
     CA `BDPm9gPHCRyo2qjcRrYPsXexmbRwuuHQZo2qhhYXpump`
-- too new / sniping: blocked 43, ran 7, dumped 35, flat 0, open 1 (saving losses: keep it)
+- too new / sniping: blocked 43, ran 8, dumped 35, flat 0, open 0 (saving losses: keep it)
   - ran: Chick up to 1.66x  
     CA `Dueav76X9spnoLomhM2jMkkWorVggbeWucLs3YLupump`
   - ran: TOOLS up to 1.83x  
@@ -134,7 +134,7 @@ A skip "ran" if the coin reached the first target (1.5x) from the skip price bef
     CA `AiQUqe4zjiDssth2FsCoeQVaGtCtHYyKGX8U52rWpump`
   - ran: FUTA up to 2.77x  
     CA `FxoXV4C8DTSYeg5dSXrEsr45zzr8tpNbsrpoiZ8Kpump`
-- falling knife (code): blocked 16, ran 1, dumped 12, flat 0, open 3 (saving losses: keep it)
+- falling knife (code): blocked 16, ran 1, dumped 13, flat 0, open 2 (saving losses: keep it)
   - ran: BigP up to 1.57x  
     CA `CY254o6VPaJnTiY5uuKUB8xDjSgykC6xtoLoC3kpump`
 - falling knife / no higher low: blocked 16, ran 3, dumped 10, flat 3, open 0 (saving losses: keep it)
@@ -144,14 +144,14 @@ A skip "ran" if the coin reached the first target (1.5x) from the skip price bef
     CA `8cWGfiHyKqxgLrLtkPt2NnLkSUV2JbcLBf4RN6Fapump`
   - ran: GOAT up to 1.61x  
     CA `D7iafdwzzpB7tisqQqT5T9aRrYPtHLqzwxhnLoWJgoat`
-- other: blocked 14, ran 5, dumped 8, flat 0, open 1 (mixed)
+- other: blocked 13, ran 4, dumped 8, flat 0, open 1 (saving losses: keep it)
   - ran: TaoTao up to 1.53x  
     CA `G1KuEMuLrxWynFddQVnpdkQAhYFBwNJiuz1Lv7d9pump`
   - ran: SI up to 1.94x  
     CA `H2irVtPLfKoBJ69itZmhsedSPwBUTaubmUavc6Uapump`
   - ran: BLOB up to 1.66x  
     CA `8s11PkgQt4ZzdZ7oo84hK5t9HG1EvdgAjcg4W7Lpump`
-- thin 5m volume: blocked 11, ran 2, dumped 9, flat 0, open 0 (saving losses: keep it)
+- thin 5m volume: blocked 12, ran 2, dumped 9, flat 0, open 1 (saving losses: keep it)
   - ran: SENDER up to 1.58x  
     CA `5peJLZQnBkXtydYYMunbT4QutSyd9eA474MqxcmEpump`
   - ran: UNITY up to 1.66x  
@@ -197,13 +197,13 @@ Nothing shows a positive edge after costs. Over 309 settled coins, every setup l
 Trencher: The trenches are running a GTA VI / Vice City theme, and it repeats across coins. BAWSAQ, VI, ROCCO and VICEDORD are all under about an hour old, sit between $82k and $888k market cap, show 68-93% buys, and are up 113% to 942% on the hour. Secondary themes are KOL/trading-meta jokes (Trader, Copytrader, BANKLESS, $6k-$125k caps) and animal coins (DACAT, SNUT), but SNUT and DACAT flow is flat or leaving, and PUMPS (12% buys) and XRL (29% buys) are fading. The crawler's meta_summary doesn't match scan_movers (it cites VICECAT, GTAMAS, SI, LUCIA, and +828% for Trader, while scan shows Trader at -60% on the hour and GTA at $700k cap, not a meme), so I used scan figures. Setups to research: VI (PumpSwap, $98k cap, $43.6k 5m, 83% buys) and ROCCO ($82k cap, $11.5k 5m, 93% buys) as MIGRATED-style candidates, with BAWSAQ only as a pullback-on-volume DIP. Initials at 2x, stop set by conviction, and holder, dev and bundle checks still unrun, and the Vice name cluster is a vamp risk, so find the original first. PASS for now on VICEDORD ($6.4k 5m is under the $10k line) and GTA ($3k 5m against +94% on the hour). Paper only, not financial advice.
 
 ## Moving most in its scans, last 30 min (1h volume)
-- ROCCO: $725,181 1h vol, $82,287 mcap, +113% 1h  
-  CA `FJbyUWahiRMtLnExTDJ1HzhKHjJzMTbZJL27S2NVpump`
 - BAWSAQ: $674,105 1h vol, $887,633 mcap, +942% 1h  
   CA `D9EcoQZeAytCrF1kQFSpRNpoPhibJUvJcmRHXhubpump`
 - BANK: $599,410 1h vol, $193,006 mcap, +306% 1h  
   CA `667tvUtaFVbesmSZDYCgQzYkJW4y36PdbmacRZGipump`
-- PUMPS: $271,962 1h vol, $2,680 mcap, -94% 1h  
+- PUMPS: $272,735 1h vol, $2,578 mcap, -94% 1h  
   CA `BXiRfh6f6YuopudCBy1mxNrUpmo65iqL2SjhZvknpump`
-- VICEDORD: $217,765 1h vol, $205,147 mcap, +536% 1h  
-  CA `8q74mAMERS7PrychaRch2p1MK3JKoy4Y7BjJ7ucppump`
+- Trader: $145,389 1h vol, $168,642 mcap, +12% 1h  
+  CA `7TnXXR1ytJ9PZDxgSA8VwbyKmEWZmiA2YAn55YyVpump`
+- GTA: $134,456 1h vol, $1,336 mcap, -99% 1h  
+  CA `Ugp1hEeDscu8RXkzd2teXLACYB4wrxVEht5mghDpump`
