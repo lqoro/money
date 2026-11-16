@@ -1,13 +1,13 @@
 # Trencher live report
 
-Updated 2026-11-16T14:11:06Z (paper trading, never real money)
+Updated 2026-11-16T14:26:10Z (paper trading, never real money)
 
 - Equity: $74.23 (-25.8% vs $100 start)
 - Closed trades: 22, 3 wins
 - Fees paid: $14.78 (axiom $2.81, network $9.18, pool $2.66), plus $4.15 lost to slippage
 - New trades: WATCH-ONLY (scans and decides, buys nothing)
-- Brain: subscription, claude-haiku-5-5 for routine calls, claude-opus-5-5 for the daily review; 317 routine calls and 0 plan-limit hits in 48h
-- Watch log: 73 coins being followed, 1740 filed, 0 would-buys (6h follow, sampled every 2 min)
+- Brain: subscription, claude-haiku-5-5 for routine calls, claude-opus-5-5 for the daily review; 321 routine calls and 0 plan-limit hits in 48h
+- Watch log: 75 coins being followed, 1742 filed, 0 would-buys (6h follow, sampled every 2 min)
 
 ## Scorecard (after fees)
 - 22 closed, 3 won (14%), net $-25.79
@@ -73,9 +73,17 @@ Updated 2026-11-16T14:11:06Z (paper trading, never real money)
   CA `H4gHnZ3NCU7Z9XQwGX6YYJNyieGEW8pqwGRUcdSxpump`
 
 ## Last scan
-- 14:10Z: 5 coins, 4 with pairs, 0 passed the market filters, 0 researched
+- 14:25Z: 3 coins, 2 with pairs, 0 passed the market filters, 0 researched
 
 ## Coins it looked at, and why it passed
+- 14:24Z GIFT (FINAL_STRETCH, $22,387 mcap, $4,210 5m vol): REJECT, Top 10 hold 27.4% ex-pool (>25%) (V13)  
+  CA `tmZXn6N9rmPqh6LnU49jmAARqnmsPhyUKKNbvvkpump`
+- 14:24Z Minimoon (MIGRATED, $55,486 mcap, $28,347 5m vol): PASS at conviction 3, PASS: chasing spike. Minimoon is up 38% in 5 minutes on 5.4x its hourly pace, 16 minutes old, with no printed higher low and five bigger same-ticker coins in the field (V1, V6).  
+  CA `FVH8uVyBqNiJ8PJPJJ8TqfiPp2VUscM9w9QqH2uHC8Tm`
+- 14:21Z bill (MIGRATED, $138,573 mcap, $3,194 5m vol): PASS at conviction 2, PASS: bill is 82.7% off its $800k peak with no catalyst, no printed higher low, and a one-word ticker copied 16 times. Nothing here is a bottom buy. (V1, V6, V13)  
+  CA `85RhcSEMy15SNhFLmSArNm7udPKXVagVgsq4YmSopump`
+- 14:13Z DOUG (MIGRATED, $163,170 mcap, $6,989 5m vol): PASS at conviction 3, PASS: flow below pace and no breakout. DOUG is a frog copy sitting at 0.58x its hourly flow with a vamp CA on its own site. Not chasing. (V1, V6)  
+  CA `CRKqYn9bnEZaXK6K2uk627szTFjait52RXeY6CEnpump`
 - 14:09Z GATO (DIP, $6,564,012 mcap, $3,256 5m vol): REJECT, Dev holds 2.7% (>1%) (V13, V17)  
   CA `HsprHxBRgiVaQdRf3TnKNuZZtaX9JUSPgMFdAkk6pump`
 - 14:01Z Anthropig (MIGRATED, $814,575 mcap, $3,216 5m vol): PASS at conviction 4, PASS: 5m flow is $3.2k at 0.73x the hourly pace, under the $10k bar, and the story has no buzz. Holders are clean, but this is a 17-copy parody ticker in a fading theme. (V1, V6, V13)  
@@ -88,14 +96,6 @@ Updated 2026-11-16T14:11:06Z (paper trading, never real money)
   CA `8iZ5R98kvH7TpFVY5voZienJtHqKxRhvffw7uYvopump`
 - 13:47Z GTA (MIGRATED, $172,032 mcap, $2,407 5m vol): PASS at conviction 3, PASS: GTA is 24% off a $227k high, but it has broken its hourly low with 5m flow at $2.4k, under the $10k bar, and WASTED6 leads the same-ticker field. Blocker: "no breakout". Old coin on a fading ape/GTA lane. (V1, V6)  
   CA `G9ZMir6uh66Y7viPkXAy7myA9jjE4T1YgheVUmGDpump`
-- 13:45Z Stumpy (MIGRATED, $91,009 mcap, $78,615 5m vol): PASS at conviction 3, PASS. Stumpy is 30 minutes old, up 47% on the last 5m candle, about 6x off its hourly low with no printed higher low, and not the leader of its 25-copy field. Chasing, too new, split crowd (V1, V3, V6, V13).  
-  CA `83GtPpfNSau1mtDZZ7Vx6YCf8gA5eBxniWCoDsvK2avy`
-- 13:44Z hello (MIGRATED, $48,096 mcap, $2,974 5m vol): REJECT, Top 10 hold 25.4% ex-pool (>25%) (V13)  
-  CA `2Lw9FQA1iAwg5Wo1NTh8GTs3zmVQc7XHGBbexqZgqtWJ`
-- 13:39Z Leonida (DIP, $278,459 mcap, $4,639 5m vol): PASS at conviction 3, PASS: DIP with no catalyst, a 13-day-old site that doesn't show this CA, and 21 same-name copies splitting the crowd. Blockers: "no catalyst" and "split crowd" (V1, V3, V13).  
-  CA `BWJfBNeXpapG7uoqByp5KSwWgCQba8QcDmA2DQiEpump`
-- 13:39Z Minimoon (FINAL_STRETCH, $17,437 mcap, $11,509 5m vol): PASS at conviction 3, PASS: blocker "chasing spike". Minimoon ran +110% on 5m and +549% on 1h to a 21k peak 6 minutes ago, then dropped 18%. Top 10 at 22.9% and six same-ticker bigger copies. That's a spike with a vamp field, not a pullback. (V1, V6, V13)  
-  CA `FVH8uVyBqNiJ8PJPJJ8TqfiPp2VUscM9w9QqH2uHC8Tm`
 
 ## What its skips did next (last 48h)
 A skip "ran" if the coin reached the first target (1.5x) from the skip price before a 20% drop, "dumped" if the drop came first. Sampled every 10 min, followed 6h.
@@ -106,6 +106,13 @@ A skip "ran" if the coin reached the first target (1.5x) from the skip price bef
     CA `4Dj8m9vWqu779F1KDBUttvXM8YFm7U92SDpvjBNKtEiB`
   - ran: ANT up to 1.52x  
     CA `BDPm9gPHCRyo2qjcRrYPsXexmbRwuuHQZo2qhhYXpump`
+- too new / sniping: blocked 39, ran 6, dumped 32, flat 0, open 1 (saving losses: keep it)
+  - ran: Chick up to 1.66x  
+    CA `Dueav76X9spnoLomhM2jMkkWorVggbeWucLs3YLupump`
+  - ran: TOOLS up to 1.83x  
+    CA `9Ei1d97U7M8m4t3fof7c8MUECtmzgqbQCo81cGGzpump`
+  - ran: twert up to 1.81x  
+    CA `8WvWwttzaLfW1nbjx6wmYL5jozWpvy95WktAg5cipump`
 - flow below pace: blocked 38, ran 5, dumped 28, flat 3, open 2 (saving losses: keep it)
   - ran: PASSED up to 1.73x  
     CA `3XaH8VPUaUegqmnkYA8PXCWqQqD8doqdsGGfZyoYpump`
@@ -113,14 +120,7 @@ A skip "ran" if the coin reached the first target (1.5x) from the skip price bef
     CA `BDPm9gPHCRyo2qjcRrYPsXexmbRwuuHQZo2qhhYXpump`
   - ran: ANT up to 1.58x  
     CA `7H2sHeLHyHR8jxENGmsqn7RxTkYZa4KwXvKYcoxBpump`
-- too new / sniping: blocked 38, ran 6, dumped 30, flat 0, open 2 (saving losses: keep it)
-  - ran: Chick up to 1.66x  
-    CA `Dueav76X9spnoLomhM2jMkkWorVggbeWucLs3YLupump`
-  - ran: TOOLS up to 1.83x  
-    CA `9Ei1d97U7M8m4t3fof7c8MUECtmzgqbQCo81cGGzpump`
-  - ran: twert up to 1.81x  
-    CA `8WvWwttzaLfW1nbjx6wmYL5jozWpvy95WktAg5cipump`
-- near the high / chasing: blocked 30, ran 6, dumped 20, flat 1, open 3 (saving losses: keep it)
+- near the high / chasing: blocked 29, ran 7, dumped 20, flat 1, open 1 (saving losses: keep it)
   - ran: penny up to 1.6x  
     CA `5gmCPpuktJ7Svjgr4PPJBTosAFKB8K6Z45EGfSUmpump`
   - ran: WIGGLES up to 1.69x  
@@ -134,16 +134,16 @@ A skip "ran" if the coin reached the first target (1.5x) from the skip price bef
     CA `AiQUqe4zjiDssth2FsCoeQVaGtCtHYyKGX8U52rWpump`
   - ran: FUTA up to 2.77x  
     CA `FxoXV4C8DTSYeg5dSXrEsr45zzr8tpNbsrpoiZ8Kpump`
-- falling knife (code): blocked 12, ran 1, dumped 11, flat 0, open 0 (saving losses: keep it)
-  - ran: BigP up to 1.57x  
-    CA `CY254o6VPaJnTiY5uuKUB8xDjSgykC6xtoLoC3kpump`
-- falling knife / no higher low: blocked 12, ran 3, dumped 4, flat 4, open 1 (mixed)
+- falling knife / no higher low: blocked 13, ran 3, dumped 4, flat 4, open 2 (mixed)
   - ran: CateGiving up to 1.57x  
     CA `5XasjCnMPTczL9VZTDHgbK5sQzwkjnu41oLeHf5Wpump`
   - ran: Nyajira up to 1.52x  
     CA `8cWGfiHyKqxgLrLtkPt2NnLkSUV2JbcLBf4RN6Fapump`
   - ran: GOAT up to 1.61x  
     CA `D7iafdwzzpB7tisqQqT5T9aRrYPtHLqzwxhnLoWJgoat`
+- falling knife (code): blocked 12, ran 1, dumped 11, flat 0, open 0 (saving losses: keep it)
+  - ran: BigP up to 1.57x  
+    CA `CY254o6VPaJnTiY5uuKUB8xDjSgykC6xtoLoC3kpump`
 - thin 5m volume: blocked 10, ran 2, dumped 6, flat 0, open 2 (saving losses: keep it)
   - ran: SENDER up to 1.58x  
     CA `5peJLZQnBkXtydYYMunbT4QutSyd9eA474MqxcmEpump`
@@ -196,16 +196,16 @@ Nothing shows a positive edge after costs. Over 309 settled coins, every setup l
 - [2026-11-02 20:25] I expected Slingoor, a clean MIGRATED leader with $25k of 5m flow at pace and a 0.77 buy share, to retest its $408k high from $304k. It never went green (0.98x peak) and hit the -20% stop in 2 minutes, a -$2.86 probe. My own thesis admitted there was no printed higher low after a peak only 6 minutes old, so this confirms the money-shape rule: buy share and flow are not structure (V1, V6). Next time a MIGRATED pullback with no higher low above the hourly low is a PASS with blocker "no higher low", not a probe. This is one loss, so it adds no new ban beyond the rule I already have.
 
 ## Meta right now
-Meta: fresh pump.fun launches riding GTA VI and character names, with buyers stacking in. Rising: the GTA6 lane (GTA6 at a $240k cap with $274k 5m at 66% buys, WASTED6 at $9.4k 5m and 84% buys) and sub-hour character coins Stumpy and Minimoon (58-68% buys, +300-500%+ in 1h), with CLAUDEMOM as a single AI-lab-name launch (I'm a Claude, so discount my read on that one). Fading: the legacy ape/GTA coins (GATO flat at $3k 5m on a $6.6M cap), BLOB with sellers leading at 41% buys, and ZLUSD, which scan shows at $565 5m and 34% buys after its first hour. The web's $34k ZLUSD figure disagrees with scan, so scan wins, and the brand-name impersonation is now the risk story. Setups to research, not buy yet: GTA6 only on a pullback that holds volume, with a stop below its launch low; WASTED6 and Stumpy if 5m volume clears $10k; Minimoon's $34k 5m on an $11k cap is roughly 3x its market cap, so it's a farm/bundle check before anything else. Holder, dev and bundle checks haven't run on any of these, so treat them as unverified, not verdicts. Not a quiet market: the movers are loud, just fresh and fragile.
+Meta: sub-hour pump.fun launches with cheap caps and real volume, named after characters and jokes (WATER, TRUMPEDO, Minimoon, GIFT, DOUG, CYBERLEEK). That lane is rising. The GTA6 lane is fading: GTA6 has zero 5m volume at -99%, and GATO is flat at $3k 5m on a $6.6M cap. AI-name launches are dead too (CLAUDEMOM at -94% with $2 of 5m volume). The web's GTA6 $240k and ZLUSD $34k figures don't match scan, so I'm going with scan. Setups to research, not buy yet: DOUG (1.7h old, $190k cap, $13.7k 5m, 50/50 buys, already on PumpSwap) fits the migrated lane if volume holds. WATER and TRUMPEDO have $25-41k 5m with 55-65% buys but are minutes old, so bundle and fresh-wallet checks come first, and only a probe if they clear. Minimoon's $28k 5m on a $55k cap needs a farm check before anything else. Not a quiet market: the movers are loud and fragile. Holder, dev and bundle checks haven't run on any of these, so everything here is unverified, not a verdict.
 
 ## Moving most in its scans, last 30 min (1h volume)
-- GTA6: $645,077 1h vol, $1,418 mcap, -98% 1h  
-  CA `AnvhfTgZXdQk3vLmoUxDtYnTb7tpjQkXpFTHDXYFpump`
-- Stumpy: $343,318 1h vol, $91,009 mcap, +221% 1h  
-  CA `83GtPpfNSau1mtDZZ7Vx6YCf8gA5eBxniWCoDsvK2avy`
-- BLOB: $144,635 1h vol, $14,388,595 mcap, +2% 1h  
+- BLOB: $156,312 1h vol, $14,997,026 mcap, +12% 1h  
   CA `8s11PkgQt4ZzdZ7oo84hK5t9HG1EvdgAjcg4W7Lpump`
-- CYBERLEEK: $109,682 1h vol, $5,039 mcap, +34% 1h  
+- DOUG: $145,094 1h vol, $190,681 mcap, +43% 1h  
+  CA `CRKqYn9bnEZaXK6K2uk627szTFjait52RXeY6CEnpump`
+- CYBERLEEK: $129,449 1h vol, $6,271 mcap, +66% 1h  
   CA `HcWTwfy12QPzc5WxPXTTtdvtnw1TZ64sqQAHXWPhpump`
-- CLAUDEMOM: $91,834 1h vol, $1,556 mcap, -94% 1h  
-  CA `EyCE6g5w21D6PzH9BHFBxuWsLeHewZWMSf4ju3qPpump`
+- GIFT: $110,029 1h vol, $23,661 mcap, +127% 1h  
+  CA `tmZXn6N9rmPqh6LnU49jmAARqnmsPhyUKKNbvvkpump`
+- WATER: $99,073 1h vol, $28,422 mcap, -1% 1h  
+  CA `FV23gQJYmnqSZtEkVCzVAzwS5YmSQcp7UuYSLVepump`
