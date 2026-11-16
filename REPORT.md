@@ -1,13 +1,13 @@
 # Trencher live report
 
-Updated 2026-11-16T11:55:12Z (paper trading, never real money)
+Updated 2026-11-16T12:10:13Z (paper trading, never real money)
 
 - Equity: $74.23 (-25.8% vs $100 start)
 - Closed trades: 22, 3 wins
 - Fees paid: $14.78 (axiom $2.81, network $9.18, pool $2.66), plus $4.15 lost to slippage
 - New trades: WATCH-ONLY (scans and decides, buys nothing)
-- Brain: subscription, claude-haiku-5-5 for routine calls, claude-opus-5-5 for the daily review; 293 routine calls and 0 plan-limit hits in 48h
-- Watch log: 62 coins being followed, 1716 filed, 0 would-buys (6h follow, sampled every 2 min)
+- Brain: subscription, claude-haiku-5-5 for routine calls, claude-opus-5-5 for the daily review; 297 routine calls and 0 plan-limit hits in 48h
+- Watch log: 66 coins being followed, 1718 filed, 0 would-buys (6h follow, sampled every 2 min)
 
 ## Scorecard (after fees)
 - 22 closed, 3 won (14%), net $-25.79
@@ -73,9 +73,21 @@ Updated 2026-11-16T11:55:12Z (paper trading, never real money)
   CA `H4gHnZ3NCU7Z9XQwGX6YYJNyieGEW8pqwGRUcdSxpump`
 
 ## Last scan
-- 11:54Z: 5 coins, 5 with pairs, 0 passed the market filters, 0 researched
+- 12:09Z: 7 coins, 7 with pairs, 1 passed the market filters, 1 researched
 
 ## Coins it looked at, and why it passed
+- 12:09Z ZLUSD (MIGRATED, $59,720 mcap, $41,955 5m vol): PASS at conviction 4, PASS: ZLUSD is 11 minutes old, up 48% on its last 5m candle at 4.3x hourly pace, and sitting 1.24x under a prior high it just printed. Chasing a spike off a fresh bond (V1, V6).  
+  CA `DdpwR8QXfnS11HUrSdNmnNvXj3XDMcePoHsWGJrdpump`
+- 12:07Z 1.0 (MIGRATED, $169,711 mcap, $11,800 5m vol): PASS at conviction 3, PASS. "Solana 1.0" is 33% off its 24h high, but 5m flow is 0.45x the hourly pace, there's no printed higher low, and no catalyst. Clean holders don't fix a dead story in a 15-copy field (V1, V6).  
+  CA `42t61wPi41TwWtpqBVgZN1V4hjiKwZBKwq27xME9pump`
+- 12:02Z WASTED (DIP, $3,469,455 mcap, $2,132 5m vol): REJECT, Top 10 hold 26.2% ex-pool (>25%) (V13)  
+  CA `GexThZHgaswpAQ7Fi8QrHFubjPimUNSYhJiAA7XZpump`
+- 12:02Z RESPECT (MIGRATED, $109,471 mcap, $2,993 5m vol): PASS at conviction 3, PASS: RESPECT is the leader of a 12-copy "mission/passed/respect" field, but it's down 6% in 5m with sells beating buys, so there's no breakout and no printed higher low. Blocker: "no breakout" (V1, V3, V6).  
+  CA `BARobVaVawPxpjaHLsvrdLn2SpVJQDFYx4BY2R5Kpump`
+- 11:56Z GTA (MIGRATED, $180,262 mcap, $2,240 5m vol): PASS at conviction 3, PASS — flow below pace ($2.2k 5m at 0.72x hourly), and GTA is not the leader of a 16-copy field where WASTED6 has the volume. The Nov 19 GTA VI date is real, but a catalyst doesn't fix dead flow (V1, V6).  
+  CA `G9ZMir6uh66Y7viPkXAy7myA9jjE4T1YgheVUmGDpump`
+- 11:55Z DADDY (DIP, $35,732 mcap, $3,301 5m vol): REJECT, Top 10 hold 27.1% ex-pool (>25%) (V13)  
+  CA `G3aDdJLXfz1YEp6rv9FY9TC1XWZi6iGbxyAze3Ngpump`
 - 11:52Z gtacoin (MIGRATED, $500,496 mcap, $2,286 5m vol): REJECT, Bundles: 6 linked wallet cluster(s) hold 96.9% of supply (>20%) (V17)  
   CA `DSKM3d518BBaQShSKqaqZcG1XMRf81UFB6a1eavhSTNK`
 - 11:51Z SNUT (FINAL_STRETCH, $18,477 mcap, $14,176 5m vol): PASS at conviction 3, PASS: chasing spike, 8-minute-old pump.fun copy in a 10-coin ticker field, no higher low, no catalyst. Blocker: "chasing spike" (V1, V6).  
@@ -84,42 +96,30 @@ Updated 2026-11-16T11:55:12Z (paper trading, never real money)
   CA `3wyRvbB6nFD7Y9cuozSXrUajZs1EoJxrcBCDBxwupump`
 - 11:44Z Anthropig (DIP, $723,064 mcap, $4,051 5m vol): PASS at conviction 3, PASS: DIP on an Anthropig story my own radar calls fading. Theme volume is 0.7x its hourly pace, no catalyst found, and a bounce on 5m flow alone is not a higher low. Clean holders don't rescue a dead meme (owner bottom-buy rule, V1, V6).  
   CA `2NUaS6Gfrm5rBuPBn7svHka8t33SrSkpXGQiUvZLpump`
-- 11:33Z FIBDIP (MIGRATED, $32,655 mcap, $13,477 5m vol): PASS at conviction 2, PASS: FIBDIP is 4 minutes old, spiking at 12x its hourly pace, with no higher low and a project engine trading its own coin. Blocker: "too new" plus "chasing spike" (V1, V6, V13).  
-  CA `3CacZc651RHTRk9weLRhoPCqADoqqEfgHTsyemRiFHzH`
-- 11:22Z 1.0 (MIGRATED, $161,839 mcap, $14,628 5m vol): PASS at conviction 3, PASS: flow below pace, target too close, too new, and it's one of 19 copies with no story. Not a probe. (V1, V6, V13)  
-  CA `42t61wPi41TwWtpqBVgZN1V4hjiKwZBKwq27xME9pump`
-- 11:13Z PAYOUT (FINAL_STRETCH, $15,727 mcap, $4,069 5m vol): REJECT, Top 10 hold 25.3% ex-pool (>25%) (V13)  
-  CA `EnrLgY3pVYGDUjpeK53SZjQZibtUPdTcR89zKLdKypay`
-- 11:11Z GTA (MIGRATED, $176,839 mcap, $2,297 5m vol): PASS at conviction 3, PASS. GTA sits 9.8% off its $196k high with 5m flow at $2.3k, sellers ahead 27 to 22, and 16 copies splitting the crowd. A real catalyst is three days out, but this chart isn't buying it yet. Blockers: chasing, flow below pace, target too close, split crowd. (V1, V6)  
-  CA `G9ZMir6uh66Y7viPkXAy7myA9jjE4T1YgheVUmGDpump`
-- 11:07Z gtacoin (MIGRATED, $510,282 mcap, $3,274 5m vol): REJECT, Bundles: 6 linked wallet cluster(s) hold 96.9% of supply (>20%) (V17)  
-  CA `DSKM3d518BBaQShSKqaqZcG1XMRf81UFB6a1eavhSTNK`
-- 11:04Z GATO (DIP, $6,650,055 mcap, $2,170 5m vol): REJECT, Dev holds 2.7% (>1%) (V13, V17)  
-  CA `HsprHxBRgiVaQdRf3TnKNuZZtaX9JUSPgMFdAkk6pump`
 
 ## What its skips did next (last 48h)
 A skip "ran" if the coin reached the first target (1.5x) from the skip price before a 20% drop, "dumped" if the drop came first. Sampled every 10 min, followed 6h.
-- flow below pace: blocked 36, ran 5, dumped 26, flat 2, open 3 (saving losses: keep it)
+- flow below pace: blocked 37, ran 5, dumped 26, flat 2, open 4 (saving losses: keep it)
   - ran: PASSED up to 1.73x  
     CA `3XaH8VPUaUegqmnkYA8PXCWqQqD8doqdsGGfZyoYpump`
   - ran: ANT up to 1.52x  
     CA `BDPm9gPHCRyo2qjcRrYPsXexmbRwuuHQZo2qhhYXpump`
   - ran: ANT up to 1.58x  
     CA `7H2sHeLHyHR8jxENGmsqn7RxTkYZa4KwXvKYcoxBpump`
-- too new / sniping: blocked 36, ran 5, dumped 28, flat 0, open 3 (saving losses: keep it)
-  - ran: Chick up to 1.66x  
-    CA `Dueav76X9spnoLomhM2jMkkWorVggbeWucLs3YLupump`
-  - ran: TOOLS up to 1.83x  
-    CA `9Ei1d97U7M8m4t3fof7c8MUECtmzgqbQCo81cGGzpump`
-  - ran: twert up to 1.81x  
-    CA `8WvWwttzaLfW1nbjx6wmYL5jozWpvy95WktAg5cipump`
-- top 10 over 25%: blocked 35, ran 6, dumped 24, flat 4, open 1 (saving losses: keep it)
+- top 10 over 25%: blocked 36, ran 6, dumped 23, flat 4, open 3 (saving losses: keep it)
   - ran: rockstar up to 1.95x  
     CA `9HFUEab7sompLDPTAaTGkryMNGbtBaFMhHMVpJEBpump`
   - ran: VI up to 1.71x  
     CA `4Dj8m9vWqu779F1KDBUttvXM8YFm7U92SDpvjBNKtEiB`
   - ran: ANT up to 1.52x  
     CA `BDPm9gPHCRyo2qjcRrYPsXexmbRwuuHQZo2qhhYXpump`
+- too new / sniping: blocked 36, ran 5, dumped 27, flat 0, open 4 (saving losses: keep it)
+  - ran: Chick up to 1.66x  
+    CA `Dueav76X9spnoLomhM2jMkkWorVggbeWucLs3YLupump`
+  - ran: TOOLS up to 1.83x  
+    CA `9Ei1d97U7M8m4t3fof7c8MUECtmzgqbQCo81cGGzpump`
+  - ran: twert up to 1.81x  
+    CA `8WvWwttzaLfW1nbjx6wmYL5jozWpvy95WktAg5cipump`
 - near the high / chasing: blocked 28, ran 6, dumped 20, flat 0, open 2 (saving losses: keep it)
   - ran: penny up to 1.6x  
     CA `5gmCPpuktJ7Svjgr4PPJBTosAFKB8K6Z45EGfSUmpump`
@@ -134,7 +134,7 @@ A skip "ran" if the coin reached the first target (1.5x) from the skip price bef
     CA `AiQUqe4zjiDssth2FsCoeQVaGtCtHYyKGX8U52rWpump`
   - ran: FUTA up to 2.77x  
     CA `FxoXV4C8DTSYeg5dSXrEsr45zzr8tpNbsrpoiZ8Kpump`
-- falling knife / no higher low: blocked 12, ran 3, dumped 4, flat 2, open 3 (mixed)
+- falling knife / no higher low: blocked 13, ran 3, dumped 4, flat 2, open 4 (mixed)
   - ran: CateGiving up to 1.57x  
     CA `5XasjCnMPTczL9VZTDHgbK5sQzwkjnu41oLeHf5Wpump`
   - ran: Nyajira up to 1.52x  
@@ -197,13 +197,13 @@ Nothing shows a positive after-cost edge. Across all 93 settled coins the simple
 The meta is fresh sub-hour launches, but it's split. FEAR (6 min old, $10.6k 5m, 61% buys) and PAYOUT (+657% 1h, 70% buys, $4.9k 5m) have real buyers, while Stand With Jensen, pack.trade, wuf and Rent are down 78-93% on near-zero 5m volume, so the Jensen/Huang and fresh-name story is fading fast (V1, V5). The old GTA-named coins and BLOB are flat, not dying: BLOB holds $21k 5m on a $14.5M cap, but a 43% buy ratio says sellers lead, and Good To Ape and gtacoin trade under $2.6k 5m, which fails the volume bar. Anthropig, WASTED and bill are fading. Setups to research, not buy yet: FEAR and PAYOUT as New Pairs gambles (V1, V6), probe-size at most and only if volume holds past their first hour, with holder, dev and bundle checks run before any entry; BLOB only if it pulls back toward a 40-50% retrace with 5m volume holding (V1). SIPHON's name sits on the drain rule, so I'm not researching it despite +218% 1h. The web figures for DADDY, Mian Xiao Liu and the others don't match the scan, so I'm using scan numbers only.
 
 ## Moving most in its scans, last 30 min (1h volume)
-- BLOB: $176,430 1h vol, $14,341,455 mcap, +9% 1h  
+- 1.0: $305,730 1h vol, $169,711 mcap, +13% 1h  
+  CA `42t61wPi41TwWtpqBVgZN1V4hjiKwZBKwq27xME9pump`
+- BLOB: $157,472 1h vol, $14,234,436 mcap, +1% 1h  
   CA `8s11PkgQt4ZzdZ7oo84hK5t9HG1EvdgAjcg4W7Lpump`
-- 1NU: $101,106 1h vol, $8,343 mcap, -71% 1h  
-  CA `G569daWj4hBCMJDXg26YgfiDij3wBkBfXswPwRMFpump`
+- ZLUSD: $120,293 1h vol, $63,128 mcap, +112% 1h  
+  CA `DdpwR8QXfnS11HUrSdNmnNvXj3XDMcePoHsWGJrdpump`
+- GOSSIP: $99,835 1h vol, $11,031 mcap, -62% 1h  
+  CA `RDBH77f3ZvW6P7NVhV9CuZqrCXVTVoNRahbM9Ynpump`
 - WASTED6: $69,859 1h vol, $35,984 mcap, +18% 1h  
   CA `3wyRvbB6nFD7Y9cuozSXrUajZs1EoJxrcBCDBxwupump`
-- Bandits: $62,595 1h vol, $2,332 mcap, -9% 1h  
-  CA `31oSXL3qXrxJCXbWSxfcSHvJQrDfvnHwVPinF6Fmpump`
-- SIPHON: $49,838 1h vol, $4,144 mcap, -43% 1h  
-  CA `Got25oeW6J2dNy7G5KzCp2JwKeZLg76kU5sz6AS6pump`
