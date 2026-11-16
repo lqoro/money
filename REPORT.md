@@ -1,13 +1,13 @@
 # Trencher live report
 
-Updated 2026-11-16T05:37:10Z (paper trading, never real money)
+Updated 2026-11-16T05:52:16Z (paper trading, never real money)
 
 - Equity: $74.23 (-25.8% vs $100 start)
 - Closed trades: 22, 3 wins
 - Fees paid: $14.78 (axiom $2.81, network $9.18, pool $2.66), plus $4.15 lost to slippage
 - New trades: WATCH-ONLY (scans and decides, buys nothing)
-- Brain: subscription, claude-haiku-5-5 for routine calls, claude-opus-5-5 for the daily review; 243 routine calls and 0 plan-limit hits in 48h
-- Watch log: 107 coins being followed, 1604 filed, 0 would-buys (6h follow, sampled every 2 min)
+- Brain: subscription, claude-haiku-5-5 for routine calls, claude-opus-5-5 for the daily review; 247 routine calls and 0 plan-limit hits in 48h
+- Watch log: 108 coins being followed, 1608 filed, 0 would-buys (6h follow, sampled every 2 min)
 
 ## Scorecard (after fees)
 - 22 closed, 3 won (14%), net $-25.79
@@ -73,9 +73,19 @@ Updated 2026-11-16T05:37:10Z (paper trading, never real money)
   CA `H4gHnZ3NCU7Z9XQwGX6YYJNyieGEW8pqwGRUcdSxpump`
 
 ## Last scan
-- 05:36Z: 11 coins, 11 with pairs, 2 passed the market filters, 2 researched
+- 05:52Z: 5 coins, 5 with pairs, 0 passed the market filters, 0 researched
 
 ## Coins it looked at, and why it passed
+- 05:49Z capytrade (FINAL_STRETCH, $27,081 mcap, $41,412 5m vol): PASS at conviction 3, PASS — capytrade is a 15-minute-old pump.fun copy in a 28-coin "capytrade" field, up 655% in an hour and already printing a +36% 5m spike with 4.7x hourly pace. No story, no catalyst, no higher low. Chasing, and crowded (V1, V13).  
+  CA `FzCC7cK9T37mZTMkqu6TtVFRMLg2xq9ncQ81KGibpump`
+- 05:45Z WISHMAS (DIP, $170,559 mcap, $3,327 5m vol): PASS at conviction 3, PASS. WISHMAS is a $3.3k 5m coin in an 18-copy Wishmas field doing $132k, and it isn't the leader. No catalyst, no printed higher low. Blocker: "split crowd" (V1, V3).  
+  CA `9cmXfuC26anZtH9AUWVzpUxU1UJ7PPogYxftYTepump`
+- 05:40Z Anthropig (MIGRATED, $1,000,311 mcap, $3,343 5m vol): PASS at conviction 3, PASS: flow below pace, no printed higher low, and the ticker field is 18 deep. Clean holders don't save it. (V1, V6, V13)  
+  CA `2NUaS6Gfrm5rBuPBn7svHka8t33SrSkpXGQiUvZLpump`
+- 05:40Z 6STAR (MIGRATED, $248,129 mcap, $69,921 5m vol): REJECT, Top 10 hold 32.4% ex-pool (>25%) (V13)  
+  CA `67Ke9FXwssh2knJ22fzDxku9QMPZ5Ls6REKdqHxLpump`
+- 05:39Z capytrade (FINAL_STRETCH, $27,151 mcap, $17,459 5m vol): PASS at conviction 3, PASS: chasing spike. It's up 684% in an hour, 5m is up 24% at 3x pace, and it's one of 18 copies of the name. That's a candle, not a pullback (V1, V6).  
+  CA `ANPikG3a5qKJjHeeNjDmjZvDPPVtQ8B1ii6unvg3pump`
 - 05:36Z Socks (MIGRATED, $89,624 mcap, $2,872 5m vol): PASS at conviction 2, PASS — 82% off a $494k peak is past the 70% dip cap, the chart is a falling knife with no printed higher low, and 5m flow is $2.9k. Blocker: "falling knife / no higher low" (V1, V6).  
   CA `FS1pBmZKp2Qw1atC64GoLamHstECAos9ot8bGPgDpump`
 - 05:36Z SWARM (MIGRATED, $34,506 mcap, $26,182 5m vol): PASS at conviction 2, PASS: chasing spike, five minutes old, sells outnumber buys, no higher low, no X or site. Blocker: chasing spike. (V1, V6)  
@@ -86,20 +96,10 @@ Updated 2026-11-16T05:37:10Z (paper trading, never real money)
   CA `8s11PkgQt4ZzdZ7oo84hK5t9HG1EvdgAjcg4W7Lpump`
 - 05:23Z equity (MIGRATED, $36,812 mcap, $7,985 5m vol): REJECT, Top 10 hold 27.1% ex-pool (>25%) (V13)  
   CA `HnNTiEwkmHezJBnvUa3QMZ97uS4jXf67NCXSAV8bpump`
-- 05:19Z Marvin (MIGRATED, $682,480 mcap, $73,778 5m vol): PASS at conviction 3, PASS: chasing. Marvin is 5.2% off a $720k high after a 464% hour, with no printed higher low and six copies of the ticker splitting the crowd. (V1, V6, V13)  
-  CA `HkRQ6Qcadi5yuoNpZdA1Q7yVF3r7LdEmAw1aKkSxpump`
-- 05:18Z CBUCKS (MIGRATED, $4,485,540 mcap, $2,086 5m vol): REJECT, Top 10 hold 26.2% ex-pool (>25%) (V13)  
-  CA `DtcicPCKTKeAh7TDEzTym3hXeoHAoMiBdYJhMYxZpump`
-- 05:02Z WASTED (MIGRATED, $4,053,821 mcap, $2,528 5m vol): REJECT, Top 10 hold 26.2% ex-pool (>25%) (V13)  
-  CA `GexThZHgaswpAQ7Fi8QrHFubjPimUNSYhJiAA7XZpump`
-- 04:55Z Anthropig (MIGRATED, $1,162,737 mcap, $5,589 5m vol): PASS at conviction 4, PASS: 5m flow is below hourly pace (0.93x) with sellers ahead (48% buys), and it's not pushing into its high. Shallow-band breakout with no breakout. (V1, V6)  
-  CA `2NUaS6Gfrm5rBuPBn7svHka8t33SrSkpXGQiUvZLpump`
-- 04:50Z Socks (MIGRATED, $112,321 mcap, $2,420 5m vol): PASS at conviction 3, PASS — 77% off the high with $2.4k of 5m flow, no printed higher low, and nothing on the radar carrying the story. Blockers: drawdown past the 70% DIP cap, flow under $10k, no higher low (V1, V6).  
-  CA `FS1pBmZKp2Qw1atC64GoLamHstECAos9ot8bGPgDpump`
 
 ## What its skips did next (last 48h)
 A skip "ran" if the coin reached the first target (1.5x) from the skip price before a 20% drop, "dumped" if the drop came first. Sampled every 10 min, followed 6h.
-- top 10 over 25%: blocked 33, ran 6, dumped 20, flat 4, open 3 (saving losses: keep it)
+- top 10 over 25%: blocked 34, ran 6, dumped 22, flat 4, open 2 (saving losses: keep it)
   - ran: rockstar up to 1.95x  
     CA `9HFUEab7sompLDPTAaTGkryMNGbtBaFMhHMVpJEBpump`
   - ran: VI up to 1.71x  
@@ -127,14 +127,14 @@ A skip "ran" if the coin reached the first target (1.5x) from the skip price bef
     CA `AiQUqe4zjiDssth2FsCoeQVaGtCtHYyKGX8U52rWpump`
   - ran: FUTA up to 2.77x  
     CA `FxoXV4C8DTSYeg5dSXrEsr45zzr8tpNbsrpoiZ8Kpump`
-- near the high / chasing: blocked 21, ran 3, dumped 15, flat 0, open 3 (saving losses: keep it)
+- near the high / chasing: blocked 23, ran 3, dumped 16, flat 0, open 4 (saving losses: keep it)
   - ran: penny up to 1.6x  
     CA `5gmCPpuktJ7Svjgr4PPJBTosAFKB8K6Z45EGfSUmpump`
   - ran: WIGGLES up to 1.69x  
     CA `2kWx47CUrcXtzptFNnbSXKq3vo1ebqyLBhRytKRGpump`
   - ran: Bustas up to 1.75x  
     CA `9rTgs58B3p11vXekTTgVYtv8vKxQ6oSoZFXPy4onpump`
-- falling knife / no higher low: blocked 11, ran 3, dumped 4, flat 2, open 2 (mixed)
+- falling knife / no higher low: blocked 11, ran 3, dumped 5, flat 2, open 1 (mixed)
   - ran: CateGiving up to 1.57x  
     CA `5XasjCnMPTczL9VZTDHgbK5sQzwkjnu41oLeHf5Wpump`
   - ran: Nyajira up to 1.52x  
@@ -195,13 +195,13 @@ Nothing shows a positive after-cost edge. Across all 93 settled coins the simple
 Not quiet. The movers are led by fresh pump.fun launches, with DogePad ($22k 5m, 59% buys, 0.3h old) and AudaCity ($7.9k 5m, 55% buys, +165% in 1h) carrying the flow. Animal and cartoon names are the rising theme (DogePad, Anthropig, Neil the Lemur, Marvin), but it's already splitting into vamps and spoofs: Marvin HgCC is down 79% in an hour and the Neil coin uses a Cyrillic "е", so the original isn't clear yet (V1, V6). GTA names are fading (NEON GTA 6 at $215 5m, gtacoin at $233 5m), and joke and gamer names are mixed: AOC and GAMER show almost no 5m buys or sells after their spikes. Setups to research, not buy: DogePad as a pump.fun FINAL_STRETCH watch, far below bond and still needing holder, dev and bundle checks; AudaCity as a watch only, since its 5m volume is under the $10k bar. HkRQ, ADIN, 9iG6, Cxf4 and Psyop Cat from the crawler aren't in the scan, so they're unverified and I'm not sizing on them. Nothing here is financial advice.
 
 ## Moving most in its scans, last 30 min (1h volume)
-- Marvin: $802,932 1h vol, $691,939 mcap, +255% 1h  
-  CA `HkRQ6Qcadi5yuoNpZdA1Q7yVF3r7LdEmAw1aKkSxpump`
-- PASSED: $238,491 1h vol, $1,316 mcap, -99% 1h  
-  CA `D1LWAKzbZ7W1ZQjbuJEo7WeCEbgnWfzTVSgYsnn2pump`
 - BLOB: $217,102 1h vol, $5,555,141 mcap, -9% 1h  
   CA `8s11PkgQt4ZzdZ7oo84hK5t9HG1EvdgAjcg4W7Lpump`
-- DogePad: $90,602 1h vol, $7,694 mcap, +8% 1h  
+- 6STAR: $150,738 1h vol, $222,341 mcap, +588% 1h  
+  CA `67Ke9FXwssh2knJ22fzDxku9QMPZ5Ls6REKdqHxLpump`
+- capytrade: $106,205 1h vol, $27,851 mcap, +677% 1h  
+  CA `FzCC7cK9T37mZTMkqu6TtVFRMLg2xq9ncQ81KGibpump`
+- DogePad: $94,455 1h vol, $6,534 mcap, -8% 1h  
   CA `371DtDssdqV515HDL9WqHcn291M5b6gV7Najka58pump`
-- AudaCity: $73,298 1h vol, $4,582 mcap, +32% 1h  
+- AudaCity: $73,414 1h vol, $4,331 mcap, +25% 1h  
   CA `A52NDZvSVp7QfYzLvX3BhYrxzidq4nbYainVZwpApump`
