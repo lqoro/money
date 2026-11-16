@@ -1,13 +1,13 @@
 # Trencher live report
 
-Updated 2026-11-16T09:39:09Z (paper trading, never real money)
+Updated 2026-11-16T09:54:13Z (paper trading, never real money)
 
 - Equity: $74.23 (-25.8% vs $100 start)
 - Closed trades: 22, 3 wins
 - Fees paid: $14.78 (axiom $2.81, network $9.18, pool $2.66), plus $4.15 lost to slippage
 - New trades: WATCH-ONLY (scans and decides, buys nothing)
 - Brain: subscription, claude-haiku-5-5 for routine calls, claude-opus-5-5 for the daily review; 274 routine calls and 0 plan-limit hits in 48h
-- Watch log: 69 coins being followed, 1684 filed, 0 would-buys (6h follow, sampled every 2 min)
+- Watch log: 64 coins being followed, 1689 filed, 0 would-buys (6h follow, sampled every 2 min)
 
 ## Scorecard (after fees)
 - 22 closed, 3 won (14%), net $-25.79
@@ -73,7 +73,7 @@ Updated 2026-11-16T09:39:09Z (paper trading, never real money)
   CA `H4gHnZ3NCU7Z9XQwGX6YYJNyieGEW8pqwGRUcdSxpump`
 
 ## Last scan
-- 09:38Z: 3 coins, 3 with pairs, 0 passed the market filters, 0 researched
+- 09:53Z: 10 coins, 10 with pairs, 0 passed the market filters, 0 researched
 
 ## Coins it looked at, and why it passed
 - 09:29Z 莽仔 (FINAL_STRETCH, $17,153 mcap, $12,912 5m vol): REJECT, Top 10 hold 29.3% ex-pool (>25%) (V13)  
@@ -197,13 +197,13 @@ Nothing shows a positive after-cost edge. Across all 93 settled coins the simple
 Meta: the trenches are trading old memes with real flow and person-name pump.fun launches, while fresh animal, GTA-named and parody-brand launches are fading. Rising or holding: BLOB ($11.3M, $24k 5m, 61% buys, -15% 1h), CBUCKS ($4.6M, $19k 5m, 76% buys), gtacoin ($414k, $9.9k 5m, flat 1h) and DADDY "Daddy Huang" (+47% 1h, $9.2k 5m, 64% buys, 0.4h old). Fading: Percy the Owl (-73% 1h on $1.2k 5m), Stake (-48% 1h on $379 5m), GTAVI ($300 5m), Super Auto Pets ($442 5m) and Good To Ape (-18% 1h). Setups to research, not buy: DADDY only if its 5m holds above $10k and the holder, dev and bundle checks come back clean, since a $68k fresh coin carries high bundle risk; BLOB only if the -15% pullback deepens toward 40-50% with 5m volume still holding, because at -15% it is a shallow dip, not a DIP setup; CBUCKS only if buyers keep stepping in. I used scan numbers over the web, which conflicts on Stake (web +169% and $29k 5m, scan -48% and $379 5m), so Stake is not a chase here, and Peace Inu did not appear in the scan at all. The Binance-hack and North Korea memecoin headlines are the hack-named category; none of those coins are in the movers and none get named as a setup.
 
 ## Moving most in its scans, last 30 min (1h volume)
-- BLOB: $286,605 1h vol, $11,749,337 mcap, -12% 1h  
+- BLOB: $255,803 1h vol, $12,144,896 mcap, -5% 1h  
   CA `8s11PkgQt4ZzdZ7oo84hK5t9HG1EvdgAjcg4W7Lpump`
-- afk: $156,881 1h vol, $12,566 mcap, -76% 1h  
+- DADDY: $119,849 1h vol, $16,788 mcap, -48% 1h  
+  CA `G3aDdJLXfz1YEp6rv9FY9TC1XWZi6iGbxyAze3Ngpump`
+- afk: $69,258 1h vol, $8,072 mcap, -85% 1h  
   CA `2fj37tQcLEbLAcmAGWGzMAAUfteJaC9wdVnWdhWopump`
-- Huang: $110,674 1h vol, $21,104 mcap, -56% 1h  
-  CA `42Fyyi97PSgdnoaskbHDHFsCFR6hr5DtwK3hKTzXpump`
 - Anthropig: $57,325 1h vol, $904,992 mcap, -19% 1h  
   CA `2NUaS6Gfrm5rBuPBn7svHka8t33SrSkpXGQiUvZLpump`
-- CBUCKS: $41,648 1h vol, $4,603,744 mcap, -3% 1h  
-  CA `DtcicPCKTKeAh7TDEzTym3hXeoHAoMiBdYJhMYxZpump`
+- Huang: $41,316 1h vol, $22,662 mcap, -49% 1h  
+  CA `42Fyyi97PSgdnoaskbHDHFsCFR6hr5DtwK3hKTzXpump`
