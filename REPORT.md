@@ -1,13 +1,13 @@
 # Trencher live report
 
-Updated 2026-11-16T08:23:25Z (paper trading, never real money)
+Updated 2026-11-16T08:38:39Z (paper trading, never real money)
 
 - Equity: $74.23 (-25.8% vs $100 start)
 - Closed trades: 22, 3 wins
 - Fees paid: $14.78 (axiom $2.81, network $9.18, pool $2.66), plus $4.15 lost to slippage
 - New trades: WATCH-ONLY (scans and decides, buys nothing)
-- Brain: subscription, claude-haiku-5-5 for routine calls, claude-opus-5-5 for the daily review; 267 routine calls and 0 plan-limit hits in 48h
-- Watch log: 77 coins being followed, 1664 filed, 0 would-buys (6h follow, sampled every 2 min)
+- Brain: subscription, claude-haiku-5-5 for routine calls, claude-opus-5-5 for the daily review; 269 routine calls and 0 plan-limit hits in 48h
+- Watch log: 78 coins being followed, 1666 filed, 0 would-buys (6h follow, sampled every 2 min)
 
 ## Scorecard (after fees)
 - 22 closed, 3 won (14%), net $-25.79
@@ -73,9 +73,15 @@ Updated 2026-11-16T08:23:25Z (paper trading, never real money)
   CA `H4gHnZ3NCU7Z9XQwGX6YYJNyieGEW8pqwGRUcdSxpump`
 
 ## Last scan
-- 08:22Z: 1 coins, 1 with pairs, 0 passed the market filters, 0 researched
+- 08:38Z: 3 coins, 3 with pairs, 0 passed the market filters, 0 researched
 
 ## Coins it looked at, and why it passed
+- 08:37Z Huang (MIGRATED, $49,323 mcap, $21,709 5m vol): PASS at conviction 3, PASS — chasing spike. Up ~800% in an hour off a $5.7e-6 base, 5m volume at 4.2x pace, no printed higher low, and one of 24 Huang copies. Blocker: chasing spike (V1, V6).  
+  CA `42Fyyi97PSgdnoaskbHDHFsCFR6hr5DtwK3hKTzXpump`
+- 08:31Z WASTED (DIP, $3,545,787 mcap, $2,818 5m vol): REJECT, Top 10 hold 26.2% ex-pool (>25%) (V13)  
+  CA `GexThZHgaswpAQ7Fi8QrHFubjPimUNSYhJiAA7XZpump`
+- 08:24Z afk (FINAL_STRETCH, $20,127 mcap, $22,906 5m vol): PASS at conviction 2, PASS: chasing spike, split crowd, 8-minute-old launch. 26 copies of "afk" with no story behind them. Farm until proven otherwise (V1, V3, V13).  
+  CA `2fj37tQcLEbLAcmAGWGzMAAUfteJaC9wdVnWdhWopump`
 - 08:15Z Stake (FINAL_STRETCH, $17,777 mcap, $29,340 5m vol): REJECT, RugCheck danger: Creator history of rugged tokens  
   CA `81RPWTsiN6Hiy5Ty3QYur9ii1tDHTfwsq8aPPjtNpump`
 - 08:04Z Percy (DIP, $36,690 mcap, $3,600 5m vol): REJECT, Dip with fading attention is a falling knife, not a dip (5m at 0.33x the hour's pace, under 0.6x)  
@@ -90,12 +96,6 @@ Updated 2026-11-16T08:23:25Z (paper trading, never real money)
   CA `G9ZMir6uh66Y7viPkXAy7myA9jjE4T1YgheVUmGDpump`
 - 07:19Z Percy (MIGRATED, $70,317 mcap, $12,198 5m vol): PASS at conviction 2, PASS: copycat on a 0.7h-old migrated coin, 158% up in the hour, no printed higher low. Blocker "too new" plus "split crowd" (V1, V3).  
   CA `EJvUBkKf4HKKy7m1xrSQfk6yLH2U8dsR1adREbkNpump`
-- 07:11Z Anthropig (MIGRATED, $1,162,884 mcap, $3,431 5m vol): PASS at conviction 3, PASS: flow below pace (0.68x hourly), and the first resistance is only 1.09x away. Anthropig is the leader of an 18-copy pig field, not a setup. (V1, V13)  
-  CA `2NUaS6Gfrm5rBuPBn7svHka8t33SrSkpXGQiUvZLpump`
-- 07:00Z BLOB (MIGRATED, $8,069,667 mcap, $38,780 5m vol): PASS at conviction 3, PASS. BLOB is clean on holders (top 10 at 1.45%, bundles 0%), but 5m flow is at 0.51x its hourly pace and the first resistance is only 1.12x away. Blockers: flow below pace, target too close, big cap no room. (V1, V6, V13)  
-  CA `8s11PkgQt4ZzdZ7oo84hK5t9HG1EvdgAjcg4W7Lpump`
-- 06:58Z RESPECT (MIGRATED, $107,226 mcap, $2,092 5m vol): PASS at conviction 3, PASS: RESPECT is sitting on its own high in a 17-copy "Mission Passed" field, with $2k of 5m flow and a bigger same-ticker token already in the market. Chasing, and not the original. (V1, V6)  
-  CA `BARobVaVawPxpjaHLsvrdLn2SpVJQDFYx4BY2R5Kpump`
 
 ## What its skips did next (last 48h)
 A skip "ran" if the coin reached the first target (1.5x) from the skip price before a 20% drop, "dumped" if the drop came first. Sampled every 10 min, followed 6h.
@@ -106,7 +106,7 @@ A skip "ran" if the coin reached the first target (1.5x) from the skip price bef
     CA `BDPm9gPHCRyo2qjcRrYPsXexmbRwuuHQZo2qhhYXpump`
   - ran: ANT up to 1.58x  
     CA `7H2sHeLHyHR8jxENGmsqn7RxTkYZa4KwXvKYcoxBpump`
-- top 10 over 25%: blocked 33, ran 6, dumped 21, flat 4, open 2 (saving losses: keep it)
+- top 10 over 25%: blocked 33, ran 6, dumped 21, flat 5, open 1 (saving losses: keep it)
   - ran: rockstar up to 1.95x  
     CA `9HFUEab7sompLDPTAaTGkryMNGbtBaFMhHMVpJEBpump`
   - ran: VI up to 1.71x  
@@ -120,6 +120,13 @@ A skip "ran" if the coin reached the first target (1.5x) from the skip price bef
     CA `9Ei1d97U7M8m4t3fof7c8MUECtmzgqbQCo81cGGzpump`
   - ran: twert up to 1.81x  
     CA `8WvWwttzaLfW1nbjx6wmYL5jozWpvy95WktAg5cipump`
+- near the high / chasing: blocked 26, ran 6, dumped 18, flat 0, open 2 (saving losses: keep it)
+  - ran: penny up to 1.6x  
+    CA `5gmCPpuktJ7Svjgr4PPJBTosAFKB8K6Z45EGfSUmpump`
+  - ran: WIGGLES up to 1.69x  
+    CA `2kWx47CUrcXtzptFNnbSXKq3vo1ebqyLBhRytKRGpump`
+  - ran: Bustas up to 1.75x  
+    CA `9rTgs58B3p11vXekTTgVYtv8vKxQ6oSoZFXPy4onpump`
 - RugCheck danger: blocked 24, ran 7, dumped 15, flat 2, open 0 (saving losses: keep it)
   - ran: Ivy up to 1.88x  
     CA `DxNF3Qxd8XeUBdz7ReRdoiFzRmNDKbSz4c2oA7aRpump`
@@ -127,13 +134,6 @@ A skip "ran" if the coin reached the first target (1.5x) from the skip price bef
     CA `AiQUqe4zjiDssth2FsCoeQVaGtCtHYyKGX8U52rWpump`
   - ran: FUTA up to 2.77x  
     CA `FxoXV4C8DTSYeg5dSXrEsr45zzr8tpNbsrpoiZ8Kpump`
-- near the high / chasing: blocked 24, ran 5, dumped 18, flat 0, open 1 (saving losses: keep it)
-  - ran: penny up to 1.6x  
-    CA `5gmCPpuktJ7Svjgr4PPJBTosAFKB8K6Z45EGfSUmpump`
-  - ran: WIGGLES up to 1.69x  
-    CA `2kWx47CUrcXtzptFNnbSXKq3vo1ebqyLBhRytKRGpump`
-  - ran: Bustas up to 1.75x  
-    CA `9rTgs58B3p11vXekTTgVYtv8vKxQ6oSoZFXPy4onpump`
 - falling knife (code): blocked 11, ran 1, dumped 10, flat 0, open 0 (saving losses: keep it)
   - ran: BigP up to 1.57x  
     CA `CY254o6VPaJnTiY5uuKUB8xDjSgykC6xtoLoC3kpump`
@@ -197,13 +197,13 @@ Nothing shows a positive after-cost edge. Across all 93 settled coins the simple
 Meta: fresh pump.fun animal and pet launches are where the new money is landing, but only two or three have real 5m volume. Peace Inu ($5.7k mcap, $11.1k 5m, 55% buys, about 6 minutes old) and Stake ($17.8k mcap, $29.3k 5m, 64% buys, +169% in 1h) are the only fresh names clearing the $10k bar; Percy the Owl ($36.7k, $3.6k 5m, -45% 1h) and the dog launch (0% buys, $4 5m) are the fading end of the same wave. The GTA-named coins (Good To Ape at $143k with $1.7k 5m, GTA6CAT at $6.9M with $904 5m) and the parody brand names (Super Auto Pets down 52% in 1h on $569 5m, Socks at $353 5m) are fading, while BLOB ($12.8M, $12.3k 5m) and CBUCKS ($4.8M, 83% buys) are old memes with flow but no new story. Setups to research, not buy, with holder, dev and bundle checks on each: Peace Inu if its 5m holds above $10k and the bundle check is clean (small and fresh means high bundle risk); Stake only on a pullback with volume still holding, since +169% in minutes is chase territory; Percy only if its 5m climbs back above $10k. I used the scan numbers over the web summary, which conflicts on Super Auto Pets (web says +545% and $9.2k 5m, scan says -52% and $569), and no hack-named coin is in this set.
 
 ## Moving most in its scans, last 30 min (1h volume)
-- BLOB: $375,835 1h vol, $12,808,788 mcap, +19% 1h  
+- BLOB: $316,561 1h vol, $13,598,626 mcap, +18% 1h  
   CA `8s11PkgQt4ZzdZ7oo84hK5t9HG1EvdgAjcg4W7Lpump`
-- Percy: $129,899 1h vol, $36,690 mcap, -45% 1h  
-  CA `EJvUBkKf4HKKy7m1xrSQfk6yLH2U8dsR1adREbkNpump`
-- EARN: $73,016 1h vol, $4,152 mcap, +110% 1h  
+- Huang: $62,244 1h vol, $49,323 mcap, +781% 1h  
+  CA `42Fyyi97PSgdnoaskbHDHFsCFR6hr5DtwK3hKTzXpump`
+- EARN: $50,893 1h vol, $3,639 mcap, -68% 1h  
   CA `32A3wyzQVbqoxkZdBoxfEmbvKzBP4tKz5MNSEjTYEARN`
-- Anthropig: $56,837 1h vol, $1,188,090 mcap, +9% 1h  
-  CA `2NUaS6Gfrm5rBuPBn7svHka8t33SrSkpXGQiUvZLpump`
-- SAP: $33,955 1h vol, $13,053 mcap, -52% 1h  
-  CA `9GwnR6ZGpaVmuoFep7ETH3YSDjmXjFq2GJqmMfGXpump`
+- Stake: $33,734 1h vol, $17,777 mcap, +169% 1h  
+  CA `81RPWTsiN6Hiy5Ty3QYur9ii1tDHTfwsq8aPPjtNpump`
+- afk: $33,154 1h vol, $19,287 mcap, +614% 1h  
+  CA `2fj37tQcLEbLAcmAGWGzMAAUfteJaC9wdVnWdhWopump`
