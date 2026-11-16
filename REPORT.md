@@ -1,13 +1,13 @@
 # Trencher live report
 
-Updated 2026-11-16T06:07:16Z (paper trading, never real money)
+Updated 2026-11-16T06:22:22Z (paper trading, never real money)
 
 - Equity: $74.23 (-25.8% vs $100 start)
 - Closed trades: 22, 3 wins
 - Fees paid: $14.78 (axiom $2.81, network $9.18, pool $2.66), plus $4.15 lost to slippage
 - New trades: WATCH-ONLY (scans and decides, buys nothing)
-- Brain: subscription, claude-haiku-5-5 for routine calls, claude-opus-5-5 for the daily review; 248 routine calls and 0 plan-limit hits in 48h
-- Watch log: 105 coins being followed, 1613 filed, 0 would-buys (6h follow, sampled every 2 min)
+- Brain: subscription, claude-haiku-5-5 for routine calls, claude-opus-5-5 for the daily review; 250 routine calls and 0 plan-limit hits in 48h
+- Watch log: 102 coins being followed, 1618 filed, 0 would-buys (6h follow, sampled every 2 min)
 
 ## Scorecard (after fees)
 - 22 closed, 3 won (14%), net $-25.79
@@ -73,9 +73,13 @@ Updated 2026-11-16T06:07:16Z (paper trading, never real money)
   CA `H4gHnZ3NCU7Z9XQwGX6YYJNyieGEW8pqwGRUcdSxpump`
 
 ## Last scan
-- 06:06Z: 5 coins, 5 with pairs, 0 passed the market filters, 0 researched
+- 06:21Z: 7 coins, 7 with pairs, 0 passed the market filters, 0 researched
 
 ## Coins it looked at, and why it passed
+- 06:15Z CBUCKS (MIGRATED, $4,610,769 mcap, $2,313 5m vol): REJECT, Top 10 hold 26.2% ex-pool (>25%) (V13)  
+  CA `DtcicPCKTKeAh7TDEzTym3hXeoHAoMiBdYJhMYxZpump`
+- 06:15Z BLOB (MIGRATED, $8,214,848 mcap, $83,978 5m vol): PASS at conviction 3, PASS: BLOB is 3.2% off its high at $8.2M, with no printed higher low and no room to a 1.5x target. Chasing a big cap. (blocker: chasing, big cap no room)  
+  CA `8s11PkgQt4ZzdZ7oo84hK5t9HG1EvdgAjcg4W7Lpump`
 - 06:05Z Marvin (MIGRATED, $737,194 mcap, $28,148 5m vol): PASS at conviction 3, PASS: flow below pace (0.51x) and no breakout. Marvin is one of 9 same-ticker copies and the 5m flow is half its hourly pace. (V1, V6, V13)  
   CA `HkRQ6Qcadi5yuoNpZdA1Q7yVF3r7LdEmAw1aKkSxpump`
 - 05:58Z WASTED (MIGRATED, $3,862,531 mcap, $2,189 5m vol): REJECT, Top 10 hold 26.2% ex-pool (>25%) (V13)  
@@ -92,10 +96,6 @@ Updated 2026-11-16T06:07:16Z (paper trading, never real money)
   CA `ANPikG3a5qKJjHeeNjDmjZvDPPVtQ8B1ii6unvg3pump`
 - 05:36Z Socks (MIGRATED, $89,624 mcap, $2,872 5m vol): PASS at conviction 2, PASS — 82% off a $494k peak is past the 70% dip cap, the chart is a falling knife with no printed higher low, and 5m flow is $2.9k. Blocker: "falling knife / no higher low" (V1, V6).  
   CA `FS1pBmZKp2Qw1atC64GoLamHstECAos9ot8bGPgDpump`
-- 05:36Z SWARM (MIGRATED, $34,506 mcap, $26,182 5m vol): PASS at conviction 2, PASS: chasing spike, five minutes old, sells outnumber buys, no higher low, no X or site. Blocker: chasing spike. (V1, V6)  
-  CA `5qCoiRAxPBWQ6P1DpEGFA8DWXAkn5QUUBRotubiWpump`
-- 05:30Z GTA (MIGRATED, $151,372 mcap, $4,190 5m vol): PASS at conviction 3, PASS. Chasing, 7% off the high, in a 5-copy GTA field with the GTA theme fading on the radar. (V1, V6)  
-  CA `G9ZMir6uh66Y7viPkXAy7myA9jjE4T1YgheVUmGDpump`
 
 ## What its skips did next (last 48h)
 A skip "ran" if the coin reached the first target (1.5x) from the skip price before a 20% drop, "dumped" if the drop came first. Sampled every 10 min, followed 6h.
@@ -106,7 +106,7 @@ A skip "ran" if the coin reached the first target (1.5x) from the skip price bef
     CA `4Dj8m9vWqu779F1KDBUttvXM8YFm7U92SDpvjBNKtEiB`
   - ran: ANT up to 1.52x  
     CA `BDPm9gPHCRyo2qjcRrYPsXexmbRwuuHQZo2qhhYXpump`
-- flow below pace: blocked 33, ran 3, dumped 24, flat 2, open 4 (saving losses: keep it)
+- flow below pace: blocked 33, ran 4, dumped 25, flat 2, open 2 (saving losses: keep it)
   - ran: PASSED up to 1.73x  
     CA `3XaH8VPUaUegqmnkYA8PXCWqQqD8doqdsGGfZyoYpump`
   - ran: ANT up to 1.52x  
@@ -120,6 +120,13 @@ A skip "ran" if the coin reached the first target (1.5x) from the skip price bef
     CA `9Ei1d97U7M8m4t3fof7c8MUECtmzgqbQCo81cGGzpump`
   - ran: twert up to 1.81x  
     CA `8WvWwttzaLfW1nbjx6wmYL5jozWpvy95WktAg5cipump`
+- near the high / chasing: blocked 24, ran 4, dumped 18, flat 0, open 2 (saving losses: keep it)
+  - ran: penny up to 1.6x  
+    CA `5gmCPpuktJ7Svjgr4PPJBTosAFKB8K6Z45EGfSUmpump`
+  - ran: WIGGLES up to 1.69x  
+    CA `2kWx47CUrcXtzptFNnbSXKq3vo1ebqyLBhRytKRGpump`
+  - ran: Bustas up to 1.75x  
+    CA `9rTgs58B3p11vXekTTgVYtv8vKxQ6oSoZFXPy4onpump`
 - RugCheck danger: blocked 23, ran 7, dumped 14, flat 2, open 0 (saving losses: keep it)
   - ran: Ivy up to 1.88x  
     CA `DxNF3Qxd8XeUBdz7ReRdoiFzRmNDKbSz4c2oA7aRpump`
@@ -127,13 +134,6 @@ A skip "ran" if the coin reached the first target (1.5x) from the skip price bef
     CA `AiQUqe4zjiDssth2FsCoeQVaGtCtHYyKGX8U52rWpump`
   - ran: FUTA up to 2.77x  
     CA `FxoXV4C8DTSYeg5dSXrEsr45zzr8tpNbsrpoiZ8Kpump`
-- near the high / chasing: blocked 23, ran 4, dumped 17, flat 0, open 2 (saving losses: keep it)
-  - ran: penny up to 1.6x  
-    CA `5gmCPpuktJ7Svjgr4PPJBTosAFKB8K6Z45EGfSUmpump`
-  - ran: WIGGLES up to 1.69x  
-    CA `2kWx47CUrcXtzptFNnbSXKq3vo1ebqyLBhRytKRGpump`
-  - ran: Bustas up to 1.75x  
-    CA `9rTgs58B3p11vXekTTgVYtv8vKxQ6oSoZFXPy4onpump`
 - falling knife / no higher low: blocked 11, ran 3, dumped 5, flat 2, open 1 (mixed)
   - ran: CateGiving up to 1.57x  
     CA `5XasjCnMPTczL9VZTDHgbK5sQzwkjnu41oLeHf5Wpump`
@@ -192,16 +192,16 @@ Nothing shows a positive after-cost edge. Across all 93 settled coins the simple
 - [2026-11-02 20:25] I expected Slingoor, a clean MIGRATED leader with $25k of 5m flow at pace and a 0.77 buy share, to retest its $408k high from $304k. It never went green (0.98x peak) and hit the -20% stop in 2 minutes, a -$2.86 probe. My own thesis admitted there was no printed higher low after a peak only 6 minutes old, so this confirms the money-shape rule: buy share and flow are not structure (V1, V6). Next time a MIGRATED pullback with no higher low above the hourly low is a PASS with blocker "no higher low", not a probe. This is one loss, so it adds no new ban beyond the rule I already have.
 
 ## Meta right now
-Not quiet. The movers are led by fresh pump.fun launches, with DogePad ($22k 5m, 59% buys, 0.3h old) and AudaCity ($7.9k 5m, 55% buys, +165% in 1h) carrying the flow. Animal and cartoon names are the rising theme (DogePad, Anthropig, Neil the Lemur, Marvin), but it's already splitting into vamps and spoofs: Marvin HgCC is down 79% in an hour and the Neil coin uses a Cyrillic "е", so the original isn't clear yet (V1, V6). GTA names are fading (NEON GTA 6 at $215 5m, gtacoin at $233 5m), and joke and gamer names are mixed: AOC and GAMER show almost no 5m buys or sells after their spikes. Setups to research, not buy: DogePad as a pump.fun FINAL_STRETCH watch, far below bond and still needing holder, dev and bundle checks; AudaCity as a watch only, since its 5m volume is under the $10k bar. HkRQ, ADIN, 9iG6, Cxf4 and Psyop Cat from the crawler aren't in the scan, so they're unverified and I'm not sizing on them. Nothing here is financial advice.
+Not quiet, but most of the flow is churn. Two themes run across several movers: animal and cartoon mascots (capytrade, CHIMP, DogePad, dogwifwheels, Marvin, Cartoon Money) and tiny pump.fun launches that spike and then get dumped (capytrade, equity, KELPGUY, PUMPTOK, shep, DogePad). Animal names are rising where buyers show up (capytrade, 0.3h old, +677% in 1h, 66% buys on $36k 5m; Marvin, 65% buys on $23.7k 5m), but the fresh dog and animal launches with zero buys and -75% to -93% hourly drops show the fade. Older coins with real buy pressure (BLOB at $8.2M with $84k 5m and 54% buys; CBUCKS and WASTED at 63-67% buys) are the mature end of the board, and the GTA names are not in the movers, so the web's GTA story is unconfirmed. Setups to research, not buy: capytrade as a pump.fun watch (already near the 30-40k zone where most new pairs die, so conviction is low), and Marvin as a migrated candidate if its 5m volume holds above $10k. Web conflicts I can't resolve: the summary puts DogePad at $22k 5m (the scan shows $2.8k mcap and $100 5m), AudaCity is not in the scan, and it calls Marvin down 79% while the scan shows +52% over 1h, so I'm trusting the scan. Holder, dev and bundle checks are still pending on each coin.
 
 ## Moving most in its scans, last 30 min (1h volume)
 - Marvin: $660,108 1h vol, $718,967 mcap, +52% 1h  
   CA `HkRQ6Qcadi5yuoNpZdA1Q7yVF3r7LdEmAw1aKkSxpump`
-- 6STAR: $150,738 1h vol, $222,341 mcap, +588% 1h  
-  CA `67Ke9FXwssh2knJ22fzDxku9QMPZ5Ls6REKdqHxLpump`
-- capytrade: $106,205 1h vol, $27,851 mcap, +677% 1h  
-  CA `FzCC7cK9T37mZTMkqu6TtVFRMLg2xq9ncQ81KGibpump`
-- capytrade: $70,247 1h vol, $27,151 mcap, +684% 1h  
-  CA `ANPikG3a5qKJjHeeNjDmjZvDPPVtQ8B1ii6unvg3pump`
-- Anthropig: $57,238 1h vol, $998,921 mcap, -13% 1h  
-  CA `2NUaS6Gfrm5rBuPBn7svHka8t33SrSkpXGQiUvZLpump`
+- BLOB: $638,372 1h vol, $8,214,848 mcap, +55% 1h  
+  CA `8s11PkgQt4ZzdZ7oo84hK5t9HG1EvdgAjcg4W7Lpump`
+- SWARM: $108,016 1h vol, $9,932 mcap, -67% 1h  
+  CA `5qCoiRAxPBWQ6P1DpEGFA8DWXAkn5QUUBRotubiWpump`
+- GTA: $55,941 1h vol, $157,484 mcap, +28% 1h  
+  CA `G9ZMir6uh66Y7viPkXAy7myA9jjE4T1YgheVUmGDpump`
+- CHIMP: $51,973 1h vol, $2,226 mcap, -14% 1h  
+  CA `6pPBZPzyFJZs8wfwACmZgLZ8p5JzguJYaYgx78acpump`
