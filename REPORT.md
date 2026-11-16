@@ -1,13 +1,13 @@
 # Trencher live report
 
-Updated 2026-11-16T07:53:04Z (paper trading, never real money)
+Updated 2026-11-16T08:08:20Z (paper trading, never real money)
 
 - Equity: $74.23 (-25.8% vs $100 start)
 - Closed trades: 22, 3 wins
 - Fees paid: $14.78 (axiom $2.81, network $9.18, pool $2.66), plus $4.15 lost to slippage
 - New trades: WATCH-ONLY (scans and decides, buys nothing)
-- Brain: subscription, claude-haiku-5-5 for routine calls, claude-opus-5-5 for the daily review; 264 routine calls and 0 plan-limit hits in 48h
-- Watch log: 86 coins being followed, 1651 filed, 0 would-buys (6h follow, sampled every 2 min)
+- Brain: subscription, claude-haiku-5-5 for routine calls, claude-opus-5-5 for the daily review; 266 routine calls and 0 plan-limit hits in 48h
+- Watch log: 83 coins being followed, 1657 filed, 0 would-buys (6h follow, sampled every 2 min)
 
 ## Scorecard (after fees)
 - 22 closed, 3 won (14%), net $-25.79
@@ -73,9 +73,15 @@ Updated 2026-11-16T07:53:04Z (paper trading, never real money)
   CA `H4gHnZ3NCU7Z9XQwGX6YYJNyieGEW8pqwGRUcdSxpump`
 
 ## Last scan
-- 07:52Z: 10 coins, 10 with pairs, 1 passed the market filters, 1 researched
+- 08:08Z: 7 coins, 7 with pairs, 0 passed the market filters, 0 researched
 
 ## Coins it looked at, and why it passed
+- 08:04Z Percy (DIP, $36,690 mcap, $3,600 5m vol): REJECT, Dip with fading attention is a falling knife, not a dip (5m at 0.33x the hour's pace, under 0.6x)  
+  CA `EJvUBkKf4HKKy7m1xrSQfk6yLH2U8dsR1adREbkNpump`
+- 07:56Z Anthropig (MIGRATED, $1,218,311 mcap, $3,653 5m vol): PASS at conviction 3, PASS — 6.8% off the high, 5m flow below pace (0.78x), no printed higher low, theme at 0.77x pace with no catalyst. Chasing a crowd that's leaving (V1, V6).  
+  CA `2NUaS6Gfrm5rBuPBn7svHka8t33SrSkpXGQiUvZLpump`
+- 07:53Z RESPECT (MIGRATED, $104,906 mcap, $2,148 5m vol): PASS at conviction 2, PASS: chasing. RESPECT is 2.2% off its $107k high after a +18.7% 5m candle, with no printed higher low. Thin $2.1k 5m flow and a 0.82x theme pace. (V1, V6)  
+  CA `BARobVaVawPxpjaHLsvrdLn2SpVJQDFYx4BY2R5Kpump`
 - 07:52Z CBUCKS (MIGRATED, $4,836,098 mcap, $3,599 5m vol): REJECT, Top 10 hold 26.2% ex-pool (>25%) (V13)  
   CA `DtcicPCKTKeAh7TDEzTym3hXeoHAoMiBdYJhMYxZpump`
 - 07:23Z GTA (MIGRATED, $141,418 mcap, $2,577 5m vol): PASS at conviction 3, PASS: first resistance is only 1.25x away (prior high $0.000185), under the 1.3x floor, and 5m flow is $2.6k, under the $10k bar. Target too close, in a 16-copy vamp field. (V1, V6)  
@@ -90,12 +96,6 @@ Updated 2026-11-16T07:53:04Z (paper trading, never real money)
   CA `BARobVaVawPxpjaHLsvrdLn2SpVJQDFYx4BY2R5Kpump`
 - 06:57Z SAP (FINAL_STRETCH, $22,216 mcap, $8,901 5m vol): PASS at conviction 3, PASS: chasing spike. SAP is up 85% on 5m at 3.4x its hourly pace, with no X, no site and no socials. Wait for the retrace. (V1, V6)  
   CA `9GwnR6ZGpaVmuoFep7ETH3YSDjmXjFq2GJqmMfGXpump`
-- 06:50Z Marvin (DIP, $449,104 mcap, $8,111 5m vol): REJECT, Dip with fading attention is a falling knife, not a dip (5m at 0.25x the hour's pace, under 0.6x)  
-  CA `HkRQ6Qcadi5yuoNpZdA1Q7yVF3r7LdEmAw1aKkSxpump`
-- 06:46Z GATO (DIP, $6,923,697 mcap, $2,059 5m vol): REJECT, Dev holds 2.7% (>1%) (V13, V17)  
-  CA `HsprHxBRgiVaQdRf3TnKNuZZtaX9JUSPgMFdAkk6pump`
-- 06:43Z WASTED (MIGRATED, $3,850,476 mcap, $2,270 5m vol): REJECT, Top 10 hold 26.2% ex-pool (>25%) (V13)  
-  CA `GexThZHgaswpAQ7Fi8QrHFubjPimUNSYhJiAA7XZpump`
 
 ## What its skips did next (last 48h)
 A skip "ran" if the coin reached the first target (1.5x) from the skip price before a 20% drop, "dumped" if the drop came first. Sampled every 10 min, followed 6h.
@@ -113,7 +113,7 @@ A skip "ran" if the coin reached the first target (1.5x) from the skip price bef
     CA `4Dj8m9vWqu779F1KDBUttvXM8YFm7U92SDpvjBNKtEiB`
   - ran: ANT up to 1.52x  
     CA `BDPm9gPHCRyo2qjcRrYPsXexmbRwuuHQZo2qhhYXpump`
-- too new / sniping: blocked 30, ran 5, dumped 25, flat 0, open 0 (saving losses: keep it)
+- too new / sniping: blocked 29, ran 5, dumped 24, flat 0, open 0 (saving losses: keep it)
   - ran: Chick up to 1.66x  
     CA `Dueav76X9spnoLomhM2jMkkWorVggbeWucLs3YLupump`
   - ran: TOOLS up to 1.83x  
@@ -134,7 +134,7 @@ A skip "ran" if the coin reached the first target (1.5x) from the skip price bef
     CA `AiQUqe4zjiDssth2FsCoeQVaGtCtHYyKGX8U52rWpump`
   - ran: FUTA up to 2.77x  
     CA `FxoXV4C8DTSYeg5dSXrEsr45zzr8tpNbsrpoiZ8Kpump`
-- falling knife (code): blocked 10, ran 1, dumped 9, flat 0, open 0 (saving losses: keep it)
+- falling knife (code): blocked 11, ran 1, dumped 9, flat 0, open 1 (saving losses: keep it)
   - ran: BigP up to 1.57x  
     CA `CY254o6VPaJnTiY5uuKUB8xDjSgykC6xtoLoC3kpump`
 - falling knife / no higher low: blocked 10, ran 3, dumped 4, flat 2, open 1 (mixed)
@@ -197,13 +197,13 @@ Nothing shows a positive after-cost edge. Across all 93 settled coins the simple
 Not quiet, but most of the flow is churn. Four themes show up in the movers: cartoon mascots (Marvin, Cartoon Money, Wheelchair Pup), parody brand names (Super Auto Pets, Anthropig), GTA-style street names (Good To Ape, gtacoin), and fresh pump.fun clones with zero 5m volume that fell 70-99% in an hour (6STAR, FUND, GATSBY, PUP, nut), so the clones are fading. The only fresh name with real buy pressure is Super Auto Pets (SAP: pump.fun, $20k mcap, $9.2k 5m, 72% buys, +545% in 1h, 0.3h old), and Marvin ($449k, 55% buys, $8.1k 5m, -48% in 1h) and RESPECT (Mission Passed, $107k, 75% buys, $2.1k 5m) are holding buyers with thinning volume. BLOB ($8.1M, $38.8k 5m) and CBUCKS ($4.9M) have real flow but are old memes, not a new narrative. Setups to research, not buy: SAP only if its 5m holds above $10k and its holder and bundle checks come back clean (at +545% in 20 minutes, chase risk is high), and Marvin only if its 5m climbs back above $10k after migration. The GTA headline story is not showing up in volume beyond Good To Ape, the Binance-hack memecoin headlines are a theme I won't trade, and no hack-named coin is a setup. The web summary conflicts with the scan on capytrade, DogePad and Marvin's 1h move, so I'm using the scan numbers only.
 
 ## Moving most in its scans, last 30 min (1h volume)
-- BLOB: $623,875 1h vol, $12,546,992 mcap, +73% 1h  
+- BLOB: $486,884 1h vol, $12,079,097 mcap, +34% 1h  
   CA `8s11PkgQt4ZzdZ7oo84hK5t9HG1EvdgAjcg4W7Lpump`
-- schrodinger: $69,842 1h vol, $4,876 mcap, +30% 1h  
+- Percy: $129,899 1h vol, $36,690 mcap, -45% 1h  
+  CA `EJvUBkKf4HKKy7m1xrSQfk6yLH2U8dsR1adREbkNpump`
+- schrodinger: $71,718 1h vol, $4,594 mcap, +23% 1h  
   CA `7c4tgZUnBcB2xWjgWyVjaWbxVcCyrMiY6rFLCGjwpump`
-- EARN: $51,649 1h vol, $12,512 mcap, +532% 1h  
+- EARN: $70,012 1h vol, $7,945 mcap, +301% 1h  
   CA `32A3wyzQVbqoxkZdBoxfEmbvKzBP4tKz5MNSEjTYEARN`
-- GTA: $29,450 1h vol, $137,497 mcap, -11% 1h  
-  CA `G9ZMir6uh66Y7viPkXAy7myA9jjE4T1YgheVUmGDpump`
-- SAP: $29,139 1h vol, $9,356 mcap, -69% 1h  
-  CA `9GwnR6ZGpaVmuoFep7ETH3YSDjmXjFq2GJqmMfGXpump`
+- Anthropig: $56,837 1h vol, $1,188,090 mcap, +9% 1h  
+  CA `2NUaS6Gfrm5rBuPBn7svHka8t33SrSkpXGQiUvZLpump`
