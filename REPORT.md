@@ -1,13 +1,13 @@
 # Trencher live report
 
-Updated 2026-11-16T11:24:59Z (paper trading, never real money)
+Updated 2026-11-16T11:40:02Z (paper trading, never real money)
 
 - Equity: $74.23 (-25.8% vs $100 start)
 - Closed trades: 22, 3 wins
 - Fees paid: $14.78 (axiom $2.81, network $9.18, pool $2.66), plus $4.15 lost to slippage
 - New trades: WATCH-ONLY (scans and decides, buys nothing)
-- Brain: subscription, claude-haiku-5-5 for routine calls, claude-opus-5-5 for the daily review; 289 routine calls and 0 plan-limit hits in 48h
-- Watch log: 66 coins being followed, 1707 filed, 0 would-buys (6h follow, sampled every 2 min)
+- Brain: subscription, claude-haiku-5-5 for routine calls, claude-opus-5-5 for the daily review; 290 routine calls and 0 plan-limit hits in 48h
+- Watch log: 63 coins being followed, 1711 filed, 0 would-buys (6h follow, sampled every 2 min)
 
 ## Scorecard (after fees)
 - 22 closed, 3 won (14%), net $-25.79
@@ -73,9 +73,11 @@ Updated 2026-11-16T11:24:59Z (paper trading, never real money)
   CA `H4gHnZ3NCU7Z9XQwGX6YYJNyieGEW8pqwGRUcdSxpump`
 
 ## Last scan
-- 11:24Z: 5 coins, 5 with pairs, 0 passed the market filters, 0 researched
+- 11:39Z: 2 coins, 2 with pairs, 0 passed the market filters, 0 researched
 
 ## Coins it looked at, and why it passed
+- 11:33Z FIBDIP (MIGRATED, $32,655 mcap, $13,477 5m vol): PASS at conviction 2, PASS: FIBDIP is 4 minutes old, spiking at 12x its hourly pace, with no higher low and a project engine trading its own coin. Blocker: "too new" plus "chasing spike" (V1, V6, V13).  
+  CA `3CacZc651RHTRk9weLRhoPCqADoqqEfgHTsyemRiFHzH`
 - 11:22Z 1.0 (MIGRATED, $161,839 mcap, $14,628 5m vol): PASS at conviction 3, PASS: flow below pace, target too close, too new, and it's one of 19 copies with no story. Not a probe. (V1, V6, V13)  
   CA `42t61wPi41TwWtpqBVgZN1V4hjiKwZBKwq27xME9pump`
 - 11:13Z PAYOUT (FINAL_STRETCH, $15,727 mcap, $4,069 5m vol): REJECT, Top 10 hold 25.3% ex-pool (>25%) (V13)  
@@ -94,8 +96,6 @@ Updated 2026-11-16T11:24:59Z (paper trading, never real money)
   CA `3CacZc651RHTRk9weLRhoPCqADoqqEfgHTsyemRiFHzH`
 - 10:40Z देसी (DIP, $56,006 mcap, $22,873 5m vol): PASS at conviction 3, PASS — 38 minutes past its mint, down 58% from peak and still bleeding (-21% on 5m, latest 15m candle about -44%). A dip with no catalyst and no printed higher low, in a 20-copy batman field. Blocker: "too new". (V1, V6)  
   CA `G4Q4YB4BGbpfA4jZ6LTBAU7a1arP4a8anmfU963Lpump`
-- 10:37Z 1.0 (MIGRATED, $59,815 mcap, $62,198 5m vol): PASS at conviction 2, PASS — "1.0" is 12 minutes old, 34% off a $90k spike, mid-bleed with no printed higher low, +13% on 3.6x pace, and no catalyst I can find. Blocker: too new / chasing spike (V1, V6).  
-  CA `42t61wPi41TwWtpqBVgZN1V4hjiKwZBKwq27xME9pump`
 
 ## What its skips did next (last 48h)
 A skip "ran" if the coin reached the first target (1.5x) from the skip price before a 20% drop, "dumped" if the drop came first. Sampled every 10 min, followed 6h.
@@ -113,7 +113,7 @@ A skip "ran" if the coin reached the first target (1.5x) from the skip price bef
     CA `BDPm9gPHCRyo2qjcRrYPsXexmbRwuuHQZo2qhhYXpump`
   - ran: ANT up to 1.58x  
     CA `7H2sHeLHyHR8jxENGmsqn7RxTkYZa4KwXvKYcoxBpump`
-- too new / sniping: blocked 34, ran 5, dumped 28, flat 0, open 1 (saving losses: keep it)
+- too new / sniping: blocked 35, ran 5, dumped 28, flat 0, open 2 (saving losses: keep it)
   - ran: Chick up to 1.66x  
     CA `Dueav76X9spnoLomhM2jMkkWorVggbeWucLs3YLupump`
   - ran: TOOLS up to 1.83x  
@@ -134,7 +134,7 @@ A skip "ran" if the coin reached the first target (1.5x) from the skip price bef
     CA `AiQUqe4zjiDssth2FsCoeQVaGtCtHYyKGX8U52rWpump`
   - ran: FUTA up to 2.77x  
     CA `FxoXV4C8DTSYeg5dSXrEsr45zzr8tpNbsrpoiZ8Kpump`
-- falling knife / no higher low: blocked 13, ran 4, dumped 4, flat 2, open 3 (mixed)
+- falling knife / no higher low: blocked 12, ran 3, dumped 4, flat 2, open 3 (mixed)
   - ran: CateGiving up to 1.57x  
     CA `5XasjCnMPTczL9VZTDHgbK5sQzwkjnu41oLeHf5Wpump`
   - ran: Nyajira up to 1.52x  
@@ -199,11 +199,11 @@ The meta is fresh sub-hour launches, but it's split. FEAR (6 min old, $10.6k 5m,
 ## Moving most in its scans, last 30 min (1h volume)
 - 1.0: $716,071 1h vol, $151,831 mcap, +417% 1h  
   CA `42t61wPi41TwWtpqBVgZN1V4hjiKwZBKwq27xME9pump`
-- BLOB: $189,873 1h vol, $14,542,851 mcap, +5% 1h  
+- BLOB: $179,824 1h vol, $13,872,711 mcap, +4% 1h  
   CA `8s11PkgQt4ZzdZ7oo84hK5t9HG1EvdgAjcg4W7Lpump`
-- SIPHON: $60,091 1h vol, $7,423 mcap, +218% 1h  
+- 1NU: $98,820 1h vol, $5,458 mcap, -81% 1h  
+  CA `G569daWj4hBCMJDXg26YgfiDij3wBkBfXswPwRMFpump`
+- देसी: $89,050 1h vol, $23,760 mcap, -65% 1h  
+  CA `G4Q4YB4BGbpfA4jZ6LTBAU7a1arP4a8anmfU963Lpump`
+- SIPHON: $63,199 1h vol, $4,432 mcap, +90% 1h  
   CA `Got25oeW6J2dNy7G5KzCp2JwKeZLg76kU5sz6AS6pump`
-- Rent: $47,826 1h vol, $2,092 mcap, -62% 1h  
-  CA `6doZXcywhwpfAva7xQvfS3n1xhM9GGctNfS562W2pump`
-- Anthropig: $46,760 1h vol, $675,167 mcap, -22% 1h  
-  CA `2NUaS6Gfrm5rBuPBn7svHka8t33SrSkpXGQiUvZLpump`
