@@ -1,13 +1,13 @@
 # Trencher live report
 
-Updated 2026-11-16T07:38:01Z (paper trading, never real money)
+Updated 2026-11-16T07:53:04Z (paper trading, never real money)
 
 - Equity: $74.23 (-25.8% vs $100 start)
 - Closed trades: 22, 3 wins
 - Fees paid: $14.78 (axiom $2.81, network $9.18, pool $2.66), plus $4.15 lost to slippage
 - New trades: WATCH-ONLY (scans and decides, buys nothing)
 - Brain: subscription, claude-haiku-5-5 for routine calls, claude-opus-5-5 for the daily review; 264 routine calls and 0 plan-limit hits in 48h
-- Watch log: 90 coins being followed, 1646 filed, 0 would-buys (6h follow, sampled every 2 min)
+- Watch log: 86 coins being followed, 1651 filed, 0 would-buys (6h follow, sampled every 2 min)
 
 ## Scorecard (after fees)
 - 22 closed, 3 won (14%), net $-25.79
@@ -73,9 +73,11 @@ Updated 2026-11-16T07:38:01Z (paper trading, never real money)
   CA `H4gHnZ3NCU7Z9XQwGX6YYJNyieGEW8pqwGRUcdSxpump`
 
 ## Last scan
-- 07:36Z: 7 coins, 7 with pairs, 0 passed the market filters, 0 researched
+- 07:52Z: 10 coins, 10 with pairs, 1 passed the market filters, 1 researched
 
 ## Coins it looked at, and why it passed
+- 07:52Z CBUCKS (MIGRATED, $4,836,098 mcap, $3,599 5m vol): REJECT, Top 10 hold 26.2% ex-pool (>25%) (V13)  
+  CA `DtcicPCKTKeAh7TDEzTym3hXeoHAoMiBdYJhMYxZpump`
 - 07:23Z GTA (MIGRATED, $141,418 mcap, $2,577 5m vol): PASS at conviction 3, PASS: first resistance is only 1.25x away (prior high $0.000185), under the 1.3x floor, and 5m flow is $2.6k, under the $10k bar. Target too close, in a 16-copy vamp field. (V1, V6)  
   CA `G9ZMir6uh66Y7viPkXAy7myA9jjE4T1YgheVUmGDpump`
 - 07:19Z Percy (MIGRATED, $70,317 mcap, $12,198 5m vol): PASS at conviction 2, PASS: copycat on a 0.7h-old migrated coin, 158% up in the hour, no printed higher low. Blocker "too new" plus "split crowd" (V1, V3).  
@@ -94,8 +96,6 @@ Updated 2026-11-16T07:38:01Z (paper trading, never real money)
   CA `HsprHxBRgiVaQdRf3TnKNuZZtaX9JUSPgMFdAkk6pump`
 - 06:43Z WASTED (MIGRATED, $3,850,476 mcap, $2,270 5m vol): REJECT, Top 10 hold 26.2% ex-pool (>25%) (V13)  
   CA `GexThZHgaswpAQ7Fi8QrHFubjPimUNSYhJiAA7XZpump`
-- 06:34Z Percy (FINAL_STRETCH, $20,891 mcap, $44,975 5m vol): PASS at conviction 3, PASS: chasing spike (5m +208%, 7.8x hourly pace) inside a 27-copy owl field, 7 minutes old, no X. Blocker: "chasing spike" and "split crowd" (V1, V3, V6, V13).  
-  CA `EJvUBkKf4HKKy7m1xrSQfk6yLH2U8dsR1adREbkNpump`
 
 ## What its skips did next (last 48h)
 A skip "ran" if the coin reached the first target (1.5x) from the skip price before a 20% drop, "dumped" if the drop came first. Sampled every 10 min, followed 6h.
@@ -113,14 +113,14 @@ A skip "ran" if the coin reached the first target (1.5x) from the skip price bef
     CA `4Dj8m9vWqu779F1KDBUttvXM8YFm7U92SDpvjBNKtEiB`
   - ran: ANT up to 1.52x  
     CA `BDPm9gPHCRyo2qjcRrYPsXexmbRwuuHQZo2qhhYXpump`
-- too new / sniping: blocked 30, ran 5, dumped 24, flat 0, open 1 (saving losses: keep it)
+- too new / sniping: blocked 30, ran 5, dumped 25, flat 0, open 0 (saving losses: keep it)
   - ran: Chick up to 1.66x  
     CA `Dueav76X9spnoLomhM2jMkkWorVggbeWucLs3YLupump`
   - ran: TOOLS up to 1.83x  
     CA `9Ei1d97U7M8m4t3fof7c8MUECtmzgqbQCo81cGGzpump`
   - ran: twert up to 1.81x  
     CA `8WvWwttzaLfW1nbjx6wmYL5jozWpvy95WktAg5cipump`
-- near the high / chasing: blocked 24, ran 5, dumped 17, flat 0, open 2 (saving losses: keep it)
+- near the high / chasing: blocked 24, ran 5, dumped 18, flat 0, open 1 (saving losses: keep it)
   - ran: penny up to 1.6x  
     CA `5gmCPpuktJ7Svjgr4PPJBTosAFKB8K6Z45EGfSUmpump`
   - ran: WIGGLES up to 1.69x  
@@ -151,7 +151,7 @@ A skip "ran" if the coin reached the first target (1.5x) from the skip price bef
     CA `H2irVtPLfKoBJ69itZmhsedSPwBUTaubmUavc6Uapump`
   - ran: BLOB up to 1.66x  
     CA `8s11PkgQt4ZzdZ7oo84hK5t9HG1EvdgAjcg4W7Lpump`
-- thin 5m volume: blocked 8, ran 2, dumped 5, flat 0, open 1 (saving losses: keep it)
+- thin 5m volume: blocked 8, ran 2, dumped 6, flat 0, open 0 (saving losses: keep it)
   - ran: SENDER up to 1.58x  
     CA `5peJLZQnBkXtydYYMunbT4QutSyd9eA474MqxcmEpump`
   - ran: UNITY up to 1.66x  
@@ -197,13 +197,13 @@ Nothing shows a positive after-cost edge. Across all 93 settled coins the simple
 Not quiet, but most of the flow is churn. Four themes show up in the movers: cartoon mascots (Marvin, Cartoon Money, Wheelchair Pup), parody brand names (Super Auto Pets, Anthropig), GTA-style street names (Good To Ape, gtacoin), and fresh pump.fun clones with zero 5m volume that fell 70-99% in an hour (6STAR, FUND, GATSBY, PUP, nut), so the clones are fading. The only fresh name with real buy pressure is Super Auto Pets (SAP: pump.fun, $20k mcap, $9.2k 5m, 72% buys, +545% in 1h, 0.3h old), and Marvin ($449k, 55% buys, $8.1k 5m, -48% in 1h) and RESPECT (Mission Passed, $107k, 75% buys, $2.1k 5m) are holding buyers with thinning volume. BLOB ($8.1M, $38.8k 5m) and CBUCKS ($4.9M) have real flow but are old memes, not a new narrative. Setups to research, not buy: SAP only if its 5m holds above $10k and its holder and bundle checks come back clean (at +545% in 20 minutes, chase risk is high), and Marvin only if its 5m climbs back above $10k after migration. The GTA headline story is not showing up in volume beyond Good To Ape, the Binance-hack memecoin headlines are a theme I won't trade, and no hack-named coin is a setup. The web summary conflicts with the scan on capytrade, DogePad and Marvin's 1h move, so I'm using the scan numbers only.
 
 ## Moving most in its scans, last 30 min (1h volume)
-- Percy: $202,380 1h vol, $69,625 mcap, +155% 1h  
-  CA `EJvUBkKf4HKKy7m1xrSQfk6yLH2U8dsR1adREbkNpump`
-- 6STAR: $64,872 1h vol, $1,326 mcap, -100% 1h  
-  CA `67Ke9FXwssh2knJ22fzDxku9QMPZ5Ls6REKdqHxLpump`
-- Anthropig: $61,291 1h vol, $1,167,117 mcap, +9% 1h  
-  CA `2NUaS6Gfrm5rBuPBn7svHka8t33SrSkpXGQiUvZLpump`
-- schrodinger: $56,061 1h vol, $8,404 mcap, +125% 1h  
+- BLOB: $623,875 1h vol, $12,546,992 mcap, +73% 1h  
+  CA `8s11PkgQt4ZzdZ7oo84hK5t9HG1EvdgAjcg4W7Lpump`
+- schrodinger: $69,842 1h vol, $4,876 mcap, +30% 1h  
   CA `7c4tgZUnBcB2xWjgWyVjaWbxVcCyrMiY6rFLCGjwpump`
-- EARN: $38,711 1h vol, $13,406 mcap, +577% 1h  
+- EARN: $51,649 1h vol, $12,512 mcap, +532% 1h  
   CA `32A3wyzQVbqoxkZdBoxfEmbvKzBP4tKz5MNSEjTYEARN`
+- GTA: $29,450 1h vol, $137,497 mcap, -11% 1h  
+  CA `G9ZMir6uh66Y7viPkXAy7myA9jjE4T1YgheVUmGDpump`
+- SAP: $29,139 1h vol, $9,356 mcap, -69% 1h  
+  CA `9GwnR6ZGpaVmuoFep7ETH3YSDjmXjFq2GJqmMfGXpump`
