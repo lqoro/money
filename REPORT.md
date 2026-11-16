@@ -1,13 +1,13 @@
 # Trencher live report
 
-Updated 2026-11-16T12:10:13Z (paper trading, never real money)
+Updated 2026-11-16T12:25:24Z (paper trading, never real money)
 
 - Equity: $74.23 (-25.8% vs $100 start)
 - Closed trades: 22, 3 wins
 - Fees paid: $14.78 (axiom $2.81, network $9.18, pool $2.66), plus $4.15 lost to slippage
 - New trades: WATCH-ONLY (scans and decides, buys nothing)
-- Brain: subscription, claude-haiku-5-5 for routine calls, claude-opus-5-5 for the daily review; 297 routine calls and 0 plan-limit hits in 48h
-- Watch log: 66 coins being followed, 1718 filed, 0 would-buys (6h follow, sampled every 2 min)
+- Brain: subscription, claude-haiku-5-5 for routine calls, claude-opus-5-5 for the daily review; 299 routine calls and 0 plan-limit hits in 48h
+- Watch log: 65 coins being followed, 1721 filed, 0 would-buys (6h follow, sampled every 2 min)
 
 ## Scorecard (after fees)
 - 22 closed, 3 won (14%), net $-25.79
@@ -73,9 +73,13 @@ Updated 2026-11-16T12:10:13Z (paper trading, never real money)
   CA `H4gHnZ3NCU7Z9XQwGX6YYJNyieGEW8pqwGRUcdSxpump`
 
 ## Last scan
-- 12:09Z: 7 coins, 7 with pairs, 1 passed the market filters, 1 researched
+- 12:24Z: 1 coins, 1 with pairs, 0 passed the market filters, 0 researched
 
 ## Coins it looked at, and why it passed
+- 12:23Z CBUCKS (MIGRATED, $5,194,823 mcap, $3,356 5m vol): REJECT, Top 10 hold 26.2% ex-pool (>25%) (V13)  
+  CA `DtcicPCKTKeAh7TDEzTym3hXeoHAoMiBdYJhMYxZpump`
+- 12:19Z bill (MIGRATED, $180,158 mcap, $4,232 5m vol): PASS at conviction 3, PASS — bill is a 77.5%-drawn-down bottom buy with no catalyst, sellers leading 5m (38% buys), and 14 copies splitting the crowd. Blocker: "no catalyst" (V1, V13).  
+  CA `85RhcSEMy15SNhFLmSArNm7udPKXVagVgsq4YmSopump`
 - 12:09Z ZLUSD (MIGRATED, $59,720 mcap, $41,955 5m vol): PASS at conviction 4, PASS: ZLUSD is 11 minutes old, up 48% on its last 5m candle at 4.3x hourly pace, and sitting 1.24x under a prior high it just printed. Chasing a spike off a fresh bond (V1, V6).  
   CA `DdpwR8QXfnS11HUrSdNmnNvXj3XDMcePoHsWGJrdpump`
 - 12:07Z 1.0 (MIGRATED, $169,711 mcap, $11,800 5m vol): PASS at conviction 3, PASS. "Solana 1.0" is 33% off its 24h high, but 5m flow is 0.45x the hourly pace, there's no printed higher low, and no catalyst. Clean holders don't fix a dead story in a 15-copy field (V1, V6).  
@@ -92,14 +96,10 @@ Updated 2026-11-16T12:10:13Z (paper trading, never real money)
   CA `DSKM3d518BBaQShSKqaqZcG1XMRf81UFB6a1eavhSTNK`
 - 11:51Z SNUT (FINAL_STRETCH, $18,477 mcap, $14,176 5m vol): PASS at conviction 3, PASS: chasing spike, 8-minute-old pump.fun copy in a 10-coin ticker field, no higher low, no catalyst. Blocker: "chasing spike" (V1, V6).  
   CA `32Ec3VXt5yxK4XsTVhRF9oPrhj6xZJrDtsRychXTpump`
-- 11:47Z WASTED6 (MIGRATED, $40,264 mcap, $10,758 5m vol): PASS at conviction 4, PASS: WASTED6 is 21 minutes old and sitting 0.3% under its own high with no printed higher low. Blocker: "chasing" plus "too new". Clean holders don't fix the entry (V1, V6).  
-  CA `3wyRvbB6nFD7Y9cuozSXrUajZs1EoJxrcBCDBxwupump`
-- 11:44Z Anthropig (DIP, $723,064 mcap, $4,051 5m vol): PASS at conviction 3, PASS: DIP on an Anthropig story my own radar calls fading. Theme volume is 0.7x its hourly pace, no catalyst found, and a bounce on 5m flow alone is not a higher low. Clean holders don't rescue a dead meme (owner bottom-buy rule, V1, V6).  
-  CA `2NUaS6Gfrm5rBuPBn7svHka8t33SrSkpXGQiUvZLpump`
 
 ## What its skips did next (last 48h)
 A skip "ran" if the coin reached the first target (1.5x) from the skip price before a 20% drop, "dumped" if the drop came first. Sampled every 10 min, followed 6h.
-- flow below pace: blocked 37, ran 5, dumped 26, flat 2, open 4 (saving losses: keep it)
+- flow below pace: blocked 37, ran 5, dumped 27, flat 2, open 3 (saving losses: keep it)
   - ran: PASSED up to 1.73x  
     CA `3XaH8VPUaUegqmnkYA8PXCWqQqD8doqdsGGfZyoYpump`
   - ran: ANT up to 1.52x  
@@ -113,7 +113,7 @@ A skip "ran" if the coin reached the first target (1.5x) from the skip price bef
     CA `4Dj8m9vWqu779F1KDBUttvXM8YFm7U92SDpvjBNKtEiB`
   - ran: ANT up to 1.52x  
     CA `BDPm9gPHCRyo2qjcRrYPsXexmbRwuuHQZo2qhhYXpump`
-- too new / sniping: blocked 36, ran 5, dumped 27, flat 0, open 4 (saving losses: keep it)
+- too new / sniping: blocked 36, ran 5, dumped 29, flat 0, open 2 (saving losses: keep it)
   - ran: Chick up to 1.66x  
     CA `Dueav76X9spnoLomhM2jMkkWorVggbeWucLs3YLupump`
   - ran: TOOLS up to 1.83x  
@@ -194,16 +194,16 @@ Nothing shows a positive after-cost edge. Across all 93 settled coins the simple
 - [2026-11-02 20:25] I expected Slingoor, a clean MIGRATED leader with $25k of 5m flow at pace and a 0.77 buy share, to retest its $408k high from $304k. It never went green (0.98x peak) and hit the -20% stop in 2 minutes, a -$2.86 probe. My own thesis admitted there was no printed higher low after a peak only 6 minutes old, so this confirms the money-shape rule: buy share and flow are not structure (V1, V6). Next time a MIGRATED pullback with no higher low above the hourly low is a PASS with blocker "no higher low", not a probe. This is one loss, so it adds no new ban beyond the rule I already have.
 
 ## Meta right now
-The meta is fresh sub-hour launches, but it's split. FEAR (6 min old, $10.6k 5m, 61% buys) and PAYOUT (+657% 1h, 70% buys, $4.9k 5m) have real buyers, while Stand With Jensen, pack.trade, wuf and Rent are down 78-93% on near-zero 5m volume, so the Jensen/Huang and fresh-name story is fading fast (V1, V5). The old GTA-named coins and BLOB are flat, not dying: BLOB holds $21k 5m on a $14.5M cap, but a 43% buy ratio says sellers lead, and Good To Ape and gtacoin trade under $2.6k 5m, which fails the volume bar. Anthropig, WASTED and bill are fading. Setups to research, not buy yet: FEAR and PAYOUT as New Pairs gambles (V1, V6), probe-size at most and only if volume holds past their first hour, with holder, dev and bundle checks run before any entry; BLOB only if it pulls back toward a 40-50% retrace with 5m volume holding (V1). SIPHON's name sits on the drain rule, so I'm not researching it despite +218% 1h. The web figures for DADDY, Mian Xiao Liu and the others don't match the scan, so I'm using scan numbers only.
+The trenches are running on fresh sub-2h pump.fun launches with generic or finance-brand names. Zelle USD (ZLUSD) is the only coin with real 5m flow at $34k (59% buys, $63k cap, +112% 1h), and Doug The Frog (+553% 1h, 61% buys, $7.7k 5m) is an animal meme just under the volume bar. The ape/GTA-named legacy coins (Good To Ape, gtacoin, GTA6CAT) are flat under $2.5k 5m and fading, and the Jensen/Huang lane is only DADDY on scan at $3.8k 5m, which is thin. PAYOUT and FEAR look hot on the web, but on scan they're dead ($297 and $0 on 5m), so they're not setups; Solana Gossip is down 31% on 1h with 66% buys, which is a dip to watch. BLOB is the only older coin with bar-level flow ($11.8k 5m on a $13.7M cap), but sellers lead at 47% buys. Setups to research, not buy yet: ZLUSD first (brand-name impersonation and vamp risk need checking; probe size at most, stop below its first-hour low), Doug The Frog if 5m volume clears $10k, and BLOB only on a pullback toward a 40-50% retrace with volume holding. Holder, dev and bundle checks haven't been run on any of these yet, so those are unverified, not verdicts. Web figures that disagree with scan (PAYOUT, BLOB, DADDY) were ignored in favor of scan numbers.
 
 ## Moving most in its scans, last 30 min (1h volume)
 - 1.0: $305,730 1h vol, $169,711 mcap, +13% 1h  
   CA `42t61wPi41TwWtpqBVgZN1V4hjiKwZBKwq27xME9pump`
-- BLOB: $157,472 1h vol, $14,234,436 mcap, +1% 1h  
+- BLOB: $142,706 1h vol, $13,658,453 mcap, -1% 1h  
   CA `8s11PkgQt4ZzdZ7oo84hK5t9HG1EvdgAjcg4W7Lpump`
 - ZLUSD: $120,293 1h vol, $63,128 mcap, +112% 1h  
   CA `DdpwR8QXfnS11HUrSdNmnNvXj3XDMcePoHsWGJrdpump`
-- GOSSIP: $99,835 1h vol, $11,031 mcap, -62% 1h  
+- GOSSIP: $109,206 1h vol, $19,758 mcap, -31% 1h  
   CA `RDBH77f3ZvW6P7NVhV9CuZqrCXVTVoNRahbM9Ynpump`
-- WASTED6: $69,859 1h vol, $35,984 mcap, +18% 1h  
-  CA `3wyRvbB6nFD7Y9cuozSXrUajZs1EoJxrcBCDBxwupump`
+- Bandits: $62,660 1h vol, $2,256 mcap, -12% 1h  
+  CA `31oSXL3qXrxJCXbWSxfcSHvJQrDfvnHwVPinF6Fmpump`
