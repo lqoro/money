@@ -1,13 +1,13 @@
 # Trencher live report
 
-Updated 2026-11-16T18:58:41Z (paper trading, never real money)
+Updated 2026-11-16T19:13:49Z (paper trading, never real money)
 
 - Equity: $74.23 (-25.8% vs $100 start)
 - Closed trades: 22, 3 wins
 - Fees paid: $14.78 (axiom $2.81, network $9.18, pool $2.66), plus $4.15 lost to slippage
 - New trades: WATCH-ONLY (scans and decides, buys nothing)
 - Brain: subscription, claude-haiku-5-5 for routine calls, claude-opus-5-5 for the daily review; 362 routine calls and 1 plan-limit hits in 48h
-- Watch log: 96 coins being followed, 1794 filed, 0 would-buys (6h follow, sampled every 2 min)
+- Watch log: 98 coins being followed, 1797 filed, 0 would-buys (6h follow, sampled every 2 min)
 
 ## Scorecard (after fees)
 - 22 closed, 3 won (14%), net $-25.79
@@ -73,9 +73,19 @@ Updated 2026-11-16T18:58:41Z (paper trading, never real money)
   CA `H4gHnZ3NCU7Z9XQwGX6YYJNyieGEW8pqwGRUcdSxpump`
 
 ## Last scan
-- 18:57Z: 4 coins, 3 with pairs, 0 passed the market filters, 0 researched
+- 19:13Z: 3 coins, 2 with pairs, 1 passed the market filters, 1 researched
 
 ## Coins it looked at, and why it passed
+- 19:13Z WASTED (DIP, $3,297,346 mcap, $2,759 5m vol): REJECT, Top 10 hold 25.2% ex-pool (>25%) (V13)  
+  CA `GexThZHgaswpAQ7Fi8QrHFubjPimUNSYhJiAA7XZpump`
+- 19:10Z VICECAT (MIGRATED, $168,526 mcap, $33,722 5m vol): REJECT, RugCheck danger: Creator history of rugged tokens  
+  CA `HsWkLse36Aog3pK8n6cNHRG6s1kc9KVgz5VNMBcRpump`
+- 19:05Z LEMON (MIGRATED, $69,797 mcap, $5,491 5m vol): REJECT, Bundles: 2 linked wallet cluster(s) hold 54.4% of supply (>20%) (V17)  
+  CA `Gi4cb3A4traf2rSkhJh6oqtLpPGwVhZonif1xAEEpump`
+- 19:01Z Bella (MIGRATED, $42,354 mcap, $18,148 5m vol): REJECT, RugCheck danger: Top 10 holders high ownership  
+  CA `7QEmyQsLBULrN5692LkrnYFn9TLDGQr3nsaW119Rpump`
+- 19:00Z GTAMAS (FINAL_STRETCH, $22,415 mcap, $43,948 5m vol): REJECT, Dev holds 2.4% (>1%) (V13, V17)  
+  CA `4mPvz33cAirAE3YYzUdn3XapoD6vyxaxBoYegCeSpump`
 - 18:54Z ETF (MIGRATED, $308,391 mcap, $18,408 5m vol): PASS at conviction 3, PASS: 5m flow is 0.38x the hourly pace on a 13%-off-high pop, with 18 copies of the ticker. The story is fading and the only structure is a spike. Blocker: "flow below pace." (V1, V6, V13)  
   CA `Gg5aWvfucyMwihDzyfCEaLgyeeNE2dkob2LTwWfHpump`
 - 18:53Z VI (no setup, $29,308 mcap, $3,232 5m vol): REJECT, No setup fits: not Final Stretch, not a migrated runner, not a healthy dip  
@@ -86,27 +96,17 @@ Updated 2026-11-16T18:58:41Z (paper trading, never real money)
   CA `48UW5PSMpaN1x2YW3ArY4xEiKyP8bJTFfednCHMG3Jcx`
 - 18:43Z JOB (MIGRATED, $2,234,151 mcap, $5,435 5m vol): PASS at conviction 2, PASS: chasing, 7% off the high, flow under pace, and a 17% bundle cluster in a 22-copy field. (V1, V6, V13)  
   CA `9Pq7aLAbhDG2tTnS22cm6kuysZVcZpLFE368HWuypump`
-- 18:42Z POTS (FINAL_STRETCH, $21,799 mcap, $7,082 5m vol): PASS at conviction 3, PASS: chasing spike. POTS ran about 10x off its 1h low, then dumped to 4.6e-6 and bounced to 2.2e-5 on $7k of 5m volume. That's a pump, not a base (V1, V6).  
-  CA `p8nDohoNjAZCXriH4MacnD8BYZ8Njqj1nMDHQXcpump`
-- 18:42Z COGE (MIGRATED, $73,631 mcap, $26,538 5m vol): PASS at conviction 3, PASS: flow below pace (0.58x hourly) in a 22-copy Cogecoin field with an 11.5% bundle cluster. Blocker: "flow below pace" and "split crowd" (V1, V3, V6).  
-  CA `GQjTPFGvSwJbLc3Qc5iW7aFbQhhxZicqWJWno46spump`
-- 18:39Z GATO (DIP, $5,776,355 mcap, $2,281 5m vol): REJECT, Dip with fading attention is a falling knife, not a dip (5m at 0.53x the hour's pace, under 0.6x)  
-  CA `HsprHxBRgiVaQdRf3TnKNuZZtaX9JUSPgMFdAkk6pump`
-- 18:37Z JOB (MIGRATED, $2,382,942 mcap, $3,260 5m vol): SKIP, passed the checklist, but the brain was paced or paused  
-  CA `9Pq7aLAbhDG2tTnS22cm6kuysZVcZpLFE368HWuypump`
-- 18:37Z DACAT (MIGRATED, $166,901 mcap, $9,727 5m vol): REJECT, Top 10 hold 51.6% ex-pool (>25%) (V13)  
-  CA `8AzrbaGjACy5VZ4gyjaAGAueCYpvpUWKwpyeGp4wpump`
 
 ## What its skips did next (last 48h)
 A skip "ran" if the coin reached the first target (1.5x) from the skip price before a 20% drop, "dumped" if the drop came first. Sampled every 10 min, followed 6h.
-- top 10 over 25%: blocked 44, ran 7, dumped 30, flat 5, open 2 (saving losses: keep it)
+- top 10 over 25%: blocked 44, ran 8, dumped 30, flat 4, open 2 (saving losses: keep it)
   - ran: rockstar up to 1.95x  
     CA `9HFUEab7sompLDPTAaTGkryMNGbtBaFMhHMVpJEBpump`
   - ran: VI up to 1.71x  
     CA `4Dj8m9vWqu779F1KDBUttvXM8YFm7U92SDpvjBNKtEiB`
   - ran: ANT up to 1.52x  
     CA `BDPm9gPHCRyo2qjcRrYPsXexmbRwuuHQZo2qhhYXpump`
-- flow below pace: blocked 43, ran 5, dumped 34, flat 2, open 2 (saving losses: keep it)
+- flow below pace: blocked 43, ran 5, dumped 35, flat 2, open 1 (saving losses: keep it)
   - ran: PASSED up to 1.73x  
     CA `3XaH8VPUaUegqmnkYA8PXCWqQqD8doqdsGGfZyoYpump`
   - ran: ANT up to 1.52x  
@@ -127,7 +127,7 @@ A skip "ran" if the coin reached the first target (1.5x) from the skip price bef
     CA `2kWx47CUrcXtzptFNnbSXKq3vo1ebqyLBhRytKRGpump`
   - ran: Bustas up to 1.75x  
     CA `9rTgs58B3p11vXekTTgVYtv8vKxQ6oSoZFXPy4onpump`
-- RugCheck danger: blocked 29, ran 8, dumped 19, flat 2, open 0 (saving losses: keep it)
+- RugCheck danger: blocked 31, ran 8, dumped 20, flat 2, open 1 (saving losses: keep it)
   - ran: Ivy up to 1.88x  
     CA `DxNF3Qxd8XeUBdz7ReRdoiFzRmNDKbSz4c2oA7aRpump`
   - ran: SI up to 1.93x  
@@ -156,7 +156,7 @@ A skip "ran" if the coin reached the first target (1.5x) from the skip price bef
     CA `5peJLZQnBkXtydYYMunbT4QutSyd9eA474MqxcmEpump`
   - ran: UNITY up to 1.66x  
     CA `GD6MboptxbHBspASr5PWozgNDrZxmxJ8JpBBD8Vpump`
-- bundles over the line: blocked 9, ran 0, dumped 7, flat 1, open 1 (saving losses: keep it)
+- bundles over the line: blocked 10, ran 0, dumped 7, flat 1, open 2 (saving losses: keep it)
 
 ## Daily review (2026-11-16, claude-opus-5-5)
 Nothing shows a positive edge after costs. Over 309 settled coins, every setup lost money net: FINAL_STRETCH -7.2%, DIP -7.4%, MIGRATED -13.5%. Costs alone averaged 9.8% per round trip. Before costs, FINAL_STRETCH made about +2.9% and DIP about +1.8%, but at n=46 and n=54 the noise is roughly ±4–5 points, so neither is different from zero. With a 1.5x / -20% plan and ~10% costs, you need about 43% of coins to reach 1.5x before -20% just to break even. The best group (FINAL_STRETCH) managed 32.6%, and the error bar on that is about ±14 points. The routine model gave zero would-buys, so the "did its buys beat its passes" question can't be answered. It passed on all 164 coins it reviewed. Those coins averaged -11.7% net, about the same as the checklist rejects at -11.3%, so passing on everything was roughly right this day, even though it missed LMAO, Marvin and WIGGLES.
@@ -199,11 +199,11 @@ The meta in the trenches right now is not GTA. GTA doesn't appear in scan_movers
 ## Moving most in its scans, last 30 min (1h volume)
 - ETF: $584,088 1h vol, $308,391 mcap, +900% 1h  
   CA `Gg5aWvfucyMwihDzyfCEaLgyeeNE2dkob2LTwWfHpump`
-- COGE: $552,952 1h vol, $73,631 mcap, +156% 1h  
-  CA `GQjTPFGvSwJbLc3Qc5iW7aFbQhhxZicqWJWno46spump`
-- COGE: $414,683 1h vol, $19,961 mcap, -29% 1h  
-  CA `23GBezAJzK8fJNZzgA5LWLyz2WxDNTBfMKtgTQNPpump`
 - MAYA: $219,099 1h vol, $1,408 mcap, -100% 1h  
   CA `BEivETeJfF2tLkuTc5dNMcpMH6vGGcwtZchw1J3vpump`
-- SENT: $87,704 1h vol, $14,498 mcap, +582% 1h  
-  CA `3EDLvS4PMWXmN5oj7aGWwR16yC3zgZSdWL2BeVK8sent`
+- COGE: $219,018 1h vol, $11,876 mcap, -72% 1h  
+  CA `23GBezAJzK8fJNZzgA5LWLyz2WxDNTBfMKtgTQNPpump`
+- Bella: $210,355 1h vol, $42,354 mcap, +5% 1h  
+  CA `7QEmyQsLBULrN5692LkrnYFn9TLDGQr3nsaW119Rpump`
+- VICECAT: $140,302 1h vol, $198,501 mcap, +453% 1h  
+  CA `HsWkLse36Aog3pK8n6cNHRG6s1kc9KVgz5VNMBcRpump`
