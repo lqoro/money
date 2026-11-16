@@ -1,13 +1,13 @@
 # Trencher live report
 
-Updated 2026-11-16T08:38:39Z (paper trading, never real money)
+Updated 2026-11-16T08:53:49Z (paper trading, never real money)
 
 - Equity: $74.23 (-25.8% vs $100 start)
 - Closed trades: 22, 3 wins
 - Fees paid: $14.78 (axiom $2.81, network $9.18, pool $2.66), plus $4.15 lost to slippage
 - New trades: WATCH-ONLY (scans and decides, buys nothing)
-- Brain: subscription, claude-haiku-5-5 for routine calls, claude-opus-5-5 for the daily review; 269 routine calls and 0 plan-limit hits in 48h
-- Watch log: 78 coins being followed, 1666 filed, 0 would-buys (6h follow, sampled every 2 min)
+- Brain: subscription, claude-haiku-5-5 for routine calls, claude-opus-5-5 for the daily review; 270 routine calls and 0 plan-limit hits in 48h
+- Watch log: 70 coins being followed, 1675 filed, 0 would-buys (6h follow, sampled every 2 min)
 
 ## Scorecard (after fees)
 - 22 closed, 3 won (14%), net $-25.79
@@ -73,9 +73,11 @@ Updated 2026-11-16T08:38:39Z (paper trading, never real money)
   CA `H4gHnZ3NCU7Z9XQwGX6YYJNyieGEW8pqwGRUcdSxpump`
 
 ## Last scan
-- 08:38Z: 3 coins, 3 with pairs, 0 passed the market filters, 0 researched
+- 08:53Z: 2 coins, 2 with pairs, 0 passed the market filters, 0 researched
 
 ## Coins it looked at, and why it passed
+- 08:42Z Anthropig (MIGRATED, $1,192,525 mcap, $4,965 5m vol): PASS at conviction 3, PASS: 8.8% off the high is inside the chase band, 5m flow is $5k, and the first resistance is only 1.1x away. The holder table is clean, but the setup isn't. (V1, V6)  
+  CA `2NUaS6Gfrm5rBuPBn7svHka8t33SrSkpXGQiUvZLpump`
 - 08:37Z Huang (MIGRATED, $49,323 mcap, $21,709 5m vol): PASS at conviction 3, PASS — chasing spike. Up ~800% in an hour off a $5.7e-6 base, 5m volume at 4.2x pace, no printed higher low, and one of 24 Huang copies. Blocker: chasing spike (V1, V6).  
   CA `42Fyyi97PSgdnoaskbHDHFsCFR6hr5DtwK3hKTzXpump`
 - 08:31Z WASTED (DIP, $3,545,787 mcap, $2,818 5m vol): REJECT, Top 10 hold 26.2% ex-pool (>25%) (V13)  
@@ -94,8 +96,6 @@ Updated 2026-11-16T08:38:39Z (paper trading, never real money)
   CA `DtcicPCKTKeAh7TDEzTym3hXeoHAoMiBdYJhMYxZpump`
 - 07:23Z GTA (MIGRATED, $141,418 mcap, $2,577 5m vol): PASS at conviction 3, PASS: first resistance is only 1.25x away (prior high $0.000185), under the 1.3x floor, and 5m flow is $2.6k, under the $10k bar. Target too close, in a 16-copy vamp field. (V1, V6)  
   CA `G9ZMir6uh66Y7viPkXAy7myA9jjE4T1YgheVUmGDpump`
-- 07:19Z Percy (MIGRATED, $70,317 mcap, $12,198 5m vol): PASS at conviction 2, PASS: copycat on a 0.7h-old migrated coin, 158% up in the hour, no printed higher low. Blocker "too new" plus "split crowd" (V1, V3).  
-  CA `EJvUBkKf4HKKy7m1xrSQfk6yLH2U8dsR1adREbkNpump`
 
 ## What its skips did next (last 48h)
 A skip "ran" if the coin reached the first target (1.5x) from the skip price before a 20% drop, "dumped" if the drop came first. Sampled every 10 min, followed 6h.
@@ -120,7 +120,7 @@ A skip "ran" if the coin reached the first target (1.5x) from the skip price bef
     CA `9Ei1d97U7M8m4t3fof7c8MUECtmzgqbQCo81cGGzpump`
   - ran: twert up to 1.81x  
     CA `8WvWwttzaLfW1nbjx6wmYL5jozWpvy95WktAg5cipump`
-- near the high / chasing: blocked 26, ran 6, dumped 18, flat 0, open 2 (saving losses: keep it)
+- near the high / chasing: blocked 27, ran 6, dumped 18, flat 0, open 3 (saving losses: keep it)
   - ran: penny up to 1.6x  
     CA `5gmCPpuktJ7Svjgr4PPJBTosAFKB8K6Z45EGfSUmpump`
   - ran: WIGGLES up to 1.69x  
@@ -197,13 +197,13 @@ Nothing shows a positive after-cost edge. Across all 93 settled coins the simple
 Meta: fresh pump.fun animal and pet launches are where the new money is landing, but only two or three have real 5m volume. Peace Inu ($5.7k mcap, $11.1k 5m, 55% buys, about 6 minutes old) and Stake ($17.8k mcap, $29.3k 5m, 64% buys, +169% in 1h) are the only fresh names clearing the $10k bar; Percy the Owl ($36.7k, $3.6k 5m, -45% 1h) and the dog launch (0% buys, $4 5m) are the fading end of the same wave. The GTA-named coins (Good To Ape at $143k with $1.7k 5m, GTA6CAT at $6.9M with $904 5m) and the parody brand names (Super Auto Pets down 52% in 1h on $569 5m, Socks at $353 5m) are fading, while BLOB ($12.8M, $12.3k 5m) and CBUCKS ($4.8M, 83% buys) are old memes with flow but no new story. Setups to research, not buy, with holder, dev and bundle checks on each: Peace Inu if its 5m holds above $10k and the bundle check is clean (small and fresh means high bundle risk); Stake only on a pullback with volume still holding, since +169% in minutes is chase territory; Percy only if its 5m climbs back above $10k. I used the scan numbers over the web summary, which conflicts on Super Auto Pets (web says +545% and $9.2k 5m, scan says -52% and $569), and no hack-named coin is in this set.
 
 ## Moving most in its scans, last 30 min (1h volume)
-- BLOB: $316,561 1h vol, $13,598,626 mcap, +18% 1h  
+- BLOB: $308,857 1h vol, $12,621,755 mcap, -2% 1h  
   CA `8s11PkgQt4ZzdZ7oo84hK5t9HG1EvdgAjcg4W7Lpump`
 - Huang: $62,244 1h vol, $49,323 mcap, +781% 1h  
   CA `42Fyyi97PSgdnoaskbHDHFsCFR6hr5DtwK3hKTzXpump`
-- EARN: $50,893 1h vol, $3,639 mcap, -68% 1h  
-  CA `32A3wyzQVbqoxkZdBoxfEmbvKzBP4tKz5MNSEjTYEARN`
-- Stake: $33,734 1h vol, $17,777 mcap, +169% 1h  
-  CA `81RPWTsiN6Hiy5Ty3QYur9ii1tDHTfwsq8aPPjtNpump`
+- Anthropig: $57,733 1h vol, $1,193,173 mcap, -0% 1h  
+  CA `2NUaS6Gfrm5rBuPBn7svHka8t33SrSkpXGQiUvZLpump`
+- Percy: $46,031 1h vol, $14,301 mcap, -46% 1h  
+  CA `EJvUBkKf4HKKy7m1xrSQfk6yLH2U8dsR1adREbkNpump`
 - afk: $33,154 1h vol, $19,287 mcap, +614% 1h  
   CA `2fj37tQcLEbLAcmAGWGzMAAUfteJaC9wdVnWdhWopump`
