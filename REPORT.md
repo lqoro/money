@@ -1,13 +1,13 @@
 # Trencher live report
 
-Updated 2026-11-16T03:49:19Z (paper trading, never real money)
+Updated 2026-11-16T04:04:34Z (paper trading, never real money)
 
 - Equity: $74.23 (-25.8% vs $100 start)
 - Closed trades: 22, 3 wins
 - Fees paid: $14.78 (axiom $2.81, network $9.18, pool $2.66), plus $4.15 lost to slippage
 - New trades: WATCH-ONLY (scans and decides, buys nothing)
-- Brain: subscription, claude-haiku-5-5 for routine calls, claude-opus-5-5 for the daily review; 228 routine calls and 0 plan-limit hits in 48h
-- Watch log: 123 coins being followed, 1565 filed, 0 would-buys (6h follow, sampled every 2 min)
+- Brain: subscription, claude-haiku-5-5 for routine calls, claude-opus-5-5 for the daily review; 229 routine calls and 0 plan-limit hits in 48h
+- Watch log: 116 coins being followed, 1574 filed, 0 would-buys (6h follow, sampled every 2 min)
 
 ## Scorecard (after fees)
 - 22 closed, 3 won (14%), net $-25.79
@@ -73,9 +73,13 @@ Updated 2026-11-16T03:49:19Z (paper trading, never real money)
   CA `H4gHnZ3NCU7Z9XQwGX6YYJNyieGEW8pqwGRUcdSxpump`
 
 ## Last scan
-- 03:49Z: 6 coins, 6 with pairs, 0 passed the market filters, 0 researched
+- 04:03Z: 7 coins, 7 with pairs, 0 passed the market filters, 0 researched
 
 ## Coins it looked at, and why it passed
+- 03:57Z VICE (MIGRATED, $54,757 mcap, $6,534 5m vol): PASS at conviction 3, PASS. VICE is a sell-heavy 3.3% pullback in a 26-copy "exchange" vamp field, 10 minutes old, with no higher low. (V1, V3, V6)  
+  CA `G3jWDqYAMQPmBEg5rDU6NKMTSiYCx5R5G6T4Mhtzpump`
+- 03:52Z GATO (DIP, $7,073,581 mcap, $5,273 5m vol): REJECT, Dev holds 2.7% (>1%) (V13, V17)  
+  CA `HsprHxBRgiVaQdRf3TnKNuZZtaX9JUSPgMFdAkk6pump`
 - 03:48Z Marvin (MIGRATED, $85,539 mcap, $117,566 5m vol): PASS at conviction 2, PASS: chasing spike. Marvin is 5 minutes old, sitting at its own high after a +93% candle, in a 26-copy same-ticker field. Blocker: "chasing spike" (V1, V6, V13).  
   CA `HkRQ6Qcadi5yuoNpZdA1Q7yVF3r7LdEmAw1aKkSxpump`
 - 03:40Z oop (FINAL_STRETCH, $23,274 mcap, $4,764 5m vol): REJECT, Top 10 hold 28.3% ex-pool (>25%) (V13)  
@@ -92,10 +96,6 @@ Updated 2026-11-16T03:49:19Z (paper trading, never real money)
   CA `2NUaS6Gfrm5rBuPBn7svHka8t33SrSkpXGQiUvZLpump`
 - 03:16Z LMAO (MIGRATED, $71,880 mcap, $39,917 5m vol): PASS at conviction 3, PASS: LMAO is up 147% in an hour, 3.85x its hourly 5m pace, and only 10% off an $80k peak. That's a spike, not a pullback. Printed higher low: none. Upside to the peak is 1.11x. (V1, V6)  
   CA `FvQ2Ld7m6pV4e5m7jymJtgKEvjp8S7n6L3WTANDvpump`
-- 03:15Z Nеil (MIGRATED, $51,955 mcap, $2,114 5m vol): PASS at conviction 2, PASS — 85% off a $350k peak, 5m flow at 0.34x pace, no higher low, and a 21-copy Neil vamp field where the real leader is another CA. Blocker: "flow below pace" and "no higher low" (V1, V6, V3).  
-  CA `FwVsiYsWBDCs4QifGcDRGGxQ3xh6CYLnWWFLUDiupump`
-- 03:11Z VICE (FINAL_STRETCH, $25,673 mcap, $3,065 5m vol): REJECT, RugCheck danger: Low Liquidity $1.99  
-  CA `G3jWDqYAMQPmBEg5rDU6NKMTSiYCx5R5G6T4Mhtzpump`
 
 ## What its skips did next (last 48h)
 A skip "ran" if the coin reached the first target (1.5x) from the skip price before a 20% drop, "dumped" if the drop came first. Sampled every 10 min, followed 6h.
@@ -113,14 +113,14 @@ A skip "ran" if the coin reached the first target (1.5x) from the skip price bef
     CA `4Dj8m9vWqu779F1KDBUttvXM8YFm7U92SDpvjBNKtEiB`
   - ran: ANT up to 1.52x  
     CA `BDPm9gPHCRyo2qjcRrYPsXexmbRwuuHQZo2qhhYXpump`
-- too new / sniping: blocked 27, ran 5, dumped 21, flat 0, open 1 (saving losses: keep it)
+- too new / sniping: blocked 28, ran 5, dumped 21, flat 0, open 2 (saving losses: keep it)
   - ran: Chick up to 1.66x  
     CA `Dueav76X9spnoLomhM2jMkkWorVggbeWucLs3YLupump`
   - ran: TOOLS up to 1.83x  
     CA `9Ei1d97U7M8m4t3fof7c8MUECtmzgqbQCo81cGGzpump`
   - ran: twert up to 1.81x  
     CA `8WvWwttzaLfW1nbjx6wmYL5jozWpvy95WktAg5cipump`
-- RugCheck danger: blocked 24, ran 8, dumped 14, flat 2, open 0 (mixed)
+- RugCheck danger: blocked 23, ran 7, dumped 14, flat 2, open 0 (saving losses: keep it)
   - ran: Ivy up to 1.88x  
     CA `DxNF3Qxd8XeUBdz7ReRdoiFzRmNDKbSz4c2oA7aRpump`
   - ran: SI up to 1.93x  
@@ -195,13 +195,13 @@ Nothing shows a positive after-cost edge. Across all 93 settled coins the simple
 Meta: animal and character name plays on pump.fun/pumpswap, and the Neil the Lemur name is splitting into vamps. The plain-name CA 9iG6... still has real flow ($201k cap, $11.8k 5m, +81% 1h), but 5m buys are only 50%, so it's balancing, not chasing. The two Neil CAs using a Cyrillic "е" look like spoofs, and Cxf4... on the scan shows $1.4k cap and zero 5m volume, which contradicts the crawler's $99.6k claim, so I'm trusting the scan. Second theme is GTA/Vice City names (FiveM, BAWSAQ, GTA6CAT): real volume, FiveM at 63% buys, but flat to fading, so sideline only. Third is fresh pump.fun launches with joke or pop-culture names (bul, LMAO, POKE, OGE) pumping hard in minutes; that's new-pair risk. LMAO ($24k cap, $20k 5m, 70% buys) and bul ($24k cap, $42k 5m) sit near the ~$34k bond, so they're FINAL_STRETCH watches, not snipes. Crude coins are dying: BUTTHOLE at 10% buys, CRACK and MMM down 80%+ in an hour. This is not a quiet tape: three coins clear $10k 5m. Setups to research: 9iG6... as a MIGRATED probe at conviction 5 (initials at 2x, stop -30%, out if 5m volume drops below half its hourly pace), and LMAO and bul as FINAL_STRETCH watches for holder, dev, bundle and pre-bond dump checks. Crawler figures are unverified and I'm not using them for sizing. Nothing here is financial advice.
 
 ## Moving most in its scans, last 30 min (1h volume)
+- LMAO: $268,627 1h vol, $4,263 mcap, -84% 1h  
+  CA `FvQ2Ld7m6pV4e5m7jymJtgKEvjp8S7n6L3WTANDvpump`
 - Neil: $149,772 1h vol, $199,753 mcap, +35% 1h  
   CA `9iG6qBMgzzuYyq2kfXcAD49bkTFrpGp5gr1QHJiZMwoi`
 - Marvin: $117,566 1h vol, $85,539 mcap, +93% 1h  
   CA `HkRQ6Qcadi5yuoNpZdA1Q7yVF3r7LdEmAw1aKkSxpump`
+- GATO: $86,100 1h vol, $7,017,457 mcap, -4% 1h  
+  CA `HsprHxBRgiVaQdRf3TnKNuZZtaX9JUSPgMFdAkk6pump`
 - XRL: $74,918 1h vol, $107,247 mcap, +95% 1h  
   CA `Fww6zaNKcjpJaB33JayvUzsofBUobX5JaHiuQBN1Jf9g`
-- CRACK: $74,321 1h vol, $11,526 mcap, +45% 1h  
-  CA `CssTcKvuBx2RmGE8wghpAYfwY7xZ6k5BojSm5DEopump`
-- Anthropig: $70,092 1h vol, $1,208,403 mcap, +17% 1h  
-  CA `2NUaS6Gfrm5rBuPBn7svHka8t33SrSkpXGQiUvZLpump`
