@@ -1,13 +1,13 @@
 # Trencher live report
 
-Updated 2026-11-16T00:01:55Z (paper trading, never real money)
+Updated 2026-11-16T00:16:57Z (paper trading, never real money)
 
 - Equity: $74.23 (-25.8% vs $100 start)
 - Closed trades: 22, 3 wins
 - Fees paid: $14.78 (axiom $2.81, network $9.18, pool $2.66), plus $4.15 lost to slippage
 - New trades: WATCH-ONLY (scans and decides, buys nothing)
-- Brain: subscription, claude-haiku-5-5 for routine calls, claude-opus-5-5 for the daily review; 175 routine calls and 0 plan-limit hits in 48h
-- Watch log: 125 coins being followed, 1486 filed, 0 would-buys (6h follow, sampled every 2 min)
+- Brain: subscription, claude-haiku-5-5 for routine calls, claude-opus-5-5 for the daily review; 178 routine calls and 0 plan-limit hits in 48h
+- Watch log: 126 coins being followed, 1490 filed, 0 would-buys (6h follow, sampled every 2 min)
 
 ## Scorecard (after fees)
 - 22 closed, 3 won (14%), net $-25.79
@@ -73,9 +73,19 @@ Updated 2026-11-16T00:01:55Z (paper trading, never real money)
   CA `H4gHnZ3NCU7Z9XQwGX6YYJNyieGEW8pqwGRUcdSxpump`
 
 ## Last scan
-- 00:00Z: 3 coins, 3 with pairs, 1 passed the market filters, 1 researched
+- 00:16Z: 4 coins, 4 with pairs, 1 passed the market filters, 1 researched
 
 ## Coins it looked at, and why it passed
+- 00:16Z PercPools (FINAL_STRETCH, $20,345 mcap, $43,322 5m vol): REJECT, Top 10 hold 25.4% ex-pool (>25%) (V13)  
+  CA `EwLANuSwR7z9QNTXGwdsW7mFzXPiaucUBZjiXfw6pump`
+- 00:15Z nma (MIGRATED, $41,222 mcap, $15,081 5m vol): PASS at conviction 2, PASS: nma is 11% off a $46k peak with sellers ahead of buyers (288 buys vs 393 sells on 5m) and no printed higher low. Theme flow is 0.42x pace and the target is only 1.12x away. (V1, V6)  
+  CA `Fvv62MhgjrXpvXmKcLci2HoiCAxFmSkUm1Niamvipump`
+- 00:13Z AI (MIGRATED, $164,491 mcap, $15,096 5m vol): PASS at conviction 3, PASS: flow below pace (0.77x vs 0.78x theme pace), no catalyst, and the AI-tech story is a thin LARP. Blocker: "flow below pace" (V1, V6).  
+  CA `GgDHtSGcXn5YrADnpsQSVHFAa5xLwVEuD7FWeRgvpump`
+- 00:04Z GATO (DIP, $7,431,246 mcap, $8,598 5m vol): REJECT, Dev holds 3.0% (>1%) (V13, V17)  
+  CA `HsprHxBRgiVaQdRf3TnKNuZZtaX9JUSPgMFdAkk6pump`
+- 00:01Z ANIME (DIP, $59,957 mcap, $8,662 5m vol): REJECT, Dip with fading attention is a falling knife, not a dip (5m at 0.22x the hour's pace, under 0.6x)  
+  CA `6XGN3oMrjLuWvDyvHL1VZNNPN5d7dTspD9N7LKjAnime`
 - 00:00Z CYBERDACITY (MIGRATED, $135,245 mcap, $11,144 5m vol): REJECT, Top 10 hold 29.8% ex-pool (>25%) (V13)  
   CA `C5X8tVbt8cGw7iaaEuAVGTxFVZ4uSjscmiUbVpVwpump`
 - 23:53Z GTAVI (DIP, $108,578 mcap, $8,251 5m vol): PASS at conviction 2, PASS: GTA theme at 0.93x its hourly pace, no catalyst, and the GTAVI chart is a saw-tooth with no printed higher low. Blocker: "dead story" / bottom-buy rule. (V1, V6, V13)  
@@ -86,34 +96,24 @@ Updated 2026-11-16T00:01:55Z (paper trading, never real money)
   CA `B82PFKmT4aM38EUUqVoZs6sZdAfxDHHrB6DSXxCKpump`
 - 23:45Z WANTED (MIGRATED, $62,029 mcap, $30,462 5m vol): REJECT, RugCheck danger: Creator history of rugged tokens  
   CA `EPm7A2YeeWHjQPSPfbQP1DadwENPA6Ai21AYchrZpump`
-- 23:44Z BigP (DIP, $42,492 mcap, $4,453 5m vol): REJECT, Dip with fading attention is a falling knife, not a dip (5m at 0.37x the hour's pace, under 0.6x)  
-  CA `CY254o6VPaJnTiY5uuKUB8xDjSgykC6xtoLoC3kpump`
-- 23:36Z SENDER (FINAL_STRETCH, $18,271 mcap, $32,358 5m vol): PASS at conviction 3, PASS: chasing spike. SENDER is up 74% on 5m at 7.8x hourly pace, six minutes off a $27k peak, with no printed higher low. Top 10 at 24.1% is one point under the hard line, and it's one of seven copies of the ticker. (V1, V6, V13)  
-  CA `5peJLZQnBkXtydYYMunbT4QutSyd9eA474MqxcmEpump`
-- 23:34Z CBUCKS (MIGRATED, $3,875,143 mcap, $3,703 5m vol): REJECT, Top 10 hold 26.3% ex-pool (>25%) (V13)  
-  CA `DtcicPCKTKeAh7TDEzTym3hXeoHAoMiBdYJhMYxZpump`
-- 23:30Z BJB (DIP, $1,136,228 mcap, $10,741 5m vol): PASS at conviction 3, PASS — Jensen meme 47% off a $2.1M peak, but 5m flow is 0.67x pace, no higher low has printed, the theme runs at 0.65x pace, and it's one of 11 same-ticker copies. Falling knife in a crowded field (V1, V6, V13).  
-  CA `CHuLmJXz8F3YXUyv984PRxeECfSvqD5MZ3W1FoDmpump`
-- 23:27Z AI (MIGRATED, $171,565 mcap, $9,052 5m vol): PASS at conviction 2, PASS: 17 minutes old, up 423% in the hour, flow under pace on a $9k 5m and no printed higher low. Blockers: "too new", "flow below pace", "no higher low". (V1, V6)  
-  CA `GgDHtSGcXn5YrADnpsQSVHFAa5xLwVEuD7FWeRgvpump`
 
 ## What its skips did next (last 48h)
 A skip "ran" if the coin reached the first target (1.5x) from the skip price before a 20% drop, "dumped" if the drop came first. Sampled every 10 min, followed 6h.
-- flow below pace: blocked 31, ran 4, dumped 22, flat 2, open 3 (saving losses: keep it)
+- flow below pace: blocked 33, ran 5, dumped 22, flat 2, open 4 (saving losses: keep it)
   - ran: PASSED up to 1.73x  
     CA `3XaH8VPUaUegqmnkYA8PXCWqQqD8doqdsGGfZyoYpump`
   - ran: ANT up to 1.52x  
     CA `BDPm9gPHCRyo2qjcRrYPsXexmbRwuuHQZo2qhhYXpump`
-  - ran: ANT up to 1.58x  
-    CA `7H2sHeLHyHR8jxENGmsqn7RxTkYZa4KwXvKYcoxBpump`
-- top 10 over 25%: blocked 29, ran 5, dumped 18, flat 2, open 4 (saving losses: keep it)
+  - ran: Anthropig up to 1.53x  
+    CA `2NUaS6Gfrm5rBuPBn7svHka8t33SrSkpXGQiUvZLpump`
+- top 10 over 25%: blocked 30, ran 5, dumped 18, flat 2, open 5 (saving losses: keep it)
   - ran: rockstar up to 1.95x  
     CA `9HFUEab7sompLDPTAaTGkryMNGbtBaFMhHMVpJEBpump`
   - ran: VI up to 1.71x  
     CA `4Dj8m9vWqu779F1KDBUttvXM8YFm7U92SDpvjBNKtEiB`
   - ran: ANT up to 1.52x  
     CA `BDPm9gPHCRyo2qjcRrYPsXexmbRwuuHQZo2qhhYXpump`
-- too new / sniping: blocked 26, ran 5, dumped 21, flat 0, open 0 (saving losses: keep it)
+- too new / sniping: blocked 24, ran 5, dumped 19, flat 0, open 0 (saving losses: keep it)
   - ran: Chick up to 1.66x  
     CA `Dueav76X9spnoLomhM2jMkkWorVggbeWucLs3YLupump`
   - ran: TOOLS up to 1.83x  
@@ -127,12 +127,14 @@ A skip "ran" if the coin reached the first target (1.5x) from the skip price bef
     CA `AiQUqe4zjiDssth2FsCoeQVaGtCtHYyKGX8U52rWpump`
   - ran: FUTA up to 2.77x  
     CA `FxoXV4C8DTSYeg5dSXrEsr45zzr8tpNbsrpoiZ8Kpump`
-- near the high / chasing: blocked 16, ran 2, dumped 13, flat 0, open 1 (saving losses: keep it)
+- near the high / chasing: blocked 16, ran 3, dumped 13, flat 0, open 0 (saving losses: keep it)
   - ran: penny up to 1.6x  
     CA `5gmCPpuktJ7Svjgr4PPJBTosAFKB8K6Z45EGfSUmpump`
+  - ran: Anthropig up to 1.53x  
+    CA `2NUaS6Gfrm5rBuPBn7svHka8t33SrSkpXGQiUvZLpump`
   - ran: Bustas up to 1.75x  
     CA `9rTgs58B3p11vXekTTgVYtv8vKxQ6oSoZFXPy4onpump`
-- falling knife (code): blocked 8, ran 1, dumped 5, flat 0, open 2 (saving losses: keep it)
+- falling knife (code): blocked 9, ran 1, dumped 6, flat 0, open 2 (saving losses: keep it)
   - ran: BigP up to 1.57x  
     CA `CY254o6VPaJnTiY5uuKUB8xDjSgykC6xtoLoC3kpump`
 - other: blocked 7, ran 2, dumped 4, flat 0, open 1 (saving losses: keep it)
@@ -188,16 +190,16 @@ Nothing shows a positive after-cost edge. Across all 93 settled coins the simple
 - [2026-11-02 20:25] I expected Slingoor, a clean MIGRATED leader with $25k of 5m flow at pace and a 0.77 buy share, to retest its $408k high from $304k. It never went green (0.98x peak) and hit the -20% stop in 2 minutes, a -$2.86 probe. My own thesis admitted there was no printed higher low after a peak only 6 minutes old, so this confirms the money-shape rule: buy share and flow are not structure (V1, V6). Next time a MIGRATED pullback with no higher low above the hourly low is a PASS with blocker "no higher low", not a probe. This is one loss, so it adds no new ban beyond the rule I already have.
 
 ## Meta right now
-The scanner's meta is joke names with real buyers, not the GTA story the crawler is pushing. The GTA-named coins are mostly dead in scan_movers: GTAVI is -29% over 1h with $2.8k on the 5m, Got To Ape is -93%, God Tier Ass is -99%. FiveM and GTACOIN never made the movers list, so I'm not treating them as live. The live theme is crude joke names with buy pressure. TITTYVERSE is the cleanest: $162k cap, $14.6k 5m, 83% buys. Retire "Mission Passed" is a GTA spin-off that is live anyway: $233k after +559% in 1h, 74% buys, but only $7k on the 5m, under the $10k bar. WIGGLES, a dog at $73k with $7k 5m and 55% buys, is the only animal cluster showing flow. BJB (Jensen) has strong flow at $9.2k 5m but sits at $1.5M after +108%, too late to chase. Research, not buys: TITTYVERSE first, then Retire and WIGGLES as probe-size candidates at best, each with a written stop and full holder, dev and bundle checks before any entry. Butthole is fading (41% buys) and Bustas is fading, so pass on both. Nothing on the Binance hack or North Korea narrative, since that's headline noise and hack-named coins are blocked. Caveat: this is a snapshot I can't verify live, and the crawler's GTA claims don't match the scanner. Paper only, not advice.
+The live meta from scan_movers is fresh pump.fun launches with joke, meme and animal names, and it is moving fast, with several runners already down 90%+. The hottest flow is CYBERDACITY (0.5h old, $131k cap, $12.4k 5m, 76% buys) and WANTED (0.1h old, $67k cap, $26k 5m, 62% buys). Animals are mixed: BigP "Patrick the Bunny" is +337% on 47% buys, while WIGGLES has $2.2k 5m and 41% buys. GTA names are fading: GTAVI has $7k 5m and 55% buys after +188%, GATO is a 2,000h-old $7.5M coin that is flat, and the rest are dead. Research only, no entries yet: CYBERDACITY and WANTED as probe-size candidates after the holder, dev and bundle checks, with stops where the thesis breaks; ANIME ($60k, $8.7k 5m, 60% buys) is a watch. The crawler's TITTYVERSE ($162k) and Retire ($233k) figures don't match the scan (both about $1.4k and -99%), so I'm ignoring that summary. Nothing here is a hack-named coin, and the Binance and North Korea headlines are noise. Paper only, not advice.
 
 ## Moving most in its scans, last 30 min (1h volume)
-- BigP: $145,288 1h vol, $42,492 mcap, +337% 1h  
-  CA `CY254o6VPaJnTiY5uuKUB8xDjSgykC6xtoLoC3kpump`
+- ANIME: $469,453 1h vol, $59,957 mcap, +113% 1h  
+  CA `6XGN3oMrjLuWvDyvHL1VZNNPN5d7dTspD9N7LKjAnime`
+- AI: $218,376 1h vol, $153,683 mcap, +69% 1h  
+  CA `GgDHtSGcXn5YrADnpsQSVHFAa5xLwVEuD7FWeRgvpump`
+- GATO: $125,426 1h vol, $7,466,773 mcap, +1% 1h  
+  CA `HsprHxBRgiVaQdRf3TnKNuZZtaX9JUSPgMFdAkk6pump`
 - GTAVI: $106,344 1h vol, $108,193 mcap, +188% 1h  
   CA `HQjXLbFPkpJP1BmF55DgXj9F6614FURvGLKuyCZQpump`
-- CYBERDACITY: $95,166 1h vol, $130,915 mcap, +270% 1h  
-  CA `C5X8tVbt8cGw7iaaEuAVGTxFVZ4uSjscmiUbVpVwpump`
-- Rally: $79,383 1h vol, $3,418 mcap, -88% 1h  
-  CA `8uwWqV6a8HDmqGjhgY2WewRTKG2zJtznUL5hgTfHpump`
-- WIGGLES: $79,318 1h vol, $42,733 mcap, +23% 1h  
-  CA `2kWx47CUrcXtzptFNnbSXKq3vo1ebqyLBhRytKRGpump`
+- nma: $104,595 1h vol, $40,488 mcap, +24% 1h  
+  CA `Fvv62MhgjrXpvXmKcLci2HoiCAxFmSkUm1Niamvipump`
