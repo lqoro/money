@@ -1,13 +1,13 @@
 # Trencher live report
 
-Updated 2026-11-16T12:40:30Z (paper trading, never real money)
+Updated 2026-11-16T12:55:34Z (paper trading, never real money)
 
 - Equity: $74.23 (-25.8% vs $100 start)
 - Closed trades: 22, 3 wins
 - Fees paid: $14.78 (axiom $2.81, network $9.18, pool $2.66), plus $4.15 lost to slippage
 - New trades: WATCH-ONLY (scans and decides, buys nothing)
-- Brain: subscription, claude-haiku-5-5 for routine calls, claude-opus-5-5 for the daily review; 301 routine calls and 0 plan-limit hits in 48h
-- Watch log: 63 coins being followed, 1727 filed, 0 would-buys (6h follow, sampled every 2 min)
+- Brain: subscription, claude-haiku-5-5 for routine calls, claude-opus-5-5 for the daily review; 303 routine calls and 0 plan-limit hits in 48h
+- Watch log: 64 coins being followed, 1730 filed, 0 would-buys (6h follow, sampled every 2 min)
 
 ## Scorecard (after fees)
 - 22 closed, 3 won (14%), net $-25.79
@@ -73,9 +73,17 @@ Updated 2026-11-16T12:40:30Z (paper trading, never real money)
   CA `H4gHnZ3NCU7Z9XQwGX6YYJNyieGEW8pqwGRUcdSxpump`
 
 ## Last scan
-- 12:39Z: 3 coins, 3 with pairs, 0 passed the market filters, 0 researched
+- 12:54Z: 1 coins, 1 with pairs, 0 passed the market filters, 0 researched
 
 ## Coins it looked at, and why it passed
+- 12:52Z 1.0 (DIP, $102,123 mcap, $3,616 5m vol): REJECT, Dip with fading attention is a falling knife, not a dip (5m at 0.26x the hour's pace, under 0.6x)  
+  CA `42t61wPi41TwWtpqBVgZN1V4hjiKwZBKwq27xME9pump`
+- 12:51Z Pumpkin (FINAL_STRETCH, $15,399 mcap, $27,556 5m vol): PASS at conviction 3, PASS: three minutes old, up 473% on the 5m with 12x its hourly pace, one of 14 copies of the ticker, and no story behind it. That's a spike in a vamp field, not a setup (V1, V6, V13).  
+  CA `okUweUUY5DFGbxSCXSV6sH9neDArt5vJWNefnxKpump`
+- 12:42Z DOUG (MIGRATED, $78,675 mcap, $24,974 5m vol): REJECT, Top 10 hold 25.4% ex-pool (>25%) (V13)  
+  CA `CRKqYn9bnEZaXK6K2uk627szTFjait52RXeY6CEnpump`
+- 12:41Z GTA (MIGRATED, $198,045 mcap, $2,667 5m vol): PASS at conviction 3, PASS: flow below pace, no breakout, and WASTED6 is the GTA field leader. Not my coin. (V1, V6)  
+  CA `G9ZMir6uh66Y7viPkXAy7myA9jjE4T1YgheVUmGDpump`
 - 12:39Z देसी (DIP, $41,671 mcap, $2,271 5m vol): PASS at conviction 3, PASS: $2.3k 5m flow is under the $10k bar, the batman/desi theme runs at 0.85x its hourly pace, and the 69% drawdown has no printed higher low. Vamp field, no catalyst. (V1, V6, V13)  
   CA `G4Q4YB4BGbpfA4jZ6LTBAU7a1arP4a8anmfU963Lpump`
 - 12:37Z gtacoin (DIP, $381,276 mcap, $2,233 5m vol): REJECT, Bundles: 6 linked wallet cluster(s) hold 96.9% of supply (>20%) (V17)  
@@ -88,32 +96,24 @@ Updated 2026-11-16T12:40:30Z (paper trading, never real money)
   CA `DtcicPCKTKeAh7TDEzTym3hXeoHAoMiBdYJhMYxZpump`
 - 12:19Z bill (MIGRATED, $180,158 mcap, $4,232 5m vol): PASS at conviction 3, PASS — bill is a 77.5%-drawn-down bottom buy with no catalyst, sellers leading 5m (38% buys), and 14 copies splitting the crowd. Blocker: "no catalyst" (V1, V13).  
   CA `85RhcSEMy15SNhFLmSArNm7udPKXVagVgsq4YmSopump`
-- 12:09Z ZLUSD (MIGRATED, $59,720 mcap, $41,955 5m vol): PASS at conviction 4, PASS: ZLUSD is 11 minutes old, up 48% on its last 5m candle at 4.3x hourly pace, and sitting 1.24x under a prior high it just printed. Chasing a spike off a fresh bond (V1, V6).  
-  CA `DdpwR8QXfnS11HUrSdNmnNvXj3XDMcePoHsWGJrdpump`
-- 12:07Z 1.0 (MIGRATED, $169,711 mcap, $11,800 5m vol): PASS at conviction 3, PASS. "Solana 1.0" is 33% off its 24h high, but 5m flow is 0.45x the hourly pace, there's no printed higher low, and no catalyst. Clean holders don't fix a dead story in a 15-copy field (V1, V6).  
-  CA `42t61wPi41TwWtpqBVgZN1V4hjiKwZBKwq27xME9pump`
-- 12:02Z WASTED (DIP, $3,469,455 mcap, $2,132 5m vol): REJECT, Top 10 hold 26.2% ex-pool (>25%) (V13)  
-  CA `GexThZHgaswpAQ7Fi8QrHFubjPimUNSYhJiAA7XZpump`
-- 12:02Z RESPECT (MIGRATED, $109,471 mcap, $2,993 5m vol): PASS at conviction 3, PASS: RESPECT is the leader of a 12-copy "mission/passed/respect" field, but it's down 6% in 5m with sells beating buys, so there's no breakout and no printed higher low. Blocker: "no breakout" (V1, V3, V6).  
-  CA `BARobVaVawPxpjaHLsvrdLn2SpVJQDFYx4BY2R5Kpump`
 
 ## What its skips did next (last 48h)
 A skip "ran" if the coin reached the first target (1.5x) from the skip price before a 20% drop, "dumped" if the drop came first. Sampled every 10 min, followed 6h.
-- flow below pace: blocked 39, ran 6, dumped 27, flat 2, open 4 (saving losses: keep it)
-  - ran: GTA up to 1.5x  
-    CA `G9ZMir6uh66Y7viPkXAy7myA9jjE4T1YgheVUmGDpump`
+- flow below pace: blocked 38, ran 6, dumped 26, flat 2, open 4 (saving losses: keep it)
   - ran: PASSED up to 1.73x  
     CA `3XaH8VPUaUegqmnkYA8PXCWqQqD8doqdsGGfZyoYpump`
   - ran: ANT up to 1.52x  
     CA `BDPm9gPHCRyo2qjcRrYPsXexmbRwuuHQZo2qhhYXpump`
-- top 10 over 25%: blocked 36, ran 6, dumped 23, flat 4, open 3 (saving losses: keep it)
+  - ran: ANT up to 1.58x  
+    CA `7H2sHeLHyHR8jxENGmsqn7RxTkYZa4KwXvKYcoxBpump`
+- top 10 over 25%: blocked 37, ran 7, dumped 23, flat 4, open 3 (saving losses: keep it)
   - ran: rockstar up to 1.95x  
     CA `9HFUEab7sompLDPTAaTGkryMNGbtBaFMhHMVpJEBpump`
   - ran: VI up to 1.71x  
     CA `4Dj8m9vWqu779F1KDBUttvXM8YFm7U92SDpvjBNKtEiB`
   - ran: ANT up to 1.52x  
     CA `BDPm9gPHCRyo2qjcRrYPsXexmbRwuuHQZo2qhhYXpump`
-- too new / sniping: blocked 35, ran 5, dumped 29, flat 0, open 1 (saving losses: keep it)
+- too new / sniping: blocked 35, ran 6, dumped 28, flat 0, open 1 (saving losses: keep it)
   - ran: Chick up to 1.66x  
     CA `Dueav76X9spnoLomhM2jMkkWorVggbeWucLs3YLupump`
   - ran: TOOLS up to 1.83x  
@@ -134,16 +134,16 @@ A skip "ran" if the coin reached the first target (1.5x) from the skip price bef
     CA `AiQUqe4zjiDssth2FsCoeQVaGtCtHYyKGX8U52rWpump`
   - ran: FUTA up to 2.77x  
     CA `FxoXV4C8DTSYeg5dSXrEsr45zzr8tpNbsrpoiZ8Kpump`
-- falling knife / no higher low: blocked 13, ran 4, dumped 4, flat 3, open 2 (mixed)
-  - ran: GTA up to 1.5x  
-    CA `G9ZMir6uh66Y7viPkXAy7myA9jjE4T1YgheVUmGDpump`
+- falling knife (code): blocked 12, ran 1, dumped 10, flat 0, open 1 (saving losses: keep it)
+  - ran: BigP up to 1.57x  
+    CA `CY254o6VPaJnTiY5uuKUB8xDjSgykC6xtoLoC3kpump`
+- falling knife / no higher low: blocked 12, ran 3, dumped 4, flat 3, open 2 (mixed)
   - ran: CateGiving up to 1.57x  
     CA `5XasjCnMPTczL9VZTDHgbK5sQzwkjnu41oLeHf5Wpump`
   - ran: Nyajira up to 1.52x  
     CA `8cWGfiHyKqxgLrLtkPt2NnLkSUV2JbcLBf4RN6Fapump`
-- falling knife (code): blocked 11, ran 1, dumped 10, flat 0, open 0 (saving losses: keep it)
-  - ran: BigP up to 1.57x  
-    CA `CY254o6VPaJnTiY5uuKUB8xDjSgykC6xtoLoC3kpump`
+  - ran: GOAT up to 1.61x  
+    CA `D7iafdwzzpB7tisqQqT5T9aRrYPtHLqzwxhnLoWJgoat`
 - other: blocked 9, ran 3, dumped 6, flat 0, open 0 (saving losses: keep it)
   - ran: TaoTao up to 1.53x  
     CA `G1KuEMuLrxWynFddQVnpdkQAhYFBwNJiuz1Lv7d9pump`
@@ -197,13 +197,13 @@ Nothing shows a positive after-cost edge. Across all 93 settled coins the simple
 The trenches are running on fresh sub-2h pump.fun launches with generic or finance-brand names. Zelle USD (ZLUSD) is the only coin with real 5m flow at $34k (59% buys, $63k cap, +112% 1h), and Doug The Frog (+553% 1h, 61% buys, $7.7k 5m) is an animal meme just under the volume bar. The ape/GTA-named legacy coins (Good To Ape, gtacoin, GTA6CAT) are flat under $2.5k 5m and fading, and the Jensen/Huang lane is only DADDY on scan at $3.8k 5m, which is thin. PAYOUT and FEAR look hot on the web, but on scan they're dead ($297 and $0 on 5m), so they're not setups; Solana Gossip is down 31% on 1h with 66% buys, which is a dip to watch. BLOB is the only older coin with bar-level flow ($11.8k 5m on a $13.7M cap), but sellers lead at 47% buys. Setups to research, not buy yet: ZLUSD first (brand-name impersonation and vamp risk need checking; probe size at most, stop below its first-hour low), Doug The Frog if 5m volume clears $10k, and BLOB only on a pullback toward a 40-50% retrace with volume holding. Holder, dev and bundle checks haven't been run on any of these yet, so those are unverified, not verdicts. Web figures that disagree with scan (PAYOUT, BLOB, DADDY) were ignored in favor of scan numbers.
 
 ## Moving most in its scans, last 30 min (1h volume)
-- BLOB: $145,242 1h vol, $14,910,289 mcap, +8% 1h  
+- ZLUSD: $315,997 1h vol, $27,371 mcap, -5% 1h  
+  CA `DdpwR8QXfnS11HUrSdNmnNvXj3XDMcePoHsWGJrdpump`
+- 1.0: $167,169 1h vol, $105,308 mcap, -51% 1h  
+  CA `42t61wPi41TwWtpqBVgZN1V4hjiKwZBKwq27xME9pump`
+- BLOB: $147,119 1h vol, $14,315,523 mcap, +1% 1h  
   CA `8s11PkgQt4ZzdZ7oo84hK5t9HG1EvdgAjcg4W7Lpump`
 - WASTED6: $128,022 1h vol, $51,120 mcap, +63% 1h  
   CA `3wyRvbB6nFD7Y9cuozSXrUajZs1EoJxrcBCDBxwupump`
-- GOSSIP: $122,019 1h vol, $25,701 mcap, -5% 1h  
+- GOSSIP: $95,083 1h vol, $7,432 mcap, -49% 1h  
   CA `RDBH77f3ZvW6P7NVhV9CuZqrCXVTVoNRahbM9Ynpump`
-- Anthropig: $50,058 1h vol, $753,412 mcap, +22% 1h  
-  CA `2NUaS6Gfrm5rBuPBn7svHka8t33SrSkpXGQiUvZLpump`
-- DOUG: $44,250 1h vol, $35,062 mcap, +676% 1h  
-  CA `CRKqYn9bnEZaXK6K2uk627szTFjait52RXeY6CEnpump`
