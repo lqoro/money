@@ -1,13 +1,13 @@
 # Trencher live report
 
-Updated 2026-11-16T21:29:54Z (paper trading, never real money)
+Updated 2026-11-16T21:45:03Z (paper trading, never real money)
 
 - Equity: $74.23 (-25.8% vs $100 start)
 - Closed trades: 22, 3 wins
 - Fees paid: $14.78 (axiom $2.81, network $9.18, pool $2.66), plus $4.15 lost to slippage
 - New trades: WATCH-ONLY (scans and decides, buys nothing)
-- Brain: subscription, claude-haiku-5-5 for routine calls, claude-opus-5-5 for the daily review; 389 routine calls and 1 plan-limit hits in 48h
-- Watch log: 113 coins being followed, 1831 filed, 0 would-buys (6h follow, sampled every 2 min)
+- Brain: subscription, claude-haiku-5-5 for routine calls, claude-opus-5-5 for the daily review; 394 routine calls and 1 plan-limit hits in 48h
+- Watch log: 116 coins being followed, 1834 filed, 0 would-buys (6h follow, sampled every 2 min)
 
 ## Scorecard (after fees)
 - 22 closed, 3 won (14%), net $-25.79
@@ -73,9 +73,21 @@ Updated 2026-11-16T21:29:54Z (paper trading, never real money)
   CA `H4gHnZ3NCU7Z9XQwGX6YYJNyieGEW8pqwGRUcdSxpump`
 
 ## Last scan
-- 21:29Z: 4 coins, 4 with pairs, 2 passed the market filters, 2 researched
+- 21:44Z: 9 coins, 9 with pairs, 1 passed the market filters, 1 researched
 
 ## Coins it looked at, and why it passed
+- 21:44Z GATO (DIP, $5,379,606 mcap, $6,135 5m vol): REJECT, Dev holds 2.7% (>1%) (V13, V17)  
+  CA `HsprHxBRgiVaQdRf3TnKNuZZtaX9JUSPgMFdAkk6pump`
+- 21:42Z BAWSAQ (MIGRATED, $43,981 mcap, $41,153 5m vol): PASS at conviction 3, PASS: five minutes old, up 66% on the last 5m candle at 10.6x hourly pace, and a same-ticker copy of a $2.6M BAWSAQ. Chasing a vamp (V1, V3).  
+  CA `4La95NEVJdYK9kr375SfKPXnLA8ef8GtsjfVfW27pump`
+- 21:37Z CHOP (MIGRATED, $132,300 mcap, $20,554 5m vol): PASS at conviction 3, PASS — 10-minute-old pump.fun copy that went +199% in 5m with no higher low printed. Chasing a spike, blocker "chasing spike" (V1, V6).  
+  CA `7XpsCaMBnWrYuKmdN4qRVYcJcnwRcNTErgMkFrtPpump`
+- 21:36Z DIGS (MIGRATED, $225,956 mcap, $3,457 5m vol): REJECT, Bundles: 10 linked wallet cluster(s) hold 100.0% of supply (>20%) (V17)  
+  CA `9QT8K685Hrae4k11dhGXirdtpfAaimExtyfwt8cPpump`
+- 21:34Z Rocco (MIGRATED, $917,232 mcap, $7,088 5m vol): PASS at conviction 4, PASS — target too close. First resistance (~0.00110, the pre-dump range) is about 1.17x from $0.00094, under the 1.3x floor. No printed higher low, 5m flow $7.1k is under the $10k bar, and it sits in a 16-copy GTA field. Watch it into the Nov 19 release. (V1, V6, V13)  
+  CA `HZbiEpF2oM658EpjNRRqxharz5L9Ddm8akpSH2R5pump`
+- 21:32Z GROYPERS (FINAL_STRETCH, $18,448 mcap, $25,782 5m vol): PASS at conviction 3, PASS: chasing spike, six minutes old, top 10 at 22.9%, and it leads an 11-copy field with no catalyst. Blocker: "chasing spike" plus "too new" (GROYPERS, V1, V6, V13).  
+  CA `G128WcDRks1y5gsEpYdHbrre5Wc5ERw2D4Wp5HpdDc72`
 - 21:29Z CBUCKS (MIGRATED, $4,817,072 mcap, $3,060 5m vol): REJECT, Top 10 hold 25.9% ex-pool (>25%) (V13)  
   CA `DtcicPCKTKeAh7TDEzTym3hXeoHAoMiBdYJhMYxZpump`
 - 21:29Z VICE (MIGRATED, $166,609 mcap, $14,034 5m vol): REJECT, Top 10 hold 45.6% ex-pool (>25%) (V13)  
@@ -84,18 +96,6 @@ Updated 2026-11-16T21:29:54Z (paper trading, never real money)
   CA `667tvUtaFVbesmSZDYCgQzYkJW4y36PdbmacRZGipump`
 - 21:24Z Lemon (DIP, $81,471 mcap, $2,843 5m vol): PASS at conviction 2, PASS: Lemon Pig is a 67%-off DIP with a dead theme (0.67x pace, 18 copies), $2.8k 5m, a 6% bundle cluster and a 4-token ticker field. Blocker: "dead story" and "flow below pace". (V1, V6, V13)  
   CA `FsFqQGxCNd7dbFuimCW4hMiFRdvvM8PoLyp4WZrxAUnN`
-- 21:23Z WORLDCRAFT (MIGRATED, $31,918 mcap, $4,666 5m vol): PASS at conviction 3, PASS: chasing a spike at 0.64x pace, $4.7k 5m, no printed higher low. Blocker "chasing spike". (V1, V6)  
-  CA `6ErRss728CstWJD9wHNeVEdVmKncYMRpsWHKLbxopump`
-- 21:20Z scat (FINAL_STRETCH, $16,638 mcap, $10,980 5m vol): PASS at conviction 2, PASS: chasing spike. scat is up 31% in 5m and 588% in 1h, sitting 23.5% under a 26-minute-old peak in a 24-copy cat field running at 0.76x theme pace. Blockers: "chasing spike", "split crowd", and the bottom-buy gate. (V1, V6, V13)  
-  CA `5EpUkeRekk1uzWKoJz9fyYYA3Vwt6bTtdRNpVtkMpump`
-- 21:16Z BAWSAQ (MIGRATED, $2,598,319 mcap, $11,612 5m vol): PASS at conviction 3, PASS: BAWSAQ, flow at 0.22x pace in a 21-copy field that's cooling. First resistance is only 1.24x away. (V1, V6, V13)  
-  CA `D9EcoQZeAytCrF1kQFSpRNpoPhibJUvJcmRHXhubpump`
-- 21:16Z DPRF (FINAL_STRETCH, $17,273 mcap, $13,820 5m vol): PASS at conviction 3, PASS: DarkProof is up 89% on 5m after a whipsaw hour, top 10 hold 22%, and the tech story is a 10-day-old domain with a 1-star repo. Chasing a spike (V1, V6, V13).  
-  CA `7pZ5HMPTFQsLP6D8Zg6VfgjbKRycitG3H4Dq7cmBpump`
-- 21:12Z WASTED (DIP, $3,074,353 mcap, $2,542 5m vol): REJECT, Top 10 hold 25.2% ex-pool (>25%) (V13)  
-  CA `GexThZHgaswpAQ7Fi8QrHFubjPimUNSYhJiAA7XZpump`
-- 21:10Z COGE (MIGRATED, $453,289 mcap, $2,558 5m vol): REJECT, Top 10 hold 36.7% ex-pool (>25%) (V13)  
-  CA `BRf3SXRk8BdXmBZDJfKyEhbYmqBVf8843ctEMcD4pump`
 
 ## What its skips did next (last 48h)
 A skip "ran" if the coin reached the first target (1.5x) from the skip price before a 20% drop, "dumped" if the drop came first. Sampled every 10 min, followed 6h.
@@ -106,21 +106,21 @@ A skip "ran" if the coin reached the first target (1.5x) from the skip price bef
     CA `BDPm9gPHCRyo2qjcRrYPsXexmbRwuuHQZo2qhhYXpump`
   - ran: ANT up to 1.58x  
     CA `7H2sHeLHyHR8jxENGmsqn7RxTkYZa4KwXvKYcoxBpump`
-- top 10 over 25%: blocked 46, ran 7, dumped 31, flat 4, open 4 (saving losses: keep it)
+- top 10 over 25%: blocked 46, ran 7, dumped 33, flat 4, open 2 (saving losses: keep it)
   - ran: rockstar up to 1.95x  
     CA `9HFUEab7sompLDPTAaTGkryMNGbtBaFMhHMVpJEBpump`
   - ran: VI up to 1.71x  
     CA `4Dj8m9vWqu779F1KDBUttvXM8YFm7U92SDpvjBNKtEiB`
   - ran: ANT up to 1.52x  
     CA `BDPm9gPHCRyo2qjcRrYPsXexmbRwuuHQZo2qhhYXpump`
-- too new / sniping: blocked 43, ran 8, dumped 35, flat 0, open 0 (saving losses: keep it)
+- too new / sniping: blocked 45, ran 9, dumped 36, flat 0, open 0 (saving losses: keep it)
   - ran: Chick up to 1.66x  
     CA `Dueav76X9spnoLomhM2jMkkWorVggbeWucLs3YLupump`
   - ran: TOOLS up to 1.83x  
     CA `9Ei1d97U7M8m4t3fof7c8MUECtmzgqbQCo81cGGzpump`
   - ran: twert up to 1.81x  
     CA `8WvWwttzaLfW1nbjx6wmYL5jozWpvy95WktAg5cipump`
-- near the high / chasing: blocked 37, ran 7, dumped 26, flat 0, open 4 (saving losses: keep it)
+- near the high / chasing: blocked 38, ran 8, dumped 28, flat 0, open 2 (saving losses: keep it)
   - ran: penny up to 1.6x  
     CA `5gmCPpuktJ7Svjgr4PPJBTosAFKB8K6Z45EGfSUmpump`
   - ran: WIGGLES up to 1.69x  
@@ -134,17 +134,17 @@ A skip "ran" if the coin reached the first target (1.5x) from the skip price bef
     CA `AiQUqe4zjiDssth2FsCoeQVaGtCtHYyKGX8U52rWpump`
   - ran: FUTA up to 2.77x  
     CA `FxoXV4C8DTSYeg5dSXrEsr45zzr8tpNbsrpoiZ8Kpump`
-- falling knife (code): blocked 17, ran 1, dumped 13, flat 0, open 3 (saving losses: keep it)
-  - ran: BigP up to 1.57x  
-    CA `CY254o6VPaJnTiY5uuKUB8xDjSgykC6xtoLoC3kpump`
-- falling knife / no higher low: blocked 17, ran 3, dumped 10, flat 3, open 1 (saving losses: keep it)
+- falling knife / no higher low: blocked 18, ran 3, dumped 11, flat 3, open 1 (saving losses: keep it)
   - ran: CateGiving up to 1.57x  
     CA `5XasjCnMPTczL9VZTDHgbK5sQzwkjnu41oLeHf5Wpump`
   - ran: Nyajira up to 1.52x  
     CA `8cWGfiHyKqxgLrLtkPt2NnLkSUV2JbcLBf4RN6Fapump`
   - ran: GOAT up to 1.61x  
     CA `D7iafdwzzpB7tisqQqT5T9aRrYPtHLqzwxhnLoWJgoat`
-- other: blocked 13, ran 4, dumped 8, flat 0, open 1 (saving losses: keep it)
+- falling knife (code): blocked 17, ran 1, dumped 13, flat 0, open 3 (saving losses: keep it)
+  - ran: BigP up to 1.57x  
+    CA `CY254o6VPaJnTiY5uuKUB8xDjSgykC6xtoLoC3kpump`
+- other: blocked 13, ran 4, dumped 9, flat 0, open 0 (saving losses: keep it)
   - ran: TaoTao up to 1.53x  
     CA `G1KuEMuLrxWynFddQVnpdkQAhYFBwNJiuz1Lv7d9pump`
   - ran: SI up to 1.94x  
@@ -198,16 +198,16 @@ Nothing shows a positive edge after costs. Over 309 settled coins, every setup l
 - [2026-11-02 20:25] I expected Slingoor, a clean MIGRATED leader with $25k of 5m flow at pace and a 0.77 buy share, to retest its $408k high from $304k. It never went green (0.98x peak) and hit the -20% stop in 2 minutes, a -$2.86 probe. My own thesis admitted there was no printed higher low after a peak only 6 minutes old, so this confirms the money-shape rule: buy share and flow are not structure (V1, V6). Next time a MIGRATED pullback with no higher low above the hourly low is a PASS with blocker "no higher low", not a probe. This is one loss, so it adds no new ban beyond the rule I already have.
 
 ## Meta right now
-Trencher: The trenches are running a GTA VI / Vice City theme, and it repeats across coins. BAWSAQ, VI, ROCCO and VICEDORD are all under about an hour old, sit between $82k and $888k market cap, show 68-93% buys, and are up 113% to 942% on the hour. Secondary themes are KOL/trading-meta jokes (Trader, Copytrader, BANKLESS, $6k-$125k caps) and animal coins (DACAT, SNUT), but SNUT and DACAT flow is flat or leaving, and PUMPS (12% buys) and XRL (29% buys) are fading. The crawler's meta_summary doesn't match scan_movers (it cites VICECAT, GTAMAS, SI, LUCIA, and +828% for Trader, while scan shows Trader at -60% on the hour and GTA at $700k cap, not a meme), so I used scan figures. Setups to research: VI (PumpSwap, $98k cap, $43.6k 5m, 83% buys) and ROCCO ($82k cap, $11.5k 5m, 93% buys) as MIGRATED-style candidates, with BAWSAQ only as a pullback-on-volume DIP. Initials at 2x, stop set by conviction, and holder, dev and bundle checks still unrun, and the Vice name cluster is a vamp risk, so find the original first. PASS for now on VICEDORD ($6.4k 5m is under the $10k line) and GTA ($3k 5m against +94% on the hour). Paper only, not financial advice.
+Meta: the Vice City/GTA cluster is still the loudest theme in scan_movers, but it's a vamp swarm. BAWSAQ ($2.6M cap, $11.6k 5m, 76% buys, +240% 1h) and ONLYVICE ($172k, $15.5k 5m, 63% buys, +386% 1h) carry real flow, while VICEDORD, the "Grand Tits" GTA clone and VI are already down 98-99% on the hour. VI's $1.4k cap in scan conflicts with the crawler's $98k, so verify it before trusting either number. A second theme is young pump.fun bonding-curve joke coins with real 5m volume and buyers: GROYPERS ($18k, $25.8k 5m, 55% buys, about 6 minutes old), DPRF ($15.6k, $14k 5m, 62% buys, +633% 1h) and scat/snail cat ($16.6k, $11k 5m, 58% buys, +588% 1h). Animal and dog coins are fading (JOB flat at 482 hours old, KOL -85%, BANK -21%), and the crawler's KOL/trading-meta jokes don't show up in movers, so I'm not counting them as live. Setups to research, none confirmed: ONLYVICE and BAWSAQ as MIGRATED-style candidates (BAWSAQ only as a pullback that keeps its 5m volume), and DPRF/scat as FINAL_STRETCH-style candidates with the stop under their launch range; GROYPERS is political-coded, so weigh that before anything else. Initials at 2x, stops set by conviction, and holder, dev, bundle and original-token checks (vamp risk) are still unrun on every coin. Paper only, not financial advice.
 
 ## Moving most in its scans, last 30 min (1h volume)
 - BAWSAQ: $633,328 1h vol, $2,598,319 mcap, +240% 1h  
   CA `D9EcoQZeAytCrF1kQFSpRNpoPhibJUvJcmRHXhubpump`
-- JOB: $315,929 1h vol, $1,945,426 mcap, +2% 1h  
-  CA `9Pq7aLAbhDG2tTnS22cm6kuysZVcZpLFE368HWuypump`
 - BANK: $301,808 1h vol, $128,908 mcap, -21% 1h  
   CA `667tvUtaFVbesmSZDYCgQzYkJW4y36PdbmacRZGipump`
-- LastRide: $141,445 1h vol, $214,844 mcap, +578% 1h  
-  CA `D8q1rSs4ernxGWur9tb5YGiAGEh6tgzg2VQc6spkpump`
-- VI: $119,430 1h vol, $1,371 mcap, -98% 1h  
-  CA `3Ag5XsdWbPZrrcdfcsQqfHPv2syhZWpNx8CDaDcWpump`
+- WHOAPED: $100,576 1h vol, $6,395 mcap, -77% 1h  
+  CA `AFkMcpbnwEg328181CCresbTTG52DexwKM7FFo9Hpump`
+- CHOP: $88,796 1h vol, $132,300 mcap, +269% 1h  
+  CA `7XpsCaMBnWrYuKmdN4qRVYcJcnwRcNTErgMkFrtPpump`
+- WORLDCRAFT: $86,928 1h vol, $31,918 mcap, +14% 1h  
+  CA `6ErRss728CstWJD9wHNeVEdVmKncYMRpsWHKLbxopump`
