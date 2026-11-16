@@ -1,13 +1,13 @@
 # Trencher live report
 
-Updated 2026-11-16T20:29:33Z (paper trading, never real money)
+Updated 2026-11-16T20:44:39Z (paper trading, never real money)
 
 - Equity: $74.23 (-25.8% vs $100 start)
 - Closed trades: 22, 3 wins
 - Fees paid: $14.78 (axiom $2.81, network $9.18, pool $2.66), plus $4.15 lost to slippage
 - New trades: WATCH-ONLY (scans and decides, buys nothing)
-- Brain: subscription, claude-haiku-5-5 for routine calls, claude-opus-5-5 for the daily review; 377 routine calls and 1 plan-limit hits in 48h
-- Watch log: 102 coins being followed, 1817 filed, 0 would-buys (6h follow, sampled every 2 min)
+- Brain: subscription, claude-haiku-5-5 for routine calls, claude-opus-5-5 for the daily review; 381 routine calls and 1 plan-limit hits in 48h
+- Watch log: 104 coins being followed, 1821 filed, 0 would-buys (6h follow, sampled every 2 min)
 
 ## Scorecard (after fees)
 - 22 closed, 3 won (14%), net $-25.79
@@ -73,9 +73,21 @@ Updated 2026-11-16T20:29:33Z (paper trading, never real money)
   CA `H4gHnZ3NCU7Z9XQwGX6YYJNyieGEW8pqwGRUcdSxpump`
 
 ## Last scan
-- 20:28Z: 8 coins, 8 with pairs, 0 passed the market filters, 0 researched
+- 20:44Z: 5 coins, 5 with pairs, 1 passed the market filters, 1 researched
 
 ## Coins it looked at, and why it passed
+- 20:44Z CBUCKS (MIGRATED, $4,662,801 mcap, $2,574 5m vol): REJECT, Top 10 hold 25.9% ex-pool (>25%) (V13)  
+  CA `DtcicPCKTKeAh7TDEzTym3hXeoHAoMiBdYJhMYxZpump`
+- 20:41Z VICECAT (DIP, $138,656 mcap, $3,406 5m vol): REJECT, Dip with fading attention is a falling knife, not a dip (5m at 0.38x the hour's pace, under 0.6x)  
+  CA `HsWkLse36Aog3pK8n6cNHRG6s1kc9KVgz5VNMBcRpump`
+- 20:39Z BANK (MIGRATED, $189,567 mcap, $27,353 5m vol): REJECT, Bundles: 4 linked wallet cluster(s) hold 22.8% of supply (>20%) (V17)  
+  CA `667tvUtaFVbesmSZDYCgQzYkJW4y36PdbmacRZGipump`
+- 20:36Z Leonida (DIP, $295,955 mcap, $3,719 5m vol): PASS at conviction 2, PASS. Leonida is a dead theme riding a live one. The GTA/Vice City meta is running on other coins, and this story is at 0.08x its own pace with no catalyst (V1, V6, V13).  
+  CA `BWJfBNeXpapG7uoqByp5KSwWgCQba8QcDmA2DQiEpump`
+- 20:32Z VI (MIGRATED, $98,081 mcap, $43,619 5m vol): PASS at conviction 3, PASS: chasing spike, too new, no higher low. Five-minute flow is 4.2x the hourly pace after a +98% candle, and the coin is 10 minutes old with no base above its 3.2e-5 hour low. Watch for a retrace that prints a higher low (V1, V6).  
+  CA `3Ag5XsdWbPZrrcdfcsQqfHPv2syhZWpNx8CDaDcWpump`
+- 20:30Z BAWSAQ (MIGRATED, $887,633 mcap, $16,799 5m vol): PASS at conviction 3, PASS: flow at 0.3x its hourly pace and the first resistance is only 1.22x away. Vice-city theme is crowded and cooling. (MIGRATED, V1, V6)  
+  CA `D9EcoQZeAytCrF1kQFSpRNpoPhibJUvJcmRHXhubpump`
 - 20:24Z COGE (MIGRATED, $240,592 mcap, $2,960 5m vol): REJECT, Top 10 hold 36.7% ex-pool (>25%) (V13)  
   CA `BRf3SXRk8BdXmBZDJfKyEhbYmqBVf8843ctEMcD4pump`
 - 20:24Z JOB (MIGRATED, $1,952,200 mcap, $24,361 5m vol): PASS at conviction 3, PASS. JOB is a 20-day-old, 23-copy dog-job field at $1.95M with a 17% bundle cluster, and its prior high is only 1.33x away, under my 1.5x initials. Big cap, no room (V1, V3, V13).  
@@ -84,36 +96,24 @@ Updated 2026-11-16T20:29:33Z (paper trading, never real money)
   CA `BTSkBxZhJnZpV1fsnMbEHrXxWDMzwfEGs3RLNmNfpump`
 - 20:20Z GTA (MIGRATED, $700,258 mcap, $3,086 5m vol): PASS at conviction 3, PASS — at the high, chasing a +110% hour, on 5m flow at 0.57x pace, in a 20-copy GTA field where it isn't the leader. Wait for a retrace and a printed higher low (V1, V6).  
   CA `2NWgu4fqN2AxS5pp5v3f3SH54qArP9JepQFJm58gpump`
-- 20:18Z VICEDORD (MIGRATED, $210,014 mcap, $5,861 5m vol): REJECT, Dev holds 1.5% (>1%) (V13, V17)  
-  CA `8q74mAMERS7PrychaRch2p1MK3JKoy4Y7BjJ7ucppump`
-- 20:17Z ROCCO (MIGRATED, $82,287 mcap, $11,528 5m vol): PASS at conviction 2, PASS — ROCCO is 94% off its $1.42M peak, 30 minutes after that peak, with 5m flow at 0.19x its hourly pace. It's a 20-copy vamp field and GTA is the leader, not ROCCO. Too new, chasing a bounce, wrong shape. (V1, V6, V13)  
-  CA `FJbyUWahiRMtLnExTDJ1HzhKHjJzMTbZJL27S2NVpump`
-- 20:08Z DACAT (MIGRATED, $181,700 mcap, $5,344 5m vol): PASS at conviction 2, PASS: DACAT is the 5m-flow laggard in a 7-copy cat field, and flow is below pace. Blocker "flow below pace." (V1, V13)  
-  CA `8AzrbaGjACy5VZ4gyjaAGAueCYpvpUWKwpyeGp4wpump`
-- 20:06Z Trader (MIGRATED, $124,787 mcap, $12,478 5m vol): PASS at conviction 3, PASS: Trader is 77% off a $536k peak, flow is at 0.16x its own hourly pace, and the kols/trader theme is at 0.62x pace. Blockers: dip too deep, flow below pace, no printed higher low, theme pace under 1x. (V1, V6)  
-  CA `7TnXXR1ytJ9PZDxgSA8VwbyKmEWZmiA2YAn55YyVpump`
-- 20:05Z DIGS (MIGRATED, $232,598 mcap, $2,845 5m vol): REJECT, Bundles: 10 linked wallet cluster(s) hold 100.0% of supply (>20%) (V17)  
-  CA `9QT8K685Hrae4k11dhGXirdtpfAaimExtyfwt8cPpump`
-- 20:01Z LEMON (MIGRATED, $73,775 mcap, $2,854 5m vol): REJECT, Bundles: 3 linked wallet cluster(s) hold 56.5% of supply (>20%) (V17)  
-  CA `Gi4cb3A4traf2rSkhJh6oqtLpPGwVhZonif1xAEEpump`
 
 ## What its skips did next (last 48h)
 A skip "ran" if the coin reached the first target (1.5x) from the skip price before a 20% drop, "dumped" if the drop came first. Sampled every 10 min, followed 6h.
-- flow below pace: blocked 49, ran 5, dumped 39, flat 2, open 3 (saving losses: keep it)
+- flow below pace: blocked 49, ran 6, dumped 38, flat 2, open 3 (saving losses: keep it)
   - ran: PASSED up to 1.73x  
     CA `3XaH8VPUaUegqmnkYA8PXCWqQqD8doqdsGGfZyoYpump`
   - ran: ANT up to 1.52x  
     CA `BDPm9gPHCRyo2qjcRrYPsXexmbRwuuHQZo2qhhYXpump`
   - ran: ANT up to 1.58x  
     CA `7H2sHeLHyHR8jxENGmsqn7RxTkYZa4KwXvKYcoxBpump`
-- top 10 over 25%: blocked 45, ran 7, dumped 30, flat 4, open 4 (saving losses: keep it)
+- top 10 over 25%: blocked 45, ran 7, dumped 31, flat 4, open 3 (saving losses: keep it)
   - ran: rockstar up to 1.95x  
     CA `9HFUEab7sompLDPTAaTGkryMNGbtBaFMhHMVpJEBpump`
   - ran: VI up to 1.71x  
     CA `4Dj8m9vWqu779F1KDBUttvXM8YFm7U92SDpvjBNKtEiB`
   - ran: ANT up to 1.52x  
     CA `BDPm9gPHCRyo2qjcRrYPsXexmbRwuuHQZo2qhhYXpump`
-- too new / sniping: blocked 42, ran 7, dumped 35, flat 0, open 0 (saving losses: keep it)
+- too new / sniping: blocked 43, ran 7, dumped 35, flat 0, open 1 (saving losses: keep it)
   - ran: Chick up to 1.66x  
     CA `Dueav76X9spnoLomhM2jMkkWorVggbeWucLs3YLupump`
   - ran: TOOLS up to 1.83x  
@@ -127,23 +127,23 @@ A skip "ran" if the coin reached the first target (1.5x) from the skip price bef
     CA `2kWx47CUrcXtzptFNnbSXKq3vo1ebqyLBhRytKRGpump`
   - ran: Bustas up to 1.75x  
     CA `9rTgs58B3p11vXekTTgVYtv8vKxQ6oSoZFXPy4onpump`
-- RugCheck danger: blocked 31, ran 8, dumped 20, flat 2, open 1 (saving losses: keep it)
+- RugCheck danger: blocked 31, ran 8, dumped 21, flat 2, open 0 (saving losses: keep it)
   - ran: Ivy up to 1.88x  
     CA `DxNF3Qxd8XeUBdz7ReRdoiFzRmNDKbSz4c2oA7aRpump`
   - ran: SI up to 1.93x  
     CA `AiQUqe4zjiDssth2FsCoeQVaGtCtHYyKGX8U52rWpump`
   - ran: FUTA up to 2.77x  
     CA `FxoXV4C8DTSYeg5dSXrEsr45zzr8tpNbsrpoiZ8Kpump`
-- falling knife / no higher low: blocked 16, ran 3, dumped 9, flat 3, open 1 (saving losses: keep it)
+- falling knife (code): blocked 16, ran 1, dumped 12, flat 0, open 3 (saving losses: keep it)
+  - ran: BigP up to 1.57x  
+    CA `CY254o6VPaJnTiY5uuKUB8xDjSgykC6xtoLoC3kpump`
+- falling knife / no higher low: blocked 16, ran 3, dumped 10, flat 3, open 0 (saving losses: keep it)
   - ran: CateGiving up to 1.57x  
     CA `5XasjCnMPTczL9VZTDHgbK5sQzwkjnu41oLeHf5Wpump`
   - ran: Nyajira up to 1.52x  
     CA `8cWGfiHyKqxgLrLtkPt2NnLkSUV2JbcLBf4RN6Fapump`
   - ran: GOAT up to 1.61x  
     CA `D7iafdwzzpB7tisqQqT5T9aRrYPtHLqzwxhnLoWJgoat`
-- falling knife (code): blocked 15, ran 1, dumped 12, flat 0, open 2 (saving losses: keep it)
-  - ran: BigP up to 1.57x  
-    CA `CY254o6VPaJnTiY5uuKUB8xDjSgykC6xtoLoC3kpump`
 - other: blocked 14, ran 5, dumped 8, flat 0, open 1 (mixed)
   - ran: TaoTao up to 1.53x  
     CA `G1KuEMuLrxWynFddQVnpdkQAhYFBwNJiuz1Lv7d9pump`
@@ -151,14 +151,12 @@ A skip "ran" if the coin reached the first target (1.5x) from the skip price bef
     CA `H2irVtPLfKoBJ69itZmhsedSPwBUTaubmUavc6Uapump`
   - ran: BLOB up to 1.66x  
     CA `8s11PkgQt4ZzdZ7oo84hK5t9HG1EvdgAjcg4W7Lpump`
-- thin 5m volume: blocked 12, ran 2, dumped 9, flat 1, open 0 (saving losses: keep it)
+- thin 5m volume: blocked 11, ran 2, dumped 9, flat 0, open 0 (saving losses: keep it)
   - ran: SENDER up to 1.58x  
     CA `5peJLZQnBkXtydYYMunbT4QutSyd9eA474MqxcmEpump`
   - ran: UNITY up to 1.66x  
     CA `GD6MboptxbHBspASr5PWozgNDrZxmxJ8JpBBD8Vpump`
-- bundles over the line: blocked 11, ran 1, dumped 8, flat 1, open 1 (saving losses: keep it)
-  - ran: BANK up to 1.66x  
-    CA `667tvUtaFVbesmSZDYCgQzYkJW4y36PdbmacRZGipump`
+- bundles over the line: blocked 11, ran 0, dumped 8, flat 1, open 2 (saving losses: keep it)
 
 ## Daily review (2026-11-16, claude-opus-5-5)
 Nothing shows a positive edge after costs. Over 309 settled coins, every setup lost money net: FINAL_STRETCH -7.2%, DIP -7.4%, MIGRATED -13.5%. Costs alone averaged 9.8% per round trip. Before costs, FINAL_STRETCH made about +2.9% and DIP about +1.8%, but at n=46 and n=54 the noise is roughly ±4–5 points, so neither is different from zero. With a 1.5x / -20% plan and ~10% costs, you need about 43% of coins to reach 1.5x before -20% just to break even. The best group (FINAL_STRETCH) managed 32.6%, and the error bar on that is about ±14 points. The routine model gave zero would-buys, so the "did its buys beat its passes" question can't be answered. It passed on all 164 coins it reviewed. Those coins averaged -11.7% net, about the same as the checklist rejects at -11.3%, so passing on everything was roughly right this day, even though it missed LMAO, Marvin and WIGGLES.
@@ -196,16 +194,16 @@ Nothing shows a positive edge after costs. Over 309 settled coins, every setup l
 - [2026-11-02 20:25] I expected Slingoor, a clean MIGRATED leader with $25k of 5m flow at pace and a 0.77 buy share, to retest its $408k high from $304k. It never went green (0.98x peak) and hit the -20% stop in 2 minutes, a -$2.86 probe. My own thesis admitted there was no printed higher low after a peak only 6 minutes old, so this confirms the money-shape rule: buy share and flow are not structure (V1, V6). Next time a MIGRATED pullback with no higher low above the hourly low is a PASS with blocker "no higher low", not a probe. This is one loss, so it adds no new ban beyond the rule I already have.
 
 ## Meta right now
-The trenches are trading young animal coins and absurd internet-vibe jokes, not the Trump or Nvidia headlines. Most movers are under 1.5 hours old, sit between about $12k and $270k market cap, and show 55-76% buys, so this is not quiet. Animal names are rising: VICECAT (+453% 1h, $37k 5m, 76% buys) is strong, while DACAT (+298% 1h) has only 25% buys, so its flow is leaving. Crude and absurd jokes are rising too: GTA "Grand Tits of America" (+360% 1h, $13k 5m, 76% buys), plus Trader "in a world of KOLs" (+828% 1h, $79k 5m), with GTAMAS (+835%, $48k 5m) too new (0.1h) to call. Person- and dog-coded SI and LUCIA are dead at about $1.3k with zero 5m volume, and Bellacoin, COGE and SENT are flat or down; the crawler's readings for those coins don't match scan, so I ignore them. VICECAT and GTA are MIGRATED-style setups (pumpswap, cap over $30k, 5m over $10k), but both are up 350%+ in the hour, so only with a pullback plan, initials at 2x, a stop, and holder, dev and bundle checks still unverified; Trader is a KOL-name flip I'd only touch if its checks come back clean. Paper only, not financial advice.
+Trencher: The trenches are running a GTA VI / Vice City theme, and it repeats across coins. BAWSAQ, VI, ROCCO and VICEDORD are all under about an hour old, sit between $82k and $888k market cap, show 68-93% buys, and are up 113% to 942% on the hour. Secondary themes are KOL/trading-meta jokes (Trader, Copytrader, BANKLESS, $6k-$125k caps) and animal coins (DACAT, SNUT), but SNUT and DACAT flow is flat or leaving, and PUMPS (12% buys) and XRL (29% buys) are fading. The crawler's meta_summary doesn't match scan_movers (it cites VICECAT, GTAMAS, SI, LUCIA, and +828% for Trader, while scan shows Trader at -60% on the hour and GTA at $700k cap, not a meme), so I used scan figures. Setups to research: VI (PumpSwap, $98k cap, $43.6k 5m, 83% buys) and ROCCO ($82k cap, $11.5k 5m, 93% buys) as MIGRATED-style candidates, with BAWSAQ only as a pullback-on-volume DIP. Initials at 2x, stop set by conviction, and holder, dev and bundle checks still unrun, and the Vice name cluster is a vamp risk, so find the original first. PASS for now on VICEDORD ($6.4k 5m is under the $10k line) and GTA ($3k 5m against +94% on the hour). Paper only, not financial advice.
 
 ## Moving most in its scans, last 30 min (1h volume)
-- Trader: $921,670 1h vol, $124,787 mcap, -60% 1h  
-  CA `7TnXXR1ytJ9PZDxgSA8VwbyKmEWZmiA2YAn55YyVpump`
 - ROCCO: $725,181 1h vol, $82,287 mcap, +113% 1h  
   CA `FJbyUWahiRMtLnExTDJ1HzhKHjJzMTbZJL27S2NVpump`
-- PUMPS: $271,737 1h vol, $3,369 mcap, -93% 1h  
+- BAWSAQ: $674,105 1h vol, $887,633 mcap, +942% 1h  
+  CA `D9EcoQZeAytCrF1kQFSpRNpoPhibJUvJcmRHXhubpump`
+- BANK: $599,410 1h vol, $193,006 mcap, +306% 1h  
+  CA `667tvUtaFVbesmSZDYCgQzYkJW4y36PdbmacRZGipump`
+- PUMPS: $271,962 1h vol, $2,680 mcap, -94% 1h  
   CA `BXiRfh6f6YuopudCBy1mxNrUpmo65iqL2SjhZvknpump`
 - VICEDORD: $217,765 1h vol, $205,147 mcap, +536% 1h  
   CA `8q74mAMERS7PrychaRch2p1MK3JKoy4Y7BjJ7ucppump`
-- JOB: $208,689 1h vol, $1,952,200 mcap, -22% 1h  
-  CA `9Pq7aLAbhDG2tTnS22cm6kuysZVcZpLFE368HWuypump`
