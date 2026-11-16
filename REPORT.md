@@ -1,13 +1,13 @@
 # Trencher live report
 
-Updated 2026-11-16T18:13:12Z (paper trading, never real money)
+Updated 2026-11-16T18:28:24Z (paper trading, never real money)
 
 - Equity: $74.23 (-25.8% vs $100 start)
 - Closed trades: 22, 3 wins
 - Fees paid: $14.78 (axiom $2.81, network $9.18, pool $2.66), plus $4.15 lost to slippage
 - New trades: WATCH-ONLY (scans and decides, buys nothing)
 - Brain: subscription, claude-haiku-5-5 for routine calls, claude-opus-5-5 for the daily review; 355 routine calls and 1 plan-limit hits in 48h
-- Watch log: 91 coins being followed, 1784 filed, 0 would-buys (6h follow, sampled every 2 min)
+- Watch log: 93 coins being followed, 1786 filed, 0 would-buys (6h follow, sampled every 2 min)
 
 ## Scorecard (after fees)
 - 22 closed, 3 won (14%), net $-25.79
@@ -73,33 +73,33 @@ Updated 2026-11-16T18:13:12Z (paper trading, never real money)
   CA `H4gHnZ3NCU7Z9XQwGX6YYJNyieGEW8pqwGRUcdSxpump`
 
 ## Last scan
-- 18:12Z: 9 coins, 7 with pairs, 0 passed the market filters, 0 researched
+- 18:28Z: 4 coins, 2 with pairs, 0 passed the market filters, 0 researched
 
 ## Coins it looked at, and why it passed
+- 18:27Z JOB (MIGRATED, $2,239,150 mcap, $4,068 5m vol): SKIP, passed the checklist, but the brain was paced or paused  
+  CA `9Pq7aLAbhDG2tTnS22cm6kuysZVcZpLFE368HWuypump`
+- 18:26Z Leonida (DIP, $308,580 mcap, $1,999 5m vol): REJECT, 5m volume $1,999 is dead (<$2,000) (V1)  
+  CA `BWJfBNeXpapG7uoqByp5KSwWgCQba8QcDmA2DQiEpump`
+- 18:21Z mINUte (FINAL_STRETCH, $15,671 mcap, $3,272 5m vol): REJECT, RugCheck danger: Creator history of rugged tokens  
+  CA `27wf8Mh7PFdy4Vr1VqUCc5K6DCp23H3FyqsK3Ymjpump`
+- 18:21Z JOB (MIGRATED, $2,203,151 mcap, $2,696 5m vol): SKIP, passed the checklist, but the brain was paced or paused  
+  CA `9Pq7aLAbhDG2tTnS22cm6kuysZVcZpLFE368HWuypump`
+- 18:16Z JOB (MIGRATED, $2,218,909 mcap, $4,782 5m vol): SKIP, passed the checklist, but the brain was paced or paused  
+  CA `9Pq7aLAbhDG2tTnS22cm6kuysZVcZpLFE368HWuypump`
+- 18:16Z LUCIA (MIGRATED, $195,008 mcap, $9,465 5m vol): REJECT, Top 10 hold 49.4% ex-pool (>25%) (V13)  
+  CA `BQ9fTrZwg5E9BY6nxbD7p5sv8uCWfxRUg9TLG6Xqpump`
+- 18:16Z SI (MIGRATED, $166,150 mcap, $24,500 5m vol): REJECT, RugCheck danger: Creator history of rugged tokens  
+  CA `AkPMD68BiWGmoGJc28kgvnc6fnzXsx99WT3SXsKLpump`
 - 18:11Z JOB (MIGRATED, $2,189,735 mcap, $3,688 5m vol): SKIP, passed the checklist, but the brain was paced or paused  
   CA `9Pq7aLAbhDG2tTnS22cm6kuysZVcZpLFE368HWuypump`
 - 18:09Z ETF (MIGRATED, $171,447 mcap, $157,675 5m vol): PASS, PASS — brain unavailable, not trading blind.  
   CA `Gg5aWvfucyMwihDzyfCEaLgyeeNE2dkob2LTwWfHpump`
 - 18:08Z VI (DIP, $46,328 mcap, $3,196 5m vol): PASS at conviction 3, PASS — 42% dip on a 27-copy "inu/vice" field with no catalyst, no printed higher low, and the site says "CONTRACT COMING SOON" on a 0.2-day-old domain. Blocker: dead story. (V1, V3, V13)  
   CA `3yjHj9s9MukEHr7b7qhMiUfH5fSUz97Eb5J8SRjdpump`
-- 18:08Z DUST (MIGRATED, $33,068 mcap, $4,891 5m vol): REJECT, Top 10 hold 39.1% ex-pool (>25%) (V13)  
-  CA `C14YbyFXqSvhhcj3NdFvgaqQGPo9W5YhWpWXynCQpump`
-- 18:05Z SENT (FINAL_STRETCH, $17,828 mcap, $9,671 5m vol): PASS at conviction 3, PASS: generic-word vamp field with theme flow at 0.46x pace, 5m volume $9.7k under the $10k bar, and a site registered about 2 hours ago that doesn't show this CA. Blocker: "split crowd / no narrative" (V1, V3, V6).  
-  CA `3EDLvS4PMWXmN5oj7aGWwR16yC3zgZSdWL2BeVK8sent`
-- 18:05Z COGE (MIGRATED, $43,346 mcap, $39,165 5m vol): REJECT, RugCheck danger: Creator history of rugged tokens  
-  CA `23GBezAJzK8fJNZzgA5LWLyz2WxDNTBfMKtgTQNPpump`
-- 17:53Z GATO (DIP, $5,602,584 mcap, $6,505 5m vol): REJECT, Dev holds 2.7% (>1%) (V13, V17)  
-  CA `HsprHxBRgiVaQdRf3TnKNuZZtaX9JUSPgMFdAkk6pump`
-- 17:50Z COGE (FINAL_STRETCH, $27,659 mcap, $28,449 5m vol): PASS at conviction 4, PASS. Chasing spike at 5% off a 94% five-minute pump, 94.6% to bond, no higher low, no catalyst. (V1, V6)  
-  CA `GQjTPFGvSwJbLc3Qc5iW7aFbQhhxZicqWJWno46spump`
-- 17:49Z 👠 (DIP, $42,243 mcap, $4,479 5m vol): REJECT, Dip with fading attention is a falling knife, not a dip (5m at 0.51x the hour's pace, under 0.6x)  
-  CA `FYtY5KpMRBHSiCMAqkWWrY2GtNVXs1h8jubbnno7pump`
-- 17:49Z GTAHUB (MIGRATED, $126,683 mcap, $58,691 5m vol): REJECT, Dev holds 2.2% (>1%) (V13, V17)  
-  CA `2hg559PqkbnfaprUE3V5dSFAaDNjURnmvGs79kqepump`
 
 ## What its skips did next (last 48h)
 A skip "ran" if the coin reached the first target (1.5x) from the skip price before a 20% drop, "dumped" if the drop came first. Sampled every 10 min, followed 6h.
-- top 10 over 25%: blocked 42, ran 7, dumped 28, flat 5, open 2 (saving losses: keep it)
+- top 10 over 25%: blocked 43, ran 7, dumped 28, flat 5, open 3 (saving losses: keep it)
   - ran: rockstar up to 1.95x  
     CA `9HFUEab7sompLDPTAaTGkryMNGbtBaFMhHMVpJEBpump`
   - ran: VI up to 1.71x  
@@ -113,7 +113,7 @@ A skip "ran" if the coin reached the first target (1.5x) from the skip price bef
     CA `9Ei1d97U7M8m4t3fof7c8MUECtmzgqbQCo81cGGzpump`
   - ran: twert up to 1.81x  
     CA `8WvWwttzaLfW1nbjx6wmYL5jozWpvy95WktAg5cipump`
-- flow below pace: blocked 40, ran 5, dumped 31, flat 2, open 2 (saving losses: keep it)
+- flow below pace: blocked 40, ran 5, dumped 32, flat 2, open 1 (saving losses: keep it)
   - ran: PASSED up to 1.73x  
     CA `3XaH8VPUaUegqmnkYA8PXCWqQqD8doqdsGGfZyoYpump`
   - ran: ANT up to 1.52x  
@@ -127,7 +127,7 @@ A skip "ran" if the coin reached the first target (1.5x) from the skip price bef
     CA `2kWx47CUrcXtzptFNnbSXKq3vo1ebqyLBhRytKRGpump`
   - ran: Bustas up to 1.75x  
     CA `9rTgs58B3p11vXekTTgVYtv8vKxQ6oSoZFXPy4onpump`
-- RugCheck danger: blocked 27, ran 7, dumped 17, flat 2, open 1 (saving losses: keep it)
+- RugCheck danger: blocked 29, ran 8, dumped 17, flat 2, open 2 (saving losses: keep it)
   - ran: Ivy up to 1.88x  
     CA `DxNF3Qxd8XeUBdz7ReRdoiFzRmNDKbSz4c2oA7aRpump`
   - ran: SI up to 1.93x  
@@ -151,7 +151,7 @@ A skip "ran" if the coin reached the first target (1.5x) from the skip price bef
     CA `H2irVtPLfKoBJ69itZmhsedSPwBUTaubmUavc6Uapump`
   - ran: BLOB up to 1.66x  
     CA `8s11PkgQt4ZzdZ7oo84hK5t9HG1EvdgAjcg4W7Lpump`
-- thin 5m volume: blocked 11, ran 2, dumped 9, flat 0, open 0 (saving losses: keep it)
+- thin 5m volume: blocked 12, ran 2, dumped 9, flat 0, open 1 (saving losses: keep it)
   - ran: SENDER up to 1.58x  
     CA `5peJLZQnBkXtydYYMunbT4QutSyd9eA474MqxcmEpump`
   - ran: UNITY up to 1.66x  
@@ -199,11 +199,11 @@ The trenches are trading fresh pump.fun launches with jokey names, and the ones 
 ## Moving most in its scans, last 30 min (1h volume)
 - ETF: $304,884 1h vol, $171,447 mcap, +452% 1h  
   CA `Gg5aWvfucyMwihDzyfCEaLgyeeNE2dkob2LTwWfHpump`
-- SNUT: $213,323 1h vol, $15,823 mcap, -84% 1h  
-  CA `88ZWKeNqsNuryefmk1uT9baccba77aet6ge3rUpEpump`
-- GTAHUB: $133,561 1h vol, $126,683 mcap, +287% 1h  
-  CA `2hg559PqkbnfaprUE3V5dSFAaDNjURnmvGs79kqepump`
-- MAYA: $118,043 1h vol, $557,555 mcap, +1317% 1h  
-  CA `BEivETeJfF2tLkuTc5dNMcpMH6vGGcwtZchw1J3vpump`
-- MooManao: $112,139 1h vol, $7,057 mcap, -73% 1h  
-  CA `4Mz1Fy65difgJE5zFaTpo82vqNqHsxMpQr9aaC9JoGGQ`
+- SI: $137,513 1h vol, $166,150 mcap, +425% 1h  
+  CA `AkPMD68BiWGmoGJc28kgvnc6fnzXsx99WT3SXsKLpump`
+- COGE: $96,666 1h vol, $45,903 mcap, +55% 1h  
+  CA `23GBezAJzK8fJNZzgA5LWLyz2WxDNTBfMKtgTQNPpump`
+- JOB: $83,454 1h vol, $2,239,150 mcap, +44% 1h  
+  CA `9Pq7aLAbhDG2tTnS22cm6kuysZVcZpLFE368HWuypump`
+- GOOD: $79,213 1h vol, $11,434 mcap, +424% 1h  
+  CA `ApBjDAxWeDRveeqU1nsfy43vkBhTKxswchtwz9Qgpump`
