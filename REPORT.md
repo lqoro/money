@@ -1,13 +1,13 @@
 # Trencher live report
 
-Updated 2026-11-16T11:09:56Z (paper trading, never real money)
+Updated 2026-11-16T11:24:59Z (paper trading, never real money)
 
 - Equity: $74.23 (-25.8% vs $100 start)
 - Closed trades: 22, 3 wins
 - Fees paid: $14.78 (axiom $2.81, network $9.18, pool $2.66), plus $4.15 lost to slippage
 - New trades: WATCH-ONLY (scans and decides, buys nothing)
-- Brain: subscription, claude-haiku-5-5 for routine calls, claude-opus-5-5 for the daily review; 286 routine calls and 0 plan-limit hits in 48h
-- Watch log: 66 coins being followed, 1704 filed, 0 would-buys (6h follow, sampled every 2 min)
+- Brain: subscription, claude-haiku-5-5 for routine calls, claude-opus-5-5 for the daily review; 289 routine calls and 0 plan-limit hits in 48h
+- Watch log: 66 coins being followed, 1707 filed, 0 would-buys (6h follow, sampled every 2 min)
 
 ## Scorecard (after fees)
 - 22 closed, 3 won (14%), net $-25.79
@@ -73,9 +73,15 @@ Updated 2026-11-16T11:09:56Z (paper trading, never real money)
   CA `H4gHnZ3NCU7Z9XQwGX6YYJNyieGEW8pqwGRUcdSxpump`
 
 ## Last scan
-- 11:09Z: 2 coins, 2 with pairs, 0 passed the market filters, 0 researched
+- 11:24Z: 5 coins, 5 with pairs, 0 passed the market filters, 0 researched
 
 ## Coins it looked at, and why it passed
+- 11:22Z 1.0 (MIGRATED, $161,839 mcap, $14,628 5m vol): PASS at conviction 3, PASS: flow below pace, target too close, too new, and it's one of 19 copies with no story. Not a probe. (V1, V6, V13)  
+  CA `42t61wPi41TwWtpqBVgZN1V4hjiKwZBKwq27xME9pump`
+- 11:13Z PAYOUT (FINAL_STRETCH, $15,727 mcap, $4,069 5m vol): REJECT, Top 10 hold 25.3% ex-pool (>25%) (V13)  
+  CA `EnrLgY3pVYGDUjpeK53SZjQZibtUPdTcR89zKLdKypay`
+- 11:11Z GTA (MIGRATED, $176,839 mcap, $2,297 5m vol): PASS at conviction 3, PASS. GTA sits 9.8% off its $196k high with 5m flow at $2.3k, sellers ahead 27 to 22, and 16 copies splitting the crowd. A real catalyst is three days out, but this chart isn't buying it yet. Blockers: chasing, flow below pace, target too close, split crowd. (V1, V6)  
+  CA `G9ZMir6uh66Y7viPkXAy7myA9jjE4T1YgheVUmGDpump`
 - 11:07Z gtacoin (MIGRATED, $510,282 mcap, $3,274 5m vol): REJECT, Bundles: 6 linked wallet cluster(s) hold 96.9% of supply (>20%) (V17)  
   CA `DSKM3d518BBaQShSKqaqZcG1XMRf81UFB6a1eavhSTNK`
 - 11:04Z GATO (DIP, $6,650,055 mcap, $2,170 5m vol): REJECT, Dev holds 2.7% (>1%) (V13, V17)  
@@ -90,30 +96,24 @@ Updated 2026-11-16T11:09:56Z (paper trading, never real money)
   CA `G4Q4YB4BGbpfA4jZ6LTBAU7a1arP4a8anmfU963Lpump`
 - 10:37Z 1.0 (MIGRATED, $59,815 mcap, $62,198 5m vol): PASS at conviction 2, PASS — "1.0" is 12 minutes old, 34% off a $90k spike, mid-bleed with no printed higher low, +13% on 3.6x pace, and no catalyst I can find. Blocker: too new / chasing spike (V1, V6).  
   CA `42t61wPi41TwWtpqBVgZN1V4hjiKwZBKwq27xME9pump`
-- 10:34Z WASTED (DIP, $3,246,072 mcap, $2,334 5m vol): REJECT, Top 10 hold 26.2% ex-pool (>25%) (V13)  
-  CA `GexThZHgaswpAQ7Fi8QrHFubjPimUNSYhJiAA7XZpump`
-- 10:21Z NVIDIANS (FINAL_STRETCH, $15,936 mcap, $4,100 5m vol): PASS at conviction 3, PASS: NVIDIANS is a 18-minute-old pump.fun launch with 5m flow at $4.1k, a Jensen theme running at 0.19x its hourly pace, and no X or website. Too new, no story. (V1, V5, V6)  
-  CA `tiJjUbGEMfnkyBiYCLfQwvNYAUfiagnY6mQYJMWpump`
-- 10:14Z Anthropig (MIGRATED, $918,935 mcap, $3,188 5m vol): PASS at conviction 3, PASS: Anthropig is the leader of a 17-copy field, but 5m flow is under pace and this is a bottom buy with no catalyst. Blocker: "flow below pace" plus the owner's bottom-buy rule. (V1, V13)  
-  CA `2NUaS6Gfrm5rBuPBn7svHka8t33SrSkpXGQiUvZLpump`
 
 ## What its skips did next (last 48h)
 A skip "ran" if the coin reached the first target (1.5x) from the skip price before a 20% drop, "dumped" if the drop came first. Sampled every 10 min, followed 6h.
-- top 10 over 25%: blocked 34, ran 6, dumped 23, flat 4, open 1 (saving losses: keep it)
+- top 10 over 25%: blocked 35, ran 6, dumped 23, flat 4, open 2 (saving losses: keep it)
   - ran: rockstar up to 1.95x  
     CA `9HFUEab7sompLDPTAaTGkryMNGbtBaFMhHMVpJEBpump`
   - ran: VI up to 1.71x  
     CA `4Dj8m9vWqu779F1KDBUttvXM8YFm7U92SDpvjBNKtEiB`
   - ran: ANT up to 1.52x  
     CA `BDPm9gPHCRyo2qjcRrYPsXexmbRwuuHQZo2qhhYXpump`
-- flow below pace: blocked 34, ran 5, dumped 26, flat 2, open 1 (saving losses: keep it)
+- flow below pace: blocked 35, ran 5, dumped 26, flat 2, open 2 (saving losses: keep it)
   - ran: PASSED up to 1.73x  
     CA `3XaH8VPUaUegqmnkYA8PXCWqQqD8doqdsGGfZyoYpump`
   - ran: ANT up to 1.52x  
     CA `BDPm9gPHCRyo2qjcRrYPsXexmbRwuuHQZo2qhhYXpump`
   - ran: ANT up to 1.58x  
     CA `7H2sHeLHyHR8jxENGmsqn7RxTkYZa4KwXvKYcoxBpump`
-- too new / sniping: blocked 34, ran 6, dumped 28, flat 0, open 0 (saving losses: keep it)
+- too new / sniping: blocked 34, ran 5, dumped 28, flat 0, open 1 (saving losses: keep it)
   - ran: Chick up to 1.66x  
     CA `Dueav76X9spnoLomhM2jMkkWorVggbeWucLs3YLupump`
   - ran: TOOLS up to 1.83x  
@@ -134,7 +134,7 @@ A skip "ran" if the coin reached the first target (1.5x) from the skip price bef
     CA `AiQUqe4zjiDssth2FsCoeQVaGtCtHYyKGX8U52rWpump`
   - ran: FUTA up to 2.77x  
     CA `FxoXV4C8DTSYeg5dSXrEsr45zzr8tpNbsrpoiZ8Kpump`
-- falling knife / no higher low: blocked 13, ran 3, dumped 4, flat 2, open 4 (mixed)
+- falling knife / no higher low: blocked 13, ran 4, dumped 4, flat 2, open 3 (mixed)
   - ran: CateGiving up to 1.57x  
     CA `5XasjCnMPTczL9VZTDHgbK5sQzwkjnu41oLeHf5Wpump`
   - ran: Nyajira up to 1.52x  
@@ -194,16 +194,16 @@ Nothing shows a positive after-cost edge. Across all 93 settled coins the simple
 - [2026-11-02 20:25] I expected Slingoor, a clean MIGRATED leader with $25k of 5m flow at pace and a 0.77 buy share, to retest its $408k high from $304k. It never went green (0.98x peak) and hit the -20% stop in 2 minutes, a -$2.86 probe. My own thesis admitted there was no printed higher low after a peak only 6 minutes old, so this confirms the money-shape rule: buy share and flow are not structure (V1, V6). Next time a MIGRATED pullback with no higher low above the hourly low is a PASS with blocker "no higher low", not a probe. This is one loss, so it adds no new ban beyond the rule I already have.
 
 ## Meta right now
-Meta: the trenches are trading fresh person-name and character launches under an hour old (Desi Batman, Starcoin, wuf, pack.trade, Daddy Huang), with 5m volume of $8-19k on several, 1h pumps of +340% to +840%, and buy ratios of 0.55-0.69. Old memes with real flow are the second theme: BLOB ($13.7M, $14.8k 5m) and gtacoin, bill and GATO, which are mostly flat. Fading: Mian Xiao Liu (-84% 1h, buy ratio 0.08), Anthropig (-18%), afk (-23%) and WASTED (buy ratio 0.32). GTA-named coins are mixed, not dead (Good To Ape +22% 1h, gtacoin +15%). Setups to research: BLOB only if it pulls back toward 40-50% with 5m volume still holding (V1), since the scan shows it flat, not dipping. I'd pass the fresh name launches for now, because sub-hour pairs are snipe territory and I don't snipe (V5, V6); revisit one only after it ages and holds $10k+ 5m. The web figures for DADDY, CBUCKS, Stake and Percy don't match the scan, so I'm sizing off the scan numbers only.
+The meta is fresh sub-hour launches, but it's split. FEAR (6 min old, $10.6k 5m, 61% buys) and PAYOUT (+657% 1h, 70% buys, $4.9k 5m) have real buyers, while Stand With Jensen, pack.trade, wuf and Rent are down 78-93% on near-zero 5m volume, so the Jensen/Huang and fresh-name story is fading fast (V1, V5). The old GTA-named coins and BLOB are flat, not dying: BLOB holds $21k 5m on a $14.5M cap, but a 43% buy ratio says sellers lead, and Good To Ape and gtacoin trade under $2.6k 5m, which fails the volume bar. Anthropig, WASTED and bill are fading. Setups to research, not buy yet: FEAR and PAYOUT as New Pairs gambles (V1, V6), probe-size at most and only if volume holds past their first hour, with holder, dev and bundle checks run before any entry; BLOB only if it pulls back toward a 40-50% retrace with 5m volume holding (V1). SIPHON's name sits on the drain rule, so I'm not researching it despite +218% 1h. The web figures for DADDY, Mian Xiao Liu and the others don't match the scan, so I'm using scan numbers only.
 
 ## Moving most in its scans, last 30 min (1h volume)
-- देसी: $250,657 1h vol, $61,293 mcap, +129% 1h  
-  CA `G4Q4YB4BGbpfA4jZ6LTBAU7a1arP4a8anmfU963Lpump`
-- BLOB: $184,279 1h vol, $14,012,947 mcap, +4% 1h  
+- 1.0: $716,071 1h vol, $151,831 mcap, +417% 1h  
+  CA `42t61wPi41TwWtpqBVgZN1V4hjiKwZBKwq27xME9pump`
+- BLOB: $189,873 1h vol, $14,542,851 mcap, +5% 1h  
   CA `8s11PkgQt4ZzdZ7oo84hK5t9HG1EvdgAjcg4W7Lpump`
-- 1NU: $66,608 1h vol, $27,098 mcap, +1027% 1h  
-  CA `G569daWj4hBCMJDXg26YgfiDij3wBkBfXswPwRMFpump`
-- SIPHON: $55,986 1h vol, $7,979 mcap, +242% 1h  
+- SIPHON: $60,091 1h vol, $7,423 mcap, +218% 1h  
   CA `Got25oeW6J2dNy7G5KzCp2JwKeZLg76kU5sz6AS6pump`
-- FIBDIP: $50,070 1h vol, $14,734 mcap, +554% 1h  
-  CA `3CacZc651RHTRk9weLRhoPCqADoqqEfgHTsyemRiFHzH`
+- Rent: $47,826 1h vol, $2,092 mcap, -62% 1h  
+  CA `6doZXcywhwpfAva7xQvfS3n1xhM9GGctNfS562W2pump`
+- Anthropig: $46,760 1h vol, $675,167 mcap, -22% 1h  
+  CA `2NUaS6Gfrm5rBuPBn7svHka8t33SrSkpXGQiUvZLpump`
