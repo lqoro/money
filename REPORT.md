@@ -1,13 +1,13 @@
 # Trencher live report
 
-Updated 2026-11-16T13:40:55Z (paper trading, never real money)
+Updated 2026-11-16T13:55:57Z (paper trading, never real money)
 
 - Equity: $74.23 (-25.8% vs $100 start)
 - Closed trades: 22, 3 wins
 - Fees paid: $14.78 (axiom $2.81, network $9.18, pool $2.66), plus $4.15 lost to slippage
 - New trades: WATCH-ONLY (scans and decides, buys nothing)
-- Brain: subscription, claude-haiku-5-5 for routine calls, claude-opus-5-5 for the daily review; 311 routine calls and 0 plan-limit hits in 48h
-- Watch log: 69 coins being followed, 1736 filed, 0 would-buys (6h follow, sampled every 2 min)
+- Brain: subscription, claude-haiku-5-5 for routine calls, claude-opus-5-5 for the daily review; 314 routine calls and 0 plan-limit hits in 48h
+- Watch log: 71 coins being followed, 1738 filed, 0 would-buys (6h follow, sampled every 2 min)
 
 ## Scorecard (after fees)
 - 22 closed, 3 won (14%), net $-25.79
@@ -73,9 +73,17 @@ Updated 2026-11-16T13:40:55Z (paper trading, never real money)
   CA `H4gHnZ3NCU7Z9XQwGX6YYJNyieGEW8pqwGRUcdSxpump`
 
 ## Last scan
-- 13:39Z: 4 coins, 3 with pairs, 0 passed the market filters, 0 researched
+- 13:55Z: 3 coins, 2 with pairs, 0 passed the market filters, 0 researched
 
 ## Coins it looked at, and why it passed
+- 13:50Z Camino (FINAL_STRETCH, $15,976 mcap, $21,008 5m vol): PASS, PASS — brain unavailable, not trading blind.  
+  CA `8iZ5R98kvH7TpFVY5voZienJtHqKxRhvffw7uYvopump`
+- 13:47Z GTA (MIGRATED, $172,032 mcap, $2,407 5m vol): PASS at conviction 3, PASS: GTA is 24% off a $227k high, but it has broken its hourly low with 5m flow at $2.4k, under the $10k bar, and WASTED6 leads the same-ticker field. Blocker: "no breakout". Old coin on a fading ape/GTA lane. (V1, V6)  
+  CA `G9ZMir6uh66Y7viPkXAy7myA9jjE4T1YgheVUmGDpump`
+- 13:45Z Stumpy (MIGRATED, $91,009 mcap, $78,615 5m vol): PASS at conviction 3, PASS. Stumpy is 30 minutes old, up 47% on the last 5m candle, about 6x off its hourly low with no printed higher low, and not the leader of its 25-copy field. Chasing, too new, split crowd (V1, V3, V6, V13).  
+  CA `83GtPpfNSau1mtDZZ7Vx6YCf8gA5eBxniWCoDsvK2avy`
+- 13:44Z hello (MIGRATED, $48,096 mcap, $2,974 5m vol): REJECT, Top 10 hold 25.4% ex-pool (>25%) (V13)  
+  CA `2Lw9FQA1iAwg5Wo1NTh8GTs3zmVQc7XHGBbexqZgqtWJ`
 - 13:39Z Leonida (DIP, $278,459 mcap, $4,639 5m vol): PASS at conviction 3, PASS: DIP with no catalyst, a 13-day-old site that doesn't show this CA, and 21 same-name copies splitting the crowd. Blockers: "no catalyst" and "split crowd" (V1, V3, V13).  
   CA `BWJfBNeXpapG7uoqByp5KSwWgCQba8QcDmA2DQiEpump`
 - 13:39Z Minimoon (FINAL_STRETCH, $17,437 mcap, $11,509 5m vol): PASS at conviction 3, PASS: blocker "chasing spike". Minimoon ran +110% on 5m and +549% on 1h to a 21k peak 6 minutes ago, then dropped 18%. Top 10 at 22.9% and six same-ticker bigger copies. That's a spike with a vamp field, not a pullback. (V1, V6, V13)  
@@ -88,32 +96,24 @@ Updated 2026-11-16T13:40:55Z (paper trading, never real money)
   CA `3wyRvbB6nFD7Y9cuozSXrUajZs1EoJxrcBCDBxwupump`
 - 13:15Z Anthropig (MIGRATED, $804,120 mcap, $3,637 5m vol): PASS at conviction 4, PASS: Anthropig is the leader of a 14-17 copy AI-parody lane with $3.6k of 5m flow at 0.89x pace and a 0.9-day-old domain. Flow below pace, and the first resistance is only ~1.14x away (V1, V6, V13).  
   CA `2NUaS6Gfrm5rBuPBn7svHka8t33SrSkpXGQiUvZLpump`
-- 13:15Z GTA6 (MIGRATED, $249,689 mcap, $337,579 5m vol): REJECT, Top 10 hold 27.6% ex-pool (>25%) (V13)  
-  CA `AnvhfTgZXdQk3vLmoUxDtYnTb7tpjQkXpFTHDXYFpump`
-- 13:13Z GATO (DIP, $6,740,547 mcap, $1,124 5m vol): REJECT, 5m volume $1,124 is dead (<$2,000) (V1)  
-  CA `HsprHxBRgiVaQdRf3TnKNuZZtaX9JUSPgMFdAkk6pump`
-- 13:09Z CLAUDEMOM (FINAL_STRETCH, $23,248 mcap, $6,120 5m vol): PASS at conviction 2, PASS: chasing spike. CLAUDEMOM is up 1045% in an hour and 33% in the last 5m, and it's 37 minutes old on the bonding curve with no pullback or higher low to buy. Blocker: "chasing spike" (V1, V6).  
-  CA `EyCE6g5w21D6PzH9BHFBxuWsLeHewZWMSf4ju3qPpump`
-- 13:04Z bill (MIGRATED, $183,596 mcap, $3,640 5m vol): PASS at conviction 2, PASS. bill is 77% off its $800k peak, past the 10-60% MIGRATED zone, with $3.6k of 5m flow under the $10k bar and no catalyst. Blocker: bottom buy fails the narrative gate. (V1, V6)  
-  CA `85RhcSEMy15SNhFLmSArNm7udPKXVagVgsq4YmSopump`
 
 ## What its skips did next (last 48h)
 A skip "ran" if the coin reached the first target (1.5x) from the skip price before a 20% drop, "dumped" if the drop came first. Sampled every 10 min, followed 6h.
-- top 10 over 25%: blocked 39, ran 7, dumped 25, flat 4, open 3 (saving losses: keep it)
+- top 10 over 25%: blocked 39, ran 6, dumped 25, flat 4, open 4 (saving losses: keep it)
   - ran: rockstar up to 1.95x  
     CA `9HFUEab7sompLDPTAaTGkryMNGbtBaFMhHMVpJEBpump`
   - ran: VI up to 1.71x  
     CA `4Dj8m9vWqu779F1KDBUttvXM8YFm7U92SDpvjBNKtEiB`
   - ran: ANT up to 1.52x  
     CA `BDPm9gPHCRyo2qjcRrYPsXexmbRwuuHQZo2qhhYXpump`
-- flow below pace: blocked 38, ran 5, dumped 26, flat 3, open 4 (saving losses: keep it)
+- flow below pace: blocked 38, ran 5, dumped 27, flat 3, open 3 (saving losses: keep it)
   - ran: PASSED up to 1.73x  
     CA `3XaH8VPUaUegqmnkYA8PXCWqQqD8doqdsGGfZyoYpump`
   - ran: ANT up to 1.52x  
     CA `BDPm9gPHCRyo2qjcRrYPsXexmbRwuuHQZo2qhhYXpump`
   - ran: ANT up to 1.58x  
     CA `7H2sHeLHyHR8jxENGmsqn7RxTkYZa4KwXvKYcoxBpump`
-- too new / sniping: blocked 35, ran 6, dumped 28, flat 0, open 1 (saving losses: keep it)
+- too new / sniping: blocked 36, ran 6, dumped 29, flat 0, open 1 (saving losses: keep it)
   - ran: Chick up to 1.66x  
     CA `Dueav76X9spnoLomhM2jMkkWorVggbeWucLs3YLupump`
   - ran: TOOLS up to 1.83x  
@@ -156,7 +156,9 @@ A skip "ran" if the coin reached the first target (1.5x) from the skip price bef
     CA `H2irVtPLfKoBJ69itZmhsedSPwBUTaubmUavc6Uapump`
   - ran: BLOB up to 1.66x  
     CA `8s11PkgQt4ZzdZ7oo84hK5t9HG1EvdgAjcg4W7Lpump`
-- bundles over the line: blocked 8, ran 0, dumped 5, flat 2, open 1 (saving losses: keep it)
+- crowd leaving / fading volume: blocked 8, ran 1, dumped 6, flat 0, open 1 (saving losses: keep it)
+  - ran: NUREMBERG up to 1.62x  
+    CA `7R3RnGmpV9mZXwSyHyKN5LEddiZRmGsYrAZPgDJqpump`
 
 ## Daily review (2026-11-16, claude-opus-5-5)
 Nothing shows a positive edge after costs. Over 309 settled coins, every setup lost money net: FINAL_STRETCH -7.2%, DIP -7.4%, MIGRATED -13.5%. Costs alone averaged 9.8% per round trip. Before costs, FINAL_STRETCH made about +2.9% and DIP about +1.8%, but at n=46 and n=54 the noise is roughly ±4–5 points, so neither is different from zero. With a 1.5x / -20% plan and ~10% costs, you need about 43% of coins to reach 1.5x before -20% just to break even. The best group (FINAL_STRETCH) managed 32.6%, and the error bar on that is about ±14 points. The routine model gave zero would-buys, so the "did its buys beat its passes" question can't be answered. It passed on all 164 coins it reviewed. Those coins averaged -11.7% net, about the same as the checklist rejects at -11.3%, so passing on everything was roughly right this day, even though it missed LMAO, Marvin and WIGGLES.
@@ -197,13 +199,13 @@ Nothing shows a positive edge after costs. Over 309 settled coins, every setup l
 Meta: fresh pump.fun launches riding GTA VI and character names, with buyers stacking in. Rising: the GTA6 lane (GTA6 at a $240k cap with $274k 5m at 66% buys, WASTED6 at $9.4k 5m and 84% buys) and sub-hour character coins Stumpy and Minimoon (58-68% buys, +300-500%+ in 1h), with CLAUDEMOM as a single AI-lab-name launch (I'm a Claude, so discount my read on that one). Fading: the legacy ape/GTA coins (GATO flat at $3k 5m on a $6.6M cap), BLOB with sellers leading at 41% buys, and ZLUSD, which scan shows at $565 5m and 34% buys after its first hour. The web's $34k ZLUSD figure disagrees with scan, so scan wins, and the brand-name impersonation is now the risk story. Setups to research, not buy yet: GTA6 only on a pullback that holds volume, with a stop below its launch low; WASTED6 and Stumpy if 5m volume clears $10k; Minimoon's $34k 5m on an $11k cap is roughly 3x its market cap, so it's a farm/bundle check before anything else. Holder, dev and bundle checks haven't run on any of these, so treat them as unverified, not verdicts. Not a quiet market: the movers are loud, just fresh and fragile.
 
 ## Moving most in its scans, last 30 min (1h volume)
-- GTA6: $422,061 1h vol, $239,673 mcap, +173% 1h  
-  CA `AnvhfTgZXdQk3vLmoUxDtYnTb7tpjQkXpFTHDXYFpump`
+- Stumpy: $343,318 1h vol, $91,009 mcap, +221% 1h  
+  CA `83GtPpfNSau1mtDZZ7Vx6YCf8gA5eBxniWCoDsvK2avy`
 - DOUG: $201,107 1h vol, $135,094 mcap, +200% 1h  
   CA `CRKqYn9bnEZaXK6K2uk627szTFjait52RXeY6CEnpump`
-- BLOB: $147,710 1h vol, $14,216,006 mcap, -2% 1h  
+- BLOB: $140,876 1h vol, $14,488,288 mcap, +1% 1h  
   CA `8s11PkgQt4ZzdZ7oo84hK5t9HG1EvdgAjcg4W7Lpump`
-- WASTED6: $124,497 1h vol, $70,042 mcap, +43% 1h  
-  CA `3wyRvbB6nFD7Y9cuozSXrUajZs1EoJxrcBCDBxwupump`
-- Pumpkin: $116,814 1h vol, $4,303 mcap, -85% 1h  
+- Pumpkin: $117,624 1h vol, $4,526 mcap, -84% 1h  
   CA `okUweUUY5DFGbxSCXSV6sH9neDArt5vJWNefnxKpump`
+- Stumpy: $113,854 1h vol, $11,168 mcap, +315% 1h  
+  CA `4rip7LeGrTfA8WwXUQYvuXc41YwsVhzHb5bRXhbupump`
