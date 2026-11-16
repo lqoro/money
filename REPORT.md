@@ -1,13 +1,13 @@
 # Trencher live report
 
-Updated 2026-11-16T17:42:55Z (paper trading, never real money)
+Updated 2026-11-16T17:58:00Z (paper trading, never real money)
 
 - Equity: $74.23 (-25.8% vs $100 start)
 - Closed trades: 22, 3 wins
 - Fees paid: $14.78 (axiom $2.81, network $9.18, pool $2.66), plus $4.15 lost to slippage
 - New trades: WATCH-ONLY (scans and decides, buys nothing)
-- Brain: subscription, claude-haiku-5-5 for routine calls, claude-opus-5-5 for the daily review; 351 routine calls and 0 plan-limit hits in 48h
-- Watch log: 89 coins being followed, 1774 filed, 0 would-buys (6h follow, sampled every 2 min)
+- Brain: subscription, claude-haiku-5-5 for routine calls, claude-opus-5-5 for the daily review; 352 routine calls and 0 plan-limit hits in 48h
+- Watch log: 89 coins being followed, 1780 filed, 0 would-buys (6h follow, sampled every 2 min)
 
 ## Scorecard (after fees)
 - 22 closed, 3 won (14%), net $-25.79
@@ -73,9 +73,21 @@ Updated 2026-11-16T17:42:55Z (paper trading, never real money)
   CA `H4gHnZ3NCU7Z9XQwGX6YYJNyieGEW8pqwGRUcdSxpump`
 
 ## Last scan
-- 17:42Z: 5 coins, 4 with pairs, 0 passed the market filters, 0 researched
+- 17:57Z: 3 coins, 2 with pairs, 0 passed the market filters, 0 researched
 
 ## Coins it looked at, and why it passed
+- 17:53Z GATO (DIP, $5,602,584 mcap, $6,505 5m vol): REJECT, Dev holds 2.7% (>1%) (V13, V17)  
+  CA `HsprHxBRgiVaQdRf3TnKNuZZtaX9JUSPgMFdAkk6pump`
+- 17:50Z COGE (FINAL_STRETCH, $27,659 mcap, $28,449 5m vol): PASS at conviction 4, PASS. Chasing spike at 5% off a 94% five-minute pump, 94.6% to bond, no higher low, no catalyst. (V1, V6)  
+  CA `GQjTPFGvSwJbLc3Qc5iW7aFbQhhxZicqWJWno46spump`
+- 17:49Z 👠 (DIP, $42,243 mcap, $4,479 5m vol): REJECT, Dip with fading attention is a falling knife, not a dip (5m at 0.51x the hour's pace, under 0.6x)  
+  CA `FYtY5KpMRBHSiCMAqkWWrY2GtNVXs1h8jubbnno7pump`
+- 17:49Z GTAHUB (MIGRATED, $126,683 mcap, $58,691 5m vol): REJECT, Dev holds 2.2% (>1%) (V13, V17)  
+  CA `2hg559PqkbnfaprUE3V5dSFAaDNjURnmvGs79kqepump`
+- 17:49Z MAYA (MIGRATED, $557,555 mcap, $118,043 5m vol): REJECT, Top 10 hold 50.1% ex-pool (>25%) (V13)  
+  CA `BEivETeJfF2tLkuTc5dNMcpMH6vGGcwtZchw1J3vpump`
+- 17:48Z GTA6IRL (no setup, $14,297 mcap, $2,062 5m vol): REJECT, No setup fits: not Final Stretch, not a migrated runner, not a healthy dip  
+  CA `3P2eu9tnwzyP7WbHagZ9XHnRoP2DaXVWoBo6Rq1Mpump`
 - 17:39Z CBUCKS (MIGRATED, $4,609,913 mcap, $2,059 5m vol): REJECT, Top 10 hold 26.1% ex-pool (>25%) (V13)  
   CA `DtcicPCKTKeAh7TDEzTym3hXeoHAoMiBdYJhMYxZpump`
 - 17:38Z XRL (DIP, $60,484 mcap, $6,020 5m vol): PASS at conviction 3, PASS. XRL is a 63%-off dip with no printed higher low, no catalyst and no story on the radar. It's a falling knife in an 11-copy vamp field (V1, V3, V6).  
@@ -84,35 +96,23 @@ Updated 2026-11-16T17:42:55Z (paper trading, never real money)
   CA `7RoB3BLkECUZNFuodX8ndCbLWCZYE2mu9wU1LeiZpump`
 - 17:29Z DSP (DIP, $982,313 mcap, $13,834 5m vol): REJECT, Dip with fading attention is a falling knife, not a dip (5m at 0.51x the hour's pace, under 0.6x)  
   CA `EsSzJa8xsyehSvVsNUy6t1KxMXgZYYaJKBAqyJxT3bid`
-- 17:21Z RESPECT (MIGRATED, $123,067 mcap, $4,504 5m vol): PASS at conviction 2, PASS. First resistance is 1.12x away, 5m flow is $4.5k under the $10k bar, and no higher low is printed. A 12-copy vamp field. (V1, V6)  
-  CA `BARobVaVawPxpjaHLsvrdLn2SpVJQDFYx4BY2R5Kpump`
-- 17:17Z MooManao (MIGRATED, $47,681 mcap, $26,156 5m vol): PASS at conviction 3, PASS: MooManao is 18 minutes old, 7% off its high after a +45% 5m candle, with a 14% single bundle cluster and no printed higher low. Blockers: chasing spike, too new, bundle cluster, split crowd (V1, V3, V6, V13).  
-  CA `4Mz1Fy65difgJE5zFaTpo82vqNqHsxMpQr9aaC9JoGGQ`
-- 17:05Z 100M (FINAL_STRETCH, $18,649 mcap, $31,372 5m vol): PASS at conviction 3, PASS: blocker "chasing spike". Two-minute-old pump.fun coin, up 116% on 5m with no higher low, and no X or website to check it against. Wait and see. (V1, V6, V13)  
-  CA `DBrxJiZDTNDHAoXYCR7kygbLnaPYKysYtvdMPukHpump`
-- 17:04Z MEE (MIGRATED, $58,503 mcap, $13,662 5m vol): PASS at conviction 3, PASS: chasing spike. MEE is at its high, up 41% on the last 5m at 5.8x its hourly pace, with no printed higher low. Wait for a retrace (V1, V6).  
-  CA `4r1ZJUx7iQtsVcM9NJz3DbqZfBAHLcb1EMCSasyapump`
-- 17:03Z 👠 (MIGRATED, $75,551 mcap, $16,134 5m vol): PASS at conviction 3, PASS: 👠 Shoe Store sits at its high (0.5% off), flow is under pace (0.64x hourly), and it's 54 minutes old in a 20-copy vamp field whose theme volume is 0.3x pace. Blocker: "chasing" (V1, V6, V13).  
-  CA `FYtY5KpMRBHSiCMAqkWWrY2GtNVXs1h8jubbnno7pump`
-- 16:58Z GATO (DIP, $5,572,524 mcap, $14,403 5m vol): REJECT, Dev holds 2.7% (>1%) (V13, V17)  
-  CA `HsprHxBRgiVaQdRf3TnKNuZZtaX9JUSPgMFdAkk6pump`
 
 ## What its skips did next (last 48h)
 A skip "ran" if the coin reached the first target (1.5x) from the skip price before a 20% drop, "dumped" if the drop came first. Sampled every 10 min, followed 6h.
-- too new / sniping: blocked 42, ran 6, dumped 35, flat 0, open 1 (saving losses: keep it)
-  - ran: Chick up to 1.66x  
-    CA `Dueav76X9spnoLomhM2jMkkWorVggbeWucLs3YLupump`
-  - ran: TOOLS up to 1.83x  
-    CA `9Ei1d97U7M8m4t3fof7c8MUECtmzgqbQCo81cGGzpump`
-  - ran: twert up to 1.81x  
-    CA `8WvWwttzaLfW1nbjx6wmYL5jozWpvy95WktAg5cipump`
-- top 10 over 25%: blocked 40, ran 6, dumped 28, flat 4, open 2 (saving losses: keep it)
+- top 10 over 25%: blocked 41, ran 6, dumped 28, flat 4, open 3 (saving losses: keep it)
   - ran: rockstar up to 1.95x  
     CA `9HFUEab7sompLDPTAaTGkryMNGbtBaFMhHMVpJEBpump`
   - ran: VI up to 1.71x  
     CA `4Dj8m9vWqu779F1KDBUttvXM8YFm7U92SDpvjBNKtEiB`
   - ran: ANT up to 1.52x  
     CA `BDPm9gPHCRyo2qjcRrYPsXexmbRwuuHQZo2qhhYXpump`
+- too new / sniping: blocked 41, ran 6, dumped 34, flat 0, open 1 (saving losses: keep it)
+  - ran: Chick up to 1.66x  
+    CA `Dueav76X9spnoLomhM2jMkkWorVggbeWucLs3YLupump`
+  - ran: TOOLS up to 1.83x  
+    CA `9Ei1d97U7M8m4t3fof7c8MUECtmzgqbQCo81cGGzpump`
+  - ran: twert up to 1.81x  
+    CA `8WvWwttzaLfW1nbjx6wmYL5jozWpvy95WktAg5cipump`
 - flow below pace: blocked 40, ran 5, dumped 31, flat 2, open 2 (saving losses: keep it)
   - ran: PASSED up to 1.73x  
     CA `3XaH8VPUaUegqmnkYA8PXCWqQqD8doqdsGGfZyoYpump`
@@ -120,7 +120,7 @@ A skip "ran" if the coin reached the first target (1.5x) from the skip price bef
     CA `BDPm9gPHCRyo2qjcRrYPsXexmbRwuuHQZo2qhhYXpump`
   - ran: ANT up to 1.58x  
     CA `7H2sHeLHyHR8jxENGmsqn7RxTkYZa4KwXvKYcoxBpump`
-- near the high / chasing: blocked 31, ran 7, dumped 24, flat 0, open 0 (saving losses: keep it)
+- near the high / chasing: blocked 32, ran 7, dumped 24, flat 0, open 1 (saving losses: keep it)
   - ran: penny up to 1.6x  
     CA `5gmCPpuktJ7Svjgr4PPJBTosAFKB8K6Z45EGfSUmpump`
   - ran: WIGGLES up to 1.69x  
@@ -134,9 +134,16 @@ A skip "ran" if the coin reached the first target (1.5x) from the skip price bef
     CA `AiQUqe4zjiDssth2FsCoeQVaGtCtHYyKGX8U52rWpump`
   - ran: FUTA up to 2.77x  
     CA `FxoXV4C8DTSYeg5dSXrEsr45zzr8tpNbsrpoiZ8Kpump`
-- falling knife (code): blocked 13, ran 1, dumped 11, flat 0, open 1 (saving losses: keep it)
+- falling knife (code): blocked 14, ran 1, dumped 11, flat 0, open 2 (saving losses: keep it)
   - ran: BigP up to 1.57x  
     CA `CY254o6VPaJnTiY5uuKUB8xDjSgykC6xtoLoC3kpump`
+- other: blocked 13, ran 4, dumped 7, flat 0, open 2 (mixed)
+  - ran: TaoTao up to 1.53x  
+    CA `G1KuEMuLrxWynFddQVnpdkQAhYFBwNJiuz1Lv7d9pump`
+  - ran: SI up to 1.94x  
+    CA `H2irVtPLfKoBJ69itZmhsedSPwBUTaubmUavc6Uapump`
+  - ran: BLOB up to 1.66x  
+    CA `8s11PkgQt4ZzdZ7oo84hK5t9HG1EvdgAjcg4W7Lpump`
 - falling knife / no higher low: blocked 13, ran 3, dumped 5, flat 3, open 2 (mixed)
   - ran: CateGiving up to 1.57x  
     CA `5XasjCnMPTczL9VZTDHgbK5sQzwkjnu41oLeHf5Wpump`
@@ -144,13 +151,6 @@ A skip "ran" if the coin reached the first target (1.5x) from the skip price bef
     CA `8cWGfiHyKqxgLrLtkPt2NnLkSUV2JbcLBf4RN6Fapump`
   - ran: GOAT up to 1.61x  
     CA `D7iafdwzzpB7tisqQqT5T9aRrYPtHLqzwxhnLoWJgoat`
-- other: blocked 12, ran 4, dumped 7, flat 0, open 1 (mixed)
-  - ran: TaoTao up to 1.53x  
-    CA `G1KuEMuLrxWynFddQVnpdkQAhYFBwNJiuz1Lv7d9pump`
-  - ran: SI up to 1.94x  
-    CA `H2irVtPLfKoBJ69itZmhsedSPwBUTaubmUavc6Uapump`
-  - ran: BLOB up to 1.66x  
-    CA `8s11PkgQt4ZzdZ7oo84hK5t9HG1EvdgAjcg4W7Lpump`
 - thin 5m volume: blocked 11, ran 2, dumped 8, flat 0, open 1 (saving losses: keep it)
   - ran: SENDER up to 1.58x  
     CA `5peJLZQnBkXtydYYMunbT4QutSyd9eA474MqxcmEpump`
@@ -197,13 +197,13 @@ Nothing shows a positive edge after costs. Over 309 settled coins, every setup l
 The trenches are trading fresh pump.fun launches with jokey names, and the ones with real 5-minute volume and more buyers than sellers fall into two lanes: GTA-named launches and silly object/animal names. GTA is live at the top with 100M ("Speedrun to 100M Before GTAVI", $18.9k cap, $35.6k 5m, 66% buys, minutes old) and MEE ("GTA Macro Economy Engine", $58.5k cap, $13.7k 5m, 60% buys), while GTA6 (zero 5m volume) and GTAC (17% buys, -82% 1h) are fading copies, so the original matters and vamps are already showing. Object/animal names are also rising: SHOE STORE ($75.9k cap, $14k 5m, 58% buys, +74% 1h) and MooManao ($45.6k cap, $27k 5m, 57% buys, +65% 1h), with SNUT ($24.9k cap, $7.6k 5m, 64% buys, -42% 1h) under the $10k volume bar. Fading: old tokens on thin flow (BLOB, bill, VI at 42% buys on $623 5m) and dead launches (SURVIVE, zero 5m). The setups to research are MooManao, SHOE STORE and MEE under the MIGRATED lane (age under 12h, cap over $30k, 5m over $10k), with MEE only if the original GTA token is found and it isn't a vamp; 100M is a bonding-curve token far from bond, so FINAL_STRETCH only if it stays organic. Crawler numbers for MEE, GTAC and hello don't match scan, so I ignored them. Holder, dev and bundle checks are unverified on every one of these and have to run before any buy. Not financial advice; paper only.
 
 ## Moving most in its scans, last 30 min (1h volume)
-- SNUT: $422,709 1h vol, $22,599 mcap, -64% 1h  
-  CA `88ZWKeNqsNuryefmk1uT9baccba77aet6ge3rUpEpump`
 - DSP: $326,529 1h vol, $1,008,478 mcap, +3932% 1h  
   CA `EsSzJa8xsyehSvVsNUy6t1KxMXgZYYaJKBAqyJxT3bid`
-- MooManao: $191,427 1h vol, $45,554 mcap, +65% 1h  
-  CA `4Mz1Fy65difgJE5zFaTpo82vqNqHsxMpQr9aaC9JoGGQ`
-- UNVAMP: $52,305 1h vol, $6,784 mcap, +211% 1h  
-  CA `2piU1dk1rfWDFbaxHDivYeTqsXxBugj4t6ZRkcXrpump`
-- BLOB: $46,658 1h vol, $15,956,482 mcap, +11% 1h  
-  CA `8s11PkgQt4ZzdZ7oo84hK5t9HG1EvdgAjcg4W7Lpump`
+- SNUT: $213,323 1h vol, $15,823 mcap, -84% 1h  
+  CA `88ZWKeNqsNuryefmk1uT9baccba77aet6ge3rUpEpump`
+- GTAHUB: $133,561 1h vol, $126,683 mcap, +287% 1h  
+  CA `2hg559PqkbnfaprUE3V5dSFAaDNjURnmvGs79kqepump`
+- MAYA: $118,043 1h vol, $557,555 mcap, +1317% 1h  
+  CA `BEivETeJfF2tLkuTc5dNMcpMH6vGGcwtZchw1J3vpump`
+- 👠: $102,617 1h vol, $42,367 mcap, -44% 1h  
+  CA `FYtY5KpMRBHSiCMAqkWWrY2GtNVXs1h8jubbnno7pump`
