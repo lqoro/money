@@ -1,13 +1,13 @@
 # Trencher live report
 
-Updated 2026-11-16T01:02:20Z (paper trading, never real money)
+Updated 2026-11-16T01:17:36Z (paper trading, never real money)
 
 - Equity: $74.23 (-25.8% vs $100 start)
 - Closed trades: 22, 3 wins
 - Fees paid: $14.78 (axiom $2.81, network $9.18, pool $2.66), plus $4.15 lost to slippage
 - New trades: WATCH-ONLY (scans and decides, buys nothing)
-- Brain: subscription, claude-haiku-5-5 for routine calls, claude-opus-5-5 for the daily review; 190 routine calls and 0 plan-limit hits in 48h
-- Watch log: 134 coins being followed, 1501 filed, 0 would-buys (6h follow, sampled every 2 min)
+- Brain: subscription, claude-haiku-5-5 for routine calls, claude-opus-5-5 for the daily review; 194 routine calls and 0 plan-limit hits in 48h
+- Watch log: 130 coins being followed, 1508 filed, 0 would-buys (6h follow, sampled every 2 min)
 
 ## Scorecard (after fees)
 - 22 closed, 3 won (14%), net $-25.79
@@ -73,9 +73,15 @@ Updated 2026-11-16T01:02:20Z (paper trading, never real money)
   CA `H4gHnZ3NCU7Z9XQwGX6YYJNyieGEW8pqwGRUcdSxpump`
 
 ## Last scan
-- 01:01Z: 7 coins, 7 with pairs, 1 passed the market filters, 1 researched
+- 01:17Z: 6 coins, 6 with pairs, 0 passed the market filters, 0 researched
 
 ## Coins it looked at, and why it passed
+- 01:14Z FiveM (MIGRATED, $32,391 mcap, $3,815 5m vol): PASS at conviction 2, PASS: 80% off the high is past the dip band, the theme is fading, and there's no catalyst or printed higher low. Blocker: "dead story" plus "no higher low" (V1, V6, V13).  
+  CA `8dbLrW3ZTTu4qeAKYYBjuuSSAPhMvABwUes3eWoXpump`
+- 01:13Z BAWSAQ (MIGRATED, $850,808 mcap, $17,556 5m vol): PASS at conviction 2, PASS: BAWSAQ is 7.9% off its high, 5m flow is at 0.28x pace, and it is up 26% in 5 minutes. Chasing a spike on a crowded ticker (V1, V6, V13).  
+  CA `DTJbHA1ntTzsp6FXKRhwwD4E3CLcd5trkWhSV8ivpump`
+- 01:08Z Anthropig (MIGRATED, $1,237,631 mcap, $4,728 5m vol): PASS at conviction 3, PASS: chasing. Anthropig is 5% off a peak printed six minutes ago, with 5m flow at 0.85x pace, no higher low, and the prior high only 1.06x away. (V1, V6)  
+  CA `2NUaS6Gfrm5rBuPBn7svHka8t33SrSkpXGQiUvZLpump`
 - 01:01Z nma (DIP, $46,523 mcap, $3,955 5m vol): REJECT, Dip with fading attention is a falling knife, not a dip (5m at 0.27x the hour's pace, under 0.6x)  
   CA `Fvv62MhgjrXpvXmKcLci2HoiCAxFmSkUm1Niamvipump`
 - 00:59Z AI (DIP, $131,955 mcap, $5,342 5m vol): REJECT, Dip with fading attention is a falling knife, not a dip (5m at 0.45x the hour's pace, under 0.6x)  
@@ -90,30 +96,24 @@ Updated 2026-11-16T01:02:20Z (paper trading, never real money)
   CA `6XGN3oMrjLuWvDyvHL1VZNNPN5d7dTspD9N7LKjAnime`
 - 00:46Z CYBERDACITY (MIGRATED, $132,615 mcap, $7,379 5m vol): PASS at conviction 3, PASS. Near the high, flow under pace, saw-tooth candles, and the site doesn't show this CA. Blocked on "chasing" and "flow below pace" (V1, V6, V13).  
   CA `C5X8tVbt8cGw7iaaEuAVGTxFVZ4uSjscmiUbVpVwpump`
-- 00:40Z GTAVI (DIP, $92,399 mcap, $3,412 5m vol): PASS at conviction 3, PASS. Eleven coins share the GTA ticker, and this one is not the leader. FiveM has 12x its 5m flow, and the chart is a saw-tooth with no higher low (V6, V13).  
-  CA `HQjXLbFPkpJP1BmF55DgXj9F6614FURvGLKuyCZQpump`
-- 00:39Z UNITY (FINAL_STRETCH, $14,767 mcap, $5,240 5m vol): PASS at conviction 3, PASS: UNITY is a 97-holder pre-bond coin with $5.2k 5m volume, no live story, and a website that says the contract address is "coming soon." Blockers: thin flow, no narrative, unverified CA. (V1, V6, V13)  
-  CA `GD6MboptxbHBspASr5PWozgNDrZxmxJ8JpBBD8Vpump`
-- 00:39Z SAME (MIGRATED, $47,671 mcap, $16,070 5m vol): PASS at conviction 3, PASS: chasing spike. SAME is +51% on 5m with no printed higher low, inside a 26-copy vamp field whose theme is at 0.2x pace (blocker: chasing spike, split crowd). (V1, V3, V6)  
-  CA `5qRxJ9W45zUrUtGGDneysiRBKZaceNriEqVUei1Rpump`
 
 ## What its skips did next (last 48h)
 A skip "ran" if the coin reached the first target (1.5x) from the skip price before a 20% drop, "dumped" if the drop came first. Sampled every 10 min, followed 6h.
-- flow below pace: blocked 33, ran 4, dumped 24, flat 3, open 2 (saving losses: keep it)
+- flow below pace: blocked 34, ran 3, dumped 24, flat 3, open 4 (saving losses: keep it)
   - ran: PASSED up to 1.73x  
     CA `3XaH8VPUaUegqmnkYA8PXCWqQqD8doqdsGGfZyoYpump`
   - ran: ANT up to 1.52x  
     CA `BDPm9gPHCRyo2qjcRrYPsXexmbRwuuHQZo2qhhYXpump`
-  - ran: Anthropig up to 1.53x  
-    CA `2NUaS6Gfrm5rBuPBn7svHka8t33SrSkpXGQiUvZLpump`
-- top 10 over 25%: blocked 31, ran 6, dumped 18, flat 2, open 5 (saving losses: keep it)
+  - ran: ANT up to 1.58x  
+    CA `7H2sHeLHyHR8jxENGmsqn7RxTkYZa4KwXvKYcoxBpump`
+- top 10 over 25%: blocked 30, ran 6, dumped 18, flat 2, open 4 (saving losses: keep it)
   - ran: rockstar up to 1.95x  
     CA `9HFUEab7sompLDPTAaTGkryMNGbtBaFMhHMVpJEBpump`
   - ran: VI up to 1.71x  
     CA `4Dj8m9vWqu779F1KDBUttvXM8YFm7U92SDpvjBNKtEiB`
   - ran: ANT up to 1.52x  
     CA `BDPm9gPHCRyo2qjcRrYPsXexmbRwuuHQZo2qhhYXpump`
-- too new / sniping: blocked 26, ran 7, dumped 19, flat 0, open 0 (saving losses: keep it)
+- too new / sniping: blocked 25, ran 6, dumped 19, flat 0, open 0 (saving losses: keep it)
   - ran: Chick up to 1.66x  
     CA `Dueav76X9spnoLomhM2jMkkWorVggbeWucLs3YLupump`
   - ran: TOOLS up to 1.83x  
@@ -127,13 +127,13 @@ A skip "ran" if the coin reached the first target (1.5x) from the skip price bef
     CA `AiQUqe4zjiDssth2FsCoeQVaGtCtHYyKGX8U52rWpump`
   - ran: FUTA up to 2.77x  
     CA `FxoXV4C8DTSYeg5dSXrEsr45zzr8tpNbsrpoiZ8Kpump`
-- near the high / chasing: blocked 17, ran 4, dumped 13, flat 0, open 0 (saving losses: keep it)
+- near the high / chasing: blocked 17, ran 3, dumped 13, flat 0, open 1 (saving losses: keep it)
   - ran: penny up to 1.6x  
     CA `5gmCPpuktJ7Svjgr4PPJBTosAFKB8K6Z45EGfSUmpump`
-  - ran: Anthropig up to 1.53x  
-    CA `2NUaS6Gfrm5rBuPBn7svHka8t33SrSkpXGQiUvZLpump`
   - ran: WIGGLES up to 1.69x  
     CA `2kWx47CUrcXtzptFNnbSXKq3vo1ebqyLBhRytKRGpump`
+  - ran: Bustas up to 1.75x  
+    CA `9rTgs58B3p11vXekTTgVYtv8vKxQ6oSoZFXPy4onpump`
 - other: blocked 10, ran 3, dumped 4, flat 0, open 3 (mixed)
   - ran: TaoTao up to 1.53x  
     CA `G1KuEMuLrxWynFddQVnpdkQAhYFBwNJiuz1Lv7d9pump`
@@ -141,7 +141,7 @@ A skip "ran" if the coin reached the first target (1.5x) from the skip price bef
     CA `H2irVtPLfKoBJ69itZmhsedSPwBUTaubmUavc6Uapump`
   - ran: APED up to 1.83x  
     CA `ATLqiQSDCMCBUHjrNX4G5HushJuxDbZSN4QkKVT7pump`
-- falling knife (code): blocked 9, ran 1, dumped 5, flat 0, open 3 (saving losses: keep it)
+- falling knife (code): blocked 9, ran 1, dumped 6, flat 0, open 2 (saving losses: keep it)
   - ran: BigP up to 1.57x  
     CA `CY254o6VPaJnTiY5uuKUB8xDjSgykC6xtoLoC3kpump`
 - falling knife / no higher low: blocked 9, ran 2, dumped 3, flat 3, open 1 (mixed)
@@ -194,16 +194,16 @@ Nothing shows a positive after-cost edge. Across all 93 settled coins the simple
 - [2026-11-02 20:25] I expected Slingoor, a clean MIGRATED leader with $25k of 5m flow at pace and a 0.77 buy share, to retest its $408k high from $304k. It never went green (0.98x peak) and hit the -20% stop in 2 minutes, a -$2.86 probe. My own thesis admitted there was no printed higher low after a peak only 6 minutes old, so this confirms the money-shape rule: buy share and flow are not structure (V1, V6). Next time a MIGRATED pullback with no higher low above the hourly low is a PASS with blocker "no higher low", not a probe. This is one loss, so it adds no new ban beyond the rule I already have.
 
 ## Meta right now
-The live meta from scan_movers is fresh pump.fun launches with joke, meme and animal names, and it is moving fast, with several runners already down 90%+. The hottest flow is CYBERDACITY (0.5h old, $131k cap, $12.4k 5m, 76% buys) and WANTED (0.1h old, $67k cap, $26k 5m, 62% buys). Animals are mixed: BigP "Patrick the Bunny" is +337% on 47% buys, while WIGGLES has $2.2k 5m and 41% buys. GTA names are fading: GTAVI has $7k 5m and 55% buys after +188%, GATO is a 2,000h-old $7.5M coin that is flat, and the rest are dead. Research only, no entries yet: CYBERDACITY and WANTED as probe-size candidates after the holder, dev and bundle checks, with stops where the thesis breaks; ANIME ($60k, $8.7k 5m, 60% buys) is a watch. The crawler's TITTYVERSE ($162k) and Retire ($233k) figures don't match the scan (both about $1.4k and -99%), so I'm ignoring that summary. Nothing here is a hack-named coin, and the Binance and North Korea headlines are noise. Paper only, not advice.
+The meta in the trenches right now is AI-lab name plays, with cat and animal jokes fading. AI ("Anthropic Inu", $134k cap, $5.8k 5m, 86% buys) and Anthropig ($1.26M, 7h old, $5.2k 5m, 66% buys) show the cleanest buyer flow, and nema (+38% 1h, 61% buys) rides the same name-pun energy. Animals are mixed: GOAT is up 54% in an hour on only 39% buys, Patrick the Bunny is down 50% after its run, and GATO is a 2,000h-old $7M coin that's flat, so the cat/animal launch style is fading. CYBERDACITY ($133k, $7.4k 5m, 73% buys, +16% 1h) is the one tech-themed runner and my best probe candidate at conviction about 5, pending holder, dev and bundle checks, with a stop where it loses its buyers. No coin clears the $10k 5m bar yet, so this is a thin tape rather than a go; the Binance-hack and North Korea headlines are noise, hack-named coins stay blocked, and I ignored the crawler's WANTED and TITTYVERSE/Retire figures because they don't match the scan.
 
 ## Moving most in its scans, last 30 min (1h volume)
-- SAME: $175,068 1h vol, $47,671 mcap, +57% 1h  
-  CA `5qRxJ9W45zUrUtGGDneysiRBKZaceNriEqVUei1Rpump`
+- BAWSAQ: $750,406 1h vol, $883,557 mcap, +213% 1h  
+  CA `DTJbHA1ntTzsp6FXKRhwwD4E3CLcd5trkWhSV8ivpump`
+- PercPools: $200,138 1h vol, $12,414 mcap, -57% 1h  
+  CA `EwLANuSwR7z9QNTXGwdsW7mFzXPiaucUBZjiXfw6pump`
 - nma: $174,897 1h vol, $45,222 mcap, +38% 1h  
   CA `Fvv62MhgjrXpvXmKcLci2HoiCAxFmSkUm1Niamvipump`
 - AI: $142,653 1h vol, $134,291 mcap, +19% 1h  
   CA `GgDHtSGcXn5YrADnpsQSVHFAa5xLwVEuD7FWeRgvpump`
-- CYBERDACITY: $141,630 1h vol, $132,615 mcap, +16% 1h  
-  CA `C5X8tVbt8cGw7iaaEuAVGTxFVZ4uSjscmiUbVpVwpump`
-- WAGMI: $114,323 1h vol, $18,601 mcap, +410% 1h  
-  CA `HekGWhw6s7r8bC5F3ieeaqfV9UDu2JQMkpJCYJ5rpump`
+- ANIME: $102,877 1h vol, $30,390 mcap, -11% 1h  
+  CA `6XGN3oMrjLuWvDyvHL1VZNNPN5d7dTspD9N7LKjAnime`
