@@ -1,13 +1,13 @@
 # Trencher live report
 
-Updated 2026-11-16T19:44:01Z (paper trading, never real money)
+Updated 2026-11-16T19:59:10Z (paper trading, never real money)
 
 - Equity: $74.23 (-25.8% vs $100 start)
 - Closed trades: 22, 3 wins
 - Fees paid: $14.78 (axiom $2.81, network $9.18, pool $2.66), plus $4.15 lost to slippage
 - New trades: WATCH-ONLY (scans and decides, buys nothing)
-- Brain: subscription, claude-haiku-5-5 for routine calls, claude-opus-5-5 for the daily review; 369 routine calls and 1 plan-limit hits in 48h
-- Watch log: 100 coins being followed, 1805 filed, 0 would-buys (6h follow, sampled every 2 min)
+- Brain: subscription, claude-haiku-5-5 for routine calls, claude-opus-5-5 for the daily review; 371 routine calls and 1 plan-limit hits in 48h
+- Watch log: 98 coins being followed, 1810 filed, 0 would-buys (6h follow, sampled every 2 min)
 
 ## Scorecard (after fees)
 - 22 closed, 3 won (14%), net $-25.79
@@ -73,9 +73,15 @@ Updated 2026-11-16T19:44:01Z (paper trading, never real money)
   CA `H4gHnZ3NCU7Z9XQwGX6YYJNyieGEW8pqwGRUcdSxpump`
 
 ## Last scan
-- 19:43Z: 7 coins, 7 with pairs, 1 passed the market filters, 1 researched
+- 19:58Z: 2 coins, 2 with pairs, 0 passed the market filters, 0 researched
 
 ## Coins it looked at, and why it passed
+- 19:56Z VICECAT (MIGRATED, $267,302 mcap, $8,677 5m vol): PASS at conviction 3, PASS: flow below pace (5m at 0.4x the hourly average), not the theme leader, and no printed higher low. Wait for it. (V1, V6)  
+  CA `HsWkLse36Aog3pK8n6cNHRG6s1kc9KVgz5VNMBcRpump`
+- 19:53Z BANK (DIP, $75,080 mcap, $107,911 5m vol): REJECT, Bundles: 3 linked wallet cluster(s) hold 22.7% of supply (>20%) (V17)  
+  CA `667tvUtaFVbesmSZDYCgQzYkJW4y36PdbmacRZGipump`
+- 19:47Z FPT (FINAL_STRETCH, $16,903 mcap, $10,607 5m vol): PASS at conviction 2, PASS: top 10 at 23.9% (strong-warning zone), a -22% 5m candle on a 40-minute-old bonding coin, and no catalyst. Falling knife (V6, V13).  
+  CA `71djmB9Fnxxg9VHwt7cWPLfMytz81TCPnR1hppAbpump`
 - 19:43Z RIG (FINAL_STRETCH, $24,325 mcap, $19,824 5m vol): PASS at conviction 3, PASS. Falling knife with no story behind it. RIG is down 37% in 5 minutes, has no printed higher low, and its theme is trading below pace. Blocker: no narrative. (V1, V6)  
   CA `7RyCoc1K6jhfqf6hkB1xjdff4wcekXtcF8HYxgQcpump`
 - 19:42Z SNUT (DIP, $104,586 mcap, $5,049 5m vol): PASS at conviction 3, PASS: SNUT has no catalyst and no story left on the radar. A bottom buy with nothing behind it is a falling knife. Blocker "dead story" (V1, V6).  
@@ -90,16 +96,10 @@ Updated 2026-11-16T19:44:01Z (paper trading, never real money)
   CA `FJbyUWahiRMtLnExTDJ1HzhKHjJzMTbZJL27S2NVpump`
 - 19:23Z DACAT (DIP, $142,044 mcap, $13,662 5m vol): REJECT, Top 10 hold 27.3% ex-pool (>25%) (V13)  
   CA `8AzrbaGjACy5VZ4gyjaAGAueCYpvpUWKwpyeGp4wpump`
-- 19:20Z Trader (DIP, $252,344 mcap, $91,820 5m vol): PASS at conviction 2, PASS: 23 minutes old, a 20-copy same-name vamp field, no printed higher low and no catalyst. The dip is real, the structure isn't (V1, V6, V13).  
-  CA `7TnXXR1ytJ9PZDxgSA8VwbyKmEWZmiA2YAn55YyVpump`
-- 19:19Z DIGS (MIGRATED, $219,687 mcap, $2,056 5m vol): REJECT, Bundles: 10 linked wallet cluster(s) hold 100.0% of supply (>20%) (V17)  
-  CA `9QT8K685Hrae4k11dhGXirdtpfAaimExtyfwt8cPpump`
-- 19:15Z GTA (MIGRATED, $159,809 mcap, $14,076 5m vol): REJECT, Top 10 hold 38.6% ex-pool (>25%) (V13)  
-  CA `Ugp1hEeDscu8RXkzd2teXLACYB4wrxVEht5mghDpump`
 
 ## What its skips did next (last 48h)
 A skip "ran" if the coin reached the first target (1.5x) from the skip price before a 20% drop, "dumped" if the drop came first. Sampled every 10 min, followed 6h.
-- flow below pace: blocked 46, ran 5, dumped 35, flat 2, open 4 (saving losses: keep it)
+- flow below pace: blocked 47, ran 5, dumped 37, flat 2, open 3 (saving losses: keep it)
   - ran: PASSED up to 1.73x  
     CA `3XaH8VPUaUegqmnkYA8PXCWqQqD8doqdsGGfZyoYpump`
   - ran: ANT up to 1.52x  
@@ -127,7 +127,7 @@ A skip "ran" if the coin reached the first target (1.5x) from the skip price bef
     CA `2kWx47CUrcXtzptFNnbSXKq3vo1ebqyLBhRytKRGpump`
   - ran: Bustas up to 1.75x  
     CA `9rTgs58B3p11vXekTTgVYtv8vKxQ6oSoZFXPy4onpump`
-- RugCheck danger: blocked 31, ran 9, dumped 20, flat 2, open 0 (saving losses: keep it)
+- RugCheck danger: blocked 30, ran 8, dumped 20, flat 2, open 0 (saving losses: keep it)
   - ran: Ivy up to 1.88x  
     CA `DxNF3Qxd8XeUBdz7ReRdoiFzRmNDKbSz4c2oA7aRpump`
   - ran: SI up to 1.93x  
@@ -137,6 +137,13 @@ A skip "ran" if the coin reached the first target (1.5x) from the skip price bef
 - falling knife (code): blocked 15, ran 1, dumped 12, flat 0, open 2 (saving losses: keep it)
   - ran: BigP up to 1.57x  
     CA `CY254o6VPaJnTiY5uuKUB8xDjSgykC6xtoLoC3kpump`
+- falling knife / no higher low: blocked 15, ran 3, dumped 8, flat 3, open 1 (saving losses: keep it)
+  - ran: CateGiving up to 1.57x  
+    CA `5XasjCnMPTczL9VZTDHgbK5sQzwkjnu41oLeHf5Wpump`
+  - ran: Nyajira up to 1.52x  
+    CA `8cWGfiHyKqxgLrLtkPt2NnLkSUV2JbcLBf4RN6Fapump`
+  - ran: GOAT up to 1.61x  
+    CA `D7iafdwzzpB7tisqQqT5T9aRrYPtHLqzwxhnLoWJgoat`
 - other: blocked 14, ran 5, dumped 8, flat 0, open 1 (mixed)
   - ran: TaoTao up to 1.53x  
     CA `G1KuEMuLrxWynFddQVnpdkQAhYFBwNJiuz1Lv7d9pump`
@@ -144,19 +151,12 @@ A skip "ran" if the coin reached the first target (1.5x) from the skip price bef
     CA `H2irVtPLfKoBJ69itZmhsedSPwBUTaubmUavc6Uapump`
   - ran: BLOB up to 1.66x  
     CA `8s11PkgQt4ZzdZ7oo84hK5t9HG1EvdgAjcg4W7Lpump`
-- falling knife / no higher low: blocked 14, ran 3, dumped 7, flat 3, open 1 (saving losses: keep it)
-  - ran: CateGiving up to 1.57x  
-    CA `5XasjCnMPTczL9VZTDHgbK5sQzwkjnu41oLeHf5Wpump`
-  - ran: Nyajira up to 1.52x  
-    CA `8cWGfiHyKqxgLrLtkPt2NnLkSUV2JbcLBf4RN6Fapump`
-  - ran: GOAT up to 1.61x  
-    CA `D7iafdwzzpB7tisqQqT5T9aRrYPtHLqzwxhnLoWJgoat`
 - thin 5m volume: blocked 12, ran 2, dumped 9, flat 1, open 0 (saving losses: keep it)
   - ran: SENDER up to 1.58x  
     CA `5peJLZQnBkXtydYYMunbT4QutSyd9eA474MqxcmEpump`
   - ran: UNITY up to 1.66x  
     CA `GD6MboptxbHBspASr5PWozgNDrZxmxJ8JpBBD8Vpump`
-- bundles over the line: blocked 10, ran 1, dumped 7, flat 1, open 1 (saving losses: keep it)
+- bundles over the line: blocked 11, ran 1, dumped 7, flat 1, open 2 (saving losses: keep it)
   - ran: LEMON up to 1.51x  
     CA `Gi4cb3A4traf2rSkhJh6oqtLpPGwVhZonif1xAEEpump`
 
@@ -199,13 +199,13 @@ Nothing shows a positive edge after costs. Over 309 settled coins, every setup l
 The trenches are trading young animal coins and absurd internet-vibe jokes, not the Trump or Nvidia headlines. Most movers are under 1.5 hours old, sit between about $12k and $270k market cap, and show 55-76% buys, so this is not quiet. Animal names are rising: VICECAT (+453% 1h, $37k 5m, 76% buys) is strong, while DACAT (+298% 1h) has only 25% buys, so its flow is leaving. Crude and absurd jokes are rising too: GTA "Grand Tits of America" (+360% 1h, $13k 5m, 76% buys), plus Trader "in a world of KOLs" (+828% 1h, $79k 5m), with GTAMAS (+835%, $48k 5m) too new (0.1h) to call. Person- and dog-coded SI and LUCIA are dead at about $1.3k with zero 5m volume, and Bellacoin, COGE and SENT are flat or down; the crawler's readings for those coins don't match scan, so I ignore them. VICECAT and GTA are MIGRATED-style setups (pumpswap, cap over $30k, 5m over $10k), but both are up 350%+ in the hour, so only with a pullback plan, initials at 2x, a stop, and holder, dev and bundle checks still unverified; Trader is a KOL-name flip I'd only touch if its checks come back clean. Paper only, not financial advice.
 
 ## Moving most in its scans, last 30 min (1h volume)
-- Trader: $1,372,163 1h vol, $267,029 mcap, +828% 1h  
-  CA `7TnXXR1ytJ9PZDxgSA8VwbyKmEWZmiA2YAn55YyVpump`
+- BANK: $417,733 1h vol, $87,627 mcap, +91% 1h  
+  CA `667tvUtaFVbesmSZDYCgQzYkJW4y36PdbmacRZGipump`
 - ROCCO: $291,544 1h vol, $558,203 mcap, +1328% 1h  
   CA `FJbyUWahiRMtLnExTDJ1HzhKHjJzMTbZJL27S2NVpump`
+- VICECAT: $258,488 1h vol, $267,302 mcap, +87% 1h  
+  CA `HsWkLse36Aog3pK8n6cNHRG6s1kc9KVgz5VNMBcRpump`
 - RIG: $226,041 1h vol, $22,069 mcap, +517% 1h  
   CA `7RyCoc1K6jhfqf6hkB1xjdff4wcekXtcF8HYxgQcpump`
-- DACAT: $188,967 1h vol, $142,044 mcap, +298% 1h  
-  CA `8AzrbaGjACy5VZ4gyjaAGAueCYpvpUWKwpyeGp4wpump`
 - VICEDORD: $108,429 1h vol, $201,612 mcap, +519% 1h  
   CA `8q74mAMERS7PrychaRch2p1MK3JKoy4Y7BjJ7ucppump`
