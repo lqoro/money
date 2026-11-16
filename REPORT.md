@@ -1,13 +1,13 @@
 # Trencher live report
 
-Updated 2026-11-16T17:27:48Z (paper trading, never real money)
+Updated 2026-11-16T17:42:55Z (paper trading, never real money)
 
 - Equity: $74.23 (-25.8% vs $100 start)
 - Closed trades: 22, 3 wins
 - Fees paid: $14.78 (axiom $2.81, network $9.18, pool $2.66), plus $4.15 lost to slippage
 - New trades: WATCH-ONLY (scans and decides, buys nothing)
-- Brain: subscription, claude-haiku-5-5 for routine calls, claude-opus-5-5 for the daily review; 348 routine calls and 0 plan-limit hits in 48h
-- Watch log: 86 coins being followed, 1773 filed, 0 would-buys (6h follow, sampled every 2 min)
+- Brain: subscription, claude-haiku-5-5 for routine calls, claude-opus-5-5 for the daily review; 351 routine calls and 0 plan-limit hits in 48h
+- Watch log: 89 coins being followed, 1774 filed, 0 would-buys (6h follow, sampled every 2 min)
 
 ## Scorecard (after fees)
 - 22 closed, 3 won (14%), net $-25.79
@@ -73,9 +73,17 @@ Updated 2026-11-16T17:27:48Z (paper trading, never real money)
   CA `H4gHnZ3NCU7Z9XQwGX6YYJNyieGEW8pqwGRUcdSxpump`
 
 ## Last scan
-- 17:27Z: 3 coins, 2 with pairs, 0 passed the market filters, 0 researched
+- 17:42Z: 5 coins, 4 with pairs, 0 passed the market filters, 0 researched
 
 ## Coins it looked at, and why it passed
+- 17:39Z CBUCKS (MIGRATED, $4,609,913 mcap, $2,059 5m vol): REJECT, Top 10 hold 26.1% ex-pool (>25%) (V13)  
+  CA `DtcicPCKTKeAh7TDEzTym3hXeoHAoMiBdYJhMYxZpump`
+- 17:38Z XRL (DIP, $60,484 mcap, $6,020 5m vol): PASS at conviction 3, PASS. XRL is a 63%-off dip with no printed higher low, no catalyst and no story on the radar. It's a falling knife in an 11-copy vamp field (V1, V3, V6).  
+  CA `Fww6zaNKcjpJaB33JayvUzsofBUobX5JaHiuQBN1Jf9g`
+- 17:37Z ANGSTIPAN (MIGRATED, $40,822 mcap, $7,451 5m vol): PASS at conviction 2, PASS: three-minute-old copy in a 16-coin ANGSTIPAN field, top 10 at 16.1%, no printed higher low, and the project site doesn't show this CA. Blocker: too new. (V1, V6, V13)  
+  CA `7RoB3BLkECUZNFuodX8ndCbLWCZYE2mu9wU1LeiZpump`
+- 17:29Z DSP (DIP, $982,313 mcap, $13,834 5m vol): REJECT, Dip with fading attention is a falling knife, not a dip (5m at 0.51x the hour's pace, under 0.6x)  
+  CA `EsSzJa8xsyehSvVsNUy6t1KxMXgZYYaJKBAqyJxT3bid`
 - 17:21Z RESPECT (MIGRATED, $123,067 mcap, $4,504 5m vol): PASS at conviction 2, PASS. First resistance is 1.12x away, 5m flow is $4.5k under the $10k bar, and no higher low is printed. A 12-copy vamp field. (V1, V6)  
   CA `BARobVaVawPxpjaHLsvrdLn2SpVJQDFYx4BY2R5Kpump`
 - 17:17Z MooManao (MIGRATED, $47,681 mcap, $26,156 5m vol): PASS at conviction 3, PASS: MooManao is 18 minutes old, 7% off its high after a +45% 5m candle, with a 14% single bundle cluster and no printed higher low. Blockers: chasing spike, too new, bundle cluster, split crowd (V1, V3, V6, V13).  
@@ -88,25 +96,10 @@ Updated 2026-11-16T17:27:48Z (paper trading, never real money)
   CA `FYtY5KpMRBHSiCMAqkWWrY2GtNVXs1h8jubbnno7pump`
 - 16:58Z GATO (DIP, $5,572,524 mcap, $14,403 5m vol): REJECT, Dev holds 2.7% (>1%) (V13, V17)  
   CA `HsprHxBRgiVaQdRf3TnKNuZZtaX9JUSPgMFdAkk6pump`
-- 16:54Z XBOX (MIGRATED, $43,485 mcap, $4,675 5m vol): REJECT, Top 10 hold 26.0% ex-pool (>25%) (V13)  
-  CA `G75j1wKYFUMu5aMwwQ4vqj53rj9c4oedDJZsWM2Wpump`
-- 16:41Z NPC (MIGRATED, $32,501 mcap, $2,200 5m vol): REJECT, Top 10 hold 25.1% ex-pool (>25%) (V13)  
-  CA `8BmbUckiXerpVdzX9Pk7jjfq796mkf9Y6SWxXDWk7DzM`
-- 16:41Z VI (MIGRATED, $66,129 mcap, $3,498 5m vol): PASS at conviction 3, PASS: flow below pace (5m at 0.66x hourly), no breakout, and a 2-hour-old domain that says the contract is "coming soon". Farm-shaped vamp field. (V1, V6, V13)  
-  CA `3yjHj9s9MukEHr7b7qhMiUfH5fSUz97Eb5J8SRjdpump`
-- 16:38Z GTAMAS (FINAL_STRETCH, $19,676 mcap, $13,680 5m vol): PASS at conviction 3, PASS — 10x off its hourly low, +74% on the 5m, no higher low printed, and the GTA lane's 5m pace is 0.14x. Chasing a spike in a 24-copy field. (V1, V6)  
-  CA `BRCxwHaTtvtHCX7PL2XYEBhy7r9AFzwHPBc9mWHYMmpN`
 
 ## What its skips did next (last 48h)
 A skip "ran" if the coin reached the first target (1.5x) from the skip price before a 20% drop, "dumped" if the drop came first. Sampled every 10 min, followed 6h.
-- flow below pace: blocked 41, ran 5, dumped 32, flat 2, open 2 (saving losses: keep it)
-  - ran: PASSED up to 1.73x  
-    CA `3XaH8VPUaUegqmnkYA8PXCWqQqD8doqdsGGfZyoYpump`
-  - ran: ANT up to 1.52x  
-    CA `BDPm9gPHCRyo2qjcRrYPsXexmbRwuuHQZo2qhhYXpump`
-  - ran: ANT up to 1.58x  
-    CA `7H2sHeLHyHR8jxENGmsqn7RxTkYZa4KwXvKYcoxBpump`
-- too new / sniping: blocked 41, ran 6, dumped 34, flat 0, open 1 (saving losses: keep it)
+- too new / sniping: blocked 42, ran 6, dumped 35, flat 0, open 1 (saving losses: keep it)
   - ran: Chick up to 1.66x  
     CA `Dueav76X9spnoLomhM2jMkkWorVggbeWucLs3YLupump`
   - ran: TOOLS up to 1.83x  
@@ -120,7 +113,14 @@ A skip "ran" if the coin reached the first target (1.5x) from the skip price bef
     CA `4Dj8m9vWqu779F1KDBUttvXM8YFm7U92SDpvjBNKtEiB`
   - ran: ANT up to 1.52x  
     CA `BDPm9gPHCRyo2qjcRrYPsXexmbRwuuHQZo2qhhYXpump`
-- near the high / chasing: blocked 31, ran 7, dumped 23, flat 0, open 1 (saving losses: keep it)
+- flow below pace: blocked 40, ran 5, dumped 31, flat 2, open 2 (saving losses: keep it)
+  - ran: PASSED up to 1.73x  
+    CA `3XaH8VPUaUegqmnkYA8PXCWqQqD8doqdsGGfZyoYpump`
+  - ran: ANT up to 1.52x  
+    CA `BDPm9gPHCRyo2qjcRrYPsXexmbRwuuHQZo2qhhYXpump`
+  - ran: ANT up to 1.58x  
+    CA `7H2sHeLHyHR8jxENGmsqn7RxTkYZa4KwXvKYcoxBpump`
+- near the high / chasing: blocked 31, ran 7, dumped 24, flat 0, open 0 (saving losses: keep it)
   - ran: penny up to 1.6x  
     CA `5gmCPpuktJ7Svjgr4PPJBTosAFKB8K6Z45EGfSUmpump`
   - ran: WIGGLES up to 1.69x  
@@ -134,6 +134,16 @@ A skip "ran" if the coin reached the first target (1.5x) from the skip price bef
     CA `AiQUqe4zjiDssth2FsCoeQVaGtCtHYyKGX8U52rWpump`
   - ran: FUTA up to 2.77x  
     CA `FxoXV4C8DTSYeg5dSXrEsr45zzr8tpNbsrpoiZ8Kpump`
+- falling knife (code): blocked 13, ran 1, dumped 11, flat 0, open 1 (saving losses: keep it)
+  - ran: BigP up to 1.57x  
+    CA `CY254o6VPaJnTiY5uuKUB8xDjSgykC6xtoLoC3kpump`
+- falling knife / no higher low: blocked 13, ran 3, dumped 5, flat 3, open 2 (mixed)
+  - ran: CateGiving up to 1.57x  
+    CA `5XasjCnMPTczL9VZTDHgbK5sQzwkjnu41oLeHf5Wpump`
+  - ran: Nyajira up to 1.52x  
+    CA `8cWGfiHyKqxgLrLtkPt2NnLkSUV2JbcLBf4RN6Fapump`
+  - ran: GOAT up to 1.61x  
+    CA `D7iafdwzzpB7tisqQqT5T9aRrYPtHLqzwxhnLoWJgoat`
 - other: blocked 12, ran 4, dumped 7, flat 0, open 1 (mixed)
   - ran: TaoTao up to 1.53x  
     CA `G1KuEMuLrxWynFddQVnpdkQAhYFBwNJiuz1Lv7d9pump`
@@ -141,16 +151,6 @@ A skip "ran" if the coin reached the first target (1.5x) from the skip price bef
     CA `H2irVtPLfKoBJ69itZmhsedSPwBUTaubmUavc6Uapump`
   - ran: BLOB up to 1.66x  
     CA `8s11PkgQt4ZzdZ7oo84hK5t9HG1EvdgAjcg4W7Lpump`
-- falling knife (code): blocked 12, ran 1, dumped 11, flat 0, open 0 (saving losses: keep it)
-  - ran: BigP up to 1.57x  
-    CA `CY254o6VPaJnTiY5uuKUB8xDjSgykC6xtoLoC3kpump`
-- falling knife / no higher low: blocked 12, ran 3, dumped 5, flat 3, open 1 (mixed)
-  - ran: CateGiving up to 1.57x  
-    CA `5XasjCnMPTczL9VZTDHgbK5sQzwkjnu41oLeHf5Wpump`
-  - ran: Nyajira up to 1.52x  
-    CA `8cWGfiHyKqxgLrLtkPt2NnLkSUV2JbcLBf4RN6Fapump`
-  - ran: GOAT up to 1.61x  
-    CA `D7iafdwzzpB7tisqQqT5T9aRrYPtHLqzwxhnLoWJgoat`
 - thin 5m volume: blocked 11, ran 2, dumped 8, flat 0, open 1 (saving losses: keep it)
   - ran: SENDER up to 1.58x  
     CA `5peJLZQnBkXtydYYMunbT4QutSyd9eA474MqxcmEpump`
@@ -194,16 +194,16 @@ Nothing shows a positive edge after costs. Over 309 settled coins, every setup l
 - [2026-11-02 20:25] I expected Slingoor, a clean MIGRATED leader with $25k of 5m flow at pace and a 0.77 buy share, to retest its $408k high from $304k. It never went green (0.98x peak) and hit the -20% stop in 2 minutes, a -$2.86 probe. My own thesis admitted there was no printed higher low after a peak only 6 minutes old, so this confirms the money-shape rule: buy share and flow are not structure (V1, V6). Next time a MIGRATED pullback with no higher low above the hourly low is a PASS with blocker "no higher low", not a probe. This is one loss, so it adds no new ban beyond the rule I already have.
 
 ## Meta right now
-The meta is the fresh pump.fun lane: sub-3-hour tokens with jokey names, small caps and high 5m volume with more buyers than sellers. Two themes repeat across several coins: GTA-named launches (MEE, GTA Macro Economy Engine, $20k cap, $36.6k 5m, 54% buys, about 6 minutes old; GTAC, $13.8k cap, $5.7k 5m, 58% buys) and silly object/animal names (SHOE STORE 👠, $40k cap, $23.3k 5m, 56% buys, 12 minutes old; SNUT Space Squirrel, $44k cap, $18.8k 5m, 56% buys, +996% 1h; CYBERLEEK, $15k cap, 70% buys, but it's a person's name, so check who it is). Fading: the gift/holiday lane (XMAS -63% on $142 5m, GIFT -27% on $355 5m), dead launches (PAPERDEV with 0% buys, LEOSTAR with zero 5m), and older tokens on thin flow (BLOB, CBUCKS, WASTED, all under $2k 5m). The crawler's "memecoin hype is dying" headlines fit this: attention is thin, so these lanes last hours. Setups to research, not buys: SHOE STORE and SNUT for volume-to-cap, with MEE only if you can find the original GTA token and it isn't a vamp; hello ($148k cap, $11.3k 5m, 51% buys, 2.9h old) is the migrated-lane candidate. The crawler's VI, Mikan, NEOGO and BEB-style numbers don't match scan, so I'm ignoring them. Holder, dev and bundle checks still have to run on every one of these, and none is verified yet.
+The trenches are trading fresh pump.fun launches with jokey names, and the ones with real 5-minute volume and more buyers than sellers fall into two lanes: GTA-named launches and silly object/animal names. GTA is live at the top with 100M ("Speedrun to 100M Before GTAVI", $18.9k cap, $35.6k 5m, 66% buys, minutes old) and MEE ("GTA Macro Economy Engine", $58.5k cap, $13.7k 5m, 60% buys), while GTA6 (zero 5m volume) and GTAC (17% buys, -82% 1h) are fading copies, so the original matters and vamps are already showing. Object/animal names are also rising: SHOE STORE ($75.9k cap, $14k 5m, 58% buys, +74% 1h) and MooManao ($45.6k cap, $27k 5m, 57% buys, +65% 1h), with SNUT ($24.9k cap, $7.6k 5m, 64% buys, -42% 1h) under the $10k volume bar. Fading: old tokens on thin flow (BLOB, bill, VI at 42% buys on $623 5m) and dead launches (SURVIVE, zero 5m). The setups to research are MooManao, SHOE STORE and MEE under the MIGRATED lane (age under 12h, cap over $30k, 5m over $10k), with MEE only if the original GTA token is found and it isn't a vamp; 100M is a bonding-curve token far from bond, so FINAL_STRETCH only if it stays organic. Crawler numbers for MEE, GTAC and hello don't match scan, so I ignored them. Holder, dev and bundle checks are unverified on every one of these and have to run before any buy. Not financial advice; paper only.
 
 ## Moving most in its scans, last 30 min (1h volume)
-- SNUT: $544,356 1h vol, $24,880 mcap, -42% 1h  
+- SNUT: $422,709 1h vol, $22,599 mcap, -64% 1h  
   CA `88ZWKeNqsNuryefmk1uT9baccba77aet6ge3rUpEpump`
-- 👠: $304,345 1h vol, $75,902 mcap, +74% 1h  
-  CA `FYtY5KpMRBHSiCMAqkWWrY2GtNVXs1h8jubbnno7pump`
+- DSP: $326,529 1h vol, $1,008,478 mcap, +3932% 1h  
+  CA `EsSzJa8xsyehSvVsNUy6t1KxMXgZYYaJKBAqyJxT3bid`
 - MooManao: $191,427 1h vol, $45,554 mcap, +65% 1h  
   CA `4Mz1Fy65difgJE5zFaTpo82vqNqHsxMpQr9aaC9JoGGQ`
+- UNVAMP: $52,305 1h vol, $6,784 mcap, +211% 1h  
+  CA `2piU1dk1rfWDFbaxHDivYeTqsXxBugj4t6ZRkcXrpump`
 - BLOB: $46,658 1h vol, $15,956,482 mcap, +11% 1h  
   CA `8s11PkgQt4ZzdZ7oo84hK5t9HG1EvdgAjcg4W7Lpump`
-- GATO: $43,295 1h vol, $5,561,257 mcap, -7% 1h  
-  CA `HsprHxBRgiVaQdRf3TnKNuZZtaX9JUSPgMFdAkk6pump`
