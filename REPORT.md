@@ -1,13 +1,13 @@
 # Trencher live report
 
-Updated 2026-11-16T02:03:35Z (paper trading, never real money)
+Updated 2026-11-16T02:18:40Z (paper trading, never real money)
 
 - Equity: $74.23 (-25.8% vs $100 start)
 - Closed trades: 22, 3 wins
 - Fees paid: $14.78 (axiom $2.81, network $9.18, pool $2.66), plus $4.15 lost to slippage
 - New trades: WATCH-ONLY (scans and decides, buys nothing)
-- Brain: subscription, claude-haiku-5-5 for routine calls, claude-opus-5-5 for the daily review; 206 routine calls and 0 plan-limit hits in 48h
-- Watch log: 128 coins being followed, 1526 filed, 0 would-buys (6h follow, sampled every 2 min)
+- Brain: subscription, claude-haiku-5-5 for routine calls, claude-opus-5-5 for the daily review; 212 routine calls and 0 plan-limit hits in 48h
+- Watch log: 132 coins being followed, 1529 filed, 0 would-buys (6h follow, sampled every 2 min)
 
 ## Scorecard (after fees)
 - 22 closed, 3 won (14%), net $-25.79
@@ -73,47 +73,47 @@ Updated 2026-11-16T02:03:35Z (paper trading, never real money)
   CA `H4gHnZ3NCU7Z9XQwGX6YYJNyieGEW8pqwGRUcdSxpump`
 
 ## Last scan
-- 02:03Z: 4 coins, 4 with pairs, 0 passed the market filters, 0 researched
+- 02:17Z: 9 coins, 9 with pairs, 2 passed the market filters, 2 researched
 
 ## Coins it looked at, and why it passed
+- 02:18Z BUTTHOLE (DIP, $420,400 mcap, $2,362 5m vol): PASS at conviction 3, PASS. Butthole is down 50% from its $848k peak with no printed higher low, $2.4k of 5m volume, and a joke-coin meta the crawler calls dying. That's a falling knife, not a dip (V1, V6).  
+  CA `4B8CdHPZ8ng1CtMP2Jk2W8wGAwJ5nJnap1deVsz2pump`
+- 02:18Z CYBERDACITY (MIGRATED, $211,406 mcap, $5,925 5m vol): PASS at conviction 4, PASS — no breakout. CYBERDACITY is 18% off its $257k high, but it's down 9.5% on the 5m and its pixel-arcade story isn't on the radar. Clean holders don't make a meta. (V1, V6)  
+  CA `C5X8tVbt8cGw7iaaEuAVGTxFVZ4uSjscmiUbVpVwpump`
+- 02:11Z gtacoin (DIP, $351,292 mcap, $2,416 5m vol): REJECT, Bundles: 6 linked wallet cluster(s) hold 96.9% of supply (>20%) (V17)  
+  CA `DSKM3d518BBaQShSKqaqZcG1XMRf81UFB6a1eavhSTNK`
+- 02:08Z Nеil (MIGRATED, $66,106 mcap, $6,203 5m vol): PASS at conviction 3, PASS — 81% off its high, 5m flow at 0.05x the hourly pace, and not the leader of a 20-copy Neil/lemur field. Falling knife in a fading animal meta. (V1, V3, V6)  
+  CA `FwVsiYsWBDCs4QifGcDRGGxQ3xh6CYLnWWFLUDiupump`
+- 02:06Z FiveM (MIGRATED, $399,040 mcap, $5,303 5m vol): PASS at conviction 3, PASS: flow below pace (5m $5.3k at 0.66x hourly pace) and 23 copies in the GTA field, with the theme at 0.41x pace. Clean holders don't make a live tape (V1, V6, V13).  
+  CA `2YxbK7V6ZTKSxcavk3V4kFzdtZ4uywhhoyuSxapjpump`
+- 02:06Z Neil (DIP, $113,059 mcap, $15,780 5m vol): REJECT, Dip with fading attention is a falling knife, not a dip (5m at 0.20x the hour's pace, under 0.6x)  
+  CA `9iG6qBMgzzuYyq2kfXcAD49bkTFrpGp5gr1QHJiZMwoi`
+- 02:04Z XRL (MIGRATED, $32,496 mcap, $5,051 5m vol): PASS at conviction 2, PASS: blocker "too new" plus "chasing spike". XRL is about 4 minutes old, 12x its hourly pace, with no printed higher low and six same-ticker copies splitting the crowd. Wait. (V1, V6, V13)  
+  CA `Fww6zaNKcjpJaB33JayvUzsofBUobX5JaHiuQBN1Jf9g`
 - 01:58Z BAWSAQ (MIGRATED, $700,430 mcap, $1,970 5m vol): REJECT, 5m volume $1,970 is dead (<$2,000) (V1)  
   CA `DTJbHA1ntTzsp6FXKRhwwD4E3CLcd5trkWhSV8ivpump`
 - 01:58Z Socks (MIGRATED, $124,738 mcap, $2,265 5m vol): PASS at conviction 3, PASS: 75% off the high on a story nobody is telling, with 5m flow at $2.3k. Blockers: drawdown past the DIP range, no catalyst, first resistance too close (1.31x). (V1, V6, V13)  
   CA `FS1pBmZKp2Qw1atC64GoLamHstECAos9ot8bGPgDpump`
 - 01:53Z Anthropig (MIGRATED, $1,115,480 mcap, $3,440 5m vol): PASS at conviction 3, PASS — flow below pace: $3.4k on the 5m against a $10k bar and 0.63x its hourly pace. First resistance is only 1.17x away, and the parody AI name has 20 copies. (V1, V6)  
   CA `2NUaS6Gfrm5rBuPBn7svHka8t33SrSkpXGQiUvZLpump`
-- 01:46Z GTAVI (MIGRATED, $36,174 mcap, $2,302 5m vol): PASS at conviction 2, PASS: falling knife, 82% off the high, theme pace 0.28x, and a bigger same-name coin (FiveM) leads the field. (V1, V6, V13)  
-  CA `HQjXLbFPkpJP1BmF55DgXj9F6614FURvGLKuyCZQpump`
-- 01:46Z SENDER (FINAL_STRETCH, $14,989 mcap, $3,321 5m vol): PASS at conviction 2, PASS: SENDER is a generic-word name on a pump.fun curve at 51% bond, with a dead website, $3.3k of 5m volume and no story. It's a bottom buy with no catalyst. Blocker: "dead story / no catalyst".  
-  CA `5peJLZQnBkXtydYYMunbT4QutSyd9eA474MqxcmEpump`
-- 01:44Z AI (DIP, $129,003 mcap, $2,158 5m vol): REJECT, Dip with fading attention is a falling knife, not a dip (5m at 0.50x the hour's pace, under 0.6x)  
-  CA `GgDHtSGcXn5YrADnpsQSVHFAa5xLwVEuD7FWeRgvpump`
-- 01:41Z Nеil (MIGRATED, $90,245 mcap, $60,674 5m vol): REJECT, Bundles: 2 linked wallet cluster(s) hold 81.2% of supply (>20%) (V17)  
-  CA `Cxf4sN6MT7o3rMgS86JwFEnh6Fiisk5GDzxWHr4Ppump`
-- 01:39Z GOAT (MIGRATED, $55,186 mcap, $2,404 5m vol): PASS at conviction 3, PASS: GOAT is 38% off its high with no printed higher low, a fading animal meta, and $2.4k on the 5m. Blocker "no higher low" and "dead story". (V1, V6)  
-  CA `D7iafdwzzpB7tisqQqT5T9aRrYPtHLqzwxhnLoWJgoat`
-- 01:35Z GATO (DIP, $7,108,091 mcap, $5,956 5m vol): REJECT, Dev holds 2.7% (>1%) (V13, V17)  
-  CA `HsprHxBRgiVaQdRf3TnKNuZZtaX9JUSPgMFdAkk6pump`
-- 01:35Z SAME (MIGRATED, $48,768 mcap, $6,969 5m vol): PASS at conviction 3, PASS: flow below pace, no printed higher low, and a 23-copy "same" field with the theme at 0.12x its hourly pace. Bundles 18% across 5 clusters. Blocker: flow below pace. (V1, V3, V6)  
-  CA `5qRxJ9W45zUrUtGGDneysiRBKZaceNriEqVUei1Rpump`
 
 ## What its skips did next (last 48h)
 A skip "ran" if the coin reached the first target (1.5x) from the skip price before a 20% drop, "dumped" if the drop came first. Sampled every 10 min, followed 6h.
-- flow below pace: blocked 34, ran 4, dumped 23, flat 3, open 4 (saving losses: keep it)
+- flow below pace: blocked 34, ran 3, dumped 23, flat 3, open 5 (saving losses: keep it)
   - ran: PASSED up to 1.73x  
     CA `3XaH8VPUaUegqmnkYA8PXCWqQqD8doqdsGGfZyoYpump`
   - ran: ANT up to 1.52x  
     CA `BDPm9gPHCRyo2qjcRrYPsXexmbRwuuHQZo2qhhYXpump`
   - ran: ANT up to 1.58x  
     CA `7H2sHeLHyHR8jxENGmsqn7RxTkYZa4KwXvKYcoxBpump`
-- top 10 over 25%: blocked 29, ran 7, dumped 17, flat 3, open 2 (saving losses: keep it)
+- top 10 over 25%: blocked 28, ran 6, dumped 17, flat 3, open 2 (saving losses: keep it)
   - ran: rockstar up to 1.95x  
     CA `9HFUEab7sompLDPTAaTGkryMNGbtBaFMhHMVpJEBpump`
   - ran: VI up to 1.71x  
     CA `4Dj8m9vWqu779F1KDBUttvXM8YFm7U92SDpvjBNKtEiB`
   - ran: ANT up to 1.52x  
     CA `BDPm9gPHCRyo2qjcRrYPsXexmbRwuuHQZo2qhhYXpump`
-- too new / sniping: blocked 26, ran 5, dumped 20, flat 0, open 1 (saving losses: keep it)
+- too new / sniping: blocked 27, ran 6, dumped 20, flat 0, open 1 (saving losses: keep it)
   - ran: Chick up to 1.66x  
     CA `Dueav76X9spnoLomhM2jMkkWorVggbeWucLs3YLupump`
   - ran: TOOLS up to 1.83x  
@@ -134,19 +134,19 @@ A skip "ran" if the coin reached the first target (1.5x) from the skip price bef
     CA `2kWx47CUrcXtzptFNnbSXKq3vo1ebqyLBhRytKRGpump`
   - ran: Bustas up to 1.75x  
     CA `9rTgs58B3p11vXekTTgVYtv8vKxQ6oSoZFXPy4onpump`
-- falling knife (code): blocked 9, ran 1, dumped 7, flat 0, open 1 (saving losses: keep it)
+- falling knife (code): blocked 10, ran 1, dumped 7, flat 0, open 2 (saving losses: keep it)
   - ran: BigP up to 1.57x  
     CA `CY254o6VPaJnTiY5uuKUB8xDjSgykC6xtoLoC3kpump`
-- falling knife / no higher low: blocked 9, ran 2, dumped 3, flat 3, open 1 (mixed)
-  - ran: CateGiving up to 1.57x  
-    CA `5XasjCnMPTczL9VZTDHgbK5sQzwkjnu41oLeHf5Wpump`
-  - ran: Nyajira up to 1.52x  
-    CA `8cWGfiHyKqxgLrLtkPt2NnLkSUV2JbcLBf4RN6Fapump`
 - other: blocked 9, ran 2, dumped 4, flat 0, open 3 (saving losses: keep it)
   - ran: TaoTao up to 1.53x  
     CA `G1KuEMuLrxWynFddQVnpdkQAhYFBwNJiuz1Lv7d9pump`
   - ran: SI up to 1.94x  
     CA `H2irVtPLfKoBJ69itZmhsedSPwBUTaubmUavc6Uapump`
+- falling knife / no higher low: blocked 8, ran 2, dumped 2, flat 3, open 1 (mixed)
+  - ran: CateGiving up to 1.57x  
+    CA `5XasjCnMPTczL9VZTDHgbK5sQzwkjnu41oLeHf5Wpump`
+  - ran: Nyajira up to 1.52x  
+    CA `8cWGfiHyKqxgLrLtkPt2NnLkSUV2JbcLBf4RN6Fapump`
 - thin 5m volume: blocked 7, ran 1, dumped 2, flat 1, open 3 (saving losses: keep it)
   - ran: UNITY up to 1.66x  
     CA `GD6MboptxbHBspASr5PWozgNDrZxmxJ8JpBBD8Vpump`
@@ -190,16 +190,16 @@ Nothing shows a positive after-cost edge. Across all 93 settled coins the simple
 - [2026-11-02 20:25] I expected Slingoor, a clean MIGRATED leader with $25k of 5m flow at pace and a 0.77 buy share, to retest its $408k high from $304k. It never went green (0.98x peak) and hit the -20% stop in 2 minutes, a -$2.86 probe. My own thesis admitted there was no printed higher low after a peak only 6 minutes old, so this confirms the money-shape rule: buy share and flow are not structure (V1, V6). Next time a MIGRATED pullback with no higher low above the hourly low is a PASS with blocker "no higher low", not a probe. This is one loss, so it adds no new ban beyond the rule I already have.
 
 ## Meta right now
-The meta in the trenches right now is AI-lab name plays, with cat and animal jokes fading. AI ("Anthropic Inu", $134k cap, $5.8k 5m, 86% buys) and Anthropig ($1.26M, 7h old, $5.2k 5m, 66% buys) show the cleanest buyer flow, and nema (+38% 1h, 61% buys) rides the same name-pun energy. Animals are mixed: GOAT is up 54% in an hour on only 39% buys, Patrick the Bunny is down 50% after its run, and GATO is a 2,000h-old $7M coin that's flat, so the cat/animal launch style is fading. CYBERDACITY ($133k, $7.4k 5m, 73% buys, +16% 1h) is the one tech-themed runner and my best probe candidate at conviction about 5, pending holder, dev and bundle checks, with a stop where it loses its buyers. No coin clears the $10k 5m bar yet, so this is a thin tape rather than a go; the Binance-hack and North Korea headlines are noise, hack-named coins stay blocked, and I ignored the crawler's WANTED and TITTYVERSE/Retire figures because they don't match the scan.
+The trenches are trading animal-and-character name plays right now, led by the Neil the Lemur tokens: CA Cxf4sN6MT7o3rMgS86JwFEnh6Fiisk5GDzxWHr4Ppump ($99.6k cap, $61.6k 5m, 66% buys, +230% 1h, 12 min old) and CA 9iG6qBMgzzuYyq2kfXcAD49bkTFrpGp5gr1QHJiZMwoi ($115k cap, $16.3k 5m, 58% buys, +312% 1h), while the older-looking Neil at $66k is already -57% on $3.3k 5m and is the one to avoid. AI-lab name plays are a second theme (Anthropic Inu at 88% buys, Anthropig at $1.1M with 71% buys), but their 5m volume is thin and nema is -35% on 36% buys, which contradicts the crawler's +38% claim, so I'm trusting the scan. GTA-name coins have real volume but are flat or fading (GRAND THEFT CRYPTO $398k with $5.5k 5m, GTAVI -56%), and crude joke coins are dying (ELONBUTT -87%, Butthole $641 5m). The crawler's "no coin clears $10k 5m" is wrong: both Neil CAs and Say No to Crack ($13k 5m, but $21.7k cap and -50% 1h, so it fails the migrated mcap floor) show it, so this is not a quiet tape. Setup to research now: the $99.6k Neil lemur CA as a MIGRATED-lane probe at conviction 5, pending holder, dev and bundle checks, and first sort out which Neil is the original versus the vamp; initials at 2x, stop at -30%, out if 5m volume falls below half its hourly pace. Not a buy until those checks come back clean."
 
 ## Moving most in its scans, last 30 min (1h volume)
-- SAME: $139,627 1h vol, $47,289 mcap, +43% 1h  
-  CA `5qRxJ9W45zUrUtGGDneysiRBKZaceNriEqVUei1Rpump`
+- Nеil: $1,258,771 1h vol, $66,106 mcap, -58% 1h  
+  CA `FwVsiYsWBDCs4QifGcDRGGxQ3xh6CYLnWWFLUDiupump`
+- Neil: $965,230 1h vol, $115,451 mcap, +312% 1h  
+  CA `9iG6qBMgzzuYyq2kfXcAD49bkTFrpGp5gr1QHJiZMwoi`
+- CRACK: $308,264 1h vol, $21,748 mcap, -50% 1h  
+  CA `CssTcKvuBx2RmGE8wghpAYfwY7xZ6k5BojSm5DEopump`
 - BAWSAQ: $125,671 1h vol, $698,082 mcap, +3% 1h  
   CA `DTJbHA1ntTzsp6FXKRhwwD4E3CLcd5trkWhSV8ivpump`
-- Nеil: $114,904 1h vol, $99,633 mcap, +230% 1h  
-  CA `Cxf4sN6MT7o3rMgS86JwFEnh6Fiisk5GDzxWHr4Ppump`
-- GATO: $87,339 1h vol, $7,108,091 mcap, -3% 1h  
-  CA `HsprHxBRgiVaQdRf3TnKNuZZtaX9JUSPgMFdAkk6pump`
-- Anthropig: $65,930 1h vol, $1,115,480 mcap, -3% 1h  
-  CA `2NUaS6Gfrm5rBuPBn7svHka8t33SrSkpXGQiUvZLpump`
+- FiveM: $96,191 1h vol, $397,952 mcap, +2% 1h  
+  CA `2YxbK7V6ZTKSxcavk3V4kFzdtZ4uywhhoyuSxapjpump`
