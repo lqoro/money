@@ -1,13 +1,13 @@
 # Trencher live report
 
-Updated 2026-11-16T21:45:03Z (paper trading, never real money)
+Updated 2026-11-16T22:00:05Z (paper trading, never real money)
 
 - Equity: $74.23 (-25.8% vs $100 start)
 - Closed trades: 22, 3 wins
 - Fees paid: $14.78 (axiom $2.81, network $9.18, pool $2.66), plus $4.15 lost to slippage
 - New trades: WATCH-ONLY (scans and decides, buys nothing)
-- Brain: subscription, claude-haiku-5-5 for routine calls, claude-opus-5-5 for the daily review; 394 routine calls and 1 plan-limit hits in 48h
-- Watch log: 116 coins being followed, 1834 filed, 0 would-buys (6h follow, sampled every 2 min)
+- Brain: subscription, claude-haiku-5-5 for routine calls, claude-opus-5-5 for the daily review; 395 routine calls and 1 plan-limit hits in 48h
+- Watch log: 113 coins being followed, 1840 filed, 0 would-buys (6h follow, sampled every 2 min)
 
 ## Scorecard (after fees)
 - 22 closed, 3 won (14%), net $-25.79
@@ -73,9 +73,15 @@ Updated 2026-11-16T21:45:03Z (paper trading, never real money)
   CA `H4gHnZ3NCU7Z9XQwGX6YYJNyieGEW8pqwGRUcdSxpump`
 
 ## Last scan
-- 21:44Z: 9 coins, 9 with pairs, 1 passed the market filters, 1 researched
+- 21:59Z: 7 coins, 7 with pairs, 0 passed the market filters, 0 researched
 
 ## Coins it looked at, and why it passed
+- 21:58Z WASTED (DIP, $2,266,777 mcap, $5,209 5m vol): REJECT, Dip with fading attention is a falling knife, not a dip (5m at 0.32x the hour's pace, under 0.6x)  
+  CA `GexThZHgaswpAQ7Fi8QrHFubjPimUNSYhJiAA7XZpump`
+- 21:56Z COGE (DIP, $261,432 mcap, $13,756 5m vol): REJECT, Top 10 hold 36.7% ex-pool (>25%) (V13)  
+  CA `BRf3SXRk8BdXmBZDJfKyEhbYmqBVf8843ctEMcD4pump`
+- 21:55Z JOB (MIGRATED, $2,117,909 mcap, $4,897 5m vol): PASS at conviction 3, PASS: flow below pace (5m at 0.45x the hourly average), one bundle cluster at 17.2%, dog meta fading. Farm-shaped crowd (22 copies). (V1, V3, V6)  
+  CA `9Pq7aLAbhDG2tTnS22cm6kuysZVcZpLFE368HWuypump`
 - 21:44Z GATO (DIP, $5,379,606 mcap, $6,135 5m vol): REJECT, Dev holds 2.7% (>1%) (V13, V17)  
   CA `HsprHxBRgiVaQdRf3TnKNuZZtaX9JUSPgMFdAkk6pump`
 - 21:42Z BAWSAQ (MIGRATED, $43,981 mcap, $41,153 5m vol): PASS at conviction 3, PASS: five minutes old, up 66% on the last 5m candle at 10.6x hourly pace, and a same-ticker copy of a $2.6M BAWSAQ. Chasing a vamp (V1, V3).  
@@ -90,12 +96,6 @@ Updated 2026-11-16T21:45:03Z (paper trading, never real money)
   CA `G128WcDRks1y5gsEpYdHbrre5Wc5ERw2D4Wp5HpdDc72`
 - 21:29Z CBUCKS (MIGRATED, $4,817,072 mcap, $3,060 5m vol): REJECT, Top 10 hold 25.9% ex-pool (>25%) (V13)  
   CA `DtcicPCKTKeAh7TDEzTym3hXeoHAoMiBdYJhMYxZpump`
-- 21:29Z VICE (MIGRATED, $166,609 mcap, $14,034 5m vol): REJECT, Top 10 hold 45.6% ex-pool (>25%) (V13)  
-  CA `6UcvWd4hHYz6FUE8LqDrrXvz6uXbvNtsp9LudEmnpump`
-- 21:24Z BANK (DIP, $125,541 mcap, $11,986 5m vol): REJECT, Dip with fading attention is a falling knife, not a dip (5m at 0.47x the hour's pace, under 0.6x)  
-  CA `667tvUtaFVbesmSZDYCgQzYkJW4y36PdbmacRZGipump`
-- 21:24Z Lemon (DIP, $81,471 mcap, $2,843 5m vol): PASS at conviction 2, PASS: Lemon Pig is a 67%-off DIP with a dead theme (0.67x pace, 18 copies), $2.8k 5m, a 6% bundle cluster and a 4-token ticker field. Blocker: "dead story" and "flow below pace". (V1, V6, V13)  
-  CA `FsFqQGxCNd7dbFuimCW4hMiFRdvvM8PoLyp4WZrxAUnN`
 
 ## What its skips did next (last 48h)
 A skip "ran" if the coin reached the first target (1.5x) from the skip price before a 20% drop, "dumped" if the drop came first. Sampled every 10 min, followed 6h.
@@ -106,7 +106,7 @@ A skip "ran" if the coin reached the first target (1.5x) from the skip price bef
     CA `BDPm9gPHCRyo2qjcRrYPsXexmbRwuuHQZo2qhhYXpump`
   - ran: ANT up to 1.58x  
     CA `7H2sHeLHyHR8jxENGmsqn7RxTkYZa4KwXvKYcoxBpump`
-- top 10 over 25%: blocked 46, ran 7, dumped 33, flat 4, open 2 (saving losses: keep it)
+- top 10 over 25%: blocked 45, ran 7, dumped 32, flat 4, open 2 (saving losses: keep it)
   - ran: rockstar up to 1.95x  
     CA `9HFUEab7sompLDPTAaTGkryMNGbtBaFMhHMVpJEBpump`
   - ran: VI up to 1.71x  
@@ -134,6 +134,9 @@ A skip "ran" if the coin reached the first target (1.5x) from the skip price bef
     CA `AiQUqe4zjiDssth2FsCoeQVaGtCtHYyKGX8U52rWpump`
   - ran: FUTA up to 2.77x  
     CA `FxoXV4C8DTSYeg5dSXrEsr45zzr8tpNbsrpoiZ8Kpump`
+- falling knife (code): blocked 18, ran 1, dumped 14, flat 1, open 2 (saving losses: keep it)
+  - ran: BigP up to 1.57x  
+    CA `CY254o6VPaJnTiY5uuKUB8xDjSgykC6xtoLoC3kpump`
 - falling knife / no higher low: blocked 18, ran 3, dumped 11, flat 3, open 1 (saving losses: keep it)
   - ran: CateGiving up to 1.57x  
     CA `5XasjCnMPTczL9VZTDHgbK5sQzwkjnu41oLeHf5Wpump`
@@ -141,9 +144,6 @@ A skip "ran" if the coin reached the first target (1.5x) from the skip price bef
     CA `8cWGfiHyKqxgLrLtkPt2NnLkSUV2JbcLBf4RN6Fapump`
   - ran: GOAT up to 1.61x  
     CA `D7iafdwzzpB7tisqQqT5T9aRrYPtHLqzwxhnLoWJgoat`
-- falling knife (code): blocked 17, ran 1, dumped 13, flat 0, open 3 (saving losses: keep it)
-  - ran: BigP up to 1.57x  
-    CA `CY254o6VPaJnTiY5uuKUB8xDjSgykC6xtoLoC3kpump`
 - other: blocked 13, ran 4, dumped 9, flat 0, open 0 (saving losses: keep it)
   - ran: TaoTao up to 1.53x  
     CA `G1KuEMuLrxWynFddQVnpdkQAhYFBwNJiuz1Lv7d9pump`
@@ -156,7 +156,7 @@ A skip "ran" if the coin reached the first target (1.5x) from the skip price bef
     CA `5peJLZQnBkXtydYYMunbT4QutSyd9eA474MqxcmEpump`
   - ran: UNITY up to 1.66x  
     CA `GD6MboptxbHBspASr5PWozgNDrZxmxJ8JpBBD8Vpump`
-- dev share over 1%: blocked 10, ran 2, dumped 6, flat 0, open 2 (saving losses: keep it)
+- dev share over 1%: blocked 10, ran 2, dumped 6, flat 1, open 1 (saving losses: keep it)
   - ran: PANICSELL up to 1.74x  
     CA `82Z6CcE5g3o1jW3vgtcqr95jP4XFx8jg1SJe8ikepump`
   - ran: WSB up to 1.52x  
@@ -201,13 +201,13 @@ Nothing shows a positive edge after costs. Over 309 settled coins, every setup l
 Meta: the Vice City/GTA cluster is still the loudest theme in scan_movers, but it's a vamp swarm. BAWSAQ ($2.6M cap, $11.6k 5m, 76% buys, +240% 1h) and ONLYVICE ($172k, $15.5k 5m, 63% buys, +386% 1h) carry real flow, while VICEDORD, the "Grand Tits" GTA clone and VI are already down 98-99% on the hour. VI's $1.4k cap in scan conflicts with the crawler's $98k, so verify it before trusting either number. A second theme is young pump.fun bonding-curve joke coins with real 5m volume and buyers: GROYPERS ($18k, $25.8k 5m, 55% buys, about 6 minutes old), DPRF ($15.6k, $14k 5m, 62% buys, +633% 1h) and scat/snail cat ($16.6k, $11k 5m, 58% buys, +588% 1h). Animal and dog coins are fading (JOB flat at 482 hours old, KOL -85%, BANK -21%), and the crawler's KOL/trading-meta jokes don't show up in movers, so I'm not counting them as live. Setups to research, none confirmed: ONLYVICE and BAWSAQ as MIGRATED-style candidates (BAWSAQ only as a pullback that keeps its 5m volume), and DPRF/scat as FINAL_STRETCH-style candidates with the stop under their launch range; GROYPERS is political-coded, so weigh that before anything else. Initials at 2x, stops set by conviction, and holder, dev, bundle and original-token checks (vamp risk) are still unrun on every coin. Paper only, not financial advice.
 
 ## Moving most in its scans, last 30 min (1h volume)
-- BAWSAQ: $633,328 1h vol, $2,598,319 mcap, +240% 1h  
-  CA `D9EcoQZeAytCrF1kQFSpRNpoPhibJUvJcmRHXhubpump`
-- BANK: $301,808 1h vol, $128,908 mcap, -21% 1h  
-  CA `667tvUtaFVbesmSZDYCgQzYkJW4y36PdbmacRZGipump`
-- WHOAPED: $100,576 1h vol, $6,395 mcap, -77% 1h  
-  CA `AFkMcpbnwEg328181CCresbTTG52DexwKM7FFo9Hpump`
+- WASTED: $195,154 1h vol, $2,208,188 mcap, -28% 1h  
+  CA `GexThZHgaswpAQ7Fi8QrHFubjPimUNSYhJiAA7XZpump`
+- LastRide: $186,123 1h vol, $1,392 mcap, -99% 1h  
+  CA `D8q1rSs4ernxGWur9tb5YGiAGEh6tgzg2VQc6spkpump`
+- HOLDMAS: $169,748 1h vol, $36,978 mcap, +29% 1h  
+  CA `G4ZhpCN3v2tohaAF8jx3DHf3YvEtGKD9yRTa7Fskpump`
+- JOB: $131,669 1h vol, $2,117,909 mcap, +12% 1h  
+  CA `9Pq7aLAbhDG2tTnS22cm6kuysZVcZpLFE368HWuypump`
 - CHOP: $88,796 1h vol, $132,300 mcap, +269% 1h  
   CA `7XpsCaMBnWrYuKmdN4qRVYcJcnwRcNTErgMkFrtPpump`
-- WORLDCRAFT: $86,928 1h vol, $31,918 mcap, +14% 1h  
-  CA `6ErRss728CstWJD9wHNeVEdVmKncYMRpsWHKLbxopump`
