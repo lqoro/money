@@ -1,13 +1,13 @@
 # Trencher live report
 
-Updated 2026-11-16T16:27:34Z (paper trading, never real money)
+Updated 2026-11-16T16:42:35Z (paper trading, never real money)
 
 - Equity: $74.23 (-25.8% vs $100 start)
 - Closed trades: 22, 3 wins
 - Fees paid: $14.78 (axiom $2.81, network $9.18, pool $2.66), plus $4.15 lost to slippage
 - New trades: WATCH-ONLY (scans and decides, buys nothing)
-- Brain: subscription, claude-haiku-5-5 for routine calls, claude-opus-5-5 for the daily review; 338 routine calls and 0 plan-limit hits in 48h
-- Watch log: 85 coins being followed, 1762 filed, 0 would-buys (6h follow, sampled every 2 min)
+- Brain: subscription, claude-haiku-5-5 for routine calls, claude-opus-5-5 for the daily review; 343 routine calls and 0 plan-limit hits in 48h
+- Watch log: 87 coins being followed, 1765 filed, 0 would-buys (6h follow, sampled every 2 min)
 
 ## Scorecard (after fees)
 - 22 closed, 3 won (14%), net $-25.79
@@ -73,9 +73,19 @@ Updated 2026-11-16T16:27:34Z (paper trading, never real money)
   CA `H4gHnZ3NCU7Z9XQwGX6YYJNyieGEW8pqwGRUcdSxpump`
 
 ## Last scan
-- 16:26Z: 4 coins, 4 with pairs, 0 passed the market filters, 0 researched
+- 16:41Z: 6 coins, 5 with pairs, 0 passed the market filters, 0 researched
 
 ## Coins it looked at, and why it passed
+- 16:41Z NPC (MIGRATED, $32,501 mcap, $2,200 5m vol): REJECT, Top 10 hold 25.1% ex-pool (>25%) (V13)  
+  CA `8BmbUckiXerpVdzX9Pk7jjfq796mkf9Y6SWxXDWk7DzM`
+- 16:41Z VI (MIGRATED, $66,129 mcap, $3,498 5m vol): PASS at conviction 3, PASS: flow below pace (5m at 0.66x hourly), no breakout, and a 2-hour-old domain that says the contract is "coming soon". Farm-shaped vamp field. (V1, V6, V13)  
+  CA `3yjHj9s9MukEHr7b7qhMiUfH5fSUz97Eb5J8SRjdpump`
+- 16:38Z GTAMAS (FINAL_STRETCH, $19,676 mcap, $13,680 5m vol): PASS at conviction 3, PASS — 10x off its hourly low, +74% on the 5m, no higher low printed, and the GTA lane's 5m pace is 0.14x. Chasing a spike in a 24-copy field. (V1, V6)  
+  CA `BRCxwHaTtvtHCX7PL2XYEBhy7r9AFzwHPBc9mWHYMmpN`
+- 16:38Z SNUT (MIGRATED, $53,367 mcap, $50,593 5m vol): PASS, PASS — brain unavailable, not trading blind.  
+  CA `88ZWKeNqsNuryefmk1uT9baccba77aet6ge3rUpEpump`
+- 16:35Z RESPECT (MIGRATED, $118,855 mcap, $3,009 5m vol): PASS at conviction 2, PASS: flow below pace (0.63x hourly, $3k 5m, under the $10k bar), no breakout, and no buzz behind RESPECT. Let it be. (V1, V6)  
+  CA `BARobVaVawPxpjaHLsvrdLn2SpVJQDFYx4BY2R5Kpump`
 - 16:23Z bill (MIGRATED, $103,844 mcap, $1,898 5m vol): REJECT, 5m volume $1,898 is dead (<$2,000) (V1)  
   CA `85RhcSEMy15SNhFLmSArNm7udPKXVagVgsq4YmSopump`
 - 16:21Z CBUCKS (MIGRATED, $4,590,083 mcap, $2,918 5m vol): REJECT, Top 10 hold 26.2% ex-pool (>25%) (V13)  
@@ -86,55 +96,45 @@ Updated 2026-11-16T16:27:34Z (paper trading, never real money)
   CA `4r1ZJUx7iQtsVcM9NJz3DbqZfBAHLcb1EMCSasyapump`
 - 16:17Z 👠 (MIGRATED, $40,126 mcap, $23,318 5m vol): PASS at conviction 3, PASS: too new, no higher low, 23 copies in the field and a -27% 5m candle. Blocker "too new". Wait for a base. (V1, V6)  
   CA `FYtY5KpMRBHSiCMAqkWWrY2GtNVXs1h8jubbnno7pump`
-- 16:09Z 👠 (no setup, $11,489 mcap, $4,575 5m vol): REJECT, No setup fits: not Final Stretch, not a migrated runner, not a healthy dip  
-  CA `3HtNRg7fwyAkhGvFhwQUjgoqi4UnW5e7yMtuXEXfpump`
-- 16:00Z hello (MIGRATED, $147,731 mcap, $11,314 5m vol): PASS at conviction 3, PASS: hello is a MIGRATED bounce with flow at 0.83x its hourly pace, and its 18-copy "hello" theme is running at 0.09x pace with no catalyst. Split crowd and a dead story. (V1, V3, V6)  
-  CA `2Lw9FQA1iAwg5Wo1NTh8GTs3zmVQc7XHGBbexqZgqtWJ`
-- 15:56Z HELLO (MIGRATED, $31,460 mcap, $2,602 5m vol): REJECT, RugCheck danger: Large Amount of LP Unlocked 100.00%  
-  CA `J8LutktxwPYxMi37b6h3sEyRioUiir8DPSwkKjXRpump`
-- 15:55Z VI (MIGRATED, $61,172 mcap, $4,368 5m vol): PASS at conviction 2, PASS: chasing a +125% hour on a 0.85h-old vamp field, 5m flow at 0.53x pace on $4.4k. Too new, split crowd. (V1, V6)  
-  CA `3yjHj9s9MukEHr7b7qhMiUfH5fSUz97Eb5J8SRjdpump`
-- 15:54Z Rocco (MIGRATED, $1,120,543 mcap, $2,159 5m vol): PASS at conviction 3, PASS: Rocco is 25% off its $1.50M high, with $2.2k of 5m flow under the $10k bar and a first resistance only 1.34x away. Blockers: "no breakout", "target below initials", "big cap, no room", "no catalyst" (V1, V6).  
-  CA `HZbiEpF2oM658EpjNRRqxharz5L9Ddm8akpSH2R5pump`
 
 ## What its skips did next (last 48h)
 A skip "ran" if the coin reached the first target (1.5x) from the skip price before a 20% drop, "dumped" if the drop came first. Sampled every 10 min, followed 6h.
-- too new / sniping: blocked 42, ran 7, dumped 33, flat 0, open 2 (saving losses: keep it)
-  - ran: Chick up to 1.66x  
-    CA `Dueav76X9spnoLomhM2jMkkWorVggbeWucLs3YLupump`
-  - ran: TOOLS up to 1.83x  
-    CA `9Ei1d97U7M8m4t3fof7c8MUECtmzgqbQCo81cGGzpump`
-  - ran: twert up to 1.81x  
-    CA `8WvWwttzaLfW1nbjx6wmYL5jozWpvy95WktAg5cipump`
-- flow below pace: blocked 40, ran 5, dumped 30, flat 2, open 3 (saving losses: keep it)
+- flow below pace: blocked 41, ran 5, dumped 31, flat 2, open 3 (saving losses: keep it)
   - ran: PASSED up to 1.73x  
     CA `3XaH8VPUaUegqmnkYA8PXCWqQqD8doqdsGGfZyoYpump`
   - ran: ANT up to 1.52x  
     CA `BDPm9gPHCRyo2qjcRrYPsXexmbRwuuHQZo2qhhYXpump`
   - ran: ANT up to 1.58x  
     CA `7H2sHeLHyHR8jxENGmsqn7RxTkYZa4KwXvKYcoxBpump`
-- top 10 over 25%: blocked 38, ran 6, dumped 26, flat 4, open 2 (saving losses: keep it)
+- too new / sniping: blocked 41, ran 7, dumped 33, flat 0, open 1 (saving losses: keep it)
+  - ran: Chick up to 1.66x  
+    CA `Dueav76X9spnoLomhM2jMkkWorVggbeWucLs3YLupump`
+  - ran: TOOLS up to 1.83x  
+    CA `9Ei1d97U7M8m4t3fof7c8MUECtmzgqbQCo81cGGzpump`
+  - ran: twert up to 1.81x  
+    CA `8WvWwttzaLfW1nbjx6wmYL5jozWpvy95WktAg5cipump`
+- top 10 over 25%: blocked 39, ran 6, dumped 26, flat 4, open 3 (saving losses: keep it)
   - ran: rockstar up to 1.95x  
     CA `9HFUEab7sompLDPTAaTGkryMNGbtBaFMhHMVpJEBpump`
   - ran: VI up to 1.71x  
     CA `4Dj8m9vWqu779F1KDBUttvXM8YFm7U92SDpvjBNKtEiB`
   - ran: ANT up to 1.52x  
     CA `BDPm9gPHCRyo2qjcRrYPsXexmbRwuuHQZo2qhhYXpump`
-- near the high / chasing: blocked 28, ran 7, dumped 21, flat 0, open 0 (saving losses: keep it)
+- near the high / chasing: blocked 29, ran 7, dumped 21, flat 0, open 1 (saving losses: keep it)
   - ran: penny up to 1.6x  
     CA `5gmCPpuktJ7Svjgr4PPJBTosAFKB8K6Z45EGfSUmpump`
   - ran: WIGGLES up to 1.69x  
     CA `2kWx47CUrcXtzptFNnbSXKq3vo1ebqyLBhRytKRGpump`
   - ran: Bustas up to 1.75x  
     CA `9rTgs58B3p11vXekTTgVYtv8vKxQ6oSoZFXPy4onpump`
-- RugCheck danger: blocked 27, ran 7, dumped 16, flat 2, open 2 (saving losses: keep it)
+- RugCheck danger: blocked 27, ran 7, dumped 17, flat 2, open 1 (saving losses: keep it)
   - ran: Ivy up to 1.88x  
     CA `DxNF3Qxd8XeUBdz7ReRdoiFzRmNDKbSz4c2oA7aRpump`
   - ran: SI up to 1.93x  
     CA `AiQUqe4zjiDssth2FsCoeQVaGtCtHYyKGX8U52rWpump`
   - ran: FUTA up to 2.77x  
     CA `FxoXV4C8DTSYeg5dSXrEsr45zzr8tpNbsrpoiZ8Kpump`
-- other: blocked 12, ran 3, dumped 7, flat 0, open 2 (saving losses: keep it)
+- other: blocked 12, ran 4, dumped 7, flat 0, open 1 (mixed)
   - ran: TaoTao up to 1.53x  
     CA `G1KuEMuLrxWynFddQVnpdkQAhYFBwNJiuz1Lv7d9pump`
   - ran: SI up to 1.94x  
@@ -151,7 +151,7 @@ A skip "ran" if the coin reached the first target (1.5x) from the skip price bef
     CA `8cWGfiHyKqxgLrLtkPt2NnLkSUV2JbcLBf4RN6Fapump`
   - ran: GOAT up to 1.61x  
     CA `D7iafdwzzpB7tisqQqT5T9aRrYPtHLqzwxhnLoWJgoat`
-- thin 5m volume: blocked 11, ran 2, dumped 7, flat 0, open 2 (saving losses: keep it)
+- thin 5m volume: blocked 11, ran 2, dumped 8, flat 0, open 1 (saving losses: keep it)
   - ran: SENDER up to 1.58x  
     CA `5peJLZQnBkXtydYYMunbT4QutSyd9eA474MqxcmEpump`
   - ran: UNITY up to 1.66x  
@@ -194,16 +194,16 @@ Nothing shows a positive edge after costs. Over 309 settled coins, every setup l
 - [2026-11-02 20:25] I expected Slingoor, a clean MIGRATED leader with $25k of 5m flow at pace and a 0.77 buy share, to retest its $408k high from $304k. It never went green (0.98x peak) and hit the -20% stop in 2 minutes, a -$2.86 probe. My own thesis admitted there was no printed higher low after a peak only 6 minutes old, so this confirms the money-shape rule: buy share and flow are not structure (V1, V6). Next time a MIGRATED pullback with no higher low above the hourly low is a PASS with blocker "no higher low", not a probe. This is one loss, so it adds no new ban beyond the rule I already have.
 
 ## Meta right now
-The meta in the trenches right now is fresh pump.fun launches with short, jokey names: VI, BEB, Mikan, XBOX, GIFT and NEOGO are all under 1.3h old with $2k to $21k of 5m volume and 49-69% buys, and this lane is rising. Fading: the cat/GTA lane (GATO at a $6.3M cap, $3.3k 5m, flat over 1h), the AI-named Anthropig (-99.7%, zero 5m volume), and Minimoon and WATER, which have lost their 5m flow. The crawler's numbers don't match scan (scan has Minimoon at $197 5m and WATER at $253, not $28k and $25-41k; CLAUDEMOM, DOUG and TRUMPEDO aren't in the movers), so I'm going with scan. Setups to research, not verdicts: VI ($40k cap, $21k 5m, 53% buys, about 6 minutes old) has the strongest volume-to-cap, and hello ($129k cap, $11.6k 5m, +40% 1h, 2.1h old) is the cleaner candidate for the migrated lane. BEB (+538% 1h on only $4.5k 5m) is too thin to act on yet. Holder, dev and bundle checks haven't run on any of these, so everything here is unverified, not a verdict and not a reason to pass.
+The meta is the fresh pump.fun lane: sub-3-hour tokens with jokey names, small caps and high 5m volume with more buyers than sellers. Two themes repeat across several coins: GTA-named launches (MEE, GTA Macro Economy Engine, $20k cap, $36.6k 5m, 54% buys, about 6 minutes old; GTAC, $13.8k cap, $5.7k 5m, 58% buys) and silly object/animal names (SHOE STORE 👠, $40k cap, $23.3k 5m, 56% buys, 12 minutes old; SNUT Space Squirrel, $44k cap, $18.8k 5m, 56% buys, +996% 1h; CYBERLEEK, $15k cap, 70% buys, but it's a person's name, so check who it is). Fading: the gift/holiday lane (XMAS -63% on $142 5m, GIFT -27% on $355 5m), dead launches (PAPERDEV with 0% buys, LEOSTAR with zero 5m), and older tokens on thin flow (BLOB, CBUCKS, WASTED, all under $2k 5m). The crawler's "memecoin hype is dying" headlines fit this: attention is thin, so these lanes last hours. Setups to research, not buys: SHOE STORE and SNUT for volume-to-cap, with MEE only if you can find the original GTA token and it isn't a vamp; hello ($148k cap, $11.3k 5m, 51% buys, 2.9h old) is the migrated-lane candidate. The crawler's VI, Mikan, NEOGO and BEB-style numbers don't match scan, so I'm ignoring them. Holder, dev and bundle checks still have to run on every one of these, and none is verified yet.
 
 ## Moving most in its scans, last 30 min (1h volume)
-- BLOB: $335,368 1h vol, $14,542,279 mcap, +2% 1h  
+- BLOB: $221,994 1h vol, $13,795,756 mcap, -15% 1h  
   CA `8s11PkgQt4ZzdZ7oo84hK5t9HG1EvdgAjcg4W7Lpump`
-- hello: $163,211 1h vol, $147,731 mcap, +17% 1h  
-  CA `2Lw9FQA1iAwg5Wo1NTh8GTs3zmVQc7XHGBbexqZgqtWJ`
-- LEOSTAR: $149,497 1h vol, $1,337 mcap, -96% 1h  
+- QUATS: $184,557 1h vol, $22,142 mcap, -22% 1h  
+  CA `Q8epAD6hoSfGTTpHfNKz6z78A3pP8tMkHBAuvYTpump`
+- SNUT: $166,831 1h vol, $53,367 mcap, +20% 1h  
+  CA `88ZWKeNqsNuryefmk1uT9baccba77aet6ge3rUpEpump`
+- LEOSTAR: $149,497 1h vol, $1,328 mcap, -96% 1h  
   CA `H7Q8tXdq65p5btVNaRH75YmBXikYF1Gt9zRz984ypump`
-- 👠: $59,975 1h vol, $40,126 mcap, -11% 1h  
-  CA `FYtY5KpMRBHSiCMAqkWWrY2GtNVXs1h8jubbnno7pump`
-- RESPECT: $52,569 1h vol, $136,351 mcap, +27% 1h  
-  CA `BARobVaVawPxpjaHLsvrdLn2SpVJQDFYx4BY2R5Kpump`
+- GTAMAS: $88,061 1h vol, $19,975 mcap, +688% 1h  
+  CA `BRCxwHaTtvtHCX7PL2XYEBhy7r9AFzwHPBc9mWHYMmpN`
