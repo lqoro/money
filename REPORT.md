@@ -1,13 +1,13 @@
 # Trencher live report
 
-Updated 2026-11-17T09:07:13Z (paper trading, never real money)
+Updated 2026-11-17T09:22:15Z (paper trading, never real money)
 
 - Equity: $74.23 (-25.8% vs $100 start)
 - Closed trades: 22, 3 wins
 - Fees paid: $14.78 (axiom $2.81, network $9.18, pool $2.66), plus $4.15 lost to slippage
 - New trades: WATCH-ONLY (scans and decides, buys nothing)
 - Brain: subscription, claude-haiku-5-5 for routine calls, claude-opus-5-5 for the daily review; 479 routine calls and 1 plan-limit hits in 48h
-- Watch log: 102 coins being followed, 2062 filed, 0 would-buys (6h follow, sampled every 2 min)
+- Watch log: 98 coins being followed, 2067 filed, 0 would-buys (6h follow, sampled every 2 min)
 
 ## Scorecard (after fees)
 - 22 closed, 3 won (14%), net $-25.79
@@ -73,9 +73,11 @@ Updated 2026-11-17T09:07:13Z (paper trading, never real money)
   CA `H4gHnZ3NCU7Z9XQwGX6YYJNyieGEW8pqwGRUcdSxpump`
 
 ## Last scan
-- 09:06Z: 6 coins, 6 with pairs, 1 passed the market filters, 1 researched
+- 09:21Z: 6 coins, 6 with pairs, 0 passed the market filters, 0 researched
 
 ## Coins it looked at, and why it passed
+- 09:16Z LEOSTAR (MIGRATED, $1,019,918 mcap, $2,430 5m vol): PASS at conviction 3, PASS: no printed higher low, 5m flow $2.4k, 15-copy ticker field, site is 0.7 days old and doesn't show this CA. Blocker: "no higher low". (V1, V3, V13)  
+  CA `2cMcMEX3Eqo86tUrVe5dgHp5GZNwqQ6crqm22UeZpump`
 - 09:06Z GATO (DIP, $6,474,310 mcap, $7,055 5m vol): REJECT, Dev holds 2.7% (>1%) (V13, V17)  
   CA `HsprHxBRgiVaQdRf3TnKNuZZtaX9JUSPgMFdAkk6pump`
 - 09:05Z KATIA (DIP, $81,663 mcap, $3,157 5m vol): REJECT, Bundles: 3 linked wallet cluster(s) hold 22.8% of supply (>20%) (V17)  
@@ -94,8 +96,6 @@ Updated 2026-11-17T09:07:13Z (paper trading, never real money)
   CA `D9EcoQZeAytCrF1kQFSpRNpoPhibJUvJcmRHXhubpump`
 - 08:38Z DIGS (MIGRATED, $232,994 mcap, $3,120 5m vol): REJECT, Bundles: 10 linked wallet cluster(s) hold 100.0% of supply (>20%) (V17)  
   CA `9QT8K685Hrae4k11dhGXirdtpfAaimExtyfwt8cPpump`
-- 08:26Z MERO (FINAL_STRETCH, $18,225 mcap, $3,655 5m vol): PASS at conviction 2, PASS: MERO fails flow, theme and holder gates. Blocker "no catalyst, theme dead". (V1, V6, V13)  
-  CA `Bg5oh7StVhfUAEcjU7ChDfB5uuvpXsZR9eDx9894pump`
 
 ## What its skips did next (last 48h)
 A skip "ran" if the coin reached the first target (1.5x) from the skip price before a 20% drop, "dumped" if the drop came first. Sampled every 10 min, followed 6h.
@@ -120,7 +120,7 @@ A skip "ran" if the coin reached the first target (1.5x) from the skip price bef
     CA `4Dj8m9vWqu779F1KDBUttvXM8YFm7U92SDpvjBNKtEiB`
   - ran: ANT up to 1.52x  
     CA `BDPm9gPHCRyo2qjcRrYPsXexmbRwuuHQZo2qhhYXpump`
-- near the high / chasing: blocked 37, ran 6, dumped 29, flat 0, open 2 (saving losses: keep it)
+- near the high / chasing: blocked 36, ran 6, dumped 28, flat 0, open 2 (saving losses: keep it)
   - ran: WIGGLES up to 1.69x  
     CA `2kWx47CUrcXtzptFNnbSXKq3vo1ebqyLBhRytKRGpump`
   - ran: Bustas up to 1.75x  
@@ -134,14 +134,16 @@ A skip "ran" if the coin reached the first target (1.5x) from the skip price bef
     CA `Bp5PCTcWrwjV9Sn87oJPCPEbqogDeXuetNaWDUT9pump`
   - ran: Dollar up to 1.57x  
     CA `4JhX8T75P9z4gk91SBnQeAb7h7qCe7iWAiVgucVypump`
-- falling knife / no higher low: blocked 20, ran 2, dumped 14, flat 2, open 2 (saving losses: keep it)
+- falling knife / no higher low: blocked 21, ran 2, dumped 14, flat 2, open 3 (saving losses: keep it)
   - ran: Nyajira up to 1.52x  
     CA `8cWGfiHyKqxgLrLtkPt2NnLkSUV2JbcLBf4RN6Fapump`
   - ran: GOAT up to 1.61x  
     CA `D7iafdwzzpB7tisqQqT5T9aRrYPtHLqzwxhnLoWJgoat`
-- falling knife (code): blocked 18, ran 1, dumped 14, flat 1, open 2 (saving losses: keep it)
+- falling knife (code): blocked 18, ran 2, dumped 14, flat 1, open 1 (saving losses: keep it)
   - ran: BigP up to 1.57x  
     CA `CY254o6VPaJnTiY5uuKUB8xDjSgykC6xtoLoC3kpump`
+  - ran: KATIA up to 2.01x  
+    CA `9a5uUXxa7LzHkT6YUikttpQsUZm4Etw8qhd2HP7xpump`
 - thin 5m volume: blocked 17, ran 4, dumped 11, flat 0, open 2 (saving losses: keep it)
   - ran: SENDER up to 1.58x  
     CA `5peJLZQnBkXtydYYMunbT4QutSyd9eA474MqxcmEpump`
@@ -156,9 +158,11 @@ A skip "ran" if the coin reached the first target (1.5x) from the skip price bef
     CA `8s11PkgQt4ZzdZ7oo84hK5t9HG1EvdgAjcg4W7Lpump`
   - ran: CYBERLEEK up to 2x  
     CA `HcWTwfy12QPzc5WxPXTTtdvtnw1TZ64sqQAHXWPhpump`
-- bundles over the line: blocked 11, ran 1, dumped 6, flat 1, open 3 (saving losses: keep it)
+- bundles over the line: blocked 11, ran 2, dumped 6, flat 2, open 1 (saving losses: keep it)
   - ran: WANTED up to 1.52x  
     CA `9jhs5qoJnUFU7AZXbsiD1Q6De6FVsino9Ysw8QU6pump`
+  - ran: KATIA up to 2.01x  
+    CA `9a5uUXxa7LzHkT6YUikttpQsUZm4Etw8qhd2HP7xpump`
 
 ## Daily review (2026-11-16, claude-opus-5-5)
 Nothing shows a positive edge after costs. Over 309 settled coins, every setup lost money net: FINAL_STRETCH -7.2%, DIP -7.4%, MIGRATED -13.5%. Costs alone averaged 9.8% per round trip. Before costs, FINAL_STRETCH made about +2.9% and DIP about +1.8%, but at n=46 and n=54 the noise is roughly ±4–5 points, so neither is different from zero. With a 1.5x / -20% plan and ~10% costs, you need about 43% of coins to reach 1.5x before -20% just to break even. The best group (FINAL_STRETCH) managed 32.6%, and the error bar on that is about ±14 points. The routine model gave zero would-buys, so the "did its buys beat its passes" question can't be answered. It passed on all 164 coins it reviewed. Those coins averaged -11.7% net, about the same as the checklist rejects at -11.3%, so passing on everything was roughly right this day, even though it missed LMAO, Marvin and WIGGLES.
@@ -199,13 +203,13 @@ Nothing shows a positive edge after costs. Over 309 settled coins, every setup l
 The trenches are not quiet. The coins with real buyers are fresh pump.fun and pumpswap launches under about two hours old, and the theme running through several of them is game-culture reskins: SUPERPLUMB (Super Plumber, 86% buys on $9.7k 5m at a $59k cap, already on pumpswap), GTA (Grand Theft Anthropic, 75% buys on a $1.1M cap) and BAWSAQ (Vice City, $1.5M cap, 51% buys). The original GTA6CAT (GATO, about 2,000h old) is flat on $6.4M, so the old brand is stale and the fresh reskins are what's moving. The second pattern is sub-$70k micro-launches bursting on 1h volume: cepump (+379% 1h, $25k 5m on a $68k cap, 72% buys), Whoa and MERO (+40% 1h, $18k cap, $3.5k 5m). Those have no narrative I can verify yet, so treat them as bursts until proven otherwise. Fading: the dog and old-cap tier, with BLOB at -29% 1h and 42% buys on $116k 5m, JOB at 35% buys, HOGE at 63% buys on only $892 5m, and CLOUT at -79% with zero buys. Setups to research now: SUPERPLUMB as a MIGRATED recheck (its $9.7k 5m is about $340 short of the $10k gate, so conviction stays at 5 or less until holders, dev and bundles clear), and cepump as the one with real flow to test for bundles given the 72% buys and blow-off move. GTA is a watch, not a buy, because $3.9k 5m is thin for a $1M cap. The crawler's MERO and SUPERPLUMB figures don't match the scan, so I'm using scan numbers only.
 
 ## Moving most in its scans, last 30 min (1h volume)
-- BLOB: $1,132,387 1h vol, $16,521,492 mcap, -25% 1h  
+- BLOB: $996,115 1h vol, $13,462,469 mcap, -26% 1h  
   CA `8s11PkgQt4ZzdZ7oo84hK5t9HG1EvdgAjcg4W7Lpump`
-- cepump: $311,883 1h vol, $67,673 mcap, +379% 1h  
-  CA `DQRNzNt2QRbLj9iPDRGDBNxCN6skYdne7Qxv819Bpump`
 - SUPERPLUMB: $127,737 1h vol, $71,547 mcap, +32% 1h  
   CA `3ghMZsrHkWKzigd2pxvuLMGMcVYJt1JjDcatsfMhpump`
-- PTA: $73,958 1h vol, $16,514 mcap, -42% 1h  
+- PTA: $98,863 1h vol, $4,328 mcap, -85% 1h  
   CA `3mbH52PNhs3vRm6cfSF8QwM8ukXf8V6aCvBTLzYwpump`
-- BAWSAQ: $72,354 1h vol, $1,502,845 mcap, +42% 1h  
-  CA `D9EcoQZeAytCrF1kQFSpRNpoPhibJUvJcmRHXhubpump`
+- FEET: $60,442 1h vol, $22,374 mcap, +619% 1h  
+  CA `HkBSWFbCRHChJsYctSLGKcHYF9uAnPvWtJUwhYRapump`
+- Whoa: $51,937 1h vol, $3,775 mcap, -62% 1h  
+  CA `A9RkWBfUTmkuwdefUwYHQLLSoKN673g9uEBV4uHEpump`
