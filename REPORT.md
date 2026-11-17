@@ -1,13 +1,13 @@
 # Trencher live report
 
-Updated 2026-11-17T05:04:53Z (paper trading, never real money)
+Updated 2026-11-17T05:20:08Z (paper trading, never real money)
 
 - Equity: $74.23 (-25.8% vs $100 start)
 - Closed trades: 22, 3 wins
 - Fees paid: $14.78 (axiom $2.81, network $9.18, pool $2.66), plus $4.15 lost to slippage
 - New trades: WATCH-ONLY (scans and decides, buys nothing)
-- Brain: subscription, claude-haiku-5-5 for routine calls, claude-opus-5-5 for the daily review; 458 routine calls and 1 plan-limit hits in 48h
-- Watch log: 134 coins being followed, 1971 filed, 0 would-buys (6h follow, sampled every 2 min)
+- Brain: subscription, claude-haiku-5-5 for routine calls, claude-opus-5-5 for the daily review; 459 routine calls and 1 plan-limit hits in 48h
+- Watch log: 128 coins being followed, 1981 filed, 0 would-buys (6h follow, sampled every 2 min)
 
 ## Scorecard (after fees)
 - 22 closed, 3 won (14%), net $-25.79
@@ -73,9 +73,17 @@ Updated 2026-11-17T05:04:53Z (paper trading, never real money)
   CA `H4gHnZ3NCU7Z9XQwGX6YYJNyieGEW8pqwGRUcdSxpump`
 
 ## Last scan
-- 05:03Z: 7 coins, 7 with pairs, 2 passed the market filters, 2 researched
+- 05:19Z: 4 coins, 4 with pairs, 0 passed the market filters, 0 researched
 
 ## Coins it looked at, and why it passed
+- 05:17Z LEOSTAR (DIP, $793,383 mcap, $3,651 5m vol): PASS at conviction 3, PASS: DIP with no story behind it. No catalyst, theme pace 0.8x, 13 copies of the ticker, and the site doesn't show this CA (V1, V3, V13).  
+  CA `2cMcMEX3Eqo86tUrVe5dgHp5GZNwqQ6crqm22UeZpump`
+- 05:16Z Mischio (MIGRATED, $97,173 mcap, $18,454 5m vol): PASS at conviction 3, PASS: chasing spike. Mischio is up 48% in 5m and sits about 10% off a high it printed minutes ago, with no printed higher low, just a V-shaped bounce off a 2.7e-5 hourly low. Blockers: "chasing spike" and "near the high." (V1, V6)  
+  CA `EULWnfX3hvnuod8wARSVFPyU1VnJxTB8YBaJFDvrpump`
+- 05:15Z 6STAR (MIGRATED, $42,098 mcap, $36,049 5m vol): PASS at conviction 2, PASS: this is a copy, not the leader. The WANTED leader is 9jhs5... at $190k, and this one is 7 minutes old in a 25-coin split crowd (V1, V3, V13).  
+  CA `9ASEjk3rPt7AUmGdMzwmzoabMKg1mrqdf4q1hKPzpump`
+- 05:06Z WANTED (MIGRATED, $202,642 mcap, $39,994 5m vol): REJECT, Bundles: 3 linked wallet cluster(s) hold 43.4% of supply (>20%) (V17)  
+  CA `9jhs5qoJnUFU7AZXbsiD1Q6De6FVsino9Ysw8QU6pump`
 - 05:04Z DRILL (MIGRATED, $45,031 mcap, $4,198 5m vol): PASS at conviction 3, PASS — DRILL is sitting at its high (2.1% off a $46k peak) with 5m flow at 3.7x its hourly pace, no higher low, and a GitHub repo created six hours ago. Blocker: chasing spike. (V1, V6)  
   CA `Ts2yi5FhTDAmhwTKH6ab6unWeoCMzzjz4JCPtBDRiLL`
 - 05:03Z bul (DIP, $216,484 mcap, $4,996 5m vol): REJECT, Dip with fading attention is a falling knife, not a dip (5m at 0.16x the hour's pace, under 0.6x)  
@@ -88,14 +96,6 @@ Updated 2026-11-17T05:04:53Z (paper trading, never real money)
   CA `BRf3SXRk8BdXmBZDJfKyEhbYmqBVf8843ctEMcD4pump`
 - 04:53Z BAWSAQ (DIP, $1,044,691 mcap, $4,726 5m vol): PASS at conviction 3, PASS — DIP on a parody ticker with the theme at 0.52x its hourly pace and no catalyst found. Falling knife in a crowded field. Blocker: "theme volume below pace." (V1, V13)  
   CA `D9EcoQZeAytCrF1kQFSpRNpoPhibJUvJcmRHXhubpump`
-- 04:51Z DIGS (MIGRATED, $222,355 mcap, $3,380 5m vol): REJECT, Bundles: 10 linked wallet cluster(s) hold 100.0% of supply (>20%) (V17)  
-  CA `9QT8K685Hrae4k11dhGXirdtpfAaimExtyfwt8cPpump`
-- 04:45Z JOB (MIGRATED, $2,023,854 mcap, $2,533 5m vol): PASS at conviction 3, PASS. Flow is at 0.74x its hourly pace, the 5m buy share is 0.40, and there is no printed higher low. It's a crowded same-ticker field with a 17.5% bundle cluster. Blocker: flow below pace, no higher low, theme pace 0.62x (V1, V6, V13).  
-  CA `9Pq7aLAbhDG2tTnS22cm6kuysZVcZpLFE368HWuypump`
-- 04:38Z MELNOK (MIGRATED, $129,950 mcap, $7,229 5m vol): PASS at conviction 3, PASS: flow at 0.74x the hourly pace, 5m volume $7.2k under the $10k bar, buyers 47% of 5m trades, and the nearest high is only ~12% away. Blocker: "flow below pace" plus "target too close". (V1, V6)  
-  CA `3ig9E5SQKs8RjVn9EuW1YaprjaMd6dEftG63hBcMpump`
-- 04:31Z LEOSTAR (MIGRATED, $1,109,967 mcap, $2,819 5m vol): PASS at conviction 2, PASS: flow below pace, 13 copies of the ticker, and the first resistance is only 1.43x away. Holders are clean, but there's no story. (V1, V6, V13)  
-  CA `2cMcMEX3Eqo86tUrVe5dgHp5GZNwqQ6crqm22UeZpump`
 
 ## What its skips did next (last 48h)
 A skip "ran" if the coin reached the first target (1.5x) from the skip price before a 20% drop, "dumped" if the drop came first. Sampled every 10 min, followed 6h.
@@ -106,7 +106,7 @@ A skip "ran" if the coin reached the first target (1.5x) from the skip price bef
     CA `BDPm9gPHCRyo2qjcRrYPsXexmbRwuuHQZo2qhhYXpump`
   - ran: ANT up to 1.58x  
     CA `7H2sHeLHyHR8jxENGmsqn7RxTkYZa4KwXvKYcoxBpump`
-- too new / sniping: blocked 51, ran 9, dumped 41, flat 0, open 1 (saving losses: keep it)
+- too new / sniping: blocked 52, ran 9, dumped 42, flat 0, open 1 (saving losses: keep it)
   - ran: Chick up to 1.66x  
     CA `Dueav76X9spnoLomhM2jMkkWorVggbeWucLs3YLupump`
   - ran: TOOLS up to 1.83x  
@@ -120,7 +120,7 @@ A skip "ran" if the coin reached the first target (1.5x) from the skip price bef
     CA `4Dj8m9vWqu779F1KDBUttvXM8YFm7U92SDpvjBNKtEiB`
   - ran: ANT up to 1.52x  
     CA `BDPm9gPHCRyo2qjcRrYPsXexmbRwuuHQZo2qhhYXpump`
-- near the high / chasing: blocked 40, ran 7, dumped 31, flat 0, open 2 (saving losses: keep it)
+- near the high / chasing: blocked 39, ran 7, dumped 29, flat 0, open 3 (saving losses: keep it)
   - ran: penny up to 1.6x  
     CA `5gmCPpuktJ7Svjgr4PPJBTosAFKB8K6Z45EGfSUmpump`
   - ran: WIGGLES up to 1.69x  
@@ -203,13 +203,13 @@ Nothing shows a positive edge after costs. Over 309 settled coins, every setup l
 The meta is animal and joke coins on launch spikes, not one story. Tuff Cat ($53k mcap, $141k 5m, 52% buys) and Bundeswehr Duck (+771% 1h, $13.5k 5m, 66% buys) are rising on fresh volume, and bul and CHAR are running at +266% and +146% with $46k and $58k of 5m volume. The fading side is the same theme after the spike: Frogecoin, Jojo the gorilla, Mihaomas, PEARL and WANTED are down 74-93% on the hour, and WANTED's 5m volume has collapsed to $13.5k even though 65% of its recent buys are buys. The crawler's summary names BAWSAQ, VICEX, Copytrader and DRILL and says WANTED did +180% on $71k of 5m volume; none of those appear in scan_movers and WANTED's numbers don't match, so I'm trusting the scan and discounting those claims. Setups to research now: CHAR and Tuff Cat as MIGRATED candidates (under 12h, mcap above $30k, 5m volume well over $10k), with bul as a pullback watch rather than a chase at +266%. WANTED is a DIP candidate only if its 5m volume holds near its hourly pace; right now it's a falling knife. Paper only, not financial advice.
 
 ## Moving most in its scans, last 30 min (1h volume)
+- WANTED: $379,789 1h vol, $189,772 mcap, +51% 1h  
+  CA `9jhs5qoJnUFU7AZXbsiD1Q6De6FVsino9Ysw8QU6pump`
 - bul: $375,175 1h vol, $216,953 mcap, -3% 1h  
   CA `Dys6SYbjUsy8kksaqrXqo5L2GzgCYDiguGGcS8B5rkrv`
-- MELNOK: $117,335 1h vol, $129,950 mcap, +27% 1h  
-  CA `3ig9E5SQKs8RjVn9EuW1YaprjaMd6dEftG63hBcMpump`
-- LIFEINVADER: $83,570 1h vol, $3,655 mcap, -76% 1h  
-  CA `3LrMAQ2sMweMRbqTU8RAvqZsmuP8DUutx1uWuMVvLiFe`
+- Tuff: $295,953 1h vol, $3,157 mcap, -90% 1h  
+  CA `4xYLY4PLLapVcTwvUPRTnSraoPZgXzXYGtAKw7ogpump`
+- Mischio: $156,959 1h vol, $95,683 mcap, +54% 1h  
+  CA `EULWnfX3hvnuod8wARSVFPyU1VnJxTB8YBaJFDvrpump`
 - BAWSAQ: $82,756 1h vol, $972,163 mcap, -39% 1h  
   CA `D9EcoQZeAytCrF1kQFSpRNpoPhibJUvJcmRHXhubpump`
-- BAWSAQ: $80,268 1h vol, $8,382 mcap, -81% 1h  
-  CA `7oLe9x2y6aKxFrsQwmTSYyrsfZ1F6ygr4UtrP5Rxpump`
