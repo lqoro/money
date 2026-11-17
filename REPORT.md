@@ -1,13 +1,13 @@
 # Trencher live report
 
-Updated 2026-11-17T01:47:36Z (paper trading, never real money)
+Updated 2026-11-17T02:02:51Z (paper trading, never real money)
 
 - Equity: $74.23 (-25.8% vs $100 start)
 - Closed trades: 22, 3 wins
 - Fees paid: $14.78 (axiom $2.81, network $9.18, pool $2.66), plus $4.15 lost to slippage
 - New trades: WATCH-ONLY (scans and decides, buys nothing)
-- Brain: subscription, claude-haiku-5-5 for routine calls, claude-opus-5-5 for the daily review; 424 routine calls and 1 plan-limit hits in 48h
-- Watch log: 126 coins being followed, 1905 filed, 0 would-buys (6h follow, sampled every 2 min)
+- Brain: subscription, claude-haiku-5-5 for routine calls, claude-opus-5-5 for the daily review; 429 routine calls and 1 plan-limit hits in 48h
+- Watch log: 129 coins being followed, 1910 filed, 0 would-buys (6h follow, sampled every 2 min)
 
 ## Scorecard (after fees)
 - 22 closed, 3 won (14%), net $-25.79
@@ -73,47 +73,47 @@ Updated 2026-11-17T01:47:36Z (paper trading, never real money)
   CA `H4gHnZ3NCU7Z9XQwGX6YYJNyieGEW8pqwGRUcdSxpump`
 
 ## Last scan
-- 01:47Z: 7 coins, 5 with pairs, 0 passed the market filters, 0 researched
+- 02:02Z: 3 coins, 2 with pairs, 0 passed the market filters, 0 researched
 
 ## Coins it looked at, and why it passed
+- 02:02Z CAT (MIGRATED, $38,372 mcap, $13,209 5m vol): PASS at conviction 3, PASS: blocker "too new". CAT is 17 minutes old, 28.5% off a peak set 18 minutes ago, with no printed higher low and top 10 at 22.1%. Name carries a slur. Vamp-field copy in a fading GTA theme (V1, V3, V6, V13).  
+  CA `2HVqzNisr463WMDpp6Q45ekuVfcjm8kEaiKd4ra8pump`
+- 02:01Z Jojo (MIGRATED, $111,942 mcap, $31,597 5m vol): PASS at conviction 3, PASS: flow at 0.67x hourly pace, 0.5h old and still bleeding off a bond spike with no base, and no buzz behind the story. Blockers: "flow below pace", "too new", "no higher low", "split crowd". (V1, V6)  
+  CA `D2Zkpv4m8M9Yh7tSDDCtcyZb6WQYVKzkQjM4x5eMQDZB`
+- 02:01Z Santa (FINAL_STRETCH, $17,885 mcap, $49,105 5m vol): PASS at conviction 3, PASS — 6 minutes old, up 82% on the last 5m candle at 9.4x hourly pace, no higher low, 26 copies in the field. Chasing the spike. (V1, V6)  
+  CA `57oAJzb4qzcwgAZkHJLLSbhUr1LLoQ7APspfntifpump`
+- 01:57Z GTA (MIGRATED, $1,121,938 mcap, $4,132 5m vol): PASS at conviction 2, PASS: flow at 0.81x pace on $4.1k 5m, and the $1.26M peak is only 1.12x away. Blockers: flow below pace, target too close. (V1, V6)  
+  CA `2NWgu4fqN2AxS5pp5v3f3SH54qArP9JepQFJm58gpump`
+- 01:55Z WASTED (DIP, $3,246,081 mcap, $1,752 5m vol): REJECT, 5m volume $1,752 is dead (<$2,000) (V1)  
+  CA `GexThZHgaswpAQ7Fi8QrHFubjPimUNSYhJiAA7XZpump`
+- 01:55Z CET (FINAL_STRETCH, $17,298 mcap, $3,945 5m vol): REJECT, Top 10 hold 26.9% ex-pool (>25%) (V13)  
+  CA `7uzHUfXSUG5FeoiBH9kCJduYG6ymTfekXPXAu182wDWQ`
+- 01:50Z BAWSAQ (DIP, $1,432,065 mcap, $7,909 5m vol): PASS at conviction 4, PASS: the Vice City/GTA theme runs at 0.79x its hourly pace across 8 copies, and a bottom buy needs the theme keeping pace plus a real catalyst. Blocker: "theme pace". (V1, V13)  
+  CA `D9EcoQZeAytCrF1kQFSpRNpoPhibJUvJcmRHXhubpump`
+- 01:48Z AGI (MIGRATED, $78,814 mcap, $2,533 5m vol): REJECT, RugCheck danger: Mint Authority still enabled  
+  CA `CUmQsPuWxK97tYYWV44qhHXEu69oM4nj3CpYBTw796ea`
 - 01:45Z DIGS (MIGRATED, $192,895 mcap, $2,097 5m vol): REJECT, Bundles: 10 linked wallet cluster(s) hold 100.0% of supply (>20%) (V17)  
   CA `9QT8K685Hrae4k11dhGXirdtpfAaimExtyfwt8cPpump`
 - 01:43Z JOB (MIGRATED, $2,052,855 mcap, $2,572 5m vol): PASS at conviction 2, PASS: flow below pace, the first resistance is only 1.27x away, and a 17% bundle cluster sits in a 24-copy field. Blockers: flow below pace, target too close, big cap no room, bottom buy without a catalyst (V1, V3, V6, V13).  
   CA `9Pq7aLAbhDG2tTnS22cm6kuysZVcZpLFE368HWuypump`
-- 01:31Z ETF (MIGRATED, $215,638 mcap, $2,370 5m vol): PASS at conviction 2, PASS: ETF flow is below pace (0.58x its own hour, theme 0.37x across 14 copies), 5m volume $2.4k, and the story is a parody in a 21-copy field. Blocker: flow below pace. (V1, V6, V13)  
-  CA `Gg5aWvfucyMwihDzyfCEaLgyeeNE2dkob2LTwWfHpump`
-- 01:30Z COGE (DIP, $193,400 mcap, $2,845 5m vol): REJECT, Top 10 hold 37.0% ex-pool (>25%) (V13)  
-  CA `BRf3SXRk8BdXmBZDJfKyEhbYmqBVf8843ctEMcD4pump`
-- 01:29Z LEOSTAR (MIGRATED, $901,804 mcap, $11,165 5m vol): PASS at conviction 3, PASS: no catalyst, the site is 0.4 days old and doesn't show this CA, and LEOSTAR is one of 13 same-ticker coins. Blocker: "dead story" plus the bottom-buy rule. (V3, V6, V13)  
-  CA `2cMcMEX3Eqo86tUrVe5dgHp5GZNwqQ6crqm22UeZpump`
-- 01:18Z BIGP (MIGRATED, $40,972 mcap, $2,043 5m vol): REJECT, Top 10 hold 25.4% ex-pool (>25%) (V13)  
-  CA `D3g7TDE64JvXDQkoVnswXPEv1i28kovsDYCvBs89pump`
-- 01:11Z GTA (MIGRATED, $1,188,210 mcap, $4,405 5m vol): PASS at conviction 3, PASS: chasing, flow below pace, big cap with no room. It's a fan-meme copy in a 22-copy field, and the 5m is $4.4k. Not for me. (V1, V6, V13)  
-  CA `2NWgu4fqN2AxS5pp5v3f3SH54qArP9JepQFJm58gpump`
-- 01:10Z WASTED (DIP, $3,275,636 mcap, $4,313 5m vol): REJECT, Top 10 hold 25.4% ex-pool (>25%) (V13)  
-  CA `GexThZHgaswpAQ7Fi8QrHFubjPimUNSYhJiAA7XZpump`
-- 01:10Z SHARE (FINAL_STRETCH, $16,626 mcap, $11,823 5m vol): PASS at conviction 2, PASS: SHARE is a sell-heavy pump.fun coin in a 5-copy "bags/share" field with no X, no site, and zero radar mentions. Blocker: sellers dominate (5m buy ratio 0.30, -15% on 5m). Nothing to buy into.  
-  CA `CTsD5kMoPcwG8AYZQoaRZjbLmeC9xYtHib5u38Wmpump`
-- 01:04Z BAWSAQ (DIP, $1,785,298 mcap, $9,294 5m vol): PASS at conviction 3, PASS: bottom buy with no catalyst, theme volume at 0.47x pace, and no printed higher low. The $1.8M coin is 44.7% off its $3.2M high, but nothing in the dossier says the Vice City story is coming back. (V1, V6, V13)  
-  CA `D9EcoQZeAytCrF1kQFSpRNpoPhibJUvJcmRHXhubpump`
 
 ## What its skips did next (last 48h)
 A skip "ran" if the coin reached the first target (1.5x) from the skip price before a 20% drop, "dumped" if the drop came first. Sampled every 10 min, followed 6h.
-- flow below pace: blocked 54, ran 8, dumped 39, flat 2, open 5 (saving losses: keep it)
+- flow below pace: blocked 54, ran 9, dumped 39, flat 2, open 4 (saving losses: keep it)
   - ran: PASSED up to 1.73x  
     CA `3XaH8VPUaUegqmnkYA8PXCWqQqD8doqdsGGfZyoYpump`
   - ran: ANT up to 1.52x  
     CA `BDPm9gPHCRyo2qjcRrYPsXexmbRwuuHQZo2qhhYXpump`
   - ran: ANT up to 1.58x  
     CA `7H2sHeLHyHR8jxENGmsqn7RxTkYZa4KwXvKYcoxBpump`
-- top 10 over 25%: blocked 49, ran 10, dumped 33, flat 3, open 3 (saving losses: keep it)
+- top 10 over 25%: blocked 50, ran 10, dumped 33, flat 3, open 4 (saving losses: keep it)
   - ran: rockstar up to 1.95x  
     CA `9HFUEab7sompLDPTAaTGkryMNGbtBaFMhHMVpJEBpump`
   - ran: VI up to 1.71x  
     CA `4Dj8m9vWqu779F1KDBUttvXM8YFm7U92SDpvjBNKtEiB`
   - ran: ANT up to 1.52x  
     CA `BDPm9gPHCRyo2qjcRrYPsXexmbRwuuHQZo2qhhYXpump`
-- too new / sniping: blocked 45, ran 8, dumped 37, flat 0, open 0 (saving losses: keep it)
+- too new / sniping: blocked 48, ran 8, dumped 37, flat 0, open 3 (saving losses: keep it)
   - ran: Chick up to 1.66x  
     CA `Dueav76X9spnoLomhM2jMkkWorVggbeWucLs3YLupump`
   - ran: TOOLS up to 1.83x  
@@ -127,7 +127,7 @@ A skip "ran" if the coin reached the first target (1.5x) from the skip price bef
     CA `2kWx47CUrcXtzptFNnbSXKq3vo1ebqyLBhRytKRGpump`
   - ran: Bustas up to 1.75x  
     CA `9rTgs58B3p11vXekTTgVYtv8vKxQ6oSoZFXPy4onpump`
-- RugCheck danger: blocked 32, ran 9, dumped 22, flat 1, open 0 (saving losses: keep it)
+- RugCheck danger: blocked 32, ran 8, dumped 22, flat 1, open 1 (saving losses: keep it)
   - ran: Ivy up to 1.88x  
     CA `DxNF3Qxd8XeUBdz7ReRdoiFzRmNDKbSz4c2oA7aRpump`
   - ran: SI up to 1.93x  
@@ -144,13 +144,13 @@ A skip "ran" if the coin reached the first target (1.5x) from the skip price bef
 - falling knife (code): blocked 16, ran 1, dumped 12, flat 1, open 2 (saving losses: keep it)
   - ran: BigP up to 1.57x  
     CA `CY254o6VPaJnTiY5uuKUB8xDjSgykC6xtoLoC3kpump`
-- thin 5m volume: blocked 15, ran 3, dumped 9, flat 0, open 3 (saving losses: keep it)
+- thin 5m volume: blocked 16, ran 4, dumped 9, flat 0, open 3 (saving losses: keep it)
   - ran: SENDER up to 1.58x  
     CA `5peJLZQnBkXtydYYMunbT4QutSyd9eA474MqxcmEpump`
   - ran: UNITY up to 1.66x  
     CA `GD6MboptxbHBspASr5PWozgNDrZxmxJ8JpBBD8Vpump`
-  - ran: SHARE up to 3.24x  
-    CA `CTsD5kMoPcwG8AYZQoaRZjbLmeC9xYtHib5u38Wmpump`
+  - ran: LEOSTAR up to 1.54x  
+    CA `2cMcMEX3Eqo86tUrVe5dgHp5GZNwqQ6crqm22UeZpump`
 - dev share over 1%: blocked 11, ran 2, dumped 8, flat 0, open 1 (saving losses: keep it)
   - ran: PANICSELL up to 1.74x  
     CA `82Z6CcE5g3o1jW3vgtcqr95jP4XFx8jg1SJe8ikepump`
@@ -203,13 +203,13 @@ Nothing shows a positive edge after costs. Over 309 settled coins, every setup l
 The scan is not quiet. The movers are doing real volume, but most of the crowd is arriving in coins under an hour old. Three themes show up across several coins. (1) Sub-hour pump.fun micro-launches pumping 100-600% then fading: CET (+227%, $9.4k cap, $4.4k 5m, 64% buys) and BAWSAQ6900 (+145%, $8.9k, $5.6k 5m, 60% buys) are rising, while SHARE (+638%, $10.7k 5m) is rising on 31% buys, which is sell pressure. (2) GTA/Vice City names, mixed and mostly fading: LUCIA is at a $1.3k cap and -97% on $429k of 1h volume, so that chart has been pulled down, while "Grand Theft Anthropic" ($1.2M, 7h old, +31% 1h, 65% buys) is holding. (3) AI-brand names: AGI (+108%, $49k) and the Anthropic coin, both thin on 5m. The crawler's summary numbers for LUCIA, GTA and BANDANA don't match the scan (LUCIA shows $1.3k, not $90k), so I'm trusting the scan and discounting the write-up. Trump/Nvidia headlines say interest is fading, and no mover is leading on that theme. The only mover that clears our $10k 5m bar in the MIGRATED range is LEOSTAR ($902k cap, $11.2k 5m, 62% buys, -13% 1h, 2.4h old). That's the first setup to research as a dip/MIGRATED candidate. Holder, dev and bundle checks have not been run on any of these yet. Paper only, not financial advice.
 
 ## Moving most in its scans, last 30 min (1h volume)
-- LUCIA: $329,277 1h vol, $1,317 mcap, -99% 1h  
-  CA `27Ggmg2ZmaehHX7L5vZqCeTRoQmPaBtR5vqvaRLbpump`
-- IFRUIT: $141,643 1h vol, $9,215 mcap, +157% 1h  
+- Jojo: $564,292 1h vol, $116,507 mcap, +282% 1h  
+  CA `D2Zkpv4m8M9Yh7tSDDCtcyZb6WQYVKzkQjM4x5eMQDZB`
+- SHARE: $167,707 1h vol, $2,502 mcap, -91% 1h  
+  CA `CTsD5kMoPcwG8AYZQoaRZjbLmeC9xYtHib5u38Wmpump`
+- IFRUIT: $124,345 1h vol, $8,338 mcap, -10% 1h  
   CA `EykPg5B2c5Gd7VTsiGJRGtx3A3W44sD9ATmiGziDpump`
-- LEOSTAR: $108,607 1h vol, $901,804 mcap, -13% 1h  
-  CA `2cMcMEX3Eqo86tUrVe5dgHp5GZNwqQ6crqm22UeZpump`
-- LUCIA: $92,540 1h vol, $1,348 mcap, -98% 1h  
-  CA `HgDyiDQ2hfcPiYoSgzfu7848Aw4iFyPt6sWpmXnSpump`
-- OPTIMJACK: $92,055 1h vol, $6,410 mcap, -76% 1h  
-  CA `E7yuK8THvRMT9CDTQcqDLdWi92W4gpPseUBLTXFDKHhG`
+- BAWSAQ: $110,012 1h vol, $1,404,632 mcap, -13% 1h  
+  CA `D9EcoQZeAytCrF1kQFSpRNpoPhibJUvJcmRHXhubpump`
+- LUCIA: $94,472 1h vol, $1,318 mcap, -99% 1h  
+  CA `27Ggmg2ZmaehHX7L5vZqCeTRoQmPaBtR5vqvaRLbpump`
