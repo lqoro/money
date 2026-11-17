@@ -1,17 +1,17 @@
 {
- "updated_at": "2026-11-17T19:12:52Z",
+ "updated_at": "2026-11-17T19:27:54Z",
  "paused_new_trades": true,
  "watch_only": true,
  "brain": {
   "mode": "subscription",
   "model": "claude-haiku-5-5",
   "head_model": "claude-opus-5-5",
-  "paused_until": 1794944114.7748952,
+  "paused_until": 1794945336.0592692,
   "usage_48h": {
    "hours": 48,
-   "brain_calls": 496,
-   "plan_limit_hits": 40,
-   "candidates_skipped_no_brain": 320,
+   "brain_calls": 497,
+   "plan_limit_hits": 42,
+   "candidates_skipped_no_brain": 329,
    "stop_reviews_without_brain": 0
   }
  },
@@ -574,7 +574,7 @@
  ],
  "learned_rules": "- **The money shape rates 8, or 9 if the radar shows the story still climbing and mcap is under ~$1M.** It looks like this: a MIGRATED coin leading on 5m volume, 25\u201345% off its local high, a printed higher low above the hourly low, 5m flow at or above the hourly pace, more buys than sells, top 10 under 15%, low RugCheck bundles. Both real winners looked like this (CATBOT 4.44x, FLOATER 2.19x, both under $1M) (V1, V6, V13). Rate it what it earns so code sizes it up (owner goal).\n- **Owner floor: 7 under ~$1M mcap.** If the hard lines pass, flow is live (5m \u2265 $10k and at or above pace), a higher low is printed and the first resistance is \u22651.5x away, rate it 7 or higher. Don't dock points for things the checklist already measured.\n- **The MIGRATED buy zone is 10\u201360% off the local high** (owner rule). Within 10% of the high is a PASS, blocker \"chasing\" (42 skips: 3 ran, 36 dumped).\n- **The shallow band (10\u201325% off the high) is a breakout trade, capped at 7.** It must be the 5m volume leader, pushing into the high right now, with flow at or above pace. Otherwise PASS, blocker \"no breakout\".\n- **A spike counts as chasing anywhere in the zone.** If the last 5m candle is up more than 25% or 5m volume is more than 3x the hourly pace, wait for a retrace and a printed higher low. Blocker \"chasing spike\" (PILLSEY).\n- **On MIGRATED, flow below pace or no printed higher low is a PASS, never a probe.** A printed higher low means three things: a bounce off the hourly low, a pullback that holds above it, and price back above that bounce's high. A buy share, a fib touch or a first green candle is not one. Blockers \"flow below pace\" / \"no higher low\" (Slingoor, ANAKIN, BLUE, SI, AAPLCAT never got past 1.01x).\n- **Buy close to the structure.** Enter only within ~12% above the printed higher low, so the thesis breaks before the hard stop. Further above it is a mid-range entry: wait for a pullback or PASS, blocker \"mid-range\". Stops fill around \u221230 to \u221238%, not \u221220%, so entry distance is the real risk control.\n- **Rate on the first resistance (prior high, POC or 0.618).** At \u22651.5x away it can rate 8\u20139. At 1.3\u20131.5x the cap is 7. Under 1.3x is a PASS, blocker \"target too close\" (PAWCAT, SWAN).\n- **Above ~$1M mcap, a probe (6) is the most you take.** Only take it if the first resistance is \u22651.5x away and a breakout with flow at or above pace is printing right now. Otherwise PASS, blocker \"big cap, no room\" (1 green in 10).\n- **A migration under 1h old that is still bleeding off its bond spike waits for a base above the hourly low.** Blocker \"too new\" (50 skips: 9 ran, 41 dumped).\n- **In a vamp field, buy only the leader by 5m volume and radar mentions.** A bundle cluster inside a big same-ticker field is a PASS, blocker \"split crowd\" (V1, V3).\n- **A DIP needs all of these:** a 40\u201370% drawdown, 5m flow at least 0.7x the hourly pace (owner gate, no \"rising\" needed), the story still on the radar, and a printed higher low with entry within ~12% of it. If all pass, size by conviction (7\u20138 when clean). A DIP whose catalyst already printed (news, rebrand) is a probe (6) at most until it reclaims its pullback high. A thin tech/LARP story is a PASS, blocker \"dead story\" (HEXN x2, SIS; DIPs 0 for 5).\n- **Hard blocks:** top 10 over 25%, dev over 1%, bundles or insiders over the line, mint or freeze authority live, LP not burned, a political figure, RugCheck danger, any hack/exploit/drain story (V6, V13, V17, owner). Name the blocker in every PASS.\n- **If RugCheck didn't load, it's a probe at most (6), not a block.** That needs the dossier's top-10 and dev numbers clean, mcap under $1M and the rest in the money shape. Say bundles are unverified.\n- **Manage the trade; stops sell with no review.** If the printed higher low breaks, sell. If it hasn't reached 1.05x by minute 10 with flow under pace, exit. If it's green before initials and 5m volume drops under half the hourly pace, sell half. At the time stop, exit; the only extension is one 15-minute window while a volume surge at or above pace is printing. Re-enter a stopped-out coin only once, and only when it reclaims its prior high with flow at or above pace (re-entries 0 for 4).\n",
  "meta": {
-  "age_minutes": 8,
+  "age_minutes": 2,
   "meta_summary": "Meta: the only theme with real 5m flow is a fresh-launch cluster of \"Justice For So You Are\" copies. Four tickers under 40 minutes old show $15k to $54k of 5m volume, 53-61% buys, and 1h moves of +113% to +860%, so the copies compete for one story and I need to find the original. Rising but cooling: GROKIA (AI/Grok-flavored, Raydium, $373k cap) is +1027% on the hour, but its 5m volume is only $8.8k, which is under the bar. Fading: the old dog/animal tier (BLOB, JOB, GATO, DIGS) is flat to red with sub-50% buys on most, and the game-reskin GTA names are thin (GTA Pad $217 on 5m, BAWSAQ -19% on $2k). The web confirms the fade story: Trump dinner interest is dropping in headlines and no Trump coin is in the scan, so it isn't driving flow. Research only, no buys yet: the SOYOUARE cluster, starting with 6efK... on pumpswap (64k cap, $53.8k 5m) and GbGz... on the pump.fun curve (13k cap, $27k 5m), to find the original and test whether the copies are a vamp farm; conviction stays low until holders, dev and bundle checks come back clean. PASS on BLOB (above the recon cap and flat) and GROKIA (5m under the $10k bar).",
   "top_narratives": [
    "trump",
@@ -591,37 +591,37 @@
    "dinner fades",
    "interest trump",
    "binance",
+   "huang",
+   "tokenized",
+   "platform",
    "fees",
    "game",
-   "huang",
-   "platform",
-   "tokenized",
    "ahead"
   ],
   "trending_categories": [
    "Airdropped Tokens by NFT Projects",
    "IP Meme",
    "Solana Meme",
-   "The Boy\u2019s Club",
-   "Frog-Themed",
-   "Binance HODLer Airdrops"
+   "Venice Ecosystem",
+   "AI Applications",
+   "Privacy Blockchain"
   ],
   "trending_coins": [
    "BP",
    "BREV",
-   "BTC",
-   "VVV",
-   "QTC",
    "SOL",
-   "PENGU",
-   "XMR",
-   "PEPE",
-   "LUNC",
-   "MON",
-   "HYPE",
+   "BTC",
+   "PEARL",
    "XRP",
-   "ADA",
-   "ICP"
+   "PENGU",
+   "ALGO",
+   "VVV",
+   "QNT",
+   "APT",
+   "HYPE",
+   "ENA",
+   "INJ",
+   "ONDO"
   ],
   "hot_tickers": [
    {
@@ -629,11 +629,11 @@
     "mentions": 4
    },
    {
-    "ticker": "$DIGS",
-    "mentions": 4
+    "ticker": "$WANTED",
+    "mentions": 3
    },
    {
-    "ticker": "$WANTED",
+    "ticker": "$DIGS",
     "mentions": 3
    },
    {
@@ -665,11 +665,11 @@
     "mentions": 1
    },
    {
-    "ticker": "$FEDE",
+    "ticker": "$JALU",
     "mentions": 1
    },
    {
-    "ticker": "$SNB",
+    "ticker": "$GTA6",
     "mentions": 1
    }
   ],
@@ -694,40 +694,40 @@
     "age_hours": 0.9
    },
    {
-    "symbol": "GTA",
-    "name": "Grend Thuft Auta",
-    "ca": "DUgwMUc5Wh2nU2S3dMPnqcMJYVSARgQwq26kmRSbpump",
+    "symbol": "JALU",
+    "name": "Jason & Lucia",
+    "ca": "BSsmLA6UN8fzJ8qUkV4KwC5LxR7ab3TaUtcwvAyJpump",
     "dex": "pumpswap",
-    "mcap_usd": 170239,
-    "vol_5m": 18531,
-    "vol_1h": 112831,
-    "change_1h": 363,
-    "buy_ratio_5m": 0.73,
-    "age_hours": 0.4
+    "mcap_usd": 442984,
+    "vol_5m": 13286,
+    "vol_1h": 525612,
+    "change_1h": 845,
+    "buy_ratio_5m": 0.78,
+    "age_hours": 0.6
    },
    {
-    "symbol": "Juan",
-    "name": "Juan Miguel L\u00f3pez Gil",
-    "ca": "etnUoipCj19rGdyKSs7qi9Byp9eGcAUTAq5EQY5pump",
-    "dex": "pumpfun",
-    "mcap_usd": 13865,
-    "vol_5m": 585,
-    "vol_1h": 104071,
-    "change_1h": -24.66,
-    "buy_ratio_5m": 0.39,
-    "age_hours": 1.1
+    "symbol": "GM",
+    "name": "GTAVI Mascot",
+    "ca": "CSmSeS8XkxXTVa47LHtY9Mx1FSSwqw94tjqy4te3pump",
+    "dex": "pumpswap",
+    "mcap_usd": 249181,
+    "vol_5m": 10124,
+    "vol_1h": 217695,
+    "change_1h": 59.81,
+    "buy_ratio_5m": 0.68,
+    "age_hours": 1.0
    },
    {
     "symbol": "ACRUX",
     "name": "Acrux",
     "ca": "7Evw4uxTxLGGEFEvXLUNYyc1J7PnFk9EYwTUFagARUX",
     "dex": "raydium",
-    "mcap_usd": 118787,
-    "vol_5m": 3914,
-    "vol_1h": 102467,
-    "change_1h": 14.79,
-    "buy_ratio_5m": 0.58,
-    "age_hours": 1.6
+    "mcap_usd": 98632,
+    "vol_5m": 2284,
+    "vol_1h": 84547,
+    "change_1h": -36.55,
+    "buy_ratio_5m": 0.67,
+    "age_hours": 1.8
    },
    {
     "symbol": "GATO",
@@ -742,64 +742,28 @@
     "age_hours": 2022.7
    },
    {
-    "symbol": "GTA",
-    "name": "Gekko Theft Auto",
-    "ca": "F5sVohBg9zjTWVxxGpiWpzsuGxGGy3W3XjwVRzrDpump",
-    "dex": "pumpswap",
-    "mcap_usd": 174334,
-    "vol_5m": 13441,
-    "vol_1h": 66378,
-    "change_1h": 385,
-    "buy_ratio_5m": 0.76,
-    "age_hours": 0.3
-   },
-   {
     "symbol": "404",
     "name": "404",
     "ca": "7oDqPhAFcnqwwAMKQ3UqjM1y9DbBeHwjpMKGMzMVpump",
     "dex": "pumpfun",
-    "mcap_usd": 2071,
+    "mcap_usd": 2061,
     "vol_5m": 0,
-    "vol_1h": 65090,
-    "change_1h": -62.62,
-    "buy_ratio_5m": null,
-    "age_hours": 0.7
-   },
-   {
-    "symbol": "MINT",
-    "name": "Minteral",
-    "ca": "5p9HhWsNh5aWnCUmd5wJysu8KhvdAGirNz9bQyFHpump",
-    "dex": "pumpswap",
-    "mcap_usd": 2048,
-    "vol_5m": 109,
-    "vol_1h": 60043,
-    "change_1h": -92.64,
-    "buy_ratio_5m": 0.4,
-    "age_hours": 0.7
-   },
-   {
-    "symbol": "REFU",
-    "name": "Refugium",
-    "ca": "4ULpYvaTGRq1KnaCiPhz52nyQFx86wN1vqqX3ny8refu",
-    "dex": "pumpswap",
-    "mcap_usd": 198410,
-    "vol_5m": 763,
-    "vol_1h": 59715,
-    "change_1h": -25.22,
-    "buy_ratio_5m": 0.7,
-    "age_hours": 2.3
+    "vol_1h": 65098,
+    "change_1h": -62.8,
+    "buy_ratio_5m": 0.5,
+    "age_hours": 0.9
    },
    {
     "symbol": "GTA",
     "name": "Grand Theft Anthropic",
     "ca": "2NWgu4fqN2AxS5pp5v3f3SH54qArP9JepQFJm58gpump",
     "dex": "pumpswap",
-    "mcap_usd": 1127433,
-    "vol_5m": 3216,
-    "vol_1h": 57821,
-    "change_1h": 10,
-    "buy_ratio_5m": 0.48,
-    "age_hours": 25.2
+    "mcap_usd": 1116978,
+    "vol_5m": 4418,
+    "vol_1h": 57473,
+    "change_1h": 18.06,
+    "buy_ratio_5m": 0.46,
+    "age_hours": 25.5
    },
    {
     "symbol": "DIGS",
@@ -814,185 +778,100 @@
     "age_hours": 486.4
    },
    {
+    "symbol": "MINT",
+    "name": "Minteral",
+    "ca": "5p9HhWsNh5aWnCUmd5wJysu8KhvdAGirNz9bQyFHpump",
+    "dex": "pumpswap",
+    "mcap_usd": 1745,
+    "vol_5m": 0,
+    "vol_1h": 51686,
+    "change_1h": -94.09,
+    "buy_ratio_5m": null,
+    "age_hours": 1.0
+   },
+   {
+    "symbol": "REFU",
+    "name": "Refugium",
+    "ca": "4ULpYvaTGRq1KnaCiPhz52nyQFx86wN1vqqX3ny8refu",
+    "dex": "pumpswap",
+    "mcap_usd": 197254,
+    "vol_5m": 846,
+    "vol_1h": 45547,
+    "change_1h": -1.5,
+    "buy_ratio_5m": 0.38,
+    "age_hours": 2.5
+   },
+   {
     "symbol": "Simpsons",
     "name": "The Simpsons Theory",
     "ca": "B8ShAnvBeZSpN9gmnEx4T1wqGnMyzCnZD4Wo21rYpump",
     "dex": "pumpswap",
-    "mcap_usd": 5767,
-    "vol_5m": 803,
-    "vol_1h": 47588,
-    "change_1h": 76.69,
-    "buy_ratio_5m": 0.35,
-    "age_hours": 3.2
-   },
-   {
-    "symbol": "VCN",
-    "name": "Vice Liberty National",
-    "ca": "6LN6kWngAbaNjtw1rry3SZd4THkT4aCJB8EnWeacpump",
-    "dex": "pumpswap",
-    "mcap_usd": 1706,
-    "vol_5m": 0,
-    "vol_1h": 44654,
-    "change_1h": -93.05,
-    "buy_ratio_5m": null,
-    "age_hours": 0.8
+    "mcap_usd": 4918,
+    "vol_5m": 12,
+    "vol_1h": 45355,
+    "change_1h": -14.23,
+    "buy_ratio_5m": 0.67,
+    "age_hours": 3.6
    },
    {
     "symbol": "HOGE",
     "name": "Hogecoin",
     "ca": "FVzqGqRmr4UH1Fif6dewmwbJ1p4YUZCu8dcw4Efopump",
     "dex": "pumpswap",
-    "mcap_usd": 649945,
-    "vol_5m": 1076,
-    "vol_1h": 41946,
-    "change_1h": -1.92,
-    "buy_ratio_5m": 0.26,
-    "age_hours": 60.3
+    "mcap_usd": 641941,
+    "vol_5m": 1817,
+    "vol_1h": 44128,
+    "change_1h": -4.67,
+    "buy_ratio_5m": 0.53,
+    "age_hours": 60.4
+   },
+   {
+    "symbol": "Juan",
+    "name": "Juan Miguel L\u00f3pez Gil",
+    "ca": "etnUoipCj19rGdyKSs7qi9Byp9eGcAUTAq5EQY5pump",
+    "dex": "pumpfun",
+    "mcap_usd": 11518,
+    "vol_5m": 181,
+    "vol_1h": 42769,
+    "change_1h": -62.39,
+    "buy_ratio_5m": 0.09,
+    "age_hours": 1.3
    },
    {
     "symbol": "QWENPAW",
     "name": "QwenPaw",
     "ca": "5xere1fCPjk8BzJCVdFHgkBVLZ4Fi7oTi5Qfor53pump",
     "dex": "pumpfun",
-    "mcap_usd": 15813,
-    "vol_5m": 537,
-    "vol_1h": 40390,
-    "change_1h": 13.47,
-    "buy_ratio_5m": 0.67,
-    "age_hours": 2.2
+    "mcap_usd": 15625,
+    "vol_5m": 334,
+    "vol_1h": 39238,
+    "change_1h": 38.31,
+    "buy_ratio_5m": 0.29,
+    "age_hours": 2.3
+   },
+   {
+    "symbol": "HEK",
+    "name": "Hek",
+    "ca": "7LJaDVSg6BdHB7SBgH2JzLUs4rE5tP9zZHUQaNydpump",
+    "dex": "pumpswap",
+    "mcap_usd": 17858,
+    "vol_5m": 2288,
+    "vol_1h": 39153,
+    "change_1h": -34.88,
+    "buy_ratio_5m": 0.47,
+    "age_hours": 0.6
    }
   ]
  },
  "goal": null,
  "last_scan": {
-  "at": 1794942709.81674,
-  "tokens": 4,
-  "pairs": 4,
+  "at": 1794943613.0951538,
+  "tokens": 6,
+  "pairs": 6,
   "passed_market_filters": 0,
   "researched": 0
  },
  "recent_looks": [
-  {
-   "ts": "2026-11-17T18:52:49Z",
-   "symbol": "ACRUX",
-   "ca": "7Evw4uxTxLGGEFEvXLUNYyc1J7PnFk9EYwTUFagARUX",
-   "setup": "MIGRATED",
-   "mcap_usd": 103408,
-   "vol_5m": 5189,
-   "outcome": "SKIP",
-   "conviction": null,
-   "reason": "passed the checklist, but the brain was paced or paused"
-  },
-  {
-   "ts": "2026-11-17T18:52:49Z",
-   "symbol": "GTA",
-   "ca": "2NWgu4fqN2AxS5pp5v3f3SH54qArP9JepQFJm58gpump",
-   "setup": "DIP",
-   "mcap_usd": 965076,
-   "vol_5m": 3469,
-   "outcome": "SKIP",
-   "conviction": null,
-   "reason": "passed the checklist, but the brain was paced or paused"
-  },
-  {
-   "ts": "2026-11-17T18:53:52Z",
-   "symbol": "GTA",
-   "ca": "F5sVohBg9zjTWVxxGpiWpzsuGxGGy3W3XjwVRzrDpump",
-   "setup": "MIGRATED",
-   "mcap_usd": 174334,
-   "vol_5m": 13441,
-   "outcome": "REJECT",
-   "conviction": null,
-   "reason": "Top 10 hold 46.6% ex-pool (>25%) (V13)"
-  },
-  {
-   "ts": "2026-11-17T18:58:07Z",
-   "symbol": "ACRUX",
-   "ca": "7Evw4uxTxLGGEFEvXLUNYyc1J7PnFk9EYwTUFagARUX",
-   "setup": "MIGRATED",
-   "mcap_usd": 107342,
-   "vol_5m": 4733,
-   "outcome": "SKIP",
-   "conviction": null,
-   "reason": "passed the checklist, but the brain was paced or paused"
-  },
-  {
-   "ts": "2026-11-17T18:58:09Z",
-   "symbol": "GTA",
-   "ca": "2NWgu4fqN2AxS5pp5v3f3SH54qArP9JepQFJm58gpump",
-   "setup": "DIP",
-   "mcap_usd": 970460,
-   "vol_5m": 4194,
-   "outcome": "SKIP",
-   "conviction": null,
-   "reason": "passed the checklist, but the brain was paced or paused"
-  },
-  {
-   "ts": "2026-11-17T18:58:09Z",
-   "symbol": "DIGS",
-   "ca": "9QT8K685Hrae4k11dhGXirdtpfAaimExtyfwt8cPpump",
-   "setup": "MIGRATED",
-   "mcap_usd": 280520,
-   "vol_5m": 3649,
-   "outcome": "REJECT",
-   "conviction": null,
-   "reason": "Bundles: 10 linked wallet cluster(s) hold 100.0% of supply (>20%) (V17)"
-  },
-  {
-   "ts": "2026-11-17T19:00:14Z",
-   "symbol": "Rex",
-   "ca": "6MjDb45kzriv6cpW6oaDjZGw1rujmpA185dHcvZzpump",
-   "setup": "DIP",
-   "mcap_usd": 857791,
-   "vol_5m": 7614,
-   "outcome": "REJECT",
-   "conviction": null,
-   "reason": "Dip with fading attention is a falling knife, not a dip (5m at 0.13x the hour's pace, under 0.6x)"
-  },
-  {
-   "ts": "2026-11-17T19:00:15Z",
-   "symbol": "Reset",
-   "ca": "DxKPqgE8J7nwTRjcqz17n8Vzo492UM1wjD58zYRKpump",
-   "setup": "MIGRATED",
-   "mcap_usd": 39386,
-   "vol_5m": 5690,
-   "outcome": "SKIP",
-   "conviction": null,
-   "reason": "passed the checklist, but the brain was paced or paused"
-  },
-  {
-   "ts": "2026-11-17T19:03:22Z",
-   "symbol": "ACRUX",
-   "ca": "7Evw4uxTxLGGEFEvXLUNYyc1J7PnFk9EYwTUFagARUX",
-   "setup": "MIGRATED",
-   "mcap_usd": 115130,
-   "vol_5m": 5019,
-   "outcome": "SKIP",
-   "conviction": null,
-   "reason": "passed the checklist, but the brain was paced or paused"
-  },
-  {
-   "ts": "2026-11-17T19:03:22Z",
-   "symbol": "GTA",
-   "ca": "2NWgu4fqN2AxS5pp5v3f3SH54qArP9JepQFJm58gpump",
-   "setup": "MIGRATED",
-   "mcap_usd": 1099863,
-   "vol_5m": 4556,
-   "outcome": "SKIP",
-   "conviction": null,
-   "reason": "passed the checklist, but the brain was paced or paused"
-  },
-  {
-   "ts": "2026-11-17T19:05:33Z",
-   "symbol": "Reset",
-   "ca": "DxKPqgE8J7nwTRjcqz17n8Vzo492UM1wjD58zYRKpump",
-   "setup": "MIGRATED",
-   "mcap_usd": 33798,
-   "vol_5m": 2255,
-   "outcome": "SKIP",
-   "conviction": null,
-   "reason": "passed the checklist, but the brain was paced or paused"
-  },
   {
    "ts": "2026-11-17T19:08:41Z",
    "symbol": "ACRUX",
@@ -1036,15 +915,136 @@
    "outcome": "REJECT",
    "conviction": null,
    "reason": "Dev holds 2.7% (>1%) (V13, V17)"
+  },
+  {
+   "ts": "2026-11-17T19:12:58Z",
+   "symbol": "REFU",
+   "ca": "4ULpYvaTGRq1KnaCiPhz52nyQFx86wN1vqqX3ny8refu",
+   "setup": "MIGRATED",
+   "mcap_usd": 206080,
+   "vol_5m": 5096,
+   "outcome": "SKIP",
+   "conviction": null,
+   "reason": "passed the checklist, but the brain was paced or paused"
+  },
+  {
+   "ts": "2026-11-17T19:14:01Z",
+   "symbol": "ACRUX",
+   "ca": "7Evw4uxTxLGGEFEvXLUNYyc1J7PnFk9EYwTUFagARUX",
+   "setup": "MIGRATED",
+   "mcap_usd": 109160,
+   "vol_5m": 3386,
+   "outcome": "SKIP",
+   "conviction": null,
+   "reason": "passed the checklist, but the brain was paced or paused"
+  },
+  {
+   "ts": "2026-11-17T19:14:02Z",
+   "symbol": "GTA",
+   "ca": "2NWgu4fqN2AxS5pp5v3f3SH54qArP9JepQFJm58gpump",
+   "setup": "MIGRATED",
+   "mcap_usd": 1108053,
+   "vol_5m": 3046,
+   "outcome": "SKIP",
+   "conviction": null,
+   "reason": "passed the checklist, but the brain was paced or paused"
+  },
+  {
+   "ts": "2026-11-17T19:17:18Z",
+   "symbol": "CBUCKS",
+   "ca": "DtcicPCKTKeAh7TDEzTym3hXeoHAoMiBdYJhMYxZpump",
+   "setup": "MIGRATED",
+   "mcap_usd": 3566101,
+   "vol_5m": 675,
+   "outcome": "REJECT",
+   "conviction": null,
+   "reason": "5m volume $675 is dead (<$2,000) (V1)"
+  },
+  {
+   "ts": "2026-11-17T19:18:23Z",
+   "symbol": "CHAR",
+   "ca": "9k2nqjUrSh9p2ZBnWxNE3QRWYiLocrWZfoDm3Vdxpump",
+   "setup": "MIGRATED",
+   "mcap_usd": 121696,
+   "vol_5m": 2192,
+   "outcome": "SKIP",
+   "conviction": null,
+   "reason": "passed the checklist, but the brain was paced or paused"
+  },
+  {
+   "ts": "2026-11-17T19:19:27Z",
+   "symbol": "JALU",
+   "ca": "BSsmLA6UN8fzJ8qUkV4KwC5LxR7ab3TaUtcwvAyJpump",
+   "setup": "MIGRATED",
+   "mcap_usd": 378454,
+   "vol_5m": 10498,
+   "outcome": "SKIP",
+   "conviction": null,
+   "reason": "passed the checklist, but the brain was paced or paused"
+  },
+  {
+   "ts": "2026-11-17T19:19:29Z",
+   "symbol": "GTA",
+   "ca": "2NWgu4fqN2AxS5pp5v3f3SH54qArP9JepQFJm58gpump",
+   "setup": "MIGRATED",
+   "mcap_usd": 1129495,
+   "vol_5m": 3435,
+   "outcome": "SKIP",
+   "conviction": null,
+   "reason": "passed the checklist, but the brain was paced or paused"
+  },
+  {
+   "ts": "2026-11-17T19:19:34Z",
+   "symbol": "ACRUX",
+   "ca": "7Evw4uxTxLGGEFEvXLUNYyc1J7PnFk9EYwTUFagARUX",
+   "setup": "DIP",
+   "mcap_usd": 97863,
+   "vol_5m": 2387,
+   "outcome": "REJECT",
+   "conviction": null,
+   "reason": "Dip with fading attention is a falling knife, not a dip (5m at 0.32x the hour's pace, under 0.6x)"
+  },
+  {
+   "ts": "2026-11-17T19:23:43Z",
+   "symbol": "GM",
+   "ca": "CSmSeS8XkxXTVa47LHtY9Mx1FSSwqw94tjqy4te3pump",
+   "setup": "MIGRATED",
+   "mcap_usd": 236513,
+   "vol_5m": 13626,
+   "outcome": "SKIP",
+   "conviction": null,
+   "reason": "passed the checklist, but the brain was paced or paused"
+  },
+  {
+   "ts": "2026-11-17T19:24:45Z",
+   "symbol": "JALU",
+   "ca": "BSsmLA6UN8fzJ8qUkV4KwC5LxR7ab3TaUtcwvAyJpump",
+   "setup": "MIGRATED",
+   "mcap_usd": 438614,
+   "vol_5m": 12807,
+   "outcome": "SKIP",
+   "conviction": null,
+   "reason": "passed the checklist, but the brain was paced or paused"
+  },
+  {
+   "ts": "2026-11-17T19:24:46Z",
+   "symbol": "GTA",
+   "ca": "2NWgu4fqN2AxS5pp5v3f3SH54qArP9JepQFJm58gpump",
+   "setup": "MIGRATED",
+   "mcap_usd": 1116978,
+   "vol_5m": 4418,
+   "outcome": "SKIP",
+   "conviction": null,
+   "reason": "passed the checklist, but the brain was paced or paused"
   }
  ],
  "skip_review": {
   "top 10 over 25%": {
    "blocked": 45,
    "ran": 8,
-   "dumped": 31,
+   "dumped": 32,
    "flat": 3,
-   "pending": 3,
+   "pending": 2,
    "ran_examples": [
     {
      "symbol": "ANT",
@@ -1275,11 +1275,11 @@
    ]
   },
   "falling knife (code)": {
-   "blocked": 25,
+   "blocked": 26,
    "ran": 3,
    "dumped": 20,
    "flat": 1,
-   "pending": 1,
+   "pending": 2,
    "ran_examples": [
     {
      "symbol": "BigP",
@@ -1318,6 +1318,53 @@
      "ca": "Fvv62MhgjrXpvXmKcLci2HoiCAxFmSkUm1Niamvipump",
      "best_x": 1.0,
      "worst_x": 0.6
+    }
+   ]
+  },
+  "thin 5m volume": {
+   "blocked": 23,
+   "ran": 6,
+   "dumped": 11,
+   "flat": 3,
+   "pending": 3,
+   "ran_examples": [
+    {
+     "symbol": "SENDER",
+     "ca": "5peJLZQnBkXtydYYMunbT4QutSyd9eA474MqxcmEpump",
+     "best_x": 1.58,
+     "worst_x": 1.0
+    },
+    {
+     "symbol": "UNITY",
+     "ca": "GD6MboptxbHBspASr5PWozgNDrZxmxJ8JpBBD8Vpump",
+     "best_x": 1.66,
+     "worst_x": 0.93
+    },
+    {
+     "symbol": "LEOSTAR",
+     "ca": "2cMcMEX3Eqo86tUrVe5dgHp5GZNwqQ6crqm22UeZpump",
+     "best_x": 1.53,
+     "worst_x": 1.0
+    }
+   ],
+   "dumped_examples": [
+    {
+     "symbol": "Anthropig",
+     "ca": "2NUaS6Gfrm5rBuPBn7svHka8t33SrSkpXGQiUvZLpump",
+     "best_x": 1.25,
+     "worst_x": 0.0
+    },
+    {
+     "symbol": "BAWSAQ",
+     "ca": "DTJbHA1ntTzsp6FXKRhwwD4E3CLcd5trkWhSV8ivpump",
+     "best_x": 1.01,
+     "worst_x": 0.34
+    },
+    {
+     "symbol": "NEON",
+     "ca": "A5xsAQhwGeKsNTKPiyB3jYydffWxPyzyWVodSA4hpump",
+     "best_x": 1.0,
+     "worst_x": 0.76
     }
    ]
   },
@@ -1368,94 +1415,12 @@
     }
    ]
   },
-  "thin 5m volume": {
-   "blocked": 22,
-   "ran": 6,
-   "dumped": 11,
-   "flat": 3,
-   "pending": 2,
-   "ran_examples": [
-    {
-     "symbol": "SENDER",
-     "ca": "5peJLZQnBkXtydYYMunbT4QutSyd9eA474MqxcmEpump",
-     "best_x": 1.58,
-     "worst_x": 1.0
-    },
-    {
-     "symbol": "UNITY",
-     "ca": "GD6MboptxbHBspASr5PWozgNDrZxmxJ8JpBBD8Vpump",
-     "best_x": 1.66,
-     "worst_x": 0.93
-    },
-    {
-     "symbol": "LEOSTAR",
-     "ca": "2cMcMEX3Eqo86tUrVe5dgHp5GZNwqQ6crqm22UeZpump",
-     "best_x": 1.53,
-     "worst_x": 1.0
-    }
-   ],
-   "dumped_examples": [
-    {
-     "symbol": "Anthropig",
-     "ca": "2NUaS6Gfrm5rBuPBn7svHka8t33SrSkpXGQiUvZLpump",
-     "best_x": 1.25,
-     "worst_x": 0.0
-    },
-    {
-     "symbol": "BAWSAQ",
-     "ca": "DTJbHA1ntTzsp6FXKRhwwD4E3CLcd5trkWhSV8ivpump",
-     "best_x": 1.01,
-     "worst_x": 0.34
-    },
-    {
-     "symbol": "NEON",
-     "ca": "A5xsAQhwGeKsNTKPiyB3jYydffWxPyzyWVodSA4hpump",
-     "best_x": 1.0,
-     "worst_x": 0.76
-    }
-   ]
-  },
-  "dev share over 1%": {
-   "blocked": 12,
-   "ran": 1,
-   "dumped": 10,
-   "flat": 0,
-   "pending": 1,
-   "ran_examples": [
-    {
-     "symbol": "WSB",
-     "ca": "B82PFKmT4aM38EUUqVoZs6sZdAfxDHHrB6DSXxCKpump",
-     "best_x": 1.52,
-     "worst_x": 0.92
-    }
-   ],
-   "dumped_examples": [
-    {
-     "symbol": "PumpMas",
-     "ca": "EwUVBpdM5vw1CJHRMSLywzVjyQSJZpy6qboxEPBKpump",
-     "best_x": 1.0,
-     "worst_x": 0.78
-    },
-    {
-     "symbol": "9LIVES",
-     "ca": "6iUizCbYh4nCWBcpK7DwZpR9PFcjnrkMcS48fE5wpump",
-     "best_x": 1.04,
-     "worst_x": 0.78
-    },
-    {
-     "symbol": "DYC",
-     "ca": "Da5Gbwd8GCuKwd5fv4pk7bBh12UKjUg5iH3VthDWCity",
-     "best_x": 1.29,
-     "worst_x": 0.65
-    }
-   ]
-  },
   "bundles over the line": {
    "blocked": 12,
-   "ran": 2,
+   "ran": 3,
    "dumped": 7,
    "flat": 0,
-   "pending": 3,
+   "pending": 2,
    "ran_examples": [
     {
      "symbol": "WANTED",
@@ -1468,6 +1433,12 @@
      "ca": "9a5uUXxa7LzHkT6YUikttpQsUZm4Etw8qhd2HP7xpump",
      "best_x": 2.01,
      "worst_x": 0.91
+    },
+    {
+     "symbol": "GROKIA",
+     "ca": "A4zQMT7ZFC2mM8fZDDQEqCs5bLFifA9XhDAJtHc3Lzbm",
+     "best_x": 1.54,
+     "worst_x": 1.0
     }
    ],
    "dumped_examples": [
@@ -1491,10 +1462,45 @@
     }
    ]
   },
-  "crowd leaving / fading volume": {
-   "blocked": 7,
+  "dev share over 1%": {
+   "blocked": 11,
    "ran": 1,
-   "dumped": 4,
+   "dumped": 9,
+   "flat": 0,
+   "pending": 1,
+   "ran_examples": [
+    {
+     "symbol": "WSB",
+     "ca": "B82PFKmT4aM38EUUqVoZs6sZdAfxDHHrB6DSXxCKpump",
+     "best_x": 1.52,
+     "worst_x": 0.92
+    }
+   ],
+   "dumped_examples": [
+    {
+     "symbol": "PumpMas",
+     "ca": "EwUVBpdM5vw1CJHRMSLywzVjyQSJZpy6qboxEPBKpump",
+     "best_x": 1.0,
+     "worst_x": 0.78
+    },
+    {
+     "symbol": "DYC",
+     "ca": "Da5Gbwd8GCuKwd5fv4pk7bBh12UKjUg5iH3VthDWCity",
+     "best_x": 1.29,
+     "worst_x": 0.65
+    },
+    {
+     "symbol": "Brian",
+     "ca": "9WGvvKDQSkzwmPoGmDCx42C8t1xyvrV3hFExCgkrpump",
+     "best_x": 1.31,
+     "worst_x": 0.8
+    }
+   ]
+  },
+  "crowd leaving / fading volume": {
+   "blocked": 6,
+   "ran": 1,
+   "dumped": 3,
    "flat": 2,
    "pending": 0,
    "ran_examples": [
@@ -1507,12 +1513,6 @@
    ],
    "dumped_examples": [
     {
-     "symbol": "chip",
-     "ca": "DockQT38ifhagGx95wfPjvW8qWrqJjdWapUv4oFDchip",
-     "best_x": 1.19,
-     "worst_x": 0.48
-    },
-    {
      "symbol": "AUSTISM",
      "ca": "2oxHzSUA6qz4My8qxpz3YFhtweUd15khaDhx5N7mBAGS",
      "best_x": 1.0,
@@ -1523,6 +1523,12 @@
      "ca": "DTJbHA1ntTzsp6FXKRhwwD4E3CLcd5trkWhSV8ivpump",
      "best_x": 1.01,
      "worst_x": 0.34
+    },
+    {
+     "symbol": "FROGE",
+     "ca": "GkMfy66mLHzyXFKBw4feG8dXtoXuphQVSJQYMQb4pump",
+     "best_x": 1.04,
+     "worst_x": 0.69
     }
    ]
   },
@@ -1726,7 +1732,7 @@
  "watch": {
   "on": true,
   "live": 136,
-  "settled": 2232,
+  "settled": 2237,
   "brain_reads": 1190,
   "would_buys": 0,
   "days": [
