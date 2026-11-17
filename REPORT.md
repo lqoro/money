@@ -1,13 +1,13 @@
 # Trencher live report
 
-Updated 2026-11-17T10:52:55Z (paper trading, never real money)
+Updated 2026-11-17T11:08:02Z (paper trading, never real money)
 
 - Equity: $74.23 (-25.8% vs $100 start)
 - Closed trades: 22, 3 wins
 - Fees paid: $14.78 (axiom $2.81, network $9.18, pool $2.66), plus $4.15 lost to slippage
 - New trades: WATCH-ONLY (scans and decides, buys nothing)
-- Brain: subscription, claude-haiku-5-5 for routine calls, claude-opus-5-5 for the daily review; 489 routine calls and 1 plan-limit hits in 48h
-- Watch log: 89 coins being followed, 2099 filed, 0 would-buys (6h follow, sampled every 2 min)
+- Brain: subscription, claude-haiku-5-5 for routine calls, claude-opus-5-5 for the daily review; 491 routine calls and 1 plan-limit hits in 48h
+- Watch log: 88 coins being followed, 2106 filed, 0 would-buys (6h follow, sampled every 2 min)
 
 ## Scorecard (after fees)
 - 22 closed, 3 won (14%), net $-25.79
@@ -73,9 +73,21 @@ Updated 2026-11-17T10:52:55Z (paper trading, never real money)
   CA `H4gHnZ3NCU7Z9XQwGX6YYJNyieGEW8pqwGRUcdSxpump`
 
 ## Last scan
-- 10:52Z: 4 coins, 4 with pairs, 0 passed the market filters, 0 researched
+- 11:07Z: 3 coins, 3 with pairs, 0 passed the market filters, 0 researched
 
 ## Coins it looked at, and why it passed
+- 11:04Z GTA (MIGRATED, $1,225,445 mcap, $5,055 5m vol): PASS at conviction 2, PASS — 8.5% off a $1.34M high, not the vamp-field leader, and the first resistance is 1.09x away. Chasing a reskin on a fading theme. (V1, V6, V13)  
+  CA `2NWgu4fqN2AxS5pp5v3f3SH54qArP9JepQFJm58gpump`
+- 11:00Z JOB (MIGRATED, $1,888,048 mcap, $2,954 5m vol): PASS at conviction 2, PASS: "big cap, no room" plus "no higher low" and a vamp field of 25 copies. The $1.9M coin has 1.38x to its high and a 17.6% bundle cluster. (V1, V6, V3)  
+  CA `9Pq7aLAbhDG2tTnS22cm6kuysZVcZpLFE368HWuypump`
+- 10:57Z BAWSAQ (DIP, $1,270,650 mcap, $3,971 5m vol): PASS at conviction 3, PASS: flow below pace (5m $3.97k at 0.65x hourly, under the 0.7x DIP gate), no catalyst, and the GTA-reskin story is fading. A 7-copy field with a 16.4% top 10 doesn't help. (V1, V6, V13)  
+  CA `D9EcoQZeAytCrF1kQFSpRNpoPhibJUvJcmRHXhubpump`
+- 10:57Z GROKIA (MIGRATED, $157,394 mcap, $32,225 5m vol): REJECT, Bundles: 1 linked wallet cluster(s) hold 75.0% of supply (>20%) (V17)  
+  CA `A4zQMT7ZFC2mM8fZDDQEqCs5bLFifA9XhDAJtHc3Lzbm`
+- 10:55Z DIGS (MIGRATED, $219,315 mcap, $3,103 5m vol): REJECT, Bundles: 10 linked wallet cluster(s) hold 100.0% of supply (>20%) (V17)  
+  CA `9QT8K685Hrae4k11dhGXirdtpfAaimExtyfwt8cPpump`
+- 10:53Z S4S (FINAL_STRETCH, $15,876 mcap, $2,830 5m vol): REJECT, RugCheck danger: Large Amount of LP Unlocked 83.97%  
+  CA `6rkUzy2mBckH6JZUMGno7bm1ehQdQCWp5XPs58EMpump`
 - 10:47Z GATO (DIP, $6,738,544 mcap, $4,056 5m vol): REJECT, Dev holds 2.7% (>1%) (V13, V17)  
   CA `HsprHxBRgiVaQdRf3TnKNuZZtaX9JUSPgMFdAkk6pump`
 - 10:47Z BLOB (DIP, $12,625,718 mcap, $26,969 5m vol): PASS at conviction 3, PASS: BLOB is a $12.6M DIP with 5m flow at 0.63x its hourly pace, sellers at 56%, and a theme that is not rising. Blockers: "flow below pace" and "narrative not rising". (V1, V6)  
@@ -84,18 +96,6 @@ Updated 2026-11-17T10:52:55Z (paper trading, never real money)
   CA `CMHDMepwM1pAuNr3YXFkMvyLT3J8GCq2RafufpKypump`
 - 10:31Z VI (DIP, $38,930 mcap, $2,256 5m vol): PASS at conviction 2, PASS. Vice Inu is a 65%-off dip in a 29-copy vamp field, not the field leader. Blocker: no catalyst and no printed higher low. (V6, V1, V3)  
   CA `3yjHj9s9MukEHr7b7qhMiUfH5fSUz97Eb5J8SRjdpump`
-- 10:18Z GTA (MIGRATED, $1,187,856 mcap, $3,312 5m vol): PASS at conviction 3, PASS: GTA flow is below pace (0.73x) and it's not the theme's leader. GTA6 has the volume. Blocker: "flow below pace" (V1, V6).  
-  CA `2NWgu4fqN2AxS5pp5v3f3SH54qArP9JepQFJm58gpump`
-- 10:17Z GTA5 (FINAL_STRETCH, $19,806 mcap, $11,274 5m vol): PASS at conviction 4, PASS: chasing spike. GTA5 is up 49% on 5m at 3x its hourly pace, 21 minutes old, and it's one of 8 copies while the bigger "Official GTA VI" coin takes more 5m volume. Wait for the retrace and a printed higher low (V1, V6, V13).  
-  CA `3bndENAdZ876r4RaGAZP3LEoMgkPzMuxPZZTpFXGpump`
-- 10:14Z JOB (MIGRATED, $1,866,668 mcap, $2,976 5m vol): PASS at conviction 2, PASS: JOB is a vamp-field copy, not the leader, sitting on its hourly low with sellers in control. Blockers: thin 5m volume, no higher low, 17.6% single bundle, dead story. (V1, V3, V6, V13)  
-  CA `9Pq7aLAbhDG2tTnS22cm6kuysZVcZpLFE368HWuypump`
-- 10:12Z LEOSTAR (MIGRATED, $1,174,054 mcap, $1,956 5m vol): REJECT, 5m volume $1,956 is dead (<$2,000) (V1)  
-  CA `2cMcMEX3Eqo86tUrVe5dgHp5GZNwqQ6crqm22UeZpump`
-- 10:12Z BAWSAQ (DIP, $1,171,597 mcap, $10,284 5m vol): PASS at conviction 4, PASS: no higher low. BAWSAQ is still making lower highs into its hourly low, and a DIP buy needs a printed higher low. The GTA VI date is real, but it doesn't fix the chart (V1, V6).  
-  CA `D9EcoQZeAytCrF1kQFSpRNpoPhibJUvJcmRHXhubpump`
-- 10:11Z FEET (FINAL_STRETCH, $18,864 mcap, $4,051 5m vol): PASS at conviction 3, PASS — 21-copy feet field at 0.04x its hourly pace, zero buzz, top 10 at 24.8%, and sellers outnumber buyers in the 5m. Dead story, thin flow (V1, V6, V13).  
-  CA `HkBSWFbCRHChJsYctSLGKcHYF9uAnPvWtJUwhYRapump`
 
 ## What its skips did next (last 48h)
 A skip "ran" if the coin reached the first target (1.5x) from the skip price before a 20% drop, "dumped" if the drop came first. Sampled every 10 min, followed 6h.
@@ -120,14 +120,14 @@ A skip "ran" if the coin reached the first target (1.5x) from the skip price bef
     CA `4Dj8m9vWqu779F1KDBUttvXM8YFm7U92SDpvjBNKtEiB`
   - ran: ANT up to 1.52x  
     CA `BDPm9gPHCRyo2qjcRrYPsXexmbRwuuHQZo2qhhYXpump`
-- near the high / chasing: blocked 36, ran 5, dumped 29, flat 0, open 2 (saving losses: keep it)
+- near the high / chasing: blocked 36, ran 5, dumped 30, flat 0, open 1 (saving losses: keep it)
   - ran: WIGGLES up to 1.69x  
     CA `2kWx47CUrcXtzptFNnbSXKq3vo1ebqyLBhRytKRGpump`
   - ran: Bustas up to 1.75x  
     CA `9rTgs58B3p11vXekTTgVYtv8vKxQ6oSoZFXPy4onpump`
   - ran: capytrade up to 2.51x  
     CA `ANPikG3a5qKJjHeeNjDmjZvDPPVtQ8B1ii6unvg3pump`
-- RugCheck danger: blocked 23, ran 6, dumped 16, flat 1, open 0 (saving losses: keep it)
+- RugCheck danger: blocked 24, ran 6, dumped 16, flat 1, open 1 (saving losses: keep it)
   - ran: hermano up to 1.94x  
     CA `7eM3RsKhCCgBTVFeCrbHTtKuuSYewKbp4oUQWzavpump`
   - ran: Qubits up to 1.53x  
@@ -151,7 +151,7 @@ A skip "ran" if the coin reached the first target (1.5x) from the skip price bef
     CA `GD6MboptxbHBspASr5PWozgNDrZxmxJ8JpBBD8Vpump`
   - ran: SHARE up to 3.24x  
     CA `CTsD5kMoPcwG8AYZQoaRZjbLmeC9xYtHib5u38Wmpump`
-- bundles over the line: blocked 11, ran 2, dumped 6, flat 1, open 2 (saving losses: keep it)
+- bundles over the line: blocked 12, ran 2, dumped 6, flat 1, open 3 (saving losses: keep it)
   - ran: WANTED up to 1.52x  
     CA `9jhs5qoJnUFU7AZXbsiD1Q6De6FVsino9Ysw8QU6pump`
   - ran: KATIA up to 2.01x  
@@ -201,11 +201,11 @@ The meta is split, and the loud part is mostly bursts. The sub-3h pump.fun launc
 ## Moving most in its scans, last 30 min (1h volume)
 - BLOB: $492,730 1h vol, $12,633,341 mcap, -13% 1h  
   CA `8s11PkgQt4ZzdZ7oo84hK5t9HG1EvdgAjcg4W7Lpump`
-- JOB: $130,551 1h vol, $5,465 mcap, -82% 1h  
+- JOB: $132,148 1h vol, $5,736 mcap, -81% 1h  
   CA `6KRRYt4irf4FVJX7dCYmMfkN9BckaLntvV4ZZwkwpump`
-- NEET: $62,351 1h vol, $3,482 mcap, +42% 1h  
-  CA `GZRnyzxQAnZffHro8mpG4yzj6AXze6KgW5kscYfapump`
-- Millionaires: $52,226 1h vol, $16,891 mcap, +152% 1h  
-  CA `CMHDMepwM1pAuNr3YXFkMvyLT3J8GCq2RafufpKypump`
-- tomte: $34,264 1h vol, $9,356 mcap, +361% 1h  
-  CA `4cXN5CMEd9einVMRKeSv8yz28LjP7459R9XBwx3ipump`
+- BAWSAQ: $73,348 1h vol, $1,275,079 mcap, -14% 1h  
+  CA `D9EcoQZeAytCrF1kQFSpRNpoPhibJUvJcmRHXhubpump`
+- GTA: $63,710 1h vol, $1,216,015 mcap, +6% 1h  
+  CA `2NWgu4fqN2AxS5pp5v3f3SH54qArP9JepQFJm58gpump`
+- GTA5: $52,257 1h vol, $10,066 mcap, +39% 1h  
+  CA `3bndENAdZ876r4RaGAZP3LEoMgkPzMuxPZZTpFXGpump`
