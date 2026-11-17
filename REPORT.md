@@ -1,13 +1,13 @@
 # Trencher live report
 
-Updated 2026-11-17T03:34:13Z (paper trading, never real money)
+Updated 2026-11-17T03:49:16Z (paper trading, never real money)
 
 - Equity: $74.23 (-25.8% vs $100 start)
 - Closed trades: 22, 3 wins
 - Fees paid: $14.78 (axiom $2.81, network $9.18, pool $2.66), plus $4.15 lost to slippage
 - New trades: WATCH-ONLY (scans and decides, buys nothing)
-- Brain: subscription, claude-haiku-5-5 for routine calls, claude-opus-5-5 for the daily review; 444 routine calls and 1 plan-limit hits in 48h
-- Watch log: 130 coins being followed, 1944 filed, 0 would-buys (6h follow, sampled every 2 min)
+- Brain: subscription, claude-haiku-5-5 for routine calls, claude-opus-5-5 for the daily review; 445 routine calls and 1 plan-limit hits in 48h
+- Watch log: 129 coins being followed, 1950 filed, 0 would-buys (6h follow, sampled every 2 min)
 
 ## Scorecard (after fees)
 - 22 closed, 3 won (14%), net $-25.79
@@ -73,9 +73,19 @@ Updated 2026-11-17T03:34:13Z (paper trading, never real money)
   CA `H4gHnZ3NCU7Z9XQwGX6YYJNyieGEW8pqwGRUcdSxpump`
 
 ## Last scan
-- 03:33Z: 8 coins, 8 with pairs, 2 passed the market filters, 2 researched
+- 03:48Z: 3 coins, 3 with pairs, 0 passed the market filters, 0 researched
 
 ## Coins it looked at, and why it passed
+- 03:47Z ETF (DIP, $206,453 mcap, $2,375 5m vol): REJECT, Dip with fading attention is a falling knife, not a dip (5m at 0.58x the hour's pace, under 0.6x)  
+  CA `Gg5aWvfucyMwihDzyfCEaLgyeeNE2dkob2LTwWfHpump`
+- 03:46Z LEOSTAR (MIGRATED, $1,053,576 mcap, $3,589 5m vol): PASS at conviction 3, PASS: flow below pace, no printed higher low, and a 12-hour-old site that doesn't show this CA. Blocker: "flow below pace". (V1, V3, V6)  
+  CA `2cMcMEX3Eqo86tUrVe5dgHp5GZNwqQ6crqm22UeZpump`
+- 03:46Z HOGE (MIGRATED, $658,188 mcap, $5,170 5m vol): REJECT, Bundles: 6 linked wallet cluster(s) hold 24.2% of supply (>20%) (V17)  
+  CA `FVzqGqRmr4UH1Fif6dewmwbJ1p4YUZCu8dcw4Efopump`
+- 03:45Z CHAR (MIGRATED, $178,374 mcap, $67,662 5m vol): PASS at conviction 2, PASS: chasing a +143% five-minute spike 6% off a $190k high, in a 12-copy vamp field with no printed higher low (V1, V6, V13).  
+  CA `9k2nqjUrSh9p2ZBnWxNE3QRWYiLocrWZfoDm3Vdxpump`
+- 03:35Z WANTED (MIGRATED, $1,192,722 mcap, $103,052 5m vol): REJECT, RugCheck danger: Single holder ownership 54.06%  
+  CA `9jhs5qoJnUFU7AZXbsiD1Q6De6FVsino9Ysw8QU6pump`
 - 03:33Z CAT (DIP, $32,012 mcap, $3,734 5m vol): PASS at conviction 3, PASS: DIP on CAT, a 65%-off vamp-field copy with a 0.71x theme pace, no catalyst and $3.7k of 5m flow. The blocker is "dead story" (V1, V6).  
   CA `2HVqzNisr463WMDpp6Q45ekuVfcjm8kEaiKd4ra8pump`
 - 03:33Z bul (MIGRATED, $145,645 mcap, $141,126 5m vol): PASS at conviction 3, PASS: chasing spike. Up 36% on 5m at 12x its hourly pace, 6% off a peak printed 18 minutes ago, no higher low, and a 5-minute-old Raydium pool in a 28-copy ticker field. (V1, V6, V13)  
@@ -86,16 +96,6 @@ Updated 2026-11-17T03:34:13Z (paper trading, never real money)
   CA `2NWgu4fqN2AxS5pp5v3f3SH54qArP9JepQFJm58gpump`
 - 03:26Z DRILL (FINAL_STRETCH, $18,606 mcap, $6,463 5m vol): PASS at conviction 3, PASS. DRILL is a $18.6k pump.fun launch with $6.5k of 5m volume, under the $10k bar, in a theme running at 0.31x its hourly pace, with no live story behind it. Blocker: "dead story" plus "theme volume below pace." Not a probe. (V1, V6, V16)  
   CA `Ts2yi5FhTDAmhwTKH6ab6unWeoCMzzjz4JCPtBDRiLL`
-- 03:22Z WASTED (DIP, $2,911,078 mcap, $1,817 5m vol): REJECT, 5m volume $1,817 is dead (<$2,000) (V1)  
-  CA `GexThZHgaswpAQ7Fi8QrHFubjPimUNSYhJiAA7XZpump`
-- 03:22Z BAWSAQ (DIP, $1,818,687 mcap, $13,203 5m vol): PASS at conviction 3, PASS: mid-range entry, 34% above the printed higher low, and the owner bottom-buy gate fails on theme pace (0.78x) with no catalyst. Top 10 at 19.7% and a 7-copy field add risk. (V1, V6, V13)  
-  CA `D9EcoQZeAytCrF1kQFSpRNpoPhibJUvJcmRHXhubpump`
-- 03:15Z VICEX (FINAL_STRETCH, $19,628 mcap, $35,357 5m vol): REJECT, RugCheck danger: Creator history of rugged tokens  
-  CA `2R4u7VwRhu6b8Em9j31n9TSnx3njFqD47KeZKDuppump`
-- 03:14Z Copytrader (FINAL_STRETCH, $16,497 mcap, $30,775 5m vol): PASS at conviction 2, PASS: 16 coins share the ticker, top 10 at 19.9%, no catalyst, and it's 4 minutes old. Copycat field, not an original. (V1, V13)  
-  CA `EB2cTAMveNxEf1o15fEpvgcTMkZvZaK4be9Ed6gppump`
-- 03:13Z JOB (MIGRATED, $2,028,302 mcap, $3,575 5m vol): PASS at conviction 2, PASS — one linked cluster holds 17.5% of supply, sellers lead 5m flow, and the site doesn't show the CA. Blocker: bundle over the line (V3, V17).  
-  CA `9Pq7aLAbhDG2tTnS22cm6kuysZVcZpLFE368HWuypump`
 
 ## What its skips did next (last 48h)
 A skip "ran" if the coin reached the first target (1.5x) from the skip price before a 20% drop, "dumped" if the drop came first. Sampled every 10 min, followed 6h.
@@ -106,7 +106,7 @@ A skip "ran" if the coin reached the first target (1.5x) from the skip price bef
     CA `BDPm9gPHCRyo2qjcRrYPsXexmbRwuuHQZo2qhhYXpump`
   - ran: ANT up to 1.58x  
     CA `7H2sHeLHyHR8jxENGmsqn7RxTkYZa4KwXvKYcoxBpump`
-- top 10 over 25%: blocked 49, ran 10, dumped 33, flat 3, open 3 (saving losses: keep it)
+- top 10 over 25%: blocked 49, ran 10, dumped 34, flat 3, open 2 (saving losses: keep it)
   - ran: rockstar up to 1.95x  
     CA `9HFUEab7sompLDPTAaTGkryMNGbtBaFMhHMVpJEBpump`
   - ran: VI up to 1.71x  
@@ -120,14 +120,14 @@ A skip "ran" if the coin reached the first target (1.5x) from the skip price bef
     CA `9Ei1d97U7M8m4t3fof7c8MUECtmzgqbQCo81cGGzpump`
   - ran: HENSEN up to 1.68x  
     CA `FfXDcTtDk5tzETc9QGRsy8ZSV2TGm4DXXpHXpjVVpump`
-- near the high / chasing: blocked 40, ran 7, dumped 31, flat 0, open 2 (saving losses: keep it)
+- near the high / chasing: blocked 41, ran 8, dumped 31, flat 0, open 2 (saving losses: keep it)
   - ran: penny up to 1.6x  
     CA `5gmCPpuktJ7Svjgr4PPJBTosAFKB8K6Z45EGfSUmpump`
   - ran: WIGGLES up to 1.69x  
     CA `2kWx47CUrcXtzptFNnbSXKq3vo1ebqyLBhRytKRGpump`
   - ran: Bustas up to 1.75x  
     CA `9rTgs58B3p11vXekTTgVYtv8vKxQ6oSoZFXPy4onpump`
-- RugCheck danger: blocked 31, ran 8, dumped 22, flat 1, open 0 (saving losses: keep it)
+- RugCheck danger: blocked 30, ran 7, dumped 21, flat 1, open 1 (saving losses: keep it)
   - ran: FUTA up to 2.77x  
     CA `FxoXV4C8DTSYeg5dSXrEsr45zzr8tpNbsrpoiZ8Kpump`
   - ran: PumpBank up to 2.02x  
@@ -141,7 +141,7 @@ A skip "ran" if the coin reached the first target (1.5x) from the skip price bef
     CA `8cWGfiHyKqxgLrLtkPt2NnLkSUV2JbcLBf4RN6Fapump`
   - ran: GOAT up to 1.61x  
     CA `D7iafdwzzpB7tisqQqT5T9aRrYPtHLqzwxhnLoWJgoat`
-- thin 5m volume: blocked 17, ran 3, dumped 10, flat 1, open 3 (saving losses: keep it)
+- thin 5m volume: blocked 17, ran 4, dumped 10, flat 1, open 2 (saving losses: keep it)
   - ran: SENDER up to 1.58x  
     CA `5peJLZQnBkXtydYYMunbT4QutSyd9eA474MqxcmEpump`
   - ran: UNITY up to 1.66x  
@@ -202,16 +202,16 @@ Nothing shows a positive edge after costs. Over 309 settled coins, every setup l
 - [2026-11-02 20:25] I expected Slingoor, a clean MIGRATED leader with $25k of 5m flow at pace and a 0.77 buy share, to retest its $408k high from $304k. It never went green (0.98x peak) and hit the -20% stop in 2 minutes, a -$2.86 probe. My own thesis admitted there was no printed higher low after a peak only 6 minutes old, so this confirms the money-shape rule: buy share and flow are not structure (V1, V6). Next time a MIGRATED pullback with no higher low above the hourly low is a PASS with blocker "no higher low", not a probe. This is one loss, so it adds no new ban beyond the rule I already have.
 
 ## Meta right now
-Not quiet, but the volume is concentrated: fresh pump.fun launches and Vice City-style names carry it, and most of the rest is fading. Themes: sub-hour pump.fun launches split between runners (CHAR at $85k cap with $70.8k 5m, Mihaomas +1030% 1h on 79% buys) and dead or dumping ones (elf, GRIM, SHARE at zero 5m volume); Vice City names (BAWSAQ, $1.5M, 71% buys, +15% 1h) are holding; mid-caps like ETF, COGE, HOGE and JOB are flat on sub-$5k 5m. AI-brand AGI is +61% on $764 of 5m volume, which is noise, not a theme yet. Setups to research: CHAR as a launch spike (all its volume is in the last five minutes, so it needs a full holder and bundle check first), and LEOSTAR and BAWSAQ as MIGRATED candidates sitting just under the $10k 5m bar ($9.4k and $6k), qualifying only if volume crosses it. The crawler's write-up doesn't match the scan (CET, SHARE and BAWSAQ6900 are down -8%, -97% and -72%, LUCIA isn't in the scan, LEOSTAR is $1.26M not $902k), so I trusted the scan. Paper only, not financial advice.
+Not quiet. Most of the scan is fresh pump.fun and PumpSwap launches under a day old, carrying five-figure 5m volume, so the meta right now is launch spikes. Two themes repeat: finance-tool and exchange brand names (VICEX +165% 1h, Copytrader +359%, DRILL +661%, fnf.trading) and Vice City names (BAWSAQ at $1.8M with 68% buys, VI, VICEX). The other story is spike-and-fade: WANTED and bul are rising on fresh 5m volume, while FLYWHEEL, Nozomi and RizzGivin are down 55-67% on the hour. The headlines say Trump-coin interest is fading ($TRUMP at record lows) and no Trump name shows up in the movers, so I'm not calling that a meta. Setups to research: BAWSAQ as a MIGRATED candidate (7h old, $10.5k 5m clearing the bar, 68% buys), and WANTED (1.2h, $71k 5m, +180% 1h, but only 47% buys, so sellers won the last five minutes). Copytrader, VICEX, DRILL and bul are minutes old, so I won't touch them as new pairs; I'll watch them for the 30-minute fade. GTA (Grand Theft Anthropic) is a single AI-joke coin at $5.1k 5m, under the bar, so it's a watch. Paper only, not financial advice.
 
 ## Moving most in its scans, last 30 min (1h volume)
+- WANTED: $721,594 1h vol, $1,096,826 mcap, +180% 1h  
+  CA `9jhs5qoJnUFU7AZXbsiD1Q6De6FVsino9Ysw8QU6pump`
+- FLYWHEEL: $346,360 1h vol, $11,054 mcap, -60% 1h  
+  CA `EXscV4GJmRmAncFf13nKCuuuZkzT7V6JLyLdQJWHpump`
 - Jojo: $294,612 1h vol, $91,945 mcap, -9% 1h  
   CA `D2Zkpv4m8M9Yh7tSDDCtcyZb6WQYVKzkQjM4x5eMQDZB`
+- CHAR: $220,092 1h vol, $178,374 mcap, +92% 1h  
+  CA `9k2nqjUrSh9p2ZBnWxNE3QRWYiLocrWZfoDm3Vdxpump`
 - bul: $143,158 1h vol, $146,931 mcap, +37% 1h  
   CA `Dys6SYbjUsy8kksaqrXqo5L2GzgCYDiguGGcS8B5rkrv`
-- VICEX: $111,485 1h vol, $17,867 mcap, +165% 1h  
-  CA `2R4u7VwRhu6b8Em9j31n9TSnx3njFqD47KeZKDuppump`
-- BAWSAQ: $110,457 1h vol, $1,794,365 mcap, +27% 1h  
-  CA `D9EcoQZeAytCrF1kQFSpRNpoPhibJUvJcmRHXhubpump`
-- cb: $74,897 1h vol, $19,591 mcap, +733% 1h  
-  CA `3U9z9ZArc5k3hZuHZGeo45ihEP1wHh6MqhK8vhKipump`
