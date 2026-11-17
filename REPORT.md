@@ -1,13 +1,13 @@
 # Trencher live report
 
-Updated 2026-11-17T05:35:11Z (paper trading, never real money)
+Updated 2026-11-17T05:50:12Z (paper trading, never real money)
 
 - Equity: $74.23 (-25.8% vs $100 start)
 - Closed trades: 22, 3 wins
 - Fees paid: $14.78 (axiom $2.81, network $9.18, pool $2.66), plus $4.15 lost to slippage
 - New trades: WATCH-ONLY (scans and decides, buys nothing)
-- Brain: subscription, claude-haiku-5-5 for routine calls, claude-opus-5-5 for the daily review; 461 routine calls and 1 plan-limit hits in 48h
-- Watch log: 125 coins being followed, 1988 filed, 0 would-buys (6h follow, sampled every 2 min)
+- Brain: subscription, claude-haiku-5-5 for routine calls, claude-opus-5-5 for the daily review; 464 routine calls and 1 plan-limit hits in 48h
+- Watch log: 128 coins being followed, 1990 filed, 0 would-buys (6h follow, sampled every 2 min)
 
 ## Scorecard (after fees)
 - 22 closed, 3 won (14%), net $-25.79
@@ -73,9 +73,19 @@ Updated 2026-11-17T05:35:11Z (paper trading, never real money)
   CA `H4gHnZ3NCU7Z9XQwGX6YYJNyieGEW8pqwGRUcdSxpump`
 
 ## Last scan
-- 05:34Z: 5 coins, 5 with pairs, 0 passed the market filters, 0 researched
+- 05:49Z: 10 coins, 10 with pairs, 2 passed the market filters, 2 researched
 
 ## Coins it looked at, and why it passed
+- 05:49Z bul (DIP, $222,475 mcap, $2,732 5m vol): REJECT, Dip with fading attention is a falling knife, not a dip (5m at 0.22x the hour's pace, under 0.6x)  
+  CA `Dys6SYbjUsy8kksaqrXqo5L2GzgCYDiguGGcS8B5rkrv`
+- 05:49Z DRILL (MIGRATED, $41,149 mcap, $5,337 5m vol): PASS at conviction 3, PASS: chasing spike at 3.58x pace, no printed higher low, and the token is a casino-style game with a repo created today. Blocker: "chasing spike" (V1, V6, V16).  
+  CA `Ts2yi5FhTDAmhwTKH6ab6unWeoCMzzjz4JCPtBDRiLL`
+- 05:45Z GTA (MIGRATED, $1,091,526 mcap, $3,233 5m vol): PASS at conviction 2, PASS. Thin flow on a $1.09M migrated coin, and the first resistance is only 1.15x away. Blockers: flow below pace, no breakout, target too close. (V1, V6)  
+  CA `2NWgu4fqN2AxS5pp5v3f3SH54qArP9JepQFJm58gpump`
+- 05:38Z BAWSAQ (DIP, $1,070,563 mcap, $7,969 5m vol): PASS at conviction 3, PASS — 67% off a $3.2M peak with no printed higher low, the Vice City theme running at 0.88x pace, and no catalyst found. Falling knife on a 14-hour-old domain (V1, V3, V6).  
+  CA `D9EcoQZeAytCrF1kQFSpRNpoPhibJUvJcmRHXhubpump`
+- 05:36Z DIGS (MIGRATED, $224,758 mcap, $2,481 5m vol): REJECT, Bundles: 10 linked wallet cluster(s) hold 100.0% of supply (>20%) (V17)  
+  CA `9QT8K685Hrae4k11dhGXirdtpfAaimExtyfwt8cPpump`
 - 05:30Z JOB (MIGRATED, $2,015,439 mcap, $3,270 5m vol): PASS at conviction 2, PASS. Crowded dog-meta copy, 1.29x to the high, sellers outnumber buyers 2:1, and a 17.5% bundle cluster. Skip. (V1, V6, V13)  
   CA `9Pq7aLAbhDG2tTnS22cm6kuysZVcZpLFE368HWuypump`
 - 05:26Z HOGE (DIP, $617,607 mcap, $2,548 5m vol): REJECT, Bundles: 6 linked wallet cluster(s) hold 24.2% of supply (>20%) (V17)  
@@ -86,20 +96,10 @@ Updated 2026-11-17T05:35:11Z (paper trading, never real money)
   CA `3ig9E5SQKs8RjVn9EuW1YaprjaMd6dEftG63hBcMpump`
 - 05:17Z LEOSTAR (DIP, $793,383 mcap, $3,651 5m vol): PASS at conviction 3, PASS: DIP with no story behind it. No catalyst, theme pace 0.8x, 13 copies of the ticker, and the site doesn't show this CA (V1, V3, V13).  
   CA `2cMcMEX3Eqo86tUrVe5dgHp5GZNwqQ6crqm22UeZpump`
-- 05:16Z Mischio (MIGRATED, $97,173 mcap, $18,454 5m vol): PASS at conviction 3, PASS: chasing spike. Mischio is up 48% in 5m and sits about 10% off a high it printed minutes ago, with no printed higher low, just a V-shaped bounce off a 2.7e-5 hourly low. Blockers: "chasing spike" and "near the high." (V1, V6)  
-  CA `EULWnfX3hvnuod8wARSVFPyU1VnJxTB8YBaJFDvrpump`
-- 05:15Z 6STAR (MIGRATED, $42,098 mcap, $36,049 5m vol): PASS at conviction 2, PASS: this is a copy, not the leader. The WANTED leader is 9jhs5... at $190k, and this one is 7 minutes old in a 25-coin split crowd (V1, V3, V13).  
-  CA `9ASEjk3rPt7AUmGdMzwmzoabMKg1mrqdf4q1hKPzpump`
-- 05:06Z WANTED (MIGRATED, $202,642 mcap, $39,994 5m vol): REJECT, Bundles: 3 linked wallet cluster(s) hold 43.4% of supply (>20%) (V17)  
-  CA `9jhs5qoJnUFU7AZXbsiD1Q6De6FVsino9Ysw8QU6pump`
-- 05:04Z DRILL (MIGRATED, $45,031 mcap, $4,198 5m vol): PASS at conviction 3, PASS — DRILL is sitting at its high (2.1% off a $46k peak) with 5m flow at 3.7x its hourly pace, no higher low, and a GitHub repo created six hours ago. Blocker: chasing spike. (V1, V6)  
-  CA `Ts2yi5FhTDAmhwTKH6ab6unWeoCMzzjz4JCPtBDRiLL`
-- 05:03Z bul (DIP, $216,484 mcap, $4,996 5m vol): REJECT, Dip with fading attention is a falling knife, not a dip (5m at 0.16x the hour's pace, under 0.6x)  
-  CA `Dys6SYbjUsy8kksaqrXqo5L2GzgCYDiguGGcS8B5rkrv`
 
 ## What its skips did next (last 48h)
 A skip "ran" if the coin reached the first target (1.5x) from the skip price before a 20% drop, "dumped" if the drop came first. Sampled every 10 min, followed 6h.
-- flow below pace: blocked 52, ran 8, dumped 39, flat 1, open 4 (saving losses: keep it)
+- flow below pace: blocked 52, ran 8, dumped 40, flat 1, open 3 (saving losses: keep it)
   - ran: PASSED up to 1.73x  
     CA `3XaH8VPUaUegqmnkYA8PXCWqQqD8doqdsGGfZyoYpump`
   - ran: ANT up to 1.52x  
@@ -113,21 +113,21 @@ A skip "ran" if the coin reached the first target (1.5x) from the skip price bef
     CA `9Ei1d97U7M8m4t3fof7c8MUECtmzgqbQCo81cGGzpump`
   - ran: HENSEN up to 1.68x  
     CA `FfXDcTtDk5tzETc9QGRsy8ZSV2TGm4DXXpHXpjVVpump`
-- top 10 over 25%: blocked 50, ran 10, dumped 34, flat 4, open 2 (saving losses: keep it)
+- top 10 over 25%: blocked 49, ran 10, dumped 33, flat 4, open 2 (saving losses: keep it)
   - ran: rockstar up to 1.95x  
     CA `9HFUEab7sompLDPTAaTGkryMNGbtBaFMhHMVpJEBpump`
   - ran: VI up to 1.71x  
     CA `4Dj8m9vWqu779F1KDBUttvXM8YFm7U92SDpvjBNKtEiB`
   - ran: ANT up to 1.52x  
     CA `BDPm9gPHCRyo2qjcRrYPsXexmbRwuuHQZo2qhhYXpump`
-- near the high / chasing: blocked 39, ran 7, dumped 29, flat 0, open 3 (saving losses: keep it)
+- near the high / chasing: blocked 39, ran 7, dumped 30, flat 1, open 1 (saving losses: keep it)
   - ran: penny up to 1.6x  
     CA `5gmCPpuktJ7Svjgr4PPJBTosAFKB8K6Z45EGfSUmpump`
   - ran: WIGGLES up to 1.69x  
     CA `2kWx47CUrcXtzptFNnbSXKq3vo1ebqyLBhRytKRGpump`
   - ran: Bustas up to 1.75x  
     CA `9rTgs58B3p11vXekTTgVYtv8vKxQ6oSoZFXPy4onpump`
-- RugCheck danger: blocked 27, ran 7, dumped 19, flat 1, open 0 (saving losses: keep it)
+- RugCheck danger: blocked 26, ran 7, dumped 18, flat 1, open 0 (saving losses: keep it)
   - ran: FUTA up to 2.77x  
     CA `FxoXV4C8DTSYeg5dSXrEsr45zzr8tpNbsrpoiZ8Kpump`
   - ran: PumpBank up to 2.02x  
@@ -200,16 +200,16 @@ Nothing shows a positive edge after costs. Over 309 settled coins, every setup l
 - [2026-11-02 20:25] I expected Slingoor, a clean MIGRATED leader with $25k of 5m flow at pace and a 0.77 buy share, to retest its $408k high from $304k. It never went green (0.98x peak) and hit the -20% stop in 2 minutes, a -$2.86 probe. My own thesis admitted there was no printed higher low after a peak only 6 minutes old, so this confirms the money-shape rule: buy share and flow are not structure (V1, V6). Next time a MIGRATED pullback with no higher low above the hourly low is a PASS with blocker "no higher low", not a probe. This is one loss, so it adds no new ban beyond the rule I already have.
 
 ## Meta right now
-The meta is animal and joke coins on launch spikes, not one story. Tuff Cat ($53k mcap, $141k 5m, 52% buys) and Bundeswehr Duck (+771% 1h, $13.5k 5m, 66% buys) are rising on fresh volume, and bul and CHAR are running at +266% and +146% with $46k and $58k of 5m volume. The fading side is the same theme after the spike: Frogecoin, Jojo the gorilla, Mihaomas, PEARL and WANTED are down 74-93% on the hour, and WANTED's 5m volume has collapsed to $13.5k even though 65% of its recent buys are buys. The crawler's summary names BAWSAQ, VICEX, Copytrader and DRILL and says WANTED did +180% on $71k of 5m volume; none of those appear in scan_movers and WANTED's numbers don't match, so I'm trusting the scan and discounting those claims. Setups to research now: CHAR and Tuff Cat as MIGRATED candidates (under 12h, mcap above $30k, 5m volume well over $10k), with bul as a pullback watch rather than a chase at +266%. WANTED is a DIP candidate only if its 5m volume holds near its hourly pace; right now it's a falling knife. Paper only, not financial advice.
+Two themes are moving on scan_movers. The fading one is animal and dog joke coins on fresh pump.fun launches: Tuff Cat, Tuff Dog, bo the orangutan and Bundeswehr Duck are all under $4k mcap and about 1-1.3h old, with 5m volume at or near zero after their hour spikes, and Hogecoin and DogWifJob have sell-skewed 5m flow (27% and 35% buys). The rising one is parody and culture-joke coins with real buyers: Mischio ($96k mcap, 1.4h old, $15.8k 5m, 70% buys, +54% 1h), with BAWSAQ ($1.07M, 71% buys) and GTA "Grand Theft Anthropic" ($1.1M, 55% buys) showing the same pattern with thinner 5m volume. The crawler's numbers don't match the scan: Tuff Cat is $2.4k not $53k, Bundeswehr Duck isn't +771%, WANTED isn't +180%, and CHAR and bul aren't in scan_movers at all, so I'm discarding those setups; BAWSAQ is in the scan even though the crawler says it isn't. Setups to research: Mischio as a MIGRATED candidate, since it fits the under-12h age, $30k+ mcap and $10k+ 5m volume gates, but holder, dev and bundle checks run first. BAWSAQ and GTA are watch-only until 5m volume clears $10k, and LEOSTAR (down 34% in an hour with 69% buys on 5m) is a dip watch, though $3.6k of 5m volume is too thin to act on. The Nvidia and Trump-dinner headlines have no coin on the movers, so they aren't the meta right now. Paper only, not financial advice.
 
 ## Moving most in its scans, last 30 min (1h volume)
-- WANTED: $379,789 1h vol, $189,772 mcap, +51% 1h  
-  CA `9jhs5qoJnUFU7AZXbsiD1Q6De6FVsino9Ysw8QU6pump`
-- Tuff: $296,216 1h vol, $2,526 mcap, -92% 1h  
-  CA `4xYLY4PLLapVcTwvUPRTnSraoPZgXzXYGtAKw7ogpump`
-- Mischio: $156,959 1h vol, $95,683 mcap, +54% 1h  
-  CA `EULWnfX3hvnuod8wARSVFPyU1VnJxTB8YBaJFDvrpump`
-- BLOB: $113,330 1h vol, $16,231,236 mcap, +26% 1h  
+- BLOB: $160,669 1h vol, $17,550,313 mcap, +27% 1h  
   CA `8s11PkgQt4ZzdZ7oo84hK5t9HG1EvdgAjcg4W7Lpump`
+- bul: $151,934 1h vol, $222,020 mcap, -22% 1h  
+  CA `Dys6SYbjUsy8kksaqrXqo5L2GzgCYDiguGGcS8B5rkrv`
 - MELNOK: $106,208 1h vol, $103,904 mcap, +10% 1h  
   CA `3ig9E5SQKs8RjVn9EuW1YaprjaMd6dEftG63hBcMpump`
+- BAWSAQ: $70,041 1h vol, $1,070,563 mcap, +4% 1h  
+  CA `D9EcoQZeAytCrF1kQFSpRNpoPhibJUvJcmRHXhubpump`
+- GTA: $57,099 1h vol, $1,103,133 mcap, +15% 1h  
+  CA `2NWgu4fqN2AxS5pp5v3f3SH54qArP9JepQFJm58gpump`
