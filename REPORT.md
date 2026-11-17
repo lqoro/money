@@ -1,13 +1,13 @@
 # Trencher live report
 
-Updated 2026-11-17T08:21:30Z (paper trading, never real money)
+Updated 2026-11-17T08:36:41Z (paper trading, never real money)
 
 - Equity: $74.23 (-25.8% vs $100 start)
 - Closed trades: 22, 3 wins
 - Fees paid: $14.78 (axiom $2.81, network $9.18, pool $2.66), plus $4.15 lost to slippage
 - New trades: WATCH-ONLY (scans and decides, buys nothing)
 - Brain: subscription, claude-haiku-5-5 for routine calls, claude-opus-5-5 for the daily review; 475 routine calls and 1 plan-limit hits in 48h
-- Watch log: 108 coins being followed, 2046 filed, 0 would-buys (6h follow, sampled every 2 min)
+- Watch log: 106 coins being followed, 2049 filed, 0 would-buys (6h follow, sampled every 2 min)
 
 ## Scorecard (after fees)
 - 22 closed, 3 won (14%), net $-25.79
@@ -73,9 +73,11 @@ Updated 2026-11-17T08:21:30Z (paper trading, never real money)
   CA `H4gHnZ3NCU7Z9XQwGX6YYJNyieGEW8pqwGRUcdSxpump`
 
 ## Last scan
-- 08:20Z: 6 coins, 6 with pairs, 1 passed the market filters, 1 researched
+- 08:35Z: 1 coins, 1 with pairs, 0 passed the market filters, 0 researched
 
 ## Coins it looked at, and why it passed
+- 08:26Z MERO (FINAL_STRETCH, $18,225 mcap, $3,655 5m vol): PASS at conviction 2, PASS: MERO fails flow, theme and holder gates. Blocker "no catalyst, theme dead". (V1, V6, V13)  
+  CA `Bg5oh7StVhfUAEcjU7ChDfB5uuvpXsZR9eDx9894pump`
 - 08:20Z GATO (DIP, $6,355,695 mcap, $2,952 5m vol): REJECT, Dev holds 2.7% (>1%) (V13, V17)  
   CA `HsprHxBRgiVaQdRf3TnKNuZZtaX9JUSPgMFdAkk6pump`
 - 08:20Z LEOSTAR (MIGRATED, $1,130,954 mcap, $2,085 5m vol): PASS at conviction 3, PASS: flow below pace, first resistance only 1.08x away, and no catalyst for a bottom buy. Its own site doesn't show this CA, and 15 copies share the ticker (V1, V3, V6, V13).  
@@ -94,12 +96,10 @@ Updated 2026-11-17T08:21:30Z (paper trading, never real money)
   CA `DQRNzNt2QRbLj9iPDRGDBNxCN6skYdne7Qxv819Bpump`
 - 07:55Z BAWSAQ (DIP, $1,046,582 mcap, $4,359 5m vol): PASS at conviction 3, PASS: bottom buy fails the narrative gate. Theme volume is 0.6x pace, no rising story, no named catalyst. A parody stock-exchange reskin of a 0.7-day-old domain on a 7-copy ticker field. (V1, V6, V13)  
   CA `D9EcoQZeAytCrF1kQFSpRNpoPhibJUvJcmRHXhubpump`
-- 07:52Z DIGS (MIGRATED, $223,749 mcap, $2,780 5m vol): REJECT, Bundles: 10 linked wallet cluster(s) hold 100.0% of supply (>20%) (V17)  
-  CA `9QT8K685Hrae4k11dhGXirdtpfAaimExtyfwt8cPpump`
 
 ## What its skips did next (last 48h)
 A skip "ran" if the coin reached the first target (1.5x) from the skip price before a 20% drop, "dumped" if the drop came first. Sampled every 10 min, followed 6h.
-- flow below pace: blocked 54, ran 8, dumped 38, flat 1, open 7 (saving losses: keep it)
+- flow below pace: blocked 53, ran 8, dumped 37, flat 1, open 7 (saving losses: keep it)
   - ran: PASSED up to 1.73x  
     CA `3XaH8VPUaUegqmnkYA8PXCWqQqD8doqdsGGfZyoYpump`
   - ran: ANT up to 1.52x  
@@ -142,7 +142,7 @@ A skip "ran" if the coin reached the first target (1.5x) from the skip price bef
 - falling knife (code): blocked 18, ran 1, dumped 14, flat 1, open 2 (saving losses: keep it)
   - ran: BigP up to 1.57x  
     CA `CY254o6VPaJnTiY5uuKUB8xDjSgykC6xtoLoC3kpump`
-- thin 5m volume: blocked 16, ran 4, dumped 10, flat 0, open 2 (saving losses: keep it)
+- thin 5m volume: blocked 17, ran 4, dumped 10, flat 0, open 3 (saving losses: keep it)
   - ran: SENDER up to 1.58x  
     CA `5peJLZQnBkXtydYYMunbT4QutSyd9eA474MqxcmEpump`
   - ran: UNITY up to 1.66x  
@@ -199,13 +199,13 @@ Nothing shows a positive edge after costs. Over 309 settled coins, every setup l
 The trenches are not quiet. The movers with real buyers are fresh pump.fun launches under an hour old, and the one theme I can see is game-culture reskins: SUPERPLUMB (Mario-style plumber joke, 78% buys, $10.1k 5m, $45k mcap, already on pumpswap) is the cleanest MIGRATED candidate, and MERO (+486% 1h, 60% buys, $10.6k 5m, $26k mcap on the bonding curve near the ~34k bond) is a FINAL_STRETCH candidate. KATIA sits just under the gate at $9.4k 5m with 61% buys, so it's a recheck, not a buy yet. Fading: the animal-joke tier (FROGE -37% 1h, PUMPMAS 0% buys, gamercat -94%, HOGE 14% buys), and the old big caps (GATO, BLOB, LEOSTAR) have flat-to-dead 5m volume. The crawler's story is off: BAWSAQ and Momo aren't on the movers, FROGE is fading not rising, and its KATIA figures ($87k, $61k 5m) don't match the scan's $99k and $9.4k, so I'm trusting the scan. Holder, dev and bundle checks still have to run on SUPERPLUMB, MERO and KATIA before any of them gets a conviction.
 
 ## Moving most in its scans, last 30 min (1h volume)
-- BLOB: $656,116 1h vol, $19,522,465 mcap, -8% 1h  
+- BLOB: $833,786 1h vol, $16,428,959 mcap, -14% 1h  
   CA `8s11PkgQt4ZzdZ7oo84hK5t9HG1EvdgAjcg4W7Lpump`
 - KATIA: $145,597 1h vol, $63,326 mcap, -39% 1h  
   CA `9a5uUXxa7LzHkT6YUikttpQsUZm4Etw8qhd2HP7xpump`
-- cepump: $139,222 1h vol, $100,609 mcap, +249% 1h  
-  CA `DQRNzNt2QRbLj9iPDRGDBNxCN6skYdne7Qxv819Bpump`
 - SUPERPLUMB: $123,912 1h vol, $59,380 mcap, +79% 1h  
   CA `3ghMZsrHkWKzigd2pxvuLMGMcVYJt1JjDcatsfMhpump`
-- BAWSAQ: $74,401 1h vol, $1,059,805 mcap, -20% 1h  
-  CA `D9EcoQZeAytCrF1kQFSpRNpoPhibJUvJcmRHXhubpump`
+- Whoa: $99,941 1h vol, $10,368 mcap, +297% 1h  
+  CA `A9RkWBfUTmkuwdefUwYHQLLSoKN673g9uEBV4uHEpump`
+- MERO: $95,515 1h vol, $18,225 mcap, +40% 1h  
+  CA `Bg5oh7StVhfUAEcjU7ChDfB5uuvpXsZR9eDx9894pump`
