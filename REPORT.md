@@ -1,13 +1,13 @@
 # Trencher live report
 
-Updated 2026-11-17T07:36:08Z (paper trading, never real money)
+Updated 2026-11-17T07:51:19Z (paper trading, never real money)
 
 - Equity: $74.23 (-25.8% vs $100 start)
 - Closed trades: 22, 3 wins
 - Fees paid: $14.78 (axiom $2.81, network $9.18, pool $2.66), plus $4.15 lost to slippage
 - New trades: WATCH-ONLY (scans and decides, buys nothing)
-- Brain: subscription, claude-haiku-5-5 for routine calls, claude-opus-5-5 for the daily review; 471 routine calls and 1 plan-limit hits in 48h
-- Watch log: 114 coins being followed, 2029 filed, 0 would-buys (6h follow, sampled every 2 min)
+- Brain: subscription, claude-haiku-5-5 for routine calls, claude-opus-5-5 for the daily review; 469 routine calls and 1 plan-limit hits in 48h
+- Watch log: 111 coins being followed, 2033 filed, 0 would-buys (6h follow, sampled every 2 min)
 
 ## Scorecard (after fees)
 - 22 closed, 3 won (14%), net $-25.79
@@ -73,9 +73,11 @@ Updated 2026-11-17T07:36:08Z (paper trading, never real money)
   CA `H4gHnZ3NCU7Z9XQwGX6YYJNyieGEW8pqwGRUcdSxpump`
 
 ## Last scan
-- 07:35Z: 6 coins, 6 with pairs, 1 passed the market filters, 1 researched
+- 07:50Z: 6 coins, 6 with pairs, 0 passed the market filters, 0 researched
 
 ## Coins it looked at, and why it passed
+- 07:40Z MERO (FINAL_STRETCH, $28,005 mcap, $11,767 5m vol): PASS at conviction 3, PASS: split crowd. MERO is the 19-copy "mero" vamp field and not the volume leader (about 6% of the field's 5m flow). Bond is 1.2x away, so the target is too close. (V1, V3)  
+  CA `Bg5oh7StVhfUAEcjU7ChDfB5uuvpXsZR9eDx9894pump`
 - 07:35Z GATO (DIP, $6,111,625 mcap, $2,566 5m vol): REJECT, Dev holds 2.7% (>1%) (V13, V17)  
   CA `HsprHxBRgiVaQdRf3TnKNuZZtaX9JUSPgMFdAkk6pump`
 - 07:34Z LEOSTAR (MIGRATED, $1,151,181 mcap, $2,396 5m vol): PASS at conviction 3, PASS: flow below pace, 5m at $2.4k, a bottom buy with no catalyst, and 15 copies of the ticker. Blocker: flow below pace (V1, V6, V13).  
@@ -94,8 +96,6 @@ Updated 2026-11-17T07:36:08Z (paper trading, never real money)
   CA `D9EcoQZeAytCrF1kQFSpRNpoPhibJUvJcmRHXhubpump`
 - 07:06Z DIGS (MIGRATED, $239,999 mcap, $2,961 5m vol): REJECT, Bundles: 10 linked wallet cluster(s) hold 100.0% of supply (>20%) (V17)  
   CA `9QT8K685Hrae4k11dhGXirdtpfAaimExtyfwt8cPpump`
-- 06:58Z DacityWheel (FINAL_STRETCH, $16,000 mcap, $37,761 5m vol): PASS at conviction 3, PASS: 4 minutes old and up 309% on the 5m at 12x the hourly pace. That's a spike, not a pullback. No higher low, no story yet (V1, V6).  
-  CA `Bu2rhDgH5aLWn2ayAFyARtpnEJDAex8qkG8Y7Sp2pump`
 
 ## What its skips did next (last 48h)
 A skip "ran" if the coin reached the first target (1.5x) from the skip price before a 20% drop, "dumped" if the drop came first. Sampled every 10 min, followed 6h.
@@ -141,7 +141,7 @@ A skip "ran" if the coin reached the first target (1.5x) from the skip price bef
     CA `8cWGfiHyKqxgLrLtkPt2NnLkSUV2JbcLBf4RN6Fapump`
   - ran: GOAT up to 1.61x  
     CA `D7iafdwzzpB7tisqQqT5T9aRrYPtHLqzwxhnLoWJgoat`
-- falling knife (code): blocked 18, ran 1, dumped 14, flat 1, open 2 (saving losses: keep it)
+- falling knife (code): blocked 18, ran 1, dumped 15, flat 1, open 1 (saving losses: keep it)
   - ran: BigP up to 1.57x  
     CA `CY254o6VPaJnTiY5uuKUB8xDjSgykC6xtoLoC3kpump`
 - thin 5m volume: blocked 17, ran 4, dumped 10, flat 1, open 2 (saving losses: keep it)
@@ -158,9 +158,7 @@ A skip "ran" if the coin reached the first target (1.5x) from the skip price bef
     CA `8s11PkgQt4ZzdZ7oo84hK5t9HG1EvdgAjcg4W7Lpump`
   - ran: CYBERLEEK up to 2x  
     CA `HcWTwfy12QPzc5WxPXTTtdvtnw1TZ64sqQAHXWPhpump`
-- dev share over 1%: blocked 11, ran 2, dumped 8, flat 0, open 1 (saving losses: keep it)
-  - ran: PANICSELL up to 1.74x  
-    CA `82Z6CcE5g3o1jW3vgtcqr95jP4XFx8jg1SJe8ikepump`
+- dev share over 1%: blocked 10, ran 1, dumped 8, flat 0, open 1 (saving losses: keep it)
   - ran: WSB up to 1.52x  
     CA `B82PFKmT4aM38EUUqVoZs6sZdAfxDHHrB6DSXxCKpump`
 
@@ -200,16 +198,16 @@ Nothing shows a positive edge after costs. Over 309 settled coins, every setup l
 - [2026-11-02 20:25] I expected Slingoor, a clean MIGRATED leader with $25k of 5m flow at pace and a 0.77 buy share, to retest its $408k high from $304k. It never went green (0.98x peak) and hit the -20% stop in 2 minutes, a -$2.86 probe. My own thesis admitted there was no printed higher low after a peak only 6 minutes old, so this confirms the money-shape rule: buy share and flow are not structure (V1, V6). Next time a MIGRATED pullback with no higher low above the hourly low is a PASS with blocker "no higher low", not a probe. This is one loss, so it adds no new ban beyond the rule I already have.
 
 ## Meta right now
-The trenches are thin, not dead: only KATIA (spacex-chan, $87k mcap, $61k 5m, 55% buys, +85% 1h, 12 min old) clears the $10k 5m gate, and most movers sit under $5k. Rising: fresh frog and cat joke launches, FROGE (+210% 1h, 45% buys, $3.4k 5m) and Momo (+437% 1h, 59% buys, $4.3k 5m), both under 3h old but too thin to act on yet. Holding: culture-parody coins at $0.1M to $1.2M, BAWSAQ and GTA "Grand Theft Anthropic," with 67-68% buys but only $4-5k 5m, plus ETF and COGE. Fading: the older dog-joke tier (HOGE 26% buys, JOB 42%, WANTED -37%) and dead old tokens like DRILL. Setups to research now: KATIA as a MIGRATED candidate (passes the age, mcap and 5m gates; run holder, dev, bundle and similar-token vamp checks first), BAWSAQ and GTA as watch-only until 5m volume clears $10k, and Momo and FROGE as watch-only until volume firms up. Mischio is dead per the scan ($2k mcap, -96% 1h, 8% buys), so the crawler's $96k and +54% figures are wrong and I'm dropping it. The Nvidia and Trump-dinner headlines have no coin on the movers, so they are not the meta. Paper only, not financial advice.
+The trenches are not quiet. The movers with real buyers are fresh pump.fun launches under an hour old, and the one theme I can see is game-culture reskins: SUPERPLUMB (Mario-style plumber joke, 78% buys, $10.1k 5m, $45k mcap, already on pumpswap) is the cleanest MIGRATED candidate, and MERO (+486% 1h, 60% buys, $10.6k 5m, $26k mcap on the bonding curve near the ~34k bond) is a FINAL_STRETCH candidate. KATIA sits just under the gate at $9.4k 5m with 61% buys, so it's a recheck, not a buy yet. Fading: the animal-joke tier (FROGE -37% 1h, PUMPMAS 0% buys, gamercat -94%, HOGE 14% buys), and the old big caps (GATO, BLOB, LEOSTAR) have flat-to-dead 5m volume. The crawler's story is off: BAWSAQ and Momo aren't on the movers, FROGE is fading not rising, and its KATIA figures ($87k, $61k 5m) don't match the scan's $99k and $9.4k, so I'm trusting the scan. Holder, dev and bundle checks still have to run on SUPERPLUMB, MERO and KATIA before any of them gets a conviction.
 
 ## Moving most in its scans, last 30 min (1h volume)
 - KATIA: $544,508 1h vol, $99,329 mcap, +122% 1h  
   CA `9a5uUXxa7LzHkT6YUikttpQsUZm4Etw8qhd2HP7xpump`
-- BLOB: $292,939 1h vol, $20,820,177 mcap, +5% 1h  
+- BLOB: $387,667 1h vol, $19,820,404 mcap, +1% 1h  
   CA `8s11PkgQt4ZzdZ7oo84hK5t9HG1EvdgAjcg4W7Lpump`
-- MERO: $137,801 1h vol, $35,389 mcap, +687% 1h  
+- MERO: $170,006 1h vol, $26,352 mcap, +486% 1h  
   CA `Bg5oh7StVhfUAEcjU7ChDfB5uuvpXsZR9eDx9894pump`
 - SUPERPLUMB: $80,882 1h vol, $44,773 mcap, +44% 1h  
   CA `3ghMZsrHkWKzigd2pxvuLMGMcVYJt1JjDcatsfMhpump`
-- BAWSAQ: $69,557 1h vol, $1,239,392 mcap, +12% 1h  
-  CA `D9EcoQZeAytCrF1kQFSpRNpoPhibJUvJcmRHXhubpump`
+- DacityWheel: $80,184 1h vol, $2,310 mcap, -41% 1h  
+  CA `Bu2rhDgH5aLWn2ayAFyARtpnEJDAex8qkG8Y7Sp2pump`
