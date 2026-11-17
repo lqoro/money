@@ -1,13 +1,13 @@
 # Trencher live report
 
-Updated 2026-11-17T03:49:16Z (paper trading, never real money)
+Updated 2026-11-17T04:04:19Z (paper trading, never real money)
 
 - Equity: $74.23 (-25.8% vs $100 start)
 - Closed trades: 22, 3 wins
 - Fees paid: $14.78 (axiom $2.81, network $9.18, pool $2.66), plus $4.15 lost to slippage
 - New trades: WATCH-ONLY (scans and decides, buys nothing)
-- Brain: subscription, claude-haiku-5-5 for routine calls, claude-opus-5-5 for the daily review; 445 routine calls and 1 plan-limit hits in 48h
-- Watch log: 129 coins being followed, 1950 filed, 0 would-buys (6h follow, sampled every 2 min)
+- Brain: subscription, claude-haiku-5-5 for routine calls, claude-opus-5-5 for the daily review; 448 routine calls and 1 plan-limit hits in 48h
+- Watch log: 129 coins being followed, 1955 filed, 0 would-buys (6h follow, sampled every 2 min)
 
 ## Scorecard (after fees)
 - 22 closed, 3 won (14%), net $-25.79
@@ -73,9 +73,19 @@ Updated 2026-11-17T03:49:16Z (paper trading, never real money)
   CA `H4gHnZ3NCU7Z9XQwGX6YYJNyieGEW8pqwGRUcdSxpump`
 
 ## Last scan
-- 03:48Z: 3 coins, 3 with pairs, 0 passed the market filters, 0 researched
+- 04:04Z: 6 coins, 6 with pairs, 0 passed the market filters, 0 researched
 
 ## Coins it looked at, and why it passed
+- 04:02Z ANIMAL (FINAL_STRETCH, $20,577 mcap, $41,884 5m vol): PASS at conviction 3, PASS: chasing spike. ANIMAL is 5 minutes old, up 766% on the 5m, with 12x its hourly pace, inside a 29-copy same-ticker field, and the story isn't on the radar. Farm-shaped until proven otherwise (V1, V6, V13).  
+  CA `GiaaDXRhmEDWjhq67ffZ3wJJeips7BGz69byv5SLpump`
+- 03:59Z CJ (DIP, $161,970 mcap, $2,317 5m vol): REJECT, Top 10 hold 27.2% ex-pool (>25%) (V13)  
+  CA `F4vEFNoH9H2oLYRabaQQ2Z6jAAi2AhRVdTdVH6Nn2J1q`
+- 03:59Z JOB (MIGRATED, $2,049,190 mcap, $2,512 5m vol): PASS at conviction 3, PASS: flow below pace, a 17.5% bundle cluster, and a 1.27x target. Blockers: "flow below pace", "target too close", "no catalyst". (V1, V6, V13)  
+  CA `9Pq7aLAbhDG2tTnS22cm6kuysZVcZpLFE368HWuypump`
+- 03:59Z Lemon (MIGRATED, $54,627 mcap, $2,506 5m vol): PASS at conviction 3, PASS — Lemon Pig is 78% off its $246k peak, sitting in a 16-copy same-name field with a 6% bundle cluster. Split crowd, too deep, no fresh catalyst. (V1, V3, V13)  
+  CA `FsFqQGxCNd7dbFuimCW4hMiFRdvvM8PoLyp4WZrxAUnN`
+- 03:53Z MELNOK (MIGRATED, $113,813 mcap, $8,604 5m vol): PASS at conviction 2, PASS: MELNOK is 8% off a 1-hour-old peak after a +267% hour, on $8.6k 5m at 0.68x pace with no printed higher low. Chasing a spike, not buying a pullback (V1, V6).  
+  CA `3ig9E5SQKs8RjVn9EuW1YaprjaMd6dEftG63hBcMpump`
 - 03:47Z ETF (DIP, $206,453 mcap, $2,375 5m vol): REJECT, Dip with fading attention is a falling knife, not a dip (5m at 0.58x the hour's pace, under 0.6x)  
   CA `Gg5aWvfucyMwihDzyfCEaLgyeeNE2dkob2LTwWfHpump`
 - 03:46Z LEOSTAR (MIGRATED, $1,053,576 mcap, $3,589 5m vol): PASS at conviction 3, PASS: flow below pace, no printed higher low, and a 12-hour-old site that doesn't show this CA. Blocker: "flow below pace". (V1, V3, V6)  
@@ -86,48 +96,38 @@ Updated 2026-11-17T03:49:16Z (paper trading, never real money)
   CA `9k2nqjUrSh9p2ZBnWxNE3QRWYiLocrWZfoDm3Vdxpump`
 - 03:35Z WANTED (MIGRATED, $1,192,722 mcap, $103,052 5m vol): REJECT, RugCheck danger: Single holder ownership 54.06%  
   CA `9jhs5qoJnUFU7AZXbsiD1Q6De6FVsino9Ysw8QU6pump`
-- 03:33Z CAT (DIP, $32,012 mcap, $3,734 5m vol): PASS at conviction 3, PASS: DIP on CAT, a 65%-off vamp-field copy with a 0.71x theme pace, no catalyst and $3.7k of 5m flow. The blocker is "dead story" (V1, V6).  
-  CA `2HVqzNisr463WMDpp6Q45ekuVfcjm8kEaiKd4ra8pump`
-- 03:33Z bul (MIGRATED, $145,645 mcap, $141,126 5m vol): PASS at conviction 3, PASS: chasing spike. Up 36% on 5m at 12x its hourly pace, 6% off a peak printed 18 minutes ago, no higher low, and a 5-minute-old Raydium pool in a 28-copy ticker field. (V1, V6, V13)  
-  CA `Dys6SYbjUsy8kksaqrXqo5L2GzgCYDiguGGcS8B5rkrv`
-- 03:32Z Jojo (DIP, $91,945 mcap, $6,924 5m vol): REJECT, Dip with fading attention is a falling knife, not a dip (5m at 0.28x the hour's pace, under 0.6x)  
-  CA `D2Zkpv4m8M9Yh7tSDDCtcyZb6WQYVKzkQjM4x5eMQDZB`
-- 03:28Z GTA (MIGRATED, $1,108,177 mcap, $5,114 5m vol): PASS at conviction 3, PASS: the first resistance is only 1.14x away, flow is under pace, and the chart is a saw-tooth in a 23-copy field. Blockers: "target too close", "flow below pace", "big cap, no room". (V1, V3, V6)  
-  CA `2NWgu4fqN2AxS5pp5v3f3SH54qArP9JepQFJm58gpump`
-- 03:26Z DRILL (FINAL_STRETCH, $18,606 mcap, $6,463 5m vol): PASS at conviction 3, PASS. DRILL is a $18.6k pump.fun launch with $6.5k of 5m volume, under the $10k bar, in a theme running at 0.31x its hourly pace, with no live story behind it. Blocker: "dead story" plus "theme volume below pace." Not a probe. (V1, V6, V16)  
-  CA `Ts2yi5FhTDAmhwTKH6ab6unWeoCMzzjz4JCPtBDRiLL`
 
 ## What its skips did next (last 48h)
 A skip "ran" if the coin reached the first target (1.5x) from the skip price before a 20% drop, "dumped" if the drop came first. Sampled every 10 min, followed 6h.
-- flow below pace: blocked 53, ran 10, dumped 38, flat 1, open 4 (saving losses: keep it)
+- flow below pace: blocked 54, ran 10, dumped 39, flat 1, open 4 (saving losses: keep it)
   - ran: PASSED up to 1.73x  
     CA `3XaH8VPUaUegqmnkYA8PXCWqQqD8doqdsGGfZyoYpump`
   - ran: ANT up to 1.52x  
     CA `BDPm9gPHCRyo2qjcRrYPsXexmbRwuuHQZo2qhhYXpump`
   - ran: ANT up to 1.58x  
     CA `7H2sHeLHyHR8jxENGmsqn7RxTkYZa4KwXvKYcoxBpump`
-- top 10 over 25%: blocked 49, ran 10, dumped 34, flat 3, open 2 (saving losses: keep it)
+- top 10 over 25%: blocked 50, ran 10, dumped 34, flat 3, open 3 (saving losses: keep it)
   - ran: rockstar up to 1.95x  
     CA `9HFUEab7sompLDPTAaTGkryMNGbtBaFMhHMVpJEBpump`
   - ran: VI up to 1.71x  
     CA `4Dj8m9vWqu779F1KDBUttvXM8YFm7U92SDpvjBNKtEiB`
   - ran: ANT up to 1.52x  
     CA `BDPm9gPHCRyo2qjcRrYPsXexmbRwuuHQZo2qhhYXpump`
-- too new / sniping: blocked 48, ran 8, dumped 40, flat 0, open 0 (saving losses: keep it)
+- too new / sniping: blocked 49, ran 8, dumped 40, flat 0, open 1 (saving losses: keep it)
   - ran: Chick up to 1.66x  
     CA `Dueav76X9spnoLomhM2jMkkWorVggbeWucLs3YLupump`
   - ran: TOOLS up to 1.83x  
     CA `9Ei1d97U7M8m4t3fof7c8MUECtmzgqbQCo81cGGzpump`
   - ran: HENSEN up to 1.68x  
     CA `FfXDcTtDk5tzETc9QGRsy8ZSV2TGm4DXXpHXpjVVpump`
-- near the high / chasing: blocked 41, ran 8, dumped 31, flat 0, open 2 (saving losses: keep it)
+- near the high / chasing: blocked 40, ran 9, dumped 30, flat 0, open 1 (saving losses: keep it)
   - ran: penny up to 1.6x  
     CA `5gmCPpuktJ7Svjgr4PPJBTosAFKB8K6Z45EGfSUmpump`
   - ran: WIGGLES up to 1.69x  
     CA `2kWx47CUrcXtzptFNnbSXKq3vo1ebqyLBhRytKRGpump`
   - ran: Bustas up to 1.75x  
     CA `9rTgs58B3p11vXekTTgVYtv8vKxQ6oSoZFXPy4onpump`
-- RugCheck danger: blocked 30, ran 7, dumped 21, flat 1, open 1 (saving losses: keep it)
+- RugCheck danger: blocked 30, ran 8, dumped 21, flat 1, open 0 (saving losses: keep it)
   - ran: FUTA up to 2.77x  
     CA `FxoXV4C8DTSYeg5dSXrEsr45zzr8tpNbsrpoiZ8Kpump`
   - ran: PumpBank up to 2.02x  
@@ -207,11 +207,11 @@ Not quiet. Most of the scan is fresh pump.fun and PumpSwap launches under a day 
 ## Moving most in its scans, last 30 min (1h volume)
 - WANTED: $721,594 1h vol, $1,096,826 mcap, +180% 1h  
   CA `9jhs5qoJnUFU7AZXbsiD1Q6De6FVsino9Ysw8QU6pump`
-- FLYWHEEL: $346,360 1h vol, $11,054 mcap, -60% 1h  
+- FLYWHEEL: $222,409 1h vol, $14,880 mcap, -74% 1h  
   CA `EXscV4GJmRmAncFf13nKCuuuZkzT7V6JLyLdQJWHpump`
-- Jojo: $294,612 1h vol, $91,945 mcap, -9% 1h  
-  CA `D2Zkpv4m8M9Yh7tSDDCtcyZb6WQYVKzkQjM4x5eMQDZB`
 - CHAR: $220,092 1h vol, $178,374 mcap, +92% 1h  
   CA `9k2nqjUrSh9p2ZBnWxNE3QRWYiLocrWZfoDm3Vdxpump`
-- bul: $143,158 1h vol, $146,931 mcap, +37% 1h  
-  CA `Dys6SYbjUsy8kksaqrXqo5L2GzgCYDiguGGcS8B5rkrv`
+- MELNOK: $150,384 1h vol, $117,513 mcap, +206% 1h  
+  CA `3ig9E5SQKs8RjVn9EuW1YaprjaMd6dEftG63hBcMpump`
+- HOGE: $135,365 1h vol, $658,188 mcap, -22% 1h  
+  CA `FVzqGqRmr4UH1Fif6dewmwbJ1p4YUZCu8dcw4Efopump`
