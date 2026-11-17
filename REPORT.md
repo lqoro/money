@@ -1,13 +1,13 @@
 # Trencher live report
 
-Updated 2026-11-17T12:54:14Z (paper trading, never real money)
+Updated 2026-11-17T13:09:14Z (paper trading, never real money)
 
 - Equity: $74.23 (-25.8% vs $100 start)
 - Closed trades: 22, 3 wins
 - Fees paid: $14.78 (axiom $2.81, network $9.18, pool $2.66), plus $4.15 lost to slippage
 - New trades: WATCH-ONLY (scans and decides, buys nothing)
-- Brain: subscription, claude-haiku-5-5 for routine calls, claude-opus-5-5 for the daily review; 498 routine calls and 3 plan-limit hits in 48h
-- Watch log: 96 coins being followed, 2131 filed, 0 would-buys (6h follow, sampled every 2 min)
+- Brain: subscription, claude-haiku-5-5 for routine calls, claude-opus-5-5 for the daily review; 498 routine calls and 5 plan-limit hits in 48h
+- Watch log: 97 coins being followed, 2135 filed, 0 would-buys (6h follow, sampled every 2 min)
 
 ## Scorecard (after fees)
 - 22 closed, 3 won (14%), net $-25.79
@@ -73,33 +73,33 @@ Updated 2026-11-17T12:54:14Z (paper trading, never real money)
   CA `H4gHnZ3NCU7Z9XQwGX6YYJNyieGEW8pqwGRUcdSxpump`
 
 ## Last scan
-- 12:53Z: 3 coins, 3 with pairs, 1 passed the market filters, 1 researched
+- 13:08Z: 8 coins, 8 with pairs, 1 passed the market filters, 1 researched
 
 ## Coins it looked at, and why it passed
-- 12:53Z SOYOUARE (MIGRATED, $92,309 mcap, $8,538 5m vol): SKIP, passed the checklist, but the brain was paced or paused  
-  CA `GbGzZQugMJtZnhcnNyHUamXg2xGZw4C4RWy1uSvVpump`
-- 12:52Z JOB (MIGRATED, $1,838,666 mcap, $2,493 5m vol): SKIP, passed the checklist, but the brain was paced or paused  
+- 13:08Z JOB (MIGRATED, $1,793,946 mcap, $2,246 5m vol): SKIP, passed the checklist, but the brain was paced or paused  
   CA `9Pq7aLAbhDG2tTnS22cm6kuysZVcZpLFE368HWuypump`
-- 12:51Z Leonida (MIGRATED, $425,855 mcap, $1,791 5m vol): REJECT, 5m volume $1,791 is dead (<$2,000) (V1)  
-  CA `BWJfBNeXpapG7uoqByp5KSwWgCQba8QcDmA2DQiEpump`
-- 12:50Z LEOSTAR (MIGRATED, $1,720,058 mcap, $74,045 5m vol): SKIP, passed the checklist, but the brain was paced or paused  
+- 13:07Z RYANAIR (MIGRATED, $44,491 mcap, $4,147 5m vol): SKIP, passed the checklist, but the brain was paced or paused  
+  CA `9WcYJegbsMSzvtFUEGmJoGhZjCGBEcKqXpdkNDoMR5pN`
+- 13:06Z LEOSTAR (MIGRATED, $412,814 mcap, $105,494 5m vol): SKIP, passed the checklist, but the brain was paced or paused  
   CA `2cMcMEX3Eqo86tUrVe5dgHp5GZNwqQ6crqm22UeZpump`
-- 12:48Z SOYOUARE (MIGRATED, $93,790 mcap, $16,528 5m vol): SKIP, passed the checklist, but the brain was paced or paused  
+- 13:05Z GATO (DIP, $6,135,559 mcap, $22,675 5m vol): REJECT, Dev holds 2.7% (>1%) (V13, V17)  
+  CA `HsprHxBRgiVaQdRf3TnKNuZZtaX9JUSPgMFdAkk6pump`
+- 13:05Z CBUCKS (MIGRATED, $4,325,240 mcap, $22,789 5m vol): REJECT, Top 10 hold 25.9% ex-pool (>25%) (V13)  
+  CA `DtcicPCKTKeAh7TDEzTym3hXeoHAoMiBdYJhMYxZpump`
+- 13:05Z Grokia (MIGRATED, $60,083 mcap, $26,558 5m vol): SKIP, passed the checklist, but the brain was paced or paused  
+  CA `4u76UgKT5aMjqTVTREhJwbtH7YEYwAynbNza2MYWrPQY`
+- 13:04Z SOYOUARE (MIGRATED, $90,715 mcap, $15,889 5m vol): SKIP, passed the checklist, but the brain was paced or paused  
   CA `GbGzZQugMJtZnhcnNyHUamXg2xGZw4C4RWy1uSvVpump`
-- 12:47Z JOB (MIGRATED, $1,863,315 mcap, $2,840 5m vol): SKIP, passed the checklist, but the brain was paced or paused  
+- 13:03Z JOB (MIGRATED, $1,836,195 mcap, $3,184 5m vol): SKIP, passed the checklist, but the brain was paced or paused  
   CA `9Pq7aLAbhDG2tTnS22cm6kuysZVcZpLFE368HWuypump`
-- 12:46Z GTA (MIGRATED, $1,489,330 mcap, $4,635 5m vol): PASS, PASS — brain unavailable, not trading blind.  
-  CA `2NWgu4fqN2AxS5pp5v3f3SH54qArP9JepQFJm58gpump`
-- 12:45Z LEOSTAR (MIGRATED, $1,463,794 mcap, $4,080 5m vol): SKIP, passed the checklist, but the brain was paced or paused  
+- 13:01Z LEOSTAR (MIGRATED, $1,673,168 mcap, $23,016 5m vol): SKIP, passed the checklist, but the brain was paced or paused  
   CA `2cMcMEX3Eqo86tUrVe5dgHp5GZNwqQ6crqm22UeZpump`
-- 12:43Z BAWSAQ (MIGRATED, $178,477 mcap, $18,336 5m vol): SKIP, passed the checklist, but the brain was paced or paused  
-  CA `D9EcoQZeAytCrF1kQFSpRNpoPhibJUvJcmRHXhubpump`
-- 12:41Z JOB (MIGRATED, $1,818,190 mcap, $2,741 5m vol): SKIP, passed the checklist, but the brain was paced or paused  
-  CA `9Pq7aLAbhDG2tTnS22cm6kuysZVcZpLFE368HWuypump`
+- 13:00Z Grokia (MIGRATED, $70,127 mcap, $41,335 5m vol): SKIP, passed the checklist, but the brain was paced or paused  
+  CA `4u76UgKT5aMjqTVTREhJwbtH7YEYwAynbNza2MYWrPQY`
 
 ## What its skips did next (last 48h)
 A skip "ran" if the coin reached the first target (1.5x) from the skip price before a 20% drop, "dumped" if the drop came first. Sampled every 10 min, followed 6h.
-- too new / sniping: blocked 55, ran 9, dumped 46, flat 0, open 0 (saving losses: keep it)
+- too new / sniping: blocked 54, ran 9, dumped 45, flat 0, open 0 (saving losses: keep it)
   - ran: HENSEN up to 1.68x  
     CA `FfXDcTtDk5tzETc9QGRsy8ZSV2TGm4DXXpHXpjVVpump`
   - ran: FRANK up to 2.26x  
@@ -127,20 +127,20 @@ A skip "ran" if the coin reached the first target (1.5x) from the skip price bef
     CA `9rTgs58B3p11vXekTTgVYtv8vKxQ6oSoZFXPy4onpump`
   - ran: capytrade up to 2.51x  
     CA `ANPikG3a5qKJjHeeNjDmjZvDPPVtQ8B1ii6unvg3pump`
-- falling knife / no higher low: blocked 23, ran 3, dumped 16, flat 2, open 2 (saving losses: keep it)
+- falling knife / no higher low: blocked 23, ran 3, dumped 17, flat 2, open 1 (saving losses: keep it)
   - ran: Nyajira up to 1.52x  
     CA `8cWGfiHyKqxgLrLtkPt2NnLkSUV2JbcLBf4RN6Fapump`
   - ran: GOAT up to 1.61x  
     CA `D7iafdwzzpB7tisqQqT5T9aRrYPtHLqzwxhnLoWJgoat`
   - ran: LEOSTAR up to 1.53x  
     CA `2cMcMEX3Eqo86tUrVe5dgHp5GZNwqQ6crqm22UeZpump`
-- RugCheck danger: blocked 23, ran 5, dumped 18, flat 0, open 0 (saving losses: keep it)
-  - ran: hermano up to 1.94x  
-    CA `7eM3RsKhCCgBTVFeCrbHTtKuuSYewKbp4oUQWzavpump`
+- RugCheck danger: blocked 22, ran 4, dumped 18, flat 0, open 0 (saving losses: keep it)
   - ran: Qubits up to 1.53x  
     CA `Bp5PCTcWrwjV9Sn87oJPCPEbqogDeXuetNaWDUT9pump`
   - ran: Dollar up to 1.57x  
     CA `4JhX8T75P9z4gk91SBnQeAb7h7qCe7iWAiVgucVypump`
+  - ran: COGE up to 1.73x  
+    CA `23GBezAJzK8fJNZzgA5LWLyz2WxDNTBfMKtgTQNPpump`
 - falling knife (code): blocked 20, ran 3, dumped 14, flat 1, open 2 (saving losses: keep it)
   - ran: BigP up to 1.57x  
     CA `CY254o6VPaJnTiY5uuKUB8xDjSgykC6xtoLoC3kpump`
@@ -203,13 +203,13 @@ Nothing shows a positive edge after costs. Over 309 settled coins, every setup l
 Meta: the only theme with real 5m flow is a fresh-launch cluster of "Justice For So You Are" copies. Four tickers under 40 minutes old show $15k to $54k of 5m volume, 53-61% buys, and 1h moves of +113% to +860%, so the copies compete for one story and I need to find the original. Rising but cooling: GROKIA (AI/Grok-flavored, Raydium, $373k cap) is +1027% on the hour, but its 5m volume is only $8.8k, which is under the bar. Fading: the old dog/animal tier (BLOB, JOB, GATO, DIGS) is flat to red with sub-50% buys on most, and the game-reskin GTA names are thin (GTA Pad $217 on 5m, BAWSAQ -19% on $2k). The web confirms the fade story: Trump dinner interest is dropping in headlines and no Trump coin is in the scan, so it isn't driving flow. Research only, no buys yet: the SOYOUARE cluster, starting with 6efK... on pumpswap (64k cap, $53.8k 5m) and GbGz... on the pump.fun curve (13k cap, $27k 5m), to find the original and test whether the copies are a vamp farm; conviction stays low until holders, dev and bundle checks come back clean. PASS on BLOB (above the recon cap and flat) and GROKIA (5m under the $10k bar).
 
 ## Moving most in its scans, last 30 min (1h volume)
-- GROKIA: $506,182 1h vol, $285,517 mcap, -26% 1h  
-  CA `A4zQMT7ZFC2mM8fZDDQEqCs5bLFifA9XhDAJtHc3Lzbm`
-- SOYOUARE: $505,360 1h vol, $110,985 mcap, +360% 1h  
+- SOYOUARE: $480,568 1h vol, $94,205 mcap, +363% 1h  
   CA `GbGzZQugMJtZnhcnNyHUamXg2xGZw4C4RWy1uSvVpump`
-- SOYOUARE: $437,247 1h vol, $19,097 mcap, -79% 1h  
+- SOYOUARE: $335,361 1h vol, $23,485 mcap, -75% 1h  
   CA `6efK9juKa6x9sZEsB6iWJ5mTMhqrexeQRyp7DkDEpump`
-- BLOB: $336,381 1h vol, $13,500,226 mcap, +6% 1h  
+- BLOB: $333,344 1h vol, $14,561,540 mcap, +6% 1h  
   CA `8s11PkgQt4ZzdZ7oo84hK5t9HG1EvdgAjcg4W7Lpump`
-- BAWSAQ: $226,672 1h vol, $195,415 mcap, -79% 1h  
+- LEOSTAR: $332,770 1h vol, $414,389 mcap, -71% 1h  
+  CA `2cMcMEX3Eqo86tUrVe5dgHp5GZNwqQ6crqm22UeZpump`
+- BAWSAQ: $211,166 1h vol, $205,505 mcap, -84% 1h  
   CA `D9EcoQZeAytCrF1kQFSpRNpoPhibJUvJcmRHXhubpump`
