@@ -1,13 +1,13 @@
 # Trencher live report
 
-Updated 2026-11-17T19:58:10Z (paper trading, never real money)
+Updated 2026-11-17T20:13:20Z (paper trading, never real money)
 
 - Equity: $74.23 (-25.8% vs $100 start)
 - Closed trades: 22, 3 wins
 - Fees paid: $14.78 (axiom $2.81, network $9.18, pool $2.66), plus $4.15 lost to slippage
 - New trades: WATCH-ONLY (scans and decides, buys nothing)
-- Brain: subscription, claude-haiku-5-5 for routine calls, claude-opus-5-5 for the daily review; 490 routine calls and 45 plan-limit hits in 48h
-- Watch log: 136 coins being followed, 2248 filed, 0 would-buys (6h follow, sampled every 2 min)
+- Brain: subscription, claude-haiku-5-5 for routine calls, claude-opus-5-5 for the daily review; 489 routine calls and 46 plan-limit hits in 48h
+- Watch log: 132 coins being followed, 2258 filed, 0 would-buys (6h follow, sampled every 2 min)
 
 ## Scorecard (after fees)
 - 22 closed, 3 won (14%), net $-25.79
@@ -73,33 +73,33 @@ Updated 2026-11-17T19:58:10Z (paper trading, never real money)
   CA `H4gHnZ3NCU7Z9XQwGX6YYJNyieGEW8pqwGRUcdSxpump`
 
 ## Last scan
-- 19:57Z: 7 coins, 7 with pairs, 1 passed the market filters, 1 researched
+- 20:12Z: 7 coins, 7 with pairs, 3 passed the market filters, 3 researched
 
 ## Coins it looked at, and why it passed
-- 19:57Z CSI (MIGRATED, $215,942 mcap, $8,257 5m vol): SKIP, passed the checklist, but the brain was paced or paused  
-  CA `4z7LXmQewWk5LLDTbTZEeGpeUhTFR1dHGvg7ckhbpump`
-- 19:56Z GTA (MIGRATED, $1,097,659 mcap, $3,848 5m vol): SKIP, passed the checklist, but the brain was paced or paused  
+- 20:12Z GTA (MIGRATED, $1,170,512 mcap, $4,619 5m vol): SKIP, passed the checklist, but the brain was paced or paused  
   CA `2NWgu4fqN2AxS5pp5v3f3SH54qArP9JepQFJm58gpump`
-- 19:56Z JALU (MIGRATED, $700,815 mcap, $11,804 5m vol): SKIP, passed the checklist, but the brain was paced or paused  
-  CA `BSsmLA6UN8fzJ8qUkV4KwC5LxR7ab3TaUtcwvAyJpump`
-- 19:56Z Rex (MIGRATED, $399,022 mcap, $11,502 5m vol): SKIP, passed the checklist, but the brain was paced or paused  
+- 20:12Z Rex (MIGRATED, $234,546 mcap, $5,615 5m vol): SKIP, passed the checklist, but the brain was paced or paused  
   CA `6MjDb45kzriv6cpW6oaDjZGw1rujmpA185dHcvZzpump`
-- 19:55Z GATO (DIP, $5,205,520 mcap, $4,974 5m vol): REJECT, Dev holds 2.7% (>1%) (V13, V17)  
-  CA `HsprHxBRgiVaQdRf3TnKNuZZtaX9JUSPgMFdAkk6pump`
-- 19:55Z GM (MIGRATED, $314,399 mcap, $23,895 5m vol): SKIP, passed the checklist, but the brain was paced or paused  
+- 20:12Z JALU (MIGRATED, $1,020,378 mcap, $44,302 5m vol): SKIP, passed the checklist, but the brain was paced or paused  
+  CA `BSsmLA6UN8fzJ8qUkV4KwC5LxR7ab3TaUtcwvAyJpump`
+- 20:11Z GM (MIGRATED, $269,310 mcap, $5,171 5m vol): SKIP, passed the checklist, but the brain was paced or paused  
   CA `CSmSeS8XkxXTVa47LHtY9Mx1FSSwqw94tjqy4te3pump`
-- 19:54Z WANTED  (MIGRATED, $82,002 mcap, $9,656 5m vol): REJECT, Top 10 hold 36.5% ex-pool (>25%) (V13)  
-  CA `GLzXQj2Gk4oUYUKwrJEyt333wYjKwjujNp9erxzCpump`
-- 19:52Z CSI (MIGRATED, $266,812 mcap, $10,029 5m vol): SKIP, passed the checklist, but the brain was paced or paused  
+- 20:10Z CALLING (FINAL_STRETCH, $17,623 mcap, $3,156 5m vol): SKIP, passed the checklist, but the brain was paced or paused  
+  CA `3dmAQnhtADFkMMJGyc9HR9mNwdvAWHEE7KG7YNXApump`
+- 20:10Z PumpMas (MIGRATED, $160,200 mcap, $4,267 5m vol): REJECT, Dev holds 2.9% (>1%) (V13, V17)  
+  CA `EwUVBpdM5vw1CJHRMSLywzVjyQSJZpy6qboxEPBKpump`
+- 20:08Z CSI (MIGRATED, $174,126 mcap, $7,549 5m vol): SKIP, passed the checklist, but the brain was paced or paused  
   CA `4z7LXmQewWk5LLDTbTZEeGpeUhTFR1dHGvg7ckhbpump`
-- 19:51Z GTA (MIGRATED, $1,140,343 mcap, $3,779 5m vol): SKIP, passed the checklist, but the brain was paced or paused  
+- 20:07Z GTA (MIGRATED, $1,176,200 mcap, $4,992 5m vol): SKIP, passed the checklist, but the brain was paced or paused  
   CA `2NWgu4fqN2AxS5pp5v3f3SH54qArP9JepQFJm58gpump`
-- 19:51Z Rex (MIGRATED, $350,998 mcap, $7,875 5m vol): SKIP, passed the checklist, but the brain was paced or paused  
+- 20:07Z JALU (MIGRATED, $879,229 mcap, $23,032 5m vol): SKIP, passed the checklist, but the brain was paced or paused  
+  CA `BSsmLA6UN8fzJ8qUkV4KwC5LxR7ab3TaUtcwvAyJpump`
+- 20:07Z Rex (MIGRATED, $163,456 mcap, $26,548 5m vol): SKIP, passed the checklist, but the brain was paced or paused  
   CA `6MjDb45kzriv6cpW6oaDjZGw1rujmpA185dHcvZzpump`
 
 ## What its skips did next (last 48h)
 A skip "ran" if the coin reached the first target (1.5x) from the skip price before a 20% drop, "dumped" if the drop came first. Sampled every 10 min, followed 6h.
-- top 10 over 25%: blocked 45, ran 7, dumped 32, flat 3, open 3 (saving losses: keep it)
+- top 10 over 25%: blocked 46, ran 7, dumped 32, flat 3, open 4 (saving losses: keep it)
   - ran: UTYAN up to 1.82x  
     CA `Anw7pNWsHR4oRT5Mb5fYDghjhBD4wNtJ9xqT8uvopump`
   - ran: PercPools up to 1.78x  
@@ -120,14 +120,14 @@ A skip "ran" if the coin reached the first target (1.5x) from the skip price bef
     CA `7TnXXR1ytJ9PZDxgSA8VwbyKmEWZmiA2YAn55YyVpump`
   - ran: BAWSAQ up to 1.91x  
     CA `4La95NEVJdYK9kr375SfKPXnLA8ef8GtsjfVfW27pump`
-- near the high / chasing: blocked 31, ran 6, dumped 24, flat 1, open 0 (saving losses: keep it)
+- near the high / chasing: blocked 30, ran 6, dumped 23, flat 1, open 0 (saving losses: keep it)
   - ran: WIGGLES up to 1.69x  
     CA `2kWx47CUrcXtzptFNnbSXKq3vo1ebqyLBhRytKRGpump`
   - ran: Bustas up to 1.75x  
     CA `9rTgs58B3p11vXekTTgVYtv8vKxQ6oSoZFXPy4onpump`
   - ran: capytrade up to 2.51x  
     CA `ANPikG3a5qKJjHeeNjDmjZvDPPVtQ8B1ii6unvg3pump`
-- falling knife (code): blocked 26, ran 3, dumped 20, flat 1, open 2 (saving losses: keep it)
+- falling knife (code): blocked 26, ran 4, dumped 20, flat 1, open 1 (saving losses: keep it)
   - ran: BigP up to 1.57x  
     CA `CY254o6VPaJnTiY5uuKUB8xDjSgykC6xtoLoC3kpump`
   - ran: LEOSTAR up to 1.53x  
@@ -155,14 +155,14 @@ A skip "ran" if the coin reached the first target (1.5x) from the skip price bef
     CA `D7iafdwzzpB7tisqQqT5T9aRrYPtHLqzwxhnLoWJgoat`
   - ran: LEOSTAR up to 1.53x  
     CA `2cMcMEX3Eqo86tUrVe5dgHp5GZNwqQ6crqm22UeZpump`
-- bundles over the line: blocked 13, ran 3, dumped 8, flat 0, open 2 (saving losses: keep it)
+- bundles over the line: blocked 13, ran 3, dumped 8, flat 1, open 1 (saving losses: keep it)
   - ran: WANTED up to 1.52x  
     CA `9jhs5qoJnUFU7AZXbsiD1Q6De6FVsino9Ysw8QU6pump`
   - ran: KATIA up to 2.01x  
     CA `9a5uUXxa7LzHkT6YUikttpQsUZm4Etw8qhd2HP7xpump`
   - ran: GROKIA up to 1.54x  
     CA `A4zQMT7ZFC2mM8fZDDQEqCs5bLFifA9XhDAJtHc3Lzbm`
-- dev share over 1%: blocked 11, ran 1, dumped 9, flat 0, open 1 (saving losses: keep it)
+- dev share over 1%: blocked 11, ran 1, dumped 8, flat 0, open 2 (saving losses: keep it)
   - ran: WSB up to 1.52x  
     CA `B82PFKmT4aM38EUUqVoZs6sZdAfxDHHrB6DSXxCKpump`
 
@@ -205,13 +205,13 @@ Nothing shows a positive edge after costs. Over 309 settled coins, every setup l
 Meta: the only theme with real 5m flow is a fresh-launch cluster of "Justice For So You Are" copies. Four tickers under 40 minutes old show $15k to $54k of 5m volume, 53-61% buys, and 1h moves of +113% to +860%, so the copies compete for one story and I need to find the original. Rising but cooling: GROKIA (AI/Grok-flavored, Raydium, $373k cap) is +1027% on the hour, but its 5m volume is only $8.8k, which is under the bar. Fading: the old dog/animal tier (BLOB, JOB, GATO, DIGS) is flat to red with sub-50% buys on most, and the game-reskin GTA names are thin (GTA Pad $217 on 5m, BAWSAQ -19% on $2k). The web confirms the fade story: Trump dinner interest is dropping in headlines and no Trump coin is in the scan, so it isn't driving flow. Research only, no buys yet: the SOYOUARE cluster, starting with 6efK... on pumpswap (64k cap, $53.8k 5m) and GbGz... on the pump.fun curve (13k cap, $27k 5m), to find the original and test whether the copies are a vamp farm; conviction stays low until holders, dev and bundle checks come back clean. PASS on BLOB (above the recon cap and flat) and GROKIA (5m under the $10k bar).
 
 ## Moving most in its scans, last 30 min (1h volume)
-- JALU: $387,223 1h vol, $700,815 mcap, +209% 1h  
+- JALU: $243,669 1h vol, $985,493 mcap, +206% 1h  
   CA `BSsmLA6UN8fzJ8qUkV4KwC5LxR7ab3TaUtcwvAyJpump`
-- Rex: $195,471 1h vol, $405,666 mcap, -57% 1h  
+- Rex: $201,449 1h vol, $234,546 mcap, -55% 1h  
   CA `6MjDb45kzriv6cpW6oaDjZGw1rujmpA185dHcvZzpump`
-- GTA: $182,993 1h vol, $1,367 mcap, -99% 1h  
-  CA `F5sVohBg9zjTWVxxGpiWpzsuGxGGy3W3XjwVRzrDpump`
-- GTA: $167,878 1h vol, $1,346 mcap, -99% 1h  
-  CA `DUgwMUc5Wh2nU2S3dMPnqcMJYVSARgQwq26kmRSbpump`
-- CSI: $140,721 1h vol, $215,942 mcap, +492% 1h  
+- CSI: $161,652 1h vol, $205,686 mcap, +475% 1h  
   CA `4z7LXmQewWk5LLDTbTZEeGpeUhTFR1dHGvg7ckhbpump`
+- GM: $107,505 1h vol, $258,490 mcap, +45% 1h  
+  CA `CSmSeS8XkxXTVa47LHtY9Mx1FSSwqw94tjqy4te3pump`
+- GTA: $102,025 1h vol, $1,355 mcap, -99% 1h  
+  CA `F5sVohBg9zjTWVxxGpiWpzsuGxGGy3W3XjwVRzrDpump`
