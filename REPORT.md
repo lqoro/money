@@ -1,13 +1,13 @@
 # Trencher live report
 
-Updated 2026-11-18T00:45:03Z (paper trading, never real money)
+Updated 2026-11-18T01:00:06Z (paper trading, never real money)
 
 - Equity: $74.23 (-25.8% vs $100 start)
 - Closed trades: 22, 3 wins
 - Fees paid: $14.78 (axiom $2.81, network $9.18, pool $2.66), plus $4.15 lost to slippage
 - New trades: WATCH-ONLY (scans and decides, buys nothing)
-- Brain: subscription, claude-haiku-5-5 for routine calls, claude-opus-5-5 for the daily review; 456 routine calls and 73 plan-limit hits in 48h
-- Watch log: 115 coins being followed, 2026 filed, 0 would-buys (6h follow, sampled every 2 min)
+- Brain: subscription, claude-haiku-5-5 for routine calls, claude-opus-5-5 for the daily review; 455 routine calls and 74 plan-limit hits in 48h
+- Watch log: 111 coins being followed, 2030 filed, 0 would-buys (6h follow, sampled every 2 min)
 
 ## Scorecard (after fees)
 - 22 closed, 3 won (14%), net $-25.79
@@ -73,9 +73,15 @@ Updated 2026-11-18T00:45:03Z (paper trading, never real money)
   CA `H4gHnZ3NCU7Z9XQwGX6YYJNyieGEW8pqwGRUcdSxpump`
 
 ## Last scan
-- 00:44Z: 10 coins, 10 with pairs, 2 passed the market filters, 2 researched
+- 00:59Z: 5 coins, 5 with pairs, 0 passed the market filters, 0 researched
 
 ## Coins it looked at, and why it passed
+- 00:48Z SHIT (MIGRATED, $744,221 mcap, $2,830 5m vol): SKIP, passed the checklist, but the brain was paced or paused  
+  CA `Fn95NtGXWPaJXc4N5y9rVkUq1NwZbjBNJzPVvNRLpump`
+- 00:48Z CHAR (DIP, $157,489 mcap, $2,939 5m vol): REJECT, Dip with fading attention is a falling knife, not a dip (5m at 0.41x the hour's pace, under 0.6x)  
+  CA `9k2nqjUrSh9p2ZBnWxNE3QRWYiLocrWZfoDm3Vdxpump`
+- 00:48Z CHANCE (FINAL_STRETCH, $24,963 mcap, $16,870 5m vol): SKIP, passed the checklist, but the brain was paced or paused  
+  CA `Dz31xDhmi9nYARW2GkXcKRV2pQn19nBcEeeqr4MGpump`
 - 00:44Z GPU (FINAL_STRETCH, $18,609 mcap, $8,523 5m vol): SKIP, passed the checklist, but the brain was paced or paused  
   CA `E47AtoUk2wJqkUSijHPJecfc2SAaWeDG6cd2yYVpump`
 - 00:44Z PS5 (MIGRATED, $50,684 mcap, $14,473 5m vol): REJECT, Top 10 hold 28.1% ex-pool (>25%) (V13)  
@@ -90,16 +96,10 @@ Updated 2026-11-18T00:45:03Z (paper trading, never real money)
   CA `BSsmLA6UN8fzJ8qUkV4KwC5LxR7ab3TaUtcwvAyJpump`
 - 00:38Z PATTINSON (FINAL_STRETCH, $15,683 mcap, $3,740 5m vol): SKIP, passed the checklist, but the brain was paced or paused  
   CA `rizF5PvLP9pTBT9L1pHJwLEip1BZTG5Q6wzYeWGpump`
-- 00:38Z CHAR (DIP, $178,831 mcap, $29,939 5m vol): SKIP, passed the checklist, but the brain was paced or paused  
-  CA `9k2nqjUrSh9p2ZBnWxNE3QRWYiLocrWZfoDm3Vdxpump`
-- 00:33Z JALU (DIP, $701,038 mcap, $5,531 5m vol): SKIP, passed the checklist, but the brain was paced or paused  
-  CA `BSsmLA6UN8fzJ8qUkV4KwC5LxR7ab3TaUtcwvAyJpump`
-- 00:32Z CHAR (MIGRATED, $119,993 mcap, $5,048 5m vol): SKIP, passed the checklist, but the brain was paced or paused  
-  CA `9k2nqjUrSh9p2ZBnWxNE3QRWYiLocrWZfoDm3Vdxpump`
 
 ## What its skips did next (last 48h)
 A skip "ran" if the coin reached the first target (1.5x) from the skip price before a 20% drop, "dumped" if the drop came first. Sampled every 10 min, followed 6h.
-- top 10 over 25%: blocked 54, ran 7, dumped 42, flat 0, open 5 (saving losses: keep it)
+- top 10 over 25%: blocked 53, ran 7, dumped 41, flat 0, open 5 (saving losses: keep it)
   - ran: MAYA up to 1.7x  
     CA `BEivETeJfF2tLkuTc5dNMcpMH6vGGcwtZchw1J3vpump`
   - ran: MEOWL up to 1.75x  
@@ -113,14 +113,14 @@ A skip "ran" if the coin reached the first target (1.5x) from the skip price bef
     CA `7RoB3BLkECUZNFuodX8ndCbLWCZYE2mu9wU1LeiZpump`
   - ran: VI up to 1.55x  
     CA `3Ag5XsdWbPZrrcdfcsQqfHPv2syhZWpNx8CDaDcWpump`
-- falling knife (code): blocked 30, ran 3, dumped 23, flat 2, open 2 (saving losses: keep it)
+- falling knife (code): blocked 31, ran 3, dumped 23, flat 2, open 3 (saving losses: keep it)
   - ran: LEOSTAR up to 1.53x  
     CA `2cMcMEX3Eqo86tUrVe5dgHp5GZNwqQ6crqm22UeZpump`
   - ran: KATIA up to 2.01x  
     CA `9a5uUXxa7LzHkT6YUikttpQsUZm4Etw8qhd2HP7xpump`
   - ran: ACRUX up to 2.02x  
     CA `7Evw4uxTxLGGEFEvXLUNYyc1J7PnFk9EYwTUFagARUX`
-- flow below pace: blocked 29, ran 7, dumped 20, flat 2, open 0 (saving losses: keep it)
+- flow below pace: blocked 28, ran 7, dumped 19, flat 2, open 0 (saving losses: keep it)
   - ran: FiveM up to 1.51x  
     CA `2YxbK7V6ZTKSxcavk3V4kFzdtZ4uywhhoyuSxapjpump`
   - ran: Trader up to 2.44x  
@@ -201,13 +201,13 @@ Nothing shows a positive edge after costs. Over 309 settled coins, every setup l
 Meta: the only theme with real 5m flow is a fresh-launch cluster of "Justice For So You Are" copies. Four tickers under 40 minutes old show $15k to $54k of 5m volume, 53-61% buys, and 1h moves of +113% to +860%, so the copies compete for one story and I need to find the original. Rising but cooling: GROKIA (AI/Grok-flavored, Raydium, $373k cap) is +1027% on the hour, but its 5m volume is only $8.8k, which is under the bar. Fading: the old dog/animal tier (BLOB, JOB, GATO, DIGS) is flat to red with sub-50% buys on most, and the game-reskin GTA names are thin (GTA Pad $217 on 5m, BAWSAQ -19% on $2k). The web confirms the fade story: Trump dinner interest is dropping in headlines and no Trump coin is in the scan, so it isn't driving flow. Research only, no buys yet: the SOYOUARE cluster, starting with 6efK... on pumpswap (64k cap, $53.8k 5m) and GbGz... on the pump.fun curve (13k cap, $27k 5m), to find the original and test whether the copies are a vamp farm; conviction stays low until holders, dev and bundle checks come back clean. PASS on BLOB (above the recon cap and flat) and GROKIA (5m under the $10k bar).
 
 ## Moving most in its scans, last 30 min (1h volume)
-- SHIT: $889,916 1h vol, $685,411 mcap, +60% 1h  
+- SHIT: $651,971 1h vol, $732,349 mcap, +83% 1h  
   CA `Fn95NtGXWPaJXc4N5y9rVkUq1NwZbjBNJzPVvNRLpump`
-- GTAVI: $266,772 1h vol, $672,912 mcap, +1530% 1h  
-  CA `6wiaCq8oQiupFfeDU4ouAuYnCKXCch581HAmpvrxpump`
-- GTAVI: $204,373 1h vol, $1,350 mcap, -97% 1h  
-  CA `F24ocQ6c7TJ8DE8vH1rjWuuFCqcTAggwmNfgf1sepump`
-- GrokChan: $123,489 1h vol, $2,965 mcap, -90% 1h  
+- GrokChan: $96,379 1h vol, $2,692 mcap, -95% 1h  
   CA `9Bg8sX2bnMM4KwaXAeEtqpYQAkv2vmqFD7wzJ6eopump`
+- CHAR: $85,629 1h vol, $151,410 mcap, +247% 1h  
+  CA `9k2nqjUrSh9p2ZBnWxNE3QRWYiLocrWZfoDm3Vdxpump`
 - JALU: $84,434 1h vol, $744,659 mcap, -9% 1h  
   CA `BSsmLA6UN8fzJ8qUkV4KwC5LxR7ab3TaUtcwvAyJpump`
+- Ou: $57,792 1h vol, $10,360 mcap, +106% 1h  
+  CA `328EtxiMXdBzbC8fMA56ZJFEuFA7hGaZo7TPxdbvpump`
