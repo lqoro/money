@@ -1,13 +1,13 @@
 # Trencher live report
 
-Updated 2026-11-18T01:15:18Z (paper trading, never real money)
+Updated 2026-11-18T01:30:24Z (paper trading, never real money)
 
 - Equity: $74.23 (-25.8% vs $100 start)
 - Closed trades: 22, 3 wins
 - Fees paid: $14.78 (axiom $2.81, network $9.18, pool $2.66), plus $4.15 lost to slippage
 - New trades: WATCH-ONLY (scans and decides, buys nothing)
-- Brain: subscription, claude-haiku-5-5 for routine calls, claude-opus-5-5 for the daily review; 453 routine calls and 76 plan-limit hits in 48h
-- Watch log: 112 coins being followed, 2035 filed, 0 would-buys (6h follow, sampled every 2 min)
+- Brain: subscription, claude-haiku-5-5 for routine calls, claude-opus-5-5 for the daily review; 451 routine calls and 77 plan-limit hits in 48h
+- Watch log: 110 coins being followed, 2041 filed, 0 would-buys (6h follow, sampled every 2 min)
 
 ## Scorecard (after fees)
 - 22 closed, 3 won (14%), net $-25.79
@@ -73,9 +73,21 @@ Updated 2026-11-18T01:15:18Z (paper trading, never real money)
   CA `H4gHnZ3NCU7Z9XQwGX6YYJNyieGEW8pqwGRUcdSxpump`
 
 ## Last scan
-- 01:15Z: 10 coins, 10 with pairs, 0 passed the market filters, 0 researched
+- 01:29Z: 9 coins, 9 with pairs, 1 passed the market filters, 1 researched
 
 ## Coins it looked at, and why it passed
+- 01:29Z JALU (DIP, $700,047 mcap, $3,588 5m vol): SKIP, passed the checklist, but the brain was paced or paused  
+  CA `BSsmLA6UN8fzJ8qUkV4KwC5LxR7ab3TaUtcwvAyJpump`
+- 01:26Z maxi (MIGRATED, $45,548 mcap, $4,178 5m vol): SKIP, passed the checklist, but the brain was paced or paused  
+  CA `EBCpGdXuS34WZuX13thrku2KmuLSe3Tf2gMtMKndpump`
+- 01:25Z SHIT (MIGRATED, $746,844 mcap, $11,897 5m vol): SKIP, passed the checklist, but the brain was paced or paused  
+  CA `Fn95NtGXWPaJXc4N5y9rVkUq1NwZbjBNJzPVvNRLpump`
+- 01:24Z JALU (DIP, $685,134 mcap, $4,967 5m vol): SKIP, passed the checklist, but the brain was paced or paused  
+  CA `BSsmLA6UN8fzJ8qUkV4KwC5LxR7ab3TaUtcwvAyJpump`
+- 01:21Z maxi (MIGRATED, $37,979 mcap, $2,738 5m vol): SKIP, passed the checklist, but the brain was paced or paused  
+  CA `EBCpGdXuS34WZuX13thrku2KmuLSe3Tf2gMtMKndpump`
+- 01:18Z KATIA (MIGRATED, $396,776 mcap, $100,258 5m vol): REJECT, Top 10 hold 28.6% ex-pool (>25%) (V13)  
+  CA `5xhuX8VK8k8wGDdfFniWUzUQUSHjzKARosCGtEZypump`
 - 01:14Z Spud (MIGRATED, $60,193 mcap, $49,179 5m vol): REJECT, Top 10 hold 26.5% ex-pool (>25%) (V13)  
   CA `47mUZNAjSFA3nmxnRa1y7P9Jmi5WPWpVP1ACPQZqpump`
 - 01:12Z GATO (DIP, $5,882,340 mcap, $3,323 5m vol): REJECT, Dev holds 2.7% (>1%) (V13, V17)  
@@ -84,22 +96,10 @@ Updated 2026-11-18T01:15:18Z (paper trading, never real money)
   CA `4W7BNgGspH3YFbLsP5T7AnKAzr6REGMMBGK9xDZKpump`
 - 01:10Z BANDANA (FINAL_STRETCH, $19,260 mcap, $49,537 5m vol): SKIP, passed the checklist, but the brain was paced or paused  
   CA `5fMcXE1Pvwp4WaQUgYNDSeb9JLF22C3VtdLDQkWTpump`
-- 01:09Z Linkd (FINAL_STRETCH, $22,542 mcap, $3,888 5m vol): SKIP, passed the checklist, but the brain was paced or paused  
-  CA `D1vLsPLjgy4af99x3fGkXbiuT2goqZ8Xtqj2QFHSpump`
-- 01:08Z Spud (MIGRATED, $38,157 mcap, $44,263 5m vol): SKIP, passed the checklist, but the brain was paced or paused  
-  CA `47mUZNAjSFA3nmxnRa1y7P9Jmi5WPWpVP1ACPQZqpump`
-- 01:07Z GTAVI (MIGRATED, $2,644,238 mcap, $13,824 5m vol): REJECT, Top 10 hold 37.7% ex-pool (>25%) (V13)  
-  CA `6wiaCq8oQiupFfeDU4ouAuYnCKXCch581HAmpvrxpump`
-- 01:04Z Linkd (FINAL_STRETCH, $20,617 mcap, $3,042 5m vol): SKIP, passed the checklist, but the brain was paced or paused  
-  CA `D1vLsPLjgy4af99x3fGkXbiuT2goqZ8Xtqj2QFHSpump`
-- 00:48Z SHIT (MIGRATED, $744,221 mcap, $2,830 5m vol): SKIP, passed the checklist, but the brain was paced or paused  
-  CA `Fn95NtGXWPaJXc4N5y9rVkUq1NwZbjBNJzPVvNRLpump`
-- 00:48Z CHAR (DIP, $157,489 mcap, $2,939 5m vol): REJECT, Dip with fading attention is a falling knife, not a dip (5m at 0.41x the hour's pace, under 0.6x)  
-  CA `9k2nqjUrSh9p2ZBnWxNE3QRWYiLocrWZfoDm3Vdxpump`
 
 ## What its skips did next (last 48h)
 A skip "ran" if the coin reached the first target (1.5x) from the skip price before a 20% drop, "dumped" if the drop came first. Sampled every 10 min, followed 6h.
-- top 10 over 25%: blocked 54, ran 6, dumped 42, flat 0, open 6 (saving losses: keep it)
+- top 10 over 25%: blocked 55, ran 7, dumped 42, flat 0, open 6 (saving losses: keep it)
   - ran: MAYA up to 1.7x  
     CA `BEivETeJfF2tLkuTc5dNMcpMH6vGGcwtZchw1J3vpump`
   - ran: MEOWL up to 1.75x  
@@ -120,13 +120,13 @@ A skip "ran" if the coin reached the first target (1.5x) from the skip price bef
     CA `9a5uUXxa7LzHkT6YUikttpQsUZm4Etw8qhd2HP7xpump`
   - ran: ACRUX up to 2.02x  
     CA `7Evw4uxTxLGGEFEvXLUNYyc1J7PnFk9EYwTUFagARUX`
-- flow below pace: blocked 28, ran 7, dumped 19, flat 2, open 0 (saving losses: keep it)
-  - ran: FiveM up to 1.51x  
-    CA `2YxbK7V6ZTKSxcavk3V4kFzdtZ4uywhhoyuSxapjpump`
+- flow below pace: blocked 27, ran 6, dumped 19, flat 2, open 0 (saving losses: keep it)
   - ran: Trader up to 2.44x  
     CA `7TnXXR1ytJ9PZDxgSA8VwbyKmEWZmiA2YAn55YyVpump`
   - ran: BAWSAQ up to 1.91x  
     CA `4La95NEVJdYK9kr375SfKPXnLA8ef8GtsjfVfW27pump`
+  - ran: LEOSTAR up to 1.53x  
+    CA `2cMcMEX3Eqo86tUrVe5dgHp5GZNwqQ6crqm22UeZpump`
 - RugCheck danger: blocked 27, ran 3, dumped 23, flat 0, open 1 (saving losses: keep it)
   - ran: COGE up to 1.73x  
     CA `23GBezAJzK8fJNZzgA5LWLyz2WxDNTBfMKtgTQNPpump`
@@ -203,11 +203,11 @@ Meta: the only theme with real 5m flow is a fresh-launch cluster of "Justice For
 ## Moving most in its scans, last 30 min (1h volume)
 - GTAVI: $803,649 1h vol, $2,710,373 mcap, +6488% 1h  
   CA `6wiaCq8oQiupFfeDU4ouAuYnCKXCch581HAmpvrxpump`
-- SHIT: $150,052 1h vol, $619,178 mcap, +32% 1h  
-  CA `Fn95NtGXWPaJXc4N5y9rVkUq1NwZbjBNJzPVvNRLpump`
+- KATIA: $474,213 1h vol, $413,186 mcap, +364% 1h  
+  CA `5xhuX8VK8k8wGDdfFniWUzUQUSHjzKARosCGtEZypump`
 - Spud: $126,234 1h vol, $60,193 mcap, +88% 1h  
   CA `47mUZNAjSFA3nmxnRa1y7P9Jmi5WPWpVP1ACPQZqpump`
-- CHAR: $85,629 1h vol, $151,410 mcap, +247% 1h  
-  CA `9k2nqjUrSh9p2ZBnWxNE3QRWYiLocrWZfoDm3Vdxpump`
-- VCFUND: $82,480 1h vol, $9,609 mcap, +322% 1h  
+- BANDANA: $110,115 1h vol, $10,857 mcap, +97% 1h  
+  CA `5fMcXE1Pvwp4WaQUgYNDSeb9JLF22C3VtdLDQkWTpump`
+- VCFUND: $88,539 1h vol, $5,913 mcap, +160% 1h  
   CA `4owiqSSaq97Dy9eECDzSBYHNxk6FNMsfodcttidHcRr8`
