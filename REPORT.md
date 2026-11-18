@@ -1,13 +1,13 @@
 # Trencher live report
 
-Updated 2026-11-18T03:46:31Z (paper trading, never real money)
+Updated 2026-11-18T04:01:46Z (paper trading, never real money)
 
 - Equity: $74.23 (-25.8% vs $100 start)
 - Closed trades: 22, 3 wins
 - Fees paid: $14.78 (axiom $2.81, network $9.18, pool $2.66), plus $4.15 lost to slippage
 - New trades: WATCH-ONLY (scans and decides, buys nothing)
-- Brain: subscription, claude-haiku-5-5 for routine calls, claude-opus-5-5 for the daily review; 435 routine calls and 91 plan-limit hits in 48h
-- Watch log: 107 coins being followed, 2086 filed, 0 would-buys (6h follow, sampled every 2 min)
+- Brain: subscription, claude-haiku-5-5 for routine calls, claude-opus-5-5 for the daily review; 434 routine calls and 92 plan-limit hits in 48h
+- Watch log: 101 coins being followed, 2093 filed, 0 would-buys (6h follow, sampled every 2 min)
 
 ## Scorecard (after fees)
 - 22 closed, 3 won (14%), net $-25.79
@@ -73,29 +73,29 @@ Updated 2026-11-18T03:46:31Z (paper trading, never real money)
   CA `H4gHnZ3NCU7Z9XQwGX6YYJNyieGEW8pqwGRUcdSxpump`
 
 ## Last scan
-- 03:45Z: 5 coins, 5 with pairs, 0 passed the market filters, 0 researched
+- 04:01Z: 5 coins, 5 with pairs, 0 passed the market filters, 0 researched
 
 ## Coins it looked at, and why it passed
-- 03:43Z Leonida (MIGRATED, $628,292 mcap, $5,400 5m vol): SKIP, passed the checklist, but the brain was paced or paused  
+- 03:59Z Leonida (MIGRATED, $638,204 mcap, $3,439 5m vol): SKIP, passed the checklist, but the brain was paced or paused  
   CA `9rbKkz2BDQBVgZmrHY6d7PTq2ge91gkpEyE4y9PPpump`
-- 03:42Z KATIA (DIP, $559,425 mcap, $2,870 5m vol): REJECT, Dip with fading attention is a falling knife, not a dip (5m at 0.21x the hour's pace, under 0.6x)  
-  CA `5xhuX8VK8k8wGDdfFniWUzUQUSHjzKARosCGtEZypump`
-- 03:42Z JALU (DIP, $646,821 mcap, $5,538 5m vol): SKIP, passed the checklist, but the brain was paced or paused  
+- 03:58Z JALU (DIP, $607,691 mcap, $7,369 5m vol): SKIP, passed the checklist, but the brain was paced or paused  
   CA `BSsmLA6UN8fzJ8qUkV4KwC5LxR7ab3TaUtcwvAyJpump`
-- 03:42Z PENGYOUHAO (MIGRATED, $92,055 mcap, $7,873 5m vol): SKIP, passed the checklist, but the brain was paced or paused  
+- 03:58Z PENGYOUHAO (DIP, $67,548 mcap, $6,906 5m vol): SKIP, passed the checklist, but the brain was paced or paused  
   CA `BYHRxthRZUWnug1QvehGeWLav6tPzoe71c7ZRTtCpump`
-- 03:41Z BUFO (FINAL_STRETCH, $22,036 mcap, $21,696 5m vol): REJECT, Top 10 hold 26.1% ex-pool (>25%) (V13)  
-  CA `44gNPkTVKwfNf2fPBdwiPZrVVXLVYTkmBk5VdBzrpump`
-- 03:41Z ANT (FINAL_STRETCH, $21,023 mcap, $29,186 5m vol): SKIP, passed the checklist, but the brain was paced or paused  
-  CA `EadD2LMp6EbH9PrbXUFWcrZKMhoKVrZN1gpwRhH5pump`
-- 03:41Z AI (MIGRATED, $94,442 mcap, $35,288 5m vol): SKIP, passed the checklist, but the brain was paced or paused  
+- 03:57Z AI (MIGRATED, $287,197 mcap, $73,737 5m vol): SKIP, passed the checklist, but the brain was paced or paused  
   CA `A8mt1ypn7fX5jidk5xNRjpNGpSGZiU6ZXKW1ZzJRpump`
-- 03:40Z GATO (DIP, $5,579,188 mcap, $4,070 5m vol): REJECT, Dev holds 2.7% (>1%) (V13, V17)  
-  CA `HsprHxBRgiVaQdRf3TnKNuZZtaX9JUSPgMFdAkk6pump`
-- 03:37Z Leonida (MIGRATED, $596,375 mcap, $3,665 5m vol): SKIP, passed the checklist, but the brain was paced or paused  
+- 03:57Z ANT (MIGRATED, $72,927 mcap, $84,239 5m vol): SKIP, passed the checklist, but the brain was paced or paused  
+  CA `EadD2LMp6EbH9PrbXUFWcrZKMhoKVrZN1gpwRhH5pump`
+- 03:53Z Leonida (MIGRATED, $650,739 mcap, $3,248 5m vol): SKIP, passed the checklist, but the brain was paced or paused  
   CA `9rbKkz2BDQBVgZmrHY6d7PTq2ge91gkpEyE4y9PPpump`
-- 03:36Z JALU (DIP, $657,336 mcap, $5,422 5m vol): SKIP, passed the checklist, but the brain was paced or paused  
+- 03:52Z GTA$ (MIGRATED, $76,792 mcap, $5,319 5m vol): SKIP, passed the checklist, but the brain was paced or paused  
+  CA `AWytauWViaF8yBAPqBE6AxxVDq14smvhjP3K9is1yhzE`
+- 03:52Z JALU (DIP, $540,211 mcap, $6,695 5m vol): SKIP, passed the checklist, but the brain was paced or paused  
   CA `BSsmLA6UN8fzJ8qUkV4KwC5LxR7ab3TaUtcwvAyJpump`
+- 03:52Z PENGYOUHAO (DIP, $67,251 mcap, $7,713 5m vol): SKIP, passed the checklist, but the brain was paced or paused  
+  CA `BYHRxthRZUWnug1QvehGeWLav6tPzoe71c7ZRTtCpump`
+- 03:51Z ANT (MIGRATED, $71,470 mcap, $37,790 5m vol): SKIP, passed the checklist, but the brain was paced or paused  
+  CA `EadD2LMp6EbH9PrbXUFWcrZKMhoKVrZN1gpwRhH5pump`
 
 ## What its skips did next (last 48h)
 A skip "ran" if the coin reached the first target (1.5x) from the skip price before a 20% drop, "dumped" if the drop came first. Sampled every 10 min, followed 6h.
@@ -106,7 +106,7 @@ A skip "ran" if the coin reached the first target (1.5x) from the skip price bef
     CA `3XiwhhcYJfyZPBT4tbDZ9hom8wwMTEM3d2YJwxLwAwYC`
   - ran: lulu up to 1.87x  
     CA `HR9QrcYYsiHzmPhLpdGYn3uduEkoCcZR9HN2xwxRpump`
-- too new / sniping: blocked 35, ran 7, dumped 28, flat 0, open 0 (saving losses: keep it)
+- too new / sniping: blocked 34, ran 7, dumped 27, flat 0, open 0 (saving losses: keep it)
   - ran: Pumpkin up to 2.34x  
     CA `okUweUUY5DFGbxSCXSV6sH9neDArt5vJWNefnxKpump`
   - ran: ANGSTIPAN up to 1.8x  
@@ -203,11 +203,11 @@ Meta: the only theme with real 5m flow is a fresh-launch cluster of "Justice For
 ## Moving most in its scans, last 30 min (1h volume)
 - GTA: $875,387 1h vol, $1,471,594 mcap, +3841% 1h  
   CA `7KBFymfGAe8MmKEuNersoM59TvpiHzZ76jP7rSLrpump`
-- GTAVI: $524,108 1h vol, $11,169 mcap, -76% 1h  
+- GTAVI: $562,296 1h vol, $23,847 mcap, -47% 1h  
   CA `GTByzYabeJKXycQcKD39RCqbAbUtsuC3RCzQN9Swpump`
-- AI: $208,257 1h vol, $83,174 mcap, +86% 1h  
+- AI: $536,904 1h vol, $287,197 mcap, +544% 1h  
   CA `A8mt1ypn7fX5jidk5xNRjpNGpSGZiU6ZXKW1ZzJRpump`
-- KATIA: $162,848 1h vol, $559,425 mcap, -22% 1h  
-  CA `5xhuX8VK8k8wGDdfFniWUzUQUSHjzKARosCGtEZypump`
-- PENGYOUHAO: $136,943 1h vol, $92,055 mcap, +106% 1h  
-  CA `BYHRxthRZUWnug1QvehGeWLav6tPzoe71c7ZRTtCpump`
+- GTA$: $202,605 1h vol, $67,232 mcap, +115% 1h  
+  CA `AWytauWViaF8yBAPqBE6AxxVDq14smvhjP3K9is1yhzE`
+- NADJA: $190,825 1h vol, $22,573 mcap, -84% 1h  
+  CA `4sTdeEFkQisRpWS9abeW8XvNFxxaTwCboFe9oDrNpump`
