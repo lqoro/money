@@ -1,13 +1,13 @@
 # Trencher live report
 
-Updated 2026-11-18T10:05:38Z (paper trading, never real money)
+Updated 2026-11-18T10:20:52Z (paper trading, never real money)
 
 - Equity: $74.23 (-25.8% vs $100 start)
 - Closed trades: 22, 3 wins
 - Fees paid: $14.78 (axiom $2.81, network $9.18, pool $2.66), plus $4.15 lost to slippage
 - New trades: WATCH-ONLY (scans and decides, buys nothing)
-- Brain: subscription, claude-haiku-5-5 for routine calls, claude-opus-5-5 for the daily review; 420 routine calls and 128 plan-limit hits in 48h
-- Watch log: 93 coins being followed, 2196 filed, 0 would-buys (6h follow, sampled every 2 min)
+- Brain: subscription, claude-haiku-5-5 for routine calls, claude-opus-5-5 for the daily review; 420 routine calls and 129 plan-limit hits in 48h
+- Watch log: 89 coins being followed, 2202 filed, 0 would-buys (6h follow, sampled every 2 min)
 
 ## Scorecard (after fees)
 - 22 closed, 3 won (14%), net $-25.79
@@ -73,9 +73,13 @@ Updated 2026-11-18T10:05:38Z (paper trading, never real money)
   CA `H4gHnZ3NCU7Z9XQwGX6YYJNyieGEW8pqwGRUcdSxpump`
 
 ## Last scan
-- 10:04Z: 6 coins, 6 with pairs, 0 passed the market filters, 0 researched
+- 10:20Z: 1 coins, 1 with pairs, 0 passed the market filters, 0 researched
 
 ## Coins it looked at, and why it passed
+- 10:19Z GROKIA (MIGRATED, $141,201 mcap, $2,511 5m vol): REJECT, Bundles: 10 linked wallet cluster(s) hold 100.0% of supply (>20%) (V17)  
+  CA `A4zQMT7ZFC2mM8fZDDQEqCs5bLFifA9XhDAJtHc3Lzbm`
+- 10:13Z GTAVI (MIGRATED, $2,266,973 mcap, $2,209 5m vol): REJECT, Top 10 hold 29.9% ex-pool (>25%) (V13)  
+  CA `6wiaCq8oQiupFfeDU4ouAuYnCKXCch581HAmpvrxpump`
 - 09:57Z JALU (DIP, $469,496 mcap, $3,323 5m vol): REJECT, Dip with fading attention is a falling knife, not a dip (5m at 0.56x the hour's pace, under 0.6x)  
   CA `BSsmLA6UN8fzJ8qUkV4KwC5LxR7ab3TaUtcwvAyJpump`
 - 09:54Z DCI (DIP, $749,165 mcap, $5,840 5m vol): REJECT, Dip with fading attention is a falling knife, not a dip (5m at 0.40x the hour's pace, under 0.6x)  
@@ -92,10 +96,6 @@ Updated 2026-11-18T10:05:38Z (paper trading, never real money)
   CA `yEQ1Xsz6hLobNoZux6ZnP3w9nngXfWX2WZX51oNpump`
 - 09:33Z GETAJOB (DIP, $404,336 mcap, $2,075 5m vol): REJECT, Dip with fading attention is a falling knife, not a dip (5m at 0.59x the hour's pace, under 0.6x)  
   CA `AYfuRfhDGPP5DKeNNp2oVPDjrYZtZttS1FMKS3jpump`
-- 09:33Z eepy (FINAL_STRETCH, $27,480 mcap, $9,574 5m vol): REJECT, Top 10 hold 28.9% ex-pool (>25%) (V13)  
-  CA `HQhr9AHhkjtGbmPZyQkU8Es7DQMezhZBFpFHX7Uqpump`
-- 09:30Z SHARK (MIGRATED, $35,903 mcap, $2,121 5m vol): SKIP, passed the checklist, but the brain was paced or paused  
-  CA `3yxsNufZSWNrvMXw8gwCJFCuUkuTDsb1a55aR7evpump`
 
 ## What its skips did next (last 48h)
 A skip "ran" if the coin reached the first target (1.5x) from the skip price before a 20% drop, "dumped" if the drop came first. Sampled every 10 min, followed 6h.
@@ -201,11 +201,11 @@ Meta: the only theme with real 5m flow is a fresh-launch cluster of "Justice For
 ## Moving most in its scans, last 30 min (1h volume)
 - DCI: $174,033 1h vol, $754,350 mcap, +42% 1h  
   CA `HCNhQCu5nrmWhSE3mo7fRU9eGiGLmi2fnE8omgLpump`
-- SHARK: $116,259 1h vol, $10,640 mcap, -76% 1h  
-  CA `3yxsNufZSWNrvMXw8gwCJFCuUkuTDsb1a55aR7evpump`
-- FAILE: $96,154 1h vol, $4,097 mcap, -63% 1h  
-  CA `B4bx7adNETE5EWPQRmNVkEW8NruT3Z148msKPnjKpump`
 - JALU: $72,938 1h vol, $478,267 mcap, +21% 1h  
   CA `BSsmLA6UN8fzJ8qUkV4KwC5LxR7ab3TaUtcwvAyJpump`
-- DIGS: $71,246 1h vol, $351,900 mcap, +12% 1h  
-  CA `9QT8K685Hrae4k11dhGXirdtpfAaimExtyfwt8cPpump`
+- GROKIA: $64,457 1h vol, $141,201 mcap, +45% 1h  
+  CA `A4zQMT7ZFC2mM8fZDDQEqCs5bLFifA9XhDAJtHc3Lzbm`
+- SHK: $56,505 1h vol, $11,642 mcap, +135% 1h  
+  CA `DDHfcAHyoEhXuuRXnihVA9wbZghdedaFoXKa35L5pump`
+- CBUCKS: $55,060 1h vol, $3,260,910 mcap, -16% 1h  
+  CA `DtcicPCKTKeAh7TDEzTym3hXeoHAoMiBdYJhMYxZpump`
