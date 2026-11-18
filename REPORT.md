@@ -1,13 +1,13 @@
 # Trencher live report
 
-Updated 2026-11-18T01:00:06Z (paper trading, never real money)
+Updated 2026-11-18T01:15:18Z (paper trading, never real money)
 
 - Equity: $74.23 (-25.8% vs $100 start)
 - Closed trades: 22, 3 wins
 - Fees paid: $14.78 (axiom $2.81, network $9.18, pool $2.66), plus $4.15 lost to slippage
 - New trades: WATCH-ONLY (scans and decides, buys nothing)
-- Brain: subscription, claude-haiku-5-5 for routine calls, claude-opus-5-5 for the daily review; 455 routine calls and 74 plan-limit hits in 48h
-- Watch log: 111 coins being followed, 2030 filed, 0 would-buys (6h follow, sampled every 2 min)
+- Brain: subscription, claude-haiku-5-5 for routine calls, claude-opus-5-5 for the daily review; 453 routine calls and 76 plan-limit hits in 48h
+- Watch log: 112 coins being followed, 2035 filed, 0 would-buys (6h follow, sampled every 2 min)
 
 ## Scorecard (after fees)
 - 22 closed, 3 won (14%), net $-25.79
@@ -73,33 +73,33 @@ Updated 2026-11-18T01:00:06Z (paper trading, never real money)
   CA `H4gHnZ3NCU7Z9XQwGX6YYJNyieGEW8pqwGRUcdSxpump`
 
 ## Last scan
-- 00:59Z: 5 coins, 5 with pairs, 0 passed the market filters, 0 researched
+- 01:15Z: 10 coins, 10 with pairs, 0 passed the market filters, 0 researched
 
 ## Coins it looked at, and why it passed
+- 01:14Z Spud (MIGRATED, $60,193 mcap, $49,179 5m vol): REJECT, Top 10 hold 26.5% ex-pool (>25%) (V13)  
+  CA `47mUZNAjSFA3nmxnRa1y7P9Jmi5WPWpVP1ACPQZqpump`
+- 01:12Z GATO (DIP, $5,882,340 mcap, $3,323 5m vol): REJECT, Dev holds 2.7% (>1%) (V13, V17)  
+  CA `HsprHxBRgiVaQdRf3TnKNuZZtaX9JUSPgMFdAkk6pump`
+- 01:11Z chudhaos (DIP, $191,963 mcap, $2,643 5m vol): REJECT, RugCheck danger: Large Amount of LP Unlocked 100.00%  
+  CA `4W7BNgGspH3YFbLsP5T7AnKAzr6REGMMBGK9xDZKpump`
+- 01:10Z BANDANA (FINAL_STRETCH, $19,260 mcap, $49,537 5m vol): SKIP, passed the checklist, but the brain was paced or paused  
+  CA `5fMcXE1Pvwp4WaQUgYNDSeb9JLF22C3VtdLDQkWTpump`
+- 01:09Z Linkd (FINAL_STRETCH, $22,542 mcap, $3,888 5m vol): SKIP, passed the checklist, but the brain was paced or paused  
+  CA `D1vLsPLjgy4af99x3fGkXbiuT2goqZ8Xtqj2QFHSpump`
+- 01:08Z Spud (MIGRATED, $38,157 mcap, $44,263 5m vol): SKIP, passed the checklist, but the brain was paced or paused  
+  CA `47mUZNAjSFA3nmxnRa1y7P9Jmi5WPWpVP1ACPQZqpump`
+- 01:07Z GTAVI (MIGRATED, $2,644,238 mcap, $13,824 5m vol): REJECT, Top 10 hold 37.7% ex-pool (>25%) (V13)  
+  CA `6wiaCq8oQiupFfeDU4ouAuYnCKXCch581HAmpvrxpump`
+- 01:04Z Linkd (FINAL_STRETCH, $20,617 mcap, $3,042 5m vol): SKIP, passed the checklist, but the brain was paced or paused  
+  CA `D1vLsPLjgy4af99x3fGkXbiuT2goqZ8Xtqj2QFHSpump`
 - 00:48Z SHIT (MIGRATED, $744,221 mcap, $2,830 5m vol): SKIP, passed the checklist, but the brain was paced or paused  
   CA `Fn95NtGXWPaJXc4N5y9rVkUq1NwZbjBNJzPVvNRLpump`
 - 00:48Z CHAR (DIP, $157,489 mcap, $2,939 5m vol): REJECT, Dip with fading attention is a falling knife, not a dip (5m at 0.41x the hour's pace, under 0.6x)  
   CA `9k2nqjUrSh9p2ZBnWxNE3QRWYiLocrWZfoDm3Vdxpump`
-- 00:48Z CHANCE (FINAL_STRETCH, $24,963 mcap, $16,870 5m vol): SKIP, passed the checklist, but the brain was paced or paused  
-  CA `Dz31xDhmi9nYARW2GkXcKRV2pQn19nBcEeeqr4MGpump`
-- 00:44Z GPU (FINAL_STRETCH, $18,609 mcap, $8,523 5m vol): SKIP, passed the checklist, but the brain was paced or paused  
-  CA `E47AtoUk2wJqkUSijHPJecfc2SAaWeDG6cd2yYVpump`
-- 00:44Z PS5 (MIGRATED, $50,684 mcap, $14,473 5m vol): REJECT, Top 10 hold 28.1% ex-pool (>25%) (V13)  
-  CA `BmDEZcKCDvkYnHnt2kDMgytu7w13dq3NiXG62XeKPHVJ`
-- 00:43Z CHAR (DIP, $170,006 mcap, $6,724 5m vol): SKIP, passed the checklist, but the brain was paced or paused  
-  CA `9k2nqjUrSh9p2ZBnWxNE3QRWYiLocrWZfoDm3Vdxpump`
-- 00:43Z SHIT (MIGRATED, $677,992 mcap, $7,967 5m vol): SKIP, passed the checklist, but the brain was paced or paused  
-  CA `Fn95NtGXWPaJXc4N5y9rVkUq1NwZbjBNJzPVvNRLpump`
-- 00:43Z CHANCE (FINAL_STRETCH, $18,538 mcap, $25,679 5m vol): SKIP, passed the checklist, but the brain was paced or paused  
-  CA `Dz31xDhmi9nYARW2GkXcKRV2pQn19nBcEeeqr4MGpump`
-- 00:39Z JALU (DIP, $737,936 mcap, $3,851 5m vol): REJECT, Dip with fading attention is a falling knife, not a dip (5m at 0.55x the hour's pace, under 0.6x)  
-  CA `BSsmLA6UN8fzJ8qUkV4KwC5LxR7ab3TaUtcwvAyJpump`
-- 00:38Z PATTINSON (FINAL_STRETCH, $15,683 mcap, $3,740 5m vol): SKIP, passed the checklist, but the brain was paced or paused  
-  CA `rizF5PvLP9pTBT9L1pHJwLEip1BZTG5Q6wzYeWGpump`
 
 ## What its skips did next (last 48h)
 A skip "ran" if the coin reached the first target (1.5x) from the skip price before a 20% drop, "dumped" if the drop came first. Sampled every 10 min, followed 6h.
-- top 10 over 25%: blocked 53, ran 7, dumped 41, flat 0, open 5 (saving losses: keep it)
+- top 10 over 25%: blocked 54, ran 6, dumped 42, flat 0, open 6 (saving losses: keep it)
   - ran: MAYA up to 1.7x  
     CA `BEivETeJfF2tLkuTc5dNMcpMH6vGGcwtZchw1J3vpump`
   - ran: MEOWL up to 1.75x  
@@ -113,7 +113,7 @@ A skip "ran" if the coin reached the first target (1.5x) from the skip price bef
     CA `7RoB3BLkECUZNFuodX8ndCbLWCZYE2mu9wU1LeiZpump`
   - ran: VI up to 1.55x  
     CA `3Ag5XsdWbPZrrcdfcsQqfHPv2syhZWpNx8CDaDcWpump`
-- falling knife (code): blocked 31, ran 3, dumped 23, flat 2, open 3 (saving losses: keep it)
+- falling knife (code): blocked 29, ran 3, dumped 22, flat 2, open 2 (saving losses: keep it)
   - ran: LEOSTAR up to 1.53x  
     CA `2cMcMEX3Eqo86tUrVe5dgHp5GZNwqQ6crqm22UeZpump`
   - ran: KATIA up to 2.01x  
@@ -127,20 +127,20 @@ A skip "ran" if the coin reached the first target (1.5x) from the skip price bef
     CA `7TnXXR1ytJ9PZDxgSA8VwbyKmEWZmiA2YAn55YyVpump`
   - ran: BAWSAQ up to 1.91x  
     CA `4La95NEVJdYK9kr375SfKPXnLA8ef8GtsjfVfW27pump`
-- near the high / chasing: blocked 26, ran 4, dumped 22, flat 0, open 0 (saving losses: keep it)
-  - ran: capytrade up to 2.51x  
-    CA `ANPikG3a5qKJjHeeNjDmjZvDPPVtQ8B1ii6unvg3pump`
-  - ran: afk up to 2.49x  
-    CA `2fj37tQcLEbLAcmAGWGzMAAUfteJaC9wdVnWdhWopump`
-  - ran: WASTED6 up to 1.5x  
-    CA `3wyRvbB6nFD7Y9cuozSXrUajZs1EoJxrcBCDBxwupump`
-- RugCheck danger: blocked 26, ran 3, dumped 23, flat 0, open 0 (saving losses: keep it)
+- RugCheck danger: blocked 27, ran 3, dumped 23, flat 0, open 1 (saving losses: keep it)
   - ran: COGE up to 1.73x  
     CA `23GBezAJzK8fJNZzgA5LWLyz2WxDNTBfMKtgTQNPpump`
   - ran: VICEX up to 1.84x  
     CA `2R4u7VwRhu6b8Em9j31n9TSnx3njFqD47KeZKDuppump`
   - ran: Juan up to 1.63x  
     CA `etnUoipCj19rGdyKSs7qi9Byp9eGcAUTAq5EQY5pump`
+- near the high / chasing: blocked 25, ran 4, dumped 21, flat 0, open 0 (saving losses: keep it)
+  - ran: capytrade up to 2.51x  
+    CA `ANPikG3a5qKJjHeeNjDmjZvDPPVtQ8B1ii6unvg3pump`
+  - ran: afk up to 2.49x  
+    CA `2fj37tQcLEbLAcmAGWGzMAAUfteJaC9wdVnWdhWopump`
+  - ran: WASTED6 up to 1.5x  
+    CA `3wyRvbB6nFD7Y9cuozSXrUajZs1EoJxrcBCDBxwupump`
 - thin 5m volume: blocked 22, ran 5, dumped 12, flat 4, open 1 (saving losses: keep it)
   - ran: SENDER up to 1.58x  
     CA `5peJLZQnBkXtydYYMunbT4QutSyd9eA474MqxcmEpump`
@@ -153,7 +153,7 @@ A skip "ran" if the coin reached the first target (1.5x) from the skip price bef
     CA `D7iafdwzzpB7tisqQqT5T9aRrYPtHLqzwxhnLoWJgoat`
   - ran: LEOSTAR up to 1.53x  
     CA `2cMcMEX3Eqo86tUrVe5dgHp5GZNwqQ6crqm22UeZpump`
-- bundles over the line: blocked 12, ran 2, dumped 7, flat 0, open 3 (saving losses: keep it)
+- bundles over the line: blocked 12, ran 2, dumped 7, flat 1, open 2 (saving losses: keep it)
   - ran: WANTED up to 1.52x  
     CA `9jhs5qoJnUFU7AZXbsiD1Q6De6FVsino9Ysw8QU6pump`
   - ran: KATIA up to 2.01x  
@@ -201,13 +201,13 @@ Nothing shows a positive edge after costs. Over 309 settled coins, every setup l
 Meta: the only theme with real 5m flow is a fresh-launch cluster of "Justice For So You Are" copies. Four tickers under 40 minutes old show $15k to $54k of 5m volume, 53-61% buys, and 1h moves of +113% to +860%, so the copies compete for one story and I need to find the original. Rising but cooling: GROKIA (AI/Grok-flavored, Raydium, $373k cap) is +1027% on the hour, but its 5m volume is only $8.8k, which is under the bar. Fading: the old dog/animal tier (BLOB, JOB, GATO, DIGS) is flat to red with sub-50% buys on most, and the game-reskin GTA names are thin (GTA Pad $217 on 5m, BAWSAQ -19% on $2k). The web confirms the fade story: Trump dinner interest is dropping in headlines and no Trump coin is in the scan, so it isn't driving flow. Research only, no buys yet: the SOYOUARE cluster, starting with 6efK... on pumpswap (64k cap, $53.8k 5m) and GbGz... on the pump.fun curve (13k cap, $27k 5m), to find the original and test whether the copies are a vamp farm; conviction stays low until holders, dev and bundle checks come back clean. PASS on BLOB (above the recon cap and flat) and GROKIA (5m under the $10k bar).
 
 ## Moving most in its scans, last 30 min (1h volume)
-- SHIT: $651,971 1h vol, $732,349 mcap, +83% 1h  
+- GTAVI: $803,649 1h vol, $2,710,373 mcap, +6488% 1h  
+  CA `6wiaCq8oQiupFfeDU4ouAuYnCKXCch581HAmpvrxpump`
+- SHIT: $150,052 1h vol, $619,178 mcap, +32% 1h  
   CA `Fn95NtGXWPaJXc4N5y9rVkUq1NwZbjBNJzPVvNRLpump`
-- GrokChan: $96,379 1h vol, $2,692 mcap, -95% 1h  
-  CA `9Bg8sX2bnMM4KwaXAeEtqpYQAkv2vmqFD7wzJ6eopump`
+- Spud: $126,234 1h vol, $60,193 mcap, +88% 1h  
+  CA `47mUZNAjSFA3nmxnRa1y7P9Jmi5WPWpVP1ACPQZqpump`
 - CHAR: $85,629 1h vol, $151,410 mcap, +247% 1h  
   CA `9k2nqjUrSh9p2ZBnWxNE3QRWYiLocrWZfoDm3Vdxpump`
-- JALU: $84,434 1h vol, $744,659 mcap, -9% 1h  
-  CA `BSsmLA6UN8fzJ8qUkV4KwC5LxR7ab3TaUtcwvAyJpump`
-- Ou: $57,792 1h vol, $10,360 mcap, +106% 1h  
-  CA `328EtxiMXdBzbC8fMA56ZJFEuFA7hGaZo7TPxdbvpump`
+- VCFUND: $82,480 1h vol, $9,609 mcap, +322% 1h  
+  CA `4owiqSSaq97Dy9eECDzSBYHNxk6FNMsfodcttidHcRr8`
