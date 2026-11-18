@@ -1,13 +1,13 @@
 # Trencher live report
 
-Updated 2026-11-18T10:51:05Z (paper trading, never real money)
+Updated 2026-11-18T11:06:11Z (paper trading, never real money)
 
 - Equity: $74.23 (-25.8% vs $100 start)
 - Closed trades: 22, 3 wins
 - Fees paid: $14.78 (axiom $2.81, network $9.18, pool $2.66), plus $4.15 lost to slippage
 - New trades: WATCH-ONLY (scans and decides, buys nothing)
-- Brain: subscription, claude-haiku-5-5 for routine calls, claude-opus-5-5 for the daily review; 418 routine calls and 132 plan-limit hits in 48h
-- Watch log: 88 coins being followed, 2209 filed, 0 would-buys (6h follow, sampled every 2 min)
+- Brain: subscription, claude-haiku-5-5 for routine calls, claude-opus-5-5 for the daily review; 419 routine calls and 134 plan-limit hits in 48h
+- Watch log: 85 coins being followed, 2214 filed, 0 would-buys (6h follow, sampled every 2 min)
 
 ## Scorecard (after fees)
 - 22 closed, 3 won (14%), net $-25.79
@@ -73,9 +73,13 @@ Updated 2026-11-18T10:51:05Z (paper trading, never real money)
   CA `H4gHnZ3NCU7Z9XQwGX6YYJNyieGEW8pqwGRUcdSxpump`
 
 ## Last scan
-- 10:50Z: 6 coins, 6 with pairs, 1 passed the market filters, 1 researched
+- 11:05Z: 3 coins, 3 with pairs, 0 passed the market filters, 0 researched
 
 ## Coins it looked at, and why it passed
+- 11:03Z Shockcat (FINAL_STRETCH, $15,876 mcap, $2,284 5m vol): SKIP, passed the checklist, but the brain was paced or paused  
+  CA `9UKo9XNm5bF2AUb1jpjw2GoeiPFUng9HKczmVyZ9Ny5s`
+- 10:59Z GTAVI (MIGRATED, $2,188,318 mcap, $3,485 5m vol): REJECT, Top 10 hold 29.6% ex-pool (>25%) (V13)  
+  CA `6wiaCq8oQiupFfeDU4ouAuYnCKXCch581HAmpvrxpump`
 - 10:50Z DCI (DIP, $710,481 mcap, $11,552 5m vol): SKIP, passed the checklist, but the brain was paced or paused  
   CA `HCNhQCu5nrmWhSE3mo7fRU9eGiGLmi2fnE8omgLpump`
 - 10:48Z JALU (DIP, $436,578 mcap, $5,651 5m vol): REJECT, Dip with fading attention is a falling knife, not a dip (5m at 0.59x the hour's pace, under 0.6x)  
@@ -92,21 +96,17 @@ Updated 2026-11-18T10:51:05Z (paper trading, never real money)
   CA `HCNhQCu5nrmWhSE3mo7fRU9eGiGLmi2fnE8omgLpump`
 - 10:35Z DIGS (MIGRATED, $298,891 mcap, $4,584 5m vol): REJECT, Bundles: 10 linked wallet cluster(s) hold 100.0% of supply (>20%) (V17)  
   CA `9QT8K685Hrae4k11dhGXirdtpfAaimExtyfwt8cPpump`
-- 10:32Z GATO (DIP, $5,350,340 mcap, $2,567 5m vol): REJECT, Dev holds 2.7% (>1%) (V13, V17)  
-  CA `HsprHxBRgiVaQdRf3TnKNuZZtaX9JUSPgMFdAkk6pump`
-- 10:19Z GROKIA (MIGRATED, $141,201 mcap, $2,511 5m vol): REJECT, Bundles: 10 linked wallet cluster(s) hold 100.0% of supply (>20%) (V17)  
-  CA `A4zQMT7ZFC2mM8fZDDQEqCs5bLFifA9XhDAJtHc3Lzbm`
 
 ## What its skips did next (last 48h)
 A skip "ran" if the coin reached the first target (1.5x) from the skip price before a 20% drop, "dumped" if the drop came first. Sampled every 10 min, followed 6h.
-- top 10 over 25%: blocked 61, ran 9, dumped 46, flat 3, open 3 (saving losses: keep it)
+- top 10 over 25%: blocked 61, ran 10, dumped 46, flat 3, open 2 (saving losses: keep it)
   - ran: MAYA up to 1.7x  
     CA `BEivETeJfF2tLkuTc5dNMcpMH6vGGcwtZchw1J3vpump`
   - ran: MEOWL up to 1.75x  
     CA `3XiwhhcYJfyZPBT4tbDZ9hom8wwMTEM3d2YJwxLwAwYC`
   - ran: lulu up to 1.87x  
     CA `HR9QrcYYsiHzmPhLpdGYn3uduEkoCcZR9HN2xwxRpump`
-- falling knife (code): blocked 31, ran 3, dumped 23, flat 2, open 3 (saving losses: keep it)
+- falling knife (code): blocked 31, ran 3, dumped 24, flat 2, open 2 (saving losses: keep it)
   - ran: LEOSTAR up to 1.53x  
     CA `2cMcMEX3Eqo86tUrVe5dgHp5GZNwqQ6crqm22UeZpump`
   - ran: KATIA up to 2.01x  
@@ -127,26 +127,26 @@ A skip "ran" if the coin reached the first target (1.5x) from the skip price bef
     CA `2R4u7VwRhu6b8Em9j31n9TSnx3njFqD47KeZKDuppump`
   - ran: Juan up to 1.63x  
     CA `etnUoipCj19rGdyKSs7qi9Byp9eGcAUTAq5EQY5pump`
-- flow below pace: blocked 25, ran 6, dumped 17, flat 2, open 0 (saving losses: keep it)
+- flow below pace: blocked 24, ran 6, dumped 16, flat 2, open 0 (saving losses: keep it)
   - ran: Trader up to 2.44x  
     CA `7TnXXR1ytJ9PZDxgSA8VwbyKmEWZmiA2YAn55YyVpump`
   - ran: BAWSAQ up to 1.91x  
     CA `4La95NEVJdYK9kr375SfKPXnLA8ef8GtsjfVfW27pump`
   - ran: LEOSTAR up to 1.53x  
     CA `2cMcMEX3Eqo86tUrVe5dgHp5GZNwqQ6crqm22UeZpump`
-- thin 5m volume: blocked 18, ran 4, dumped 9, flat 5, open 0 (saving losses: keep it)
+- near the high / chasing: blocked 18, ran 2, dumped 16, flat 0, open 0 (saving losses: keep it)
+  - ran: WASTED6 up to 1.5x  
+    CA `3wyRvbB6nFD7Y9cuozSXrUajZs1EoJxrcBCDBxwupump`
+  - ran: LEOSTAR up to 1.53x  
+    CA `2cMcMEX3Eqo86tUrVe5dgHp5GZNwqQ6crqm22UeZpump`
+- thin 5m volume: blocked 17, ran 4, dumped 8, flat 5, open 0 (saving losses: keep it)
   - ran: LEOSTAR up to 1.53x  
     CA `2cMcMEX3Eqo86tUrVe5dgHp5GZNwqQ6crqm22UeZpump`
   - ran: SHARE up to 3.24x  
     CA `CTsD5kMoPcwG8AYZQoaRZjbLmeC9xYtHib5u38Wmpump`
   - ran: Mihaomas up to 1.64x  
     CA `DNuQrFj6qRnL8ajmh1u8nkfdsQ7Nf2voK9vdKcaQpump`
-- near the high / chasing: blocked 18, ran 2, dumped 16, flat 0, open 0 (saving losses: keep it)
-  - ran: WASTED6 up to 1.5x  
-    CA `3wyRvbB6nFD7Y9cuozSXrUajZs1EoJxrcBCDBxwupump`
-  - ran: LEOSTAR up to 1.53x  
-    CA `2cMcMEX3Eqo86tUrVe5dgHp5GZNwqQ6crqm22UeZpump`
-- falling knife / no higher low: blocked 15, ran 1, dumped 12, flat 2, open 0 (saving losses: keep it)
+- falling knife / no higher low: blocked 14, ran 1, dumped 11, flat 2, open 0 (saving losses: keep it)
   - ran: LEOSTAR up to 1.53x  
     CA `2cMcMEX3Eqo86tUrVe5dgHp5GZNwqQ6crqm22UeZpump`
 - dev share over 1%: blocked 12, ran 2, dumped 8, flat 1, open 1 (saving losses: keep it)
@@ -203,9 +203,9 @@ Meta: the only theme with real 5m flow is a fresh-launch cluster of "Justice For
   CA `HCNhQCu5nrmWhSE3mo7fRU9eGiGLmi2fnE8omgLpump`
 - JALU: $115,205 1h vol, $428,960 mcap, -5% 1h  
   CA `BSsmLA6UN8fzJ8qUkV4KwC5LxR7ab3TaUtcwvAyJpump`
-- DIGS: $79,934 1h vol, $308,861 mcap, -10% 1h  
-  CA `9QT8K685Hrae4k11dhGXirdtpfAaimExtyfwt8cPpump`
-- SHK: $70,788 1h vol, $3,876 mcap, -14% 1h  
-  CA `DDHfcAHyoEhXuuRXnihVA9wbZghdedaFoXKa35L5pump`
-- GATO: $38,727 1h vol, $5,350,340 mcap, +1% 1h  
-  CA `HsprHxBRgiVaQdRf3TnKNuZZtaX9JUSPgMFdAkk6pump`
+- Shockcat: $45,069 1h vol, $15,703 mcap, -15% 1h  
+  CA `9UKo9XNm5bF2AUb1jpjw2GoeiPFUng9HKczmVyZ9Ny5s`
+- GTAVI: $43,717 1h vol, $2,193,537 mcap, -7% 1h  
+  CA `6wiaCq8oQiupFfeDU4ouAuYnCKXCch581HAmpvrxpump`
+- clipping: $36,711 1h vol, $26,767 mcap, +475% 1h  
+  CA `FfsmhbvkTZ2TBYTuLgYCWiwhqeosVyH3imuUtWWypump`
