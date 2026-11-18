@@ -1,13 +1,13 @@
 # Trencher live report
 
-Updated 2026-11-18T16:39:30Z (paper trading, never real money)
+Updated 2026-11-18T16:54:37Z (paper trading, never real money)
 
 - Equity: $74.23 (-25.8% vs $100 start)
 - Closed trades: 22, 3 wins
 - Fees paid: $14.78 (axiom $2.81, network $9.18, pool $2.66), plus $4.15 lost to slippage
 - New trades: WATCH-ONLY (scans and decides, buys nothing)
-- Brain: subscription, claude-haiku-5-5 for routine calls, claude-opus-5-5 for the daily review; 395 routine calls and 166 plan-limit hits in 48h
-- Watch log: 131 coins being followed, 2293 filed, 0 would-buys (6h follow, sampled every 2 min)
+- Brain: subscription, claude-haiku-5-5 for routine calls, claude-opus-5-5 for the daily review; 396 routine calls and 168 plan-limit hits in 48h
+- Watch log: 136 coins being followed, 2297 filed, 0 would-buys (6h follow, sampled every 2 min)
 
 ## Scorecard (after fees)
 - 22 closed, 3 won (14%), net $-25.79
@@ -73,33 +73,33 @@ Updated 2026-11-18T16:39:30Z (paper trading, never real money)
   CA `H4gHnZ3NCU7Z9XQwGX6YYJNyieGEW8pqwGRUcdSxpump`
 
 ## Last scan
-- 16:38Z: 5 coins, 5 with pairs, 3 passed the market filters, 3 researched
+- 16:54Z: 1 coins, 1 with pairs, 1 passed the market filters, 1 researched
 
 ## Coins it looked at, and why it passed
-- 16:38Z Leonida (MIGRATED, $1,746,768 mcap, $4,546 5m vol): SKIP, passed the checklist, but the brain was paced or paused  
+- 16:54Z Leonida (MIGRATED, $1,805,123 mcap, $3,095 5m vol): SKIP, passed the checklist, but the brain was paced or paused  
   CA `9rbKkz2BDQBVgZmrHY6d7PTq2ge91gkpEyE4y9PPpump`
-- 16:38Z CBUCKS (DIP, $3,201,075 mcap, $801 5m vol): REJECT, 5m volume $801 is dead (<$2,000) (V1)  
-  CA `DtcicPCKTKeAh7TDEzTym3hXeoHAoMiBdYJhMYxZpump`
-- 16:38Z DCTY (MIGRATED, $10,812,182 mcap, $568,143 5m vol): SKIP, passed the checklist, but the brain was paced or paused  
-  CA `9hjBLBrc7WZW2H8UQvBAvG5WiTZotXUv2Bdcn4f4pump`
-- 16:36Z GTA (DIP, $1,527,883 mcap, $5,503 5m vol): SKIP, passed the checklist, but the brain was paced or paused  
+- 16:53Z LUNO (DIP, $185,846 mcap, $1,316 5m vol): REJECT, 5m volume $1,316 is dead (<$2,000) (V1)  
+  CA `EVbsBwxqdbMqadwAsVZ6KP9SJiaNmLSHAAb4W2mUpump`
+- 16:52Z GLITCH (MIGRATED, $302,742 mcap, $8,825 5m vol): REJECT, Top 10 hold 26.4% ex-pool (>25%) (V13)  
+  CA `8Xg89xT8Ve34sKiYqYuMs46mycREsCA2F362UscRpump`
+- 16:52Z GTA (DIP, $1,381,624 mcap, $4,559 5m vol): SKIP, passed the checklist, but the brain was paced or paused  
   CA `7KBFymfGAe8MmKEuNersoM59TvpiHzZ76jP7rSLrpump`
-- 16:34Z JALU (MIGRATED, $290,140 mcap, $2,990 5m vol): SKIP, passed the checklist, but the brain was paced or paused  
+- 16:51Z SkunkApe (FINAL_STRETCH, $18,742 mcap, $12,507 5m vol): SKIP, passed the checklist, but the brain was paced or paused  
+  CA `4xLL3cQYb75J8R616dLw6Cq7HPsm8Jtq7BLszpMWpump`
+- 16:51Z APCY (MIGRATED, $78,915 mcap, $21,993 5m vol): SKIP, passed the checklist, but the brain was paced or paused  
+  CA `7fZK84wYShNUXKJnBkfXkeu5h2edduNkZV3p2B2LBCgC`
+- 16:50Z JALU (MIGRATED, $312,493 mcap, $3,951 5m vol): SKIP, passed the checklist, but the brain was paced or paused  
   CA `BSsmLA6UN8fzJ8qUkV4KwC5LxR7ab3TaUtcwvAyJpump`
-- 16:33Z Leonida (MIGRATED, $1,862,905 mcap, $4,340 5m vol): SKIP, passed the checklist, but the brain was paced or paused  
+- 16:49Z Leonida (MIGRATED, $1,916,490 mcap, $7,766 5m vol): SKIP, passed the checklist, but the brain was paced or paused  
   CA `9rbKkz2BDQBVgZmrHY6d7PTq2ge91gkpEyE4y9PPpump`
-- 16:33Z GTA (MIGRATED, $134,507 mcap, $16,859 5m vol): REJECT, Top 10 hold 48.3% ex-pool (>25%) (V13)  
-  CA `6vofxAisDWYuD2o9jfRD4EkvpL8gs2qVbgAzDsLypump`
-- 16:33Z DCTY (MIGRATED, $10,588,869 mcap, $1,567,179 5m vol): SKIP, passed the checklist, but the brain was paced or paused  
-  CA `9hjBLBrc7WZW2H8UQvBAvG5WiTZotXUv2Bdcn4f4pump`
-- 16:32Z Founder (no setup, $14,400 mcap, $28,912 5m vol): REJECT, No setup fits: not Final Stretch, not a migrated runner, not a healthy dip  
-  CA `imYt22usW6YUkgF3KGg97YKNn51FGk4rt4b3dtypump`
-- 16:31Z GTA (DIP, $1,517,365 mcap, $4,268 5m vol): SKIP, passed the checklist, but the brain was paced or paused  
+- 16:48Z GATO (MIGRATED, $3,408,107 mcap, $11,294 5m vol): REJECT, Dev holds 2.7% (>1%) (V13, V17)  
+  CA `HsprHxBRgiVaQdRf3TnKNuZZtaX9JUSPgMFdAkk6pump`
+- 16:46Z GTA (DIP, $1,494,459 mcap, $3,266 5m vol): SKIP, passed the checklist, but the brain was paced or paused  
   CA `7KBFymfGAe8MmKEuNersoM59TvpiHzZ76jP7rSLrpump`
 
 ## What its skips did next (last 48h)
 A skip "ran" if the coin reached the first target (1.5x) from the skip price before a 20% drop, "dumped" if the drop came first. Sampled every 10 min, followed 6h.
-- top 10 over 25%: blocked 65, ran 14, dumped 47, flat 1, open 3 (saving losses: keep it)
+- top 10 over 25%: blocked 65, ran 14, dumped 46, flat 1, open 4 (saving losses: keep it)
   - ran: MAYA up to 1.7x  
     CA `BEivETeJfF2tLkuTc5dNMcpMH6vGGcwtZchw1J3vpump`
   - ran: MEOWL up to 1.75x  
@@ -113,7 +113,7 @@ A skip "ran" if the coin reached the first target (1.5x) from the skip price bef
     CA `2R4u7VwRhu6b8Em9j31n9TSnx3njFqD47KeZKDuppump`
   - ran: Juan up to 1.63x  
     CA `etnUoipCj19rGdyKSs7qi9Byp9eGcAUTAq5EQY5pump`
-- falling knife (code): blocked 34, ran 4, dumped 26, flat 2, open 2 (saving losses: keep it)
+- falling knife (code): blocked 34, ran 5, dumped 26, flat 2, open 1 (saving losses: keep it)
   - ran: LEOSTAR up to 1.53x  
     CA `2cMcMEX3Eqo86tUrVe5dgHp5GZNwqQ6crqm22UeZpump`
   - ran: KATIA up to 2.01x  
@@ -134,7 +134,7 @@ A skip "ran" if the coin reached the first target (1.5x) from the skip price bef
     CA `4La95NEVJdYK9kr375SfKPXnLA8ef8GtsjfVfW27pump`
   - ran: LEOSTAR up to 1.53x  
     CA `2cMcMEX3Eqo86tUrVe5dgHp5GZNwqQ6crqm22UeZpump`
-- thin 5m volume: blocked 16, ran 4, dumped 6, flat 4, open 2 (mixed)
+- thin 5m volume: blocked 17, ran 4, dumped 6, flat 4, open 3 (mixed)
   - ran: LEOSTAR up to 1.53x  
     CA `2cMcMEX3Eqo86tUrVe5dgHp5GZNwqQ6crqm22UeZpump`
   - ran: SHARE up to 3.24x  
@@ -144,14 +144,14 @@ A skip "ran" if the coin reached the first target (1.5x) from the skip price bef
 - near the high / chasing: blocked 14, ran 1, dumped 13, flat 0, open 0 (saving losses: keep it)
   - ran: LEOSTAR up to 1.53x  
     CA `2cMcMEX3Eqo86tUrVe5dgHp5GZNwqQ6crqm22UeZpump`
-- dev share over 1%: blocked 13, ran 2, dumped 10, flat 1, open 0 (saving losses: keep it)
+- falling knife / no higher low: blocked 13, ran 1, dumped 10, flat 2, open 0 (saving losses: keep it)
+  - ran: LEOSTAR up to 1.53x  
+    CA `2cMcMEX3Eqo86tUrVe5dgHp5GZNwqQ6crqm22UeZpump`
+- dev share over 1%: blocked 12, ran 2, dumped 9, flat 0, open 1 (saving losses: keep it)
   - ran: GTAMAS up to 2.22x  
     CA `8nUH7dwgagpMvtQnsRRMzRtUrHdv2sJiuQXABQpUpump`
   - ran: TTP up to 1.53x  
     CA `6z9zZnrS5EwpiZfJPKqzhQhd9hkiQuyy9EW9ZcfBpump`
-- falling knife / no higher low: blocked 13, ran 1, dumped 10, flat 2, open 0 (saving losses: keep it)
-  - ran: LEOSTAR up to 1.53x  
-    CA `2cMcMEX3Eqo86tUrVe5dgHp5GZNwqQ6crqm22UeZpump`
 - bundles over the line: blocked 10, ran 4, dumped 4, flat 0, open 2 (mixed)
   - ran: BIG up to 1.93x  
     CA `34DXEU2ttEtBSb1TqGJm7izgvYTTkqKcCoiNWdPDpump`
@@ -201,11 +201,11 @@ Meta: the only theme with real 5m flow is a fresh-launch cluster of "Justice For
 ## Moving most in its scans, last 30 min (1h volume)
 - DCTY: $17,785,208 1h vol, $10,812,182 mcap, +7967% 1h  
   CA `9hjBLBrc7WZW2H8UQvBAvG5WiTZotXUv2Bdcn4f4pump`
-- Apocrycoin: $967,213 1h vol, $109,124 mcap, +156% 1h  
-  CA `79rE2ac8JhN3U12QLhymgDmCTiwBN1d4maTcK1fhpump`
-- GTAKID: $699,219 1h vol, $1,421 mcap, -98% 1h  
-  CA `7smnsneWsBMPZ4PDftadFBLf62SsH921BstHiM9wpump`
 - GTASZN: $525,066 1h vol, $713,811 mcap, +608% 1h  
   CA `6NZx1nyZ5bu8haaVtp3CLybcvKQ77JJpiUou6Faypump`
-- YUKON: $405,087 1h vol, $64,243 mcap, +44% 1h  
-  CA `HMdJzGtSqENEDYRouQ7S9Hdg6JT7wj5G7LovbHCypump`
+- APCY: $267,450 1h vol, $78,915 mcap, +68% 1h  
+  CA `7fZK84wYShNUXKJnBkfXkeu5h2edduNkZV3p2B2LBCgC`
+- GATO: $140,568 1h vol, $3,408,107 mcap, -24% 1h  
+  CA `HsprHxBRgiVaQdRf3TnKNuZZtaX9JUSPgMFdAkk6pump`
+- GTAKID: $107,052 1h vol, $1,421 mcap, -100% 1h  
+  CA `7smnsneWsBMPZ4PDftadFBLf62SsH921BstHiM9wpump`
