@@ -1,13 +1,13 @@
 # Trencher live report
 
-Updated 2026-11-18T10:20:52Z (paper trading, never real money)
+Updated 2026-11-18T10:35:59Z (paper trading, never real money)
 
 - Equity: $74.23 (-25.8% vs $100 start)
 - Closed trades: 22, 3 wins
 - Fees paid: $14.78 (axiom $2.81, network $9.18, pool $2.66), plus $4.15 lost to slippage
 - New trades: WATCH-ONLY (scans and decides, buys nothing)
-- Brain: subscription, claude-haiku-5-5 for routine calls, claude-opus-5-5 for the daily review; 420 routine calls and 129 plan-limit hits in 48h
-- Watch log: 89 coins being followed, 2202 filed, 0 would-buys (6h follow, sampled every 2 min)
+- Brain: subscription, claude-haiku-5-5 for routine calls, claude-opus-5-5 for the daily review; 420 routine calls and 131 plan-limit hits in 48h
+- Watch log: 87 coins being followed, 2206 filed, 0 would-buys (6h follow, sampled every 2 min)
 
 ## Scorecard (after fees)
 - 22 closed, 3 won (14%), net $-25.79
@@ -73,9 +73,13 @@ Updated 2026-11-18T10:20:52Z (paper trading, never real money)
   CA `H4gHnZ3NCU7Z9XQwGX6YYJNyieGEW8pqwGRUcdSxpump`
 
 ## Last scan
-- 10:20Z: 1 coins, 1 with pairs, 0 passed the market filters, 0 researched
+- 10:35Z: 10 coins, 10 with pairs, 1 passed the market filters, 1 researched
 
 ## Coins it looked at, and why it passed
+- 10:35Z DIGS (MIGRATED, $298,891 mcap, $4,584 5m vol): REJECT, Bundles: 10 linked wallet cluster(s) hold 100.0% of supply (>20%) (V17)  
+  CA `9QT8K685Hrae4k11dhGXirdtpfAaimExtyfwt8cPpump`
+- 10:32Z GATO (DIP, $5,350,340 mcap, $2,567 5m vol): REJECT, Dev holds 2.7% (>1%) (V13, V17)  
+  CA `HsprHxBRgiVaQdRf3TnKNuZZtaX9JUSPgMFdAkk6pump`
 - 10:19Z GROKIA (MIGRATED, $141,201 mcap, $2,511 5m vol): REJECT, Bundles: 10 linked wallet cluster(s) hold 100.0% of supply (>20%) (V17)  
   CA `A4zQMT7ZFC2mM8fZDDQEqCs5bLFifA9XhDAJtHc3Lzbm`
 - 10:13Z GTAVI (MIGRATED, $2,266,973 mcap, $2,209 5m vol): REJECT, Top 10 hold 29.9% ex-pool (>25%) (V13)  
@@ -92,34 +96,23 @@ Updated 2026-11-18T10:20:52Z (paper trading, never real money)
   CA `9QT8K685Hrae4k11dhGXirdtpfAaimExtyfwt8cPpump`
 - 09:46Z GATO (DIP, $5,312,757 mcap, $2,859 5m vol): REJECT, Dev holds 2.7% (>1%) (V13, V17)  
   CA `HsprHxBRgiVaQdRf3TnKNuZZtaX9JUSPgMFdAkk6pump`
-- 09:40Z MAKENZI (no setup, $13,388 mcap, $1,831 5m vol): REJECT, No setup fits: not Final Stretch, not a migrated runner, not a healthy dip  
-  CA `yEQ1Xsz6hLobNoZux6ZnP3w9nngXfWX2WZX51oNpump`
-- 09:33Z GETAJOB (DIP, $404,336 mcap, $2,075 5m vol): REJECT, Dip with fading attention is a falling knife, not a dip (5m at 0.59x the hour's pace, under 0.6x)  
-  CA `AYfuRfhDGPP5DKeNNp2oVPDjrYZtZttS1FMKS3jpump`
 
 ## What its skips did next (last 48h)
 A skip "ran" if the coin reached the first target (1.5x) from the skip price before a 20% drop, "dumped" if the drop came first. Sampled every 10 min, followed 6h.
-- top 10 over 25%: blocked 60, ran 9, dumped 46, flat 3, open 2 (saving losses: keep it)
+- top 10 over 25%: blocked 60, ran 9, dumped 46, flat 4, open 1 (saving losses: keep it)
   - ran: MAYA up to 1.7x  
     CA `BEivETeJfF2tLkuTc5dNMcpMH6vGGcwtZchw1J3vpump`
   - ran: MEOWL up to 1.75x  
     CA `3XiwhhcYJfyZPBT4tbDZ9hom8wwMTEM3d2YJwxLwAwYC`
   - ran: lulu up to 1.87x  
     CA `HR9QrcYYsiHzmPhLpdGYn3uduEkoCcZR9HN2xwxRpump`
-- falling knife (code): blocked 32, ran 3, dumped 23, flat 2, open 4 (saving losses: keep it)
+- falling knife (code): blocked 32, ran 3, dumped 23, flat 3, open 3 (saving losses: keep it)
   - ran: LEOSTAR up to 1.53x  
     CA `2cMcMEX3Eqo86tUrVe5dgHp5GZNwqQ6crqm22UeZpump`
   - ran: KATIA up to 2.01x  
     CA `9a5uUXxa7LzHkT6YUikttpQsUZm4Etw8qhd2HP7xpump`
   - ran: ACRUX up to 2.02x  
     CA `7Evw4uxTxLGGEFEvXLUNYyc1J7PnFk9EYwTUFagARUX`
-- too new / sniping: blocked 31, ran 7, dumped 24, flat 0, open 0 (saving losses: keep it)
-  - ran: Pumpkin up to 2.34x  
-    CA `okUweUUY5DFGbxSCXSV6sH9neDArt5vJWNefnxKpump`
-  - ran: ANGSTIPAN up to 1.8x  
-    CA `7RoB3BLkECUZNFuodX8ndCbLWCZYE2mu9wU1LeiZpump`
-  - ran: VI up to 1.55x  
-    CA `3Ag5XsdWbPZrrcdfcsQqfHPv2syhZWpNx8CDaDcWpump`
 - RugCheck danger: blocked 30, ran 3, dumped 25, flat 1, open 1 (saving losses: keep it)
   - ran: COGE up to 1.73x  
     CA `23GBezAJzK8fJNZzgA5LWLyz2WxDNTBfMKtgTQNPpump`
@@ -127,6 +120,13 @@ A skip "ran" if the coin reached the first target (1.5x) from the skip price bef
     CA `2R4u7VwRhu6b8Em9j31n9TSnx3njFqD47KeZKDuppump`
   - ran: Juan up to 1.63x  
     CA `etnUoipCj19rGdyKSs7qi9Byp9eGcAUTAq5EQY5pump`
+- too new / sniping: blocked 30, ran 7, dumped 23, flat 0, open 0 (saving losses: keep it)
+  - ran: Pumpkin up to 2.34x  
+    CA `okUweUUY5DFGbxSCXSV6sH9neDArt5vJWNefnxKpump`
+  - ran: ANGSTIPAN up to 1.8x  
+    CA `7RoB3BLkECUZNFuodX8ndCbLWCZYE2mu9wU1LeiZpump`
+  - ran: VI up to 1.55x  
+    CA `3Ag5XsdWbPZrrcdfcsQqfHPv2syhZWpNx8CDaDcWpump`
 - flow below pace: blocked 25, ran 6, dumped 17, flat 2, open 0 (saving losses: keep it)
   - ran: Trader up to 2.44x  
     CA `7TnXXR1ytJ9PZDxgSA8VwbyKmEWZmiA2YAn55YyVpump`
@@ -199,13 +199,13 @@ Nothing shows a positive edge after costs. Over 309 settled coins, every setup l
 Meta: the only theme with real 5m flow is a fresh-launch cluster of "Justice For So You Are" copies. Four tickers under 40 minutes old show $15k to $54k of 5m volume, 53-61% buys, and 1h moves of +113% to +860%, so the copies compete for one story and I need to find the original. Rising but cooling: GROKIA (AI/Grok-flavored, Raydium, $373k cap) is +1027% on the hour, but its 5m volume is only $8.8k, which is under the bar. Fading: the old dog/animal tier (BLOB, JOB, GATO, DIGS) is flat to red with sub-50% buys on most, and the game-reskin GTA names are thin (GTA Pad $217 on 5m, BAWSAQ -19% on $2k). The web confirms the fade story: Trump dinner interest is dropping in headlines and no Trump coin is in the scan, so it isn't driving flow. Research only, no buys yet: the SOYOUARE cluster, starting with 6efK... on pumpswap (64k cap, $53.8k 5m) and GbGz... on the pump.fun curve (13k cap, $27k 5m), to find the original and test whether the copies are a vamp farm; conviction stays low until holders, dev and bundle checks come back clean. PASS on BLOB (above the recon cap and flat) and GROKIA (5m under the $10k bar).
 
 ## Moving most in its scans, last 30 min (1h volume)
-- DCI: $174,033 1h vol, $754,350 mcap, +42% 1h  
-  CA `HCNhQCu5nrmWhSE3mo7fRU9eGiGLmi2fnE8omgLpump`
-- JALU: $72,938 1h vol, $478,267 mcap, +21% 1h  
-  CA `BSsmLA6UN8fzJ8qUkV4KwC5LxR7ab3TaUtcwvAyJpump`
+- DIGS: $79,934 1h vol, $308,861 mcap, -10% 1h  
+  CA `9QT8K685Hrae4k11dhGXirdtpfAaimExtyfwt8cPpump`
+- SHK: $73,720 1h vol, $10,083 mcap, +104% 1h  
+  CA `DDHfcAHyoEhXuuRXnihVA9wbZghdedaFoXKa35L5pump`
 - GROKIA: $64,457 1h vol, $141,201 mcap, +45% 1h  
   CA `A4zQMT7ZFC2mM8fZDDQEqCs5bLFifA9XhDAJtHc3Lzbm`
-- SHK: $56,505 1h vol, $11,642 mcap, +135% 1h  
-  CA `DDHfcAHyoEhXuuRXnihVA9wbZghdedaFoXKa35L5pump`
-- CBUCKS: $55,060 1h vol, $3,260,910 mcap, -16% 1h  
+- CBUCKS: $53,450 1h vol, $3,286,556 mcap, -11% 1h  
   CA `DtcicPCKTKeAh7TDEzTym3hXeoHAoMiBdYJhMYxZpump`
+- GTAVI: $48,684 1h vol, $2,288,707 mcap, -9% 1h  
+  CA `6wiaCq8oQiupFfeDU4ouAuYnCKXCch581HAmpvrxpump`
