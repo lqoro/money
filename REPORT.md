@@ -1,13 +1,13 @@
 # Trencher live report
 
-Updated 2026-11-18T07:03:57Z (paper trading, never real money)
+Updated 2026-11-18T07:19:02Z (paper trading, never real money)
 
 - Equity: $74.23 (-25.8% vs $100 start)
 - Closed trades: 22, 3 wins
 - Fees paid: $14.78 (axiom $2.81, network $9.18, pool $2.66), plus $4.15 lost to slippage
 - New trades: WATCH-ONLY (scans and decides, buys nothing)
-- Brain: subscription, claude-haiku-5-5 for routine calls, claude-opus-5-5 for the daily review; 421 routine calls and 110 plan-limit hits in 48h
-- Watch log: 98 coins being followed, 2141 filed, 0 would-buys (6h follow, sampled every 2 min)
+- Brain: subscription, claude-haiku-5-5 for routine calls, claude-opus-5-5 for the daily review; 420 routine calls and 111 plan-limit hits in 48h
+- Watch log: 94 coins being followed, 2148 filed, 0 would-buys (6h follow, sampled every 2 min)
 
 ## Scorecard (after fees)
 - 22 closed, 3 won (14%), net $-25.79
@@ -73,29 +73,29 @@ Updated 2026-11-18T07:03:57Z (paper trading, never real money)
   CA `H4gHnZ3NCU7Z9XQwGX6YYJNyieGEW8pqwGRUcdSxpump`
 
 ## Last scan
-- 07:03Z: 6 coins, 6 with pairs, 0 passed the market filters, 0 researched
+- 07:18Z: 8 coins, 8 with pairs, 0 passed the market filters, 0 researched
 
 ## Coins it looked at, and why it passed
+- 07:17Z JALU (DIP, $430,011 mcap, $4,458 5m vol): SKIP, passed the checklist, but the brain was paced or paused  
+  CA `BSsmLA6UN8fzJ8qUkV4KwC5LxR7ab3TaUtcwvAyJpump`
+- 07:15Z Calypso (MIGRATED, $112,992 mcap, $5,015 5m vol): SKIP, passed the checklist, but the brain was paced or paused  
+  CA `BM52Wwq9ikCqnmJUdUjMbUohyWsuDaHb1mKhw4yqpump`
+- 07:13Z GETAJOB (MIGRATED, $495,267 mcap, $38,980 5m vol): SKIP, passed the checklist, but the brain was paced or paused  
+  CA `AYfuRfhDGPP5DKeNNp2oVPDjrYZtZttS1FMKS3jpump`
+- 07:11Z GTAVI (MIGRATED, $2,578,194 mcap, $2,124 5m vol): REJECT, Top 10 hold 31.1% ex-pool (>25%) (V13)  
+  CA `6wiaCq8oQiupFfeDU4ouAuYnCKXCch581HAmpvrxpump`
+- 07:11Z JALU (DIP, $421,349 mcap, $4,283 5m vol): SKIP, passed the checklist, but the brain was paced or paused  
+  CA `BSsmLA6UN8fzJ8qUkV4KwC5LxR7ab3TaUtcwvAyJpump`
+- 07:10Z Calypso (MIGRATED, $90,777 mcap, $2,217 5m vol): SKIP, passed the checklist, but the brain was paced or paused  
+  CA `BM52Wwq9ikCqnmJUdUjMbUohyWsuDaHb1mKhw4yqpump`
+- 07:08Z GETAJOB (MIGRATED, $568,525 mcap, $6,974 5m vol): SKIP, passed the checklist, but the brain was paced or paused  
+  CA `AYfuRfhDGPP5DKeNNp2oVPDjrYZtZttS1FMKS3jpump`
+- 07:06Z JALU (DIP, $430,847 mcap, $5,118 5m vol): SKIP, passed the checklist, but the brain was paced or paused  
+  CA `BSsmLA6UN8fzJ8qUkV4KwC5LxR7ab3TaUtcwvAyJpump`
+- 07:05Z HEIST (MIGRATED, $62,358 mcap, $187 5m vol): REJECT, Hack story ("heist" in the name or ticker): these tend to go down, owner rule  
+  CA `E3rsQyKo464r9rc3PnNk3k8aXippfQHzxY1DgK3jpump`
 - 07:01Z JALU (DIP, $395,821 mcap, $5,547 5m vol): SKIP, passed the checklist, but the brain was paced or paused  
   CA `BSsmLA6UN8fzJ8qUkV4KwC5LxR7ab3TaUtcwvAyJpump`
-- 06:55Z Calypso (MIGRATED, $81,620 mcap, $4,684 5m vol): SKIP, passed the checklist, but the brain was paced or paused  
-  CA `BM52Wwq9ikCqnmJUdUjMbUohyWsuDaHb1mKhw4yqpump`
-- 06:49Z Calypso (MIGRATED, $78,575 mcap, $4,976 5m vol): SKIP, passed the checklist, but the brain was paced or paused  
-  CA `BM52Wwq9ikCqnmJUdUjMbUohyWsuDaHb1mKhw4yqpump`
-- 06:47Z GTA (DIP, $1,102,587 mcap, $2,354 5m vol): REJECT, Top 10 hold 29.9% ex-pool (>25%) (V13)  
-  CA `7KBFymfGAe8MmKEuNersoM59TvpiHzZ76jP7rSLrpump`
-- 06:47Z DIGS (MIGRATED, $284,244 mcap, $4,542 5m vol): REJECT, Bundles: 10 linked wallet cluster(s) hold 100.0% of supply (>20%) (V17)  
-  CA `9QT8K685Hrae4k11dhGXirdtpfAaimExtyfwt8cPpump`
-- 06:44Z Calypso (MIGRATED, $96,487 mcap, $4,918 5m vol): SKIP, passed the checklist, but the brain was paced or paused  
-  CA `BM52Wwq9ikCqnmJUdUjMbUohyWsuDaHb1mKhw4yqpump`
-- 06:43Z ANT (MIGRATED, $208,965 mcap, $2,286 5m vol): SKIP, passed the checklist, but the brain was paced or paused  
-  CA `EadD2LMp6EbH9PrbXUFWcrZKMhoKVrZN1gpwRhH5pump`
-- 06:41Z Human (MIGRATED, $40,344 mcap, $20,565 5m vol): REJECT, Top 10 hold 26.2% ex-pool (>25%) (V13)  
-  CA `9Wb1n6AP3mhm6sTeZcvrK4ZAXpX6Xh7N1grXQhuksLzr`
-- 06:39Z Calypso (MIGRATED, $92,374 mcap, $10,404 5m vol): SKIP, passed the checklist, but the brain was paced or paused  
-  CA `BM52Wwq9ikCqnmJUdUjMbUohyWsuDaHb1mKhw4yqpump`
-- 06:39Z FI (DIP, $59,712 mcap, $42,206 5m vol): SKIP, passed the checklist, but the brain was paced or paused  
-  CA `EoC8TA2wiSgFzAXpYvczPQ7fwx8hHCdZwE4arHbupump`
 
 ## What its skips did next (last 48h)
 A skip "ran" if the coin reached the first target (1.5x) from the skip price before a 20% drop, "dumped" if the drop came first. Sampled every 10 min, followed 6h.
@@ -201,13 +201,13 @@ Nothing shows a positive edge after costs. Over 309 settled coins, every setup l
 Meta: the only theme with real 5m flow is a fresh-launch cluster of "Justice For So You Are" copies. Four tickers under 40 minutes old show $15k to $54k of 5m volume, 53-61% buys, and 1h moves of +113% to +860%, so the copies compete for one story and I need to find the original. Rising but cooling: GROKIA (AI/Grok-flavored, Raydium, $373k cap) is +1027% on the hour, but its 5m volume is only $8.8k, which is under the bar. Fading: the old dog/animal tier (BLOB, JOB, GATO, DIGS) is flat to red with sub-50% buys on most, and the game-reskin GTA names are thin (GTA Pad $217 on 5m, BAWSAQ -19% on $2k). The web confirms the fade story: Trump dinner interest is dropping in headlines and no Trump coin is in the scan, so it isn't driving flow. Research only, no buys yet: the SOYOUARE cluster, starting with 6efK... on pumpswap (64k cap, $53.8k 5m) and GbGz... on the pump.fun curve (13k cap, $27k 5m), to find the original and test whether the copies are a vamp farm; conviction stays low until holders, dev and bundle checks come back clean. PASS on BLOB (above the recon cap and flat) and GROKIA (5m under the $10k bar).
 
 ## Moving most in its scans, last 30 min (1h volume)
-- FI: $426,019 1h vol, $9,205 mcap, -69% 1h  
+- FI: $291,253 1h vol, $9,906 mcap, -83% 1h  
   CA `EoC8TA2wiSgFzAXpYvczPQ7fwx8hHCdZwE4arHbupump`
-- Calypso: $112,978 1h vol, $82,414 mcap, +13% 1h  
-  CA `BM52Wwq9ikCqnmJUdUjMbUohyWsuDaHb1mKhw4yqpump`
-- HODL: $90,087 1h vol, $3,507 mcap, +5% 1h  
-  CA `GUG2jmyhVNjmJsKqwzHioJHFY9ozxP9CJvZX5cjrpump`
-- CLIP: $85,170 1h vol, $7,802 mcap, +259% 1h  
+- GETAJOB: $215,167 1h vol, $527,277 mcap, +331% 1h  
+  CA `AYfuRfhDGPP5DKeNNp2oVPDjrYZtZttS1FMKS3jpump`
+- CLIP: $92,193 1h vol, $2,970 mcap, +37% 1h  
   CA `8utEAA7sbciRdCmAiTgACEr8uzbeoGmKyWbMmuwipump`
-- JALU: $80,100 1h vol, $406,392 mcap, -16% 1h  
+- JALU: $77,400 1h vol, $430,011 mcap, +7% 1h  
   CA `BSsmLA6UN8fzJ8qUkV4KwC5LxR7ab3TaUtcwvAyJpump`
+- Calypso: $65,109 1h vol, $109,771 mcap, +49% 1h  
+  CA `BM52Wwq9ikCqnmJUdUjMbUohyWsuDaHb1mKhw4yqpump`
