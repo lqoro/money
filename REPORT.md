@@ -1,13 +1,13 @@
 # Trencher live report
 
-Updated 2026-11-19T18:38:14Z (paper trading, never real money)
+Updated 2026-11-19T18:53:33Z (paper trading, never real money)
 
 - Equity: $74.23 (-25.8% vs $100 start)
 - Closed trades: 22, 3 wins
 - Fees paid: $14.78 (axiom $2.81, network $9.18, pool $2.66), plus $4.15 lost to slippage
 - New trades: WATCH-ONLY (scans and decides, buys nothing)
-- Brain: subscription, claude-haiku-5-5 for routine calls, claude-opus-5-5 for the daily review; 282 routine calls and 282 plan-limit hits in 48h
-- Watch log: 114 coins being followed, 2405 filed, 0 would-buys (6h follow, sampled every 2 min)
+- Brain: subscription, claude-haiku-5-5 for routine calls, claude-opus-5-5 for the daily review; 283 routine calls and 283 plan-limit hits in 48h
+- Watch log: 114 coins being followed, 2412 filed, 0 would-buys (6h follow, sampled every 2 min)
 
 ## Scorecard (after fees)
 - 22 closed, 3 won (14%), net $-25.79
@@ -73,33 +73,33 @@ Updated 2026-11-19T18:38:14Z (paper trading, never real money)
   CA `H4gHnZ3NCU7Z9XQwGX6YYJNyieGEW8pqwGRUcdSxpump`
 
 ## Last scan
-- 18:37Z: 4 coins, 4 with pairs, 0 passed the market filters, 0 researched
+- 18:52Z: 6 coins, 6 with pairs, 2 passed the market filters, 2 researched
 
 ## Coins it looked at, and why it passed
-- 18:36Z Mandy (MIGRATED, $127,730 mcap, $17,202 5m vol): SKIP, passed the checklist, but the brain was paced or paused  
+- 18:52Z BuckMe (FINAL_STRETCH, $22,504 mcap, $3,231 5m vol): REJECT, RugCheck danger: Creator history of rugged tokens  
+  CA `9t4ftfzCSqPGFht9MXLfRDGjrwrK8uszqjp4WUDRpump`
+- 18:52Z Mandy (MIGRATED, $135,687 mcap, $4,645 5m vol): SKIP, passed the checklist, but the brain was paced or paused  
   CA `2xCd5qHX5tW6pGUo7zfgHSSAnRjJwPA7Sz1Fu4fWcJjX`
-- 18:35Z 1 (DIP, $382,938 mcap, $2,875 5m vol): REJECT, Dip with fading attention is a falling knife, not a dip (5m at 0.13x the hour's pace, under 0.6x)  
-  CA `2bCCHQadi4QeHWPKG3w13siCyWWQPgkFtniouTqVpump`
-- 18:35Z 62BIRDS (FINAL_STRETCH, $20,868 mcap, $6,869 5m vol): REJECT, RugCheck danger: Low Liquidity $2.56  
-  CA `BWkAvguMNpEFPVQ9EnSV8mQ2VjoDDAvQppwCWcD1pump`
-- 18:35Z AI (MIGRATED, $283,987 mcap, $36,006 5m vol): SKIP, passed the checklist, but the brain was paced or paused  
+- 18:51Z AI (MIGRATED, $304,082 mcap, $13,014 5m vol): SKIP, passed the checklist, but the brain was paced or paused  
   CA `5k8yMkEzcekeufWvTk5zvuZ8xnx2PqNdxs86E9P2bvQf`
-- 18:33Z KFC (MIGRATED, $83,344 mcap, $6,561 5m vol): SKIP, passed the checklist, but the brain was paced or paused  
-  CA `7RZuBWCWMp63JYXLFUnSdvmYVWN8dGAKsSvzLbBfpump`
-- 18:31Z Mandy (MIGRATED, $118,890 mcap, $12,399 5m vol): SKIP, passed the checklist, but the brain was paced or paused  
-  CA `2xCd5qHX5tW6pGUo7zfgHSSAnRjJwPA7Sz1Fu4fWcJjX`
-- 18:30Z AI (MIGRATED, $252,696 mcap, $52,727 5m vol): SKIP, passed the checklist, but the brain was paced or paused  
+- 18:50Z Peanut (FINAL_STRETCH, $17,483 mcap, $3,096 5m vol): SKIP, passed the checklist, but the brain was paced or paused  
+  CA `6yF6gJJzRzzWScp1WjHLrCXVb5QWgPgyyuKPcnHBpump`
+- 18:50Z SIM (MIGRATED, $67,337 mcap, $3,567 5m vol): SKIP, passed the checklist, but the brain was paced or paused  
+  CA `fRxGeXTCXLPQyChrq5sanfUWAe2vseLBiGdDE7k4S1M`
+- 18:49Z DATITTY (MIGRATED, $204,779 mcap, $6,492 5m vol): REJECT, Top 10 hold 51.9% ex-pool (>25%) (V13)  
+  CA `3guXwT9btWrL4jDFgKevD2fTvEbXEBsR99ZARqg5pump`
+- 18:49Z FUNDDORES (FINAL_STRETCH, $17,223 mcap, $40,355 5m vol): SKIP, passed the checklist, but the brain was paced or paused  
+  CA `3wFdJ9ATmpQC9dVUNzRnnvSgRu5be7TDwovdTzc2pump`
+- 18:46Z AI (MIGRATED, $283,635 mcap, $19,111 5m vol): SKIP, passed the checklist, but the brain was paced or paused  
   CA `5k8yMkEzcekeufWvTk5zvuZ8xnx2PqNdxs86E9P2bvQf`
-- 18:28Z KFC (MIGRATED, $84,770 mcap, $8,835 5m vol): SKIP, passed the checklist, but the brain was paced or paused  
-  CA `7RZuBWCWMp63JYXLFUnSdvmYVWN8dGAKsSvzLbBfpump`
-- 18:27Z ANTS (DIP, $7,114,060 mcap, $3,711 5m vol): SKIP, passed the checklist, but the brain was paced or paused  
-  CA `ejrz94zR4A2ScS8LdvRaQih2xUxaE2ydreqUNKmpump`
-- 18:26Z Mandy (DIP, $160,603 mcap, $3,447 5m vol): SKIP, passed the checklist, but the brain was paced or paused  
-  CA `2xCd5qHX5tW6pGUo7zfgHSSAnRjJwPA7Sz1Fu4fWcJjX`
+- 18:45Z SIM (MIGRATED, $95,139 mcap, $2,551 5m vol): SKIP, passed the checklist, but the brain was paced or paused  
+  CA `fRxGeXTCXLPQyChrq5sanfUWAe2vseLBiGdDE7k4S1M`
+- 18:43Z DIGS (MIGRATED, $466,078 mcap, $2,638 5m vol): REJECT, Bundles: 10 linked wallet cluster(s) hold 100.0% of supply (>20%) (V17)  
+  CA `9QT8K685Hrae4k11dhGXirdtpfAaimExtyfwt8cPpump`
 
 ## What its skips did next (last 48h)
 A skip "ran" if the coin reached the first target (1.5x) from the skip price before a 20% drop, "dumped" if the drop came first. Sampled every 10 min, followed 6h.
-- top 10 over 25%: blocked 80, ran 15, dumped 61, flat 3, open 1 (saving losses: keep it)
+- top 10 over 25%: blocked 80, ran 15, dumped 60, flat 3, open 2 (saving losses: keep it)
   - ran: PS5 up to 2.06x  
     CA `7SEGAjVRdv6H3d4CPBNPBL6yXJiUM1pLoECsovPbpump`
   - ran: BUFO up to 1.83x  
@@ -113,7 +113,7 @@ A skip "ran" if the coin reached the first target (1.5x) from the skip price bef
     CA `GZUGmAtuSx9755C3W1CLDVtA7MZQ8QWF1XjhjEbjpump`
   - ran: Apocrycoin up to 1.54x  
     CA `79rE2ac8JhN3U12QLhymgDmCTiwBN1d4maTcK1fhpump`
-- RugCheck danger: blocked 30, ran 3, dumped 24, flat 2, open 1 (saving losses: keep it)
+- RugCheck danger: blocked 30, ran 3, dumped 23, flat 2, open 2 (saving losses: keep it)
   - ran: CATCOIN up to 2.06x  
     CA `9JngoeaZHbV4f5EyRR3oDLNPH7VUGw1PYQC4s6j2pump`
   - ran: Leonida up to 1.51x  
@@ -185,13 +185,13 @@ Nothing shows a positive edge after costs. Over 309 settled coins, every setup l
 Meta: the only theme with real 5m flow is a fresh-launch cluster of "Justice For So You Are" copies. Four tickers under 40 minutes old show $15k to $54k of 5m volume, 53-61% buys, and 1h moves of +113% to +860%, so the copies compete for one story and I need to find the original. Rising but cooling: GROKIA (AI/Grok-flavored, Raydium, $373k cap) is +1027% on the hour, but its 5m volume is only $8.8k, which is under the bar. Fading: the old dog/animal tier (BLOB, JOB, GATO, DIGS) is flat to red with sub-50% buys on most, and the game-reskin GTA names are thin (GTA Pad $217 on 5m, BAWSAQ -19% on $2k). The web confirms the fade story: Trump dinner interest is dropping in headlines and no Trump coin is in the scan, so it isn't driving flow. Research only, no buys yet: the SOYOUARE cluster, starting with 6efK... on pumpswap (64k cap, $53.8k 5m) and GbGz... on the pump.fun curve (13k cap, $27k 5m), to find the original and test whether the copies are a vamp farm; conviction stays low until holders, dev and bundle checks come back clean. PASS on BLOB (above the recon cap and flat) and GROKIA (5m under the $10k bar).
 
 ## Moving most in its scans, last 30 min (1h volume)
-- AI: $357,708 1h vol, $283,987 mcap, +121% 1h  
+- AI: $431,089 1h vol, $317,105 mcap, +147% 1h  
   CA `5k8yMkEzcekeufWvTk5zvuZ8xnx2PqNdxs86E9P2bvQf`
-- KFC: $296,353 1h vol, $77,815 mcap, -75% 1h  
+- KFC: $311,253 1h vol, $1,934 mcap, -99% 1h  
   CA `7RZuBWCWMp63JYXLFUnSdvmYVWN8dGAKsSvzLbBfpump`
 - 1: $263,274 1h vol, $382,938 mcap, -34% 1h  
   CA `2bCCHQadi4QeHWPKG3w13siCyWWQPgkFtniouTqVpump`
-- SIM: $133,774 1h vol, $74,460 mcap, +142% 1h  
+- SIM: $151,806 1h vol, $67,337 mcap, +126% 1h  
   CA `fRxGeXTCXLPQyChrq5sanfUWAe2vseLBiGdDE7k4S1M`
-- 62BIRDS: $102,472 1h vol, $20,868 mcap, +6% 1h  
-  CA `BWkAvguMNpEFPVQ9EnSV8mQ2VjoDDAvQppwCWcD1pump`
+- BuckMe: $150,422 1h vol, $22,687 mcap, +586% 1h  
+  CA `9t4ftfzCSqPGFht9MXLfRDGjrwrK8uszqjp4WUDRpump`
