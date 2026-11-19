@@ -1,13 +1,13 @@
 # Trencher live report
 
-Updated 2026-11-19T21:55:12Z (paper trading, never real money)
+Updated 2026-11-19T22:10:31Z (paper trading, never real money)
 
 - Equity: $74.23 (-25.8% vs $100 start)
 - Closed trades: 22, 3 wins
 - Fees paid: $14.78 (axiom $2.81, network $9.18, pool $2.66), plus $4.15 lost to slippage
 - New trades: WATCH-ONLY (scans and decides, buys nothing)
-- Brain: subscription, claude-haiku-5-5 for routine calls, claude-opus-5-5 for the daily review; 282 routine calls and 282 plan-limit hits in 48h
-- Watch log: 124 coins being followed, 2467 filed, 0 would-buys (6h follow, sampled every 2 min)
+- Brain: subscription, claude-haiku-5-5 for routine calls, claude-opus-5-5 for the daily review; 282 routine calls and 281 plan-limit hits in 48h
+- Watch log: 124 coins being followed, 2471 filed, 0 would-buys (6h follow, sampled every 2 min)
 
 ## Scorecard (after fees)
 - 22 closed, 3 won (14%), net $-25.79
@@ -73,47 +73,47 @@ Updated 2026-11-19T21:55:12Z (paper trading, never real money)
   CA `H4gHnZ3NCU7Z9XQwGX6YYJNyieGEW8pqwGRUcdSxpump`
 
 ## Last scan
-- 21:54Z: 6 coins, 6 with pairs, 1 passed the market filters, 1 researched
+- 22:10Z: 8 coins, 8 with pairs, 2 passed the market filters, 2 researched
 
 ## Coins it looked at, and why it passed
-- 21:54Z FIONA (DIP, $129,040 mcap, $91,099 5m vol): SKIP, passed the checklist, but the brain was paced or paused  
+- 22:10Z 1 (DIP, $391,628 mcap, $2,164 5m vol): SKIP, passed the checklist, but the brain was paced or paused  
+  CA `2bCCHQadi4QeHWPKG3w13siCyWWQPgkFtniouTqVpump`
+- 22:10Z FIONA (DIP, $87,839 mcap, $40,297 5m vol): SKIP, passed the checklist, but the brain was paced or paused  
   CA `3hcJWcNvWJu3QBq6PiC8xavYQJJwBnr6adhdpHXppump`
-- 21:52Z ONI (MIGRATED, $102,779 mcap, $3,796 5m vol): SKIP, passed the checklist, but the brain was paced or paused  
+- 22:08Z jingyu (MIGRATED, $110,916 mcap, $1,953 5m vol): REJECT, 5m volume $1,953 is dead (<$2,000) (V1)  
+  CA `DUZrwdjEthcJ99ZiRXr31UuqTohoTg7VjTEyfGdBpump`
+- 22:08Z VINTEL (MIGRATED, $39,720 mcap, $7,046 5m vol): SKIP, passed the checklist, but the brain was paced or paused  
+  CA `H1jcPQwCX9VPiNGBUpQNJdGzZEHiisFSs1WS4fi6pump`
+- 22:04Z FIONA (DIP, $78,937 mcap, $39,848 5m vol): SKIP, passed the checklist, but the brain was paced or paused  
+  CA `3hcJWcNvWJu3QBq6PiC8xavYQJJwBnr6adhdpHXppump`
+- 22:02Z VINTEL (MIGRATED, $38,489 mcap, $19,132 5m vol): SKIP, passed the checklist, but the brain was paced or paused  
+  CA `H1jcPQwCX9VPiNGBUpQNJdGzZEHiisFSs1WS4fi6pump`
+- 21:59Z FIONA (MIGRATED, $57,364 mcap, $70,632 5m vol): REJECT, Top 10 hold 44.8% ex-pool (>25%) (V13)  
+  CA `8sCLrDo6tS9zQoC1qsb13KhGUHEWyLx3j7JebBYnpump`
+- 21:59Z FIONA (DIP, $111,244 mcap, $79,667 5m vol): SKIP, passed the checklist, but the brain was paced or paused  
+  CA `3hcJWcNvWJu3QBq6PiC8xavYQJJwBnr6adhdpHXppump`
+- 21:57Z ONI (MIGRATED, $81,453 mcap, $3,504 5m vol): SKIP, passed the checklist, but the brain was paced or paused  
   CA `FSfZuwaRFVcTtVBsiJ45NYK7Mwi3ANRcVT8kpbevtPGj`
-- 21:52Z VINTEL (FINAL_STRETCH, $16,856 mcap, $6,493 5m vol): SKIP, passed the checklist, but the brain was paced or paused  
-  CA `H1jcPQwCX9VPiNGBUpQNJdGzZEHiisFSs1WS4fi6pump`
-- 21:52Z OGTA (MIGRATED, $992,516 mcap, $4,613 5m vol): SKIP, passed the checklist, but the brain was paced or paused  
+- 21:57Z OGTA (DIP, $936,966 mcap, $5,675 5m vol): REJECT, Dip with fading attention is a falling knife, not a dip (5m at 0.52x the hour's pace, under 0.6x)  
   CA `7bCiddGLe5aM8HE2pigT9jsqkmC1HSPxyXN6GkHEpump`
-- 21:49Z Mandy (DIP, $156,316 mcap, $6,613 5m vol): SKIP, passed the checklist, but the brain was paced or paused  
-  CA `2xCd5qHX5tW6pGUo7zfgHSSAnRjJwPA7Sz1Fu4fWcJjX`
-- 21:48Z WASTED (DIP, $955,205 mcap, $5,510 5m vol): REJECT, Top 10 hold 27.5% ex-pool (>25%) (V13)  
-  CA `GexThZHgaswpAQ7Fi8QrHFubjPimUNSYhJiAA7XZpump`
-- 21:48Z FIONA (DIP, $89,485 mcap, $35,472 5m vol): SKIP, passed the checklist, but the brain was paced or paused  
-  CA `3hcJWcNvWJu3QBq6PiC8xavYQJJwBnr6adhdpHXppump`
-- 21:46Z VINTEL (FINAL_STRETCH, $17,335 mcap, $10,773 5m vol): SKIP, passed the checklist, but the brain was paced or paused  
-  CA `H1jcPQwCX9VPiNGBUpQNJdGzZEHiisFSs1WS4fi6pump`
-- 21:46Z OGTA (MIGRATED, $992,353 mcap, $22,884 5m vol): SKIP, passed the checklist, but the brain was paced or paused  
-  CA `7bCiddGLe5aM8HE2pigT9jsqkmC1HSPxyXN6GkHEpump`
-- 21:46Z FIONA (MIGRATED, $757,553 mcap, $336,955 5m vol): REJECT, Bundles: 5 linked wallet cluster(s) hold 23.9% of supply (>20%) (V17)  
-  CA `B34nXKzCgsJb9ChLuSHPRpXLE3WFSWyeT8Cqkzzmpump`
 
 ## What its skips did next (last 48h)
 A skip "ran" if the coin reached the first target (1.5x) from the skip price before a 20% drop, "dumped" if the drop came first. Sampled every 10 min, followed 6h.
-- top 10 over 25%: blocked 79, ran 15, dumped 59, flat 3, open 2 (saving losses: keep it)
+- top 10 over 25%: blocked 78, ran 15, dumped 58, flat 3, open 2 (saving losses: keep it)
   - ran: BUFO up to 1.83x  
     CA `44gNPkTVKwfNf2fPBdwiPZrVVXLVYTkmBk5VdBzrpump`
   - ran: clawd up to 2.1x  
     CA `85osSLFjprTGWRkrXMTGjsmaWR2pjUb38AiJzr16pump`
   - ran: SHARK up to 1.68x  
     CA `3yxsNufZSWNrvMXw8gwCJFCuUkuTDsb1a55aR7evpump`
-- falling knife (code): blocked 53, ran 7, dumped 45, flat 0, open 1 (saving losses: keep it)
+- falling knife (code): blocked 54, ran 7, dumped 45, flat 0, open 2 (saving losses: keep it)
   - ran: DACT up to 2.63x  
     CA `GZUGmAtuSx9755C3W1CLDVtA7MZQ8QWF1XjhjEbjpump`
   - ran: Apocrycoin up to 1.54x  
     CA `79rE2ac8JhN3U12QLhymgDmCTiwBN1d4maTcK1fhpump`
   - ran: APCY up to 1.74x  
     CA `7fZK84wYShNUXKJnBkfXkeu5h2edduNkZV3p2B2LBCgC`
-- RugCheck danger: blocked 31, ran 4, dumped 24, flat 2, open 1 (saving losses: keep it)
+- RugCheck danger: blocked 30, ran 5, dumped 23, flat 2, open 0 (saving losses: keep it)
   - ran: CATCOIN up to 2.06x  
     CA `9JngoeaZHbV4f5EyRR3oDLNPH7VUGw1PYQC4s6j2pump`
   - ran: Leonida up to 1.51x  
@@ -141,7 +141,7 @@ A skip "ran" if the coin reached the first target (1.5x) from the skip price bef
     CA `HricrxBN3QXC3SN5VLtNhaEzoGrYea5ZtaTxQDfKSTNK`
   - ran: PAPA up to 1.66x  
     CA `3hdXmQqZHmm7gWWweFKGdkjnxyWQZ2SWVNt1Jty5pump`
-- thin 5m volume: blocked 9, ran 1, dumped 4, flat 4, open 0 (saving losses: keep it)
+- thin 5m volume: blocked 10, ran 1, dumped 4, flat 4, open 1 (saving losses: keep it)
   - ran: Snapmatic up to 1.68x  
     CA `4S8pUKWKUAtQKfE5qokSjszWDp1RqQWnom8jNYSWpump`
 - hack story (owner rule): blocked 3, ran 0, dumped 0, flat 3, open 0 (too few played out to judge)
@@ -182,16 +182,16 @@ Nothing shows a positive edge after costs. Over 309 settled coins, every setup l
 - [2026-11-02 20:25] I expected Slingoor, a clean MIGRATED leader with $25k of 5m flow at pace and a 0.77 buy share, to retest its $408k high from $304k. It never went green (0.98x peak) and hit the -20% stop in 2 minutes, a -$2.86 probe. My own thesis admitted there was no printed higher low after a peak only 6 minutes old, so this confirms the money-shape rule: buy share and flow are not structure (V1, V6). Next time a MIGRATED pullback with no higher low above the hourly low is a PASS with blocker "no higher low", not a probe. This is one loss, so it adds no new ban beyond the rule I already have.
 
 ## Meta right now
-Meta: the only theme with real 5m flow is a fresh-launch cluster of "Justice For So You Are" copies. Four tickers under 40 minutes old show $15k to $54k of 5m volume, 53-61% buys, and 1h moves of +113% to +860%, so the copies compete for one story and I need to find the original. Rising but cooling: GROKIA (AI/Grok-flavored, Raydium, $373k cap) is +1027% on the hour, but its 5m volume is only $8.8k, which is under the bar. Fading: the old dog/animal tier (BLOB, JOB, GATO, DIGS) is flat to red with sub-50% buys on most, and the game-reskin GTA names are thin (GTA Pad $217 on 5m, BAWSAQ -19% on $2k). The web confirms the fade story: Trump dinner interest is dropping in headlines and no Trump coin is in the scan, so it isn't driving flow. Research only, no buys yet: the SOYOUARE cluster, starting with 6efK... on pumpswap (64k cap, $53.8k 5m) and GbGz... on the pump.fun curve (13k cap, $27k 5m), to find the original and test whether the copies are a vamp farm; conviction stays low until holders, dev and bundle checks come back clean. PASS on BLOB (above the recon cap and flat) and GROKIA (5m under the $10k bar).
+Meta: animal and meme-character launches on fresh PumpSwap pairs are where the buyers are right now. The Fiona the Hippo cluster is rising: five CAs under about an hour old, 52-67% buys on most, $337k of 5m volume on the biggest (B34nXKzC..., $758k cap), and the newest (8sCL..., $58k cap, $71k 5m, 67% buys) is the one to check for copies. Mandy and the GTA reskins are fading: Jason's ex Mandy ($994k cap) is at 12% buys on $13k 5m, and OFFICIALGTA ($937k cap) is -22% on $4k 5m, so both are passes. The older dog and animal names (DIGS, LOOSY) are flat to red, so they are not setups. Research only, no buys yet: the original Fiona by cap and volume (B34n, but it is +2328% on the hour, so it only qualifies on a dip that holds volume), and 3hcJ ($79k cap, $40k 5m, 60% buys) as a second candidate to test for vamp status. The crawler's "Justice For So You Are", GROKIA and BLOB claims don't appear in the scan data, so I'm discarding them, and conviction stays low until holder, dev and bundle checks come back clean.
 
 ## Moving most in its scans, last 30 min (1h volume)
 - FIONA: $2,017,476 1h vol, $757,553 mcap, +2328% 1h  
   CA `B34nXKzCgsJb9ChLuSHPRpXLE3WFSWyeT8Cqkzzmpump`
-- DAINU: $606,061 1h vol, $989,358 mcap, +2611% 1h  
-  CA `82u71wqQSa4NmD1UTTDwKyh5EUm3xe9pMp4UZXhFpump`
-- FIONA: $574,116 1h vol, $129,040 mcap, +338% 1h  
+- FIONA: $781,707 1h vol, $81,694 mcap, +203% 1h  
   CA `3hcJWcNvWJu3QBq6PiC8xavYQJJwBnr6adhdpHXppump`
 - MANDY: $433,262 1h vol, $994,210 mcap, +202% 1h  
   CA `GQngHP8P6s45MxWnU7JsocfV2HjPQdJZmCEAYKpBpump`
+- FIONA: $342,749 1h vol, $7,959 mcap, -72% 1h  
+  CA `97Fz7Ki7GzBDLCz4LV69CTCyw4VqZV7GwL6dS9zsBtcJ`
 - BUNCOIN: $340,389 1h vol, $356,468 mcap, +284% 1h  
   CA `mXcP1bqxM8Tx6BQuFwTHqzE3m7JVMZspmxZ7pjQpump`
