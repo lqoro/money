@@ -1,13 +1,13 @@
 # Trencher live report
 
-Updated 2026-11-19T14:05:25Z (paper trading, never real money)
+Updated 2026-11-19T14:20:28Z (paper trading, never real money)
 
 - Equity: $74.23 (-25.8% vs $100 start)
 - Closed trades: 22, 3 wins
 - Fees paid: $14.78 (axiom $2.81, network $9.18, pool $2.66), plus $4.15 lost to slippage
 - New trades: WATCH-ONLY (scans and decides, buys nothing)
 - Brain: subscription, claude-haiku-5-5 for routine calls, claude-opus-5-5 for the daily review; 282 routine calls and 282 plan-limit hits in 48h
-- Watch log: 87 coins being followed, 2344 filed, 0 would-buys (6h follow, sampled every 2 min)
+- Watch log: 90 coins being followed, 2348 filed, 0 would-buys (6h follow, sampled every 2 min)
 
 ## Scorecard (after fees)
 - 22 closed, 3 won (14%), net $-25.79
@@ -73,40 +73,40 @@ Updated 2026-11-19T14:05:25Z (paper trading, never real money)
   CA `H4gHnZ3NCU7Z9XQwGX6YYJNyieGEW8pqwGRUcdSxpump`
 
 ## Last scan
-- 14:04Z: 5 coins, 5 with pairs, 1 passed the market filters, 1 researched
+- 14:19Z: 5 coins, 5 with pairs, 3 passed the market filters, 3 researched
 
 ## Coins it looked at, and why it passed
-- 14:04Z GTASZN (MIGRATED, $741,588 mcap, $2,777 5m vol): SKIP, passed the checklist, but the brain was paced or paused  
-  CA `A4jXnWk1rDRDth6HmDASi45c89n1AguTHivAQPTVpump`
-- 14:03Z Mandy (MIGRATED, $313,560 mcap, $7,068 5m vol): SKIP, passed the checklist, but the brain was paced or paused  
+- 14:19Z Mandy (MIGRATED, $314,333 mcap, $3,028 5m vol): SKIP, passed the checklist, but the brain was paced or paused  
   CA `2xCd5qHX5tW6pGUo7zfgHSSAnRjJwPA7Sz1Fu4fWcJjX`
-- 14:03Z PIPI (MIGRATED, $136,263 mcap, $14,802 5m vol): SKIP, passed the checklist, but the brain was paced or paused  
+- 14:19Z PIPI (DIP, $74,183 mcap, $7,038 5m vol): REJECT, Dip with fading attention is a falling knife, not a dip (5m at 0.23x the hour's pace, under 0.6x)  
   CA `Bd7mSgkiBbMs6jGG2651KXGnUNqFW89u5gTEMieppump`
-- 14:03Z WIF (MIGRATED, $81,588 mcap, $31,044 5m vol): SKIP, passed the checklist, but the brain was paced or paused  
-  CA `DD9YaiEC1cyrztQ5aGSbwZZkRGxRm7Mh3Y7b2kfFpump`
-- 14:00Z ANTS (DIP, $8,664,217 mcap, $24,908 5m vol): REJECT, Dip with fading attention is a falling knife, not a dip (5m at 0.59x the hour's pace, under 0.6x)  
-  CA `ejrz94zR4A2ScS8LdvRaQih2xUxaE2ydreqUNKmpump`
-- 13:59Z GTASZN (MIGRATED, $798,554 mcap, $4,714 5m vol): SKIP, passed the checklist, but the brain was paced or paused  
+- 14:19Z SI (MIGRATED, $43,622 mcap, $14,512 5m vol): REJECT, Top 10 hold 26.6% ex-pool (>25%) (V13)  
+  CA `3bBAb871XgcuNZxs9R3VH5AZQuDUbMaJHKCXzbYMpump`
+- 14:15Z GTASZN (MIGRATED, $809,222 mcap, $4,045 5m vol): SKIP, passed the checklist, but the brain was paced or paused  
   CA `A4jXnWk1rDRDth6HmDASi45c89n1AguTHivAQPTVpump`
-- 13:58Z Mandy (MIGRATED, $350,153 mcap, $9,199 5m vol): SKIP, passed the checklist, but the brain was paced or paused  
+- 14:14Z HOGE (DIP, $1,069,358 mcap, $5,025 5m vol): REJECT, Bundles: 9 linked wallet cluster(s) hold 25.6% of supply (>20%) (V17)  
+  CA `FVzqGqRmr4UH1Fif6dewmwbJ1p4YUZCu8dcw4Efopump`
+- 14:14Z Mandy (MIGRATED, $306,056 mcap, $5,451 5m vol): SKIP, passed the checklist, but the brain was paced or paused  
   CA `2xCd5qHX5tW6pGUo7zfgHSSAnRjJwPA7Sz1Fu4fWcJjX`
-- 13:58Z PIPI (MIGRATED, $156,221 mcap, $20,682 5m vol): SKIP, passed the checklist, but the brain was paced or paused  
+- 14:14Z PIPI (DIP, $71,683 mcap, $22,744 5m vol): SKIP, passed the checklist, but the brain was paced or paused  
   CA `Bd7mSgkiBbMs6jGG2651KXGnUNqFW89u5gTEMieppump`
-- 13:58Z WIF (MIGRATED, $46,912 mcap, $58,132 5m vol): SKIP, passed the checklist, but the brain was paced or paused  
-  CA `DD9YaiEC1cyrztQ5aGSbwZZkRGxRm7Mh3Y7b2kfFpump`
-- 13:56Z PIPI (DIP, $563,731 mcap, $73,761 5m vol): REJECT, Dip with fading attention is a falling knife, not a dip (5m at 0.54x the hour's pace, under 0.6x)  
-  CA `6MKD1NkLvWRqdbFtqmgACBwUV5o6GJpZry8HkNgzpump`
+- 14:10Z DIGS (MIGRATED, $401,230 mcap, $2,866 5m vol): REJECT, Bundles: 10 linked wallet cluster(s) hold 100.0% of supply (>20%) (V17)  
+  CA `9QT8K685Hrae4k11dhGXirdtpfAaimExtyfwt8cPpump`
+- 14:10Z GTASZN (MIGRATED, $693,133 mcap, $4,866 5m vol): SKIP, passed the checklist, but the brain was paced or paused  
+  CA `A4jXnWk1rDRDth6HmDASi45c89n1AguTHivAQPTVpump`
+- 14:09Z 1 (MIGRATED, $689,034 mcap, $2,173 5m vol): SKIP, passed the checklist, but the brain was paced or paused  
+  CA `2bCCHQadi4QeHWPKG3w13siCyWWQPgkFtniouTqVpump`
 
 ## What its skips did next (last 48h)
 A skip "ran" if the coin reached the first target (1.5x) from the skip price before a 20% drop, "dumped" if the drop came first. Sampled every 10 min, followed 6h.
-- top 10 over 25%: blocked 80, ran 15, dumped 60, flat 3, open 2 (saving losses: keep it)
+- top 10 over 25%: blocked 81, ran 15, dumped 60, flat 3, open 3 (saving losses: keep it)
   - ran: bandana up to 1.83x  
     CA `2J8PNqveSc5HcK9mF1U8aXpYjiFYK4RuGuKUMXkKpump`
   - ran: PS5 up to 2.06x  
     CA `7SEGAjVRdv6H3d4CPBNPBL6yXJiUM1pLoECsovPbpump`
   - ran: BUFO up to 1.83x  
     CA `44gNPkTVKwfNf2fPBdwiPZrVVXLVYTkmBk5VdBzrpump`
-- falling knife (code): blocked 54, ran 8, dumped 42, flat 1, open 3 (saving losses: keep it)
+- falling knife (code): blocked 54, ran 7, dumped 42, flat 1, open 4 (saving losses: keep it)
   - ran: ACRUX up to 2.02x  
     CA `7Evw4uxTxLGGEFEvXLUNYyc1J7PnFk9EYwTUFagARUX`
   - ran: DACT up to 2.63x  
@@ -120,7 +120,7 @@ A skip "ran" if the coin reached the first target (1.5x) from the skip price bef
     CA `9JngoeaZHbV4f5EyRR3oDLNPH7VUGw1PYQC4s6j2pump`
   - ran: Leonida up to 1.51x  
     CA `9rbKkz2BDQBVgZmrHY6d7PTq2ge91gkpEyE4y9PPpump`
-- other: blocked 16, ran 6, dumped 8, flat 0, open 2 (mixed)
+- other: blocked 16, ran 6, dumped 10, flat 0, open 0 (mixed)
   - ran: QWENPAW up to 1.91x  
     CA `5xere1fCPjk8BzJCVdFHgkBVLZ4Fi7oTi5Qfor53pump`
   - ran: Calypso up to 2.99x  
@@ -187,11 +187,11 @@ Meta: the only theme with real 5m flow is a fresh-launch cluster of "Justice For
 ## Moving most in its scans, last 30 min (1h volume)
 - PIPI: $1,623,260 1h vol, $563,731 mcap, +47% 1h  
   CA `6MKD1NkLvWRqdbFtqmgACBwUV5o6GJpZry8HkNgzpump`
-- PIPI: $540,109 1h vol, $138,740 mcap, +127% 1h  
-  CA `Bd7mSgkiBbMs6jGG2651KXGnUNqFW89u5gTEMieppump`
 - ANTS: $504,337 1h vol, $8,664,217 mcap, -24% 1h  
   CA `ejrz94zR4A2ScS8LdvRaQih2xUxaE2ydreqUNKmpump`
-- OGTA: $266,972 1h vol, $1,013,970 mcap, +55% 1h  
-  CA `HXT1UpmDkHmphFDrs3JWR3WHpsnoueCyABArTo7Apump`
-- WIF: $150,691 1h vol, $71,991 mcap, +53% 1h  
+- PIPI: $360,901 1h vol, $78,312 mcap, -44% 1h  
+  CA `Bd7mSgkiBbMs6jGG2651KXGnUNqFW89u5gTEMieppump`
+- WIF: $247,924 1h vol, $17,938 mcap, -62% 1h  
   CA `DD9YaiEC1cyrztQ5aGSbwZZkRGxRm7Mh3Y7b2kfFpump`
+- Mandy: $114,890 1h vol, $307,172 mcap, +6% 1h  
+  CA `2xCd5qHX5tW6pGUo7zfgHSSAnRjJwPA7Sz1Fu4fWcJjX`
