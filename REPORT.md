@@ -1,13 +1,13 @@
 # Trencher live report
 
-Updated 2026-11-19T22:40:41Z (paper trading, never real money)
+Updated 2026-11-19T22:55:48Z (paper trading, never real money)
 
 - Equity: $74.23 (-25.8% vs $100 start)
 - Closed trades: 22, 3 wins
 - Fees paid: $14.78 (axiom $2.81, network $9.18, pool $2.66), plus $4.15 lost to slippage
 - New trades: WATCH-ONLY (scans and decides, buys nothing)
-- Brain: subscription, claude-haiku-5-5 for routine calls, claude-opus-5-5 for the daily review; 282 routine calls and 278 plan-limit hits in 48h
-- Watch log: 126 coins being followed, 2481 filed, 0 would-buys (6h follow, sampled every 2 min)
+- Brain: subscription, claude-haiku-5-5 for routine calls, claude-opus-5-5 for the daily review; 283 routine calls and 277 plan-limit hits in 48h
+- Watch log: 121 coins being followed, 2488 filed, 0 would-buys (6h follow, sampled every 2 min)
 
 ## Scorecard (after fees)
 - 22 closed, 3 won (14%), net $-25.79
@@ -73,9 +73,15 @@ Updated 2026-11-19T22:40:41Z (paper trading, never real money)
   CA `H4gHnZ3NCU7Z9XQwGX6YYJNyieGEW8pqwGRUcdSxpump`
 
 ## Last scan
-- 22:39Z: 7 coins, 7 with pairs, 0 passed the market filters, 0 researched
+- 22:55Z: 5 coins, 5 with pairs, 0 passed the market filters, 0 researched
 
 ## Coins it looked at, and why it passed
+- 22:43Z Mandy (MIGRATED, $137,203 mcap, $2,605 5m vol): PASS at conviction 3, PASS: the Mandy theme is fading and its 5m flow is at 0.13x pace, so the bottom-buy rule blocks it. Dead story, no catalyst. (V1, V13)  
+  CA `2xCd5qHX5tW6pGUo7zfgHSSAnRjJwPA7Sz1Fu4fWcJjX`
+- 22:43Z OGTA (MIGRATED, $1,011,704 mcap, $5,930 5m vol): PASS at conviction 3, PASS: OFFICIALGTA is a clean-holder coin on a fading GTA reskin meta, with 5m flow at 0.66x pace and $5.9k on the 5m. Blocker: flow below pace, then the bottom-buy theme gate. (V1, V6, V13)  
+  CA `7bCiddGLe5aM8HE2pigT9jsqkmC1HSPxyXN6GkHEpump`
+- 22:40Z FIONA (MIGRATED, $34,999 mcap, $3,256 5m vol): REJECT, Top 10 hold 25.5% ex-pool (>25%) (V13)  
+  CA `GJVKc1AZi7MMGPuht4kwLnZX9cJwLRBUXjEGUF6twpfx`
 - 22:34Z WASTED (DIP, $1,095,375 mcap, $2,606 5m vol): REJECT, Top 10 hold 27.5% ex-pool (>25%) (V13)  
   CA `GexThZHgaswpAQ7Fi8QrHFubjPimUNSYhJiAA7XZpump`
 - 22:32Z Player (FINAL_STRETCH, $15,351 mcap, $3,648 5m vol): PASS at conviction 3, PASS. Player is a 0.2-hour-old pump.fun coin with $3.6k of 5m volume, no live theme behind it, and a website that says rewards are off-chain. Blocker: thin 5m volume and no narrative. (V1, V6)  
@@ -90,30 +96,24 @@ Updated 2026-11-19T22:40:41Z (paper trading, never real money)
   CA `H1jcPQwCX9VPiNGBUpQNJdGzZEHiisFSs1WS4fi6pump`
 - 22:28Z BUNCOIN (MIGRATED, $783,535 mcap, $281,100 5m vol): REJECT, RugCheck danger: Single holder ownership 48.41%  
   CA `mXcP1bqxM8Tx6BQuFwTHqzE3m7JVMZspmxZ7pjQpump`
-- 22:27Z Mandy (MIGRATED, $112,543 mcap, $3,813 5m vol): SKIP, passed the checklist, but the brain was paced or paused  
-  CA `2xCd5qHX5tW6pGUo7zfgHSSAnRjJwPA7Sz1Fu4fWcJjX`
-- 22:23Z VINTEL (MIGRATED, $73,727 mcap, $19,041 5m vol): SKIP, passed the checklist, but the brain was paced or paused  
-  CA `H1jcPQwCX9VPiNGBUpQNJdGzZEHiisFSs1WS4fi6pump`
-- 22:21Z Mandy (MIGRATED, $105,016 mcap, $2,448 5m vol): SKIP, passed the checklist, but the brain was paced or paused  
-  CA `2xCd5qHX5tW6pGUo7zfgHSSAnRjJwPA7Sz1Fu4fWcJjX`
 
 ## What its skips did next (last 48h)
 A skip "ran" if the coin reached the first target (1.5x) from the skip price before a 20% drop, "dumped" if the drop came first. Sampled every 10 min, followed 6h.
-- top 10 over 25%: blocked 75, ran 14, dumped 56, flat 3, open 2 (saving losses: keep it)
+- top 10 over 25%: blocked 76, ran 14, dumped 57, flat 3, open 2 (saving losses: keep it)
   - ran: BUFO up to 1.83x  
     CA `44gNPkTVKwfNf2fPBdwiPZrVVXLVYTkmBk5VdBzrpump`
   - ran: clawd up to 2.1x  
     CA `85osSLFjprTGWRkrXMTGjsmaWR2pjUb38AiJzr16pump`
   - ran: SHARK up to 1.68x  
     CA `3yxsNufZSWNrvMXw8gwCJFCuUkuTDsb1a55aR7evpump`
-- falling knife (code): blocked 54, ran 7, dumped 44, flat 0, open 3 (saving losses: keep it)
+- falling knife (code): blocked 53, ran 7, dumped 44, flat 0, open 2 (saving losses: keep it)
   - ran: DACT up to 2.63x  
     CA `GZUGmAtuSx9755C3W1CLDVtA7MZQ8QWF1XjhjEbjpump`
   - ran: Apocrycoin up to 1.54x  
     CA `79rE2ac8JhN3U12QLhymgDmCTiwBN1d4maTcK1fhpump`
   - ran: APCY up to 1.74x  
     CA `7fZK84wYShNUXKJnBkfXkeu5h2edduNkZV3p2B2LBCgC`
-- RugCheck danger: blocked 31, ran 4, dumped 23, flat 2, open 2 (saving losses: keep it)
+- RugCheck danger: blocked 31, ran 4, dumped 24, flat 2, open 1 (saving losses: keep it)
   - ran: CATCOIN up to 2.06x  
     CA `9JngoeaZHbV4f5EyRR3oDLNPH7VUGw1PYQC4s6j2pump`
   - ran: Leonida up to 1.51x  
@@ -145,8 +145,8 @@ A skip "ran" if the coin reached the first target (1.5x) from the skip price bef
   - ran: Snapmatic up to 1.68x  
     CA `4S8pUKWKUAtQKfE5qokSjszWDp1RqQWnom8jNYSWpump`
 - hack story (owner rule): blocked 3, ran 0, dumped 0, flat 3, open 0 (too few played out to judge)
+- flow below pace: blocked 2, ran 0, dumped 0, flat 0, open 2 (too few played out to judge)
 - falling knife / no higher low: blocked 1, ran 0, dumped 0, flat 0, open 1 (too few played out to judge)
-- too new / sniping: blocked 1, ran 0, dumped 0, flat 0, open 1 (too few played out to judge)
 
 ## Daily review (2026-11-16, claude-opus-5-5)
 Nothing shows a positive edge after costs. Over 309 settled coins, every setup lost money net: FINAL_STRETCH -7.2%, DIP -7.4%, MIGRATED -13.5%. Costs alone averaged 9.8% per round trip. Before costs, FINAL_STRETCH made about +2.9% and DIP about +1.8%, but at n=46 and n=54 the noise is roughly ±4–5 points, so neither is different from zero. With a 1.5x / -20% plan and ~10% costs, you need about 43% of coins to reach 1.5x before -20% just to break even. The best group (FINAL_STRETCH) managed 32.6%, and the error bar on that is about ±14 points. The routine model gave zero would-buys, so the "did its buys beat its passes" question can't be answered. It passed on all 164 coins it reviewed. Those coins averaged -11.7% net, about the same as the checklist rejects at -11.3%, so passing on everything was roughly right this day, even though it missed LMAO, Marvin and WIGGLES.
@@ -191,9 +191,9 @@ Meta: animal and meme-character launches on fresh PumpSwap pairs are where the b
   CA `B34nXKzCgsJb9ChLuSHPRpXLE3WFSWyeT8Cqkzzmpump`
 - BUNCOIN: $1,598,970 1h vol, $783,535 mcap, +748% 1h  
   CA `mXcP1bqxM8Tx6BQuFwTHqzE3m7JVMZspmxZ7pjQpump`
-- FIONA: $818,376 1h vol, $96,717 mcap, +258% 1h  
-  CA `3hcJWcNvWJu3QBq6PiC8xavYQJJwBnr6adhdpHXppump`
-- DAINU: $281,908 1h vol, $538,468 mcap, -6% 1h  
-  CA `82u71wqQSa4NmD1UTTDwKyh5EUm3xe9pMp4UZXhFpump`
+- FIONA: $171,687 1h vol, $74,607 mcap, +148% 1h  
+  CA `8sCLrDo6tS9zQoC1qsb13KhGUHEWyLx3j7JebBYnpump`
 - VINTEL: $146,023 1h vol, $79,691 mcap, +176% 1h  
   CA `H1jcPQwCX9VPiNGBUpQNJdGzZEHiisFSs1WS4fi6pump`
+- MANDY: $126,352 1h vol, $1,274,116 mcap, +63% 1h  
+  CA `GQngHP8P6s45MxWnU7JsocfV2HjPQdJZmCEAYKpBpump`
