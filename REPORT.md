@@ -1,13 +1,13 @@
 # Trencher live report
 
-Updated 2026-11-19T02:29:19Z (paper trading, never real money)
+Updated 2026-11-19T02:44:21Z (paper trading, never real money)
 
 - Equity: $74.23 (-25.8% vs $100 start)
 - Closed trades: 22, 3 wins
 - Fees paid: $14.78 (axiom $2.81, network $9.18, pool $2.66), plus $4.15 lost to slippage
 - New trades: WATCH-ONLY (scans and decides, buys nothing)
-- Brain: subscription, claude-haiku-5-5 for routine calls, claude-opus-5-5 for the daily review; 343 routine calls and 223 plan-limit hits in 48h
-- Watch log: 144 coins being followed, 2093 filed, 0 would-buys (6h follow, sampled every 2 min)
+- Brain: subscription, claude-haiku-5-5 for routine calls, claude-opus-5-5 for the daily review; 340 routine calls and 224 plan-limit hits in 48h
+- Watch log: 141 coins being followed, 2100 filed, 0 would-buys (6h follow, sampled every 2 min)
 
 ## Scorecard (after fees)
 - 22 closed, 3 won (14%), net $-25.79
@@ -73,29 +73,29 @@ Updated 2026-11-19T02:29:19Z (paper trading, never real money)
   CA `H4gHnZ3NCU7Z9XQwGX6YYJNyieGEW8pqwGRUcdSxpump`
 
 ## Last scan
-- 02:28Z: 4 coins, 4 with pairs, 3 passed the market filters, 3 researched
+- 02:44Z: 2 coins, 2 with pairs, 1 passed the market filters, 1 researched
 
 ## Coins it looked at, and why it passed
-- 02:29Z Leonida (MIGRATED, $1,775,706 mcap, $3,726 5m vol): SKIP, passed the checklist, but the brain was paced or paused  
+- 02:44Z ANT (MIGRATED, $326,087 mcap, $7,121 5m vol): SKIP, passed the checklist, but the brain was paced or paused  
+  CA `EadD2LMp6EbH9PrbXUFWcrZKMhoKVrZN1gpwRhH5pump`
+- 02:40Z NASDUCK (DIP, $158,346 mcap, $6,656 5m vol): SKIP, passed the checklist, but the brain was paced or paused  
+  CA `7qgvmEdQSp5xhAss5efBRgCgywe1PRGMgb9ZAJsBpump`
+- 02:39Z Leonida (MIGRATED, $1,543,227 mcap, $3,429 5m vol): SKIP, passed the checklist, but the brain was paced or paused  
   CA `9rbKkz2BDQBVgZmrHY6d7PTq2ge91gkpEyE4y9PPpump`
-- 02:29Z GT (FINAL_STRETCH, $17,220 mcap, $11,848 5m vol): SKIP, passed the checklist, but the brain was paced or paused  
+- 02:39Z GT (FINAL_STRETCH, $22,677 mcap, $4,820 5m vol): SKIP, passed the checklist, but the brain was paced or paused  
   CA `2WJdJv2kXo7uXXrmoWboe43GP2uBhigc3JxCDZQ7pump`
-- 02:29Z GMGM (FINAL_STRETCH, $18,247 mcap, $12,820 5m vol): SKIP, passed the checklist, but the brain was paced or paused  
-  CA `QDsTBqfFEt4yrpqfU7edcc9E6u7nHrbz15eqY8jpump`
-- 02:27Z ANT (MIGRATED, $409,454 mcap, $13,333 5m vol): SKIP, passed the checklist, but the brain was paced or paused  
+- 02:39Z MAGACITY (MIGRATED, $130,131 mcap, $21,264 5m vol): SKIP, passed the checklist, but the brain was paced or paused  
+  CA `8zHjeXjf5zs3v9cQ116GGfbTqAP6BYkkucNF1f8Hpump`
+- 02:38Z GATO (MIGRATED, $3,800,827 mcap, $2,123 5m vol): REJECT, Dev holds 2.7% (>1%) (V13, V17)  
+  CA `HsprHxBRgiVaQdRf3TnKNuZZtaX9JUSPgMFdAkk6pump`
+- 02:38Z LUCIA (DIP, $101,093 mcap, $5,818 5m vol): REJECT, Dip with fading attention is a falling knife, not a dip (5m at 0.50x the hour's pace, under 0.6x)  
+  CA `3ZhsX6y2aEYoiwRFCu7mtwuMWSFH654dhyR2aGRVpump`
+- 02:38Z ANT (MIGRATED, $366,471 mcap, $5,679 5m vol): SKIP, passed the checklist, but the brain was paced or paused  
   CA `EadD2LMp6EbH9PrbXUFWcrZKMhoKVrZN1gpwRhH5pump`
-- 02:27Z DCTC (DIP, $70,392 mcap, $18,268 5m vol): REJECT, Dip with fading attention is a falling knife, not a dip (5m at 0.46x the hour's pace, under 0.6x)  
-  CA `BM5wUne5TCtqVn6QTwrQCZ6LAgY7pgVr7KSMzV1Gpump`
-- 02:26Z Cowboy (FINAL_STRETCH, $20,131 mcap, $21,479 5m vol): SKIP, passed the checklist, but the brain was paced or paused  
-  CA `7gk1EFqwQG9g2oKNFjZbVKP1txjJJgfDACvxXYMKpump`
-- 02:23Z Leonida (MIGRATED, $1,801,138 mcap, $4,322 5m vol): SKIP, passed the checklist, but the brain was paced or paused  
+- 02:34Z Leonida (MIGRATED, $1,650,589 mcap, $3,710 5m vol): SKIP, passed the checklist, but the brain was paced or paused  
   CA `9rbKkz2BDQBVgZmrHY6d7PTq2ge91gkpEyE4y9PPpump`
-- 02:23Z GMGM (FINAL_STRETCH, $17,351 mcap, $23,616 5m vol): SKIP, passed the checklist, but the brain was paced or paused  
-  CA `QDsTBqfFEt4yrpqfU7edcc9E6u7nHrbz15eqY8jpump`
-- 02:22Z ANT (MIGRATED, $423,064 mcap, $6,949 5m vol): SKIP, passed the checklist, but the brain was paced or paused  
-  CA `EadD2LMp6EbH9PrbXUFWcrZKMhoKVrZN1gpwRhH5pump`
-- 02:22Z DCTC (DIP, $68,179 mcap, $87,669 5m vol): SKIP, passed the checklist, but the brain was paced or paused  
-  CA `BM5wUne5TCtqVn6QTwrQCZ6LAgY7pgVr7KSMzV1Gpump`
+- 02:34Z GT (FINAL_STRETCH, $20,885 mcap, $5,490 5m vol): SKIP, passed the checklist, but the brain was paced or paused  
+  CA `2WJdJv2kXo7uXXrmoWboe43GP2uBhigc3JxCDZQ7pump`
 
 ## What its skips did next (last 48h)
 A skip "ran" if the coin reached the first target (1.5x) from the skip price before a 20% drop, "dumped" if the drop came first. Sampled every 10 min, followed 6h.
@@ -106,18 +106,20 @@ A skip "ran" if the coin reached the first target (1.5x) from the skip price bef
     CA `7SEGAjVRdv6H3d4CPBNPBL6yXJiUM1pLoECsovPbpump`
   - ran: BUFO up to 1.83x  
     CA `44gNPkTVKwfNf2fPBdwiPZrVVXLVYTkmBk5VdBzrpump`
-- falling knife (code): blocked 50, ran 9, dumped 36, flat 1, open 4 (saving losses: keep it)
+- falling knife (code): blocked 50, ran 9, dumped 38, flat 1, open 2 (saving losses: keep it)
   - ran: LEOSTAR up to 1.53x  
     CA `2cMcMEX3Eqo86tUrVe5dgHp5GZNwqQ6crqm22UeZpump`
   - ran: KATIA up to 2.01x  
     CA `9a5uUXxa7LzHkT6YUikttpQsUZm4Etw8qhd2HP7xpump`
   - ran: ACRUX up to 2.02x  
     CA `7Evw4uxTxLGGEFEvXLUNYyc1J7PnFk9EYwTUFagARUX`
-- RugCheck danger: blocked 31, ran 2, dumped 26, flat 2, open 1 (saving losses: keep it)
+- RugCheck danger: blocked 31, ran 3, dumped 26, flat 2, open 0 (saving losses: keep it)
   - ran: VICEX up to 1.84x  
     CA `2R4u7VwRhu6b8Em9j31n9TSnx3njFqD47KeZKDuppump`
   - ran: Juan up to 1.63x  
     CA `etnUoipCj19rGdyKSs7qi9Byp9eGcAUTAq5EQY5pump`
+  - ran: Founder up to 1.69x  
+    CA `8HXsCMy8ma8QP2yVZXG5SZYyaTZw5AUrUDha1G4upump`
 - thin 5m volume: blocked 18, ran 4, dumped 7, flat 5, open 2 (mixed)
   - ran: LEOSTAR up to 1.53x  
     CA `2cMcMEX3Eqo86tUrVe5dgHp5GZNwqQ6crqm22UeZpump`
@@ -205,9 +207,9 @@ Meta: the only theme with real 5m flow is a fresh-launch cluster of "Justice For
   CA `64Uf4fkAWepSjBF8QKWdftHjtgKb2FG6gZsgmx6Fpump`
 - DCTC: $481,787 1h vol, $70,392 mcap, +48% 1h  
   CA `BM5wUne5TCtqVn6QTwrQCZ6LAgY7pgVr7KSMzV1Gpump`
-- Mandy: $361,233 1h vol, $1,381 mcap, -97% 1h  
-  CA `FrW3hfF9ViuMcsTMq4zZDiTKjuT7rZwX3v87qmqYpump`
-- USDC: $340,215 1h vol, $68,290,874,163 mcap, -0% 1h  
+- MAGACITY: $454,774 1h vol, $139,665 mcap, +222% 1h  
+  CA `8zHjeXjf5zs3v9cQ116GGfbTqAP6BYkkucNF1f8Hpump`
+- USDC: $299,641 1h vol, $68,347,044,337 mcap, +0% 1h  
   CA `EPjFWdd5AufqSSqeM2qN1xzybapC8G4wEGGkZwyTDt1v`
-- MAGA: $309,520 1h vol, $6,831 mcap, -85% 1h  
-  CA `3RwzNMGG5cehiJ3cQpLLBTH8VZizsz88EyDk6spSpump`
+- DCTC: $226,282 1h vol, $144,563 mcap, +200% 1h  
+  CA `47f8bEDWs6VDpnnmxegyL4A3GbBVVcssrMQeBjPvpump`
