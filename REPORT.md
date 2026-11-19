@@ -1,13 +1,13 @@
 # Trencher live report
 
-Updated 2026-11-19T05:15:40Z (paper trading, never real money)
+Updated 2026-11-19T05:30:44Z (paper trading, never real money)
 
 - Equity: $74.23 (-25.8% vs $100 start)
 - Closed trades: 22, 3 wins
 - Fees paid: $14.78 (axiom $2.81, network $9.18, pool $2.66), plus $4.15 lost to slippage
 - New trades: WATCH-ONLY (scans and decides, buys nothing)
-- Brain: subscription, claude-haiku-5-5 for routine calls, claude-opus-5-5 for the daily review; 318 routine calls and 239 plan-limit hits in 48h
-- Watch log: 125 coins being followed, 2165 filed, 0 would-buys (6h follow, sampled every 2 min)
+- Brain: subscription, claude-haiku-5-5 for routine calls, claude-opus-5-5 for the daily review; 316 routine calls and 241 plan-limit hits in 48h
+- Watch log: 127 coins being followed, 2171 filed, 0 would-buys (6h follow, sampled every 2 min)
 
 ## Scorecard (after fees)
 - 22 closed, 3 won (14%), net $-25.79
@@ -73,57 +73,57 @@ Updated 2026-11-19T05:15:40Z (paper trading, never real money)
   CA `H4gHnZ3NCU7Z9XQwGX6YYJNyieGEW8pqwGRUcdSxpump`
 
 ## Last scan
-- 05:15Z: 4 coins, 4 with pairs, 1 passed the market filters, 1 researched
+- 05:30Z: 6 coins, 6 with pairs, 1 passed the market filters, 1 researched
 
 ## Coins it looked at, and why it passed
-- 05:15Z GTASZN (MIGRATED, $1,220,952 mcap, $7,325 5m vol): SKIP, passed the checklist, but the brain was paced or paused  
-  CA `A4jXnWk1rDRDth6HmDASi45c89n1AguTHivAQPTVpump`
-- 05:14Z Leonida (MIGRATED, $1,936,748 mcap, $3,262 5m vol): SKIP, passed the checklist, but the brain was paced or paused  
+- 05:30Z Leonida (MIGRATED, $1,802,059 mcap, $4,480 5m vol): SKIP, passed the checklist, but the brain was paced or paused  
   CA `9rbKkz2BDQBVgZmrHY6d7PTq2ge91gkpEyE4y9PPpump`
-- 05:13Z ANT (DIP, $268,570 mcap, $3,184 5m vol): SKIP, passed the checklist, but the brain was paced or paused  
+- 05:29Z AFTERGTA6 (FINAL_STRETCH, $26,867 mcap, $7,512 5m vol): SKIP, passed the checklist, but the brain was paced or paused  
+  CA `FEaD7gWYkkuZMWtsgThbsjTZqFeNHu3L8W9ze6mNpump`
+- 05:29Z ANT (DIP, $258,350 mcap, $9,137 5m vol): SKIP, passed the checklist, but the brain was paced or paused  
   CA `EadD2LMp6EbH9PrbXUFWcrZKMhoKVrZN1gpwRhH5pump`
-- 05:12Z MAGACITY (MIGRATED, $49,437 mcap, $6,702 5m vol): SKIP, passed the checklist, but the brain was paced or paused  
-  CA `8zHjeXjf5zs3v9cQ116GGfbTqAP6BYkkucNF1f8Hpump`
-- 05:12Z NASDUCK (DIP, $153,782 mcap, $6,598 5m vol): SKIP, passed the checklist, but the brain was paced or paused  
-  CA `7qgvmEdQSp5xhAss5efBRgCgywe1PRGMgb9ZAJsBpump`
-- 05:10Z GTASZN (MIGRATED, $1,254,796 mcap, $4,018 5m vol): SKIP, passed the checklist, but the brain was paced or paused  
+- 05:29Z CATCOIN (FINAL_STRETCH, $19,552 mcap, $46,778 5m vol): REJECT, RugCheck danger: Creator history of rugged tokens  
+  CA `9JngoeaZHbV4f5EyRR3oDLNPH7VUGw1PYQC4s6j2pump`
+- 05:27Z GATO (MIGRATED, $3,367,424 mcap, $2,994 5m vol): REJECT, Dev holds 2.7% (>1%) (V13, V17)  
+  CA `HsprHxBRgiVaQdRf3TnKNuZZtaX9JUSPgMFdAkk6pump`
+- 05:25Z GOODTIME (MIGRATED, $98,235 mcap, $3,227 5m vol): REJECT, Bundles: 8 linked wallet cluster(s) hold 100.0% of supply (>20%) (V17)  
+  CA `Eyo1o3QYKQwdvP6UtK9dQLTZj2BBtoJdN4tMWB2Dpump`
+- 05:25Z GTASZN (MIGRATED, $1,352,328 mcap, $3,638 5m vol): SKIP, passed the checklist, but the brain was paced or paused  
   CA `A4jXnWk1rDRDth6HmDASi45c89n1AguTHivAQPTVpump`
-- 05:09Z Leonida (MIGRATED, $2,014,822 mcap, $5,751 5m vol): SKIP, passed the checklist, but the brain was paced or paused  
+- 05:25Z MANDY (MIGRATED, $110,216 mcap, $6,713 5m vol): SKIP, passed the checklist, but the brain was paced or paused  
+  CA `EkTfN4Pb7K3NXzxsbzkn3AA4MGbsdTniFJ3G2RsVpump`
+- 05:24Z Leonida (MIGRATED, $1,845,446 mcap, $4,873 5m vol): SKIP, passed the checklist, but the brain was paced or paused  
   CA `9rbKkz2BDQBVgZmrHY6d7PTq2ge91gkpEyE4y9PPpump`
-- 05:07Z MAGACITY (DIP, $56,557 mcap, $4,123 5m vol): SKIP, passed the checklist, but the brain was paced or paused  
-  CA `8zHjeXjf5zs3v9cQ116GGfbTqAP6BYkkucNF1f8Hpump`
-- 05:06Z NASDUCK (MIGRATED, $225,239 mcap, $13,666 5m vol): SKIP, passed the checklist, but the brain was paced or paused  
-  CA `7qgvmEdQSp5xhAss5efBRgCgywe1PRGMgb9ZAJsBpump`
-- 05:06Z BUCKME (MIGRATED, $2,213,151 mcap, $275,858 5m vol): REJECT, RugCheck danger: Single holder ownership 49.28%  
-  CA `DEgAkPNxz3dtMsesD2FDkNA2S6sch5YWfGUDT7R2pump`
+- 05:23Z AFTERGTA6 (FINAL_STRETCH, $22,171 mcap, $3,463 5m vol): SKIP, passed the checklist, but the brain was paced or paused  
+  CA `FEaD7gWYkkuZMWtsgThbsjTZqFeNHu3L8W9ze6mNpump`
 
 ## What its skips did next (last 48h)
 A skip "ran" if the coin reached the first target (1.5x) from the skip price before a 20% drop, "dumped" if the drop came first. Sampled every 10 min, followed 6h.
-- top 10 over 25%: blocked 76, ran 15, dumped 56, flat 2, open 3 (saving losses: keep it)
+- top 10 over 25%: blocked 76, ran 15, dumped 57, flat 2, open 2 (saving losses: keep it)
   - ran: bandana up to 1.83x  
     CA `2J8PNqveSc5HcK9mF1U8aXpYjiFYK4RuGuKUMXkKpump`
   - ran: PS5 up to 2.06x  
     CA `7SEGAjVRdv6H3d4CPBNPBL6yXJiUM1pLoECsovPbpump`
   - ran: BUFO up to 1.83x  
     CA `44gNPkTVKwfNf2fPBdwiPZrVVXLVYTkmBk5VdBzrpump`
-- falling knife (code): blocked 51, ran 9, dumped 39, flat 1, open 2 (saving losses: keep it)
+- falling knife (code): blocked 51, ran 10, dumped 39, flat 1, open 1 (saving losses: keep it)
   - ran: LEOSTAR up to 1.53x  
     CA `2cMcMEX3Eqo86tUrVe5dgHp5GZNwqQ6crqm22UeZpump`
   - ran: KATIA up to 2.01x  
     CA `9a5uUXxa7LzHkT6YUikttpQsUZm4Etw8qhd2HP7xpump`
   - ran: ACRUX up to 2.02x  
     CA `7Evw4uxTxLGGEFEvXLUNYyc1J7PnFk9EYwTUFagARUX`
-- RugCheck danger: blocked 31, ran 1, dumped 26, flat 2, open 2 (saving losses: keep it)
+- RugCheck danger: blocked 32, ran 1, dumped 28, flat 2, open 1 (saving losses: keep it)
   - ran: Juan up to 1.63x  
     CA `etnUoipCj19rGdyKSs7qi9Byp9eGcAUTAq5EQY5pump`
-- thin 5m volume: blocked 16, ran 3, dumped 7, flat 5, open 1 (saving losses: keep it)
+- thin 5m volume: blocked 15, ran 3, dumped 7, flat 4, open 1 (saving losses: keep it)
   - ran: LEOSTAR up to 1.53x  
     CA `2cMcMEX3Eqo86tUrVe5dgHp5GZNwqQ6crqm22UeZpump`
   - ran: Sniffer up to 1.56x  
     CA `EMJe37WNwbuVBVbF9iJshdiag5DjYhPG1ZELEJBWpump`
   - ran: Snapmatic up to 1.68x  
     CA `4S8pUKWKUAtQKfE5qokSjszWDp1RqQWnom8jNYSWpump`
-- dev share over 1%: blocked 12, ran 2, dumped 8, flat 0, open 2 (saving losses: keep it)
+- dev share over 1%: blocked 12, ran 2, dumped 9, flat 0, open 1 (saving losses: keep it)
   - ran: GTAMAS up to 2.22x  
     CA `8nUH7dwgagpMvtQnsRRMzRtUrHdv2sJiuQXABQpUpump`
   - ran: TTP up to 1.53x  
@@ -142,16 +142,16 @@ A skip "ran" if the coin reached the first target (1.5x) from the skip price bef
     CA `9a5uUXxa7LzHkT6YUikttpQsUZm4Etw8qhd2HP7xpump`
   - ran: VI up to 1.56x  
     CA `HricrxBN3QXC3SN5VLtNhaEzoGrYea5ZtaTxQDfKSTNK`
-- flow below pace: blocked 6, ran 3, dumped 1, flat 2, open 0 (cost more winners than it saved: loosen it)
+- falling knife / no higher low: blocked 6, ran 1, dumped 4, flat 1, open 0 (saving losses: keep it)
+  - ran: LEOSTAR up to 1.53x  
+    CA `2cMcMEX3Eqo86tUrVe5dgHp5GZNwqQ6crqm22UeZpump`
+- flow below pace: blocked 5, ran 3, dumped 1, flat 1, open 0 (cost more winners than it saved: loosen it)
   - ran: LEOSTAR up to 1.53x  
     CA `2cMcMEX3Eqo86tUrVe5dgHp5GZNwqQ6crqm22UeZpump`
   - ran: FAILED up to 1.57x  
     CA `CDMbeCvHyAiypmiqHN6a1N59MeXizQooKfEJMPZzpump`
   - ran: RYANAIR up to 1.67x  
     CA `9WcYJegbsMSzvtFUEGmJoGhZjCGBEcKqXpdkNDoMR5pN`
-- falling knife / no higher low: blocked 6, ran 1, dumped 4, flat 1, open 0 (saving losses: keep it)
-  - ran: LEOSTAR up to 1.53x  
-    CA `2cMcMEX3Eqo86tUrVe5dgHp5GZNwqQ6crqm22UeZpump`
 - too new / sniping: blocked 5, ran 2, dumped 3, flat 0, open 0 (mixed)
   - ran: gamercat up to 1.74x  
     CA `8rkatUGY8nJPpSLa14vFEBCeuGy9kpfYkLos1wsJLcrg`
@@ -199,11 +199,11 @@ Meta: the only theme with real 5m flow is a fresh-launch cluster of "Justice For
 ## Moving most in its scans, last 30 min (1h volume)
 - BUCKME: $2,013,809 1h vol, $2,351,458 mcap, +560% 1h  
   CA `DEgAkPNxz3dtMsesD2FDkNA2S6sch5YWfGUDT7R2pump`
-- USDC: $271,792 1h vol, $68,221,478,331 mcap, +0% 1h  
+- MANDY: $857,570 1h vol, $110,216 mcap, +169% 1h  
+  CA `EkTfN4Pb7K3NXzxsbzkn3AA4MGbsdTniFJ3G2RsVpump`
+- USDC: $278,244 1h vol, $68,867,863,966 mcap, -0% 1h  
   CA `EPjFWdd5AufqSSqeM2qN1xzybapC8G4wEGGkZwyTDt1v`
-- GTASZN: $93,442 1h vol, $1,220,952 mcap, -26% 1h  
-  CA `A4jXnWk1rDRDth6HmDASi45c89n1AguTHivAQPTVpump`
-- NASDUCK: $92,697 1h vol, $149,587 mcap, -15% 1h  
+- NASDUCK: $97,561 1h vol, $147,421 mcap, -3% 1h  
   CA `7qgvmEdQSp5xhAss5efBRgCgywe1PRGMgb9ZAJsBpump`
-- MAGACITY: $80,104 1h vol, $49,437 mcap, -21% 1h  
-  CA `8zHjeXjf5zs3v9cQ116GGfbTqAP6BYkkucNF1f8Hpump`
+- princess: $84,468 1h vol, $13,746 mcap, +338% 1h  
+  CA `79AtKwmb6qDsb3VL2xNRB8jFYWemJ3gsdUmtRioxpump`
