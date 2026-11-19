@@ -1,13 +1,13 @@
 # Trencher live report
 
-Updated 2026-11-19T23:10:58Z (paper trading, never real money)
+Updated 2026-11-19T23:26:11Z (paper trading, never real money)
 
 - Equity: $74.23 (-25.8% vs $100 start)
 - Closed trades: 22, 3 wins
 - Fees paid: $14.78 (axiom $2.81, network $9.18, pool $2.66), plus $4.15 lost to slippage
 - New trades: WATCH-ONLY (scans and decides, buys nothing)
-- Brain: subscription, claude-haiku-5-5 for routine calls, claude-opus-5-5 for the daily review; 283 routine calls and 275 plan-limit hits in 48h
-- Watch log: 122 coins being followed, 2490 filed, 0 would-buys (6h follow, sampled every 2 min)
+- Brain: subscription, claude-haiku-5-5 for routine calls, claude-opus-5-5 for the daily review; 286 routine calls and 274 plan-limit hits in 48h
+- Watch log: 123 coins being followed, 2495 filed, 0 would-buys (6h follow, sampled every 2 min)
 
 ## Scorecard (after fees)
 - 22 closed, 3 won (14%), net $-25.79
@@ -73,9 +73,21 @@ Updated 2026-11-19T23:10:58Z (paper trading, never real money)
   CA `H4gHnZ3NCU7Z9XQwGX6YYJNyieGEW8pqwGRUcdSxpump`
 
 ## Last scan
-- 23:09Z: 2 coins, 2 with pairs, 0 passed the market filters, 0 researched
+- 23:25Z: 3 coins, 3 with pairs, 0 passed the market filters, 0 researched
 
 ## Coins it looked at, and why it passed
+- 23:25Z AI (MIGRATED, $73,257 mcap, $16,793 5m vol): PASS at conviction 3, PASS. Chasing a spike on a 16-minute-old migration, and it's the second-biggest "Apple Inu" in the field. Blockers: chasing spike, too new, target too close, split crowd. (V1, V6)  
+  CA `CV6DiAYvr9oGUrsH4qY565srzL5RT9BYj8np7qD6pump`
+- 23:25Z AI (MIGRATED, $420,243 mcap, $74,719 5m vol): PASS at conviction 3, PASS: Apple Inu is a 1h-old name-play that just spiked +1134% and is dumping (-17% on 5m) with flow under pace. No higher low, no breakout, no catalyst. Blocker: "no breakout" plus "flow below pace". (V1, V6)  
+  CA `8SacNb6sgiAcscRe4m915B6nL9XX55dk8FS7L532pump`
+- 23:16Z ANTS (DIP, $7,107,204 mcap, $3,440 5m vol): PASS at conviction 3, PASS. Clean Anthropic-meme leader with a DIP shape, but no printed higher low, 5m volume is $3.4k, and the first resistance is only 1.12x away. Blocker: "target too close," plus "no higher low" and "thin 5m volume." (V1, V6)  
+  CA `ejrz94zR4A2ScS8LdvRaQih2xUxaE2ydreqUNKmpump`
+- 23:16Z FIONA (DIP, $35,674 mcap, $3,437 5m vol): PASS at conviction 2, PASS: the FIONA leader is the other CA (3hcJ, $254k 1h vs $62k here). This is a copy in a fading hippo wave with no higher low and sellers in control. Blocker: "no higher low" (V1, V3, V6).  
+  CA `8sCLrDo6tS9zQoC1qsb13KhGUHEWyLx3j7JebBYnpump`
+- 23:15Z DIGS (MIGRATED, $310,133 mcap, $2,856 5m vol): REJECT, Bundles: 10 linked wallet cluster(s) hold 100.0% of supply (>20%) (V17)  
+  CA `9QT8K685Hrae4k11dhGXirdtpfAaimExtyfwt8cPpump`
+- 23:11Z HOGE (DIP, $793,762 mcap, $2,717 5m vol): REJECT, Bundles: 9 linked wallet cluster(s) hold 25.8% of supply (>20%) (V17)  
+  CA `FVzqGqRmr4UH1Fif6dewmwbJ1p4YUZCu8dcw4Efopump`
 - 23:09Z SI (FINAL_STRETCH, $23,224 mcap, $5,125 5m vol): PASS at conviction 2, PASS. Siri Inu is a FINAL_STRETCH pump that already spiked +531% on the hour, with 5m flow at 0.61x pace and no printed higher low. The buy is a chase, not a setup (V1, V6).  
   CA `4s38cgZJN4J39S2BQwCkcsJJ9ZGeJSjw8vK9wVtupump`
 - 23:03Z GATO (MIGRATED, $1,832,509 mcap, $6,046 5m vol): REJECT, Dev holds 2.7% (>1%) (V13, V17)  
@@ -84,29 +96,17 @@ Updated 2026-11-19T23:10:58Z (paper trading, never real money)
   CA `3Cc9wjDGyaqwdipFW1Ldydou8X5GJHfftHdyFrERpump`
 - 22:43Z Mandy (MIGRATED, $137,203 mcap, $2,605 5m vol): PASS at conviction 3, PASS: the Mandy theme is fading and its 5m flow is at 0.13x pace, so the bottom-buy rule blocks it. Dead story, no catalyst. (V1, V13)  
   CA `2xCd5qHX5tW6pGUo7zfgHSSAnRjJwPA7Sz1Fu4fWcJjX`
-- 22:43Z OGTA (MIGRATED, $1,011,704 mcap, $5,930 5m vol): PASS at conviction 3, PASS: OFFICIALGTA is a clean-holder coin on a fading GTA reskin meta, with 5m flow at 0.66x pace and $5.9k on the 5m. Blocker: flow below pace, then the bottom-buy theme gate. (V1, V6, V13)  
-  CA `7bCiddGLe5aM8HE2pigT9jsqkmC1HSPxyXN6GkHEpump`
-- 22:40Z FIONA (MIGRATED, $34,999 mcap, $3,256 5m vol): REJECT, Top 10 hold 25.5% ex-pool (>25%) (V13)  
-  CA `GJVKc1AZi7MMGPuht4kwLnZX9cJwLRBUXjEGUF6twpfx`
-- 22:34Z WASTED (DIP, $1,095,375 mcap, $2,606 5m vol): REJECT, Top 10 hold 27.5% ex-pool (>25%) (V13)  
-  CA `GexThZHgaswpAQ7Fi8QrHFubjPimUNSYhJiAA7XZpump`
-- 22:32Z Player (FINAL_STRETCH, $15,351 mcap, $3,648 5m vol): PASS at conviction 3, PASS. Player is a 0.2-hour-old pump.fun coin with $3.6k of 5m volume, no live theme behind it, and a website that says rewards are off-chain. Blocker: thin 5m volume and no narrative. (V1, V6)  
-  CA `81ZjCbykvWdPv4ciE2qyYmr4ryi9FrnySgr2bZR8pump`
-- 22:32Z FIONA (MIGRATED, $1,267,971 mcap, $111,851 5m vol): REJECT, Bundles: 5 linked wallet cluster(s) hold 24.0% of supply (>20%) (V17)  
-  CA `B34nXKzCgsJb9ChLuSHPRpXLE3WFSWyeT8Cqkzzmpump`
-- 22:30Z ANTS (DIP, $7,538,864 mcap, $2,177 5m vol): PASS at conviction 3, PASS: $7.5M cap, sellers 5 to 1 on 5m (17% buys), no printed higher low, and the IPO story is already out. Big cap, no room (V1, V6, V13).  
-  CA `ejrz94zR4A2ScS8LdvRaQih2xUxaE2ydreqUNKmpump`
 
 ## What its skips did next (last 48h)
 A skip "ran" if the coin reached the first target (1.5x) from the skip price before a 20% drop, "dumped" if the drop came first. Sampled every 10 min, followed 6h.
-- top 10 over 25%: blocked 74, ran 14, dumped 55, flat 3, open 2 (saving losses: keep it)
+- top 10 over 25%: blocked 73, ran 14, dumped 54, flat 3, open 2 (saving losses: keep it)
   - ran: BUFO up to 1.83x  
     CA `44gNPkTVKwfNf2fPBdwiPZrVVXLVYTkmBk5VdBzrpump`
   - ran: clawd up to 2.1x  
     CA `85osSLFjprTGWRkrXMTGjsmaWR2pjUb38AiJzr16pump`
   - ran: SHARK up to 1.68x  
     CA `3yxsNufZSWNrvMXw8gwCJFCuUkuTDsb1a55aR7evpump`
-- falling knife (code): blocked 53, ran 7, dumped 44, flat 0, open 2 (saving losses: keep it)
+- falling knife (code): blocked 53, ran 8, dumped 44, flat 0, open 1 (saving losses: keep it)
   - ran: DACT up to 2.63x  
     CA `GZUGmAtuSx9755C3W1CLDVtA7MZQ8QWF1XjhjEbjpump`
   - ran: Apocrycoin up to 1.54x  
@@ -134,7 +134,7 @@ A skip "ran" if the coin reached the first target (1.5x) from the skip price bef
     CA `Geee1viZh4HpVJFaHB8ev5BZNdtUR4Dy2PDS5iBB7cLz`
   - ran: CALICO up to 3.25x  
     CA `89GFxMWQ1r8cwTwRSgeQ9RaGPtUdmDLQgCsQZcrWpump`
-- bundles over the line: blocked 13, ran 3, dumped 6, flat 1, open 3 (saving losses: keep it)
+- bundles over the line: blocked 13, ran 3, dumped 5, flat 1, open 4 (mixed)
   - ran: BIG up to 1.93x  
     CA `34DXEU2ttEtBSb1TqGJm7izgvYTTkqKcCoiNWdPDpump`
   - ran: VI up to 1.56x  
@@ -144,9 +144,13 @@ A skip "ran" if the coin reached the first target (1.5x) from the skip price bef
 - thin 5m volume: blocked 10, ran 1, dumped 5, flat 3, open 1 (saving losses: keep it)
   - ran: Snapmatic up to 1.68x  
     CA `4S8pUKWKUAtQKfE5qokSjszWDp1RqQWnom8jNYSWpump`
+- flow below pace: blocked 4, ran 2, dumped 0, flat 0, open 2 (too few played out to judge)
+  - ran: OGTA up to 1.94x  
+    CA `7bCiddGLe5aM8HE2pigT9jsqkmC1HSPxyXN6GkHEpump`
+  - ran: SI up to 1.53x  
+    CA `4s38cgZJN4J39S2BQwCkcsJJ9ZGeJSjw8vK9wVtupump`
 - hack story (owner rule): blocked 3, ran 0, dumped 0, flat 3, open 0 (too few played out to judge)
-- flow below pace: blocked 3, ran 0, dumped 0, flat 0, open 3 (too few played out to judge)
-- falling knife / no higher low: blocked 1, ran 0, dumped 0, flat 0, open 1 (too few played out to judge)
+- falling knife / no higher low: blocked 2, ran 0, dumped 0, flat 0, open 2 (too few played out to judge)
 
 ## Daily review (2026-11-16, claude-opus-5-5)
 Nothing shows a positive edge after costs. Over 309 settled coins, every setup lost money net: FINAL_STRETCH -7.2%, DIP -7.4%, MIGRATED -13.5%. Costs alone averaged 9.8% per round trip. Before costs, FINAL_STRETCH made about +2.9% and DIP about +1.8%, but at n=46 and n=54 the noise is roughly ±4–5 points, so neither is different from zero. With a 1.5x / -20% plan and ~10% costs, you need about 43% of coins to reach 1.5x before -20% just to break even. The best group (FINAL_STRETCH) managed 32.6%, and the error bar on that is about ±14 points. The routine model gave zero would-buys, so the "did its buys beat its passes" question can't be answered. It passed on all 164 coins it reviewed. Those coins averaged -11.7% net, about the same as the checklist rejects at -11.3%, so passing on everything was roughly right this day, even though it missed LMAO, Marvin and WIGGLES.
@@ -187,13 +191,13 @@ Nothing shows a positive edge after costs. Over 309 settled coins, every setup l
 Meta is animal characters on fresh pump.fun and PumpSwap pairs: the Fiona cluster (four CAs in the movers), HIPPO, CHOMEL and HARAMBE, with most caps under $40k and 5m volume under $4k. The tops are already bleeding (3hcJ -76% in the hour, HIPPO -89%), so this is a copy wave fading after its first spike, not a runner yet. The GTA reskin theme is holding up at the top (OFFICIALGTA $953k, 68% buys, $7.6k 5m) and Mandy is still at $137k, while the Trump dinner theme is fading with $TRUMP at record lows. Name-play pumps like SI (+601% in an hour, $26k cap) are chasing on thin volume. Research only, no buys: GJVK Fiona ($36k, 55% buys, $3.8k 5m) to check original versus vamp, which fails the $10k 5m bar today, and OFFICIALGTA only if its 5m volume gets back past $10k. The crawler's numbers conflict with the scan (3hcJ at $79k here vs $16k in the scan, Mandy at $994k vs $137k, B34n absent from the scan), so I trust scan_movers and treat the "original Fiona" claim as unverified.
 
 ## Moving most in its scans, last 30 min (1h volume)
+- AI: $1,036,714 1h vol, $377,623 mcap, +1009% 1h  
+  CA `8SacNb6sgiAcscRe4m915B6nL9XX55dk8FS7L532pump`
 - FIONA: $254,876 1h vol, $16,293 mcap, -76% 1h  
   CA `3hcJWcNvWJu3QBq6PiC8xavYQJJwBnr6adhdpHXppump`
-- FIN: $183,814 1h vol, $10,493 mcap, +109% 1h  
+- FIN: $126,197 1h vol, $12,364 mcap, -38% 1h  
   CA `HpYT5BHv4nb8ZEXoc7YG5zLSqwtFx9nRtR3puAZ9pump`
-- OGTA: $110,309 1h vol, $953,423 mcap, -14% 1h  
-  CA `7bCiddGLe5aM8HE2pigT9jsqkmC1HSPxyXN6GkHEpump`
 - SI: $101,394 1h vol, $25,774 mcap, +601% 1h  
   CA `4s38cgZJN4J39S2BQwCkcsJJ9ZGeJSjw8vK9wVtupump`
-- DATITTY: $91,277 1h vol, $1,377 mcap, -99% 1h  
-  CA `7ZwcEsmBBUWshL3rpkgDchG6rhL1U9jHockwuzgZpump`
+- AI: $79,617 1h vol, $73,257 mcap, +141% 1h  
+  CA `CV6DiAYvr9oGUrsH4qY565srzL5RT9BYj8np7qD6pump`
