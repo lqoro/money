@@ -1,13 +1,13 @@
 # Trencher live report
 
-Updated 2026-11-19T22:55:48Z (paper trading, never real money)
+Updated 2026-11-19T23:10:58Z (paper trading, never real money)
 
 - Equity: $74.23 (-25.8% vs $100 start)
 - Closed trades: 22, 3 wins
 - Fees paid: $14.78 (axiom $2.81, network $9.18, pool $2.66), plus $4.15 lost to slippage
 - New trades: WATCH-ONLY (scans and decides, buys nothing)
-- Brain: subscription, claude-haiku-5-5 for routine calls, claude-opus-5-5 for the daily review; 283 routine calls and 277 plan-limit hits in 48h
-- Watch log: 121 coins being followed, 2488 filed, 0 would-buys (6h follow, sampled every 2 min)
+- Brain: subscription, claude-haiku-5-5 for routine calls, claude-opus-5-5 for the daily review; 283 routine calls and 275 plan-limit hits in 48h
+- Watch log: 122 coins being followed, 2490 filed, 0 would-buys (6h follow, sampled every 2 min)
 
 ## Scorecard (after fees)
 - 22 closed, 3 won (14%), net $-25.79
@@ -73,9 +73,15 @@ Updated 2026-11-19T22:55:48Z (paper trading, never real money)
   CA `H4gHnZ3NCU7Z9XQwGX6YYJNyieGEW8pqwGRUcdSxpump`
 
 ## Last scan
-- 22:55Z: 5 coins, 5 with pairs, 0 passed the market filters, 0 researched
+- 23:09Z: 2 coins, 2 with pairs, 0 passed the market filters, 0 researched
 
 ## Coins it looked at, and why it passed
+- 23:09Z SI (FINAL_STRETCH, $23,224 mcap, $5,125 5m vol): PASS at conviction 2, PASS. Siri Inu is a FINAL_STRETCH pump that already spiked +531% on the hour, with 5m flow at 0.61x pace and no printed higher low. The buy is a chase, not a setup (V1, V6).  
+  CA `4s38cgZJN4J39S2BQwCkcsJJ9ZGeJSjw8vK9wVtupump`
+- 23:03Z GATO (MIGRATED, $1,832,509 mcap, $6,046 5m vol): REJECT, Dev holds 2.7% (>1%) (V13, V17)  
+  CA `HsprHxBRgiVaQdRf3TnKNuZZtaX9JUSPgMFdAkk6pump`
+- 23:01Z RCTY (FINAL_STRETCH, $26,729 mcap, $2,170 5m vol): REJECT, RugCheck danger: Low Liquidity $2.89  
+  CA `3Cc9wjDGyaqwdipFW1Ldydou8X5GJHfftHdyFrERpump`
 - 22:43Z Mandy (MIGRATED, $137,203 mcap, $2,605 5m vol): PASS at conviction 3, PASS: the Mandy theme is fading and its 5m flow is at 0.13x pace, so the bottom-buy rule blocks it. Dead story, no catalyst. (V1, V13)  
   CA `2xCd5qHX5tW6pGUo7zfgHSSAnRjJwPA7Sz1Fu4fWcJjX`
 - 22:43Z OGTA (MIGRATED, $1,011,704 mcap, $5,930 5m vol): PASS at conviction 3, PASS: OFFICIALGTA is a clean-holder coin on a fading GTA reskin meta, with 5m flow at 0.66x pace and $5.9k on the 5m. Blocker: flow below pace, then the bottom-buy theme gate. (V1, V6, V13)  
@@ -90,16 +96,10 @@ Updated 2026-11-19T22:55:48Z (paper trading, never real money)
   CA `B34nXKzCgsJb9ChLuSHPRpXLE3WFSWyeT8Cqkzzmpump`
 - 22:30Z ANTS (DIP, $7,538,864 mcap, $2,177 5m vol): PASS at conviction 3, PASS: $7.5M cap, sellers 5 to 1 on 5m (17% buys), no printed higher low, and the IPO story is already out. Big cap, no room (V1, V6, V13).  
   CA `ejrz94zR4A2ScS8LdvRaQih2xUxaE2ydreqUNKmpump`
-- 22:29Z DIGS (MIGRATED, $347,238 mcap, $3,342 5m vol): REJECT, Bundles: 10 linked wallet cluster(s) hold 100.0% of supply (>20%) (V17)  
-  CA `9QT8K685Hrae4k11dhGXirdtpfAaimExtyfwt8cPpump`
-- 22:29Z VINTEL (MIGRATED, $88,398 mcap, $10,741 5m vol): PASS at conviction 2, PASS. Chasing a 90k peak at 1.9% off the high, 46 minutes old, flow at 0.9x pace, and a day-old "GTA VI intel AI" site with no code. Blockers: chasing, too new, flow below pace, LARP (V1, V6).  
-  CA `H1jcPQwCX9VPiNGBUpQNJdGzZEHiisFSs1WS4fi6pump`
-- 22:28Z BUNCOIN (MIGRATED, $783,535 mcap, $281,100 5m vol): REJECT, RugCheck danger: Single holder ownership 48.41%  
-  CA `mXcP1bqxM8Tx6BQuFwTHqzE3m7JVMZspmxZ7pjQpump`
 
 ## What its skips did next (last 48h)
 A skip "ran" if the coin reached the first target (1.5x) from the skip price before a 20% drop, "dumped" if the drop came first. Sampled every 10 min, followed 6h.
-- top 10 over 25%: blocked 76, ran 14, dumped 57, flat 3, open 2 (saving losses: keep it)
+- top 10 over 25%: blocked 74, ran 14, dumped 55, flat 3, open 2 (saving losses: keep it)
   - ran: BUFO up to 1.83x  
     CA `44gNPkTVKwfNf2fPBdwiPZrVVXLVYTkmBk5VdBzrpump`
   - ran: clawd up to 2.1x  
@@ -145,7 +145,7 @@ A skip "ran" if the coin reached the first target (1.5x) from the skip price bef
   - ran: Snapmatic up to 1.68x  
     CA `4S8pUKWKUAtQKfE5qokSjszWDp1RqQWnom8jNYSWpump`
 - hack story (owner rule): blocked 3, ran 0, dumped 0, flat 3, open 0 (too few played out to judge)
-- flow below pace: blocked 2, ran 0, dumped 0, flat 0, open 2 (too few played out to judge)
+- flow below pace: blocked 3, ran 0, dumped 0, flat 0, open 3 (too few played out to judge)
 - falling knife / no higher low: blocked 1, ran 0, dumped 0, flat 0, open 1 (too few played out to judge)
 
 ## Daily review (2026-11-16, claude-opus-5-5)
@@ -184,16 +184,16 @@ Nothing shows a positive edge after costs. Over 309 settled coins, every setup l
 - [2026-11-02 20:25] I expected Slingoor, a clean MIGRATED leader with $25k of 5m flow at pace and a 0.77 buy share, to retest its $408k high from $304k. It never went green (0.98x peak) and hit the -20% stop in 2 minutes, a -$2.86 probe. My own thesis admitted there was no printed higher low after a peak only 6 minutes old, so this confirms the money-shape rule: buy share and flow are not structure (V1, V6). Next time a MIGRATED pullback with no higher low above the hourly low is a PASS with blocker "no higher low", not a probe. This is one loss, so it adds no new ban beyond the rule I already have.
 
 ## Meta right now
-Meta: animal and meme-character launches on fresh PumpSwap pairs are where the buyers are right now. The Fiona the Hippo cluster is rising: five CAs under about an hour old, 52-67% buys on most, $337k of 5m volume on the biggest (B34nXKzC..., $758k cap), and the newest (8sCL..., $58k cap, $71k 5m, 67% buys) is the one to check for copies. Mandy and the GTA reskins are fading: Jason's ex Mandy ($994k cap) is at 12% buys on $13k 5m, and OFFICIALGTA ($937k cap) is -22% on $4k 5m, so both are passes. The older dog and animal names (DIGS, LOOSY) are flat to red, so they are not setups. Research only, no buys yet: the original Fiona by cap and volume (B34n, but it is +2328% on the hour, so it only qualifies on a dip that holds volume), and 3hcJ ($79k cap, $40k 5m, 60% buys) as a second candidate to test for vamp status. The crawler's "Justice For So You Are", GROKIA and BLOB claims don't appear in the scan data, so I'm discarding them, and conviction stays low until holder, dev and bundle checks come back clean.
+Meta is animal characters on fresh pump.fun and PumpSwap pairs: the Fiona cluster (four CAs in the movers), HIPPO, CHOMEL and HARAMBE, with most caps under $40k and 5m volume under $4k. The tops are already bleeding (3hcJ -76% in the hour, HIPPO -89%), so this is a copy wave fading after its first spike, not a runner yet. The GTA reskin theme is holding up at the top (OFFICIALGTA $953k, 68% buys, $7.6k 5m) and Mandy is still at $137k, while the Trump dinner theme is fading with $TRUMP at record lows. Name-play pumps like SI (+601% in an hour, $26k cap) are chasing on thin volume. Research only, no buys: GJVK Fiona ($36k, 55% buys, $3.8k 5m) to check original versus vamp, which fails the $10k 5m bar today, and OFFICIALGTA only if its 5m volume gets back past $10k. The crawler's numbers conflict with the scan (3hcJ at $79k here vs $16k in the scan, Mandy at $994k vs $137k, B34n absent from the scan), so I trust scan_movers and treat the "original Fiona" claim as unverified.
 
 ## Moving most in its scans, last 30 min (1h volume)
-- FIONA: $2,869,353 1h vol, $1,285,320 mcap, +176% 1h  
-  CA `B34nXKzCgsJb9ChLuSHPRpXLE3WFSWyeT8Cqkzzmpump`
-- BUNCOIN: $1,598,970 1h vol, $783,535 mcap, +748% 1h  
-  CA `mXcP1bqxM8Tx6BQuFwTHqzE3m7JVMZspmxZ7pjQpump`
-- FIONA: $171,687 1h vol, $74,607 mcap, +148% 1h  
-  CA `8sCLrDo6tS9zQoC1qsb13KhGUHEWyLx3j7JebBYnpump`
-- VINTEL: $146,023 1h vol, $79,691 mcap, +176% 1h  
-  CA `H1jcPQwCX9VPiNGBUpQNJdGzZEHiisFSs1WS4fi6pump`
-- MANDY: $126,352 1h vol, $1,274,116 mcap, +63% 1h  
-  CA `GQngHP8P6s45MxWnU7JsocfV2HjPQdJZmCEAYKpBpump`
+- FIONA: $254,876 1h vol, $16,293 mcap, -76% 1h  
+  CA `3hcJWcNvWJu3QBq6PiC8xavYQJJwBnr6adhdpHXppump`
+- FIN: $183,814 1h vol, $10,493 mcap, +109% 1h  
+  CA `HpYT5BHv4nb8ZEXoc7YG5zLSqwtFx9nRtR3puAZ9pump`
+- OGTA: $110,309 1h vol, $953,423 mcap, -14% 1h  
+  CA `7bCiddGLe5aM8HE2pigT9jsqkmC1HSPxyXN6GkHEpump`
+- SI: $101,394 1h vol, $25,774 mcap, +601% 1h  
+  CA `4s38cgZJN4J39S2BQwCkcsJJ9ZGeJSjw8vK9wVtupump`
+- DATITTY: $91,277 1h vol, $1,377 mcap, -99% 1h  
+  CA `7ZwcEsmBBUWshL3rpkgDchG6rhL1U9jHockwuzgZpump`
