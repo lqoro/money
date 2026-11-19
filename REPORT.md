@@ -1,13 +1,13 @@
 # Trencher live report
 
-Updated 2026-11-19T06:46:23Z (paper trading, never real money)
+Updated 2026-11-19T07:01:26Z (paper trading, never real money)
 
 - Equity: $74.23 (-25.8% vs $100 start)
 - Closed trades: 22, 3 wins
 - Fees paid: $14.78 (axiom $2.81, network $9.18, pool $2.66), plus $4.15 lost to slippage
 - New trades: WATCH-ONLY (scans and decides, buys nothing)
-- Brain: subscription, claude-haiku-5-5 for routine calls, claude-opus-5-5 for the daily review; 311 routine calls and 248 plan-limit hits in 48h
-- Watch log: 121 coins being followed, 2199 filed, 0 would-buys (6h follow, sampled every 2 min)
+- Brain: subscription, claude-haiku-5-5 for routine calls, claude-opus-5-5 for the daily review; 307 routine calls and 250 plan-limit hits in 48h
+- Watch log: 125 coins being followed, 2203 filed, 0 would-buys (6h follow, sampled every 2 min)
 
 ## Scorecard (after fees)
 - 22 closed, 3 won (14%), net $-25.79
@@ -73,33 +73,33 @@ Updated 2026-11-19T06:46:23Z (paper trading, never real money)
   CA `H4gHnZ3NCU7Z9XQwGX6YYJNyieGEW8pqwGRUcdSxpump`
 
 ## Last scan
-- 06:45Z: 2 coins, 2 with pairs, 0 passed the market filters, 0 researched
+- 07:00Z: 3 coins, 3 with pairs, 2 passed the market filters, 2 researched
 
 ## Coins it looked at, and why it passed
-- 06:44Z GTASZN (MIGRATED, $1,411,260 mcap, $6,495 5m vol): SKIP, passed the checklist, but the brain was paced or paused  
+- 07:00Z GTASZN (MIGRATED, $1,525,767 mcap, $5,411 5m vol): SKIP, passed the checklist, but the brain was paced or paused  
   CA `A4jXnWk1rDRDth6HmDASi45c89n1AguTHivAQPTVpump`
-- 06:41Z GTA6IRL (MIGRATED, $261,191 mcap, $7,835 5m vol): SKIP, passed the checklist, but the brain was paced or paused  
-  CA `4NShmh1AkwX2PMA8KSJDbbp8ExLUuHXbYBmzRjNNpump`
-- 06:39Z GTASZN (MIGRATED, $1,504,295 mcap, $4,134 5m vol): SKIP, passed the checklist, but the brain was paced or paused  
+- 07:00Z ANTS (MIGRATED, $8,067,790 mcap, $60,242 5m vol): SKIP, passed the checklist, but the brain was paced or paused  
+  CA `ejrz94zR4A2ScS8LdvRaQih2xUxaE2ydreqUNKmpump`
+- 06:57Z GATO (MIGRATED, $2,773,184 mcap, $7,447 5m vol): REJECT, Dev holds 2.7% (>1%) (V13, V17)  
+  CA `HsprHxBRgiVaQdRf3TnKNuZZtaX9JUSPgMFdAkk6pump`
+- 06:55Z GTASZN (MIGRATED, $1,478,738 mcap, $5,517 5m vol): SKIP, passed the checklist, but the brain was paced or paused  
   CA `A4jXnWk1rDRDth6HmDASi45c89n1AguTHivAQPTVpump`
-- 06:37Z WKTT (MIGRATED, $38,555 mcap, $24,767 5m vol): REJECT, Top 10 hold 25.5% ex-pool (>25%) (V13)  
-  CA `2L26JxjWAWxa13MjNpHrXpXp8BJ6ykz2qNWHN2zupump`
-- 06:36Z BUCKME (MIGRATED, $69,247 mcap, $2,216 5m vol): REJECT, Bundles: 2 linked wallet cluster(s) hold 30.7% of supply (>20%) (V17)  
-  CA `DEgAkPNxz3dtMsesD2FDkNA2S6sch5YWfGUDT7R2pump`
-- 06:35Z DIGS (MIGRATED, $425,329 mcap, $3,692 5m vol): REJECT, Bundles: 10 linked wallet cluster(s) hold 100.0% of supply (>20%) (V17)  
-  CA `9QT8K685Hrae4k11dhGXirdtpfAaimExtyfwt8cPpump`
-- 06:34Z GTASZN (MIGRATED, $1,443,621 mcap, $7,538 5m vol): SKIP, passed the checklist, but the brain was paced or paused  
-  CA `A4jXnWk1rDRDth6HmDASi45c89n1AguTHivAQPTVpump`
-- 06:32Z APCY (MIGRATED, $113,125 mcap, $9,947 5m vol): SKIP, passed the checklist, but the brain was paced or paused  
-  CA `7fZK84wYShNUXKJnBkfXkeu5h2edduNkZV3p2B2LBCgC`
-- 06:28Z GTASZN (MIGRATED, $1,573,003 mcap, $6,724 5m vol): SKIP, passed the checklist, but the brain was paced or paused  
-  CA `A4jXnWk1rDRDth6HmDASi45c89n1AguTHivAQPTVpump`
-- 06:27Z GTA (MIGRATED, $894,655 mcap, $8,450 5m vol): REJECT, Top 10 hold 31.5% ex-pool (>25%) (V13)  
-  CA `8CnvwZJLRpQazvn6LszkzmXJxkmMY2bTQ4Q3NN4fpump`
+- 06:55Z GTAify (FINAL_STRETCH, $26,391 mcap, $7,374 5m vol): REJECT, Top 10 hold 25.1% ex-pool (>25%) (V13)  
+  CA `8Hi3wt1PaBYWN63fYWP5Yq8P1xfPPqiqAzmhe7JFpump`
+- 06:55Z ANTS (MIGRATED, $8,110,743 mcap, $71,882 5m vol): SKIP, passed the checklist, but the brain was paced or paused  
+  CA `ejrz94zR4A2ScS8LdvRaQih2xUxaE2ydreqUNKmpump`
+- 06:54Z SkunkApe (FINAL_STRETCH, $15,614 mcap, $2,724 5m vol): SKIP, passed the checklist, but the brain was paced or paused  
+  CA `EmoGtdNBJjVgEBEUtGtxZo5Da5P3prLgL3yJLQTgpump`
+- 06:54Z DCTY (MIGRATED, $49,648 mcap, $2,797 5m vol): SKIP, passed the checklist, but the brain was paced or paused  
+  CA `FJSga8VWXAUHvQCb2gBzn7xc2EQ7wdGKw764Hdespump`
+- 06:53Z GRAND (MIGRATED, $496,712 mcap, $4,177 5m vol): REJECT, Top 10 hold 51.5% ex-pool (>25%) (V13)  
+  CA `CyfdugHk3PT44hEUxpnU25CXAJsVQ9EdipKWCHEBKSdS`
+- 06:50Z HOGE (DIP, $1,026,784 mcap, $3,357 5m vol): REJECT, Bundles: 9 linked wallet cluster(s) hold 25.4% of supply (>20%) (V17)  
+  CA `FVzqGqRmr4UH1Fif6dewmwbJ1p4YUZCu8dcw4Efopump`
 
 ## What its skips did next (last 48h)
 A skip "ran" if the coin reached the first target (1.5x) from the skip price before a 20% drop, "dumped" if the drop came first. Sampled every 10 min, followed 6h.
-- top 10 over 25%: blocked 78, ran 15, dumped 57, flat 2, open 4 (saving losses: keep it)
+- top 10 over 25%: blocked 79, ran 15, dumped 59, flat 2, open 3 (saving losses: keep it)
   - ran: bandana up to 1.83x  
     CA `2J8PNqveSc5HcK9mF1U8aXpYjiFYK4RuGuKUMXkKpump`
   - ran: PS5 up to 2.06x  
@@ -123,12 +123,12 @@ A skip "ran" if the coin reached the first target (1.5x) from the skip price bef
     CA `EMJe37WNwbuVBVbF9iJshdiag5DjYhPG1ZELEJBWpump`
   - ran: Snapmatic up to 1.68x  
     CA `4S8pUKWKUAtQKfE5qokSjszWDp1RqQWnom8jNYSWpump`
-- dev share over 1%: blocked 12, ran 2, dumped 10, flat 0, open 0 (saving losses: keep it)
+- dev share over 1%: blocked 12, ran 2, dumped 9, flat 0, open 1 (saving losses: keep it)
   - ran: GTAMAS up to 2.22x  
     CA `8nUH7dwgagpMvtQnsRRMzRtUrHdv2sJiuQXABQpUpump`
   - ran: TTP up to 1.53x  
     CA `6z9zZnrS5EwpiZfJPKqzhQhd9hkiQuyy9EW9ZcfBpump`
-- bundles over the line: blocked 11, ran 4, dumped 4, flat 0, open 3 (mixed)
+- bundles over the line: blocked 12, ran 4, dumped 4, flat 0, open 4 (mixed)
   - ran: BIG up to 1.93x  
     CA `34DXEU2ttEtBSb1TqGJm7izgvYTTkqKcCoiNWdPDpump`
   - ran: KATIA up to 2.01x  
@@ -142,17 +142,15 @@ A skip "ran" if the coin reached the first target (1.5x) from the skip price bef
     CA `BM52Wwq9ikCqnmJUdUjMbUohyWsuDaHb1mKhw4yqpump`
   - ran: Poopcoin up to 1.91x  
     CA `Geee1viZh4HpVJFaHB8ev5BZNdtUR4Dy2PDS5iBB7cLz`
-- falling knife / no higher low: blocked 5, ran 0, dumped 4, flat 1, open 0 (saving losses: keep it)
-- too new / sniping: blocked 5, ran 2, dumped 3, flat 0, open 0 (mixed)
-  - ran: gamercat up to 1.74x  
-    CA `8rkatUGY8nJPpSLa14vFEBCeuGy9kpfYkLos1wsJLcrg`
-  - ran: SOYOUARE up to 1.52x  
-    CA `6efK9juKa6x9sZEsB6iWJ5mTMhqrexeQRyp7DkDEpump`
 - flow below pace: blocked 4, ran 2, dumped 1, flat 1, open 0 (cost more winners than it saved: loosen it)
   - ran: FAILED up to 1.57x  
     CA `CDMbeCvHyAiypmiqHN6a1N59MeXizQooKfEJMPZzpump`
   - ran: RYANAIR up to 1.67x  
     CA `9WcYJegbsMSzvtFUEGmJoGhZjCGBEcKqXpdkNDoMR5pN`
+- falling knife / no higher low: blocked 4, ran 0, dumped 3, flat 1, open 0 (saving losses: keep it)
+- too new / sniping: blocked 3, ran 1, dumped 2, flat 0, open 0 (saving losses: keep it)
+  - ran: SOYOUARE up to 1.52x  
+    CA `6efK9juKa6x9sZEsB6iWJ5mTMhqrexeQRyp7DkDEpump`
 
 ## Daily review (2026-11-16, claude-opus-5-5)
 Nothing shows a positive edge after costs. Over 309 settled coins, every setup lost money net: FINAL_STRETCH -7.2%, DIP -7.4%, MIGRATED -13.5%. Costs alone averaged 9.8% per round trip. Before costs, FINAL_STRETCH made about +2.9% and DIP about +1.8%, but at n=46 and n=54 the noise is roughly ±4–5 points, so neither is different from zero. With a 1.5x / -20% plan and ~10% costs, you need about 43% of coins to reach 1.5x before -20% just to break even. The best group (FINAL_STRETCH) managed 32.6%, and the error bar on that is about ±14 points. The routine model gave zero would-buys, so the "did its buys beat its passes" question can't be answered. It passed on all 164 coins it reviewed. Those coins averaged -11.7% net, about the same as the checklist rejects at -11.3%, so passing on everything was roughly right this day, even though it missed LMAO, Marvin and WIGGLES.
@@ -193,13 +191,13 @@ Nothing shows a positive edge after costs. Over 309 settled coins, every setup l
 Meta: the only theme with real 5m flow is a fresh-launch cluster of "Justice For So You Are" copies. Four tickers under 40 minutes old show $15k to $54k of 5m volume, 53-61% buys, and 1h moves of +113% to +860%, so the copies compete for one story and I need to find the original. Rising but cooling: GROKIA (AI/Grok-flavored, Raydium, $373k cap) is +1027% on the hour, but its 5m volume is only $8.8k, which is under the bar. Fading: the old dog/animal tier (BLOB, JOB, GATO, DIGS) is flat to red with sub-50% buys on most, and the game-reskin GTA names are thin (GTA Pad $217 on 5m, BAWSAQ -19% on $2k). The web confirms the fade story: Trump dinner interest is dropping in headlines and no Trump coin is in the scan, so it isn't driving flow. Research only, no buys yet: the SOYOUARE cluster, starting with 6efK... on pumpswap (64k cap, $53.8k 5m) and GbGz... on the pump.fun curve (13k cap, $27k 5m), to find the original and test whether the copies are a vamp farm; conviction stays low until holders, dev and bundle checks come back clean. PASS on BLOB (above the recon cap and flat) and GROKIA (5m under the $10k bar).
 
 ## Moving most in its scans, last 30 min (1h volume)
-- GTA: $526,192 1h vol, $894,655 mcap, +2301% 1h  
-  CA `8CnvwZJLRpQazvn6LszkzmXJxkmMY2bTQ4Q3NN4fpump`
-- USDC: $264,110 1h vol, $68,290,616,880 mcap, -0% 1h  
+- ANTS: $1,231,337 1h vol, $8,067,790 mcap, +7% 1h  
+  CA `ejrz94zR4A2ScS8LdvRaQih2xUxaE2ydreqUNKmpump`
+- USDC: $274,602 1h vol, $68,347,219,567 mcap, +0% 1h  
   CA `EPjFWdd5AufqSSqeM2qN1xzybapC8G4wEGGkZwyTDt1v`
-- MANDY: $108,283 1h vol, $1,510 mcap, -98% 1h  
-  CA `EkTfN4Pb7K3NXzxsbzkn3AA4MGbsdTniFJ3G2RsVpump`
+- CDOG: $181,311 1h vol, $1,463 mcap, -95% 1h  
+  CA `CFGYvBq76em5ViQ6sNAgdG7dKk1WNHxyNdqzNLpXpump`
 - BUCKME: $104,011 1h vol, $67,793 mcap, +68% 1h  
   CA `DEgAkPNxz3dtMsesD2FDkNA2S6sch5YWfGUDT7R2pump`
-- GTASZN: $78,779 1h vol, $1,411,260 mcap, +5% 1h  
+- GTASZN: $79,953 1h vol, $1,525,051 mcap, +2% 1h  
   CA `A4jXnWk1rDRDth6HmDASi45c89n1AguTHivAQPTVpump`
