@@ -1,13 +1,13 @@
 # Trencher live report
 
-Updated 2026-11-19T15:51:30Z (paper trading, never real money)
+Updated 2026-11-19T16:06:41Z (paper trading, never real money)
 
 - Equity: $74.23 (-25.8% vs $100 start)
 - Closed trades: 22, 3 wins
 - Fees paid: $14.78 (axiom $2.81, network $9.18, pool $2.66), plus $4.15 lost to slippage
 - New trades: WATCH-ONLY (scans and decides, buys nothing)
 - Brain: subscription, claude-haiku-5-5 for routine calls, claude-opus-5-5 for the daily review; 282 routine calls and 282 plan-limit hits in 48h
-- Watch log: 97 coins being followed, 2368 filed, 0 would-buys (6h follow, sampled every 2 min)
+- Watch log: 95 coins being followed, 2374 filed, 0 would-buys (6h follow, sampled every 2 min)
 
 ## Scorecard (after fees)
 - 22 closed, 3 won (14%), net $-25.79
@@ -73,33 +73,33 @@ Updated 2026-11-19T15:51:30Z (paper trading, never real money)
   CA `H4gHnZ3NCU7Z9XQwGX6YYJNyieGEW8pqwGRUcdSxpump`
 
 ## Last scan
-- 15:50Z: 2 coins, 2 with pairs, 1 passed the market filters, 1 researched
+- 16:05Z: 4 coins, 4 with pairs, 2 passed the market filters, 2 researched
 
 ## Coins it looked at, and why it passed
-- 15:50Z AI (MIGRATED, $521,712 mcap, $119,218 5m vol): SKIP, passed the checklist, but the brain was paced or paused  
-  CA `EE6CRsqqpvHwkCYK8hF15RmNccdq32vdbcQdX4afLoat`
-- 15:49Z Mandy (MIGRATED, $378,633 mcap, $4,671 5m vol): SKIP, passed the checklist, but the brain was paced or paused  
-  CA `2xCd5qHX5tW6pGUo7zfgHSSAnRjJwPA7Sz1Fu4fWcJjX`
-- 15:49Z GTASZN (MIGRATED, $428,101 mcap, $5,913 5m vol): SKIP, passed the checklist, but the brain was paced or paused  
+- 16:05Z GTASZN (MIGRATED, $528,458 mcap, $3,604 5m vol): SKIP, passed the checklist, but the brain was paced or paused  
   CA `A4jXnWk1rDRDth6HmDASi45c89n1AguTHivAQPTVpump`
-- 15:48Z JETSKI (MIGRATED, $39,700 mcap, $2,111 5m vol): SKIP, passed the checklist, but the brain was paced or paused  
-  CA `J8JjZXF6XE3zDp3zVQPYxkC9SNDuejGh8Eh6hjKgpump`
-- 15:45Z TL (MIGRATED, $76,536 mcap, $6,997 5m vol): REJECT, Bundles: 2 linked wallet cluster(s) hold 26.4% of supply (>20%) (V17)  
-  CA `Au6Lx5eEQUsANpPaMttLj1anZDXvVQj9fXyYwMpSpump`
-- 15:45Z AI (MIGRATED, $355,140 mcap, $144,076 5m vol): SKIP, passed the checklist, but the brain was paced or paused  
-  CA `EE6CRsqqpvHwkCYK8hF15RmNccdq32vdbcQdX4afLoat`
-- 15:44Z GTASZN (MIGRATED, $499,880 mcap, $3,566 5m vol): SKIP, passed the checklist, but the brain was paced or paused  
-  CA `A4jXnWk1rDRDth6HmDASi45c89n1AguTHivAQPTVpump`
-- 15:44Z Mandy (MIGRATED, $360,444 mcap, $7,442 5m vol): SKIP, passed the checklist, but the brain was paced or paused  
+- 16:05Z Mandy (MIGRATED, $350,218 mcap, $3,465 5m vol): SKIP, passed the checklist, but the brain was paced or paused  
   CA `2xCd5qHX5tW6pGUo7zfgHSSAnRjJwPA7Sz1Fu4fWcJjX`
-- 15:43Z jingyu (MIGRATED, $104,291 mcap, $7,002 5m vol): REJECT, Bundles: 1 linked wallet cluster(s) hold 100.0% of supply (>20%) (V17)  
-  CA `DUZrwdjEthcJ99ZiRXr31UuqTohoTg7VjTEyfGdBpump`
-- 15:40Z DIGS (MIGRATED, $438,655 mcap, $3,130 5m vol): REJECT, Bundles: 10 linked wallet cluster(s) hold 100.0% of supply (>20%) (V17)  
-  CA `9QT8K685Hrae4k11dhGXirdtpfAaimExtyfwt8cPpump`
+- 16:03Z MORALS (MIGRATED, $145,579 mcap, $66,078 5m vol): SKIP, passed the checklist, but the brain was paced or paused  
+  CA `BmGMo3SDXw1y2L4fFMY8bsxonWNZ5MitUzuAkV3jmor`
+- 16:01Z AI (MIGRATED, $398,637 mcap, $81,177 5m vol): SKIP, passed the checklist, but the brain was paced or paused  
+  CA `EE6CRsqqpvHwkCYK8hF15RmNccdq32vdbcQdX4afLoat`
+- 16:00Z Mandy (MIGRATED, $357,956 mcap, $3,204 5m vol): SKIP, passed the checklist, but the brain was paced or paused  
+  CA `2xCd5qHX5tW6pGUo7zfgHSSAnRjJwPA7Sz1Fu4fWcJjX`
+- 16:00Z GTASZN (MIGRATED, $580,521 mcap, $3,349 5m vol): SKIP, passed the checklist, but the brain was paced or paused  
+  CA `A4jXnWk1rDRDth6HmDASi45c89n1AguTHivAQPTVpump`
+- 15:58Z MORALS (MIGRATED, $152,674 mcap, $97,228 5m vol): SKIP, passed the checklist, but the brain was paced or paused  
+  CA `BmGMo3SDXw1y2L4fFMY8bsxonWNZ5MitUzuAkV3jmor`
+- 15:56Z AI (MIGRATED, $429,821 mcap, $43,735 5m vol): SKIP, passed the checklist, but the brain was paced or paused  
+  CA `EE6CRsqqpvHwkCYK8hF15RmNccdq32vdbcQdX4afLoat`
+- 15:55Z Mandy (MIGRATED, $392,520 mcap, $3,790 5m vol): SKIP, passed the checklist, but the brain was paced or paused  
+  CA `2xCd5qHX5tW6pGUo7zfgHSSAnRjJwPA7Sz1Fu4fWcJjX`
+- 15:55Z GTASZN (MIGRATED, $459,041 mcap, $3,553 5m vol): SKIP, passed the checklist, but the brain was paced or paused  
+  CA `A4jXnWk1rDRDth6HmDASi45c89n1AguTHivAQPTVpump`
 
 ## What its skips did next (last 48h)
 A skip "ran" if the coin reached the first target (1.5x) from the skip price before a 20% drop, "dumped" if the drop came first. Sampled every 10 min, followed 6h.
-- top 10 over 25%: blocked 78, ran 14, dumped 60, flat 3, open 1 (saving losses: keep it)
+- top 10 over 25%: blocked 77, ran 14, dumped 59, flat 3, open 1 (saving losses: keep it)
   - ran: PS5 up to 2.06x  
     CA `7SEGAjVRdv6H3d4CPBNPBL6yXJiUM1pLoECsovPbpump`
   - ran: BUFO up to 1.83x  
@@ -185,13 +185,13 @@ Nothing shows a positive edge after costs. Over 309 settled coins, every setup l
 Meta: the only theme with real 5m flow is a fresh-launch cluster of "Justice For So You Are" copies. Four tickers under 40 minutes old show $15k to $54k of 5m volume, 53-61% buys, and 1h moves of +113% to +860%, so the copies compete for one story and I need to find the original. Rising but cooling: GROKIA (AI/Grok-flavored, Raydium, $373k cap) is +1027% on the hour, but its 5m volume is only $8.8k, which is under the bar. Fading: the old dog/animal tier (BLOB, JOB, GATO, DIGS) is flat to red with sub-50% buys on most, and the game-reskin GTA names are thin (GTA Pad $217 on 5m, BAWSAQ -19% on $2k). The web confirms the fade story: Trump dinner interest is dropping in headlines and no Trump coin is in the scan, so it isn't driving flow. Research only, no buys yet: the SOYOUARE cluster, starting with 6efK... on pumpswap (64k cap, $53.8k 5m) and GbGz... on the pump.fun curve (13k cap, $27k 5m), to find the original and test whether the copies are a vamp farm; conviction stays low until holders, dev and bundle checks come back clean. PASS on BLOB (above the recon cap and flat) and GROKIA (5m under the $10k bar).
 
 ## Moving most in its scans, last 30 min (1h volume)
-- AI: $376,894 1h vol, $517,447 mcap, +324% 1h  
+- AI: $508,710 1h vol, $391,337 mcap, +221% 1h  
   CA `EE6CRsqqpvHwkCYK8hF15RmNccdq32vdbcQdX4afLoat`
-- Mandy: $134,077 1h vol, $378,633 mcap, +42% 1h  
+- MORALS: $305,559 1h vol, $134,161 mcap, +343% 1h  
+  CA `BmGMo3SDXw1y2L4fFMY8bsxonWNZ5MitUzuAkV3jmor`
+- Mandy: $117,010 1h vol, $357,316 mcap, +8% 1h  
   CA `2xCd5qHX5tW6pGUo7zfgHSSAnRjJwPA7Sz1Fu4fWcJjX`
-- GTASZN: $78,548 1h vol, $438,568 mcap, -52% 1h  
+- GTASZN: $76,632 1h vol, $528,458 mcap, -40% 1h  
   CA `A4jXnWk1rDRDth6HmDASi45c89n1AguTHivAQPTVpump`
-- JETSKI: $70,168 1h vol, $40,124 mcap, +35% 1h  
-  CA `J8JjZXF6XE3zDp3zVQPYxkC9SNDuejGh8Eh6hjKgpump`
-- HOLM: $59,037 1h vol, $27,688 mcap, +241% 1h  
-  CA `D7P7cyJT4LRFP3X5932HFkbb7hcJkZXPjsSLNqQZpump`
+- HOGE: $75,150 1h vol, $1,393,636 mcap, +27% 1h  
+  CA `FVzqGqRmr4UH1Fif6dewmwbJ1p4YUZCu8dcw4Efopump`
