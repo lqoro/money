@@ -1,13 +1,13 @@
 # Trencher live report
 
-Updated 2026-11-19T21:09:49Z (paper trading, never real money)
+Updated 2026-11-19T21:25:05Z (paper trading, never real money)
 
 - Equity: $74.23 (-25.8% vs $100 start)
 - Closed trades: 22, 3 wins
 - Fees paid: $14.78 (axiom $2.81, network $9.18, pool $2.66), plus $4.15 lost to slippage
 - New trades: WATCH-ONLY (scans and decides, buys nothing)
 - Brain: subscription, claude-haiku-5-5 for routine calls, claude-opus-5-5 for the daily review; 282 routine calls and 282 plan-limit hits in 48h
-- Watch log: 122 coins being followed, 2451 filed, 0 would-buys (6h follow, sampled every 2 min)
+- Watch log: 123 coins being followed, 2455 filed, 0 would-buys (6h follow, sampled every 2 min)
 
 ## Scorecard (after fees)
 - 22 closed, 3 won (14%), net $-25.79
@@ -73,33 +73,33 @@ Updated 2026-11-19T21:09:49Z (paper trading, never real money)
   CA `H4gHnZ3NCU7Z9XQwGX6YYJNyieGEW8pqwGRUcdSxpump`
 
 ## Last scan
-- 21:09Z: 5 coins, 5 with pairs, 1 passed the market filters, 1 researched
+- 21:24Z: 2 coins, 2 with pairs, 0 passed the market filters, 0 researched
 
 ## Coins it looked at, and why it passed
+- 21:23Z jingyu (MIGRATED, $93,934 mcap, $3,816 5m vol): REJECT, Bundles: 1 linked wallet cluster(s) hold 100.0% of supply (>20%) (V17)  
+  CA `DUZrwdjEthcJ99ZiRXr31UuqTohoTg7VjTEyfGdBpump`
+- 21:21Z FIONA (FINAL_STRETCH, $18,066 mcap, $36,136 5m vol): SKIP, passed the checklist, but the brain was paced or paused  
+  CA `3hcJWcNvWJu3QBq6PiC8xavYQJJwBnr6adhdpHXppump`
+- 21:20Z ANTS (DIP, $7,926,471 mcap, $4,792 5m vol): SKIP, passed the checklist, but the brain was paced or paused  
+  CA `ejrz94zR4A2ScS8LdvRaQih2xUxaE2ydreqUNKmpump`
+- 21:19Z OGTA (MIGRATED, $1,192,581 mcap, $9,508 5m vol): SKIP, passed the checklist, but the brain was paced or paused  
+  CA `7bCiddGLe5aM8HE2pigT9jsqkmC1HSPxyXN6GkHEpump`
+- 21:16Z MANDY (MIGRATED, $270,515 mcap, $17,392 5m vol): REJECT, Top 10 hold 55.1% ex-pool (>25%) (V13)  
+  CA `EfFoZZgpDjJywmWqpA8Lqs5gC4NH6cj5N1G5D43vpump`
+- 21:16Z FIONA (MIGRATED, $46,579 mcap, $38,957 5m vol): REJECT, Top 10 hold 28.6% ex-pool (>25%) (V13)  
+  CA `97Fz7Ki7GzBDLCz4LV69CTCyw4VqZV7GwL6dS9zsBtcJ`
+- 21:14Z OGTA (MIGRATED, $1,180,481 mcap, $10,107 5m vol): SKIP, passed the checklist, but the brain was paced or paused  
+  CA `7bCiddGLe5aM8HE2pigT9jsqkmC1HSPxyXN6GkHEpump`
 - 21:09Z OGTA (MIGRATED, $1,156,566 mcap, $7,928 5m vol): SKIP, passed the checklist, but the brain was paced or paused  
   CA `7bCiddGLe5aM8HE2pigT9jsqkmC1HSPxyXN6GkHEpump`
 - 21:05Z ANTS (DIP, $7,956,627 mcap, $5,870 5m vol): SKIP, passed the checklist, but the brain was paced or paused  
   CA `ejrz94zR4A2ScS8LdvRaQih2xUxaE2ydreqUNKmpump`
 - 21:04Z LUCIA (DIP, $54,502 mcap, $6,640 5m vol): REJECT, Dip with fading attention is a falling knife, not a dip (5m at 0.37x the hour's pace, under 0.6x)  
   CA `22Rh3HSAmmdLwr5qP7ULgXEDD86zpd3w8zZ8SMzrpump`
-- 21:04Z FIONA  (MIGRATED, $45,649 mcap, $107,279 5m vol): SKIP, passed the checklist, but the brain was paced or paused  
-  CA `4V6DGWrMeKpQcpPmEGnuHqdAccno5q3JzJFTTh4opump`
-- 21:03Z OGTA (MIGRATED, $1,083,171 mcap, $8,498 5m vol): SKIP, passed the checklist, but the brain was paced or paused  
-  CA `7bCiddGLe5aM8HE2pigT9jsqkmC1HSPxyXN6GkHEpump`
-- 21:02Z LOOSY (DIP, $58,205 mcap, $5,054 5m vol): REJECT, Dip with fading attention is a falling knife, not a dip (5m at 0.11x the hour's pace, under 0.6x)  
-  CA `47HUoJ3EiL1h8kej8hEcUjFrxUkohNMSSbQHidPCpump`
-- 21:01Z FIONA (MIGRATED, $186,060 mcap, $173,945 5m vol): REJECT, Top 10 hold 25.9% ex-pool (>25%) (V13)  
-  CA `B34nXKzCgsJb9ChLuSHPRpXLE3WFSWyeT8Cqkzzmpump`
-- 20:58Z DIGS (MIGRATED, $365,055 mcap, $3,197 5m vol): REJECT, Bundles: 10 linked wallet cluster(s) hold 100.0% of supply (>20%) (V17)  
-  CA `9QT8K685Hrae4k11dhGXirdtpfAaimExtyfwt8cPpump`
-- 20:58Z OGTA (MIGRATED, $1,188,949 mcap, $7,299 5m vol): SKIP, passed the checklist, but the brain was paced or paused  
-  CA `7bCiddGLe5aM8HE2pigT9jsqkmC1HSPxyXN6GkHEpump`
-- 20:56Z MANDY (DIP, $250,132 mcap, $60,686 5m vol): REJECT, Dev holds 1.6% (>1%) (V13, V17)  
-  CA `GQngHP8P6s45MxWnU7JsocfV2HjPQdJZmCEAYKpBpump`
 
 ## What its skips did next (last 48h)
 A skip "ran" if the coin reached the first target (1.5x) from the skip price before a 20% drop, "dumped" if the drop came first. Sampled every 10 min, followed 6h.
-- top 10 over 25%: blocked 78, ran 15, dumped 59, flat 3, open 1 (saving losses: keep it)
+- top 10 over 25%: blocked 80, ran 15, dumped 59, flat 3, open 3 (saving losses: keep it)
   - ran: PS5 up to 2.06x  
     CA `7SEGAjVRdv6H3d4CPBNPBL6yXJiUM1pLoECsovPbpump`
   - ran: BUFO up to 1.83x  
@@ -120,14 +120,14 @@ A skip "ran" if the coin reached the first target (1.5x) from the skip price bef
     CA `9rbKkz2BDQBVgZmrHY6d7PTq2ge91gkpEyE4y9PPpump`
   - ran: PIPI up to 1.63x  
     CA `J51xgomTx21VHY62Q7uv2otWRUSq71WeaApLfsAnpump`
-- dev share over 1%: blocked 15, ran 3, dumped 10, flat 0, open 2 (saving losses: keep it)
+- dev share over 1%: blocked 15, ran 4, dumped 10, flat 0, open 1 (saving losses: keep it)
   - ran: GTAMAS up to 2.22x  
     CA `8nUH7dwgagpMvtQnsRRMzRtUrHdv2sJiuQXABQpUpump`
   - ran: TTP up to 1.53x  
     CA `6z9zZnrS5EwpiZfJPKqzhQhd9hkiQuyy9EW9ZcfBpump`
   - ran: LOOSY up to 1.71x  
     CA `FtSWWxVmKNXz8ksJxzJJ7BdDWXbQb3vC94J99oyypump`
-- other: blocked 15, ran 5, dumped 10, flat 0, open 0 (saving losses: keep it)
+- other: blocked 14, ran 5, dumped 9, flat 0, open 0 (mixed)
   - ran: Calypso up to 2.99x  
     CA `BM52Wwq9ikCqnmJUdUjMbUohyWsuDaHb1mKhw4yqpump`
   - ran: Poopcoin up to 1.91x  
@@ -189,9 +189,9 @@ Meta: the only theme with real 5m flow is a fresh-launch cluster of "Justice For
   CA `47HUoJ3EiL1h8kej8hEcUjFrxUkohNMSSbQHidPCpump`
 - FIONA: $322,724 1h vol, $186,060 mcap, +488% 1h  
   CA `B34nXKzCgsJb9ChLuSHPRpXLE3WFSWyeT8Cqkzzmpump`
-- PCVI: $298,895 1h vol, $1,476 mcap, -95% 1h  
-  CA `Fz2mPmkdJGj7eBmUvYcuNLVBXsGNtGUBuSkxbQ7Lpump`
 - LUCIA: $215,726 1h vol, $54,502 mcap, -47% 1h  
   CA `22Rh3HSAmmdLwr5qP7ULgXEDD86zpd3w8zZ8SMzrpump`
+- FIONA : $214,437 1h vol, $20,214 mcap, -32% 1h  
+  CA `4V6DGWrMeKpQcpPmEGnuHqdAccno5q3JzJFTTh4opump`
 - CATMARIO: $212,983 1h vol, $1,822 mcap, -100% 1h  
   CA `6ayRQ5AgLQpPnBgEQ5WP9iRt7t7mXmiUN98ZTtFJpump`
