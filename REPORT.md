@@ -1,13 +1,13 @@
 # Trencher live report
 
-Updated 2026-11-20T11:19:05Z (paper trading, never real money)
+Updated 2026-11-20T11:34:07Z (paper trading, never real money)
 
 - Equity: $74.23 (-25.8% vs $100 start)
 - Closed trades: 22, 3 wins
 - Fees paid: $14.78 (axiom $2.81, network $9.18, pool $2.66), plus $4.15 lost to slippage
 - New trades: WATCH-ONLY (scans and decides, buys nothing)
-- Brain: subscription, claude-haiku-5-5 for routine calls, claude-opus-5-5 for the daily review; 324 routine calls and 204 plan-limit hits in 48h
-- Watch log: 74 coins being followed, 2312 filed, 0 would-buys (6h follow, sampled every 2 min)
+- Brain: subscription, claude-haiku-5-5 for routine calls, claude-opus-5-5 for the daily review; 324 routine calls and 203 plan-limit hits in 48h
+- Watch log: 71 coins being followed, 2315 filed, 0 would-buys (6h follow, sampled every 2 min)
 
 ## Scorecard (after fees)
 - 22 closed, 3 won (14%), net $-25.79
@@ -73,7 +73,7 @@ Updated 2026-11-20T11:19:05Z (paper trading, never real money)
   CA `H4gHnZ3NCU7Z9XQwGX6YYJNyieGEW8pqwGRUcdSxpump`
 
 ## Last scan
-- 11:18Z: 1 coins, 0 with pairs, 0 passed the market filters, 0 researched
+- 11:33Z: 4 coins, 3 with pairs, 0 passed the market filters, 0 researched
 
 ## Coins it looked at, and why it passed
 - 11:07Z iAgent (MIGRATED, $1,027,665 mcap, $6,402 5m vol): PASS at conviction 3, PASS. iAgent is down 71.5% from a $3.6M peak with 5m flow below pace and no printed higher low. The Apple-agent story is real but its catalyst is from Nov 8. Blocker: "flow below pace" plus "no higher low". (V1, V6, V3)  
@@ -99,20 +99,20 @@ Updated 2026-11-20T11:19:05Z (paper trading, never real money)
 
 ## What its skips did next (last 48h)
 A skip "ran" if the coin reached the first target (1.5x) from the skip price before a 20% drop, "dumped" if the drop came first. Sampled every 10 min, followed 6h.
-- top 10 over 25%: blocked 68, ran 10, dumped 52, flat 3, open 3 (saving losses: keep it)
+- top 10 over 25%: blocked 68, ran 10, dumped 53, flat 3, open 2 (saving losses: keep it)
   - ran: BUCKZ up to 1.6x  
     CA `3dF7QJEkhuVshbdgcVe227XvsbBc3cCoPTcHXw7Fpump`
   - ran: Pussy up to 1.53x  
     CA `JDBwLV5iu9sd9PNBEPZvVzLw7Kvd9HkD4v29985dpump`
   - ran: Doubloon up to 1.58x  
     CA `9Xhg9eRG92jZGbBZvNdcWyEoyz7kjHtA9BP6BxniUPWL`
-- falling knife (code): blocked 50, ran 7, dumped 41, flat 1, open 1 (saving losses: keep it)
-  - ran: DACT up to 2.63x  
-    CA `GZUGmAtuSx9755C3W1CLDVtA7MZQ8QWF1XjhjEbjpump`
+- falling knife (code): blocked 49, ran 6, dumped 42, flat 1, open 0 (saving losses: keep it)
   - ran: Apocrycoin up to 1.54x  
     CA `79rE2ac8JhN3U12QLhymgDmCTiwBN1d4maTcK1fhpump`
   - ran: APCY up to 1.74x  
     CA `7fZK84wYShNUXKJnBkfXkeu5h2edduNkZV3p2B2LBCgC`
+  - ran: AI up to 2.14x  
+    CA `GUmgNeyZCLrjQW2TaLhqkTUas8isQc86YuzKQ6Fppump`
 - RugCheck danger: blocked 30, ran 4, dumped 25, flat 1, open 0 (saving losses: keep it)
   - ran: CATCOIN up to 2.06x  
     CA `9JngoeaZHbV4f5EyRR3oDLNPH7VUGw1PYQC4s6j2pump`
@@ -139,13 +139,13 @@ A skip "ran" if the coin reached the first target (1.5x) from the skip price bef
     CA `FtSWWxVmKNXz8ksJxzJJ7BdDWXbQb3vC94J99oyypump`
   - ran: MANDY up to 1.54x  
     CA `GQngHP8P6s45MxWnU7JsocfV2HjPQdJZmCEAYKpBpump`
-- flow below pace: blocked 13, ran 3, dumped 5, flat 1, open 4 (mixed)
+- flow below pace: blocked 13, ran 4, dumped 7, flat 1, open 1 (mixed)
   - ran: SI up to 1.53x  
     CA `4s38cgZJN4J39S2BQwCkcsJJ9ZGeJSjw8vK9wVtupump`
   - ran: AI up to 1.51x  
     CA `8SacNb6sgiAcscRe4m915B6nL9XX55dk8FS7L532pump`
-  - ran: SWRDXSTFF up to 1.77x  
-    CA `Csoj9XHJfBAxsKswqKKBENnGeoRDHtACfyYi7HmJpump`
+  - ran: LOOSY up to 1.52x  
+    CA `HF2RBPrfNBk9TxggL2cYZFEKSgirzh5HKCngLENTpump`
 - other: blocked 12, ran 3, dumped 9, flat 0, open 0 (saving losses: keep it)
   - ran: CALICO up to 3.25x  
     CA `89GFxMWQ1r8cwTwRSgeQ9RaGPtUdmDLQgCsQZcrWpump`
@@ -156,7 +156,9 @@ A skip "ran" if the coin reached the first target (1.5x) from the skip price bef
 - too new / sniping: blocked 9, ran 1, dumped 8, flat 0, open 0 (saving losses: keep it)
   - ran: AudaCity up to 1.96x  
     CA `3rtTUCpe1BBgCTNWQ9jK3xkAz1E7SPqMt4uYHx1Bpump`
-- falling knife / no higher low: blocked 7, ran 2, dumped 3, flat 1, open 1 (mixed)
+- falling knife / no higher low: blocked 7, ran 3, dumped 3, flat 1, open 0 (mixed)
+  - ran: LOOSY up to 1.52x  
+    CA `HF2RBPrfNBk9TxggL2cYZFEKSgirzh5HKCngLENTpump`
   - ran: pCAT up to 1.58x  
     CA `BLdC7hwRijHudKYDmtEkx1SHUdBWm8XbjBCSvwa6pump`
   - ran: MACCA up to 1.71x  
@@ -198,16 +200,16 @@ Nothing shows a positive edge after costs. Over 309 settled coins, every setup l
 - [2026-11-02 20:25] I expected Slingoor, a clean MIGRATED leader with $25k of 5m flow at pace and a 0.77 buy share, to retest its $408k high from $304k. It never went green (0.98x peak) and hit the -20% stop in 2 minutes, a -$2.86 probe. My own thesis admitted there was no printed higher low after a peak only 6 minutes old, so this confirms the money-shape rule: buy share and flow are not structure (V1, V6). Next time a MIGRATED pullback with no higher low above the hourly low is a PASS with blocker "no higher low", not a probe. This is one loss, so it adds no new ban beyond the rule I already have.
 
 ## Meta right now
-The movers are animal and pet names on pump.fun: Cat Mario, A Mario Cat, Cool Dog, whatever cat, Gino the Baby Marmoset, Giving Inu and Bibi. Most are under two hours old on $6k-$130k caps, a launch-style meta that lasts hours (V1, V5). Holiday is the second theme and it's rising: Rudolph (RUDY) is a six-minute-old $57k reindeer with $38k of 5m volume at 63% buys, and with Christmas five weeks out, seasonal tokens tend to show early (V5). The web doesn't confirm that, so it rests on one scan line. Fading: Cat Mario -62%, OFFICIALGTA -51% on $5.3k of 5m, Predict -77%, buckme -37%, and the Trump and dinner headlines don't appear in the movers at all, so I'm ignoring them. The crawler's Giving Inu setup (+629%, $10.1k 5m, 0.3h old) doesn't match the scan (+39%, $1.3k 5m, 1.6h old), so I'm discarding it. RUDY is the only coin that clears the MIGRATED bar (age ≤12h, cap ≥$30k, 5m ≥$10k), so it's the one to research now, not chase. At conviction 5 I'd buy a probe only after holder and bundle checks pass, on a pullback that holds with buys above 60%, with initials at 2x, a -30% stop, and out if 5m falls under $10k. AMC, Jimmy, Gino and GI are watch-only until 5m clears $10k (V1, V6).
+The meta is cat and pet-name pump.fun launches. A Mario Cat (AMC), whatever cat (WCAT), Sweet Potato Cat and Cool Dog have the buyers, mostly under three hours old on $17k to $430k caps. Cats are rising: AMC is +325% in 1h and WCAT is +205% in 1h with 64% buys. Dog and inu names are fading: Gino -77%, Bibi -55%, Giving Inu -31%, and Cool Dog's 5m is down to $2.7k on 30% buys. GTA is a second, fading theme: OFFICIALGTA is -26% in 1h, still 77% buys on $6.6k of 5m, but well off its hourly pace. Holiday is not a theme in the movers yet. Rudolph (RUDY) is one coin at $15.6k, down 73% in the hour. I'm ignoring the crawler's $57k and six-minute numbers for RUDY because they don't match the scan. Setups: AMC is the only coin that clears MIGRATED (2.6h, $428k cap, $58k 5m, 60% buys). At +325% in an hour I won't chase it. I'd research it now and only buy a pullback that holds with buys above 60%, sized as a probe at conviction 5 with initials at 2x, a -30% stop, and a check that it's the original and not a Cat Mario vamp. WCAT is the early watch: $16.7k cap, but $5.3k 5m is under the $10k bar, so it stays watch-only until volume clears it. No hack-named coins appear in the movers.
 
 ## Moving most in its scans, last 30 min (1h volume)
-- AMC : $212,548 1h vol, $427,579 mcap, +325% 1h  
-  CA `J7bLsZcpkfky92ir8k36Munz91nHKtcDNhDy8d3Qpump`
-- RUDY: $135,468 1h vol, $15,592 mcap, -73% 1h  
-  CA `GjFvarRNRrq5tL6K2qdY7Xv2ZEbVrstqjW1BW4hMpump`
-- OGTA: $112,519 1h vol, $301,055 mcap, -26% 1h  
-  CA `7bCiddGLe5aM8HE2pigT9jsqkmC1HSPxyXN6GkHEpump`
 - iAgent: $103,352 1h vol, $1,043,479 mcap, +8% 1h  
   CA `44DZsPNJUtUyTkELAFYdwCpe82sEt12HZKrMgK1Spump`
-- Meobao: $69,317 1h vol, $19,055 mcap, -29% 1h  
+- RUDY: $70,524 1h vol, $15,141 mcap, -62% 1h  
+  CA `GjFvarRNRrq5tL6K2qdY7Xv2ZEbVrstqjW1BW4hMpump`
+- Nikita: $51,494 1h vol, $3,307 mcap, -46% 1h  
+  CA `HHuZcZnZNSaJ8XvcGtqs92DMRGg2qEyWZQvk8Zt6pump`
+- Meobao: $51,238 1h vol, $13,960 mcap, -4% 1h  
   CA `EwjHVMAVFTyUnyYbreMKbRbAKSKDrirtjEAKoBj3pump`
+- HOGE: $36,064 1h vol, $835,516 mcap, -8% 1h  
+  CA `FVzqGqRmr4UH1Fif6dewmwbJ1p4YUZCu8dcw4Efopump`
