@@ -1,13 +1,13 @@
 # Trencher live report
 
-Updated 2026-11-20T02:13:16Z (paper trading, never real money)
+Updated 2026-11-20T02:28:17Z (paper trading, never real money)
 
 - Equity: $74.23 (-25.8% vs $100 start)
 - Closed trades: 22, 3 wins
 - Fees paid: $14.78 (axiom $2.81, network $9.18, pool $2.66), plus $4.15 lost to slippage
 - New trades: WATCH-ONLY (scans and decides, buys nothing)
-- Brain: subscription, claude-haiku-5-5 for routine calls, claude-opus-5-5 for the daily review; 293 routine calls and 258 plan-limit hits in 48h
-- Watch log: 113 coins being followed, 2154 filed, 0 would-buys (6h follow, sampled every 2 min)
+- Brain: subscription, claude-haiku-5-5 for routine calls, claude-opus-5-5 for the daily review; 291 routine calls and 256 plan-limit hits in 48h
+- Watch log: 105 coins being followed, 2163 filed, 0 would-buys (6h follow, sampled every 2 min)
 
 ## Scorecard (after fees)
 - 22 closed, 3 won (14%), net $-25.79
@@ -73,9 +73,11 @@ Updated 2026-11-20T02:13:16Z (paper trading, never real money)
   CA `H4gHnZ3NCU7Z9XQwGX6YYJNyieGEW8pqwGRUcdSxpump`
 
 ## Last scan
-- 02:12Z: 4 coins, 4 with pairs, 0 passed the market filters, 0 researched
+- 02:27Z: 5 coins, 5 with pairs, 0 passed the market filters, 0 researched
 
 ## Coins it looked at, and why it passed
+- 02:15Z CI (MIGRATED, $32,352 mcap, $5,687 5m vol): REJECT, Top 10 hold 28.0% ex-pool (>25%) (V13)  
+  CA `72Uxzwsgv99kfMtXzmK9LnwQ4Y2P7A9XG926haKtpump`
 - 02:08Z LUCIA (MIGRATED, $56,061 mcap, $21,660 5m vol): PASS at conviction 2, PASS: falling knife, not a dip. Down 88% from a $461k peak with the 5m candle at -46% and no higher low printed (blocker "no higher low"). Also a 23-copy field on a fading GTA theme. (V1, V6, V13)  
   CA `i48RfaqcYLRnNLpSxt8akF2ZubNuHckEReqBVPWpump`
 - 02:00Z DIGS (MIGRATED, $293,466 mcap, $3,415 5m vol): REJECT, Bundles: 10 linked wallet cluster(s) hold 100.0% of supply (>20%) (V17)  
@@ -94,12 +96,10 @@ Updated 2026-11-20T02:13:16Z (paper trading, never real money)
   CA `7bCiddGLe5aM8HE2pigT9jsqkmC1HSPxyXN6GkHEpump`
 - 01:43Z Brian (MIGRATED, $269,879 mcap, $9,216 5m vol): REJECT, RugCheck danger: Creator history of rugged tokens  
   CA `CrJBEGkuaYqtx2W5QHnagg4RL6A2f7bZhiFcssQ5pump`
-- 01:38Z CBUCKS (MIGRATED, $3,774,502 mcap, $3,528 5m vol): REJECT, Top 10 hold 25.9% ex-pool (>25%) (V13)  
-  CA `DtcicPCKTKeAh7TDEzTym3hXeoHAoMiBdYJhMYxZpump`
 
 ## What its skips did next (last 48h)
 A skip "ran" if the coin reached the first target (1.5x) from the skip price before a 20% drop, "dumped" if the drop came first. Sampled every 10 min, followed 6h.
-- top 10 over 25%: blocked 71, ran 14, dumped 52, flat 2, open 3 (saving losses: keep it)
+- top 10 over 25%: blocked 72, ran 14, dumped 53, flat 2, open 3 (saving losses: keep it)
   - ran: BUFO up to 1.83x  
     CA `44gNPkTVKwfNf2fPBdwiPZrVVXLVYTkmBk5VdBzrpump`
   - ran: clawd up to 2.1x  
@@ -149,8 +149,8 @@ A skip "ran" if the coin reached the first target (1.5x) from the skip price bef
     CA `4s38cgZJN4J39S2BQwCkcsJJ9ZGeJSjw8vK9wVtupump`
   - ran: AI up to 1.51x  
     CA `8SacNb6sgiAcscRe4m915B6nL9XX55dk8FS7L532pump`
-- too new / sniping: blocked 6, ran 0, dumped 6, flat 0, open 0 (saving losses: keep it)
 - falling knife / no higher low: blocked 5, ran 0, dumped 2, flat 0, open 3 (too few played out to judge)
+- too new / sniping: blocked 5, ran 0, dumped 5, flat 0, open 0 (saving losses: keep it)
 
 ## Daily review (2026-11-16, claude-opus-5-5)
 Nothing shows a positive edge after costs. Over 309 settled coins, every setup lost money net: FINAL_STRETCH -7.2%, DIP -7.4%, MIGRATED -13.5%. Costs alone averaged 9.8% per round trip. Before costs, FINAL_STRETCH made about +2.9% and DIP about +1.8%, but at n=46 and n=54 the noise is roughly ±4–5 points, so neither is different from zero. With a 1.5x / -20% plan and ~10% costs, you need about 43% of coins to reach 1.5x before -20% just to break even. The best group (FINAL_STRETCH) managed 32.6%, and the error bar on that is about ±14 points. The routine model gave zero would-buys, so the "did its buys beat its passes" question can't be answered. It passed on all 164 coins it reviewed. Those coins averaged -11.7% net, about the same as the checklist rejects at -11.3%, so passing on everything was roughly right this day, even though it missed LMAO, Marvin and WIGGLES.
@@ -193,11 +193,11 @@ Meta: dog and AI-named reskins on fresh pumpswap pairs have the live 5-minute vo
 ## Moving most in its scans, last 30 min (1h volume)
 - iAgent: $2,849,248 1h vol, $1,862,438 mcap, +1574% 1h  
   CA `44DZsPNJUtUyTkELAFYdwCpe82sEt12HZKrMgK1Spump`
-- RUGGED: $817,277 1h vol, $389,847 mcap, +1258% 1h  
-  CA `GT8WxWKEgxzZiKL89Uu288vb8jnescwpNSrvyHzcpump`
-- LOOSY: $709,391 1h vol, $1,085,162 mcap, +2618% 1h  
-  CA `HF2RBPrfNBk9TxggL2cYZFEKSgirzh5HKCngLENTpump`
 - LUCIA: $295,578 1h vol, $58,041 mcap, -68% 1h  
   CA `i48RfaqcYLRnNLpSxt8akF2ZubNuHckEReqBVPWpump`
-- Brian: $274,657 1h vol, $274,085 mcap, +656% 1h  
-  CA `CrJBEGkuaYqtx2W5QHnagg4RL6A2f7bZhiFcssQ5pump`
+- ERROR: $137,718 1h vol, $9,273 mcap, +147% 1h  
+  CA `4oiC2EpwCuYbJNJPuWXrmVHnhTZ64yXAWyBDNATjpump`
+- I: $86,792 1h vol, $2,067 mcap, -96% 1h  
+  CA `3emn4AZwHpsH8K6rqjsMTeFHJTg4XqdPe9PBHpV3JANJ`
+- COOKIE: $71,487 1h vol, $41,744 mcap, -48% 1h  
+  CA `7q3j8jkgGzVuk7pcQ2uQqWaFwyYzJiCanoRdBtHHpump`
