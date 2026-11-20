@@ -1,13 +1,13 @@
 # Trencher live report
 
-Updated 2026-11-20T20:25:27Z (paper trading, never real money)
+Updated 2026-11-20T20:40:31Z (paper trading, never real money)
 
 - Equity: $74.23 (-25.8% vs $100 start)
 - Closed trades: 22, 3 wins
 - Fees paid: $14.78 (axiom $2.81, network $9.18, pool $2.66), plus $4.15 lost to slippage
 - New trades: WATCH-ONLY (scans and decides, buys nothing)
-- Brain: subscription, claude-haiku-5-5 for routine calls, claude-opus-5-5 for the daily review; 346 routine calls and 151 plan-limit hits in 48h
-- Watch log: 91 coins being followed, 2424 filed, 0 would-buys (6h follow, sampled every 2 min)
+- Brain: subscription, claude-haiku-5-5 for routine calls, claude-opus-5-5 for the daily review; 346 routine calls and 149 plan-limit hits in 48h
+- Watch log: 89 coins being followed, 2427 filed, 0 would-buys (6h follow, sampled every 2 min)
 
 ## Scorecard (after fees)
 - 22 closed, 3 won (14%), net $-25.79
@@ -73,9 +73,11 @@ Updated 2026-11-20T20:25:27Z (paper trading, never real money)
   CA `H4gHnZ3NCU7Z9XQwGX6YYJNyieGEW8pqwGRUcdSxpump`
 
 ## Last scan
-- 20:25Z: 5 coins, 5 with pairs, 0 passed the market filters, 0 researched
+- 20:39Z: 9 coins, 9 with pairs, 0 passed the market filters, 0 researched
 
 ## Coins it looked at, and why it passed
+- 20:30Z Singularity (MIGRATED, $94,907 mcap, $70,281 5m vol): PASS at conviction 3, PASS. Singularity is a 24-minute-old vamp leader that just spiked +119% in 5m with no printed higher low, a 0.1-day-old AI dating site with no GitHub, and no catalyst. Blocker: chasing spike. (V1, V6, V13)  
+  CA `7R4MP6VX7n3RMNhL9zsk5Zu5ibZvwq8npUYnRq7epump`
 - 20:23Z PAY (DIP, $35,041 mcap, $4,248 5m vol): REJECT, Dip with fading attention is a falling knife, not a dip (5m at 0.18x the hour's pace, under 0.6x)  
   CA `GdqJ3D4BF6ZKtpXajVqZTP39vrwD8wDXZGgw7tBA8PAY`
 - 20:22Z OGTA (MIGRATED, $91,444 mcap, $1,947 5m vol): REJECT, 5m volume $1,947 is dead (<$2,000) (V1)  
@@ -94,19 +96,17 @@ Updated 2026-11-20T20:25:27Z (paper trading, never real money)
   CA `3fWhdo8bQCamw5ed6yNGdvaru1qS5UVwB6dYp9znpump`
 - 19:50Z GATO (MIGRATED, $3,431,414 mcap, $4,365 5m vol): REJECT, Dev holds 2.7% (>1%) (V13, V17)  
   CA `HsprHxBRgiVaQdRf3TnKNuZZtaX9JUSPgMFdAkk6pump`
-- 19:37Z MATHISOVER (MIGRATED, $78,391 mcap, $3,052 5m vol): PASS at conviction 2, PASS: chasing, flow below pace, no higher low, and the story lives on the coin's own site. Blockers: chasing / flow below pace / no higher low. (V1, V6, V13)  
-  CA `3JgkhGnN5ggpE14Ykb2sgcsF1LTBUFyVZBPa3VrDpump`
 
 ## What its skips did next (last 48h)
 A skip "ran" if the coin reached the first target (1.5x) from the skip price before a 20% drop, "dumped" if the drop came first. Sampled every 10 min, followed 6h.
-- top 10 over 25%: blocked 61, ran 4, dumped 52, flat 4, open 1 (saving losses: keep it)
-  - ran: DAKITTY up to 1.51x  
-    CA `3YyNSd5dAe5hbKu83syLCjZKWYD9d94EGYCfEWNkpump`
+- top 10 over 25%: blocked 60, ran 3, dumped 53, flat 4, open 0 (saving losses: keep it)
   - ran: AudaCity up to 1.66x  
     CA `ERDrmaqsoeLdsCMMpBKkRM4LV1mzTA2KHrVxKLpqpump`
   - ran: Audacity up to 2.7x  
     CA `5oYuJG44HdkSSj2pabAKzKk7p2p3b1LbqUC5n82ppump`
-- falling knife (code): blocked 42, ran 3, dumped 35, flat 1, open 3 (saving losses: keep it)
+  - ran: J4F up to 2.22x  
+    CA `pwtKLrLyRZy78eM2mR74xxe7mzREH1MxGcbvZWApump`
+- falling knife (code): blocked 41, ran 3, dumped 36, flat 1, open 1 (saving losses: keep it)
   - ran: DCTC up to 2.59x  
     CA `47f8bEDWs6VDpnnmxegyL4A3GbBVVcssrMQeBjPvpump`
   - ran: BUNC up to 1.91x  
@@ -128,10 +128,10 @@ A skip "ran" if the coin reached the first target (1.5x) from the skip price bef
     CA `8SacNb6sgiAcscRe4m915B6nL9XX55dk8FS7L532pump`
   - ran: SWRDXSTFF up to 1.77x  
     CA `Csoj9XHJfBAxsKswqKKBENnGeoRDHtACfyYi7HmJpump`
-- too new / sniping: blocked 16, ran 1, dumped 14, flat 0, open 1 (saving losses: keep it)
+- too new / sniping: blocked 16, ran 1, dumped 15, flat 0, open 0 (saving losses: keep it)
   - ran: AudaCity up to 1.96x  
     CA `3rtTUCpe1BBgCTNWQ9jK3xkAz1E7SPqMt4uYHx1Bpump`
-- near the high / chasing: blocked 15, ran 3, dumped 12, flat 0, open 0 (saving losses: keep it)
+- near the high / chasing: blocked 16, ran 3, dumped 12, flat 0, open 1 (saving losses: keep it)
   - ran: BEAR up to 2.32x  
     CA `DCPm44cT9i39HjR13QHYgxkR7wEx9TDeniGuayB5pump`
   - ran: ZOL up to 1.55x  
@@ -188,16 +188,16 @@ No edge yet. All 322 settled coins lost money after costs on the simple plan, an
 - [2026-11-02 20:25] I expected Slingoor, a clean MIGRATED leader with $25k of 5m flow at pace and a 0.77 buy share, to retest its $408k high from $304k. It never went green (0.98x peak) and hit the -20% stop in 2 minutes, a -$2.86 probe. My own thesis admitted there was no printed higher low after a peak only 6 minutes old, so this confirms the money-shape rule: buy share and flow are not structure (V1, V6). Next time a MIGRATED pullback with no higher low above the hourly low is a PASS with blocker "no higher low", not a probe. This is one loss, so it adds no new ban beyond the rule I already have.
 
 ## Meta right now
-The meta is brand-name and cryptid tickers with live 5m flow. The cat/animal wave is a 1-hour spike that has gone thin: BTC and CATPOOP are at $0 to $3k 5m and MAYA is at $0, so I'm trusting the scan over the crawler's cat numbers. Three themes are live: (1) brand and domain names, with Singularity.com on two CAs at $279k and $95k 5m, 54% and 83% buys, only about 6 minutes old, which is a vamp fight, so find the original before anything else; (2) cryptids, with BIGFOOT IS REAL at $18.8k 5m, 54% buys, $34k cap, while The Bigfoot Files has zero buys, so it's split; (3) MIC, a country-name coin at $96k 5m with 52% buys. Fading: Trump and GTA (OFFICIALGTA at $3.6k 5m, 25h old, and the Trump dinner news is down 98%), dog/doge names (HOGE and LOOSY under $7k 5m), and holiday names (RUDY at 44% buys). Setups to research, not buy: BIGFOOT IS REAL, and the Singularity original once identified, only on a pullback that holds 5m above $10k with buys above half; MIC and both Singularity pairs are up 140-500% in an hour, so that is chase territory. Holder, dev and bundle checks are pending on all of these, so this is a read, not an entry.
+Meta, from the movers: brand and domain names are the live theme, led by Singularity. Two fresh CAs are in a vamp fight: 7R4M... at a $26.5k cap with $26.8k 5m and 58% buys, and Singularity.com (FBKk...) at $31k with $3.6k 5m and 56% buys. Both are under 90 minutes old, so the original has to be identified first. The biggest flow is DacityCoin (DCTY), 6 minutes old, $299k cap, $199k 5m, 61% buys, +91% in the hour. I can't confirm a narrative for it from the web, so it's a research item and chase territory, with a bundle check before anything. Dog names are split: Doge Tyson (DYSON) has 89% buys on a -43% hour with $8k 5m, a pullback to watch if 5m volume rebuilds above $10k. The cat and cryptid wave is fading (BIGFOOT -65% at $1.8k 5m, FIENA -99%, MIC at $852 5m), and Trump/GTA is fading too (OFFICIALGTA at $2.1k 5m, the Trump dinner down 98% from its 2025 high). The crawler's Singularity and cat numbers ran far hotter than the scan, so I trust the scan. Setups to research, not buy: the Singularity original on a pullback that holds 5m above $10k with buys above half, and DYSON if it reclaims $10k 5m. Holder, dev and bundle checks are pending on all of them, so this is a read, not an entry.
 
 ## Moving most in its scans, last 30 min (1h volume)
 - PAY: $278,290 1h vol, $34,622 mcap, +33% 1h  
   CA `GdqJ3D4BF6ZKtpXajVqZTP39vrwD8wDXZGgw7tBA8PAY`
 - DCTY: $252,016 1h vol, $299,185 mcap, +91% 1h  
   CA `7DQQejSWt4bgNmGFFD6QPPUA1YLoMxWhz4roN5CQjE9k`
+- Singularity: $191,038 1h vol, $94,907 mcap, +228% 1h  
+  CA `7R4MP6VX7n3RMNhL9zsk5Zu5ibZvwq8npUYnRq7epump`
 - DYSON: $164,647 1h vol, $241,132 mcap, -43% 1h  
   CA `C2As2w55q3V3snKVCyA3nZvmQJSx2NApM5SLK5krpump`
-- Singularity: $73,689 1h vol, $26,494 mcap, -8% 1h  
-  CA `7R4MP6VX7n3RMNhL9zsk5Zu5ibZvwq8npUYnRq7epump`
-- FIENA: $56,864 1h vol, $1,285 mcap, -99% 1h  
-  CA `FqjZnuzRv3QYQQQrRRxt6fAGtrnaXnPXFabExM7Ppump`
+- LOOSY: $54,538 1h vol, $341,838 mcap, +23% 1h  
+  CA `HF2RBPrfNBk9TxggL2cYZFEKSgirzh5HKCngLENTpump`
