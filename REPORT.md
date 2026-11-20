@@ -1,13 +1,13 @@
 # Trencher live report
 
-Updated 2026-11-20T08:32:27Z (paper trading, never real money)
+Updated 2026-11-20T08:47:35Z (paper trading, never real money)
 
 - Equity: $74.23 (-25.8% vs $100 start)
 - Closed trades: 22, 3 wins
 - Fees paid: $14.78 (axiom $2.81, network $9.18, pool $2.66), plus $4.15 lost to slippage
 - New trades: WATCH-ONLY (scans and decides, buys nothing)
-- Brain: subscription, claude-haiku-5-5 for routine calls, claude-opus-5-5 for the daily review; 321 routine calls and 220 plan-limit hits in 48h
-- Watch log: 86 coins being followed, 2270 filed, 0 would-buys (6h follow, sampled every 2 min)
+- Brain: subscription, claude-haiku-5-5 for routine calls, claude-opus-5-5 for the daily review; 322 routine calls and 219 plan-limit hits in 48h
+- Watch log: 80 coins being followed, 2278 filed, 0 would-buys (6h follow, sampled every 2 min)
 
 ## Scorecard (after fees)
 - 22 closed, 3 won (14%), net $-25.79
@@ -73,9 +73,13 @@ Updated 2026-11-20T08:32:27Z (paper trading, never real money)
   CA `H4gHnZ3NCU7Z9XQwGX6YYJNyieGEW8pqwGRUcdSxpump`
 
 ## Last scan
-- 08:31Z: 2 coins, 2 with pairs, 0 passed the market filters, 0 researched
+- 08:47Z: 3 coins, 3 with pairs, 0 passed the market filters, 0 researched
 
 ## Coins it looked at, and why it passed
+- 08:46Z OGTA (MIGRATED, $526,201 mcap, $15,758 5m vol): PASS at conviction 3, PASS: no breakout, no higher low, and the bottom-buy rule has no catalyst. OGTA is a 12-copy GTA field with a 0.7-day-old domain. (V1, V3, V6)  
+  CA `7bCiddGLe5aM8HE2pigT9jsqkmC1HSPxyXN6GkHEpump`
+- 08:45Z LOOSY (MIGRATED, $1,057,807 mcap, $4,365 5m vol): PASS at conviction 3, PASS: no higher low, it's printing lower lows, and the project's own site shows "CA TBA" on a 10-hour-old domain (V1, V3, V6). Blocker: "no higher low".  
+  CA `HF2RBPrfNBk9TxggL2cYZFEKSgirzh5HKCngLENTpump`
 - 08:30Z CATMARIO (MIGRATED, $38,937 mcap, $4,845 5m vol): PASS at conviction 2, PASS: flow below pace, 5m $4.8k under the $10k bar, and the last 5m candle is up 28% on a spike. Blockers: "flow below pace", "too new", "chasing spike". (V1, V6)  
   CA `6CTPhzrmvTiwoP8XgVy8Jhy6qLM1XpsL5cnyeuSxpump`
 - 08:17Z enu (MIGRATED, $63,885 mcap, $7,855 5m vol): PASS at conviction 3, PASS — enu is up 112% in an hour with 22 coins in the same-ticker field, and the first resistance is only 1.22x away. Mid-range, no story. (target too close)  
@@ -92,10 +96,6 @@ Updated 2026-11-20T08:32:27Z (paper trading, never real money)
   CA `HF2RBPrfNBk9TxggL2cYZFEKSgirzh5HKCngLENTpump`
 - 07:58Z STF (FINAL_STRETCH, $23,236 mcap, $25,254 5m vol): PASS at conviction 3, PASS: chasing spike. STF is up 861% in an hour, sits 15% off a $27k peak, and is one of 11 fish copies with no story on the radar (V1, V6, V13).  
   CA `EhBC9qujofnUest7sLbmvvks4o5wW3jZPMBDiMJopump`
-- 07:49Z PATRICK (MIGRATED, $64,059 mcap, $9,564 5m vol): PASS at conviction 3, PASS. Flow is at 0.4x its hourly pace, no higher low has printed, and it's a bottom buy with no named catalyst. Blocker: "flow below pace". (V1, V6)  
-  CA `8mnJZnxaNLqVwkaWWGH7dKmoEzyYzGJx5pHaCp7spump`
-- 07:31Z enu (MIGRATED, $43,733 mcap, $2,133 5m vol): PASS at conviction 3, PASS: target too close and mid-range entry. enu is 1.18x under its 5.3e-5 high, 38% above its printed higher low, on $2.1k of 5m flow. Nothing to chase (V1, V6).  
-  CA `9msLfYfXBrSbrApCZAPuPMCNmPqNtEL1VPKh1AEYpump`
 
 ## What its skips did next (last 48h)
 A skip "ran" if the coin reached the first target (1.5x) from the skip price before a 20% drop, "dumped" if the drop came first. Sampled every 10 min, followed 6h.
@@ -149,14 +149,14 @@ A skip "ran" if the coin reached the first target (1.5x) from the skip price bef
     CA `8SacNb6sgiAcscRe4m915B6nL9XX55dk8FS7L532pump`
   - ran: SWRDXSTFF up to 1.77x  
     CA `Csoj9XHJfBAxsKswqKKBENnGeoRDHtACfyYi7HmJpump`
-- too new / sniping: blocked 8, ran 1, dumped 6, flat 0, open 1 (saving losses: keep it)
-  - ran: AudaCity up to 1.96x  
-    CA `3rtTUCpe1BBgCTNWQ9jK3xkAz1E7SPqMt4uYHx1Bpump`
-- falling knife / no higher low: blocked 7, ran 2, dumped 2, flat 2, open 1 (mixed)
+- falling knife / no higher low: blocked 9, ran 2, dumped 3, flat 2, open 2 (mixed)
   - ran: pCAT up to 1.58x  
     CA `BLdC7hwRijHudKYDmtEkx1SHUdBWm8XbjBCSvwa6pump`
   - ran: MACCA up to 1.71x  
     CA `C5eGEXJZYvXEbKdyvPtasksjGNV4xvMowpKM92bVv47f`
+- too new / sniping: blocked 8, ran 1, dumped 6, flat 0, open 1 (saving losses: keep it)
+  - ran: AudaCity up to 1.96x  
+    CA `3rtTUCpe1BBgCTNWQ9jK3xkAz1E7SPqMt4uYHx1Bpump`
 
 ## Daily review (2026-11-16, claude-opus-5-5)
 Nothing shows a positive edge after costs. Over 309 settled coins, every setup lost money net: FINAL_STRETCH -7.2%, DIP -7.4%, MIGRATED -13.5%. Costs alone averaged 9.8% per round trip. Before costs, FINAL_STRETCH made about +2.9% and DIP about +1.8%, but at n=46 and n=54 the noise is roughly ±4–5 points, so neither is different from zero. With a 1.5x / -20% plan and ~10% costs, you need about 43% of coins to reach 1.5x before -20% just to break even. The best group (FINAL_STRETCH) managed 32.6%, and the error bar on that is about ±14 points. The routine model gave zero would-buys, so the "did its buys beat its passes" question can't be answered. It passed on all 164 coins it reviewed. Those coins averaged -11.7% net, about the same as the checklist rejects at -11.3%, so passing on everything was roughly right this day, even though it missed LMAO, Marvin and WIGGLES.
@@ -199,11 +199,11 @@ Not quiet, but thin. The movers show one rising theme: sub-day pump.fun characte
 ## Moving most in its scans, last 30 min (1h volume)
 - CATMARIO: $162,790 1h vol, $38,506 mcap, -14% 1h  
   CA `6CTPhzrmvTiwoP8XgVy8Jhy6qLM1XpsL5cnyeuSxpump`
-- iAgent: $82,194 1h vol, $1,449,557 mcap, -30% 1h  
-  CA `44DZsPNJUtUyTkELAFYdwCpe82sEt12HZKrMgK1Spump`
-- apocry : $46,096 1h vol, $51,212 mcap, -47% 1h  
-  CA `HVxXzEt87QszpC95kMKAfrHdboj4K1TVxYNMzwmbpump`
-- enu: $35,843 1h vol, $64,392 mcap, +114% 1h  
-  CA `9msLfYfXBrSbrApCZAPuPMCNmPqNtEL1VPKh1AEYpump`
-- HOGE: $28,545 1h vol, $1,165,459 mcap, +11% 1h  
-  CA `FVzqGqRmr4UH1Fif6dewmwbJ1p4YUZCu8dcw4Efopump`
+- OGTA: $113,060 1h vol, $549,725 mcap, -6% 1h  
+  CA `7bCiddGLe5aM8HE2pigT9jsqkmC1HSPxyXN6GkHEpump`
+- PATRICK: $86,582 1h vol, $13,665 mcap, -78% 1h  
+  CA `8mnJZnxaNLqVwkaWWGH7dKmoEzyYzGJx5pHaCp7spump`
+- LOOSY: $51,766 1h vol, $1,057,807 mcap, -9% 1h  
+  CA `HF2RBPrfNBk9TxggL2cYZFEKSgirzh5HKCngLENTpump`
+- STF: $29,971 1h vol, $3,860 mcap, -87% 1h  
+  CA `EhBC9qujofnUest7sLbmvvks4o5wW3jZPMBDiMJopump`
