@@ -1,13 +1,13 @@
 # Trencher live report
 
-Updated 2026-11-20T14:52:27Z (paper trading, never real money)
+Updated 2026-11-20T15:07:29Z (paper trading, never real money)
 
 - Equity: $74.23 (-25.8% vs $100 start)
 - Closed trades: 22, 3 wins
 - Fees paid: $14.78 (axiom $2.81, network $9.18, pool $2.66), plus $4.15 lost to slippage
 - New trades: WATCH-ONLY (scans and decides, buys nothing)
-- Brain: subscription, claude-haiku-5-5 for routine calls, claude-opus-5-5 for the daily review; 331 routine calls and 183 plan-limit hits in 48h
-- Watch log: 73 coins being followed, 2359 filed, 0 would-buys (6h follow, sampled every 2 min)
+- Brain: subscription, claude-haiku-5-5 for routine calls, claude-opus-5-5 for the daily review; 331 routine calls and 182 plan-limit hits in 48h
+- Watch log: 74 coins being followed, 2360 filed, 0 would-buys (6h follow, sampled every 2 min)
 
 ## Scorecard (after fees)
 - 22 closed, 3 won (14%), net $-25.79
@@ -73,9 +73,13 @@ Updated 2026-11-20T14:52:27Z (paper trading, never real money)
   CA `H4gHnZ3NCU7Z9XQwGX6YYJNyieGEW8pqwGRUcdSxpump`
 
 ## Last scan
-- 14:51Z: 7 coins, 7 with pairs, 2 passed the market filters, 2 researched
+- 15:06Z: 5 coins, 5 with pairs, 1 passed the market filters, 1 researched
 
 ## Coins it looked at, and why it passed
+- 15:07Z RUDY (DIP, $109,695 mcap, $7,642 5m vol): PASS at conviction 3, PASS: no catalyst, theme pace under 1x, and a bigger same-ticker token on the board. A dead story bounce is a falling knife. (V1, V6, V13)  
+  CA `GRMRQSkBGg2Cc8Y9GePNBcJVk49YepWkXUDQBXAMpump`
+- 15:00Z TOP (MIGRATED, $110,233 mcap, $14,235 5m vol): REJECT, RugCheck danger: Top 10 holders high ownership  
+  CA `hT9xKkj6dPMz97zcxEEE5T5fFdm6x31P6FodwT8pump`
 - 14:52Z SWJ (MIGRATED, $630,731 mcap, $2,184 5m vol): PASS at conviction 2, PASS — 23 same-ticker copies, no verified original, no catalyst, and the first resistance is only ~1.07x away. Blockers: "no catalyst" and "target too close" (V1, V13).  
   CA `gHZhqEnFnitWCJ1MA2i9BzqTReFMhsGmbdL17xypump`
 - 14:51Z OGTA (MIGRATED, $139,962 mcap, $4,096 5m vol): PASS at conviction 2, PASS: OGTA is 93% off its $2.07M peak with $4.1k of 5m volume at 0.58x pace. That's a dump, not a dip, and nothing about it is rising (V1, V6).  
@@ -92,10 +96,6 @@ Updated 2026-11-20T14:52:27Z (paper trading, never real money)
   CA `HsprHxBRgiVaQdRf3TnKNuZZtaX9JUSPgMFdAkk6pump`
 - 14:26Z hyrax (MIGRATED, $58,856 mcap, $28,078 5m vol): REJECT, Top 10 hold 28.4% ex-pool (>25%) (V13)  
   CA `dg5hPd5Mnb9NHk64QmunzyHoPTFt6ewhpQT33Yxpump`
-- 14:21Z RUDY (DIP, $148,438 mcap, $6,494 5m vol): PASS at conviction 3, PASS — Rudolph is a DIP on a dead name with no catalyst, not the leader of its 14-copy field, and no printed higher low. Blocker: "no catalyst" (V1, V6, V13).  
-  CA `GRMRQSkBGg2Cc8Y9GePNBcJVk49YepWkXUDQBXAMpump`
-- 14:06Z SNAPMATIC  (MIGRATED, $60,023 mcap, $3,787 5m vol): REJECT, Top 10 hold 27.7% ex-pool (>25%) (V13)  
-  CA `Gt9qKqRKdDK2mSczG9WYgRqS8pZkCw47ZW71iW34pump`
 
 ## What its skips did next (last 48h)
 A skip "ran" if the coin reached the first target (1.5x) from the skip price before a 20% drop, "dumped" if the drop came first. Sampled every 10 min, followed 6h.
@@ -106,14 +106,14 @@ A skip "ran" if the coin reached the first target (1.5x) from the skip price bef
     CA `A2MgdY1oU6pqsREQ8eCPhR6DSMrGYaCPXUWUMRXgpump`
   - ran: CDOG up to 1.99x  
     CA `5tAB1DMgrsJKgaKcfCfj1RzumuqovQP1LuxzQ7thpump`
-- falling knife (code): blocked 50, ran 6, dumped 42, flat 1, open 1 (saving losses: keep it)
+- falling knife (code): blocked 50, ran 6, dumped 43, flat 1, open 0 (saving losses: keep it)
   - ran: Apocrycoin up to 1.54x  
     CA `79rE2ac8JhN3U12QLhymgDmCTiwBN1d4maTcK1fhpump`
   - ran: APCY up to 1.74x  
     CA `7fZK84wYShNUXKJnBkfXkeu5h2edduNkZV3p2B2LBCgC`
   - ran: AI up to 2.14x  
     CA `GUmgNeyZCLrjQW2TaLhqkTUas8isQc86YuzKQ6Fppump`
-- RugCheck danger: blocked 29, ran 4, dumped 21, flat 1, open 3 (saving losses: keep it)
+- RugCheck danger: blocked 29, ran 6, dumped 21, flat 1, open 1 (saving losses: keep it)
   - ran: CATCOIN up to 2.06x  
     CA `9JngoeaZHbV4f5EyRR3oDLNPH7VUGw1PYQC4s6j2pump`
   - ran: Leonida up to 1.51x  
@@ -145,7 +145,7 @@ A skip "ran" if the coin reached the first target (1.5x) from the skip price bef
     CA `8SacNb6sgiAcscRe4m915B6nL9XX55dk8FS7L532pump`
   - ran: SWRDXSTFF up to 1.77x  
     CA `Csoj9XHJfBAxsKswqKKBENnGeoRDHtACfyYi7HmJpump`
-- too new / sniping: blocked 11, ran 1, dumped 8, flat 0, open 2 (saving losses: keep it)
+- too new / sniping: blocked 11, ran 1, dumped 10, flat 0, open 0 (saving losses: keep it)
   - ran: AudaCity up to 1.96x  
     CA `3rtTUCpe1BBgCTNWQ9jK3xkAz1E7SPqMt4uYHx1Bpump`
 - near the high / chasing: blocked 10, ran 3, dumped 7, flat 0, open 0 (saving losses: keep it)
@@ -195,13 +195,13 @@ No edge yet. All 322 settled coins lost money after costs on the simple plan, an
 Trencher: The meta on scan_movers is fresh pump.fun launches running on real 5m volume: Catalyst is +794% at 0.4h on $9.5k 5m with 65% buys, Raja has $16k 5m at 57% buys, and Ashton and Jimmy De Santa are both up 110%+ on under $3k. Dog/GTA names (Cool Dog LOOSY, OFFICIALGTA OGTA, and Jimmy De Santa, which I read as a GTA V character name) hold roughly 70% buy flow but have thin 5m volume. Cats are fading: Sweet Potato Cat has $63 of 5m, Macca is -98% with $0 5m, and Stick Scene is -97% with zero buys on the scan, so the crawler's +914% on STICK doesn't match and I'm ignoring it. Trump, Anthropic and holiday names are absent from the movers, so news is not the trench meta right now. Setups to research, not buy: OGTA on a pullback if its 71% buy flow holds and 5m clears $10k (it's $9k now), and Catalyst only after a pullback that holds with buyers, not at +794%. Raja is a PASS for now: $403k of 1h volume on a $24k cap looks like a bot loop until holder and bundle checks say otherwise.
 
 ## Moving most in its scans, last 30 min (1h volume)
-- Raja: $400,221 1h vol, $33,428 mcap, +44% 1h  
-  CA `7ycjv7RnffKDdLifHuRUDRhBbe3oQk9qp7EvViGshcMr`
 - LOOSY: $203,024 1h vol, $2,386,954 mcap, +33% 1h  
   CA `HF2RBPrfNBk9TxggL2cYZFEKSgirzh5HKCngLENTpump`
-- Huss: $83,687 1h vol, $24,612 mcap, -15% 1h  
+- Huss: $106,713 1h vol, $1,915 mcap, -93% 1h  
   CA `J6vWYq5UDTNrv5ufPPes2iD8kRAtMRBqwiJdYFQZpump`
 - Bobo: $81,793 1h vol, $56,434 mcap, +93% 1h  
   CA `4hFU5ir5r9aimDdAZwFusXAEudNsyYG4Y2CHWJBppump`
 - OGTA: $81,694 1h vol, $144,246 mcap, -46% 1h  
   CA `7bCiddGLe5aM8HE2pigT9jsqkmC1HSPxyXN6GkHEpump`
+- RUDY: $73,764 1h vol, $109,695 mcap, -9% 1h  
+  CA `GRMRQSkBGg2Cc8Y9GePNBcJVk49YepWkXUDQBXAMpump`
