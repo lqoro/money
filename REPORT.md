@@ -1,13 +1,13 @@
 # Trencher live report
 
-Updated 2026-11-20T22:41:45Z (paper trading, never real money)
+Updated 2026-11-20T22:56:49Z (paper trading, never real money)
 
 - Equity: $74.23 (-25.8% vs $100 start)
 - Closed trades: 22, 3 wins
 - Fees paid: $14.78 (axiom $2.81, network $9.18, pool $2.66), plus $4.15 lost to slippage
 - New trades: WATCH-ONLY (scans and decides, buys nothing)
-- Brain: subscription, claude-haiku-5-5 for routine calls, claude-opus-5-5 for the daily review; 349 routine calls and 137 plan-limit hits in 48h
-- Watch log: 86 coins being followed, 2451 filed, 0 would-buys (6h follow, sampled every 2 min)
+- Brain: subscription, claude-haiku-5-5 for routine calls, claude-opus-5-5 for the daily review; 348 routine calls and 136 plan-limit hits in 48h
+- Watch log: 84 coins being followed, 2454 filed, 0 would-buys (6h follow, sampled every 2 min)
 
 ## Scorecard (after fees)
 - 22 closed, 3 won (14%), net $-25.79
@@ -73,9 +73,11 @@ Updated 2026-11-20T22:41:45Z (paper trading, never real money)
   CA `H4gHnZ3NCU7Z9XQwGX6YYJNyieGEW8pqwGRUcdSxpump`
 
 ## Last scan
-- 22:41Z: 10 coins, 10 with pairs, 0 passed the market filters, 0 researched
+- 22:55Z: 6 coins, 6 with pairs, 0 passed the market filters, 0 researched
 
 ## Coins it looked at, and why it passed
+- 22:47Z Singularity (DIP, $122,839 mcap, $7,787 5m vol): REJECT, Dip with fading attention is a falling knife, not a dip (5m at 0.33x the hour's pace, under 0.6x)  
+  CA `7R4MP6VX7n3RMNhL9zsk5Zu5ibZvwq8npUYnRq7epump`
 - 22:40Z MONKE (MIGRATED, $68,244 mcap, $27,155 5m vol): REJECT, Bundles: 8 linked wallet cluster(s) hold 24.9% of supply (>20%) (V17)  
   CA `5kLah7PHaD6A4RmU2tdF7Tv3zXHGrkvxgfFtKUfApump`
 - 22:39Z DCTY (MIGRATED, $71,778 mcap, $2,361 5m vol): PASS at conviction 2, PASS: dead story, flow under pace, and the dossier's peak data is corrupt. Blocker "dead story" with "flow below pace" behind it (V1, V6).  
@@ -94,8 +96,6 @@ Updated 2026-11-20T22:41:45Z (paper trading, never real money)
   CA `7R4MP6VX7n3RMNhL9zsk5Zu5ibZvwq8npUYnRq7epump`
 - 21:54Z DCTY (MIGRATED, $89,410 mcap, $3,215 5m vol): PASS at conviction 2, PASS: DacityCoin has $3.2k 5m volume at 0.6x its hourly pace, the theme is at 0.38x pace, and nobody is talking about it. Dead story, thin flow, and the peak data is broken (V1, V6, V13).  
   CA `7DQQejSWt4bgNmGFFD6QPPUA1YLoMxWhz4roN5CQjE9k`
-- 21:43Z BTC (MIGRATED, $1,621,217 mcap, $38,565 5m vol): REJECT, Top 10 hold 32.1% ex-pool (>25%) (V13)  
-  CA `CUfphqswgDK3VP3FX7CiShVCTdGQneFusYRFViABpump`
 
 ## What its skips did next (last 48h)
 A skip "ran" if the coin reached the first target (1.5x) from the skip price before a 20% drop, "dumped" if the drop came first. Sampled every 10 min, followed 6h.
@@ -104,7 +104,7 @@ A skip "ran" if the coin reached the first target (1.5x) from the skip price bef
     CA `5oYuJG44HdkSSj2pabAKzKk7p2p3b1LbqUC5n82ppump`
   - ran: J4F up to 2.22x  
     CA `pwtKLrLyRZy78eM2mR74xxe7mzREH1MxGcbvZWApump`
-- falling knife (code): blocked 36, ran 3, dumped 31, flat 1, open 1 (saving losses: keep it)
+- falling knife (code): blocked 37, ran 3, dumped 31, flat 1, open 2 (saving losses: keep it)
   - ran: DCTC up to 2.59x  
     CA `47f8bEDWs6VDpnnmxegyL4A3GbBVVcssrMQeBjPvpump`
   - ran: BUNC up to 1.91x  
@@ -118,7 +118,7 @@ A skip "ran" if the coin reached the first target (1.5x) from the skip price bef
     CA `9rbKkz2BDQBVgZmrHY6d7PTq2ge91gkpEyE4y9PPpump`
   - ran: PIPI up to 1.63x  
     CA `J51xgomTx21VHY62Q7uv2otWRUSq71WeaApLfsAnpump`
-- flow below pace: blocked 19, ran 4, dumped 11, flat 1, open 3 (saving losses: keep it)
+- flow below pace: blocked 19, ran 4, dumped 12, flat 1, open 2 (saving losses: keep it)
   - ran: SI up to 1.53x  
     CA `4s38cgZJN4J39S2BQwCkcsJJ9ZGeJSjw8vK9wVtupump`
   - ran: AI up to 1.51x  
@@ -189,13 +189,13 @@ No edge yet. All 322 settled coins lost money after costs on the simple plan, an
 Meta from scan_movers, not the news: the movers are thin on 5m and hot on 1h. Only Trader (BYKQ..., raydium, $203k cap, $20.7k 5m, 67% buys) and BUST ($21k cap, $3.9k 5m, 62% buys, +568% in the hour, 0.8h old) show live flow, and most of the rest is under $4k 5m. Two themes repeat: animal and doge names (Cool Dog, GTA6CAT, Pengis, Hogecoin) that are mostly fading or dead on 5m, and copy-named clones (two Singularity CAs, one at -99% on zero volume and one at $24k on $1.2k 5m), which says copycats are being minted off whatever name is hot. The GTA and Trump names from the crawler are fading on the news (headlines say $TRUMP at record lows and dinner interest gone) and barely appear in the movers, so I'm treating them as confirmation of a fade, not a live theme. The crawler's Singularity.com ($557k, $108k 5m) and PARI ($17.7k, $20k 5m) figures don't match the scan (GUtH is $1.3k with $0 5m, PARI is $9.4k with $24 5m), so I'm discarding those numbers and the 7R4M/punch/DCTY calls with them. Setups to research, not buy: Trader as a MIGRATED candidate if the original check holds and 5m stays above $10k, and BUST only if 5m climbs past $10k with buys holding above 60%; holder, dev and bundle checks are still pending on both.
 
 ## Moving most in its scans, last 30 min (1h volume)
-- Trader: $423,687 1h vol, $203,095 mcap, +34% 1h  
-  CA `BYKQkHKMWHidNBLQXgt7NX4PLUtJZRYGLWQYkJzPGenX`
+- Singularity: $275,009 1h vol, $138,782 mcap, -56% 1h  
+  CA `7R4MP6VX7n3RMNhL9zsk5Zu5ibZvwq8npUYnRq7epump`
 - BTC: $220,017 1h vol, $821,979 mcap, -37% 1h  
   CA `CUfphqswgDK3VP3FX7CiShVCTdGQneFusYRFViABpump`
 - MONKE: $156,433 1h vol, $68,244 mcap, +135% 1h  
   CA `5kLah7PHaD6A4RmU2tdF7Tv3zXHGrkvxgfFtKUfApump`
-- ZHDUN: $78,415 1h vol, $5,594 mcap, -39% 1h  
+- ZHDUN: $54,079 1h vol, $4,666 mcap, -79% 1h  
   CA `FCm2mN7KispK7ELaHXS1qfReNGPutbKJm4PvCKPYpump`
-- Bust: $67,083 1h vol, $21,416 mcap, +568% 1h  
-  CA `EoV9JQYi57tqjyQbWLdXVarYpEu82FsP8SDnkbFmpump`
+- LOOSY: $47,374 1h vol, $202,895 mcap, -25% 1h  
+  CA `HF2RBPrfNBk9TxggL2cYZFEKSgirzh5HKCngLENTpump`
