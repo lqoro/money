@@ -1,13 +1,13 @@
 # Trencher live report
 
-Updated 2026-11-20T19:09:44Z (paper trading, never real money)
+Updated 2026-11-20T19:25:07Z (paper trading, never real money)
 
 - Equity: $74.23 (-25.8% vs $100 start)
 - Closed trades: 22, 3 wins
 - Fees paid: $14.78 (axiom $2.81, network $9.18, pool $2.66), plus $4.15 lost to slippage
 - New trades: WATCH-ONLY (scans and decides, buys nothing)
-- Brain: subscription, claude-haiku-5-5 for routine calls, claude-opus-5-5 for the daily review; 343 routine calls and 158 plan-limit hits in 48h
-- Watch log: 89 coins being followed, 2408 filed, 0 would-buys (6h follow, sampled every 2 min)
+- Brain: subscription, claude-haiku-5-5 for routine calls, claude-opus-5-5 for the daily review; 343 routine calls and 156 plan-limit hits in 48h
+- Watch log: 86 coins being followed, 2414 filed, 0 would-buys (6h follow, sampled every 2 min)
 
 ## Scorecard (after fees)
 - 22 closed, 3 won (14%), net $-25.79
@@ -73,9 +73,15 @@ Updated 2026-11-20T19:09:44Z (paper trading, never real money)
   CA `H4gHnZ3NCU7Z9XQwGX6YYJNyieGEW8pqwGRUcdSxpump`
 
 ## Last scan
-- 19:08Z: 6 coins, 6 with pairs, 0 passed the market filters, 0 researched
+- 19:24Z: 3 coins, 3 with pairs, 1 passed the market filters, 1 researched
 
 ## Coins it looked at, and why it passed
+- 19:24Z LOOSY (MIGRATED, $278,851 mcap, $2,622 5m vol): PASS at conviction 2, PASS. Down 91% from a $3.03M peak, 5m flow at half pace, no higher low, and the site doesn't show this CA. Blocker: "flow below pace" plus "theme volume below pace". (V1, V6, V13)  
+  CA `HF2RBPrfNBk9TxggL2cYZFEKSgirzh5HKCngLENTpump`
+- 19:22Z FIENA (MIGRATED, $99,280 mcap, $6,230 5m vol): PASS at conviction 3, PASS: flow below pace. FIENA is at 0.63x its hourly 5m pace, and a shallow-band MIGRATED entry needs at least pace. The holders are clean, but clean holders don't make up for thin flow. (V1, V6)  
+  CA `FqjZnuzRv3QYQQQrRRxt6fAGtrnaXnPXFabExM7Ppump`
+- 19:14Z HOGE (DIP, $909,036 mcap, $6,851 5m vol): REJECT, Bundles: 9 linked wallet cluster(s) hold 26.7% of supply (>20%) (V17)  
+  CA `FVzqGqRmr4UH1Fif6dewmwbJ1p4YUZCu8dcw4Efopump`
 - 19:08Z BIGFOOT (MIGRATED, $34,417 mcap, $18,785 5m vol): PASS at conviction 3, PASS: chasing spike, flow at 0.24x pace, and it's not the Bigfoot theme leader in a split field. Too new, 81% off the high. Wait. (V1, V6, V13)  
   CA `Aykavwa4Z1Z2pW3CRuRpXBXrNZAtuhzAskgBFXFgpump`
 - 19:05Z Singularity (MIGRATED, $333,042 mcap, $79,700 5m vol): REJECT, Top 10 hold 56.4% ex-pool (>25%) (V13)  
@@ -90,23 +96,17 @@ Updated 2026-11-20T19:09:44Z (paper trading, never real money)
   CA `FBKkoVcXaHzpLHheCRnPk3zvLgiqhugbwGcegc9Ykvxx`
 - 18:52Z MATHISOVER (MIGRATED, $62,338 mcap, $3,103 5m vol): PASS, PASS — brain unavailable, not trading blind.  
   CA `3JgkhGnN5ggpE14Ykb2sgcsF1LTBUFyVZBPa3VrDpump`
-- 18:52Z FIONAWIF (MIGRATED, $157,249 mcap, $9,186 5m vol): REJECT, Top 10 hold 51.5% ex-pool (>25%) (V13)  
-  CA `B4C3Jbueio385X9zH3ezXRLZpuAKJcVcjH2ZaDhapump`
-- 18:51Z jingyu (DIP, $80,625 mcap, $3,876 5m vol): REJECT, Bundles: 1 linked wallet cluster(s) hold 100.0% of supply (>20%) (V17)  
-  CA `DUZrwdjEthcJ99ZiRXr31UuqTohoTg7VjTEyfGdBpump`
-- 18:50Z DOG (MIGRATED, $57,299 mcap, $23,347 5m vol): PASS at conviction 3, PASS: chasing spike, too new, no higher low. Up 50% on the 5m at its own high, 11 minutes old, with no printed structure (V1, V6).  
-  CA `9WcGenJJraGbS3x8bAvHp1bk9Zg2DV3NYcePbD9jpump`
 
 ## What its skips did next (last 48h)
 A skip "ran" if the coin reached the first target (1.5x) from the skip price before a 20% drop, "dumped" if the drop came first. Sampled every 10 min, followed 6h.
-- top 10 over 25%: blocked 62, ran 5, dumped 52, flat 4, open 1 (saving losses: keep it)
-  - ran: CDOG up to 1.99x  
-    CA `5tAB1DMgrsJKgaKcfCfj1RzumuqovQP1LuxzQ7thpump`
+- top 10 over 25%: blocked 60, ran 4, dumped 51, flat 4, open 1 (saving losses: keep it)
   - ran: DAKITTY up to 1.51x  
     CA `3YyNSd5dAe5hbKu83syLCjZKWYD9d94EGYCfEWNkpump`
   - ran: AudaCity up to 1.66x  
     CA `ERDrmaqsoeLdsCMMpBKkRM4LV1mzTA2KHrVxKLpqpump`
-- falling knife (code): blocked 42, ran 3, dumped 37, flat 1, open 1 (saving losses: keep it)
+  - ran: Audacity up to 2.7x  
+    CA `5oYuJG44HdkSSj2pabAKzKk7p2p3b1LbqUC5n82ppump`
+- falling knife (code): blocked 41, ran 3, dumped 36, flat 1, open 1 (saving losses: keep it)
   - ran: DCTC up to 2.59x  
     CA `47f8bEDWs6VDpnnmxegyL4A3GbBVVcssrMQeBjPvpump`
   - ran: BUNC up to 1.91x  
@@ -123,16 +123,16 @@ A skip "ran" if the coin reached the first target (1.5x) from the skip price bef
 - thin 5m volume: blocked 16, ran 1, dumped 11, flat 4, open 0 (saving losses: keep it)
   - ran: Snapmatic up to 1.68x  
     CA `4S8pUKWKUAtQKfE5qokSjszWDp1RqQWnom8jNYSWpump`
-- too new / sniping: blocked 16, ran 1, dumped 15, flat 0, open 0 (saving losses: keep it)
-  - ran: AudaCity up to 1.96x  
-    CA `3rtTUCpe1BBgCTNWQ9jK3xkAz1E7SPqMt4uYHx1Bpump`
-- flow below pace: blocked 15, ran 3, dumped 9, flat 1, open 2 (saving losses: keep it)
+- flow below pace: blocked 16, ran 3, dumped 8, flat 1, open 4 (saving losses: keep it)
   - ran: SI up to 1.53x  
     CA `4s38cgZJN4J39S2BQwCkcsJJ9ZGeJSjw8vK9wVtupump`
   - ran: AI up to 1.51x  
     CA `8SacNb6sgiAcscRe4m915B6nL9XX55dk8FS7L532pump`
   - ran: SWRDXSTFF up to 1.77x  
     CA `Csoj9XHJfBAxsKswqKKBENnGeoRDHtACfyYi7HmJpump`
+- too new / sniping: blocked 16, ran 1, dumped 15, flat 0, open 0 (saving losses: keep it)
+  - ran: AudaCity up to 1.96x  
+    CA `3rtTUCpe1BBgCTNWQ9jK3xkAz1E7SPqMt4uYHx1Bpump`
 - near the high / chasing: blocked 15, ran 3, dumped 12, flat 0, open 0 (saving losses: keep it)
   - ran: BEAR up to 2.32x  
     CA `DCPm44cT9i39HjR13QHYgxkR7wEx9TDeniGuayB5pump`
@@ -140,12 +140,12 @@ A skip "ran" if the coin reached the first target (1.5x) from the skip price bef
     CA `UQLWvkwiSsnViuVBy7oArMtzb5RAZyrdJ79amQFrzoL`
   - ran: STICK up to 2.08x  
     CA `532iaQrhFCD3QKFHsAtFAQ1mQZMjMdNrPXLeCS6cpump`
-- dev share over 1%: blocked 14, ran 2, dumped 9, flat 1, open 2 (saving losses: keep it)
+- dev share over 1%: blocked 14, ran 2, dumped 10, flat 1, open 1 (saving losses: keep it)
   - ran: LOOSY up to 1.71x  
     CA `FtSWWxVmKNXz8ksJxzJJ7BdDWXbQb3vC94J99oyypump`
   - ran: MANDY up to 1.54x  
     CA `GQngHP8P6s45MxWnU7JsocfV2HjPQdJZmCEAYKpBpump`
-- bundles over the line: blocked 13, ran 1, dumped 8, flat 3, open 1 (saving losses: keep it)
+- bundles over the line: blocked 13, ran 1, dumped 8, flat 2, open 2 (saving losses: keep it)
   - ran: PAPA up to 1.66x  
     CA `3hdXmQqZHmm7gWWweFKGdkjnxyWQZ2SWVNt1Jty5pump`
 - other: blocked 13, ran 3, dumped 9, flat 0, open 1 (saving losses: keep it)
@@ -199,9 +199,9 @@ The trenches are trading cats and cryptids right now. MAYA (Samoyed, $395k cap, 
   CA `Aykavwa4Z1Z2pW3CRuRpXBXrNZAtuhzAskgBFXFgpump`
 - Singularity: $356,189 1h vol, $109,931 mcap, +143% 1h  
   CA `FBKkoVcXaHzpLHheCRnPk3zvLgiqhugbwGcegc9Ykvxx`
-- MAYA: $345,432 1h vol, $1,321 mcap, -98% 1h  
-  CA `4MXzvR9PX8kVQNQuYQn7inJoGMiWbgPLNgoxyjprpump`
-- BIGFOOT: $290,101 1h vol, $2,215 mcap, -92% 1h  
-  CA `9g9AqLhfhu1fqY9czKLxXsxD62whPUKg3ztu4euYpump`
 - MIC: $270,698 1h vol, $86,935 mcap, +210% 1h  
   CA `G6H8DjYRPomfmG5KrEAMpxoUU2uRLxdeTrkxnSiXpump`
+- BIGFOOT: $261,984 1h vol, $1,980 mcap, -86% 1h  
+  CA `9g9AqLhfhu1fqY9czKLxXsxD62whPUKg3ztu4euYpump`
+- MAYA: $228,328 1h vol, $1,281 mcap, -99% 1h  
+  CA `4MXzvR9PX8kVQNQuYQn7inJoGMiWbgPLNgoxyjprpump`
