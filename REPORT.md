@@ -1,13 +1,13 @@
 # Trencher live report
 
-Updated 2026-11-20T12:04:51Z (paper trading, never real money)
+Updated 2026-11-20T12:20:03Z (paper trading, never real money)
 
 - Equity: $74.23 (-25.8% vs $100 start)
 - Closed trades: 22, 3 wins
 - Fees paid: $14.78 (axiom $2.81, network $9.18, pool $2.66), plus $4.15 lost to slippage
 - New trades: WATCH-ONLY (scans and decides, buys nothing)
-- Brain: subscription, claude-haiku-5-5 for routine calls, claude-opus-5-5 for the daily review; 325 routine calls and 200 plan-limit hits in 48h
-- Watch log: 71 coins being followed, 2324 filed, 0 would-buys (6h follow, sampled every 2 min)
+- Brain: subscription, claude-haiku-5-5 for routine calls, claude-opus-5-5 for the daily review; 323 routine calls and 198 plan-limit hits in 48h
+- Watch log: 70 coins being followed, 2325 filed, 0 would-buys (6h follow, sampled every 2 min)
 
 ## Scorecard (after fees)
 - 22 closed, 3 won (14%), net $-25.79
@@ -73,7 +73,7 @@ Updated 2026-11-20T12:04:51Z (paper trading, never real money)
   CA `H4gHnZ3NCU7Z9XQwGX6YYJNyieGEW8pqwGRUcdSxpump`
 
 ## Last scan
-- 12:04Z: 5 coins, 4 with pairs, 0 passed the market filters, 0 researched
+- 12:19Z: 4 coins, 3 with pairs, 0 passed the market filters, 0 researched
 
 ## Coins it looked at, and why it passed
 - 11:55Z CATMARIO (MIGRATED, $74,450 mcap, $42,082 5m vol): PASS at conviction 4, PASS: chasing. Cat Mario is 3.4% off a 16-minute-old peak after a +31% five-minute candle at 3.7x its hourly pace. That's a spike, not a pullback. Wait for it to retrace and print a higher low (V1, V6).  
@@ -197,13 +197,13 @@ Nothing shows a positive edge after costs. Over 309 settled coins, every setup l
 The meta is cat and pet-name pump.fun launches. A Mario Cat (AMC), whatever cat (WCAT), Sweet Potato Cat and Cool Dog have the buyers, mostly under three hours old on $17k to $430k caps. Cats are rising: AMC is +325% in 1h and WCAT is +205% in 1h with 64% buys. Dog and inu names are fading: Gino -77%, Bibi -55%, Giving Inu -31%, and Cool Dog's 5m is down to $2.7k on 30% buys. GTA is a second, fading theme: OFFICIALGTA is -26% in 1h, still 77% buys on $6.6k of 5m, but well off its hourly pace. Holiday is not a theme in the movers yet. Rudolph (RUDY) is one coin at $15.6k, down 73% in the hour. I'm ignoring the crawler's $57k and six-minute numbers for RUDY because they don't match the scan. Setups: AMC is the only coin that clears MIGRATED (2.6h, $428k cap, $58k 5m, 60% buys). At +325% in an hour I won't chase it. I'd research it now and only buy a pullback that holds with buys above 60%, sized as a probe at conviction 5 with initials at 2x, a -30% stop, and a check that it's the original and not a Cat Mario vamp. WCAT is the early watch: $16.7k cap, but $5.3k 5m is under the $10k bar, so it stays watch-only until volume clears it. No hack-named coins appear in the movers.
 
 ## Moving most in its scans, last 30 min (1h volume)
-- AMC : $383,095 1h vol, $253,744 mcap, +5% 1h  
-  CA `J7bLsZcpkfky92ir8k36Munz91nHKtcDNhDy8d3Qpump`
-- LOOSY: $146,156 1h vol, $1,665,626 mcap, +46% 1h  
-  CA `HF2RBPrfNBk9TxggL2cYZFEKSgirzh5HKCngLENTpump`
 - CATMARIO: $135,823 1h vol, $74,450 mcap, +146% 1h  
   CA `7bQmFyQbEf97rxZcdjLwc3aSHMuGcXvipo2gbTnbpump`
 - iAgent: $85,231 1h vol, $694,942 mcap, -19% 1h  
   CA `44DZsPNJUtUyTkELAFYdwCpe82sEt12HZKrMgK1Spump`
-- OGTA: $82,363 1h vol, $322,484 mcap, +15% 1h  
-  CA `7bCiddGLe5aM8HE2pigT9jsqkmC1HSPxyXN6GkHEpump`
+- Bagwork: $48,856 1h vol, $2,365 mcap, -57% 1h  
+  CA `6BBKkeEDeSSKhngh3hR7kE3cr5nhvDBp3QZtq5M9pump`
+- MAIN: $30,666 1h vol, $13,155 mcap, -70% 1h  
+  CA `9MZiGiBiFA6vLkqJ8kk7MsniLgrU6VrtiWripZFMmain`
+- Meobao: $18,585 1h vol, $26,599 mcap, +65% 1h  
+  CA `EwjHVMAVFTyUnyYbreMKbRbAKSKDrirtjEAKoBj3pump`
