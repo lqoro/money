@@ -1,13 +1,13 @@
 # Trencher live report
 
-Updated 2026-11-20T06:45:47Z (paper trading, never real money)
+Updated 2026-11-20T07:00:55Z (paper trading, never real money)
 
 - Equity: $74.23 (-25.8% vs $100 start)
 - Closed trades: 22, 3 wins
 - Fees paid: $14.78 (axiom $2.81, network $9.18, pool $2.66), plus $4.15 lost to slippage
 - New trades: WATCH-ONLY (scans and decides, buys nothing)
-- Brain: subscription, claude-haiku-5-5 for routine calls, claude-opus-5-5 for the daily review; 318 routine calls and 231 plan-limit hits in 48h
-- Watch log: 101 coins being followed, 2235 filed, 0 would-buys (6h follow, sampled every 2 min)
+- Brain: subscription, claude-haiku-5-5 for routine calls, claude-opus-5-5 for the daily review; 317 routine calls and 229 plan-limit hits in 48h
+- Watch log: 94 coins being followed, 2244 filed, 0 would-buys (6h follow, sampled every 2 min)
 
 ## Scorecard (after fees)
 - 22 closed, 3 won (14%), net $-25.79
@@ -73,9 +73,13 @@ Updated 2026-11-20T06:45:47Z (paper trading, never real money)
   CA `H4gHnZ3NCU7Z9XQwGX6YYJNyieGEW8pqwGRUcdSxpump`
 
 ## Last scan
-- 06:44Z: 4 coins, 4 with pairs, 2 passed the market filters, 2 researched
+- 07:00Z: 4 coins, 4 with pairs, 0 passed the market filters, 0 researched
 
 ## Coins it looked at, and why it passed
+- 06:49Z FIONA (FINAL_STRETCH, $17,735 mcap, $3,974 5m vol): PASS at conviction 3, PASS: spike off a low into a 22k peak, flow under pace, weak name story, no real site. Blocker: no narrative, target too close. (V1, V6)  
+  CA `5kpHB8xoruKHJRigE6FHTG2gZcrPSWWn8u4N7uS9pump`
+- 06:46Z MF (MIGRATED, $138,334 mcap, $2,404 5m vol): REJECT, Dev holds 1.0% (>1%) (V13, V17)  
+  CA `7xumDqxh6AfkPov41c2R6SdCiPrZdWJJTsbogiSepump`
 - 06:45Z enu (MIGRATED, $36,785 mcap, $3,766 5m vol): REJECT, Top 10 hold 25.2% ex-pool (>25%) (V13)  
   CA `9msLfYfXBrSbrApCZAPuPMCNmPqNtEL1VPKh1AEYpump`
 - 06:45Z SWRDXSTFF (MIGRATED, $47,017 mcap, $13,175 5m vol): PASS at conviction 3, PASS: 86% off a $345k peak, 5m flow at 0.48x pace, sells beating buys, no printed higher low. That's a falling knife with a blocker on every rule I have (V1, V6, V13).  
@@ -92,14 +96,10 @@ Updated 2026-11-20T06:45:47Z (paper trading, never real money)
   CA `UQLWvkwiSsnViuVBy7oArMtzb5RAZyrdJ79amQFrzoL`
 - 06:30Z OGTA (MIGRATED, $557,794 mcap, $4,310 5m vol): PASS at conviction 3, PASS: OGTA flow is at 0.82x pace on $4.3k 5m, under the $10k bar, and it's a bottom buy on a fading GTA theme. Blocker: flow below pace. (V1, V6)  
   CA `7bCiddGLe5aM8HE2pigT9jsqkmC1HSPxyXN6GkHEpump`
-- 06:29Z LOOSY (MIGRATED, $1,171,182 mcap, $4,393 5m vol): PASS at conviction 3, PASS — LOOSY is clean on holders (top 10 1.6%, dev 0%, no bundle clusters), but 5m flow is 0.85x pace, the coin is over $1M with only ~1.4x to its peak, and its own site says "CA TBA" on a 7-hour-old domain. The dog meta isn't on the radar. (V1, V6, V13)  
-  CA `HF2RBPrfNBk9TxggL2cYZFEKSgirzh5HKCngLENTpump`
-- 06:25Z PALS (FINAL_STRETCH, $15,690 mcap, $9,759 5m vol): PASS at conviction 3, PASS — PALS is a 20-minute-old pump.fun "pals" copy with no story behind it: zero ticker mentions, not on the radar, website is 0.1 days old, AI-agent LARP with no GitHub. Blocker: dead story. (V1, V6, V13)  
-  CA `CAwfVJ5p5UCogGSVDaF4b6AJfE8mB1WocbUcqXN4pump`
 
 ## What its skips did next (last 48h)
 A skip "ran" if the coin reached the first target (1.5x) from the skip price before a 20% drop, "dumped" if the drop came first. Sampled every 10 min, followed 6h.
-- top 10 over 25%: blocked 74, ran 12, dumped 55, flat 3, open 4 (saving losses: keep it)
+- top 10 over 25%: blocked 74, ran 12, dumped 56, flat 3, open 3 (saving losses: keep it)
   - ran: SHARK up to 1.68x  
     CA `3yxsNufZSWNrvMXw8gwCJFCuUkuTDsb1a55aR7evpump`
   - ran: clipping up to 2.89x  
@@ -120,7 +120,7 @@ A skip "ran" if the coin reached the first target (1.5x) from the skip price bef
     CA `9rbKkz2BDQBVgZmrHY6d7PTq2ge91gkpEyE4y9PPpump`
   - ran: PIPI up to 1.63x  
     CA `J51xgomTx21VHY62Q7uv2otWRUSq71WeaApLfsAnpump`
-- thin 5m volume: blocked 16, ran 1, dumped 6, flat 5, open 4 (saving losses: keep it)
+- thin 5m volume: blocked 16, ran 1, dumped 7, flat 5, open 3 (saving losses: keep it)
   - ran: Snapmatic up to 1.68x  
     CA `4S8pUKWKUAtQKfE5qokSjszWDp1RqQWnom8jNYSWpump`
 - bundles over the line: blocked 16, ran 3, dumped 9, flat 2, open 2 (saving losses: keep it)
@@ -130,7 +130,7 @@ A skip "ran" if the coin reached the first target (1.5x) from the skip price bef
     CA `HricrxBN3QXC3SN5VLtNhaEzoGrYea5ZtaTxQDfKSTNK`
   - ran: PAPA up to 1.66x  
     CA `3hdXmQqZHmm7gWWweFKGdkjnxyWQZ2SWVNt1Jty5pump`
-- dev share over 1%: blocked 13, ran 2, dumped 10, flat 1, open 0 (saving losses: keep it)
+- dev share over 1%: blocked 14, ran 2, dumped 10, flat 1, open 1 (saving losses: keep it)
   - ran: LOOSY up to 1.71x  
     CA `FtSWWxVmKNXz8ksJxzJJ7BdDWXbQb3vC94J99oyypump`
   - ran: MANDY up to 1.54x  
@@ -142,11 +142,13 @@ A skip "ran" if the coin reached the first target (1.5x) from the skip price bef
     CA `89GFxMWQ1r8cwTwRSgeQ9RaGPtUdmDLQgCsQZcrWpump`
   - ran: After up to 2.36x  
     CA `Db2s6iVvenVhJkj96P4UbZWEAYX4nUhgXhSVbQrwpump`
-- flow below pace: blocked 13, ran 2, dumped 5, flat 1, open 5 (saving losses: keep it)
+- flow below pace: blocked 13, ran 3, dumped 6, flat 1, open 3 (saving losses: keep it)
   - ran: SI up to 1.53x  
     CA `4s38cgZJN4J39S2BQwCkcsJJ9ZGeJSjw8vK9wVtupump`
   - ran: AI up to 1.51x  
     CA `8SacNb6sgiAcscRe4m915B6nL9XX55dk8FS7L532pump`
+  - ran: SWRDXSTFF up to 1.77x  
+    CA `Csoj9XHJfBAxsKswqKKBENnGeoRDHtACfyYi7HmJpump`
 - falling knife / no higher low: blocked 7, ran 2, dumped 2, flat 1, open 2 (mixed)
   - ran: pCAT up to 1.58x  
     CA `BLdC7hwRijHudKYDmtEkx1SHUdBWm8XbjBCSvwa6pump`
@@ -201,7 +203,7 @@ Not quiet. The meta in the scan is invented word-brand names launched in the las
   CA `HVxXzEt87QszpC95kMKAfrHdboj4K1TVxYNMzwmbpump`
 - ANTCAP: $214,365 1h vol, $42,423 mcap, -59% 1h  
   CA `8VvT87FRAZY9m2VsvpvVA5zhHSZGXd5eC2SrPDHbpump`
-- MNUT: $103,385 1h vol, $25,925 mcap, -15% 1h  
+- MNUT: $132,172 1h vol, $4,173 mcap, -86% 1h  
   CA `EtJD6hSPf8W82WW6r3eHfjistaUQMHhGsa1uBUqmpump`
-- HARAMBE: $73,467 1h vol, $3,649 mcap, -87% 1h  
-  CA `EU2kWyXgvG6TPkRvbSXqYbbMUT1nUzF8AFhYBWRipump`
+- FIONA: $68,639 1h vol, $19,749 mcap, +189% 1h  
+  CA `5kpHB8xoruKHJRigE6FHTG2gZcrPSWWn8u4N7uS9pump`
