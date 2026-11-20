@@ -1,13 +1,13 @@
 # Trencher live report
 
-Updated 2026-11-20T19:55:09Z (paper trading, never real money)
+Updated 2026-11-20T20:10:13Z (paper trading, never real money)
 
 - Equity: $74.23 (-25.8% vs $100 start)
 - Closed trades: 22, 3 wins
 - Fees paid: $14.78 (axiom $2.81, network $9.18, pool $2.66), plus $4.15 lost to slippage
 - New trades: WATCH-ONLY (scans and decides, buys nothing)
-- Brain: subscription, claude-haiku-5-5 for routine calls, claude-opus-5-5 for the daily review; 345 routine calls and 153 plan-limit hits in 48h
-- Watch log: 88 coins being followed, 2419 filed, 0 would-buys (6h follow, sampled every 2 min)
+- Brain: subscription, claude-haiku-5-5 for routine calls, claude-opus-5-5 for the daily review; 344 routine calls and 152 plan-limit hits in 48h
+- Watch log: 85 coins being followed, 2423 filed, 0 would-buys (6h follow, sampled every 2 min)
 
 ## Scorecard (after fees)
 - 22 closed, 3 won (14%), net $-25.79
@@ -73,9 +73,11 @@ Updated 2026-11-20T19:55:09Z (paper trading, never real money)
   CA `H4gHnZ3NCU7Z9XQwGX6YYJNyieGEW8pqwGRUcdSxpump`
 
 ## Last scan
-- 19:54Z: 2 coins, 2 with pairs, 0 passed the market filters, 0 researched
+- 20:09Z: 5 coins, 5 with pairs, 0 passed the market filters, 0 researched
 
 ## Coins it looked at, and why it passed
+- 19:59Z GTA (MIGRATED, $203,465 mcap, $17,461 5m vol): REJECT, Top 10 hold 42.3% ex-pool (>25%) (V13)  
+  CA `3fWhdo8bQCamw5ed6yNGdvaru1qS5UVwB6dYp9znpump`
 - 19:50Z GATO (MIGRATED, $3,431,414 mcap, $4,365 5m vol): REJECT, Dev holds 2.7% (>1%) (V13, V17)  
   CA `HsprHxBRgiVaQdRf3TnKNuZZtaX9JUSPgMFdAkk6pump`
 - 19:37Z MATHISOVER (MIGRATED, $78,391 mcap, $3,052 5m vol): PASS at conviction 2, PASS: chasing, flow below pace, no higher low, and the story lives on the coin's own site. Blockers: chasing / flow below pace / no higher low. (V1, V6, V13)  
@@ -94,19 +96,17 @@ Updated 2026-11-20T19:55:09Z (paper trading, never real money)
   CA `HF2RBPrfNBk9TxggL2cYZFEKSgirzh5HKCngLENTpump`
 - 19:22Z FIENA (MIGRATED, $99,280 mcap, $6,230 5m vol): PASS at conviction 3, PASS: flow below pace. FIENA is at 0.63x its hourly 5m pace, and a shallow-band MIGRATED entry needs at least pace. The holders are clean, but clean holders don't make up for thin flow. (V1, V6)  
   CA `FqjZnuzRv3QYQQQrRRxt6fAGtrnaXnPXFabExM7Ppump`
-- 19:14Z HOGE (DIP, $909,036 mcap, $6,851 5m vol): REJECT, Bundles: 9 linked wallet cluster(s) hold 26.7% of supply (>20%) (V17)  
-  CA `FVzqGqRmr4UH1Fif6dewmwbJ1p4YUZCu8dcw4Efopump`
 
 ## What its skips did next (last 48h)
 A skip "ran" if the coin reached the first target (1.5x) from the skip price before a 20% drop, "dumped" if the drop came first. Sampled every 10 min, followed 6h.
-- top 10 over 25%: blocked 60, ran 4, dumped 52, flat 4, open 0 (saving losses: keep it)
+- top 10 over 25%: blocked 61, ran 4, dumped 52, flat 4, open 1 (saving losses: keep it)
   - ran: DAKITTY up to 1.51x  
     CA `3YyNSd5dAe5hbKu83syLCjZKWYD9d94EGYCfEWNkpump`
   - ran: AudaCity up to 1.66x  
     CA `ERDrmaqsoeLdsCMMpBKkRM4LV1mzTA2KHrVxKLpqpump`
   - ran: Audacity up to 2.7x  
     CA `5oYuJG44HdkSSj2pabAKzKk7p2p3b1LbqUC5n82ppump`
-- falling knife (code): blocked 41, ran 3, dumped 36, flat 1, open 1 (saving losses: keep it)
+- falling knife (code): blocked 40, ran 3, dumped 35, flat 1, open 1 (saving losses: keep it)
   - ran: DCTC up to 2.59x  
     CA `47f8bEDWs6VDpnnmxegyL4A3GbBVVcssrMQeBjPvpump`
   - ran: BUNC up to 1.91x  
@@ -140,7 +140,7 @@ A skip "ran" if the coin reached the first target (1.5x) from the skip price bef
     CA `UQLWvkwiSsnViuVBy7oArMtzb5RAZyrdJ79amQFrzoL`
   - ran: STICK up to 2.08x  
     CA `532iaQrhFCD3QKFHsAtFAQ1mQZMjMdNrPXLeCS6cpump`
-- dev share over 1%: blocked 14, ran 2, dumped 10, flat 1, open 1 (saving losses: keep it)
+- dev share over 1%: blocked 13, ran 2, dumped 9, flat 1, open 1 (saving losses: keep it)
   - ran: LOOSY up to 1.71x  
     CA `FtSWWxVmKNXz8ksJxzJJ7BdDWXbQb3vC94J99oyypump`
   - ran: MANDY up to 1.54x  
@@ -195,13 +195,13 @@ No edge yet. All 322 settled coins lost money after costs on the simple plan, an
 The meta is brand-name and cryptid tickers with live 5m flow. The cat/animal wave is a 1-hour spike that has gone thin: BTC and CATPOOP are at $0 to $3k 5m and MAYA is at $0, so I'm trusting the scan over the crawler's cat numbers. Three themes are live: (1) brand and domain names, with Singularity.com on two CAs at $279k and $95k 5m, 54% and 83% buys, only about 6 minutes old, which is a vamp fight, so find the original before anything else; (2) cryptids, with BIGFOOT IS REAL at $18.8k 5m, 54% buys, $34k cap, while The Bigfoot Files has zero buys, so it's split; (3) MIC, a country-name coin at $96k 5m with 52% buys. Fading: Trump and GTA (OFFICIALGTA at $3.6k 5m, 25h old, and the Trump dinner news is down 98%), dog/doge names (HOGE and LOOSY under $7k 5m), and holiday names (RUDY at 44% buys). Setups to research, not buy: BIGFOOT IS REAL, and the Singularity original once identified, only on a pullback that holds 5m above $10k with buys above half; MIC and both Singularity pairs are up 140-500% in an hour, so that is chase territory. Holder, dev and bundle checks are pending on all of these, so this is a read, not an entry.
 
 ## Moving most in its scans, last 30 min (1h volume)
-- Singularity: $734,620 1h vol, $23,813 mcap, -46% 1h  
-  CA `FBKkoVcXaHzpLHheCRnPk3zvLgiqhugbwGcegc9Ykvxx`
-- MIC: $400,481 1h vol, $17,535 mcap, -37% 1h  
-  CA `G6H8DjYRPomfmG5KrEAMpxoUU2uRLxdeTrkxnSiXpump`
-- DYSON: $390,786 1h vol, $373,706 mcap, +986% 1h  
-  CA `C2As2w55q3V3snKVCyA3nZvmQJSx2NApM5SLK5krpump`
-- Singularity: $244,286 1h vol, $1,298 mcap, -97% 1h  
+- Singularity: $244,286 1h vol, $1,291 mcap, -97% 1h  
   CA `7KUg78hyohckj8i728YuCu6CweTArxhwRrVrFyvHpump`
-- BIGFOOT: $168,806 1h vol, $16,071 mcap, -77% 1h  
+- Singularity: $125,987 1h vol, $17,655 mcap, -49% 1h  
+  CA `FBKkoVcXaHzpLHheCRnPk3zvLgiqhugbwGcegc9Ykvxx`
+- BIGFOOT: $110,485 1h vol, $10,396 mcap, -34% 1h  
   CA `Aykavwa4Z1Z2pW3CRuRpXBXrNZAtuhzAskgBFXFgpump`
+- MIC: $82,723 1h vol, $15,065 mcap, -69% 1h  
+  CA `G6H8DjYRPomfmG5KrEAMpxoUU2uRLxdeTrkxnSiXpump`
+- FIENA: $71,557 1h vol, $1,272 mcap, -98% 1h  
+  CA `FqjZnuzRv3QYQQQrRRxt6fAGtrnaXnPXFabExM7Ppump`
