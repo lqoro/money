@@ -1,13 +1,13 @@
 # Trencher live report
 
-Updated 2026-11-20T20:10:13Z (paper trading, never real money)
+Updated 2026-11-20T20:25:27Z (paper trading, never real money)
 
 - Equity: $74.23 (-25.8% vs $100 start)
 - Closed trades: 22, 3 wins
 - Fees paid: $14.78 (axiom $2.81, network $9.18, pool $2.66), plus $4.15 lost to slippage
 - New trades: WATCH-ONLY (scans and decides, buys nothing)
-- Brain: subscription, claude-haiku-5-5 for routine calls, claude-opus-5-5 for the daily review; 344 routine calls and 152 plan-limit hits in 48h
-- Watch log: 85 coins being followed, 2423 filed, 0 would-buys (6h follow, sampled every 2 min)
+- Brain: subscription, claude-haiku-5-5 for routine calls, claude-opus-5-5 for the daily review; 346 routine calls and 151 plan-limit hits in 48h
+- Watch log: 91 coins being followed, 2424 filed, 0 would-buys (6h follow, sampled every 2 min)
 
 ## Scorecard (after fees)
 - 22 closed, 3 won (14%), net $-25.79
@@ -73,29 +73,29 @@ Updated 2026-11-20T20:10:13Z (paper trading, never real money)
   CA `H4gHnZ3NCU7Z9XQwGX6YYJNyieGEW8pqwGRUcdSxpump`
 
 ## Last scan
-- 20:09Z: 5 coins, 5 with pairs, 0 passed the market filters, 0 researched
+- 20:25Z: 5 coins, 5 with pairs, 0 passed the market filters, 0 researched
 
 ## Coins it looked at, and why it passed
+- 20:23Z PAY (DIP, $35,041 mcap, $4,248 5m vol): REJECT, Dip with fading attention is a falling knife, not a dip (5m at 0.18x the hour's pace, under 0.6x)  
+  CA `GdqJ3D4BF6ZKtpXajVqZTP39vrwD8wDXZGgw7tBA8PAY`
+- 20:22Z OGTA (MIGRATED, $91,444 mcap, $1,947 5m vol): REJECT, 5m volume $1,947 is dead (<$2,000) (V1)  
+  CA `7bCiddGLe5aM8HE2pigT9jsqkmC1HSPxyXN6GkHEpump`
+- 20:22Z DCTY (MIGRATED, $370,027 mcap, $180,017 5m vol): PASS at conviction 3, PASS. DCTY is up 164% in 5 minutes on 9x its hourly pace, six minutes old, with no printed higher low and zero narrative mentions. That's a spike, not a setup. Chasing spike (V1, V6).  
+  CA `7DQQejSWt4bgNmGFFD6QPPUA1YLoMxWhz4roN5CQjE9k`
+- 20:19Z DYSON (DIP, $241,132 mcap, $8,062 5m vol): REJECT, Dip with fading attention is a falling knife, not a dip (5m at 0.59x the hour's pace, under 0.6x)  
+  CA `C2As2w55q3V3snKVCyA3nZvmQJSx2NApM5SLK5krpump`
+- 20:18Z runner (FINAL_STRETCH, $21,497 mcap, $3,257 5m vol): REJECT, RugCheck danger: Creator history of rugged tokens  
+  CA `RUnnEr6YskBKYibKeUZRHaDQAAfdgYZPoikkmv4NnLx`
+- 20:18Z Singularity (MIGRATED, $31,359 mcap, $3,618 5m vol): PASS, PASS — brain unavailable, not trading blind.  
+  CA `FBKkoVcXaHzpLHheCRnPk3zvLgiqhugbwGcegc9Ykvxx`
+- 20:10Z LOOSY (MIGRATED, $344,395 mcap, $3,818 5m vol): PASS at conviction 3, PASS: 88.6% off a $3.03M high is outside the buy zone, and the dog theme is fading at 0.83x pace with no catalyst. A dead cat in a field of 19. (V1, V6, V13)  
+  CA `HF2RBPrfNBk9TxggL2cYZFEKSgirzh5HKCngLENTpump`
 - 19:59Z GTA (MIGRATED, $203,465 mcap, $17,461 5m vol): REJECT, Top 10 hold 42.3% ex-pool (>25%) (V13)  
   CA `3fWhdo8bQCamw5ed6yNGdvaru1qS5UVwB6dYp9znpump`
 - 19:50Z GATO (MIGRATED, $3,431,414 mcap, $4,365 5m vol): REJECT, Dev holds 2.7% (>1%) (V13, V17)  
   CA `HsprHxBRgiVaQdRf3TnKNuZZtaX9JUSPgMFdAkk6pump`
 - 19:37Z MATHISOVER (MIGRATED, $78,391 mcap, $3,052 5m vol): PASS at conviction 2, PASS: chasing, flow below pace, no higher low, and the story lives on the coin's own site. Blockers: chasing / flow below pace / no higher low. (V1, V6, V13)  
   CA `3JgkhGnN5ggpE14Ykb2sgcsF1LTBUFyVZBPa3VrDpump`
-- 19:37Z PAY (FINAL_STRETCH, $22,276 mcap, $30,806 5m vol): PASS at conviction 2, PASS: four-minute-old pump.fun coin up 1075% in 5m with no story and no X. That's a spike, not a setup (V1, V6).  
-  CA `GdqJ3D4BF6ZKtpXajVqZTP39vrwD8wDXZGgw7tBA8PAY`
-- 19:36Z jingyu (DIP, $72,284 mcap, $4,067 5m vol): REJECT, Bundles: 1 linked wallet cluster(s) hold 100.0% of supply (>20%) (V17)  
-  CA `DUZrwdjEthcJ99ZiRXr31UuqTohoTg7VjTEyfGdBpump`
-- 19:34Z DYSON (MIGRATED, $382,014 mcap, $9,907 5m vol): PASS at conviction 2, PASS — 5m flow at 0.31x its hourly pace, under an hour old and still bleeding off a +1010% spike, no printed higher low. The site says "CA TBA" and the dog theme is fading. (V1, V6, V13)  
-  CA `C2As2w55q3V3snKVCyA3nZvmQJSx2NApM5SLK5krpump`
-- 19:33Z runner (FINAL_STRETCH, $16,946 mcap, $3,210 5m vol): REJECT, RugCheck danger: Creator history of rugged tokens  
-  CA `RUnnEr6YskBKYibKeUZRHaDQAAfdgYZPoikkmv4NnLx`
-- 19:25Z OGTA (MIGRATED, $133,000 mcap, $3,618 5m vol): PASS at conviction 2, PASS — OGTA is 94% off its $2.07M high in a fading GTA theme, with 12 copies and $3.6k of 5m flow. Blocker: too deep, no catch. (V1, V6, V13)  
-  CA `7bCiddGLe5aM8HE2pigT9jsqkmC1HSPxyXN6GkHEpump`
-- 19:24Z LOOSY (MIGRATED, $278,851 mcap, $2,622 5m vol): PASS at conviction 2, PASS. Down 91% from a $3.03M peak, 5m flow at half pace, no higher low, and the site doesn't show this CA. Blocker: "flow below pace" plus "theme volume below pace". (V1, V6, V13)  
-  CA `HF2RBPrfNBk9TxggL2cYZFEKSgirzh5HKCngLENTpump`
-- 19:22Z FIENA (MIGRATED, $99,280 mcap, $6,230 5m vol): PASS at conviction 3, PASS: flow below pace. FIENA is at 0.63x its hourly 5m pace, and a shallow-band MIGRATED entry needs at least pace. The holders are clean, but clean holders don't make up for thin flow. (V1, V6)  
-  CA `FqjZnuzRv3QYQQQrRRxt6fAGtrnaXnPXFabExM7Ppump`
 
 ## What its skips did next (last 48h)
 A skip "ran" if the coin reached the first target (1.5x) from the skip price before a 20% drop, "dumped" if the drop came first. Sampled every 10 min, followed 6h.
@@ -106,7 +106,7 @@ A skip "ran" if the coin reached the first target (1.5x) from the skip price bef
     CA `ERDrmaqsoeLdsCMMpBKkRM4LV1mzTA2KHrVxKLpqpump`
   - ran: Audacity up to 2.7x  
     CA `5oYuJG44HdkSSj2pabAKzKk7p2p3b1LbqUC5n82ppump`
-- falling knife (code): blocked 40, ran 3, dumped 35, flat 1, open 1 (saving losses: keep it)
+- falling knife (code): blocked 42, ran 3, dumped 35, flat 1, open 3 (saving losses: keep it)
   - ran: DCTC up to 2.59x  
     CA `47f8bEDWs6VDpnnmxegyL4A3GbBVVcssrMQeBjPvpump`
   - ran: BUNC up to 1.91x  
@@ -120,17 +120,15 @@ A skip "ran" if the coin reached the first target (1.5x) from the skip price bef
     CA `9rbKkz2BDQBVgZmrHY6d7PTq2ge91gkpEyE4y9PPpump`
   - ran: PIPI up to 1.63x  
     CA `J51xgomTx21VHY62Q7uv2otWRUSq71WeaApLfsAnpump`
-- flow below pace: blocked 18, ran 3, dumped 12, flat 1, open 2 (saving losses: keep it)
+- thin 5m volume: blocked 16, ran 0, dumped 11, flat 4, open 1 (saving losses: keep it)
+- flow below pace: blocked 16, ran 3, dumped 10, flat 1, open 2 (saving losses: keep it)
   - ran: SI up to 1.53x  
     CA `4s38cgZJN4J39S2BQwCkcsJJ9ZGeJSjw8vK9wVtupump`
   - ran: AI up to 1.51x  
     CA `8SacNb6sgiAcscRe4m915B6nL9XX55dk8FS7L532pump`
   - ran: SWRDXSTFF up to 1.77x  
     CA `Csoj9XHJfBAxsKswqKKBENnGeoRDHtACfyYi7HmJpump`
-- thin 5m volume: blocked 16, ran 1, dumped 11, flat 4, open 0 (saving losses: keep it)
-  - ran: Snapmatic up to 1.68x  
-    CA `4S8pUKWKUAtQKfE5qokSjszWDp1RqQWnom8jNYSWpump`
-- too new / sniping: blocked 16, ran 1, dumped 15, flat 0, open 0 (saving losses: keep it)
+- too new / sniping: blocked 16, ran 1, dumped 14, flat 0, open 1 (saving losses: keep it)
   - ran: AudaCity up to 1.96x  
     CA `3rtTUCpe1BBgCTNWQ9jK3xkAz1E7SPqMt4uYHx1Bpump`
 - near the high / chasing: blocked 15, ran 3, dumped 12, flat 0, open 0 (saving losses: keep it)
@@ -148,13 +146,11 @@ A skip "ran" if the coin reached the first target (1.5x) from the skip price bef
 - bundles over the line: blocked 13, ran 1, dumped 9, flat 2, open 1 (saving losses: keep it)
   - ran: PAPA up to 1.66x  
     CA `3hdXmQqZHmm7gWWweFKGdkjnxyWQZ2SWVNt1Jty5pump`
-- other: blocked 13, ran 3, dumped 10, flat 0, open 0 (saving losses: keep it)
+- other: blocked 11, ran 2, dumped 9, flat 0, open 0 (saving losses: keep it)
   - ran: After up to 2.36x  
     CA `Db2s6iVvenVhJkj96P4UbZWEAYX4nUhgXhSVbQrwpump`
   - ran: Ant up to 2.32x  
     CA `HKGtUPPKvXkMPyNX4QeMubENuiimFQ8W1Veg4y52pump`
-  - ran: PAY up to 3.67x  
-    CA `GdqJ3D4BF6ZKtpXajVqZTP39vrwD8wDXZGgw7tBA8PAY`
 
 ## Daily review (2026-11-20, claude-opus-5-5)
 No edge yet. All 322 settled coins lost money after costs on the simple plan, and so did every setup: the average was -13.8%, of which about 9.9% was round-trip cost, so the price moves alone already lost about 4%. With a +50% target, a -20% stop and about 10% cost, a winner nets about +40% and a loser about -30%, so a setup has to reach 1.5x before the stop roughly 43% of the time just to break even. The best bucket, FINAL_STRETCH, did it 27.7% of the time (n=47). The overall average is clearly negative: about ±3.6 points of noise at n=322. Even FINAL_STRETCH's -10.6% has a 95% range of roughly ±9 points that stays below zero, and the real sample is smaller than it looks because of meta clustering (GTA and FIONA copies) and at least one coin logged twice. The routine model made zero would-buys, so there is nothing to compare against what it passed on. The 79 coins it reviewed and passed did -14.4%, the same as the 168 the checklist failed (-14.0%). On this data neither the checklist nor the model separates winners from losers.
@@ -195,13 +191,13 @@ No edge yet. All 322 settled coins lost money after costs on the simple plan, an
 The meta is brand-name and cryptid tickers with live 5m flow. The cat/animal wave is a 1-hour spike that has gone thin: BTC and CATPOOP are at $0 to $3k 5m and MAYA is at $0, so I'm trusting the scan over the crawler's cat numbers. Three themes are live: (1) brand and domain names, with Singularity.com on two CAs at $279k and $95k 5m, 54% and 83% buys, only about 6 minutes old, which is a vamp fight, so find the original before anything else; (2) cryptids, with BIGFOOT IS REAL at $18.8k 5m, 54% buys, $34k cap, while The Bigfoot Files has zero buys, so it's split; (3) MIC, a country-name coin at $96k 5m with 52% buys. Fading: Trump and GTA (OFFICIALGTA at $3.6k 5m, 25h old, and the Trump dinner news is down 98%), dog/doge names (HOGE and LOOSY under $7k 5m), and holiday names (RUDY at 44% buys). Setups to research, not buy: BIGFOOT IS REAL, and the Singularity original once identified, only on a pullback that holds 5m above $10k with buys above half; MIC and both Singularity pairs are up 140-500% in an hour, so that is chase territory. Holder, dev and bundle checks are pending on all of these, so this is a read, not an entry.
 
 ## Moving most in its scans, last 30 min (1h volume)
-- Singularity: $244,286 1h vol, $1,291 mcap, -97% 1h  
-  CA `7KUg78hyohckj8i728YuCu6CweTArxhwRrVrFyvHpump`
-- Singularity: $125,987 1h vol, $17,655 mcap, -49% 1h  
-  CA `FBKkoVcXaHzpLHheCRnPk3zvLgiqhugbwGcegc9Ykvxx`
-- BIGFOOT: $110,485 1h vol, $10,396 mcap, -34% 1h  
-  CA `Aykavwa4Z1Z2pW3CRuRpXBXrNZAtuhzAskgBFXFgpump`
-- MIC: $82,723 1h vol, $15,065 mcap, -69% 1h  
-  CA `G6H8DjYRPomfmG5KrEAMpxoUU2uRLxdeTrkxnSiXpump`
-- FIENA: $71,557 1h vol, $1,272 mcap, -98% 1h  
+- PAY: $278,290 1h vol, $34,622 mcap, +33% 1h  
+  CA `GdqJ3D4BF6ZKtpXajVqZTP39vrwD8wDXZGgw7tBA8PAY`
+- DCTY: $252,016 1h vol, $299,185 mcap, +91% 1h  
+  CA `7DQQejSWt4bgNmGFFD6QPPUA1YLoMxWhz4roN5CQjE9k`
+- DYSON: $164,647 1h vol, $241,132 mcap, -43% 1h  
+  CA `C2As2w55q3V3snKVCyA3nZvmQJSx2NApM5SLK5krpump`
+- Singularity: $73,689 1h vol, $26,494 mcap, -8% 1h  
+  CA `7R4MP6VX7n3RMNhL9zsk5Zu5ibZvwq8npUYnRq7epump`
+- FIENA: $56,864 1h vol, $1,285 mcap, -99% 1h  
   CA `FqjZnuzRv3QYQQQrRRxt6fAGtrnaXnPXFabExM7Ppump`
