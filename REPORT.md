@@ -1,13 +1,13 @@
 # Trencher live report
 
-Updated 2026-11-20T16:38:22Z (paper trading, never real money)
+Updated 2026-11-20T16:53:28Z (paper trading, never real money)
 
 - Equity: $74.23 (-25.8% vs $100 start)
 - Closed trades: 22, 3 wins
 - Fees paid: $14.78 (axiom $2.81, network $9.18, pool $2.66), plus $4.15 lost to slippage
 - New trades: WATCH-ONLY (scans and decides, buys nothing)
-- Brain: subscription, claude-haiku-5-5 for routine calls, claude-opus-5-5 for the daily review; 331 routine calls and 173 plan-limit hits in 48h
-- Watch log: 73 coins being followed, 2377 filed, 0 would-buys (6h follow, sampled every 2 min)
+- Brain: subscription, claude-haiku-5-5 for routine calls, claude-opus-5-5 for the daily review; 332 routine calls and 171 plan-limit hits in 48h
+- Watch log: 74 coins being followed, 2379 filed, 0 would-buys (6h follow, sampled every 2 min)
 
 ## Scorecard (after fees)
 - 22 closed, 3 won (14%), net $-25.79
@@ -73,9 +73,15 @@ Updated 2026-11-20T16:38:22Z (paper trading, never real money)
   CA `H4gHnZ3NCU7Z9XQwGX6YYJNyieGEW8pqwGRUcdSxpump`
 
 ## Last scan
-- 16:37Z: 5 coins, 5 with pairs, 0 passed the market filters, 0 researched
+- 16:52Z: 3 coins, 3 with pairs, 0 passed the market filters, 0 researched
 
 ## Coins it looked at, and why it passed
+- 16:49Z Móm (MIGRATED, $110,852 mcap, $33,352 5m vol): PASS at conviction 3, PASS. MÓM is 29 minutes old, up 303% in an hour off a $19k-ish low, with no printed higher low and not the leader of its 12-copy field. Blockers: "chasing", "no higher low", "split crowd". (V1, V6, V13)  
+  CA `BfNcetwXyxFJjsnmMboPpHqpZg19ez1ueQGPGE9upump`
+- 16:44Z HUSS (MIGRATED, $41,365 mcap, $7,147 5m vol): PASS at conviction 2, PASS. HUSS is a 17-copy vamp field at $41k, 34 minutes old, with 5m flow at half pace and no story behind it. Blocker: "too new" plus "flow below pace". (V1, V3, V6)  
+  CA `3umHFkiMHyphCkLxtbf8Aabie8r5hxn86QeBAovTpump`
+- 16:38Z RUDY (MIGRATED, $85,561 mcap, $4,752 5m vol): PASS at conviction 2, PASS: RUDY is a 73% drawdown with no higher low, $4.75k 5m, no catalyst, and a 12-copy field. Blocker: "dead story" plus "no higher low" (V1, V6, V13).  
+  CA `GRMRQSkBGg2Cc8Y9GePNBcJVk49YepWkXUDQBXAMpump`
 - 16:32Z MIA (MIGRATED, $369,223 mcap, $264,596 5m vol): REJECT, Top 10 hold 33.3% ex-pool (>25%) (V13)  
   CA `4ZbmGndQLrguTbdk5oz7wxxxVCnK2ZM9ShoMvML8pump`
 - 16:27Z H4CK (MIGRATED, $31,972 mcap, $5,604 5m vol): REJECT, Hack story ("hack" in the name or ticker): these tend to go down, owner rule  
@@ -90,23 +96,17 @@ Updated 2026-11-20T16:38:22Z (paper trading, never real money)
   CA `HsprHxBRgiVaQdRf3TnKNuZZtaX9JUSPgMFdAkk6pump`
 - 15:57Z HOGE (DIP, $1,027,257 mcap, $3,041 5m vol): REJECT, Bundles: 9 linked wallet cluster(s) hold 26.7% of supply (>20%) (V17)  
   CA `FVzqGqRmr4UH1Fif6dewmwbJ1p4YUZCu8dcw4Efopump`
-- 15:52Z RUDY (DIP, $106,142 mcap, $2,146 5m vol): REJECT, Dip with fading attention is a falling knife, not a dip (5m at 0.55x the hour's pace, under 0.6x)  
-  CA `GRMRQSkBGg2Cc8Y9GePNBcJVk49YepWkXUDQBXAMpump`
-- 15:51Z BOBO (FINAL_STRETCH, $18,539 mcap, $17,646 5m vol): PASS at conviction 3, PASS: BOBO is up 350% off its hourly low on a 3.5x-pace spike, one of 19 copies of the same name, with no story behind it. Chasing a vamp field (V1, V3, V6).  
-  CA `3admXvh8WZRuoo9Zk1qum72ByZWumABQi1zh5Z9gpump`
-- 15:42Z jingyu (DIP, $55,476 mcap, $3,562 5m vol): REJECT, Bundles: 1 linked wallet cluster(s) hold 100.0% of supply (>20%) (V17)  
-  CA `DUZrwdjEthcJ99ZiRXr31UuqTohoTg7VjTEyfGdBpump`
 
 ## What its skips did next (last 48h)
 A skip "ran" if the coin reached the first target (1.5x) from the skip price before a 20% drop, "dumped" if the drop came first. Sampled every 10 min, followed 6h.
-- top 10 over 25%: blocked 63, ran 7, dumped 52, flat 4, open 0 (saving losses: keep it)
-  - ran: NIKO up to 1.66x  
-    CA `A2MgdY1oU6pqsREQ8eCPhR6DSMrGYaCPXUWUMRXgpump`
+- top 10 over 25%: blocked 61, ran 5, dumped 52, flat 4, open 0 (saving losses: keep it)
   - ran: CDOG up to 1.99x  
     CA `5tAB1DMgrsJKgaKcfCfj1RzumuqovQP1LuxzQ7thpump`
   - ran: DAKITTY up to 1.51x  
     CA `3YyNSd5dAe5hbKu83syLCjZKWYD9d94EGYCfEWNkpump`
-- falling knife (code): blocked 48, ran 5, dumped 42, flat 1, open 0 (saving losses: keep it)
+  - ran: AudaCity up to 1.66x  
+    CA `ERDrmaqsoeLdsCMMpBKkRM4LV1mzTA2KHrVxKLpqpump`
+- falling knife (code): blocked 47, ran 5, dumped 41, flat 1, open 0 (saving losses: keep it)
   - ran: APCY up to 1.74x  
     CA `7fZK84wYShNUXKJnBkfXkeu5h2edduNkZV3p2B2LBCgC`
   - ran: AI up to 2.14x  
@@ -120,7 +120,7 @@ A skip "ran" if the coin reached the first target (1.5x) from the skip price bef
     CA `9rbKkz2BDQBVgZmrHY6d7PTq2ge91gkpEyE4y9PPpump`
   - ran: PIPI up to 1.63x  
     CA `J51xgomTx21VHY62Q7uv2otWRUSq71WeaApLfsAnpump`
-- thin 5m volume: blocked 16, ran 1, dumped 10, flat 5, open 0 (saving losses: keep it)
+- thin 5m volume: blocked 15, ran 1, dumped 10, flat 4, open 0 (saving losses: keep it)
   - ran: Snapmatic up to 1.68x  
     CA `4S8pUKWKUAtQKfE5qokSjszWDp1RqQWnom8jNYSWpump`
 - dev share over 1%: blocked 13, ran 2, dumped 9, flat 0, open 2 (saving losses: keep it)
@@ -147,6 +147,9 @@ A skip "ran" if the coin reached the first target (1.5x) from the skip price bef
     CA `8SacNb6sgiAcscRe4m915B6nL9XX55dk8FS7L532pump`
   - ran: SWRDXSTFF up to 1.77x  
     CA `Csoj9XHJfBAxsKswqKKBENnGeoRDHtACfyYi7HmJpump`
+- too new / sniping: blocked 13, ran 1, dumped 10, flat 0, open 2 (saving losses: keep it)
+  - ran: AudaCity up to 1.96x  
+    CA `3rtTUCpe1BBgCTNWQ9jK3xkAz1E7SPqMt4uYHx1Bpump`
 - near the high / chasing: blocked 12, ran 3, dumped 8, flat 0, open 1 (saving losses: keep it)
   - ran: BEAR up to 2.32x  
     CA `DCPm44cT9i39HjR13QHYgxkR7wEx9TDeniGuayB5pump`
@@ -154,9 +157,6 @@ A skip "ran" if the coin reached the first target (1.5x) from the skip price bef
     CA `UQLWvkwiSsnViuVBy7oArMtzb5RAZyrdJ79amQFrzoL`
   - ran: STICK up to 2.08x  
     CA `532iaQrhFCD3QKFHsAtFAQ1mQZMjMdNrPXLeCS6cpump`
-- too new / sniping: blocked 11, ran 1, dumped 10, flat 0, open 0 (saving losses: keep it)
-  - ran: AudaCity up to 1.96x  
-    CA `3rtTUCpe1BBgCTNWQ9jK3xkAz1E7SPqMt4uYHx1Bpump`
 
 ## Daily review (2026-11-20, claude-opus-5-5)
 No edge yet. All 322 settled coins lost money after costs on the simple plan, and so did every setup: the average was -13.8%, of which about 9.9% was round-trip cost, so the price moves alone already lost about 4%. With a +50% target, a -20% stop and about 10% cost, a winner nets about +40% and a loser about -30%, so a setup has to reach 1.5x before the stop roughly 43% of the time just to break even. The best bucket, FINAL_STRETCH, did it 27.7% of the time (n=47). The overall average is clearly negative: about ±3.6 points of noise at n=322. Even FINAL_STRETCH's -10.6% has a 95% range of roughly ±9 points that stays below zero, and the real sample is smaller than it looks because of meta clustering (GTA and FIONA copies) and at least one coin logged twice. The routine model made zero would-buys, so there is nothing to compare against what it passed on. The 79 coins it reviewed and passed did -14.4%, the same as the 168 the checklist failed (-14.0%). On this data neither the checklist nor the model separates winners from losers.
@@ -199,11 +199,11 @@ Meta from scan_movers, not the news. Three themes show up across several coins. 
 ## Moving most in its scans, last 30 min (1h volume)
 - MIA: $463,908 1h vol, $369,223 mcap, +288% 1h  
   CA `4ZbmGndQLrguTbdk5oz7wxxxVCnK2ZM9ShoMvML8pump`
-- 狗: $198,520 1h vol, $6,657 mcap, -75% 1h  
-  CA `CJsKL1cL5pCVxjQdkKhtiXn2AfCMBeVsnsN8R9PaXFx2`
-- STICKERS: $143,337 1h vol, $18,839 mcap, -60% 1h  
+- Móm: $193,818 1h vol, $107,957 mcap, +292% 1h  
+  CA `BfNcetwXyxFJjsnmMboPpHqpZg19ez1ueQGPGE9upump`
+- HUSS: $169,488 1h vol, $36,015 mcap, +4% 1h  
+  CA `3umHFkiMHyphCkLxtbf8Aabie8r5hxn86QeBAovTpump`
+- STICKERS: $161,653 1h vol, $28,080 mcap, -38% 1h  
   CA `9EEFuHwRgY8HmnocQuq4ty9KFjuM46Q8tyLmZE3Wpump`
-- LOOSY: $73,419 1h vol, $2,834,206 mcap, +9% 1h  
-  CA `HF2RBPrfNBk9TxggL2cYZFEKSgirzh5HKCngLENTpump`
-- OGTA: $67,970 1h vol, $180,323 mcap, +7% 1h  
-  CA `7bCiddGLe5aM8HE2pigT9jsqkmC1HSPxyXN6GkHEpump`
+- RUDY: $58,199 1h vol, $85,561 mcap, -23% 1h  
+  CA `GRMRQSkBGg2Cc8Y9GePNBcJVk49YepWkXUDQBXAMpump`
