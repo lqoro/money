@@ -1,13 +1,13 @@
 # Trencher live report
 
-Updated 2026-11-20T01:27:46Z (paper trading, never real money)
+Updated 2026-11-20T01:42:56Z (paper trading, never real money)
 
 - Equity: $74.23 (-25.8% vs $100 start)
 - Closed trades: 22, 3 wins
 - Fees paid: $14.78 (axiom $2.81, network $9.18, pool $2.66), plus $4.15 lost to slippage
 - New trades: WATCH-ONLY (scans and decides, buys nothing)
-- Brain: subscription, claude-haiku-5-5 for routine calls, claude-opus-5-5 for the daily review; 290 routine calls and 262 plan-limit hits in 48h
-- Watch log: 115 coins being followed, 2139 filed, 0 would-buys (6h follow, sampled every 2 min)
+- Brain: subscription, claude-haiku-5-5 for routine calls, claude-opus-5-5 for the daily review; 291 routine calls and 261 plan-limit hits in 48h
+- Watch log: 115 coins being followed, 2143 filed, 0 would-buys (6h follow, sampled every 2 min)
 
 ## Scorecard (after fees)
 - 22 closed, 3 won (14%), net $-25.79
@@ -73,9 +73,17 @@ Updated 2026-11-20T01:27:46Z (paper trading, never real money)
   CA `H4gHnZ3NCU7Z9XQwGX6YYJNyieGEW8pqwGRUcdSxpump`
 
 ## Last scan
-- 01:27Z: 4 coins, 4 with pairs, 0 passed the market filters, 0 researched
+- 01:42Z: 7 coins, 7 with pairs, 0 passed the market filters, 0 researched
 
 ## Coins it looked at, and why it passed
+- 01:38Z CBUCKS (MIGRATED, $3,774,502 mcap, $3,528 5m vol): REJECT, Top 10 hold 25.9% ex-pool (>25%) (V13)  
+  CA `DtcicPCKTKeAh7TDEzTym3hXeoHAoMiBdYJhMYxZpump`
+- 01:37Z COLONY (FINAL_STRETCH, $21,750 mcap, $2,037 5m vol): PASS at conviction 2, PASS — ant-colony vamp field with no catalyst, 5m buyers at 0.41, and a LARP site on a day-old domain. Blocker: no catalyst / dead story (bottom-buy rule). (V1, V3, V6, V13)  
+  CA `89geZNfwC39Jw3n3vqye9PSXXMTQgQFiLcp9WNwzpump`
+- 01:31Z scat (MIGRATED, $108,174 mcap, $2,489 5m vol): REJECT, Top 10 hold 26.8% ex-pool (>25%) (V13)  
+  CA `5EpUkeRekk1uzWKoJz9fyYYA3Vwt6bTtdRNpVtkMpump`
+- 01:28Z COOKIE (MIGRATED, $74,518 mcap, $7,222 5m vol): PASS at conviction 2, PASS. COOKIE is down 79% from its $348k peak, 5m flow is 0.14x its hourly pace, and the vamp field's volume leader isn't this coin. Falling knife, blocker "flow below pace" (V1, V6).  
+  CA `7q3j8jkgGzVuk7pcQ2uQqWaFwyYzJiCanoRdBtHHpump`
 - 01:23Z I (MIGRATED, $46,870 mcap, $38,283 5m vol): PASS at conviction 3, PASS. Vamp field of 9 'Inu' copies, and this isn't the leader. CI has 2x its 5m flow. Also a 12-minute-old migration that just spiked +27% in 5m. Blockers: split crowd, chasing spike, too new. (V1, V3, V6)  
   CA `3emn4AZwHpsH8K6rqjsMTeFHJTg4XqdPe9PBHpV3JANJ`
 - 01:22Z LUCIA (MIGRATED, $385,467 mcap, $25,887 5m vol): REJECT, Top 10 hold 51.3% ex-pool (>25%) (V13)  
@@ -88,25 +96,17 @@ Updated 2026-11-20T01:27:46Z (paper trading, never real money)
   CA `GiNDGcqc7xk9F88sgE9KF7Bo5migm4Bh8Y8CJVM7pump`
 - 01:14Z DIGS (MIGRATED, $307,516 mcap, $3,364 5m vol): REJECT, Bundles: 10 linked wallet cluster(s) hold 100.0% of supply (>20%) (V17)  
   CA `9QT8K685Hrae4k11dhGXirdtpfAaimExtyfwt8cPpump`
-- 01:14Z iAgent (MIGRATED, $453,652 mcap, $218,836 5m vol): REJECT, Top 10 hold 28.2% ex-pool (>25%) (V13)  
-  CA `44DZsPNJUtUyTkELAFYdwCpe82sEt12HZKrMgK1Spump`
-- 01:10Z LOOSY (MIGRATED, $311,673 mcap, $127,630 5m vol): REJECT, Top 10 hold 45.2% ex-pool (>25%) (V13)  
-  CA `HF2RBPrfNBk9TxggL2cYZFEKSgirzh5HKCngLENTpump`
-- 01:07Z RUGGED (MIGRATED, $30,878 mcap, $9,574 5m vol): REJECT, Bundles: 2 linked wallet cluster(s) hold 23.8% of supply (>20%) (V17)  
-  CA `GT8WxWKEgxzZiKL89Uu288vb8jnescwpNSrvyHzcpump`
-- 01:04Z WASTED (DIP, $972,786 mcap, $5,656 5m vol): REJECT, Top 10 hold 27.2% ex-pool (>25%) (V13)  
-  CA `GexThZHgaswpAQ7Fi8QrHFubjPimUNSYhJiAA7XZpump`
 
 ## What its skips did next (last 48h)
 A skip "ran" if the coin reached the first target (1.5x) from the skip price before a 20% drop, "dumped" if the drop came first. Sampled every 10 min, followed 6h.
-- top 10 over 25%: blocked 76, ran 15, dumped 54, flat 3, open 4 (saving losses: keep it)
+- top 10 over 25%: blocked 76, ran 15, dumped 55, flat 2, open 4 (saving losses: keep it)
   - ran: BUFO up to 1.83x  
     CA `44gNPkTVKwfNf2fPBdwiPZrVVXLVYTkmBk5VdBzrpump`
   - ran: clawd up to 2.1x  
     CA `85osSLFjprTGWRkrXMTGjsmaWR2pjUb38AiJzr16pump`
   - ran: SHARK up to 1.68x  
     CA `3yxsNufZSWNrvMXw8gwCJFCuUkuTDsb1a55aR7evpump`
-- falling knife (code): blocked 54, ran 7, dumped 44, flat 1, open 2 (saving losses: keep it)
+- falling knife (code): blocked 54, ran 7, dumped 45, flat 1, open 1 (saving losses: keep it)
   - ran: DACT up to 2.63x  
     CA `GZUGmAtuSx9755C3W1CLDVtA7MZQ8QWF1XjhjEbjpump`
   - ran: Apocrycoin up to 1.54x  
@@ -120,7 +120,7 @@ A skip "ran" if the coin reached the first target (1.5x) from the skip price bef
     CA `9rbKkz2BDQBVgZmrHY6d7PTq2ge91gkpEyE4y9PPpump`
   - ran: PIPI up to 1.63x  
     CA `J51xgomTx21VHY62Q7uv2otWRUSq71WeaApLfsAnpump`
-- bundles over the line: blocked 16, ran 4, dumped 7, flat 2, open 3 (mixed)
+- bundles over the line: blocked 16, ran 4, dumped 8, flat 2, open 2 (saving losses: keep it)
   - ran: BIG up to 1.93x  
     CA `34DXEU2ttEtBSb1TqGJm7izgvYTTkqKcCoiNWdPDpump`
   - ran: VI up to 1.56x  
@@ -141,7 +141,7 @@ A skip "ran" if the coin reached the first target (1.5x) from the skip price bef
     CA `Geee1viZh4HpVJFaHB8ev5BZNdtUR4Dy2PDS5iBB7cLz`
   - ran: CALICO up to 3.25x  
     CA `89GFxMWQ1r8cwTwRSgeQ9RaGPtUdmDLQgCsQZcrWpump`
-- thin 5m volume: blocked 11, ran 1, dumped 5, flat 4, open 1 (saving losses: keep it)
+- thin 5m volume: blocked 12, ran 1, dumped 6, flat 4, open 1 (saving losses: keep it)
   - ran: Snapmatic up to 1.68x  
     CA `4S8pUKWKUAtQKfE5qokSjszWDp1RqQWnom8jNYSWpump`
 - flow below pace: blocked 6, ran 2, dumped 2, flat 0, open 2 (mixed)
@@ -149,7 +149,7 @@ A skip "ran" if the coin reached the first target (1.5x) from the skip price bef
     CA `4s38cgZJN4J39S2BQwCkcsJJ9ZGeJSjw8vK9wVtupump`
   - ran: AI up to 1.51x  
     CA `8SacNb6sgiAcscRe4m915B6nL9XX55dk8FS7L532pump`
-- too new / sniping: blocked 5, ran 0, dumped 4, flat 0, open 1 (saving losses: keep it)
+- too new / sniping: blocked 5, ran 0, dumped 5, flat 0, open 0 (saving losses: keep it)
 - hack story (owner rule): blocked 3, ran 0, dumped 0, flat 3, open 0 (too few played out to judge)
 
 ## Daily review (2026-11-16, claude-opus-5-5)
@@ -193,11 +193,11 @@ The meta right now is dog and animal reskins on fresh pumpswap pairs, and that's
 ## Moving most in its scans, last 30 min (1h volume)
 - iAgent: $687,259 1h vol, $453,652 mcap, +307% 1h  
   CA `44DZsPNJUtUyTkELAFYdwCpe82sEt12HZKrMgK1Spump`
+- COOKIE: $605,999 1h vol, $74,518 mcap, -72% 1h  
+  CA `7q3j8jkgGzVuk7pcQ2uQqWaFwyYzJiCanoRdBtHHpump`
 - COOKIE: $582,596 1h vol, $59,685 mcap, -3% 1h  
   CA `GiNDGcqc7xk9F88sgE9KF7Bo5migm4Bh8Y8CJVM7pump`
-- LOOSY: $147,179 1h vol, $311,673 mcap, +678% 1h  
-  CA `HF2RBPrfNBk9TxggL2cYZFEKSgirzh5HKCngLENTpump`
+- I: $126,990 1h vol, $1,789 mcap, -94% 1h  
+  CA `B9bVAePSKrgvediH1tRVfwcjVQSNRcR7djb1MQVGpump`
 - I: $106,075 1h vol, $45,243 mcap, +52% 1h  
   CA `3emn4AZwHpsH8K6rqjsMTeFHJTg4XqdPe9PBHpV3JANJ`
-- OGTA: $87,445 1h vol, $1,217,949 mcap, +42% 1h  
-  CA `7bCiddGLe5aM8HE2pigT9jsqkmC1HSPxyXN6GkHEpump`
