@@ -1,13 +1,13 @@
 # Trencher live report
 
-Updated 2026-11-20T02:58:42Z (paper trading, never real money)
+Updated 2026-11-20T03:13:46Z (paper trading, never real money)
 
 - Equity: $74.23 (-25.8% vs $100 start)
 - Closed trades: 22, 3 wins
 - Fees paid: $14.78 (axiom $2.81, network $9.18, pool $2.66), plus $4.15 lost to slippage
 - New trades: WATCH-ONLY (scans and decides, buys nothing)
-- Brain: subscription, claude-haiku-5-5 for routine calls, claude-opus-5-5 for the daily review; 297 routine calls and 253 plan-limit hits in 48h
-- Watch log: 112 coins being followed, 2169 filed, 0 would-buys (6h follow, sampled every 2 min)
+- Brain: subscription, claude-haiku-5-5 for routine calls, claude-opus-5-5 for the daily review; 297 routine calls and 252 plan-limit hits in 48h
+- Watch log: 107 coins being followed, 2175 filed, 0 would-buys (6h follow, sampled every 2 min)
 
 ## Scorecard (after fees)
 - 22 closed, 3 won (14%), net $-25.79
@@ -73,9 +73,11 @@ Updated 2026-11-20T02:58:42Z (paper trading, never real money)
   CA `H4gHnZ3NCU7Z9XQwGX6YYJNyieGEW8pqwGRUcdSxpump`
 
 ## Last scan
-- 02:58Z: 5 coins, 5 with pairs, 0 passed the market filters, 0 researched
+- 03:12Z: 2 coins, 2 with pairs, 0 passed the market filters, 0 researched
 
 ## Coins it looked at, and why it passed
+- 02:59Z BEAR (FINAL_STRETCH, $21,357 mcap, $39,383 5m vol): PASS at conviction 3, PASS — 12-minute-old bonding-curve copy with no printed higher low, a 5.9x volume spike and no catalyst on the radar. Blockers: "no higher low", "chasing spike", "bottom buy: no catalyst", "split crowd" (7 copies). Pass. (V1, V6)  
+  CA `DCPm44cT9i39HjR13QHYgxkR7wEx9TDeniGuayB5pump`
 - 02:56Z Neko (FINAL_STRETCH, $15,027 mcap, $27,025 5m vol): PASS at conviction 3, PASS: Neko is up 542% in 5 minutes at 12x its hourly pace, with 12 copies of the theme and 11 tokens on the ticker. That's a spike, not a structure (V1, V6).  
   CA `CSTnN7ybTpj6MT8izw6uW8zUW95EaQo4YWATb9rJpump`
 - 02:55Z MACCA (MIGRATED, $286,061 mcap, $2,218 5m vol): PASS at conviction 3, PASS. Pink gator on a fresh pump, 5m volume $2.2k, no printed higher low, and the bottom-buy gate fails on theme pace. (V1, V6, V13)  
@@ -94,19 +96,17 @@ Updated 2026-11-20T02:58:42Z (paper trading, never real money)
   CA `GT8WxWKEgxzZiKL89Uu288vb8jnescwpNSrvyHzcpump`
 - 02:35Z ERROR (FINAL_STRETCH, $15,696 mcap, $3,634 5m vol): PASS at conviction 2, PASS — 28 "error" copies, a bigger coin leads the field, 5m flow at 0.3x pace, top 10 at 22.9%. Nothing to buy here. (V1, V6, V13)  
   CA `4oiC2EpwCuYbJNJPuWXrmVHnhTZ64yXAWyBDNATjpump`
-- 02:34Z pCAT (MIGRATED, $36,899 mcap, $14,723 5m vol): PASS at conviction 3, PASS: pCAT is a 3-minute-old copy in a 16-coin cat field, and Brian leads it. The money shape isn't there, and the flow is a spike, not a higher low. (V1, V6, V13)  
-  CA `BLdC7hwRijHudKYDmtEkx1SHUdBWm8XbjBCSvwa6pump`
 
 ## What its skips did next (last 48h)
 A skip "ran" if the coin reached the first target (1.5x) from the skip price before a 20% drop, "dumped" if the drop came first. Sampled every 10 min, followed 6h.
-- top 10 over 25%: blocked 72, ran 14, dumped 54, flat 2, open 2 (saving losses: keep it)
+- top 10 over 25%: blocked 71, ran 14, dumped 53, flat 2, open 2 (saving losses: keep it)
   - ran: BUFO up to 1.83x  
     CA `44gNPkTVKwfNf2fPBdwiPZrVVXLVYTkmBk5VdBzrpump`
   - ran: clawd up to 2.1x  
     CA `85osSLFjprTGWRkrXMTGjsmaWR2pjUb38AiJzr16pump`
   - ran: SHARK up to 1.68x  
     CA `3yxsNufZSWNrvMXw8gwCJFCuUkuTDsb1a55aR7evpump`
-- falling knife (code): blocked 55, ran 7, dumped 45, flat 1, open 2 (saving losses: keep it)
+- falling knife (code): blocked 54, ran 7, dumped 44, flat 1, open 2 (saving losses: keep it)
   - ran: DACT up to 2.63x  
     CA `GZUGmAtuSx9755C3W1CLDVtA7MZQ8QWF1XjhjEbjpump`
   - ran: Apocrycoin up to 1.54x  
@@ -120,7 +120,7 @@ A skip "ran" if the coin reached the first target (1.5x) from the skip price bef
     CA `9rbKkz2BDQBVgZmrHY6d7PTq2ge91gkpEyE4y9PPpump`
   - ran: PIPI up to 1.63x  
     CA `J51xgomTx21VHY62Q7uv2otWRUSq71WeaApLfsAnpump`
-- bundles over the line: blocked 16, ran 3, dumped 8, flat 2, open 3 (saving losses: keep it)
+- bundles over the line: blocked 16, ran 3, dumped 9, flat 2, open 2 (saving losses: keep it)
   - ran: BIG up to 1.93x  
     CA `34DXEU2ttEtBSb1TqGJm7izgvYTTkqKcCoiNWdPDpump`
   - ran: VI up to 1.56x  
@@ -142,7 +142,7 @@ A skip "ran" if the coin reached the first target (1.5x) from the skip price bef
 - thin 5m volume: blocked 12, ran 1, dumped 6, flat 4, open 1 (saving losses: keep it)
   - ran: Snapmatic up to 1.68x  
     CA `4S8pUKWKUAtQKfE5qokSjszWDp1RqQWnom8jNYSWpump`
-- flow below pace: blocked 9, ran 2, dumped 2, flat 0, open 5 (mixed)
+- flow below pace: blocked 9, ran 2, dumped 3, flat 0, open 4 (mixed)
   - ran: SI up to 1.53x  
     CA `4s38cgZJN4J39S2BQwCkcsJJ9ZGeJSjw8vK9wVtupump`
   - ran: AI up to 1.51x  
@@ -191,13 +191,13 @@ Nothing shows a positive edge after costs. Over 309 settled coins, every setup l
 Meta: dog and AI-named reskins on fresh pumpswap pairs have the live 5-minute volume and buyers. LOOSY "Cool Dog" ($1.09M cap, $72k 5m, 75% buys, 5m pace holding above its hourly average), iAgent "Apple AI Agent" ($1.86M, $11k 5m, 76% buys) and Brian "Anthropic Cat" ($274k, $9.5k 5m, 76% buys) are all about an hour old. Iagent and Brian are running below their hourly pace on 5m, so they're fading. Rising, but early: Lucia the Baddie ($58k, $17k 5m, 92% buys, down 68% in the hour), a person/joke name. Fading or dead: the Inu cluster (I, INU, CI, Christmas Inu, all under $25k with hundreds to low thousands on 5m), Cookie (scan_movers shows $1.5k cap and zero 5m, so the crawler's $243k is wrong and COOKIE is not a setup), and GTA (OFFICIALGTA $815k cap, $4.8k 5m, down 28% in the hour). Setups to research now: LOOSY if its 5m holds above $10k after the first spike fades, iAgent or Brian only if 5m volume climbs back to or above hourly pace, and Lucia only as a small probe since it's under $70k with no proof yet. Holder, dev and bundle checks run on each before any entry. I'm discarding the crawler's LOOSY, Brian, COOKIE and OGTA figures where they disagree with scan_movers.
 
 ## Moving most in its scans, last 30 min (1h volume)
-- RUGGED: $2,247,915 1h vol, $744,654 mcap, +280% 1h  
-  CA `GT8WxWKEgxzZiKL89Uu288vb8jnescwpNSrvyHzcpump`
 - iAgent: $692,420 1h vol, $1,932,596 mcap, -24% 1h  
   CA `44DZsPNJUtUyTkELAFYdwCpe82sEt12HZKrMgK1Spump`
-- LOOSY: $311,450 1h vol, $1,187,462 mcap, +62% 1h  
-  CA `HF2RBPrfNBk9TxggL2cYZFEKSgirzh5HKCngLENTpump`
-- Brian: $261,332 1h vol, $615,710 mcap, +239% 1h  
-  CA `CrJBEGkuaYqtx2W5QHnagg4RL6A2f7bZhiFcssQ5pump`
 - HNYDRIP: $201,609 1h vol, $281,937 mcap, +239% 1h  
   CA `FyCaKh6wXuot5NmqQMt5oBrSHh3wFk14w5M9dHQDpump`
+- BEAR: $80,370 1h vol, $21,357 mcap, +525% 1h  
+  CA `DCPm44cT9i39HjR13QHYgxkR7wEx9TDeniGuayB5pump`
+- LUCIA: $72,744 1h vol, $1,417 mcap, -97% 1h  
+  CA `i48RfaqcYLRnNLpSxt8akF2ZubNuHckEReqBVPWpump`
+- GIGAPIG: $58,079 1h vol, $27,253 mcap, +572% 1h  
+  CA `ELbCDkRuUTuzPCR6CarMVtR1CYh71AzGhuZTBPePpump`
