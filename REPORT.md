@@ -1,13 +1,13 @@
 # Trencher live report
 
-Updated 2026-11-20T18:39:24Z (paper trading, never real money)
+Updated 2026-11-20T18:54:35Z (paper trading, never real money)
 
 - Equity: $74.23 (-25.8% vs $100 start)
 - Closed trades: 22, 3 wins
 - Fees paid: $14.78 (axiom $2.81, network $9.18, pool $2.66), plus $4.15 lost to slippage
 - New trades: WATCH-ONLY (scans and decides, buys nothing)
-- Brain: subscription, claude-haiku-5-5 for routine calls, claude-opus-5-5 for the daily review; 339 routine calls and 161 plan-limit hits in 48h
-- Watch log: 79 coins being followed, 2403 filed, 0 would-buys (6h follow, sampled every 2 min)
+- Brain: subscription, claude-haiku-5-5 for routine calls, claude-opus-5-5 for the daily review; 342 routine calls and 159 plan-limit hits in 48h
+- Watch log: 85 coins being followed, 2406 filed, 0 would-buys (6h follow, sampled every 2 min)
 
 ## Scorecard (after fees)
 - 22 closed, 3 won (14%), net $-25.79
@@ -73,81 +73,81 @@ Updated 2026-11-20T18:39:24Z (paper trading, never real money)
   CA `H4gHnZ3NCU7Z9XQwGX6YYJNyieGEW8pqwGRUcdSxpump`
 
 ## Last scan
-- 18:38Z: 2 coins, 2 with pairs, 0 passed the market filters, 0 researched
+- 18:54Z: 3 coins, 3 with pairs, 0 passed the market filters, 0 researched
 
 ## Coins it looked at, and why it passed
+- 18:52Z MATHISOVER (MIGRATED, $62,338 mcap, $3,103 5m vol): PASS, PASS — brain unavailable, not trading blind.  
+  CA `3JgkhGnN5ggpE14Ykb2sgcsF1LTBUFyVZBPa3VrDpump`
+- 18:52Z FIONAWIF (MIGRATED, $157,249 mcap, $9,186 5m vol): REJECT, Top 10 hold 51.5% ex-pool (>25%) (V13)  
+  CA `B4C3Jbueio385X9zH3ezXRLZpuAKJcVcjH2ZaDhapump`
+- 18:51Z jingyu (DIP, $80,625 mcap, $3,876 5m vol): REJECT, Bundles: 1 linked wallet cluster(s) hold 100.0% of supply (>20%) (V17)  
+  CA `DUZrwdjEthcJ99ZiRXr31UuqTohoTg7VjTEyfGdBpump`
+- 18:50Z DOG (MIGRATED, $57,299 mcap, $23,347 5m vol): PASS at conviction 3, PASS: chasing spike, too new, no higher low. Up 50% on the 5m at its own high, 11 minutes old, with no printed structure (V1, V6).  
+  CA `9WcGenJJraGbS3x8bAvHp1bk9Zg2DV3NYcePbD9jpump`
+- 18:48Z DYSON (MIGRATED, $273,801 mcap, $55,240 5m vol): REJECT, RugCheck danger: Creator history of rugged tokens  
+  CA `C2As2w55q3V3snKVCyA3nZvmQJSx2NApM5SLK5krpump`
+- 18:47Z runner (FINAL_STRETCH, $15,507 mcap, $38,182 5m vol): REJECT, RugCheck danger: Creator history of rugged tokens  
+  CA `RUnnEr6YskBKYibKeUZRHaDQAAfdgYZPoikkmv4NnLx`
+- 18:41Z RUDY (MIGRATED, $52,243 mcap, $2,265 5m vol): PASS at conviction 2, PASS: RUDY, thin 5m flow ($2.3k, 49% buys) in a 14-copy Rudolph field, no catalyst, and 83.5% off the high is past the 70% dip range. Blocker: thin 5m volume. (V1, V6)  
+  CA `GRMRQSkBGg2Cc8Y9GePNBcJVk49YepWkXUDQBXAMpump`
+- 18:40Z OGTA (MIGRATED, $147,473 mcap, $3,612 5m vol): PASS at conviction 2, PASS: OGTA is 93% off its $2.07M peak with $3.6k of 5m volume, under the $10k bar, and its GTA story is fading. Clean holders don't make a dead chart a buy. (V1, V6, V13)  
+  CA `7bCiddGLe5aM8HE2pigT9jsqkmC1HSPxyXN6GkHEpump`
+- 18:39Z LOOSY (MIGRATED, $268,184 mcap, $3,493 5m vol): PASS at conviction 2, PASS: the pump already round-tripped. LOOSY is back at its pre-pump base after a 91% drawdown, with 5m flow at 0.4x pace and a site that doesn't show the CA. Farm-shaped. (V1, V6, V13)  
+  CA `HF2RBPrfNBk9TxggL2cYZFEKSgirzh5HKCngLENTpump`
 - 18:27Z H4CK (no setup, $1,341 mcap, $1 5m vol): REJECT, Hack story ("hack" in the name or ticker): these tend to go down, owner rule  
   CA `J5zXjgnbwxnWSuT13aE5sRmGnbyoNafWHR52SDB9pump`
-- 18:26Z GATO (MIGRATED, $3,441,650 mcap, $2,557 5m vol): REJECT, Dev holds 2.7% (>1%) (V13, V17)  
-  CA `HsprHxBRgiVaQdRf3TnKNuZZtaX9JUSPgMFdAkk6pump`
-- 18:24Z CATPOOP (DIP, $243,062 mcap, $15,560 5m vol): REJECT, Dip with fading attention is a falling knife, not a dip (5m at 0.48x the hour's pace, under 0.6x)  
-  CA `GjjKKfd4NBY2eWsCcabZy156MwTSWW43HxP59YZDpump`
-- 18:22Z BIGFOOT (MIGRATED, $86,885 mcap, $109,129 5m vol): PASS at conviction 4, PASS: chasing spike. BIGFOOT is 7 minutes old, up 210% in 1h and 87% on the 5m, sitting 2.9% under its high with no printed higher low. Blockers: "chasing spike", "too new", "no higher low". (V1, V6)  
-  CA `Aykavwa4Z1Z2pW3CRuRpXBXrNZAtuhzAskgBFXFgpump`
-- 18:21Z MAYA (MIGRATED, $405,526 mcap, $46,705 5m vol): PASS at conviction 3, PASS — sitting 1.5% under a $411k high after a +105% five-minute candle and a +966% hour, in a 10-copy "maya samoyed" field. That's chasing a spike, not buying a pullback (V1, V6).  
-  CA `4MXzvR9PX8kVQNQuYQn7inJoGMiWbgPLNgoxyjprpump`
-- 18:20Z BIGFOOT (MIGRATED, $70,136 mcap, $73,395 5m vol): PASS at conviction 2, PASS — five minutes old, up 369% on the 5m, sells outnumbering buys, and one of 29 same-ticker copies. Chasing a spike with no higher low (V1, V6, V13).  
-  CA `9g9AqLhfhu1fqY9czKLxXsxD62whPUKg3ztu4euYpump`
-- 18:16Z HUSS (MIGRATED, $51,904 mcap, $7,043 5m vol): PASS at conviction 2, PASS: HUSS is a 77% dump off a $226k peak with 5m flow at 0.27x pace, no printed higher low and no story left. Falling knife in a 14-copy field. (V1, V6, V13)  
-  CA `3umHFkiMHyphCkLxtbf8Aabie8r5hxn86QeBAovTpump`
-- 18:15Z BTC (MIGRATED, $174,261 mcap, $39,225 5m vol): REJECT, Dev holds 2.4% (>1%) (V13, V17)  
-  CA `EK7LMLF1VEGGBLsHqHE2w5dpGZhUz9JKbAPVz1u4pump`
-- 18:13Z USDinu (FINAL_STRETCH, $20,544 mcap, $10,732 5m vol): REJECT, RugCheck danger: Low Liquidity $363.18  
-  CA `7f1CChtZmHRKR7szob9hburFPg37gr99KW4d3QAopump`
-- 18:07Z MATHISOVER (MIGRATED, $45,230 mcap, $2,863 5m vol): PASS at conviction 2, PASS — chasing a V-bounce 5% off a $47k high, 5m flow $2.9k at 0.4x pace, and the site sells a Riemann "breakthrough" headline off a 0.1-day-old domain. Blocker: chasing. (V1, V6, V13)  
-  CA `3JgkhGnN5ggpE14Ykb2sgcsF1LTBUFyVZBPa3VrDpump`
 
 ## What its skips did next (last 48h)
 A skip "ran" if the coin reached the first target (1.5x) from the skip price before a 20% drop, "dumped" if the drop came first. Sampled every 10 min, followed 6h.
-- top 10 over 25%: blocked 61, ran 5, dumped 52, flat 4, open 0 (saving losses: keep it)
+- top 10 over 25%: blocked 61, ran 5, dumped 51, flat 4, open 1 (saving losses: keep it)
   - ran: CDOG up to 1.99x  
     CA `5tAB1DMgrsJKgaKcfCfj1RzumuqovQP1LuxzQ7thpump`
   - ran: DAKITTY up to 1.51x  
     CA `3YyNSd5dAe5hbKu83syLCjZKWYD9d94EGYCfEWNkpump`
   - ran: AudaCity up to 1.66x  
     CA `ERDrmaqsoeLdsCMMpBKkRM4LV1mzTA2KHrVxKLpqpump`
-- falling knife (code): blocked 44, ran 4, dumped 39, flat 1, open 0 (saving losses: keep it)
+- falling knife (code): blocked 43, ran 4, dumped 38, flat 1, open 0 (saving losses: keep it)
   - ran: AI up to 2.14x  
     CA `GUmgNeyZCLrjQW2TaLhqkTUas8isQc86YuzKQ6Fppump`
   - ran: DCTC up to 2.59x  
     CA `47f8bEDWs6VDpnnmxegyL4A3GbBVVcssrMQeBjPvpump`
   - ran: BUNC up to 1.91x  
     CA `43Z5f8GboUfc6M6wtaGGtFciEhLXixJEwQKv8wBUpump`
-- RugCheck danger: blocked 29, ran 5, dumped 24, flat 0, open 0 (saving losses: keep it)
+- RugCheck danger: blocked 30, ran 5, dumped 23, flat 0, open 2 (saving losses: keep it)
   - ran: CATCOIN up to 2.06x  
     CA `9JngoeaZHbV4f5EyRR3oDLNPH7VUGw1PYQC4s6j2pump`
   - ran: Leonida up to 1.51x  
     CA `9rbKkz2BDQBVgZmrHY6d7PTq2ge91gkpEyE4y9PPpump`
   - ran: PIPI up to 1.63x  
     CA `J51xgomTx21VHY62Q7uv2otWRUSq71WeaApLfsAnpump`
-- thin 5m volume: blocked 17, ran 1, dumped 12, flat 4, open 0 (saving losses: keep it)
+- thin 5m volume: blocked 16, ran 1, dumped 11, flat 4, open 0 (saving losses: keep it)
   - ran: Snapmatic up to 1.68x  
     CA `4S8pUKWKUAtQKfE5qokSjszWDp1RqQWnom8jNYSWpump`
-- flow below pace: blocked 16, ran 4, dumped 9, flat 1, open 2 (saving losses: keep it)
+- flow below pace: blocked 15, ran 3, dumped 8, flat 1, open 3 (saving losses: keep it)
   - ran: SI up to 1.53x  
     CA `4s38cgZJN4J39S2BQwCkcsJJ9ZGeJSjw8vK9wVtupump`
   - ran: AI up to 1.51x  
     CA `8SacNb6sgiAcscRe4m915B6nL9XX55dk8FS7L532pump`
   - ran: SWRDXSTFF up to 1.77x  
     CA `Csoj9XHJfBAxsKswqKKBENnGeoRDHtACfyYi7HmJpump`
-- too new / sniping: blocked 15, ran 2, dumped 12, flat 0, open 1 (saving losses: keep it)
+- too new / sniping: blocked 15, ran 1, dumped 12, flat 0, open 2 (saving losses: keep it)
   - ran: AudaCity up to 1.96x  
     CA `3rtTUCpe1BBgCTNWQ9jK3xkAz1E7SPqMt4uYHx1Bpump`
-  - ran: MATHISOVER up to 1.53x  
-    CA `3JgkhGnN5ggpE14Ykb2sgcsF1LTBUFyVZBPa3VrDpump`
-- dev share over 1%: blocked 14, ran 2, dumped 9, flat 0, open 3 (saving losses: keep it)
-  - ran: LOOSY up to 1.71x  
-    CA `FtSWWxVmKNXz8ksJxzJJ7BdDWXbQb3vC94J99oyypump`
-  - ran: MANDY up to 1.54x  
-    CA `GQngHP8P6s45MxWnU7JsocfV2HjPQdJZmCEAYKpBpump`
-- near the high / chasing: blocked 14, ran 3, dumped 11, flat 0, open 0 (saving losses: keep it)
+- near the high / chasing: blocked 15, ran 3, dumped 11, flat 0, open 1 (saving losses: keep it)
   - ran: BEAR up to 2.32x  
     CA `DCPm44cT9i39HjR13QHYgxkR7wEx9TDeniGuayB5pump`
   - ran: ZOL up to 1.55x  
     CA `UQLWvkwiSsnViuVBy7oArMtzb5RAZyrdJ79amQFrzoL`
   - ran: STICK up to 2.08x  
     CA `532iaQrhFCD3QKFHsAtFAQ1mQZMjMdNrPXLeCS6cpump`
-- bundles over the line: blocked 13, ran 1, dumped 9, flat 3, open 0 (saving losses: keep it)
+- dev share over 1%: blocked 14, ran 3, dumped 9, flat 0, open 2 (saving losses: keep it)
+  - ran: LOOSY up to 1.71x  
+    CA `FtSWWxVmKNXz8ksJxzJJ7BdDWXbQb3vC94J99oyypump`
+  - ran: MANDY up to 1.54x  
+    CA `GQngHP8P6s45MxWnU7JsocfV2HjPQdJZmCEAYKpBpump`
+  - ran: BTC up to 1.66x  
+    CA `EK7LMLF1VEGGBLsHqHE2w5dpGZhUz9JKbAPVz1u4pump`
+- bundles over the line: blocked 13, ran 1, dumped 8, flat 3, open 1 (saving losses: keep it)
   - ran: PAPA up to 1.66x  
     CA `3hdXmQqZHmm7gWWweFKGdkjnxyWQZ2SWVNt1Jty5pump`
 - other: blocked 13, ran 3, dumped 9, flat 0, open 1 (saving losses: keep it)
@@ -199,11 +199,11 @@ The trenches are trading cats and cryptids right now. MAYA (Samoyed, $395k cap, 
 ## Moving most in its scans, last 30 min (1h volume)
 - CATPOOP: $387,576 1h vol, $243,062 mcap, +687% 1h  
   CA `GjjKKfd4NBY2eWsCcabZy156MwTSWW43HxP59YZDpump`
-- HUSS: $301,298 1h vol, $54,091 mcap, -38% 1h  
-  CA `3umHFkiMHyphCkLxtbf8Aabie8r5hxn86QeBAovTpump`
-- RH: $271,871 1h vol, $1,412 mcap, -99% 1h  
-  CA `7rdsiA4riA8Jb1Pr7TUxiYL8dRtSGEzxdWwdENwSpump`
-- BIGFOOT: $256,480 1h vol, $86,639 mcap, +209% 1h  
-  CA `Aykavwa4Z1Z2pW3CRuRpXBXrNZAtuhzAskgBFXFgpump`
-- MAYA: $218,550 1h vol, $394,699 mcap, +938% 1h  
-  CA `4MXzvR9PX8kVQNQuYQn7inJoGMiWbgPLNgoxyjprpump`
+- DYSON: $114,247 1h vol, $273,801 mcap, +689% 1h  
+  CA `C2As2w55q3V3snKVCyA3nZvmQJSx2NApM5SLK5krpump`
+- LOOSY: $104,948 1h vol, $270,599 mcap, -89% 1h  
+  CA `HF2RBPrfNBk9TxggL2cYZFEKSgirzh5HKCngLENTpump`
+- DOG: $85,940 1h vol, $46,457 mcap, +64% 1h  
+  CA `9WcGenJJraGbS3x8bAvHp1bk9Zg2DV3NYcePbD9jpump`
+- AMC: $63,596 1h vol, $1,270 mcap, -99% 1h  
+  CA `9pmBoK87Hs5LiRgGMTuArA43DHEGQTyJDzmXQSxypump`
