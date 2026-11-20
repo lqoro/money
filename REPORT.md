@@ -1,13 +1,13 @@
 # Trencher live report
 
-Updated 2026-11-20T06:00:05Z (paper trading, never real money)
+Updated 2026-11-20T06:15:15Z (paper trading, never real money)
 
 - Equity: $74.23 (-25.8% vs $100 start)
 - Closed trades: 22, 3 wins
 - Fees paid: $14.78 (axiom $2.81, network $9.18, pool $2.66), plus $4.15 lost to slippage
 - New trades: WATCH-ONLY (scans and decides, buys nothing)
-- Brain: subscription, claude-haiku-5-5 for routine calls, claude-opus-5-5 for the daily review; 312 routine calls and 235 plan-limit hits in 48h
-- Watch log: 97 coins being followed, 2226 filed, 0 would-buys (6h follow, sampled every 2 min)
+- Brain: subscription, claude-haiku-5-5 for routine calls, claude-opus-5-5 for the daily review; 312 routine calls and 234 plan-limit hits in 48h
+- Watch log: 95 coins being followed, 2230 filed, 0 would-buys (6h follow, sampled every 2 min)
 
 ## Scorecard (after fees)
 - 22 closed, 3 won (14%), net $-25.79
@@ -73,9 +73,13 @@ Updated 2026-11-20T06:00:05Z (paper trading, never real money)
   CA `H4gHnZ3NCU7Z9XQwGX6YYJNyieGEW8pqwGRUcdSxpump`
 
 ## Last scan
-- 05:59Z: 8 coins, 8 with pairs, 1 passed the market filters, 1 researched
+- 06:14Z: 4 coins, 4 with pairs, 0 passed the market filters, 0 researched
 
 ## Coins it looked at, and why it passed
+- 06:14Z ANTS (DIP, $6,578,140 mcap, $8,931 5m vol): PASS at conviction 3, PASS. ANTS is the biggest 'Anthropic' coin by volume, but it's a $6.6M dip with sellers ahead of buyers, a 1.2x first target and no live catalyst. Blocker: "dead story" plus "target too close." (V1, V6)  
+  CA `ejrz94zR4A2ScS8LdvRaQih2xUxaE2ydreqUNKmpump`
+- 06:02Z ZEN (FINAL_STRETCH, $16,845 mcap, $2,755 5m vol): REJECT, Top 10 hold 26.9% ex-pool (>25%) (V13)  
+  CA `BnyFKCVoRp5edqnqqZmnYz9zGSo471pEEfPhqCZopump`
 - 05:59Z SWRDXSTFF (DIP, $141,252 mcap, $34,957 5m vol): PASS at conviction 3, PASS: bottom buy with no catalyst, theme pace 0.86x under the 1x gate, no printed higher low, and a day-old play-to-earn site that doesn't show this CA. Blocker: "no catalyst / theme pace". (V1, V6, V13)  
   CA `Csoj9XHJfBAxsKswqKKBENnGeoRDHtACfyYi7HmJpump`
 - 05:57Z apocry  (MIGRATED, $167,076 mcap, $20,006 5m vol): PASS, PASS — brain unavailable, not trading blind.  
@@ -92,14 +96,10 @@ Updated 2026-11-20T06:00:05Z (paper trading, never real money)
   CA `HF2RBPrfNBk9TxggL2cYZFEKSgirzh5HKCngLENTpump`
 - 05:40Z Neon (FINAL_STRETCH, $21,707 mcap, $6,519 5m vol): REJECT, Top 10 hold 25.9% ex-pool (>25%) (V13)  
   CA `212XWaQQvEWWpbybdhtWMPmQWsMka9DgE2B6cqq9pump`
-- 05:30Z HARAMBE (FINAL_STRETCH, $19,376 mcap, $15,731 5m vol): REJECT, Top 10 hold 25.4% ex-pool (>25%) (V13)  
-  CA `EU2kWyXgvG6TPkRvbSXqYbbMUT1nUzF8AFhYBWRipump`
-- 05:23Z AudaCity (FINAL_STRETCH, $16,782 mcap, $30,144 5m vol): PASS at conviction 2, PASS: five minutes old, up 348% on 12x its hourly pace, five copies of the name and no story on the radar. Chasing a spike with nothing under it (V1, V6, V13).  
-  CA `3rtTUCpe1BBgCTNWQ9jK3xkAz1E7SPqMt4uYHx1Bpump`
 
 ## What its skips did next (last 48h)
 A skip "ran" if the coin reached the first target (1.5x) from the skip price before a 20% drop, "dumped" if the drop came first. Sampled every 10 min, followed 6h.
-- top 10 over 25%: blocked 72, ran 12, dumped 54, flat 3, open 3 (saving losses: keep it)
+- top 10 over 25%: blocked 73, ran 12, dumped 54, flat 3, open 4 (saving losses: keep it)
   - ran: SHARK up to 1.68x  
     CA `3yxsNufZSWNrvMXw8gwCJFCuUkuTDsb1a55aR7evpump`
   - ran: clipping up to 2.89x  
@@ -127,7 +127,7 @@ A skip "ran" if the coin reached the first target (1.5x) from the skip price bef
     CA `HricrxBN3QXC3SN5VLtNhaEzoGrYea5ZtaTxQDfKSTNK`
   - ran: PAPA up to 1.66x  
     CA `3hdXmQqZHmm7gWWweFKGdkjnxyWQZ2SWVNt1Jty5pump`
-- thin 5m volume: blocked 14, ran 1, dumped 6, flat 5, open 2 (saving losses: keep it)
+- thin 5m volume: blocked 15, ran 1, dumped 6, flat 5, open 3 (saving losses: keep it)
   - ran: Snapmatic up to 1.68x  
     CA `4S8pUKWKUAtQKfE5qokSjszWDp1RqQWnom8jNYSWpump`
 - other: blocked 14, ran 4, dumped 10, flat 0, open 0 (saving losses: keep it)
@@ -201,7 +201,7 @@ Not quiet. The movers are mostly pumpswap coins under two hours old, and the buy
   CA `Csoj9XHJfBAxsKswqKKBENnGeoRDHtACfyYi7HmJpump`
 - ANTCAP: $215,541 1h vol, $111,916 mcap, +99% 1h  
   CA `8VvT87FRAZY9m2VsvpvVA5zhHSZGXd5eC2SrPDHbpump`
-- APCY: $128,758 1h vol, $58,541 mcap, +58% 1h  
+- APCY: $131,912 1h vol, $57,199 mcap, +72% 1h  
   CA `H4BpLUZm4r9269UXJziP9bUetMgJv5fWWPBsUP2bpump`
-- Turkey: $95,521 1h vol, $3,916 mcap, -86% 1h  
-  CA `FjyaDGxFqZ8spQ6ivbz2Y4Lf8R1ukG6xBZ1i4sYBpump`
+- iAgent: $78,143 1h vol, $2,222,205 mcap, -6% 1h  
+  CA `44DZsPNJUtUyTkELAFYdwCpe82sEt12HZKrMgK1Spump`
