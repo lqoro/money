@@ -1,13 +1,13 @@
 # Trencher live report
 
-Updated 2026-11-20T17:38:53Z (paper trading, never real money)
+Updated 2026-11-20T17:54:01Z (paper trading, never real money)
 
 - Equity: $74.23 (-25.8% vs $100 start)
 - Closed trades: 22, 3 wins
 - Fees paid: $14.78 (axiom $2.81, network $9.18, pool $2.66), plus $4.15 lost to slippage
 - New trades: WATCH-ONLY (scans and decides, buys nothing)
-- Brain: subscription, claude-haiku-5-5 for routine calls, claude-opus-5-5 for the daily review; 335 routine calls and 167 plan-limit hits in 48h
-- Watch log: 79 coins being followed, 2387 filed, 0 would-buys (6h follow, sampled every 2 min)
+- Brain: subscription, claude-haiku-5-5 for routine calls, claude-opus-5-5 for the daily review; 336 routine calls and 165 plan-limit hits in 48h
+- Watch log: 78 coins being followed, 2393 filed, 0 would-buys (6h follow, sampled every 2 min)
 
 ## Scorecard (after fees)
 - 22 closed, 3 won (14%), net $-25.79
@@ -73,9 +73,19 @@ Updated 2026-11-20T17:38:53Z (paper trading, never real money)
   CA `H4gHnZ3NCU7Z9XQwGX6YYJNyieGEW8pqwGRUcdSxpump`
 
 ## Last scan
-- 17:37Z: 7 coins, 7 with pairs, 0 passed the market filters, 0 researched
+- 17:53Z: 4 coins, 4 with pairs, 1 passed the market filters, 1 researched
 
 ## Coins it looked at, and why it passed
+- 17:53Z LOOSY (MIGRATED, $1,992,435 mcap, $3,035 5m vol): PASS at conviction 3, PASS: flow below pace, no printed higher low, and a bottom buy on a fading GTA-clip dog meme with 16 copies. The crowd is leaving the story (V1, V6, V13).  
+  CA `HF2RBPrfNBk9TxggL2cYZFEKSgirzh5HKCngLENTpump`
+- 17:46Z h◡shippo (MIGRATED, $110,036 mcap, $13,051 5m vol): PASS at conviction 2, PASS: chasing spike. Up 44% on the 5m, 18% off a $134k peak, and it's not the 5m leader of the scan. Clean holders, no story. Meme with no catalyst. (V1, V6)  
+  CA `FDUktn5RyqhMqvXimZ8om9MGraFg5J6q92xEwoLFpump`
+- 17:41Z GATO (MIGRATED, $3,342,638 mcap, $3,293 5m vol): REJECT, Dev holds 2.7% (>1%) (V13, V17)  
+  CA `HsprHxBRgiVaQdRf3TnKNuZZtaX9JUSPgMFdAkk6pump`
+- 17:41Z human (FINAL_STRETCH, $17,222 mcap, $52,087 5m vol): PASS at conviction 3, PASS: chasing spike, 4-minute-old pump.fun copy in a 23-coin "human" field. Blocker: chasing spike (5m +296%, 12x pace, 8.9% off peak). (V1, V6)  
+  CA `3pQSHnXmDrbf1ZKNGMdELx5NvgVrgFB2rpMZa7hzpump`
+- 17:38Z CATPOOP (MIGRATED, $237,269 mcap, $35,845 5m vol): REJECT, RugCheck danger: Creator history of rugged tokens  
+  CA `GjjKKfd4NBY2eWsCcabZy156MwTSWW43HxP59YZDpump`
 - 17:35Z AMC (MIGRATED, $161,599 mcap, $12,115 5m vol): REJECT, Top 10 hold 35.1% ex-pool (>25%) (V13)  
   CA `9pmBoK87Hs5LiRgGMTuArA43DHEGQTyJDzmXQSxypump`
 - 17:34Z RUDY (MIGRATED, $68,101 mcap, $3,135 5m vol): PASS at conviction 2, PASS — 78% off a $316k peak with no catalyst, $3.1k on the 5m, and 14 copies splitting the crowd. Dead-story bottom buy (V1, V6, V13).  
@@ -86,20 +96,10 @@ Updated 2026-11-20T17:38:53Z (paper trading, never real money)
   CA `3umHFkiMHyphCkLxtbf8Aabie8r5hxn86QeBAovTpump`
 - 17:27Z H4CK (MIGRATED, $103,164 mcap, $8,003 5m vol): REJECT, Hack story ("hack" in the name or ticker): these tend to go down, owner rule  
   CA `J5zXjgnbwxnWSuT13aE5sRmGnbyoNafWHR52SDB9pump`
-- 17:25Z HOGE (DIP, $857,791 mcap, $3,593 5m vol): REJECT, Bundles: 9 linked wallet cluster(s) hold 26.7% of supply (>20%) (V17)  
-  CA `FVzqGqRmr4UH1Fif6dewmwbJ1p4YUZCu8dcw4Efopump`
-- 17:21Z MATHISOVER (MIGRATED, $32,524 mcap, $15,200 5m vol): PASS at conviction 3, PASS: too new, no printed higher low, and the story is a 0-day domain selling a Riemann headline dated tomorrow. Blockers: "too new", "no higher low", "unverified narrative". (V1, V3, V13)  
-  CA `3JgkhGnN5ggpE14Ykb2sgcsF1LTBUFyVZBPa3VrDpump`
-- 17:20Z jingyu (MIGRATED, $111,083 mcap, $5,184 5m vol): REJECT, Bundles: 1 linked wallet cluster(s) hold 100.0% of supply (>20%) (V17)  
-  CA `DUZrwdjEthcJ99ZiRXr31UuqTohoTg7VjTEyfGdBpump`
-- 17:09Z OGTA (MIGRATED, $167,995 mcap, $5,278 5m vol): PASS at conviction 2, PASS: OGTA is 92% off its $2.07M high with $5.3k 5m flow at 0.36x pace, and the GTA ticker story is fading. Flow below pace, outside the buy zone (V1, V6).  
-  CA `7bCiddGLe5aM8HE2pigT9jsqkmC1HSPxyXN6GkHEpump`
-- 17:08Z BOBO (FINAL_STRETCH, $19,021 mcap, $6,161 5m vol): PASS at conviction 3, PASS: BOBO is a 17-copy "bobo" vamp field with no story, a sawtooth chart, and 5m flow under the $10k bar. Blocker: dead story. (V1, V3, V6, V13)  
-  CA `3admXvh8WZRuoo9Zk1qum72ByZWumABQi1zh5Z9gpump`
 
 ## What its skips did next (last 48h)
 A skip "ran" if the coin reached the first target (1.5x) from the skip price before a 20% drop, "dumped" if the drop came first. Sampled every 10 min, followed 6h.
-- top 10 over 25%: blocked 62, ran 5, dumped 51, flat 4, open 2 (saving losses: keep it)
+- top 10 over 25%: blocked 62, ran 5, dumped 52, flat 4, open 1 (saving losses: keep it)
   - ran: CDOG up to 1.99x  
     CA `5tAB1DMgrsJKgaKcfCfj1RzumuqovQP1LuxzQ7thpump`
   - ran: DAKITTY up to 1.51x  
@@ -113,7 +113,7 @@ A skip "ran" if the coin reached the first target (1.5x) from the skip price bef
     CA `GUmgNeyZCLrjQW2TaLhqkTUas8isQc86YuzKQ6Fppump`
   - ran: DCTC up to 2.59x  
     CA `47f8bEDWs6VDpnnmxegyL4A3GbBVVcssrMQeBjPvpump`
-- RugCheck danger: blocked 29, ran 5, dumped 23, flat 1, open 0 (saving losses: keep it)
+- RugCheck danger: blocked 28, ran 5, dumped 22, flat 0, open 1 (saving losses: keep it)
   - ran: CATCOIN up to 2.06x  
     CA `9JngoeaZHbV4f5EyRR3oDLNPH7VUGw1PYQC4s6j2pump`
   - ran: Leonida up to 1.51x  
@@ -148,7 +148,7 @@ A skip "ran" if the coin reached the first target (1.5x) from the skip price bef
 - too new / sniping: blocked 13, ran 1, dumped 11, flat 0, open 1 (saving losses: keep it)
   - ran: AudaCity up to 1.96x  
     CA `3rtTUCpe1BBgCTNWQ9jK3xkAz1E7SPqMt4uYHx1Bpump`
-- near the high / chasing: blocked 12, ran 3, dumped 8, flat 0, open 1 (saving losses: keep it)
+- near the high / chasing: blocked 13, ran 3, dumped 9, flat 0, open 1 (saving losses: keep it)
   - ran: BEAR up to 2.32x  
     CA `DCPm44cT9i39HjR13QHYgxkR7wEx9TDeniGuayB5pump`
   - ran: ZOL up to 1.55x  
@@ -197,11 +197,11 @@ The meta is fresh pump.fun launches with cat, joke and math-chant names, not the
 ## Moving most in its scans, last 30 min (1h volume)
 - HUSS: $561,709 1h vol, $115,911 mcap, +409% 1h  
   CA `3umHFkiMHyphCkLxtbf8Aabie8r5hxn86QeBAovTpump`
-- MIA: $358,373 1h vol, $1,357 mcap, -100% 1h  
-  CA `4ZbmGndQLrguTbdk5oz7wxxxVCnK2ZM9ShoMvML8pump`
-- Móm: $322,191 1h vol, $15,066 mcap, -77% 1h  
+- Móm: $211,445 1h vol, $8,931 mcap, -93% 1h  
   CA `BfNcetwXyxFJjsnmMboPpHqpZg19ez1ueQGPGE9upump`
-- OGTA: $177,940 1h vol, $167,995 mcap, +5% 1h  
-  CA `7bCiddGLe5aM8HE2pigT9jsqkmC1HSPxyXN6GkHEpump`
+- BITCAT: $199,643 1h vol, $1,370 mcap, -95% 1h  
+  CA `b9JGFxnWv3CArKZ2BAWmJwKdSqbLQshDC2WAAs9pump`
 - RH: $172,085 1h vol, $388,703 mcap, +927% 1h  
   CA `7rdsiA4riA8Jb1Pr7TUxiYL8dRtSGEzxdWwdENwSpump`
+- h◡shippo: $142,558 1h vol, $110,036 mcap, +213% 1h  
+  CA `FDUktn5RyqhMqvXimZ8om9MGraFg5J6q92xEwoLFpump`
