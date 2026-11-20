@@ -1,13 +1,13 @@
 # Trencher live report
 
-Updated 2026-11-20T07:16:15Z (paper trading, never real money)
+Updated 2026-11-20T07:31:28Z (paper trading, never real money)
 
 - Equity: $74.23 (-25.8% vs $100 start)
 - Closed trades: 22, 3 wins
 - Fees paid: $14.78 (axiom $2.81, network $9.18, pool $2.66), plus $4.15 lost to slippage
 - New trades: WATCH-ONLY (scans and decides, buys nothing)
-- Brain: subscription, claude-haiku-5-5 for routine calls, claude-opus-5-5 for the daily review; 318 routine calls and 228 plan-limit hits in 48h
-- Watch log: 93 coins being followed, 2249 filed, 0 would-buys (6h follow, sampled every 2 min)
+- Brain: subscription, claude-haiku-5-5 for routine calls, claude-opus-5-5 for the daily review; 318 routine calls and 226 plan-limit hits in 48h
+- Watch log: 92 coins being followed, 2255 filed, 0 would-buys (6h follow, sampled every 2 min)
 
 ## Scorecard (after fees)
 - 22 closed, 3 won (14%), net $-25.79
@@ -73,9 +73,19 @@ Updated 2026-11-20T07:16:15Z (paper trading, never real money)
   CA `H4gHnZ3NCU7Z9XQwGX6YYJNyieGEW8pqwGRUcdSxpump`
 
 ## Last scan
-- 07:15Z: 5 coins, 5 with pairs, 1 passed the market filters, 1 researched
+- 07:30Z: 4 coins, 4 with pairs, 1 passed the market filters, 1 researched
 
 ## Coins it looked at, and why it passed
+- 07:31Z enu (MIGRATED, $43,733 mcap, $2,133 5m vol): PASS at conviction 3, PASS: target too close and mid-range entry. enu is 1.18x under its 5.3e-5 high, 38% above its printed higher low, on $2.1k of 5m flow. Nothing to chase (V1, V6).  
+  CA `9msLfYfXBrSbrApCZAPuPMCNmPqNtEL1VPKh1AEYpump`
+- 07:28Z apocry  (DIP, $103,794 mcap, $3,093 5m vol): REJECT, Dip with fading attention is a falling knife, not a dip (5m at 0.17x the hour's pace, under 0.6x)  
+  CA `HVxXzEt87QszpC95kMKAfrHdboj4K1TVxYNMzwmbpump`
+- 07:26Z HOGE (DIP, $1,079,383 mcap, $2,373 5m vol): REJECT, Bundles: 9 linked wallet cluster(s) hold 26.7% of supply (>20%) (V17)  
+  CA `FVzqGqRmr4UH1Fif6dewmwbJ1p4YUZCu8dcw4Efopump`
+- 07:26Z CBUCKS (MIGRATED, $4,242,731 mcap, $4,281 5m vol): REJECT, Top 10 hold 25.9% ex-pool (>25%) (V13)  
+  CA `DtcicPCKTKeAh7TDEzTym3hXeoHAoMiBdYJhMYxZpump`
+- 07:19Z iAgent (DIP, $1,811,599 mcap, $3,185 5m vol): REJECT, Dip with fading attention is a falling knife, not a dip (5m at 0.55x the hour's pace, under 0.6x)  
+  CA `44DZsPNJUtUyTkELAFYdwCpe82sEt12HZKrMgK1Spump`
 - 07:15Z OGTA (DIP, $622,892 mcap, $3,991 5m vol): PASS at conviction 2, PASS — DIP with no live catalyst. GTA 6 peaked on its own date, theme volume is 0.82x pace, and this is a bounce, not a higher low. Blocker: "dead story" / bottom-buy rule. (V1, V6)  
   CA `7bCiddGLe5aM8HE2pigT9jsqkmC1HSPxyXN6GkHEpump`
 - 07:14Z LOOSY (MIGRATED, $1,144,996 mcap, $3,106 5m vol): PASS at conviction 3, PASS — Cool Dog (LOOSY) is a $1.14M migrated copy-field leader with 5m flow at 0.72x pace, $3.1k on the 5m and no breakout printing. Blocker: flow below pace. (V1, V6)  
@@ -86,27 +96,17 @@ Updated 2026-11-20T07:16:15Z (paper trading, never real money)
   CA `8mnJZnxaNLqVwkaWWGH7dKmoEzyYzGJx5pHaCp7spump`
 - 06:49Z FIONA (FINAL_STRETCH, $17,735 mcap, $3,974 5m vol): PASS at conviction 3, PASS: spike off a low into a 22k peak, flow under pace, weak name story, no real site. Blocker: no narrative, target too close. (V1, V6)  
   CA `5kpHB8xoruKHJRigE6FHTG2gZcrPSWWn8u4N7uS9pump`
-- 06:46Z MF (MIGRATED, $138,334 mcap, $2,404 5m vol): REJECT, Dev holds 1.0% (>1%) (V13, V17)  
-  CA `7xumDqxh6AfkPov41c2R6SdCiPrZdWJJTsbogiSepump`
-- 06:45Z enu (MIGRATED, $36,785 mcap, $3,766 5m vol): REJECT, Top 10 hold 25.2% ex-pool (>25%) (V13)  
-  CA `9msLfYfXBrSbrApCZAPuPMCNmPqNtEL1VPKh1AEYpump`
-- 06:45Z SWRDXSTFF (MIGRATED, $47,017 mcap, $13,175 5m vol): PASS at conviction 3, PASS: 86% off a $345k peak, 5m flow at 0.48x pace, sells beating buys, no printed higher low. That's a falling knife with a blocker on every rule I have (V1, V6, V13).  
-  CA `Csoj9XHJfBAxsKswqKKBENnGeoRDHtACfyYi7HmJpump`
-- 06:43Z apocry  (MIGRATED, $204,106 mcap, $21,635 5m vol): PASS at conviction 3, PASS — original apocrycoin, clean holders, but it's down 13% on 5m at 0.99x pace, not pushing into the high, and a bottom buy on a theme at 0.91x pace with zero buzz. Blocker: "no breakout" (V1, V6).  
-  CA `HVxXzEt87QszpC95kMKAfrHdboj4K1TVxYNMzwmbpump`
-- 06:40Z CBUCKS (MIGRATED, $4,408,450 mcap, $2,640 5m vol): REJECT, Top 10 hold 25.9% ex-pool (>25%) (V13)  
-  CA `DtcicPCKTKeAh7TDEzTym3hXeoHAoMiBdYJhMYxZpump`
 
 ## What its skips did next (last 48h)
 A skip "ran" if the coin reached the first target (1.5x) from the skip price before a 20% drop, "dumped" if the drop came first. Sampled every 10 min, followed 6h.
-- top 10 over 25%: blocked 75, ran 12, dumped 56, flat 3, open 4 (saving losses: keep it)
+- top 10 over 25%: blocked 75, ran 13, dumped 56, flat 3, open 3 (saving losses: keep it)
   - ran: SHARK up to 1.68x  
     CA `3yxsNufZSWNrvMXw8gwCJFCuUkuTDsb1a55aR7evpump`
   - ran: clipping up to 2.89x  
     CA `FfsmhbvkTZ2TBYTuLgYCWiwhqeosVyH3imuUtWWypump`
   - ran: BUCKZ up to 1.6x  
     CA `3dF7QJEkhuVshbdgcVe227XvsbBc3cCoPTcHXw7Fpump`
-- falling knife (code): blocked 52, ran 7, dumped 43, flat 1, open 1 (saving losses: keep it)
+- falling knife (code): blocked 53, ran 7, dumped 43, flat 1, open 2 (saving losses: keep it)
   - ran: DACT up to 2.63x  
     CA `GZUGmAtuSx9755C3W1CLDVtA7MZQ8QWF1XjhjEbjpump`
   - ran: Apocrycoin up to 1.54x  
@@ -142,7 +142,7 @@ A skip "ran" if the coin reached the first target (1.5x) from the skip price bef
     CA `89GFxMWQ1r8cwTwRSgeQ9RaGPtUdmDLQgCsQZcrWpump`
   - ran: After up to 2.36x  
     CA `Db2s6iVvenVhJkj96P4UbZWEAYX4nUhgXhSVbQrwpump`
-- flow below pace: blocked 13, ran 3, dumped 6, flat 1, open 3 (saving losses: keep it)
+- flow below pace: blocked 12, ran 3, dumped 5, flat 1, open 3 (mixed)
   - ran: SI up to 1.53x  
     CA `4s38cgZJN4J39S2BQwCkcsJJ9ZGeJSjw8vK9wVtupump`
   - ran: AI up to 1.51x  
@@ -194,16 +194,16 @@ Nothing shows a positive edge after costs. Over 309 settled coins, every setup l
 - [2026-11-02 20:25] I expected Slingoor, a clean MIGRATED leader with $25k of 5m flow at pace and a 0.77 buy share, to retest its $408k high from $304k. It never went green (0.98x peak) and hit the -20% stop in 2 minutes, a -$2.86 probe. My own thesis admitted there was no printed higher low after a peak only 6 minutes old, so this confirms the money-shape rule: buy share and flow are not structure (V1, V6). Next time a MIGRATED pullback with no higher low above the hourly low is a PASS with blocker "no higher low", not a probe. This is one loss, so it adds no new ban beyond the rule I already have.
 
 ## Meta right now
-Not quiet. The meta in the scan is invented word-brand names launched in the last few hours and trading on pumpswap: apocrycoin (HVxXzEt87QszpC95kMKAfrHdboj4K1TVxYNMzwmbpump, $168k cap, $20.8k 5m, 68% buys, 1.6h old), SWORD X STAFF ($139k, $32.5k 5m, 59% buys, 2.6h) and Antcap ($112k, $27.6k 5m, 61% buys, +99% 1h, 1.8h). Those three are the only movers clearing the $10k 5m bar, and they're rising. Person and celebrity names are fading or dead on 5m: Harambe -90%, Turkey -91%, Gino, AudaCity and Isaac Francis have almost no 5m volume, and HOGE is at 19% buys on $1.08M. AI is fading, not a meta: Anthropic (ANTS) is 327h old at $6.6M with $8.9k 5m and flat, and Apple AI Agent is -6%. Trump and GTA names don't clear the scan at all. Fiona Coin ($11.6k, $5.2k 5m, +442% 1h, 30 min old) is the early spike and too young to touch, and ZOL ($56k, $1.3k 5m) is watch-only. The crawler's figures for ZOL, apocrycoin and SWORD don't match the scan (ZOL is $38k/$9k in the crawler vs $56k/$1.3k in the scan), so I'm using scan numbers only. The second "apocrycoin" (APCY, 37h old, $346 5m, 38% buys) is a copy, and I'm passing on it. Setups to research now, probe-sized at most: the original apocrycoin CA and SWORD X STAFF, with dev, bundle and holder checks, initials at 2x, stop at -30%, exit written before entry. Antcap only if its 1h spike keeps volume. Holder, dev and bundle checks haven't run on any of these yet, so conviction is low (about 4-5/10) and it's a probe at most.
+Not quiet. Two coins clear the $10k 5m bar with buyers: Sheepcoin ($12k cap, $28.7k 5m, 57% buys, +413% 1h) and Retard Patrick ($42.7k cap, $32k 5m, 56% buys), both under an hour old. The trenches are trading fresh character-plus-name memes on pump.fun and pumpswap (Sheep, Patrick, Fiona, Mark). That is a launch-style meta that lasts hours, and the fades are already visible: Mark The Squirrel -90% 1h on $54 5m, Justice For Mark Longo -56%, Pals -56%, Isaac Francis at 0% buys. The GTA-ticker plays are fading too (OGTA $3.3k 5m, GATO 2,083h old at 17% buys). Trump, AI and celebrity names from the crawler don't appear in scan_movers, and the crawler's apocrycoin/SWORD/Antcap figures don't match the scan, so I'm ignoring them. Setups to research now, probe-sized at most: Retard Patrick first, then Sheepcoin only if it holds after the spike. Dev, bundle and holder checks haven't run, so conviction is 4/10: initials at 2x, stop at -30%, exit written before entry. Fiona ($4.3k 5m) and LOOSY ($3.3k 5m, 79% buys) are under the volume bar, so watch only.
 
 ## Moving most in its scans, last 30 min (1h volume)
-- MNUT: $133,072 1h vol, $2,815 mcap, -91% 1h  
+- apocry : $214,470 1h vol, $104,991 mcap, -50% 1h  
+  CA `HVxXzEt87QszpC95kMKAfrHdboj4K1TVxYNMzwmbpump`
+- MNUT: $133,417 1h vol, $2,776 mcap, -91% 1h  
   CA `EtJD6hSPf8W82WW6r3eHfjistaUQMHhGsa1uBUqmpump`
-- MARK: $87,900 1h vol, $12,785 mcap, -56% 1h  
+- MARK: $69,975 1h vol, $8,877 mcap, -66% 1h  
   CA `GMGgW3FGXKgPHmjiv3Pdd66dC7vXvpX8U9t4UG4tpBk6`
-- FIONA: $68,639 1h vol, $19,749 mcap, +189% 1h  
-  CA `5kpHB8xoruKHJRigE6FHTG2gZcrPSWWn8u4N7uS9pump`
+- iAgent: $69,181 1h vol, $1,811,599 mcap, -28% 1h  
+  CA `44DZsPNJUtUyTkELAFYdwCpe82sEt12HZKrMgK1Spump`
 - PATRICK: $62,903 1h vol, $42,706 mcap, +33% 1h  
   CA `8mnJZnxaNLqVwkaWWGH7dKmoEzyYzGJx5pHaCp7spump`
-- OGTA: $56,528 1h vol, $622,892 mcap, +20% 1h  
-  CA `7bCiddGLe5aM8HE2pigT9jsqkmC1HSPxyXN6GkHEpump`
