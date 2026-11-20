@@ -1,13 +1,13 @@
 # Trencher live report
 
-Updated 2026-11-20T02:43:34Z (paper trading, never real money)
+Updated 2026-11-20T02:58:42Z (paper trading, never real money)
 
 - Equity: $74.23 (-25.8% vs $100 start)
 - Closed trades: 22, 3 wins
 - Fees paid: $14.78 (axiom $2.81, network $9.18, pool $2.66), plus $4.15 lost to slippage
 - New trades: WATCH-ONLY (scans and decides, buys nothing)
-- Brain: subscription, claude-haiku-5-5 for routine calls, claude-opus-5-5 for the daily review; 296 routine calls and 255 plan-limit hits in 48h
-- Watch log: 110 coins being followed, 2166 filed, 0 would-buys (6h follow, sampled every 2 min)
+- Brain: subscription, claude-haiku-5-5 for routine calls, claude-opus-5-5 for the daily review; 297 routine calls and 253 plan-limit hits in 48h
+- Watch log: 112 coins being followed, 2169 filed, 0 would-buys (6h follow, sampled every 2 min)
 
 ## Scorecard (after fees)
 - 22 closed, 3 won (14%), net $-25.79
@@ -73,9 +73,19 @@ Updated 2026-11-20T02:43:34Z (paper trading, never real money)
   CA `H4gHnZ3NCU7Z9XQwGX6YYJNyieGEW8pqwGRUcdSxpump`
 
 ## Last scan
-- 02:42Z: 6 coins, 6 with pairs, 0 passed the market filters, 0 researched
+- 02:58Z: 5 coins, 5 with pairs, 0 passed the market filters, 0 researched
 
 ## Coins it looked at, and why it passed
+- 02:56Z Neko (FINAL_STRETCH, $15,027 mcap, $27,025 5m vol): PASS at conviction 3, PASS: Neko is up 542% in 5 minutes at 12x its hourly pace, with 12 copies of the theme and 11 tokens on the ticker. That's a spike, not a structure (V1, V6).  
+  CA `CSTnN7ybTpj6MT8izw6uW8zUW95EaQo4YWATb9rJpump`
+- 02:55Z MACCA (MIGRATED, $286,061 mcap, $2,218 5m vol): PASS at conviction 3, PASS. Pink gator on a fresh pump, 5m volume $2.2k, no printed higher low, and the bottom-buy gate fails on theme pace. (V1, V6, V13)  
+  CA `C5eGEXJZYvXEbKdyvPtasksjGNV4xvMowpKM92bVv47f`
+- 02:55Z HNYDRIP (MIGRATED, $280,570 mcap, $17,957 5m vol): PASS at conviction 2, PASS — 3% off a +237% hour, 5m sells match buys (96 vs 100), and it's a 15-copy ticker field with no story on the radar. Chasing. (V1, V6)  
+  CA `FyCaKh6wXuot5NmqQMt5oBrSHh3wFk14w5M9dHQDpump`
+- 02:45Z iAgent (DIP, $1,932,596 mcap, $3,022 5m vol): REJECT, Dip with fading attention is a falling knife, not a dip (5m at 0.05x the hour's pace, under 0.6x)  
+  CA `44DZsPNJUtUyTkELAFYdwCpe82sEt12HZKrMgK1Spump`
+- 02:45Z DIGS (MIGRATED, $292,783 mcap, $2,692 5m vol): REJECT, Bundles: 10 linked wallet cluster(s) hold 100.0% of supply (>20%) (V17)  
+  CA `9QT8K685Hrae4k11dhGXirdtpfAaimExtyfwt8cPpump`
 - 02:41Z LOOSY (MIGRATED, $1,187,462 mcap, $6,176 5m vol): PASS at conviction 3, PASS — 5m flow at 0.24x its hourly pace, $6.2k on the 5m, first resistance only 1.17x away, and the site doesn't show this CA. Fourteen dog copies, no printed higher low. (V1, V6, V13)  
   CA `HF2RBPrfNBk9TxggL2cYZFEKSgirzh5HKCngLENTpump`
 - 02:41Z MISU (FINAL_STRETCH, $20,783 mcap, $8,065 5m vol): PASS at conviction 2, PASS — MISU is a 16-copy vamp field with no catalyst, theme pace at 0.27x, 5m flow under $10k and 51/49 buys. The 464% hour spike is chasing, not a higher low. (V1, V6, V13)  
@@ -86,16 +96,6 @@ Updated 2026-11-20T02:43:34Z (paper trading, never real money)
   CA `4oiC2EpwCuYbJNJPuWXrmVHnhTZ64yXAWyBDNATjpump`
 - 02:34Z pCAT (MIGRATED, $36,899 mcap, $14,723 5m vol): PASS at conviction 3, PASS: pCAT is a 3-minute-old copy in a 16-coin cat field, and Brian leads it. The money shape isn't there, and the flow is a spike, not a higher low. (V1, V6, V13)  
   CA `BLdC7hwRijHudKYDmtEkx1SHUdBWm8XbjBCSvwa6pump`
-- 02:33Z LOOSY (FINAL_STRETCH, $19,171 mcap, $16,701 5m vol): PASS at conviction 5, PASS — LOOSY is the volume leader of a dog-meme field with clean holders (top 10 15%, dev 0, no bundle clusters), but it's 18 minutes old, up 77% on the last 5m at 3.7x hourly pace, and no higher low has printed. Chasing spike (V1, V6). Re-check if it retraces to a higher low.  
-  CA `GUyj5yDeaKwCnLvMSxZKVVGLLLJ5nn5fxXXewkfnpump`
-- 02:31Z OGTA (DIP, $864,685 mcap, $5,508 5m vol): PASS, PASS — brain unavailable, not trading blind.  
-  CA `7bCiddGLe5aM8HE2pigT9jsqkmC1HSPxyXN6GkHEpump`
-- 02:29Z Brian (DIP, $638,888 mcap, $64,228 5m vol): REJECT, RugCheck danger: Creator history of rugged tokens  
-  CA `CrJBEGkuaYqtx2W5QHnagg4RL6A2f7bZhiFcssQ5pump`
-- 02:15Z CI (MIGRATED, $32,352 mcap, $5,687 5m vol): REJECT, Top 10 hold 28.0% ex-pool (>25%) (V13)  
-  CA `72Uxzwsgv99kfMtXzmK9LnwQ4Y2P7A9XG926haKtpump`
-- 02:08Z LUCIA (MIGRATED, $56,061 mcap, $21,660 5m vol): PASS at conviction 2, PASS: falling knife, not a dip. Down 88% from a $461k peak with the 5m candle at -46% and no higher low printed (blocker "no higher low"). Also a 23-copy field on a fading GTA theme. (V1, V6, V13)  
-  CA `i48RfaqcYLRnNLpSxt8akF2ZubNuHckEReqBVPWpump`
 
 ## What its skips did next (last 48h)
 A skip "ran" if the coin reached the first target (1.5x) from the skip price before a 20% drop, "dumped" if the drop came first. Sampled every 10 min, followed 6h.
@@ -120,7 +120,7 @@ A skip "ran" if the coin reached the first target (1.5x) from the skip price bef
     CA `9rbKkz2BDQBVgZmrHY6d7PTq2ge91gkpEyE4y9PPpump`
   - ran: PIPI up to 1.63x  
     CA `J51xgomTx21VHY62Q7uv2otWRUSq71WeaApLfsAnpump`
-- bundles over the line: blocked 16, ran 3, dumped 9, flat 2, open 2 (saving losses: keep it)
+- bundles over the line: blocked 16, ran 3, dumped 8, flat 2, open 3 (saving losses: keep it)
   - ran: BIG up to 1.93x  
     CA `34DXEU2ttEtBSb1TqGJm7izgvYTTkqKcCoiNWdPDpump`
   - ran: VI up to 1.56x  
@@ -147,7 +147,7 @@ A skip "ran" if the coin reached the first target (1.5x) from the skip price bef
     CA `4s38cgZJN4J39S2BQwCkcsJJ9ZGeJSjw8vK9wVtupump`
   - ran: AI up to 1.51x  
     CA `8SacNb6sgiAcscRe4m915B6nL9XX55dk8FS7L532pump`
-- falling knife / no higher low: blocked 6, ran 1, dumped 2, flat 0, open 3 (saving losses: keep it)
+- falling knife / no higher low: blocked 7, ran 1, dumped 2, flat 0, open 4 (saving losses: keep it)
   - ran: pCAT up to 1.58x  
     CA `BLdC7hwRijHudKYDmtEkx1SHUdBWm8XbjBCSvwa6pump`
 - too new / sniping: blocked 6, ran 0, dumped 6, flat 0, open 0 (saving losses: keep it)
@@ -193,11 +193,11 @@ Meta: dog and AI-named reskins on fresh pumpswap pairs have the live 5-minute vo
 ## Moving most in its scans, last 30 min (1h volume)
 - RUGGED: $2,247,915 1h vol, $744,654 mcap, +280% 1h  
   CA `GT8WxWKEgxzZiKL89Uu288vb8jnescwpNSrvyHzcpump`
+- iAgent: $692,420 1h vol, $1,932,596 mcap, -24% 1h  
+  CA `44DZsPNJUtUyTkELAFYdwCpe82sEt12HZKrMgK1Spump`
 - LOOSY: $311,450 1h vol, $1,187,462 mcap, +62% 1h  
   CA `HF2RBPrfNBk9TxggL2cYZFEKSgirzh5HKCngLENTpump`
 - Brian: $261,332 1h vol, $615,710 mcap, +239% 1h  
   CA `CrJBEGkuaYqtx2W5QHnagg4RL6A2f7bZhiFcssQ5pump`
-- ERROR: $144,840 1h vol, $16,548 mcap, +341% 1h  
-  CA `4oiC2EpwCuYbJNJPuWXrmVHnhTZ64yXAWyBDNATjpump`
-- RUGPULL: $130,931 1h vol, $8,609 mcap, -80% 1h  
-  CA `5AwnCWbvq64i9f5cbXJdFzhBZ3EpEWjk3Kp68582pump`
+- HNYDRIP: $201,609 1h vol, $281,937 mcap, +239% 1h  
+  CA `FyCaKh6wXuot5NmqQMt5oBrSHh3wFk14w5M9dHQDpump`
