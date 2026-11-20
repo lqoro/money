@@ -1,13 +1,13 @@
 # Trencher live report
 
-Updated 2026-11-20T21:10:44Z (paper trading, never real money)
+Updated 2026-11-20T21:25:57Z (paper trading, never real money)
 
 - Equity: $74.23 (-25.8% vs $100 start)
 - Closed trades: 22, 3 wins
 - Fees paid: $14.78 (axiom $2.81, network $9.18, pool $2.66), plus $4.15 lost to slippage
 - New trades: WATCH-ONLY (scans and decides, buys nothing)
-- Brain: subscription, claude-haiku-5-5 for routine calls, claude-opus-5-5 for the daily review; 346 routine calls and 146 plan-limit hits in 48h
-- Watch log: 88 coins being followed, 2434 filed, 0 would-buys (6h follow, sampled every 2 min)
+- Brain: subscription, claude-haiku-5-5 for routine calls, claude-opus-5-5 for the daily review; 346 routine calls and 145 plan-limit hits in 48h
+- Watch log: 86 coins being followed, 2437 filed, 0 would-buys (6h follow, sampled every 2 min)
 
 ## Scorecard (after fees)
 - 22 closed, 3 won (14%), net $-25.79
@@ -73,9 +73,11 @@ Updated 2026-11-20T21:10:44Z (paper trading, never real money)
   CA `H4gHnZ3NCU7Z9XQwGX6YYJNyieGEW8pqwGRUcdSxpump`
 
 ## Last scan
-- 21:10Z: 4 coins, 4 with pairs, 1 passed the market filters, 1 researched
+- 21:24Z: 6 coins, 6 with pairs, 0 passed the market filters, 0 researched
 
 ## Coins it looked at, and why it passed
+- 21:17Z Singularity (MIGRATED, $140,897 mcap, $19,962 5m vol): PASS at conviction 2, PASS — 5m flow at 0.42x the hourly pace, no printed higher low, and a bigger Singularity copy is taking the crowd (V1, V6, V3).  
+  CA `7R4MP6VX7n3RMNhL9zsk5Zu5ibZvwq8npUYnRq7epump`
 - 21:10Z Singularity (MIGRATED, $538,483 mcap, $100,453 5m vol): REJECT, Top 10 hold 54.5% ex-pool (>25%) (V13)  
   CA `GUtHGr6xcn9e78ew6qY7Jg7foyuAhf67mNBNntn5pump`
 - 21:08Z DCTY (MIGRATED, $84,988 mcap, $6,153 5m vol): PASS at conviction 2, PASS — 5m flow at 0.09x its hourly pace, no story anywhere, a -46% knife with a 4.8% bundle cluster. Nothing to catch. (V1, V6, V13)  
@@ -94,33 +96,31 @@ Updated 2026-11-20T21:10:44Z (paper trading, never real money)
   CA `GdqJ3D4BF6ZKtpXajVqZTP39vrwD8wDXZGgw7tBA8PAY`
 - 20:22Z OGTA (MIGRATED, $91,444 mcap, $1,947 5m vol): REJECT, 5m volume $1,947 is dead (<$2,000) (V1)  
   CA `7bCiddGLe5aM8HE2pigT9jsqkmC1HSPxyXN6GkHEpump`
-- 20:22Z DCTY (MIGRATED, $370,027 mcap, $180,017 5m vol): PASS at conviction 3, PASS. DCTY is up 164% in 5 minutes on 9x its hourly pace, six minutes old, with no printed higher low and zero narrative mentions. That's a spike, not a setup. Chasing spike (V1, V6).  
-  CA `7DQQejSWt4bgNmGFFD6QPPUA1YLoMxWhz4roN5CQjE9k`
 
 ## What its skips did next (last 48h)
 A skip "ran" if the coin reached the first target (1.5x) from the skip price before a 20% drop, "dumped" if the drop came first. Sampled every 10 min, followed 6h.
-- top 10 over 25%: blocked 60, ran 3, dumped 51, flat 4, open 2 (saving losses: keep it)
+- top 10 over 25%: blocked 60, ran 4, dumped 52, flat 4, open 0 (saving losses: keep it)
   - ran: AudaCity up to 1.66x  
     CA `ERDrmaqsoeLdsCMMpBKkRM4LV1mzTA2KHrVxKLpqpump`
   - ran: Audacity up to 2.7x  
     CA `5oYuJG44HdkSSj2pabAKzKk7p2p3b1LbqUC5n82ppump`
   - ran: J4F up to 2.22x  
     CA `pwtKLrLyRZy78eM2mR74xxe7mzREH1MxGcbvZWApump`
-- falling knife (code): blocked 38, ran 3, dumped 33, flat 1, open 1 (saving losses: keep it)
+- falling knife (code): blocked 37, ran 3, dumped 32, flat 1, open 1 (saving losses: keep it)
   - ran: DCTC up to 2.59x  
     CA `47f8bEDWs6VDpnnmxegyL4A3GbBVVcssrMQeBjPvpump`
   - ran: BUNC up to 1.91x  
     CA `43Z5f8GboUfc6M6wtaGGtFciEhLXixJEwQKv8wBUpump`
   - ran: PIPI up to 1.65x  
     CA `6MKD1NkLvWRqdbFtqmgACBwUV5o6GJpZry8HkNgzpump`
-- RugCheck danger: blocked 28, ran 5, dumped 22, flat 0, open 1 (saving losses: keep it)
+- RugCheck danger: blocked 28, ran 5, dumped 23, flat 0, open 0 (saving losses: keep it)
   - ran: CATCOIN up to 2.06x  
     CA `9JngoeaZHbV4f5EyRR3oDLNPH7VUGw1PYQC4s6j2pump`
   - ran: Leonida up to 1.51x  
     CA `9rbKkz2BDQBVgZmrHY6d7PTq2ge91gkpEyE4y9PPpump`
   - ran: PIPI up to 1.63x  
     CA `J51xgomTx21VHY62Q7uv2otWRUSq71WeaApLfsAnpump`
-- flow below pace: blocked 17, ran 3, dumped 10, flat 1, open 3 (saving losses: keep it)
+- flow below pace: blocked 18, ran 3, dumped 10, flat 1, open 4 (saving losses: keep it)
   - ran: SI up to 1.53x  
     CA `4s38cgZJN4J39S2BQwCkcsJJ9ZGeJSjw8vK9wVtupump`
   - ran: AI up to 1.51x  
@@ -131,7 +131,7 @@ A skip "ran" if the coin reached the first target (1.5x) from the skip price bef
 - too new / sniping: blocked 16, ran 1, dumped 15, flat 0, open 0 (saving losses: keep it)
   - ran: AudaCity up to 1.96x  
     CA `3rtTUCpe1BBgCTNWQ9jK3xkAz1E7SPqMt4uYHx1Bpump`
-- near the high / chasing: blocked 16, ran 3, dumped 13, flat 0, open 0 (saving losses: keep it)
+- near the high / chasing: blocked 15, ran 3, dumped 12, flat 0, open 0 (saving losses: keep it)
   - ran: BEAR up to 2.32x  
     CA `DCPm44cT9i39HjR13QHYgxkR7wEx9TDeniGuayB5pump`
   - ran: ZOL up to 1.55x  
@@ -193,11 +193,11 @@ Meta, from the movers: brand and domain names are the live theme, led by Singula
 ## Moving most in its scans, last 30 min (1h volume)
 - DCTY: $867,292 1h vol, $84,698 mcap, -46% 1h  
   CA `7DQQejSWt4bgNmGFFD6QPPUA1YLoMxWhz4roN5CQjE9k`
+- Singularity: $574,626 1h vol, $140,897 mcap, +556% 1h  
+  CA `7R4MP6VX7n3RMNhL9zsk5Zu5ibZvwq8npUYnRq7epump`
 - BTC: $207,132 1h vol, $702,040 mcap, +1968% 1h  
   CA `CUfphqswgDK3VP3FX7CiShVCTdGQneFusYRFViABpump`
 - Singularity: $158,931 1h vol, $557,426 mcap, +1403% 1h  
   CA `GUtHGr6xcn9e78ew6qY7Jg7foyuAhf67mNBNntn5pump`
-- GTA: $102,481 1h vol, $1,231 mcap, -99% 1h  
-  CA `3fWhdo8bQCamw5ed6yNGdvaru1qS5UVwB6dYp9znpump`
-- OGTA: $93,116 1h vol, $2,480 mcap, -97% 1h  
+- OGTA: $88,137 1h vol, $2,556 mcap, -97% 1h  
   CA `7bCiddGLe5aM8HE2pigT9jsqkmC1HSPxyXN6GkHEpump`
