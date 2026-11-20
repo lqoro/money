@@ -1,13 +1,13 @@
 # Trencher live report
 
-Updated 2026-11-20T13:05:33Z (paper trading, never real money)
+Updated 2026-11-20T13:20:37Z (paper trading, never real money)
 
 - Equity: $74.23 (-25.8% vs $100 start)
 - Closed trades: 22, 3 wins
 - Fees paid: $14.78 (axiom $2.81, network $9.18, pool $2.66), plus $4.15 lost to slippage
 - New trades: WATCH-ONLY (scans and decides, buys nothing)
-- Brain: subscription, claude-haiku-5-5 for routine calls, claude-opus-5-5 for the daily review; 328 routine calls and 194 plan-limit hits in 48h
-- Watch log: 69 coins being followed, 2339 filed, 0 would-buys (6h follow, sampled every 2 min)
+- Brain: subscription, claude-haiku-5-5 for routine calls, claude-opus-5-5 for the daily review; 327 routine calls and 192 plan-limit hits in 48h
+- Watch log: 69 coins being followed, 2342 filed, 0 would-buys (6h follow, sampled every 2 min)
 
 ## Scorecard (after fees)
 - 22 closed, 3 won (14%), net $-25.79
@@ -73,9 +73,15 @@ Updated 2026-11-20T13:05:33Z (paper trading, never real money)
   CA `H4gHnZ3NCU7Z9XQwGX6YYJNyieGEW8pqwGRUcdSxpump`
 
 ## Last scan
-- 13:05Z: 3 coins, 2 with pairs, 0 passed the market filters, 0 researched
+- 13:19Z: 8 coins, 7 with pairs, 1 passed the market filters, 1 researched
 
 ## Coins it looked at, and why it passed
+- 13:19Z LOOSY (MIGRATED, $1,880,182 mcap, $4,173 5m vol): PASS at conviction 3, PASS — flow at 0.42x pace on a 16% dip, first resistance is the $2.25M peak only 1.2x away, and the site doesn't show the CA. Clean holders, but nothing to trade yet. (V1, V6, V13)  
+  CA `HF2RBPrfNBk9TxggL2cYZFEKSgirzh5HKCngLENTpump`
+- 13:17Z HOGE (DIP, $932,690 mcap, $2,627 5m vol): REJECT, Bundles: 9 linked wallet cluster(s) hold 26.7% of supply (>20%) (V17)  
+  CA `FVzqGqRmr4UH1Fif6dewmwbJ1p4YUZCu8dcw4Efopump`
+- 13:11Z AMC  (DIP, $167,081 mcap, $2,978 5m vol): REJECT, Dip with fading attention is a falling knife, not a dip (5m at 0.21x the hour's pace, under 0.6x)  
+  CA `J7bLsZcpkfky92ir8k36Munz91nHKtcDNhDy8d3Qpump`
 - 13:03Z STICK (FINAL_STRETCH, $21,503 mcap, $12,349 5m vol): PASS at conviction 3, PASS: STICK is up 914% in an hour and sitting 7% off a peak it made six minutes ago. That's chasing a spike, not buying a structure. Blocker "chasing spike" (V1, V6).  
   CA `532iaQrhFCD3QKFHsAtFAQ1mQZMjMdNrPXLeCS6cpump`
 - 12:58Z PumpMas (DIP, $87,608 mcap, $3,188 5m vol): REJECT, Dev holds 3.3% (>1%) (V13, V17)  
@@ -90,30 +96,24 @@ Updated 2026-11-20T13:05:33Z (paper trading, never real money)
   CA `HsprHxBRgiVaQdRf3TnKNuZZtaX9JUSPgMFdAkk6pump`
 - 12:35Z OGTA (MIGRATED, $277,533 mcap, $5,989 5m vol): PASS at conviction 3, PASS. OGTA ran 2x off the hourly low, gave the whole move back in under an hour, and the GTA ticker crowd is at 0.65x pace. Blocker: flow below pace, no higher low. (V1, V6, V13)  
   CA `7bCiddGLe5aM8HE2pigT9jsqkmC1HSPxyXN6GkHEpump`
-- 12:34Z SNAPMATIC  (MIGRATED, $56,174 mcap, $15,775 5m vol): REJECT, Top 10 hold 25.7% ex-pool (>25%) (V13)  
-  CA `Gt9qKqRKdDK2mSczG9WYgRqS8pZkCw47ZW71iW34pump`
-- 12:33Z LOOSY (MIGRATED, $2,001,069 mcap, $5,535 5m vol): PASS at conviction 3, PASS — flow at 0.45x pace, 11% off a $2.25M high with no breakout, and the site has no CA and is half a day old. Blocker: "flow below pace" (V1, V6, V13).  
-  CA `HF2RBPrfNBk9TxggL2cYZFEKSgirzh5HKCngLENTpump`
-- 12:32Z Ivy (FINAL_STRETCH, $16,997 mcap, $12,346 5m vol): PASS at conviction 2, PASS — copy in a six-coin "ivy" field, not the leader (IVY is), sellers outnumber buyers 403 to 277 on 5m, and it's a spike-and-dump saw-tooth at 58% bond. Farm-shaped until proven otherwise (V1, V3, V13).  
-  CA `CfE8V8nwhBjEfnZ8WoEkAtoRhiHHSoX2QPJPbDVkpump`
 
 ## What its skips did next (last 48h)
 A skip "ran" if the coin reached the first target (1.5x) from the skip price before a 20% drop, "dumped" if the drop came first. Sampled every 10 min, followed 6h.
-- top 10 over 25%: blocked 66, ran 9, dumped 52, flat 3, open 2 (saving losses: keep it)
-  - ran: Pussy up to 1.53x  
-    CA `JDBwLV5iu9sd9PNBEPZvVzLw7Kvd9HkD4v29985dpump`
+- top 10 over 25%: blocked 65, ran 8, dumped 52, flat 3, open 2 (saving losses: keep it)
   - ran: Doubloon up to 1.58x  
     CA `9Xhg9eRG92jZGbBZvNdcWyEoyz7kjHtA9BP6BxniUPWL`
   - ran: GTAKID up to 1.74x  
     CA `7smnsneWsBMPZ4PDftadFBLf62SsH921BstHiM9wpump`
-- falling knife (code): blocked 48, ran 6, dumped 41, flat 1, open 0 (saving losses: keep it)
+  - ran: NIKO up to 1.66x  
+    CA `A2MgdY1oU6pqsREQ8eCPhR6DSMrGYaCPXUWUMRXgpump`
+- falling knife (code): blocked 49, ran 6, dumped 41, flat 1, open 1 (saving losses: keep it)
   - ran: Apocrycoin up to 1.54x  
     CA `79rE2ac8JhN3U12QLhymgDmCTiwBN1d4maTcK1fhpump`
   - ran: APCY up to 1.74x  
     CA `7fZK84wYShNUXKJnBkfXkeu5h2edduNkZV3p2B2LBCgC`
   - ran: AI up to 2.14x  
     CA `GUmgNeyZCLrjQW2TaLhqkTUas8isQc86YuzKQ6Fppump`
-- RugCheck danger: blocked 29, ran 4, dumped 23, flat 1, open 1 (saving losses: keep it)
+- RugCheck danger: blocked 28, ran 4, dumped 22, flat 1, open 1 (saving losses: keep it)
   - ran: CATCOIN up to 2.06x  
     CA `9JngoeaZHbV4f5EyRR3oDLNPH7VUGw1PYQC4s6j2pump`
   - ran: Leonida up to 1.51x  
@@ -133,7 +133,7 @@ A skip "ran" if the coin reached the first target (1.5x) from the skip price bef
     CA `34DXEU2ttEtBSb1TqGJm7izgvYTTkqKcCoiNWdPDpump`
   - ran: PAPA up to 1.66x  
     CA `3hdXmQqZHmm7gWWweFKGdkjnxyWQZ2SWVNt1Jty5pump`
-- flow below pace: blocked 14, ran 3, dumped 6, flat 1, open 4 (saving losses: keep it)
+- flow below pace: blocked 14, ran 3, dumped 7, flat 1, open 3 (saving losses: keep it)
   - ran: SI up to 1.53x  
     CA `4s38cgZJN4J39S2BQwCkcsJJ9ZGeJSjw8vK9wVtupump`
   - ran: AI up to 1.51x  
@@ -147,11 +147,13 @@ A skip "ran" if the coin reached the first target (1.5x) from the skip price bef
     CA `Db2s6iVvenVhJkj96P4UbZWEAYX4nUhgXhSVbQrwpump`
   - ran: Ant up to 2.32x  
     CA `HKGtUPPKvXkMPyNX4QeMubENuiimFQ8W1Veg4y52pump`
-- near the high / chasing: blocked 11, ran 2, dumped 7, flat 0, open 2 (saving losses: keep it)
+- near the high / chasing: blocked 11, ran 3, dumped 7, flat 0, open 1 (saving losses: keep it)
   - ran: BEAR up to 2.32x  
     CA `DCPm44cT9i39HjR13QHYgxkR7wEx9TDeniGuayB5pump`
   - ran: ZOL up to 1.55x  
     CA `UQLWvkwiSsnViuVBy7oArMtzb5RAZyrdJ79amQFrzoL`
+  - ran: STICK up to 2.08x  
+    CA `532iaQrhFCD3QKFHsAtFAQ1mQZMjMdNrPXLeCS6cpump`
 - too new / sniping: blocked 9, ran 1, dumped 8, flat 0, open 0 (saving losses: keep it)
   - ran: AudaCity up to 1.96x  
     CA `3rtTUCpe1BBgCTNWQ9jK3xkAz1E7SPqMt4uYHx1Bpump`
@@ -197,11 +199,11 @@ The trench meta right now is cats: Cat Mario (CATMARIO, pumpswap, $74k cap, $32k
 ## Moving most in its scans, last 30 min (1h volume)
 - RUDY: $214,259 1h vol, $178,231 mcap, +7% 1h  
   CA `GRMRQSkBGg2Cc8Y9GePNBcJVk49YepWkXUDQBXAMpump`
-- CATMARIO: $99,144 1h vol, $1,395 mcap, -98% 1h  
-  CA `7bQmFyQbEf97rxZcdjLwc3aSHMuGcXvipo2gbTnbpump`
-- iAgent: $66,837 1h vol, $504,374 mcap, -22% 1h  
-  CA `44DZsPNJUtUyTkELAFYdwCpe82sEt12HZKrMgK1Spump`
-- RSI: $38,472 1h vol, $15,731 mcap, +516% 1h  
-  CA `2BdhSSQfhh3RY4MGtMhA1cT6onqfeAwkMm4JWB52pump`
-- CatCoin: $29,762 1h vol, $11,337 mcap, +465% 1h  
-  CA `AuN2cbjPYRrjcWwHHwHNLYjUy4NoK5zZhfQDNJX5pump`
+- AMC : $166,363 1h vol, $167,081 mcap, -36% 1h  
+  CA `J7bLsZcpkfky92ir8k36Munz91nHKtcDNhDy8d3Qpump`
+- LOOSY: $118,501 1h vol, $1,880,182 mcap, -6% 1h  
+  CA `HF2RBPrfNBk9TxggL2cYZFEKSgirzh5HKCngLENTpump`
+- Ivy: $63,844 1h vol, $2,176 mcap, -72% 1h  
+  CA `CfE8V8nwhBjEfnZ8WoEkAtoRhiHHSoX2QPJPbDVkpump`
+- HOGE: $28,494 1h vol, $932,690 mcap, +4% 1h  
+  CA `FVzqGqRmr4UH1Fif6dewmwbJ1p4YUZCu8dcw4Efopump`
