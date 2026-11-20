@@ -1,13 +1,13 @@
 # Trencher live report
 
-Updated 2026-11-20T09:02:42Z (paper trading, never real money)
+Updated 2026-11-20T09:17:55Z (paper trading, never real money)
 
 - Equity: $74.23 (-25.8% vs $100 start)
 - Closed trades: 22, 3 wins
 - Fees paid: $14.78 (axiom $2.81, network $9.18, pool $2.66), plus $4.15 lost to slippage
 - New trades: WATCH-ONLY (scans and decides, buys nothing)
-- Brain: subscription, claude-haiku-5-5 for routine calls, claude-opus-5-5 for the daily review; 322 routine calls and 217 plan-limit hits in 48h
-- Watch log: 78 coins being followed, 2282 filed, 0 would-buys (6h follow, sampled every 2 min)
+- Brain: subscription, claude-haiku-5-5 for routine calls, claude-opus-5-5 for the daily review; 321 routine calls and 216 plan-limit hits in 48h
+- Watch log: 79 coins being followed, 2282 filed, 0 would-buys (6h follow, sampled every 2 min)
 
 ## Scorecard (after fees)
 - 22 closed, 3 won (14%), net $-25.79
@@ -73,9 +73,11 @@ Updated 2026-11-20T09:02:42Z (paper trading, never real money)
   CA `H4gHnZ3NCU7Z9XQwGX6YYJNyieGEW8pqwGRUcdSxpump`
 
 ## Last scan
-- 09:01Z: 5 coins, 5 with pairs, 1 passed the market filters, 1 researched
+- 09:17Z: 6 coins, 6 with pairs, 0 passed the market filters, 0 researched
 
 ## Coins it looked at, and why it passed
+- 09:15Z GATO (MIGRATED, $2,570,395 mcap, $251 5m vol): REJECT, 5m volume $251 is dead (<$2,000) (V1)  
+  CA `HsprHxBRgiVaQdRf3TnKNuZZtaX9JUSPgMFdAkk6pump`
 - 09:02Z GI (FINAL_STRETCH, $21,230 mcap, $10,118 5m vol): PASS at conviction 3, PASS — chasing spike: 5m up 68% at 3x the hourly pace, 0.3h old, and one of 21 "giving inu" copies. The paid profile points to a food-assistance site, not this coin (V1, V6, V13).  
   CA `FwDXX1R5B61VsxmLffU5cGcH2XuoX9QHSaiGrCAkpump`
 - 08:51Z iAgent (DIP, $1,840,245 mcap, $6,138 5m vol): PASS at conviction 3, PASS. Apple AI Agent is a 7-hour-old AI LARP with a 49% dip, a loose higher low and a story the radar calls fading. Blocker: bottom buy, narrative not rising. (V1, V6, V13)  
@@ -94,8 +96,6 @@ Updated 2026-11-20T09:02:42Z (paper trading, never real money)
   CA `HsprHxBRgiVaQdRf3TnKNuZZtaX9JUSPgMFdAkk6pump`
 - 08:05Z iAgent (DIP, $1,449,557 mcap, $8,705 5m vol): PASS at conviction 2, PASS — DIP with no printed higher low, a bottom buy on a story the radar doesn't show, CA not on the project's site, and a 7-hour-old domain. Blocker: "no higher low" + "bottom buy blocked". (V1, V3, V6)  
   CA `44DZsPNJUtUyTkELAFYdwCpe82sEt12HZKrMgK1Spump`
-- 08:01Z OGTA (MIGRATED, $613,111 mcap, $5,495 5m vol): PASS at conviction 2, PASS — GTA-ticker meta is fading, no catalyst, and the tape is making lower lows. Blocker: "bottom buy, narrative not rising" (V1, V6, owner rule).  
-  CA `7bCiddGLe5aM8HE2pigT9jsqkmC1HSPxyXN6GkHEpump`
 
 ## What its skips did next (last 48h)
 A skip "ran" if the coin reached the first target (1.5x) from the skip price before a 20% drop, "dumped" if the drop came first. Sampled every 10 min, followed 6h.
@@ -120,7 +120,7 @@ A skip "ran" if the coin reached the first target (1.5x) from the skip price bef
     CA `9rbKkz2BDQBVgZmrHY6d7PTq2ge91gkpEyE4y9PPpump`
   - ran: PIPI up to 1.63x  
     CA `J51xgomTx21VHY62Q7uv2otWRUSq71WeaApLfsAnpump`
-- thin 5m volume: blocked 16, ran 1, dumped 8, flat 6, open 1 (saving losses: keep it)
+- thin 5m volume: blocked 17, ran 1, dumped 8, flat 6, open 2 (saving losses: keep it)
   - ran: Snapmatic up to 1.68x  
     CA `4S8pUKWKUAtQKfE5qokSjszWDp1RqQWnom8jNYSWpump`
 - bundles over the line: blocked 16, ran 3, dumped 9, flat 3, open 1 (saving losses: keep it)
@@ -149,7 +149,7 @@ A skip "ran" if the coin reached the first target (1.5x) from the skip price bef
     CA `8SacNb6sgiAcscRe4m915B6nL9XX55dk8FS7L532pump`
   - ran: SWRDXSTFF up to 1.77x  
     CA `Csoj9XHJfBAxsKswqKKBENnGeoRDHtACfyYi7HmJpump`
-- falling knife / no higher low: blocked 9, ran 2, dumped 3, flat 1, open 3 (mixed)
+- falling knife / no higher low: blocked 9, ran 2, dumped 4, flat 1, open 2 (saving losses: keep it)
   - ran: pCAT up to 1.58x  
     CA `BLdC7hwRijHudKYDmtEkx1SHUdBWm8XbjBCSvwa6pump`
   - ran: MACCA up to 1.71x  
@@ -197,13 +197,13 @@ Nothing shows a positive edge after costs. Over 309 settled coins, every setup l
 Not quiet, but thin. The movers show one rising theme: sub-day pump.fun character-and-name memes (PATRICK, STF, Huss, enu) with 1h gains of 100%+ and 58-76% buys. That's a launch-style meta that lasts hours, not weeks. Fading: the older dog and AI-agent names (Hogecoin at 33% buys, iAgent -30% 1h, apocrycoin -47%) and the zero-flow newbies (PALS 61 on 5m, MARK 14). GTA-ticker coins OGTA and GATO still carry about $5k on 5m with buyers, so they're holding, not running; the crawler's fading call doesn't match the scan, and the GTA "66,000%" headline is a lottery-ticker story, not a meta to chase. Trump and AI-celebrity names don't appear in the scan at all, so I'm treating them as absent. Setups: STF is the only mover clearing $10k on 5m ($22k, about 2.8x its hourly pace), but at +834% in an hour, 0.4h old and still on the bonding curve, it's a chase; probe at most, only after a pullback and a bundle check. PATRICK ($61.8k cap, 0.9h old, $9.8k on 5m, 61% buys) is borderline: its 5m is already under half its hourly pace (about $24k), so it's conviction 4, probe-sized, initials at 2x, stop -30%, out if 5m stays under $5k. Huss and enu are under the volume bar, so watch only for that reason. Sheepcoin and Fiona from the crawler aren't in scan_movers, and its Patrick figures ($42.7k cap, $32k 5m) don't match, so I'm using the scan numbers.
 
 ## Moving most in its scans, last 30 min (1h volume)
-- OGTA: $113,060 1h vol, $549,725 mcap, -6% 1h  
-  CA `7bCiddGLe5aM8HE2pigT9jsqkmC1HSPxyXN6GkHEpump`
+- CATMARIO: $79,632 1h vol, $17,053 mcap, -60% 1h  
+  CA `6CTPhzrmvTiwoP8XgVy8Jhy6qLM1XpsL5cnyeuSxpump`
 - iAgent: $73,131 1h vol, $1,862,950 mcap, +2% 1h  
   CA `44DZsPNJUtUyTkELAFYdwCpe82sEt12HZKrMgK1Spump`
-- LOOSY: $51,766 1h vol, $1,057,807 mcap, -9% 1h  
-  CA `HF2RBPrfNBk9TxggL2cYZFEKSgirzh5HKCngLENTpump`
-- PATRICK: $51,012 1h vol, $14,020 mcap, -66% 1h  
-  CA `8mnJZnxaNLqVwkaWWGH7dKmoEzyYzGJx5pHaCp7spump`
+- PokéMum: $43,784 1h vol, $2,915 mcap, -22% 1h  
+  CA `6J7bz3na3GggH1TC8mYQnwEpM2RgSRADBRZVjfPEpump`
 - GI: $39,901 1h vol, $21,230 mcap, +629% 1h  
   CA `FwDXX1R5B61VsxmLffU5cGcH2XuoX9QHSaiGrCAkpump`
+- MAIN: $34,434 1h vol, $12,598 mcap, +481% 1h  
+  CA `9MZiGiBiFA6vLkqJ8kk7MsniLgrU6VrtiWripZFMmain`
