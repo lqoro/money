@@ -1,13 +1,13 @@
 # Trencher live report
 
-Updated 2026-11-20T23:11:55Z (paper trading, never real money)
+Updated 2026-11-20T23:26:57Z (paper trading, never real money)
 
 - Equity: $74.23 (-25.8% vs $100 start)
 - Closed trades: 22, 3 wins
 - Fees paid: $14.78 (axiom $2.81, network $9.18, pool $2.66), plus $4.15 lost to slippage
 - New trades: WATCH-ONLY (scans and decides, buys nothing)
-- Brain: subscription, claude-haiku-5-5 for routine calls, claude-opus-5-5 for the daily review; 349 routine calls and 134 plan-limit hits in 48h
-- Watch log: 85 coins being followed, 2459 filed, 0 would-buys (6h follow, sampled every 2 min)
+- Brain: subscription, claude-haiku-5-5 for routine calls, claude-opus-5-5 for the daily review; 350 routine calls and 133 plan-limit hits in 48h
+- Watch log: 88 coins being followed, 2462 filed, 0 would-buys (6h follow, sampled every 2 min)
 
 ## Scorecard (after fees)
 - 22 closed, 3 won (14%), net $-25.79
@@ -73,9 +73,21 @@ Updated 2026-11-20T23:11:55Z (paper trading, never real money)
   CA `H4gHnZ3NCU7Z9XQwGX6YYJNyieGEW8pqwGRUcdSxpump`
 
 ## Last scan
-- 23:11Z: 5 coins, 5 with pairs, 0 passed the market filters, 0 researched
+- 23:26Z: 4 coins, 4 with pairs, 1 passed the market filters, 1 researched
 
 ## Coins it looked at, and why it passed
+- 23:26Z MONKE (MIGRATED, $129,510 mcap, $10,304 5m vol): REJECT, Bundles: 10 linked wallet cluster(s) hold 52.8% of supply (>20%) (V17)  
+  CA `5kLah7PHaD6A4RmU2tdF7Tv3zXHGrkvxgfFtKUfApump`
+- 23:24Z FARM (MIGRATED, $94,790 mcap, $5,905 5m vol): PASS at conviction 3, PASS. Flow below pace, 5m buys 46%, 13 same-name copies on a 0.36x theme pace, no catalyst. (V1, V6, V13)  
+  CA `CTerwsBK7QFQBJWgTTSKV9LUYYJhRUouHPd8ijKXpump`
+- 23:18Z HOGE (DIP, $782,461 mcap, $2,554 5m vol): REJECT, Bundles: 9 linked wallet cluster(s) hold 26.7% of supply (>20%) (V17)  
+  CA `FVzqGqRmr4UH1Fif6dewmwbJ1p4YUZCu8dcw4Efopump`
+- 23:14Z BTC (DIP, $939,391 mcap, $4,268 5m vol): REJECT, Top 10 hold 27.3% ex-pool (>25%) (V13)  
+  CA `CUfphqswgDK3VP3FX7CiShVCTdGQneFusYRFViABpump`
+- 23:13Z LOOSY (MIGRATED, $176,750 mcap, $2,004 5m vol): PASS at conviction 3, PASS: LOOSY is 94% off its peak with $2k of 5m flow, no catalyst, and its own site says "CA TBA". Dead meme, no trade. (DIP rule, V1, V3, V13)  
+  CA `HF2RBPrfNBk9TxggL2cYZFEKSgirzh5HKCngLENTpump`
+- 23:12Z JENSEN (MIGRATED, $900,209 mcap, $65,127 5m vol): REJECT, Top 10 hold 33.4% ex-pool (>25%) (V13)  
+  CA `HMs3u6rx8DSruPMhXL7N2N5hciXTXa49e9LCoj1Apump`
 - 23:10Z Trader (MIGRATED, $379,832 mcap, $32,018 5m vol): PASS at conviction 3, PASS. Sitting 2.7% under its own high with no printed higher low, and a bigger same-name coin splitting the crowd. Blockers: chasing, no higher low, target too close, split crowd. (V1, V6)  
   CA `BYKQkHKMWHidNBLQXgt7NX4PLUtJZRYGLWQYkJzPGenX`
 - 23:09Z really (FINAL_STRETCH, $19,048 mcap, $7,478 5m vol): REJECT, Top 10 hold 27.0% ex-pool (>25%) (V13)  
@@ -84,24 +96,10 @@ Updated 2026-11-20T23:11:55Z (paper trading, never real money)
   CA `2KRbMf4itijwsTHb5dQtiBpfptyNmhpVzmpdj4qqN2yx`
 - 23:06Z TITTYVERSE (MIGRATED, $191,706 mcap, $14,329 5m vol): REJECT, Top 10 hold 43.9% ex-pool (>25%) (V13)  
   CA `4dXAFK3eL6MSmNtxoSni1u9493bJ9wweJDqSRkijpump`
-- 23:00Z Bust (MIGRATED, $74,768 mcap, $22,149 5m vol): PASS at conviction 2, PASS: BUST is printing at its own high, 24 minutes old, on a 3.8x volume spike with 19 copies of the name in the field. Blocker: chasing. (V1, V6, V13)  
-  CA `EoV9JQYi57tqjyQbWLdXVarYpEu82FsP8SDnkbFmpump`
-- 22:47Z Singularity (DIP, $122,839 mcap, $7,787 5m vol): REJECT, Dip with fading attention is a falling knife, not a dip (5m at 0.33x the hour's pace, under 0.6x)  
-  CA `7R4MP6VX7n3RMNhL9zsk5Zu5ibZvwq8npUYnRq7epump`
-- 22:40Z MONKE (MIGRATED, $68,244 mcap, $27,155 5m vol): REJECT, Bundles: 8 linked wallet cluster(s) hold 24.9% of supply (>20%) (V17)  
-  CA `5kLah7PHaD6A4RmU2tdF7Tv3zXHGrkvxgfFtKUfApump`
-- 22:39Z DCTY (MIGRATED, $71,778 mcap, $2,361 5m vol): PASS at conviction 2, PASS: dead story, flow under pace, and the dossier's peak data is corrupt. Blocker "dead story" with "flow below pace" behind it (V1, V6).  
-  CA `7DQQejSWt4bgNmGFFD6QPPUA1YLoMxWhz4roN5CQjE9k`
-- 22:28Z BTC (DIP, $828,539 mcap, $2,395 5m vol): REJECT, Dip with fading attention is a falling knife, not a dip (5m at 0.13x the hour's pace, under 0.6x)  
-  CA `CUfphqswgDK3VP3FX7CiShVCTdGQneFusYRFViABpump`
-- 22:28Z LOOSY (MIGRATED, $198,802 mcap, $3,254 5m vol): PASS at conviction 2, PASS — 93% off a $3.03M peak, 1h at -33%, 5m flow $3.2k at 0.8x pace, on a GTA jet-ski meta the radar already calls fading, with 24 copies on the ticker. That's a falling knife, not a dip (V1, V6, V13).  
-  CA `HF2RBPrfNBk9TxggL2cYZFEKSgirzh5HKCngLENTpump`
 
 ## What its skips did next (last 48h)
 A skip "ran" if the coin reached the first target (1.5x) from the skip price before a 20% drop, "dumped" if the drop came first. Sampled every 10 min, followed 6h.
-- top 10 over 25%: blocked 57, ran 2, dumped 49, flat 4, open 2 (saving losses: keep it)
-  - ran: Audacity up to 2.7x  
-    CA `5oYuJG44HdkSSj2pabAKzKk7p2p3b1LbqUC5n82ppump`
+- top 10 over 25%: blocked 58, ran 1, dumped 51, flat 4, open 2 (saving losses: keep it)
   - ran: J4F up to 2.22x  
     CA `pwtKLrLyRZy78eM2mR74xxe7mzREH1MxGcbvZWApump`
 - falling knife (code): blocked 37, ran 3, dumped 31, flat 1, open 2 (saving losses: keep it)
@@ -118,17 +116,17 @@ A skip "ran" if the coin reached the first target (1.5x) from the skip price bef
     CA `9rbKkz2BDQBVgZmrHY6d7PTq2ge91gkpEyE4y9PPpump`
   - ran: PIPI up to 1.63x  
     CA `J51xgomTx21VHY62Q7uv2otWRUSq71WeaApLfsAnpump`
-- flow below pace: blocked 19, ran 3, dumped 12, flat 1, open 3 (saving losses: keep it)
+- flow below pace: blocked 20, ran 5, dumped 12, flat 1, open 2 (saving losses: keep it)
   - ran: SI up to 1.53x  
     CA `4s38cgZJN4J39S2BQwCkcsJJ9ZGeJSjw8vK9wVtupump`
   - ran: AI up to 1.51x  
     CA `8SacNb6sgiAcscRe4m915B6nL9XX55dk8FS7L532pump`
   - ran: SWRDXSTFF up to 1.77x  
     CA `Csoj9XHJfBAxsKswqKKBENnGeoRDHtACfyYi7HmJpump`
-- too new / sniping: blocked 17, ran 1, dumped 15, flat 0, open 1 (saving losses: keep it)
+- too new / sniping: blocked 17, ran 1, dumped 16, flat 0, open 0 (saving losses: keep it)
   - ran: AudaCity up to 1.96x  
     CA `3rtTUCpe1BBgCTNWQ9jK3xkAz1E7SPqMt4uYHx1Bpump`
-- near the high / chasing: blocked 16, ran 3, dumped 12, flat 0, open 1 (saving losses: keep it)
+- near the high / chasing: blocked 17, ran 4, dumped 12, flat 0, open 1 (saving losses: keep it)
   - ran: BEAR up to 2.32x  
     CA `DCPm44cT9i39HjR13QHYgxkR7wEx9TDeniGuayB5pump`
   - ran: ZOL up to 1.55x  
@@ -189,13 +187,13 @@ No edge yet. All 322 settled coins lost money after costs on the simple plan, an
 Meta from scan_movers, not the news: the movers are thin on 5m and hot on 1h. Only Trader (BYKQ..., raydium, $203k cap, $20.7k 5m, 67% buys) and BUST ($21k cap, $3.9k 5m, 62% buys, +568% in the hour, 0.8h old) show live flow, and most of the rest is under $4k 5m. Two themes repeat: animal and doge names (Cool Dog, GTA6CAT, Pengis, Hogecoin) that are mostly fading or dead on 5m, and copy-named clones (two Singularity CAs, one at -99% on zero volume and one at $24k on $1.2k 5m), which says copycats are being minted off whatever name is hot. The GTA and Trump names from the crawler are fading on the news (headlines say $TRUMP at record lows and dinner interest gone) and barely appear in the movers, so I'm treating them as confirmation of a fade, not a live theme. The crawler's Singularity.com ($557k, $108k 5m) and PARI ($17.7k, $20k 5m) figures don't match the scan (GUtH is $1.3k with $0 5m, PARI is $9.4k with $24 5m), so I'm discarding those numbers and the 7R4M/punch/DCTY calls with them. Setups to research, not buy: Trader as a MIGRATED candidate if the original check holds and 5m stays above $10k, and BUST only if 5m climbs past $10k with buys holding above 60%; holder, dev and bundle checks are still pending on both.
 
 ## Moving most in its scans, last 30 min (1h volume)
+- JENSEN: $670,159 1h vol, $900,209 mcap, +699% 1h  
+  CA `HMs3u6rx8DSruPMhXL7N2N5hciXTXa49e9LCoj1Apump`
+- MONKE: $462,728 1h vol, $137,885 mcap, +159% 1h  
+  CA `5kLah7PHaD6A4RmU2tdF7Tv3zXHGrkvxgfFtKUfApump`
 - Trader: $351,890 1h vol, $379,832 mcap, +79% 1h  
   CA `BYKQkHKMWHidNBLQXgt7NX4PLUtJZRYGLWQYkJzPGenX`
-- Singularity: $275,009 1h vol, $138,782 mcap, -56% 1h  
-  CA `7R4MP6VX7n3RMNhL9zsk5Zu5ibZvwq8npUYnRq7epump`
+- FARM: $122,812 1h vol, $95,482 mcap, +227% 1h  
+  CA `CTerwsBK7QFQBJWgTTSKV9LUYYJhRUouHPd8ijKXpump`
 - BANDANA: $117,966 1h vol, $55,708 mcap, +87% 1h  
   CA `2KRbMf4itijwsTHb5dQtiBpfptyNmhpVzmpdj4qqN2yx`
-- Bust: $69,625 1h vol, $74,768 mcap, +68% 1h  
-  CA `EoV9JQYi57tqjyQbWLdXVarYpEu82FsP8SDnkbFmpump`
-- TITTYVERSE: $43,769 1h vol, $191,706 mcap, +462% 1h  
-  CA `4dXAFK3eL6MSmNtxoSni1u9493bJ9wweJDqSRkijpump`
