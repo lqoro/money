@@ -1,13 +1,13 @@
 # Trencher live report
 
-Updated 2026-11-20T09:48:17Z (paper trading, never real money)
+Updated 2026-11-20T10:03:18Z (paper trading, never real money)
 
 - Equity: $74.23 (-25.8% vs $100 start)
 - Closed trades: 22, 3 wins
 - Fees paid: $14.78 (axiom $2.81, network $9.18, pool $2.66), plus $4.15 lost to slippage
 - New trades: WATCH-ONLY (scans and decides, buys nothing)
-- Brain: subscription, claude-haiku-5-5 for routine calls, claude-opus-5-5 for the daily review; 325 routine calls and 213 plan-limit hits in 48h
-- Watch log: 82 coins being followed, 2288 filed, 0 would-buys (6h follow, sampled every 2 min)
+- Brain: subscription, claude-haiku-5-5 for routine calls, claude-opus-5-5 for the daily review; 323 routine calls and 212 plan-limit hits in 48h
+- Watch log: 76 coins being followed, 2294 filed, 0 would-buys (6h follow, sampled every 2 min)
 
 ## Scorecard (after fees)
 - 22 closed, 3 won (14%), net $-25.79
@@ -73,7 +73,7 @@ Updated 2026-11-20T09:48:17Z (paper trading, never real money)
   CA `H4gHnZ3NCU7Z9XQwGX6YYJNyieGEW8pqwGRUcdSxpump`
 
 ## Last scan
-- 09:48Z: 8 coins, 8 with pairs, 0 passed the market filters, 0 researched
+- 10:02Z: 4 coins, 4 with pairs, 0 passed the market filters, 0 researched
 
 ## Coins it looked at, and why it passed
 - 09:45Z CBUCKS (MIGRATED, $3,978,431 mcap, $1,224 5m vol): REJECT, 5m volume $1,224 is dead (<$2,000) (V1)  
@@ -106,14 +106,14 @@ A skip "ran" if the coin reached the first target (1.5x) from the skip price bef
     CA `3dF7QJEkhuVshbdgcVe227XvsbBc3cCoPTcHXw7Fpump`
   - ran: Pussy up to 1.53x  
     CA `JDBwLV5iu9sd9PNBEPZvVzLw7Kvd9HkD4v29985dpump`
-- falling knife (code): blocked 50, ran 7, dumped 42, flat 1, open 0 (saving losses: keep it)
+- falling knife (code): blocked 49, ran 7, dumped 41, flat 1, open 0 (saving losses: keep it)
   - ran: DACT up to 2.63x  
     CA `GZUGmAtuSx9755C3W1CLDVtA7MZQ8QWF1XjhjEbjpump`
   - ran: Apocrycoin up to 1.54x  
     CA `79rE2ac8JhN3U12QLhymgDmCTiwBN1d4maTcK1fhpump`
   - ran: APCY up to 1.74x  
     CA `7fZK84wYShNUXKJnBkfXkeu5h2edduNkZV3p2B2LBCgC`
-- RugCheck danger: blocked 31, ran 4, dumped 26, flat 1, open 0 (saving losses: keep it)
+- RugCheck danger: blocked 30, ran 4, dumped 25, flat 1, open 0 (saving losses: keep it)
   - ran: CATCOIN up to 2.06x  
     CA `9JngoeaZHbV4f5EyRR3oDLNPH7VUGw1PYQC4s6j2pump`
   - ran: Leonida up to 1.51x  
@@ -135,7 +135,7 @@ A skip "ran" if the coin reached the first target (1.5x) from the skip price bef
     CA `FtSWWxVmKNXz8ksJxzJJ7BdDWXbQb3vC94J99oyypump`
   - ran: MANDY up to 1.54x  
     CA `GQngHP8P6s45MxWnU7JsocfV2HjPQdJZmCEAYKpBpump`
-- other: blocked 13, ran 3, dumped 8, flat 0, open 2 (saving losses: keep it)
+- other: blocked 13, ran 3, dumped 10, flat 0, open 0 (saving losses: keep it)
   - ran: CALICO up to 3.25x  
     CA `89GFxMWQ1r8cwTwRSgeQ9RaGPtUdmDLQgCsQZcrWpump`
   - ran: After up to 2.36x  
@@ -197,13 +197,13 @@ Nothing shows a positive edge after costs. Over 309 settled coins, every setup l
 Not quiet, but thin. The movers' common thread is sub-day pump.fun character memes (Giving Inu, Gino the Baby Marmoset, MAIN, Retard Patrick, Bibi) with 1h gains of 250-630% on $12-27k caps and 60-70% buy ratios on 5m, a launch-style meta that lasts hours, not weeks. Fading: old dog and AI-agent names (Hogecoin at 0% buys with $114 on 5m, Cat Mario down 60% in an hour, iAgent flat on $5.5k of 5m at $1.9M), and the Trump and news names don't appear in the movers at all, so the dinner headlines aren't this meta. Most of the new names fail the $10k 5m bar (PATRICK $1k, MAIN $566, Huss $97, PokéMum $77), and the crawler's STF and PATRICK figures ($22k 5m, $42.7k and $61.8k caps) don't match the scan, so I'm discarding them. Only Giving Inu (GI, $21k cap, 0.3h old, $10.1k 5m, 69% buys) clears the bar; at +629% in an hour it's a chase, so I'd look only for a pullback that holds with buys above 60%, probe-size at conviction 4, stop -30%, out if 5m stays under $5k, and holder and bundle checks have to pass before any entry. Gino and Bibi are watch-only until 5m clears $10k, and GATO's GTA ticker is a $2.6M coin with $2.6k of 5m, not a meta to chase.
 
 ## Moving most in its scans, last 30 min (1h volume)
-- OGTA: $133,268 1h vol, $478,157 mcap, -14% 1h  
-  CA `7bCiddGLe5aM8HE2pigT9jsqkmC1HSPxyXN6GkHEpump`
-- AMC : $115,943 1h vol, $71,916 mcap, +130% 1h  
-  CA `J7bLsZcpkfky92ir8k36Munz91nHKtcDNhDy8d3Qpump`
 - iAgent: $91,281 1h vol, $1,050,297 mcap, -39% 1h  
   CA `44DZsPNJUtUyTkELAFYdwCpe82sEt12HZKrMgK1Spump`
-- Predict: $83,208 1h vol, $2,221 mcap, -10% 1h  
+- Predict: $83,260 1h vol, $2,119 mcap, -14% 1h  
   CA `5kkuDNTNNCF1rQbsmTsc5BErTTKvDacAtQdRG6QGpump`
-- GI: $78,553 1h vol, $15,391 mcap, +109% 1h  
+- GI: $61,779 1h vol, $21,639 mcap, +73% 1h  
   CA `FwDXX1R5B61VsxmLffU5cGcH2XuoX9QHSaiGrCAkpump`
+- PokéMum: $52,054 1h vol, $7,501 mcap, +102% 1h  
+  CA `6J7bz3na3GggH1TC8mYQnwEpM2RgSRADBRZVjfPEpump`
+- Azuke: $51,428 1h vol, $5,565 mcap, +122% 1h  
+  CA `CbimMoJm98zAzma6tX7trUaVmbyPg2E3ZpZNn9XEpump`
