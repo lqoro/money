@@ -1,13 +1,13 @@
 # Trencher live report
 
-Updated 2026-11-20T07:31:28Z (paper trading, never real money)
+Updated 2026-11-20T07:46:42Z (paper trading, never real money)
 
 - Equity: $74.23 (-25.8% vs $100 start)
 - Closed trades: 22, 3 wins
 - Fees paid: $14.78 (axiom $2.81, network $9.18, pool $2.66), plus $4.15 lost to slippage
 - New trades: WATCH-ONLY (scans and decides, buys nothing)
-- Brain: subscription, claude-haiku-5-5 for routine calls, claude-opus-5-5 for the daily review; 318 routine calls and 226 plan-limit hits in 48h
-- Watch log: 92 coins being followed, 2255 filed, 0 would-buys (6h follow, sampled every 2 min)
+- Brain: subscription, claude-haiku-5-5 for routine calls, claude-opus-5-5 for the daily review; 317 routine calls and 225 plan-limit hits in 48h
+- Watch log: 87 coins being followed, 2260 filed, 0 would-buys (6h follow, sampled every 2 min)
 
 ## Scorecard (after fees)
 - 22 closed, 3 won (14%), net $-25.79
@@ -73,7 +73,7 @@ Updated 2026-11-20T07:31:28Z (paper trading, never real money)
   CA `H4gHnZ3NCU7Z9XQwGX6YYJNyieGEW8pqwGRUcdSxpump`
 
 ## Last scan
-- 07:30Z: 4 coins, 4 with pairs, 1 passed the market filters, 1 researched
+- 07:46Z: 3 coins, 3 with pairs, 0 passed the market filters, 0 researched
 
 ## Coins it looked at, and why it passed
 - 07:31Z enu (MIGRATED, $43,733 mcap, $2,133 5m vol): PASS at conviction 3, PASS: target too close and mid-range entry. enu is 1.18x under its 5.3e-5 high, 38% above its printed higher low, on $2.1k of 5m flow. Nothing to chase (V1, V6).  
@@ -99,14 +99,14 @@ Updated 2026-11-20T07:31:28Z (paper trading, never real money)
 
 ## What its skips did next (last 48h)
 A skip "ran" if the coin reached the first target (1.5x) from the skip price before a 20% drop, "dumped" if the drop came first. Sampled every 10 min, followed 6h.
-- top 10 over 25%: blocked 75, ran 13, dumped 56, flat 3, open 3 (saving losses: keep it)
+- top 10 over 25%: blocked 75, ran 13, dumped 56, flat 4, open 2 (saving losses: keep it)
   - ran: SHARK up to 1.68x  
     CA `3yxsNufZSWNrvMXw8gwCJFCuUkuTDsb1a55aR7evpump`
   - ran: clipping up to 2.89x  
     CA `FfsmhbvkTZ2TBYTuLgYCWiwhqeosVyH3imuUtWWypump`
   - ran: BUCKZ up to 1.6x  
     CA `3dF7QJEkhuVshbdgcVe227XvsbBc3cCoPTcHXw7Fpump`
-- falling knife (code): blocked 53, ran 7, dumped 43, flat 1, open 2 (saving losses: keep it)
+- falling knife (code): blocked 52, ran 7, dumped 42, flat 1, open 2 (saving losses: keep it)
   - ran: DACT up to 2.63x  
     CA `GZUGmAtuSx9755C3W1CLDVtA7MZQ8QWF1XjhjEbjpump`
   - ran: Apocrycoin up to 1.54x  
@@ -120,7 +120,7 @@ A skip "ran" if the coin reached the first target (1.5x) from the skip price bef
     CA `9rbKkz2BDQBVgZmrHY6d7PTq2ge91gkpEyE4y9PPpump`
   - ran: PIPI up to 1.63x  
     CA `J51xgomTx21VHY62Q7uv2otWRUSq71WeaApLfsAnpump`
-- thin 5m volume: blocked 16, ran 1, dumped 7, flat 5, open 3 (saving losses: keep it)
+- thin 5m volume: blocked 16, ran 1, dumped 7, flat 6, open 2 (saving losses: keep it)
   - ran: Snapmatic up to 1.68x  
     CA `4S8pUKWKUAtQKfE5qokSjszWDp1RqQWnom8jNYSWpump`
 - bundles over the line: blocked 16, ran 3, dumped 9, flat 2, open 2 (saving losses: keep it)
@@ -130,7 +130,7 @@ A skip "ran" if the coin reached the first target (1.5x) from the skip price bef
     CA `HricrxBN3QXC3SN5VLtNhaEzoGrYea5ZtaTxQDfKSTNK`
   - ran: PAPA up to 1.66x  
     CA `3hdXmQqZHmm7gWWweFKGdkjnxyWQZ2SWVNt1Jty5pump`
-- dev share over 1%: blocked 14, ran 2, dumped 11, flat 0, open 1 (saving losses: keep it)
+- dev share over 1%: blocked 13, ran 2, dumped 10, flat 0, open 1 (saving losses: keep it)
   - ran: LOOSY up to 1.71x  
     CA `FtSWWxVmKNXz8ksJxzJJ7BdDWXbQb3vC94J99oyypump`
   - ran: MANDY up to 1.54x  
@@ -199,11 +199,11 @@ Not quiet. Two coins clear the $10k 5m bar with buyers: Sheepcoin ($12k cap, $28
 ## Moving most in its scans, last 30 min (1h volume)
 - apocry : $214,470 1h vol, $104,991 mcap, -50% 1h  
   CA `HVxXzEt87QszpC95kMKAfrHdboj4K1TVxYNMzwmbpump`
-- MNUT: $133,417 1h vol, $2,776 mcap, -91% 1h  
+- MNUT: $118,077 1h vol, $2,709 mcap, -91% 1h  
   CA `EtJD6hSPf8W82WW6r3eHfjistaUQMHhGsa1uBUqmpump`
-- MARK: $69,975 1h vol, $8,877 mcap, -66% 1h  
-  CA `GMGgW3FGXKgPHmjiv3Pdd66dC7vXvpX8U9t4UG4tpBk6`
 - iAgent: $69,181 1h vol, $1,811,599 mcap, -28% 1h  
   CA `44DZsPNJUtUyTkELAFYdwCpe82sEt12HZKrMgK1Spump`
-- PATRICK: $62,903 1h vol, $42,706 mcap, +33% 1h  
-  CA `8mnJZnxaNLqVwkaWWGH7dKmoEzyYzGJx5pHaCp7spump`
+- SHEEP: $55,014 1h vol, $2,402 mcap, +1% 1h  
+  CA `6ppvYhojMwM1CXpqajafV2UarkEo5zgXGszuM8Ycpump`
+- CBUCKS: $38,254 1h vol, $4,242,731 mcap, -9% 1h  
+  CA `DtcicPCKTKeAh7TDEzTym3hXeoHAoMiBdYJhMYxZpump`
