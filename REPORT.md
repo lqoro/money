@@ -1,13 +1,13 @@
 # Trencher live report
 
-Updated 2026-11-20T11:49:44Z (paper trading, never real money)
+Updated 2026-11-20T12:04:51Z (paper trading, never real money)
 
 - Equity: $74.23 (-25.8% vs $100 start)
 - Closed trades: 22, 3 wins
 - Fees paid: $14.78 (axiom $2.81, network $9.18, pool $2.66), plus $4.15 lost to slippage
 - New trades: WATCH-ONLY (scans and decides, buys nothing)
-- Brain: subscription, claude-haiku-5-5 for routine calls, claude-opus-5-5 for the daily review; 324 routine calls and 201 plan-limit hits in 48h
-- Watch log: 73 coins being followed, 2320 filed, 0 would-buys (6h follow, sampled every 2 min)
+- Brain: subscription, claude-haiku-5-5 for routine calls, claude-opus-5-5 for the daily review; 325 routine calls and 200 plan-limit hits in 48h
+- Watch log: 71 coins being followed, 2324 filed, 0 would-buys (6h follow, sampled every 2 min)
 
 ## Scorecard (after fees)
 - 22 closed, 3 won (14%), net $-25.79
@@ -73,9 +73,13 @@ Updated 2026-11-20T11:49:44Z (paper trading, never real money)
   CA `H4gHnZ3NCU7Z9XQwGX6YYJNyieGEW8pqwGRUcdSxpump`
 
 ## Last scan
-- 11:48Z: 6 coins, 5 with pairs, 3 passed the market filters, 3 researched
+- 12:04Z: 5 coins, 4 with pairs, 0 passed the market filters, 0 researched
 
 ## Coins it looked at, and why it passed
+- 11:55Z CATMARIO (MIGRATED, $74,450 mcap, $42,082 5m vol): PASS at conviction 4, PASS: chasing. Cat Mario is 3.4% off a 16-minute-old peak after a +31% five-minute candle at 3.7x its hourly pace. That's a spike, not a pullback. Wait for it to retrace and print a higher low (V1, V6).  
+  CA `7bQmFyQbEf97rxZcdjLwc3aSHMuGcXvipo2gbTnbpump`
+- 11:53Z iAgent (MIGRATED, $684,417 mcap, $3,919 5m vol): PASS at conviction 2, PASS: flow at 0.55x pace, 81% off the high, and the site says "CA TBA" on a 12-hour-old domain. Fading crowd, no entry. (V1, V6, V13)  
+  CA `44DZsPNJUtUyTkELAFYdwCpe82sEt12HZKrMgK1Spump`
 - 11:49Z SNAPMATIC  (FINAL_STRETCH, $17,602 mcap, $3,978 5m vol): REJECT, RugCheck danger: Low Liquidity $2.21  
   CA `Gt9qKqRKdDK2mSczG9WYgRqS8pZkCw47ZW71iW34pump`
 - 11:49Z OGTA (MIGRATED, $322,484 mcap, $7,916 5m vol): PASS at conviction 3, PASS: OGTA is one of 14 GTA-ticker copies, the GTA theme is fading, and no catalyst was found. Blocker: "bottom buy, narrative fading" (V1, V6, V13).  
@@ -92,10 +96,6 @@ Updated 2026-11-20T11:49:44Z (paper trading, never real money)
   CA `FVzqGqRmr4UH1Fif6dewmwbJ1p4YUZCu8dcw4Efopump`
 - 11:07Z iAgent (MIGRATED, $1,027,665 mcap, $6,402 5m vol): PASS at conviction 3, PASS. iAgent is down 71.5% from a $3.6M peak with 5m flow below pace and no printed higher low. The Apple-agent story is real but its catalyst is from Nov 8. Blocker: "flow below pace" plus "no higher low". (V1, V6, V3)  
   CA `44DZsPNJUtUyTkELAFYdwCpe82sEt12HZKrMgK1Spump`
-- 11:03Z OGTA (MIGRATED, $301,055 mcap, $6,571 5m vol): PASS at conviction 3, PASS — 85% off the $2.07M high, 5m flow at 0.7x pace, GTA ticker story fading with no catalyst, and it's one of 14 copies. Blocker: flow below pace and no bottom-buy qualifier. (V1, V6)  
-  CA `7bCiddGLe5aM8HE2pigT9jsqkmC1HSPxyXN6GkHEpump`
-- 11:02Z LOOSY (MIGRATED, $1,313,510 mcap, $2,724 5m vol): PASS at conviction 3, PASS: 5m flow is 0.49x the hourly pace with sellers 109 to buyers 47, and the site doesn't show this CA. It's a 12-copy vamp field, so the leader doesn't get a waiver. Blocker: flow below pace. (V1, V6, V13)  
-  CA `HF2RBPrfNBk9TxggL2cYZFEKSgirzh5HKCngLENTpump`
 
 ## What its skips did next (last 48h)
 A skip "ran" if the coin reached the first target (1.5x) from the skip price before a 20% drop, "dumped" if the drop came first. Sampled every 10 min, followed 6h.
@@ -113,29 +113,29 @@ A skip "ran" if the coin reached the first target (1.5x) from the skip price bef
     CA `7fZK84wYShNUXKJnBkfXkeu5h2edduNkZV3p2B2LBCgC`
   - ran: AI up to 2.14x  
     CA `GUmgNeyZCLrjQW2TaLhqkTUas8isQc86YuzKQ6Fppump`
-- RugCheck danger: blocked 32, ran 4, dumped 25, flat 1, open 2 (saving losses: keep it)
+- RugCheck danger: blocked 31, ran 5, dumped 24, flat 1, open 1 (saving losses: keep it)
   - ran: CATCOIN up to 2.06x  
     CA `9JngoeaZHbV4f5EyRR3oDLNPH7VUGw1PYQC4s6j2pump`
   - ran: Leonida up to 1.51x  
     CA `9rbKkz2BDQBVgZmrHY6d7PTq2ge91gkpEyE4y9PPpump`
   - ran: PIPI up to 1.63x  
     CA `J51xgomTx21VHY62Q7uv2otWRUSq71WeaApLfsAnpump`
-- bundles over the line: blocked 16, ran 3, dumped 8, flat 3, open 2 (saving losses: keep it)
+- thin 5m volume: blocked 15, ran 1, dumped 8, flat 5, open 1 (saving losses: keep it)
+  - ran: Snapmatic up to 1.68x  
+    CA `4S8pUKWKUAtQKfE5qokSjszWDp1RqQWnom8jNYSWpump`
+- bundles over the line: blocked 15, ran 3, dumped 7, flat 3, open 2 (saving losses: keep it)
   - ran: BIG up to 1.93x  
     CA `34DXEU2ttEtBSb1TqGJm7izgvYTTkqKcCoiNWdPDpump`
   - ran: VI up to 1.56x  
     CA `HricrxBN3QXC3SN5VLtNhaEzoGrYea5ZtaTxQDfKSTNK`
   - ran: PAPA up to 1.66x  
     CA `3hdXmQqZHmm7gWWweFKGdkjnxyWQZ2SWVNt1Jty5pump`
-- thin 5m volume: blocked 15, ran 1, dumped 8, flat 5, open 1 (saving losses: keep it)
-  - ran: Snapmatic up to 1.68x  
-    CA `4S8pUKWKUAtQKfE5qokSjszWDp1RqQWnom8jNYSWpump`
 - dev share over 1%: blocked 13, ran 2, dumped 10, flat 0, open 1 (saving losses: keep it)
   - ran: LOOSY up to 1.71x  
     CA `FtSWWxVmKNXz8ksJxzJJ7BdDWXbQb3vC94J99oyypump`
   - ran: MANDY up to 1.54x  
     CA `GQngHP8P6s45MxWnU7JsocfV2HjPQdJZmCEAYKpBpump`
-- flow below pace: blocked 13, ran 3, dumped 7, flat 1, open 2 (saving losses: keep it)
+- flow below pace: blocked 13, ran 3, dumped 6, flat 1, open 3 (saving losses: keep it)
   - ran: SI up to 1.53x  
     CA `4s38cgZJN4J39S2BQwCkcsJJ9ZGeJSjw8vK9wVtupump`
   - ran: AI up to 1.51x  
@@ -152,7 +152,7 @@ A skip "ran" if the coin reached the first target (1.5x) from the skip price bef
 - too new / sniping: blocked 9, ran 1, dumped 8, flat 0, open 0 (saving losses: keep it)
   - ran: AudaCity up to 1.96x  
     CA `3rtTUCpe1BBgCTNWQ9jK3xkAz1E7SPqMt4uYHx1Bpump`
-- near the high / chasing: blocked 7, ran 2, dumped 5, flat 0, open 0 (saving losses: keep it)
+- near the high / chasing: blocked 8, ran 2, dumped 6, flat 0, open 0 (saving losses: keep it)
   - ran: BEAR up to 2.32x  
     CA `DCPm44cT9i39HjR13QHYgxkR7wEx9TDeniGuayB5pump`
   - ran: ZOL up to 1.55x  
@@ -201,9 +201,9 @@ The meta is cat and pet-name pump.fun launches. A Mario Cat (AMC), whatever cat 
   CA `J7bLsZcpkfky92ir8k36Munz91nHKtcDNhDy8d3Qpump`
 - LOOSY: $146,156 1h vol, $1,665,626 mcap, +46% 1h  
   CA `HF2RBPrfNBk9TxggL2cYZFEKSgirzh5HKCngLENTpump`
+- CATMARIO: $135,823 1h vol, $74,450 mcap, +146% 1h  
+  CA `7bQmFyQbEf97rxZcdjLwc3aSHMuGcXvipo2gbTnbpump`
+- iAgent: $85,231 1h vol, $694,942 mcap, -19% 1h  
+  CA `44DZsPNJUtUyTkELAFYdwCpe82sEt12HZKrMgK1Spump`
 - OGTA: $82,363 1h vol, $322,484 mcap, +15% 1h  
   CA `7bCiddGLe5aM8HE2pigT9jsqkmC1HSPxyXN6GkHEpump`
-- GATO: $50,607 1h vol, $3,538,816 mcap, +34% 1h  
-  CA `HsprHxBRgiVaQdRf3TnKNuZZtaX9JUSPgMFdAkk6pump`
-- Bagwork: $46,027 1h vol, $7,591 mcap, +37% 1h  
-  CA `6BBKkeEDeSSKhngh3hR7kE3cr5nhvDBp3QZtq5M9pump`
