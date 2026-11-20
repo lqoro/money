@@ -1,13 +1,13 @@
 # Trencher live report
 
-Updated 2026-11-20T10:48:53Z (paper trading, never real money)
+Updated 2026-11-20T11:04:04Z (paper trading, never real money)
 
 - Equity: $74.23 (-25.8% vs $100 start)
 - Closed trades: 22, 3 wins
 - Fees paid: $14.78 (axiom $2.81, network $9.18, pool $2.66), plus $4.15 lost to slippage
 - New trades: WATCH-ONLY (scans and decides, buys nothing)
-- Brain: subscription, claude-haiku-5-5 for routine calls, claude-opus-5-5 for the daily review; 323 routine calls and 207 plan-limit hits in 48h
-- Watch log: 74 coins being followed, 2304 filed, 0 would-buys (6h follow, sampled every 2 min)
+- Brain: subscription, claude-haiku-5-5 for routine calls, claude-opus-5-5 for the daily review; 325 routine calls and 206 plan-limit hits in 48h
+- Watch log: 77 coins being followed, 2308 filed, 0 would-buys (6h follow, sampled every 2 min)
 
 ## Scorecard (after fees)
 - 22 closed, 3 won (14%), net $-25.79
@@ -73,33 +73,33 @@ Updated 2026-11-20T10:48:53Z (paper trading, never real money)
   CA `H4gHnZ3NCU7Z9XQwGX6YYJNyieGEW8pqwGRUcdSxpump`
 
 ## Last scan
-- 10:48Z: 3 coins, 3 with pairs, 0 passed the market filters, 0 researched
+- 11:03Z: 5 coins, 5 with pairs, 1 passed the market filters, 1 researched
 
 ## Coins it looked at, and why it passed
+- 11:03Z OGTA (MIGRATED, $301,055 mcap, $6,571 5m vol): PASS at conviction 3, PASS — 85% off the $2.07M high, 5m flow at 0.7x pace, GTA ticker story fading with no catalyst, and it's one of 14 copies. Blocker: flow below pace and no bottom-buy qualifier. (V1, V6)  
+  CA `7bCiddGLe5aM8HE2pigT9jsqkmC1HSPxyXN6GkHEpump`
+- 11:02Z LOOSY (MIGRATED, $1,313,510 mcap, $2,724 5m vol): PASS at conviction 3, PASS: 5m flow is 0.49x the hourly pace with sellers 109 to buyers 47, and the site doesn't show this CA. It's a 12-copy vamp field, so the leader doesn't get a waiver. Blocker: flow below pace. (V1, V6, V13)  
+  CA `HF2RBPrfNBk9TxggL2cYZFEKSgirzh5HKCngLENTpump`
+- 10:58Z WCAT (FINAL_STRETCH, $16,712 mcap, $5,345 5m vol): PASS at conviction 3, PASS: chasing spike, not the vamp leader, and 5m flow under $10k. Blocker: "chasing spike." (V1, V6)  
+  CA `ByamdiJiDUpiELZjWok9F1JSLKdS3oScCEQrJt99pump`
+- 10:53Z AMC  (MIGRATED, $427,579 mcap, $58,353 5m vol): REJECT, Bundles: 1 linked wallet cluster(s) hold 23.5% of supply (>20%) (V17)  
+  CA `J7bLsZcpkfky92ir8k36Munz91nHKtcDNhDy8d3Qpump`
+- 10:52Z CBUCKS (MIGRATED, $3,955,612 mcap, $2,240 5m vol): REJECT, Top 10 hold 25.9% ex-pool (>25%) (V13)  
+  CA `DtcicPCKTKeAh7TDEzTym3hXeoHAoMiBdYJhMYxZpump`
+- 10:52Z GATO (MIGRATED, $2,615,449 mcap, $511 5m vol): REJECT, 5m volume $511 is dead (<$2,000) (V1)  
+  CA `HsprHxBRgiVaQdRf3TnKNuZZtaX9JUSPgMFdAkk6pump`
+- 10:49Z MAIN (MIGRATED, $42,441 mcap, $4,652 5m vol): REJECT, Top 10 hold 25.9% ex-pool (>25%) (V13)  
+  CA `9MZiGiBiFA6vLkqJ8kk7MsniLgrU6VrtiWripZFMmain`
 - 10:39Z AIBO (FINAL_STRETCH, $23,248 mcap, $2,876 5m vol): REJECT, Top 10 hold 25.7% ex-pool (>25%) (V13)  
   CA `DbxnCTr3d9e2i7pt4H3eY4Kb6ov9VrzNpy5PpkLApump`
 - 10:32Z PATRICK (DIP, $45,176 mcap, $3,246 5m vol): REJECT, Dip with fading attention is a falling knife, not a dip (5m at 0.41x the hour's pace, under 0.6x)  
   CA `8mnJZnxaNLqVwkaWWGH7dKmoEzyYzGJx5pHaCp7spump`
 - 10:21Z iAgent (DIP, $1,181,021 mcap, $4,189 5m vol): REJECT, Dip with fading attention is a falling knife, not a dip (5m at 0.58x the hour's pace, under 0.6x)  
   CA `44DZsPNJUtUyTkELAFYdwCpe82sEt12HZKrMgK1Spump`
-- 10:20Z RUDY (MIGRATED, $64,283 mcap, $32,189 5m vol): PASS at conviction 3, PASS: four minutes old, 8.9% off a $70.6k peak, 12x hourly pace, and a 28-copy Rudolph field. Blockers: "too new", "chasing", "split crowd". Wait, don't probe. (V1, V6, V13)  
-  CA `GjFvarRNRrq5tL6K2qdY7Xv2ZEbVrstqjW1BW4hMpump`
-- 10:18Z HOGE (DIP, $906,220 mcap, $11,612 5m vol): REJECT, Bundles: 9 linked wallet cluster(s) hold 26.7% of supply (>20%) (V17)  
-  CA `FVzqGqRmr4UH1Fif6dewmwbJ1p4YUZCu8dcw4Efopump`
-- 10:17Z OGTA (MIGRATED, $253,503 mcap, $4,648 5m vol): PASS at conviction 3, PASS: OGTA is one of 14 copies of the same ticker, 5m flow is at 0.52x the hourly pace, and it's still falling 88% off its high with no higher low printed. Bottom buy on a dead field. (V1, V3, V6, V13)  
-  CA `7bCiddGLe5aM8HE2pigT9jsqkmC1HSPxyXN6GkHEpump`
-- 10:16Z LOOSY (MIGRATED, $1,104,521 mcap, $2,690 5m vol): PASS at conviction 3, PASS — LOOSY is the leader of a 12-copy ticker field with $2.7k of 5m flow at 0.58x its hourly pace, and the site still says "CA TBA." Flow below pace on a MIGRATED coin is a pass, not a probe (V1, V6, V13).  
-  CA `HF2RBPrfNBk9TxggL2cYZFEKSgirzh5HKCngLENTpump`
-- 10:07Z AMC  (MIGRATED, $131,943 mcap, $5,210 5m vol): REJECT, Bundles: 1 linked wallet cluster(s) hold 23.5% of supply (>20%) (V17)  
-  CA `J7bLsZcpkfky92ir8k36Munz91nHKtcDNhDy8d3Qpump`
-- 09:45Z CBUCKS (MIGRATED, $3,978,431 mcap, $1,224 5m vol): REJECT, 5m volume $1,224 is dead (<$2,000) (V1)  
-  CA `DtcicPCKTKeAh7TDEzTym3hXeoHAoMiBdYJhMYxZpump`
-- 09:37Z PATRICK (DIP, $41,787 mcap, $11,394 5m vol): PASS at conviction 3, PASS: blocker "theme pace below 1x, no catalyst." PATRICK is a 22-copy patrick/retard field running at 0.7x its hourly pace with no outside news I could find. Bottom buy with no catalyst (V1, V3, V6).  
-  CA `8mnJZnxaNLqVwkaWWGH7dKmoEzyYzGJx5pHaCp7spump`
 
 ## What its skips did next (last 48h)
 A skip "ran" if the coin reached the first target (1.5x) from the skip price before a 20% drop, "dumped" if the drop came first. Sampled every 10 min, followed 6h.
-- top 10 over 25%: blocked 67, ran 10, dumped 53, flat 3, open 1 (saving losses: keep it)
+- top 10 over 25%: blocked 69, ran 10, dumped 53, flat 3, open 3 (saving losses: keep it)
   - ran: BUCKZ up to 1.6x  
     CA `3dF7QJEkhuVshbdgcVe227XvsbBc3cCoPTcHXw7Fpump`
   - ran: Pussy up to 1.53x  
@@ -123,7 +123,7 @@ A skip "ran" if the coin reached the first target (1.5x) from the skip price bef
 - thin 5m volume: blocked 16, ran 1, dumped 8, flat 5, open 2 (saving losses: keep it)
   - ran: Snapmatic up to 1.68x  
     CA `4S8pUKWKUAtQKfE5qokSjszWDp1RqQWnom8jNYSWpump`
-- bundles over the line: blocked 16, ran 4, dumped 8, flat 3, open 1 (saving losses: keep it)
+- bundles over the line: blocked 16, ran 3, dumped 10, flat 3, open 0 (saving losses: keep it)
   - ran: BIG up to 1.93x  
     CA `34DXEU2ttEtBSb1TqGJm7izgvYTTkqKcCoiNWdPDpump`
   - ran: VI up to 1.56x  
@@ -135,7 +135,7 @@ A skip "ran" if the coin reached the first target (1.5x) from the skip price bef
     CA `FtSWWxVmKNXz8ksJxzJJ7BdDWXbQb3vC94J99oyypump`
   - ran: MANDY up to 1.54x  
     CA `GQngHP8P6s45MxWnU7JsocfV2HjPQdJZmCEAYKpBpump`
-- other: blocked 13, ran 3, dumped 10, flat 0, open 0 (saving losses: keep it)
+- other: blocked 12, ran 3, dumped 9, flat 0, open 0 (saving losses: keep it)
   - ran: CALICO up to 3.25x  
     CA `89GFxMWQ1r8cwTwRSgeQ9RaGPtUdmDLQgCsQZcrWpump`
   - ran: After up to 2.36x  
@@ -197,13 +197,13 @@ Nothing shows a positive edge after costs. Over 309 settled coins, every setup l
 The movers are animal and pet names on pump.fun: Cat Mario, A Mario Cat, Cool Dog, whatever cat, Gino the Baby Marmoset, Giving Inu and Bibi. Most are under two hours old on $6k-$130k caps, a launch-style meta that lasts hours (V1, V5). Holiday is the second theme and it's rising: Rudolph (RUDY) is a six-minute-old $57k reindeer with $38k of 5m volume at 63% buys, and with Christmas five weeks out, seasonal tokens tend to show early (V5). The web doesn't confirm that, so it rests on one scan line. Fading: Cat Mario -62%, OFFICIALGTA -51% on $5.3k of 5m, Predict -77%, buckme -37%, and the Trump and dinner headlines don't appear in the movers at all, so I'm ignoring them. The crawler's Giving Inu setup (+629%, $10.1k 5m, 0.3h old) doesn't match the scan (+39%, $1.3k 5m, 1.6h old), so I'm discarding it. RUDY is the only coin that clears the MIGRATED bar (age ≤12h, cap ≥$30k, 5m ≥$10k), so it's the one to research now, not chase. At conviction 5 I'd buy a probe only after holder and bundle checks pass, on a pullback that holds with buys above 60%, with initials at 2x, a -30% stop, and out if 5m falls under $10k. AMC, Jimmy, Gino and GI are watch-only until 5m clears $10k (V1, V6).
 
 ## Moving most in its scans, last 30 min (1h volume)
-- PATRICK: $95,326 1h vol, $45,153 mcap, +84% 1h  
-  CA `8mnJZnxaNLqVwkaWWGH7dKmoEzyYzGJx5pHaCp7spump`
-- iAgent: $88,430 1h vol, $1,108,495 mcap, +11% 1h  
-  CA `44DZsPNJUtUyTkELAFYdwCpe82sEt12HZKrMgK1Spump`
-- Nikita: $50,037 1h vol, $6,287 mcap, +4% 1h  
-  CA `HHuZcZnZNSaJ8XvcGtqs92DMRGg2qEyWZQvk8Zt6pump`
-- Meobao: $41,181 1h vol, $17,569 mcap, -38% 1h  
+- AMC : $212,548 1h vol, $427,579 mcap, +325% 1h  
+  CA `J7bLsZcpkfky92ir8k36Munz91nHKtcDNhDy8d3Qpump`
+- OGTA: $112,519 1h vol, $301,055 mcap, -26% 1h  
+  CA `7bCiddGLe5aM8HE2pigT9jsqkmC1HSPxyXN6GkHEpump`
+- LOOSY: $66,199 1h vol, $1,313,510 mcap, +7% 1h  
+  CA `HF2RBPrfNBk9TxggL2cYZFEKSgirzh5HKCngLENTpump`
+- Meobao: $60,694 1h vol, $22,768 mcap, -15% 1h  
   CA `EwjHVMAVFTyUnyYbreMKbRbAKSKDrirtjEAKoBj3pump`
-- RUDY: $37,952 1h vol, $57,295 mcap, -16% 1h  
-  CA `GjFvarRNRrq5tL6K2qdY7Xv2ZEbVrstqjW1BW4hMpump`
+- Nikita: $51,463 1h vol, $3,354 mcap, -45% 1h  
+  CA `HHuZcZnZNSaJ8XvcGtqs92DMRGg2qEyWZQvk8Zt6pump`
