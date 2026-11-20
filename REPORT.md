@@ -1,13 +1,13 @@
 # Trencher live report
 
-Updated 2026-11-20T07:46:42Z (paper trading, never real money)
+Updated 2026-11-20T08:01:55Z (paper trading, never real money)
 
 - Equity: $74.23 (-25.8% vs $100 start)
 - Closed trades: 22, 3 wins
 - Fees paid: $14.78 (axiom $2.81, network $9.18, pool $2.66), plus $4.15 lost to slippage
 - New trades: WATCH-ONLY (scans and decides, buys nothing)
-- Brain: subscription, claude-haiku-5-5 for routine calls, claude-opus-5-5 for the daily review; 317 routine calls and 225 plan-limit hits in 48h
-- Watch log: 87 coins being followed, 2260 filed, 0 would-buys (6h follow, sampled every 2 min)
+- Brain: subscription, claude-haiku-5-5 for routine calls, claude-opus-5-5 for the daily review; 319 routine calls and 223 plan-limit hits in 48h
+- Watch log: 85 coins being followed, 2266 filed, 0 would-buys (6h follow, sampled every 2 min)
 
 ## Scorecard (after fees)
 - 22 closed, 3 won (14%), net $-25.79
@@ -73,9 +73,17 @@ Updated 2026-11-20T07:46:42Z (paper trading, never real money)
   CA `H4gHnZ3NCU7Z9XQwGX6YYJNyieGEW8pqwGRUcdSxpump`
 
 ## Last scan
-- 07:46Z: 3 coins, 3 with pairs, 0 passed the market filters, 0 researched
+- 08:01Z: 5 coins, 5 with pairs, 1 passed the market filters, 1 researched
 
 ## Coins it looked at, and why it passed
+- 08:01Z OGTA (MIGRATED, $613,111 mcap, $5,495 5m vol): PASS at conviction 2, PASS — GTA-ticker meta is fading, no catalyst, and the tape is making lower lows. Blocker: "bottom buy, narrative not rising" (V1, V6, owner rule).  
+  CA `7bCiddGLe5aM8HE2pigT9jsqkmC1HSPxyXN6GkHEpump`
+- 08:00Z LOOSY (MIGRATED, $1,171,983 mcap, $4,232 5m vol): PASS at conviction 3, PASS — 13 copies of the ticker, no breakout, $4.2k 5m, and the project site says "CA TBA." Big cap with no room to the high. (V1, V13)  
+  CA `HF2RBPrfNBk9TxggL2cYZFEKSgirzh5HKCngLENTpump`
+- 07:58Z STF (FINAL_STRETCH, $23,236 mcap, $25,254 5m vol): PASS at conviction 3, PASS: chasing spike. STF is up 861% in an hour, sits 15% off a $27k peak, and is one of 11 fish copies with no story on the radar (V1, V6, V13).  
+  CA `EhBC9qujofnUest7sLbmvvks4o5wW3jZPMBDiMJopump`
+- 07:49Z PATRICK (MIGRATED, $64,059 mcap, $9,564 5m vol): PASS at conviction 3, PASS. Flow is at 0.4x its hourly pace, no higher low has printed, and it's a bottom buy with no named catalyst. Blocker: "flow below pace". (V1, V6)  
+  CA `8mnJZnxaNLqVwkaWWGH7dKmoEzyYzGJx5pHaCp7spump`
 - 07:31Z enu (MIGRATED, $43,733 mcap, $2,133 5m vol): PASS at conviction 3, PASS: target too close and mid-range entry. enu is 1.18x under its 5.3e-5 high, 38% above its printed higher low, on $2.1k of 5m flow. Nothing to chase (V1, V6).  
   CA `9msLfYfXBrSbrApCZAPuPMCNmPqNtEL1VPKh1AEYpump`
 - 07:28Z apocry  (DIP, $103,794 mcap, $3,093 5m vol): REJECT, Dip with fading attention is a falling knife, not a dip (5m at 0.17x the hour's pace, under 0.6x)  
@@ -88,25 +96,17 @@ Updated 2026-11-20T07:46:42Z (paper trading, never real money)
   CA `44DZsPNJUtUyTkELAFYdwCpe82sEt12HZKrMgK1Spump`
 - 07:15Z OGTA (DIP, $622,892 mcap, $3,991 5m vol): PASS at conviction 2, PASS — DIP with no live catalyst. GTA 6 peaked on its own date, theme volume is 0.82x pace, and this is a bounce, not a higher low. Blocker: "dead story" / bottom-buy rule. (V1, V6)  
   CA `7bCiddGLe5aM8HE2pigT9jsqkmC1HSPxyXN6GkHEpump`
-- 07:14Z LOOSY (MIGRATED, $1,144,996 mcap, $3,106 5m vol): PASS at conviction 3, PASS — Cool Dog (LOOSY) is a $1.14M migrated copy-field leader with 5m flow at 0.72x pace, $3.1k on the 5m and no breakout printing. Blocker: flow below pace. (V1, V6)  
-  CA `HF2RBPrfNBk9TxggL2cYZFEKSgirzh5HKCngLENTpump`
-- 07:13Z GATO (MIGRATED, $1,879,925 mcap, $3,780 5m vol): REJECT, Dev holds 2.7% (>1%) (V13, V17)  
-  CA `HsprHxBRgiVaQdRf3TnKNuZZtaX9JUSPgMFdAkk6pump`
-- 07:03Z PATRICK (MIGRATED, $43,548 mcap, $29,659 5m vol): REJECT, Top 10 hold 26.2% ex-pool (>25%) (V13)  
-  CA `8mnJZnxaNLqVwkaWWGH7dKmoEzyYzGJx5pHaCp7spump`
-- 06:49Z FIONA (FINAL_STRETCH, $17,735 mcap, $3,974 5m vol): PASS at conviction 3, PASS: spike off a low into a 22k peak, flow under pace, weak name story, no real site. Blocker: no narrative, target too close. (V1, V6)  
-  CA `5kpHB8xoruKHJRigE6FHTG2gZcrPSWWn8u4N7uS9pump`
 
 ## What its skips did next (last 48h)
 A skip "ran" if the coin reached the first target (1.5x) from the skip price before a 20% drop, "dumped" if the drop came first. Sampled every 10 min, followed 6h.
-- top 10 over 25%: blocked 75, ran 13, dumped 56, flat 4, open 2 (saving losses: keep it)
+- top 10 over 25%: blocked 74, ran 13, dumped 56, flat 4, open 1 (saving losses: keep it)
   - ran: SHARK up to 1.68x  
     CA `3yxsNufZSWNrvMXw8gwCJFCuUkuTDsb1a55aR7evpump`
   - ran: clipping up to 2.89x  
     CA `FfsmhbvkTZ2TBYTuLgYCWiwhqeosVyH3imuUtWWypump`
   - ran: BUCKZ up to 1.6x  
     CA `3dF7QJEkhuVshbdgcVe227XvsbBc3cCoPTcHXw7Fpump`
-- falling knife (code): blocked 52, ran 7, dumped 42, flat 1, open 2 (saving losses: keep it)
+- falling knife (code): blocked 52, ran 7, dumped 43, flat 1, open 1 (saving losses: keep it)
   - ran: DACT up to 2.63x  
     CA `GZUGmAtuSx9755C3W1CLDVtA7MZQ8QWF1XjhjEbjpump`
   - ran: Apocrycoin up to 1.54x  
@@ -120,7 +120,7 @@ A skip "ran" if the coin reached the first target (1.5x) from the skip price bef
     CA `9rbKkz2BDQBVgZmrHY6d7PTq2ge91gkpEyE4y9PPpump`
   - ran: PIPI up to 1.63x  
     CA `J51xgomTx21VHY62Q7uv2otWRUSq71WeaApLfsAnpump`
-- thin 5m volume: blocked 16, ran 1, dumped 7, flat 6, open 2 (saving losses: keep it)
+- thin 5m volume: blocked 16, ran 1, dumped 8, flat 6, open 1 (saving losses: keep it)
   - ran: Snapmatic up to 1.68x  
     CA `4S8pUKWKUAtQKfE5qokSjszWDp1RqQWnom8jNYSWpump`
 - bundles over the line: blocked 16, ran 3, dumped 9, flat 2, open 2 (saving losses: keep it)
@@ -142,21 +142,21 @@ A skip "ran" if the coin reached the first target (1.5x) from the skip price bef
     CA `89GFxMWQ1r8cwTwRSgeQ9RaGPtUdmDLQgCsQZcrWpump`
   - ran: After up to 2.36x  
     CA `Db2s6iVvenVhJkj96P4UbZWEAYX4nUhgXhSVbQrwpump`
-- flow below pace: blocked 12, ran 3, dumped 5, flat 1, open 3 (mixed)
+- flow below pace: blocked 12, ran 3, dumped 6, flat 1, open 2 (saving losses: keep it)
   - ran: SI up to 1.53x  
     CA `4s38cgZJN4J39S2BQwCkcsJJ9ZGeJSjw8vK9wVtupump`
   - ran: AI up to 1.51x  
     CA `8SacNb6sgiAcscRe4m915B6nL9XX55dk8FS7L532pump`
   - ran: SWRDXSTFF up to 1.77x  
     CA `Csoj9XHJfBAxsKswqKKBENnGeoRDHtACfyYi7HmJpump`
-- falling knife / no higher low: blocked 7, ran 2, dumped 2, flat 1, open 2 (mixed)
+- too new / sniping: blocked 7, ran 1, dumped 6, flat 0, open 0 (saving losses: keep it)
+  - ran: AudaCity up to 1.96x  
+    CA `3rtTUCpe1BBgCTNWQ9jK3xkAz1E7SPqMt4uYHx1Bpump`
+- falling knife / no higher low: blocked 6, ran 2, dumped 2, flat 1, open 1 (mixed)
   - ran: pCAT up to 1.58x  
     CA `BLdC7hwRijHudKYDmtEkx1SHUdBWm8XbjBCSvwa6pump`
   - ran: MACCA up to 1.71x  
     CA `C5eGEXJZYvXEbKdyvPtasksjGNV4xvMowpKM92bVv47f`
-- too new / sniping: blocked 7, ran 1, dumped 6, flat 0, open 0 (saving losses: keep it)
-  - ran: AudaCity up to 1.96x  
-    CA `3rtTUCpe1BBgCTNWQ9jK3xkAz1E7SPqMt4uYHx1Bpump`
 
 ## Daily review (2026-11-16, claude-opus-5-5)
 Nothing shows a positive edge after costs. Over 309 settled coins, every setup lost money net: FINAL_STRETCH -7.2%, DIP -7.4%, MIGRATED -13.5%. Costs alone averaged 9.8% per round trip. Before costs, FINAL_STRETCH made about +2.9% and DIP about +1.8%, but at n=46 and n=54 the noise is roughly ±4–5 points, so neither is different from zero. With a 1.5x / -20% plan and ~10% costs, you need about 43% of coins to reach 1.5x before -20% just to break even. The best group (FINAL_STRETCH) managed 32.6%, and the error bar on that is about ±14 points. The routine model gave zero would-buys, so the "did its buys beat its passes" question can't be answered. It passed on all 164 coins it reviewed. Those coins averaged -11.7% net, about the same as the checklist rejects at -11.3%, so passing on everything was roughly right this day, even though it missed LMAO, Marvin and WIGGLES.
@@ -197,13 +197,13 @@ Nothing shows a positive edge after costs. Over 309 settled coins, every setup l
 Not quiet. Two coins clear the $10k 5m bar with buyers: Sheepcoin ($12k cap, $28.7k 5m, 57% buys, +413% 1h) and Retard Patrick ($42.7k cap, $32k 5m, 56% buys), both under an hour old. The trenches are trading fresh character-plus-name memes on pump.fun and pumpswap (Sheep, Patrick, Fiona, Mark). That is a launch-style meta that lasts hours, and the fades are already visible: Mark The Squirrel -90% 1h on $54 5m, Justice For Mark Longo -56%, Pals -56%, Isaac Francis at 0% buys. The GTA-ticker plays are fading too (OGTA $3.3k 5m, GATO 2,083h old at 17% buys). Trump, AI and celebrity names from the crawler don't appear in scan_movers, and the crawler's apocrycoin/SWORD/Antcap figures don't match the scan, so I'm ignoring them. Setups to research now, probe-sized at most: Retard Patrick first, then Sheepcoin only if it holds after the spike. Dev, bundle and holder checks haven't run, so conviction is 4/10: initials at 2x, stop at -30%, exit written before entry. Fiona ($4.3k 5m) and LOOSY ($3.3k 5m, 79% buys) are under the volume bar, so watch only.
 
 ## Moving most in its scans, last 30 min (1h volume)
-- apocry : $214,470 1h vol, $104,991 mcap, -50% 1h  
-  CA `HVxXzEt87QszpC95kMKAfrHdboj4K1TVxYNMzwmbpump`
-- MNUT: $118,077 1h vol, $2,709 mcap, -91% 1h  
-  CA `EtJD6hSPf8W82WW6r3eHfjistaUQMHhGsa1uBUqmpump`
-- iAgent: $69,181 1h vol, $1,811,599 mcap, -28% 1h  
-  CA `44DZsPNJUtUyTkELAFYdwCpe82sEt12HZKrMgK1Spump`
-- SHEEP: $55,014 1h vol, $2,402 mcap, +1% 1h  
+- PATRICK: $287,830 1h vol, $61,792 mcap, +100% 1h  
+  CA `8mnJZnxaNLqVwkaWWGH7dKmoEzyYzGJx5pHaCp7spump`
+- STF: $94,389 1h vol, $22,570 mcap, +834% 1h  
+  CA `EhBC9qujofnUest7sLbmvvks4o5wW3jZPMBDiMJopump`
+- OGTA: $62,318 1h vol, $613,111 mcap, +12% 1h  
+  CA `7bCiddGLe5aM8HE2pigT9jsqkmC1HSPxyXN6GkHEpump`
+- SHEEP: $56,071 1h vol, $2,600 mcap, +9% 1h  
   CA `6ppvYhojMwM1CXpqajafV2UarkEo5zgXGszuM8Ycpump`
-- CBUCKS: $38,254 1h vol, $4,242,731 mcap, -9% 1h  
-  CA `DtcicPCKTKeAh7TDEzTym3hXeoHAoMiBdYJhMYxZpump`
+- LOOSY: $45,437 1h vol, $1,165,647 mcap, -0% 1h  
+  CA `HF2RBPrfNBk9TxggL2cYZFEKSgirzh5HKCngLENTpump`
