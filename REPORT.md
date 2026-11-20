@@ -1,13 +1,13 @@
 # Trencher live report
 
-Updated 2026-11-20T15:22:41Z (paper trading, never real money)
+Updated 2026-11-20T15:37:46Z (paper trading, never real money)
 
 - Equity: $74.23 (-25.8% vs $100 start)
 - Closed trades: 22, 3 wins
 - Fees paid: $14.78 (axiom $2.81, network $9.18, pool $2.66), plus $4.15 lost to slippage
 - New trades: WATCH-ONLY (scans and decides, buys nothing)
-- Brain: subscription, claude-haiku-5-5 for routine calls, claude-opus-5-5 for the daily review; 330 routine calls and 180 plan-limit hits in 48h
-- Watch log: 73 coins being followed, 2364 filed, 0 would-buys (6h follow, sampled every 2 min)
+- Brain: subscription, claude-haiku-5-5 for routine calls, claude-opus-5-5 for the daily review; 333 routine calls and 179 plan-limit hits in 48h
+- Watch log: 72 coins being followed, 2368 filed, 0 would-buys (6h follow, sampled every 2 min)
 
 ## Scorecard (after fees)
 - 22 closed, 3 won (14%), net $-25.79
@@ -73,9 +73,15 @@ Updated 2026-11-20T15:22:41Z (paper trading, never real money)
   CA `H4gHnZ3NCU7Z9XQwGX6YYJNyieGEW8pqwGRUcdSxpump`
 
 ## Last scan
-- 15:22Z: 6 coins, 6 with pairs, 1 passed the market filters, 1 researched
+- 15:36Z: 4 coins, 4 with pairs, 1 passed the market filters, 1 researched
 
 ## Coins it looked at, and why it passed
+- 15:37Z OGTA (MIGRATED, $159,323 mcap, $5,570 5m vol): PASS at conviction 2, PASS — 92% off a $2.07M high, $5.6k on the 5m, 12 copies of the ticker. The GTA name doesn't make it a dip. (V1, V6)  
+  CA `7bCiddGLe5aM8HE2pigT9jsqkmC1HSPxyXN6GkHEpump`
+- 15:36Z LOOSY (MIGRATED, $2,691,395 mcap, $4,760 5m vol): PASS at conviction 3, PASS — LOOSY is a $2.7M cap with 5m flow at 0.37x its hourly pace, and the project's own site says "CA TBA". Blocker: flow below pace. Not a probe (V1, V6).  
+  CA `HF2RBPrfNBk9TxggL2cYZFEKSgirzh5HKCngLENTpump`
+- 15:34Z 小面包 (MIGRATED, $42,725 mcap, $2,446 5m vol): PASS at conviction 3, PASS. Cat theme is at 0.08x its hourly pace and this coin's 5m flow is 0.57x its own pace. Blocker: flow below pace. (V1, V6)  
+  CA `BjCRkoV3Ksd6bukFUyuF9pdPWTAoeAizFXXZ8qDJpump`
 - 15:22Z hyrax (DIP, $31,658 mcap, $1,986 5m vol): REJECT, 5m volume $1,986 is dead (<$2,000) (V1)  
   CA `dg5hPd5Mnb9NHk64QmunzyHoPTFt6ewhpQT33Yxpump`
 - 15:21Z Catnomics (MIGRATED, $35,644 mcap, $4,789 5m vol): PASS at conviction 2, PASS: Catnomics is 79.5% off its $174k high, 5m flow at 0.55x pace, and the cat theme is fading. Blocker: "deep drawdown, flow below pace" (V1, V6).  
@@ -90,16 +96,10 @@ Updated 2026-11-20T15:22:41Z (paper trading, never real money)
   CA `gHZhqEnFnitWCJ1MA2i9BzqTReFMhsGmbdL17xypump`
 - 14:51Z OGTA (MIGRATED, $139,962 mcap, $4,096 5m vol): PASS at conviction 2, PASS: OGTA is 93% off its $2.07M peak with $4.1k of 5m volume at 0.58x pace. That's a dump, not a dip, and nothing about it is rising (V1, V6).  
   CA `7bCiddGLe5aM8HE2pigT9jsqkmC1HSPxyXN6GkHEpump`
-- 14:50Z LOOSY (MIGRATED, $2,399,756 mcap, $6,194 5m vol): PASS at conviction 3, PASS — LOOSY is the leader of a 13-copy dog field at $2.4M with 5m flow at 0.37x pace and $6.2k on the 5m. No higher low, the CA isn't on its own site, and the thesis needs a pop that isn't happening. Flow blocker (V1, V6, V13).  
-  CA `HF2RBPrfNBk9TxggL2cYZFEKSgirzh5HKCngLENTpump`
-- 14:50Z Bobo (MIGRATED, $51,904 mcap, $53,220 5m vol): PASS at conviction 3, PASS — seven minutes old, up 27% on 5m at 8x the hourly pace, and one of 19 same-name copies with zero radar mentions. Chasing a spike in a vamp field, blocker "chasing spike" (V1, V6).  
-  CA `4hFU5ir5r9aimDdAZwFusXAEudNsyYG4Y2CHWJBppump`
-- 14:48Z 小面包 (FINAL_STRETCH, $26,674 mcap, $3,575 5m vol): REJECT, RugCheck danger: Large Amount of LP Unlocked 100.00%  
-  CA `BjCRkoV3Ksd6bukFUyuF9pdPWTAoeAizFXXZ8qDJpump`
 
 ## What its skips did next (last 48h)
 A skip "ran" if the coin reached the first target (1.5x) from the skip price before a 20% drop, "dumped" if the drop came first. Sampled every 10 min, followed 6h.
-- top 10 over 25%: blocked 63, ran 7, dumped 51, flat 3, open 2 (saving losses: keep it)
+- top 10 over 25%: blocked 63, ran 7, dumped 52, flat 3, open 1 (saving losses: keep it)
   - ran: GTAKID up to 1.74x  
     CA `7smnsneWsBMPZ4PDftadFBLf62SsH921BstHiM9wpump`
   - ran: NIKO up to 1.66x  
@@ -113,17 +113,31 @@ A skip "ran" if the coin reached the first target (1.5x) from the skip price bef
     CA `7fZK84wYShNUXKJnBkfXkeu5h2edduNkZV3p2B2LBCgC`
   - ran: AI up to 2.14x  
     CA `GUmgNeyZCLrjQW2TaLhqkTUas8isQc86YuzKQ6Fppump`
-- RugCheck danger: blocked 29, ran 6, dumped 21, flat 1, open 1 (saving losses: keep it)
+- RugCheck danger: blocked 28, ran 5, dumped 22, flat 1, open 0 (saving losses: keep it)
   - ran: CATCOIN up to 2.06x  
     CA `9JngoeaZHbV4f5EyRR3oDLNPH7VUGw1PYQC4s6j2pump`
   - ran: Leonida up to 1.51x  
     CA `9rbKkz2BDQBVgZmrHY6d7PTq2ge91gkpEyE4y9PPpump`
   - ran: PIPI up to 1.63x  
     CA `J51xgomTx21VHY62Q7uv2otWRUSq71WeaApLfsAnpump`
-- thin 5m volume: blocked 17, ran 1, dumped 8, flat 5, open 3 (saving losses: keep it)
+- thin 5m volume: blocked 17, ran 1, dumped 9, flat 5, open 2 (saving losses: keep it)
   - ran: Snapmatic up to 1.68x  
     CA `4S8pUKWKUAtQKfE5qokSjszWDp1RqQWnom8jNYSWpump`
-- dev share over 1%: blocked 14, ran 2, dumped 10, flat 0, open 2 (saving losses: keep it)
+- other: blocked 14, ran 3, dumped 10, flat 0, open 1 (saving losses: keep it)
+  - ran: CALICO up to 3.25x  
+    CA `89GFxMWQ1r8cwTwRSgeQ9RaGPtUdmDLQgCsQZcrWpump`
+  - ran: After up to 2.36x  
+    CA `Db2s6iVvenVhJkj96P4UbZWEAYX4nUhgXhSVbQrwpump`
+  - ran: Ant up to 2.32x  
+    CA `HKGtUPPKvXkMPyNX4QeMubENuiimFQ8W1Veg4y52pump`
+- flow below pace: blocked 14, ran 3, dumped 6, flat 1, open 4 (saving losses: keep it)
+  - ran: SI up to 1.53x  
+    CA `4s38cgZJN4J39S2BQwCkcsJJ9ZGeJSjw8vK9wVtupump`
+  - ran: AI up to 1.51x  
+    CA `8SacNb6sgiAcscRe4m915B6nL9XX55dk8FS7L532pump`
+  - ran: SWRDXSTFF up to 1.77x  
+    CA `Csoj9XHJfBAxsKswqKKBENnGeoRDHtACfyYi7HmJpump`
+- dev share over 1%: blocked 13, ran 2, dumped 9, flat 0, open 2 (saving losses: keep it)
   - ran: LOOSY up to 1.71x  
     CA `FtSWWxVmKNXz8ksJxzJJ7BdDWXbQb3vC94J99oyypump`
   - ran: MANDY up to 1.54x  
@@ -131,20 +145,6 @@ A skip "ran" if the coin reached the first target (1.5x) from the skip price bef
 - bundles over the line: blocked 13, ran 1, dumped 8, flat 3, open 1 (saving losses: keep it)
   - ran: PAPA up to 1.66x  
     CA `3hdXmQqZHmm7gWWweFKGdkjnxyWQZ2SWVNt1Jty5pump`
-- other: blocked 13, ran 3, dumped 10, flat 0, open 0 (saving losses: keep it)
-  - ran: CALICO up to 3.25x  
-    CA `89GFxMWQ1r8cwTwRSgeQ9RaGPtUdmDLQgCsQZcrWpump`
-  - ran: After up to 2.36x  
-    CA `Db2s6iVvenVhJkj96P4UbZWEAYX4nUhgXhSVbQrwpump`
-  - ran: Ant up to 2.32x  
-    CA `HKGtUPPKvXkMPyNX4QeMubENuiimFQ8W1Veg4y52pump`
-- flow below pace: blocked 13, ran 3, dumped 6, flat 1, open 3 (saving losses: keep it)
-  - ran: SI up to 1.53x  
-    CA `4s38cgZJN4J39S2BQwCkcsJJ9ZGeJSjw8vK9wVtupump`
-  - ran: AI up to 1.51x  
-    CA `8SacNb6sgiAcscRe4m915B6nL9XX55dk8FS7L532pump`
-  - ran: SWRDXSTFF up to 1.77x  
-    CA `Csoj9XHJfBAxsKswqKKBENnGeoRDHtACfyYi7HmJpump`
 - too new / sniping: blocked 11, ran 1, dumped 10, flat 0, open 0 (saving losses: keep it)
   - ran: AudaCity up to 1.96x  
     CA `3rtTUCpe1BBgCTNWQ9jK3xkAz1E7SPqMt4uYHx1Bpump`
@@ -192,16 +192,16 @@ No edge yet. All 322 settled coins lost money after costs on the simple plan, an
 - [2026-11-02 20:25] I expected Slingoor, a clean MIGRATED leader with $25k of 5m flow at pace and a 0.77 buy share, to retest its $408k high from $304k. It never went green (0.98x peak) and hit the -20% stop in 2 minutes, a -$2.86 probe. My own thesis admitted there was no printed higher low after a peak only 6 minutes old, so this confirms the money-shape rule: buy share and flow are not structure (V1, V6). Next time a MIGRATED pullback with no higher low above the hourly low is a PASS with blocker "no higher low", not a probe. This is one loss, so it adds no new ban beyond the rule I already have.
 
 ## Meta right now
-Trencher: The meta on scan_movers is fresh pump.fun launches running on real 5m volume: Catalyst is +794% at 0.4h on $9.5k 5m with 65% buys, Raja has $16k 5m at 57% buys, and Ashton and Jimmy De Santa are both up 110%+ on under $3k. Dog/GTA names (Cool Dog LOOSY, OFFICIALGTA OGTA, and Jimmy De Santa, which I read as a GTA V character name) hold roughly 70% buy flow but have thin 5m volume. Cats are fading: Sweet Potato Cat has $63 of 5m, Macca is -98% with $0 5m, and Stick Scene is -97% with zero buys on the scan, so the crawler's +914% on STICK doesn't match and I'm ignoring it. Trump, Anthropic and holiday names are absent from the movers, so news is not the trench meta right now. Setups to research, not buy: OGTA on a pullback if its 71% buy flow holds and 5m clears $10k (it's $9k now), and Catalyst only after a pullback that holds with buyers, not at +794%. Raja is a PASS for now: $403k of 1h volume on a $24k cap looks like a bot loop until holder and bundle checks say otherwise.
+Meta, as of this scan: math/intellectual names and one holiday name are where the real 5m flow is, while cats and AI are fading. RIEMANN is the loudest: two tokens with the same name, with $37k 5m on a $27k cap at 56% buys. The $9.5k copy is probably a vamp, so find the original with similar tokens before anything else. RUDY (Rudolph, $110k cap, 66% buys) is an early holiday play; Christmas came in November last time (V5), but its $7.6k 5m is below the $10k bar, so it's a watch until volume clears. Cats are dying (Catnomics -65% 1h, and GATO is a $3.4M old token, not a new meta), AI is dead (iAgent 0% buys), and Hogecoin's dog flow is down to $900 on 5m. Trump and Anthropic news are not in the movers, so the news is not the trench meta right now, and the crawler's OGTA and Catalyst calls aren't on this list, so I'm not using them. Setups to research, not buy: the RIEMANN original on a pullback that holds buyers, and RUDY if its 5m clears $10k with buys still above half.
 
 ## Moving most in its scans, last 30 min (1h volume)
-- Huss: $106,778 1h vol, $1,789 mcap, -93% 1h  
-  CA `J6vWYq5UDTNrv5ufPPes2iD8kRAtMRBqwiJdYFQZpump`
-- Toku: $101,796 1h vol, $5,333 mcap, +121% 1h  
+- Bobo: $165,553 1h vol, $3,707 mcap, -87% 1h  
+  CA `4hFU5ir5r9aimDdAZwFusXAEudNsyYG4Y2CHWJBppump`
+- LOOSY: $154,795 1h vol, $2,609,614 mcap, +3% 1h  
+  CA `HF2RBPrfNBk9TxggL2cYZFEKSgirzh5HKCngLENTpump`
+- RIEMANN: $151,632 1h vol, $23,612 mcap, -18% 1h  
+  CA `2BQUmatyiKWJD8nThWP62tkPVPZqD1pq5fh1uqK33Wrc`
+- Toku: $102,784 1h vol, $2,849 mcap, +18% 1h  
   CA `9WCtqYWNUmRqndzUKLpkTzUg4PCeiQt7TCUSRgGpump`
 - Catnomics: $98,571 1h vol, $34,671 mcap, -65% 1h  
   CA `BR3TZmbCPtyTpgLBtUvJocMbxPt2pw3CBSUJ5oq6pump`
-- RIEMANN: $79,637 1h vol, $9,504 mcap, -66% 1h  
-  CA `8g3cA4yMK4CaFMtMrk8Bip5V8HmYe8dagyUEYyajpump`
-- Raja: $76,087 1h vol, $16,821 mcap, -52% 1h  
-  CA `7ycjv7RnffKDdLifHuRUDRhBbe3oQk9qp7EvViGshcMr`
