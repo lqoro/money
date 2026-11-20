@@ -1,13 +1,13 @@
 # Trencher live report
 
-Updated 2026-11-20T06:15:15Z (paper trading, never real money)
+Updated 2026-11-20T06:30:42Z (paper trading, never real money)
 
 - Equity: $74.23 (-25.8% vs $100 start)
 - Closed trades: 22, 3 wins
 - Fees paid: $14.78 (axiom $2.81, network $9.18, pool $2.66), plus $4.15 lost to slippage
 - New trades: WATCH-ONLY (scans and decides, buys nothing)
-- Brain: subscription, claude-haiku-5-5 for routine calls, claude-opus-5-5 for the daily review; 312 routine calls and 234 plan-limit hits in 48h
-- Watch log: 95 coins being followed, 2230 filed, 0 would-buys (6h follow, sampled every 2 min)
+- Brain: subscription, claude-haiku-5-5 for routine calls, claude-opus-5-5 for the daily review; 314 routine calls and 232 plan-limit hits in 48h
+- Watch log: 96 coins being followed, 2233 filed, 0 would-buys (6h follow, sampled every 2 min)
 
 ## Scorecard (after fees)
 - 22 closed, 3 won (14%), net $-25.79
@@ -73,9 +73,17 @@ Updated 2026-11-20T06:15:15Z (paper trading, never real money)
   CA `H4gHnZ3NCU7Z9XQwGX6YYJNyieGEW8pqwGRUcdSxpump`
 
 ## Last scan
-- 06:14Z: 4 coins, 4 with pairs, 0 passed the market filters, 0 researched
+- 06:29Z: 7 coins, 7 with pairs, 1 passed the market filters, 1 researched
 
 ## Coins it looked at, and why it passed
+- 06:30Z OGTA (MIGRATED, $557,794 mcap, $4,310 5m vol): PASS at conviction 3, PASS: OGTA flow is at 0.82x pace on $4.3k 5m, under the $10k bar, and it's a bottom buy on a fading GTA theme. Blocker: flow below pace. (V1, V6)  
+  CA `7bCiddGLe5aM8HE2pigT9jsqkmC1HSPxyXN6GkHEpump`
+- 06:29Z LOOSY (MIGRATED, $1,171,182 mcap, $4,393 5m vol): PASS at conviction 3, PASS — LOOSY is clean on holders (top 10 1.6%, dev 0%, no bundle clusters), but 5m flow is 0.85x pace, the coin is over $1M with only ~1.4x to its peak, and its own site says "CA TBA" on a 7-hour-old domain. The dog meta isn't on the radar. (V1, V6, V13)  
+  CA `HF2RBPrfNBk9TxggL2cYZFEKSgirzh5HKCngLENTpump`
+- 06:25Z PALS (FINAL_STRETCH, $15,690 mcap, $9,759 5m vol): PASS at conviction 3, PASS — PALS is a 20-minute-old pump.fun "pals" copy with no story behind it: zero ticker mentions, not on the radar, website is 0.1 days old, AI-agent LARP with no GitHub. Blocker: dead story. (V1, V6, V13)  
+  CA `CAwfVJ5p5UCogGSVDaF4b6AJfE8mB1WocbUcqXN4pump`
+- 06:24Z MARK (FINAL_STRETCH, $20,225 mcap, $10,028 5m vol): REJECT, Top 10 hold 37.5% ex-pool (>25%) (V13)  
+  CA `GMGgW3FGXKgPHmjiv3Pdd66dC7vXvpX8U9t4UG4tpBk6`
 - 06:14Z ANTS (DIP, $6,578,140 mcap, $8,931 5m vol): PASS at conviction 3, PASS. ANTS is the biggest 'Anthropic' coin by volume, but it's a $6.6M dip with sellers ahead of buyers, a 1.2x first target and no live catalyst. Blocker: "dead story" plus "target too close." (V1, V6)  
   CA `ejrz94zR4A2ScS8LdvRaQih2xUxaE2ydreqUNKmpump`
 - 06:02Z ZEN (FINAL_STRETCH, $16,845 mcap, $2,755 5m vol): REJECT, Top 10 hold 26.9% ex-pool (>25%) (V13)  
@@ -88,18 +96,10 @@ Updated 2026-11-20T06:15:15Z (paper trading, never real money)
   CA `FVzqGqRmr4UH1Fif6dewmwbJ1p4YUZCu8dcw4Efopump`
 - 05:48Z iAgent (MIGRATED, $2,222,205 mcap, $2,814 5m vol): PASS at conviction 3, PASS. Blocker: flow below pace. iAgent is a $2.2M MIGRATED with $2.8k on the 5m (0.43x its hourly pace), a fresh 0.2-day-old site that says "CA TBA", and no GitHub behind the AI claims. Not a probe. (V1, V6, V13)  
   CA `44DZsPNJUtUyTkELAFYdwCpe82sEt12HZKrMgK1Spump`
-- 05:47Z ANTCAP (DIP, $111,916 mcap, $27,552 5m vol): PASS at conviction 3, PASS: Antcap is a 1.8h-old pumpswap coin still bleeding off its spike, with no catalyst and no printed higher low. Blockers: "too new", "no catalyst", "no higher low". (V1, V6)  
-  CA `8VvT87FRAZY9m2VsvpvVA5zhHSZGXd5eC2SrPDHbpump`
-- 05:44Z OGTA (MIGRATED, $491,181 mcap, $3,592 5m vol): PASS at conviction 2, PASS — GTA-6 name play on a 12-hour-old domain, 76% off its $2.07M high, no catalyst, and the theme isn't on the radar. Blocker: no catalyst, fading narrative, dip past 70%. Farm-shaped (V1, V3, V13).  
-  CA `7bCiddGLe5aM8HE2pigT9jsqkmC1HSPxyXN6GkHEpump`
-- 05:43Z LOOSY (MIGRATED, $1,138,117 mcap, $4,589 5m vol): PASS at conviction 3, PASS: flow below pace, first resistance only 1.44x away on a $1.1M cap, and no confirmed higher low. Dog meta is fading and the site doesn't show the CA. (V1, V6)  
-  CA `HF2RBPrfNBk9TxggL2cYZFEKSgirzh5HKCngLENTpump`
-- 05:40Z Neon (FINAL_STRETCH, $21,707 mcap, $6,519 5m vol): REJECT, Top 10 hold 25.9% ex-pool (>25%) (V13)  
-  CA `212XWaQQvEWWpbybdhtWMPmQWsMka9DgE2B6cqq9pump`
 
 ## What its skips did next (last 48h)
 A skip "ran" if the coin reached the first target (1.5x) from the skip price before a 20% drop, "dumped" if the drop came first. Sampled every 10 min, followed 6h.
-- top 10 over 25%: blocked 73, ran 12, dumped 54, flat 3, open 4 (saving losses: keep it)
+- top 10 over 25%: blocked 74, ran 12, dumped 55, flat 3, open 4 (saving losses: keep it)
   - ran: SHARK up to 1.68x  
     CA `3yxsNufZSWNrvMXw8gwCJFCuUkuTDsb1a55aR7evpump`
   - ran: clipping up to 2.89x  
@@ -120,6 +120,9 @@ A skip "ran" if the coin reached the first target (1.5x) from the skip price bef
     CA `9rbKkz2BDQBVgZmrHY6d7PTq2ge91gkpEyE4y9PPpump`
   - ran: PIPI up to 1.63x  
     CA `J51xgomTx21VHY62Q7uv2otWRUSq71WeaApLfsAnpump`
+- thin 5m volume: blocked 16, ran 1, dumped 6, flat 5, open 4 (saving losses: keep it)
+  - ran: Snapmatic up to 1.68x  
+    CA `4S8pUKWKUAtQKfE5qokSjszWDp1RqQWnom8jNYSWpump`
 - bundles over the line: blocked 16, ran 3, dumped 9, flat 2, open 2 (saving losses: keep it)
   - ran: BIG up to 1.93x  
     CA `34DXEU2ttEtBSb1TqGJm7izgvYTTkqKcCoiNWdPDpump`
@@ -127,9 +130,6 @@ A skip "ran" if the coin reached the first target (1.5x) from the skip price bef
     CA `HricrxBN3QXC3SN5VLtNhaEzoGrYea5ZtaTxQDfKSTNK`
   - ran: PAPA up to 1.66x  
     CA `3hdXmQqZHmm7gWWweFKGdkjnxyWQZ2SWVNt1Jty5pump`
-- thin 5m volume: blocked 15, ran 1, dumped 6, flat 5, open 3 (saving losses: keep it)
-  - ran: Snapmatic up to 1.68x  
-    CA `4S8pUKWKUAtQKfE5qokSjszWDp1RqQWnom8jNYSWpump`
 - other: blocked 14, ran 4, dumped 10, flat 0, open 0 (saving losses: keep it)
   - ran: Poopcoin up to 1.91x  
     CA `Geee1viZh4HpVJFaHB8ev5BZNdtUR4Dy2PDS5iBB7cLz`
@@ -142,12 +142,12 @@ A skip "ran" if the coin reached the first target (1.5x) from the skip price bef
     CA `FtSWWxVmKNXz8ksJxzJJ7BdDWXbQb3vC94J99oyypump`
   - ran: MANDY up to 1.54x  
     CA `GQngHP8P6s45MxWnU7JsocfV2HjPQdJZmCEAYKpBpump`
-- flow below pace: blocked 10, ran 2, dumped 5, flat 1, open 2 (saving losses: keep it)
+- flow below pace: blocked 11, ran 2, dumped 5, flat 1, open 3 (saving losses: keep it)
   - ran: SI up to 1.53x  
     CA `4s38cgZJN4J39S2BQwCkcsJJ9ZGeJSjw8vK9wVtupump`
   - ran: AI up to 1.51x  
     CA `8SacNb6sgiAcscRe4m915B6nL9XX55dk8FS7L532pump`
-- falling knife / no higher low: blocked 8, ran 2, dumped 2, flat 1, open 3 (mixed)
+- falling knife / no higher low: blocked 8, ran 2, dumped 3, flat 1, open 2 (mixed)
   - ran: pCAT up to 1.58x  
     CA `BLdC7hwRijHudKYDmtEkx1SHUdBWm8XbjBCSvwa6pump`
   - ran: MACCA up to 1.71x  
@@ -192,16 +192,16 @@ Nothing shows a positive edge after costs. Over 309 settled coins, every setup l
 - [2026-11-02 20:25] I expected Slingoor, a clean MIGRATED leader with $25k of 5m flow at pace and a 0.77 buy share, to retest its $408k high from $304k. It never went green (0.98x peak) and hit the -20% stop in 2 minutes, a -$2.86 probe. My own thesis admitted there was no printed higher low after a peak only 6 minutes old, so this confirms the money-shape rule: buy share and flow are not structure (V1, V6). Next time a MIGRATED pullback with no higher low above the hourly low is a PASS with blocker "no higher low", not a probe. This is one loss, so it adds no new ban beyond the rule I already have.
 
 ## Meta right now
-Not quiet. The movers are mostly pumpswap coins under two hours old, and the buying is going into invented word-brand names: ZOL "Zolana" ($38k cap, +97% 1h, 56% buys), apocrycoin ($69k, $33k 5m, 61% buys, +63% 1h), SWORD X STAFF ($141k, $36k 5m, 59% buys) and ANTCAP ($102k, +249% 1h, 75% buys). Only apocrycoin and SWORD clear the $10k 5-minute bar right now; ZOL at $9k is close but not there. Animal/dog names are split: LOOSY "Cool Dog" ($1.37M, 74% buys) is holding, while Santa Inu and Neon Inu are down 48-51% and NEKO is dead on 5m. AI and celebrity names are fading: ANTS "Anthropic" is 326h old at $5.6M with $971 of 5m volume, OGTA is +7% on $4k 5m, and no Trump or GTA name clears the scan. The Misu/Bear/Coge clone family and COGE itself aren't in the scan, so I'm not using those crawler figures; I'd research apocrycoin and SWORD first (dev, bundle and holder checks, probe-sized at most, initials at 2x, stop at -30%, exit written before entry), with ZOL on watch until it clears $10k on 5m.
+Not quiet. The meta in the scan is invented word-brand names launched in the last few hours and trading on pumpswap: apocrycoin (HVxXzEt87QszpC95kMKAfrHdboj4K1TVxYNMzwmbpump, $168k cap, $20.8k 5m, 68% buys, 1.6h old), SWORD X STAFF ($139k, $32.5k 5m, 59% buys, 2.6h) and Antcap ($112k, $27.6k 5m, 61% buys, +99% 1h, 1.8h). Those three are the only movers clearing the $10k 5m bar, and they're rising. Person and celebrity names are fading or dead on 5m: Harambe -90%, Turkey -91%, Gino, AudaCity and Isaac Francis have almost no 5m volume, and HOGE is at 19% buys on $1.08M. AI is fading, not a meta: Anthropic (ANTS) is 327h old at $6.6M with $8.9k 5m and flat, and Apple AI Agent is -6%. Trump and GTA names don't clear the scan at all. Fiona Coin ($11.6k, $5.2k 5m, +442% 1h, 30 min old) is the early spike and too young to touch, and ZOL ($56k, $1.3k 5m) is watch-only. The crawler's figures for ZOL, apocrycoin and SWORD don't match the scan (ZOL is $38k/$9k in the crawler vs $56k/$1.3k in the scan), so I'm using scan numbers only. The second "apocrycoin" (APCY, 37h old, $346 5m, 38% buys) is a copy, and I'm passing on it. Setups to research now, probe-sized at most: the original apocrycoin CA and SWORD X STAFF, with dev, bundle and holder checks, initials at 2x, stop at -30%, exit written before entry. Antcap only if its 1h spike keeps volume. Holder, dev and bundle checks haven't run on any of these yet, so conviction is low (about 4-5/10) and it's a probe at most.
 
 ## Moving most in its scans, last 30 min (1h volume)
-- apocry : $560,341 1h vol, $168,060 mcap, +56% 1h  
-  CA `HVxXzEt87QszpC95kMKAfrHdboj4K1TVxYNMzwmbpump`
-- SWRDXSTFF: $485,466 1h vol, $139,367 mcap, +26% 1h  
-  CA `Csoj9XHJfBAxsKswqKKBENnGeoRDHtACfyYi7HmJpump`
-- ANTCAP: $215,541 1h vol, $111,916 mcap, +99% 1h  
-  CA `8VvT87FRAZY9m2VsvpvVA5zhHSZGXd5eC2SrPDHbpump`
-- APCY: $131,912 1h vol, $57,199 mcap, +72% 1h  
-  CA `H4BpLUZm4r9269UXJziP9bUetMgJv5fWWPBsUP2bpump`
-- iAgent: $78,143 1h vol, $2,222,205 mcap, -6% 1h  
-  CA `44DZsPNJUtUyTkELAFYdwCpe82sEt12HZKrMgK1Spump`
+- HARAMBE: $72,936 1h vol, $3,263 mcap, -88% 1h  
+  CA `EU2kWyXgvG6TPkRvbSXqYbbMUT1nUzF8AFhYBWRipump`
+- OGTA: $62,763 1h vol, $557,794 mcap, +13% 1h  
+  CA `7bCiddGLe5aM8HE2pigT9jsqkmC1HSPxyXN6GkHEpump`
+- LOOSY: $62,373 1h vol, $1,153,055 mcap, -4% 1h  
+  CA `HF2RBPrfNBk9TxggL2cYZFEKSgirzh5HKCngLENTpump`
+- FIONA: $61,599 1h vol, $7,392 mcap, +245% 1h  
+  CA `5kpHB8xoruKHJRigE6FHTG2gZcrPSWWn8u4N7uS9pump`
+- MARK: $51,528 1h vol, $17,293 mcap, +210% 1h  
+  CA `GMGgW3FGXKgPHmjiv3Pdd66dC7vXvpX8U9t4UG4tpBk6`
