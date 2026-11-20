@@ -1,13 +1,13 @@
 # Trencher live report
 
-Updated 2026-11-20T15:52:52Z (paper trading, never real money)
+Updated 2026-11-20T16:07:55Z (paper trading, never real money)
 
 - Equity: $74.23 (-25.8% vs $100 start)
 - Closed trades: 22, 3 wins
 - Fees paid: $14.78 (axiom $2.81, network $9.18, pool $2.66), plus $4.15 lost to slippage
 - New trades: WATCH-ONLY (scans and decides, buys nothing)
-- Brain: subscription, claude-haiku-5-5 for routine calls, claude-opus-5-5 for the daily review; 332 routine calls and 177 plan-limit hits in 48h
-- Watch log: 74 coins being followed, 2370 filed, 0 would-buys (6h follow, sampled every 2 min)
+- Brain: subscription, claude-haiku-5-5 for routine calls, claude-opus-5-5 for the daily review; 331 routine calls and 176 plan-limit hits in 48h
+- Watch log: 77 coins being followed, 2370 filed, 0 would-buys (6h follow, sampled every 2 min)
 
 ## Scorecard (after fees)
 - 22 closed, 3 won (14%), net $-25.79
@@ -73,9 +73,15 @@ Updated 2026-11-20T15:52:52Z (paper trading, never real money)
   CA `H4gHnZ3NCU7Z9XQwGX6YYJNyieGEW8pqwGRUcdSxpump`
 
 ## Last scan
-- 15:52Z: 4 coins, 4 with pairs, 1 passed the market filters, 1 researched
+- 16:07Z: 4 coins, 4 with pairs, 0 passed the market filters, 0 researched
 
 ## Coins it looked at, and why it passed
+- 16:02Z Móm (FINAL_STRETCH, $15,019 mcap, $14,532 5m vol): REJECT, Top 10 hold 25.8% ex-pool (>25%) (V13)  
+  CA `BfNcetwXyxFJjsnmMboPpHqpZg19ez1ueQGPGE9upump`
+- 15:58Z GATO (MIGRATED, $3,614,389 mcap, $3,089 5m vol): REJECT, Dev holds 2.7% (>1%) (V13, V17)  
+  CA `HsprHxBRgiVaQdRf3TnKNuZZtaX9JUSPgMFdAkk6pump`
+- 15:57Z HOGE (DIP, $1,027,257 mcap, $3,041 5m vol): REJECT, Bundles: 9 linked wallet cluster(s) hold 26.7% of supply (>20%) (V17)  
+  CA `FVzqGqRmr4UH1Fif6dewmwbJ1p4YUZCu8dcw4Efopump`
 - 15:52Z RUDY (DIP, $106,142 mcap, $2,146 5m vol): REJECT, Dip with fading attention is a falling knife, not a dip (5m at 0.55x the hour's pace, under 0.6x)  
   CA `GRMRQSkBGg2Cc8Y9GePNBcJVk49YepWkXUDQBXAMpump`
 - 15:51Z BOBO (FINAL_STRETCH, $18,539 mcap, $17,646 5m vol): PASS at conviction 3, PASS: BOBO is up 350% off its hourly low on a 3.5x-pace spike, one of 19 copies of the same name, with no story behind it. Chasing a vamp field (V1, V3, V6).  
@@ -90,23 +96,17 @@ Updated 2026-11-20T15:52:52Z (paper trading, never real money)
   CA `HF2RBPrfNBk9TxggL2cYZFEKSgirzh5HKCngLENTpump`
 - 15:34Z 小面包 (MIGRATED, $42,725 mcap, $2,446 5m vol): PASS at conviction 3, PASS. Cat theme is at 0.08x its hourly pace and this coin's 5m flow is 0.57x its own pace. Blocker: flow below pace. (V1, V6)  
   CA `BjCRkoV3Ksd6bukFUyuF9pdPWTAoeAizFXXZ8qDJpump`
-- 15:22Z hyrax (DIP, $31,658 mcap, $1,986 5m vol): REJECT, 5m volume $1,986 is dead (<$2,000) (V1)  
-  CA `dg5hPd5Mnb9NHk64QmunzyHoPTFt6ewhpQT33Yxpump`
-- 15:21Z Catnomics (MIGRATED, $35,644 mcap, $4,789 5m vol): PASS at conviction 2, PASS: Catnomics is 79.5% off its $174k high, 5m flow at 0.55x pace, and the cat theme is fading. Blocker: "deep drawdown, flow below pace" (V1, V6).  
-  CA `BR3TZmbCPtyTpgLBtUvJocMbxPt2pw3CBSUJ5oq6pump`
-- 15:13Z GATO (MIGRATED, $3,443,301 mcap, $4,897 5m vol): REJECT, Dev holds 2.7% (>1%) (V13, V17)  
-  CA `HsprHxBRgiVaQdRf3TnKNuZZtaX9JUSPgMFdAkk6pump`
 
 ## What its skips did next (last 48h)
 A skip "ran" if the coin reached the first target (1.5x) from the skip price before a 20% drop, "dumped" if the drop came first. Sampled every 10 min, followed 6h.
-- top 10 over 25%: blocked 63, ran 6, dumped 53, flat 3, open 1 (saving losses: keep it)
+- top 10 over 25%: blocked 63, ran 6, dumped 52, flat 4, open 1 (saving losses: keep it)
   - ran: NIKO up to 1.66x  
     CA `A2MgdY1oU6pqsREQ8eCPhR6DSMrGYaCPXUWUMRXgpump`
   - ran: CDOG up to 1.99x  
     CA `5tAB1DMgrsJKgaKcfCfj1RzumuqovQP1LuxzQ7thpump`
   - ran: DAKITTY up to 1.51x  
     CA `3YyNSd5dAe5hbKu83syLCjZKWYD9d94EGYCfEWNkpump`
-- falling knife (code): blocked 51, ran 6, dumped 43, flat 1, open 1 (saving losses: keep it)
+- falling knife (code): blocked 51, ran 6, dumped 44, flat 1, open 0 (saving losses: keep it)
   - ran: Apocrycoin up to 1.54x  
     CA `79rE2ac8JhN3U12QLhymgDmCTiwBN1d4maTcK1fhpump`
   - ran: APCY up to 1.74x  
@@ -120,7 +120,7 @@ A skip "ran" if the coin reached the first target (1.5x) from the skip price bef
     CA `9rbKkz2BDQBVgZmrHY6d7PTq2ge91gkpEyE4y9PPpump`
   - ran: PIPI up to 1.63x  
     CA `J51xgomTx21VHY62Q7uv2otWRUSq71WeaApLfsAnpump`
-- thin 5m volume: blocked 16, ran 1, dumped 9, flat 4, open 2 (saving losses: keep it)
+- thin 5m volume: blocked 16, ran 1, dumped 9, flat 5, open 1 (saving losses: keep it)
   - ran: Snapmatic up to 1.68x  
     CA `4S8pUKWKUAtQKfE5qokSjszWDp1RqQWnom8jNYSWpump`
 - other: blocked 14, ran 3, dumped 10, flat 0, open 1 (saving losses: keep it)
@@ -148,7 +148,7 @@ A skip "ran" if the coin reached the first target (1.5x) from the skip price bef
 - too new / sniping: blocked 11, ran 1, dumped 10, flat 0, open 0 (saving losses: keep it)
   - ran: AudaCity up to 1.96x  
     CA `3rtTUCpe1BBgCTNWQ9jK3xkAz1E7SPqMt4uYHx1Bpump`
-- near the high / chasing: blocked 11, ran 3, dumped 7, flat 0, open 1 (saving losses: keep it)
+- near the high / chasing: blocked 11, ran 3, dumped 8, flat 0, open 0 (saving losses: keep it)
   - ran: BEAR up to 2.32x  
     CA `DCPm44cT9i39HjR13QHYgxkR7wEx9TDeniGuayB5pump`
   - ran: ZOL up to 1.55x  
@@ -195,13 +195,13 @@ No edge yet. All 322 settled coins lost money after costs on the simple plan, an
 Meta, as of this scan: math/intellectual names and one holiday name are where the real 5m flow is, while cats and AI are fading. RIEMANN is the loudest: two tokens with the same name, with $37k 5m on a $27k cap at 56% buys. The $9.5k copy is probably a vamp, so find the original with similar tokens before anything else. RUDY (Rudolph, $110k cap, 66% buys) is an early holiday play; Christmas came in November last time (V5), but its $7.6k 5m is below the $10k bar, so it's a watch until volume clears. Cats are dying (Catnomics -65% 1h, and GATO is a $3.4M old token, not a new meta), AI is dead (iAgent 0% buys), and Hogecoin's dog flow is down to $900 on 5m. Trump and Anthropic news are not in the movers, so the news is not the trench meta right now, and the crawler's OGTA and Catalyst calls aren't on this list, so I'm not using them. Setups to research, not buy: the RIEMANN original on a pullback that holds buyers, and RUDY if its 5m clears $10k with buys still above half.
 
 ## Moving most in its scans, last 30 min (1h volume)
-- TOP: $197,248 1h vol, $1,844 mcap, -95% 1h  
-  CA `hT9xKkj6dPMz97zcxEEE5T5fFdm6x31P6FodwT8pump`
-- RIEMANN: $166,164 1h vol, $7,708 mcap, -70% 1h  
+- RIEMANN: $170,341 1h vol, $5,513 mcap, -79% 1h  
   CA `2BQUmatyiKWJD8nThWP62tkPVPZqD1pq5fh1uqK33Wrc`
-- LOOSY: $154,795 1h vol, $2,609,614 mcap, +3% 1h  
-  CA `HF2RBPrfNBk9TxggL2cYZFEKSgirzh5HKCngLENTpump`
 - 狗: $137,416 1h vol, $58,913 mcap, +111% 1h  
   CA `CJsKL1cL5pCVxjQdkKhtiXn2AfCMBeVsnsN8R9PaXFx2`
-- Bobo: $110,694 1h vol, $4,709 mcap, -91% 1h  
-  CA `4hFU5ir5r9aimDdAZwFusXAEudNsyYG4Y2CHWJBppump`
+- TOP: $109,602 1h vol, $1,844 mcap, -99% 1h  
+  CA `hT9xKkj6dPMz97zcxEEE5T5fFdm6x31P6FodwT8pump`
+- STICKERS: $107,450 1h vol, $34,910 mcap, +1012% 1h  
+  CA `9EEFuHwRgY8HmnocQuq4ty9KFjuM46Q8tyLmZE3Wpump`
+- RIEMANN: $99,090 1h vol, $1,697 mcap, -94% 1h  
+  CA `8g3cA4yMK4CaFMtMrk8Bip5V8HmYe8dagyUEYyajpump`
