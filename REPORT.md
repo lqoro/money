@@ -1,13 +1,13 @@
 # Trencher live report
 
-Updated 2026-11-20T04:59:30Z (paper trading, never real money)
+Updated 2026-11-20T05:14:41Z (paper trading, never real money)
 
 - Equity: $74.23 (-25.8% vs $100 start)
 - Closed trades: 22, 3 wins
 - Fees paid: $14.78 (axiom $2.81, network $9.18, pool $2.66), plus $4.15 lost to slippage
 - New trades: WATCH-ONLY (scans and decides, buys nothing)
-- Brain: subscription, claude-haiku-5-5 for routine calls, claude-opus-5-5 for the daily review; 304 routine calls and 241 plan-limit hits in 48h
-- Watch log: 95 coins being followed, 2211 filed, 0 would-buys (6h follow, sampled every 2 min)
+- Brain: subscription, claude-haiku-5-5 for routine calls, claude-opus-5-5 for the daily review; 307 routine calls and 240 plan-limit hits in 48h
+- Watch log: 96 coins being followed, 2215 filed, 0 would-buys (6h follow, sampled every 2 min)
 
 ## Scorecard (after fees)
 - 22 closed, 3 won (14%), net $-25.79
@@ -73,9 +73,19 @@ Updated 2026-11-20T04:59:30Z (paper trading, never real money)
   CA `H4gHnZ3NCU7Z9XQwGX6YYJNyieGEW8pqwGRUcdSxpump`
 
 ## Last scan
-- 04:58Z: 5 coins, 5 with pairs, 1 passed the market filters, 1 researched
+- 05:13Z: 3 coins, 3 with pairs, 1 passed the market filters, 1 researched
 
 ## Coins it looked at, and why it passed
+- 05:13Z SWRDXSTFF (DIP, $141,215 mcap, $35,935 5m vol): PASS at conviction 3, PASS: no catalyst, theme at 0.7x pace, and a 0.9-day-old site that doesn't show this CA. Blocker: "no catalyst". (V1, V6, V13)  
+  CA `Csoj9XHJfBAxsKswqKKBENnGeoRDHtACfyYi7HmJpump`
+- 05:12Z CBUCKS (MIGRATED, $4,546,925 mcap, $1,812 5m vol): REJECT, 5m volume $1,812 is dead (<$2,000) (V1)  
+  CA `DtcicPCKTKeAh7TDEzTym3hXeoHAoMiBdYJhMYxZpump`
+- 05:11Z apocry  (MIGRATED, $69,750 mcap, $36,270 5m vol): PASS at conviction 3, PASS: apocrycoin is sitting at its own high 48 minutes after migration, with no higher low. Blocker "chasing", with "too new" and "no higher low" behind it. (V1, V6)  
+  CA `HVxXzEt87QszpC95kMKAfrHdboj4K1TVxYNMzwmbpump`
+- 05:02Z iAgent (DIP, $1,948,031 mcap, $7,871 5m vol): PASS at conviction 3, PASS: iAgent is a DIP on a copied theme with no proven catalyst. Theme pace is 0.99x, the site is 4 hours old and doesn't show the CA. Blocker: "theme pace under 1x, no verified catalyst." (V1, V13)  
+  CA `44DZsPNJUtUyTkELAFYdwCpe82sEt12HZKrMgK1Spump`
+- 05:02Z ANTCAP (MIGRATED, $95,751 mcap, $6,139 5m vol): PASS at conviction 3, PASS — ANTCAP fails the MIGRATED flow gate: 5m volume is 0.54x its hourly pace, the entry sits about 3x above the hourly low with no printed higher low close to it, and there's no catalyst. Blocker: flow below pace. (V1, V6)  
+  CA `8VvT87FRAZY9m2VsvpvVA5zhHSZGXd5eC2SrPDHbpump`
 - 04:59Z OGTA (MIGRATED, $451,301 mcap, $3,788 5m vol): PASS at conviction 3, PASS: OGTA is 78% off its $2.07M peak, past the 70% dip ceiling, on a GTA story that's cooling with $3.8k of 5m flow. Blocker: "dip too deep" plus "narrative fading." (V1, V6)  
   CA `7bCiddGLe5aM8HE2pigT9jsqkmC1HSPxyXN6GkHEpump`
 - 04:57Z LOOSY (MIGRATED, $1,257,609 mcap, $4,209 5m vol): PASS at conviction 2, PASS: shallow band with no breakout. LOOSY is 23.5% off its high, 5m flow is 0.69x pace and price is -4% on 5m, and the site says "CA TBA" on a 5-hour-old domain. Fourteen copies of the same ticker. (V1, V6, V13)  
@@ -86,16 +96,6 @@ Updated 2026-11-20T04:59:30Z (paper trading, never real money)
   CA `Csoj9XHJfBAxsKswqKKBENnGeoRDHtACfyYi7HmJpump`
 - 04:27Z HNYDRIP (DIP, $90,061 mcap, $9,870 5m vol): PASS at conviction 2, PASS — a falling knife with no story left: zero radar or buzz mentions, the drip family flat at 0.97x pace, no printed higher low, 5m under $10k. Blocker: no catalyst. (V1, V6, V13)  
   CA `FyCaKh6wXuot5NmqQMt5oBrSHh3wFk14w5M9dHQDpump`
-- 04:26Z apocry  (MIGRATED, $30,676 mcap, $52,298 5m vol): PASS at conviction 2, PASS: apocrycoin is 2.5 minutes old, down 32% on 5m off a $45k spike with no printed higher low, and nothing in the radar or on the web is carrying it. Blocker: "too new". (V1, V6)  
-  CA `HVxXzEt87QszpC95kMKAfrHdboj4K1TVxYNMzwmbpump`
-- 04:23Z Neon (FINAL_STRETCH, $20,362 mcap, $4,823 5m vol): PASS at conviction 2, PASS. Thin flow in a six-copy vamp field, on a theme that's cooling, no X and no socials. Blocker: thin flow (V1, V6).  
-  CA `212XWaQQvEWWpbybdhtWMPmQWsMka9DgE2B6cqq9pump`
-- 04:21Z Artificial (no setup, $13,880 mcap, $23,805 5m vol): REJECT, No setup fits: not Final Stretch, not a migrated runner, not a healthy dip  
-  CA `3h4bKuCXzu7HFcDDwahDwT39dZVsuAwgnu47ctLipump`
-- 04:17Z iAgent (DIP, $2,023,740 mcap, $6,265 5m vol): PASS at conviction 3, PASS — big cap, no room, and the Apple story is the team's claim, not a verified catalyst. Mid-range entry with no printed higher low, CA not on its own site. (V1, V3, V6)  
-  CA `44DZsPNJUtUyTkELAFYdwCpe82sEt12HZKrMgK1Spump`
-- 04:13Z enu (no setup, $22,816 mcap, $2,926 5m vol): REJECT, No setup fits: not Final Stretch, not a migrated runner, not a healthy dip  
-  CA `9msLfYfXBrSbrApCZAPuPMCNmPqNtEL1VPKh1AEYpump`
 
 ## What its skips did next (last 48h)
 A skip "ran" if the coin reached the first target (1.5x) from the skip price before a 20% drop, "dumped" if the drop came first. Sampled every 10 min, followed 6h.
@@ -127,6 +127,9 @@ A skip "ran" if the coin reached the first target (1.5x) from the skip price bef
     CA `HricrxBN3QXC3SN5VLtNhaEzoGrYea5ZtaTxQDfKSTNK`
   - ran: PAPA up to 1.66x  
     CA `3hdXmQqZHmm7gWWweFKGdkjnxyWQZ2SWVNt1Jty5pump`
+- thin 5m volume: blocked 15, ran 1, dumped 7, flat 5, open 2 (saving losses: keep it)
+  - ran: Snapmatic up to 1.68x  
+    CA `4S8pUKWKUAtQKfE5qokSjszWDp1RqQWnom8jNYSWpump`
 - other: blocked 15, ran 5, dumped 10, flat 0, open 0 (saving losses: keep it)
   - ran: Calypso up to 2.99x  
     CA `BM52Wwq9ikCqnmJUdUjMbUohyWsuDaHb1mKhw4yqpump`
@@ -134,27 +137,22 @@ A skip "ran" if the coin reached the first target (1.5x) from the skip price bef
     CA `Geee1viZh4HpVJFaHB8ev5BZNdtUR4Dy2PDS5iBB7cLz`
   - ran: CALICO up to 3.25x  
     CA `89GFxMWQ1r8cwTwRSgeQ9RaGPtUdmDLQgCsQZcrWpump`
-- thin 5m volume: blocked 14, ran 1, dumped 7, flat 5, open 1 (saving losses: keep it)
-  - ran: Snapmatic up to 1.68x  
-    CA `4S8pUKWKUAtQKfE5qokSjszWDp1RqQWnom8jNYSWpump`
 - dev share over 1%: blocked 13, ran 2, dumped 10, flat 1, open 0 (saving losses: keep it)
   - ran: LOOSY up to 1.71x  
     CA `FtSWWxVmKNXz8ksJxzJJ7BdDWXbQb3vC94J99oyypump`
   - ran: MANDY up to 1.54x  
     CA `GQngHP8P6s45MxWnU7JsocfV2HjPQdJZmCEAYKpBpump`
-- falling knife / no higher low: blocked 9, ran 3, dumped 3, flat 1, open 2 (mixed)
-  - ran: pCAT up to 1.58x  
-    CA `BLdC7hwRijHudKYDmtEkx1SHUdBWm8XbjBCSvwa6pump`
-  - ran: MACCA up to 1.71x  
-    CA `C5eGEXJZYvXEbKdyvPtasksjGNV4xvMowpKM92bVv47f`
-  - ran: SWRDXSTFF up to 2x  
-    CA `Csoj9XHJfBAxsKswqKKBENnGeoRDHtACfyYi7HmJpump`
-- flow below pace: blocked 9, ran 2, dumped 4, flat 1, open 2 (saving losses: keep it)
+- flow below pace: blocked 11, ran 2, dumped 4, flat 1, open 4 (saving losses: keep it)
   - ran: SI up to 1.53x  
     CA `4s38cgZJN4J39S2BQwCkcsJJ9ZGeJSjw8vK9wVtupump`
   - ran: AI up to 1.51x  
     CA `8SacNb6sgiAcscRe4m915B6nL9XX55dk8FS7L532pump`
-- too new / sniping: blocked 8, ran 1, dumped 7, flat 0, open 0 (saving losses: keep it)
+- falling knife / no higher low: blocked 8, ran 2, dumped 3, flat 1, open 2 (mixed)
+  - ran: pCAT up to 1.58x  
+    CA `BLdC7hwRijHudKYDmtEkx1SHUdBWm8XbjBCSvwa6pump`
+  - ran: MACCA up to 1.71x  
+    CA `C5eGEXJZYvXEbKdyvPtasksjGNV4xvMowpKM92bVv47f`
+- too new / sniping: blocked 8, ran 1, dumped 6, flat 0, open 1 (saving losses: keep it)
   - ran: ZOL up to 1.62x  
     CA `UQLWvkwiSsnViuVBy7oArMtzb5RAZyrdJ79amQFrzoL`
 
@@ -197,13 +195,13 @@ Nothing shows a positive edge after costs. Over 309 settled coins, every setup l
 The trenches are pump.fun launches riffing on names of the hour, and the volume is in the fresh ones. Three themes show up across several coins. (1) The Misu/Bear/Coge clone family (MISU, BEAR, M&B, Snowflake, Cogecoin) is down 85-93% in the hour with sell-side flow, so it's fading, and it reads as a vamp family. (2) Animal and name-style reskins are where new money is going: COGE "Coge Coin" ($54k cap, $41k 5m, 56% buys, 0.1h old) and ZOL "Zolana" (+496% 1h, $28k 5m, 62% buys, 0.1h old) are rising, with smaller fresh volume on enu and NeonCrime. (3) The GTA and Trump celebrity-name story is cooling: OGTA is down 52% in the hour, and the Trump dinner headlines say interest is fading. Setups to research now are ZOL and COGE (Coge Coin, the one with the volume), with a check that it's the original and not the Cogecoin clone. Both are minutes old, so probe-sized at most after dev, bundle and holder checks, with initials at 2x, a stop at -30%, and an exit plan written first. The crawler summary contradicts the scan on BEAR, Joe and Neko (BEAR shows $3.7k and -92% here, not +525% at $21k), so I'm trusting scan_movers and treating those crawler figures as stale. Neko, HNYDRIP and the other crawler-only names aren't in the scan, so they're not setups from this data.
 
 ## Moving most in its scans, last 30 min (1h volume)
-- iCat: $113,644 1h vol, $348,575 mcap, +859% 1h  
-  CA `FC8CkjiVJxKe5uUEx3SVLHLEcVARAMGCfnSoBaZgpump`
-- COGE: $96,647 1h vol, $3,352 mcap, -93% 1h  
-  CA `fDAeRE3bkFAK2KxK9btry4oDgU8NcxeWzW6n59mpump`
-- NeonCrime: $75,252 1h vol, $3,513 mcap, -87% 1h  
-  CA `Bg4Q8a2Nkxr8XcAs4dRkCqFXoEX6TCZxtaoYoDSypump`
+- SWRDXSTFF: $618,316 1h vol, $141,215 mcap, +28% 1h  
+  CA `Csoj9XHJfBAxsKswqKKBENnGeoRDHtACfyYi7HmJpump`
+- apocry : $441,849 1h vol, $69,313 mcap, +63% 1h  
+  CA `HVxXzEt87QszpC95kMKAfrHdboj4K1TVxYNMzwmbpump`
+- ANTCAP: $137,401 1h vol, $102,453 mcap, +249% 1h  
+  CA `8VvT87FRAZY9m2VsvpvVA5zhHSZGXd5eC2SrPDHbpump`
+- iAgent: $92,000 1h vol, $1,921,300 mcap, +13% 1h  
+  CA `44DZsPNJUtUyTkELAFYdwCpe82sEt12HZKrMgK1Spump`
 - LOOSY: $74,311 1h vol, $1,365,692 mcap, +4% 1h  
   CA `HF2RBPrfNBk9TxggL2cYZFEKSgirzh5HKCngLENTpump`
-- enu: $71,375 1h vol, $15,638 mcap, -24% 1h  
-  CA `9msLfYfXBrSbrApCZAPuPMCNmPqNtEL1VPKh1AEYpump`
