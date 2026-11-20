@@ -1,13 +1,13 @@
 # Trencher live report
 
-Updated 2026-11-20T10:18:30Z (paper trading, never real money)
+Updated 2026-11-20T10:33:41Z (paper trading, never real money)
 
 - Equity: $74.23 (-25.8% vs $100 start)
 - Closed trades: 22, 3 wins
 - Fees paid: $14.78 (axiom $2.81, network $9.18, pool $2.66), plus $4.15 lost to slippage
 - New trades: WATCH-ONLY (scans and decides, buys nothing)
-- Brain: subscription, claude-haiku-5-5 for routine calls, claude-opus-5-5 for the daily review; 324 routine calls and 210 plan-limit hits in 48h
-- Watch log: 76 coins being followed, 2298 filed, 0 would-buys (6h follow, sampled every 2 min)
+- Brain: subscription, claude-haiku-5-5 for routine calls, claude-opus-5-5 for the daily review; 324 routine calls and 208 plan-limit hits in 48h
+- Watch log: 74 coins being followed, 2303 filed, 0 would-buys (6h follow, sampled every 2 min)
 
 ## Scorecard (after fees)
 - 22 closed, 3 won (14%), net $-25.79
@@ -73,9 +73,15 @@ Updated 2026-11-20T10:18:30Z (paper trading, never real money)
   CA `H4gHnZ3NCU7Z9XQwGX6YYJNyieGEW8pqwGRUcdSxpump`
 
 ## Last scan
-- 10:18Z: 6 coins, 6 with pairs, 1 passed the market filters, 1 researched
+- 10:32Z: 6 coins, 6 with pairs, 1 passed the market filters, 1 researched
 
 ## Coins it looked at, and why it passed
+- 10:32Z PATRICK (DIP, $45,176 mcap, $3,246 5m vol): REJECT, Dip with fading attention is a falling knife, not a dip (5m at 0.41x the hour's pace, under 0.6x)  
+  CA `8mnJZnxaNLqVwkaWWGH7dKmoEzyYzGJx5pHaCp7spump`
+- 10:21Z iAgent (DIP, $1,181,021 mcap, $4,189 5m vol): REJECT, Dip with fading attention is a falling knife, not a dip (5m at 0.58x the hour's pace, under 0.6x)  
+  CA `44DZsPNJUtUyTkELAFYdwCpe82sEt12HZKrMgK1Spump`
+- 10:20Z RUDY (MIGRATED, $64,283 mcap, $32,189 5m vol): PASS at conviction 3, PASS: four minutes old, 8.9% off a $70.6k peak, 12x hourly pace, and a 28-copy Rudolph field. Blockers: "too new", "chasing", "split crowd". Wait, don't probe. (V1, V6, V13)  
+  CA `GjFvarRNRrq5tL6K2qdY7Xv2ZEbVrstqjW1BW4hMpump`
 - 10:18Z HOGE (DIP, $906,220 mcap, $11,612 5m vol): REJECT, Bundles: 9 linked wallet cluster(s) hold 26.7% of supply (>20%) (V17)  
   CA `FVzqGqRmr4UH1Fif6dewmwbJ1p4YUZCu8dcw4Efopump`
 - 10:17Z OGTA (MIGRATED, $253,503 mcap, $4,648 5m vol): PASS at conviction 3, PASS: OGTA is one of 14 copies of the same ticker, 5m flow is at 0.52x the hourly pace, and it's still falling 88% off its high with no higher low printed. Bottom buy on a dead field. (V1, V3, V6, V13)  
@@ -90,12 +96,6 @@ Updated 2026-11-20T10:18:30Z (paper trading, never real money)
   CA `8mnJZnxaNLqVwkaWWGH7dKmoEzyYzGJx5pHaCp7spump`
 - 09:37Z iAgent (MIGRATED, $1,049,272 mcap, $9,505 5m vol): PASS at conviction 3, PASS — DIP at 70.9% off a $3.6M peak with no fresh catalyst, a fading AI-agent meta, 5m flow under $10k on a buy share of 0.52, and a 0.4-day-old domain selling a Siri simulation. Blocker: "dead story" plus "no fresh catalyst". (V1, V3, V13)  
   CA `44DZsPNJUtUyTkELAFYdwCpe82sEt12HZKrMgK1Spump`
-- 09:31Z OGTA (MIGRATED, $478,157 mcap, $9,116 5m vol): PASS at conviction 2, PASS. OGTA is 77% off its $2.07M high with 5m flow at 0.8x pace, and 14 coins share the ticker. Blockers: "flow below pace", "bottom buy, theme pace under 1x", "no catalyst". (V1, V6, V13)  
-  CA `7bCiddGLe5aM8HE2pigT9jsqkmC1HSPxyXN6GkHEpump`
-- 09:30Z LOOSY (MIGRATED, $1,088,826 mcap, $4,717 5m vol): PASS at conviction 3, PASS: no higher low, 5m flow under $10k, and the first resistance is 1.17x away. The meta is 12 copies splitting the same jet-ski dog. (V1, V3, V6)  
-  CA `HF2RBPrfNBk9TxggL2cYZFEKSgirzh5HKCngLENTpump`
-- 09:23Z BiFi (MIGRATED, $38,577 mcap, $3,187 5m vol): REJECT, RugCheck danger: Large Amount of LP Unlocked 100.00%  
-  CA `Gwi5uj5ZnWZcvtDzbotTP1FjL5RrbtvaAJfvW7T7pump`
 
 ## What its skips did next (last 48h)
 A skip "ran" if the coin reached the first target (1.5x) from the skip price before a 20% drop, "dumped" if the drop came first. Sampled every 10 min, followed 6h.
@@ -106,7 +106,7 @@ A skip "ran" if the coin reached the first target (1.5x) from the skip price bef
     CA `3dF7QJEkhuVshbdgcVe227XvsbBc3cCoPTcHXw7Fpump`
   - ran: Pussy up to 1.53x  
     CA `JDBwLV5iu9sd9PNBEPZvVzLw7Kvd9HkD4v29985dpump`
-- falling knife (code): blocked 49, ran 7, dumped 41, flat 1, open 0 (saving losses: keep it)
+- falling knife (code): blocked 51, ran 7, dumped 42, flat 1, open 1 (saving losses: keep it)
   - ran: DACT up to 2.63x  
     CA `GZUGmAtuSx9755C3W1CLDVtA7MZQ8QWF1XjhjEbjpump`
   - ran: Apocrycoin up to 1.54x  
@@ -149,7 +149,7 @@ A skip "ran" if the coin reached the first target (1.5x) from the skip price bef
     CA `8SacNb6sgiAcscRe4m915B6nL9XX55dk8FS7L532pump`
   - ran: SWRDXSTFF up to 1.77x  
     CA `Csoj9XHJfBAxsKswqKKBENnGeoRDHtACfyYi7HmJpump`
-- too new / sniping: blocked 8, ran 1, dumped 7, flat 0, open 0 (saving losses: keep it)
+- too new / sniping: blocked 9, ran 1, dumped 8, flat 0, open 0 (saving losses: keep it)
   - ran: AudaCity up to 1.96x  
     CA `3rtTUCpe1BBgCTNWQ9jK3xkAz1E7SPqMt4uYHx1Bpump`
 - falling knife / no higher low: blocked 7, ran 2, dumped 3, flat 1, open 1 (mixed)
@@ -194,16 +194,16 @@ Nothing shows a positive edge after costs. Over 309 settled coins, every setup l
 - [2026-11-02 20:25] I expected Slingoor, a clean MIGRATED leader with $25k of 5m flow at pace and a 0.77 buy share, to retest its $408k high from $304k. It never went green (0.98x peak) and hit the -20% stop in 2 minutes, a -$2.86 probe. My own thesis admitted there was no printed higher low after a peak only 6 minutes old, so this confirms the money-shape rule: buy share and flow are not structure (V1, V6). Next time a MIGRATED pullback with no higher low above the hourly low is a PASS with blocker "no higher low", not a probe. This is one loss, so it adds no new ban beyond the rule I already have.
 
 ## Meta right now
-Not quiet, but thin. The movers' common thread is sub-day pump.fun character memes (Giving Inu, Gino the Baby Marmoset, MAIN, Retard Patrick, Bibi) with 1h gains of 250-630% on $12-27k caps and 60-70% buy ratios on 5m, a launch-style meta that lasts hours, not weeks. Fading: old dog and AI-agent names (Hogecoin at 0% buys with $114 on 5m, Cat Mario down 60% in an hour, iAgent flat on $5.5k of 5m at $1.9M), and the Trump and news names don't appear in the movers at all, so the dinner headlines aren't this meta. Most of the new names fail the $10k 5m bar (PATRICK $1k, MAIN $566, Huss $97, PokéMum $77), and the crawler's STF and PATRICK figures ($22k 5m, $42.7k and $61.8k caps) don't match the scan, so I'm discarding them. Only Giving Inu (GI, $21k cap, 0.3h old, $10.1k 5m, 69% buys) clears the bar; at +629% in an hour it's a chase, so I'd look only for a pullback that holds with buys above 60%, probe-size at conviction 4, stop -30%, out if 5m stays under $5k, and holder and bundle checks have to pass before any entry. Gino and Bibi are watch-only until 5m clears $10k, and GATO's GTA ticker is a $2.6M coin with $2.6k of 5m, not a meta to chase.
+The movers are animal and pet names on pump.fun: Cat Mario, A Mario Cat, Cool Dog, whatever cat, Gino the Baby Marmoset, Giving Inu and Bibi. Most are under two hours old on $6k-$130k caps, a launch-style meta that lasts hours (V1, V5). Holiday is the second theme and it's rising: Rudolph (RUDY) is a six-minute-old $57k reindeer with $38k of 5m volume at 63% buys, and with Christmas five weeks out, seasonal tokens tend to show early (V5). The web doesn't confirm that, so it rests on one scan line. Fading: Cat Mario -62%, OFFICIALGTA -51% on $5.3k of 5m, Predict -77%, buckme -37%, and the Trump and dinner headlines don't appear in the movers at all, so I'm ignoring them. The crawler's Giving Inu setup (+629%, $10.1k 5m, 0.3h old) doesn't match the scan (+39%, $1.3k 5m, 1.6h old), so I'm discarding it. RUDY is the only coin that clears the MIGRATED bar (age ≤12h, cap ≥$30k, 5m ≥$10k), so it's the one to research now, not chase. At conviction 5 I'd buy a probe only after holder and bundle checks pass, on a pullback that holds with buys above 60%, with initials at 2x, a -30% stop, and out if 5m falls under $10k. AMC, Jimmy, Gino and GI are watch-only until 5m clears $10k (V1, V6).
 
 ## Moving most in its scans, last 30 min (1h volume)
 - AMC : $211,354 1h vol, $131,943 mcap, +209% 1h  
   CA `J7bLsZcpkfky92ir8k36Munz91nHKtcDNhDy8d3Qpump`
 - OGTA: $108,831 1h vol, $256,067 mcap, -51% 1h  
   CA `7bCiddGLe5aM8HE2pigT9jsqkmC1HSPxyXN6GkHEpump`
+- PATRICK: $95,326 1h vol, $45,153 mcap, +84% 1h  
+  CA `8mnJZnxaNLqVwkaWWGH7dKmoEzyYzGJx5pHaCp7spump`
+- iAgent: $88,430 1h vol, $1,108,495 mcap, +11% 1h  
+  CA `44DZsPNJUtUyTkELAFYdwCpe82sEt12HZKrMgK1Spump`
 - LOOSY: $56,441 1h vol, $1,091,289 mcap, -3% 1h  
   CA `HF2RBPrfNBk9TxggL2cYZFEKSgirzh5HKCngLENTpump`
-- Azuke: $49,060 1h vol, $3,302 mcap, -19% 1h  
-  CA `CbimMoJm98zAzma6tX7trUaVmbyPg2E3ZpZNn9XEpump`
-- BiFi: $47,103 1h vol, $35,703 mcap, +44% 1h  
-  CA `Gwi5uj5ZnWZcvtDzbotTP1FjL5RrbtvaAJfvW7T7pump`
