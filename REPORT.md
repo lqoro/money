@@ -1,13 +1,13 @@
 # Trencher live report
 
-Updated 2026-11-20T22:11:20Z (paper trading, never real money)
+Updated 2026-11-20T22:26:30Z (paper trading, never real money)
 
 - Equity: $74.23 (-25.8% vs $100 start)
 - Closed trades: 22, 3 wins
 - Fees paid: $14.78 (axiom $2.81, network $9.18, pool $2.66), plus $4.15 lost to slippage
 - New trades: WATCH-ONLY (scans and decides, buys nothing)
-- Brain: subscription, claude-haiku-5-5 for routine calls, claude-opus-5-5 for the daily review; 347 routine calls and 140 plan-limit hits in 48h
-- Watch log: 83 coins being followed, 2447 filed, 0 would-buys (6h follow, sampled every 2 min)
+- Brain: subscription, claude-haiku-5-5 for routine calls, claude-opus-5-5 for the daily review; 348 routine calls and 139 plan-limit hits in 48h
+- Watch log: 84 coins being followed, 2449 filed, 0 would-buys (6h follow, sampled every 2 min)
 
 ## Scorecard (after fees)
 - 22 closed, 3 won (14%), net $-25.79
@@ -73,9 +73,15 @@ Updated 2026-11-20T22:11:20Z (paper trading, never real money)
   CA `H4gHnZ3NCU7Z9XQwGX6YYJNyieGEW8pqwGRUcdSxpump`
 
 ## Last scan
-- 22:10Z: 4 coins, 4 with pairs, 0 passed the market filters, 0 researched
+- 22:25Z: 5 coins, 5 with pairs, 1 passed the market filters, 1 researched
 
 ## Coins it looked at, and why it passed
+- 22:25Z Trader (MIGRATED, $205,285 mcap, $23,249 5m vol): PASS at conviction 3, PASS — flow below pace (0.65x the hourly average) in a 12-copy "trader" vamp field, and this coin isn't the field leader. No catalyst on the radar. (V1, V3, V6)  
+  CA `BYKQkHKMWHidNBLQXgt7NX4PLUtJZRYGLWQYkJzPGenX`
+- 22:18Z GATO (MIGRATED, $3,187,982 mcap, $2,091 5m vol): REJECT, Dev holds 2.7% (>1%) (V13, V17)  
+  CA `HsprHxBRgiVaQdRf3TnKNuZZtaX9JUSPgMFdAkk6pump`
+- 22:14Z Bust (FINAL_STRETCH, $21,023 mcap, $3,954 5m vol): PASS at conviction 3, PASS — 5m flow is $3.9k at 0.71x pace, the bust theme is at 0.06x, the chart is saw-toothed, and the site is a perps product that doesn't show this CA. Blocker: flow below pace and a dead theme. (V1, V6, V13)  
+  CA `EoV9JQYi57tqjyQbWLdXVarYpEu82FsP8SDnkbFmpump`
 - 22:02Z Singularity (DIP, $186,405 mcap, $40,566 5m vol): PASS at conviction 3, PASS: no printed higher low, no catalyst, and a 23-copy name field with a 2-hour-old domain. Blocker: "no higher low" (V1, V6).  
   CA `7R4MP6VX7n3RMNhL9zsk5Zu5ibZvwq8npUYnRq7epump`
 - 21:54Z DCTY (MIGRATED, $89,410 mcap, $3,215 5m vol): PASS at conviction 2, PASS: DacityCoin has $3.2k 5m volume at 0.6x its hourly pace, the theme is at 0.38x pace, and nobody is talking about it. Dead story, thin flow, and the peak data is broken (V1, V6, V13).  
@@ -90,23 +96,17 @@ Updated 2026-11-20T22:11:20Z (paper trading, never real money)
   CA `FCm2mN7KispK7ELaHXS1qfReNGPutbKJm4PvCKPYpump`
 - 21:32Z GATO (MIGRATED, $2,857,436 mcap, $2,128 5m vol): REJECT, Dev holds 2.7% (>1%) (V13, V17)  
   CA `HsprHxBRgiVaQdRf3TnKNuZZtaX9JUSPgMFdAkk6pump`
-- 21:17Z Singularity (MIGRATED, $140,897 mcap, $19,962 5m vol): PASS at conviction 2, PASS — 5m flow at 0.42x the hourly pace, no printed higher low, and a bigger Singularity copy is taking the crowd (V1, V6, V3).  
-  CA `7R4MP6VX7n3RMNhL9zsk5Zu5ibZvwq8npUYnRq7epump`
-- 21:10Z Singularity (MIGRATED, $538,483 mcap, $100,453 5m vol): REJECT, Top 10 hold 54.5% ex-pool (>25%) (V13)  
-  CA `GUtHGr6xcn9e78ew6qY7Jg7foyuAhf67mNBNntn5pump`
-- 21:08Z DCTY (MIGRATED, $84,988 mcap, $6,153 5m vol): PASS at conviction 2, PASS — 5m flow at 0.09x its hourly pace, no story anywhere, a -46% knife with a 4.8% bundle cluster. Nothing to catch. (V1, V6, V13)  
-  CA `7DQQejSWt4bgNmGFFD6QPPUA1YLoMxWhz4roN5CQjE9k`
 
 ## What its skips did next (last 48h)
 A skip "ran" if the coin reached the first target (1.5x) from the skip price before a 20% drop, "dumped" if the drop came first. Sampled every 10 min, followed 6h.
-- top 10 over 25%: blocked 58, ran 3, dumped 51, flat 4, open 0 (saving losses: keep it)
+- top 10 over 25%: blocked 57, ran 3, dumped 50, flat 4, open 0 (saving losses: keep it)
   - ran: AudaCity up to 1.66x  
     CA `ERDrmaqsoeLdsCMMpBKkRM4LV1mzTA2KHrVxKLpqpump`
   - ran: Audacity up to 2.7x  
     CA `5oYuJG44HdkSSj2pabAKzKk7p2p3b1LbqUC5n82ppump`
   - ran: J4F up to 2.22x  
     CA `pwtKLrLyRZy78eM2mR74xxe7mzREH1MxGcbvZWApump`
-- falling knife (code): blocked 35, ran 3, dumped 30, flat 1, open 1 (saving losses: keep it)
+- falling knife (code): blocked 35, ran 3, dumped 31, flat 1, open 0 (saving losses: keep it)
   - ran: DCTC up to 2.59x  
     CA `47f8bEDWs6VDpnnmxegyL4A3GbBVVcssrMQeBjPvpump`
   - ran: BUNC up to 1.91x  
@@ -120,17 +120,17 @@ A skip "ran" if the coin reached the first target (1.5x) from the skip price bef
     CA `9rbKkz2BDQBVgZmrHY6d7PTq2ge91gkpEyE4y9PPpump`
   - ran: PIPI up to 1.63x  
     CA `J51xgomTx21VHY62Q7uv2otWRUSq71WeaApLfsAnpump`
-- flow below pace: blocked 18, ran 4, dumped 10, flat 1, open 3 (saving losses: keep it)
+- flow below pace: blocked 19, ran 3, dumped 12, flat 1, open 3 (saving losses: keep it)
   - ran: SI up to 1.53x  
     CA `4s38cgZJN4J39S2BQwCkcsJJ9ZGeJSjw8vK9wVtupump`
   - ran: AI up to 1.51x  
     CA `8SacNb6sgiAcscRe4m915B6nL9XX55dk8FS7L532pump`
   - ran: SWRDXSTFF up to 1.77x  
     CA `Csoj9XHJfBAxsKswqKKBENnGeoRDHtACfyYi7HmJpump`
-- thin 5m volume: blocked 16, ran 0, dumped 12, flat 4, open 0 (saving losses: keep it)
 - too new / sniping: blocked 16, ran 1, dumped 15, flat 0, open 0 (saving losses: keep it)
   - ran: AudaCity up to 1.96x  
     CA `3rtTUCpe1BBgCTNWQ9jK3xkAz1E7SPqMt4uYHx1Bpump`
+- thin 5m volume: blocked 15, ran 0, dumped 12, flat 3, open 0 (saving losses: keep it)
 - near the high / chasing: blocked 15, ran 3, dumped 12, flat 0, open 0 (saving losses: keep it)
   - ran: BEAR up to 2.32x  
     CA `DCPm44cT9i39HjR13QHYgxkR7wEx9TDeniGuayB5pump`
@@ -191,13 +191,13 @@ No edge yet. All 322 settled coins lost money after costs on the simple plan, an
 Meta from the scan, not the news: brand and domain names are the only theme moving real money. Singularity.com (GUtH..., 6 minutes old, $557k cap, $108k 5m, 77% buys) is the biggest flow, with 7R4M... at $141k, $20k 5m and 60% buys. The older 7R4M is the likely original, so the newer GUtH is the one to check for vamp status. Second wave: PARI ($17.7k cap, $20k 5m, 68% buys, 12 minutes old) and punch (+422% in the hour, 41% buys) are young and live, while DCTY has faded to $85k on 41% buys. Fading: the GTA/Trump names (OFFICIALGTA at -97% and God Tier Ass at -98%, both on almost no 5m volume) and AVENGERS DOOMSDAY, flat at $30k on $1.2k 5m. The crawler's cat and DYSON numbers aren't in the scan, so I'm not counting them. Setups to research, not buy: 7R4M on a pullback that holds $10k+ 5m with buys above 50% (the original-first check comes before that), and PARI if it holds $10k+ 5m after its first run. Holder, dev and bundle checks are pending on all of these, so this is a read, not an entry.
 
 ## Moving most in its scans, last 30 min (1h volume)
-- BTC: $634,494 1h vol, $1,621,217 mcap, +4690% 1h  
-  CA `CUfphqswgDK3VP3FX7CiShVCTdGQneFusYRFViABpump`
 - Singularity: $468,630 1h vol, $177,432 mcap, +28% 1h  
   CA `7R4MP6VX7n3RMNhL9zsk5Zu5ibZvwq8npUYnRq7epump`
-- Singularity: $332,635 1h vol, $1,316 mcap, -100% 1h  
+- Trader: $423,687 1h vol, $203,095 mcap, +34% 1h  
+  CA `BYKQkHKMWHidNBLQXgt7NX4PLUtJZRYGLWQYkJzPGenX`
+- ZHDUN: $110,168 1h vol, $11,938 mcap, +177% 1h  
+  CA `FCm2mN7KispK7ELaHXS1qfReNGPutbKJm4PvCKPYpump`
+- Singularity: $102,136 1h vol, $1,310 mcap, -100% 1h  
   CA `GUtHGr6xcn9e78ew6qY7Jg7foyuAhf67mNBNntn5pump`
-- DCTY: $64,717 1h vol, $89,535 mcap, +8% 1h  
-  CA `7DQQejSWt4bgNmGFFD6QPPUA1YLoMxWhz4roN5CQjE9k`
-- Bust: $59,746 1h vol, $13,713 mcap, +327% 1h  
+- Bust: $67,083 1h vol, $21,416 mcap, +568% 1h  
   CA `EoV9JQYi57tqjyQbWLdXVarYpEu82FsP8SDnkbFmpump`
