@@ -1,13 +1,13 @@
 # Trencher live report
 
-Updated 2026-11-20T16:23:19Z (paper trading, never real money)
+Updated 2026-11-20T16:38:22Z (paper trading, never real money)
 
 - Equity: $74.23 (-25.8% vs $100 start)
 - Closed trades: 22, 3 wins
 - Fees paid: $14.78 (axiom $2.81, network $9.18, pool $2.66), plus $4.15 lost to slippage
 - New trades: WATCH-ONLY (scans and decides, buys nothing)
-- Brain: subscription, claude-haiku-5-5 for routine calls, claude-opus-5-5 for the daily review; 331 routine calls and 174 plan-limit hits in 48h
-- Watch log: 73 coins being followed, 2376 filed, 0 would-buys (6h follow, sampled every 2 min)
+- Brain: subscription, claude-haiku-5-5 for routine calls, claude-opus-5-5 for the daily review; 331 routine calls and 173 plan-limit hits in 48h
+- Watch log: 73 coins being followed, 2377 filed, 0 would-buys (6h follow, sampled every 2 min)
 
 ## Scorecard (after fees)
 - 22 closed, 3 won (14%), net $-25.79
@@ -73,9 +73,13 @@ Updated 2026-11-20T16:23:19Z (paper trading, never real money)
   CA `H4gHnZ3NCU7Z9XQwGX6YYJNyieGEW8pqwGRUcdSxpump`
 
 ## Last scan
-- 16:22Z: 4 coins, 4 with pairs, 1 passed the market filters, 1 researched
+- 16:37Z: 5 coins, 5 with pairs, 0 passed the market filters, 0 researched
 
 ## Coins it looked at, and why it passed
+- 16:32Z MIA (MIGRATED, $369,223 mcap, $264,596 5m vol): REJECT, Top 10 hold 33.3% ex-pool (>25%) (V13)  
+  CA `4ZbmGndQLrguTbdk5oz7wxxxVCnK2ZM9ShoMvML8pump`
+- 16:27Z H4CK (MIGRATED, $31,972 mcap, $5,604 5m vol): REJECT, Hack story ("hack" in the name or ticker): these tend to go down, owner rule  
+  CA `J5zXjgnbwxnWSuT13aE5sRmGnbyoNafWHR52SDB9pump`
 - 16:23Z OGTA (MIGRATED, $180,323 mcap, $3,766 5m vol): PASS at conviction 2, PASS — 91% off the $2.07M high, 5m flow at 0.66x pace and $3.8k on the 5m, on a GTA-ticker field of 12 copies whose theme is fading. Blocker: deep dip and flow below pace (V1, V6, V13).  
   CA `7bCiddGLe5aM8HE2pigT9jsqkmC1HSPxyXN6GkHEpump`
 - 16:21Z LOOSY (MIGRATED, $2,904,940 mcap, $6,175 5m vol): PASS at conviction 3, PASS — 4% off a $3.03M high on a coin that just ran about 70% off its low, with 5m volume under $10k and a site that says "CA TBA". Blocker: chasing. (V1, V6, V13)  
@@ -92,10 +96,6 @@ Updated 2026-11-20T16:23:19Z (paper trading, never real money)
   CA `3admXvh8WZRuoo9Zk1qum72ByZWumABQi1zh5Z9gpump`
 - 15:42Z jingyu (DIP, $55,476 mcap, $3,562 5m vol): REJECT, Bundles: 1 linked wallet cluster(s) hold 100.0% of supply (>20%) (V17)  
   CA `DUZrwdjEthcJ99ZiRXr31UuqTohoTg7VjTEyfGdBpump`
-- 15:42Z 狗 (MIGRATED, $66,954 mcap, $35,054 5m vol): REJECT, Top 10 hold 26.1% ex-pool (>25%) (V13)  
-  CA `CJsKL1cL5pCVxjQdkKhtiXn2AfCMBeVsnsN8R9PaXFx2`
-- 15:37Z OGTA (MIGRATED, $159,323 mcap, $5,570 5m vol): PASS at conviction 2, PASS — 92% off a $2.07M high, $5.6k on the 5m, 12 copies of the ticker. The GTA name doesn't make it a dip. (V1, V6)  
-  CA `7bCiddGLe5aM8HE2pigT9jsqkmC1HSPxyXN6GkHEpump`
 
 ## What its skips did next (last 48h)
 A skip "ran" if the coin reached the first target (1.5x) from the skip price before a 20% drop, "dumped" if the drop came first. Sampled every 10 min, followed 6h.
@@ -120,24 +120,26 @@ A skip "ran" if the coin reached the first target (1.5x) from the skip price bef
     CA `9rbKkz2BDQBVgZmrHY6d7PTq2ge91gkpEyE4y9PPpump`
   - ran: PIPI up to 1.63x  
     CA `J51xgomTx21VHY62Q7uv2otWRUSq71WeaApLfsAnpump`
-- thin 5m volume: blocked 16, ran 1, dumped 9, flat 5, open 1 (saving losses: keep it)
+- thin 5m volume: blocked 16, ran 1, dumped 10, flat 5, open 0 (saving losses: keep it)
   - ran: Snapmatic up to 1.68x  
     CA `4S8pUKWKUAtQKfE5qokSjszWDp1RqQWnom8jNYSWpump`
-- other: blocked 14, ran 3, dumped 10, flat 0, open 1 (saving losses: keep it)
+- dev share over 1%: blocked 13, ran 2, dumped 9, flat 0, open 2 (saving losses: keep it)
+  - ran: LOOSY up to 1.71x  
+    CA `FtSWWxVmKNXz8ksJxzJJ7BdDWXbQb3vC94J99oyypump`
+  - ran: MANDY up to 1.54x  
+    CA `GQngHP8P6s45MxWnU7JsocfV2HjPQdJZmCEAYKpBpump`
+- bundles over the line: blocked 13, ran 2, dumped 8, flat 2, open 1 (saving losses: keep it)
+  - ran: PAPA up to 1.66x  
+    CA `3hdXmQqZHmm7gWWweFKGdkjnxyWQZ2SWVNt1Jty5pump`
+  - ran: jingyu up to 1.91x  
+    CA `DUZrwdjEthcJ99ZiRXr31UuqTohoTg7VjTEyfGdBpump`
+- other: blocked 13, ran 3, dumped 9, flat 0, open 1 (saving losses: keep it)
   - ran: CALICO up to 3.25x  
     CA `89GFxMWQ1r8cwTwRSgeQ9RaGPtUdmDLQgCsQZcrWpump`
   - ran: After up to 2.36x  
     CA `Db2s6iVvenVhJkj96P4UbZWEAYX4nUhgXhSVbQrwpump`
   - ran: Ant up to 2.32x  
     CA `HKGtUPPKvXkMPyNX4QeMubENuiimFQ8W1Veg4y52pump`
-- dev share over 1%: blocked 13, ran 2, dumped 9, flat 0, open 2 (saving losses: keep it)
-  - ran: LOOSY up to 1.71x  
-    CA `FtSWWxVmKNXz8ksJxzJJ7BdDWXbQb3vC94J99oyypump`
-  - ran: MANDY up to 1.54x  
-    CA `GQngHP8P6s45MxWnU7JsocfV2HjPQdJZmCEAYKpBpump`
-- bundles over the line: blocked 13, ran 1, dumped 8, flat 2, open 2 (saving losses: keep it)
-  - ran: PAPA up to 1.66x  
-    CA `3hdXmQqZHmm7gWWweFKGdkjnxyWQZ2SWVNt1Jty5pump`
 - flow below pace: blocked 13, ran 3, dumped 8, flat 1, open 1 (saving losses: keep it)
   - ran: SI up to 1.53x  
     CA `4s38cgZJN4J39S2BQwCkcsJJ9ZGeJSjw8vK9wVtupump`
@@ -192,16 +194,16 @@ No edge yet. All 322 settled coins lost money after costs on the simple plan, an
 - [2026-11-02 20:25] I expected Slingoor, a clean MIGRATED leader with $25k of 5m flow at pace and a 0.77 buy share, to retest its $408k high from $304k. It never went green (0.98x peak) and hit the -20% stop in 2 minutes, a -$2.86 probe. My own thesis admitted there was no printed higher low after a peak only 6 minutes old, so this confirms the money-shape rule: buy share and flow are not structure (V1, V6). Next time a MIGRATED pullback with no higher low above the hourly low is a PASS with blocker "no higher low", not a probe. This is one loss, so it adds no new ban beyond the rule I already have.
 
 ## Meta right now
-Meta, as of this scan: math/intellectual names and one holiday name are where the real 5m flow is, while cats and AI are fading. RIEMANN is the loudest: two tokens with the same name, with $37k 5m on a $27k cap at 56% buys. The $9.5k copy is probably a vamp, so find the original with similar tokens before anything else. RUDY (Rudolph, $110k cap, 66% buys) is an early holiday play; Christmas came in November last time (V5), but its $7.6k 5m is below the $10k bar, so it's a watch until volume clears. Cats are dying (Catnomics -65% 1h, and GATO is a $3.4M old token, not a new meta), AI is dead (iAgent 0% buys), and Hogecoin's dog flow is down to $900 on 5m. Trump and Anthropic news are not in the movers, so the news is not the trench meta right now, and the crawler's OGTA and Catalyst calls aren't on this list, so I'm not using them. Setups to research, not buy: the RIEMANN original on a pullback that holds buyers, and RUDY if its 5m clears $10k with buys still above half.
+Meta from scan_movers, not the news. Three themes show up across several coins. (1) GTA-6 name confusion: OGTA ($180k cap, 73% buys, +7% 1h) and GATO ($3.6M, 44% buys) ride the GTA 6 headlines, but OGTA's 5m is $3.8k, under the $10k bar. (2) Dogs and cats: LOOSY ($2.8M, 63% buys, $6k 5m) is the steadiest. HOGE is slowing, Catnomics is -26% on 1h, and Innocent Cat has good buys on $1.2k 5m, so cats are fading. (3) Nonsense-chant and math names: Mo̅m Mu̅m Mi̅m is the only new coin clearing $10k 5m ($12.6k, 67% buys, +655% 1h, 12 minutes old on the bonding curve, so extreme risk). RIEMANN has two tokens. The crawler says $37k 5m, but the scan shows $280 5m on the pumpswap token with $38k over 1h, so the crawler figure is wrong and the copy is probably a vamp. Trump and AI are fading: no TRUMP token in the movers, the dinner headlines are negative, and iAgent shows 0% buys. RUDY is not in the scan at all, so it stays unverified. Setups to research, not buy: Mo̅m if its 5m holds above $10k with buys above half after the first pullback; OGTA if its 5m clears $10k while it holds the ~$180k area. Trump, Anthropic and RUDY are not in the movers, so they are not setups today.
 
 ## Moving most in its scans, last 30 min (1h volume)
-- STICKERS: $131,510 1h vol, $19,481 mcap, -59% 1h  
+- MIA: $463,908 1h vol, $369,223 mcap, +288% 1h  
+  CA `4ZbmGndQLrguTbdk5oz7wxxxVCnK2ZM9ShoMvML8pump`
+- 狗: $198,520 1h vol, $6,657 mcap, -75% 1h  
+  CA `CJsKL1cL5pCVxjQdkKhtiXn2AfCMBeVsnsN8R9PaXFx2`
+- STICKERS: $143,337 1h vol, $18,839 mcap, -60% 1h  
   CA `9EEFuHwRgY8HmnocQuq4ty9KFjuM46Q8tyLmZE3Wpump`
-- RIEMANN: $112,233 1h vol, $5,483 mcap, -76% 1h  
-  CA `2BQUmatyiKWJD8nThWP62tkPVPZqD1pq5fh1uqK33Wrc`
 - LOOSY: $73,419 1h vol, $2,834,206 mcap, +9% 1h  
   CA `HF2RBPrfNBk9TxggL2cYZFEKSgirzh5HKCngLENTpump`
-- GATO: $68,660 1h vol, $3,614,389 mcap, +14% 1h  
-  CA `HsprHxBRgiVaQdRf3TnKNuZZtaX9JUSPgMFdAkk6pump`
 - OGTA: $67,970 1h vol, $180,323 mcap, +7% 1h  
   CA `7bCiddGLe5aM8HE2pigT9jsqkmC1HSPxyXN6GkHEpump`
