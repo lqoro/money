@@ -1,13 +1,13 @@
 # Trencher live report
 
-Updated 2026-11-20T03:28:49Z (paper trading, never real money)
+Updated 2026-11-20T03:43:56Z (paper trading, never real money)
 
 - Equity: $74.23 (-25.8% vs $100 start)
 - Closed trades: 22, 3 wins
 - Fees paid: $14.78 (axiom $2.81, network $9.18, pool $2.66), plus $4.15 lost to slippage
 - New trades: WATCH-ONLY (scans and decides, buys nothing)
-- Brain: subscription, claude-haiku-5-5 for routine calls, claude-opus-5-5 for the daily review; 298 routine calls and 250 plan-limit hits in 48h
-- Watch log: 105 coins being followed, 2180 filed, 0 would-buys (6h follow, sampled every 2 min)
+- Brain: subscription, claude-haiku-5-5 for routine calls, claude-opus-5-5 for the daily review; 299 routine calls and 249 plan-limit hits in 48h
+- Watch log: 99 coins being followed, 2189 filed, 0 would-buys (6h follow, sampled every 2 min)
 
 ## Scorecard (after fees)
 - 22 closed, 3 won (14%), net $-25.79
@@ -73,9 +73,15 @@ Updated 2026-11-20T03:28:49Z (paper trading, never real money)
   CA `H4gHnZ3NCU7Z9XQwGX6YYJNyieGEW8pqwGRUcdSxpump`
 
 ## Last scan
-- 03:27Z: 5 coins, 5 with pairs, 0 passed the market filters, 0 researched
+- 03:43Z: 5 coins, 5 with pairs, 0 passed the market filters, 0 researched
 
 ## Coins it looked at, and why it passed
+- 03:42Z SWRDXSTFF (MIGRATED, $93,606 mcap, $20,874 5m vol): PASS at conviction 3, PASS: chasing, too new, no higher low. Hard lines are clean, but it's a 22-minute-old pump.fun migration up 210% on the hour with a 0.8-day-old website. Wait for the retrace. (V1, V6)  
+  CA `Csoj9XHJfBAxsKswqKKBENnGeoRDHtACfyYi7HmJpump`
+- 03:40Z HNYDRIP (MIGRATED, $222,233 mcap, $7,311 5m vol): PASS at conviction 3, PASS — 5m flow at 0.72x pace, no printed higher low, and 14 tickers share the name. Blocker: "flow below pace." A liquid-gold joke isn't a bottom buy yet (V1, V6, V13).  
+  CA `FyCaKh6wXuot5NmqQMt5oBrSHh3wFk14w5M9dHQDpump`
+- 03:30Z iAgent (DIP, $1,904,211 mcap, $3,445 5m vol): REJECT, Top 10 hold 25.0% ex-pool (>25%) (V13)  
+  CA `44DZsPNJUtUyTkELAFYdwCpe82sEt12HZKrMgK1Spump`
 - 03:27Z LOOSY (MIGRATED, $1,264,402 mcap, $6,000 5m vol): PASS at conviction 3, PASS: target too close. The prior high is only 1.17x from here, and the site says "CA TBA" on a domain 2.4 hours old. (V1, V3, V6)  
   CA `HF2RBPrfNBk9TxggL2cYZFEKSgirzh5HKCngLENTpump`
 - 03:26Z MISU (DIP, $59,771 mcap, $24,232 5m vol): REJECT, Dip with fading attention is a falling knife, not a dip (5m at 0.58x the hour's pace, under 0.6x)  
@@ -90,23 +96,17 @@ Updated 2026-11-20T03:28:49Z (paper trading, never real money)
   CA `C5eGEXJZYvXEbKdyvPtasksjGNV4xvMowpKM92bVv47f`
 - 02:55Z HNYDRIP (MIGRATED, $280,570 mcap, $17,957 5m vol): PASS at conviction 2, PASS — 3% off a +237% hour, 5m sells match buys (96 vs 100), and it's a 15-copy ticker field with no story on the radar. Chasing. (V1, V6)  
   CA `FyCaKh6wXuot5NmqQMt5oBrSHh3wFk14w5M9dHQDpump`
-- 02:45Z iAgent (DIP, $1,932,596 mcap, $3,022 5m vol): REJECT, Dip with fading attention is a falling knife, not a dip (5m at 0.05x the hour's pace, under 0.6x)  
-  CA `44DZsPNJUtUyTkELAFYdwCpe82sEt12HZKrMgK1Spump`
-- 02:45Z DIGS (MIGRATED, $292,783 mcap, $2,692 5m vol): REJECT, Bundles: 10 linked wallet cluster(s) hold 100.0% of supply (>20%) (V17)  
-  CA `9QT8K685Hrae4k11dhGXirdtpfAaimExtyfwt8cPpump`
-- 02:41Z LOOSY (MIGRATED, $1,187,462 mcap, $6,176 5m vol): PASS at conviction 3, PASS — 5m flow at 0.24x its hourly pace, $6.2k on the 5m, first resistance only 1.17x away, and the site doesn't show this CA. Fourteen dog copies, no printed higher low. (V1, V6, V13)  
-  CA `HF2RBPrfNBk9TxggL2cYZFEKSgirzh5HKCngLENTpump`
 
 ## What its skips did next (last 48h)
 A skip "ran" if the coin reached the first target (1.5x) from the skip price before a 20% drop, "dumped" if the drop came first. Sampled every 10 min, followed 6h.
-- top 10 over 25%: blocked 70, ran 14, dumped 52, flat 2, open 2 (saving losses: keep it)
-  - ran: BUFO up to 1.83x  
-    CA `44gNPkTVKwfNf2fPBdwiPZrVVXLVYTkmBk5VdBzrpump`
+- top 10 over 25%: blocked 70, ran 13, dumped 52, flat 2, open 3 (saving losses: keep it)
   - ran: clawd up to 2.1x  
     CA `85osSLFjprTGWRkrXMTGjsmaWR2pjUb38AiJzr16pump`
   - ran: SHARK up to 1.68x  
     CA `3yxsNufZSWNrvMXw8gwCJFCuUkuTDsb1a55aR7evpump`
-- falling knife (code): blocked 55, ran 7, dumped 44, flat 1, open 3 (saving losses: keep it)
+  - ran: clipping up to 2.89x  
+    CA `FfsmhbvkTZ2TBYTuLgYCWiwhqeosVyH3imuUtWWypump`
+- falling knife (code): blocked 54, ran 7, dumped 44, flat 1, open 2 (saving losses: keep it)
   - ran: DACT up to 2.63x  
     CA `GZUGmAtuSx9755C3W1CLDVtA7MZQ8QWF1XjhjEbjpump`
   - ran: Apocrycoin up to 1.54x  
@@ -142,15 +142,17 @@ A skip "ran" if the coin reached the first target (1.5x) from the skip price bef
 - thin 5m volume: blocked 12, ran 1, dumped 6, flat 4, open 1 (saving losses: keep it)
   - ran: Snapmatic up to 1.68x  
     CA `4S8pUKWKUAtQKfE5qokSjszWDp1RqQWnom8jNYSWpump`
-- flow below pace: blocked 9, ran 2, dumped 3, flat 0, open 4 (mixed)
+- flow below pace: blocked 10, ran 2, dumped 3, flat 0, open 5 (mixed)
   - ran: SI up to 1.53x  
     CA `4s38cgZJN4J39S2BQwCkcsJJ9ZGeJSjw8vK9wVtupump`
   - ran: AI up to 1.51x  
     CA `8SacNb6sgiAcscRe4m915B6nL9XX55dk8FS7L532pump`
-- falling knife / no higher low: blocked 7, ran 1, dumped 2, flat 0, open 4 (saving losses: keep it)
+- falling knife / no higher low: blocked 7, ran 2, dumped 2, flat 0, open 3 (mixed)
   - ran: pCAT up to 1.58x  
     CA `BLdC7hwRijHudKYDmtEkx1SHUdBWm8XbjBCSvwa6pump`
-- too new / sniping: blocked 6, ran 0, dumped 6, flat 0, open 0 (saving losses: keep it)
+  - ran: MACCA up to 1.71x  
+    CA `C5eGEXJZYvXEbKdyvPtasksjGNV4xvMowpKM92bVv47f`
+- too new / sniping: blocked 7, ran 0, dumped 6, flat 0, open 1 (saving losses: keep it)
 
 ## Daily review (2026-11-16, claude-opus-5-5)
 Nothing shows a positive edge after costs. Over 309 settled coins, every setup lost money net: FINAL_STRETCH -7.2%, DIP -7.4%, MIGRATED -13.5%. Costs alone averaged 9.8% per round trip. Before costs, FINAL_STRETCH made about +2.9% and DIP about +1.8%, but at n=46 and n=54 the noise is roughly ±4–5 points, so neither is different from zero. With a 1.5x / -20% plan and ~10% costs, you need about 43% of coins to reach 1.5x before -20% just to break even. The best group (FINAL_STRETCH) managed 32.6%, and the error bar on that is about ±14 points. The routine model gave zero would-buys, so the "did its buys beat its passes" question can't be answered. It passed on all 164 coins it reviewed. Those coins averaged -11.7% net, about the same as the checklist rejects at -11.3%, so passing on everything was roughly right this day, even though it missed LMAO, Marvin and WIGGLES.
@@ -193,11 +195,11 @@ The trenches are running fresh pump.fun launches with AI-named and animal reskin
 ## Moving most in its scans, last 30 min (1h volume)
 - MISU: $502,506 1h vol, $56,476 mcap, +32% 1h  
   CA `J368btynAg5qCa414hj9WriSmRwp6H2sgWzXoRt3pump`
-- pCAT: $117,140 1h vol, $11,063 mcap, -74% 1h  
-  CA `BLdC7hwRijHudKYDmtEkx1SHUdBWm8XbjBCSvwa6pump`
-- OGTA: $83,258 1h vol, $940,856 mcap, +0% 1h  
-  CA `7bCiddGLe5aM8HE2pigT9jsqkmC1HSPxyXN6GkHEpump`
-- BEAR: $80,370 1h vol, $21,357 mcap, +525% 1h  
-  CA `DCPm44cT9i39HjR13QHYgxkR7wEx9TDeniGuayB5pump`
-- M&B: $76,810 1h vol, $24,826 mcap, -46% 1h  
+- Coge: $157,053 1h vol, $26,404 mcap, -45% 1h  
+  CA `J4MWnwGM4dZJsVrdygJL4q6TPVvARwS4ffnCPCm9pump`
+- HNYDRIP: $121,938 1h vol, $222,233 mcap, -5% 1h  
+  CA `FyCaKh6wXuot5NmqQMt5oBrSHh3wFk14w5M9dHQDpump`
+- SWRDXSTFF: $119,001 1h vol, $75,095 mcap, +149% 1h  
+  CA `Csoj9XHJfBAxsKswqKKBENnGeoRDHtACfyYi7HmJpump`
+- M&B: $90,009 1h vol, $4,100 mcap, -91% 1h  
   CA `93oSAc16rd8vZVt9Wt6QWvAzHqWMAYUobqPYQMoGpump`
