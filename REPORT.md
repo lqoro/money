@@ -1,13 +1,13 @@
 # Trencher live report
 
-Updated 2026-11-20T04:29:10Z (paper trading, never real money)
+Updated 2026-11-20T04:44:18Z (paper trading, never real money)
 
 - Equity: $74.23 (-25.8% vs $100 start)
 - Closed trades: 22, 3 wins
 - Fees paid: $14.78 (axiom $2.81, network $9.18, pool $2.66), plus $4.15 lost to slippage
 - New trades: WATCH-ONLY (scans and decides, buys nothing)
-- Brain: subscription, claude-haiku-5-5 for routine calls, claude-opus-5-5 for the daily review; 305 routine calls and 244 plan-limit hits in 48h
-- Watch log: 99 coins being followed, 2204 filed, 0 would-buys (6h follow, sampled every 2 min)
+- Brain: subscription, claude-haiku-5-5 for routine calls, claude-opus-5-5 for the daily review; 304 routine calls and 243 plan-limit hits in 48h
+- Watch log: 93 coins being followed, 2211 filed, 0 would-buys (6h follow, sampled every 2 min)
 
 ## Scorecard (after fees)
 - 22 closed, 3 won (14%), net $-25.79
@@ -73,9 +73,11 @@ Updated 2026-11-20T04:29:10Z (paper trading, never real money)
   CA `H4gHnZ3NCU7Z9XQwGX6YYJNyieGEW8pqwGRUcdSxpump`
 
 ## Last scan
-- 04:28Z: 3 coins, 3 with pairs, 1 passed the market filters, 1 researched
+- 04:44Z: 5 coins, 5 with pairs, 0 passed the market filters, 0 researched
 
 ## Coins it looked at, and why it passed
+- 04:35Z iCat (MIGRATED, $407,008 mcap, $37,640 5m vol): REJECT, Top 10 hold 53.4% ex-pool (>25%) (V13)  
+  CA `FC8CkjiVJxKe5uUEx3SVLHLEcVARAMGCfnSoBaZgpump`
 - 04:28Z SWRDXSTFF (DIP, $90,070 mcap, $46,926 5m vol): PASS at conviction 2, PASS. Falling knife with no story behind it: -36% on 5m, no higher low, and a 0.9-day-old site that doesn't show this CA. Blocker: "dead story" plus "no higher low". (DIP, V1, V6)  
   CA `Csoj9XHJfBAxsKswqKKBENnGeoRDHtACfyYi7HmJpump`
 - 04:27Z HNYDRIP (DIP, $90,061 mcap, $9,870 5m vol): PASS at conviction 2, PASS — a falling knife with no story left: zero radar or buzz mentions, the drip family flat at 0.97x pace, no printed higher low, 5m under $10k. Blocker: no catalyst. (V1, V6, V13)  
@@ -94,12 +96,10 @@ Updated 2026-11-20T04:29:10Z (paper trading, never real money)
   CA `7bCiddGLe5aM8HE2pigT9jsqkmC1HSPxyXN6GkHEpump`
 - 04:12Z LOOSY (MIGRATED, $1,382,127 mcap, $3,176 5m vol): PASS at conviction 3, PASS — first resistance is 1.13x away and 5m flow is at 0.63x pace. Clean holders don't fix a coin with no room and no flow (V1, V6).  
   CA `HF2RBPrfNBk9TxggL2cYZFEKSgirzh5HKCngLENTpump`
-- 04:00Z ANTS (DIP, $7,980,041 mcap, $2,346 5m vol): PASS at conviction 3, PASS: big cap, no room. ANTS is a $8M vamp leader in a 17-copy field, sellers in control and no breakout printing. Not a bottom buy. (V1, V6, V13)  
-  CA `ejrz94zR4A2ScS8LdvRaQih2xUxaE2ydreqUNKmpump`
 
 ## What its skips did next (last 48h)
 A skip "ran" if the coin reached the first target (1.5x) from the skip price before a 20% drop, "dumped" if the drop came first. Sampled every 10 min, followed 6h.
-- top 10 over 25%: blocked 69, ran 12, dumped 52, flat 3, open 2 (saving losses: keep it)
+- top 10 over 25%: blocked 70, ran 12, dumped 52, flat 3, open 3 (saving losses: keep it)
   - ran: SHARK up to 1.68x  
     CA `3yxsNufZSWNrvMXw8gwCJFCuUkuTDsb1a55aR7evpump`
   - ran: clipping up to 2.89x  
@@ -142,17 +142,19 @@ A skip "ran" if the coin reached the first target (1.5x) from the skip price bef
     CA `FtSWWxVmKNXz8ksJxzJJ7BdDWXbQb3vC94J99oyypump`
   - ran: MANDY up to 1.54x  
     CA `GQngHP8P6s45MxWnU7JsocfV2HjPQdJZmCEAYKpBpump`
-- falling knife / no higher low: blocked 9, ran 2, dumped 3, flat 0, open 4 (mixed)
+- falling knife / no higher low: blocked 9, ran 3, dumped 3, flat 0, open 3 (mixed)
   - ran: pCAT up to 1.58x  
     CA `BLdC7hwRijHudKYDmtEkx1SHUdBWm8XbjBCSvwa6pump`
   - ran: MACCA up to 1.71x  
     CA `C5eGEXJZYvXEbKdyvPtasksjGNV4xvMowpKM92bVv47f`
+  - ran: SWRDXSTFF up to 2x  
+    CA `Csoj9XHJfBAxsKswqKKBENnGeoRDHtACfyYi7HmJpump`
 - flow below pace: blocked 9, ran 2, dumped 4, flat 0, open 3 (saving losses: keep it)
   - ran: SI up to 1.53x  
     CA `4s38cgZJN4J39S2BQwCkcsJJ9ZGeJSjw8vK9wVtupump`
   - ran: AI up to 1.51x  
     CA `8SacNb6sgiAcscRe4m915B6nL9XX55dk8FS7L532pump`
-- too new / sniping: blocked 8, ran 1, dumped 6, flat 0, open 1 (saving losses: keep it)
+- too new / sniping: blocked 8, ran 1, dumped 7, flat 0, open 0 (saving losses: keep it)
   - ran: ZOL up to 1.62x  
     CA `UQLWvkwiSsnViuVBy7oArMtzb5RAZyrdJ79amQFrzoL`
 
@@ -197,11 +199,11 @@ The trenches are pump.fun launches riffing on names of the hour, and the volume 
 ## Moving most in its scans, last 30 min (1h volume)
 - SWRDXSTFF: $553,837 1h vol, $94,221 mcap, +49% 1h  
   CA `Csoj9XHJfBAxsKswqKKBENnGeoRDHtACfyYi7HmJpump`
-- Coge: $200,233 1h vol, $3,811 mcap, -91% 1h  
-  CA `J4MWnwGM4dZJsVrdygJL4q6TPVvARwS4ffnCPCm9pump`
+- COGE: $140,194 1h vol, $3,746 mcap, -87% 1h  
+  CA `fDAeRE3bkFAK2KxK9btry4oDgU8NcxeWzW6n59mpump`
 - HNYDRIP: $121,159 1h vol, $90,061 mcap, -62% 1h  
   CA `FyCaKh6wXuot5NmqQMt5oBrSHh3wFk14w5M9dHQDpump`
+- iCat: $113,644 1h vol, $348,575 mcap, +859% 1h  
+  CA `FC8CkjiVJxKe5uUEx3SVLHLEcVARAMGCfnSoBaZgpump`
 - Neon: $97,296 1h vol, $19,382 mcap, +386% 1h  
   CA `212XWaQQvEWWpbybdhtWMPmQWsMka9DgE2B6cqq9pump`
-- MISU: $92,694 1h vol, $7,769 mcap, -87% 1h  
-  CA `J368btynAg5qCa414hj9WriSmRwp6H2sgWzXoRt3pump`
