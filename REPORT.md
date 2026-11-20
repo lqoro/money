@@ -1,13 +1,13 @@
 # Trencher live report
 
-Updated 2026-11-20T10:33:41Z (paper trading, never real money)
+Updated 2026-11-20T10:48:53Z (paper trading, never real money)
 
 - Equity: $74.23 (-25.8% vs $100 start)
 - Closed trades: 22, 3 wins
 - Fees paid: $14.78 (axiom $2.81, network $9.18, pool $2.66), plus $4.15 lost to slippage
 - New trades: WATCH-ONLY (scans and decides, buys nothing)
-- Brain: subscription, claude-haiku-5-5 for routine calls, claude-opus-5-5 for the daily review; 324 routine calls and 208 plan-limit hits in 48h
-- Watch log: 74 coins being followed, 2303 filed, 0 would-buys (6h follow, sampled every 2 min)
+- Brain: subscription, claude-haiku-5-5 for routine calls, claude-opus-5-5 for the daily review; 323 routine calls and 207 plan-limit hits in 48h
+- Watch log: 74 coins being followed, 2304 filed, 0 would-buys (6h follow, sampled every 2 min)
 
 ## Scorecard (after fees)
 - 22 closed, 3 won (14%), net $-25.79
@@ -73,9 +73,11 @@ Updated 2026-11-20T10:33:41Z (paper trading, never real money)
   CA `H4gHnZ3NCU7Z9XQwGX6YYJNyieGEW8pqwGRUcdSxpump`
 
 ## Last scan
-- 10:32Z: 6 coins, 6 with pairs, 1 passed the market filters, 1 researched
+- 10:48Z: 3 coins, 3 with pairs, 0 passed the market filters, 0 researched
 
 ## Coins it looked at, and why it passed
+- 10:39Z AIBO (FINAL_STRETCH, $23,248 mcap, $2,876 5m vol): REJECT, Top 10 hold 25.7% ex-pool (>25%) (V13)  
+  CA `DbxnCTr3d9e2i7pt4H3eY4Kb6ov9VrzNpy5PpkLApump`
 - 10:32Z PATRICK (DIP, $45,176 mcap, $3,246 5m vol): REJECT, Dip with fading attention is a falling knife, not a dip (5m at 0.41x the hour's pace, under 0.6x)  
   CA `8mnJZnxaNLqVwkaWWGH7dKmoEzyYzGJx5pHaCp7spump`
 - 10:21Z iAgent (DIP, $1,181,021 mcap, $4,189 5m vol): REJECT, Dip with fading attention is a falling knife, not a dip (5m at 0.58x the hour's pace, under 0.6x)  
@@ -94,18 +96,16 @@ Updated 2026-11-20T10:33:41Z (paper trading, never real money)
   CA `DtcicPCKTKeAh7TDEzTym3hXeoHAoMiBdYJhMYxZpump`
 - 09:37Z PATRICK (DIP, $41,787 mcap, $11,394 5m vol): PASS at conviction 3, PASS: blocker "theme pace below 1x, no catalyst." PATRICK is a 22-copy patrick/retard field running at 0.7x its hourly pace with no outside news I could find. Bottom buy with no catalyst (V1, V3, V6).  
   CA `8mnJZnxaNLqVwkaWWGH7dKmoEzyYzGJx5pHaCp7spump`
-- 09:37Z iAgent (MIGRATED, $1,049,272 mcap, $9,505 5m vol): PASS at conviction 3, PASS — DIP at 70.9% off a $3.6M peak with no fresh catalyst, a fading AI-agent meta, 5m flow under $10k on a buy share of 0.52, and a 0.4-day-old domain selling a Siri simulation. Blocker: "dead story" plus "no fresh catalyst". (V1, V3, V13)  
-  CA `44DZsPNJUtUyTkELAFYdwCpe82sEt12HZKrMgK1Spump`
 
 ## What its skips did next (last 48h)
 A skip "ran" if the coin reached the first target (1.5x) from the skip price before a 20% drop, "dumped" if the drop came first. Sampled every 10 min, followed 6h.
-- top 10 over 25%: blocked 67, ran 11, dumped 53, flat 3, open 0 (saving losses: keep it)
-  - ran: clipping up to 2.89x  
-    CA `FfsmhbvkTZ2TBYTuLgYCWiwhqeosVyH3imuUtWWypump`
+- top 10 over 25%: blocked 67, ran 10, dumped 53, flat 3, open 1 (saving losses: keep it)
   - ran: BUCKZ up to 1.6x  
     CA `3dF7QJEkhuVshbdgcVe227XvsbBc3cCoPTcHXw7Fpump`
   - ran: Pussy up to 1.53x  
     CA `JDBwLV5iu9sd9PNBEPZvVzLw7Kvd9HkD4v29985dpump`
+  - ran: Doubloon up to 1.58x  
+    CA `9Xhg9eRG92jZGbBZvNdcWyEoyz7kjHtA9BP6BxniUPWL`
 - falling knife (code): blocked 51, ran 7, dumped 42, flat 1, open 1 (saving losses: keep it)
   - ran: DACT up to 2.63x  
     CA `GZUGmAtuSx9755C3W1CLDVtA7MZQ8QWF1XjhjEbjpump`
@@ -123,7 +123,7 @@ A skip "ran" if the coin reached the first target (1.5x) from the skip price bef
 - thin 5m volume: blocked 16, ran 1, dumped 8, flat 5, open 2 (saving losses: keep it)
   - ran: Snapmatic up to 1.68x  
     CA `4S8pUKWKUAtQKfE5qokSjszWDp1RqQWnom8jNYSWpump`
-- bundles over the line: blocked 16, ran 3, dumped 8, flat 3, open 2 (saving losses: keep it)
+- bundles over the line: blocked 16, ran 4, dumped 8, flat 3, open 1 (saving losses: keep it)
   - ran: BIG up to 1.93x  
     CA `34DXEU2ttEtBSb1TqGJm7izgvYTTkqKcCoiNWdPDpump`
   - ran: VI up to 1.56x  
@@ -197,13 +197,13 @@ Nothing shows a positive edge after costs. Over 309 settled coins, every setup l
 The movers are animal and pet names on pump.fun: Cat Mario, A Mario Cat, Cool Dog, whatever cat, Gino the Baby Marmoset, Giving Inu and Bibi. Most are under two hours old on $6k-$130k caps, a launch-style meta that lasts hours (V1, V5). Holiday is the second theme and it's rising: Rudolph (RUDY) is a six-minute-old $57k reindeer with $38k of 5m volume at 63% buys, and with Christmas five weeks out, seasonal tokens tend to show early (V5). The web doesn't confirm that, so it rests on one scan line. Fading: Cat Mario -62%, OFFICIALGTA -51% on $5.3k of 5m, Predict -77%, buckme -37%, and the Trump and dinner headlines don't appear in the movers at all, so I'm ignoring them. The crawler's Giving Inu setup (+629%, $10.1k 5m, 0.3h old) doesn't match the scan (+39%, $1.3k 5m, 1.6h old), so I'm discarding it. RUDY is the only coin that clears the MIGRATED bar (age ≤12h, cap ≥$30k, 5m ≥$10k), so it's the one to research now, not chase. At conviction 5 I'd buy a probe only after holder and bundle checks pass, on a pullback that holds with buys above 60%, with initials at 2x, a -30% stop, and out if 5m falls under $10k. AMC, Jimmy, Gino and GI are watch-only until 5m clears $10k (V1, V6).
 
 ## Moving most in its scans, last 30 min (1h volume)
-- AMC : $211,354 1h vol, $131,943 mcap, +209% 1h  
-  CA `J7bLsZcpkfky92ir8k36Munz91nHKtcDNhDy8d3Qpump`
-- OGTA: $108,831 1h vol, $256,067 mcap, -51% 1h  
-  CA `7bCiddGLe5aM8HE2pigT9jsqkmC1HSPxyXN6GkHEpump`
 - PATRICK: $95,326 1h vol, $45,153 mcap, +84% 1h  
   CA `8mnJZnxaNLqVwkaWWGH7dKmoEzyYzGJx5pHaCp7spump`
 - iAgent: $88,430 1h vol, $1,108,495 mcap, +11% 1h  
   CA `44DZsPNJUtUyTkELAFYdwCpe82sEt12HZKrMgK1Spump`
-- LOOSY: $56,441 1h vol, $1,091,289 mcap, -3% 1h  
-  CA `HF2RBPrfNBk9TxggL2cYZFEKSgirzh5HKCngLENTpump`
+- Nikita: $50,037 1h vol, $6,287 mcap, +4% 1h  
+  CA `HHuZcZnZNSaJ8XvcGtqs92DMRGg2qEyWZQvk8Zt6pump`
+- Meobao: $41,181 1h vol, $17,569 mcap, -38% 1h  
+  CA `EwjHVMAVFTyUnyYbreMKbRbAKSKDrirtjEAKoBj3pump`
+- RUDY: $37,952 1h vol, $57,295 mcap, -16% 1h  
+  CA `GjFvarRNRrq5tL6K2qdY7Xv2ZEbVrstqjW1BW4hMpump`
