@@ -1,13 +1,13 @@
 # Trencher live report
 
-Updated 2026-11-20T19:40:07Z (paper trading, never real money)
+Updated 2026-11-20T19:55:09Z (paper trading, never real money)
 
 - Equity: $74.23 (-25.8% vs $100 start)
 - Closed trades: 22, 3 wins
 - Fees paid: $14.78 (axiom $2.81, network $9.18, pool $2.66), plus $4.15 lost to slippage
 - New trades: WATCH-ONLY (scans and decides, buys nothing)
-- Brain: subscription, claude-haiku-5-5 for routine calls, claude-opus-5-5 for the daily review; 347 routine calls and 155 plan-limit hits in 48h
-- Watch log: 89 coins being followed, 2417 filed, 0 would-buys (6h follow, sampled every 2 min)
+- Brain: subscription, claude-haiku-5-5 for routine calls, claude-opus-5-5 for the daily review; 345 routine calls and 153 plan-limit hits in 48h
+- Watch log: 88 coins being followed, 2419 filed, 0 would-buys (6h follow, sampled every 2 min)
 
 ## Scorecard (after fees)
 - 22 closed, 3 won (14%), net $-25.79
@@ -73,9 +73,11 @@ Updated 2026-11-20T19:40:07Z (paper trading, never real money)
   CA `H4gHnZ3NCU7Z9XQwGX6YYJNyieGEW8pqwGRUcdSxpump`
 
 ## Last scan
-- 19:39Z: 0 coins, 0 with pairs, 0 passed the market filters, 0 researched
+- 19:54Z: 2 coins, 2 with pairs, 0 passed the market filters, 0 researched
 
 ## Coins it looked at, and why it passed
+- 19:50Z GATO (MIGRATED, $3,431,414 mcap, $4,365 5m vol): REJECT, Dev holds 2.7% (>1%) (V13, V17)  
+  CA `HsprHxBRgiVaQdRf3TnKNuZZtaX9JUSPgMFdAkk6pump`
 - 19:37Z MATHISOVER (MIGRATED, $78,391 mcap, $3,052 5m vol): PASS at conviction 2, PASS: chasing, flow below pace, no higher low, and the story lives on the coin's own site. Blockers: chasing / flow below pace / no higher low. (V1, V6, V13)  
   CA `3JgkhGnN5ggpE14Ykb2sgcsF1LTBUFyVZBPa3VrDpump`
 - 19:37Z PAY (FINAL_STRETCH, $22,276 mcap, $30,806 5m vol): PASS at conviction 2, PASS: four-minute-old pump.fun coin up 1075% in 5m with no story and no X. That's a spike, not a setup (V1, V6).  
@@ -94,8 +96,6 @@ Updated 2026-11-20T19:40:07Z (paper trading, never real money)
   CA `FqjZnuzRv3QYQQQrRRxt6fAGtrnaXnPXFabExM7Ppump`
 - 19:14Z HOGE (DIP, $909,036 mcap, $6,851 5m vol): REJECT, Bundles: 9 linked wallet cluster(s) hold 26.7% of supply (>20%) (V17)  
   CA `FVzqGqRmr4UH1Fif6dewmwbJ1p4YUZCu8dcw4Efopump`
-- 19:08Z BIGFOOT (MIGRATED, $34,417 mcap, $18,785 5m vol): PASS at conviction 3, PASS: chasing spike, flow at 0.24x pace, and it's not the Bigfoot theme leader in a split field. Too new, 81% off the high. Wait. (V1, V6, V13)  
-  CA `Aykavwa4Z1Z2pW3CRuRpXBXrNZAtuhzAskgBFXFgpump`
 
 ## What its skips did next (last 48h)
 A skip "ran" if the coin reached the first target (1.5x) from the skip price before a 20% drop, "dumped" if the drop came first. Sampled every 10 min, followed 6h.
@@ -120,7 +120,7 @@ A skip "ran" if the coin reached the first target (1.5x) from the skip price bef
     CA `9rbKkz2BDQBVgZmrHY6d7PTq2ge91gkpEyE4y9PPpump`
   - ran: PIPI up to 1.63x  
     CA `J51xgomTx21VHY62Q7uv2otWRUSq71WeaApLfsAnpump`
-- flow below pace: blocked 18, ran 3, dumped 9, flat 1, open 5 (saving losses: keep it)
+- flow below pace: blocked 18, ran 3, dumped 12, flat 1, open 2 (saving losses: keep it)
   - ran: SI up to 1.53x  
     CA `4s38cgZJN4J39S2BQwCkcsJJ9ZGeJSjw8vK9wVtupump`
   - ran: AI up to 1.51x  
@@ -145,14 +145,16 @@ A skip "ran" if the coin reached the first target (1.5x) from the skip price bef
     CA `FtSWWxVmKNXz8ksJxzJJ7BdDWXbQb3vC94J99oyypump`
   - ran: MANDY up to 1.54x  
     CA `GQngHP8P6s45MxWnU7JsocfV2HjPQdJZmCEAYKpBpump`
-- bundles over the line: blocked 13, ran 1, dumped 8, flat 2, open 2 (saving losses: keep it)
+- bundles over the line: blocked 13, ran 1, dumped 9, flat 2, open 1 (saving losses: keep it)
   - ran: PAPA up to 1.66x  
     CA `3hdXmQqZHmm7gWWweFKGdkjnxyWQZ2SWVNt1Jty5pump`
-- other: blocked 13, ran 2, dumped 9, flat 0, open 2 (saving losses: keep it)
+- other: blocked 13, ran 3, dumped 10, flat 0, open 0 (saving losses: keep it)
   - ran: After up to 2.36x  
     CA `Db2s6iVvenVhJkj96P4UbZWEAYX4nUhgXhSVbQrwpump`
   - ran: Ant up to 2.32x  
     CA `HKGtUPPKvXkMPyNX4QeMubENuiimFQ8W1Veg4y52pump`
+  - ran: PAY up to 3.67x  
+    CA `GdqJ3D4BF6ZKtpXajVqZTP39vrwD8wDXZGgw7tBA8PAY`
 
 ## Daily review (2026-11-20, claude-opus-5-5)
 No edge yet. All 322 settled coins lost money after costs on the simple plan, and so did every setup: the average was -13.8%, of which about 9.9% was round-trip cost, so the price moves alone already lost about 4%. With a +50% target, a -20% stop and about 10% cost, a winner nets about +40% and a loser about -30%, so a setup has to reach 1.5x before the stop roughly 43% of the time just to break even. The best bucket, FINAL_STRETCH, did it 27.7% of the time (n=47). The overall average is clearly negative: about ±3.6 points of noise at n=322. Even FINAL_STRETCH's -10.6% has a 95% range of roughly ±9 points that stays below zero, and the real sample is smaller than it looks because of meta clustering (GTA and FIONA copies) and at least one coin logged twice. The routine model made zero would-buys, so there is nothing to compare against what it passed on. The 79 coins it reviewed and passed did -14.4%, the same as the 168 the checklist failed (-14.0%). On this data neither the checklist nor the model separates winners from losers.
@@ -193,13 +195,13 @@ No edge yet. All 322 settled coins lost money after costs on the simple plan, an
 The meta is brand-name and cryptid tickers with live 5m flow. The cat/animal wave is a 1-hour spike that has gone thin: BTC and CATPOOP are at $0 to $3k 5m and MAYA is at $0, so I'm trusting the scan over the crawler's cat numbers. Three themes are live: (1) brand and domain names, with Singularity.com on two CAs at $279k and $95k 5m, 54% and 83% buys, only about 6 minutes old, which is a vamp fight, so find the original before anything else; (2) cryptids, with BIGFOOT IS REAL at $18.8k 5m, 54% buys, $34k cap, while The Bigfoot Files has zero buys, so it's split; (3) MIC, a country-name coin at $96k 5m with 52% buys. Fading: Trump and GTA (OFFICIALGTA at $3.6k 5m, 25h old, and the Trump dinner news is down 98%), dog/doge names (HOGE and LOOSY under $7k 5m), and holiday names (RUDY at 44% buys). Setups to research, not buy: BIGFOOT IS REAL, and the Singularity original once identified, only on a pullback that holds 5m above $10k with buys above half; MIC and both Singularity pairs are up 140-500% in an hour, so that is chase territory. Holder, dev and bundle checks are pending on all of these, so this is a read, not an entry.
 
 ## Moving most in its scans, last 30 min (1h volume)
+- Singularity: $734,620 1h vol, $23,813 mcap, -46% 1h  
+  CA `FBKkoVcXaHzpLHheCRnPk3zvLgiqhugbwGcegc9Ykvxx`
+- MIC: $400,481 1h vol, $17,535 mcap, -37% 1h  
+  CA `G6H8DjYRPomfmG5KrEAMpxoUU2uRLxdeTrkxnSiXpump`
 - DYSON: $390,786 1h vol, $373,706 mcap, +986% 1h  
   CA `C2As2w55q3V3snKVCyA3nZvmQJSx2NApM5SLK5krpump`
-- FIONAWIF: $171,283 1h vol, $1,230 mcap, -96% 1h  
-  CA `B4C3Jbueio385X9zH3ezXRLZpuAKJcVcjH2ZaDhapump`
-- DOG: $129,242 1h vol, $1,899 mcap, -93% 1h  
-  CA `9WcGenJJraGbS3x8bAvHp1bk9Zg2DV3NYcePbD9jpump`
-- FIENA: $117,747 1h vol, $99,280 mcap, +194% 1h  
-  CA `FqjZnuzRv3QYQQQrRRxt6fAGtrnaXnPXFabExM7Ppump`
-- runner: $114,957 1h vol, $16,946 mcap, +85% 1h  
-  CA `RUnnEr6YskBKYibKeUZRHaDQAAfdgYZPoikkmv4NnLx`
+- Singularity: $244,286 1h vol, $1,298 mcap, -97% 1h  
+  CA `7KUg78hyohckj8i728YuCu6CweTArxhwRrVrFyvHpump`
+- BIGFOOT: $168,806 1h vol, $16,071 mcap, -77% 1h  
+  CA `Aykavwa4Z1Z2pW3CRuRpXBXrNZAtuhzAskgBFXFgpump`
