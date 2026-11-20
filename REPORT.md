@@ -1,13 +1,13 @@
 # Trencher live report
 
-Updated 2026-11-20T01:12:32Z (paper trading, never real money)
+Updated 2026-11-20T01:27:46Z (paper trading, never real money)
 
 - Equity: $74.23 (-25.8% vs $100 start)
 - Closed trades: 22, 3 wins
 - Fees paid: $14.78 (axiom $2.81, network $9.18, pool $2.66), plus $4.15 lost to slippage
 - New trades: WATCH-ONLY (scans and decides, buys nothing)
-- Brain: subscription, claude-haiku-5-5 for routine calls, claude-opus-5-5 for the daily review; 290 routine calls and 264 plan-limit hits in 48h
-- Watch log: 111 coins being followed, 2136 filed, 0 would-buys (6h follow, sampled every 2 min)
+- Brain: subscription, claude-haiku-5-5 for routine calls, claude-opus-5-5 for the daily review; 290 routine calls and 262 plan-limit hits in 48h
+- Watch log: 115 coins being followed, 2139 filed, 0 would-buys (6h follow, sampled every 2 min)
 
 ## Scorecard (after fees)
 - 22 closed, 3 won (14%), net $-25.79
@@ -73,40 +73,40 @@ Updated 2026-11-20T01:12:32Z (paper trading, never real money)
   CA `H4gHnZ3NCU7Z9XQwGX6YYJNyieGEW8pqwGRUcdSxpump`
 
 ## Last scan
-- 01:11Z: 3 coins, 3 with pairs, 0 passed the market filters, 0 researched
+- 01:27Z: 4 coins, 4 with pairs, 0 passed the market filters, 0 researched
 
 ## Coins it looked at, and why it passed
+- 01:23Z I (MIGRATED, $46,870 mcap, $38,283 5m vol): PASS at conviction 3, PASS. Vamp field of 9 'Inu' copies, and this isn't the leader. CI has 2x its 5m flow. Also a 12-minute-old migration that just spiked +27% in 5m. Blockers: split crowd, chasing spike, too new. (V1, V3, V6)  
+  CA `3emn4AZwHpsH8K6rqjsMTeFHJTg4XqdPe9PBHpV3JANJ`
+- 01:22Z LUCIA (MIGRATED, $385,467 mcap, $25,887 5m vol): REJECT, Top 10 hold 51.3% ex-pool (>25%) (V13)  
+  CA `i48RfaqcYLRnNLpSxt8akF2ZubNuHckEReqBVPWpump`
+- 01:19Z STANK (MIGRATED, $44,790 mcap, $2,635 5m vol): REJECT, Top 10 hold 26.6% ex-pool (>25%) (V13)  
+  CA `8nq3Jmgd1tpbroiuVMehQyC266ZUZJU2BTad8Nigpump`
+- 01:18Z SI (FINAL_STRETCH, $15,010 mcap, $31,876 5m vol): PASS at conviction 3, PASS: SI is not the leader of a 19-copy inu field (CI leads), it's up 186% on 5m at 12x the hourly pace, and it has no X, no site and no buzz. That's a spike chase in a crowd that's splitting (V1, V3, V6).  
+  CA `47ubrZhhuahv1DDouJCSEkWxJim3yzQBh1FKyKcvpump`
+- 01:16Z COOKIE (DIP, $56,889 mcap, $9,343 5m vol): REJECT, Dip with fading attention is a falling knife, not a dip (5m at 0.19x the hour's pace, under 0.6x)  
+  CA `GiNDGcqc7xk9F88sgE9KF7Bo5migm4Bh8Y8CJVM7pump`
+- 01:14Z DIGS (MIGRATED, $307,516 mcap, $3,364 5m vol): REJECT, Bundles: 10 linked wallet cluster(s) hold 100.0% of supply (>20%) (V17)  
+  CA `9QT8K685Hrae4k11dhGXirdtpfAaimExtyfwt8cPpump`
+- 01:14Z iAgent (MIGRATED, $453,652 mcap, $218,836 5m vol): REJECT, Top 10 hold 28.2% ex-pool (>25%) (V13)  
+  CA `44DZsPNJUtUyTkELAFYdwCpe82sEt12HZKrMgK1Spump`
 - 01:10Z LOOSY (MIGRATED, $311,673 mcap, $127,630 5m vol): REJECT, Top 10 hold 45.2% ex-pool (>25%) (V13)  
   CA `HF2RBPrfNBk9TxggL2cYZFEKSgirzh5HKCngLENTpump`
 - 01:07Z RUGGED (MIGRATED, $30,878 mcap, $9,574 5m vol): REJECT, Bundles: 2 linked wallet cluster(s) hold 23.8% of supply (>20%) (V17)  
   CA `GT8WxWKEgxzZiKL89Uu288vb8jnescwpNSrvyHzcpump`
 - 01:04Z WASTED (DIP, $972,786 mcap, $5,656 5m vol): REJECT, Top 10 hold 27.2% ex-pool (>25%) (V13)  
   CA `GexThZHgaswpAQ7Fi8QrHFubjPimUNSYhJiAA7XZpump`
-- 01:00Z OGTA (MIGRATED, $1,253,377 mcap, $6,597 5m vol): PASS at conviction 3, PASS. OGTA is clean on holders and bundles, but flow is below pace, the first resistance is too close, and the GTA theme is fading. (V1, V6)  
-  CA `7bCiddGLe5aM8HE2pigT9jsqkmC1HSPxyXN6GkHEpump`
-- 00:58Z INU (MIGRATED, $42,129 mcap, $30,239 5m vol): PASS at conviction 2, PASS. Ninety-second-old reskin with a +36% five-minute spike, sellers ahead of buyers, and a crowd of 22 copies with CI as the leader. Chasing, no structure. (chasing spike, too new, split crowd)  
-  CA `4q1PmmvWDsrz8YrHTo116KX2J1tQQVMoanVSQwXUpump`
-- 00:57Z Brian (MIGRATED, $202,073 mcap, $30,564 5m vol): REJECT, RugCheck danger: Creator history of rugged tokens  
-  CA `CrJBEGkuaYqtx2W5QHnagg4RL6A2f7bZhiFcssQ5pump`
-- 00:57Z CI (MIGRATED, $74,114 mcap, $75,272 5m vol): PASS at conviction 4, PASS. Cash Inu is a 25-copy vamp field and the radar says it isn't the leader. It's 11 minutes old and bleeding off its spike with no printed higher low. Blocker: split crowd. (V1, V3)  
-  CA `72Uxzwsgv99kfMtXzmK9LnwQ4Y2P7A9XG926haKtpump`
-- 00:57Z Mandy (DIP, $188,834 mcap, $5,173 5m vol): PASS at conviction 3, PASS. Mandy is down 59% with sellers in control, no higher low, and a fading theme with no catalyst. Falling knife in a 12-copy field. (V1, V6)  
-  CA `2xCd5qHX5tW6pGUo7zfgHSSAnRjJwPA7Sz1Fu4fWcJjX`
-- 00:56Z AI (MIGRATED, $51,387 mcap, $6,624 5m vol): PASS at conviction 2, PASS: flow below pace, 90% off the high, and the ticker has a bigger vamp leader (I). Blocker: "flow below pace" and "split crowd" (V1, V3, V6).  
-  CA `8SacNb6sgiAcscRe4m915B6nL9XX55dk8FS7L532pump`
-- 00:56Z AI (DIP, $62,967 mcap, $18,534 5m vol): REJECT, Bundles: 10 linked wallet cluster(s) hold 54.6% of supply (>20%) (V17)  
-  CA `CV6DiAYvr9oGUrsH4qY565srzL5RT9BYj8np7qD6pump`
 
 ## What its skips did next (last 48h)
 A skip "ran" if the coin reached the first target (1.5x) from the skip price before a 20% drop, "dumped" if the drop came first. Sampled every 10 min, followed 6h.
-- top 10 over 25%: blocked 73, ran 14, dumped 53, flat 3, open 3 (saving losses: keep it)
+- top 10 over 25%: blocked 76, ran 15, dumped 54, flat 3, open 4 (saving losses: keep it)
   - ran: BUFO up to 1.83x  
     CA `44gNPkTVKwfNf2fPBdwiPZrVVXLVYTkmBk5VdBzrpump`
   - ran: clawd up to 2.1x  
     CA `85osSLFjprTGWRkrXMTGjsmaWR2pjUb38AiJzr16pump`
   - ran: SHARK up to 1.68x  
     CA `3yxsNufZSWNrvMXw8gwCJFCuUkuTDsb1a55aR7evpump`
-- falling knife (code): blocked 53, ran 7, dumped 44, flat 1, open 1 (saving losses: keep it)
+- falling knife (code): blocked 54, ran 7, dumped 44, flat 1, open 2 (saving losses: keep it)
   - ran: DACT up to 2.63x  
     CA `GZUGmAtuSx9755C3W1CLDVtA7MZQ8QWF1XjhjEbjpump`
   - ran: Apocrycoin up to 1.54x  
@@ -120,7 +120,7 @@ A skip "ran" if the coin reached the first target (1.5x) from the skip price bef
     CA `9rbKkz2BDQBVgZmrHY6d7PTq2ge91gkpEyE4y9PPpump`
   - ran: PIPI up to 1.63x  
     CA `J51xgomTx21VHY62Q7uv2otWRUSq71WeaApLfsAnpump`
-- bundles over the line: blocked 16, ran 4, dumped 6, flat 2, open 4 (mixed)
+- bundles over the line: blocked 16, ran 4, dumped 7, flat 2, open 3 (mixed)
   - ran: BIG up to 1.93x  
     CA `34DXEU2ttEtBSb1TqGJm7izgvYTTkqKcCoiNWdPDpump`
   - ran: VI up to 1.56x  
@@ -149,7 +149,7 @@ A skip "ran" if the coin reached the first target (1.5x) from the skip price bef
     CA `4s38cgZJN4J39S2BQwCkcsJJ9ZGeJSjw8vK9wVtupump`
   - ran: AI up to 1.51x  
     CA `8SacNb6sgiAcscRe4m915B6nL9XX55dk8FS7L532pump`
-- too new / sniping: blocked 4, ran 0, dumped 4, flat 0, open 0 (saving losses: keep it)
+- too new / sniping: blocked 5, ran 0, dumped 4, flat 0, open 1 (saving losses: keep it)
 - hack story (owner rule): blocked 3, ran 0, dumped 0, flat 3, open 0 (too few played out to judge)
 
 ## Daily review (2026-11-16, claude-opus-5-5)
@@ -191,13 +191,13 @@ Nothing shows a positive edge after costs. Over 309 settled coins, every setup l
 The meta right now is dog and animal reskins on fresh pumpswap pairs, and that's where the live volume is: LOOSY (Cool Dog, $312k cap, $116k 5m, 78% buys), the Inu cluster (I, INU, CI, Apple Inu), and Brian Anthropic Cat ($193k cap, $34k 5m, 73% buys), most under three hours old. Cookie is the second theme: COOKIE is at $243k with $67k 5m and 62% buys, but scan_movers also shows a dead Cookiecoin copy at $26 5m, so it's a vamp setup to resolve before touching it. GTA and name-play coins are fading (OFFICIALGTA $7.5k 5m on a $1.2M cap, GTA6 Mascot $1.1k 5m, Melman and Dancing Rats near zero 5m), and the Trump dinner theme isn't in the movers at all, so it's news, not trading. The crawler's FINOAWIF +715% and $295k figures don't match scan_movers (now $1.3k cap, zero 5m, -99.6% in the hour), so I'm discarding that claim. Setups to research now: COOKIE only on a 40-50% pullback with 5m buys holding above $10k and the original confirmed, and LOOSY or Brian only after the first spike fades with volume holding; holder, dev and bundle checks run on each before any entry.
 
 ## Moving most in its scans, last 30 min (1h volume)
-- COOKIE: $1,234,518 1h vol, $243,444 mcap, +451% 1h  
-  CA `7q3j8jkgGzVuk7pcQ2uQqWaFwyYzJiCanoRdBtHHpump`
-- AI: $369,657 1h vol, $51,387 mcap, -84% 1h  
-  CA `8SacNb6sgiAcscRe4m915B6nL9XX55dk8FS7L532pump`
-- AI: $248,199 1h vol, $62,967 mcap, +8% 1h  
-  CA `CV6DiAYvr9oGUrsH4qY565srzL5RT9BYj8np7qD6pump`
-- CI: $193,559 1h vol, $73,076 mcap, +27% 1h  
-  CA `72Uxzwsgv99kfMtXzmK9LnwQ4Y2P7A9XG926haKtpump`
+- iAgent: $687,259 1h vol, $453,652 mcap, +307% 1h  
+  CA `44DZsPNJUtUyTkELAFYdwCpe82sEt12HZKrMgK1Spump`
+- COOKIE: $582,596 1h vol, $59,685 mcap, -3% 1h  
+  CA `GiNDGcqc7xk9F88sgE9KF7Bo5migm4Bh8Y8CJVM7pump`
 - LOOSY: $147,179 1h vol, $311,673 mcap, +678% 1h  
   CA `HF2RBPrfNBk9TxggL2cYZFEKSgirzh5HKCngLENTpump`
+- I: $106,075 1h vol, $45,243 mcap, +52% 1h  
+  CA `3emn4AZwHpsH8K6rqjsMTeFHJTg4XqdPe9PBHpV3JANJ`
+- OGTA: $87,445 1h vol, $1,217,949 mcap, +42% 1h  
+  CA `7bCiddGLe5aM8HE2pigT9jsqkmC1HSPxyXN6GkHEpump`
