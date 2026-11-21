@@ -1,13 +1,13 @@
 # Trencher live report
 
-Updated 2026-11-21T06:34:28Z (paper trading, never real money)
+Updated 2026-11-21T18:46:33Z (paper trading, never real money)
 
 - Equity: $74.23 (-25.8% vs $100 start)
 - Closed trades: 22, 3 wins
 - Fees paid: $14.78 (axiom $2.81, network $9.18, pool $2.66), plus $4.15 lost to slippage
 - New trades: WATCH-ONLY (scans and decides, buys nothing)
-- Brain: subscription, claude-haiku-5-5 for routine calls, claude-opus-5-5 for the daily review; 328 routine calls and 91 plan-limit hits in 48h
-- Watch log: 75 coins being followed, 2396 filed, 0 would-buys (6h follow, sampled every 2 min)
+- Brain: subscription, claude-haiku-5-5 for routine calls, claude-opus-5-5 for the daily review; 261 routine calls and 19 plan-limit hits in 48h
+- Watch log: 18 coins being followed, 2453 filed, 0 would-buys (6h follow, sampled every 2 min)
 
 ## Scorecard (after fees)
 - 22 closed, 3 won (14%), net $-25.79
@@ -80,19 +80,7 @@ Updated 2026-11-21T06:34:28Z (paper trading, never real money)
 
 ## What its skips did next (last 48h)
 A skip "ran" if the coin reached the first target (1.5x) from the skip price before a 20% drop, "dumped" if the drop came first. Sampled every 10 min, followed 6h.
-- top 10 over 25%: blocked 43, ran 1, dumped 38, flat 3, open 1 (saving losses: keep it)
-  - ran: J4F up to 2.22x  
-    CA `pwtKLrLyRZy78eM2mR74xxe7mzREH1MxGcbvZWApump`
-- falling knife (code): blocked 30, ran 1, dumped 26, flat 1, open 2 (saving losses: keep it)
-  - ran: PIPI up to 1.65x  
-    CA `6MKD1NkLvWRqdbFtqmgACBwUV5o6GJpZry8HkNgzpump`
-- RugCheck danger: blocked 25, ran 5, dumped 20, flat 0, open 0 (saving losses: keep it)
-  - ran: Leonida up to 1.51x  
-    CA `9rbKkz2BDQBVgZmrHY6d7PTq2ge91gkpEyE4y9PPpump`
-  - ran: PIPI up to 1.63x  
-    CA `J51xgomTx21VHY62Q7uv2otWRUSq71WeaApLfsAnpump`
-  - ran: 62BIRDS up to 1.87x  
-    CA `BWkAvguMNpEFPVQ9EnSV8mQ2VjoDDAvQppwCWcD1pump`
+- top 10 over 25%: blocked 32, ran 0, dumped 30, flat 2, open 0 (saving losses: keep it)
 - flow below pace: blocked 23, ran 7, dumped 15, flat 1, open 0 (saving losses: keep it)
   - ran: SI up to 1.53x  
     CA `4s38cgZJN4J39S2BQwCkcsJJ9ZGeJSjw8vK9wVtupump`
@@ -100,28 +88,34 @@ A skip "ran" if the coin reached the first target (1.5x) from the skip price bef
     CA `8SacNb6sgiAcscRe4m915B6nL9XX55dk8FS7L532pump`
   - ran: SWRDXSTFF up to 1.77x  
     CA `Csoj9XHJfBAxsKswqKKBENnGeoRDHtACfyYi7HmJpump`
-- too new / sniping: blocked 19, ran 1, dumped 16, flat 0, open 2 (saving losses: keep it)
+- RugCheck danger: blocked 21, ran 3, dumped 18, flat 0, open 0 (saving losses: keep it)
+  - ran: 62BIRDS up to 1.87x  
+    CA `BWkAvguMNpEFPVQ9EnSV8mQ2VjoDDAvQppwCWcD1pump`
+  - ran: TOP up to 1.67x  
+    CA `hT9xKkj6dPMz97zcxEEE5T5fFdm6x31P6FodwT8pump`
+  - ran: CAP up to 2.6x  
+    CA `CxGYpWoTun4J3xD4cNwXFRn2W3RzJozTxyU9nbJ4pump`
+- falling knife (code): blocked 19, ran 0, dumped 18, flat 1, open 0 (saving losses: keep it)
+- too new / sniping: blocked 19, ran 1, dumped 17, flat 1, open 0 (saving losses: keep it)
   - ran: AudaCity up to 1.96x  
     CA `3rtTUCpe1BBgCTNWQ9jK3xkAz1E7SPqMt4uYHx1Bpump`
-- near the high / chasing: blocked 17, ran 4, dumped 12, flat 0, open 1 (saving losses: keep it)
+- near the high / chasing: blocked 17, ran 4, dumped 13, flat 0, open 0 (saving losses: keep it)
   - ran: BEAR up to 2.32x  
     CA `DCPm44cT9i39HjR13QHYgxkR7wEx9TDeniGuayB5pump`
   - ran: ZOL up to 1.55x  
     CA `UQLWvkwiSsnViuVBy7oArMtzb5RAZyrdJ79amQFrzoL`
   - ran: STICK up to 2.08x  
     CA `532iaQrhFCD3QKFHsAtFAQ1mQZMjMdNrPXLeCS6cpump`
-- thin 5m volume: blocked 12, ran 0, dumped 9, flat 2, open 1 (saving losses: keep it)
-- bundles over the line: blocked 11, ran 0, dumped 8, flat 1, open 2 (saving losses: keep it)
-- dev share over 1%: blocked 9, ran 2, dumped 5, flat 1, open 1 (saving losses: keep it)
-  - ran: LOOSY up to 1.71x  
-    CA `FtSWWxVmKNXz8ksJxzJJ7BdDWXbQb3vC94J99oyypump`
+- thin 5m volume: blocked 11, ran 0, dumped 8, flat 2, open 1 (saving losses: keep it)
+- bundles over the line: blocked 10, ran 0, dumped 7, flat 2, open 1 (saving losses: keep it)
+- falling knife / no higher low: blocked 7, ran 2, dumped 4, flat 1, open 0 (saving losses: keep it)
+  - ran: pCAT up to 1.58x  
+    CA `BLdC7hwRijHudKYDmtEkx1SHUdBWm8XbjBCSvwa6pump`
+  - ran: MACCA up to 1.71x  
+    CA `C5eGEXJZYvXEbKdyvPtasksjGNV4xvMowpKM92bVv47f`
+- dev share over 1%: blocked 5, ran 1, dumped 2, flat 1, open 1 (saving losses: keep it)
   - ran: MANDY up to 1.54x  
     CA `GQngHP8P6s45MxWnU7JsocfV2HjPQdJZmCEAYKpBpump`
-- other: blocked 9, ran 2, dumped 7, flat 0, open 0 (saving losses: keep it)
-  - ran: After up to 2.36x  
-    CA `Db2s6iVvenVhJkj96P4UbZWEAYX4nUhgXhSVbQrwpump`
-  - ran: Ant up to 2.32x  
-    CA `HKGtUPPKvXkMPyNX4QeMubENuiimFQ8W1Veg4y52pump`
 
 ## Daily review (2026-11-20, claude-opus-5-5)
 No edge yet. All 322 settled coins lost money after costs on the simple plan, and so did every setup: the average was -13.8%, of which about 9.9% was round-trip cost, so the price moves alone already lost about 4%. With a +50% target, a -20% stop and about 10% cost, a winner nets about +40% and a loser about -30%, so a setup has to reach 1.5x before the stop roughly 43% of the time just to break even. The best bucket, FINAL_STRETCH, did it 27.7% of the time (n=47). The overall average is clearly negative: about ±3.6 points of noise at n=322. Even FINAL_STRETCH's -10.6% has a 95% range of roughly ±9 points that stays below zero, and the real sample is smaller than it looks because of meta clustering (GTA and FIONA copies) and at least one coin logged twice. The routine model made zero would-buys, so there is nothing to compare against what it passed on. The 79 coins it reviewed and passed did -14.4%, the same as the 168 the checklist failed (-14.0%). On this data neither the checklist nor the model separates winners from losers.
@@ -159,7 +153,7 @@ No edge yet. All 322 settled coins lost money after costs on the simple plan, an
 - [2026-11-02 20:25] I expected Slingoor, a clean MIGRATED leader with $25k of 5m flow at pace and a 0.77 buy share, to retest its $408k high from $304k. It never went green (0.98x peak) and hit the -20% stop in 2 minutes, a -$2.86 probe. My own thesis admitted there was no printed higher low after a peak only 6 minutes old, so this confirms the money-shape rule: buy share and flow are not structure (V1, V6). Next time a MIGRATED pullback with no higher low above the hourly low is a PASS with blocker "no higher low", not a probe. This is one loss, so it adds no new ban beyond the rule I already have.
 
 ## Meta right now
-The meta in this scan is fresh pump.fun character coins: cartoon and mascot names (S&P500 SpongeBob/Patrick, Pink Hippo, Cool Dog, Cartoon Money, Rudolph, BANDANA CAT), with nearly all live volume on coins under about 3 hours old. Rising is thin: only SBS (Solana Beauty Salon, $99k cap, $16.5k 5m, 63% buys, 1.5h old) clears the $10k 5m bar with buyers, and it is -18% on the hour, so it's a research candidate to watch for a dip, not a chase. S&P500 has $20k 5m on a $3k cap but only 39% buys and -89% on the hour, which looks like a flush, not a setup. Fading: BTC, CAP, Mandy and S&P500 are all down 65-89% in the hour; the web's JENSEN, B&B and Jailbreak mentions aren't in the scan_movers list, so I'm not counting them as confirmed movers, and Jailbreak is not a setup until its name clears the no-exploit rule. Holder, dev and bundle checks on SBS are still pending, so it's a research item, not a buy.
+Meta from scan_movers: celebrity and pop-culture name coins are where the fresh buyers are, and the cartoon-mascot wave is flushing. Rising: Lebrain James (LEBRAIN, $24k cap, $17k 5m, 60% buys, +896% in the hour, six minutes old) and Ring Cat (RCAT, $27k cap, 70% buys), but RCAT's whole hour of volume landed in the last 5 minutes, which reads like a burst rather than organic flow, and it sits below the $30k migrated-tab floor. GTA6CAT (GATO, $3.1M, 74% buys) rides the GTA 6 ticker-confusion story the web confirms, but at $2.4k 5m it fails the $10k bar, so it's a theme, not a setup. Fading: the SpongeBob/S&P500 cartoon coin (-94%), TikTok Coin (-84%), PUNCH and PUMPGIVEN (-66% to -68%), and JENSEN (-31% on $5k 5m against $247k over the hour), which is a falling knife, not a DIP. Setups to research, not buy: LEBRAIN on a pullback that holds with buyers, and RCAT only once it clears $30k with spread-out volume; both still need holder, dev and bundle checks and a written exit before any entry.
 
 ## Moving most in its scans, last 30 min (1h volume)
 - JENSEN: $247,154 1h vol, $1,723,858 mcap, -31% 1h  
