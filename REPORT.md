@@ -1,13 +1,13 @@
 # Trencher live report
 
-Updated 2026-11-21T01:12:57Z (paper trading, never real money)
+Updated 2026-11-21T01:28:13Z (paper trading, never real money)
 
 - Equity: $74.23 (-25.8% vs $100 start)
 - Closed trades: 22, 3 wins
 - Fees paid: $14.78 (axiom $2.81, network $9.18, pool $2.66), plus $4.15 lost to slippage
 - New trades: WATCH-ONLY (scans and decides, buys nothing)
-- Brain: subscription, claude-haiku-5-5 for routine calls, claude-opus-5-5 for the daily review; 352 routine calls and 122 plan-limit hits in 48h
-- Watch log: 77 coins being followed, 2385 filed, 0 would-buys (6h follow, sampled every 2 min)
+- Brain: subscription, claude-haiku-5-5 for routine calls, claude-opus-5-5 for the daily review; 353 routine calls and 121 plan-limit hits in 48h
+- Watch log: 76 coins being followed, 2389 filed, 0 would-buys (6h follow, sampled every 2 min)
 
 ## Scorecard (after fees)
 - 22 closed, 3 won (14%), net $-25.79
@@ -73,9 +73,15 @@ Updated 2026-11-21T01:12:57Z (paper trading, never real money)
   CA `H4gHnZ3NCU7Z9XQwGX6YYJNyieGEW8pqwGRUcdSxpump`
 
 ## Last scan
-- 01:12Z: 3 coins, 3 with pairs, 0 passed the market filters, 0 researched
+- 01:27Z: 6 coins, 6 with pairs, 0 passed the market filters, 0 researched
 
 ## Coins it looked at, and why it passed
+- 01:24Z BUCKME (MIGRATED, $105,779 mcap, $2,480 5m vol): REJECT, Bundles: 2 linked wallet cluster(s) hold 30.7% of supply (>20%) (V17)  
+  CA `DEgAkPNxz3dtMsesD2FDkNA2S6sch5YWfGUDT7R2pump`
+- 01:23Z BANDANA (MIGRATED, $176,740 mcap, $5,322 5m vol): PASS at conviction 3, PASS: flow below pace, and it's not the vamp leader. 5m is $5.3k at 0.43x the hourly pace, and the field's volume sits on another coin. (V1, V3)  
+  CA `2KRbMf4itijwsTHb5dQtiBpfptyNmhpVzmpdj4qqN2yx`
+- 01:21Z SBS (MIGRATED, $99,387 mcap, $16,484 5m vol): PASS at conviction 3, PASS: SBS is a copy in a 22-coin beauty/salon field, the theme is at 0.17x pace, and the chart data is broken. Blocker: "split crowd" plus "no catalyst". (V1, V3, V6)  
+  CA `4mE8dPH1RTqQBT5EPim5Ubt2v2wXZ9zgEDDWmL1o1EYu`
 - 01:04Z GESTALT (FINAL_STRETCH, $18,741 mcap, $35,359 5m vol): PASS at conviction 3, PASS. Gestalt is a 26-copy "gestalt" vamp field, up 704% in an hour with no base, bundles at 6.5% in one cluster, and no story behind the name. Blocker: chasing spike. (V1, V3, V6)  
   CA `4KgreHYuTGrPdbFinSr4AyWEZBDgxC4xWvGe9T2ypump`
 - 01:02Z TikTok (FINAL_STRETCH, $16,903 mcap, $4,540 5m vol): REJECT, RugCheck danger: Creator history of rugged tokens  
@@ -90,16 +96,10 @@ Updated 2026-11-21T01:12:57Z (paper trading, never real money)
   CA `CUfphqswgDK3VP3FX7CiShVCTdGQneFusYRFViABpump`
 - 00:44Z LOOSY (MIGRATED, $148,216 mcap, $2,438 5m vol): PASS at conviction 2, PASS: LOOSY is 95% off a $3.03M peak with $2.4k of 5m volume, a 22-copy field and a theme at 0.59x pace. That's a bottom buy with no catalyst, and the site doesn't show this CA. Pass (V1, V6, V13).  
   CA `HF2RBPrfNBk9TxggL2cYZFEKSgirzh5HKCngLENTpump`
-- 00:37Z BANDANA (MIGRATED, $250,038 mcap, $17,096 5m vol): PASS at conviction 2, PASS. Flow is below pace, there's no printed higher low, and it's one of 24 cat copies with the theme at 0.14x pace. The price data also doesn't reconcile. (V1, V6, V3)  
-  CA `2KRbMf4itijwsTHb5dQtiBpfptyNmhpVzmpdj4qqN2yx`
-- 00:35Z SBS (MIGRATED, $73,410 mcap, $3,781 5m vol): PASS at conviction 2, PASS: SBS. 5m flow is $3.8k at 0.14x its hourly pace, the price feed is broken, and it's one of 23 beauty-salon copies. Blocker: flow below pace. (V1, V6, V3)  
-  CA `4mE8dPH1RTqQBT5EPim5Ubt2v2wXZ9zgEDDWmL1o1EYu`
-- 00:17Z Mandy (FINAL_STRETCH, $14,079 mcap, $3,616 5m vol): PASS at conviction 2, PASS. Pink Hippo (Mandy) is a $14k pump.fun coin with $3.6k 5m, under the $10k bar, below pace, and riding a GTA tie-in the radar calls fading. Vamp field. (V1, V6)  
-  CA `HmJRWZ8tFfuCY9A4MrSftnrvEFCApw1hyqHtb9Rzpump`
 
 ## What its skips did next (last 48h)
 A skip "ran" if the coin reached the first target (1.5x) from the skip price before a 20% drop, "dumped" if the drop came first. Sampled every 10 min, followed 6h.
-- top 10 over 25%: blocked 52, ran 1, dumped 46, flat 4, open 1 (saving losses: keep it)
+- top 10 over 25%: blocked 51, ran 1, dumped 45, flat 4, open 1 (saving losses: keep it)
   - ran: J4F up to 2.22x  
     CA `pwtKLrLyRZy78eM2mR74xxe7mzREH1MxGcbvZWApump`
 - falling knife (code): blocked 37, ran 3, dumped 32, flat 1, open 1 (saving losses: keep it)
@@ -109,14 +109,14 @@ A skip "ran" if the coin reached the first target (1.5x) from the skip price bef
     CA `43Z5f8GboUfc6M6wtaGGtFciEhLXixJEwQKv8wBUpump`
   - ran: PIPI up to 1.65x  
     CA `6MKD1NkLvWRqdbFtqmgACBwUV5o6GJpZry8HkNgzpump`
-- RugCheck danger: blocked 29, ran 6, dumped 22, flat 0, open 1 (saving losses: keep it)
+- RugCheck danger: blocked 29, ran 6, dumped 23, flat 0, open 0 (saving losses: keep it)
   - ran: CATCOIN up to 2.06x  
     CA `9JngoeaZHbV4f5EyRR3oDLNPH7VUGw1PYQC4s6j2pump`
   - ran: Leonida up to 1.51x  
     CA `9rbKkz2BDQBVgZmrHY6d7PTq2ge91gkpEyE4y9PPpump`
   - ran: PIPI up to 1.63x  
     CA `J51xgomTx21VHY62Q7uv2otWRUSq71WeaApLfsAnpump`
-- flow below pace: blocked 22, ran 6, dumped 13, flat 1, open 2 (saving losses: keep it)
+- flow below pace: blocked 23, ran 7, dumped 14, flat 1, open 1 (saving losses: keep it)
   - ran: SI up to 1.53x  
     CA `4s38cgZJN4J39S2BQwCkcsJJ9ZGeJSjw8vK9wVtupump`
   - ran: AI up to 1.51x  
@@ -126,14 +126,14 @@ A skip "ran" if the coin reached the first target (1.5x) from the skip price bef
 - too new / sniping: blocked 18, ran 1, dumped 16, flat 0, open 1 (saving losses: keep it)
   - ran: AudaCity up to 1.96x  
     CA `3rtTUCpe1BBgCTNWQ9jK3xkAz1E7SPqMt4uYHx1Bpump`
-- near the high / chasing: blocked 16, ran 4, dumped 11, flat 0, open 1 (saving losses: keep it)
+- near the high / chasing: blocked 16, ran 4, dumped 12, flat 0, open 0 (saving losses: keep it)
   - ran: BEAR up to 2.32x  
     CA `DCPm44cT9i39HjR13QHYgxkR7wEx9TDeniGuayB5pump`
   - ran: ZOL up to 1.55x  
     CA `UQLWvkwiSsnViuVBy7oArMtzb5RAZyrdJ79amQFrzoL`
   - ran: STICK up to 2.08x  
     CA `532iaQrhFCD3QKFHsAtFAQ1mQZMjMdNrPXLeCS6cpump`
-- thin 5m volume: blocked 14, ran 0, dumped 11, flat 3, open 0 (saving losses: keep it)
+- thin 5m volume: blocked 13, ran 0, dumped 10, flat 3, open 0 (saving losses: keep it)
 - bundles over the line: blocked 13, ran 0, dumped 9, flat 2, open 2 (saving losses: keep it)
 - dev share over 1%: blocked 10, ran 2, dumped 6, flat 1, open 1 (saving losses: keep it)
   - ran: LOOSY up to 1.71x  
@@ -185,13 +185,13 @@ No edge yet. All 322 settled coins lost money after costs on the simple plan, an
 The meta is fresh pump.fun launches with live flow, and age is the common thread: almost every coin with real 5m volume and buyers is under about 3 hours old, while the older names (HOGE 137h, RUDY 14h, BUCKME 44h) are dead on 5m. Three themes show up across the movers: cute mascot and animal characters (B&B, Pink Hippo/Mandy), a famous-person name (JENSEN), and tech-flavored names (GPU COIN, thin at $600 5m). Rising: JENSEN at $800k cap with $208k 5m, 72% buys and +741% in the hour, and B&B at $16k cap with $60k 5m and 57% buys, which is volume at 3-4x the cap and farm-shaped until holders and bundles say otherwise. Fading: MONKE, FARM, BATHROOM, Green Dildo and the profanity-named coin are down 50-99% or sell-heavy on 5m, so shock and edgy names are not working in this scan. That contradicts the crawler's TITTYVERSE read, but TITTYVERSE is not in the movers, so I'm not using it. The Trump and GTA headlines are fading as well, so they are not the meta. Setups to research, not buy: JENSEN only as a dip if 5m holds above $10k and buys stay above 60% after a pullback, and B&B only after holder and bundle checks; Mandy is under the $10k 5m bar, so watch only. Holder, dev and bundle checks are pending on all of them, and Jailbreak is not named as a setup until its name is cleared against the no-exploit rule.
 
 ## Moving most in its scans, last 30 min (1h volume)
-- JENSEN: $1,453,067 1h vol, $2,016,462 mcap, +2026% 1h  
-  CA `DkHsZ1kjd2Fua8sgKE6PhHhyCdXYscbDVN7mAfiGpump`
-- Mandy: $208,618 1h vol, $6,942 mcap, -74% 1h  
+- Mandy: $211,401 1h vol, $4,694 mcap, -82% 1h  
   CA `HmJRWZ8tFfuCY9A4MrSftnrvEFCApw1hyqHtb9Rzpump`
-- B&B: $98,829 1h vol, $2,327 mcap, -24% 1h  
-  CA `9iNRBbcNh6sMoGSxbe7AdfVUSQm7vDckEVJeDhSCpump`
+- BANDANA: $148,205 1h vol, $176,184 mcap, -32% 1h  
+  CA `2KRbMf4itijwsTHb5dQtiBpfptyNmhpVzmpdj4qqN2yx`
+- SBS: $125,591 1h vol, $99,387 mcap, -18% 1h  
+  CA `4mE8dPH1RTqQBT5EPim5Ubt2v2wXZ9zgEDDWmL1o1EYu`
 - GESTALT: $71,568 1h vol, $15,631 mcap, +571% 1h  
   CA `4KgreHYuTGrPdbFinSr4AyWEZBDgxC4xWvGe9T2ypump`
-- CAP: $67,998 1h vol, $2,296 mcap, -94% 1h  
-  CA `CxGYpWoTun4J3xD4cNwXFRn2W3RzJozTxyU9nbJ4pump`
+- TikTok: $44,766 1h vol, $16,466 mcap, +602% 1h  
+  CA `7CQx6HdDjowjcDUiNs1EfYqK5bp1hAR87CRsyLg8pump`
