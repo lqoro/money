@@ -1,13 +1,13 @@
 # Trencher live report
 
-Updated 2026-11-21T21:23:06Z (paper trading, never real money)
+Updated 2026-11-21T21:38:19Z (paper trading, never real money)
 
 - Equity: $74.23 (-25.8% vs $100 start)
 - Closed trades: 22, 3 wins
 - Fees paid: $14.78 (axiom $2.81, network $9.18, pool $2.66), plus $4.15 lost to slippage
 - New trades: WATCH-ONLY (scans and decides, buys nothing)
-- Brain: subscription, claude-haiku-5-5 for routine calls, claude-opus-5-5 for the daily review; 274 routine calls and 4 plan-limit hits in 48h
-- Watch log: 39 coins being followed, 2471 filed, 0 would-buys (6h follow, sampled every 2 min)
+- Brain: subscription, claude-haiku-5-5 for routine calls, claude-opus-5-5 for the daily review; 273 routine calls and 2 plan-limit hits in 48h
+- Watch log: 43 coins being followed, 2471 filed, 0 would-buys (6h follow, sampled every 2 min)
 
 ## Scorecard (after fees)
 - 22 closed, 3 won (14%), net $-25.79
@@ -73,9 +73,17 @@ Updated 2026-11-21T21:23:06Z (paper trading, never real money)
   CA `H4gHnZ3NCU7Z9XQwGX6YYJNyieGEW8pqwGRUcdSxpump`
 
 ## Last scan
-- 21:22Z: 0 coins, 0 with pairs, 0 passed the market filters, 0 researched
+- 21:37Z: 0 coins, 0 with pairs, 0 passed the market filters, 0 researched
 
 ## Coins it looked at, and why it passed
+- 21:32Z BTC (MIGRATED, $45,523 mcap, $66,662 5m vol): PASS at conviction 2, PASS. Eight minutes old, up 33% in five minutes, and one of 24 copies of "BTC." The CoinGecko trending flag is probably Bitcoin's own ticker, not this coin's. Chasing a vamp spike (V1, V3, V6).  
+  CA `2G5b75jm9HtJmAccjxpzdWGs5r7XXeMYLTANoEcvpump`
+- 21:29Z chud (MIGRATED, $396,175 mcap, $1,248 5m vol): REJECT, 5m volume $1,248 is dead (<$2,000) (V1)  
+  CA `EV7J2QaPXPytSkM1LD9GPRkgAbmSEr9R3kYiXBzbpump`
+- 21:27Z UrAnus (MIGRATED, $291,182 mcap, $66,196 5m vol): REJECT, Top 10 hold 46.7% ex-pool (>25%) (V13)  
+  CA `27u3diWofnXGUkddjLGhcy1nRssFKHW3RtNbpWzUpump`
+- 21:26Z FINGERS (MIGRATED, $184,333 mcap, $25,434 5m vol): REJECT, RugCheck danger: Creator history of rugged tokens  
+  CA `BSF5xg7CuxkQWsbJWyHYw2HnuNbQtKybGaNhz9cCpump`
 - 21:19Z greg (DIP, $426,315 mcap, $3,112 5m vol): PASS at conviction 3, PASS: "split crowd". This is a copy in a 24-coin greg field, not the leader, and nothing on the radar or web supports a bottom buy (V1, V3, V13).  
   CA `4Ye6Y6Vaic8cyPdfW2f9PcLhXkysBtSmV84G8X7spump`
 - 21:09Z DIGS (MIGRATED, $302,101 mcap, $2,392 5m vol): REJECT, Bundles: 10 linked wallet cluster(s) hold 100.0% of supply (>20%) (V17)  
@@ -91,22 +99,22 @@ Updated 2026-11-21T21:23:06Z (paper trading, never real money)
 
 ## What its skips did next (last 48h)
 A skip "ran" if the coin reached the first target (1.5x) from the skip price before a 20% drop, "dumped" if the drop came first. Sampled every 10 min, followed 6h.
-- top 10 over 25%: blocked 28, ran 1, dumped 25, flat 2, open 0 (saving losses: keep it)
+- top 10 over 25%: blocked 29, ran 1, dumped 25, flat 2, open 1 (saving losses: keep it)
   - ran: :) up to 1.65x  
     CA `Dtx414D8jurspmB1jqJWsYU66pemoXRjQeXx7TC1pump`
-- flow below pace: blocked 27, ran 7, dumped 18, flat 1, open 1 (saving losses: keep it)
+- flow below pace: blocked 26, ran 7, dumped 17, flat 1, open 1 (saving losses: keep it)
   - ran: SI up to 1.53x  
     CA `4s38cgZJN4J39S2BQwCkcsJJ9ZGeJSjw8vK9wVtupump`
   - ran: AI up to 1.51x  
     CA `8SacNb6sgiAcscRe4m915B6nL9XX55dk8FS7L532pump`
   - ran: SWRDXSTFF up to 1.77x  
     CA `Csoj9XHJfBAxsKswqKKBENnGeoRDHtACfyYi7HmJpump`
-- too new / sniping: blocked 21, ran 2, dumped 18, flat 1, open 0 (saving losses: keep it)
+- too new / sniping: blocked 22, ran 2, dumped 18, flat 1, open 1 (saving losses: keep it)
   - ran: AudaCity up to 1.96x  
     CA `3rtTUCpe1BBgCTNWQ9jK3xkAz1E7SPqMt4uYHx1Bpump`
   - ran: TA up to 1.77x  
     CA `DKUM8qywmi8X9RYK2wUgnTw8QKjh1nYDThZR1GXPpump`
-- RugCheck danger: blocked 18, ran 2, dumped 16, flat 0, open 0 (saving losses: keep it)
+- RugCheck danger: blocked 19, ran 2, dumped 17, flat 0, open 0 (saving losses: keep it)
   - ran: TOP up to 1.67x  
     CA `hT9xKkj6dPMz97zcxEEE5T5fFdm6x31P6FodwT8pump`
   - ran: CAP up to 2.6x  
@@ -118,8 +126,8 @@ A skip "ran" if the coin reached the first target (1.5x) from the skip price bef
     CA `UQLWvkwiSsnViuVBy7oArMtzb5RAZyrdJ79amQFrzoL`
   - ran: STICK up to 2.08x  
     CA `532iaQrhFCD3QKFHsAtFAQ1mQZMjMdNrPXLeCS6cpump`
+- thin 5m volume: blocked 14, ran 0, dumped 10, flat 2, open 2 (saving losses: keep it)
 - falling knife (code): blocked 14, ran 0, dumped 13, flat 1, open 0 (saving losses: keep it)
-- thin 5m volume: blocked 13, ran 0, dumped 10, flat 2, open 1 (saving losses: keep it)
 - bundles over the line: blocked 10, ran 0, dumped 7, flat 1, open 2 (saving losses: keep it)
 - falling knife / no higher low: blocked 10, ran 2, dumped 5, flat 1, open 2 (saving losses: keep it)
   - ran: pCAT up to 1.58x  
@@ -169,7 +177,7 @@ Nothing has a positive after-cost edge. All 98 settled coins average -15.7% net 
 Meta, read from scan_movers: the trenches are mostly fresh sub-$35k launches bleeding out. Eleven of fifteen movers are under 2 hours old, and most of the small ones are down 60-89% on the hour with 5m volume under $1k (ILY, Singularity, Cybergeddon, UNI, TIMON, RAWDOG, OBAMA, ANIMAL). Those are falling knives, not dips (V1). The political and famous-name theme is fading: OBAMA is -86% on $145 of 5m volume, and the Trump-dinner headlines are negative. The real flow is HOUSE ($135k cap, $96k 5m, 62% buys, about 6 minutes old on Raydium) and QBIT (+309% in the hour, $8k cap, 64% buys, about 18 minutes old). Both are research, not buys yet. HOUSE needs bundle and holder checks because a coin that new at that volume can be manufactured (V13). QBIT is a chase unless a pullback holds with buyers stepping back in. TA and JENSEN appear only in the meta summary, not the raw movers list, so their numbers are unverified; TA is a politician-name coin and only gets a look if no politician pushed its CA (V13). The cat and GTA wave from the web (GATO, LEBRAIN, RCAT) is not in the movers, so it is a theme to watch, not the meta.
 
 ## Moving most in its scans, last 30 min (1h volume)
-- CLAWDIA: $235,239 1h vol, $1,381 mcap, -96% 1h  
+- CLAWDIA: $235,257 1h vol, $1,414 mcap, -95% 1h  
   CA `BjvD62CeknCCn94ciFN5aHPoNvSmcXvVHr8XonBpump`
 - SHIT: $219,157 1h vol, $1,792,697 mcap, +8% 1h  
   CA `Fn95NtGXWPaJXc4N5y9rVkUq1NwZbjBNJzPVvNRLpump`
@@ -177,5 +185,5 @@ Meta, read from scan_movers: the trenches are mostly fresh sub-$35k launches ble
   CA `4Kfos2jUqUxwbDqNAJL16B4C99tdtaMSWZS5XmuSZr6Z`
 - PUNANI: $125,962 1h vol, $843,417 mcap, -68% 1h  
   CA `2TngN4B7XaoGSKsYvttq5bFAdM4Z4xCSnuyRwGiFpump`
-- HODL: $102,756 1h vol, $83,152 mcap, +103% 1h  
-  CA `14coJKKEShg6ZaSKggQjubtKsCjWUZBWRa2v3E5ypump`
+- BTC: $121,975 1h vol, $45,523 mcap, -0% 1h  
+  CA `2G5b75jm9HtJmAccjxpzdWGs5r7XXeMYLTANoEcvpump`
