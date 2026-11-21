@@ -1,13 +1,13 @@
 # Trencher live report
 
-Updated 2026-11-21T19:01:44Z (paper trading, never real money)
+Updated 2026-11-21T19:16:57Z (paper trading, never real money)
 
 - Equity: $74.23 (-25.8% vs $100 start)
 - Closed trades: 22, 3 wins
 - Fees paid: $14.78 (axiom $2.81, network $9.18, pool $2.66), plus $4.15 lost to slippage
 - New trades: WATCH-ONLY (scans and decides, buys nothing)
-- Brain: subscription, claude-haiku-5-5 for routine calls, claude-opus-5-5 for the daily review; 267 routine calls and 18 plan-limit hits in 48h
-- Watch log: 8 coins being followed, 2471 filed, 0 would-buys (6h follow, sampled every 2 min)
+- Brain: subscription, claude-haiku-5-5 for routine calls, claude-opus-5-5 for the daily review; 267 routine calls and 16 plan-limit hits in 48h
+- Watch log: 10 coins being followed, 2471 filed, 0 would-buys (6h follow, sampled every 2 min)
 
 ## Scorecard (after fees)
 - 22 closed, 3 won (14%), net $-25.79
@@ -73,9 +73,15 @@ Updated 2026-11-21T19:01:44Z (paper trading, never real money)
   CA `H4gHnZ3NCU7Z9XQwGX6YYJNyieGEW8pqwGRUcdSxpump`
 
 ## Last scan
-- 19:01Z: 2 coins, 1 with pairs, 0 passed the market filters, 0 researched
+- 19:16Z: 2 coins, 1 with pairs, 0 passed the market filters, 0 researched
 
 ## Coins it looked at, and why it passed
+- 19:15Z OBAMA (MIGRATED, $44,456 mcap, $26,368 5m vol): PASS at conviction 2, PASS: OBAMA is a 2-minute-old copy in a 27-coin Obama field, up 52% on 5m and 9.5% off its own high with no higher low. Blockers: too new, chasing spike, split crowd. (V1, V3, V6)  
+  CA `7gqk4Ap5iYjnWHtkwygYp8bcAVFSiMo8aMJ1cGvPpump`
+- 19:12Z DIGS (MIGRATED, $296,971 mcap, $2,326 5m vol): REJECT, Bundles: 10 linked wallet cluster(s) hold 100.0% of supply (>20%) (V17)  
+  CA `9QT8K685Hrae4k11dhGXirdtpfAaimExtyfwt8cPpump`
+- 19:08Z Anusha (FINAL_STRETCH, $17,350 mcap, $43,288 5m vol): PASS at conviction 1, PASS: chasing spike. Four-minute-old pump.fun copy, up 465% on the 5m at 12x hourly pace, one of eight same-ticker coins, with no printed higher low possible yet. (V1, V6)  
+  CA `DF7SpmTYrr44c2H3XobdcD3G2NyTyGMhxT2R6T7hpump`
 - 18:59Z Singularity (FINAL_STRETCH, $22,248 mcap, $9,268 5m vol): REJECT, RugCheck danger: Creator history of rugged tokens  
   CA `2DPkAuPQFAKn3mnb6GT8H9oK8qm6NGmf3jMt7wbxpump`
 - 18:50Z TIMON (FINAL_STRETCH, $16,324 mcap, $3,133 5m vol): PASS at conviction 2, PASS: Timon Agents is a 26-minute-old pump.fun coin at $16k, sold 69% of 5m trades, with $3.1k of 5m volume and no printed higher low. Blocker: thin flow and no structure. Bottom-buy rule also fails: the agents theme runs at 0.9x pace with no outside catalyst. (V1, V6, V13)  
@@ -93,7 +99,7 @@ Updated 2026-11-21T19:01:44Z (paper trading, never real money)
 
 ## What its skips did next (last 48h)
 A skip "ran" if the coin reached the first target (1.5x) from the skip price before a 20% drop, "dumped" if the drop came first. Sampled every 10 min, followed 6h.
-- top 10 over 25%: blocked 31, ran 0, dumped 29, flat 2, open 0 (saving losses: keep it)
+- top 10 over 25%: blocked 29, ran 0, dumped 27, flat 2, open 0 (saving losses: keep it)
 - flow below pace: blocked 26, ran 7, dumped 16, flat 1, open 2 (saving losses: keep it)
   - ran: SI up to 1.53x  
     CA `4s38cgZJN4J39S2BQwCkcsJJ9ZGeJSjw8vK9wVtupump`
@@ -108,20 +114,20 @@ A skip "ran" if the coin reached the first target (1.5x) from the skip price bef
     CA `hT9xKkj6dPMz97zcxEEE5T5fFdm6x31P6FodwT8pump`
   - ran: CAP up to 2.6x  
     CA `CxGYpWoTun4J3xD4cNwXFRn2W3RzJozTxyU9nbJ4pump`
-- too new / sniping: blocked 19, ran 1, dumped 17, flat 1, open 0 (saving losses: keep it)
+- too new / sniping: blocked 20, ran 1, dumped 17, flat 1, open 1 (saving losses: keep it)
   - ran: AudaCity up to 1.96x  
     CA `3rtTUCpe1BBgCTNWQ9jK3xkAz1E7SPqMt4uYHx1Bpump`
-- falling knife (code): blocked 18, ran 0, dumped 17, flat 1, open 0 (saving losses: keep it)
-- near the high / chasing: blocked 18, ran 4, dumped 13, flat 0, open 1 (saving losses: keep it)
+- near the high / chasing: blocked 19, ran 4, dumped 13, flat 0, open 2 (saving losses: keep it)
   - ran: BEAR up to 2.32x  
     CA `DCPm44cT9i39HjR13QHYgxkR7wEx9TDeniGuayB5pump`
   - ran: ZOL up to 1.55x  
     CA `UQLWvkwiSsnViuVBy7oArMtzb5RAZyrdJ79amQFrzoL`
   - ran: STICK up to 2.08x  
     CA `532iaQrhFCD3QKFHsAtFAQ1mQZMjMdNrPXLeCS6cpump`
+- falling knife (code): blocked 18, ran 0, dumped 17, flat 1, open 0 (saving losses: keep it)
 - thin 5m volume: blocked 11, ran 0, dumped 9, flat 2, open 0 (saving losses: keep it)
-- bundles over the line: blocked 10, ran 0, dumped 7, flat 3, open 0 (saving losses: keep it)
-- falling knife / no higher low: blocked 8, ran 2, dumped 4, flat 1, open 1 (saving losses: keep it)
+- bundles over the line: blocked 10, ran 0, dumped 7, flat 2, open 1 (saving losses: keep it)
+- falling knife / no higher low: blocked 8, ran 2, dumped 5, flat 1, open 0 (saving losses: keep it)
   - ran: pCAT up to 1.58x  
     CA `BLdC7hwRijHudKYDmtEkx1SHUdBWm8XbjBCSvwa6pump`
   - ran: MACCA up to 1.71x  
@@ -171,9 +177,9 @@ Meta from the movers is person-name and pop-culture coins plus cat and animal jo
 ## Moving most in its scans, last 30 min (1h volume)
 - SHIT: $350,639 1h vol, $1,672,240 mcap, -17% 1h  
   CA `Fn95NtGXWPaJXc4N5y9rVkUq1NwZbjBNJzPVvNRLpump`
-- UNI: $241,135 1h vol, $18,967 mcap, -56% 1h  
+- UNI: $246,705 1h vol, $12,695 mcap, -71% 1h  
   CA `Fb4u75SCxDmQ2Vgq5eyo8tGpaULfqMMExvpvJYyJpump`
-- UNI: $161,780 1h vol, $3,430 mcap, -84% 1h  
+- UNI: $163,689 1h vol, $2,743 mcap, -87% 1h  
   CA `7rGmC4qH99shHrxgXgQbkM38zhefd8eBqrRusUKgpump`
 - PUNANI: $159,884 1h vol, $2,212,453 mcap, +17% 1h  
   CA `2TngN4B7XaoGSKsYvttq5bFAdM4Z4xCSnuyRwGiFpump`
