@@ -1,13 +1,13 @@
 # Trencher live report
 
-Updated 2026-11-21T22:38:43Z (paper trading, never real money)
+Updated 2026-11-21T22:53:49Z (paper trading, never real money)
 
 - Equity: $74.23 (-25.8% vs $100 start)
 - Closed trades: 22, 3 wins
 - Fees paid: $14.78 (axiom $2.81, network $9.18, pool $2.66), plus $4.15 lost to slippage
 - New trades: WATCH-ONLY (scans and decides, buys nothing)
-- Brain: subscription, claude-haiku-5-5 for routine calls, claude-opus-5-5 for the daily review; 277 routine calls and 0 plan-limit hits in 48h
-- Watch log: 55 coins being followed, 2471 filed, 0 would-buys (6h follow, sampled every 2 min)
+- Brain: subscription, claude-haiku-5-5 for routine calls, claude-opus-5-5 for the daily review; 278 routine calls and 0 plan-limit hits in 48h
+- Watch log: 61 coins being followed, 2471 filed, 0 would-buys (6h follow, sampled every 2 min)
 
 ## Scorecard (after fees)
 - 22 closed, 3 won (14%), net $-25.79
@@ -73,9 +73,21 @@ Updated 2026-11-21T22:38:43Z (paper trading, never real money)
   CA `H4gHnZ3NCU7Z9XQwGX6YYJNyieGEW8pqwGRUcdSxpump`
 
 ## Last scan
-- 22:38Z: 0 coins, 0 with pairs, 0 passed the market filters, 0 researched
+- 22:53Z: 0 coins, 0 with pairs, 0 passed the market filters, 0 researched
 
 ## Coins it looked at, and why it passed
+- 22:47Z Mfer (DIP, $95,911 mcap, $15,872 5m vol): REJECT, Dip with fading attention is a falling knife, not a dip (5m at 0.24x the hour's pace, under 0.6x)  
+  CA `9tX1UpBGeNqMb1VqqzVumwzW71ybsNZFyWKYiL8Ppump`
+- 22:44Z SBS (MIGRATED, $128,831 mcap, $3,540 5m vol): PASS at conviction 2, PASS: no story, no printed higher low, and the candle data is broken. A 19-copy "beauty salon" field with a 4.85% bundle. Blockers: "no narrative", "no higher low", "split crowd". (V1, V3, V6, V13)  
+  CA `4mE8dPH1RTqQBT5EPim5Ubt2v2wXZ9zgEDDWmL1o1EYu`
+- 22:43Z GATO (MIGRATED, $2,150,849 mcap, $3,587 5m vol): REJECT, Dev holds 2.7% (>1%) (V13, V17)  
+  CA `HsprHxBRgiVaQdRf3TnKNuZZtaX9JUSPgMFdAkk6pump`
+- 22:41Z PUNANI (MIGRATED, $124,841 mcap, $43,037 5m vol): PASS at conviction 2, PASS: PUNANI is down 97% from its $3.9M peak and -82% on the 5m candle. That's a collapse, not a dip, and no higher low has printed. Blocker: falling knife, past the 70% DIP ceiling (V1, V6).  
+  CA `2TngN4B7XaoGSKsYvttq5bFAdM4Z4xCSnuyRwGiFpump`
+- 22:39Z HODL (MIGRATED, $480,990 mcap, $2,449 5m vol): PASS at conviction 3, PASS: HODL is sitting at its high after a roughly 10x run off a $50k low, and 5m flow is $2.4k at 0.35x pace. Blocker "chasing" (V1, V6).  
+  CA `14coJKKEShg6ZaSKggQjubtKsCjWUZBWRa2v3E5ypump`
+- 22:39Z SHIT (DIP, $1,750,729 mcap, $7,489 5m vol): REJECT, Dip with fading attention is a falling knife, not a dip (5m at 0.40x the hour's pace, under 0.6x)  
+  CA `Fn95NtGXWPaJXc4N5y9rVkUq1NwZbjBNJzPVvNRLpump`
 - 22:18Z URANUS (MIGRATED, $53,177 mcap, $6,722 5m vol): PASS at conviction 2, PASS. URANUS is sitting at its own high (0% off peak) with 5m volume under $10k, and it's the copycat in a 14-coin uranus field, not the leader. Blocker: chasing. (V1, V6)  
   CA `DUvFjnaE3r46WLbz9rz6MNk2bq9xPFPUfMd8bDgmpump`
 - 22:17Z BTC (MIGRATED, $34,732 mcap, $32,820 5m vol): PASS at conviction 2, PASS: "Big Three" BTC is a 77%-off, 54-minute-old bond spike bleeding out, with 5m flow at 0.73x pace, no higher low, and 22 other BTC copies splitting the crowd (V1, V3, V6).  
@@ -84,29 +96,17 @@ Updated 2026-11-21T22:38:43Z (paper trading, never real money)
   CA `27u3diWofnXGUkddjLGhcy1nRssFKHW3RtNbpWzUpump`
 - 22:12Z FINGERS (DIP, $152,970 mcap, $7,345 5m vol): REJECT, Dip with fading attention is a falling knife, not a dip (5m at 0.44x the hour's pace, under 0.6x)  
   CA `BSF5xg7CuxkQWsbJWyHYw2HnuNbQtKybGaNhz9cCpump`
-- 22:05Z MAYA (MIGRATED, $974,082 mcap, $2,700 5m vol): PASS at conviction 2, PASS. MAYA is down 76% from a $4.1M peak, 5m flow is at 0.55x pace, and it's one of 23 copies. Blocker: "flow below pace". (V1, V6, V13)  
-  CA `FJKt1LxbWBpTRt9BaDEB6Wr2qL5LZzjFF5sx8rXnpump`
-- 22:02Z Mfer (DIP, $63,125 mcap, $207,773 5m vol): PASS, PASS — brain unavailable, not trading blind.  
-  CA `9tX1UpBGeNqMb1VqqzVumwzW71ybsNZFyWKYiL8Ppump`
-- 21:55Z DIGS (MIGRATED, $292,549 mcap, $2,230 5m vol): REJECT, Bundles: 10 linked wallet cluster(s) hold 100.0% of supply (>20%) (V17)  
-  CA `9QT8K685Hrae4k11dhGXirdtpfAaimExtyfwt8cPpump`
-- 21:54Z PUNANI (MIGRATED, $702,187 mcap, $2,101 5m vol): PASS at conviction 2, PASS: PUNANI is down 82% from a $3.9M peak with 5m flow at 0.43x pace and $2.1k of 5m volume. That's a falling knife in a 13-copy field, not a dip (V1, V6, V13).  
-  CA `2TngN4B7XaoGSKsYvttq5bFAdM4Z4xCSnuyRwGiFpump`
-- 21:54Z HODL (MIGRATED, $154,704 mcap, $9,962 5m vol): PASS at conviction 3, PASS: HODL is 1.9% off its own high after a +21% five-minute candle, with no printed higher low. Chasing, and the cat meme is a copy field. (V1, V6)  
-  CA `14coJKKEShg6ZaSKggQjubtKsCjWUZBWRa2v3E5ypump`
-- 21:53Z SHIT (DIP, $1,900,163 mcap, $13,196 5m vol): PASS at conviction 3, PASS: flow below pace (0.68x), no catalyst, theme fading, and a DIP at $1.9M with no printed higher low. Farm-adjacent until proven otherwise. (V1, V6, V13)  
-  CA `Fn95NtGXWPaJXc4N5y9rVkUq1NwZbjBNJzPVvNRLpump`
 
 ## What its skips did next (last 48h)
 A skip "ran" if the coin reached the first target (1.5x) from the skip price before a 20% drop, "dumped" if the drop came first. Sampled every 10 min, followed 6h.
-- flow below pace: blocked 29, ran 7, dumped 16, flat 1, open 5 (saving losses: keep it)
+- flow below pace: blocked 26, ran 6, dumped 16, flat 0, open 4 (saving losses: keep it)
   - ran: SI up to 1.53x  
     CA `4s38cgZJN4J39S2BQwCkcsJJ9ZGeJSjw8vK9wVtupump`
   - ran: AI up to 1.51x  
     CA `8SacNb6sgiAcscRe4m915B6nL9XX55dk8FS7L532pump`
   - ran: SWRDXSTFF up to 1.77x  
     CA `Csoj9XHJfBAxsKswqKKBENnGeoRDHtACfyYi7HmJpump`
-- top 10 over 25%: blocked 26, ran 1, dumped 24, flat 1, open 0 (saving losses: keep it)
+- top 10 over 25%: blocked 25, ran 1, dumped 23, flat 1, open 0 (saving losses: keep it)
   - ran: :) up to 1.65x  
     CA `Dtx414D8jurspmB1jqJWsYU66pemoXRjQeXx7TC1pump`
 - too new / sniping: blocked 20, ran 2, dumped 17, flat 1, open 0 (saving losses: keep it)
@@ -114,7 +114,7 @@ A skip "ran" if the coin reached the first target (1.5x) from the skip price bef
     CA `3rtTUCpe1BBgCTNWQ9jK3xkAz1E7SPqMt4uYHx1Bpump`
   - ran: TA up to 1.77x  
     CA `DKUM8qywmi8X9RYK2wUgnTw8QKjh1nYDThZR1GXPpump`
-- near the high / chasing: blocked 20, ran 5, dumped 14, flat 0, open 1 (saving losses: keep it)
+- near the high / chasing: blocked 19, ran 4, dumped 14, flat 0, open 1 (saving losses: keep it)
   - ran: BEAR up to 2.32x  
     CA `DCPm44cT9i39HjR13QHYgxkR7wEx9TDeniGuayB5pump`
   - ran: ZOL up to 1.55x  
@@ -126,17 +126,17 @@ A skip "ran" if the coin reached the first target (1.5x) from the skip price bef
     CA `hT9xKkj6dPMz97zcxEEE5T5fFdm6x31P6FodwT8pump`
   - ran: CAP up to 2.6x  
     CA `CxGYpWoTun4J3xD4cNwXFRn2W3RzJozTxyU9nbJ4pump`
-- thin 5m volume: blocked 13, ran 0, dumped 9, flat 2, open 2 (saving losses: keep it)
-- falling knife (code): blocked 13, ran 0, dumped 11, flat 1, open 1 (saving losses: keep it)
-- falling knife / no higher low: blocked 10, ran 3, dumped 4, flat 1, open 2 (mixed)
+- falling knife (code): blocked 15, ran 0, dumped 11, flat 1, open 3 (saving losses: keep it)
+- thin 5m volume: blocked 11, ran 0, dumped 8, flat 1, open 2 (saving losses: keep it)
+- falling knife / no higher low: blocked 11, ran 4, dumped 4, flat 0, open 3 (mixed)
   - ran: pCAT up to 1.58x  
     CA `BLdC7hwRijHudKYDmtEkx1SHUdBWm8XbjBCSvwa6pump`
   - ran: MACCA up to 1.71x  
     CA `C5eGEXJZYvXEbKdyvPtasksjGNV4xvMowpKM92bVv47f`
-  - ran: UrAnus up to 2.97x  
-    CA `27u3diWofnXGUkddjLGhcy1nRssFKHW3RtNbpWzUpump`
+  - ran: PUNANI up to 4.47x  
+    CA `2TngN4B7XaoGSKsYvttq5bFAdM4Z4xCSnuyRwGiFpump`
 - bundles over the line: blocked 9, ran 0, dumped 6, flat 1, open 2 (saving losses: keep it)
-- dev share over 1%: blocked 6, ran 0, dumped 4, flat 1, open 1 (saving losses: keep it)
+- dev share over 1%: blocked 6, ran 0, dumped 3, flat 1, open 2 (saving losses: keep it)
 
 ## Daily review (2026-11-21, claude-opus-5-5)
 Nothing has a positive after-cost edge. All 98 settled coins average -15.7% net under the simple plan, and every setup and stage is negative: MIGRATED -13.6% (n=70), FINAL_STRETCH -20.0% (n=14), DIP -21.7% (n=14). The main reason is the 9.5% average round-trip cost on a $10 buy. With a +50%/-20% bracket and that cost, a coin nets about +40% when it runs and about -30% when it dumps, so the plan breaks even only if roughly 42% of coins run. The observed rate is 16.3% (95% CI about 9–24%), so the overall verdict is solid even at n=98. The per-setup splits are not: n=14 gives about ±19 points, and coins from the same day and meta move together. I can't answer whether the routine model's would-buys beat its passes because it made zero would-buys. It declined all 49 coins it reviewed, including all 5 of the day's 4.5–5.5x runners. Even so, declining was right on average, since that reviewed group nets -16.2% under the simple plan.
@@ -177,13 +177,13 @@ Nothing has a positive after-cost edge. All 98 settled coins average -15.7% net 
 Meta, read from the raw scan_movers list. The crawler's meta_summary doesn't match those movers (HOUSE is $33k with $511 5m, not $135k with $96k; QBIT, OBAMA and ILY aren't in the list; only 5 of 15 movers are under 2h old, not 11), so I'm ignoring its numbers. Four themes repeat across the list: animal tickers (HODL cat +135% on $10k 5m with 69% buys, MONKE +65%, while MAYA and CI bleed), fresh pump.fun launches that spike in the first hour (Mfer at $63k cap with $208k 5m and 56% buys, Maxlong +526% on $13k cap), Trump and famous-name coins fading (Trump $1 Coin -40% on $14k 5m, JENSEN -11%), and dead legacy coins (CoT at 0% buys on $50 5m). Rising is animals and fresh launches; fading is political and famous names and anything that already dumped under an hour old (VIRUS -52%, CI -98%). Setups to research now, no buy yet: HODL for its real volume and buy ratio, and Mfer, whose 5m volume is 3x its market cap, a farm pattern (V13) that needs bundle and holder checks before any size. Trump $1 Coin is a PASS while a politician-name coin is in question (V13). Maxlong and MONKE are too thin on 5m volume to trade.
 
 ## Moving most in its scans, last 30 min (1h volume)
-- BTC: $542,341 1h vol, $34,732 mcap, -20% 1h  
-  CA `2G5b75jm9HtJmAccjxpzdWGs5r7XXeMYLTANoEcvpump`
-- UrAnus: $334,612 1h vol, $98,141 mcap, +154% 1h  
-  CA `27u3diWofnXGUkddjLGhcy1nRssFKHW3RtNbpWzUpump`
-- FINGERS: $193,022 1h vol, $154,971 mcap, +37% 1h  
-  CA `BSF5xg7CuxkQWsbJWyHYw2HnuNbQtKybGaNhz9cCpump`
-- Vodkat: $175,164 1h vol, $17,105 mcap, -42% 1h  
-  CA `FxUMvvYHW6r41wtbbm4V52Hnu7cyyFfqhSXuwmuypump`
-- VIRUS: $109,018 1h vol, $16,630 mcap, -43% 1h  
+- Mfer: $797,237 1h vol, $95,911 mcap, +228% 1h  
+  CA `9tX1UpBGeNqMb1VqqzVumwzW71ybsNZFyWKYiL8Ppump`
+- SHIT: $223,496 1h vol, $1,750,729 mcap, -8% 1h  
+  CA `Fn95NtGXWPaJXc4N5y9rVkUq1NwZbjBNJzPVvNRLpump`
+- VIRUS: $105,433 1h vol, $10,202 mcap, -49% 1h  
   CA `HUpUhhHm3rh5kx47KE3h9MbHq6sHLNgaXGEf5e7Xpump`
+- CUNTS: $101,276 1h vol, $13,000 mcap, +448% 1h  
+  CA `7CvW68FD9KjNYGByfykhaNps7VNPLN8dFwMRfmgQpump`
+- Vodkat: $84,900 1h vol, $14,419 mcap, -19% 1h  
+  CA `FxUMvvYHW6r41wtbbm4V52Hnu7cyyFfqhSXuwmuypump`
