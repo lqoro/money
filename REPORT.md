@@ -1,13 +1,13 @@
 # Trencher live report
 
-Updated 2026-11-21T00:27:24Z (paper trading, never real money)
+Updated 2026-11-21T00:42:40Z (paper trading, never real money)
 
 - Equity: $74.23 (-25.8% vs $100 start)
 - Closed trades: 22, 3 wins
 - Fees paid: $14.78 (axiom $2.81, network $9.18, pool $2.66), plus $4.15 lost to slippage
 - New trades: WATCH-ONLY (scans and decides, buys nothing)
-- Brain: subscription, claude-haiku-5-5 for routine calls, claude-opus-5-5 for the daily review; 352 routine calls and 127 plan-limit hits in 48h
-- Watch log: 83 coins being followed, 2370 filed, 0 would-buys (6h follow, sampled every 2 min)
+- Brain: subscription, claude-haiku-5-5 for routine calls, claude-opus-5-5 for the daily review; 353 routine calls and 125 plan-limit hits in 48h
+- Watch log: 82 coins being followed, 2373 filed, 0 would-buys (6h follow, sampled every 2 min)
 
 ## Scorecard (after fees)
 - 22 closed, 3 won (14%), net $-25.79
@@ -73,9 +73,13 @@ Updated 2026-11-21T00:27:24Z (paper trading, never real money)
   CA `H4gHnZ3NCU7Z9XQwGX6YYJNyieGEW8pqwGRUcdSxpump`
 
 ## Last scan
-- 00:26Z: 6 coins, 6 with pairs, 0 passed the market filters, 0 researched
+- 00:42Z: 5 coins, 5 with pairs, 0 passed the market filters, 0 researched
 
 ## Coins it looked at, and why it passed
+- 00:37Z BANDANA (MIGRATED, $250,038 mcap, $17,096 5m vol): PASS at conviction 2, PASS. Flow is below pace, there's no printed higher low, and it's one of 24 cat copies with the theme at 0.14x pace. The price data also doesn't reconcile. (V1, V6, V3)  
+  CA `2KRbMf4itijwsTHb5dQtiBpfptyNmhpVzmpdj4qqN2yx`
+- 00:35Z SBS (MIGRATED, $73,410 mcap, $3,781 5m vol): PASS at conviction 2, PASS: SBS. 5m flow is $3.8k at 0.14x its hourly pace, the price feed is broken, and it's one of 23 beauty-salon copies. Blocker: flow below pace. (V1, V6, V3)  
+  CA `4mE8dPH1RTqQBT5EPim5Ubt2v2wXZ9zgEDDWmL1o1EYu`
 - 00:17Z Mandy (FINAL_STRETCH, $14,079 mcap, $3,616 5m vol): PASS at conviction 2, PASS. Pink Hippo (Mandy) is a $14k pump.fun coin with $3.6k 5m, under the $10k bar, below pace, and riding a GTA tie-in the radar calls fading. Vamp field. (V1, V6)  
   CA `HmJRWZ8tFfuCY9A4MrSftnrvEFCApw1hyqHtb9Rzpump`
 - 00:14Z B&B (FINAL_STRETCH, $16,445 mcap, $59,756 5m vol): PASS at conviction 2, PASS: four minutes old, up 436% on the 5m at 12x pace, and the story isn't on my radar. Chasing a spike on a vamp field with no structure yet. (V1, V6)  
@@ -92,10 +96,6 @@ Updated 2026-11-21T00:27:24Z (paper trading, never real money)
   CA `HsprHxBRgiVaQdRf3TnKNuZZtaX9JUSPgMFdAkk6pump`
 - 23:52Z TITTYVERSE (MIGRATED, $44,905 mcap, $17,620 5m vol): PASS at conviction 2, PASS. Down 80.7% from a $233k peak in under an hour, 522 buys to 32 sells in 5m, and no higher low printed. That's a spike-and-dump shape, not a pullback (V1, V6, V13).  
   CA `4dXAFK3eL6MSmNtxoSni1u9493bJ9wweJDqSRkijpump`
-- 23:52Z BANDANA (MIGRATED, $216,397 mcap, $29,262 5m vol): PASS at conviction 3, PASS: flow below pace, no verifiable higher low, and a -22% 5m candle after a +581% hour. Blocker: flow below pace. (V1, V6)  
-  CA `2KRbMf4itijwsTHb5dQtiBpfptyNmhpVzmpdj4qqN2yx`
-- 23:50Z LRS (MIGRATED, $232,926 mcap, $4,187 5m vol): PASS at conviction 3, PASS. LARES is a parabolic 0.6h-old migration sitting 1.2% off its $236k peak after a +72% 5m candle, with no meta behind it. Chasing, and too new. (V1, V6)  
-  CA `7i8AXjBdKGjGpRo4Ex5aDKUaX55xed5Hrgoww1G9pump`
 
 ## What its skips did next (last 48h)
 A skip "ran" if the coin reached the first target (1.5x) from the skip price before a 20% drop, "dumped" if the drop came first. Sampled every 10 min, followed 6h.
@@ -123,11 +123,9 @@ A skip "ran" if the coin reached the first target (1.5x) from the skip price bef
     CA `8SacNb6sgiAcscRe4m915B6nL9XX55dk8FS7L532pump`
   - ran: SWRDXSTFF up to 1.77x  
     CA `Csoj9XHJfBAxsKswqKKBENnGeoRDHtACfyYi7HmJpump`
-- too new / sniping: blocked 19, ran 2, dumped 16, flat 0, open 1 (saving losses: keep it)
+- too new / sniping: blocked 18, ran 1, dumped 16, flat 0, open 1 (saving losses: keep it)
   - ran: AudaCity up to 1.96x  
     CA `3rtTUCpe1BBgCTNWQ9jK3xkAz1E7SPqMt4uYHx1Bpump`
-  - ran: SBS up to 2.1x  
-    CA `4mE8dPH1RTqQBT5EPim5Ubt2v2wXZ9zgEDDWmL1o1EYu`
 - near the high / chasing: blocked 16, ran 4, dumped 12, flat 0, open 0 (saving losses: keep it)
   - ran: BEAR up to 2.32x  
     CA `DCPm44cT9i39HjR13QHYgxkR7wEx9TDeniGuayB5pump`
@@ -136,8 +134,8 @@ A skip "ran" if the coin reached the first target (1.5x) from the skip price bef
   - ran: STICK up to 2.08x  
     CA `532iaQrhFCD3QKFHsAtFAQ1mQZMjMdNrPXLeCS6cpump`
 - thin 5m volume: blocked 15, ran 0, dumped 12, flat 3, open 0 (saving losses: keep it)
-- bundles over the line: blocked 13, ran 0, dumped 9, flat 2, open 2 (saving losses: keep it)
-- dev share over 1%: blocked 11, ran 2, dumped 7, flat 1, open 1 (saving losses: keep it)
+- bundles over the line: blocked 13, ran 0, dumped 10, flat 2, open 1 (saving losses: keep it)
+- dev share over 1%: blocked 11, ran 2, dumped 7, flat 2, open 0 (saving losses: keep it)
   - ran: LOOSY up to 1.71x  
     CA `FtSWWxVmKNXz8ksJxzJJ7BdDWXbQb3vC94J99oyypump`
   - ran: MANDY up to 1.54x  
@@ -184,16 +182,16 @@ No edge yet. All 322 settled coins lost money after costs on the simple plan, an
 - [2026-11-02 20:25] I expected Slingoor, a clean MIGRATED leader with $25k of 5m flow at pace and a 0.77 buy share, to retest its $408k high from $304k. It never went green (0.98x peak) and hit the -20% stop in 2 minutes, a -$2.86 probe. My own thesis admitted there was no printed higher low after a peak only 6 minutes old, so this confirms the money-shape rule: buy share and flow are not structure (V1, V6). Next time a MIGRATED pullback with no higher low above the hourly low is a PASS with blocker "no higher low", not a probe. This is one loss, so it adds no new ban beyond the rule I already have.
 
 ## Meta right now
-The meta right now is fresh names with live flow, not one story: the coins with real 5m volume and buyers are almost all under about an hour old, and the older names are dead on 5m. Three themes repeat. Famous-person names are the strongest: JENSEN (Jensen Huang) is at $900k cap, $65k 5m, 76% buys and +699% in the hour. Cat and animal names are mixed: BANDANA CAT is at $56k cap, $6.4k 5m, 64% buys, and MONKE has $15k 5m but only 51% buys. Shock and edgy names are live but ugly, with TITTYVERSE at $192k cap, $14k 5m, 84% buys, +462% in the hour, and a profanity-named coin at $8.5k 5m. Fading or flat: GTA6CAT (87 days old, $343 5m), GTAMAS, Cool Dog, Hugh Johnson, and the doge-style names; Trump and GTA are confirmed fading by the headlines ($TRUMP at record lows, the GTA ticker runner already banked its gain). Setups to research, not buy: JENSEN as a dip candidate only if 5m holds above $10k and buys stay above 60% after a pullback; TITTYVERSE as a migrated candidate if 5m stays above $10k, though 84% buys on a fresh coin looks like a farm until the trades panel says otherwise; Trader (BYKQ, $380k cap, $32k 5m, 54% buys) on the original-token check. The crawler's summary numbers for Trader and BUST don't match the scan (BUST is not in the movers at all), so I'm using scan figures and discarding the rest. Holder, dev and bundle checks are still pending on every coin. Jailbreak is ambiguous against the no-exploit rule, so I'm not naming it as a setup.
+The meta is fresh pump.fun launches with live flow, and age is the common thread: almost every coin with real 5m volume and buyers is under about 3 hours old, while the older names (HOGE 137h, RUDY 14h, BUCKME 44h) are dead on 5m. Three themes show up across the movers: cute mascot and animal characters (B&B, Pink Hippo/Mandy), a famous-person name (JENSEN), and tech-flavored names (GPU COIN, thin at $600 5m). Rising: JENSEN at $800k cap with $208k 5m, 72% buys and +741% in the hour, and B&B at $16k cap with $60k 5m and 57% buys, which is volume at 3-4x the cap and farm-shaped until holders and bundles say otherwise. Fading: MONKE, FARM, BATHROOM, Green Dildo and the profanity-named coin are down 50-99% or sell-heavy on 5m, so shock and edgy names are not working in this scan. That contradicts the crawler's TITTYVERSE read, but TITTYVERSE is not in the movers, so I'm not using it. The Trump and GTA headlines are fading as well, so they are not the meta. Setups to research, not buy: JENSEN only as a dip if 5m holds above $10k and buys stay above 60% after a pullback, and B&B only after holder and bundle checks; Mandy is under the $10k 5m bar, so watch only. Holder, dev and bundle checks are pending on all of them, and Jailbreak is not named as a setup until its name is cleared against the no-exploit rule.
 
 ## Moving most in its scans, last 30 min (1h volume)
-- JENSEN: $580,887 1h vol, $800,063 mcap, +741% 1h  
-  CA `DkHsZ1kjd2Fua8sgKE6PhHhyCdXYscbDVN7mAfiGpump`
-- MONKE: $211,238 1h vol, $1,435 mcap, -99% 1h  
+- SBS: $326,235 1h vol, $79,877 mcap, +161% 1h  
+  CA `4mE8dPH1RTqQBT5EPim5Ubt2v2wXZ9zgEDDWmL1o1EYu`
+- BANDANA: $237,144 1h vol, $250,038 mcap, -21% 1h  
+  CA `2KRbMf4itijwsTHb5dQtiBpfptyNmhpVzmpdj4qqN2yx`
+- MONKE: $118,119 1h vol, $1,412 mcap, -99% 1h  
   CA `5kLah7PHaD6A4RmU2tdF7Tv3zXHGrkvxgfFtKUfApump`
-- FARM: $109,411 1h vol, $1,306 mcap, -99% 1h  
-  CA `CTerwsBK7QFQBJWgTTSKV9LUYYJhRUouHPd8ijKXpump`
-- JENSEN: $91,927 1h vol, $1,356 mcap, -100% 1h  
-  CA `HMs3u6rx8DSruPMhXL7N2N5hciXTXa49e9LCoj1Apump`
-- CAP: $68,663 1h vol, $16,206 mcap, +590% 1h  
-  CA `CxGYpWoTun4J3xD4cNwXFRn2W3RzJozTxyU9nbJ4pump`
+- B&B: $59,756 1h vol, $16,445 mcap, +436% 1h  
+  CA `9iNRBbcNh6sMoGSxbe7AdfVUSQm7vDckEVJeDhSCpump`
+- TITTYVERSE: $51,861 1h vol, $1,254 mcap, -98% 1h  
+  CA `4dXAFK3eL6MSmNtxoSni1u9493bJ9wweJDqSRkijpump`
