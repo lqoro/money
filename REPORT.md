@@ -1,13 +1,13 @@
 # Trencher live report
 
-Updated 2026-11-20T23:57:12Z (paper trading, never real money)
+Updated 2026-11-21T00:12:16Z (paper trading, never real money)
 
 - Equity: $74.23 (-25.8% vs $100 start)
 - Closed trades: 22, 3 wins
 - Fees paid: $14.78 (axiom $2.81, network $9.18, pool $2.66), plus $4.15 lost to slippage
 - New trades: WATCH-ONLY (scans and decides, buys nothing)
-- Brain: subscription, claude-haiku-5-5 for routine calls, claude-opus-5-5 for the daily review; 353 routine calls and 130 plan-limit hits in 48h
-- Watch log: 87 coins being followed, 2472 filed, 0 would-buys (6h follow, sampled every 2 min)
+- Brain: subscription, claude-haiku-5-5 for routine calls, claude-opus-5-5 for the daily review; 351 routine calls and 128 plan-limit hits in 48h
+- Watch log: 89 coins being followed, 2362 filed, 0 would-buys (6h follow, sampled every 2 min)
 
 ## Scorecard (after fees)
 - 22 closed, 3 won (14%), net $-25.79
@@ -73,9 +73,17 @@ Updated 2026-11-20T23:57:12Z (paper trading, never real money)
   CA `H4gHnZ3NCU7Z9XQwGX6YYJNyieGEW8pqwGRUcdSxpump`
 
 ## Last scan
-- 23:56Z: 3 coins, 3 with pairs, 1 passed the market filters, 1 researched
+- 00:11Z: 4 coins, 4 with pairs, 0 passed the market filters, 0 researched
 
 ## Coins it looked at, and why it passed
+- 00:09Z JENSEN (MIGRATED, $723,174 mcap, $169,545 5m vol): REJECT, Top 10 hold 28.5% ex-pool (>25%) (V13)  
+  CA `DkHsZ1kjd2Fua8sgKE6PhHhyCdXYscbDVN7mAfiGpump`
+- 00:00Z BTC (DIP, $899,975 mcap, $2,693 5m vol): REJECT, Dip with fading attention is a falling knife, not a dip (5m at 0.58x the hour's pace, under 0.6x)  
+  CA `CUfphqswgDK3VP3FX7CiShVCTdGQneFusYRFViABpump`
+- 00:00Z CAP (FINAL_STRETCH, $16,206 mcap, $19,725 5m vol): REJECT, RugCheck danger: Creator history of rugged tokens  
+  CA `CxGYpWoTun4J3xD4cNwXFRn2W3RzJozTxyU9nbJ4pump`
+- 23:58Z LOOSY (MIGRATED, $165,603 mcap, $1,942 5m vol): REJECT, 5m volume $1,942 is dead (<$2,000) (V1)  
+  CA `HF2RBPrfNBk9TxggL2cYZFEKSgirzh5HKCngLENTpump`
 - 23:56Z GATO (MIGRATED, $3,079,357 mcap, $3,574 5m vol): REJECT, Dev holds 2.7% (>1%) (V13, V17)  
   CA `HsprHxBRgiVaQdRf3TnKNuZZtaX9JUSPgMFdAkk6pump`
 - 23:52Z TITTYVERSE (MIGRATED, $44,905 mcap, $17,620 5m vol): PASS at conviction 2, PASS. Down 80.7% from a $233k peak in under an hour, 522 buys to 32 sells in 5m, and no higher low printed. That's a spike-and-dump shape, not a pullback (V1, V6, V13).  
@@ -88,18 +96,10 @@ Updated 2026-11-20T23:57:12Z (paper trading, never real money)
   CA `4mE8dPH1RTqQBT5EPim5Ubt2v2wXZ9zgEDDWmL1o1EYu`
 - 23:46Z BUCKME (MIGRATED, $98,775 mcap, $2,525 5m vol): REJECT, Bundles: 2 linked wallet cluster(s) hold 30.7% of supply (>20%) (V17)  
   CA `DEgAkPNxz3dtMsesD2FDkNA2S6sch5YWfGUDT7R2pump`
-- 23:45Z Bust (MIGRATED, $62,359 mcap, $5,567 5m vol): PASS at conviction 2, PASS: BUST has no live flow (5m $5.6k at 0.36x its hourly pace), one linked bundle holds 10.9%, and it's one of 15 "bust" copies with the crowd gone. Blocker: flow below pace. (V1, V3, V6)  
-  CA `EoV9JQYi57tqjyQbWLdXVarYpEu82FsP8SDnkbFmpump`
-- 23:37Z BATHROOM (FINAL_STRETCH, $20,702 mcap, $2,537 5m vol): REJECT, RugCheck danger: Creator history of rugged tokens  
-  CA `GF6hi6auNDaqcKesKwVCNfWxeyezi7Emr85VuTYhpump`
-- 23:37Z RUDY (no setup, $61,816 mcap, $3,624 5m vol): REJECT, No setup fits: not Final Stretch, not a migrated runner, not a healthy dip  
-  CA `GRMRQSkBGg2Cc8Y9GePNBcJVk49YepWkXUDQBXAMpump`
-- 23:26Z MONKE (MIGRATED, $129,510 mcap, $10,304 5m vol): REJECT, Bundles: 10 linked wallet cluster(s) hold 52.8% of supply (>20%) (V17)  
-  CA `5kLah7PHaD6A4RmU2tdF7Tv3zXHGrkvxgfFtKUfApump`
 
 ## What its skips did next (last 48h)
 A skip "ran" if the coin reached the first target (1.5x) from the skip price before a 20% drop, "dumped" if the drop came first. Sampled every 10 min, followed 6h.
-- top 10 over 25%: blocked 53, ran 1, dumped 46, flat 4, open 2 (saving losses: keep it)
+- top 10 over 25%: blocked 54, ran 1, dumped 46, flat 4, open 3 (saving losses: keep it)
   - ran: J4F up to 2.22x  
     CA `pwtKLrLyRZy78eM2mR74xxe7mzREH1MxGcbvZWApump`
 - falling knife (code): blocked 37, ran 3, dumped 31, flat 1, open 2 (saving losses: keep it)
@@ -109,14 +109,14 @@ A skip "ran" if the coin reached the first target (1.5x) from the skip price bef
     CA `43Z5f8GboUfc6M6wtaGGtFciEhLXixJEwQKv8wBUpump`
   - ran: PIPI up to 1.65x  
     CA `6MKD1NkLvWRqdbFtqmgACBwUV5o6GJpZry8HkNgzpump`
-- RugCheck danger: blocked 28, ran 5, dumped 23, flat 0, open 0 (saving losses: keep it)
+- RugCheck danger: blocked 28, ran 6, dumped 22, flat 0, open 0 (saving losses: keep it)
   - ran: CATCOIN up to 2.06x  
     CA `9JngoeaZHbV4f5EyRR3oDLNPH7VUGw1PYQC4s6j2pump`
   - ran: Leonida up to 1.51x  
     CA `9rbKkz2BDQBVgZmrHY6d7PTq2ge91gkpEyE4y9PPpump`
   - ran: PIPI up to 1.63x  
     CA `J51xgomTx21VHY62Q7uv2otWRUSq71WeaApLfsAnpump`
-- flow below pace: blocked 21, ran 4, dumped 13, flat 1, open 3 (saving losses: keep it)
+- flow below pace: blocked 21, ran 4, dumped 14, flat 1, open 2 (saving losses: keep it)
   - ran: SI up to 1.53x  
     CA `4s38cgZJN4J39S2BQwCkcsJJ9ZGeJSjw8vK9wVtupump`
   - ran: AI up to 1.51x  
@@ -126,14 +126,14 @@ A skip "ran" if the coin reached the first target (1.5x) from the skip price bef
 - too new / sniping: blocked 18, ran 1, dumped 15, flat 0, open 2 (saving losses: keep it)
   - ran: AudaCity up to 1.96x  
     CA `3rtTUCpe1BBgCTNWQ9jK3xkAz1E7SPqMt4uYHx1Bpump`
-- near the high / chasing: blocked 16, ran 4, dumped 11, flat 0, open 1 (saving losses: keep it)
+- near the high / chasing: blocked 16, ran 4, dumped 12, flat 0, open 0 (saving losses: keep it)
   - ran: BEAR up to 2.32x  
     CA `DCPm44cT9i39HjR13QHYgxkR7wEx9TDeniGuayB5pump`
   - ran: ZOL up to 1.55x  
     CA `UQLWvkwiSsnViuVBy7oArMtzb5RAZyrdJ79amQFrzoL`
   - ran: STICK up to 2.08x  
     CA `532iaQrhFCD3QKFHsAtFAQ1mQZMjMdNrPXLeCS6cpump`
-- thin 5m volume: blocked 14, ran 0, dumped 11, flat 3, open 0 (saving losses: keep it)
+- thin 5m volume: blocked 15, ran 0, dumped 12, flat 3, open 0 (saving losses: keep it)
 - bundles over the line: blocked 14, ran 1, dumped 9, flat 2, open 2 (saving losses: keep it)
   - ran: PAPA up to 1.66x  
     CA `3hdXmQqZHmm7gWWweFKGdkjnxyWQZ2SWVNt1Jty5pump`
@@ -187,13 +187,13 @@ No edge yet. All 322 settled coins lost money after costs on the simple plan, an
 The meta right now is fresh names with live flow, not one story: the coins with real 5m volume and buyers are almost all under about an hour old, and the older names are dead on 5m. Three themes repeat. Famous-person names are the strongest: JENSEN (Jensen Huang) is at $900k cap, $65k 5m, 76% buys and +699% in the hour. Cat and animal names are mixed: BANDANA CAT is at $56k cap, $6.4k 5m, 64% buys, and MONKE has $15k 5m but only 51% buys. Shock and edgy names are live but ugly, with TITTYVERSE at $192k cap, $14k 5m, 84% buys, +462% in the hour, and a profanity-named coin at $8.5k 5m. Fading or flat: GTA6CAT (87 days old, $343 5m), GTAMAS, Cool Dog, Hugh Johnson, and the doge-style names; Trump and GTA are confirmed fading by the headlines ($TRUMP at record lows, the GTA ticker runner already banked its gain). Setups to research, not buy: JENSEN as a dip candidate only if 5m holds above $10k and buys stay above 60% after a pullback; TITTYVERSE as a migrated candidate if 5m stays above $10k, though 84% buys on a fresh coin looks like a farm until the trades panel says otherwise; Trader (BYKQ, $380k cap, $32k 5m, 54% buys) on the original-token check. The crawler's summary numbers for Trader and BUST don't match the scan (BUST is not in the movers at all), so I'm using scan figures and discarding the rest. Holder, dev and bundle checks are still pending on every coin. Jailbreak is ambiguous against the no-exploit rule, so I'm not naming it as a setup.
 
 ## Moving most in its scans, last 30 min (1h volume)
+- JENSEN: $580,887 1h vol, $800,063 mcap, +741% 1h  
+  CA `DkHsZ1kjd2Fua8sgKE6PhHhyCdXYscbDVN7mAfiGpump`
 - BANDANA: $387,980 1h vol, $231,518 mcap, +606% 1h  
   CA `2KRbMf4itijwsTHb5dQtiBpfptyNmhpVzmpdj4qqN2yx`
+- MONKE: $310,616 1h vol, $1,403 mcap, -99% 1h  
+  CA `5kLah7PHaD6A4RmU2tdF7Tv3zXHGrkvxgfFtKUfApump`
+- JENSEN: $268,413 1h vol, $1,356 mcap, -100% 1h  
+  CA `HMs3u6rx8DSruPMhXL7N2N5hciXTXa49e9LCoj1Apump`
 - TITTYVERSE: $208,984 1h vol, $44,905 mcap, +33% 1h  
   CA `4dXAFK3eL6MSmNtxoSni1u9493bJ9wweJDqSRkijpump`
-- Bust: $185,704 1h vol, $62,359 mcap, +82% 1h  
-  CA `EoV9JQYi57tqjyQbWLdXVarYpEu82FsP8SDnkbFmpump`
-- BATHROOM: $104,699 1h vol, $20,702 mcap, +975% 1h  
-  CA `GF6hi6auNDaqcKesKwVCNfWxeyezi7Emr85VuTYhpump`
-- Jailbreak: $37,005 1h vol, $6,748 mcap, +230% 1h  
-  CA `jaiLjbxbtodpEy189owgwnhhgeqZEi6CzJJaziqL2ah`
