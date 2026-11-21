@@ -1,12 +1,12 @@
 # Trencher live report
 
-Updated 2026-11-21T22:23:42Z (paper trading, never real money)
+Updated 2026-11-21T22:38:43Z (paper trading, never real money)
 
 - Equity: $74.23 (-25.8% vs $100 start)
 - Closed trades: 22, 3 wins
 - Fees paid: $14.78 (axiom $2.81, network $9.18, pool $2.66), plus $4.15 lost to slippage
 - New trades: WATCH-ONLY (scans and decides, buys nothing)
-- Brain: subscription, claude-haiku-5-5 for routine calls, claude-opus-5-5 for the daily review; 280 routine calls and 0 plan-limit hits in 48h
+- Brain: subscription, claude-haiku-5-5 for routine calls, claude-opus-5-5 for the daily review; 277 routine calls and 0 plan-limit hits in 48h
 - Watch log: 55 coins being followed, 2471 filed, 0 would-buys (6h follow, sampled every 2 min)
 
 ## Scorecard (after fees)
@@ -73,7 +73,7 @@ Updated 2026-11-21T22:23:42Z (paper trading, never real money)
   CA `H4gHnZ3NCU7Z9XQwGX6YYJNyieGEW8pqwGRUcdSxpump`
 
 ## Last scan
-- 22:22Z: 37 coins, 37 with pairs, 0 passed the market filters, 0 researched
+- 22:38Z: 0 coins, 0 with pairs, 0 passed the market filters, 0 researched
 
 ## Coins it looked at, and why it passed
 - 22:18Z URANUS (MIGRATED, $53,177 mcap, $6,722 5m vol): PASS at conviction 2, PASS. URANUS is sitting at its own high (0% off peak) with 5m volume under $10k, and it's the copycat in a 14-coin uranus field, not the leader. Blocker: chasing. (V1, V6)  
@@ -109,7 +109,7 @@ A skip "ran" if the coin reached the first target (1.5x) from the skip price bef
 - top 10 over 25%: blocked 26, ran 1, dumped 24, flat 1, open 0 (saving losses: keep it)
   - ran: :) up to 1.65x  
     CA `Dtx414D8jurspmB1jqJWsYU66pemoXRjQeXx7TC1pump`
-- too new / sniping: blocked 21, ran 2, dumped 18, flat 1, open 0 (saving losses: keep it)
+- too new / sniping: blocked 20, ran 2, dumped 17, flat 1, open 0 (saving losses: keep it)
   - ran: AudaCity up to 1.96x  
     CA `3rtTUCpe1BBgCTNWQ9jK3xkAz1E7SPqMt4uYHx1Bpump`
   - ran: TA up to 1.77x  
@@ -121,14 +121,13 @@ A skip "ran" if the coin reached the first target (1.5x) from the skip price bef
     CA `UQLWvkwiSsnViuVBy7oArMtzb5RAZyrdJ79amQFrzoL`
   - ran: STICK up to 2.08x  
     CA `532iaQrhFCD3QKFHsAtFAQ1mQZMjMdNrPXLeCS6cpump`
-- RugCheck danger: blocked 18, ran 2, dumped 16, flat 0, open 0 (saving losses: keep it)
+- RugCheck danger: blocked 17, ran 2, dumped 15, flat 0, open 0 (saving losses: keep it)
   - ran: TOP up to 1.67x  
     CA `hT9xKkj6dPMz97zcxEEE5T5fFdm6x31P6FodwT8pump`
   - ran: CAP up to 2.6x  
     CA `CxGYpWoTun4J3xD4cNwXFRn2W3RzJozTxyU9nbJ4pump`
-- thin 5m volume: blocked 14, ran 0, dumped 10, flat 2, open 2 (saving losses: keep it)
+- thin 5m volume: blocked 13, ran 0, dumped 9, flat 2, open 2 (saving losses: keep it)
 - falling knife (code): blocked 13, ran 0, dumped 11, flat 1, open 1 (saving losses: keep it)
-- bundles over the line: blocked 10, ran 0, dumped 7, flat 1, open 2 (saving losses: keep it)
 - falling knife / no higher low: blocked 10, ran 3, dumped 4, flat 1, open 2 (mixed)
   - ran: pCAT up to 1.58x  
     CA `BLdC7hwRijHudKYDmtEkx1SHUdBWm8XbjBCSvwa6pump`
@@ -136,6 +135,7 @@ A skip "ran" if the coin reached the first target (1.5x) from the skip price bef
     CA `C5eGEXJZYvXEbKdyvPtasksjGNV4xvMowpKM92bVv47f`
   - ran: UrAnus up to 2.97x  
     CA `27u3diWofnXGUkddjLGhcy1nRssFKHW3RtNbpWzUpump`
+- bundles over the line: blocked 9, ran 0, dumped 6, flat 1, open 2 (saving losses: keep it)
 - dev share over 1%: blocked 6, ran 0, dumped 4, flat 1, open 1 (saving losses: keep it)
 
 ## Daily review (2026-11-21, claude-opus-5-5)
@@ -181,9 +181,9 @@ Meta, read from the raw scan_movers list. The crawler's meta_summary doesn't mat
   CA `2G5b75jm9HtJmAccjxpzdWGs5r7XXeMYLTANoEcvpump`
 - UrAnus: $334,612 1h vol, $98,141 mcap, +154% 1h  
   CA `27u3diWofnXGUkddjLGhcy1nRssFKHW3RtNbpWzUpump`
-- SHIT: $229,991 1h vol, $1,915,107 mcap, +12% 1h  
-  CA `Fn95NtGXWPaJXc4N5y9rVkUq1NwZbjBNJzPVvNRLpump`
-- Mfer: $207,773 1h vol, $63,125 mcap, +110% 1h  
-  CA `9tX1UpBGeNqMb1VqqzVumwzW71ybsNZFyWKYiL8Ppump`
 - FINGERS: $193,022 1h vol, $154,971 mcap, +37% 1h  
   CA `BSF5xg7CuxkQWsbJWyHYw2HnuNbQtKybGaNhz9cCpump`
+- Vodkat: $175,164 1h vol, $17,105 mcap, -42% 1h  
+  CA `FxUMvvYHW6r41wtbbm4V52Hnu7cyyFfqhSXuwmuypump`
+- VIRUS: $109,018 1h vol, $16,630 mcap, -43% 1h  
+  CA `HUpUhhHm3rh5kx47KE3h9MbHq6sHLNgaXGEf5e7Xpump`
