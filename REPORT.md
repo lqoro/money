@@ -1,13 +1,13 @@
 # Trencher live report
 
-Updated 2026-11-21T18:46:33Z (paper trading, never real money)
+Updated 2026-11-21T19:01:44Z (paper trading, never real money)
 
 - Equity: $74.23 (-25.8% vs $100 start)
 - Closed trades: 22, 3 wins
 - Fees paid: $14.78 (axiom $2.81, network $9.18, pool $2.66), plus $4.15 lost to slippage
 - New trades: WATCH-ONLY (scans and decides, buys nothing)
-- Brain: subscription, claude-haiku-5-5 for routine calls, claude-opus-5-5 for the daily review; 261 routine calls and 19 plan-limit hits in 48h
-- Watch log: 18 coins being followed, 2453 filed, 0 would-buys (6h follow, sampled every 2 min)
+- Brain: subscription, claude-haiku-5-5 for routine calls, claude-opus-5-5 for the daily review; 267 routine calls and 18 plan-limit hits in 48h
+- Watch log: 8 coins being followed, 2471 filed, 0 would-buys (6h follow, sampled every 2 min)
 
 ## Scorecard (after fees)
 - 22 closed, 3 won (14%), net $-25.79
@@ -73,62 +73,75 @@ Updated 2026-11-21T18:46:33Z (paper trading, never real money)
   CA `H4gHnZ3NCU7Z9XQwGX6YYJNyieGEW8pqwGRUcdSxpump`
 
 ## Last scan
-- no scan yet since the last restart
+- 19:01Z: 2 coins, 1 with pairs, 0 passed the market filters, 0 researched
 
 ## Coins it looked at, and why it passed
-- none since the last restart
+- 18:59Z Singularity (FINAL_STRETCH, $22,248 mcap, $9,268 5m vol): REJECT, RugCheck danger: Creator history of rugged tokens  
+  CA `2DPkAuPQFAKn3mnb6GT8H9oK8qm6NGmf3jMt7wbxpump`
+- 18:50Z TIMON (FINAL_STRETCH, $16,324 mcap, $3,133 5m vol): PASS at conviction 2, PASS: Timon Agents is a 26-minute-old pump.fun coin at $16k, sold 69% of 5m trades, with $3.1k of 5m volume and no printed higher low. Blocker: thin flow and no structure. Bottom-buy rule also fails: the agents theme runs at 0.9x pace with no outside catalyst. (V1, V6, V13)  
+  CA `9Z3vdxmdfzVqFF46GMsHnRXwzWYjFFdDtEDmFw38pump`
+- 18:50Z JENSEN (MIGRATED, $981,924 mcap, $2,909 5m vol): PASS at conviction 3, PASS — 71% off a $3.4M high, no printed higher low, no verified catalyst, and 19 copies splitting the crowd. Falling knife, not a dip (V1, V6, V13).  
+  CA `DkHsZ1kjd2Fua8sgKE6PhHhyCdXYscbDVN7mAfiGpump`
+- 18:49Z greg (MIGRATED, $586,590 mcap, $2,897 5m vol): PASS at conviction 3, PASS — $GREG is one of 24 copies of the ticker, 5m flow is $2.9k at 0.8x pace, and a bottom buy needs a rising theme with a catalyst at 1x pace. None of that is here. Blocker: flow below pace, no catalyst on a bottom buy. (V1, V6, V13)  
+  CA `4Ye6Y6Vaic8cyPdfW2f9PcLhXkysBtSmV84G8X7spump`
+- 18:49Z MAYA (DIP, $2,376,898 mcap, $5,314 5m vol): PASS at conviction 3, PASS. MAYA is a 22-coin dog-theme field running at 0.69x its hourly pace, with a 0.6-day-old website and no catalyst. The bottom-buy owner rule blocks it. (V1, V6, V13)  
+  CA `FJKt1LxbWBpTRt9BaDEB6Wr2qL5LZzjFF5sx8rXnpump`
+- 18:49Z SHIT (DIP, $1,672,240 mcap, $22,281 5m vol): PASS at conviction 3, PASS — DIP with clean holders, but no catalyst, zero buzz and theme pace at 0.77x on a fan-site coin. Bottom buys need a live story. (V1, V6)  
+  CA `Fn95NtGXWPaJXc4N5y9rVkUq1NwZbjBNJzPVvNRLpump`
+- 18:48Z PUNANI (MIGRATED, $2,264,527 mcap, $30,983 5m vol): PASS at conviction 3, PASS: 6% under a local high that it just doubled into, $2.26M cap, no story on the radar. Blockers: chasing, target too close, big cap no room (V1, V6).  
+  CA `2TngN4B7XaoGSKsYvttq5bFAdM4Z4xCSnuyRwGiFpump`
 
 ## What its skips did next (last 48h)
 A skip "ran" if the coin reached the first target (1.5x) from the skip price before a 20% drop, "dumped" if the drop came first. Sampled every 10 min, followed 6h.
-- top 10 over 25%: blocked 32, ran 0, dumped 30, flat 2, open 0 (saving losses: keep it)
-- flow below pace: blocked 23, ran 7, dumped 15, flat 1, open 0 (saving losses: keep it)
+- top 10 over 25%: blocked 31, ran 0, dumped 29, flat 2, open 0 (saving losses: keep it)
+- flow below pace: blocked 26, ran 7, dumped 16, flat 1, open 2 (saving losses: keep it)
   - ran: SI up to 1.53x  
     CA `4s38cgZJN4J39S2BQwCkcsJJ9ZGeJSjw8vK9wVtupump`
   - ran: AI up to 1.51x  
     CA `8SacNb6sgiAcscRe4m915B6nL9XX55dk8FS7L532pump`
   - ran: SWRDXSTFF up to 1.77x  
     CA `Csoj9XHJfBAxsKswqKKBENnGeoRDHtACfyYi7HmJpump`
-- RugCheck danger: blocked 21, ran 3, dumped 18, flat 0, open 0 (saving losses: keep it)
+- RugCheck danger: blocked 21, ran 3, dumped 17, flat 0, open 1 (saving losses: keep it)
   - ran: 62BIRDS up to 1.87x  
     CA `BWkAvguMNpEFPVQ9EnSV8mQ2VjoDDAvQppwCWcD1pump`
   - ran: TOP up to 1.67x  
     CA `hT9xKkj6dPMz97zcxEEE5T5fFdm6x31P6FodwT8pump`
   - ran: CAP up to 2.6x  
     CA `CxGYpWoTun4J3xD4cNwXFRn2W3RzJozTxyU9nbJ4pump`
-- falling knife (code): blocked 19, ran 0, dumped 18, flat 1, open 0 (saving losses: keep it)
 - too new / sniping: blocked 19, ran 1, dumped 17, flat 1, open 0 (saving losses: keep it)
   - ran: AudaCity up to 1.96x  
     CA `3rtTUCpe1BBgCTNWQ9jK3xkAz1E7SPqMt4uYHx1Bpump`
-- near the high / chasing: blocked 17, ran 4, dumped 13, flat 0, open 0 (saving losses: keep it)
+- falling knife (code): blocked 18, ran 0, dumped 17, flat 1, open 0 (saving losses: keep it)
+- near the high / chasing: blocked 18, ran 4, dumped 13, flat 0, open 1 (saving losses: keep it)
   - ran: BEAR up to 2.32x  
     CA `DCPm44cT9i39HjR13QHYgxkR7wEx9TDeniGuayB5pump`
   - ran: ZOL up to 1.55x  
     CA `UQLWvkwiSsnViuVBy7oArMtzb5RAZyrdJ79amQFrzoL`
   - ran: STICK up to 2.08x  
     CA `532iaQrhFCD3QKFHsAtFAQ1mQZMjMdNrPXLeCS6cpump`
-- thin 5m volume: blocked 11, ran 0, dumped 8, flat 2, open 1 (saving losses: keep it)
-- bundles over the line: blocked 10, ran 0, dumped 7, flat 2, open 1 (saving losses: keep it)
-- falling knife / no higher low: blocked 7, ran 2, dumped 4, flat 1, open 0 (saving losses: keep it)
+- thin 5m volume: blocked 11, ran 0, dumped 9, flat 2, open 0 (saving losses: keep it)
+- bundles over the line: blocked 10, ran 0, dumped 7, flat 3, open 0 (saving losses: keep it)
+- falling knife / no higher low: blocked 8, ran 2, dumped 4, flat 1, open 1 (saving losses: keep it)
   - ran: pCAT up to 1.58x  
     CA `BLdC7hwRijHudKYDmtEkx1SHUdBWm8XbjBCSvwa6pump`
   - ran: MACCA up to 1.71x  
     CA `C5eGEXJZYvXEbKdyvPtasksjGNV4xvMowpKM92bVv47f`
-- dev share over 1%: blocked 5, ran 1, dumped 2, flat 1, open 1 (saving losses: keep it)
+- dev share over 1%: blocked 5, ran 1, dumped 3, flat 1, open 0 (saving losses: keep it)
   - ran: MANDY up to 1.54x  
     CA `GQngHP8P6s45MxWnU7JsocfV2HjPQdJZmCEAYKpBpump`
 
-## Daily review (2026-11-20, claude-opus-5-5)
-No edge yet. All 322 settled coins lost money after costs on the simple plan, and so did every setup: the average was -13.8%, of which about 9.9% was round-trip cost, so the price moves alone already lost about 4%. With a +50% target, a -20% stop and about 10% cost, a winner nets about +40% and a loser about -30%, so a setup has to reach 1.5x before the stop roughly 43% of the time just to break even. The best bucket, FINAL_STRETCH, did it 27.7% of the time (n=47). The overall average is clearly negative: about ±3.6 points of noise at n=322. Even FINAL_STRETCH's -10.6% has a 95% range of roughly ±9 points that stays below zero, and the real sample is smaller than it looks because of meta clustering (GTA and FIONA copies) and at least one coin logged twice. The routine model made zero would-buys, so there is nothing to compare against what it passed on. The 79 coins it reviewed and passed did -14.4%, the same as the 168 the checklist failed (-14.0%). On this data neither the checklist nor the model separates winners from losers.
-- finding: Overall (n=322): 19.3% reached 1.5x before the -20% stop, 68.6% hit the stop, the median coin peaked at only 1.24x, average net -13.8% with 9.9% average cost. The typical coin's best move barely covers costs twice over.
-- finding: The simple plan's result is roughly ran% × +40 − dumped% × 30. For all coins that gives 0.193×40 − 0.686×30 ≈ -12.9%, close to the measured -13.8%. The losses come from the hit rate, not from a few bad outliers.
-- finding: FINAL_STRETCH (n=47) is the least bad: 27.7% ran, 25.5% hit 2x, median peak 1.38x, net -10.6%. That is still well short of the ~43% ran rate needed to break even. MIGRATED (n=222): 20.7% ran, net -13.1%.
-- finding: DIP is the worst setup (n=53): 5.7% ran, median peak 1.14x, net -19.9%. More DIP coins hit 2x at some point (9.4%) than hit 1.5x before the -20% stop (5.7%), so the stop often fired before a later run. Even so, nothing here justifies buying dips: they mostly did not bounce.
-- finding: Checklist failures (n=168): 17.3% ran, 64.9% dumped, net -14.0%. Coins the model reviewed and passed (n=79): 21.5% ran, 74.7% dumped, 24.1% hit 2x, net -14.4%. Passing the checklist gave a wider spread of outcomes (more 2x, more dumps) but no better average.
-- idea to test: Set every rule's thresholds before looking at the week's data, then score them on a holdout of days the rule wasn't tuned on. For any rule to be worth testing live, its subset needs n ≥ 40 and an average net whose 95% lower bound is above 0. Anything else counts as noise.
-- idea to test: Cost gate: only count coins whose estimated round-trip cost is ≤ 5% (if per-coin cost isn't logged, use mcap ≥ $100k as a stand-in). Compare net % with the ≤5% and >5% cost groups side by side. The idea: with a 1.24x median peak, a coin only has room for profit if its pool is deep.
-- idea to test: FINAL_STRETCH-only test: setup = FINAL_STRETCH AND checklist = pass AND 5m volume ≥ $10k AND buy ratio ≥ 0.55 AND flow ratio ≥ 1.0. Score it on both the simple plan and a 2x target / -35% stop / 60-minute time stop.
-- idea to test: Exit-shape test on all setups: compare +50%/-20% with 2x/-35% and 2x/-50% (all with a 6h time exit). The DIP numbers (more coins hit 2x than 1.5x-before-stop) suggest the -20% stop sits inside normal noise; 68.6% of all coins hit it.
-- idea to test: DIP suspension test: drop DIP entirely, or allow it only when drawdown is 40-55% AND 5m volume ≥ its 1h average pace (flow ratio ≥ 1.0) AND buy ratio ≥ 0.55. Check whether any DIP subset gets above a 25% ran rate. If none does, retire the setup.
+## Daily review (2026-11-21, claude-opus-5-5)
+Nothing has a positive after-cost edge. All 98 settled coins average -15.7% net under the simple plan, and every setup and stage is negative: MIGRATED -13.6% (n=70), FINAL_STRETCH -20.0% (n=14), DIP -21.7% (n=14). The main reason is the 9.5% average round-trip cost on a $10 buy. With a +50%/-20% bracket and that cost, a coin nets about +40% when it runs and about -30% when it dumps, so the plan breaks even only if roughly 42% of coins run. The observed rate is 16.3% (95% CI about 9–24%), so the overall verdict is solid even at n=98. The per-setup splits are not: n=14 gives about ±19 points, and coins from the same day and meta move together. I can't answer whether the routine model's would-buys beat its passes because it made zero would-buys. It declined all 49 coins it reviewed, including all 5 of the day's 4.5–5.5x runners. Even so, declining was right on average, since that reviewed group nets -16.2% under the simple plan.
+- finding: Costs are bigger than the price edge. Average cost is 9.5% per round trip, and the gross result before costs is only about -6%. At this size, even a coin-flip entry would bleed about 10% a trade. This matches the paper trades: $18.83 of the $25.79 loss was fees and slippage.
+- finding: MIGRATED is the least bad setup: n=70, 18.6% ran, 20.0% hit 2x, net -13.6%. It still needs about 2.3x its current run rate to break even.
+- finding: DIP is the worst setup: n=14, 7.1% ran (1 coin), 0% hit 2x, 78.6% dumped, net -21.7%. Not one dip buy produced a 2x in 24h. That fits 'a dip with fading volume is a falling knife', but n=14 is small.
+- finding: FINAL_STRETCH: n=14, 28.6% hit 2x (4 coins) but only 14.3% ran (2 coins), net -20.0%. Half the coins that eventually doubled hit -20% before +50%. That looks like the V1 pre-bond dump shaking out a tight stop. Too few samples to act on alone.
+- finding: Overall, 18.4% of coins hit 2x but only 16.3% ran under the bracket. Some later winners dipped through -20% first, so the -20% stop is clipping part of the right tail.
+- idea to test: Cost gate: skip when the estimated round-trip cost is above about 5%. Also re-run the whole week at $25 and $50 sizes to see how much of the 9.5% is fixed (priority fee, bribe) versus slippage. If the fixed part dominates, size is the biggest lever and no entry rule fixes it.
+- idea to test: Exit variant: re-score every setup with stop -35% instead of -20%, sell initials at 2x, trail the rest by 30% from peak, and a 60-minute time stop. Test it first on brain-reviewed coins (n=49 today, 28.6% hit 2x) to see whether the right tail pays for the wider stop after costs.
+- idea to test: Young small-cap bucket: setup in {FINAL_STRETCH, MIGRATED}, age ≤ 1h, mcap $14k–$60k, checklist passed. Report n, ran %, 2x % and net for the whole bucket, not just the winners. Only consider it if net beats 0 with n ≥ 50 across at least 4 different days.
+- idea to test: Turn DIP off for evaluation unless a narrower version proves itself: DIP with 5m volume ≥ 1h pace, buy ratio ≥ 0.55 and drawdown 40–60%. It needs net > 0 on at least 30 week samples. Otherwise drop DIP.
+- idea to test: FINAL_STRETCH stop test: bracket +100%/-35% against +50%/-20%, to check whether the pre-bond dump is what's stopping out the eventual 2x coins.
 
 ## Rules it changed from results and skips
 - 11-02 23:38Z tightened: DIP gate: flow at least 0.7x the hourly pace plus a printed higher low (DIPs 0 for 5 (-$6.70), every one bought before the higher low held (HEXN x2, SIS, Something, Leverhedge). The code line is now aligned to the owner's 0.7x.)
@@ -153,16 +166,16 @@ No edge yet. All 322 settled coins lost money after costs on the simple plan, an
 - [2026-11-02 20:25] I expected Slingoor, a clean MIGRATED leader with $25k of 5m flow at pace and a 0.77 buy share, to retest its $408k high from $304k. It never went green (0.98x peak) and hit the -20% stop in 2 minutes, a -$2.86 probe. My own thesis admitted there was no printed higher low after a peak only 6 minutes old, so this confirms the money-shape rule: buy share and flow are not structure (V1, V6). Next time a MIGRATED pullback with no higher low above the hourly low is a PASS with blocker "no higher low", not a probe. This is one loss, so it adds no new ban beyond the rule I already have.
 
 ## Meta right now
-Meta from scan_movers: celebrity and pop-culture name coins are where the fresh buyers are, and the cartoon-mascot wave is flushing. Rising: Lebrain James (LEBRAIN, $24k cap, $17k 5m, 60% buys, +896% in the hour, six minutes old) and Ring Cat (RCAT, $27k cap, 70% buys), but RCAT's whole hour of volume landed in the last 5 minutes, which reads like a burst rather than organic flow, and it sits below the $30k migrated-tab floor. GTA6CAT (GATO, $3.1M, 74% buys) rides the GTA 6 ticker-confusion story the web confirms, but at $2.4k 5m it fails the $10k bar, so it's a theme, not a setup. Fading: the SpongeBob/S&P500 cartoon coin (-94%), TikTok Coin (-84%), PUNCH and PUMPGIVEN (-66% to -68%), and JENSEN (-31% on $5k 5m against $247k over the hour), which is a falling knife, not a DIP. Setups to research, not buy: LEBRAIN on a pullback that holds with buyers, and RCAT only once it clears $30k with spread-out volume; both still need holder, dev and bundle checks and a written exit before any entry.
+Meta from the movers is person-name and pop-culture coins plus cat and animal jokes, while the cartoon wave is flushing. Rising: LEBRAIN (Lebrain James, $24k cap, $17k 5m, 60% buys, six minutes old, +896% in the hour) and RCAT (Ring Cat, $27k cap, 70% buys), though RCAT's whole hour of volume landed in the last five minutes, which reads like a burst, not flow. GATO (GTA6CAT, $3.1M, 74% buys) rides the GTA 6 ticker-confusion story the web confirms, but $2.4k on the 5-minute fails the $10k bar, so it's a theme, not a setup. Fading: SpongeBob/S&P500 (-94%), TikTok Coin (-84%), PUNCH and PUMPGIVEN (-66% to -68%), and JENSEN (-31% on $5k 5m against $247k over the hour), which is a falling knife, not a dip (V1, V6). Setups to research, not buy: LEBRAIN only on a pullback that holds with buyers stepping back in, and RCAT only once it clears $30k with spread-out volume. Holder, dev and bundle checks plus a written exit are required before any entry (V1, V8, V11).
 
 ## Moving most in its scans, last 30 min (1h volume)
-- JENSEN: $247,154 1h vol, $1,723,858 mcap, -31% 1h  
-  CA `DkHsZ1kjd2Fua8sgKE6PhHhyCdXYscbDVN7mAfiGpump`
-- S&P500: $75,959 1h vol, $1,555 mcap, -94% 1h  
-  CA `ACVkPjBRHWMZEKExATPQaw6PwMZ7ED4wobxomeWGpump`
-- GESTALT: $74,036 1h vol, $5,296 mcap, -58% 1h  
-  CA `4KgreHYuTGrPdbFinSr4AyWEZBDgxC4xWvGe9T2ypump`
-- Lebrain: $41,946 1h vol, $24,490 mcap, +896% 1h  
-  CA `CktHFigNyDjkk1GesqUXkLM9zm5gXaYJAY8UEbhqpump`
-- RCAT: $37,357 1h vol, $27,262 mcap, -7% 1h  
-  CA `5eSAuugtvermtS5W4nB28fJ9coj2mjjj1o8VaqYWUUMo`
+- SHIT: $350,639 1h vol, $1,672,240 mcap, -17% 1h  
+  CA `Fn95NtGXWPaJXc4N5y9rVkUq1NwZbjBNJzPVvNRLpump`
+- UNI: $241,135 1h vol, $18,967 mcap, -56% 1h  
+  CA `Fb4u75SCxDmQ2Vgq5eyo8tGpaULfqMMExvpvJYyJpump`
+- UNI: $161,780 1h vol, $3,430 mcap, -84% 1h  
+  CA `7rGmC4qH99shHrxgXgQbkM38zhefd8eBqrRusUKgpump`
+- PUNANI: $159,884 1h vol, $2,212,453 mcap, +17% 1h  
+  CA `2TngN4B7XaoGSKsYvttq5bFAdM4Z4xCSnuyRwGiFpump`
+- Singularity: $159,263 1h vol, $21,227 mcap, +129% 1h  
+  CA `2DPkAuPQFAKn3mnb6GT8H9oK8qm6NGmf3jMt7wbxpump`
