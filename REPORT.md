@@ -1,13 +1,13 @@
 # Trencher live report
 
-Updated 2026-11-21T01:58:23Z (paper trading, never real money)
+Updated 2026-11-21T02:10:28Z (paper trading, never real money)
 
 - Equity: $74.23 (-25.8% vs $100 start)
 - Closed trades: 22, 3 wins
 - Fees paid: $14.78 (axiom $2.81, network $9.18, pool $2.66), plus $4.15 lost to slippage
 - New trades: WATCH-ONLY (scans and decides, buys nothing)
-- Brain: subscription, claude-haiku-5-5 for routine calls, claude-opus-5-5 for the daily review; 353 routine calls and 118 plan-limit hits in 48h
-- Watch log: 73 coins being followed, 2395 filed, 0 would-buys (6h follow, sampled every 2 min)
+- Brain: subscription, claude-haiku-5-5 for routine calls, claude-opus-5-5 for the daily review; 354 routine calls and 117 plan-limit hits in 48h
+- Watch log: 75 coins being followed, 2396 filed, 0 would-buys (6h follow, sampled every 2 min)
 
 ## Scorecard (after fees)
 - 22 closed, 3 won (14%), net $-25.79
@@ -73,9 +73,15 @@ Updated 2026-11-21T01:58:23Z (paper trading, never real money)
   CA `H4gHnZ3NCU7Z9XQwGX6YYJNyieGEW8pqwGRUcdSxpump`
 
 ## Last scan
-- 01:57Z: 5 coins, 5 with pairs, 0 passed the market filters, 0 researched
+- 02:09Z: 8 coins, 8 with pairs, 0 passed the market filters, 0 researched
 
 ## Coins it looked at, and why it passed
+- 02:07Z SBS (MIGRATED, $162,803 mcap, $11,255 5m vol): PASS at conviction 3, PASS: SBS is the leader of a 22-copy beauty-salon vamp field with no catalyst and no usable drawdown read. Blocker: split crowd. (V1, V3)  
+  CA `4mE8dPH1RTqQBT5EPim5Ubt2v2wXZ9zgEDDWmL1o1EYu`
+- 02:05Z Lebrain (FINAL_STRETCH, $23,434 mcap, $17,898 5m vol): PASS at conviction 3, PASS — 7 minutes old, up 26% on the 5m at 5.3x its hourly pace, and one of 30 copies of the same name. Chasing a spike in a split crowd (V1, V6, V13).  
+  CA `CktHFigNyDjkk1GesqUXkLM9zm5gXaYJAY8UEbhqpump`
+- 01:59Z GATO (MIGRATED, $3,139,714 mcap, $1,886 5m vol): REJECT, 5m volume $1,886 is dead (<$2,000) (V1)  
+  CA `HsprHxBRgiVaQdRf3TnKNuZZtaX9JUSPgMFdAkk6pump`
 - 01:41Z JENSEN (DIP, $1,723,858 mcap, $5,134 5m vol): REJECT, Dip with fading attention is a falling knife, not a dip (5m at 0.25x the hour's pace, under 0.6x)  
   CA `DkHsZ1kjd2Fua8sgKE6PhHhyCdXYscbDVN7mAfiGpump`
 - 01:32Z BTC (MIGRATED, $348,176 mcap, $2,599 5m vol): PASS at conviction 3, PASS. BartCoin is 83% off its high on a 0.26x theme pace, with a 1-day-old site that doesn't show this CA. Blocker: bottom-buy rule. (V1, V6, V13)  
@@ -90,16 +96,10 @@ Updated 2026-11-21T01:58:23Z (paper trading, never real money)
   CA `4mE8dPH1RTqQBT5EPim5Ubt2v2wXZ9zgEDDWmL1o1EYu`
 - 01:04Z GESTALT (FINAL_STRETCH, $18,741 mcap, $35,359 5m vol): PASS at conviction 3, PASS. Gestalt is a 26-copy "gestalt" vamp field, up 704% in an hour with no base, bundles at 6.5% in one cluster, and no story behind the name. Blocker: chasing spike. (V1, V3, V6)  
   CA `4KgreHYuTGrPdbFinSr4AyWEZBDgxC4xWvGe9T2ypump`
-- 01:02Z TikTok (FINAL_STRETCH, $16,903 mcap, $4,540 5m vol): REJECT, RugCheck danger: Creator history of rugged tokens  
-  CA `7CQx6HdDjowjcDUiNs1EfYqK5bp1hAR87CRsyLg8pump`
-- 00:57Z HOGE (DIP, $693,149 mcap, $2,517 5m vol): REJECT, Bundles: 9 linked wallet cluster(s) hold 26.9% of supply (>20%) (V17)  
-  CA `FVzqGqRmr4UH1Fif6dewmwbJ1p4YUZCu8dcw4Efopump`
-- 00:55Z JENSEN (MIGRATED, $2,016,462 mcap, $20,761 5m vol): REJECT, Top 10 hold 26.6% ex-pool (>25%) (V13)  
-  CA `DkHsZ1kjd2Fua8sgKE6PhHhyCdXYscbDVN7mAfiGpump`
 
 ## What its skips did next (last 48h)
 A skip "ran" if the coin reached the first target (1.5x) from the skip price before a 20% drop, "dumped" if the drop came first. Sampled every 10 min, followed 6h.
-- top 10 over 25%: blocked 49, ran 1, dumped 43, flat 4, open 1 (saving losses: keep it)
+- top 10 over 25%: blocked 48, ran 1, dumped 42, flat 4, open 1 (saving losses: keep it)
   - ran: J4F up to 2.22x  
     CA `pwtKLrLyRZy78eM2mR74xxe7mzREH1MxGcbvZWApump`
 - falling knife (code): blocked 37, ran 3, dumped 31, flat 1, open 2 (saving losses: keep it)
@@ -116,14 +116,14 @@ A skip "ran" if the coin reached the first target (1.5x) from the skip price bef
     CA `9rbKkz2BDQBVgZmrHY6d7PTq2ge91gkpEyE4y9PPpump`
   - ran: PIPI up to 1.63x  
     CA `J51xgomTx21VHY62Q7uv2otWRUSq71WeaApLfsAnpump`
-- flow below pace: blocked 23, ran 7, dumped 15, flat 1, open 0 (saving losses: keep it)
+- flow below pace: blocked 22, ran 6, dumped 15, flat 1, open 0 (saving losses: keep it)
   - ran: SI up to 1.53x  
     CA `4s38cgZJN4J39S2BQwCkcsJJ9ZGeJSjw8vK9wVtupump`
   - ran: AI up to 1.51x  
     CA `8SacNb6sgiAcscRe4m915B6nL9XX55dk8FS7L532pump`
   - ran: SWRDXSTFF up to 1.77x  
     CA `Csoj9XHJfBAxsKswqKKBENnGeoRDHtACfyYi7HmJpump`
-- too new / sniping: blocked 18, ran 1, dumped 16, flat 0, open 1 (saving losses: keep it)
+- too new / sniping: blocked 19, ran 1, dumped 16, flat 0, open 2 (saving losses: keep it)
   - ran: AudaCity up to 1.96x  
     CA `3rtTUCpe1BBgCTNWQ9jK3xkAz1E7SPqMt4uYHx1Bpump`
 - near the high / chasing: blocked 17, ran 4, dumped 12, flat 0, open 1 (saving losses: keep it)
@@ -133,7 +133,7 @@ A skip "ran" if the coin reached the first target (1.5x) from the skip price bef
     CA `UQLWvkwiSsnViuVBy7oArMtzb5RAZyrdJ79amQFrzoL`
   - ran: STICK up to 2.08x  
     CA `532iaQrhFCD3QKFHsAtFAQ1mQZMjMdNrPXLeCS6cpump`
-- thin 5m volume: blocked 13, ran 0, dumped 10, flat 3, open 0 (saving losses: keep it)
+- thin 5m volume: blocked 14, ran 0, dumped 10, flat 3, open 1 (saving losses: keep it)
 - bundles over the line: blocked 13, ran 0, dumped 9, flat 2, open 2 (saving losses: keep it)
 - dev share over 1%: blocked 10, ran 2, dumped 6, flat 1, open 1 (saving losses: keep it)
   - ran: LOOSY up to 1.71x  
@@ -187,11 +187,11 @@ The meta in this scan is fresh pump.fun character coins: cartoon and mascot name
 ## Moving most in its scans, last 30 min (1h volume)
 - JENSEN: $247,154 1h vol, $1,723,858 mcap, -31% 1h  
   CA `DkHsZ1kjd2Fua8sgKE6PhHhyCdXYscbDVN7mAfiGpump`
-- GESTALT: $113,988 1h vol, $5,099 mcap, +119% 1h  
-  CA `4KgreHYuTGrPdbFinSr4AyWEZBDgxC4xWvGe9T2ypump`
-- BTC: $75,405 1h vol, $348,176 mcap, -65% 1h  
-  CA `CUfphqswgDK3VP3FX7CiShVCTdGQneFusYRFViABpump`
-- S&P500: $74,049 1h vol, $4,143 mcap, -85% 1h  
+- SBS: $128,200 1h vol, $162,803 mcap, +76% 1h  
+  CA `4mE8dPH1RTqQBT5EPim5Ubt2v2wXZ9zgEDDWmL1o1EYu`
+- RCAT: $86,519 1h vol, $8,500 mcap, -71% 1h  
+  CA `5eSAuugtvermtS5W4nB28fJ9coj2mjjj1o8VaqYWUUMo`
+- S&P500: $75,959 1h vol, $1,555 mcap, -94% 1h  
   CA `ACVkPjBRHWMZEKExATPQaw6PwMZ7ED4wobxomeWGpump`
-- TikTok: $51,481 1h vol, $2,010 mcap, -75% 1h  
-  CA `7CQx6HdDjowjcDUiNs1EfYqK5bp1hAR87CRsyLg8pump`
+- GESTALT: $74,036 1h vol, $5,296 mcap, -58% 1h  
+  CA `4KgreHYuTGrPdbFinSr4AyWEZBDgxC4xWvGe9T2ypump`
