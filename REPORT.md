@@ -1,13 +1,13 @@
 # Trencher live report
 
-Updated 2026-11-21T22:53:49Z (paper trading, never real money)
+Updated 2026-11-21T23:08:53Z (paper trading, never real money)
 
 - Equity: $74.23 (-25.8% vs $100 start)
 - Closed trades: 22, 3 wins
 - Fees paid: $14.78 (axiom $2.81, network $9.18, pool $2.66), plus $4.15 lost to slippage
 - New trades: WATCH-ONLY (scans and decides, buys nothing)
-- Brain: subscription, claude-haiku-5-5 for routine calls, claude-opus-5-5 for the daily review; 278 routine calls and 0 plan-limit hits in 48h
-- Watch log: 61 coins being followed, 2471 filed, 0 would-buys (6h follow, sampled every 2 min)
+- Brain: subscription, claude-haiku-5-5 for routine calls, claude-opus-5-5 for the daily review; 279 routine calls and 0 plan-limit hits in 48h
+- Watch log: 65 coins being followed, 2471 filed, 0 would-buys (6h follow, sampled every 2 min)
 
 ## Scorecard (after fees)
 - 22 closed, 3 won (14%), net $-25.79
@@ -73,9 +73,17 @@ Updated 2026-11-21T22:53:49Z (paper trading, never real money)
   CA `H4gHnZ3NCU7Z9XQwGX6YYJNyieGEW8pqwGRUcdSxpump`
 
 ## Last scan
-- 22:53Z: 0 coins, 0 with pairs, 0 passed the market filters, 0 researched
+- 23:07Z: 2 coins, 1 with pairs, 0 passed the market filters, 0 researched
 
 ## Coins it looked at, and why it passed
+- 23:04Z HOGE (DIP, $837,839 mcap, $2,814 5m vol): REJECT, Bundles: 9 linked wallet cluster(s) hold 26.9% of supply (>20%) (V17)  
+  CA `FVzqGqRmr4UH1Fif6dewmwbJ1p4YUZCu8dcw4Efopump`
+- 23:03Z URANUS (MIGRATED, $44,015 mcap, $5,145 5m vol): PASS at conviction 2, PASS: URANUS is the 10th copy in a vamp field, not the leader. UrAnus has the crowd, and this coin dropped 31% on 5m with more sells than buys. Blocker: split crowd (V1, V3).  
+  CA `DUvFjnaE3r46WLbz9rz6MNk2bq9xPFPUfMd8bDgmpump`
+- 23:02Z CUNTS (no setup, $13,746 mcap, $1,944 5m vol): REJECT, No setup fits: not Final Stretch, not a migrated runner, not a healthy dip  
+  CA `7CvW68FD9KjNYGByfykhaNps7VNPLN8dFwMRfmgQpump`
+- 23:00Z MAYA (MIGRATED, $979,941 mcap, $2,641 5m vol): PASS at conviction 3, PASS: MAYA is down 76% from a $4.1M peak with no catalyst and its theme running at 0.87x pace. Bottom buys need a named catalyst and a theme at 1x+ pace. Neither is here (V1, V6, V13).  
+  CA `FJKt1LxbWBpTRt9BaDEB6Wr2qL5LZzjFF5sx8rXnpump`
 - 22:47Z Mfer (DIP, $95,911 mcap, $15,872 5m vol): REJECT, Dip with fading attention is a falling knife, not a dip (5m at 0.24x the hour's pace, under 0.6x)  
   CA `9tX1UpBGeNqMb1VqqzVumwzW71ybsNZFyWKYiL8Ppump`
 - 22:44Z SBS (MIGRATED, $128,831 mcap, $3,540 5m vol): PASS at conviction 2, PASS: no story, no printed higher low, and the candle data is broken. A 19-copy "beauty salon" field with a 4.85% bundle. Blockers: "no narrative", "no higher low", "split crowd". (V1, V3, V6, V13)  
@@ -88,18 +96,10 @@ Updated 2026-11-21T22:53:49Z (paper trading, never real money)
   CA `14coJKKEShg6ZaSKggQjubtKsCjWUZBWRa2v3E5ypump`
 - 22:39Z SHIT (DIP, $1,750,729 mcap, $7,489 5m vol): REJECT, Dip with fading attention is a falling knife, not a dip (5m at 0.40x the hour's pace, under 0.6x)  
   CA `Fn95NtGXWPaJXc4N5y9rVkUq1NwZbjBNJzPVvNRLpump`
-- 22:18Z URANUS (MIGRATED, $53,177 mcap, $6,722 5m vol): PASS at conviction 2, PASS. URANUS is sitting at its own high (0% off peak) with 5m volume under $10k, and it's the copycat in a 14-coin uranus field, not the leader. Blocker: chasing. (V1, V6)  
-  CA `DUvFjnaE3r46WLbz9rz6MNk2bq9xPFPUfMd8bDgmpump`
-- 22:17Z BTC (MIGRATED, $34,732 mcap, $32,820 5m vol): PASS at conviction 2, PASS: "Big Three" BTC is a 77%-off, 54-minute-old bond spike bleeding out, with 5m flow at 0.73x pace, no higher low, and 22 other BTC copies splitting the crowd (V1, V3, V6).  
-  CA `2G5b75jm9HtJmAccjxpzdWGs5r7XXeMYLTANoEcvpump`
-- 22:13Z UrAnus (MIGRATED, $98,141 mcap, $18,912 5m vol): PASS at conviction 2, PASS: falling knife, 75% off a $395k peak with a -56% 5m candle and a saw-tooth 15m chart. No higher low, a 16-copy vamp field, and a CA the team hasn't announced. Blocker: "falling knife" and "no catalyst". (V1, V6, V13)  
-  CA `27u3diWofnXGUkddjLGhcy1nRssFKHW3RtNbpWzUpump`
-- 22:12Z FINGERS (DIP, $152,970 mcap, $7,345 5m vol): REJECT, Dip with fading attention is a falling knife, not a dip (5m at 0.44x the hour's pace, under 0.6x)  
-  CA `BSF5xg7CuxkQWsbJWyHYw2HnuNbQtKybGaNhz9cCpump`
 
 ## What its skips did next (last 48h)
 A skip "ran" if the coin reached the first target (1.5x) from the skip price before a 20% drop, "dumped" if the drop came first. Sampled every 10 min, followed 6h.
-- flow below pace: blocked 26, ran 6, dumped 16, flat 0, open 4 (saving losses: keep it)
+- flow below pace: blocked 26, ran 7, dumped 16, flat 0, open 3 (saving losses: keep it)
   - ran: SI up to 1.53x  
     CA `4s38cgZJN4J39S2BQwCkcsJJ9ZGeJSjw8vK9wVtupump`
   - ran: AI up to 1.51x  
@@ -121,7 +121,7 @@ A skip "ran" if the coin reached the first target (1.5x) from the skip price bef
     CA `UQLWvkwiSsnViuVBy7oArMtzb5RAZyrdJ79amQFrzoL`
   - ran: STICK up to 2.08x  
     CA `532iaQrhFCD3QKFHsAtFAQ1mQZMjMdNrPXLeCS6cpump`
-- RugCheck danger: blocked 17, ran 2, dumped 15, flat 0, open 0 (saving losses: keep it)
+- RugCheck danger: blocked 16, ran 2, dumped 14, flat 0, open 0 (saving losses: keep it)
   - ran: TOP up to 1.67x  
     CA `hT9xKkj6dPMz97zcxEEE5T5fFdm6x31P6FodwT8pump`
   - ran: CAP up to 2.6x  
@@ -179,11 +179,11 @@ Meta, read from the raw scan_movers list. The crawler's meta_summary doesn't mat
 ## Moving most in its scans, last 30 min (1h volume)
 - Mfer: $797,237 1h vol, $95,911 mcap, +228% 1h  
   CA `9tX1UpBGeNqMb1VqqzVumwzW71ybsNZFyWKYiL8Ppump`
+- UrAnus: $286,388 1h vol, $2,168 mcap, -99% 1h  
+  CA `27u3diWofnXGUkddjLGhcy1nRssFKHW3RtNbpWzUpump`
 - SHIT: $223,496 1h vol, $1,750,729 mcap, -8% 1h  
   CA `Fn95NtGXWPaJXc4N5y9rVkUq1NwZbjBNJzPVvNRLpump`
-- VIRUS: $105,433 1h vol, $10,202 mcap, -49% 1h  
-  CA `HUpUhhHm3rh5kx47KE3h9MbHq6sHLNgaXGEf5e7Xpump`
-- CUNTS: $101,276 1h vol, $13,000 mcap, +448% 1h  
+- BTC: $162,767 1h vol, $19,951 mcap, -78% 1h  
+  CA `2G5b75jm9HtJmAccjxpzdWGs5r7XXeMYLTANoEcvpump`
+- CUNTS: $105,825 1h vol, $14,804 mcap, +524% 1h  
   CA `7CvW68FD9KjNYGByfykhaNps7VNPLN8dFwMRfmgQpump`
-- Vodkat: $84,900 1h vol, $14,419 mcap, -19% 1h  
-  CA `FxUMvvYHW6r41wtbbm4V52Hnu7cyyFfqhSXuwmuypump`
