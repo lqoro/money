@@ -1,12 +1,12 @@
 # Trencher live report
 
-Updated 2026-11-21T20:02:27Z (paper trading, never real money)
+Updated 2026-11-21T20:17:36Z (paper trading, never real money)
 
 - Equity: $74.23 (-25.8% vs $100 start)
 - Closed trades: 22, 3 wins
 - Fees paid: $14.78 (axiom $2.81, network $9.18, pool $2.66), plus $4.15 lost to slippage
 - New trades: WATCH-ONLY (scans and decides, buys nothing)
-- Brain: subscription, claude-haiku-5-5 for routine calls, claude-opus-5-5 for the daily review; 272 routine calls and 12 plan-limit hits in 48h
+- Brain: subscription, claude-haiku-5-5 for routine calls, claude-opus-5-5 for the daily review; 270 routine calls and 10 plan-limit hits in 48h
 - Watch log: 25 coins being followed, 2471 filed, 0 would-buys (6h follow, sampled every 2 min)
 
 ## Scorecard (after fees)
@@ -73,7 +73,7 @@ Updated 2026-11-21T20:02:27Z (paper trading, never real money)
   CA `H4gHnZ3NCU7Z9XQwGX6YYJNyieGEW8pqwGRUcdSxpump`
 
 ## Last scan
-- 20:02Z: 26 coins, 26 with pairs, 0 passed the market filters, 0 researched
+- 20:16Z: 1 coins, 1 with pairs, 0 passed the market filters, 0 researched
 
 ## Coins it looked at, and why it passed
 - 19:58Z DIGS (MIGRATED, $305,754 mcap, $2,612 5m vol): REJECT, Bundles: 10 linked wallet cluster(s) hold 100.0% of supply (>20%) (V17)  
@@ -107,16 +107,11 @@ A skip "ran" if the coin reached the first target (1.5x) from the skip price bef
     CA `8SacNb6sgiAcscRe4m915B6nL9XX55dk8FS7L532pump`
   - ran: SWRDXSTFF up to 1.77x  
     CA `Csoj9XHJfBAxsKswqKKBENnGeoRDHtACfyYi7HmJpump`
-- too new / sniping: blocked 22, ran 1, dumped 18, flat 1, open 2 (saving losses: keep it)
+- too new / sniping: blocked 22, ran 2, dumped 19, flat 1, open 0 (saving losses: keep it)
   - ran: AudaCity up to 1.96x  
     CA `3rtTUCpe1BBgCTNWQ9jK3xkAz1E7SPqMt4uYHx1Bpump`
-- RugCheck danger: blocked 21, ran 3, dumped 18, flat 0, open 0 (saving losses: keep it)
-  - ran: 62BIRDS up to 1.87x  
-    CA `BWkAvguMNpEFPVQ9EnSV8mQ2VjoDDAvQppwCWcD1pump`
-  - ran: TOP up to 1.67x  
-    CA `hT9xKkj6dPMz97zcxEEE5T5fFdm6x31P6FodwT8pump`
-  - ran: CAP up to 2.6x  
-    CA `CxGYpWoTun4J3xD4cNwXFRn2W3RzJozTxyU9nbJ4pump`
+  - ran: TA up to 1.77x  
+    CA `DKUM8qywmi8X9RYK2wUgnTw8QKjh1nYDThZR1GXPpump`
 - near the high / chasing: blocked 20, ran 4, dumped 14, flat 0, open 2 (saving losses: keep it)
   - ran: BEAR up to 2.32x  
     CA `DCPm44cT9i39HjR13QHYgxkR7wEx9TDeniGuayB5pump`
@@ -124,6 +119,11 @@ A skip "ran" if the coin reached the first target (1.5x) from the skip price bef
     CA `UQLWvkwiSsnViuVBy7oArMtzb5RAZyrdJ79amQFrzoL`
   - ran: STICK up to 2.08x  
     CA `532iaQrhFCD3QKFHsAtFAQ1mQZMjMdNrPXLeCS6cpump`
+- RugCheck danger: blocked 19, ran 2, dumped 17, flat 0, open 0 (saving losses: keep it)
+  - ran: TOP up to 1.67x  
+    CA `hT9xKkj6dPMz97zcxEEE5T5fFdm6x31P6FodwT8pump`
+  - ran: CAP up to 2.6x  
+    CA `CxGYpWoTun4J3xD4cNwXFRn2W3RzJozTxyU9nbJ4pump`
 - falling knife (code): blocked 18, ran 1, dumped 16, flat 1, open 0 (saving losses: keep it)
   - ran: MAYA up to 1.51x  
     CA `FJKt1LxbWBpTRt9BaDEB6Wr2qL5LZzjFF5sx8rXnpump`
@@ -177,13 +177,13 @@ Nothing has a positive after-cost edge. All 98 settled coins average -15.7% net 
 Meta from scan_movers: three themes. (1) Trump-family and famous-name coins: TA (Trump Accounts) and JENSEN, with the web's Trump dinner headlines behind them. (2) Dumb-joke and emote tickers: chud ("nothing ever happens"), :), ILY, SHIT, PUNANI. (3) A fresh launch wave of sub-$50k coins with real 5-minute flow: TA, :), Cybergeddon. Rising: TA ($53k cap, $43k 5m, 59% buys, 12 minutes old, +93% in the hour) has the strongest flow in the set, but it is a political-name coin, minutes old, and V13's politician rule applies if a politician pushed its CA. Fading: JENSEN (-38%, $4.7k 5m), MAYA (the only animal in the movers, -28%), UNI and TIMON (near-zero buys), RAMBO (-50%). Those are falling knives, not dips (V1). Setups to research, not buy: TA only if bundle and holder checks come back clean and 5m flow holds; :) and Cybergeddon only as fresh-launch research with a written exit; chud or SHIT only on a pullback that holds with buyers stepping back in. The cat and GTA wave from the web (LEBRAIN, RCAT, GATO) is not in the movers, so it is a theme to watch, not the meta.
 
 ## Moving most in its scans, last 30 min (1h volume)
-- PUNANI: $264,803 1h vol, $2,610,583 mcap, +86% 1h  
-  CA `2TngN4B7XaoGSKsYvttq5bFAdM4Z4xCSnuyRwGiFpump`
-- SHIT: $255,042 1h vol, $1,845,656 mcap, +15% 1h  
-  CA `Fn95NtGXWPaJXc4N5y9rVkUq1NwZbjBNJzPVvNRLpump`
-- OBAMA: $191,381 1h vol, $4,046 mcap, -86% 1h  
+- OBAMA: $191,669 1h vol, $3,883 mcap, -86% 1h  
   CA `7gqk4Ap5iYjnWHtkwygYp8bcAVFSiMo8aMJ1cGvPpump`
-- TA: $165,127 1h vol, $53,239 mcap, +93% 1h  
-  CA `DKUM8qywmi8X9RYK2wUgnTw8QKjh1nYDThZR1GXPpump`
-- chud: $165,114 1h vol, $485,341 mcap, +100% 1h  
-  CA `EV7J2QaPXPytSkM1LD9GPRkgAbmSEr9R3kYiXBzbpump`
+- HOUSE: $141,456 1h vol, $135,246 mcap, +15% 1h  
+  CA `4Kfos2jUqUxwbDqNAJL16B4C99tdtaMSWZS5XmuSZr6Z`
+- ANIMAL: $77,635 1h vol, $27,912 mcap, -2% 1h  
+  CA `pumptGRwCjbBVT9dskwqNDpYGLwS3VuDNiD6uiRssEm`
+- Singularity: $77,548 1h vol, $5,841 mcap, -62% 1h  
+  CA `2DPkAuPQFAKn3mnb6GT8H9oK8qm6NGmf3jMt7wbxpump`
+- Cybergeddon: $44,877 1h vol, $6,426 mcap, -78% 1h  
+  CA `7SjpHoT4mJrqCdS8F1sN3EaNNm7Zv4ijCwgXeYr7xVkr`
