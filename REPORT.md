@@ -1,13 +1,13 @@
 # Trencher live report
 
-Updated 2026-11-21T01:43:20Z (paper trading, never real money)
+Updated 2026-11-21T01:58:23Z (paper trading, never real money)
 
 - Equity: $74.23 (-25.8% vs $100 start)
 - Closed trades: 22, 3 wins
 - Fees paid: $14.78 (axiom $2.81, network $9.18, pool $2.66), plus $4.15 lost to slippage
 - New trades: WATCH-ONLY (scans and decides, buys nothing)
-- Brain: subscription, claude-haiku-5-5 for routine calls, claude-opus-5-5 for the daily review; 354 routine calls and 119 plan-limit hits in 48h
-- Watch log: 74 coins being followed, 2394 filed, 0 would-buys (6h follow, sampled every 2 min)
+- Brain: subscription, claude-haiku-5-5 for routine calls, claude-opus-5-5 for the daily review; 353 routine calls and 118 plan-limit hits in 48h
+- Watch log: 73 coins being followed, 2395 filed, 0 would-buys (6h follow, sampled every 2 min)
 
 ## Scorecard (after fees)
 - 22 closed, 3 won (14%), net $-25.79
@@ -73,7 +73,7 @@ Updated 2026-11-21T01:43:20Z (paper trading, never real money)
   CA `H4gHnZ3NCU7Z9XQwGX6YYJNyieGEW8pqwGRUcdSxpump`
 
 ## Last scan
-- 01:42Z: 6 coins, 6 with pairs, 0 passed the market filters, 0 researched
+- 01:57Z: 5 coins, 5 with pairs, 0 passed the market filters, 0 researched
 
 ## Coins it looked at, and why it passed
 - 01:41Z JENSEN (DIP, $1,723,858 mcap, $5,134 5m vol): REJECT, Dip with fading attention is a falling knife, not a dip (5m at 0.25x the hour's pace, under 0.6x)  
@@ -116,7 +116,7 @@ A skip "ran" if the coin reached the first target (1.5x) from the skip price bef
     CA `9rbKkz2BDQBVgZmrHY6d7PTq2ge91gkpEyE4y9PPpump`
   - ran: PIPI up to 1.63x  
     CA `J51xgomTx21VHY62Q7uv2otWRUSq71WeaApLfsAnpump`
-- flow below pace: blocked 23, ran 7, dumped 14, flat 1, open 1 (saving losses: keep it)
+- flow below pace: blocked 23, ran 7, dumped 15, flat 1, open 0 (saving losses: keep it)
   - ran: SI up to 1.53x  
     CA `4s38cgZJN4J39S2BQwCkcsJJ9ZGeJSjw8vK9wVtupump`
   - ran: AI up to 1.51x  
@@ -187,11 +187,11 @@ The meta in this scan is fresh pump.fun character coins: cartoon and mascot name
 ## Moving most in its scans, last 30 min (1h volume)
 - JENSEN: $247,154 1h vol, $1,723,858 mcap, -31% 1h  
   CA `DkHsZ1kjd2Fua8sgKE6PhHhyCdXYscbDVN7mAfiGpump`
-- BANDANA: $148,205 1h vol, $176,184 mcap, -32% 1h  
-  CA `2KRbMf4itijwsTHb5dQtiBpfptyNmhpVzmpdj4qqN2yx`
-- SBS: $125,591 1h vol, $99,387 mcap, -18% 1h  
-  CA `4mE8dPH1RTqQBT5EPim5Ubt2v2wXZ9zgEDDWmL1o1EYu`
+- GESTALT: $113,988 1h vol, $5,099 mcap, +119% 1h  
+  CA `4KgreHYuTGrPdbFinSr4AyWEZBDgxC4xWvGe9T2ypump`
 - BTC: $75,405 1h vol, $348,176 mcap, -65% 1h  
   CA `CUfphqswgDK3VP3FX7CiShVCTdGQneFusYRFViABpump`
-- S&P500: $71,411 1h vol, $3,005 mcap, -89% 1h  
+- S&P500: $74,049 1h vol, $4,143 mcap, -85% 1h  
   CA `ACVkPjBRHWMZEKExATPQaw6PwMZ7ED4wobxomeWGpump`
+- TikTok: $51,481 1h vol, $2,010 mcap, -75% 1h  
+  CA `7CQx6HdDjowjcDUiNs1EfYqK5bp1hAR87CRsyLg8pump`
