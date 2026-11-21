@@ -1,13 +1,13 @@
 # Trencher live report
 
-Updated 2026-11-21T23:39:05Z (paper trading, never real money)
+Updated 2026-11-21T23:54:13Z (paper trading, never real money)
 
 - Equity: $74.23 (-25.8% vs $100 start)
 - Closed trades: 22, 3 wins
 - Fees paid: $14.78 (axiom $2.81, network $9.18, pool $2.66), plus $4.15 lost to slippage
 - New trades: WATCH-ONLY (scans and decides, buys nothing)
 - Brain: subscription, claude-haiku-5-5 for routine calls, claude-opus-5-5 for the daily review; 275 routine calls and 0 plan-limit hits in 48h
-- Watch log: 71 coins being followed, 2471 filed, 0 would-buys (6h follow, sampled every 2 min)
+- Watch log: 74 coins being followed, 2471 filed, 0 would-buys (6h follow, sampled every 2 min)
 
 ## Scorecard (after fees)
 - 22 closed, 3 won (14%), net $-25.79
@@ -73,9 +73,15 @@ Updated 2026-11-21T23:39:05Z (paper trading, never real money)
   CA `H4gHnZ3NCU7Z9XQwGX6YYJNyieGEW8pqwGRUcdSxpump`
 
 ## Last scan
-- 23:38Z: 4 coins, 3 with pairs, 0 passed the market filters, 0 researched
+- 23:53Z: 2 coins, 1 with pairs, 0 passed the market filters, 0 researched
 
 ## Coins it looked at, and why it passed
+- 23:49Z KAREN (no setup, $23,948 mcap, $22,854 5m vol): REJECT, No setup fits: not Final Stretch, not a migrated runner, not a healthy dip  
+  CA `9kaQR3dorDz4vwim3iGaoRa9amoLcUHPp6wuLHpEpump`
+- 23:46Z MAYA (MIGRATED, $714,241 mcap, $2,420 5m vol): PASS at conviction 3, PASS — 83% off a $4.1M peak, 5m flow at 0.63x pace, no printed higher low, and the dog-name crowd is leaving. Blocker: flow below pace. (V1, V6)  
+  CA `FJKt1LxbWBpTRt9BaDEB6Wr2qL5LZzjFF5sx8rXnpump`
+- 23:40Z lens (no setup, $13,967 mcap, $23,922 5m vol): REJECT, No setup fits: not Final Stretch, not a migrated runner, not a healthy dip  
+  CA `FBU2ogNQEmrKXtPFCdk68zgoHX5fW3EhZYAHKXbhpump`
 - 23:37Z PUNANI (MIGRATED, $126,534 mcap, $3,862 5m vol): REJECT, RugCheck danger: Creator history of rugged tokens  
   CA `2TngN4B7XaoGSKsYvttq5bFAdM4Z4xCSnuyRwGiFpump`
 - 23:36Z HODL (MIGRATED, $926,774 mcap, $2,789 5m vol): PASS at conviction 3, PASS — HODL is at its high after a +12,700% day, 5m flow is 0.83x its hourly pace, and 17 tickers share the name. Chasing a spike, not buying a pullback (V1, V6, V13).  
@@ -90,19 +96,13 @@ Updated 2026-11-21T23:39:05Z (paper trading, never real money)
   CA `G8uej6HYR627NHmfuMrrbdttkzuBLbCYsmGfHBNxpump`
 - 23:04Z HOGE (DIP, $837,839 mcap, $2,814 5m vol): REJECT, Bundles: 9 linked wallet cluster(s) hold 26.9% of supply (>20%) (V17)  
   CA `FVzqGqRmr4UH1Fif6dewmwbJ1p4YUZCu8dcw4Efopump`
-- 23:03Z URANUS (MIGRATED, $44,015 mcap, $5,145 5m vol): PASS at conviction 2, PASS: URANUS is the 10th copy in a vamp field, not the leader. UrAnus has the crowd, and this coin dropped 31% on 5m with more sells than buys. Blocker: split crowd (V1, V3).  
-  CA `DUvFjnaE3r46WLbz9rz6MNk2bq9xPFPUfMd8bDgmpump`
-- 23:02Z CUNTS (no setup, $13,746 mcap, $1,944 5m vol): REJECT, No setup fits: not Final Stretch, not a migrated runner, not a healthy dip  
-  CA `7CvW68FD9KjNYGByfykhaNps7VNPLN8dFwMRfmgQpump`
-- 23:00Z MAYA (MIGRATED, $979,941 mcap, $2,641 5m vol): PASS at conviction 3, PASS: MAYA is down 76% from a $4.1M peak with no catalyst and its theme running at 0.87x pace. Bottom buys need a named catalyst and a theme at 1x+ pace. Neither is here (V1, V6, V13).  
-  CA `FJKt1LxbWBpTRt9BaDEB6Wr2qL5LZzjFF5sx8rXnpump`
 
 ## What its skips did next (last 48h)
 A skip "ran" if the coin reached the first target (1.5x) from the skip price before a 20% drop, "dumped" if the drop came first. Sampled every 10 min, followed 6h.
 - top 10 over 25%: blocked 26, ran 1, dumped 23, flat 1, open 1 (saving losses: keep it)
   - ran: :) up to 1.65x  
     CA `Dtx414D8jurspmB1jqJWsYU66pemoXRjQeXx7TC1pump`
-- flow below pace: blocked 25, ran 5, dumped 18, flat 0, open 2 (saving losses: keep it)
+- flow below pace: blocked 25, ran 5, dumped 19, flat 0, open 1 (saving losses: keep it)
   - ran: AI up to 1.51x  
     CA `8SacNb6sgiAcscRe4m915B6nL9XX55dk8FS7L532pump`
   - ran: SWRDXSTFF up to 1.77x  
@@ -136,9 +136,9 @@ A skip "ran" if the coin reached the first target (1.5x) from the skip price bef
     CA `C5eGEXJZYvXEbKdyvPtasksjGNV4xvMowpKM92bVv47f`
   - ran: SBS up to 1.64x  
     CA `4mE8dPH1RTqQBT5EPim5Ubt2v2wXZ9zgEDDWmL1o1EYu`
-- dev share over 1%: blocked 7, ran 1, dumped 3, flat 1, open 2 (saving losses: keep it)
-  - ran: SANTINU up to 1.56x  
-    CA `BCTwG3LDhNcthcK374aWQfAzLYGRXDu1apmrqw3Tpump`
+- other: blocked 8, ran 1, dumped 6, flat 0, open 1 (saving losses: keep it)
+  - ran: KAREN up to 1.53x  
+    CA `9kaQR3dorDz4vwim3iGaoRa9amoLcUHPp6wuLHpEpump`
 
 ## Daily review (2026-11-21, claude-opus-5-5)
 Nothing has a positive after-cost edge. All 98 settled coins average -15.7% net under the simple plan, and every setup and stage is negative: MIGRATED -13.6% (n=70), FINAL_STRETCH -20.0% (n=14), DIP -21.7% (n=14). The main reason is the 9.5% average round-trip cost on a $10 buy. With a +50%/-20% bracket and that cost, a coin nets about +40% when it runs and about -30% when it dumps, so the plan breaks even only if roughly 42% of coins run. The observed rate is 16.3% (95% CI about 9–24%), so the overall verdict is solid even at n=98. The per-setup splits are not: n=14 gives about ±19 points, and coins from the same day and meta move together. I can't answer whether the routine model's would-buys beat its passes because it made zero would-buys. It declined all 49 coins it reviewed, including all 5 of the day's 4.5–5.5x runners. Even so, declining was right on average, since that reviewed group nets -16.2% under the simple plan.
@@ -181,11 +181,11 @@ Meta from the raw scan_movers list (ignoring the crawler's HODL, MONKE, Maxlong 
 ## Moving most in its scans, last 30 min (1h volume)
 - BIGFOOT: $672,481 1h vol, $514,321 mcap, +351% 1h  
   CA `EMjVCbyVHVZ88zvmQPVZffB6Nk2eksS6aCACGVGnpump`
+- Inu: $347,048 1h vol, $29,299 mcap, -17% 1h  
+  CA `7htmi1ohL8vgAxmdLtvyXR2Z4As6bj6dXEx5wRh78VJG`
 - Mfer: $228,309 1h vol, $30,953 mcap, -76% 1h  
   CA `9tX1UpBGeNqMb1VqqzVumwzW71ybsNZFyWKYiL8Ppump`
 - SHIT: $211,359 1h vol, $1,885,126 mcap, +6% 1h  
   CA `Fn95NtGXWPaJXc4N5y9rVkUq1NwZbjBNJzPVvNRLpump`
-- UrAnus: $154,814 1h vol, $1,347 mcap, -99% 1h  
-  CA `27u3diWofnXGUkddjLGhcy1nRssFKHW3RtNbpWzUpump`
-- lens: $136,873 1h vol, $7,981 mcap, +122% 1h  
+- lens: $147,808 1h vol, $4,396 mcap, +22% 1h  
   CA `dxLNZcQXY55uRTRTVKbx1UmzK1WGWekmydqdiWWpump`
