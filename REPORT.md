@@ -1,13 +1,13 @@
 # Trencher live report
 
-Updated 2026-11-22T15:02:47Z (paper trading, never real money)
+Updated 2026-11-22T15:17:57Z (paper trading, never real money)
 
 - Equity: $74.23 (-25.8% vs $100 start)
 - Closed trades: 22, 3 wins
 - Fees paid: $14.78 (axiom $2.81, network $9.18, pool $2.66), plus $4.15 lost to slippage
 - New trades: WATCH-ONLY (scans and decides, buys nothing)
 - Brain: subscription, claude-haiku-5-5 for routine calls, claude-opus-5-5 for the daily review; 264 routine calls and 0 plan-limit hits in 48h
-- Watch log: 49 coins being followed, 2656 filed, 0 would-buys (6h follow, sampled every 2 min)
+- Watch log: 48 coins being followed, 2660 filed, 0 would-buys (6h follow, sampled every 2 min)
 
 ## Scorecard (after fees)
 - 22 closed, 3 won (14%), net $-25.79
@@ -73,9 +73,15 @@ Updated 2026-11-22T15:02:47Z (paper trading, never real money)
   CA `H4gHnZ3NCU7Z9XQwGX6YYJNyieGEW8pqwGRUcdSxpump`
 
 ## Last scan
-- 15:02Z: 4 coins, 3 with pairs, 0 passed the market filters, 0 researched
+- 15:17Z: 2 coins, 1 with pairs, 0 passed the market filters, 0 researched
 
 ## Coins it looked at, and why it passed
+- 15:06Z testicles (DIP, $39,053 mcap, $2,269 5m vol): REJECT, Top 10 hold 28.4% ex-pool (>25%) (V13)  
+  CA `3pGmCpDCr2B6cZFhFJFtLrcMCadMvjV4dB9UGJyNpump`
+- 15:04Z DIGS (DIP, $278,297 mcap, $2,795 5m vol): REJECT, Bundles: 10 linked wallet cluster(s) hold 100.0% of supply (>20%) (V17)  
+  CA `9QT8K685Hrae4k11dhGXirdtpfAaimExtyfwt8cPpump`
+- 15:03Z Plurality (FINAL_STRETCH, $25,003 mcap, $50,123 5m vol): PASS at conviction 3, PASS: 13 copies of the same name, a 7.2% bundle cluster, and a candle already up 47% in 5 minutes. Split crowd and chasing spike (V1, V3, V6).  
+  CA `3NLPK4MtmJXgpFxhgyxth3Vmf7VmhdDAvnk6G6XYpump`
 - 14:59Z HIPPO (MIGRATED, $36,251 mcap, $3,011 5m vol): PASS at conviction 2, PASS: HIPPO is up 31% on the 5m and 71.5% off its $127k peak. That's a spike, not a pullback, in a 16-copy hippo field with no catalyst (V1, V6, V13).  
   CA `95NAbTyZopHGJK9TuisJZUHKAZSqRoSB3JPfqAqHpump`
 - 14:57Z PushCoin (MIGRATED, $1,413,269 mcap, $14,636 5m vol): PASS at conviction 3, PASS — 5m flow at 0.82x the hourly pace, no printed higher low, and the team's site shows "Contract TBA" on a 1.8-day-old domain. Blocker: flow below pace. (V1, V6, V13)  
@@ -90,12 +96,6 @@ Updated 2026-11-22T15:02:47Z (paper trading, never real money)
   CA `8ooT17cWPRGfXr9DDPyBQHaqLz2GnAm3jkaR6MGYfz3c`
 - 14:20Z FSDV15 (MIGRATED, $769,888 mcap, $508,907 5m vol): REJECT, Dev holds 35.1% (>1%) (V13, V17)  
   CA `3P7FLAbXeu7Mjc8SnyfLet8vwNCuk8HaXbjdxHgMpump`
-- 14:19Z DIGS (DIP, $270,478 mcap, $3,705 5m vol): REJECT, Bundles: 10 linked wallet cluster(s) hold 100.0% of supply (>20%) (V17)  
-  CA `9QT8K685Hrae4k11dhGXirdtpfAaimExtyfwt8cPpump`
-- 14:11Z PushCoin (MIGRATED, $1,321,250 mcap, $29,150 5m vol): PASS at conviction 3, PASS: chasing a spike at 3.2x pace, first wall is only 1.4x away at $1.3M, and the project site doesn't show this CA. Pass. (V1, V3, V6)  
-  CA `3N6Mp8YQuVDfEtyuyJS72s4MRrgQuKY34gvYZD5Kpump`
-- 14:03Z DESSA (MIGRATED, $3,286,016 mcap, $15,929 5m vol): PASS at conviction 2, PASS: target too close and flow below pace. Dessa is 1.23x from its $4.03M high, 5m flow is 0.9x its hourly pace, and the AI-yap story is a LARP-tagged meme with no catalyst. (V1, V6)  
-  CA `npz2FhoufQ7pKqhGpaipYWacrAkidyW2yDpVWSvpump`
 
 ## What its skips did next (last 48h)
 A skip "ran" if the coin reached the first target (1.5x) from the skip price before a 20% drop, "dumped" if the drop came first. Sampled every 10 min, followed 6h.
@@ -106,10 +106,10 @@ A skip "ran" if the coin reached the first target (1.5x) from the skip price bef
     CA `EoV9JQYi57tqjyQbWLdXVarYpEu82FsP8SDnkbFmpump`
   - ran: Mandy up to 1.53x  
     CA `HmJRWZ8tFfuCY9A4MrSftnrvEFCApw1hyqHtb9Rzpump`
-- top 10 over 25%: blocked 22, ran 1, dumped 21, flat 0, open 0 (saving losses: keep it)
+- top 10 over 25%: blocked 23, ran 1, dumped 21, flat 0, open 1 (saving losses: keep it)
   - ran: :) up to 1.65x  
     CA `Dtx414D8jurspmB1jqJWsYU66pemoXRjQeXx7TC1pump`
-- near the high / chasing: blocked 20, ran 3, dumped 17, flat 0, open 0 (saving losses: keep it)
+- near the high / chasing: blocked 21, ran 3, dumped 17, flat 0, open 1 (saving losses: keep it)
   - ran: Trader up to 2.04x  
     CA `BYKQkHKMWHidNBLQXgt7NX4PLUtJZRYGLWQYkJzPGenX`
   - ran: CUNTS up to 1.61x  
@@ -146,9 +146,9 @@ A skip "ran" if the coin reached the first target (1.5x) from the skip price bef
   - ran: Mfer up to 1.55x  
     CA `9tX1UpBGeNqMb1VqqzVumwzW71ybsNZFyWKYiL8Ppump`
 - bundles over the line: blocked 6, ran 0, dumped 3, flat 2, open 1 (saving losses: keep it)
-- thin 5m volume: blocked 6, ran 1, dumped 5, flat 0, open 0 (saving losses: keep it)
-  - ran: chud up to 1.55x  
-    CA `EV7J2QaPXPytSkM1LD9GPRkgAbmSEr9R3kYiXBzbpump`
+- brain paced: blocked 5, ran 1, dumped 3, flat 1, open 0 (saving losses: keep it)
+  - ran: STREETS up to 1.73x  
+    CA `82mseLFauphc2yutbaDGgViahquJ1jGVLpyof99xpump`
 
 ## Daily review (2026-11-22, claude-opus-5-5)
 Nothing has a positive edge after costs. All 166 settled coins averaged -11.3% net under the simple plan, and no setup or stage was positive. The closest were FINAL_STRETCH at -3.3% (n=21) and DIP at -5.9% (n=20). Both look slightly positive before costs (about +6.7% and +3.6%), but with ~20 samples the error bar is roughly ±13 points, and some coins are logged more than once, so both are noise for now. The biggest loss is the 9.8% average round-trip cost on a $10 buy: at that cost, the simple plan only breaks even if about 43% of coins hit 1.5x before -20%. Overall only 23.5% did, and the best setup (FINAL_STRETCH) managed 38.1%. I can't answer whether the routine model's would-buys beat its passes, because it logged zero would-buys in 24h out of 99 coins it reviewed. The coins it passed on did lose more than the coins the checklist rejected (-15.2% vs -5.7%). That suggests passing them was correct, but also that clearing the checklist didn't pick better coins this day.
@@ -189,13 +189,13 @@ Nothing has a positive edge after costs. All 166 settled coins averaged -11.3% n
 Not quiet. Three themes are moving across the scan. (1) Fresh pump.fun launches with product or cute-name hooks, led by Tesla FSD V15 ($651k cap, $548k 5m, 67% buys, 6 minutes old), plus KYC, Betty and MOG, all at 59-67% buys. They are minutes to hours old, so they are momentum to watch, not setups. (2) Mature coins with real buyer share are rising: PushCoin ($1.3M cap, $29k 5m, 63% buys, +32% in the hour), DESSA ($3.4M, 68% buys) and BLOB ($17.2M, +23% in the hour). (3) One-word joke launches older than a few hours are fading: GIFTER at 36% buys, greg at 7%, Max at 17%. testicles at 100% buys on $255 of 5m volume is noise. The Trump, GTA and Anthropic headlines are not in the movers, so I'm not trading the news. Setups to research: PushCoin and DESSA as V6 recon candidates (cap $70k to $11M, 5m volume of at least $10k), with holder, dev and bundle checks before any entry. BLOB is above the $11M V6 ceiling at $17.2M, so the web's "inside the range" read is wrong and it stays a watch. MCAT is at $10.6k cap, below the $70k floor and down 37% in the hour, so it's a pass for now. I used scan figures throughout, since the web text disagrees with them on BLOB, MCAT and the buy shares.
 
 ## Moving most in its scans, last 30 min (1h volume)
-- BLOB: $271,121 1h vol, $15,513,446 mcap, +0% 1h  
-  CA `8s11PkgQt4ZzdZ7oo84hK5t9HG1EvdgAjcg4W7Lpump`
+- FSDV15: $648,258 1h vol, $1,364 mcap, -100% 1h  
+  CA `3P7FLAbXeu7Mjc8SnyfLet8vwNCuk8HaXbjdxHgMpump`
+- KYC: $280,373 1h vol, $11,418 mcap, -59% 1h  
+  CA `47YCrfUmSQUF9vnPsPGSzrmTcxttdRAWejCMkhrrpump`
 - DESSA: $269,755 1h vol, $3,009,001 mcap, -19% 1h  
   CA `npz2FhoufQ7pKqhGpaipYWacrAkidyW2yDpVWSvpump`
+- BLOB: $259,300 1h vol, $15,622,263 mcap, -4% 1h  
+  CA `8s11PkgQt4ZzdZ7oo84hK5t9HG1EvdgAjcg4W7Lpump`
 - PushCoin: $213,944 1h vol, $1,413,269 mcap, +14% 1h  
   CA `3N6Mp8YQuVDfEtyuyJS72s4MRrgQuKY34gvYZD5Kpump`
-- Pumpfun: $53,260 1h vol, $3,501 mcap, -3% 1h  
-  CA `BVGFN5s6GzeDhTQnSLBohbWnjncoAba9hVjBx2pvpump`
-- Flywheel: $42,683 1h vol, $20,883 mcap, +37% 1h  
-  CA `95C2ZFW6jfMch1iEKAbbSdB56orJ2gTbxxtn2cDvpump`
