@@ -1,13 +1,13 @@
 # Trencher live report
 
-Updated 2026-11-22T05:57:27Z (paper trading, never real money)
+Updated 2026-11-22T06:12:28Z (paper trading, never real money)
 
 - Equity: $74.23 (-25.8% vs $100 start)
 - Closed trades: 22, 3 wins
 - Fees paid: $14.78 (axiom $2.81, network $9.18, pool $2.66), plus $4.15 lost to slippage
 - New trades: WATCH-ONLY (scans and decides, buys nothing)
-- Brain: subscription, claude-haiku-5-5 for routine calls, claude-opus-5-5 for the daily review; 270 routine calls and 0 plan-limit hits in 48h
-- Watch log: 83 coins being followed, 2545 filed, 0 would-buys (6h follow, sampled every 2 min)
+- Brain: subscription, claude-haiku-5-5 for routine calls, claude-opus-5-5 for the daily review; 271 routine calls and 0 plan-limit hits in 48h
+- Watch log: 79 coins being followed, 2552 filed, 0 would-buys (6h follow, sampled every 2 min)
 
 ## Scorecard (after fees)
 - 22 closed, 3 won (14%), net $-25.79
@@ -73,9 +73,15 @@ Updated 2026-11-22T05:57:27Z (paper trading, never real money)
   CA `H4gHnZ3NCU7Z9XQwGX6YYJNyieGEW8pqwGRUcdSxpump`
 
 ## Last scan
-- 05:57Z: 4 coins, 4 with pairs, 0 passed the market filters, 0 researched
+- 06:11Z: 6 coins, 6 with pairs, 0 passed the market filters, 0 researched
 
 ## Coins it looked at, and why it passed
+- 06:05Z DESSA (DIP, $1,462,105 mcap, $4,893 5m vol): PASS at conviction 2, PASS: DIP on a story that peaked a month ago, no fresh catalyst, and 5m flow under the $10k bar. Blocker: "dead story" plus bottom-buy rule. (V1, V6, V13)  
+  CA `npz2FhoufQ7pKqhGpaipYWacrAkidyW2yDpVWSvpump`
+- 06:04Z Retail (FINAL_STRETCH, $18,253 mcap, $13,293 5m vol): REJECT, RugCheck danger: Creator history of rugged tokens  
+  CA `A3skRGgr5oL8eWJUjZMuKNTwKiykssoGMVqBYpngpump`
+- 06:03Z CORONA (MIGRATED, $64,310 mcap, $10,150 5m vol): PASS at conviction 2, PASS — CORONA is a copy in a 26-coin "corona" field, and its 5m flow is 0.81x pace on a migration 36 minutes old. Blockers: flow below pace, too new, split crowd. (V1, V3, V13)  
+  CA `6fVQAutGBLpyYJRiekVjSjvKidsmgZx14bKV5HSSpump`
 - 05:56Z SBS (MIGRATED, $131,124 mcap, $2,528 5m vol): PASS at conviction 3, PASS: 5m flow is $2.5k, under the $10k bar, and the chart data is broken. One of 25 same-ticker copies with no narrative behind it. Blocker: flow below pace / no higher low. (V1, V6, V13)  
   CA `4mE8dPH1RTqQBT5EPim5Ubt2v2wXZ9zgEDDWmL1o1EYu`
 - 05:51Z snowball (MIGRATED, $112,733 mcap, $47,112 5m vol): REJECT, Dev holds 2.1% (>1%) (V13, V17)  
@@ -90,12 +96,6 @@ Updated 2026-11-22T05:57:27Z (paper trading, never real money)
   CA `kPqBsUZuogprbq15ZpACwDzbUHSAxTxbhRrxmrDpump`
 - 05:21Z Snowball (MIGRATED, $109,697 mcap, $18,680 5m vol): REJECT, Top 10 hold 26.0% ex-pool (>25%) (V13)  
   CA `B7a7t2hRCfDWvWCXniiL2RXr1ViUNfQrQ4ATr79wpump`
-- 05:19Z DESSA (DIP, $1,500,731 mcap, $4,496 5m vol): PASS at conviction 2, PASS: DESSA is a month-old news meme with no fresh catalyst, 5m volume $4.5k under the $10k bar, and the 3-hour pump has already retraced to its pre-pump base. Blocker: dead story. (V1, V6)  
-  CA `npz2FhoufQ7pKqhGpaipYWacrAkidyW2yDpVWSvpump`
-- 05:17Z CORONA (no setup, $27,416 mcap, $6,141 5m vol): REJECT, No setup fits: not Final Stretch, not a migrated runner, not a healthy dip  
-  CA `6fVQAutGBLpyYJRiekVjSjvKidsmgZx14bKV5HSSpump`
-- 05:06Z snowball (MIGRATED, $75,489 mcap, $65,803 5m vol): REJECT, Dev holds 2.1% (>1%) (V13, V17)  
-  CA `3D7YQcnXi6RMjWxheiE8VLuGXJTtgQkmyugGYvzjpump`
 
 ## What its skips did next (last 48h)
 A skip "ran" if the coin reached the first target (1.5x) from the skip price before a 20% drop, "dumped" if the drop came first. Sampled every 10 min, followed 6h.
@@ -106,7 +106,7 @@ A skip "ran" if the coin reached the first target (1.5x) from the skip price bef
     CA `BYKQkHKMWHidNBLQXgt7NX4PLUtJZRYGLWQYkJzPGenX`
   - ran: Bust up to 1.55x  
     CA `EoV9JQYi57tqjyQbWLdXVarYpEu82FsP8SDnkbFmpump`
-- top 10 over 25%: blocked 27, ran 1, dumped 24, flat 1, open 1 (saving losses: keep it)
+- top 10 over 25%: blocked 26, ran 1, dumped 23, flat 1, open 1 (saving losses: keep it)
   - ran: :) up to 1.65x  
     CA `Dtx414D8jurspmB1jqJWsYU66pemoXRjQeXx7TC1pump`
 - near the high / chasing: blocked 21, ran 4, dumped 17, flat 0, open 0 (saving losses: keep it)
@@ -116,12 +116,12 @@ A skip "ran" if the coin reached the first target (1.5x) from the skip price bef
     CA `532iaQrhFCD3QKFHsAtFAQ1mQZMjMdNrPXLeCS6cpump`
   - ran: Trader up to 2.04x  
     CA `BYKQkHKMWHidNBLQXgt7NX4PLUtJZRYGLWQYkJzPGenX`
-- too new / sniping: blocked 19, ran 2, dumped 16, flat 1, open 0 (saving losses: keep it)
+- too new / sniping: blocked 20, ran 2, dumped 16, flat 1, open 1 (saving losses: keep it)
   - ran: TA up to 1.77x  
     CA `DKUM8qywmi8X9RYK2wUgnTw8QKjh1nYDThZR1GXPpump`
   - ran: SANTAHAT up to 3x  
     CA `5fWLSMA5HoK9W4VoTMi4c3qjyu3N2LsKRSM8Ffpgpump`
-- RugCheck danger: blocked 16, ran 2, dumped 14, flat 0, open 0 (saving losses: keep it)
+- RugCheck danger: blocked 17, ran 2, dumped 15, flat 0, open 0 (saving losses: keep it)
   - ran: TOP up to 1.67x  
     CA `hT9xKkj6dPMz97zcxEEE5T5fFdm6x31P6FodwT8pump`
   - ran: CAP up to 2.6x  
@@ -134,7 +134,7 @@ A skip "ran" if the coin reached the first target (1.5x) from the skip price bef
 - thin 5m volume: blocked 9, ran 1, dumped 6, flat 1, open 1 (saving losses: keep it)
   - ran: chud up to 1.55x  
     CA `EV7J2QaPXPytSkM1LD9GPRkgAbmSEr9R3kYiXBzbpump`
-- dev share over 1%: blocked 8, ran 2, dumped 3, flat 2, open 1 (mixed)
+- dev share over 1%: blocked 8, ran 2, dumped 4, flat 2, open 0 (saving losses: keep it)
   - ran: SANTINU up to 1.56x  
     CA `BCTwG3LDhNcthcK374aWQfAzLYGRXDu1apmrqw3Tpump`
   - ran: Mfer up to 1.55x  
@@ -187,11 +187,11 @@ The meta on the scan_movers tape is the "-mas" holiday-pun family, and it's spli
 ## Moving most in its scans, last 30 min (1h volume)
 - snowball: $370,752 1h vol, $112,733 mcap, +544% 1h  
   CA `3D7YQcnXi6RMjWxheiE8VLuGXJTtgQkmyugGYvzjpump`
-- SHIT: $200,744 1h vol, $32,377 mcap, -64% 1h  
+- Snowball: $246,441 1h vol, $22,009 mcap, -74% 1h  
+  CA `B7a7t2hRCfDWvWCXniiL2RXr1ViUNfQrQ4ATr79wpump`
+- SHIT: $185,093 1h vol, $41,681 mcap, -50% 1h  
   CA `Fn95NtGXWPaJXc4N5y9rVkUq1NwZbjBNJzPVvNRLpump`
-- CATEMAS: $55,631 1h vol, $129,421 mcap, -50% 1h  
-  CA `kPqBsUZuogprbq15ZpACwDzbUHSAxTxbhRrxmrDpump`
+- CORONA: $150,810 1h vol, $64,875 mcap, +134% 1h  
+  CA `6fVQAutGBLpyYJRiekVjSjvKidsmgZx14bKV5HSSpump`
 - PushCoin: $45,443 1h vol, $1,562,878 mcap, -3% 1h  
   CA `3N6Mp8YQuVDfEtyuyJS72s4MRrgQuKY34gvYZD5Kpump`
-- DADDY: $39,840 1h vol, $3,545 mcap, -9% 1h  
-  CA `Fy6Ly3HUtjQwDBPqAViQom7j4mFvdY4rb6dWX1NEpump`
