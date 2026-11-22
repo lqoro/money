@@ -1,13 +1,13 @@
 # Trencher live report
 
-Updated 2026-11-22T03:26:04Z (paper trading, never real money)
+Updated 2026-11-22T03:41:08Z (paper trading, never real money)
 
 - Equity: $74.23 (-25.8% vs $100 start)
 - Closed trades: 22, 3 wins
 - Fees paid: $14.78 (axiom $2.81, network $9.18, pool $2.66), plus $4.15 lost to slippage
 - New trades: WATCH-ONLY (scans and decides, buys nothing)
 - Brain: subscription, claude-haiku-5-5 for routine calls, claude-opus-5-5 for the daily review; 280 routine calls and 0 plan-limit hits in 48h
-- Watch log: 90 coins being followed, 2510 filed, 0 would-buys (6h follow, sampled every 2 min)
+- Watch log: 88 coins being followed, 2514 filed, 0 would-buys (6h follow, sampled every 2 min)
 
 ## Scorecard (after fees)
 - 22 closed, 3 won (14%), net $-25.79
@@ -73,9 +73,13 @@ Updated 2026-11-22T03:26:04Z (paper trading, never real money)
   CA `H4gHnZ3NCU7Z9XQwGX6YYJNyieGEW8pqwGRUcdSxpump`
 
 ## Last scan
-- 03:25Z: 0 coins, 0 with pairs, 0 passed the market filters, 0 researched
+- 03:40Z: 3 coins, 3 with pairs, 0 passed the market filters, 0 researched
 
 ## Coins it looked at, and why it passed
+- 03:34Z PushCoin (MIGRATED, $1,581,162 mcap, $9,343 5m vol): PASS at conviction 2, PASS: PushCoin is sitting 6.6% off a $1.69M high after a +25% hour, on 5m flow at 0.77x pace, with its own site showing "Contract TBA" and a 1.3-day-old domain. That's chasing a spike in a crowded holiday/rizz tape that's spiking and dumping (V1, V6, V13).  
+  CA `3N6Mp8YQuVDfEtyuyJS72s4MRrgQuKY34gvYZD5Kpump`
+- 03:33Z GRAUDIA (MIGRATED, $178,595 mcap, $2,312 5m vol): PASS at conviction 2, PASS. Shallow-band pullback with flow at 0.54x pace and $2.3k on the 5m. The site says "CA TBA" and the domain is 0.1 days old. Blocker: flow below pace. (V1, V6, V13)  
+  CA `B1oGtkaVAVZkdtWV7SXrHnFkcWC1Kd45sYpy6RYTpump`
 - 03:16Z MAS (FINAL_STRETCH, $17,089 mcap, $25,513 5m vol): PASS at conviction 2, PASS: MAS is 5 minutes old, up 629% on the 5m at 12x its hourly pace, and one of 29 "mas" copies. Top 10 at 24.5% and an 8.6% bundle cluster. Chasing a spike in a split crowd (V1, V6, V13).  
   CA `p5Npysmyvz9uc6FC4mW8vta65AnDd8Hx7tMoLYrpump`
 - 03:15Z FRIEND (MIGRATED, $96,013 mcap, $7,088 5m vol): PASS at conviction 2, PASS: flow below pace, too new, no higher low. A 17-minute-old spike with 5m at 0.62x its hourly pace is a bleed, not a base. (V1, V6)  
@@ -92,14 +96,10 @@ Updated 2026-11-22T03:26:04Z (paper trading, never real money)
   CA `npz2FhoufQ7pKqhGpaipYWacrAkidyW2yDpVWSvpump`
 - 03:01Z STREETS (DIP, $912,350 mcap, $2,962 5m vol): PASS at conviction 3, PASS: STREETS is a DIP with no catalyst, a 5h-old site showing "CA TBA", and an entry 29% above its printed higher low. Blocker: "mid-range" plus "no catalyst" (V1, V6).  
   CA `82mseLFauphc2yutbaDGgViahquJ1jGVLpyof99xpump`
-- 02:56Z MASCOIN (MIGRATED, $30,309 mcap, $15,725 5m vol): PASS at conviction 3, PASS: chasing spike, no higher low, and the coin is 10 minutes old. Mascoin is a vamp-field leader with no story behind it. Come back when a base prints. (V1, V6)  
-  CA `9GQhJ7t7Gy8DyeMVxjJZuTsHvmoZro5sVDxzNxsFpump`
-- 02:48Z PushCoin (MIGRATED, $1,420,128 mcap, $30,016 5m vol): REJECT, Top 10 hold 25.7% ex-pool (>25%) (V13)  
-  CA `3N6Mp8YQuVDfEtyuyJS72s4MRrgQuKY34gvYZD5Kpump`
 
 ## What its skips did next (last 48h)
 A skip "ran" if the coin reached the first target (1.5x) from the skip price before a 20% drop, "dumped" if the drop came first. Sampled every 10 min, followed 6h.
-- flow below pace: blocked 29, ran 5, dumped 22, flat 0, open 2 (saving losses: keep it)
+- flow below pace: blocked 30, ran 4, dumped 22, flat 0, open 4 (saving losses: keep it)
   - ran: SWRDXSTFF up to 1.77x  
     CA `Csoj9XHJfBAxsKswqKKBENnGeoRDHtACfyYi7HmJpump`
   - ran: Trader up to 2.04x  
@@ -116,7 +116,7 @@ A skip "ran" if the coin reached the first target (1.5x) from the skip price bef
     CA `532iaQrhFCD3QKFHsAtFAQ1mQZMjMdNrPXLeCS6cpump`
   - ran: Trader up to 2.04x  
     CA `BYKQkHKMWHidNBLQXgt7NX4PLUtJZRYGLWQYkJzPGenX`
-- too new / sniping: blocked 20, ran 3, dumped 14, flat 1, open 2 (saving losses: keep it)
+- too new / sniping: blocked 20, ran 4, dumped 14, flat 1, open 1 (saving losses: keep it)
   - ran: AudaCity up to 1.96x  
     CA `3rtTUCpe1BBgCTNWQ9jK3xkAz1E7SPqMt4uYHx1Bpump`
   - ran: TA up to 1.77x  
@@ -128,9 +128,11 @@ A skip "ran" if the coin reached the first target (1.5x) from the skip price bef
     CA `hT9xKkj6dPMz97zcxEEE5T5fFdm6x31P6FodwT8pump`
   - ran: CAP up to 2.6x  
     CA `CxGYpWoTun4J3xD4cNwXFRn2W3RzJozTxyU9nbJ4pump`
-- falling knife (code): blocked 15, ran 1, dumped 11, flat 1, open 2 (saving losses: keep it)
+- falling knife (code): blocked 14, ran 2, dumped 10, flat 1, open 1 (saving losses: keep it)
   - ran: RIZZMAS3 up to 1.84x  
     CA `BQcV4Ryfu9bZK8egAF89AhkojdJqAaDt4xTFwUQ2pump`
+  - ran: RIZZMAS up to 1.68x  
+    CA `6J3ApVu8dSLg1TJjBLWSTgmnvJXcH2YyF2iDC48Fpump`
 - thin 5m volume: blocked 10, ran 1, dumped 7, flat 2, open 0 (saving losses: keep it)
   - ran: chud up to 1.55x  
     CA `EV7J2QaPXPytSkM1LD9GPRkgAbmSEr9R3kYiXBzbpump`
@@ -183,13 +185,13 @@ Nothing has a positive after-cost edge. All 98 settled coins average -15.7% net 
 Tape meta: holiday-pun and rizz-slang pump.fun launches, spike-and-dump. Holiday names (Bullmas, Secret Santa, Dogemas, RIZZMAS 3) and rizz jokes (RIZZGIVING, RIZZMAS 3) hold most of the 5m volume, but the earliest ones are bleeding: Secret Santa -64% in an hour, RIZZGIVING -37%, RIZZMAS 3 -22%, and Dogemas had 0% buys on its last 5m. Dog and pet names are dead (Maya the Samoyed -99%, Mandy -99%), and "Ah Shit, Here We Go Again" is down 52% in an hour. Rising, and not holiday-themed: PushCoin ($1.4M cap, $30k 5m, 64% buys, +3951% in 1h, 0.9h old) and Bullmas ($41.7k cap, $36k 5m, 58% buys, +46% in 1h, under an hour old). Setups to research, no entry: Bullmas only on a pullback that holds with buyers stepping back in, and PushCoin only after a retrace that holds, since a +3951% hour is chase territory. RIZZMAS 3 fails the 5m $10k bar on scan_movers ($2.9k), so the crawler's $34.6k figure and its "setup" don't hold. The Trump and Anthropic headlines aren't on this tape, so news isn't what's driving it; holder, dev and bundle checks still have to run on each coin before any size.
 
 ## Moving most in its scans, last 30 min (1h volume)
-- RIZZMAS: $190,371 1h vol, $54,144 mcap, -22% 1h  
-  CA `6J3ApVu8dSLg1TJjBLWSTgmnvJXcH2YyF2iDC48Fpump`
 - SHIT: $161,015 1h vol, $131,481 mcap, -52% 1h  
   CA `Fn95NtGXWPaJXc4N5y9rVkUq1NwZbjBNJzPVvNRLpump`
-- DESSA: $147,662 1h vol, $2,825,527 mcap, -12% 1h  
-  CA `npz2FhoufQ7pKqhGpaipYWacrAkidyW2yDpVWSvpump`
+- PushCoin: $145,139 1h vol, $1,581,162 mcap, +25% 1h  
+  CA `3N6Mp8YQuVDfEtyuyJS72s4MRrgQuKY34gvYZD5Kpump`
 - FRIEND: $137,547 1h vol, $96,013 mcap, +228% 1h  
   CA `AN1acsfrRhSaToxihrbEjs5oHXGzvFuC9xXKLtompump`
-- SANTA: $66,537 1h vol, $16,682 mcap, -39% 1h  
-  CA `48tDqrzNnEg3No94vUXvpCG24CQCgAjFV9Vf3bZwpump`
+- GRAUDIA: $51,678 1h vol, $178,595 mcap, +22% 1h  
+  CA `B1oGtkaVAVZkdtWV7SXrHnFkcWC1Kd45sYpy6RYTpump`
+- MAYA: $46,465 1h vol, $1,670 mcap, -99% 1h  
+  CA `FJKt1LxbWBpTRt9BaDEB6Wr2qL5LZzjFF5sx8rXnpump`
