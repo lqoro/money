@@ -1,13 +1,13 @@
 # Trencher live report
 
-Updated 2026-11-22T15:17:57Z (paper trading, never real money)
+Updated 2026-11-22T15:33:12Z (paper trading, never real money)
 
 - Equity: $74.23 (-25.8% vs $100 start)
 - Closed trades: 22, 3 wins
 - Fees paid: $14.78 (axiom $2.81, network $9.18, pool $2.66), plus $4.15 lost to slippage
 - New trades: WATCH-ONLY (scans and decides, buys nothing)
-- Brain: subscription, claude-haiku-5-5 for routine calls, claude-opus-5-5 for the daily review; 264 routine calls and 0 plan-limit hits in 48h
-- Watch log: 48 coins being followed, 2660 filed, 0 would-buys (6h follow, sampled every 2 min)
+- Brain: subscription, claude-haiku-5-5 for routine calls, claude-opus-5-5 for the daily review; 263 routine calls and 0 plan-limit hits in 48h
+- Watch log: 48 coins being followed, 2661 filed, 0 would-buys (6h follow, sampled every 2 min)
 
 ## Scorecard (after fees)
 - 22 closed, 3 won (14%), net $-25.79
@@ -73,9 +73,11 @@ Updated 2026-11-22T15:17:57Z (paper trading, never real money)
   CA `H4gHnZ3NCU7Z9XQwGX6YYJNyieGEW8pqwGRUcdSxpump`
 
 ## Last scan
-- 15:17Z: 2 coins, 1 with pairs, 0 passed the market filters, 0 researched
+- 15:32Z: 3 coins, 2 with pairs, 0 passed the market filters, 0 researched
 
 ## Coins it looked at, and why it passed
+- 15:25Z GIF (FINAL_STRETCH, $16,198 mcap, $3,459 5m vol): REJECT, Top 10 hold 25.4% ex-pool (>25%) (V13)  
+  CA `B6wM98qkQKP71mhPA48S7No6TxM4KaXdFojDTZeUpump`
 - 15:06Z testicles (DIP, $39,053 mcap, $2,269 5m vol): REJECT, Top 10 hold 28.4% ex-pool (>25%) (V13)  
   CA `3pGmCpDCr2B6cZFhFJFtLrcMCadMvjV4dB9UGJyNpump`
 - 15:04Z DIGS (DIP, $278,297 mcap, $2,795 5m vol): REJECT, Bundles: 10 linked wallet cluster(s) hold 100.0% of supply (>20%) (V17)  
@@ -94,22 +96,20 @@ Updated 2026-11-22T15:17:57Z (paper trading, never real money)
   CA `47YCrfUmSQUF9vnPsPGSzrmTcxttdRAWejCMkhrrpump`
 - 14:29Z Betty (FINAL_STRETCH, $17,690 mcap, $15,745 5m vol): PASS at conviction 2, PASS: chasing spike, 14 same-ticker copies, and a 4.3% bundle cluster in the field. Blocker: "chasing spike" (V1, V6, V13).  
   CA `8ooT17cWPRGfXr9DDPyBQHaqLz2GnAm3jkaR6MGYfz3c`
-- 14:20Z FSDV15 (MIGRATED, $769,888 mcap, $508,907 5m vol): REJECT, Dev holds 35.1% (>1%) (V13, V17)  
-  CA `3P7FLAbXeu7Mjc8SnyfLet8vwNCuk8HaXbjdxHgMpump`
 
 ## What its skips did next (last 48h)
 A skip "ran" if the coin reached the first target (1.5x) from the skip price before a 20% drop, "dumped" if the drop came first. Sampled every 10 min, followed 6h.
-- flow below pace: blocked 31, ran 4, dumped 24, flat 0, open 3 (saving losses: keep it)
+- flow below pace: blocked 30, ran 4, dumped 23, flat 0, open 3 (saving losses: keep it)
   - ran: Trader up to 2.04x  
     CA `BYKQkHKMWHidNBLQXgt7NX4PLUtJZRYGLWQYkJzPGenX`
   - ran: Bust up to 1.55x  
     CA `EoV9JQYi57tqjyQbWLdXVarYpEu82FsP8SDnkbFmpump`
   - ran: Mandy up to 1.53x  
     CA `HmJRWZ8tFfuCY9A4MrSftnrvEFCApw1hyqHtb9Rzpump`
-- top 10 over 25%: blocked 23, ran 1, dumped 21, flat 0, open 1 (saving losses: keep it)
+- top 10 over 25%: blocked 24, ran 1, dumped 21, flat 0, open 2 (saving losses: keep it)
   - ran: :) up to 1.65x  
     CA `Dtx414D8jurspmB1jqJWsYU66pemoXRjQeXx7TC1pump`
-- near the high / chasing: blocked 21, ran 3, dumped 17, flat 0, open 1 (saving losses: keep it)
+- near the high / chasing: blocked 21, ran 3, dumped 18, flat 0, open 0 (saving losses: keep it)
   - ran: Trader up to 2.04x  
     CA `BYKQkHKMWHidNBLQXgt7NX4PLUtJZRYGLWQYkJzPGenX`
   - ran: CUNTS up to 1.61x  
@@ -186,16 +186,16 @@ Nothing has a positive edge after costs. All 166 settled coins averaged -11.3% n
 - [2026-11-02 20:25] I expected Slingoor, a clean MIGRATED leader with $25k of 5m flow at pace and a 0.77 buy share, to retest its $408k high from $304k. It never went green (0.98x peak) and hit the -20% stop in 2 minutes, a -$2.86 probe. My own thesis admitted there was no printed higher low after a peak only 6 minutes old, so this confirms the money-shape rule: buy share and flow are not structure (V1, V6). Next time a MIGRATED pullback with no higher low above the hourly low is a PASS with blocker "no higher low", not a probe. This is one loss, so it adds no new ban beyond the rule I already have.
 
 ## Meta right now
-Not quiet. Three themes are moving across the scan. (1) Fresh pump.fun launches with product or cute-name hooks, led by Tesla FSD V15 ($651k cap, $548k 5m, 67% buys, 6 minutes old), plus KYC, Betty and MOG, all at 59-67% buys. They are minutes to hours old, so they are momentum to watch, not setups. (2) Mature coins with real buyer share are rising: PushCoin ($1.3M cap, $29k 5m, 63% buys, +32% in the hour), DESSA ($3.4M, 68% buys) and BLOB ($17.2M, +23% in the hour). (3) One-word joke launches older than a few hours are fading: GIFTER at 36% buys, greg at 7%, Max at 17%. testicles at 100% buys on $255 of 5m volume is noise. The Trump, GTA and Anthropic headlines are not in the movers, so I'm not trading the news. Setups to research: PushCoin and DESSA as V6 recon candidates (cap $70k to $11M, 5m volume of at least $10k), with holder, dev and bundle checks before any entry. BLOB is above the $11M V6 ceiling at $17.2M, so the web's "inside the range" read is wrong and it stays a watch. MCAT is at $10.6k cap, below the $70k floor and down 37% in the hour, so it's a pass for now. I used scan figures throughout, since the web text disagrees with them on BLOB, MCAT and the buy shares.
+Not quiet, but the movers are split. The hot money is in pump.fun name-plays and pop-culture jokes under about an hour old: MIKEDYSON is +1098% in 1h on $4k of 5m volume, Plurality has $49k of 5m on a $24.5k cap at 58% buys, and Justice For MengLan has $16.7k of 5m, with Jupiter Incident also in the mix. That is momentum, and most of it is a rug or a chase until proven otherwise (V1, V6). Brand and internet-slang launches are fading: KYC is -62% in 1h, Betty -41%, and GIF is only holding because it is already up 62%. Old one-word jokes are dead air: greg, Max and DIGS each do under $1k of 5m volume, and BLOB has $8k of 5m on a $16.5M cap, above the V6 $11M ceiling, so it is outside the recon range. Setups to research now: Plurality as a FINAL_STRETCH candidate (check its distance to bond and whether the $49k of 5m is organic or bundled), and MIKEDYSON only if it pulls back and holds, since +1098% in an hour is exit-liquidity territory. PushCoin, DESSA and Tesla FSD appear only in the web text, not the scan, so I am not weighing them.
 
 ## Moving most in its scans, last 30 min (1h volume)
-- FSDV15: $648,258 1h vol, $1,364 mcap, -100% 1h  
-  CA `3P7FLAbXeu7Mjc8SnyfLet8vwNCuk8HaXbjdxHgMpump`
-- KYC: $280,373 1h vol, $11,418 mcap, -59% 1h  
+- KYC: $285,563 1h vol, $10,537 mcap, -62% 1h  
   CA `47YCrfUmSQUF9vnPsPGSzrmTcxttdRAWejCMkhrrpump`
-- DESSA: $269,755 1h vol, $3,009,001 mcap, -19% 1h  
-  CA `npz2FhoufQ7pKqhGpaipYWacrAkidyW2yDpVWSvpump`
-- BLOB: $259,300 1h vol, $15,622,263 mcap, -4% 1h  
+- BLOB: $211,507 1h vol, $16,468,584 mcap, +2% 1h  
   CA `8s11PkgQt4ZzdZ7oo84hK5t9HG1EvdgAjcg4W7Lpump`
-- PushCoin: $213,944 1h vol, $1,413,269 mcap, +14% 1h  
-  CA `3N6Mp8YQuVDfEtyuyJS72s4MRrgQuKY34gvYZD5Kpump`
+- MIKEDYSON: $129,371 1h vol, $47,951 mcap, +1098% 1h  
+  CA `6RE3WnDYmkKquontjFXD2me6vuqjan45EHVCtL3kpump`
+- Plurality: $87,520 1h vol, $24,504 mcap, +901% 1h  
+  CA `3NLPK4MtmJXgpFxhgyxth3Vmf7VmhdDAvnk6G6XYpump`
+- mimi: $68,196 1h vol, $2,999 mcap, +43% 1h  
+  CA `DNtjT6zLf5LAdVCKGzESdqobeRGXVsoaZw18atoGpump`
