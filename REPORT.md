@@ -1,13 +1,13 @@
 # Trencher live report
 
-Updated 2026-11-22T11:00:21Z (paper trading, never real money)
+Updated 2026-11-22T11:15:34Z (paper trading, never real money)
 
 - Equity: $74.23 (-25.8% vs $100 start)
 - Closed trades: 22, 3 wins
 - Fees paid: $14.78 (axiom $2.81, network $9.18, pool $2.66), plus $4.15 lost to slippage
 - New trades: WATCH-ONLY (scans and decides, buys nothing)
 - Brain: subscription, claude-haiku-5-5 for routine calls, claude-opus-5-5 for the daily review; 266 routine calls and 0 plan-limit hits in 48h
-- Watch log: 53 coins being followed, 2617 filed, 0 would-buys (6h follow, sampled every 2 min)
+- Watch log: 54 coins being followed, 2619 filed, 0 would-buys (6h follow, sampled every 2 min)
 
 ## Scorecard (after fees)
 - 22 closed, 3 won (14%), net $-25.79
@@ -73,9 +73,15 @@ Updated 2026-11-22T11:00:21Z (paper trading, never real money)
   CA `H4gHnZ3NCU7Z9XQwGX6YYJNyieGEW8pqwGRUcdSxpump`
 
 ## Last scan
-- 10:59Z: 4 coins, 3 with pairs, 0 passed the market filters, 0 researched
+- 11:15Z: 1 coins, 0 with pairs, 0 passed the market filters, 0 researched
 
 ## Coins it looked at, and why it passed
+- 11:10Z PushCoin (DIP, $1,072,932 mcap, $2,884 5m vol): PASS at conviction 2, PASS: falling knife with flow at 0.67x pace, no printed higher low, and a website that says the CA is "TBA". Blocker: flow below pace. (V1, V6, V13)  
+  CA `3N6Mp8YQuVDfEtyuyJS72s4MRrgQuKY34gvYZD5Kpump`
+- 11:06Z HIPPO (MIGRATED, $112,813 mcap, $28,886 5m vol): PASS, PASS — brain unavailable, not trading blind.  
+  CA `95NAbTyZopHGJK9TuisJZUHKAZSqRoSB3JPfqAqHpump`
+- 11:03Z DESSA (MIGRATED, $2,739,685 mcap, $2,421 5m vol): PASS at conviction 2, PASS — big cap, no room. First resistance (the $3.61M peak) is only 1.32x away, under my 1.5x initials target, and 5m flow is $2.4k against a $10k bar. Thin AI-yap meme with no story on the radar. (V1, V6)  
+  CA `npz2FhoufQ7pKqhGpaipYWacrAkidyW2yDpVWSvpump`
 - 10:52Z FIREBALL (MIGRATED, $46,345 mcap, $2,632 5m vol): PASS at conviction 2, PASS: flow below pace (0.98x), no higher low, no catalyst, and a bottom buy in a 20-coin ticker field. Nothing to catch here. (V1, V6, V13)  
   CA `5o7AFuoNWsy7gQS85ospXhWFJRnxDwTtwTR3JF2Jpump`
 - 10:51Z GIFTER (DIP, $33,720 mcap, $3,103 5m vol): REJECT, Dip with fading attention is a falling knife, not a dip (5m at 0.28x the hour's pace, under 0.6x)  
@@ -90,16 +96,10 @@ Updated 2026-11-22T11:00:21Z (paper trading, never real money)
   CA `BKSP127UTT12VbipELqWMpLRw744Q36oyhirxC9Wpump`
 - 09:56Z FIREBALL (MIGRATED, $56,090 mcap, $3,426 5m vol): PASS at conviction 2, PASS — 5m flow is $3.4k at 0.77x pace, under the $10k bar and the pace gate, 18% off a spike high, and one of 21 copies of "fireball." Flip, not a trend (V1, V6, V13).  
   CA `5o7AFuoNWsy7gQS85ospXhWFJRnxDwTtwTR3JF2Jpump`
-- 09:44Z GIFTER (MIGRATED, $31,333 mcap, $7,265 5m vol): PASS at conviction 3, PASS — theme is 17 copies at 0.17x hourly pace, the site doesn't show this CA, and there's no printed higher low. Blocker: "dead story" plus the bottom-buy gate. A fresh gift-the-coin platform with no catalyst is a farm wearing a narrative (V1, V6, V13).  
-  CA `3K6EUFoAE8zngTFMfPavqcMFhDqYTRemoaXYAjNPpump`
-- 09:43Z PushCoin (MIGRATED, $1,157,382 mcap, $2,646 5m vol): PASS, PASS — brain unavailable, not trading blind.  
-  CA `3N6Mp8YQuVDfEtyuyJS72s4MRrgQuKY34gvYZD5Kpump`
-- 09:24Z MooSom (MIGRATED, $61,958 mcap, $48,731 5m vol): PASS at conviction 4, PASS: Moo Som is 19 minutes old, printing a 3x volume spike, with no higher low and 22 same-name copies on the board. Too new and chasing (V1, V6).  
-  CA `BKSP127UTT12VbipELqWMpLRw744Q36oyhirxC9Wpump`
 
 ## What its skips did next (last 48h)
 A skip "ran" if the coin reached the first target (1.5x) from the skip price before a 20% drop, "dumped" if the drop came first. Sampled every 10 min, followed 6h.
-- flow below pace: blocked 29, ran 4, dumped 23, flat 0, open 2 (saving losses: keep it)
+- flow below pace: blocked 29, ran 4, dumped 24, flat 0, open 1 (saving losses: keep it)
   - ran: Trader up to 2.04x  
     CA `BYKQkHKMWHidNBLQXgt7NX4PLUtJZRYGLWQYkJzPGenX`
   - ran: Bust up to 1.55x  
@@ -139,14 +139,12 @@ A skip "ran" if the coin reached the first target (1.5x) from the skip price bef
     CA `27u3diWofnXGUkddjLGhcy1nRssFKHW3RtNbpWzUpump`
   - ran: STREETS up to 1.73x  
     CA `82mseLFauphc2yutbaDGgViahquJ1jGVLpyof99xpump`
+- brain paced: blocked 7, ran 1, dumped 3, flat 1, open 2 (saving losses: keep it)
+  - ran: STREETS up to 1.73x  
+    CA `82mseLFauphc2yutbaDGgViahquJ1jGVLpyof99xpump`
 - thin 5m volume: blocked 7, ran 1, dumped 5, flat 0, open 1 (saving losses: keep it)
   - ran: chud up to 1.55x  
     CA `EV7J2QaPXPytSkM1LD9GPRkgAbmSEr9R3kYiXBzbpump`
-- dev share over 1%: blocked 6, ran 2, dumped 2, flat 2, open 0 (mixed)
-  - ran: SANTINU up to 1.56x  
-    CA `BCTwG3LDhNcthcK374aWQfAzLYGRXDu1apmrqw3Tpump`
-  - ran: Mfer up to 1.55x  
-    CA `9tX1UpBGeNqMb1VqqzVumwzW71ybsNZFyWKYiL8Ppump`
 
 ## Daily review (2026-11-21, claude-opus-5-5)
 Nothing has a positive after-cost edge. All 98 settled coins average -15.7% net under the simple plan, and every setup and stage is negative: MIGRATED -13.6% (n=70), FINAL_STRETCH -20.0% (n=14), DIP -21.7% (n=14). The main reason is the 9.5% average round-trip cost on a $10 buy. With a +50%/-20% bracket and that cost, a coin nets about +40% when it runs and about -30% when it dumps, so the plan breaks even only if roughly 42% of coins run. The observed rate is 16.3% (95% CI about 9–24%), so the overall verdict is solid even at n=98. The per-setup splits are not: n=14 gives about ±19 points, and coins from the same day and meta move together. I can't answer whether the routine model's would-buys beat its passes because it made zero would-buys. It declined all 49 coins it reviewed, including all 5 of the day's 4.5–5.5x runners. Even so, declining was right on average, since that reviewed group nets -16.2% under the simple plan.
@@ -187,13 +185,13 @@ Nothing has a positive after-cost edge. All 98 settled coins average -15.7% net 
 Not quiet. The scan movers show two live themes. The strongest is fresh animal and creature names on pumpfun/pumpswap, rising: HIPPO (+136% 1h, $23.1k 5m, 58% buys, 0.4h old, $67k cap), MooSom (+68% 1h, 74% buys, $32k cap, 1.1h old), and PYGME (+321% 1h, $5k 5m, 55% buys). Goat-named coins are fading (one at -40%, another with $3 of 5m volume), and greg, CBUCKS and e^x show zero buys and are dead. Holiday (Santa Inu, +29% 1h on $1.1k 5m) and fast 1h pumps on thin volume (FIREBALL +78% on $4.4k 5m) look like flips, not trends. The web's Trump dinner, GTA 6 and Anthropic headlines aren't showing up in trench flow, so I'm not trading them. Setups: HIPPO is the one to research now as a MIGRATED-style entry (pumpswap, $67k cap, $23k 5m clears the $10k bar), but it is 0.4h old, so it needs full holder, dev, bundle and X checks first. If those clear, it's a conviction-5 probe with initials at 2x, a -30% stop and the -60% hard floor. MooSom only becomes interesting if its 5m reaches $10k. Snowball-v2 from the web isn't in scan_movers, so I can't verify it and won't set it as a setup. The web's BLOB and Santa Inu figures don't match the scan, so I'm using scan numbers.
 
 ## Moving most in its scans, last 30 min (1h volume)
-- BLOB: $240,595 1h vol, $15,546,621 mcap, +7% 1h  
+- HIPPO: $338,387 1h vol, $112,813 mcap, +1082% 1h  
+  CA `95NAbTyZopHGJK9TuisJZUHKAZSqRoSB3JPfqAqHpump`
+- BLOB: $141,344 1h vol, $15,983,868 mcap, +19% 1h  
   CA `8s11PkgQt4ZzdZ7oo84hK5t9HG1EvdgAjcg4W7Lpump`
 - GIFTER: $133,189 1h vol, $34,327 mcap, +7% 1h  
   CA `3K6EUFoAE8zngTFMfPavqcMFhDqYTRemoaXYAjNPpump`
-- PYGME: $93,999 1h vol, $6,480 mcap, +171% 1h  
+- PYGME: $77,751 1h vol, $7,877 mcap, -4% 1h  
   CA `286g8tYzV6Rtv6yJbbNrSBduV5hLSNk6z6b3vXnFpump`
-- MooSom: $34,031 1h vol, $4,467 mcap, -83% 1h  
-  CA `BKSP127UTT12VbipELqWMpLRw744Q36oyhirxC9Wpump`
-- FIREBALL: $32,236 1h vol, $47,295 mcap, -11% 1h  
-  CA `5o7AFuoNWsy7gQS85ospXhWFJRnxDwTtwTR3JF2Jpump`
+- PushCoin: $51,975 1h vol, $1,082,202 mcap, -5% 1h  
+  CA `3N6Mp8YQuVDfEtyuyJS72s4MRrgQuKY34gvYZD5Kpump`
