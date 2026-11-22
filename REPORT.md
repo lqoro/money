@@ -1,13 +1,13 @@
 # Trencher live report
 
-Updated 2026-11-22T01:40:10Z (paper trading, never real money)
+Updated 2026-11-22T01:55:21Z (paper trading, never real money)
 
 - Equity: $74.23 (-25.8% vs $100 start)
 - Closed trades: 22, 3 wins
 - Fees paid: $14.78 (axiom $2.81, network $9.18, pool $2.66), plus $4.15 lost to slippage
 - New trades: WATCH-ONLY (scans and decides, buys nothing)
-- Brain: subscription, claude-haiku-5-5 for routine calls, claude-opus-5-5 for the daily review; 278 routine calls and 0 plan-limit hits in 48h
-- Watch log: 84 coins being followed, 2490 filed, 0 would-buys (6h follow, sampled every 2 min)
+- Brain: subscription, claude-haiku-5-5 for routine calls, claude-opus-5-5 for the daily review; 280 routine calls and 0 plan-limit hits in 48h
+- Watch log: 86 coins being followed, 2494 filed, 0 would-buys (6h follow, sampled every 2 min)
 
 ## Scorecard (after fees)
 - 22 closed, 3 won (14%), net $-25.79
@@ -73,9 +73,21 @@ Updated 2026-11-22T01:40:10Z (paper trading, never real money)
   CA `H4gHnZ3NCU7Z9XQwGX6YYJNyieGEW8pqwGRUcdSxpump`
 
 ## Last scan
-- 01:39Z: 3 coins, 3 with pairs, 0 passed the market filters, 0 researched
+- 01:54Z: 5 coins, 5 with pairs, 0 passed the market filters, 0 researched
 
 ## Coins it looked at, and why it passed
+- 01:51Z WHALLET (FINAL_STRETCH, $17,066 mcap, $7,683 5m vol): PASS at conviction 2, PASS: chasing spike on a pump.fun copy with no X and $7.7k 5m. Blockers: "chasing spike", "split crowd" (V1, V3, V6).  
+  CA `Ft2TL58CHP7hgF6SXXBHcTFxEB4Zg412TynELmASpump`
+- 01:48Z RIZZMAS3 (DIP, $149,120 mcap, $34,616 5m vol): REJECT, Dip with fading attention is a falling knife, not a dip (5m at 0.47x the hour's pace, under 0.6x)  
+  CA `BQcV4Ryfu9bZK8egAF89AhkojdJqAaDt4xTFwUQ2pump`
+- 01:44Z MANEKI (MIGRATED, $114,963 mcap, $2,834 5m vol): PASS at conviction 2, PASS — 19 copies of the maneki name, MANEKI isn't the 5m leader, and its own 5m flow is $2.8k. Split crowd (V1, V3).  
+  CA `G74SSWk4qF4BeWfyR53fVZYqdNWo9wH7UR55jF4uuxds`
+- 01:43Z SHIT (MIGRATED, $527,962 mcap, $10,893 5m vol): PASS at conviction 2, PASS: flow below pace, no higher low, down 85% from the high, and a 16-copy "shit" field with no catalyst. Falling knife. (V1, V6, V13)  
+  CA `Fn95NtGXWPaJXc4N5y9rVkUq1NwZbjBNJzPVvNRLpump`
+- 01:42Z MANDY (MIGRATED, $381,664 mcap, $65,491 5m vol): REJECT, Top 10 hold 30.1% ex-pool (>25%) (V13)  
+  CA `3JqV4LuKVqzCpWsDAsBnTLg2mKik22hLeyyPyfW3pump`
+- 01:42Z COAL (FINAL_STRETCH, $22,245 mcap, $16,685 5m vol): PASS at conviction 3, PASS: COAL is one of 20 "coal" copies, the theme's 5m flow is at 0.48x pace, and it's up 960% in an hour with sellers ahead on the 5m. Blocker: split crowd / chasing spike. (V1, V3, V6)  
+  CA `5sZCi2s5MA9X8MBxT9AgmZTEm1QMUY2xZvh3cyrfpump`
 - 01:33Z RIZZMAS (MIGRATED, $69,693 mcap, $94,594 5m vol): REJECT, RugCheck danger: Creator history of rugged tokens  
   CA `6J3ApVu8dSLg1TJjBLWSTgmnvJXcH2YyF2iDC48Fpump`
 - 01:30Z STREETS (DIP, $689,488 mcap, $3,495 5m vol): REJECT, Dip with fading attention is a falling knife, not a dip (5m at 0.05x the hour's pace, under 0.6x)  
@@ -84,51 +96,41 @@ Updated 2026-11-22T01:40:10Z (paper trading, never real money)
   CA `FJKt1LxbWBpTRt9BaDEB6Wr2qL5LZzjFF5sx8rXnpump`
 - 01:25Z CI (FINAL_STRETCH, $14,397 mcap, $11,623 5m vol): PASS at conviction 3, PASS: split crowd. CI is the #2 of 25 christmas copies, and it just spiked +60% in 5m. Blocker "split crowd" plus "chasing spike" (V1, V13).  
   CA `4sYBDAjAiFm2kJDJExyWjPEW5rth9riExqtyRDmhpump`
-- 01:16Z GRAUDIA (MIGRATED, $145,405 mcap, $11,766 5m vol): REJECT, Dev holds 1.1% (>1%) (V13, V17)  
-  CA `B1oGtkaVAVZkdtWV7SXrHnFkcWC1Kd45sYpy6RYTpump`
-- 01:10Z BOOBILLIONS (MIGRATED, $109,397 mcap, $6,621 5m vol): PASS at conviction 3, PASS: flow below pace (0.5x hourly), no printed higher low, no catalyst, and the CA isn't on its own site. Blocker: "flow below pace". (V1, V6, V13)  
-  CA `13qebRhFyiB32FH9b1YYTgh8RW4VvmNEbi79eG28pump`
-- 01:08Z SANTAHAT (MIGRATED, $32,721 mcap, $5,474 5m vol): PASS at conviction 2, PASS: SANTAHAT is a 3-minute-old migration, not the leader of a 28-copy cult/santa field, and its flow is below pace. Blockers: "too new", "no breakout", "split crowd" (V1, V3).  
-  CA `5fWLSMA5HoK9W4VoTMi4c3qjyu3N2LsKRSM8Ffpgpump`
-- 01:08Z Tots (FINAL_STRETCH, $19,849 mcap, $16,574 5m vol): REJECT, Top 10 hold 26.4% ex-pool (>25%) (V13)  
-  CA `FVfB5e7kDvxUtMsAJ1LARAHRdTVZvbcJA1qvRQv3pump`
-- 01:04Z HOGE (DIP, $721,176 mcap, $4,622 5m vol): REJECT, Bundles: 9 linked wallet cluster(s) hold 26.9% of supply (>20%) (V17)  
-  CA `FVzqGqRmr4UH1Fif6dewmwbJ1p4YUZCu8dcw4Efopump`
-- 01:02Z RIZZMAS3 (MIGRATED, $254,162 mcap, $100,339 5m vol): REJECT, RugCheck danger: Creator history of rugged tokens  
-  CA `BQcV4Ryfu9bZK8egAF89AhkojdJqAaDt4xTFwUQ2pump`
 
 ## What its skips did next (last 48h)
 A skip "ran" if the coin reached the first target (1.5x) from the skip price before a 20% drop, "dumped" if the drop came first. Sampled every 10 min, followed 6h.
-- flow below pace: blocked 27, ran 4, dumped 18, flat 0, open 5 (saving losses: keep it)
+- flow below pace: blocked 28, ran 4, dumped 20, flat 0, open 4 (saving losses: keep it)
   - ran: SWRDXSTFF up to 1.77x  
     CA `Csoj9XHJfBAxsKswqKKBENnGeoRDHtACfyYi7HmJpump`
   - ran: Trader up to 2.04x  
     CA `BYKQkHKMWHidNBLQXgt7NX4PLUtJZRYGLWQYkJzPGenX`
   - ran: Bust up to 1.55x  
     CA `EoV9JQYi57tqjyQbWLdXVarYpEu82FsP8SDnkbFmpump`
-- top 10 over 25%: blocked 26, ran 1, dumped 24, flat 1, open 0 (saving losses: keep it)
+- top 10 over 25%: blocked 27, ran 1, dumped 24, flat 1, open 1 (saving losses: keep it)
   - ran: :) up to 1.65x  
     CA `Dtx414D8jurspmB1jqJWsYU66pemoXRjQeXx7TC1pump`
-- near the high / chasing: blocked 20, ran 5, dumped 15, flat 0, open 0 (saving losses: keep it)
+- near the high / chasing: blocked 21, ran 5, dumped 16, flat 0, open 0 (saving losses: keep it)
   - ran: BEAR up to 2.32x  
     CA `DCPm44cT9i39HjR13QHYgxkR7wEx9TDeniGuayB5pump`
   - ran: ZOL up to 1.55x  
     CA `UQLWvkwiSsnViuVBy7oArMtzb5RAZyrdJ79amQFrzoL`
   - ran: STICK up to 2.08x  
     CA `532iaQrhFCD3QKFHsAtFAQ1mQZMjMdNrPXLeCS6cpump`
-- too new / sniping: blocked 19, ran 3, dumped 15, flat 1, open 0 (saving losses: keep it)
+- too new / sniping: blocked 18, ran 3, dumped 14, flat 1, open 0 (saving losses: keep it)
   - ran: AudaCity up to 1.96x  
     CA `3rtTUCpe1BBgCTNWQ9jK3xkAz1E7SPqMt4uYHx1Bpump`
   - ran: TA up to 1.77x  
     CA `DKUM8qywmi8X9RYK2wUgnTw8QKjh1nYDThZR1GXPpump`
   - ran: SANTAHAT up to 3x  
     CA `5fWLSMA5HoK9W4VoTMi4c3qjyu3N2LsKRSM8Ffpgpump`
-- RugCheck danger: blocked 18, ran 2, dumped 15, flat 0, open 1 (saving losses: keep it)
+- RugCheck danger: blocked 17, ran 3, dumped 14, flat 0, open 0 (saving losses: keep it)
   - ran: TOP up to 1.67x  
     CA `hT9xKkj6dPMz97zcxEEE5T5fFdm6x31P6FodwT8pump`
   - ran: CAP up to 2.6x  
     CA `CxGYpWoTun4J3xD4cNwXFRn2W3RzJozTxyU9nbJ4pump`
-- falling knife (code): blocked 13, ran 0, dumped 11, flat 1, open 1 (saving losses: keep it)
+  - ran: RIZZMAS up to 1.59x  
+    CA `6J3ApVu8dSLg1TJjBLWSTgmnvJXcH2YyF2iDC48Fpump`
+- falling knife (code): blocked 14, ran 0, dumped 11, flat 1, open 2 (saving losses: keep it)
 - thin 5m volume: blocked 10, ran 1, dumped 7, flat 1, open 1 (saving losses: keep it)
   - ran: chud up to 1.55x  
     CA `EV7J2QaPXPytSkM1LD9GPRkgAbmSEr9R3kYiXBzbpump`
@@ -185,13 +187,13 @@ Nothing has a positive after-cost edge. All 98 settled coins average -15.7% net 
 Trencher: The trenches are running on fresh pump.fun launches (most movers are under 2h old) with rizz/holiday-joke and crude-slang names. RIZZMAS3 ($254k cap, $100k 5m, 63% buys) and time ($141k, $17k 5m, 59% buys) are the strongest tape, with Toys For Tots (pumpfun, $22k cap, $15.8k 5m, 66% buys) close behind. Rising: rizz/holiday names, time, and a few cat/animal coins like MANEKI (+83% 1h, but only $2k 5m). Fading or dead: RIZZGIVING (-74%), CUNTS (-28%, $3k 5m), Wow cat, SBS (25h old, 32% buys), and STREETS and C@T, which are both down ~98% with almost no 5m volume. The crawler's C@T (+511%, $215k) and SHIT dip figures don't match scan_movers, so I'm ignoring them; Trump and news-name coins aren't on the movers list, so headlines aren't the trade (V1). Setups to research, no entries yet: RIZZMAS3 and time fit the MIGRATED screen (pumpswap, under 12h, cap above $30k, 5m above $10k), but both are up hundreds of percent in an hour, so they only qualify on a pullback where buyers hold. Toys For Tots fits a near-bond FINAL_STRETCH read (watch for the pre-bond dump, V1). Holder, dev and bundle checks run on each before any size, and sizing stays small and conviction-based because this is a spike-and-dump tape.
 
 ## Moving most in its scans, last 30 min (1h volume)
+- RIZZMAS3: $887,526 1h vol, $149,120 mcap, +97% 1h  
+  CA `BQcV4Ryfu9bZK8egAF89AhkojdJqAaDt4xTFwUQ2pump`
 - STREETS: $724,421 1h vol, $668,252 mcap, +59% 1h  
   CA `82mseLFauphc2yutbaDGgViahquJ1jGVLpyof99xpump`
-- time: $572,392 1h vol, $1,633 mcap, -99% 1h  
+- time: $396,619 1h vol, $1,634 mcap, -99% 1h  
   CA `Ak8pAMMeiqbu3tyE2MU33o8W2RfhLk1hXYsscnFkpump`
-- MAYA: $182,032 1h vol, $241,236 mcap, -64% 1h  
-  CA `FJKt1LxbWBpTRt9BaDEB6Wr2qL5LZzjFF5sx8rXnpump`
-- VICE: $163,565 1h vol, $7,665 mcap, -75% 1h  
-  CA `GSR9ZVR7MH6z3dp6sAtPua5Xk8FWTVtjquk2vhVfpump`
-- BOOBILLIONS: $157,385 1h vol, $109,397 mcap, +35% 1h  
-  CA `13qebRhFyiB32FH9b1YYTgh8RW4VvmNEbi79eG28pump`
+- MANDY: $191,925 1h vol, $381,664 mcap, +888% 1h  
+  CA `3JqV4LuKVqzCpWsDAsBnTLg2mKik22hLeyyPyfW3pump`
+- SANTAHAT: $186,297 1h vol, $2,909 mcap, -91% 1h  
+  CA `5fWLSMA5HoK9W4VoTMi4c3qjyu3N2LsKRSM8Ffpgpump`
