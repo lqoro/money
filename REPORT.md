@@ -1,13 +1,13 @@
 # Trencher live report
 
-Updated 2026-11-22T20:48:55Z (paper trading, never real money)
+Updated 2026-11-22T21:03:59Z (paper trading, never real money)
 
 - Equity: $74.23 (-25.8% vs $100 start)
 - Closed trades: 22, 3 wins
 - Fees paid: $14.78 (axiom $2.81, network $9.18, pool $2.66), plus $4.15 lost to slippage
 - New trades: WATCH-ONLY (scans and decides, buys nothing)
 - Brain: subscription, claude-haiku-5-5 for routine calls, claude-opus-5-5 for the daily review; 257 routine calls and 0 plan-limit hits in 48h
-- Watch log: 43 coins being followed, 2702 filed, 0 would-buys (6h follow, sampled every 2 min)
+- Watch log: 42 coins being followed, 2705 filed, 0 would-buys (6h follow, sampled every 2 min)
 
 ## Scorecard (after fees)
 - 22 closed, 3 won (14%), net $-25.79
@@ -73,9 +73,13 @@ Updated 2026-11-22T20:48:55Z (paper trading, never real money)
   CA `H4gHnZ3NCU7Z9XQwGX6YYJNyieGEW8pqwGRUcdSxpump`
 
 ## Last scan
-- 20:48Z: 0 coins, 0 with pairs, 0 passed the market filters, 0 researched
+- 21:02Z: 0 coins, 0 with pairs, 0 passed the market filters, 0 researched
 
 ## Coins it looked at, and why it passed
+- 20:54Z SI2SI (FINAL_STRETCH, $15,472 mcap, $8,863 5m vol): PASS at conviction 2, PASS: SI2SI is a 7-minute-old pump.fun coin that just went up 656% in an hour on 8x pace. Chasing a spike with no story behind it (V1, V6).  
+  CA `HxpiqQCPnNX6ZnCzJriLUzmWsASoeC916kWtJYPnpump`
+- 20:49Z ASS (MIGRATED, $57,509 mcap, $31,248 5m vol): PASS at conviction 3, PASS: 9 minutes old, up 62% on the 5m and sitting at its own high (0% off peak). Chasing a spike in a 24-copy name field, and the only link is an Elon tweet, not the project's X. (V1, V6, V13)  
+  CA `8U9611BhPXG8ubN77wkeN7Gs1ooAXQLy65KQDZr9pump`
 - 20:46Z earball (DIP, $59,440 mcap, $2,474 5m vol): PASS at conviction 2, PASS: dead story, no catalyst, and price is already under the hourly low with no higher low. Falling knife on a DIP (V1, V6, V13).  
   CA `FryQiSLqU7NfPvpQJRiYrVuvRRW66uB4FLorrKmjpump`
 - 20:36Z IF (DIP, $45,815 mcap, $2,636 5m vol): PASS at conviction 2, PASS: jagged saw-tooth chart, $2.6k 5m, theme pace 0.96x, no catalyst. This is a bottom buy with no story behind it (V1, V13).  
@@ -102,14 +106,14 @@ A skip "ran" if the coin reached the first target (1.5x) from the skip price bef
     CA `EoV9JQYi57tqjyQbWLdXVarYpEu82FsP8SDnkbFmpump`
   - ran: Mandy up to 1.53x  
     CA `HmJRWZ8tFfuCY9A4MrSftnrvEFCApw1hyqHtb9Rzpump`
-- near the high / chasing: blocked 18, ran 3, dumped 15, flat 0, open 0 (saving losses: keep it)
+- near the high / chasing: blocked 19, ran 3, dumped 15, flat 0, open 1 (saving losses: keep it)
   - ran: Trader up to 2.04x  
     CA `BYKQkHKMWHidNBLQXgt7NX4PLUtJZRYGLWQYkJzPGenX`
   - ran: CUNTS up to 1.61x  
     CA `7CvW68FD9KjNYGByfykhaNps7VNPLN8dFwMRfmgQpump`
   - ran: SANTA up to 1.85x  
     CA `tZsjFu2CH1R23wEpbfXAYGc2KUaVrUbwofCNNNqpump`
-- too new / sniping: blocked 18, ran 3, dumped 14, flat 1, open 0 (saving losses: keep it)
+- too new / sniping: blocked 19, ran 3, dumped 14, flat 1, open 1 (saving losses: keep it)
   - ran: TA up to 1.77x  
     CA `DKUM8qywmi8X9RYK2wUgnTw8QKjh1nYDThZR1GXPpump`
   - ran: SANTAHAT up to 3x  
@@ -133,7 +137,7 @@ A skip "ran" if the coin reached the first target (1.5x) from the skip price bef
     CA `CxGYpWoTun4J3xD4cNwXFRn2W3RzJozTxyU9nbJ4pump`
   - ran: MIHAOMAS up to 1.62x  
     CA `3XsFunPdji9U1EgJXokZysw8SB3t74un89b6KLEVpump`
-- falling knife / no higher low: blocked 10, ran 2, dumped 2, flat 4, open 2 (mixed)
+- falling knife / no higher low: blocked 10, ran 2, dumped 3, flat 4, open 1 (mixed)
   - ran: UrAnus up to 2.97x  
     CA `27u3diWofnXGUkddjLGhcy1nRssFKHW3RtNbpWzUpump`
   - ran: STREETS up to 1.73x  
@@ -189,13 +193,13 @@ Nothing has a positive edge after costs. All 166 settled coins averaged -11.3% n
 Meta right now is cat coins and one-word internet-slang launches. Trump-named tickers are fading. The cat cluster is the only group getting both volume and buyers: MCAT on pumpswap ($188k cap, $15.4k 5m) has a 0.47 buy ratio, so sellers are winning for now, and $MCAT on pump.fun ($13.5k cap, 72% buys) carries the same idea at an earlier stage with only $3.2k 5m. DELULU (pump.fun, $20k cap, +382% in 1h, 63% buys) is the slang lane, but its $4.6k 5m is under the $10k bar. Fading: the Inu/dog lane (-88% in 1h), tremp (-72%, $211 5m), and anything under $1k of 5m that is down big on the hour, which is dead air. The web's Trump dinner and record-low $TRUMP headlines back the Trump fade; Plurality and MIKEDYSON are not in this scan, so I'm not weighing them. Research only, no entry yet: MCAT as a MIGRATED candidate if the buy ratio gets back above 0.5 with 5m volume holding over $10k, and DELULU only if its 5m crosses $10k with buyers still ahead. Full holder, dev and bundle checks run on each before any sizing.
 
 ## Moving most in its scans, last 30 min (1h volume)
-- GROKIA: $878,501 1h vol, $1,394 mcap, -99% 1h  
+- GROKIA: $633,917 1h vol, $1,394 mcap, -100% 1h  
   CA `Dor8iRexwiNfrD9MT3NobDQvwz97qwDV2ZKwPJDmpump`
 - OpenIndex: $340,961 1h vol, $544,984 mcap, +31% 1h  
   CA `FuKY3dk7QmpbDdQRjzbjB3G6PiCuqKNvN4dAWDpwpump`
-- COPIUM: $286,897 1h vol, $1,303 mcap, -96% 1h  
+- COPIUM: $286,897 1h vol, $1,287 mcap, -96% 1h  
   CA `8mJmkdnmdpdVg7K8DurM6bdjpEqFta2BRYBgFsD8pump`
 - FSDV15: $184,654 1h vol, $1,286 mcap, -97% 1h  
   CA `3e8uuctBvWyE3JsrhR5eJRuxhserb4WE6oZSvcGGpump`
-- Monkey: $153,464 1h vol, $6,977 mcap, -81% 1h  
-  CA `CH3WtieJabaXvVyAQqMgd1kNQL14WKJLmbXqiX4qpump`
+- retire: $132,452 1h vol, $6,299 mcap, -78% 1h  
+  CA `BEcNCmXWhf4A42ZnPHv4Yctw5tL1jAJjPDW8BKdjpump`
