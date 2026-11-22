@@ -1,13 +1,13 @@
 # Trencher live report
 
-Updated 2026-11-22T19:04:05Z (paper trading, never real money)
+Updated 2026-11-22T20:20:50Z (paper trading, never real money)
 
 - Equity: $74.23 (-25.8% vs $100 start)
 - Closed trades: 22, 3 wins
 - Fees paid: $14.78 (axiom $2.81, network $9.18, pool $2.66), plus $4.15 lost to slippage
 - New trades: WATCH-ONLY (scans and decides, buys nothing)
-- Brain: subscription, claude-haiku-5-5 for routine calls, claude-opus-5-5 for the daily review; 257 routine calls and 0 plan-limit hits in 48h
-- Watch log: 55 coins being followed, 2681 filed, 0 would-buys (6h follow, sampled every 2 min)
+- Brain: subscription, claude-haiku-5-5 for routine calls, claude-opus-5-5 for the daily review; 252 routine calls and 0 plan-limit hits in 48h
+- Watch log: 51 coins being followed, 2690 filed, 0 would-buys (6h follow, sampled every 2 min)
 
 ## Scorecard (after fees)
 - 22 closed, 3 won (14%), net $-25.79
@@ -73,9 +73,19 @@ Updated 2026-11-22T19:04:05Z (paper trading, never real money)
   CA `H4gHnZ3NCU7Z9XQwGX6YYJNyieGEW8pqwGRUcdSxpump`
 
 ## Last scan
-- 18:28Z: 41 coins, 40 with pairs, 3 passed the market filters, 3 researched
+- 19:25Z: 43 coins, 43 with pairs, 5 passed the market filters, 5 researched
 
 ## Coins it looked at, and why it passed
+- 20:19Z DIGS (DIP, $254,414 mcap, $2,980 5m vol): PASS, PASS — brain unavailable, not trading blind.  
+  CA `9QT8K685Hrae4k11dhGXirdtpfAaimExtyfwt8cPpump`
+- 20:08Z IF (DIP, $36,979 mcap, $2,628 5m vol): REJECT, Top 10 hold 25.8% ex-pool (>25%) (V13)  
+  CA `3hi7qBus11Xg9Pmj7xuuK9pjmKF7UUhT5uh7SXQbhsQt`
+- 20:04Z earball (MIGRATED, $73,532 mcap, $2,209 5m vol): PASS, PASS — brain unavailable, not trading blind.  
+  CA `FryQiSLqU7NfPvpQJRiYrVuvRRW66uB4FLorrKmjpump`
+- 19:54Z OpenIndex (MIGRATED, $359,076 mcap, $24,790 5m vol): PASS, PASS — brain unavailable, not trading blind.  
+  CA `FuKY3dk7QmpbDdQRjzbjB3G6PiCuqKNvN4dAWDpwpump`
+- 19:42Z SINGULARTY (DIP, $67,475 mcap, $53,845 5m vol): PASS, PASS — brain unavailable, not trading blind.  
+  CA `DJcHva2UJnRUPxzVfczcYyqxRtpwDTPcok6irtNmpump`
 - 19:02Z PushCoin (MIGRATED, $1,587,415 mcap, $2,968 5m vol): PASS, PASS — brain unavailable, not trading blind.  
   CA `3N6Mp8YQuVDfEtyuyJS72s4MRrgQuKY34gvYZD5Kpump`
 - 18:48Z DELULU (FINAL_STRETCH, $15,745 mcap, $3,200 5m vol): PASS, PASS — brain unavailable, not trading blind.  
@@ -86,38 +96,16 @@ Updated 2026-11-22T19:04:05Z (paper trading, never real money)
   CA `9QT8K685Hrae4k11dhGXirdtpfAaimExtyfwt8cPpump`
 - 18:11Z FOAM (MIGRATED, $104,513 mcap, $14,073 5m vol): PASS, PASS — brain unavailable, not trading blind.  
   CA `2MdCPWNFufmJSZhajSvi1yqBFTB24GQ4ipjNcB8Vpump`
-- 18:02Z OMGAI (MIGRATED, $62,728 mcap, $9,951 5m vol): PASS, PASS — brain unavailable, not trading blind.  
-  CA `AHDP4wVa73GQYSP6AhrC2f5eE5CfkpCyyzwLg5WQpump`
-- 17:55Z MCAT (MIGRATED, $245,855 mcap, $35,367 5m vol): PASS, PASS — brain unavailable, not trading blind.  
-  CA `BzPyyYCTmQNq2BcfQ4ANAvCYk54rnmQEXMFvFT8RhWMi`
-- 17:36Z Max (MIGRATED, $570,315 mcap, $160 5m vol): REJECT, 5m volume $160 is dead (<$2,000) (V1)  
-  CA `5qaP7oKUqKffwwo5DaEqDoTtsBLMpdbQTxEkCDaTpump`
-- 17:34Z PushCoin (MIGRATED, $1,554,290 mcap, $2,740 5m vol): PASS, PASS — brain unavailable, not trading blind.  
-  CA `3N6Mp8YQuVDfEtyuyJS72s4MRrgQuKY34gvYZD5Kpump`
-- 17:27Z MCAT (MIGRATED, $186,904 mcap, $7,540 5m vol): PASS, PASS — brain unavailable, not trading blind.  
-  CA `v4GK8f24ZJJa5qLoTJ4mJ5d6jsNUXHScwGaRHdfpump`
 
 ## What its skips did next (last 48h)
 A skip "ran" if the coin reached the first target (1.5x) from the skip price before a 20% drop, "dumped" if the drop came first. Sampled every 10 min, followed 6h.
-- flow below pace: blocked 27, ran 4, dumped 20, flat 0, open 3 (saving losses: keep it)
+- flow below pace: blocked 26, ran 4, dumped 19, flat 0, open 3 (saving losses: keep it)
   - ran: Trader up to 2.04x  
     CA `BYKQkHKMWHidNBLQXgt7NX4PLUtJZRYGLWQYkJzPGenX`
   - ran: Bust up to 1.55x  
     CA `EoV9JQYi57tqjyQbWLdXVarYpEu82FsP8SDnkbFmpump`
   - ran: Mandy up to 1.53x  
     CA `HmJRWZ8tFfuCY9A4MrSftnrvEFCApw1hyqHtb9Rzpump`
-- too new / sniping: blocked 19, ran 3, dumped 15, flat 1, open 0 (saving losses: keep it)
-  - ran: TA up to 1.77x  
-    CA `DKUM8qywmi8X9RYK2wUgnTw8QKjh1nYDThZR1GXPpump`
-  - ran: SANTAHAT up to 3x  
-    CA `5fWLSMA5HoK9W4VoTMi4c3qjyu3N2LsKRSM8Ffpgpump`
-  - ran: KYC up to 2.37x  
-    CA `47YCrfUmSQUF9vnPsPGSzrmTcxttdRAWejCMkhrrpump`
-- top 10 over 25%: blocked 18, ran 2, dumped 16, flat 0, open 0 (saving losses: keep it)
-  - ran: :) up to 1.65x  
-    CA `Dtx414D8jurspmB1jqJWsYU66pemoXRjQeXx7TC1pump`
-  - ran: GIF up to 2.16x  
-    CA `B6wM98qkQKP71mhPA48S7No6TxM4KaXdFojDTZeUpump`
 - near the high / chasing: blocked 18, ran 3, dumped 14, flat 0, open 1 (saving losses: keep it)
   - ran: Trader up to 2.04x  
     CA `BYKQkHKMWHidNBLQXgt7NX4PLUtJZRYGLWQYkJzPGenX`
@@ -125,24 +113,36 @@ A skip "ran" if the coin reached the first target (1.5x) from the skip price bef
     CA `7CvW68FD9KjNYGByfykhaNps7VNPLN8dFwMRfmgQpump`
   - ran: SANTA up to 1.85x  
     CA `tZsjFu2CH1R23wEpbfXAYGc2KUaVrUbwofCNNNqpump`
-- brain paced: blocked 14, ran 2, dumped 6, flat 1, open 5 (saving losses: keep it)
+- too new / sniping: blocked 18, ran 3, dumped 14, flat 1, open 0 (saving losses: keep it)
+  - ran: TA up to 1.77x  
+    CA `DKUM8qywmi8X9RYK2wUgnTw8QKjh1nYDThZR1GXPpump`
+  - ran: SANTAHAT up to 3x  
+    CA `5fWLSMA5HoK9W4VoTMi4c3qjyu3N2LsKRSM8Ffpgpump`
+  - ran: KYC up to 2.37x  
+    CA `47YCrfUmSQUF9vnPsPGSzrmTcxttdRAWejCMkhrrpump`
+- brain paced: blocked 17, ran 2, dumped 6, flat 1, open 8 (saving losses: keep it)
   - ran: STREETS up to 1.73x  
     CA `82mseLFauphc2yutbaDGgViahquJ1jGVLpyof99xpump`
   - ran: FOAM up to 1.98x  
     CA `2MdCPWNFufmJSZhajSvi1yqBFTB24GQ4ipjNcB8Vpump`
+- top 10 over 25%: blocked 17, ran 2, dumped 14, flat 0, open 1 (saving losses: keep it)
+  - ran: :) up to 1.65x  
+    CA `Dtx414D8jurspmB1jqJWsYU66pemoXRjQeXx7TC1pump`
+  - ran: GIF up to 2.16x  
+    CA `B6wM98qkQKP71mhPA48S7No6TxM4KaXdFojDTZeUpump`
 - RugCheck danger: blocked 12, ran 2, dumped 10, flat 0, open 0 (saving losses: keep it)
   - ran: CAP up to 2.6x  
     CA `CxGYpWoTun4J3xD4cNwXFRn2W3RzJozTxyU9nbJ4pump`
   - ran: MIHAOMAS up to 1.62x  
     CA `3XsFunPdji9U1EgJXokZysw8SB3t74un89b6KLEVpump`
-- falling knife (code): blocked 9, ran 2, dumped 6, flat 1, open 0 (saving losses: keep it)
-  - ran: RIZZMAS3 up to 1.84x  
-    CA `BQcV4Ryfu9bZK8egAF89AhkojdJqAaDt4xTFwUQ2pump`
-  - ran: STREETS up to 1.73x  
-    CA `82mseLFauphc2yutbaDGgViahquJ1jGVLpyof99xpump`
 - falling knife / no higher low: blocked 8, ran 2, dumped 2, flat 4, open 0 (mixed)
   - ran: UrAnus up to 2.97x  
     CA `27u3diWofnXGUkddjLGhcy1nRssFKHW3RtNbpWzUpump`
+  - ran: STREETS up to 1.73x  
+    CA `82mseLFauphc2yutbaDGgViahquJ1jGVLpyof99xpump`
+- falling knife (code): blocked 8, ran 2, dumped 5, flat 1, open 0 (saving losses: keep it)
+  - ran: RIZZMAS3 up to 1.84x  
+    CA `BQcV4Ryfu9bZK8egAF89AhkojdJqAaDt4xTFwUQ2pump`
   - ran: STREETS up to 1.73x  
     CA `82mseLFauphc2yutbaDGgViahquJ1jGVLpyof99xpump`
 - dev share over 1%: blocked 5, ran 2, dumped 2, flat 1, open 0 (mixed)
@@ -191,13 +191,13 @@ Nothing has a positive edge after costs. All 166 settled coins averaged -11.3% n
 Not quiet, but the movers are split. The hot money is in pump.fun name-plays and pop-culture jokes under about an hour old: MIKEDYSON is +1098% in 1h on $4k of 5m volume, Plurality has $49k of 5m on a $24.5k cap at 58% buys, and Justice For MengLan has $16.7k of 5m, with Jupiter Incident also in the mix. That is momentum, and most of it is a rug or a chase until proven otherwise (V1, V6). Brand and internet-slang launches are fading: KYC is -62% in 1h, Betty -41%, and GIF is only holding because it is already up 62%. Old one-word jokes are dead air: greg, Max and DIGS each do under $1k of 5m volume, and BLOB has $8k of 5m on a $16.5M cap, above the V6 $11M ceiling, so it is outside the recon range. Setups to research now: Plurality as a FINAL_STRETCH candidate (check its distance to bond and whether the $49k of 5m is organic or bundled), and MIKEDYSON only if it pulls back and holds, since +1098% in an hour is exit-liquidity territory. PushCoin, DESSA and Tesla FSD appear only in the web text, not the scan, so I am not weighing them.
 
 ## Moving most in its scans, last 30 min (1h volume)
-- MCAT: $268,950 1h vol, $187,650 mcap, +37% 1h  
-  CA `v4GK8f24ZJJa5qLoTJ4mJ5d6jsNUXHScwGaRHdfpump`
-- Inu: $184,865 1h vol, $3,543 mcap, -88% 1h  
-  CA `848TM75nmuyK4hVsthw6qNWd5iVkY2nHJi3M1Trfbonk`
-- DELULU: $84,320 1h vol, $19,986 mcap, +382% 1h  
-  CA `A37ozuu1D1pP1cM27y1HYkSArVQbgsZNN7Va74yNpump`
-- tremp: $66,012 1h vol, $5,796 mcap, -72% 1h  
-  CA `7Y2NE9owdL29eQxSpAPu5EkPUM4X9RJsawTMQ8Yqpump`
-- $MCAT: $63,731 1h vol, $13,470 mcap, +53% 1h  
-  CA `AkKFSkpPnBRiQHZ82Acwrj9KR4LDfp2WDn7EgjeyML64`
+- OpenIndex: $1,030,687 1h vol, $458,061 mcap, +95% 1h  
+  CA `FuKY3dk7QmpbDdQRjzbjB3G6PiCuqKNvN4dAWDpwpump`
+- SINGULARTY: $511,467 1h vol, $71,930 mcap, +163% 1h  
+  CA `DJcHva2UJnRUPxzVfczcYyqxRtpwDTPcok6irtNmpump`
+- OMGAI: $102,564 1h vol, $27,359 mcap, -44% 1h  
+  CA `AHDP4wVa73GQYSP6AhrC2f5eE5CfkpCyyzwLg5WQpump`
+- IF: $83,071 1h vol, $32,566 mcap, -5% 1h  
+  CA `3hi7qBus11Xg9Pmj7xuuK9pjmKF7UUhT5uh7SXQbhsQt`
+- earball: $76,835 1h vol, $97,265 mcap, +90% 1h  
+  CA `FryQiSLqU7NfPvpQJRiYrVuvRRW66uB4FLorrKmjpump`
