@@ -1,13 +1,13 @@
 # Trencher live report
 
-Updated 2026-11-22T10:30:12Z (paper trading, never real money)
+Updated 2026-11-22T10:45:19Z (paper trading, never real money)
 
 - Equity: $74.23 (-25.8% vs $100 start)
 - Closed trades: 22, 3 wins
 - Fees paid: $14.78 (axiom $2.81, network $9.18, pool $2.66), plus $4.15 lost to slippage
 - New trades: WATCH-ONLY (scans and decides, buys nothing)
 - Brain: subscription, claude-haiku-5-5 for routine calls, claude-opus-5-5 for the daily review; 266 routine calls and 0 plan-limit hits in 48h
-- Watch log: 58 coins being followed, 2610 filed, 0 would-buys (6h follow, sampled every 2 min)
+- Watch log: 53 coins being followed, 2615 filed, 0 would-buys (6h follow, sampled every 2 min)
 
 ## Scorecard (after fees)
 - 22 closed, 3 won (14%), net $-25.79
@@ -73,7 +73,7 @@ Updated 2026-11-22T10:30:12Z (paper trading, never real money)
   CA `H4gHnZ3NCU7Z9XQwGX6YYJNyieGEW8pqwGRUcdSxpump`
 
 ## Last scan
-- 10:29Z: 5 coins, 4 with pairs, 0 passed the market filters, 0 researched
+- 10:44Z: 2 coins, 1 with pairs, 0 passed the market filters, 0 researched
 
 ## Coins it looked at, and why it passed
 - 10:25Z PushCoin (MIGRATED, $1,129,759 mcap, $4,062 5m vol): PASS at conviction 2, PASS: no printed higher low, 5m flow at 0.94x pace on $4k, and the site doesn't show the CA. Blocker: "no higher low" plus "flow below pace." Farm-shaped until proven otherwise (V1, V6, V13).  
@@ -187,13 +187,13 @@ Nothing has a positive after-cost edge. All 98 settled coins average -15.7% net 
 Not quiet. The scan movers show two live themes. The strongest is fresh animal and creature names on pumpfun/pumpswap, rising: HIPPO (+136% 1h, $23.1k 5m, 58% buys, 0.4h old, $67k cap), MooSom (+68% 1h, 74% buys, $32k cap, 1.1h old), and PYGME (+321% 1h, $5k 5m, 55% buys). Goat-named coins are fading (one at -40%, another with $3 of 5m volume), and greg, CBUCKS and e^x show zero buys and are dead. Holiday (Santa Inu, +29% 1h on $1.1k 5m) and fast 1h pumps on thin volume (FIREBALL +78% on $4.4k 5m) look like flips, not trends. The web's Trump dinner, GTA 6 and Anthropic headlines aren't showing up in trench flow, so I'm not trading them. Setups: HIPPO is the one to research now as a MIGRATED-style entry (pumpswap, $67k cap, $23k 5m clears the $10k bar), but it is 0.4h old, so it needs full holder, dev, bundle and X checks first. If those clear, it's a conviction-5 probe with initials at 2x, a -30% stop and the -60% hard floor. MooSom only becomes interesting if its 5m reaches $10k. Snowball-v2 from the web isn't in scan_movers, so I can't verify it and won't set it as a setup. The web's BLOB and Santa Inu figures don't match the scan, so I'm using scan numbers.
 
 ## Moving most in its scans, last 30 min (1h volume)
-- BLOB: $462,796 1h vol, $12,968,191 mcap, +8% 1h  
+- BLOB: $292,600 1h vol, $13,372,215 mcap, +1% 1h  
   CA `8s11PkgQt4ZzdZ7oo84hK5t9HG1EvdgAjcg4W7Lpump`
-- MooSom: $250,936 1h vol, $31,900 mcap, +68% 1h  
-  CA `BKSP127UTT12VbipELqWMpLRw744Q36oyhirxC9Wpump`
 - HIPPO: $162,668 1h vol, $67,446 mcap, +136% 1h  
   CA `95NAbTyZopHGJK9TuisJZUHKAZSqRoSB3JPfqAqHpump`
+- GIFTER: $150,724 1h vol, $27,343 mcap, -15% 1h  
+  CA `3K6EUFoAE8zngTFMfPavqcMFhDqYTRemoaXYAjNPpump`
+- PYGME: $89,945 1h vol, $6,682 mcap, +180% 1h  
+  CA `286g8tYzV6Rtv6yJbbNrSBduV5hLSNk6z6b3vXnFpump`
 - PushCoin: $51,661 1h vol, $1,129,759 mcap, +7% 1h  
   CA `3N6Mp8YQuVDfEtyuyJS72s4MRrgQuKY34gvYZD5Kpump`
-- PYGME: $50,290 1h vol, $10,046 mcap, +321% 1h  
-  CA `286g8tYzV6Rtv6yJbbNrSBduV5hLSNk6z6b3vXnFpump`
