@@ -1,13 +1,13 @@
 # Trencher live report
 
-Updated 2026-11-22T21:34:07Z (paper trading, never real money)
+Updated 2026-11-22T21:49:20Z (paper trading, never real money)
 
 - Equity: $74.23 (-25.8% vs $100 start)
 - Closed trades: 22, 3 wins
 - Fees paid: $14.78 (axiom $2.81, network $9.18, pool $2.66), plus $4.15 lost to slippage
 - New trades: WATCH-ONLY (scans and decides, buys nothing)
-- Brain: subscription, claude-haiku-5-5 for routine calls, claude-opus-5-5 for the daily review; 256 routine calls and 0 plan-limit hits in 48h
-- Watch log: 44 coins being followed, 2709 filed, 0 would-buys (6h follow, sampled every 2 min)
+- Brain: subscription, claude-haiku-5-5 for routine calls, claude-opus-5-5 for the daily review; 259 routine calls and 0 plan-limit hits in 48h
+- Watch log: 49 coins being followed, 2712 filed, 0 would-buys (6h follow, sampled every 2 min)
 
 ## Scorecard (after fees)
 - 22 closed, 3 won (14%), net $-25.79
@@ -73,33 +73,33 @@ Updated 2026-11-22T21:34:07Z (paper trading, never real money)
   CA `H4gHnZ3NCU7Z9XQwGX6YYJNyieGEW8pqwGRUcdSxpump`
 
 ## Last scan
-- 21:33Z: 0 coins, 0 with pairs, 0 passed the market filters, 0 researched
+- 21:48Z: 0 coins, 0 with pairs, 0 passed the market filters, 0 researched
 
 ## Coins it looked at, and why it passed
+- 21:47Z WASTED (DIP, $743,851 mcap, $1,111 5m vol): REJECT, 5m volume $1,111 is dead (<$2,000) (V1)  
+  CA `GexThZHgaswpAQ7Fi8QrHFubjPimUNSYhJiAA7XZpump`
+- 21:45Z OpenIndex (DIP, $400,227 mcap, $7,218 5m vol): REJECT, Dip with fading attention is a falling knife, not a dip (5m at 0.28x the hour's pace, under 0.6x)  
+  CA `FuKY3dk7QmpbDdQRjzbjB3G6PiCuqKNvN4dAWDpwpump`
+- 21:43Z Inumas (FINAL_STRETCH, $23,145 mcap, $48,032 5m vol): PASS at conviction 3, PASS. 29 copies of one word, a 3.6% bundle cluster, zero radar mentions, and up 845% in five minutes. That's a farm field, not a leader (V1, V3, V13).  
+  CA `32MHyMJFtHn8kVmruiTAuFPjgm8pBPzYBGegdyimpump`
+- 21:40Z MINELIUS (MIGRATED, $687,920 mcap, $192,495 5m vol): REJECT, Top 10 hold 29.2% ex-pool (>25%) (V13)  
+  CA `E9rWKjVhHMxQkxfREr7Li8Yy46rVcWiWHoKVQAe9pump`
+- 21:37Z DESSA (MIGRATED, $2,888,275 mcap, $3,336 5m vol): PASS at conviction 3, PASS: DESSA. No printed higher low, first resistance is about 6% away, and it's a bottom buy with no live narrative. Farm-adjacent LARP story. (V1, V6, V13)  
+  CA `npz2FhoufQ7pKqhGpaipYWacrAkidyW2yDpVWSvpump`
+- 21:36Z Hold (FINAL_STRETCH, $17,744 mcap, $19,377 5m vol): PASS at conviction 3, PASS: 2 minutes old, a 769% first candle, seven same-name copies, and a website two hours old that doesn't show this CA. That's a launch pump, not a chart I'd buy (V3, V13).  
+  CA `8J7yeYsBzozSQ67Ji4kpun2gdfTFp8o9g6rNkYR3pump`
+- 21:36Z ASS (MIGRATED, $61,616 mcap, $4,744 5m vol): PASS at conviction 3, PASS: at the local high with 5m flow at 0.17x pace, and it's one of 20 ASS copies. Blockers: "chasing", "flow below pace", "split crowd" (V1, V3, V6).  
+  CA `8U9611BhPXG8ubN77wkeN7Gs1ooAXQLy65KQDZr9pump`
+- 21:35Z Wojak (MIGRATED, $38,347 mcap, $25,589 5m vol): PASS at conviction 2, PASS: Wojak is 2 minutes old, up 35% on 5m, and has no printed higher low. Too new, chasing spike, split crowd (V1, V6).  
+  CA `5eiLc9r79PkJquiFvYWdXJYtGNRjTpzot8MR7Z4Ppump`
 - 21:31Z GATO (MIGRATED, $1,908,817 mcap, $2,357 5m vol): REJECT, Dev holds 2.7% (>1%) (V13, V17)  
   CA `HsprHxBRgiVaQdRf3TnKNuZZtaX9JUSPgMFdAkk6pump`
 - 21:26Z SURREAL (FINAL_STRETCH, $18,268 mcap, $31,329 5m vol): PASS at conviction 3, PASS: 7 minutes old, up 677% in an hour, no X, no socials, no story, and it's already 34% off a $27.9k peak with no higher low. That's a spike bleeding out, not a base (V1, V6, V13).  
   CA `HL4pJL7WhXWXJKDRCG7yqQiS2Um3XQQnUntp5Aftpump`
-- 21:24Z murph (MIGRATED, $41,772 mcap, $3,123 5m vol): REJECT, Dev holds 4.5% (>1%) (V13, V17)  
-  CA `BwgcBr42Zw5GsYQTiepwTng1pU2FRDK9oMvgj3tipump`
-- 21:21Z DIGS (DIP, $237,954 mcap, $3,406 5m vol): REJECT, Bundles: 10 linked wallet cluster(s) hold 100.0% of supply (>20%) (V17)  
-  CA `9QT8K685Hrae4k11dhGXirdtpfAaimExtyfwt8cPpump`
-- 21:20Z PushCoin (MIGRATED, $180,896 mcap, $2,762 5m vol): REJECT, RugCheck danger: Creator history of rugged tokens  
-  CA `3N6Mp8YQuVDfEtyuyJS72s4MRrgQuKY34gvYZD5Kpump`
-- 21:18Z cateball (MIGRATED, $1,180,188 mcap, $127,512 5m vol): PASS at conviction 4, PASS: chasing spike. cateball is up 25.8% in 5m at 7x its hourly pace and has no printed higher low, and the prior high is only 1.16x away. Clean holders, but the entry is wrong. (V1, V6)  
-  CA `4npJ3avxnGhCzKbWQpLrQXAHsjWzKr4JqBsbu5Fspump`
-- 20:54Z SI2SI (FINAL_STRETCH, $15,472 mcap, $8,863 5m vol): PASS at conviction 2, PASS: SI2SI is a 7-minute-old pump.fun coin that just went up 656% in an hour on 8x pace. Chasing a spike with no story behind it (V1, V6).  
-  CA `HxpiqQCPnNX6ZnCzJriLUzmWsASoeC916kWtJYPnpump`
-- 20:49Z ASS (MIGRATED, $57,509 mcap, $31,248 5m vol): PASS at conviction 3, PASS: 9 minutes old, up 62% on the 5m and sitting at its own high (0% off peak). Chasing a spike in a 24-copy name field, and the only link is an Elon tweet, not the project's X. (V1, V6, V13)  
-  CA `8U9611BhPXG8ubN77wkeN7Gs1ooAXQLy65KQDZr9pump`
-- 20:46Z earball (DIP, $59,440 mcap, $2,474 5m vol): PASS at conviction 2, PASS: dead story, no catalyst, and price is already under the hourly low with no higher low. Falling knife on a DIP (V1, V6, V13).  
-  CA `FryQiSLqU7NfPvpQJRiYrVuvRRW66uB4FLorrKmjpump`
-- 20:36Z IF (DIP, $45,815 mcap, $2,636 5m vol): PASS at conviction 2, PASS: jagged saw-tooth chart, $2.6k 5m, theme pace 0.96x, no catalyst. This is a bottom buy with no story behind it (V1, V13).  
-  CA `3hi7qBus11Xg9Pmj7xuuK9pjmKF7UUhT5uh7SXQbhsQt`
 
 ## What its skips did next (last 48h)
 A skip "ran" if the coin reached the first target (1.5x) from the skip price before a 20% drop, "dumped" if the drop came first. Sampled every 10 min, followed 6h.
-- flow below pace: blocked 24, ran 4, dumped 19, flat 1, open 0 (saving losses: keep it)
+- flow below pace: blocked 23, ran 4, dumped 19, flat 0, open 0 (saving losses: keep it)
   - ran: Trader up to 2.04x  
     CA `BYKQkHKMWHidNBLQXgt7NX4PLUtJZRYGLWQYkJzPGenX`
   - ran: Bust up to 1.55x  
@@ -113,36 +113,38 @@ A skip "ran" if the coin reached the first target (1.5x) from the skip price bef
     CA `7CvW68FD9KjNYGByfykhaNps7VNPLN8dFwMRfmgQpump`
   - ran: SANTA up to 1.85x  
     CA `tZsjFu2CH1R23wEpbfXAYGc2KUaVrUbwofCNNNqpump`
-- too new / sniping: blocked 20, ran 3, dumped 15, flat 1, open 1 (saving losses: keep it)
+- too new / sniping: blocked 20, ran 5, dumped 14, flat 1, open 0 (saving losses: keep it)
   - ran: TA up to 1.77x  
     CA `DKUM8qywmi8X9RYK2wUgnTw8QKjh1nYDThZR1GXPpump`
   - ran: SANTAHAT up to 3x  
     CA `5fWLSMA5HoK9W4VoTMi4c3qjyu3N2LsKRSM8Ffpgpump`
   - ran: KYC up to 2.37x  
     CA `47YCrfUmSQUF9vnPsPGSzrmTcxttdRAWejCMkhrrpump`
-- top 10 over 25%: blocked 15, ran 2, dumped 13, flat 0, open 0 (saving losses: keep it)
+- top 10 over 25%: blocked 16, ran 3, dumped 13, flat 0, open 0 (saving losses: keep it)
   - ran: :) up to 1.65x  
     CA `Dtx414D8jurspmB1jqJWsYU66pemoXRjQeXx7TC1pump`
   - ran: GIF up to 2.16x  
     CA `B6wM98qkQKP71mhPA48S7No6TxM4KaXdFojDTZeUpump`
-- RugCheck danger: blocked 13, ran 2, dumped 10, flat 0, open 1 (saving losses: keep it)
+  - ran: MINELIUS up to 2.35x  
+    CA `E9rWKjVhHMxQkxfREr7Li8Yy46rVcWiWHoKVQAe9pump`
+- RugCheck danger: blocked 13, ran 2, dumped 11, flat 0, open 0 (saving losses: keep it)
   - ran: CAP up to 2.6x  
     CA `CxGYpWoTun4J3xD4cNwXFRn2W3RzJozTxyU9nbJ4pump`
   - ran: MIHAOMAS up to 1.62x  
     CA `3XsFunPdji9U1EgJXokZysw8SB3t74un89b6KLEVpump`
-- brain paced: blocked 12, ran 4, dumped 6, flat 2, open 0 (mixed)
+- brain paced: blocked 11, ran 4, dumped 6, flat 1, open 0 (mixed)
   - ran: STREETS up to 1.73x  
     CA `82mseLFauphc2yutbaDGgViahquJ1jGVLpyof99xpump`
   - ran: FOAM up to 1.98x  
     CA `2MdCPWNFufmJSZhajSvi1yqBFTB24GQ4ipjNcB8Vpump`
   - ran: MCAT up to 2.52x  
     CA `BzPyyYCTmQNq2BcfQ4ANAvCYk54rnmQEXMFvFT8RhWMi`
-- falling knife / no higher low: blocked 9, ran 2, dumped 2, flat 4, open 1 (mixed)
+- falling knife / no higher low: blocked 10, ran 2, dumped 2, flat 4, open 2 (mixed)
   - ran: UrAnus up to 2.97x  
     CA `27u3diWofnXGUkddjLGhcy1nRssFKHW3RtNbpWzUpump`
   - ran: STREETS up to 1.73x  
     CA `82mseLFauphc2yutbaDGgViahquJ1jGVLpyof99xpump`
-- falling knife (code): blocked 7, ran 2, dumped 4, flat 1, open 0 (saving losses: keep it)
+- falling knife (code): blocked 8, ran 2, dumped 4, flat 1, open 1 (saving losses: keep it)
   - ran: RIZZMAS3 up to 1.84x  
     CA `BQcV4Ryfu9bZK8egAF89AhkojdJqAaDt4xTFwUQ2pump`
   - ran: STREETS up to 1.73x  
@@ -190,16 +192,16 @@ Nothing has a positive edge after costs. All 166 settled coins averaged -11.3% n
 - [2026-11-02 20:25] I expected Slingoor, a clean MIGRATED leader with $25k of 5m flow at pace and a 0.77 buy share, to retest its $408k high from $304k. It never went green (0.98x peak) and hit the -20% stop in 2 minutes, a -$2.86 probe. My own thesis admitted there was no printed higher low after a peak only 6 minutes old, so this confirms the money-shape rule: buy share and flow are not structure (V1, V6). Next time a MIGRATED pullback with no higher low above the hourly low is a PASS with blocker "no higher low", not a probe. This is one loss, so it adds no new ban beyond the rule I already have.
 
 ## Meta right now
-Meta right now is cat coins and one-word internet-slang launches. Trump-named tickers are fading. The cat cluster is the only group getting both volume and buyers: MCAT on pumpswap ($188k cap, $15.4k 5m) has a 0.47 buy ratio, so sellers are winning for now, and $MCAT on pump.fun ($13.5k cap, 72% buys) carries the same idea at an earlier stage with only $3.2k 5m. DELULU (pump.fun, $20k cap, +382% in 1h, 63% buys) is the slang lane, but its $4.6k 5m is under the $10k bar. Fading: the Inu/dog lane (-88% in 1h), tremp (-72%, $211 5m), and anything under $1k of 5m that is down big on the hour, which is dead air. The web's Trump dinner and record-low $TRUMP headlines back the Trump fade; Plurality and MIKEDYSON are not in this scan, so I'm not weighing them. Research only, no entry yet: MCAT as a MIGRATED candidate if the buy ratio gets back above 0.5 with 5m volume holding over $10k, and DELULU only if its 5m crosses $10k with buyers still ahead. Full holder, dev and bundle checks run on each before any sizing.
+The trenches are trading cat coins and fresh one-word slang launches on pump.fun, while the Trump lane and the dog lane are fading. cateball is the only coin here with both volume and buyers ($1.18M cap, $127k 5m, 76% buys), but it's already up 80% in an hour and 12 hours old, so it's a pullback watch with volume holding (V1, V6), not a chase. GTA6CAT has 84% buys but only $2.4k 5m on a 2,145-hour-old coin, which is a stale lane. SURREAL is six minutes old on the bonding curve at $17.8k cap with $30k 5m and 63% buys, so it's a Final Stretch watch for a clean chart near bond, not the +657% spike (V1). Fading: LIQUID (-86%, 11% buys), PushCoin (-83%), retire (-96%, $38 5m), and the Trump tickers. The web's MCAT and DELULU calls aren't in this scan, so I'm not weighing them until they show up in the data. Holder, dev and bundle checks haven't run on any of these yet, so none of them is cleared for sizing.
 
 ## Moving most in its scans, last 30 min (1h volume)
+- MINELIUS: $604,011 1h vol, $687,920 mcap, +988% 1h  
+  CA `E9rWKjVhHMxQkxfREr7Li8Yy46rVcWiWHoKVQAe9pump`
+- ASS: $340,282 1h vol, $61,616 mcap, +44% 1h  
+  CA `8U9611BhPXG8ubN77wkeN7Gs1ooAXQLy65KQDZr9pump`
+- OpenIndex: $311,777 1h vol, $400,227 mcap, -39% 1h  
+  CA `FuKY3dk7QmpbDdQRjzbjB3G6PiCuqKNvN4dAWDpwpump`
 - cateball: $219,182 1h vol, $1,180,188 mcap, +80% 1h  
   CA `4npJ3avxnGhCzKbWQpLrQXAHsjWzKr4JqBsbu5Fspump`
-- retire: $96,275 1h vol, $2,046 mcap, -96% 1h  
-  CA `BEcNCmXWhf4A42ZnPHv4Yctw5tL1jAJjPDW8BKdjpump`
 - PushCoin: $83,345 1h vol, $180,896 mcap, -83% 1h  
   CA `3N6Mp8YQuVDfEtyuyJS72s4MRrgQuKY34gvYZD5Kpump`
-- SURREAL: $59,912 1h vol, $17,800 mcap, +657% 1h  
-  CA `HL4pJL7WhXWXJKDRCG7yqQiS2Um3XQQnUntp5Aftpump`
-- Heliogram: $55,863 1h vol, $17,258 mcap, -5% 1h  
-  CA `HELio3Xy1xAJhbMA9fWZMpeNDjoeiM5LrmCJrrrxZ5zM`
