@@ -1,13 +1,13 @@
 # Trencher live report
 
-Updated 2026-11-22T16:18:56Z (paper trading, never real money)
+Updated 2026-11-22T16:40:22Z (paper trading, never real money)
 
 - Equity: $74.23 (-25.8% vs $100 start)
 - Closed trades: 22, 3 wins
 - Fees paid: $14.78 (axiom $2.81, network $9.18, pool $2.66), plus $4.15 lost to slippage
 - New trades: WATCH-ONLY (scans and decides, buys nothing)
-- Brain: subscription, claude-haiku-5-5 for routine calls, claude-opus-5-5 for the daily review; 264 routine calls and 0 plan-limit hits in 48h
-- Watch log: 50 coins being followed, 2666 filed, 0 would-buys (6h follow, sampled every 2 min)
+- Brain: subscription, claude-haiku-5-5 for routine calls, claude-opus-5-5 for the daily review; 266 routine calls and 0 plan-limit hits in 48h
+- Watch log: 54 coins being followed, 2668 filed, 0 would-buys (6h follow, sampled every 2 min)
 
 ## Scorecard (after fees)
 - 22 closed, 3 won (14%), net $-25.79
@@ -73,9 +73,21 @@ Updated 2026-11-22T16:18:56Z (paper trading, never real money)
   CA `H4gHnZ3NCU7Z9XQwGX6YYJNyieGEW8pqwGRUcdSxpump`
 
 ## Last scan
-- 16:17Z: 8 coins, 7 with pairs, 1 passed the market filters, 1 researched
+- 16:39Z: 17 coins, 16 with pairs, 1 passed the market filters, 1 researched
 
 ## Coins it looked at, and why it passed
+- 16:39Z DIGS (DIP, $272,066 mcap, $2,545 5m vol): REJECT, Bundles: 10 linked wallet cluster(s) hold 100.0% of supply (>20%) (V17)  
+  CA `9QT8K685Hrae4k11dhGXirdtpfAaimExtyfwt8cPpump`
+- 16:29Z PushCoin (MIGRATED, $1,377,536 mcap, $4,074 5m vol): PASS at conviction 2, PASS: flow below pace, no higher low, and the project's own site says the contract is TBA. Blocker: flow below pace. (V1, V3, V6)  
+  CA `3N6Mp8YQuVDfEtyuyJS72s4MRrgQuKY34gvYZD5Kpump`
+- 16:24Z Max (MIGRATED, $587,056 mcap, $2,725 5m vol): PASS at conviction 3, PASS: Max is a 5m spike with sellers in control (buy share 0.29), no printed higher low, and a dead one-word meta. Chasing and no catalyst (V1, V6).  
+  CA `5qaP7oKUqKffwwo5DaEqDoTtsBLMpdbQTxEkCDaTpump`
+- 16:22Z MCAT (MIGRATED, $176,005 mcap, $7,929 5m vol): PASS at conviction 3, PASS: no breakout. MCAT is down 5% on 5m and 11% on the hour, 5m flow is $7.9k under the $10k bar, and the largest bundle is 4.85% in a 20-copy cat field. Bottom buy with no catalyst. (V1, V3, V6, V13)  
+  CA `v4GK8f24ZJJa5qLoTJ4mJ5d6jsNUXHScwGaRHdfpump`
+- 16:21Z ANCHOR (FINAL_STRETCH, $25,919 mcap, $60,571 5m vol): PASS at conviction 2, PASS. ANCHOR is 5 minutes old, up 1194%, one of 17 "anchor" copies, and it has no story behind it. Chasing a spike in a vamp field (V1, V3, V6).  
+  CA `ACHRgAkH9qoRXhi7grXLDoJN3QjwR3Kp1UnJN7uwEwFa`
+- 16:20Z DESSA (MIGRATED, $3,230,644 mcap, $7,828 5m vol): PASS at conviction 3, PASS: flow below pace (0.72x hourly), no catalyst, and a thin AI-yap meme on a borrowed name. (V1, V6, V13)  
+  CA `npz2FhoufQ7pKqhGpaipYWacrAkidyW2yDpVWSvpump`
 - 16:18Z Star (MIGRATED, $50,210 mcap, $62,004 5m vol): PASS at conviction 3, PASS: chasing spike at the high, 7 minutes old, 17 same-theme copies. Come back on a higher low. (V1, V6)  
   CA `FD3ib3uP9upX5qUSSjhpZj7yBGN1HjyT5hzztQvMpump`
 - 16:14Z poorcat (no setup, $13,687 mcap, $22,114 5m vol): REJECT, No setup fits: not Final Stretch, not a migrated runner, not a healthy dip  
@@ -83,18 +95,6 @@ Updated 2026-11-22T16:18:56Z (paper trading, never real money)
 - 16:01Z MIKEDYSON (MIGRATED, $65,645 mcap, $4,981 5m vol): PASS at conviction 3, PASS: chasing spike, too new, target too close. MIKEDYSON is a 6-minute-old migration printing 9x its hourly pace on $5k of 5m flow. (V1, V6)  
   CA `6RE3WnDYmkKquontjFXD2me6vuqjan45EHVCtL3kpump`
 - 15:50Z DIGS (MIGRATED, $287,729 mcap, $2,734 5m vol): REJECT, Bundles: 10 linked wallet cluster(s) hold 100.0% of supply (>20%) (V17)  
-  CA `9QT8K685Hrae4k11dhGXirdtpfAaimExtyfwt8cPpump`
-- 15:48Z FRANK (MIGRATED, $40,541 mcap, $30,647 5m vol): PASS at conviction 3, PASS: FRANK is a copy in a 26-coin same-name field, not the leader. No printed higher low, 10 minutes old, top 10 at 22%. Blocker "split crowd" plus "no higher low" (V1, V3, V13).  
-  CA `8eyeL2ndAM1r3bShu8LLkAma8FkgzsFg1LMMCbjHpump`
-- 15:43Z PushCoin (MIGRATED, $1,332,834 mcap, $3,084 5m vol): PASS at conviction 2, PASS: flow at 0.48x pace, price under its hourly low, and the site says "Contract TBA". Blocked on flow, structure and the CA. (V1, V3, V6)  
-  CA `3N6Mp8YQuVDfEtyuyJS72s4MRrgQuKY34gvYZD5Kpump`
-- 15:34Z DESSA (MIGRATED, $3,235,967 mcap, $11,541 5m vol): PASS, PASS — brain unavailable, not trading blind.  
-  CA `npz2FhoufQ7pKqhGpaipYWacrAkidyW2yDpVWSvpump`
-- 15:25Z GIF (FINAL_STRETCH, $16,198 mcap, $3,459 5m vol): REJECT, Top 10 hold 25.4% ex-pool (>25%) (V13)  
-  CA `B6wM98qkQKP71mhPA48S7No6TxM4KaXdFojDTZeUpump`
-- 15:06Z testicles (DIP, $39,053 mcap, $2,269 5m vol): REJECT, Top 10 hold 28.4% ex-pool (>25%) (V13)  
-  CA `3pGmCpDCr2B6cZFhFJFtLrcMCadMvjV4dB9UGJyNpump`
-- 15:04Z DIGS (DIP, $278,297 mcap, $2,795 5m vol): REJECT, Bundles: 10 linked wallet cluster(s) hold 100.0% of supply (>20%) (V17)  
   CA `9QT8K685Hrae4k11dhGXirdtpfAaimExtyfwt8cPpump`
 
 ## What its skips did next (last 48h)
@@ -106,25 +106,25 @@ A skip "ran" if the coin reached the first target (1.5x) from the skip price bef
     CA `EoV9JQYi57tqjyQbWLdXVarYpEu82FsP8SDnkbFmpump`
   - ran: Mandy up to 1.53x  
     CA `HmJRWZ8tFfuCY9A4MrSftnrvEFCApw1hyqHtb9Rzpump`
-- top 10 over 25%: blocked 23, ran 2, dumped 20, flat 0, open 1 (saving losses: keep it)
-  - ran: :) up to 1.65x  
-    CA `Dtx414D8jurspmB1jqJWsYU66pemoXRjQeXx7TC1pump`
-  - ran: GIF up to 2.16x  
-    CA `B6wM98qkQKP71mhPA48S7No6TxM4KaXdFojDTZeUpump`
-- too new / sniping: blocked 21, ran 3, dumped 15, flat 1, open 2 (saving losses: keep it)
+- too new / sniping: blocked 22, ran 3, dumped 18, flat 1, open 0 (saving losses: keep it)
   - ran: TA up to 1.77x  
     CA `DKUM8qywmi8X9RYK2wUgnTw8QKjh1nYDThZR1GXPpump`
   - ran: SANTAHAT up to 3x  
     CA `5fWLSMA5HoK9W4VoTMi4c3qjyu3N2LsKRSM8Ffpgpump`
   - ran: KYC up to 2.37x  
     CA `47YCrfUmSQUF9vnPsPGSzrmTcxttdRAWejCMkhrrpump`
-- near the high / chasing: blocked 21, ran 3, dumped 18, flat 0, open 0 (saving losses: keep it)
+- near the high / chasing: blocked 22, ran 3, dumped 18, flat 0, open 1 (saving losses: keep it)
   - ran: Trader up to 2.04x  
     CA `BYKQkHKMWHidNBLQXgt7NX4PLUtJZRYGLWQYkJzPGenX`
   - ran: CUNTS up to 1.61x  
     CA `7CvW68FD9KjNYGByfykhaNps7VNPLN8dFwMRfmgQpump`
   - ran: SANTA up to 1.85x  
     CA `tZsjFu2CH1R23wEpbfXAYGc2KUaVrUbwofCNNNqpump`
+- top 10 over 25%: blocked 22, ran 2, dumped 19, flat 0, open 1 (saving losses: keep it)
+  - ran: :) up to 1.65x  
+    CA `Dtx414D8jurspmB1jqJWsYU66pemoXRjQeXx7TC1pump`
+  - ran: GIF up to 2.16x  
+    CA `B6wM98qkQKP71mhPA48S7No6TxM4KaXdFojDTZeUpump`
 - RugCheck danger: blocked 16, ran 2, dumped 14, flat 0, open 0 (saving losses: keep it)
   - ran: CAP up to 2.6x  
     CA `CxGYpWoTun4J3xD4cNwXFRn2W3RzJozTxyU9nbJ4pump`
@@ -191,13 +191,13 @@ Nothing has a positive edge after costs. All 166 settled coins averaged -11.3% n
 Not quiet, but the movers are split. The hot money is in pump.fun name-plays and pop-culture jokes under about an hour old: MIKEDYSON is +1098% in 1h on $4k of 5m volume, Plurality has $49k of 5m on a $24.5k cap at 58% buys, and Justice For MengLan has $16.7k of 5m, with Jupiter Incident also in the mix. That is momentum, and most of it is a rug or a chase until proven otherwise (V1, V6). Brand and internet-slang launches are fading: KYC is -62% in 1h, Betty -41%, and GIF is only holding because it is already up 62%. Old one-word jokes are dead air: greg, Max and DIGS each do under $1k of 5m volume, and BLOB has $8k of 5m on a $16.5M cap, above the V6 $11M ceiling, so it is outside the recon range. Setups to research now: Plurality as a FINAL_STRETCH candidate (check its distance to bond and whether the $49k of 5m is organic or bundled), and MIKEDYSON only if it pulls back and holds, since +1098% in an hour is exit-liquidity territory. PushCoin, DESSA and Tesla FSD appear only in the web text, not the scan, so I am not weighing them.
 
 ## Moving most in its scans, last 30 min (1h volume)
-- BLOB: $241,218 1h vol, $20,034,046 mcap, +31% 1h  
+- BLOB: $236,754 1h vol, $22,305,558 mcap, +23% 1h  
   CA `8s11PkgQt4ZzdZ7oo84hK5t9HG1EvdgAjcg4W7Lpump`
-- MengLan: $186,230 1h vol, $3,835 mcap, -87% 1h  
-  CA `37dRkSVpirqLLh2m8jdx2JXBFcNqFi7pdBgqDodppump`
+- FRANK: $224,696 1h vol, $6,193 mcap, -79% 1h  
+  CA `8eyeL2ndAM1r3bShu8LLkAma8FkgzsFg1LMMCbjHpump`
+- DESSA: $132,115 1h vol, $3,258,560 mcap, +5% 1h  
+  CA `npz2FhoufQ7pKqhGpaipYWacrAkidyW2yDpVWSvpump`
+- MCAT: $90,150 1h vol, $172,423 mcap, -9% 1h  
+  CA `v4GK8f24ZJJa5qLoTJ4mJ5d6jsNUXHScwGaRHdfpump`
 - Star: $85,343 1h vol, $49,906 mcap, +11% 1h  
   CA `FD3ib3uP9upX5qUSSjhpZj7yBGN1HjyT5hzztQvMpump`
-- GIF: $72,197 1h vol, $4,828 mcap, -83% 1h  
-  CA `B6wM98qkQKP71mhPA48S7No6TxM4KaXdFojDTZeUpump`
-- poorcat: $69,449 1h vol, $14,765 mcap, +514% 1h  
-  CA `2w4jvePDKqNfzn8g358kGhoJn8vRhvQUYck4xLB1pump`
