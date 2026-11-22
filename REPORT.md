@@ -1,13 +1,13 @@
 # Trencher live report
 
-Updated 2026-11-22T07:13:04Z (paper trading, never real money)
+Updated 2026-11-22T07:28:19Z (paper trading, never real money)
 
 - Equity: $74.23 (-25.8% vs $100 start)
 - Closed trades: 22, 3 wins
 - Fees paid: $14.78 (axiom $2.81, network $9.18, pool $2.66), plus $4.15 lost to slippage
 - New trades: WATCH-ONLY (scans and decides, buys nothing)
-- Brain: subscription, claude-haiku-5-5 for routine calls, claude-opus-5-5 for the daily review; 268 routine calls and 0 plan-limit hits in 48h
-- Watch log: 71 coins being followed, 2569 filed, 0 would-buys (6h follow, sampled every 2 min)
+- Brain: subscription, claude-haiku-5-5 for routine calls, claude-opus-5-5 for the daily review; 271 routine calls and 0 plan-limit hits in 48h
+- Watch log: 75 coins being followed, 2571 filed, 0 would-buys (6h follow, sampled every 2 min)
 
 ## Scorecard (after fees)
 - 22 closed, 3 won (14%), net $-25.79
@@ -73,9 +73,21 @@ Updated 2026-11-22T07:13:04Z (paper trading, never real money)
   CA `H4gHnZ3NCU7Z9XQwGX6YYJNyieGEW8pqwGRUcdSxpump`
 
 ## Last scan
-- 07:12Z: 1 coins, 1 with pairs, 0 passed the market filters, 0 researched
+- 07:27Z: 3 coins, 3 with pairs, 1 passed the market filters, 1 researched
 
 ## Coins it looked at, and why it passed
+- 07:28Z CATEMAS (MIGRATED, $101,334 mcap, $2,474 5m vol): PASS at conviction 2, PASS. Cat-copy in a 17-copy field, not the leader, down 75.6% with lower lows and no higher low. Blocked by the dip band, the vamp split and a fading -mas meta (V1, V3, V6).  
+  CA `kPqBsUZuogprbq15ZpACwDzbUHSAxTxbhRrxmrDpump`
+- 07:24Z BLOB (MIGRATED, $7,635,543 mcap, $15,797 5m vol): PASS at conviction 3, PASS: BLOB is 4.8% off a $8.0M high, over the $1M cap with no room to the prior high, and no printed higher low. Chasing a top. (V1, V6)  
+  CA `8s11PkgQt4ZzdZ7oo84hK5t9HG1EvdgAjcg4W7Lpump`
+- 07:22Z snowball (DIP, $142,696 mcap, $10,736 5m vol): REJECT, Dip with fading attention is a falling knife, not a dip (5m at 0.43x the hour's pace, under 0.6x)  
+  CA `3D7YQcnXi6RMjWxheiE8VLuGXJTtgQkmyugGYvzjpump`
+- 07:22Z MWG (MIGRATED, $53,084 mcap, $29,740 5m vol): PASS at conviction 3, PASS: chasing a 13-minute-old copy at its high, in a 21-copy vamp field, with no higher low. Blockers: "chasing spike" and "split crowd" (V1, V3, V6).  
+  CA `26iFWxkdpcf8qNzbzuuvJw9NrKnFPmu7tzLc6NWkpump`
+- 07:22Z PushCoin (MIGRATED, $1,577,512 mcap, $2,391 5m vol): PASS at conviction 2, PASS — first resistance is 1.18x away, 5m flow is at 0.79x pace, and the project's own site says the contract is "TBA". Tech claims with no GitHub and a 1.4-day-old domain. Not a trade (V6, V3, V13).  
+  CA `3N6Mp8YQuVDfEtyuyJS72s4MRrgQuKY34gvYZD5Kpump`
+- 07:21Z FIREBALL (FINAL_STRETCH, $15,015 mcap, $18,578 5m vol): PASS at conviction 2, PASS — 10 minutes old, up 657% on the hour at 6.3x its hourly pace, one of seven "fireball" copies, and the site was registered today. Chasing a spike in a split crowd with no story behind it (V1, V6, V13).  
+  CA `5o7AFuoNWsy7gQS85ospXhWFJRnxDwTtwTR3JF2Jpump`
 - 07:11Z DESSA (DIP, $2,156,717 mcap, $3,077 5m vol): PASS at conviction 2, PASS. DESSA is a thin AI-yap meme with $3k on 5m, no catalyst, and a +41% hour that is sitting at its high. Blocker: dead story. (V1, V6, V13)  
   CA `npz2FhoufQ7pKqhGpaipYWacrAkidyW2yDpVWSvpump`
 - 07:10Z Snowball (MIGRATED, $43,506 mcap, $11,059 5m vol): PASS at conviction 3, PASS: chasing a 4.3x volume spike off a 70%-down bounce, no printed higher low, and the official site says the coin contract is "coming soon" on a 5-hour-old domain (V1, V3, V13).  
@@ -84,18 +96,6 @@ Updated 2026-11-22T07:13:04Z (paper trading, never real money)
   CA `GRYVqbtwK1JuDpmXB5ogoEyQtFYgqxg7bKZc12bGpump`
 - 06:49Z CORONA (DIP, $58,815 mcap, $5,871 5m vol): REJECT, Dip with fading attention is a falling knife, not a dip (5m at 0.48x the hour's pace, under 0.6x)  
   CA `6fVQAutGBLpyYJRiekVjSjvKidsmgZx14bKV5HSSpump`
-- 06:37Z snowball (DIP, $83,998 mcap, $14,047 5m vol): PASS at conviction 2, PASS — DIP flow at 0.63x pace, under the 0.7x gate, with no catalyst, no printed higher low, and a treasury page that says no coin routes fees to it yet. Blocker: "flow below pace" and "no catalyst" (V1, V6, V13).  
-  CA `3D7YQcnXi6RMjWxheiE8VLuGXJTtgQkmyugGYvzjpump`
-- 06:36Z PushCoin (MIGRATED, $1,652,724 mcap, $2,693 5m vol): PASS at conviction 2, PASS — PushCoin is a $1.65M MIGRATED coin with $2.7k 5m volume at 0.89x its hourly pace and 0.51 buys, sitting 11.6% off a $1.87M high with no printed higher low. Blockers: "flow below pace", "target too close" (the high is only 1.13x away), and the site shows "CA TBA" on a 1-day-old domain. Farm-sh  
-  CA `3N6Mp8YQuVDfEtyuyJS72s4MRrgQuKY34gvYZD5Kpump`
-- 06:26Z greg (DIP, $292,891 mcap, $2,189 5m vol): PASS at conviction 2, PASS: greg is a 19-to-25 copy same-ticker field, 5m flow is $2.2k, and the price is sitting on its hourly low with no higher low printed. Blocker: no catalyst, story not on the radar (V1, V13).  
-  CA `4Ye6Y6Vaic8cyPdfW2f9PcLhXkysBtSmV84G8X7spump`
-- 06:25Z ZOLANON (MIGRATED, $33,337 mcap, $7,613 5m vol): REJECT, RugCheck danger: Large Amount of LP Unlocked 100.00%  
-  CA `7rs4CPunReThbtKoMTqNP1hKGyfLjWVz5ktrT5htpump`
-- 06:18Z SANTA (MIGRATED, $32,709 mcap, $10,193 5m vol): PASS at conviction 2, PASS. Day-one Santa clone, 12x hourly pace, sellers 286 to 161 on 5m, no higher low possible yet. Chasing a spike in a fading holiday family (V1, V6).  
-  CA `tZsjFu2CH1R23wEpbfXAYGc2KUaVrUbwofCNNNqpump`
-- 06:05Z DESSA (DIP, $1,462,105 mcap, $4,893 5m vol): PASS at conviction 2, PASS: DIP on a story that peaked a month ago, no fresh catalyst, and 5m flow under the $10k bar. Blocker: "dead story" plus bottom-buy rule. (V1, V6, V13)  
-  CA `npz2FhoufQ7pKqhGpaipYWacrAkidyW2yDpVWSvpump`
 
 ## What its skips did next (last 48h)
 A skip "ran" if the coin reached the first target (1.5x) from the skip price before a 20% drop, "dumped" if the drop came first. Sampled every 10 min, followed 6h.
@@ -106,17 +106,17 @@ A skip "ran" if the coin reached the first target (1.5x) from the skip price bef
     CA `EoV9JQYi57tqjyQbWLdXVarYpEu82FsP8SDnkbFmpump`
   - ran: Mandy up to 1.53x  
     CA `HmJRWZ8tFfuCY9A4MrSftnrvEFCApw1hyqHtb9Rzpump`
-- top 10 over 25%: blocked 24, ran 1, dumped 21, flat 1, open 1 (saving losses: keep it)
-  - ran: :) up to 1.65x  
-    CA `Dtx414D8jurspmB1jqJWsYU66pemoXRjQeXx7TC1pump`
-- near the high / chasing: blocked 24, ran 4, dumped 18, flat 0, open 2 (saving losses: keep it)
+- near the high / chasing: blocked 26, ran 4, dumped 19, flat 0, open 3 (saving losses: keep it)
   - ran: STICK up to 2.08x  
     CA `532iaQrhFCD3QKFHsAtFAQ1mQZMjMdNrPXLeCS6cpump`
   - ran: Trader up to 2.04x  
     CA `BYKQkHKMWHidNBLQXgt7NX4PLUtJZRYGLWQYkJzPGenX`
   - ran: CUNTS up to 1.61x  
     CA `7CvW68FD9KjNYGByfykhaNps7VNPLN8dFwMRfmgQpump`
-- too new / sniping: blocked 20, ran 2, dumped 16, flat 1, open 1 (saving losses: keep it)
+- top 10 over 25%: blocked 24, ran 1, dumped 21, flat 1, open 1 (saving losses: keep it)
+  - ran: :) up to 1.65x  
+    CA `Dtx414D8jurspmB1jqJWsYU66pemoXRjQeXx7TC1pump`
+- too new / sniping: blocked 21, ran 2, dumped 16, flat 1, open 2 (saving losses: keep it)
   - ran: TA up to 1.77x  
     CA `DKUM8qywmi8X9RYK2wUgnTw8QKjh1nYDThZR1GXPpump`
   - ran: SANTAHAT up to 3x  
@@ -126,20 +126,20 @@ A skip "ran" if the coin reached the first target (1.5x) from the skip price bef
     CA `hT9xKkj6dPMz97zcxEEE5T5fFdm6x31P6FodwT8pump`
   - ran: CAP up to 2.6x  
     CA `CxGYpWoTun4J3xD4cNwXFRn2W3RzJozTxyU9nbJ4pump`
-- falling knife (code): blocked 14, ran 2, dumped 10, flat 1, open 1 (saving losses: keep it)
+- falling knife (code): blocked 15, ran 2, dumped 10, flat 1, open 2 (saving losses: keep it)
   - ran: RIZZMAS3 up to 1.84x  
     CA `BQcV4Ryfu9bZK8egAF89AhkojdJqAaDt4xTFwUQ2pump`
+  - ran: STREETS up to 1.73x  
+    CA `82mseLFauphc2yutbaDGgViahquJ1jGVLpyof99xpump`
+- falling knife / no higher low: blocked 8, ran 2, dumped 2, flat 2, open 2 (mixed)
+  - ran: UrAnus up to 2.97x  
+    CA `27u3diWofnXGUkddjLGhcy1nRssFKHW3RtNbpWzUpump`
   - ran: STREETS up to 1.73x  
     CA `82mseLFauphc2yutbaDGgViahquJ1jGVLpyof99xpump`
 - thin 5m volume: blocked 7, ran 1, dumped 5, flat 1, open 0 (saving losses: keep it)
   - ran: chud up to 1.55x  
     CA `EV7J2QaPXPytSkM1LD9GPRkgAbmSEr9R3kYiXBzbpump`
 - bundles over the line: blocked 7, ran 0, dumped 4, flat 2, open 1 (saving losses: keep it)
-- falling knife / no higher low: blocked 7, ran 2, dumped 2, flat 2, open 1 (mixed)
-  - ran: UrAnus up to 2.97x  
-    CA `27u3diWofnXGUkddjLGhcy1nRssFKHW3RtNbpWzUpump`
-  - ran: STREETS up to 1.73x  
-    CA `82mseLFauphc2yutbaDGgViahquJ1jGVLpyof99xpump`
 - dev share over 1%: blocked 6, ran 2, dumped 2, flat 2, open 0 (mixed)
   - ran: SANTINU up to 1.56x  
     CA `BCTwG3LDhNcthcK374aWQfAzLYGRXDu1apmrqw3Tpump`
@@ -182,16 +182,16 @@ Nothing has a positive after-cost edge. All 98 settled coins average -15.7% net 
 - [2026-11-02 20:25] I expected Slingoor, a clean MIGRATED leader with $25k of 5m flow at pace and a 0.77 buy share, to retest its $408k high from $304k. It never went green (0.98x peak) and hit the -20% stop in 2 minutes, a -$2.86 probe. My own thesis admitted there was no printed higher low after a peak only 6 minutes old, so this confirms the money-shape rule: buy share and flow are not structure (V1, V6). Next time a MIGRATED pullback with no higher low above the hourly low is a PASS with blocker "no higher low", not a probe. This is one loss, so it adds no new ban beyond the rule I already have.
 
 ## Meta right now
-The meta is split, not dead. The holiday "-mas" pun family is fading: Santa is down 70%, apemas 49%, and CATEGIVING and Catemas are both down about 40% with under $1k on 5m. Snowball is the one name with real money: snowball-v2 is at a $113k cap with $47k 5m volume, 61% buys, and +544% in 1h. Cat and animal memes are a second thread (Merry Cat +220% with 61% buys at $7.8k, Corona +134% at $65k, Tiger Loaf -36%), and fresh pump.fun launches with fast buying are a third (Retail: 6 minutes old, $13.3k 5m, 58% buys, +526%). Trump and GTA headlines aren't moving this tape: $TRUMP is fading and GTA6CAT has zero 5m volume. Research only, no entries. Retail is the first look: it clears the $10k 5m bar but is too new to verify, so it needs full holder, dev, bundle and X checks. snowball-v2 needs a check on whether it's the original or a v2 vamp of the -70% Snowball, because a +544% chase with sellers close is a late-entry trap. Merry Cat is worth watching only if it holds $10k on 5m with buys. The web figures conflict with scan (snowball 40% buys and $66k 5m versus 61% and $47k; CATEGIVING +240% versus -43%), so I trust scan_movers and treat everything as unverified.
+Meta from scan_movers: the holiday "-mas" family is fading hard (SANTA -74% on $2.2k 5m, Goonmas and Catemas under $300 on 5m, WhalesMas and MIHAOMAS thin). Cat and animal names have the only other real flow, but CORONA is the only one of them with meaningful buys ($5.9k 5m, 54% buys), and that is under the $10k bar. The strongest theme is fresh pump.fun launches with fast buying: ELVES (The Real Bagworkers), about 24 minutes old at a $21k cap, with $11.9k 5m, 56% buys and +986% in 1h, is the only mover that clears the bar while new. Snowball shows $11.3k 5m but 48% buys at $41k, so the web's 61% buys and $113k snowball-v2 figures don't match scan; it's a watch, not a chase. Setup to research: ELVES, with full holder, dev, bundle and X checks before any entry, initials at 2x, stop at -30%, and a PASS if 5m volume drops under $10k or buys fall below half. Retail is the web's favorite, but scan shows $620 5m and -80% in 1h, so it's a PASS. Research only; no entries.
 
 ## Moving most in its scans, last 30 min (1h volume)
-- SANTA: $288,227 1h vol, $8,680 mcap, -68% 1h  
+- snowball: $301,073 1h vol, $142,696 mcap, +45% 1h  
+  CA `3D7YQcnXi6RMjWxheiE8VLuGXJTtgQkmyugGYvzjpump`
+- SANTA: $220,925 1h vol, $6,552 mcap, -86% 1h  
   CA `tZsjFu2CH1R23wEpbfXAYGc2KUaVrUbwofCNNNqpump`
-- CORONA: $145,456 1h vol, $58,815 mcap, +31% 1h  
-  CA `6fVQAutGBLpyYJRiekVjSjvKidsmgZx14bKV5HSSpump`
-- SHIT: $85,988 1h vol, $7,335 mcap, -83% 1h  
-  CA `Fn95NtGXWPaJXc4N5y9rVkUq1NwZbjBNJzPVvNRLpump`
+- MWG: $108,490 1h vol, $54,105 mcap, +18% 1h  
+  CA `26iFWxkdpcf8qNzbzuuvJw9NrKnFPmu7tzLc6NWkpump`
 - ELVES: $85,505 1h vol, $21,325 mcap, +986% 1h  
   CA `GRYVqbtwK1JuDpmXB5ogoEyQtFYgqxg7bKZc12bGpump`
-- DESSA: $36,371 1h vol, $2,163,476 mcap, +41% 1h  
-  CA `npz2FhoufQ7pKqhGpaipYWacrAkidyW2yDpVWSvpump`
+- BLOB: $81,101 1h vol, $7,705,402 mcap, +25% 1h  
+  CA `8s11PkgQt4ZzdZ7oo84hK5t9HG1EvdgAjcg4W7Lpump`
