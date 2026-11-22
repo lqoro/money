@@ -1,13 +1,13 @@
 # Trencher live report
 
-Updated 2026-11-22T02:25:26Z (paper trading, never real money)
+Updated 2026-11-22T02:40:35Z (paper trading, never real money)
 
 - Equity: $74.23 (-25.8% vs $100 start)
 - Closed trades: 22, 3 wins
 - Fees paid: $14.78 (axiom $2.81, network $9.18, pool $2.66), plus $4.15 lost to slippage
 - New trades: WATCH-ONLY (scans and decides, buys nothing)
-- Brain: subscription, claude-haiku-5-5 for routine calls, claude-opus-5-5 for the daily review; 282 routine calls and 0 plan-limit hits in 48h
-- Watch log: 85 coins being followed, 2502 filed, 0 would-buys (6h follow, sampled every 2 min)
+- Brain: subscription, claude-haiku-5-5 for routine calls, claude-opus-5-5 for the daily review; 280 routine calls and 0 plan-limit hits in 48h
+- Watch log: 85 coins being followed, 2504 filed, 0 would-buys (6h follow, sampled every 2 min)
 
 ## Scorecard (after fees)
 - 22 closed, 3 won (14%), net $-25.79
@@ -73,9 +73,13 @@ Updated 2026-11-22T02:25:26Z (paper trading, never real money)
   CA `H4gHnZ3NCU7Z9XQwGX6YYJNyieGEW8pqwGRUcdSxpump`
 
 ## Last scan
-- 02:24Z: 0 coins, 0 with pairs, 0 passed the market filters, 0 researched
+- 02:40Z: 1 coins, 1 with pairs, 0 passed the market filters, 0 researched
 
 ## Coins it looked at, and why it passed
+- 02:27Z SHIT (MIGRATED, $335,302 mcap, $7,670 5m vol): PASS, PASS — brain unavailable, not trading blind.  
+  CA `Fn95NtGXWPaJXc4N5y9rVkUq1NwZbjBNJzPVvNRLpump`
+- 02:26Z 1 (MIGRATED, $231,034 mcap, $2,589 5m vol): PASS, PASS — brain unavailable, not trading blind.  
+  CA `2bCCHQadi4QeHWPKG3w13siCyWWQPgkFtniouTqVpump`
 - 02:20Z SANTA (FINAL_STRETCH, $24,272 mcap, $71,138 5m vol): PASS, PASS — brain unavailable, not trading blind.  
   CA `48tDqrzNnEg3No94vUXvpCG24CQCgAjFV9Vf3bZwpump`
 - 02:19Z RIZZMAS (DIP, $72,132 mcap, $10,950 5m vol): REJECT, Dip with fading attention is a falling knife, not a dip (5m at 0.20x the hour's pace, under 0.6x)  
@@ -92,25 +96,21 @@ Updated 2026-11-22T02:25:26Z (paper trading, never real money)
   CA `B1oGtkaVAVZkdtWV7SXrHnFkcWC1Kd45sYpy6RYTpump`
 - 01:51Z WHALLET (FINAL_STRETCH, $17,066 mcap, $7,683 5m vol): PASS at conviction 2, PASS: chasing spike on a pump.fun copy with no X and $7.7k 5m. Blockers: "chasing spike", "split crowd" (V1, V3, V6).  
   CA `Ft2TL58CHP7hgF6SXXBHcTFxEB4Zg412TynELmASpump`
-- 01:48Z RIZZMAS3 (DIP, $149,120 mcap, $34,616 5m vol): REJECT, Dip with fading attention is a falling knife, not a dip (5m at 0.47x the hour's pace, under 0.6x)  
-  CA `BQcV4Ryfu9bZK8egAF89AhkojdJqAaDt4xTFwUQ2pump`
-- 01:44Z MANEKI (MIGRATED, $114,963 mcap, $2,834 5m vol): PASS at conviction 2, PASS — 19 copies of the maneki name, MANEKI isn't the 5m leader, and its own 5m flow is $2.8k. Split crowd (V1, V3).  
-  CA `G74SSWk4qF4BeWfyR53fVZYqdNWo9wH7UR55jF4uuxds`
 
 ## What its skips did next (last 48h)
 A skip "ran" if the coin reached the first target (1.5x) from the skip price before a 20% drop, "dumped" if the drop came first. Sampled every 10 min, followed 6h.
-- flow below pace: blocked 28, ran 4, dumped 21, flat 0, open 3 (saving losses: keep it)
+- top 10 over 25%: blocked 27, ran 2, dumped 24, flat 1, open 0 (saving losses: keep it)
+  - ran: :) up to 1.65x  
+    CA `Dtx414D8jurspmB1jqJWsYU66pemoXRjQeXx7TC1pump`
+  - ran: PushCoin up to 2.21x  
+    CA `3N6Mp8YQuVDfEtyuyJS72s4MRrgQuKY34gvYZD5Kpump`
+- flow below pace: blocked 26, ran 4, dumped 19, flat 0, open 3 (saving losses: keep it)
   - ran: SWRDXSTFF up to 1.77x  
     CA `Csoj9XHJfBAxsKswqKKBENnGeoRDHtACfyYi7HmJpump`
   - ran: Trader up to 2.04x  
     CA `BYKQkHKMWHidNBLQXgt7NX4PLUtJZRYGLWQYkJzPGenX`
   - ran: Bust up to 1.55x  
     CA `EoV9JQYi57tqjyQbWLdXVarYpEu82FsP8SDnkbFmpump`
-- top 10 over 25%: blocked 27, ran 2, dumped 24, flat 1, open 0 (saving losses: keep it)
-  - ran: :) up to 1.65x  
-    CA `Dtx414D8jurspmB1jqJWsYU66pemoXRjQeXx7TC1pump`
-  - ran: PushCoin up to 2.21x  
-    CA `3N6Mp8YQuVDfEtyuyJS72s4MRrgQuKY34gvYZD5Kpump`
 - near the high / chasing: blocked 22, ran 5, dumped 17, flat 0, open 0 (saving losses: keep it)
   - ran: BEAR up to 2.32x  
     CA `DCPm44cT9i39HjR13QHYgxkR7wEx9TDeniGuayB5pump`
@@ -118,14 +118,14 @@ A skip "ran" if the coin reached the first target (1.5x) from the skip price bef
     CA `UQLWvkwiSsnViuVBy7oArMtzb5RAZyrdJ79amQFrzoL`
   - ran: STICK up to 2.08x  
     CA `532iaQrhFCD3QKFHsAtFAQ1mQZMjMdNrPXLeCS6cpump`
-- too new / sniping: blocked 18, ran 3, dumped 14, flat 1, open 0 (saving losses: keep it)
+- too new / sniping: blocked 17, ran 3, dumped 13, flat 1, open 0 (saving losses: keep it)
   - ran: AudaCity up to 1.96x  
     CA `3rtTUCpe1BBgCTNWQ9jK3xkAz1E7SPqMt4uYHx1Bpump`
   - ran: TA up to 1.77x  
     CA `DKUM8qywmi8X9RYK2wUgnTw8QKjh1nYDThZR1GXPpump`
   - ran: SANTAHAT up to 3x  
     CA `5fWLSMA5HoK9W4VoTMi4c3qjyu3N2LsKRSM8Ffpgpump`
-- RugCheck danger: blocked 16, ran 2, dumped 14, flat 0, open 0 (saving losses: keep it)
+- RugCheck danger: blocked 15, ran 2, dumped 13, flat 0, open 0 (saving losses: keep it)
   - ran: TOP up to 1.67x  
     CA `hT9xKkj6dPMz97zcxEEE5T5fFdm6x31P6FodwT8pump`
   - ran: CAP up to 2.6x  
@@ -136,19 +136,17 @@ A skip "ran" if the coin reached the first target (1.5x) from the skip price bef
 - thin 5m volume: blocked 10, ran 1, dumped 7, flat 1, open 1 (saving losses: keep it)
   - ran: chud up to 1.55x  
     CA `EV7J2QaPXPytSkM1LD9GPRkgAbmSEr9R3kYiXBzbpump`
-- bundles over the line: blocked 8, ran 0, dumped 5, flat 3, open 0 (saving losses: keep it)
-- falling knife / no higher low: blocked 8, ran 3, dumped 2, flat 1, open 2 (cost more winners than it saved: loosen it)
-  - ran: pCAT up to 1.58x  
-    CA `BLdC7hwRijHudKYDmtEkx1SHUdBWm8XbjBCSvwa6pump`
-  - ran: MACCA up to 1.71x  
-    CA `C5eGEXJZYvXEbKdyvPtasksjGNV4xvMowpKM92bVv47f`
-  - ran: UrAnus up to 2.97x  
-    CA `27u3diWofnXGUkddjLGhcy1nRssFKHW3RtNbpWzUpump`
 - dev share over 1%: blocked 7, ran 2, dumped 3, flat 1, open 1 (mixed)
   - ran: SANTINU up to 1.56x  
     CA `BCTwG3LDhNcthcK374aWQfAzLYGRXDu1apmrqw3Tpump`
   - ran: Mfer up to 1.55x  
     CA `9tX1UpBGeNqMb1VqqzVumwzW71ybsNZFyWKYiL8Ppump`
+- bundles over the line: blocked 7, ran 0, dumped 4, flat 3, open 0 (saving losses: keep it)
+- falling knife / no higher low: blocked 7, ran 2, dumped 2, flat 1, open 2 (mixed)
+  - ran: MACCA up to 1.71x  
+    CA `C5eGEXJZYvXEbKdyvPtasksjGNV4xvMowpKM92bVv47f`
+  - ran: UrAnus up to 2.97x  
+    CA `27u3diWofnXGUkddjLGhcy1nRssFKHW3RtNbpWzUpump`
 
 ## Daily review (2026-11-21, claude-opus-5-5)
 Nothing has a positive after-cost edge. All 98 settled coins average -15.7% net under the simple plan, and every setup and stage is negative: MIGRATED -13.6% (n=70), FINAL_STRETCH -20.0% (n=14), DIP -21.7% (n=14). The main reason is the 9.5% average round-trip cost on a $10 buy. With a +50%/-20% bracket and that cost, a coin nets about +40% when it runs and about -30% when it dumps, so the plan breaks even only if roughly 42% of coins run. The observed rate is 16.3% (95% CI about 9–24%), so the overall verdict is solid even at n=98. The per-setup splits are not: n=14 gives about ±19 points, and coins from the same day and meta move together. I can't answer whether the routine model's would-buys beat its passes because it made zero would-buys. It declined all 49 coins it reviewed, including all 5 of the day's 4.5–5.5x runners. Even so, declining was right on average, since that reviewed group nets -16.2% under the simple plan.
@@ -191,11 +189,11 @@ Meta: the tape is fresh pump.fun launches with holiday-pun names (RIZZMAS3, Chri
 ## Moving most in its scans, last 30 min (1h volume)
 - RIZZMAS: $658,054 1h vol, $72,723 mcap, +152% 1h  
   CA `6J3ApVu8dSLg1TJjBLWSTgmnvJXcH2YyF2iDC48Fpump`
-- time: $370,092 1h vol, $1,634 mcap, -99% 1h  
-  CA `Ak8pAMMeiqbu3tyE2MU33o8W2RfhLk1hXYsscnFkpump`
-- SANTAHAT: $162,822 1h vol, $2,523 mcap, -94% 1h  
-  CA `5fWLSMA5HoK9W4VoTMi4c3qjyu3N2LsKRSM8Ffpgpump`
-- PushCoin: $125,647 1h vol, $340,608 mcap, +867% 1h  
-  CA `3N6Mp8YQuVDfEtyuyJS72s4MRrgQuKY34gvYZD5Kpump`
-- GRAUDIA: $102,576 1h vol, $176,476 mcap, +152% 1h  
-  CA `B1oGtkaVAVZkdtWV7SXrHnFkcWC1Kd45sYpy6RYTpump`
+- MANDY: $398,466 1h vol, $1,361 mcap, -99% 1h  
+  CA `3JqV4LuKVqzCpWsDAsBnTLg2mKik22hLeyyPyfW3pump`
+- SHIT: $255,161 1h vol, $335,302 mcap, -48% 1h  
+  CA `Fn95NtGXWPaJXc4N5y9rVkUq1NwZbjBNJzPVvNRLpump`
+- SANTA: $71,138 1h vol, $24,272 mcap, +368% 1h  
+  CA `48tDqrzNnEg3No94vUXvpCG24CQCgAjFV9Vf3bZwpump`
+- MAYA: $65,484 1h vol, $186,129 mcap, -33% 1h  
+  CA `FJKt1LxbWBpTRt9BaDEB6Wr2qL5LZzjFF5sx8rXnpump`
