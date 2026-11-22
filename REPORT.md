@@ -1,13 +1,13 @@
 # Trencher live report
 
-Updated 2026-11-22T12:15:52Z (paper trading, never real money)
+Updated 2026-11-22T12:30:56Z (paper trading, never real money)
 
 - Equity: $74.23 (-25.8% vs $100 start)
 - Closed trades: 22, 3 wins
 - Fees paid: $14.78 (axiom $2.81, network $9.18, pool $2.66), plus $4.15 lost to slippage
 - New trades: WATCH-ONLY (scans and decides, buys nothing)
-- Brain: subscription, claude-haiku-5-5 for routine calls, claude-opus-5-5 for the daily review; 266 routine calls and 0 plan-limit hits in 48h
-- Watch log: 48 coins being followed, 2631 filed, 0 would-buys (6h follow, sampled every 2 min)
+- Brain: subscription, claude-haiku-5-5 for routine calls, claude-opus-5-5 for the daily review; 268 routine calls and 0 plan-limit hits in 48h
+- Watch log: 47 coins being followed, 2634 filed, 0 would-buys (6h follow, sampled every 2 min)
 
 ## Scorecard (after fees)
 - 22 closed, 3 won (14%), net $-25.79
@@ -73,9 +73,13 @@ Updated 2026-11-22T12:15:52Z (paper trading, never real money)
   CA `H4gHnZ3NCU7Z9XQwGX6YYJNyieGEW8pqwGRUcdSxpump`
 
 ## Last scan
-- 12:15Z: 2 coins, 1 with pairs, 0 passed the market filters, 0 researched
+- 12:29Z: 5 coins, 4 with pairs, 0 passed the market filters, 0 researched
 
 ## Coins it looked at, and why it passed
+- 12:17Z BLOB (DIP, $10,600,371 mcap, $39,244 5m vol): PASS at conviction 2, PASS — $10.6M cap, no printed higher low under a -31% hour, and the story only lives on its own website. Big cap, no room (V1, V6, V13).  
+  CA `8s11PkgQt4ZzdZ7oo84hK5t9HG1EvdgAjcg4W7Lpump`
+- 12:16Z ROCKET (MIGRATED, $713,835 mcap, $4,096 5m vol): PASS at conviction 4, PASS: no higher low, flow dying off a $206k day, and the coin is down 13% in five minutes. Movie-IP fan coin on a 2-day-old domain. (V1, V6)  
+  CA `6C9r2gzu8Pr54hTevHo3x5gSj9JqtpApj7obJnrtpump`
 - 12:03Z DIGS (MIGRATED, $280,671 mcap, $5,881 5m vol): REJECT, Bundles: 10 linked wallet cluster(s) hold 100.0% of supply (>20%) (V17)  
   CA `9QT8K685Hrae4k11dhGXirdtpfAaimExtyfwt8cPpump`
 - 11:55Z PushCoin (MIGRATED, $1,155,809 mcap, $4,783 5m vol): PASS at conviction 3, PASS. Flow at 0.72x pace on $4.8k of 5m, website says "Contract TBA", and the domain is 1.6 days old. Blocker: flow below pace. (V1, V6)  
@@ -92,14 +96,10 @@ Updated 2026-11-22T12:15:52Z (paper trading, never real money)
   CA `3N6Mp8YQuVDfEtyuyJS72s4MRrgQuKY34gvYZD5Kpump`
 - 11:06Z HIPPO (MIGRATED, $112,813 mcap, $28,886 5m vol): PASS, PASS — brain unavailable, not trading blind.  
   CA `95NAbTyZopHGJK9TuisJZUHKAZSqRoSB3JPfqAqHpump`
-- 11:03Z DESSA (MIGRATED, $2,739,685 mcap, $2,421 5m vol): PASS at conviction 2, PASS — big cap, no room. First resistance (the $3.61M peak) is only 1.32x away, under my 1.5x initials target, and 5m flow is $2.4k against a $10k bar. Thin AI-yap meme with no story on the radar. (V1, V6)  
-  CA `npz2FhoufQ7pKqhGpaipYWacrAkidyW2yDpVWSvpump`
-- 10:52Z FIREBALL (MIGRATED, $46,345 mcap, $2,632 5m vol): PASS at conviction 2, PASS: flow below pace (0.98x), no higher low, no catalyst, and a bottom buy in a 20-coin ticker field. Nothing to catch here. (V1, V6, V13)  
-  CA `5o7AFuoNWsy7gQS85ospXhWFJRnxDwTtwTR3JF2Jpump`
 
 ## What its skips did next (last 48h)
 A skip "ran" if the coin reached the first target (1.5x) from the skip price before a 20% drop, "dumped" if the drop came first. Sampled every 10 min, followed 6h.
-- flow below pace: blocked 30, ran 4, dumped 24, flat 0, open 2 (saving losses: keep it)
+- flow below pace: blocked 30, ran 4, dumped 25, flat 0, open 1 (saving losses: keep it)
   - ran: Trader up to 2.04x  
     CA `BYKQkHKMWHidNBLQXgt7NX4PLUtJZRYGLWQYkJzPGenX`
   - ran: Bust up to 1.55x  
@@ -128,13 +128,12 @@ A skip "ran" if the coin reached the first target (1.5x) from the skip price bef
     CA `CxGYpWoTun4J3xD4cNwXFRn2W3RzJozTxyU9nbJ4pump`
   - ran: MIHAOMAS up to 1.62x  
     CA `3XsFunPdji9U1EgJXokZysw8SB3t74un89b6KLEVpump`
-- falling knife (code): blocked 14, ran 2, dumped 11, flat 1, open 0 (saving losses: keep it)
+- falling knife (code): blocked 13, ran 2, dumped 10, flat 1, open 0 (saving losses: keep it)
   - ran: RIZZMAS3 up to 1.84x  
     CA `BQcV4Ryfu9bZK8egAF89AhkojdJqAaDt4xTFwUQ2pump`
   - ran: STREETS up to 1.73x  
     CA `82mseLFauphc2yutbaDGgViahquJ1jGVLpyof99xpump`
-- bundles over the line: blocked 7, ran 0, dumped 4, flat 2, open 1 (saving losses: keep it)
-- falling knife / no higher low: blocked 7, ran 2, dumped 2, flat 3, open 0 (mixed)
+- falling knife / no higher low: blocked 9, ran 2, dumped 2, flat 3, open 2 (mixed)
   - ran: UrAnus up to 2.97x  
     CA `27u3diWofnXGUkddjLGhcy1nRssFKHW3RtNbpWzUpump`
   - ran: STREETS up to 1.73x  
@@ -147,6 +146,7 @@ A skip "ran" if the coin reached the first target (1.5x) from the skip price bef
     CA `BCTwG3LDhNcthcK374aWQfAzLYGRXDu1apmrqw3Tpump`
   - ran: Mfer up to 1.55x  
     CA `9tX1UpBGeNqMb1VqqzVumwzW71ybsNZFyWKYiL8Ppump`
+- bundles over the line: blocked 6, ran 0, dumped 3, flat 2, open 1 (saving losses: keep it)
 
 ## Daily review (2026-11-21, claude-opus-5-5)
 Nothing has a positive after-cost edge. All 98 settled coins average -15.7% net under the simple plan, and every setup and stage is negative: MIGRATED -13.6% (n=70), FINAL_STRETCH -20.0% (n=14), DIP -21.7% (n=14). The main reason is the 9.5% average round-trip cost on a $10 buy. With a +50%/-20% bracket and that cost, a coin nets about +40% when it runs and about -30% when it dumps, so the plan breaks even only if roughly 42% of coins run. The observed rate is 16.3% (95% CI about 9–24%), so the overall verdict is solid even at n=98. The per-setup splits are not: n=14 gives about ±19 points, and coins from the same day and meta move together. I can't answer whether the routine model's would-buys beat its passes because it made zero would-buys. It declined all 49 coins it reviewed, including all 5 of the day's 4.5–5.5x runners. Even so, declining was right on average, since that reviewed group nets -16.2% under the simple plan.
@@ -184,16 +184,16 @@ Nothing has a positive after-cost edge. All 98 settled coins average -15.7% net 
 - [2026-11-02 20:25] I expected Slingoor, a clean MIGRATED leader with $25k of 5m flow at pace and a 0.77 buy share, to retest its $408k high from $304k. It never went green (0.98x peak) and hit the -20% stop in 2 minutes, a -$2.86 probe. My own thesis admitted there was no printed higher low after a peak only 6 minutes old, so this confirms the money-shape rule: buy share and flow are not structure (V1, V6). Next time a MIGRATED pullback with no higher low above the hourly low is a PASS with blocker "no higher low", not a probe. This is one loss, so it adds no new ban beyond the rule I already have.
 
 ## Meta right now
-Not quiet, but thin. The scan shows one live theme: fresh animal and creature names on pumpswap, led by HIPPO (95NAbTyZ...pump, $113k cap, $28.9k 5m, 61% buys, 1.1h old), with Stomping Homer (pumpfun, $5k cap, $977 5m, 68% buys, 0.6h old) as an early cartoon-character follower. Old animal and goat names are fading (GOAT -20% on $133 5m with zero buys, GATO at $2.3M cap on $475 5m, MooSom at -85% on $52 5m), and holiday names (SI, SANTA) are flips on about $150 of 5m volume. The web's Trump dinner, GTA 6 and Anthropic stories don't appear in scan flow, so I'm not trading them. Setup to research: HIPPO as a MIGRATED-style entry, since it clears the $10k 5m bar at a $30k+ cap, but it needs full holder, dev, bundle and X checks before anything else, and the second HIPPO CA on pumpfun ($2.8k cap, zero 5m volume) is a copy to avoid. If it clears, that's a conviction-5 probe with initials at 2x, a -30% stop and the -60% hard floor. Homer becomes a FINAL_STRETCH watch only if its 5m reaches about $10k. The web's figures for MooSom and PYGME (both "rising") and for Santa Inu don't match the scan, so I used scan numbers.
+Not quiet, but thin: only one mover clears the $10k 5-minute bar, BLOB ($10.6M cap, $39k 5m, 59% buys, down 31% in the hour). That makes it a DIP/MIGRATED research candidate, not a buy, and it needs full holder, dev and bundle checks first. The live themes are (1) animal and cartoon names (Rocket Raccoon, GTA6CAT, Goatcoin, Cartoon Money, Pygmecoin), (2) one-word joke launches under four hours old (testicles, wishbone, Gifter, GIF, greg, Kaba) trading on a few hundred to a few thousand dollars of 5m volume, and (3) fading holiday and news-name riders (Santa Inu, SI, and GTA6CAT at $2.4M on $529 5m, so the GTA 6 headline isn't carrying flow). Rising in the hour: testicles +68%, GOAT +71%, Gifter +122%, but all on tiny 5m volume, so they're noise until 5m reaches about $10k. HIPPO and Stomping Homer don't appear in this scan, and the web's GOAT, PYGME and Santa figures don't match scan_movers, so I used scan numbers only and HIPPO stays unconfirmed. Setups to research now: BLOB as a dip look (its $10.6M sits inside the V6 range; the test is whether 5m volume holds and buyers step back in), and wishbone only if 5m volume and buyer share improve, since its 34% buys on $5.5k 5m reads as seller-heavy. Hack, exploit or drain names: none in the movers.
 
 ## Moving most in its scans, last 30 min (1h volume)
-- HIPPO: $260,784 1h vol, $109,340 mcap, +174% 1h  
-  CA `95NAbTyZopHGJK9TuisJZUHKAZSqRoSB3JPfqAqHpump`
-- BLOB: $185,784 1h vol, $13,963,853 mcap, -8% 1h  
+- BLOB: $270,174 1h vol, $10,600,371 mcap, -31% 1h  
   CA `8s11PkgQt4ZzdZ7oo84hK5t9HG1EvdgAjcg4W7Lpump`
-- testicles: $97,550 1h vol, $40,189 mcap, +36% 1h  
+- testicles: $99,596 1h vol, $48,002 mcap, +68% 1h  
   CA `3pGmCpDCr2B6cZFhFJFtLrcMCadMvjV4dB9UGJyNpump`
-- PushCoin: $80,669 1h vol, $1,150,604 mcap, +4% 1h  
-  CA `3N6Mp8YQuVDfEtyuyJS72s4MRrgQuKY34gvYZD5Kpump`
+- wishbone: $49,129 1h vol, $2,356 mcap, -12% 1h  
+  CA `ANBAQMHE2SgmQaho4xoPoikooGYB6Tm8PubPL8xBpump`
 - DIGS: $47,626 1h vol, $280,671 mcap, -8% 1h  
   CA `9QT8K685Hrae4k11dhGXirdtpfAaimExtyfwt8cPpump`
+- GIFTER: $21,568 1h vol, $48,001 mcap, +67% 1h  
+  CA `3K6EUFoAE8zngTFMfPavqcMFhDqYTRemoaXYAjNPpump`
