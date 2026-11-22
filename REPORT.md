@@ -1,13 +1,13 @@
 # Trencher live report
 
-Updated 2026-11-22T07:43:24Z (paper trading, never real money)
+Updated 2026-11-22T07:58:28Z (paper trading, never real money)
 
 - Equity: $74.23 (-25.8% vs $100 start)
 - Closed trades: 22, 3 wins
 - Fees paid: $14.78 (axiom $2.81, network $9.18, pool $2.66), plus $4.15 lost to slippage
 - New trades: WATCH-ONLY (scans and decides, buys nothing)
-- Brain: subscription, claude-haiku-5-5 for routine calls, claude-opus-5-5 for the daily review; 270 routine calls and 0 plan-limit hits in 48h
-- Watch log: 71 coins being followed, 2575 filed, 0 would-buys (6h follow, sampled every 2 min)
+- Brain: subscription, claude-haiku-5-5 for routine calls, claude-opus-5-5 for the daily review; 268 routine calls and 0 plan-limit hits in 48h
+- Watch log: 66 coins being followed, 2580 filed, 0 would-buys (6h follow, sampled every 2 min)
 
 ## Scorecard (after fees)
 - 22 closed, 3 won (14%), net $-25.79
@@ -73,7 +73,7 @@ Updated 2026-11-22T07:43:24Z (paper trading, never real money)
   CA `H4gHnZ3NCU7Z9XQwGX6YYJNyieGEW8pqwGRUcdSxpump`
 
 ## Last scan
-- 07:42Z: 5 coins, 5 with pairs, 0 passed the market filters, 0 researched
+- 07:57Z: 2 coins, 1 with pairs, 0 passed the market filters, 0 researched
 
 ## Coins it looked at, and why it passed
 - 07:28Z CATEMAS (MIGRATED, $101,334 mcap, $2,474 5m vol): PASS at conviction 2, PASS. Cat-copy in a 17-copy field, not the leader, down 75.6% with lower lows and no higher low. Blocked by the dip band, the vamp split and a fading -mas meta (V1, V3, V6).  
@@ -106,7 +106,7 @@ A skip "ran" if the coin reached the first target (1.5x) from the skip price bef
     CA `EoV9JQYi57tqjyQbWLdXVarYpEu82FsP8SDnkbFmpump`
   - ran: Mandy up to 1.53x  
     CA `HmJRWZ8tFfuCY9A4MrSftnrvEFCApw1hyqHtb9Rzpump`
-- near the high / chasing: blocked 26, ran 4, dumped 19, flat 0, open 3 (saving losses: keep it)
+- near the high / chasing: blocked 25, ran 4, dumped 19, flat 0, open 2 (saving losses: keep it)
   - ran: STICK up to 2.08x  
     CA `532iaQrhFCD3QKFHsAtFAQ1mQZMjMdNrPXLeCS6cpump`
   - ran: Trader up to 2.04x  
@@ -189,13 +189,13 @@ Nothing has a positive after-cost edge. All 98 settled coins average -15.7% net 
 Meta from scan_movers: the holiday "-mas" family is fading hard (SANTA -74% on $2.2k 5m, Goonmas and Catemas under $300 on 5m, WhalesMas and MIHAOMAS thin). Cat and animal names have the only other real flow, but CORONA is the only one of them with meaningful buys ($5.9k 5m, 54% buys), and that is under the $10k bar. The strongest theme is fresh pump.fun launches with fast buying: ELVES (The Real Bagworkers), about 24 minutes old at a $21k cap, with $11.9k 5m, 56% buys and +986% in 1h, is the only mover that clears the bar while new. Snowball shows $11.3k 5m but 48% buys at $41k, so the web's 61% buys and $113k snowball-v2 figures don't match scan; it's a watch, not a chase. Setup to research: ELVES, with full holder, dev, bundle and X checks before any entry, initials at 2x, stop at -30%, and a PASS if 5m volume drops under $10k or buys fall below half. Retail is the web's favorite, but scan shows $620 5m and -80% in 1h, so it's a PASS. Research only; no entries.
 
 ## Moving most in its scans, last 30 min (1h volume)
-- snowball: $301,073 1h vol, $142,696 mcap, +45% 1h  
-  CA `3D7YQcnXi6RMjWxheiE8VLuGXJTtgQkmyugGYvzjpump`
-- SANTA: $136,221 1h vol, $5,204 mcap, -90% 1h  
-  CA `tZsjFu2CH1R23wEpbfXAYGc2KUaVrUbwofCNNNqpump`
-- MWG: $108,490 1h vol, $54,105 mcap, +18% 1h  
-  CA `26iFWxkdpcf8qNzbzuuvJw9NrKnFPmu7tzLc6NWkpump`
-- BLOB: $81,101 1h vol, $7,705,402 mcap, +25% 1h  
-  CA `8s11PkgQt4ZzdZ7oo84hK5t9HG1EvdgAjcg4W7Lpump`
-- CORONA: $57,563 1h vol, $49,972 mcap, -34% 1h  
+- Snowball: $59,072 1h vol, $20,697 mcap, +41% 1h  
+  CA `B7a7t2hRCfDWvWCXniiL2RXr1ViUNfQrQ4ATr79wpump`
+- ELVES: $39,572 1h vol, $3,829 mcap, -72% 1h  
+  CA `GRYVqbtwK1JuDpmXB5ogoEyQtFYgqxg7bKZc12bGpump`
+- CORONA: $31,363 1h vol, $55,255 mcap, +6% 1h  
   CA `6fVQAutGBLpyYJRiekVjSjvKidsmgZx14bKV5HSSpump`
+- MYRON: $30,059 1h vol, $2,214 mcap, -11% 1h  
+  CA `2RKzvyjnPC1WZ3qg1AdoE8KDgwnioRQ6dpJAVgy4pump`
+- SANTA: $26,225 1h vol, $6,579 mcap, -71% 1h  
+  CA `tZsjFu2CH1R23wEpbfXAYGc2KUaVrUbwofCNNNqpump`
