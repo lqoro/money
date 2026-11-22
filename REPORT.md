@@ -1,13 +1,13 @@
 # Trencher live report
 
-Updated 2026-11-22T02:40:35Z (paper trading, never real money)
+Updated 2026-11-22T02:55:47Z (paper trading, never real money)
 
 - Equity: $74.23 (-25.8% vs $100 start)
 - Closed trades: 22, 3 wins
 - Fees paid: $14.78 (axiom $2.81, network $9.18, pool $2.66), plus $4.15 lost to slippage
 - New trades: WATCH-ONLY (scans and decides, buys nothing)
-- Brain: subscription, claude-haiku-5-5 for routine calls, claude-opus-5-5 for the daily review; 280 routine calls and 0 plan-limit hits in 48h
-- Watch log: 85 coins being followed, 2504 filed, 0 would-buys (6h follow, sampled every 2 min)
+- Brain: subscription, claude-haiku-5-5 for routine calls, claude-opus-5-5 for the daily review; 277 routine calls and 0 plan-limit hits in 48h
+- Watch log: 87 coins being followed, 2504 filed, 0 would-buys (6h follow, sampled every 2 min)
 
 ## Scorecard (after fees)
 - 22 closed, 3 won (14%), net $-25.79
@@ -73,9 +73,13 @@ Updated 2026-11-22T02:40:35Z (paper trading, never real money)
   CA `H4gHnZ3NCU7Z9XQwGX6YYJNyieGEW8pqwGRUcdSxpump`
 
 ## Last scan
-- 02:40Z: 1 coins, 1 with pairs, 0 passed the market filters, 0 researched
+- 02:55Z: 10 coins, 10 with pairs, 0 passed the market filters, 0 researched
 
 ## Coins it looked at, and why it passed
+- 02:48Z PushCoin (MIGRATED, $1,420,128 mcap, $30,016 5m vol): REJECT, Top 10 hold 25.7% ex-pool (>25%) (V13)  
+  CA `3N6Mp8YQuVDfEtyuyJS72s4MRrgQuKY34gvYZD5Kpump`
+- 02:48Z GRAUDIA (MIGRATED, $123,670 mcap, $4,640 5m vol): PASS at conviction 3, PASS: flow at 0.85x pace, no printed higher low, and the team's own site doesn't show this CA. Blocker: "flow below pace" (V1, V6).  
+  CA `B1oGtkaVAVZkdtWV7SXrHnFkcWC1Kd45sYpy6RYTpump`
 - 02:27Z SHIT (MIGRATED, $335,302 mcap, $7,670 5m vol): PASS, PASS — brain unavailable, not trading blind.  
   CA `Fn95NtGXWPaJXc4N5y9rVkUq1NwZbjBNJzPVvNRLpump`
 - 02:26Z 1 (MIGRATED, $231,034 mcap, $2,589 5m vol): PASS, PASS — brain unavailable, not trading blind.  
@@ -92,26 +96,20 @@ Updated 2026-11-22T02:40:35Z (paper trading, never real money)
   CA `FJKt1LxbWBpTRt9BaDEB6Wr2qL5LZzjFF5sx8rXnpump`
 - 02:03Z PushCoin (MIGRATED, $340,608 mcap, $49,354 5m vol): REJECT, Top 10 hold 51.1% ex-pool (>25%) (V13)  
   CA `3N6Mp8YQuVDfEtyuyJS72s4MRrgQuKY34gvYZD5Kpump`
-- 02:02Z GRAUDIA (MIGRATED, $176,476 mcap, $5,308 5m vol): PASS at conviction 2, PASS: chasing spike, flow under pace, no higher low, and no story behind it. A 2-hour-old fan-zine coin with a "CA TBA" site. (V1, V6, V13)  
-  CA `B1oGtkaVAVZkdtWV7SXrHnFkcWC1Kd45sYpy6RYTpump`
-- 01:51Z WHALLET (FINAL_STRETCH, $17,066 mcap, $7,683 5m vol): PASS at conviction 2, PASS: chasing spike on a pump.fun copy with no X and $7.7k 5m. Blockers: "chasing spike", "split crowd" (V1, V3, V6).  
-  CA `Ft2TL58CHP7hgF6SXXBHcTFxEB4Zg412TynELmASpump`
 
 ## What its skips did next (last 48h)
 A skip "ran" if the coin reached the first target (1.5x) from the skip price before a 20% drop, "dumped" if the drop came first. Sampled every 10 min, followed 6h.
-- top 10 over 25%: blocked 27, ran 2, dumped 24, flat 1, open 0 (saving losses: keep it)
+- top 10 over 25%: blocked 27, ran 1, dumped 24, flat 1, open 1 (saving losses: keep it)
   - ran: :) up to 1.65x  
     CA `Dtx414D8jurspmB1jqJWsYU66pemoXRjQeXx7TC1pump`
-  - ran: PushCoin up to 2.21x  
-    CA `3N6Mp8YQuVDfEtyuyJS72s4MRrgQuKY34gvYZD5Kpump`
-- flow below pace: blocked 26, ran 4, dumped 19, flat 0, open 3 (saving losses: keep it)
+- flow below pace: blocked 27, ran 4, dumped 20, flat 0, open 3 (saving losses: keep it)
   - ran: SWRDXSTFF up to 1.77x  
     CA `Csoj9XHJfBAxsKswqKKBENnGeoRDHtACfyYi7HmJpump`
   - ran: Trader up to 2.04x  
     CA `BYKQkHKMWHidNBLQXgt7NX4PLUtJZRYGLWQYkJzPGenX`
   - ran: Bust up to 1.55x  
     CA `EoV9JQYi57tqjyQbWLdXVarYpEu82FsP8SDnkbFmpump`
-- near the high / chasing: blocked 22, ran 5, dumped 17, flat 0, open 0 (saving losses: keep it)
+- near the high / chasing: blocked 21, ran 5, dumped 16, flat 0, open 0 (saving losses: keep it)
   - ran: BEAR up to 2.32x  
     CA `DCPm44cT9i39HjR13QHYgxkR7wEx9TDeniGuayB5pump`
   - ran: ZOL up to 1.55x  
@@ -187,13 +185,13 @@ Nothing has a positive after-cost edge. All 98 settled coins average -15.7% net 
 Meta: the tape is fresh pump.fun launches with holiday-pun names (RIZZMAS3, Christmas Inu, pumpmas puppets, Winter Arc 2, Santa Hat Cult, Toys For Tots) plus rizz/slang names, and it's spike-and-dump: the holiday coins that ran in their first hours are down 90%+ (time, Santa Hat Cult, Toys For Tots, Boobillions). Rising: RIZZMAS3 (56% buys, $34.6k 5m) and the cat/animal coin MANEKI (79% buys, +14% 1h), though MANEKI's 5m is only $3.9k. Fading: RIZZGIVING is up 157% in an hour but its 5m is just $2.7k, so the volume is leaving. Setup to research, no entry yet: RIZZMAS3 ($149k cap, pumpswap, 1.7h old) is the only mover that fits the MIGRATED screen (cap over $30k, 5m over $10k), but it's up 97% in an hour, so it only qualifies on a pullback where buyers hold, with initials at 2x and a -30% stop once it does (V1). The crawler's figures for RIZZMAS3 and Toys For Tots don't match scan_movers (Toys For Tots is $2.5k, not $22k), so I'm using scan_movers and ignoring the crawler's numbers; the Trump dinner and Anthropic headlines aren't on the movers list, so the news isn't the trade. Holder, dev and bundle checks still have to run on RIZZMAS3 before any size.
 
 ## Moving most in its scans, last 30 min (1h volume)
-- RIZZMAS: $658,054 1h vol, $72,723 mcap, +152% 1h  
-  CA `6J3ApVu8dSLg1TJjBLWSTgmnvJXcH2YyF2iDC48Fpump`
-- MANDY: $398,466 1h vol, $1,361 mcap, -99% 1h  
-  CA `3JqV4LuKVqzCpWsDAsBnTLg2mKik22hLeyyPyfW3pump`
+- PushCoin: $578,142 1h vol, $1,420,128 mcap, +3951% 1h  
+  CA `3N6Mp8YQuVDfEtyuyJS72s4MRrgQuKY34gvYZD5Kpump`
 - SHIT: $255,161 1h vol, $335,302 mcap, -48% 1h  
   CA `Fn95NtGXWPaJXc4N5y9rVkUq1NwZbjBNJzPVvNRLpump`
-- SANTA: $71,138 1h vol, $24,272 mcap, +368% 1h  
-  CA `48tDqrzNnEg3No94vUXvpCG24CQCgAjFV9Vf3bZwpump`
-- MAYA: $65,484 1h vol, $186,129 mcap, -33% 1h  
-  CA `FJKt1LxbWBpTRt9BaDEB6Wr2qL5LZzjFF5sx8rXnpump`
+- MANDY: $201,503 1h vol, $1,361 mcap, -100% 1h  
+  CA `3JqV4LuKVqzCpWsDAsBnTLg2mKik22hLeyyPyfW3pump`
+- GRAUDIA: $65,309 1h vol, $123,670 mcap, -2% 1h  
+  CA `B1oGtkaVAVZkdtWV7SXrHnFkcWC1Kd45sYpy6RYTpump`
+- PUMPMAS: $32,725 1h vol, $2,277 mcap, +14% 1h  
+  CA `GVXSVJVHqdRWZhD8U22TtWkrCgEkjTPMeBBgxd7Zpump`
