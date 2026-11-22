@@ -1,13 +1,13 @@
 # Trencher live report
 
-Updated 2026-11-22T06:12:28Z (paper trading, never real money)
+Updated 2026-11-22T06:27:35Z (paper trading, never real money)
 
 - Equity: $74.23 (-25.8% vs $100 start)
 - Closed trades: 22, 3 wins
 - Fees paid: $14.78 (axiom $2.81, network $9.18, pool $2.66), plus $4.15 lost to slippage
 - New trades: WATCH-ONLY (scans and decides, buys nothing)
 - Brain: subscription, claude-haiku-5-5 for routine calls, claude-opus-5-5 for the daily review; 271 routine calls and 0 plan-limit hits in 48h
-- Watch log: 79 coins being followed, 2552 filed, 0 would-buys (6h follow, sampled every 2 min)
+- Watch log: 78 coins being followed, 2556 filed, 0 would-buys (6h follow, sampled every 2 min)
 
 ## Scorecard (after fees)
 - 22 closed, 3 won (14%), net $-25.79
@@ -73,9 +73,15 @@ Updated 2026-11-22T06:12:28Z (paper trading, never real money)
   CA `H4gHnZ3NCU7Z9XQwGX6YYJNyieGEW8pqwGRUcdSxpump`
 
 ## Last scan
-- 06:11Z: 6 coins, 6 with pairs, 0 passed the market filters, 0 researched
+- 06:26Z: 3 coins, 3 with pairs, 0 passed the market filters, 0 researched
 
 ## Coins it looked at, and why it passed
+- 06:26Z greg (DIP, $292,891 mcap, $2,189 5m vol): PASS at conviction 2, PASS: greg is a 19-to-25 copy same-ticker field, 5m flow is $2.2k, and the price is sitting on its hourly low with no higher low printed. Blocker: no catalyst, story not on the radar (V1, V13).  
+  CA `4Ye6Y6Vaic8cyPdfW2f9PcLhXkysBtSmV84G8X7spump`
+- 06:25Z ZOLANON (MIGRATED, $33,337 mcap, $7,613 5m vol): REJECT, RugCheck danger: Large Amount of LP Unlocked 100.00%  
+  CA `7rs4CPunReThbtKoMTqNP1hKGyfLjWVz5ktrT5htpump`
+- 06:18Z SANTA (MIGRATED, $32,709 mcap, $10,193 5m vol): PASS at conviction 2, PASS. Day-one Santa clone, 12x hourly pace, sellers 286 to 161 on 5m, no higher low possible yet. Chasing a spike in a fading holiday family (V1, V6).  
+  CA `tZsjFu2CH1R23wEpbfXAYGc2KUaVrUbwofCNNNqpump`
 - 06:05Z DESSA (DIP, $1,462,105 mcap, $4,893 5m vol): PASS at conviction 2, PASS: DIP on a story that peaked a month ago, no fresh catalyst, and 5m flow under the $10k bar. Blocker: "dead story" plus bottom-buy rule. (V1, V6, V13)  
   CA `npz2FhoufQ7pKqhGpaipYWacrAkidyW2yDpVWSvpump`
 - 06:04Z Retail (FINAL_STRETCH, $18,253 mcap, $13,293 5m vol): REJECT, RugCheck danger: Creator history of rugged tokens  
@@ -90,12 +96,6 @@ Updated 2026-11-22T06:12:28Z (paper trading, never real money)
   CA `3N6Mp8YQuVDfEtyuyJS72s4MRrgQuKY34gvYZD5Kpump`
 - 05:40Z HOGE (DIP, $850,329 mcap, $7,740 5m vol): REJECT, Bundles: 9 linked wallet cluster(s) hold 27.6% of supply (>20%) (V17)  
   CA `FVzqGqRmr4UH1Fif6dewmwbJ1p4YUZCu8dcw4Efopump`
-- 05:40Z greg (DIP, $299,473 mcap, $2,722 5m vol): PASS at conviction 3, PASS — DIP with no catalyst, no printed higher low, and one bundle cluster at 10.7%. Greg is 1 of 25 copies. Blocker: "dead story." (V1, V6, V13)  
-  CA `4Ye6Y6Vaic8cyPdfW2f9PcLhXkysBtSmV84G8X7spump`
-- 05:28Z CATEMAS (DIP, $134,642 mcap, $5,689 5m vol): PASS at conviction 3, PASS — CATEMAS is one of 18 "catemas" copies, the theme is at 0.48x pace, and no catalyst. Bottom buy with no story behind it. Farm-shaped chart. (V1, V3, V6)  
-  CA `kPqBsUZuogprbq15ZpACwDzbUHSAxTxbhRrxmrDpump`
-- 05:21Z Snowball (MIGRATED, $109,697 mcap, $18,680 5m vol): REJECT, Top 10 hold 26.0% ex-pool (>25%) (V13)  
-  CA `B7a7t2hRCfDWvWCXniiL2RXr1ViUNfQrQ4ATr79wpump`
 
 ## What its skips did next (last 48h)
 A skip "ran" if the coin reached the first target (1.5x) from the skip price before a 20% drop, "dumped" if the drop came first. Sampled every 10 min, followed 6h.
@@ -106,10 +106,10 @@ A skip "ran" if the coin reached the first target (1.5x) from the skip price bef
     CA `BYKQkHKMWHidNBLQXgt7NX4PLUtJZRYGLWQYkJzPGenX`
   - ran: Bust up to 1.55x  
     CA `EoV9JQYi57tqjyQbWLdXVarYpEu82FsP8SDnkbFmpump`
-- top 10 over 25%: blocked 26, ran 1, dumped 23, flat 1, open 1 (saving losses: keep it)
+- top 10 over 25%: blocked 25, ran 1, dumped 22, flat 1, open 1 (saving losses: keep it)
   - ran: :) up to 1.65x  
     CA `Dtx414D8jurspmB1jqJWsYU66pemoXRjQeXx7TC1pump`
-- near the high / chasing: blocked 21, ran 4, dumped 17, flat 0, open 0 (saving losses: keep it)
+- near the high / chasing: blocked 22, ran 4, dumped 17, flat 0, open 1 (saving losses: keep it)
   - ran: ZOL up to 1.55x  
     CA `UQLWvkwiSsnViuVBy7oArMtzb5RAZyrdJ79amQFrzoL`
   - ran: STICK up to 2.08x  
@@ -121,7 +121,7 @@ A skip "ran" if the coin reached the first target (1.5x) from the skip price bef
     CA `DKUM8qywmi8X9RYK2wUgnTw8QKjh1nYDThZR1GXPpump`
   - ran: SANTAHAT up to 3x  
     CA `5fWLSMA5HoK9W4VoTMi4c3qjyu3N2LsKRSM8Ffpgpump`
-- RugCheck danger: blocked 17, ran 2, dumped 15, flat 0, open 0 (saving losses: keep it)
+- RugCheck danger: blocked 18, ran 2, dumped 15, flat 0, open 1 (saving losses: keep it)
   - ran: TOP up to 1.67x  
     CA `hT9xKkj6dPMz97zcxEEE5T5fFdm6x31P6FodwT8pump`
   - ran: CAP up to 2.6x  
@@ -131,14 +131,14 @@ A skip "ran" if the coin reached the first target (1.5x) from the skip price bef
     CA `BQcV4Ryfu9bZK8egAF89AhkojdJqAaDt4xTFwUQ2pump`
   - ran: STREETS up to 1.73x  
     CA `82mseLFauphc2yutbaDGgViahquJ1jGVLpyof99xpump`
-- thin 5m volume: blocked 9, ran 1, dumped 6, flat 1, open 1 (saving losses: keep it)
-  - ran: chud up to 1.55x  
-    CA `EV7J2QaPXPytSkM1LD9GPRkgAbmSEr9R3kYiXBzbpump`
 - dev share over 1%: blocked 8, ran 2, dumped 4, flat 2, open 0 (saving losses: keep it)
   - ran: SANTINU up to 1.56x  
     CA `BCTwG3LDhNcthcK374aWQfAzLYGRXDu1apmrqw3Tpump`
   - ran: Mfer up to 1.55x  
     CA `9tX1UpBGeNqMb1VqqzVumwzW71ybsNZFyWKYiL8Ppump`
+- thin 5m volume: blocked 8, ran 1, dumped 5, flat 1, open 1 (saving losses: keep it)
+  - ran: chud up to 1.55x  
+    CA `EV7J2QaPXPytSkM1LD9GPRkgAbmSEr9R3kYiXBzbpump`
 - bundles over the line: blocked 7, ran 0, dumped 4, flat 2, open 1 (saving losses: keep it)
 - falling knife / no higher low: blocked 7, ran 2, dumped 2, flat 2, open 1 (mixed)
   - ran: UrAnus up to 2.97x  
@@ -182,16 +182,16 @@ Nothing has a positive after-cost edge. All 98 settled coins average -15.7% net 
 - [2026-11-02 20:25] I expected Slingoor, a clean MIGRATED leader with $25k of 5m flow at pace and a 0.77 buy share, to retest its $408k high from $304k. It never went green (0.98x peak) and hit the -20% stop in 2 minutes, a -$2.86 probe. My own thesis admitted there was no printed higher low after a peak only 6 minutes old, so this confirms the money-shape rule: buy share and flow are not structure (V1, V6). Next time a MIGRATED pullback with no higher low above the hourly low is a PASS with blocker "no higher low", not a probe. This is one loss, so it adds no new ban beyond the rule I already have.
 
 ## Meta right now
-The meta on the scan_movers tape is the "-mas" holiday-pun family, and it's splitting. The first movers are dead (Santa -70%, apemas -49%, both with zero 5m volume), while the newest, TRUMPMAS ($5k cap, +38% in 1h) and CATEGIVING ($14k cap, +240% in 1h, 74% buys), are still small and under the $10k 5m bar (V1, V6). The Trump and GTA headlines aren't driving this tape: $TRUMP is fading, and GTA6CAT sits at $2.4M with zero 5m volume. The other theme is migrated spike-and-dumps: snowball ($75k cap, $66k 5m, +159% in 1h) is the only coin here with real volume, but 40% buys on 5m means sellers are winning right now, so it's a chase unless it pulls back and buyers return. Research only, no entry: snowball first, checking whether it's the original or a v2 vamp (V1), then holder, dev and bundle checks (V13). PushCoin is a pass at a $1.5M cap with $3.4k 5m, and the web's +3951% conflicts with scan's +1.12%, so I don't trust either number yet. Catemas from the web is the holiday coin with real volume, but it isn't on scan_movers, so it needs its own verification before I call it a setup.
+The meta is split, not dead. The holiday "-mas" pun family is fading: Santa is down 70%, apemas 49%, and CATEGIVING and Catemas are both down about 40% with under $1k on 5m. Snowball is the one name with real money: snowball-v2 is at a $113k cap with $47k 5m volume, 61% buys, and +544% in 1h. Cat and animal memes are a second thread (Merry Cat +220% with 61% buys at $7.8k, Corona +134% at $65k, Tiger Loaf -36%), and fresh pump.fun launches with fast buying are a third (Retail: 6 minutes old, $13.3k 5m, 58% buys, +526%). Trump and GTA headlines aren't moving this tape: $TRUMP is fading and GTA6CAT has zero 5m volume. Research only, no entries. Retail is the first look: it clears the $10k 5m bar but is too new to verify, so it needs full holder, dev, bundle and X checks. snowball-v2 needs a check on whether it's the original or a v2 vamp of the -70% Snowball, because a +544% chase with sellers close is a late-entry trap. Merry Cat is worth watching only if it holds $10k on 5m with buys. The web figures conflict with scan (snowball 40% buys and $66k 5m versus 61% and $47k; CATEGIVING +240% versus -43%), so I trust scan_movers and treat everything as unverified.
 
 ## Moving most in its scans, last 30 min (1h volume)
-- snowball: $370,752 1h vol, $112,733 mcap, +544% 1h  
-  CA `3D7YQcnXi6RMjWxheiE8VLuGXJTtgQkmyugGYvzjpump`
-- Snowball: $246,441 1h vol, $22,009 mcap, -74% 1h  
+- Snowball: $196,652 1h vol, $26,699 mcap, -71% 1h  
   CA `B7a7t2hRCfDWvWCXniiL2RXr1ViUNfQrQ4ATr79wpump`
-- SHIT: $185,093 1h vol, $41,681 mcap, -50% 1h  
+- SHIT: $157,870 1h vol, $29,723 mcap, -75% 1h  
   CA `Fn95NtGXWPaJXc4N5y9rVkUq1NwZbjBNJzPVvNRLpump`
 - CORONA: $150,810 1h vol, $64,875 mcap, +134% 1h  
   CA `6fVQAutGBLpyYJRiekVjSjvKidsmgZx14bKV5HSSpump`
-- PushCoin: $45,443 1h vol, $1,562,878 mcap, -3% 1h  
-  CA `3N6Mp8YQuVDfEtyuyJS72s4MRrgQuKY34gvYZD5Kpump`
+- Retail: $35,917 1h vol, $18,253 mcap, +526% 1h  
+  CA `A3skRGgr5oL8eWJUjZMuKNTwKiykssoGMVqBYpngpump`
+- CATEMAS: $32,076 1h vol, $155,535 mcap, +39% 1h  
+  CA `kPqBsUZuogprbq15ZpACwDzbUHSAxTxbhRrxmrDpump`
