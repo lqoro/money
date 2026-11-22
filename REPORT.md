@@ -1,13 +1,13 @@
 # Trencher live report
 
-Updated 2026-11-22T12:00:50Z (paper trading, never real money)
+Updated 2026-11-22T12:15:52Z (paper trading, never real money)
 
 - Equity: $74.23 (-25.8% vs $100 start)
 - Closed trades: 22, 3 wins
 - Fees paid: $14.78 (axiom $2.81, network $9.18, pool $2.66), plus $4.15 lost to slippage
 - New trades: WATCH-ONLY (scans and decides, buys nothing)
 - Brain: subscription, claude-haiku-5-5 for routine calls, claude-opus-5-5 for the daily review; 266 routine calls and 0 plan-limit hits in 48h
-- Watch log: 50 coins being followed, 2628 filed, 0 would-buys (6h follow, sampled every 2 min)
+- Watch log: 48 coins being followed, 2631 filed, 0 would-buys (6h follow, sampled every 2 min)
 
 ## Scorecard (after fees)
 - 22 closed, 3 won (14%), net $-25.79
@@ -73,9 +73,11 @@ Updated 2026-11-22T12:00:50Z (paper trading, never real money)
   CA `H4gHnZ3NCU7Z9XQwGX6YYJNyieGEW8pqwGRUcdSxpump`
 
 ## Last scan
-- 12:00Z: 2 coins, 1 with pairs, 0 passed the market filters, 0 researched
+- 12:15Z: 2 coins, 1 with pairs, 0 passed the market filters, 0 researched
 
 ## Coins it looked at, and why it passed
+- 12:03Z DIGS (MIGRATED, $280,671 mcap, $5,881 5m vol): REJECT, Bundles: 10 linked wallet cluster(s) hold 100.0% of supply (>20%) (V17)  
+  CA `9QT8K685Hrae4k11dhGXirdtpfAaimExtyfwt8cPpump`
 - 11:55Z PushCoin (MIGRATED, $1,155,809 mcap, $4,783 5m vol): PASS at conviction 3, PASS. Flow at 0.72x pace on $4.8k of 5m, website says "Contract TBA", and the domain is 1.6 days old. Blocker: flow below pace. (V1, V6)  
   CA `3N6Mp8YQuVDfEtyuyJS72s4MRrgQuKY34gvYZD5Kpump`
 - 11:51Z HIPPO (MIGRATED, $109,340 mcap, $16,819 5m vol): PASS at conviction 3, PASS — 5m flow at 0.77x the hourly pace, 8.6% off a high that came after a +185% hour, and 19 HIPPO copies splitting the crowd. Blocker: flow below pace. (V1, V6)  
@@ -94,12 +96,10 @@ Updated 2026-11-22T12:00:50Z (paper trading, never real money)
   CA `npz2FhoufQ7pKqhGpaipYWacrAkidyW2yDpVWSvpump`
 - 10:52Z FIREBALL (MIGRATED, $46,345 mcap, $2,632 5m vol): PASS at conviction 2, PASS: flow below pace (0.98x), no higher low, no catalyst, and a bottom buy in a 20-coin ticker field. Nothing to catch here. (V1, V6, V13)  
   CA `5o7AFuoNWsy7gQS85ospXhWFJRnxDwTtwTR3JF2Jpump`
-- 10:51Z GIFTER (DIP, $33,720 mcap, $3,103 5m vol): REJECT, Dip with fading attention is a falling knife, not a dip (5m at 0.28x the hour's pace, under 0.6x)  
-  CA `3K6EUFoAE8zngTFMfPavqcMFhDqYTRemoaXYAjNPpump`
 
 ## What its skips did next (last 48h)
 A skip "ran" if the coin reached the first target (1.5x) from the skip price before a 20% drop, "dumped" if the drop came first. Sampled every 10 min, followed 6h.
-- flow below pace: blocked 30, ran 4, dumped 23, flat 0, open 3 (saving losses: keep it)
+- flow below pace: blocked 30, ran 4, dumped 24, flat 0, open 2 (saving losses: keep it)
   - ran: Trader up to 2.04x  
     CA `BYKQkHKMWHidNBLQXgt7NX4PLUtJZRYGLWQYkJzPGenX`
   - ran: Bust up to 1.55x  
@@ -189,11 +189,11 @@ Not quiet, but thin. The scan shows one live theme: fresh animal and creature na
 ## Moving most in its scans, last 30 min (1h volume)
 - HIPPO: $260,784 1h vol, $109,340 mcap, +174% 1h  
   CA `95NAbTyZopHGJK9TuisJZUHKAZSqRoSB3JPfqAqHpump`
-- BLOB: $142,622 1h vol, $17,420,740 mcap, +15% 1h  
+- BLOB: $185,784 1h vol, $13,963,853 mcap, -8% 1h  
   CA `8s11PkgQt4ZzdZ7oo84hK5t9HG1EvdgAjcg4W7Lpump`
+- testicles: $97,550 1h vol, $40,189 mcap, +36% 1h  
+  CA `3pGmCpDCr2B6cZFhFJFtLrcMCadMvjV4dB9UGJyNpump`
 - PushCoin: $80,669 1h vol, $1,150,604 mcap, +4% 1h  
   CA `3N6Mp8YQuVDfEtyuyJS72s4MRrgQuKY34gvYZD5Kpump`
-- DESSA: $41,397 1h vol, $2,691,710 mcap, -2% 1h  
-  CA `npz2FhoufQ7pKqhGpaipYWacrAkidyW2yDpVWSvpump`
-- FIREBALL: $31,932 1h vol, $36,661 mcap, -32% 1h  
-  CA `5o7AFuoNWsy7gQS85ospXhWFJRnxDwTtwTR3JF2Jpump`
+- DIGS: $47,626 1h vol, $280,671 mcap, -8% 1h  
+  CA `9QT8K685Hrae4k11dhGXirdtpfAaimExtyfwt8cPpump`
