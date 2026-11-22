@@ -1,13 +1,13 @@
 # Trencher live report
 
-Updated 2026-11-22T12:30:56Z (paper trading, never real money)
+Updated 2026-11-22T12:46:03Z (paper trading, never real money)
 
 - Equity: $74.23 (-25.8% vs $100 start)
 - Closed trades: 22, 3 wins
 - Fees paid: $14.78 (axiom $2.81, network $9.18, pool $2.66), plus $4.15 lost to slippage
 - New trades: WATCH-ONLY (scans and decides, buys nothing)
-- Brain: subscription, claude-haiku-5-5 for routine calls, claude-opus-5-5 for the daily review; 268 routine calls and 0 plan-limit hits in 48h
-- Watch log: 47 coins being followed, 2634 filed, 0 would-buys (6h follow, sampled every 2 min)
+- Brain: subscription, claude-haiku-5-5 for routine calls, claude-opus-5-5 for the daily review; 265 routine calls and 0 plan-limit hits in 48h
+- Watch log: 48 coins being followed, 2636 filed, 0 would-buys (6h follow, sampled every 2 min)
 
 ## Scorecard (after fees)
 - 22 closed, 3 won (14%), net $-25.79
@@ -73,9 +73,15 @@ Updated 2026-11-22T12:30:56Z (paper trading, never real money)
   CA `H4gHnZ3NCU7Z9XQwGX6YYJNyieGEW8pqwGRUcdSxpump`
 
 ## Last scan
-- 12:29Z: 5 coins, 4 with pairs, 0 passed the market filters, 0 researched
+- 12:45Z: 4 coins, 3 with pairs, 0 passed the market filters, 0 researched
 
 ## Coins it looked at, and why it passed
+- 12:40Z PushCoin (DIP, $1,020,439 mcap, $5,347 5m vol): PASS at conviction 2, PASS — DIP with no catalyst. Pushcoin theme has zero mentions, the CA isn't on its own site, and 5m flow is $5.3k. Blocker: no catalyst / dead story (V1, V3, V13).  
+  CA `3N6Mp8YQuVDfEtyuyJS72s4MRrgQuKY34gvYZD5Kpump`
+- 12:36Z HIPPO (MIGRATED, $79,845 mcap, $6,190 5m vol): PASS at conviction 3, PASS: flow below pace, no catalyst, and the hippo theme is a 17-coin vamp field with 0.42x pace. Blocker: "flow below pace" (V1, V6, V3).  
+  CA `95NAbTyZopHGJK9TuisJZUHKAZSqRoSB3JPfqAqHpump`
+- 12:33Z DESSA (MIGRATED, $2,703,678 mcap, $3,071 5m vol): PASS at conviction 2, PASS — flow below pace, $3k on the 5m against a $10k bar, and it's 25% off its high with no rising story or catalyst. Bottom-buy rule blocks it. Clean holders don't make a fading meme a buy. (V1, V6)  
+  CA `npz2FhoufQ7pKqhGpaipYWacrAkidyW2yDpVWSvpump`
 - 12:17Z BLOB (DIP, $10,600,371 mcap, $39,244 5m vol): PASS at conviction 2, PASS — $10.6M cap, no printed higher low under a -31% hour, and the story only lives on its own website. Big cap, no room (V1, V6, V13).  
   CA `8s11PkgQt4ZzdZ7oo84hK5t9HG1EvdgAjcg4W7Lpump`
 - 12:16Z ROCKET (MIGRATED, $713,835 mcap, $4,096 5m vol): PASS at conviction 4, PASS: no higher low, flow dying off a $206k day, and the coin is down 13% in five minutes. Movie-IP fan coin on a 2-day-old domain. (V1, V6)  
@@ -90,30 +96,24 @@ Updated 2026-11-22T12:30:56Z (paper trading, never real money)
   CA `5o7AFuoNWsy7gQS85ospXhWFJRnxDwTtwTR3JF2Jpump`
 - 11:48Z DESSA (MIGRATED, $2,674,278 mcap, $2,342 5m vol): PASS at conviction 3, PASS: flow below pace, no printed higher low, bottom-buy narrative gate failed. Clean holders don't save a dead story. (V1, V6)  
   CA `npz2FhoufQ7pKqhGpaipYWacrAkidyW2yDpVWSvpump`
-- 11:18Z DIGS (MIGRATED, $314,087 mcap, $2,735 5m vol): REJECT, Bundles: 10 linked wallet cluster(s) hold 100.0% of supply (>20%) (V17)  
-  CA `9QT8K685Hrae4k11dhGXirdtpfAaimExtyfwt8cPpump`
-- 11:10Z PushCoin (DIP, $1,072,932 mcap, $2,884 5m vol): PASS at conviction 2, PASS: falling knife with flow at 0.67x pace, no printed higher low, and a website that says the CA is "TBA". Blocker: flow below pace. (V1, V6, V13)  
-  CA `3N6Mp8YQuVDfEtyuyJS72s4MRrgQuKY34gvYZD5Kpump`
-- 11:06Z HIPPO (MIGRATED, $112,813 mcap, $28,886 5m vol): PASS, PASS — brain unavailable, not trading blind.  
-  CA `95NAbTyZopHGJK9TuisJZUHKAZSqRoSB3JPfqAqHpump`
 
 ## What its skips did next (last 48h)
 A skip "ran" if the coin reached the first target (1.5x) from the skip price before a 20% drop, "dumped" if the drop came first. Sampled every 10 min, followed 6h.
-- flow below pace: blocked 30, ran 4, dumped 25, flat 0, open 1 (saving losses: keep it)
+- flow below pace: blocked 31, ran 4, dumped 24, flat 0, open 3 (saving losses: keep it)
   - ran: Trader up to 2.04x  
     CA `BYKQkHKMWHidNBLQXgt7NX4PLUtJZRYGLWQYkJzPGenX`
   - ran: Bust up to 1.55x  
     CA `EoV9JQYi57tqjyQbWLdXVarYpEu82FsP8SDnkbFmpump`
   - ran: Mandy up to 1.53x  
     CA `HmJRWZ8tFfuCY9A4MrSftnrvEFCApw1hyqHtb9Rzpump`
-- near the high / chasing: blocked 23, ran 4, dumped 18, flat 0, open 1 (saving losses: keep it)
+- near the high / chasing: blocked 22, ran 4, dumped 17, flat 0, open 1 (saving losses: keep it)
   - ran: STICK up to 2.08x  
     CA `532iaQrhFCD3QKFHsAtFAQ1mQZMjMdNrPXLeCS6cpump`
   - ran: Trader up to 2.04x  
     CA `BYKQkHKMWHidNBLQXgt7NX4PLUtJZRYGLWQYkJzPGenX`
   - ran: CUNTS up to 1.61x  
     CA `7CvW68FD9KjNYGByfykhaNps7VNPLN8dFwMRfmgQpump`
-- top 10 over 25%: blocked 22, ran 1, dumped 20, flat 0, open 1 (saving losses: keep it)
+- top 10 over 25%: blocked 21, ran 1, dumped 19, flat 0, open 1 (saving losses: keep it)
   - ran: :) up to 1.65x  
     CA `Dtx414D8jurspmB1jqJWsYU66pemoXRjQeXx7TC1pump`
 - too new / sniping: blocked 18, ran 2, dumped 15, flat 1, open 0 (saving losses: keep it)
@@ -138,7 +138,7 @@ A skip "ran" if the coin reached the first target (1.5x) from the skip price bef
     CA `27u3diWofnXGUkddjLGhcy1nRssFKHW3RtNbpWzUpump`
   - ran: STREETS up to 1.73x  
     CA `82mseLFauphc2yutbaDGgViahquJ1jGVLpyof99xpump`
-- thin 5m volume: blocked 7, ran 1, dumped 5, flat 0, open 1 (saving losses: keep it)
+- thin 5m volume: blocked 7, ran 1, dumped 4, flat 0, open 2 (saving losses: keep it)
   - ran: chud up to 1.55x  
     CA `EV7J2QaPXPytSkM1LD9GPRkgAbmSEr9R3kYiXBzbpump`
 - dev share over 1%: blocked 6, ran 2, dumped 2, flat 2, open 0 (mixed)
@@ -189,11 +189,11 @@ Not quiet, but thin: only one mover clears the $10k 5-minute bar, BLOB ($10.6M c
 ## Moving most in its scans, last 30 min (1h volume)
 - BLOB: $270,174 1h vol, $10,600,371 mcap, -31% 1h  
   CA `8s11PkgQt4ZzdZ7oo84hK5t9HG1EvdgAjcg4W7Lpump`
-- testicles: $99,596 1h vol, $48,002 mcap, +68% 1h  
+- HIPPO: $138,154 1h vol, $79,699 mcap, -20% 1h  
+  CA `95NAbTyZopHGJK9TuisJZUHKAZSqRoSB3JPfqAqHpump`
+- testicles: $101,877 1h vol, $51,641 mcap, +81% 1h  
   CA `3pGmCpDCr2B6cZFhFJFtLrcMCadMvjV4dB9UGJyNpump`
-- wishbone: $49,129 1h vol, $2,356 mcap, -12% 1h  
+- PushCoin: $72,784 1h vol, $1,036,010 mcap, -5% 1h  
+  CA `3N6Mp8YQuVDfEtyuyJS72s4MRrgQuKY34gvYZD5Kpump`
+- wishbone: $49,236 1h vol, $2,140 mcap, -20% 1h  
   CA `ANBAQMHE2SgmQaho4xoPoikooGYB6Tm8PubPL8xBpump`
-- DIGS: $47,626 1h vol, $280,671 mcap, -8% 1h  
-  CA `9QT8K685Hrae4k11dhGXirdtpfAaimExtyfwt8cPpump`
-- GIFTER: $21,568 1h vol, $48,001 mcap, +67% 1h  
-  CA `3K6EUFoAE8zngTFMfPavqcMFhDqYTRemoaXYAjNPpump`
