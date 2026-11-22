@@ -1,13 +1,13 @@
 # Trencher live report
 
-Updated 2026-11-22T06:42:43Z (paper trading, never real money)
+Updated 2026-11-22T06:57:52Z (paper trading, never real money)
 
 - Equity: $74.23 (-25.8% vs $100 start)
 - Closed trades: 22, 3 wins
 - Fees paid: $14.78 (axiom $2.81, network $9.18, pool $2.66), plus $4.15 lost to slippage
 - New trades: WATCH-ONLY (scans and decides, buys nothing)
-- Brain: subscription, claude-haiku-5-5 for routine calls, claude-opus-5-5 for the daily review; 268 routine calls and 0 plan-limit hits in 48h
-- Watch log: 77 coins being followed, 2559 filed, 0 would-buys (6h follow, sampled every 2 min)
+- Brain: subscription, claude-haiku-5-5 for routine calls, claude-opus-5-5 for the daily review; 265 routine calls and 0 plan-limit hits in 48h
+- Watch log: 75 coins being followed, 2562 filed, 0 would-buys (6h follow, sampled every 2 min)
 
 ## Scorecard (after fees)
 - 22 closed, 3 won (14%), net $-25.79
@@ -73,9 +73,11 @@ Updated 2026-11-22T06:42:43Z (paper trading, never real money)
   CA `H4gHnZ3NCU7Z9XQwGX6YYJNyieGEW8pqwGRUcdSxpump`
 
 ## Last scan
-- 06:41Z: 3 coins, 3 with pairs, 0 passed the market filters, 0 researched
+- 06:57Z: 6 coins, 6 with pairs, 0 passed the market filters, 0 researched
 
 ## Coins it looked at, and why it passed
+- 06:49Z CORONA (DIP, $58,815 mcap, $5,871 5m vol): REJECT, Dip with fading attention is a falling knife, not a dip (5m at 0.48x the hour's pace, under 0.6x)  
+  CA `6fVQAutGBLpyYJRiekVjSjvKidsmgZx14bKV5HSSpump`
 - 06:37Z snowball (DIP, $83,998 mcap, $14,047 5m vol): PASS at conviction 2, PASS — DIP flow at 0.63x pace, under the 0.7x gate, with no catalyst, no printed higher low, and a treasury page that says no coin routes fees to it yet. Blocker: "flow below pace" and "no catalyst" (V1, V6, V13).  
   CA `3D7YQcnXi6RMjWxheiE8VLuGXJTtgQkmyugGYvzjpump`
 - 06:36Z PushCoin (MIGRATED, $1,652,724 mcap, $2,693 5m vol): PASS at conviction 2, PASS — PushCoin is a $1.65M MIGRATED coin with $2.7k 5m volume at 0.89x its hourly pace and 0.51 buys, sitting 11.6% off a $1.87M high with no printed higher low. Blockers: "flow below pace", "target too close" (the high is only 1.13x away), and the site shows "CA TBA" on a 1-day-old domain. Farm-sh  
@@ -94,18 +96,16 @@ Updated 2026-11-22T06:42:43Z (paper trading, never real money)
   CA `6fVQAutGBLpyYJRiekVjSjvKidsmgZx14bKV5HSSpump`
 - 05:56Z SBS (MIGRATED, $131,124 mcap, $2,528 5m vol): PASS at conviction 3, PASS: 5m flow is $2.5k, under the $10k bar, and the chart data is broken. One of 25 same-ticker copies with no narrative behind it. Blocker: flow below pace / no higher low. (V1, V6, V13)  
   CA `4mE8dPH1RTqQBT5EPim5Ubt2v2wXZ9zgEDDWmL1o1EYu`
-- 05:51Z snowball (MIGRATED, $112,733 mcap, $47,112 5m vol): REJECT, Dev holds 2.1% (>1%) (V13, V17)  
-  CA `3D7YQcnXi6RMjWxheiE8VLuGXJTtgQkmyugGYvzjpump`
 
 ## What its skips did next (last 48h)
 A skip "ran" if the coin reached the first target (1.5x) from the skip price before a 20% drop, "dumped" if the drop came first. Sampled every 10 min, followed 6h.
-- flow below pace: blocked 28, ran 4, dumped 21, flat 0, open 3 (saving losses: keep it)
-  - ran: SWRDXSTFF up to 1.77x  
-    CA `Csoj9XHJfBAxsKswqKKBENnGeoRDHtACfyYi7HmJpump`
+- flow below pace: blocked 27, ran 3, dumped 21, flat 0, open 3 (saving losses: keep it)
   - ran: Trader up to 2.04x  
     CA `BYKQkHKMWHidNBLQXgt7NX4PLUtJZRYGLWQYkJzPGenX`
   - ran: Bust up to 1.55x  
     CA `EoV9JQYi57tqjyQbWLdXVarYpEu82FsP8SDnkbFmpump`
+  - ran: Mandy up to 1.53x  
+    CA `HmJRWZ8tFfuCY9A4MrSftnrvEFCApw1hyqHtb9Rzpump`
 - top 10 over 25%: blocked 25, ran 1, dumped 22, flat 1, open 1 (saving losses: keep it)
   - ran: :) up to 1.65x  
     CA `Dtx414D8jurspmB1jqJWsYU66pemoXRjQeXx7TC1pump`
@@ -126,7 +126,7 @@ A skip "ran" if the coin reached the first target (1.5x) from the skip price bef
     CA `hT9xKkj6dPMz97zcxEEE5T5fFdm6x31P6FodwT8pump`
   - ran: CAP up to 2.6x  
     CA `CxGYpWoTun4J3xD4cNwXFRn2W3RzJozTxyU9nbJ4pump`
-- falling knife (code): blocked 14, ran 3, dumped 10, flat 1, open 0 (saving losses: keep it)
+- falling knife (code): blocked 15, ran 3, dumped 10, flat 1, open 1 (saving losses: keep it)
   - ran: RIZZMAS3 up to 1.84x  
     CA `BQcV4Ryfu9bZK8egAF89AhkojdJqAaDt4xTFwUQ2pump`
   - ran: STREETS up to 1.73x  
@@ -138,17 +138,17 @@ A skip "ran" if the coin reached the first target (1.5x) from the skip price bef
     CA `EV7J2QaPXPytSkM1LD9GPRkgAbmSEr9R3kYiXBzbpump`
   - ran: DESSA up to 1.56x  
     CA `npz2FhoufQ7pKqhGpaipYWacrAkidyW2yDpVWSvpump`
-- dev share over 1%: blocked 7, ran 2, dumped 3, flat 2, open 0 (mixed)
-  - ran: SANTINU up to 1.56x  
-    CA `BCTwG3LDhNcthcK374aWQfAzLYGRXDu1apmrqw3Tpump`
-  - ran: Mfer up to 1.55x  
-    CA `9tX1UpBGeNqMb1VqqzVumwzW71ybsNZFyWKYiL8Ppump`
 - bundles over the line: blocked 7, ran 0, dumped 4, flat 2, open 1 (saving losses: keep it)
 - falling knife / no higher low: blocked 7, ran 2, dumped 2, flat 2, open 1 (mixed)
   - ran: UrAnus up to 2.97x  
     CA `27u3diWofnXGUkddjLGhcy1nRssFKHW3RtNbpWzUpump`
   - ran: STREETS up to 1.73x  
     CA `82mseLFauphc2yutbaDGgViahquJ1jGVLpyof99xpump`
+- dev share over 1%: blocked 6, ran 2, dumped 2, flat 2, open 0 (mixed)
+  - ran: SANTINU up to 1.56x  
+    CA `BCTwG3LDhNcthcK374aWQfAzLYGRXDu1apmrqw3Tpump`
+  - ran: Mfer up to 1.55x  
+    CA `9tX1UpBGeNqMb1VqqzVumwzW71ybsNZFyWKYiL8Ppump`
 
 ## Daily review (2026-11-21, claude-opus-5-5)
 Nothing has a positive after-cost edge. All 98 settled coins average -15.7% net under the simple plan, and every setup and stage is negative: MIGRATED -13.6% (n=70), FINAL_STRETCH -20.0% (n=14), DIP -21.7% (n=14). The main reason is the 9.5% average round-trip cost on a $10 buy. With a +50%/-20% bracket and that cost, a coin nets about +40% when it runs and about -30% when it dumps, so the plan breaks even only if roughly 42% of coins run. The observed rate is 16.3% (95% CI about 9–24%), so the overall verdict is solid even at n=98. The per-setup splits are not: n=14 gives about ±19 points, and coins from the same day and meta move together. I can't answer whether the routine model's would-buys beat its passes because it made zero would-buys. It declined all 49 coins it reviewed, including all 5 of the day's 4.5–5.5x runners. Even so, declining was right on average, since that reviewed group nets -16.2% under the simple plan.
@@ -191,11 +191,11 @@ The meta is split, not dead. The holiday "-mas" pun family is fading: Santa is d
 ## Moving most in its scans, last 30 min (1h volume)
 - snowball: $255,700 1h vol, $85,030 mcap, -14% 1h  
   CA `3D7YQcnXi6RMjWxheiE8VLuGXJTtgQkmyugGYvzjpump`
-- SHIT: $152,339 1h vol, $30,672 mcap, -2% 1h  
+- CORONA: $145,456 1h vol, $58,815 mcap, +31% 1h  
+  CA `6fVQAutGBLpyYJRiekVjSjvKidsmgZx14bKV5HSSpump`
+- SHIT: $112,270 1h vol, $7,003 mcap, -81% 1h  
   CA `Fn95NtGXWPaJXc4N5y9rVkUq1NwZbjBNJzPVvNRLpump`
-- Snowball: $92,741 1h vol, $17,598 mcap, -73% 1h  
-  CA `B7a7t2hRCfDWvWCXniiL2RXr1ViUNfQrQ4ATr79wpump`
-- PushCoin: $36,014 1h vol, $1,642,866 mcap, +10% 1h  
-  CA `3N6Mp8YQuVDfEtyuyJS72s4MRrgQuKY34gvYZD5Kpump`
-- CATEMAS: $28,111 1h vol, $160,584 mcap, +30% 1h  
-  CA `kPqBsUZuogprbq15ZpACwDzbUHSAxTxbhRrxmrDpump`
+- Retail: $66,466 1h vol, $9,517 mcap, +226% 1h  
+  CA `A3skRGgr5oL8eWJUjZMuKNTwKiykssoGMVqBYpngpump`
+- MIHAOMAS: $51,578 1h vol, $71,031 mcap, +63% 1h  
+  CA `3XsFunPdji9U1EgJXokZysw8SB3t74un89b6KLEVpump`
