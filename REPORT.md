@@ -1,13 +1,13 @@
 # Trencher live report
 
-Updated 2026-11-22T09:29:13Z (paper trading, never real money)
+Updated 2026-11-22T09:44:58Z (paper trading, never real money)
 
 - Equity: $74.23 (-25.8% vs $100 start)
 - Closed trades: 22, 3 wins
 - Fees paid: $14.78 (axiom $2.81, network $9.18, pool $2.66), plus $4.15 lost to slippage
 - New trades: WATCH-ONLY (scans and decides, buys nothing)
-- Brain: subscription, claude-haiku-5-5 for routine calls, claude-opus-5-5 for the daily review; 268 routine calls and 0 plan-limit hits in 48h
-- Watch log: 61 coins being followed, 2600 filed, 0 would-buys (6h follow, sampled every 2 min)
+- Brain: subscription, claude-haiku-5-5 for routine calls, claude-opus-5-5 for the daily review; 266 routine calls and 0 plan-limit hits in 48h
+- Watch log: 60 coins being followed, 2603 filed, 0 would-buys (6h follow, sampled every 2 min)
 
 ## Scorecard (after fees)
 - 22 closed, 3 won (14%), net $-25.79
@@ -73,9 +73,13 @@ Updated 2026-11-22T09:29:13Z (paper trading, never real money)
   CA `H4gHnZ3NCU7Z9XQwGX6YYJNyieGEW8pqwGRUcdSxpump`
 
 ## Last scan
-- 09:28Z: 2 coins, 1 with pairs, 0 passed the market filters, 0 researched
+- 09:44Z: 19 coins, 18 with pairs, 1 passed the market filters, 1 researched
 
 ## Coins it looked at, and why it passed
+- 09:44Z GIFTER (MIGRATED, $31,333 mcap, $7,265 5m vol): PASS at conviction 3, PASS — theme is 17 copies at 0.17x hourly pace, the site doesn't show this CA, and there's no printed higher low. Blocker: "dead story" plus the bottom-buy gate. A fresh gift-the-coin platform with no catalyst is a farm wearing a narrative (V1, V6, V13).  
+  CA `3K6EUFoAE8zngTFMfPavqcMFhDqYTRemoaXYAjNPpump`
+- 09:43Z PushCoin (MIGRATED, $1,157,382 mcap, $2,646 5m vol): PASS, PASS — brain unavailable, not trading blind.  
+  CA `3N6Mp8YQuVDfEtyuyJS72s4MRrgQuKY34gvYZD5Kpump`
 - 09:24Z MooSom (MIGRATED, $61,958 mcap, $48,731 5m vol): PASS at conviction 4, PASS: Moo Som is 19 minutes old, printing a 3x volume spike, with no higher low and 22 same-name copies on the board. Too new and chasing (V1, V6).  
   CA `BKSP127UTT12VbipELqWMpLRw744Q36oyhirxC9Wpump`
 - 09:15Z BLOB (no setup, $11,043,933 mcap, $30,114 5m vol): REJECT, No setup fits: not Final Stretch, not a migrated runner, not a healthy dip  
@@ -92,31 +96,27 @@ Updated 2026-11-22T09:29:13Z (paper trading, never real money)
   CA `3D7YQcnXi6RMjWxheiE8VLuGXJTtgQkmyugGYvzjpump`
 - 08:53Z PushCoin (MIGRATED, $1,717,449 mcap, $4,566 5m vol): PASS, PASS — brain unavailable, not trading blind.  
   CA `3N6Mp8YQuVDfEtyuyJS72s4MRrgQuKY34gvYZD5Kpump`
-- 08:47Z GOAT (FINAL_STRETCH, $18,705 mcap, $27,357 5m vol): PASS at conviction 3, PASS: up 76% in 5 minutes, 14 copies of the same name, and no story on the radar. Chasing a spike on a curve at 65% bond (V1, V6).  
-  CA `GB86EHSNReg1vizgQVFCw66ZFLncnXeX5t6LWC5Jpump`
-- 08:37Z GIFTER (FINAL_STRETCH, $14,750 mcap, $12,082 5m vol): PASS at conviction 3, PASS. Chasing spike, no higher low, and the site is a day old and doesn't show this CA. Blocker: "chasing spike" (V1, V6).  
-  CA `3K6EUFoAE8zngTFMfPavqcMFhDqYTRemoaXYAjNPpump`
 
 ## What its skips did next (last 48h)
 A skip "ran" if the coin reached the first target (1.5x) from the skip price before a 20% drop, "dumped" if the drop came first. Sampled every 10 min, followed 6h.
-- flow below pace: blocked 29, ran 4, dumped 23, flat 0, open 2 (saving losses: keep it)
+- flow below pace: blocked 29, ran 5, dumped 22, flat 0, open 2 (saving losses: keep it)
   - ran: Trader up to 2.04x  
     CA `BYKQkHKMWHidNBLQXgt7NX4PLUtJZRYGLWQYkJzPGenX`
   - ran: Bust up to 1.55x  
     CA `EoV9JQYi57tqjyQbWLdXVarYpEu82FsP8SDnkbFmpump`
   - ran: Mandy up to 1.53x  
     CA `HmJRWZ8tFfuCY9A4MrSftnrvEFCApw1hyqHtb9Rzpump`
-- near the high / chasing: blocked 25, ran 5, dumped 19, flat 0, open 1 (saving losses: keep it)
+- top 10 over 25%: blocked 24, ran 1, dumped 21, flat 1, open 1 (saving losses: keep it)
+  - ran: :) up to 1.65x  
+    CA `Dtx414D8jurspmB1jqJWsYU66pemoXRjQeXx7TC1pump`
+- near the high / chasing: blocked 24, ran 4, dumped 19, flat 0, open 1 (saving losses: keep it)
   - ran: STICK up to 2.08x  
     CA `532iaQrhFCD3QKFHsAtFAQ1mQZMjMdNrPXLeCS6cpump`
   - ran: Trader up to 2.04x  
     CA `BYKQkHKMWHidNBLQXgt7NX4PLUtJZRYGLWQYkJzPGenX`
   - ran: CUNTS up to 1.61x  
     CA `7CvW68FD9KjNYGByfykhaNps7VNPLN8dFwMRfmgQpump`
-- top 10 over 25%: blocked 24, ran 1, dumped 21, flat 1, open 1 (saving losses: keep it)
-  - ran: :) up to 1.65x  
-    CA `Dtx414D8jurspmB1jqJWsYU66pemoXRjQeXx7TC1pump`
-- too new / sniping: blocked 20, ran 2, dumped 16, flat 1, open 1 (saving losses: keep it)
+- too new / sniping: blocked 20, ran 2, dumped 17, flat 1, open 0 (saving losses: keep it)
   - ran: TA up to 1.77x  
     CA `DKUM8qywmi8X9RYK2wUgnTw8QKjh1nYDThZR1GXPpump`
   - ran: SANTAHAT up to 3x  
@@ -126,7 +126,7 @@ A skip "ran" if the coin reached the first target (1.5x) from the skip price bef
     CA `hT9xKkj6dPMz97zcxEEE5T5fFdm6x31P6FodwT8pump`
   - ran: CAP up to 2.6x  
     CA `CxGYpWoTun4J3xD4cNwXFRn2W3RzJozTxyU9nbJ4pump`
-- falling knife (code): blocked 13, ran 2, dumped 10, flat 1, open 0 (saving losses: keep it)
+- falling knife (code): blocked 12, ran 2, dumped 9, flat 1, open 0 (saving losses: keep it)
   - ran: RIZZMAS3 up to 1.84x  
     CA `BQcV4Ryfu9bZK8egAF89AhkojdJqAaDt4xTFwUQ2pump`
   - ran: STREETS up to 1.73x  
@@ -189,9 +189,9 @@ The trenches are quiet. 14 of the 16 scan movers are under $10k on the 5-minute,
   CA `8s11PkgQt4ZzdZ7oo84hK5t9HG1EvdgAjcg4W7Lpump`
 - MooSom: $196,043 1h vol, $75,323 mcap, +137% 1h  
   CA `BKSP127UTT12VbipELqWMpLRw744Q36oyhirxC9Wpump`
-- eˣ: $106,275 1h vol, $3,388 mcap, -88% 1h  
-  CA `CbHNSZB6JzAxfWpamKvZReouucF2PTZGXitcfda6pump`
-- MooSom: $49,726 1h vol, $11,223 mcap, +439% 1h  
+- GOAT: $87,487 1h vol, $4,197 mcap, -79% 1h  
+  CA `GB86EHSNReg1vizgQVFCw66ZFLncnXeX5t6LWC5Jpump`
+- MooSom: $74,726 1h vol, $8,116 mcap, +290% 1h  
   CA `4mUw3gq2hFoU8JP5vJf62FxMcE5unsr9P4dRHNMHpump`
-- GIFTER: $43,578 1h vol, $13,932 mcap, -52% 1h  
-  CA `3K6EUFoAE8zngTFMfPavqcMFhDqYTRemoaXYAjNPpump`
+- PushCoin: $67,060 1h vol, $1,174,619 mcap, -30% 1h  
+  CA `3N6Mp8YQuVDfEtyuyJS72s4MRrgQuKY34gvYZD5Kpump`
