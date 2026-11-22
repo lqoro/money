@@ -1,13 +1,13 @@
 # Trencher live report
 
-Updated 2026-11-22T13:01:59Z (paper trading, never real money)
+Updated 2026-11-22T13:17:03Z (paper trading, never real money)
 
 - Equity: $74.23 (-25.8% vs $100 start)
 - Closed trades: 22, 3 wins
 - Fees paid: $14.78 (axiom $2.81, network $9.18, pool $2.66), plus $4.15 lost to slippage
 - New trades: WATCH-ONLY (scans and decides, buys nothing)
 - Brain: subscription, claude-haiku-5-5 for routine calls, claude-opus-5-5 for the daily review; 264 routine calls and 0 plan-limit hits in 48h
-- Watch log: 48 coins being followed, 2637 filed, 0 would-buys (6h follow, sampled every 2 min)
+- Watch log: 48 coins being followed, 2640 filed, 0 would-buys (6h follow, sampled every 2 min)
 
 ## Scorecard (after fees)
 - 22 closed, 3 won (14%), net $-25.79
@@ -73,9 +73,15 @@ Updated 2026-11-22T13:01:59Z (paper trading, never real money)
   CA `H4gHnZ3NCU7Z9XQwGX6YYJNyieGEW8pqwGRUcdSxpump`
 
 ## Last scan
-- 13:01Z: 9 coins, 8 with pairs, 0 passed the market filters, 0 researched
+- 13:16Z: 2 coins, 2 with pairs, 0 passed the market filters, 0 researched
 
 ## Coins it looked at, and why it passed
+- 13:14Z MOG (FINAL_STRETCH, $18,757 mcap, $7,794 5m vol): REJECT, Top 10 hold 28.3% ex-pool (>25%) (V13)  
+  CA `EW4V2HDk9YhQd5KthUXZQvNei1drdWoeNJML15X5pump`
+- 13:09Z MCAT (MIGRATED, $62,563 mcap, $39,920 5m vol): PASS at conviction 3, PASS: MCAT is 18 minutes old and up 99% in 5 minutes, sitting at its own high. That's chasing a spike, not buying a structure. Blocker "chasing spike" (V1, V6).  
+  CA `Awe61oS3Nk2DvJxCdDBquzfwf66r1QX8DJFJrfq4nEor`
+- 13:07Z testicles (MIGRATED, $84,079 mcap, $1,598 5m vol): REJECT, 5m volume $1,598 is dead (<$2,000) (V1)  
+  CA `3pGmCpDCr2B6cZFhFJFtLrcMCadMvjV4dB9UGJyNpump`
 - 12:49Z DIGS (DIP, $279,040 mcap, $3,157 5m vol): REJECT, Bundles: 10 linked wallet cluster(s) hold 100.0% of supply (>20%) (V17)  
   CA `9QT8K685Hrae4k11dhGXirdtpfAaimExtyfwt8cPpump`
 - 12:40Z PushCoin (DIP, $1,020,439 mcap, $5,347 5m vol): PASS at conviction 2, PASS — DIP with no catalyst. Pushcoin theme has zero mentions, the CA isn't on its own site, and 5m flow is $5.3k. Blocker: no catalyst / dead story (V1, V3, V13).  
@@ -90,33 +96,27 @@ Updated 2026-11-22T13:01:59Z (paper trading, never real money)
   CA `6C9r2gzu8Pr54hTevHo3x5gSj9JqtpApj7obJnrtpump`
 - 12:03Z DIGS (MIGRATED, $280,671 mcap, $5,881 5m vol): REJECT, Bundles: 10 linked wallet cluster(s) hold 100.0% of supply (>20%) (V17)  
   CA `9QT8K685Hrae4k11dhGXirdtpfAaimExtyfwt8cPpump`
-- 11:55Z PushCoin (MIGRATED, $1,155,809 mcap, $4,783 5m vol): PASS at conviction 3, PASS. Flow at 0.72x pace on $4.8k of 5m, website says "Contract TBA", and the domain is 1.6 days old. Blocker: flow below pace. (V1, V6)  
-  CA `3N6Mp8YQuVDfEtyuyJS72s4MRrgQuKY34gvYZD5Kpump`
-- 11:51Z HIPPO (MIGRATED, $109,340 mcap, $16,819 5m vol): PASS at conviction 3, PASS — 5m flow at 0.77x the hourly pace, 8.6% off a high that came after a +185% hour, and 19 HIPPO copies splitting the crowd. Blocker: flow below pace. (V1, V6)  
-  CA `95NAbTyZopHGJK9TuisJZUHKAZSqRoSB3JPfqAqHpump`
-- 11:48Z FIREBALL (MIGRATED, $36,661 mcap, $2,418 5m vol): PASS at conviction 2, PASS: FIREBALL is 47% off its high with 5m flow under pace, no printed higher low, a dead ticker field, and no catalyst. Blocker: "flow below pace" plus "dead story" (V1, V6, V13).  
-  CA `5o7AFuoNWsy7gQS85ospXhWFJRnxDwTtwTR3JF2Jpump`
 
 ## What its skips did next (last 48h)
 A skip "ran" if the coin reached the first target (1.5x) from the skip price before a 20% drop, "dumped" if the drop came first. Sampled every 10 min, followed 6h.
-- flow below pace: blocked 31, ran 4, dumped 24, flat 0, open 3 (saving losses: keep it)
+- flow below pace: blocked 31, ran 4, dumped 25, flat 0, open 2 (saving losses: keep it)
   - ran: Trader up to 2.04x  
     CA `BYKQkHKMWHidNBLQXgt7NX4PLUtJZRYGLWQYkJzPGenX`
   - ran: Bust up to 1.55x  
     CA `EoV9JQYi57tqjyQbWLdXVarYpEu82FsP8SDnkbFmpump`
   - ran: Mandy up to 1.53x  
     CA `HmJRWZ8tFfuCY9A4MrSftnrvEFCApw1hyqHtb9Rzpump`
-- near the high / chasing: blocked 22, ran 4, dumped 17, flat 0, open 1 (saving losses: keep it)
-  - ran: STICK up to 2.08x  
-    CA `532iaQrhFCD3QKFHsAtFAQ1mQZMjMdNrPXLeCS6cpump`
+- top 10 over 25%: blocked 22, ran 1, dumped 19, flat 0, open 2 (saving losses: keep it)
+  - ran: :) up to 1.65x  
+    CA `Dtx414D8jurspmB1jqJWsYU66pemoXRjQeXx7TC1pump`
+- near the high / chasing: blocked 21, ran 3, dumped 17, flat 0, open 1 (saving losses: keep it)
   - ran: Trader up to 2.04x  
     CA `BYKQkHKMWHidNBLQXgt7NX4PLUtJZRYGLWQYkJzPGenX`
   - ran: CUNTS up to 1.61x  
     CA `7CvW68FD9KjNYGByfykhaNps7VNPLN8dFwMRfmgQpump`
-- top 10 over 25%: blocked 21, ran 1, dumped 19, flat 0, open 1 (saving losses: keep it)
-  - ran: :) up to 1.65x  
-    CA `Dtx414D8jurspmB1jqJWsYU66pemoXRjQeXx7TC1pump`
-- too new / sniping: blocked 18, ran 2, dumped 15, flat 1, open 0 (saving losses: keep it)
+  - ran: SANTA up to 1.85x  
+    CA `tZsjFu2CH1R23wEpbfXAYGc2KUaVrUbwofCNNNqpump`
+- too new / sniping: blocked 19, ran 2, dumped 15, flat 1, open 1 (saving losses: keep it)
   - ran: TA up to 1.77x  
     CA `DKUM8qywmi8X9RYK2wUgnTw8QKjh1nYDThZR1GXPpump`
   - ran: SANTAHAT up to 3x  
@@ -138,7 +138,7 @@ A skip "ran" if the coin reached the first target (1.5x) from the skip price bef
     CA `27u3diWofnXGUkddjLGhcy1nRssFKHW3RtNbpWzUpump`
   - ran: STREETS up to 1.73x  
     CA `82mseLFauphc2yutbaDGgViahquJ1jGVLpyof99xpump`
-- thin 5m volume: blocked 7, ran 1, dumped 4, flat 0, open 2 (saving losses: keep it)
+- thin 5m volume: blocked 8, ran 1, dumped 4, flat 0, open 3 (saving losses: keep it)
   - ran: chud up to 1.55x  
     CA `EV7J2QaPXPytSkM1LD9GPRkgAbmSEr9R3kYiXBzbpump`
 - bundles over the line: blocked 6, ran 0, dumped 3, flat 2, open 1 (saving losses: keep it)
@@ -185,13 +185,13 @@ Nothing has a positive edge after costs. All 166 settled coins averaged -11.3% n
 Not quiet, but thin: only one mover clears the $10k 5-minute bar, BLOB ($10.6M cap, $39k 5m, 59% buys, down 31% in the hour). That makes it a DIP/MIGRATED research candidate, not a buy, and it needs full holder, dev and bundle checks first. The live themes are (1) animal and cartoon names (Rocket Raccoon, GTA6CAT, Goatcoin, Cartoon Money, Pygmecoin), (2) one-word joke launches under four hours old (testicles, wishbone, Gifter, GIF, greg, Kaba) trading on a few hundred to a few thousand dollars of 5m volume, and (3) fading holiday and news-name riders (Santa Inu, SI, and GTA6CAT at $2.4M on $529 5m, so the GTA 6 headline isn't carrying flow). Rising in the hour: testicles +68%, GOAT +71%, Gifter +122%, but all on tiny 5m volume, so they're noise until 5m reaches about $10k. HIPPO and Stomping Homer don't appear in this scan, and the web's GOAT, PYGME and Santa figures don't match scan_movers, so I used scan numbers only and HIPPO stays unconfirmed. Setups to research now: BLOB as a dip look (its $10.6M sits inside the V6 range; the test is whether 5m volume holds and buyers step back in), and wishbone only if 5m volume and buyer share improve, since its 34% buys on $5.5k 5m reads as seller-heavy. Hack, exploit or drain names: none in the movers.
 
 ## Moving most in its scans, last 30 min (1h volume)
-- HIPPO: $138,154 1h vol, $79,699 mcap, -20% 1h  
-  CA `95NAbTyZopHGJK9TuisJZUHKAZSqRoSB3JPfqAqHpump`
-- PushCoin: $72,784 1h vol, $1,036,010 mcap, -5% 1h  
-  CA `3N6Mp8YQuVDfEtyuyJS72s4MRrgQuKY34gvYZD5Kpump`
-- wishbone: $49,309 1h vol, $2,016 mcap, -24% 1h  
+- BLOB: $346,797 1h vol, $13,209,415 mcap, +17% 1h  
+  CA `8s11PkgQt4ZzdZ7oo84hK5t9HG1EvdgAjcg4W7Lpump`
+- MCAT: $244,540 1h vol, $61,156 mcap, +35% 1h  
+  CA `Awe61oS3Nk2DvJxCdDBquzfwf66r1QX8DJFJrfq4nEor`
+- wishbone: $49,312 1h vol, $2,007 mcap, -25% 1h  
   CA `ANBAQMHE2SgmQaho4xoPoikooGYB6Tm8PubPL8xBpump`
 - DIGS: $47,656 1h vol, $287,668 mcap, -8% 1h  
   CA `9QT8K685Hrae4k11dhGXirdtpfAaimExtyfwt8cPpump`
-- DESSA: $44,052 1h vol, $2,703,678 mcap, -1% 1h  
-  CA `npz2FhoufQ7pKqhGpaipYWacrAkidyW2yDpVWSvpump`
+- GIFTER: $22,924 1h vol, $43,187 mcap, +26% 1h  
+  CA `3K6EUFoAE8zngTFMfPavqcMFhDqYTRemoaXYAjNPpump`
