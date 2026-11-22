@@ -1,13 +1,13 @@
 # Trencher live report
 
-Updated 2026-11-22T08:13:33Z (paper trading, never real money)
+Updated 2026-11-22T08:28:43Z (paper trading, never real money)
 
 - Equity: $74.23 (-25.8% vs $100 start)
 - Closed trades: 22, 3 wins
 - Fees paid: $14.78 (axiom $2.81, network $9.18, pool $2.66), plus $4.15 lost to slippage
 - New trades: WATCH-ONLY (scans and decides, buys nothing)
-- Brain: subscription, claude-haiku-5-5 for routine calls, claude-opus-5-5 for the daily review; 269 routine calls and 0 plan-limit hits in 48h
-- Watch log: 68 coins being followed, 2582 filed, 0 would-buys (6h follow, sampled every 2 min)
+- Brain: subscription, claude-haiku-5-5 for routine calls, claude-opus-5-5 for the daily review; 267 routine calls and 0 plan-limit hits in 48h
+- Watch log: 61 coins being followed, 2589 filed, 0 would-buys (6h follow, sampled every 2 min)
 
 ## Scorecard (after fees)
 - 22 closed, 3 won (14%), net $-25.79
@@ -73,7 +73,7 @@ Updated 2026-11-22T08:13:33Z (paper trading, never real money)
   CA `H4gHnZ3NCU7Z9XQwGX6YYJNyieGEW8pqwGRUcdSxpump`
 
 ## Last scan
-- 08:13Z: 2 coins, 1 with pairs, 0 passed the market filters, 0 researched
+- 08:27Z: 5 coins, 4 with pairs, 0 passed the market filters, 0 researched
 
 ## Coins it looked at, and why it passed
 - 08:10Z BLOB (MIGRATED, $9,302,809 mcap, $17,022 5m vol): PASS, PASS — brain unavailable, not trading blind.  
@@ -133,15 +133,15 @@ A skip "ran" if the coin reached the first target (1.5x) from the skip price bef
     CA `BQcV4Ryfu9bZK8egAF89AhkojdJqAaDt4xTFwUQ2pump`
   - ran: STREETS up to 1.73x  
     CA `82mseLFauphc2yutbaDGgViahquJ1jGVLpyof99xpump`
-- falling knife / no higher low: blocked 8, ran 2, dumped 3, flat 2, open 1 (mixed)
-  - ran: UrAnus up to 2.97x  
-    CA `27u3diWofnXGUkddjLGhcy1nRssFKHW3RtNbpWzUpump`
-  - ran: STREETS up to 1.73x  
-    CA `82mseLFauphc2yutbaDGgViahquJ1jGVLpyof99xpump`
 - thin 5m volume: blocked 7, ran 1, dumped 5, flat 1, open 0 (saving losses: keep it)
   - ran: chud up to 1.55x  
     CA `EV7J2QaPXPytSkM1LD9GPRkgAbmSEr9R3kYiXBzbpump`
 - bundles over the line: blocked 7, ran 0, dumped 4, flat 2, open 1 (saving losses: keep it)
+- falling knife / no higher low: blocked 7, ran 2, dumped 2, flat 2, open 1 (mixed)
+  - ran: UrAnus up to 2.97x  
+    CA `27u3diWofnXGUkddjLGhcy1nRssFKHW3RtNbpWzUpump`
+  - ran: STREETS up to 1.73x  
+    CA `82mseLFauphc2yutbaDGgViahquJ1jGVLpyof99xpump`
 - dev share over 1%: blocked 6, ran 2, dumped 2, flat 2, open 0 (mixed)
   - ran: SANTINU up to 1.56x  
     CA `BCTwG3LDhNcthcK374aWQfAzLYGRXDu1apmrqw3Tpump`
@@ -184,16 +184,16 @@ Nothing has a positive after-cost edge. All 98 settled coins average -15.7% net 
 - [2026-11-02 20:25] I expected Slingoor, a clean MIGRATED leader with $25k of 5m flow at pace and a 0.77 buy share, to retest its $408k high from $304k. It never went green (0.98x peak) and hit the -20% stop in 2 minutes, a -$2.86 probe. My own thesis admitted there was no printed higher low after a peak only 6 minutes old, so this confirms the money-shape rule: buy share and flow are not structure (V1, V6). Next time a MIGRATED pullback with no higher low above the hourly low is a PASS with blocker "no higher low", not a probe. This is one loss, so it adds no new ban beyond the rule I already have.
 
 ## Meta right now
-Meta from scan_movers: the holiday "-mas" family is fading hard (SANTA -74% on $2.2k 5m, Goonmas and Catemas under $300 on 5m, WhalesMas and MIHAOMAS thin). Cat and animal names have the only other real flow, but CORONA is the only one of them with meaningful buys ($5.9k 5m, 54% buys), and that is under the $10k bar. The strongest theme is fresh pump.fun launches with fast buying: ELVES (The Real Bagworkers), about 24 minutes old at a $21k cap, with $11.9k 5m, 56% buys and +986% in 1h, is the only mover that clears the bar while new. Snowball shows $11.3k 5m but 48% buys at $41k, so the web's 61% buys and $113k snowball-v2 figures don't match scan; it's a watch, not a chase. Setup to research: ELVES, with full holder, dev, bundle and X checks before any entry, initials at 2x, stop at -30%, and a PASS if 5m volume drops under $10k or buys fall below half. Retail is the web's favorite, but scan shows $620 5m and -80% in 1h, so it's a PASS. Research only; no entries.
+The live meta on scan is fresh pump.fun launches with fast buyers: Santa Inu (18 min old, $4.3k 5m, 64% buys, +273% 1h) and GIFTER (6 min old, $10.7k 5m, 51% buys) are the only new coins with real flow, while the cat names are dying (Twerking Cat $666 5m, GTA6CAT $24 5m) with CORONA ($68k cap, $5.2k 5m, 73% buys) as the one holdout. Holiday names are mostly fading, but Goonmas, Catemas and SANTA don't appear on scan, so the web's -74% claim is unverified. The web's loud stories (Trump dinner, GTA 6 coin, Anthropic IPO) are not showing up as trench flow, so I'm not trading headlines. Best setup to research is snowball-v2 (MIGRATED-style, $272k cap, $25.6k 5m, 64% buys, +67% 1h, 3.6h old); the web's ELVES numbers (+986%, $11.9k 5m) don't match scan (zero 5m volume, -41% 1h) so ELVES is out, and the web's Snowball figures don't match scan either, so I'm going on scan. If I get in: check it against the twin "Snowball" ($17k, -31% 1h) via Similar Tokens, run full holder/dev/bundle/X checks, take initials at 2x, stop at -30%, and PASS if 5m volume drops under $10k or buys fall under half; Santa Inu and GIFTER are watches only, since I don't trade pairs this young.
 
 ## Moving most in its scans, last 30 min (1h volume)
 - snowball: $324,367 1h vol, $271,722 mcap, +67% 1h  
   CA `3D7YQcnXi6RMjWxheiE8VLuGXJTtgQkmyugGYvzjpump`
 - BLOB: $307,567 1h vol, $9,302,809 mcap, +34% 1h  
   CA `8s11PkgQt4ZzdZ7oo84hK5t9HG1EvdgAjcg4W7Lpump`
-- MWG: $274,564 1h vol, $11,324 mcap, -74% 1h  
+- MWG: $184,363 1h vol, $11,684 mcap, -70% 1h  
   CA `26iFWxkdpcf8qNzbzuuvJw9NrKnFPmu7tzLc6NWkpump`
-- FIREBALL: $79,815 1h vol, $18,296 mcap, -32% 1h  
+- FIREBALL: $88,006 1h vol, $15,026 mcap, -44% 1h  
   CA `5o7AFuoNWsy7gQS85ospXhWFJRnxDwTtwTR3JF2Jpump`
-- Snowball: $51,994 1h vol, $19,609 mcap, -40% 1h  
-  CA `B7a7t2hRCfDWvWCXniiL2RXr1ViUNfQrQ4ATr79wpump`
+- PushCoin: $51,386 1h vol, $1,636,026 mcap, -1% 1h  
+  CA `3N6Mp8YQuVDfEtyuyJS72s4MRrgQuKY34gvYZD5Kpump`
