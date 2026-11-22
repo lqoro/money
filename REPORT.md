@@ -1,13 +1,13 @@
 # Trencher live report
 
-Updated 2026-11-22T00:24:32Z (paper trading, never real money)
+Updated 2026-11-22T00:39:39Z (paper trading, never real money)
 
 - Equity: $74.23 (-25.8% vs $100 start)
 - Closed trades: 22, 3 wins
 - Fees paid: $14.78 (axiom $2.81, network $9.18, pool $2.66), plus $4.15 lost to slippage
 - New trades: WATCH-ONLY (scans and decides, buys nothing)
-- Brain: subscription, claude-haiku-5-5 for routine calls, claude-opus-5-5 for the daily review; 280 routine calls and 0 plan-limit hits in 48h
-- Watch log: 84 coins being followed, 2471 filed, 0 would-buys (6h follow, sampled every 2 min)
+- Brain: subscription, claude-haiku-5-5 for routine calls, claude-opus-5-5 for the daily review; 281 routine calls and 0 plan-limit hits in 48h
+- Watch log: 87 coins being followed, 2471 filed, 0 would-buys (6h follow, sampled every 2 min)
 
 ## Scorecard (after fees)
 - 22 closed, 3 won (14%), net $-25.79
@@ -73,9 +73,15 @@ Updated 2026-11-22T00:24:32Z (paper trading, never real money)
   CA `H4gHnZ3NCU7Z9XQwGX6YYJNyieGEW8pqwGRUcdSxpump`
 
 ## Last scan
-- 00:23Z: 2 coins, 1 with pairs, 0 passed the market filters, 0 researched
+- 00:39Z: 15 coins, 14 with pairs, 0 passed the market filters, 0 researched
 
 ## Coins it looked at, and why it passed
+- 00:35Z KAREN (DIP, $44,736 mcap, $5,507 5m vol): REJECT, Dip with fading attention is a falling knife, not a dip (5m at 0.31x the hour's pace, under 0.6x)  
+  CA `9kaQR3dorDz4vwim3iGaoRa9amoLcUHPp6wuLHpEpump`
+- 00:33Z STREETS (MIGRATED, $935,018 mcap, $468,268 5m vol): REJECT, Top 10 hold 25.4% ex-pool (>25%) (V13)  
+  CA `82mseLFauphc2yutbaDGgViahquJ1jGVLpyof99xpump`
+- 00:25Z BOOBILLIONS (MIGRATED, $99,748 mcap, $7,771 5m vol): PASS at conviction 3, PASS — flow below pace ($7.8k 5m, 0.94x hourly, under the $10k bar), under 1h old and still off a +190% spike, no catalyst on the radar. Blockers: "flow below pace", "too new", "no breakout". (V1, V6)  
+  CA `13qebRhFyiB32FH9b1YYTgh8RW4VvmNEbi79eG28pump`
 - 00:21Z STREETS (MIGRATED, $715,162 mcap, $584,733 5m vol): REJECT, Top 10 hold 29.8% ex-pool (>25%) (V13)  
   CA `GY23CdhszidJZpLyNQ9PB63HPXq8RXqhnLtUYUH7pump`
 - 00:16Z RIZZMAS3 (MIGRATED, $43,211 mcap, $31,671 5m vol): REJECT, RugCheck danger: Creator history of rugged tokens  
@@ -90,15 +96,12 @@ Updated 2026-11-22T00:24:32Z (paper trading, never real money)
   CA `8R7rompcCDEZKGjRRybZt1UrDrZTdmSXqFjDtvSCpump`
 - 00:01Z MANEKI (DIP, $36,638 mcap, $2,233 5m vol): REJECT, Dip with fading attention is a falling knife, not a dip (5m at 0.39x the hour's pace, under 0.6x)  
   CA `G74SSWk4qF4BeWfyR53fVZYqdNWo9wH7UR55jF4uuxds`
-- 23:59Z URANUS (MIGRATED, $60,772 mcap, $2,782 5m vol): PASS at conviction 3, PASS: no breakout, no higher low, and the theme is at 0.38x its hourly pace. Stop at 5% off the high and sit on the flow leader (V1, V6).  
-  CA `DUvFjnaE3r46WLbz9rz6MNk2bq9xPFPUfMd8bDgmpump`
-- 23:58Z CUNTS (FINAL_STRETCH, $23,358 mcap, $9,323 5m vol): PASS at conviction 3, PASS: chasing spike. CUNTS is up 78% on 5m, sitting at its high, with 5m volume under $10k and 25 copies in the field. Blocker: "chasing spike" (V1, V6).  
-  CA `7CvW68FD9KjNYGByfykhaNps7VNPLN8dFwMRfmgQpump`
-- 23:57Z Wow (FINAL_STRETCH, $19,980 mcap, $4,309 5m vol): PASS at conviction 3, PASS: blocker "no live narrative". Wow cat is a 8-copy cat/wow vamp field on a 10x spike that is already 20% off its high, with $4.3k 5m under the $10k bar and no radar story behind it. (V1, V6, V13)  
-  CA `4jPVfKpDNzZ9WrVrPoDBAGPsVcu8zbkN2WUw5GiCpump`
 
 ## What its skips did next (last 48h)
 A skip "ran" if the coin reached the first target (1.5x) from the skip price before a 20% drop, "dumped" if the drop came first. Sampled every 10 min, followed 6h.
+- top 10 over 25%: blocked 27, ran 1, dumped 24, flat 1, open 1 (saving losses: keep it)
+  - ran: :) up to 1.65x  
+    CA `Dtx414D8jurspmB1jqJWsYU66pemoXRjQeXx7TC1pump`
 - flow below pace: blocked 27, ran 5, dumped 18, flat 0, open 4 (saving losses: keep it)
   - ran: AI up to 1.51x  
     CA `8SacNb6sgiAcscRe4m915B6nL9XX55dk8FS7L532pump`
@@ -106,10 +109,7 @@ A skip "ran" if the coin reached the first target (1.5x) from the skip price bef
     CA `Csoj9XHJfBAxsKswqKKBENnGeoRDHtACfyYi7HmJpump`
   - ran: Trader up to 2.04x  
     CA `BYKQkHKMWHidNBLQXgt7NX4PLUtJZRYGLWQYkJzPGenX`
-- top 10 over 25%: blocked 26, ran 1, dumped 23, flat 1, open 1 (saving losses: keep it)
-  - ran: :) up to 1.65x  
-    CA `Dtx414D8jurspmB1jqJWsYU66pemoXRjQeXx7TC1pump`
-- too new / sniping: blocked 21, ran 3, dumped 17, flat 1, open 0 (saving losses: keep it)
+- too new / sniping: blocked 22, ran 3, dumped 18, flat 1, open 0 (saving losses: keep it)
   - ran: AudaCity up to 1.96x  
     CA `3rtTUCpe1BBgCTNWQ9jK3xkAz1E7SPqMt4uYHx1Bpump`
   - ran: TA up to 1.77x  
@@ -123,18 +123,19 @@ A skip "ran" if the coin reached the first target (1.5x) from the skip price bef
     CA `UQLWvkwiSsnViuVBy7oArMtzb5RAZyrdJ79amQFrzoL`
   - ran: STICK up to 2.08x  
     CA `532iaQrhFCD3QKFHsAtFAQ1mQZMjMdNrPXLeCS6cpump`
-- RugCheck danger: blocked 17, ran 2, dumped 13, flat 0, open 2 (saving losses: keep it)
+- RugCheck danger: blocked 17, ran 3, dumped 13, flat 0, open 1 (saving losses: keep it)
   - ran: TOP up to 1.67x  
     CA `hT9xKkj6dPMz97zcxEEE5T5fFdm6x31P6FodwT8pump`
   - ran: CAP up to 2.6x  
     CA `CxGYpWoTun4J3xD4cNwXFRn2W3RzJozTxyU9nbJ4pump`
-- falling knife (code): blocked 14, ran 1, dumped 12, flat 1, open 0 (saving losses: keep it)
+  - ran: RIZZMAS3 up to 1.65x  
+    CA `BQcV4Ryfu9bZK8egAF89AhkojdJqAaDt4xTFwUQ2pump`
+- falling knife (code): blocked 13, ran 1, dumped 10, flat 1, open 1 (saving losses: keep it)
   - ran: MANEKI up to 2.06x  
     CA `G74SSWk4qF4BeWfyR53fVZYqdNWo9wH7UR55jF4uuxds`
 - thin 5m volume: blocked 11, ran 1, dumped 8, flat 1, open 1 (saving losses: keep it)
   - ran: chud up to 1.55x  
     CA `EV7J2QaPXPytSkM1LD9GPRkgAbmSEr9R3kYiXBzbpump`
-- bundles over the line: blocked 8, ran 0, dumped 5, flat 1, open 2 (saving losses: keep it)
 - falling knife / no higher low: blocked 8, ran 3, dumped 3, flat 0, open 2 (mixed)
   - ran: pCAT up to 1.58x  
     CA `BLdC7hwRijHudKYDmtEkx1SHUdBWm8XbjBCSvwa6pump`
@@ -147,6 +148,7 @@ A skip "ran" if the coin reached the first target (1.5x) from the skip price bef
     CA `BCTwG3LDhNcthcK374aWQfAzLYGRXDu1apmrqw3Tpump`
   - ran: Mfer up to 1.55x  
     CA `9tX1UpBGeNqMb1VqqzVumwzW71ybsNZFyWKYiL8Ppump`
+- bundles over the line: blocked 7, ran 0, dumped 4, flat 1, open 2 (saving losses: keep it)
 
 ## Daily review (2026-11-21, claude-opus-5-5)
 Nothing has a positive after-cost edge. All 98 settled coins average -15.7% net under the simple plan, and every setup and stage is negative: MIGRATED -13.6% (n=70), FINAL_STRETCH -20.0% (n=14), DIP -21.7% (n=14). The main reason is the 9.5% average round-trip cost on a $10 buy. With a +50%/-20% bracket and that cost, a coin nets about +40% when it runs and about -30% when it dumps, so the plan breaks even only if roughly 42% of coins run. The observed rate is 16.3% (95% CI about 9–24%), so the overall verdict is solid even at n=98. The per-setup splits are not: n=14 gives about ±19 points, and coins from the same day and meta move together. I can't answer whether the routine model's would-buys beat its passes because it made zero would-buys. It declined all 49 coins it reviewed, including all 5 of the day's 4.5–5.5x runners. Even so, declining was right on average, since that reviewed group nets -16.2% under the simple plan.
@@ -187,13 +189,13 @@ Nothing has a positive after-cost edge. All 98 settled coins average -15.7% net 
 Meta: fresh pump.fun launches with crude-joke, cult-slang and animal names are getting the volume and the buyers. "time" ($72k cap, 66% buys, +143% 1h), C@T ($215k, +511% 1h, $82k 5m, 86% buys), KAREN ($32k, 55% buys) and CUNTS ($22k, $9.5k 5m) are the active ones. Older dog and animal coins are fading or thin: MAYA ($719k, -26% 1h, only $2.5k 5m) and GATO (2,123h old, 33% buys, $503 5m). Trump and news-name coins aren't on the movers list, so the headlines aren't the trade (V1). Setups to research, no entries yet: "time" and KAREN fit the MIGRATED screen (pumpswap, under 12h, cap above $30k, 5m above $10k), so holder, bundle and dev checks come before any size (V1, V6). C@T is the strongest tape, but +511% in an hour is a chase, so it only qualifies on a pullback where buyers hold. SHIT is a DIP candidate: -63% in 1h with 89% buys on $13k 5m, and it only qualifies if its prior peak was above $70k (V1). The crawler's tapcash, Mfer and PUNANI figures don't match scan_movers, so I'm ignoring them. The tape is active, not quiet, and spike-and-dump, so every size stays small and conviction-based.
 
 ## Moving most in its scans, last 30 min (1h volume)
-- BIGFOOT: $1,239,780 1h vol, $1,381 mcap, -99% 1h  
-  CA `EMjVCbyVHVZ88zvmQPVZffB6Nk2eksS6aCACGVGnpump`
 - STREETS: $751,699 1h vol, $629,500 mcap, +451% 1h  
   CA `GY23CdhszidJZpLyNQ9PB63HPXq8RXqhnLtUYUH7pump`
-- Inu: $377,429 1h vol, $2,706 mcap, -92% 1h  
-  CA `7htmi1ohL8vgAxmdLtvyXR2Z4As6bj6dXEx5wRh78VJG`
+- STREETS: $708,159 1h vol, $1,066,095 mcap, +832% 1h  
+  CA `82mseLFauphc2yutbaDGgViahquJ1jGVLpyof99xpump`
+- BIGFOOT: $410,337 1h vol, $1,434 mcap, -100% 1h  
+  CA `EMjVCbyVHVZ88zvmQPVZffB6Nk2eksS6aCACGVGnpump`
 - SHIT: $243,179 1h vol, $653,481 mcap, -63% 1h  
   CA `Fn95NtGXWPaJXc4N5y9rVkUq1NwZbjBNJzPVvNRLpump`
-- time: $113,852 1h vol, $71,771 mcap, +143% 1h  
-  CA `Ak8pAMMeiqbu3tyE2MU33o8W2RfhLk1hXYsscnFkpump`
+- KAREN: $213,523 1h vol, $44,736 mcap, +66% 1h  
+  CA `9kaQR3dorDz4vwim3iGaoRa9amoLcUHPp6wuLHpEpump`
