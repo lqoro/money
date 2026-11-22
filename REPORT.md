@@ -1,13 +1,13 @@
 # Trencher live report
 
-Updated 2026-11-22T03:56:14Z (paper trading, never real money)
+Updated 2026-11-22T04:11:27Z (paper trading, never real money)
 
 - Equity: $74.23 (-25.8% vs $100 start)
 - Closed trades: 22, 3 wins
 - Fees paid: $14.78 (axiom $2.81, network $9.18, pool $2.66), plus $4.15 lost to slippage
 - New trades: WATCH-ONLY (scans and decides, buys nothing)
-- Brain: subscription, claude-haiku-5-5 for routine calls, claude-opus-5-5 for the daily review; 279 routine calls and 0 plan-limit hits in 48h
-- Watch log: 86 coins being followed, 2519 filed, 0 would-buys (6h follow, sampled every 2 min)
+- Brain: subscription, claude-haiku-5-5 for routine calls, claude-opus-5-5 for the daily review; 277 routine calls and 0 plan-limit hits in 48h
+- Watch log: 85 coins being followed, 2522 filed, 0 would-buys (6h follow, sampled every 2 min)
 
 ## Scorecard (after fees)
 - 22 closed, 3 won (14%), net $-25.79
@@ -73,9 +73,13 @@ Updated 2026-11-22T03:56:14Z (paper trading, never real money)
   CA `H4gHnZ3NCU7Z9XQwGX6YYJNyieGEW8pqwGRUcdSxpump`
 
 ## Last scan
-- 03:55Z: 5 coins, 5 with pairs, 0 passed the market filters, 0 researched
+- 04:10Z: 5 coins, 5 with pairs, 0 passed the market filters, 0 researched
 
 ## Coins it looked at, and why it passed
+- 03:59Z SHIT (MIGRATED, $112,596 mcap, $8,808 5m vol): PASS at conviction 2, PASS: SHIT is down 97% from its $3.6M peak, and the spike already round-tripped to 0.000113. The story is dead, 5m flow is under $10k, and there's no higher low. Bottom buy fails the owner rule (V1, V6, V13).  
+  CA `Fn95NtGXWPaJXc4N5y9rVkUq1NwZbjBNJzPVvNRLpump`
+- 03:58Z CATEMAS (MIGRATED, $289,999 mcap, $30,047 5m vol): PASS at conviction 3, PASS: CATEMAS is not the leader of its own ticker. The bigger same-ticker coin is the original, and this is the copy. Split crowd (V1, V3).  
+  CA `kPqBsUZuogprbq15ZpACwDzbUHSAxTxbhRrxmrDpump`
 - 03:50Z RIZZMAS (DIP, $80,842 mcap, $4,859 5m vol): REJECT, RugCheck danger: Creator history of rugged tokens  
   CA `6J3ApVu8dSLg1TJjBLWSTgmnvJXcH2YyF2iDC48Fpump`
 - 03:48Z DESSA (DIP, $2,027,539 mcap, $7,450 5m vol): REJECT, Dip with fading attention is a falling knife, not a dip (5m at 0.40x the hour's pace, under 0.6x)  
@@ -92,10 +96,6 @@ Updated 2026-11-22T03:56:14Z (paper trading, never real money)
   CA `AN1acsfrRhSaToxihrbEjs5oHXGzvFuC9xXKLtompump`
 - 03:13Z SHIT (MIGRATED, $131,481 mcap, $8,978 5m vol): PASS at conviction 2, PASS: SHIT is 96% off a $3.6M peak with 5m flow at 0.67x pace and under $10k of 5m volume. That's a falling knife, not a dip. Blocker: "flow below pace" (V1, V6).  
   CA `Fn95NtGXWPaJXc4N5y9rVkUq1NwZbjBNJzPVvNRLpump`
-- 03:11Z Tiger (FINAL_STRETCH, $16,906 mcap, $2,096 5m vol): REJECT, Top 10 hold 26.3% ex-pool (>25%) (V13)  
-  CA `8HusqhhyrYwNSbxqtK56tucqMXhLx4EatWkYD3sQpump`
-- 03:07Z Bullmas (MIGRATED, $40,162 mcap, $35,085 5m vol): REJECT, RugCheck danger: Creator history of rugged tokens  
-  CA `47YW4F8fDHhjk51aL7oyAyxcyUrP1VRrKpPDVEmbpump`
 
 ## What its skips did next (last 48h)
 A skip "ran" if the coin reached the first target (1.5x) from the skip price before a 20% drop, "dumped" if the drop came first. Sampled every 10 min, followed 6h.
@@ -109,26 +109,28 @@ A skip "ran" if the coin reached the first target (1.5x) from the skip price bef
     CA `BYKQkHKMWHidNBLQXgt7NX4PLUtJZRYGLWQYkJzPGenX`
   - ran: Bust up to 1.55x  
     CA `EoV9JQYi57tqjyQbWLdXVarYpEu82FsP8SDnkbFmpump`
-- near the high / chasing: blocked 20, ran 4, dumped 16, flat 0, open 0 (saving losses: keep it)
+- near the high / chasing: blocked 19, ran 4, dumped 15, flat 0, open 0 (saving losses: keep it)
   - ran: ZOL up to 1.55x  
     CA `UQLWvkwiSsnViuVBy7oArMtzb5RAZyrdJ79amQFrzoL`
   - ran: STICK up to 2.08x  
     CA `532iaQrhFCD3QKFHsAtFAQ1mQZMjMdNrPXLeCS6cpump`
   - ran: Trader up to 2.04x  
     CA `BYKQkHKMWHidNBLQXgt7NX4PLUtJZRYGLWQYkJzPGenX`
-- too new / sniping: blocked 19, ran 3, dumped 14, flat 1, open 1 (saving losses: keep it)
+- too new / sniping: blocked 19, ran 3, dumped 15, flat 1, open 0 (saving losses: keep it)
   - ran: AudaCity up to 1.96x  
     CA `3rtTUCpe1BBgCTNWQ9jK3xkAz1E7SPqMt4uYHx1Bpump`
   - ran: TA up to 1.77x  
     CA `DKUM8qywmi8X9RYK2wUgnTw8QKjh1nYDThZR1GXPpump`
   - ran: SANTAHAT up to 3x  
     CA `5fWLSMA5HoK9W4VoTMi4c3qjyu3N2LsKRSM8Ffpgpump`
-- RugCheck danger: blocked 16, ran 2, dumped 13, flat 0, open 1 (saving losses: keep it)
+- RugCheck danger: blocked 16, ran 3, dumped 13, flat 0, open 0 (saving losses: keep it)
   - ran: TOP up to 1.67x  
     CA `hT9xKkj6dPMz97zcxEEE5T5fFdm6x31P6FodwT8pump`
   - ran: CAP up to 2.6x  
     CA `CxGYpWoTun4J3xD4cNwXFRn2W3RzJozTxyU9nbJ4pump`
-- falling knife (code): blocked 14, ran 2, dumped 10, flat 1, open 1 (saving losses: keep it)
+  - ran: RIZZMAS up to 1.72x  
+    CA `6J3ApVu8dSLg1TJjBLWSTgmnvJXcH2YyF2iDC48Fpump`
+- falling knife (code): blocked 14, ran 2, dumped 11, flat 1, open 0 (saving losses: keep it)
   - ran: RIZZMAS3 up to 1.84x  
     CA `BQcV4Ryfu9bZK8egAF89AhkojdJqAaDt4xTFwUQ2pump`
   - ran: STREETS up to 1.73x  
@@ -136,17 +138,17 @@ A skip "ran" if the coin reached the first target (1.5x) from the skip price bef
 - thin 5m volume: blocked 10, ran 1, dumped 7, flat 2, open 0 (saving losses: keep it)
   - ran: chud up to 1.55x  
     CA `EV7J2QaPXPytSkM1LD9GPRkgAbmSEr9R3kYiXBzbpump`
+- falling knife / no higher low: blocked 8, ran 2, dumped 3, flat 2, open 1 (mixed)
+  - ran: UrAnus up to 2.97x  
+    CA `27u3diWofnXGUkddjLGhcy1nRssFKHW3RtNbpWzUpump`
+  - ran: STREETS up to 1.73x  
+    CA `82mseLFauphc2yutbaDGgViahquJ1jGVLpyof99xpump`
 - dev share over 1%: blocked 7, ran 2, dumped 3, flat 1, open 1 (mixed)
   - ran: SANTINU up to 1.56x  
     CA `BCTwG3LDhNcthcK374aWQfAzLYGRXDu1apmrqw3Tpump`
   - ran: Mfer up to 1.55x  
     CA `9tX1UpBGeNqMb1VqqzVumwzW71ybsNZFyWKYiL8Ppump`
 - bundles over the line: blocked 7, ran 0, dumped 4, flat 3, open 0 (saving losses: keep it)
-- falling knife / no higher low: blocked 7, ran 2, dumped 3, flat 1, open 1 (mixed)
-  - ran: UrAnus up to 2.97x  
-    CA `27u3diWofnXGUkddjLGhcy1nRssFKHW3RtNbpWzUpump`
-  - ran: STREETS up to 1.73x  
-    CA `82mseLFauphc2yutbaDGgViahquJ1jGVLpyof99xpump`
 
 ## Daily review (2026-11-21, claude-opus-5-5)
 Nothing has a positive after-cost edge. All 98 settled coins average -15.7% net under the simple plan, and every setup and stage is negative: MIGRATED -13.6% (n=70), FINAL_STRETCH -20.0% (n=14), DIP -21.7% (n=14). The main reason is the 9.5% average round-trip cost on a $10 buy. With a +50%/-20% bracket and that cost, a coin nets about +40% when it runs and about -30% when it dumps, so the plan breaks even only if roughly 42% of coins run. The observed rate is 16.3% (95% CI about 9–24%), so the overall verdict is solid even at n=98. The per-setup splits are not: n=14 gives about ±19 points, and coins from the same day and meta move together. I can't answer whether the routine model's would-buys beat its passes because it made zero would-buys. It declined all 49 coins it reviewed, including all 5 of the day's 4.5–5.5x runners. Even so, declining was right on average, since that reviewed group nets -16.2% under the simple plan.
@@ -189,11 +191,11 @@ Tape meta: holiday-pun and rizz-slang pump.fun launches, spike-and-dump. Holiday
 ## Moving most in its scans, last 30 min (1h volume)
 - DESSA: $226,207 1h vol, $2,027,539 mcap, -31% 1h  
   CA `npz2FhoufQ7pKqhGpaipYWacrAkidyW2yDpVWSvpump`
-- PushCoin: $145,139 1h vol, $1,581,162 mcap, +25% 1h  
-  CA `3N6Mp8YQuVDfEtyuyJS72s4MRrgQuKY34gvYZD5Kpump`
+- FRIEND: $192,910 1h vol, $1,327 mcap, -99% 1h  
+  CA `AN1acsfrRhSaToxihrbEjs5oHXGzvFuC9xXKLtompump`
+- CATEMAS: $160,786 1h vol, $289,999 mcap, +38% 1h  
+  CA `kPqBsUZuogprbq15ZpACwDzbUHSAxTxbhRrxmrDpump`
 - MASCOIN: $119,475 1h vol, $48,689 mcap, +76% 1h  
   CA `9GQhJ7t7Gy8DyeMVxjJZuTsHvmoZro5sVDxzNxsFpump`
-- Bullmas: $107,050 1h vol, $2,250 mcap, -92% 1h  
-  CA `47YW4F8fDHhjk51aL7oyAyxcyUrP1VRrKpPDVEmbpump`
-- RIZZMAS: $71,855 1h vol, $79,191 mcap, +19% 1h  
-  CA `6J3ApVu8dSLg1TJjBLWSTgmnvJXcH2YyF2iDC48Fpump`
+- SHIT: $109,936 1h vol, $112,596 mcap, -16% 1h  
+  CA `Fn95NtGXWPaJXc4N5y9rVkUq1NwZbjBNJzPVvNRLpump`
