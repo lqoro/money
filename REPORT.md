@@ -1,13 +1,13 @@
 # Trencher live report
 
-Updated 2026-11-22T17:37:26Z (paper trading, never real money)
+Updated 2026-11-22T18:15:02Z (paper trading, never real money)
 
 - Equity: $74.23 (-25.8% vs $100 start)
 - Closed trades: 22, 3 wins
 - Fees paid: $14.78 (axiom $2.81, network $9.18, pool $2.66), plus $4.15 lost to slippage
 - New trades: WATCH-ONLY (scans and decides, buys nothing)
-- Brain: subscription, claude-haiku-5-5 for routine calls, claude-opus-5-5 for the daily review; 265 routine calls and 0 plan-limit hits in 48h
-- Watch log: 56 coins being followed, 2673 filed, 0 would-buys (6h follow, sampled every 2 min)
+- Brain: subscription, claude-haiku-5-5 for routine calls, claude-opus-5-5 for the daily review; 264 routine calls and 0 plan-limit hits in 48h
+- Watch log: 59 coins being followed, 2674 filed, 0 would-buys (6h follow, sampled every 2 min)
 
 ## Scorecard (after fees)
 - 22 closed, 3 won (14%), net $-25.79
@@ -73,9 +73,17 @@ Updated 2026-11-22T17:37:26Z (paper trading, never real money)
   CA `H4gHnZ3NCU7Z9XQwGX6YYJNyieGEW8pqwGRUcdSxpump`
 
 ## Last scan
-- 17:14Z: 39 coins, 38 with pairs, 4 passed the market filters, 4 researched
+- 17:49Z: 38 coins, 38 with pairs, 4 passed the market filters, 4 researched
 
 ## Coins it looked at, and why it passed
+- 18:14Z DIGS (DIP, $278,669 mcap, $3,001 5m vol): REJECT, Bundles: 10 linked wallet cluster(s) hold 100.0% of supply (>20%) (V17)  
+  CA `9QT8K685Hrae4k11dhGXirdtpfAaimExtyfwt8cPpump`
+- 18:11Z FOAM (MIGRATED, $104,513 mcap, $14,073 5m vol): PASS, PASS — brain unavailable, not trading blind.  
+  CA `2MdCPWNFufmJSZhajSvi1yqBFTB24GQ4ipjNcB8Vpump`
+- 18:02Z OMGAI (MIGRATED, $62,728 mcap, $9,951 5m vol): PASS, PASS — brain unavailable, not trading blind.  
+  CA `AHDP4wVa73GQYSP6AhrC2f5eE5CfkpCyyzwLg5WQpump`
+- 17:55Z MCAT (MIGRATED, $245,855 mcap, $35,367 5m vol): PASS, PASS — brain unavailable, not trading blind.  
+  CA `BzPyyYCTmQNq2BcfQ4ANAvCYk54rnmQEXMFvFT8RhWMi`
 - 17:36Z Max (MIGRATED, $570,315 mcap, $160 5m vol): REJECT, 5m volume $160 is dead (<$2,000) (V1)  
   CA `5qaP7oKUqKffwwo5DaEqDoTtsBLMpdbQTxEkCDaTpump`
 - 17:34Z PushCoin (MIGRATED, $1,554,290 mcap, $2,740 5m vol): PASS, PASS — brain unavailable, not trading blind.  
@@ -88,14 +96,6 @@ Updated 2026-11-22T17:37:26Z (paper trading, never real money)
   CA `2MdCPWNFufmJSZhajSvi1yqBFTB24GQ4ipjNcB8Vpump`
 - 16:59Z BLOB (DIP, $7,356,173 mcap, $78,121 5m vol): PASS, PASS — brain unavailable, not trading blind.  
   CA `8s11PkgQt4ZzdZ7oo84hK5t9HG1EvdgAjcg4W7Lpump`
-- 16:47Z casual (MIGRATED, $60,589 mcap, $5,958 5m vol): PASS, PASS — brain unavailable, not trading blind.  
-  CA `6EiCk8WmoLai1ziCHa8D2aujGdB7rYr3xGs3x2avpump`
-- 16:39Z DIGS (DIP, $272,066 mcap, $2,545 5m vol): REJECT, Bundles: 10 linked wallet cluster(s) hold 100.0% of supply (>20%) (V17)  
-  CA `9QT8K685Hrae4k11dhGXirdtpfAaimExtyfwt8cPpump`
-- 16:29Z PushCoin (MIGRATED, $1,377,536 mcap, $4,074 5m vol): PASS at conviction 2, PASS: flow below pace, no higher low, and the project's own site says the contract is TBA. Blocker: flow below pace. (V1, V3, V6)  
-  CA `3N6Mp8YQuVDfEtyuyJS72s4MRrgQuKY34gvYZD5Kpump`
-- 16:24Z Max (MIGRATED, $587,056 mcap, $2,725 5m vol): PASS at conviction 3, PASS: Max is a 5m spike with sellers in control (buy share 0.29), no printed higher low, and a dead one-word meta. Chasing and no catalyst (V1, V6).  
-  CA `5qaP7oKUqKffwwo5DaEqDoTtsBLMpdbQTxEkCDaTpump`
 
 ## What its skips did next (last 48h)
 A skip "ran" if the coin reached the first target (1.5x) from the skip price before a 20% drop, "dumped" if the drop came first. Sampled every 10 min, followed 6h.
@@ -106,13 +106,6 @@ A skip "ran" if the coin reached the first target (1.5x) from the skip price bef
     CA `EoV9JQYi57tqjyQbWLdXVarYpEu82FsP8SDnkbFmpump`
   - ran: Mandy up to 1.53x  
     CA `HmJRWZ8tFfuCY9A4MrSftnrvEFCApw1hyqHtb9Rzpump`
-- near the high / chasing: blocked 21, ran 3, dumped 17, flat 0, open 1 (saving losses: keep it)
-  - ran: Trader up to 2.04x  
-    CA `BYKQkHKMWHidNBLQXgt7NX4PLUtJZRYGLWQYkJzPGenX`
-  - ran: CUNTS up to 1.61x  
-    CA `7CvW68FD9KjNYGByfykhaNps7VNPLN8dFwMRfmgQpump`
-  - ran: SANTA up to 1.85x  
-    CA `tZsjFu2CH1R23wEpbfXAYGc2KUaVrUbwofCNNNqpump`
 - too new / sniping: blocked 21, ran 3, dumped 17, flat 1, open 0 (saving losses: keep it)
   - ran: TA up to 1.77x  
     CA `DKUM8qywmi8X9RYK2wUgnTw8QKjh1nYDThZR1GXPpump`
@@ -125,15 +118,22 @@ A skip "ran" if the coin reached the first target (1.5x) from the skip price bef
     CA `Dtx414D8jurspmB1jqJWsYU66pemoXRjQeXx7TC1pump`
   - ran: GIF up to 2.16x  
     CA `B6wM98qkQKP71mhPA48S7No6TxM4KaXdFojDTZeUpump`
-- RugCheck danger: blocked 15, ran 2, dumped 13, flat 0, open 0 (saving losses: keep it)
+- near the high / chasing: blocked 19, ran 3, dumped 15, flat 0, open 1 (saving losses: keep it)
+  - ran: Trader up to 2.04x  
+    CA `BYKQkHKMWHidNBLQXgt7NX4PLUtJZRYGLWQYkJzPGenX`
+  - ran: CUNTS up to 1.61x  
+    CA `7CvW68FD9KjNYGByfykhaNps7VNPLN8dFwMRfmgQpump`
+  - ran: SANTA up to 1.85x  
+    CA `tZsjFu2CH1R23wEpbfXAYGc2KUaVrUbwofCNNNqpump`
+- brain paced: blocked 14, ran 1, dumped 6, flat 1, open 6 (saving losses: keep it)
+  - ran: STREETS up to 1.73x  
+    CA `82mseLFauphc2yutbaDGgViahquJ1jGVLpyof99xpump`
+- RugCheck danger: blocked 13, ran 2, dumped 11, flat 0, open 0 (saving losses: keep it)
   - ran: CAP up to 2.6x  
     CA `CxGYpWoTun4J3xD4cNwXFRn2W3RzJozTxyU9nbJ4pump`
   - ran: MIHAOMAS up to 1.62x  
     CA `3XsFunPdji9U1EgJXokZysw8SB3t74un89b6KLEVpump`
-- brain paced: blocked 12, ran 1, dumped 5, flat 1, open 5 (saving losses: keep it)
-  - ran: STREETS up to 1.73x  
-    CA `82mseLFauphc2yutbaDGgViahquJ1jGVLpyof99xpump`
-- falling knife (code): blocked 11, ran 2, dumped 8, flat 1, open 0 (saving losses: keep it)
+- falling knife (code): blocked 10, ran 2, dumped 7, flat 1, open 0 (saving losses: keep it)
   - ran: RIZZMAS3 up to 1.84x  
     CA `BQcV4Ryfu9bZK8egAF89AhkojdJqAaDt4xTFwUQ2pump`
   - ran: STREETS up to 1.73x  
@@ -189,13 +189,13 @@ Nothing has a positive edge after costs. All 166 settled coins averaged -11.3% n
 Not quiet, but the movers are split. The hot money is in pump.fun name-plays and pop-culture jokes under about an hour old: MIKEDYSON is +1098% in 1h on $4k of 5m volume, Plurality has $49k of 5m on a $24.5k cap at 58% buys, and Justice For MengLan has $16.7k of 5m, with Jupiter Incident also in the mix. That is momentum, and most of it is a rug or a chase until proven otherwise (V1, V6). Brand and internet-slang launches are fading: KYC is -62% in 1h, Betty -41%, and GIF is only holding because it is already up 62%. Old one-word jokes are dead air: greg, Max and DIGS each do under $1k of 5m volume, and BLOB has $8k of 5m on a $16.5M cap, above the V6 $11M ceiling, so it is outside the recon range. Setups to research now: Plurality as a FINAL_STRETCH candidate (check its distance to bond and whether the $49k of 5m is organic or bundled), and MIKEDYSON only if it pulls back and holds, since +1098% in an hour is exit-liquidity territory. PushCoin, DESSA and Tesla FSD appear only in the web text, not the scan, so I am not weighing them.
 
 ## Moving most in its scans, last 30 min (1h volume)
-- BLOB: $446,631 1h vol, $7,356,173 mcap, -62% 1h  
+- BLOB: $401,586 1h vol, $5,807,842 mcap, -12% 1h  
   CA `8s11PkgQt4ZzdZ7oo84hK5t9HG1EvdgAjcg4W7Lpump`
-- poorcat: $239,541 1h vol, $41,585 mcap, +50% 1h  
-  CA `2w4jvePDKqNfzn8g358kGhoJn8vRhvQUYck4xLB1pump`
-- SI: $204,539 1h vol, $1,335 mcap, -99% 1h  
-  CA `6e5a5QMg4Jf3ti8t9RYo3Yb8FZAYqwe8Tg5WMVaYpump`
-- MCAT: $157,509 1h vol, $196,764 mcap, +0% 1h  
-  CA `v4GK8f24ZJJa5qLoTJ4mJ5d6jsNUXHScwGaRHdfpump`
-- DESSA: $100,045 1h vol, $3,023,387 mcap, -4% 1h  
-  CA `npz2FhoufQ7pKqhGpaipYWacrAkidyW2yDpVWSvpump`
+- MCAT: $380,261 1h vol, $259,544 mcap, +150% 1h  
+  CA `BzPyyYCTmQNq2BcfQ4ANAvCYk54rnmQEXMFvFT8RhWMi`
+- FOAM: $346,925 1h vol, $72,438 mcap, +154% 1h  
+  CA `2MdCPWNFufmJSZhajSvi1yqBFTB24GQ4ipjNcB8Vpump`
+- tremp: $203,094 1h vol, $9,779 mcap, -68% 1h  
+  CA `7Y2NE9owdL29eQxSpAPu5EkPUM4X9RJsawTMQ8Yqpump`
+- OMGAI: $113,007 1h vol, $66,062 mcap, +185% 1h  
+  CA `AHDP4wVa73GQYSP6AhrC2f5eE5CfkpCyyzwLg5WQpump`
