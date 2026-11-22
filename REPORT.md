@@ -1,13 +1,13 @@
 # Trencher live report
 
-Updated 2026-11-22T01:55:21Z (paper trading, never real money)
+Updated 2026-11-22T02:10:21Z (paper trading, never real money)
 
 - Equity: $74.23 (-25.8% vs $100 start)
 - Closed trades: 22, 3 wins
 - Fees paid: $14.78 (axiom $2.81, network $9.18, pool $2.66), plus $4.15 lost to slippage
 - New trades: WATCH-ONLY (scans and decides, buys nothing)
-- Brain: subscription, claude-haiku-5-5 for routine calls, claude-opus-5-5 for the daily review; 280 routine calls and 0 plan-limit hits in 48h
-- Watch log: 86 coins being followed, 2494 filed, 0 would-buys (6h follow, sampled every 2 min)
+- Brain: subscription, claude-haiku-5-5 for routine calls, claude-opus-5-5 for the daily review; 279 routine calls and 0 plan-limit hits in 48h
+- Watch log: 86 coins being followed, 2496 filed, 0 would-buys (6h follow, sampled every 2 min)
 
 ## Scorecard (after fees)
 - 22 closed, 3 won (14%), net $-25.79
@@ -73,9 +73,13 @@ Updated 2026-11-22T01:55:21Z (paper trading, never real money)
   CA `H4gHnZ3NCU7Z9XQwGX6YYJNyieGEW8pqwGRUcdSxpump`
 
 ## Last scan
-- 01:54Z: 5 coins, 5 with pairs, 0 passed the market filters, 0 researched
+- 02:09Z: 4 coins, 4 with pairs, 0 passed the market filters, 0 researched
 
 ## Coins it looked at, and why it passed
+- 02:03Z PushCoin (MIGRATED, $340,608 mcap, $49,354 5m vol): REJECT, Top 10 hold 51.1% ex-pool (>25%) (V13)  
+  CA `3N6Mp8YQuVDfEtyuyJS72s4MRrgQuKY34gvYZD5Kpump`
+- 02:02Z GRAUDIA (MIGRATED, $176,476 mcap, $5,308 5m vol): PASS at conviction 2, PASS: chasing spike, flow under pace, no higher low, and no story behind it. A 2-hour-old fan-zine coin with a "CA TBA" site. (V1, V6, V13)  
+  CA `B1oGtkaVAVZkdtWV7SXrHnFkcWC1Kd45sYpy6RYTpump`
 - 01:51Z WHALLET (FINAL_STRETCH, $17,066 mcap, $7,683 5m vol): PASS at conviction 2, PASS: chasing spike on a pump.fun copy with no X and $7.7k 5m. Blockers: "chasing spike", "split crowd" (V1, V3, V6).  
   CA `Ft2TL58CHP7hgF6SXXBHcTFxEB4Zg412TynELmASpump`
 - 01:48Z RIZZMAS3 (DIP, $149,120 mcap, $34,616 5m vol): REJECT, Dip with fading attention is a falling knife, not a dip (5m at 0.47x the hour's pace, under 0.6x)  
@@ -92,13 +96,12 @@ Updated 2026-11-22T01:55:21Z (paper trading, never real money)
   CA `6J3ApVu8dSLg1TJjBLWSTgmnvJXcH2YyF2iDC48Fpump`
 - 01:30Z STREETS (DIP, $689,488 mcap, $3,495 5m vol): REJECT, Dip with fading attention is a falling knife, not a dip (5m at 0.05x the hour's pace, under 0.6x)  
   CA `82mseLFauphc2yutbaDGgViahquJ1jGVLpyof99xpump`
-- 01:28Z MAYA (MIGRATED, $241,236 mcap, $10,515 5m vol): PASS at conviction 3, PASS: flow below pace, 94% off the high, no printed higher low. Blocker "flow below pace", and "chasing" doesn't apply because it's a falling knife, not a pullback. Holders are clean, but clean holders don't rescue a dead tape (V1, V6, V13).  
-  CA `FJKt1LxbWBpTRt9BaDEB6Wr2qL5LZzjFF5sx8rXnpump`
-- 01:25Z CI (FINAL_STRETCH, $14,397 mcap, $11,623 5m vol): PASS at conviction 3, PASS: split crowd. CI is the #2 of 25 christmas copies, and it just spiked +60% in 5m. Blocker "split crowd" plus "chasing spike" (V1, V13).  
-  CA `4sYBDAjAiFm2kJDJExyWjPEW5rth9riExqtyRDmhpump`
 
 ## What its skips did next (last 48h)
 A skip "ran" if the coin reached the first target (1.5x) from the skip price before a 20% drop, "dumped" if the drop came first. Sampled every 10 min, followed 6h.
+- top 10 over 25%: blocked 28, ran 1, dumped 25, flat 1, open 1 (saving losses: keep it)
+  - ran: :) up to 1.65x  
+    CA `Dtx414D8jurspmB1jqJWsYU66pemoXRjQeXx7TC1pump`
 - flow below pace: blocked 28, ran 4, dumped 20, flat 0, open 4 (saving losses: keep it)
   - ran: SWRDXSTFF up to 1.77x  
     CA `Csoj9XHJfBAxsKswqKKBENnGeoRDHtACfyYi7HmJpump`
@@ -106,10 +109,7 @@ A skip "ran" if the coin reached the first target (1.5x) from the skip price bef
     CA `BYKQkHKMWHidNBLQXgt7NX4PLUtJZRYGLWQYkJzPGenX`
   - ran: Bust up to 1.55x  
     CA `EoV9JQYi57tqjyQbWLdXVarYpEu82FsP8SDnkbFmpump`
-- top 10 over 25%: blocked 27, ran 1, dumped 24, flat 1, open 1 (saving losses: keep it)
-  - ran: :) up to 1.65x  
-    CA `Dtx414D8jurspmB1jqJWsYU66pemoXRjQeXx7TC1pump`
-- near the high / chasing: blocked 21, ran 5, dumped 16, flat 0, open 0 (saving losses: keep it)
+- near the high / chasing: blocked 22, ran 5, dumped 16, flat 0, open 1 (saving losses: keep it)
   - ran: BEAR up to 2.32x  
     CA `DCPm44cT9i39HjR13QHYgxkR7wEx9TDeniGuayB5pump`
   - ran: ZOL up to 1.55x  
@@ -134,19 +134,19 @@ A skip "ran" if the coin reached the first target (1.5x) from the skip price bef
 - thin 5m volume: blocked 10, ran 1, dumped 7, flat 1, open 1 (saving losses: keep it)
   - ran: chud up to 1.55x  
     CA `EV7J2QaPXPytSkM1LD9GPRkgAbmSEr9R3kYiXBzbpump`
-- falling knife / no higher low: blocked 9, ran 3, dumped 3, flat 1, open 2 (mixed)
+- bundles over the line: blocked 8, ran 0, dumped 5, flat 3, open 0 (saving losses: keep it)
+- falling knife / no higher low: blocked 8, ran 3, dumped 2, flat 1, open 2 (cost more winners than it saved: loosen it)
   - ran: pCAT up to 1.58x  
     CA `BLdC7hwRijHudKYDmtEkx1SHUdBWm8XbjBCSvwa6pump`
   - ran: MACCA up to 1.71x  
     CA `C5eGEXJZYvXEbKdyvPtasksjGNV4xvMowpKM92bVv47f`
   - ran: UrAnus up to 2.97x  
     CA `27u3diWofnXGUkddjLGhcy1nRssFKHW3RtNbpWzUpump`
-- dev share over 1%: blocked 8, ran 2, dumped 4, flat 1, open 1 (saving losses: keep it)
+- dev share over 1%: blocked 7, ran 2, dumped 3, flat 1, open 1 (mixed)
   - ran: SANTINU up to 1.56x  
     CA `BCTwG3LDhNcthcK374aWQfAzLYGRXDu1apmrqw3Tpump`
   - ran: Mfer up to 1.55x  
     CA `9tX1UpBGeNqMb1VqqzVumwzW71ybsNZFyWKYiL8Ppump`
-- bundles over the line: blocked 8, ran 0, dumped 5, flat 2, open 1 (saving losses: keep it)
 
 ## Daily review (2026-11-21, claude-opus-5-5)
 Nothing has a positive after-cost edge. All 98 settled coins average -15.7% net under the simple plan, and every setup and stage is negative: MIGRATED -13.6% (n=70), FINAL_STRETCH -20.0% (n=14), DIP -21.7% (n=14). The main reason is the 9.5% average round-trip cost on a $10 buy. With a +50%/-20% bracket and that cost, a coin nets about +40% when it runs and about -30% when it dumps, so the plan breaks even only if roughly 42% of coins run. The observed rate is 16.3% (95% CI about 9–24%), so the overall verdict is solid even at n=98. The per-setup splits are not: n=14 gives about ±19 points, and coins from the same day and meta move together. I can't answer whether the routine model's would-buys beat its passes because it made zero would-buys. It declined all 49 coins it reviewed, including all 5 of the day's 4.5–5.5x runners. Even so, declining was right on average, since that reviewed group nets -16.2% under the simple plan.
@@ -189,11 +189,11 @@ Trencher: The trenches are running on fresh pump.fun launches (most movers are u
 ## Moving most in its scans, last 30 min (1h volume)
 - RIZZMAS3: $887,526 1h vol, $149,120 mcap, +97% 1h  
   CA `BQcV4Ryfu9bZK8egAF89AhkojdJqAaDt4xTFwUQ2pump`
-- STREETS: $724,421 1h vol, $668,252 mcap, +59% 1h  
-  CA `82mseLFauphc2yutbaDGgViahquJ1jGVLpyof99xpump`
-- time: $396,619 1h vol, $1,634 mcap, -99% 1h  
+- time: $370,092 1h vol, $1,634 mcap, -99% 1h  
   CA `Ak8pAMMeiqbu3tyE2MU33o8W2RfhLk1hXYsscnFkpump`
 - MANDY: $191,925 1h vol, $381,664 mcap, +888% 1h  
   CA `3JqV4LuKVqzCpWsDAsBnTLg2mKik22hLeyyPyfW3pump`
-- SANTAHAT: $186,297 1h vol, $2,909 mcap, -91% 1h  
+- SHIT: $186,006 1h vol, $527,962 mcap, -21% 1h  
+  CA `Fn95NtGXWPaJXc4N5y9rVkUq1NwZbjBNJzPVvNRLpump`
+- SANTAHAT: $185,146 1h vol, $2,736 mcap, -90% 1h  
   CA `5fWLSMA5HoK9W4VoTMi4c3qjyu3N2LsKRSM8Ffpgpump`
