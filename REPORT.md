@@ -1,13 +1,13 @@
 # Trencher live report
 
-Updated 2026-11-22T14:32:41Z (paper trading, never real money)
+Updated 2026-11-22T14:47:44Z (paper trading, never real money)
 
 - Equity: $74.23 (-25.8% vs $100 start)
 - Closed trades: 22, 3 wins
 - Fees paid: $14.78 (axiom $2.81, network $9.18, pool $2.66), plus $4.15 lost to slippage
 - New trades: WATCH-ONLY (scans and decides, buys nothing)
 - Brain: subscription, claude-haiku-5-5 for routine calls, claude-opus-5-5 for the daily review; 265 routine calls and 0 plan-limit hits in 48h
-- Watch log: 51 coins being followed, 2650 filed, 0 would-buys (6h follow, sampled every 2 min)
+- Watch log: 50 coins being followed, 2652 filed, 0 would-buys (6h follow, sampled every 2 min)
 
 ## Scorecard (after fees)
 - 22 closed, 3 won (14%), net $-25.79
@@ -73,9 +73,11 @@ Updated 2026-11-22T14:32:41Z (paper trading, never real money)
   CA `H4gHnZ3NCU7Z9XQwGX6YYJNyieGEW8pqwGRUcdSxpump`
 
 ## Last scan
-- 14:32Z: 0 coins, 0 with pairs, 0 passed the market filters, 0 researched
+- 14:46Z: 8 coins, 8 with pairs, 0 passed the market filters, 0 researched
 
 ## Coins it looked at, and why it passed
+- 14:44Z Flywheel (FINAL_STRETCH, $20,883 mcap, $2,360 5m vol): REJECT, RugCheck danger: Creator history of rugged tokens  
+  CA `95C2ZFW6jfMch1iEKAbbSdB56orJ2gTbxxtn2cDvpump`
 - 14:30Z KYC (FINAL_STRETCH, $23,271 mcap, $45,714 5m vol): PASS at conviction 3, PASS — chasing spike: the 5m candle is up 80% at 9.5x hourly pace, and the coin is 8 minutes old in a 26-copy vamp field. Wait for a retrace and a printed higher low, or leave it. (V1, V6, V13)  
   CA `47YCrfUmSQUF9vnPsPGSzrmTcxttdRAWejCMkhrrpump`
 - 14:29Z Betty (FINAL_STRETCH, $17,690 mcap, $15,745 5m vol): PASS at conviction 2, PASS: chasing spike, 14 same-ticker copies, and a 4.3% bundle cluster in the field. Blocker: "chasing spike" (V1, V6, V13).  
@@ -94,8 +96,6 @@ Updated 2026-11-22T14:32:41Z (paper trading, never real money)
   CA `95C2ZFW6jfMch1iEKAbbSdB56orJ2gTbxxtn2cDvpump`
 - 13:44Z Max (MIGRATED, $557,871 mcap, $5,119 5m vol): PASS at conviction 3, PASS: no story, no printed higher low, sellers on the 5m, and an 11-copy same-name field. Blockers: "no catalyst", "flow below pace", "no higher low", "split crowd" (V1, V3, V6).  
   CA `5qaP7oKUqKffwwo5DaEqDoTtsBLMpdbQTxEkCDaTpump`
-- 13:34Z DIGS (DIP, $278,502 mcap, $2,643 5m vol): REJECT, Bundles: 10 linked wallet cluster(s) hold 100.0% of supply (>20%) (V17)  
-  CA `9QT8K685Hrae4k11dhGXirdtpfAaimExtyfwt8cPpump`
 
 ## What its skips did next (last 48h)
 A skip "ran" if the coin reached the first target (1.5x) from the skip price before a 20% drop, "dumped" if the drop came first. Sampled every 10 min, followed 6h.
@@ -109,26 +109,28 @@ A skip "ran" if the coin reached the first target (1.5x) from the skip price bef
 - top 10 over 25%: blocked 22, ran 1, dumped 20, flat 0, open 1 (saving losses: keep it)
   - ran: :) up to 1.65x  
     CA `Dtx414D8jurspmB1jqJWsYU66pemoXRjQeXx7TC1pump`
-- near the high / chasing: blocked 21, ran 4, dumped 16, flat 0, open 1 (saving losses: keep it)
+- near the high / chasing: blocked 21, ran 4, dumped 17, flat 0, open 0 (saving losses: keep it)
   - ran: Trader up to 2.04x  
     CA `BYKQkHKMWHidNBLQXgt7NX4PLUtJZRYGLWQYkJzPGenX`
   - ran: CUNTS up to 1.61x  
     CA `7CvW68FD9KjNYGByfykhaNps7VNPLN8dFwMRfmgQpump`
   - ran: PushCoin up to 1.53x  
     CA `3N6Mp8YQuVDfEtyuyJS72s4MRrgQuKY34gvYZD5Kpump`
-- too new / sniping: blocked 19, ran 2, dumped 15, flat 1, open 1 (saving losses: keep it)
+- too new / sniping: blocked 19, ran 3, dumped 15, flat 1, open 0 (saving losses: keep it)
   - ran: TA up to 1.77x  
     CA `DKUM8qywmi8X9RYK2wUgnTw8QKjh1nYDThZR1GXPpump`
   - ran: SANTAHAT up to 3x  
     CA `5fWLSMA5HoK9W4VoTMi4c3qjyu3N2LsKRSM8Ffpgpump`
-- RugCheck danger: blocked 17, ran 3, dumped 14, flat 0, open 0 (saving losses: keep it)
+  - ran: KYC up to 2.37x  
+    CA `47YCrfUmSQUF9vnPsPGSzrmTcxttdRAWejCMkhrrpump`
+- RugCheck danger: blocked 17, ran 3, dumped 13, flat 0, open 1 (saving losses: keep it)
   - ran: TOP up to 1.67x  
     CA `hT9xKkj6dPMz97zcxEEE5T5fFdm6x31P6FodwT8pump`
   - ran: CAP up to 2.6x  
     CA `CxGYpWoTun4J3xD4cNwXFRn2W3RzJozTxyU9nbJ4pump`
   - ran: MIHAOMAS up to 1.62x  
     CA `3XsFunPdji9U1EgJXokZysw8SB3t74un89b6KLEVpump`
-- falling knife (code): blocked 12, ran 2, dumped 9, flat 1, open 0 (saving losses: keep it)
+- falling knife (code): blocked 11, ran 2, dumped 8, flat 1, open 0 (saving losses: keep it)
   - ran: RIZZMAS3 up to 1.84x  
     CA `BQcV4Ryfu9bZK8egAF89AhkojdJqAaDt4xTFwUQ2pump`
   - ran: STREETS up to 1.73x  
@@ -193,11 +195,11 @@ Not quiet. Three themes are moving across the scan. (1) Fresh pump.fun launches 
 ## Moving most in its scans, last 30 min (1h volume)
 - FSDV15: $615,642 1h vol, $651,231 mcap, +396% 1h  
   CA `3P7FLAbXeu7Mjc8SnyfLet8vwNCuk8HaXbjdxHgMpump`
-- BLOB: $274,266 1h vol, $17,169,973 mcap, +23% 1h  
+- BLOB: $267,134 1h vol, $16,750,040 mcap, +21% 1h  
   CA `8s11PkgQt4ZzdZ7oo84hK5t9HG1EvdgAjcg4W7Lpump`
-- DESSA: $215,727 1h vol, $3,385,484 mcap, +21% 1h  
-  CA `npz2FhoufQ7pKqhGpaipYWacrAkidyW2yDpVWSvpump`
-- PushCoin: $108,586 1h vol, $1,321,250 mcap, +32% 1h  
-  CA `3N6Mp8YQuVDfEtyuyJS72s4MRrgQuKY34gvYZD5Kpump`
 - KYC: $59,060 1h vol, $24,456 mcap, +1100% 1h  
   CA `47YCrfUmSQUF9vnPsPGSzrmTcxttdRAWejCMkhrrpump`
+- Betty: $54,770 1h vol, $18,103 mcap, +582% 1h  
+  CA `8ooT17cWPRGfXr9DDPyBQHaqLz2GnAm3jkaR6MGYfz3c`
+- DIGS: $43,339 1h vol, $276,760 mcap, +0% 1h  
+  CA `9QT8K685Hrae4k11dhGXirdtpfAaimExtyfwt8cPpump`
