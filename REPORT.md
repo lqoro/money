@@ -1,13 +1,13 @@
 # Trencher live report
 
-Updated 2026-11-22T17:06:28Z (paper trading, never real money)
+Updated 2026-11-22T17:37:26Z (paper trading, never real money)
 
 - Equity: $74.23 (-25.8% vs $100 start)
 - Closed trades: 22, 3 wins
 - Fees paid: $14.78 (axiom $2.81, network $9.18, pool $2.66), plus $4.15 lost to slippage
 - New trades: WATCH-ONLY (scans and decides, buys nothing)
-- Brain: subscription, claude-haiku-5-5 for routine calls, claude-opus-5-5 for the daily review; 267 routine calls and 0 plan-limit hits in 48h
-- Watch log: 55 coins being followed, 2670 filed, 0 would-buys (6h follow, sampled every 2 min)
+- Brain: subscription, claude-haiku-5-5 for routine calls, claude-opus-5-5 for the daily review; 265 routine calls and 0 plan-limit hits in 48h
+- Watch log: 56 coins being followed, 2673 filed, 0 would-buys (6h follow, sampled every 2 min)
 
 ## Scorecard (after fees)
 - 22 closed, 3 won (14%), net $-25.79
@@ -73,9 +73,17 @@ Updated 2026-11-22T17:06:28Z (paper trading, never real money)
   CA `H4gHnZ3NCU7Z9XQwGX6YYJNyieGEW8pqwGRUcdSxpump`
 
 ## Last scan
-- 16:54Z: 33 coins, 32 with pairs, 2 passed the market filters, 2 researched
+- 17:14Z: 39 coins, 38 with pairs, 4 passed the market filters, 4 researched
 
 ## Coins it looked at, and why it passed
+- 17:36Z Max (MIGRATED, $570,315 mcap, $160 5m vol): REJECT, 5m volume $160 is dead (<$2,000) (V1)  
+  CA `5qaP7oKUqKffwwo5DaEqDoTtsBLMpdbQTxEkCDaTpump`
+- 17:34Z PushCoin (MIGRATED, $1,554,290 mcap, $2,740 5m vol): PASS, PASS — brain unavailable, not trading blind.  
+  CA `3N6Mp8YQuVDfEtyuyJS72s4MRrgQuKY34gvYZD5Kpump`
+- 17:27Z MCAT (MIGRATED, $186,904 mcap, $7,540 5m vol): PASS, PASS — brain unavailable, not trading blind.  
+  CA `v4GK8f24ZJJa5qLoTJ4mJ5d6jsNUXHScwGaRHdfpump`
+- 17:20Z poorcat (MIGRATED, $40,974 mcap, $8,370 5m vol): PASS, PASS — brain unavailable, not trading blind.  
+  CA `2w4jvePDKqNfzn8g358kGhoJn8vRhvQUYck4xLB1pump`
 - 17:05Z FOAM (MIGRATED, $83,328 mcap, $65,030 5m vol): PASS, PASS — brain unavailable, not trading blind.  
   CA `2MdCPWNFufmJSZhajSvi1yqBFTB24GQ4ipjNcB8Vpump`
 - 16:59Z BLOB (DIP, $7,356,173 mcap, $78,121 5m vol): PASS, PASS — brain unavailable, not trading blind.  
@@ -88,14 +96,6 @@ Updated 2026-11-22T17:06:28Z (paper trading, never real money)
   CA `3N6Mp8YQuVDfEtyuyJS72s4MRrgQuKY34gvYZD5Kpump`
 - 16:24Z Max (MIGRATED, $587,056 mcap, $2,725 5m vol): PASS at conviction 3, PASS: Max is a 5m spike with sellers in control (buy share 0.29), no printed higher low, and a dead one-word meta. Chasing and no catalyst (V1, V6).  
   CA `5qaP7oKUqKffwwo5DaEqDoTtsBLMpdbQTxEkCDaTpump`
-- 16:22Z MCAT (MIGRATED, $176,005 mcap, $7,929 5m vol): PASS at conviction 3, PASS: no breakout. MCAT is down 5% on 5m and 11% on the hour, 5m flow is $7.9k under the $10k bar, and the largest bundle is 4.85% in a 20-copy cat field. Bottom buy with no catalyst. (V1, V3, V6, V13)  
-  CA `v4GK8f24ZJJa5qLoTJ4mJ5d6jsNUXHScwGaRHdfpump`
-- 16:21Z ANCHOR (FINAL_STRETCH, $25,919 mcap, $60,571 5m vol): PASS at conviction 2, PASS. ANCHOR is 5 minutes old, up 1194%, one of 17 "anchor" copies, and it has no story behind it. Chasing a spike in a vamp field (V1, V3, V6).  
-  CA `ACHRgAkH9qoRXhi7grXLDoJN3QjwR3Kp1UnJN7uwEwFa`
-- 16:20Z DESSA (MIGRATED, $3,230,644 mcap, $7,828 5m vol): PASS at conviction 3, PASS: flow below pace (0.72x hourly), no catalyst, and a thin AI-yap meme on a borrowed name. (V1, V6, V13)  
-  CA `npz2FhoufQ7pKqhGpaipYWacrAkidyW2yDpVWSvpump`
-- 16:18Z Star (MIGRATED, $50,210 mcap, $62,004 5m vol): PASS at conviction 3, PASS: chasing spike at the high, 7 minutes old, 17 same-theme copies. Come back on a higher low. (V1, V6)  
-  CA `FD3ib3uP9upX5qUSSjhpZj7yBGN1HjyT5hzztQvMpump`
 
 ## What its skips did next (last 48h)
 A skip "ran" if the coin reached the first target (1.5x) from the skip price before a 20% drop, "dumped" if the drop came first. Sampled every 10 min, followed 6h.
@@ -106,11 +106,6 @@ A skip "ran" if the coin reached the first target (1.5x) from the skip price bef
     CA `EoV9JQYi57tqjyQbWLdXVarYpEu82FsP8SDnkbFmpump`
   - ran: Mandy up to 1.53x  
     CA `HmJRWZ8tFfuCY9A4MrSftnrvEFCApw1hyqHtb9Rzpump`
-- top 10 over 25%: blocked 22, ran 2, dumped 19, flat 0, open 1 (saving losses: keep it)
-  - ran: :) up to 1.65x  
-    CA `Dtx414D8jurspmB1jqJWsYU66pemoXRjQeXx7TC1pump`
-  - ran: GIF up to 2.16x  
-    CA `B6wM98qkQKP71mhPA48S7No6TxM4KaXdFojDTZeUpump`
 - near the high / chasing: blocked 21, ran 3, dumped 17, flat 0, open 1 (saving losses: keep it)
   - ran: Trader up to 2.04x  
     CA `BYKQkHKMWHidNBLQXgt7NX4PLUtJZRYGLWQYkJzPGenX`
@@ -125,17 +120,22 @@ A skip "ran" if the coin reached the first target (1.5x) from the skip price bef
     CA `5fWLSMA5HoK9W4VoTMi4c3qjyu3N2LsKRSM8Ffpgpump`
   - ran: KYC up to 2.37x  
     CA `47YCrfUmSQUF9vnPsPGSzrmTcxttdRAWejCMkhrrpump`
+- top 10 over 25%: blocked 20, ran 2, dumped 17, flat 0, open 1 (saving losses: keep it)
+  - ran: :) up to 1.65x  
+    CA `Dtx414D8jurspmB1jqJWsYU66pemoXRjQeXx7TC1pump`
+  - ran: GIF up to 2.16x  
+    CA `B6wM98qkQKP71mhPA48S7No6TxM4KaXdFojDTZeUpump`
 - RugCheck danger: blocked 15, ran 2, dumped 13, flat 0, open 0 (saving losses: keep it)
   - ran: CAP up to 2.6x  
     CA `CxGYpWoTun4J3xD4cNwXFRn2W3RzJozTxyU9nbJ4pump`
   - ran: MIHAOMAS up to 1.62x  
     CA `3XsFunPdji9U1EgJXokZysw8SB3t74un89b6KLEVpump`
+- brain paced: blocked 12, ran 1, dumped 5, flat 1, open 5 (saving losses: keep it)
+  - ran: STREETS up to 1.73x  
+    CA `82mseLFauphc2yutbaDGgViahquJ1jGVLpyof99xpump`
 - falling knife (code): blocked 11, ran 2, dumped 8, flat 1, open 0 (saving losses: keep it)
   - ran: RIZZMAS3 up to 1.84x  
     CA `BQcV4Ryfu9bZK8egAF89AhkojdJqAaDt4xTFwUQ2pump`
-  - ran: STREETS up to 1.73x  
-    CA `82mseLFauphc2yutbaDGgViahquJ1jGVLpyof99xpump`
-- brain paced: blocked 9, ran 1, dumped 4, flat 1, open 3 (saving losses: keep it)
   - ran: STREETS up to 1.73x  
     CA `82mseLFauphc2yutbaDGgViahquJ1jGVLpyof99xpump`
 - falling knife / no higher low: blocked 8, ran 2, dumped 2, flat 3, open 1 (mixed)
@@ -191,11 +191,11 @@ Not quiet, but the movers are split. The hot money is in pump.fun name-plays and
 ## Moving most in its scans, last 30 min (1h volume)
 - BLOB: $446,631 1h vol, $7,356,173 mcap, -62% 1h  
   CA `8s11PkgQt4ZzdZ7oo84hK5t9HG1EvdgAjcg4W7Lpump`
-- PushCoin: $50,675 1h vol, $1,377,536 mcap, +6% 1h  
-  CA `3N6Mp8YQuVDfEtyuyJS72s4MRrgQuKY34gvYZD5Kpump`
-- FRANK: $46,463 1h vol, $6,531 mcap, -82% 1h  
-  CA `8eyeL2ndAM1r3bShu8LLkAma8FkgzsFg1LMMCbjHpump`
-- DIGS: $40,488 1h vol, $276,317 mcap, -3% 1h  
-  CA `9QT8K685Hrae4k11dhGXirdtpfAaimExtyfwt8cPpump`
-- $BRUNO: $35,710 1h vol, $9,236 mcap, +56% 1h  
-  CA `GhEgybDFGFU4oEouFZWYSiaxsLiepSGbvR6XLJLnpump`
+- poorcat: $239,541 1h vol, $41,585 mcap, +50% 1h  
+  CA `2w4jvePDKqNfzn8g358kGhoJn8vRhvQUYck4xLB1pump`
+- SI: $204,539 1h vol, $1,335 mcap, -99% 1h  
+  CA `6e5a5QMg4Jf3ti8t9RYo3Yb8FZAYqwe8Tg5WMVaYpump`
+- MCAT: $157,509 1h vol, $196,764 mcap, +0% 1h  
+  CA `v4GK8f24ZJJa5qLoTJ4mJ5d6jsNUXHScwGaRHdfpump`
+- DESSA: $100,045 1h vol, $3,023,387 mcap, -4% 1h  
+  CA `npz2FhoufQ7pKqhGpaipYWacrAkidyW2yDpVWSvpump`
