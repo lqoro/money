@@ -1,13 +1,13 @@
 # Trencher live report
 
-Updated 2026-11-22T05:27:13Z (paper trading, never real money)
+Updated 2026-11-22T05:42:16Z (paper trading, never real money)
 
 - Equity: $74.23 (-25.8% vs $100 start)
 - Closed trades: 22, 3 wins
 - Fees paid: $14.78 (axiom $2.81, network $9.18, pool $2.66), plus $4.15 lost to slippage
 - New trades: WATCH-ONLY (scans and decides, buys nothing)
-- Brain: subscription, claude-haiku-5-5 for routine calls, claude-opus-5-5 for the daily review; 271 routine calls and 0 plan-limit hits in 48h
-- Watch log: 84 coins being followed, 2538 filed, 0 would-buys (6h follow, sampled every 2 min)
+- Brain: subscription, claude-haiku-5-5 for routine calls, claude-opus-5-5 for the daily review; 273 routine calls and 0 plan-limit hits in 48h
+- Watch log: 82 coins being followed, 2543 filed, 0 would-buys (6h follow, sampled every 2 min)
 
 ## Scorecard (after fees)
 - 22 closed, 3 won (14%), net $-25.79
@@ -73,9 +73,15 @@ Updated 2026-11-22T05:27:13Z (paper trading, never real money)
   CA `H4gHnZ3NCU7Z9XQwGX6YYJNyieGEW8pqwGRUcdSxpump`
 
 ## Last scan
-- 05:26Z: 2 coins, 2 with pairs, 0 passed the market filters, 0 researched
+- 05:41Z: 1 coins, 1 with pairs, 0 passed the market filters, 0 researched
 
 ## Coins it looked at, and why it passed
+- 05:40Z HOGE (DIP, $850,329 mcap, $7,740 5m vol): REJECT, Bundles: 9 linked wallet cluster(s) hold 27.6% of supply (>20%) (V17)  
+  CA `FVzqGqRmr4UH1Fif6dewmwbJ1p4YUZCu8dcw4Efopump`
+- 05:40Z greg (DIP, $299,473 mcap, $2,722 5m vol): PASS at conviction 3, PASS — DIP with no catalyst, no printed higher low, and one bundle cluster at 10.7%. Greg is 1 of 25 copies. Blocker: "dead story." (V1, V6, V13)  
+  CA `4Ye6Y6Vaic8cyPdfW2f9PcLhXkysBtSmV84G8X7spump`
+- 05:28Z CATEMAS (DIP, $134,642 mcap, $5,689 5m vol): PASS at conviction 3, PASS — CATEMAS is one of 18 "catemas" copies, the theme is at 0.48x pace, and no catalyst. Bottom buy with no story behind it. Farm-shaped chart. (V1, V3, V6)  
+  CA `kPqBsUZuogprbq15ZpACwDzbUHSAxTxbhRrxmrDpump`
 - 05:21Z Snowball (MIGRATED, $109,697 mcap, $18,680 5m vol): REJECT, Top 10 hold 26.0% ex-pool (>25%) (V13)  
   CA `B7a7t2hRCfDWvWCXniiL2RXr1ViUNfQrQ4ATr79wpump`
 - 05:19Z DESSA (DIP, $1,500,731 mcap, $4,496 5m vol): PASS at conviction 2, PASS: DESSA is a month-old news meme with no fresh catalyst, 5m volume $4.5k under the $10k bar, and the 3-hour pump has already retraced to its pre-pump base. Blocker: dead story. (V1, V6)  
@@ -90,25 +96,19 @@ Updated 2026-11-22T05:27:13Z (paper trading, never real money)
   CA `Fn95NtGXWPaJXc4N5y9rVkUq1NwZbjBNJzPVvNRLpump`
 - 04:45Z RARE (FINAL_STRETCH, $24,051 mcap, $22,798 5m vol): PASS at conviction 2, PASS: chasing spike, and the site doesn't show this CA. A 1-day-old domain with a 30% 5m candle at 0.9% off a +1078% hour is a lottery ticket, not a setup. (V1, V3, V13)  
   CA `2bBTwzgb6shcvaHXV8zSAxNCsj74Q9Bfzmz5Vd1mpump`
-- 04:43Z CATEMAS (DIP, $221,348 mcap, $5,501 5m vol): REJECT, Dip with fading attention is a falling knife, not a dip (5m at 0.48x the hour's pace, under 0.6x)  
-  CA `kPqBsUZuogprbq15ZpACwDzbUHSAxTxbhRrxmrDpump`
-- 04:36Z RIZZMAS (MIGRATED, $93,053 mcap, $4,264 5m vol): REJECT, RugCheck danger: Creator history of rugged tokens  
-  CA `6J3ApVu8dSLg1TJjBLWSTgmnvJXcH2YyF2iDC48Fpump`
-- 04:36Z Snowball (MIGRATED, $58,697 mcap, $43,935 5m vol): PASS at conviction 3, PASS: chasing spike. 5m is 4.3x hourly pace after a +24% candle, sells outnumber buys 947 to 862, and the project site doesn't show this CA. Twelve minutes old. Come back if it retraces and prints a higher low. (V1, V6, V13)  
-  CA `B7a7t2hRCfDWvWCXniiL2RXr1ViUNfQrQ4ATr79wpump`
 
 ## What its skips did next (last 48h)
 A skip "ran" if the coin reached the first target (1.5x) from the skip price before a 20% drop, "dumped" if the drop came first. Sampled every 10 min, followed 6h.
-- top 10 over 25%: blocked 29, ran 1, dumped 25, flat 1, open 2 (saving losses: keep it)
-  - ran: :) up to 1.65x  
-    CA `Dtx414D8jurspmB1jqJWsYU66pemoXRjQeXx7TC1pump`
-- flow below pace: blocked 28, ran 4, dumped 22, flat 0, open 2 (saving losses: keep it)
+- flow below pace: blocked 29, ran 4, dumped 23, flat 0, open 2 (saving losses: keep it)
   - ran: SWRDXSTFF up to 1.77x  
     CA `Csoj9XHJfBAxsKswqKKBENnGeoRDHtACfyYi7HmJpump`
   - ran: Trader up to 2.04x  
     CA `BYKQkHKMWHidNBLQXgt7NX4PLUtJZRYGLWQYkJzPGenX`
   - ran: Bust up to 1.55x  
     CA `EoV9JQYi57tqjyQbWLdXVarYpEu82FsP8SDnkbFmpump`
+- top 10 over 25%: blocked 27, ran 1, dumped 24, flat 1, open 1 (saving losses: keep it)
+  - ran: :) up to 1.65x  
+    CA `Dtx414D8jurspmB1jqJWsYU66pemoXRjQeXx7TC1pump`
 - near the high / chasing: blocked 21, ran 4, dumped 17, flat 0, open 0 (saving losses: keep it)
   - ran: ZOL up to 1.55x  
     CA `UQLWvkwiSsnViuVBy7oArMtzb5RAZyrdJ79amQFrzoL`
@@ -126,12 +126,12 @@ A skip "ran" if the coin reached the first target (1.5x) from the skip price bef
     CA `hT9xKkj6dPMz97zcxEEE5T5fFdm6x31P6FodwT8pump`
   - ran: CAP up to 2.6x  
     CA `CxGYpWoTun4J3xD4cNwXFRn2W3RzJozTxyU9nbJ4pump`
-- falling knife (code): blocked 15, ran 2, dumped 11, flat 1, open 1 (saving losses: keep it)
+- falling knife (code): blocked 14, ran 2, dumped 10, flat 1, open 1 (saving losses: keep it)
   - ran: RIZZMAS3 up to 1.84x  
     CA `BQcV4Ryfu9bZK8egAF89AhkojdJqAaDt4xTFwUQ2pump`
   - ran: STREETS up to 1.73x  
     CA `82mseLFauphc2yutbaDGgViahquJ1jGVLpyof99xpump`
-- thin 5m volume: blocked 10, ran 1, dumped 6, flat 2, open 1 (saving losses: keep it)
+- thin 5m volume: blocked 9, ran 1, dumped 6, flat 1, open 1 (saving losses: keep it)
   - ran: chud up to 1.55x  
     CA `EV7J2QaPXPytSkM1LD9GPRkgAbmSEr9R3kYiXBzbpump`
 - dev share over 1%: blocked 8, ran 2, dumped 4, flat 2, open 0 (saving losses: keep it)
@@ -139,12 +139,12 @@ A skip "ran" if the coin reached the first target (1.5x) from the skip price bef
     CA `BCTwG3LDhNcthcK374aWQfAzLYGRXDu1apmrqw3Tpump`
   - ran: Mfer up to 1.55x  
     CA `9tX1UpBGeNqMb1VqqzVumwzW71ybsNZFyWKYiL8Ppump`
-- bundles over the line: blocked 7, ran 0, dumped 4, flat 3, open 0 (saving losses: keep it)
-- falling knife / no higher low: blocked 7, ran 2, dumped 3, flat 2, open 0 (mixed)
+- falling knife / no higher low: blocked 8, ran 2, dumped 3, flat 2, open 1 (mixed)
   - ran: UrAnus up to 2.97x  
     CA `27u3diWofnXGUkddjLGhcy1nRssFKHW3RtNbpWzUpump`
   - ran: STREETS up to 1.73x  
     CA `82mseLFauphc2yutbaDGgViahquJ1jGVLpyof99xpump`
+- bundles over the line: blocked 7, ran 0, dumped 4, flat 2, open 1 (saving losses: keep it)
 
 ## Daily review (2026-11-21, claude-opus-5-5)
 Nothing has a positive after-cost edge. All 98 settled coins average -15.7% net under the simple plan, and every setup and stage is negative: MIGRATED -13.6% (n=70), FINAL_STRETCH -20.0% (n=14), DIP -21.7% (n=14). The main reason is the 9.5% average round-trip cost on a $10 buy. With a +50%/-20% bracket and that cost, a coin nets about +40% when it runs and about -30% when it dumps, so the plan breaks even only if roughly 42% of coins run. The observed rate is 16.3% (95% CI about 9–24%), so the overall verdict is solid even at n=98. The per-setup splits are not: n=14 gives about ±19 points, and coins from the same day and meta move together. I can't answer whether the routine model's would-buys beat its passes because it made zero would-buys. It declined all 49 coins it reviewed, including all 5 of the day's 4.5–5.5x runners. Even so, declining was right on average, since that reviewed group nets -16.2% under the simple plan.
@@ -187,11 +187,11 @@ The meta on the scan_movers tape is the "-mas" holiday-pun family, and it's spli
 ## Moving most in its scans, last 30 min (1h volume)
 - Snowball: $546,261 1h vol, $109,697 mcap, +298% 1h  
   CA `B7a7t2hRCfDWvWCXniiL2RXr1ViUNfQrQ4ATr79wpump`
-- snowball: $215,905 1h vol, $75,489 mcap, +159% 1h  
-  CA `3D7YQcnXi6RMjWxheiE8VLuGXJTtgQkmyugGYvzjpump`
+- SHIT: $209,029 1h vol, $30,240 mcap, -63% 1h  
+  CA `Fn95NtGXWPaJXc4N5y9rVkUq1NwZbjBNJzPVvNRLpump`
 - CORONA: $86,811 1h vol, $26,568 mcap, +1025% 1h  
   CA `6fVQAutGBLpyYJRiekVjSjvKidsmgZx14bKV5HSSpump`
-- PushCoin: $63,890 1h vol, $1,542,936 mcap, +1% 1h  
-  CA `3N6Mp8YQuVDfEtyuyJS72s4MRrgQuKY34gvYZD5Kpump`
-- CATEGIVING: $52,358 1h vol, $14,480 mcap, +28% 1h  
-  CA `FwSy225GBhQ9M29r8tHQELYEFpmT79tXzDEUb78fpump`
+- CATEMAS: $55,631 1h vol, $129,421 mcap, -50% 1h  
+  CA `kPqBsUZuogprbq15ZpACwDzbUHSAxTxbhRrxmrDpump`
+- TRUMPMAS: $50,304 1h vol, $4,464 mcap, +22% 1h  
+  CA `BWKPghxsaM1UDY95q3AhN4T53RtgdUubgjf9xNvKpump`
