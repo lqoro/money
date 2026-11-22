@@ -1,13 +1,13 @@
 # Trencher live report
 
-Updated 2026-11-22T07:28:19Z (paper trading, never real money)
+Updated 2026-11-22T07:43:24Z (paper trading, never real money)
 
 - Equity: $74.23 (-25.8% vs $100 start)
 - Closed trades: 22, 3 wins
 - Fees paid: $14.78 (axiom $2.81, network $9.18, pool $2.66), plus $4.15 lost to slippage
 - New trades: WATCH-ONLY (scans and decides, buys nothing)
-- Brain: subscription, claude-haiku-5-5 for routine calls, claude-opus-5-5 for the daily review; 271 routine calls and 0 plan-limit hits in 48h
-- Watch log: 75 coins being followed, 2571 filed, 0 would-buys (6h follow, sampled every 2 min)
+- Brain: subscription, claude-haiku-5-5 for routine calls, claude-opus-5-5 for the daily review; 270 routine calls and 0 plan-limit hits in 48h
+- Watch log: 71 coins being followed, 2575 filed, 0 would-buys (6h follow, sampled every 2 min)
 
 ## Scorecard (after fees)
 - 22 closed, 3 won (14%), net $-25.79
@@ -73,7 +73,7 @@ Updated 2026-11-22T07:28:19Z (paper trading, never real money)
   CA `H4gHnZ3NCU7Z9XQwGX6YYJNyieGEW8pqwGRUcdSxpump`
 
 ## Last scan
-- 07:27Z: 3 coins, 3 with pairs, 1 passed the market filters, 1 researched
+- 07:42Z: 5 coins, 5 with pairs, 0 passed the market filters, 0 researched
 
 ## Coins it looked at, and why it passed
 - 07:28Z CATEMAS (MIGRATED, $101,334 mcap, $2,474 5m vol): PASS at conviction 2, PASS. Cat-copy in a 17-copy field, not the leader, down 75.6% with lower lows and no higher low. Blocked by the dip band, the vamp split and a fading -mas meta (V1, V3, V6).  
@@ -99,7 +99,7 @@ Updated 2026-11-22T07:28:19Z (paper trading, never real money)
 
 ## What its skips did next (last 48h)
 A skip "ran" if the coin reached the first target (1.5x) from the skip price before a 20% drop, "dumped" if the drop came first. Sampled every 10 min, followed 6h.
-- flow below pace: blocked 27, ran 3, dumped 21, flat 0, open 3 (saving losses: keep it)
+- flow below pace: blocked 27, ran 3, dumped 22, flat 0, open 2 (saving losses: keep it)
   - ran: Trader up to 2.04x  
     CA `BYKQkHKMWHidNBLQXgt7NX4PLUtJZRYGLWQYkJzPGenX`
   - ran: Bust up to 1.55x  
@@ -116,22 +116,26 @@ A skip "ran" if the coin reached the first target (1.5x) from the skip price bef
 - top 10 over 25%: blocked 24, ran 1, dumped 21, flat 1, open 1 (saving losses: keep it)
   - ran: :) up to 1.65x  
     CA `Dtx414D8jurspmB1jqJWsYU66pemoXRjQeXx7TC1pump`
-- too new / sniping: blocked 21, ran 2, dumped 16, flat 1, open 2 (saving losses: keep it)
+- too new / sniping: blocked 21, ran 3, dumped 17, flat 1, open 0 (saving losses: keep it)
   - ran: TA up to 1.77x  
     CA `DKUM8qywmi8X9RYK2wUgnTw8QKjh1nYDThZR1GXPpump`
   - ran: SANTAHAT up to 3x  
     CA `5fWLSMA5HoK9W4VoTMi4c3qjyu3N2LsKRSM8Ffpgpump`
+  - ran: FIREBALL up to 1.75x  
+    CA `5o7AFuoNWsy7gQS85ospXhWFJRnxDwTtwTR3JF2Jpump`
 - RugCheck danger: blocked 18, ran 2, dumped 16, flat 0, open 0 (saving losses: keep it)
   - ran: TOP up to 1.67x  
     CA `hT9xKkj6dPMz97zcxEEE5T5fFdm6x31P6FodwT8pump`
   - ran: CAP up to 2.6x  
     CA `CxGYpWoTun4J3xD4cNwXFRn2W3RzJozTxyU9nbJ4pump`
-- falling knife (code): blocked 15, ran 2, dumped 10, flat 1, open 2 (saving losses: keep it)
+- falling knife (code): blocked 15, ran 3, dumped 11, flat 1, open 0 (saving losses: keep it)
   - ran: RIZZMAS3 up to 1.84x  
     CA `BQcV4Ryfu9bZK8egAF89AhkojdJqAaDt4xTFwUQ2pump`
   - ran: STREETS up to 1.73x  
     CA `82mseLFauphc2yutbaDGgViahquJ1jGVLpyof99xpump`
-- falling knife / no higher low: blocked 8, ran 2, dumped 2, flat 2, open 2 (mixed)
+  - ran: snowball up to 1.58x  
+    CA `3D7YQcnXi6RMjWxheiE8VLuGXJTtgQkmyugGYvzjpump`
+- falling knife / no higher low: blocked 8, ran 2, dumped 3, flat 2, open 1 (mixed)
   - ran: UrAnus up to 2.97x  
     CA `27u3diWofnXGUkddjLGhcy1nRssFKHW3RtNbpWzUpump`
   - ran: STREETS up to 1.73x  
@@ -187,11 +191,11 @@ Meta from scan_movers: the holiday "-mas" family is fading hard (SANTA -74% on $
 ## Moving most in its scans, last 30 min (1h volume)
 - snowball: $301,073 1h vol, $142,696 mcap, +45% 1h  
   CA `3D7YQcnXi6RMjWxheiE8VLuGXJTtgQkmyugGYvzjpump`
-- SANTA: $220,925 1h vol, $6,552 mcap, -86% 1h  
+- SANTA: $136,221 1h vol, $5,204 mcap, -90% 1h  
   CA `tZsjFu2CH1R23wEpbfXAYGc2KUaVrUbwofCNNNqpump`
 - MWG: $108,490 1h vol, $54,105 mcap, +18% 1h  
   CA `26iFWxkdpcf8qNzbzuuvJw9NrKnFPmu7tzLc6NWkpump`
-- ELVES: $85,505 1h vol, $21,325 mcap, +986% 1h  
-  CA `GRYVqbtwK1JuDpmXB5ogoEyQtFYgqxg7bKZc12bGpump`
 - BLOB: $81,101 1h vol, $7,705,402 mcap, +25% 1h  
   CA `8s11PkgQt4ZzdZ7oo84hK5t9HG1EvdgAjcg4W7Lpump`
+- CORONA: $57,563 1h vol, $49,972 mcap, -34% 1h  
+  CA `6fVQAutGBLpyYJRiekVjSjvKidsmgZx14bKV5HSSpump`
