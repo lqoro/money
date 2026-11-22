@@ -1,13 +1,13 @@
 # Trencher live report
 
-Updated 2026-11-22T13:32:18Z (paper trading, never real money)
+Updated 2026-11-22T13:47:27Z (paper trading, never real money)
 
 - Equity: $74.23 (-25.8% vs $100 start)
 - Closed trades: 22, 3 wins
 - Fees paid: $14.78 (axiom $2.81, network $9.18, pool $2.66), plus $4.15 lost to slippage
 - New trades: WATCH-ONLY (scans and decides, buys nothing)
-- Brain: subscription, claude-haiku-5-5 for routine calls, claude-opus-5-5 for the daily review; 265 routine calls and 0 plan-limit hits in 48h
-- Watch log: 45 coins being followed, 2646 filed, 0 would-buys (6h follow, sampled every 2 min)
+- Brain: subscription, claude-haiku-5-5 for routine calls, claude-opus-5-5 for the daily review; 264 routine calls and 0 plan-limit hits in 48h
+- Watch log: 47 coins being followed, 2646 filed, 0 would-buys (6h follow, sampled every 2 min)
 
 ## Scorecard (after fees)
 - 22 closed, 3 won (14%), net $-25.79
@@ -73,9 +73,13 @@ Updated 2026-11-22T13:32:18Z (paper trading, never real money)
   CA `H4gHnZ3NCU7Z9XQwGX6YYJNyieGEW8pqwGRUcdSxpump`
 
 ## Last scan
-- 13:31Z: 3 coins, 3 with pairs, 0 passed the market filters, 0 researched
+- 13:46Z: 10 coins, 10 with pairs, 0 passed the market filters, 0 researched
 
 ## Coins it looked at, and why it passed
+- 13:44Z Max (MIGRATED, $557,871 mcap, $5,119 5m vol): PASS at conviction 3, PASS: no story, no printed higher low, sellers on the 5m, and an 11-copy same-name field. Blockers: "no catalyst", "flow below pace", "no higher low", "split crowd" (V1, V3, V6).  
+  CA `5qaP7oKUqKffwwo5DaEqDoTtsBLMpdbQTxEkCDaTpump`
+- 13:34Z DIGS (DIP, $278,502 mcap, $2,643 5m vol): REJECT, Bundles: 10 linked wallet cluster(s) hold 100.0% of supply (>20%) (V17)  
+  CA `9QT8K685Hrae4k11dhGXirdtpfAaimExtyfwt8cPpump`
 - 13:26Z PushCoin (MIGRATED, $1,250,739 mcap, $7,680 5m vol): PASS at conviction 3, PASS: PushCoin, no catalyst, website says "Contract TBA" on a 1.7-day-old domain, and it's a $1.25M bag with no room to the high. Blocker: "no catalyst" (V1, V6, V13).  
   CA `3N6Mp8YQuVDfEtyuyJS72s4MRrgQuKY34gvYZD5Kpump`
 - 13:23Z GIFTER (MIGRATED, $60,557 mcap, $4,311 5m vol): PASS at conviction 3, PASS — Gifter is a 0.3-day-old "gift your coin" platform with a 0.3-day domain, no GitHub, no catalyst, and sellers ahead of buyers. Blocker: no catalyst on a bottom buy. (V1, V3, V13)  
@@ -92,14 +96,10 @@ Updated 2026-11-22T13:32:18Z (paper trading, never real money)
   CA `9QT8K685Hrae4k11dhGXirdtpfAaimExtyfwt8cPpump`
 - 12:40Z PushCoin (DIP, $1,020,439 mcap, $5,347 5m vol): PASS at conviction 2, PASS — DIP with no catalyst. Pushcoin theme has zero mentions, the CA isn't on its own site, and 5m flow is $5.3k. Blocker: no catalyst / dead story (V1, V3, V13).  
   CA `3N6Mp8YQuVDfEtyuyJS72s4MRrgQuKY34gvYZD5Kpump`
-- 12:36Z HIPPO (MIGRATED, $79,845 mcap, $6,190 5m vol): PASS at conviction 3, PASS: flow below pace, no catalyst, and the hippo theme is a 17-coin vamp field with 0.42x pace. Blocker: "flow below pace" (V1, V6, V3).  
-  CA `95NAbTyZopHGJK9TuisJZUHKAZSqRoSB3JPfqAqHpump`
-- 12:33Z DESSA (MIGRATED, $2,703,678 mcap, $3,071 5m vol): PASS at conviction 2, PASS — flow below pace, $3k on the 5m against a $10k bar, and it's 25% off its high with no rising story or catalyst. Bottom-buy rule blocks it. Clean holders don't make a fading meme a buy. (V1, V6)  
-  CA `npz2FhoufQ7pKqhGpaipYWacrAkidyW2yDpVWSvpump`
 
 ## What its skips did next (last 48h)
 A skip "ran" if the coin reached the first target (1.5x) from the skip price before a 20% drop, "dumped" if the drop came first. Sampled every 10 min, followed 6h.
-- flow below pace: blocked 31, ran 4, dumped 25, flat 1, open 1 (saving losses: keep it)
+- flow below pace: blocked 32, ran 4, dumped 25, flat 1, open 2 (saving losses: keep it)
   - ran: Trader up to 2.04x  
     CA `BYKQkHKMWHidNBLQXgt7NX4PLUtJZRYGLWQYkJzPGenX`
   - ran: Bust up to 1.55x  
@@ -116,7 +116,7 @@ A skip "ran" if the coin reached the first target (1.5x) from the skip price bef
     CA `7CvW68FD9KjNYGByfykhaNps7VNPLN8dFwMRfmgQpump`
   - ran: SANTA up to 1.85x  
     CA `tZsjFu2CH1R23wEpbfXAYGc2KUaVrUbwofCNNNqpump`
-- too new / sniping: blocked 19, ran 2, dumped 16, flat 1, open 0 (saving losses: keep it)
+- too new / sniping: blocked 18, ran 2, dumped 15, flat 1, open 0 (saving losses: keep it)
   - ran: TA up to 1.77x  
     CA `DKUM8qywmi8X9RYK2wUgnTw8QKjh1nYDThZR1GXPpump`
   - ran: SANTAHAT up to 3x  
@@ -185,13 +185,13 @@ Nothing has a positive edge after costs. All 166 settled coins averaged -11.3% n
 Not quiet. Scan volume is concentrated in fresh pump.fun animal and meme launches: Moon Cat (MCAT, 0.3h old, $61k cap, $44k 5m, 58% buys) and Flywheel (0.1h, $11.7k cap, $31.5k 5m, 62% buys) lead, with Felt The Mog (MOG, $7.9k 5m, 59% buys) and Hippocoin (HIPPO, 3.4h, $1.5k 5m, -52% in the hour) behind them. The one-word joke launches under about five hours old are mostly fading: Gifter (42% buys), Kaba (27% buys), and wishbone (0% buys, $2 5m) are seller-heavy, and only testicles ($2.3k 5m, 60% buys) and GIF ($1.6k 5m, 59% buys) show buyer share on thin volume. The mature tier is carrying real flow: BLOB ($14.3M cap, $11.4k 5m, 56% buys, +44% in the hour per scan) and PushCoin ($1.2M, $8.7k 5m, 56% buys). The Trump, GTA and Santa headlines are loud, but none of those names appear in the movers, so the news riders are not carrying flow right now. Setups to research: BLOB as a MIGRATED candidate, which sits inside the V6 range, though the web's 'down 31%, dip' read conflicts with the scan's +44% and I trust the scan; and MCAT only after it holds a $70k cap with 5m volume above $10k, since it is below the V6 floor, not because checks are missing. Holder, dev and bundle checks still have to run on each coin before any entry. Source note: the web text says HIPPO is absent from the scan, but it is in scan_movers, so I used the scan figures throughout.
 
 ## Moving most in its scans, last 30 min (1h volume)
-- BLOB: $251,984 1h vol, $14,341,926 mcap, +44% 1h  
+- BLOB: $219,466 1h vol, $14,001,670 mcap, +30% 1h  
   CA `8s11PkgQt4ZzdZ7oo84hK5t9HG1EvdgAjcg4W7Lpump`
-- MCAT: $244,540 1h vol, $61,156 mcap, +35% 1h  
-  CA `Awe61oS3Nk2DvJxCdDBquzfwf66r1QX8DJFJrfq4nEor`
-- HIPPO: $90,005 1h vol, $47,092 mcap, -52% 1h  
-  CA `95NAbTyZopHGJK9TuisJZUHKAZSqRoSB3JPfqAqHpump`
 - PushCoin: $70,099 1h vol, $1,206,719 mcap, +8% 1h  
   CA `3N6Mp8YQuVDfEtyuyJS72s4MRrgQuKY34gvYZD5Kpump`
+- HIPPO: $57,583 1h vol, $54,035 mcap, -30% 1h  
+  CA `95NAbTyZopHGJK9TuisJZUHKAZSqRoSB3JPfqAqHpump`
+- Flywheel: $57,056 1h vol, $11,152 mcap, +107% 1h  
+  CA `95C2ZFW6jfMch1iEKAbbSdB56orJ2gTbxxtn2cDvpump`
 - DESSA: $48,875 1h vol, $2,909,832 mcap, +11% 1h  
   CA `npz2FhoufQ7pKqhGpaipYWacrAkidyW2yDpVWSvpump`
