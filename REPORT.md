@@ -1,13 +1,13 @@
 # Trencher live report
 
-Updated 2026-11-22T01:09:59Z (paper trading, never real money)
+Updated 2026-11-22T01:25:06Z (paper trading, never real money)
 
 - Equity: $74.23 (-25.8% vs $100 start)
 - Closed trades: 22, 3 wins
 - Fees paid: $14.78 (axiom $2.81, network $9.18, pool $2.66), plus $4.15 lost to slippage
 - New trades: WATCH-ONLY (scans and decides, buys nothing)
-- Brain: subscription, claude-haiku-5-5 for routine calls, claude-opus-5-5 for the daily review; 279 routine calls and 0 plan-limit hits in 48h
-- Watch log: 88 coins being followed, 2480 filed, 0 would-buys (6h follow, sampled every 2 min)
+- Brain: subscription, claude-haiku-5-5 for routine calls, claude-opus-5-5 for the daily review; 278 routine calls and 0 plan-limit hits in 48h
+- Watch log: 87 coins being followed, 2483 filed, 0 would-buys (6h follow, sampled every 2 min)
 
 ## Scorecard (after fees)
 - 22 closed, 3 won (14%), net $-25.79
@@ -73,9 +73,13 @@ Updated 2026-11-22T01:09:59Z (paper trading, never real money)
   CA `H4gHnZ3NCU7Z9XQwGX6YYJNyieGEW8pqwGRUcdSxpump`
 
 ## Last scan
-- 01:09Z: 4 coins, 3 with pairs, 0 passed the market filters, 0 researched
+- 01:24Z: 3 coins, 3 with pairs, 0 passed the market filters, 0 researched
 
 ## Coins it looked at, and why it passed
+- 01:16Z GRAUDIA (MIGRATED, $145,405 mcap, $11,766 5m vol): REJECT, Dev holds 1.1% (>1%) (V13, V17)  
+  CA `B1oGtkaVAVZkdtWV7SXrHnFkcWC1Kd45sYpy6RYTpump`
+- 01:10Z BOOBILLIONS (MIGRATED, $109,397 mcap, $6,621 5m vol): PASS at conviction 3, PASS: flow below pace (0.5x hourly), no printed higher low, no catalyst, and the CA isn't on its own site. Blocker: "flow below pace". (V1, V6, V13)  
+  CA `13qebRhFyiB32FH9b1YYTgh8RW4VvmNEbi79eG28pump`
 - 01:08Z SANTAHAT (MIGRATED, $32,721 mcap, $5,474 5m vol): PASS at conviction 2, PASS: SANTAHAT is a 3-minute-old migration, not the leader of a 28-copy cult/santa field, and its flow is below pace. Blockers: "too new", "no breakout", "split crowd" (V1, V3).  
   CA `5fWLSMA5HoK9W4VoTMi4c3qjyu3N2LsKRSM8Ffpgpump`
 - 01:08Z Tots (FINAL_STRETCH, $19,849 mcap, $16,574 5m vol): REJECT, Top 10 hold 26.4% ex-pool (>25%) (V13)  
@@ -92,38 +96,36 @@ Updated 2026-11-22T01:09:59Z (paper trading, never real money)
   CA `Ak8pAMMeiqbu3tyE2MU33o8W2RfhLk1hXYsscnFkpump`
 - 00:47Z MANEKI (MIGRATED, $88,923 mcap, $2,611 5m vol): PASS at conviction 3, PASS: 5m flow at 0.79x pace on $2.6k, and the maneki theme is 21 copies doing 0.08x pace. Nothing live to buy into (V1, V6).  
   CA `G74SSWk4qF4BeWfyR53fVZYqdNWo9wH7UR55jF4uuxds`
-- 00:42Z MAYA (MIGRATED, $480,885 mcap, $12,081 5m vol): PASS at conviction 3, PASS: MAYA is down 88% from a $4.1M peak, a falling knife, not a dip. No printed higher low, no catalyst, and 24 copies of the ticker. (V1, V6)  
-  CA `FJKt1LxbWBpTRt9BaDEB6Wr2qL5LZzjFF5sx8rXnpump`
-- 00:41Z VICE (MIGRATED, $50,915 mcap, $60,057 5m vol): PASS at conviction 2, PASS. ViceCoin is 8 minutes old, up 97% on the 5m at 7.8x hourly pace, sitting on its own high with no higher low, and one of 29 "vice" copies splitting the crowd. Chasing a spike in a split field (V1, V3, V6).  
-  CA `GSR9ZVR7MH6z3dp6sAtPua5Xk8FWTVtjquk2vhVfpump`
 
 ## What its skips did next (last 48h)
 A skip "ran" if the coin reached the first target (1.5x) from the skip price before a 20% drop, "dumped" if the drop came first. Sampled every 10 min, followed 6h.
-- top 10 over 25%: blocked 28, ran 2, dumped 24, flat 1, open 1 (saving losses: keep it)
+- top 10 over 25%: blocked 27, ran 2, dumped 24, flat 1, open 0 (saving losses: keep it)
   - ran: :) up to 1.65x  
     CA `Dtx414D8jurspmB1jqJWsYU66pemoXRjQeXx7TC1pump`
   - ran: STREETS up to 1.63x  
     CA `82mseLFauphc2yutbaDGgViahquJ1jGVLpyof99xpump`
-- flow below pace: blocked 26, ran 4, dumped 18, flat 0, open 4 (saving losses: keep it)
+- flow below pace: blocked 27, ran 4, dumped 19, flat 0, open 4 (saving losses: keep it)
   - ran: SWRDXSTFF up to 1.77x  
     CA `Csoj9XHJfBAxsKswqKKBENnGeoRDHtACfyYi7HmJpump`
   - ran: Trader up to 2.04x  
     CA `BYKQkHKMWHidNBLQXgt7NX4PLUtJZRYGLWQYkJzPGenX`
   - ran: Bust up to 1.55x  
     CA `EoV9JQYi57tqjyQbWLdXVarYpEu82FsP8SDnkbFmpump`
-- too new / sniping: blocked 21, ran 2, dumped 17, flat 1, open 1 (saving losses: keep it)
+- too new / sniping: blocked 19, ran 3, dumped 15, flat 1, open 0 (saving losses: keep it)
   - ran: AudaCity up to 1.96x  
     CA `3rtTUCpe1BBgCTNWQ9jK3xkAz1E7SPqMt4uYHx1Bpump`
   - ran: TA up to 1.77x  
     CA `DKUM8qywmi8X9RYK2wUgnTw8QKjh1nYDThZR1GXPpump`
-- near the high / chasing: blocked 20, ran 5, dumped 15, flat 0, open 0 (saving losses: keep it)
+  - ran: SANTAHAT up to 3x  
+    CA `5fWLSMA5HoK9W4VoTMi4c3qjyu3N2LsKRSM8Ffpgpump`
+- near the high / chasing: blocked 19, ran 5, dumped 14, flat 0, open 0 (saving losses: keep it)
   - ran: BEAR up to 2.32x  
     CA `DCPm44cT9i39HjR13QHYgxkR7wEx9TDeniGuayB5pump`
   - ran: ZOL up to 1.55x  
     CA `UQLWvkwiSsnViuVBy7oArMtzb5RAZyrdJ79amQFrzoL`
   - ran: STICK up to 2.08x  
     CA `532iaQrhFCD3QKFHsAtFAQ1mQZMjMdNrPXLeCS6cpump`
-- RugCheck danger: blocked 17, ran 2, dumped 14, flat 0, open 1 (saving losses: keep it)
+- RugCheck danger: blocked 17, ran 2, dumped 15, flat 0, open 0 (saving losses: keep it)
   - ran: TOP up to 1.67x  
     CA `hT9xKkj6dPMz97zcxEEE5T5fFdm6x31P6FodwT8pump`
   - ran: CAP up to 2.6x  
@@ -132,19 +134,19 @@ A skip "ran" if the coin reached the first target (1.5x) from the skip price bef
 - thin 5m volume: blocked 11, ran 1, dumped 8, flat 1, open 1 (saving losses: keep it)
   - ran: chud up to 1.55x  
     CA `EV7J2QaPXPytSkM1LD9GPRkgAbmSEr9R3kYiXBzbpump`
-- falling knife / no higher low: blocked 10, ran 3, dumped 4, flat 0, open 3 (mixed)
+- falling knife / no higher low: blocked 10, ran 3, dumped 4, flat 1, open 2 (mixed)
   - ran: pCAT up to 1.58x  
     CA `BLdC7hwRijHudKYDmtEkx1SHUdBWm8XbjBCSvwa6pump`
   - ran: MACCA up to 1.71x  
     CA `C5eGEXJZYvXEbKdyvPtasksjGNV4xvMowpKM92bVv47f`
   - ran: UrAnus up to 2.97x  
     CA `27u3diWofnXGUkddjLGhcy1nRssFKHW3RtNbpWzUpump`
-- bundles over the line: blocked 8, ran 0, dumped 4, flat 1, open 3 (saving losses: keep it)
-- dev share over 1%: blocked 7, ran 2, dumped 3, flat 1, open 1 (mixed)
+- dev share over 1%: blocked 8, ran 2, dumped 4, flat 1, open 1 (saving losses: keep it)
   - ran: SANTINU up to 1.56x  
     CA `BCTwG3LDhNcthcK374aWQfAzLYGRXDu1apmrqw3Tpump`
   - ran: Mfer up to 1.55x  
     CA `9tX1UpBGeNqMb1VqqzVumwzW71ybsNZFyWKYiL8Ppump`
+- bundles over the line: blocked 8, ran 0, dumped 5, flat 2, open 1 (saving losses: keep it)
 
 ## Daily review (2026-11-21, claude-opus-5-5)
 Nothing has a positive after-cost edge. All 98 settled coins average -15.7% net under the simple plan, and every setup and stage is negative: MIGRATED -13.6% (n=70), FINAL_STRETCH -20.0% (n=14), DIP -21.7% (n=14). The main reason is the 9.5% average round-trip cost on a $10 buy. With a +50%/-20% bracket and that cost, a coin nets about +40% when it runs and about -30% when it dumps, so the plan breaks even only if roughly 42% of coins run. The observed rate is 16.3% (95% CI about 9–24%), so the overall verdict is solid even at n=98. The per-setup splits are not: n=14 gives about ±19 points, and coins from the same day and meta move together. I can't answer whether the routine model's would-buys beat its passes because it made zero would-buys. It declined all 49 coins it reviewed, including all 5 of the day's 4.5–5.5x runners. Even so, declining was right on average, since that reviewed group nets -16.2% under the simple plan.
@@ -182,16 +184,16 @@ Nothing has a positive after-cost edge. All 98 settled coins average -15.7% net 
 - [2026-11-02 20:25] I expected Slingoor, a clean MIGRATED leader with $25k of 5m flow at pace and a 0.77 buy share, to retest its $408k high from $304k. It never went green (0.98x peak) and hit the -20% stop in 2 minutes, a -$2.86 probe. My own thesis admitted there was no printed higher low after a peak only 6 minutes old, so this confirms the money-shape rule: buy share and flow are not structure (V1, V6). Next time a MIGRATED pullback with no higher low above the hourly low is a PASS with blocker "no higher low", not a probe. This is one loss, so it adds no new ban beyond the rule I already have.
 
 ## Meta right now
-Meta: fresh pump.fun launches with crude-joke, cult-slang and animal names are getting the volume and the buyers. "time" ($72k cap, 66% buys, +143% 1h), C@T ($215k, +511% 1h, $82k 5m, 86% buys), KAREN ($32k, 55% buys) and CUNTS ($22k, $9.5k 5m) are the active ones. Older dog and animal coins are fading or thin: MAYA ($719k, -26% 1h, only $2.5k 5m) and GATO (2,123h old, 33% buys, $503 5m). Trump and news-name coins aren't on the movers list, so the headlines aren't the trade (V1). Setups to research, no entries yet: "time" and KAREN fit the MIGRATED screen (pumpswap, under 12h, cap above $30k, 5m above $10k), so holder, bundle and dev checks come before any size (V1, V6). C@T is the strongest tape, but +511% in an hour is a chase, so it only qualifies on a pullback where buyers hold. SHIT is a DIP candidate: -63% in 1h with 89% buys on $13k 5m, and it only qualifies if its prior peak was above $70k (V1). The crawler's tapcash, Mfer and PUNANI figures don't match scan_movers, so I'm ignoring them. The tape is active, not quiet, and spike-and-dump, so every size stays small and conviction-based.
+Trencher: The trenches are running on fresh pump.fun launches (most movers are under 2h old) with rizz/holiday-joke and crude-slang names. RIZZMAS3 ($254k cap, $100k 5m, 63% buys) and time ($141k, $17k 5m, 59% buys) are the strongest tape, with Toys For Tots (pumpfun, $22k cap, $15.8k 5m, 66% buys) close behind. Rising: rizz/holiday names, time, and a few cat/animal coins like MANEKI (+83% 1h, but only $2k 5m). Fading or dead: RIZZGIVING (-74%), CUNTS (-28%, $3k 5m), Wow cat, SBS (25h old, 32% buys), and STREETS and C@T, which are both down ~98% with almost no 5m volume. The crawler's C@T (+511%, $215k) and SHIT dip figures don't match scan_movers, so I'm ignoring them; Trump and news-name coins aren't on the movers list, so headlines aren't the trade (V1). Setups to research, no entries yet: RIZZMAS3 and time fit the MIGRATED screen (pumpswap, under 12h, cap above $30k, 5m above $10k), but both are up hundreds of percent in an hour, so they only qualify on a pullback where buyers hold. Toys For Tots fits a near-bond FINAL_STRETCH read (watch for the pre-bond dump, V1). Holder, dev and bundle checks run on each before any size, and sizing stays small and conviction-based because this is a spike-and-dump tape.
 
 ## Moving most in its scans, last 30 min (1h volume)
-- STREETS: $887,379 1h vol, $1,786 mcap, -98% 1h  
-  CA `GY23CdhszidJZpLyNQ9PB63HPXq8RXqhnLtUYUH7pump`
-- time: $683,891 1h vol, $141,331 mcap, +391% 1h  
-  CA `Ak8pAMMeiqbu3tyE2MU33o8W2RfhLk1hXYsscnFkpump`
+- STREETS: $1,269,543 1h vol, $774,133 mcap, +578% 1h  
+  CA `82mseLFauphc2yutbaDGgViahquJ1jGVLpyof99xpump`
 - RIZZMAS3: $525,336 1h vol, $254,162 mcap, +836% 1h  
   CA `BQcV4Ryfu9bZK8egAF89AhkojdJqAaDt4xTFwUQ2pump`
-- C@T: $347,168 1h vol, $1,344 mcap, -99% 1h  
-  CA `8R7rompcCDEZKGjRRybZt1UrDrZTdmSXqFjDtvSCpump`
+- STREETS: $492,721 1h vol, $1,700 mcap, -100% 1h  
+  CA `GY23CdhszidJZpLyNQ9PB63HPXq8RXqhnLtUYUH7pump`
 - SHIT: $162,989 1h vol, $708,483 mcap, +19% 1h  
   CA `Fn95NtGXWPaJXc4N5y9rVkUq1NwZbjBNJzPVvNRLpump`
+- BOOBILLIONS: $157,385 1h vol, $109,397 mcap, +35% 1h  
+  CA `13qebRhFyiB32FH9b1YYTgh8RW4VvmNEbi79eG28pump`
