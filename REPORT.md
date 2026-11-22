@@ -1,13 +1,13 @@
 # Trencher live report
 
-Updated 2026-11-22T21:19:02Z (paper trading, never real money)
+Updated 2026-11-22T21:34:07Z (paper trading, never real money)
 
 - Equity: $74.23 (-25.8% vs $100 start)
 - Closed trades: 22, 3 wins
 - Fees paid: $14.78 (axiom $2.81, network $9.18, pool $2.66), plus $4.15 lost to slippage
 - New trades: WATCH-ONLY (scans and decides, buys nothing)
 - Brain: subscription, claude-haiku-5-5 for routine calls, claude-opus-5-5 for the daily review; 256 routine calls and 0 plan-limit hits in 48h
-- Watch log: 40 coins being followed, 2708 filed, 0 would-buys (6h follow, sampled every 2 min)
+- Watch log: 44 coins being followed, 2709 filed, 0 would-buys (6h follow, sampled every 2 min)
 
 ## Scorecard (after fees)
 - 22 closed, 3 won (14%), net $-25.79
@@ -73,9 +73,19 @@ Updated 2026-11-22T21:19:02Z (paper trading, never real money)
   CA `H4gHnZ3NCU7Z9XQwGX6YYJNyieGEW8pqwGRUcdSxpump`
 
 ## Last scan
-- 21:18Z: 1 coins, 1 with pairs, 1 passed the market filters, 1 researched
+- 21:33Z: 0 coins, 0 with pairs, 0 passed the market filters, 0 researched
 
 ## Coins it looked at, and why it passed
+- 21:31Z GATO (MIGRATED, $1,908,817 mcap, $2,357 5m vol): REJECT, Dev holds 2.7% (>1%) (V13, V17)  
+  CA `HsprHxBRgiVaQdRf3TnKNuZZtaX9JUSPgMFdAkk6pump`
+- 21:26Z SURREAL (FINAL_STRETCH, $18,268 mcap, $31,329 5m vol): PASS at conviction 3, PASS: 7 minutes old, up 677% in an hour, no X, no socials, no story, and it's already 34% off a $27.9k peak with no higher low. That's a spike bleeding out, not a base (V1, V6, V13).  
+  CA `HL4pJL7WhXWXJKDRCG7yqQiS2Um3XQQnUntp5Aftpump`
+- 21:24Z murph (MIGRATED, $41,772 mcap, $3,123 5m vol): REJECT, Dev holds 4.5% (>1%) (V13, V17)  
+  CA `BwgcBr42Zw5GsYQTiepwTng1pU2FRDK9oMvgj3tipump`
+- 21:21Z DIGS (DIP, $237,954 mcap, $3,406 5m vol): REJECT, Bundles: 10 linked wallet cluster(s) hold 100.0% of supply (>20%) (V17)  
+  CA `9QT8K685Hrae4k11dhGXirdtpfAaimExtyfwt8cPpump`
+- 21:20Z PushCoin (MIGRATED, $180,896 mcap, $2,762 5m vol): REJECT, RugCheck danger: Creator history of rugged tokens  
+  CA `3N6Mp8YQuVDfEtyuyJS72s4MRrgQuKY34gvYZD5Kpump`
 - 21:18Z cateball (MIGRATED, $1,180,188 mcap, $127,512 5m vol): PASS at conviction 4, PASS: chasing spike. cateball is up 25.8% in 5m at 7x its hourly pace and has no printed higher low, and the prior high is only 1.16x away. Clean holders, but the entry is wrong. (V1, V6)  
   CA `4npJ3avxnGhCzKbWQpLrQXAHsjWzKr4JqBsbu5Fspump`
 - 20:54Z SI2SI (FINAL_STRETCH, $15,472 mcap, $8,863 5m vol): PASS at conviction 2, PASS: SI2SI is a 7-minute-old pump.fun coin that just went up 656% in an hour on 8x pace. Chasing a spike with no story behind it (V1, V6).  
@@ -86,16 +96,6 @@ Updated 2026-11-22T21:19:02Z (paper trading, never real money)
   CA `FryQiSLqU7NfPvpQJRiYrVuvRRW66uB4FLorrKmjpump`
 - 20:36Z IF (DIP, $45,815 mcap, $2,636 5m vol): PASS at conviction 2, PASS: jagged saw-tooth chart, $2.6k 5m, theme pace 0.96x, no catalyst. This is a bottom buy with no story behind it (V1, V13).  
   CA `3hi7qBus11Xg9Pmj7xuuK9pjmKF7UUhT5uh7SXQbhsQt`
-- 20:35Z DIGS (DIP, $242,125 mcap, $2,883 5m vol): REJECT, Bundles: 10 linked wallet cluster(s) hold 100.0% of supply (>20%) (V17)  
-  CA `9QT8K685Hrae4k11dhGXirdtpfAaimExtyfwt8cPpump`
-- 20:35Z PushCoin (DIP, $1,052,456 mcap, $3,035 5m vol): PASS at conviction 3, PASS. Pushcoin is a DIP with no catalyst, no higher low, and a $3k 5m against a $10k bar. The owner bottom-buy rule blocks it. (V1, V6)  
-  CA `3N6Mp8YQuVDfEtyuyJS72s4MRrgQuKY34gvYZD5Kpump`
-- 20:35Z Max (MIGRATED, $481,085 mcap, $3,023 5m vol): PASS at conviction 2, PASS: bottom buy on a fading dog story, first resistance only 1.2x away, 5m flow $3k under the $10k bar, and the site is 11 days old and doesn't show this CA. Blocker: "target too close" (V1, V3, V6).  
-  CA `5qaP7oKUqKffwwo5DaEqDoTtsBLMpdbQTxEkCDaTpump`
-- 20:34Z GATO (MIGRATED, $1,957,789 mcap, $3,323 5m vol): REJECT, Dev holds 2.7% (>1%) (V13, V17)  
-  CA `HsprHxBRgiVaQdRf3TnKNuZZtaX9JUSPgMFdAkk6pump`
-- 20:34Z Heliogram (FINAL_STRETCH, $19,907 mcap, $10,538 5m vol): PASS at conviction 3, PASS: Heliogram is up 859% in an hour, sellers are winning the 5m (165 buys vs 247 sells), there is no printed higher low, and the project's own site doesn't show this CA. Chasing a run with no story behind it (V1, V3, V6).  
-  CA `HELio3Xy1xAJhbMA9fWZMpeNDjoeiM5LrmCJrrrxZ5zM`
 
 ## What its skips did next (last 48h)
 A skip "ran" if the coin reached the first target (1.5x) from the skip price before a 20% drop, "dumped" if the drop came first. Sampled every 10 min, followed 6h.
@@ -106,14 +106,14 @@ A skip "ran" if the coin reached the first target (1.5x) from the skip price bef
     CA `EoV9JQYi57tqjyQbWLdXVarYpEu82FsP8SDnkbFmpump`
   - ran: Mandy up to 1.53x  
     CA `HmJRWZ8tFfuCY9A4MrSftnrvEFCApw1hyqHtb9Rzpump`
-- near the high / chasing: blocked 20, ran 3, dumped 16, flat 0, open 1 (saving losses: keep it)
+- near the high / chasing: blocked 20, ran 4, dumped 16, flat 0, open 0 (saving losses: keep it)
   - ran: Trader up to 2.04x  
     CA `BYKQkHKMWHidNBLQXgt7NX4PLUtJZRYGLWQYkJzPGenX`
   - ran: CUNTS up to 1.61x  
     CA `7CvW68FD9KjNYGByfykhaNps7VNPLN8dFwMRfmgQpump`
   - ran: SANTA up to 1.85x  
     CA `tZsjFu2CH1R23wEpbfXAYGc2KUaVrUbwofCNNNqpump`
-- too new / sniping: blocked 19, ran 3, dumped 15, flat 1, open 0 (saving losses: keep it)
+- too new / sniping: blocked 20, ran 3, dumped 15, flat 1, open 1 (saving losses: keep it)
   - ran: TA up to 1.77x  
     CA `DKUM8qywmi8X9RYK2wUgnTw8QKjh1nYDThZR1GXPpump`
   - ran: SANTAHAT up to 3x  
@@ -125,6 +125,11 @@ A skip "ran" if the coin reached the first target (1.5x) from the skip price bef
     CA `Dtx414D8jurspmB1jqJWsYU66pemoXRjQeXx7TC1pump`
   - ran: GIF up to 2.16x  
     CA `B6wM98qkQKP71mhPA48S7No6TxM4KaXdFojDTZeUpump`
+- RugCheck danger: blocked 13, ran 2, dumped 10, flat 0, open 1 (saving losses: keep it)
+  - ran: CAP up to 2.6x  
+    CA `CxGYpWoTun4J3xD4cNwXFRn2W3RzJozTxyU9nbJ4pump`
+  - ran: MIHAOMAS up to 1.62x  
+    CA `3XsFunPdji9U1EgJXokZysw8SB3t74un89b6KLEVpump`
 - brain paced: blocked 12, ran 4, dumped 6, flat 2, open 0 (mixed)
   - ran: STREETS up to 1.73x  
     CA `82mseLFauphc2yutbaDGgViahquJ1jGVLpyof99xpump`
@@ -132,12 +137,7 @@ A skip "ran" if the coin reached the first target (1.5x) from the skip price bef
     CA `2MdCPWNFufmJSZhajSvi1yqBFTB24GQ4ipjNcB8Vpump`
   - ran: MCAT up to 2.52x  
     CA `BzPyyYCTmQNq2BcfQ4ANAvCYk54rnmQEXMFvFT8RhWMi`
-- RugCheck danger: blocked 12, ran 2, dumped 10, flat 0, open 0 (saving losses: keep it)
-  - ran: CAP up to 2.6x  
-    CA `CxGYpWoTun4J3xD4cNwXFRn2W3RzJozTxyU9nbJ4pump`
-  - ran: MIHAOMAS up to 1.62x  
-    CA `3XsFunPdji9U1EgJXokZysw8SB3t74un89b6KLEVpump`
-- falling knife / no higher low: blocked 10, ran 2, dumped 3, flat 4, open 1 (mixed)
+- falling knife / no higher low: blocked 9, ran 2, dumped 2, flat 4, open 1 (mixed)
   - ran: UrAnus up to 2.97x  
     CA `27u3diWofnXGUkddjLGhcy1nRssFKHW3RtNbpWzUpump`
   - ran: STREETS up to 1.73x  
@@ -147,7 +147,7 @@ A skip "ran" if the coin reached the first target (1.5x) from the skip price bef
     CA `BQcV4Ryfu9bZK8egAF89AhkojdJqAaDt4xTFwUQ2pump`
   - ran: STREETS up to 1.73x  
     CA `82mseLFauphc2yutbaDGgViahquJ1jGVLpyof99xpump`
-- dev share over 1%: blocked 5, ran 2, dumped 2, flat 0, open 1 (mixed)
+- dev share over 1%: blocked 6, ran 2, dumped 2, flat 0, open 2 (mixed)
   - ran: SANTINU up to 1.56x  
     CA `BCTwG3LDhNcthcK374aWQfAzLYGRXDu1apmrqw3Tpump`
   - ran: Mfer up to 1.55x  
@@ -195,11 +195,11 @@ Meta right now is cat coins and one-word internet-slang launches. Trump-named ti
 ## Moving most in its scans, last 30 min (1h volume)
 - cateball: $219,182 1h vol, $1,180,188 mcap, +80% 1h  
   CA `4npJ3avxnGhCzKbWQpLrQXAHsjWzKr4JqBsbu5Fspump`
-- retire: $133,976 1h vol, $2,258 mcap, -92% 1h  
+- retire: $96,275 1h vol, $2,046 mcap, -96% 1h  
   CA `BEcNCmXWhf4A42ZnPHv4Yctw5tL1jAJjPDW8BKdjpump`
-- ASS: $103,475 1h vol, $57,509 mcap, +28% 1h  
-  CA `8U9611BhPXG8ubN77wkeN7Gs1ooAXQLy65KQDZr9pump`
-- COPIUM: $102,520 1h vol, $1,290 mcap, -99% 1h  
-  CA `8mJmkdnmdpdVg7K8DurM6bdjpEqFta2BRYBgFsD8pump`
-- FSDV15: $74,786 1h vol, $1,286 mcap, -100% 1h  
-  CA `3e8uuctBvWyE3JsrhR5eJRuxhserb4WE6oZSvcGGpump`
+- PushCoin: $83,345 1h vol, $180,896 mcap, -83% 1h  
+  CA `3N6Mp8YQuVDfEtyuyJS72s4MRrgQuKY34gvYZD5Kpump`
+- SURREAL: $59,912 1h vol, $17,800 mcap, +657% 1h  
+  CA `HL4pJL7WhXWXJKDRCG7yqQiS2Um3XQQnUntp5Aftpump`
+- Heliogram: $55,863 1h vol, $17,258 mcap, -5% 1h  
+  CA `HELio3Xy1xAJhbMA9fWZMpeNDjoeiM5LrmCJrrrxZ5zM`
