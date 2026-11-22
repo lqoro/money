@@ -1,13 +1,13 @@
 # Trencher live report
 
-Updated 2026-11-22T22:19:44Z (paper trading, never real money)
+Updated 2026-11-22T22:34:48Z (paper trading, never real money)
 
 - Equity: $74.23 (-25.8% vs $100 start)
 - Closed trades: 22, 3 wins
 - Fees paid: $14.78 (axiom $2.81, network $9.18, pool $2.66), plus $4.15 lost to slippage
 - New trades: WATCH-ONLY (scans and decides, buys nothing)
-- Brain: subscription, claude-haiku-5-5 for routine calls, claude-opus-5-5 for the daily review; 262 routine calls and 0 plan-limit hits in 48h
-- Watch log: 56 coins being followed, 2716 filed, 0 would-buys (6h follow, sampled every 2 min)
+- Brain: subscription, claude-haiku-5-5 for routine calls, claude-opus-5-5 for the daily review; 263 routine calls and 0 plan-limit hits in 48h
+- Watch log: 55 coins being followed, 2721 filed, 0 would-buys (6h follow, sampled every 2 min)
 
 ## Scorecard (after fees)
 - 22 closed, 3 won (14%), net $-25.79
@@ -73,9 +73,17 @@ Updated 2026-11-22T22:19:44Z (paper trading, never real money)
   CA `H4gHnZ3NCU7Z9XQwGX6YYJNyieGEW8pqwGRUcdSxpump`
 
 ## Last scan
-- 22:18Z: 16 coins, 16 with pairs, 0 passed the market filters, 0 researched
+- 22:33Z: 0 coins, 0 with pairs, 0 passed the market filters, 0 researched
 
 ## Coins it looked at, and why it passed
+- 22:31Z OpenIndex (MIGRATED, $472,674 mcap, $22,087 5m vol): PASS at conviction 4, PASS — OpenIndex is a 36%-off-high bottom buy with no catalyst, no printed higher low and a 1.39x first target. Blocker: "no catalyst" (V1, V6).  
+  CA `FuKY3dk7QmpbDdQRjzbjB3G6PiCuqKNvN4dAWDpwpump`
+- 22:29Z HAZEL (FINAL_STRETCH, $19,881 mcap, $53,330 5m vol): PASS at conviction 2, PASS: chasing spike. HAZEL is up 737% on 5m at 12x its hourly pace, 5 minutes old, with 11 copies of the name and no story behind it. (V1, V6, V13)  
+  CA `GkwFJg5utarTAMDx5dAHxwA5QhbFAzkGNUiMvk8ipump`
+- 22:26Z MINELIUS (MIGRATED, $7,109,262 mcap, $167,842 5m vol): PASS at conviction 2, PASS — $7.1M mcap, 6% off its own high, no higher low, and the first resistance is the peak 1.07x away. Vamp field of 25 copies on a 0.9h-old coin with a tech claim on a 5-hour-old domain. Blockers: chasing, big cap no room, target too close. (V1, V6, V13)  
+  CA `E9rWKjVhHMxQkxfREr7Li8Yy46rVcWiWHoKVQAe9pump`
+- 22:24Z UCASH (MIGRATED, $1,211,376 mcap, $3,028 5m vol): PASS at conviction 3, PASS — 5.5% off the high is chasing, $3k on the 5m is under the $10k bar, and the site says "Contract coming soon" on a 0.4-day-old domain. Blocker: chasing. (V1, V6, V13)  
+  CA `7cFiqdT46zs7ooHWLFiLSaSQKLMibtokh9dBinsspump`
 - 22:17Z COPIUM (MIGRATED, $212,278 mcap, $9,128 5m vol): PASS at conviction 2, PASS: up 44% in 5 minutes, 8% off a 35-minute-old peak, flow at 0.37x pace, and the site doesn't show this CA. Chasing a fresh spike in a 14-copy field (V1, V6).  
   CA `BAKsQrynzwadyACDMsg3J5R8a4CTvj1u7kEYyjq7pump`
 - 22:15Z BTC (MIGRATED, $172,864 mcap, $15,622 5m vol): REJECT, Top 10 hold 32.2% ex-pool (>25%) (V13)  
@@ -88,50 +96,43 @@ Updated 2026-11-22T22:19:44Z (paper trading, never real money)
   CA `9QT8K685Hrae4k11dhGXirdtpfAaimExtyfwt8cPpump`
 - 22:06Z PushCoin (MIGRATED, $106,296 mcap, $3,636 5m vol): REJECT, RugCheck danger: Creator history of rugged tokens  
   CA `3N6Mp8YQuVDfEtyuyJS72s4MRrgQuKY34gvYZD5Kpump`
-- 22:04Z cateball (MIGRATED, $2,137,169 mcap, $3,639 5m vol): PASS at conviction 2, PASS. Flow below pace: $3.6k on the 5m at 0.11x the hourly average, and the first resistance is only 1.21x away. Sitting this one out. (V1, V6)  
-  CA `4npJ3avxnGhCzKbWQpLrQXAHsjWzKr4JqBsbu5Fspump`
-- 22:03Z COCKROACH (DIP, $63,718 mcap, $66,589 5m vol): PASS at conviction 2, PASS — COCKROACH is 5 minutes old, 40% off a peak made 18 minutes ago, with no higher low printed and 18 copies in its name field. Blocker: "too new" plus "no narrative". Let it age. (V1, V6)  
-  CA `Ex4qQDnV7LXeLFymQZZebrohCn3dxqr9NXDYxavfLoat`
-- 21:53Z fug (FINAL_STRETCH, $24,522 mcap, $18,254 5m vol): PASS at conviction 2, PASS — 16 coins named "fug", the project's own site says "$FUG not live yet. no contract," and this candle is up 45% in 5 minutes. Chasing a copy in a split crowd (V1, V3, V13).  
-  CA `qrAcqxJRNXdXPVW3CWXCFTGKPZdMVr8MavEVXNmpump`
-- 21:52Z Heliogram (FINAL_STRETCH, $15,545 mcap, $5,274 5m vol): PASS at conviction 3, PASS: Heliogram has no story and sellers are winning the 5m. Blocker: no narrative. (V1, V6)  
-  CA `HELio3Xy1xAJhbMA9fWZMpeNDjoeiM5LrmCJrrrxZ5zM`
 
 ## What its skips did next (last 48h)
 A skip "ran" if the coin reached the first target (1.5x) from the skip price before a 20% drop, "dumped" if the drop came first. Sampled every 10 min, followed 6h.
-- flow below pace: blocked 25, ran 4, dumped 19, flat 0, open 2 (saving losses: keep it)
-  - ran: Trader up to 2.04x  
-    CA `BYKQkHKMWHidNBLQXgt7NX4PLUtJZRYGLWQYkJzPGenX`
+- flow below pace: blocked 24, ran 4, dumped 19, flat 0, open 1 (saving losses: keep it)
   - ran: Bust up to 1.55x  
     CA `EoV9JQYi57tqjyQbWLdXVarYpEu82FsP8SDnkbFmpump`
   - ran: Mandy up to 1.53x  
     CA `HmJRWZ8tFfuCY9A4MrSftnrvEFCApw1hyqHtb9Rzpump`
-- too new / sniping: blocked 22, ran 6, dumped 15, flat 1, open 0 (saving losses: keep it)
+  - ran: snowball up to 1.59x  
+    CA `3D7YQcnXi6RMjWxheiE8VLuGXJTtgQkmyugGYvzjpump`
+- too new / sniping: blocked 23, ran 6, dumped 15, flat 1, open 1 (saving losses: keep it)
   - ran: TA up to 1.77x  
     CA `DKUM8qywmi8X9RYK2wUgnTw8QKjh1nYDThZR1GXPpump`
   - ran: SANTAHAT up to 3x  
     CA `5fWLSMA5HoK9W4VoTMi4c3qjyu3N2LsKRSM8Ffpgpump`
   - ran: KYC up to 2.37x  
     CA `47YCrfUmSQUF9vnPsPGSzrmTcxttdRAWejCMkhrrpump`
-- near the high / chasing: blocked 19, ran 3, dumped 16, flat 0, open 0 (saving losses: keep it)
-  - ran: Trader up to 2.04x  
-    CA `BYKQkHKMWHidNBLQXgt7NX4PLUtJZRYGLWQYkJzPGenX`
+- near the high / chasing: blocked 20, ran 2, dumped 16, flat 0, open 2 (saving losses: keep it)
   - ran: CUNTS up to 1.61x  
     CA `7CvW68FD9KjNYGByfykhaNps7VNPLN8dFwMRfmgQpump`
   - ran: SANTA up to 1.85x  
     CA `tZsjFu2CH1R23wEpbfXAYGc2KUaVrUbwofCNNNqpump`
-- top 10 over 25%: blocked 18, ran 3, dumped 14, flat 0, open 1 (saving losses: keep it)
+- top 10 over 25%: blocked 17, ran 2, dumped 15, flat 0, open 0 (saving losses: keep it)
   - ran: :) up to 1.65x  
     CA `Dtx414D8jurspmB1jqJWsYU66pemoXRjQeXx7TC1pump`
   - ran: GIF up to 2.16x  
     CA `B6wM98qkQKP71mhPA48S7No6TxM4KaXdFojDTZeUpump`
-  - ran: MINELIUS up to 2.35x  
-    CA `E9rWKjVhHMxQkxfREr7Li8Yy46rVcWiWHoKVQAe9pump`
 - RugCheck danger: blocked 13, ran 2, dumped 10, flat 0, open 1 (saving losses: keep it)
   - ran: CAP up to 2.6x  
     CA `CxGYpWoTun4J3xD4cNwXFRn2W3RzJozTxyU9nbJ4pump`
   - ran: MIHAOMAS up to 1.62x  
     CA `3XsFunPdji9U1EgJXokZysw8SB3t74un89b6KLEVpump`
+- falling knife / no higher low: blocked 11, ran 2, dumped 2, flat 4, open 3 (mixed)
+  - ran: UrAnus up to 2.97x  
+    CA `27u3diWofnXGUkddjLGhcy1nRssFKHW3RtNbpWzUpump`
+  - ran: STREETS up to 1.73x  
+    CA `82mseLFauphc2yutbaDGgViahquJ1jGVLpyof99xpump`
 - brain paced: blocked 11, ran 4, dumped 6, flat 1, open 0 (mixed)
   - ran: STREETS up to 1.73x  
     CA `82mseLFauphc2yutbaDGgViahquJ1jGVLpyof99xpump`
@@ -139,11 +140,6 @@ A skip "ran" if the coin reached the first target (1.5x) from the skip price bef
     CA `2MdCPWNFufmJSZhajSvi1yqBFTB24GQ4ipjNcB8Vpump`
   - ran: MCAT up to 2.52x  
     CA `BzPyyYCTmQNq2BcfQ4ANAvCYk54rnmQEXMFvFT8RhWMi`
-- falling knife / no higher low: blocked 10, ran 2, dumped 2, flat 4, open 2 (mixed)
-  - ran: UrAnus up to 2.97x  
-    CA `27u3diWofnXGUkddjLGhcy1nRssFKHW3RtNbpWzUpump`
-  - ran: STREETS up to 1.73x  
-    CA `82mseLFauphc2yutbaDGgViahquJ1jGVLpyof99xpump`
 - falling knife (code): blocked 8, ran 2, dumped 4, flat 1, open 1 (saving losses: keep it)
   - ran: RIZZMAS3 up to 1.84x  
     CA `BQcV4Ryfu9bZK8egAF89AhkojdJqAaDt4xTFwUQ2pump`
@@ -195,13 +191,13 @@ Nothing has a positive edge after costs. All 166 settled coins averaged -11.3% n
 The trenches are trading cat coins and fresh one-word slang launches on pump.fun, while the Trump lane and the dog lane are fading. cateball is the only coin here with both volume and buyers ($1.18M cap, $127k 5m, 76% buys), but it's already up 80% in an hour and 12 hours old, so it's a pullback watch with volume holding (V1, V6), not a chase. GTA6CAT has 84% buys but only $2.4k 5m on a 2,145-hour-old coin, which is a stale lane. SURREAL is six minutes old on the bonding curve at $17.8k cap with $30k 5m and 63% buys, so it's a Final Stretch watch for a clean chart near bond, not the +657% spike (V1). Fading: LIQUID (-86%, 11% buys), PushCoin (-83%), retire (-96%, $38 5m), and the Trump tickers. The web's MCAT and DELULU calls aren't in this scan, so I'm not weighing them until they show up in the data. Holder, dev and bundle checks haven't run on any of these yet, so none of them is cleared for sizing.
 
 ## Moving most in its scans, last 30 min (1h volume)
+- MINELIUS: $1,997,525 1h vol, $7,109,262 mcap, +11185% 1h  
+  CA `E9rWKjVhHMxQkxfREr7Li8Yy46rVcWiWHoKVQAe9pump`
+- Wojak: $686,856 1h vol, $17,894 mcap, -35% 1h  
+  CA `5eiLc9r79PkJquiFvYWdXJYtGNRjTpzot8MR7Z4Ppump`
 - cateball: $406,881 1h vol, $2,137,169 mcap, +206% 1h  
   CA `4npJ3avxnGhCzKbWQpLrQXAHsjWzKr4JqBsbu5Fspump`
 - COPIUM: $295,594 1h vol, $223,784 mcap, +581% 1h  
   CA `BAKsQrynzwadyACDMsg3J5R8a4CTvj1u7kEYyjq7pump`
-- FSDV15: $149,111 1h vol, $375,544 mcap, +870% 1h  
-  CA `3BcJ4SSCfbxDMrWcUDucyCWxMjmy4M2ECCtvxu86pump`
-- Normie: $92,904 1h vol, $2,768 mcap, +1% 1h  
-  CA `BkQjetCCLtsRjJUa3jD47WpwXy7oncZ5TzdjHHKERz7T`
-- SURREAL: $85,733 1h vol, $2,019 mcap, -14% 1h  
-  CA `HL4pJL7WhXWXJKDRCG7yqQiS2Um3XQQnUntp5Aftpump`
+- OpenIndex: $175,822 1h vol, $472,674 mcap, +17% 1h  
+  CA `FuKY3dk7QmpbDdQRjzbjB3G6PiCuqKNvN4dAWDpwpump`
