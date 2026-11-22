@@ -1,13 +1,13 @@
 # Trencher live report
 
-Updated 2026-11-22T20:33:45Z (paper trading, never real money)
+Updated 2026-11-22T20:48:55Z (paper trading, never real money)
 
 - Equity: $74.23 (-25.8% vs $100 start)
 - Closed trades: 22, 3 wins
 - Fees paid: $14.78 (axiom $2.81, network $9.18, pool $2.66), plus $4.15 lost to slippage
 - New trades: WATCH-ONLY (scans and decides, buys nothing)
-- Brain: subscription, claude-haiku-5-5 for routine calls, claude-opus-5-5 for the daily review; 250 routine calls and 0 plan-limit hits in 48h
-- Watch log: 46 coins being followed, 2690 filed, 0 would-buys (6h follow, sampled every 2 min)
+- Brain: subscription, claude-haiku-5-5 for routine calls, claude-opus-5-5 for the daily review; 257 routine calls and 0 plan-limit hits in 48h
+- Watch log: 43 coins being followed, 2702 filed, 0 would-buys (6h follow, sampled every 2 min)
 
 ## Scorecard (after fees)
 - 22 closed, 3 won (14%), net $-25.79
@@ -73,21 +73,36 @@ Updated 2026-11-22T20:33:45Z (paper trading, never real money)
   CA `H4gHnZ3NCU7Z9XQwGX6YYJNyieGEW8pqwGRUcdSxpump`
 
 ## Last scan
-- no scan yet since the last restart
+- 20:48Z: 0 coins, 0 with pairs, 0 passed the market filters, 0 researched
 
 ## Coins it looked at, and why it passed
-- none since the last restart
+- 20:46Z earball (DIP, $59,440 mcap, $2,474 5m vol): PASS at conviction 2, PASS: dead story, no catalyst, and price is already under the hourly low with no higher low. Falling knife on a DIP (V1, V6, V13).  
+  CA `FryQiSLqU7NfPvpQJRiYrVuvRRW66uB4FLorrKmjpump`
+- 20:36Z IF (DIP, $45,815 mcap, $2,636 5m vol): PASS at conviction 2, PASS: jagged saw-tooth chart, $2.6k 5m, theme pace 0.96x, no catalyst. This is a bottom buy with no story behind it (V1, V13).  
+  CA `3hi7qBus11Xg9Pmj7xuuK9pjmKF7UUhT5uh7SXQbhsQt`
+- 20:35Z DIGS (DIP, $242,125 mcap, $2,883 5m vol): REJECT, Bundles: 10 linked wallet cluster(s) hold 100.0% of supply (>20%) (V17)  
+  CA `9QT8K685Hrae4k11dhGXirdtpfAaimExtyfwt8cPpump`
+- 20:35Z PushCoin (DIP, $1,052,456 mcap, $3,035 5m vol): PASS at conviction 3, PASS. Pushcoin is a DIP with no catalyst, no higher low, and a $3k 5m against a $10k bar. The owner bottom-buy rule blocks it. (V1, V6)  
+  CA `3N6Mp8YQuVDfEtyuyJS72s4MRrgQuKY34gvYZD5Kpump`
+- 20:35Z Max (MIGRATED, $481,085 mcap, $3,023 5m vol): PASS at conviction 2, PASS: bottom buy on a fading dog story, first resistance only 1.2x away, 5m flow $3k under the $10k bar, and the site is 11 days old and doesn't show this CA. Blocker: "target too close" (V1, V3, V6).  
+  CA `5qaP7oKUqKffwwo5DaEqDoTtsBLMpdbQTxEkCDaTpump`
+- 20:34Z GATO (MIGRATED, $1,957,789 mcap, $3,323 5m vol): REJECT, Dev holds 2.7% (>1%) (V13, V17)  
+  CA `HsprHxBRgiVaQdRf3TnKNuZZtaX9JUSPgMFdAkk6pump`
+- 20:34Z Heliogram (FINAL_STRETCH, $19,907 mcap, $10,538 5m vol): PASS at conviction 3, PASS: Heliogram is up 859% in an hour, sellers are winning the 5m (165 buys vs 247 sells), there is no printed higher low, and the project's own site doesn't show this CA. Chasing a run with no story behind it (V1, V3, V6).  
+  CA `HELio3Xy1xAJhbMA9fWZMpeNDjoeiM5LrmCJrrrxZ5zM`
+- 20:34Z OpenIndex (MIGRATED, $544,984 mcap, $23,681 5m vol): PASS at conviction 3, PASS: flow below pace (0.83x), bottom buy with theme at 0.19x and no catalyst, no X or site to check. Crowded field of 17 copies. (V1, V6, V13)  
+  CA `FuKY3dk7QmpbDdQRjzbjB3G6PiCuqKNvN4dAWDpwpump`
 
 ## What its skips did next (last 48h)
 A skip "ran" if the coin reached the first target (1.5x) from the skip price before a 20% drop, "dumped" if the drop came first. Sampled every 10 min, followed 6h.
-- flow below pace: blocked 26, ran 4, dumped 19, flat 0, open 3 (saving losses: keep it)
+- flow below pace: blocked 25, ran 4, dumped 19, flat 1, open 1 (saving losses: keep it)
   - ran: Trader up to 2.04x  
     CA `BYKQkHKMWHidNBLQXgt7NX4PLUtJZRYGLWQYkJzPGenX`
   - ran: Bust up to 1.55x  
     CA `EoV9JQYi57tqjyQbWLdXVarYpEu82FsP8SDnkbFmpump`
   - ran: Mandy up to 1.53x  
     CA `HmJRWZ8tFfuCY9A4MrSftnrvEFCApw1hyqHtb9Rzpump`
-- near the high / chasing: blocked 18, ran 3, dumped 14, flat 0, open 1 (saving losses: keep it)
+- near the high / chasing: blocked 18, ran 3, dumped 15, flat 0, open 0 (saving losses: keep it)
   - ran: Trader up to 2.04x  
     CA `BYKQkHKMWHidNBLQXgt7NX4PLUtJZRYGLWQYkJzPGenX`
   - ran: CUNTS up to 1.61x  
@@ -106,17 +121,19 @@ A skip "ran" if the coin reached the first target (1.5x) from the skip price bef
     CA `Dtx414D8jurspmB1jqJWsYU66pemoXRjQeXx7TC1pump`
   - ran: GIF up to 2.16x  
     CA `B6wM98qkQKP71mhPA48S7No6TxM4KaXdFojDTZeUpump`
-- brain paced: blocked 13, ran 2, dumped 6, flat 1, open 4 (saving losses: keep it)
+- brain paced: blocked 12, ran 4, dumped 6, flat 2, open 0 (mixed)
   - ran: STREETS up to 1.73x  
     CA `82mseLFauphc2yutbaDGgViahquJ1jGVLpyof99xpump`
   - ran: FOAM up to 1.98x  
     CA `2MdCPWNFufmJSZhajSvi1yqBFTB24GQ4ipjNcB8Vpump`
+  - ran: MCAT up to 2.52x  
+    CA `BzPyyYCTmQNq2BcfQ4ANAvCYk54rnmQEXMFvFT8RhWMi`
 - RugCheck danger: blocked 12, ran 2, dumped 10, flat 0, open 0 (saving losses: keep it)
   - ran: CAP up to 2.6x  
     CA `CxGYpWoTun4J3xD4cNwXFRn2W3RzJozTxyU9nbJ4pump`
   - ran: MIHAOMAS up to 1.62x  
     CA `3XsFunPdji9U1EgJXokZysw8SB3t74un89b6KLEVpump`
-- falling knife / no higher low: blocked 8, ran 2, dumped 2, flat 4, open 0 (mixed)
+- falling knife / no higher low: blocked 10, ran 2, dumped 2, flat 4, open 2 (mixed)
   - ran: UrAnus up to 2.97x  
     CA `27u3diWofnXGUkddjLGhcy1nRssFKHW3RtNbpWzUpump`
   - ran: STREETS up to 1.73x  
@@ -126,7 +143,7 @@ A skip "ran" if the coin reached the first target (1.5x) from the skip price bef
     CA `BQcV4Ryfu9bZK8egAF89AhkojdJqAaDt4xTFwUQ2pump`
   - ran: STREETS up to 1.73x  
     CA `82mseLFauphc2yutbaDGgViahquJ1jGVLpyof99xpump`
-- dev share over 1%: blocked 5, ran 2, dumped 2, flat 1, open 0 (mixed)
+- dev share over 1%: blocked 5, ran 2, dumped 2, flat 0, open 1 (mixed)
   - ran: SANTINU up to 1.56x  
     CA `BCTwG3LDhNcthcK374aWQfAzLYGRXDu1apmrqw3Tpump`
   - ran: Mfer up to 1.55x  
@@ -169,16 +186,16 @@ Nothing has a positive edge after costs. All 166 settled coins averaged -11.3% n
 - [2026-11-02 20:25] I expected Slingoor, a clean MIGRATED leader with $25k of 5m flow at pace and a 0.77 buy share, to retest its $408k high from $304k. It never went green (0.98x peak) and hit the -20% stop in 2 minutes, a -$2.86 probe. My own thesis admitted there was no printed higher low after a peak only 6 minutes old, so this confirms the money-shape rule: buy share and flow are not structure (V1, V6). Next time a MIGRATED pullback with no higher low above the hourly low is a PASS with blocker "no higher low", not a probe. This is one loss, so it adds no new ban beyond the rule I already have.
 
 ## Meta right now
-Not quiet, but the movers are split. The hot money is in pump.fun name-plays and pop-culture jokes under about an hour old: MIKEDYSON is +1098% in 1h on $4k of 5m volume, Plurality has $49k of 5m on a $24.5k cap at 58% buys, and Justice For MengLan has $16.7k of 5m, with Jupiter Incident also in the mix. That is momentum, and most of it is a rug or a chase until proven otherwise (V1, V6). Brand and internet-slang launches are fading: KYC is -62% in 1h, Betty -41%, and GIF is only holding because it is already up 62%. Old one-word jokes are dead air: greg, Max and DIGS each do under $1k of 5m volume, and BLOB has $8k of 5m on a $16.5M cap, above the V6 $11M ceiling, so it is outside the recon range. Setups to research now: Plurality as a FINAL_STRETCH candidate (check its distance to bond and whether the $49k of 5m is organic or bundled), and MIKEDYSON only if it pulls back and holds, since +1098% in an hour is exit-liquidity territory. PushCoin, DESSA and Tesla FSD appear only in the web text, not the scan, so I am not weighing them.
+Meta right now is cat coins and one-word internet-slang launches. Trump-named tickers are fading. The cat cluster is the only group getting both volume and buyers: MCAT on pumpswap ($188k cap, $15.4k 5m) has a 0.47 buy ratio, so sellers are winning for now, and $MCAT on pump.fun ($13.5k cap, 72% buys) carries the same idea at an earlier stage with only $3.2k 5m. DELULU (pump.fun, $20k cap, +382% in 1h, 63% buys) is the slang lane, but its $4.6k 5m is under the $10k bar. Fading: the Inu/dog lane (-88% in 1h), tremp (-72%, $211 5m), and anything under $1k of 5m that is down big on the hour, which is dead air. The web's Trump dinner and record-low $TRUMP headlines back the Trump fade; Plurality and MIKEDYSON are not in this scan, so I'm not weighing them. Research only, no entry yet: MCAT as a MIGRATED candidate if the buy ratio gets back above 0.5 with 5m volume holding over $10k, and DELULU only if its 5m crosses $10k with buyers still ahead. Full holder, dev and bundle checks run on each before any sizing.
 
 ## Moving most in its scans, last 30 min (1h volume)
-- MCAT: $268,950 1h vol, $187,650 mcap, +37% 1h  
-  CA `v4GK8f24ZJJa5qLoTJ4mJ5d6jsNUXHScwGaRHdfpump`
-- Inu: $184,865 1h vol, $3,543 mcap, -88% 1h  
-  CA `848TM75nmuyK4hVsthw6qNWd5iVkY2nHJi3M1Trfbonk`
-- DELULU: $84,320 1h vol, $19,986 mcap, +382% 1h  
-  CA `A37ozuu1D1pP1cM27y1HYkSArVQbgsZNN7Va74yNpump`
-- tremp: $66,012 1h vol, $5,796 mcap, -72% 1h  
-  CA `7Y2NE9owdL29eQxSpAPu5EkPUM4X9RJsawTMQ8Yqpump`
-- $MCAT: $63,731 1h vol, $13,470 mcap, +53% 1h  
-  CA `AkKFSkpPnBRiQHZ82Acwrj9KR4LDfp2WDn7EgjeyML64`
+- GROKIA: $878,501 1h vol, $1,394 mcap, -99% 1h  
+  CA `Dor8iRexwiNfrD9MT3NobDQvwz97qwDV2ZKwPJDmpump`
+- OpenIndex: $340,961 1h vol, $544,984 mcap, +31% 1h  
+  CA `FuKY3dk7QmpbDdQRjzbjB3G6PiCuqKNvN4dAWDpwpump`
+- COPIUM: $286,897 1h vol, $1,303 mcap, -96% 1h  
+  CA `8mJmkdnmdpdVg7K8DurM6bdjpEqFta2BRYBgFsD8pump`
+- FSDV15: $184,654 1h vol, $1,286 mcap, -97% 1h  
+  CA `3e8uuctBvWyE3JsrhR5eJRuxhserb4WE6oZSvcGGpump`
+- Monkey: $153,464 1h vol, $6,977 mcap, -81% 1h  
+  CA `CH3WtieJabaXvVyAQqMgd1kNQL14WKJLmbXqiX4qpump`
