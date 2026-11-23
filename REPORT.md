@@ -1,13 +1,13 @@
 # Trencher live report
 
-Updated 2026-11-23T19:46:03Z (paper trading, never real money)
+Updated 2026-11-23T20:01:18Z (paper trading, never real money)
 
 - Equity: $74.23 (-25.8% vs $100 start)
 - Closed trades: 22, 3 wins
 - Fees paid: $14.78 (axiom $2.81, network $9.18, pool $2.66), plus $4.15 lost to slippage
 - New trades: WATCH-ONLY (scans and decides, buys nothing)
-- Brain: subscription, claude-haiku-5-5 for routine calls, claude-opus-5-5 for the daily review; 463 routine calls and 0 plan-limit hits in 48h
-- Watch log: 119 coins being followed, 2992 filed, 0 would-buys (6h follow, sampled every 2 min)
+- Brain: subscription, claude-haiku-5-5 for routine calls, claude-opus-5-5 for the daily review; 465 routine calls and 0 plan-limit hits in 48h
+- Watch log: 122 coins being followed, 2994 filed, 0 would-buys (6h follow, sampled every 2 min)
 
 ## Scorecard (after fees)
 - 22 closed, 3 won (14%), net $-25.79
@@ -73,9 +73,19 @@ Updated 2026-11-23T19:46:03Z (paper trading, never real money)
   CA `H4gHnZ3NCU7Z9XQwGX6YYJNyieGEW8pqwGRUcdSxpump`
 
 ## Last scan
-- 19:45Z: 4 coins, 4 with pairs, 0 passed the market filters, 0 researched
+- 20:01Z: 4 coins, 3 with pairs, 0 passed the market filters, 0 researched
 
 ## Coins it looked at, and why it passed
+- 19:59Z BTC (MIGRATED, $183,823 mcap, $14,569 5m vol): PASS at conviction 3, PASS — chasing spike, 0.6h old, 175% up on 5m, sitting at its high in a 23-copy vamp field. Blocker: "chasing spike" plus "too new" (V1, V6, V13).  
+  CA `ToDWKzWCNCECx3ukahtwUXVqFbHyKRNag7RJrDbpump`
+- 19:57Z PumpMeme (MIGRATED, $444,890 mcap, $1,978 5m vol): REJECT, 5m volume $1,978 is dead (<$2,000) (V1)  
+  CA `93uamrbDerKbUh8MSjNF1wDtxYvEUD1CS9BcHn1apump`
+- 19:56Z zPUSSY (FINAL_STRETCH, $26,749 mcap, $87,612 5m vol): PASS at conviction 2, PASS: chasing spike. zPUSSY is up 249% on 5m at 11.8x its hourly pace, six minutes old, with zero narrative mentions and no X or site. It's a copy in a 29-coin field. (V1, V6)  
+  CA `9Ma5dCc3q3LvrgDPnLHmqxGxzz6ekMwsyYFSu18o2DXL`
+- 19:53Z HI (MIGRATED, $68,475 mcap, $44,521 5m vol): PASS at conviction 2, PASS: chasing spike, too new. Up 169% on 5m with 3x hourly pace, 32 min after migration, no story behind it (V1, V6).  
+  CA `Bp6Aen8xiLqhKLHwb27dViwAsojLjhoSPhzpEZm7UmqC`
+- 19:50Z Misifú (FINAL_STRETCH, $15,964 mcap, $2,149 5m vol): REJECT, Top 10 hold 27.1% ex-pool (>25%) (V13)  
+  CA `6QNxWALwXWdCtbBHFQthmzrz5zZnYBsPo4YS5SVCpump`
 - 19:38Z HOGE (MIGRATED, $560,777 mcap, $3,785 5m vol): REJECT, Bundles: 9 linked wallet cluster(s) hold 27.7% of supply (>20%) (V17)  
   CA `FVzqGqRmr4UH1Fif6dewmwbJ1p4YUZCu8dcw4Efopump`
 - 19:38Z UCASH (MIGRATED, $906,919 mcap, $8,220 5m vol): PASS at conviction 3, PASS: bottom buy with no catalyst, theme pacing 0.79x, 1.3-day-old domain and a "product in development" page. Falling knife, not a dip (V1, V3, V13).  
@@ -86,19 +96,16 @@ Updated 2026-11-23T19:46:03Z (paper trading, never real money)
   CA `BAKsQrynzwadyACDMsg3J5R8a4CTvj1u7kEYyjq7pump`
 - 19:28Z JENSEN (MIGRATED, $1,306,723 mcap, $7,986 5m vol): REJECT, Top 10 hold 28.3% ex-pool (>25%) (V13)  
   CA `HKiMA2mKQHU2cjfZ4Kbmru5GBGCauSNqPtpu8cfmpump`
-- 19:24Z FIONA (MIGRATED, $2,663,436 mcap, $15,936 5m vol): REJECT, Bundles: 10 linked wallet cluster(s) hold 27.5% of supply (>20%) (V17)  
-  CA `B34nXKzCgsJb9ChLuSHPRpXLE3WFSWyeT8Cqkzzmpump`
-- 19:20Z sexcoin (MIGRATED, $42,179 mcap, $4,968 5m vol): REJECT, Bundles: 10 linked wallet cluster(s) hold 33.1% of supply (>20%) (V17)  
-  CA `42uiGgChB5gn1817XmAytoo6hR96WsSXCA3MipCipump`
-- 19:18Z SCINU (MIGRATED, $95,631 mcap, $2,677 5m vol): REJECT, Dev holds 6.5% (>1%) (V13, V17)  
-  CA `GHWEB3FsfqDbNBt9QxVU7kXkUh1cX7kFk5NVDkgApump`
-- 19:18Z psst (FINAL_STRETCH, $18,676 mcap, $6,075 5m vol): PASS at conviction 2, PASS: 762% 1h spike, already -25% off a 20-minute-old peak, no higher low, and a 1.8-day-old "privacy extension" with no GitHub. Blocker: no live story, no higher low (V1, V6, V7).  
-  CA `Gb5PN7CtQ4AhmLAdnpPNTVHDZJrRmGqRsGbEEsqMpump`
-- 19:18Z HUANG (DIP, $596,912 mcap, $22,387 5m vol): PASS at conviction 3, PASS: chasing spike. 5m is +49% and 1h is +85%, a sawtooth 15m chart, 16 same-ticker copies, no catalyst. Farm-shaped (V1, V13).  
-  CA `2pCeTXJe9WUWHCZ6DaDBbXuiDg6KEgYHD54RRzfUpump`
 
 ## What its skips did next (last 48h)
 A skip "ran" if the coin reached the first target (1.5x) from the skip price before a 20% drop, "dumped" if the drop came first. Sampled every 10 min, followed 6h.
+- too new / sniping: blocked 37, ran 8, dumped 28, flat 0, open 1 (saving losses: keep it)
+  - ran: SANTAHAT up to 3x  
+    CA `5fWLSMA5HoK9W4VoTMi4c3qjyu3N2LsKRSM8Ffpgpump`
+  - ran: KYC up to 2.37x  
+    CA `47YCrfUmSQUF9vnPsPGSzrmTcxttdRAWejCMkhrrpump`
+  - ran: Wojak up to 4.29x  
+    CA `5eiLc9r79PkJquiFvYWdXJYtGNRjTpzot8MR7Z4Ppump`
 - flow below pace: blocked 36, ran 5, dumped 29, flat 0, open 2 (saving losses: keep it)
   - ran: snowball up to 1.59x  
     CA `3D7YQcnXi6RMjWxheiE8VLuGXJTtgQkmyugGYvzjpump`
@@ -106,19 +113,12 @@ A skip "ran" if the coin reached the first target (1.5x) from the skip price bef
     CA `FuKY3dk7QmpbDdQRjzbjB3G6PiCuqKNvN4dAWDpwpump`
   - ran: hCAT up to 1.52x  
     CA `2FYs4vApfj4ErsggpFDfzMv1WvxnyiLtzNEj84mS6TLh`
-- too new / sniping: blocked 34, ran 8, dumped 26, flat 0, open 0 (saving losses: keep it)
-  - ran: SANTAHAT up to 3x  
-    CA `5fWLSMA5HoK9W4VoTMi4c3qjyu3N2LsKRSM8Ffpgpump`
-  - ran: KYC up to 2.37x  
-    CA `47YCrfUmSQUF9vnPsPGSzrmTcxttdRAWejCMkhrrpump`
-  - ran: Wojak up to 4.29x  
-    CA `5eiLc9r79PkJquiFvYWdXJYtGNRjTpzot8MR7Z4Ppump`
-- near the high / chasing: blocked 32, ran 2, dumped 28, flat 1, open 1 (saving losses: keep it)
+- near the high / chasing: blocked 31, ran 2, dumped 27, flat 1, open 1 (saving losses: keep it)
   - ran: CUNTS up to 1.61x  
     CA `7CvW68FD9KjNYGByfykhaNps7VNPLN8dFwMRfmgQpump`
   - ran: SANTA up to 1.85x  
     CA `tZsjFu2CH1R23wEpbfXAYGc2KUaVrUbwofCNNNqpump`
-- top 10 over 25%: blocked 23, ran 2, dumped 18, flat 1, open 2 (saving losses: keep it)
+- top 10 over 25%: blocked 24, ran 2, dumped 18, flat 1, open 3 (saving losses: keep it)
   - ran: GIF up to 2.16x  
     CA `B6wM98qkQKP71mhPA48S7No6TxM4KaXdFojDTZeUpump`
   - ran: SNP6900 up to 2.76x  
@@ -158,9 +158,11 @@ A skip "ran" if the coin reached the first target (1.5x) from the skip price bef
     CA `APa2jK3ZRK9XhuKHGXSFNDohfU5RfZZKajiv26qSvX2X`
   - ran: task up to 1.61x  
     CA `BJeEE9WCP1HZqT1D3heD9Do96D4dnEcNoDHspvQapump`
-- dev share over 1%: blocked 9, ran 1, dumped 4, flat 3, open 1 (saving losses: keep it)
-  - ran: Mfer up to 1.55x  
-    CA `9tX1UpBGeNqMb1VqqzVumwzW71ybsNZFyWKYiL8Ppump`
+- thin 5m volume: blocked 10, ran 2, dumped 6, flat 0, open 2 (saving losses: keep it)
+  - ran: chud up to 1.55x  
+    CA `EV7J2QaPXPytSkM1LD9GPRkgAbmSEr9R3kYiXBzbpump`
+  - ran: NINO up to 1.55x  
+    CA `BqekG1RSPUthaKfStu7Uvyvr1eR6TchrQMp1M5r5pump`
 
 ## Daily review (2026-11-23, claude-opus-5-5)
 Nothing has a positive after-cost edge yet. All 229 settled coins average -8.7% net on the simple plan. Before costs they average about +0.9%, so the 9.6% average round-trip cost on a $10 buy accounts for the whole loss. That is the same story as the 22 paper trades, where fees and slippage were $18.83 of the $25.79 lost. The best setup is FINAL_STRETCH: n=39, 35.9% hit 1.5x, -4.9% net. With a 1.5x target, a -20% stop and about 10% costs, a setup needs roughly 43% hitting the target to break even. At n=39 the hit rate's 95% range is about 21–51%, so this sample can't separate it from MIGRATED, from coin-flip noise or from breakeven. I can't say whether the routine model's would-buys beat its passes, because it made zero would-buys in 24h. The coins it passed on (n=157, -8.4%) did slightly better than the coins the checklist failed (n=70, -9.8%), but both lost money. Passing everything was the right call on average. One process note: the watch-only review was set for about Nov 10 and today is Nov 23, so the owner should decide whether this is still the plan.
@@ -198,16 +200,16 @@ Nothing has a positive after-cost edge yet. All 229 settled coins average -8.7% 
 - [2026-11-02 20:25] I expected Slingoor, a clean MIGRATED leader with $25k of 5m flow at pace and a 0.77 buy share, to retest its $408k high from $304k. It never went green (0.98x peak) and hit the -20% stop in 2 minutes, a -$2.86 probe. My own thesis admitted there was no printed higher low after a peak only 6 minutes old, so this confirms the money-shape rule: buy share and flow are not structure (V1, V6). Next time a MIGRATED pullback with no higher low above the hourly low is a PASS with blocker "no higher low", not a probe. This is one loss, so it adds no new ban beyond the rule I already have.
 
 ## Meta right now
-The meta is the Jensen Huang/Nvidia name cluster, but it's splitting and cooling. JENSEN (HKiMA…, $1.12M mcap) is up 1191% over 1h, but its 5m volume ($7.4k) is about 5% of its hourly pace, so the flow has mostly left. The only Jensen name still drawing real buyers is HUANG 2pCe (2pCeTX…, $312k mcap, $29k 5m, 85% buys, about half its hourly pace), while HUANG 4kFR… ($130k, 61% buys) and JENSENTHONG (-81% 1h, no net 5m buys) are fading, and two tokens share the "Official Jensen Huang" name, so the original isn't settled. Two other groups have flow: AI/tech brand names (Tesla FSD v15, $368k, $9k 5m, 76% buys; SUPER CLAUDIA INU, 0.4h old, +181% 1h, 75% buys) and young animal launches (Angry Birds Memes, $20k, 0.6h old, +637% 1h, 66% buys, 5m running above pace; Fiona the Hippo is 94h old with 45% buys, so it's aging). Trump dominates the headlines but no Trump token is in the movers, so the web confirms the news, not the trench meta, and the crawler's summary figures (JENSEN $174k, HUANG $360k, NBI, Lucia, FUCK!) don't reconcile with scan_movers, so I used the scan_movers numbers. Setups to research, not buy: 2pCe HUANG first, then Angry Birds Memes and Tesla FSD v15, each at probe size at most and only if the original, holder, dev and bundle checks come back clean, with the stop set before entry.
+The trenches are split, not one story. Fresh pump.fun launches with real 5-minute flow are rising: HI Hopeinu ($71k mcap, 0.5h old, $42.6k 5m at about 3x its hourly pace, 57% buys) and zPUSSY ($28k, $76k 5m, 55% buys). The Jensen/Nvidia name cluster is fading: JENSEN ($1.3M) is at about half its hourly 5m pace and -4% over 1h, and the newest launches are dumping (tap -56%, BERTCOIN -92% with zero 5m buys). The one AI/tech brand name still holding is Tesla FSD v15 ($214k, 22h old): -43% over 1h, but 5m volume is running above its hourly pace at 77% buys, so it's the dip-buy candidate worth researching. CHARLESTONAI (+828% 1h on $813 of 5m volume) is a spike with no flow, so pass. The web confirms the Trump dinner and record-low headlines, but no Trump token is in the movers, so that's news, not trench meta. Research only, probe size at most, stop set before entry: FSDV15 first (find its peak, then holders, dev and bundles), HI second, and zPUSSY only if checks come back clean, because $76k of 5m volume on a $28k coin is a farm signature. The crawler's HUANG 2pCe and Angry Birds names aren't in scan_movers, so I'm not treating them as live setups.
 
 ## Moving most in its scans, last 30 min (1h volume)
-- FIONA: $360,014 1h vol, $2,663,436 mcap, +59% 1h  
-  CA `B34nXKzCgsJb9ChLuSHPRpXLE3WFSWyeT8Cqkzzmpump`
-- HUANG: $241,849 1h vol, $596,912 mcap, +85% 1h  
-  CA `2pCeTXJe9WUWHCZ6DaDBbXuiDg6KEgYHD54RRzfUpump`
-- sexcoin: $172,987 1h vol, $41,447 mcap, -65% 1h  
-  CA `42uiGgChB5gn1817XmAytoo6hR96WsSXCA3MipCipump`
-- JENSEN: $164,731 1h vol, $1,306,723 mcap, -4% 1h  
-  CA `HKiMA2mKQHU2cjfZ4Kbmru5GBGCauSNqPtpu8cfmpump`
+- HI: $174,408 1h vol, $71,456 mcap, +129% 1h  
+  CA `Bp6Aen8xiLqhKLHwb27dViwAsojLjhoSPhzpEZm7UmqC`
+- CHARLESTONAI: $162,435 1h vol, $21,535 mcap, +828% 1h  
+  CA `nVs4Ec4nCVdCQk1xKSZ8YWMUYDUAfCdZkNRPM6fTsNH`
 - FSDV15: $142,025 1h vol, $213,890 mcap, -43% 1h  
   CA `3BcJ4SSCfbxDMrWcUDucyCWxMjmy4M2ECCtvxu86pump`
+- UCASH: $124,450 1h vol, $906,919 mcap, -12% 1h  
+  CA `7cFiqdT46zs7ooHWLFiLSaSQKLMibtokh9dBinsspump`
+- BTC: $107,608 1h vol, $183,823 mcap, +406% 1h  
+  CA `ToDWKzWCNCECx3ukahtwUXVqFbHyKRNag7RJrDbpump`
