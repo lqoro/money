@@ -1,13 +1,13 @@
 # Trencher live report
 
-Updated 2026-11-23T01:06:02Z (paper trading, never real money)
+Updated 2026-11-23T01:21:09Z (paper trading, never real money)
 
 - Equity: $74.23 (-25.8% vs $100 start)
 - Closed trades: 22, 3 wins
 - Fees paid: $14.78 (axiom $2.81, network $9.18, pool $2.66), plus $4.15 lost to slippage
 - New trades: WATCH-ONLY (scans and decides, buys nothing)
-- Brain: subscription, claude-haiku-5-5 for routine calls, claude-opus-5-5 for the daily review; 279 routine calls and 0 plan-limit hits in 48h
-- Watch log: 87 coins being followed, 2736 filed, 0 would-buys (6h follow, sampled every 2 min)
+- Brain: subscription, claude-haiku-5-5 for routine calls, claude-opus-5-5 for the daily review; 281 routine calls and 0 plan-limit hits in 48h
+- Watch log: 91 coins being followed, 2736 filed, 0 would-buys (6h follow, sampled every 2 min)
 
 ## Scorecard (after fees)
 - 22 closed, 3 won (14%), net $-25.79
@@ -73,9 +73,17 @@ Updated 2026-11-23T01:06:02Z (paper trading, never real money)
   CA `H4gHnZ3NCU7Z9XQwGX6YYJNyieGEW8pqwGRUcdSxpump`
 
 ## Last scan
-- 01:04Z: 4 coins, 4 with pairs, 1 passed the market filters, 1 researched
+- 01:20Z: 6 coins, 6 with pairs, 1 passed the market filters, 1 researched
 
 ## Coins it looked at, and why it passed
+- 01:20Z ZOL (MIGRATED, $191,222 mcap, $4,410 5m vol): PASS at conviction 2, PASS: Zolana (ZOL, Raydium) has no live story, 5m flow is $4.4k against a $10k bar, and the peak data is corrupt. Blocker: "no narrative, theme pace 0.34x" (V1, V6, V13).  
+  CA `AQfw8J74V17erZsmMz4oK474eVLBaP44gD33vVbhtHo5`
+- 01:17Z COPIUM (MIGRATED, $599,688 mcap, $5,189 5m vol): PASS at conviction 2, PASS. COPIUM flow is below pace (5m $5.2k at 0.88x its hourly average, under the $10k bar), and the site doesn't show this CA. Copy-cat field, no catalyst. (V1, V13)  
+  CA `BAKsQrynzwadyACDMsg3J5R8a4CTvj1u7kEYyjq7pump`
+- 01:06Z cateball (MIGRATED, $1,758,412 mcap, $2,375 5m vol): PASS at conviction 2, PASS. cateball is a 16h-old copy in a 4-coin ticker field, 5m flow at 0.58x pace, and no printed higher low. Blocker: flow below pace, no higher low, no catalyst (V1, V6, V13).  
+  CA `4npJ3avxnGhCzKbWQpLrQXAHsjWzKr4JqBsbu5Fspump`
+- 01:06Z Hedge (FINAL_STRETCH, $20,801 mcap, $9,746 5m vol): REJECT, RugCheck danger: Low Liquidity $561.35  
+  CA `7S8k5qQfP2M48ixDLxDh6AgtwDo92eKxZ7WNmZt7pump`
 - 01:05Z singularity (FINAL_STRETCH, $15,305 mcap, $3,316 5m vol): REJECT, RugCheck danger: Creator history of rugged tokens  
   CA `5aR9BacmmxvUy8wQGTYKWC2vBS3Z8q2Y1VBC6JALpump`
 - 01:00Z DESSA (MIGRATED, $3,116,357 mcap, $9,578 5m vol): PASS at conviction 3, PASS: DESSA is clean on holders, but it's a $3.1M coin with the first resistance only 1.35x away and no live story behind a bottom buy. Big cap, no room (V6, V13).  
@@ -88,20 +96,14 @@ Updated 2026-11-23T01:06:02Z (paper trading, never real money)
   CA `3BcJ4SSCfbxDMrWcUDucyCWxMjmy4M2ECCtvxu86pump`
 - 00:48Z CATEGIVING (no setup, $29,781 mcap, $4,726 5m vol): REJECT, No setup fits: not Final Stretch, not a migrated runner, not a healthy dip  
   CA `APa2jK3ZRK9XhuKHGXSFNDohfU5RfZZKajiv26qSvX2X`
-- 00:42Z MINELIUS (MIGRATED, $7,385,908 mcap, $6,626 5m vol): PASS at conviction 3, PASS. Bottom buy with no story: 29% off a $10.4M peak, zero buzz, theme pace 0.82x, and a 7-hour-old domain pitching a privacy launchpad with no GitHub (V1, V13).  
-  CA `E9rWKjVhHMxQkxfREr7Li8Yy46rVcWiWHoKVQAe9pump`
-- 00:42Z cCAT (MIGRATED, $84,799 mcap, $28,475 5m vol): PASS at conviction 4, PASS — 15 minutes old, 9.7% off a peak printed 12 minutes ago, no higher low, and 17 cat copies splitting the crowd. Too new to chase (V1, V6, V13).  
-  CA `63aEoSt7oGthFR5koz1572CAL9dd7NYGp7sWeQyjpump`
-- 00:40Z UCASH (MIGRATED, $1,315,709 mcap, $2,506 5m vol): PASS at conviction 2, PASS: chasing a $1.3M coin 1.6% off its high, with 5m flow below pace and the project's own site not showing this CA. Blockers: chasing, flow below pace, CA not on the site. (V1, V3, V6)  
-  CA `7cFiqdT46zs7ooHWLFiLSaSQKLMibtokh9dBinsspump`
-- 00:34Z ZOL (MIGRATED, $200,921 mcap, $10,957 5m vol): PASS at conviction 2, PASS: flow at 0.37x its hourly pace, sellers ahead 8.4k to 4.6k over the hour, and five ZOL copies split the crowd. Blocker "flow below pace" (V1, V6, V13).  
-  CA `AQfw8J74V17erZsmMz4oK474eVLBaP44gD33vVbhtHo5`
 
 ## What its skips did next (last 48h)
 A skip "ran" if the coin reached the first target (1.5x) from the skip price before a 20% drop, "dumped" if the drop came first. Sampled every 10 min, followed 6h.
-- flow below pace: blocked 27, ran 1, dumped 18, flat 0, open 8 (saving losses: keep it)
+- flow below pace: blocked 27, ran 2, dumped 18, flat 0, open 7 (saving losses: keep it)
   - ran: snowball up to 1.59x  
     CA `3D7YQcnXi6RMjWxheiE8VLuGXJTtgQkmyugGYvzjpump`
+  - ran: OpenIndex up to 1.63x  
+    CA `FuKY3dk7QmpbDdQRjzbjB3G6PiCuqKNvN4dAWDpwpump`
 - too new / sniping: blocked 22, ran 6, dumped 15, flat 0, open 1 (saving losses: keep it)
   - ran: TA up to 1.77x  
     CA `DKUM8qywmi8X9RYK2wUgnTw8QKjh1nYDThZR1GXPpump`
@@ -119,9 +121,11 @@ A skip "ran" if the coin reached the first target (1.5x) from the skip price bef
     CA `Dtx414D8jurspmB1jqJWsYU66pemoXRjQeXx7TC1pump`
   - ran: GIF up to 2.16x  
     CA `B6wM98qkQKP71mhPA48S7No6TxM4KaXdFojDTZeUpump`
-- RugCheck danger: blocked 13, ran 1, dumped 11, flat 0, open 1 (saving losses: keep it)
+- RugCheck danger: blocked 14, ran 2, dumped 12, flat 0, open 0 (saving losses: keep it)
   - ran: MIHAOMAS up to 1.62x  
     CA `3XsFunPdji9U1EgJXokZysw8SB3t74un89b6KLEVpump`
+  - ran: Hedge up to 3.09x  
+    CA `7S8k5qQfP2M48ixDLxDh6AgtwDo92eKxZ7WNmZt7pump`
 - falling knife / no higher low: blocked 12, ran 2, dumped 3, flat 4, open 3 (mixed)
   - ran: UrAnus up to 2.97x  
     CA `27u3diWofnXGUkddjLGhcy1nRssFKHW3RtNbpWzUpump`
@@ -134,11 +138,13 @@ A skip "ran" if the coin reached the first target (1.5x) from the skip price bef
     CA `2MdCPWNFufmJSZhajSvi1yqBFTB24GQ4ipjNcB8Vpump`
   - ran: MCAT up to 2.52x  
     CA `BzPyyYCTmQNq2BcfQ4ANAvCYk54rnmQEXMFvFT8RhWMi`
-- falling knife (code): blocked 8, ran 2, dumped 5, flat 0, open 1 (saving losses: keep it)
+- falling knife (code): blocked 8, ran 3, dumped 5, flat 0, open 0 (mixed)
   - ran: RIZZMAS3 up to 1.84x  
     CA `BQcV4Ryfu9bZK8egAF89AhkojdJqAaDt4xTFwUQ2pump`
   - ran: STREETS up to 1.73x  
     CA `82mseLFauphc2yutbaDGgViahquJ1jGVLpyof99xpump`
+  - ran: OpenIndex up to 1.63x  
+    CA `FuKY3dk7QmpbDdQRjzbjB3G6PiCuqKNvN4dAWDpwpump`
 - dev share over 1%: blocked 7, ran 2, dumped 3, flat 0, open 2 (mixed)
   - ran: SANTINU up to 1.56x  
     CA `BCTwG3LDhNcthcK374aWQfAzLYGRXDu1apmrqw3Tpump`
@@ -189,11 +195,11 @@ The scan's meta is fresh pump.fun joke coins under about 3 hours old, at $15k to
 ## Moving most in its scans, last 30 min (1h volume)
 - FSDV15: $197,935 1h vol, $2,575,291 mcap, +14% 1h  
   CA `3BcJ4SSCfbxDMrWcUDucyCWxMjmy4M2ECCtvxu86pump`
-- cCAT: $147,134 1h vol, $84,799 mcap, +185% 1h  
-  CA `63aEoSt7oGthFR5koz1572CAL9dd7NYGp7sWeQyjpump`
-- ZOL: $128,387 1h vol, $1,309 mcap, -99% 1h  
-  CA `EWTJeCWUpyu5Mj2wH7qJuY1yPn7FfswHnmiTLpnapump`
-- PCRY: $127,150 1h vol, $6,224 mcap, +52% 1h  
-  CA `BSFmFyFFmRB3R4q7CXoqgDTm8LTBBwaJaQXnvubCpump`
+- ZOL: $113,897 1h vol, $204,056 mcap, -18% 1h  
+  CA `AQfw8J74V17erZsmMz4oK474eVLBaP44gD33vVbhtHo5`
 - singularity: $100,190 1h vol, $14,599 mcap, +57% 1h  
   CA `5aR9BacmmxvUy8wQGTYKWC2vBS3Z8q2Y1VBC6JALpump`
+- PCRY: $96,306 1h vol, $8,725 mcap, -55% 1h  
+  CA `BSFmFyFFmRB3R4q7CXoqgDTm8LTBBwaJaQXnvubCpump`
+- DESSA: $93,528 1h vol, $3,123,590 mcap, +0% 1h  
+  CA `npz2FhoufQ7pKqhGpaipYWacrAkidyW2yDpVWSvpump`
