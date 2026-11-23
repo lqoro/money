@@ -1,13 +1,13 @@
 # Trencher live report
 
-Updated 2026-11-23T03:22:14Z (paper trading, never real money)
+Updated 2026-11-23T03:37:29Z (paper trading, never real money)
 
 - Equity: $74.23 (-25.8% vs $100 start)
 - Closed trades: 22, 3 wins
 - Fees paid: $14.78 (axiom $2.81, network $9.18, pool $2.66), plus $4.15 lost to slippage
 - New trades: WATCH-ONLY (scans and decides, buys nothing)
-- Brain: subscription, claude-haiku-5-5 for routine calls, claude-opus-5-5 for the daily review; 300 routine calls and 0 plan-limit hits in 48h
-- Watch log: 113 coins being followed, 2748 filed, 0 would-buys (6h follow, sampled every 2 min)
+- Brain: subscription, claude-haiku-5-5 for routine calls, claude-opus-5-5 for the daily review; 303 routine calls and 0 plan-limit hits in 48h
+- Watch log: 108 coins being followed, 2757 filed, 0 would-buys (6h follow, sampled every 2 min)
 
 ## Scorecard (after fees)
 - 22 closed, 3 won (14%), net $-25.79
@@ -73,9 +73,17 @@ Updated 2026-11-23T03:22:14Z (paper trading, never real money)
   CA `H4gHnZ3NCU7Z9XQwGX6YYJNyieGEW8pqwGRUcdSxpump`
 
 ## Last scan
-- 03:21Z: 2 coins, 2 with pairs, 0 passed the market filters, 0 researched
+- 03:36Z: 2 coins, 2 with pairs, 0 passed the market filters, 0 researched
 
 ## Coins it looked at, and why it passed
+- 03:35Z GATO (MIGRATED, $1,871,379 mcap, $2,307 5m vol): REJECT, Dev holds 2.7% (>1%) (V13, V17)  
+  CA `HsprHxBRgiVaQdRf3TnKNuZZtaX9JUSPgMFdAkk6pump`
+- 03:34Z COPIUM (DIP, $472,391 mcap, $3,606 5m vol): PASS at conviction 2, PASS: copium is a dead cat story with no catalyst, 5m flow under pace and under $4k, and the site doesn't show the CA. Bottom buy blocked. (V1, V6, V13)  
+  CA `BAKsQrynzwadyACDMsg3J5R8a4CTvj1u7kEYyjq7pump`
+- 03:29Z HI (FINAL_STRETCH, $14,809 mcap, $25,049 5m vol): PASS at conviction 4, PASS. Chasing spike: 5m up 127% at 7x hourly pace, 8 minutes old, no printed higher low, no catalyst. Blocker "chasing spike" (V1, V6).  
+  CA `Ds6KgRi5XyWtUcnXMrhUjrnwHnautwhKcbQVGjNWpump`
+- 03:23Z Hedge (MIGRATED, $32,358 mcap, $3,378 5m vol): PASS at conviction 1, PASS: dead story, no higher low, flow at 0.34x pace, down 87% from a $256k peak. Falling knife with a vamp field around it. (V1, V6)  
+  CA `7S8k5qQfP2M48ixDLxDh6AgtwDo92eKxZ7WNmZt7pump`
 - 03:20Z ZCRYPT (DIP, $42,445 mcap, $3,870 5m vol): PASS at conviction 2, PASS: dead story, no catalyst. Top 10 at 16.95%, 5m volume $3.9k under $10k, sells outnumber buys. A DIP on a name nobody is telling. (V1, V6, V13)  
   CA `DTsMPr9UAisgBkZ2WGjZipaoALuhuoYCbR6euExi5JAQ`
 - 03:16Z DESSA (DIP, $1,786,698 mcap, $7,666 5m vol): REJECT, Dip with fading attention is a falling knife, not a dip (5m at 0.57x the hour's pace, under 0.6x)  
@@ -88,30 +96,24 @@ Updated 2026-11-23T03:22:14Z (paper trading, never real money)
   CA `6vdU6tGGSrQy2oDpwfikbs9T2nsP7k2wZVvB7i2npump`
 - 03:08Z Fly (FINAL_STRETCH, $14,839 mcap, $6,008 5m vol): REJECT, Top 10 hold 25.6% ex-pool (>25%) (V13)  
   CA `84tAcSK5L9kuQEVM8C8vMHXnfdA83nGBT2nYfSbPUcAc`
-- 03:08Z FSDV15 (MIGRATED, $2,392,111 mcap, $9,572 5m vol): PASS at conviction 4, PASS: 30% off a $3.44M high, but that high is only 1.44x away and sits under my 1.5x initials, with no catalyst and theme flow at 0.96x pace. Twenty-seven copies of the ticker. Fine meme, wrong spot (V1, V6, V13).  
-  CA `3BcJ4SSCfbxDMrWcUDucyCWxMjmy4M2ECCtvxu86pump`
-- 03:02Z PEACH (MIGRATED, $701,052 mcap, $91,180 5m vol): REJECT, Top 10 hold 44.8% ex-pool (>25%) (V13)  
-  CA `61yuZf1JyTKqoCfS784SusFGVekA6YUsGTfDg3o6pump`
-- 02:58Z MINELIUS (MIGRATED, $8,942,398 mcap, $4,993 5m vol): PASS at conviction 3, PASS — flow below pace (5m $5k at 0.83x hourly), $8.9M cap with the first resistance only 1.16x away, and a 20-coin ticker crowd. A LARP launchpad site with a 0.4-day-old domain. (V1, V6, V13)  
-  CA `E9rWKjVhHMxQkxfREr7Li8Yy46rVcWiWHoKVQAe9pump`
-- 02:57Z UCASH (MIGRATED, $1,510,436 mcap, $7,633 5m vol): PASS at conviction 3, PASS. Flow is below pace: 5m is $7.6k on 0.6x the hourly average, and the coin isn't breaking out. Website is 0.6 days old with no GitHub. (V1, V3, V6)  
-  CA `7cFiqdT46zs7ooHWLFiLSaSQKLMibtokh9dBinsspump`
 
 ## What its skips did next (last 48h)
 A skip "ran" if the coin reached the first target (1.5x) from the skip price before a 20% drop, "dumped" if the drop came first. Sampled every 10 min, followed 6h.
-- flow below pace: blocked 25, ran 2, dumped 18, flat 0, open 5 (saving losses: keep it)
+- flow below pace: blocked 26, ran 3, dumped 18, flat 0, open 5 (saving losses: keep it)
   - ran: snowball up to 1.59x  
     CA `3D7YQcnXi6RMjWxheiE8VLuGXJTtgQkmyugGYvzjpump`
   - ran: OpenIndex up to 1.63x  
     CA `FuKY3dk7QmpbDdQRjzbjB3G6PiCuqKNvN4dAWDpwpump`
-- too new / sniping: blocked 22, ran 6, dumped 16, flat 0, open 0 (saving losses: keep it)
+  - ran: Hedge up to 1.58x  
+    CA `7S8k5qQfP2M48ixDLxDh6AgtwDo92eKxZ7WNmZt7pump`
+- too new / sniping: blocked 23, ran 6, dumped 16, flat 0, open 1 (saving losses: keep it)
   - ran: TA up to 1.77x  
     CA `DKUM8qywmi8X9RYK2wUgnTw8QKjh1nYDThZR1GXPpump`
   - ran: SANTAHAT up to 3x  
     CA `5fWLSMA5HoK9W4VoTMi4c3qjyu3N2LsKRSM8Ffpgpump`
   - ran: KYC up to 2.37x  
     CA `47YCrfUmSQUF9vnPsPGSzrmTcxttdRAWejCMkhrrpump`
-- top 10 over 25%: blocked 19, ran 3, dumped 13, flat 0, open 3 (saving losses: keep it)
+- top 10 over 25%: blocked 19, ran 3, dumped 14, flat 0, open 2 (saving losses: keep it)
   - ran: :) up to 1.65x  
     CA `Dtx414D8jurspmB1jqJWsYU66pemoXRjQeXx7TC1pump`
   - ran: GIF up to 2.16x  
@@ -123,14 +125,14 @@ A skip "ran" if the coin reached the first target (1.5x) from the skip price bef
     CA `7CvW68FD9KjNYGByfykhaNps7VNPLN8dFwMRfmgQpump`
   - ran: SANTA up to 1.85x  
     CA `tZsjFu2CH1R23wEpbfXAYGc2KUaVrUbwofCNNNqpump`
-- falling knife / no higher low: blocked 13, ran 2, dumped 4, flat 5, open 2 (saving losses: keep it)
+- RugCheck danger: blocked 13, ran 1, dumped 12, flat 0, open 0 (saving losses: keep it)
+  - ran: MIHAOMAS up to 1.62x  
+    CA `3XsFunPdji9U1EgJXokZysw8SB3t74un89b6KLEVpump`
+- falling knife / no higher low: blocked 12, ran 2, dumped 3, flat 5, open 2 (mixed)
   - ran: UrAnus up to 2.97x  
     CA `27u3diWofnXGUkddjLGhcy1nRssFKHW3RtNbpWzUpump`
   - ran: STREETS up to 1.73x  
     CA `82mseLFauphc2yutbaDGgViahquJ1jGVLpyof99xpump`
-- RugCheck danger: blocked 13, ran 1, dumped 12, flat 0, open 0 (saving losses: keep it)
-  - ran: MIHAOMAS up to 1.62x  
-    CA `3XsFunPdji9U1EgJXokZysw8SB3t74un89b6KLEVpump`
 - brain paced: blocked 11, ran 4, dumped 6, flat 1, open 0 (mixed)
   - ran: STREETS up to 1.73x  
     CA `82mseLFauphc2yutbaDGgViahquJ1jGVLpyof99xpump`
@@ -150,7 +152,7 @@ A skip "ran" if the coin reached the first target (1.5x) from the skip price bef
     CA `BCTwG3LDhNcthcK374aWQfAzLYGRXDu1apmrqw3Tpump`
   - ran: Mfer up to 1.55x  
     CA `9tX1UpBGeNqMb1VqqzVumwzW71ybsNZFyWKYiL8Ppump`
-- thin 5m volume: blocked 5, ran 1, dumped 3, flat 0, open 1 (saving losses: keep it)
+- thin 5m volume: blocked 6, ran 1, dumped 3, flat 0, open 2 (saving losses: keep it)
   - ran: chud up to 1.55x  
     CA `EV7J2QaPXPytSkM1LD9GPRkgAbmSEr9R3kYiXBzbpump`
 
@@ -193,13 +195,13 @@ Nothing has a positive edge after costs. All 166 settled coins averaged -11.3% n
 The meta is fresh pump.fun joke launches with buy-heavy 5-minute flow, led by Leonida (+211% at $92k), Bull (+241% at $9k), MAKE (+289% at $17k) and FOXE ($40k, all of its volume in the last 5 minutes). Trump-adjacent names are split: BIRDMAGA is rising (+378% in 1h, $205k cap, 59% buys, $9k 5m), while RUMP is dying (-74% at $8k), and the Trump dinner headlines point the same way. News-named coins with real size are the other lane, with UCASH ($1.8M, $15.6k 5m, 54% buys, +29%) and FSDV15 ($2.8M, 71% buys, but only $4.3k 5m) the only ones in the V6 recon range. Cats are fading except cateball, which still holds $1.5M on $7k 5m while cCAT is down 98% in the hour. Research order, not a buy list: UCASH first (needs 5m volume above $10k), BIRDMAGA only on a pullback that holds above $10k 5m, and FOXE only after holder and bundle checks, since its volume is all new. The web's cCAT ($120k), FSDV15 (-17%) and UCASH figures disagree with the scanner, so I am using scan_movers numbers and treating the web's as unverified. Holder, dev and bundle checks still run on every coin before any entry, and this is not a quiet market."
 
 ## Moving most in its scans, last 30 min (1h volume)
+- FOXE: $394,935 1h vol, $12,244 mcap, -54% 1h  
+  CA `E2XCAc12j7Eb6NhXKYMmTcGBAryZ1WPuY1fwSbp4pump`
 - LEONIDA: $275,039 1h vol, $66,340 mcap, +129% 1h  
   CA `6vdU6tGGSrQy2oDpwfikbs9T2nsP7k2wZVvB7i2npump`
-- PEACH: $233,326 1h vol, $703,715 mcap, +1908% 1h  
-  CA `61yuZf1JyTKqoCfS784SusFGVekA6YUsGTfDg3o6pump`
 - DESSA: $164,855 1h vol, $1,698,831 mcap, -32% 1h  
   CA `npz2FhoufQ7pKqhGpaipYWacrAkidyW2yDpVWSvpump`
-- UCASH: $150,410 1h vol, $1,510,436 mcap, -9% 1h  
-  CA `7cFiqdT46zs7ooHWLFiLSaSQKLMibtokh9dBinsspump`
 - hCAT: $138,536 1h vol, $129,667 mcap, +335% 1h  
   CA `2FYs4vApfj4ErsggpFDfzMv1WvxnyiLtzNEj84mS6TLh`
+- BIRDMAGA: $128,337 1h vol, $205,172 mcap, +39% 1h  
+  CA `J9AvtJRDreHG8B8PnW4tNMvH5c2c1jxfUfDvjrWtpump`
