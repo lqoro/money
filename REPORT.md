@@ -1,13 +1,13 @@
 # Trencher live report
 
-Updated 2026-11-23T15:44:01Z (paper trading, never real money)
+Updated 2026-11-23T15:59:11Z (paper trading, never real money)
 
 - Equity: $74.23 (-25.8% vs $100 start)
 - Closed trades: 22, 3 wins
 - Fees paid: $14.78 (axiom $2.81, network $9.18, pool $2.66), plus $4.15 lost to slippage
 - New trades: WATCH-ONLY (scans and decides, buys nothing)
-- Brain: subscription, claude-haiku-5-5 for routine calls, claude-opus-5-5 for the daily review; 431 routine calls and 0 plan-limit hits in 48h
-- Watch log: 86 coins being followed, 2943 filed, 0 would-buys (6h follow, sampled every 2 min)
+- Brain: subscription, claude-haiku-5-5 for routine calls, claude-opus-5-5 for the daily review; 435 routine calls and 0 plan-limit hits in 48h
+- Watch log: 86 coins being followed, 2950 filed, 0 would-buys (6h follow, sampled every 2 min)
 
 ## Scorecard (after fees)
 - 22 closed, 3 won (14%), net $-25.79
@@ -73,53 +73,51 @@ Updated 2026-11-23T15:44:01Z (paper trading, never real money)
   CA `H4gHnZ3NCU7Z9XQwGX6YYJNyieGEW8pqwGRUcdSxpump`
 
 ## Last scan
-- 15:42Z: 3 coins, 3 with pairs, 1 passed the market filters, 1 researched
+- 15:58Z: 1 coins, 1 with pairs, 0 passed the market filters, 0 researched
 
 ## Coins it looked at, and why it passed
+- 15:55Z JOB (MIGRATED, $2,017,547 mcap, $2,286 5m vol): REJECT, Bundles: 1 linked wallet cluster(s) hold 22.3% of supply (>20%) (V17)  
+  CA `9Pq7aLAbhDG2tTnS22cm6kuysZVcZpLFE368HWuypump`
+- 15:50Z UCASH (MIGRATED, $2,930,266 mcap, $24,262 5m vol): PASS at conviction 4, PASS. Flow below pace (5m is 0.46x the hourly average), $2.9M with no breakout, and the site says the product is still in development with no GitHub. (V1, V6, V13)  
+  CA `7cFiqdT46zs7ooHWLFiLSaSQKLMibtokh9dBinsspump`
+- 15:48Z NOHR (DIP, $1,302,228 mcap, $7,278 5m vol): REJECT, Dip with fading attention is a falling knife, not a dip (5m at 0.45x the hour's pace, under 0.6x)  
+  CA `Jd3NCawdFiDNWpLiTtsMqoeoBMjC1ZQMrMScRVzpump`
+- 15:47Z JENSEN (DIP, $497,059 mcap, $39,166 5m vol): REJECT, Dip with fading attention is a falling knife, not a dip (5m at 0.20x the hour's pace, under 0.6x)  
+  CA `9scVbbC7HUwXaBmo8bnYfm2Pa5oouZpjy2NvrvwLpump`
+- 15:46Z CBUCKS (MIGRATED, $4,119,001 mcap, $4,566 5m vol): REJECT, Top 10 hold 25.9% ex-pool (>25%) (V13)  
+  CA `DtcicPCKTKeAh7TDEzTym3hXeoHAoMiBdYJhMYxZpump`
+- 15:44Z BONER (MIGRATED, $35,462 mcap, $5,680 5m vol): PASS at conviction 2, PASS: flow below pace, not the BONER leader, and no higher low. This is a dead joke coin in a split field. (V1, V3, V6)  
+  CA `Dqotg1vothycy7Xa3Q2GEfFRzuzsp41jTw91dxjNwSEz`
+- 15:44Z MINELIUS (MIGRATED, $3,659,416 mcap, $41,090 5m vol): PASS at conviction 2, PASS — down 85% off a $23.9M peak, down 36% in the last 5 minutes, no printed higher low, and a 0.9-day-old launchpad site with no GitHub. Falling knife with a LARP story (V1, V6).  
+  CA `E9rWKjVhHMxQkxfREr7Li8Yy46rVcWiWHoKVQAe9pump`
 - 15:43Z JACKET (MIGRATED, $40,794 mcap, $7,732 5m vol): PASS at conviction 2, PASS: down 92% off a $492k peak, 5m flow at 0.18x its hourly pace, one bundle cluster at 8.9%, and a website that just redirects on a domain under a day old. Dead story, not a dip (V1, V6, V13).  
   CA `DJVZ9hKSLsDAPjdq73nX5bYPnjvfntUN87RRxdN2pump`
 - 15:42Z COPIUM (MIGRATED, $896,686 mcap, $4,999 5m vol): PASS at conviction 2, PASS: flow below pace, 74% of 5m trades are sells, and no printed higher low. Blocker: "flow below pace" (V1, V6).  
   CA `BAKsQrynzwadyACDMsg3J5R8a4CTvj1u7kEYyjq7pump`
 - 15:38Z BONER (MIGRATED, $34,261 mcap, $22,178 5m vol): PASS at conviction 2, PASS: BONER is 92% off a $442k peak, 5m flow is 0.52x its hourly pace, and the theme is 0.62x pace with no catalyst. It's a bottom buy with no bottom to buy (blocker "bottom buy not qualified"). (V1, V6)  
   CA `13naDSyHxXexw6s35wcwiQJLgt6dHNNW5Lho9Ko9pump`
-- 15:37Z FSDV15 (MIGRATED, $895,442 mcap, $5,506 5m vol): PASS at conviction 3, PASS — bottom buy with no catalyst: 79% off the $4.26M high is past the 70% dip ceiling, the Tesla-FSD theme isn't on my radar, and 5m flow is 0.79x pace. Clean holders don't fix that (V1, V6, V13).  
-  CA `3BcJ4SSCfbxDMrWcUDucyCWxMjmy4M2ECCtvxu86pump`
-- 15:36Z HOGE (DIP, $678,946 mcap, $2,087 5m vol): REJECT, Bundles: 9 linked wallet cluster(s) hold 27.7% of supply (>20%) (V17)  
-  CA `FVzqGqRmr4UH1Fif6dewmwbJ1p4YUZCu8dcw4Efopump`
-- 15:33Z DESSA (DIP, $2,391,675 mcap, $1,925 5m vol): REJECT, 5m volume $1,925 is dead (<$2,000) (V1)  
-  CA `npz2FhoufQ7pKqhGpaipYWacrAkidyW2yDpVWSvpump`
-- 15:25Z earball (no setup, $31,522 mcap, $10,129 5m vol): REJECT, No setup fits: not Final Stretch, not a migrated runner, not a healthy dip  
-  CA `FryQiSLqU7NfPvpQJRiYrVuvRRW66uB4FLorrKmjpump`
-- 15:24Z PumpMeme (MIGRATED, $1,651,647 mcap, $3,975 5m vol): PASS at conviction 3, PASS: flow below pace, and the bottom-buy gate fails on a dead pumpmeme theme with no catalyst. Not chasing a 0.38x theme on a $1.65M coin (V1, V6).  
-  CA `93uamrbDerKbUh8MSjNF1wDtxYvEUD1CS9BcHn1apump`
-- 15:21Z BRUH (MIGRATED, $7,973,467 mcap, $2,136 5m vol): PASS at conviction 2, PASS: BRUH is 4.5% off its high at $8M mcap with $2.1k of 5m flow at 0.83x pace. Chasing, flow below pace, no room. (MIGRATED rules, V1, V6)  
-  CA `PgFtGGquvnv2zEkjG2N2QPvBTBrafuExGYEqahRpump`
-- 15:16Z LCPT (no setup, $15,352 mcap, $2,079 5m vol): REJECT, No setup fits: not Final Stretch, not a migrated runner, not a healthy dip  
-  CA `Ef8E4LJZtQCo82bTr2v17736ctqWa3A8PzjcxZiipump`
 
 ## What its skips did next (last 48h)
 A skip "ran" if the coin reached the first target (1.5x) from the skip price before a 20% drop, "dumped" if the drop came first. Sampled every 10 min, followed 6h.
-- too new / sniping: blocked 37, ran 9, dumped 27, flat 0, open 1 (saving losses: keep it)
+- too new / sniping: blocked 36, ran 9, dumped 26, flat 0, open 1 (saving losses: keep it)
   - ran: TA up to 1.77x  
     CA `DKUM8qywmi8X9RYK2wUgnTw8QKjh1nYDThZR1GXPpump`
   - ran: SANTAHAT up to 3x  
     CA `5fWLSMA5HoK9W4VoTMi4c3qjyu3N2LsKRSM8Ffpgpump`
   - ran: KYC up to 2.37x  
     CA `47YCrfUmSQUF9vnPsPGSzrmTcxttdRAWejCMkhrrpump`
-- flow below pace: blocked 34, ran 5, dumped 23, flat 0, open 6 (saving losses: keep it)
+- flow below pace: blocked 35, ran 4, dumped 25, flat 0, open 6 (saving losses: keep it)
   - ran: snowball up to 1.59x  
     CA `3D7YQcnXi6RMjWxheiE8VLuGXJTtgQkmyugGYvzjpump`
   - ran: OpenIndex up to 1.63x  
     CA `FuKY3dk7QmpbDdQRjzbjB3G6PiCuqKNvN4dAWDpwpump`
-  - ran: MINELIUS up to 1.53x  
-    CA `E9rWKjVhHMxQkxfREr7Li8Yy46rVcWiWHoKVQAe9pump`
-- near the high / chasing: blocked 26, ran 3, dumped 22, flat 1, open 0 (saving losses: keep it)
+  - ran: hCAT up to 1.52x  
+    CA `2FYs4vApfj4ErsggpFDfzMv1WvxnyiLtzNEj84mS6TLh`
+- near the high / chasing: blocked 25, ran 2, dumped 22, flat 1, open 0 (saving losses: keep it)
   - ran: CUNTS up to 1.61x  
     CA `7CvW68FD9KjNYGByfykhaNps7VNPLN8dFwMRfmgQpump`
   - ran: SANTA up to 1.85x  
     CA `tZsjFu2CH1R23wEpbfXAYGc2KUaVrUbwofCNNNqpump`
-  - ran: MINELIUS up to 1.53x  
-    CA `E9rWKjVhHMxQkxfREr7Li8Yy46rVcWiWHoKVQAe9pump`
 - RugCheck danger: blocked 18, ran 3, dumped 15, flat 0, open 0 (saving losses: keep it)
   - ran: MIHAOMAS up to 1.62x  
     CA `3XsFunPdji9U1EgJXokZysw8SB3t74un89b6KLEVpump`
@@ -127,18 +125,25 @@ A skip "ran" if the coin reached the first target (1.5x) from the skip price bef
     CA `A2jLaCC7v3VjXP8gEgCQNbTWEvizYuQ82jFEYfzipump`
   - ran: JENSEN up to 1.7x  
     CA `CjPoozfB2Vub8pHFvdKuKUGJDLWuYC2U32yRTxMhpump`
-- top 10 over 25%: blocked 17, ran 2, dumped 13, flat 2, open 0 (saving losses: keep it)
+- top 10 over 25%: blocked 17, ran 2, dumped 13, flat 1, open 1 (saving losses: keep it)
   - ran: :) up to 1.65x  
     CA `Dtx414D8jurspmB1jqJWsYU66pemoXRjQeXx7TC1pump`
   - ran: GIF up to 2.16x  
     CA `B6wM98qkQKP71mhPA48S7No6TxM4KaXdFojDTZeUpump`
-- falling knife / no higher low: blocked 14, ran 5, dumped 4, flat 4, open 1 (cost more winners than it saved: loosen it)
+- falling knife / no higher low: blocked 14, ran 4, dumped 4, flat 4, open 2 (mixed)
   - ran: UrAnus up to 2.97x  
     CA `27u3diWofnXGUkddjLGhcy1nRssFKHW3RtNbpWzUpump`
   - ran: STREETS up to 1.73x  
     CA `82mseLFauphc2yutbaDGgViahquJ1jGVLpyof99xpump`
   - ran: Fly up to 1.52x  
     CA `84tAcSK5L9kuQEVM8C8vMHXnfdA83nGBT2nYfSbPUcAc`
+- falling knife (code): blocked 12, ran 4, dumped 6, flat 0, open 2 (mixed)
+  - ran: RIZZMAS3 up to 1.84x  
+    CA `BQcV4Ryfu9bZK8egAF89AhkojdJqAaDt4xTFwUQ2pump`
+  - ran: STREETS up to 1.73x  
+    CA `82mseLFauphc2yutbaDGgViahquJ1jGVLpyof99xpump`
+  - ran: OpenIndex up to 1.63x  
+    CA `FuKY3dk7QmpbDdQRjzbjB3G6PiCuqKNvN4dAWDpwpump`
 - brain paced: blocked 11, ran 4, dumped 6, flat 1, open 0 (mixed)
   - ran: STREETS up to 1.73x  
     CA `82mseLFauphc2yutbaDGgViahquJ1jGVLpyof99xpump`
@@ -146,13 +151,6 @@ A skip "ran" if the coin reached the first target (1.5x) from the skip price bef
     CA `2MdCPWNFufmJSZhajSvi1yqBFTB24GQ4ipjNcB8Vpump`
   - ran: MCAT up to 2.52x  
     CA `BzPyyYCTmQNq2BcfQ4ANAvCYk54rnmQEXMFvFT8RhWMi`
-- falling knife (code): blocked 11, ran 4, dumped 6, flat 0, open 1 (mixed)
-  - ran: RIZZMAS3 up to 1.84x  
-    CA `BQcV4Ryfu9bZK8egAF89AhkojdJqAaDt4xTFwUQ2pump`
-  - ran: STREETS up to 1.73x  
-    CA `82mseLFauphc2yutbaDGgViahquJ1jGVLpyof99xpump`
-  - ran: OpenIndex up to 1.63x  
-    CA `FuKY3dk7QmpbDdQRjzbjB3G6PiCuqKNvN4dAWDpwpump`
 - thin 5m volume: blocked 10, ran 1, dumped 7, flat 0, open 2 (saving losses: keep it)
   - ran: chud up to 1.55x  
     CA `EV7J2QaPXPytSkM1LD9GPRkgAbmSEr9R3kYiXBzbpump`
@@ -198,16 +196,16 @@ Nothing has a positive after-cost edge yet. All 229 settled coins average -8.7% 
 - [2026-11-02 20:25] I expected Slingoor, a clean MIGRATED leader with $25k of 5m flow at pace and a 0.77 buy share, to retest its $408k high from $304k. It never went green (0.98x peak) and hit the -20% stop in 2 minutes, a -$2.86 probe. My own thesis admitted there was no printed higher low after a peak only 6 minutes old, so this confirms the money-shape rule: buy share and flow are not structure (V1, V6). Next time a MIGRATED pullback with no higher low above the hourly low is a PASS with blocker "no higher low", not a probe. This is one loss, so it adds no new ban beyond the rule I already have.
 
 ## Meta right now
-Not quiet, but the heat is narrow and mostly fresh. Rising: celebrity-name clones of Jensen Huang, with HUANG (35k mcap, 33.7k 5m, 62% buys, 0.1h old) and "Jensen Is Back" (279k, 132k 5m, 65% buys) leading, plus two smaller JENSEN clones at 15-28k with 54-75% buys. Fading or dead: Trump-name clones (Unofficial TREMP is at 2.9k with $54 of 5m volume after -96% in an hour, and the headlines say official TRUMP is at record lows), and fresh joke/hype launches like BONER (-29% 1h) and DEEP/TORQUE/MESA with thin or zero 5m buys. Older mid-caps PumpMeme, Dessa and MINELIUS have $4-8k 5m, under the $10k bar. Setups to research now under MIGRATED rules: "Jensen Is Back" (above 30k, under 12h, 5m over $10k) and HUANG if it migrates, but first identify the original among the JENSEN clones (V1, V6), then run mint/freeze, LP burn, holders, dev and bundle checks. Its 5m is about 4x its hourly pace, so it has to hold above $10k. The scan conflicts with the web on DEEP (scan shows 2 5m volume, not $40.8k), and UCASH, FSDV15, COPIUM, HOGE, NOHR, Optimus, CLAWSY and AMC are not in scan_movers, so I'm not using those web numbers. Paper, not advice.
+Not quiet. The scan shows three live patterns: Jensen-name coins, joke and hype launches, and older pump.fun mid-caps re-pumping. The Jensen theme is split: the older JENSEN ($497k, $39k 5m, 58% buys) is holding volume, while White Jensen ($1.5k, 15% buys, -98% 1h) and HUANG (9% buys) are clones dying. Joke launches are fading hard (BONER -52% 1h, JACKET -83%, .fun zero 5m), though BONER's 86% 5m buy ratio says someone is still buying. Trump coins are absent from the scan, which matches the web's record-low headlines, so that theme is fading. Setups to research now: JENSEN first (fits the $70k-11M V6 range with 5m well over $10k, but it is 189h old, so confirm it is the original and run the full checklist), UCASH ($2.9M, $22.6k 5m, 57% buys, +113% 1h) if its 5m holds, and MINELIUS only as a DIP candidate if its 81% buy-side on $41k 5m survives a bundle check after the -77% hour. "Jensen Is Back" and other web-only numbers are not in scan_movers, so I am not using them. Paper, not advice.
 
 ## Moving most in its scans, last 30 min (1h volume)
+- JENSEN: $2,402,481 1h vol, $497,059 mcap, +117% 1h  
+  CA `9scVbbC7HUwXaBmo8bnYfm2Pa5oouZpjy2NvrvwLpump`
+- JENSEN: $1,316,366 1h vol, $1,502 mcap, -98% 1h  
+  CA `CjPoozfB2Vub8pHFvdKuKUGJDLWuYC2U32yRTxMhpump`
+- UCASH: $628,369 1h vol, $2,949,881 mcap, +113% 1h  
+  CA `7cFiqdT46zs7ooHWLFiLSaSQKLMibtokh9dBinsspump`
 - JACKET: $520,121 1h vol, $41,510 mcap, -83% 1h  
   CA `DJVZ9hKSLsDAPjdq73nX5bYPnjvfntUN87RRxdN2pump`
 - BONER: $469,418 1h vol, $53,138 mcap, -52% 1h  
   CA `13naDSyHxXexw6s35wcwiQJLgt6dHNNW5Lho9Ko9pump`
-- BONER: $339,921 1h vol, $21,761 mcap, -78% 1h  
-  CA `Dqotg1vothycy7Xa3Q2GEfFRzuzsp41jTw91dxjNwSEz`
-- FSDV15: $82,394 1h vol, $895,442 mcap, -12% 1h  
-  CA `3BcJ4SSCfbxDMrWcUDucyCWxMjmy4M2ECCtvxu86pump`
-- MINELIUS: $79,813 1h vol, $14,320,343 mcap, -11% 1h  
-  CA `E9rWKjVhHMxQkxfREr7Li8Yy46rVcWiWHoKVQAe9pump`
