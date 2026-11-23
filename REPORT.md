@@ -1,13 +1,13 @@
 # Trencher live report
 
-Updated 2026-11-23T20:31:28Z (paper trading, never real money)
+Updated 2026-11-23T20:46:31Z (paper trading, never real money)
 
 - Equity: $74.23 (-25.8% vs $100 start)
 - Closed trades: 22, 3 wins
 - Fees paid: $14.78 (axiom $2.81, network $9.18, pool $2.66), plus $4.15 lost to slippage
 - New trades: WATCH-ONLY (scans and decides, buys nothing)
-- Brain: subscription, claude-haiku-5-5 for routine calls, claude-opus-5-5 for the daily review; 465 routine calls and 0 plan-limit hits in 48h
-- Watch log: 124 coins being followed, 3000 filed, 0 would-buys (6h follow, sampled every 2 min)
+- Brain: subscription, claude-haiku-5-5 for routine calls, claude-opus-5-5 for the daily review; 467 routine calls and 0 plan-limit hits in 48h
+- Watch log: 121 coins being followed, 3005 filed, 0 would-buys (6h follow, sampled every 2 min)
 
 ## Scorecard (after fees)
 - 22 closed, 3 won (14%), net $-25.79
@@ -73,9 +73,13 @@ Updated 2026-11-23T20:31:28Z (paper trading, never real money)
   CA `H4gHnZ3NCU7Z9XQwGX6YYJNyieGEW8pqwGRUcdSxpump`
 
 ## Last scan
-- 20:30Z: 3 coins, 3 with pairs, 0 passed the market filters, 0 researched
+- 20:45Z: 11 coins, 11 with pairs, 0 passed the market filters, 0 researched
 
 ## Coins it looked at, and why it passed
+- 20:44Z Bertcoin (FINAL_STRETCH, $20,309 mcap, $4,190 5m vol): PASS at conviction 2, PASS — up 564% in 1h and 42% in 5m, sitting at the high. That's a spike, not a pullback, and it's one of 15 Bertcoin copies with zero radar mentions. Blocker: chasing spike (V1, V6).  
+  CA `xEK58Qa2xZ7C36Z2g3Jjq1WHY561CvvnJkLpgJspump`
+- 20:43Z PumpMeme (MIGRATED, $523,046 mcap, $3,649 5m vol): PASS at conviction 2, PASS: PumpMeme is 78% off a $2.39M peak, 5m flow is 0.93x pace, and the site says "CA TBA." Blockers: chasing-free but too deep and no flow (V1, V3, V6, V13).  
+  CA `93uamrbDerKbUh8MSjNF1wDtxYvEUD1CS9BcHn1apump`
 - 20:25Z SCINU (MIGRATED, $75,058 mcap, $14,603 5m vol): REJECT, Dev holds 6.5% (>1%) (V13, V17)  
   CA `GHWEB3FsfqDbNBt9QxVU7kXkUh1cX7kFk5NVDkgApump`
 - 20:23Z UCASH (MIGRATED, $832,169 mcap, $7,768 5m vol): PASS at conviction 3, PASS: "Umbra Cash" is a 1.3-day-old site riding the name of a real Solana privacy project, down 78% with flow under pace. Blocker: flow below pace (V1, V6, V13).  
@@ -92,14 +96,10 @@ Updated 2026-11-23T20:31:28Z (paper trading, never real money)
   CA `B34nXKzCgsJb9ChLuSHPRpXLE3WFSWyeT8Cqkzzmpump`
 - 20:02Z PEPE (DIP, $134,632 mcap, $81,617 5m vol): PASS at conviction 3, PASS — 26-minute-old migration still bleeding off a $250k spike, no printed higher low, no catalyst, 16-copy vamp field. Blocker: "too new" (V1, V6).  
   CA `DsuztYTs2PnXRy4NrcVRzQRK1jbvvntPGSjCbdpMpump`
-- 19:59Z BTC (MIGRATED, $183,823 mcap, $14,569 5m vol): PASS at conviction 3, PASS — chasing spike, 0.6h old, 175% up on 5m, sitting at its high in a 23-copy vamp field. Blocker: "chasing spike" plus "too new" (V1, V6, V13).  
-  CA `ToDWKzWCNCECx3ukahtwUXVqFbHyKRNag7RJrDbpump`
-- 19:57Z PumpMeme (MIGRATED, $444,890 mcap, $1,978 5m vol): REJECT, 5m volume $1,978 is dead (<$2,000) (V1)  
-  CA `93uamrbDerKbUh8MSjNF1wDtxYvEUD1CS9BcHn1apump`
 
 ## What its skips did next (last 48h)
 A skip "ran" if the coin reached the first target (1.5x) from the skip price before a 20% drop, "dumped" if the drop came first. Sampled every 10 min, followed 6h.
-- flow below pace: blocked 38, ran 5, dumped 29, flat 0, open 4 (saving losses: keep it)
+- flow below pace: blocked 39, ran 5, dumped 29, flat 0, open 5 (saving losses: keep it)
   - ran: snowball up to 1.59x  
     CA `3D7YQcnXi6RMjWxheiE8VLuGXJTtgQkmyugGYvzjpump`
   - ran: OpenIndex up to 1.63x  
@@ -113,7 +113,7 @@ A skip "ran" if the coin reached the first target (1.5x) from the skip price bef
     CA `47YCrfUmSQUF9vnPsPGSzrmTcxttdRAWejCMkhrrpump`
   - ran: Wojak up to 4.29x  
     CA `5eiLc9r79PkJquiFvYWdXJYtGNRjTpzot8MR7Z4Ppump`
-- near the high / chasing: blocked 31, ran 2, dumped 27, flat 1, open 1 (saving losses: keep it)
+- near the high / chasing: blocked 32, ran 2, dumped 27, flat 1, open 2 (saving losses: keep it)
   - ran: CUNTS up to 1.61x  
     CA `7CvW68FD9KjNYGByfykhaNps7VNPLN8dFwMRfmgQpump`
   - ran: SANTA up to 1.85x  
@@ -203,13 +203,13 @@ Nothing has a positive after-cost edge yet. All 229 settled coins average -8.7% 
 The trenches are split, not one story. Fresh pump.fun launches with real 5-minute flow are rising: HI Hopeinu ($71k mcap, 0.5h old, $42.6k 5m at about 3x its hourly pace, 57% buys) and zPUSSY ($28k, $76k 5m, 55% buys). The Jensen/Nvidia name cluster is fading: JENSEN ($1.3M) is at about half its hourly 5m pace and -4% over 1h, and the newest launches are dumping (tap -56%, BERTCOIN -92% with zero 5m buys). The one AI/tech brand name still holding is Tesla FSD v15 ($214k, 22h old): -43% over 1h, but 5m volume is running above its hourly pace at 77% buys, so it's the dip-buy candidate worth researching. CHARLESTONAI (+828% 1h on $813 of 5m volume) is a spike with no flow, so pass. The web confirms the Trump dinner and record-low headlines, but no Trump token is in the movers, so that's news, not trench meta. Research only, probe size at most, stop set before entry: FSDV15 first (find its peak, then holders, dev and bundles), HI second, and zPUSSY only if checks come back clean, because $76k of 5m volume on a $28k coin is a farm signature. The crawler's HUANG 2pCe and Angry Birds names aren't in scan_movers, so I'm not treating them as live setups.
 
 ## Moving most in its scans, last 30 min (1h volume)
-- PEPE: $783,408 1h vol, $148,191 mcap, +390% 1h  
-  CA `DsuztYTs2PnXRy4NrcVRzQRK1jbvvntPGSjCbdpMpump`
-- FIONA: $270,443 1h vol, $2,906,043 mcap, +17% 1h  
-  CA `B34nXKzCgsJb9ChLuSHPRpXLE3WFSWyeT8Cqkzzmpump`
+- HI: $186,181 1h vol, $8,878 mcap, -57% 1h  
+  CA `Bp6Aen8xiLqhKLHwb27dViwAsojLjhoSPhzpEZm7UmqC`
 - NIVI: $173,408 1h vol, $408,144 mcap, +914% 1h  
   CA `GejbZVwcf9yAKeUzBcJYzDUuZN3WRtdV5aTW5BZzpump`
-- JENSEN: $148,245 1h vol, $1,018,539 mcap, -18% 1h  
-  CA `HKiMA2mKQHU2cjfZ4Kbmru5GBGCauSNqPtpu8cfmpump`
-- tap: $109,777 1h vol, $6,905 mcap, -76% 1h  
-  CA `Bk1kfYeoS9arD5Cq6WtNCGSHqVkk9ZhDA7kUVARSpump`
+- BTC: $130,991 1h vol, $1,402 mcap, -97% 1h  
+  CA `ToDWKzWCNCECx3ukahtwUXVqFbHyKRNag7RJrDbpump`
+- UCASH: $104,096 1h vol, $826,874 mcap, -9% 1h  
+  CA `7cFiqdT46zs7ooHWLFiLSaSQKLMibtokh9dBinsspump`
+- BTC: $64,044 1h vol, $3,322 mcap, -4% 1h  
+  CA `FQh5bmwPqAV5ZhrDhNay8uwXcod36yo2tTLivfbApump`
