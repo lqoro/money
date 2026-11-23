@@ -1,5 +1,5 @@
 {
- "updated_at": "2026-11-23T12:56:27Z",
+ "updated_at": "2026-11-23T13:11:31Z",
  "paused_new_trades": true,
  "watch_only": true,
  "brain": {
@@ -9,7 +9,7 @@
   "paused_until": null,
   "usage_48h": {
    "hours": 48,
-   "brain_calls": 397,
+   "brain_calls": 398,
    "plan_limit_hits": 0,
    "candidates_skipped_no_brain": 0,
    "stop_reviews_without_brain": 0
@@ -574,7 +574,7 @@
  ],
  "learned_rules": "- **The money shape rates 8, or 9 if the radar shows the story still climbing and mcap is under ~$1M.** It looks like this: a MIGRATED coin leading on 5m volume, 25\u201345% off its local high, a printed higher low above the hourly low, 5m flow at or above the hourly pace, more buys than sells, top 10 under 15%, low RugCheck bundles. Both real winners looked like this (CATBOT 4.44x, FLOATER 2.19x, both under $1M) (V1, V6, V13). Rate it what it earns so code sizes it up (owner goal).\n- **Owner floor: 7 under ~$1M mcap.** If the hard lines pass, flow is live (5m \u2265 $10k and at or above pace), a higher low is printed and the first resistance is \u22651.5x away, rate it 7 or higher. Don't dock points for things the checklist already measured.\n- **The MIGRATED buy zone is 10\u201360% off the local high** (owner rule). Within 10% of the high is a PASS, blocker \"chasing\" (42 skips: 3 ran, 36 dumped).\n- **The shallow band (10\u201325% off the high) is a breakout trade, capped at 7.** It must be the 5m volume leader, pushing into the high right now, with flow at or above pace. Otherwise PASS, blocker \"no breakout\".\n- **A spike counts as chasing anywhere in the zone.** If the last 5m candle is up more than 25% or 5m volume is more than 3x the hourly pace, wait for a retrace and a printed higher low. Blocker \"chasing spike\" (PILLSEY).\n- **On MIGRATED, flow below pace or no printed higher low is a PASS, never a probe.** A printed higher low means three things: a bounce off the hourly low, a pullback that holds above it, and price back above that bounce's high. A buy share, a fib touch or a first green candle is not one. Blockers \"flow below pace\" / \"no higher low\" (Slingoor, ANAKIN, BLUE, SI, AAPLCAT never got past 1.01x).\n- **Buy close to the structure.** Enter only within ~12% above the printed higher low, so the thesis breaks before the hard stop. Further above it is a mid-range entry: wait for a pullback or PASS, blocker \"mid-range\". Stops fill around \u221230 to \u221238%, not \u221220%, so entry distance is the real risk control.\n- **Rate on the first resistance (prior high, POC or 0.618).** At \u22651.5x away it can rate 8\u20139. At 1.3\u20131.5x the cap is 7. Under 1.3x is a PASS, blocker \"target too close\" (PAWCAT, SWAN).\n- **Above ~$1M mcap, a probe (6) is the most you take.** Only take it if the first resistance is \u22651.5x away and a breakout with flow at or above pace is printing right now. Otherwise PASS, blocker \"big cap, no room\" (1 green in 10).\n- **A migration under 1h old that is still bleeding off its bond spike waits for a base above the hourly low.** Blocker \"too new\" (50 skips: 9 ran, 41 dumped).\n- **In a vamp field, buy only the leader by 5m volume and radar mentions.** A bundle cluster inside a big same-ticker field is a PASS, blocker \"split crowd\" (V1, V3).\n- **A DIP needs all of these:** a 40\u201370% drawdown, 5m flow at least 0.7x the hourly pace (owner gate, no \"rising\" needed), the story still on the radar, and a printed higher low with entry within ~12% of it. If all pass, size by conviction (7\u20138 when clean). A DIP whose catalyst already printed (news, rebrand) is a probe (6) at most until it reclaims its pullback high. A thin tech/LARP story is a PASS, blocker \"dead story\" (HEXN x2, SIS; DIPs 0 for 5).\n- **Hard blocks:** top 10 over 25%, dev over 1%, bundles or insiders over the line, mint or freeze authority live, LP not burned, a political figure, RugCheck danger, any hack/exploit/drain story (V6, V13, V17, owner). Name the blocker in every PASS.\n- **If RugCheck didn't load, it's a probe at most (6), not a block.** That needs the dossier's top-10 and dev numbers clean, mcap under $1M and the rest in the money shape. Say bundles are unverified.\n- **Manage the trade; stops sell with no review.** If the printed higher low breaks, sell. If it hasn't reached 1.05x by minute 10 with flow under pace, exit. If it's green before initials and 5m volume drops under half the hourly pace, sell half. At the time stop, exit; the only extension is one 15-minute window while a volume surge at or above pace is printing. Re-enter a stopped-out coin only once, and only when it reclaims its prior high with flow at or above pace (re-entries 0 for 4).\n",
  "meta": {
-  "age_minutes": 6,
+  "age_minutes": 1,
   "meta_summary": "Not quiet, but no single meta. The scan_movers volume sits in four loose themes. (1) Privacy/cash: UCASH is the one mover with real size and buyers stacking in ($915k mcap, $35.8k 5m, 82% buys, 26h old, +26% 1h). (2) Tech/AI product names are fading after their pump: FSDV15 -27% 1h, NOHR -40%, Optimus -33%, and EEG is brand new and spiking on thin $2.6k 5m. (3) The holiday-pun clone HOLD is dead in the scan ($9.2k mcap, $722 5m, 43% buys, -85% 1h). The web summary's $105k and 62% buys don't match the scan, so I'm trusting the scan. (4) Tiny social-joke coins (FOLLOWED, COPIUM) have sellers in control. Trump/dinner headlines barely show up in the movers, so I'm treating them as noise. Setups to research now: UCASH under MIGRATED rules (5m above $10k, buy ratio holding), and MINELIUS only as a late, large-cap follow with a tight stop. Both still need mint/freeze, LP burn, holder, dev and bundle checks before any entry, and at most a probe. PumpMeme and FSDV15 fail the $10k 5m bar for now. This is paper, not advice.",
   "top_narratives": [
    "trump",
@@ -584,44 +584,44 @@
    "trump dinner",
    "ipo",
    "wallet",
-   "prediction",
    "wallets",
+   "prediction",
    "below",
    "anthropic ipo",
    "bets",
-   "death",
-   "future",
    "ceo",
    "record",
+   "death",
    "exchanges",
    "hold",
+   "future",
    "gala",
    "fees"
   ],
   "trending_categories": [
    "Yield Farming",
    "Pump.fun Ecosystem",
-   "Stablecoin Issuer",
-   "Launchpad",
    "Binance Alpha Spotlight",
-   "Infrastructure"
+   "Meme",
+   "Dog-Themed",
+   "Solana Meme"
   ],
   "trending_coins": [
    "MINELIUS",
    "LOOSY",
    "PEARL",
+   "PEI",
    "PENGU",
+   "BTC",
    "VVV",
+   "DRV",
+   "AERO",
    "HYPE",
    "AAVE",
-   "DRV",
-   "BTC",
-   "SKY",
-   "ZEC",
-   "BP",
-   "MON",
    "UNI",
-   "LINK"
+   "ETH",
+   "SOL",
+   "TRUMP"
   ],
   "hot_tickers": [
    {
@@ -631,10 +631,6 @@
    {
     "ticker": "$WASTED",
     "mentions": 2
-   },
-   {
-    "ticker": "$LICK",
-    "mentions": 1
    },
    {
     "ticker": "$HOLDSGIVING",
@@ -674,36 +670,24 @@
     "name": "Minelius",
     "ca": "E9rWKjVhHMxQkxfREr7Li8Yy46rVcWiWHoKVQAe9pump",
     "dex": "pumpswap",
-    "mcap_usd": 16368003,
-    "vol_5m": 8466,
-    "vol_1h": 1178453,
-    "change_1h": 0.34,
-    "buy_ratio_5m": 0.85,
-    "age_hours": 15.4
+    "mcap_usd": 16138379,
+    "vol_5m": 14471,
+    "vol_1h": 1052853,
+    "change_1h": -9.36,
+    "buy_ratio_5m": 0.62,
+    "age_hours": 15.6
    },
    {
-    "symbol": "HUMAN",
-    "name": "Human Coin",
-    "ca": "4dAVohqConTz7sFPNURgQ4JiX7xCPBaSFHQkPdfNpump",
+    "symbol": "PumpMeme",
+    "name": "PumpMeme",
+    "ca": "93uamrbDerKbUh8MSjNF1wDtxYvEUD1CS9BcHn1apump",
     "dex": "pumpswap",
-    "mcap_usd": 1367,
-    "vol_5m": 0,
-    "vol_1h": 241006,
-    "change_1h": -95.43,
-    "buy_ratio_5m": null,
-    "age_hours": 1.0
-   },
-   {
-    "symbol": "RNV",
-    "name": "Race 'n' Vice",
-    "ca": "A2nbXtQvvRMvWtifCkV8cYepwcC4M7iA1jVMwAh6pump",
-    "dex": "pumpswap",
-    "mcap_usd": 1647,
-    "vol_5m": 0,
-    "vol_1h": 201750,
-    "change_1h": -95.16,
-    "buy_ratio_5m": null,
-    "age_hours": 1.1
+    "mcap_usd": 2000201,
+    "vol_5m": 4252,
+    "vol_1h": 196372,
+    "change_1h": 5.83,
+    "buy_ratio_5m": 0.64,
+    "age_hours": 7.7
    },
    {
     "symbol": "UCASH",
@@ -718,6 +702,18 @@
     "age_hours": 25.6
    },
    {
+    "symbol": "HUMAN",
+    "name": "Human Coin",
+    "ca": "4dAVohqConTz7sFPNURgQ4JiX7xCPBaSFHQkPdfNpump",
+    "dex": "pumpswap",
+    "mcap_usd": 1367,
+    "vol_5m": 0,
+    "vol_1h": 126255,
+    "change_1h": -97.73,
+    "buy_ratio_5m": null,
+    "age_hours": 1.1
+   },
+   {
     "symbol": "NOHR",
     "name": "NO HUMAN",
     "ca": "Jd3NCawdFiDNWpLiTtsMqoeoBMjC1ZQMrMScRVzpump",
@@ -730,52 +726,28 @@
     "age_hours": 45.4
    },
    {
-    "symbol": "FSDV15",
-    "name": "Tesla FSD v15",
-    "ca": "3BcJ4SSCfbxDMrWcUDucyCWxMjmy4M2ECCtvxu86pump",
-    "dex": "pumpswap",
-    "mcap_usd": 1304599,
-    "vol_5m": 7579,
-    "vol_1h": 67015,
-    "change_1h": -27.43,
-    "buy_ratio_5m": 0.65,
-    "age_hours": 14.8
-   },
-   {
-    "symbol": "COPIUM",
-    "name": "COPIUM",
-    "ca": "BAKsQrynzwadyACDMsg3J5R8a4CTvj1u7kEYyjq7pump",
-    "dex": "pumpswap",
-    "mcap_usd": 483384,
-    "vol_5m": 2724,
-    "vol_1h": 52622,
-    "change_1h": 3.95,
-    "buy_ratio_5m": 0.34,
-    "age_hours": 15.0
+    "symbol": "AGI",
+    "name": "Artificial Gooning Intelligence",
+    "ca": "7kctwFbSdLfpi6RuN9cjpVpYVHKPUr8PtG1meH35AEky",
+    "dex": "pumpfun",
+    "mcap_usd": 39556,
+    "vol_5m": 24711,
+    "vol_1h": 62499,
+    "change_1h": 963,
+    "buy_ratio_5m": 0.68,
+    "age_hours": 0.4
    },
    {
     "symbol": "EEG",
     "name": "Electroencephalogram",
     "ca": "147h49djSBEMEYmDq7QB25YYoMeKV1pFgCi8T3qupump",
     "dex": "pumpfun",
-    "mcap_usd": 7578,
-    "vol_5m": 2574,
-    "vol_1h": 39308,
-    "change_1h": 178,
-    "buy_ratio_5m": 0.43,
-    "age_hours": 0.4
-   },
-   {
-    "symbol": "Optimus",
-    "name": "Greatest Of All Time",
-    "ca": "HvW8c77wWdiaRt921yhsZKnoaEMF33kcbe3rGdN415Jj",
-    "dex": "pumpfun",
-    "mcap_usd": 9179,
-    "vol_5m": 943,
-    "vol_1h": 37549,
-    "change_1h": -32.97,
-    "buy_ratio_5m": 0.5,
-    "age_hours": 1.3
+    "mcap_usd": 9188,
+    "vol_5m": 1768,
+    "vol_1h": 44422,
+    "change_1h": 237,
+    "buy_ratio_5m": 0.54,
+    "age_hours": 0.8
    },
    {
     "symbol": "HOLD",
@@ -794,94 +766,96 @@
     "name": "Get Followed",
     "ca": "7SWcw72NgqXKj7R9cFut6GG7AyjP1Q7SWUJvmXb5pump",
     "dex": "pumpfun",
-    "mcap_usd": 4411,
-    "vol_5m": 1862,
-    "vol_1h": 30454,
-    "change_1h": 86.88,
-    "buy_ratio_5m": 0.31,
-    "age_hours": 0.4
+    "mcap_usd": 3741,
+    "vol_5m": 15,
+    "vol_1h": 32123,
+    "change_1h": 58.49,
+    "buy_ratio_5m": 0.0,
+    "age_hours": 0.7
    },
    {
     "symbol": "accelerate",
     "name": "accelerate",
     "ca": "9M18K9TuGSsVRfT7h7zDGeuuT59KmxBCvpBUpZAppump",
     "dex": "pumpfun",
-    "mcap_usd": 2077,
-    "vol_5m": 20,
-    "vol_1h": 25898,
-    "change_1h": 0.96,
-    "buy_ratio_5m": 0.25,
-    "age_hours": 0.2
-   },
-   {
-    "symbol": "PERCENT",
-    "name": "Percent",
-    "ca": "4iXcJHzSd9Gm1FQ4yQPSEeqrLYPvEH9HW86e2ASmVcnz",
-    "dex": "meteoradbc",
-    "mcap_usd": 7970,
-    "vol_5m": 210,
-    "vol_1h": 23179,
-    "change_1h": 220,
-    "buy_ratio_5m": 0.4,
-    "age_hours": 0.9
-   },
-   {
-    "symbol": "TNBR",
-    "name": "Tenebris",
-    "ca": "AC2S3n2SPzZ97i757ds6yfAuVoKKqzqR7dwv21BAwHDg",
-    "dex": "raydium",
-    "mcap_usd": 15370,
-    "vol_5m": 2580,
-    "vol_1h": 22403,
-    "change_1h": -45.68,
-    "buy_ratio_5m": 0.77,
-    "age_hours": 0.5
+    "mcap_usd": 2080,
+    "vol_5m": 6,
+    "vol_1h": 25910,
+    "change_1h": 1.11,
+    "buy_ratio_5m": 1.0,
+    "age_hours": 0.4
    },
    {
     "symbol": "SOL",
     "name": "AlonFunTrumpsol5Inu",
     "ca": "AKLpM48UMAqzNqptD4reNFTGDt7m1P5b4bwuV45qpump",
     "dex": "pumpfun",
-    "mcap_usd": 8845,
-    "vol_5m": 1051,
-    "vol_1h": 20249,
-    "change_1h": 61.45,
-    "buy_ratio_5m": 0.65,
-    "age_hours": 0.3
+    "mcap_usd": 4360,
+    "vol_5m": 128,
+    "vol_1h": 23928,
+    "change_1h": -20.42,
+    "buy_ratio_5m": 0.67,
+    "age_hours": 0.7
+   },
+   {
+    "symbol": "Optimus",
+    "name": "Greatest Of All Time",
+    "ca": "HvW8c77wWdiaRt921yhsZKnoaEMF33kcbe3rGdN415Jj",
+    "dex": "pumpfun",
+    "mcap_usd": 11849,
+    "vol_5m": 892,
+    "vol_1h": 23458,
+    "change_1h": -23.84,
+    "buy_ratio_5m": 0.62,
+    "age_hours": 1.6
+   },
+   {
+    "symbol": "JOB",
+    "name": "DogWifJob",
+    "ca": "9Pq7aLAbhDG2tTnS22cm6kuysZVcZpLFE368HWuypump",
+    "dex": "pumpswap",
+    "mcap_usd": 1958127,
+    "vol_5m": 1294,
+    "vol_1h": 14105,
+    "change_1h": 0.35,
+    "buy_ratio_5m": 0.56,
+    "age_hours": 641.9
+   },
+   {
+    "symbol": "HOGE",
+    "name": "Hogecoin",
+    "ca": "FVzqGqRmr4UH1Fif6dewmwbJ1p4YUZCu8dcw4Efopump",
+    "dex": "pumpswap",
+    "mcap_usd": 703428,
+    "vol_5m": 4406,
+    "vol_1h": 13994,
+    "change_1h": 13.83,
+    "buy_ratio_5m": 0.26,
+    "age_hours": 198.1
+   },
+   {
+    "symbol": "Loafing",
+    "name": "Loafing",
+    "ca": "FHiMLpA7qSfAa1QWT9QEAe1SondRwgpmR2skjMAfpump",
+    "dex": "pumpswap",
+    "mcap_usd": 25559,
+    "vol_5m": 2180,
+    "vol_1h": 11690,
+    "change_1h": 13.69,
+    "buy_ratio_5m": 0.63,
+    "age_hours": 3.2
    }
   ]
  },
  "goal": null,
  "last_scan": {
-  "at": 1795438540.4520051,
-  "tokens": 6,
-  "pairs": 6,
+  "at": 1795439460.152033,
+  "tokens": 0,
+  "pairs": 0,
   "passed_market_filters": 0,
   "researched": 0
  },
  "recent_looks": [
-  {
-   "ts": "2026-11-23T11:37:25Z",
-   "symbol": "PumpMeme",
-   "ca": "93uamrbDerKbUh8MSjNF1wDtxYvEUD1CS9BcHn1apump",
-   "setup": "MIGRATED",
-   "mcap_usd": 1908594,
-   "vol_5m": 3777,
-   "outcome": "PASS",
-   "conviction": 3,
-   "reason": "PASS \u2014 flow at 0.66x hourly pace, 18-copy vamp field, and the site doesn't show this CA. Blocker: \"flow below pace\" (V1, V3, V13)."
-  },
-  {
-   "ts": "2026-11-23T11:41:38Z",
-   "symbol": "Optimus",
-   "ca": "HvW8c77wWdiaRt921yhsZKnoaEMF33kcbe3rGdN415Jj",
-   "setup": "FINAL_STRETCH",
-   "mcap_usd": 19881,
-   "vol_5m": 19767,
-   "outcome": "PASS",
-   "conviction": 3,
-   "reason": "PASS \u2014 chasing spike. 5m up 248% at 5.8x the hourly pace, 11 minutes old, and 16 copies of the same name. Wait for the retrace and a printed higher low, or pass (V1, V6)."
-  },
   {
    "ts": "2026-11-23T11:49:39Z",
    "symbol": "RNV",
@@ -1024,6 +998,28 @@
    "outcome": "PASS",
    "conviction": 3,
    "reason": "PASS \u2014 borrowed name off a real project (Umbra), 1-day-old domain selling a \"product in development,\" and the entry sits 50%+ above its printed higher low. Mid-range, no catalyst. (V1, V3, V13)"
+  },
+  {
+   "ts": "2026-11-23T13:03:46Z",
+   "symbol": "HOGE",
+   "ca": "FVzqGqRmr4UH1Fif6dewmwbJ1p4YUZCu8dcw4Efopump",
+   "setup": "DIP",
+   "mcap_usd": 708532,
+   "vol_5m": 4140,
+   "outcome": "REJECT",
+   "conviction": null,
+   "reason": "Bundles: 9 linked wallet cluster(s) hold 27.7% of supply (>20%) (V17)"
+  },
+  {
+   "ts": "2026-11-23T13:08:08Z",
+   "symbol": "PumpMeme",
+   "ca": "93uamrbDerKbUh8MSjNF1wDtxYvEUD1CS9BcHn1apump",
+   "setup": "MIGRATED",
+   "mcap_usd": 1984102,
+   "vol_5m": 3831,
+   "outcome": "PASS",
+   "conviction": 3,
+   "reason": "PASS: $1.98M mcap, 5m flow at 0.23x pace, no breakout, and the site doesn't show this CA. Blockers: flow below pace, no breakout, bottom-buy rule. Farm-looking. (V1, V6, V13)"
   }
  ],
  "skip_review": {
@@ -1471,8 +1467,8 @@
    "blocked": 6,
    "ran": 1,
    "dumped": 3,
-   "flat": 2,
-   "pending": 0,
+   "flat": 1,
+   "pending": 1,
    "ran_examples": [
     {
      "symbol": "RNV",
@@ -1680,8 +1676,8 @@
  "watch": {
   "on": true,
   "live": 70,
-  "settled": 2913,
-  "brain_reads": 1016,
+  "settled": 2915,
+  "brain_reads": 1017,
   "would_buys": 0,
   "days": [
    "2026-11-14",
@@ -1699,87 +1695,6 @@
   "sample_min": 2.0
  },
  "daily_reviews": [
-  {
-   "day": "2026-11-20",
-   "model": "claude-opus-5-5",
-   "digest": {
-    "settled": 322,
-    "all": {
-     "n": 322,
-     "ran_pct": 19.3,
-     "dumped_pct": 68.6,
-     "median_peak_x": 1.24,
-     "hit_2x_pct": 17.7,
-     "avg_net_pct": -13.8,
-     "avg_cost_pct": 9.9
-    },
-    "by_stage": {
-     "checklist_failed": {
-      "n": 168,
-      "ran_pct": 17.3,
-      "dumped_pct": 64.9,
-      "median_peak_x": 1.2,
-      "hit_2x_pct": 13.7,
-      "avg_net_pct": -14.0,
-      "avg_cost_pct": 9.9
-     },
-     "brain_passed": {
-      "n": 79,
-      "ran_pct": 21.5,
-      "dumped_pct": 74.7,
-      "median_peak_x": 1.32,
-      "hit_2x_pct": 24.1,
-      "avg_net_pct": -14.4,
-      "avg_cost_pct": 9.8
-     },
-     "would_buy": {
-      "n": 0
-     },
-     "not_researched": {
-      "n": 0
-     }
-    }
-   },
-   "summary": "No edge yet. All 322 settled coins lost money after costs on the simple plan, and so did every setup: the average was -13.8%, of which about 9.9% was round-trip cost, so the price moves alone already lost about 4%. With a +50% target, a -20% stop and about 10% cost, a winner nets about +40% and a loser about -30%, so a setup has to reach 1.5x before the stop roughly 43% of the time just to break even. The best bucket, FINAL_STRETCH, did it 27.7% of the time (n=47). The overall average is clearly negative: about \u00b13.6 points of noise at n=322. Even FINAL_STRETCH's -10.6% has a 95% range of roughly \u00b19 points that stays below zero, and the real sample is smaller than it looks because of meta clustering (GTA and FIONA copies) and at least one coin logged twice. The routine model made zero would-buys, so there is nothing to compare against what it passed on. The 79 coins it reviewed and passed did -14.4%, the same as the 168 the checklist failed (-14.0%). On this data neither the checklist nor the model separates winners from losers.",
-   "findings": [
-    "Overall (n=322): 19.3% reached 1.5x before the -20% stop, 68.6% hit the stop, the median coin peaked at only 1.24x, average net -13.8% with 9.9% average cost. The typical coin's best move barely covers costs twice over.",
-    "The simple plan's result is roughly ran% \u00d7 +40 \u2212 dumped% \u00d7 30. For all coins that gives 0.193\u00d740 \u2212 0.686\u00d730 \u2248 -12.9%, close to the measured -13.8%. The losses come from the hit rate, not from a few bad outliers.",
-    "FINAL_STRETCH (n=47) is the least bad: 27.7% ran, 25.5% hit 2x, median peak 1.38x, net -10.6%. That is still well short of the ~43% ran rate needed to break even. MIGRATED (n=222): 20.7% ran, net -13.1%.",
-    "DIP is the worst setup (n=53): 5.7% ran, median peak 1.14x, net -19.9%. More DIP coins hit 2x at some point (9.4%) than hit 1.5x before the -20% stop (5.7%), so the stop often fired before a later run. Even so, nothing here justifies buying dips: they mostly did not bounce.",
-    "Checklist failures (n=168): 17.3% ran, 64.9% dumped, net -14.0%. Coins the model reviewed and passed (n=79): 21.5% ran, 74.7% dumped, 24.1% hit 2x, net -14.4%. Passing the checklist gave a wider spread of outcomes (more 2x, more dumps) but no better average.",
-    "Would-buys: n=0. The model passed on every coin it reviewed, so the question of whether its picks beat its passes cannot be answered from this data.",
-    "48h skip reasons look like they are earning their keep. Coins blocked by each rule reached 1.5x less often than the 19.3% baseline: top 10 over 25% 9/66 (13.6%, 79% dumped), falling knife (code) 6/48 (12.5%, 85% dumped), RugCheck danger 4/29 (13.8%, with dumps to 0.01-0.03x), too new 1/9. The blocked coins that did run mostly peaked at 1.5-1.75x, barely past the target. Nothing here argues for loosening a rule.",
-    "The 'other' skip bucket (n=12) holds the best blocked runners: CALICO 3.25x, After 2.36x, Ant 2.32x. Three wins in 12 is noise, and the block reason itself isn't recorded.",
-    "Top runners are all very young: ages 2.5-29 minutes, market caps $18k-$186k, and 3 of 5 failed the checklist. Their peaks (8-25x) are survivorship highlights. The simple plan sells at 1.5x, and the stats show such runs are rare (1-2% of coins).",
-    "Meta crowding: many GTA VI copies (GTA, GTAVI, GTA6, GTASZN, GTAB, PolyGTA, GTAKID, LUCIA, Leonida) and at least six different FIONA contract addresses. Almost all of them dumped, which is the vamp pattern from V1/V13. FIONA copies also include two of the top runners, so a coin name alone doesn't tell you which one is the original.",
-    "Cost is the biggest single drag. About 10% round trip on a $10 buy is half the -20% stop distance and a fifth of the +50% target. That matches the live result before the pause: $18.83 of the $25.79 loss was fees and slippage."
-   ],
-   "rule_ideas": [
-    "Set every rule's thresholds before looking at the week's data, then score them on a holdout of days the rule wasn't tuned on. For any rule to be worth testing live, its subset needs n \u2265 40 and an average net whose 95% lower bound is above 0. Anything else counts as noise.",
-    "Cost gate: only count coins whose estimated round-trip cost is \u2264 5% (if per-coin cost isn't logged, use mcap \u2265 $100k as a stand-in). Compare net % with the \u22645% and >5% cost groups side by side. The idea: with a 1.24x median peak, a coin only has room for profit if its pool is deep.",
-    "FINAL_STRETCH-only test: setup = FINAL_STRETCH AND checklist = pass AND 5m volume \u2265 $10k AND buy ratio \u2265 0.55 AND flow ratio \u2265 1.0. Score it on both the simple plan and a 2x target / -35% stop / 60-minute time stop.",
-    "Exit-shape test on all setups: compare +50%/-20% with 2x/-35% and 2x/-50% (all with a 6h time exit). The DIP numbers (more coins hit 2x than 1.5x-before-stop) suggest the -20% stop sits inside normal noise; 68.6% of all coins hit it.",
-    "DIP suspension test: drop DIP entirely, or allow it only when drawdown is 40-55% AND 5m volume \u2265 its 1h average pace (flow ratio \u2265 1.0) AND buy ratio \u2265 0.55. Check whether any DIP subset gets above a 25% ran rate. If none does, retire the setup.",
-    "Meta-crowding rule: if 3 or more coins sharing a name root (GTA*, FIONA*) were logged in the last 6h, only consider the one with the highest mcap and 5m volume and skip the rest as vamps (V1). Test whether the coins it would skip did worse than the one it would keep.",
-    "Young-MIGRATED test: setup = MIGRATED AND age < 0.5h AND mcap $30k-$200k AND 5m volume \u2265 $10k AND checklist = pass. The top runners cluster here, but so do rugs. Only adopt it if the net average beats MIGRATED as a whole (-13.1%) by more than its noise.",
-    "Model-score test (this needs a logging change first): in watch-only mode, have the model record a conviction score from 0 to 10 for every checklist-pass coin, not just PASS. Then test whether coins scored 7+ beat coins scored under 5 on net %. Without that, the week can't evaluate the model at all.",
-    "Do not loosen any hard line. Top 10 over 25%, RugCheck danger, dev over 1% and too new all blocked coins that ran less often than the baseline; RugCheck's blocked coins included dumps to 0.01-0.03x."
-   ],
-   "data_issues": [
-    "Stage coverage has a gap. 168 checklist failures plus 79 model passes is 247 coins, but 322 settled, so 75 coins have no stage. At the same time 'not_researched' shows n=0, even though 1,353 candidates were skipped with no model call in 48h. Either the skipped candidates aren't followed (a selection bias) or they are being put in the wrong bucket.",
-    "The model was blind most of the time: 194 of 327 calls (59%) hit the plan limit and 1,353 candidates got no review. The 79 coins it did review are whatever got through the rate limit, not a random sample. Pace the calls or put them in order of priority before the week's comparison means anything.",
-    "Zero would-buys. Either watch-only mode pushes the model toward PASS, or no coin cleared its bar. The logs need a hypothetical verdict and conviction score for every reviewed coin.",
-    "Same contract address, conflicting results: 'apocry ' HVxXzEt87... shows max_x 8.27 (top runners, 24h) and best_x 1.0 / worst 0.72 'dumped' (falling-knife skips, 48h). Either the coin was logged twice with different start points or best_x is calculated differently in the two places. Deduplicate per address (keep the first observation) before any stats.",
-    "The 'dumped' label doesn't match -20%: coins with worst_x 0.79 (LUCIA, STF, Neko, BUCKME), 0.78 and 0.76 are marked dumped. Document whether the threshold includes costs, and keep 'ran' and 'dumped' consistent with the simple plan's exits.",
-    "Mixed windows: the skip table covers 48h while every other table covers 24h, so the numbers can't be reconciled directly.",
-    "The 'other' skip reason (12 coins, including the 3 best blocked runners) isn't categorized. Log the actual reason.",
-    "Outlier to verify: RUGGED, MIGRATED at $30.9k mcap only 3.6 minutes old, peaked at 24.8x. Check the pool and pair, token decimals and the price source before trusting it. Its net is capped by the 1.5x exit, but it distorts the top-runner list.",
-    "The top-runner and skip records don't include 5m volume, flow ratio, buy ratio, drawdown or per-coin cost, so none of the rule ideas can be checked on this summary. Include them in the export.",
-    "Sampling interval isn't recorded. Some coins peaked within 28-34 minutes, and the 'both crossed, count the loss' rule depends on how often prices were sampled.",
-    "Timeline: watch-only was set for about one week from Nov 3, with the test planned around Nov 10. Today is Nov 20. Confirm whether the pause was extended and which dates the final test dataset covers.",
-    "Naming: 'brain_passed' means the model reviewed the coin and its verdict was PASS (no buy). Rename it to avoid reading it as approved."
-   ]
-  },
   {
    "day": "2026-11-21",
    "model": "claude-opus-5-5",
@@ -1941,6 +1856,89 @@
     "Costs are estimated only for a $10 buy. Log pool liquidity and cost at several sizes, since costs were $18.83 of the $25.79 real loss.",
     "top_runners lists only winners and leaves out 5m volume, flow ratio, buy ratio and drawdown. That's survivorship bias, and the fields needed to test the rules above are missing. Export the full per-coin rows.",
     "Timeline: the watch-only week was set for Nov 3\u201310, but today is Nov 22 and it's still running. Confirm the Nov 10 review happened, or that the extension was intended. Twelve extra days of data is fine, but it should be on purpose."
+   ]
+  },
+  {
+   "day": "2026-11-23",
+   "model": "claude-opus-5-5",
+   "digest": {
+    "settled": 229,
+    "all": {
+     "n": 229,
+     "ran_pct": 25.8,
+     "dumped_pct": 59.4,
+     "median_peak_x": 1.25,
+     "hit_2x_pct": 11.8,
+     "avg_net_pct": -8.7,
+     "avg_cost_pct": 9.6
+    },
+    "by_stage": {
+     "checklist_failed": {
+      "n": 70,
+      "ran_pct": 22.9,
+      "dumped_pct": 51.4,
+      "median_peak_x": 1.1,
+      "hit_2x_pct": 11.4,
+      "avg_net_pct": -9.8,
+      "avg_cost_pct": 9.8
+     },
+     "brain_passed": {
+      "n": 157,
+      "ran_pct": 26.8,
+      "dumped_pct": 63.1,
+      "median_peak_x": 1.31,
+      "hit_2x_pct": 12.1,
+      "avg_net_pct": -8.4,
+      "avg_cost_pct": 9.5
+     },
+     "would_buy": {
+      "n": 0
+     },
+     "not_researched": {
+      "n": 1,
+      "ran_pct": 100.0,
+      "dumped_pct": 0.0,
+      "median_peak_x": 1.56,
+      "hit_2x_pct": 0.0,
+      "avg_net_pct": 40.0,
+      "avg_cost_pct": 10.0
+     }
+    }
+   },
+   "summary": "Nothing has a positive after-cost edge yet. All 229 settled coins average -8.7% net on the simple plan. Before costs they average about +0.9%, so the 9.6% average round-trip cost on a $10 buy accounts for the whole loss. That is the same story as the 22 paper trades, where fees and slippage were $18.83 of the $25.79 lost. The best setup is FINAL_STRETCH: n=39, 35.9% hit 1.5x, -4.9% net. With a 1.5x target, a -20% stop and about 10% costs, a setup needs roughly 43% hitting the target to break even. At n=39 the hit rate's 95% range is about 21\u201351%, so this sample can't separate it from MIGRATED, from coin-flip noise or from breakeven. I can't say whether the routine model's would-buys beat its passes, because it made zero would-buys in 24h. The coins it passed on (n=157, -8.4%) did slightly better than the coins the checklist failed (n=70, -9.8%), but both lost money. Passing everything was the right call on average. One process note: the watch-only review was set for about Nov 10 and today is Nov 23, so the owner should decide whether this is still the plan.",
+   "findings": [
+    "All coins (n=229): 25.8% ran, 59.4% dumped, median peak 1.25x, 11.8% hit 2x, -8.7% net after 9.6% cost. Before costs that is about +0.9%: no edge, just a cost drag.",
+    "MIGRATED (n=162) is the weakest setup and 71% of the sample: 23.5% ran, 62.3% dumped, -10.0% net (about +0.5% before costs). The simple plan has nothing to work with here.",
+    "FINAL_STRETCH (n=39) is the least bad: 35.9% ran, 20.5% hit 2x, median peak 1.44x, -4.9% net (about +5.1% before costs). That gap is about 1 standard error (roughly 5 points). Ran plus dumped is 100%, so every one of these coins resolved within 6h; it is a coin-flip-style distribution.",
+    "DIP (n=28) dumps least (35.7%) but barely moves: median peak 1.08x, 3.6% hit 2x, 39% flat, -6.8% net. Dips mostly go sideways and then pay the fee.",
+    "The routine model's rejections (brain_passed n=157, -8.4%) and checklist failures (n=70, -9.8%) differ by 1.4 points. That is noise. Neither the checklist nor the routine model splits winners from losers on this metric, though both correctly kept money out of a losing pool.",
+    "The top runners (Fly 22.9x, MINELIUS 14.7x, Hedge 10.0x, FSDV15 9.2x) were all 0.09\u20130.24h old and all failed the checklist. FOAM (6.0x) was 0.04h old and the routine model passed on it. In the same 48h, 32 'too new / sniping' blocks went 7 ran, 25 dumped (78% dumped). The big runners are survivors from a pool that mostly dies.",
+    "These skip rules are earning their keep (48h, mostly dumps): too new 25/32 dumped, flow below pace 23/30, near the high 20/25, RugCheck danger 14/16 (several to 0.01\u20130.03x), top 10 over 25% 13/17.",
+    "The weakest skip reason is the routine model's 'falling knife / no higher low' (n=16): 4 ran, 4 dumped, 5 flat, 3 pending. Before costs that is about +9% on the simple plan, about -1% after costs. It overlaps with 'falling knife (code)' and 'brain paced' (STREETS appears in all three), so the real sample is smaller than it looks.",
+    "Under the simple plan, each skip category's return after costs is 0% or worse except 'other' (n=6). No rule is clearly blocking profitable coins at $10 size.",
+    "Brain capacity is fine: 397 calls in 48h, 0 plan-limit hits, 0 stop reviews or candidates without a brain call."
+   ],
+   "rule_ideas": [
+    "Cost gate: only count coins whose logged round-trip cost is at most 5% at the intended size. Then check whether the before-cost return of the deeper-pool coins survives. If costs are mostly fixed fees, rerun the whole week at $25 and $50 buys. Costs are the single biggest lever in this data.",
+    "FINAL_STRETCH, checklist passed, 5m volume of at least $10k, buy ratio of at least 0.55 (V1). Test whether at least 43% hit 1.5x before -20% on deduplicated coins. Below about 40% on the week's sample, drop it.",
+    "FINAL_STRETCH exit variant: sell enough at 2x to get the cost back, trail the rest, stop at -30% to survive the pre-bond dump (V1). Compare with the 1.5x/-20% plan on the same coins. 20.5% hit 2x, and the 1.5x cap cuts off exactly the tail the strategy depends on.",
+    "MIGRATED split by age (under 1h vs 1\u201312h) and mcap ($30\u201370k vs $70k\u2013$11M, V6), with 5m volume of at least $10k and flow ratio (5m volume over hourly pace) of at least 1.0. Keep MIGRATED only if one cell is positive after costs with n of at least 40. Otherwise drop the setup.",
+    "DIP split by drawdown (40\u201355% vs 55\u201375%) with flow ratio of at least 1.0 and buy ratio of at least 0.55. Check whether the deeper or the shallower dips are the flat, fee-paying ones.",
+    "Test against the population, not anecdotes: compare deduplicated coins blocked by the routine model's 'falling knife / no higher low' with coins it passed for other reasons. If blocked coins do as well or better at n of at least 30, remove that subjective reason and keep the code version.",
+    "Ranking test: among coins the routine model scored, do the top 25% by conviction beat the bottom 25% after costs? If not, its conviction number carries no information and sizing by it is cosmetic.",
+    "Keep the 'too new' rule. Run one check on first sighting under 0.25h old: ran% vs dumped% after deduplication and after fixing the price spikes. The tiny-age runners are probably survivorship, and the hard line says don't snipe."
+   ],
+   "data_issues": [
+    "would_buy is 0 out of 157 routine-model evaluations in 24h. Either it never says BUY or watch-only mode suppresses the verdict. Without hypothetical BUYs (and conviction), the week can't test the routine model's selection, which was the point. Log the verdict it would have given.",
+    "Peak multiples disagree for the same contract: Fly is 22.89x in top_runners vs best 1.52x in skips, MINELIUS 14.73x vs 1.53x, FOAM 6.00x vs 1.98x. Either each sighting uses its own reference price, or the max_x samples are outliers. Fly going 22.9x from $14.8k in 5.7 min at 0.24h old looks like a price jump at bond/migration or a wrong-pool quote. Validate before trusting any max_x or top_runner.",
+    "Setup labels look wrong: Fly (84tAc\u2026cAc) and MCAT (BzPy\u2026WMi) don't end in 'pump', yet Fly is labeled FINAL_STRETCH, which implies a pump.fun bonding curve. Check how the launchpad and setup are assigned.",
+    "There is double-counting: MINELIUS shows up in 3 skip categories, STREETS in 3, OpenIndex in 2. Different contracts share symbols (FSDV15, MCAT, SANTA \u00d72), which are probably vamps. Deduplicate by contract and give each coin one primary skip reason before the week's review.",
+    "Skip-reason coverage is incomplete: the categories add up to 195 blocks in 48h, while 24h alone has 227 rejected coins (70 checklist failures + 157 routine-model passes). Most rejections don't have a logged reason.",
+    "'brain paced' shows 11 blocks, but routine_brain_usage reports 0 candidates skipped for lack of a brain call. One of them is wrong, or 'paced' means something undocumented.",
+    "Stage counts add up to 228 (70+157+0+1), but n is 229. One coin has no stage. The one not_researched coin also has no stated reason.",
+    "Some skip best_x values cluster right at 3.0 (3.0, 2.97, 2.96). Check whether there's a cap. Some worst_x values are exactly 0.0 (FSDV15 3P7F\u2026, BIGFOOT). Confirm those are real rugs, not a missing-price sentinel.",
+    "The windows are mixed: setup and stage stats cover 24h, skip stats cover 48h. They can't be cross-checked directly.",
+    "The cost model is only computed for a $10 buy. Log the split between fixed costs (priority fee, bribe) and slippage, so other sizes can be evaluated without re-collecting data."
    ]
   }
  ],
