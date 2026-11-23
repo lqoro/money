@@ -1,13 +1,13 @@
 # Trencher live report
 
-Updated 2026-11-23T05:23:07Z (paper trading, never real money)
+Updated 2026-11-23T05:38:12Z (paper trading, never real money)
 
 - Equity: $74.23 (-25.8% vs $100 start)
 - Closed trades: 22, 3 wins
 - Fees paid: $14.78 (axiom $2.81, network $9.18, pool $2.66), plus $4.15 lost to slippage
 - New trades: WATCH-ONLY (scans and decides, buys nothing)
-- Brain: subscription, claude-haiku-5-5 for routine calls, claude-opus-5-5 for the daily review; 324 routine calls and 0 plan-limit hits in 48h
-- Watch log: 102 coins being followed, 2790 filed, 0 would-buys (6h follow, sampled every 2 min)
+- Brain: subscription, claude-haiku-5-5 for routine calls, claude-opus-5-5 for the daily review; 328 routine calls and 0 plan-limit hits in 48h
+- Watch log: 104 coins being followed, 2793 filed, 0 would-buys (6h follow, sampled every 2 min)
 
 ## Scorecard (after fees)
 - 22 closed, 3 won (14%), net $-25.79
@@ -73,9 +73,19 @@ Updated 2026-11-23T05:23:07Z (paper trading, never real money)
   CA `H4gHnZ3NCU7Z9XQwGX6YYJNyieGEW8pqwGRUcdSxpump`
 
 ## Last scan
-- 05:22Z: 2 coins, 2 with pairs, 0 passed the market filters, 0 researched
+- 05:37Z: 1 coins, 1 with pairs, 0 passed the market filters, 0 researched
 
 ## Coins it looked at, and why it passed
+- 05:32Z PumpMeme (MIGRATED, $610,519 mcap, $110,603 5m vol): REJECT, Top 10 hold 46.9% ex-pool (>25%) (V13)  
+  CA `93uamrbDerKbUh8MSjNF1wDtxYvEUD1CS9BcHn1apump`
+- 05:28Z BIRDMAGA (MIGRATED, $221,981 mcap, $7,114 5m vol): PASS at conviction 3, PASS: BIRDMAGA is a MIGRATED bottom-zone pullback with 5m flow below pace (0.86x) and no printed higher low, on a fading Trump-meme theme. Blocker: "flow below pace" and "no higher low" (V1, V6).  
+  CA `J9AvtJRDreHG8B8PnW4tNMvH5c2c1jxfUfDvjrWtpump`
+- 05:26Z hCAT (MIGRATED, $98,554 mcap, $3,147 5m vol): PASS at conviction 2, PASS: hCAT is not the cat-field leader by 5m flow ($3.1k of $19.5k across 18 copies), no printed higher low, and the price data doesn't reconcile ($86B peak vs $98k now). Can't read this chart. (V1, V3, V6)  
+  CA `2FYs4vApfj4ErsggpFDfzMv1WvxnyiLtzNEj84mS6TLh`
+- 05:25Z Fly (DIP, $159,197 mcap, $9,777 5m vol): PASS at conviction 2, PASS: no catalyst, no printed higher low, and nobody is talking about the fly/wall story. Blocker: no catalyst / dead story (V1, V5, V13).  
+  CA `84tAcSK5L9kuQEVM8C8vMHXnfdA83nGBT2nYfSbPUcAc`
+- 05:23Z Nikumaru (FINAL_STRETCH, $25,325 mcap, $33,008 5m vol): PASS at conviction 2, PASS: chasing spike. Nikumaru is up 322% on 5m, 9.9x its hourly pace, six minutes old, and one of 24 copies of the same name with no news behind it. (V1, V6, V13)  
+  CA `AkyDhL7rCGyGWzdTTo5CFyfnyhKnrwd1t9PZMsRbpump`
 - 05:16Z MINELIUS (MIGRATED, $7,663,996 mcap, $25,581 5m vol): PASS, PASS — brain unavailable, not trading blind.  
   CA `E9rWKjVhHMxQkxfREr7Li8Yy46rVcWiWHoKVQAe9pump`
 - 05:14Z HUMAN (FINAL_STRETCH, $21,312 mcap, $35,082 5m vol): PASS at conviction 2, PASS. Blocker "split crowd": HUMAN is one of 26-27 "human" copies, and it's 15% off a 9-minute-old peak after a +128% candle at 7.2x pace. Chasing a spike in a vamp field (V1, V6, V13).  
@@ -86,49 +96,39 @@ Updated 2026-11-23T05:23:07Z (paper trading, never real money)
   CA `4npJ3avxnGhCzKbWQpLrQXAHsjWzKr4JqBsbu5Fspump`
 - 05:06Z COPIUM (DIP, $431,980 mcap, $3,300 5m vol): PASS at conviction 3, PASS — DIP with no catalyst, theme pace 0.81x, 14 same-ticker copies, and the site doesn't show this CA. Pass on a farm-shaped setup (V13, V6).  
   CA `BAKsQrynzwadyACDMsg3J5R8a4CTvj1u7kEYyjq7pump`
-- 04:50Z FSDV15 (MIGRATED, $2,257,482 mcap, $2,572 5m vol): PASS at conviction 3, PASS. Leader of a 27-copy "FSD" field, but flow is at 0.58x its hourly pace, the theme is at 0.37x, there's no printed higher low, and the coin is over $1M with no room to the high. Farm-adjacent until proven otherwise. (V1, V6, V13)  
-  CA `3BcJ4SSCfbxDMrWcUDucyCWxMjmy4M2ECCtvxu86pump`
-- 04:44Z panel (FINAL_STRETCH, $24,520 mcap, $21,426 5m vol): REJECT, Dev holds 2.0% (>1%) (V13, V17)  
-  CA `CE2Zuoxqmbz3enq5LBWbpcL5Nc7rzt8YUqK2zuMwpump`
-- 04:43Z BIRDMAGA (MIGRATED, $239,390 mcap, $6,173 5m vol): PASS at conviction 3, PASS: flow below pace (5m at 0.7x hourly, $6.2k), no printed higher low, and it rides a Trump-dinner story that the radar says is fading. Blocker: "flow below pace." (V1, V6)  
-  CA `J9AvtJRDreHG8B8PnW4tNMvH5c2c1jxfUfDvjrWtpump`
-- 04:40Z hCAT (MIGRATED, $100,987 mcap, $3,000 5m vol): PASS at conviction 2, PASS: flow below pace (5m $3k, 0.52x hourly, 48% buys) on a vamp field of 18 cat copies, with the "100% drawdown" from an $86B peak being a bad print, not a dip. Blockers: flow below pace, no higher low, no breakout. (V1, V6, V13)  
-  CA `2FYs4vApfj4ErsggpFDfzMv1WvxnyiLtzNEj84mS6TLh`
-- 04:39Z Fly (DIP, $181,868 mcap, $5,336 5m vol): REJECT, Dip with fading attention is a falling knife, not a dip (5m at 0.25x the hour's pace, under 0.6x)  
-  CA `84tAcSK5L9kuQEVM8C8vMHXnfdA83nGBT2nYfSbPUcAc`
 
 ## What its skips did next (last 48h)
 A skip "ran" if the coin reached the first target (1.5x) from the skip price before a 20% drop, "dumped" if the drop came first. Sampled every 10 min, followed 6h.
-- flow below pace: blocked 26, ran 2, dumped 18, flat 0, open 6 (saving losses: keep it)
+- flow below pace: blocked 26, ran 2, dumped 18, flat 1, open 5 (saving losses: keep it)
   - ran: snowball up to 1.59x  
     CA `3D7YQcnXi6RMjWxheiE8VLuGXJTtgQkmyugGYvzjpump`
   - ran: OpenIndex up to 1.63x  
     CA `FuKY3dk7QmpbDdQRjzbjB3G6PiCuqKNvN4dAWDpwpump`
-- too new / sniping: blocked 24, ran 6, dumped 18, flat 0, open 0 (saving losses: keep it)
+- too new / sniping: blocked 25, ran 6, dumped 19, flat 0, open 0 (saving losses: keep it)
   - ran: TA up to 1.77x  
     CA `DKUM8qywmi8X9RYK2wUgnTw8QKjh1nYDThZR1GXPpump`
   - ran: SANTAHAT up to 3x  
     CA `5fWLSMA5HoK9W4VoTMi4c3qjyu3N2LsKRSM8Ffpgpump`
   - ran: KYC up to 2.37x  
     CA `47YCrfUmSQUF9vnPsPGSzrmTcxttdRAWejCMkhrrpump`
-- near the high / chasing: blocked 22, ran 2, dumped 17, flat 1, open 2 (saving losses: keep it)
+- near the high / chasing: blocked 22, ran 2, dumped 18, flat 1, open 1 (saving losses: keep it)
   - ran: CUNTS up to 1.61x  
     CA `7CvW68FD9KjNYGByfykhaNps7VNPLN8dFwMRfmgQpump`
   - ran: SANTA up to 1.85x  
     CA `tZsjFu2CH1R23wEpbfXAYGc2KUaVrUbwofCNNNqpump`
-- top 10 over 25%: blocked 17, ran 2, dumped 13, flat 0, open 2 (saving losses: keep it)
+- top 10 over 25%: blocked 18, ran 2, dumped 13, flat 0, open 3 (saving losses: keep it)
   - ran: :) up to 1.65x  
     CA `Dtx414D8jurspmB1jqJWsYU66pemoXRjQeXx7TC1pump`
   - ran: GIF up to 2.16x  
     CA `B6wM98qkQKP71mhPA48S7No6TxM4KaXdFojDTZeUpump`
-- RugCheck danger: blocked 13, ran 1, dumped 12, flat 0, open 0 (saving losses: keep it)
-  - ran: MIHAOMAS up to 1.62x  
-    CA `3XsFunPdji9U1EgJXokZysw8SB3t74un89b6KLEVpump`
-- falling knife / no higher low: blocked 12, ran 2, dumped 3, flat 5, open 2 (mixed)
+- falling knife / no higher low: blocked 14, ran 2, dumped 3, flat 6, open 3 (mixed)
   - ran: UrAnus up to 2.97x  
     CA `27u3diWofnXGUkddjLGhcy1nRssFKHW3RtNbpWzUpump`
   - ran: STREETS up to 1.73x  
     CA `82mseLFauphc2yutbaDGgViahquJ1jGVLpyof99xpump`
+- RugCheck danger: blocked 13, ran 1, dumped 12, flat 0, open 0 (saving losses: keep it)
+  - ran: MIHAOMAS up to 1.62x  
+    CA `3XsFunPdji9U1EgJXokZysw8SB3t74un89b6KLEVpump`
 - brain paced: blocked 12, ran 4, dumped 6, flat 1, open 1 (mixed)
   - ran: STREETS up to 1.73x  
     CA `82mseLFauphc2yutbaDGgViahquJ1jGVLpyof99xpump`
@@ -193,11 +193,11 @@ The meta is fresh pump.fun joke launches, not the news. Coins under an hour old 
 ## Moving most in its scans, last 30 min (1h volume)
 - UCASH: $280,913 1h vol, $1,740,855 mcap, +10% 1h  
   CA `7cFiqdT46zs7ooHWLFiLSaSQKLMibtokh9dBinsspump`
+- PumpMeme: $178,988 1h vol, $732,135 mcap, +1938% 1h  
+  CA `93uamrbDerKbUh8MSjNF1wDtxYvEUD1CS9BcHn1apump`
 - MINELIUS: $161,959 1h vol, $7,677,278 mcap, -0% 1h  
   CA `E9rWKjVhHMxQkxfREr7Li8Yy46rVcWiWHoKVQAe9pump`
-- TAIL: $102,013 1h vol, $2,542 mcap, -91% 1h  
-  CA `FzoAgxLPmeS7LajnoAQ1uPPu4vZ7t8VXWJr73AGNpump`
-- PEACH: $77,100 1h vol, $1,362 mcap, -100% 1h  
-  CA `61yuZf1JyTKqoCfS784SusFGVekA6YUsGTfDg3o6pump`
-- Trilaygo: $63,299 1h vol, $3,383 mcap, -57% 1h  
-  CA `F9vgq6YB9sKJHPNS9BLnA4yJ4hFe1zrf8jf9Y4Dapump`
+- Fly: $108,686 1h vol, $159,197 mcap, -21% 1h  
+  CA `84tAcSK5L9kuQEVM8C8vMHXnfdA83nGBT2nYfSbPUcAc`
+- BIRDMAGA: $99,585 1h vol, $221,981 mcap, -8% 1h  
+  CA `J9AvtJRDreHG8B8PnW4tNMvH5c2c1jxfUfDvjrWtpump`
