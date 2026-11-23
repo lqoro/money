@@ -1,13 +1,13 @@
 # Trencher live report
 
-Updated 2026-11-23T16:14:26Z (paper trading, never real money)
+Updated 2026-11-23T16:29:33Z (paper trading, never real money)
 
 - Equity: $74.23 (-25.8% vs $100 start)
 - Closed trades: 22, 3 wins
 - Fees paid: $14.78 (axiom $2.81, network $9.18, pool $2.66), plus $4.15 lost to slippage
 - New trades: WATCH-ONLY (scans and decides, buys nothing)
-- Brain: subscription, claude-haiku-5-5 for routine calls, claude-opus-5-5 for the daily review; 438 routine calls and 0 plan-limit hits in 48h
-- Watch log: 89 coins being followed, 2952 filed, 0 would-buys (6h follow, sampled every 2 min)
+- Brain: subscription, claude-haiku-5-5 for routine calls, claude-opus-5-5 for the daily review; 441 routine calls and 0 plan-limit hits in 48h
+- Watch log: 90 coins being followed, 2955 filed, 0 would-buys (6h follow, sampled every 2 min)
 
 ## Scorecard (after fees)
 - 22 closed, 3 won (14%), net $-25.79
@@ -73,9 +73,17 @@ Updated 2026-11-23T16:14:26Z (paper trading, never real money)
   CA `H4gHnZ3NCU7Z9XQwGX6YYJNyieGEW8pqwGRUcdSxpump`
 
 ## Last scan
-- 16:13Z: 4 coins, 4 with pairs, 0 passed the market filters, 0 researched
+- 16:29Z: 3 coins, 3 with pairs, 0 passed the market filters, 0 researched
 
 ## Coins it looked at, and why it passed
+- 16:27Z COPIUM (DIP, $621,732 mcap, $3,825 5m vol): PASS at conviction 3, PASS: COPIUM is a DIP with no catalyst, 5m flow at 0.65x pace, and a theme at 0.65x pace. Falling knife, 0.9h off the peak. (V1, V6)  
+  CA `BAKsQrynzwadyACDMsg3J5R8a4CTvj1u7kEYyjq7pump`
+- 16:23Z FSDV15 (MIGRATED, $816,521 mcap, $3,100 5m vol): PASS at conviction 3, PASS: 5m flow at 0.51x its hourly pace, 81% off a $4.26M peak, and 28 copies of the ticker. Blocker: flow below pace. (V1, V6, V13)  
+  CA `3BcJ4SSCfbxDMrWcUDucyCWxMjmy4M2ECCtvxu86pump`
+- 16:17Z BRUH (MIGRATED, $8,166,892 mcap, $11,985 5m vol): PASS at conviction 3, PASS: BRUH is 2% off its $8.35M peak on 4.7x its hourly 5m pace, with a 0.48 buy share. That's a spike at the top, not a pullback buy, and there's no room above $1M (V1, V6).  
+  CA `PgFtGGquvnv2zEkjG2N2QPvBTBrafuExGYEqahRpump`
+- 16:16Z TUGI (FINAL_STRETCH, $17,002 mcap, $5,265 5m vol): REJECT, Top 10 hold 26.0% ex-pool (>25%) (V13)  
+  CA `Ddnd1DGVjtE2DT3ZjDXZsNzu6oHbe3GEj5VE9x6avYsA`
 - 16:12Z reloaded (FINAL_STRETCH, $29,353 mcap, $2,033 5m vol): REJECT, Dev holds 10.2% (>1%) (V13, V17)  
   CA `3p5ZK9CABym6kFQALLovmyLTEofMCdfsuAYm6W4apump`
 - 16:09Z PumpMeme (DIP, $1,300,596 mcap, $5,648 5m vol): PASS at conviction 3, PASS: bottom buy with no live story (theme pace 0.55x, zero buzz), no printed higher low, and the site doesn't show its own CA. Farm-shaped copy, not a dip. (V1, V3, V13)  
@@ -88,25 +96,17 @@ Updated 2026-11-23T16:14:26Z (paper trading, never real money)
   CA `B34nXKzCgsJb9ChLuSHPRpXLE3WFSWyeT8Cqkzzmpump`
 - 15:55Z JOB (MIGRATED, $2,017,547 mcap, $2,286 5m vol): REJECT, Bundles: 1 linked wallet cluster(s) hold 22.3% of supply (>20%) (V17)  
   CA `9Pq7aLAbhDG2tTnS22cm6kuysZVcZpLFE368HWuypump`
-- 15:50Z UCASH (MIGRATED, $2,930,266 mcap, $24,262 5m vol): PASS at conviction 4, PASS. Flow below pace (5m is 0.46x the hourly average), $2.9M with no breakout, and the site says the product is still in development with no GitHub. (V1, V6, V13)  
-  CA `7cFiqdT46zs7ooHWLFiLSaSQKLMibtokh9dBinsspump`
-- 15:48Z NOHR (DIP, $1,302,228 mcap, $7,278 5m vol): REJECT, Dip with fading attention is a falling knife, not a dip (5m at 0.45x the hour's pace, under 0.6x)  
-  CA `Jd3NCawdFiDNWpLiTtsMqoeoBMjC1ZQMrMScRVzpump`
-- 15:47Z JENSEN (DIP, $497,059 mcap, $39,166 5m vol): REJECT, Dip with fading attention is a falling knife, not a dip (5m at 0.20x the hour's pace, under 0.6x)  
-  CA `9scVbbC7HUwXaBmo8bnYfm2Pa5oouZpjy2NvrvwLpump`
-- 15:46Z CBUCKS (MIGRATED, $4,119,001 mcap, $4,566 5m vol): REJECT, Top 10 hold 25.9% ex-pool (>25%) (V13)  
-  CA `DtcicPCKTKeAh7TDEzTym3hXeoHAoMiBdYJhMYxZpump`
 
 ## What its skips did next (last 48h)
 A skip "ran" if the coin reached the first target (1.5x) from the skip price before a 20% drop, "dumped" if the drop came first. Sampled every 10 min, followed 6h.
-- flow below pace: blocked 36, ran 4, dumped 25, flat 0, open 7 (saving losses: keep it)
+- flow below pace: blocked 36, ran 4, dumped 27, flat 0, open 5 (saving losses: keep it)
   - ran: snowball up to 1.59x  
     CA `3D7YQcnXi6RMjWxheiE8VLuGXJTtgQkmyugGYvzjpump`
   - ran: OpenIndex up to 1.63x  
     CA `FuKY3dk7QmpbDdQRjzbjB3G6PiCuqKNvN4dAWDpwpump`
   - ran: hCAT up to 1.52x  
     CA `2FYs4vApfj4ErsggpFDfzMv1WvxnyiLtzNEj84mS6TLh`
-- too new / sniping: blocked 36, ran 9, dumped 26, flat 0, open 1 (saving losses: keep it)
+- too new / sniping: blocked 36, ran 9, dumped 27, flat 0, open 0 (saving losses: keep it)
   - ran: TA up to 1.77x  
     CA `DKUM8qywmi8X9RYK2wUgnTw8QKjh1nYDThZR1GXPpump`
   - ran: SANTAHAT up to 3x  
@@ -118,6 +118,11 @@ A skip "ran" if the coin reached the first target (1.5x) from the skip price bef
     CA `7CvW68FD9KjNYGByfykhaNps7VNPLN8dFwMRfmgQpump`
   - ran: SANTA up to 1.85x  
     CA `tZsjFu2CH1R23wEpbfXAYGc2KUaVrUbwofCNNNqpump`
+- top 10 over 25%: blocked 18, ran 2, dumped 13, flat 1, open 2 (saving losses: keep it)
+  - ran: :) up to 1.65x  
+    CA `Dtx414D8jurspmB1jqJWsYU66pemoXRjQeXx7TC1pump`
+  - ran: GIF up to 2.16x  
+    CA `B6wM98qkQKP71mhPA48S7No6TxM4KaXdFojDTZeUpump`
 - RugCheck danger: blocked 18, ran 3, dumped 15, flat 0, open 0 (saving losses: keep it)
   - ran: MIHAOMAS up to 1.62x  
     CA `3XsFunPdji9U1EgJXokZysw8SB3t74un89b6KLEVpump`
@@ -125,11 +130,6 @@ A skip "ran" if the coin reached the first target (1.5x) from the skip price bef
     CA `A2jLaCC7v3VjXP8gEgCQNbTWEvizYuQ82jFEYfzipump`
   - ran: JENSEN up to 1.7x  
     CA `CjPoozfB2Vub8pHFvdKuKUGJDLWuYC2U32yRTxMhpump`
-- top 10 over 25%: blocked 17, ran 2, dumped 13, flat 1, open 1 (saving losses: keep it)
-  - ran: :) up to 1.65x  
-    CA `Dtx414D8jurspmB1jqJWsYU66pemoXRjQeXx7TC1pump`
-  - ran: GIF up to 2.16x  
-    CA `B6wM98qkQKP71mhPA48S7No6TxM4KaXdFojDTZeUpump`
 - falling knife / no higher low: blocked 15, ran 4, dumped 4, flat 4, open 3 (mixed)
   - ran: UrAnus up to 2.97x  
     CA `27u3diWofnXGUkddjLGhcy1nRssFKHW3RtNbpWzUpump`
@@ -199,13 +199,13 @@ Nothing has a positive after-cost edge yet. All 229 settled coins average -8.7% 
 Not quiet. The scan shows three live patterns: Jensen-name coins, joke and hype launches, and older pump.fun mid-caps re-pumping. The Jensen theme is split: the older JENSEN ($497k, $39k 5m, 58% buys) is holding volume, while White Jensen ($1.5k, 15% buys, -98% 1h) and HUANG (9% buys) are clones dying. Joke launches are fading hard (BONER -52% 1h, JACKET -83%, .fun zero 5m), though BONER's 86% 5m buy ratio says someone is still buying. Trump coins are absent from the scan, which matches the web's record-low headlines, so that theme is fading. Setups to research now: JENSEN first (fits the $70k-11M V6 range with 5m well over $10k, but it is 189h old, so confirm it is the original and run the full checklist), UCASH ($2.9M, $22.6k 5m, 57% buys, +113% 1h) if its 5m holds, and MINELIUS only as a DIP candidate if its 81% buy-side on $41k 5m survives a bundle check after the -77% hour. "Jensen Is Back" and other web-only numbers are not in scan_movers, so I am not using them. Paper, not advice.
 
 ## Moving most in its scans, last 30 min (1h volume)
-- JENSEN: $2,402,481 1h vol, $497,059 mcap, +117% 1h  
-  CA `9scVbbC7HUwXaBmo8bnYfm2Pa5oouZpjy2NvrvwLpump`
-- JENSEN: $1,035,951 1h vol, $1,682 mcap, -99% 1h  
+- JENSEN: $409,265 1h vol, $2,309 mcap, -100% 1h  
   CA `CjPoozfB2Vub8pHFvdKuKUGJDLWuYC2U32yRTxMhpump`
-- UCASH: $628,369 1h vol, $2,949,881 mcap, +113% 1h  
-  CA `7cFiqdT46zs7ooHWLFiLSaSQKLMibtokh9dBinsspump`
-- JACKET: $218,663 1h vol, $1,512 mcap, -98% 1h  
+- JACKET: $130,508 1h vol, $1,518 mcap, -97% 1h  
   CA `nNske7YBu4R29HcifzAmDqzgh3oetzqX3QAPSEQpump`
-- NOHR: $195,022 1h vol, $1,302,228 mcap, +138% 1h  
-  CA `Jd3NCawdFiDNWpLiTtsMqoeoBMjC1ZQMrMScRVzpump`
+- TUGI: $99,611 1h vol, $16,093 mcap, +454% 1h  
+  CA `Ddnd1DGVjtE2DT3ZjDXZsNzu6oHbe3GEj5VE9x6avYsA`
+- PumpMeme: $89,633 1h vol, $1,247,671 mcap, -23% 1h  
+  CA `93uamrbDerKbUh8MSjNF1wDtxYvEUD1CS9BcHn1apump`
+- FSDV15: $72,826 1h vol, $810,717 mcap, -10% 1h  
+  CA `3BcJ4SSCfbxDMrWcUDucyCWxMjmy4M2ECCtvxu86pump`
