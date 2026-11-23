@@ -1,13 +1,13 @@
 # Trencher live report
 
-Updated 2026-11-23T01:21:09Z (paper trading, never real money)
+Updated 2026-11-23T01:36:21Z (paper trading, never real money)
 
 - Equity: $74.23 (-25.8% vs $100 start)
 - Closed trades: 22, 3 wins
 - Fees paid: $14.78 (axiom $2.81, network $9.18, pool $2.66), plus $4.15 lost to slippage
 - New trades: WATCH-ONLY (scans and decides, buys nothing)
-- Brain: subscription, claude-haiku-5-5 for routine calls, claude-opus-5-5 for the daily review; 281 routine calls and 0 plan-limit hits in 48h
-- Watch log: 91 coins being followed, 2736 filed, 0 would-buys (6h follow, sampled every 2 min)
+- Brain: subscription, claude-haiku-5-5 for routine calls, claude-opus-5-5 for the daily review; 279 routine calls and 0 plan-limit hits in 48h
+- Watch log: 94 coins being followed, 2736 filed, 0 would-buys (6h follow, sampled every 2 min)
 
 ## Scorecard (after fees)
 - 22 closed, 3 won (14%), net $-25.79
@@ -73,9 +73,15 @@ Updated 2026-11-23T01:21:09Z (paper trading, never real money)
   CA `H4gHnZ3NCU7Z9XQwGX6YYJNyieGEW8pqwGRUcdSxpump`
 
 ## Last scan
-- 01:20Z: 6 coins, 6 with pairs, 1 passed the market filters, 1 researched
+- 01:36Z: 3 coins, 3 with pairs, 0 passed the market filters, 0 researched
 
 ## Coins it looked at, and why it passed
+- 01:28Z MINELIUS (MIGRATED, $7,579,960 mcap, $3,153 5m vol): PASS at conviction 3, PASS: 5m flow is 0.57x its hourly pace, the coin is $7.6M with only 1.37x to its own peak, and it's a 0.4-day-old domain selling a privacy-launchpad story with no GitHub. Blocker: flow below pace. (V1, V6, V3, V13)  
+  CA `E9rWKjVhHMxQkxfREr7Li8Yy46rVcWiWHoKVQAe9pump`
+- 01:27Z cCAT (MIGRATED, $120,348 mcap, $61,677 5m vol): REJECT, Bundles: 10 linked wallet cluster(s) hold 47.3% of supply (>20%) (V17)  
+  CA `63aEoSt7oGthFR5koz1572CAL9dd7NYGp7sWeQyjpump`
+- 01:26Z UCASH (MIGRATED, $1,638,368 mcap, $11,297 5m vol): PASS at conviction 3, PASS: UCASH is sitting 0.8% off its high after a +27% hour, and its own site says the contract is "coming soon." Blocker "chasing." (V1, V3, V6)  
+  CA `7cFiqdT46zs7ooHWLFiLSaSQKLMibtokh9dBinsspump`
 - 01:20Z ZOL (MIGRATED, $191,222 mcap, $4,410 5m vol): PASS at conviction 2, PASS: Zolana (ZOL, Raydium) has no live story, 5m flow is $4.4k against a $10k bar, and the peak data is corrupt. Blocker: "no narrative, theme pace 0.34x" (V1, V6, V13).  
   CA `AQfw8J74V17erZsmMz4oK474eVLBaP44gD33vVbhtHo5`
 - 01:17Z COPIUM (MIGRATED, $599,688 mcap, $5,189 5m vol): PASS at conviction 2, PASS. COPIUM flow is below pace (5m $5.2k at 0.88x its hourly average, under the $10k bar), and the site doesn't show this CA. Copy-cat field, no catalyst. (V1, V13)  
@@ -90,16 +96,10 @@ Updated 2026-11-23T01:21:09Z (paper trading, never real money)
   CA `npz2FhoufQ7pKqhGpaipYWacrAkidyW2yDpVWSvpump`
 - 00:56Z HOGE (MIGRATED, $550,718 mcap, $3,017 5m vol): REJECT, Bundles: 9 linked wallet cluster(s) hold 27.7% of supply (>20%) (V17)  
   CA `FVzqGqRmr4UH1Fif6dewmwbJ1p4YUZCu8dcw4Efopump`
-- 00:55Z ALONE (FINAL_STRETCH, $26,102 mcap, $26,759 5m vol): REJECT, RugCheck danger: Creator history of rugged tokens  
-  CA `8m7sCVngbi5TfKARfhAHU6B71yfEMNPDWteECGmJpump`
-- 00:51Z FSDV15 (MIGRATED, $2,575,291 mcap, $6,900 5m vol): PASS at conviction 3, PASS: 5m flow is 0.42x its hourly pace ($6.9k against a $10k bar), and the first resistance is only 1.34x away on a $2.6M cap. Blocker: flow below pace. (V1, V6, V13)  
-  CA `3BcJ4SSCfbxDMrWcUDucyCWxMjmy4M2ECCtvxu86pump`
-- 00:48Z CATEGIVING (no setup, $29,781 mcap, $4,726 5m vol): REJECT, No setup fits: not Final Stretch, not a migrated runner, not a healthy dip  
-  CA `APa2jK3ZRK9XhuKHGXSFNDohfU5RfZZKajiv26qSvX2X`
 
 ## What its skips did next (last 48h)
 A skip "ran" if the coin reached the first target (1.5x) from the skip price before a 20% drop, "dumped" if the drop came first. Sampled every 10 min, followed 6h.
-- flow below pace: blocked 27, ran 2, dumped 18, flat 0, open 7 (saving losses: keep it)
+- flow below pace: blocked 27, ran 2, dumped 19, flat 0, open 6 (saving losses: keep it)
   - ran: snowball up to 1.59x  
     CA `3D7YQcnXi6RMjWxheiE8VLuGXJTtgQkmyugGYvzjpump`
   - ran: OpenIndex up to 1.63x  
@@ -111,7 +111,7 @@ A skip "ran" if the coin reached the first target (1.5x) from the skip price bef
     CA `5fWLSMA5HoK9W4VoTMi4c3qjyu3N2LsKRSM8Ffpgpump`
   - ran: KYC up to 2.37x  
     CA `47YCrfUmSQUF9vnPsPGSzrmTcxttdRAWejCMkhrrpump`
-- near the high / chasing: blocked 20, ran 2, dumped 15, flat 0, open 3 (saving losses: keep it)
+- near the high / chasing: blocked 19, ran 2, dumped 14, flat 0, open 3 (saving losses: keep it)
   - ran: CUNTS up to 1.61x  
     CA `7CvW68FD9KjNYGByfykhaNps7VNPLN8dFwMRfmgQpump`
   - ran: SANTA up to 1.85x  
@@ -193,13 +193,13 @@ Nothing has a positive edge after costs. All 166 settled coins averaged -11.3% n
 The scan's meta is fresh pump.fun joke coins under about 3 hours old, at $15k to $60k caps, with 57-59% buyers and 5-minute volume near or above their caps (wifout, PCRY, enter the singularity, PRIVI). The holiday lane is one coin, not a theme: XMAS is the only mover on it ($170k cap, 75% buys, $12.8k 5m, +23% in 1h), so the web's holiday call is confirmed by a single ticker. Trump, GTA and the Anthropic/IPO stories are mostly absent from the movers; PLAYGTA is the exception (47% buys, +138% 1h on the scan, which contradicts the web's 0% buys figure, so I trust the scan). Fading are older names with sell pressure: cateball (-17.5% 1h at $1.9M), LilChud (29% buys, -44%), and the pump.fun ZOL (-98%, 1% buys), while the Raydium ZOL is a different token and a ticker-collision trap. Research order: XMAS first as a MIGRATED candidate (under 12h, clean buy flow; reconcile the web's $112k cap against the scan's $170k), then PCRY as a FINAL_STRETCH candidate (its $30.7k 5m on a $23.8k cap is churn-heavy, so bundle checks come first); enter the singularity is 6 minutes old and too new to size, so research it and don't chase.
 
 ## Moving most in its scans, last 30 min (1h volume)
-- FSDV15: $197,935 1h vol, $2,575,291 mcap, +14% 1h  
-  CA `3BcJ4SSCfbxDMrWcUDucyCWxMjmy4M2ECCtvxu86pump`
+- cCAT: $504,995 1h vol, $120,348 mcap, +104% 1h  
+  CA `63aEoSt7oGthFR5koz1572CAL9dd7NYGp7sWeQyjpump`
 - ZOL: $113,897 1h vol, $204,056 mcap, -18% 1h  
   CA `AQfw8J74V17erZsmMz4oK474eVLBaP44gD33vVbhtHo5`
-- singularity: $100,190 1h vol, $14,599 mcap, +57% 1h  
-  CA `5aR9BacmmxvUy8wQGTYKWC2vBS3Z8q2Y1VBC6JALpump`
-- PCRY: $96,306 1h vol, $8,725 mcap, -55% 1h  
-  CA `BSFmFyFFmRB3R4q7CXoqgDTm8LTBBwaJaQXnvubCpump`
-- DESSA: $93,528 1h vol, $3,123,590 mcap, +0% 1h  
-  CA `npz2FhoufQ7pKqhGpaipYWacrAkidyW2yDpVWSvpump`
+- UCASH: $76,018 1h vol, $1,638,368 mcap, +27% 1h  
+  CA `7cFiqdT46zs7ooHWLFiLSaSQKLMibtokh9dBinsspump`
+- CATEGIVING: $73,235 1h vol, $20,668 mcap, -54% 1h  
+  CA `APa2jK3ZRK9XhuKHGXSFNDohfU5RfZZKajiv26qSvX2X`
+- Hedge: $71,537 1h vol, $20,801 mcap, +149% 1h  
+  CA `7S8k5qQfP2M48ixDLxDh6AgtwDo92eKxZ7WNmZt7pump`
