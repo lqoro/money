@@ -1,13 +1,13 @@
 # Trencher live report
 
-Updated 2026-11-23T18:45:34Z (paper trading, never real money)
+Updated 2026-11-23T19:00:35Z (paper trading, never real money)
 
 - Equity: $74.23 (-25.8% vs $100 start)
 - Closed trades: 22, 3 wins
 - Fees paid: $14.78 (axiom $2.81, network $9.18, pool $2.66), plus $4.15 lost to slippage
 - New trades: WATCH-ONLY (scans and decides, buys nothing)
-- Brain: subscription, claude-haiku-5-5 for routine calls, claude-opus-5-5 for the daily review; 468 routine calls and 0 plan-limit hits in 48h
-- Watch log: 113 coins being followed, 2981 filed, 0 would-buys (6h follow, sampled every 2 min)
+- Brain: subscription, claude-haiku-5-5 for routine calls, claude-opus-5-5 for the daily review; 466 routine calls and 0 plan-limit hits in 48h
+- Watch log: 115 coins being followed, 2983 filed, 0 would-buys (6h follow, sampled every 2 min)
 
 ## Scorecard (after fees)
 - 22 closed, 3 won (14%), net $-25.79
@@ -73,9 +73,17 @@ Updated 2026-11-23T18:45:34Z (paper trading, never real money)
   CA `H4gHnZ3NCU7Z9XQwGX6YYJNyieGEW8pqwGRUcdSxpump`
 
 ## Last scan
-- 18:45Z: 3 coins, 3 with pairs, 0 passed the market filters, 0 researched
+- 19:00Z: 6 coins, 6 with pairs, 0 passed the market filters, 0 researched
 
 ## Coins it looked at, and why it passed
+- 18:57Z HUANG (MIGRATED, $130,112 mcap, $4,839 5m vol): PASS at conviction 2, PASS: clone in a 13-copy Jensen Huang field. The volume leader is 2pCe, not this one, and this coin is a 72% drawdown with a +30% spike on the last 15m candle. Split crowd, bottom-buy gate failed (V1, V3, V6).  
+  CA `4kFR6GDuAJRaqimh21uJhhfwPrGbFW34J6UXEWUhpump`
+- 18:52Z UCASH (MIGRATED, $844,624 mcap, $7,219 5m vol): PASS at conviction 2, PASS: down 78% off a $3.8M peak, 5m flow at half the hourly pace, and a privacy-wallet story whose site says "product in development" on a 1.2-day-old domain. Falling knife with a LARP story (V1, V3, V6).  
+  CA `7cFiqdT46zs7ooHWLFiLSaSQKLMibtokh9dBinsspump`
+- 18:49Z FSDV15 (MIGRATED, $367,626 mcap, $13,696 5m vol): PASS at conviction 2, PASS — 91% off a $4.26M high, 21h old past the 12h migrated window, no printed higher low, and no radar mention in a 28-copy ticker field. Falling knife (V1, V6).  
+  CA `3BcJ4SSCfbxDMrWcUDucyCWxMjmy4M2ECCtvxu86pump`
+- 18:47Z MINELIUS (MIGRATED, $103,424 mcap, $2,160 5m vol): PASS at conviction 2, PASS: MINELIUS is 99.6% off a $23.9M peak, 5m flow is 0.28x its hour and it has no higher low. The "mine" launchpad story is unproven and the domain is 1.1 days old. Blocker: "dead story / no catalyst" on a bottom-type buy (V1, V6, V13).  
+  CA `E9rWKjVhHMxQkxfREr7Li8Yy46rVcWiWHoKVQAe9pump`
 - 18:44Z COPIUM (MIGRATED, $982,017 mcap, $4,577 5m vol): PASS at conviction 2, PASS: 8% off the $1.07M high inside the chasing band, 5m flow $4.6k under the $10k bar, and the site says "AWAITING CONFIRMATION" for the CA. Crowded ticker, no edge. (V1, V6, V13)  
   CA `BAKsQrynzwadyACDMsg3J5R8a4CTvj1u7kEYyjq7pump`
 - 18:42Z JENSEN (MIGRATED, $1,122,630 mcap, $7,366 5m vol): REJECT, Top 10 hold 29.2% ex-pool (>25%) (V13)  
@@ -88,18 +96,10 @@ Updated 2026-11-23T18:45:34Z (paper trading, never real money)
   CA `GHWEB3FsfqDbNBt9QxVU7kXkUh1cX7kFk5NVDkgApump`
 - 18:32Z birds (FINAL_STRETCH, $20,104 mcap, $4,703 5m vol): REJECT, Top 10 hold 25.3% ex-pool (>25%) (V13)  
   CA `6Ncsox6oJptTepXojfgpUpE21siCoz46oDDCwQqMuvNV`
-- 18:32Z TENR (MIGRATED, $45,733 mcap, $6,734 5m vol): REJECT, Top 10 hold 27.7% ex-pool (>25%) (V13)  
-  CA `5d8eB9evHpbBSZqJhpnhQQF3kPk462ZTovsQyUp9pump`
-- 18:32Z HUANG (MIGRATED, $312,414 mcap, $29,450 5m vol): PASS at conviction 3, PASS: no catalyst, theme pace 0.66x, and a 70% dump with a -57% 5m candle. Blocker "dead story" / "split crowd" (17 copies of HUANG). (V1, V6, V13)  
-  CA `2pCeTXJe9WUWHCZ6DaDBbXuiDg6KEgYHD54RRzfUpump`
-- 18:27Z NINO (MIGRATED, $43,995 mcap, $1,634 5m vol): REJECT, 5m volume $1,634 is dead (<$2,000) (V1)  
-  CA `BqekG1RSPUthaKfStu7Uvyvr1eR6TchrQMp1M5r5pump`
-- 18:25Z PumpMeme (DIP, $769,236 mcap, $4,487 5m vol): PASS at conviction 3, PASS — DIP on a 16-copy "PumpMeme" theme running at 0.56x its hourly pace, $4.5k 5m flow, and the project's own site doesn't show the CA. Blocker: "no catalyst / theme fading" (bottom-buy owner rule). (V1, V6, V13)  
-  CA `93uamrbDerKbUh8MSjNF1wDtxYvEUD1CS9BcHn1apump`
 
 ## What its skips did next (last 48h)
 A skip "ran" if the coin reached the first target (1.5x) from the skip price before a 20% drop, "dumped" if the drop came first. Sampled every 10 min, followed 6h.
-- flow below pace: blocked 41, ran 6, dumped 30, flat 0, open 5 (saving losses: keep it)
+- flow below pace: blocked 38, ran 6, dumped 27, flat 0, open 5 (saving losses: keep it)
   - ran: snowball up to 1.59x  
     CA `3D7YQcnXi6RMjWxheiE8VLuGXJTtgQkmyugGYvzjpump`
   - ran: OpenIndex up to 1.63x  
@@ -118,28 +118,28 @@ A skip "ran" if the coin reached the first target (1.5x) from the skip price bef
     CA `7CvW68FD9KjNYGByfykhaNps7VNPLN8dFwMRfmgQpump`
   - ran: SANTA up to 1.85x  
     CA `tZsjFu2CH1R23wEpbfXAYGc2KUaVrUbwofCNNNqpump`
-- top 10 over 25%: blocked 23, ran 3, dumped 15, flat 1, open 4 (saving losses: keep it)
+- top 10 over 25%: blocked 23, ran 3, dumped 16, flat 1, open 3 (saving losses: keep it)
   - ran: :) up to 1.65x  
     CA `Dtx414D8jurspmB1jqJWsYU66pemoXRjQeXx7TC1pump`
   - ran: GIF up to 2.16x  
     CA `B6wM98qkQKP71mhPA48S7No6TxM4KaXdFojDTZeUpump`
   - ran: SNP6900 up to 2.76x  
     CA `DnbQKi146NDmwwji3f3q5i68HQnYyBEhoDyj2q3Npump`
-- RugCheck danger: blocked 19, ran 4, dumped 15, flat 0, open 0 (saving losses: keep it)
+- RugCheck danger: blocked 18, ran 4, dumped 14, flat 0, open 0 (saving losses: keep it)
   - ran: MIHAOMAS up to 1.62x  
     CA `3XsFunPdji9U1EgJXokZysw8SB3t74un89b6KLEVpump`
   - ran: Holdsgiving up to 2.96x  
     CA `A2jLaCC7v3VjXP8gEgCQNbTWEvizYuQ82jFEYfzipump`
   - ran: JENSEN up to 1.7x  
     CA `CjPoozfB2Vub8pHFvdKuKUGJDLWuYC2U32yRTxMhpump`
-- falling knife / no higher low: blocked 13, ran 4, dumped 5, flat 4, open 0 (mixed)
+- falling knife / no higher low: blocked 15, ran 4, dumped 4, flat 4, open 3 (mixed)
   - ran: UrAnus up to 2.97x  
     CA `27u3diWofnXGUkddjLGhcy1nRssFKHW3RtNbpWzUpump`
   - ran: STREETS up to 1.73x  
     CA `82mseLFauphc2yutbaDGgViahquJ1jGVLpyof99xpump`
   - ran: Fly up to 1.52x  
     CA `84tAcSK5L9kuQEVM8C8vMHXnfdA83nGBT2nYfSbPUcAc`
-- falling knife (code): blocked 13, ran 4, dumped 7, flat 0, open 2 (mixed)
+- falling knife (code): blocked 13, ran 4, dumped 8, flat 0, open 1 (saving losses: keep it)
   - ran: RIZZMAS3 up to 1.84x  
     CA `BQcV4Ryfu9bZK8egAF89AhkojdJqAaDt4xTFwUQ2pump`
   - ran: STREETS up to 1.73x  
@@ -158,9 +158,13 @@ A skip "ran" if the coin reached the first target (1.5x) from the skip price bef
     CA `2MdCPWNFufmJSZhajSvi1yqBFTB24GQ4ipjNcB8Vpump`
   - ran: MCAT up to 2.52x  
     CA `BzPyyYCTmQNq2BcfQ4ANAvCYk54rnmQEXMFvFT8RhWMi`
-- thin 5m volume: blocked 10, ran 1, dumped 7, flat 0, open 2 (saving losses: keep it)
-  - ran: chud up to 1.55x  
-    CA `EV7J2QaPXPytSkM1LD9GPRkgAbmSEr9R3kYiXBzbpump`
+- other: blocked 11, ran 3, dumped 6, flat 0, open 2 (saving losses: keep it)
+  - ran: ZOL up to 1.64x  
+    CA `AQfw8J74V17erZsmMz4oK474eVLBaP44gD33vVbhtHo5`
+  - ran: CATEGIVING up to 1.81x  
+    CA `APa2jK3ZRK9XhuKHGXSFNDohfU5RfZZKajiv26qSvX2X`
+  - ran: task up to 1.61x  
+    CA `BJeEE9WCP1HZqT1D3heD9Do96D4dnEcNoDHspvQapump`
 
 ## Daily review (2026-11-23, claude-opus-5-5)
 Nothing has a positive after-cost edge yet. All 229 settled coins average -8.7% net on the simple plan. Before costs they average about +0.9%, so the 9.6% average round-trip cost on a $10 buy accounts for the whole loss. That is the same story as the 22 paper trades, where fees and slippage were $18.83 of the $25.79 lost. The best setup is FINAL_STRETCH: n=39, 35.9% hit 1.5x, -4.9% net. With a 1.5x target, a -20% stop and about 10% costs, a setup needs roughly 43% hitting the target to break even. At n=39 the hit rate's 95% range is about 21–51%, so this sample can't separate it from MIGRATED, from coin-flip noise or from breakeven. I can't say whether the routine model's would-buys beat its passes, because it made zero would-buys in 24h. The coins it passed on (n=157, -8.4%) did slightly better than the coins the checklist failed (n=70, -9.8%), but both lost money. Passing everything was the right call on average. One process note: the watch-only review was set for about Nov 10 and today is Nov 23, so the owner should decide whether this is still the plan.
@@ -198,7 +202,7 @@ Nothing has a positive after-cost edge yet. All 229 settled coins average -8.7% 
 - [2026-11-02 20:25] I expected Slingoor, a clean MIGRATED leader with $25k of 5m flow at pace and a 0.77 buy share, to retest its $408k high from $304k. It never went green (0.98x peak) and hit the -20% stop in 2 minutes, a -$2.86 probe. My own thesis admitted there was no printed higher low after a peak only 6 minutes old, so this confirms the money-shape rule: buy share and flow are not structure (V1, V6). Next time a MIGRATED pullback with no higher low above the hourly low is a PASS with blocker "no higher low", not a probe. This is one loss, so it adds no new ban beyond the rule I already have.
 
 ## Meta right now
-The meta is the Jensen Huang / Nvidia name cluster, and it's live: about 8 of the 18 scan_movers carry Jensen, Huang, or NVDA-style names, nearly all under 6 hours old. Rising: the 2pCe "Official Jensen Huang" (HUANG, ~$360k mcap, $103k 5m, 82% buys, about 6 min old) has the biggest flow in the group, followed by JENSEN (5Mqu, ~$174k, $32k 5m, 78% buys) and NBI "NVDA Bra Inu" (~$141k, $15k 5m, 87% buys). Fading: the same-name clones with no 5m buys (8TXk at -98% 1h, 9YCu "Huang" at -61% with zero 5m volume, JENSENG at -99%), and four tokens now share the "Official Jensen Huang" name, so the original is not obvious. A second, weaker group is joke, animal and crude-name launches (sexcoin, S&P6900, FUCK!, Fiona the Hippo at 93h with 48% buys); they have flow but no narrative edge, and Fiona looks stale. Trump is in every headline but absent from the movers, so it is not the current meta. Setups to research, not buy: 2pCe HUANG and 5Mqu JENSEN, each only at probe size if the original check and the holder, dev and bundle checks come back clean, with the stop set before entry. Lucia and UCASH come from the web summary and are not in scan_movers, so I am not calling them meta.
+The meta is the Jensen Huang/Nvidia name cluster, but it's splitting and cooling. JENSEN (HKiMA…, $1.12M mcap) is up 1191% over 1h, but its 5m volume ($7.4k) is about 5% of its hourly pace, so the flow has mostly left. The only Jensen name still drawing real buyers is HUANG 2pCe (2pCeTX…, $312k mcap, $29k 5m, 85% buys, about half its hourly pace), while HUANG 4kFR… ($130k, 61% buys) and JENSENTHONG (-81% 1h, no net 5m buys) are fading, and two tokens share the "Official Jensen Huang" name, so the original isn't settled. Two other groups have flow: AI/tech brand names (Tesla FSD v15, $368k, $9k 5m, 76% buys; SUPER CLAUDIA INU, 0.4h old, +181% 1h, 75% buys) and young animal launches (Angry Birds Memes, $20k, 0.6h old, +637% 1h, 66% buys, 5m running above pace; Fiona the Hippo is 94h old with 45% buys, so it's aging). Trump dominates the headlines but no Trump token is in the movers, so the web confirms the news, not the trench meta, and the crawler's summary figures (JENSEN $174k, HUANG $360k, NBI, Lucia, FUCK!) don't reconcile with scan_movers, so I used the scan_movers numbers. Setups to research, not buy: 2pCe HUANG first, then Angry Birds Memes and Tesla FSD v15, each at probe size at most and only if the original, holder, dev and bundle checks come back clean, with the stop set before entry.
 
 ## Moving most in its scans, last 30 min (1h volume)
 - JENSEN: $1,711,413 1h vol, $1,122,630 mcap, +1191% 1h  
@@ -207,7 +211,7 @@ The meta is the Jensen Huang / Nvidia name cluster, and it's live: about 8 of th
   CA `2pCeTXJe9WUWHCZ6DaDBbXuiDg6KEgYHD54RRzfUpump`
 - sexcoin: $274,380 1h vol, $127,103 mcap, -42% 1h  
   CA `42uiGgChB5gn1817XmAytoo6hR96WsSXCA3MipCipump`
-- SNP6900: $246,911 1h vol, $4,407 mcap, -90% 1h  
-  CA `DnbQKi146NDmwwji3f3q5i68HQnYyBEhoDyj2q3Npump`
-- NBI: $210,889 1h vol, $103,474 mcap, -10% 1h  
-  CA `B9RrESDxun2JeBZYZgJUm2cYdFJGEoxkF2RGLB48pump`
+- FIONA: $198,550 1h vol, $1,984,307 mcap, +41% 1h  
+  CA `B34nXKzCgsJb9ChLuSHPRpXLE3WFSWyeT8Cqkzzmpump`
+- UCASH: $169,549 1h vol, $844,488 mcap, -31% 1h  
+  CA `7cFiqdT46zs7ooHWLFiLSaSQKLMibtokh9dBinsspump`
