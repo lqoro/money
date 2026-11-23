@@ -1,13 +1,13 @@
 # Trencher live report
 
-Updated 2026-11-23T22:02:27Z (paper trading, never real money)
+Updated 2026-11-23T22:17:29Z (paper trading, never real money)
 
 - Equity: $74.23 (-25.8% vs $100 start)
 - Closed trades: 22, 3 wins
 - Fees paid: $14.78 (axiom $2.81, network $9.18, pool $2.66), plus $4.15 lost to slippage
 - New trades: WATCH-ONLY (scans and decides, buys nothing)
-- Brain: subscription, claude-haiku-5-5 for routine calls, claude-opus-5-5 for the daily review; 468 routine calls and 0 plan-limit hits in 48h
-- Watch log: 113 coins being followed, 3037 filed, 0 would-buys (6h follow, sampled every 2 min)
+- Brain: subscription, claude-haiku-5-5 for routine calls, claude-opus-5-5 for the daily review; 467 routine calls and 0 plan-limit hits in 48h
+- Watch log: 111 coins being followed, 3041 filed, 0 would-buys (6h follow, sampled every 2 min)
 
 ## Scorecard (after fees)
 - 22 closed, 3 won (14%), net $-25.79
@@ -73,9 +73,13 @@ Updated 2026-11-23T22:02:27Z (paper trading, never real money)
   CA `H4gHnZ3NCU7Z9XQwGX6YYJNyieGEW8pqwGRUcdSxpump`
 
 ## Last scan
-- 22:01Z: 6 coins, 6 with pairs, 0 passed the market filters, 0 researched
+- 22:17Z: 2 coins, 2 with pairs, 0 passed the market filters, 0 researched
 
 ## Coins it looked at, and why it passed
+- 22:13Z PumpMeme (MIGRATED, $391,469 mcap, $3,680 5m vol): PASS at conviction 2, PASS. Down 84% from a $2.39M peak, 5m flow at 0.64x pace, and 23 copies of the same name. Nothing here is a bottom buy. Farm-shaped (V1, V13).  
+  CA `93uamrbDerKbUh8MSjNF1wDtxYvEUD1CS9BcHn1apump`
+- 22:10Z WOFL (FINAL_STRETCH, $20,456 mcap, $53,922 5m vol): PASS at conviction 2, PASS: chasing spike, +605% in 5m at 12x hourly pace, with no narrative behind it and 16 same-word copies. Blocker: "chasing spike" (V1, V6, V13).  
+  CA `AdXjXfumPSSKk7PrfgDHcAsPvuxnKv7Zo9WZEWKbiDkh`
 - 21:58Z ChristmASS (DIP, $223,401 mcap, $18,005 5m vol): PASS at conviction 4, PASS: bottom buy with theme pace at 0.86x, no catalyst, and a -34% 5m candle. The holders are clean, but that doesn't make it a buy (V1, V6).  
   CA `8WW5B189mPntQQ85HTPvQNsYxXhQbAhdjXvZ6qaapump`
 - 21:57Z NVINU (DIP, $246,467 mcap, $54,398 5m vol): REJECT, Top 10 hold 38.3% ex-pool (>25%) (V13)  
@@ -92,10 +96,6 @@ Updated 2026-11-23T22:02:27Z (paper trading, never real money)
   CA `npz2FhoufQ7pKqhGpaipYWacrAkidyW2yDpVWSvpump`
 - 21:42Z 泵寿命 (MIGRATED, $38,925 mcap, $16,265 5m vol): REJECT, Top 10 hold 25.4% ex-pool (>25%) (V13)  
   CA `HVzypN167BEUk4tCP6HvY3bKBdYwFEJYQaqYrGm9pump`
-- 21:40Z FIONA (MIGRATED, $2,585,987 mcap, $6,715 5m vol): REJECT, Bundles: 10 linked wallet cluster(s) hold 27.6% of supply (>20%) (V17)  
-  CA `B34nXKzCgsJb9ChLuSHPRpXLE3WFSWyeT8Cqkzzmpump`
-- 21:38Z MINELIUS (MIGRATED, $140,964 mcap, $2,649 5m vol): PASS at conviction 2, PASS — 99.4% off a $23.9M peak, a saw-tooth spike that already dumped, 23% top 10 and a 1.2-day-old site with no code. Blocker: "bottom buy, no catalyst, narrative dead" (V1, V13).  
-  CA `E9rWKjVhHMxQkxfREr7Li8Yy46rVcWiWHoKVQAe9pump`
 
 ## What its skips did next (last 48h)
 A skip "ran" if the coin reached the first target (1.5x) from the skip price before a 20% drop, "dumped" if the drop came first. Sampled every 10 min, followed 6h.
@@ -113,7 +113,7 @@ A skip "ran" if the coin reached the first target (1.5x) from the skip price bef
     CA `47YCrfUmSQUF9vnPsPGSzrmTcxttdRAWejCMkhrrpump`
   - ran: Wojak up to 4.29x  
     CA `5eiLc9r79PkJquiFvYWdXJYtGNRjTpzot8MR7Z4Ppump`
-- near the high / chasing: blocked 32, ran 2, dumped 28, flat 1, open 1 (saving losses: keep it)
+- near the high / chasing: blocked 33, ran 2, dumped 28, flat 1, open 2 (saving losses: keep it)
   - ran: CUNTS up to 1.61x  
     CA `7CvW68FD9KjNYGByfykhaNps7VNPLN8dFwMRfmgQpump`
   - ran: SANTA up to 1.85x  
@@ -132,20 +132,6 @@ A skip "ran" if the coin reached the first target (1.5x) from the skip price bef
     CA `A2jLaCC7v3VjXP8gEgCQNbTWEvizYuQ82jFEYfzipump`
   - ran: JENSEN up to 1.7x  
     CA `CjPoozfB2Vub8pHFvdKuKUGJDLWuYC2U32yRTxMhpump`
-- falling knife (code): blocked 12, ran 4, dumped 7, flat 1, open 0 (mixed)
-  - ran: RIZZMAS3 up to 1.84x  
-    CA `BQcV4Ryfu9bZK8egAF89AhkojdJqAaDt4xTFwUQ2pump`
-  - ran: STREETS up to 1.73x  
-    CA `82mseLFauphc2yutbaDGgViahquJ1jGVLpyof99xpump`
-  - ran: OpenIndex up to 1.63x  
-    CA `FuKY3dk7QmpbDdQRjzbjB3G6PiCuqKNvN4dAWDpwpump`
-- falling knife / no higher low: blocked 11, ran 4, dumped 5, flat 2, open 0 (mixed)
-  - ran: UrAnus up to 2.97x  
-    CA `27u3diWofnXGUkddjLGhcy1nRssFKHW3RtNbpWzUpump`
-  - ran: STREETS up to 1.73x  
-    CA `82mseLFauphc2yutbaDGgViahquJ1jGVLpyof99xpump`
-  - ran: Fly up to 1.52x  
-    CA `84tAcSK5L9kuQEVM8C8vMHXnfdA83nGBT2nYfSbPUcAc`
 - other: blocked 11, ran 3, dumped 7, flat 1, open 0 (saving losses: keep it)
   - ran: ZOL up to 1.64x  
     CA `AQfw8J74V17erZsmMz4oK474eVLBaP44gD33vVbhtHo5`
@@ -153,9 +139,23 @@ A skip "ran" if the coin reached the first target (1.5x) from the skip price bef
     CA `APa2jK3ZRK9XhuKHGXSFNDohfU5RfZZKajiv26qSvX2X`
   - ran: task up to 1.61x  
     CA `BJeEE9WCP1HZqT1D3heD9Do96D4dnEcNoDHspvQapump`
+- falling knife (code): blocked 11, ran 4, dumped 6, flat 1, open 0 (mixed)
+  - ran: RIZZMAS3 up to 1.84x  
+    CA `BQcV4Ryfu9bZK8egAF89AhkojdJqAaDt4xTFwUQ2pump`
+  - ran: STREETS up to 1.73x  
+    CA `82mseLFauphc2yutbaDGgViahquJ1jGVLpyof99xpump`
+  - ran: OpenIndex up to 1.63x  
+    CA `FuKY3dk7QmpbDdQRjzbjB3G6PiCuqKNvN4dAWDpwpump`
 - dev share over 1%: blocked 10, ran 1, dumped 6, flat 3, open 0 (saving losses: keep it)
   - ran: Mfer up to 1.55x  
     CA `9tX1UpBGeNqMb1VqqzVumwzW71ybsNZFyWKYiL8Ppump`
+- falling knife / no higher low: blocked 10, ran 3, dumped 5, flat 2, open 0 (mixed)
+  - ran: STREETS up to 1.73x  
+    CA `82mseLFauphc2yutbaDGgViahquJ1jGVLpyof99xpump`
+  - ran: Fly up to 1.52x  
+    CA `84tAcSK5L9kuQEVM8C8vMHXnfdA83nGBT2nYfSbPUcAc`
+  - ran: hCAT up to 1.52x  
+    CA `2FYs4vApfj4ErsggpFDfzMv1WvxnyiLtzNEj84mS6TLh`
 - brain paced: blocked 10, ran 4, dumped 6, flat 0, open 0 (mixed)
   - ran: STREETS up to 1.73x  
     CA `82mseLFauphc2yutbaDGgViahquJ1jGVLpyof99xpump`
@@ -211,5 +211,5 @@ Trencher, meta read from scan_movers. Three themes show real flow. (1) Holiday n
   CA `2UwxN56YJrxAu1sDDYt2aDCUxFcCS3fHSLmNHGLWpump`
 - NVINU: $161,647 1h vol, $246,467 mcap, +520% 1h  
   CA `Gg4H3vNtAcWATHBJ4wWT1YPDdkYgBgARhaWUgMdnpump`
-- FIONA: $151,853 1h vol, $2,585,987 mcap, -2% 1h  
-  CA `B34nXKzCgsJb9ChLuSHPRpXLE3WFSWyeT8Cqkzzmpump`
+- PumpMeme: $68,950 1h vol, $392,717 mcap, -23% 1h  
+  CA `93uamrbDerKbUh8MSjNF1wDtxYvEUD1CS9BcHn1apump`
