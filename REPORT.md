@@ -1,13 +1,13 @@
 # Trencher live report
 
-Updated 2026-11-23T08:39:36Z (paper trading, never real money)
+Updated 2026-11-23T08:54:38Z (paper trading, never real money)
 
 - Equity: $74.23 (-25.8% vs $100 start)
 - Closed trades: 22, 3 wins
 - Fees paid: $14.78 (axiom $2.81, network $9.18, pool $2.66), plus $4.15 lost to slippage
 - New trades: WATCH-ONLY (scans and decides, buys nothing)
-- Brain: subscription, claude-haiku-5-5 for routine calls, claude-opus-5-5 for the daily review; 354 routine calls and 0 plan-limit hits in 48h
-- Watch log: 84 coins being followed, 2848 filed, 0 would-buys (6h follow, sampled every 2 min)
+- Brain: subscription, claude-haiku-5-5 for routine calls, claude-opus-5-5 for the daily review; 358 routine calls and 0 plan-limit hits in 48h
+- Watch log: 84 coins being followed, 2851 filed, 0 would-buys (6h follow, sampled every 2 min)
 
 ## Scorecard (after fees)
 - 22 closed, 3 won (14%), net $-25.79
@@ -73,9 +73,15 @@ Updated 2026-11-23T08:39:36Z (paper trading, never real money)
   CA `H4gHnZ3NCU7Z9XQwGX6YYJNyieGEW8pqwGRUcdSxpump`
 
 ## Last scan
-- 08:38Z: 7 coins, 7 with pairs, 0 passed the market filters, 0 researched
+- 08:54Z: 3 coins, 3 with pairs, 0 passed the market filters, 0 researched
 
 ## Coins it looked at, and why it passed
+- 08:53Z Shit (MIGRATED, $32,479 mcap, $5,051 5m vol): PASS at conviction 2, PASS: flow below pace, dead theme, 17 copies, bundle cluster 5.1%. Not a probe. (V1, V3, V6)  
+  CA `HSCin3B2j4ZSpypVqWB2sWJffVrrJZumfRRvrNTQpump`
+- 08:52Z COPIUM (MIGRATED, $554,116 mcap, $4,663 5m vol): PASS at conviction 3, PASS: COPIUM, a 32%-off-high bottom buy with no catalyst, first resistance only 1.05x away, and a site that doesn't show this CA. Blocker: "target too close" (V1, V6, V13).  
+  CA `BAKsQrynzwadyACDMsg3J5R8a4CTvj1u7kEYyjq7pump`
+- 08:48Z FSDV15 (MIGRATED, $3,020,983 mcap, $3,720 5m vol): PASS at conviction 3, PASS: target too close. The prior high is 1.16x away, and the coin is a $3M migrated vamp in a 26-copy field with $3.7k 5m. Farm-shaped crowd, no breakout. (V1, V6, V13)  
+  CA `3BcJ4SSCfbxDMrWcUDucyCWxMjmy4M2ECCtvxu86pump`
 - 08:34Z PumpMeme (MIGRATED, $1,470,931 mcap, $5,177 5m vol): PASS at conviction 3, PASS: 5m flow is at 0.93x pace, the peak is only 1.23x away, and it's one of 18 same-ticker copies on a 5-hour-old domain. Flow blocker first. (V1, V6, V13)  
   CA `93uamrbDerKbUh8MSjNF1wDtxYvEUD1CS9BcHn1apump`
 - 08:22Z WALLSTFLY (MIGRATED, $67,530 mcap, $2,564 5m vol): PASS at conviction 2, PASS: 3% off a $70k high on a 2-hour-old coin, 5m flow $2.6k at 0.72x pace, no printed higher low, and the site doesn't show the CA. Blocker: "chasing" plus "flow below pace" (V1, V6, V13).  
@@ -90,16 +96,10 @@ Updated 2026-11-23T08:39:36Z (paper trading, never real money)
   CA `BAKsQrynzwadyACDMsg3J5R8a4CTvj1u7kEYyjq7pump`
 - 08:02Z FSDV15 (MIGRATED, $2,994,106 mcap, $2,041 5m vol): PASS at conviction 2, PASS: FSDV15 has clean holders, but 5m flow is $2k at 0.46x pace, there is no higher low, and the $3M cap has 27 copies in its field. Blocker: flow below pace. (V1, V6, V13)  
   CA `3BcJ4SSCfbxDMrWcUDucyCWxMjmy4M2ECCtvxu86pump`
-- 08:02Z suscat (FINAL_STRETCH, $18,732 mcap, $8,605 5m vol): PASS at conviction 2, PASS: suscat is one of 20 copies of the same ticker, its 5m volume is $8.6k under the $10k bar, and the 1h +162% is a spike with no printed higher low (V1, V6, V13).  
-  CA `DAsTfxWswYnYj2e4qDxoXATZ6yhK1AnwdR9RVKwJpump`
-- 07:49Z PumpGiving (FINAL_STRETCH, $19,585 mcap, $15,408 5m vol): PASS at conviction 2, PASS — 17 minutes old, up 100% on the 5m candle with more sells than buys, inside a 14-copy joke field. That's a spike with no structure, not a setup (V1, V6). Blocker: chasing spike, too new.  
-  CA `A9HEXT7dAaky5TUKErNKK4f1TLauhWg3JFNXkZWTpump`
-- 07:48Z PumpMeme (MIGRATED, $1,300,119 mcap, $3,636 5m vol): REJECT, Top 10 hold 25.6% ex-pool (>25%) (V13)  
-  CA `93uamrbDerKbUh8MSjNF1wDtxYvEUD1CS9BcHn1apump`
 
 ## What its skips did next (last 48h)
 A skip "ran" if the coin reached the first target (1.5x) from the skip price before a 20% drop, "dumped" if the drop came first. Sampled every 10 min, followed 6h.
-- flow below pace: blocked 31, ran 4, dumped 22, flat 0, open 5 (saving losses: keep it)
+- flow below pace: blocked 32, ran 4, dumped 22, flat 0, open 6 (saving losses: keep it)
   - ran: snowball up to 1.59x  
     CA `3D7YQcnXi6RMjWxheiE8VLuGXJTtgQkmyugGYvzjpump`
   - ran: OpenIndex up to 1.63x  
@@ -196,16 +196,16 @@ Nothing has a positive edge after costs. All 166 settled coins averaged -11.3% n
 - [2026-11-02 20:25] I expected Slingoor, a clean MIGRATED leader with $25k of 5m flow at pace and a 0.77 buy share, to retest its $408k high from $304k. It never went green (0.98x peak) and hit the -20% stop in 2 minutes, a -$2.86 probe. My own thesis admitted there was no printed higher low after a peak only 6 minutes old, so this confirms the money-shape rule: buy share and flow are not structure (V1, V6). Next time a MIGRATED pullback with no higher low above the hourly low is a PASS with blocker "no higher low", not a probe. This is one loss, so it adds no new ban beyond the rule I already have.
 
 ## Meta right now
-Trencher read, from the scan numbers (the web summary is only context here). Three themes are moving. Fresh pump.fun joke launches are the loudest but mostly fading: task (0.1h old, $24k 5m on a $15k cap, 66% buys) is the only one with real flow and it is too new to trust, while WINU, MILLY, milky and Milo are down 67-90% on the hour. AI, tech and people mid-caps are alive but not accelerating: UCASH ($591k cap, $15k 5m, 80% buys, 20h old) has the cleanest flow on the list, and FSDV15 and NOHR sit at 66% buys but under the $10k 5m bar. Animals are cooling (cateball 32% buys and -30%, ROCKET -51%), and the Trump dinner story has no TRUMP coin in the movers, so it is fading. Milo is not a setup: the web summary's 85k cap and 49k 5m volume are contradicted by the scan ($7k cap, $357 5m, 38% buys), so it fails the volume floor. Research next: UCASH first (holder, dev and bundle checks), then task only if it survives a dip; COPIUM, FSDV15 and NOHR are watch items until 5m volume clears $10k.
+The meta is thin and split, and the 1-hour numbers look better than the 5-minute ones. Fresh pump.fun joke tickers are the loudest group, but only "made by humans" (20k cap, $8.9k 5m, 63% buys) and Lioness (6.7k cap, 78% buys) show live buyers. task, TOGI and PumpGiving have zero 5m buys despite big hour volume, so they're fading. The one rising story name is WALLSTFLY (+48% 1h, 52% buys, $2.6k 5m), a Wall Street satire that is early and still below the $10k bar. Animals (cateball, GATO, ROCKET) are cooling, and the Trump dinner story is all headline with no TRUMP in the movers. Setups to research: "made by humans" first (5m is about $1.1k short of the bar), then WALLSTFLY only if 5m clears $10k; MINELIUS and PumpMeme are older, bigger caps with $5-6k 5m and 57-66% buys, so they're watch items, not entries. UCASH, FSDV15, NOHR and COPIUM don't appear in scan_movers, and the web summary's task and Milo numbers contradict the scan, so I weighted the scan. Holder, dev and bundle checks are still unrun on every coin.
 
 ## Moving most in its scans, last 30 min (1h volume)
-- UCASH: $158,739 1h vol, $539,724 mcap, -17% 1h  
-  CA `7cFiqdT46zs7ooHWLFiLSaSQKLMibtokh9dBinsspump`
-- NOHR: $101,418 1h vol, $2,038,089 mcap, -8% 1h  
-  CA `Jd3NCawdFiDNWpLiTtsMqoeoBMjC1ZQMrMScRVzpump`
-- MINELIUS: $87,246 1h vol, $13,477,550 mcap, +24% 1h  
-  CA `E9rWKjVhHMxQkxfREr7Li8Yy46rVcWiWHoKVQAe9pump`
-- PumpGiving: $67,880 1h vol, $4,781 mcap, -29% 1h  
-  CA `A9HEXT7dAaky5TUKErNKK4f1TLauhWg3JFNXkZWTpump`
+- Shit: $86,276 1h vol, $33,893 mcap, +19% 1h  
+  CA `HSCin3B2j4ZSpypVqWB2sWJffVrrJZumfRRvrNTQpump`
+- ⓗ: $68,875 1h vol, $5,585 mcap, -81% 1h  
+  CA `8wn4Ly4PVMeJPw3pxNxecVEZX69xjySt2RsDgyFmpump`
 - PumpMeme: $65,666 1h vol, $1,414,233 mcap, +2% 1h  
   CA `93uamrbDerKbUh8MSjNF1wDtxYvEUD1CS9BcHn1apump`
+- COPIUM: $54,872 1h vol, $554,116 mcap, +2% 1h  
+  CA `BAKsQrynzwadyACDMsg3J5R8a4CTvj1u7kEYyjq7pump`
+- PumpGiving: $51,391 1h vol, $4,479 mcap, -60% 1h  
+  CA `A9HEXT7dAaky5TUKErNKK4f1TLauhWg3JFNXkZWTpump`
