@@ -1,13 +1,13 @@
 # Trencher live report
 
-Updated 2026-11-23T14:28:08Z (paper trading, never real money)
+Updated 2026-11-23T14:43:15Z (paper trading, never real money)
 
 - Equity: $74.23 (-25.8% vs $100 start)
 - Closed trades: 22, 3 wins
 - Fees paid: $14.78 (axiom $2.81, network $9.18, pool $2.66), plus $4.15 lost to slippage
 - New trades: WATCH-ONLY (scans and decides, buys nothing)
-- Brain: subscription, claude-haiku-5-5 for routine calls, claude-opus-5-5 for the daily review; 411 routine calls and 0 plan-limit hits in 48h
-- Watch log: 69 coins being followed, 2931 filed, 0 would-buys (6h follow, sampled every 2 min)
+- Brain: subscription, claude-haiku-5-5 for routine calls, claude-opus-5-5 for the daily review; 414 routine calls and 0 plan-limit hits in 48h
+- Watch log: 72 coins being followed, 2932 filed, 0 would-buys (6h follow, sampled every 2 min)
 
 ## Scorecard (after fees)
 - 22 closed, 3 won (14%), net $-25.79
@@ -73,9 +73,17 @@ Updated 2026-11-23T14:28:08Z (paper trading, never real money)
   CA `H4gHnZ3NCU7Z9XQwGX6YYJNyieGEW8pqwGRUcdSxpump`
 
 ## Last scan
-- 14:27Z: 6 coins, 6 with pairs, 1 passed the market filters, 1 researched
+- 14:42Z: 4 coins, 4 with pairs, 0 passed the market filters, 0 researched
 
 ## Coins it looked at, and why it passed
+- 14:41Z earball (DIP, $48,260 mcap, $4,670 5m vol): PASS, PASS — brain unavailable, not trading blind.  
+  CA `FryQiSLqU7NfPvpQJRiYrVuvRRW66uB4FLorrKmjpump`
+- 14:38Z PumpMeme (MIGRATED, $1,519,322 mcap, $7,800 5m vol): PASS at conviction 4, PASS: PumpMeme is 36% off a $2.39M peak with 5m flow at 0.75x its hourly pace, no printed higher low, and a crowded copy field. Blocker: flow below pace (V1, V6, V13).  
+  CA `93uamrbDerKbUh8MSjNF1wDtxYvEUD1CS9BcHn1apump`
+- 14:36Z JENSEN (FINAL_STRETCH, $28,219 mcap, $14,537 5m vol): PASS at conviction 3, PASS: a copy of "Jensen Is Back" ($279k, the real leader) sitting at 89.5% of bond after a 544% hour, with 17.7% in bundles and a 9.5% single cluster. Blocker: vamp field, not the leader (V1, V3, V13).  
+  CA `7gXsAF5qwrhLAK1SyA9b44dcGfqawhKfadRSAmqoJTcS`
+- 14:34Z JENSEN (MIGRATED, $278,965 mcap, $132,534 5m vol): REJECT, RugCheck danger: Creator history of rugged tokens  
+  CA `AxyCBHmHYjYjc75sLKDAwmjJLaGgmgaYaQtkAdGtpump`
 - 14:27Z BONER (MIGRATED, $42,156 mcap, $36,170 5m vol): PASS at conviction 3, PASS: BONER is a 2-minute-old copy in a 15-coin Boner field, already under its hourly low with no higher low, and a bottom buy with no catalyst. Blocker: "no higher low." (V1, V6)  
   CA `Dqotg1vothycy7Xa3Q2GEfFRzuzsp41jTw91dxjNwSEz`
 - 14:20Z UCASH (MIGRATED, $1,632,746 mcap, $15,850 5m vol): PASS at conviction 3, PASS: flow at 0.72x pace on a -27% dip with no breakout, and a one-day-old tech site with no GitHub. Blocker "flow below pace" (V1, V6).  
@@ -88,14 +96,6 @@ Updated 2026-11-23T14:28:08Z (paper trading, never real money)
   CA `BAKsQrynzwadyACDMsg3J5R8a4CTvj1u7kEYyjq7pump`
 - 14:07Z FSDV15 (MIGRATED, $877,911 mcap, $3,341 5m vol): PASS at conviction 3, PASS. Flow at 0.27x its hourly pace, 79% off a $4.26M peak on a 28-copy meme with a 0.8-day-old domain. Flow below pace (V1, V6).  
   CA `3BcJ4SSCfbxDMrWcUDucyCWxMjmy4M2ECCtvxu86pump`
-- 13:53Z PumpMeme (DIP, $1,186,685 mcap, $8,505 5m vol): PASS at conviction 3, PASS: no higher low, theme volume at 0.75x pace, and a 0.4-day-old site that doesn't show the CA. Vamp field. (V1, V3, V6, V13)  
-  CA `93uamrbDerKbUh8MSjNF1wDtxYvEUD1CS9BcHn1apump`
-- 13:48Z HOGE (DIP, $820,684 mcap, $3,833 5m vol): REJECT, Bundles: 9 linked wallet cluster(s) hold 27.7% of supply (>20%) (V17)  
-  CA `FVzqGqRmr4UH1Fif6dewmwbJ1p4YUZCu8dcw4Efopump`
-- 13:42Z TORQUE (FINAL_STRETCH, $23,041 mcap, $16,354 5m vol): PASS at conviction 3, PASS: chasing spike. TORQUE is up 85% on 5m and 834% on the hour, 5.5x its hourly pace, with no printed higher low. Ticker shared by 9 copies, a 0.1-day-old domain and top 10 at 24.5%. (V1, V6, V13)  
-  CA `Czbd4FtkLf4ELCPNuawbGxcivuCpcLWFFTD4oqWkpump`
-- 13:34Z UCASH (DIP, $1,323,519 mcap, $9,655 5m vol): REJECT, Dip with fading attention is a falling knife, not a dip (5m at 0.37x the hour's pace, under 0.6x)  
-  CA `7cFiqdT46zs7ooHWLFiLSaSQKLMibtokh9dBinsspump`
 
 ## What its skips did next (last 48h)
 A skip "ran" if the coin reached the first target (1.5x) from the skip price before a 20% drop, "dumped" if the drop came first. Sampled every 10 min, followed 6h.
@@ -125,26 +125,26 @@ A skip "ran" if the coin reached the first target (1.5x) from the skip price bef
     CA `Dtx414D8jurspmB1jqJWsYU66pemoXRjQeXx7TC1pump`
   - ran: GIF up to 2.16x  
     CA `B6wM98qkQKP71mhPA48S7No6TxM4KaXdFojDTZeUpump`
-- RugCheck danger: blocked 16, ran 2, dumped 14, flat 0, open 0 (saving losses: keep it)
+- RugCheck danger: blocked 17, ran 2, dumped 14, flat 0, open 1 (saving losses: keep it)
   - ran: MIHAOMAS up to 1.62x  
     CA `3XsFunPdji9U1EgJXokZysw8SB3t74un89b6KLEVpump`
   - ran: Holdsgiving up to 2.96x  
     CA `A2jLaCC7v3VjXP8gEgCQNbTWEvizYuQ82jFEYfzipump`
-- falling knife / no higher low: blocked 15, ran 4, dumped 4, flat 6, open 1 (mixed)
+- falling knife / no higher low: blocked 14, ran 5, dumped 4, flat 5, open 0 (cost more winners than it saved: loosen it)
   - ran: UrAnus up to 2.97x  
     CA `27u3diWofnXGUkddjLGhcy1nRssFKHW3RtNbpWzUpump`
   - ran: STREETS up to 1.73x  
     CA `82mseLFauphc2yutbaDGgViahquJ1jGVLpyof99xpump`
   - ran: Fly up to 1.52x  
     CA `84tAcSK5L9kuQEVM8C8vMHXnfdA83nGBT2nYfSbPUcAc`
-- falling knife (code): blocked 13, ran 5, dumped 6, flat 1, open 1 (mixed)
+- falling knife (code): blocked 13, ran 5, dumped 7, flat 1, open 0 (mixed)
   - ran: RIZZMAS3 up to 1.84x  
     CA `BQcV4Ryfu9bZK8egAF89AhkojdJqAaDt4xTFwUQ2pump`
   - ran: STREETS up to 1.73x  
     CA `82mseLFauphc2yutbaDGgViahquJ1jGVLpyof99xpump`
   - ran: OpenIndex up to 1.63x  
     CA `FuKY3dk7QmpbDdQRjzbjB3G6PiCuqKNvN4dAWDpwpump`
-- brain paced: blocked 11, ran 4, dumped 6, flat 1, open 0 (mixed)
+- brain paced: blocked 12, ran 4, dumped 6, flat 1, open 1 (mixed)
   - ran: STREETS up to 1.73x  
     CA `82mseLFauphc2yutbaDGgViahquJ1jGVLpyof99xpump`
   - ran: FOAM up to 1.98x  
@@ -199,13 +199,13 @@ Nothing has a positive after-cost edge yet. All 229 settled coins average -8.7% 
 Not quiet. The scan_movers volume splits into four bands. (1) Fresh pump.fun launches under about $22k with 1h spikes of +50% to +800% (DEEP, TORQUE, CLAWSY, Optimus, AMC). Buy ratios are split and fading on AMC (0.10) and CLAWSY (0.37). DEEP's $40.8k 5m on a $12k cap is about 3.4x its market cap, which looks like farmed volume, so I'm watching it, not sniping it. (2) Trump-name clones: TREMP and Unofficial TREMP are both under an hour old with $30-37k 5m. The headlines say official TRUMP is at record lows, so attention is following the name, not the original. That's a vamp pattern (V1, V6), not a setup. (3) Older tech/product names are fading or thin: NOHR -33% 1h, MINELIUS -25% with only $6.2k 5m (under the $10k bar, so not the late follow the web suggested), and FSDV15 flat with 66% buys. (4) Buyer-led older memes: UCASH ($1.35M mcap, 69% buys, +112% 1h, $11.1k 5m), COPIUM and HOGE (joke/animal names, 57-71% buys). Setups to research under MIGRATED rules: UCASH, but its 5m is about 43% of its hourly pace (about $26k per 5 min), so volume is cooling and it has to hold above $10k. FSDV15 at $10.7k 5m is a marginal second. Mint/freeze, LP burn, holders, dev and bundles are not yet run on any of these, so no buy yet. The web numbers conflict with the scan on UCASH, FSDV15, Optimus and MINELIUS; I used the scan. Paper, not advice.
 
 ## Moving most in its scans, last 30 min (1h volume)
-- JACKET: $971,774 1h vol, $424,838 mcap, +866% 1h  
-  CA `DJVZ9hKSLsDAPjdq73nX5bYPnjvfntUN87RRxdN2pump`
-- TREMP: $331,940 1h vol, $3,771 mcap, -87% 1h  
-  CA `CuNLbjjFcmumcKF1AnUkPU4dcjykJR73M8hzJB5Cpump`
+- JENSEN: $394,485 1h vol, $278,965 mcap, +218% 1h  
+  CA `AxyCBHmHYjYjc75sLKDAwmjJLaGgmgaYaQtkAdGtpump`
 - UCASH: $263,323 1h vol, $1,627,542 mcap, +35% 1h  
   CA `7cFiqdT46zs7ooHWLFiLSaSQKLMibtokh9dBinsspump`
+- TREMP: $222,383 1h vol, $2,959 mcap, -94% 1h  
+  CA `CuNLbjjFcmumcKF1AnUkPU4dcjykJR73M8hzJB5Cpump`
 - NOHR: $191,952 1h vol, $1,003,395 mcap, +36% 1h  
   CA `Jd3NCawdFiDNWpLiTtsMqoeoBMjC1ZQMrMScRVzpump`
-- FSDV15: $149,939 1h vol, $893,806 mcap, -21% 1h  
-  CA `3BcJ4SSCfbxDMrWcUDucyCWxMjmy4M2ECCtvxu86pump`
+- PumpMeme: $125,067 1h vol, $1,519,322 mcap, -26% 1h  
+  CA `93uamrbDerKbUh8MSjNF1wDtxYvEUD1CS9BcHn1apump`
