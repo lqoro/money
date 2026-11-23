@@ -1,13 +1,13 @@
 # Trencher live report
 
-Updated 2026-11-23T06:38:33Z (paper trading, never real money)
+Updated 2026-11-23T06:53:34Z (paper trading, never real money)
 
 - Equity: $74.23 (-25.8% vs $100 start)
 - Closed trades: 22, 3 wins
 - Fees paid: $14.78 (axiom $2.81, network $9.18, pool $2.66), plus $4.15 lost to slippage
 - New trades: WATCH-ONLY (scans and decides, buys nothing)
-- Brain: subscription, claude-haiku-5-5 for routine calls, claude-opus-5-5 for the daily review; 332 routine calls and 0 plan-limit hits in 48h
-- Watch log: 95 coins being followed, 2814 filed, 0 would-buys (6h follow, sampled every 2 min)
+- Brain: subscription, claude-haiku-5-5 for routine calls, claude-opus-5-5 for the daily review; 337 routine calls and 0 plan-limit hits in 48h
+- Watch log: 94 coins being followed, 2819 filed, 0 would-buys (6h follow, sampled every 2 min)
 
 ## Scorecard (after fees)
 - 22 closed, 3 won (14%), net $-25.79
@@ -73,9 +73,17 @@ Updated 2026-11-23T06:38:33Z (paper trading, never real money)
   CA `H4gHnZ3NCU7Z9XQwGX6YYJNyieGEW8pqwGRUcdSxpump`
 
 ## Last scan
-- 06:38Z: 2 coins, 2 with pairs, 0 passed the market filters, 0 researched
+- 06:52Z: 4 coins, 4 with pairs, 0 passed the market filters, 0 researched
 
 ## Coins it looked at, and why it passed
+- 06:51Z WALLSTFLY (MIGRATED, $33,813 mcap, $2,670 5m vol): PASS at conviction 2, PASS: 5m flow at 0.67x pace, buys 47% of 5m, no printed higher low, 15 minutes old and bleeding off its spike, and no story behind a single-fly meme. Blocker: flow below pace (V1, V6).  
+  CA `2DQbV7hsqxKVWmFakXGGhBbNyY28tDJ9YuJkojYrpump`
+- 06:45Z MINELIUS (MIGRATED, $10,287,954 mcap, $5,132 5m vol): PASS at conviction 2, PASS. Chasing a $10M coin 4% off its high, with 5m flow at half pace and one of 23 copies. Blocker: chasing. (V1, V6, V13)  
+  CA `E9rWKjVhHMxQkxfREr7Li8Yy46rVcWiWHoKVQAe9pump`
+- 06:44Z UCASH (DIP, $922,066 mcap, $10,149 5m vol): PASS at conviction 2, PASS — UCASH is a DIP with 5m flow at 0.65x pace under the 0.7x gate, a privacy story the radar doesn't show, and a 0.7-day-old domain riding the real Umbra name. Blocker: flow below pace / no catalyst. (V1, V13)  
+  CA `7cFiqdT46zs7ooHWLFiLSaSQKLMibtokh9dBinsspump`
+- 06:42Z NOHR (MIGRATED, $2,129,474 mcap, $5,574 5m vol): PASS at conviction 2, PASS: chasing a $2.1M coin 3% off its high, and the first resistance is 1.03x away. Blocker: "chasing" plus "target too close." (V1, V6)  
+  CA `Jd3NCawdFiDNWpLiTtsMqoeoBMjC1ZQMrMScRVzpump`
 - 06:37Z COPIUM (MIGRATED, $531,489 mcap, $3,503 5m vol): PASS at conviction 4, PASS. Flow below pace (0.58x), no reclaimed bounce, and a 14-ticker copium field with no catalyst. Blocker: flow below pace. (V1, V6, V13)  
   CA `BAKsQrynzwadyACDMsg3J5R8a4CTvj1u7kEYyjq7pump`
 - 06:32Z Milo (MIGRATED, $82,006 mcap, $40,970 5m vol): PASS at conviction 3, PASS: chasing a 5m spike, under an hour old, and not the leader of a 21-copy "milo" field. Blockers: chasing, too new, split crowd. (V1, V6, V13)  
@@ -88,32 +96,24 @@ Updated 2026-11-23T06:38:33Z (paper trading, never real money)
   CA `93uamrbDerKbUh8MSjNF1wDtxYvEUD1CS9BcHn1apump`
 - 06:15Z CBUCKS (MIGRATED, $3,667,769 mcap, $2,269 5m vol): REJECT, Top 10 hold 26.0% ex-pool (>25%) (V13)  
   CA `DtcicPCKTKeAh7TDEzTym3hXeoHAoMiBdYJhMYxZpump`
-- 06:15Z WASTED (DIP, $576,503 mcap, $12,808 5m vol): REJECT, Dev holds 1.1% (>1%) (V13, V17)  
-  CA `GexThZHgaswpAQ7Fi8QrHFubjPimUNSYhJiAA7XZpump`
-- 06:10Z Fly (DIP, $189,098 mcap, $4,132 5m vol): REJECT, Dip with fading attention is a falling knife, not a dip (5m at 0.59x the hour's pace, under 0.6x)  
-  CA `84tAcSK5L9kuQEVM8C8vMHXnfdA83nGBT2nYfSbPUcAc`
-- 06:00Z MINELIUS (MIGRATED, $8,288,682 mcap, $8,596 5m vol): PASS at conviction 3, PASS. Right idea on paper, wrong place in the range: $8.3M mcap with a $10.4M high only 1.25x up, sellers on the 5m, no higher low printed. (V1, V6)  
-  CA `E9rWKjVhHMxQkxfREr7Li8Yy46rVcWiWHoKVQAe9pump`
-- 05:58Z UCASH (DIP, $1,268,571 mcap, $28,432 5m vol): PASS at conviction 2, PASS: UCASH is a name-rider on the Umbra privacy story, not the Umbra project (ticker UMBRA, CA PRVT6...meta). Flow is under pace and the domain is 0.7 days old. Blockers: wrong token, flow below pace, no higher low, dead-story bottom-buy gate. (V3, V6)  
-  CA `7cFiqdT46zs7ooHWLFiLSaSQKLMibtokh9dBinsspump`
 
 ## What its skips did next (last 48h)
 A skip "ran" if the coin reached the first target (1.5x) from the skip price before a 20% drop, "dumped" if the drop came first. Sampled every 10 min, followed 6h.
-- flow below pace: blocked 27, ran 3, dumped 20, flat 0, open 4 (saving losses: keep it)
+- flow below pace: blocked 27, ran 3, dumped 19, flat 0, open 5 (saving losses: keep it)
   - ran: snowball up to 1.59x  
     CA `3D7YQcnXi6RMjWxheiE8VLuGXJTtgQkmyugGYvzjpump`
   - ran: OpenIndex up to 1.63x  
     CA `FuKY3dk7QmpbDdQRjzbjB3G6PiCuqKNvN4dAWDpwpump`
   - ran: hCAT up to 1.52x  
     CA `2FYs4vApfj4ErsggpFDfzMv1WvxnyiLtzNEj84mS6TLh`
-- too new / sniping: blocked 26, ran 6, dumped 19, flat 0, open 1 (saving losses: keep it)
+- too new / sniping: blocked 27, ran 6, dumped 19, flat 0, open 2 (saving losses: keep it)
   - ran: TA up to 1.77x  
     CA `DKUM8qywmi8X9RYK2wUgnTw8QKjh1nYDThZR1GXPpump`
   - ran: SANTAHAT up to 3x  
     CA `5fWLSMA5HoK9W4VoTMi4c3qjyu3N2LsKRSM8Ffpgpump`
   - ran: KYC up to 2.37x  
     CA `47YCrfUmSQUF9vnPsPGSzrmTcxttdRAWejCMkhrrpump`
-- near the high / chasing: blocked 22, ran 2, dumped 18, flat 1, open 1 (saving losses: keep it)
+- near the high / chasing: blocked 24, ran 2, dumped 18, flat 1, open 3 (saving losses: keep it)
   - ran: CUNTS up to 1.61x  
     CA `7CvW68FD9KjNYGByfykhaNps7VNPLN8dFwMRfmgQpump`
   - ran: SANTA up to 1.85x  
@@ -152,7 +152,7 @@ A skip "ran" if the coin reached the first target (1.5x) from the skip price bef
     CA `BCTwG3LDhNcthcK374aWQfAzLYGRXDu1apmrqw3Tpump`
   - ran: Mfer up to 1.55x  
     CA `9tX1UpBGeNqMb1VqqzVumwzW71ybsNZFyWKYiL8Ppump`
-- thin 5m volume: blocked 7, ran 1, dumped 4, flat 0, open 2 (saving losses: keep it)
+- thin 5m volume: blocked 6, ran 1, dumped 3, flat 0, open 2 (saving losses: keep it)
   - ran: chud up to 1.55x  
     CA `EV7J2QaPXPytSkM1LD9GPRkgAbmSEr9R3kYiXBzbpump`
 
@@ -192,16 +192,16 @@ Nothing has a positive edge after costs. All 166 settled coins averaged -11.3% n
 - [2026-11-02 20:25] I expected Slingoor, a clean MIGRATED leader with $25k of 5m flow at pace and a 0.77 buy share, to retest its $408k high from $304k. It never went green (0.98x peak) and hit the -20% stop in 2 minutes, a -$2.86 probe. My own thesis admitted there was no printed higher low after a peak only 6 minutes old, so this confirms the money-shape rule: buy share and flow are not structure (V1, V6). Next time a MIGRATED pullback with no higher low above the hourly low is a PASS with blocker "no higher low", not a probe. This is one loss, so it adds no new ban beyond the rule I already have.
 
 ## Meta right now
-Not quiet. The movers are loud, and most of the money is in pump.fun joke launches under an hour old: PumpMeme (+1938% 1h, $90k 5m, 64% buys), HUMAN (+839%, $35k 5m, 63% buys) and Nikumaru (+916%, $34k 5m, 61% buys), all at $20-25k caps and minutes old. That is a lottery-ticket theme until holder and bundle checks say otherwise. The mature coins with buyer-led flow are UCASH ($1.7M, $62k 5m, 76% buys) and MINELIUS ($7.7M, $20k 5m, 69% buys, flat 1h), which fit the MIGRATED filter, so those are the setups I'd research first. The Trump dinner/BIRDMAGA story is fading (BIRDMAGA -7.6% 1h on $7k 5m, and the web says $TRUMP is at record lows), and the dead Pump-era names (PEACH -99.6%, Trilaygo -60%) are bleeding. The web summary names TAIL, stuffinu and CHICKEN, which are not in scan_movers, and gives MINELIUS a different cap, so I'm treating those figures as unverified. The hack-named coin on the list is blocked and not a setup.
+Meta: the movers are loud, and the loudest flow is pump.fun joke launches under about 1h old (PumpMeme, WINU, MILLY, Milo, all up 190% to 2000% on the hour), but the older fresh ones are already bleeding (HUMAN -51%, Jensen Huang -71%), so that lottery theme is cooling. Second, animals and cats (hCAT, cateball) are mixed, and cateball is sell-leaning at 35% buys. Third, AI, tech and people names (agent milly, Tesla FSD v15, NO HUMAN) show 60-64% buys on mid caps: alive, not accelerating. Fading: the Trump dinner story (no TRUMP coin in the movers, and the headlines say it is down 99%) and old names like WASTED and BELLA. Setups to research first: Milo (already on PumpSwap, 85k cap, 49k 5m volume, 62% buys, 0.3h old) has the cleanest flow on the list and fits the MIGRATED filter; MILLY and WINU are early lottery tickets with holder and bundle checks still to run; PumpMeme at 760k after a 2000% hour is a chase, not a setup, unless it dips and holds. The web summary's caps and volumes (PumpMeme at $90k, MINELIUS, TAIL) don't match the scan, so I'm weighting only the scan numbers. No hack-named coin is a setup.
 
 ## Moving most in its scans, last 30 min (1h volume)
-- PumpMeme: $657,341 1h vol, $759,806 mcap, +2020% 1h  
-  CA `93uamrbDerKbUh8MSjNF1wDtxYvEUD1CS9BcHn1apump`
+- UCASH: $186,203 1h vol, $918,770 mcap, -32% 1h  
+  CA `7cFiqdT46zs7ooHWLFiLSaSQKLMibtokh9dBinsspump`
 - Milo: $166,216 1h vol, $84,836 mcap, +191% 1h  
   CA `Cz1bmoA8PW2p8iS5ugxYzhAM1QQg6bRyNp6CmrKui2hL`
-- Fly: $88,450 1h vol, $174,896 mcap, +4% 1h  
-  CA `84tAcSK5L9kuQEVM8C8vMHXnfdA83nGBT2nYfSbPUcAc`
+- MINELIUS: $113,572 1h vol, $10,287,954 mcap, +36% 1h  
+  CA `E9rWKjVhHMxQkxfREr7Li8Yy46rVcWiWHoKVQAe9pump`
 - COPIUM: $72,874 1h vol, $535,278 mcap, +13% 1h  
   CA `BAKsQrynzwadyACDMsg3J5R8a4CTvj1u7kEYyjq7pump`
-- FSDV15: $49,408 1h vol, $2,884,382 mcap, +9% 1h  
-  CA `3BcJ4SSCfbxDMrWcUDucyCWxMjmy4M2ECCtvxu86pump`
+- WINU: $55,521 1h vol, $2,425 mcap, -1% 1h  
+  CA `3ggEYfkWC8Yzii8imDKJw2rB1FyMWgGhTr6ZDs8Tpump`
