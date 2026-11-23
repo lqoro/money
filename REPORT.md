@@ -1,13 +1,13 @@
 # Trencher live report
 
-Updated 2026-11-23T09:09:52Z (paper trading, never real money)
+Updated 2026-11-23T09:24:52Z (paper trading, never real money)
 
 - Equity: $74.23 (-25.8% vs $100 start)
 - Closed trades: 22, 3 wins
 - Fees paid: $14.78 (axiom $2.81, network $9.18, pool $2.66), plus $4.15 lost to slippage
 - New trades: WATCH-ONLY (scans and decides, buys nothing)
-- Brain: subscription, claude-haiku-5-5 for routine calls, claude-opus-5-5 for the daily review; 361 routine calls and 0 plan-limit hits in 48h
-- Watch log: 81 coins being followed, 2857 filed, 0 would-buys (6h follow, sampled every 2 min)
+- Brain: subscription, claude-haiku-5-5 for routine calls, claude-opus-5-5 for the daily review; 362 routine calls and 0 plan-limit hits in 48h
+- Watch log: 79 coins being followed, 2861 filed, 0 would-buys (6h follow, sampled every 2 min)
 
 ## Scorecard (after fees)
 - 22 closed, 3 won (14%), net $-25.79
@@ -73,9 +73,13 @@ Updated 2026-11-23T09:09:52Z (paper trading, never real money)
   CA `H4gHnZ3NCU7Z9XQwGX6YYJNyieGEW8pqwGRUcdSxpump`
 
 ## Last scan
-- 09:08Z: 2 coins, 2 with pairs, 0 passed the market filters, 0 researched
+- 09:24Z: 4 coins, 4 with pairs, 0 passed the market filters, 0 researched
 
 ## Coins it looked at, and why it passed
+- 09:20Z PumpMeme (MIGRATED, $1,232,993 mcap, $5,404 5m vol): PASS at conviction 3, PASS: flow below pace, no printed higher low, and the project site doesn't show the CA. 18 copies of the word. Farm-shaped (V1, V3, V13).  
+  CA `93uamrbDerKbUh8MSjNF1wDtxYvEUD1CS9BcHn1apump`
+- 09:11Z cateball (DIP, $1,140,094 mcap, $1,394 5m vol): REJECT, 5m volume $1,394 is dead (<$2,000) (V1)  
+  CA `4npJ3avxnGhCzKbWQpLrQXAHsjWzKr4JqBsbu5Fspump`
 - 09:01Z MINELIUS (MIGRATED, $16,433,709 mcap, $3,511 5m vol): PASS at conviction 2, PASS: MINELIUS is at the high, not in a pullback. Flow is half its hourly pace, the mcap is $16M, and a 0.7-day-old privacy-launchpad site with no GitHub is the whole story. (V1, V6, V13)  
   CA `E9rWKjVhHMxQkxfREr7Li8Yy46rVcWiWHoKVQAe9pump`
 - 09:00Z UCASH (MIGRATED, $590,618 mcap, $17,559 5m vol): PASS at conviction 3, PASS: down 74% off a $2.2M peak with a bounce but no printed higher low, a 0.8-day-old domain, and a product still "in development." Deep dump, not a dip (V1, V6, V13).  
@@ -92,14 +96,10 @@ Updated 2026-11-23T09:09:52Z (paper trading, never real money)
   CA `93uamrbDerKbUh8MSjNF1wDtxYvEUD1CS9BcHn1apump`
 - 08:22Z WALLSTFLY (MIGRATED, $67,530 mcap, $2,564 5m vol): PASS at conviction 2, PASS: 3% off a $70k high on a 2-hour-old coin, 5m flow $2.6k at 0.72x pace, no printed higher low, and the site doesn't show the CA. Blocker: "chasing" plus "flow below pace" (V1, V6, V13).  
   CA `2DQbV7hsqxKVWmFakXGGhBbNyY28tDJ9YuJkojYrpump`
-- 08:16Z MINELIUS (MIGRATED, $13,402,584 mcap, $5,079 5m vol): PASS at conviction 2, PASS: $13.4M cap, 2% off a spike it added in the last hour, 5m flow at 0.7x pace, 24 copies on the ticker. Chasing, big cap, no room (V1, V6, V13).  
-  CA `E9rWKjVhHMxQkxfREr7Li8Yy46rVcWiWHoKVQAe9pump`
-- 08:15Z UCASH (MIGRATED, $539,724 mcap, $10,314 5m vol): PASS at conviction 3, PASS — UCASH is at 0.77x its hourly flow pace, has no printed higher low, and its website is 0.8 days old with the product "in development." Blocker: flow below pace (V6, V13).  
-  CA `7cFiqdT46zs7ooHWLFiLSaSQKLMibtokh9dBinsspump`
 
 ## What its skips did next (last 48h)
 A skip "ran" if the coin reached the first target (1.5x) from the skip price before a 20% drop, "dumped" if the drop came first. Sampled every 10 min, followed 6h.
-- flow below pace: blocked 32, ran 4, dumped 22, flat 0, open 6 (saving losses: keep it)
+- flow below pace: blocked 31, ran 4, dumped 21, flat 0, open 6 (saving losses: keep it)
   - ran: snowball up to 1.59x  
     CA `3D7YQcnXi6RMjWxheiE8VLuGXJTtgQkmyugGYvzjpump`
   - ran: OpenIndex up to 1.63x  
@@ -118,12 +118,12 @@ A skip "ran" if the coin reached the first target (1.5x) from the skip price bef
     CA `7CvW68FD9KjNYGByfykhaNps7VNPLN8dFwMRfmgQpump`
   - ran: SANTA up to 1.85x  
     CA `tZsjFu2CH1R23wEpbfXAYGc2KUaVrUbwofCNNNqpump`
-- top 10 over 25%: blocked 18, ran 2, dumped 14, flat 2, open 0 (saving losses: keep it)
+- top 10 over 25%: blocked 17, ran 2, dumped 13, flat 2, open 0 (saving losses: keep it)
   - ran: :) up to 1.65x  
     CA `Dtx414D8jurspmB1jqJWsYU66pemoXRjQeXx7TC1pump`
   - ran: GIF up to 2.16x  
     CA `B6wM98qkQKP71mhPA48S7No6TxM4KaXdFojDTZeUpump`
-- falling knife / no higher low: blocked 15, ran 4, dumped 5, flat 5, open 1 (mixed)
+- falling knife / no higher low: blocked 14, ran 4, dumped 4, flat 5, open 1 (mixed)
   - ran: UrAnus up to 2.97x  
     CA `27u3diWofnXGUkddjLGhcy1nRssFKHW3RtNbpWzUpump`
   - ran: STREETS up to 1.73x  
@@ -140,7 +140,7 @@ A skip "ran" if the coin reached the first target (1.5x) from the skip price bef
     CA `2MdCPWNFufmJSZhajSvi1yqBFTB24GQ4ipjNcB8Vpump`
   - ran: MCAT up to 2.52x  
     CA `BzPyyYCTmQNq2BcfQ4ANAvCYk54rnmQEXMFvFT8RhWMi`
-- falling knife (code): blocked 11, ran 4, dumped 6, flat 0, open 1 (mixed)
+- falling knife (code): blocked 11, ran 4, dumped 6, flat 1, open 0 (mixed)
   - ran: RIZZMAS3 up to 1.84x  
     CA `BQcV4Ryfu9bZK8egAF89AhkojdJqAaDt4xTFwUQ2pump`
   - ran: STREETS up to 1.73x  
@@ -201,11 +201,11 @@ The meta is thin and split, and the 1-hour numbers look better than the 5-minute
 ## Moving most in its scans, last 30 min (1h volume)
 - UCASH: $153,824 1h vol, $556,929 mcap, -2% 1h  
   CA `7cFiqdT46zs7ooHWLFiLSaSQKLMibtokh9dBinsspump`
-- Shit: $86,276 1h vol, $33,893 mcap, +19% 1h  
-  CA `HSCin3B2j4ZSpypVqWB2sWJffVrrJZumfRRvrNTQpump`
 - MINELIUS: $83,147 1h vol, $16,720,642 mcap, +29% 1h  
   CA `E9rWKjVhHMxQkxfREr7Li8Yy46rVcWiWHoKVQAe9pump`
 - NOHR: $82,319 1h vol, $1,933,002 mcap, -21% 1h  
   CA `Jd3NCawdFiDNWpLiTtsMqoeoBMjC1ZQMrMScRVzpump`
-- ⓗ: $71,030 1h vol, $5,393 mcap, -81% 1h  
+- ⓗ: $72,158 1h vol, $2,573 mcap, -91% 1h  
   CA `8wn4Ly4PVMeJPw3pxNxecVEZX69xjySt2RsDgyFmpump`
+- PumpMeme: $68,128 1h vol, $1,232,993 mcap, -5% 1h  
+  CA `93uamrbDerKbUh8MSjNF1wDtxYvEUD1CS9BcHn1apump`
