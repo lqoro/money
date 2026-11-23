@@ -1,13 +1,13 @@
 # Trencher live report
 
-Updated 2026-11-23T11:40:48Z (paper trading, never real money)
+Updated 2026-11-23T11:55:50Z (paper trading, never real money)
 
 - Equity: $74.23 (-25.8% vs $100 start)
 - Closed trades: 22, 3 wins
 - Fees paid: $14.78 (axiom $2.81, network $9.18, pool $2.66), plus $4.15 lost to slippage
 - New trades: WATCH-ONLY (scans and decides, buys nothing)
-- Brain: subscription, claude-haiku-5-5 for routine calls, claude-opus-5-5 for the daily review; 386 routine calls and 0 plan-limit hits in 48h
-- Watch log: 72 coins being followed, 2897 filed, 0 would-buys (6h follow, sampled every 2 min)
+- Brain: subscription, claude-haiku-5-5 for routine calls, claude-opus-5-5 for the daily review; 390 routine calls and 0 plan-limit hits in 48h
+- Watch log: 75 coins being followed, 2899 filed, 0 would-buys (6h follow, sampled every 2 min)
 
 ## Scorecard (after fees)
 - 22 closed, 3 won (14%), net $-25.79
@@ -73,9 +73,19 @@ Updated 2026-11-23T11:40:48Z (paper trading, never real money)
   CA `H4gHnZ3NCU7Z9XQwGX6YYJNyieGEW8pqwGRUcdSxpump`
 
 ## Last scan
-- 11:40Z: 4 coins, 3 with pairs, 0 passed the market filters, 0 researched
+- 11:55Z: 6 coins, 5 with pairs, 0 passed the market filters, 0 researched
 
 ## Coins it looked at, and why it passed
+- 11:54Z COPIUM (MIGRATED, $574,047 mcap, $6,309 5m vol): PASS at conviction 3, PASS: no printed higher low, first resistance only 1.05x away, and no catalyst for a bottom buy on a fading-to-flat copium story. Blocker: "no higher low". (V1, V6, V13)  
+  CA `BAKsQrynzwadyACDMsg3J5R8a4CTvj1u7kEYyjq7pump`
+- 11:53Z Trench (FINAL_STRETCH, $22,959 mcap, $6,890 5m vol): REJECT, RugCheck danger: Creator history of rugged tokens  
+  CA `E2hYmgX5hst6V1KmGBtz46gQ33UtUarmiEMc6QRCpump`
+- 11:51Z FSDV15 (DIP, $1,861,876 mcap, $4,102 5m vol): PASS at conviction 3, PASS. Bottom buy on a theme running at 0.76x its hourly pace, with no named catalyst and 26 copies of the ticker. Crowd is leaving, not arriving (V1, V5, V13).  
+  CA `3BcJ4SSCfbxDMrWcUDucyCWxMjmy4M2ECCtvxu86pump`
+- 11:49Z RNV (FINAL_STRETCH, $16,781 mcap, $5,897 5m vol): REJECT, Bundles: 5 linked wallet cluster(s) hold 47.6% of supply (>20%) (V17)  
+  CA `A2nbXtQvvRMvWtifCkV8cYepwcC4M7iA1jVMwAh6pump`
+- 11:41Z Optimus (FINAL_STRETCH, $19,881 mcap, $19,767 5m vol): PASS at conviction 3, PASS — chasing spike. 5m up 248% at 5.8x the hourly pace, 11 minutes old, and 16 copies of the same name. Wait for the retrace and a printed higher low, or pass (V1, V6).  
+  CA `HvW8c77wWdiaRt921yhsZKnoaEMF33kcbe3rGdN415Jj`
 - 11:37Z PumpMeme (MIGRATED, $1,908,594 mcap, $3,777 5m vol): PASS at conviction 3, PASS — flow at 0.66x hourly pace, 18-copy vamp field, and the site doesn't show this CA. Blocker: "flow below pace" (V1, V3, V13).  
   CA `93uamrbDerKbUh8MSjNF1wDtxYvEUD1CS9BcHn1apump`
 - 11:24Z HOLD (MIGRATED, $104,624 mcap, $10,485 5m vol): PASS at conviction 2, PASS — HOLD's 5m flow is 0.57x its hourly pace, no printed higher low, and the "hold" theme runs at 0.76x pace across its copies. Blocker: flow below pace. Three blockers, one story: the crowd is leaving the spike. (V1, V6)  
@@ -86,27 +96,17 @@ Updated 2026-11-23T11:40:48Z (paper trading, never real money)
   CA `7cFiqdT46zs7ooHWLFiLSaSQKLMibtokh9dBinsspump`
 - 11:15Z NOHR (MIGRATED, $1,807,972 mcap, $4,948 5m vol): PASS at conviction 3, PASS. NO HUMAN is a 30%-off bounce with no catalyst, a 1.2x first target and $4.9k of 5m flow. Blocker: "target too close" plus "no catalyst" on a bottom buy. (V1, V6)  
   CA `Jd3NCawdFiDNWpLiTtsMqoeoBMjC1ZQMrMScRVzpump`
-- 11:09Z COPIUM (DIP, $473,566 mcap, $3,051 5m vol): PASS at conviction 3, PASS: COPIUM is a 13-copy meme with no catalyst, sellers at 5.6x buys over the hour, and its own site says "CA: awaiting confirmation." Blocker: "dead story" and "no catalyst" (V1, V6, V13).  
-  CA `BAKsQrynzwadyACDMsg3J5R8a4CTvj1u7kEYyjq7pump`
-- 11:07Z RAN (FINAL_STRETCH, $22,915 mcap, $29,909 5m vol): PASS at conviction 3, PASS. Chasing spike: RAN is up 246% on 5m at 9.5x hourly pace, six minutes old and still on the pump.fun curve. Blocker "chasing spike" (V1, V6).  
-  CA `AJguyBeAqmxvtfQfreR5f9izeWhrv7d4fv6D74eYpump`
-- 11:04Z FSDV15 (MIGRATED, $1,207,091 mcap, $7,342 5m vol): PASS at conviction 3, PASS: flow below pace (0.39x hourly), no printed higher low, 72% off the high in a 26-copy FSD field. Clean holders don't fix dead flow (V1, V6).  
-  CA `3BcJ4SSCfbxDMrWcUDucyCWxMjmy4M2ECCtvxu86pump`
-- 10:51Z PumpMeme (MIGRATED, $1,290,577 mcap, $4,879 5m vol): PASS at conviction 2, PASS: flow below pace, no printed higher low, $1.3M with no room, and the site doesn't show the CA. Farm-shaped copy of a crowded ticker (V1, V6, V13).  
-  CA `93uamrbDerKbUh8MSjNF1wDtxYvEUD1CS9BcHn1apump`
-- 10:42Z HYDRA (FINAL_STRETCH, $16,083 mcap, $11,277 5m vol): PASS at conviction 2, PASS: AI-agent LARP on a 2-hour-old domain, its own site says "Off air", and a 35-minute-old pump.fun coin already 29% off a 10x spike. Blocker: dead story / LARP (V1, V3, V6).  
-  CA `5AcZXQAACFygCefGMqfgnCPAxHGmNnPeYisuLyJfpump`
 
 ## What its skips did next (last 48h)
 A skip "ran" if the coin reached the first target (1.5x) from the skip price before a 20% drop, "dumped" if the drop came first. Sampled every 10 min, followed 6h.
-- flow below pace: blocked 33, ran 4, dumped 22, flat 0, open 7 (saving losses: keep it)
+- flow below pace: blocked 33, ran 4, dumped 23, flat 0, open 6 (saving losses: keep it)
   - ran: snowball up to 1.59x  
     CA `3D7YQcnXi6RMjWxheiE8VLuGXJTtgQkmyugGYvzjpump`
   - ran: OpenIndex up to 1.63x  
     CA `FuKY3dk7QmpbDdQRjzbjB3G6PiCuqKNvN4dAWDpwpump`
   - ran: hCAT up to 1.52x  
     CA `2FYs4vApfj4ErsggpFDfzMv1WvxnyiLtzNEj84mS6TLh`
-- too new / sniping: blocked 31, ran 7, dumped 24, flat 0, open 0 (saving losses: keep it)
+- too new / sniping: blocked 32, ran 7, dumped 25, flat 0, open 0 (saving losses: keep it)
   - ran: TA up to 1.77x  
     CA `DKUM8qywmi8X9RYK2wUgnTw8QKjh1nYDThZR1GXPpump`
   - ran: SANTAHAT up to 3x  
@@ -123,12 +123,12 @@ A skip "ran" if the coin reached the first target (1.5x) from the skip price bef
     CA `Dtx414D8jurspmB1jqJWsYU66pemoXRjQeXx7TC1pump`
   - ran: GIF up to 2.16x  
     CA `B6wM98qkQKP71mhPA48S7No6TxM4KaXdFojDTZeUpump`
-- RugCheck danger: blocked 16, ran 2, dumped 14, flat 0, open 0 (saving losses: keep it)
+- RugCheck danger: blocked 16, ran 2, dumped 13, flat 0, open 1 (saving losses: keep it)
   - ran: MIHAOMAS up to 1.62x  
     CA `3XsFunPdji9U1EgJXokZysw8SB3t74un89b6KLEVpump`
   - ran: Holdsgiving up to 2.96x  
     CA `A2jLaCC7v3VjXP8gEgCQNbTWEvizYuQ82jFEYfzipump`
-- falling knife / no higher low: blocked 14, ran 4, dumped 4, flat 5, open 1 (mixed)
+- falling knife / no higher low: blocked 15, ran 4, dumped 4, flat 5, open 2 (mixed)
   - ran: UrAnus up to 2.97x  
     CA `27u3diWofnXGUkddjLGhcy1nRssFKHW3RtNbpWzUpump`
   - ran: STREETS up to 1.73x  
@@ -194,16 +194,16 @@ Nothing has a positive edge after costs. All 166 settled coins averaged -11.3% n
 - [2026-11-02 20:25] I expected Slingoor, a clean MIGRATED leader with $25k of 5m flow at pace and a 0.77 buy share, to retest its $408k high from $304k. It never went green (0.98x peak) and hit the -20% stop in 2 minutes, a -$2.86 probe. My own thesis admitted there was no printed higher low after a peak only 6 minutes old, so this confirms the money-shape rule: buy share and flow are not structure (V1, V6). Next time a MIGRATED pullback with no higher low above the hourly low is a PASS with blocker "no higher low", not a probe. This is one loss, so it adds no new ban beyond the rule I already have.
 
 ## Meta right now
-The meta is split, and Trump isn't in it. No TRUMP coin shows up in the movers despite the dinner headlines, so the news is noise until flow shows up. Rising: a fresh pump.fun hold/holiday-pun cluster (HOLD, Holdsgiving, HYDRA) and the animal group (BOBCAT, $21k mcap, $37.6k 5m, +759% 1h). All of them are under 1.3h old and already up 117-759% in an hour, which is chase territory, so I'm watching, not entering. Real flow sits in mature PumpSwap names: FSDV15 (Tesla FSD v15, $4.1M mcap, $50.7k 5m, 77% buys) and UCASH (privacy, $817k mcap, 86% buys, 23h old). Fading: the loaf family (Loafing -66% 1h, loafcats zero buys), Trench (27% buys on the scan; the web's 68% is wrong, so I weighted the scan), and MINELIUS (-15% 1h at $14M). Setups to research now: UCASH first (holder, dev and bundle checks, $8.8k 5m is just under the $10k bar), then FSDV15 for original-vs-vamp and holder checks. HOLD and BOBCAT stay on watch as chase candidates only. This is paper, not advice.
+Not quiet, but no single meta either. The holiday-pun clones (HOLD, Holdsgiving, HYDRA) are mostly dead copies, except HOLD, which has real money ($10.5k 5m, 62% buys, $105k mcap, 1.5h old, flat at -2% over 1h). The cat/animal cluster is split: Loafing (+125%, 60% buys) and Pet The Cat (80% buys) are running on thin 5m volume (about $1.6k and $500), while BOBCAT (-69%) and Loaf Animals (-26%) are bleeding. PumpMeme ($1.9M, 56% buys) and MINELIUS ($14M, 51% buys) have real 5m flow but are older trading names, not new meta. Setup to research now: HOLD only, under the MIGRATED-style rules, with holder, dev and bundle checks before any entry; if it passes, it's a probe at most. I'm not using the web summary for calls: FSDV15 and UCASH aren't in the scan, and its 27% buys for Trench contradicts the scan's 54%. Trump headlines are noise until they show up in the movers. This is paper, not advice.
 
 ## Moving most in its scans, last 30 min (1h volume)
-- HOLD: $221,581 1h vol, $104,624 mcap, -2% 1h  
-  CA `9AiHB952pXVrHuct9m3RKWoWv4LG52p58FYjMvUkpump`
-- UCASH: $158,436 1h vol, $759,216 mcap, -17% 1h  
-  CA `7cFiqdT46zs7ooHWLFiLSaSQKLMibtokh9dBinsspump`
-- BOBCAT: $142,762 1h vol, $9,379 mcap, -67% 1h  
+- BOBCAT: $144,419 1h vol, $8,736 mcap, -69% 1h  
   CA `6GJQL9SciHTqVoRV9Rj3aAQePL4D8ngX64m2hMDnpump`
-- MINELIUS: $102,786 1h vol, $12,936,122 mcap, -14% 1h  
+- MINELIUS: $125,415 1h vol, $15,229,037 mcap, +8% 1h  
   CA `E9rWKjVhHMxQkxfREr7Li8Yy46rVcWiWHoKVQAe9pump`
+- RAN: $94,918 1h vol, $18,320 mcap, -35% 1h  
+  CA `AJguyBeAqmxvtfQfreR5f9izeWhrv7d4fv6D74eYpump`
 - PumpMeme: $69,491 1h vol, $1,922,678 mcap, +56% 1h  
   CA `93uamrbDerKbUh8MSjNF1wDtxYvEUD1CS9BcHn1apump`
+- FSDV15: $65,408 1h vol, $1,861,876 mcap, +30% 1h  
+  CA `3BcJ4SSCfbxDMrWcUDucyCWxMjmy4M2ECCtvxu86pump`
