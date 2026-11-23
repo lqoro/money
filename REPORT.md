@@ -1,13 +1,13 @@
 # Trencher live report
 
-Updated 2026-11-23T10:55:30Z (paper trading, never real money)
+Updated 2026-11-23T11:10:37Z (paper trading, never real money)
 
 - Equity: $74.23 (-25.8% vs $100 start)
 - Closed trades: 22, 3 wins
 - Fees paid: $14.78 (axiom $2.81, network $9.18, pool $2.66), plus $4.15 lost to slippage
 - New trades: WATCH-ONLY (scans and decides, buys nothing)
-- Brain: subscription, claude-haiku-5-5 for routine calls, claude-opus-5-5 for the daily review; 378 routine calls and 0 plan-limit hits in 48h
-- Watch log: 74 coins being followed, 2887 filed, 0 would-buys (6h follow, sampled every 2 min)
+- Brain: subscription, claude-haiku-5-5 for routine calls, claude-opus-5-5 for the daily review; 381 routine calls and 0 plan-limit hits in 48h
+- Watch log: 75 coins being followed, 2889 filed, 0 would-buys (6h follow, sampled every 2 min)
 
 ## Scorecard (after fees)
 - 22 closed, 3 won (14%), net $-25.79
@@ -73,9 +73,15 @@ Updated 2026-11-23T10:55:30Z (paper trading, never real money)
   CA `H4gHnZ3NCU7Z9XQwGX6YYJNyieGEW8pqwGRUcdSxpump`
 
 ## Last scan
-- 10:55Z: 4 coins, 3 with pairs, 0 passed the market filters, 0 researched
+- 11:09Z: 2 coins, 1 with pairs, 0 passed the market filters, 0 researched
 
 ## Coins it looked at, and why it passed
+- 11:09Z COPIUM (DIP, $473,566 mcap, $3,051 5m vol): PASS at conviction 3, PASS: COPIUM is a 13-copy meme with no catalyst, sellers at 5.6x buys over the hour, and its own site says "CA: awaiting confirmation." Blocker: "dead story" and "no catalyst" (V1, V6, V13).  
+  CA `BAKsQrynzwadyACDMsg3J5R8a4CTvj1u7kEYyjq7pump`
+- 11:07Z RAN (FINAL_STRETCH, $22,915 mcap, $29,909 5m vol): PASS at conviction 3, PASS. Chasing spike: RAN is up 246% on 5m at 9.5x hourly pace, six minutes old and still on the pump.fun curve. Blocker "chasing spike" (V1, V6).  
+  CA `AJguyBeAqmxvtfQfreR5f9izeWhrv7d4fv6D74eYpump`
+- 11:04Z FSDV15 (MIGRATED, $1,207,091 mcap, $7,342 5m vol): PASS at conviction 3, PASS: flow below pace (0.39x hourly), no printed higher low, 72% off the high in a 26-copy FSD field. Clean holders don't fix dead flow (V1, V6).  
+  CA `3BcJ4SSCfbxDMrWcUDucyCWxMjmy4M2ECCtvxu86pump`
 - 10:51Z PumpMeme (MIGRATED, $1,290,577 mcap, $4,879 5m vol): PASS at conviction 2, PASS: flow below pace, no printed higher low, $1.3M with no room, and the site doesn't show the CA. Farm-shaped copy of a crowded ticker (V1, V6, V13).  
   CA `93uamrbDerKbUh8MSjNF1wDtxYvEUD1CS9BcHn1apump`
 - 10:42Z HYDRA (FINAL_STRETCH, $16,083 mcap, $11,277 5m vol): PASS at conviction 2, PASS: AI-agent LARP on a 2-hour-old domain, its own site says "Off air", and a 35-minute-old pump.fun coin already 29% off a 10x spike. Blocker: dead story / LARP (V1, V3, V6).  
@@ -90,12 +96,6 @@ Updated 2026-11-23T10:55:30Z (paper trading, never real money)
   CA `Jd3NCawdFiDNWpLiTtsMqoeoBMjC1ZQMrMScRVzpump`
 - 10:23Z COPIUM (MIGRATED, $653,644 mcap, $3,283 5m vol): PASS at conviction 3, PASS: flow below pace (0.76x), and the first resistance is only 1.25x away. Copium is a 0.6-day-old joke with 13 copies. (V1, V6)  
   CA `BAKsQrynzwadyACDMsg3J5R8a4CTvj1u7kEYyjq7pump`
-- 10:22Z Holdsgiving (FINAL_STRETCH, $22,121 mcap, $3,902 5m vol): REJECT, RugCheck danger: Creator history of rugged tokens  
-  CA `A2jLaCC7v3VjXP8gEgCQNbTWEvizYuQ82jFEYfzipump`
-- 10:19Z FSDV15 (MIGRATED, $3,954,059 mcap, $48,544 5m vol): PASS at conviction 3, PASS — 5% off a $4.16M peak with the first resistance 1.05x away. Chasing a leader in a 26-copy vamp field on a theme the radar doesn't name. Blockers: "chasing", "target too close", "flow below pace" (V1, V6, V13).  
-  CA `3BcJ4SSCfbxDMrWcUDucyCWxMjmy4M2ECCtvxu86pump`
-- 10:08Z shrex (FINAL_STRETCH, $21,351 mcap, $8,168 5m vol): REJECT, RugCheck danger: Creator history of rugged tokens  
-  CA `3MaVaeLjrtWKWLDASSs27sP3bgvBLYqqbzQjYnbepump`
 
 ## What its skips did next (last 48h)
 A skip "ran" if the coin reached the first target (1.5x) from the skip price before a 20% drop, "dumped" if the drop came first. Sampled every 10 min, followed 6h.
@@ -106,7 +106,7 @@ A skip "ran" if the coin reached the first target (1.5x) from the skip price bef
     CA `FuKY3dk7QmpbDdQRjzbjB3G6PiCuqKNvN4dAWDpwpump`
   - ran: hCAT up to 1.52x  
     CA `2FYs4vApfj4ErsggpFDfzMv1WvxnyiLtzNEj84mS6TLh`
-- too new / sniping: blocked 30, ran 7, dumped 23, flat 0, open 0 (saving losses: keep it)
+- too new / sniping: blocked 31, ran 7, dumped 24, flat 0, open 0 (saving losses: keep it)
   - ran: TA up to 1.77x  
     CA `DKUM8qywmi8X9RYK2wUgnTw8QKjh1nYDThZR1GXPpump`
   - ran: SANTAHAT up to 3x  
@@ -154,13 +154,9 @@ A skip "ran" if the coin reached the first target (1.5x) from the skip price bef
     CA `BCTwG3LDhNcthcK374aWQfAzLYGRXDu1apmrqw3Tpump`
   - ran: Mfer up to 1.55x  
     CA `9tX1UpBGeNqMb1VqqzVumwzW71ybsNZFyWKYiL8Ppump`
-- other: blocked 7, ran 3, dumped 4, flat 0, open 0 (mixed)
-  - ran: ZOL up to 1.64x  
-    CA `AQfw8J74V17erZsmMz4oK474eVLBaP44gD33vVbhtHo5`
-  - ran: CATEGIVING up to 1.81x  
-    CA `APa2jK3ZRK9XhuKHGXSFNDohfU5RfZZKajiv26qSvX2X`
-  - ran: task up to 1.61x  
-    CA `BJeEE9WCP1HZqT1D3heD9Do96D4dnEcNoDHspvQapump`
+- thin 5m volume: blocked 7, ran 1, dumped 3, flat 0, open 3 (saving losses: keep it)
+  - ran: chud up to 1.55x  
+    CA `EV7J2QaPXPytSkM1LD9GPRkgAbmSEr9R3kYiXBzbpump`
 
 ## Daily review (2026-11-22, claude-opus-5-5)
 Nothing has a positive edge after costs. All 166 settled coins averaged -11.3% net under the simple plan, and no setup or stage was positive. The closest were FINAL_STRETCH at -3.3% (n=21) and DIP at -5.9% (n=20). Both look slightly positive before costs (about +6.7% and +3.6%), but with ~20 samples the error bar is roughly ±13 points, and some coins are logged more than once, so both are noise for now. The biggest loss is the 9.8% average round-trip cost on a $10 buy: at that cost, the simple plan only breaks even if about 43% of coins hit 1.5x before -20%. Overall only 23.5% did, and the best setup (FINAL_STRETCH) managed 38.1%. I can't answer whether the routine model's would-buys beat its passes, because it logged zero would-buys in 24h out of 99 coins it reviewed. The coins it passed on did lose more than the coins the checklist rejected (-15.2% vs -5.7%). That suggests passing them was correct, but also that clearing the checklist didn't pick better coins this day.
@@ -201,13 +197,13 @@ Nothing has a positive edge after costs. All 166 settled coins averaged -11.3% n
 The meta is split, and Trump isn't in it. No TRUMP coin shows up in the movers despite the dinner headlines, so the news is noise until flow shows up. Rising: a fresh pump.fun hold/holiday-pun cluster (HOLD, Holdsgiving, HYDRA) and the animal group (BOBCAT, $21k mcap, $37.6k 5m, +759% 1h). All of them are under 1.3h old and already up 117-759% in an hour, which is chase territory, so I'm watching, not entering. Real flow sits in mature PumpSwap names: FSDV15 (Tesla FSD v15, $4.1M mcap, $50.7k 5m, 77% buys) and UCASH (privacy, $817k mcap, 86% buys, 23h old). Fading: the loaf family (Loafing -66% 1h, loafcats zero buys), Trench (27% buys on the scan; the web's 68% is wrong, so I weighted the scan), and MINELIUS (-15% 1h at $14M). Setups to research now: UCASH first (holder, dev and bundle checks, $8.8k 5m is just under the $10k bar), then FSDV15 for original-vs-vamp and holder checks. HOLD and BOBCAT stay on watch as chase candidates only. This is paper, not advice.
 
 ## Moving most in its scans, last 30 min (1h volume)
-- HOLD: $370,010 1h vol, $110,264 mcap, +288% 1h  
-  CA `9AiHB952pXVrHuct9m3RKWoWv4LG52p58FYjMvUkpump`
-- UCASH: $247,162 1h vol, $817,214 mcap, +30% 1h  
-  CA `7cFiqdT46zs7ooHWLFiLSaSQKLMibtokh9dBinsspump`
-- MINELIUS: $94,165 1h vol, $14,222,725 mcap, -13% 1h  
+- FSDV15: $227,016 1h vol, $1,221,946 mcap, -58% 1h  
+  CA `3BcJ4SSCfbxDMrWcUDucyCWxMjmy4M2ECCtvxu86pump`
+- MINELIUS: $106,203 1h vol, $13,529,703 mcap, -18% 1h  
   CA `E9rWKjVhHMxQkxfREr7Li8Yy46rVcWiWHoKVQAe9pump`
 - PumpMeme: $85,962 1h vol, $1,290,577 mcap, -12% 1h  
   CA `93uamrbDerKbUh8MSjNF1wDtxYvEUD1CS9BcHn1apump`
-- Loafing: $85,452 1h vol, $10,253 mcap, -66% 1h  
-  CA `FHiMLpA7qSfAa1QWT9QEAe1SondRwgpmR2skjMAfpump`
+- HYDRA: $78,119 1h vol, $16,083 mcap, +581% 1h  
+  CA `5AcZXQAACFygCefGMqfgnCPAxHGmNnPeYisuLyJfpump`
+- Loaf: $65,022 1h vol, $16,587 mcap, -39% 1h  
+  CA `8Ugc1FHaeK6iXQrnUpztxhhNHqucFwaqC35A4Kjjpump`
