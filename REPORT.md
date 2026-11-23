@@ -1,13 +1,13 @@
 # Trencher live report
 
-Updated 2026-11-23T09:39:57Z (paper trading, never real money)
+Updated 2026-11-23T09:55:12Z (paper trading, never real money)
 
 - Equity: $74.23 (-25.8% vs $100 start)
 - Closed trades: 22, 3 wins
 - Fees paid: $14.78 (axiom $2.81, network $9.18, pool $2.66), plus $4.15 lost to slippage
 - New trades: WATCH-ONLY (scans and decides, buys nothing)
-- Brain: subscription, claude-haiku-5-5 for routine calls, claude-opus-5-5 for the daily review; 364 routine calls and 0 plan-limit hits in 48h
-- Watch log: 78 coins being followed, 2865 filed, 0 would-buys (6h follow, sampled every 2 min)
+- Brain: subscription, claude-haiku-5-5 for routine calls, claude-opus-5-5 for the daily review; 369 routine calls and 0 plan-limit hits in 48h
+- Watch log: 78 coins being followed, 2871 filed, 0 would-buys (6h follow, sampled every 2 min)
 
 ## Scorecard (after fees)
 - 22 closed, 3 won (14%), net $-25.79
@@ -73,9 +73,21 @@ Updated 2026-11-23T09:39:57Z (paper trading, never real money)
   CA `H4gHnZ3NCU7Z9XQwGX6YYJNyieGEW8pqwGRUcdSxpump`
 
 ## Last scan
-- 09:38Z: 6 coins, 5 with pairs, 0 passed the market filters, 0 researched
+- 09:54Z: 3 coins, 2 with pairs, 0 passed the market filters, 0 researched
 
 ## Coins it looked at, and why it passed
+- 09:53Z HOLD (FINAL_STRETCH, $23,970 mcap, $27,289 5m vol): REJECT, Dev holds 2.1% (>1%) (V13, V17)  
+  CA `9AiHB952pXVrHuct9m3RKWoWv4LG52p58FYjMvUkpump`
+- 09:50Z Loafing (MIGRATED, $39,473 mcap, $20,146 5m vol): PASS at conviction 2, PASS: chasing spike, 9 minutes old, first resistance 1.08x away. A 10-copy vamp field with a bigger copy already up. Let it print a higher low or go away. (V1, V6)  
+  CA `FHiMLpA7qSfAa1QWT9QEAe1SondRwgpmR2skjMAfpump`
+- 09:48Z Loaf (FINAL_STRETCH, $18,975 mcap, $36,258 5m vol): PASS at conviction 2, PASS. Loaf is 9 minutes old, up 674% in an hour and up 118% on the last 5m candle. That's a spike, not a pullback. Blocker: chasing spike (V1, V6).  
+  CA `8Ugc1FHaeK6iXQrnUpztxhhNHqucFwaqC35A4Kjjpump`
+- 09:46Z UCASH (DIP, $793,879 mcap, $9,857 5m vol): PASS at conviction 3, PASS: UCASH is a clean-looking DIP (64.5% off a $2.23M peak, higher lows printed, top 10 at 7.8%, no bundles), but its theme runs at 0.6x pace with no catalyst, the site is 0.9 days old and there's no GitHub. Blocker: "theme pace under 1x, no catalyst." (V1, V6, V13)  
+  CA `7cFiqdT46zs7ooHWLFiLSaSQKLMibtokh9dBinsspump`
+- 09:45Z Trench (FINAL_STRETCH, $19,063 mcap, $7,143 5m vol): REJECT, RugCheck danger: Creator history of rugged tokens  
+  CA `E2hYmgX5hst6V1KmGBtz46gQ33UtUarmiEMc6QRCpump`
+- 09:44Z NOHR (MIGRATED, $1,935,550 mcap, $4,885 5m vol): PASS at conviction 3, PASS: NO HUMAN is $1.9M with a 1.33x first resistance, no printed higher low, and 5m flow of $4.9k under the bar. Stay out (V1, V6).  
+  CA `Jd3NCawdFiDNWpLiTtsMqoeoBMjC1ZQMrMScRVzpump`
 - 09:38Z COPIUM (MIGRATED, $511,434 mcap, $3,130 5m vol): PASS at conviction 3, PASS: no higher low, flow under pace, theme at 0.55x pace, and the team's site doesn't show this CA. Blocker: "no higher low" (V1, V6).  
   CA `BAKsQrynzwadyACDMsg3J5R8a4CTvj1u7kEYyjq7pump`
 - 09:33Z FSDV15 (MIGRATED, $2,926,118 mcap, $3,423 5m vol): PASS at conviction 3, PASS: no breakout, flow below pace, 26 copies of the same ticker, and a 0.6-day-old site. Blocker: "no breakout" (V1, V6, V13).  
@@ -84,18 +96,6 @@ Updated 2026-11-23T09:39:57Z (paper trading, never real money)
   CA `A2jLaCC7v3VjXP8gEgCQNbTWEvizYuQ82jFEYfzipump`
 - 09:20Z PumpMeme (MIGRATED, $1,232,993 mcap, $5,404 5m vol): PASS at conviction 3, PASS: flow below pace, no printed higher low, and the project site doesn't show the CA. 18 copies of the word. Farm-shaped (V1, V3, V13).  
   CA `93uamrbDerKbUh8MSjNF1wDtxYvEUD1CS9BcHn1apump`
-- 09:11Z cateball (DIP, $1,140,094 mcap, $1,394 5m vol): REJECT, 5m volume $1,394 is dead (<$2,000) (V1)  
-  CA `4npJ3avxnGhCzKbWQpLrQXAHsjWzKr4JqBsbu5Fspump`
-- 09:01Z MINELIUS (MIGRATED, $16,433,709 mcap, $3,511 5m vol): PASS at conviction 2, PASS: MINELIUS is at the high, not in a pullback. Flow is half its hourly pace, the mcap is $16M, and a 0.7-day-old privacy-launchpad site with no GitHub is the whole story. (V1, V6, V13)  
-  CA `E9rWKjVhHMxQkxfREr7Li8Yy46rVcWiWHoKVQAe9pump`
-- 09:00Z UCASH (MIGRATED, $590,618 mcap, $17,559 5m vol): PASS at conviction 3, PASS: down 74% off a $2.2M peak with a bounce but no printed higher low, a 0.8-day-old domain, and a product still "in development." Deep dump, not a dip (V1, V6, V13).  
-  CA `7cFiqdT46zs7ooHWLFiLSaSQKLMibtokh9dBinsspump`
-- 08:58Z NOHR (MIGRATED, $1,933,002 mcap, $3,910 5m vol): PASS at conviction 3, PASS: NOHR flow is at 0.57x its hourly pace with $3.9k on the 5m, the first resistance is only 1.34x away, and the coin is above $1M. Blockers: "flow below pace", "target too close", "big cap, no room" (V1, V6).  
-  CA `Jd3NCawdFiDNWpLiTtsMqoeoBMjC1ZQMrMScRVzpump`
-- 08:53Z Shit (MIGRATED, $32,479 mcap, $5,051 5m vol): PASS at conviction 2, PASS: flow below pace, dead theme, 17 copies, bundle cluster 5.1%. Not a probe. (V1, V3, V6)  
-  CA `HSCin3B2j4ZSpypVqWB2sWJffVrrJZumfRRvrNTQpump`
-- 08:52Z COPIUM (MIGRATED, $554,116 mcap, $4,663 5m vol): PASS at conviction 3, PASS: COPIUM, a 32%-off-high bottom buy with no catalyst, first resistance only 1.05x away, and a site that doesn't show this CA. Blocker: "target too close" (V1, V6, V13).  
-  CA `BAKsQrynzwadyACDMsg3J5R8a4CTvj1u7kEYyjq7pump`
 
 ## What its skips did next (last 48h)
 A skip "ran" if the coin reached the first target (1.5x) from the skip price before a 20% drop, "dumped" if the drop came first. Sampled every 10 min, followed 6h.
@@ -106,7 +106,7 @@ A skip "ran" if the coin reached the first target (1.5x) from the skip price bef
     CA `FuKY3dk7QmpbDdQRjzbjB3G6PiCuqKNvN4dAWDpwpump`
   - ran: hCAT up to 1.52x  
     CA `2FYs4vApfj4ErsggpFDfzMv1WvxnyiLtzNEj84mS6TLh`
-- too new / sniping: blocked 27, ran 6, dumped 21, flat 0, open 0 (saving losses: keep it)
+- too new / sniping: blocked 29, ran 6, dumped 21, flat 0, open 2 (saving losses: keep it)
   - ran: TA up to 1.77x  
     CA `DKUM8qywmi8X9RYK2wUgnTw8QKjh1nYDThZR1GXPpump`
   - ran: SANTAHAT up to 3x  
@@ -123,14 +123,14 @@ A skip "ran" if the coin reached the first target (1.5x) from the skip price bef
     CA `Dtx414D8jurspmB1jqJWsYU66pemoXRjQeXx7TC1pump`
   - ran: GIF up to 2.16x  
     CA `B6wM98qkQKP71mhPA48S7No6TxM4KaXdFojDTZeUpump`
-- falling knife / no higher low: blocked 14, ran 4, dumped 4, flat 5, open 1 (mixed)
+- falling knife / no higher low: blocked 15, ran 4, dumped 4, flat 5, open 2 (mixed)
   - ran: UrAnus up to 2.97x  
     CA `27u3diWofnXGUkddjLGhcy1nRssFKHW3RtNbpWzUpump`
   - ran: STREETS up to 1.73x  
     CA `82mseLFauphc2yutbaDGgViahquJ1jGVLpyof99xpump`
   - ran: Fly up to 1.52x  
     CA `84tAcSK5L9kuQEVM8C8vMHXnfdA83nGBT2nYfSbPUcAc`
-- RugCheck danger: blocked 14, ran 1, dumped 12, flat 0, open 1 (saving losses: keep it)
+- RugCheck danger: blocked 15, ran 1, dumped 12, flat 0, open 2 (saving losses: keep it)
   - ran: MIHAOMAS up to 1.62x  
     CA `3XsFunPdji9U1EgJXokZysw8SB3t74un89b6KLEVpump`
 - brain paced: blocked 11, ran 4, dumped 6, flat 1, open 0 (mixed)
@@ -147,7 +147,7 @@ A skip "ran" if the coin reached the first target (1.5x) from the skip price bef
     CA `82mseLFauphc2yutbaDGgViahquJ1jGVLpyof99xpump`
   - ran: OpenIndex up to 1.63x  
     CA `FuKY3dk7QmpbDdQRjzbjB3G6PiCuqKNvN4dAWDpwpump`
-- dev share over 1%: blocked 9, ran 2, dumped 4, flat 2, open 1 (saving losses: keep it)
+- dev share over 1%: blocked 10, ran 2, dumped 4, flat 2, open 2 (saving losses: keep it)
   - ran: SANTINU up to 1.56x  
     CA `BCTwG3LDhNcthcK374aWQfAzLYGRXDu1apmrqw3Tpump`
   - ran: Mfer up to 1.55x  
@@ -196,16 +196,16 @@ Nothing has a positive edge after costs. All 166 settled coins averaged -11.3% n
 - [2026-11-02 20:25] I expected Slingoor, a clean MIGRATED leader with $25k of 5m flow at pace and a 0.77 buy share, to retest its $408k high from $304k. It never went green (0.98x peak) and hit the -20% stop in 2 minutes, a -$2.86 probe. My own thesis admitted there was no printed higher low after a peak only 6 minutes old, so this confirms the money-shape rule: buy share and flow are not structure (V1, V6). Next time a MIGRATED pullback with no higher low above the hourly low is a PASS with blocker "no higher low", not a probe. This is one loss, so it adds no new ban beyond the rule I already have.
 
 ## Meta right now
-The meta is thin and split, and the 1-hour numbers look better than the 5-minute ones. Fresh pump.fun joke tickers are the loudest group, but only "made by humans" (20k cap, $8.9k 5m, 63% buys) and Lioness (6.7k cap, 78% buys) show live buyers. task, TOGI and PumpGiving have zero 5m buys despite big hour volume, so they're fading. The one rising story name is WALLSTFLY (+48% 1h, 52% buys, $2.6k 5m), a Wall Street satire that is early and still below the $10k bar. Animals (cateball, GATO, ROCKET) are cooling, and the Trump dinner story is all headline with no TRUMP in the movers. Setups to research: "made by humans" first (5m is about $1.1k short of the bar), then WALLSTFLY only if 5m clears $10k; MINELIUS and PumpMeme are older, bigger caps with $5-6k 5m and 57-66% buys, so they're watch items, not entries. UCASH, FSDV15, NOHR and COPIUM don't appear in scan_movers, and the web summary's task and Milo numbers contradict the scan, so I weighted the scan. Holder, dev and bundle checks are still unrun on every coin.
+The meta is split, not one story. The loudest group is fresh pump.fun joke tickers. Trench ($7.1k 5m, 68% buys) and Holdsgiving ($3.9k 5m, 79% buys) are live but under 30 minutes old and up +247% and +629% in an hour, so they're chase territory and I won't snipe them. made by humans and MEO are fading (0% buys, -92% and -89% 1h). The second theme is mature PumpSwap names with real flow: UCASH (Umbra Cash, privacy, $10.5k 5m, 88% buys, +55% 1h) is the only mover clearing the $10k bar with strong buy skew, and PumpMeme and NOHR show 60-70% buys at $4-5k 5m. Animals and Trump are cooling: suscat, Lioness and Milo have buy skew on $100-$1k 5m, and TRUMP isn't in the movers despite the dinner headlines. Setups to research now: UCASH first (holder, dev and bundle checks, and whether the privacy theme holds), then Trench only if 5m stays above $10k without top-50 selling. WALLSTFLY is not a setup: the scan shows zero 5m volume and -98% over 1h, so the web summary's +48% claim is wrong and I weighted the scan.
 
 ## Moving most in its scans, last 30 min (1h volume)
-- Shit: $77,462 1h vol, $35,699 mcap, +64% 1h  
+- UCASH: $196,433 1h vol, $794,941 mcap, +55% 1h  
+  CA `7cFiqdT46zs7ooHWLFiLSaSQKLMibtokh9dBinsspump`
+- Loaf: $78,084 1h vol, $15,594 mcap, +536% 1h  
+  CA `8Ugc1FHaeK6iXQrnUpztxhhNHqucFwaqC35A4Kjjpump`
+- Shit: $76,486 1h vol, $20,233 mcap, -33% 1h  
   CA `HSCin3B2j4ZSpypVqWB2sWJffVrrJZumfRRvrNTQpump`
-- ⓗ: $72,269 1h vol, $2,620 mcap, -90% 1h  
-  CA `8wn4Ly4PVMeJPw3pxNxecVEZX69xjySt2RsDgyFmpump`
-- PumpMeme: $68,128 1h vol, $1,232,993 mcap, -5% 1h  
-  CA `93uamrbDerKbUh8MSjNF1wDtxYvEUD1CS9BcHn1apump`
-- Trench: $59,290 1h vol, $14,017 mcap, +152% 1h  
+- Trench: $75,864 1h vol, $19,341 mcap, +247% 1h  
   CA `E2hYmgX5hst6V1KmGBtz46gQ33UtUarmiEMc6QRCpump`
-- COPIUM: $49,882 1h vol, $520,366 mcap, -10% 1h  
-  CA `BAKsQrynzwadyACDMsg3J5R8a4CTvj1u7kEYyjq7pump`
+- Loafing: $74,180 1h vol, $39,473 mcap, +35% 1h  
+  CA `FHiMLpA7qSfAa1QWT9QEAe1SondRwgpmR2skjMAfpump`
