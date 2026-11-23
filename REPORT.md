@@ -1,13 +1,13 @@
 # Trencher live report
 
-Updated 2026-11-23T20:16:24Z (paper trading, never real money)
+Updated 2026-11-23T20:31:28Z (paper trading, never real money)
 
 - Equity: $74.23 (-25.8% vs $100 start)
 - Closed trades: 22, 3 wins
 - Fees paid: $14.78 (axiom $2.81, network $9.18, pool $2.66), plus $4.15 lost to slippage
 - New trades: WATCH-ONLY (scans and decides, buys nothing)
-- Brain: subscription, claude-haiku-5-5 for routine calls, claude-opus-5-5 for the daily review; 467 routine calls and 0 plan-limit hits in 48h
-- Watch log: 123 coins being followed, 2997 filed, 0 would-buys (6h follow, sampled every 2 min)
+- Brain: subscription, claude-haiku-5-5 for routine calls, claude-opus-5-5 for the daily review; 465 routine calls and 0 plan-limit hits in 48h
+- Watch log: 124 coins being followed, 3000 filed, 0 would-buys (6h follow, sampled every 2 min)
 
 ## Scorecard (after fees)
 - 22 closed, 3 won (14%), net $-25.79
@@ -73,9 +73,17 @@ Updated 2026-11-23T20:16:24Z (paper trading, never real money)
   CA `H4gHnZ3NCU7Z9XQwGX6YYJNyieGEW8pqwGRUcdSxpump`
 
 ## Last scan
-- 20:15Z: 3 coins, 3 with pairs, 0 passed the market filters, 0 researched
+- 20:30Z: 3 coins, 3 with pairs, 0 passed the market filters, 0 researched
 
 ## Coins it looked at, and why it passed
+- 20:25Z SCINU (MIGRATED, $75,058 mcap, $14,603 5m vol): REJECT, Dev holds 6.5% (>1%) (V13, V17)  
+  CA `GHWEB3FsfqDbNBt9QxVU7kXkUh1cX7kFk5NVDkgApump`
+- 20:23Z UCASH (MIGRATED, $832,169 mcap, $7,768 5m vol): PASS at conviction 3, PASS: "Umbra Cash" is a 1.3-day-old site riding the name of a real Solana privacy project, down 78% with flow under pace. Blocker: flow below pace (V1, V6, V13).  
+  CA `7cFiqdT46zs7ooHWLFiLSaSQKLMibtokh9dBinsspump`
+- 20:21Z NIVI (MIGRATED, $408,144 mcap, $119,459 5m vol): REJECT, Top 10 hold 41.3% ex-pool (>25%) (V13)  
+  CA `GejbZVwcf9yAKeUzBcJYzDUuZN3WRtdV5aTW5BZzpump`
+- 20:21Z Doomcat (FINAL_STRETCH, $15,908 mcap, $6,353 5m vol): PASS at conviction 3, PASS: 14-copy Doomcat field, theme flow at 0.42x pace, 5m $6.3k under $10k, and no higher low printed yet. The crowd is splitting, not arriving (V1, V3, V6).  
+  CA `EiQ1JvEUZCXN5kQi2UdS4CdQapidqC7MCXd5sRTPpump`
 - 20:14Z COPIUM (MIGRATED, $814,626 mcap, $3,786 5m vol): PASS at conviction 3, PASS. The project's own site doesn't show this CA, the domain is one day old, and there's no catalyst. The 23.7% dip has no breakout, and 5m flow is $3.8k. Blocker: no catalyst / dead story (V3, V6, V13).  
   CA `BAKsQrynzwadyACDMsg3J5R8a4CTvj1u7kEYyjq7pump`
 - 20:13Z JENSEN (DIP, $1,018,539 mcap, $2,879 5m vol): REJECT, Dip with fading attention is a falling knife, not a dip (5m at 0.23x the hour's pace, under 0.6x)  
@@ -88,37 +96,29 @@ Updated 2026-11-23T20:16:24Z (paper trading, never real money)
   CA `ToDWKzWCNCECx3ukahtwUXVqFbHyKRNag7RJrDbpump`
 - 19:57Z PumpMeme (MIGRATED, $444,890 mcap, $1,978 5m vol): REJECT, 5m volume $1,978 is dead (<$2,000) (V1)  
   CA `93uamrbDerKbUh8MSjNF1wDtxYvEUD1CS9BcHn1apump`
-- 19:56Z zPUSSY (FINAL_STRETCH, $26,749 mcap, $87,612 5m vol): PASS at conviction 2, PASS: chasing spike. zPUSSY is up 249% on 5m at 11.8x its hourly pace, six minutes old, with zero narrative mentions and no X or site. It's a copy in a 29-coin field. (V1, V6)  
-  CA `9Ma5dCc3q3LvrgDPnLHmqxGxzz6ekMwsyYFSu18o2DXL`
-- 19:53Z HI (MIGRATED, $68,475 mcap, $44,521 5m vol): PASS at conviction 2, PASS: chasing spike, too new. Up 169% on 5m with 3x hourly pace, 32 min after migration, no story behind it (V1, V6).  
-  CA `Bp6Aen8xiLqhKLHwb27dViwAsojLjhoSPhzpEZm7UmqC`
-- 19:50Z Misifú (FINAL_STRETCH, $15,964 mcap, $2,149 5m vol): REJECT, Top 10 hold 27.1% ex-pool (>25%) (V13)  
-  CA `6QNxWALwXWdCtbBHFQthmzrz5zZnYBsPo4YS5SVCpump`
-- 19:38Z HOGE (MIGRATED, $560,777 mcap, $3,785 5m vol): REJECT, Bundles: 9 linked wallet cluster(s) hold 27.7% of supply (>20%) (V17)  
-  CA `FVzqGqRmr4UH1Fif6dewmwbJ1p4YUZCu8dcw4Efopump`
 
 ## What its skips did next (last 48h)
 A skip "ran" if the coin reached the first target (1.5x) from the skip price before a 20% drop, "dumped" if the drop came first. Sampled every 10 min, followed 6h.
-- too new / sniping: blocked 38, ran 8, dumped 29, flat 0, open 1 (saving losses: keep it)
-  - ran: SANTAHAT up to 3x  
-    CA `5fWLSMA5HoK9W4VoTMi4c3qjyu3N2LsKRSM8Ffpgpump`
-  - ran: KYC up to 2.37x  
-    CA `47YCrfUmSQUF9vnPsPGSzrmTcxttdRAWejCMkhrrpump`
-  - ran: Wojak up to 4.29x  
-    CA `5eiLc9r79PkJquiFvYWdXJYtGNRjTpzot8MR7Z4Ppump`
-- flow below pace: blocked 36, ran 5, dumped 29, flat 0, open 2 (saving losses: keep it)
+- flow below pace: blocked 38, ran 5, dumped 29, flat 0, open 4 (saving losses: keep it)
   - ran: snowball up to 1.59x  
     CA `3D7YQcnXi6RMjWxheiE8VLuGXJTtgQkmyugGYvzjpump`
   - ran: OpenIndex up to 1.63x  
     CA `FuKY3dk7QmpbDdQRjzbjB3G6PiCuqKNvN4dAWDpwpump`
   - ran: hCAT up to 1.52x  
     CA `2FYs4vApfj4ErsggpFDfzMv1WvxnyiLtzNEj84mS6TLh`
+- too new / sniping: blocked 38, ran 8, dumped 30, flat 0, open 0 (saving losses: keep it)
+  - ran: SANTAHAT up to 3x  
+    CA `5fWLSMA5HoK9W4VoTMi4c3qjyu3N2LsKRSM8Ffpgpump`
+  - ran: KYC up to 2.37x  
+    CA `47YCrfUmSQUF9vnPsPGSzrmTcxttdRAWejCMkhrrpump`
+  - ran: Wojak up to 4.29x  
+    CA `5eiLc9r79PkJquiFvYWdXJYtGNRjTpzot8MR7Z4Ppump`
 - near the high / chasing: blocked 31, ran 2, dumped 27, flat 1, open 1 (saving losses: keep it)
   - ran: CUNTS up to 1.61x  
     CA `7CvW68FD9KjNYGByfykhaNps7VNPLN8dFwMRfmgQpump`
   - ran: SANTA up to 1.85x  
     CA `tZsjFu2CH1R23wEpbfXAYGc2KUaVrUbwofCNNNqpump`
-- top 10 over 25%: blocked 24, ran 2, dumped 18, flat 1, open 3 (saving losses: keep it)
+- top 10 over 25%: blocked 25, ran 2, dumped 19, flat 1, open 3 (saving losses: keep it)
   - ran: GIF up to 2.16x  
     CA `B6wM98qkQKP71mhPA48S7No6TxM4KaXdFojDTZeUpump`
   - ran: SNP6900 up to 2.76x  
@@ -207,9 +207,9 @@ The trenches are split, not one story. Fresh pump.fun launches with real 5-minut
   CA `DsuztYTs2PnXRy4NrcVRzQRK1jbvvntPGSjCbdpMpump`
 - FIONA: $270,443 1h vol, $2,906,043 mcap, +17% 1h  
   CA `B34nXKzCgsJb9ChLuSHPRpXLE3WFSWyeT8Cqkzzmpump`
-- HI: $174,408 1h vol, $71,456 mcap, +129% 1h  
-  CA `Bp6Aen8xiLqhKLHwb27dViwAsojLjhoSPhzpEZm7UmqC`
+- NIVI: $173,408 1h vol, $408,144 mcap, +914% 1h  
+  CA `GejbZVwcf9yAKeUzBcJYzDUuZN3WRtdV5aTW5BZzpump`
 - JENSEN: $148,245 1h vol, $1,018,539 mcap, -18% 1h  
   CA `HKiMA2mKQHU2cjfZ4Kbmru5GBGCauSNqPtpu8cfmpump`
-- BTC: $107,608 1h vol, $183,823 mcap, +406% 1h  
-  CA `ToDWKzWCNCECx3ukahtwUXVqFbHyKRNag7RJrDbpump`
+- tap: $109,777 1h vol, $6,905 mcap, -76% 1h  
+  CA `Bk1kfYeoS9arD5Cq6WtNCGSHqVkk9ZhDA7kUVARSpump`
