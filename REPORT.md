@@ -1,13 +1,13 @@
 # Trencher live report
 
-Updated 2026-11-23T09:55:12Z (paper trading, never real money)
+Updated 2026-11-23T10:10:15Z (paper trading, never real money)
 
 - Equity: $74.23 (-25.8% vs $100 start)
 - Closed trades: 22, 3 wins
 - Fees paid: $14.78 (axiom $2.81, network $9.18, pool $2.66), plus $4.15 lost to slippage
 - New trades: WATCH-ONLY (scans and decides, buys nothing)
-- Brain: subscription, claude-haiku-5-5 for routine calls, claude-opus-5-5 for the daily review; 369 routine calls and 0 plan-limit hits in 48h
-- Watch log: 78 coins being followed, 2871 filed, 0 would-buys (6h follow, sampled every 2 min)
+- Brain: subscription, claude-haiku-5-5 for routine calls, claude-opus-5-5 for the daily review; 370 routine calls and 0 plan-limit hits in 48h
+- Watch log: 76 coins being followed, 2876 filed, 0 would-buys (6h follow, sampled every 2 min)
 
 ## Scorecard (after fees)
 - 22 closed, 3 won (14%), net $-25.79
@@ -73,9 +73,15 @@ Updated 2026-11-23T09:55:12Z (paper trading, never real money)
   CA `H4gHnZ3NCU7Z9XQwGX6YYJNyieGEW8pqwGRUcdSxpump`
 
 ## Last scan
-- 09:54Z: 3 coins, 2 with pairs, 0 passed the market filters, 0 researched
+- 10:09Z: 5 coins, 4 with pairs, 0 passed the market filters, 0 researched
 
 ## Coins it looked at, and why it passed
+- 10:08Z shrex (FINAL_STRETCH, $21,351 mcap, $8,168 5m vol): REJECT, RugCheck danger: Creator history of rugged tokens  
+  CA `3MaVaeLjrtWKWLDASSs27sP3bgvBLYqqbzQjYnbepump`
+- 10:05Z PumpMeme (MIGRATED, $1,364,787 mcap, $10,104 5m vol): PASS at conviction 3, PASS. Big cap, no room: the prior high is only 1.32x away at $1.81M, and the 5m is down 15% with no breakout printing. Fan-card site on a 5-hour-old domain with the CA still "TBA". (V1, V6)  
+  CA `93uamrbDerKbUh8MSjNF1wDtxYvEUD1CS9BcHn1apump`
+- 09:57Z GATO (MIGRATED, $1,879,130 mcap, $2,626 5m vol): REJECT, Dev holds 2.7% (>1%) (V13, V17)  
+  CA `HsprHxBRgiVaQdRf3TnKNuZZtaX9JUSPgMFdAkk6pump`
 - 09:53Z HOLD (FINAL_STRETCH, $23,970 mcap, $27,289 5m vol): REJECT, Dev holds 2.1% (>1%) (V13, V17)  
   CA `9AiHB952pXVrHuct9m3RKWoWv4LG52p58FYjMvUkpump`
 - 09:50Z Loafing (MIGRATED, $39,473 mcap, $20,146 5m vol): PASS at conviction 2, PASS: chasing spike, 9 minutes old, first resistance 1.08x away. A 10-copy vamp field with a bigger copy already up. Let it print a higher low or go away. (V1, V6)  
@@ -90,12 +96,6 @@ Updated 2026-11-23T09:55:12Z (paper trading, never real money)
   CA `Jd3NCawdFiDNWpLiTtsMqoeoBMjC1ZQMrMScRVzpump`
 - 09:38Z COPIUM (MIGRATED, $511,434 mcap, $3,130 5m vol): PASS at conviction 3, PASS: no higher low, flow under pace, theme at 0.55x pace, and the team's site doesn't show this CA. Blocker: "no higher low" (V1, V6).  
   CA `BAKsQrynzwadyACDMsg3J5R8a4CTvj1u7kEYyjq7pump`
-- 09:33Z FSDV15 (MIGRATED, $2,926,118 mcap, $3,423 5m vol): PASS at conviction 3, PASS: no breakout, flow below pace, 26 copies of the same ticker, and a 0.6-day-old site. Blocker: "no breakout" (V1, V6, V13).  
-  CA `3BcJ4SSCfbxDMrWcUDucyCWxMjmy4M2ECCtvxu86pump`
-- 09:27Z Holdsgiving (FINAL_STRETCH, $18,019 mcap, $3,896 5m vol): REJECT, RugCheck danger: Creator history of rugged tokens  
-  CA `A2jLaCC7v3VjXP8gEgCQNbTWEvizYuQ82jFEYfzipump`
-- 09:20Z PumpMeme (MIGRATED, $1,232,993 mcap, $5,404 5m vol): PASS at conviction 3, PASS: flow below pace, no printed higher low, and the project site doesn't show the CA. 18 copies of the word. Farm-shaped (V1, V3, V13).  
-  CA `93uamrbDerKbUh8MSjNF1wDtxYvEUD1CS9BcHn1apump`
 
 ## What its skips did next (last 48h)
 A skip "ran" if the coin reached the first target (1.5x) from the skip price before a 20% drop, "dumped" if the drop came first. Sampled every 10 min, followed 6h.
@@ -106,7 +106,7 @@ A skip "ran" if the coin reached the first target (1.5x) from the skip price bef
     CA `FuKY3dk7QmpbDdQRjzbjB3G6PiCuqKNvN4dAWDpwpump`
   - ran: hCAT up to 1.52x  
     CA `2FYs4vApfj4ErsggpFDfzMv1WvxnyiLtzNEj84mS6TLh`
-- too new / sniping: blocked 29, ran 6, dumped 21, flat 0, open 2 (saving losses: keep it)
+- too new / sniping: blocked 29, ran 6, dumped 22, flat 0, open 1 (saving losses: keep it)
   - ran: TA up to 1.77x  
     CA `DKUM8qywmi8X9RYK2wUgnTw8QKjh1nYDThZR1GXPpump`
   - ran: SANTAHAT up to 3x  
@@ -123,6 +123,9 @@ A skip "ran" if the coin reached the first target (1.5x) from the skip price bef
     CA `Dtx414D8jurspmB1jqJWsYU66pemoXRjQeXx7TC1pump`
   - ran: GIF up to 2.16x  
     CA `B6wM98qkQKP71mhPA48S7No6TxM4KaXdFojDTZeUpump`
+- RugCheck danger: blocked 16, ran 1, dumped 13, flat 0, open 2 (saving losses: keep it)
+  - ran: MIHAOMAS up to 1.62x  
+    CA `3XsFunPdji9U1EgJXokZysw8SB3t74un89b6KLEVpump`
 - falling knife / no higher low: blocked 15, ran 4, dumped 4, flat 5, open 2 (mixed)
   - ran: UrAnus up to 2.97x  
     CA `27u3diWofnXGUkddjLGhcy1nRssFKHW3RtNbpWzUpump`
@@ -130,9 +133,6 @@ A skip "ran" if the coin reached the first target (1.5x) from the skip price bef
     CA `82mseLFauphc2yutbaDGgViahquJ1jGVLpyof99xpump`
   - ran: Fly up to 1.52x  
     CA `84tAcSK5L9kuQEVM8C8vMHXnfdA83nGBT2nYfSbPUcAc`
-- RugCheck danger: blocked 15, ran 1, dumped 12, flat 0, open 2 (saving losses: keep it)
-  - ran: MIHAOMAS up to 1.62x  
-    CA `3XsFunPdji9U1EgJXokZysw8SB3t74un89b6KLEVpump`
 - brain paced: blocked 11, ran 4, dumped 6, flat 1, open 0 (mixed)
   - ran: STREETS up to 1.73x  
     CA `82mseLFauphc2yutbaDGgViahquJ1jGVLpyof99xpump`
@@ -147,11 +147,13 @@ A skip "ran" if the coin reached the first target (1.5x) from the skip price bef
     CA `82mseLFauphc2yutbaDGgViahquJ1jGVLpyof99xpump`
   - ran: OpenIndex up to 1.63x  
     CA `FuKY3dk7QmpbDdQRjzbjB3G6PiCuqKNvN4dAWDpwpump`
-- dev share over 1%: blocked 10, ran 2, dumped 4, flat 2, open 2 (saving losses: keep it)
+- dev share over 1%: blocked 10, ran 3, dumped 4, flat 1, open 2 (mixed)
   - ran: SANTINU up to 1.56x  
     CA `BCTwG3LDhNcthcK374aWQfAzLYGRXDu1apmrqw3Tpump`
   - ran: Mfer up to 1.55x  
     CA `9tX1UpBGeNqMb1VqqzVumwzW71ybsNZFyWKYiL8Ppump`
+  - ran: HOLD up to 2.64x  
+    CA `9AiHB952pXVrHuct9m3RKWoWv4LG52p58FYjMvUkpump`
 - other: blocked 7, ran 3, dumped 3, flat 0, open 1 (mixed)
   - ran: ZOL up to 1.64x  
     CA `AQfw8J74V17erZsmMz4oK474eVLBaP44gD33vVbhtHo5`
@@ -203,9 +205,9 @@ The meta is split, not one story. The loudest group is fresh pump.fun joke ticke
   CA `7cFiqdT46zs7ooHWLFiLSaSQKLMibtokh9dBinsspump`
 - Loaf: $78,084 1h vol, $15,594 mcap, +536% 1h  
   CA `8Ugc1FHaeK6iXQrnUpztxhhNHqucFwaqC35A4Kjjpump`
-- Shit: $76,486 1h vol, $20,233 mcap, -33% 1h  
-  CA `HSCin3B2j4ZSpypVqWB2sWJffVrrJZumfRRvrNTQpump`
 - Trench: $75,864 1h vol, $19,341 mcap, +247% 1h  
   CA `E2hYmgX5hst6V1KmGBtz46gQ33UtUarmiEMc6QRCpump`
 - Loafing: $74,180 1h vol, $39,473 mcap, +35% 1h  
   CA `FHiMLpA7qSfAa1QWT9QEAe1SondRwgpmR2skjMAfpump`
+- PumpMeme: $68,583 1h vol, $1,382,833 mcap, +17% 1h  
+  CA `93uamrbDerKbUh8MSjNF1wDtxYvEUD1CS9BcHn1apump`
