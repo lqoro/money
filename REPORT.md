@@ -1,13 +1,13 @@
 # Trencher live report
 
-Updated 2026-11-23T04:07:34Z (paper trading, never real money)
+Updated 2026-11-23T04:22:37Z (paper trading, never real money)
 
 - Equity: $74.23 (-25.8% vs $100 start)
 - Closed trades: 22, 3 wins
 - Fees paid: $14.78 (axiom $2.81, network $9.18, pool $2.66), plus $4.15 lost to slippage
 - New trades: WATCH-ONLY (scans and decides, buys nothing)
-- Brain: subscription, claude-haiku-5-5 for routine calls, claude-opus-5-5 for the daily review; 310 routine calls and 0 plan-limit hits in 48h
-- Watch log: 108 coins being followed, 2767 filed, 0 would-buys (6h follow, sampled every 2 min)
+- Brain: subscription, claude-haiku-5-5 for routine calls, claude-opus-5-5 for the daily review; 312 routine calls and 0 plan-limit hits in 48h
+- Watch log: 106 coins being followed, 2772 filed, 0 would-buys (6h follow, sampled every 2 min)
 
 ## Scorecard (after fees)
 - 22 closed, 3 won (14%), net $-25.79
@@ -73,9 +73,15 @@ Updated 2026-11-23T04:07:34Z (paper trading, never real money)
   CA `H4gHnZ3NCU7Z9XQwGX6YYJNyieGEW8pqwGRUcdSxpump`
 
 ## Last scan
-- 04:07Z: 3 coins, 3 with pairs, 0 passed the market filters, 0 researched
+- 04:21Z: 1 coins, 1 with pairs, 0 passed the market filters, 0 researched
 
 ## Coins it looked at, and why it passed
+- 04:20Z COPIUM (DIP, $428,604 mcap, $3,269 5m vol): PASS at conviction 3, PASS: COPIUM is a DIP with a clean holder table, but it fails the bottom-buy rule. Theme pace is 0.86x, no catalyst, and the site says the CA is "AWAITING CONFIRMATION" on a 7-hour-old domain. (V1, V3, V13)  
+  CA `BAKsQrynzwadyACDMsg3J5R8a4CTvj1u7kEYyjq7pump`
+- 04:13Z stuffinu (FINAL_STRETCH, $22,926 mcap, $31,632 5m vol): REJECT, Top 10 hold 25.5% ex-pool (>25%) (V13)  
+  CA `4UD1GNt8aCzH1Y9afWkL6MD9u3whwGWFrT4DF8Tjpump`
+- 04:08Z Hedge (MIGRATED, $31,702 mcap, $2,442 5m vol): PASS at conviction 2, PASS — 88% off a $255k high, theme flow at 0.61x pace, 14-copy "hedge" field, and a 1.8-day-old site that doesn't show this CA. Falling knife, not a dip (V1, V6, V13).  
+  CA `7S8k5qQfP2M48ixDLxDh6AgtwDo92eKxZ7WNmZt7pump`
 - 04:01Z cateball (MIGRATED, $1,636,855 mcap, $1,897 5m vol): REJECT, 5m volume $1,897 is dead (<$2,000) (V1)  
   CA `4npJ3avxnGhCzKbWQpLrQXAHsjWzKr4JqBsbu5Fspump`
 - 03:59Z tailinu (FINAL_STRETCH, $24,886 mcap, $25,276 5m vol): PASS at conviction 3, PASS: chasing spike. tailinu is 6 minutes old, up 239% on the 5m at 9.2x hourly pace, with no printed higher low and no story behind the name. Watch it, don't buy it (V1, V6).  
@@ -90,22 +96,14 @@ Updated 2026-11-23T04:07:34Z (paper trading, never real money)
   CA `84tAcSK5L9kuQEVM8C8vMHXnfdA83nGBT2nYfSbPUcAc`
 - 03:48Z PEACH (DIP, $572,637 mcap, $13,262 5m vol): REJECT, Dip with fading attention is a falling knife, not a dip (5m at 0.30x the hour's pace, under 0.6x)  
   CA `61yuZf1JyTKqoCfS784SusFGVekA6YUsGTfDg3o6pump`
-- 03:47Z Wolf (FINAL_STRETCH, $16,450 mcap, $41,848 5m vol): PASS at conviction 2, PASS: chasing spike, +74% in 5m at 8x pace with no retrace or higher low. Largest bundle 6.7% and top 10 at 16.3%. 14-copy "wolf" field with no radar story. Prior high only 1.3x away. Farm-shaped until proven otherwise. (V1, V6, V13)  
-  CA `6isMx9m1oxyAng5pXkwKDq4a78G5TjiDgve3MvMCpump`
-- 03:44Z MINELIUS (MIGRATED, $6,883,292 mcap, $5,551 5m vol): PASS at conviction 2, PASS: flow at 0.71x pace on a $6.9M MIGRATED coin, with no printed higher low and no catalyst. Blocker "flow below pace". (V1, V6)  
-  CA `E9rWKjVhHMxQkxfREr7Li8Yy46rVcWiWHoKVQAe9pump`
-- 03:42Z UCASH (MIGRATED, $1,421,750 mcap, $7,666 5m vol): PASS at conviction 3, PASS: UCASH is a MIGRATED pullback with flow below pace, no printed higher low, $1.4M mcap with first resistance only 1.37x away, and a 14-hour-old privacy-wallet site with no GitHub. (V1, V3, V6)  
-  CA `7cFiqdT46zs7ooHWLFiLSaSQKLMibtokh9dBinsspump`
 
 ## What its skips did next (last 48h)
 A skip "ran" if the coin reached the first target (1.5x) from the skip price before a 20% drop, "dumped" if the drop came first. Sampled every 10 min, followed 6h.
-- flow below pace: blocked 26, ran 3, dumped 18, flat 0, open 5 (saving losses: keep it)
+- flow below pace: blocked 26, ran 2, dumped 18, flat 0, open 6 (saving losses: keep it)
   - ran: snowball up to 1.59x  
     CA `3D7YQcnXi6RMjWxheiE8VLuGXJTtgQkmyugGYvzjpump`
   - ran: OpenIndex up to 1.63x  
     CA `FuKY3dk7QmpbDdQRjzbjB3G6PiCuqKNvN4dAWDpwpump`
-  - ran: Hedge up to 1.58x  
-    CA `7S8k5qQfP2M48ixDLxDh6AgtwDo92eKxZ7WNmZt7pump`
 - too new / sniping: blocked 24, ran 6, dumped 18, flat 0, open 0 (saving losses: keep it)
   - ran: TA up to 1.77x  
     CA `DKUM8qywmi8X9RYK2wUgnTw8QKjh1nYDThZR1GXPpump`
@@ -118,7 +116,7 @@ A skip "ran" if the coin reached the first target (1.5x) from the skip price bef
     CA `7CvW68FD9KjNYGByfykhaNps7VNPLN8dFwMRfmgQpump`
   - ran: SANTA up to 1.85x  
     CA `tZsjFu2CH1R23wEpbfXAYGc2KUaVrUbwofCNNNqpump`
-- top 10 over 25%: blocked 17, ran 2, dumped 13, flat 0, open 2 (saving losses: keep it)
+- top 10 over 25%: blocked 18, ran 2, dumped 13, flat 0, open 3 (saving losses: keep it)
   - ran: :) up to 1.65x  
     CA `Dtx414D8jurspmB1jqJWsYU66pemoXRjQeXx7TC1pump`
   - ran: GIF up to 2.16x  
@@ -195,11 +193,11 @@ The trenches are running fresh pump.fun joke launches, the one theme with real f
 ## Moving most in its scans, last 30 min (1h volume)
 - Fly: $1,345,836 1h vol, $213,061 mcap, +628% 1h  
   CA `84tAcSK5L9kuQEVM8C8vMHXnfdA83nGBT2nYfSbPUcAc`
-- PEACH: $526,262 1h vol, $572,637 mcap, +1540% 1h  
-  CA `61yuZf1JyTKqoCfS784SusFGVekA6YUsGTfDg3o6pump`
 - hCAT: $271,890 1h vol, $105,969 mcap, +146% 1h  
   CA `2FYs4vApfj4ErsggpFDfzMv1WvxnyiLtzNEj84mS6TLh`
-- UCASH: $110,687 1h vol, $1,427,951 mcap, +2% 1h  
-  CA `7cFiqdT46zs7ooHWLFiLSaSQKLMibtokh9dBinsspump`
 - BIRDMAGA: $104,034 1h vol, $225,108 mcap, +6% 1h  
   CA `J9AvtJRDreHG8B8PnW4tNMvH5c2c1jxfUfDvjrWtpump`
+- FSDV15: $90,354 1h vol, $2,597,809 mcap, +12% 1h  
+  CA `3BcJ4SSCfbxDMrWcUDucyCWxMjmy4M2ECCtvxu86pump`
+- HI: $78,037 1h vol, $2,109 mcap, -22% 1h  
+  CA `Ds6KgRi5XyWtUcnXMrhUjrnwHnautwhKcbQVGjNWpump`
