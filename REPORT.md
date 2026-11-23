@@ -1,13 +1,13 @@
 # Trencher live report
 
-Updated 2026-11-23T07:39:03Z (paper trading, never real money)
+Updated 2026-11-23T07:54:15Z (paper trading, never real money)
 
 - Equity: $74.23 (-25.8% vs $100 start)
 - Closed trades: 22, 3 wins
 - Fees paid: $14.78 (axiom $2.81, network $9.18, pool $2.66), plus $4.15 lost to slippage
 - New trades: WATCH-ONLY (scans and decides, buys nothing)
-- Brain: subscription, claude-haiku-5-5 for routine calls, claude-opus-5-5 for the daily review; 344 routine calls and 0 plan-limit hits in 48h
-- Watch log: 91 coins being followed, 2831 filed, 0 would-buys (6h follow, sampled every 2 min)
+- Brain: subscription, claude-haiku-5-5 for routine calls, claude-opus-5-5 for the daily review; 346 routine calls and 0 plan-limit hits in 48h
+- Watch log: 89 coins being followed, 2835 filed, 0 would-buys (6h follow, sampled every 2 min)
 
 ## Scorecard (after fees)
 - 22 closed, 3 won (14%), net $-25.79
@@ -73,9 +73,13 @@ Updated 2026-11-23T07:39:03Z (paper trading, never real money)
   CA `H4gHnZ3NCU7Z9XQwGX6YYJNyieGEW8pqwGRUcdSxpump`
 
 ## Last scan
-- 07:38Z: 2 coins, 2 with pairs, 0 passed the market filters, 0 researched
+- 07:53Z: 4 coins, 4 with pairs, 0 passed the market filters, 0 researched
 
 ## Coins it looked at, and why it passed
+- 07:49Z PumpGiving (FINAL_STRETCH, $19,585 mcap, $15,408 5m vol): PASS at conviction 2, PASS — 17 minutes old, up 100% on the 5m candle with more sells than buys, inside a 14-copy joke field. That's a spike with no structure, not a setup (V1, V6). Blocker: chasing spike, too new.  
+  CA `A9HEXT7dAaky5TUKErNKK4f1TLauhWg3JFNXkZWTpump`
+- 07:48Z PumpMeme (MIGRATED, $1,300,119 mcap, $3,636 5m vol): REJECT, Top 10 hold 25.6% ex-pool (>25%) (V13)  
+  CA `93uamrbDerKbUh8MSjNF1wDtxYvEUD1CS9BcHn1apump`
 - 07:36Z WALLSTFLY (MIGRATED, $49,887 mcap, $2,740 5m vol): PASS at conviction 2, PASS: chasing a 1-hour-old fly at its high, on $2.7k of 5m volume at 0.44x pace, with four tickers in the field and a site that doesn't show the CA. Holders are clean, but the entry is the problem. (V1, V6, V13)  
   CA `2DQbV7hsqxKVWmFakXGGhBbNyY28tDJ9YuJkojYrpump`
 - 07:31Z MINELIUS (MIGRATED, $10,261,683 mcap, $4,964 5m vol): PASS at conviction 2, PASS: "chasing" and "big cap, no room". $10.3M mcap, 6% off a $10.9M high, $5k 5m flow under the $10k bar, top 10 at 23.8%, and a 0.6-day-old domain with no GitHub. A pass, not a probe (V1, V6, V13).  
@@ -92,10 +96,6 @@ Updated 2026-11-23T07:39:03Z (paper trading, never real money)
   CA `BJeEE9WCP1HZqT1D3heD9Do96D4dnEcNoDHspvQapump`
 - 07:03Z PumpMeme (MIGRATED, $1,455,981 mcap, $3,895 5m vol): REJECT, Top 10 hold 25.6% ex-pool (>25%) (V13)  
   CA `93uamrbDerKbUh8MSjNF1wDtxYvEUD1CS9BcHn1apump`
-- 06:58Z milky (FINAL_STRETCH, $25,877 mcap, $19,928 5m vol): PASS at conviction 3, PASS — milky is up 85% on 5m and 1145% in the hour, sitting 8.5% off a 17-minute-old peak with no printed higher low, inside a 14-copy ticker field. That's a chasing spike, the skip type that dumped 18 of 24 (V1, V6).  
-  CA `HqhBJYFEuXrGyWjjLFughGK4cYNm5H1hVFfvWDrRpump`
-- 06:51Z WALLSTFLY (MIGRATED, $33,813 mcap, $2,670 5m vol): PASS at conviction 2, PASS: 5m flow at 0.67x pace, buys 47% of 5m, no printed higher low, 15 minutes old and bleeding off its spike, and no story behind a single-fly meme. Blocker: flow below pace (V1, V6).  
-  CA `2DQbV7hsqxKVWmFakXGGhBbNyY28tDJ9YuJkojYrpump`
 
 ## What its skips did next (last 48h)
 A skip "ran" if the coin reached the first target (1.5x) from the skip price before a 20% drop, "dumped" if the drop came first. Sampled every 10 min, followed 6h.
@@ -106,7 +106,7 @@ A skip "ran" if the coin reached the first target (1.5x) from the skip price bef
     CA `FuKY3dk7QmpbDdQRjzbjB3G6PiCuqKNvN4dAWDpwpump`
   - ran: COPIUM up to 1.52x  
     CA `BAKsQrynzwadyACDMsg3J5R8a4CTvj1u7kEYyjq7pump`
-- too new / sniping: blocked 26, ran 6, dumped 20, flat 0, open 0 (saving losses: keep it)
+- too new / sniping: blocked 27, ran 6, dumped 20, flat 0, open 1 (saving losses: keep it)
   - ran: TA up to 1.77x  
     CA `DKUM8qywmi8X9RYK2wUgnTw8QKjh1nYDThZR1GXPpump`
   - ran: SANTAHAT up to 3x  
@@ -196,16 +196,16 @@ Nothing has a positive edge after costs. All 166 settled coins averaged -11.3% n
 - [2026-11-02 20:25] I expected Slingoor, a clean MIGRATED leader with $25k of 5m flow at pace and a 0.77 buy share, to retest its $408k high from $304k. It never went green (0.98x peak) and hit the -20% stop in 2 minutes, a -$2.86 probe. My own thesis admitted there was no printed higher low after a peak only 6 minutes old, so this confirms the money-shape rule: buy share and flow are not structure (V1, V6). Next time a MIGRATED pullback with no higher low above the hourly low is a PASS with blocker "no higher low", not a probe. This is one loss, so it adds no new ban beyond the rule I already have.
 
 ## Meta right now
-Meta: the movers are loud, and the loudest flow is pump.fun joke launches under about 1h old (PumpMeme, WINU, MILLY, Milo, all up 190% to 2000% on the hour), but the older fresh ones are already bleeding (HUMAN -51%, Jensen Huang -71%), so that lottery theme is cooling. Second, animals and cats (hCAT, cateball) are mixed, and cateball is sell-leaning at 35% buys. Third, AI, tech and people names (agent milly, Tesla FSD v15, NO HUMAN) show 60-64% buys on mid caps: alive, not accelerating. Fading: the Trump dinner story (no TRUMP coin in the movers, and the headlines say it is down 99%) and old names like WASTED and BELLA. Setups to research first: Milo (already on PumpSwap, 85k cap, 49k 5m volume, 62% buys, 0.3h old) has the cleanest flow on the list and fits the MIGRATED filter; MILLY and WINU are early lottery tickets with holder and bundle checks still to run; PumpMeme at 760k after a 2000% hour is a chase, not a setup, unless it dips and holds. The web summary's caps and volumes (PumpMeme at $90k, MINELIUS, TAIL) don't match the scan, so I'm weighting only the scan numbers. No hack-named coin is a setup.
+Trencher read, from the scan numbers (the web summary is only context here). Three themes are moving. Fresh pump.fun joke launches are the loudest but mostly fading: task (0.1h old, $24k 5m on a $15k cap, 66% buys) is the only one with real flow and it is too new to trust, while WINU, MILLY, milky and Milo are down 67-90% on the hour. AI, tech and people mid-caps are alive but not accelerating: UCASH ($591k cap, $15k 5m, 80% buys, 20h old) has the cleanest flow on the list, and FSDV15 and NOHR sit at 66% buys but under the $10k 5m bar. Animals are cooling (cateball 32% buys and -30%, ROCKET -51%), and the Trump dinner story has no TRUMP coin in the movers, so it is fading. Milo is not a setup: the web summary's 85k cap and 49k 5m volume are contradicted by the scan ($7k cap, $357 5m, 38% buys), so it fails the volume floor. Research next: UCASH first (holder, dev and bundle checks), then task only if it survives a dip; COPIUM, FSDV15 and NOHR are watch items until 5m volume clears $10k.
 
 ## Moving most in its scans, last 30 min (1h volume)
-- Milo: $219,902 1h vol, $7,231 mcap, -90% 1h  
-  CA `Cz1bmoA8PW2p8iS5ugxYzhAM1QQg6bRyNp6CmrKui2hL`
 - UCASH: $200,750 1h vol, $591,352 mcap, -28% 1h  
   CA `7cFiqdT46zs7ooHWLFiLSaSQKLMibtokh9dBinsspump`
+- PumpMeme: $126,109 1h vol, $1,300,119 mcap, +1% 1h  
+  CA `93uamrbDerKbUh8MSjNF1wDtxYvEUD1CS9BcHn1apump`
 - NOHR: $99,402 1h vol, $2,424,024 mcap, +33% 1h  
   CA `Jd3NCawdFiDNWpLiTtsMqoeoBMjC1ZQMrMScRVzpump`
+- Milo: $87,918 1h vol, $6,237 mcap, -91% 1h  
+  CA `Cz1bmoA8PW2p8iS5ugxYzhAM1QQg6bRyNp6CmrKui2hL`
 - WALLSTFLY: $75,669 1h vol, $49,887 mcap, +57% 1h  
   CA `2DQbV7hsqxKVWmFakXGGhBbNyY28tDJ9YuJkojYrpump`
-- FSDV15: $72,091 1h vol, $3,054,141 mcap, +11% 1h  
-  CA `3BcJ4SSCfbxDMrWcUDucyCWxMjmy4M2ECCtvxu86pump`
