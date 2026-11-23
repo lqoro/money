@@ -1,13 +1,13 @@
 # Trencher live report
 
-Updated 2026-11-23T23:17:55Z (paper trading, never real money)
+Updated 2026-11-23T23:32:58Z (paper trading, never real money)
 
 - Equity: $74.23 (-25.8% vs $100 start)
 - Closed trades: 22, 3 wins
 - Fees paid: $14.78 (axiom $2.81, network $9.18, pool $2.66), plus $4.15 lost to slippage
 - New trades: WATCH-ONLY (scans and decides, buys nothing)
-- Brain: subscription, claude-haiku-5-5 for routine calls, claude-opus-5-5 for the daily review; 471 routine calls and 0 plan-limit hits in 48h
-- Watch log: 114 coins being followed, 3060 filed, 0 would-buys (6h follow, sampled every 2 min)
+- Brain: subscription, claude-haiku-5-5 for routine calls, claude-opus-5-5 for the daily review; 474 routine calls and 0 plan-limit hits in 48h
+- Watch log: 114 coins being followed, 3064 filed, 0 would-buys (6h follow, sampled every 2 min)
 
 ## Scorecard (after fees)
 - 22 closed, 3 won (14%), net $-25.79
@@ -73,9 +73,17 @@ Updated 2026-11-23T23:17:55Z (paper trading, never real money)
   CA `H4gHnZ3NCU7Z9XQwGX6YYJNyieGEW8pqwGRUcdSxpump`
 
 ## Last scan
-- 23:16Z: 5 coins, 5 with pairs, 2 passed the market filters, 2 researched
+- 23:32Z: 6 coins, 6 with pairs, 0 passed the market filters, 0 researched
 
 ## Coins it looked at, and why it passed
+- 23:28Z PONK (DIP, $156,859 mcap, $9,405 5m vol): PASS at conviction 3, PASS: flow below pace and no catalyst. PONK is a 2-hour-old copy of a crowded ticker on a domain about 2.4 hours old (V1, V3, V13).  
+  CA `62QTa8TvNAoUz62V93hgdBkwJfYWQLcQ8qVMA9UPpump`
+- 23:25Z DESSA (DIP, $2,322,129 mcap, $2,216 5m vol): PASS at conviction 3, PASS: DESSA is a DIP with no catalyst, no radar presence, $2.2k 5m flow and sellers in control. Dead story until it proves otherwise (V1, V6, V13).  
+  CA `npz2FhoufQ7pKqhGpaipYWacrAkidyW2yDpVWSvpump`
+- 23:24Z UCASH (DIP, $1,282,332 mcap, $11,660 5m vol): PASS at conviction 3, PASS — UCASH is a 66%-off privacy-wallet story with 5m flow at 0.72x its hourly pace, about 1.14x to its nearest local high, and a 1.4-day-old site that says "product in development." Blockers: flow below pace, bottom-buy theme gate, target too close, dead story (V1, V3, V6, V13).  
+  CA `7cFiqdT46zs7ooHWLFiLSaSQKLMibtokh9dBinsspump`
+- 23:20Z DIBS (MIGRATED, $65,767 mcap, $18,647 5m vol): PASS at conviction 3, PASS — 5 minutes old, up 106% on the 5m, no printed higher low, and no story on the radar. Chasing a spike on a launch this fresh is how you become exit liquidity (V1, V6).  
+  CA `E95f6TRF7Rw2GAXuzCahrz2LEhsMzrYHcHiV3N1Ppump`
 - 23:16Z THANKS (MIGRATED, $64,027 mcap, $3,917 5m vol): REJECT, Top 10 hold 27.6% ex-pool (>25%) (V13)  
   CA `BECqBzwZmkzM7A3tWimc2qvm7ookzYi8XACHMZgipump`
 - 23:16Z JENSEN (DIP, $665,367 mcap, $5,574 5m vol): REJECT, Top 10 hold 25.6% ex-pool (>25%) (V13)  
@@ -88,25 +96,17 @@ Updated 2026-11-23T23:17:55Z (paper trading, never real money)
   CA `B34nXKzCgsJb9ChLuSHPRpXLE3WFSWyeT8Cqkzzmpump`
 - 23:05Z JIMMY (MIGRATED, $287,068 mcap, $19,122 5m vol): PASS at conviction 2, PASS: JIMMY is a 27.7% pullback with 5m flow at 0.44x the hourly pace, no printed higher low, and no catalyst behind a theme running at 0.29x. Blocker: "flow below pace". (V1, V6)  
   CA `38M2z4UCfZEkUHFzD48vhKQhFhNyRGto8pZbLjNipump`
-- 22:59Z PumpMeme (MIGRATED, $232,312 mcap, $10,012 5m vol): PASS at conviction 2, PASS: 90% off the $2.39M peak, still down 42% on 5m, no catalyst, and the site doesn't show this CA. Dump-shaped, not a bottom. (V1, V13)  
-  CA `93uamrbDerKbUh8MSjNF1wDtxYvEUD1CS9BcHn1apump`
-- 22:50Z BLOOM (MIGRATED, $60,417 mcap, $100,036 5m vol): REJECT, Dev holds 2.0% (>1%) (V13, V17)  
-  CA `FyRXnHLBSeHHoigrgHR1hvcXiPbPCa5bxhVhEDampump`
-- 22:44Z HUSS (DIP, $59,809 mcap, $2,056 5m vol): REJECT, Top 10 hold 28.1% ex-pool (>25%) (V13)  
-  CA `3umHFkiMHyphCkLxtbf8Aabie8r5hxn86QeBAovTpump`
-- 22:44Z Phil (FINAL_STRETCH, $23,665 mcap, $18,920 5m vol): PASS at conviction 3, PASS: chasing a 21-minute-old spike with no higher low, an 8-copy name field, an 8.9% bundle cluster and no story on the radar. Lottery ticket, not a setup. (V1, V3, V6, V13)  
-  CA `GMLSyjZCKGtFwztp2mtT8PDeNUA6WEk7oQoe3QkFpump`
 
 ## What its skips did next (last 48h)
 A skip "ran" if the coin reached the first target (1.5x) from the skip price before a 20% drop, "dumped" if the drop came first. Sampled every 10 min, followed 6h.
-- too new / sniping: blocked 41, ran 8, dumped 32, flat 0, open 1 (saving losses: keep it)
+- too new / sniping: blocked 42, ran 8, dumped 33, flat 0, open 1 (saving losses: keep it)
   - ran: SANTAHAT up to 3x  
     CA `5fWLSMA5HoK9W4VoTMi4c3qjyu3N2LsKRSM8Ffpgpump`
   - ran: KYC up to 2.37x  
     CA `47YCrfUmSQUF9vnPsPGSzrmTcxttdRAWejCMkhrrpump`
   - ran: Wojak up to 4.29x  
     CA `5eiLc9r79PkJquiFvYWdXJYtGNRjTpzot8MR7Z4Ppump`
-- flow below pace: blocked 39, ran 6, dumped 29, flat 1, open 3 (saving losses: keep it)
+- flow below pace: blocked 40, ran 7, dumped 29, flat 1, open 3 (saving losses: keep it)
   - ran: snowball up to 1.59x  
     CA `3D7YQcnXi6RMjWxheiE8VLuGXJTtgQkmyugGYvzjpump`
   - ran: OpenIndex up to 1.63x  
@@ -120,30 +120,32 @@ A skip "ran" if the coin reached the first target (1.5x) from the skip price bef
     CA `tZsjFu2CH1R23wEpbfXAYGc2KUaVrUbwofCNNNqpump`
   - ran: Bertcoin up to 1.8x  
     CA `xEK58Qa2xZ7C36Z2g3Jjq1WHY561CvvnJkLpgJspump`
-- top 10 over 25%: blocked 29, ran 2, dumped 22, flat 2, open 3 (saving losses: keep it)
+- top 10 over 25%: blocked 28, ran 3, dumped 21, flat 2, open 2 (saving losses: keep it)
   - ran: GIF up to 2.16x  
     CA `B6wM98qkQKP71mhPA48S7No6TxM4KaXdFojDTZeUpump`
   - ran: SNP6900 up to 2.76x  
     CA `DnbQKi146NDmwwji3f3q5i68HQnYyBEhoDyj2q3Npump`
-- RugCheck danger: blocked 19, ran 5, dumped 13, flat 0, open 1 (saving losses: keep it)
+  - ran: THANKS up to 1.86x  
+    CA `BECqBzwZmkzM7A3tWimc2qvm7ookzYi8XACHMZgipump`
+- RugCheck danger: blocked 19, ran 5, dumped 14, flat 0, open 0 (saving losses: keep it)
   - ran: MIHAOMAS up to 1.62x  
     CA `3XsFunPdji9U1EgJXokZysw8SB3t74un89b6KLEVpump`
   - ran: Holdsgiving up to 2.96x  
     CA `A2jLaCC7v3VjXP8gEgCQNbTWEvizYuQ82jFEYfzipump`
   - ran: JENSEN up to 1.7x  
     CA `CjPoozfB2Vub8pHFvdKuKUGJDLWuYC2U32yRTxMhpump`
-- falling knife / no higher low: blocked 12, ran 4, dumped 5, flat 2, open 1 (mixed)
+- dev share over 1%: blocked 11, ran 2, dumped 5, flat 3, open 1 (saving losses: keep it)
+  - ran: Mfer up to 1.55x  
+    CA `9tX1UpBGeNqMb1VqqzVumwzW71ybsNZFyWKYiL8Ppump`
+  - ran: BLOOM up to 2.09x  
+    CA `FyRXnHLBSeHHoigrgHR1hvcXiPbPCa5bxhVhEDampump`
+- falling knife / no higher low: blocked 11, ran 3, dumped 5, flat 2, open 1 (mixed)
   - ran: STREETS up to 1.73x  
     CA `82mseLFauphc2yutbaDGgViahquJ1jGVLpyof99xpump`
   - ran: Fly up to 1.52x  
     CA `84tAcSK5L9kuQEVM8C8vMHXnfdA83nGBT2nYfSbPUcAc`
   - ran: hCAT up to 1.52x  
     CA `2FYs4vApfj4ErsggpFDfzMv1WvxnyiLtzNEj84mS6TLh`
-- dev share over 1%: blocked 11, ran 2, dumped 5, flat 3, open 1 (saving losses: keep it)
-  - ran: Mfer up to 1.55x  
-    CA `9tX1UpBGeNqMb1VqqzVumwzW71ybsNZFyWKYiL8Ppump`
-  - ran: BLOOM up to 2.09x  
-    CA `FyRXnHLBSeHHoigrgHR1hvcXiPbPCa5bxhVhEDampump`
 - other: blocked 11, ran 3, dumped 7, flat 1, open 0 (saving losses: keep it)
   - ran: ZOL up to 1.64x  
     CA `AQfw8J74V17erZsmMz4oK474eVLBaP44gD33vVbhtHo5`
@@ -209,9 +211,9 @@ Not quiet: the movers have real flow, but most of it sits in launches under an h
   CA `38M2z4UCfZEkUHFzD48vhKQhFhNyRGto8pZbLjNipump`
 - THANKS: $248,460 1h vol, $73,636 mcap, +146% 1h  
   CA `BECqBzwZmkzM7A3tWimc2qvm7ookzYi8XACHMZgipump`
-- WOFL: $215,654 1h vol, $6,890 mcap, -83% 1h  
-  CA `AdXjXfumPSSKk7PrfgDHcAsPvuxnKv7Zo9WZEWKbiDkh`
+- UCASH: $195,819 1h vol, $1,268,208 mcap, +6% 1h  
+  CA `7cFiqdT46zs7ooHWLFiLSaSQKLMibtokh9dBinsspump`
+- PONK: $175,270 1h vol, $151,164 mcap, -2% 1h  
+  CA `62QTa8TvNAoUz62V93hgdBkwJfYWQLcQ8qVMA9UPpump`
 - ChristmASS: $125,498 1h vol, $1,450 mcap, -99% 1h  
   CA `8WW5B189mPntQQ85HTPvQNsYxXhQbAhdjXvZ6qaapump`
-- Ghost: $114,230 1h vol, $3,602 mcap, +62% 1h  
-  CA `Fws4UaLaxKiab7cdwFvrGeCYpjqSMV7nxP6VhZkQpump`
