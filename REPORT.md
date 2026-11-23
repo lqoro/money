@@ -1,13 +1,13 @@
 # Trencher live report
 
-Updated 2026-11-23T06:53:34Z (paper trading, never real money)
+Updated 2026-11-23T07:08:42Z (paper trading, never real money)
 
 - Equity: $74.23 (-25.8% vs $100 start)
 - Closed trades: 22, 3 wins
 - Fees paid: $14.78 (axiom $2.81, network $9.18, pool $2.66), plus $4.15 lost to slippage
 - New trades: WATCH-ONLY (scans and decides, buys nothing)
-- Brain: subscription, claude-haiku-5-5 for routine calls, claude-opus-5-5 for the daily review; 337 routine calls and 0 plan-limit hits in 48h
-- Watch log: 94 coins being followed, 2819 filed, 0 would-buys (6h follow, sampled every 2 min)
+- Brain: subscription, claude-haiku-5-5 for routine calls, claude-opus-5-5 for the daily review; 338 routine calls and 0 plan-limit hits in 48h
+- Watch log: 90 coins being followed, 2825 filed, 0 would-buys (6h follow, sampled every 2 min)
 
 ## Scorecard (after fees)
 - 22 closed, 3 won (14%), net $-25.79
@@ -73,9 +73,13 @@ Updated 2026-11-23T06:53:34Z (paper trading, never real money)
   CA `H4gHnZ3NCU7Z9XQwGX6YYJNyieGEW8pqwGRUcdSxpump`
 
 ## Last scan
-- 06:52Z: 4 coins, 4 with pairs, 0 passed the market filters, 0 researched
+- 07:08Z: 2 coins, 2 with pairs, 0 passed the market filters, 0 researched
 
 ## Coins it looked at, and why it passed
+- 07:03Z PumpMeme (MIGRATED, $1,455,981 mcap, $3,895 5m vol): REJECT, Top 10 hold 25.6% ex-pool (>25%) (V13)  
+  CA `93uamrbDerKbUh8MSjNF1wDtxYvEUD1CS9BcHn1apump`
+- 06:58Z milky (FINAL_STRETCH, $25,877 mcap, $19,928 5m vol): PASS at conviction 3, PASS — milky is up 85% on 5m and 1145% in the hour, sitting 8.5% off a 17-minute-old peak with no printed higher low, inside a 14-copy ticker field. That's a chasing spike, the skip type that dumped 18 of 24 (V1, V6).  
+  CA `HqhBJYFEuXrGyWjjLFughGK4cYNm5H1hVFfvWDrRpump`
 - 06:51Z WALLSTFLY (MIGRATED, $33,813 mcap, $2,670 5m vol): PASS at conviction 2, PASS: 5m flow at 0.67x pace, buys 47% of 5m, no printed higher low, 15 minutes old and bleeding off its spike, and no story behind a single-fly meme. Blocker: flow below pace (V1, V6).  
   CA `2DQbV7hsqxKVWmFakXGGhBbNyY28tDJ9YuJkojYrpump`
 - 06:45Z MINELIUS (MIGRATED, $10,287,954 mcap, $5,132 5m vol): PASS at conviction 2, PASS. Chasing a $10M coin 4% off its high, with 5m flow at half pace and one of 23 copies. Blocker: chasing. (V1, V6, V13)  
@@ -92,38 +96,34 @@ Updated 2026-11-23T06:53:34Z (paper trading, never real money)
   CA `3BcJ4SSCfbxDMrWcUDucyCWxMjmy4M2ECCtvxu86pump`
 - 06:22Z hCAT (MIGRATED, $143,766 mcap, $2,463 5m vol): PASS at conviction 3, PASS: no printed higher low, $2.5k 5m flow under the $10k bar, and the chart data doesn't match this coin's price. Can't read the money shape. (V1, V6)  
   CA `2FYs4vApfj4ErsggpFDfzMv1WvxnyiLtzNEj84mS6TLh`
-- 06:18Z PumpMeme (DIP, $759,806 mcap, $20,751 5m vol): REJECT, Dip with fading attention is a falling knife, not a dip (5m at 0.38x the hour's pace, under 0.6x)  
-  CA `93uamrbDerKbUh8MSjNF1wDtxYvEUD1CS9BcHn1apump`
-- 06:15Z CBUCKS (MIGRATED, $3,667,769 mcap, $2,269 5m vol): REJECT, Top 10 hold 26.0% ex-pool (>25%) (V13)  
-  CA `DtcicPCKTKeAh7TDEzTym3hXeoHAoMiBdYJhMYxZpump`
 
 ## What its skips did next (last 48h)
 A skip "ran" if the coin reached the first target (1.5x) from the skip price before a 20% drop, "dumped" if the drop came first. Sampled every 10 min, followed 6h.
-- flow below pace: blocked 27, ran 3, dumped 19, flat 0, open 5 (saving losses: keep it)
+- flow below pace: blocked 27, ran 3, dumped 21, flat 0, open 3 (saving losses: keep it)
   - ran: snowball up to 1.59x  
     CA `3D7YQcnXi6RMjWxheiE8VLuGXJTtgQkmyugGYvzjpump`
   - ran: OpenIndex up to 1.63x  
     CA `FuKY3dk7QmpbDdQRjzbjB3G6PiCuqKNvN4dAWDpwpump`
   - ran: hCAT up to 1.52x  
     CA `2FYs4vApfj4ErsggpFDfzMv1WvxnyiLtzNEj84mS6TLh`
-- too new / sniping: blocked 27, ran 6, dumped 19, flat 0, open 2 (saving losses: keep it)
+- too new / sniping: blocked 27, ran 6, dumped 20, flat 0, open 1 (saving losses: keep it)
   - ran: TA up to 1.77x  
     CA `DKUM8qywmi8X9RYK2wUgnTw8QKjh1nYDThZR1GXPpump`
   - ran: SANTAHAT up to 3x  
     CA `5fWLSMA5HoK9W4VoTMi4c3qjyu3N2LsKRSM8Ffpgpump`
   - ran: KYC up to 2.37x  
     CA `47YCrfUmSQUF9vnPsPGSzrmTcxttdRAWejCMkhrrpump`
-- near the high / chasing: blocked 24, ran 2, dumped 18, flat 1, open 3 (saving losses: keep it)
+- near the high / chasing: blocked 25, ran 2, dumped 19, flat 1, open 3 (saving losses: keep it)
   - ran: CUNTS up to 1.61x  
     CA `7CvW68FD9KjNYGByfykhaNps7VNPLN8dFwMRfmgQpump`
   - ran: SANTA up to 1.85x  
     CA `tZsjFu2CH1R23wEpbfXAYGc2KUaVrUbwofCNNNqpump`
-- top 10 over 25%: blocked 17, ran 2, dumped 13, flat 1, open 1 (saving losses: keep it)
+- top 10 over 25%: blocked 18, ran 2, dumped 13, flat 1, open 2 (saving losses: keep it)
   - ran: :) up to 1.65x  
     CA `Dtx414D8jurspmB1jqJWsYU66pemoXRjQeXx7TC1pump`
   - ran: GIF up to 2.16x  
     CA `B6wM98qkQKP71mhPA48S7No6TxM4KaXdFojDTZeUpump`
-- falling knife / no higher low: blocked 15, ran 3, dumped 3, flat 5, open 4 (mixed)
+- falling knife / no higher low: blocked 15, ran 3, dumped 4, flat 5, open 3 (mixed)
   - ran: UrAnus up to 2.97x  
     CA `27u3diWofnXGUkddjLGhcy1nRssFKHW3RtNbpWzUpump`
   - ran: STREETS up to 1.73x  
@@ -133,13 +133,6 @@ A skip "ran" if the coin reached the first target (1.5x) from the skip price bef
 - RugCheck danger: blocked 13, ran 1, dumped 12, flat 0, open 0 (saving losses: keep it)
   - ran: MIHAOMAS up to 1.62x  
     CA `3XsFunPdji9U1EgJXokZysw8SB3t74un89b6KLEVpump`
-- falling knife (code): blocked 13, ran 4, dumped 6, flat 0, open 3 (mixed)
-  - ran: RIZZMAS3 up to 1.84x  
-    CA `BQcV4Ryfu9bZK8egAF89AhkojdJqAaDt4xTFwUQ2pump`
-  - ran: STREETS up to 1.73x  
-    CA `82mseLFauphc2yutbaDGgViahquJ1jGVLpyof99xpump`
-  - ran: OpenIndex up to 1.63x  
-    CA `FuKY3dk7QmpbDdQRjzbjB3G6PiCuqKNvN4dAWDpwpump`
 - brain paced: blocked 12, ran 4, dumped 6, flat 1, open 1 (mixed)
   - ran: STREETS up to 1.73x  
     CA `82mseLFauphc2yutbaDGgViahquJ1jGVLpyof99xpump`
@@ -147,12 +140,19 @@ A skip "ran" if the coin reached the first target (1.5x) from the skip price bef
     CA `2MdCPWNFufmJSZhajSvi1yqBFTB24GQ4ipjNcB8Vpump`
   - ran: MCAT up to 2.52x  
     CA `BzPyyYCTmQNq2BcfQ4ANAvCYk54rnmQEXMFvFT8RhWMi`
+- falling knife (code): blocked 12, ran 3, dumped 6, flat 0, open 3 (saving losses: keep it)
+  - ran: RIZZMAS3 up to 1.84x  
+    CA `BQcV4Ryfu9bZK8egAF89AhkojdJqAaDt4xTFwUQ2pump`
+  - ran: STREETS up to 1.73x  
+    CA `82mseLFauphc2yutbaDGgViahquJ1jGVLpyof99xpump`
+  - ran: OpenIndex up to 1.63x  
+    CA `FuKY3dk7QmpbDdQRjzbjB3G6PiCuqKNvN4dAWDpwpump`
 - dev share over 1%: blocked 9, ran 2, dumped 4, flat 1, open 2 (saving losses: keep it)
   - ran: SANTINU up to 1.56x  
     CA `BCTwG3LDhNcthcK374aWQfAzLYGRXDu1apmrqw3Tpump`
   - ran: Mfer up to 1.55x  
     CA `9tX1UpBGeNqMb1VqqzVumwzW71ybsNZFyWKYiL8Ppump`
-- thin 5m volume: blocked 6, ran 1, dumped 3, flat 0, open 2 (saving losses: keep it)
+- thin 5m volume: blocked 6, ran 1, dumped 4, flat 0, open 1 (saving losses: keep it)
   - ran: chud up to 1.55x  
     CA `EV7J2QaPXPytSkM1LD9GPRkgAbmSEr9R3kYiXBzbpump`
 
@@ -195,13 +195,13 @@ Nothing has a positive edge after costs. All 166 settled coins averaged -11.3% n
 Meta: the movers are loud, and the loudest flow is pump.fun joke launches under about 1h old (PumpMeme, WINU, MILLY, Milo, all up 190% to 2000% on the hour), but the older fresh ones are already bleeding (HUMAN -51%, Jensen Huang -71%), so that lottery theme is cooling. Second, animals and cats (hCAT, cateball) are mixed, and cateball is sell-leaning at 35% buys. Third, AI, tech and people names (agent milly, Tesla FSD v15, NO HUMAN) show 60-64% buys on mid caps: alive, not accelerating. Fading: the Trump dinner story (no TRUMP coin in the movers, and the headlines say it is down 99%) and old names like WASTED and BELLA. Setups to research first: Milo (already on PumpSwap, 85k cap, 49k 5m volume, 62% buys, 0.3h old) has the cleanest flow on the list and fits the MIGRATED filter; MILLY and WINU are early lottery tickets with holder and bundle checks still to run; PumpMeme at 760k after a 2000% hour is a chase, not a setup, unless it dips and holds. The web summary's caps and volumes (PumpMeme at $90k, MINELIUS, TAIL) don't match the scan, so I'm weighting only the scan numbers. No hack-named coin is a setup.
 
 ## Moving most in its scans, last 30 min (1h volume)
+- PumpMeme: $279,297 1h vol, $1,446,839 mcap, +38% 1h  
+  CA `93uamrbDerKbUh8MSjNF1wDtxYvEUD1CS9BcHn1apump`
 - UCASH: $186,203 1h vol, $918,770 mcap, -32% 1h  
   CA `7cFiqdT46zs7ooHWLFiLSaSQKLMibtokh9dBinsspump`
-- Milo: $166,216 1h vol, $84,836 mcap, +191% 1h  
-  CA `Cz1bmoA8PW2p8iS5ugxYzhAM1QQg6bRyNp6CmrKui2hL`
 - MINELIUS: $113,572 1h vol, $10,287,954 mcap, +36% 1h  
   CA `E9rWKjVhHMxQkxfREr7Li8Yy46rVcWiWHoKVQAe9pump`
-- COPIUM: $72,874 1h vol, $535,278 mcap, +13% 1h  
-  CA `BAKsQrynzwadyACDMsg3J5R8a4CTvj1u7kEYyjq7pump`
-- WINU: $55,521 1h vol, $2,425 mcap, -1% 1h  
+- MILLY: $57,485 1h vol, $2,087 mcap, -51% 1h  
+  CA `EYdPEx2JqZMjW7UQszGDwyh7kTD25pSEzikNdNKkpump`
+- WINU: $55,756 1h vol, $2,138 mcap, -13% 1h  
   CA `3ggEYfkWC8Yzii8imDKJw2rB1FyMWgGhTr6ZDs8Tpump`
