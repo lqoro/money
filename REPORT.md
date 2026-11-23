@@ -1,13 +1,13 @@
 # Trencher live report
 
-Updated 2026-11-23T14:12:59Z (paper trading, never real money)
+Updated 2026-11-23T14:28:08Z (paper trading, never real money)
 
 - Equity: $74.23 (-25.8% vs $100 start)
 - Closed trades: 22, 3 wins
 - Fees paid: $14.78 (axiom $2.81, network $9.18, pool $2.66), plus $4.15 lost to slippage
 - New trades: WATCH-ONLY (scans and decides, buys nothing)
-- Brain: subscription, claude-haiku-5-5 for routine calls, claude-opus-5-5 for the daily review; 408 routine calls and 0 plan-limit hits in 48h
-- Watch log: 70 coins being followed, 2927 filed, 0 would-buys (6h follow, sampled every 2 min)
+- Brain: subscription, claude-haiku-5-5 for routine calls, claude-opus-5-5 for the daily review; 411 routine calls and 0 plan-limit hits in 48h
+- Watch log: 69 coins being followed, 2931 filed, 0 would-buys (6h follow, sampled every 2 min)
 
 ## Scorecard (after fees)
 - 22 closed, 3 won (14%), net $-25.79
@@ -73,9 +73,15 @@ Updated 2026-11-23T14:12:59Z (paper trading, never real money)
   CA `H4gHnZ3NCU7Z9XQwGX6YYJNyieGEW8pqwGRUcdSxpump`
 
 ## Last scan
-- 14:12Z: 3 coins, 3 with pairs, 1 passed the market filters, 1 researched
+- 14:27Z: 6 coins, 6 with pairs, 1 passed the market filters, 1 researched
 
 ## Coins it looked at, and why it passed
+- 14:27Z BONER (MIGRATED, $42,156 mcap, $36,170 5m vol): PASS at conviction 3, PASS: BONER is a 2-minute-old copy in a 15-coin Boner field, already under its hourly low with no higher low, and a bottom buy with no catalyst. Blocker: "no higher low." (V1, V6)  
+  CA `Dqotg1vothycy7Xa3Q2GEfFRzuzsp41jTw91dxjNwSEz`
+- 14:20Z UCASH (MIGRATED, $1,632,746 mcap, $15,850 5m vol): PASS at conviction 3, PASS: flow at 0.72x pace on a -27% dip with no breakout, and a one-day-old tech site with no GitHub. Blocker "flow below pace" (V1, V6).  
+  CA `7cFiqdT46zs7ooHWLFiLSaSQKLMibtokh9dBinsspump`
+- 14:18Z NOHR (DIP, $974,439 mcap, $27,670 5m vol): PASS at conviction 3, PASS — DIP with no catalyst and a crowded "human" field. Story is fading, not rising. Bottom buy blocked. (V1, V13)  
+  CA `Jd3NCawdFiDNWpLiTtsMqoeoBMjC1ZQMrMScRVzpump`
 - 14:12Z JACKET (MIGRATED, $424,838 mcap, $157,476 5m vol): PASS at conviction 4, PASS: no breakout, and the prior high is only 1.17x away. Name-copy field, bundles at 19%, and an 866% hour that is already spent (blockers: target too close, no breakout) (V1, V6, V13).  
   CA `DJVZ9hKSLsDAPjdq73nX5bYPnjvfntUN87RRxdN2pump`
 - 14:11Z COPIUM (MIGRATED, $758,046 mcap, $2,577 5m vol): PASS at conviction 3, PASS: COPIUM flow is at 0.6x its hourly pace with no higher low, and its own site says the CA is "awaiting confirmation." Blocker: flow below pace. (V1, V6, V13)  
@@ -90,12 +96,6 @@ Updated 2026-11-23T14:12:59Z (paper trading, never real money)
   CA `Czbd4FtkLf4ELCPNuawbGxcivuCpcLWFFTD4oqWkpump`
 - 13:34Z UCASH (DIP, $1,323,519 mcap, $9,655 5m vol): REJECT, Dip with fading attention is a falling knife, not a dip (5m at 0.37x the hour's pace, under 0.6x)  
   CA `7cFiqdT46zs7ooHWLFiLSaSQKLMibtokh9dBinsspump`
-- 13:33Z TREMP (MIGRATED, $38,997 mcap, $29,631 5m vol): PASS at conviction 2, PASS: TREMP is a 2-minute-old copy in a 22-coin vamp field, up 34% in 5m at 12x pace, and the field leader is the other TREMP. Blockers: chasing spike, split crowd, too new. (V1, V3, V6)  
-  CA `CuNLbjjFcmumcKF1AnUkPU4dcjykJR73M8hzJB5Cpump`
-- 13:32Z NOHR (DIP, $782,743 mcap, $3,802 5m vol): REJECT, Dip with fading attention is a falling knife, not a dip (5m at 0.44x the hour's pace, under 0.6x)  
-  CA `Jd3NCawdFiDNWpLiTtsMqoeoBMjC1ZQMrMScRVzpump`
-- 13:26Z COPIUM (MIGRATED, $755,327 mcap, $3,739 5m vol): PASS at conviction 2, PASS: COPIUM is 7.8% off its high with 5m flow at 0.87x pace and no printed higher low. The site doesn't show this CA. 13 same-ticker copies. (V1, V6, V13)  
-  CA `BAKsQrynzwadyACDMsg3J5R8a4CTvj1u7kEYyjq7pump`
 
 ## What its skips did next (last 48h)
 A skip "ran" if the coin reached the first target (1.5x) from the skip price before a 20% drop, "dumped" if the drop came first. Sampled every 10 min, followed 6h.
@@ -106,7 +106,7 @@ A skip "ran" if the coin reached the first target (1.5x) from the skip price bef
     CA `5fWLSMA5HoK9W4VoTMi4c3qjyu3N2LsKRSM8Ffpgpump`
   - ran: KYC up to 2.37x  
     CA `47YCrfUmSQUF9vnPsPGSzrmTcxttdRAWejCMkhrrpump`
-- flow below pace: blocked 31, ran 5, dumped 23, flat 0, open 3 (saving losses: keep it)
+- flow below pace: blocked 32, ran 6, dumped 23, flat 1, open 2 (saving losses: keep it)
   - ran: snowball up to 1.59x  
     CA `3D7YQcnXi6RMjWxheiE8VLuGXJTtgQkmyugGYvzjpump`
   - ran: OpenIndex up to 1.63x  
@@ -130,14 +130,14 @@ A skip "ran" if the coin reached the first target (1.5x) from the skip price bef
     CA `3XsFunPdji9U1EgJXokZysw8SB3t74un89b6KLEVpump`
   - ran: Holdsgiving up to 2.96x  
     CA `A2jLaCC7v3VjXP8gEgCQNbTWEvizYuQ82jFEYfzipump`
-- falling knife / no higher low: blocked 14, ran 4, dumped 4, flat 5, open 1 (mixed)
+- falling knife / no higher low: blocked 15, ran 4, dumped 4, flat 6, open 1 (mixed)
   - ran: UrAnus up to 2.97x  
     CA `27u3diWofnXGUkddjLGhcy1nRssFKHW3RtNbpWzUpump`
   - ran: STREETS up to 1.73x  
     CA `82mseLFauphc2yutbaDGgViahquJ1jGVLpyof99xpump`
   - ran: Fly up to 1.52x  
     CA `84tAcSK5L9kuQEVM8C8vMHXnfdA83nGBT2nYfSbPUcAc`
-- falling knife (code): blocked 13, ran 4, dumped 6, flat 1, open 2 (mixed)
+- falling knife (code): blocked 13, ran 5, dumped 6, flat 1, open 1 (mixed)
   - ran: RIZZMAS3 up to 1.84x  
     CA `BQcV4Ryfu9bZK8egAF89AhkojdJqAaDt4xTFwUQ2pump`
   - ran: STREETS up to 1.73x  
@@ -156,7 +156,7 @@ A skip "ran" if the coin reached the first target (1.5x) from the skip price bef
     CA `BCTwG3LDhNcthcK374aWQfAzLYGRXDu1apmrqw3Tpump`
   - ran: Mfer up to 1.55x  
     CA `9tX1UpBGeNqMb1VqqzVumwzW71ybsNZFyWKYiL8Ppump`
-- thin 5m volume: blocked 7, ran 1, dumped 5, flat 0, open 1 (saving losses: keep it)
+- thin 5m volume: blocked 7, ran 1, dumped 5, flat 1, open 0 (saving losses: keep it)
   - ran: chud up to 1.55x  
     CA `EV7J2QaPXPytSkM1LD9GPRkgAbmSEr9R3kYiXBzbpump`
 
@@ -201,11 +201,11 @@ Not quiet. The scan_movers volume splits into four bands. (1) Fresh pump.fun lau
 ## Moving most in its scans, last 30 min (1h volume)
 - JACKET: $971,774 1h vol, $424,838 mcap, +866% 1h  
   CA `DJVZ9hKSLsDAPjdq73nX5bYPnjvfntUN87RRxdN2pump`
-- AGI: $155,342 1h vol, $10,045 mcap, -77% 1h  
-  CA `7kctwFbSdLfpi6RuN9cjpVpYVHKPUr8PtG1meH35AEky`
+- TREMP: $331,940 1h vol, $3,771 mcap, -87% 1h  
+  CA `CuNLbjjFcmumcKF1AnUkPU4dcjykJR73M8hzJB5Cpump`
+- UCASH: $263,323 1h vol, $1,627,542 mcap, +35% 1h  
+  CA `7cFiqdT46zs7ooHWLFiLSaSQKLMibtokh9dBinsspump`
+- NOHR: $191,952 1h vol, $1,003,395 mcap, +36% 1h  
+  CA `Jd3NCawdFiDNWpLiTtsMqoeoBMjC1ZQMrMScRVzpump`
 - FSDV15: $149,939 1h vol, $893,806 mcap, -21% 1h  
   CA `3BcJ4SSCfbxDMrWcUDucyCWxMjmy4M2ECCtvxu86pump`
-- PumpMeme: $104,988 1h vol, $1,211,274 mcap, -38% 1h  
-  CA `93uamrbDerKbUh8MSjNF1wDtxYvEUD1CS9BcHn1apump`
-- MINELIUS: $99,800 1h vol, $15,001,644 mcap, -1% 1h  
-  CA `E9rWKjVhHMxQkxfREr7Li8Yy46rVcWiWHoKVQAe9pump`
