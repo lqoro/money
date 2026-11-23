@@ -1,13 +1,13 @@
 # Trencher live report
 
-Updated 2026-11-23T21:32:00Z (paper trading, never real money)
+Updated 2026-11-23T21:47:15Z (paper trading, never real money)
 
 - Equity: $74.23 (-25.8% vs $100 start)
 - Closed trades: 22, 3 wins
 - Fees paid: $14.78 (axiom $2.81, network $9.18, pool $2.66), plus $4.15 lost to slippage
 - New trades: WATCH-ONLY (scans and decides, buys nothing)
-- Brain: subscription, claude-haiku-5-5 for routine calls, claude-opus-5-5 for the daily review; 467 routine calls and 0 plan-limit hits in 48h
-- Watch log: 117 coins being followed, 3023 filed, 0 would-buys (6h follow, sampled every 2 min)
+- Brain: subscription, claude-haiku-5-5 for routine calls, claude-opus-5-5 for the daily review; 470 routine calls and 0 plan-limit hits in 48h
+- Watch log: 114 coins being followed, 3032 filed, 0 would-buys (6h follow, sampled every 2 min)
 
 ## Scorecard (after fees)
 - 22 closed, 3 won (14%), net $-25.79
@@ -73,9 +73,21 @@ Updated 2026-11-23T21:32:00Z (paper trading, never real money)
   CA `H4gHnZ3NCU7Z9XQwGX6YYJNyieGEW8pqwGRUcdSxpump`
 
 ## Last scan
-- 21:31Z: 5 coins, 5 with pairs, 0 passed the market filters, 0 researched
+- 21:46Z: 7 coins, 7 with pairs, 0 passed the market filters, 0 researched
 
 ## Coins it looked at, and why it passed
+- 21:45Z JENSEN (DIP, $733,687 mcap, $3,789 5m vol): REJECT, Top 10 hold 26.2% ex-pool (>25%) (V13)  
+  CA `HKiMA2mKQHU2cjfZ4Kbmru5GBGCauSNqPtpu8cfmpump`
+- 21:45Z COPIUM (MIGRATED, $735,051 mcap, $3,525 5m vol): PASS at conviction 2, PASS — 5m flow is 0.84x pace on $3.5k, under the $10k bar, and no higher low has printed. First resistance is only ~1.15x away, and it's a bottom buy with no catalyst on a copy-field ticker. The site doesn't show the CA and the domain is 1.1 days old (V1, V3, V6).  
+  CA `BAKsQrynzwadyACDMsg3J5R8a4CTvj1u7kEYyjq7pump`
+- 21:44Z DESSA (DIP, $2,417,588 mcap, $2,471 5m vol): PASS at conviction 2, PASS: DESSA. Thin AI-joke meme, no catalyst, no GitHub, and the story isn't on my radar. Blocker "no catalyst / dead story." (DIP rule, V1, V13)  
+  CA `npz2FhoufQ7pKqhGpaipYWacrAkidyW2yDpVWSvpump`
+- 21:42Z 泵寿命 (MIGRATED, $38,925 mcap, $16,265 5m vol): REJECT, Top 10 hold 25.4% ex-pool (>25%) (V13)  
+  CA `HVzypN167BEUk4tCP6HvY3bKBdYwFEJYQaqYrGm9pump`
+- 21:40Z FIONA (MIGRATED, $2,585,987 mcap, $6,715 5m vol): REJECT, Bundles: 10 linked wallet cluster(s) hold 27.6% of supply (>20%) (V17)  
+  CA `B34nXKzCgsJb9ChLuSHPRpXLE3WFSWyeT8Cqkzzmpump`
+- 21:38Z MINELIUS (MIGRATED, $140,964 mcap, $2,649 5m vol): PASS at conviction 2, PASS — 99.4% off a $23.9M peak, a saw-tooth spike that already dumped, 23% top 10 and a 1.2-day-old site with no code. Blocker: "bottom buy, no catalyst, narrative dead" (V1, V13).  
+  CA `E9rWKjVhHMxQkxfREr7Li8Yy46rVcWiWHoKVQAe9pump`
 - 21:28Z PumpMeme (MIGRATED, $473,110 mcap, $6,038 5m vol): PASS at conviction 2, PASS: 80% off a $2.39M peak, 23 same-ticker copies, and the project site doesn't show its own CA. Blocker: "bottom buy, no live narrative" (V1, V13).  
   CA `93uamrbDerKbUh8MSjNF1wDtxYvEUD1CS9BcHn1apump`
 - 21:27Z HOGE (DIP, $655,387 mcap, $5,533 5m vol): REJECT, Bundles: 9 linked wallet cluster(s) hold 27.7% of supply (>20%) (V17)  
@@ -84,28 +96,16 @@ Updated 2026-11-23T21:32:00Z (paper trading, never real money)
   CA `9Pq7aLAbhDG2tTnS22cm6kuysZVcZpLFE368HWuypump`
 - 21:17Z Misifú (FINAL_STRETCH, $19,239 mcap, $2,332 5m vol): REJECT, Top 10 hold 26.7% ex-pool (>25%) (V13)  
   CA `6QNxWALwXWdCtbBHFQthmzrz5zZnYBsPo4YS5SVCpump`
-- 21:13Z ChristmASS (MIGRATED, $260,331 mcap, $11,352 5m vol): PASS at conviction 3, PASS: ChristmASS is up 162% on the 5m, 0.61x hourly pace, under an hour old, with no printed higher low. Chasing a spike on a crowded holiday copy field (V1, V6).  
-  CA `8WW5B189mPntQQ85HTPvQNsYxXhQbAhdjXvZ6qaapump`
-- 21:12Z NCSP (DIP, $86,394 mcap, $17,368 5m vol): PASS at conviction 2, PASS — 40-minute-old spike that went from ~$15k to $199k and back to $86k, with no printed higher low and a thin tech story with no X and no CA on its own site. Blocker: "too new" plus "no higher low" (V1, V6, V13).  
-  CA `816hX5ah459t2z37LPQC8X11uZECsgHwvs8iBRWcpump`
-- 21:12Z PORK (MIGRATED, $235,480 mcap, $87,633 5m vol): REJECT, Top 10 hold 50.0% ex-pool (>25%) (V13)  
-  CA `2UwxN56YJrxAu1sDDYt2aDCUxFcCS3fHSLmNHGLWpump`
-- 21:08Z Terra (FINAL_STRETCH, $19,490 mcap, $7,240 5m vol): REJECT, Dev holds 3.0% (>1%) (V13, V17)  
-  CA `x6Te5oroApxvvHRGbkc28Bqyj21VpPTL1eXvFCFpump`
-- 21:08Z UCASH (MIGRATED, $515,453 mcap, $12,037 5m vol): PASS at conviction 2, PASS — 86.5% off a $3.8M high is a falling knife, not a MIGRATED pullback. No printed higher low, 5m flow at 0.96x pace, and a 1.3-day-old site with no GitHub behind its "privacy wallet" claims (V1, V6, V3).  
-  CA `7cFiqdT46zs7ooHWLFiLSaSQKLMibtokh9dBinsspump`
-- 21:04Z tap (MIGRATED, $40,312 mcap, $23,613 5m vol): PASS at conviction 4, PASS: chasing spike, no printed higher low, no story behind "tap". Vamp field of 16. (V1, V6, V13)  
-  CA `Bk1kfYeoS9arD5Cq6WtNCGSHqVkk9ZhDA7kUVARSpump`
 
 ## What its skips did next (last 48h)
 A skip "ran" if the coin reached the first target (1.5x) from the skip price before a 20% drop, "dumped" if the drop came first. Sampled every 10 min, followed 6h.
-- flow below pace: blocked 39, ran 6, dumped 28, flat 2, open 3 (saving losses: keep it)
+- flow below pace: blocked 39, ran 7, dumped 28, flat 1, open 3 (saving losses: keep it)
   - ran: snowball up to 1.59x  
     CA `3D7YQcnXi6RMjWxheiE8VLuGXJTtgQkmyugGYvzjpump`
   - ran: OpenIndex up to 1.63x  
     CA `FuKY3dk7QmpbDdQRjzbjB3G6PiCuqKNvN4dAWDpwpump`
-  - ran: hCAT up to 1.52x  
-    CA `2FYs4vApfj4ErsggpFDfzMv1WvxnyiLtzNEj84mS6TLh`
+  - ran: UCASH up to 2.09x  
+    CA `7cFiqdT46zs7ooHWLFiLSaSQKLMibtokh9dBinsspump`
 - too new / sniping: blocked 39, ran 8, dumped 30, flat 0, open 1 (saving losses: keep it)
   - ran: SANTAHAT up to 3x  
     CA `5fWLSMA5HoK9W4VoTMi4c3qjyu3N2LsKRSM8Ffpgpump`
@@ -113,12 +113,12 @@ A skip "ran" if the coin reached the first target (1.5x) from the skip price bef
     CA `47YCrfUmSQUF9vnPsPGSzrmTcxttdRAWejCMkhrrpump`
   - ran: Wojak up to 4.29x  
     CA `5eiLc9r79PkJquiFvYWdXJYtGNRjTpzot8MR7Z4Ppump`
-- near the high / chasing: blocked 33, ran 2, dumped 28, flat 2, open 1 (saving losses: keep it)
+- near the high / chasing: blocked 32, ran 2, dumped 28, flat 1, open 1 (saving losses: keep it)
   - ran: CUNTS up to 1.61x  
     CA `7CvW68FD9KjNYGByfykhaNps7VNPLN8dFwMRfmgQpump`
   - ran: SANTA up to 1.85x  
     CA `tZsjFu2CH1R23wEpbfXAYGc2KUaVrUbwofCNNNqpump`
-- top 10 over 25%: blocked 26, ran 2, dumped 21, flat 1, open 2 (saving losses: keep it)
+- top 10 over 25%: blocked 27, ran 2, dumped 21, flat 1, open 3 (saving losses: keep it)
   - ran: GIF up to 2.16x  
     CA `B6wM98qkQKP71mhPA48S7No6TxM4KaXdFojDTZeUpump`
   - ran: SNP6900 up to 2.76x  
@@ -130,13 +130,6 @@ A skip "ran" if the coin reached the first target (1.5x) from the skip price bef
     CA `A2jLaCC7v3VjXP8gEgCQNbTWEvizYuQ82jFEYfzipump`
   - ran: JENSEN up to 1.7x  
     CA `CjPoozfB2Vub8pHFvdKuKUGJDLWuYC2U32yRTxMhpump`
-- falling knife (code): blocked 13, ran 4, dumped 8, flat 1, open 0 (saving losses: keep it)
-  - ran: RIZZMAS3 up to 1.84x  
-    CA `BQcV4Ryfu9bZK8egAF89AhkojdJqAaDt4xTFwUQ2pump`
-  - ran: STREETS up to 1.73x  
-    CA `82mseLFauphc2yutbaDGgViahquJ1jGVLpyof99xpump`
-  - ran: OpenIndex up to 1.63x  
-    CA `FuKY3dk7QmpbDdQRjzbjB3G6PiCuqKNvN4dAWDpwpump`
 - falling knife / no higher low: blocked 12, ran 4, dumped 4, flat 3, open 1 (mixed)
   - ran: UrAnus up to 2.97x  
     CA `27u3diWofnXGUkddjLGhcy1nRssFKHW3RtNbpWzUpump`
@@ -144,6 +137,13 @@ A skip "ran" if the coin reached the first target (1.5x) from the skip price bef
     CA `82mseLFauphc2yutbaDGgViahquJ1jGVLpyof99xpump`
   - ran: Fly up to 1.52x  
     CA `84tAcSK5L9kuQEVM8C8vMHXnfdA83nGBT2nYfSbPUcAc`
+- falling knife (code): blocked 12, ran 4, dumped 7, flat 1, open 0 (mixed)
+  - ran: RIZZMAS3 up to 1.84x  
+    CA `BQcV4Ryfu9bZK8egAF89AhkojdJqAaDt4xTFwUQ2pump`
+  - ran: STREETS up to 1.73x  
+    CA `82mseLFauphc2yutbaDGgViahquJ1jGVLpyof99xpump`
+  - ran: OpenIndex up to 1.63x  
+    CA `FuKY3dk7QmpbDdQRjzbjB3G6PiCuqKNvN4dAWDpwpump`
 - brain paced: blocked 11, ran 4, dumped 6, flat 1, open 0 (mixed)
   - ran: STREETS up to 1.73x  
     CA `82mseLFauphc2yutbaDGgViahquJ1jGVLpyof99xpump`
@@ -201,13 +201,13 @@ Nothing has a positive after-cost edge yet. All 229 settled coins average -8.7% 
 Meta, from the scan_movers rows: the only real 5-minute flow is on minutes-old launches with joke or holiday names (FOMOMAS, 0h old, $37.6k mcap, $59k 5m, 70% buys; Parallax, 6 min old on Meteora DBC, $16.9k mcap, $29k 5m, 56% buys). Both have 5m volume at or above their market cap, and FOMOMAS's 5m equals its whole 1h, which is a farm signature (V13) until proven otherwise. Name copies are fading: the PEPE clone is -90% on $1.5k 5m, and FIONA at 96h is down to $6.6k 5m against $585k over 1h, under the $10k bar. The crawler's summary doesn't match these rows (HI is $7.3k and -69% here, BERTCOIN is +536%, and JENSEN, FSDV15, zPUSSY and the Trump names aren't in the movers), so I'm treating the news as news, not trench meta. Setups: no entries. FOMOMAS and Parallax are research-only, since both are under the one-hour new-pair zone the guide says not to snipe (V1, V5); if you check them, run holder, dev and bundle checks and set the stop before anything else. Pass on PVE (0 5m volume after +1163%) and on the sub-$10k spikes.
 
 ## Moving most in its scans, last 30 min (1h volume)
-- NCSP: $269,209 1h vol, $86,394 mcap, +12% 1h  
-  CA `816hX5ah459t2z37LPQC8X11uZECsgHwvs8iBRWcpump`
-- ChristmASS: $225,022 1h vol, $297,133 mcap, +690% 1h  
-  CA `8WW5B189mPntQQ85HTPvQNsYxXhQbAhdjXvZ6qaapump`
-- UCASH: $151,519 1h vol, $519,308 mcap, -37% 1h  
-  CA `7cFiqdT46zs7ooHWLFiLSaSQKLMibtokh9dBinsspump`
-- PORK: $87,633 1h vol, $235,480 mcap, +488% 1h  
-  CA `2UwxN56YJrxAu1sDDYt2aDCUxFcCS3fHSLmNHGLWpump`
-- tap: $84,272 1h vol, $40,168 mcap, +108% 1h  
-  CA `Bk1kfYeoS9arD5Cq6WtNCGSHqVkk9ZhDA7kUVARSpump`
+- FIONA: $151,853 1h vol, $2,585,987 mcap, -2% 1h  
+  CA `B34nXKzCgsJb9ChLuSHPRpXLE3WFSWyeT8Cqkzzmpump`
+- FOMOMAS: $136,299 1h vol, $49,373 mcap, +391% 1h  
+  CA `9Gu5JYt4Pas6cW4S6qtyFkDucFj6GMtpJiDC9sQbpump`
+- JENSEN: $64,553 1h vol, $733,687 mcap, -25% 1h  
+  CA `HKiMA2mKQHU2cjfZ4Kbmru5GBGCauSNqPtpu8cfmpump`
+- PumpMeme: $62,274 1h vol, $469,268 mcap, -1% 1h  
+  CA `93uamrbDerKbUh8MSjNF1wDtxYvEUD1CS9BcHn1apump`
+- COPIUM: $51,479 1h vol, $734,328 mcap, -11% 1h  
+  CA `BAKsQrynzwadyACDMsg3J5R8a4CTvj1u7kEYyjq7pump`
