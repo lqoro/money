@@ -1,13 +1,13 @@
 # Trencher live report
 
-Updated 2026-11-23T00:50:53Z (paper trading, never real money)
+Updated 2026-11-23T01:06:02Z (paper trading, never real money)
 
 - Equity: $74.23 (-25.8% vs $100 start)
 - Closed trades: 22, 3 wins
 - Fees paid: $14.78 (axiom $2.81, network $9.18, pool $2.66), plus $4.15 lost to slippage
 - New trades: WATCH-ONLY (scans and decides, buys nothing)
-- Brain: subscription, claude-haiku-5-5 for routine calls, claude-opus-5-5 for the daily review; 278 routine calls and 0 plan-limit hits in 48h
-- Watch log: 82 coins being followed, 2736 filed, 0 would-buys (6h follow, sampled every 2 min)
+- Brain: subscription, claude-haiku-5-5 for routine calls, claude-opus-5-5 for the daily review; 279 routine calls and 0 plan-limit hits in 48h
+- Watch log: 87 coins being followed, 2736 filed, 0 would-buys (6h follow, sampled every 2 min)
 
 ## Scorecard (after fees)
 - 22 closed, 3 won (14%), net $-25.79
@@ -73,9 +73,19 @@ Updated 2026-11-23T00:50:53Z (paper trading, never real money)
   CA `H4gHnZ3NCU7Z9XQwGX6YYJNyieGEW8pqwGRUcdSxpump`
 
 ## Last scan
-- 00:50Z: 1 coins, 1 with pairs, 0 passed the market filters, 0 researched
+- 01:04Z: 4 coins, 4 with pairs, 1 passed the market filters, 1 researched
 
 ## Coins it looked at, and why it passed
+- 01:05Z singularity (FINAL_STRETCH, $15,305 mcap, $3,316 5m vol): REJECT, RugCheck danger: Creator history of rugged tokens  
+  CA `5aR9BacmmxvUy8wQGTYKWC2vBS3Z8q2Y1VBC6JALpump`
+- 01:00Z DESSA (MIGRATED, $3,116,357 mcap, $9,578 5m vol): PASS at conviction 3, PASS: DESSA is clean on holders, but it's a $3.1M coin with the first resistance only 1.35x away and no live story behind a bottom buy. Big cap, no room (V6, V13).  
+  CA `npz2FhoufQ7pKqhGpaipYWacrAkidyW2yDpVWSvpump`
+- 00:56Z HOGE (MIGRATED, $550,718 mcap, $3,017 5m vol): REJECT, Bundles: 9 linked wallet cluster(s) hold 27.7% of supply (>20%) (V17)  
+  CA `FVzqGqRmr4UH1Fif6dewmwbJ1p4YUZCu8dcw4Efopump`
+- 00:55Z ALONE (FINAL_STRETCH, $26,102 mcap, $26,759 5m vol): REJECT, RugCheck danger: Creator history of rugged tokens  
+  CA `8m7sCVngbi5TfKARfhAHU6B71yfEMNPDWteECGmJpump`
+- 00:51Z FSDV15 (MIGRATED, $2,575,291 mcap, $6,900 5m vol): PASS at conviction 3, PASS: 5m flow is 0.42x its hourly pace ($6.9k against a $10k bar), and the first resistance is only 1.34x away on a $2.6M cap. Blocker: flow below pace. (V1, V6, V13)  
+  CA `3BcJ4SSCfbxDMrWcUDucyCWxMjmy4M2ECCtvxu86pump`
 - 00:48Z CATEGIVING (no setup, $29,781 mcap, $4,726 5m vol): REJECT, No setup fits: not Final Stretch, not a migrated runner, not a healthy dip  
   CA `APa2jK3ZRK9XhuKHGXSFNDohfU5RfZZKajiv26qSvX2X`
 - 00:42Z MINELIUS (MIGRATED, $7,385,908 mcap, $6,626 5m vol): PASS at conviction 3, PASS. Bottom buy with no story: 29% off a $10.4M peak, zero buzz, theme pace 0.82x, and a 7-hour-old domain pitching a privacy launchpad with no GitHub (V1, V13).  
@@ -86,16 +96,6 @@ Updated 2026-11-23T00:50:53Z (paper trading, never real money)
   CA `7cFiqdT46zs7ooHWLFiLSaSQKLMibtokh9dBinsspump`
 - 00:34Z ZOL (MIGRATED, $200,921 mcap, $10,957 5m vol): PASS at conviction 2, PASS: flow at 0.37x its hourly pace, sellers ahead 8.4k to 4.6k over the hour, and five ZOL copies split the crowd. Blocker "flow below pace" (V1, V6, V13).  
   CA `AQfw8J74V17erZsmMz4oK474eVLBaP44gD33vVbhtHo5`
-- 00:33Z wifout (FINAL_STRETCH, $16,630 mcap, $6,737 5m vol): PASS at conviction 3, PASS. wifout is a 23-copy wif vamp field with 5m flow at 0.67x its hourly pace, no catalyst, and the theme running at 0.28x pace. Blocker: flow below pace, no catalyst. (V1, V6)  
-  CA `Ccg5kfiXVkmSsgixLcwTAuoibMFXT1Nny6g34q4kpump`
-- 00:32Z COPIUM (MIGRATED, $646,910 mcap, $3,998 5m vol): PASS at conviction 3, PASS: flow below pace (5m $4k at 0.76x hourly pace), no breakout, and the site doesn't show this CA. Blockers: "flow below pace" and "no breakout". (V1, V3, V13)  
-  CA `BAKsQrynzwadyACDMsg3J5R8a4CTvj1u7kEYyjq7pump`
-- 00:27Z PLAYGTA (MIGRATED, $30,233 mcap, $5,164 5m vol): PASS at conviction 3, PASS: no higher low, sellers lead, and the bounce is a spike off the hourly low. Blocker "no higher low" (V1, V6).  
-  CA `4rsQFakKrhvgH854V54E6aJTB5BXfmSRjapGJM19pump`
-- 00:26Z PRIVI (DIP, $56,194 mcap, $2,872 5m vol): REJECT, Dip with fading attention is a falling knife, not a dip (5m at 0.18x the hour's pace, under 0.6x)  
-  CA `89DKn95R7QvjAcGSeqHvmj3pq7TJFbJcckURqjvuHsHp`
-- 00:21Z cateball (MIGRATED, $1,948,725 mcap, $2,720 5m vol): PASS at conviction 2, PASS: flow below pace (5m $2.7k at 0.69x hourly, under the $10k bar) and no story left to buy. Blocker "flow below pace" plus "dead story". Fading cateball, no catalyst, CA not on its own site (V1, V6, V13).  
-  CA `4npJ3avxnGhCzKbWQpLrQXAHsjWzKr4JqBsbu5Fspump`
 
 ## What its skips did next (last 48h)
 A skip "ran" if the coin reached the first target (1.5x) from the skip price before a 20% drop, "dumped" if the drop came first. Sampled every 10 min, followed 6h.
@@ -109,7 +109,7 @@ A skip "ran" if the coin reached the first target (1.5x) from the skip price bef
     CA `5fWLSMA5HoK9W4VoTMi4c3qjyu3N2LsKRSM8Ffpgpump`
   - ran: KYC up to 2.37x  
     CA `47YCrfUmSQUF9vnPsPGSzrmTcxttdRAWejCMkhrrpump`
-- near the high / chasing: blocked 21, ran 2, dumped 16, flat 0, open 3 (saving losses: keep it)
+- near the high / chasing: blocked 20, ran 2, dumped 15, flat 0, open 3 (saving losses: keep it)
   - ran: CUNTS up to 1.61x  
     CA `7CvW68FD9KjNYGByfykhaNps7VNPLN8dFwMRfmgQpump`
   - ran: SANTA up to 1.85x  
@@ -119,7 +119,7 @@ A skip "ran" if the coin reached the first target (1.5x) from the skip price bef
     CA `Dtx414D8jurspmB1jqJWsYU66pemoXRjQeXx7TC1pump`
   - ran: GIF up to 2.16x  
     CA `B6wM98qkQKP71mhPA48S7No6TxM4KaXdFojDTZeUpump`
-- RugCheck danger: blocked 13, ran 1, dumped 12, flat 0, open 0 (saving losses: keep it)
+- RugCheck danger: blocked 13, ran 1, dumped 11, flat 0, open 1 (saving losses: keep it)
   - ran: MIHAOMAS up to 1.62x  
     CA `3XsFunPdji9U1EgJXokZysw8SB3t74un89b6KLEVpump`
 - falling knife / no higher low: blocked 12, ran 2, dumped 3, flat 4, open 3 (mixed)
@@ -187,13 +187,13 @@ Nothing has a positive edge after costs. All 166 settled coins averaged -11.3% n
 The scan's meta is fresh pump.fun joke coins under about 3 hours old, at $15k to $60k caps, with 57-59% buyers and 5-minute volume near or above their caps (wifout, PCRY, enter the singularity, PRIVI). The holiday lane is one coin, not a theme: XMAS is the only mover on it ($170k cap, 75% buys, $12.8k 5m, +23% in 1h), so the web's holiday call is confirmed by a single ticker. Trump, GTA and the Anthropic/IPO stories are mostly absent from the movers; PLAYGTA is the exception (47% buys, +138% 1h on the scan, which contradicts the web's 0% buys figure, so I trust the scan). Fading are older names with sell pressure: cateball (-17.5% 1h at $1.9M), LilChud (29% buys, -44%), and the pump.fun ZOL (-98%, 1% buys), while the Raydium ZOL is a different token and a ticker-collision trap. Research order: XMAS first as a MIGRATED candidate (under 12h, clean buy flow; reconcile the web's $112k cap against the scan's $170k), then PCRY as a FINAL_STRETCH candidate (its $30.7k 5m on a $23.8k cap is churn-heavy, so bundle checks come first); enter the singularity is 6 minutes old and too new to size, so research it and don't chase.
 
 ## Moving most in its scans, last 30 min (1h volume)
-- ZOL: $351,020 1h vol, $200,921 mcap, -36% 1h  
-  CA `AQfw8J74V17erZsmMz4oK474eVLBaP44gD33vVbhtHo5`
-- PRIVI: $193,775 1h vol, $56,194 mcap, +466% 1h  
-  CA `89DKn95R7QvjAcGSeqHvmj3pq7TJFbJcckURqjvuHsHp`
-- ZOL: $170,571 1h vol, $1,307 mcap, -99% 1h  
-  CA `EWTJeCWUpyu5Mj2wH7qJuY1yPn7FfswHnmiTLpnapump`
+- FSDV15: $197,935 1h vol, $2,575,291 mcap, +14% 1h  
+  CA `3BcJ4SSCfbxDMrWcUDucyCWxMjmy4M2ECCtvxu86pump`
 - cCAT: $147,134 1h vol, $84,799 mcap, +185% 1h  
   CA `63aEoSt7oGthFR5koz1572CAL9dd7NYGp7sWeQyjpump`
-- wifout: $120,796 1h vol, $16,735 mcap, +592% 1h  
-  CA `Ccg5kfiXVkmSsgixLcwTAuoibMFXT1Nny6g34q4kpump`
+- ZOL: $128,387 1h vol, $1,309 mcap, -99% 1h  
+  CA `EWTJeCWUpyu5Mj2wH7qJuY1yPn7FfswHnmiTLpnapump`
+- PCRY: $127,150 1h vol, $6,224 mcap, +52% 1h  
+  CA `BSFmFyFFmRB3R4q7CXoqgDTm8LTBBwaJaQXnvubCpump`
+- singularity: $100,190 1h vol, $14,599 mcap, +57% 1h  
+  CA `5aR9BacmmxvUy8wQGTYKWC2vBS3Z8q2Y1VBC6JALpump`
