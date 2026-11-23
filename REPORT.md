@@ -1,13 +1,13 @@
 # Trencher live report
 
-Updated 2026-11-23T07:08:42Z (paper trading, never real money)
+Updated 2026-11-23T07:23:57Z (paper trading, never real money)
 
 - Equity: $74.23 (-25.8% vs $100 start)
 - Closed trades: 22, 3 wins
 - Fees paid: $14.78 (axiom $2.81, network $9.18, pool $2.66), plus $4.15 lost to slippage
 - New trades: WATCH-ONLY (scans and decides, buys nothing)
-- Brain: subscription, claude-haiku-5-5 for routine calls, claude-opus-5-5 for the daily review; 338 routine calls and 0 plan-limit hits in 48h
-- Watch log: 90 coins being followed, 2825 filed, 0 would-buys (6h follow, sampled every 2 min)
+- Brain: subscription, claude-haiku-5-5 for routine calls, claude-opus-5-5 for the daily review; 340 routine calls and 0 plan-limit hits in 48h
+- Watch log: 91 coins being followed, 2827 filed, 0 would-buys (6h follow, sampled every 2 min)
 
 ## Scorecard (after fees)
 - 22 closed, 3 won (14%), net $-25.79
@@ -73,9 +73,15 @@ Updated 2026-11-23T07:08:42Z (paper trading, never real money)
   CA `H4gHnZ3NCU7Z9XQwGX6YYJNyieGEW8pqwGRUcdSxpump`
 
 ## Last scan
-- 07:08Z: 2 coins, 2 with pairs, 0 passed the market filters, 0 researched
+- 07:23Z: 1 coins, 1 with pairs, 0 passed the market filters, 0 researched
 
 ## Coins it looked at, and why it passed
+- 07:22Z COPIUM (MIGRATED, $604,860 mcap, $6,192 5m vol): PASS at conviction 4, PASS: no catalyst, narrative not rising, and the project site doesn't show this CA. One of 14 COPIUM copies in a crowded field, so the bottom-buy rule blocks it. (V1, V3, V13)  
+  CA `BAKsQrynzwadyACDMsg3J5R8a4CTvj1u7kEYyjq7pump`
+- 07:17Z FSDV15 (MIGRATED, $3,061,598 mcap, $6,147 5m vol): PASS at conviction 3, PASS — $3.06M cap, 12.7% off a $3.51M peak, 5m down 5.5%. Target too close, no breakout, big cap no room. A crowded 27-copy meme that isn't breaking out (V1, V6, V13).  
+  CA `3BcJ4SSCfbxDMrWcUDucyCWxMjmy4M2ECCtvxu86pump`
+- 07:16Z task (no setup, $11,779 mcap, $20,749 5m vol): REJECT, No setup fits: not Final Stretch, not a migrated runner, not a healthy dip  
+  CA `BJeEE9WCP1HZqT1D3heD9Do96D4dnEcNoDHspvQapump`
 - 07:03Z PumpMeme (MIGRATED, $1,455,981 mcap, $3,895 5m vol): REJECT, Top 10 hold 25.6% ex-pool (>25%) (V13)  
   CA `93uamrbDerKbUh8MSjNF1wDtxYvEUD1CS9BcHn1apump`
 - 06:58Z milky (FINAL_STRETCH, $25,877 mcap, $19,928 5m vol): PASS at conviction 3, PASS — milky is up 85% on 5m and 1145% in the hour, sitting 8.5% off a 17-minute-old peak with no printed higher low, inside a 14-copy ticker field. That's a chasing spike, the skip type that dumped 18 of 24 (V1, V6).  
@@ -90,16 +96,10 @@ Updated 2026-11-23T07:08:42Z (paper trading, never real money)
   CA `Jd3NCawdFiDNWpLiTtsMqoeoBMjC1ZQMrMScRVzpump`
 - 06:37Z COPIUM (MIGRATED, $531,489 mcap, $3,503 5m vol): PASS at conviction 4, PASS. Flow below pace (0.58x), no reclaimed bounce, and a 14-ticker copium field with no catalyst. Blocker: flow below pace. (V1, V6, V13)  
   CA `BAKsQrynzwadyACDMsg3J5R8a4CTvj1u7kEYyjq7pump`
-- 06:32Z Milo (MIGRATED, $82,006 mcap, $40,970 5m vol): PASS at conviction 3, PASS: chasing a 5m spike, under an hour old, and not the leader of a 21-copy "milo" field. Blockers: chasing, too new, split crowd. (V1, V6, V13)  
-  CA `Cz1bmoA8PW2p8iS5ugxYzhAM1QQg6bRyNp6CmrKui2hL`
-- 06:31Z FSDV15 (MIGRATED, $2,873,775 mcap, $3,925 5m vol): PASS at conviction 3, PASS. Clean holders, but a $2.9M migrated coin with $3.9k of 5m flow, 1.2x to its high, and 27 copies of the ticker. Blocker: "target too close" plus "no breakout" (V1, V6, V13).  
-  CA `3BcJ4SSCfbxDMrWcUDucyCWxMjmy4M2ECCtvxu86pump`
-- 06:22Z hCAT (MIGRATED, $143,766 mcap, $2,463 5m vol): PASS at conviction 3, PASS: no printed higher low, $2.5k 5m flow under the $10k bar, and the chart data doesn't match this coin's price. Can't read the money shape. (V1, V6)  
-  CA `2FYs4vApfj4ErsggpFDfzMv1WvxnyiLtzNEj84mS6TLh`
 
 ## What its skips did next (last 48h)
 A skip "ran" if the coin reached the first target (1.5x) from the skip price before a 20% drop, "dumped" if the drop came first. Sampled every 10 min, followed 6h.
-- flow below pace: blocked 27, ran 3, dumped 21, flat 0, open 3 (saving losses: keep it)
+- flow below pace: blocked 27, ran 3, dumped 22, flat 0, open 2 (saving losses: keep it)
   - ran: snowball up to 1.59x  
     CA `3D7YQcnXi6RMjWxheiE8VLuGXJTtgQkmyugGYvzjpump`
   - ran: OpenIndex up to 1.63x  
@@ -152,9 +152,11 @@ A skip "ran" if the coin reached the first target (1.5x) from the skip price bef
     CA `BCTwG3LDhNcthcK374aWQfAzLYGRXDu1apmrqw3Tpump`
   - ran: Mfer up to 1.55x  
     CA `9tX1UpBGeNqMb1VqqzVumwzW71ybsNZFyWKYiL8Ppump`
-- thin 5m volume: blocked 6, ran 1, dumped 4, flat 0, open 1 (saving losses: keep it)
-  - ran: chud up to 1.55x  
-    CA `EV7J2QaPXPytSkM1LD9GPRkgAbmSEr9R3kYiXBzbpump`
+- other: blocked 7, ran 2, dumped 3, flat 0, open 2 (mixed)
+  - ran: ZOL up to 1.64x  
+    CA `AQfw8J74V17erZsmMz4oK474eVLBaP44gD33vVbhtHo5`
+  - ran: CATEGIVING up to 1.81x  
+    CA `APa2jK3ZRK9XhuKHGXSFNDohfU5RfZZKajiv26qSvX2X`
 
 ## Daily review (2026-11-22, claude-opus-5-5)
 Nothing has a positive edge after costs. All 166 settled coins averaged -11.3% net under the simple plan, and no setup or stage was positive. The closest were FINAL_STRETCH at -3.3% (n=21) and DIP at -5.9% (n=20). Both look slightly positive before costs (about +6.7% and +3.6%), but with ~20 samples the error bar is roughly ±13 points, and some coins are logged more than once, so both are noise for now. The biggest loss is the 9.8% average round-trip cost on a $10 buy: at that cost, the simple plan only breaks even if about 43% of coins hit 1.5x before -20%. Overall only 23.5% did, and the best setup (FINAL_STRETCH) managed 38.1%. I can't answer whether the routine model's would-buys beat its passes, because it logged zero would-buys in 24h out of 99 coins it reviewed. The coins it passed on did lose more than the coins the checklist rejected (-15.2% vs -5.7%). That suggests passing them was correct, but also that clearing the checklist didn't pick better coins this day.
@@ -195,13 +197,13 @@ Nothing has a positive edge after costs. All 166 settled coins averaged -11.3% n
 Meta: the movers are loud, and the loudest flow is pump.fun joke launches under about 1h old (PumpMeme, WINU, MILLY, Milo, all up 190% to 2000% on the hour), but the older fresh ones are already bleeding (HUMAN -51%, Jensen Huang -71%), so that lottery theme is cooling. Second, animals and cats (hCAT, cateball) are mixed, and cateball is sell-leaning at 35% buys. Third, AI, tech and people names (agent milly, Tesla FSD v15, NO HUMAN) show 60-64% buys on mid caps: alive, not accelerating. Fading: the Trump dinner story (no TRUMP coin in the movers, and the headlines say it is down 99%) and old names like WASTED and BELLA. Setups to research first: Milo (already on PumpSwap, 85k cap, 49k 5m volume, 62% buys, 0.3h old) has the cleanest flow on the list and fits the MIGRATED filter; MILLY and WINU are early lottery tickets with holder and bundle checks still to run; PumpMeme at 760k after a 2000% hour is a chase, not a setup, unless it dips and holds. The web summary's caps and volumes (PumpMeme at $90k, MINELIUS, TAIL) don't match the scan, so I'm weighting only the scan numbers. No hack-named coin is a setup.
 
 ## Moving most in its scans, last 30 min (1h volume)
+- Milo: $420,600 1h vol, $10,837 mcap, -64% 1h  
+  CA `Cz1bmoA8PW2p8iS5ugxYzhAM1QQg6bRyNp6CmrKui2hL`
 - PumpMeme: $279,297 1h vol, $1,446,839 mcap, +38% 1h  
   CA `93uamrbDerKbUh8MSjNF1wDtxYvEUD1CS9BcHn1apump`
-- UCASH: $186,203 1h vol, $918,770 mcap, -32% 1h  
-  CA `7cFiqdT46zs7ooHWLFiLSaSQKLMibtokh9dBinsspump`
-- MINELIUS: $113,572 1h vol, $10,287,954 mcap, +36% 1h  
-  CA `E9rWKjVhHMxQkxfREr7Li8Yy46rVcWiWHoKVQAe9pump`
-- MILLY: $57,485 1h vol, $2,087 mcap, -51% 1h  
-  CA `EYdPEx2JqZMjW7UQszGDwyh7kTD25pSEzikNdNKkpump`
-- WINU: $55,756 1h vol, $2,138 mcap, -13% 1h  
-  CA `3ggEYfkWC8Yzii8imDKJw2rB1FyMWgGhTr6ZDs8Tpump`
+- FSDV15: $72,091 1h vol, $3,054,141 mcap, +11% 1h  
+  CA `3BcJ4SSCfbxDMrWcUDucyCWxMjmy4M2ECCtvxu86pump`
+- Lioness: $65,144 1h vol, $3,691 mcap, +15% 1h  
+  CA `G3jsz81KedLJcfEZnPnUNUqAo7n6V8VEgUBRUZwypump`
+- COPIUM: $58,321 1h vol, $604,860 mcap, +29% 1h  
+  CA `BAKsQrynzwadyACDMsg3J5R8a4CTvj1u7kEYyjq7pump`
