@@ -1,13 +1,13 @@
 # Trencher live report
 
-Updated 2026-11-23T08:24:30Z (paper trading, never real money)
+Updated 2026-11-23T08:39:36Z (paper trading, never real money)
 
 - Equity: $74.23 (-25.8% vs $100 start)
 - Closed trades: 22, 3 wins
 - Fees paid: $14.78 (axiom $2.81, network $9.18, pool $2.66), plus $4.15 lost to slippage
 - New trades: WATCH-ONLY (scans and decides, buys nothing)
-- Brain: subscription, claude-haiku-5-5 for routine calls, claude-opus-5-5 for the daily review; 353 routine calls and 0 plan-limit hits in 48h
-- Watch log: 89 coins being followed, 2842 filed, 0 would-buys (6h follow, sampled every 2 min)
+- Brain: subscription, claude-haiku-5-5 for routine calls, claude-opus-5-5 for the daily review; 354 routine calls and 0 plan-limit hits in 48h
+- Watch log: 84 coins being followed, 2848 filed, 0 would-buys (6h follow, sampled every 2 min)
 
 ## Scorecard (after fees)
 - 22 closed, 3 won (14%), net $-25.79
@@ -73,9 +73,11 @@ Updated 2026-11-23T08:24:30Z (paper trading, never real money)
   CA `H4gHnZ3NCU7Z9XQwGX6YYJNyieGEW8pqwGRUcdSxpump`
 
 ## Last scan
-- 08:23Z: 4 coins, 4 with pairs, 0 passed the market filters, 0 researched
+- 08:38Z: 7 coins, 7 with pairs, 0 passed the market filters, 0 researched
 
 ## Coins it looked at, and why it passed
+- 08:34Z PumpMeme (MIGRATED, $1,470,931 mcap, $5,177 5m vol): PASS at conviction 3, PASS: 5m flow is at 0.93x pace, the peak is only 1.23x away, and it's one of 18 same-ticker copies on a 5-hour-old domain. Flow blocker first. (V1, V6, V13)  
+  CA `93uamrbDerKbUh8MSjNF1wDtxYvEUD1CS9BcHn1apump`
 - 08:22Z WALLSTFLY (MIGRATED, $67,530 mcap, $2,564 5m vol): PASS at conviction 2, PASS: 3% off a $70k high on a 2-hour-old coin, 5m flow $2.6k at 0.72x pace, no printed higher low, and the site doesn't show the CA. Blocker: "chasing" plus "flow below pace" (V1, V6, V13).  
   CA `2DQbV7hsqxKVWmFakXGGhBbNyY28tDJ9YuJkojYrpump`
 - 08:16Z MINELIUS (MIGRATED, $13,402,584 mcap, $5,079 5m vol): PASS at conviction 2, PASS: $13.4M cap, 2% off a spike it added in the last hour, 5m flow at 0.7x pace, 24 copies on the ticker. Chasing, big cap, no room (V1, V6, V13).  
@@ -94,12 +96,10 @@ Updated 2026-11-23T08:24:30Z (paper trading, never real money)
   CA `A9HEXT7dAaky5TUKErNKK4f1TLauhWg3JFNXkZWTpump`
 - 07:48Z PumpMeme (MIGRATED, $1,300,119 mcap, $3,636 5m vol): REJECT, Top 10 hold 25.6% ex-pool (>25%) (V13)  
   CA `93uamrbDerKbUh8MSjNF1wDtxYvEUD1CS9BcHn1apump`
-- 07:36Z WALLSTFLY (MIGRATED, $49,887 mcap, $2,740 5m vol): PASS at conviction 2, PASS: chasing a 1-hour-old fly at its high, on $2.7k of 5m volume at 0.44x pace, with four tickers in the field and a site that doesn't show the CA. Holders are clean, but the entry is the problem. (V1, V6, V13)  
-  CA `2DQbV7hsqxKVWmFakXGGhBbNyY28tDJ9YuJkojYrpump`
 
 ## What its skips did next (last 48h)
 A skip "ran" if the coin reached the first target (1.5x) from the skip price before a 20% drop, "dumped" if the drop came first. Sampled every 10 min, followed 6h.
-- flow below pace: blocked 30, ran 3, dumped 21, flat 0, open 6 (saving losses: keep it)
+- flow below pace: blocked 31, ran 4, dumped 22, flat 0, open 5 (saving losses: keep it)
   - ran: snowball up to 1.59x  
     CA `3D7YQcnXi6RMjWxheiE8VLuGXJTtgQkmyugGYvzjpump`
   - ran: OpenIndex up to 1.63x  
@@ -113,7 +113,7 @@ A skip "ran" if the coin reached the first target (1.5x) from the skip price bef
     CA `5fWLSMA5HoK9W4VoTMi4c3qjyu3N2LsKRSM8Ffpgpump`
   - ran: KYC up to 2.37x  
     CA `47YCrfUmSQUF9vnPsPGSzrmTcxttdRAWejCMkhrrpump`
-- near the high / chasing: blocked 24, ran 2, dumped 20, flat 1, open 1 (saving losses: keep it)
+- near the high / chasing: blocked 24, ran 2, dumped 21, flat 1, open 0 (saving losses: keep it)
   - ran: CUNTS up to 1.61x  
     CA `7CvW68FD9KjNYGByfykhaNps7VNPLN8dFwMRfmgQpump`
   - ran: SANTA up to 1.85x  
@@ -123,7 +123,7 @@ A skip "ran" if the coin reached the first target (1.5x) from the skip price bef
     CA `Dtx414D8jurspmB1jqJWsYU66pemoXRjQeXx7TC1pump`
   - ran: GIF up to 2.16x  
     CA `B6wM98qkQKP71mhPA48S7No6TxM4KaXdFojDTZeUpump`
-- falling knife / no higher low: blocked 15, ran 4, dumped 4, flat 5, open 2 (mixed)
+- falling knife / no higher low: blocked 15, ran 4, dumped 5, flat 5, open 1 (mixed)
   - ran: UrAnus up to 2.97x  
     CA `27u3diWofnXGUkddjLGhcy1nRssFKHW3RtNbpWzUpump`
   - ran: STREETS up to 1.73x  
@@ -152,7 +152,7 @@ A skip "ran" if the coin reached the first target (1.5x) from the skip price bef
     CA `BCTwG3LDhNcthcK374aWQfAzLYGRXDu1apmrqw3Tpump`
   - ran: Mfer up to 1.55x  
     CA `9tX1UpBGeNqMb1VqqzVumwzW71ybsNZFyWKYiL8Ppump`
-- other: blocked 8, ran 3, dumped 3, flat 0, open 2 (mixed)
+- other: blocked 8, ran 3, dumped 4, flat 0, open 1 (mixed)
   - ran: ZOL up to 1.64x  
     CA `AQfw8J74V17erZsmMz4oK474eVLBaP44gD33vVbhtHo5`
   - ran: CATEGIVING up to 1.81x  
@@ -205,7 +205,7 @@ Trencher read, from the scan numbers (the web summary is only context here). Thr
   CA `Jd3NCawdFiDNWpLiTtsMqoeoBMjC1ZQMrMScRVzpump`
 - MINELIUS: $87,246 1h vol, $13,477,550 mcap, +24% 1h  
   CA `E9rWKjVhHMxQkxfREr7Li8Yy46rVcWiWHoKVQAe9pump`
-- COPIUM: $57,172 1h vol, $558,072 mcap, -6% 1h  
-  CA `BAKsQrynzwadyACDMsg3J5R8a4CTvj1u7kEYyjq7pump`
-- task: $55,256 1h vol, $5,301 mcap, -67% 1h  
-  CA `BJeEE9WCP1HZqT1D3heD9Do96D4dnEcNoDHspvQapump`
+- PumpGiving: $67,880 1h vol, $4,781 mcap, -29% 1h  
+  CA `A9HEXT7dAaky5TUKErNKK4f1TLauhWg3JFNXkZWTpump`
+- PumpMeme: $65,666 1h vol, $1,414,233 mcap, +2% 1h  
+  CA `93uamrbDerKbUh8MSjNF1wDtxYvEUD1CS9BcHn1apump`
