@@ -1,13 +1,13 @@
 # Trencher live report
 
-Updated 2026-11-23T04:52:51Z (paper trading, never real money)
+Updated 2026-11-23T05:07:58Z (paper trading, never real money)
 
 - Equity: $74.23 (-25.8% vs $100 start)
 - Closed trades: 22, 3 wins
 - Fees paid: $14.78 (axiom $2.81, network $9.18, pool $2.66), plus $4.15 lost to slippage
 - New trades: WATCH-ONLY (scans and decides, buys nothing)
-- Brain: subscription, claude-haiku-5-5 for routine calls, claude-opus-5-5 for the daily review; 319 routine calls and 0 plan-limit hits in 48h
-- Watch log: 105 coins being followed, 2782 filed, 0 would-buys (6h follow, sampled every 2 min)
+- Brain: subscription, claude-haiku-5-5 for routine calls, claude-opus-5-5 for the daily review; 320 routine calls and 0 plan-limit hits in 48h
+- Watch log: 102 coins being followed, 2786 filed, 0 would-buys (6h follow, sampled every 2 min)
 
 ## Scorecard (after fees)
 - 22 closed, 3 won (14%), net $-25.79
@@ -73,9 +73,11 @@ Updated 2026-11-23T04:52:51Z (paper trading, never real money)
   CA `H4gHnZ3NCU7Z9XQwGX6YYJNyieGEW8pqwGRUcdSxpump`
 
 ## Last scan
-- 04:52Z: 4 coins, 4 with pairs, 0 passed the market filters, 0 researched
+- 05:06Z: 1 coins, 1 with pairs, 0 passed the market filters, 0 researched
 
 ## Coins it looked at, and why it passed
+- 05:06Z COPIUM (DIP, $431,980 mcap, $3,300 5m vol): PASS at conviction 3, PASS — DIP with no catalyst, theme pace 0.81x, 14 same-ticker copies, and the site doesn't show this CA. Pass on a farm-shaped setup (V13, V6).  
+  CA `BAKsQrynzwadyACDMsg3J5R8a4CTvj1u7kEYyjq7pump`
 - 04:50Z FSDV15 (MIGRATED, $2,257,482 mcap, $2,572 5m vol): PASS at conviction 3, PASS. Leader of a 27-copy "FSD" field, but flow is at 0.58x its hourly pace, the theme is at 0.37x, there's no printed higher low, and the coin is over $1M with no room to the high. Farm-adjacent until proven otherwise. (V1, V6, V13)  
   CA `3BcJ4SSCfbxDMrWcUDucyCWxMjmy4M2ECCtvxu86pump`
 - 04:44Z panel (FINAL_STRETCH, $24,520 mcap, $21,426 5m vol): REJECT, Dev holds 2.0% (>1%) (V13, V17)  
@@ -94,8 +96,6 @@ Updated 2026-11-23T04:52:51Z (paper trading, never real money)
   CA `7cFiqdT46zs7ooHWLFiLSaSQKLMibtokh9dBinsspump`
 - 04:24Z TAIL (FINAL_STRETCH, $23,498 mcap, $52,209 5m vol): PASS at conviction 3, PASS — chasing spike on a copy in an 18-coin tail field. Up 645% in the hour, 5m +46%, 7.5x its hourly pace. Wait for a retrace and a printed higher low, if one ever prints (V1, V6).  
   CA `FzoAgxLPmeS7LajnoAQ1uPPu4vZ7t8VXWJr73AGNpump`
-- 04:20Z COPIUM (DIP, $428,604 mcap, $3,269 5m vol): PASS at conviction 3, PASS: COPIUM is a DIP with a clean holder table, but it fails the bottom-buy rule. Theme pace is 0.86x, no catalyst, and the site says the CA is "AWAITING CONFIRMATION" on a 7-hour-old domain. (V1, V3, V13)  
-  CA `BAKsQrynzwadyACDMsg3J5R8a4CTvj1u7kEYyjq7pump`
 
 ## What its skips did next (last 48h)
 A skip "ran" if the coin reached the first target (1.5x) from the skip price before a 20% drop, "dumped" if the drop came first. Sampled every 10 min, followed 6h.
@@ -129,7 +129,7 @@ A skip "ran" if the coin reached the first target (1.5x) from the skip price bef
     CA `27u3diWofnXGUkddjLGhcy1nRssFKHW3RtNbpWzUpump`
   - ran: STREETS up to 1.73x  
     CA `82mseLFauphc2yutbaDGgViahquJ1jGVLpyof99xpump`
-- falling knife (code): blocked 12, ran 3, dumped 5, flat 0, open 4 (mixed)
+- falling knife (code): blocked 12, ran 3, dumped 6, flat 0, open 3 (saving losses: keep it)
   - ran: RIZZMAS3 up to 1.84x  
     CA `BQcV4Ryfu9bZK8egAF89AhkojdJqAaDt4xTFwUQ2pump`
   - ran: STREETS up to 1.73x  
@@ -193,11 +193,11 @@ The meta is fresh pump.fun joke launches, not the news. Coins under an hour old 
 ## Moving most in its scans, last 30 min (1h volume)
 - Fly: $249,433 1h vol, $181,396 mcap, -8% 1h  
   CA `84tAcSK5L9kuQEVM8C8vMHXnfdA83nGBT2nYfSbPUcAc`
-- PEACH: $198,868 1h vol, $303,578 mcap, -53% 1h  
-  CA `61yuZf1JyTKqoCfS784SusFGVekA6YUsGTfDg3o6pump`
-- UCASH: $187,323 1h vol, $1,586,457 mcap, +9% 1h  
-  CA `7cFiqdT46zs7ooHWLFiLSaSQKLMibtokh9dBinsspump`
-- MINELIUS: $115,540 1h vol, $8,797,505 mcap, +32% 1h  
-  CA `E9rWKjVhHMxQkxfREr7Li8Yy46rVcWiWHoKVQAe9pump`
 - BIRDMAGA: $106,398 1h vol, $239,390 mcap, -4% 1h  
   CA `J9AvtJRDreHG8B8PnW4tNMvH5c2c1jxfUfDvjrWtpump`
+- stuffinu: $71,382 1h vol, $1,791 mcap, -94% 1h  
+  CA `4UD1GNt8aCzH1Y9afWkL6MD9u3whwGWFrT4DF8Tjpump`
+- panel: $69,540 1h vol, $24,520 mcap, +1086% 1h  
+  CA `CE2Zuoxqmbz3enq5LBWbpcL5Nc7rzt8YUqK2zuMwpump`
+- BJG: $68,479 1h vol, $2,189 mcap, +10% 1h  
+  CA `3Gxj7bBie8re6fGwCWycdttEFMgCJTW8MBeqmbgCpump`
