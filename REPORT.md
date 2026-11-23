@@ -1,13 +1,13 @@
 # Trencher live report
 
-Updated 2026-11-23T02:06:39Z (paper trading, never real money)
+Updated 2026-11-23T02:21:44Z (paper trading, never real money)
 
 - Equity: $74.23 (-25.8% vs $100 start)
 - Closed trades: 22, 3 wins
 - Fees paid: $14.78 (axiom $2.81, network $9.18, pool $2.66), plus $4.15 lost to slippage
 - New trades: WATCH-ONLY (scans and decides, buys nothing)
-- Brain: subscription, claude-haiku-5-5 for routine calls, claude-opus-5-5 for the daily review; 284 routine calls and 0 plan-limit hits in 48h
-- Watch log: 101 coins being followed, 2736 filed, 0 would-buys (6h follow, sampled every 2 min)
+- Brain: subscription, claude-haiku-5-5 for routine calls, claude-opus-5-5 for the daily review; 286 routine calls and 0 plan-limit hits in 48h
+- Watch log: 104 coins being followed, 2736 filed, 0 would-buys (6h follow, sampled every 2 min)
 
 ## Scorecard (after fees)
 - 22 closed, 3 won (14%), net $-25.79
@@ -73,9 +73,15 @@ Updated 2026-11-23T02:06:39Z (paper trading, never real money)
   CA `H4gHnZ3NCU7Z9XQwGX6YYJNyieGEW8pqwGRUcdSxpump`
 
 ## Last scan
-- 02:05Z: 3 coins, 3 with pairs, 0 passed the market filters, 0 researched
+- 02:21Z: 4 coins, 4 with pairs, 0 passed the market filters, 0 researched
 
 ## Coins it looked at, and why it passed
+- 02:13Z MINELIUS (MIGRATED, $8,108,837 mcap, $8,048 5m vol): PASS at conviction 3, PASS: big cap, no room. $8.1M mcap, first resistance (prior high $10.4M) only 1.28x away, theme at 0.63x pace, and a privacy-launchpad story with no GitHub and a 0.4-day-old domain (V6, V13).  
+  CA `E9rWKjVhHMxQkxfREr7Li8Yy46rVcWiWHoKVQAe9pump`
+- 02:11Z UCASH (MIGRATED, $1,833,211 mcap, $15,619 5m vol): PASS at conviction 3, PASS: chasing a $1.8M migrated coin 6% off its high, on 0.83x flow, with the peak only 1.06x away and a website that doesn't show the CA (V1, V6, V13).  
+  CA `7cFiqdT46zs7ooHWLFiLSaSQKLMibtokh9dBinsspump`
+- 02:06Z ZOL (MIGRATED, $147,993 mcap, $6,843 5m vol): PASS at conviction 2, PASS: the peak data is broken (85B "peak" mcap vs $148k now), flow is under pace, no higher low, and the theme is fading. Blocker: "no higher low" plus bad data. Not a bottom buy. (V1, V6, V13)  
+  CA `AQfw8J74V17erZsmMz4oK474eVLBaP44gD33vVbhtHo5`
 - 02:03Z COPIUM (MIGRATED, $699,737 mcap, $3,718 5m vol): PASS at conviction 3, PASS: flow below pace (5m $3.7k at 0.62x the hourly average), and the site doesn't show the CA. Crowded copium field. (V1, V3, V6)  
   CA `BAKsQrynzwadyACDMsg3J5R8a4CTvj1u7kEYyjq7pump`
 - 01:53Z PRIVI (DIP, $44,385 mcap, $1,267 5m vol): REJECT, 5m volume $1,267 is dead (<$2,000) (V1)  
@@ -90,16 +96,10 @@ Updated 2026-11-23T02:06:39Z (paper trading, never real money)
   CA `npz2FhoufQ7pKqhGpaipYWacrAkidyW2yDpVWSvpump`
 - 01:37Z FSDV15 (MIGRATED, $2,167,440 mcap, $11,649 5m vol): PASS at conviction 3, PASS — not the theme leader in a 27-copy field, 5m flow at 0.94x pace, lower highs with no printed higher low, first resistance only about 1.2x away. Blocker: split crowd / flow below pace. (V1, V3, V13)  
   CA `3BcJ4SSCfbxDMrWcUDucyCWxMjmy4M2ECCtvxu86pump`
-- 01:28Z MINELIUS (MIGRATED, $7,579,960 mcap, $3,153 5m vol): PASS at conviction 3, PASS: 5m flow is 0.57x its hourly pace, the coin is $7.6M with only 1.37x to its own peak, and it's a 0.4-day-old domain selling a privacy-launchpad story with no GitHub. Blocker: flow below pace. (V1, V6, V3, V13)  
-  CA `E9rWKjVhHMxQkxfREr7Li8Yy46rVcWiWHoKVQAe9pump`
-- 01:27Z cCAT (MIGRATED, $120,348 mcap, $61,677 5m vol): REJECT, Bundles: 10 linked wallet cluster(s) hold 47.3% of supply (>20%) (V17)  
-  CA `63aEoSt7oGthFR5koz1572CAL9dd7NYGp7sWeQyjpump`
-- 01:26Z UCASH (MIGRATED, $1,638,368 mcap, $11,297 5m vol): PASS at conviction 3, PASS: UCASH is sitting 0.8% off its high after a +27% hour, and its own site says the contract is "coming soon." Blocker "chasing." (V1, V3, V6)  
-  CA `7cFiqdT46zs7ooHWLFiLSaSQKLMibtokh9dBinsspump`
 
 ## What its skips did next (last 48h)
 A skip "ran" if the coin reached the first target (1.5x) from the skip price before a 20% drop, "dumped" if the drop came first. Sampled every 10 min, followed 6h.
-- flow below pace: blocked 27, ran 2, dumped 19, flat 0, open 6 (saving losses: keep it)
+- flow below pace: blocked 25, ran 2, dumped 18, flat 0, open 5 (saving losses: keep it)
   - ran: snowball up to 1.59x  
     CA `3D7YQcnXi6RMjWxheiE8VLuGXJTtgQkmyugGYvzjpump`
   - ran: OpenIndex up to 1.63x  
@@ -121,7 +121,7 @@ A skip "ran" if the coin reached the first target (1.5x) from the skip price bef
     CA `Dtx414D8jurspmB1jqJWsYU66pemoXRjQeXx7TC1pump`
   - ran: GIF up to 2.16x  
     CA `B6wM98qkQKP71mhPA48S7No6TxM4KaXdFojDTZeUpump`
-- falling knife / no higher low: blocked 13, ran 2, dumped 4, flat 4, open 3 (saving losses: keep it)
+- falling knife / no higher low: blocked 14, ran 2, dumped 4, flat 4, open 4 (saving losses: keep it)
   - ran: UrAnus up to 2.97x  
     CA `27u3diWofnXGUkddjLGhcy1nRssFKHW3RtNbpWzUpump`
   - ran: STREETS up to 1.73x  
@@ -193,11 +193,11 @@ The trenches are trading young pump.fun animal and joke coins under about 3 hour
 ## Moving most in its scans, last 30 min (1h volume)
 - Hedge: $568,790 1h vol, $163,103 mcap, +193% 1h  
   CA `7S8k5qQfP2M48ixDLxDh6AgtwDo92eKxZ7WNmZt7pump`
-- DESSA: $343,928 1h vol, $3,469,624 mcap, +5% 1h  
-  CA `npz2FhoufQ7pKqhGpaipYWacrAkidyW2yDpVWSvpump`
-- FSDV15: $149,130 1h vol, $2,167,440 mcap, -17% 1h  
-  CA `3BcJ4SSCfbxDMrWcUDucyCWxMjmy4M2ECCtvxu86pump`
-- COPIUM: $72,523 1h vol, $699,737 mcap, +26% 1h  
-  CA `BAKsQrynzwadyACDMsg3J5R8a4CTvj1u7kEYyjq7pump`
-- PRIVI: $29,405 1h vol, $39,020 mcap, +11% 1h  
-  CA `89DKn95R7QvjAcGSeqHvmj3pq7TJFbJcckURqjvuHsHp`
+- cCAT: $273,052 1h vol, $1,453 mcap, -99% 1h  
+  CA `63aEoSt7oGthFR5koz1572CAL9dd7NYGp7sWeQyjpump`
+- UCASH: $226,067 1h vol, $1,833,211 mcap, +29% 1h  
+  CA `7cFiqdT46zs7ooHWLFiLSaSQKLMibtokh9dBinsspump`
+- ZOL: $94,885 1h vol, $149,142 mcap, -25% 1h  
+  CA `AQfw8J74V17erZsmMz4oK474eVLBaP44gD33vVbhtHo5`
+- MINELIUS: $83,186 1h vol, $8,041,775 mcap, +9% 1h  
+  CA `E9rWKjVhHMxQkxfREr7Li8Yy46rVcWiWHoKVQAe9pump`
