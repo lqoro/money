@@ -1,13 +1,13 @@
 # Trencher live report
 
-Updated 2026-11-24T09:23:27Z (paper trading, never real money)
+Updated 2026-11-24T09:38:41Z (paper trading, never real money)
 
 - Equity: $74.23 (-25.8% vs $100 start)
 - Closed trades: 22, 3 wins
 - Fees paid: $14.78 (axiom $2.81, network $9.18, pool $2.66), plus $4.15 lost to slippage
 - New trades: WATCH-ONLY (scans and decides, buys nothing)
 - Brain: subscription, claude-haiku-5-5 for routine calls, claude-opus-5-5 for the daily review; 472 routine calls and 0 plan-limit hits in 48h
-- Watch log: 57 coins being followed, 3255 filed, 0 would-buys (6h follow, sampled every 2 min)
+- Watch log: 55 coins being followed, 3258 filed, 0 would-buys (6h follow, sampled every 2 min)
 
 ## Scorecard (after fees)
 - 22 closed, 3 won (14%), net $-25.79
@@ -73,9 +73,11 @@ Updated 2026-11-24T09:23:27Z (paper trading, never real money)
   CA `H4gHnZ3NCU7Z9XQwGX6YYJNyieGEW8pqwGRUcdSxpump`
 
 ## Last scan
-- 09:22Z: 3 coins, 3 with pairs, 0 passed the market filters, 0 researched
+- 09:38Z: 1 coins, 1 with pairs, 0 passed the market filters, 0 researched
 
 ## Coins it looked at, and why it passed
+- 09:26Z Scamsem (MIGRATED, $36,163 mcap, $14,426 5m vol): PASS at conviction 2, PASS. Same-ticker vamp field, bundle cluster, no printed higher low, 76% down a 6-minute-old chart. Blocker: split crowd (V1, V3).  
+  CA `5JWeGmA9z6yHd5F9P6B23A8wthho8BpZuDmQv5DfLoat`
 - 09:17Z UCASH (MIGRATED, $235,971 mcap, $9,268 5m vol): PASS, PASS — brain unavailable, not trading blind.  
   CA `7cFiqdT46zs7ooHWLFiLSaSQKLMibtokh9dBinsspump`
 - 09:08Z scamsem (DIP, $73,564 mcap, $146,529 5m vol): PASS at conviction 2, PASS — scamsem is 8 minutes old, down 40% in 5m, no higher low printed, and 26 coins copy the name. A copy-name spike, not a dip (V1, V6, V13).  
@@ -94,8 +96,6 @@ Updated 2026-11-24T09:23:27Z (paper trading, never real money)
   CA `Jd3NCawdFiDNWpLiTtsMqoeoBMjC1ZQMrMScRVzpump`
 - 08:40Z FoolCoin (MIGRATED, $55,592 mcap, $19,158 5m vol): PASS at conviction 3, PASS: chasing spike. FoolCoin is up 71% on the 5m, and the 5m candle is the whole story. Wait for the retrace and a printed higher low (V1, V6).  
   CA `8RKV9GyNmhQAVaKVEYK9tBMWkJy7BAJ5JpXAsSV8pump`
-- 08:31Z UCASH (MIGRATED, $147,605 mcap, $5,015 5m vol): PASS at conviction 2, PASS: 5m flow is at 0.65x pace, no higher low has printed, and the site is 1.8 days old with no GitHub, under a ticker that 10 copies share. Blocker: flow below pace. (V1, V3, V6, V13)  
-  CA `7cFiqdT46zs7ooHWLFiLSaSQKLMibtokh9dBinsspump`
 
 ## What its skips did next (last 48h)
 A skip "ran" if the coin reached the first target (1.5x) from the skip price before a 20% drop, "dumped" if the drop came first. Sampled every 10 min, followed 6h.
@@ -134,19 +134,19 @@ A skip "ran" if the coin reached the first target (1.5x) from the skip price bef
     CA `CjPoozfB2Vub8pHFvdKuKUGJDLWuYC2U32yRTxMhpump`
   - ran: FUCK! up to 2.22x  
     CA `CSjwLiCLyaJqXQm9XCV3LdYWMYswbZ7JQ71JKX77pump`
-- thin 5m volume: blocked 15, ran 1, dumped 11, flat 2, open 1 (saving losses: keep it)
+- thin 5m volume: blocked 15, ran 1, dumped 11, flat 3, open 0 (saving losses: keep it)
   - ran: NINO up to 1.55x  
     CA `BqekG1RSPUthaKfStu7Uvyvr1eR6TchrQMp1M5r5pump`
-- dev share over 1%: blocked 11, ran 1, dumped 7, flat 3, open 0 (saving losses: keep it)
-  - ran: BLOOM up to 2.09x  
-    CA `FyRXnHLBSeHHoigrgHR1hvcXiPbPCa5bxhVhEDampump`
-- falling knife / no higher low: blocked 11, ran 4, dumped 6, flat 1, open 0 (mixed)
+- falling knife / no higher low: blocked 12, ran 5, dumped 6, flat 1, open 0 (mixed)
   - ran: Fly up to 1.52x  
     CA `84tAcSK5L9kuQEVM8C8vMHXnfdA83nGBT2nYfSbPUcAc`
   - ran: hCAT up to 1.52x  
     CA `2FYs4vApfj4ErsggpFDfzMv1WvxnyiLtzNEj84mS6TLh`
   - ran: Mogmas up to 1.63x  
     CA `Cocrz7BR2xE2sgKn3VbmaTXH6HTVgCiVFWTVWmyTpump`
+- dev share over 1%: blocked 11, ran 1, dumped 7, flat 3, open 0 (saving losses: keep it)
+  - ran: BLOOM up to 2.09x  
+    CA `FyRXnHLBSeHHoigrgHR1hvcXiPbPCa5bxhVhEDampump`
 - bundles over the line: blocked 10, ran 1, dumped 4, flat 4, open 1 (saving losses: keep it)
   - ran: RNV up to 2.35x  
     CA `A2nbXtQvvRMvWtifCkV8cYepwcC4M7iA1jVMwAh6pump`
@@ -197,13 +197,13 @@ Nothing has a positive after-cost edge yet. All 229 settled coins average -8.7% 
 Meta: the trenches are trading sub-hour, generic-name spikes. The Trump/Jensen news has no flow behind it (DONJENSEN $5.4k 5m on a $2.2M cap, JENSEN -30% 1h). Rising: fresh generic names scamsem (6 min old, $156k 5m on a $64k cap) and Guest (age ~0, $41k 5m). Their 5m volume beats market cap, which is a farm shape until holders and bundles say otherwise (V13). Crypto-native names are holding: Satoshi (1.5h, $18k 5m, 61% buys, -9% 1h) and Provena (pump.fun curve, 65% buys, but only $897 5m). Fading: animal and word names (survive -85%, OXYGEN -41%), with JOB and Blazely dead at about $100 or less 5m. The crawler's summary numbers for Satoshi and 4CHAN don't match the raw rows (4CHAN is $325 5m, not $9k), so I used the rows. Setups to research: Satoshi first (pumpswap, $63k cap, clears the $10k 5m floor; initials at 2x, stop -30%, out if 5m volume falls to half its hourly pace). Guest only if its checks come back clean. scamsem is a pass unless it clears everything, and its name is a scam joke, not a thesis.
 
 ## Moving most in its scans, last 30 min (1h volume)
-- scamsem: $375,137 1h vol, $63,722 mcap, +136% 1h  
-  CA `4pf9HEnkdN3ihjVbfZg2NwbZkCJyUk4na44oysuWpump`
+- Scamsem: $156,314 1h vol, $36,163 mcap, -65% 1h  
+  CA `5JWeGmA9z6yHd5F9P6B23A8wthho8BpZuDmQv5DfLoat`
+- FoolCoin: $111,325 1h vol, $5,811 mcap, -79% 1h  
+  CA `8RKV9GyNmhQAVaKVEYK9tBMWkJy7BAJ5JpXAsSV8pump`
+- Satoshi: $106,195 1h vol, $12,329 mcap, -85% 1h  
+  CA `DXkCsXhXeh2xTfQ8Um8dicQcwseTfuHvDwriTcJLpump`
 - UCASH: $84,529 1h vol, $244,771 mcap, +78% 1h  
   CA `7cFiqdT46zs7ooHWLFiLSaSQKLMibtokh9dBinsspump`
-- DONJENSEN: $56,945 1h vol, $2,165,650 mcap, +10% 1h  
-  CA `5LDowscYVD3a6ZS4m8gCqG5nU16eLTwRXhciFi1bpump`
-- Guest: $41,359 1h vol, $52,565 mcap, +55% 1h  
-  CA `7ZcoeMq5u29vjujGQQemFV2zYvy8sURwpNN9p9wGpump`
-- PROVEN: $29,661 1h vol, $8,234 mcap, +255% 1h  
-  CA `DVeU9oDkaGBp6vnqCRkdXUvnTDSFvHaxZzsDgdarpump`
+- JENSEN: $33,293 1h vol, $303,309 mcap, -25% 1h  
+  CA `HKiMA2mKQHU2cjfZ4Kbmru5GBGCauSNqPtpu8cfmpump`
