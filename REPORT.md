@@ -1,13 +1,13 @@
 # Trencher live report
 
-Updated 2026-11-24T18:13:03Z (paper trading, never real money)
+Updated 2026-11-24T18:28:17Z (paper trading, never real money)
 
 - Equity: $74.23 (-25.8% vs $100 start)
 - Closed trades: 22, 3 wins
 - Fees paid: $14.78 (axiom $2.81, network $9.18, pool $2.66), plus $4.15 lost to slippage
 - New trades: WATCH-ONLY (scans and decides, buys nothing)
-- Brain: subscription, claude-haiku-5-5 for routine calls, claude-opus-5-5 for the daily review; 500 routine calls and 0 plan-limit hits in 48h
-- Watch log: 74 coins being followed, 3333 filed, 0 would-buys (6h follow, sampled every 2 min)
+- Brain: subscription, claude-haiku-5-5 for routine calls, claude-opus-5-5 for the daily review; 502 routine calls and 0 plan-limit hits in 48h
+- Watch log: 74 coins being followed, 3335 filed, 0 would-buys (6h follow, sampled every 2 min)
 
 ## Scorecard (after fees)
 - 22 closed, 3 won (14%), net $-25.79
@@ -73,9 +73,13 @@ Updated 2026-11-24T18:13:03Z (paper trading, never real money)
   CA `H4gHnZ3NCU7Z9XQwGX6YYJNyieGEW8pqwGRUcdSxpump`
 
 ## Last scan
-- 18:12Z: 5 coins, 5 with pairs, 1 passed the market filters, 1 researched
+- 18:27Z: 2 coins, 2 with pairs, 0 passed the market filters, 0 researched
 
 ## Coins it looked at, and why it passed
+- 18:25Z SANTIA (MIGRATED, $126,997 mcap, $17,936 5m vol): PASS, PASS — brain unavailable, not trading blind.  
+  CA `2YKce3apGESoWhqt4N7MGg5t4UEKgPPL4ArheEvPpump`
+- 18:19Z FIONA (MIGRATED, $3,192,278 mcap, $2,331 5m vol): REJECT, Bundles: 9 linked wallet cluster(s) hold 28.8% of supply (>20%) (V17)  
+  CA `B34nXKzCgsJb9ChLuSHPRpXLE3WFSWyeT8Cqkzzmpump`
 - 18:12Z SCF (FINAL_STRETCH, $21,943 mcap, $15,594 5m vol): REJECT, Top 10 hold 25.1% ex-pool (>25%) (V13)  
   CA `Az7dYDicMc4G9hwnkeQYwHi6Fop1711C7hABcrWzpump`
 - 18:11Z CTO (FINAL_STRETCH, $15,647 mcap, $22,221 5m vol): REJECT, RugCheck danger: Creator history of rugged tokens  
@@ -92,10 +96,6 @@ Updated 2026-11-24T18:13:03Z (paper trading, never real money)
   CA `55RwtHpoNB81SgfiNvogeZTMfik2SfMGa5FaxKcXpump`
 - 17:38Z frank (FINAL_STRETCH, $24,736 mcap, $18,657 5m vol): PASS, PASS — brain unavailable, not trading blind.  
   CA `GWGFSXzFE94WubVVbeNvaGRY1zh2rTBH5DmaRFFpump`
-- 17:33Z FIONA (MIGRATED, $2,960,186 mcap, $2,416 5m vol): REJECT, Bundles: 9 linked wallet cluster(s) hold 28.7% of supply (>20%) (V17)  
-  CA `B34nXKzCgsJb9ChLuSHPRpXLE3WFSWyeT8Cqkzzmpump`
-- 17:27Z BIKINSEM (FINAL_STRETCH, $17,968 mcap, $4,876 5m vol): REJECT, Top 10 hold 25.8% ex-pool (>25%) (V13)  
-  CA `Cz5SfCrd43ogT93iFtUXGwngwpZDFAGWQBi875GWpump`
 
 ## What its skips did next (last 48h)
 A skip "ran" if the coin reached the first target (1.5x) from the skip price before a 20% drop, "dumped" if the drop came first. Sampled every 10 min, followed 6h.
@@ -120,28 +120,28 @@ A skip "ran" if the coin reached the first target (1.5x) from the skip price bef
     CA `2FYs4vApfj4ErsggpFDfzMv1WvxnyiLtzNEj84mS6TLh`
   - ran: WALLSTFLY up to 1.52x  
     CA `2DQbV7hsqxKVWmFakXGGhBbNyY28tDJ9YuJkojYrpump`
-- top 10 over 25%: blocked 30, ran 4, dumped 23, flat 2, open 1 (saving losses: keep it)
+- top 10 over 25%: blocked 30, ran 5, dumped 23, flat 2, open 0 (saving losses: keep it)
   - ran: SNP6900 up to 2.76x  
     CA `DnbQKi146NDmwwji3f3q5i68HQnYyBEhoDyj2q3Npump`
   - ran: JENSEN up to 2.62x  
     CA `GaNJeASYBM9k3TvEeUC2Pdyu1TjcpzTmPpoom92fpump`
   - ran: GOAT up to 1.53x  
     CA `5Ze97VEpX3EdRF4vbsxUXTdwGKF2qHGregrxToWEpump`
-- RugCheck danger: blocked 21, ran 5, dumped 15, flat 0, open 1 (saving losses: keep it)
-  - ran: Holdsgiving up to 2.96x  
-    CA `A2jLaCC7v3VjXP8gEgCQNbTWEvizYuQ82jFEYfzipump`
-  - ran: JENSEN up to 1.7x  
-    CA `CjPoozfB2Vub8pHFvdKuKUGJDLWuYC2U32yRTxMhpump`
-  - ran: FUCK! up to 2.22x  
-    CA `CSjwLiCLyaJqXQm9XCV3LdYWMYswbZ7JQ71JKX77pump`
-- brain paced: blocked 21, ran 7, dumped 9, flat 0, open 5 (mixed)
+- brain paced: blocked 22, ran 7, dumped 9, flat 0, open 6 (mixed)
   - ran: DELULU up to 1.57x  
     CA `A37ozuu1D1pP1cM27y1HYkSArVQbgsZNN7Va74yNpump`
   - ran: Scamsem up to 1.56x  
     CA `5JWeGmA9z6yHd5F9P6B23A8wthho8BpZuDmQv5DfLoat`
   - ran: RUGSEM up to 1.5x  
     CA `9cDnmLRDWeJzcpyw8tSFAT7HS4Aunx6MmZWjMfrzpump`
-- thin 5m volume: blocked 15, ran 1, dumped 10, flat 3, open 1 (saving losses: keep it)
+- RugCheck danger: blocked 21, ran 5, dumped 16, flat 0, open 0 (saving losses: keep it)
+  - ran: Holdsgiving up to 2.96x  
+    CA `A2jLaCC7v3VjXP8gEgCQNbTWEvizYuQ82jFEYfzipump`
+  - ran: JENSEN up to 1.7x  
+    CA `CjPoozfB2Vub8pHFvdKuKUGJDLWuYC2U32yRTxMhpump`
+  - ran: FUCK! up to 2.22x  
+    CA `CSjwLiCLyaJqXQm9XCV3LdYWMYswbZ7JQ71JKX77pump`
+- thin 5m volume: blocked 15, ran 1, dumped 11, flat 3, open 0 (saving losses: keep it)
   - ran: NINO up to 1.55x  
     CA `BqekG1RSPUthaKfStu7Uvyvr1eR6TchrQMp1M5r5pump`
 - dev share over 1%: blocked 13, ran 2, dumped 8, flat 3, open 0 (saving losses: keep it)
@@ -199,11 +199,11 @@ Nothing in this scan is a setup. No mover clears the $10k 5-minute volume bar; t
 ## Moving most in its scans, last 30 min (1h volume)
 - CHRISTMAS: $700,293 1h vol, $217,406 mcap, +664% 1h  
   CA `6jmhyHEy1rDyYHyRkr1rbVVQnckKpMYWh3zoX7zLpump`
-- Holders: $198,656 1h vol, $67,840 mcap, +90% 1h  
-  CA `55RwtHpoNB81SgfiNvogeZTMfik2SfMGa5FaxKcXpump`
-- Wanted: $110,684 1h vol, $363,016 mcap, +16% 1h  
-  CA `2M3CsCP97Le187KQC5jhZG3c6bFzCZ51NP8bscrupump`
-- wif: $93,347 1h vol, $8,601 mcap, -83% 1h  
-  CA `6sbUBNuXyVQVHsoaUGYAiL3Pyntpyjm3yHZP1YfHYMzH`
-- pill: $49,713 1h vol, $3,189 mcap, -57% 1h  
-  CA `8AkB2jWAc59Hvo5F861rvVp6WxypVtaf9yj9qpDtpump`
+- SANTIA: $130,568 1h vol, $100,039 mcap, +187% 1h  
+  CA `2YKce3apGESoWhqt4N7MGg5t4UEKgPPL4ArheEvPpump`
+- FIONA: $87,203 1h vol, $3,176,528 mcap, +11% 1h  
+  CA `B34nXKzCgsJb9ChLuSHPRpXLE3WFSWyeT8Cqkzzmpump`
+- 知了: $77,303 1h vol, $9,373 mcap, +202% 1h  
+  CA `3hiM6twGsV6Lcf8sh68A5DqfTmU84jeM4kNPy2DVpump`
+- rest: $50,085 1h vol, $8,682 mcap, -74% 1h  
+  CA `RESTEnLL1ZUChucxSxZr9oBK6k6qGqpTaHpmxqxvFUn`
