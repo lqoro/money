@@ -1,13 +1,13 @@
 # Trencher live report
 
-Updated 2026-11-24T06:06:41Z (paper trading, never real money)
+Updated 2026-11-24T06:21:44Z (paper trading, never real money)
 
 - Equity: $74.23 (-25.8% vs $100 start)
 - Closed trades: 22, 3 wins
 - Fees paid: $14.78 (axiom $2.81, network $9.18, pool $2.66), plus $4.15 lost to slippage
 - New trades: WATCH-ONLY (scans and decides, buys nothing)
 - Brain: subscription, claude-haiku-5-5 for routine calls, claude-opus-5-5 for the daily review; 474 routine calls and 0 plan-limit hits in 48h
-- Watch log: 92 coins being followed, 3192 filed, 0 would-buys (6h follow, sampled every 2 min)
+- Watch log: 90 coins being followed, 3196 filed, 0 would-buys (6h follow, sampled every 2 min)
 
 ## Scorecard (after fees)
 - 22 closed, 3 won (14%), net $-25.79
@@ -73,9 +73,13 @@ Updated 2026-11-24T06:06:41Z (paper trading, never real money)
   CA `H4gHnZ3NCU7Z9XQwGX6YYJNyieGEW8pqwGRUcdSxpump`
 
 ## Last scan
-- 06:05Z: 0 coins, 0 with pairs, 0 passed the market filters, 0 researched
+- 06:20Z: 0 coins, 0 with pairs, 0 passed the market filters, 0 researched
 
 ## Coins it looked at, and why it passed
+- 06:14Z UCASH (MIGRATED, $121,075 mcap, $3,340 5m vol): PASS at conviction 2, PASS: UCASH is 97% off a $3.8M peak with 5m flow at 0.61x pace and no printed higher low. Blockers: flow below pace, no higher low, a 1.7-day-old domain on a tech claim with no GitHub. Farm-adjacent. (V1, V3, V6, V13)  
+  CA `7cFiqdT46zs7ooHWLFiLSaSQKLMibtokh9dBinsspump`
+- 06:08Z JENSEN (MIGRATED, $387,037 mcap, $2,474 5m vol): REJECT, Top 10 hold 25.6% ex-pool (>25%) (V13)  
+  CA `HKiMA2mKQHU2cjfZ4Kbmru5GBGCauSNqPtpu8cfmpump`
 - 05:54Z ORBLUX (MIGRATED, $66,608 mcap, $17,003 5m vol): PASS at conviction 3, PASS — ORBLUX is 25 minutes old, up 124% in the hour from a $5k low, and its only prior high is 1.19x away. Too new, no story, no room. Farm-shaped (V1, V6, V13).  
   CA `5KDyvAjSU8HWofZfVnpkdY2N4UM1R2jxUkLupYmgpump`
 - 05:50Z DONJENSEN (MIGRATED, $2,185,718 mcap, $3,776 5m vol): PASS at conviction 2, PASS. Chasing a Jensen copy at 8% off the high, on sell-heavy flow, in a dying meta. Blocker: "chasing" (V1, V6).  
@@ -92,10 +96,6 @@ Updated 2026-11-24T06:06:41Z (paper trading, never real money)
   CA `HADu1KBKhLhzmqyrdbF96F73XP892DTq3MC2dztApump`
 - 05:09Z NAJIN (FINAL_STRETCH, $20,180 mcap, $8,357 5m vol): PASS at conviction 3, PASS: chasing spike. NAJIN is up 176% on the 5m with 5m volume at 4.3x its hourly pace, and the rhino theme runs at 0.61x across 18 copies. Not a pullback. (V1, V6)  
   CA `6kdrep4bs5HjY7uGQ4cSnNAdAxspTBivQVm2ZueZpump`
-- 05:04Z DONJENSEN (MIGRATED, $1,995,003 mcap, $4,493 5m vol): PASS at conviction 2, PASS: flow below pace on a $2M coin, 5m volume $4.5k, and the first high is only 1.19x away. Blockers: flow below pace, big cap no room, target too close (V1, V6, V13).  
-  CA `5LDowscYVD3a6ZS4m8gCqG5nU16eLTwRXhciFi1bpump`
-- 04:55Z survive (FINAL_STRETCH, $19,006 mcap, $4,009 5m vol): PASS at conviction 3, PASS: thin 5m flow ($4k, under the $10k bar), no catalyst, and the story is one generic word. Survive is a bounce, not a dip. (V1, V6, V13)  
-  CA `EaiNiPA791st8dtYYuRKqU4M2wetyRdRzk5K2VT1pump`
 
 ## What its skips did next (last 48h)
 A skip "ran" if the coin reached the first target (1.5x) from the skip price before a 20% drop, "dumped" if the drop came first. Sampled every 10 min, followed 6h.
@@ -106,21 +106,21 @@ A skip "ran" if the coin reached the first target (1.5x) from the skip price bef
     CA `5eiLc9r79PkJquiFvYWdXJYtGNRjTpzot8MR7Z4Ppump`
   - ran: Hold up to 1.62x  
     CA `8J7yeYsBzozSQ67Ji4kpun2gdfTFp8o9g6rNkYR3pump`
-- near the high / chasing: blocked 39, ran 8, dumped 28, flat 1, open 2 (saving losses: keep it)
-  - ran: SANTA up to 1.85x  
-    CA `tZsjFu2CH1R23wEpbfXAYGc2KUaVrUbwofCNNNqpump`
+- near the high / chasing: blocked 38, ran 7, dumped 28, flat 1, open 2 (saving losses: keep it)
   - ran: Bertcoin up to 1.8x  
     CA `xEK58Qa2xZ7C36Z2g3Jjq1WHY561CvvnJkLpgJspump`
   - ran: WOFL up to 2.62x  
     CA `AdXjXfumPSSKk7PrfgDHcAsPvuxnKv7Zo9WZEWKbiDkh`
-- flow below pace: blocked 33, ran 7, dumped 24, flat 0, open 2 (saving losses: keep it)
+  - ran: Phil up to 2.05x  
+    CA `GMLSyjZCKGtFwztp2mtT8PDeNUA6WEk7oQoe3QkFpump`
+- flow below pace: blocked 33, ran 7, dumped 23, flat 0, open 3 (saving losses: keep it)
   - ran: snowball up to 1.59x  
     CA `3D7YQcnXi6RMjWxheiE8VLuGXJTtgQkmyugGYvzjpump`
   - ran: OpenIndex up to 1.63x  
     CA `FuKY3dk7QmpbDdQRjzbjB3G6PiCuqKNvN4dAWDpwpump`
   - ran: hCAT up to 1.52x  
     CA `2FYs4vApfj4ErsggpFDfzMv1WvxnyiLtzNEj84mS6TLh`
-- top 10 over 25%: blocked 29, ran 5, dumped 21, flat 3, open 0 (saving losses: keep it)
+- top 10 over 25%: blocked 29, ran 5, dumped 20, flat 3, open 1 (saving losses: keep it)
   - ran: GIF up to 2.16x  
     CA `B6wM98qkQKP71mhPA48S7No6TxM4KaXdFojDTZeUpump`
   - ran: SNP6900 up to 2.76x  
@@ -192,16 +192,16 @@ Nothing has a positive after-cost edge yet. All 229 settled coins average -8.7% 
 - [2026-11-02 20:25] I expected Slingoor, a clean MIGRATED leader with $25k of 5m flow at pace and a 0.77 buy share, to retest its $408k high from $304k. It never went green (0.98x peak) and hit the -20% stop in 2 minutes, a -$2.86 probe. My own thesis admitted there was no printed higher low after a peak only 6 minutes old, so this confirms the money-shape rule: buy share and flow are not structure (V1, V6). Next time a MIGRATED pullback with no higher low above the hourly low is a PASS with blocker "no higher low", not a probe. This is one loss, so it adds no new ban beyond the rule I already have.
 
 ## Meta right now
-The meta is animal creatures, and the Jensen/AI names are fading. Animals are rising: Spidercow ($105k mcap, $24.8k 5m, 65% buys, +247% 1h, about 12 min old) and NAJIN (rhino, $20k mcap, $8.8k 5m, 62% buys, +140% 1h); FATU, another rhino, is down 91%. Jensen/AI is mostly dying: JENSEN is -98% with no 5m volume, opus 4.5 is -87%, and DONJENSEN is flat on $2M with 43% buys. GROKIA's +873% hour rests on only $3.2k of 5m volume against a $2.4M cap, which looks like exit liquidity, and the crawler's $54k figure doesn't match the raw row. Setups to research, not enter: Spidercow (clears the $10k 5m bar; needs holder, dev and bundle checks and a pullback that holds on buys) and NAJIN only if its 5m volume clears $10k. Tiny caps under $5k with sell-heavy flow (NOCAP, OPUS, GOOBIE, KAPIPLARA) are not worth a look (V1, V6, V13).
+The trenches are running animals and absurd names, not the news. Hippos (Fiona, Timothy), a white rhino (NAJIN) and EuropaCoin (two separate CAs, both moving) hold the volume and buyers, and most movers are under 3 hours old on pump.fun or PumpSwap. Jensen/AI names are fading: JENSEN is down 39% in the hour on $2.8k 5m, DONJENSEN is flat at $2.2M on $4k 5m, and the Trump-dinner headlines are news, not flow, since no mover carries a Trump name. Setups to research, not buy: Orblux (66k cap, $12.9k 5m, 77% buys, +124% 1h, 0.4h old) fits the MIGRATED age and volume bars, and Joey (18.7k cap, $30k 5m, 67% buys, +673% 1h, about 6 min old) is a New Pairs spike whose 5m volume is bigger than its cap, which is a farm flag to check before anyone touches it. The crawler's Spidercow and NAJIN numbers don't match the raw rows (Spidercow shows 0 5m volume at a 1.4k cap, NAJIN shows $199 5m), so neither is a setup until the data reconciles. Holder, dev and bundle checks run on each coin before any entry; this is a research list, not a buy list.
 
 ## Moving most in its scans, last 30 min (1h volume)
 - ORBLUX: $102,662 1h vol, $66,608 mcap, +124% 1h  
   CA `5KDyvAjSU8HWofZfVnpkdY2N4UM1R2jxUkLupYmgpump`
-- ACHI: $93,433 1h vol, $1,844 mcap, -94% 1h  
-  CA `HADu1KBKhLhzmqyrdbF96F73XP892DTq3MC2dztApump`
-- SUMMITPRO: $93,090 1h vol, $1,605 mcap, -98% 1h  
-  CA `9SzSjbqTRb8f6vVeL5tUBwpppJFwLf1BfYkUwFeEpump`
-- Europa: $88,149 1h vol, $7,154 mcap, +194% 1h  
+- Europa: $98,176 1h vol, $2,856 mcap, +18% 1h  
   CA `CmjYpgu6rSqRYLBubMAoNstTgU918rFfQs3UoGk5pump`
-- Spidercow: $87,683 1h vol, $1,383 mcap, -98% 1h  
+- ACHI: $93,457 1h vol, $1,784 mcap, -94% 1h  
+  CA `HADu1KBKhLhzmqyrdbF96F73XP892DTq3MC2dztApump`
+- Blazely: $80,768 1h vol, $25,402 mcap, -12% 1h  
+  CA `GxHr6tdvmMmih5fUU6fgAiJa6vnVwDbnCUFDN7vh3964`
+- Spidercow: $70,288 1h vol, $1,378 mcap, -98% 1h  
   CA `9oxUBRyk9EXfQHMchya45p3xsF2fbNzzDUNKzEfKpump`
