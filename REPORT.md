@@ -1,13 +1,13 @@
 # Trencher live report
 
-Updated 2026-11-24T02:04:14Z (paper trading, never real money)
+Updated 2026-11-24T02:19:18Z (paper trading, never real money)
 
 - Equity: $74.23 (-25.8% vs $100 start)
 - Closed trades: 22, 3 wins
 - Fees paid: $14.78 (axiom $2.81, network $9.18, pool $2.66), plus $4.15 lost to slippage
 - New trades: WATCH-ONLY (scans and decides, buys nothing)
 - Brain: subscription, claude-haiku-5-5 for routine calls, claude-opus-5-5 for the daily review; 470 routine calls and 0 plan-limit hits in 48h
-- Watch log: 106 coins being followed, 3117 filed, 0 would-buys (6h follow, sampled every 2 min)
+- Watch log: 106 coins being followed, 3120 filed, 0 would-buys (6h follow, sampled every 2 min)
 
 ## Scorecard (after fees)
 - 22 closed, 3 won (14%), net $-25.79
@@ -73,9 +73,15 @@ Updated 2026-11-24T02:04:14Z (paper trading, never real money)
   CA `H4gHnZ3NCU7Z9XQwGX6YYJNyieGEW8pqwGRUcdSxpump`
 
 ## Last scan
-- 02:03Z: 6 coins, 6 with pairs, 0 passed the market filters, 0 researched
+- 02:18Z: 4 coins, 4 with pairs, 0 passed the market filters, 0 researched
 
 ## Coins it looked at, and why it passed
+- 02:14Z SORANA (FINAL_STRETCH, $24,328 mcap, $9,697 5m vol): PASS at conviction 2, PASS: SORANA is a 17-copy vamp field with a 0.13x theme pace, a site showing another CA, and a 0.1-day-old domain selling an AI-agent LARP. Blocker: split crowd (V1, V3).  
+  CA `Bf9BsNw4NEQR4L28BApWnxvCy1gk9wPBnK8xy4Khpump`
+- 02:14Z FIONA (MIGRATED, $4,247,843 mcap, $23,596 5m vol): REJECT, Bundles: 10 linked wallet cluster(s) hold 27.6% of supply (>20%) (V17)  
+  CA `B34nXKzCgsJb9ChLuSHPRpXLE3WFSWyeT8Cqkzzmpump`
+- 02:05Z STACK (MIGRATED, $59,925 mcap, $10,418 5m vol): PASS at conviction 2, PASS — theme volume at 0.06x its hourly pace, 5m flow at 0.26x, and no catalyst for a bottom buy 70% off a $203k high. Falling knife (V1, V6).  
+  CA `gzYHA8qjtFd76w58fEyn7knMdhedzdQuzmmAruwpump`
 - 02:02Z GTS1 (MIGRATED, $56,497 mcap, $44,048 5m vol): PASS at conviction 3, PASS: chasing spike. GTS1 is up 59% on 5m, 11 minutes old, in a 12-copy vamp field, with no printed higher low. (V1, V6)  
   CA `4R5rnh1KFL33ZnDoADAdLMXgQbKQm2X9R7rZT1Kcpump`
 - 01:56Z Mogmas (MIGRATED, $35,186 mcap, $4,333 5m vol): PASS at conviction 2, PASS. Mogmas is a 26-copy holiday theme with 1,511 sells against 463 buys in the last hour, no printed higher low, and no catalyst. Blocker: no catalyst, narrative not rising. (V1, V6, V13)  
@@ -90,23 +96,17 @@ Updated 2026-11-24T02:04:14Z (paper trading, never real money)
   CA `Gq2AuvpacDeruqVRCqyZqZJJbDgYDXYDGxWQgWXhpump`
 - 01:42Z CHIBI (DIP, $144,829 mcap, $91,286 5m vol): PASS at conviction 3, PASS: vamp field, not the leader, no catalyst, one bundle cluster at 10.45%. Blocker: "split crowd." (V1, V3)  
   CA `4ZgqnNi53sRKKegFpYefFjsFE6zQ3T64Xkavcoh7pump`
-- 01:41Z BRUH (MIGRATED, $8,242,143 mcap, $1,637 5m vol): REJECT, 5m volume $1,637 is dead (<$2,000) (V1)  
-  CA `PgFtGGquvnv2zEkjG2N2QPvBTBrafuExGYEqahRpump`
-- 01:41Z UCASH (DIP, $1,199,271 mcap, $30,125 5m vol): PASS at conviction 2, PASS: borrowed name, no catalyst, no radar presence. Real Umbra is a separate privacy protocol with its own UMBRA token, and this site is 1.5 days old with "product in development." (V3, V13)  
-  CA `7cFiqdT46zs7ooHWLFiLSaSQKLMibtokh9dBinsspump`
-- 01:40Z Jesus (MIGRATED, $277,485 mcap, $7,007 5m vol): PASS at conviction 3, PASS: chasing a +749% hour, 5m flow at 0.32x pace, and no printed higher low. Blow-off, not a pullback (V1, V6).  
-  CA `Gy5BUDnpJMWRsNVKh9sRtsBGunFXKKrbroQRoydQpump`
 
 ## What its skips did next (last 48h)
 A skip "ran" if the coin reached the first target (1.5x) from the skip price before a 20% drop, "dumped" if the drop came first. Sampled every 10 min, followed 6h.
-- too new / sniping: blocked 44, ran 8, dumped 33, flat 0, open 3 (saving losses: keep it)
+- too new / sniping: blocked 44, ran 8, dumped 34, flat 0, open 2 (saving losses: keep it)
   - ran: KYC up to 2.37x  
     CA `47YCrfUmSQUF9vnPsPGSzrmTcxttdRAWejCMkhrrpump`
   - ran: Wojak up to 4.29x  
     CA `5eiLc9r79PkJquiFvYWdXJYtGNRjTpzot8MR7Z4Ppump`
   - ran: Hold up to 1.62x  
     CA `8J7yeYsBzozSQ67Ji4kpun2gdfTFp8o9g6rNkYR3pump`
-- flow below pace: blocked 33, ran 6, dumped 25, flat 0, open 2 (saving losses: keep it)
+- flow below pace: blocked 34, ran 7, dumped 25, flat 0, open 2 (saving losses: keep it)
   - ran: snowball up to 1.59x  
     CA `3D7YQcnXi6RMjWxheiE8VLuGXJTtgQkmyugGYvzjpump`
   - ran: OpenIndex up to 1.63x  
@@ -120,25 +120,20 @@ A skip "ran" if the coin reached the first target (1.5x) from the skip price bef
     CA `xEK58Qa2xZ7C36Z2g3Jjq1WHY561CvvnJkLpgJspump`
   - ran: WOFL up to 2.62x  
     CA `AdXjXfumPSSKk7PrfgDHcAsPvuxnKv7Zo9WZEWKbiDkh`
-- top 10 over 25%: blocked 28, ran 4, dumped 19, flat 1, open 4 (saving losses: keep it)
+- top 10 over 25%: blocked 28, ran 5, dumped 19, flat 1, open 3 (saving losses: keep it)
   - ran: GIF up to 2.16x  
     CA `B6wM98qkQKP71mhPA48S7No6TxM4KaXdFojDTZeUpump`
   - ran: SNP6900 up to 2.76x  
     CA `DnbQKi146NDmwwji3f3q5i68HQnYyBEhoDyj2q3Npump`
   - ran: JENSEN up to 2.62x  
     CA `GaNJeASYBM9k3TvEeUC2Pdyu1TjcpzTmPpoom92fpump`
-- RugCheck danger: blocked 21, ran 6, dumped 14, flat 0, open 1 (saving losses: keep it)
+- RugCheck danger: blocked 21, ran 6, dumped 15, flat 0, open 0 (saving losses: keep it)
   - ran: MIHAOMAS up to 1.62x  
     CA `3XsFunPdji9U1EgJXokZysw8SB3t74un89b6KLEVpump`
   - ran: Holdsgiving up to 2.96x  
     CA `A2jLaCC7v3VjXP8gEgCQNbTWEvizYuQ82jFEYfzipump`
   - ran: JENSEN up to 1.7x  
     CA `CjPoozfB2Vub8pHFvdKuKUGJDLWuYC2U32yRTxMhpump`
-- dev share over 1%: blocked 12, ran 2, dumped 7, flat 3, open 0 (saving losses: keep it)
-  - ran: BLOOM up to 2.09x  
-    CA `FyRXnHLBSeHHoigrgHR1hvcXiPbPCa5bxhVhEDampump`
-  - ran: STACK up to 1.89x  
-    CA `gzYHA8qjtFd76w58fEyn7knMdhedzdQuzmmAruwpump`
 - falling knife / no higher low: blocked 12, ran 2, dumped 6, flat 2, open 2 (saving losses: keep it)
   - ran: Fly up to 1.52x  
     CA `84tAcSK5L9kuQEVM8C8vMHXnfdA83nGBT2nYfSbPUcAc`
@@ -147,6 +142,9 @@ A skip "ran" if the coin reached the first target (1.5x) from the skip price bef
 - thin 5m volume: blocked 12, ran 1, dumped 9, flat 0, open 2 (saving losses: keep it)
   - ran: NINO up to 1.55x  
     CA `BqekG1RSPUthaKfStu7Uvyvr1eR6TchrQMp1M5r5pump`
+- dev share over 1%: blocked 11, ran 1, dumped 7, flat 3, open 0 (saving losses: keep it)
+  - ran: BLOOM up to 2.09x  
+    CA `FyRXnHLBSeHHoigrgHR1hvcXiPbPCa5bxhVhEDampump`
 - brain paced: blocked 9, ran 3, dumped 6, flat 0, open 0 (saving losses: keep it)
   - ran: FOAM up to 1.98x  
     CA `2MdCPWNFufmJSZhajSvi1yqBFTB24GQ4ipjNcB8Vpump`
@@ -196,16 +194,16 @@ Nothing has a positive after-cost edge yet. All 229 settled coins average -8.7% 
 - [2026-11-02 20:25] I expected Slingoor, a clean MIGRATED leader with $25k of 5m flow at pace and a 0.77 buy share, to retest its $408k high from $304k. It never went green (0.98x peak) and hit the -20% stop in 2 minutes, a -$2.86 probe. My own thesis admitted there was no printed higher low after a peak only 6 minutes old, so this confirms the money-shape rule: buy share and flow are not structure (V1, V6). Next time a MIGRATED pullback with no higher low above the hourly low is a PASS with blocker "no higher low", not a probe. This is one loss, so it adds no new ban beyond the rule I already have.
 
 ## Meta right now
-Not quiet, but it's a launch-style tape: most movers are under two hours old, and the copies die fast (TIMOTHY -98% on $2 of 5m volume, JENSEN "The Green Bull" -96% with zero 5m volume, Tribe -99.6%, GOLDSOL -80%) (V1, V13). Two themes have live flow in the raw rows. Hippos: FIONA is still the original at $3.25M mcap with $77k 5m volume and 58% buys, but it's flat at +10% 1h, so the copy died and the original is cooling. GPU/chip/AI: GPU Jesus is the loudest (+546% 1h, $58k 5m, 87% buys, about 12 minutes old), with RIVA128 (chip) and DMIND (DeFiMind) riding the same Nvidia/Jensen Huang headlines on much thinner volume. "Jensen Is Back" ($808k, flat) is the only older Jensen coin still trading. Thanksgiving, Christmas and the Trump dinner don't appear in the raw movers (MOGMAS has 16% buys with sellers in control), so I'm not calling a holiday theme. Setups to research, no entries yet: FIONA as the original hippo, stop set first and probe size at most; GPU Jesus only if it holds after the blow-off, since chasing +546% in an hour is how you become exit liquidity (V6); DMIND and RIVA128 only as LARP checks (V1), since their volume is thin. Holder, dev and bundle checks run on each coin at research time. The crawler's THANKS, JENPE and TIMOTHY-at-$87k figures don't match the raw rows, so I scored raw only.
+The trenches are a launch-style tape, not quiet: most movers are under two hours old, and two themes repeat in the raw rows. Cute creature mascots are rising (CHIBI / Chibi Neko: $120k mcap, $75k 5m, 60% buys, +334% 1h; Fatu the Rhino is too thin at $3.4k 5m), and Jensen/Nvidia AI-chip is the second (JENSEN the White: $99k mcap, $40k 5m, 66% buys; GPU Jesus is +731% in an hour but only $7.8k 5m, under the $10k floor, which is exit-liquidity shape per V6). Low-cap copies are fading (GOATCOIN -70% at 30% buys, BABYPUMP -59% at 20% buys, FLOG and WASB), and the Trump-dinner headlines don't show up in the raw movers, so I'm not chasing them. I scored the raw rows only, since the crawler's GPU and JENSEN figures don't match them. Setups to research, no entries yet: CHIBI first, with the stop set before any entry and a probe-size position at most (V1); JENSEN the White second; CLAUDIO has the most 5m flow ($104k) but a 49% buy split and no theme I can read from the raw row, so it's a research pass only. Holder, dev and bundle checks run on each coin at research time before any buy.
 
 ## Moving most in its scans, last 30 min (1h volume)
 - CLAUDIO: $1,604,941 1h vol, $1,784,877 mcap, +157% 1h  
   CA `5St93zSNQvWxK22Cj5mJBXcjUNNB452h5uNmrttSpump`
-- CHIBI: $887,984 1h vol, $119,578 mcap, +334% 1h  
-  CA `4ZgqnNi53sRKKegFpYefFjsFE6zQ3T64Xkavcoh7pump`
-- Jesus: $267,551 1h vol, $271,664 mcap, +731% 1h  
-  CA `Gy5BUDnpJMWRsNVKh9sRtsBGunFXKKrbroQRoydQpump`
-- UCASH: $194,098 1h vol, $1,176,863 mcap, -20% 1h  
-  CA `7cFiqdT46zs7ooHWLFiLSaSQKLMibtokh9dBinsspump`
+- STACK: $487,468 1h vol, $56,351 mcap, +74% 1h  
+  CA `gzYHA8qjtFd76w58fEyn7knMdhedzdQuzmmAruwpump`
+- FIONA: $255,398 1h vol, $4,247,843 mcap, +19% 1h  
+  CA `B34nXKzCgsJb9ChLuSHPRpXLE3WFSWyeT8Cqkzzmpump`
 - GTS1: $180,489 1h vol, $49,833 mcap, +65% 1h  
   CA `4R5rnh1KFL33ZnDoADAdLMXgQbKQm2X9R7rZT1Kcpump`
+- Mikan: $115,771 1h vol, $16,821 mcap, +319% 1h  
+  CA `EugsQhveCEQGoapBEUrMQxJxWNdshJrSmaLtN4ArRMM1`
