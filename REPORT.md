@@ -1,13 +1,13 @@
 # Trencher live report
 
-Updated 2026-11-24T12:09:42Z (paper trading, never real money)
+Updated 2026-11-24T12:24:51Z (paper trading, never real money)
 
 - Equity: $74.23 (-25.8% vs $100 start)
 - Closed trades: 22, 3 wins
 - Fees paid: $14.78 (axiom $2.81, network $9.18, pool $2.66), plus $4.15 lost to slippage
 - New trades: WATCH-ONLY (scans and decides, buys nothing)
-- Brain: subscription, claude-haiku-5-5 for routine calls, claude-opus-5-5 for the daily review; 469 routine calls and 0 plan-limit hits in 48h
-- Watch log: 48 coins being followed, 3285 filed, 0 would-buys (6h follow, sampled every 2 min)
+- Brain: subscription, claude-haiku-5-5 for routine calls, claude-opus-5-5 for the daily review; 470 routine calls and 0 plan-limit hits in 48h
+- Watch log: 49 coins being followed, 3286 filed, 0 would-buys (6h follow, sampled every 2 min)
 
 ## Scorecard (after fees)
 - 22 closed, 3 won (14%), net $-25.79
@@ -73,9 +73,15 @@ Updated 2026-11-24T12:09:42Z (paper trading, never real money)
   CA `H4gHnZ3NCU7Z9XQwGX6YYJNyieGEW8pqwGRUcdSxpump`
 
 ## Last scan
-- 12:09Z: 5 coins, 4 with pairs, 0 passed the market filters, 0 researched
+- 12:23Z: 4 coins, 3 with pairs, 1 passed the market filters, 1 researched
 
 ## Coins it looked at, and why it passed
+- 12:23Z Scamsem (DIP, $73,463 mcap, $2,234 5m vol): PASS, PASS — brain unavailable, not trading blind.  
+  CA `5JWeGmA9z6yHd5F9P6B23A8wthho8BpZuDmQv5DfLoat`
+- 12:22Z BITEFLY (MIGRATED, $36,388 mcap, $37,542 5m vol): PASS, PASS — brain unavailable, not trading blind.  
+  CA `FKYYhVAo9RnfBCrtn7wp2meexQ8xUWXSjRgMrJgkpump`
+- 12:22Z HACKINU (no setup, $4,547 mcap, $0 5m vol): REJECT, Hack story ("hack" in the name or ticker): these tend to go down, owner rule  
+  CA `6AqxUg7adxVrs1p3ugiZ2a8hyRtsmgayRSKjrojLpump`
 - 12:08Z DUVAL (MIGRATED, $281,974 mcap, $54,294 5m vol): PASS at conviction 3, PASS: no printed higher low, and DUVAL is one of 23 copies with a bundle cluster inside the field. Split crowd, no structure (V1, V3, V13).  
   CA `7fmD1p3jzva28EPP9bPqbDoxZGj5j398yJoE3EVypump`
 - 11:55Z DONJENSEN (MIGRATED, $2,208,441 mcap, $3,583 5m vol): PASS at conviction 2, PASS: target too close, big cap, no room. $2.2M mcap, 5m flow $3.6k, and the first resistance (the $2.67M peak) is only 1.21x away. The Jensen meta is fading. (V1, V6)  
@@ -90,12 +96,6 @@ Updated 2026-11-24T12:09:42Z (paper trading, never real money)
   CA `8RKV9GyNmhQAVaKVEYK9tBMWkJy7BAJ5JpXAsSV8pump`
 - 11:35Z CBUCKS (MIGRATED, $4,195,050 mcap, $178 5m vol): REJECT, 5m volume $178 is dead (<$2,000) (V1)  
   CA `DtcicPCKTKeAh7TDEzTym3hXeoHAoMiBdYJhMYxZpump`
-- 11:30Z HIB (MIGRATED, $41,344 mcap, $13,930 5m vol): PASS at conviction 3, PASS. HIB is about 70 seconds old, up 43% on 5m, and 9% off a $45k high. That's a fresh spike, not a setup (V1, V6).  
-  CA `CNT5XpSy3HnzgsKxCFhhbV9CqmHzqbv6d9sT36cBpump`
-- 11:22Z HACKINU (no setup, $5,682 mcap, $2,019 5m vol): REJECT, Hack story ("hack" in the name or ticker): these tend to go down, owner rule  
-  CA `6AqxUg7adxVrs1p3ugiZ2a8hyRtsmgayRSKjrojLpump`
-- 11:10Z CLAUDIO (MIGRATED, $93,784 mcap, $2,636 5m vol): REJECT, Bundles: 4 linked wallet cluster(s) hold 47.8% of supply (>20%) (V17)  
-  CA `5St93zSNQvWxK22Cj5mJBXcjUNNB452h5uNmrttSpump`
 
 ## What its skips did next (last 48h)
 A skip "ran" if the coin reached the first target (1.5x) from the skip price before a 20% drop, "dumped" if the drop came first. Sampled every 10 min, followed 6h.
@@ -113,7 +113,7 @@ A skip "ran" if the coin reached the first target (1.5x) from the skip price bef
     CA `AdXjXfumPSSKk7PrfgDHcAsPvuxnKv7Zo9WZEWKbiDkh`
   - ran: Phil up to 2.05x  
     CA `GMLSyjZCKGtFwztp2mtT8PDeNUA6WEk7oQoe3QkFpump`
-- flow below pace: blocked 34, ran 7, dumped 24, flat 0, open 3 (saving losses: keep it)
+- flow below pace: blocked 34, ran 7, dumped 25, flat 0, open 2 (saving losses: keep it)
   - ran: OpenIndex up to 1.63x  
     CA `FuKY3dk7QmpbDdQRjzbjB3G6PiCuqKNvN4dAWDpwpump`
   - ran: hCAT up to 1.52x  
@@ -142,23 +142,23 @@ A skip "ran" if the coin reached the first target (1.5x) from the skip price bef
 - dev share over 1%: blocked 12, ran 1, dumped 8, flat 3, open 0 (saving losses: keep it)
   - ran: BLOOM up to 2.09x  
     CA `FyRXnHLBSeHHoigrgHR1hvcXiPbPCa5bxhVhEDampump`
-- falling knife / no higher low: blocked 11, ran 3, dumped 6, flat 1, open 1 (saving losses: keep it)
+- bundles over the line: blocked 10, ran 1, dumped 4, flat 4, open 1 (saving losses: keep it)
+  - ran: RNV up to 2.35x  
+    CA `A2nbXtQvvRMvWtifCkV8cYepwcC4M7iA1jVMwAh6pump`
+- brain paced: blocked 10, ran 3, dumped 5, flat 0, open 2 (mixed)
+  - ran: FOAM up to 1.98x  
+    CA `2MdCPWNFufmJSZhajSvi1yqBFTB24GQ4ipjNcB8Vpump`
+  - ran: MCAT up to 2.52x  
+    CA `BzPyyYCTmQNq2BcfQ4ANAvCYk54rnmQEXMFvFT8RhWMi`
+  - ran: DELULU up to 1.57x  
+    CA `A37ozuu1D1pP1cM27y1HYkSArVQbgsZNN7Va74yNpump`
+- falling knife / no higher low: blocked 10, ran 3, dumped 6, flat 0, open 1 (saving losses: keep it)
   - ran: Fly up to 1.52x  
     CA `84tAcSK5L9kuQEVM8C8vMHXnfdA83nGBT2nYfSbPUcAc`
   - ran: hCAT up to 1.52x  
     CA `2FYs4vApfj4ErsggpFDfzMv1WvxnyiLtzNEj84mS6TLh`
   - ran: Mogmas up to 1.63x  
     CA `Cocrz7BR2xE2sgKn3VbmaTXH6HTVgCiVFWTVWmyTpump`
-- bundles over the line: blocked 10, ran 1, dumped 4, flat 4, open 1 (saving losses: keep it)
-  - ran: RNV up to 2.35x  
-    CA `A2nbXtQvvRMvWtifCkV8cYepwcC4M7iA1jVMwAh6pump`
-- other: blocked 9, ran 3, dumped 6, flat 0, open 0 (saving losses: keep it)
-  - ran: ZOL up to 1.64x  
-    CA `AQfw8J74V17erZsmMz4oK474eVLBaP44gD33vVbhtHo5`
-  - ran: CATEGIVING up to 1.81x  
-    CA `APa2jK3ZRK9XhuKHGXSFNDohfU5RfZZKajiv26qSvX2X`
-  - ran: task up to 1.61x  
-    CA `BJeEE9WCP1HZqT1D3heD9Do96D4dnEcNoDHspvQapump`
 
 ## Daily review (2026-11-23, claude-opus-5-5)
 Nothing has a positive after-cost edge yet. All 229 settled coins average -8.7% net on the simple plan. Before costs they average about +0.9%, so the 9.6% average round-trip cost on a $10 buy accounts for the whole loss. That is the same story as the 22 paper trades, where fees and slippage were $18.83 of the $25.79 lost. The best setup is FINAL_STRETCH: n=39, 35.9% hit 1.5x, -4.9% net. With a 1.5x target, a -20% stop and about 10% costs, a setup needs roughly 43% hitting the target to break even. At n=39 the hit rate's 95% range is about 21–51%, so this sample can't separate it from MIGRATED, from coin-flip noise or from breakeven. I can't say whether the routine model's would-buys beat its passes, because it made zero would-buys in 24h. The coins it passed on (n=157, -8.4%) did slightly better than the coins the checklist failed (n=70, -9.8%), but both lost money. Passing everything was the right call on average. One process note: the watch-only review was set for about Nov 10 and today is Nov 23, so the owner should decide whether this is still the plan.
@@ -201,11 +201,11 @@ Nothing in this scan is a setup. No mover clears the $10k 5-minute volume bar; t
 ## Moving most in its scans, last 30 min (1h volume)
 - DUVAL: $448,282 1h vol, $281,974 mcap, +334% 1h  
   CA `7fmD1p3jzva28EPP9bPqbDoxZGj5j398yJoE3EVypump`
+- HIB: $84,117 1h vol, $1,397 mcap, -95% 1h  
+  CA `CNT5XpSy3HnzgsKxCFhhbV9CqmHzqbv6d9sT36cBpump`
 - SHHFT: $50,612 1h vol, $102,445 mcap, +252% 1h  
   CA `GqMg4TRt5U5HRK6oeZYwCF1Jz7Ym9MSzWSoFCtFsbzf6`
-- callmaps: $48,085 1h vol, $11,062 mcap, +429% 1h  
-  CA `CALLY1eAdyfn33E6g3dBhdT7MUBEckLCMdNBX3QvMAPS`
 - DONJENSEN: $47,996 1h vol, $2,208,441 mcap, +7% 1h  
   CA `5LDowscYVD3a6ZS4m8gCqG5nU16eLTwRXhciFi1bpump`
-- FoolCoin: $30,191 1h vol, $36,916 mcap, +493% 1h  
-  CA `8RKV9GyNmhQAVaKVEYK9tBMWkJy7BAJ5JpXAsSV8pump`
+- BITEFLY: $37,542 1h vol, $36,388 mcap, +22% 1h  
+  CA `FKYYhVAo9RnfBCrtn7wp2meexQ8xUWXSjRgMrJgkpump`
