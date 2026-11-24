@@ -1,13 +1,13 @@
 # Trencher live report
 
-Updated 2026-11-24T14:41:00Z (paper trading, never real money)
+Updated 2026-11-24T14:56:17Z (paper trading, never real money)
 
 - Equity: $74.23 (-25.8% vs $100 start)
 - Closed trades: 22, 3 wins
 - Fees paid: $14.78 (axiom $2.81, network $9.18, pool $2.66), plus $4.15 lost to slippage
 - New trades: WATCH-ONLY (scans and decides, buys nothing)
-- Brain: subscription, claude-haiku-5-5 for routine calls, claude-opus-5-5 for the daily review; 483 routine calls and 0 plan-limit hits in 48h
-- Watch log: 57 coins being followed, 3304 filed, 0 would-buys (6h follow, sampled every 2 min)
+- Brain: subscription, claude-haiku-5-5 for routine calls, claude-opus-5-5 for the daily review; 484 routine calls and 0 plan-limit hits in 48h
+- Watch log: 54 coins being followed, 3309 filed, 0 would-buys (6h follow, sampled every 2 min)
 
 ## Scorecard (after fees)
 - 22 closed, 3 won (14%), net $-25.79
@@ -73,9 +73,13 @@ Updated 2026-11-24T14:41:00Z (paper trading, never real money)
   CA `H4gHnZ3NCU7Z9XQwGX6YYJNyieGEW8pqwGRUcdSxpump`
 
 ## Last scan
-- 14:40Z: 1 coins, 1 with pairs, 0 passed the market filters, 0 researched
+- 14:56Z: 4 coins, 4 with pairs, 1 passed the market filters, 1 researched
 
 ## Coins it looked at, and why it passed
+- 14:56Z JENSEN (MIGRATED, $155,501 mcap, $5,476 5m vol): REJECT, RugCheck danger: Creator history of rugged tokens  
+  CA `HKiMA2mKQHU2cjfZ4Kbmru5GBGCauSNqPtpu8cfmpump`
+- 14:41Z cateball (DIP, $970,684 mcap, $6,907 5m vol): PASS, PASS — brain unavailable, not trading blind.  
+  CA `4npJ3avxnGhCzKbWQpLrQXAHsjWzKr4JqBsbu5Fspump`
 - 14:38Z GPUBREAK (DIP, $69,724 mcap, $112,349 5m vol): REJECT, LP only 56% burned/locked (V2, V3, V6)  
   CA `BykEjfKeLzSAen7p41nCHFwenuQ5s4fosPRzJudLpump`
 - 14:31Z POORGOAT (FINAL_STRETCH, $15,215 mcap, $11,410 5m vol): REJECT, Top 10 hold 30.4% ex-pool (>25%) (V13)  
@@ -92,10 +96,6 @@ Updated 2026-11-24T14:41:00Z (paper trading, never real money)
   CA `7k83dNQKMknKRXuAX4nT6JDNReNywUUP5LqpggyQpump`
 - 14:11Z DONJENSEN (MIGRATED, $2,026,349 mcap, $2,760 5m vol): PASS, PASS — brain unavailable, not trading blind.  
   CA `5LDowscYVD3a6ZS4m8gCqG5nU16eLTwRXhciFi1bpump`
-- 14:06Z CBUCKS (MIGRATED, $4,225,132 mcap, $2,170 5m vol): REJECT, Top 10 hold 25.9% ex-pool (>25%) (V13)  
-  CA `DtcicPCKTKeAh7TDEzTym3hXeoHAoMiBdYJhMYxZpump`
-- 13:55Z cateball (DIP, $1,186,838 mcap, $2,895 5m vol): REJECT, Dip with fading attention is a falling knife, not a dip (5m at 0.36x the hour's pace, under 0.6x)  
-  CA `4npJ3avxnGhCzKbWQpLrQXAHsjWzKr4JqBsbu5Fspump`
 
 ## What its skips did next (last 48h)
 A skip "ran" if the coin reached the first target (1.5x) from the skip price before a 20% drop, "dumped" if the drop came first. Sampled every 10 min, followed 6h.
@@ -113,7 +113,7 @@ A skip "ran" if the coin reached the first target (1.5x) from the skip price bef
     CA `AdXjXfumPSSKk7PrfgDHcAsPvuxnKv7Zo9WZEWKbiDkh`
   - ran: Phil up to 2.05x  
     CA `GMLSyjZCKGtFwztp2mtT8PDeNUA6WEk7oQoe3QkFpump`
-- flow below pace: blocked 34, ran 7, dumped 25, flat 0, open 2 (saving losses: keep it)
+- flow below pace: blocked 34, ran 7, dumped 25, flat 1, open 1 (saving losses: keep it)
   - ran: OpenIndex up to 1.63x  
     CA `FuKY3dk7QmpbDdQRjzbjB3G6PiCuqKNvN4dAWDpwpump`
   - ran: hCAT up to 1.52x  
@@ -134,7 +134,7 @@ A skip "ran" if the coin reached the first target (1.5x) from the skip price bef
     CA `CjPoozfB2Vub8pHFvdKuKUGJDLWuYC2U32yRTxMhpump`
   - ran: FUCK! up to 2.22x  
     CA `CSjwLiCLyaJqXQm9XCV3LdYWMYswbZ7JQ71JKX77pump`
-- brain paced: blocked 17, ran 7, dumped 9, flat 0, open 1 (mixed)
+- brain paced: blocked 18, ran 7, dumped 9, flat 0, open 2 (mixed)
   - ran: FOAM up to 1.98x  
     CA `2MdCPWNFufmJSZhajSvi1yqBFTB24GQ4ipjNcB8Vpump`
   - ran: MCAT up to 2.52x  
@@ -144,7 +144,7 @@ A skip "ran" if the coin reached the first target (1.5x) from the skip price bef
 - thin 5m volume: blocked 14, ran 1, dumped 9, flat 3, open 1 (saving losses: keep it)
   - ran: NINO up to 1.55x  
     CA `BqekG1RSPUthaKfStu7Uvyvr1eR6TchrQMp1M5r5pump`
-- dev share over 1%: blocked 12, ran 2, dumped 6, flat 3, open 1 (saving losses: keep it)
+- dev share over 1%: blocked 12, ran 2, dumped 7, flat 3, open 0 (saving losses: keep it)
   - ran: BLOOM up to 2.09x  
     CA `FyRXnHLBSeHHoigrgHR1hvcXiPbPCa5bxhVhEDampump`
   - ran: PI up to 1.77x  
@@ -201,11 +201,11 @@ Nothing in this scan is a setup. No mover clears the $10k 5-minute volume bar; t
 ## Moving most in its scans, last 30 min (1h volume)
 - GPUBREAK: $1,262,068 1h vol, $69,724 mcap, +149% 1h  
   CA `BykEjfKeLzSAen7p41nCHFwenuQ5s4fosPRzJudLpump`
-- DUVAL: $262,799 1h vol, $110,013 mcap, -69% 1h  
-  CA `7fmD1p3jzva28EPP9bPqbDoxZGj5j398yJoE3EVypump`
 - POORGOAT: $185,695 1h vol, $64,267 mcap, +114% 1h  
   CA `DE6jZSwe422PWGWWU5hNCUrUmPDHHhF5aVXpjFbFpump`
-- PI: $152,510 1h vol, $1,381 mcap, -98% 1h  
+- PI: $88,310 1h vol, $1,344 mcap, -99% 1h  
   CA `D2AK5DvBj8AxN5VX1t6bjv7muJVPUx4hFPowVRWYpump`
-- Memeployed: $133,655 1h vol, $88,466 mcap, +93% 1h  
-  CA `4m2PS6yW2xDk5V9nJgPjnus1eguwCDSWXbA2YQeVkqxn`
+- Wolf: $83,809 1h vol, $23,403 mcap, -19% 1h  
+  CA `2BZQURdxckva3QqzX47RbrRCkrfnv8dSrRm6BD1RigYH`
+- FIONA: $56,408 1h vol, $3,196,255 mcap, -7% 1h  
+  CA `B34nXKzCgsJb9ChLuSHPRpXLE3WFSWyeT8Cqkzzmpump`
