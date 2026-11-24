@@ -1,13 +1,13 @@
 # Trencher live report
 
-Updated 2026-11-24T07:07:00Z (paper trading, never real money)
+Updated 2026-11-24T07:22:14Z (paper trading, never real money)
 
 - Equity: $74.23 (-25.8% vs $100 start)
 - Closed trades: 22, 3 wins
 - Fees paid: $14.78 (axiom $2.81, network $9.18, pool $2.66), plus $4.15 lost to slippage
 - New trades: WATCH-ONLY (scans and decides, buys nothing)
-- Brain: subscription, claude-haiku-5-5 for routine calls, claude-opus-5-5 for the daily review; 475 routine calls and 0 plan-limit hits in 48h
-- Watch log: 84 coins being followed, 3208 filed, 0 would-buys (6h follow, sampled every 2 min)
+- Brain: subscription, claude-haiku-5-5 for routine calls, claude-opus-5-5 for the daily review; 473 routine calls and 0 plan-limit hits in 48h
+- Watch log: 83 coins being followed, 3211 filed, 0 would-buys (6h follow, sampled every 2 min)
 
 ## Scorecard (after fees)
 - 22 closed, 3 won (14%), net $-25.79
@@ -73,9 +73,13 @@ Updated 2026-11-24T07:07:00Z (paper trading, never real money)
   CA `H4gHnZ3NCU7Z9XQwGX6YYJNyieGEW8pqwGRUcdSxpump`
 
 ## Last scan
-- 07:06Z: 4 coins, 4 with pairs, 0 passed the market filters, 0 researched
+- 07:21Z: 7 coins, 7 with pairs, 0 passed the market filters, 0 researched
 
 ## Coins it looked at, and why it passed
+- 07:18Z Satoshi (FINAL_STRETCH, $21,716 mcap, $51,280 5m vol): PASS at conviction 2, PASS: 5-minute spike of +615% on a 5-minute-old pump.fun coin in a 23-copy "satoshi" field, with no catalyst and a website that isn't this token's. Blocker: chasing spike / split crowd. (V1, V6)  
+  CA `DXkCsXhXeh2xTfQ8Um8dicQcwseTfuHvDwriTcJLpump`
+- 07:09Z O2 (FINAL_STRETCH, $18,141 mcap, $16,474 5m vol): PASS at conviction 3, PASS: spike chase on a 14-minute-old copy in an 11-coin "oxygen" field, no printed higher low, no story behind it. Blocker: chasing spike (V1, V6, V13).  
+  CA `4gboevpfN1dEzjzDzFKinndqY5zYdCqenTyvStbnpump`
 - 07:04Z survive (FINAL_STRETCH, $24,966 mcap, $2,191 5m vol): PASS at conviction 2, PASS: chasing spike. Price is 3% off a high it printed 6 minutes ago, after a roughly 2x bounce in about 30 minutes, with no printed higher low and $2.2k of 5m volume. Blocker: "chasing spike" (V1, V6).  
   CA `EaiNiPA791st8dtYYuRKqU4M2wetyRdRzk5K2VT1pump`
 - 07:00Z UCASH (MIGRATED, $154,121 mcap, $3,818 5m vol): PASS at conviction 2, PASS: 96% off a $3.8M peak, 5m flow at 0.87x pace, no higher low, and no story on the radar. Umbra Cash is a 1.8-day-old site with no GitHub. Not a bottom buy. (V1, V6, V13)  
@@ -92,10 +96,6 @@ Updated 2026-11-24T07:07:00Z (paper trading, never real money)
   CA `7cFiqdT46zs7ooHWLFiLSaSQKLMibtokh9dBinsspump`
 - 06:08Z JENSEN (MIGRATED, $387,037 mcap, $2,474 5m vol): REJECT, Top 10 hold 25.6% ex-pool (>25%) (V13)  
   CA `HKiMA2mKQHU2cjfZ4Kbmru5GBGCauSNqPtpu8cfmpump`
-- 05:54Z ORBLUX (MIGRATED, $66,608 mcap, $17,003 5m vol): PASS at conviction 3, PASS — ORBLUX is 25 minutes old, up 124% in the hour from a $5k low, and its only prior high is 1.19x away. Too new, no story, no room. Farm-shaped (V1, V6, V13).  
-  CA `5KDyvAjSU8HWofZfVnpkdY2N4UM1R2jxUkLupYmgpump`
-- 05:50Z DONJENSEN (MIGRATED, $2,185,718 mcap, $3,776 5m vol): PASS at conviction 2, PASS. Chasing a Jensen copy at 8% off the high, on sell-heavy flow, in a dying meta. Blocker: "chasing" (V1, V6).  
-  CA `5LDowscYVD3a6ZS4m8gCqG5nU16eLTwRXhciFi1bpump`
 
 ## What its skips did next (last 48h)
 A skip "ran" if the coin reached the first target (1.5x) from the skip price before a 20% drop, "dumped" if the drop came first. Sampled every 10 min, followed 6h.
@@ -106,20 +106,20 @@ A skip "ran" if the coin reached the first target (1.5x) from the skip price bef
     CA `5eiLc9r79PkJquiFvYWdXJYtGNRjTpzot8MR7Z4Ppump`
   - ran: Hold up to 1.62x  
     CA `8J7yeYsBzozSQ67Ji4kpun2gdfTFp8o9g6rNkYR3pump`
-- near the high / chasing: blocked 38, ran 7, dumped 27, flat 2, open 2 (saving losses: keep it)
+- near the high / chasing: blocked 39, ran 7, dumped 26, flat 2, open 4 (saving losses: keep it)
   - ran: Bertcoin up to 1.8x  
     CA `xEK58Qa2xZ7C36Z2g3Jjq1WHY561CvvnJkLpgJspump`
   - ran: WOFL up to 2.62x  
     CA `AdXjXfumPSSKk7PrfgDHcAsPvuxnKv7Zo9WZEWKbiDkh`
   - ran: Phil up to 2.05x  
     CA `GMLSyjZCKGtFwztp2mtT8PDeNUA6WEk7oQoe3QkFpump`
-- flow below pace: blocked 34, ran 7, dumped 24, flat 0, open 3 (saving losses: keep it)
+- flow below pace: blocked 34, ran 8, dumped 24, flat 0, open 2 (saving losses: keep it)
   - ran: snowball up to 1.59x  
     CA `3D7YQcnXi6RMjWxheiE8VLuGXJTtgQkmyugGYvzjpump`
   - ran: OpenIndex up to 1.63x  
     CA `FuKY3dk7QmpbDdQRjzbjB3G6PiCuqKNvN4dAWDpwpump`
-  - ran: hCAT up to 1.52x  
-    CA `2FYs4vApfj4ErsggpFDfzMv1WvxnyiLtzNEj84mS6TLh`
+  - ran: UCASH up to 1.89x  
+    CA `7cFiqdT46zs7ooHWLFiLSaSQKLMibtokh9dBinsspump`
 - top 10 over 25%: blocked 29, ran 5, dumped 20, flat 3, open 1 (saving losses: keep it)
   - ran: GIF up to 2.16x  
     CA `B6wM98qkQKP71mhPA48S7No6TxM4KaXdFojDTZeUpump`
@@ -192,16 +192,24 @@ Nothing has a positive after-cost edge yet. All 229 settled coins average -8.7% 
 - [2026-11-02 20:25] I expected Slingoor, a clean MIGRATED leader with $25k of 5m flow at pace and a 0.77 buy share, to retest its $408k high from $304k. It never went green (0.98x peak) and hit the -20% stop in 2 minutes, a -$2.86 probe. My own thesis admitted there was no printed higher low after a peak only 6 minutes old, so this confirms the money-shape rule: buy share and flow are not structure (V1, V6). Next time a MIGRATED pullback with no higher low above the hourly low is a PASS with blocker "no higher low", not a probe. This is one loss, so it adds no new ban beyond the rule I already have.
 
 ## Meta right now
-The trenches are running animals and absurd names, not the news. Hippos (Fiona, Timothy), a white rhino (NAJIN) and EuropaCoin (two separate CAs, both moving) hold the volume and buyers, and most movers are under 3 hours old on pump.fun or PumpSwap. Jensen/AI names are fading: JENSEN is down 39% in the hour on $2.8k 5m, DONJENSEN is flat at $2.2M on $4k 5m, and the Trump-dinner headlines are news, not flow, since no mover carries a Trump name. Setups to research, not buy: Orblux (66k cap, $12.9k 5m, 77% buys, +124% 1h, 0.4h old) fits the MIGRATED age and volume bars, and Joey (18.7k cap, $30k 5m, 67% buys, +673% 1h, about 6 min old) is a New Pairs spike whose 5m volume is bigger than its cap, which is a farm flag to check before anyone touches it. The crawler's Spidercow and NAJIN numbers don't match the raw rows (Spidercow shows 0 5m volume at a 1.4k cap, NAJIN shows $199 5m), so neither is a setup until the data reconciles. Holder, dev and bundle checks run on each coin before any entry; this is a research list, not a buy list.
+Trencher, meta read from scan_movers (research only, not a buy list).
+
+Movers are dominated by animal and absurd-name tokens, mostly under 3 hours old on pump.fun or PumpSwap. Four themes show up across several coins:
+1. Hippos and animals: Fiona (8k cap, -10% 1h), Timothy (8.7k, +17% 1h, 0 5m volume), NAJIN the white rhino (16.7k, -41% 1h, $4.9k 5m, 59% buys). Mixed, and Fiona/NAJIN 5m numbers conflict with the crawler, so unverified.
+2. Claude/AI-name jokes: Claudio (50.9k, 5m $488, +12% 1h) and SUPER CLAUDIA INU (61k, 5m $342). Thin 5m volume, so fading.
+3. Self-referential or "trade/survive" jokes: Trade with Sola (9.6k, $15.2k 5m, 57% buys, +310% 1h), OXYGEN (18.8k, $17.9k 5m, 55% buys, +426% 1h), survive (25k, $2.2k 5m, +116% 1h). This is the strongest live cluster, and it is young.
+4. Jensen/Trump-dinner names: JENSEN (465k, 5m $3.8k, -39% in the hour per crawler), DONJENSEN flat. Fading. The Trump-dinner headlines are news, and no mover carries a Trump name, so no flow there.
+
+Rising: the new-age pump.fun "joke" cluster (SOLA, OXYGEN, survive). Fading: Jensen names, the hippo pumps, and the Claude names. Setups to research only: SOLA (vol/cap is high, check for farm and bundles first) and OXYGEN (migration-range run, check whether 5m volume is organic). Joey (2.9k cap, $215 5m) and EuropaCoin (9 vol, 0% buys) fail the volume floor, so pass. Crawler's Orblux and Joey 30k 5m figures don't appear in the raw rows, so they're unreconciled and not setups.
 
 ## Moving most in its scans, last 30 min (1h volume)
-- ORBLUX: $236,162 1h vol, $57,498 mcap, +14% 1h  
-  CA `5KDyvAjSU8HWofZfVnpkdY2N4UM1R2jxUkLupYmgpump`
-- TIMMY: $97,451 1h vol, $6,036 mcap, +70% 1h  
+- TIMMY: $99,750 1h vol, $3,995 mcap, +13% 1h  
   CA `5PjUUcKcjEg8ib5Rmc7kuhHKKKxRLRtHZVS8NfRBpump`
+- Blazely: $74,255 1h vol, $3,948 mcap, -85% 1h  
+  CA `GxHr6tdvmMmih5fUU6fgAiJa6vnVwDbnCUFDN7vh3964`
+- O2: $62,093 1h vol, $18,799 mcap, +426% 1h  
+  CA `4gboevpfN1dEzjzDzFKinndqY5zYdCqenTyvStbnpump`
 - UCASH: $53,221 1h vol, $151,439 mcap, +13% 1h  
   CA `7cFiqdT46zs7ooHWLFiLSaSQKLMibtokh9dBinsspump`
-- SOLA: $36,833 1h vol, $9,598 mcap, +310% 1h  
-  CA `4VXzZBmMgzaxmfaFbadhZU4zvNF3L3eAXVpRdZ64pump`
-- JENSEN: $36,606 1h vol, $464,689 mcap, +9% 1h  
-  CA `HKiMA2mKQHU2cjfZ4Kbmru5GBGCauSNqPtpu8cfmpump`
+- Satoshi: $51,280 1h vol, $21,716 mcap, +615% 1h  
+  CA `DXkCsXhXeh2xTfQ8Um8dicQcwseTfuHvDwriTcJLpump`
