@@ -1,13 +1,13 @@
 # Trencher live report
 
-Updated 2026-11-24T23:31:27Z (paper trading, never real money)
+Updated 2026-11-24T23:46:29Z (paper trading, never real money)
 
 - Equity: $74.23 (-25.8% vs $100 start)
 - Closed trades: 22, 3 wins
 - Fees paid: $14.78 (axiom $2.81, network $9.18, pool $2.66), plus $4.15 lost to slippage
 - New trades: WATCH-ONLY (scans and decides, buys nothing)
-- Brain: subscription, claude-haiku-5-5 for routine calls, claude-opus-5-5 for the daily review; 517 routine calls and 0 plan-limit hits in 48h
-- Watch log: 75 coins being followed, 3398 filed, 0 would-buys (6h follow, sampled every 2 min)
+- Brain: subscription, claude-haiku-5-5 for routine calls, claude-opus-5-5 for the daily review; 514 routine calls and 0 plan-limit hits in 48h
+- Watch log: 74 coins being followed, 3400 filed, 0 would-buys (6h follow, sampled every 2 min)
 
 ## Scorecard (after fees)
 - 22 closed, 3 won (14%), net $-25.79
@@ -73,9 +73,11 @@ Updated 2026-11-24T23:31:27Z (paper trading, never real money)
   CA `H4gHnZ3NCU7Z9XQwGX6YYJNyieGEW8pqwGRUcdSxpump`
 
 ## Last scan
-- 23:30Z: 7 coins, 7 with pairs, 0 passed the market filters, 0 researched
+- 23:46Z: 5 coins, 5 with pairs, 0 passed the market filters, 0 researched
 
 ## Coins it looked at, and why it passed
+- 23:44Z 4CHAN (MIGRATED, $265,002 mcap, $94,668 5m vol): PASS, PASS — brain unavailable, not trading blind.  
+  CA `DVdWuNK8ncn79B6z8nCiwcNAiwyFcmBPfChgxJGTpump`
 - 23:29Z Sisyphus (MIGRATED, $31,174 mcap, $46,221 5m vol): REJECT, Top 10 hold 26.6% ex-pool (>25%) (V13)  
   CA `AuPon7CveYeRk3E7YdUt9QMGu5hEGkqSxzo9NiZdpump`
 - 23:26Z cateball (DIP, $763,518 mcap, $3,720 5m vol): PASS, PASS — brain unavailable, not trading blind.  
@@ -94,8 +96,6 @@ Updated 2026-11-24T23:31:27Z (paper trading, never real money)
   CA `B34nXKzCgsJb9ChLuSHPRpXLE3WFSWyeT8Cqkzzmpump`
 - 23:09Z BTC (MIGRATED, $160,205 mcap, $10,368 5m vol): REJECT, Top 10 hold 31.6% ex-pool (>25%) (V13)  
   CA `GkSZVKcXcgodewdZd5CbGxFJoUUcazrf1GayrNv3pump`
-- 22:56Z Memeployed (MIGRATED, $74,090 mcap, $11,616 5m vol): PASS, PASS — brain unavailable, not trading blind.  
-  CA `4m2PS6yW2xDk5V9nJgPjnus1eguwCDSWXbA2YQeVkqxn`
 
 ## What its skips did next (last 48h)
 A skip "ran" if the coin reached the first target (1.5x) from the skip price before a 20% drop, "dumped" if the drop came first. Sampled every 10 min, followed 6h.
@@ -106,13 +106,13 @@ A skip "ran" if the coin reached the first target (1.5x) from the skip price bef
     CA `GaNJeASYBM9k3TvEeUC2Pdyu1TjcpzTmPpoom92fpump`
   - ran: GOAT up to 1.53x  
     CA `5Ze97VEpX3EdRF4vbsxUXTdwGKF2qHGregrxToWEpump`
-- brain paced: blocked 38, ran 10, dumped 23, flat 1, open 4 (saving losses: keep it)
+- brain paced: blocked 39, ran 11, dumped 25, flat 1, open 2 (saving losses: keep it)
+  - ran: DONJENSEN up to 1.69x  
+    CA `5LDowscYVD3a6ZS4m8gCqG5nU16eLTwRXhciFi1bpump`
   - ran: Scamsem up to 1.56x  
     CA `5JWeGmA9z6yHd5F9P6B23A8wthho8BpZuDmQv5DfLoat`
   - ran: RUGSEM up to 1.5x  
     CA `9cDnmLRDWeJzcpyw8tSFAT7HS4Aunx6MmZWjMfrzpump`
-  - ran: SHHFT up to 1.61x  
-    CA `GqMg4TRt5U5HRK6oeZYwCF1Jz7Ym9MSzWSoFCtFsbzf6`
 - too new / sniping: blocked 31, ran 3, dumped 27, flat 1, open 0 (saving losses: keep it)
   - ran: Loaf up to 2.13x  
     CA `8Ugc1FHaeK6iXQrnUpztxhhNHqucFwaqC35A4Kjjpump`
@@ -203,11 +203,11 @@ Nothing in this scan is a setup. No mover clears the $10k 5-minute volume bar; t
 ## Moving most in its scans, last 30 min (1h volume)
 - MARS: $558,354 1h vol, $499,022 mcap, +415% 1h  
   CA `816BuXnCFQqt6KXbBTcFgHWD29Ckpaqt8HMKSN4Vpump`
+- 4CHAN: $320,051 1h vol, $275,831 mcap, +966% 1h  
+  CA `DVdWuNK8ncn79B6z8nCiwcNAiwyFcmBPfChgxJGTpump`
 - goldcoin: $238,584 1h vol, $73,556 mcap, +338% 1h  
   CA `Cp6i5Ka8Gwzzn537KoqLyjQCFX6QBfoAC9WuxEbQpump`
-- BTC: $161,046 1h vol, $160,205 mcap, +369% 1h  
-  CA `GkSZVKcXcgodewdZd5CbGxFJoUUcazrf1GayrNv3pump`
-- MEMESTONK: $136,288 1h vol, $211,682 mcap, +450% 1h  
-  CA `9guNcpbsmqcKJikLNBcn8g5AoG3v9k98zK51KcoXpump`
-- SCOOBY: $115,506 1h vol, $3,050 mcap, +43% 1h  
-  CA `54Y1hTxnbNha2kkHAC2LqHGXTiEMg3uNr1pYbMQ9pump`
+- PI: $110,473 1h vol, $3,823 mcap, -21% 1h  
+  CA `8nZQ36gei4au7wdmnCDQDEquyPiRzMJNMymXnkiKpump`
+- Jimmies: $94,502 1h vol, $148,908 mcap, +366% 1h  
+  CA `GisWWjhwrSud4aFGSHvTMt85Ky14sY7LeBFCpfoFpump`
