@@ -1,13 +1,13 @@
 # Trencher live report
 
-Updated 2026-11-24T01:03:51Z (paper trading, never real money)
+Updated 2026-11-24T01:19:03Z (paper trading, never real money)
 
 - Equity: $74.23 (-25.8% vs $100 start)
 - Closed trades: 22, 3 wins
 - Fees paid: $14.78 (axiom $2.81, network $9.18, pool $2.66), plus $4.15 lost to slippage
 - New trades: WATCH-ONLY (scans and decides, buys nothing)
 - Brain: subscription, claude-haiku-5-5 for routine calls, claude-opus-5-5 for the daily review; 470 routine calls and 0 plan-limit hits in 48h
-- Watch log: 109 coins being followed, 3098 filed, 0 would-buys (6h follow, sampled every 2 min)
+- Watch log: 106 coins being followed, 3104 filed, 0 would-buys (6h follow, sampled every 2 min)
 
 ## Scorecard (after fees)
 - 22 closed, 3 won (14%), net $-25.79
@@ -73,9 +73,15 @@ Updated 2026-11-24T01:03:51Z (paper trading, never real money)
   CA `H4gHnZ3NCU7Z9XQwGX6YYJNyieGEW8pqwGRUcdSxpump`
 
 ## Last scan
-- 01:03Z: 8 coins, 8 with pairs, 0 passed the market filters, 0 researched
+- 01:18Z: 6 coins, 6 with pairs, 0 passed the market filters, 0 researched
 
 ## Coins it looked at, and why it passed
+- 01:07Z DESSA (DIP, $2,504,956 mcap, $2,719 5m vol): PASS at conviction 3, PASS — dead story: an AI meme with zero ticker or name mentions, no catalyst, and sellers ahead on both 5m and 1h flow. A thin tech story at a 41% dip is the setup that has already lost me money (V1, V6).  
+  CA `npz2FhoufQ7pKqhGpaipYWacrAkidyW2yDpVWSvpump`
+- 01:06Z CLAUDIO (MIGRATED, $958,613 mcap, $129,630 5m vol): REJECT, RugCheck danger: Single holder ownership 50.66%  
+  CA `5St93zSNQvWxK22Cj5mJBXcjUNNB452h5uNmrttSpump`
+- 01:05Z WASB (FINAL_STRETCH, $19,766 mcap, $38,334 5m vol): PASS at conviction 3, PASS: chasing spike. WASB is 7 minutes old, up 160% on 5m at 8.5x its hourly pace, and no higher low has printed. It's one of 28 "are back" copies with zero radar mentions and no CA calls. (V1, V6, V13)  
+  CA `315SYL4SHt97oKWBTeBbH74cE62ZEn8bw1FjkKaBRs4m`
 - 01:00Z Mogmas (MIGRATED, $39,290 mcap, $6,081 5m vol): PASS at conviction 2, PASS: sellers 18% of 5m flow, 15m chart is saw-tooth, no higher low, meme radar says fading. A dump, not a dip. (V1, V13)  
   CA `Cocrz7BR2xE2sgKn3VbmaTXH6HTVgCiVFWTVWmyTpump`
 - 00:57Z FLOG (FINAL_STRETCH, $18,332 mcap, $2,739 5m vol): PASS at conviction 2, PASS: 5m flow at 0.45x the hourly pace, no meta behind it, and the team's own site doesn't show the CA yet. Joke name, no story. (V1, V6, V13)  
@@ -90,29 +96,16 @@ Updated 2026-11-24T01:03:51Z (paper trading, never real money)
   CA `PgFtGGquvnv2zEkjG2N2QPvBTBrafuExGYEqahRpump`
 - 00:42Z HOGE (DIP, $815,681 mcap, $5,972 5m vol): REJECT, Bundles: 9 linked wallet cluster(s) hold 27.7% of supply (>20%) (V17)  
   CA `FVzqGqRmr4UH1Fif6dewmwbJ1p4YUZCu8dcw4Efopump`
-- 00:42Z FIONA (MIGRATED, $3,219,923 mcap, $76,104 5m vol): REJECT, Bundles: 10 linked wallet cluster(s) hold 27.6% of supply (>20%) (V17)  
-  CA `B34nXKzCgsJb9ChLuSHPRpXLE3WFSWyeT8Cqkzzmpump`
-- 00:36Z hamster (DIP, $170,078 mcap, $3,473 5m vol): REJECT, Dev holds 5.6% (>1%) (V13, V17)  
-  CA `A5euULARiF254xqxSqZ1bdC8zCGiKW2FRh2zYstWZWZs`
-- 00:21Z DESSA (DIP, $2,473,502 mcap, $1,793 5m vol): REJECT, 5m volume $1,793 is dead (<$2,000) (V1)  
-  CA `npz2FhoufQ7pKqhGpaipYWacrAkidyW2yDpVWSvpump`
 
 ## What its skips did next (last 48h)
 A skip "ran" if the coin reached the first target (1.5x) from the skip price before a 20% drop, "dumped" if the drop came first. Sampled every 10 min, followed 6h.
-- too new / sniping: blocked 41, ran 8, dumped 32, flat 0, open 1 (saving losses: keep it)
-  - ran: SANTAHAT up to 3x  
-    CA `5fWLSMA5HoK9W4VoTMi4c3qjyu3N2LsKRSM8Ffpgpump`
+- too new / sniping: blocked 41, ran 7, dumped 33, flat 0, open 1 (saving losses: keep it)
   - ran: KYC up to 2.37x  
     CA `47YCrfUmSQUF9vnPsPGSzrmTcxttdRAWejCMkhrrpump`
   - ran: Wojak up to 4.29x  
     CA `5eiLc9r79PkJquiFvYWdXJYtGNRjTpzot8MR7Z4Ppump`
-- flow below pace: blocked 35, ran 6, dumped 27, flat 0, open 2 (saving losses: keep it)
-  - ran: snowball up to 1.59x  
-    CA `3D7YQcnXi6RMjWxheiE8VLuGXJTtgQkmyugGYvzjpump`
-  - ran: OpenIndex up to 1.63x  
-    CA `FuKY3dk7QmpbDdQRjzbjB3G6PiCuqKNvN4dAWDpwpump`
-  - ran: hCAT up to 1.52x  
-    CA `2FYs4vApfj4ErsggpFDfzMv1WvxnyiLtzNEj84mS6TLh`
+  - ran: Hold up to 1.62x  
+    CA `8J7yeYsBzozSQ67Ji4kpun2gdfTFp8o9g6rNkYR3pump`
 - near the high / chasing: blocked 35, ran 4, dumped 28, flat 1, open 2 (saving losses: keep it)
   - ran: SANTA up to 1.85x  
     CA `tZsjFu2CH1R23wEpbfXAYGc2KUaVrUbwofCNNNqpump`
@@ -120,14 +113,21 @@ A skip "ran" if the coin reached the first target (1.5x) from the skip price bef
     CA `xEK58Qa2xZ7C36Z2g3Jjq1WHY561CvvnJkLpgJspump`
   - ran: WOFL up to 2.62x  
     CA `AdXjXfumPSSKk7PrfgDHcAsPvuxnKv7Zo9WZEWKbiDkh`
-- top 10 over 25%: blocked 30, ran 4, dumped 21, flat 1, open 4 (saving losses: keep it)
+- flow below pace: blocked 34, ran 6, dumped 26, flat 0, open 2 (saving losses: keep it)
+  - ran: snowball up to 1.59x  
+    CA `3D7YQcnXi6RMjWxheiE8VLuGXJTtgQkmyugGYvzjpump`
+  - ran: OpenIndex up to 1.63x  
+    CA `FuKY3dk7QmpbDdQRjzbjB3G6PiCuqKNvN4dAWDpwpump`
+  - ran: hCAT up to 1.52x  
+    CA `2FYs4vApfj4ErsggpFDfzMv1WvxnyiLtzNEj84mS6TLh`
+- top 10 over 25%: blocked 29, ran 4, dumped 20, flat 1, open 4 (saving losses: keep it)
   - ran: GIF up to 2.16x  
     CA `B6wM98qkQKP71mhPA48S7No6TxM4KaXdFojDTZeUpump`
   - ran: SNP6900 up to 2.76x  
     CA `DnbQKi146NDmwwji3f3q5i68HQnYyBEhoDyj2q3Npump`
   - ran: JENSEN up to 2.62x  
     CA `GaNJeASYBM9k3TvEeUC2Pdyu1TjcpzTmPpoom92fpump`
-- RugCheck danger: blocked 21, ran 7, dumped 14, flat 0, open 0 (saving losses: keep it)
+- RugCheck danger: blocked 21, ran 6, dumped 14, flat 0, open 1 (saving losses: keep it)
   - ran: MIHAOMAS up to 1.62x  
     CA `3XsFunPdji9U1EgJXokZysw8SB3t74un89b6KLEVpump`
   - ran: Holdsgiving up to 2.96x  
@@ -141,7 +141,7 @@ A skip "ran" if the coin reached the first target (1.5x) from the skip price bef
     CA `84tAcSK5L9kuQEVM8C8vMHXnfdA83nGBT2nYfSbPUcAc`
   - ran: hCAT up to 1.52x  
     CA `2FYs4vApfj4ErsggpFDfzMv1WvxnyiLtzNEj84mS6TLh`
-- dev share over 1%: blocked 11, ran 1, dumped 5, flat 3, open 2 (saving losses: keep it)
+- dev share over 1%: blocked 11, ran 1, dumped 7, flat 3, open 0 (saving losses: keep it)
   - ran: BLOOM up to 2.09x  
     CA `FyRXnHLBSeHHoigrgHR1hvcXiPbPCa5bxhVhEDampump`
 - falling knife (code): blocked 11, ran 4, dumped 5, flat 1, open 1 (mixed)
@@ -198,16 +198,16 @@ Nothing has a positive after-cost edge yet. All 229 settled coins average -8.7% 
 - [2026-11-02 20:25] I expected Slingoor, a clean MIGRATED leader with $25k of 5m flow at pace and a 0.77 buy share, to retest its $408k high from $304k. It never went green (0.98x peak) and hit the -20% stop in 2 minutes, a -$2.86 probe. My own thesis admitted there was no printed higher low after a peak only 6 minutes old, so this confirms the money-shape rule: buy share and flow are not structure (V1, V6). Next time a MIGRATED pullback with no higher low above the hourly low is a PASS with blocker "no higher low", not a probe. This is one loss, so it adds no new ban beyond the rule I already have.
 
 ## Meta right now
-Not quiet: the live movers have real flow, but most are under two hours old, which is the launch-style farm zone (V13), so every name gets full holder, dev and bundle checks before anything else. Four themes show up across several coins: hippos (FIONA, $3.9M, 99h old, $97k 5m, 59% buys, is the original riding a zoo-donation story, and TIMOTHY copies it at $87k and 6 minutes old), Thanksgiving (THANKS, $208k, 1.5h old, $84k 5m, 59% buys, +244% 1h, rising into the Nov 26 holiday), Jensen (JENPE, $174k, 0.3h old, $20k 5m, 89% buys, +429% 1h, one live coin, with NVINU dead at -99%), and fresh launches in general (TRIBE, HAMSTER, SYMBIO). Fading: BLOOM (-95%), NVINU (-99%), PumpMeme (-99.6%), the Solana giraffe (no 5m volume), and MOGMAS (10% buys, sellers in control); Christmas and Trump-dinner coins are absent from the movers, so I'm not calling those themes. Setups to research, no entries yet: FIONA as the original hippo (stop first, probe-size at most), THANKS (holiday-timed, so exit if it fades before the 26th, V1/V5), and JENPE only as a probe with the stop set before any chase (V6). The crawler's NVINU, PONK and UCASH figures don't match the raw rows (NVINU is dead in the raw data), and PONK and UCASH aren't in the movers, so I scored only the raw rows.
+Not quiet, but it's a launch-style tape: most movers are under two hours old, and the copies die fast (TIMOTHY -98% on $2 of 5m volume, JENSEN "The Green Bull" -96% with zero 5m volume, Tribe -99.6%, GOLDSOL -80%) (V1, V13). Two themes have live flow in the raw rows. Hippos: FIONA is still the original at $3.25M mcap with $77k 5m volume and 58% buys, but it's flat at +10% 1h, so the copy died and the original is cooling. GPU/chip/AI: GPU Jesus is the loudest (+546% 1h, $58k 5m, 87% buys, about 12 minutes old), with RIVA128 (chip) and DMIND (DeFiMind) riding the same Nvidia/Jensen Huang headlines on much thinner volume. "Jensen Is Back" ($808k, flat) is the only older Jensen coin still trading. Thanksgiving, Christmas and the Trump dinner don't appear in the raw movers (MOGMAS has 16% buys with sellers in control), so I'm not calling a holiday theme. Setups to research, no entries yet: FIONA as the original hippo, stop set first and probe size at most; GPU Jesus only if it holds after the blow-off, since chasing +546% in an hour is how you become exit liquidity (V6); DMIND and RIVA128 only as LARP checks (V1), since their volume is thin. Holder, dev and bundle checks run on each coin at research time. The crawler's THANKS, JENPE and TIMOTHY-at-$87k figures don't match the raw rows, so I scored raw only.
 
 ## Moving most in its scans, last 30 min (1h volume)
-- FIONA: $697,818 1h vol, $3,252,551 mcap, +10% 1h  
-  CA `B34nXKzCgsJb9ChLuSHPRpXLE3WFSWyeT8Cqkzzmpump`
-- JENSEN: $516,076 1h vol, $1,403 mcap, -96% 1h  
+- CLAUDIO: $1,550,867 1h vol, $958,613 mcap, +973% 1h  
+  CA `5St93zSNQvWxK22Cj5mJBXcjUNNB452h5uNmrttSpump`
+- JENSEN: $409,693 1h vol, $1,356 mcap, -100% 1h  
   CA `GaNJeASYBM9k3TvEeUC2Pdyu1TjcpzTmPpoom92fpump`
-- TIMOTHY: $440,789 1h vol, $1,484 mcap, -98% 1h  
-  CA `AWg6LmGPfqjEqAU8N8wR8mYTbwmkwqMUqzrmggbgpump`
 - UCASH: $207,438 1h vol, $1,286,254 mcap, +2% 1h  
   CA `7cFiqdT46zs7ooHWLFiLSaSQKLMibtokh9dBinsspump`
-- Tribe: $157,332 1h vol, $1,315 mcap, -100% 1h  
-  CA `3uiodaXi8dg7CBaNHeRTUqhX46k2BCFuYq9iabD4pump`
+- TIMOTHY: $158,345 1h vol, $1,434 mcap, -99% 1h  
+  CA `AWg6LmGPfqjEqAU8N8wR8mYTbwmkwqMUqzrmggbgpump`
+- Jesus: $146,201 1h vol, $213,274 mcap, +546% 1h  
+  CA `Gy5BUDnpJMWRsNVKh9sRtsBGunFXKKrbroQRoydQpump`
