@@ -1,13 +1,13 @@
 # Trencher live report
 
-Updated 2026-11-24T20:29:42Z (paper trading, never real money)
+Updated 2026-11-24T20:44:48Z (paper trading, never real money)
 
 - Equity: $74.23 (-25.8% vs $100 start)
 - Closed trades: 22, 3 wins
 - Fees paid: $14.78 (axiom $2.81, network $9.18, pool $2.66), plus $4.15 lost to slippage
 - New trades: WATCH-ONLY (scans and decides, buys nothing)
-- Brain: subscription, claude-haiku-5-5 for routine calls, claude-opus-5-5 for the daily review; 520 routine calls and 0 plan-limit hits in 48h
-- Watch log: 78 coins being followed, 3357 filed, 0 would-buys (6h follow, sampled every 2 min)
+- Brain: subscription, claude-haiku-5-5 for routine calls, claude-opus-5-5 for the daily review; 516 routine calls and 0 plan-limit hits in 48h
+- Watch log: 75 coins being followed, 3362 filed, 0 would-buys (6h follow, sampled every 2 min)
 
 ## Scorecard (after fees)
 - 22 closed, 3 won (14%), net $-25.79
@@ -73,9 +73,13 @@ Updated 2026-11-24T20:29:42Z (paper trading, never real money)
   CA `H4gHnZ3NCU7Z9XQwGX6YYJNyieGEW8pqwGRUcdSxpump`
 
 ## Last scan
-- 20:29Z: 5 coins, 5 with pairs, 0 passed the market filters, 0 researched
+- 20:44Z: 2 coins, 2 with pairs, 0 passed the market filters, 0 researched
 
 ## Coins it looked at, and why it passed
+- 20:42Z PumpBull (MIGRATED, $291,526 mcap, $4,404 5m vol): PASS, PASS — brain unavailable, not trading blind.  
+  CA `GzDqH7FnMqtuMupdc2ZQF6KX2yk9A4CbUBzs2Kaspump`
+- 20:42Z Red (FINAL_STRETCH, $16,775 mcap, $11,215 5m vol): PASS, PASS — brain unavailable, not trading blind.  
+  CA `i5HexSXPrVdkJsRB3Lr7zDSbpFvd4DuwYMLPndTpump`
 - 20:23Z Slingoor (DIP, $168,796 mcap, $11,318 5m vol): PASS, PASS — brain unavailable, not trading blind.  
   CA `6GLetugFEmy7P7SmLtg3zyZdz6rWCQ8gHPbPYZs9pump`
 - 20:22Z Valueless (MIGRATED, $424,368 mcap, $100,366 5m vol): REJECT, Top 10 hold 42.4% ex-pool (>25%) (V13)  
@@ -92,10 +96,6 @@ Updated 2026-11-24T20:29:42Z (paper trading, never real money)
   CA `ANvsL4A6tJKAXJsPg7XVSHQA7KYmFcpW42jPuhVtpump`
 - 19:56Z PumpBull (MIGRATED, $219,925 mcap, $3,591 5m vol): REJECT, RugCheck danger: Creator history of rugged tokens  
   CA `GzDqH7FnMqtuMupdc2ZQF6KX2yk9A4CbUBzs2Kaspump`
-- 19:38Z Slingoor (DIP, $148,882 mcap, $13,989 5m vol): PASS, PASS — brain unavailable, not trading blind.  
-  CA `6GLetugFEmy7P7SmLtg3zyZdz6rWCQ8gHPbPYZs9pump`
-- 19:32Z ANSEM (MIGRATED, $30,660 mcap, $7,178 5m vol): PASS, PASS — brain unavailable, not trading blind.  
-  CA `7R7ouhA2Wt1QQZGaJAT3PPnQbRTbZWrFhYzBCwSTpump`
 
 ## What its skips did next (last 48h)
 A skip "ran" if the coin reached the first target (1.5x) from the skip price before a 20% drop, "dumped" if the drop came first. Sampled every 10 min, followed 6h.
@@ -113,13 +113,6 @@ A skip "ran" if the coin reached the first target (1.5x) from the skip price bef
     CA `GaNJeASYBM9k3TvEeUC2Pdyu1TjcpzTmPpoom92fpump`
   - ran: GOAT up to 1.53x  
     CA `5Ze97VEpX3EdRF4vbsxUXTdwGKF2qHGregrxToWEpump`
-- near the high / chasing: blocked 33, ran 7, dumped 24, flat 2, open 0 (saving losses: keep it)
-  - ran: Bertcoin up to 1.8x  
-    CA `xEK58Qa2xZ7C36Z2g3Jjq1WHY561CvvnJkLpgJspump`
-  - ran: WOFL up to 2.62x  
-    CA `AdXjXfumPSSKk7PrfgDHcAsPvuxnKv7Zo9WZEWKbiDkh`
-  - ran: Phil up to 2.05x  
-    CA `GMLSyjZCKGtFwztp2mtT8PDeNUA6WEk7oQoe3QkFpump`
 - flow below pace: blocked 32, ran 7, dumped 25, flat 0, open 0 (saving losses: keep it)
   - ran: OpenIndex up to 1.63x  
     CA `FuKY3dk7QmpbDdQRjzbjB3G6PiCuqKNvN4dAWDpwpump`
@@ -127,14 +120,21 @@ A skip "ran" if the coin reached the first target (1.5x) from the skip price bef
     CA `2FYs4vApfj4ErsggpFDfzMv1WvxnyiLtzNEj84mS6TLh`
   - ran: WALLSTFLY up to 1.52x  
     CA `2DQbV7hsqxKVWmFakXGGhBbNyY28tDJ9YuJkojYrpump`
-- brain paced: blocked 26, ran 8, dumped 13, flat 0, open 5 (mixed)
+- near the high / chasing: blocked 32, ran 7, dumped 24, flat 1, open 0 (saving losses: keep it)
+  - ran: Bertcoin up to 1.8x  
+    CA `xEK58Qa2xZ7C36Z2g3Jjq1WHY561CvvnJkLpgJspump`
+  - ran: WOFL up to 2.62x  
+    CA `AdXjXfumPSSKk7PrfgDHcAsPvuxnKv7Zo9WZEWKbiDkh`
+  - ran: Phil up to 2.05x  
+    CA `GMLSyjZCKGtFwztp2mtT8PDeNUA6WEk7oQoe3QkFpump`
+- brain paced: blocked 28, ran 8, dumped 13, flat 0, open 7 (mixed)
   - ran: Scamsem up to 1.56x  
     CA `5JWeGmA9z6yHd5F9P6B23A8wthho8BpZuDmQv5DfLoat`
   - ran: RUGSEM up to 1.5x  
     CA `9cDnmLRDWeJzcpyw8tSFAT7HS4Aunx6MmZWjMfrzpump`
   - ran: SHHFT up to 1.61x  
     CA `GqMg4TRt5U5HRK6oeZYwCF1Jz7Ym9MSzWSoFCtFsbzf6`
-- RugCheck danger: blocked 22, ran 6, dumped 16, flat 0, open 0 (saving losses: keep it)
+- RugCheck danger: blocked 21, ran 5, dumped 16, flat 0, open 0 (saving losses: keep it)
   - ran: Holdsgiving up to 2.96x  
     CA `A2jLaCC7v3VjXP8gEgCQNbTWEvizYuQ82jFEYfzipump`
   - ran: JENSEN up to 1.7x  
@@ -197,13 +197,13 @@ Nothing has a positive after-cost edge yet. All 229 settled coins average -8.7% 
 Nothing in this scan is a setup. No mover clears the $10k 5-minute volume bar; the best are BULLSHIT at $6.2k and scamsem at $5.6k, and 1h volume is mostly well above 5m, so the flow is fading. Two themes repeat in the raw rows: self-aware scam and joke names (scamsem and its pumpswap twin RUGSEM, Key Opinion Loser, Bull Shit), which are fading, and Claude-named coins (CLAUDIO at $97k, SUPER CLAUDIA INU at $29k) on thin 5m with 63-69% buys, which are early and unproven. Trump and Jensen names are fading: JENSEN does $1.5k 5m on a $499k cap and DONJENSEN $3.3k on $2.1M, which matches the record-low headlines. The crawler's summary is wrong on several rows. scamsem is $57k cap and $5.6k 5m (not $90k and $13.7k), UCASH is $75k and $4.8k, JENSEN is $499k and $1.5k, and "the black" is a $2.5k cap with $17 of 5m volume and 20% buys, so none of them qualify and the black's +146% claim is not in the data. Watch CLAUDIO and scamsem for 5m volume to clear $10k; BULLSHIT is pump.fun new-pair territory and I'm not chasing it. Holder, dev and bundle checks were not run on any of these coins, so this is a volume read only.
 
 ## Moving most in its scans, last 30 min (1h volume)
-- FREEDOM: $358,358 1h vol, $9,401 mcap, -89% 1h  
+- FREEDOM: $197,980 1h vol, $7,919 mcap, -83% 1h  
   CA `FDNc812jkHdhkdeRNaLMVwyihHMLR6ztTmRfxG7opump`
-- FNF: $339,006 1h vol, $11,624 mcap, -58% 1h  
-  CA `HXRGEqVsVsU1tX6KEXx2iFrKFH3yJGkX9duY5indCU8w`
 - Valueless: $168,835 1h vol, $349,518 mcap, +822% 1h  
   CA `F4V5yMyUzCPw8DSycktE2jjVJdHhKDvy88mfZEMDpump`
-- Gabriel: $160,628 1h vol, $46,217 mcap, +23% 1h  
-  CA `8DDM5ioUMwH8VgyHoNQzHjDUoHodXRgnZkSJtvSapump`
+- PumpBull: $139,264 1h vol, $283,091 mcap, +67% 1h  
+  CA `GzDqH7FnMqtuMupdc2ZQF6KX2yk9A4CbUBzs2Kaspump`
 - Slingoor: $138,872 1h vol, $168,796 mcap, -25% 1h  
   CA `6GLetugFEmy7P7SmLtg3zyZdz6rWCQ8gHPbPYZs9pump`
+- FNF: $98,414 1h vol, $7,433 mcap, -84% 1h  
+  CA `HXRGEqVsVsU1tX6KEXx2iFrKFH3yJGkX9duY5indCU8w`
