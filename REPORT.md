@@ -1,13 +1,13 @@
 # Trencher live report
 
-Updated 2026-11-24T00:18:38Z (paper trading, never real money)
+Updated 2026-11-24T00:33:39Z (paper trading, never real money)
 
 - Equity: $74.23 (-25.8% vs $100 start)
 - Closed trades: 22, 3 wins
 - Fees paid: $14.78 (axiom $2.81, network $9.18, pool $2.66), plus $4.15 lost to slippage
 - New trades: WATCH-ONLY (scans and decides, buys nothing)
-- Brain: subscription, claude-haiku-5-5 for routine calls, claude-opus-5-5 for the daily review; 473 routine calls and 0 plan-limit hits in 48h
-- Watch log: 115 coins being followed, 3081 filed, 0 would-buys (6h follow, sampled every 2 min)
+- Brain: subscription, claude-haiku-5-5 for routine calls, claude-opus-5-5 for the daily review; 472 routine calls and 0 plan-limit hits in 48h
+- Watch log: 108 coins being followed, 3090 filed, 0 would-buys (6h follow, sampled every 2 min)
 
 ## Scorecard (after fees)
 - 22 closed, 3 won (14%), net $-25.79
@@ -73,9 +73,13 @@ Updated 2026-11-24T00:18:38Z (paper trading, never real money)
   CA `H4gHnZ3NCU7Z9XQwGX6YYJNyieGEW8pqwGRUcdSxpump`
 
 ## Last scan
-- 00:17Z: 3 coins, 3 with pairs, 0 passed the market filters, 0 researched
+- 00:33Z: 5 coins, 5 with pairs, 0 passed the market filters, 0 researched
 
 ## Coins it looked at, and why it passed
+- 00:21Z DESSA (DIP, $2,473,502 mcap, $1,793 5m vol): REJECT, 5m volume $1,793 is dead (<$2,000) (V1)  
+  CA `npz2FhoufQ7pKqhGpaipYWacrAkidyW2yDpVWSvpump`
+- 00:21Z CLAUDIO (MIGRATED, $499,815 mcap, $34,649 5m vol): REJECT, RugCheck danger: Single holder ownership 50.66%  
+  CA `5St93zSNQvWxK22Cj5mJBXcjUNNB452h5uNmrttSpump`
 - 00:14Z GOAT (FINAL_STRETCH, $28,432 mcap, $18,770 5m vol): REJECT, Top 10 hold 28.0% ex-pool (>25%) (V13)  
   CA `5Ze97VEpX3EdRF4vbsxUXTdwGKF2qHGregrxToWEpump`
 - 00:14Z JENSEN (MIGRATED, $385,006 mcap, $85,749 5m vol): REJECT, Top 10 hold 50.8% ex-pool (>25%) (V13)  
@@ -92,10 +96,6 @@ Updated 2026-11-24T00:18:38Z (paper trading, never real money)
   CA `BAKsQrynzwadyACDMsg3J5R8a4CTvj1u7kEYyjq7pump`
 - 00:00Z Tribe (MIGRATED, $362,012 mcap, $77,131 5m vol): PASS at conviction 2, PASS — +69% in the last 5 minutes at 3.3x hourly pace, 22 minutes old, no printed higher low, and the story has zero buzz. Chasing a spike (V1, V6).  
   CA `3uiodaXi8dg7CBaNHeRTUqhX46k2BCFuYq9iabD4pump`
-- 23:57Z BABYFIONA (MIGRATED, $40,618 mcap, $2,851 5m vol): REJECT, RugCheck danger: Large Amount of LP Unlocked 100.00%  
-  CA `9WyjDc2NrfiTSkBBoFDeS6ytuo5nd7aHRBB12RoJpump`
-- 23:57Z TIMOTHY (MIGRATED, $84,625 mcap, $90,367 5m vol): REJECT, RugCheck danger: Creator history of rugged tokens  
-  CA `AWg6LmGPfqjEqAU8N8wR8mYTbwmkwqMUqzrmggbgpump`
 
 ## What its skips did next (last 48h)
 A skip "ran" if the coin reached the first target (1.5x) from the skip price before a 20% drop, "dumped" if the drop came first. Sampled every 10 min, followed 6h.
@@ -120,12 +120,14 @@ A skip "ran" if the coin reached the first target (1.5x) from the skip price bef
     CA `xEK58Qa2xZ7C36Z2g3Jjq1WHY561CvvnJkLpgJspump`
   - ran: WOFL up to 2.62x  
     CA `AdXjXfumPSSKk7PrfgDHcAsPvuxnKv7Zo9WZEWKbiDkh`
-- top 10 over 25%: blocked 30, ran 2, dumped 22, flat 1, open 5 (saving losses: keep it)
+- top 10 over 25%: blocked 29, ran 3, dumped 21, flat 1, open 4 (saving losses: keep it)
   - ran: GIF up to 2.16x  
     CA `B6wM98qkQKP71mhPA48S7No6TxM4KaXdFojDTZeUpump`
   - ran: SNP6900 up to 2.76x  
     CA `DnbQKi146NDmwwji3f3q5i68HQnYyBEhoDyj2q3Npump`
-- RugCheck danger: blocked 20, ran 6, dumped 14, flat 0, open 0 (saving losses: keep it)
+  - ran: JENSEN up to 2.62x  
+    CA `GaNJeASYBM9k3TvEeUC2Pdyu1TjcpzTmPpoom92fpump`
+- RugCheck danger: blocked 21, ran 6, dumped 14, flat 0, open 1 (saving losses: keep it)
   - ran: MIHAOMAS up to 1.62x  
     CA `3XsFunPdji9U1EgJXokZysw8SB3t74un89b6KLEVpump`
   - ran: Holdsgiving up to 2.96x  
@@ -199,13 +201,13 @@ Nothing has a positive after-cost edge yet. All 229 settled coins average -8.7% 
 Not quiet: the live movers have real flow, but most are under two hours old, which is the launch-style farm zone (V13), so every name gets full holder, dev and bundle checks before anything else. Four themes show up across several coins: hippos (FIONA, $3.9M, 99h old, $97k 5m, 59% buys, is the original riding a zoo-donation story, and TIMOTHY copies it at $87k and 6 minutes old), Thanksgiving (THANKS, $208k, 1.5h old, $84k 5m, 59% buys, +244% 1h, rising into the Nov 26 holiday), Jensen (JENPE, $174k, 0.3h old, $20k 5m, 89% buys, +429% 1h, one live coin, with NVINU dead at -99%), and fresh launches in general (TRIBE, HAMSTER, SYMBIO). Fading: BLOOM (-95%), NVINU (-99%), PumpMeme (-99.6%), the Solana giraffe (no 5m volume), and MOGMAS (10% buys, sellers in control); Christmas and Trump-dinner coins are absent from the movers, so I'm not calling those themes. Setups to research, no entries yet: FIONA as the original hippo (stop first, probe-size at most), THANKS (holiday-timed, so exit if it fades before the 26th, V1/V5), and JENPE only as a probe with the stop set before any chase (V6). The crawler's NVINU, PONK and UCASH figures don't match the raw rows (NVINU is dead in the raw data), and PONK and UCASH aren't in the movers, so I scored only the raw rows.
 
 ## Moving most in its scans, last 30 min (1h volume)
-- FIONA: $621,386 1h vol, $3,944,294 mcap, +74% 1h  
-  CA `B34nXKzCgsJb9ChLuSHPRpXLE3WFSWyeT8Cqkzzmpump`
-- JIMMY: $454,075 1h vol, $287,359 mcap, +5% 1h  
-  CA `38M2z4UCfZEkUHFzD48vhKQhFhNyRGto8pZbLjNipump`
-- Tribe: $293,324 1h vol, $353,662 mcap, +795% 1h  
-  CA `3uiodaXi8dg7CBaNHeRTUqhX46k2BCFuYq9iabD4pump`
-- THANKS: $242,418 1h vol, $208,272 mcap, +244% 1h  
-  CA `BECqBzwZmkzM7A3tWimc2qvm7ookzYi8XACHMZgipump`
+- CLAUDIO: $295,860 1h vol, $499,815 mcap, +458% 1h  
+  CA `5St93zSNQvWxK22Cj5mJBXcjUNNB452h5uNmrttSpump`
 - JENSEN: $169,377 1h vol, $385,006 mcap, +969% 1h  
   CA `GaNJeASYBM9k3TvEeUC2Pdyu1TjcpzTmPpoom92fpump`
+- UCASH: $128,007 1h vol, $1,155,537 mcap, -9% 1h  
+  CA `7cFiqdT46zs7ooHWLFiLSaSQKLMibtokh9dBinsspump`
+- Mogmas: $110,067 1h vol, $21,929 mcap, +1% 1h  
+  CA `Cocrz7BR2xE2sgKn3VbmaTXH6HTVgCiVFWTVWmyTpump`
+- JENPE: $90,746 1h vol, $1,320 mcap, -99% 1h  
+  CA `2kXxWxKJRNScZEL8vN2UKjbtpMArkXvEMbRgDnq4pump`
