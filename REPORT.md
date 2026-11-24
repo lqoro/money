@@ -1,13 +1,13 @@
 # Trencher live report
 
-Updated 2026-11-24T22:30:55Z (paper trading, never real money)
+Updated 2026-11-24T22:46:09Z (paper trading, never real money)
 
 - Equity: $74.23 (-25.8% vs $100 start)
 - Closed trades: 22, 3 wins
 - Fees paid: $14.78 (axiom $2.81, network $9.18, pool $2.66), plus $4.15 lost to slippage
 - New trades: WATCH-ONLY (scans and decides, buys nothing)
-- Brain: subscription, claude-haiku-5-5 for routine calls, claude-opus-5-5 for the daily review; 515 routine calls and 0 plan-limit hits in 48h
-- Watch log: 73 coins being followed, 3385 filed, 0 would-buys (6h follow, sampled every 2 min)
+- Brain: subscription, claude-haiku-5-5 for routine calls, claude-opus-5-5 for the daily review; 517 routine calls and 0 plan-limit hits in 48h
+- Watch log: 76 coins being followed, 3387 filed, 0 would-buys (6h follow, sampled every 2 min)
 
 ## Scorecard (after fees)
 - 22 closed, 3 won (14%), net $-25.79
@@ -73,9 +73,19 @@ Updated 2026-11-24T22:30:55Z (paper trading, never real money)
   CA `H4gHnZ3NCU7Z9XQwGX6YYJNyieGEW8pqwGRUcdSxpump`
 
 ## Last scan
-- 22:30Z: 5 coins, 5 with pairs, 0 passed the market filters, 0 researched
+- 22:45Z: 7 coins, 7 with pairs, 3 passed the market filters, 3 researched
 
 ## Coins it looked at, and why it passed
+- 22:45Z BOUNCER (FINAL_STRETCH, $15,892 mcap, $2,137 5m vol): PASS, PASS — brain unavailable, not trading blind.  
+  CA `ANDLpP3C7tFXEpqRBmmnbS4usmQthHfs93N5oHGpump`
+- 22:45Z JOEY (MIGRATED, $40,860 mcap, $6,732 5m vol): PASS, PASS — brain unavailable, not trading blind.  
+  CA `CR4Tks2HjJkKVQQVDmKU41qW7iEaEBh1RRExdTRMpump`
+- 22:45Z CHARITY (FINAL_STRETCH, $20,058 mcap, $51,608 5m vol): PASS, PASS — brain unavailable, not trading blind.  
+  CA `Ed24VXWVmRGpufeE5hJqE2engYgXrf239BiDrWbZpump`
+- 22:33Z goldcoin (MIGRATED, $69,707 mcap, $24,032 5m vol): PASS, PASS — brain unavailable, not trading blind.  
+  CA `Cp6i5Ka8Gwzzn537KoqLyjQCFX6QBfoAC9WuxEbQpump`
+- 22:31Z DONJENSEN (DIP, $1,394,826 mcap, $2,282 5m vol): PASS, PASS — brain unavailable, not trading blind.  
+  CA `5LDowscYVD3a6ZS4m8gCqG5nU16eLTwRXhciFi1bpump`
 - 22:27Z Squirrel (DIP, $327,612 mcap, $13,867 5m vol): REJECT, Dip with fading attention is a falling knife, not a dip (5m at 0.30x the hour's pace, under 0.6x)  
   CA `CkwFr1G8EPLLJSnp84PmwjEDRG4yA7bGJvRxRTx5pump`
 - 22:24Z BTC (MIGRATED, $184,983 mcap, $17,173 5m vol): REJECT, Top 10 hold 51.6% ex-pool (>25%) (V13)  
@@ -86,19 +96,16 @@ Updated 2026-11-24T22:30:55Z (paper trading, never real money)
   CA `w4Lvmpe5Cpi3n7bwpTCQRTgKT74YFVyRqBVxXnCZBLK`
 - 21:57Z SCRAP (FINAL_STRETCH, $24,743 mcap, $17,401 5m vol): REJECT, Dev holds 1.4% (>1%) (V13, V17)  
   CA `BTbP7QckBbsEqnkynYF4BcmAz8CQAnxYsuPHbtXYpump`
-- 21:55Z SPECS (FINAL_STRETCH, $16,561 mcap, $7,052 5m vol): PASS, PASS — brain unavailable, not trading blind.  
-  CA `29SS1KJnthUqk8JhW13bvju6JWkeCAXafQY4XP8Epump`
-- 21:50Z Firefly (FINAL_STRETCH, $14,681 mcap, $39,725 5m vol): PASS, PASS — brain unavailable, not trading blind.  
-  CA `2SheVTv9MeyWhau6sKfLvSyWhsGJ44Wc5MD7SWAppump`
-- 21:46Z DONJENSEN (DIP, $1,273,055 mcap, $2,451 5m vol): PASS, PASS — brain unavailable, not trading blind.  
-  CA `5LDowscYVD3a6ZS4m8gCqG5nU16eLTwRXhciFi1bpump`
-- 21:41Z Squirrel (MIGRATED, $313,402 mcap, $57,218 5m vol): REJECT, Top 10 hold 37.6% ex-pool (>25%) (V13)  
-  CA `CkwFr1G8EPLLJSnp84PmwjEDRG4yA7bGJvRxRTx5pump`
-- 21:32Z FIONA (MIGRATED, $3,196,629 mcap, $2,697 5m vol): REJECT, Bundles: 9 linked wallet cluster(s) hold 28.8% of supply (>20%) (V17)  
-  CA `B34nXKzCgsJb9ChLuSHPRpXLE3WFSWyeT8Cqkzzmpump`
 
 ## What its skips did next (last 48h)
 A skip "ran" if the coin reached the first target (1.5x) from the skip price before a 20% drop, "dumped" if the drop came first. Sampled every 10 min, followed 6h.
+- brain paced: blocked 38, ran 10, dumped 20, flat 1, open 7 (saving losses: keep it)
+  - ran: Scamsem up to 1.56x  
+    CA `5JWeGmA9z6yHd5F9P6B23A8wthho8BpZuDmQv5DfLoat`
+  - ran: RUGSEM up to 1.5x  
+    CA `9cDnmLRDWeJzcpyw8tSFAT7HS4Aunx6MmZWjMfrzpump`
+  - ran: SHHFT up to 1.61x  
+    CA `GqMg4TRt5U5HRK6oeZYwCF1Jz7Ym9MSzWSoFCtFsbzf6`
 - top 10 over 25%: blocked 36, ran 5, dumped 29, flat 2, open 0 (saving losses: keep it)
   - ran: SNP6900 up to 2.76x  
     CA `DnbQKi146NDmwwji3f3q5i68HQnYyBEhoDyj2q3Npump`
@@ -106,13 +113,6 @@ A skip "ran" if the coin reached the first target (1.5x) from the skip price bef
     CA `GaNJeASYBM9k3TvEeUC2Pdyu1TjcpzTmPpoom92fpump`
   - ran: GOAT up to 1.53x  
     CA `5Ze97VEpX3EdRF4vbsxUXTdwGKF2qHGregrxToWEpump`
-- brain paced: blocked 35, ran 10, dumped 21, flat 1, open 3 (saving losses: keep it)
-  - ran: Scamsem up to 1.56x  
-    CA `5JWeGmA9z6yHd5F9P6B23A8wthho8BpZuDmQv5DfLoat`
-  - ran: RUGSEM up to 1.5x  
-    CA `9cDnmLRDWeJzcpyw8tSFAT7HS4Aunx6MmZWjMfrzpump`
-  - ran: SHHFT up to 1.61x  
-    CA `GqMg4TRt5U5HRK6oeZYwCF1Jz7Ym9MSzWSoFCtFsbzf6`
 - flow below pace: blocked 31, ran 7, dumped 24, flat 0, open 0 (saving losses: keep it)
   - ran: OpenIndex up to 1.63x  
     CA `FuKY3dk7QmpbDdQRjzbjB3G6PiCuqKNvN4dAWDpwpump`
@@ -120,13 +120,6 @@ A skip "ran" if the coin reached the first target (1.5x) from the skip price bef
     CA `2FYs4vApfj4ErsggpFDfzMv1WvxnyiLtzNEj84mS6TLh`
   - ran: WALLSTFLY up to 1.52x  
     CA `2DQbV7hsqxKVWmFakXGGhBbNyY28tDJ9YuJkojYrpump`
-- near the high / chasing: blocked 31, ran 7, dumped 23, flat 1, open 0 (saving losses: keep it)
-  - ran: Bertcoin up to 1.8x  
-    CA `xEK58Qa2xZ7C36Z2g3Jjq1WHY561CvvnJkLpgJspump`
-  - ran: WOFL up to 2.62x  
-    CA `AdXjXfumPSSKk7PrfgDHcAsPvuxnKv7Zo9WZEWKbiDkh`
-  - ran: Phil up to 2.05x  
-    CA `GMLSyjZCKGtFwztp2mtT8PDeNUA6WEk7oQoe3QkFpump`
 - too new / sniping: blocked 31, ran 3, dumped 27, flat 1, open 0 (saving losses: keep it)
   - ran: Loaf up to 2.13x  
     CA `8Ugc1FHaeK6iXQrnUpztxhhNHqucFwaqC35A4Kjjpump`
@@ -134,6 +127,13 @@ A skip "ran" if the coin reached the first target (1.5x) from the skip price bef
     CA `7kctwFbSdLfpi6RuN9cjpVpYVHKPUr8PtG1meH35AEky`
   - ran: TREMP up to 1.7x  
     CA `CuNLbjjFcmumcKF1AnUkPU4dcjykJR73M8hzJB5Cpump`
+- near the high / chasing: blocked 30, ran 7, dumped 22, flat 1, open 0 (saving losses: keep it)
+  - ran: Bertcoin up to 1.8x  
+    CA `xEK58Qa2xZ7C36Z2g3Jjq1WHY561CvvnJkLpgJspump`
+  - ran: WOFL up to 2.62x  
+    CA `AdXjXfumPSSKk7PrfgDHcAsPvuxnKv7Zo9WZEWKbiDkh`
+  - ran: Phil up to 2.05x  
+    CA `GMLSyjZCKGtFwztp2mtT8PDeNUA6WEk7oQoe3QkFpump`
 - RugCheck danger: blocked 20, ran 5, dumped 15, flat 0, open 0 (saving losses: keep it)
   - ran: Holdsgiving up to 2.96x  
     CA `A2jLaCC7v3VjXP8gEgCQNbTWEvizYuQ82jFEYfzipump`
@@ -201,11 +201,11 @@ Nothing in this scan is a setup. No mover clears the $10k 5-minute volume bar; t
 ## Moving most in its scans, last 30 min (1h volume)
 - Squirrel: $557,659 1h vol, $327,612 mcap, +765% 1h  
   CA `CkwFr1G8EPLLJSnp84PmwjEDRG4yA7bGJvRxRTx5pump`
-- goldcoin: $146,473 1h vol, $20,769 mcap, -51% 1h  
+- goldcoin: $193,049 1h vol, $69,707 mcap, +66% 1h  
   CA `Cp6i5Ka8Gwzzn537KoqLyjQCFX6QBfoAC9WuxEbQpump`
-- WISH: $106,259 1h vol, $14,379 mcap, -58% 1h  
-  CA `7bQL4aLYyFXPLXXngC8xmxLx6keZVfyfQcP3diU1pump`
-- JOEY: $92,850 1h vol, $26,564 mcap, +8% 1h  
-  CA `CR4Tks2HjJkKVQQVDmKU41qW7iEaEBh1RRExdTRMpump`
-- tard: $55,999 1h vol, $9,352 mcap, +338% 1h  
+- SCOOBY: $76,122 1h vol, $11,912 mcap, +457% 1h  
+  CA `54Y1hTxnbNha2kkHAC2LqHGXTiEMg3uNr1pYbMQ9pump`
+- tard: $70,329 1h vol, $3,041 mcap, +42% 1h  
   CA `4WZpPscgpPbAbKNGc2RXmWTw6PWjg9NnCc3nGxuGpump`
+- SCRAP: $65,798 1h vol, $17,248 mcap, -7% 1h  
+  CA `BTbP7QckBbsEqnkynYF4BcmAz8CQAnxYsuPHbtXYpump`
