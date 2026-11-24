@@ -1,13 +1,13 @@
 # Trencher live report
 
-Updated 2026-11-24T21:30:21Z (paper trading, never real money)
+Updated 2026-11-24T21:45:22Z (paper trading, never real money)
 
 - Equity: $74.23 (-25.8% vs $100 start)
 - Closed trades: 22, 3 wins
 - Fees paid: $14.78 (axiom $2.81, network $9.18, pool $2.66), plus $4.15 lost to slippage
 - New trades: WATCH-ONLY (scans and decides, buys nothing)
-- Brain: subscription, claude-haiku-5-5 for routine calls, claude-opus-5-5 for the daily review; 521 routine calls and 0 plan-limit hits in 48h
-- Watch log: 76 coins being followed, 3372 filed, 0 would-buys (6h follow, sampled every 2 min)
+- Brain: subscription, claude-haiku-5-5 for routine calls, claude-opus-5-5 for the daily review; 516 routine calls and 0 plan-limit hits in 48h
+- Watch log: 75 coins being followed, 3375 filed, 0 would-buys (6h follow, sampled every 2 min)
 
 ## Scorecard (after fees)
 - 22 closed, 3 won (14%), net $-25.79
@@ -73,9 +73,13 @@ Updated 2026-11-24T21:30:21Z (paper trading, never real money)
   CA `H4gHnZ3NCU7Z9XQwGX6YYJNyieGEW8pqwGRUcdSxpump`
 
 ## Last scan
-- 21:30Z: 5 coins, 5 with pairs, 0 passed the market filters, 0 researched
+- 21:44Z: 5 coins, 5 with pairs, 0 passed the market filters, 0 researched
 
 ## Coins it looked at, and why it passed
+- 21:41Z Squirrel (MIGRATED, $313,402 mcap, $57,218 5m vol): REJECT, Top 10 hold 37.6% ex-pool (>25%) (V13)  
+  CA `CkwFr1G8EPLLJSnp84PmwjEDRG4yA7bGJvRxRTx5pump`
+- 21:32Z FIONA (MIGRATED, $3,196,629 mcap, $2,697 5m vol): REJECT, Bundles: 9 linked wallet cluster(s) hold 28.8% of supply (>20%) (V17)  
+  CA `B34nXKzCgsJb9ChLuSHPRpXLE3WFSWyeT8Cqkzzmpump`
 - 21:28Z JOEY (MIGRATED, $42,023 mcap, $11,025 5m vol): PASS, PASS — brain unavailable, not trading blind.  
   CA `CR4Tks2HjJkKVQQVDmKU41qW7iEaEBh1RRExdTRMpump`
 - 21:19Z WISH (FINAL_STRETCH, $15,468 mcap, $16,734 5m vol): PASS, PASS — brain unavailable, not trading blind.  
@@ -92,27 +96,23 @@ Updated 2026-11-24T21:30:21Z (paper trading, never real money)
   CA `5SS1XzHuQT1MiJLSzE8cZy1hUNYaoMkaPo8q1Koipump`
 - 20:51Z Ava (FINAL_STRETCH, $21,036 mcap, $9,392 5m vol): REJECT, Top 10 hold 25.4% ex-pool (>25%) (V13)  
   CA `8vSuXCFgQFSmTx4okY687iMyZYSSSmaytnr4WSdFpump`
-- 20:46Z FIONA (MIGRATED, $3,200,250 mcap, $7,277 5m vol): REJECT, Bundles: 9 linked wallet cluster(s) hold 28.8% of supply (>20%) (V17)  
-  CA `B34nXKzCgsJb9ChLuSHPRpXLE3WFSWyeT8Cqkzzmpump`
-- 20:46Z CASSIE (FINAL_STRETCH, $22,151 mcap, $20,828 5m vol): PASS, PASS — brain unavailable, not trading blind.  
-  CA `2wTWeJJ1urnhc3S6EaA4T5xtKaXHdukKDvDb4eoNpump`
 
 ## What its skips did next (last 48h)
 A skip "ran" if the coin reached the first target (1.5x) from the skip price before a 20% drop, "dumped" if the drop came first. Sampled every 10 min, followed 6h.
-- too new / sniping: blocked 36, ran 6, dumped 29, flat 1, open 0 (saving losses: keep it)
-  - ran: Wojak up to 4.29x  
-    CA `5eiLc9r79PkJquiFvYWdXJYtGNRjTpzot8MR7Z4Ppump`
-  - ran: Hold up to 1.62x  
-    CA `8J7yeYsBzozSQ67Ji4kpun2gdfTFp8o9g6rNkYR3pump`
-  - ran: VEST up to 2.65x  
-    CA `5ajKDjnprQhAZb7psoUbDSdqocaQJgnWySLTmH8ppump`
-- top 10 over 25%: blocked 35, ran 5, dumped 28, flat 2, open 0 (saving losses: keep it)
+- top 10 over 25%: blocked 36, ran 5, dumped 28, flat 2, open 1 (saving losses: keep it)
   - ran: SNP6900 up to 2.76x  
     CA `DnbQKi146NDmwwji3f3q5i68HQnYyBEhoDyj2q3Npump`
   - ran: JENSEN up to 2.62x  
     CA `GaNJeASYBM9k3TvEeUC2Pdyu1TjcpzTmPpoom92fpump`
   - ran: GOAT up to 1.53x  
     CA `5Ze97VEpX3EdRF4vbsxUXTdwGKF2qHGregrxToWEpump`
+- too new / sniping: blocked 34, ran 4, dumped 29, flat 1, open 0 (saving losses: keep it)
+  - ran: VEST up to 2.65x  
+    CA `5ajKDjnprQhAZb7psoUbDSdqocaQJgnWySLTmH8ppump`
+  - ran: Loaf up to 2.13x  
+    CA `8Ugc1FHaeK6iXQrnUpztxhhNHqucFwaqC35A4Kjjpump`
+  - ran: AGI up to 1.53x  
+    CA `7kctwFbSdLfpi6RuN9cjpVpYVHKPUr8PtG1meH35AEky`
 - brain paced: blocked 33, ran 11, dumped 19, flat 1, open 2 (mixed)
   - ran: Scamsem up to 1.56x  
     CA `5JWeGmA9z6yHd5F9P6B23A8wthho8BpZuDmQv5DfLoat`
@@ -120,13 +120,6 @@ A skip "ran" if the coin reached the first target (1.5x) from the skip price bef
     CA `9cDnmLRDWeJzcpyw8tSFAT7HS4Aunx6MmZWjMfrzpump`
   - ran: SHHFT up to 1.61x  
     CA `GqMg4TRt5U5HRK6oeZYwCF1Jz7Ym9MSzWSoFCtFsbzf6`
-- flow below pace: blocked 32, ran 7, dumped 25, flat 0, open 0 (saving losses: keep it)
-  - ran: OpenIndex up to 1.63x  
-    CA `FuKY3dk7QmpbDdQRjzbjB3G6PiCuqKNvN4dAWDpwpump`
-  - ran: hCAT up to 1.52x  
-    CA `2FYs4vApfj4ErsggpFDfzMv1WvxnyiLtzNEj84mS6TLh`
-  - ran: WALLSTFLY up to 1.52x  
-    CA `2DQbV7hsqxKVWmFakXGGhBbNyY28tDJ9YuJkojYrpump`
 - near the high / chasing: blocked 32, ran 7, dumped 24, flat 1, open 0 (saving losses: keep it)
   - ran: Bertcoin up to 1.8x  
     CA `xEK58Qa2xZ7C36Z2g3Jjq1WHY561CvvnJkLpgJspump`
@@ -134,6 +127,13 @@ A skip "ran" if the coin reached the first target (1.5x) from the skip price bef
     CA `AdXjXfumPSSKk7PrfgDHcAsPvuxnKv7Zo9WZEWKbiDkh`
   - ran: Phil up to 2.05x  
     CA `GMLSyjZCKGtFwztp2mtT8PDeNUA6WEk7oQoe3QkFpump`
+- flow below pace: blocked 31, ran 7, dumped 24, flat 0, open 0 (saving losses: keep it)
+  - ran: OpenIndex up to 1.63x  
+    CA `FuKY3dk7QmpbDdQRjzbjB3G6PiCuqKNvN4dAWDpwpump`
+  - ran: hCAT up to 1.52x  
+    CA `2FYs4vApfj4ErsggpFDfzMv1WvxnyiLtzNEj84mS6TLh`
+  - ran: WALLSTFLY up to 1.52x  
+    CA `2DQbV7hsqxKVWmFakXGGhBbNyY28tDJ9YuJkojYrpump`
 - RugCheck danger: blocked 21, ran 5, dumped 16, flat 0, open 0 (saving losses: keep it)
   - ran: Holdsgiving up to 2.96x  
     CA `A2jLaCC7v3VjXP8gEgCQNbTWEvizYuQ82jFEYfzipump`
@@ -199,13 +199,13 @@ Nothing has a positive after-cost edge yet. All 229 settled coins average -8.7% 
 Nothing in this scan is a setup. No mover clears the $10k 5-minute volume bar; the best are BULLSHIT at $6.2k and scamsem at $5.6k, and 1h volume is mostly well above 5m, so the flow is fading. Two themes repeat in the raw rows: self-aware scam and joke names (scamsem and its pumpswap twin RUGSEM, Key Opinion Loser, Bull Shit), which are fading, and Claude-named coins (CLAUDIO at $97k, SUPER CLAUDIA INU at $29k) on thin 5m with 63-69% buys, which are early and unproven. Trump and Jensen names are fading: JENSEN does $1.5k 5m on a $499k cap and DONJENSEN $3.3k on $2.1M, which matches the record-low headlines. The crawler's summary is wrong on several rows. scamsem is $57k cap and $5.6k 5m (not $90k and $13.7k), UCASH is $75k and $4.8k, JENSEN is $499k and $1.5k, and "the black" is a $2.5k cap with $17 of 5m volume and 20% buys, so none of them qualify and the black's +146% claim is not in the data. Watch CLAUDIO and scamsem for 5m volume to clear $10k; BULLSHIT is pump.fun new-pair territory and I'm not chasing it. Holder, dev and bundle checks were not run on any of these coins, so this is a volume read only.
 
 ## Moving most in its scans, last 30 min (1h volume)
+- DUMBMONEY: $768,127 1h vol, $8,168 mcap, -98% 1h  
+  CA `GEHehS5Rr4rNCjvrHLjjV1avD4bjMsn53ywDGv1spump`
+- Squirrel: $119,068 1h vol, $339,039 mcap, +788% 1h  
+  CA `CkwFr1G8EPLLJSnp84PmwjEDRG4yA7bGJvRxRTx5pump`
 - WISH: $112,967 1h vol, $18,404 mcap, +260% 1h  
   CA `7bQL4aLYyFXPLXXngC8xmxLx6keZVfyfQcP3diU1pump`
-- ANSEM: $85,135 1h vol, $88,882 mcap, +153% 1h  
-  CA `9qZfA8rQgLXRXThMU8MDUoQHykZeN6iQjrqrCtdHpump`
-- SPECS: $75,805 1h vol, $15,853 mcap, +390% 1h  
-  CA `29SS1KJnthUqk8JhW13bvju6JWkeCAXafQY4XP8Epump`
-- GME: $75,199 1h vol, $16,797 mcap, +86% 1h  
+- GME: $66,620 1h vol, $8,903 mcap, -43% 1h  
   CA `HgZasASMgGh7hBrfkdfbUzqtusztDyqCsAfYKqaha6ea`
-- Tinkerbelle: $63,435 1h vol, $17,220 mcap, +398% 1h  
-  CA `5SS1XzHuQT1MiJLSzE8cZy1hUNYaoMkaPo8q1Koipump`
+- goldcoin: $65,470 1h vol, $29,069 mcap, +685% 1h  
+  CA `Cp6i5Ka8Gwzzn537KoqLyjQCFX6QBfoAC9WuxEbQpump`
