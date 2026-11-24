@@ -1,13 +1,13 @@
 # Trencher live report
 
-Updated 2026-11-24T15:41:35Z (paper trading, never real money)
+Updated 2026-11-24T15:56:40Z (paper trading, never real money)
 
 - Equity: $74.23 (-25.8% vs $100 start)
 - Closed trades: 22, 3 wins
 - Fees paid: $14.78 (axiom $2.81, network $9.18, pool $2.66), plus $4.15 lost to slippage
 - New trades: WATCH-ONLY (scans and decides, buys nothing)
-- Brain: subscription, claude-haiku-5-5 for routine calls, claude-opus-5-5 for the daily review; 489 routine calls and 0 plan-limit hits in 48h
-- Watch log: 58 coins being followed, 3315 filed, 0 would-buys (6h follow, sampled every 2 min)
+- Brain: subscription, claude-haiku-5-5 for routine calls, claude-opus-5-5 for the daily review; 491 routine calls and 0 plan-limit hits in 48h
+- Watch log: 62 coins being followed, 3316 filed, 0 would-buys (6h follow, sampled every 2 min)
 
 ## Scorecard (after fees)
 - 22 closed, 3 won (14%), net $-25.79
@@ -73,9 +73,19 @@ Updated 2026-11-24T15:41:35Z (paper trading, never real money)
   CA `H4gHnZ3NCU7Z9XQwGX6YYJNyieGEW8pqwGRUcdSxpump`
 
 ## Last scan
-- 15:41Z: 1 coins, 1 with pairs, 0 passed the market filters, 0 researched
+- 15:55Z: 3 coins, 3 with pairs, 1 passed the market filters, 1 researched
 
 ## Coins it looked at, and why it passed
+- 15:55Z wif (MIGRATED, $33,457 mcap, $35,306 5m vol): PASS, PASS — brain unavailable, not trading blind.  
+  CA `6sbUBNuXyVQVHsoaUGYAiL3Pyntpyjm3yHZP1YfHYMzH`
+- 15:53Z Valueless (MIGRATED, $270,501 mcap, $80,578 5m vol): REJECT, Top 10 hold 42.4% ex-pool (>25%) (V13)  
+  CA `33xKs5zTHW4pppqvUKjvHuC8cHjSUb1JzVbzxYFHpump`
+- 15:49Z Memeployed (MIGRATED, $101,793 mcap, $2,606 5m vol): PASS, PASS — brain unavailable, not trading blind.  
+  CA `4m2PS6yW2xDk5V9nJgPjnus1eguwCDSWXbA2YQeVkqxn`
+- 15:42Z DONJENSEN (MIGRATED, $1,869,342 mcap, $2,952 5m vol): PASS, PASS — brain unavailable, not trading blind.  
+  CA `5LDowscYVD3a6ZS4m8gCqG5nU16eLTwRXhciFi1bpump`
+- 15:42Z JENSEN (MIGRATED, $82,777 mcap, $5,479 5m vol): REJECT, RugCheck danger: Creator history of rugged tokens  
+  CA `HKiMA2mKQHU2cjfZ4Kbmru5GBGCauSNqPtpu8cfmpump`
 - 15:37Z cateball (DIP, $889,501 mcap, $2,066 5m vol): REJECT, Dip with fading attention is a falling knife, not a dip (5m at 0.53x the hour's pace, under 0.6x)  
   CA `4npJ3avxnGhCzKbWQpLrQXAHsjWzKr4JqBsbu5Fspump`
 - 15:24Z PAPX (FINAL_STRETCH, $17,599 mcap, $2,000 5m vol): REJECT, 5m volume $2,000 is dead (<$2,000) (V1)  
@@ -86,20 +96,10 @@ Updated 2026-11-24T15:41:35Z (paper trading, never real money)
   CA `ArTHx2XxPadBjkJw9WacfwPTEoaeG5jMakX26tzEpump`
 - 15:19Z poor dog (FINAL_STRETCH, $14,776 mcap, $8,449 5m vol): PASS, PASS — brain unavailable, not trading blind.  
   CA `Hb4kF1LyTxFD3nRCVbgegQv2oo2jAfK4CpTho8a9pump`
-- 15:16Z FIONA (DIP, $2,934,666 mcap, $4,676 5m vol): REJECT, Dip with fading attention is a falling knife, not a dip (5m at 0.42x the hour's pace, under 0.6x)  
-  CA `B34nXKzCgsJb9ChLuSHPRpXLE3WFSWyeT8Cqkzzmpump`
-- 15:13Z SCAMSEM (MIGRATED, $100,619 mcap, $2,904 5m vol): PASS, PASS — brain unavailable, not trading blind.  
-  CA `fiixPXZmvzFefzHmCXQG9jri2JyH8ichA3tgWENpump`
-- 15:03Z Memeployed (MIGRATED, $64,601 mcap, $7,561 5m vol): PASS, PASS — brain unavailable, not trading blind.  
-  CA `4m2PS6yW2xDk5V9nJgPjnus1eguwCDSWXbA2YQeVkqxn`
-- 14:58Z OATH (FINAL_STRETCH, $18,246 mcap, $16,004 5m vol): REJECT, Top 10 hold 26.8% ex-pool (>25%) (V13)  
-  CA `GRVQD8EA6gUwovaHFdG2Gss7UeiNyPXE868GnKAtpump`
-- 14:57Z DONJENSEN (MIGRATED, $1,960,470 mcap, $4,575 5m vol): PASS, PASS — brain unavailable, not trading blind.  
-  CA `5LDowscYVD3a6ZS4m8gCqG5nU16eLTwRXhciFi1bpump`
 
 ## What its skips did next (last 48h)
 A skip "ran" if the coin reached the first target (1.5x) from the skip price before a 20% drop, "dumped" if the drop came first. Sampled every 10 min, followed 6h.
-- too new / sniping: blocked 41, ran 6, dumped 34, flat 1, open 0 (saving losses: keep it)
+- too new / sniping: blocked 40, ran 6, dumped 33, flat 1, open 0 (saving losses: keep it)
   - ran: Wojak up to 4.29x  
     CA `5eiLc9r79PkJquiFvYWdXJYtGNRjTpzot8MR7Z4Ppump`
   - ran: Hold up to 1.62x  
@@ -113,28 +113,28 @@ A skip "ran" if the coin reached the first target (1.5x) from the skip price bef
     CA `AdXjXfumPSSKk7PrfgDHcAsPvuxnKv7Zo9WZEWKbiDkh`
   - ran: Phil up to 2.05x  
     CA `GMLSyjZCKGtFwztp2mtT8PDeNUA6WEk7oQoe3QkFpump`
-- flow below pace: blocked 33, ran 7, dumped 26, flat 0, open 0 (saving losses: keep it)
+- flow below pace: blocked 32, ran 7, dumped 25, flat 0, open 0 (saving losses: keep it)
   - ran: OpenIndex up to 1.63x  
     CA `FuKY3dk7QmpbDdQRjzbjB3G6PiCuqKNvN4dAWDpwpump`
   - ran: hCAT up to 1.52x  
     CA `2FYs4vApfj4ErsggpFDfzMv1WvxnyiLtzNEj84mS6TLh`
   - ran: WALLSTFLY up to 1.52x  
     CA `2DQbV7hsqxKVWmFakXGGhBbNyY28tDJ9YuJkojYrpump`
-- top 10 over 25%: blocked 27, ran 4, dumped 20, flat 2, open 1 (saving losses: keep it)
+- top 10 over 25%: blocked 27, ran 4, dumped 19, flat 2, open 2 (saving losses: keep it)
   - ran: SNP6900 up to 2.76x  
     CA `DnbQKi146NDmwwji3f3q5i68HQnYyBEhoDyj2q3Npump`
   - ran: JENSEN up to 2.62x  
     CA `GaNJeASYBM9k3TvEeUC2Pdyu1TjcpzTmPpoom92fpump`
   - ran: GOAT up to 1.53x  
     CA `5Ze97VEpX3EdRF4vbsxUXTdwGKF2qHGregrxToWEpump`
-- brain paced: blocked 21, ran 9, dumped 9, flat 0, open 3 (mixed)
+- brain paced: blocked 22, ran 8, dumped 8, flat 0, open 6 (mixed)
   - ran: FOAM up to 1.98x  
     CA `2MdCPWNFufmJSZhajSvi1yqBFTB24GQ4ipjNcB8Vpump`
   - ran: MCAT up to 2.52x  
     CA `BzPyyYCTmQNq2BcfQ4ANAvCYk54rnmQEXMFvFT8RhWMi`
   - ran: DELULU up to 1.57x  
     CA `A37ozuu1D1pP1cM27y1HYkSArVQbgsZNN7Va74yNpump`
-- RugCheck danger: blocked 19, ran 5, dumped 14, flat 0, open 0 (saving losses: keep it)
+- RugCheck danger: blocked 19, ran 5, dumped 13, flat 0, open 1 (saving losses: keep it)
   - ran: Holdsgiving up to 2.96x  
     CA `A2jLaCC7v3VjXP8gEgCQNbTWEvizYuQ82jFEYfzipump`
   - ran: JENSEN up to 1.7x  
@@ -197,13 +197,13 @@ Nothing has a positive after-cost edge yet. All 229 settled coins average -8.7% 
 Nothing in this scan is a setup. No mover clears the $10k 5-minute volume bar; the best are BULLSHIT at $6.2k and scamsem at $5.6k, and 1h volume is mostly well above 5m, so the flow is fading. Two themes repeat in the raw rows: self-aware scam and joke names (scamsem and its pumpswap twin RUGSEM, Key Opinion Loser, Bull Shit), which are fading, and Claude-named coins (CLAUDIO at $97k, SUPER CLAUDIA INU at $29k) on thin 5m with 63-69% buys, which are early and unproven. Trump and Jensen names are fading: JENSEN does $1.5k 5m on a $499k cap and DONJENSEN $3.3k on $2.1M, which matches the record-low headlines. The crawler's summary is wrong on several rows. scamsem is $57k cap and $5.6k 5m (not $90k and $13.7k), UCASH is $75k and $4.8k, JENSEN is $499k and $1.5k, and "the black" is a $2.5k cap with $17 of 5m volume and 20% buys, so none of them qualify and the black's +146% claim is not in the data. Watch CLAUDIO and scamsem for 5m volume to clear $10k; BULLSHIT is pump.fun new-pair territory and I'm not chasing it. Holder, dev and bundle checks were not run on any of these coins, so this is a volume read only.
 
 ## Moving most in its scans, last 30 min (1h volume)
-- GPUBREAK: $180,771 1h vol, $1,673 mcap, -98% 1h  
-  CA `BykEjfKeLzSAen7p41nCHFwenuQ5s4fosPRzJudLpump`
-- FIONA: $133,133 1h vol, $2,934,666 mcap, -12% 1h  
-  CA `B34nXKzCgsJb9ChLuSHPRpXLE3WFSWyeT8Cqkzzmpump`
-- POORGOAT: $91,946 1h vol, $6,065 mcap, -91% 1h  
-  CA `DE6jZSwe422PWGWWU5hNCUrUmPDHHhF5aVXpjFbFpump`
-- Munch: $84,365 1h vol, $4,467 mcap, +121% 1h  
+- Valueless: $185,804 1h vol, $270,501 mcap, +614% 1h  
+  CA `33xKs5zTHW4pppqvUKjvHuC8cHjSUb1JzVbzxYFHpump`
+- Memeployed: $72,756 1h vol, $101,793 mcap, +26% 1h  
+  CA `4m2PS6yW2xDk5V9nJgPjnus1eguwCDSWXbA2YQeVkqxn`
+- Munch: $55,182 1h vol, $3,487 mcap, -64% 1h  
   CA `3QUrDTez1H6UyhLS5tMHBZgS79j9fJvwm7EPG2Fbpump`
-- chuchu: $51,781 1h vol, $2,304 mcap, -92% 1h  
+- DONJENSEN: $53,319 1h vol, $1,869,342 mcap, -9% 1h  
+  CA `5LDowscYVD3a6ZS4m8gCqG5nU16eLTwRXhciFi1bpump`
+- chuchu: $51,957 1h vol, $1,846 mcap, -93% 1h  
   CA `DerEwFpXm6J39QCB3312fQ3b6fE3PDCWpnnEV5dwpump`
