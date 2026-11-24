@@ -1,13 +1,13 @@
 # Trencher live report
 
-Updated 2026-11-24T16:42:05Z (paper trading, never real money)
+Updated 2026-11-24T16:57:13Z (paper trading, never real money)
 
 - Equity: $74.23 (-25.8% vs $100 start)
 - Closed trades: 22, 3 wins
 - Fees paid: $14.78 (axiom $2.81, network $9.18, pool $2.66), plus $4.15 lost to slippage
 - New trades: WATCH-ONLY (scans and decides, buys nothing)
-- Brain: subscription, claude-haiku-5-5 for routine calls, claude-opus-5-5 for the daily review; 492 routine calls and 0 plan-limit hits in 48h
-- Watch log: 66 coins being followed, 3321 filed, 0 would-buys (6h follow, sampled every 2 min)
+- Brain: subscription, claude-haiku-5-5 for routine calls, claude-opus-5-5 for the daily review; 491 routine calls and 0 plan-limit hits in 48h
+- Watch log: 66 coins being followed, 3322 filed, 0 would-buys (6h follow, sampled every 2 min)
 
 ## Scorecard (after fees)
 - 22 closed, 3 won (14%), net $-25.79
@@ -73,9 +73,11 @@ Updated 2026-11-24T16:42:05Z (paper trading, never real money)
   CA `H4gHnZ3NCU7Z9XQwGX6YYJNyieGEW8pqwGRUcdSxpump`
 
 ## Last scan
-- 16:41Z: 8 coins, 8 with pairs, 1 passed the market filters, 1 researched
+- 16:56Z: 3 coins, 3 with pairs, 0 passed the market filters, 0 researched
 
 ## Coins it looked at, and why it passed
+- 16:47Z FIONA (DIP, $2,928,419 mcap, $3,298 5m vol): REJECT, Bundles: 9 linked wallet cluster(s) hold 28.7% of supply (>20%) (V17)  
+  CA `B34nXKzCgsJb9ChLuSHPRpXLE3WFSWyeT8Cqkzzmpump`
 - 16:41Z wif (MIGRATED, $55,578 mcap, $6,127 5m vol): PASS, PASS — brain unavailable, not trading blind.  
   CA `6sbUBNuXyVQVHsoaUGYAiL3Pyntpyjm3yHZP1YfHYMzH`
 - 16:33Z DIALED (FINAL_STRETCH, $14,394 mcap, $9,995 5m vol): PASS, PASS — brain unavailable, not trading blind.  
@@ -94,8 +96,6 @@ Updated 2026-11-24T16:42:05Z (paper trading, never real money)
   CA `fiixPXZmvzFefzHmCXQG9jri2JyH8ichA3tgWENpump`
 - 15:57Z MakeCrypto (no setup, $29,324 mcap, $7,941 5m vol): REJECT, No setup fits: not Final Stretch, not a migrated runner, not a healthy dip  
   CA `G9mReuKyjGvb6Y3eVhHBcAhwHQPAcVYXMHmVjAQkpump`
-- 15:55Z wif (MIGRATED, $33,457 mcap, $35,306 5m vol): PASS, PASS — brain unavailable, not trading blind.  
-  CA `6sbUBNuXyVQVHsoaUGYAiL3Pyntpyjm3yHZP1YfHYMzH`
 
 ## What its skips did next (last 48h)
 A skip "ran" if the coin reached the first target (1.5x) from the skip price before a 20% drop, "dumped" if the drop came first. Sampled every 10 min, followed 6h.
@@ -120,14 +120,14 @@ A skip "ran" if the coin reached the first target (1.5x) from the skip price bef
     CA `2FYs4vApfj4ErsggpFDfzMv1WvxnyiLtzNEj84mS6TLh`
   - ran: WALLSTFLY up to 1.52x  
     CA `2DQbV7hsqxKVWmFakXGGhBbNyY28tDJ9YuJkojYrpump`
-- top 10 over 25%: blocked 28, ran 4, dumped 21, flat 2, open 1 (saving losses: keep it)
+- top 10 over 25%: blocked 28, ran 5, dumped 21, flat 2, open 0 (saving losses: keep it)
   - ran: SNP6900 up to 2.76x  
     CA `DnbQKi146NDmwwji3f3q5i68HQnYyBEhoDyj2q3Npump`
   - ran: JENSEN up to 2.62x  
     CA `GaNJeASYBM9k3TvEeUC2Pdyu1TjcpzTmPpoom92fpump`
   - ran: GOAT up to 1.53x  
     CA `5Ze97VEpX3EdRF4vbsxUXTdwGKF2qHGregrxToWEpump`
-- brain paced: blocked 22, ran 9, dumped 8, flat 0, open 5 (cost more winners than it saved: loosen it)
+- brain paced: blocked 21, ran 9, dumped 9, flat 0, open 3 (mixed)
   - ran: FOAM up to 1.98x  
     CA `2MdCPWNFufmJSZhajSvi1yqBFTB24GQ4ipjNcB8Vpump`
   - ran: MCAT up to 2.52x  
@@ -201,11 +201,11 @@ Nothing in this scan is a setup. No mover clears the $10k 5-minute volume bar; t
 ## Moving most in its scans, last 30 min (1h volume)
 - wif: $284,114 1h vol, $55,578 mcap, +122% 1h  
   CA `6sbUBNuXyVQVHsoaUGYAiL3Pyntpyjm3yHZP1YfHYMzH`
-- Valueless: $208,955 1h vol, $1,236 mcap, -97% 1h  
-  CA `33xKs5zTHW4pppqvUKjvHuC8cHjSUb1JzVbzxYFHpump`
-- Wanted: $121,729 1h vol, $193,136 mcap, +503% 1h  
-  CA `2M3CsCP97Le187KQC5jhZG3c6bFzCZ51NP8bscrupump`
-- wif: $102,137 1h vol, $9,080 mcap, +142% 1h  
+- WORTHLESS: $110,854 1h vol, $16,453 mcap, -76% 1h  
+  CA `ArTHx2XxPadBjkJw9WacfwPTEoaeG5jMakX26tzEpump`
+- wif: $109,242 1h vol, $4,366 mcap, +16% 1h  
   CA `DQcz9eLREX92gVkAyTswyYfpUUQ73AgsgXwV4c7K4bQS`
 - DIALED: $83,480 1h vol, $15,179 mcap, +674% 1h  
   CA `DiaLLB3UDAH7M3qEgCkAzSMc1k5Gt8ccPTYVLoErnqRZ`
+- Valueless: $77,986 1h vol, $1,236 mcap, -100% 1h  
+  CA `33xKs5zTHW4pppqvUKjvHuC8cHjSUb1JzVbzxYFHpump`
