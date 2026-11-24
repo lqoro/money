@@ -1,13 +1,13 @@
 # Trencher live report
 
-Updated 2026-11-24T05:05:54Z (paper trading, never real money)
+Updated 2026-11-24T05:21:07Z (paper trading, never real money)
 
 - Equity: $74.23 (-25.8% vs $100 start)
 - Closed trades: 22, 3 wins
 - Fees paid: $14.78 (axiom $2.81, network $9.18, pool $2.66), plus $4.15 lost to slippage
 - New trades: WATCH-ONLY (scans and decides, buys nothing)
-- Brain: subscription, claude-haiku-5-5 for routine calls, claude-opus-5-5 for the daily review; 474 routine calls and 0 plan-limit hits in 48h
-- Watch log: 108 coins being followed, 3168 filed, 0 would-buys (6h follow, sampled every 2 min)
+- Brain: subscription, claude-haiku-5-5 for routine calls, claude-opus-5-5 for the daily review; 475 routine calls and 0 plan-limit hits in 48h
+- Watch log: 103 coins being followed, 3175 filed, 0 would-buys (6h follow, sampled every 2 min)
 
 ## Scorecard (after fees)
 - 22 closed, 3 won (14%), net $-25.79
@@ -73,9 +73,13 @@ Updated 2026-11-24T05:05:54Z (paper trading, never real money)
   CA `H4gHnZ3NCU7Z9XQwGX6YYJNyieGEW8pqwGRUcdSxpump`
 
 ## Last scan
-- 05:05Z: 9 coins, 9 with pairs, 0 passed the market filters, 0 researched
+- 05:20Z: 4 coins, 4 with pairs, 0 passed the market filters, 0 researched
 
 ## Coins it looked at, and why it passed
+- 05:17Z ACHI (FINAL_STRETCH, $15,349 mcap, $16,262 5m vol): PASS at conviction 3, PASS: split crowd. ACHI leads a 28-copy "achi" field, but a 5.5% bundle cluster sits inside it and the coin is up 105% in 5m. Chasing a spike with no higher low. (V1, V3, V13)  
+  CA `HADu1KBKhLhzmqyrdbF96F73XP892DTq3MC2dztApump`
+- 05:09Z NAJIN (FINAL_STRETCH, $20,180 mcap, $8,357 5m vol): PASS at conviction 3, PASS: chasing spike. NAJIN is up 176% on the 5m with 5m volume at 4.3x its hourly pace, and the rhino theme runs at 0.61x across 18 copies. Not a pullback. (V1, V6)  
+  CA `6kdrep4bs5HjY7uGQ4cSnNAdAxspTBivQVm2ZueZpump`
 - 05:04Z DONJENSEN (MIGRATED, $1,995,003 mcap, $4,493 5m vol): PASS at conviction 2, PASS: flow below pace on a $2M coin, 5m volume $4.5k, and the first high is only 1.19x away. Blockers: flow below pace, big cap no room, target too close (V1, V6, V13).  
   CA `5LDowscYVD3a6ZS4m8gCqG5nU16eLTwRXhciFi1bpump`
 - 04:55Z survive (FINAL_STRETCH, $19,006 mcap, $4,009 5m vol): PASS at conviction 3, PASS: thin 5m flow ($4k, under the $10k bar), no catalyst, and the story is one generic word. Survive is a bounce, not a dip. (V1, V6, V13)  
@@ -92,10 +96,6 @@ Updated 2026-11-24T05:05:54Z (paper trading, never real money)
   CA `7cFiqdT46zs7ooHWLFiLSaSQKLMibtokh9dBinsspump`
 - 04:36Z JENSEN (DIP, $731,010 mcap, $2,081 5m vol): REJECT, Top 10 hold 25.6% ex-pool (>25%) (V13)  
   CA `HKiMA2mKQHU2cjfZ4Kbmru5GBGCauSNqPtpu8cfmpump`
-- 04:26Z Spidercow (FINAL_STRETCH, $24,090 mcap, $38,103 5m vol): PASS at conviction 3, PASS: chasing spike. Up 233% on 5m at 7x hourly pace, 18 copies in the field, no socials. Pre-bond at 82%, no story behind it (V1, V6, V13).  
-  CA `8EakoV8ox4RMK9R8r59X74iiK5bHLmYmgVyBeK29pump`
-- 04:20Z yippee (FINAL_STRETCH, $24,062 mcap, $11,498 5m vol): PASS at conviction 3, PASS — split crowd: "yippee" is one of 17 same-name copies sharing about $266k of 5m volume, its own 5m is $11.5k, and the radar has zero mentions. The website is a 0-day placeholder game page that doesn't show this CA (V3, V6).  
-  CA `3mTQnHtok9wnT7yDA1G9BfMh5xNbyQerYkpfTDyKpump`
 
 ## What its skips did next (last 48h)
 A skip "ran" if the coin reached the first target (1.5x) from the skip price before a 20% drop, "dumped" if the drop came first. Sampled every 10 min, followed 6h.
@@ -106,7 +106,7 @@ A skip "ran" if the coin reached the first target (1.5x) from the skip price bef
     CA `5eiLc9r79PkJquiFvYWdXJYtGNRjTpzot8MR7Z4Ppump`
   - ran: Hold up to 1.62x  
     CA `8J7yeYsBzozSQ67Ji4kpun2gdfTFp8o9g6rNkYR3pump`
-- near the high / chasing: blocked 36, ran 6, dumped 26, flat 1, open 3 (saving losses: keep it)
+- near the high / chasing: blocked 38, ran 7, dumped 28, flat 1, open 2 (saving losses: keep it)
   - ran: SANTA up to 1.85x  
     CA `tZsjFu2CH1R23wEpbfXAYGc2KUaVrUbwofCNNNqpump`
   - ran: Bertcoin up to 1.8x  
@@ -120,7 +120,7 @@ A skip "ran" if the coin reached the first target (1.5x) from the skip price bef
     CA `FuKY3dk7QmpbDdQRjzbjB3G6PiCuqKNvN4dAWDpwpump`
   - ran: hCAT up to 1.52x  
     CA `2FYs4vApfj4ErsggpFDfzMv1WvxnyiLtzNEj84mS6TLh`
-- top 10 over 25%: blocked 29, ran 5, dumped 19, flat 2, open 3 (saving losses: keep it)
+- top 10 over 25%: blocked 29, ran 5, dumped 20, flat 2, open 2 (saving losses: keep it)
   - ran: GIF up to 2.16x  
     CA `B6wM98qkQKP71mhPA48S7No6TxM4KaXdFojDTZeUpump`
   - ran: SNP6900 up to 2.76x  
@@ -192,16 +192,16 @@ Nothing has a positive after-cost edge yet. All 229 settled coins average -8.7% 
 - [2026-11-02 20:25] I expected Slingoor, a clean MIGRATED leader with $25k of 5m flow at pace and a 0.77 buy share, to retest its $408k high from $304k. It never went green (0.98x peak) and hit the -20% stop in 2 minutes, a -$2.86 probe. My own thesis admitted there was no printed higher low after a peak only 6 minutes old, so this confirms the money-shape rule: buy share and flow are not structure (V1, V6). Next time a MIGRATED pullback with no higher low above the hourly low is a PASS with blocker "no higher low", not a probe. This is one loss, so it adds no new ban beyond the rule I already have.
 
 ## Meta right now
-Meta is young and split. Animal/creature launches and AI/Grok/Jensen names are pulling the buyers, while older low-caps are bleeding. Animals: NAJIN (white rhino, $11k mcap, $8.5k 5m, 55% buys, 0.3h old, +437% 1h), BTCow ($12k, $4.7k 5m, 70% buys, 0.2h old) and CHIBI (Chibi Neko, $114k, $3.8k 5m, 66% buys, +47% 1h) are rising, while FATU and "the cat analyst" (0% buys) are already dead. AI/Jensen: GROKIA ($1.6M mcap, $54k 5m, 63% buys, +101% 1h, 1.8h old) carries the most real flow in the set, while JENSEN is -69% 1h on $10.5k 5m and GPU Jesus sits at $1k 5m under the floor. Fading: UCASH -79%, GTS1 -59%, Flatulence -54%, VIctory -51%. The crawler summary's figures don't match the raw rows: DONJENSEN and FIONA don't appear in scan_movers and CHIBI's numbers are off, so I'm treating those as unverified and not naming them. Research only, no entries: GROKIA (+101% in an hour is exit-liquidity shape until holders and bundles check out), NAJIN (5m volume above its mcap at 0.3h is a frenzy until shown organic), and CHIBI only if its 5m volume clears $10k. The Trump-dinner headlines aren't showing up in these movers, so they aren't the meta.
+The meta is animal creatures, and the Jensen/AI names are fading. Animals are rising: Spidercow ($105k mcap, $24.8k 5m, 65% buys, +247% 1h, about 12 min old) and NAJIN (rhino, $20k mcap, $8.8k 5m, 62% buys, +140% 1h); FATU, another rhino, is down 91%. Jensen/AI is mostly dying: JENSEN is -98% with no 5m volume, opus 4.5 is -87%, and DONJENSEN is flat on $2M with 43% buys. GROKIA's +873% hour rests on only $3.2k of 5m volume against a $2.4M cap, which looks like exit liquidity, and the crawler's $54k figure doesn't match the raw row. Setups to research, not enter: Spidercow (clears the $10k 5m bar; needs holder, dev and bundle checks and a pullback that holds on buys) and NAJIN only if its 5m volume clears $10k. Tiny caps under $5k with sell-heavy flow (NOCAP, OPUS, GOOBIE, KAPIPLARA) are not worth a look (V1, V6, V13).
 
 ## Moving most in its scans, last 30 min (1h volume)
 - SUMMITPRO: $182,794 1h vol, $100,365 mcap, +96% 1h  
   CA `9SzSjbqTRb8f6vVeL5tUBwpppJFwLf1BfYkUwFeEpump`
-- Spidercow: $144,375 1h vol, $105,059 mcap, +247% 1h  
-  CA `9oxUBRyk9EXfQHMchya45p3xsF2fbNzzDUNKzEfKpump`
-- yippee: $103,968 1h vol, $11,375 mcap, -60% 1h  
+- yippee: $110,056 1h vol, $7,672 mcap, -73% 1h  
   CA `3mTQnHtok9wnT7yDA1G9BfMh5xNbyQerYkpfTDyKpump`
 - GROKIA: $103,366 1h vol, $2,394,846 mcap, +873% 1h  
   CA `3cL47ohWa2HApLYKtqPsqkjaxJ6HLvT5Ri1KvWdXpump`
-- JENSEN: $97,477 1h vol, $1,578 mcap, -98% 1h  
-  CA `9vLdkMGZ9jbKAZZKrxVzShEBuafLkjB7UgHfNh3xpump`
+- DONJENSEN: $94,437 1h vol, $1,995,003 mcap, +14% 1h  
+  CA `5LDowscYVD3a6ZS4m8gCqG5nU16eLTwRXhciFi1bpump`
+- Spidercow: $88,252 1h vol, $2,764 mcap, -90% 1h  
+  CA `8EakoV8ox4RMK9R8r59X74iiK5bHLmYmgVyBeK29pump`
