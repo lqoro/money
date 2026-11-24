@@ -1,13 +1,13 @@
 # Trencher live report
 
-Updated 2026-11-24T12:39:55Z (paper trading, never real money)
+Updated 2026-11-24T12:54:58Z (paper trading, never real money)
 
 - Equity: $74.23 (-25.8% vs $100 start)
 - Closed trades: 22, 3 wins
 - Fees paid: $14.78 (axiom $2.81, network $9.18, pool $2.66), plus $4.15 lost to slippage
 - New trades: WATCH-ONLY (scans and decides, buys nothing)
-- Brain: subscription, claude-haiku-5-5 for routine calls, claude-opus-5-5 for the daily review; 470 routine calls and 0 plan-limit hits in 48h
-- Watch log: 48 coins being followed, 3288 filed, 0 would-buys (6h follow, sampled every 2 min)
+- Brain: subscription, claude-haiku-5-5 for routine calls, claude-opus-5-5 for the daily review; 473 routine calls and 0 plan-limit hits in 48h
+- Watch log: 49 coins being followed, 3290 filed, 0 would-buys (6h follow, sampled every 2 min)
 
 ## Scorecard (after fees)
 - 22 closed, 3 won (14%), net $-25.79
@@ -73,9 +73,15 @@ Updated 2026-11-24T12:39:55Z (paper trading, never real money)
   CA `H4gHnZ3NCU7Z9XQwGX6YYJNyieGEW8pqwGRUcdSxpump`
 
 ## Last scan
-- 12:39Z: 2 coins, 1 with pairs, 0 passed the market filters, 0 researched
+- 12:53Z: 2 coins, 1 with pairs, 1 passed the market filters, 1 researched
 
 ## Coins it looked at, and why it passed
+- 12:53Z DUVAL (MIGRATED, $286,607 mcap, $25,588 5m vol): PASS, PASS — brain unavailable, not trading blind.  
+  CA `7fmD1p3jzva28EPP9bPqbDoxZGj5j398yJoE3EVypump`
+- 12:40Z SHHFT (MIGRATED, $110,283 mcap, $2,607 5m vol): PASS, PASS — brain unavailable, not trading blind.  
+  CA `GqMg4TRt5U5HRK6oeZYwCF1Jz7Ym9MSzWSoFCtFsbzf6`
+- 12:40Z DONJENSEN (MIGRATED, $2,173,569 mcap, $2,919 5m vol): PASS, PASS — brain unavailable, not trading blind.  
+  CA `5LDowscYVD3a6ZS4m8gCqG5nU16eLTwRXhciFi1bpump`
 - 12:28Z Unemployed (MIGRATED, $101,770 mcap, $46,523 5m vol): PASS, PASS — brain unavailable, not trading blind.  
   CA `FJ3eLHQJqq8NsVkUyQmj5jSJJXvdf1ZiP2YMdEWUpump`
 - 12:23Z Scamsem (DIP, $73,463 mcap, $2,234 5m vol): PASS, PASS — brain unavailable, not trading blind.  
@@ -90,12 +96,6 @@ Updated 2026-11-24T12:39:55Z (paper trading, never real money)
   CA `5LDowscYVD3a6ZS4m8gCqG5nU16eLTwRXhciFi1bpump`
 - 11:54Z SHHFT (MIGRATED, $95,641 mcap, $47,806 5m vol): REJECT, Dev holds 3.0% (>1%) (V13, V17)  
   CA `GqMg4TRt5U5HRK6oeZYwCF1Jz7Ym9MSzWSoFCtFsbzf6`
-- 11:52Z Bear (FINAL_STRETCH, $15,967 mcap, $3,912 5m vol): REJECT, RugCheck danger: Creator history of rugged tokens  
-  CA `7Xj8duDuRsFHxAMchLZ2XBs7DcJE3h1KGosd3ms2pump`
-- 11:51Z JENSEN (MIGRATED, $249,862 mcap, $7,458 5m vol): REJECT, Top 10 hold 25.6% ex-pool (>25%) (V13)  
-  CA `HKiMA2mKQHU2cjfZ4Kbmru5GBGCauSNqPtpu8cfmpump`
-- 11:40Z FoolCoin (MIGRATED, $36,916 mcap, $2,318 5m vol): PASS at conviction 3, PASS — a -91% hourly-low bounce with no printed higher low, a joke-name theme at 0.84x pace across 14 copies, and a 7.6% single bundle. Farm bounce until proven otherwise (V1, V3, V6).  
-  CA `8RKV9GyNmhQAVaKVEYK9tBMWkJy7BAJ5JpXAsSV8pump`
 
 ## What its skips did next (last 48h)
 A skip "ran" if the coin reached the first target (1.5x) from the skip price before a 20% drop, "dumped" if the drop came first. Sampled every 10 min, followed 6h.
@@ -139,17 +139,17 @@ A skip "ran" if the coin reached the first target (1.5x) from the skip price bef
     CA `BqekG1RSPUthaKfStu7Uvyvr1eR6TchrQMp1M5r5pump`
   - ran: RUGSEM up to 1.54x  
     CA `9cDnmLRDWeJzcpyw8tSFAT7HS4Aunx6MmZWjMfrzpump`
-- dev share over 1%: blocked 12, ran 1, dumped 8, flat 3, open 0 (saving losses: keep it)
-  - ran: BLOOM up to 2.09x  
-    CA `FyRXnHLBSeHHoigrgHR1hvcXiPbPCa5bxhVhEDampump`
-- brain paced: blocked 11, ran 4, dumped 5, flat 0, open 2 (mixed)
+- brain paced: blocked 14, ran 5, dumped 5, flat 0, open 4 (mixed)
   - ran: FOAM up to 1.98x  
     CA `2MdCPWNFufmJSZhajSvi1yqBFTB24GQ4ipjNcB8Vpump`
   - ran: MCAT up to 2.52x  
     CA `BzPyyYCTmQNq2BcfQ4ANAvCYk54rnmQEXMFvFT8RhWMi`
   - ran: DELULU up to 1.57x  
     CA `A37ozuu1D1pP1cM27y1HYkSArVQbgsZNN7Va74yNpump`
-- bundles over the line: blocked 10, ran 1, dumped 4, flat 4, open 1 (saving losses: keep it)
+- dev share over 1%: blocked 11, ran 1, dumped 7, flat 3, open 0 (saving losses: keep it)
+  - ran: BLOOM up to 2.09x  
+    CA `FyRXnHLBSeHHoigrgHR1hvcXiPbPCa5bxhVhEDampump`
+- bundles over the line: blocked 10, ran 1, dumped 5, flat 4, open 0 (saving losses: keep it)
   - ran: RNV up to 2.35x  
     CA `A2nbXtQvvRMvWtifCkV8cYepwcC4M7iA1jVMwAh6pump`
 - falling knife / no higher low: blocked 10, ran 3, dumped 6, flat 0, open 1 (saving losses: keep it)
@@ -199,13 +199,13 @@ Nothing has a positive after-cost edge yet. All 229 settled coins average -8.7% 
 Nothing in this scan is a setup. No mover clears the $10k 5-minute volume bar; the best are BULLSHIT at $6.2k and scamsem at $5.6k, and 1h volume is mostly well above 5m, so the flow is fading. Two themes repeat in the raw rows: self-aware scam and joke names (scamsem and its pumpswap twin RUGSEM, Key Opinion Loser, Bull Shit), which are fading, and Claude-named coins (CLAUDIO at $97k, SUPER CLAUDIA INU at $29k) on thin 5m with 63-69% buys, which are early and unproven. Trump and Jensen names are fading: JENSEN does $1.5k 5m on a $499k cap and DONJENSEN $3.3k on $2.1M, which matches the record-low headlines. The crawler's summary is wrong on several rows. scamsem is $57k cap and $5.6k 5m (not $90k and $13.7k), UCASH is $75k and $4.8k, JENSEN is $499k and $1.5k, and "the black" is a $2.5k cap with $17 of 5m volume and 20% buys, so none of them qualify and the black's +146% claim is not in the data. Watch CLAUDIO and scamsem for 5m volume to clear $10k; BULLSHIT is pump.fun new-pair territory and I'm not chasing it. Holder, dev and bundle checks were not run on any of these coins, so this is a volume read only.
 
 ## Moving most in its scans, last 30 min (1h volume)
+- DUVAL: $572,556 1h vol, $306,400 mcap, +54% 1h  
+  CA `7fmD1p3jzva28EPP9bPqbDoxZGj5j398yJoE3EVypump`
 - Unemployed: $252,468 1h vol, $102,468 mcap, +257% 1h  
   CA `FJ3eLHQJqq8NsVkUyQmj5jSJJXvdf1ZiP2YMdEWUpump`
-- Bear: $46,889 1h vol, $2,336 mcap, -76% 1h  
+- SHHFT: $152,446 1h vol, $110,348 mcap, +280% 1h  
+  CA `GqMg4TRt5U5HRK6oeZYwCF1Jz7Ym9MSzWSoFCtFsbzf6`
+- DONJENSEN: $48,090 1h vol, $2,173,569 mcap, +3% 1h  
+  CA `5LDowscYVD3a6ZS4m8gCqG5nU16eLTwRXhciFi1bpump`
+- Bear: $42,902 1h vol, $2,369 mcap, -83% 1h  
   CA `7Xj8duDuRsFHxAMchLZ2XBs7DcJE3h1KGosd3ms2pump`
-- BITEFLY: $37,542 1h vol, $36,388 mcap, +22% 1h  
-  CA `FKYYhVAo9RnfBCrtn7wp2meexQ8xUWXSjRgMrJgkpump`
-- FoolCoin: $32,819 1h vol, $17,171 mcap, -25% 1h  
-  CA `8RKV9GyNmhQAVaKVEYK9tBMWkJy7BAJ5JpXAsSV8pump`
-- callmaps: $25,638 1h vol, $8,623 mcap, +4% 1h  
-  CA `CALLY1eAdyfn33E6g3dBhdT7MUBEckLCMdNBX3QvMAPS`
