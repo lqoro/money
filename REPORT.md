@@ -1,13 +1,13 @@
 # Trencher live report
 
-Updated 2026-11-24T06:51:54Z (paper trading, never real money)
+Updated 2026-11-24T07:07:00Z (paper trading, never real money)
 
 - Equity: $74.23 (-25.8% vs $100 start)
 - Closed trades: 22, 3 wins
 - Fees paid: $14.78 (axiom $2.81, network $9.18, pool $2.66), plus $4.15 lost to slippage
 - New trades: WATCH-ONLY (scans and decides, buys nothing)
-- Brain: subscription, claude-haiku-5-5 for routine calls, claude-opus-5-5 for the daily review; 474 routine calls and 0 plan-limit hits in 48h
-- Watch log: 86 coins being followed, 3203 filed, 0 would-buys (6h follow, sampled every 2 min)
+- Brain: subscription, claude-haiku-5-5 for routine calls, claude-opus-5-5 for the daily review; 475 routine calls and 0 plan-limit hits in 48h
+- Watch log: 84 coins being followed, 3208 filed, 0 would-buys (6h follow, sampled every 2 min)
 
 ## Scorecard (after fees)
 - 22 closed, 3 won (14%), net $-25.79
@@ -73,9 +73,15 @@ Updated 2026-11-24T06:51:54Z (paper trading, never real money)
   CA `H4gHnZ3NCU7Z9XQwGX6YYJNyieGEW8pqwGRUcdSxpump`
 
 ## Last scan
-- 06:50Z: 2 coins, 2 with pairs, 0 passed the market filters, 0 researched
+- 07:06Z: 4 coins, 4 with pairs, 0 passed the market filters, 0 researched
 
 ## Coins it looked at, and why it passed
+- 07:04Z survive (FINAL_STRETCH, $24,966 mcap, $2,191 5m vol): PASS at conviction 2, PASS: chasing spike. Price is 3% off a high it printed 6 minutes ago, after a roughly 2x bounce in about 30 minutes, with no printed higher low and $2.2k of 5m volume. Blocker: "chasing spike" (V1, V6).  
+  CA `EaiNiPA791st8dtYYuRKqU4M2wetyRdRzk5K2VT1pump`
+- 07:00Z UCASH (MIGRATED, $154,121 mcap, $3,818 5m vol): PASS at conviction 2, PASS: 96% off a $3.8M peak, 5m flow at 0.87x pace, no higher low, and no story on the radar. Umbra Cash is a 1.8-day-old site with no GitHub. Not a bottom buy. (V1, V6, V13)  
+  CA `7cFiqdT46zs7ooHWLFiLSaSQKLMibtokh9dBinsspump`
+- 06:54Z JENSEN (MIGRATED, $444,552 mcap, $3,208 5m vol): REJECT, Top 10 hold 25.6% ex-pool (>25%) (V13)  
+  CA `HKiMA2mKQHU2cjfZ4Kbmru5GBGCauSNqPtpu8cfmpump`
 - 06:40Z ORBLUX (MIGRATED, $81,837 mcap, $19,617 5m vol): PASS at conviction 3, PASS: privacy-agent LARP on a 1-day-old domain, theme flow at 0.98x pace, no catalyst. The chart structure is clean, the story isn't (V1, V3, V6).  
   CA `5KDyvAjSU8HWofZfVnpkdY2N4UM1R2jxUkLupYmgpump`
 - 06:36Z DONJENSEN (MIGRATED, $1,931,197 mcap, $6,813 5m vol): PASS at conviction 2, PASS: fan-meme on a fading Jensen theme. Theme pace 0.08x, sellers 549 vs buyers 487 on 5m, no printed higher low, 5m $6.8k under $10k. Blocker: "dead story" plus "no breakout". Copycats, not a buy. (V1, V13)  
@@ -90,12 +96,6 @@ Updated 2026-11-24T06:51:54Z (paper trading, never real money)
   CA `5KDyvAjSU8HWofZfVnpkdY2N4UM1R2jxUkLupYmgpump`
 - 05:50Z DONJENSEN (MIGRATED, $2,185,718 mcap, $3,776 5m vol): PASS at conviction 2, PASS. Chasing a Jensen copy at 8% off the high, on sell-heavy flow, in a dying meta. Blocker: "chasing" (V1, V6).  
   CA `5LDowscYVD3a6ZS4m8gCqG5nU16eLTwRXhciFi1bpump`
-- 05:44Z JOEY (FINAL_STRETCH, $19,388 mcap, $31,389 5m vol): PASS at conviction 2, PASS: JOEY is six minutes old, up 701% on the 5m at 12x its hourly pace, with no X, no socials and eleven copies of the name. That's a spike, not a pullback (V1, V6, V13).  
-  CA `GoUMWxBvgnSD8tGSzSSjqXi1RR252dPYiwzXdxdvpump`
-- 05:37Z GROKIA (MIGRATED, $2,408,710 mcap, $6,220 5m vol): PASS at conviction 3, PASS — the prior high is only 1.28x away, 5m flow is 0.9x pace, and the site still says pre-launch with the CA "TBA." Saw-tooth chart on an AI character with no GitHub. (V1, V3, V6, V13)  
-  CA `3cL47ohWa2HApLYKtqPsqkjaxJ6HLvT5Ri1KvWdXpump`
-- 05:29Z UCASH (MIGRATED, $154,282 mcap, $3,581 5m vol): PASS at conviction 2, PASS: flow below pace (0.4x) on a coin 96% off its $3.8M peak, with a 1.7-day-old domain and no GitHub. This is a falling knife, not a DIP (V1, V6, V13).  
-  CA `7cFiqdT46zs7ooHWLFiLSaSQKLMibtokh9dBinsspump`
 
 ## What its skips did next (last 48h)
 A skip "ran" if the coin reached the first target (1.5x) from the skip price before a 20% drop, "dumped" if the drop came first. Sampled every 10 min, followed 6h.
@@ -106,7 +106,7 @@ A skip "ran" if the coin reached the first target (1.5x) from the skip price bef
     CA `5eiLc9r79PkJquiFvYWdXJYtGNRjTpzot8MR7Z4Ppump`
   - ran: Hold up to 1.62x  
     CA `8J7yeYsBzozSQ67Ji4kpun2gdfTFp8o9g6rNkYR3pump`
-- near the high / chasing: blocked 38, ran 7, dumped 28, flat 1, open 2 (saving losses: keep it)
+- near the high / chasing: blocked 38, ran 7, dumped 27, flat 2, open 2 (saving losses: keep it)
   - ran: Bertcoin up to 1.8x  
     CA `xEK58Qa2xZ7C36Z2g3Jjq1WHY561CvvnJkLpgJspump`
   - ran: WOFL up to 2.62x  
@@ -134,7 +134,7 @@ A skip "ran" if the coin reached the first target (1.5x) from the skip price bef
     CA `A2jLaCC7v3VjXP8gEgCQNbTWEvizYuQ82jFEYfzipump`
   - ran: JENSEN up to 1.7x  
     CA `CjPoozfB2Vub8pHFvdKuKUGJDLWuYC2U32yRTxMhpump`
-- thin 5m volume: blocked 14, ran 1, dumped 10, flat 1, open 2 (saving losses: keep it)
+- thin 5m volume: blocked 13, ran 1, dumped 9, flat 2, open 1 (saving losses: keep it)
   - ran: NINO up to 1.55x  
     CA `BqekG1RSPUthaKfStu7Uvyvr1eR6TchrQMp1M5r5pump`
 - dev share over 1%: blocked 11, ran 1, dumped 7, flat 3, open 0 (saving losses: keep it)
@@ -197,11 +197,11 @@ The trenches are running animals and absurd names, not the news. Hippos (Fiona, 
 ## Moving most in its scans, last 30 min (1h volume)
 - ORBLUX: $236,162 1h vol, $57,498 mcap, +14% 1h  
   CA `5KDyvAjSU8HWofZfVnpkdY2N4UM1R2jxUkLupYmgpump`
-- Blazely: $108,588 1h vol, $31,538 mcap, +9% 1h  
-  CA `GxHr6tdvmMmih5fUU6fgAiJa6vnVwDbnCUFDN7vh3964`
-- Europa: $99,308 1h vol, $2,533 mcap, +4% 1h  
-  CA `CmjYpgu6rSqRYLBubMAoNstTgU918rFfQs3UoGk5pump`
-- TIMMY: $81,257 1h vol, $7,164 mcap, +102% 1h  
+- TIMMY: $97,451 1h vol, $6,036 mcap, +70% 1h  
   CA `5PjUUcKcjEg8ib5Rmc7kuhHKKKxRLRtHZVS8NfRBpump`
-- Fiona: $60,228 1h vol, $8,090 mcap, -52% 1h  
-  CA `AQknP6fEGQe6GUYn8V7ToHj9jo6Cc4A1tJ7XJk2fpump`
+- UCASH: $53,221 1h vol, $151,439 mcap, +13% 1h  
+  CA `7cFiqdT46zs7ooHWLFiLSaSQKLMibtokh9dBinsspump`
+- SOLA: $36,833 1h vol, $9,598 mcap, +310% 1h  
+  CA `4VXzZBmMgzaxmfaFbadhZU4zvNF3L3eAXVpRdZ64pump`
+- JENSEN: $36,606 1h vol, $464,689 mcap, +9% 1h  
+  CA `HKiMA2mKQHU2cjfZ4Kbmru5GBGCauSNqPtpu8cfmpump`
