@@ -1,13 +1,13 @@
 # Trencher live report
 
-Updated 2026-11-24T22:00:35Z (paper trading, never real money)
+Updated 2026-11-24T22:15:44Z (paper trading, never real money)
 
 - Equity: $74.23 (-25.8% vs $100 start)
 - Closed trades: 22, 3 wins
 - Fees paid: $14.78 (axiom $2.81, network $9.18, pool $2.66), plus $4.15 lost to slippage
 - New trades: WATCH-ONLY (scans and decides, buys nothing)
-- Brain: subscription, claude-haiku-5-5 for routine calls, claude-opus-5-5 for the daily review; 519 routine calls and 0 plan-limit hits in 48h
-- Watch log: 75 coins being followed, 3379 filed, 0 would-buys (6h follow, sampled every 2 min)
+- Brain: subscription, claude-haiku-5-5 for routine calls, claude-opus-5-5 for the daily review; 517 routine calls and 0 plan-limit hits in 48h
+- Watch log: 72 coins being followed, 3382 filed, 0 would-buys (6h follow, sampled every 2 min)
 
 ## Scorecard (after fees)
 - 22 closed, 3 won (14%), net $-25.79
@@ -73,7 +73,7 @@ Updated 2026-11-24T22:00:35Z (paper trading, never real money)
   CA `H4gHnZ3NCU7Z9XQwGX6YYJNyieGEW8pqwGRUcdSxpump`
 
 ## Last scan
-- 22:00Z: 3 coins, 3 with pairs, 0 passed the market filters, 0 researched
+- 22:14Z: 2 coins, 2 with pairs, 0 passed the market filters, 0 researched
 
 ## Coins it looked at, and why it passed
 - 21:57Z SCRAP (FINAL_STRETCH, $24,743 mcap, $17,401 5m vol): REJECT, Dev holds 1.4% (>1%) (V13, V17)  
@@ -106,20 +106,20 @@ A skip "ran" if the coin reached the first target (1.5x) from the skip price bef
     CA `GaNJeASYBM9k3TvEeUC2Pdyu1TjcpzTmPpoom92fpump`
   - ran: GOAT up to 1.53x  
     CA `5Ze97VEpX3EdRF4vbsxUXTdwGKF2qHGregrxToWEpump`
-- brain paced: blocked 34, ran 10, dumped 19, flat 1, open 4 (mixed)
+- brain paced: blocked 34, ran 10, dumped 20, flat 1, open 3 (saving losses: keep it)
   - ran: Scamsem up to 1.56x  
     CA `5JWeGmA9z6yHd5F9P6B23A8wthho8BpZuDmQv5DfLoat`
   - ran: RUGSEM up to 1.5x  
     CA `9cDnmLRDWeJzcpyw8tSFAT7HS4Aunx6MmZWjMfrzpump`
   - ran: SHHFT up to 1.61x  
     CA `GqMg4TRt5U5HRK6oeZYwCF1Jz7Ym9MSzWSoFCtFsbzf6`
-- too new / sniping: blocked 34, ran 4, dumped 29, flat 1, open 0 (saving losses: keep it)
-  - ran: VEST up to 2.65x  
-    CA `5ajKDjnprQhAZb7psoUbDSdqocaQJgnWySLTmH8ppump`
+- too new / sniping: blocked 32, ran 3, dumped 28, flat 1, open 0 (saving losses: keep it)
   - ran: Loaf up to 2.13x  
     CA `8Ugc1FHaeK6iXQrnUpztxhhNHqucFwaqC35A4Kjjpump`
   - ran: AGI up to 1.53x  
     CA `7kctwFbSdLfpi6RuN9cjpVpYVHKPUr8PtG1meH35AEky`
+  - ran: TREMP up to 1.7x  
+    CA `CuNLbjjFcmumcKF1AnUkPU4dcjykJR73M8hzJB5Cpump`
 - flow below pace: blocked 31, ran 7, dumped 24, flat 0, open 0 (saving losses: keep it)
   - ran: OpenIndex up to 1.63x  
     CA `FuKY3dk7QmpbDdQRjzbjB3G6PiCuqKNvN4dAWDpwpump`
@@ -134,7 +134,7 @@ A skip "ran" if the coin reached the first target (1.5x) from the skip price bef
     CA `AdXjXfumPSSKk7PrfgDHcAsPvuxnKv7Zo9WZEWKbiDkh`
   - ran: Phil up to 2.05x  
     CA `GMLSyjZCKGtFwztp2mtT8PDeNUA6WEk7oQoe3QkFpump`
-- RugCheck danger: blocked 21, ran 5, dumped 16, flat 0, open 0 (saving losses: keep it)
+- RugCheck danger: blocked 20, ran 5, dumped 15, flat 0, open 0 (saving losses: keep it)
   - ran: Holdsgiving up to 2.96x  
     CA `A2jLaCC7v3VjXP8gEgCQNbTWEvizYuQ82jFEYfzipump`
   - ran: JENSEN up to 1.7x  
@@ -199,13 +199,13 @@ Nothing has a positive after-cost edge yet. All 229 settled coins average -8.7% 
 Nothing in this scan is a setup. No mover clears the $10k 5-minute volume bar; the best are BULLSHIT at $6.2k and scamsem at $5.6k, and 1h volume is mostly well above 5m, so the flow is fading. Two themes repeat in the raw rows: self-aware scam and joke names (scamsem and its pumpswap twin RUGSEM, Key Opinion Loser, Bull Shit), which are fading, and Claude-named coins (CLAUDIO at $97k, SUPER CLAUDIA INU at $29k) on thin 5m with 63-69% buys, which are early and unproven. Trump and Jensen names are fading: JENSEN does $1.5k 5m on a $499k cap and DONJENSEN $3.3k on $2.1M, which matches the record-low headlines. The crawler's summary is wrong on several rows. scamsem is $57k cap and $5.6k 5m (not $90k and $13.7k), UCASH is $75k and $4.8k, JENSEN is $499k and $1.5k, and "the black" is a $2.5k cap with $17 of 5m volume and 20% buys, so none of them qualify and the black's +146% claim is not in the data. Watch CLAUDIO and scamsem for 5m volume to clear $10k; BULLSHIT is pump.fun new-pair territory and I'm not chasing it. Holder, dev and bundle checks were not run on any of these coins, so this is a volume read only.
 
 ## Moving most in its scans, last 30 min (1h volume)
-- DUMBMONEY: $410,653 1h vol, $7,347 mcap, -99% 1h  
-  CA `GEHehS5Rr4rNCjvrHLjjV1avD4bjMsn53ywDGv1spump`
 - SPECS: $156,648 1h vol, $16,382 mcap, +210% 1h  
   CA `29SS1KJnthUqk8JhW13bvju6JWkeCAXafQY4XP8Epump`
-- Squirrel: $119,068 1h vol, $339,039 mcap, +788% 1h  
-  CA `CkwFr1G8EPLLJSnp84PmwjEDRG4yA7bGJvRxRTx5pump`
-- goldcoin: $73,231 1h vol, $10,110 mcap, -77% 1h  
+- goldcoin: $140,068 1h vol, $28,599 mcap, -35% 1h  
   CA `Cp6i5Ka8Gwzzn537KoqLyjQCFX6QBfoAC9WuxEbQpump`
+- WISH: $128,380 1h vol, $11,450 mcap, -57% 1h  
+  CA `7bQL4aLYyFXPLXXngC8xmxLx6keZVfyfQcP3diU1pump`
+- JOEY: $99,439 1h vol, $28,663 mcap, +27% 1h  
+  CA `CR4Tks2HjJkKVQQVDmKU41qW7iEaEBh1RRExdTRMpump`
 - SCRAP: $68,061 1h vol, $24,631 mcap, +670% 1h  
   CA `BTbP7QckBbsEqnkynYF4BcmAz8CQAnxYsuPHbtXYpump`
