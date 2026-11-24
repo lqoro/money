@@ -1,13 +1,13 @@
 # Trencher live report
 
-Updated 2026-11-24T01:49:09Z (paper trading, never real money)
+Updated 2026-11-24T02:04:14Z (paper trading, never real money)
 
 - Equity: $74.23 (-25.8% vs $100 start)
 - Closed trades: 22, 3 wins
 - Fees paid: $14.78 (axiom $2.81, network $9.18, pool $2.66), plus $4.15 lost to slippage
 - New trades: WATCH-ONLY (scans and decides, buys nothing)
 - Brain: subscription, claude-haiku-5-5 for routine calls, claude-opus-5-5 for the daily review; 470 routine calls and 0 plan-limit hits in 48h
-- Watch log: 109 coins being followed, 3111 filed, 0 would-buys (6h follow, sampled every 2 min)
+- Watch log: 106 coins being followed, 3117 filed, 0 would-buys (6h follow, sampled every 2 min)
 
 ## Scorecard (after fees)
 - 22 closed, 3 won (14%), net $-25.79
@@ -73,9 +73,15 @@ Updated 2026-11-24T01:49:09Z (paper trading, never real money)
   CA `H4gHnZ3NCU7Z9XQwGX6YYJNyieGEW8pqwGRUcdSxpump`
 
 ## Last scan
-- 01:48Z: 6 coins, 6 with pairs, 0 passed the market filters, 0 researched
+- 02:03Z: 6 coins, 6 with pairs, 0 passed the market filters, 0 researched
 
 ## Coins it looked at, and why it passed
+- 02:02Z GTS1 (MIGRATED, $56,497 mcap, $44,048 5m vol): PASS at conviction 3, PASS: chasing spike. GTS1 is up 59% on 5m, 11 minutes old, in a 12-copy vamp field, with no printed higher low. (V1, V6)  
+  CA `4R5rnh1KFL33ZnDoADAdLMXgQbKQm2X9R7rZT1Kcpump`
+- 01:56Z Mogmas (MIGRATED, $35,186 mcap, $4,333 5m vol): PASS at conviction 2, PASS. Mogmas is a 26-copy holiday theme with 1,511 sells against 463 buys in the last hour, no printed higher low, and no catalyst. Blocker: no catalyst, narrative not rising. (V1, V6, V13)  
+  CA `Cocrz7BR2xE2sgKn3VbmaTXH6HTVgCiVFWTVWmyTpump`
+- 01:52Z CLAUDIO (MIGRATED, $1,775,473 mcap, $95,809 5m vol): REJECT, RugCheck danger: Single holder ownership 50.66%  
+  CA `5St93zSNQvWxK22Cj5mJBXcjUNNB452h5uNmrttSpump`
 - 01:46Z HUSS (DIP, $76,699 mcap, $2,923 5m vol): REJECT, Top 10 hold 28.6% ex-pool (>25%) (V13)  
   CA `3umHFkiMHyphCkLxtbf8Aabie8r5hxn86QeBAovTpump`
 - 01:46Z JENSEN (MIGRATED, $99,349 mcap, $39,977 5m vol): PASS at conviction 3, PASS: chasing spike, too new, no higher low. The Elon tweet link is not a buy reason (V1).  
@@ -90,29 +96,16 @@ Updated 2026-11-24T01:49:09Z (paper trading, never real money)
   CA `7cFiqdT46zs7ooHWLFiLSaSQKLMibtokh9dBinsspump`
 - 01:40Z Jesus (MIGRATED, $277,485 mcap, $7,007 5m vol): PASS at conviction 3, PASS: chasing a +749% hour, 5m flow at 0.32x pace, and no printed higher low. Blow-off, not a pullback (V1, V6).  
   CA `Gy5BUDnpJMWRsNVKh9sRtsBGunFXKKrbroQRoydQpump`
-- 01:33Z JENSEN (DIP, $580,859 mcap, $2,269 5m vol): REJECT, Top 10 hold 25.6% ex-pool (>25%) (V13)  
-  CA `HKiMA2mKQHU2cjfZ4Kbmru5GBGCauSNqPtpu8cfmpump`
-- 01:28Z FIONA (MIGRATED, $3,327,828 mcap, $27,633 5m vol): REJECT, Bundles: 10 linked wallet cluster(s) hold 27.6% of supply (>20%) (V17)  
-  CA `B34nXKzCgsJb9ChLuSHPRpXLE3WFSWyeT8Cqkzzmpump`
-- 01:20Z STACK (MIGRATED, $54,906 mcap, $34,365 5m vol): REJECT, Dev holds 1.0% (>1%) (V13, V17)  
-  CA `gzYHA8qjtFd76w58fEyn7knMdhedzdQuzmmAruwpump`
 
 ## What its skips did next (last 48h)
 A skip "ran" if the coin reached the first target (1.5x) from the skip price before a 20% drop, "dumped" if the drop came first. Sampled every 10 min, followed 6h.
-- too new / sniping: blocked 43, ran 7, dumped 33, flat 0, open 3 (saving losses: keep it)
+- too new / sniping: blocked 44, ran 8, dumped 33, flat 0, open 3 (saving losses: keep it)
   - ran: KYC up to 2.37x  
     CA `47YCrfUmSQUF9vnPsPGSzrmTcxttdRAWejCMkhrrpump`
   - ran: Wojak up to 4.29x  
     CA `5eiLc9r79PkJquiFvYWdXJYtGNRjTpzot8MR7Z4Ppump`
   - ran: Hold up to 1.62x  
     CA `8J7yeYsBzozSQ67Ji4kpun2gdfTFp8o9g6rNkYR3pump`
-- near the high / chasing: blocked 34, ran 4, dumped 27, flat 1, open 2 (saving losses: keep it)
-  - ran: SANTA up to 1.85x  
-    CA `tZsjFu2CH1R23wEpbfXAYGc2KUaVrUbwofCNNNqpump`
-  - ran: Bertcoin up to 1.8x  
-    CA `xEK58Qa2xZ7C36Z2g3Jjq1WHY561CvvnJkLpgJspump`
-  - ran: WOFL up to 2.62x  
-    CA `AdXjXfumPSSKk7PrfgDHcAsPvuxnKv7Zo9WZEWKbiDkh`
 - flow below pace: blocked 33, ran 6, dumped 25, flat 0, open 2 (saving losses: keep it)
   - ran: snowball up to 1.59x  
     CA `3D7YQcnXi6RMjWxheiE8VLuGXJTtgQkmyugGYvzjpump`
@@ -120,6 +113,13 @@ A skip "ran" if the coin reached the first target (1.5x) from the skip price bef
     CA `FuKY3dk7QmpbDdQRjzbjB3G6PiCuqKNvN4dAWDpwpump`
   - ran: hCAT up to 1.52x  
     CA `2FYs4vApfj4ErsggpFDfzMv1WvxnyiLtzNEj84mS6TLh`
+- near the high / chasing: blocked 33, ran 4, dumped 26, flat 1, open 2 (saving losses: keep it)
+  - ran: SANTA up to 1.85x  
+    CA `tZsjFu2CH1R23wEpbfXAYGc2KUaVrUbwofCNNNqpump`
+  - ran: Bertcoin up to 1.8x  
+    CA `xEK58Qa2xZ7C36Z2g3Jjq1WHY561CvvnJkLpgJspump`
+  - ran: WOFL up to 2.62x  
+    CA `AdXjXfumPSSKk7PrfgDHcAsPvuxnKv7Zo9WZEWKbiDkh`
 - top 10 over 25%: blocked 28, ran 4, dumped 19, flat 1, open 4 (saving losses: keep it)
   - ran: GIF up to 2.16x  
     CA `B6wM98qkQKP71mhPA48S7No6TxM4KaXdFojDTZeUpump`
@@ -127,7 +127,7 @@ A skip "ran" if the coin reached the first target (1.5x) from the skip price bef
     CA `DnbQKi146NDmwwji3f3q5i68HQnYyBEhoDyj2q3Npump`
   - ran: JENSEN up to 2.62x  
     CA `GaNJeASYBM9k3TvEeUC2Pdyu1TjcpzTmPpoom92fpump`
-- RugCheck danger: blocked 21, ran 7, dumped 14, flat 0, open 0 (saving losses: keep it)
+- RugCheck danger: blocked 21, ran 6, dumped 14, flat 0, open 1 (saving losses: keep it)
   - ran: MIHAOMAS up to 1.62x  
     CA `3XsFunPdji9U1EgJXokZysw8SB3t74un89b6KLEVpump`
   - ran: Holdsgiving up to 2.96x  
@@ -139,7 +139,7 @@ A skip "ran" if the coin reached the first target (1.5x) from the skip price bef
     CA `FyRXnHLBSeHHoigrgHR1hvcXiPbPCa5bxhVhEDampump`
   - ran: STACK up to 1.89x  
     CA `gzYHA8qjtFd76w58fEyn7knMdhedzdQuzmmAruwpump`
-- falling knife / no higher low: blocked 12, ran 2, dumped 7, flat 2, open 1 (saving losses: keep it)
+- falling knife / no higher low: blocked 12, ran 2, dumped 6, flat 2, open 2 (saving losses: keep it)
   - ran: Fly up to 1.52x  
     CA `84tAcSK5L9kuQEVM8C8vMHXnfdA83nGBT2nYfSbPUcAc`
   - ran: hCAT up to 1.52x  
@@ -199,13 +199,13 @@ Nothing has a positive after-cost edge yet. All 229 settled coins average -8.7% 
 Not quiet, but it's a launch-style tape: most movers are under two hours old, and the copies die fast (TIMOTHY -98% on $2 of 5m volume, JENSEN "The Green Bull" -96% with zero 5m volume, Tribe -99.6%, GOLDSOL -80%) (V1, V13). Two themes have live flow in the raw rows. Hippos: FIONA is still the original at $3.25M mcap with $77k 5m volume and 58% buys, but it's flat at +10% 1h, so the copy died and the original is cooling. GPU/chip/AI: GPU Jesus is the loudest (+546% 1h, $58k 5m, 87% buys, about 12 minutes old), with RIVA128 (chip) and DMIND (DeFiMind) riding the same Nvidia/Jensen Huang headlines on much thinner volume. "Jensen Is Back" ($808k, flat) is the only older Jensen coin still trading. Thanksgiving, Christmas and the Trump dinner don't appear in the raw movers (MOGMAS has 16% buys with sellers in control), so I'm not calling a holiday theme. Setups to research, no entries yet: FIONA as the original hippo, stop set first and probe size at most; GPU Jesus only if it holds after the blow-off, since chasing +546% in an hour is how you become exit liquidity (V6); DMIND and RIVA128 only as LARP checks (V1), since their volume is thin. Holder, dev and bundle checks run on each coin at research time. The crawler's THANKS, JENPE and TIMOTHY-at-$87k figures don't match the raw rows, so I scored raw only.
 
 ## Moving most in its scans, last 30 min (1h volume)
+- CLAUDIO: $1,604,941 1h vol, $1,784,877 mcap, +157% 1h  
+  CA `5St93zSNQvWxK22Cj5mJBXcjUNNB452h5uNmrttSpump`
 - CHIBI: $887,984 1h vol, $119,578 mcap, +334% 1h  
   CA `4ZgqnNi53sRKKegFpYefFjsFE6zQ3T64Xkavcoh7pump`
-- FIONA: $295,172 1h vol, $3,317,762 mcap, -13% 1h  
-  CA `B34nXKzCgsJb9ChLuSHPRpXLE3WFSWyeT8Cqkzzmpump`
 - Jesus: $267,551 1h vol, $271,664 mcap, +731% 1h  
   CA `Gy5BUDnpJMWRsNVKh9sRtsBGunFXKKrbroQRoydQpump`
 - UCASH: $194,098 1h vol, $1,176,863 mcap, -20% 1h  
   CA `7cFiqdT46zs7ooHWLFiLSaSQKLMibtokh9dBinsspump`
-- JENSEN: $148,465 1h vol, $99,349 mcap, +225% 1h  
-  CA `9vLdkMGZ9jbKAZZKrxVzShEBuafLkjB7UgHfNh3xpump`
+- GTS1: $180,489 1h vol, $49,833 mcap, +65% 1h  
+  CA `4R5rnh1KFL33ZnDoADAdLMXgQbKQm2X9R7rZT1Kcpump`
