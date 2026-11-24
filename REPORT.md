@@ -1,13 +1,13 @@
 # Trencher live report
 
-Updated 2026-11-24T04:20:29Z (paper trading, never real money)
+Updated 2026-11-24T04:35:43Z (paper trading, never real money)
 
 - Equity: $74.23 (-25.8% vs $100 start)
 - Closed trades: 22, 3 wins
 - Fees paid: $14.78 (axiom $2.81, network $9.18, pool $2.66), plus $4.15 lost to slippage
 - New trades: WATCH-ONLY (scans and decides, buys nothing)
 - Brain: subscription, claude-haiku-5-5 for routine calls, claude-opus-5-5 for the daily review; 472 routine calls and 0 plan-limit hits in 48h
-- Watch log: 114 coins being followed, 3152 filed, 0 would-buys (6h follow, sampled every 2 min)
+- Watch log: 109 coins being followed, 3159 filed, 0 would-buys (6h follow, sampled every 2 min)
 
 ## Scorecard (after fees)
 - 22 closed, 3 won (14%), net $-25.79
@@ -73,9 +73,13 @@ Updated 2026-11-24T04:20:29Z (paper trading, never real money)
   CA `H4gHnZ3NCU7Z9XQwGX6YYJNyieGEW8pqwGRUcdSxpump`
 
 ## Last scan
-- 04:19Z: 3 coins, 3 with pairs, 1 passed the market filters, 1 researched
+- 04:35Z: 3 coins, 3 with pairs, 0 passed the market filters, 0 researched
 
 ## Coins it looked at, and why it passed
+- 04:26Z Spidercow (FINAL_STRETCH, $24,090 mcap, $38,103 5m vol): PASS at conviction 3, PASS: chasing spike. Up 233% on 5m at 7x hourly pace, 18 copies in the field, no socials. Pre-bond at 82%, no story behind it (V1, V6, V13).  
+  CA `8EakoV8ox4RMK9R8r59X74iiK5bHLmYmgVyBeK29pump`
+- 04:20Z yippee (FINAL_STRETCH, $24,062 mcap, $11,498 5m vol): PASS at conviction 3, PASS — split crowd: "yippee" is one of 17 same-name copies sharing about $266k of 5m volume, its own 5m is $11.5k, and the radar has zero mentions. The website is a 0-day placeholder game page that doesn't show this CA (V3, V6).  
+  CA `3mTQnHtok9wnT7yDA1G9BfMh5xNbyQerYkpfTDyKpump`
 - 04:19Z DONJENSEN (MIGRATED, $1,720,149 mcap, $4,607 5m vol): PASS at conviction 2, PASS: flow below pace (5m at 0.28x hourly), no higher low, and the Jensen theme is bleeding. Falling knife at $1.7M. (V1, V6)  
   CA `5LDowscYVD3a6ZS4m8gCqG5nU16eLTwRXhciFi1bpump`
 - 04:05Z GROKIA (MIGRATED, $1,612,277 mcap, $35,065 5m vol): REJECT, RugCheck danger: Creator history of rugged tokens  
@@ -92,21 +96,17 @@ Updated 2026-11-24T04:20:29Z (paper trading, never real money)
   CA `HKiMA2mKQHU2cjfZ4Kbmru5GBGCauSNqPtpu8cfmpump`
 - 03:46Z NOCAP (FINAL_STRETCH, $14,800 mcap, $21,026 5m vol): PASS at conviction 3, PASS. Six-minute-old pump.fun coin, up 435% on 5m with zero buzz, and its site doesn't show its own CA. Chasing spike, no story (V1, V6).  
   CA `RZv3jrN6u1e2vCwTiJgRJwfnmyJaZqq48qkPz1xpump`
-- 03:34Z DONJENSEN (DIP, $863,904 mcap, $21,126 5m vol): REJECT, Dip with fading attention is a falling knife, not a dip (5m at 0.35x the hour's pace, under 0.6x)  
-  CA `5LDowscYVD3a6ZS4m8gCqG5nU16eLTwRXhciFi1bpump`
-- 03:28Z GOOBIE (MIGRATED, $42,088 mcap, $7,336 5m vol): PASS at conviction 3, PASS: flow below pace (0.88x hourly), no printed higher low, and it's a 25-copy goobie vamp field with no catalyst. Blocked by the bottom-buy rule too. (V1, V3, V6)  
-  CA `7B72JE9fgEiwGfpj3BuAMCC8NhtuyFbi7d9E8mWWpump`
 
 ## What its skips did next (last 48h)
 A skip "ran" if the coin reached the first target (1.5x) from the skip price before a 20% drop, "dumped" if the drop came first. Sampled every 10 min, followed 6h.
-- too new / sniping: blocked 40, ran 7, dumped 32, flat 1, open 0 (saving losses: keep it)
+- too new / sniping: blocked 39, ran 7, dumped 31, flat 1, open 0 (saving losses: keep it)
   - ran: KYC up to 2.37x  
     CA `47YCrfUmSQUF9vnPsPGSzrmTcxttdRAWejCMkhrrpump`
   - ran: Wojak up to 4.29x  
     CA `5eiLc9r79PkJquiFvYWdXJYtGNRjTpzot8MR7Z4Ppump`
   - ran: Hold up to 1.62x  
     CA `8J7yeYsBzozSQ67Ji4kpun2gdfTFp8o9g6rNkYR3pump`
-- near the high / chasing: blocked 36, ran 6, dumped 27, flat 1, open 2 (saving losses: keep it)
+- near the high / chasing: blocked 36, ran 6, dumped 26, flat 1, open 3 (saving losses: keep it)
   - ran: SANTA up to 1.85x  
     CA `tZsjFu2CH1R23wEpbfXAYGc2KUaVrUbwofCNNNqpump`
   - ran: Bertcoin up to 1.8x  
@@ -134,6 +134,9 @@ A skip "ran" if the coin reached the first target (1.5x) from the skip price bef
     CA `A2jLaCC7v3VjXP8gEgCQNbTWEvizYuQ82jFEYfzipump`
   - ran: JENSEN up to 1.7x  
     CA `CjPoozfB2Vub8pHFvdKuKUGJDLWuYC2U32yRTxMhpump`
+- thin 5m volume: blocked 13, ran 1, dumped 8, flat 1, open 3 (saving losses: keep it)
+  - ran: NINO up to 1.55x  
+    CA `BqekG1RSPUthaKfStu7Uvyvr1eR6TchrQMp1M5r5pump`
 - falling knife / no higher low: blocked 12, ran 3, dumped 7, flat 2, open 0 (saving losses: keep it)
   - ran: Fly up to 1.52x  
     CA `84tAcSK5L9kuQEVM8C8vMHXnfdA83nGBT2nYfSbPUcAc`
@@ -141,16 +144,13 @@ A skip "ran" if the coin reached the first target (1.5x) from the skip price bef
     CA `2FYs4vApfj4ErsggpFDfzMv1WvxnyiLtzNEj84mS6TLh`
   - ran: Mogmas up to 1.63x  
     CA `Cocrz7BR2xE2sgKn3VbmaTXH6HTVgCiVFWTVWmyTpump`
-- thin 5m volume: blocked 12, ran 1, dumped 8, flat 1, open 2 (saving losses: keep it)
-  - ran: NINO up to 1.55x  
-    CA `BqekG1RSPUthaKfStu7Uvyvr1eR6TchrQMp1M5r5pump`
 - dev share over 1%: blocked 11, ran 1, dumped 7, flat 3, open 0 (saving losses: keep it)
   - ran: BLOOM up to 2.09x  
     CA `FyRXnHLBSeHHoigrgHR1hvcXiPbPCa5bxhVhEDampump`
-- bundles over the line: blocked 10, ran 1, dumped 4, flat 2, open 3 (saving losses: keep it)
+- bundles over the line: blocked 10, ran 1, dumped 5, flat 2, open 2 (saving losses: keep it)
   - ran: RNV up to 2.35x  
     CA `A2nbXtQvvRMvWtifCkV8cYepwcC4M7iA1jVMwAh6pump`
-- falling knife (code): blocked 9, ran 2, dumped 5, flat 1, open 1 (saving losses: keep it)
+- falling knife (code): blocked 9, ran 2, dumped 6, flat 1, open 0 (saving losses: keep it)
   - ran: OpenIndex up to 1.63x  
     CA `FuKY3dk7QmpbDdQRjzbjB3G6PiCuqKNvN4dAWDpwpump`
   - ran: Fly up to 1.52x  
@@ -197,11 +197,11 @@ Meta is young and split. Animal/creature launches and AI/Grok/Jensen names are p
 ## Moving most in its scans, last 30 min (1h volume)
 - GROKIA: $451,802 1h vol, $1,613,177 mcap, +101% 1h  
   CA `3cL47ohWa2HApLYKtqPsqkjaxJ6HLvT5Ri1KvWdXpump`
-- JENSEN: $314,111 1h vol, $86,918 mcap, -69% 1h  
-  CA `9vLdkMGZ9jbKAZZKrxVzShEBuafLkjB7UgHfNh3xpump`
-- FATU: $267,817 1h vol, $8,778 mcap, -68% 1h  
-  CA `3reEjCbDFht7LnNdKncQ3vohYDbAMJWXkbzWLSNhpump`
-- Flatulence: $234,439 1h vol, $96,040 mcap, -54% 1h  
-  CA `Gq2AuvpacDeruqVRCqyZqZJJbDgYDXYDGxWQgWXhpump`
 - DONJENSEN: $207,154 1h vol, $1,747,319 mcap, +86% 1h  
   CA `5LDowscYVD3a6ZS4m8gCqG5nU16eLTwRXhciFi1bpump`
+- NOCAP: $158,194 1h vol, $5,670 mcap, -80% 1h  
+  CA `RZv3jrN6u1e2vCwTiJgRJwfnmyJaZqq48qkPz1xpump`
+- FATU: $139,298 1h vol, $5,236 mcap, -93% 1h  
+  CA `3reEjCbDFht7LnNdKncQ3vohYDbAMJWXkbzWLSNhpump`
+- yippee: $113,406 1h vol, $25,947 mcap, +1042% 1h  
+  CA `3mTQnHtok9wnT7yDA1G9BfMh5xNbyQerYkpfTDyKpump`
