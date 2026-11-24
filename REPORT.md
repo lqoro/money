@@ -1,13 +1,13 @@
 # Trencher live report
 
-Updated 2026-11-24T08:22:45Z (paper trading, never real money)
+Updated 2026-11-24T08:37:52Z (paper trading, never real money)
 
 - Equity: $74.23 (-25.8% vs $100 start)
 - Closed trades: 22, 3 wins
 - Fees paid: $14.78 (axiom $2.81, network $9.18, pool $2.66), plus $4.15 lost to slippage
 - New trades: WATCH-ONLY (scans and decides, buys nothing)
-- Brain: subscription, claude-haiku-5-5 for routine calls, claude-opus-5-5 for the daily review; 472 routine calls and 0 plan-limit hits in 48h
-- Watch log: 75 coins being followed, 3227 filed, 0 would-buys (6h follow, sampled every 2 min)
+- Brain: subscription, claude-haiku-5-5 for routine calls, claude-opus-5-5 for the daily review; 471 routine calls and 0 plan-limit hits in 48h
+- Watch log: 66 coins being followed, 3237 filed, 0 would-buys (6h follow, sampled every 2 min)
 
 ## Scorecard (after fees)
 - 22 closed, 3 won (14%), net $-25.79
@@ -73,9 +73,11 @@ Updated 2026-11-24T08:22:45Z (paper trading, never real money)
   CA `H4gHnZ3NCU7Z9XQwGX6YYJNyieGEW8pqwGRUcdSxpump`
 
 ## Last scan
-- 08:21Z: 2 coins, 2 with pairs, 0 passed the market filters, 0 researched
+- 08:37Z: 5 coins, 5 with pairs, 0 passed the market filters, 0 researched
 
 ## Coins it looked at, and why it passed
+- 08:31Z UCASH (MIGRATED, $147,605 mcap, $5,015 5m vol): PASS at conviction 2, PASS: 5m flow is at 0.65x pace, no higher low has printed, and the site is 1.8 days old with no GitHub, under a ticker that 10 copies share. Blocker: flow below pace. (V1, V3, V6, V13)  
+  CA `7cFiqdT46zs7ooHWLFiLSaSQKLMibtokh9dBinsspump`
 - 08:10Z coin (FINAL_STRETCH, $21,191 mcap, $5,708 5m vol): PASS at conviction 3, PASS: a generic ticker called "coin" with 5m flow at $5.7k, under the $10k bar, and 8 bigger same-ticker copies. Nothing here is a story. Blocker "thin 5m volume" (V1, V6, V13).  
   CA `4u7Set7EcDjHZKtDFaY5F7fHvp4J799R2ktZSU3Npump`
 - 08:08Z DONJENSEN (MIGRATED, $1,959,198 mcap, $3,340 5m vol): PASS at conviction 3, PASS: flow below pace, target too close, and $1.96M with no room. The Jensen story is fading and the CA isn't on its site. (V1, V6, V13)  
@@ -94,12 +96,10 @@ Updated 2026-11-24T08:22:45Z (paper trading, never real money)
   CA `5LDowscYVD3a6ZS4m8gCqG5nU16eLTwRXhciFi1bpump`
 - 07:18Z Satoshi (FINAL_STRETCH, $21,716 mcap, $51,280 5m vol): PASS at conviction 2, PASS: 5-minute spike of +615% on a 5-minute-old pump.fun coin in a 23-copy "satoshi" field, with no catalyst and a website that isn't this token's. Blocker: chasing spike / split crowd. (V1, V6)  
   CA `DXkCsXhXeh2xTfQ8Um8dicQcwseTfuHvDwriTcJLpump`
-- 07:09Z O2 (FINAL_STRETCH, $18,141 mcap, $16,474 5m vol): PASS at conviction 3, PASS: spike chase on a 14-minute-old copy in an 11-coin "oxygen" field, no printed higher low, no story behind it. Blocker: chasing spike (V1, V6, V13).  
-  CA `4gboevpfN1dEzjzDzFKinndqY5zYdCqenTyvStbnpump`
 
 ## What its skips did next (last 48h)
 A skip "ran" if the coin reached the first target (1.5x) from the skip price before a 20% drop, "dumped" if the drop came first. Sampled every 10 min, followed 6h.
-- too new / sniping: blocked 43, ran 7, dumped 34, flat 1, open 1 (saving losses: keep it)
+- too new / sniping: blocked 42, ran 8, dumped 33, flat 1, open 0 (saving losses: keep it)
   - ran: KYC up to 2.37x  
     CA `47YCrfUmSQUF9vnPsPGSzrmTcxttdRAWejCMkhrrpump`
   - ran: Wojak up to 4.29x  
@@ -147,7 +147,7 @@ A skip "ran" if the coin reached the first target (1.5x) from the skip price bef
     CA `2FYs4vApfj4ErsggpFDfzMv1WvxnyiLtzNEj84mS6TLh`
   - ran: Mogmas up to 1.63x  
     CA `Cocrz7BR2xE2sgKn3VbmaTXH6HTVgCiVFWTVWmyTpump`
-- bundles over the line: blocked 10, ran 1, dumped 5, flat 3, open 1 (saving losses: keep it)
+- bundles over the line: blocked 10, ran 1, dumped 5, flat 4, open 0 (saving losses: keep it)
   - ran: RNV up to 2.35x  
     CA `A2nbXtQvvRMvWtifCkV8cYepwcC4M7iA1jVMwAh6pump`
 - other: blocked 9, ran 3, dumped 6, flat 0, open 0 (saving losses: keep it)
@@ -197,13 +197,13 @@ Nothing has a positive after-cost edge yet. All 229 settled coins average -8.7% 
 Meta: the trenches are trading fresh, absurd-name pump.fun spikes right now, not the Trump-dinner news. The one cluster with real flow is sub-hour generic or joke names: "coin" (+861% 1h, $5.7k 5m, 71% buys), 4CHAN (+888% 1h, $9k 5m, 58% buys) and Satoshi (0.8h old, $59k cap, $33k 5m, 62% buys, +119% 1h). Fading: animal names (NAJIN -86% with $2 5m, TIMMY $75 5m), Claude names (Claudio $558 5m, flat), "survive" (-83%) and OXYGEN (-62%, $467 5m). The crawler's summary numbers for SOLA, OXYGEN, NAJIN and TIMMY don't match the raw rows, so I'm using the rows; the Jensen/Trump headlines have no matching flow (DONJENSEN flat at $3.3k 5m). Setups to research only: Satoshi (migrated-range, must clear holder, dev and bundle checks, initials at 2x, stop -30%) and 4CHAN (just under the $10k 5m floor, only if it clears). Pass on UCASH ($4.6k 5m) and SOLA ($2 5m). Not a quiet market, but the volume is concentrated in a few spikes that can die in minutes.
 
 ## Moving most in its scans, last 30 min (1h volume)
-- Satoshi: $390,979 1h vol, $59,495 mcap, +119% 1h  
-  CA `DXkCsXhXeh2xTfQ8Um8dicQcwseTfuHvDwriTcJLpump`
-- NOHR: $129,307 1h vol, $1,128,903 mcap, +47% 1h  
-  CA `Jd3NCawdFiDNWpLiTtsMqoeoBMjC1ZQMrMScRVzpump`
+- FoolCoin: $134,660 1h vol, $28,096 mcap, -7% 1h  
+  CA `8RKV9GyNmhQAVaKVEYK9tBMWkJy7BAJ5JpXAsSV8pump`
+- UCASH: $92,802 1h vol, $147,605 mcap, -45% 1h  
+  CA `7cFiqdT46zs7ooHWLFiLSaSQKLMibtokh9dBinsspump`
 - coin: $71,910 1h vol, $21,191 mcap, +861% 1h  
   CA `4u7Set7EcDjHZKtDFaY5F7fHvp4J799R2ktZSU3Npump`
 - DONJENSEN: $59,886 1h vol, $1,959,198 mcap, +8% 1h  
   CA `5LDowscYVD3a6ZS4m8gCqG5nU16eLTwRXhciFi1bpump`
-- SON: $32,553 1h vol, $2,041 mcap, -7% 1h  
-  CA `MphvzZcbmuRcq3Q99io5LzmatrqTDUL5N58am3npump`
+- 4CHAN: $47,594 1h vol, $8,805 mcap, -10% 1h  
+  CA `H5PF6hXxBwNzhWpgZx2y8YcG47naV5vHVS8gLnbUpump`
