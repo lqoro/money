@@ -1,13 +1,13 @@
 # Trencher live report
 
-Updated 2026-11-24T07:37:19Z (paper trading, never real money)
+Updated 2026-11-24T07:52:34Z (paper trading, never real money)
 
 - Equity: $74.23 (-25.8% vs $100 start)
 - Closed trades: 22, 3 wins
 - Fees paid: $14.78 (axiom $2.81, network $9.18, pool $2.66), plus $4.15 lost to slippage
 - New trades: WATCH-ONLY (scans and decides, buys nothing)
-- Brain: subscription, claude-haiku-5-5 for routine calls, claude-opus-5-5 for the daily review; 471 routine calls and 0 plan-limit hits in 48h
-- Watch log: 82 coins being followed, 3213 filed, 0 would-buys (6h follow, sampled every 2 min)
+- Brain: subscription, claude-haiku-5-5 for routine calls, claude-opus-5-5 for the daily review; 472 routine calls and 0 plan-limit hits in 48h
+- Watch log: 78 coins being followed, 3220 filed, 0 would-buys (6h follow, sampled every 2 min)
 
 ## Scorecard (after fees)
 - 22 closed, 3 won (14%), net $-25.79
@@ -73,9 +73,15 @@ Updated 2026-11-24T07:37:19Z (paper trading, never real money)
   CA `H4gHnZ3NCU7Z9XQwGX6YYJNyieGEW8pqwGRUcdSxpump`
 
 ## Last scan
-- 07:36Z: 3 coins, 3 with pairs, 0 passed the market filters, 0 researched
+- 07:52Z: 6 coins, 6 with pairs, 0 passed the market filters, 0 researched
 
 ## Coins it looked at, and why it passed
+- 07:46Z UCASH (MIGRATED, $216,642 mcap, $4,213 5m vol): PASS at conviction 2, PASS: flow below pace, and it's 94% off the high with a 1.8-day-old site and no code behind the tech. (V1, V6, V13)  
+  CA `7cFiqdT46zs7ooHWLFiLSaSQKLMibtokh9dBinsspump`
+- 07:44Z 4CHAN (FINAL_STRETCH, $23,960 mcap, $8,994 5m vol): REJECT, RugCheck danger: Creator history of rugged tokens  
+  CA `H5PF6hXxBwNzhWpgZx2y8YcG47naV5vHVS8gLnbUpump`
+- 07:39Z JENSEN (MIGRATED, $520,105 mcap, $2,422 5m vol): REJECT, Top 10 hold 25.6% ex-pool (>25%) (V13)  
+  CA `HKiMA2mKQHU2cjfZ4Kbmru5GBGCauSNqPtpu8cfmpump`
 - 07:22Z DONJENSEN (MIGRATED, $1,893,655 mcap, $5,670 5m vol): PASS at conviction 3, PASS: no printed higher low, sellers lead 5m flow, first resistance only 1.26x away, and the Jensen meta is fading. (V1, V6, V13)  
   CA `5LDowscYVD3a6ZS4m8gCqG5nU16eLTwRXhciFi1bpump`
 - 07:18Z Satoshi (FINAL_STRETCH, $21,716 mcap, $51,280 5m vol): PASS at conviction 2, PASS: 5-minute spike of +615% on a 5-minute-old pump.fun coin in a 23-copy "satoshi" field, with no catalyst and a website that isn't this token's. Blocker: chasing spike / split crowd. (V1, V6)  
@@ -90,12 +96,6 @@ Updated 2026-11-24T07:37:19Z (paper trading, never real money)
   CA `HKiMA2mKQHU2cjfZ4Kbmru5GBGCauSNqPtpu8cfmpump`
 - 06:40Z ORBLUX (MIGRATED, $81,837 mcap, $19,617 5m vol): PASS at conviction 3, PASS: privacy-agent LARP on a 1-day-old domain, theme flow at 0.98x pace, no catalyst. The chart structure is clean, the story isn't (V1, V3, V6).  
   CA `5KDyvAjSU8HWofZfVnpkdY2N4UM1R2jxUkLupYmgpump`
-- 06:36Z DONJENSEN (MIGRATED, $1,931,197 mcap, $6,813 5m vol): PASS at conviction 2, PASS: fan-meme on a fading Jensen theme. Theme pace 0.08x, sellers 549 vs buyers 487 on 5m, no printed higher low, 5m $6.8k under $10k. Blocker: "dead story" plus "no breakout". Copycats, not a buy. (V1, V13)  
-  CA `5LDowscYVD3a6ZS4m8gCqG5nU16eLTwRXhciFi1bpump`
-- 06:29Z Blazely (MIGRATED, $31,538 mcap, $14,837 5m vol): PASS at conviction 3, PASS: too new, no catalyst, and the theme has 0.26x its hourly pace. Blazely is a copy in a 7–10 coin field with nothing behind it. (V1, V6, V13)  
-  CA `GxHr6tdvmMmih5fUU6fgAiJa6vnVwDbnCUFDN7vh3964`
-- 06:14Z UCASH (MIGRATED, $121,075 mcap, $3,340 5m vol): PASS at conviction 2, PASS: UCASH is 97% off a $3.8M peak with 5m flow at 0.61x pace and no printed higher low. Blockers: flow below pace, no higher low, a 1.7-day-old domain on a tech claim with no GitHub. Farm-adjacent. (V1, V3, V6, V13)  
-  CA `7cFiqdT46zs7ooHWLFiLSaSQKLMibtokh9dBinsspump`
 
 ## What its skips did next (last 48h)
 A skip "ran" if the coin reached the first target (1.5x) from the skip price before a 20% drop, "dumped" if the drop came first. Sampled every 10 min, followed 6h.
@@ -106,20 +106,20 @@ A skip "ran" if the coin reached the first target (1.5x) from the skip price bef
     CA `5eiLc9r79PkJquiFvYWdXJYtGNRjTpzot8MR7Z4Ppump`
   - ran: Hold up to 1.62x  
     CA `8J7yeYsBzozSQ67Ji4kpun2gdfTFp8o9g6rNkYR3pump`
-- near the high / chasing: blocked 38, ran 8, dumped 26, flat 2, open 2 (saving losses: keep it)
+- near the high / chasing: blocked 38, ran 8, dumped 27, flat 2, open 1 (saving losses: keep it)
   - ran: Bertcoin up to 1.8x  
     CA `xEK58Qa2xZ7C36Z2g3Jjq1WHY561CvvnJkLpgJspump`
   - ran: WOFL up to 2.62x  
     CA `AdXjXfumPSSKk7PrfgDHcAsPvuxnKv7Zo9WZEWKbiDkh`
   - ran: Phil up to 2.05x  
     CA `GMLSyjZCKGtFwztp2mtT8PDeNUA6WEk7oQoe3QkFpump`
-- flow below pace: blocked 34, ran 8, dumped 24, flat 0, open 2 (saving losses: keep it)
+- flow below pace: blocked 34, ran 7, dumped 24, flat 0, open 3 (saving losses: keep it)
   - ran: snowball up to 1.59x  
     CA `3D7YQcnXi6RMjWxheiE8VLuGXJTtgQkmyugGYvzjpump`
   - ran: OpenIndex up to 1.63x  
     CA `FuKY3dk7QmpbDdQRjzbjB3G6PiCuqKNvN4dAWDpwpump`
-  - ran: UCASH up to 1.89x  
-    CA `7cFiqdT46zs7ooHWLFiLSaSQKLMibtokh9dBinsspump`
+  - ran: hCAT up to 1.52x  
+    CA `2FYs4vApfj4ErsggpFDfzMv1WvxnyiLtzNEj84mS6TLh`
 - top 10 over 25%: blocked 29, ran 5, dumped 20, flat 3, open 1 (saving losses: keep it)
   - ran: GIF up to 2.16x  
     CA `B6wM98qkQKP71mhPA48S7No6TxM4KaXdFojDTZeUpump`
@@ -127,7 +127,7 @@ A skip "ran" if the coin reached the first target (1.5x) from the skip price bef
     CA `DnbQKi146NDmwwji3f3q5i68HQnYyBEhoDyj2q3Npump`
   - ran: JENSEN up to 2.62x  
     CA `GaNJeASYBM9k3TvEeUC2Pdyu1TjcpzTmPpoom92fpump`
-- RugCheck danger: blocked 16, ran 6, dumped 10, flat 0, open 0 (mixed)
+- RugCheck danger: blocked 17, ran 6, dumped 10, flat 0, open 1 (mixed)
   - ran: MIHAOMAS up to 1.62x  
     CA `3XsFunPdji9U1EgJXokZysw8SB3t74un89b6KLEVpump`
   - ran: Holdsgiving up to 2.96x  
@@ -203,13 +203,13 @@ Movers are dominated by animal and absurd-name tokens, mostly under 3 hours old 
 Rising: the new-age pump.fun "joke" cluster (SOLA, OXYGEN, survive). Fading: Jensen names, the hippo pumps, and the Claude names. Setups to research only: SOLA (vol/cap is high, check for farm and bundles first) and OXYGEN (migration-range run, check whether 5m volume is organic). Joey (2.9k cap, $215 5m) and EuropaCoin (9 vol, 0% buys) fail the volume floor, so pass. Crawler's Orblux and Joey 30k 5m figures don't appear in the raw rows, so they're unreconciled and not setups.
 
 ## Moving most in its scans, last 30 min (1h volume)
-- DONJENSEN: $67,257 1h vol, $1,898,533 mcap, -7% 1h  
-  CA `5LDowscYVD3a6ZS4m8gCqG5nU16eLTwRXhciFi1bpump`
-- TIMMY: $66,821 1h vol, $3,313 mcap, -69% 1h  
-  CA `5PjUUcKcjEg8ib5Rmc7kuhHKKKxRLRtHZVS8NfRBpump`
-- O2: $62,093 1h vol, $18,799 mcap, +426% 1h  
-  CA `4gboevpfN1dEzjzDzFKinndqY5zYdCqenTyvStbnpump`
-- SOLA: $58,405 1h vol, $2,649 mcap, +13% 1h  
+- UCASH: $108,337 1h vol, $213,069 mcap, +27% 1h  
+  CA `7cFiqdT46zs7ooHWLFiLSaSQKLMibtokh9dBinsspump`
+- SOLA: $58,636 1h vol, $2,761 mcap, +18% 1h  
   CA `4VXzZBmMgzaxmfaFbadhZU4zvNF3L3eAXVpRdZ64pump`
-- Satoshi: $51,280 1h vol, $21,716 mcap, +615% 1h  
-  CA `DXkCsXhXeh2xTfQ8Um8dicQcwseTfuHvDwriTcJLpump`
+- 4CHAN: $52,411 1h vol, $23,960 mcap, +888% 1h  
+  CA `H5PF6hXxBwNzhWpgZx2y8YcG47naV5vHVS8gLnbUpump`
+- coin: $40,223 1h vol, $14,123 mcap, +540% 1h  
+  CA `4u7Set7EcDjHZKtDFaY5F7fHvp4J799R2ktZSU3Npump`
+- JENSEN: $34,739 1h vol, $520,105 mcap, +10% 1h  
+  CA `HKiMA2mKQHU2cjfZ4Kbmru5GBGCauSNqPtpu8cfmpump`
