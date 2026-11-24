@@ -1,13 +1,13 @@
 # Trencher live report
 
-Updated 2026-11-24T03:34:59Z (paper trading, never real money)
+Updated 2026-11-24T03:50:12Z (paper trading, never real money)
 
 - Equity: $74.23 (-25.8% vs $100 start)
 - Closed trades: 22, 3 wins
 - Fees paid: $14.78 (axiom $2.81, network $9.18, pool $2.66), plus $4.15 lost to slippage
 - New trades: WATCH-ONLY (scans and decides, buys nothing)
-- Brain: subscription, claude-haiku-5-5 for routine calls, claude-opus-5-5 for the daily review; 472 routine calls and 0 plan-limit hits in 48h
-- Watch log: 118 coins being followed, 3140 filed, 0 would-buys (6h follow, sampled every 2 min)
+- Brain: subscription, claude-haiku-5-5 for routine calls, claude-opus-5-5 for the daily review; 473 routine calls and 0 plan-limit hits in 48h
+- Watch log: 113 coins being followed, 3146 filed, 0 would-buys (6h follow, sampled every 2 min)
 
 ## Scorecard (after fees)
 - 22 closed, 3 won (14%), net $-25.79
@@ -73,9 +73,11 @@ Updated 2026-11-24T03:34:59Z (paper trading, never real money)
   CA `H4gHnZ3NCU7Z9XQwGX6YYJNyieGEW8pqwGRUcdSxpump`
 
 ## Last scan
-- 03:34Z: 4 coins, 4 with pairs, 1 passed the market filters, 1 researched
+- 03:49Z: 5 coins, 5 with pairs, 0 passed the market filters, 0 researched
 
 ## Coins it looked at, and why it passed
+- 03:46Z NOCAP (FINAL_STRETCH, $14,800 mcap, $21,026 5m vol): PASS at conviction 3, PASS. Six-minute-old pump.fun coin, up 435% on 5m with zero buzz, and its site doesn't show its own CA. Chasing spike, no story (V1, V6).  
+  CA `RZv3jrN6u1e2vCwTiJgRJwfnmyJaZqq48qkPz1xpump`
 - 03:34Z DONJENSEN (DIP, $863,904 mcap, $21,126 5m vol): REJECT, Dip with fading attention is a falling knife, not a dip (5m at 0.35x the hour's pace, under 0.6x)  
   CA `5LDowscYVD3a6ZS4m8gCqG5nU16eLTwRXhciFi1bpump`
 - 03:28Z GOOBIE (MIGRATED, $42,088 mcap, $7,336 5m vol): PASS at conviction 3, PASS: flow below pace (0.88x hourly), no printed higher low, and it's a 25-copy goobie vamp field with no catalyst. Blocked by the bottom-buy rule too. (V1, V3, V6)  
@@ -94,8 +96,6 @@ Updated 2026-11-24T03:34:59Z (paper trading, never real money)
   CA `4ZgqnNi53sRKKegFpYefFjsFE6zQ3T64Xkavcoh7pump`
 - 03:12Z UCASH (DIP, $1,348,091 mcap, $22,265 5m vol): PASS at conviction 3, PASS. Bottom buy with no catalyst, theme volume at 0.96x (owner gate needs 1x), 12 copies of the ticker, and a 1.6-day-old domain selling a product that's still "in development." Blocker: dead story. (V1, V3, V13)  
   CA `7cFiqdT46zs7ooHWLFiLSaSQKLMibtokh9dBinsspump`
-- 03:10Z GROKIA (MIGRATED, $1,232,789 mcap, $85,271 5m vol): REJECT, Top 10 hold 25.8% ex-pool (>25%) (V13)  
-  CA `3cL47ohWa2HApLYKtqPsqkjaxJ6HLvT5Ri1KvWdXpump`
 
 ## What its skips did next (last 48h)
 A skip "ran" if the coin reached the first target (1.5x) from the skip price before a 20% drop, "dumped" if the drop came first. Sampled every 10 min, followed 6h.
@@ -106,21 +106,21 @@ A skip "ran" if the coin reached the first target (1.5x) from the skip price bef
     CA `5eiLc9r79PkJquiFvYWdXJYtGNRjTpzot8MR7Z4Ppump`
   - ran: Hold up to 1.62x  
     CA `8J7yeYsBzozSQ67Ji4kpun2gdfTFp8o9g6rNkYR3pump`
-- near the high / chasing: blocked 35, ran 5, dumped 27, flat 1, open 2 (saving losses: keep it)
+- near the high / chasing: blocked 36, ran 6, dumped 27, flat 1, open 2 (saving losses: keep it)
   - ran: SANTA up to 1.85x  
     CA `tZsjFu2CH1R23wEpbfXAYGc2KUaVrUbwofCNNNqpump`
   - ran: Bertcoin up to 1.8x  
     CA `xEK58Qa2xZ7C36Z2g3Jjq1WHY561CvvnJkLpgJspump`
   - ran: WOFL up to 2.62x  
     CA `AdXjXfumPSSKk7PrfgDHcAsPvuxnKv7Zo9WZEWKbiDkh`
-- flow below pace: blocked 32, ran 6, dumped 23, flat 0, open 3 (saving losses: keep it)
+- flow below pace: blocked 32, ran 6, dumped 24, flat 0, open 2 (saving losses: keep it)
   - ran: snowball up to 1.59x  
     CA `3D7YQcnXi6RMjWxheiE8VLuGXJTtgQkmyugGYvzjpump`
   - ran: OpenIndex up to 1.63x  
     CA `FuKY3dk7QmpbDdQRjzbjB3G6PiCuqKNvN4dAWDpwpump`
   - ran: hCAT up to 1.52x  
     CA `2FYs4vApfj4ErsggpFDfzMv1WvxnyiLtzNEj84mS6TLh`
-- top 10 over 25%: blocked 30, ran 5, dumped 20, flat 1, open 4 (saving losses: keep it)
+- top 10 over 25%: blocked 29, ran 5, dumped 21, flat 1, open 2 (saving losses: keep it)
   - ran: GIF up to 2.16x  
     CA `B6wM98qkQKP71mhPA48S7No6TxM4KaXdFojDTZeUpump`
   - ran: SNP6900 up to 2.76x  
@@ -134,24 +134,26 @@ A skip "ran" if the coin reached the first target (1.5x) from the skip price bef
     CA `A2jLaCC7v3VjXP8gEgCQNbTWEvizYuQ82jFEYfzipump`
   - ran: JENSEN up to 1.7x  
     CA `CjPoozfB2Vub8pHFvdKuKUGJDLWuYC2U32yRTxMhpump`
-- falling knife / no higher low: blocked 13, ran 3, dumped 7, flat 2, open 1 (saving losses: keep it)
+- falling knife / no higher low: blocked 13, ran 3, dumped 8, flat 2, open 0 (saving losses: keep it)
   - ran: Fly up to 1.52x  
     CA `84tAcSK5L9kuQEVM8C8vMHXnfdA83nGBT2nYfSbPUcAc`
   - ran: hCAT up to 1.52x  
     CA `2FYs4vApfj4ErsggpFDfzMv1WvxnyiLtzNEj84mS6TLh`
   - ran: Mogmas up to 1.63x  
     CA `Cocrz7BR2xE2sgKn3VbmaTXH6HTVgCiVFWTVWmyTpump`
-- thin 5m volume: blocked 12, ran 1, dumped 8, flat 0, open 3 (saving losses: keep it)
+- thin 5m volume: blocked 12, ran 1, dumped 8, flat 1, open 2 (saving losses: keep it)
   - ran: NINO up to 1.55x  
     CA `BqekG1RSPUthaKfStu7Uvyvr1eR6TchrQMp1M5r5pump`
 - dev share over 1%: blocked 11, ran 1, dumped 7, flat 3, open 0 (saving losses: keep it)
   - ran: BLOOM up to 2.09x  
     CA `FyRXnHLBSeHHoigrgHR1hvcXiPbPCa5bxhVhEDampump`
-- falling knife (code): blocked 11, ran 2, dumped 6, flat 1, open 2 (saving losses: keep it)
+- falling knife (code): blocked 11, ran 3, dumped 6, flat 1, open 1 (saving losses: keep it)
   - ran: OpenIndex up to 1.63x  
     CA `FuKY3dk7QmpbDdQRjzbjB3G6PiCuqKNvN4dAWDpwpump`
   - ran: Fly up to 1.52x  
     CA `84tAcSK5L9kuQEVM8C8vMHXnfdA83nGBT2nYfSbPUcAc`
+  - ran: DONJENSEN up to 1.51x  
+    CA `5LDowscYVD3a6ZS4m8gCqG5nU16eLTwRXhciFi1bpump`
 - bundles over the line: blocked 9, ran 1, dumped 4, flat 2, open 2 (saving losses: keep it)
   - ran: RNV up to 2.35x  
     CA `A2nbXtQvvRMvWtifCkV8cYepwcC4M7iA1jVMwAh6pump`
@@ -210,13 +212,13 @@ Setups to research, no entries:
 Holder, dev and bundle checks run at research time for each. None of this is a buy signal.
 
 ## Moving most in its scans, last 30 min (1h volume)
-- GROKIA: $1,533,888 1h vol, $1,232,789 mcap, +1026% 1h  
-  CA `3cL47ohWa2HApLYKtqPsqkjaxJ6HLvT5Ri1KvWdXpump`
 - DONJENSEN: $692,285 1h vol, $1,048,247 mcap, +214% 1h  
   CA `5LDowscYVD3a6ZS4m8gCqG5nU16eLTwRXhciFi1bpump`
-- JENSEN: $668,233 1h vol, $227,477 mcap, +84% 1h  
-  CA `9vLdkMGZ9jbKAZZKrxVzShEBuafLkjB7UgHfNh3xpump`
-- Flatulence: $407,907 1h vol, $143,729 mcap, -4% 1h  
-  CA `Gq2AuvpacDeruqVRCqyZqZJJbDgYDXYDGxWQgWXhpump`
-- UCASH: $278,207 1h vol, $1,348,091 mcap, -3% 1h  
-  CA `7cFiqdT46zs7ooHWLFiLSaSQKLMibtokh9dBinsspump`
+- GOOBIE: $100,771 1h vol, $37,298 mcap, +27% 1h  
+  CA `7B72JE9fgEiwGfpj3BuAMCC8NhtuyFbi7d9E8mWWpump`
+- catalyst: $74,677 1h vol, $2,230 mcap, -36% 1h  
+  CA `4n7rKycAxGqtifiaKm9A3vhPJKkpvSiUDM3ZjGPopump`
+- Jesus: $63,501 1h vol, $336,174 mcap, +7% 1h  
+  CA `Gy5BUDnpJMWRsNVKh9sRtsBGunFXKKrbroQRoydQpump`
+- CHIBI: $62,412 1h vol, $17,373 mcap, +373% 1h  
+  CA `3mEP7FrY1uxTS5ysSAdEEkMxc2eGMCjE4wMWdQQLvdaK`
