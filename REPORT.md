@@ -1,13 +1,13 @@
 # Trencher live report
 
-Updated 2026-11-24T06:36:50Z (paper trading, never real money)
+Updated 2026-11-24T06:51:54Z (paper trading, never real money)
 
 - Equity: $74.23 (-25.8% vs $100 start)
 - Closed trades: 22, 3 wins
 - Fees paid: $14.78 (axiom $2.81, network $9.18, pool $2.66), plus $4.15 lost to slippage
 - New trades: WATCH-ONLY (scans and decides, buys nothing)
 - Brain: subscription, claude-haiku-5-5 for routine calls, claude-opus-5-5 for the daily review; 474 routine calls and 0 plan-limit hits in 48h
-- Watch log: 90 coins being followed, 3198 filed, 0 would-buys (6h follow, sampled every 2 min)
+- Watch log: 86 coins being followed, 3203 filed, 0 would-buys (6h follow, sampled every 2 min)
 
 ## Scorecard (after fees)
 - 22 closed, 3 won (14%), net $-25.79
@@ -73,9 +73,11 @@ Updated 2026-11-24T06:36:50Z (paper trading, never real money)
   CA `H4gHnZ3NCU7Z9XQwGX6YYJNyieGEW8pqwGRUcdSxpump`
 
 ## Last scan
-- 06:36Z: 7 coins, 7 with pairs, 1 passed the market filters, 1 researched
+- 06:50Z: 2 coins, 2 with pairs, 0 passed the market filters, 0 researched
 
 ## Coins it looked at, and why it passed
+- 06:40Z ORBLUX (MIGRATED, $81,837 mcap, $19,617 5m vol): PASS at conviction 3, PASS: privacy-agent LARP on a 1-day-old domain, theme flow at 0.98x pace, no catalyst. The chart structure is clean, the story isn't (V1, V3, V6).  
+  CA `5KDyvAjSU8HWofZfVnpkdY2N4UM1R2jxUkLupYmgpump`
 - 06:36Z DONJENSEN (MIGRATED, $1,931,197 mcap, $6,813 5m vol): PASS at conviction 2, PASS: fan-meme on a fading Jensen theme. Theme pace 0.08x, sellers 549 vs buyers 487 on 5m, no printed higher low, 5m $6.8k under $10k. Blocker: "dead story" plus "no breakout". Copycats, not a buy. (V1, V13)  
   CA `5LDowscYVD3a6ZS4m8gCqG5nU16eLTwRXhciFi1bpump`
 - 06:29Z Blazely (MIGRATED, $31,538 mcap, $14,837 5m vol): PASS at conviction 3, PASS: too new, no catalyst, and the theme has 0.26x its hourly pace. Blazely is a copy in a 7–10 coin field with nothing behind it. (V1, V6, V13)  
@@ -94,12 +96,10 @@ Updated 2026-11-24T06:36:50Z (paper trading, never real money)
   CA `3cL47ohWa2HApLYKtqPsqkjaxJ6HLvT5Ri1KvWdXpump`
 - 05:29Z UCASH (MIGRATED, $154,282 mcap, $3,581 5m vol): PASS at conviction 2, PASS: flow below pace (0.4x) on a coin 96% off its $3.8M peak, with a 1.7-day-old domain and no GitHub. This is a falling knife, not a DIP (V1, V6, V13).  
   CA `7cFiqdT46zs7ooHWLFiLSaSQKLMibtokh9dBinsspump`
-- 05:22Z JENSEN (DIP, $564,586 mcap, $3,165 5m vol): REJECT, Top 10 hold 25.6% ex-pool (>25%) (V13)  
-  CA `HKiMA2mKQHU2cjfZ4Kbmru5GBGCauSNqPtpu8cfmpump`
 
 ## What its skips did next (last 48h)
 A skip "ran" if the coin reached the first target (1.5x) from the skip price before a 20% drop, "dumped" if the drop came first. Sampled every 10 min, followed 6h.
-- too new / sniping: blocked 42, ran 7, dumped 32, flat 1, open 2 (saving losses: keep it)
+- too new / sniping: blocked 42, ran 7, dumped 34, flat 1, open 0 (saving losses: keep it)
   - ran: KYC up to 2.37x  
     CA `47YCrfUmSQUF9vnPsPGSzrmTcxttdRAWejCMkhrrpump`
   - ran: Wojak up to 4.29x  
@@ -113,7 +113,7 @@ A skip "ran" if the coin reached the first target (1.5x) from the skip price bef
     CA `AdXjXfumPSSKk7PrfgDHcAsPvuxnKv7Zo9WZEWKbiDkh`
   - ran: Phil up to 2.05x  
     CA `GMLSyjZCKGtFwztp2mtT8PDeNUA6WEk7oQoe3QkFpump`
-- flow below pace: blocked 33, ran 7, dumped 23, flat 0, open 3 (saving losses: keep it)
+- flow below pace: blocked 34, ran 7, dumped 24, flat 0, open 3 (saving losses: keep it)
   - ran: snowball up to 1.59x  
     CA `3D7YQcnXi6RMjWxheiE8VLuGXJTtgQkmyugGYvzjpump`
   - ran: OpenIndex up to 1.63x  
@@ -195,13 +195,13 @@ Nothing has a positive after-cost edge yet. All 229 settled coins average -8.7% 
 The trenches are running animals and absurd names, not the news. Hippos (Fiona, Timothy), a white rhino (NAJIN) and EuropaCoin (two separate CAs, both moving) hold the volume and buyers, and most movers are under 3 hours old on pump.fun or PumpSwap. Jensen/AI names are fading: JENSEN is down 39% in the hour on $2.8k 5m, DONJENSEN is flat at $2.2M on $4k 5m, and the Trump-dinner headlines are news, not flow, since no mover carries a Trump name. Setups to research, not buy: Orblux (66k cap, $12.9k 5m, 77% buys, +124% 1h, 0.4h old) fits the MIGRATED age and volume bars, and Joey (18.7k cap, $30k 5m, 67% buys, +673% 1h, about 6 min old) is a New Pairs spike whose 5m volume is bigger than its cap, which is a farm flag to check before anyone touches it. The crawler's Spidercow and NAJIN numbers don't match the raw rows (Spidercow shows 0 5m volume at a 1.4k cap, NAJIN shows $199 5m), so neither is a setup until the data reconciles. Holder, dev and bundle checks run on each coin before any entry; this is a research list, not a buy list.
 
 ## Moving most in its scans, last 30 min (1h volume)
+- ORBLUX: $236,162 1h vol, $57,498 mcap, +14% 1h  
+  CA `5KDyvAjSU8HWofZfVnpkdY2N4UM1R2jxUkLupYmgpump`
 - Blazely: $108,588 1h vol, $31,538 mcap, +9% 1h  
   CA `GxHr6tdvmMmih5fUU6fgAiJa6vnVwDbnCUFDN7vh3964`
-- Europa: $99,182 1h vol, $2,792 mcap, +15% 1h  
+- Europa: $99,308 1h vol, $2,533 mcap, +4% 1h  
   CA `CmjYpgu6rSqRYLBubMAoNstTgU918rFfQs3UoGk5pump`
-- UCASH: $66,226 1h vol, $121,075 mcap, -39% 1h  
-  CA `7cFiqdT46zs7ooHWLFiLSaSQKLMibtokh9dBinsspump`
-- Fiona: $65,679 1h vol, $8,858 mcap, -69% 1h  
+- TIMMY: $81,257 1h vol, $7,164 mcap, +102% 1h  
+  CA `5PjUUcKcjEg8ib5Rmc7kuhHKKKxRLRtHZVS8NfRBpump`
+- Fiona: $60,228 1h vol, $8,090 mcap, -52% 1h  
   CA `AQknP6fEGQe6GUYn8V7ToHj9jo6Cc4A1tJ7XJk2fpump`
-- DONJENSEN: $53,228 1h vol, $1,931,197 mcap, -12% 1h  
-  CA `5LDowscYVD3a6ZS4m8gCqG5nU16eLTwRXhciFi1bpump`
