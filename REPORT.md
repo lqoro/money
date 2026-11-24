@@ -1,13 +1,13 @@
 # Trencher live report
 
-Updated 2026-11-24T09:08:23Z (paper trading, never real money)
+Updated 2026-11-24T09:23:27Z (paper trading, never real money)
 
 - Equity: $74.23 (-25.8% vs $100 start)
 - Closed trades: 22, 3 wins
 - Fees paid: $14.78 (axiom $2.81, network $9.18, pool $2.66), plus $4.15 lost to slippage
 - New trades: WATCH-ONLY (scans and decides, buys nothing)
-- Brain: subscription, claude-haiku-5-5 for routine calls, claude-opus-5-5 for the daily review; 473 routine calls and 0 plan-limit hits in 48h
-- Watch log: 65 coins being followed, 3246 filed, 0 would-buys (6h follow, sampled every 2 min)
+- Brain: subscription, claude-haiku-5-5 for routine calls, claude-opus-5-5 for the daily review; 472 routine calls and 0 plan-limit hits in 48h
+- Watch log: 57 coins being followed, 3255 filed, 0 would-buys (6h follow, sampled every 2 min)
 
 ## Scorecard (after fees)
 - 22 closed, 3 won (14%), net $-25.79
@@ -73,9 +73,11 @@ Updated 2026-11-24T09:08:23Z (paper trading, never real money)
   CA `H4gHnZ3NCU7Z9XQwGX6YYJNyieGEW8pqwGRUcdSxpump`
 
 ## Last scan
-- 09:07Z: 3 coins, 3 with pairs, 1 passed the market filters, 1 researched
+- 09:22Z: 3 coins, 3 with pairs, 0 passed the market filters, 0 researched
 
 ## Coins it looked at, and why it passed
+- 09:17Z UCASH (MIGRATED, $235,971 mcap, $9,268 5m vol): PASS, PASS — brain unavailable, not trading blind.  
+  CA `7cFiqdT46zs7ooHWLFiLSaSQKLMibtokh9dBinsspump`
 - 09:08Z scamsem (DIP, $73,564 mcap, $146,529 5m vol): PASS at conviction 2, PASS — scamsem is 8 minutes old, down 40% in 5m, no higher low printed, and 26 coins copy the name. A copy-name spike, not a dip (V1, V6, V13).  
   CA `4pf9HEnkdN3ihjVbfZg2NwbZkCJyUk4na44oysuWpump`
 - 08:57Z Guest (MIGRATED, $46,973 mcap, $37,696 5m vol): REJECT, RugCheck danger: Creator history of rugged tokens  
@@ -94,33 +96,31 @@ Updated 2026-11-24T09:08:23Z (paper trading, never real money)
   CA `8RKV9GyNmhQAVaKVEYK9tBMWkJy7BAJ5JpXAsSV8pump`
 - 08:31Z UCASH (MIGRATED, $147,605 mcap, $5,015 5m vol): PASS at conviction 2, PASS: 5m flow is at 0.65x pace, no higher low has printed, and the site is 1.8 days old with no GitHub, under a ticker that 10 copies share. Blocker: flow below pace. (V1, V3, V6, V13)  
   CA `7cFiqdT46zs7ooHWLFiLSaSQKLMibtokh9dBinsspump`
-- 08:10Z coin (FINAL_STRETCH, $21,191 mcap, $5,708 5m vol): PASS at conviction 3, PASS: a generic ticker called "coin" with 5m flow at $5.7k, under the $10k bar, and 8 bigger same-ticker copies. Nothing here is a story. Blocker "thin 5m volume" (V1, V6, V13).  
-  CA `4u7Set7EcDjHZKtDFaY5F7fHvp4J799R2ktZSU3Npump`
 
 ## What its skips did next (last 48h)
 A skip "ran" if the coin reached the first target (1.5x) from the skip price before a 20% drop, "dumped" if the drop came first. Sampled every 10 min, followed 6h.
-- too new / sniping: blocked 42, ran 7, dumped 33, flat 1, open 1 (saving losses: keep it)
+- too new / sniping: blocked 42, ran 7, dumped 34, flat 1, open 0 (saving losses: keep it)
   - ran: KYC up to 2.37x  
     CA `47YCrfUmSQUF9vnPsPGSzrmTcxttdRAWejCMkhrrpump`
   - ran: Wojak up to 4.29x  
     CA `5eiLc9r79PkJquiFvYWdXJYtGNRjTpzot8MR7Z4Ppump`
   - ran: Hold up to 1.62x  
     CA `8J7yeYsBzozSQ67Ji4kpun2gdfTFp8o9g6rNkYR3pump`
-- near the high / chasing: blocked 37, ran 7, dumped 27, flat 2, open 1 (saving losses: keep it)
+- near the high / chasing: blocked 37, ran 8, dumped 27, flat 2, open 0 (saving losses: keep it)
   - ran: Bertcoin up to 1.8x  
     CA `xEK58Qa2xZ7C36Z2g3Jjq1WHY561CvvnJkLpgJspump`
   - ran: WOFL up to 2.62x  
     CA `AdXjXfumPSSKk7PrfgDHcAsPvuxnKv7Zo9WZEWKbiDkh`
   - ran: Phil up to 2.05x  
     CA `GMLSyjZCKGtFwztp2mtT8PDeNUA6WEk7oQoe3QkFpump`
-- flow below pace: blocked 34, ran 7, dumped 24, flat 0, open 3 (saving losses: keep it)
+- flow below pace: blocked 33, ran 7, dumped 24, flat 0, open 2 (saving losses: keep it)
   - ran: OpenIndex up to 1.63x  
     CA `FuKY3dk7QmpbDdQRjzbjB3G6PiCuqKNvN4dAWDpwpump`
-  - ran: UCASH up to 1.52x  
-    CA `7cFiqdT46zs7ooHWLFiLSaSQKLMibtokh9dBinsspump`
   - ran: hCAT up to 1.52x  
     CA `2FYs4vApfj4ErsggpFDfzMv1WvxnyiLtzNEj84mS6TLh`
-- top 10 over 25%: blocked 29, ran 5, dumped 20, flat 3, open 1 (saving losses: keep it)
+  - ran: WALLSTFLY up to 1.52x  
+    CA `2DQbV7hsqxKVWmFakXGGhBbNyY28tDJ9YuJkojYrpump`
+- top 10 over 25%: blocked 28, ran 5, dumped 20, flat 3, open 0 (saving losses: keep it)
   - ran: GIF up to 2.16x  
     CA `B6wM98qkQKP71mhPA48S7No6TxM4KaXdFojDTZeUpump`
   - ran: SNP6900 up to 2.76x  
@@ -134,13 +134,13 @@ A skip "ran" if the coin reached the first target (1.5x) from the skip price bef
     CA `CjPoozfB2Vub8pHFvdKuKUGJDLWuYC2U32yRTxMhpump`
   - ran: FUCK! up to 2.22x  
     CA `CSjwLiCLyaJqXQm9XCV3LdYWMYswbZ7JQ71JKX77pump`
-- thin 5m volume: blocked 15, ran 1, dumped 10, flat 2, open 2 (saving losses: keep it)
+- thin 5m volume: blocked 15, ran 1, dumped 11, flat 2, open 1 (saving losses: keep it)
   - ran: NINO up to 1.55x  
     CA `BqekG1RSPUthaKfStu7Uvyvr1eR6TchrQMp1M5r5pump`
 - dev share over 1%: blocked 11, ran 1, dumped 7, flat 3, open 0 (saving losses: keep it)
   - ran: BLOOM up to 2.09x  
     CA `FyRXnHLBSeHHoigrgHR1hvcXiPbPCa5bxhVhEDampump`
-- falling knife / no higher low: blocked 11, ran 3, dumped 6, flat 1, open 1 (saving losses: keep it)
+- falling knife / no higher low: blocked 11, ran 4, dumped 6, flat 1, open 0 (mixed)
   - ran: Fly up to 1.52x  
     CA `84tAcSK5L9kuQEVM8C8vMHXnfdA83nGBT2nYfSbPUcAc`
   - ran: hCAT up to 1.52x  
@@ -150,13 +150,13 @@ A skip "ran" if the coin reached the first target (1.5x) from the skip price bef
 - bundles over the line: blocked 10, ran 1, dumped 4, flat 4, open 1 (saving losses: keep it)
   - ran: RNV up to 2.35x  
     CA `A2nbXtQvvRMvWtifCkV8cYepwcC4M7iA1jVMwAh6pump`
-- other: blocked 9, ran 3, dumped 6, flat 0, open 0 (saving losses: keep it)
-  - ran: ZOL up to 1.64x  
-    CA `AQfw8J74V17erZsmMz4oK474eVLBaP44gD33vVbhtHo5`
-  - ran: CATEGIVING up to 1.81x  
-    CA `APa2jK3ZRK9XhuKHGXSFNDohfU5RfZZKajiv26qSvX2X`
-  - ran: task up to 1.61x  
-    CA `BJeEE9WCP1HZqT1D3heD9Do96D4dnEcNoDHspvQapump`
+- brain paced: blocked 9, ran 3, dumped 5, flat 0, open 1 (mixed)
+  - ran: FOAM up to 1.98x  
+    CA `2MdCPWNFufmJSZhajSvi1yqBFTB24GQ4ipjNcB8Vpump`
+  - ran: MCAT up to 2.52x  
+    CA `BzPyyYCTmQNq2BcfQ4ANAvCYk54rnmQEXMFvFT8RhWMi`
+  - ran: DELULU up to 1.57x  
+    CA `A37ozuu1D1pP1cM27y1HYkSArVQbgsZNN7Va74yNpump`
 
 ## Daily review (2026-11-23, claude-opus-5-5)
 Nothing has a positive after-cost edge yet. All 229 settled coins average -8.7% net on the simple plan. Before costs they average about +0.9%, so the 9.6% average round-trip cost on a $10 buy accounts for the whole loss. That is the same story as the 22 paper trades, where fees and slippage were $18.83 of the $25.79 lost. The best setup is FINAL_STRETCH: n=39, 35.9% hit 1.5x, -4.9% net. With a 1.5x target, a -20% stop and about 10% costs, a setup needs roughly 43% hitting the target to break even. At n=39 the hit rate's 95% range is about 21–51%, so this sample can't separate it from MIGRATED, from coin-flip noise or from breakeven. I can't say whether the routine model's would-buys beat its passes, because it made zero would-buys in 24h. The coins it passed on (n=157, -8.4%) did slightly better than the coins the checklist failed (n=70, -9.8%), but both lost money. Passing everything was the right call on average. One process note: the watch-only review was set for about Nov 10 and today is Nov 23, so the owner should decide whether this is still the plan.
@@ -194,16 +194,16 @@ Nothing has a positive after-cost edge yet. All 229 settled coins average -8.7% 
 - [2026-11-02 20:25] I expected Slingoor, a clean MIGRATED leader with $25k of 5m flow at pace and a 0.77 buy share, to retest its $408k high from $304k. It never went green (0.98x peak) and hit the -20% stop in 2 minutes, a -$2.86 probe. My own thesis admitted there was no printed higher low after a peak only 6 minutes old, so this confirms the money-shape rule: buy share and flow are not structure (V1, V6). Next time a MIGRATED pullback with no higher low above the hourly low is a PASS with blocker "no higher low", not a probe. This is one loss, so it adds no new ban beyond the rule I already have.
 
 ## Meta right now
-Meta: the trenches are trading fresh, absurd-name pump.fun spikes right now, not the Trump-dinner news. The one cluster with real flow is sub-hour generic or joke names: "coin" (+861% 1h, $5.7k 5m, 71% buys), 4CHAN (+888% 1h, $9k 5m, 58% buys) and Satoshi (0.8h old, $59k cap, $33k 5m, 62% buys, +119% 1h). Fading: animal names (NAJIN -86% with $2 5m, TIMMY $75 5m), Claude names (Claudio $558 5m, flat), "survive" (-83%) and OXYGEN (-62%, $467 5m). The crawler's summary numbers for SOLA, OXYGEN, NAJIN and TIMMY don't match the raw rows, so I'm using the rows; the Jensen/Trump headlines have no matching flow (DONJENSEN flat at $3.3k 5m). Setups to research only: Satoshi (migrated-range, must clear holder, dev and bundle checks, initials at 2x, stop -30%) and 4CHAN (just under the $10k 5m floor, only if it clears). Pass on UCASH ($4.6k 5m) and SOLA ($2 5m). Not a quiet market, but the volume is concentrated in a few spikes that can die in minutes.
+Meta: the trenches are trading sub-hour, generic-name spikes. The Trump/Jensen news has no flow behind it (DONJENSEN $5.4k 5m on a $2.2M cap, JENSEN -30% 1h). Rising: fresh generic names scamsem (6 min old, $156k 5m on a $64k cap) and Guest (age ~0, $41k 5m). Their 5m volume beats market cap, which is a farm shape until holders and bundles say otherwise (V13). Crypto-native names are holding: Satoshi (1.5h, $18k 5m, 61% buys, -9% 1h) and Provena (pump.fun curve, 65% buys, but only $897 5m). Fading: animal and word names (survive -85%, OXYGEN -41%), with JOB and Blazely dead at about $100 or less 5m. The crawler's summary numbers for Satoshi and 4CHAN don't match the raw rows (4CHAN is $325 5m, not $9k), so I used the rows. Setups to research: Satoshi first (pumpswap, $63k cap, clears the $10k 5m floor; initials at 2x, stop -30%, out if 5m volume falls to half its hourly pace). Guest only if its checks come back clean. scamsem is a pass unless it clears everything, and its name is a scam joke, not a thesis.
 
 ## Moving most in its scans, last 30 min (1h volume)
-- NOHR: $400,975 1h vol, $3,473,607 mcap, +247% 1h  
-  CA `Jd3NCawdFiDNWpLiTtsMqoeoBMjC1ZQMrMScRVzpump`
 - scamsem: $375,137 1h vol, $63,722 mcap, +136% 1h  
   CA `4pf9HEnkdN3ihjVbfZg2NwbZkCJyUk4na44oysuWpump`
-- Satoshi: $260,689 1h vol, $63,268 mcap, -9% 1h  
-  CA `DXkCsXhXeh2xTfQ8Um8dicQcwseTfuHvDwriTcJLpump`
-- FoolCoin: $163,091 1h vol, $54,516 mcap, +81% 1h  
-  CA `8RKV9GyNmhQAVaKVEYK9tBMWkJy7BAJ5JpXAsSV8pump`
+- UCASH: $84,529 1h vol, $244,771 mcap, +78% 1h  
+  CA `7cFiqdT46zs7ooHWLFiLSaSQKLMibtokh9dBinsspump`
 - DONJENSEN: $56,945 1h vol, $2,165,650 mcap, +10% 1h  
   CA `5LDowscYVD3a6ZS4m8gCqG5nU16eLTwRXhciFi1bpump`
+- Guest: $41,359 1h vol, $52,565 mcap, +55% 1h  
+  CA `7ZcoeMq5u29vjujGQQemFV2zYvy8sURwpNN9p9wGpump`
+- PROVEN: $29,661 1h vol, $8,234 mcap, +255% 1h  
+  CA `DVeU9oDkaGBp6vnqCRkdXUvnTDSFvHaxZzsDgdarpump`
