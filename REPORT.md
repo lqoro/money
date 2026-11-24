@@ -1,13 +1,13 @@
 # Trencher live report
 
-Updated 2026-11-24T08:53:05Z (paper trading, never real money)
+Updated 2026-11-24T09:08:23Z (paper trading, never real money)
 
 - Equity: $74.23 (-25.8% vs $100 start)
 - Closed trades: 22, 3 wins
 - Fees paid: $14.78 (axiom $2.81, network $9.18, pool $2.66), plus $4.15 lost to slippage
 - New trades: WATCH-ONLY (scans and decides, buys nothing)
-- Brain: subscription, claude-haiku-5-5 for routine calls, claude-opus-5-5 for the daily review; 472 routine calls and 0 plan-limit hits in 48h
-- Watch log: 63 coins being followed, 3244 filed, 0 would-buys (6h follow, sampled every 2 min)
+- Brain: subscription, claude-haiku-5-5 for routine calls, claude-opus-5-5 for the daily review; 473 routine calls and 0 plan-limit hits in 48h
+- Watch log: 65 coins being followed, 3246 filed, 0 would-buys (6h follow, sampled every 2 min)
 
 ## Scorecard (after fees)
 - 22 closed, 3 won (14%), net $-25.79
@@ -73,9 +73,17 @@ Updated 2026-11-24T08:53:05Z (paper trading, never real money)
   CA `H4gHnZ3NCU7Z9XQwGX6YYJNyieGEW8pqwGRUcdSxpump`
 
 ## Last scan
-- 08:52Z: 2 coins, 2 with pairs, 0 passed the market filters, 0 researched
+- 09:07Z: 3 coins, 3 with pairs, 1 passed the market filters, 1 researched
 
 ## Coins it looked at, and why it passed
+- 09:08Z scamsem (DIP, $73,564 mcap, $146,529 5m vol): PASS at conviction 2, PASS — scamsem is 8 minutes old, down 40% in 5m, no higher low printed, and 26 coins copy the name. A copy-name spike, not a dip (V1, V6, V13).  
+  CA `4pf9HEnkdN3ihjVbfZg2NwbZkCJyUk4na44oysuWpump`
+- 08:57Z Guest (MIGRATED, $46,973 mcap, $37,696 5m vol): REJECT, RugCheck danger: Creator history of rugged tokens  
+  CA `7ZcoeMq5u29vjujGQQemFV2zYvy8sURwpNN9p9wGpump`
+- 08:53Z CLAUDIO (MIGRATED, $103,677 mcap, $2,686 5m vol): REJECT, Bundles: 4 linked wallet cluster(s) hold 47.8% of supply (>20%) (V17)  
+  CA `5St93zSNQvWxK22Cj5mJBXcjUNNB452h5uNmrttSpump`
+- 08:53Z DONJENSEN (MIGRATED, $2,148,600 mcap, $5,736 5m vol): PASS at conviction 3, PASS: big cap, no room, and 9.6% off the high with sellers ahead (41% buys). Fan-made vamp field. Farm-shaped. (V1, V3, V6)  
+  CA `5LDowscYVD3a6ZS4m8gCqG5nU16eLTwRXhciFi1bpump`
 - 08:49Z Satoshi (MIGRATED, $74,674 mcap, $9,950 5m vol): PASS at conviction 3, PASS: 5m flow at 0.47x pace, no printed higher low, 16-copy ticker field, no catalyst. Trade the original later, not this (V1, V6, V13).  
   CA `DXkCsXhXeh2xTfQ8Um8dicQcwseTfuHvDwriTcJLpump`
 - 08:46Z JENSEN (MIGRATED, $356,265 mcap, $1,763 5m vol): REJECT, 5m volume $1,763 is dead (<$2,000) (V1)  
@@ -88,38 +96,30 @@ Updated 2026-11-24T08:53:05Z (paper trading, never real money)
   CA `7cFiqdT46zs7ooHWLFiLSaSQKLMibtokh9dBinsspump`
 - 08:10Z coin (FINAL_STRETCH, $21,191 mcap, $5,708 5m vol): PASS at conviction 3, PASS: a generic ticker called "coin" with 5m flow at $5.7k, under the $10k bar, and 8 bigger same-ticker copies. Nothing here is a story. Blocker "thin 5m volume" (V1, V6, V13).  
   CA `4u7Set7EcDjHZKtDFaY5F7fHvp4J799R2ktZSU3Npump`
-- 08:08Z DONJENSEN (MIGRATED, $1,959,198 mcap, $3,340 5m vol): PASS at conviction 3, PASS: flow below pace, target too close, and $1.96M with no room. The Jensen story is fading and the CA isn't on its site. (V1, V6, V13)  
-  CA `5LDowscYVD3a6ZS4m8gCqG5nU16eLTwRXhciFi1bpump`
-- 08:04Z Satoshi (DIP, $59,495 mcap, $33,186 5m vol): PASS at conviction 2, PASS. Too new, no higher low, and it's one of 20 "Satoshi" copies with no leader position. Blocker: "too new" (V1, V6).  
-  CA `DXkCsXhXeh2xTfQ8Um8dicQcwseTfuHvDwriTcJLpump`
-- 07:58Z NOHR (DIP, $1,049,545 mcap, $62,877 5m vol): PASS at conviction 3, PASS: NOHR is up 170% on 5m at 6x its hourly pace, a spike, and there's no catalyst behind a DIP on a 3.7-day-old site that doesn't show its CA. Blocker: "chasing spike" (V1, V6, V3).  
-  CA `Jd3NCawdFiDNWpLiTtsMqoeoBMjC1ZQMrMScRVzpump`
-- 07:46Z UCASH (MIGRATED, $216,642 mcap, $4,213 5m vol): PASS at conviction 2, PASS: flow below pace, and it's 94% off the high with a 1.8-day-old site and no code behind the tech. (V1, V6, V13)  
-  CA `7cFiqdT46zs7ooHWLFiLSaSQKLMibtokh9dBinsspump`
 
 ## What its skips did next (last 48h)
 A skip "ran" if the coin reached the first target (1.5x) from the skip price before a 20% drop, "dumped" if the drop came first. Sampled every 10 min, followed 6h.
-- too new / sniping: blocked 41, ran 7, dumped 33, flat 1, open 0 (saving losses: keep it)
+- too new / sniping: blocked 42, ran 7, dumped 33, flat 1, open 1 (saving losses: keep it)
   - ran: KYC up to 2.37x  
     CA `47YCrfUmSQUF9vnPsPGSzrmTcxttdRAWejCMkhrrpump`
   - ran: Wojak up to 4.29x  
     CA `5eiLc9r79PkJquiFvYWdXJYtGNRjTpzot8MR7Z4Ppump`
   - ran: Hold up to 1.62x  
     CA `8J7yeYsBzozSQ67Ji4kpun2gdfTFp8o9g6rNkYR3pump`
-- near the high / chasing: blocked 37, ran 7, dumped 26, flat 2, open 2 (saving losses: keep it)
+- near the high / chasing: blocked 37, ran 7, dumped 27, flat 2, open 1 (saving losses: keep it)
   - ran: Bertcoin up to 1.8x  
     CA `xEK58Qa2xZ7C36Z2g3Jjq1WHY561CvvnJkLpgJspump`
   - ran: WOFL up to 2.62x  
     CA `AdXjXfumPSSKk7PrfgDHcAsPvuxnKv7Zo9WZEWKbiDkh`
   - ran: Phil up to 2.05x  
     CA `GMLSyjZCKGtFwztp2mtT8PDeNUA6WEk7oQoe3QkFpump`
-- flow below pace: blocked 34, ran 6, dumped 23, flat 0, open 5 (saving losses: keep it)
+- flow below pace: blocked 34, ran 7, dumped 24, flat 0, open 3 (saving losses: keep it)
   - ran: OpenIndex up to 1.63x  
     CA `FuKY3dk7QmpbDdQRjzbjB3G6PiCuqKNvN4dAWDpwpump`
+  - ran: UCASH up to 1.52x  
+    CA `7cFiqdT46zs7ooHWLFiLSaSQKLMibtokh9dBinsspump`
   - ran: hCAT up to 1.52x  
     CA `2FYs4vApfj4ErsggpFDfzMv1WvxnyiLtzNEj84mS6TLh`
-  - ran: WALLSTFLY up to 1.52x  
-    CA `2DQbV7hsqxKVWmFakXGGhBbNyY28tDJ9YuJkojYrpump`
 - top 10 over 25%: blocked 29, ran 5, dumped 20, flat 3, open 1 (saving losses: keep it)
   - ran: GIF up to 2.16x  
     CA `B6wM98qkQKP71mhPA48S7No6TxM4KaXdFojDTZeUpump`
@@ -127,13 +127,13 @@ A skip "ran" if the coin reached the first target (1.5x) from the skip price bef
     CA `DnbQKi146NDmwwji3f3q5i68HQnYyBEhoDyj2q3Npump`
   - ran: JENSEN up to 2.62x  
     CA `GaNJeASYBM9k3TvEeUC2Pdyu1TjcpzTmPpoom92fpump`
-- RugCheck danger: blocked 17, ran 6, dumped 11, flat 0, open 0 (mixed)
-  - ran: MIHAOMAS up to 1.62x  
-    CA `3XsFunPdji9U1EgJXokZysw8SB3t74un89b6KLEVpump`
+- RugCheck danger: blocked 17, ran 5, dumped 12, flat 0, open 0 (saving losses: keep it)
   - ran: Holdsgiving up to 2.96x  
     CA `A2jLaCC7v3VjXP8gEgCQNbTWEvizYuQ82jFEYfzipump`
   - ran: JENSEN up to 1.7x  
     CA `CjPoozfB2Vub8pHFvdKuKUGJDLWuYC2U32yRTxMhpump`
+  - ran: FUCK! up to 2.22x  
+    CA `CSjwLiCLyaJqXQm9XCV3LdYWMYswbZ7JQ71JKX77pump`
 - thin 5m volume: blocked 15, ran 1, dumped 10, flat 2, open 2 (saving losses: keep it)
   - ran: NINO up to 1.55x  
     CA `BqekG1RSPUthaKfStu7Uvyvr1eR6TchrQMp1M5r5pump`
@@ -147,7 +147,7 @@ A skip "ran" if the coin reached the first target (1.5x) from the skip price bef
     CA `2FYs4vApfj4ErsggpFDfzMv1WvxnyiLtzNEj84mS6TLh`
   - ran: Mogmas up to 1.63x  
     CA `Cocrz7BR2xE2sgKn3VbmaTXH6HTVgCiVFWTVWmyTpump`
-- bundles over the line: blocked 10, ran 1, dumped 5, flat 4, open 0 (saving losses: keep it)
+- bundles over the line: blocked 10, ran 1, dumped 4, flat 4, open 1 (saving losses: keep it)
   - ran: RNV up to 2.35x  
     CA `A2nbXtQvvRMvWtifCkV8cYepwcC4M7iA1jVMwAh6pump`
 - other: blocked 9, ran 3, dumped 6, flat 0, open 0 (saving losses: keep it)
@@ -199,11 +199,11 @@ Meta: the trenches are trading fresh, absurd-name pump.fun spikes right now, not
 ## Moving most in its scans, last 30 min (1h volume)
 - NOHR: $400,975 1h vol, $3,473,607 mcap, +247% 1h  
   CA `Jd3NCawdFiDNWpLiTtsMqoeoBMjC1ZQMrMScRVzpump`
+- scamsem: $375,137 1h vol, $63,722 mcap, +136% 1h  
+  CA `4pf9HEnkdN3ihjVbfZg2NwbZkCJyUk4na44oysuWpump`
 - Satoshi: $260,689 1h vol, $63,268 mcap, -9% 1h  
   CA `DXkCsXhXeh2xTfQ8Um8dicQcwseTfuHvDwriTcJLpump`
 - FoolCoin: $163,091 1h vol, $54,516 mcap, +81% 1h  
   CA `8RKV9GyNmhQAVaKVEYK9tBMWkJy7BAJ5JpXAsSV8pump`
-- UCASH: $92,802 1h vol, $147,605 mcap, -45% 1h  
-  CA `7cFiqdT46zs7ooHWLFiLSaSQKLMibtokh9dBinsspump`
-- SON: $32,616 1h vol, $2,017 mcap, -8% 1h  
-  CA `MphvzZcbmuRcq3Q99io5LzmatrqTDUL5N58am3npump`
+- DONJENSEN: $56,945 1h vol, $2,165,650 mcap, +10% 1h  
+  CA `5LDowscYVD3a6ZS4m8gCqG5nU16eLTwRXhciFi1bpump`
