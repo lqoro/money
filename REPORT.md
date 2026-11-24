@@ -1,13 +1,13 @@
 # Trencher live report
 
-Updated 2026-11-24T02:49:30Z (paper trading, never real money)
+Updated 2026-11-24T03:04:33Z (paper trading, never real money)
 
 - Equity: $74.23 (-25.8% vs $100 start)
 - Closed trades: 22, 3 wins
 - Fees paid: $14.78 (axiom $2.81, network $9.18, pool $2.66), plus $4.15 lost to slippage
 - New trades: WATCH-ONLY (scans and decides, buys nothing)
-- Brain: subscription, claude-haiku-5-5 for routine calls, claude-opus-5-5 for the daily review; 472 routine calls and 0 plan-limit hits in 48h
-- Watch log: 117 coins being followed, 3126 filed, 0 would-buys (6h follow, sampled every 2 min)
+- Brain: subscription, claude-haiku-5-5 for routine calls, claude-opus-5-5 for the daily review; 470 routine calls and 0 plan-limit hits in 48h
+- Watch log: 115 coins being followed, 3130 filed, 0 would-buys (6h follow, sampled every 2 min)
 
 ## Scorecard (after fees)
 - 22 closed, 3 won (14%), net $-25.79
@@ -73,9 +73,13 @@ Updated 2026-11-24T02:49:30Z (paper trading, never real money)
   CA `H4gHnZ3NCU7Z9XQwGX6YYJNyieGEW8pqwGRUcdSxpump`
 
 ## Last scan
-- 02:48Z: 8 coins, 8 with pairs, 1 passed the market filters, 1 researched
+- 03:03Z: 7 coins, 7 with pairs, 0 passed the market filters, 0 researched
 
 ## Coins it looked at, and why it passed
+- 02:59Z FIONA (MIGRATED, $3,542,263 mcap, $14,167 5m vol): REJECT, Bundles: 10 linked wallet cluster(s) hold 27.6% of supply (>20%) (V17)  
+  CA `B34nXKzCgsJb9ChLuSHPRpXLE3WFSWyeT8Cqkzzmpump`
+- 02:51Z STACK (MIGRATED, $42,891 mcap, $6,707 5m vol): PASS at conviction 2, PASS: down 79% from a $203k peak, 5m flow at 0.79x pace, no higher low printed, and a theme at 0.36x pace with no catalyst. Dead-cat bounce in a copy field (V1, V6).  
+  CA `gzYHA8qjtFd76w58fEyn7knMdhedzdQuzmmAruwpump`
 - 02:48Z DONJENSEN (MIGRATED, $553,310 mcap, $61,947 5m vol): REJECT, Top 10 hold 36.1% ex-pool (>25%) (V13)  
   CA `5LDowscYVD3a6ZS4m8gCqG5nU16eLTwRXhciFi1bpump`
 - 02:45Z DESSA (MIGRATED, $2,415,759 mcap, $2,338 5m vol): PASS at conviction 3, PASS — 5m volume $2.3k with sellers at 16 to 6 buys, first resistance only 1.13x away, and the DESSA story isn't on the radar. Blockers: "thin 5m volume", "target too close", "dead story". (V1, V6, V13)  
@@ -92,14 +96,10 @@ Updated 2026-11-24T02:49:30Z (paper trading, never real money)
   CA `CGJUUXmWgHaCp3ZVfX6rQJKQbNvLj7gXp3mBbUtJpump`
 - 02:32Z HOGE (DIP, $651,015 mcap, $2,571 5m vol): REJECT, Bundles: 9 linked wallet cluster(s) hold 27.8% of supply (>20%) (V17)  
   CA `FVzqGqRmr4UH1Fif6dewmwbJ1p4YUZCu8dcw4Efopump`
-- 02:31Z JENSEN (MIGRATED, $164,881 mcap, $80,948 5m vol): REJECT, Bundles: 10 linked wallet cluster(s) hold 28.5% of supply (>20%) (V17)  
-  CA `9vLdkMGZ9jbKAZZKrxVzShEBuafLkjB7UgHfNh3xpump`
-- 02:29Z Flatulence (MIGRATED, $136,682 mcap, $33,398 5m vol): PASS at conviction 2, PASS: Flatulence is copy-field noise, not the leader, under 1h old, and below pace with no higher low. Blockers: too new, split crowd, flow below pace, no higher low. (V1, V3, V6, V13)  
-  CA `Gq2AuvpacDeruqVRCqyZqZJJbDgYDXYDGxWQgWXhpump`
 
 ## What its skips did next (last 48h)
 A skip "ran" if the coin reached the first target (1.5x) from the skip price before a 20% drop, "dumped" if the drop came first. Sampled every 10 min, followed 6h.
-- too new / sniping: blocked 44, ran 7, dumped 35, flat 0, open 2 (saving losses: keep it)
+- too new / sniping: blocked 44, ran 8, dumped 35, flat 0, open 1 (saving losses: keep it)
   - ran: KYC up to 2.37x  
     CA `47YCrfUmSQUF9vnPsPGSzrmTcxttdRAWejCMkhrrpump`
   - ran: Wojak up to 4.29x  
@@ -113,14 +113,14 @@ A skip "ran" if the coin reached the first target (1.5x) from the skip price bef
     CA `xEK58Qa2xZ7C36Z2g3Jjq1WHY561CvvnJkLpgJspump`
   - ran: WOFL up to 2.62x  
     CA `AdXjXfumPSSKk7PrfgDHcAsPvuxnKv7Zo9WZEWKbiDkh`
-- top 10 over 25%: blocked 31, ran 5, dumped 20, flat 1, open 5 (saving losses: keep it)
+- top 10 over 25%: blocked 31, ran 6, dumped 20, flat 1, open 4 (saving losses: keep it)
   - ran: GIF up to 2.16x  
     CA `B6wM98qkQKP71mhPA48S7No6TxM4KaXdFojDTZeUpump`
   - ran: SNP6900 up to 2.76x  
     CA `DnbQKi146NDmwwji3f3q5i68HQnYyBEhoDyj2q3Npump`
   - ran: JENSEN up to 2.62x  
     CA `GaNJeASYBM9k3TvEeUC2Pdyu1TjcpzTmPpoom92fpump`
-- flow below pace: blocked 31, ran 6, dumped 25, flat 0, open 0 (saving losses: keep it)
+- flow below pace: blocked 31, ran 6, dumped 24, flat 0, open 1 (saving losses: keep it)
   - ran: snowball up to 1.59x  
     CA `3D7YQcnXi6RMjWxheiE8VLuGXJTtgQkmyugGYvzjpump`
   - ran: OpenIndex up to 1.63x  
@@ -147,7 +147,7 @@ A skip "ran" if the coin reached the first target (1.5x) from the skip price bef
 - thin 5m volume: blocked 11, ran 1, dumped 8, flat 0, open 2 (saving losses: keep it)
   - ran: NINO up to 1.55x  
     CA `BqekG1RSPUthaKfStu7Uvyvr1eR6TchrQMp1M5r5pump`
-- bundles over the line: blocked 10, ran 1, dumped 4, flat 2, open 3 (saving losses: keep it)
+- bundles over the line: blocked 10, ran 1, dumped 5, flat 2, open 2 (saving losses: keep it)
   - ran: RNV up to 2.35x  
     CA `A2nbXtQvvRMvWtifCkV8cYepwcC4M7iA1jVMwAh6pump`
 - falling knife (code): blocked 9, ran 2, dumped 6, flat 1, open 0 (saving losses: keep it)
@@ -197,11 +197,11 @@ The trenches are a launch-style tape, not quiet: most movers are under two hours
 ## Moving most in its scans, last 30 min (1h volume)
 - CLAUDIO: $871,738 1h vol, $62,431 mcap, -96% 1h  
   CA `5St93zSNQvWxK22Cj5mJBXcjUNNB452h5uNmrttSpump`
-- CHIBI: $648,042 1h vol, $74,458 mcap, -44% 1h  
-  CA `4ZgqnNi53sRKKegFpYefFjsFE6zQ3T64Xkavcoh7pump`
-- JENSEN: $624,334 1h vol, $154,563 mcap, +416% 1h  
-  CA `9vLdkMGZ9jbKAZZKrxVzShEBuafLkjB7UgHfNh3xpump`
-- GROKIA: $592,878 1h vol, $550,341 mcap, +401% 1h  
-  CA `3cL47ohWa2HApLYKtqPsqkjaxJ6HLvT5Ri1KvWdXpump`
-- Flatulence: $527,855 1h vol, $136,682 mcap, +163% 1h  
-  CA `Gq2AuvpacDeruqVRCqyZqZJJbDgYDXYDGxWQgWXhpump`
+- DONJENSEN: $281,762 1h vol, $461,910 mcap, +1193% 1h  
+  CA `5LDowscYVD3a6ZS4m8gCqG5nU16eLTwRXhciFi1bpump`
+- FIONA: $229,635 1h vol, $3,556,465 mcap, -2% 1h  
+  CA `B34nXKzCgsJb9ChLuSHPRpXLE3WFSWyeT8Cqkzzmpump`
+- STACK: $101,375 1h vol, $42,891 mcap, -57% 1h  
+  CA `gzYHA8qjtFd76w58fEyn7knMdhedzdQuzmmAruwpump`
+- GTS1: $99,869 1h vol, $29,735 mcap, -50% 1h  
+  CA `4R5rnh1KFL33ZnDoADAdLMXgQbKQm2X9R7rZT1Kcpump`
