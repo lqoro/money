@@ -1,13 +1,13 @@
 # Trencher live report
 
-Updated 2026-11-24T11:54:32Z (paper trading, never real money)
+Updated 2026-11-24T12:09:42Z (paper trading, never real money)
 
 - Equity: $74.23 (-25.8% vs $100 start)
 - Closed trades: 22, 3 wins
 - Fees paid: $14.78 (axiom $2.81, network $9.18, pool $2.66), plus $4.15 lost to slippage
 - New trades: WATCH-ONLY (scans and decides, buys nothing)
-- Brain: subscription, claude-haiku-5-5 for routine calls, claude-opus-5-5 for the daily review; 468 routine calls and 0 plan-limit hits in 48h
-- Watch log: 47 coins being followed, 3283 filed, 0 would-buys (6h follow, sampled every 2 min)
+- Brain: subscription, claude-haiku-5-5 for routine calls, claude-opus-5-5 for the daily review; 469 routine calls and 0 plan-limit hits in 48h
+- Watch log: 48 coins being followed, 3285 filed, 0 would-buys (6h follow, sampled every 2 min)
 
 ## Scorecard (after fees)
 - 22 closed, 3 won (14%), net $-25.79
@@ -73,9 +73,15 @@ Updated 2026-11-24T11:54:32Z (paper trading, never real money)
   CA `H4gHnZ3NCU7Z9XQwGX6YYJNyieGEW8pqwGRUcdSxpump`
 
 ## Last scan
-- 11:53Z: 3 coins, 2 with pairs, 0 passed the market filters, 0 researched
+- 12:09Z: 5 coins, 4 with pairs, 0 passed the market filters, 0 researched
 
 ## Coins it looked at, and why it passed
+- 12:08Z DUVAL (MIGRATED, $281,974 mcap, $54,294 5m vol): PASS at conviction 3, PASS: no printed higher low, and DUVAL is one of 23 copies with a bundle cluster inside the field. Split crowd, no structure (V1, V3, V13).  
+  CA `7fmD1p3jzva28EPP9bPqbDoxZGj5j398yJoE3EVypump`
+- 11:55Z DONJENSEN (MIGRATED, $2,208,441 mcap, $3,583 5m vol): PASS at conviction 2, PASS: target too close, big cap, no room. $2.2M mcap, 5m flow $3.6k, and the first resistance (the $2.67M peak) is only 1.21x away. The Jensen meta is fading. (V1, V6)  
+  CA `5LDowscYVD3a6ZS4m8gCqG5nU16eLTwRXhciFi1bpump`
+- 11:54Z SHHFT (MIGRATED, $95,641 mcap, $47,806 5m vol): REJECT, Dev holds 3.0% (>1%) (V13, V17)  
+  CA `GqMg4TRt5U5HRK6oeZYwCF1Jz7Ym9MSzWSoFCtFsbzf6`
 - 11:52Z Bear (FINAL_STRETCH, $15,967 mcap, $3,912 5m vol): REJECT, RugCheck danger: Creator history of rugged tokens  
   CA `7Xj8duDuRsFHxAMchLZ2XBs7DcJE3h1KGosd3ms2pump`
 - 11:51Z JENSEN (MIGRATED, $249,862 mcap, $7,458 5m vol): REJECT, Top 10 hold 25.6% ex-pool (>25%) (V13)  
@@ -90,12 +96,6 @@ Updated 2026-11-24T11:54:32Z (paper trading, never real money)
   CA `6AqxUg7adxVrs1p3ugiZ2a8hyRtsmgayRSKjrojLpump`
 - 11:10Z CLAUDIO (MIGRATED, $93,784 mcap, $2,636 5m vol): REJECT, Bundles: 4 linked wallet cluster(s) hold 47.8% of supply (>20%) (V17)  
   CA `5St93zSNQvWxK22Cj5mJBXcjUNNB452h5uNmrttSpump`
-- 11:10Z DONJENSEN (MIGRATED, $2,084,736 mcap, $3,318 5m vol): PASS at conviction 3, PASS: flow 0.71x pace on a MIGRATED coin, theme at 0.35x and fading, and the CA isn't on its own site. Farm-shaped copy in a 25-coin field. (V1, V13)  
-  CA `5LDowscYVD3a6ZS4m8gCqG5nU16eLTwRXhciFi1bpump`
-- 10:57Z Scamsem (MIGRATED, $56,952 mcap, $5,540 5m vol): PASS at conviction 2, PASS: Scamsem is a joke name riding the ANSEM hack headlines, the crowd is leaving, and the chart is a saw-tooth. Blocker: "dead story" plus bottom-buy theme gate. (V3, V13)  
-  CA `5JWeGmA9z6yHd5F9P6B23A8wthho8BpZuDmQv5DfLoat`
-- 10:48Z UCASH (MIGRATED, $77,721 mcap, $4,375 5m vol): PASS at conviction 2, PASS — 98% off a $3.8M peak, 5m flow at 0.47x its hourly pace, no higher low printed, and the story isn't on the radar. Crowd left. (V1, V6)  
-  CA `7cFiqdT46zs7ooHWLFiLSaSQKLMibtokh9dBinsspump`
 
 ## What its skips did next (last 48h)
 A skip "ran" if the coin reached the first target (1.5x) from the skip price before a 20% drop, "dumped" if the drop came first. Sampled every 10 min, followed 6h.
@@ -120,7 +120,7 @@ A skip "ran" if the coin reached the first target (1.5x) from the skip price bef
     CA `2FYs4vApfj4ErsggpFDfzMv1WvxnyiLtzNEj84mS6TLh`
   - ran: WALLSTFLY up to 1.52x  
     CA `2DQbV7hsqxKVWmFakXGGhBbNyY28tDJ9YuJkojYrpump`
-- top 10 over 25%: blocked 27, ran 5, dumped 19, flat 2, open 1 (saving losses: keep it)
+- top 10 over 25%: blocked 27, ran 5, dumped 20, flat 2, open 0 (saving losses: keep it)
   - ran: GIF up to 2.16x  
     CA `B6wM98qkQKP71mhPA48S7No6TxM4KaXdFojDTZeUpump`
   - ran: SNP6900 up to 2.76x  
@@ -139,19 +139,19 @@ A skip "ran" if the coin reached the first target (1.5x) from the skip price bef
     CA `BqekG1RSPUthaKfStu7Uvyvr1eR6TchrQMp1M5r5pump`
   - ran: RUGSEM up to 1.54x  
     CA `9cDnmLRDWeJzcpyw8tSFAT7HS4Aunx6MmZWjMfrzpump`
-- dev share over 1%: blocked 11, ran 1, dumped 7, flat 3, open 0 (saving losses: keep it)
+- dev share over 1%: blocked 12, ran 1, dumped 8, flat 3, open 0 (saving losses: keep it)
   - ran: BLOOM up to 2.09x  
     CA `FyRXnHLBSeHHoigrgHR1hvcXiPbPCa5bxhVhEDampump`
-- bundles over the line: blocked 10, ran 1, dumped 4, flat 4, open 1 (saving losses: keep it)
-  - ran: RNV up to 2.35x  
-    CA `A2nbXtQvvRMvWtifCkV8cYepwcC4M7iA1jVMwAh6pump`
-- falling knife / no higher low: blocked 10, ran 3, dumped 6, flat 1, open 0 (saving losses: keep it)
+- falling knife / no higher low: blocked 11, ran 3, dumped 6, flat 1, open 1 (saving losses: keep it)
   - ran: Fly up to 1.52x  
     CA `84tAcSK5L9kuQEVM8C8vMHXnfdA83nGBT2nYfSbPUcAc`
   - ran: hCAT up to 1.52x  
     CA `2FYs4vApfj4ErsggpFDfzMv1WvxnyiLtzNEj84mS6TLh`
   - ran: Mogmas up to 1.63x  
     CA `Cocrz7BR2xE2sgKn3VbmaTXH6HTVgCiVFWTVWmyTpump`
+- bundles over the line: blocked 10, ran 1, dumped 4, flat 4, open 1 (saving losses: keep it)
+  - ran: RNV up to 2.35x  
+    CA `A2nbXtQvvRMvWtifCkV8cYepwcC4M7iA1jVMwAh6pump`
 - other: blocked 9, ran 3, dumped 6, flat 0, open 0 (saving losses: keep it)
   - ran: ZOL up to 1.64x  
     CA `AQfw8J74V17erZsmMz4oK474eVLBaP44gD33vVbhtHo5`
@@ -199,13 +199,13 @@ Nothing has a positive after-cost edge yet. All 229 settled coins average -8.7% 
 Nothing in this scan is a setup. No mover clears the $10k 5-minute volume bar; the best are BULLSHIT at $6.2k and scamsem at $5.6k, and 1h volume is mostly well above 5m, so the flow is fading. Two themes repeat in the raw rows: self-aware scam and joke names (scamsem and its pumpswap twin RUGSEM, Key Opinion Loser, Bull Shit), which are fading, and Claude-named coins (CLAUDIO at $97k, SUPER CLAUDIA INU at $29k) on thin 5m with 63-69% buys, which are early and unproven. Trump and Jensen names are fading: JENSEN does $1.5k 5m on a $499k cap and DONJENSEN $3.3k on $2.1M, which matches the record-low headlines. The crawler's summary is wrong on several rows. scamsem is $57k cap and $5.6k 5m (not $90k and $13.7k), UCASH is $75k and $4.8k, JENSEN is $499k and $1.5k, and "the black" is a $2.5k cap with $17 of 5m volume and 20% buys, so none of them qualify and the black's +146% claim is not in the data. Watch CLAUDIO and scamsem for 5m volume to clear $10k; BULLSHIT is pump.fun new-pair territory and I'm not chasing it. Holder, dev and bundle checks were not run on any of these coins, so this is a volume read only.
 
 ## Moving most in its scans, last 30 min (1h volume)
-- Trenchers: $85,779 1h vol, $1,852 mcap, -93% 1h  
-  CA `BWtNaVHGyQRv8s358qWWn2qGmuavR9vn8upFnTKoBwtc`
-- callmaps: $44,870 1h vol, $9,389 mcap, +349% 1h  
+- DUVAL: $448,282 1h vol, $281,974 mcap, +334% 1h  
+  CA `7fmD1p3jzva28EPP9bPqbDoxZGj5j398yJoE3EVypump`
+- SHHFT: $50,612 1h vol, $102,445 mcap, +252% 1h  
+  CA `GqMg4TRt5U5HRK6oeZYwCF1Jz7Ym9MSzWSoFCtFsbzf6`
+- callmaps: $48,085 1h vol, $11,062 mcap, +429% 1h  
   CA `CALLY1eAdyfn33E6g3dBhdT7MUBEckLCMdNBX3QvMAPS`
-- BULLSHIT: $41,958 1h vol, $6,164 mcap, -13% 1h  
-  CA `CfRas4U7AJ28fJTNEWdWa8Lmzg9xvsfVmY8Ypyompump`
-- Scamsem: $40,249 1h vol, $63,201 mcap, -3% 1h  
-  CA `5JWeGmA9z6yHd5F9P6B23A8wthho8BpZuDmQv5DfLoat`
+- DONJENSEN: $47,996 1h vol, $2,208,441 mcap, +7% 1h  
+  CA `5LDowscYVD3a6ZS4m8gCqG5nU16eLTwRXhciFi1bpump`
 - FoolCoin: $30,191 1h vol, $36,916 mcap, +493% 1h  
   CA `8RKV9GyNmhQAVaKVEYK9tBMWkJy7BAJ5JpXAsSV8pump`
