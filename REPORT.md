@@ -1,13 +1,13 @@
 # Trencher live report
 
-Updated 2026-11-24T16:11:45Z (paper trading, never real money)
+Updated 2026-11-24T16:26:51Z (paper trading, never real money)
 
 - Equity: $74.23 (-25.8% vs $100 start)
 - Closed trades: 22, 3 wins
 - Fees paid: $14.78 (axiom $2.81, network $9.18, pool $2.66), plus $4.15 lost to slippage
 - New trades: WATCH-ONLY (scans and decides, buys nothing)
-- Brain: subscription, claude-haiku-5-5 for routine calls, claude-opus-5-5 for the daily review; 492 routine calls and 0 plan-limit hits in 48h
-- Watch log: 65 coins being followed, 3317 filed, 0 would-buys (6h follow, sampled every 2 min)
+- Brain: subscription, claude-haiku-5-5 for routine calls, claude-opus-5-5 for the daily review; 490 routine calls and 0 plan-limit hits in 48h
+- Watch log: 64 coins being followed, 3320 filed, 0 would-buys (6h follow, sampled every 2 min)
 
 ## Scorecard (after fees)
 - 22 closed, 3 won (14%), net $-25.79
@@ -73,9 +73,13 @@ Updated 2026-11-24T16:11:45Z (paper trading, never real money)
   CA `H4gHnZ3NCU7Z9XQwGX6YYJNyieGEW8pqwGRUcdSxpump`
 
 ## Last scan
-- 16:11Z: 2 coins, 2 with pairs, 0 passed the market filters, 0 researched
+- 16:25Z: 6 coins, 6 with pairs, 1 passed the market filters, 1 researched
 
 ## Coins it looked at, and why it passed
+- 16:25Z poor dog (MIGRATED, $33,162 mcap, $3,702 5m vol): PASS, PASS — brain unavailable, not trading blind.  
+  CA `Hb4kF1LyTxFD3nRCVbgegQv2oo2jAfK4CpTho8a9pump`
+- 16:23Z Wanted (MIGRATED, $197,288 mcap, $55,022 5m vol): REJECT, Top 10 hold 39.4% ex-pool (>25%) (V13)  
+  CA `2M3CsCP97Le187KQC5jhZG3c6bFzCZ51NP8bscrupump`
 - 16:09Z WORTHLESS (MIGRATED, $43,210 mcap, $10,329 5m vol): REJECT, RugCheck danger: Creator history of rugged tokens  
   CA `ArTHx2XxPadBjkJw9WacfwPTEoaeG5jMakX26tzEpump`
 - 16:01Z FIONA (MIGRATED, $3,045,661 mcap, $4,638 5m vol): REJECT, Bundles: 9 linked wallet cluster(s) hold 28.7% of supply (>20%) (V17)  
@@ -92,14 +96,10 @@ Updated 2026-11-24T16:11:45Z (paper trading, never real money)
   CA `4m2PS6yW2xDk5V9nJgPjnus1eguwCDSWXbA2YQeVkqxn`
 - 15:42Z DONJENSEN (MIGRATED, $1,869,342 mcap, $2,952 5m vol): PASS, PASS — brain unavailable, not trading blind.  
   CA `5LDowscYVD3a6ZS4m8gCqG5nU16eLTwRXhciFi1bpump`
-- 15:42Z JENSEN (MIGRATED, $82,777 mcap, $5,479 5m vol): REJECT, RugCheck danger: Creator history of rugged tokens  
-  CA `HKiMA2mKQHU2cjfZ4Kbmru5GBGCauSNqPtpu8cfmpump`
-- 15:37Z cateball (DIP, $889,501 mcap, $2,066 5m vol): REJECT, Dip with fading attention is a falling knife, not a dip (5m at 0.53x the hour's pace, under 0.6x)  
-  CA `4npJ3avxnGhCzKbWQpLrQXAHsjWzKr4JqBsbu5Fspump`
 
 ## What its skips did next (last 48h)
 A skip "ran" if the coin reached the first target (1.5x) from the skip price before a 20% drop, "dumped" if the drop came first. Sampled every 10 min, followed 6h.
-- too new / sniping: blocked 39, ran 6, dumped 32, flat 1, open 0 (saving losses: keep it)
+- too new / sniping: blocked 37, ran 6, dumped 30, flat 1, open 0 (saving losses: keep it)
   - ran: Wojak up to 4.29x  
     CA `5eiLc9r79PkJquiFvYWdXJYtGNRjTpzot8MR7Z4Ppump`
   - ran: Hold up to 1.62x  
@@ -120,14 +120,14 @@ A skip "ran" if the coin reached the first target (1.5x) from the skip price bef
     CA `2FYs4vApfj4ErsggpFDfzMv1WvxnyiLtzNEj84mS6TLh`
   - ran: WALLSTFLY up to 1.52x  
     CA `2DQbV7hsqxKVWmFakXGGhBbNyY28tDJ9YuJkojYrpump`
-- top 10 over 25%: blocked 27, ran 4, dumped 21, flat 2, open 0 (saving losses: keep it)
+- top 10 over 25%: blocked 28, ran 4, dumped 21, flat 2, open 1 (saving losses: keep it)
   - ran: SNP6900 up to 2.76x  
     CA `DnbQKi146NDmwwji3f3q5i68HQnYyBEhoDyj2q3Npump`
   - ran: JENSEN up to 2.62x  
     CA `GaNJeASYBM9k3TvEeUC2Pdyu1TjcpzTmPpoom92fpump`
   - ran: GOAT up to 1.53x  
     CA `5Ze97VEpX3EdRF4vbsxUXTdwGKF2qHGregrxToWEpump`
-- brain paced: blocked 22, ran 8, dumped 8, flat 0, open 6 (mixed)
+- brain paced: blocked 21, ran 9, dumped 7, flat 0, open 5 (cost more winners than it saved: loosen it)
   - ran: FOAM up to 1.98x  
     CA `2MdCPWNFufmJSZhajSvi1yqBFTB24GQ4ipjNcB8Vpump`
   - ran: MCAT up to 2.52x  
@@ -201,11 +201,11 @@ Nothing in this scan is a setup. No mover clears the $10k 5-minute volume bar; t
 ## Moving most in its scans, last 30 min (1h volume)
 - WORTHLESS: $351,612 1h vol, $43,210 mcap, +2% 1h  
   CA `ArTHx2XxPadBjkJw9WacfwPTEoaeG5jMakX26tzEpump`
-- Valueless: $185,804 1h vol, $270,501 mcap, +614% 1h  
-  CA `33xKs5zTHW4pppqvUKjvHuC8cHjSUb1JzVbzxYFHpump`
-- Memeployed: $72,756 1h vol, $101,793 mcap, +26% 1h  
-  CA `4m2PS6yW2xDk5V9nJgPjnus1eguwCDSWXbA2YQeVkqxn`
-- Mill: $72,146 1h vol, $3,646 mcap, +52% 1h  
+- Wanted: $121,729 1h vol, $193,136 mcap, +503% 1h  
+  CA `2M3CsCP97Le187KQC5jhZG3c6bFzCZ51NP8bscrupump`
+- Mill: $72,711 1h vol, $2,475 mcap, +3% 1h  
   CA `AQsH4RUQreNQ59ZDGFgCDxaENL9y2jhHkd4CPtC1pump`
+- poor dog: $69,846 1h vol, $32,374 mcap, +19% 1h  
+  CA `Hb4kF1LyTxFD3nRCVbgegQv2oo2jAfK4CpTho8a9pump`
 - FIONA: $64,164 1h vol, $3,072,379 mcap, +9% 1h  
   CA `B34nXKzCgsJb9ChLuSHPRpXLE3WFSWyeT8Cqkzzmpump`
