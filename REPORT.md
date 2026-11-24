@@ -1,13 +1,13 @@
 # Trencher live report
 
-Updated 2026-11-24T21:00:00Z (paper trading, never real money)
+Updated 2026-11-24T21:15:08Z (paper trading, never real money)
 
 - Equity: $74.23 (-25.8% vs $100 start)
 - Closed trades: 22, 3 wins
 - Fees paid: $14.78 (axiom $2.81, network $9.18, pool $2.66), plus $4.15 lost to slippage
 - New trades: WATCH-ONLY (scans and decides, buys nothing)
-- Brain: subscription, claude-haiku-5-5 for routine calls, claude-opus-5-5 for the daily review; 516 routine calls and 0 plan-limit hits in 48h
-- Watch log: 77 coins being followed, 3364 filed, 0 would-buys (6h follow, sampled every 2 min)
+- Brain: subscription, claude-haiku-5-5 for routine calls, claude-opus-5-5 for the daily review; 519 routine calls and 0 plan-limit hits in 48h
+- Watch log: 78 coins being followed, 3367 filed, 0 would-buys (6h follow, sampled every 2 min)
 
 ## Scorecard (after fees)
 - 22 closed, 3 won (14%), net $-25.79
@@ -73,9 +73,17 @@ Updated 2026-11-24T21:00:00Z (paper trading, never real money)
   CA `H4gHnZ3NCU7Z9XQwGX6YYJNyieGEW8pqwGRUcdSxpump`
 
 ## Last scan
-- 20:59Z: 6 coins, 6 with pairs, 0 passed the market filters, 0 researched
+- 21:14Z: 4 coins, 4 with pairs, 0 passed the market filters, 0 researched
 
 ## Coins it looked at, and why it passed
+- 21:12Z M1S (FINAL_STRETCH, $19,707 mcap, $4,700 5m vol): REJECT, Dev holds 4.5% (>1%) (V13, V17)  
+  CA `ErSUCQz65MA3mPyzmJ82s4RR7uN6vQmVJnYuofDbpump`
+- 21:09Z SPECS (FINAL_STRETCH, $16,505 mcap, $9,191 5m vol): PASS, PASS — brain unavailable, not trading blind.  
+  CA `29SS1KJnthUqk8JhW13bvju6JWkeCAXafQY4XP8Epump`
+- 21:00Z DONJENSEN (MIGRATED, $1,846,742 mcap, $1,972 5m vol): REJECT, 5m volume $1,972 is dead (<$2,000) (V1)  
+  CA `5LDowscYVD3a6ZS4m8gCqG5nU16eLTwRXhciFi1bpump`
+- 21:00Z Tinkerbelle (FINAL_STRETCH, $16,155 mcap, $18,159 5m vol): PASS, PASS — brain unavailable, not trading blind.  
+  CA `5SS1XzHuQT1MiJLSzE8cZy1hUNYaoMkaPo8q1Koipump`
 - 20:51Z Ava (FINAL_STRETCH, $21,036 mcap, $9,392 5m vol): REJECT, Top 10 hold 25.4% ex-pool (>25%) (V13)  
   CA `8vSuXCFgQFSmTx4okY687iMyZYSSSmaytnr4WSdFpump`
 - 20:46Z FIONA (MIGRATED, $3,200,250 mcap, $7,277 5m vol): REJECT, Bundles: 9 linked wallet cluster(s) hold 28.8% of supply (>20%) (V17)  
@@ -88,14 +96,6 @@ Updated 2026-11-24T21:00:00Z (paper trading, never real money)
   CA `GzDqH7FnMqtuMupdc2ZQF6KX2yk9A4CbUBzs2Kaspump`
 - 20:42Z Red (FINAL_STRETCH, $16,775 mcap, $11,215 5m vol): PASS, PASS — brain unavailable, not trading blind.  
   CA `i5HexSXPrVdkJsRB3Lr7zDSbpFvd4DuwYMLPndTpump`
-- 20:23Z Slingoor (DIP, $168,796 mcap, $11,318 5m vol): PASS, PASS — brain unavailable, not trading blind.  
-  CA `6GLetugFEmy7P7SmLtg3zyZdz6rWCQ8gHPbPYZs9pump`
-- 20:22Z Valueless (MIGRATED, $424,368 mcap, $100,366 5m vol): REJECT, Top 10 hold 42.4% ex-pool (>25%) (V13)  
-  CA `F4V5yMyUzCPw8DSycktE2jjVJdHhKDvy88mfZEMDpump`
-- 20:14Z DONJENSEN (MIGRATED, $1,998,241 mcap, $2,877 5m vol): PASS, PASS — brain unavailable, not trading blind.  
-  CA `5LDowscYVD3a6ZS4m8gCqG5nU16eLTwRXhciFi1bpump`
-- 20:13Z Gateus (FINAL_STRETCH, $23,894 mcap, $14,291 5m vol): PASS, PASS — brain unavailable, not trading blind.  
-  CA `R1wzvySi8G1nQ6v1UykYB3aYe2HUpbY3UQkDtTgpump`
 
 ## What its skips did next (last 48h)
 A skip "ran" if the coin reached the first target (1.5x) from the skip price before a 20% drop, "dumped" if the drop came first. Sampled every 10 min, followed 6h.
@@ -106,7 +106,7 @@ A skip "ran" if the coin reached the first target (1.5x) from the skip price bef
     CA `8J7yeYsBzozSQ67Ji4kpun2gdfTFp8o9g6rNkYR3pump`
   - ran: VEST up to 2.65x  
     CA `5ajKDjnprQhAZb7psoUbDSdqocaQJgnWySLTmH8ppump`
-- top 10 over 25%: blocked 35, ran 5, dumped 27, flat 2, open 1 (saving losses: keep it)
+- top 10 over 25%: blocked 35, ran 5, dumped 28, flat 2, open 0 (saving losses: keep it)
   - ran: SNP6900 up to 2.76x  
     CA `DnbQKi146NDmwwji3f3q5i68HQnYyBEhoDyj2q3Npump`
   - ran: JENSEN up to 2.62x  
@@ -127,7 +127,7 @@ A skip "ran" if the coin reached the first target (1.5x) from the skip price bef
     CA `AdXjXfumPSSKk7PrfgDHcAsPvuxnKv7Zo9WZEWKbiDkh`
   - ran: Phil up to 2.05x  
     CA `GMLSyjZCKGtFwztp2mtT8PDeNUA6WEk7oQoe3QkFpump`
-- brain paced: blocked 29, ran 9, dumped 15, flat 0, open 5 (mixed)
+- brain paced: blocked 31, ran 9, dumped 16, flat 0, open 6 (mixed)
   - ran: Scamsem up to 1.56x  
     CA `5JWeGmA9z6yHd5F9P6B23A8wthho8BpZuDmQv5DfLoat`
   - ran: RUGSEM up to 1.5x  
@@ -141,10 +141,10 @@ A skip "ran" if the coin reached the first target (1.5x) from the skip price bef
     CA `CjPoozfB2Vub8pHFvdKuKUGJDLWuYC2U32yRTxMhpump`
   - ran: FUCK! up to 2.22x  
     CA `CSjwLiCLyaJqXQm9XCV3LdYWMYswbZ7JQ71JKX77pump`
-- thin 5m volume: blocked 15, ran 1, dumped 11, flat 3, open 0 (saving losses: keep it)
+- thin 5m volume: blocked 16, ran 1, dumped 11, flat 3, open 1 (saving losses: keep it)
   - ran: NINO up to 1.55x  
     CA `BqekG1RSPUthaKfStu7Uvyvr1eR6TchrQMp1M5r5pump`
-- dev share over 1%: blocked 13, ran 2, dumped 8, flat 3, open 0 (saving losses: keep it)
+- dev share over 1%: blocked 14, ran 2, dumped 8, flat 3, open 1 (saving losses: keep it)
   - ran: BLOOM up to 2.09x  
     CA `FyRXnHLBSeHHoigrgHR1hvcXiPbPCa5bxhVhEDampump`
   - ran: PI up to 1.77x  
@@ -201,11 +201,11 @@ Nothing in this scan is a setup. No mover clears the $10k 5-minute volume bar; t
 ## Moving most in its scans, last 30 min (1h volume)
 - DUMBMONEY: $382,689 1h vol, $484,428 mcap, +449% 1h  
   CA `GEHehS5Rr4rNCjvrHLjjV1avD4bjMsn53ywDGv1spump`
-- PumpBull: $139,264 1h vol, $283,091 mcap, +67% 1h  
-  CA `GzDqH7FnMqtuMupdc2ZQF6KX2yk9A4CbUBzs2Kaspump`
-- Red: $98,050 1h vol, $16,775 mcap, +664% 1h  
-  CA `i5HexSXPrVdkJsRB3Lr7zDSbpFvd4DuwYMLPndTpump`
+- Valueless: $301,337 1h vol, $1,287 mcap, -97% 1h  
+  CA `F4V5yMyUzCPw8DSycktE2jjVJdHhKDvy88mfZEMDpump`
 - FIONA: $83,628 1h vol, $3,205,518 mcap, +7% 1h  
   CA `B34nXKzCgsJb9ChLuSHPRpXLE3WFSWyeT8Cqkzzmpump`
-- Ghost: $82,148 1h vol, $4,900 mcap, +131% 1h  
-  CA `CCqphiiDYN4rcAphVDea9nfdLV1zaTtfPR3NHrcQpump`
+- SPECS: $75,805 1h vol, $15,853 mcap, +390% 1h  
+  CA `29SS1KJnthUqk8JhW13bvju6JWkeCAXafQY4XP8Epump`
+- GME: $72,160 1h vol, $20,572 mcap, +3060% 1h  
+  CA `HgZasASMgGh7hBrfkdfbUzqtusztDyqCsAfYKqaha6ea`
