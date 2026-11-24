@@ -1,13 +1,13 @@
 # Trencher live report
 
-Updated 2026-11-24T10:24:03Z (paper trading, never real money)
+Updated 2026-11-24T10:39:16Z (paper trading, never real money)
 
 - Equity: $74.23 (-25.8% vs $100 start)
 - Closed trades: 22, 3 wins
 - Fees paid: $14.78 (axiom $2.81, network $9.18, pool $2.66), plus $4.15 lost to slippage
 - New trades: WATCH-ONLY (scans and decides, buys nothing)
-- Brain: subscription, claude-haiku-5-5 for routine calls, claude-opus-5-5 for the daily review; 471 routine calls and 0 plan-limit hits in 48h
-- Watch log: 51 coins being followed, 3267 filed, 0 would-buys (6h follow, sampled every 2 min)
+- Brain: subscription, claude-haiku-5-5 for routine calls, claude-opus-5-5 for the daily review; 470 routine calls and 0 plan-limit hits in 48h
+- Watch log: 52 coins being followed, 3269 filed, 0 would-buys (6h follow, sampled every 2 min)
 
 ## Scorecard (after fees)
 - 22 closed, 3 won (14%), net $-25.79
@@ -73,9 +73,15 @@ Updated 2026-11-24T10:24:03Z (paper trading, never real money)
   CA `H4gHnZ3NCU7Z9XQwGX6YYJNyieGEW8pqwGRUcdSxpump`
 
 ## Last scan
-- 10:23Z: 2 coins, 2 with pairs, 0 passed the market filters, 0 researched
+- 10:38Z: 6 coins, 5 with pairs, 0 passed the market filters, 0 researched
 
 ## Coins it looked at, and why it passed
+- 10:27Z RUGSEM (MIGRATED, $35,943 mcap, $1,817 5m vol): REJECT, 5m volume $1,817 is dead (<$2,000) (V1)  
+  CA `9cDnmLRDWeJzcpyw8tSFAT7HS4Aunx6MmZWjMfrzpump`
+- 10:25Z DONJENSEN (MIGRATED, $2,071,275 mcap, $2,892 5m vol): PASS at conviction 2, PASS: flow below pace. 5m is $2.9k at 0.49x the hourly rate, sellers outnumber buyers 2:1, and no higher low has printed. It's also a $2.07M cap in a 25-copy field, on a fading story. (V1, V6, V13)  
+  CA `5LDowscYVD3a6ZS4m8gCqG5nU16eLTwRXhciFi1bpump`
+- 10:25Z CLAUDIO (MIGRATED, $142,327 mcap, $5,497 5m vol): REJECT, Top 10 hold 25.1% ex-pool (>25%) (V13)  
+  CA `5St93zSNQvWxK22Cj5mJBXcjUNNB452h5uNmrttSpump`
 - 10:21Z HACKINU (no setup, $9,868 mcap, $1,603 5m vol): REJECT, Hack story ("hack" in the name or ticker): these tend to go down, owner rule  
   CA `6AqxUg7adxVrs1p3ugiZ2a8hyRtsmgayRSKjrojLpump`
 - 10:11Z Scamsem (DIP, $90,450 mcap, $19,809 5m vol): REJECT, Dip with fading attention is a falling knife, not a dip (5m at 0.35x the hour's pace, under 0.6x)  
@@ -90,12 +96,6 @@ Updated 2026-11-24T10:24:03Z (paper trading, never real money)
   CA `5LDowscYVD3a6ZS4m8gCqG5nU16eLTwRXhciFi1bpump`
 - 09:26Z Scamsem (MIGRATED, $36,163 mcap, $14,426 5m vol): PASS at conviction 2, PASS. Same-ticker vamp field, bundle cluster, no printed higher low, 76% down a 6-minute-old chart. Blocker: split crowd (V1, V3).  
   CA `5JWeGmA9z6yHd5F9P6B23A8wthho8BpZuDmQv5DfLoat`
-- 09:17Z UCASH (MIGRATED, $235,971 mcap, $9,268 5m vol): PASS, PASS — brain unavailable, not trading blind.  
-  CA `7cFiqdT46zs7ooHWLFiLSaSQKLMibtokh9dBinsspump`
-- 09:08Z scamsem (DIP, $73,564 mcap, $146,529 5m vol): PASS at conviction 2, PASS — scamsem is 8 minutes old, down 40% in 5m, no higher low printed, and 26 coins copy the name. A copy-name spike, not a dip (V1, V6, V13).  
-  CA `4pf9HEnkdN3ihjVbfZg2NwbZkCJyUk4na44oysuWpump`
-- 08:57Z Guest (MIGRATED, $46,973 mcap, $37,696 5m vol): REJECT, RugCheck danger: Creator history of rugged tokens  
-  CA `7ZcoeMq5u29vjujGQQemFV2zYvy8sURwpNN9p9wGpump`
 
 ## What its skips did next (last 48h)
 A skip "ran" if the coin reached the first target (1.5x) from the skip price before a 20% drop, "dumped" if the drop came first. Sampled every 10 min, followed 6h.
@@ -120,7 +120,7 @@ A skip "ran" if the coin reached the first target (1.5x) from the skip price bef
     CA `2FYs4vApfj4ErsggpFDfzMv1WvxnyiLtzNEj84mS6TLh`
   - ran: WALLSTFLY up to 1.52x  
     CA `2DQbV7hsqxKVWmFakXGGhBbNyY28tDJ9YuJkojYrpump`
-- top 10 over 25%: blocked 28, ran 5, dumped 19, flat 3, open 1 (saving losses: keep it)
+- top 10 over 25%: blocked 29, ran 5, dumped 19, flat 3, open 2 (saving losses: keep it)
   - ran: GIF up to 2.16x  
     CA `B6wM98qkQKP71mhPA48S7No6TxM4KaXdFojDTZeUpump`
   - ran: SNP6900 up to 2.76x  
@@ -134,17 +134,14 @@ A skip "ran" if the coin reached the first target (1.5x) from the skip price bef
     CA `CjPoozfB2Vub8pHFvdKuKUGJDLWuYC2U32yRTxMhpump`
   - ran: FUCK! up to 2.22x  
     CA `CSjwLiCLyaJqXQm9XCV3LdYWMYswbZ7JQ71JKX77pump`
-- thin 5m volume: blocked 14, ran 1, dumped 10, flat 3, open 0 (saving losses: keep it)
+- thin 5m volume: blocked 15, ran 2, dumped 10, flat 3, open 0 (saving losses: keep it)
   - ran: NINO up to 1.55x  
     CA `BqekG1RSPUthaKfStu7Uvyvr1eR6TchrQMp1M5r5pump`
+  - ran: RUGSEM up to 1.54x  
+    CA `9cDnmLRDWeJzcpyw8tSFAT7HS4Aunx6MmZWjMfrzpump`
 - dev share over 1%: blocked 11, ran 1, dumped 7, flat 3, open 0 (saving losses: keep it)
   - ran: BLOOM up to 2.09x  
     CA `FyRXnHLBSeHHoigrgHR1hvcXiPbPCa5bxhVhEDampump`
-- bundles over the line: blocked 10, ran 2, dumped 4, flat 4, open 0 (saving losses: keep it)
-  - ran: RNV up to 2.35x  
-    CA `A2nbXtQvvRMvWtifCkV8cYepwcC4M7iA1jVMwAh6pump`
-  - ran: CLAUDIO up to 1.6x  
-    CA `5St93zSNQvWxK22Cj5mJBXcjUNNB452h5uNmrttSpump`
 - falling knife / no higher low: blocked 10, ran 3, dumped 6, flat 1, open 0 (saving losses: keep it)
   - ran: Fly up to 1.52x  
     CA `84tAcSK5L9kuQEVM8C8vMHXnfdA83nGBT2nYfSbPUcAc`
@@ -152,6 +149,9 @@ A skip "ran" if the coin reached the first target (1.5x) from the skip price bef
     CA `2FYs4vApfj4ErsggpFDfzMv1WvxnyiLtzNEj84mS6TLh`
   - ran: Mogmas up to 1.63x  
     CA `Cocrz7BR2xE2sgKn3VbmaTXH6HTVgCiVFWTVWmyTpump`
+- bundles over the line: blocked 9, ran 1, dumped 4, flat 4, open 0 (saving losses: keep it)
+  - ran: RNV up to 2.35x  
+    CA `A2nbXtQvvRMvWtifCkV8cYepwcC4M7iA1jVMwAh6pump`
 - other: blocked 9, ran 3, dumped 6, flat 0, open 0 (saving losses: keep it)
   - ran: ZOL up to 1.64x  
     CA `AQfw8J74V17erZsmMz4oK474eVLBaP44gD33vVbhtHo5`
@@ -201,11 +201,11 @@ Meta, from the rows: self-aware scam names are the only theme with real flow rig
 ## Moving most in its scans, last 30 min (1h volume)
 - Scamsem: $677,184 1h vol, $90,294 mcap, +3% 1h  
   CA `5JWeGmA9z6yHd5F9P6B23A8wthho8BpZuDmQv5DfLoat`
-- scamsem: $169,163 1h vol, $7,852 mcap, -77% 1h  
+- scamsem: $72,869 1h vol, $6,052 mcap, -84% 1h  
   CA `4pf9HEnkdN3ihjVbfZg2NwbZkCJyUk4na44oysuWpump`
-- UCASH: $142,278 1h vol, $141,264 mcap, -34% 1h  
-  CA `7cFiqdT46zs7ooHWLFiLSaSQKLMibtokh9dBinsspump`
-- NIO: $79,081 1h vol, $13,564 mcap, -50% 1h  
+- DONJENSEN: $70,340 1h vol, $2,071,275 mcap, -8% 1h  
+  CA `5LDowscYVD3a6ZS4m8gCqG5nU16eLTwRXhciFi1bpump`
+- NIO: $69,252 1h vol, $9,048 mcap, -73% 1h  
   CA `AZNUcRSpGMTpGCh35ApPntVBuUQJ95saGwv6DKojUuSC`
-- KOL: $65,072 1h vol, $2,573 mcap, -4% 1h  
+- KOL: $65,339 1h vol, $2,134 mcap, -21% 1h  
   CA `AXAQjt7H1YdP1fFmv6JLCKoHWvbAxszEhxt9vj7JWU65`
