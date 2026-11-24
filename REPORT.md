@@ -1,13 +1,13 @@
 # Trencher live report
 
-Updated 2026-11-24T10:54:25Z (paper trading, never real money)
+Updated 2026-11-24T11:09:25Z (paper trading, never real money)
 
 - Equity: $74.23 (-25.8% vs $100 start)
 - Closed trades: 22, 3 wins
 - Fees paid: $14.78 (axiom $2.81, network $9.18, pool $2.66), plus $4.15 lost to slippage
 - New trades: WATCH-ONLY (scans and decides, buys nothing)
-- Brain: subscription, claude-haiku-5-5 for routine calls, claude-opus-5-5 for the daily review; 470 routine calls and 0 plan-limit hits in 48h
-- Watch log: 49 coins being followed, 3273 filed, 0 would-buys (6h follow, sampled every 2 min)
+- Brain: subscription, claude-haiku-5-5 for routine calls, claude-opus-5-5 for the daily review; 469 routine calls and 0 plan-limit hits in 48h
+- Watch log: 47 coins being followed, 3276 filed, 0 would-buys (6h follow, sampled every 2 min)
 
 ## Scorecard (after fees)
 - 22 closed, 3 won (14%), net $-25.79
@@ -73,9 +73,11 @@ Updated 2026-11-24T10:54:25Z (paper trading, never real money)
   CA `H4gHnZ3NCU7Z9XQwGX6YYJNyieGEW8pqwGRUcdSxpump`
 
 ## Last scan
-- 10:53Z: 2 coins, 1 with pairs, 0 passed the market filters, 0 researched
+- 11:08Z: 4 coins, 3 with pairs, 0 passed the market filters, 0 researched
 
 ## Coins it looked at, and why it passed
+- 10:57Z Scamsem (MIGRATED, $56,952 mcap, $5,540 5m vol): PASS at conviction 2, PASS: Scamsem is a joke name riding the ANSEM hack headlines, the crowd is leaving, and the chart is a saw-tooth. Blocker: "dead story" plus bottom-buy theme gate. (V3, V13)  
+  CA `5JWeGmA9z6yHd5F9P6B23A8wthho8BpZuDmQv5DfLoat`
 - 10:48Z UCASH (MIGRATED, $77,721 mcap, $4,375 5m vol): PASS at conviction 2, PASS — 98% off a $3.8M peak, 5m flow at 0.47x its hourly pace, no higher low printed, and the story isn't on the radar. Crowd left. (V1, V6)  
   CA `7cFiqdT46zs7ooHWLFiLSaSQKLMibtokh9dBinsspump`
 - 10:27Z RUGSEM (MIGRATED, $35,943 mcap, $1,817 5m vol): REJECT, 5m volume $1,817 is dead (<$2,000) (V1)  
@@ -94,8 +96,6 @@ Updated 2026-11-24T10:54:25Z (paper trading, never real money)
   CA `HKiMA2mKQHU2cjfZ4Kbmru5GBGCauSNqPtpu8cfmpump`
 - 09:39Z CLAUDIO (MIGRATED, $103,945 mcap, $2,022 5m vol): REJECT, Bundles: 4 linked wallet cluster(s) hold 47.8% of supply (>20%) (V17)  
   CA `5St93zSNQvWxK22Cj5mJBXcjUNNB452h5uNmrttSpump`
-- 09:39Z DONJENSEN (MIGRATED, $2,282,614 mcap, $4,128 5m vol): PASS at conviction 2, PASS. Flow below pace, 14.6% off a peak only 0.7h old, and it's a $2.3M cap with one of 25 copies. The Jensen news has no money behind it. (V1, V6, V13)  
-  CA `5LDowscYVD3a6ZS4m8gCqG5nU16eLTwRXhciFi1bpump`
 
 ## What its skips did next (last 48h)
 A skip "ran" if the coin reached the first target (1.5x) from the skip price before a 20% drop, "dumped" if the drop came first. Sampled every 10 min, followed 6h.
@@ -113,14 +113,14 @@ A skip "ran" if the coin reached the first target (1.5x) from the skip price bef
     CA `AdXjXfumPSSKk7PrfgDHcAsPvuxnKv7Zo9WZEWKbiDkh`
   - ran: Phil up to 2.05x  
     CA `GMLSyjZCKGtFwztp2mtT8PDeNUA6WEk7oQoe3QkFpump`
-- flow below pace: blocked 34, ran 7, dumped 24, flat 0, open 3 (saving losses: keep it)
+- flow below pace: blocked 34, ran 7, dumped 25, flat 0, open 2 (saving losses: keep it)
   - ran: OpenIndex up to 1.63x  
     CA `FuKY3dk7QmpbDdQRjzbjB3G6PiCuqKNvN4dAWDpwpump`
   - ran: hCAT up to 1.52x  
     CA `2FYs4vApfj4ErsggpFDfzMv1WvxnyiLtzNEj84mS6TLh`
   - ran: WALLSTFLY up to 1.52x  
     CA `2DQbV7hsqxKVWmFakXGGhBbNyY28tDJ9YuJkojYrpump`
-- top 10 over 25%: blocked 29, ran 5, dumped 19, flat 3, open 2 (saving losses: keep it)
+- top 10 over 25%: blocked 29, ran 5, dumped 20, flat 3, open 1 (saving losses: keep it)
   - ran: GIF up to 2.16x  
     CA `B6wM98qkQKP71mhPA48S7No6TxM4KaXdFojDTZeUpump`
   - ran: SNP6900 up to 2.76x  
@@ -199,13 +199,13 @@ Nothing has a positive after-cost edge yet. All 229 settled coins average -8.7% 
 Meta, from the rows: self-aware scam names are the only theme with real flow right now. scamsem (Raydium, $90k cap, $13.7k 5m, 55% buys) and its pumpswap twin, RUGSEM, and KOL "Key Opinion Loser" all show 5m volume at or above market cap, which is a farm shape until holders and bundles say otherwise (V13). Trump/Jensen names are fading: JENSEN does $5.4k 5m on a $337k cap, and the headlines describe the token at record lows. Plain common-word names with fresh age, like "the black" (+146% 1h, $9k cap), are spiking on thin 5m, while old animal/word and crypto-native names are dead or bleeding (JOB and NOHR near $26 to $500 5m, Satoshi -73% 1h on $476 5m). Setups: only scamsem (Raydium) clears the $10k 5m and $30k cap bars, so it's a research candidate at low conviction, a probe at most, and its joke name is not a thesis. UCASH (84% buys, $8.5k 5m, -34% 1h) and the black don't clear the $10k 5m floor yet, so they're not setups until they do. I dropped the crawler's Satoshi setup: its summary said $18k 5m on a $63k cap, but the raw row is $476 5m on a $9.7k cap, so the summary is wrong.
 
 ## Moving most in its scans, last 30 min (1h volume)
+- Scamsem: $188,701 1h vol, $57,005 mcap, -51% 1h  
+  CA `5JWeGmA9z6yHd5F9P6B23A8wthho8BpZuDmQv5DfLoat`
 - UCASH: $112,668 1h vol, $75,419 mcap, -41% 1h  
   CA `7cFiqdT46zs7ooHWLFiLSaSQKLMibtokh9dBinsspump`
-- DONJENSEN: $70,340 1h vol, $2,071,275 mcap, -8% 1h  
-  CA `5LDowscYVD3a6ZS4m8gCqG5nU16eLTwRXhciFi1bpump`
+- Trenchers: $81,114 1h vol, $4,468 mcap, -84% 1h  
+  CA `BWtNaVHGyQRv8s358qWWn2qGmuavR9vn8upFnTKoBwtc`
+- BULLSHIT: $79,391 1h vol, $8,655 mcap, +222% 1h  
+  CA `CfRas4U7AJ28fJTNEWdWa8Lmzg9xvsfVmY8Ypyompump`
 - KOL: $65,350 1h vol, $2,146 mcap, -20% 1h  
   CA `AXAQjt7H1YdP1fFmv6JLCKoHWvbAxszEhxt9vj7JWU65`
-- black: $56,337 1h vol, $2,576 mcap, -30% 1h  
-  CA `ETK8NSdg4Va29Roj1UcChqwCVSarq2CZSPbgeTKCpump`
-- RUGSEM: $53,184 1h vol, $36,009 mcap, +24% 1h  
-  CA `9cDnmLRDWeJzcpyw8tSFAT7HS4Aunx6MmZWjMfrzpump`
