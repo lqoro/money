@@ -1,13 +1,13 @@
 # Trencher live report
 
-Updated 2026-11-24T05:21:07Z (paper trading, never real money)
+Updated 2026-11-24T05:36:20Z (paper trading, never real money)
 
 - Equity: $74.23 (-25.8% vs $100 start)
 - Closed trades: 22, 3 wins
 - Fees paid: $14.78 (axiom $2.81, network $9.18, pool $2.66), plus $4.15 lost to slippage
 - New trades: WATCH-ONLY (scans and decides, buys nothing)
 - Brain: subscription, claude-haiku-5-5 for routine calls, claude-opus-5-5 for the daily review; 475 routine calls and 0 plan-limit hits in 48h
-- Watch log: 103 coins being followed, 3175 filed, 0 would-buys (6h follow, sampled every 2 min)
+- Watch log: 102 coins being followed, 3178 filed, 0 would-buys (6h follow, sampled every 2 min)
 
 ## Scorecard (after fees)
 - 22 closed, 3 won (14%), net $-25.79
@@ -73,9 +73,13 @@ Updated 2026-11-24T05:21:07Z (paper trading, never real money)
   CA `H4gHnZ3NCU7Z9XQwGX6YYJNyieGEW8pqwGRUcdSxpump`
 
 ## Last scan
-- 05:20Z: 4 coins, 4 with pairs, 0 passed the market filters, 0 researched
+- 05:35Z: 4 coins, 4 with pairs, 0 passed the market filters, 0 researched
 
 ## Coins it looked at, and why it passed
+- 05:29Z UCASH (MIGRATED, $154,282 mcap, $3,581 5m vol): PASS at conviction 2, PASS: flow below pace (0.4x) on a coin 96% off its $3.8M peak, with a 1.7-day-old domain and no GitHub. This is a falling knife, not a DIP (V1, V6, V13).  
+  CA `7cFiqdT46zs7ooHWLFiLSaSQKLMibtokh9dBinsspump`
+- 05:22Z JENSEN (DIP, $564,586 mcap, $3,165 5m vol): REJECT, Top 10 hold 25.6% ex-pool (>25%) (V13)  
+  CA `HKiMA2mKQHU2cjfZ4Kbmru5GBGCauSNqPtpu8cfmpump`
 - 05:17Z ACHI (FINAL_STRETCH, $15,349 mcap, $16,262 5m vol): PASS at conviction 3, PASS: split crowd. ACHI leads a 28-copy "achi" field, but a 5.5% bundle cluster sits inside it and the coin is up 105% in 5m. Chasing a spike with no higher low. (V1, V3, V13)  
   CA `HADu1KBKhLhzmqyrdbF96F73XP892DTq3MC2dztApump`
 - 05:09Z NAJIN (FINAL_STRETCH, $20,180 mcap, $8,357 5m vol): PASS at conviction 3, PASS: chasing spike. NAJIN is up 176% on the 5m with 5m volume at 4.3x its hourly pace, and the rhino theme runs at 0.61x across 18 copies. Not a pullback. (V1, V6)  
@@ -92,10 +96,6 @@ Updated 2026-11-24T05:21:07Z (paper trading, never real money)
   CA `9SzSjbqTRb8f6vVeL5tUBwpppJFwLf1BfYkUwFeEpump`
 - 04:47Z Spidercow (MIGRATED, $105,059 mcap, $24,775 5m vol): PASS at conviction 2, PASS: chasing spike, 6.4% off a 14-minute-old peak after a +30% 5m candle, and a vamp field where this CA isn't the 5m leader (V1, V3).  
   CA `9oxUBRyk9EXfQHMchya45p3xsF2fbNzzDUNKzEfKpump`
-- 04:43Z UCASH (MIGRATED, $158,673 mcap, $6,034 5m vol): PASS at conviction 2, PASS: flow below pace, no printed higher low, bottom-buy gate fails, and the website says the product is still in development. Bounce bag. (V1, V3, V13)  
-  CA `7cFiqdT46zs7ooHWLFiLSaSQKLMibtokh9dBinsspump`
-- 04:36Z JENSEN (DIP, $731,010 mcap, $2,081 5m vol): REJECT, Top 10 hold 25.6% ex-pool (>25%) (V13)  
-  CA `HKiMA2mKQHU2cjfZ4Kbmru5GBGCauSNqPtpu8cfmpump`
 
 ## What its skips did next (last 48h)
 A skip "ran" if the coin reached the first target (1.5x) from the skip price before a 20% drop, "dumped" if the drop came first. Sampled every 10 min, followed 6h.
@@ -113,7 +113,7 @@ A skip "ran" if the coin reached the first target (1.5x) from the skip price bef
     CA `xEK58Qa2xZ7C36Z2g3Jjq1WHY561CvvnJkLpgJspump`
   - ran: WOFL up to 2.62x  
     CA `AdXjXfumPSSKk7PrfgDHcAsPvuxnKv7Zo9WZEWKbiDkh`
-- flow below pace: blocked 35, ran 6, dumped 25, flat 0, open 4 (saving losses: keep it)
+- flow below pace: blocked 34, ran 6, dumped 24, flat 0, open 4 (saving losses: keep it)
   - ran: snowball up to 1.59x  
     CA `3D7YQcnXi6RMjWxheiE8VLuGXJTtgQkmyugGYvzjpump`
   - ran: OpenIndex up to 1.63x  
@@ -137,16 +137,16 @@ A skip "ran" if the coin reached the first target (1.5x) from the skip price bef
 - thin 5m volume: blocked 14, ran 1, dumped 10, flat 1, open 2 (saving losses: keep it)
   - ran: NINO up to 1.55x  
     CA `BqekG1RSPUthaKfStu7Uvyvr1eR6TchrQMp1M5r5pump`
-- falling knife / no higher low: blocked 12, ran 3, dumped 7, flat 2, open 0 (saving losses: keep it)
+- dev share over 1%: blocked 11, ran 1, dumped 7, flat 3, open 0 (saving losses: keep it)
+  - ran: BLOOM up to 2.09x  
+    CA `FyRXnHLBSeHHoigrgHR1hvcXiPbPCa5bxhVhEDampump`
+- falling knife / no higher low: blocked 11, ran 3, dumped 6, flat 2, open 0 (saving losses: keep it)
   - ran: Fly up to 1.52x  
     CA `84tAcSK5L9kuQEVM8C8vMHXnfdA83nGBT2nYfSbPUcAc`
   - ran: hCAT up to 1.52x  
     CA `2FYs4vApfj4ErsggpFDfzMv1WvxnyiLtzNEj84mS6TLh`
   - ran: Mogmas up to 1.63x  
     CA `Cocrz7BR2xE2sgKn3VbmaTXH6HTVgCiVFWTVWmyTpump`
-- dev share over 1%: blocked 11, ran 1, dumped 7, flat 3, open 0 (saving losses: keep it)
-  - ran: BLOOM up to 2.09x  
-    CA `FyRXnHLBSeHHoigrgHR1hvcXiPbPCa5bxhVhEDampump`
 - bundles over the line: blocked 10, ran 1, dumped 5, flat 2, open 2 (saving losses: keep it)
   - ran: RNV up to 2.35x  
     CA `A2nbXtQvvRMvWtifCkV8cYepwcC4M7iA1jVMwAh6pump`
@@ -195,13 +195,13 @@ Nothing has a positive after-cost edge yet. All 229 settled coins average -8.7% 
 The meta is animal creatures, and the Jensen/AI names are fading. Animals are rising: Spidercow ($105k mcap, $24.8k 5m, 65% buys, +247% 1h, about 12 min old) and NAJIN (rhino, $20k mcap, $8.8k 5m, 62% buys, +140% 1h); FATU, another rhino, is down 91%. Jensen/AI is mostly dying: JENSEN is -98% with no 5m volume, opus 4.5 is -87%, and DONJENSEN is flat on $2M with 43% buys. GROKIA's +873% hour rests on only $3.2k of 5m volume against a $2.4M cap, which looks like exit liquidity, and the crawler's $54k figure doesn't match the raw row. Setups to research, not enter: Spidercow (clears the $10k 5m bar; needs holder, dev and bundle checks and a pullback that holds on buys) and NAJIN only if its 5m volume clears $10k. Tiny caps under $5k with sell-heavy flow (NOCAP, OPUS, GOOBIE, KAPIPLARA) are not worth a look (V1, V6, V13).
 
 ## Moving most in its scans, last 30 min (1h volume)
-- SUMMITPRO: $182,794 1h vol, $100,365 mcap, +96% 1h  
-  CA `9SzSjbqTRb8f6vVeL5tUBwpppJFwLf1BfYkUwFeEpump`
-- yippee: $110,056 1h vol, $7,672 mcap, -73% 1h  
+- Spidercow: $306,662 1h vol, $1,384 mcap, -98% 1h  
+  CA `9oxUBRyk9EXfQHMchya45p3xsF2fbNzzDUNKzEfKpump`
+- UCASH: $108,180 1h vol, $153,918 mcap, -50% 1h  
+  CA `7cFiqdT46zs7ooHWLFiLSaSQKLMibtokh9dBinsspump`
+- yippee: $63,410 1h vol, $8,853 mcap, -71% 1h  
   CA `3mTQnHtok9wnT7yDA1G9BfMh5xNbyQerYkpfTDyKpump`
-- GROKIA: $103,366 1h vol, $2,394,846 mcap, +873% 1h  
-  CA `3cL47ohWa2HApLYKtqPsqkjaxJ6HLvT5Ri1KvWdXpump`
-- DONJENSEN: $94,437 1h vol, $1,995,003 mcap, +14% 1h  
-  CA `5LDowscYVD3a6ZS4m8gCqG5nU16eLTwRXhciFi1bpump`
-- Spidercow: $88,252 1h vol, $2,764 mcap, -90% 1h  
+- ACHI: $46,834 1h vol, $15,349 mcap, +533% 1h  
+  CA `HADu1KBKhLhzmqyrdbF96F73XP892DTq3MC2dztApump`
+- Spidercow: $44,317 1h vol, $2,609 mcap, -89% 1h  
   CA `8EakoV8ox4RMK9R8r59X74iiK5bHLmYmgVyBeK29pump`
