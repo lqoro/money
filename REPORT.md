@@ -1,13 +1,13 @@
 # Trencher live report
 
-Updated 2026-11-25T22:13:32Z (paper trading, never real money)
+Updated 2026-11-25T22:28:35Z (paper trading, never real money)
 
 - Equity: $74.23 (-25.8% vs $100 start)
 - Closed trades: 22, 3 wins
 - Fees paid: $14.78 (axiom $2.81, network $9.18, pool $2.66), plus $4.15 lost to slippage
 - New trades: WATCH-ONLY (scans and decides, buys nothing)
-- Brain: subscription, claude-haiku-5-5 for routine calls, claude-opus-5-5 for the daily review; 399 routine calls and 0 plan-limit hits in 48h
-- Watch log: 102 coins being followed, 3620 filed, 0 would-buys (6h follow, sampled every 2 min)
+- Brain: subscription, claude-haiku-5-5 for routine calls, claude-opus-5-5 for the daily review; 401 routine calls and 0 plan-limit hits in 48h
+- Watch log: 103 coins being followed, 3622 filed, 0 would-buys (6h follow, sampled every 2 min)
 
 ## Scorecard (after fees)
 - 22 closed, 3 won (14%), net $-25.79
@@ -73,9 +73,15 @@ Updated 2026-11-25T22:13:32Z (paper trading, never real money)
   CA `H4gHnZ3NCU7Z9XQwGX6YYJNyieGEW8pqwGRUcdSxpump`
 
 ## Last scan
-- 22:13Z: 1 coins, 1 with pairs, 0 passed the market filters, 0 researched
+- 22:27Z: 3 coins, 3 with pairs, 0 passed the market filters, 0 researched
 
 ## Coins it looked at, and why it passed
+- 22:23Z UBI (MIGRATED, $47,899 mcap, $8,032 5m vol): PASS at conviction 3, PASS: flow below pace (5m at 0.75x hourly) in a 19-copy UBI field with no catalyst on a bottom buy. Let it go (V1, V6, V13).  
+  CA `hCM8Mga76sK983j3Gvui427SakSGYnG1tDi4Tsipump`
+- 22:17Z Pompom (DIP, $255,903 mcap, $2,741 5m vol): REJECT, Dip with fading attention is a falling knife, not a dip (5m at 0.37x the hour's pace, under 0.6x)  
+  CA `5EmvWDizkpjAXbcfCcVq69w1id8GaLzi4LLwtuSgpump`
+- 22:17Z SAGEMAN (FINAL_STRETCH, $17,291 mcap, $26,870 5m vol): PASS at conviction 2, PASS — 5m up 180% on 8x hourly pace is a spike, and 7 "sageman" copies split the crowd on a 7-minute-old pump.fun token with no story behind it. Blocker: chasing spike. (V1, V6, V13)  
+  CA `4VYg6PKqqb4hi9c49d7YD78217ehHxZpaXwGTD2Gpump`
 - 22:12Z Pnut (MIGRATED, $109,953 mcap, $21,679 5m vol): PASS at conviction 3, PASS. Pnut is the copy in a squirrel field where SpaceX Squirrel leads, and 5m flow is at 0.59x pace on a theme running at 0.3x. Blockers: flow below pace, split crowd. (V1, V3, V6)  
   CA `9bgy4dVrPqa7HozGvBRV5Qy1ccbDdYHHMyzKrJjqpump`
 - 22:10Z NORFEATH (MIGRATED, $471,722 mcap, $19,525 5m vol): PASS at conviction 3, PASS: 8.5% off a $516k high on 5m flow at 0.57x pace with no printed higher low. The parade catalyst is tomorrow, so watch it, don't chase it (V1, V6).  
@@ -90,16 +96,10 @@ Updated 2026-11-25T22:13:32Z (paper trading, never real money)
   CA `B34nXKzCgsJb9ChLuSHPRpXLE3WFSWyeT8Cqkzzmpump`
 - 21:58Z LoreChan (no setup, $28,746 mcap, $27,167 5m vol): REJECT, No setup fits: not Final Stretch, not a migrated runner, not a healthy dip  
   CA `FW1jbvnrFYfbxbTnHEF82PiYPMXhQ6fUuyxzZjzypump`
-- 21:58Z Squirrel (DIP, $150,238 mcap, $34,758 5m vol): PASS at conviction 3, PASS: theme pace 0.54x, no catalyst, 15 copies, and a saw-tooth chart with price 4x above its low. A dip with no story is a bag (V1, V13).  
-  CA `EmU2QZ3RKBxaydKn8ix9rrSrWbzPNVifVTa4NLH4pump`
-- 21:55Z Pompompurin (MIGRATED, $287,336 mcap, $18,449 5m vol): PASS at conviction 2, PASS: Pompompurin is 88% off its $2.34M high with 5m flow at 0.4x pace on a theme running at 0.44x. The holders are clean, but the money shape isn't there. Blockers: "big drawdown", "flow below pace", "dead theme". (V1, V6)  
-  CA `H2iscCQ4RiZ5ufu3UTBS2VDrVqbNY8gN7eVSSASBpump`
-- 21:53Z MONEY (MIGRATED, $692,485 mcap, $42,470 5m vol): REJECT, Dev holds 6.8% (>1%) (V13, V17)  
-  CA `6sA2MQ16pug6gUo78UXBiJjqWWpwejRKk6s4BNdEpump`
 
 ## What its skips did next (last 48h)
 A skip "ran" if the coin reached the first target (1.5x) from the skip price before a 20% drop, "dumped" if the drop came first. Sampled every 10 min, followed 6h.
-- top 10 over 25%: blocked 41, ran 7, dumped 32, flat 1, open 1 (saving losses: keep it)
+- top 10 over 25%: blocked 40, ran 7, dumped 31, flat 1, open 1 (saving losses: keep it)
   - ran: JENSEN up to 2.62x  
     CA `GaNJeASYBM9k3TvEeUC2Pdyu1TjcpzTmPpoom92fpump`
   - ran: GOAT up to 1.53x  
@@ -113,7 +113,7 @@ A skip "ran" if the coin reached the first target (1.5x) from the skip price bef
     CA `9cDnmLRDWeJzcpyw8tSFAT7HS4Aunx6MmZWjMfrzpump`
   - ran: SHHFT up to 1.61x  
     CA `GqMg4TRt5U5HRK6oeZYwCF1Jz7Ym9MSzWSoFCtFsbzf6`
-- flow below pace: blocked 32, ran 6, dumped 22, flat 0, open 4 (saving losses: keep it)
+- flow below pace: blocked 32, ran 5, dumped 23, flat 1, open 3 (saving losses: keep it)
   - ran: Jesus up to 1.64x  
     CA `Gy5BUDnpJMWRsNVKh9sRtsBGunFXKKrbroQRoydQpump`
   - ran: GROKIA up to 1.51x  
@@ -127,27 +127,27 @@ A skip "ran" if the coin reached the first target (1.5x) from the skip price bef
     CA `7ykeHoEnjnGkY6tqteXn47fdGtd7kfXWghiyZ7YKpump`
   - ran: Snowball up to 3.52x  
     CA `9TKbd3VFaMSXsEAicD9JVQWpWwAoLi4fSgWmZL2cpump`
-- near the high / chasing: blocked 25, ran 8, dumped 16, flat 0, open 1 (saving losses: keep it)
+- near the high / chasing: blocked 26, ran 8, dumped 17, flat 0, open 1 (saving losses: keep it)
   - ran: Phil up to 2.05x  
     CA `GMLSyjZCKGtFwztp2mtT8PDeNUA6WEk7oQoe3QkFpump`
   - ran: Jesus up to 1.64x  
     CA `Gy5BUDnpJMWRsNVKh9sRtsBGunFXKKrbroQRoydQpump`
   - ran: FATU up to 2.89x  
     CA `3reEjCbDFht7LnNdKncQ3vohYDbAMJWXkbzWLSNhpump`
-- too new / sniping: blocked 22, ran 4, dumped 17, flat 0, open 1 (saving losses: keep it)
+- too new / sniping: blocked 22, ran 4, dumped 18, flat 0, open 0 (saving losses: keep it)
   - ran: BABYANSEM up to 2.77x  
     CA `F3VctV9FqDgiyqaztN6z78bgWy27eH7DBBHW1vjpump`
   - ran: Merged up to 2.18x  
     CA `AMYpNGi5aGrKr1ZDsotUdWh7k1mMi569ygtaHJmErGEd`
   - ran: Boor up to 1.56x  
     CA `GHFpSSw2ZMjmKCyc1wrHUjJiqnJeP18mekY9GL1Xpump`
-- dev share over 1%: blocked 14, ran 3, dumped 9, flat 0, open 2 (saving losses: keep it)
+- dev share over 1%: blocked 14, ran 4, dumped 9, flat 0, open 1 (saving losses: keep it)
   - ran: BLOOM up to 2.09x  
     CA `FyRXnHLBSeHHoigrgHR1hvcXiPbPCa5bxhVhEDampump`
   - ran: PI up to 1.77x  
     CA `D2AK5DvBj8AxN5VX1t6bjv7muJVPUx4hFPowVRWYpump`
-  - ran: Grinch up to 1.94x  
-    CA `J1b5HnRzmXsYK5akPTFtBR7B4E74JG8eyULodd7ypump`
+  - ran: MONEY up to 2.15x  
+    CA `6sA2MQ16pug6gUo78UXBiJjqWWpwejRKk6s4BNdEpump`
 - falling knife (code): blocked 14, ran 2, dumped 10, flat 0, open 2 (saving losses: keep it)
   - ran: Jimmies up to 1.53x  
     CA `GisWWjhwrSud4aFGSHvTMt85Ky14sY7LeBFCpfoFpump`
@@ -196,16 +196,16 @@ Nothing has a positive edge after costs. All 213 settled coins came out at -12.2
 - [2026-11-02 20:25] I expected Slingoor, a clean MIGRATED leader with $25k of 5m flow at pace and a 0.77 buy share, to retest its $408k high from $304k. It never went green (0.98x peak) and hit the -20% stop in 2 minutes, a -$2.86 probe. My own thesis admitted there was no printed higher low after a peak only 6 minutes old, so this confirms the money-shape rule: buy share and flow are not structure (V1, V6). Next time a MIGRATED pullback with no higher low above the hourly low is a PASS with blocker "no higher low", not a probe. This is one loss, so it adds no new ban beyond the rule I already have.
 
 ## Meta right now
-The meta is live, not quiet. The movers show cute animals as the one theme with real money behind it: Pnut (Peanut the Squirrel, $66k mcap, $75k 5m, 56% buys, 0.3h old), SpaceX Squirrel ($108k, $29k 5m, 89% buys, minutes old), and Pompompurin ($1.4M, $98k 5m, 69% buys). Pompompurin is already being vamped: the second "Pompom" at $436k with $5.5k 5m is the copy, so the only trade is the one carrying the volume. The finance-joke names (Only Up, Universal Basic Income, 1 share and a dream) are mixed. UBI's $116k 5m all landed in its last six minutes on flat price, so it's a burst to watch, not a setup. The dead copies (COIN, VYBE, MAGGIE) show 1h volume with almost nothing in 5m, which is the fade. Setups to research, not buy: Pnut on a pullback that holds its 5m flow, and OnlyUp ($404k, $25k 5m, 78% buys) as a conviction-5 research name, with holder, dev and bundle checks run before any entry and stops set where each thesis breaks. Caveat: the crawler's CRIME, GRAVY and Thanksgiving names don't appear in scan_movers, and the Trump-dinner headlines aren't reflected in the movers, so I'm treating those as unconfirmed.
+The meta is live and it's cute animals plus degen platform jokes. Squirrels and animals carry the most real flow: SpaceX Squirrel ($137k mcap, $36k 5m, 81% buys, 0.9h old), Pnut 9bgy ($110k, $22k 5m, 52% buys) and Pompompurin ($287k, $18k 5m, 92% buys), with Norfeather ($472k, $20k 5m) and Fiona the Hippo fading behind them. The vamps are dead: the second Pnut (CKWk) at $5.7k and Pompom Bao at $1.3k show 0 or near-0 5m volume on big 1h volume, so that's the fade pattern. The platform/degen theme is a spike, not a trend: 4chanpump.fun ($143k 5m, +546% 1h) is churning at 51% buys, and MONEY ($692k, $38k 5m, 50% buys) is running on half its hourly pace. Research only, not buys: SpaceX Squirrel as the freshest animal with real buyers, and Pnut 9bgy if its 5m flow holds. Holder, dev and bundle checks come before any entry, and stops go where each thesis breaks. The crawler's OnlyUp "$404k, 78% buys" claim is contradicted by scan_movers, which shows it at $1.4k mcap, -99.8% 1h and 1% buys, so I'm dropping it. The Trump headlines aren't showing up in the movers, so I'm treating them as background, not the meta.
 
 ## Moving most in its scans, last 30 min (1h volume)
-- MONEY: $594,928 1h vol, $692,485 mcap, +540% 1h  
-  CA `6sA2MQ16pug6gUo78UXBiJjqWWpwejRKk6s4BNdEpump`
 - Squirrel: $567,832 1h vol, $137,192 mcap, +287% 1h  
   CA `EmU2QZ3RKBxaydKn8ix9rrSrWbzPNVifVTa4NLH4pump`
-- Pompompurin: $555,167 1h vol, $287,336 mcap, +61% 1h  
-  CA `H2iscCQ4RiZ5ufu3UTBS2VDrVqbNY8gN7eVSSASBpump`
 - Pnut: $441,437 1h vol, $109,953 mcap, -7% 1h  
   CA `9bgy4dVrPqa7HozGvBRV5Qy1ccbDdYHHMyzKrJjqpump`
 - NORFEATH: $411,073 1h vol, $471,722 mcap, +116% 1h  
   CA `3gmFG4sFDJErDV8pacFrL2uUPXeGJTYLjfRy4hFypump`
+- UBI: $127,468 1h vol, $45,565 mcap, -32% 1h  
+  CA `hCM8Mga76sK983j3Gvui427SakSGYnG1tDi4Tsipump`
+- naldloninu: $100,063 1h vol, $16,832 mcap, -42% 1h  
+  CA `F933ru1xeTc9r1jhpaKr3fm8QwQuTGvwfEoxg21Epump`
