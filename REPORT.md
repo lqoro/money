@@ -1,13 +1,13 @@
 # Trencher live report
 
-Updated 2026-11-25T05:34:29Z (paper trading, never real money)
+Updated 2026-11-25T05:49:32Z (paper trading, never real money)
 
 - Equity: $74.23 (-25.8% vs $100 start)
 - Closed trades: 22, 3 wins
 - Fees paid: $14.78 (axiom $2.81, network $9.18, pool $2.66), plus $4.15 lost to slippage
 - New trades: WATCH-ONLY (scans and decides, buys nothing)
-- Brain: subscription, claude-haiku-5-5 for routine calls, claude-opus-5-5 for the daily review; 483 routine calls and 0 plan-limit hits in 48h
-- Watch log: 70 coins being followed, 3473 filed, 0 would-buys (6h follow, sampled every 2 min)
+- Brain: subscription, claude-haiku-5-5 for routine calls, claude-opus-5-5 for the daily review; 481 routine calls and 0 plan-limit hits in 48h
+- Watch log: 71 coins being followed, 3474 filed, 0 would-buys (6h follow, sampled every 2 min)
 
 ## Scorecard (after fees)
 - 22 closed, 3 won (14%), net $-25.79
@@ -73,9 +73,13 @@ Updated 2026-11-25T05:34:29Z (paper trading, never real money)
   CA `H4gHnZ3NCU7Z9XQwGX6YYJNyieGEW8pqwGRUcdSxpump`
 
 ## Last scan
-- 05:34Z: 5 coins, 5 with pairs, 0 passed the market filters, 0 researched
+- 05:48Z: 3 coins, 3 with pairs, 1 passed the market filters, 1 researched
 
 ## Coins it looked at, and why it passed
+- 05:48Z WASTED (MIGRATED, $1,190,988 mcap, $2,656 5m vol): REJECT, Dev holds 1.1% (>1%) (V13, V17)  
+  CA `GexThZHgaswpAQ7Fi8QrHFubjPimUNSYhJiAA7XZpump`
+- 05:41Z FUCKCANCER (DIP, $87,498 mcap, $12,560 5m vol): REJECT, Dip with fading attention is a falling knife, not a dip (5m at 0.53x the hour's pace, under 0.6x)  
+  CA `4UMErmfmKzDCVmHrwBUbnDnbQnVKVYAcT7X5AdTkpump`
 - 05:32Z BASKET (DIP, $232,213 mcap, $16,631 5m vol): REJECT, Dip with fading attention is a falling knife, not a dip (5m at 0.23x the hour's pace, under 0.6x)  
   CA `3Tg6YnNrfPdFfsY14MaNsDMWLseAyrUDS3myJtbaJN6f`
 - 05:24Z CBUCKS (MIGRATED, $5,460,152 mcap, $5,344 5m vol): REJECT, Top 10 hold 25.9% ex-pool (>25%) (V13)  
@@ -92,10 +96,6 @@ Updated 2026-11-25T05:34:29Z (paper trading, never real money)
   CA `3Tg6YnNrfPdFfsY14MaNsDMWLseAyrUDS3myJtbaJN6f`
 - 04:36Z pode (FINAL_STRETCH, $19,472 mcap, $6,125 5m vol): REJECT, RugCheck danger: Creator history of rugged tokens  
   CA `8VWH6ntFczuCzTgGeNVarnRDfi6utetSBn3JfTLxpump`
-- 04:36Z YUMA (MIGRATED, $156,822 mcap, $19,671 5m vol): PASS at conviction 3, PASS: YUMA is 8.6% off a $172k high after a 273% hour, and the first resistance is 1.09x away. Chasing, with no higher low printed (V1, V6).  
-  CA `CkwFsrupdFHzo5kYk8b5W47CVx1v5ymzeu6BBoDjpump`
-- 04:28Z CBUCKS (MIGRATED, $5,229,491 mcap, $3,292 5m vol): REJECT, Top 10 hold 25.9% ex-pool (>25%) (V13)  
-  CA `DtcicPCKTKeAh7TDEzTym3hXeoHAoMiBdYJhMYxZpump`
 
 ## What its skips did next (last 48h)
 A skip "ran" if the coin reached the first target (1.5x) from the skip price before a 20% drop, "dumped" if the drop came first. Sampled every 10 min, followed 6h.
@@ -106,7 +106,7 @@ A skip "ran" if the coin reached the first target (1.5x) from the skip price bef
     CA `GaNJeASYBM9k3TvEeUC2Pdyu1TjcpzTmPpoom92fpump`
   - ran: GOAT up to 1.53x  
     CA `5Ze97VEpX3EdRF4vbsxUXTdwGKF2qHGregrxToWEpump`
-- brain paced: blocked 36, ran 10, dumped 24, flat 1, open 1 (saving losses: keep it)
+- brain paced: blocked 36, ran 10, dumped 25, flat 1, open 0 (saving losses: keep it)
   - ran: Scamsem up to 1.56x  
     CA `5JWeGmA9z6yHd5F9P6B23A8wthho8BpZuDmQv5DfLoat`
   - ran: RUGSEM up to 1.5x  
@@ -120,13 +120,6 @@ A skip "ran" if the coin reached the first target (1.5x) from the skip price bef
     CA `37corVSMFFrqP3WK7AtMV6yFTGSvjFEB5fWnH1Bcpump`
   - ran: Doomcat up to 1.62x  
     CA `EiQ1JvEUZCXN5kQi2UdS4CdQapidqC7MCXd5sRTPpump`
-- near the high / chasing: blocked 28, ran 8, dumped 19, flat 1, open 0 (saving losses: keep it)
-  - ran: Bertcoin up to 1.8x  
-    CA `xEK58Qa2xZ7C36Z2g3Jjq1WHY561CvvnJkLpgJspump`
-  - ran: WOFL up to 2.62x  
-    CA `AdXjXfumPSSKk7PrfgDHcAsPvuxnKv7Zo9WZEWKbiDkh`
-  - ran: Phil up to 2.05x  
-    CA `GMLSyjZCKGtFwztp2mtT8PDeNUA6WEk7oQoe3QkFpump`
 - too new / sniping: blocked 28, ran 4, dumped 23, flat 1, open 0 (saving losses: keep it)
   - ran: Loaf up to 2.13x  
     CA `8Ugc1FHaeK6iXQrnUpztxhhNHqucFwaqC35A4Kjjpump`
@@ -134,6 +127,13 @@ A skip "ran" if the coin reached the first target (1.5x) from the skip price bef
     CA `7kctwFbSdLfpi6RuN9cjpVpYVHKPUr8PtG1meH35AEky`
   - ran: TREMP up to 1.7x  
     CA `CuNLbjjFcmumcKF1AnUkPU4dcjykJR73M8hzJB5Cpump`
+- near the high / chasing: blocked 27, ran 7, dumped 19, flat 1, open 0 (saving losses: keep it)
+  - ran: Bertcoin up to 1.8x  
+    CA `xEK58Qa2xZ7C36Z2g3Jjq1WHY561CvvnJkLpgJspump`
+  - ran: WOFL up to 2.62x  
+    CA `AdXjXfumPSSKk7PrfgDHcAsPvuxnKv7Zo9WZEWKbiDkh`
+  - ran: Phil up to 2.05x  
+    CA `GMLSyjZCKGtFwztp2mtT8PDeNUA6WEk7oQoe3QkFpump`
 - RugCheck danger: blocked 23, ran 6, dumped 17, flat 0, open 0 (saving losses: keep it)
   - ran: Holdsgiving up to 2.96x  
     CA `A2jLaCC7v3VjXP8gEgCQNbTWEvizYuQ82jFEYfzipump`
@@ -141,12 +141,12 @@ A skip "ran" if the coin reached the first target (1.5x) from the skip price bef
     CA `CjPoozfB2Vub8pHFvdKuKUGJDLWuYC2U32yRTxMhpump`
   - ran: FUCK! up to 2.22x  
     CA `CSjwLiCLyaJqXQm9XCV3LdYWMYswbZ7JQ71JKX77pump`
-- dev share over 1%: blocked 14, ran 2, dumped 10, flat 2, open 0 (saving losses: keep it)
+- dev share over 1%: blocked 14, ran 2, dumped 10, flat 1, open 1 (saving losses: keep it)
   - ran: BLOOM up to 2.09x  
     CA `FyRXnHLBSeHHoigrgHR1hvcXiPbPCa5bxhVhEDampump`
   - ran: PI up to 1.77x  
     CA `D2AK5DvBj8AxN5VX1t6bjv7muJVPUx4hFPowVRWYpump`
-- thin 5m volume: blocked 13, ran 1, dumped 8, flat 3, open 1 (saving losses: keep it)
+- thin 5m volume: blocked 13, ran 1, dumped 9, flat 3, open 0 (saving losses: keep it)
   - ran: NINO up to 1.55x  
     CA `BqekG1RSPUthaKfStu7Uvyvr1eR6TchrQMp1M5r5pump`
 - bundles over the line: blocked 12, ran 2, dumped 6, flat 1, open 3 (saving losses: keep it)
@@ -154,9 +154,7 @@ A skip "ran" if the coin reached the first target (1.5x) from the skip price bef
     CA `A2nbXtQvvRMvWtifCkV8cYepwcC4M7iA1jVMwAh6pump`
   - ran: DUMBMONEY up to 1.74x  
     CA `GEHehS5Rr4rNCjvrHLjjV1avD4bjMsn53ywDGv1spump`
-- other: blocked 10, ran 1, dumped 9, flat 0, open 0 (saving losses: keep it)
-  - ran: task up to 1.61x  
-    CA `BJeEE9WCP1HZqT1D3heD9Do96D4dnEcNoDHspvQapump`
+- falling knife (code): blocked 10, ran 0, dumped 7, flat 0, open 3 (saving losses: keep it)
 
 ## Daily review (2026-11-23, claude-opus-5-5)
 Nothing has a positive after-cost edge yet. All 229 settled coins average -8.7% net on the simple plan. Before costs they average about +0.9%, so the 9.6% average round-trip cost on a $10 buy accounts for the whole loss. That is the same story as the 22 paper trades, where fees and slippage were $18.83 of the $25.79 lost. The best setup is FINAL_STRETCH: n=39, 35.9% hit 1.5x, -4.9% net. With a 1.5x target, a -20% stop and about 10% costs, a setup needs roughly 43% hitting the target to break even. At n=39 the hit rate's 95% range is about 21–51%, so this sample can't separate it from MIGRATED, from coin-flip noise or from breakeven. I can't say whether the routine model's would-buys beat its passes, because it made zero would-buys in 24h. The coins it passed on (n=157, -8.4%) did slightly better than the coins the checklist failed (n=70, -9.8%), but both lost money. Passing everything was the right call on average. One process note: the watch-only review was set for about Nov 10 and today is Nov 23, so the owner should decide whether this is still the plan.
@@ -199,11 +197,11 @@ Meta: young pump.fun-to-PumpSwap internet-joke coins, and most are fading. Troll
 ## Moving most in its scans, last 30 min (1h volume)
 - BASKET: $881,805 1h vol, $238,112 mcap, +240% 1h  
   CA `3Tg6YnNrfPdFfsY14MaNsDMWLseAyrUDS3myJtbaJN6f`
+- FUCKCANCER: $286,174 1h vol, $73,300 mcap, +169% 1h  
+  CA `4UMErmfmKzDCVmHrwBUbnDnbQnVKVYAcT7X5AdTkpump`
 - YUMA: $181,749 1h vol, $89,294 mcap, -5% 1h  
   CA `CkwFsrupdFHzo5kYk8b5W47CVx1v5ymzeu6BBoDjpump`
 - CBUCKS: $69,856 1h vol, $5,460,152 mcap, +0% 1h  
   CA `DtcicPCKTKeAh7TDEzTym3hXeoHAoMiBdYJhMYxZpump`
-- Manlet: $45,814 1h vol, $1,329 mcap, -98% 1h  
-  CA `HyXjbs37EKU1QPKm2MnSQ3YaxNCugdh2W8bktSfYpump`
-- Twitch: $41,441 1h vol, $28,125 mcap, +1103% 1h  
-  CA `6QtshTWFdGsscfo5cH6D8EUyyFgy7BDfdbMevUvbpump`
+- Reddit: $47,364 1h vol, $4,537 mcap, +16% 1h  
+  CA `6MsaWYaAQ3vPKpQMi9ptiX4yhLv1EEt7NYcX5DH6pump`
