@@ -1,13 +1,13 @@
 # Trencher live report
 
-Updated 2026-11-25T14:08:58Z (paper trading, never real money)
+Updated 2026-11-25T14:24:13Z (paper trading, never real money)
 
 - Equity: $74.23 (-25.8% vs $100 start)
 - Closed trades: 22, 3 wins
 - Fees paid: $14.78 (axiom $2.81, network $9.18, pool $2.66), plus $4.15 lost to slippage
 - New trades: WATCH-ONLY (scans and decides, buys nothing)
-- Brain: subscription, claude-haiku-5-5 for routine calls, claude-opus-5-5 for the daily review; 437 routine calls and 0 plan-limit hits in 48h
-- Watch log: 41 coins being followed, 3561 filed, 0 would-buys (6h follow, sampled every 2 min)
+- Brain: subscription, claude-haiku-5-5 for routine calls, claude-opus-5-5 for the daily review; 434 routine calls and 0 plan-limit hits in 48h
+- Watch log: 43 coins being followed, 3562 filed, 0 would-buys (6h follow, sampled every 2 min)
 
 ## Scorecard (after fees)
 - 22 closed, 3 won (14%), net $-25.79
@@ -73,9 +73,15 @@ Updated 2026-11-25T14:08:58Z (paper trading, never real money)
   CA `H4gHnZ3NCU7Z9XQwGX6YYJNyieGEW8pqwGRUcdSxpump`
 
 ## Last scan
-- 14:08Z: 6 coins, 5 with pairs, 0 passed the market filters, 0 researched
+- 14:23Z: 4 coins, 3 with pairs, 0 passed the market filters, 0 researched
 
 ## Coins it looked at, and why it passed
+- 14:20Z 3sat (MIGRATED, $61,743 mcap, $27,098 5m vol): REJECT, LP only 0% burned/locked (V2, V3, V6)  
+  CA `FaWEANo8Kz9B415xv3cocE8q5JgghN7CY8FYG4C5pump`
+- 14:19Z DESSA (MIGRATED, $937,577 mcap, $11,618 5m vol): PASS at conviction 3, PASS: DESSA broke under its hourly low with no higher low, no catalyst, and no story on the radar. Blocker: "no higher low" (V1, V6).  
+  CA `npz2FhoufQ7pKqhGpaipYWacrAkidyW2yDpVWSvpump`
+- 14:13Z KYM (MIGRATED, $63,262 mcap, $16,727 5m vol): REJECT, RugCheck danger: Creator history of rugged tokens  
+  CA `Hvi9xTj6vWCypxEZh3mCbiS9Ywshex8LyYAdBt7Epump`
 - 14:02Z Pompom (MIGRATED, $293,491 mcap, $21,600 5m vol): PASS at conviction 3, PASS: 5m flow at 0.57x its hourly pace, the theme at 0.86x, and no catalyst found. It's a bounce off a dump, not a printed higher low. Ten copies of the name, so the crowd is split. (V1, V6, V13)  
   CA `5EmvWDizkpjAXbcfCcVq69w1id8GaLzi4LLwtuSgpump`
 - 13:50Z OUROBOROS (MIGRATED, $42,990 mcap, $6,686 5m vol): REJECT, Top 10 hold 25.9% ex-pool (>25%) (V13)  
@@ -90,16 +96,10 @@ Updated 2026-11-25T14:08:58Z (paper trading, never real money)
   CA `GexThZHgaswpAQ7Fi8QrHFubjPimUNSYhJiAA7XZpump`
 - 13:25Z hacked (FINAL_STRETCH, $19,164 mcap, $15,002 5m vol): REJECT, Hack story ("hack" in the name or ticker): these tend to go down, owner rule  
   CA `FK7bc3fR8UL8uogN2u8J9yEpEbQJKR7yKsp3G8rvpump`
-- 13:16Z Pompom (MIGRATED, $384,353 mcap, $31,905 5m vol): PASS at conviction 2, PASS — 15 Pompompurin copies, this one isn't the theme's volume leader, 5m flow is at 0.55x the hourly pace, and the first resistance is only 1.24x away. Blocked on four counts (V1, V3, V6).  
-  CA `5EmvWDizkpjAXbcfCcVq69w1id8GaLzi4LLwtuSgpump`
-- 13:08Z pompom (FINAL_STRETCH, $14,136 mcap, $2,441 5m vol): REJECT, Top 10 hold 30.7% ex-pool (>25%) (V13)  
-  CA `87hFHbdBUCReA8youYc5KMcUeeqFzFMYPMRtqCFZoCCq`
-- 13:05Z OUROBOROS (MIGRATED, $34,605 mcap, $5,020 5m vol): PASS at conviction 2, PASS: flow below pace (0.6x), no catalyst, dead theme (0.07x across 16 copies). The "100% drawdown" is a bad data point, not a dip. (V1, V6)  
-  CA `38EDdUxnJvrnDsJyB45E2W3pK26qLEjmWTvsEmMuG9ZR`
 
 ## What its skips did next (last 48h)
 A skip "ran" if the coin reached the first target (1.5x) from the skip price before a 20% drop, "dumped" if the drop came first. Sampled every 10 min, followed 6h.
-- top 10 over 25%: blocked 44, ran 8, dumped 33, flat 1, open 2 (saving losses: keep it)
+- top 10 over 25%: blocked 44, ran 8, dumped 34, flat 1, open 1 (saving losses: keep it)
   - ran: SNP6900 up to 2.76x  
     CA `DnbQKi146NDmwwji3f3q5i68HQnYyBEhoDyj2q3Npump`
   - ran: JENSEN up to 2.62x  
@@ -127,31 +127,31 @@ A skip "ran" if the coin reached the first target (1.5x) from the skip price bef
     CA `EiQ1JvEUZCXN5kQi2UdS4CdQapidqC7MCXd5sRTPpump`
   - ran: Jesus up to 1.64x  
     CA `Gy5BUDnpJMWRsNVKh9sRtsBGunFXKKrbroQRoydQpump`
-- too new / sniping: blocked 23, ran 3, dumped 19, flat 1, open 0 (saving losses: keep it)
-  - ran: BABYANSEM up to 2.77x  
-    CA `F3VctV9FqDgiyqaztN6z78bgWy27eH7DBBHW1vjpump`
-  - ran: Merged up to 2.18x  
-    CA `AMYpNGi5aGrKr1ZDsotUdWh7k1mMi569ygtaHJmErGEd`
-  - ran: Boor up to 1.56x  
-    CA `GHFpSSw2ZMjmKCyc1wrHUjJiqnJeP18mekY9GL1Xpump`
-- RugCheck danger: blocked 22, ran 5, dumped 17, flat 0, open 0 (saving losses: keep it)
+- RugCheck danger: blocked 24, ran 5, dumped 18, flat 0, open 1 (saving losses: keep it)
   - ran: JENSEN up to 1.7x  
     CA `CjPoozfB2Vub8pHFvdKuKUGJDLWuYC2U32yRTxMhpump`
   - ran: FUCK! up to 2.22x  
     CA `CSjwLiCLyaJqXQm9XCV3LdYWMYswbZ7JQ71JKX77pump`
   - ran: FOMOMAS up to 1.71x  
     CA `9Gu5JYt4Pas6cW4S6qtyFkDucFj6GMtpJiDC9sQbpump`
+- too new / sniping: blocked 22, ran 3, dumped 18, flat 1, open 0 (saving losses: keep it)
+  - ran: BABYANSEM up to 2.77x  
+    CA `F3VctV9FqDgiyqaztN6z78bgWy27eH7DBBHW1vjpump`
+  - ran: Merged up to 2.18x  
+    CA `AMYpNGi5aGrKr1ZDsotUdWh7k1mMi569ygtaHJmErGEd`
+  - ran: Boor up to 1.56x  
+    CA `GHFpSSw2ZMjmKCyc1wrHUjJiqnJeP18mekY9GL1Xpump`
 - dev share over 1%: blocked 13, ran 2, dumped 10, flat 0, open 1 (saving losses: keep it)
   - ran: BLOOM up to 2.09x  
     CA `FyRXnHLBSeHHoigrgHR1hvcXiPbPCa5bxhVhEDampump`
   - ran: PI up to 1.77x  
     CA `D2AK5DvBj8AxN5VX1t6bjv7muJVPUx4hFPowVRWYpump`
-- thin 5m volume: blocked 13, ran 1, dumped 9, flat 3, open 0 (saving losses: keep it)
-  - ran: NINO up to 1.55x  
-    CA `BqekG1RSPUthaKfStu7Uvyvr1eR6TchrQMp1M5r5pump`
 - falling knife (code): blocked 12, ran 1, dumped 10, flat 1, open 0 (saving losses: keep it)
   - ran: Jimmies up to 1.53x  
     CA `GisWWjhwrSud4aFGSHvTMt85Ky14sY7LeBFCpfoFpump`
+- thin 5m volume: blocked 12, ran 1, dumped 9, flat 2, open 0 (saving losses: keep it)
+  - ran: NINO up to 1.55x  
+    CA `BqekG1RSPUthaKfStu7Uvyvr1eR6TchrQMp1M5r5pump`
 - bundles over the line: blocked 11, ran 2, dumped 6, flat 3, open 0 (saving losses: keep it)
   - ran: jingyu up to 1.58x  
     CA `DUZrwdjEthcJ99ZiRXr31UuqTohoTg7VjTEyfGdBpump`
@@ -199,11 +199,11 @@ Not quiet. The movers are pump.fun-era launches, 0 to 3 hours old, and the theme
 ## Moving most in its scans, last 30 min (1h volume)
 - Pompom: $454,292 1h vol, $293,491 mcap, -11% 1h  
   CA `5EmvWDizkpjAXbcfCcVq69w1id8GaLzi4LLwtuSgpump`
-- Ukrainu: $99,981 1h vol, $11,775 mcap, +312% 1h  
+- Ukrainu: $123,695 1h vol, $8,335 mcap, +191% 1h  
   CA `9Pe9Fj2BCWf1o5tWXvNYi6f8JTGr3qtq3JL66JRZpump`
-- OUROBOROS: $92,277 1h vol, $41,188 mcap, -7% 1h  
-  CA `38EDdUxnJvrnDsJyB45E2W3pK26qLEjmWTvsEmMuG9ZR`
-- kol: $84,550 1h vol, $2,483 mcap, +0% 1h  
-  CA `9EuxZ4oKk7axaXTbiJPk8RJ2Q9fBshH3UtuUWExQpump`
-- GEMIDIA: $54,495 1h vol, $307,305 mcap, +604% 1h  
-  CA `3wrZTXRbMk3pCXmmNDWqkaowSsxGzhTnmhPTSXYApump`
+- KYM: $119,776 1h vol, $63,262 mcap, +129% 1h  
+  CA `Hvi9xTj6vWCypxEZh3mCbiS9Ywshex8LyYAdBt7Epump`
+- 3sat: $91,866 1h vol, $54,654 mcap, +83% 1h  
+  CA `FaWEANo8Kz9B415xv3cocE8q5JgghN7CY8FYG4C5pump`
+- DESSA: $88,324 1h vol, $950,789 mcap, -12% 1h  
+  CA `npz2FhoufQ7pKqhGpaipYWacrAkidyW2yDpVWSvpump`
