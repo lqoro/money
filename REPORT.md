@@ -1,13 +1,13 @@
 # Trencher live report
 
-Updated 2026-11-25T10:06:29Z (paper trading, never real money)
+Updated 2026-11-25T10:21:29Z (paper trading, never real money)
 
 - Equity: $74.23 (-25.8% vs $100 start)
 - Closed trades: 22, 3 wins
 - Fees paid: $14.78 (axiom $2.81, network $9.18, pool $2.66), plus $4.15 lost to slippage
 - New trades: WATCH-ONLY (scans and decides, buys nothing)
-- Brain: subscription, claude-haiku-5-5 for routine calls, claude-opus-5-5 for the daily review; 455 routine calls and 0 plan-limit hits in 48h
-- Watch log: 45 coins being followed, 3530 filed, 0 would-buys (6h follow, sampled every 2 min)
+- Brain: subscription, claude-haiku-5-5 for routine calls, claude-opus-5-5 for the daily review; 456 routine calls and 0 plan-limit hits in 48h
+- Watch log: 46 coins being followed, 3531 filed, 0 would-buys (6h follow, sampled every 2 min)
 
 ## Scorecard (after fees)
 - 22 closed, 3 won (14%), net $-25.79
@@ -73,9 +73,13 @@ Updated 2026-11-25T10:06:29Z (paper trading, never real money)
   CA `H4gHnZ3NCU7Z9XQwGX6YYJNyieGEW8pqwGRUcdSxpump`
 
 ## Last scan
-- 10:05Z: 2 coins, 2 with pairs, 0 passed the market filters, 0 researched
+- 10:21Z: 5 coins, 5 with pairs, 0 passed the market filters, 0 researched
 
 ## Coins it looked at, and why it passed
+- 10:10Z Bernard (FINAL_STRETCH, $20,109 mcap, $11,300 5m vol): PASS at conviction 2, PASS: Bernard is up 99% in 5 minutes, 12% off a peak printed 12 minutes ago, with no higher low and no catalyst. It's copy #19 in a name-family vamp war. Chasing (V1, V6).  
+  CA `8LPJzr3SfD8Ehv13jjNj6LAUsxbaPeRsLemFdV8Wpump`
+- 10:09Z Nyamitto (FINAL_STRETCH, $22,802 mcap, $14,308 5m vol): PASS at conviction 3, PASS — chasing a spike: the 5m candle is up 127% and the 1h is up 899%. The first resistance (the 25.4k peak) is only 1.11x away, and the top 10 hold 23.7%. Blocker: chasing spike / target too close (V1, V6).  
+  CA `5BX4LiBheGbrPd7rCxdpbdE14hEgm542Wdpt1zs65fAo`
 - 10:02Z HELIORA (DIP, $68,027 mcap, $8,139 5m vol): REJECT, Dip with fading attention is a falling knife, not a dip (5m at 0.42x the hour's pace, under 0.6x)  
   CA `96qfge1RkUWhSsv8i9V4QZFANGypKEe1u7pzCDGGpump`
 - 09:45Z SOLCHAN (FINAL_STRETCH, $22,778 mcap, $40,735 5m vol): REJECT, Bundles: 3 linked wallet cluster(s) hold 34.1% of supply (>20%) (V17)  
@@ -92,10 +96,6 @@ Updated 2026-11-25T10:06:29Z (paper trading, never real money)
   CA `GexThZHgaswpAQ7Fi8QrHFubjPimUNSYhJiAA7XZpump`
 - 09:16Z HELIORA (DIP, $62,267 mcap, $22,389 5m vol): REJECT, Dip with fading attention is a falling knife, not a dip (5m at 0.50x the hour's pace, under 0.6x)  
   CA `96qfge1RkUWhSsv8i9V4QZFANGypKEe1u7pzCDGGpump`
-- 09:06Z 4PUMP (FINAL_STRETCH, $16,252 mcap, $4,971 5m vol): REJECT, RugCheck danger: Creator history of rugged tokens  
-  CA `8ypx9tHqwLjJk51tqrm1iCrhTQ1PKshnw1FfpQjWpump`
-- 09:05Z CBUCKS (MIGRATED, $5,096,025 mcap, $2,108 5m vol): REJECT, Top 10 hold 25.9% ex-pool (>25%) (V13)  
-  CA `DtcicPCKTKeAh7TDEzTym3hXeoHAoMiBdYJhMYxZpump`
 
 ## What its skips did next (last 48h)
 A skip "ran" if the coin reached the first target (1.5x) from the skip price before a 20% drop, "dumped" if the drop came first. Sampled every 10 min, followed 6h.
@@ -113,6 +113,13 @@ A skip "ran" if the coin reached the first target (1.5x) from the skip price bef
     CA `9cDnmLRDWeJzcpyw8tSFAT7HS4Aunx6MmZWjMfrzpump`
   - ran: SHHFT up to 1.61x  
     CA `GqMg4TRt5U5HRK6oeZYwCF1Jz7Ym9MSzWSoFCtFsbzf6`
+- near the high / chasing: blocked 30, ran 7, dumped 20, flat 1, open 2 (saving losses: keep it)
+  - ran: Bertcoin up to 1.8x  
+    CA `xEK58Qa2xZ7C36Z2g3Jjq1WHY561CvvnJkLpgJspump`
+  - ran: WOFL up to 2.62x  
+    CA `AdXjXfumPSSKk7PrfgDHcAsPvuxnKv7Zo9WZEWKbiDkh`
+  - ran: Phil up to 2.05x  
+    CA `GMLSyjZCKGtFwztp2mtT8PDeNUA6WEk7oQoe3QkFpump`
 - flow below pace: blocked 30, ran 6, dumped 24, flat 0, open 0 (saving losses: keep it)
   - ran: NVDA up to 1.52x  
     CA `37corVSMFFrqP3WK7AtMV6yFTGSvjFEB5fWnH1Bcpump`
@@ -120,13 +127,6 @@ A skip "ran" if the coin reached the first target (1.5x) from the skip price bef
     CA `EiQ1JvEUZCXN5kQi2UdS4CdQapidqC7MCXd5sRTPpump`
   - ran: Jesus up to 1.64x  
     CA `Gy5BUDnpJMWRsNVKh9sRtsBGunFXKKrbroQRoydQpump`
-- near the high / chasing: blocked 28, ran 7, dumped 20, flat 1, open 0 (saving losses: keep it)
-  - ran: Bertcoin up to 1.8x  
-    CA `xEK58Qa2xZ7C36Z2g3Jjq1WHY561CvvnJkLpgJspump`
-  - ran: WOFL up to 2.62x  
-    CA `AdXjXfumPSSKk7PrfgDHcAsPvuxnKv7Zo9WZEWKbiDkh`
-  - ran: Phil up to 2.05x  
-    CA `GMLSyjZCKGtFwztp2mtT8PDeNUA6WEk7oQoe3QkFpump`
 - too new / sniping: blocked 25, ran 4, dumped 20, flat 1, open 0 (saving losses: keep it)
   - ran: AGI up to 1.53x  
     CA `7kctwFbSdLfpi6RuN9cjpVpYVHKPUr8PtG1meH35AEky`
@@ -134,7 +134,7 @@ A skip "ran" if the coin reached the first target (1.5x) from the skip price bef
     CA `CuNLbjjFcmumcKF1AnUkPU4dcjykJR73M8hzJB5Cpump`
   - ran: BABYANSEM up to 2.77x  
     CA `F3VctV9FqDgiyqaztN6z78bgWy27eH7DBBHW1vjpump`
-- RugCheck danger: blocked 23, ran 5, dumped 18, flat 0, open 0 (saving losses: keep it)
+- RugCheck danger: blocked 22, ran 5, dumped 17, flat 0, open 0 (saving losses: keep it)
   - ran: JENSEN up to 1.7x  
     CA `CjPoozfB2Vub8pHFvdKuKUGJDLWuYC2U32yRTxMhpump`
   - ran: FUCK! up to 2.22x  
@@ -156,7 +156,7 @@ A skip "ran" if the coin reached the first target (1.5x) from the skip price bef
     CA `A2nbXtQvvRMvWtifCkV8cYepwcC4M7iA1jVMwAh6pump`
   - ran: DUMBMONEY up to 1.74x  
     CA `GEHehS5Rr4rNCjvrHLjjV1avD4bjMsn53ywDGv1spump`
-- falling knife (code): blocked 12, ran 0, dumped 9, flat 1, open 2 (saving losses: keep it)
+- falling knife (code): blocked 12, ran 0, dumped 10, flat 1, open 1 (saving losses: keep it)
 
 ## Daily review (2026-11-23, claude-opus-5-5)
 Nothing has a positive after-cost edge yet. All 229 settled coins average -8.7% net on the simple plan. Before costs they average about +0.9%, so the 9.6% average round-trip cost on a $10 buy accounts for the whole loss. That is the same story as the 22 paper trades, where fees and slippage were $18.83 of the $25.79 lost. The best setup is FINAL_STRETCH: n=39, 35.9% hit 1.5x, -4.9% net. With a 1.5x target, a -20% stop and about 10% costs, a setup needs roughly 43% hitting the target to break even. At n=39 the hit rate's 95% range is about 21–51%, so this sample can't separate it from MIGRATED, from coin-flip noise or from breakeven. I can't say whether the routine model's would-buys beat its passes, because it made zero would-buys in 24h. The coins it passed on (n=157, -8.4%) did slightly better than the coins the checklist failed (n=70, -9.8%), but both lost money. Passing everything was the right call on average. One process note: the watch-only review was set for about Nov 10 and today is Nov 23, so the owner should decide whether this is still the plan.
@@ -197,13 +197,13 @@ Nothing has a positive after-cost edge yet. All 229 settled coins average -8.7% 
 Not quiet. The movers with real flow are cute character names launched on pump.fun in the last 15 minutes: Solana-chan (SOLCHAN, $22k cap, $40k 5m, +894% 1h, 64% buys) and Nyamit (pumpswap, $32k cap, $46k 5m, 58% buys). They share a kawaii, cat-girl style and are rising (V1, V5). The second theme is name families and people: JaoJiu (pumpswap $153k, $10.5k 5m, -31% 1h), its pump.fun copy, and Bernard (+545% 1h, $8k 5m) look like a vamp war, so find the original first (V1, V3). Fading: legacy memes and animal or cartoon coins (ROCKET, CBUCKS at $8 5m with zero buys, Christmax at 12 days old, Memeployed, Jimmies). Clover, NAUGHTY and TANDEM pumped on 1h with almost no 5m flow, so they're noise. Setups to research, not buy yet: SOLCHAN and Nyamit as the character cluster. Both are under 15 minutes old, so no entry until they age and keep flow. Nyamit already fits the MIGRATED criteria (under 12h, $32k cap, $46k 5m) once holder and bundle checks pass. JaoJiu only as a dip, and only after the original is confirmed. The Trump, Ansem and Jensen headlines and the BASKET and HELIORA calls don't appear in any mover, so I'm not using them. No mover is named for a hack.
 
 ## Moving most in its scans, last 30 min (1h volume)
-- JaoJiu: $294,897 1h vol, $152,914 mcap, -31% 1h  
-  CA `2UyrvgCRXiEwiKRVk96gs6B4myrBHZAfcLyMVLE8vSCy`
 - HELIORA: $235,234 1h vol, $68,027 mcap, -30% 1h  
   CA `96qfge1RkUWhSsv8i9V4QZFANGypKEe1u7pzCDGGpump`
-- SOLCHAN: $66,741 1h vol, $21,956 mcap, +894% 1h  
-  CA `9woryP8Yxe5jU1YzcYVtW38PppzPjZTKxy4yYctapump`
-- Nyamit: $63,600 1h vol, $32,194 mcap, +18% 1h  
-  CA `JCd9vynvmBex2t79iGPb5L4jm62b5c4nwQG7sei5pump`
-- Clover: $54,868 1h vol, $1,988 mcap, -27% 1h  
-  CA `9bj2NxtzmccaADo8Rg14G9dddXU1NfFL8pxweCypump`
+- Nyamitto: $131,068 1h vol, $22,323 mcap, +878% 1h  
+  CA `5BX4LiBheGbrPd7rCxdpbdE14hEgm542Wdpt1zs65fAo`
+- Slotbound: $106,479 1h vol, $10,855 mcap, -62% 1h  
+  CA `6woMBVpn4QwQVYeLysGKB2JiBSUCxkENmbemj5eE9Zz3`
+- Slotbound: $77,394 1h vol, $12,513 mcap, +387% 1h  
+  CA `CoN1PPXSgDWHs9u29hKQ39gBH5roeP5c54hxZ49Upump`
+- Bernard: $53,357 1h vol, $20,109 mcap, +965% 1h  
+  CA `8LPJzr3SfD8Ehv13jjNj6LAUsxbaPeRsLemFdV8Wpump`
