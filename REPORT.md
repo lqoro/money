@@ -1,13 +1,13 @@
 # Trencher live report
 
-Updated 2026-11-25T13:38:41Z (paper trading, never real money)
+Updated 2026-11-25T13:53:49Z (paper trading, never real money)
 
 - Equity: $74.23 (-25.8% vs $100 start)
 - Closed trades: 22, 3 wins
 - Fees paid: $14.78 (axiom $2.81, network $9.18, pool $2.66), plus $4.15 lost to slippage
 - New trades: WATCH-ONLY (scans and decides, buys nothing)
-- Brain: subscription, claude-haiku-5-5 for routine calls, claude-opus-5-5 for the daily review; 438 routine calls and 0 plan-limit hits in 48h
-- Watch log: 41 coins being followed, 3556 filed, 0 would-buys (6h follow, sampled every 2 min)
+- Brain: subscription, claude-haiku-5-5 for routine calls, claude-opus-5-5 for the daily review; 436 routine calls and 0 plan-limit hits in 48h
+- Watch log: 44 coins being followed, 3557 filed, 0 would-buys (6h follow, sampled every 2 min)
 
 ## Scorecard (after fees)
 - 22 closed, 3 won (14%), net $-25.79
@@ -73,9 +73,17 @@ Updated 2026-11-25T13:38:41Z (paper trading, never real money)
   CA `H4gHnZ3NCU7Z9XQwGX6YYJNyieGEW8pqwGRUcdSxpump`
 
 ## Last scan
-- 13:38Z: 4 coins, 4 with pairs, 0 passed the market filters, 0 researched
+- 13:53Z: 1 coins, 1 with pairs, 0 passed the market filters, 0 researched
 
 ## Coins it looked at, and why it passed
+- 13:50Z OUROBOROS (MIGRATED, $42,990 mcap, $6,686 5m vol): REJECT, Top 10 hold 25.9% ex-pool (>25%) (V13)  
+  CA `38EDdUxnJvrnDsJyB45E2W3pK26qLEjmWTvsEmMuG9ZR`
+- 13:49Z GEMIDIA (MIGRATED, $280,215 mcap, $32,852 5m vol): REJECT, RugCheck danger: Creator history of rugged tokens  
+  CA `3wrZTXRbMk3pCXmmNDWqkaowSsxGzhTnmhPTSXYApump`
+- 13:43Z Memeployed (no setup, $49,268 mcap, $2,240 5m vol): REJECT, No setup fits: not Final Stretch, not a migrated runner, not a healthy dip  
+  CA `4m2PS6yW2xDk5V9nJgPjnus1eguwCDSWXbA2YQeVkqxn`
+- 13:39Z TANGENT (MIGRATED, $46,498 mcap, $9,039 5m vol): PASS at conviction 3, PASS: 5m volume is 3.16x the hourly pace on a coin that is 10 minutes old, with no printed higher low and a repo and domain created today. Blocker: chasing spike. (V1, V6, V13)  
+  CA `BQYzmKyoSzdgeaeRiRwKJdWVaiLjpngUH6YT49PNNhsS`
 - 13:29Z WASTED (DIP, $1,032,281 mcap, $6,845 5m vol): REJECT, Dev holds 1.1% (>1%) (V13, V17)  
   CA `GexThZHgaswpAQ7Fi8QrHFubjPimUNSYhJiAA7XZpump`
 - 13:25Z hacked (FINAL_STRETCH, $19,164 mcap, $15,002 5m vol): REJECT, Hack story ("hack" in the name or ticker): these tend to go down, owner rule  
@@ -88,14 +96,6 @@ Updated 2026-11-25T13:38:41Z (paper trading, never real money)
   CA `38EDdUxnJvrnDsJyB45E2W3pK26qLEjmWTvsEmMuG9ZR`
 - 13:02Z PFP (FINAL_STRETCH, $17,149 mcap, $50,965 5m vol): PASS at conviction 3, PASS — launch spike, 5m up 312% at 12x the hourly pace, 0.09h old, in a 27-copy PFP field with a bigger PFP above it. Chasing a fresh pump.fun candle (V1, V6, V13).  
   CA `5PiugAAPsRxmatFE6uJ7jrtJ817TNKpypSa1JoZspump`
-- 12:35Z PILOTUS (FINAL_STRETCH, $14,775 mcap, $10,412 5m vol): REJECT, Top 10 hold 26.3% ex-pool (>25%) (V13)  
-  CA `2BKQXFh7Rss1ykqsj34GXbaU4zpnrnJJZHGDeouFpump`
-- 12:31Z Pompom (MIGRATED, $195,911 mcap, $29,071 5m vol): PASS at conviction 3, PASS: flow below pace (5m at 0.69x hourly), no breakout printing, 20-copy vamp field. Pompom leads by volume, not by structure. (V1, V6)  
-  CA `5EmvWDizkpjAXbcfCcVq69w1id8GaLzi4LLwtuSgpump`
-- 12:19Z OUROBOROS (MIGRATED, $40,783 mcap, $10,352 5m vol): REJECT, Top 10 hold 28.3% ex-pool (>25%) (V13)  
-  CA `38EDdUxnJvrnDsJyB45E2W3pK26qLEjmWTvsEmMuG9ZR`
-- 12:09Z 3sat (FINAL_STRETCH, $13,880 mcap, $3,283 5m vol): PASS at conviction 3, PASS: a 0.1-day-old AI/Lean "fork" site on a 15-copy ticker, with 5m flow at $3.3k and a 583% 1h spike. It's a LARP-shaped pump.fun launch. Blocker: "too new / sniping" (V1, V6, V13).  
-  CA `FaWEANo8Kz9B415xv3cocE8q5JgghN7CY8FYG4C5pump`
 
 ## What its skips did next (last 48h)
 A skip "ran" if the coin reached the first target (1.5x) from the skip price before a 20% drop, "dumped" if the drop came first. Sampled every 10 min, followed 6h.
@@ -113,28 +113,28 @@ A skip "ran" if the coin reached the first target (1.5x) from the skip price bef
     CA `9cDnmLRDWeJzcpyw8tSFAT7HS4Aunx6MmZWjMfrzpump`
   - ran: SHHFT up to 1.61x  
     CA `GqMg4TRt5U5HRK6oeZYwCF1Jz7Ym9MSzWSoFCtFsbzf6`
-- near the high / chasing: blocked 32, ran 8, dumped 23, flat 1, open 0 (saving losses: keep it)
+- near the high / chasing: blocked 30, ran 8, dumped 21, flat 1, open 0 (saving losses: keep it)
   - ran: Bertcoin up to 1.8x  
     CA `xEK58Qa2xZ7C36Z2g3Jjq1WHY561CvvnJkLpgJspump`
   - ran: WOFL up to 2.62x  
     CA `AdXjXfumPSSKk7PrfgDHcAsPvuxnKv7Zo9WZEWKbiDkh`
   - ran: Phil up to 2.05x  
     CA `GMLSyjZCKGtFwztp2mtT8PDeNUA6WEk7oQoe3QkFpump`
-- flow below pace: blocked 30, ran 6, dumped 24, flat 0, open 0 (saving losses: keep it)
+- flow below pace: blocked 29, ran 6, dumped 23, flat 0, open 0 (saving losses: keep it)
   - ran: NVDA up to 1.52x  
     CA `37corVSMFFrqP3WK7AtMV6yFTGSvjFEB5fWnH1Bcpump`
   - ran: Doomcat up to 1.62x  
     CA `EiQ1JvEUZCXN5kQi2UdS4CdQapidqC7MCXd5sRTPpump`
   - ran: Jesus up to 1.64x  
     CA `Gy5BUDnpJMWRsNVKh9sRtsBGunFXKKrbroQRoydQpump`
-- too new / sniping: blocked 22, ran 3, dumped 18, flat 1, open 0 (saving losses: keep it)
+- too new / sniping: blocked 23, ran 3, dumped 18, flat 1, open 1 (saving losses: keep it)
   - ran: BABYANSEM up to 2.77x  
     CA `F3VctV9FqDgiyqaztN6z78bgWy27eH7DBBHW1vjpump`
   - ran: Merged up to 2.18x  
     CA `AMYpNGi5aGrKr1ZDsotUdWh7k1mMi569ygtaHJmErGEd`
   - ran: Boor up to 1.56x  
     CA `GHFpSSw2ZMjmKCyc1wrHUjJiqnJeP18mekY9GL1Xpump`
-- RugCheck danger: blocked 21, ran 5, dumped 16, flat 0, open 0 (saving losses: keep it)
+- RugCheck danger: blocked 22, ran 5, dumped 16, flat 0, open 1 (saving losses: keep it)
   - ran: JENSEN up to 1.7x  
     CA `CjPoozfB2Vub8pHFvdKuKUGJDLWuYC2U32yRTxMhpump`
   - ran: FUCK! up to 2.22x  
@@ -197,13 +197,13 @@ Nothing has a positive edge after costs. All 213 settled coins came out at -12.2
 Not quiet. The movers are fresh pump.fun launches, mostly under a few hours old, with 5-minute buy ratios of 55-66% on the live rows. Rising: utility-sounding and product-style names (Pumpfun Pills/PFP, Allocator, Developer University, Pilotus) and cute characters (inu, bon, Pompompurin). Fading: the Ansem name (25% buys, down 21% in the hour), SWARM and Boor (down 93% and 89% with zero 5m volume), and the cat holdovers. The crawler's meta summary doesn't match its own rows: it puts Boor at $23k 5m and Pompompurin at $4k, while the rows show $0 for Boor and $761 (pumpswap) or $2.6k (pump.fun) for Pompompurin, so I'm trusting the rows. Setups to research, not buy: Developer University (DU, $9.4k mcap, $15k 5m, 66% buys, age under an hour) and Pilotus ($10k 5m, 63% buys); PFP only after I pick the original CA, since two tokens with the same name launching together is a vamp signature, and both PFP rows are up 300-900% in the hour, so the exit plan comes before any entry. Holder, dev and bundle checks decide each one.
 
 ## Moving most in its scans, last 30 min (1h volume)
-- Pompom: $693,737 1h vol, $393,712 mcap, +135% 1h  
-  CA `5EmvWDizkpjAXbcfCcVq69w1id8GaLzi4LLwtuSgpump`
-- kol: $82,961 1h vol, $4,757 mcap, +92% 1h  
+- OUROBOROS: $92,277 1h vol, $41,188 mcap, -7% 1h  
+  CA `38EDdUxnJvrnDsJyB45E2W3pK26qLEjmWTvsEmMuG9ZR`
+- kol: $84,550 1h vol, $2,483 mcap, +0% 1h  
   CA `9EuxZ4oKk7axaXTbiJPk8RJ2Q9fBshH3UtuUWExQpump`
-- PFP: $56,015 1h vol, $1,680 mcap, -93% 1h  
+- PFP: $78,240 1h vol, $3,450 mcap, -17% 1h  
+  CA `5PiugAAPsRxmatFE6uJ7jrtJ817TNKpypSa1JoZspump`
+- PFP: $56,056 1h vol, $1,690 mcap, -93% 1h  
   CA `GV7iihnQgrRrZt1npPu774CPNiv6PJe8SMMHLsTjpump`
-- 犬: $42,837 1h vol, $2,045 mcap, -20% 1h  
-  CA `Bu7FHCUZAJw5p94Y28v9LfGjcHv8M2HaJcqptX4FuQPV`
-- DU: $28,248 1h vol, $2,863 mcap, +11% 1h  
-  CA `5mWwFaEF5eLEHSAUzhCiEKiWiYPUGwenQFpBQMz4pump`
+- GEMIDIA: $54,495 1h vol, $307,305 mcap, +604% 1h  
+  CA `3wrZTXRbMk3pCXmmNDWqkaowSsxGzhTnmhPTSXYApump`
