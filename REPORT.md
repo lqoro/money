@@ -1,13 +1,13 @@
 # Trencher live report
 
-Updated 2026-11-25T16:40:23Z (paper trading, never real money)
+Updated 2026-11-25T16:55:28Z (paper trading, never real money)
 
 - Equity: $74.23 (-25.8% vs $100 start)
 - Closed trades: 22, 3 wins
 - Fees paid: $14.78 (axiom $2.81, network $9.18, pool $2.66), plus $4.15 lost to slippage
 - New trades: WATCH-ONLY (scans and decides, buys nothing)
-- Brain: subscription, claude-haiku-5-5 for routine calls, claude-opus-5-5 for the daily review; 412 routine calls and 0 plan-limit hits in 48h
-- Watch log: 44 coins being followed, 3580 filed, 0 would-buys (6h follow, sampled every 2 min)
+- Brain: subscription, claude-haiku-5-5 for routine calls, claude-opus-5-5 for the daily review; 410 routine calls and 0 plan-limit hits in 48h
+- Watch log: 44 coins being followed, 3582 filed, 0 would-buys (6h follow, sampled every 2 min)
 
 ## Scorecard (after fees)
 - 22 closed, 3 won (14%), net $-25.79
@@ -73,9 +73,13 @@ Updated 2026-11-25T16:40:23Z (paper trading, never real money)
   CA `H4gHnZ3NCU7Z9XQwGX6YYJNyieGEW8pqwGRUcdSxpump`
 
 ## Last scan
-- 16:39Z: 2 coins, 1 with pairs, 0 passed the market filters, 0 researched
+- 16:54Z: 4 coins, 3 with pairs, 1 passed the market filters, 1 researched
 
 ## Coins it looked at, and why it passed
+- 16:54Z STARMIND (MIGRATED, $32,752 mcap, $11,341 5m vol): REJECT, Top 10 hold 27.4% ex-pool (>25%) (V13)  
+  CA `2hsmC7864Ve1giwLygu7bJjZU1R4JZKX9kCxWmD9yP6o`
+- 16:42Z MONEY (MIGRATED, $178,580 mcap, $44,435 5m vol): PASS at conviction 3, PASS: up 372% in an hour and 4% off the high, with no printed higher low and 5m flow at 0.62x pace. That's a chase, not a setup (V1, V6).  
+  CA `Bg74niwsyZFFxPhY8J47crDtDSUctKZEb1AuZL93pump`
 - 16:35Z CBUCKS (MIGRATED, $4,889,682 mcap, $2,484 5m vol): REJECT, Top 10 hold 25.8% ex-pool (>25%) (V13)  
   CA `DtcicPCKTKeAh7TDEzTym3hXeoHAoMiBdYJhMYxZpump`
 - 16:33Z HEYOS (FINAL_STRETCH, $19,326 mcap, $2,341 5m vol): PASS at conviction 3, PASS — chasing a +19% 5m spike at its high, 5m flow $2.3k under the $10k bar, and the site doesn't show this CA. Blocker: chasing spike. (V1, V6, V13)  
@@ -92,14 +96,10 @@ Updated 2026-11-25T16:40:23Z (paper trading, never real money)
   CA `CuQUeUa6YbSSK52PTaL8eok8c1hrG6qyuyJyovmapump`
 - 15:35Z McCat (FINAL_STRETCH, $19,127 mcap, $20,722 5m vol): REJECT, Top 10 hold 40.0% ex-pool (>25%) (V13)  
   CA `FMMRv2doNMperPCSANuSWXcMCSs2YkxTTosN7TEypump`
-- 15:32Z IPO (FINAL_STRETCH, $22,615 mcap, $15,484 5m vol): PASS at conviction 2, PASS. Thirty-five-minute-old pump.fun copy, up 1036% on the hour, sitting on a +43% five-minute candle with 3.8x pace flow. That's a spike, and the ticker has 29 copies. Blockers: chasing spike, too new, split crowd. (V1, V6, V13)  
-  CA `EYiXPL3LTuXEMb7KjhP6eTETPehJGhhU5H7ZYmWsSipo`
-- 15:26Z hacked (MIGRATED, $42,320 mcap, $0 5m vol): REJECT, Hack story ("hack" in the name or ticker): these tend to go down, owner rule  
-  CA `FK7bc3fR8UL8uogN2u8J9yEpEbQJKR7yKsp3G8rvpump`
 
 ## What its skips did next (last 48h)
 A skip "ran" if the coin reached the first target (1.5x) from the skip price before a 20% drop, "dumped" if the drop came first. Sampled every 10 min, followed 6h.
-- top 10 over 25%: blocked 46, ran 8, dumped 35, flat 2, open 1 (saving losses: keep it)
+- top 10 over 25%: blocked 47, ran 8, dumped 35, flat 2, open 2 (saving losses: keep it)
   - ran: SNP6900 up to 2.76x  
     CA `DnbQKi146NDmwwji3f3q5i68HQnYyBEhoDyj2q3Npump`
   - ran: JENSEN up to 2.62x  
@@ -113,20 +113,20 @@ A skip "ran" if the coin reached the first target (1.5x) from the skip price bef
     CA `9cDnmLRDWeJzcpyw8tSFAT7HS4Aunx6MmZWjMfrzpump`
   - ran: SHHFT up to 1.61x  
     CA `GqMg4TRt5U5HRK6oeZYwCF1Jz7Ym9MSzWSoFCtFsbzf6`
-- near the high / chasing: blocked 29, ran 8, dumped 20, flat 0, open 1 (saving losses: keep it)
-  - ran: Bertcoin up to 1.8x  
-    CA `xEK58Qa2xZ7C36Z2g3Jjq1WHY561CvvnJkLpgJspump`
-  - ran: WOFL up to 2.62x  
-    CA `AdXjXfumPSSKk7PrfgDHcAsPvuxnKv7Zo9WZEWKbiDkh`
-  - ran: Phil up to 2.05x  
-    CA `GMLSyjZCKGtFwztp2mtT8PDeNUA6WEk7oQoe3QkFpump`
-- flow below pace: blocked 27, ran 6, dumped 18, flat 0, open 3 (saving losses: keep it)
+- flow below pace: blocked 28, ran 6, dumped 18, flat 0, open 4 (saving losses: keep it)
   - ran: NVDA up to 1.52x  
     CA `37corVSMFFrqP3WK7AtMV6yFTGSvjFEB5fWnH1Bcpump`
   - ran: Doomcat up to 1.62x  
     CA `EiQ1JvEUZCXN5kQi2UdS4CdQapidqC7MCXd5sRTPpump`
   - ran: Jesus up to 1.64x  
     CA `Gy5BUDnpJMWRsNVKh9sRtsBGunFXKKrbroQRoydQpump`
+- near the high / chasing: blocked 28, ran 9, dumped 19, flat 0, open 0 (saving losses: keep it)
+  - ran: Bertcoin up to 1.8x  
+    CA `xEK58Qa2xZ7C36Z2g3Jjq1WHY561CvvnJkLpgJspump`
+  - ran: WOFL up to 2.62x  
+    CA `AdXjXfumPSSKk7PrfgDHcAsPvuxnKv7Zo9WZEWKbiDkh`
+  - ran: Phil up to 2.05x  
+    CA `GMLSyjZCKGtFwztp2mtT8PDeNUA6WEk7oQoe3QkFpump`
 - RugCheck danger: blocked 24, ran 4, dumped 20, flat 0, open 0 (saving losses: keep it)
   - ran: FUCK! up to 2.22x  
     CA `CSjwLiCLyaJqXQm9XCV3LdYWMYswbZ7JQ71JKX77pump`
@@ -197,13 +197,13 @@ Nothing has a positive edge after costs. All 213 settled coins came out at -12.2
 Meta from scan_movers is cartoon and character coins plus cute animal and food mascots (Pompompurin, CursedBob, LEMON's lemon pig, SHEEPCOIN), with a second thread of chat-culture jokes (BIAO, a sticker name, and the Jimmies phrase). The crawler's FRANK and Gemidia calls are not in scan_movers, so I'm not trading them. LEMON (+397% 1h) and BIAO (+450% 1h) are the rising ones, both under an hour old, but both show zero 5m volume, and nothing on the list clears the ~$10k 5m bar, so the movers are quiet at the 5-minute level. Fading: CursedBob (15% buys, -14%), SHEEPCOIN, MONEYGO (-99%), KYM (launchpad tooling, -55%), and the old DESSA, WASTED, CBUCKS and BRUH, which are attention, not trench meta. Setups to research, not buy, all under conviction 5: Pompompurin ($349k, 4.8h, +35% 1h) once the original CA is confirmed, since the crawler's $14.4k 5m doesn't match the scan's zero; LEMON or BIAO only if 5m volume returns to ~$10k and holds through a pullback; Jimmies only if its 94% buy ratio comes with real volume. Holder, dev and bundle checks run on each before any entry, and each needs a written exit plan first.
 
 ## Moving most in its scans, last 30 min (1h volume)
-- Pompom: $297,907 1h vol, $316,777 mcap, +1% 1h  
-  CA `5EmvWDizkpjAXbcfCcVq69w1id8GaLzi4LLwtuSgpump`
-- BIAO: $97,183 1h vol, $190,486 mcap, -14% 1h  
-  CA `As3XtYSstuVdrVyb6sJZZ77Tu8JvjTBg6S6hgPv4pump`
-- DESSA: $87,997 1h vol, $757,453 mcap, +0% 1h  
-  CA `npz2FhoufQ7pKqhGpaipYWacrAkidyW2yDpVWSvpump`
-- IPO: $68,691 1h vol, $17,967 mcap, +83% 1h  
-  CA `EYiXPL3LTuXEMb7KjhP6eTETPehJGhhU5H7ZYmWsSipo`
-- Miaomiao: $39,188 1h vol, $12,212 mcap, +392% 1h  
+- MONEY: $859,796 1h vol, $178,580 mcap, +372% 1h  
+  CA `Bg74niwsyZFFxPhY8J47crDtDSUctKZEb1AuZL93pump`
+- Miaomiao: $73,562 1h vol, $4,704 mcap, +90% 1h  
   CA `BxZ4f47jzHCQLeuby76jwwwzL8ASc2p45gmreF2tpump`
+- SHEEPCOIN: $39,565 1h vol, $6,277 mcap, -75% 1h  
+  CA `9rrvHRGgvzAx2MjNpcpSWk6cLED25sNXfmykyq7tpump`
+- three: $21,585 1h vol, $308,939 mcap, +4% 1h  
+  CA `FeMbDoX7R1Psc4GEcvJdsbNbZA3bfztcyDCatJVJpump`
+- STARMIND: $15,946 1h vol, $32,752 mcap, +5% 1h  
+  CA `2hsmC7864Ve1giwLygu7bJjZU1R4JZKX9kCxWmD9yP6o`
