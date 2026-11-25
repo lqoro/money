@@ -1,13 +1,13 @@
 # Trencher live report
 
-Updated 2026-11-25T03:33:40Z (paper trading, never real money)
+Updated 2026-11-25T03:48:43Z (paper trading, never real money)
 
 - Equity: $74.23 (-25.8% vs $100 start)
 - Closed trades: 22, 3 wins
 - Fees paid: $14.78 (axiom $2.81, network $9.18, pool $2.66), plus $4.15 lost to slippage
 - New trades: WATCH-ONLY (scans and decides, buys nothing)
-- Brain: subscription, claude-haiku-5-5 for routine calls, claude-opus-5-5 for the daily review; 499 routine calls and 0 plan-limit hits in 48h
-- Watch log: 78 coins being followed, 3448 filed, 0 would-buys (6h follow, sampled every 2 min)
+- Brain: subscription, claude-haiku-5-5 for routine calls, claude-opus-5-5 for the daily review; 495 routine calls and 0 plan-limit hits in 48h
+- Watch log: 77 coins being followed, 3451 filed, 0 would-buys (6h follow, sampled every 2 min)
 
 ## Scorecard (after fees)
 - 22 closed, 3 won (14%), net $-25.79
@@ -73,9 +73,13 @@ Updated 2026-11-25T03:33:40Z (paper trading, never real money)
   CA `H4gHnZ3NCU7Z9XQwGX6YYJNyieGEW8pqwGRUcdSxpump`
 
 ## Last scan
-- 03:33Z: 2 coins, 2 with pairs, 1 passed the market filters, 1 researched
+- 03:47Z: 2 coins, 2 with pairs, 0 passed the market filters, 0 researched
 
 ## Coins it looked at, and why it passed
+- 03:40Z Alien (no setup, $13,412 mcap, $42,040 5m vol): REJECT, No setup fits: not Final Stretch, not a migrated runner, not a healthy dip  
+  CA `9QDgPpMvsRQwoMmfaWtQah2bjjRFym8YS1xwYCcspump`
+- 03:38Z Manlet (MIGRATED, $82,790 mcap, $5,607 5m vol): PASS at conviction 2, PASS — flow below pace (0.6x hourly), no printed higher low, 13 minutes old and one of 19 Manlet copies. Blocker: "flow below pace" (V1, V6).  
+  CA `HyXjbs37EKU1QPKm2MnSQ3YaxNCugdh2W8bktSfYpump`
 - 03:33Z BABYANSEM (MIGRATED, $35,510 mcap, $26,398 5m vol): PASS at conviction 2, PASS: BABYANSEM is 4 minutes old, down 30% from its $50.6k peak with sellers at 108 to buyers at 69, and its name rides the Ansem wallet-drain headlines. Blocker: "too new" plus "no higher low" (V1, V6, owner rule).  
   CA `F3VctV9FqDgiyqaztN6z78bgWy27eH7DBBHW1vjpump`
 - 03:32Z CBUCKS (MIGRATED, $5,834,659 mcap, $12,959 5m vol): REJECT, Top 10 hold 25.9% ex-pool (>25%) (V13)  
@@ -92,10 +96,6 @@ Updated 2026-11-25T03:33:40Z (paper trading, never real money)
   CA `Ea7ADHtZdQVre2mTBbN9Ps3TBraR6n5GUamGF9Ftpump`
 - 03:01Z DONJENSEN (MIGRATED, $103,644 mcap, $2,298 5m vol): REJECT, RugCheck danger: Creator history of rugged tokens  
   CA `5LDowscYVD3a6ZS4m8gCqG5nU16eLTwRXhciFi1bpump`
-- 02:52Z BOOBS (MIGRATED, $1,895,271 mcap, $8,418 5m vol): PASS at conviction 3, PASS: flow below pace. BOOBS is at 0.58x its hourly 5m pace, $8.4k on the 5m, and the theme is splitting into copies. Blocker: "flow below pace." (V1, V6)  
-  CA `E35iEA2yLLHc1tjm6et1Z3YuH8DhxJYWtWezPHgSpump`
-- 02:49Z Caiolo (no setup, $28,880 mcap, $2,642 5m vol): REJECT, No setup fits: not Final Stretch, not a migrated runner, not a healthy dip  
-  CA `2ksAWrKoyPkXaSo2HBSPrjALrytsm9SVEHq11VQZpump`
 
 ## What its skips did next (last 48h)
 A skip "ran" if the coin reached the first target (1.5x) from the skip price before a 20% drop, "dumped" if the drop came first. Sampled every 10 min, followed 6h.
@@ -120,20 +120,20 @@ A skip "ran" if the coin reached the first target (1.5x) from the skip price bef
     CA `2DQbV7hsqxKVWmFakXGGhBbNyY28tDJ9YuJkojYrpump`
   - ran: NVDA up to 1.52x  
     CA `37corVSMFFrqP3WK7AtMV6yFTGSvjFEB5fWnH1Bcpump`
-- near the high / chasing: blocked 30, ran 7, dumped 22, flat 1, open 0 (saving losses: keep it)
-  - ran: Bertcoin up to 1.8x  
-    CA `xEK58Qa2xZ7C36Z2g3Jjq1WHY561CvvnJkLpgJspump`
-  - ran: WOFL up to 2.62x  
-    CA `AdXjXfumPSSKk7PrfgDHcAsPvuxnKv7Zo9WZEWKbiDkh`
-  - ran: Phil up to 2.05x  
-    CA `GMLSyjZCKGtFwztp2mtT8PDeNUA6WEk7oQoe3QkFpump`
-- too new / sniping: blocked 29, ran 3, dumped 24, flat 1, open 1 (saving losses: keep it)
+- too new / sniping: blocked 30, ran 4, dumped 24, flat 1, open 1 (saving losses: keep it)
   - ran: Loaf up to 2.13x  
     CA `8Ugc1FHaeK6iXQrnUpztxhhNHqucFwaqC35A4Kjjpump`
   - ran: AGI up to 1.53x  
     CA `7kctwFbSdLfpi6RuN9cjpVpYVHKPUr8PtG1meH35AEky`
   - ran: TREMP up to 1.7x  
     CA `CuNLbjjFcmumcKF1AnUkPU4dcjykJR73M8hzJB5Cpump`
+- near the high / chasing: blocked 29, ran 7, dumped 21, flat 1, open 0 (saving losses: keep it)
+  - ran: Bertcoin up to 1.8x  
+    CA `xEK58Qa2xZ7C36Z2g3Jjq1WHY561CvvnJkLpgJspump`
+  - ran: WOFL up to 2.62x  
+    CA `AdXjXfumPSSKk7PrfgDHcAsPvuxnKv7Zo9WZEWKbiDkh`
+  - ran: Phil up to 2.05x  
+    CA `GMLSyjZCKGtFwztp2mtT8PDeNUA6WEk7oQoe3QkFpump`
 - RugCheck danger: blocked 21, ran 6, dumped 15, flat 0, open 0 (saving losses: keep it)
   - ran: Holdsgiving up to 2.96x  
     CA `A2jLaCC7v3VjXP8gEgCQNbTWEvizYuQ82jFEYfzipump`
@@ -197,13 +197,13 @@ Nothing has a positive after-cost edge yet. All 229 settled coins average -8.7% 
 Not quiet. The movers are a fresh pump.fun-to-PumpSwap tape: the active names are under about 3 hours old and most have buyers above 50%, led by DongCoin (+1560% in an hour, 71% buys), ChristmASS (70%), BOOBS (70%), Caiolo (57%) and Le Toucan (53%). The meta is fresh joke, holiday and internet-culture names, with the Trump and Ansem headlines not showing up on this tape. It splits into live fresh names and dead older copies: Pink Wojak -88%, OG -72%, SILK -83%, and Epochal at zero 5m volume. Two Caiolo tokens are trading at once, so check Similar Tokens for the original before touching either. Only ChristmASS clears the $10k 5m bar with buyers above 50% ($12.4k, 70%), so it is the one to research now with holder, dev and bundle checks. DongCoin is $5.2k of 5m volume on a $574k cap after a parabolic run, so it is a watch for a retrace that holds volume, not an entry. BOOBS ($8.9k) and Caiolo ($8k) sit just under the bar and wait for volume to return. The crawler's snapshot disagrees with scan_movers (Epochal at $257k, ChristmASS at 27% buys, and it calls BOOBS and Le Toucan off-tape), so I'm trusting the live scan until someone re-pulls. No coin on this tape is hack-named.
 
 ## Moving most in its scans, last 30 min (1h volume)
-- PERRO: $614,534 1h vol, $229,665 mcap, +58% 1h  
-  CA `4Di56UJzpnb7E4D7aLXFf7aLF5TrpJYv9Q3mR398pump`
-- Caiolo: $175,537 1h vol, $1,347 mcap, -98% 1h  
+- Caiolo: $140,275 1h vol, $1,320 mcap, -98% 1h  
   CA `B6nNZshi9ATgkCT8eBNL6BU21C8x1BAG1SZhXnwZpump`
-- DongCoin: $171,875 1h vol, $600,915 mcap, +11% 1h  
-  CA `DMFzUvtfEmE697ZfEDqAXErd9MrBDEs66V5WiRvApump`
-- memecat: $66,103 1h vol, $23,375 mcap, +799% 1h  
-  CA `J7hSb4BCEJnnwFuUVYR8wS18BW4SxGmmwoAxsQpXpump`
-- NI: $57,002 1h vol, $4,922 mcap, +125% 1h  
+- Manlet: $111,714 1h vol, $82,481 mcap, +183% 1h  
+  CA `HyXjbs37EKU1QPKm2MnSQ3YaxNCugdh2W8bktSfYpump`
+- NI: $60,877 1h vol, $2,398 mcap, +10% 1h  
   CA `A9KJnpSNfpRM9oQmC4St9jSfsPmNJvuyfevn5ZGjpump`
+- Alien: $43,971 1h vol, $16,524 mcap, +652% 1h  
+  CA `9QDgPpMvsRQwoMmfaWtQah2bjjRFym8YS1xwYCcspump`
+- CBUCKS: $40,690 1h vol, $5,834,659 mcap, +20% 1h  
+  CA `DtcicPCKTKeAh7TDEzTym3hXeoHAoMiBdYJhMYxZpump`
