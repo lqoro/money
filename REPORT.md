@@ -1,13 +1,13 @@
 # Trencher live report
 
-Updated 2026-11-25T20:27:26Z (paper trading, never real money)
+Updated 2026-11-25T20:42:38Z (paper trading, never real money)
 
 - Equity: $74.23 (-25.8% vs $100 start)
 - Closed trades: 22, 3 wins
 - Fees paid: $14.78 (axiom $2.81, network $9.18, pool $2.66), plus $4.15 lost to slippage
 - New trades: WATCH-ONLY (scans and decides, buys nothing)
-- Brain: subscription, claude-haiku-5-5 for routine calls, claude-opus-5-5 for the daily review; 398 routine calls and 0 plan-limit hits in 48h
-- Watch log: 81 coins being followed, 3605 filed, 0 would-buys (6h follow, sampled every 2 min)
+- Brain: subscription, claude-haiku-5-5 for routine calls, claude-opus-5-5 for the daily review; 399 routine calls and 0 plan-limit hits in 48h
+- Watch log: 83 coins being followed, 3607 filed, 0 would-buys (6h follow, sampled every 2 min)
 
 ## Scorecard (after fees)
 - 22 closed, 3 won (14%), net $-25.79
@@ -73,9 +73,17 @@ Updated 2026-11-25T20:27:26Z (paper trading, never real money)
   CA `H4gHnZ3NCU7Z9XQwGX6YYJNyieGEW8pqwGRUcdSxpump`
 
 ## Last scan
-- 20:26Z: 7 coins, 6 with pairs, 0 passed the market filters, 0 researched
+- 20:41Z: 10 coins, 9 with pairs, 1 passed the market filters, 1 researched
 
 ## Coins it looked at, and why it passed
+- 20:41Z Pnut (FINAL_STRETCH, $19,366 mcap, $42,156 5m vol): PASS at conviction 2, PASS: chasing a +141% 5m spike, not the leader of a 21-copy Peanut field, top 10 at 24.1%, no socials. Blocker: "chasing spike" and "split crowd". (V1, V6, V13)  
+  CA `9bgy4dVrPqa7HozGvBRV5Qy1ccbDdYHHMyzKrJjqpump`
+- 20:33Z POMBAO (MIGRATED, $235,852 mcap, $21,730 5m vol): REJECT, Top 10 hold 47.9% ex-pool (>25%) (V13)  
+  CA `AGyQW6inE99G3Js63ooQWzAeEeBRu8718zjiSKPBpump`
+- 20:28Z FIONA (MIGRATED, $2,784,660 mcap, $2,692 5m vol): REJECT, Bundles: 10 linked wallet cluster(s) hold 29.6% of supply (>20%) (V17)  
+  CA `B34nXKzCgsJb9ChLuSHPRpXLE3WFSWyeT8Cqkzzmpump`
+- 20:27Z CBUCKS (MIGRATED, $5,212,778 mcap, $2,246 5m vol): REJECT, Top 10 hold 25.8% ex-pool (>25%) (V13)  
+  CA `DtcicPCKTKeAh7TDEzTym3hXeoHAoMiBdYJhMYxZpump`
 - 20:24Z Pompompurin (MIGRATED, $395,986 mcap, $112,246 5m vol): REJECT, Top 10 hold 54.0% ex-pool (>25%) (V13)  
   CA `H2iscCQ4RiZ5ufu3UTBS2VDrVqbNY8gN7eVSSASBpump`
 - 20:20Z Santa (MIGRATED, $168,867 mcap, $3,176 5m vol): REJECT, Bundles: 9 linked wallet cluster(s) hold 68.8% of supply (>20%) (V17)  
@@ -88,18 +96,10 @@ Updated 2026-11-25T20:27:26Z (paper trading, never real money)
   CA `8qxaEvtbzDwqh6K5Lhm4YsH6jxHV7HtKtkgZWcvrpump`
 - 20:08Z WASTED (DIP, $884,291 mcap, $2,177 5m vol): REJECT, Dev holds 1.1% (>1%) (V13, V17)  
   CA `GexThZHgaswpAQ7Fi8QrHFubjPimUNSYhJiAA7XZpump`
-- 20:04Z GRAVY (MIGRATED, $71,463 mcap, $15,615 5m vol): PASS at conviction 3, PASS: 5m flow is 0.64x the hourly pace and the gravy theme runs at 0.06x across its 26 copies, so the crowd isn't arriving. Gravy the turkey is a real Thanksgiving story, but it isn't enough to buy here (V1, V6).  
-  CA `9yAXzLrFQvHJYZt3ndL4kdcgNkrQuPguRgs45PbqezaM`
-- 20:02Z HUSSPAD (MIGRATED, $31,524 mcap, $2,875 5m vol): PASS at conviction 2, PASS: HUSSPAD is a 3-minute-old launch at 12x its hourly pace, 8% off a peak printed minutes ago, with no higher low and a ticker shared by 4 copies. Chasing a spike on a story nobody is telling (V1, V13).  
-  CA `rpoEbSB9JesYwxxYepKbDVzus1pymZGXdAs8uqjpump`
-- 20:02Z Pompom (MIGRATED, $522,075 mcap, $8,869 5m vol): PASS at conviction 3, PASS: 5m flow at 0.78x pace on a MIGRATED pullback, theme at 0.79x, no catalyst, and the bottom-buy gate fails. Blocker: flow below pace (V1, V6).  
-  CA `5EmvWDizkpjAXbcfCcVq69w1id8GaLzi4LLwtuSgpump`
-- 19:57Z CRIME (MIGRATED, $68,816 mcap, $6,983 5m vol): PASS at conviction 3, PASS: flow below pace (5m $6,983 is 0.38x the hourly pace) on a same-ticker copy that isn't the field leader. Not the leader, no higher low. (V1, V6, V13)  
-  CA `xmraCcXf1qpZgkwaQn5myc7Q6SZ7He7sXQhXUBYNXMR`
 
 ## What its skips did next (last 48h)
 A skip "ran" if the coin reached the first target (1.5x) from the skip price before a 20% drop, "dumped" if the drop came first. Sampled every 10 min, followed 6h.
-- top 10 over 25%: blocked 46, ran 7, dumped 35, flat 1, open 3 (saving losses: keep it)
+- top 10 over 25%: blocked 47, ran 8, dumped 36, flat 1, open 2 (saving losses: keep it)
   - ran: JENSEN up to 2.62x  
     CA `GaNJeASYBM9k3TvEeUC2Pdyu1TjcpzTmPpoom92fpump`
   - ran: GOAT up to 1.53x  
@@ -120,14 +120,14 @@ A skip "ran" if the coin reached the first target (1.5x) from the skip price bef
     CA `3cL47ohWa2HApLYKtqPsqkjaxJ6HLvT5Ri1KvWdXpump`
   - ran: BOOBS up to 1.51x  
     CA `E35iEA2yLLHc1tjm6et1Z3YuH8DhxJYWtWezPHgSpump`
-- near the high / chasing: blocked 28, ran 10, dumped 16, flat 0, open 2 (mixed)
+- near the high / chasing: blocked 29, ran 10, dumped 16, flat 0, open 3 (mixed)
   - ran: Bertcoin up to 1.8x  
     CA `xEK58Qa2xZ7C36Z2g3Jjq1WHY561CvvnJkLpgJspump`
   - ran: WOFL up to 2.62x  
     CA `AdXjXfumPSSKk7PrfgDHcAsPvuxnKv7Zo9WZEWKbiDkh`
   - ran: Phil up to 2.05x  
     CA `GMLSyjZCKGtFwztp2mtT8PDeNUA6WEk7oQoe3QkFpump`
-- RugCheck danger: blocked 28, ran 4, dumped 23, flat 0, open 1 (saving losses: keep it)
+- RugCheck danger: blocked 28, ran 4, dumped 24, flat 0, open 0 (saving losses: keep it)
   - ran: FOMOMAS up to 1.71x  
     CA `9Gu5JYt4Pas6cW4S6qtyFkDucFj6GMtpJiDC9sQbpump`
   - ran: TIMOTHY up to 2.14x  
@@ -199,13 +199,13 @@ Nothing has a positive edge after costs. All 213 settled coins came out at -12.2
 The trenches are not quiet, but the meta on scan_movers is narrower than the web's four themes. The strongest thread is cute pet and mascot names: CRIME 8xaG ($80k, $44k 5m, 67% buys, 12 minutes old, +176% 1h) and Pompompurin ($522k, $8.9k 5m, 53% buys, 8.8h old). Holiday and ticker-copy names are fading: Official Thanks Giving has $114 of 5m volume and is down 56%, and the second CRIME (xmra, -24%) and the PPK/UNI dead copies show the vamp pattern, so the original by 5m volume is the one to trade. The Inu and RECORDEGG stories from the web don't show up in the movers, so I'm trusting the scanner. Setups to research, not buy yet: CRIME 8xaG only on a pullback that holds volume, and GRAVY ($83k, $19k 5m, 61% buys, 0.9h old) as a conviction-5 probe at most, with stops under its base. Holder, dev and bundle checks haven't run on either, so neither is an entry until they clear.
 
 ## Moving most in its scans, last 30 min (1h volume)
-- AI: $410,495 1h vol, $1,294 mcap, -96% 1h  
+- AI: $258,029 1h vol, $1,294 mcap, -100% 1h  
   CA `8F9LwX8HWHnrad1rEXagpW5xrZZJ16RjSJ1HYPb6pump`
-- COIN: $325,343 1h vol, $3,844 mcap, -87% 1h  
-  CA `ALLherSTscpAErYo5Jja3ysVocaa2oeZkUvgmvhZpump`
-- GRAVY: $297,564 1h vol, $83,371 mcap, +195% 1h  
-  CA `9yAXzLrFQvHJYZt3ndL4kdcgNkrQuPguRgs45PbqezaM`
 - OnlyUp: $236,569 1h vol, $622,296 mcap, +1657% 1h  
   CA `H4eqZumNhGk7LKLB5QpJb84EYZ1yHbEg9HiwwLqkpump`
-- CRIME: $223,108 1h vol, $68,816 mcap, -24% 1h  
-  CA `xmraCcXf1qpZgkwaQn5myc7Q6SZ7He7sXQhXUBYNXMR`
+- Pnut: $145,081 1h vol, $24,323 mcap, -14% 1h  
+  CA `CKWk8T9stykpugEPkgQMvdfYaH76WFwjL4mZWasfpump`
+- CRIME: $132,729 1h vol, $1,440 mcap, -95% 1h  
+  CA `8xaGdRnMnMaWYc2CMsDMDvDYGEegkrxpzhipSna7pump`
+- FIONA: $125,654 1h vol, $2,784,660 mcap, +7% 1h  
+  CA `B34nXKzCgsJb9ChLuSHPRpXLE3WFSWyeT8Cqkzzmpump`
