@@ -1,13 +1,13 @@
 # Trencher live report
 
-Updated 2026-11-25T00:31:54Z (paper trading, never real money)
+Updated 2026-11-25T00:47:00Z (paper trading, never real money)
 
 - Equity: $74.23 (-25.8% vs $100 start)
 - Closed trades: 22, 3 wins
 - Fees paid: $14.78 (axiom $2.81, network $9.18, pool $2.66), plus $4.15 lost to slippage
 - New trades: WATCH-ONLY (scans and decides, buys nothing)
-- Brain: subscription, claude-haiku-5-5 for routine calls, claude-opus-5-5 for the daily review; 513 routine calls and 0 plan-limit hits in 48h
-- Watch log: 74 coins being followed, 3409 filed, 0 would-buys (6h follow, sampled every 2 min)
+- Brain: subscription, claude-haiku-5-5 for routine calls, claude-opus-5-5 for the daily review; 508 routine calls and 0 plan-limit hits in 48h
+- Watch log: 76 coins being followed, 3412 filed, 0 would-buys (6h follow, sampled every 2 min)
 
 ## Scorecard (after fees)
 - 22 closed, 3 won (14%), net $-25.79
@@ -73,9 +73,19 @@ Updated 2026-11-25T00:31:54Z (paper trading, never real money)
   CA `H4gHnZ3NCU7Z9XQwGX6YYJNyieGEW8pqwGRUcdSxpump`
 
 ## Last scan
-- 00:31Z: 7 coins, 6 with pairs, 0 passed the market filters, 0 researched
+- 00:46Z: 7 coins, 6 with pairs, 0 passed the market filters, 0 researched
 
 ## Coins it looked at, and why it passed
+- 00:44Z FIONA (DIP, $2,681,986 mcap, $4,053 5m vol): REJECT, Bundles: 9 linked wallet cluster(s) hold 29.4% of supply (>20%) (V17)  
+  CA `B34nXKzCgsJb9ChLuSHPRpXLE3WFSWyeT8Cqkzzmpump`
+- 00:41Z TELEDROID (MIGRATED, $58,503 mcap, $12,384 5m vol): REJECT, Top 10 hold 30.7% ex-pool (>25%) (V13)  
+  CA `Ea7ADHtZdQVre2mTBbN9Ps3TBraR6n5GUamGF9Ftpump`
+- 00:37Z Pumpcar (MIGRATED, $53,734 mcap, $8,359 5m vol): PASS at conviction 4, PASS — 5m flow at 0.51x the hourly pace in a 26-copy "car" field, and no catalyst for a bottom buy. Structure is there, the flow isn't. (V1, V6)  
+  CA `4M1tpKSat8qWnJk6pskUBciw4PBvXt4gNMc36NV8pump`
+- 00:35Z BOOBS (MIGRATED, $467,844 mcap, $107,898 5m vol): REJECT, Top 10 hold 39.8% ex-pool (>25%) (V13)  
+  CA `E35iEA2yLLHc1tjm6et1Z3YuH8DhxJYWtWezPHgSpump`
+- 00:35Z TOUCAN (FINAL_STRETCH, $14,773 mcap, $7,906 5m vol): PASS at conviction 3, PASS. Le Toucan is a 1.2h-old pump.fun copy with no catalyst, 5m flow under $10k, and a 23.9% top 10. No bottom buy without a story (V1, V6, V13).  
+  CA `5Xd2vr3oY2YDhBeozvsZQto3rLiMzWDDBLadkgQspump`
 - 00:29Z 4CHAN (MIGRATED, $296,472 mcap, $51,789 5m vol): REJECT, Top 10 hold 26.9% ex-pool (>25%) (V13)  
   CA `DVdWuNK8ncn79B6z8nCiwcNAiwyFcmBPfChgxJGTpump`
 - 00:28Z 𝕏 (FINAL_STRETCH, $19,167 mcap, $38,400 5m vol): REJECT, RugCheck danger: Creator history of rugged tokens  
@@ -86,20 +96,10 @@ Updated 2026-11-25T00:31:54Z (paper trading, never real money)
   CA `GisWWjhwrSud4aFGSHvTMt85Ky14sY7LeBFCpfoFpump`
 - 00:02Z Memeployed (MIGRATED, $57,257 mcap, $4,454 5m vol): PASS at conviction 2, PASS: deep dip with no catalyst, 81% off peak and crowd leaving. Blocker: "bottom buy, no catalyst" (V1, V6).  
   CA `4m2PS6yW2xDk5V9nJgPjnus1eguwCDSWXbA2YQeVkqxn`
-- 00:02Z DONJENSEN (MIGRATED, $949,537 mcap, $2,319 5m vol): PASS at conviction 2, PASS — 5m flow is 0.08x the hourly pace at $2.3k, the drawdown is 74% with no catalyst, and 25 copies split the crowd. Holders are clean, but the crowd has left. (V1, V6, V13)  
-  CA `5LDowscYVD3a6ZS4m8gCqG5nU16eLTwRXhciFi1bpump`
-- 23:59Z FIONA (MIGRATED, $2,844,586 mcap, $4,738 5m vol): REJECT, Bundles: 9 linked wallet cluster(s) hold 29.4% of supply (>20%) (V17)  
-  CA `B34nXKzCgsJb9ChLuSHPRpXLE3WFSWyeT8Cqkzzmpump`
-- 23:56Z BTC (MIGRATED, $132,997 mcap, $10,366 5m vol): PASS at conviction 4, PASS. Flow is at 0.81x its hourly pace, no higher low has printed, and 22 same-ticker copies split the crowd. Watch for a reclaim of the $167k bounce high (V1, V6).  
-  CA `GkSZVKcXcgodewdZd5CbGxFJoUUcazrf1GayrNv3pump`
-- 23:51Z Pumpcar (MIGRATED, $47,633 mcap, $32,717 5m vol): PASS at conviction 2, PASS: chasing spike, 1.10x to the first resistance, 26-copy vamp field. Too new and too hot to buy. (V1, V6)  
-  CA `4M1tpKSat8qWnJk6pskUBciw4PBvXt4gNMc36NV8pump`
-- 23:44Z 4CHAN (MIGRATED, $265,002 mcap, $94,668 5m vol): PASS, PASS — brain unavailable, not trading blind.  
-  CA `DVdWuNK8ncn79B6z8nCiwcNAiwyFcmBPfChgxJGTpump`
 
 ## What its skips did next (last 48h)
 A skip "ran" if the coin reached the first target (1.5x) from the skip price before a 20% drop, "dumped" if the drop came first. Sampled every 10 min, followed 6h.
-- top 10 over 25%: blocked 38, ran 7, dumped 29, flat 1, open 1 (saving losses: keep it)
+- top 10 over 25%: blocked 40, ran 7, dumped 30, flat 1, open 2 (saving losses: keep it)
   - ran: SNP6900 up to 2.76x  
     CA `DnbQKi146NDmwwji3f3q5i68HQnYyBEhoDyj2q3Npump`
   - ran: JENSEN up to 2.62x  
@@ -113,20 +113,20 @@ A skip "ran" if the coin reached the first target (1.5x) from the skip price bef
     CA `9cDnmLRDWeJzcpyw8tSFAT7HS4Aunx6MmZWjMfrzpump`
   - ran: SHHFT up to 1.61x  
     CA `GqMg4TRt5U5HRK6oeZYwCF1Jz7Ym9MSzWSoFCtFsbzf6`
-- too new / sniping: blocked 33, ran 4, dumped 28, flat 1, open 0 (saving losses: keep it)
-  - ran: Loaf up to 2.13x  
-    CA `8Ugc1FHaeK6iXQrnUpztxhhNHqucFwaqC35A4Kjjpump`
-  - ran: AGI up to 1.53x  
-    CA `7kctwFbSdLfpi6RuN9cjpVpYVHKPUr8PtG1meH35AEky`
-  - ran: TREMP up to 1.7x  
-    CA `CuNLbjjFcmumcKF1AnUkPU4dcjykJR73M8hzJB5Cpump`
-- flow below pace: blocked 32, ran 7, dumped 25, flat 0, open 0 (saving losses: keep it)
+- flow below pace: blocked 32, ran 7, dumped 24, flat 0, open 1 (saving losses: keep it)
   - ran: hCAT up to 1.52x  
     CA `2FYs4vApfj4ErsggpFDfzMv1WvxnyiLtzNEj84mS6TLh`
   - ran: WALLSTFLY up to 1.52x  
     CA `2DQbV7hsqxKVWmFakXGGhBbNyY28tDJ9YuJkojYrpump`
   - ran: NVDA up to 1.52x  
     CA `37corVSMFFrqP3WK7AtMV6yFTGSvjFEB5fWnH1Bcpump`
+- too new / sniping: blocked 31, ran 4, dumped 26, flat 1, open 0 (saving losses: keep it)
+  - ran: Loaf up to 2.13x  
+    CA `8Ugc1FHaeK6iXQrnUpztxhhNHqucFwaqC35A4Kjjpump`
+  - ran: AGI up to 1.53x  
+    CA `7kctwFbSdLfpi6RuN9cjpVpYVHKPUr8PtG1meH35AEky`
+  - ran: TREMP up to 1.7x  
+    CA `CuNLbjjFcmumcKF1AnUkPU4dcjykJR73M8hzJB5Cpump`
 - near the high / chasing: blocked 30, ran 7, dumped 22, flat 1, open 0 (saving losses: keep it)
   - ran: Bertcoin up to 1.8x  
     CA `xEK58Qa2xZ7C36Z2g3Jjq1WHY561CvvnJkLpgJspump`
@@ -141,7 +141,7 @@ A skip "ran" if the coin reached the first target (1.5x) from the skip price bef
     CA `CjPoozfB2Vub8pHFvdKuKUGJDLWuYC2U32yRTxMhpump`
   - ran: FUCK! up to 2.22x  
     CA `CSjwLiCLyaJqXQm9XCV3LdYWMYswbZ7JQ71JKX77pump`
-- thin 5m volume: blocked 15, ran 1, dumped 11, flat 3, open 0 (saving losses: keep it)
+- thin 5m volume: blocked 16, ran 1, dumped 11, flat 3, open 1 (saving losses: keep it)
   - ran: NINO up to 1.55x  
     CA `BqekG1RSPUthaKfStu7Uvyvr1eR6TchrQMp1M5r5pump`
 - dev share over 1%: blocked 14, ran 2, dumped 10, flat 2, open 0 (saving losses: keep it)
@@ -149,7 +149,7 @@ A skip "ran" if the coin reached the first target (1.5x) from the skip price bef
     CA `FyRXnHLBSeHHoigrgHR1hvcXiPbPCa5bxhVhEDampump`
   - ran: PI up to 1.77x  
     CA `D2AK5DvBj8AxN5VX1t6bjv7muJVPUx4hFPowVRWYpump`
-- bundles over the line: blocked 11, ran 2, dumped 6, flat 2, open 1 (saving losses: keep it)
+- bundles over the line: blocked 10, ran 2, dumped 5, flat 2, open 1 (saving losses: keep it)
   - ran: RNV up to 2.35x  
     CA `A2nbXtQvvRMvWtifCkV8cYepwcC4M7iA1jVMwAh6pump`
   - ran: DUMBMONEY up to 1.74x  
@@ -203,11 +203,11 @@ Meta right now is fresh pump.fun internet-joke names with real 5-minute flow. 4C
 ## Moving most in its scans, last 30 min (1h volume)
 - 4CHAN: $741,243 1h vol, $291,129 mcap, +132% 1h  
   CA `DVdWuNK8ncn79B6z8nCiwcNAiwyFcmBPfChgxJGTpump`
-- MARS: $525,194 1h vol, $1,399 mcap, -100% 1h  
-  CA `816BuXnCFQqt6KXbBTcFgHWD29Ckpaqt8HMKSN4Vpump`
-- DONJENSEN: $345,294 1h vol, $913,252 mcap, -16% 1h  
-  CA `5LDowscYVD3a6ZS4m8gCqG5nU16eLTwRXhciFi1bpump`
-- Jimmies: $207,500 1h vol, $178,777 mcap, +465% 1h  
-  CA `GisWWjhwrSud4aFGSHvTMt85Ky14sY7LeBFCpfoFpump`
-- Sisyphus: $153,858 1h vol, $14,092 mcap, -50% 1h  
-  CA `AuPon7CveYeRk3E7YdUt9QMGu5hEGkqSxzo9NiZdpump`
+- Pumpcar: $195,915 1h vol, $50,264 mcap, +71% 1h  
+  CA `4M1tpKSat8qWnJk6pskUBciw4PBvXt4gNMc36NV8pump`
+- BOOBS: $174,251 1h vol, $462,930 mcap, +1107% 1h  
+  CA `E35iEA2yLLHc1tjm6et1Z3YuH8DhxJYWtWezPHgSpump`
+- WIKI: $112,297 1h vol, $54,591 mcap, +65% 1h  
+  CA `E2MJUFBMaTH7j21P2HncB96erJ4dM3FPL2W6i8Dpump`
+- BTC: $84,464 1h vol, $1,302 mcap, -99% 1h  
+  CA `GkSZVKcXcgodewdZd5CbGxFJoUUcazrf1GayrNv3pump`
