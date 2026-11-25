@@ -1,13 +1,13 @@
 # Trencher live report
 
-Updated 2026-11-25T05:19:18Z (paper trading, never real money)
+Updated 2026-11-25T05:34:29Z (paper trading, never real money)
 
 - Equity: $74.23 (-25.8% vs $100 start)
 - Closed trades: 22, 3 wins
 - Fees paid: $14.78 (axiom $2.81, network $9.18, pool $2.66), plus $4.15 lost to slippage
 - New trades: WATCH-ONLY (scans and decides, buys nothing)
-- Brain: subscription, claude-haiku-5-5 for routine calls, claude-opus-5-5 for the daily review; 485 routine calls and 0 plan-limit hits in 48h
-- Watch log: 70 coins being followed, 3469 filed, 0 would-buys (6h follow, sampled every 2 min)
+- Brain: subscription, claude-haiku-5-5 for routine calls, claude-opus-5-5 for the daily review; 483 routine calls and 0 plan-limit hits in 48h
+- Watch log: 70 coins being followed, 3473 filed, 0 would-buys (6h follow, sampled every 2 min)
 
 ## Scorecard (after fees)
 - 22 closed, 3 won (14%), net $-25.79
@@ -73,9 +73,17 @@ Updated 2026-11-25T05:19:18Z (paper trading, never real money)
   CA `H4gHnZ3NCU7Z9XQwGX6YYJNyieGEW8pqwGRUcdSxpump`
 
 ## Last scan
-- 05:18Z: 9 coins, 9 with pairs, 0 passed the market filters, 0 researched
+- 05:34Z: 5 coins, 5 with pairs, 0 passed the market filters, 0 researched
 
 ## Coins it looked at, and why it passed
+- 05:32Z BASKET (DIP, $232,213 mcap, $16,631 5m vol): REJECT, Dip with fading attention is a falling knife, not a dip (5m at 0.23x the hour's pace, under 0.6x)  
+  CA `3Tg6YnNrfPdFfsY14MaNsDMWLseAyrUDS3myJtbaJN6f`
+- 05:24Z CBUCKS (MIGRATED, $5,460,152 mcap, $5,344 5m vol): REJECT, Top 10 hold 25.9% ex-pool (>25%) (V13)  
+  CA `DtcicPCKTKeAh7TDEzTym3hXeoHAoMiBdYJhMYxZpump`
+- 05:23Z YUMA (DIP, $89,294 mcap, $15,896 5m vol): PASS at conviction 3, PASS: YUMA is a 55% dip with no catalyst, no printed higher low above the bounce high, and entry would sit mid-range. Blocker: no catalyst (bottom-buy rule). (V1, V6)  
+  CA `CkwFsrupdFHzo5kYk8b5W47CVx1v5ymzeu6BBoDjpump`
+- 05:19Z Memeployed (DIP, $92,269 mcap, $3,257 5m vol): PASS at conviction 3, PASS: bottom buy with no catalyst, price 22% above its higher low, and a 4.3% bundle cluster in a 16-copy field. Blocker: no catalyst (V1, V6, V13).  
+  CA `4m2PS6yW2xDk5V9nJgPjnus1eguwCDSWXbA2YQeVkqxn`
 - 04:57Z jingyu (MIGRATED, $89,274 mcap, $2,344 5m vol): REJECT, Bundles: 1 linked wallet cluster(s) hold 100.0% of supply (>20%) (V17)  
   CA `DUZrwdjEthcJ99ZiRXr31UuqTohoTg7VjTEyfGdBpump`
 - 04:56Z FUCKCANCER (FINAL_STRETCH, $17,018 mcap, $6,493 5m vol): PASS at conviction 2, PASS: up 380% in an hour, 5m flow at 3.15x pace on a spike, and it's the second copy of "fuck cancer" behind a bigger leader ($6.5k vs ~$13.6k 5m). Blocker: chasing spike. (V1, V6)  
@@ -88,14 +96,6 @@ Updated 2026-11-25T05:19:18Z (paper trading, never real money)
   CA `CkwFsrupdFHzo5kYk8b5W47CVx1v5ymzeu6BBoDjpump`
 - 04:28Z CBUCKS (MIGRATED, $5,229,491 mcap, $3,292 5m vol): REJECT, Top 10 hold 25.9% ex-pool (>25%) (V13)  
   CA `DtcicPCKTKeAh7TDEzTym3hXeoHAoMiBdYJhMYxZpump`
-- 04:24Z Manlet (MIGRATED, $78,725 mcap, $34,730 5m vol): REJECT, Bundles: 10 linked wallet cluster(s) hold 26.6% of supply (>20%) (V17)  
-  CA `HyXjbs37EKU1QPKm2MnSQ3YaxNCugdh2W8bktSfYpump`
-- 04:23Z PENGUIN (FINAL_STRETCH, $17,510 mcap, $20,159 5m vol): PASS at conviction 2, PASS — 18-copy penguin vamp field, one bundle at 7.4% of supply, and a saw-tooth chart with no outside catalyst. Farm until shown otherwise (V1, V3, V13).  
-  CA `E1q6CJmjCNfCtMkPvt6zwXzZZXxJUYdUo3Wtt3aKpump`
-- 04:06Z TROLL (MIGRATED, $31,358 mcap, $4,554 5m vol): REJECT, RugCheck danger: Creator history of rugged tokens  
-  CA `7ykeHoEnjnGkY6tqteXn47fdGtd7kfXWghiyZ7YKpump`
-- 03:56Z Manlet (MIGRATED, $286,565 mcap, $2,763 5m vol): REJECT, RugCheck danger: Single holder ownership 51.70%  
-  CA `6LuwyvmTMyJiQRZQPneZCfr2gehSSAvQbMWgXCjopump`
 
 ## What its skips did next (last 48h)
 A skip "ran" if the coin reached the first target (1.5x) from the skip price before a 20% drop, "dumped" if the drop came first. Sampled every 10 min, followed 6h.
@@ -120,14 +120,14 @@ A skip "ran" if the coin reached the first target (1.5x) from the skip price bef
     CA `37corVSMFFrqP3WK7AtMV6yFTGSvjFEB5fWnH1Bcpump`
   - ran: Doomcat up to 1.62x  
     CA `EiQ1JvEUZCXN5kQi2UdS4CdQapidqC7MCXd5sRTPpump`
-- near the high / chasing: blocked 30, ran 9, dumped 20, flat 1, open 0 (saving losses: keep it)
+- near the high / chasing: blocked 28, ran 8, dumped 19, flat 1, open 0 (saving losses: keep it)
   - ran: Bertcoin up to 1.8x  
     CA `xEK58Qa2xZ7C36Z2g3Jjq1WHY561CvvnJkLpgJspump`
   - ran: WOFL up to 2.62x  
     CA `AdXjXfumPSSKk7PrfgDHcAsPvuxnKv7Zo9WZEWKbiDkh`
   - ran: Phil up to 2.05x  
     CA `GMLSyjZCKGtFwztp2mtT8PDeNUA6WEk7oQoe3QkFpump`
-- too new / sniping: blocked 29, ran 4, dumped 24, flat 1, open 0 (saving losses: keep it)
+- too new / sniping: blocked 28, ran 4, dumped 23, flat 1, open 0 (saving losses: keep it)
   - ran: Loaf up to 2.13x  
     CA `8Ugc1FHaeK6iXQrnUpztxhhNHqucFwaqC35A4Kjjpump`
   - ran: AGI up to 1.53x  
@@ -197,13 +197,13 @@ Nothing has a positive after-cost edge yet. All 229 settled coins average -8.7% 
 Meta: young pump.fun-to-PumpSwap internet-joke coins, and most are fading. Trollface (-55% in 1h), Slitheen (-93%, $43 of 5m volume, 0% buys), DongCoin (-99.7%, zero 5m volume) and Chudjak (-62%) are bleeding, so that theme is dying. Fresh launches with real buyers are the live theme: YUMA ($168k cap, $19k 5m, 59% buys, +205% in 1h, 1.3h old) and pode (100h old, $20k cap, +211% in 1h, 65% buys, but only $6.5k 5m). Legacy memes are dead weight: Cartoon Money ($5.2M cap, $3.3k 5m) and FartCoin ($58k, -15%). Setup to research now is YUMA only, and it has no conviction until the holder, dev and bundle checks run; it's the only mover clearing the $10k 5m bar with a live cap. Basket ($152k 5m, 6 minutes old on Raydium) is a brand-new pair, so it's a watch, not a snipe. The crawler's SLITHEEN, YUMA (84% buys at $95k) and Alien numbers don't match this scan, and Alien and KYM aren't on the tape, so I'm not using them. The Ansem drain coin is blocked and not a setup.
 
 ## Moving most in its scans, last 30 min (1h volume)
-- Manlet: $141,754 1h vol, $1,329 mcap, -99% 1h  
-  CA `HyXjbs37EKU1QPKm2MnSQ3YaxNCugdh2W8bktSfYpump`
-- CBUCKS: $65,567 1h vol, $5,206,344 mcap, -3% 1h  
+- BASKET: $881,805 1h vol, $238,112 mcap, +240% 1h  
+  CA `3Tg6YnNrfPdFfsY14MaNsDMWLseAyrUDS3myJtbaJN6f`
+- YUMA: $181,749 1h vol, $89,294 mcap, -5% 1h  
+  CA `CkwFsrupdFHzo5kYk8b5W47CVx1v5ymzeu6BBoDjpump`
+- CBUCKS: $69,856 1h vol, $5,460,152 mcap, +0% 1h  
   CA `DtcicPCKTKeAh7TDEzTym3hXeoHAoMiBdYJhMYxZpump`
-- PENGUIN: $42,433 1h vol, $8,731 mcap, -20% 1h  
-  CA `E1q6CJmjCNfCtMkPvt6zwXzZZXxJUYdUo3Wtt3aKpump`
-- TROLL: $32,240 1h vol, $6,362 mcap, -82% 1h  
-  CA `7ykeHoEnjnGkY6tqteXn47fdGtd7kfXWghiyZ7YKpump`
-- FUCKCANCER: $25,205 1h vol, $18,704 mcap, +428% 1h  
-  CA `4UMErmfmKzDCVmHrwBUbnDnbQnVKVYAcT7X5AdTkpump`
+- Manlet: $45,814 1h vol, $1,329 mcap, -98% 1h  
+  CA `HyXjbs37EKU1QPKm2MnSQ3YaxNCugdh2W8bktSfYpump`
+- Twitch: $41,441 1h vol, $28,125 mcap, +1103% 1h  
+  CA `6QtshTWFdGsscfo5cH6D8EUyyFgy7BDfdbMevUvbpump`
