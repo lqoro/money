@@ -1,13 +1,13 @@
 # Trencher live report
 
-Updated 2026-11-25T14:24:13Z (paper trading, never real money)
+Updated 2026-11-25T14:39:13Z (paper trading, never real money)
 
 - Equity: $74.23 (-25.8% vs $100 start)
 - Closed trades: 22, 3 wins
 - Fees paid: $14.78 (axiom $2.81, network $9.18, pool $2.66), plus $4.15 lost to slippage
 - New trades: WATCH-ONLY (scans and decides, buys nothing)
-- Brain: subscription, claude-haiku-5-5 for routine calls, claude-opus-5-5 for the daily review; 434 routine calls and 0 plan-limit hits in 48h
-- Watch log: 43 coins being followed, 3562 filed, 0 would-buys (6h follow, sampled every 2 min)
+- Brain: subscription, claude-haiku-5-5 for routine calls, claude-opus-5-5 for the daily review; 431 routine calls and 0 plan-limit hits in 48h
+- Watch log: 42 coins being followed, 3564 filed, 0 would-buys (6h follow, sampled every 2 min)
 
 ## Scorecard (after fees)
 - 22 closed, 3 won (14%), net $-25.79
@@ -73,9 +73,13 @@ Updated 2026-11-25T14:24:13Z (paper trading, never real money)
   CA `H4gHnZ3NCU7Z9XQwGX6YYJNyieGEW8pqwGRUcdSxpump`
 
 ## Last scan
-- 14:23Z: 4 coins, 3 with pairs, 0 passed the market filters, 0 researched
+- 14:38Z: 5 coins, 3 with pairs, 0 passed the market filters, 0 researched
 
 ## Coins it looked at, and why it passed
+- 14:34Z MONEYGO (MIGRATED, $256,814 mcap, $25,915 5m vol): REJECT, LP only 0% burned/locked (V2, V3, V6)  
+  CA `5Go8ByHzd9vvdBHhqFnxxgU2SRDfTv5XXMLjBnvrpump`
+- 14:26Z hacked (MIGRATED, $35,842 mcap, $6,153 5m vol): REJECT, Hack story ("hack" in the name or ticker): these tend to go down, owner rule  
+  CA `FK7bc3fR8UL8uogN2u8J9yEpEbQJKR7yKsp3G8rvpump`
 - 14:20Z 3sat (MIGRATED, $61,743 mcap, $27,098 5m vol): REJECT, LP only 0% burned/locked (V2, V3, V6)  
   CA `FaWEANo8Kz9B415xv3cocE8q5JgghN7CY8FYG4C5pump`
 - 14:19Z DESSA (MIGRATED, $937,577 mcap, $11,618 5m vol): PASS at conviction 3, PASS: DESSA broke under its hourly low with no higher low, no catalyst, and no story on the radar. Blocker: "no higher low" (V1, V6).  
@@ -92,10 +96,6 @@ Updated 2026-11-25T14:24:13Z (paper trading, never real money)
   CA `4m2PS6yW2xDk5V9nJgPjnus1eguwCDSWXbA2YQeVkqxn`
 - 13:39Z TANGENT (MIGRATED, $46,498 mcap, $9,039 5m vol): PASS at conviction 3, PASS: 5m volume is 3.16x the hourly pace on a coin that is 10 minutes old, with no printed higher low and a repo and domain created today. Blocker: chasing spike. (V1, V6, V13)  
   CA `BQYzmKyoSzdgeaeRiRwKJdWVaiLjpngUH6YT49PNNhsS`
-- 13:29Z WASTED (DIP, $1,032,281 mcap, $6,845 5m vol): REJECT, Dev holds 1.1% (>1%) (V13, V17)  
-  CA `GexThZHgaswpAQ7Fi8QrHFubjPimUNSYhJiAA7XZpump`
-- 13:25Z hacked (FINAL_STRETCH, $19,164 mcap, $15,002 5m vol): REJECT, Hack story ("hack" in the name or ticker): these tend to go down, owner rule  
-  CA `FK7bc3fR8UL8uogN2u8J9yEpEbQJKR7yKsp3G8rvpump`
 
 ## What its skips did next (last 48h)
 A skip "ran" if the coin reached the first target (1.5x) from the skip price before a 20% drop, "dumped" if the drop came first. Sampled every 10 min, followed 6h.
@@ -120,14 +120,14 @@ A skip "ran" if the coin reached the first target (1.5x) from the skip price bef
     CA `AdXjXfumPSSKk7PrfgDHcAsPvuxnKv7Zo9WZEWKbiDkh`
   - ran: Phil up to 2.05x  
     CA `GMLSyjZCKGtFwztp2mtT8PDeNUA6WEk7oQoe3QkFpump`
-- flow below pace: blocked 29, ran 6, dumped 22, flat 0, open 1 (saving losses: keep it)
+- flow below pace: blocked 29, ran 6, dumped 23, flat 0, open 0 (saving losses: keep it)
   - ran: NVDA up to 1.52x  
     CA `37corVSMFFrqP3WK7AtMV6yFTGSvjFEB5fWnH1Bcpump`
   - ran: Doomcat up to 1.62x  
     CA `EiQ1JvEUZCXN5kQi2UdS4CdQapidqC7MCXd5sRTPpump`
   - ran: Jesus up to 1.64x  
     CA `Gy5BUDnpJMWRsNVKh9sRtsBGunFXKKrbroQRoydQpump`
-- RugCheck danger: blocked 24, ran 5, dumped 18, flat 0, open 1 (saving losses: keep it)
+- RugCheck danger: blocked 24, ran 5, dumped 17, flat 0, open 2 (saving losses: keep it)
   - ran: JENSEN up to 1.7x  
     CA `CjPoozfB2Vub8pHFvdKuKUGJDLWuYC2U32yRTxMhpump`
   - ran: FUCK! up to 2.22x  
@@ -197,13 +197,13 @@ Nothing has a positive edge after costs. All 213 settled coins came out at -12.2
 Not quiet. The movers are pump.fun-era launches, 0 to 3 hours old, and the themes repeating across them are launchpad/tooling names (KYM "Know Your Memepad", PFP "Pumpfun Pills", DU "Developer University") and cute characters (three separate Pompompurin CAs, plus bon). The rising action is fresh launches with 55-90% 5m buy ratios, led by Gemidia (+604% in 1h, 90% buys, 6 minutes old) and Ukrainu (+312% in 1h, 60% buys). DU and Pilotus are not setups: their rows show $0 and $3 of 5m volume, which contradicts the crawler's summary, and the Ansem, Boor and SWARM items aren't in these rows, so I'm ignoring them. Headlines about Trump's memecoin dinner are attention but not showing on the movers, so I won't trade them. Setups to research, not buy: Ukrainu ($11.8k mcap, $32.9k 5m, 60% buys, still on the bonding curve), KYM ($24.5k mcap, $26.5k 5m, 57% buys, pumpswap), and Pompompurin pumpswap ($293k mcap, $21.6k 5m, -10.8% 1h) as a dip candidate only after I confirm the original CA. Gemidia is too extended to chase. Exit plans come before any entry, and holder, dev and bundle checks decide each one.
 
 ## Moving most in its scans, last 30 min (1h volume)
-- Pompom: $454,292 1h vol, $293,491 mcap, -11% 1h  
-  CA `5EmvWDizkpjAXbcfCcVq69w1id8GaLzi4LLwtuSgpump`
-- Ukrainu: $123,695 1h vol, $8,335 mcap, +191% 1h  
+- GEMIDIA: $222,811 1h vol, $1,268 mcap, -97% 1h  
+  CA `3wrZTXRbMk3pCXmmNDWqkaowSsxGzhTnmhPTSXYApump`
+- Ukrainu: $128,515 1h vol, $6,548 mcap, +129% 1h  
   CA `9Pe9Fj2BCWf1o5tWXvNYi6f8JTGr3qtq3JL66JRZpump`
 - KYM: $119,776 1h vol, $63,262 mcap, +129% 1h  
   CA `Hvi9xTj6vWCypxEZh3mCbiS9Ywshex8LyYAdBt7Epump`
+- MONEYGO: $112,320 1h vol, $256,814 mcap, +513% 1h  
+  CA `5Go8ByHzd9vvdBHhqFnxxgU2SRDfTv5XXMLjBnvrpump`
 - 3sat: $91,866 1h vol, $54,654 mcap, +83% 1h  
   CA `FaWEANo8Kz9B415xv3cocE8q5JgghN7CY8FYG4C5pump`
-- DESSA: $88,324 1h vol, $950,789 mcap, -12% 1h  
-  CA `npz2FhoufQ7pKqhGpaipYWacrAkidyW2yDpVWSvpump`
