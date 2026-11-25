@@ -1,13 +1,13 @@
 # Trencher live report
 
-Updated 2026-11-25T02:47:52Z (paper trading, never real money)
+Updated 2026-11-25T03:03:07Z (paper trading, never real money)
 
 - Equity: $74.23 (-25.8% vs $100 start)
 - Closed trades: 22, 3 wins
 - Fees paid: $14.78 (axiom $2.81, network $9.18, pool $2.66), plus $4.15 lost to slippage
 - New trades: WATCH-ONLY (scans and decides, buys nothing)
 - Brain: subscription, claude-haiku-5-5 for routine calls, claude-opus-5-5 for the daily review; 501 routine calls and 0 plan-limit hits in 48h
-- Watch log: 75 coins being followed, 3440 filed, 0 would-buys (6h follow, sampled every 2 min)
+- Watch log: 76 coins being followed, 3443 filed, 0 would-buys (6h follow, sampled every 2 min)
 
 ## Scorecard (after fees)
 - 22 closed, 3 won (14%), net $-25.79
@@ -73,9 +73,17 @@ Updated 2026-11-25T02:47:52Z (paper trading, never real money)
   CA `H4gHnZ3NCU7Z9XQwGX6YYJNyieGEW8pqwGRUcdSxpump`
 
 ## Last scan
-- 02:46Z: 3 coins, 3 with pairs, 0 passed the market filters, 0 researched
+- 03:02Z: 9 coins, 9 with pairs, 0 passed the market filters, 0 researched
 
 ## Coins it looked at, and why it passed
+- 03:01Z DONJENSEN (MIGRATED, $103,644 mcap, $2,298 5m vol): REJECT, RugCheck danger: Creator history of rugged tokens  
+  CA `5LDowscYVD3a6ZS4m8gCqG5nU16eLTwRXhciFi1bpump`
+- 02:52Z BOOBS (MIGRATED, $1,895,271 mcap, $8,418 5m vol): PASS at conviction 3, PASS: flow below pace. BOOBS is at 0.58x its hourly 5m pace, $8.4k on the 5m, and the theme is splitting into copies. Blocker: "flow below pace." (V1, V6)  
+  CA `E35iEA2yLLHc1tjm6et1Z3YuH8DhxJYWtWezPHgSpump`
+- 02:49Z Caiolo (no setup, $28,880 mcap, $2,642 5m vol): REJECT, No setup fits: not Final Stretch, not a migrated runner, not a healthy dip  
+  CA `2ksAWrKoyPkXaSo2HBSPrjALrytsm9SVEHq11VQZpump`
+- 02:48Z TOUCAN (MIGRATED, $62,791 mcap, $5,831 5m vol): PASS at conviction 2, PASS. TOUCAN is the 5m leader of a dying 15-copy toucan field, running at 0.42x hourly pace with no printed higher low. Flow below pace, no catalyst. (V1, V3, V6)  
+  CA `5Xd2vr3oY2YDhBeozvsZQto3rLiMzWDDBLadkgQspump`
 - 02:36Z Caiolo (MIGRATED, $89,906 mcap, $7,969 5m vol): PASS at conviction 3, PASS — chasing a +48% five-minute spike 2.6% off the high, and it's copy #2 in a 29-copy field, not the leader. (V1, V6, V13)  
   CA `B6nNZshi9ATgkCT8eBNL6BU21C8x1BAG1SZhXnwZpump`
 - 02:36Z ChristmASS (MIGRATED, $268,417 mcap, $14,467 5m vol): PASS at conviction 3, PASS: ChristmASS is clean on holders (top 10 at 1.75%, bundles 0, dev 0), but the Christmas meta is fading and the theme is trading at 0.93x its hourly pace, under the 1x bottom-buy gate. Blocker: "flow below pace" plus a fading theme. Clean holders don't bring back a dead story. (V1, V6)  
@@ -88,18 +96,10 @@ Updated 2026-11-25T02:47:52Z (paper trading, never real money)
   CA `5LDowscYVD3a6ZS4m8gCqG5nU16eLTwRXhciFi1bpump`
 - 02:15Z MIL (FINAL_STRETCH, $17,884 mcap, $17,852 5m vol): PASS at conviction 3, PASS — 23 copies of "mil", top 10 at 22.3%, no catalyst, and it already ran +482% in an hour. That's a vamp field with no story, not a bottom buy (V1, V3, V6).  
   CA `CFb9gspSW7LtfExqbJX13m6cT2WtbYT6Ftp2x8pWpump`
-- 02:06Z BOOBS (MIGRATED, $1,664,906 mcap, $13,275 5m vol): PASS at conviction 3, PASS: flow below pace. BOOBS has clean holders and a paid profile, but its 5m volume is 0.31x its hourly pace, and the theme has no catalyst. Attention is leaving, not arriving. (V1, V6)  
-  CA `E35iEA2yLLHc1tjm6et1Z3YuH8DhxJYWtWezPHgSpump`
-- 02:02Z TOUCAN (MIGRATED, $38,825 mcap, $2,506 5m vol): REJECT, Top 10 hold 27.7% ex-pool (>25%) (V13)  
-  CA `5Xd2vr3oY2YDhBeozvsZQto3rLiMzWDDBLadkgQspump`
-- 01:52Z Caiolo (FINAL_STRETCH, $17,429 mcap, $18,028 5m vol): PASS at conviction 2, PASS: 18 copies of the same name, no catalyst, and a +665% 1h pump already rolling over. That's a crowd splitting, not arriving (V1, V13).  
-  CA `2ksAWrKoyPkXaSo2HBSPrjALrytsm9SVEHq11VQZpump`
-- 01:50Z ChristmASS (MIGRATED, $274,373 mcap, $6,452 5m vol): PASS at conviction 2, PASS. Bottom buy with theme volume at 0.32x pace, no catalyst, and sells beating buys 194 to 72 on the 5m. Copycat field of 24, and the Christmas meta is dying. (V1, V6, V13)  
-  CA `CLxrgvfFs3gr9BQhTAfGxZDsiHfVUQTDEahfiZdLpump`
 
 ## What its skips did next (last 48h)
 A skip "ran" if the coin reached the first target (1.5x) from the skip price before a 20% drop, "dumped" if the drop came first. Sampled every 10 min, followed 6h.
-- top 10 over 25%: blocked 41, ran 7, dumped 30, flat 1, open 3 (saving losses: keep it)
+- top 10 over 25%: blocked 40, ran 6, dumped 30, flat 1, open 3 (saving losses: keep it)
   - ran: SNP6900 up to 2.76x  
     CA `DnbQKi146NDmwwji3f3q5i68HQnYyBEhoDyj2q3Npump`
   - ran: JENSEN up to 2.62x  
@@ -113,7 +113,7 @@ A skip "ran" if the coin reached the first target (1.5x) from the skip price bef
     CA `9cDnmLRDWeJzcpyw8tSFAT7HS4Aunx6MmZWjMfrzpump`
   - ran: SHHFT up to 1.61x  
     CA `GqMg4TRt5U5HRK6oeZYwCF1Jz7Ym9MSzWSoFCtFsbzf6`
-- flow below pace: blocked 33, ran 7, dumped 24, flat 0, open 2 (saving losses: keep it)
+- flow below pace: blocked 34, ran 8, dumped 24, flat 0, open 2 (saving losses: keep it)
   - ran: hCAT up to 1.52x  
     CA `2FYs4vApfj4ErsggpFDfzMv1WvxnyiLtzNEj84mS6TLh`
   - ran: WALLSTFLY up to 1.52x  
@@ -194,16 +194,16 @@ Nothing has a positive after-cost edge yet. All 229 settled coins average -8.7% 
 - [2026-11-02 20:25] I expected Slingoor, a clean MIGRATED leader with $25k of 5m flow at pace and a 0.77 buy share, to retest its $408k high from $304k. It never went green (0.98x peak) and hit the -20% stop in 2 minutes, a -$2.86 probe. My own thesis admitted there was no printed higher low after a peak only 6 minutes old, so this confirms the money-shape rule: buy share and flow are not structure (V1, V6). Next time a MIGRATED pullback with no higher low above the hourly low is a PASS with blocker "no higher low", not a probe. This is one loss, so it adds no new ban beyond the rule I already have.
 
 ## Meta right now
-Trencher: The tape isn't quiet. Fresh pump.fun names are pulling real flow: Epochal ($257k cap, $62.7k 5m, 72% buys, +142% 1h, 12 min old), DongCoin ($454k, $49k 5m, 65% buys, +1209% 1h) and PERRO ($55k, $23.8k 5m, 56% buys) are all under an hour old and rising. The second theme is internet-culture meta-names (Wikipedia Coin, KnowYourMeme, tism, Pumpcar): WIKI is the live one at $42.7k 5m and 54% buys after -59% in an hour, while KYM, "launch the lore", SNOWCALL and 𝕏 have near-zero 5m volume and sellers in control, so the theme is splitting into one survivor and dead copies. Fading: the Christmas play (ChristmASS, 27% buys, $6.5k 5m despite +249% 1h), the hippo and Jensen joke coins (FIONA at 124h on $4.7k 5m, DONJENSEN -44% on $1.4k 5m). The crawler's named setups (4CHAN, BOOBS, Le Toucan, Mars, Smoove) are not on this tape, and Teledroid is here at $3.4k 5m, under the $10k bar, so I'm not using them. Setups to research now: WIKI on the pullback, only if its peak was about $70k+ and buyers keep stepping in with 5m above $10k; Epochal and DongCoin are MIGRATED-style but parabolic, so they get a look only after a real retrace that holds volume; PERRO is the cleanest fresh one at 56% buys. Holder, dev and bundle checks run on each before any size. ANSEM is blocked, and no coin here is hack-named.
+Not quiet. The movers are a fresh pump.fun-to-PumpSwap tape: the active names are under about 3 hours old and most have buyers above 50%, led by DongCoin (+1560% in an hour, 71% buys), ChristmASS (70%), BOOBS (70%), Caiolo (57%) and Le Toucan (53%). The meta is fresh joke, holiday and internet-culture names, with the Trump and Ansem headlines not showing up on this tape. It splits into live fresh names and dead older copies: Pink Wojak -88%, OG -72%, SILK -83%, and Epochal at zero 5m volume. Two Caiolo tokens are trading at once, so check Similar Tokens for the original before touching either. Only ChristmASS clears the $10k 5m bar with buyers above 50% ($12.4k, 70%), so it is the one to research now with holder, dev and bundle checks. DongCoin is $5.2k of 5m volume on a $574k cap after a parabolic run, so it is a watch for a retrace that holds volume, not an entry. BOOBS ($8.9k) and Caiolo ($8k) sit just under the bar and wait for volume to return. The crawler's snapshot disagrees with scan_movers (Epochal at $257k, ChristmASS at 27% buys, and it calls BOOBS and Le Toucan off-tape), so I'm trusting the live scan until someone re-pulls. No coin on this tape is hack-named.
 
 ## Moving most in its scans, last 30 min (1h volume)
-- PERRO: $723,538 1h vol, $175,339 mcap, +548% 1h  
-  CA `4Di56UJzpnb7E4D7aLXFf7aLF5TrpJYv9Q3mR398pump`
-- DongCoin: $331,296 1h vol, $573,929 mcap, +1560% 1h  
-  CA `DMFzUvtfEmE697ZfEDqAXErd9MrBDEs66V5WiRvApump`
 - ChristmASS: $179,945 1h vol, $264,869 mcap, +4% 1h  
   CA `CLxrgvfFs3gr9BQhTAfGxZDsiHfVUQTDEahfiZdLpump`
+- BOOBS: $175,616 1h vol, $1,911,860 mcap, +13% 1h  
+  CA `E35iEA2yLLHc1tjm6et1Z3YuH8DhxJYWtWezPHgSpump`
+- TOUCAN: $166,624 1h vol, $62,791 mcap, +202% 1h  
+  CA `5Xd2vr3oY2YDhBeozvsZQto3rLiMzWDDBLadkgQspump`
+- MIL: $120,457 1h vol, $10,450 mcap, -31% 1h  
+  CA `CFb9gspSW7LtfExqbJX13m6cT2WtbYT6Ftp2x8pWpump`
 - Caiolo: $105,404 1h vol, $89,906 mcap, +212% 1h  
   CA `B6nNZshi9ATgkCT8eBNL6BU21C8x1BAG1SZhXnwZpump`
-- SILK: $56,016 1h vol, $7,628 mcap, -68% 1h  
-  CA `9abGDMDhBfR3jB4n93oCrHqTesYmUidY4eNC9EgKpump`
