@@ -1,13 +1,13 @@
 # Trencher live report
 
-Updated 2026-11-25T15:09:36Z (paper trading, never real money)
+Updated 2026-11-25T15:24:44Z (paper trading, never real money)
 
 - Equity: $74.23 (-25.8% vs $100 start)
 - Closed trades: 22, 3 wins
 - Fees paid: $14.78 (axiom $2.81, network $9.18, pool $2.66), plus $4.15 lost to slippage
 - New trades: WATCH-ONLY (scans and decides, buys nothing)
-- Brain: subscription, claude-haiku-5-5 for routine calls, claude-opus-5-5 for the daily review; 423 routine calls and 0 plan-limit hits in 48h
-- Watch log: 48 coins being followed, 3567 filed, 0 would-buys (6h follow, sampled every 2 min)
+- Brain: subscription, claude-haiku-5-5 for routine calls, claude-opus-5-5 for the daily review; 421 routine calls and 0 plan-limit hits in 48h
+- Watch log: 47 coins being followed, 3568 filed, 0 would-buys (6h follow, sampled every 2 min)
 
 ## Scorecard (after fees)
 - 22 closed, 3 won (14%), net $-25.79
@@ -73,7 +73,7 @@ Updated 2026-11-25T15:09:36Z (paper trading, never real money)
   CA `H4gHnZ3NCU7Z9XQwGX6YYJNyieGEW8pqwGRUcdSxpump`
 
 ## Last scan
-- 15:08Z: 5 coins, 3 with pairs, 1 passed the market filters, 1 researched
+- 15:24Z: 6 coins, 4 with pairs, 0 passed the market filters, 0 researched
 
 ## Coins it looked at, and why it passed
 - 15:08Z Santa (MIGRATED, $111,915 mcap, $5,210 5m vol): REJECT, Bundles: 6 linked wallet cluster(s) hold 31.2% of supply (>20%) (V17)  
@@ -197,13 +197,13 @@ Nothing has a positive edge after costs. All 213 settled coins came out at -12.2
 Meta: the only group with real buyers and rising price is cartoon-character coins. CursedBob is +69% on 1h with 60% buys and $4.7k 5m volume, and FRANK Swine-atra is +112% on 1h with 63% buys and $41.9k 5m on a $60k cap that is about 12 minutes old. Lore is +339% but has only $1.7k 5m, too thin to matter. Launchpad/tooling names are fading: KYM is -62% on 1h with $1.5k 5m, and Gemidia is -99.6% with zero 5m volume, so the crawler's "+604%, 90% buys" claim is not in the data and I'm treating Gemidia as dead. Older coins with volume (DESSA, WASTED, CBUCKS, BRUH, 18 to 50 days old) are attention, not trench meta, and the Trump dinner and Ansem headlines are not on the movers (ANSEM did $17 of 5m volume), so I'm not trading news. The crawler summary contradicts the scan rows on several coins, so I'm going by scan_movers only. Setups to research, not buy, all below conviction 5 for now: FRANK (extended, wait for a dip that holds with buyers back in), Pompompurin pumpswap ($232k, $14.4k 5m, flat, only after I confirm the original CA against the three the crawler cited), and CursedBob (its $4.7k 5m is under the $10k bar, so watch only). Holder, dev and bundle checks decide each one before any entry, and each needs an exit plan written first.
 
 ## Moving most in its scans, last 30 min (1h volume)
+- BIAO: $476,541 1h vol, $245,513 mcap, +549% 1h  
+  CA `As3XtYSstuVdrVyb6sJZZ77Tu8JvjTBg6S6hgPv4pump`
+- MONEYGO: $271,967 1h vol, $69,658 mcap, +66% 1h  
+  CA `5Go8ByHzd9vvdBHhqFnxxgU2SRDfTv5XXMLjBnvrpump`
 - 3sat: $247,850 1h vol, $29,210 mcap, -2% 1h  
   CA `FaWEANo8Kz9B415xv3cocE8q5JgghN7CY8FYG4C5pump`
-- Pompom: $217,297 1h vol, $232,047 mcap, +7% 1h  
-  CA `5EmvWDizkpjAXbcfCcVq69w1id8GaLzi4LLwtuSgpump`
-- KYM: $214,148 1h vol, $10,612 mcap, -62% 1h  
-  CA `Hvi9xTj6vWCypxEZh3mCbiS9Ywshex8LyYAdBt7Epump`
 - DESSA: $170,753 1h vol, $862,507 mcap, -28% 1h  
   CA `npz2FhoufQ7pKqhGpaipYWacrAkidyW2yDpVWSvpump`
-- FRANK: $93,716 1h vol, $60,062 mcap, +112% 1h  
-  CA `GbJCuSXQYRXYf8yxVV16yo4PBQ4H3FsT29fqkTSBpump`
+- KYM: $33,336 1h vol, $7,295 mcap, -68% 1h  
+  CA `Hvi9xTj6vWCypxEZh3mCbiS9Ywshex8LyYAdBt7Epump`
