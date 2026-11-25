@@ -1,13 +1,13 @@
 # Trencher live report
 
-Updated 2026-11-25T07:50:13Z (paper trading, never real money)
+Updated 2026-11-25T08:05:23Z (paper trading, never real money)
 
 - Equity: $74.23 (-25.8% vs $100 start)
 - Closed trades: 22, 3 wins
 - Fees paid: $14.78 (axiom $2.81, network $9.18, pool $2.66), plus $4.15 lost to slippage
 - New trades: WATCH-ONLY (scans and decides, buys nothing)
 - Brain: subscription, claude-haiku-5-5 for routine calls, claude-opus-5-5 for the daily review; 469 routine calls and 0 plan-limit hits in 48h
-- Watch log: 53 coins being followed, 3504 filed, 0 would-buys (6h follow, sampled every 2 min)
+- Watch log: 52 coins being followed, 3508 filed, 0 would-buys (6h follow, sampled every 2 min)
 
 ## Scorecard (after fees)
 - 22 closed, 3 won (14%), net $-25.79
@@ -73,9 +73,15 @@ Updated 2026-11-25T07:50:13Z (paper trading, never real money)
   CA `H4gHnZ3NCU7Z9XQwGX6YYJNyieGEW8pqwGRUcdSxpump`
 
 ## Last scan
-- 07:49Z: 4 coins, 4 with pairs, 1 passed the market filters, 1 researched
+- 08:05Z: 5 coins, 5 with pairs, 0 passed the market filters, 0 researched
 
 ## Coins it looked at, and why it passed
+- 07:58Z HOGE (DIP, $640,536 mcap, $2,724 5m vol): REJECT, Bundles: 9 linked wallet cluster(s) hold 27.9% of supply (>20%) (V17)  
+  CA `FVzqGqRmr4UH1Fif6dewmwbJ1p4YUZCu8dcw4Efopump`
+- 07:58Z CBUCKS (MIGRATED, $5,062,664 mcap, $2,752 5m vol): REJECT, Top 10 hold 25.9% ex-pool (>25%) (V13)  
+  CA `DtcicPCKTKeAh7TDEzTym3hXeoHAoMiBdYJhMYxZpump`
+- 07:54Z Alien (FINAL_STRETCH, $14,938 mcap, $6,948 5m vol): PASS at conviction 3, PASS — 9x spike off the floor with no printed higher low, 20 copies of "alien" in the field, and no story on the radar. Blocker: "no higher low" (V1, V6).  
+  CA `9QDgPpMvsRQwoMmfaWtQah2bjjRFym8YS1xwYCcspump`
 - 07:49Z BASKET (MIGRATED, $713,849 mcap, $40,446 5m vol): PASS at conviction 3, PASS: target too close. The prior high ($796k) is only about 1.12x away, under the 1.3x minimum, and the theme is dead (0.07x pace, zero radar mentions). Bundles are 12.9% with one cluster at 6.85% (V3, V13).  
   CA `3Tg6YnNrfPdFfsY14MaNsDMWLseAyrUDS3myJtbaJN6f`
 - 07:21Z Jimmies (DIP, $1,013,262 mcap, $2,514 5m vol): REJECT, Dip with fading attention is a falling knife, not a dip (5m at 0.52x the hour's pace, under 0.6x)  
@@ -90,12 +96,6 @@ Updated 2026-11-25T07:50:13Z (paper trading, never real money)
   CA `GexThZHgaswpAQ7Fi8QrHFubjPimUNSYhJiAA7XZpump`
 - 06:27Z FUCKCANCER (DIP, $56,452 mcap, $3,428 5m vol): REJECT, Dip with fading attention is a falling knife, not a dip (5m at 0.33x the hour's pace, under 0.6x)  
   CA `4UMErmfmKzDCVmHrwBUbnDnbQnVKVYAcT7X5AdTkpump`
-- 06:27Z Memeployed (MIGRATED, $75,400 mcap, $2,170 5m vol): PASS at conviction 3, PASS: 75% off the high, no higher low, 16-copy vamp field, no catalyst (V1, V3, V6).  
-  CA `4m2PS6yW2xDk5V9nJgPjnus1eguwCDSWXbA2YQeVkqxn`
-- 06:21Z HOGE (DIP, $649,028 mcap, $2,052 5m vol): REJECT, Bundles: 9 linked wallet cluster(s) hold 27.9% of supply (>20%) (V17)  
-  CA `FVzqGqRmr4UH1Fif6dewmwbJ1p4YUZCu8dcw4Efopump`
-- 06:18Z BASKET (MIGRATED, $416,681 mcap, $39,240 5m vol): PASS at conviction 2, PASS — at the high (6% off, chasing), 16 copies of the ticker, largest bundle 5.1% and no catalyst. Blocker: chasing. (V1, V3, V6, V13)  
-  CA `3Tg6YnNrfPdFfsY14MaNsDMWLseAyrUDS3myJtbaJN6f`
 
 ## What its skips did next (last 48h)
 A skip "ran" if the coin reached the first target (1.5x) from the skip price before a 20% drop, "dumped" if the drop came first. Sampled every 10 min, followed 6h.
@@ -149,7 +149,7 @@ A skip "ran" if the coin reached the first target (1.5x) from the skip price bef
 - thin 5m volume: blocked 13, ran 1, dumped 9, flat 3, open 0 (saving losses: keep it)
   - ran: NINO up to 1.55x  
     CA `BqekG1RSPUthaKfStu7Uvyvr1eR6TchrQMp1M5r5pump`
-- bundles over the line: blocked 12, ran 2, dumped 6, flat 3, open 1 (saving losses: keep it)
+- bundles over the line: blocked 12, ran 2, dumped 6, flat 2, open 2 (saving losses: keep it)
   - ran: RNV up to 2.35x  
     CA `A2nbXtQvvRMvWtifCkV8cYepwcC4M7iA1jVMwAh6pump`
   - ran: DUMBMONEY up to 1.74x  
@@ -192,16 +192,16 @@ Nothing has a positive after-cost edge yet. All 229 settled coins average -8.7% 
 - [2026-11-02 20:25] I expected Slingoor, a clean MIGRATED leader with $25k of 5m flow at pace and a 0.77 buy share, to retest its $408k high from $304k. It never went green (0.98x peak) and hit the -20% stop in 2 minutes, a -$2.86 probe. My own thesis admitted there was no printed higher low after a peak only 6 minutes old, so this confirms the money-shape rule: buy share and flow are not structure (V1, V6). Next time a MIGRATED pullback with no higher low above the hourly low is a PASS with blocker "no higher low", not a probe. This is one loss, so it adds no new ban beyond the rule I already have.
 
 ## Meta right now
-The trenches are thin right now, and the flow is concentrated in two coins, not a theme. Only YUMA ($52k cap, $14.4k 5m, 70% buys, 3.6h old, PumpSwap) and Merged (a 6-minute-old pump.fun launch, $10.4k 5m, 64% buys, up 413% in 1h) clear the $10k 5m bar in scan_movers. Rising: fresh pump.fun launches with real buyers. Fading: cartoon and meme-character coins (Trollface, 404GIRL, Golden Penguin, pode, Cartoon Money at $110 5m) and brand-name pumps like Reddit ($0 5m), which went quiet. Legacy coins (WASTED at 612h, ROCKET, SIMPS, Christmax) carry market cap with almost no flow, so they aren't a meta. The one setup that fits the MIGRATED rules (age ≤12h, cap ≥$30k, 5m ≥$10k) is YUMA: research it with the holder, dev and bundle checks, take initials at 2x, and treat the -24% 1h as a reason for a tight stop. Merged is too new to touch under the no-snipe rule. Basket and Fuck Cancer come only from the crawler summary and aren't in this scan, so they stay unverified until re-pulled, and Basket's age already conflicts. Ansem is a blocked drain coin and the Trump headlines aren't trading here.
+The meta is alien and sci-fi creature names on fresh pump.fun launches. Alien ($17k cap, $7.4k 5m, 63% buys, +790% 1h) and Slitheen ($8.7k, $4.1k 5m, 53% buys, +341% 1h) are rising, and Tandem and Offchart (under 1h old, $11.7k and $1.7k 5m) are the same wave at its earliest stage. Cartoon and character coins are fading: Cartoon Money ($12 on 5m at a $5.2M cap), Memeployed, Hoge, Rocket Raccoon and Fuck Cancer all show almost no 5m flow, and the legacy caps (WASTED, ROCKET, CBUCKS) are not a meta. The crawler's YUMA and Merged numbers don't match the scan (YUMA is $1.5k cap with $0 5m now, Merged is $3k with 33% buys and -89% 1h), so I'm discarding both. The setup that fits the MIGRATED rules is Basket (Raydium, $714k cap, $40k 5m, 59% buys, 3.1h old, +29% 1h): run holder, dev and bundle checks, take initials at 2x, and put the stop where the thesis breaks. Alien is the FINAL_STRETCH name to research, but its 5m is under the $10k bar, so it's not a buy yet, and Tandem and Offchart are inside the no-snipe window.
 
 ## Moving most in its scans, last 30 min (1h volume)
 - BASKET: $367,472 1h vol, $713,849 mcap, +29% 1h  
   CA `3Tg6YnNrfPdFfsY14MaNsDMWLseAyrUDS3myJtbaJN6f`
-- YUMA: $94,929 1h vol, $1,502 mcap, -98% 1h  
-  CA `CkwFsrupdFHzo5kYk8b5W47CVx1v5ymzeu6BBoDjpump`
-- Jimmies: $58,146 1h vol, $1,013,262 mcap, -31% 1h  
-  CA `GisWWjhwrSud4aFGSHvTMt85Ky14sY7LeBFCpfoFpump`
-- N3ON: $53,632 1h vol, $1,972 mcap, -20% 1h  
-  CA `8HBAgQbwNucWbRyFHn7Y1DB8Y348WAsPWDJTT7JRpump`
-- Alien: $49,513 1h vol, $13,295 mcap, +579% 1h  
+- Alien: $66,541 1h vol, $17,427 mcap, +790% 1h  
   CA `9QDgPpMvsRQwoMmfaWtQah2bjjRFym8YS1xwYCcspump`
+- SLITHEEN: $44,783 1h vol, $8,647 mcap, +326% 1h  
+  CA `2ajAnFA8UKpeYbWSoEwobGQrLvdUUmjipjpongMepump`
+- OFFCHART: $37,087 1h vol, $4,863 mcap, +103% 1h  
+  CA `9iE9pNmbnN13RtdD5PmkzFPK1RGFpGaWV5k19z4bpump`
+- N3ON: $34,174 1h vol, $1,955 mcap, -65% 1h  
+  CA `8HBAgQbwNucWbRyFHn7Y1DB8Y348WAsPWDJTT7JRpump`
