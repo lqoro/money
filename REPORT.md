@@ -1,13 +1,13 @@
 # Trencher live report
 
-Updated 2026-11-25T02:17:43Z (paper trading, never real money)
+Updated 2026-11-25T02:32:46Z (paper trading, never real money)
 
 - Equity: $74.23 (-25.8% vs $100 start)
 - Closed trades: 22, 3 wins
 - Fees paid: $14.78 (axiom $2.81, network $9.18, pool $2.66), plus $4.15 lost to slippage
 - New trades: WATCH-ONLY (scans and decides, buys nothing)
-- Brain: subscription, claude-haiku-5-5 for routine calls, claude-opus-5-5 for the daily review; 506 routine calls and 0 plan-limit hits in 48h
-- Watch log: 78 coins being followed, 3433 filed, 0 would-buys (6h follow, sampled every 2 min)
+- Brain: subscription, claude-haiku-5-5 for routine calls, claude-opus-5-5 for the daily review; 503 routine calls and 0 plan-limit hits in 48h
+- Watch log: 78 coins being followed, 3435 filed, 0 would-buys (6h follow, sampled every 2 min)
 
 ## Scorecard (after fees)
 - 22 closed, 3 won (14%), net $-25.79
@@ -73,9 +73,13 @@ Updated 2026-11-25T02:17:43Z (paper trading, never real money)
   CA `H4gHnZ3NCU7Z9XQwGX6YYJNyieGEW8pqwGRUcdSxpump`
 
 ## Last scan
-- 02:16Z: 3 coins, 3 with pairs, 0 passed the market filters, 0 researched
+- 02:32Z: 4 coins, 4 with pairs, 0 passed the market filters, 0 researched
 
 ## Coins it looked at, and why it passed
+- 02:25Z DongCoin (MIGRATED, $573,929 mcap, $5,224 5m vol): REJECT, Top 10 hold 35.4% ex-pool (>25%) (V13)  
+  CA `DMFzUvtfEmE697ZfEDqAXErd9MrBDEs66V5WiRvApump`
+- 02:22Z PERRO (MIGRATED, $175,339 mcap, $47,961 5m vol): PASS at conviction 3, PASS — 5m flow at 0.8x its hourly pace, no printed higher low, and the coin is up 548% in an hour off a $19k low. Recovery spike, not a base. First resistance is only 1.22x away. (V1, V6)  
+  CA `4Di56UJzpnb7E4D7aLXFf7aLF5TrpJYv9Q3mR398pump`
 - 02:15Z DONJENSEN (MIGRATED, $104,209 mcap, $2,002 5m vol): REJECT, RugCheck danger: Creator history of rugged tokens  
   CA `5LDowscYVD3a6ZS4m8gCqG5nU16eLTwRXhciFi1bpump`
 - 02:15Z MIL (FINAL_STRETCH, $17,884 mcap, $17,852 5m vol): PASS at conviction 3, PASS — 23 copies of "mil", top 10 at 22.3%, no catalyst, and it already ran +482% in an hour. That's a vamp field with no story, not a bottom buy (V1, V3, V6).  
@@ -92,14 +96,10 @@ Updated 2026-11-25T02:17:43Z (paper trading, never real money)
   CA `E2MJUFBMaTH7j21P2HncB96erJ4dM3FPL2W6i8Dpump`
 - 01:40Z Epochal (MIGRATED, $293,510 mcap, $48,823 5m vol): REJECT, Dev holds 10.2% (>1%) (V13, V17)  
   CA `9MRLWakVX5U9LbWRQ5t2m4gyUbnYrhwAfUDRBkBMpump`
-- 01:39Z FIONA (DIP, $2,409,080 mcap, $4,654 5m vol): REJECT, Dip with fading attention is a falling knife, not a dip (5m at 0.55x the hour's pace, under 0.6x)  
-  CA `B34nXKzCgsJb9ChLuSHPRpXLE3WFSWyeT8Cqkzzmpump`
-- 01:39Z DongCoin (MIGRATED, $454,500 mcap, $49,361 5m vol): REJECT, Top 10 hold 48.0% ex-pool (>25%) (V13)  
-  CA `DMFzUvtfEmE697ZfEDqAXErd9MrBDEs66V5WiRvApump`
 
 ## What its skips did next (last 48h)
 A skip "ran" if the coin reached the first target (1.5x) from the skip price before a 20% drop, "dumped" if the drop came first. Sampled every 10 min, followed 6h.
-- top 10 over 25%: blocked 41, ran 7, dumped 31, flat 1, open 2 (saving losses: keep it)
+- top 10 over 25%: blocked 41, ran 7, dumped 30, flat 1, open 3 (saving losses: keep it)
   - ran: SNP6900 up to 2.76x  
     CA `DnbQKi146NDmwwji3f3q5i68HQnYyBEhoDyj2q3Npump`
   - ran: JENSEN up to 2.62x  
@@ -113,21 +113,21 @@ A skip "ran" if the coin reached the first target (1.5x) from the skip price bef
     CA `9cDnmLRDWeJzcpyw8tSFAT7HS4Aunx6MmZWjMfrzpump`
   - ran: SHHFT up to 1.61x  
     CA `GqMg4TRt5U5HRK6oeZYwCF1Jz7Ym9MSzWSoFCtFsbzf6`
-- flow below pace: blocked 33, ran 7, dumped 25, flat 0, open 1 (saving losses: keep it)
+- flow below pace: blocked 33, ran 7, dumped 24, flat 0, open 2 (saving losses: keep it)
   - ran: hCAT up to 1.52x  
     CA `2FYs4vApfj4ErsggpFDfzMv1WvxnyiLtzNEj84mS6TLh`
   - ran: WALLSTFLY up to 1.52x  
     CA `2DQbV7hsqxKVWmFakXGGhBbNyY28tDJ9YuJkojYrpump`
   - ran: NVDA up to 1.52x  
     CA `37corVSMFFrqP3WK7AtMV6yFTGSvjFEB5fWnH1Bcpump`
-- too new / sniping: blocked 31, ran 4, dumped 26, flat 1, open 0 (saving losses: keep it)
+- too new / sniping: blocked 30, ran 3, dumped 26, flat 1, open 0 (saving losses: keep it)
   - ran: Loaf up to 2.13x  
     CA `8Ugc1FHaeK6iXQrnUpztxhhNHqucFwaqC35A4Kjjpump`
   - ran: AGI up to 1.53x  
     CA `7kctwFbSdLfpi6RuN9cjpVpYVHKPUr8PtG1meH35AEky`
   - ran: TREMP up to 1.7x  
     CA `CuNLbjjFcmumcKF1AnUkPU4dcjykJR73M8hzJB5Cpump`
-- near the high / chasing: blocked 30, ran 7, dumped 22, flat 1, open 0 (saving losses: keep it)
+- near the high / chasing: blocked 28, ran 7, dumped 20, flat 1, open 0 (saving losses: keep it)
   - ran: Bertcoin up to 1.8x  
     CA `xEK58Qa2xZ7C36Z2g3Jjq1WHY561CvvnJkLpgJspump`
   - ran: WOFL up to 2.62x  
@@ -197,13 +197,13 @@ Nothing has a positive after-cost edge yet. All 229 settled coins average -8.7% 
 Trencher: The tape isn't quiet. Fresh pump.fun names are pulling real flow: Epochal ($257k cap, $62.7k 5m, 72% buys, +142% 1h, 12 min old), DongCoin ($454k, $49k 5m, 65% buys, +1209% 1h) and PERRO ($55k, $23.8k 5m, 56% buys) are all under an hour old and rising. The second theme is internet-culture meta-names (Wikipedia Coin, KnowYourMeme, tism, Pumpcar): WIKI is the live one at $42.7k 5m and 54% buys after -59% in an hour, while KYM, "launch the lore", SNOWCALL and 𝕏 have near-zero 5m volume and sellers in control, so the theme is splitting into one survivor and dead copies. Fading: the Christmas play (ChristmASS, 27% buys, $6.5k 5m despite +249% 1h), the hippo and Jensen joke coins (FIONA at 124h on $4.7k 5m, DONJENSEN -44% on $1.4k 5m). The crawler's named setups (4CHAN, BOOBS, Le Toucan, Mars, Smoove) are not on this tape, and Teledroid is here at $3.4k 5m, under the $10k bar, so I'm not using them. Setups to research now: WIKI on the pullback, only if its peak was about $70k+ and buyers keep stepping in with 5m above $10k; Epochal and DongCoin are MIGRATED-style but parabolic, so they get a look only after a real retrace that holds volume; PERRO is the cleanest fresh one at 56% buys. Holder, dev and bundle checks run on each before any size. ANSEM is blocked, and no coin here is hack-named.
 
 ## Moving most in its scans, last 30 min (1h volume)
+- Epochal: $825,796 1h vol, $1,317 mcap, -99% 1h  
+  CA `9MRLWakVX5U9LbWRQ5t2m4gyUbnYrhwAfUDRBkBMpump`
+- PERRO: $723,538 1h vol, $175,339 mcap, +548% 1h  
+  CA `4Di56UJzpnb7E4D7aLXFf7aLF5TrpJYv9Q3mR398pump`
 - BOOBS: $481,596 1h vol, $1,672,848 mcap, +89% 1h  
   CA `E35iEA2yLLHc1tjm6et1Z3YuH8DhxJYWtWezPHgSpump`
-- WIKI: $424,950 1h vol, $77,160 mcap, -59% 1h  
-  CA `E2MJUFBMaTH7j21P2HncB96erJ4dM3FPL2W6i8Dpump`
-- ChristmASS: $241,727 1h vol, $274,373 mcap, +249% 1h  
-  CA `CLxrgvfFs3gr9BQhTAfGxZDsiHfVUQTDEahfiZdLpump`
+- DongCoin: $331,296 1h vol, $573,929 mcap, +1560% 1h  
+  CA `DMFzUvtfEmE697ZfEDqAXErd9MrBDEs66V5WiRvApump`
 - MIL: $128,775 1h vol, $17,884 mcap, +482% 1h  
   CA `CFb9gspSW7LtfExqbJX13m6cT2WtbYT6Ftp2x8pWpump`
-- PINKWOJAK: $86,688 1h vol, $3,045 mcap, +48% 1h  
-  CA `7GeVoC1PoBA5i5YYmB24xAYjd6WyuRKJizUUtgKdpump`
