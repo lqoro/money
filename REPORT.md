@@ -1,13 +1,13 @@
 # Trencher live report
 
-Updated 2026-11-24T23:46:29Z (paper trading, never real money)
+Updated 2026-11-25T00:01:40Z (paper trading, never real money)
 
 - Equity: $74.23 (-25.8% vs $100 start)
 - Closed trades: 22, 3 wins
 - Fees paid: $14.78 (axiom $2.81, network $9.18, pool $2.66), plus $4.15 lost to slippage
 - New trades: WATCH-ONLY (scans and decides, buys nothing)
 - Brain: subscription, claude-haiku-5-5 for routine calls, claude-opus-5-5 for the daily review; 514 routine calls and 0 plan-limit hits in 48h
-- Watch log: 74 coins being followed, 3400 filed, 0 would-buys (6h follow, sampled every 2 min)
+- Watch log: 74 coins being followed, 3403 filed, 0 would-buys (6h follow, sampled every 2 min)
 
 ## Scorecard (after fees)
 - 22 closed, 3 won (14%), net $-25.79
@@ -73,9 +73,15 @@ Updated 2026-11-24T23:46:29Z (paper trading, never real money)
   CA `H4gHnZ3NCU7Z9XQwGX6YYJNyieGEW8pqwGRUcdSxpump`
 
 ## Last scan
-- 23:46Z: 5 coins, 5 with pairs, 0 passed the market filters, 0 researched
+- 00:01Z: 5 coins, 5 with pairs, 0 passed the market filters, 0 researched
 
 ## Coins it looked at, and why it passed
+- 23:59Z FIONA (MIGRATED, $2,844,586 mcap, $4,738 5m vol): REJECT, Bundles: 9 linked wallet cluster(s) hold 29.4% of supply (>20%) (V17)  
+  CA `B34nXKzCgsJb9ChLuSHPRpXLE3WFSWyeT8Cqkzzmpump`
+- 23:56Z BTC (MIGRATED, $132,997 mcap, $10,366 5m vol): PASS at conviction 4, PASS. Flow is at 0.81x its hourly pace, no higher low has printed, and 22 same-ticker copies split the crowd. Watch for a reclaim of the $167k bounce high (V1, V6).  
+  CA `GkSZVKcXcgodewdZd5CbGxFJoUUcazrf1GayrNv3pump`
+- 23:51Z Pumpcar (MIGRATED, $47,633 mcap, $32,717 5m vol): PASS at conviction 2, PASS: chasing spike, 1.10x to the first resistance, 26-copy vamp field. Too new and too hot to buy. (V1, V6)  
+  CA `4M1tpKSat8qWnJk6pskUBciw4PBvXt4gNMc36NV8pump`
 - 23:44Z 4CHAN (MIGRATED, $265,002 mcap, $94,668 5m vol): PASS, PASS — brain unavailable, not trading blind.  
   CA `DVdWuNK8ncn79B6z8nCiwcNAiwyFcmBPfChgxJGTpump`
 - 23:29Z Sisyphus (MIGRATED, $31,174 mcap, $46,221 5m vol): REJECT, Top 10 hold 26.6% ex-pool (>25%) (V13)  
@@ -90,22 +96,9 @@ Updated 2026-11-24T23:46:29Z (paper trading, never real money)
   CA `5LDowscYVD3a6ZS4m8gCqG5nU16eLTwRXhciFi1bpump`
 - 23:17Z MARS (MIGRATED, $458,037 mcap, $95,314 5m vol): REJECT, Top 10 hold 27.8% ex-pool (>25%) (V13)  
   CA `816BuXnCFQqt6KXbBTcFgHWD29Ckpaqt8HMKSN4Vpump`
-- 23:14Z MEMESTONK (MIGRATED, $226,588 mcap, $112,080 5m vol): REJECT, Top 10 hold 46.8% ex-pool (>25%) (V13)  
-  CA `9guNcpbsmqcKJikLNBcn8g5AoG3v9k98zK51KcoXpump`
-- 23:13Z FIONA (MIGRATED, $3,366,119 mcap, $5,849 5m vol): REJECT, Bundles: 9 linked wallet cluster(s) hold 29.4% of supply (>20%) (V17)  
-  CA `B34nXKzCgsJb9ChLuSHPRpXLE3WFSWyeT8Cqkzzmpump`
-- 23:09Z BTC (MIGRATED, $160,205 mcap, $10,368 5m vol): REJECT, Top 10 hold 31.6% ex-pool (>25%) (V13)  
-  CA `GkSZVKcXcgodewdZd5CbGxFJoUUcazrf1GayrNv3pump`
 
 ## What its skips did next (last 48h)
 A skip "ran" if the coin reached the first target (1.5x) from the skip price before a 20% drop, "dumped" if the drop came first. Sampled every 10 min, followed 6h.
-- top 10 over 25%: blocked 40, ran 6, dumped 29, flat 2, open 3 (saving losses: keep it)
-  - ran: SNP6900 up to 2.76x  
-    CA `DnbQKi146NDmwwji3f3q5i68HQnYyBEhoDyj2q3Npump`
-  - ran: JENSEN up to 2.62x  
-    CA `GaNJeASYBM9k3TvEeUC2Pdyu1TjcpzTmPpoom92fpump`
-  - ran: GOAT up to 1.53x  
-    CA `5Ze97VEpX3EdRF4vbsxUXTdwGKF2qHGregrxToWEpump`
 - brain paced: blocked 39, ran 11, dumped 25, flat 1, open 2 (saving losses: keep it)
   - ran: DONJENSEN up to 1.69x  
     CA `5LDowscYVD3a6ZS4m8gCqG5nU16eLTwRXhciFi1bpump`
@@ -113,7 +106,14 @@ A skip "ran" if the coin reached the first target (1.5x) from the skip price bef
     CA `5JWeGmA9z6yHd5F9P6B23A8wthho8BpZuDmQv5DfLoat`
   - ran: RUGSEM up to 1.5x  
     CA `9cDnmLRDWeJzcpyw8tSFAT7HS4Aunx6MmZWjMfrzpump`
-- too new / sniping: blocked 31, ran 3, dumped 27, flat 1, open 0 (saving losses: keep it)
+- top 10 over 25%: blocked 38, ran 6, dumped 29, flat 2, open 1 (saving losses: keep it)
+  - ran: SNP6900 up to 2.76x  
+    CA `DnbQKi146NDmwwji3f3q5i68HQnYyBEhoDyj2q3Npump`
+  - ran: JENSEN up to 2.62x  
+    CA `GaNJeASYBM9k3TvEeUC2Pdyu1TjcpzTmPpoom92fpump`
+  - ran: GOAT up to 1.53x  
+    CA `5Ze97VEpX3EdRF4vbsxUXTdwGKF2qHGregrxToWEpump`
+- too new / sniping: blocked 32, ran 3, dumped 28, flat 1, open 0 (saving losses: keep it)
   - ran: Loaf up to 2.13x  
     CA `8Ugc1FHaeK6iXQrnUpztxhhNHqucFwaqC35A4Kjjpump`
   - ran: AGI up to 1.53x  
@@ -127,7 +127,7 @@ A skip "ran" if the coin reached the first target (1.5x) from the skip price bef
     CA `AdXjXfumPSSKk7PrfgDHcAsPvuxnKv7Zo9WZEWKbiDkh`
   - ran: Phil up to 2.05x  
     CA `GMLSyjZCKGtFwztp2mtT8PDeNUA6WEk7oQoe3QkFpump`
-- flow below pace: blocked 29, ran 6, dumped 23, flat 0, open 0 (saving losses: keep it)
+- flow below pace: blocked 30, ran 6, dumped 23, flat 0, open 1 (saving losses: keep it)
   - ran: hCAT up to 1.52x  
     CA `2FYs4vApfj4ErsggpFDfzMv1WvxnyiLtzNEj84mS6TLh`
   - ran: WALLSTFLY up to 1.52x  
@@ -198,16 +198,16 @@ Nothing has a positive after-cost edge yet. All 229 settled coins average -8.7% 
 - [2026-11-02 20:25] I expected Slingoor, a clean MIGRATED leader with $25k of 5m flow at pace and a 0.77 buy share, to retest its $408k high from $304k. It never went green (0.98x peak) and hit the -20% stop in 2 minutes, a -$2.86 probe. My own thesis admitted there was no printed higher low after a peak only 6 minutes old, so this confirms the money-shape rule: buy share and flow are not structure (V1, V6). Next time a MIGRATED pullback with no higher low above the hourly low is a PASS with blocker "no higher low", not a probe. This is one loss, so it adds no new ban beyond the rule I already have.
 
 ## Meta right now
-Nothing in this scan is a setup. No mover clears the $10k 5-minute volume bar; the best are BULLSHIT at $6.2k and scamsem at $5.6k, and 1h volume is mostly well above 5m, so the flow is fading. Two themes repeat in the raw rows: self-aware scam and joke names (scamsem and its pumpswap twin RUGSEM, Key Opinion Loser, Bull Shit), which are fading, and Claude-named coins (CLAUDIO at $97k, SUPER CLAUDIA INU at $29k) on thin 5m with 63-69% buys, which are early and unproven. Trump and Jensen names are fading: JENSEN does $1.5k 5m on a $499k cap and DONJENSEN $3.3k on $2.1M, which matches the record-low headlines. The crawler's summary is wrong on several rows. scamsem is $57k cap and $5.6k 5m (not $90k and $13.7k), UCASH is $75k and $4.8k, JENSEN is $499k and $1.5k, and "the black" is a $2.5k cap with $17 of 5m volume and 20% buys, so none of them qualify and the black's +146% claim is not in the data. Watch CLAUDIO and scamsem for 5m volume to clear $10k; BULLSHIT is pump.fun new-pair territory and I'm not chasing it. Holder, dev and bundle checks were not run on any of these coins, so this is a volume read only.
+Meta right now is fresh pump.fun internet-joke names with real 5-minute flow. 4CHAN ($276k cap, $110k 5m, 59% buys, 1.7h old) and Jimmies ("That really rustled my jimmies", $149k cap, $47k 5m, 87% buys, about 6 minutes old) are the two doing it, with Sisyphus ($31k cap, $46k 5m, 58% buys, minutes old) as a third. The fading theme is the pump-and-dump-out crowd: trilly, CHARITY, RAGE, SCOOBY, BOUNCER, Streamer and Votr all printed large 1h volume, are down 70-90%, and have $0 to $400 of 5m volume. Setups I'd research: Jimmies and 4CHAN, but only on a pullback that holds with 5m volume still above $10k and buyers stepping back in. Jimmies is too young to be more than a probe, and I won't chase 4CHAN after a +966% hour. Nothing clears until holder, dev and bundle checks run. The Claude-named coins (CLAUDIO, SUPER CLAUDIA INU) and the Trump/Jensen names in the crawler summary are not in these movers, so I'm treating those rows as unverified. ANSEM is named in a wallet-hack headline and is blocked, so it is not a setup.
 
 ## Moving most in its scans, last 30 min (1h volume)
-- MARS: $558,354 1h vol, $499,022 mcap, +415% 1h  
-  CA `816BuXnCFQqt6KXbBTcFgHWD29Ckpaqt8HMKSN4Vpump`
+- MEMESTONK: $363,915 1h vol, $1,314 mcap, -97% 1h  
+  CA `9guNcpbsmqcKJikLNBcn8g5AoG3v9k98zK51KcoXpump`
 - 4CHAN: $320,051 1h vol, $275,831 mcap, +966% 1h  
   CA `DVdWuNK8ncn79B6z8nCiwcNAiwyFcmBPfChgxJGTpump`
-- goldcoin: $238,584 1h vol, $73,556 mcap, +338% 1h  
-  CA `Cp6i5Ka8Gwzzn537KoqLyjQCFX6QBfoAC9WuxEbQpump`
-- PI: $110,473 1h vol, $3,823 mcap, -21% 1h  
+- BTC: $155,056 1h vol, $111,984 mcap, -16% 1h  
+  CA `GkSZVKcXcgodewdZd5CbGxFJoUUcazrf1GayrNv3pump`
+- PI: $115,684 1h vol, $6,043 mcap, +25% 1h  
   CA `8nZQ36gei4au7wdmnCDQDEquyPiRzMJNMymXnkiKpump`
-- Jimmies: $94,502 1h vol, $148,908 mcap, +366% 1h  
-  CA `GisWWjhwrSud4aFGSHvTMt85Ky14sY7LeBFCpfoFpump`
+- Smoove: $100,899 1h vol, $22,836 mcap, -20% 1h  
+  CA `BMqyT3n9kXYhBjWKFdgGmPzbNbqcXs8sNgXWhw7tpump`
