@@ -1,13 +1,13 @@
 # Trencher live report
 
-Updated 2026-11-25T17:10:41Z (paper trading, never real money)
+Updated 2026-11-25T17:25:51Z (paper trading, never real money)
 
 - Equity: $74.23 (-25.8% vs $100 start)
 - Closed trades: 22, 3 wins
 - Fees paid: $14.78 (axiom $2.81, network $9.18, pool $2.66), plus $4.15 lost to slippage
 - New trades: WATCH-ONLY (scans and decides, buys nothing)
-- Brain: subscription, claude-haiku-5-5 for routine calls, claude-opus-5-5 for the daily review; 414 routine calls and 0 plan-limit hits in 48h
-- Watch log: 48 coins being followed, 3583 filed, 0 would-buys (6h follow, sampled every 2 min)
+- Brain: subscription, claude-haiku-5-5 for routine calls, claude-opus-5-5 for the daily review; 408 routine calls and 0 plan-limit hits in 48h
+- Watch log: 48 coins being followed, 3586 filed, 0 would-buys (6h follow, sampled every 2 min)
 
 ## Scorecard (after fees)
 - 22 closed, 3 won (14%), net $-25.79
@@ -73,9 +73,15 @@ Updated 2026-11-25T17:10:41Z (paper trading, never real money)
   CA `H4gHnZ3NCU7Z9XQwGX6YYJNyieGEW8pqwGRUcdSxpump`
 
 ## Last scan
-- 17:10Z: 5 coins, 5 with pairs, 0 passed the market filters, 0 researched
+- 17:25Z: 3 coins, 3 with pairs, 0 passed the market filters, 0 researched
 
 ## Coins it looked at, and why it passed
+- 17:21Z CI (MIGRATED, $72,748 mcap, $51,076 5m vol): REJECT, Bundles: 1 linked wallet cluster(s) hold 72.8% of supply (>20%) (V17)  
+  CA `FrkmQGuoeZecEv5QxQV1zAHJwVJbGChPsC5GeLiqpump`
+- 17:20Z CBUCKS (MIGRATED, $5,361,959 mcap, $2,702 5m vol): REJECT, Top 10 hold 25.8% ex-pool (>25%) (V13)  
+  CA `DtcicPCKTKeAh7TDEzTym3hXeoHAoMiBdYJhMYxZpump`
+- 17:14Z FIONA (DIP, $2,427,757 mcap, $5,936 5m vol): REJECT, Bundles: 10 linked wallet cluster(s) hold 29.6% of supply (>20%) (V17)  
+  CA `B34nXKzCgsJb9ChLuSHPRpXLE3WFSWyeT8Cqkzzmpump`
 - 17:08Z CI (FINAL_STRETCH, $20,541 mcap, $38,441 5m vol): PASS at conviction 3, PASS: split crowd. CI is one of 28 copies, a 16.5% bundle cluster sits on it, and it's already up 216% on the 5m at 10.7x pace. Chasing a spike in a vamp field (V1, V3, V6).  
   CA `EC1K3jCNYhv2RN5496KU2h3L2h58qYopYQeg9uNBpump`
 - 17:07Z DESSA (MIGRATED, $769,053 mcap, $6,988 5m vol): PASS at conviction 2, PASS — DESSA is a month-old parody of a Block announcement that already printed, buy ratio 0.29 in 5m, and no printed higher low above the bounce high. Blocker: "no higher low" plus "narrative not rising" (V1, V6).  
@@ -90,16 +96,10 @@ Updated 2026-11-25T17:10:41Z (paper trading, never real money)
   CA `2hsmC7864Ve1giwLygu7bJjZU1R4JZKX9kCxWmD9yP6o`
 - 16:42Z MONEY (MIGRATED, $178,580 mcap, $44,435 5m vol): PASS at conviction 3, PASS: up 372% in an hour and 4% off the high, with no printed higher low and 5m flow at 0.62x pace. That's a chase, not a setup (V1, V6).  
   CA `Bg74niwsyZFFxPhY8J47crDtDSUctKZEb1AuZL93pump`
-- 16:35Z CBUCKS (MIGRATED, $4,889,682 mcap, $2,484 5m vol): REJECT, Top 10 hold 25.8% ex-pool (>25%) (V13)  
-  CA `DtcicPCKTKeAh7TDEzTym3hXeoHAoMiBdYJhMYxZpump`
-- 16:33Z HEYOS (FINAL_STRETCH, $19,326 mcap, $2,341 5m vol): PASS at conviction 3, PASS — chasing a +19% 5m spike at its high, 5m flow $2.3k under the $10k bar, and the site doesn't show this CA. Blocker: chasing spike. (V1, V6, V13)  
-  CA `A88p1LcHisrx3TuTwUGVrLtc1LBTUPZUfVgaCGutAFaK`
-- 16:18Z IPO (FINAL_STRETCH, $16,894 mcap, $5,493 5m vol): PASS at conviction 3, PASS — 29 copies of "ipo", top 10 at 23.1%, and a saw-tooth chart after a +749% day with no catalyst. Not a buy. (V1, V6, V13)  
-  CA `EYiXPL3LTuXEMb7KjhP6eTETPehJGhhU5H7ZYmWsSipo`
 
 ## What its skips did next (last 48h)
 A skip "ran" if the coin reached the first target (1.5x) from the skip price before a 20% drop, "dumped" if the drop came first. Sampled every 10 min, followed 6h.
-- top 10 over 25%: blocked 46, ran 8, dumped 34, flat 2, open 2 (saving losses: keep it)
+- top 10 over 25%: blocked 46, ran 8, dumped 34, flat 1, open 3 (saving losses: keep it)
   - ran: SNP6900 up to 2.76x  
     CA `DnbQKi146NDmwwji3f3q5i68HQnYyBEhoDyj2q3Npump`
   - ran: JENSEN up to 2.62x  
@@ -113,14 +113,14 @@ A skip "ran" if the coin reached the first target (1.5x) from the skip price bef
     CA `9cDnmLRDWeJzcpyw8tSFAT7HS4Aunx6MmZWjMfrzpump`
   - ran: SHHFT up to 1.61x  
     CA `GqMg4TRt5U5HRK6oeZYwCF1Jz7Ym9MSzWSoFCtFsbzf6`
-- near the high / chasing: blocked 29, ran 9, dumped 19, flat 0, open 1 (saving losses: keep it)
+- near the high / chasing: blocked 28, ran 9, dumped 19, flat 0, open 0 (saving losses: keep it)
   - ran: Bertcoin up to 1.8x  
     CA `xEK58Qa2xZ7C36Z2g3Jjq1WHY561CvvnJkLpgJspump`
   - ran: WOFL up to 2.62x  
     CA `AdXjXfumPSSKk7PrfgDHcAsPvuxnKv7Zo9WZEWKbiDkh`
   - ran: Phil up to 2.05x  
     CA `GMLSyjZCKGtFwztp2mtT8PDeNUA6WEk7oQoe3QkFpump`
-- flow below pace: blocked 28, ran 6, dumped 19, flat 0, open 3 (saving losses: keep it)
+- flow below pace: blocked 27, ran 7, dumped 18, flat 0, open 2 (saving losses: keep it)
   - ran: NVDA up to 1.52x  
     CA `37corVSMFFrqP3WK7AtMV6yFTGSvjFEB5fWnH1Bcpump`
   - ran: Doomcat up to 1.62x  
@@ -141,22 +141,24 @@ A skip "ran" if the coin reached the first target (1.5x) from the skip price bef
     CA `AMYpNGi5aGrKr1ZDsotUdWh7k1mMi569ygtaHJmErGEd`
   - ran: Boor up to 1.56x  
     CA `GHFpSSw2ZMjmKCyc1wrHUjJiqnJeP18mekY9GL1Xpump`
-- falling knife (code): blocked 13, ran 1, dumped 10, flat 1, open 1 (saving losses: keep it)
-  - ran: Jimmies up to 1.53x  
-    CA `GisWWjhwrSud4aFGSHvTMt85Ky14sY7LeBFCpfoFpump`
 - dev share over 1%: blocked 12, ran 2, dumped 10, flat 0, open 0 (saving losses: keep it)
   - ran: BLOOM up to 2.09x  
     CA `FyRXnHLBSeHHoigrgHR1hvcXiPbPCa5bxhVhEDampump`
   - ran: PI up to 1.77x  
     CA `D2AK5DvBj8AxN5VX1t6bjv7muJVPUx4hFPowVRWYpump`
-- thin 5m volume: blocked 11, ran 1, dumped 7, flat 2, open 1 (saving losses: keep it)
-  - ran: NINO up to 1.55x  
-    CA `BqekG1RSPUthaKfStu7Uvyvr1eR6TchrQMp1M5r5pump`
-- bundles over the line: blocked 11, ran 2, dumped 6, flat 2, open 1 (saving losses: keep it)
+- bundles over the line: blocked 12, ran 2, dumped 6, flat 1, open 3 (saving losses: keep it)
   - ran: jingyu up to 1.58x  
     CA `DUZrwdjEthcJ99ZiRXr31UuqTohoTg7VjTEyfGdBpump`
   - ran: DUMBMONEY up to 1.74x  
     CA `GEHehS5Rr4rNCjvrHLjjV1avD4bjMsn53ywDGv1spump`
+- falling knife (code): blocked 12, ran 1, dumped 10, flat 0, open 1 (saving losses: keep it)
+  - ran: Jimmies up to 1.53x  
+    CA `GisWWjhwrSud4aFGSHvTMt85Ky14sY7LeBFCpfoFpump`
+- falling knife / no higher low: blocked 11, ran 2, dumped 6, flat 1, open 2 (saving losses: keep it)
+  - ran: Mogmas up to 1.63x  
+    CA `Cocrz7BR2xE2sgKn3VbmaTXH6HTVgCiVFWTVWmyTpump`
+  - ran: Jimmies up to 1.53x  
+    CA `GisWWjhwrSud4aFGSHvTMt85Ky14sY7LeBFCpfoFpump`
 
 ## Daily review (2026-11-25, claude-opus-5-5)
 Nothing has a positive edge after costs. All 213 settled coins came out at -12.2% net under the simple plan, and every setup and stage is negative: MIGRATED -10.0%, FINAL_STRETCH -15.3%, DIP -19.8%. The cost estimate, about 9.8% round trip on a $10 buy, is what kills it. Before costs, MIGRATED (about -0.3%) and the coins the brain reviewed (about +0.8%) are close to break-even. With a 1.5x target, a -20% stop and about 10% cost, a coin set needs roughly 42% of its coins to hit the target before the stop just to break even. The best group here gets 28.6%. With n=213, repeat entries for the same coin and coins from the same meme moving together, the before-cost numbers are within noise of zero. The after-cost loss is not noise. I can't say whether the routine model's would-buys beat its passes: it logged 0 would-buys in 24h. Every coin that reached it was passed, so the only split we can measure is the checklist. Checklist-passed coins ran 28.6% of the time vs 15.8% for checklist failures, and netted -9.0% vs -15.6%.
@@ -197,13 +199,13 @@ Nothing has a positive edge after costs. All 213 settled coins came out at -12.2
 The movers are not quiet. MONEY ($179k mcap, $44k 5m, 57% buys), CI ($19k, $38k 5m, 60% buys), DARKPOOL ($10k, $13.6k 5m, 64% buys) and STARMIND ($33k, $11k 5m) all clear the $10k 5-minute bar, so the crawler's claim that nothing does is wrong. Three themes run across several coins: animal and dog mascots (CI, KURO INU, Pompompurin, Miaomiao, LEMON), internet and chat culture (BIAO, PETER "King of /b/", Jimmies), and finance wordplay (MONEY, CI as "Commodity", DARKPOOL, IPO). Rising are MONEY, CI and DARKPOOL, all under an hour old. Fading are Pompompurin (-18% 1h, $5.7k 5m against $150k over 1h), LEMON (zero 5m buys, -54%), Jimmies (92% buys but 5m volume down to $878), and the 400-700h-old DESSA, BRUH and three.ws. Setups to research, not buy, at conviction 5 at most (a probe at best): MONEY (generic name, so confirm it is the original; it is already up 372% in an hour, so any stop goes under the pullback, not the spike), CI (check for a same-name vamp), and DARKPOOL (too young to call; it needs 5m volume to hold through a pullback). The crawler's LEMON +397%, BIAO +450%, Pompompurin $349k and $14.4k 5m, and its CursedBob, SHEEPCOIN, FRANK and Gemidia figures do not match the scan (LEMON -54%, BIAO +18%, Pompompurin $294k and $5.7k 5m), and the crawler's named coins are not in scan_movers, so I'm not using them. Web headlines (Trump dinner, Ansem dump) are attention, not what the trench is trading; holder, dev and bundle checks are still pending on every coin.
 
 ## Moving most in its scans, last 30 min (1h volume)
-- MONEY: $859,796 1h vol, $178,580 mcap, +372% 1h  
-  CA `Bg74niwsyZFFxPhY8J47crDtDSUctKZEb1AuZL93pump`
 - Pompom: $150,480 1h vol, $294,307 mcap, -18% 1h  
   CA `5EmvWDizkpjAXbcfCcVq69w1id8GaLzi4LLwtuSgpump`
-- Miaomiao: $78,845 1h vol, $2,166 mcap, -13% 1h  
+- Miaomiao: $79,185 1h vol, $2,118 mcap, -15% 1h  
   CA `BxZ4f47jzHCQLeuby76jwwwzL8ASc2p45gmreF2tpump`
+- CI: $63,143 1h vol, $75,449 mcap, +164% 1h  
+  CA `FrkmQGuoeZecEv5QxQV1zAHJwVJbGChPsC5GeLiqpump`
+- HEYOS: $52,111 1h vol, $4,310 mcap, -83% 1h  
+  CA `A88p1LcHisrx3TuTwUGVrLtc1LBTUPZUfVgaCGutAFaK`
 - CI: $48,846 1h vol, $18,773 mcap, +460% 1h  
   CA `EC1K3jCNYhv2RN5496KU2h3L2h58qYopYQeg9uNBpump`
-- DESSA: $46,121 1h vol, $766,871 mcap, +5% 1h  
-  CA `npz2FhoufQ7pKqhGpaipYWacrAkidyW2yDpVWSvpump`
