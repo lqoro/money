@@ -1,13 +1,13 @@
 # Trencher live report
 
-Updated 2026-11-25T17:25:51Z (paper trading, never real money)
+Updated 2026-11-25T17:40:56Z (paper trading, never real money)
 
 - Equity: $74.23 (-25.8% vs $100 start)
 - Closed trades: 22, 3 wins
 - Fees paid: $14.78 (axiom $2.81, network $9.18, pool $2.66), plus $4.15 lost to slippage
 - New trades: WATCH-ONLY (scans and decides, buys nothing)
-- Brain: subscription, claude-haiku-5-5 for routine calls, claude-opus-5-5 for the daily review; 408 routine calls and 0 plan-limit hits in 48h
-- Watch log: 48 coins being followed, 3586 filed, 0 would-buys (6h follow, sampled every 2 min)
+- Brain: subscription, claude-haiku-5-5 for routine calls, claude-opus-5-5 for the daily review; 406 routine calls and 0 plan-limit hits in 48h
+- Watch log: 49 coins being followed, 3587 filed, 0 would-buys (6h follow, sampled every 2 min)
 
 ## Scorecard (after fees)
 - 22 closed, 3 won (14%), net $-25.79
@@ -73,9 +73,13 @@ Updated 2026-11-25T17:25:51Z (paper trading, never real money)
   CA `H4gHnZ3NCU7Z9XQwGX6YYJNyieGEW8pqwGRUcdSxpump`
 
 ## Last scan
-- 17:25Z: 3 coins, 3 with pairs, 0 passed the market filters, 0 researched
+- 17:40Z: 5 coins, 5 with pairs, 0 passed the market filters, 0 researched
 
 ## Coins it looked at, and why it passed
+- 17:35Z LENDR (MIGRATED, $348,663 mcap, $231,815 5m vol): REJECT, Top 10 hold 47.6% ex-pool (>25%) (V13)  
+  CA `AGazYig7A8Co6ZapAPterBRLitdiP6AAaWiPH8jWLend`
+- 17:27Z MONEY (DIP, $78,216 mcap, $13,615 5m vol): REJECT, Dip with fading attention is a falling knife, not a dip (5m at 0.26x the hour's pace, under 0.6x)  
+  CA `Bg74niwsyZFFxPhY8J47crDtDSUctKZEb1AuZL93pump`
 - 17:21Z CI (MIGRATED, $72,748 mcap, $51,076 5m vol): REJECT, Bundles: 1 linked wallet cluster(s) hold 72.8% of supply (>20%) (V17)  
   CA `FrkmQGuoeZecEv5QxQV1zAHJwVJbGChPsC5GeLiqpump`
 - 17:20Z CBUCKS (MIGRATED, $5,361,959 mcap, $2,702 5m vol): REJECT, Top 10 hold 25.8% ex-pool (>25%) (V13)  
@@ -92,20 +96,16 @@ Updated 2026-11-25T17:25:51Z (paper trading, never real money)
   CA `3r5wGR4wvk3wsbQ1XXXsUFk9V6RQEzif7YFLAVH1pump`
 - 16:58Z BIAO (MIGRATED, $260,828 mcap, $3,419 5m vol): PASS at conviction 3, PASS: BIAO flow is thin. $3.4k 5m, theme pace 0.34x, and the site doesn't show a CA. Blocker: flow below pace. (V1, V3, V6)  
   CA `As3XtYSstuVdrVyb6sJZZ77Tu8JvjTBg6S6hgPv4pump`
-- 16:54Z STARMIND (MIGRATED, $32,752 mcap, $11,341 5m vol): REJECT, Top 10 hold 27.4% ex-pool (>25%) (V13)  
-  CA `2hsmC7864Ve1giwLygu7bJjZU1R4JZKX9kCxWmD9yP6o`
-- 16:42Z MONEY (MIGRATED, $178,580 mcap, $44,435 5m vol): PASS at conviction 3, PASS: up 372% in an hour and 4% off the high, with no printed higher low and 5m flow at 0.62x pace. That's a chase, not a setup (V1, V6).  
-  CA `Bg74niwsyZFFxPhY8J47crDtDSUctKZEb1AuZL93pump`
 
 ## What its skips did next (last 48h)
 A skip "ran" if the coin reached the first target (1.5x) from the skip price before a 20% drop, "dumped" if the drop came first. Sampled every 10 min, followed 6h.
-- top 10 over 25%: blocked 46, ran 8, dumped 34, flat 1, open 3 (saving losses: keep it)
-  - ran: SNP6900 up to 2.76x  
-    CA `DnbQKi146NDmwwji3f3q5i68HQnYyBEhoDyj2q3Npump`
+- top 10 over 25%: blocked 46, ran 7, dumped 35, flat 1, open 3 (saving losses: keep it)
   - ran: JENSEN up to 2.62x  
     CA `GaNJeASYBM9k3TvEeUC2Pdyu1TjcpzTmPpoom92fpump`
   - ran: GOAT up to 1.53x  
     CA `5Ze97VEpX3EdRF4vbsxUXTdwGKF2qHGregrxToWEpump`
+  - ran: VIctory up to 1.64x  
+    CA `81F3a7CihhMQEsk4TnEs34XVQgRr8QcbghBjNAZnpump`
 - brain paced: blocked 35, ran 10, dumped 24, flat 1, open 0 (saving losses: keep it)
   - ran: Scamsem up to 1.56x  
     CA `5JWeGmA9z6yHd5F9P6B23A8wthho8BpZuDmQv5DfLoat`
@@ -120,7 +120,7 @@ A skip "ran" if the coin reached the first target (1.5x) from the skip price bef
     CA `AdXjXfumPSSKk7PrfgDHcAsPvuxnKv7Zo9WZEWKbiDkh`
   - ran: Phil up to 2.05x  
     CA `GMLSyjZCKGtFwztp2mtT8PDeNUA6WEk7oQoe3QkFpump`
-- flow below pace: blocked 27, ran 7, dumped 18, flat 0, open 2 (saving losses: keep it)
+- flow below pace: blocked 26, ran 7, dumped 17, flat 0, open 2 (saving losses: keep it)
   - ran: NVDA up to 1.52x  
     CA `37corVSMFFrqP3WK7AtMV6yFTGSvjFEB5fWnH1Bcpump`
   - ran: Doomcat up to 1.62x  
@@ -141,19 +141,19 @@ A skip "ran" if the coin reached the first target (1.5x) from the skip price bef
     CA `AMYpNGi5aGrKr1ZDsotUdWh7k1mMi569ygtaHJmErGEd`
   - ran: Boor up to 1.56x  
     CA `GHFpSSw2ZMjmKCyc1wrHUjJiqnJeP18mekY9GL1Xpump`
+- falling knife (code): blocked 13, ran 1, dumped 10, flat 0, open 2 (saving losses: keep it)
+  - ran: Jimmies up to 1.53x  
+    CA `GisWWjhwrSud4aFGSHvTMt85Ky14sY7LeBFCpfoFpump`
 - dev share over 1%: blocked 12, ran 2, dumped 10, flat 0, open 0 (saving losses: keep it)
   - ran: BLOOM up to 2.09x  
     CA `FyRXnHLBSeHHoigrgHR1hvcXiPbPCa5bxhVhEDampump`
   - ran: PI up to 1.77x  
     CA `D2AK5DvBj8AxN5VX1t6bjv7muJVPUx4hFPowVRWYpump`
-- bundles over the line: blocked 12, ran 2, dumped 6, flat 1, open 3 (saving losses: keep it)
+- bundles over the line: blocked 12, ran 2, dumped 7, flat 1, open 2 (saving losses: keep it)
   - ran: jingyu up to 1.58x  
     CA `DUZrwdjEthcJ99ZiRXr31UuqTohoTg7VjTEyfGdBpump`
   - ran: DUMBMONEY up to 1.74x  
     CA `GEHehS5Rr4rNCjvrHLjjV1avD4bjMsn53ywDGv1spump`
-- falling knife (code): blocked 12, ran 1, dumped 10, flat 0, open 1 (saving losses: keep it)
-  - ran: Jimmies up to 1.53x  
-    CA `GisWWjhwrSud4aFGSHvTMt85Ky14sY7LeBFCpfoFpump`
 - falling knife / no higher low: blocked 11, ran 2, dumped 6, flat 1, open 2 (saving losses: keep it)
   - ran: Mogmas up to 1.63x  
     CA `Cocrz7BR2xE2sgKn3VbmaTXH6HTVgCiVFWTVWmyTpump`
@@ -199,13 +199,13 @@ Nothing has a positive edge after costs. All 213 settled coins came out at -12.2
 The movers are not quiet. MONEY ($179k mcap, $44k 5m, 57% buys), CI ($19k, $38k 5m, 60% buys), DARKPOOL ($10k, $13.6k 5m, 64% buys) and STARMIND ($33k, $11k 5m) all clear the $10k 5-minute bar, so the crawler's claim that nothing does is wrong. Three themes run across several coins: animal and dog mascots (CI, KURO INU, Pompompurin, Miaomiao, LEMON), internet and chat culture (BIAO, PETER "King of /b/", Jimmies), and finance wordplay (MONEY, CI as "Commodity", DARKPOOL, IPO). Rising are MONEY, CI and DARKPOOL, all under an hour old. Fading are Pompompurin (-18% 1h, $5.7k 5m against $150k over 1h), LEMON (zero 5m buys, -54%), Jimmies (92% buys but 5m volume down to $878), and the 400-700h-old DESSA, BRUH and three.ws. Setups to research, not buy, at conviction 5 at most (a probe at best): MONEY (generic name, so confirm it is the original; it is already up 372% in an hour, so any stop goes under the pullback, not the spike), CI (check for a same-name vamp), and DARKPOOL (too young to call; it needs 5m volume to hold through a pullback). The crawler's LEMON +397%, BIAO +450%, Pompompurin $349k and $14.4k 5m, and its CursedBob, SHEEPCOIN, FRANK and Gemidia figures do not match the scan (LEMON -54%, BIAO +18%, Pompompurin $294k and $5.7k 5m), and the crawler's named coins are not in scan_movers, so I'm not using them. Web headlines (Trump dinner, Ansem dump) are attention, not what the trench is trading; holder, dev and bundle checks are still pending on every coin.
 
 ## Moving most in its scans, last 30 min (1h volume)
-- Pompom: $150,480 1h vol, $294,307 mcap, -18% 1h  
-  CA `5EmvWDizkpjAXbcfCcVq69w1id8GaLzi4LLwtuSgpump`
-- Miaomiao: $79,185 1h vol, $2,118 mcap, -15% 1h  
+- MONEY: $624,887 1h vol, $66,427 mcap, -60% 1h  
+  CA `Bg74niwsyZFFxPhY8J47crDtDSUctKZEb1AuZL93pump`
+- LENDR: $321,375 1h vol, $334,435 mcap, +734% 1h  
+  CA `AGazYig7A8Co6ZapAPterBRLitdiP6AAaWiPH8jWLend`
+- Miaomiao: $79,307 1h vol, $2,185 mcap, -12% 1h  
   CA `BxZ4f47jzHCQLeuby76jwwwzL8ASc2p45gmreF2tpump`
 - CI: $63,143 1h vol, $75,449 mcap, +164% 1h  
   CA `FrkmQGuoeZecEv5QxQV1zAHJwVJbGChPsC5GeLiqpump`
-- HEYOS: $52,111 1h vol, $4,310 mcap, -83% 1h  
+- HEYOS: $56,912 1h vol, $5,881 mcap, -77% 1h  
   CA `A88p1LcHisrx3TuTwUGVrLtc1LBTUPZUfVgaCGutAFaK`
-- CI: $48,846 1h vol, $18,773 mcap, +460% 1h  
-  CA `EC1K3jCNYhv2RN5496KU2h3L2h58qYopYQeg9uNBpump`
