@@ -1,13 +1,13 @@
 # Trencher live report
 
-Updated 2026-11-25T08:20:30Z (paper trading, never real money)
+Updated 2026-11-25T08:35:51Z (paper trading, never real money)
 
 - Equity: $74.23 (-25.8% vs $100 start)
 - Closed trades: 22, 3 wins
 - Fees paid: $14.78 (axiom $2.81, network $9.18, pool $2.66), plus $4.15 lost to slippage
 - New trades: WATCH-ONLY (scans and decides, buys nothing)
 - Brain: subscription, claude-haiku-5-5 for routine calls, claude-opus-5-5 for the daily review; 467 routine calls and 0 plan-limit hits in 48h
-- Watch log: 51 coins being followed, 3511 filed, 0 would-buys (6h follow, sampled every 2 min)
+- Watch log: 51 coins being followed, 3513 filed, 0 would-buys (6h follow, sampled every 2 min)
 
 ## Scorecard (after fees)
 - 22 closed, 3 won (14%), net $-25.79
@@ -73,9 +73,13 @@ Updated 2026-11-25T08:20:30Z (paper trading, never real money)
   CA `H4gHnZ3NCU7Z9XQwGX6YYJNyieGEW8pqwGRUcdSxpump`
 
 ## Last scan
-- 08:19Z: 4 coins, 4 with pairs, 0 passed the market filters, 0 researched
+- 08:35Z: 5 coins, 5 with pairs, 1 passed the market filters, 1 researched
 
 ## Coins it looked at, and why it passed
+- 08:35Z BASKET (MIGRATED, $939,890 mcap, $24,270 5m vol): PASS at conviction 4, PASS: flow below pace (5m at 0.68x the hourly average), and the first resistance is only 1.14x away. Blocker: "flow below pace", with "target too close" behind it. One bundle holds 6.85%, over the 3–4% line. (V1, V3, V6)  
+  CA `3Tg6YnNrfPdFfsY14MaNsDMWLseAyrUDS3myJtbaJN6f`
+- 08:31Z HELIORA (FINAL_STRETCH, $19,649 mcap, $20,876 5m vol): PASS at conviction 2, PASS — 5 minutes old, a +666% spike on 533 buys to 190 sells, a 2-hour-old domain pitching its own chain, and this CA isn't the leader of a 6-copy ticker field. Blocker: "too new" and "chasing spike" (V1, V3, V6, V13).  
+  CA `96qfge1RkUWhSsv8i9V4QZFANGypKEe1u7pzCDGGpump`
 - 08:13Z JaoJiow (FINAL_STRETCH, $21,777 mcap, $7,893 5m vol): PASS at conviction 2, PASS: chasing spike. JaoJiow is up 60% on 5m and 913% on 1h, and it's the copy, not the leader. JAOJIOW owns the 4-copy field. (V1, V6)  
   CA `BBupBrQsZyJF92vCvqfsSdJAx5CWmm1zSEdhBH7qpump`
 - 08:07Z Jimmies (MIGRATED, $1,275,749 mcap, $3,467 5m vol): PASS at conviction 3, PASS: big cap, no room. $1.28M with the first resistance only 1.40x away, no printed higher low, and no catalyst for a bottom buy. Name on the meme, not the coin. (V1, V6)  
@@ -92,10 +96,6 @@ Updated 2026-11-25T08:20:30Z (paper trading, never real money)
   CA `GisWWjhwrSud4aFGSHvTMt85Ky14sY7LeBFCpfoFpump`
 - 07:11Z Merged (FINAL_STRETCH, $14,662 mcap, $5,072 5m vol): PASS at conviction 2, PASS — Merged is 29 minutes old, still on the pump.fun curve, down 23.5% off a 19k peak after a 628% hour, with its 15m candles halving. Too new and no catalyst. Blockers: "too new", "no catalyst", "theme pace 0.51x". Also the site's GitHub is someone else's repo and the domain is 0.1 days old (V1,   
   CA `AMYpNGi5aGrKr1ZDsotUdWh7k1mMi569ygtaHJmErGEd`
-- 07:03Z BASKET (MIGRATED, $605,495 mcap, $21,518 5m vol): PASS at conviction 3, PASS: flow below pace, no breakout, bottom-buy narrative gate fails. BASKET is the original of a 13-copy field that's cooling. (V1, V6, V13)  
-  CA `3Tg6YnNrfPdFfsY14MaNsDMWLseAyrUDS3myJtbaJN6f`
-- 06:54Z YUMA (MIGRATED, $52,408 mcap, $16,342 5m vol): PASS at conviction 2, PASS: no printed higher low, down 74% from peak with a saw-tooth 15m chart and a -28% 5m candle. Blocker "no higher low." Falling knife, not a pullback. (V1, V6)  
-  CA `CkwFsrupdFHzo5kYk8b5W47CVx1v5ymzeu6BBoDjpump`
 
 ## What its skips did next (last 48h)
 A skip "ran" if the coin reached the first target (1.5x) from the skip price before a 20% drop, "dumped" if the drop came first. Sampled every 10 min, followed 6h.
@@ -113,7 +113,7 @@ A skip "ran" if the coin reached the first target (1.5x) from the skip price bef
     CA `9cDnmLRDWeJzcpyw8tSFAT7HS4Aunx6MmZWjMfrzpump`
   - ran: SHHFT up to 1.61x  
     CA `GqMg4TRt5U5HRK6oeZYwCF1Jz7Ym9MSzWSoFCtFsbzf6`
-- flow below pace: blocked 30, ran 5, dumped 25, flat 0, open 0 (saving losses: keep it)
+- flow below pace: blocked 31, ran 5, dumped 25, flat 0, open 1 (saving losses: keep it)
   - ran: NVDA up to 1.52x  
     CA `37corVSMFFrqP3WK7AtMV6yFTGSvjFEB5fWnH1Bcpump`
   - ran: Doomcat up to 1.62x  
@@ -127,7 +127,7 @@ A skip "ran" if the coin reached the first target (1.5x) from the skip price bef
     CA `AdXjXfumPSSKk7PrfgDHcAsPvuxnKv7Zo9WZEWKbiDkh`
   - ran: Phil up to 2.05x  
     CA `GMLSyjZCKGtFwztp2mtT8PDeNUA6WEk7oQoe3QkFpump`
-- too new / sniping: blocked 27, ran 5, dumped 21, flat 1, open 0 (saving losses: keep it)
+- too new / sniping: blocked 28, ran 5, dumped 21, flat 1, open 1 (saving losses: keep it)
   - ran: Loaf up to 2.13x  
     CA `8Ugc1FHaeK6iXQrnUpztxhhNHqucFwaqC35A4Kjjpump`
   - ran: AGI up to 1.53x  
@@ -195,13 +195,13 @@ Nothing has a positive after-cost edge yet. All 229 settled coins average -8.7% 
 The meta is alien and sci-fi creature names on fresh pump.fun launches. Alien ($17k cap, $7.4k 5m, 63% buys, +790% 1h) and Slitheen ($8.7k, $4.1k 5m, 53% buys, +341% 1h) are rising, and Tandem and Offchart (under 1h old, $11.7k and $1.7k 5m) are the same wave at its earliest stage. Cartoon and character coins are fading: Cartoon Money ($12 on 5m at a $5.2M cap), Memeployed, Hoge, Rocket Raccoon and Fuck Cancer all show almost no 5m flow, and the legacy caps (WASTED, ROCKET, CBUCKS) are not a meta. The crawler's YUMA and Merged numbers don't match the scan (YUMA is $1.5k cap with $0 5m now, Merged is $3k with 33% buys and -89% 1h), so I'm discarding both. The setup that fits the MIGRATED rules is Basket (Raydium, $714k cap, $40k 5m, 59% buys, 3.1h old, +29% 1h): run holder, dev and bundle checks, take initials at 2x, and put the stop where the thesis breaks. Alien is the FINAL_STRETCH name to research, but its 5m is under the $10k bar, so it's not a buy yet, and Tandem and Offchart are inside the no-snipe window.
 
 ## Moving most in its scans, last 30 min (1h volume)
+- BASKET: $428,347 1h vol, $935,810 mcap, +37% 1h  
+  CA `3Tg6YnNrfPdFfsY14MaNsDMWLseAyrUDS3myJtbaJN6f`
 - JaoJiow: $72,733 1h vol, $23,405 mcap, +989% 1h  
   CA `BBupBrQsZyJF92vCvqfsSdJAx5CWmm1zSEdhBH7qpump`
-- Alien: $66,541 1h vol, $17,427 mcap, +790% 1h  
-  CA `9QDgPpMvsRQwoMmfaWtQah2bjjRFym8YS1xwYCcspump`
 - SLITHEEN: $46,978 1h vol, $12,867 mcap, +547% 1h  
   CA `2ajAnFA8UKpeYbWSoEwobGQrLvdUUmjipjpongMepump`
-- TANDEM: $43,714 1h vol, $13,703 mcap, +457% 1h  
+- TANDEM: $46,721 1h vol, $12,786 mcap, +420% 1h  
   CA `4XvnS1B28BgsUcwjR2bTm3csxnp8hmTsXZM6jH3Ypump`
 - Jimmies: $38,613 1h vol, $1,275,749 mcap, +12% 1h  
   CA `GisWWjhwrSud4aFGSHvTMt85Ky14sY7LeBFCpfoFpump`
