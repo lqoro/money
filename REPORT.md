@@ -1,13 +1,13 @@
 # Trencher live report
 
-Updated 2026-11-25T00:47:00Z (paper trading, never real money)
+Updated 2026-11-25T01:02:02Z (paper trading, never real money)
 
 - Equity: $74.23 (-25.8% vs $100 start)
 - Closed trades: 22, 3 wins
 - Fees paid: $14.78 (axiom $2.81, network $9.18, pool $2.66), plus $4.15 lost to slippage
 - New trades: WATCH-ONLY (scans and decides, buys nothing)
-- Brain: subscription, claude-haiku-5-5 for routine calls, claude-opus-5-5 for the daily review; 508 routine calls and 0 plan-limit hits in 48h
-- Watch log: 76 coins being followed, 3412 filed, 0 would-buys (6h follow, sampled every 2 min)
+- Brain: subscription, claude-haiku-5-5 for routine calls, claude-opus-5-5 for the daily review; 510 routine calls and 0 plan-limit hits in 48h
+- Watch log: 75 coins being followed, 3416 filed, 0 would-buys (6h follow, sampled every 2 min)
 
 ## Scorecard (after fees)
 - 22 closed, 3 won (14%), net $-25.79
@@ -73,9 +73,15 @@ Updated 2026-11-25T00:47:00Z (paper trading, never real money)
   CA `H4gHnZ3NCU7Z9XQwGX6YYJNyieGEW8pqwGRUcdSxpump`
 
 ## Last scan
-- 00:46Z: 7 coins, 6 with pairs, 0 passed the market filters, 0 researched
+- 01:01Z: 2 coins, 1 with pairs, 0 passed the market filters, 0 researched
 
 ## Coins it looked at, and why it passed
+- 00:58Z DONJENSEN (MIGRATED, $342,408 mcap, $2,173 5m vol): PASS at conviction 2, PASS: down 91% from a $3.66M peak, and the joke it rides is fading. Bottom buy with no catalyst and a dying theme. Blocker: "dead story" (V1, V6).  
+  CA `5LDowscYVD3a6ZS4m8gCqG5nU16eLTwRXhciFi1bpump`
+- 00:55Z Jimmies (MIGRATED, $237,330 mcap, $2,355 5m vol): PASS at conviction 3, PASS: flow below pace. 5m is 0.35x the hourly pace, the coin sits 25% off its high with no breakout, and its own site says "Contract TBA" on a domain about 2 hours old (V1, V6, V13).  
+  CA `GisWWjhwrSud4aFGSHvTMt85Ky14sY7LeBFCpfoFpump`
+- 00:54Z cateball (DIP, $839,505 mcap, $3,475 5m vol): PASS at conviction 3, PASS — no catalyst, dead story on a DIP, and the CA isn't on its own site. Blocker: no catalyst. (V1, V3, V13)  
+  CA `4npJ3avxnGhCzKbWQpLrQXAHsjWzKr4JqBsbu5Fspump`
 - 00:44Z FIONA (DIP, $2,681,986 mcap, $4,053 5m vol): REJECT, Bundles: 9 linked wallet cluster(s) hold 29.4% of supply (>20%) (V17)  
   CA `B34nXKzCgsJb9ChLuSHPRpXLE3WFSWyeT8Cqkzzmpump`
 - 00:41Z TELEDROID (MIGRATED, $58,503 mcap, $12,384 5m vol): REJECT, Top 10 hold 30.7% ex-pool (>25%) (V13)  
@@ -90,16 +96,10 @@ Updated 2026-11-25T00:47:00Z (paper trading, never real money)
   CA `DVdWuNK8ncn79B6z8nCiwcNAiwyFcmBPfChgxJGTpump`
 - 00:28Z 𝕏 (FINAL_STRETCH, $19,167 mcap, $38,400 5m vol): REJECT, RugCheck danger: Creator history of rugged tokens  
   CA `2CJqEecyJebkMUu61opTF9VgTsAPLexV8NphFpQjpump`
-- 00:19Z WIKI (MIGRATED, $59,852 mcap, $106,842 5m vol): PASS at conviction 2, PASS: chasing spike, too new, no higher low. The site is Wikipedia, not the project's own. (V1, V6, V13)  
-  CA `E2MJUFBMaTH7j21P2HncB96erJ4dM3FPL2W6i8Dpump`
-- 00:09Z Jimmies (MIGRATED, $171,313 mcap, $5,290 5m vol): PASS at conviction 3, PASS: flow below pace (5m at 0.31x the hourly average, $5.3k under the $10k gate), no printed higher low, and the project site shows "Contract TBA" on a 0.1-day-old domain. The crowd is there; the flow isn't. (V1, V6, V13)  
-  CA `GisWWjhwrSud4aFGSHvTMt85Ky14sY7LeBFCpfoFpump`
-- 00:02Z Memeployed (MIGRATED, $57,257 mcap, $4,454 5m vol): PASS at conviction 2, PASS: deep dip with no catalyst, 81% off peak and crowd leaving. Blocker: "bottom buy, no catalyst" (V1, V6).  
-  CA `4m2PS6yW2xDk5V9nJgPjnus1eguwCDSWXbA2YQeVkqxn`
 
 ## What its skips did next (last 48h)
 A skip "ran" if the coin reached the first target (1.5x) from the skip price before a 20% drop, "dumped" if the drop came first. Sampled every 10 min, followed 6h.
-- top 10 over 25%: blocked 40, ran 7, dumped 30, flat 1, open 2 (saving losses: keep it)
+- top 10 over 25%: blocked 39, ran 6, dumped 31, flat 1, open 1 (saving losses: keep it)
   - ran: SNP6900 up to 2.76x  
     CA `DnbQKi146NDmwwji3f3q5i68HQnYyBEhoDyj2q3Npump`
   - ran: JENSEN up to 2.62x  
@@ -113,7 +113,7 @@ A skip "ran" if the coin reached the first target (1.5x) from the skip price bef
     CA `9cDnmLRDWeJzcpyw8tSFAT7HS4Aunx6MmZWjMfrzpump`
   - ran: SHHFT up to 1.61x  
     CA `GqMg4TRt5U5HRK6oeZYwCF1Jz7Ym9MSzWSoFCtFsbzf6`
-- flow below pace: blocked 32, ran 7, dumped 24, flat 0, open 1 (saving losses: keep it)
+- flow below pace: blocked 31, ran 6, dumped 23, flat 0, open 2 (saving losses: keep it)
   - ran: hCAT up to 1.52x  
     CA `2FYs4vApfj4ErsggpFDfzMv1WvxnyiLtzNEj84mS6TLh`
   - ran: WALLSTFLY up to 1.52x  
@@ -134,14 +134,14 @@ A skip "ran" if the coin reached the first target (1.5x) from the skip price bef
     CA `AdXjXfumPSSKk7PrfgDHcAsPvuxnKv7Zo9WZEWKbiDkh`
   - ran: Phil up to 2.05x  
     CA `GMLSyjZCKGtFwztp2mtT8PDeNUA6WEk7oQoe3QkFpump`
-- RugCheck danger: blocked 20, ran 5, dumped 15, flat 0, open 0 (saving losses: keep it)
+- RugCheck danger: blocked 19, ran 5, dumped 14, flat 0, open 0 (saving losses: keep it)
   - ran: Holdsgiving up to 2.96x  
     CA `A2jLaCC7v3VjXP8gEgCQNbTWEvizYuQ82jFEYfzipump`
   - ran: JENSEN up to 1.7x  
     CA `CjPoozfB2Vub8pHFvdKuKUGJDLWuYC2U32yRTxMhpump`
   - ran: FUCK! up to 2.22x  
     CA `CSjwLiCLyaJqXQm9XCV3LdYWMYswbZ7JQ71JKX77pump`
-- thin 5m volume: blocked 16, ran 1, dumped 11, flat 3, open 1 (saving losses: keep it)
+- thin 5m volume: blocked 17, ran 1, dumped 12, flat 3, open 1 (saving losses: keep it)
   - ran: NINO up to 1.55x  
     CA `BqekG1RSPUthaKfStu7Uvyvr1eR6TchrQMp1M5r5pump`
 - dev share over 1%: blocked 14, ran 2, dumped 10, flat 2, open 0 (saving losses: keep it)
@@ -154,13 +154,9 @@ A skip "ran" if the coin reached the first target (1.5x) from the skip price bef
     CA `A2nbXtQvvRMvWtifCkV8cYepwcC4M7iA1jVMwAh6pump`
   - ran: DUMBMONEY up to 1.74x  
     CA `GEHehS5Rr4rNCjvrHLjjV1avD4bjMsn53ywDGv1spump`
-- other: blocked 10, ran 3, dumped 7, flat 0, open 0 (saving losses: keep it)
-  - ran: ZOL up to 1.64x  
-    CA `AQfw8J74V17erZsmMz4oK474eVLBaP44gD33vVbhtHo5`
-  - ran: CATEGIVING up to 1.81x  
-    CA `APa2jK3ZRK9XhuKHGXSFNDohfU5RfZZKajiv26qSvX2X`
-  - ran: task up to 1.61x  
-    CA `BJeEE9WCP1HZqT1D3heD9Do96D4dnEcNoDHspvQapump`
+- falling knife (code): blocked 10, ran 1, dumped 9, flat 0, open 0 (saving losses: keep it)
+  - ran: Fly up to 1.52x  
+    CA `84tAcSK5L9kuQEVM8C8vMHXnfdA83nGBT2nYfSbPUcAc`
 
 ## Daily review (2026-11-23, claude-opus-5-5)
 Nothing has a positive after-cost edge yet. All 229 settled coins average -8.7% net on the simple plan. Before costs they average about +0.9%, so the 9.6% average round-trip cost on a $10 buy accounts for the whole loss. That is the same story as the 22 paper trades, where fees and slippage were $18.83 of the $25.79 lost. The best setup is FINAL_STRETCH: n=39, 35.9% hit 1.5x, -4.9% net. With a 1.5x target, a -20% stop and about 10% costs, a setup needs roughly 43% hitting the target to break even. At n=39 the hit rate's 95% range is about 21–51%, so this sample can't separate it from MIGRATED, from coin-flip noise or from breakeven. I can't say whether the routine model's would-buys beat its passes, because it made zero would-buys in 24h. The coins it passed on (n=157, -8.4%) did slightly better than the coins the checklist failed (n=70, -9.8%), but both lost money. Passing everything was the right call on average. One process note: the watch-only review was set for about Nov 10 and today is Nov 23, so the owner should decide whether this is still the plan.
@@ -198,16 +194,16 @@ Nothing has a positive after-cost edge yet. All 229 settled coins average -8.7% 
 - [2026-11-02 20:25] I expected Slingoor, a clean MIGRATED leader with $25k of 5m flow at pace and a 0.77 buy share, to retest its $408k high from $304k. It never went green (0.98x peak) and hit the -20% stop in 2 minutes, a -$2.86 probe. My own thesis admitted there was no printed higher low after a peak only 6 minutes old, so this confirms the money-shape rule: buy share and flow are not structure (V1, V6). Next time a MIGRATED pullback with no higher low above the hourly low is a PASS with blocker "no higher low", not a probe. This is one loss, so it adds no new ban beyond the rule I already have.
 
 ## Meta right now
-Meta right now is fresh pump.fun internet-joke names with real 5-minute flow. 4CHAN ($276k cap, $110k 5m, 59% buys, 1.7h old) and Jimmies ("That really rustled my jimmies", $149k cap, $47k 5m, 87% buys, about 6 minutes old) are the two doing it, with Sisyphus ($31k cap, $46k 5m, 58% buys, minutes old) as a third. The fading theme is the pump-and-dump-out crowd: trilly, CHARITY, RAGE, SCOOBY, BOUNCER, Streamer and Votr all printed large 1h volume, are down 70-90%, and have $0 to $400 of 5m volume. Setups I'd research: Jimmies and 4CHAN, but only on a pullback that holds with 5m volume still above $10k and buyers stepping back in. Jimmies is too young to be more than a probe, and I won't chase 4CHAN after a +966% hour. Nothing clears until holder, dev and bundle checks run. The Claude-named coins (CLAUDIO, SUPER CLAUDIA INU) and the Trump/Jensen names in the crawler summary are not in these movers, so I'm treating those rows as unverified. ANSEM is named in a wallet-hack headline and is blocked, so it is not a setup.
+Trencher: The meta right now is fresh pump.fun internet-joke names with real 5-minute flow. 4CHAN ($291k cap, $62k 5m, 53% buys), BOOBS ($463k cap, $123k 5m, 77% buys, +1107% in an hour, minutes old) and Teledroid ($58k cap, $13k 5m, 60% buys) are the names pulling buyers, while lore and X are 0.1h old and too new to touch. Animal names are split: Le Toucan is rising ($15k cap, $7.5k 5m, 57% buys), but the hippo coins are dead (Mars -99.7%, Fiona down 13% at 124h old). The fading theme is the pump-and-dump-out: Mars, Big Titty Christmas (-99%), DONJENSEN (the Jensen Huang GPU joke, -82% on $1.9k 5m) and Smoove (-43%) have near-zero 5m volume. Setups to research, not buy yet: 4CHAN and Teledroid on a pullback that holds with 5m volume above $10k and buyers stepping back in; BOOBS is parabolic, so it only gets a look after a real retrace and at probe size at most. Jimmies is not in this tape, and the crawler's 4CHAN and Sisyphus figures don't match the scan (Sisyphus is $15k cap, $205 5m here), so I'm using scan numbers. Holder, dev and bundle checks haven't run on any of these, so nothing is a buy yet. ANSEM is not in the movers and is blocked, so it is not a setup.
 
 ## Moving most in its scans, last 30 min (1h volume)
-- 4CHAN: $741,243 1h vol, $291,129 mcap, +132% 1h  
-  CA `DVdWuNK8ncn79B6z8nCiwcNAiwyFcmBPfChgxJGTpump`
 - Pumpcar: $195,915 1h vol, $50,264 mcap, +71% 1h  
   CA `4M1tpKSat8qWnJk6pskUBciw4PBvXt4gNMc36NV8pump`
 - BOOBS: $174,251 1h vol, $462,930 mcap, +1107% 1h  
   CA `E35iEA2yLLHc1tjm6et1Z3YuH8DhxJYWtWezPHgSpump`
-- WIKI: $112,297 1h vol, $54,591 mcap, +65% 1h  
-  CA `E2MJUFBMaTH7j21P2HncB96erJ4dM3FPL2W6i8Dpump`
 - BTC: $84,464 1h vol, $1,302 mcap, -99% 1h  
   CA `GkSZVKcXcgodewdZd5CbGxFJoUUcazrf1GayrNv3pump`
+- TOUCAN: $82,792 1h vol, $14,776 mcap, +119% 1h  
+  CA `5Xd2vr3oY2YDhBeozvsZQto3rLiMzWDDBLadkgQspump`
+- FIONA: $80,826 1h vol, $2,681,986 mcap, -13% 1h  
+  CA `B34nXKzCgsJb9ChLuSHPRpXLE3WFSWyeT8Cqkzzmpump`
