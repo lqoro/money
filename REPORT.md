@@ -1,13 +1,13 @@
 # Trencher live report
 
-Updated 2026-11-25T11:37:28Z (paper trading, never real money)
+Updated 2026-11-25T11:52:28Z (paper trading, never real money)
 
 - Equity: $74.23 (-25.8% vs $100 start)
 - Closed trades: 22, 3 wins
 - Fees paid: $14.78 (axiom $2.81, network $9.18, pool $2.66), plus $4.15 lost to slippage
 - New trades: WATCH-ONLY (scans and decides, buys nothing)
-- Brain: subscription, claude-haiku-5-5 for routine calls, claude-opus-5-5 for the daily review; 447 routine calls and 0 plan-limit hits in 48h
-- Watch log: 44 coins being followed, 3543 filed, 0 would-buys (6h follow, sampled every 2 min)
+- Brain: subscription, claude-haiku-5-5 for routine calls, claude-opus-5-5 for the daily review; 444 routine calls and 0 plan-limit hits in 48h
+- Watch log: 42 coins being followed, 3545 filed, 0 would-buys (6h follow, sampled every 2 min)
 
 ## Scorecard (after fees)
 - 22 closed, 3 won (14%), net $-25.79
@@ -73,7 +73,7 @@ Updated 2026-11-25T11:37:28Z (paper trading, never real money)
   CA `H4gHnZ3NCU7Z9XQwGX6YYJNyieGEW8pqwGRUcdSxpump`
 
 ## Last scan
-- 11:36Z: 10 coins, 9 with pairs, 1 passed the market filters, 1 researched
+- 11:51Z: 3 coins, 2 with pairs, 0 passed the market filters, 0 researched
 
 ## Coins it looked at, and why it passed
 - 11:37Z Boor (FINAL_STRETCH, $17,792 mcap, $23,246 5m vol): PASS at conviction 2, PASS: chasing spike. Boor is up 282% on 5m and 680% on 1h, about 7 minutes old, one of 14 "boor" copies, and no story is attached (V1, V6, V13).  
@@ -127,7 +127,7 @@ A skip "ran" if the coin reached the first target (1.5x) from the skip price bef
     CA `EiQ1JvEUZCXN5kQi2UdS4CdQapidqC7MCXd5sRTPpump`
   - ran: Jesus up to 1.64x  
     CA `Gy5BUDnpJMWRsNVKh9sRtsBGunFXKKrbroQRoydQpump`
-- too new / sniping: blocked 25, ran 4, dumped 19, flat 1, open 1 (saving losses: keep it)
+- too new / sniping: blocked 24, ran 4, dumped 18, flat 1, open 1 (saving losses: keep it)
   - ran: AGI up to 1.53x  
     CA `7kctwFbSdLfpi6RuN9cjpVpYVHKPUr8PtG1meH35AEky`
   - ran: TREMP up to 1.7x  
@@ -149,14 +149,12 @@ A skip "ran" if the coin reached the first target (1.5x) from the skip price bef
     CA `FyRXnHLBSeHHoigrgHR1hvcXiPbPCa5bxhVhEDampump`
   - ran: PI up to 1.77x  
     CA `D2AK5DvBj8AxN5VX1t6bjv7muJVPUx4hFPowVRWYpump`
-- bundles over the line: blocked 13, ran 3, dumped 7, flat 2, open 1 (saving losses: keep it)
+- bundles over the line: blocked 12, ran 2, dumped 7, flat 2, open 1 (saving losses: keep it)
   - ran: jingyu up to 1.58x  
     CA `DUZrwdjEthcJ99ZiRXr31UuqTohoTg7VjTEyfGdBpump`
-  - ran: RNV up to 2.35x  
-    CA `A2nbXtQvvRMvWtifCkV8cYepwcC4M7iA1jVMwAh6pump`
   - ran: DUMBMONEY up to 1.74x  
     CA `GEHehS5Rr4rNCjvrHLjjV1avD4bjMsn53ywDGv1spump`
-- falling knife (code): blocked 12, ran 0, dumped 9, flat 1, open 2 (saving losses: keep it)
+- falling knife (code): blocked 12, ran 0, dumped 10, flat 1, open 1 (saving losses: keep it)
 
 ## Daily review (2026-11-23, claude-opus-5-5)
 Nothing has a positive after-cost edge yet. All 229 settled coins average -8.7% net on the simple plan. Before costs they average about +0.9%, so the 9.6% average round-trip cost on a $10 buy accounts for the whole loss. That is the same story as the 22 paper trades, where fees and slippage were $18.83 of the $25.79 lost. The best setup is FINAL_STRETCH: n=39, 35.9% hit 1.5x, -4.9% net. With a 1.5x target, a -20% stop and about 10% costs, a setup needs roughly 43% hitting the target to break even. At n=39 the hit rate's 95% range is about 21–51%, so this sample can't separate it from MIGRATED, from coin-flip noise or from breakeven. I can't say whether the routine model's would-buys beat its passes, because it made zero would-buys in 24h. The coins it passed on (n=157, -8.4%) did slightly better than the coins the checklist failed (n=70, -9.8%), but both lost money. Passing everything was the right call on average. One process note: the watch-only review was set for about Nov 10 and today is Nov 23, so the owner should decide whether this is still the plan.
@@ -197,13 +195,13 @@ Nothing has a positive after-cost edge yet. All 229 settled coins average -8.7% 
 Not quiet, but the flow is thin and concentrated. The main cluster is Japanese kawaii character names launched on pump.fun in the last few hours: bon ($11.9k cap, $21.8k 5m, 63% buys, +452% 1h), REBACCA ($11k cap, $4.4k 5m, 64% buys), and SOLCHAN and Nyamitto, which are already down 86-93% in the hour with weak or zero buys. The second theme is generic-name plays: "Memecoin" ($13.9k cap, $31.9k 5m, 61% buys, minutes old) and bon are the only movers with 5m volume above $10k, so they are the ones to research, not buy, and the vamp check comes first (find the original, check Similar Tokens). Setups to research: bon and Memecoin, only if 5m flow holds and the holder, dev and bundle checks pass. Legacy animal and cartoon coins (ROCKET, CBUCKS, Jimmies) are fading on thin 5m flow, and no mover is named for a hack. The scanner's meta summary disagrees with its own raw rows (it puts SOLCHAN at $22k and +894%, and calls Nyamit a $32k runner, while the rows show SOLCHAN at $9k and -86%, and Nyamitto at $2k and -93%), so I'm trusting the rows and treating the summary as unreliable.
 
 ## Moving most in its scans, last 30 min (1h volume)
-- JaoJiu: $98,818 1h vol, $145,686 mcap, -16% 1h  
-  CA `2UyrvgCRXiEwiKRVk96gs6B4myrBHZAfcLyMVLE8vSCy`
-- bon: $95,790 1h vol, $10,092 mcap, +369% 1h  
+- bon: $100,391 1h vol, $9,176 mcap, +327% 1h  
   CA `FMS1KXoLPrbYXEDgpRfDgYwPtwJ7JV5ZXduX2SUFpump`
-- Memecoin: $90,423 1h vol, $2,437 mcap, +0% 1h  
-  CA `2rhoUVCygC2LyQWNMXsofKXo1rcbZFJnSTpDbU9Ppump`
 - Pompom: $73,787 1h vol, $69,690 mcap, +157% 1h  
   CA `5EmvWDizkpjAXbcfCcVq69w1id8GaLzi4LLwtuSgpump`
-- KING: $57,627 1h vol, $14,312 mcap, +567% 1h  
-  CA `9Gdhz3WVnTaFcbGPrK2GbBdZpbwAQFfFK42bSgsupump`
+- Memecoin: $58,885 1h vol, $2,431 mcap, -80% 1h  
+  CA `2rhoUVCygC2LyQWNMXsofKXo1rcbZFJnSTpDbU9Ppump`
+- wCAT: $46,862 1h vol, $5,257 mcap, +129% 1h  
+  CA `E6YDeFJy4HUhas8fSMxNzRS7R3vwff6tinSEDW5U89Yx`
+- 4: $45,305 1h vol, $10,860 mcap, +452% 1h  
+  CA `8wacdzPkcfSGq99YpbWnfikeV8sBfqZBwCvYjPUxtpMW`
