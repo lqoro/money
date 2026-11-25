@@ -1,13 +1,13 @@
 # Trencher live report
 
-Updated 2026-11-25T18:41:22Z (paper trading, never real money)
+Updated 2026-11-25T18:56:28Z (paper trading, never real money)
 
 - Equity: $74.23 (-25.8% vs $100 start)
 - Closed trades: 22, 3 wins
 - Fees paid: $14.78 (axiom $2.81, network $9.18, pool $2.66), plus $4.15 lost to slippage
 - New trades: WATCH-ONLY (scans and decides, buys nothing)
-- Brain: subscription, claude-haiku-5-5 for routine calls, claude-opus-5-5 for the daily review; 402 routine calls and 0 plan-limit hits in 48h
-- Watch log: 60 coins being followed, 3592 filed, 0 would-buys (6h follow, sampled every 2 min)
+- Brain: subscription, claude-haiku-5-5 for routine calls, claude-opus-5-5 for the daily review; 400 routine calls and 0 plan-limit hits in 48h
+- Watch log: 64 coins being followed, 3592 filed, 0 would-buys (6h follow, sampled every 2 min)
 
 ## Scorecard (after fees)
 - 22 closed, 3 won (14%), net $-25.79
@@ -73,9 +73,17 @@ Updated 2026-11-25T18:41:22Z (paper trading, never real money)
   CA `H4gHnZ3NCU7Z9XQwGX6YYJNyieGEW8pqwGRUcdSxpump`
 
 ## Last scan
-- 18:40Z: 3 coins, 3 with pairs, 0 passed the market filters, 0 researched
+- 18:55Z: 1 coins, 1 with pairs, 0 passed the market filters, 0 researched
 
 ## Coins it looked at, and why it passed
+- 18:46Z SI (MIGRATED, $55,062 mcap, $79,616 5m vol): PASS at conviction 3, PASS: Slop Inu is at its own high, about 4 minutes old, with 5m volume at 12x its hourly pace and 12 same-ticker copies. Chasing, too new, no higher low. Blockers: "chasing spike", "too new", "split crowd" (V1, V3, V6).  
+  CA `93UA32Baowc1gbAoM35CG9Lj5Cw2Pz6T3VfhK63Kpump`
+- 18:44Z GRAUDIA (MIGRATED, $280,119 mcap, $8,485 5m vol): PASS at conviction 3, PASS: flow below pace, 5m at 0.32x the hour and under $10k, with no catalyst behind an 18-copy ticker field. Blocker: "flow below pace" (V1, V6).  
+  CA `6F2FyeyphDn62TFkXXpisUCohotPArgiM1kVXsPNpump`
+- 18:43Z SOL2 (MIGRATED, $239,027 mcap, $46,497 5m vol): REJECT, RugCheck danger: Single holder ownership 49.91%  
+  CA `FF5V2c6MTrboTxh8ep8sNgmXsgji2wn6FfH7Cxvkpump`
+- 18:41Z Santa (MIGRATED, $144,691 mcap, $6,123 5m vol): REJECT, Bundles: 8 linked wallet cluster(s) hold 65.3% of supply (>20%) (V17)  
+  CA `CcpN5RXTEjbRqbtuHoxyiMZorzsghbfpeyYQjSvTgS27`
 - 18:35Z SI (FINAL_STRETCH, $18,120 mcap, $6,020 5m vol): REJECT, Top 10 hold 25.4% ex-pool (>25%) (V13)  
   CA `AA4zZX98SLsM4e3e6FbnnW2eiv2AqzYA5VoDkK6ppump`
 - 18:31Z Pompom (MIGRATED, $511,337 mcap, $12,812 5m vol): PASS at conviction 3, PASS: flow below pace (5m at 0.43x the hourly average) and no printed higher low above the bounce high. Pompom is a copy stack with no catalyst. (V1, V6)  
@@ -88,14 +96,6 @@ Updated 2026-11-25T18:41:22Z (paper trading, never real money)
   CA `6TAEsBQuHki4C6ynUmWARpjJ1xmKshrqv7Qh1FHwpump`
 - 18:21Z LENDR (DIP, $477,981 mcap, $16,853 5m vol): REJECT, Dip with fading attention is a falling knife, not a dip (5m at 0.28x the hour's pace, under 0.6x)  
   CA `AGazYig7A8Co6ZapAPterBRLitdiP6AAaWiPH8jWLend`
-- 18:21Z Snowball (FINAL_STRETCH, $15,625 mcap, $22,646 5m vol): REJECT, RugCheck danger: Creator history of rugged tokens  
-  CA `9TKbd3VFaMSXsEAicD9JVQWpWwAoLi4fSgWmZL2cpump`
-- 18:18Z RECORDEGG (MIGRATED, $49,549 mcap, $16,535 5m vol): REJECT, Bundles: 2 linked wallet cluster(s) hold 65.9% of supply (>20%) (V17)  
-  CA `5RBADXvDkgz22wF9gzS7BMEFNyvCYqbkomXWjy4pump`
-- 18:15Z 4CHAN (MIGRATED, $152,929 mcap, $15,227 5m vol): REJECT, Top 10 hold 40.3% ex-pool (>25%) (V13)  
-  CA `437T35ficBfJK9N8GH4gWbiHb86AsRJRkQjARd7Ppump`
-- 18:12Z RECORDEGG (MIGRATED, $73,933 mcap, $16,674 5m vol): PASS at conviction 2, PASS. Flow at 0.37x pace, the egg theme at 0.34x, no catalyst, and a 13-day-old campaign site. Blockers: flow below pace, no catalyst, too new (V1, V6).  
-  CA `67eH4F62kKZ45wfgWMRuu8GNCFP9kN6uFcNvJWBgpump`
 
 ## What its skips did next (last 48h)
 A skip "ran" if the coin reached the first target (1.5x) from the skip price before a 20% drop, "dumped" if the drop came first. Sampled every 10 min, followed 6h.
@@ -120,21 +120,21 @@ A skip "ran" if the coin reached the first target (1.5x) from the skip price bef
     CA `AdXjXfumPSSKk7PrfgDHcAsPvuxnKv7Zo9WZEWKbiDkh`
   - ran: Phil up to 2.05x  
     CA `GMLSyjZCKGtFwztp2mtT8PDeNUA6WEk7oQoe3QkFpump`
-- flow below pace: blocked 25, ran 6, dumped 16, flat 0, open 3 (saving losses: keep it)
+- flow below pace: blocked 26, ran 6, dumped 17, flat 0, open 3 (saving losses: keep it)
   - ran: Doomcat up to 1.62x  
     CA `EiQ1JvEUZCXN5kQi2UdS4CdQapidqC7MCXd5sRTPpump`
   - ran: Jesus up to 1.64x  
     CA `Gy5BUDnpJMWRsNVKh9sRtsBGunFXKKrbroQRoydQpump`
   - ran: GROKIA up to 1.51x  
     CA `3cL47ohWa2HApLYKtqPsqkjaxJ6HLvT5Ri1KvWdXpump`
-- RugCheck danger: blocked 25, ran 4, dumped 21, flat 0, open 0 (saving losses: keep it)
+- RugCheck danger: blocked 26, ran 5, dumped 21, flat 0, open 0 (saving losses: keep it)
   - ran: FOMOMAS up to 1.71x  
     CA `9Gu5JYt4Pas6cW4S6qtyFkDucFj6GMtpJiDC9sQbpump`
   - ran: TIMOTHY up to 2.14x  
     CA `AWg6LmGPfqjEqAU8N8wR8mYTbwmkwqMUqzrmggbgpump`
   - ran: TROLL up to 1.94x  
     CA `7ykeHoEnjnGkY6tqteXn47fdGtd7kfXWghiyZ7YKpump`
-- too new / sniping: blocked 23, ran 3, dumped 19, flat 1, open 0 (saving losses: keep it)
+- too new / sniping: blocked 24, ran 3, dumped 20, flat 1, open 0 (saving losses: keep it)
   - ran: BABYANSEM up to 2.77x  
     CA `F3VctV9FqDgiyqaztN6z78bgWy27eH7DBBHW1vjpump`
   - ran: Merged up to 2.18x  
@@ -156,7 +156,7 @@ A skip "ran" if the coin reached the first target (1.5x) from the skip price bef
 - falling knife (code): blocked 12, ran 1, dumped 10, flat 0, open 1 (saving losses: keep it)
   - ran: Jimmies up to 1.53x  
     CA `GisWWjhwrSud4aFGSHvTMt85Ky14sY7LeBFCpfoFpump`
-- falling knife / no higher low: blocked 11, ran 2, dumped 6, flat 1, open 2 (saving losses: keep it)
+- falling knife / no higher low: blocked 10, ran 2, dumped 5, flat 1, open 2 (saving losses: keep it)
   - ran: Mogmas up to 1.63x  
     CA `Cocrz7BR2xE2sgKn3VbmaTXH6HTVgCiVFWTVWmyTpump`
   - ran: Jimmies up to 1.53x  
@@ -203,11 +203,11 @@ The meta is an Inu-mascot and ticker-copy stack plus money wordplay, and the sca
 ## Moving most in its scans, last 30 min (1h volume)
 - MIM: $810,252 1h vol, $317,147 mcap, +737% 1h  
   CA `BvnzzK6CBRkUz1EwhxVU1nSNYyNRmVovcz2jRg9Rpump`
-- LENDR: $735,470 1h vol, $481,162 mcap, +1100% 1h  
-  CA `AGazYig7A8Co6ZapAPterBRLitdiP6AAaWiPH8jWLend`
-- RECORDEGG: $538,367 1h vol, $84,678 mcap, +189% 1h  
-  CA `67eH4F62kKZ45wfgWMRuu8GNCFP9kN6uFcNvJWBgpump`
 - Pompom: $360,451 1h vol, $520,263 mcap, +43% 1h  
   CA `5EmvWDizkpjAXbcfCcVq69w1id8GaLzi4LLwtuSgpump`
-- SOL2: $358,190 1h vol, $1,617 mcap, -98% 1h  
+- GRAUDIA: $319,222 1h vol, $271,158 mcap, +55% 1h  
+  CA `6F2FyeyphDn62TFkXXpisUCohotPArgiM1kVXsPNpump`
+- SOL2: $304,414 1h vol, $239,027 mcap, +140% 1h  
+  CA `FF5V2c6MTrboTxh8ep8sNgmXsgji2wn6FfH7Cxvkpump`
+- SOL2: $276,201 1h vol, $1,591 mcap, -100% 1h  
   CA `HdPxFDUaKBwMtTWseuYJp4NQCCBqULjn2JhhddGhpump`
