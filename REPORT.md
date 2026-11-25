@@ -1,13 +1,13 @@
 # Trencher live report
 
-Updated 2026-11-25T17:40:56Z (paper trading, never real money)
+Updated 2026-11-25T17:56:04Z (paper trading, never real money)
 
 - Equity: $74.23 (-25.8% vs $100 start)
 - Closed trades: 22, 3 wins
 - Fees paid: $14.78 (axiom $2.81, network $9.18, pool $2.66), plus $4.15 lost to slippage
 - New trades: WATCH-ONLY (scans and decides, buys nothing)
 - Brain: subscription, claude-haiku-5-5 for routine calls, claude-opus-5-5 for the daily review; 406 routine calls and 0 plan-limit hits in 48h
-- Watch log: 49 coins being followed, 3587 filed, 0 would-buys (6h follow, sampled every 2 min)
+- Watch log: 53 coins being followed, 3587 filed, 0 would-buys (6h follow, sampled every 2 min)
 
 ## Scorecard (after fees)
 - 22 closed, 3 won (14%), net $-25.79
@@ -73,9 +73,17 @@ Updated 2026-11-25T17:40:56Z (paper trading, never real money)
   CA `H4gHnZ3NCU7Z9XQwGX6YYJNyieGEW8pqwGRUcdSxpump`
 
 ## Last scan
-- 17:40Z: 5 coins, 5 with pairs, 0 passed the market filters, 0 researched
+- 17:55Z: 2 coins, 2 with pairs, 0 passed the market filters, 0 researched
 
 ## Coins it looked at, and why it passed
+- 17:53Z CI (DIP, $115,027 mcap, $9,255 5m vol): PASS at conviction 3, PASS: Christmass Inu is 28 minutes old and up 61% on its last 5m candle, off a $23k low. It's a fresh rebound, not a dip, and it has no catalyst and no X (blockers: too new, chasing spike, no catalyst). (V1, V6)  
+  CA `BDkYXdHCZZQTNn6LqFDS2WrKhD2rZmuQioqTW1wupump`
+- 17:52Z SOL2 (MIGRATED, $262,212 mcap, $251,946 5m vol): REJECT, RugCheck danger: Single holder ownership 50.40%  
+  CA `HdPxFDUaKBwMtTWseuYJp4NQCCBqULjn2JhhddGhpump`
+- 17:46Z Pompom (MIGRATED, $416,410 mcap, $14,224 5m vol): PASS at conviction 4, PASS — first resistance is only 1.23x away ($512k peak vs $416k now), under the 1.3x floor. Seven copies share the ticker and 5m buys trail sells. (V1, V6, V13)  
+  CA `5EmvWDizkpjAXbcfCcVq69w1id8GaLzi4LLwtuSgpump`
+- 17:44Z MIM (MIGRATED, $364,928 mcap, $103,001 5m vol): REJECT, Top 10 hold 51.6% ex-pool (>25%) (V13)  
+  CA `BvnzzK6CBRkUz1EwhxVU1nSNYyNRmVovcz2jRg9Rpump`
 - 17:35Z LENDR (MIGRATED, $348,663 mcap, $231,815 5m vol): REJECT, Top 10 hold 47.6% ex-pool (>25%) (V13)  
   CA `AGazYig7A8Co6ZapAPterBRLitdiP6AAaWiPH8jWLend`
 - 17:27Z MONEY (DIP, $78,216 mcap, $13,615 5m vol): REJECT, Dip with fading attention is a falling knife, not a dip (5m at 0.26x the hour's pace, under 0.6x)  
@@ -88,18 +96,10 @@ Updated 2026-11-25T17:40:56Z (paper trading, never real money)
   CA `B34nXKzCgsJb9ChLuSHPRpXLE3WFSWyeT8Cqkzzmpump`
 - 17:08Z CI (FINAL_STRETCH, $20,541 mcap, $38,441 5m vol): PASS at conviction 3, PASS: split crowd. CI is one of 28 copies, a 16.5% bundle cluster sits on it, and it's already up 216% on the 5m at 10.7x pace. Chasing a spike in a vamp field (V1, V3, V6).  
   CA `EC1K3jCNYhv2RN5496KU2h3L2h58qYopYQeg9uNBpump`
-- 17:07Z DESSA (MIGRATED, $769,053 mcap, $6,988 5m vol): PASS at conviction 2, PASS — DESSA is a month-old parody of a Block announcement that already printed, buy ratio 0.29 in 5m, and no printed higher low above the bounce high. Blocker: "no higher low" plus "narrative not rising" (V1, V6).  
-  CA `npz2FhoufQ7pKqhGpaipYWacrAkidyW2yDpVWSvpump`
-- 17:00Z Pompom (DIP, $294,307 mcap, $5,680 5m vol): REJECT, Dip with fading attention is a falling knife, not a dip (5m at 0.45x the hour's pace, under 0.6x)  
-  CA `5EmvWDizkpjAXbcfCcVq69w1id8GaLzi4LLwtuSgpump`
-- 16:59Z PETER (FINAL_STRETCH, $14,351 mcap, $3,229 5m vol): REJECT, Top 10 hold 26.5% ex-pool (>25%) (V13)  
-  CA `3r5wGR4wvk3wsbQ1XXXsUFk9V6RQEzif7YFLAVH1pump`
-- 16:58Z BIAO (MIGRATED, $260,828 mcap, $3,419 5m vol): PASS at conviction 3, PASS: BIAO flow is thin. $3.4k 5m, theme pace 0.34x, and the site doesn't show a CA. Blocker: flow below pace. (V1, V3, V6)  
-  CA `As3XtYSstuVdrVyb6sJZZ77Tu8JvjTBg6S6hgPv4pump`
 
 ## What its skips did next (last 48h)
 A skip "ran" if the coin reached the first target (1.5x) from the skip price before a 20% drop, "dumped" if the drop came first. Sampled every 10 min, followed 6h.
-- top 10 over 25%: blocked 46, ran 7, dumped 35, flat 1, open 3 (saving losses: keep it)
+- top 10 over 25%: blocked 47, ran 9, dumped 35, flat 1, open 2 (saving losses: keep it)
   - ran: JENSEN up to 2.62x  
     CA `GaNJeASYBM9k3TvEeUC2Pdyu1TjcpzTmPpoom92fpump`
   - ran: GOAT up to 1.53x  
@@ -120,28 +120,28 @@ A skip "ran" if the coin reached the first target (1.5x) from the skip price bef
     CA `AdXjXfumPSSKk7PrfgDHcAsPvuxnKv7Zo9WZEWKbiDkh`
   - ran: Phil up to 2.05x  
     CA `GMLSyjZCKGtFwztp2mtT8PDeNUA6WEk7oQoe3QkFpump`
-- flow below pace: blocked 26, ran 7, dumped 17, flat 0, open 2 (saving losses: keep it)
-  - ran: NVDA up to 1.52x  
-    CA `37corVSMFFrqP3WK7AtMV6yFTGSvjFEB5fWnH1Bcpump`
+- flow below pace: blocked 25, ran 6, dumped 17, flat 0, open 2 (saving losses: keep it)
   - ran: Doomcat up to 1.62x  
     CA `EiQ1JvEUZCXN5kQi2UdS4CdQapidqC7MCXd5sRTPpump`
   - ran: Jesus up to 1.64x  
     CA `Gy5BUDnpJMWRsNVKh9sRtsBGunFXKKrbroQRoydQpump`
-- RugCheck danger: blocked 23, ran 3, dumped 20, flat 0, open 0 (saving losses: keep it)
+  - ran: GROKIA up to 1.51x  
+    CA `3cL47ohWa2HApLYKtqPsqkjaxJ6HLvT5Ri1KvWdXpump`
+- RugCheck danger: blocked 24, ran 3, dumped 20, flat 0, open 1 (saving losses: keep it)
   - ran: FOMOMAS up to 1.71x  
     CA `9Gu5JYt4Pas6cW4S6qtyFkDucFj6GMtpJiDC9sQbpump`
   - ran: TIMOTHY up to 2.14x  
     CA `AWg6LmGPfqjEqAU8N8wR8mYTbwmkwqMUqzrmggbgpump`
   - ran: TROLL up to 1.94x  
     CA `7ykeHoEnjnGkY6tqteXn47fdGtd7kfXWghiyZ7YKpump`
-- too new / sniping: blocked 20, ran 3, dumped 16, flat 1, open 0 (saving losses: keep it)
+- too new / sniping: blocked 21, ran 3, dumped 16, flat 1, open 1 (saving losses: keep it)
   - ran: BABYANSEM up to 2.77x  
     CA `F3VctV9FqDgiyqaztN6z78bgWy27eH7DBBHW1vjpump`
   - ran: Merged up to 2.18x  
     CA `AMYpNGi5aGrKr1ZDsotUdWh7k1mMi569ygtaHJmErGEd`
   - ran: Boor up to 1.56x  
     CA `GHFpSSw2ZMjmKCyc1wrHUjJiqnJeP18mekY9GL1Xpump`
-- falling knife (code): blocked 13, ran 1, dumped 10, flat 0, open 2 (saving losses: keep it)
+- falling knife (code): blocked 13, ran 1, dumped 11, flat 0, open 1 (saving losses: keep it)
   - ran: Jimmies up to 1.53x  
     CA `GisWWjhwrSud4aFGSHvTMt85Ky14sY7LeBFCpfoFpump`
 - dev share over 1%: blocked 12, ran 2, dumped 10, flat 0, open 0 (saving losses: keep it)
@@ -203,9 +203,9 @@ The movers are not quiet. MONEY ($179k mcap, $44k 5m, 57% buys), CI ($19k, $38k 
   CA `Bg74niwsyZFFxPhY8J47crDtDSUctKZEb1AuZL93pump`
 - LENDR: $321,375 1h vol, $334,435 mcap, +734% 1h  
   CA `AGazYig7A8Co6ZapAPterBRLitdiP6AAaWiPH8jWLend`
-- Miaomiao: $79,307 1h vol, $2,185 mcap, -12% 1h  
-  CA `BxZ4f47jzHCQLeuby76jwwwzL8ASc2p45gmreF2tpump`
-- CI: $63,143 1h vol, $75,449 mcap, +164% 1h  
-  CA `FrkmQGuoeZecEv5QxQV1zAHJwVJbGChPsC5GeLiqpump`
-- HEYOS: $56,912 1h vol, $5,881 mcap, -77% 1h  
-  CA `A88p1LcHisrx3TuTwUGVrLtc1LBTUPZUfVgaCGutAFaK`
+- SOL2: $281,580 1h vol, $262,212 mcap, +171% 1h  
+  CA `HdPxFDUaKBwMtTWseuYJp4NQCCBqULjn2JhhddGhpump`
+- EGG: $119,489 1h vol, $8,222 mcap, -71% 1h  
+  CA `HkjQAQjNegsyNct8nbLqcYdGT7SEZLhbqmBiM5eUpump`
+- CI: $109,020 1h vol, $111,492 mcap, +224% 1h  
+  CA `BDkYXdHCZZQTNn6LqFDS2WrKhD2rZmuQioqTW1wupump`
