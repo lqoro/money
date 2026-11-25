@@ -1,13 +1,13 @@
 # Trencher live report
 
-Updated 2026-11-25T12:22:48Z (paper trading, never real money)
+Updated 2026-11-25T12:37:57Z (paper trading, never real money)
 
 - Equity: $74.23 (-25.8% vs $100 start)
 - Closed trades: 22, 3 wins
 - Fees paid: $14.78 (axiom $2.81, network $9.18, pool $2.66), plus $4.15 lost to slippage
 - New trades: WATCH-ONLY (scans and decides, buys nothing)
 - Brain: subscription, claude-haiku-5-5 for routine calls, claude-opus-5-5 for the daily review; 442 routine calls and 0 plan-limit hits in 48h
-- Watch log: 41 coins being followed, 3549 filed, 0 would-buys (6h follow, sampled every 2 min)
+- Watch log: 41 coins being followed, 3551 filed, 0 would-buys (6h follow, sampled every 2 min)
 
 ## Scorecard (after fees)
 - 22 closed, 3 won (14%), net $-25.79
@@ -73,9 +73,13 @@ Updated 2026-11-25T12:22:48Z (paper trading, never real money)
   CA `H4gHnZ3NCU7Z9XQwGX6YYJNyieGEW8pqwGRUcdSxpump`
 
 ## Last scan
-- 12:22Z: 4 coins, 3 with pairs, 0 passed the market filters, 0 researched
+- 12:37Z: 3 coins, 2 with pairs, 0 passed the market filters, 0 researched
 
 ## Coins it looked at, and why it passed
+- 12:35Z PILOTUS (FINAL_STRETCH, $14,775 mcap, $10,412 5m vol): REJECT, Top 10 hold 26.3% ex-pool (>25%) (V13)  
+  CA `2BKQXFh7Rss1ykqsj34GXbaU4zpnrnJJZHGDeouFpump`
+- 12:31Z Pompom (MIGRATED, $195,911 mcap, $29,071 5m vol): PASS at conviction 3, PASS: flow below pace (5m at 0.69x hourly), no breakout printing, 20-copy vamp field. Pompom leads by volume, not by structure. (V1, V6)  
+  CA `5EmvWDizkpjAXbcfCcVq69w1id8GaLzi4LLwtuSgpump`
 - 12:19Z OUROBOROS (MIGRATED, $40,783 mcap, $10,352 5m vol): REJECT, Top 10 hold 28.3% ex-pool (>25%) (V13)  
   CA `38EDdUxnJvrnDsJyB45E2W3pK26qLEjmWTvsEmMuG9ZR`
 - 12:09Z 3sat (FINAL_STRETCH, $13,880 mcap, $3,283 5m vol): PASS at conviction 3, PASS: a 0.1-day-old AI/Lean "fork" site on a 15-copy ticker, with 5m flow at $3.3k and a 583% 1h spike. It's a LARP-shaped pump.fun launch. Blocker: "too new / sniping" (V1, V6, V13).  
@@ -92,14 +96,10 @@ Updated 2026-11-25T12:22:48Z (paper trading, never real money)
   CA `Gf9wm93TTDpbPC467Eio5Vc42Kr6MAomUD172drWpump`
 - 11:07Z JaoJiu (DIP, $142,614 mcap, $4,194 5m vol): REJECT, Dip with fading attention is a falling knife, not a dip (5m at 0.51x the hour's pace, under 0.6x)  
   CA `2UyrvgCRXiEwiKRVk96gs6B4myrBHZAfcLyMVLE8vSCy`
-- 10:49Z Memecoin (no setup, $10,958 mcap, $31,415 5m vol): REJECT, No setup fits: not Final Stretch, not a migrated runner, not a healthy dip  
-  CA `2rhoUVCygC2LyQWNMXsofKXo1rcbZFJnSTpDbU9Ppump`
-- 10:47Z Jimmies (MIGRATED, $1,207,408 mcap, $3,613 5m vol): PASS at conviction 2, PASS. Jimmies is a fading 2010 meme at $1.2M with no printed higher low and a contract address its own site doesn't show. Blocker: no higher low, narrative fading. (V1, V6, V13)  
-  CA `GisWWjhwrSud4aFGSHvTMt85Ky14sY7LeBFCpfoFpump`
 
 ## What its skips did next (last 48h)
 A skip "ran" if the coin reached the first target (1.5x) from the skip price before a 20% drop, "dumped" if the drop came first. Sampled every 10 min, followed 6h.
-- top 10 over 25%: blocked 42, ran 8, dumped 31, flat 1, open 2 (saving losses: keep it)
+- top 10 over 25%: blocked 43, ran 8, dumped 31, flat 1, open 3 (saving losses: keep it)
   - ran: SNP6900 up to 2.76x  
     CA `DnbQKi146NDmwwji3f3q5i68HQnYyBEhoDyj2q3Npump`
   - ran: JENSEN up to 2.62x  
@@ -120,14 +120,14 @@ A skip "ran" if the coin reached the first target (1.5x) from the skip price bef
     CA `AdXjXfumPSSKk7PrfgDHcAsPvuxnKv7Zo9WZEWKbiDkh`
   - ran: Phil up to 2.05x  
     CA `GMLSyjZCKGtFwztp2mtT8PDeNUA6WEk7oQoe3QkFpump`
-- flow below pace: blocked 28, ran 6, dumped 22, flat 0, open 0 (saving losses: keep it)
+- flow below pace: blocked 29, ran 6, dumped 22, flat 0, open 1 (saving losses: keep it)
   - ran: NVDA up to 1.52x  
     CA `37corVSMFFrqP3WK7AtMV6yFTGSvjFEB5fWnH1Bcpump`
   - ran: Doomcat up to 1.62x  
     CA `EiQ1JvEUZCXN5kQi2UdS4CdQapidqC7MCXd5sRTPpump`
   - ran: Jesus up to 1.64x  
     CA `Gy5BUDnpJMWRsNVKh9sRtsBGunFXKKrbroQRoydQpump`
-- too new / sniping: blocked 25, ran 5, dumped 19, flat 1, open 0 (saving losses: keep it)
+- too new / sniping: blocked 24, ran 5, dumped 18, flat 1, open 0 (saving losses: keep it)
   - ran: AGI up to 1.53x  
     CA `7kctwFbSdLfpi6RuN9cjpVpYVHKPUr8PtG1meH35AEky`
   - ran: TREMP up to 1.7x  
@@ -149,7 +149,9 @@ A skip "ran" if the coin reached the first target (1.5x) from the skip price bef
     CA `FyRXnHLBSeHHoigrgHR1hvcXiPbPCa5bxhVhEDampump`
   - ran: PI up to 1.77x  
     CA `D2AK5DvBj8AxN5VX1t6bjv7muJVPUx4hFPowVRWYpump`
-- falling knife (code): blocked 12, ran 0, dumped 10, flat 1, open 1 (saving losses: keep it)
+- falling knife (code): blocked 12, ran 1, dumped 10, flat 1, open 0 (saving losses: keep it)
+  - ran: Jimmies up to 1.53x  
+    CA `GisWWjhwrSud4aFGSHvTMt85Ky14sY7LeBFCpfoFpump`
 - bundles over the line: blocked 11, ran 2, dumped 6, flat 2, open 1 (saving losses: keep it)
   - ran: jingyu up to 1.58x  
     CA `DUZrwdjEthcJ99ZiRXr31UuqTohoTg7VjTEyfGdBpump`
@@ -195,13 +197,13 @@ Nothing has a positive after-cost edge yet. All 229 settled coins average -8.7% 
 Not quiet, but thin. Flow is concentrated in pump.fun launches under about five hours old, and the scanner's meta summary contradicts its own rows, so I'm reading the rows. Two themes are rising: cute Japanese and character names (bon at 57% buys and Pompompurin at 75% buys) and fresh generic-word tokens (Boor coin at $23k 5m and 64% buys, SWARM at $7.9k 5m and 61% buys). Person and justice names are fading (KING down 48%, Bernard at 7% buys), as are the cat and kawaii holdovers (wCAT at 12% buys, REBACCA at $349 5m), and the generic "Memecoin" ticker is effectively dead ($11 5m, down 56%); SNOWCUMBRR, OTF and FREYJA show zero 5m volume. The Trump dinner and Ansem headlines aren't showing up in these rows, and no mover is Trump-linked. Setups to research, not buy: Boor coin first, the only mover clearing the $10k 5m bar, but it is six minutes old and up 680%, so vamp, holder and bundle checks decide it; Pompompurin second, at $4k 5m with the cleanest buy ratio, but up 1,346% in an hour, so the exit plan is the real question; bon and SWARM only if 5m volume climbs past $10k.
 
 ## Moving most in its scans, last 30 min (1h volume)
-- Pompom: $524,480 1h vol, $187,377 mcap, +354% 1h  
+- Pompom: $503,135 1h vol, $203,718 mcap, +197% 1h  
   CA `5EmvWDizkpjAXbcfCcVq69w1id8GaLzi4LLwtuSgpump`
-- ANSEM: $235,621 1h vol, $72,912 mcap, -58% 1h  
+- ANSEM: $238,817 1h vol, $62,439 mcap, -64% 1h  
   CA `DD23R2DJFKxUCB2CUvogviVhHA7D9RTsjbrFKWBzpump`
-- SNOWCUMBRR: $133,863 1h vol, $1,615 mcap, -95% 1h  
-  CA `Gf9wm93TTDpbPC467Eio5Vc42Kr6MAomUD172drWpump`
-- Jimmies: $78,798 1h vol, $1,440,259 mcap, +18% 1h  
+- Jimmies: $84,373 1h vol, $1,516,949 mcap, +30% 1h  
   CA `GisWWjhwrSud4aFGSHvTMt85Ky14sY7LeBFCpfoFpump`
+- Pompom: $66,046 1h vol, $16,834 mcap, -33% 1h  
+  CA `8ArRsCwf3FqiMTY4wHqPmViWGJyJWQqQ6YucgTrhpump`
 - OUROBOROS: $60,306 1h vol, $43,785 mcap, +47% 1h  
   CA `38EDdUxnJvrnDsJyB45E2W3pK26qLEjmWTvsEmMuG9ZR`
