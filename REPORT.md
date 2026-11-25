@@ -1,13 +1,13 @@
 # Trencher live report
 
-Updated 2026-11-25T16:55:28Z (paper trading, never real money)
+Updated 2026-11-25T17:10:41Z (paper trading, never real money)
 
 - Equity: $74.23 (-25.8% vs $100 start)
 - Closed trades: 22, 3 wins
 - Fees paid: $14.78 (axiom $2.81, network $9.18, pool $2.66), plus $4.15 lost to slippage
 - New trades: WATCH-ONLY (scans and decides, buys nothing)
-- Brain: subscription, claude-haiku-5-5 for routine calls, claude-opus-5-5 for the daily review; 410 routine calls and 0 plan-limit hits in 48h
-- Watch log: 44 coins being followed, 3582 filed, 0 would-buys (6h follow, sampled every 2 min)
+- Brain: subscription, claude-haiku-5-5 for routine calls, claude-opus-5-5 for the daily review; 414 routine calls and 0 plan-limit hits in 48h
+- Watch log: 48 coins being followed, 3583 filed, 0 would-buys (6h follow, sampled every 2 min)
 
 ## Scorecard (after fees)
 - 22 closed, 3 won (14%), net $-25.79
@@ -73,9 +73,19 @@ Updated 2026-11-25T16:55:28Z (paper trading, never real money)
   CA `H4gHnZ3NCU7Z9XQwGX6YYJNyieGEW8pqwGRUcdSxpump`
 
 ## Last scan
-- 16:54Z: 4 coins, 3 with pairs, 1 passed the market filters, 1 researched
+- 17:10Z: 5 coins, 5 with pairs, 0 passed the market filters, 0 researched
 
 ## Coins it looked at, and why it passed
+- 17:08Z CI (FINAL_STRETCH, $20,541 mcap, $38,441 5m vol): PASS at conviction 3, PASS: split crowd. CI is one of 28 copies, a 16.5% bundle cluster sits on it, and it's already up 216% on the 5m at 10.7x pace. Chasing a spike in a vamp field (V1, V3, V6).  
+  CA `EC1K3jCNYhv2RN5496KU2h3L2h58qYopYQeg9uNBpump`
+- 17:07Z DESSA (MIGRATED, $769,053 mcap, $6,988 5m vol): PASS at conviction 2, PASS — DESSA is a month-old parody of a Block announcement that already printed, buy ratio 0.29 in 5m, and no printed higher low above the bounce high. Blocker: "no higher low" plus "narrative not rising" (V1, V6).  
+  CA `npz2FhoufQ7pKqhGpaipYWacrAkidyW2yDpVWSvpump`
+- 17:00Z Pompom (DIP, $294,307 mcap, $5,680 5m vol): REJECT, Dip with fading attention is a falling knife, not a dip (5m at 0.45x the hour's pace, under 0.6x)  
+  CA `5EmvWDizkpjAXbcfCcVq69w1id8GaLzi4LLwtuSgpump`
+- 16:59Z PETER (FINAL_STRETCH, $14,351 mcap, $3,229 5m vol): REJECT, Top 10 hold 26.5% ex-pool (>25%) (V13)  
+  CA `3r5wGR4wvk3wsbQ1XXXsUFk9V6RQEzif7YFLAVH1pump`
+- 16:58Z BIAO (MIGRATED, $260,828 mcap, $3,419 5m vol): PASS at conviction 3, PASS: BIAO flow is thin. $3.4k 5m, theme pace 0.34x, and the site doesn't show a CA. Blocker: flow below pace. (V1, V3, V6)  
+  CA `As3XtYSstuVdrVyb6sJZZ77Tu8JvjTBg6S6hgPv4pump`
 - 16:54Z STARMIND (MIGRATED, $32,752 mcap, $11,341 5m vol): REJECT, Top 10 hold 27.4% ex-pool (>25%) (V13)  
   CA `2hsmC7864Ve1giwLygu7bJjZU1R4JZKX9kCxWmD9yP6o`
 - 16:42Z MONEY (MIGRATED, $178,580 mcap, $44,435 5m vol): PASS at conviction 3, PASS: up 372% in an hour and 4% off the high, with no printed higher low and 5m flow at 0.62x pace. That's a chase, not a setup (V1, V6).  
@@ -86,20 +96,10 @@ Updated 2026-11-25T16:55:28Z (paper trading, never real money)
   CA `A88p1LcHisrx3TuTwUGVrLtc1LBTUPZUfVgaCGutAFaK`
 - 16:18Z IPO (FINAL_STRETCH, $16,894 mcap, $5,493 5m vol): PASS at conviction 3, PASS — 29 copies of "ipo", top 10 at 23.1%, and a saw-tooth chart after a +749% day with no catalyst. Not a buy. (V1, V6, V13)  
   CA `EYiXPL3LTuXEMb7KjhP6eTETPehJGhhU5H7ZYmWsSipo`
-- 16:15Z Pompom (MIGRATED, $316,777 mcap, $19,839 5m vol): PASS at conviction 3, PASS: Pompompurin is a 38%-off MIGRATED dip with 5m flow at 0.8x pace, no printed higher low and no outside catalyst. Blocker: "flow below pace". (V1, V6)  
-  CA `5EmvWDizkpjAXbcfCcVq69w1id8GaLzi4LLwtuSgpump`
-- 16:12Z BIAO (MIGRATED, $190,486 mcap, $2,404 5m vol): PASS at conviction 3, PASS: flow below pace. 5m volume is $2.4k at 0.3x its hourly average, the biao theme runs at 0.03x, and no higher low has printed. The site still says "CA coming soon" on a 2-hour-old domain, in a 16-copy field. (V1, V3, V6, V13)  
-  CA `As3XtYSstuVdrVyb6sJZZ77Tu8JvjTBg6S6hgPv4pump`
-- 16:10Z DESSA (MIGRATED, $757,453 mcap, $4,778 5m vol): PASS at conviction 3, PASS. DESSA is a dead-flow meme with no printed higher low, and the 5m is under the pace gate. Blocker: "flow below pace" (V1, V6).  
-  CA `npz2FhoufQ7pKqhGpaipYWacrAkidyW2yDpVWSvpump`
-- 16:09Z LEMON (DIP, $169,322 mcap, $21,782 5m vol): REJECT, Dip with fading attention is a falling knife, not a dip (5m at 0.31x the hour's pace, under 0.6x)  
-  CA `CuQUeUa6YbSSK52PTaL8eok8c1hrG6qyuyJyovmapump`
-- 15:35Z McCat (FINAL_STRETCH, $19,127 mcap, $20,722 5m vol): REJECT, Top 10 hold 40.0% ex-pool (>25%) (V13)  
-  CA `FMMRv2doNMperPCSANuSWXcMCSs2YkxTTosN7TEypump`
 
 ## What its skips did next (last 48h)
 A skip "ran" if the coin reached the first target (1.5x) from the skip price before a 20% drop, "dumped" if the drop came first. Sampled every 10 min, followed 6h.
-- top 10 over 25%: blocked 47, ran 8, dumped 35, flat 2, open 2 (saving losses: keep it)
+- top 10 over 25%: blocked 46, ran 8, dumped 34, flat 2, open 2 (saving losses: keep it)
   - ran: SNP6900 up to 2.76x  
     CA `DnbQKi146NDmwwji3f3q5i68HQnYyBEhoDyj2q3Npump`
   - ran: JENSEN up to 2.62x  
@@ -113,27 +113,27 @@ A skip "ran" if the coin reached the first target (1.5x) from the skip price bef
     CA `9cDnmLRDWeJzcpyw8tSFAT7HS4Aunx6MmZWjMfrzpump`
   - ran: SHHFT up to 1.61x  
     CA `GqMg4TRt5U5HRK6oeZYwCF1Jz7Ym9MSzWSoFCtFsbzf6`
-- flow below pace: blocked 28, ran 6, dumped 18, flat 0, open 4 (saving losses: keep it)
-  - ran: NVDA up to 1.52x  
-    CA `37corVSMFFrqP3WK7AtMV6yFTGSvjFEB5fWnH1Bcpump`
-  - ran: Doomcat up to 1.62x  
-    CA `EiQ1JvEUZCXN5kQi2UdS4CdQapidqC7MCXd5sRTPpump`
-  - ran: Jesus up to 1.64x  
-    CA `Gy5BUDnpJMWRsNVKh9sRtsBGunFXKKrbroQRoydQpump`
-- near the high / chasing: blocked 28, ran 9, dumped 19, flat 0, open 0 (saving losses: keep it)
+- near the high / chasing: blocked 29, ran 9, dumped 19, flat 0, open 1 (saving losses: keep it)
   - ran: Bertcoin up to 1.8x  
     CA `xEK58Qa2xZ7C36Z2g3Jjq1WHY561CvvnJkLpgJspump`
   - ran: WOFL up to 2.62x  
     CA `AdXjXfumPSSKk7PrfgDHcAsPvuxnKv7Zo9WZEWKbiDkh`
   - ran: Phil up to 2.05x  
     CA `GMLSyjZCKGtFwztp2mtT8PDeNUA6WEk7oQoe3QkFpump`
-- RugCheck danger: blocked 24, ran 4, dumped 20, flat 0, open 0 (saving losses: keep it)
-  - ran: FUCK! up to 2.22x  
-    CA `CSjwLiCLyaJqXQm9XCV3LdYWMYswbZ7JQ71JKX77pump`
+- flow below pace: blocked 28, ran 6, dumped 19, flat 0, open 3 (saving losses: keep it)
+  - ran: NVDA up to 1.52x  
+    CA `37corVSMFFrqP3WK7AtMV6yFTGSvjFEB5fWnH1Bcpump`
+  - ran: Doomcat up to 1.62x  
+    CA `EiQ1JvEUZCXN5kQi2UdS4CdQapidqC7MCXd5sRTPpump`
+  - ran: Jesus up to 1.64x  
+    CA `Gy5BUDnpJMWRsNVKh9sRtsBGunFXKKrbroQRoydQpump`
+- RugCheck danger: blocked 23, ran 3, dumped 20, flat 0, open 0 (saving losses: keep it)
   - ran: FOMOMAS up to 1.71x  
     CA `9Gu5JYt4Pas6cW4S6qtyFkDucFj6GMtpJiDC9sQbpump`
   - ran: TIMOTHY up to 2.14x  
     CA `AWg6LmGPfqjEqAU8N8wR8mYTbwmkwqMUqzrmggbgpump`
+  - ran: TROLL up to 1.94x  
+    CA `7ykeHoEnjnGkY6tqteXn47fdGtd7kfXWghiyZ7YKpump`
 - too new / sniping: blocked 20, ran 3, dumped 16, flat 1, open 0 (saving losses: keep it)
   - ran: BABYANSEM up to 2.77x  
     CA `F3VctV9FqDgiyqaztN6z78bgWy27eH7DBBHW1vjpump`
@@ -141,14 +141,14 @@ A skip "ran" if the coin reached the first target (1.5x) from the skip price bef
     CA `AMYpNGi5aGrKr1ZDsotUdWh7k1mMi569ygtaHJmErGEd`
   - ran: Boor up to 1.56x  
     CA `GHFpSSw2ZMjmKCyc1wrHUjJiqnJeP18mekY9GL1Xpump`
+- falling knife (code): blocked 13, ran 1, dumped 10, flat 1, open 1 (saving losses: keep it)
+  - ran: Jimmies up to 1.53x  
+    CA `GisWWjhwrSud4aFGSHvTMt85Ky14sY7LeBFCpfoFpump`
 - dev share over 1%: blocked 12, ran 2, dumped 10, flat 0, open 0 (saving losses: keep it)
   - ran: BLOOM up to 2.09x  
     CA `FyRXnHLBSeHHoigrgHR1hvcXiPbPCa5bxhVhEDampump`
   - ran: PI up to 1.77x  
     CA `D2AK5DvBj8AxN5VX1t6bjv7muJVPUx4hFPowVRWYpump`
-- falling knife (code): blocked 12, ran 1, dumped 10, flat 1, open 0 (saving losses: keep it)
-  - ran: Jimmies up to 1.53x  
-    CA `GisWWjhwrSud4aFGSHvTMt85Ky14sY7LeBFCpfoFpump`
 - thin 5m volume: blocked 11, ran 1, dumped 7, flat 2, open 1 (saving losses: keep it)
   - ran: NINO up to 1.55x  
     CA `BqekG1RSPUthaKfStu7Uvyvr1eR6TchrQMp1M5r5pump`
@@ -194,16 +194,16 @@ Nothing has a positive edge after costs. All 213 settled coins came out at -12.2
 - [2026-11-02 20:25] I expected Slingoor, a clean MIGRATED leader with $25k of 5m flow at pace and a 0.77 buy share, to retest its $408k high from $304k. It never went green (0.98x peak) and hit the -20% stop in 2 minutes, a -$2.86 probe. My own thesis admitted there was no printed higher low after a peak only 6 minutes old, so this confirms the money-shape rule: buy share and flow are not structure (V1, V6). Next time a MIGRATED pullback with no higher low above the hourly low is a PASS with blocker "no higher low", not a probe. This is one loss, so it adds no new ban beyond the rule I already have.
 
 ## Meta right now
-Meta from scan_movers is cartoon and character coins plus cute animal and food mascots (Pompompurin, CursedBob, LEMON's lemon pig, SHEEPCOIN), with a second thread of chat-culture jokes (BIAO, a sticker name, and the Jimmies phrase). The crawler's FRANK and Gemidia calls are not in scan_movers, so I'm not trading them. LEMON (+397% 1h) and BIAO (+450% 1h) are the rising ones, both under an hour old, but both show zero 5m volume, and nothing on the list clears the ~$10k 5m bar, so the movers are quiet at the 5-minute level. Fading: CursedBob (15% buys, -14%), SHEEPCOIN, MONEYGO (-99%), KYM (launchpad tooling, -55%), and the old DESSA, WASTED, CBUCKS and BRUH, which are attention, not trench meta. Setups to research, not buy, all under conviction 5: Pompompurin ($349k, 4.8h, +35% 1h) once the original CA is confirmed, since the crawler's $14.4k 5m doesn't match the scan's zero; LEMON or BIAO only if 5m volume returns to ~$10k and holds through a pullback; Jimmies only if its 94% buy ratio comes with real volume. Holder, dev and bundle checks run on each before any entry, and each needs a written exit plan first.
+The movers are not quiet. MONEY ($179k mcap, $44k 5m, 57% buys), CI ($19k, $38k 5m, 60% buys), DARKPOOL ($10k, $13.6k 5m, 64% buys) and STARMIND ($33k, $11k 5m) all clear the $10k 5-minute bar, so the crawler's claim that nothing does is wrong. Three themes run across several coins: animal and dog mascots (CI, KURO INU, Pompompurin, Miaomiao, LEMON), internet and chat culture (BIAO, PETER "King of /b/", Jimmies), and finance wordplay (MONEY, CI as "Commodity", DARKPOOL, IPO). Rising are MONEY, CI and DARKPOOL, all under an hour old. Fading are Pompompurin (-18% 1h, $5.7k 5m against $150k over 1h), LEMON (zero 5m buys, -54%), Jimmies (92% buys but 5m volume down to $878), and the 400-700h-old DESSA, BRUH and three.ws. Setups to research, not buy, at conviction 5 at most (a probe at best): MONEY (generic name, so confirm it is the original; it is already up 372% in an hour, so any stop goes under the pullback, not the spike), CI (check for a same-name vamp), and DARKPOOL (too young to call; it needs 5m volume to hold through a pullback). The crawler's LEMON +397%, BIAO +450%, Pompompurin $349k and $14.4k 5m, and its CursedBob, SHEEPCOIN, FRANK and Gemidia figures do not match the scan (LEMON -54%, BIAO +18%, Pompompurin $294k and $5.7k 5m), and the crawler's named coins are not in scan_movers, so I'm not using them. Web headlines (Trump dinner, Ansem dump) are attention, not what the trench is trading; holder, dev and bundle checks are still pending on every coin.
 
 ## Moving most in its scans, last 30 min (1h volume)
 - MONEY: $859,796 1h vol, $178,580 mcap, +372% 1h  
   CA `Bg74niwsyZFFxPhY8J47crDtDSUctKZEb1AuZL93pump`
-- Miaomiao: $73,562 1h vol, $4,704 mcap, +90% 1h  
+- Pompom: $150,480 1h vol, $294,307 mcap, -18% 1h  
+  CA `5EmvWDizkpjAXbcfCcVq69w1id8GaLzi4LLwtuSgpump`
+- Miaomiao: $78,845 1h vol, $2,166 mcap, -13% 1h  
   CA `BxZ4f47jzHCQLeuby76jwwwzL8ASc2p45gmreF2tpump`
-- SHEEPCOIN: $39,565 1h vol, $6,277 mcap, -75% 1h  
-  CA `9rrvHRGgvzAx2MjNpcpSWk6cLED25sNXfmykyq7tpump`
-- three: $21,585 1h vol, $308,939 mcap, +4% 1h  
-  CA `FeMbDoX7R1Psc4GEcvJdsbNbZA3bfztcyDCatJVJpump`
-- STARMIND: $15,946 1h vol, $32,752 mcap, +5% 1h  
-  CA `2hsmC7864Ve1giwLygu7bJjZU1R4JZKX9kCxWmD9yP6o`
+- CI: $48,846 1h vol, $18,773 mcap, +460% 1h  
+  CA `EC1K3jCNYhv2RN5496KU2h3L2h58qYopYQeg9uNBpump`
+- DESSA: $46,121 1h vol, $766,871 mcap, +5% 1h  
+  CA `npz2FhoufQ7pKqhGpaipYWacrAkidyW2yDpVWSvpump`
