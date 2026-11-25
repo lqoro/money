@@ -1,13 +1,13 @@
 # Trencher live report
 
-Updated 2026-11-25T05:49:32Z (paper trading, never real money)
+Updated 2026-11-25T06:04:33Z (paper trading, never real money)
 
 - Equity: $74.23 (-25.8% vs $100 start)
 - Closed trades: 22, 3 wins
 - Fees paid: $14.78 (axiom $2.81, network $9.18, pool $2.66), plus $4.15 lost to slippage
 - New trades: WATCH-ONLY (scans and decides, buys nothing)
-- Brain: subscription, claude-haiku-5-5 for routine calls, claude-opus-5-5 for the daily review; 481 routine calls and 0 plan-limit hits in 48h
-- Watch log: 71 coins being followed, 3474 filed, 0 would-buys (6h follow, sampled every 2 min)
+- Brain: subscription, claude-haiku-5-5 for routine calls, claude-opus-5-5 for the daily review; 479 routine calls and 0 plan-limit hits in 48h
+- Watch log: 66 coins being followed, 3479 filed, 0 would-buys (6h follow, sampled every 2 min)
 
 ## Scorecard (after fees)
 - 22 closed, 3 won (14%), net $-25.79
@@ -73,7 +73,7 @@ Updated 2026-11-25T05:49:32Z (paper trading, never real money)
   CA `H4gHnZ3NCU7Z9XQwGX6YYJNyieGEW8pqwGRUcdSxpump`
 
 ## Last scan
-- 05:48Z: 3 coins, 3 with pairs, 1 passed the market filters, 1 researched
+- 06:04Z: 4 coins, 4 with pairs, 0 passed the market filters, 0 researched
 
 ## Coins it looked at, and why it passed
 - 05:48Z WASTED (MIGRATED, $1,190,988 mcap, $2,656 5m vol): REJECT, Dev holds 1.1% (>1%) (V13, V17)  
@@ -192,16 +192,16 @@ Nothing has a positive after-cost edge yet. All 229 settled coins average -8.7% 
 - [2026-11-02 20:25] I expected Slingoor, a clean MIGRATED leader with $25k of 5m flow at pace and a 0.77 buy share, to retest its $408k high from $304k. It never went green (0.98x peak) and hit the -20% stop in 2 minutes, a -$2.86 probe. My own thesis admitted there was no printed higher low after a peak only 6 minutes old, so this confirms the money-shape rule: buy share and flow are not structure (V1, V6). Next time a MIGRATED pullback with no higher low above the hourly low is a PASS with blocker "no higher low", not a probe. This is one loss, so it adds no new ban beyond the rule I already have.
 
 ## Meta right now
-Meta: young pump.fun-to-PumpSwap internet-joke coins, and most are fading. Trollface (-55% in 1h), Slitheen (-93%, $43 of 5m volume, 0% buys), DongCoin (-99.7%, zero 5m volume) and Chudjak (-62%) are bleeding, so that theme is dying. Fresh launches with real buyers are the live theme: YUMA ($168k cap, $19k 5m, 59% buys, +205% in 1h, 1.3h old) and pode (100h old, $20k cap, +211% in 1h, 65% buys, but only $6.5k 5m). Legacy memes are dead weight: Cartoon Money ($5.2M cap, $3.3k 5m) and FartCoin ($58k, -15%). Setup to research now is YUMA only, and it has no conviction until the holder, dev and bundle checks run; it's the only mover clearing the $10k 5m bar with a live cap. Basket ($152k 5m, 6 minutes old on Raydium) is a brand-new pair, so it's a watch, not a snipe. The crawler's SLITHEEN, YUMA (84% buys at $95k) and Alien numbers don't match this scan, and Alien and KYM aren't on the tape, so I'm not using them. The Ansem drain coin is blocked and not a setup.
+The meta on the tape right now is fresh launches with real buyers, not jokes. Basket ($238k cap, $19.7k 5m, 57% buys, 0.8h old, Raydium) and Fuck Cancer ($73k cap, $14.5k 5m, 59% buys, 0.7h old, PumpSwap) are the only movers clearing the $10k 5m bar with a live cap, so under the MIGRATED rules (V1, V6) they're the two setups to research now, with entries only after the holder, dev and bundle checks run. Both 5m flows are already slowing to roughly a quarter to two-thirds of their hourly pace, so treat this as cooling, not accelerating. Fading: the cartoon and meme-character coins (Trollface -61%, 404GIRL -62%, Golden Penguin -18%, pode -26%) and the brand-name spikes, Twitch (+1103% in 1h but $0 5m) and Reddit (14% buys, $198 5m), which pumped and went quiet. Legacy coins (WASTED at 25 days, HOGE at 10 days, ROCKET, jingyu) carry market cap with almost no flow, so they're dead weight. I'm not using the crawler's YUMA, Slitheen or Alien numbers because they don't match this scan, the Trump dinner and Ansem headlines aren't what's trading, and Ansem is a blocked drain coin regardless; Basket's age also conflicts with the crawler (0.8h here, about 6 min there), so I'll re-pull it before anything else.
 
 ## Moving most in its scans, last 30 min (1h volume)
-- BASKET: $881,805 1h vol, $238,112 mcap, +240% 1h  
-  CA `3Tg6YnNrfPdFfsY14MaNsDMWLseAyrUDS3myJtbaJN6f`
 - FUCKCANCER: $286,174 1h vol, $73,300 mcap, +169% 1h  
   CA `4UMErmfmKzDCVmHrwBUbnDnbQnVKVYAcT7X5AdTkpump`
-- YUMA: $181,749 1h vol, $89,294 mcap, -5% 1h  
-  CA `CkwFsrupdFHzo5kYk8b5W47CVx1v5ymzeu6BBoDjpump`
-- CBUCKS: $69,856 1h vol, $5,460,152 mcap, +0% 1h  
-  CA `DtcicPCKTKeAh7TDEzTym3hXeoHAoMiBdYJhMYxZpump`
-- Reddit: $47,364 1h vol, $4,537 mcap, +16% 1h  
+- Reddit: $50,523 1h vol, $3,832 mcap, -2% 1h  
   CA `6MsaWYaAQ3vPKpQMi9ptiX4yhLv1EEt7NYcX5DH6pump`
+- Twitch: $41,441 1h vol, $28,125 mcap, +1103% 1h  
+  CA `6QtshTWFdGsscfo5cH6D8EUyyFgy7BDfdbMevUvbpump`
+- 404GIRL: $35,125 1h vol, $7,976 mcap, -72% 1h  
+  CA `7wohLebdTHjfCjP6PTVM3HJwMNed4vEL1ZyTawtupump`
+- CLOVER: $20,651 1h vol, $1,935 mcap, +0% 1h  
+  CA `F4p47HW6RmkmVAEszyGtVyRrqyj6AfUCHe1assZSpump`
