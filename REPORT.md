@@ -1,13 +1,13 @@
 # Trencher live report
 
-Updated 2026-11-25T00:01:40Z (paper trading, never real money)
+Updated 2026-11-25T00:16:50Z (paper trading, never real money)
 
 - Equity: $74.23 (-25.8% vs $100 start)
 - Closed trades: 22, 3 wins
 - Fees paid: $14.78 (axiom $2.81, network $9.18, pool $2.66), plus $4.15 lost to slippage
 - New trades: WATCH-ONLY (scans and decides, buys nothing)
-- Brain: subscription, claude-haiku-5-5 for routine calls, claude-opus-5-5 for the daily review; 514 routine calls and 0 plan-limit hits in 48h
-- Watch log: 74 coins being followed, 3403 filed, 0 would-buys (6h follow, sampled every 2 min)
+- Brain: subscription, claude-haiku-5-5 for routine calls, claude-opus-5-5 for the daily review; 515 routine calls and 0 plan-limit hits in 48h
+- Watch log: 73 coins being followed, 3407 filed, 0 would-buys (6h follow, sampled every 2 min)
 
 ## Scorecard (after fees)
 - 22 closed, 3 won (14%), net $-25.79
@@ -73,9 +73,15 @@ Updated 2026-11-25T00:01:40Z (paper trading, never real money)
   CA `H4gHnZ3NCU7Z9XQwGX6YYJNyieGEW8pqwGRUcdSxpump`
 
 ## Last scan
-- 00:01Z: 5 coins, 5 with pairs, 0 passed the market filters, 0 researched
+- 00:15Z: 1 coins, 1 with pairs, 0 passed the market filters, 0 researched
 
 ## Coins it looked at, and why it passed
+- 00:09Z Jimmies (MIGRATED, $171,313 mcap, $5,290 5m vol): PASS at conviction 3, PASS: flow below pace (5m at 0.31x the hourly average, $5.3k under the $10k gate), no printed higher low, and the project site shows "Contract TBA" on a 0.1-day-old domain. The crowd is there; the flow isn't. (V1, V6, V13)  
+  CA `GisWWjhwrSud4aFGSHvTMt85Ky14sY7LeBFCpfoFpump`
+- 00:02Z Memeployed (MIGRATED, $57,257 mcap, $4,454 5m vol): PASS at conviction 2, PASS: deep dip with no catalyst, 81% off peak and crowd leaving. Blocker: "bottom buy, no catalyst" (V1, V6).  
+  CA `4m2PS6yW2xDk5V9nJgPjnus1eguwCDSWXbA2YQeVkqxn`
+- 00:02Z DONJENSEN (MIGRATED, $949,537 mcap, $2,319 5m vol): PASS at conviction 2, PASS — 5m flow is 0.08x the hourly pace at $2.3k, the drawdown is 74% with no catalyst, and 25 copies split the crowd. Holders are clean, but the crowd has left. (V1, V6, V13)  
+  CA `5LDowscYVD3a6ZS4m8gCqG5nU16eLTwRXhciFi1bpump`
 - 23:59Z FIONA (MIGRATED, $2,844,586 mcap, $4,738 5m vol): REJECT, Bundles: 9 linked wallet cluster(s) hold 29.4% of supply (>20%) (V17)  
   CA `B34nXKzCgsJb9ChLuSHPRpXLE3WFSWyeT8Cqkzzmpump`
 - 23:56Z BTC (MIGRATED, $132,997 mcap, $10,366 5m vol): PASS at conviction 4, PASS. Flow is at 0.81x its hourly pace, no higher low has printed, and 22 same-ticker copies split the crowd. Watch for a reclaim of the $167k bounce high (V1, V6).  
@@ -90,29 +96,30 @@ Updated 2026-11-25T00:01:40Z (paper trading, never real money)
   CA `4npJ3avxnGhCzKbWQpLrQXAHsjWzKr4JqBsbu5Fspump`
 - 23:24Z Jimmies (MIGRATED, $148,908 mcap, $47,422 5m vol): REJECT, Top 10 hold 43.3% ex-pool (>25%) (V13)  
   CA `GisWWjhwrSud4aFGSHvTMt85Ky14sY7LeBFCpfoFpump`
-- 23:19Z goldcoin (MIGRATED, $74,576 mcap, $21,471 5m vol): PASS, PASS — brain unavailable, not trading blind.  
-  CA `Cp6i5Ka8Gwzzn537KoqLyjQCFX6QBfoAC9WuxEbQpump`
-- 23:17Z DONJENSEN (DIP, $1,100,746 mcap, $2,537 5m vol): PASS, PASS — brain unavailable, not trading blind.  
-  CA `5LDowscYVD3a6ZS4m8gCqG5nU16eLTwRXhciFi1bpump`
-- 23:17Z MARS (MIGRATED, $458,037 mcap, $95,314 5m vol): REJECT, Top 10 hold 27.8% ex-pool (>25%) (V13)  
-  CA `816BuXnCFQqt6KXbBTcFgHWD29Ckpaqt8HMKSN4Vpump`
 
 ## What its skips did next (last 48h)
 A skip "ran" if the coin reached the first target (1.5x) from the skip price before a 20% drop, "dumped" if the drop came first. Sampled every 10 min, followed 6h.
-- brain paced: blocked 39, ran 11, dumped 25, flat 1, open 2 (saving losses: keep it)
-  - ran: DONJENSEN up to 1.69x  
-    CA `5LDowscYVD3a6ZS4m8gCqG5nU16eLTwRXhciFi1bpump`
-  - ran: Scamsem up to 1.56x  
-    CA `5JWeGmA9z6yHd5F9P6B23A8wthho8BpZuDmQv5DfLoat`
-  - ran: RUGSEM up to 1.5x  
-    CA `9cDnmLRDWeJzcpyw8tSFAT7HS4Aunx6MmZWjMfrzpump`
-- top 10 over 25%: blocked 38, ran 6, dumped 29, flat 2, open 1 (saving losses: keep it)
+- top 10 over 25%: blocked 37, ran 6, dumped 29, flat 1, open 1 (saving losses: keep it)
   - ran: SNP6900 up to 2.76x  
     CA `DnbQKi146NDmwwji3f3q5i68HQnYyBEhoDyj2q3Npump`
   - ran: JENSEN up to 2.62x  
     CA `GaNJeASYBM9k3TvEeUC2Pdyu1TjcpzTmPpoom92fpump`
   - ran: GOAT up to 1.53x  
     CA `5Ze97VEpX3EdRF4vbsxUXTdwGKF2qHGregrxToWEpump`
+- brain paced: blocked 37, ran 10, dumped 25, flat 1, open 1 (saving losses: keep it)
+  - ran: Scamsem up to 1.56x  
+    CA `5JWeGmA9z6yHd5F9P6B23A8wthho8BpZuDmQv5DfLoat`
+  - ran: RUGSEM up to 1.5x  
+    CA `9cDnmLRDWeJzcpyw8tSFAT7HS4Aunx6MmZWjMfrzpump`
+  - ran: SHHFT up to 1.61x  
+    CA `GqMg4TRt5U5HRK6oeZYwCF1Jz7Ym9MSzWSoFCtFsbzf6`
+- flow below pace: blocked 32, ran 6, dumped 24, flat 0, open 2 (saving losses: keep it)
+  - ran: hCAT up to 1.52x  
+    CA `2FYs4vApfj4ErsggpFDfzMv1WvxnyiLtzNEj84mS6TLh`
+  - ran: WALLSTFLY up to 1.52x  
+    CA `2DQbV7hsqxKVWmFakXGGhBbNyY28tDJ9YuJkojYrpump`
+  - ran: NVDA up to 1.52x  
+    CA `37corVSMFFrqP3WK7AtMV6yFTGSvjFEB5fWnH1Bcpump`
 - too new / sniping: blocked 32, ran 3, dumped 28, flat 1, open 0 (saving losses: keep it)
   - ran: Loaf up to 2.13x  
     CA `8Ugc1FHaeK6iXQrnUpztxhhNHqucFwaqC35A4Kjjpump`
@@ -127,13 +134,6 @@ A skip "ran" if the coin reached the first target (1.5x) from the skip price bef
     CA `AdXjXfumPSSKk7PrfgDHcAsPvuxnKv7Zo9WZEWKbiDkh`
   - ran: Phil up to 2.05x  
     CA `GMLSyjZCKGtFwztp2mtT8PDeNUA6WEk7oQoe3QkFpump`
-- flow below pace: blocked 30, ran 6, dumped 23, flat 0, open 1 (saving losses: keep it)
-  - ran: hCAT up to 1.52x  
-    CA `2FYs4vApfj4ErsggpFDfzMv1WvxnyiLtzNEj84mS6TLh`
-  - ran: WALLSTFLY up to 1.52x  
-    CA `2DQbV7hsqxKVWmFakXGGhBbNyY28tDJ9YuJkojYrpump`
-  - ran: NVDA up to 1.52x  
-    CA `37corVSMFFrqP3WK7AtMV6yFTGSvjFEB5fWnH1Bcpump`
 - RugCheck danger: blocked 20, ran 5, dumped 15, flat 0, open 0 (saving losses: keep it)
   - ran: Holdsgiving up to 2.96x  
     CA `A2jLaCC7v3VjXP8gEgCQNbTWEvizYuQ82jFEYfzipump`
@@ -201,13 +201,13 @@ Nothing has a positive after-cost edge yet. All 229 settled coins average -8.7% 
 Meta right now is fresh pump.fun internet-joke names with real 5-minute flow. 4CHAN ($276k cap, $110k 5m, 59% buys, 1.7h old) and Jimmies ("That really rustled my jimmies", $149k cap, $47k 5m, 87% buys, about 6 minutes old) are the two doing it, with Sisyphus ($31k cap, $46k 5m, 58% buys, minutes old) as a third. The fading theme is the pump-and-dump-out crowd: trilly, CHARITY, RAGE, SCOOBY, BOUNCER, Streamer and Votr all printed large 1h volume, are down 70-90%, and have $0 to $400 of 5m volume. Setups I'd research: Jimmies and 4CHAN, but only on a pullback that holds with 5m volume still above $10k and buyers stepping back in. Jimmies is too young to be more than a probe, and I won't chase 4CHAN after a +966% hour. Nothing clears until holder, dev and bundle checks run. The Claude-named coins (CLAUDIO, SUPER CLAUDIA INU) and the Trump/Jensen names in the crawler summary are not in these movers, so I'm treating those rows as unverified. ANSEM is named in a wallet-hack headline and is blocked, so it is not a setup.
 
 ## Moving most in its scans, last 30 min (1h volume)
-- MEMESTONK: $363,915 1h vol, $1,314 mcap, -97% 1h  
+- MARS: $697,956 1h vol, $89,703 mcap, -73% 1h  
+  CA `816BuXnCFQqt6KXbBTcFgHWD29Ckpaqt8HMKSN4Vpump`
+- DONJENSEN: $345,294 1h vol, $913,252 mcap, -16% 1h  
+  CA `5LDowscYVD3a6ZS4m8gCqG5nU16eLTwRXhciFi1bpump`
+- MEMESTONK: $329,231 1h vol, $1,314 mcap, -100% 1h  
   CA `9guNcpbsmqcKJikLNBcn8g5AoG3v9k98zK51KcoXpump`
-- 4CHAN: $320,051 1h vol, $275,831 mcap, +966% 1h  
-  CA `DVdWuNK8ncn79B6z8nCiwcNAiwyFcmBPfChgxJGTpump`
+- Jimmies: $207,500 1h vol, $178,777 mcap, +465% 1h  
+  CA `GisWWjhwrSud4aFGSHvTMt85Ky14sY7LeBFCpfoFpump`
 - BTC: $155,056 1h vol, $111,984 mcap, -16% 1h  
   CA `GkSZVKcXcgodewdZd5CbGxFJoUUcazrf1GayrNv3pump`
-- PI: $115,684 1h vol, $6,043 mcap, +25% 1h  
-  CA `8nZQ36gei4au7wdmnCDQDEquyPiRzMJNMymXnkiKpump`
-- Smoove: $100,899 1h vol, $22,836 mcap, -20% 1h  
-  CA `BMqyT3n9kXYhBjWKFdgGmPzbNbqcXs8sNgXWhw7tpump`
