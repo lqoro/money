@@ -1,13 +1,13 @@
 # Trencher live report
 
-Updated 2026-11-25T11:22:02Z (paper trading, never real money)
+Updated 2026-11-25T11:37:28Z (paper trading, never real money)
 
 - Equity: $74.23 (-25.8% vs $100 start)
 - Closed trades: 22, 3 wins
 - Fees paid: $14.78 (axiom $2.81, network $9.18, pool $2.66), plus $4.15 lost to slippage
 - New trades: WATCH-ONLY (scans and decides, buys nothing)
 - Brain: subscription, claude-haiku-5-5 for routine calls, claude-opus-5-5 for the daily review; 447 routine calls and 0 plan-limit hits in 48h
-- Watch log: 45 coins being followed, 3540 filed, 0 would-buys (6h follow, sampled every 2 min)
+- Watch log: 44 coins being followed, 3543 filed, 0 would-buys (6h follow, sampled every 2 min)
 
 ## Scorecard (after fees)
 - 22 closed, 3 won (14%), net $-25.79
@@ -73,9 +73,13 @@ Updated 2026-11-25T11:22:02Z (paper trading, never real money)
   CA `H4gHnZ3NCU7Z9XQwGX6YYJNyieGEW8pqwGRUcdSxpump`
 
 ## Last scan
-- 11:21Z: 4 coins, 3 with pairs, 0 passed the market filters, 0 researched
+- 11:36Z: 10 coins, 9 with pairs, 1 passed the market filters, 1 researched
 
 ## Coins it looked at, and why it passed
+- 11:37Z Boor (FINAL_STRETCH, $17,792 mcap, $23,246 5m vol): PASS at conviction 2, PASS: chasing spike. Boor is up 282% on 5m and 680% on 1h, about 7 minutes old, one of 14 "boor" copies, and no story is attached (V1, V6, V13).  
+  CA `GHFpSSw2ZMjmKCyc1wrHUjJiqnJeP18mekY9GL1Xpump`
+- 11:24Z Pompom (MIGRATED, $69,690 mcap, $25,045 5m vol): PASS at conviction 3, PASS: chasing spike. Up 36% on 5m at 4x the hourly pace, eight minutes old, no printed higher low, and 25 copies of the name with another coin leading the theme (V1, V6, V13).  
+  CA `5EmvWDizkpjAXbcfCcVq69w1id8GaLzi4LLwtuSgpump`
 - 11:10Z KING (FINAL_STRETCH, $14,312 mcap, $5,197 5m vol): REJECT, Top 10 hold 25.1% ex-pool (>25%) (V13)  
   CA `9Gdhz3WVnTaFcbGPrK2GbBdZpbwAQFfFK42bSgsupump`
 - 11:10Z SNOWCUMBRR (FINAL_STRETCH, $16,004 mcap, $7,066 5m vol): PASS at conviction 2, PASS — up 535% in 5 minutes on $7k of 5m volume, no X, no story, and the price doesn't match its own candles. That's chasing a spike (V1, V6).  
@@ -92,10 +96,6 @@ Updated 2026-11-25T11:22:02Z (paper trading, never real money)
   CA `9Gdhz3WVnTaFcbGPrK2GbBdZpbwAQFfFK42bSgsupump`
 - 10:22Z JaoJiu (DIP, $160,702 mcap, $7,441 5m vol): REJECT, Dip with fading attention is a falling knife, not a dip (5m at 0.49x the hour's pace, under 0.6x)  
   CA `2UyrvgCRXiEwiKRVk96gs6B4myrBHZAfcLyMVLE8vSCy`
-- 10:10Z Bernard (FINAL_STRETCH, $20,109 mcap, $11,300 5m vol): PASS at conviction 2, PASS: Bernard is up 99% in 5 minutes, 12% off a peak printed 12 minutes ago, with no higher low and no catalyst. It's copy #19 in a name-family vamp war. Chasing (V1, V6).  
-  CA `8LPJzr3SfD8Ehv13jjNj6LAUsxbaPeRsLemFdV8Wpump`
-- 10:09Z Nyamitto (FINAL_STRETCH, $22,802 mcap, $14,308 5m vol): PASS at conviction 3, PASS — chasing a spike: the 5m candle is up 127% and the 1h is up 899%. The first resistance (the 25.4k peak) is only 1.11x away, and the top 10 hold 23.7%. Blocker: chasing spike / target too close (V1, V6).  
-  CA `5BX4LiBheGbrPd7rCxdpbdE14hEgm542Wdpt1zs65fAo`
 
 ## What its skips did next (last 48h)
 A skip "ran" if the coin reached the first target (1.5x) from the skip price before a 20% drop, "dumped" if the drop came first. Sampled every 10 min, followed 6h.
@@ -113,21 +113,21 @@ A skip "ran" if the coin reached the first target (1.5x) from the skip price bef
     CA `9cDnmLRDWeJzcpyw8tSFAT7HS4Aunx6MmZWjMfrzpump`
   - ran: SHHFT up to 1.61x  
     CA `GqMg4TRt5U5HRK6oeZYwCF1Jz7Ym9MSzWSoFCtFsbzf6`
-- near the high / chasing: blocked 31, ran 7, dumped 22, flat 1, open 1 (saving losses: keep it)
+- near the high / chasing: blocked 31, ran 8, dumped 22, flat 1, open 0 (saving losses: keep it)
   - ran: Bertcoin up to 1.8x  
     CA `xEK58Qa2xZ7C36Z2g3Jjq1WHY561CvvnJkLpgJspump`
   - ran: WOFL up to 2.62x  
     CA `AdXjXfumPSSKk7PrfgDHcAsPvuxnKv7Zo9WZEWKbiDkh`
   - ran: Phil up to 2.05x  
     CA `GMLSyjZCKGtFwztp2mtT8PDeNUA6WEk7oQoe3QkFpump`
-- flow below pace: blocked 29, ran 6, dumped 23, flat 0, open 0 (saving losses: keep it)
+- flow below pace: blocked 28, ran 6, dumped 22, flat 0, open 0 (saving losses: keep it)
   - ran: NVDA up to 1.52x  
     CA `37corVSMFFrqP3WK7AtMV6yFTGSvjFEB5fWnH1Bcpump`
   - ran: Doomcat up to 1.62x  
     CA `EiQ1JvEUZCXN5kQi2UdS4CdQapidqC7MCXd5sRTPpump`
   - ran: Jesus up to 1.64x  
     CA `Gy5BUDnpJMWRsNVKh9sRtsBGunFXKKrbroQRoydQpump`
-- too new / sniping: blocked 23, ran 4, dumped 18, flat 1, open 0 (saving losses: keep it)
+- too new / sniping: blocked 25, ran 4, dumped 19, flat 1, open 1 (saving losses: keep it)
   - ran: AGI up to 1.53x  
     CA `7kctwFbSdLfpi6RuN9cjpVpYVHKPUr8PtG1meH35AEky`
   - ran: TREMP up to 1.7x  
@@ -199,11 +199,11 @@ Not quiet, but the flow is thin and concentrated. The main cluster is Japanese k
 ## Moving most in its scans, last 30 min (1h volume)
 - JaoJiu: $98,818 1h vol, $145,686 mcap, -16% 1h  
   CA `2UyrvgCRXiEwiKRVk96gs6B4myrBHZAfcLyMVLE8vSCy`
-- SOLCHAN: $86,278 1h vol, $4,773 mcap, -90% 1h  
-  CA `5GfgQ79T5P8hSmyKhvRWZvNehgV8gJ3JNTsUvjegbYze`
-- REBACCA: $62,574 1h vol, $9,663 mcap, -38% 1h  
-  CA `CW2GNsWs6Fmgj8MKXqWWKNSgiEGTyHRxKKQNkQzrpump`
-- bon: $61,446 1h vol, $10,641 mcap, +395% 1h  
+- bon: $95,790 1h vol, $10,092 mcap, +369% 1h  
   CA `FMS1KXoLPrbYXEDgpRfDgYwPtwJ7JV5ZXduX2SUFpump`
+- Memecoin: $90,423 1h vol, $2,437 mcap, +0% 1h  
+  CA `2rhoUVCygC2LyQWNMXsofKXo1rcbZFJnSTpDbU9Ppump`
+- Pompom: $73,787 1h vol, $69,690 mcap, +157% 1h  
+  CA `5EmvWDizkpjAXbcfCcVq69w1id8GaLzi4LLwtuSgpump`
 - KING: $57,627 1h vol, $14,312 mcap, +567% 1h  
   CA `9Gdhz3WVnTaFcbGPrK2GbBdZpbwAQFfFK42bSgsupump`
