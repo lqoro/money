@@ -1,13 +1,13 @@
 # Trencher live report
 
-Updated 2026-11-25T13:53:49Z (paper trading, never real money)
+Updated 2026-11-25T14:08:58Z (paper trading, never real money)
 
 - Equity: $74.23 (-25.8% vs $100 start)
 - Closed trades: 22, 3 wins
 - Fees paid: $14.78 (axiom $2.81, network $9.18, pool $2.66), plus $4.15 lost to slippage
 - New trades: WATCH-ONLY (scans and decides, buys nothing)
-- Brain: subscription, claude-haiku-5-5 for routine calls, claude-opus-5-5 for the daily review; 436 routine calls and 0 plan-limit hits in 48h
-- Watch log: 44 coins being followed, 3557 filed, 0 would-buys (6h follow, sampled every 2 min)
+- Brain: subscription, claude-haiku-5-5 for routine calls, claude-opus-5-5 for the daily review; 437 routine calls and 0 plan-limit hits in 48h
+- Watch log: 41 coins being followed, 3561 filed, 0 would-buys (6h follow, sampled every 2 min)
 
 ## Scorecard (after fees)
 - 22 closed, 3 won (14%), net $-25.79
@@ -73,9 +73,11 @@ Updated 2026-11-25T13:53:49Z (paper trading, never real money)
   CA `H4gHnZ3NCU7Z9XQwGX6YYJNyieGEW8pqwGRUcdSxpump`
 
 ## Last scan
-- 13:53Z: 1 coins, 1 with pairs, 0 passed the market filters, 0 researched
+- 14:08Z: 6 coins, 5 with pairs, 0 passed the market filters, 0 researched
 
 ## Coins it looked at, and why it passed
+- 14:02Z Pompom (MIGRATED, $293,491 mcap, $21,600 5m vol): PASS at conviction 3, PASS: 5m flow at 0.57x its hourly pace, the theme at 0.86x, and no catalyst found. It's a bounce off a dump, not a printed higher low. Ten copies of the name, so the crowd is split. (V1, V6, V13)  
+  CA `5EmvWDizkpjAXbcfCcVq69w1id8GaLzi4LLwtuSgpump`
 - 13:50Z OUROBOROS (MIGRATED, $42,990 mcap, $6,686 5m vol): REJECT, Top 10 hold 25.9% ex-pool (>25%) (V13)  
   CA `38EDdUxnJvrnDsJyB45E2W3pK26qLEjmWTvsEmMuG9ZR`
 - 13:49Z GEMIDIA (MIGRATED, $280,215 mcap, $32,852 5m vol): REJECT, RugCheck danger: Creator history of rugged tokens  
@@ -94,8 +96,6 @@ Updated 2026-11-25T13:53:49Z (paper trading, never real money)
   CA `87hFHbdBUCReA8youYc5KMcUeeqFzFMYPMRtqCFZoCCq`
 - 13:05Z OUROBOROS (MIGRATED, $34,605 mcap, $5,020 5m vol): PASS at conviction 2, PASS: flow below pace (0.6x), no catalyst, dead theme (0.07x across 16 copies). The "100% drawdown" is a bad data point, not a dip. (V1, V6)  
   CA `38EDdUxnJvrnDsJyB45E2W3pK26qLEjmWTvsEmMuG9ZR`
-- 13:02Z PFP (FINAL_STRETCH, $17,149 mcap, $50,965 5m vol): PASS at conviction 3, PASS — launch spike, 5m up 312% at 12x the hourly pace, 0.09h old, in a 27-copy PFP field with a bigger PFP above it. Chasing a fresh pump.fun candle (V1, V6, V13).  
-  CA `5PiugAAPsRxmatFE6uJ7jrtJ817TNKpypSa1JoZspump`
 
 ## What its skips did next (last 48h)
 A skip "ran" if the coin reached the first target (1.5x) from the skip price before a 20% drop, "dumped" if the drop came first. Sampled every 10 min, followed 6h.
@@ -120,21 +120,21 @@ A skip "ran" if the coin reached the first target (1.5x) from the skip price bef
     CA `AdXjXfumPSSKk7PrfgDHcAsPvuxnKv7Zo9WZEWKbiDkh`
   - ran: Phil up to 2.05x  
     CA `GMLSyjZCKGtFwztp2mtT8PDeNUA6WEk7oQoe3QkFpump`
-- flow below pace: blocked 29, ran 6, dumped 23, flat 0, open 0 (saving losses: keep it)
+- flow below pace: blocked 29, ran 6, dumped 22, flat 0, open 1 (saving losses: keep it)
   - ran: NVDA up to 1.52x  
     CA `37corVSMFFrqP3WK7AtMV6yFTGSvjFEB5fWnH1Bcpump`
   - ran: Doomcat up to 1.62x  
     CA `EiQ1JvEUZCXN5kQi2UdS4CdQapidqC7MCXd5sRTPpump`
   - ran: Jesus up to 1.64x  
     CA `Gy5BUDnpJMWRsNVKh9sRtsBGunFXKKrbroQRoydQpump`
-- too new / sniping: blocked 23, ran 3, dumped 18, flat 1, open 1 (saving losses: keep it)
+- too new / sniping: blocked 23, ran 3, dumped 19, flat 1, open 0 (saving losses: keep it)
   - ran: BABYANSEM up to 2.77x  
     CA `F3VctV9FqDgiyqaztN6z78bgWy27eH7DBBHW1vjpump`
   - ran: Merged up to 2.18x  
     CA `AMYpNGi5aGrKr1ZDsotUdWh7k1mMi569ygtaHJmErGEd`
   - ran: Boor up to 1.56x  
     CA `GHFpSSw2ZMjmKCyc1wrHUjJiqnJeP18mekY9GL1Xpump`
-- RugCheck danger: blocked 22, ran 5, dumped 16, flat 0, open 1 (saving losses: keep it)
+- RugCheck danger: blocked 22, ran 5, dumped 17, flat 0, open 0 (saving losses: keep it)
   - ran: JENSEN up to 1.7x  
     CA `CjPoozfB2Vub8pHFvdKuKUGJDLWuYC2U32yRTxMhpump`
   - ran: FUCK! up to 2.22x  
@@ -152,7 +152,7 @@ A skip "ran" if the coin reached the first target (1.5x) from the skip price bef
 - falling knife (code): blocked 12, ran 1, dumped 10, flat 1, open 0 (saving losses: keep it)
   - ran: Jimmies up to 1.53x  
     CA `GisWWjhwrSud4aFGSHvTMt85Ky14sY7LeBFCpfoFpump`
-- bundles over the line: blocked 11, ran 2, dumped 6, flat 2, open 1 (saving losses: keep it)
+- bundles over the line: blocked 11, ran 2, dumped 6, flat 3, open 0 (saving losses: keep it)
   - ran: jingyu up to 1.58x  
     CA `DUZrwdjEthcJ99ZiRXr31UuqTohoTg7VjTEyfGdBpump`
   - ran: DUMBMONEY up to 1.74x  
@@ -194,16 +194,16 @@ Nothing has a positive edge after costs. All 213 settled coins came out at -12.2
 - [2026-11-02 20:25] I expected Slingoor, a clean MIGRATED leader with $25k of 5m flow at pace and a 0.77 buy share, to retest its $408k high from $304k. It never went green (0.98x peak) and hit the -20% stop in 2 minutes, a -$2.86 probe. My own thesis admitted there was no printed higher low after a peak only 6 minutes old, so this confirms the money-shape rule: buy share and flow are not structure (V1, V6). Next time a MIGRATED pullback with no higher low above the hourly low is a PASS with blocker "no higher low", not a probe. This is one loss, so it adds no new ban beyond the rule I already have.
 
 ## Meta right now
-Not quiet. The movers are fresh pump.fun launches, mostly under a few hours old, with 5-minute buy ratios of 55-66% on the live rows. Rising: utility-sounding and product-style names (Pumpfun Pills/PFP, Allocator, Developer University, Pilotus) and cute characters (inu, bon, Pompompurin). Fading: the Ansem name (25% buys, down 21% in the hour), SWARM and Boor (down 93% and 89% with zero 5m volume), and the cat holdovers. The crawler's meta summary doesn't match its own rows: it puts Boor at $23k 5m and Pompompurin at $4k, while the rows show $0 for Boor and $761 (pumpswap) or $2.6k (pump.fun) for Pompompurin, so I'm trusting the rows. Setups to research, not buy: Developer University (DU, $9.4k mcap, $15k 5m, 66% buys, age under an hour) and Pilotus ($10k 5m, 63% buys); PFP only after I pick the original CA, since two tokens with the same name launching together is a vamp signature, and both PFP rows are up 300-900% in the hour, so the exit plan comes before any entry. Holder, dev and bundle checks decide each one.
+Not quiet. The movers are pump.fun-era launches, 0 to 3 hours old, and the themes repeating across them are launchpad/tooling names (KYM "Know Your Memepad", PFP "Pumpfun Pills", DU "Developer University") and cute characters (three separate Pompompurin CAs, plus bon). The rising action is fresh launches with 55-90% 5m buy ratios, led by Gemidia (+604% in 1h, 90% buys, 6 minutes old) and Ukrainu (+312% in 1h, 60% buys). DU and Pilotus are not setups: their rows show $0 and $3 of 5m volume, which contradicts the crawler's summary, and the Ansem, Boor and SWARM items aren't in these rows, so I'm ignoring them. Headlines about Trump's memecoin dinner are attention but not showing on the movers, so I won't trade them. Setups to research, not buy: Ukrainu ($11.8k mcap, $32.9k 5m, 60% buys, still on the bonding curve), KYM ($24.5k mcap, $26.5k 5m, 57% buys, pumpswap), and Pompompurin pumpswap ($293k mcap, $21.6k 5m, -10.8% 1h) as a dip candidate only after I confirm the original CA. Gemidia is too extended to chase. Exit plans come before any entry, and holder, dev and bundle checks decide each one.
 
 ## Moving most in its scans, last 30 min (1h volume)
+- Pompom: $454,292 1h vol, $293,491 mcap, -11% 1h  
+  CA `5EmvWDizkpjAXbcfCcVq69w1id8GaLzi4LLwtuSgpump`
+- Ukrainu: $99,981 1h vol, $11,775 mcap, +312% 1h  
+  CA `9Pe9Fj2BCWf1o5tWXvNYi6f8JTGr3qtq3JL66JRZpump`
 - OUROBOROS: $92,277 1h vol, $41,188 mcap, -7% 1h  
   CA `38EDdUxnJvrnDsJyB45E2W3pK26qLEjmWTvsEmMuG9ZR`
 - kol: $84,550 1h vol, $2,483 mcap, +0% 1h  
   CA `9EuxZ4oKk7axaXTbiJPk8RJ2Q9fBshH3UtuUWExQpump`
-- PFP: $78,240 1h vol, $3,450 mcap, -17% 1h  
-  CA `5PiugAAPsRxmatFE6uJ7jrtJ817TNKpypSa1JoZspump`
-- PFP: $56,056 1h vol, $1,690 mcap, -93% 1h  
-  CA `GV7iihnQgrRrZt1npPu774CPNiv6PJe8SMMHLsTjpump`
 - GEMIDIA: $54,495 1h vol, $307,305 mcap, +604% 1h  
   CA `3wrZTXRbMk3pCXmmNDWqkaowSsxGzhTnmhPTSXYApump`
