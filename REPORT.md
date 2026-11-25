@@ -1,13 +1,13 @@
 # Trencher live report
 
-Updated 2026-11-25T06:19:34Z (paper trading, never real money)
+Updated 2026-11-25T06:34:47Z (paper trading, never real money)
 
 - Equity: $74.23 (-25.8% vs $100 start)
 - Closed trades: 22, 3 wins
 - Fees paid: $14.78 (axiom $2.81, network $9.18, pool $2.66), plus $4.15 lost to slippage
 - New trades: WATCH-ONLY (scans and decides, buys nothing)
-- Brain: subscription, claude-haiku-5-5 for routine calls, claude-opus-5-5 for the daily review; 481 routine calls and 0 plan-limit hits in 48h
-- Watch log: 68 coins being followed, 3480 filed, 0 would-buys (6h follow, sampled every 2 min)
+- Brain: subscription, claude-haiku-5-5 for routine calls, claude-opus-5-5 for the daily review; 479 routine calls and 0 plan-limit hits in 48h
+- Watch log: 68 coins being followed, 3483 filed, 0 would-buys (6h follow, sampled every 2 min)
 
 ## Scorecard (after fees)
 - 22 closed, 3 won (14%), net $-25.79
@@ -73,9 +73,15 @@ Updated 2026-11-25T06:19:34Z (paper trading, never real money)
   CA `H4gHnZ3NCU7Z9XQwGX6YYJNyieGEW8pqwGRUcdSxpump`
 
 ## Last scan
-- 06:19Z: 4 coins, 4 with pairs, 0 passed the market filters, 0 researched
+- 06:34Z: 2 coins, 2 with pairs, 0 passed the market filters, 0 researched
 
 ## Coins it looked at, and why it passed
+- 06:27Z FUCKCANCER (DIP, $56,452 mcap, $3,428 5m vol): REJECT, Dip with fading attention is a falling knife, not a dip (5m at 0.33x the hour's pace, under 0.6x)  
+  CA `4UMErmfmKzDCVmHrwBUbnDnbQnVKVYAcT7X5AdTkpump`
+- 06:27Z Memeployed (MIGRATED, $75,400 mcap, $2,170 5m vol): PASS at conviction 3, PASS: 75% off the high, no higher low, 16-copy vamp field, no catalyst (V1, V3, V6).  
+  CA `4m2PS6yW2xDk5V9nJgPjnus1eguwCDSWXbA2YQeVkqxn`
+- 06:21Z HOGE (DIP, $649,028 mcap, $2,052 5m vol): REJECT, Bundles: 9 linked wallet cluster(s) hold 27.9% of supply (>20%) (V17)  
+  CA `FVzqGqRmr4UH1Fif6dewmwbJ1p4YUZCu8dcw4Efopump`
 - 06:18Z BASKET (MIGRATED, $416,681 mcap, $39,240 5m vol): PASS at conviction 2, PASS — at the high (6% off, chasing), 16 copies of the ticker, largest bundle 5.1% and no catalyst. Blocker: chasing. (V1, V3, V6, V13)  
   CA `3Tg6YnNrfPdFfsY14MaNsDMWLseAyrUDS3myJtbaJN6f`
 - 06:10Z CBUCKS (MIGRATED, $5,165,858 mcap, $2,116 5m vol): REJECT, Top 10 hold 25.9% ex-pool (>25%) (V13)  
@@ -90,12 +96,6 @@ Updated 2026-11-25T06:19:34Z (paper trading, never real money)
   CA `3Tg6YnNrfPdFfsY14MaNsDMWLseAyrUDS3myJtbaJN6f`
 - 05:24Z CBUCKS (MIGRATED, $5,460,152 mcap, $5,344 5m vol): REJECT, Top 10 hold 25.9% ex-pool (>25%) (V13)  
   CA `DtcicPCKTKeAh7TDEzTym3hXeoHAoMiBdYJhMYxZpump`
-- 05:23Z YUMA (DIP, $89,294 mcap, $15,896 5m vol): PASS at conviction 3, PASS: YUMA is a 55% dip with no catalyst, no printed higher low above the bounce high, and entry would sit mid-range. Blocker: no catalyst (bottom-buy rule). (V1, V6)  
-  CA `CkwFsrupdFHzo5kYk8b5W47CVx1v5ymzeu6BBoDjpump`
-- 05:19Z Memeployed (DIP, $92,269 mcap, $3,257 5m vol): PASS at conviction 3, PASS: bottom buy with no catalyst, price 22% above its higher low, and a 4.3% bundle cluster in a 16-copy field. Blocker: no catalyst (V1, V6, V13).  
-  CA `4m2PS6yW2xDk5V9nJgPjnus1eguwCDSWXbA2YQeVkqxn`
-- 04:57Z jingyu (MIGRATED, $89,274 mcap, $2,344 5m vol): REJECT, Bundles: 1 linked wallet cluster(s) hold 100.0% of supply (>20%) (V17)  
-  CA `DUZrwdjEthcJ99ZiRXr31UuqTohoTg7VjTEyfGdBpump`
 
 ## What its skips did next (last 48h)
 A skip "ran" if the coin reached the first target (1.5x) from the skip price before a 20% drop, "dumped" if the drop came first. Sampled every 10 min, followed 6h.
@@ -120,14 +120,14 @@ A skip "ran" if the coin reached the first target (1.5x) from the skip price bef
     CA `37corVSMFFrqP3WK7AtMV6yFTGSvjFEB5fWnH1Bcpump`
   - ran: Doomcat up to 1.62x  
     CA `EiQ1JvEUZCXN5kQi2UdS4CdQapidqC7MCXd5sRTPpump`
-- near the high / chasing: blocked 28, ran 7, dumped 19, flat 1, open 1 (saving losses: keep it)
+- near the high / chasing: blocked 29, ran 7, dumped 20, flat 1, open 1 (saving losses: keep it)
   - ran: Bertcoin up to 1.8x  
     CA `xEK58Qa2xZ7C36Z2g3Jjq1WHY561CvvnJkLpgJspump`
   - ran: WOFL up to 2.62x  
     CA `AdXjXfumPSSKk7PrfgDHcAsPvuxnKv7Zo9WZEWKbiDkh`
   - ran: Phil up to 2.05x  
     CA `GMLSyjZCKGtFwztp2mtT8PDeNUA6WEk7oQoe3QkFpump`
-- too new / sniping: blocked 28, ran 4, dumped 23, flat 1, open 0 (saving losses: keep it)
+- too new / sniping: blocked 27, ran 4, dumped 22, flat 1, open 0 (saving losses: keep it)
   - ran: Loaf up to 2.13x  
     CA `8Ugc1FHaeK6iXQrnUpztxhhNHqucFwaqC35A4Kjjpump`
   - ran: AGI up to 1.53x  
@@ -201,9 +201,9 @@ The meta on the tape right now is fresh launches with real buyers, not jokes. Ba
   CA `3Tg6YnNrfPdFfsY14MaNsDMWLseAyrUDS3myJtbaJN6f`
 - YUMA: $176,590 1h vol, $72,254 mcap, -2% 1h  
   CA `CkwFsrupdFHzo5kYk8b5W47CVx1v5ymzeu6BBoDjpump`
-- Reddit: $50,871 1h vol, $3,221 mcap, -17% 1h  
-  CA `6MsaWYaAQ3vPKpQMi9ptiX4yhLv1EEt7NYcX5DH6pump`
+- FUCKCANCER: $120,903 1h vol, $53,596 mcap, -37% 1h  
+  CA `4UMErmfmKzDCVmHrwBUbnDnbQnVKVYAcT7X5AdTkpump`
 - CBUCKS: $45,299 1h vol, $5,165,858 mcap, -1% 1h  
   CA `DtcicPCKTKeAh7TDEzTym3hXeoHAoMiBdYJhMYxZpump`
-- 404GIRL: $35,914 1h vol, $9,052 mcap, -68% 1h  
-  CA `7wohLebdTHjfCjP6PTVM3HJwMNed4vEL1ZyTawtupump`
+- WASTED: $25,366 1h vol, $1,388,805 mcap, +32% 1h  
+  CA `GexThZHgaswpAQ7Fi8QrHFubjPimUNSYhJiAA7XZpump`
