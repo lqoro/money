@@ -1,13 +1,13 @@
 # Trencher live report
 
-Updated 2026-11-25T16:10:00Z (paper trading, never real money)
+Updated 2026-11-25T16:25:09Z (paper trading, never real money)
 
 - Equity: $74.23 (-25.8% vs $100 start)
 - Closed trades: 22, 3 wins
 - Fees paid: $14.78 (axiom $2.81, network $9.18, pool $2.66), plus $4.15 lost to slippage
 - New trades: WATCH-ONLY (scans and decides, buys nothing)
-- Brain: subscription, claude-haiku-5-5 for routine calls, claude-opus-5-5 for the daily review; 412 routine calls and 0 plan-limit hits in 48h
-- Watch log: 42 coins being followed, 3576 filed, 0 would-buys (6h follow, sampled every 2 min)
+- Brain: subscription, claude-haiku-5-5 for routine calls, claude-opus-5-5 for the daily review; 414 routine calls and 0 plan-limit hits in 48h
+- Watch log: 44 coins being followed, 3578 filed, 0 would-buys (6h follow, sampled every 2 min)
 
 ## Scorecard (after fees)
 - 22 closed, 3 won (14%), net $-25.79
@@ -73,9 +73,17 @@ Updated 2026-11-25T16:10:00Z (paper trading, never real money)
   CA `H4gHnZ3NCU7Z9XQwGX6YYJNyieGEW8pqwGRUcdSxpump`
 
 ## Last scan
-- 16:09Z: 6 coins, 4 with pairs, 1 passed the market filters, 1 researched
+- 16:24Z: 6 coins, 4 with pairs, 0 passed the market filters, 0 researched
 
 ## Coins it looked at, and why it passed
+- 16:18Z IPO (FINAL_STRETCH, $16,894 mcap, $5,493 5m vol): PASS at conviction 3, PASS — 29 copies of "ipo", top 10 at 23.1%, and a saw-tooth chart after a +749% day with no catalyst. Not a buy. (V1, V6, V13)  
+  CA `EYiXPL3LTuXEMb7KjhP6eTETPehJGhhU5H7ZYmWsSipo`
+- 16:15Z Pompom (MIGRATED, $316,777 mcap, $19,839 5m vol): PASS at conviction 3, PASS: Pompompurin is a 38%-off MIGRATED dip with 5m flow at 0.8x pace, no printed higher low and no outside catalyst. Blocker: "flow below pace". (V1, V6)  
+  CA `5EmvWDizkpjAXbcfCcVq69w1id8GaLzi4LLwtuSgpump`
+- 16:12Z BIAO (MIGRATED, $190,486 mcap, $2,404 5m vol): PASS at conviction 3, PASS: flow below pace. 5m volume is $2.4k at 0.3x its hourly average, the biao theme runs at 0.03x, and no higher low has printed. The site still says "CA coming soon" on a 2-hour-old domain, in a 16-copy field. (V1, V3, V6, V13)  
+  CA `As3XtYSstuVdrVyb6sJZZ77Tu8JvjTBg6S6hgPv4pump`
+- 16:10Z DESSA (MIGRATED, $757,453 mcap, $4,778 5m vol): PASS at conviction 3, PASS. DESSA is a dead-flow meme with no printed higher low, and the 5m is under the pace gate. Blocker: "flow below pace" (V1, V6).  
+  CA `npz2FhoufQ7pKqhGpaipYWacrAkidyW2yDpVWSvpump`
 - 16:09Z LEMON (DIP, $169,322 mcap, $21,782 5m vol): REJECT, Dip with fading attention is a falling knife, not a dip (5m at 0.31x the hour's pace, under 0.6x)  
   CA `CuQUeUa6YbSSK52PTaL8eok8c1hrG6qyuyJyovmapump`
 - 15:35Z McCat (FINAL_STRETCH, $19,127 mcap, $20,722 5m vol): REJECT, Top 10 hold 40.0% ex-pool (>25%) (V13)  
@@ -88,14 +96,6 @@ Updated 2026-11-25T16:10:00Z (paper trading, never real money)
   CA `CcpN5RXTEjbRqbtuHoxyiMZorzsghbfpeyYQjSvTgS27`
 - 15:04Z DESSA (MIGRATED, $877,280 mcap, $2,259 5m vol): PASS at conviction 2, PASS: 5m flow is 0.16x its hourly pace and the story is one word with no GitHub behind its AI claim. Blocker: "flow below pace" (V1, V6).  
   CA `npz2FhoufQ7pKqhGpaipYWacrAkidyW2yDpVWSvpump`
-- 14:53Z CursedBob (FINAL_STRETCH, $19,685 mcap, $4,748 5m vol): REJECT, Top 10 hold 26.2% ex-pool (>25%) (V13)  
-  CA `F6zdY2XVfVtBvVaWh6CQ4q4DM6vMtkWsH1wW8qv9pump`
-- 14:47Z CBUCKS (MIGRATED, $4,641,265 mcap, $1,864 5m vol): REJECT, 5m volume $1,864 is dead (<$2,000) (V1)  
-  CA `DtcicPCKTKeAh7TDEzTym3hXeoHAoMiBdYJhMYxZpump`
-- 14:47Z Pompom (DIP, $232,047 mcap, $14,358 5m vol): PASS at conviction 3, PASS: bottom buy with no catalyst, 50/50 flow, and no proof this is the original CA. Let it prove itself (V1, V6, V13).  
-  CA `5EmvWDizkpjAXbcfCcVq69w1id8GaLzi4LLwtuSgpump`
-- 14:47Z FRANK (MIGRATED, $60,062 mcap, $41,936 5m vol): REJECT, LP only 0% burned/locked (V2, V3, V6)  
-  CA `GbJCuSXQYRXYf8yxVV16yo4PBQ4H3FsT29fqkTSBpump`
 
 ## What its skips did next (last 48h)
 A skip "ran" if the coin reached the first target (1.5x) from the skip price before a 20% drop, "dumped" if the drop came first. Sampled every 10 min, followed 6h.
@@ -120,7 +120,7 @@ A skip "ran" if the coin reached the first target (1.5x) from the skip price bef
     CA `AdXjXfumPSSKk7PrfgDHcAsPvuxnKv7Zo9WZEWKbiDkh`
   - ran: Phil up to 2.05x  
     CA `GMLSyjZCKGtFwztp2mtT8PDeNUA6WEk7oQoe3QkFpump`
-- flow below pace: blocked 25, ran 6, dumped 19, flat 0, open 0 (saving losses: keep it)
+- flow below pace: blocked 27, ran 6, dumped 18, flat 0, open 3 (saving losses: keep it)
   - ran: NVDA up to 1.52x  
     CA `37corVSMFFrqP3WK7AtMV6yFTGSvjFEB5fWnH1Bcpump`
   - ran: Doomcat up to 1.62x  
@@ -134,19 +134,19 @@ A skip "ran" if the coin reached the first target (1.5x) from the skip price bef
     CA `9Gu5JYt4Pas6cW4S6qtyFkDucFj6GMtpJiDC9sQbpump`
   - ran: TIMOTHY up to 2.14x  
     CA `AWg6LmGPfqjEqAU8N8wR8mYTbwmkwqMUqzrmggbgpump`
-- too new / sniping: blocked 21, ran 3, dumped 17, flat 1, open 0 (saving losses: keep it)
+- too new / sniping: blocked 20, ran 3, dumped 16, flat 1, open 0 (saving losses: keep it)
   - ran: BABYANSEM up to 2.77x  
     CA `F3VctV9FqDgiyqaztN6z78bgWy27eH7DBBHW1vjpump`
   - ran: Merged up to 2.18x  
     CA `AMYpNGi5aGrKr1ZDsotUdWh7k1mMi569ygtaHJmErGEd`
   - ran: Boor up to 1.56x  
     CA `GHFpSSw2ZMjmKCyc1wrHUjJiqnJeP18mekY9GL1Xpump`
-- dev share over 1%: blocked 13, ran 2, dumped 11, flat 0, open 0 (saving losses: keep it)
+- dev share over 1%: blocked 12, ran 2, dumped 10, flat 0, open 0 (saving losses: keep it)
   - ran: BLOOM up to 2.09x  
     CA `FyRXnHLBSeHHoigrgHR1hvcXiPbPCa5bxhVhEDampump`
   - ran: PI up to 1.77x  
     CA `D2AK5DvBj8AxN5VX1t6bjv7muJVPUx4hFPowVRWYpump`
-- falling knife (code): blocked 12, ran 1, dumped 9, flat 1, open 1 (saving losses: keep it)
+- falling knife (code): blocked 12, ran 1, dumped 10, flat 1, open 0 (saving losses: keep it)
   - ran: Jimmies up to 1.53x  
     CA `GisWWjhwrSud4aFGSHvTMt85Ky14sY7LeBFCpfoFpump`
 - thin 5m volume: blocked 11, ran 1, dumped 7, flat 1, open 2 (saving losses: keep it)
@@ -199,11 +199,11 @@ Meta from scan_movers is cartoon and character coins plus cute animal and food m
 ## Moving most in its scans, last 30 min (1h volume)
 - LEMON: $848,065 1h vol, $138,786 mcap, +28% 1h  
   CA `CuQUeUa6YbSSK52PTaL8eok8c1hrG6qyuyJyovmapump`
-- BIAO: $577,150 1h vol, $208,007 mcap, +450% 1h  
-  CA `As3XtYSstuVdrVyb6sJZZ77Tu8JvjTBg6S6hgPv4pump`
-- Pompom: $297,229 1h vol, $348,795 mcap, +35% 1h  
+- Pompom: $297,907 1h vol, $316,777 mcap, +1% 1h  
   CA `5EmvWDizkpjAXbcfCcVq69w1id8GaLzi4LLwtuSgpump`
-- DESSA: $78,762 1h vol, $715,878 mcap, -15% 1h  
+- BIAO: $97,183 1h vol, $190,486 mcap, -14% 1h  
+  CA `As3XtYSstuVdrVyb6sJZZ77Tu8JvjTBg6S6hgPv4pump`
+- DESSA: $87,997 1h vol, $757,453 mcap, +0% 1h  
   CA `npz2FhoufQ7pKqhGpaipYWacrAkidyW2yDpVWSvpump`
-- MONEYGO: $61,320 1h vol, $1,271 mcap, -99% 1h  
-  CA `5Go8ByHzd9vvdBHhqFnxxgU2SRDfTv5XXMLjBnvrpump`
+- IPO: $68,691 1h vol, $17,967 mcap, +83% 1h  
+  CA `EYiXPL3LTuXEMb7KjhP6eTETPehJGhhU5H7ZYmWsSipo`
