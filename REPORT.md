@@ -1,13 +1,13 @@
 # Trencher live report
 
-Updated 2026-11-25T07:04:51Z (paper trading, never real money)
+Updated 2026-11-25T07:19:58Z (paper trading, never real money)
 
 - Equity: $74.23 (-25.8% vs $100 start)
 - Closed trades: 22, 3 wins
 - Fees paid: $14.78 (axiom $2.81, network $9.18, pool $2.66), plus $4.15 lost to slippage
 - New trades: WATCH-ONLY (scans and decides, buys nothing)
 - Brain: subscription, claude-haiku-5-5 for routine calls, claude-opus-5-5 for the daily review; 475 routine calls and 0 plan-limit hits in 48h
-- Watch log: 61 coins being followed, 3493 filed, 0 would-buys (6h follow, sampled every 2 min)
+- Watch log: 59 coins being followed, 3496 filed, 0 would-buys (6h follow, sampled every 2 min)
 
 ## Scorecard (after fees)
 - 22 closed, 3 won (14%), net $-25.79
@@ -73,9 +73,11 @@ Updated 2026-11-25T07:04:51Z (paper trading, never real money)
   CA `H4gHnZ3NCU7Z9XQwGX6YYJNyieGEW8pqwGRUcdSxpump`
 
 ## Last scan
-- 07:04Z: 3 coins, 3 with pairs, 0 passed the market filters, 0 researched
+- 07:19Z: 3 coins, 3 with pairs, 0 passed the market filters, 0 researched
 
 ## Coins it looked at, and why it passed
+- 07:11Z Merged (FINAL_STRETCH, $14,662 mcap, $5,072 5m vol): PASS at conviction 2, PASS — Merged is 29 minutes old, still on the pump.fun curve, down 23.5% off a 19k peak after a 628% hour, with its 15m candles halving. Too new and no catalyst. Blockers: "too new", "no catalyst", "theme pace 0.51x". Also the site's GitHub is someone else's repo and the domain is 0.1 days old (V1,   
+  CA `AMYpNGi5aGrKr1ZDsotUdWh7k1mMi569ygtaHJmErGEd`
 - 07:03Z BASKET (MIGRATED, $605,495 mcap, $21,518 5m vol): PASS at conviction 3, PASS: flow below pace, no breakout, bottom-buy narrative gate fails. BASKET is the original of a 13-copy field that's cooling. (V1, V6, V13)  
   CA `3Tg6YnNrfPdFfsY14MaNsDMWLseAyrUDS3myJtbaJN6f`
 - 06:54Z YUMA (MIGRATED, $52,408 mcap, $16,342 5m vol): PASS at conviction 2, PASS: no printed higher low, down 74% from peak with a saw-tooth 15m chart and a -28% 5m candle. Blocker "no higher low." Falling knife, not a pullback. (V1, V6)  
@@ -94,8 +96,6 @@ Updated 2026-11-25T07:04:51Z (paper trading, never real money)
   CA `DtcicPCKTKeAh7TDEzTym3hXeoHAoMiBdYJhMYxZpump`
 - 06:08Z YUMA (DIP, $75,218 mcap, $12,560 5m vol): PASS at conviction 2, PASS: dead story, no catalyst, and no printed higher low within reach. The dip is real, the flow is only fair. (V1, V6, V13)  
   CA `CkwFsrupdFHzo5kYk8b5W47CVx1v5ymzeu6BBoDjpump`
-- 05:48Z WASTED (MIGRATED, $1,190,988 mcap, $2,656 5m vol): REJECT, Dev holds 1.1% (>1%) (V13, V17)  
-  CA `GexThZHgaswpAQ7Fi8QrHFubjPimUNSYhJiAA7XZpump`
 
 ## What its skips did next (last 48h)
 A skip "ran" if the coin reached the first target (1.5x) from the skip price before a 20% drop, "dumped" if the drop came first. Sampled every 10 min, followed 6h.
@@ -120,6 +120,13 @@ A skip "ran" if the coin reached the first target (1.5x) from the skip price bef
     CA `37corVSMFFrqP3WK7AtMV6yFTGSvjFEB5fWnH1Bcpump`
   - ran: Doomcat up to 1.62x  
     CA `EiQ1JvEUZCXN5kQi2UdS4CdQapidqC7MCXd5sRTPpump`
+- too new / sniping: blocked 28, ran 4, dumped 22, flat 1, open 1 (saving losses: keep it)
+  - ran: Loaf up to 2.13x  
+    CA `8Ugc1FHaeK6iXQrnUpztxhhNHqucFwaqC35A4Kjjpump`
+  - ran: AGI up to 1.53x  
+    CA `7kctwFbSdLfpi6RuN9cjpVpYVHKPUr8PtG1meH35AEky`
+  - ran: TREMP up to 1.7x  
+    CA `CuNLbjjFcmumcKF1AnUkPU4dcjykJR73M8hzJB5Cpump`
 - near the high / chasing: blocked 27, ran 7, dumped 19, flat 1, open 0 (saving losses: keep it)
   - ran: Bertcoin up to 1.8x  
     CA `xEK58Qa2xZ7C36Z2g3Jjq1WHY561CvvnJkLpgJspump`
@@ -127,13 +134,6 @@ A skip "ran" if the coin reached the first target (1.5x) from the skip price bef
     CA `AdXjXfumPSSKk7PrfgDHcAsPvuxnKv7Zo9WZEWKbiDkh`
   - ran: Phil up to 2.05x  
     CA `GMLSyjZCKGtFwztp2mtT8PDeNUA6WEk7oQoe3QkFpump`
-- too new / sniping: blocked 27, ran 4, dumped 22, flat 1, open 0 (saving losses: keep it)
-  - ran: Loaf up to 2.13x  
-    CA `8Ugc1FHaeK6iXQrnUpztxhhNHqucFwaqC35A4Kjjpump`
-  - ran: AGI up to 1.53x  
-    CA `7kctwFbSdLfpi6RuN9cjpVpYVHKPUr8PtG1meH35AEky`
-  - ran: TREMP up to 1.7x  
-    CA `CuNLbjjFcmumcKF1AnUkPU4dcjykJR73M8hzJB5Cpump`
 - RugCheck danger: blocked 23, ran 6, dumped 17, flat 0, open 0 (saving losses: keep it)
   - ran: Holdsgiving up to 2.96x  
     CA `A2jLaCC7v3VjXP8gEgCQNbTWEvizYuQ82jFEYfzipump`
@@ -149,14 +149,12 @@ A skip "ran" if the coin reached the first target (1.5x) from the skip price bef
 - thin 5m volume: blocked 13, ran 1, dumped 9, flat 3, open 0 (saving losses: keep it)
   - ran: NINO up to 1.55x  
     CA `BqekG1RSPUthaKfStu7Uvyvr1eR6TchrQMp1M5r5pump`
-- bundles over the line: blocked 12, ran 2, dumped 6, flat 2, open 2 (saving losses: keep it)
+- bundles over the line: blocked 12, ran 2, dumped 6, flat 3, open 1 (saving losses: keep it)
   - ran: RNV up to 2.35x  
     CA `A2nbXtQvvRMvWtifCkV8cYepwcC4M7iA1jVMwAh6pump`
   - ran: DUMBMONEY up to 1.74x  
     CA `GEHehS5Rr4rNCjvrHLjjV1avD4bjMsn53ywDGv1spump`
-- other: blocked 10, ran 1, dumped 9, flat 0, open 0 (saving losses: keep it)
-  - ran: task up to 1.61x  
-    CA `BJeEE9WCP1HZqT1D3heD9Do96D4dnEcNoDHspvQapump`
+- falling knife (code): blocked 9, ran 0, dumped 7, flat 1, open 1 (saving losses: keep it)
 
 ## Daily review (2026-11-23, claude-opus-5-5)
 Nothing has a positive after-cost edge yet. All 229 settled coins average -8.7% net on the simple plan. Before costs they average about +0.9%, so the 9.6% average round-trip cost on a $10 buy accounts for the whole loss. That is the same story as the 22 paper trades, where fees and slippage were $18.83 of the $25.79 lost. The best setup is FINAL_STRETCH: n=39, 35.9% hit 1.5x, -4.9% net. With a 1.5x target, a -20% stop and about 10% costs, a setup needs roughly 43% hitting the target to break even. At n=39 the hit rate's 95% range is about 21–51%, so this sample can't separate it from MIGRATED, from coin-flip noise or from breakeven. I can't say whether the routine model's would-buys beat its passes, because it made zero would-buys in 24h. The coins it passed on (n=157, -8.4%) did slightly better than the coins the checklist failed (n=70, -9.8%), but both lost money. Passing everything was the right call on average. One process note: the watch-only review was set for about Nov 10 and today is Nov 23, so the owner should decide whether this is still the plan.
@@ -201,9 +199,9 @@ The trenches are thin right now, and the flow is concentrated in two coins, not 
   CA `3Tg6YnNrfPdFfsY14MaNsDMWLseAyrUDS3myJtbaJN6f`
 - YUMA: $137,788 1h vol, $52,408 mcap, -24% 1h  
   CA `CkwFsrupdFHzo5kYk8b5W47CVx1v5ymzeu6BBoDjpump`
-- Merged: $58,746 1h vol, $12,195 mcap, +505% 1h  
+- Jimmies: $97,699 1h vol, $1,171,537 mcap, -10% 1h  
+  CA `GisWWjhwrSud4aFGSHvTMt85Ky14sY7LeBFCpfoFpump`
+- Merged: $72,698 1h vol, $14,753 mcap, +632% 1h  
   CA `AMYpNGi5aGrKr1ZDsotUdWh7k1mMi569ygtaHJmErGEd`
-- N3ON: $43,521 1h vol, $11,430 mcap, +363% 1h  
+- N3ON: $53,572 1h vol, $2,076 mcap, -16% 1h  
   CA `8HBAgQbwNucWbRyFHn7Y1DB8Y348WAsPWDJTT7JRpump`
-- WASTED: $34,560 1h vol, $1,267,782 mcap, +15% 1h  
-  CA `GexThZHgaswpAQ7Fi8QrHFubjPimUNSYhJiAA7XZpump`
