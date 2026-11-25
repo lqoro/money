@@ -1,13 +1,13 @@
 # Trencher live report
 
-Updated 2026-11-25T19:42:16Z (paper trading, never real money)
+Updated 2026-11-25T19:57:19Z (paper trading, never real money)
 
 - Equity: $74.23 (-25.8% vs $100 start)
 - Closed trades: 22, 3 wins
 - Fees paid: $14.78 (axiom $2.81, network $9.18, pool $2.66), plus $4.15 lost to slippage
 - New trades: WATCH-ONLY (scans and decides, buys nothing)
 - Brain: subscription, claude-haiku-5-5 for routine calls, claude-opus-5-5 for the daily review; 399 routine calls and 0 plan-limit hits in 48h
-- Watch log: 74 coins being followed, 3598 filed, 0 would-buys (6h follow, sampled every 2 min)
+- Watch log: 75 coins being followed, 3601 filed, 0 would-buys (6h follow, sampled every 2 min)
 
 ## Scorecard (after fees)
 - 22 closed, 3 won (14%), net $-25.79
@@ -73,9 +73,17 @@ Updated 2026-11-25T19:42:16Z (paper trading, never real money)
   CA `H4gHnZ3NCU7Z9XQwGX6YYJNyieGEW8pqwGRUcdSxpump`
 
 ## Last scan
-- 19:41Z: 3 coins, 3 with pairs, 0 passed the market filters, 0 researched
+- 19:56Z: 2 coins, 2 with pairs, 0 passed the market filters, 0 researched
 
 ## Coins it looked at, and why it passed
+- 19:49Z Investor (MIGRATED, $43,754 mcap, $5,294 5m vol): PASS at conviction 2, PASS — chasing spike. 5m is up 78% in one candle, and this ticker has 30 copies with no catalyst on the radar. Blockers: "chasing spike" and "no catalyst" for a bottom buy. (V1, V6, V13)  
+  CA `J9eBkCb4UtquAMQqB6duwBmR99fFSMoTnDcaMB9Wpump`
+- 19:46Z CRIME (MIGRATED, $77,514 mcap, $43,013 5m vol): REJECT, Bundles: 4 linked wallet cluster(s) hold 77.4% of supply (>20%) (V17)  
+  CA `8xaGdRnMnMaWYc2CMsDMDvDYGEegkrxpzhipSna7pump`
+- 19:45Z ATX (MIGRATED, $1,860,476,091 mcap, $17,478 5m vol): PASS at conviction 3, PASS: ATX is at its own high ($1.86B) with no printed higher low, no room to a first resistance, and no catalyst. Blockers: "chasing", "big cap, no room", "no catalyst". (V1, V6)  
+  CA `Ya9PEJA9UZmbT5aim46TA6cPCkTNfsqEn1aEVrnpump`
+- 19:42Z FIONA (MIGRATED, $2,608,734 mcap, $3,250 5m vol): REJECT, Bundles: 10 linked wallet cluster(s) hold 29.6% of supply (>20%) (V17)  
+  CA `B34nXKzCgsJb9ChLuSHPRpXLE3WFSWyeT8Cqkzzmpump`
 - 19:38Z AI (MIGRATED, $651,590 mcap, $100,131 5m vol): REJECT, Top 10 hold 44.1% ex-pool (>25%) (V13)  
   CA `8F9LwX8HWHnrad1rEXagpW5xrZZJ16RjSJ1HYPb6pump`
 - 19:34Z COIN (FINAL_STRETCH, $16,647 mcap, $39,941 5m vol): PASS at conviction 2, PASS: chasing a 2-minute-old spike with no printed structure, and the site sells a launch-pairing scheme, not a token. Blocker: "chasing spike" plus "too new". (V1, V6)  
@@ -88,18 +96,10 @@ Updated 2026-11-25T19:42:16Z (paper trading, never real money)
   CA `9yAXzLrFQvHJYZt3ndL4kdcgNkrQuPguRgs45PbqezaM`
 - 19:18Z PPK (MIGRATED, $466,869 mcap, $112,601 5m vol): REJECT, Top 10 hold 44.7% ex-pool (>25%) (V13)  
   CA `59efB6GMHMbsA4Z4GSZkYkmqjSHePn9xi1iRNzeepump`
-- 19:16Z POMPD (FINAL_STRETCH, $15,718 mcap, $2,351 5m vol): PASS at conviction 2, PASS: POMPD flow is 0.28x its hourly pace, the 5m just spiked +35% off a $3k low, and there's no narrative behind it. Blocker "flow below pace" (V1, V6).  
-  CA `A4ScEozJhNUqSypR1v39PGWerUzTRK5RKJtjZN3epump`
-- 19:16Z Pompom (MIGRATED, $473,999 mcap, $37,632 5m vol): PASS at conviction 3, PASS: chasing spike, sell-heavy flow, no catalyst on a 34%-off bottom buy. Pompom is one of 7 copies. (V1, V6, V13)  
-  CA `5EmvWDizkpjAXbcfCcVq69w1id8GaLzi4LLwtuSgpump`
-- 19:12Z WASTED (DIP, $971,089 mcap, $2,454 5m vol): REJECT, Dev holds 1.1% (>1%) (V13, V17)  
-  CA `GexThZHgaswpAQ7Fi8QrHFubjPimUNSYhJiAA7XZpump`
-- 19:09Z CBUCKS (MIGRATED, $5,318,406 mcap, $2,049 5m vol): REJECT, Top 10 hold 25.8% ex-pool (>25%) (V13)  
-  CA `DtcicPCKTKeAh7TDEzTym3hXeoHAoMiBdYJhMYxZpump`
 
 ## What its skips did next (last 48h)
 A skip "ran" if the coin reached the first target (1.5x) from the skip price before a 20% drop, "dumped" if the drop came first. Sampled every 10 min, followed 6h.
-- top 10 over 25%: blocked 45, ran 7, dumped 36, flat 1, open 1 (saving losses: keep it)
+- top 10 over 25%: blocked 44, ran 7, dumped 35, flat 1, open 1 (saving losses: keep it)
   - ran: JENSEN up to 2.62x  
     CA `GaNJeASYBM9k3TvEeUC2Pdyu1TjcpzTmPpoom92fpump`
   - ran: GOAT up to 1.53x  
@@ -120,6 +120,13 @@ A skip "ran" if the coin reached the first target (1.5x) from the skip price bef
     CA `Gy5BUDnpJMWRsNVKh9sRtsBGunFXKKrbroQRoydQpump`
   - ran: GROKIA up to 1.51x  
     CA `3cL47ohWa2HApLYKtqPsqkjaxJ6HLvT5Ri1KvWdXpump`
+- near the high / chasing: blocked 27, ran 9, dumped 15, flat 0, open 3 (mixed)
+  - ran: Bertcoin up to 1.8x  
+    CA `xEK58Qa2xZ7C36Z2g3Jjq1WHY561CvvnJkLpgJspump`
+  - ran: WOFL up to 2.62x  
+    CA `AdXjXfumPSSKk7PrfgDHcAsPvuxnKv7Zo9WZEWKbiDkh`
+  - ran: Phil up to 2.05x  
+    CA `GMLSyjZCKGtFwztp2mtT8PDeNUA6WEk7oQoe3QkFpump`
 - RugCheck danger: blocked 27, ran 4, dumped 23, flat 0, open 0 (saving losses: keep it)
   - ran: FOMOMAS up to 1.71x  
     CA `9Gu5JYt4Pas6cW4S6qtyFkDucFj6GMtpJiDC9sQbpump`
@@ -127,14 +134,7 @@ A skip "ran" if the coin reached the first target (1.5x) from the skip price bef
     CA `AWg6LmGPfqjEqAU8N8wR8mYTbwmkwqMUqzrmggbgpump`
   - ran: TROLL up to 1.94x  
     CA `7ykeHoEnjnGkY6tqteXn47fdGtd7kfXWghiyZ7YKpump`
-- near the high / chasing: blocked 25, ran 9, dumped 15, flat 0, open 1 (mixed)
-  - ran: Bertcoin up to 1.8x  
-    CA `xEK58Qa2xZ7C36Z2g3Jjq1WHY561CvvnJkLpgJspump`
-  - ran: WOFL up to 2.62x  
-    CA `AdXjXfumPSSKk7PrfgDHcAsPvuxnKv7Zo9WZEWKbiDkh`
-  - ran: Phil up to 2.05x  
-    CA `GMLSyjZCKGtFwztp2mtT8PDeNUA6WEk7oQoe3QkFpump`
-- too new / sniping: blocked 25, ran 4, dumped 20, flat 1, open 0 (saving losses: keep it)
+- too new / sniping: blocked 23, ran 4, dumped 18, flat 1, open 0 (saving losses: keep it)
   - ran: BABYANSEM up to 2.77x  
     CA `F3VctV9FqDgiyqaztN6z78bgWy27eH7DBBHW1vjpump`
   - ran: Merged up to 2.18x  
@@ -146,7 +146,7 @@ A skip "ran" if the coin reached the first target (1.5x) from the skip price bef
     CA `FyRXnHLBSeHHoigrgHR1hvcXiPbPCa5bxhVhEDampump`
   - ran: PI up to 1.77x  
     CA `D2AK5DvBj8AxN5VX1t6bjv7muJVPUx4hFPowVRWYpump`
-- bundles over the line: blocked 12, ran 2, dumped 7, flat 1, open 2 (saving losses: keep it)
+- bundles over the line: blocked 13, ran 2, dumped 7, flat 1, open 3 (saving losses: keep it)
   - ran: jingyu up to 1.58x  
     CA `DUZrwdjEthcJ99ZiRXr31UuqTohoTg7VjTEyfGdBpump`
   - ran: DUMBMONEY up to 1.74x  
@@ -201,11 +201,11 @@ The meta is loud, not quiet, and it's four themes: Inu-dog mascots, egg/"record"
 ## Moving most in its scans, last 30 min (1h volume)
 - SOL2: $2,580,868 1h vol, $922,460 mcap, +825% 1h  
   CA `FF5V2c6MTrboTxh8ep8sNgmXsgji2wn6FfH7Cxvkpump`
-- Pompom: $242,209 1h vol, $482,771 mcap, -25% 1h  
-  CA `5EmvWDizkpjAXbcfCcVq69w1id8GaLzi4LLwtuSgpump`
 - AI: $211,697 1h vol, $651,590 mcap, +1735% 1h  
   CA `8F9LwX8HWHnrad1rEXagpW5xrZZJ16RjSJ1HYPb6pump`
-- PPK: $176,652 1h vol, $466,869 mcap, +1118% 1h  
-  CA `59efB6GMHMbsA4Z4GSZkYkmqjSHePn9xi1iRNzeepump`
+- ATX: $143,295 1h vol, $1,860,476,091 mcap, +18% 1h  
+  CA `Ya9PEJA9UZmbT5aim46TA6cPCkTNfsqEn1aEVrnpump`
 - Snowball: $129,555 1h vol, $12,768 mcap, -82% 1h  
   CA `9TKbd3VFaMSXsEAicD9JVQWpWwAoLi4fSgWmZL2cpump`
+- 3sat: $92,526 1h vol, $2,132 mcap, -20% 1h  
+  CA `EirDhxizoj2ZkExNNogCj8veFX4WCShkY9aHigVHpump`
