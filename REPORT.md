@@ -1,13 +1,13 @@
 # Trencher live report
 
-Updated 2026-11-25T19:26:59Z (paper trading, never real money)
+Updated 2026-11-25T19:42:16Z (paper trading, never real money)
 
 - Equity: $74.23 (-25.8% vs $100 start)
 - Closed trades: 22, 3 wins
 - Fees paid: $14.78 (axiom $2.81, network $9.18, pool $2.66), plus $4.15 lost to slippage
 - New trades: WATCH-ONLY (scans and decides, buys nothing)
-- Brain: subscription, claude-haiku-5-5 for routine calls, claude-opus-5-5 for the daily review; 401 routine calls and 0 plan-limit hits in 48h
-- Watch log: 72 coins being followed, 3596 filed, 0 would-buys (6h follow, sampled every 2 min)
+- Brain: subscription, claude-haiku-5-5 for routine calls, claude-opus-5-5 for the daily review; 399 routine calls and 0 plan-limit hits in 48h
+- Watch log: 74 coins being followed, 3598 filed, 0 would-buys (6h follow, sampled every 2 min)
 
 ## Scorecard (after fees)
 - 22 closed, 3 won (14%), net $-25.79
@@ -73,9 +73,17 @@ Updated 2026-11-25T19:26:59Z (paper trading, never real money)
   CA `H4gHnZ3NCU7Z9XQwGX6YYJNyieGEW8pqwGRUcdSxpump`
 
 ## Last scan
-- 19:26Z: 7 coins, 7 with pairs, 0 passed the market filters, 0 researched
+- 19:41Z: 3 coins, 3 with pairs, 0 passed the market filters, 0 researched
 
 ## Coins it looked at, and why it passed
+- 19:38Z AI (MIGRATED, $651,590 mcap, $100,131 5m vol): REJECT, Top 10 hold 44.1% ex-pool (>25%) (V13)  
+  CA `8F9LwX8HWHnrad1rEXagpW5xrZZJ16RjSJ1HYPb6pump`
+- 19:34Z COIN (FINAL_STRETCH, $16,647 mcap, $39,941 5m vol): PASS at conviction 2, PASS: chasing a 2-minute-old spike with no printed structure, and the site sells a launch-pairing scheme, not a token. Blocker: "chasing spike" plus "too new". (V1, V6)  
+  CA `ALLherSTscpAErYo5Jja3ysVocaa2oeZkUvgmvhZpump`
+- 19:29Z Snowfall (FINAL_STRETCH, $20,002 mcap, $4,285 5m vol): REJECT, Dev holds 1.6% (>1%) (V13, V17)  
+  CA `44oWeXhPGhG4e3Y7FHg9XEaGKj92uoCYc4EURzNwpump`
+- 19:28Z SOL2 (MIGRATED, $922,460 mcap, $260,527 5m vol): REJECT, RugCheck danger: Single holder ownership 49.90%  
+  CA `FF5V2c6MTrboTxh8ep8sNgmXsgji2wn6FfH7Cxvkpump`
 - 19:18Z GRAVY (no setup, $25,509 mcap, $60,696 5m vol): REJECT, No setup fits: not Final Stretch, not a migrated runner, not a healthy dip  
   CA `9yAXzLrFQvHJYZt3ndL4kdcgNkrQuPguRgs45PbqezaM`
 - 19:18Z PPK (MIGRATED, $466,869 mcap, $112,601 5m vol): REJECT, Top 10 hold 44.7% ex-pool (>25%) (V13)  
@@ -88,18 +96,10 @@ Updated 2026-11-25T19:26:59Z (paper trading, never real money)
   CA `GexThZHgaswpAQ7Fi8QrHFubjPimUNSYhJiAA7XZpump`
 - 19:09Z CBUCKS (MIGRATED, $5,318,406 mcap, $2,049 5m vol): REJECT, Top 10 hold 25.8% ex-pool (>25%) (V13)  
   CA `DtcicPCKTKeAh7TDEzTym3hXeoHAoMiBdYJhMYxZpump`
-- 19:04Z  JWIF (MIGRATED, $39,269 mcap, $6,414 5m vol): PASS at conviction 3, PASS — 5m flow at 0.41x pace, zero buzz, no catalyst, and nothing on the radar is trading the hat theme. A bounce with no reason to run. (V1, V6)  
-  CA `5zT7z5qKLwwwSMyP4HRLpKb7yUAC7cHEFRXPSVH3pump`
-- 19:03Z RECORDEGG (DIP, $148,213 mcap, $53,173 5m vol): REJECT, Bundles: 10 linked wallet cluster(s) hold 89.9% of supply (>20%) (V17)  
-  CA `5RBADXvDkgz22wF9gzS7BMEFNyvCYqbkomXWjy4pump`
-- 19:02Z 3sat (FINAL_STRETCH, $18,026 mcap, $30,590 5m vol): REJECT, RugCheck danger: Creator history of rugged tokens  
-  CA `EirDhxizoj2ZkExNNogCj8veFX4WCShkY9aHigVHpump`
-- 19:00Z 4CHAN (DIP, $124,053 mcap, $19,772 5m vol): PASS at conviction 2, PASS: 4CHAN is clean on holders and bundles, but it's a DIP with no catalyst and no story on my radar. Blocker: "no catalyst", bottom-buy owner rule not met (V1, V5).  
-  CA `437T35ficBfJK9N8GH4gWbiHb86AsRJRkQjARd7Ppump`
 
 ## What its skips did next (last 48h)
 A skip "ran" if the coin reached the first target (1.5x) from the skip price before a 20% drop, "dumped" if the drop came first. Sampled every 10 min, followed 6h.
-- top 10 over 25%: blocked 44, ran 7, dumped 34, flat 1, open 2 (saving losses: keep it)
+- top 10 over 25%: blocked 45, ran 7, dumped 36, flat 1, open 1 (saving losses: keep it)
   - ran: JENSEN up to 2.62x  
     CA `GaNJeASYBM9k3TvEeUC2Pdyu1TjcpzTmPpoom92fpump`
   - ran: GOAT up to 1.53x  
@@ -113,35 +113,35 @@ A skip "ran" if the coin reached the first target (1.5x) from the skip price bef
     CA `9cDnmLRDWeJzcpyw8tSFAT7HS4Aunx6MmZWjMfrzpump`
   - ran: SHHFT up to 1.61x  
     CA `GqMg4TRt5U5HRK6oeZYwCF1Jz7Ym9MSzWSoFCtFsbzf6`
-- flow below pace: blocked 28, ran 6, dumped 18, flat 0, open 4 (saving losses: keep it)
+- flow below pace: blocked 28, ran 6, dumped 20, flat 0, open 2 (saving losses: keep it)
   - ran: Doomcat up to 1.62x  
     CA `EiQ1JvEUZCXN5kQi2UdS4CdQapidqC7MCXd5sRTPpump`
   - ran: Jesus up to 1.64x  
     CA `Gy5BUDnpJMWRsNVKh9sRtsBGunFXKKrbroQRoydQpump`
   - ran: GROKIA up to 1.51x  
     CA `3cL47ohWa2HApLYKtqPsqkjaxJ6HLvT5Ri1KvWdXpump`
-- RugCheck danger: blocked 27, ran 5, dumped 22, flat 0, open 0 (saving losses: keep it)
+- RugCheck danger: blocked 27, ran 4, dumped 23, flat 0, open 0 (saving losses: keep it)
   - ran: FOMOMAS up to 1.71x  
     CA `9Gu5JYt4Pas6cW4S6qtyFkDucFj6GMtpJiDC9sQbpump`
   - ran: TIMOTHY up to 2.14x  
     CA `AWg6LmGPfqjEqAU8N8wR8mYTbwmkwqMUqzrmggbgpump`
   - ran: TROLL up to 1.94x  
     CA `7ykeHoEnjnGkY6tqteXn47fdGtd7kfXWghiyZ7YKpump`
-- near the high / chasing: blocked 26, ran 9, dumped 16, flat 0, open 1 (mixed)
+- near the high / chasing: blocked 25, ran 9, dumped 15, flat 0, open 1 (mixed)
   - ran: Bertcoin up to 1.8x  
     CA `xEK58Qa2xZ7C36Z2g3Jjq1WHY561CvvnJkLpgJspump`
   - ran: WOFL up to 2.62x  
     CA `AdXjXfumPSSKk7PrfgDHcAsPvuxnKv7Zo9WZEWKbiDkh`
   - ran: Phil up to 2.05x  
     CA `GMLSyjZCKGtFwztp2mtT8PDeNUA6WEk7oQoe3QkFpump`
-- too new / sniping: blocked 24, ran 3, dumped 20, flat 1, open 0 (saving losses: keep it)
+- too new / sniping: blocked 25, ran 4, dumped 20, flat 1, open 0 (saving losses: keep it)
   - ran: BABYANSEM up to 2.77x  
     CA `F3VctV9FqDgiyqaztN6z78bgWy27eH7DBBHW1vjpump`
   - ran: Merged up to 2.18x  
     CA `AMYpNGi5aGrKr1ZDsotUdWh7k1mMi569ygtaHJmErGEd`
   - ran: Boor up to 1.56x  
     CA `GHFpSSw2ZMjmKCyc1wrHUjJiqnJeP18mekY9GL1Xpump`
-- dev share over 1%: blocked 12, ran 2, dumped 9, flat 0, open 1 (saving losses: keep it)
+- dev share over 1%: blocked 13, ran 2, dumped 10, flat 0, open 1 (saving losses: keep it)
   - ran: BLOOM up to 2.09x  
     CA `FyRXnHLBSeHHoigrgHR1hvcXiPbPCa5bxhVhEDampump`
   - ran: PI up to 1.77x  
@@ -199,13 +199,13 @@ Nothing has a positive edge after costs. All 213 settled coins came out at -12.2
 The meta is loud, not quiet, and it's four themes: Inu-dog mascots, egg/"record" copies, a Thanksgiving play (Thanks Giving, +231% in 1h, with Thanksgiving on Nov 26, tomorrow), and an AI-name tie-in (GRAUDIA, Grok Claudia). Rising with real flow: RECORDEGG at $108k ($63k 5m, 68% buys, but +784% in 1h, so no chase), 4CHAN at $124k ($20k 5m, 69% buys, +15%, the steadiest), and GRAUDIA at $271k (59% buys, but $9k 5m is under the $10k bar). Fading: the Inu copies (I -62%, INU -73%), the second RECORDEGG at -93% with 38% buys, and UNI, which has zero 5m volume. That's the vamp/ticker-copy pattern, so find the original by volume and don't buy copies (V1, V13). Setups I'd look at: RECORDEGG only on a pullback that holds volume, 4CHAN on a dip that keeps buyers, and Thanks Giving only if its 5m volume clears $10k before the holiday; Slop Inu ($55k, $80k 5m, 54% buys, about 6 minutes old) is a conviction-5 probe at most, with the stop under its base. Holder, dev and bundle checks haven't run on any of these yet, so none is an entry until they do. The web's Slop Inu numbers ($29k, "still on pump.fun") don't match the scanner ($55k, pumpswap), so I trust the scanner.
 
 ## Moving most in its scans, last 30 min (1h volume)
-- Snowball: $403,766 1h vol, $10,915 mcap, -64% 1h  
-  CA `9TKbd3VFaMSXsEAicD9JVQWpWwAoLi4fSgWmZL2cpump`
-- RECORDEGG: $390,649 1h vol, $108,255 mcap, +784% 1h  
-  CA `5RBADXvDkgz22wF9gzS7BMEFNyvCYqbkomXWjy4pump`
+- SOL2: $2,580,868 1h vol, $922,460 mcap, +825% 1h  
+  CA `FF5V2c6MTrboTxh8ep8sNgmXsgji2wn6FfH7Cxvkpump`
 - Pompom: $242,209 1h vol, $482,771 mcap, -25% 1h  
   CA `5EmvWDizkpjAXbcfCcVq69w1id8GaLzi4LLwtuSgpump`
-- 4CHAN: $219,421 1h vol, $124,053 mcap, +15% 1h  
-  CA `437T35ficBfJK9N8GH4gWbiHb86AsRJRkQjARd7Ppump`
-- I: $197,872 1h vol, $7,518 mcap, -88% 1h  
-  CA `6TAEsBQuHki4C6ynUmWARpjJ1xmKshrqv7Qh1FHwpump`
+- AI: $211,697 1h vol, $651,590 mcap, +1735% 1h  
+  CA `8F9LwX8HWHnrad1rEXagpW5xrZZJ16RjSJ1HYPb6pump`
+- PPK: $176,652 1h vol, $466,869 mcap, +1118% 1h  
+  CA `59efB6GMHMbsA4Z4GSZkYkmqjSHePn9xi1iRNzeepump`
+- Snowball: $129,555 1h vol, $12,768 mcap, -82% 1h  
+  CA `9TKbd3VFaMSXsEAicD9JVQWpWwAoLi4fSgWmZL2cpump`
