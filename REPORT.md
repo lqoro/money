@@ -1,13 +1,13 @@
 # Trencher live report
 
-Updated 2026-11-25T01:32:25Z (paper trading, never real money)
+Updated 2026-11-25T01:47:26Z (paper trading, never real money)
 
 - Equity: $74.23 (-25.8% vs $100 start)
 - Closed trades: 22, 3 wins
 - Fees paid: $14.78 (axiom $2.81, network $9.18, pool $2.66), plus $4.15 lost to slippage
 - New trades: WATCH-ONLY (scans and decides, buys nothing)
-- Brain: subscription, claude-haiku-5-5 for routine calls, claude-opus-5-5 for the daily review; 508 routine calls and 0 plan-limit hits in 48h
-- Watch log: 74 coins being followed, 3425 filed, 0 would-buys (6h follow, sampled every 2 min)
+- Brain: subscription, claude-haiku-5-5 for routine calls, claude-opus-5-5 for the daily review; 506 routine calls and 0 plan-limit hits in 48h
+- Watch log: 77 coins being followed, 3427 filed, 0 would-buys (6h follow, sampled every 2 min)
 
 ## Scorecard (after fees)
 - 22 closed, 3 won (14%), net $-25.79
@@ -73,9 +73,19 @@ Updated 2026-11-25T01:32:25Z (paper trading, never real money)
   CA `H4gHnZ3NCU7Z9XQwGX6YYJNyieGEW8pqwGRUcdSxpump`
 
 ## Last scan
-- 01:31Z: 1 coins, 1 with pairs, 0 passed the market filters, 0 researched
+- 01:47Z: 5 coins, 5 with pairs, 0 passed the market filters, 0 researched
 
 ## Coins it looked at, and why it passed
+- 01:40Z Epochal (MIGRATED, $293,510 mcap, $48,823 5m vol): REJECT, Dev holds 10.2% (>1%) (V13, V17)  
+  CA `9MRLWakVX5U9LbWRQ5t2m4gyUbnYrhwAfUDRBkBMpump`
+- 01:39Z FIONA (DIP, $2,409,080 mcap, $4,654 5m vol): REJECT, Dip with fading attention is a falling knife, not a dip (5m at 0.55x the hour's pace, under 0.6x)  
+  CA `B34nXKzCgsJb9ChLuSHPRpXLE3WFSWyeT8Cqkzzmpump`
+- 01:39Z DongCoin (MIGRATED, $454,500 mcap, $49,361 5m vol): REJECT, Top 10 hold 48.0% ex-pool (>25%) (V13)  
+  CA `DMFzUvtfEmE697ZfEDqAXErd9MrBDEs66V5WiRvApump`
+- 01:37Z TELEDROID (DIP, $42,689 mcap, $3,421 5m vol): REJECT, Top 10 hold 29.2% ex-pool (>25%) (V13)  
+  CA `Ea7ADHtZdQVre2mTBbN9Ps3TBraR6n5GUamGF9Ftpump`
+- 01:37Z PERRO (MIGRATED, $46,668 mcap, $19,464 5m vol): PASS at conviction 3, PASS: 27 "perro" copies in one field, 13 minutes old, no catalyst, no printed higher low. Blocker: split crowd. (V1, V3)  
+  CA `4Di56UJzpnb7E4D7aLXFf7aLF5TrpJYv9Q3mR398pump`
 - 01:28Z Sisyphus (MIGRATED, $33,794 mcap, $7,312 5m vol): REJECT, Top 10 hold 25.3% ex-pool (>25%) (V13)  
   CA `AuPon7CveYeRk3E7YdUt9QMGu5hEGkqSxzo9NiZdpump`
 - 01:24Z Smoove (MIGRATED, $31,816 mcap, $9,927 5m vol): REJECT, Top 10 hold 26.4% ex-pool (>25%) (V13)  
@@ -86,20 +96,10 @@ Updated 2026-11-25T01:32:25Z (paper trading, never real money)
   CA `8wunMxtK7iVN4ki84y24LmJ5Xk5HnsAbkFHYaCuopump`
 - 01:14Z HOGE (DIP, $737,510 mcap, $3,648 5m vol): REJECT, Bundles: 9 linked wallet cluster(s) hold 27.8% of supply (>20%) (V17)  
   CA `FVzqGqRmr4UH1Fif6dewmwbJ1p4YUZCu8dcw4Efopump`
-- 01:14Z 4CHAN (MIGRATED, $394,087 mcap, $27,930 5m vol): REJECT, Top 10 hold 26.9% ex-pool (>25%) (V13)  
-  CA `DVdWuNK8ncn79B6z8nCiwcNAiwyFcmBPfChgxJGTpump`
-- 01:05Z ChristmASS (MIGRATED, $264,277 mcap, $12,562 5m vol): PASS at conviction 3, PASS — chasing spike: up 62% on 5m and 4.6% off a high printed 6 minutes ago, inside a 23-copy Christmas field with no higher low yet. Blocker: "chasing spike" (V1, V6).  
-  CA `CLxrgvfFs3gr9BQhTAfGxZDsiHfVUQTDEahfiZdLpump`
-- 01:04Z WIKI (MIGRATED, $210,808 mcap, $41,754 5m vol): PASS at conviction 2, PASS: flow below pace, no higher low, and a 20-copy wiki field with no catalyst. Parabolic spike, not a base. (V1, V6)  
-  CA `E2MJUFBMaTH7j21P2HncB96erJ4dM3FPL2W6i8Dpump`
-- 00:58Z DONJENSEN (MIGRATED, $342,408 mcap, $2,173 5m vol): PASS at conviction 2, PASS: down 91% from a $3.66M peak, and the joke it rides is fading. Bottom buy with no catalyst and a dying theme. Blocker: "dead story" (V1, V6).  
-  CA `5LDowscYVD3a6ZS4m8gCqG5nU16eLTwRXhciFi1bpump`
-- 00:55Z Jimmies (MIGRATED, $237,330 mcap, $2,355 5m vol): PASS at conviction 3, PASS: flow below pace. 5m is 0.35x the hourly pace, the coin sits 25% off its high with no breakout, and its own site says "Contract TBA" on a domain about 2 hours old (V1, V6, V13).  
-  CA `GisWWjhwrSud4aFGSHvTMt85Ky14sY7LeBFCpfoFpump`
 
 ## What its skips did next (last 48h)
 A skip "ran" if the coin reached the first target (1.5x) from the skip price before a 20% drop, "dumped" if the drop came first. Sampled every 10 min, followed 6h.
-- top 10 over 25%: blocked 39, ran 6, dumped 30, flat 1, open 2 (saving losses: keep it)
+- top 10 over 25%: blocked 40, ran 6, dumped 29, flat 1, open 4 (saving losses: keep it)
   - ran: SNP6900 up to 2.76x  
     CA `DnbQKi146NDmwwji3f3q5i68HQnYyBEhoDyj2q3Npump`
   - ran: JENSEN up to 2.62x  
@@ -120,6 +120,13 @@ A skip "ran" if the coin reached the first target (1.5x) from the skip price bef
     CA `2DQbV7hsqxKVWmFakXGGhBbNyY28tDJ9YuJkojYrpump`
   - ran: NVDA up to 1.52x  
     CA `37corVSMFFrqP3WK7AtMV6yFTGSvjFEB5fWnH1Bcpump`
+- too new / sniping: blocked 32, ran 3, dumped 27, flat 1, open 1 (saving losses: keep it)
+  - ran: Loaf up to 2.13x  
+    CA `8Ugc1FHaeK6iXQrnUpztxhhNHqucFwaqC35A4Kjjpump`
+  - ran: AGI up to 1.53x  
+    CA `7kctwFbSdLfpi6RuN9cjpVpYVHKPUr8PtG1meH35AEky`
+  - ran: TREMP up to 1.7x  
+    CA `CuNLbjjFcmumcKF1AnUkPU4dcjykJR73M8hzJB5Cpump`
 - near the high / chasing: blocked 31, ran 7, dumped 23, flat 1, open 0 (saving losses: keep it)
   - ran: Bertcoin up to 1.8x  
     CA `xEK58Qa2xZ7C36Z2g3Jjq1WHY561CvvnJkLpgJspump`
@@ -127,14 +134,7 @@ A skip "ran" if the coin reached the first target (1.5x) from the skip price bef
     CA `AdXjXfumPSSKk7PrfgDHcAsPvuxnKv7Zo9WZEWKbiDkh`
   - ran: Phil up to 2.05x  
     CA `GMLSyjZCKGtFwztp2mtT8PDeNUA6WEk7oQoe3QkFpump`
-- too new / sniping: blocked 31, ran 3, dumped 27, flat 1, open 0 (saving losses: keep it)
-  - ran: Loaf up to 2.13x  
-    CA `8Ugc1FHaeK6iXQrnUpztxhhNHqucFwaqC35A4Kjjpump`
-  - ran: AGI up to 1.53x  
-    CA `7kctwFbSdLfpi6RuN9cjpVpYVHKPUr8PtG1meH35AEky`
-  - ran: TREMP up to 1.7x  
-    CA `CuNLbjjFcmumcKF1AnUkPU4dcjykJR73M8hzJB5Cpump`
-- RugCheck danger: blocked 19, ran 5, dumped 13, flat 0, open 1 (saving losses: keep it)
+- RugCheck danger: blocked 19, ran 5, dumped 14, flat 0, open 0 (saving losses: keep it)
   - ran: Holdsgiving up to 2.96x  
     CA `A2jLaCC7v3VjXP8gEgCQNbTWEvizYuQ82jFEYfzipump`
   - ran: JENSEN up to 1.7x  
@@ -144,19 +144,19 @@ A skip "ran" if the coin reached the first target (1.5x) from the skip price bef
 - thin 5m volume: blocked 17, ran 1, dumped 12, flat 3, open 1 (saving losses: keep it)
   - ran: NINO up to 1.55x  
     CA `BqekG1RSPUthaKfStu7Uvyvr1eR6TchrQMp1M5r5pump`
-- dev share over 1%: blocked 14, ran 2, dumped 10, flat 2, open 0 (saving losses: keep it)
+- dev share over 1%: blocked 15, ran 2, dumped 10, flat 2, open 1 (saving losses: keep it)
   - ran: BLOOM up to 2.09x  
     CA `FyRXnHLBSeHHoigrgHR1hvcXiPbPCa5bxhVhEDampump`
   - ran: PI up to 1.77x  
     CA `D2AK5DvBj8AxN5VX1t6bjv7muJVPUx4hFPowVRWYpump`
+- falling knife (code): blocked 11, ran 1, dumped 9, flat 0, open 1 (saving losses: keep it)
+  - ran: Fly up to 1.52x  
+    CA `84tAcSK5L9kuQEVM8C8vMHXnfdA83nGBT2nYfSbPUcAc`
 - bundles over the line: blocked 10, ran 2, dumped 5, flat 1, open 2 (saving losses: keep it)
   - ran: RNV up to 2.35x  
     CA `A2nbXtQvvRMvWtifCkV8cYepwcC4M7iA1jVMwAh6pump`
   - ran: DUMBMONEY up to 1.74x  
     CA `GEHehS5Rr4rNCjvrHLjjV1avD4bjMsn53ywDGv1spump`
-- falling knife (code): blocked 10, ran 1, dumped 9, flat 0, open 0 (saving losses: keep it)
-  - ran: Fly up to 1.52x  
-    CA `84tAcSK5L9kuQEVM8C8vMHXnfdA83nGBT2nYfSbPUcAc`
 
 ## Daily review (2026-11-23, claude-opus-5-5)
 Nothing has a positive after-cost edge yet. All 229 settled coins average -8.7% net on the simple plan. Before costs they average about +0.9%, so the 9.6% average round-trip cost on a $10 buy accounts for the whole loss. That is the same story as the 22 paper trades, where fees and slippage were $18.83 of the $25.79 lost. The best setup is FINAL_STRETCH: n=39, 35.9% hit 1.5x, -4.9% net. With a 1.5x target, a -20% stop and about 10% costs, a setup needs roughly 43% hitting the target to break even. At n=39 the hit rate's 95% range is about 21–51%, so this sample can't separate it from MIGRATED, from coin-flip noise or from breakeven. I can't say whether the routine model's would-buys beat its passes, because it made zero would-buys in 24h. The coins it passed on (n=157, -8.4%) did slightly better than the coins the checklist failed (n=70, -9.8%), but both lost money. Passing everything was the right call on average. One process note: the watch-only review was set for about Nov 10 and today is Nov 23, so the owner should decide whether this is still the plan.
@@ -197,13 +197,13 @@ Nothing has a positive after-cost edge yet. All 229 settled coins average -8.7% 
 Trencher: The meta right now is fresh pump.fun internet-joke names with real 5-minute flow. 4CHAN ($291k cap, $62k 5m, 53% buys), BOOBS ($463k cap, $123k 5m, 77% buys, +1107% in an hour, minutes old) and Teledroid ($58k cap, $13k 5m, 60% buys) are the names pulling buyers, while lore and X are 0.1h old and too new to touch. Animal names are split: Le Toucan is rising ($15k cap, $7.5k 5m, 57% buys), but the hippo coins are dead (Mars -99.7%, Fiona down 13% at 124h old). The fading theme is the pump-and-dump-out: Mars, Big Titty Christmas (-99%), DONJENSEN (the Jensen Huang GPU joke, -82% on $1.9k 5m) and Smoove (-43%) have near-zero 5m volume. Setups to research, not buy yet: 4CHAN and Teledroid on a pullback that holds with 5m volume above $10k and buyers stepping back in; BOOBS is parabolic, so it only gets a look after a real retrace and at probe size at most. Jimmies is not in this tape, and the crawler's 4CHAN and Sisyphus figures don't match the scan (Sisyphus is $15k cap, $205 5m here), so I'm using scan numbers. Holder, dev and bundle checks haven't run on any of these, so nothing is a buy yet. ANSEM is not in the movers and is blocked, so it is not a setup.
 
 ## Moving most in its scans, last 30 min (1h volume)
-- WIKI: $771,368 1h vol, $197,549 mcap, +509% 1h  
-  CA `E2MJUFBMaTH7j21P2HncB96erJ4dM3FPL2W6i8Dpump`
+- Epochal: $738,010 1h vol, $257,146 mcap, +142% 1h  
+  CA `9MRLWakVX5U9LbWRQ5t2m4gyUbnYrhwAfUDRBkBMpump`
 - BOOBS: $723,920 1h vol, $911,356 mcap, +2292% 1h  
   CA `E35iEA2yLLHc1tjm6et1Z3YuH8DhxJYWtWezPHgSpump`
-- 4CHAN: $421,236 1h vol, $418,750 mcap, +121% 1h  
-  CA `DVdWuNK8ncn79B6z8nCiwcNAiwyFcmBPfChgxJGTpump`
-- ChristmASS: $145,414 1h vol, $264,277 mcap, +638% 1h  
-  CA `CLxrgvfFs3gr9BQhTAfGxZDsiHfVUQTDEahfiZdLpump`
-- 𝕏: $132,673 1h vol, $3,422 mcap, -82% 1h  
-  CA `2CJqEecyJebkMUu61opTF9VgTsAPLexV8NphFpQjpump`
+- DongCoin: $129,634 1h vol, $454,500 mcap, +1209% 1h  
+  CA `DMFzUvtfEmE697ZfEDqAXErd9MrBDEs66V5WiRvApump`
+- FIONA: $101,010 1h vol, $2,409,080 mcap, -10% 1h  
+  CA `B34nXKzCgsJb9ChLuSHPRpXLE3WFSWyeT8Cqkzzmpump`
+- PERRO: $85,774 1h vol, $55,327 mcap, +97% 1h  
+  CA `4Di56UJzpnb7E4D7aLXFf7aLF5TrpJYv9Q3mR398pump`
