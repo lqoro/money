@@ -1,13 +1,13 @@
 # Trencher live report
 
-Updated 2026-11-25T13:23:27Z (paper trading, never real money)
+Updated 2026-11-25T13:38:41Z (paper trading, never real money)
 
 - Equity: $74.23 (-25.8% vs $100 start)
 - Closed trades: 22, 3 wins
 - Fees paid: $14.78 (axiom $2.81, network $9.18, pool $2.66), plus $4.15 lost to slippage
 - New trades: WATCH-ONLY (scans and decides, buys nothing)
-- Brain: subscription, claude-haiku-5-5 for routine calls, claude-opus-5-5 for the daily review; 440 routine calls and 0 plan-limit hits in 48h
-- Watch log: 40 coins being followed, 3556 filed, 0 would-buys (6h follow, sampled every 2 min)
+- Brain: subscription, claude-haiku-5-5 for routine calls, claude-opus-5-5 for the daily review; 438 routine calls and 0 plan-limit hits in 48h
+- Watch log: 41 coins being followed, 3556 filed, 0 would-buys (6h follow, sampled every 2 min)
 
 ## Scorecard (after fees)
 - 22 closed, 3 won (14%), net $-25.79
@@ -73,9 +73,13 @@ Updated 2026-11-25T13:23:27Z (paper trading, never real money)
   CA `H4gHnZ3NCU7Z9XQwGX6YYJNyieGEW8pqwGRUcdSxpump`
 
 ## Last scan
-- 13:22Z: 12 coins, 12 with pairs, 0 passed the market filters, 0 researched
+- 13:38Z: 4 coins, 4 with pairs, 0 passed the market filters, 0 researched
 
 ## Coins it looked at, and why it passed
+- 13:29Z WASTED (DIP, $1,032,281 mcap, $6,845 5m vol): REJECT, Dev holds 1.1% (>1%) (V13, V17)  
+  CA `GexThZHgaswpAQ7Fi8QrHFubjPimUNSYhJiAA7XZpump`
+- 13:25Z hacked (FINAL_STRETCH, $19,164 mcap, $15,002 5m vol): REJECT, Hack story ("hack" in the name or ticker): these tend to go down, owner rule  
+  CA `FK7bc3fR8UL8uogN2u8J9yEpEbQJKR7yKsp3G8rvpump`
 - 13:16Z Pompom (MIGRATED, $384,353 mcap, $31,905 5m vol): PASS at conviction 2, PASS — 15 Pompompurin copies, this one isn't the theme's volume leader, 5m flow is at 0.55x the hourly pace, and the first resistance is only 1.24x away. Blocked on four counts (V1, V3, V6).  
   CA `5EmvWDizkpjAXbcfCcVq69w1id8GaLzi4LLwtuSgpump`
 - 13:08Z pompom (FINAL_STRETCH, $14,136 mcap, $2,441 5m vol): REJECT, Top 10 hold 30.7% ex-pool (>25%) (V13)  
@@ -92,10 +96,6 @@ Updated 2026-11-25T13:23:27Z (paper trading, never real money)
   CA `38EDdUxnJvrnDsJyB45E2W3pK26qLEjmWTvsEmMuG9ZR`
 - 12:09Z 3sat (FINAL_STRETCH, $13,880 mcap, $3,283 5m vol): PASS at conviction 3, PASS: a 0.1-day-old AI/Lean "fork" site on a 15-copy ticker, with 5m flow at $3.3k and a 583% 1h spike. It's a LARP-shaped pump.fun launch. Blocker: "too new / sniping" (V1, V6, V13).  
   CA `FaWEANo8Kz9B415xv3cocE8q5JgghN7CY8FYG4C5pump`
-- 11:57Z SWARM (FINAL_STRETCH, $17,680 mcap, $7,888 5m vol): REJECT, Top 10 hold 28.4% ex-pool (>25%) (V13)  
-  CA `2Rw6rLRRZXQLNreForjeVvDjnpYUaW6rmMFXmRP9pump`
-- 11:37Z Boor (FINAL_STRETCH, $17,792 mcap, $23,246 5m vol): PASS at conviction 2, PASS: chasing spike. Boor is up 282% on 5m and 680% on 1h, about 7 minutes old, one of 14 "boor" copies, and no story is attached (V1, V6, V13).  
-  CA `GHFpSSw2ZMjmKCyc1wrHUjJiqnJeP18mekY9GL1Xpump`
 
 ## What its skips did next (last 48h)
 A skip "ran" if the coin reached the first target (1.5x) from the skip price before a 20% drop, "dumped" if the drop came first. Sampled every 10 min, followed 6h.
@@ -120,20 +120,20 @@ A skip "ran" if the coin reached the first target (1.5x) from the skip price bef
     CA `AdXjXfumPSSKk7PrfgDHcAsPvuxnKv7Zo9WZEWKbiDkh`
   - ran: Phil up to 2.05x  
     CA `GMLSyjZCKGtFwztp2mtT8PDeNUA6WEk7oQoe3QkFpump`
-- flow below pace: blocked 30, ran 6, dumped 23, flat 0, open 1 (saving losses: keep it)
+- flow below pace: blocked 30, ran 6, dumped 24, flat 0, open 0 (saving losses: keep it)
   - ran: NVDA up to 1.52x  
     CA `37corVSMFFrqP3WK7AtMV6yFTGSvjFEB5fWnH1Bcpump`
   - ran: Doomcat up to 1.62x  
     CA `EiQ1JvEUZCXN5kQi2UdS4CdQapidqC7MCXd5sRTPpump`
   - ran: Jesus up to 1.64x  
     CA `Gy5BUDnpJMWRsNVKh9sRtsBGunFXKKrbroQRoydQpump`
-- too new / sniping: blocked 23, ran 4, dumped 18, flat 1, open 0 (saving losses: keep it)
-  - ran: TREMP up to 1.7x  
-    CA `CuNLbjjFcmumcKF1AnUkPU4dcjykJR73M8hzJB5Cpump`
+- too new / sniping: blocked 22, ran 3, dumped 18, flat 1, open 0 (saving losses: keep it)
   - ran: BABYANSEM up to 2.77x  
     CA `F3VctV9FqDgiyqaztN6z78bgWy27eH7DBBHW1vjpump`
   - ran: Merged up to 2.18x  
     CA `AMYpNGi5aGrKr1ZDsotUdWh7k1mMi569ygtaHJmErGEd`
+  - ran: Boor up to 1.56x  
+    CA `GHFpSSw2ZMjmKCyc1wrHUjJiqnJeP18mekY9GL1Xpump`
 - RugCheck danger: blocked 21, ran 5, dumped 16, flat 0, open 0 (saving losses: keep it)
   - ran: JENSEN up to 1.7x  
     CA `CjPoozfB2Vub8pHFvdKuKUGJDLWuYC2U32yRTxMhpump`
@@ -141,14 +141,14 @@ A skip "ran" if the coin reached the first target (1.5x) from the skip price bef
     CA `CSjwLiCLyaJqXQm9XCV3LdYWMYswbZ7JQ71JKX77pump`
   - ran: FOMOMAS up to 1.71x  
     CA `9Gu5JYt4Pas6cW4S6qtyFkDucFj6GMtpJiDC9sQbpump`
-- thin 5m volume: blocked 14, ran 1, dumped 9, flat 4, open 0 (saving losses: keep it)
-  - ran: NINO up to 1.55x  
-    CA `BqekG1RSPUthaKfStu7Uvyvr1eR6TchrQMp1M5r5pump`
-- dev share over 1%: blocked 13, ran 2, dumped 10, flat 1, open 0 (saving losses: keep it)
+- dev share over 1%: blocked 13, ran 2, dumped 10, flat 0, open 1 (saving losses: keep it)
   - ran: BLOOM up to 2.09x  
     CA `FyRXnHLBSeHHoigrgHR1hvcXiPbPCa5bxhVhEDampump`
   - ran: PI up to 1.77x  
     CA `D2AK5DvBj8AxN5VX1t6bjv7muJVPUx4hFPowVRWYpump`
+- thin 5m volume: blocked 13, ran 1, dumped 9, flat 3, open 0 (saving losses: keep it)
+  - ran: NINO up to 1.55x  
+    CA `BqekG1RSPUthaKfStu7Uvyvr1eR6TchrQMp1M5r5pump`
 - falling knife (code): blocked 12, ran 1, dumped 10, flat 1, open 0 (saving losses: keep it)
   - ran: Jimmies up to 1.53x  
     CA `GisWWjhwrSud4aFGSHvTMt85Ky14sY7LeBFCpfoFpump`
@@ -199,11 +199,11 @@ Not quiet. The movers are fresh pump.fun launches, mostly under a few hours old,
 ## Moving most in its scans, last 30 min (1h volume)
 - Pompom: $693,737 1h vol, $393,712 mcap, +135% 1h  
   CA `5EmvWDizkpjAXbcfCcVq69w1id8GaLzi4LLwtuSgpump`
-- OUROBOROS: $101,026 1h vol, $37,291 mcap, +90% 1h  
-  CA `38EDdUxnJvrnDsJyB45E2W3pK26qLEjmWTvsEmMuG9ZR`
-- PFP: $55,904 1h vol, $1,769 mcap, -93% 1h  
+- kol: $82,961 1h vol, $4,757 mcap, +92% 1h  
+  CA `9EuxZ4oKk7axaXTbiJPk8RJ2Q9fBshH3UtuUWExQpump`
+- PFP: $56,015 1h vol, $1,680 mcap, -93% 1h  
   CA `GV7iihnQgrRrZt1npPu774CPNiv6PJe8SMMHLsTjpump`
-- PFP: $50,965 1h vol, $17,149 mcap, +312% 1h  
-  CA `5PiugAAPsRxmatFE6uJ7jrtJ817TNKpypSa1JoZspump`
-- 犬: $42,792 1h vol, $2,023 mcap, -21% 1h  
+- 犬: $42,837 1h vol, $2,045 mcap, -20% 1h  
   CA `Bu7FHCUZAJw5p94Y28v9LfGjcHv8M2HaJcqptX4FuQPV`
+- DU: $28,248 1h vol, $2,863 mcap, +11% 1h  
+  CA `5mWwFaEF5eLEHSAUzhCiEKiWiYPUGwenQFpBQMz4pump`
