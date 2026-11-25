@@ -1,13 +1,13 @@
 # Trencher live report
 
-Updated 2026-11-25T08:35:51Z (paper trading, never real money)
+Updated 2026-11-25T08:51:05Z (paper trading, never real money)
 
 - Equity: $74.23 (-25.8% vs $100 start)
 - Closed trades: 22, 3 wins
 - Fees paid: $14.78 (axiom $2.81, network $9.18, pool $2.66), plus $4.15 lost to slippage
 - New trades: WATCH-ONLY (scans and decides, buys nothing)
-- Brain: subscription, claude-haiku-5-5 for routine calls, claude-opus-5-5 for the daily review; 467 routine calls and 0 plan-limit hits in 48h
-- Watch log: 51 coins being followed, 3513 filed, 0 would-buys (6h follow, sampled every 2 min)
+- Brain: subscription, claude-haiku-5-5 for routine calls, claude-opus-5-5 for the daily review; 465 routine calls and 0 plan-limit hits in 48h
+- Watch log: 48 coins being followed, 3517 filed, 0 would-buys (6h follow, sampled every 2 min)
 
 ## Scorecard (after fees)
 - 22 closed, 3 won (14%), net $-25.79
@@ -73,9 +73,11 @@ Updated 2026-11-25T08:35:51Z (paper trading, never real money)
   CA `H4gHnZ3NCU7Z9XQwGX6YYJNyieGEW8pqwGRUcdSxpump`
 
 ## Last scan
-- 08:35Z: 5 coins, 5 with pairs, 1 passed the market filters, 1 researched
+- 08:50Z: 5 coins, 5 with pairs, 1 passed the market filters, 1 researched
 
 ## Coins it looked at, and why it passed
+- 08:50Z JaoJiu (DIP, $164,157 mcap, $13,022 5m vol): REJECT, Dip with fading attention is a falling knife, not a dip (5m at 0.39x the hour's pace, under 0.6x)  
+  CA `2UyrvgCRXiEwiKRVk96gs6B4myrBHZAfcLyMVLE8vSCy`
 - 08:35Z BASKET (MIGRATED, $939,890 mcap, $24,270 5m vol): PASS at conviction 4, PASS: flow below pace (5m at 0.68x the hourly average), and the first resistance is only 1.14x away. Blocker: "flow below pace", with "target too close" behind it. One bundle holds 6.85%, over the 3–4% line. (V1, V3, V6)  
   CA `3Tg6YnNrfPdFfsY14MaNsDMWLseAyrUDS3myJtbaJN6f`
 - 08:31Z HELIORA (FINAL_STRETCH, $19,649 mcap, $20,876 5m vol): PASS at conviction 2, PASS — 5 minutes old, a +666% spike on 533 buys to 190 sells, a 2-hour-old domain pitching its own chain, and this CA isn't the leader of a 6-copy ticker field. Blocker: "too new" and "chasing spike" (V1, V3, V6, V13).  
@@ -94,8 +96,6 @@ Updated 2026-11-25T08:35:51Z (paper trading, never real money)
   CA `3Tg6YnNrfPdFfsY14MaNsDMWLseAyrUDS3myJtbaJN6f`
 - 07:21Z Jimmies (DIP, $1,013,262 mcap, $2,514 5m vol): REJECT, Dip with fading attention is a falling knife, not a dip (5m at 0.52x the hour's pace, under 0.6x)  
   CA `GisWWjhwrSud4aFGSHvTMt85Ky14sY7LeBFCpfoFpump`
-- 07:11Z Merged (FINAL_STRETCH, $14,662 mcap, $5,072 5m vol): PASS at conviction 2, PASS — Merged is 29 minutes old, still on the pump.fun curve, down 23.5% off a 19k peak after a 628% hour, with its 15m candles halving. Too new and no catalyst. Blockers: "too new", "no catalyst", "theme pace 0.51x". Also the site's GitHub is someone else's repo and the domain is 0.1 days old (V1,   
-  CA `AMYpNGi5aGrKr1ZDsotUdWh7k1mMi569ygtaHJmErGEd`
 
 ## What its skips did next (last 48h)
 A skip "ran" if the coin reached the first target (1.5x) from the skip price before a 20% drop, "dumped" if the drop came first. Sampled every 10 min, followed 6h.
@@ -127,7 +127,7 @@ A skip "ran" if the coin reached the first target (1.5x) from the skip price bef
     CA `AdXjXfumPSSKk7PrfgDHcAsPvuxnKv7Zo9WZEWKbiDkh`
   - ran: Phil up to 2.05x  
     CA `GMLSyjZCKGtFwztp2mtT8PDeNUA6WEk7oQoe3QkFpump`
-- too new / sniping: blocked 28, ran 5, dumped 21, flat 1, open 1 (saving losses: keep it)
+- too new / sniping: blocked 28, ran 6, dumped 21, flat 1, open 0 (saving losses: keep it)
   - ran: Loaf up to 2.13x  
     CA `8Ugc1FHaeK6iXQrnUpztxhhNHqucFwaqC35A4Kjjpump`
   - ran: AGI up to 1.53x  
@@ -154,7 +154,7 @@ A skip "ran" if the coin reached the first target (1.5x) from the skip price bef
     CA `A2nbXtQvvRMvWtifCkV8cYepwcC4M7iA1jVMwAh6pump`
   - ran: DUMBMONEY up to 1.74x  
     CA `GEHehS5Rr4rNCjvrHLjjV1avD4bjMsn53ywDGv1spump`
-- falling knife (code): blocked 10, ran 0, dumped 8, flat 1, open 1 (saving losses: keep it)
+- falling knife (code): blocked 11, ran 0, dumped 8, flat 1, open 2 (saving losses: keep it)
 
 ## Daily review (2026-11-23, claude-opus-5-5)
 Nothing has a positive after-cost edge yet. All 229 settled coins average -8.7% net on the simple plan. Before costs they average about +0.9%, so the 9.6% average round-trip cost on a $10 buy accounts for the whole loss. That is the same story as the 22 paper trades, where fees and slippage were $18.83 of the $25.79 lost. The best setup is FINAL_STRETCH: n=39, 35.9% hit 1.5x, -4.9% net. With a 1.5x target, a -20% stop and about 10% costs, a setup needs roughly 43% hitting the target to break even. At n=39 the hit rate's 95% range is about 21–51%, so this sample can't separate it from MIGRATED, from coin-flip noise or from breakeven. I can't say whether the routine model's would-buys beat its passes, because it made zero would-buys in 24h. The coins it passed on (n=157, -8.4%) did slightly better than the coins the checklist failed (n=70, -9.8%), but both lost money. Passing everything was the right call on average. One process note: the watch-only review was set for about Nov 10 and today is Nov 23, so the owner should decide whether this is still the plan.
@@ -197,11 +197,11 @@ The meta is alien and sci-fi creature names on fresh pump.fun launches. Alien ($
 ## Moving most in its scans, last 30 min (1h volume)
 - BASKET: $428,347 1h vol, $935,810 mcap, +37% 1h  
   CA `3Tg6YnNrfPdFfsY14MaNsDMWLseAyrUDS3myJtbaJN6f`
-- JaoJiow: $72,733 1h vol, $23,405 mcap, +989% 1h  
-  CA `BBupBrQsZyJF92vCvqfsSdJAx5CWmm1zSEdhBH7qpump`
-- SLITHEEN: $46,978 1h vol, $12,867 mcap, +547% 1h  
-  CA `2ajAnFA8UKpeYbWSoEwobGQrLvdUUmjipjpongMepump`
-- TANDEM: $46,721 1h vol, $12,786 mcap, +420% 1h  
+- JaoJiu: $402,839 1h vol, $164,157 mcap, +68% 1h  
+  CA `2UyrvgCRXiEwiKRVk96gs6B4myrBHZAfcLyMVLE8vSCy`
+- 4PUMP: $46,622 1h vol, $6,390 mcap, -15% 1h  
+  CA `8ypx9tHqwLjJk51tqrm1iCrhTQ1PKshnw1FfpQjWpump`
+- Päivi: $36,564 1h vol, $2,130 mcap, -7% 1h  
+  CA `6TLY91Ee6qRULfLDdmCoP5ZqCP7Wo5jpFmJiBG7wXtKX`
+- TANDEM: $34,241 1h vol, $10,598 mcap, +13% 1h  
   CA `4XvnS1B28BgsUcwjR2bTm3csxnp8hmTsXZM6jH3Ypump`
-- Jimmies: $38,613 1h vol, $1,275,749 mcap, +12% 1h  
-  CA `GisWWjhwrSud4aFGSHvTMt85Ky14sY7LeBFCpfoFpump`
