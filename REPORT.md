@@ -1,13 +1,13 @@
 # Trencher live report
 
-Updated 2026-11-25T10:51:35Z (paper trading, never real money)
+Updated 2026-11-25T11:06:49Z (paper trading, never real money)
 
 - Equity: $74.23 (-25.8% vs $100 start)
 - Closed trades: 22, 3 wins
 - Fees paid: $14.78 (axiom $2.81, network $9.18, pool $2.66), plus $4.15 lost to slippage
 - New trades: WATCH-ONLY (scans and decides, buys nothing)
-- Brain: subscription, claude-haiku-5-5 for routine calls, claude-opus-5-5 for the daily review; 451 routine calls and 0 plan-limit hits in 48h
-- Watch log: 45 coins being followed, 3537 filed, 0 would-buys (6h follow, sampled every 2 min)
+- Brain: subscription, claude-haiku-5-5 for routine calls, claude-opus-5-5 for the daily review; 450 routine calls and 0 plan-limit hits in 48h
+- Watch log: 43 coins being followed, 3539 filed, 0 would-buys (6h follow, sampled every 2 min)
 
 ## Scorecard (after fees)
 - 22 closed, 3 won (14%), net $-25.79
@@ -73,7 +73,7 @@ Updated 2026-11-25T10:51:35Z (paper trading, never real money)
   CA `H4gHnZ3NCU7Z9XQwGX6YYJNyieGEW8pqwGRUcdSxpump`
 
 ## Last scan
-- 10:51Z: 6 coins, 5 with pairs, 0 passed the market filters, 0 researched
+- 11:05Z: 6 coins, 4 with pairs, 0 passed the market filters, 0 researched
 
 ## Coins it looked at, and why it passed
 - 10:49Z Memecoin (no setup, $10,958 mcap, $31,415 5m vol): REJECT, No setup fits: not Final Stretch, not a migrated runner, not a healthy dip  
@@ -113,7 +113,7 @@ A skip "ran" if the coin reached the first target (1.5x) from the skip price bef
     CA `9cDnmLRDWeJzcpyw8tSFAT7HS4Aunx6MmZWjMfrzpump`
   - ran: SHHFT up to 1.61x  
     CA `GqMg4TRt5U5HRK6oeZYwCF1Jz7Ym9MSzWSoFCtFsbzf6`
-- near the high / chasing: blocked 31, ran 7, dumped 22, flat 1, open 1 (saving losses: keep it)
+- near the high / chasing: blocked 31, ran 7, dumped 23, flat 1, open 0 (saving losses: keep it)
   - ran: Bertcoin up to 1.8x  
     CA `xEK58Qa2xZ7C36Z2g3Jjq1WHY561CvvnJkLpgJspump`
   - ran: WOFL up to 2.62x  
@@ -194,16 +194,16 @@ Nothing has a positive after-cost edge yet. All 229 settled coins average -8.7% 
 - [2026-11-02 20:25] I expected Slingoor, a clean MIGRATED leader with $25k of 5m flow at pace and a 0.77 buy share, to retest its $408k high from $304k. It never went green (0.98x peak) and hit the -20% stop in 2 minutes, a -$2.86 probe. My own thesis admitted there was no printed higher low after a peak only 6 minutes old, so this confirms the money-shape rule: buy share and flow are not structure (V1, V6). Next time a MIGRATED pullback with no higher low above the hourly low is a PASS with blocker "no higher low", not a probe. This is one loss, so it adds no new ban beyond the rule I already have.
 
 ## Meta right now
-Not quiet. The movers with real flow are cute character names launched on pump.fun in the last 15 minutes: Solana-chan (SOLCHAN, $22k cap, $40k 5m, +894% 1h, 64% buys) and Nyamit (pumpswap, $32k cap, $46k 5m, 58% buys). They share a kawaii, cat-girl style and are rising (V1, V5). The second theme is name families and people: JaoJiu (pumpswap $153k, $10.5k 5m, -31% 1h), its pump.fun copy, and Bernard (+545% 1h, $8k 5m) look like a vamp war, so find the original first (V1, V3). Fading: legacy memes and animal or cartoon coins (ROCKET, CBUCKS at $8 5m with zero buys, Christmax at 12 days old, Memeployed, Jimmies). Clover, NAUGHTY and TANDEM pumped on 1h with almost no 5m flow, so they're noise. Setups to research, not buy yet: SOLCHAN and Nyamit as the character cluster. Both are under 15 minutes old, so no entry until they age and keep flow. Nyamit already fits the MIGRATED criteria (under 12h, $32k cap, $46k 5m) once holder and bundle checks pass. JaoJiu only as a dip, and only after the original is confirmed. The Trump, Ansem and Jensen headlines and the BASKET and HELIORA calls don't appear in any mover, so I'm not using them. No mover is named for a hack.
+Not quiet, but the flow is thin and concentrated. The main cluster is Japanese kawaii character names launched on pump.fun in the last few hours: bon ($11.9k cap, $21.8k 5m, 63% buys, +452% 1h), REBACCA ($11k cap, $4.4k 5m, 64% buys), and SOLCHAN and Nyamitto, which are already down 86-93% in the hour with weak or zero buys. The second theme is generic-name plays: "Memecoin" ($13.9k cap, $31.9k 5m, 61% buys, minutes old) and bon are the only movers with 5m volume above $10k, so they are the ones to research, not buy, and the vamp check comes first (find the original, check Similar Tokens). Setups to research: bon and Memecoin, only if 5m flow holds and the holder, dev and bundle checks pass. Legacy animal and cartoon coins (ROCKET, CBUCKS, Jimmies) are fading on thin 5m flow, and no mover is named for a hack. The scanner's meta summary disagrees with its own raw rows (it puts SOLCHAN at $22k and +894%, and calls Nyamit a $32k runner, while the rows show SOLCHAN at $9k and -86%, and Nyamitto at $2k and -93%), so I'm trusting the rows and treating the summary as unreliable.
 
 ## Moving most in its scans, last 30 min (1h volume)
-- SOLCHAN: $298,550 1h vol, $17,562 mcap, -32% 1h  
+- SOLCHAN: $123,755 1h vol, $7,129 mcap, -78% 1h  
   CA `5GfgQ79T5P8hSmyKhvRWZvNehgV8gJ3JNTsUvjegbYze`
-- JaoJiu: $183,692 1h vol, $160,702 mcap, -16% 1h  
-  CA `2UyrvgCRXiEwiKRVk96gs6B4myrBHZAfcLyMVLE8vSCy`
-- Slotbound: $117,174 1h vol, $7,243 mcap, -74% 1h  
+- Slotbound: $79,322 1h vol, $7,454 mcap, -81% 1h  
   CA `6woMBVpn4QwQVYeLysGKB2JiBSUCxkENmbemj5eE9Zz3`
-- REBACCA: $92,570 1h vol, $7,909 mcap, +142% 1h  
+- REBACCA: $78,265 1h vol, $10,964 mcap, +36% 1h  
   CA `CW2GNsWs6Fmgj8MKXqWWKNSgiEGTyHRxKKQNkQzrpump`
-- HELIORA: $80,751 1h vol, $18,479 mcap, -83% 1h  
+- Memecoin: $57,945 1h vol, $13,890 mcap, +471% 1h  
+  CA `2rhoUVCygC2LyQWNMXsofKXo1rcbZFJnSTpDbU9Ppump`
+- HELIORA: $50,442 1h vol, $16,820 mcap, -74% 1h  
   CA `96qfge1RkUWhSsv8i9V4QZFANGypKEe1u7pzCDGGpump`
