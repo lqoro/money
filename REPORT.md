@@ -1,13 +1,13 @@
 # Trencher live report
 
-Updated 2026-11-25T17:56:04Z (paper trading, never real money)
+Updated 2026-11-25T18:11:11Z (paper trading, never real money)
 
 - Equity: $74.23 (-25.8% vs $100 start)
 - Closed trades: 22, 3 wins
 - Fees paid: $14.78 (axiom $2.81, network $9.18, pool $2.66), plus $4.15 lost to slippage
 - New trades: WATCH-ONLY (scans and decides, buys nothing)
-- Brain: subscription, claude-haiku-5-5 for routine calls, claude-opus-5-5 for the daily review; 406 routine calls and 0 plan-limit hits in 48h
-- Watch log: 53 coins being followed, 3587 filed, 0 would-buys (6h follow, sampled every 2 min)
+- Brain: subscription, claude-haiku-5-5 for routine calls, claude-opus-5-5 for the daily review; 402 routine calls and 0 plan-limit hits in 48h
+- Watch log: 53 coins being followed, 3589 filed, 0 would-buys (6h follow, sampled every 2 min)
 
 ## Scorecard (after fees)
 - 22 closed, 3 won (14%), net $-25.79
@@ -73,9 +73,13 @@ Updated 2026-11-25T17:56:04Z (paper trading, never real money)
   CA `H4gHnZ3NCU7Z9XQwGX6YYJNyieGEW8pqwGRUcdSxpump`
 
 ## Last scan
-- 17:55Z: 2 coins, 2 with pairs, 0 passed the market filters, 0 researched
+- 18:10Z: 3 coins, 3 with pairs, 0 passed the market filters, 0 researched
 
 ## Coins it looked at, and why it passed
+- 18:00Z FIONA (DIP, $2,407,714 mcap, $9,157 5m vol): REJECT, Bundles: 10 linked wallet cluster(s) hold 29.6% of supply (>20%) (V17)  
+  CA `B34nXKzCgsJb9ChLuSHPRpXLE3WFSWyeT8Cqkzzmpump`
+- 17:59Z GRAUDIA (MIGRATED, $241,756 mcap, $44,350 5m vol): PASS at conviction 3, PASS — mid-range entry with no catalyst: 38% above the printed low, no X, no site, 18 tickers sharing the name. The bottom-buy gate fails (V1, V13).  
+  CA `6F2FyeyphDn62TFkXXpisUCohotPArgiM1kVXsPNpump`
 - 17:53Z CI (DIP, $115,027 mcap, $9,255 5m vol): PASS at conviction 3, PASS: Christmass Inu is 28 minutes old and up 61% on its last 5m candle, off a $23k low. It's a fresh rebound, not a dip, and it has no catalyst and no X (blockers: too new, chasing spike, no catalyst). (V1, V6)  
   CA `BDkYXdHCZZQTNn6LqFDS2WrKhD2rZmuQioqTW1wupump`
 - 17:52Z SOL2 (MIGRATED, $262,212 mcap, $251,946 5m vol): REJECT, RugCheck danger: Single holder ownership 50.40%  
@@ -92,14 +96,10 @@ Updated 2026-11-25T17:56:04Z (paper trading, never real money)
   CA `FrkmQGuoeZecEv5QxQV1zAHJwVJbGChPsC5GeLiqpump`
 - 17:20Z CBUCKS (MIGRATED, $5,361,959 mcap, $2,702 5m vol): REJECT, Top 10 hold 25.8% ex-pool (>25%) (V13)  
   CA `DtcicPCKTKeAh7TDEzTym3hXeoHAoMiBdYJhMYxZpump`
-- 17:14Z FIONA (DIP, $2,427,757 mcap, $5,936 5m vol): REJECT, Bundles: 10 linked wallet cluster(s) hold 29.6% of supply (>20%) (V17)  
-  CA `B34nXKzCgsJb9ChLuSHPRpXLE3WFSWyeT8Cqkzzmpump`
-- 17:08Z CI (FINAL_STRETCH, $20,541 mcap, $38,441 5m vol): PASS at conviction 3, PASS: split crowd. CI is one of 28 copies, a 16.5% bundle cluster sits on it, and it's already up 216% on the 5m at 10.7x pace. Chasing a spike in a vamp field (V1, V3, V6).  
-  CA `EC1K3jCNYhv2RN5496KU2h3L2h58qYopYQeg9uNBpump`
 
 ## What its skips did next (last 48h)
 A skip "ran" if the coin reached the first target (1.5x) from the skip price before a 20% drop, "dumped" if the drop came first. Sampled every 10 min, followed 6h.
-- top 10 over 25%: blocked 47, ran 9, dumped 35, flat 1, open 2 (saving losses: keep it)
+- top 10 over 25%: blocked 47, ran 9, dumped 36, flat 1, open 1 (saving losses: keep it)
   - ran: JENSEN up to 2.62x  
     CA `GaNJeASYBM9k3TvEeUC2Pdyu1TjcpzTmPpoom92fpump`
   - ran: GOAT up to 1.53x  
@@ -120,30 +120,32 @@ A skip "ran" if the coin reached the first target (1.5x) from the skip price bef
     CA `AdXjXfumPSSKk7PrfgDHcAsPvuxnKv7Zo9WZEWKbiDkh`
   - ran: Phil up to 2.05x  
     CA `GMLSyjZCKGtFwztp2mtT8PDeNUA6WEk7oQoe3QkFpump`
-- flow below pace: blocked 25, ran 6, dumped 17, flat 0, open 2 (saving losses: keep it)
+- flow below pace: blocked 25, ran 7, dumped 17, flat 0, open 1 (saving losses: keep it)
   - ran: Doomcat up to 1.62x  
     CA `EiQ1JvEUZCXN5kQi2UdS4CdQapidqC7MCXd5sRTPpump`
   - ran: Jesus up to 1.64x  
     CA `Gy5BUDnpJMWRsNVKh9sRtsBGunFXKKrbroQRoydQpump`
   - ran: GROKIA up to 1.51x  
     CA `3cL47ohWa2HApLYKtqPsqkjaxJ6HLvT5Ri1KvWdXpump`
-- RugCheck danger: blocked 24, ran 3, dumped 20, flat 0, open 1 (saving losses: keep it)
+- RugCheck danger: blocked 24, ran 3, dumped 21, flat 0, open 0 (saving losses: keep it)
   - ran: FOMOMAS up to 1.71x  
     CA `9Gu5JYt4Pas6cW4S6qtyFkDucFj6GMtpJiDC9sQbpump`
   - ran: TIMOTHY up to 2.14x  
     CA `AWg6LmGPfqjEqAU8N8wR8mYTbwmkwqMUqzrmggbgpump`
   - ran: TROLL up to 1.94x  
     CA `7ykeHoEnjnGkY6tqteXn47fdGtd7kfXWghiyZ7YKpump`
-- too new / sniping: blocked 21, ran 3, dumped 16, flat 1, open 1 (saving losses: keep it)
+- too new / sniping: blocked 21, ran 3, dumped 17, flat 1, open 0 (saving losses: keep it)
   - ran: BABYANSEM up to 2.77x  
     CA `F3VctV9FqDgiyqaztN6z78bgWy27eH7DBBHW1vjpump`
   - ran: Merged up to 2.18x  
     CA `AMYpNGi5aGrKr1ZDsotUdWh7k1mMi569ygtaHJmErGEd`
   - ran: Boor up to 1.56x  
     CA `GHFpSSw2ZMjmKCyc1wrHUjJiqnJeP18mekY9GL1Xpump`
-- falling knife (code): blocked 13, ran 1, dumped 11, flat 0, open 1 (saving losses: keep it)
+- falling knife (code): blocked 13, ran 2, dumped 11, flat 0, open 0 (saving losses: keep it)
   - ran: Jimmies up to 1.53x  
     CA `GisWWjhwrSud4aFGSHvTMt85Ky14sY7LeBFCpfoFpump`
+  - ran: Pompom up to 1.82x  
+    CA `5EmvWDizkpjAXbcfCcVq69w1id8GaLzi4LLwtuSgpump`
 - dev share over 1%: blocked 12, ran 2, dumped 10, flat 0, open 0 (saving losses: keep it)
   - ran: BLOOM up to 2.09x  
     CA `FyRXnHLBSeHHoigrgHR1hvcXiPbPCa5bxhVhEDampump`
@@ -196,16 +198,16 @@ Nothing has a positive edge after costs. All 213 settled coins came out at -12.2
 - [2026-11-02 20:25] I expected Slingoor, a clean MIGRATED leader with $25k of 5m flow at pace and a 0.77 buy share, to retest its $408k high from $304k. It never went green (0.98x peak) and hit the -20% stop in 2 minutes, a -$2.86 probe. My own thesis admitted there was no printed higher low after a peak only 6 minutes old, so this confirms the money-shape rule: buy share and flow are not structure (V1, V6). Next time a MIGRATED pullback with no higher low above the hourly low is a PASS with blocker "no higher low", not a probe. This is one loss, so it adds no new ban beyond the rule I already have.
 
 ## Meta right now
-The movers are not quiet. MONEY ($179k mcap, $44k 5m, 57% buys), CI ($19k, $38k 5m, 60% buys), DARKPOOL ($10k, $13.6k 5m, 64% buys) and STARMIND ($33k, $11k 5m) all clear the $10k 5-minute bar, so the crawler's claim that nothing does is wrong. Three themes run across several coins: animal and dog mascots (CI, KURO INU, Pompompurin, Miaomiao, LEMON), internet and chat culture (BIAO, PETER "King of /b/", Jimmies), and finance wordplay (MONEY, CI as "Commodity", DARKPOOL, IPO). Rising are MONEY, CI and DARKPOOL, all under an hour old. Fading are Pompompurin (-18% 1h, $5.7k 5m against $150k over 1h), LEMON (zero 5m buys, -54%), Jimmies (92% buys but 5m volume down to $878), and the 400-700h-old DESSA, BRUH and three.ws. Setups to research, not buy, at conviction 5 at most (a probe at best): MONEY (generic name, so confirm it is the original; it is already up 372% in an hour, so any stop goes under the pullback, not the spike), CI (check for a same-name vamp), and DARKPOOL (too young to call; it needs 5m volume to hold through a pullback). The crawler's LEMON +397%, BIAO +450%, Pompompurin $349k and $14.4k 5m, and its CursedBob, SHEEPCOIN, FRANK and Gemidia figures do not match the scan (LEMON -54%, BIAO +18%, Pompompurin $294k and $5.7k 5m), and the crawler's named coins are not in scan_movers, so I'm not using them. Web headlines (Trump dinner, Ansem dump) are attention, not what the trench is trading; holder, dev and bundle checks are still pending on every coin.
+The meta is an Inu-mascot and ticker-copy stack plus money wordplay, and the scan is not quiet. Rising on 5m volume and buyers: Slop Inu (SI, $29k mcap, $54k 5m, 58% buys, still on pump.fun), Memes Into Money (MIM, $365k mcap, $103k 5m, 79% buys, +863% in 1h), and GRAUDIA (Grok Claudia, $266k mcap, $36k 5m, 73% buys, an AI-name tie-in). Christmass Inu (CI, $111k, $10k 5m, 92% buys) is barely over the volume bar. Fading: Coal Inu and Commodity Inu (both "CI", -94% to -95% in 1h, zero 5m volume), EGG (-94%, zero 5m buys), HEYOS (-77%), and Fiona the Hippo (141h old, flat 1h). The "CI" stack is several coins sharing one ticker, which is a vamp pattern, so only the original is worth a look; Slop Inu is the one research setup, at conviction 5 as a probe at most, with the stop under its recent base, and MIM only on a pullback that holds volume, not a chase at +863%. Web headlines (Trump memecoin gala, record lows) are attention, not what the trench is trading, and holder, dev and bundle checks still run on each coin before any entry.
 
 ## Moving most in its scans, last 30 min (1h volume)
-- MONEY: $624,887 1h vol, $66,427 mcap, -60% 1h  
-  CA `Bg74niwsyZFFxPhY8J47crDtDSUctKZEb1AuZL93pump`
-- LENDR: $321,375 1h vol, $334,435 mcap, +734% 1h  
-  CA `AGazYig7A8Co6ZapAPterBRLitdiP6AAaWiPH8jWLend`
+- GRAUDIA: $297,872 1h vol, $266,288 mcap, +671% 1h  
+  CA `6F2FyeyphDn62TFkXXpisUCohotPArgiM1kVXsPNpump`
 - SOL2: $281,580 1h vol, $262,212 mcap, +171% 1h  
   CA `HdPxFDUaKBwMtTWseuYJp4NQCCBqULjn2JhhddGhpump`
-- EGG: $119,489 1h vol, $8,222 mcap, -71% 1h  
+- CI: $166,578 1h vol, $1,375 mcap, -95% 1h  
+  CA `FrkmQGuoeZecEv5QxQV1zAHJwVJbGChPsC5GeLiqpump`
+- EGG: $126,940 1h vol, $1,653 mcap, -94% 1h  
   CA `HkjQAQjNegsyNct8nbLqcYdGT7SEZLhbqmBiM5eUpump`
 - CI: $109,020 1h vol, $111,492 mcap, +224% 1h  
   CA `BDkYXdHCZZQTNn6LqFDS2WrKhD2rZmuQioqTW1wupump`
