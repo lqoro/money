@@ -1,13 +1,13 @@
 # Trencher live report
 
-Updated 2026-11-25T06:49:50Z (paper trading, never real money)
+Updated 2026-11-25T07:04:51Z (paper trading, never real money)
 
 - Equity: $74.23 (-25.8% vs $100 start)
 - Closed trades: 22, 3 wins
 - Fees paid: $14.78 (axiom $2.81, network $9.18, pool $2.66), plus $4.15 lost to slippage
 - New trades: WATCH-ONLY (scans and decides, buys nothing)
-- Brain: subscription, claude-haiku-5-5 for routine calls, claude-opus-5-5 for the daily review; 474 routine calls and 0 plan-limit hits in 48h
-- Watch log: 64 coins being followed, 3488 filed, 0 would-buys (6h follow, sampled every 2 min)
+- Brain: subscription, claude-haiku-5-5 for routine calls, claude-opus-5-5 for the daily review; 475 routine calls and 0 plan-limit hits in 48h
+- Watch log: 61 coins being followed, 3493 filed, 0 would-buys (6h follow, sampled every 2 min)
 
 ## Scorecard (after fees)
 - 22 closed, 3 won (14%), net $-25.79
@@ -73,9 +73,13 @@ Updated 2026-11-25T06:49:50Z (paper trading, never real money)
   CA `H4gHnZ3NCU7Z9XQwGX6YYJNyieGEW8pqwGRUcdSxpump`
 
 ## Last scan
-- 06:49Z: 4 coins, 4 with pairs, 0 passed the market filters, 0 researched
+- 07:04Z: 3 coins, 3 with pairs, 0 passed the market filters, 0 researched
 
 ## Coins it looked at, and why it passed
+- 07:03Z BASKET (MIGRATED, $605,495 mcap, $21,518 5m vol): PASS at conviction 3, PASS: flow below pace, no breakout, bottom-buy narrative gate fails. BASKET is the original of a 13-copy field that's cooling. (V1, V6, V13)  
+  CA `3Tg6YnNrfPdFfsY14MaNsDMWLseAyrUDS3myJtbaJN6f`
+- 06:54Z YUMA (MIGRATED, $52,408 mcap, $16,342 5m vol): PASS at conviction 2, PASS: no printed higher low, down 74% from peak with a saw-tooth 15m chart and a -28% 5m candle. Blocker "no higher low." Falling knife, not a pullback. (V1, V6)  
+  CA `CkwFsrupdFHzo5kYk8b5W47CVx1v5ymzeu6BBoDjpump`
 - 06:44Z WASTED (MIGRATED, $1,267,782 mcap, $3,302 5m vol): REJECT, Dev holds 1.1% (>1%) (V13, V17)  
   CA `GexThZHgaswpAQ7Fi8QrHFubjPimUNSYhJiAA7XZpump`
 - 06:27Z FUCKCANCER (DIP, $56,452 mcap, $3,428 5m vol): REJECT, Dip with fading attention is a falling knife, not a dip (5m at 0.33x the hour's pace, under 0.6x)  
@@ -92,10 +96,6 @@ Updated 2026-11-25T06:49:50Z (paper trading, never real money)
   CA `CkwFsrupdFHzo5kYk8b5W47CVx1v5ymzeu6BBoDjpump`
 - 05:48Z WASTED (MIGRATED, $1,190,988 mcap, $2,656 5m vol): REJECT, Dev holds 1.1% (>1%) (V13, V17)  
   CA `GexThZHgaswpAQ7Fi8QrHFubjPimUNSYhJiAA7XZpump`
-- 05:41Z FUCKCANCER (DIP, $87,498 mcap, $12,560 5m vol): REJECT, Dip with fading attention is a falling knife, not a dip (5m at 0.53x the hour's pace, under 0.6x)  
-  CA `4UMErmfmKzDCVmHrwBUbnDnbQnVKVYAcT7X5AdTkpump`
-- 05:32Z BASKET (DIP, $232,213 mcap, $16,631 5m vol): REJECT, Dip with fading attention is a falling knife, not a dip (5m at 0.23x the hour's pace, under 0.6x)  
-  CA `3Tg6YnNrfPdFfsY14MaNsDMWLseAyrUDS3myJtbaJN6f`
 
 ## What its skips did next (last 48h)
 A skip "ran" if the coin reached the first target (1.5x) from the skip price before a 20% drop, "dumped" if the drop came first. Sampled every 10 min, followed 6h.
@@ -120,7 +120,7 @@ A skip "ran" if the coin reached the first target (1.5x) from the skip price bef
     CA `37corVSMFFrqP3WK7AtMV6yFTGSvjFEB5fWnH1Bcpump`
   - ran: Doomcat up to 1.62x  
     CA `EiQ1JvEUZCXN5kQi2UdS4CdQapidqC7MCXd5sRTPpump`
-- near the high / chasing: blocked 29, ran 8, dumped 20, flat 1, open 0 (saving losses: keep it)
+- near the high / chasing: blocked 27, ran 7, dumped 19, flat 1, open 0 (saving losses: keep it)
   - ran: Bertcoin up to 1.8x  
     CA `xEK58Qa2xZ7C36Z2g3Jjq1WHY561CvvnJkLpgJspump`
   - ran: WOFL up to 2.62x  
@@ -194,16 +194,16 @@ Nothing has a positive after-cost edge yet. All 229 settled coins average -8.7% 
 - [2026-11-02 20:25] I expected Slingoor, a clean MIGRATED leader with $25k of 5m flow at pace and a 0.77 buy share, to retest its $408k high from $304k. It never went green (0.98x peak) and hit the -20% stop in 2 minutes, a -$2.86 probe. My own thesis admitted there was no printed higher low after a peak only 6 minutes old, so this confirms the money-shape rule: buy share and flow are not structure (V1, V6). Next time a MIGRATED pullback with no higher low above the hourly low is a PASS with blocker "no higher low", not a probe. This is one loss, so it adds no new ban beyond the rule I already have.
 
 ## Meta right now
-The meta on the tape right now is fresh launches with real buyers, not jokes. Basket ($238k cap, $19.7k 5m, 57% buys, 0.8h old, Raydium) and Fuck Cancer ($73k cap, $14.5k 5m, 59% buys, 0.7h old, PumpSwap) are the only movers clearing the $10k 5m bar with a live cap, so under the MIGRATED rules (V1, V6) they're the two setups to research now, with entries only after the holder, dev and bundle checks run. Both 5m flows are already slowing to roughly a quarter to two-thirds of their hourly pace, so treat this as cooling, not accelerating. Fading: the cartoon and meme-character coins (Trollface -61%, 404GIRL -62%, Golden Penguin -18%, pode -26%) and the brand-name spikes, Twitch (+1103% in 1h but $0 5m) and Reddit (14% buys, $198 5m), which pumped and went quiet. Legacy coins (WASTED at 25 days, HOGE at 10 days, ROCKET, jingyu) carry market cap with almost no flow, so they're dead weight. I'm not using the crawler's YUMA, Slitheen or Alien numbers because they don't match this scan, the Trump dinner and Ansem headlines aren't what's trading, and Ansem is a blocked drain coin regardless; Basket's age also conflicts with the crawler (0.8h here, about 6 min there), so I'll re-pull it before anything else.
+The trenches are thin right now, and the flow is concentrated in two coins, not a theme. Only YUMA ($52k cap, $14.4k 5m, 70% buys, 3.6h old, PumpSwap) and Merged (a 6-minute-old pump.fun launch, $10.4k 5m, 64% buys, up 413% in 1h) clear the $10k 5m bar in scan_movers. Rising: fresh pump.fun launches with real buyers. Fading: cartoon and meme-character coins (Trollface, 404GIRL, Golden Penguin, pode, Cartoon Money at $110 5m) and brand-name pumps like Reddit ($0 5m), which went quiet. Legacy coins (WASTED at 612h, ROCKET, SIMPS, Christmax) carry market cap with almost no flow, so they aren't a meta. The one setup that fits the MIGRATED rules (age ≤12h, cap ≥$30k, 5m ≥$10k) is YUMA: research it with the holder, dev and bundle checks, take initials at 2x, and treat the -24% 1h as a reason for a tight stop. Merged is too new to touch under the no-snipe rule. Basket and Fuck Cancer come only from the crawler summary and aren't in this scan, so they stay unverified until re-pulled, and Basket's age already conflicts. Ansem is a blocked drain coin and the Trump headlines aren't trading here.
 
 ## Moving most in its scans, last 30 min (1h volume)
-- FUCKCANCER: $120,903 1h vol, $53,596 mcap, -37% 1h  
-  CA `4UMErmfmKzDCVmHrwBUbnDnbQnVKVYAcT7X5AdTkpump`
+- BASKET: $645,148 1h vol, $605,750 mcap, +111% 1h  
+  CA `3Tg6YnNrfPdFfsY14MaNsDMWLseAyrUDS3myJtbaJN6f`
+- YUMA: $137,788 1h vol, $52,408 mcap, -24% 1h  
+  CA `CkwFsrupdFHzo5kYk8b5W47CVx1v5ymzeu6BBoDjpump`
+- Merged: $58,746 1h vol, $12,195 mcap, +505% 1h  
+  CA `AMYpNGi5aGrKr1ZDsotUdWh7k1mMi569ygtaHJmErGEd`
+- N3ON: $43,521 1h vol, $11,430 mcap, +363% 1h  
+  CA `8HBAgQbwNucWbRyFHn7Y1DB8Y348WAsPWDJTT7JRpump`
 - WASTED: $34,560 1h vol, $1,267,782 mcap, +15% 1h  
   CA `GexThZHgaswpAQ7Fi8QrHFubjPimUNSYhJiAA7XZpump`
-- Memeployed: $11,608 1h vol, $75,400 mcap, -15% 1h  
-  CA `4m2PS6yW2xDk5V9nJgPjnus1eguwCDSWXbA2YQeVkqxn`
-- 404GIRL: $6,549 1h vol, $5,618 mcap, -63% 1h  
-  CA `7wohLebdTHjfCjP6PTVM3HJwMNed4vEL1ZyTawtupump`
-- HOGE: $6,248 1h vol, $646,083 mcap, -5% 1h  
-  CA `FVzqGqRmr4UH1Fif6dewmwbJ1p4YUZCu8dcw4Efopump`
