@@ -1,13 +1,13 @@
 # Trencher live report
 
-Updated 2026-11-25T15:54:56Z (paper trading, never real money)
+Updated 2026-11-25T16:10:00Z (paper trading, never real money)
 
 - Equity: $74.23 (-25.8% vs $100 start)
 - Closed trades: 22, 3 wins
 - Fees paid: $14.78 (axiom $2.81, network $9.18, pool $2.66), plus $4.15 lost to slippage
 - New trades: WATCH-ONLY (scans and decides, buys nothing)
-- Brain: subscription, claude-haiku-5-5 for routine calls, claude-opus-5-5 for the daily review; 414 routine calls and 0 plan-limit hits in 48h
-- Watch log: 43 coins being followed, 3574 filed, 0 would-buys (6h follow, sampled every 2 min)
+- Brain: subscription, claude-haiku-5-5 for routine calls, claude-opus-5-5 for the daily review; 412 routine calls and 0 plan-limit hits in 48h
+- Watch log: 42 coins being followed, 3576 filed, 0 would-buys (6h follow, sampled every 2 min)
 
 ## Scorecard (after fees)
 - 22 closed, 3 won (14%), net $-25.79
@@ -73,9 +73,11 @@ Updated 2026-11-25T15:54:56Z (paper trading, never real money)
   CA `H4gHnZ3NCU7Z9XQwGX6YYJNyieGEW8pqwGRUcdSxpump`
 
 ## Last scan
-- 15:53Z: 9 coins, 7 with pairs, 0 passed the market filters, 0 researched
+- 16:09Z: 6 coins, 4 with pairs, 1 passed the market filters, 1 researched
 
 ## Coins it looked at, and why it passed
+- 16:09Z LEMON (DIP, $169,322 mcap, $21,782 5m vol): REJECT, Dip with fading attention is a falling knife, not a dip (5m at 0.31x the hour's pace, under 0.6x)  
+  CA `CuQUeUa6YbSSK52PTaL8eok8c1hrG6qyuyJyovmapump`
 - 15:35Z McCat (FINAL_STRETCH, $19,127 mcap, $20,722 5m vol): REJECT, Top 10 hold 40.0% ex-pool (>25%) (V13)  
   CA `FMMRv2doNMperPCSANuSWXcMCSs2YkxTTosN7TEypump`
 - 15:32Z IPO (FINAL_STRETCH, $22,615 mcap, $15,484 5m vol): PASS at conviction 2, PASS. Thirty-five-minute-old pump.fun copy, up 1036% on the hour, sitting on a +43% five-minute candle with 3.8x pace flow. That's a spike, and the ticker has 29 copies. Blockers: chasing spike, too new, split crowd. (V1, V6, V13)  
@@ -94,8 +96,6 @@ Updated 2026-11-25T15:54:56Z (paper trading, never real money)
   CA `5EmvWDizkpjAXbcfCcVq69w1id8GaLzi4LLwtuSgpump`
 - 14:47Z FRANK (MIGRATED, $60,062 mcap, $41,936 5m vol): REJECT, LP only 0% burned/locked (V2, V3, V6)  
   CA `GbJCuSXQYRXYf8yxVV16yo4PBQ4H3FsT29fqkTSBpump`
-- 14:46Z WASTED (DIP, $905,233 mcap, $2,867 5m vol): REJECT, Dev holds 1.1% (>1%) (V13, V17)  
-  CA `GexThZHgaswpAQ7Fi8QrHFubjPimUNSYhJiAA7XZpump`
 
 ## What its skips did next (last 48h)
 A skip "ran" if the coin reached the first target (1.5x) from the skip price before a 20% drop, "dumped" if the drop came first. Sampled every 10 min, followed 6h.
@@ -120,7 +120,7 @@ A skip "ran" if the coin reached the first target (1.5x) from the skip price bef
     CA `AdXjXfumPSSKk7PrfgDHcAsPvuxnKv7Zo9WZEWKbiDkh`
   - ran: Phil up to 2.05x  
     CA `GMLSyjZCKGtFwztp2mtT8PDeNUA6WEk7oQoe3QkFpump`
-- flow below pace: blocked 26, ran 6, dumped 19, flat 0, open 1 (saving losses: keep it)
+- flow below pace: blocked 25, ran 6, dumped 19, flat 0, open 0 (saving losses: keep it)
   - ran: NVDA up to 1.52x  
     CA `37corVSMFFrqP3WK7AtMV6yFTGSvjFEB5fWnH1Bcpump`
   - ran: Doomcat up to 1.62x  
@@ -141,22 +141,22 @@ A skip "ran" if the coin reached the first target (1.5x) from the skip price bef
     CA `AMYpNGi5aGrKr1ZDsotUdWh7k1mMi569ygtaHJmErGEd`
   - ran: Boor up to 1.56x  
     CA `GHFpSSw2ZMjmKCyc1wrHUjJiqnJeP18mekY9GL1Xpump`
-- dev share over 1%: blocked 13, ran 2, dumped 10, flat 0, open 1 (saving losses: keep it)
+- dev share over 1%: blocked 13, ran 2, dumped 11, flat 0, open 0 (saving losses: keep it)
   - ran: BLOOM up to 2.09x  
     CA `FyRXnHLBSeHHoigrgHR1hvcXiPbPCa5bxhVhEDampump`
   - ran: PI up to 1.77x  
     CA `D2AK5DvBj8AxN5VX1t6bjv7muJVPUx4hFPowVRWYpump`
-- bundles over the line: blocked 12, ran 2, dumped 6, flat 3, open 1 (saving losses: keep it)
+- falling knife (code): blocked 12, ran 1, dumped 9, flat 1, open 1 (saving losses: keep it)
+  - ran: Jimmies up to 1.53x  
+    CA `GisWWjhwrSud4aFGSHvTMt85Ky14sY7LeBFCpfoFpump`
+- thin 5m volume: blocked 11, ran 1, dumped 7, flat 1, open 2 (saving losses: keep it)
+  - ran: NINO up to 1.55x  
+    CA `BqekG1RSPUthaKfStu7Uvyvr1eR6TchrQMp1M5r5pump`
+- bundles over the line: blocked 11, ran 2, dumped 6, flat 2, open 1 (saving losses: keep it)
   - ran: jingyu up to 1.58x  
     CA `DUZrwdjEthcJ99ZiRXr31UuqTohoTg7VjTEyfGdBpump`
   - ran: DUMBMONEY up to 1.74x  
     CA `GEHehS5Rr4rNCjvrHLjjV1avD4bjMsn53ywDGv1spump`
-- thin 5m volume: blocked 11, ran 1, dumped 7, flat 1, open 2 (saving losses: keep it)
-  - ran: NINO up to 1.55x  
-    CA `BqekG1RSPUthaKfStu7Uvyvr1eR6TchrQMp1M5r5pump`
-- falling knife (code): blocked 11, ran 1, dumped 9, flat 1, open 0 (saving losses: keep it)
-  - ran: Jimmies up to 1.53x  
-    CA `GisWWjhwrSud4aFGSHvTMt85Ky14sY7LeBFCpfoFpump`
 
 ## Daily review (2026-11-25, claude-opus-5-5)
 Nothing has a positive edge after costs. All 213 settled coins came out at -12.2% net under the simple plan, and every setup and stage is negative: MIGRATED -10.0%, FINAL_STRETCH -15.3%, DIP -19.8%. The cost estimate, about 9.8% round trip on a $10 buy, is what kills it. Before costs, MIGRATED (about -0.3%) and the coins the brain reviewed (about +0.8%) are close to break-even. With a 1.5x target, a -20% stop and about 10% cost, a coin set needs roughly 42% of its coins to hit the target before the stop just to break even. The best group here gets 28.6%. With n=213, repeat entries for the same coin and coins from the same meme moving together, the before-cost numbers are within noise of zero. The after-cost loss is not noise. I can't say whether the routine model's would-buys beat its passes: it logged 0 would-buys in 24h. Every coin that reached it was passed, so the only split we can measure is the checklist. Checklist-passed coins ran 28.6% of the time vs 15.8% for checklist failures, and netted -9.0% vs -15.6%.
@@ -194,16 +194,16 @@ Nothing has a positive edge after costs. All 213 settled coins came out at -12.2
 - [2026-11-02 20:25] I expected Slingoor, a clean MIGRATED leader with $25k of 5m flow at pace and a 0.77 buy share, to retest its $408k high from $304k. It never went green (0.98x peak) and hit the -20% stop in 2 minutes, a -$2.86 probe. My own thesis admitted there was no printed higher low after a peak only 6 minutes old, so this confirms the money-shape rule: buy share and flow are not structure (V1, V6). Next time a MIGRATED pullback with no higher low above the hourly low is a PASS with blocker "no higher low", not a probe. This is one loss, so it adds no new ban beyond the rule I already have.
 
 ## Meta right now
-Meta: the only group with real buyers and rising price is cartoon-character coins. CursedBob is +69% on 1h with 60% buys and $4.7k 5m volume, and FRANK Swine-atra is +112% on 1h with 63% buys and $41.9k 5m on a $60k cap that is about 12 minutes old. Lore is +339% but has only $1.7k 5m, too thin to matter. Launchpad/tooling names are fading: KYM is -62% on 1h with $1.5k 5m, and Gemidia is -99.6% with zero 5m volume, so the crawler's "+604%, 90% buys" claim is not in the data and I'm treating Gemidia as dead. Older coins with volume (DESSA, WASTED, CBUCKS, BRUH, 18 to 50 days old) are attention, not trench meta, and the Trump dinner and Ansem headlines are not on the movers (ANSEM did $17 of 5m volume), so I'm not trading news. The crawler summary contradicts the scan rows on several coins, so I'm going by scan_movers only. Setups to research, not buy, all below conviction 5 for now: FRANK (extended, wait for a dip that holds with buyers back in), Pompompurin pumpswap ($232k, $14.4k 5m, flat, only after I confirm the original CA against the three the crawler cited), and CursedBob (its $4.7k 5m is under the $10k bar, so watch only). Holder, dev and bundle checks decide each one before any entry, and each needs an exit plan written first.
+Meta from scan_movers is cartoon and character coins plus cute animal and food mascots (Pompompurin, CursedBob, LEMON's lemon pig, SHEEPCOIN), with a second thread of chat-culture jokes (BIAO, a sticker name, and the Jimmies phrase). The crawler's FRANK and Gemidia calls are not in scan_movers, so I'm not trading them. LEMON (+397% 1h) and BIAO (+450% 1h) are the rising ones, both under an hour old, but both show zero 5m volume, and nothing on the list clears the ~$10k 5m bar, so the movers are quiet at the 5-minute level. Fading: CursedBob (15% buys, -14%), SHEEPCOIN, MONEYGO (-99%), KYM (launchpad tooling, -55%), and the old DESSA, WASTED, CBUCKS and BRUH, which are attention, not trench meta. Setups to research, not buy, all under conviction 5: Pompompurin ($349k, 4.8h, +35% 1h) once the original CA is confirmed, since the crawler's $14.4k 5m doesn't match the scan's zero; LEMON or BIAO only if 5m volume returns to ~$10k and holds through a pullback; Jimmies only if its 94% buy ratio comes with real volume. Holder, dev and bundle checks run on each before any entry, and each needs a written exit plan first.
 
 ## Moving most in its scans, last 30 min (1h volume)
-- LEMON: $637,203 1h vol, $466,316 mcap, +331% 1h  
+- LEMON: $848,065 1h vol, $138,786 mcap, +28% 1h  
   CA `CuQUeUa6YbSSK52PTaL8eok8c1hrG6qyuyJyovmapump`
-- BIAO: $564,305 1h vol, $186,585 mcap, +393% 1h  
+- BIAO: $577,150 1h vol, $208,007 mcap, +450% 1h  
   CA `As3XtYSstuVdrVyb6sJZZ77Tu8JvjTBg6S6hgPv4pump`
-- Pompom: $245,206 1h vol, $465,065 mcap, +74% 1h  
+- Pompom: $297,229 1h vol, $348,795 mcap, +35% 1h  
   CA `5EmvWDizkpjAXbcfCcVq69w1id8GaLzi4LLwtuSgpump`
-- DESSA: $87,882 1h vol, $779,914 mcap, -13% 1h  
+- DESSA: $78,762 1h vol, $715,878 mcap, -15% 1h  
   CA `npz2FhoufQ7pKqhGpaipYWacrAkidyW2yDpVWSvpump`
-- MONEYGO: $80,783 1h vol, $1,271 mcap, -99% 1h  
+- MONEYGO: $61,320 1h vol, $1,271 mcap, -99% 1h  
   CA `5Go8ByHzd9vvdBHhqFnxxgU2SRDfTv5XXMLjBnvrpump`
