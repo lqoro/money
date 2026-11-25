@@ -1,13 +1,13 @@
 # Trencher live report
 
-Updated 2026-11-25T16:25:09Z (paper trading, never real money)
+Updated 2026-11-25T16:40:23Z (paper trading, never real money)
 
 - Equity: $74.23 (-25.8% vs $100 start)
 - Closed trades: 22, 3 wins
 - Fees paid: $14.78 (axiom $2.81, network $9.18, pool $2.66), plus $4.15 lost to slippage
 - New trades: WATCH-ONLY (scans and decides, buys nothing)
-- Brain: subscription, claude-haiku-5-5 for routine calls, claude-opus-5-5 for the daily review; 414 routine calls and 0 plan-limit hits in 48h
-- Watch log: 44 coins being followed, 3578 filed, 0 would-buys (6h follow, sampled every 2 min)
+- Brain: subscription, claude-haiku-5-5 for routine calls, claude-opus-5-5 for the daily review; 412 routine calls and 0 plan-limit hits in 48h
+- Watch log: 44 coins being followed, 3580 filed, 0 would-buys (6h follow, sampled every 2 min)
 
 ## Scorecard (after fees)
 - 22 closed, 3 won (14%), net $-25.79
@@ -73,9 +73,13 @@ Updated 2026-11-25T16:25:09Z (paper trading, never real money)
   CA `H4gHnZ3NCU7Z9XQwGX6YYJNyieGEW8pqwGRUcdSxpump`
 
 ## Last scan
-- 16:24Z: 6 coins, 4 with pairs, 0 passed the market filters, 0 researched
+- 16:39Z: 2 coins, 1 with pairs, 0 passed the market filters, 0 researched
 
 ## Coins it looked at, and why it passed
+- 16:35Z CBUCKS (MIGRATED, $4,889,682 mcap, $2,484 5m vol): REJECT, Top 10 hold 25.8% ex-pool (>25%) (V13)  
+  CA `DtcicPCKTKeAh7TDEzTym3hXeoHAoMiBdYJhMYxZpump`
+- 16:33Z HEYOS (FINAL_STRETCH, $19,326 mcap, $2,341 5m vol): PASS at conviction 3, PASS — chasing a +19% 5m spike at its high, 5m flow $2.3k under the $10k bar, and the site doesn't show this CA. Blocker: chasing spike. (V1, V6, V13)  
+  CA `A88p1LcHisrx3TuTwUGVrLtc1LBTUPZUfVgaCGutAFaK`
 - 16:18Z IPO (FINAL_STRETCH, $16,894 mcap, $5,493 5m vol): PASS at conviction 3, PASS — 29 copies of "ipo", top 10 at 23.1%, and a saw-tooth chart after a +749% day with no catalyst. Not a buy. (V1, V6, V13)  
   CA `EYiXPL3LTuXEMb7KjhP6eTETPehJGhhU5H7ZYmWsSipo`
 - 16:15Z Pompom (MIGRATED, $316,777 mcap, $19,839 5m vol): PASS at conviction 3, PASS: Pompompurin is a 38%-off MIGRATED dip with 5m flow at 0.8x pace, no printed higher low and no outside catalyst. Blocker: "flow below pace". (V1, V6)  
@@ -92,14 +96,10 @@ Updated 2026-11-25T16:25:09Z (paper trading, never real money)
   CA `EYiXPL3LTuXEMb7KjhP6eTETPehJGhhU5H7ZYmWsSipo`
 - 15:26Z hacked (MIGRATED, $42,320 mcap, $0 5m vol): REJECT, Hack story ("hack" in the name or ticker): these tend to go down, owner rule  
   CA `FK7bc3fR8UL8uogN2u8J9yEpEbQJKR7yKsp3G8rvpump`
-- 15:08Z Santa (MIGRATED, $111,915 mcap, $5,210 5m vol): REJECT, Bundles: 6 linked wallet cluster(s) hold 31.2% of supply (>20%) (V17)  
-  CA `CcpN5RXTEjbRqbtuHoxyiMZorzsghbfpeyYQjSvTgS27`
-- 15:04Z DESSA (MIGRATED, $877,280 mcap, $2,259 5m vol): PASS at conviction 2, PASS: 5m flow is 0.16x its hourly pace and the story is one word with no GitHub behind its AI claim. Blocker: "flow below pace" (V1, V6).  
-  CA `npz2FhoufQ7pKqhGpaipYWacrAkidyW2yDpVWSvpump`
 
 ## What its skips did next (last 48h)
 A skip "ran" if the coin reached the first target (1.5x) from the skip price before a 20% drop, "dumped" if the drop came first. Sampled every 10 min, followed 6h.
-- top 10 over 25%: blocked 46, ran 8, dumped 35, flat 1, open 2 (saving losses: keep it)
+- top 10 over 25%: blocked 46, ran 8, dumped 35, flat 2, open 1 (saving losses: keep it)
   - ran: SNP6900 up to 2.76x  
     CA `DnbQKi146NDmwwji3f3q5i68HQnYyBEhoDyj2q3Npump`
   - ran: JENSEN up to 2.62x  
@@ -113,7 +113,7 @@ A skip "ran" if the coin reached the first target (1.5x) from the skip price bef
     CA `9cDnmLRDWeJzcpyw8tSFAT7HS4Aunx6MmZWjMfrzpump`
   - ran: SHHFT up to 1.61x  
     CA `GqMg4TRt5U5HRK6oeZYwCF1Jz7Ym9MSzWSoFCtFsbzf6`
-- near the high / chasing: blocked 28, ran 8, dumped 20, flat 0, open 0 (saving losses: keep it)
+- near the high / chasing: blocked 29, ran 8, dumped 20, flat 0, open 1 (saving losses: keep it)
   - ran: Bertcoin up to 1.8x  
     CA `xEK58Qa2xZ7C36Z2g3Jjq1WHY561CvvnJkLpgJspump`
   - ran: WOFL up to 2.62x  
@@ -149,7 +149,7 @@ A skip "ran" if the coin reached the first target (1.5x) from the skip price bef
 - falling knife (code): blocked 12, ran 1, dumped 10, flat 1, open 0 (saving losses: keep it)
   - ran: Jimmies up to 1.53x  
     CA `GisWWjhwrSud4aFGSHvTMt85Ky14sY7LeBFCpfoFpump`
-- thin 5m volume: blocked 11, ran 1, dumped 7, flat 1, open 2 (saving losses: keep it)
+- thin 5m volume: blocked 11, ran 1, dumped 7, flat 2, open 1 (saving losses: keep it)
   - ran: NINO up to 1.55x  
     CA `BqekG1RSPUthaKfStu7Uvyvr1eR6TchrQMp1M5r5pump`
 - bundles over the line: blocked 11, ran 2, dumped 6, flat 2, open 1 (saving losses: keep it)
@@ -197,8 +197,6 @@ Nothing has a positive edge after costs. All 213 settled coins came out at -12.2
 Meta from scan_movers is cartoon and character coins plus cute animal and food mascots (Pompompurin, CursedBob, LEMON's lemon pig, SHEEPCOIN), with a second thread of chat-culture jokes (BIAO, a sticker name, and the Jimmies phrase). The crawler's FRANK and Gemidia calls are not in scan_movers, so I'm not trading them. LEMON (+397% 1h) and BIAO (+450% 1h) are the rising ones, both under an hour old, but both show zero 5m volume, and nothing on the list clears the ~$10k 5m bar, so the movers are quiet at the 5-minute level. Fading: CursedBob (15% buys, -14%), SHEEPCOIN, MONEYGO (-99%), KYM (launchpad tooling, -55%), and the old DESSA, WASTED, CBUCKS and BRUH, which are attention, not trench meta. Setups to research, not buy, all under conviction 5: Pompompurin ($349k, 4.8h, +35% 1h) once the original CA is confirmed, since the crawler's $14.4k 5m doesn't match the scan's zero; LEMON or BIAO only if 5m volume returns to ~$10k and holds through a pullback; Jimmies only if its 94% buy ratio comes with real volume. Holder, dev and bundle checks run on each before any entry, and each needs a written exit plan first.
 
 ## Moving most in its scans, last 30 min (1h volume)
-- LEMON: $848,065 1h vol, $138,786 mcap, +28% 1h  
-  CA `CuQUeUa6YbSSK52PTaL8eok8c1hrG6qyuyJyovmapump`
 - Pompom: $297,907 1h vol, $316,777 mcap, +1% 1h  
   CA `5EmvWDizkpjAXbcfCcVq69w1id8GaLzi4LLwtuSgpump`
 - BIAO: $97,183 1h vol, $190,486 mcap, -14% 1h  
@@ -207,3 +205,5 @@ Meta from scan_movers is cartoon and character coins plus cute animal and food m
   CA `npz2FhoufQ7pKqhGpaipYWacrAkidyW2yDpVWSvpump`
 - IPO: $68,691 1h vol, $17,967 mcap, +83% 1h  
   CA `EYiXPL3LTuXEMb7KjhP6eTETPehJGhhU5H7ZYmWsSipo`
+- Miaomiao: $39,188 1h vol, $12,212 mcap, +392% 1h  
+  CA `BxZ4f47jzHCQLeuby76jwwwzL8ASc2p45gmreF2tpump`
