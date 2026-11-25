@@ -1,13 +1,13 @@
 # Trencher live report
 
-Updated 2026-11-25T04:18:59Z (paper trading, never real money)
+Updated 2026-11-25T04:33:59Z (paper trading, never real money)
 
 - Equity: $74.23 (-25.8% vs $100 start)
 - Closed trades: 22, 3 wins
 - Fees paid: $14.78 (axiom $2.81, network $9.18, pool $2.66), plus $4.15 lost to slippage
 - New trades: WATCH-ONLY (scans and decides, buys nothing)
-- Brain: subscription, claude-haiku-5-5 for routine calls, claude-opus-5-5 for the daily review; 493 routine calls and 0 plan-limit hits in 48h
-- Watch log: 77 coins being followed, 3454 filed, 0 would-buys (6h follow, sampled every 2 min)
+- Brain: subscription, claude-haiku-5-5 for routine calls, claude-opus-5-5 for the daily review; 490 routine calls and 0 plan-limit hits in 48h
+- Watch log: 75 coins being followed, 3459 filed, 0 would-buys (6h follow, sampled every 2 min)
 
 ## Scorecard (after fees)
 - 22 closed, 3 won (14%), net $-25.79
@@ -73,9 +73,15 @@ Updated 2026-11-25T04:18:59Z (paper trading, never real money)
   CA `H4gHnZ3NCU7Z9XQwGX6YYJNyieGEW8pqwGRUcdSxpump`
 
 ## Last scan
-- 04:17Z: 3 coins, 3 with pairs, 0 passed the market filters, 0 researched
+- 04:33Z: 3 coins, 3 with pairs, 0 passed the market filters, 0 researched
 
 ## Coins it looked at, and why it passed
+- 04:28Z CBUCKS (MIGRATED, $5,229,491 mcap, $3,292 5m vol): REJECT, Top 10 hold 25.9% ex-pool (>25%) (V13)  
+  CA `DtcicPCKTKeAh7TDEzTym3hXeoHAoMiBdYJhMYxZpump`
+- 04:24Z Manlet (MIGRATED, $78,725 mcap, $34,730 5m vol): REJECT, Bundles: 10 linked wallet cluster(s) hold 26.6% of supply (>20%) (V17)  
+  CA `HyXjbs37EKU1QPKm2MnSQ3YaxNCugdh2W8bktSfYpump`
+- 04:23Z PENGUIN (FINAL_STRETCH, $17,510 mcap, $20,159 5m vol): PASS at conviction 2, PASS — 18-copy penguin vamp field, one bundle at 7.4% of supply, and a saw-tooth chart with no outside catalyst. Farm until shown otherwise (V1, V3, V13).  
+  CA `E1q6CJmjCNfCtMkPvt6zwXzZZXxJUYdUo3Wtt3aKpump`
 - 04:06Z TROLL (MIGRATED, $31,358 mcap, $4,554 5m vol): REJECT, RugCheck danger: Creator history of rugged tokens  
   CA `7ykeHoEnjnGkY6tqteXn47fdGtd7kfXWghiyZ7YKpump`
 - 03:56Z Manlet (MIGRATED, $286,565 mcap, $2,763 5m vol): REJECT, RugCheck danger: Single holder ownership 51.70%  
@@ -90,12 +96,6 @@ Updated 2026-11-25T04:18:59Z (paper trading, never real money)
   CA `F3VctV9FqDgiyqaztN6z78bgWy27eH7DBBHW1vjpump`
 - 03:32Z CBUCKS (MIGRATED, $5,834,659 mcap, $12,959 5m vol): REJECT, Top 10 hold 25.9% ex-pool (>25%) (V13)  
   CA `DtcicPCKTKeAh7TDEzTym3hXeoHAoMiBdYJhMYxZpump`
-- 03:10Z DongCoin (MIGRATED, $612,567 mcap, $9,575 5m vol): REJECT, Top 10 hold 29.0% ex-pool (>25%) (V13)  
-  CA `DMFzUvtfEmE697ZfEDqAXErd9MrBDEs66V5WiRvApump`
-- 03:10Z Manlet (MIGRATED, $143,999 mcap, $8,095 5m vol): REJECT, RugCheck danger: Single holder ownership 51.70%  
-  CA `6LuwyvmTMyJiQRZQPneZCfr2gehSSAvQbMWgXCjopump`
-- 03:07Z memecat (FINAL_STRETCH, $23,705 mcap, $12,954 5m vol): PASS at conviction 3, PASS — 18-minute-old copy in a 13-coin memecat field, 9.7% off the high of an 812% hourly run, and no radar mention. Chasing a vamp field (V1, V3, V6).  
-  CA `J7hSb4BCEJnnwFuUVYR8wS18BW4SxGmmwoAxsQpXpump`
 
 ## What its skips did next (last 48h)
 A skip "ran" if the coin reached the first target (1.5x) from the skip price before a 20% drop, "dumped" if the drop came first. Sampled every 10 min, followed 6h.
@@ -120,21 +120,21 @@ A skip "ran" if the coin reached the first target (1.5x) from the skip price bef
     CA `2DQbV7hsqxKVWmFakXGGhBbNyY28tDJ9YuJkojYrpump`
   - ran: NVDA up to 1.52x  
     CA `37corVSMFFrqP3WK7AtMV6yFTGSvjFEB5fWnH1Bcpump`
-- near the high / chasing: blocked 30, ran 7, dumped 21, flat 1, open 1 (saving losses: keep it)
+- near the high / chasing: blocked 29, ran 7, dumped 20, flat 1, open 1 (saving losses: keep it)
   - ran: Bertcoin up to 1.8x  
     CA `xEK58Qa2xZ7C36Z2g3Jjq1WHY561CvvnJkLpgJspump`
   - ran: WOFL up to 2.62x  
     CA `AdXjXfumPSSKk7PrfgDHcAsPvuxnKv7Zo9WZEWKbiDkh`
   - ran: Phil up to 2.05x  
     CA `GMLSyjZCKGtFwztp2mtT8PDeNUA6WEk7oQoe3QkFpump`
-- too new / sniping: blocked 29, ran 4, dumped 23, flat 1, open 1 (saving losses: keep it)
+- too new / sniping: blocked 29, ran 4, dumped 24, flat 1, open 0 (saving losses: keep it)
   - ran: Loaf up to 2.13x  
     CA `8Ugc1FHaeK6iXQrnUpztxhhNHqucFwaqC35A4Kjjpump`
   - ran: AGI up to 1.53x  
     CA `7kctwFbSdLfpi6RuN9cjpVpYVHKPUr8PtG1meH35AEky`
   - ran: TREMP up to 1.7x  
     CA `CuNLbjjFcmumcKF1AnUkPU4dcjykJR73M8hzJB5Cpump`
-- RugCheck danger: blocked 22, ran 5, dumped 16, flat 0, open 1 (saving losses: keep it)
+- RugCheck danger: blocked 22, ran 6, dumped 16, flat 0, open 0 (saving losses: keep it)
   - ran: Holdsgiving up to 2.96x  
     CA `A2jLaCC7v3VjXP8gEgCQNbTWEvizYuQ82jFEYfzipump`
   - ran: JENSEN up to 1.7x  
@@ -149,7 +149,7 @@ A skip "ran" if the coin reached the first target (1.5x) from the skip price bef
 - thin 5m volume: blocked 13, ran 1, dumped 8, flat 3, open 1 (saving losses: keep it)
   - ran: NINO up to 1.55x  
     CA `BqekG1RSPUthaKfStu7Uvyvr1eR6TchrQMp1M5r5pump`
-- bundles over the line: blocked 10, ran 2, dumped 5, flat 1, open 2 (saving losses: keep it)
+- bundles over the line: blocked 11, ran 2, dumped 6, flat 1, open 2 (saving losses: keep it)
   - ran: RNV up to 2.35x  
     CA `A2nbXtQvvRMvWtifCkV8cYepwcC4M7iA1jVMwAh6pump`
   - ran: DUMBMONEY up to 1.74x  
@@ -197,13 +197,13 @@ Nothing has a positive after-cost edge yet. All 229 settled coins average -8.7% 
 Not quiet. The live scan_movers tape is a fresh pump.fun-to-PumpSwap run: most active names are under an hour old, and the theme is internet-culture jokes and pop-culture names (Craigslist.fun, KnowYourMeme, Slitheen, LaunchTheLore), with buyers still in control on the young ones. Rising: SLITHEEN (56% buys, $34.7k 5m), Alien (61% buys, $44k 5m, +652% in an hour on a $16.5k cap) and KYM (55% buys, +92% in an hour). Fading: the Caiolo copies (-99% and -49% in an hour, one at zero 5m volume), the 49-day-old Cartoon Money at $5.8M with 69% sells, and the Ansem-named coin riding a wallet-drain headline, which I won't treat as a setup. Setups I'd research now: YUMA first ($14.5k 5m, 84% buys on a $95k cap), then SLITHEEN, both clearing the $10k bar; Alien only as a high-risk watch given the vertical move, volume equal to its full 1h figure, and a pump.fun curve. The crawler's DongCoin and ChristmASS are not on this tape, so I'm ignoring them until a fresh scan confirms them.
 
 ## Moving most in its scans, last 30 min (1h volume)
-- SLITHEEN: $106,151 1h vol, $3,075 mcap, -90% 1h  
+- Manlet: $284,934 1h vol, $76,031 mcap, +166% 1h  
+  CA `HyXjbs37EKU1QPKm2MnSQ3YaxNCugdh2W8bktSfYpump`
+- SLITHEEN: $107,376 1h vol, $1,977 mcap, -93% 1h  
   CA `2ajAnFA8UKpeYbWSoEwobGQrLvdUUmjipjpongMepump`
-- YUMA: $100,782 1h vol, $95,010 mcap, +206% 1h  
-  CA `CkwFsrupdFHzo5kYk8b5W47CVx1v5ymzeu6BBoDjpump`
-- DongCoin: $60,746 1h vol, $1,272 mcap, -100% 1h  
-  CA `DMFzUvtfEmE697ZfEDqAXErd9MrBDEs66V5WiRvApump`
-- PENGUIN: $52,276 1h vol, $11,791 mcap, +113% 1h  
+- Alien: $72,526 1h vol, $2,021 mcap, -8% 1h  
+  CA `9QDgPpMvsRQwoMmfaWtQah2bjjRFym8YS1xwYCcspump`
+- PENGUIN: $71,952 1h vol, $17,510 mcap, +115% 1h  
   CA `E1q6CJmjCNfCtMkPvt6zwXzZZXxJUYdUo3Wtt3aKpump`
-- Manlet: $41,039 1h vol, $245,990 mcap, +386% 1h  
-  CA `6LuwyvmTMyJiQRZQPneZCfr2gehSSAvQbMWgXCjopump`
+- BABYANSEM: $48,086 1h vol, $13,019 mcap, -79% 1h  
+  CA `F3VctV9FqDgiyqaztN6z78bgWy27eH7DBBHW1vjpump`
