@@ -1,13 +1,13 @@
 # Trencher live report
 
-Updated 2026-11-25T04:03:54Z (paper trading, never real money)
+Updated 2026-11-25T04:18:59Z (paper trading, never real money)
 
 - Equity: $74.23 (-25.8% vs $100 start)
 - Closed trades: 22, 3 wins
 - Fees paid: $14.78 (axiom $2.81, network $9.18, pool $2.66), plus $4.15 lost to slippage
 - New trades: WATCH-ONLY (scans and decides, buys nothing)
-- Brain: subscription, claude-haiku-5-5 for routine calls, claude-opus-5-5 for the daily review; 494 routine calls and 0 plan-limit hits in 48h
-- Watch log: 76 coins being followed, 3454 filed, 0 would-buys (6h follow, sampled every 2 min)
+- Brain: subscription, claude-haiku-5-5 for routine calls, claude-opus-5-5 for the daily review; 493 routine calls and 0 plan-limit hits in 48h
+- Watch log: 77 coins being followed, 3454 filed, 0 would-buys (6h follow, sampled every 2 min)
 
 ## Scorecard (after fees)
 - 22 closed, 3 won (14%), net $-25.79
@@ -73,9 +73,11 @@ Updated 2026-11-25T04:03:54Z (paper trading, never real money)
   CA `H4gHnZ3NCU7Z9XQwGX6YYJNyieGEW8pqwGRUcdSxpump`
 
 ## Last scan
-- 04:03Z: 7 coins, 7 with pairs, 0 passed the market filters, 0 researched
+- 04:17Z: 3 coins, 3 with pairs, 0 passed the market filters, 0 researched
 
 ## Coins it looked at, and why it passed
+- 04:06Z TROLL (MIGRATED, $31,358 mcap, $4,554 5m vol): REJECT, RugCheck danger: Creator history of rugged tokens  
+  CA `7ykeHoEnjnGkY6tqteXn47fdGtd7kfXWghiyZ7YKpump`
 - 03:56Z Manlet (MIGRATED, $286,565 mcap, $2,763 5m vol): REJECT, RugCheck danger: Single holder ownership 51.70%  
   CA `6LuwyvmTMyJiQRZQPneZCfr2gehSSAvQbMWgXCjopump`
 - 03:51Z YUMA (MIGRATED, $96,829 mcap, $11,022 5m vol): PASS at conviction 3, PASS: chasing spike. YUMA is 2.9% off a peak printed minutes ago, after a +61% 5m candle, and price is about 3x its hourly low with no higher low printed. Let it retrace and base first (V1, V6).  
@@ -94,12 +96,10 @@ Updated 2026-11-25T04:03:54Z (paper trading, never real money)
   CA `6LuwyvmTMyJiQRZQPneZCfr2gehSSAvQbMWgXCjopump`
 - 03:07Z memecat (FINAL_STRETCH, $23,705 mcap, $12,954 5m vol): PASS at conviction 3, PASS — 18-minute-old copy in a 13-coin memecat field, 9.7% off the high of an 812% hourly run, and no radar mention. Chasing a vamp field (V1, V3, V6).  
   CA `J7hSb4BCEJnnwFuUVYR8wS18BW4SxGmmwoAxsQpXpump`
-- 03:07Z PERRO (MIGRATED, $223,103 mcap, $21,683 5m vol): PASS at conviction 2, PASS: flow below pace, and PERRO is not the leader of a 17-copy vamp field. Dip-buy gate unmet (no catalyst). (V1, V6, V13)  
-  CA `4Di56UJzpnb7E4D7aLXFf7aLF5TrpJYv9Q3mR398pump`
 
 ## What its skips did next (last 48h)
 A skip "ran" if the coin reached the first target (1.5x) from the skip price before a 20% drop, "dumped" if the drop came first. Sampled every 10 min, followed 6h.
-- top 10 over 25%: blocked 40, ran 7, dumped 30, flat 1, open 2 (saving losses: keep it)
+- top 10 over 25%: blocked 39, ran 7, dumped 29, flat 1, open 2 (saving losses: keep it)
   - ran: SNP6900 up to 2.76x  
     CA `DnbQKi146NDmwwji3f3q5i68HQnYyBEhoDyj2q3Npump`
   - ran: JENSEN up to 2.62x  
@@ -113,7 +113,7 @@ A skip "ran" if the coin reached the first target (1.5x) from the skip price bef
     CA `9cDnmLRDWeJzcpyw8tSFAT7HS4Aunx6MmZWjMfrzpump`
   - ran: SHHFT up to 1.61x  
     CA `GqMg4TRt5U5HRK6oeZYwCF1Jz7Ym9MSzWSoFCtFsbzf6`
-- flow below pace: blocked 34, ran 8, dumped 26, flat 0, open 0 (saving losses: keep it)
+- flow below pace: blocked 33, ran 8, dumped 25, flat 0, open 0 (saving losses: keep it)
   - ran: hCAT up to 1.52x  
     CA `2FYs4vApfj4ErsggpFDfzMv1WvxnyiLtzNEj84mS6TLh`
   - ran: WALLSTFLY up to 1.52x  
@@ -134,7 +134,7 @@ A skip "ran" if the coin reached the first target (1.5x) from the skip price bef
     CA `7kctwFbSdLfpi6RuN9cjpVpYVHKPUr8PtG1meH35AEky`
   - ran: TREMP up to 1.7x  
     CA `CuNLbjjFcmumcKF1AnUkPU4dcjykJR73M8hzJB5Cpump`
-- RugCheck danger: blocked 21, ran 5, dumped 15, flat 0, open 1 (saving losses: keep it)
+- RugCheck danger: blocked 22, ran 5, dumped 16, flat 0, open 1 (saving losses: keep it)
   - ran: Holdsgiving up to 2.96x  
     CA `A2jLaCC7v3VjXP8gEgCQNbTWEvizYuQ82jFEYfzipump`
   - ran: JENSEN up to 1.7x  
@@ -197,13 +197,13 @@ Nothing has a positive after-cost edge yet. All 229 settled coins average -8.7% 
 Not quiet. The live scan_movers tape is a fresh pump.fun-to-PumpSwap run: most active names are under an hour old, and the theme is internet-culture jokes and pop-culture names (Craigslist.fun, KnowYourMeme, Slitheen, LaunchTheLore), with buyers still in control on the young ones. Rising: SLITHEEN (56% buys, $34.7k 5m), Alien (61% buys, $44k 5m, +652% in an hour on a $16.5k cap) and KYM (55% buys, +92% in an hour). Fading: the Caiolo copies (-99% and -49% in an hour, one at zero 5m volume), the 49-day-old Cartoon Money at $5.8M with 69% sells, and the Ansem-named coin riding a wallet-drain headline, which I won't treat as a setup. Setups I'd research now: YUMA first ($14.5k 5m, 84% buys on a $95k cap), then SLITHEEN, both clearing the $10k bar; Alien only as a high-risk watch given the vertical move, volume equal to its full 1h figure, and a pump.fun curve. The crawler's DongCoin and ChristmASS are not on this tape, so I'm ignoring them until a fresh scan confirms them.
 
 ## Moving most in its scans, last 30 min (1h volume)
-- Manlet: $111,714 1h vol, $82,481 mcap, +183% 1h  
-  CA `HyXjbs37EKU1QPKm2MnSQ3YaxNCugdh2W8bktSfYpump`
-- DongCoin: $108,165 1h vol, $1,278 mcap, -100% 1h  
-  CA `DMFzUvtfEmE697ZfEDqAXErd9MrBDEs66V5WiRvApump`
+- SLITHEEN: $106,151 1h vol, $3,075 mcap, -90% 1h  
+  CA `2ajAnFA8UKpeYbWSoEwobGQrLvdUUmjipjpongMepump`
 - YUMA: $100,782 1h vol, $95,010 mcap, +206% 1h  
   CA `CkwFsrupdFHzo5kYk8b5W47CVx1v5ymzeu6BBoDjpump`
-- SLITHEEN: $91,009 1h vol, $16,759 mcap, -45% 1h  
-  CA `2ajAnFA8UKpeYbWSoEwobGQrLvdUUmjipjpongMepump`
-- NI: $61,890 1h vol, $2,561 mcap, +17% 1h  
-  CA `A9KJnpSNfpRM9oQmC4St9jSfsPmNJvuyfevn5ZGjpump`
+- DongCoin: $60,746 1h vol, $1,272 mcap, -100% 1h  
+  CA `DMFzUvtfEmE697ZfEDqAXErd9MrBDEs66V5WiRvApump`
+- PENGUIN: $52,276 1h vol, $11,791 mcap, +113% 1h  
+  CA `E1q6CJmjCNfCtMkPvt6zwXzZZXxJUYdUo3Wtt3aKpump`
+- Manlet: $41,039 1h vol, $245,990 mcap, +386% 1h  
+  CA `6LuwyvmTMyJiQRZQPneZCfr2gehSSAvQbMWgXCjopump`
