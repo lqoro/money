@@ -1,13 +1,13 @@
 # Trencher live report
 
-Updated 2026-11-25T05:04:16Z (paper trading, never real money)
+Updated 2026-11-25T05:19:18Z (paper trading, never real money)
 
 - Equity: $74.23 (-25.8% vs $100 start)
 - Closed trades: 22, 3 wins
 - Fees paid: $14.78 (axiom $2.81, network $9.18, pool $2.66), plus $4.15 lost to slippage
 - New trades: WATCH-ONLY (scans and decides, buys nothing)
-- Brain: subscription, claude-haiku-5-5 for routine calls, claude-opus-5-5 for the daily review; 490 routine calls and 0 plan-limit hits in 48h
-- Watch log: 75 coins being followed, 3464 filed, 0 would-buys (6h follow, sampled every 2 min)
+- Brain: subscription, claude-haiku-5-5 for routine calls, claude-opus-5-5 for the daily review; 485 routine calls and 0 plan-limit hits in 48h
+- Watch log: 70 coins being followed, 3469 filed, 0 would-buys (6h follow, sampled every 2 min)
 
 ## Scorecard (after fees)
 - 22 closed, 3 won (14%), net $-25.79
@@ -73,7 +73,7 @@ Updated 2026-11-25T05:04:16Z (paper trading, never real money)
   CA `H4gHnZ3NCU7Z9XQwGX6YYJNyieGEW8pqwGRUcdSxpump`
 
 ## Last scan
-- 05:03Z: 3 coins, 3 with pairs, 0 passed the market filters, 0 researched
+- 05:18Z: 9 coins, 9 with pairs, 0 passed the market filters, 0 researched
 
 ## Coins it looked at, and why it passed
 - 04:57Z jingyu (MIGRATED, $89,274 mcap, $2,344 5m vol): REJECT, Bundles: 1 linked wallet cluster(s) hold 100.0% of supply (>20%) (V17)  
@@ -120,7 +120,7 @@ A skip "ran" if the coin reached the first target (1.5x) from the skip price bef
     CA `37corVSMFFrqP3WK7AtMV6yFTGSvjFEB5fWnH1Bcpump`
   - ran: Doomcat up to 1.62x  
     CA `EiQ1JvEUZCXN5kQi2UdS4CdQapidqC7MCXd5sRTPpump`
-- near the high / chasing: blocked 31, ran 7, dumped 21, flat 1, open 2 (saving losses: keep it)
+- near the high / chasing: blocked 30, ran 9, dumped 20, flat 1, open 0 (saving losses: keep it)
   - ran: Bertcoin up to 1.8x  
     CA `xEK58Qa2xZ7C36Z2g3Jjq1WHY561CvvnJkLpgJspump`
   - ran: WOFL up to 2.62x  
@@ -134,7 +134,7 @@ A skip "ran" if the coin reached the first target (1.5x) from the skip price bef
     CA `7kctwFbSdLfpi6RuN9cjpVpYVHKPUr8PtG1meH35AEky`
   - ran: TREMP up to 1.7x  
     CA `CuNLbjjFcmumcKF1AnUkPU4dcjykJR73M8hzJB5Cpump`
-- RugCheck danger: blocked 23, ran 6, dumped 16, flat 0, open 1 (saving losses: keep it)
+- RugCheck danger: blocked 23, ran 6, dumped 17, flat 0, open 0 (saving losses: keep it)
   - ran: Holdsgiving up to 2.96x  
     CA `A2jLaCC7v3VjXP8gEgCQNbTWEvizYuQ82jFEYfzipump`
   - ran: JENSEN up to 1.7x  
@@ -197,13 +197,13 @@ Nothing has a positive after-cost edge yet. All 229 settled coins average -8.7% 
 Meta: young pump.fun-to-PumpSwap internet-joke coins, and most are fading. Trollface (-55% in 1h), Slitheen (-93%, $43 of 5m volume, 0% buys), DongCoin (-99.7%, zero 5m volume) and Chudjak (-62%) are bleeding, so that theme is dying. Fresh launches with real buyers are the live theme: YUMA ($168k cap, $19k 5m, 59% buys, +205% in 1h, 1.3h old) and pode (100h old, $20k cap, +211% in 1h, 65% buys, but only $6.5k 5m). Legacy memes are dead weight: Cartoon Money ($5.2M cap, $3.3k 5m) and FartCoin ($58k, -15%). Setup to research now is YUMA only, and it has no conviction until the holder, dev and bundle checks run; it's the only mover clearing the $10k 5m bar with a live cap. Basket ($152k 5m, 6 minutes old on Raydium) is a brand-new pair, so it's a watch, not a snipe. The crawler's SLITHEEN, YUMA (84% buys at $95k) and Alien numbers don't match this scan, and Alien and KYM aren't on the tape, so I'm not using them. The Ansem drain coin is blocked and not a setup.
 
 ## Moving most in its scans, last 30 min (1h volume)
-- YUMA: $207,347 1h vol, $168,581 mcap, +205% 1h  
-  CA `CkwFsrupdFHzo5kYk8b5W47CVx1v5ymzeu6BBoDjpump`
-- BASKET: $152,090 1h vol, $158,485 mcap, +126% 1h  
-  CA `3Tg6YnNrfPdFfsY14MaNsDMWLseAyrUDS3myJtbaJN6f`
-- TROLL: $43,697 1h vol, $5,466 mcap, -88% 1h  
+- Manlet: $141,754 1h vol, $1,329 mcap, -99% 1h  
+  CA `HyXjbs37EKU1QPKm2MnSQ3YaxNCugdh2W8bktSfYpump`
+- CBUCKS: $65,567 1h vol, $5,206,344 mcap, -3% 1h  
+  CA `DtcicPCKTKeAh7TDEzTym3hXeoHAoMiBdYJhMYxZpump`
+- PENGUIN: $42,433 1h vol, $8,731 mcap, -20% 1h  
+  CA `E1q6CJmjCNfCtMkPvt6zwXzZZXxJUYdUo3Wtt3aKpump`
+- TROLL: $32,240 1h vol, $6,362 mcap, -82% 1h  
   CA `7ykeHoEnjnGkY6tqteXn47fdGtd7kfXWghiyZ7YKpump`
-- SLITHEEN: $37,283 1h vol, $2,326 mcap, -92% 1h  
-  CA `2ajAnFA8UKpeYbWSoEwobGQrLvdUUmjipjpongMepump`
 - FUCKCANCER: $25,205 1h vol, $18,704 mcap, +428% 1h  
   CA `4UMErmfmKzDCVmHrwBUbnDnbQnVKVYAcT7X5AdTkpump`
