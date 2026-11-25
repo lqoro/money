@@ -1,13 +1,13 @@
 # Trencher live report
 
-Updated 2026-11-25T12:07:33Z (paper trading, never real money)
+Updated 2026-11-25T12:22:48Z (paper trading, never real money)
 
 - Equity: $74.23 (-25.8% vs $100 start)
 - Closed trades: 22, 3 wins
 - Fees paid: $14.78 (axiom $2.81, network $9.18, pool $2.66), plus $4.15 lost to slippage
 - New trades: WATCH-ONLY (scans and decides, buys nothing)
 - Brain: subscription, claude-haiku-5-5 for routine calls, claude-opus-5-5 for the daily review; 442 routine calls and 0 plan-limit hits in 48h
-- Watch log: 43 coins being followed, 3545 filed, 0 would-buys (6h follow, sampled every 2 min)
+- Watch log: 41 coins being followed, 3549 filed, 0 would-buys (6h follow, sampled every 2 min)
 
 ## Scorecard (after fees)
 - 22 closed, 3 won (14%), net $-25.79
@@ -73,9 +73,13 @@ Updated 2026-11-25T12:07:33Z (paper trading, never real money)
   CA `H4gHnZ3NCU7Z9XQwGX6YYJNyieGEW8pqwGRUcdSxpump`
 
 ## Last scan
-- 12:07Z: 4 coins, 3 with pairs, 0 passed the market filters, 0 researched
+- 12:22Z: 4 coins, 3 with pairs, 0 passed the market filters, 0 researched
 
 ## Coins it looked at, and why it passed
+- 12:19Z OUROBOROS (MIGRATED, $40,783 mcap, $10,352 5m vol): REJECT, Top 10 hold 28.3% ex-pool (>25%) (V13)  
+  CA `38EDdUxnJvrnDsJyB45E2W3pK26qLEjmWTvsEmMuG9ZR`
+- 12:09Z 3sat (FINAL_STRETCH, $13,880 mcap, $3,283 5m vol): PASS at conviction 3, PASS: a 0.1-day-old AI/Lean "fork" site on a 15-copy ticker, with 5m flow at $3.3k and a 583% 1h spike. It's a LARP-shaped pump.fun launch. Blocker: "too new / sniping" (V1, V6, V13).  
+  CA `FaWEANo8Kz9B415xv3cocE8q5JgghN7CY8FYG4C5pump`
 - 11:57Z SWARM (FINAL_STRETCH, $17,680 mcap, $7,888 5m vol): REJECT, Top 10 hold 28.4% ex-pool (>25%) (V13)  
   CA `2Rw6rLRRZXQLNreForjeVvDjnpYUaW6rmMFXmRP9pump`
 - 11:37Z Boor (FINAL_STRETCH, $17,792 mcap, $23,246 5m vol): PASS at conviction 2, PASS: chasing spike. Boor is up 282% on 5m and 680% on 1h, about 7 minutes old, one of 14 "boor" copies, and no story is attached (V1, V6, V13).  
@@ -92,14 +96,10 @@ Updated 2026-11-25T12:07:33Z (paper trading, never real money)
   CA `2rhoUVCygC2LyQWNMXsofKXo1rcbZFJnSTpDbU9Ppump`
 - 10:47Z Jimmies (MIGRATED, $1,207,408 mcap, $3,613 5m vol): PASS at conviction 2, PASS. Jimmies is a fading 2010 meme at $1.2M with no printed higher low and a contract address its own site doesn't show. Blocker: no higher low, narrative fading. (V1, V6, V13)  
   CA `GisWWjhwrSud4aFGSHvTMt85Ky14sY7LeBFCpfoFpump`
-- 10:32Z CBUCKS (MIGRATED, $4,885,407 mcap, $9,257 5m vol): REJECT, Top 10 hold 25.9% ex-pool (>25%) (V13)  
-  CA `DtcicPCKTKeAh7TDEzTym3hXeoHAoMiBdYJhMYxZpump`
-- 10:25Z KING (FINAL_STRETCH, $16,214 mcap, $4,959 5m vol): PASS at conviction 2, PASS. KING is up 655% in an hour and 46% in 5 minutes, sitting 3.5% off its high, with 5m flow at $5k and 15 same-name copies in the field. That's a spike chase in a crowded vamp field, not a pullback (V1, V6).  
-  CA `9Gdhz3WVnTaFcbGPrK2GbBdZpbwAQFfFK42bSgsupump`
 
 ## What its skips did next (last 48h)
 A skip "ran" if the coin reached the first target (1.5x) from the skip price before a 20% drop, "dumped" if the drop came first. Sampled every 10 min, followed 6h.
-- top 10 over 25%: blocked 41, ran 8, dumped 31, flat 1, open 1 (saving losses: keep it)
+- top 10 over 25%: blocked 42, ran 8, dumped 31, flat 1, open 2 (saving losses: keep it)
   - ran: SNP6900 up to 2.76x  
     CA `DnbQKi146NDmwwji3f3q5i68HQnYyBEhoDyj2q3Npump`
   - ran: JENSEN up to 2.62x  
@@ -127,7 +127,7 @@ A skip "ran" if the coin reached the first target (1.5x) from the skip price bef
     CA `EiQ1JvEUZCXN5kQi2UdS4CdQapidqC7MCXd5sRTPpump`
   - ran: Jesus up to 1.64x  
     CA `Gy5BUDnpJMWRsNVKh9sRtsBGunFXKKrbroQRoydQpump`
-- too new / sniping: blocked 24, ran 5, dumped 18, flat 1, open 0 (saving losses: keep it)
+- too new / sniping: blocked 25, ran 5, dumped 19, flat 1, open 0 (saving losses: keep it)
   - ran: AGI up to 1.53x  
     CA `7kctwFbSdLfpi6RuN9cjpVpYVHKPUr8PtG1meH35AEky`
   - ran: TREMP up to 1.7x  
@@ -195,13 +195,13 @@ Nothing has a positive after-cost edge yet. All 229 settled coins average -8.7% 
 Not quiet, but thin. Flow is concentrated in pump.fun launches under about five hours old, and the scanner's meta summary contradicts its own rows, so I'm reading the rows. Two themes are rising: cute Japanese and character names (bon at 57% buys and Pompompurin at 75% buys) and fresh generic-word tokens (Boor coin at $23k 5m and 64% buys, SWARM at $7.9k 5m and 61% buys). Person and justice names are fading (KING down 48%, Bernard at 7% buys), as are the cat and kawaii holdovers (wCAT at 12% buys, REBACCA at $349 5m), and the generic "Memecoin" ticker is effectively dead ($11 5m, down 56%); SNOWCUMBRR, OTF and FREYJA show zero 5m volume. The Trump dinner and Ansem headlines aren't showing up in these rows, and no mover is Trump-linked. Setups to research, not buy: Boor coin first, the only mover clearing the $10k 5m bar, but it is six minutes old and up 680%, so vamp, holder and bundle checks decide it; Pompompurin second, at $4k 5m with the cleanest buy ratio, but up 1,346% in an hour, so the exit plan is the real question; bon and SWARM only if 5m volume climbs past $10k.
 
 ## Moving most in its scans, last 30 min (1h volume)
-- SNOWCUMBRR: $242,982 1h vol, $1,701 mcap, -94% 1h  
+- Pompom: $524,480 1h vol, $187,377 mcap, +354% 1h  
+  CA `5EmvWDizkpjAXbcfCcVq69w1id8GaLzi4LLwtuSgpump`
+- ANSEM: $235,621 1h vol, $72,912 mcap, -58% 1h  
+  CA `DD23R2DJFKxUCB2CUvogviVhHA7D9RTsjbrFKWBzpump`
+- SNOWCUMBRR: $133,863 1h vol, $1,615 mcap, -95% 1h  
   CA `Gf9wm93TTDpbPC467Eio5Vc42Kr6MAomUD172drWpump`
-- bon: $74,780 1h vol, $9,833 mcap, -35% 1h  
-  CA `FMS1KXoLPrbYXEDgpRfDgYwPtwJ7JV5ZXduX2SUFpump`
-- Pompom: $61,695 1h vol, $27,837 mcap, +1346% 1h  
-  CA `8ArRsCwf3FqiMTY4wHqPmViWGJyJWQqQ6YucgTrhpump`
-- SWARM: $59,634 1h vol, $17,680 mcap, +432% 1h  
-  CA `2Rw6rLRRZXQLNreForjeVvDjnpYUaW6rmMFXmRP9pump`
-- 4: $47,505 1h vol, $8,497 mcap, +332% 1h  
-  CA `8wacdzPkcfSGq99YpbWnfikeV8sBfqZBwCvYjPUxtpMW`
+- Jimmies: $78,798 1h vol, $1,440,259 mcap, +18% 1h  
+  CA `GisWWjhwrSud4aFGSHvTMt85Ky14sY7LeBFCpfoFpump`
+- OUROBOROS: $60,306 1h vol, $43,785 mcap, +47% 1h  
+  CA `38EDdUxnJvrnDsJyB45E2W3pK26qLEjmWTvsEmMuG9ZR`
