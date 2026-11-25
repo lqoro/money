@@ -1,13 +1,13 @@
 # Trencher live report
 
-Updated 2026-11-25T09:06:08Z (paper trading, never real money)
+Updated 2026-11-25T09:21:08Z (paper trading, never real money)
 
 - Equity: $74.23 (-25.8% vs $100 start)
 - Closed trades: 22, 3 wins
 - Fees paid: $14.78 (axiom $2.81, network $9.18, pool $2.66), plus $4.15 lost to slippage
 - New trades: WATCH-ONLY (scans and decides, buys nothing)
-- Brain: subscription, claude-haiku-5-5 for routine calls, claude-opus-5-5 for the daily review; 461 routine calls and 0 plan-limit hits in 48h
-- Watch log: 46 coins being followed, 3520 filed, 0 would-buys (6h follow, sampled every 2 min)
+- Brain: subscription, claude-haiku-5-5 for routine calls, claude-opus-5-5 for the daily review; 460 routine calls and 0 plan-limit hits in 48h
+- Watch log: 44 coins being followed, 3524 filed, 0 would-buys (6h follow, sampled every 2 min)
 
 ## Scorecard (after fees)
 - 22 closed, 3 won (14%), net $-25.79
@@ -73,9 +73,13 @@ Updated 2026-11-25T09:06:08Z (paper trading, never real money)
   CA `H4gHnZ3NCU7Z9XQwGX6YYJNyieGEW8pqwGRUcdSxpump`
 
 ## Last scan
-- 09:05Z: 4 coins, 4 with pairs, 1 passed the market filters, 1 researched
+- 09:20Z: 5 coins, 5 with pairs, 0 passed the market filters, 0 researched
 
 ## Coins it looked at, and why it passed
+- 09:16Z HELIORA (DIP, $62,267 mcap, $22,389 5m vol): REJECT, Dip with fading attention is a falling knife, not a dip (5m at 0.50x the hour's pace, under 0.6x)  
+  CA `96qfge1RkUWhSsv8i9V4QZFANGypKEe1u7pzCDGGpump`
+- 09:06Z 4PUMP (FINAL_STRETCH, $16,252 mcap, $4,971 5m vol): REJECT, RugCheck danger: Creator history of rugged tokens  
+  CA `8ypx9tHqwLjJk51tqrm1iCrhTQ1PKshnw1FfpQjWpump`
 - 09:05Z CBUCKS (MIGRATED, $5,096,025 mcap, $2,108 5m vol): REJECT, Top 10 hold 25.9% ex-pool (>25%) (V13)  
   CA `DtcicPCKTKeAh7TDEzTym3hXeoHAoMiBdYJhMYxZpump`
 - 08:50Z JaoJiu (DIP, $164,157 mcap, $13,022 5m vol): REJECT, Dip with fading attention is a falling knife, not a dip (5m at 0.39x the hour's pace, under 0.6x)  
@@ -92,10 +96,6 @@ Updated 2026-11-25T09:06:08Z (paper trading, never real money)
   CA `FVzqGqRmr4UH1Fif6dewmwbJ1p4YUZCu8dcw4Efopump`
 - 07:58Z CBUCKS (MIGRATED, $5,062,664 mcap, $2,752 5m vol): REJECT, Top 10 hold 25.9% ex-pool (>25%) (V13)  
   CA `DtcicPCKTKeAh7TDEzTym3hXeoHAoMiBdYJhMYxZpump`
-- 07:54Z Alien (FINAL_STRETCH, $14,938 mcap, $6,948 5m vol): PASS at conviction 3, PASS — 9x spike off the floor with no printed higher low, 20 copies of "alien" in the field, and no story on the radar. Blocker: "no higher low" (V1, V6).  
-  CA `9QDgPpMvsRQwoMmfaWtQah2bjjRFym8YS1xwYCcspump`
-- 07:49Z BASKET (MIGRATED, $713,849 mcap, $40,446 5m vol): PASS at conviction 3, PASS: target too close. The prior high ($796k) is only about 1.12x away, under the 1.3x minimum, and the theme is dead (0.07x pace, zero radar mentions). Bundles are 12.9% with one cluster at 6.85% (V3, V13).  
-  CA `3Tg6YnNrfPdFfsY14MaNsDMWLseAyrUDS3myJtbaJN6f`
 
 ## What its skips did next (last 48h)
 A skip "ran" if the coin reached the first target (1.5x) from the skip price before a 20% drop, "dumped" if the drop came first. Sampled every 10 min, followed 6h.
@@ -127,14 +127,14 @@ A skip "ran" if the coin reached the first target (1.5x) from the skip price bef
     CA `AdXjXfumPSSKk7PrfgDHcAsPvuxnKv7Zo9WZEWKbiDkh`
   - ran: Phil up to 2.05x  
     CA `GMLSyjZCKGtFwztp2mtT8PDeNUA6WEk7oQoe3QkFpump`
-- too new / sniping: blocked 28, ran 6, dumped 21, flat 1, open 0 (saving losses: keep it)
+- too new / sniping: blocked 27, ran 5, dumped 21, flat 1, open 0 (saving losses: keep it)
   - ran: Loaf up to 2.13x  
     CA `8Ugc1FHaeK6iXQrnUpztxhhNHqucFwaqC35A4Kjjpump`
   - ran: AGI up to 1.53x  
     CA `7kctwFbSdLfpi6RuN9cjpVpYVHKPUr8PtG1meH35AEky`
   - ran: TREMP up to 1.7x  
     CA `CuNLbjjFcmumcKF1AnUkPU4dcjykJR73M8hzJB5Cpump`
-- RugCheck danger: blocked 23, ran 6, dumped 17, flat 0, open 0 (saving losses: keep it)
+- RugCheck danger: blocked 24, ran 6, dumped 18, flat 0, open 0 (saving losses: keep it)
   - ran: Holdsgiving up to 2.96x  
     CA `A2jLaCC7v3VjXP8gEgCQNbTWEvizYuQ82jFEYfzipump`
   - ran: JENSEN up to 1.7x  
@@ -149,12 +149,14 @@ A skip "ran" if the coin reached the first target (1.5x) from the skip price bef
 - thin 5m volume: blocked 13, ran 1, dumped 9, flat 3, open 0 (saving losses: keep it)
   - ran: NINO up to 1.55x  
     CA `BqekG1RSPUthaKfStu7Uvyvr1eR6TchrQMp1M5r5pump`
-- bundles over the line: blocked 12, ran 2, dumped 6, flat 2, open 2 (saving losses: keep it)
+- bundles over the line: blocked 12, ran 3, dumped 6, flat 2, open 1 (saving losses: keep it)
+  - ran: jingyu up to 1.58x  
+    CA `DUZrwdjEthcJ99ZiRXr31UuqTohoTg7VjTEyfGdBpump`
   - ran: RNV up to 2.35x  
     CA `A2nbXtQvvRMvWtifCkV8cYepwcC4M7iA1jVMwAh6pump`
   - ran: DUMBMONEY up to 1.74x  
     CA `GEHehS5Rr4rNCjvrHLjjV1avD4bjMsn53ywDGv1spump`
-- falling knife (code): blocked 11, ran 0, dumped 8, flat 1, open 2 (saving losses: keep it)
+- falling knife (code): blocked 12, ran 0, dumped 8, flat 1, open 3 (saving losses: keep it)
 
 ## Daily review (2026-11-23, claude-opus-5-5)
 Nothing has a positive after-cost edge yet. All 229 settled coins average -8.7% net on the simple plan. Before costs they average about +0.9%, so the 9.6% average round-trip cost on a $10 buy accounts for the whole loss. That is the same story as the 22 paper trades, where fees and slippage were $18.83 of the $25.79 lost. The best setup is FINAL_STRETCH: n=39, 35.9% hit 1.5x, -4.9% net. With a 1.5x target, a -20% stop and about 10% costs, a setup needs roughly 43% hitting the target to break even. At n=39 the hit rate's 95% range is about 21–51%, so this sample can't separate it from MIGRATED, from coin-flip noise or from breakeven. I can't say whether the routine model's would-buys beat its passes, because it made zero would-buys in 24h. The coins it passed on (n=157, -8.4%) did slightly better than the coins the checklist failed (n=70, -9.8%), but both lost money. Passing everything was the right call on average. One process note: the watch-only review was set for about Nov 10 and today is Nov 23, so the owner should decide whether this is still the plan.
@@ -195,13 +197,13 @@ Nothing has a positive after-cost edge yet. All 229 settled coins average -8.7% 
 Trenches aren't quiet. BASKET, JaoJiu and HELIORA have real volume and buyers, and the common thread is name clusters and fresh pump.fun launches, not the Trump, Ansem or hack headlines, which don't show up in any mover. The loudest theme is the JaoJiu name family: pumpswap JaoJiu at $164k with $13k 5m and 60% buys, a pump.fun JaoJiu copy at $28k with zero 5m flow, and JaoJiow at -92% 1h. That reads like a vamp war (V1, V3), so confirm which one is the original before anything else. Young pump.fun launches are split: HELIORA (about 6 minutes old, $22k cap, 74% buys, +756% 1h) is the only one with real flow, but its 5m volume equals its 1h volume, so verify that. TANDEM, 4PUMP and Päivi are thin. Legacy memes (WASTED, CBUCKS, ROCKET, Fuck Cancer, Memeployed) and the animal and cartoon names are fading, with 5m volume in the hundreds. Setups to research: BASKET on MIGRATED rules ($936k, $25k 5m, 61% buys, 3.9h old; the crawler's $714k doesn't match the scan, so I'm using the scan figure). Take initials at 2x and put the stop where the thesis breaks. JaoJiu on pumpswap is second, but only after confirming it's the original. HELIORA is inside the no-snipe window, so research it and don't buy yet. The crawler's Alien, Slitheen and Tandem cluster doesn't appear in the scan, so it's unconfirmed. Its YUMA and Merged numbers also don't match, which is why I'm discarding them.
 
 ## Moving most in its scans, last 30 min (1h volume)
+- HELIORA: $534,130 1h vol, $62,267 mcap, +128% 1h  
+  CA `96qfge1RkUWhSsv8i9V4QZFANGypKEe1u7pzCDGGpump`
 - JaoJiu: $402,839 1h vol, $164,157 mcap, +68% 1h  
   CA `2UyrvgCRXiEwiKRVk96gs6B4myrBHZAfcLyMVLE8vSCy`
-- 4PUMP: $54,622 1h vol, $8,184 mcap, +9% 1h  
+- 4PUMP: $61,152 1h vol, $15,203 mcap, +102% 1h  
   CA `8ypx9tHqwLjJk51tqrm1iCrhTQ1PKshnw1FfpQjWpump`
-- Päivi: $37,179 1h vol, $2,429 mcap, +6% 1h  
+- Clover: $49,798 1h vol, $11,986 mcap, +338% 1h  
+  CA `9bj2NxtzmccaADo8Rg14G9dddXU1NfFL8pxweCypump`
+- Päivi: $15,818 1h vol, $2,509 mcap, -68% 1h  
   CA `6TLY91Ee6qRULfLDdmCoP5ZqCP7Wo5jpFmJiBG7wXtKX`
-- JaoJiow: $33,132 1h vol, $2,081 mcap, -92% 1h  
-  CA `BBupBrQsZyJF92vCvqfsSdJAx5CWmm1zSEdhBH7qpump`
-- TANDEM: $23,830 1h vol, $8,318 mcap, -27% 1h  
-  CA `4XvnS1B28BgsUcwjR2bTm3csxnp8hmTsXZM6jH3Ypump`
