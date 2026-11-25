@@ -1,13 +1,13 @@
 # Trencher live report
 
-Updated 2026-11-25T10:36:31Z (paper trading, never real money)
+Updated 2026-11-25T10:51:35Z (paper trading, never real money)
 
 - Equity: $74.23 (-25.8% vs $100 start)
 - Closed trades: 22, 3 wins
 - Fees paid: $14.78 (axiom $2.81, network $9.18, pool $2.66), plus $4.15 lost to slippage
 - New trades: WATCH-ONLY (scans and decides, buys nothing)
-- Brain: subscription, claude-haiku-5-5 for routine calls, claude-opus-5-5 for the daily review; 455 routine calls and 0 plan-limit hits in 48h
-- Watch log: 46 coins being followed, 3534 filed, 0 would-buys (6h follow, sampled every 2 min)
+- Brain: subscription, claude-haiku-5-5 for routine calls, claude-opus-5-5 for the daily review; 451 routine calls and 0 plan-limit hits in 48h
+- Watch log: 45 coins being followed, 3537 filed, 0 would-buys (6h follow, sampled every 2 min)
 
 ## Scorecard (after fees)
 - 22 closed, 3 won (14%), net $-25.79
@@ -73,9 +73,13 @@ Updated 2026-11-25T10:36:31Z (paper trading, never real money)
   CA `H4gHnZ3NCU7Z9XQwGX6YYJNyieGEW8pqwGRUcdSxpump`
 
 ## Last scan
-- 10:35Z: 1 coins, 1 with pairs, 0 passed the market filters, 0 researched
+- 10:51Z: 6 coins, 5 with pairs, 0 passed the market filters, 0 researched
 
 ## Coins it looked at, and why it passed
+- 10:49Z Memecoin (no setup, $10,958 mcap, $31,415 5m vol): REJECT, No setup fits: not Final Stretch, not a migrated runner, not a healthy dip  
+  CA `2rhoUVCygC2LyQWNMXsofKXo1rcbZFJnSTpDbU9Ppump`
+- 10:47Z Jimmies (MIGRATED, $1,207,408 mcap, $3,613 5m vol): PASS at conviction 2, PASS. Jimmies is a fading 2010 meme at $1.2M with no printed higher low and a contract address its own site doesn't show. Blocker: no higher low, narrative fading. (V1, V6, V13)  
+  CA `GisWWjhwrSud4aFGSHvTMt85Ky14sY7LeBFCpfoFpump`
 - 10:32Z CBUCKS (MIGRATED, $4,885,407 mcap, $9,257 5m vol): REJECT, Top 10 hold 25.9% ex-pool (>25%) (V13)  
   CA `DtcicPCKTKeAh7TDEzTym3hXeoHAoMiBdYJhMYxZpump`
 - 10:25Z KING (FINAL_STRETCH, $16,214 mcap, $4,959 5m vol): PASS at conviction 2, PASS. KING is up 655% in an hour and 46% in 5 minutes, sitting 3.5% off its high, with 5m flow at $5k and 15 same-name copies in the field. That's a spike chase in a crowded vamp field, not a pullback (V1, V6).  
@@ -92,10 +96,6 @@ Updated 2026-11-25T10:36:31Z (paper trading, never real money)
   CA `9woryP8Yxe5jU1YzcYVtW38PppzPjZTKxy4yYctapump`
 - 09:38Z Nyamit (no setup, $24,236 mcap, $39,944 5m vol): REJECT, No setup fits: not Final Stretch, not a migrated runner, not a healthy dip  
   CA `JCd9vynvmBex2t79iGPb5L4jm62b5c4nwQG7sei5pump`
-- 09:36Z JaoJiu (DIP, $152,914 mcap, $10,545 5m vol): REJECT, Dip with fading attention is a falling knife, not a dip (5m at 0.43x the hour's pace, under 0.6x)  
-  CA `2UyrvgCRXiEwiKRVk96gs6B4myrBHZAfcLyMVLE8vSCy`
-- 09:34Z Christmax (MIGRATED, $251,738 mcap, $2,374 5m vol): PASS at conviction 3, PASS: Christmax is 33% off a $375k peak with $2.4k of 5m flow, six same-name copies, and no printed higher low. It's a bottom buy with no catalyst. (V1, V6, V13)  
-  CA `D7MyAD7k3AqJpg4uxjUcmL51EDHrEsJxkjUynsxcpump`
 
 ## What its skips did next (last 48h)
 A skip "ran" if the coin reached the first target (1.5x) from the skip price before a 20% drop, "dumped" if the drop came first. Sampled every 10 min, followed 6h.
@@ -127,7 +127,7 @@ A skip "ran" if the coin reached the first target (1.5x) from the skip price bef
     CA `EiQ1JvEUZCXN5kQi2UdS4CdQapidqC7MCXd5sRTPpump`
   - ran: Jesus up to 1.64x  
     CA `Gy5BUDnpJMWRsNVKh9sRtsBGunFXKKrbroQRoydQpump`
-- too new / sniping: blocked 25, ran 4, dumped 20, flat 1, open 0 (saving losses: keep it)
+- too new / sniping: blocked 24, ran 4, dumped 19, flat 1, open 0 (saving losses: keep it)
   - ran: AGI up to 1.53x  
     CA `7kctwFbSdLfpi6RuN9cjpVpYVHKPUr8PtG1meH35AEky`
   - ran: TREMP up to 1.7x  
@@ -141,7 +141,7 @@ A skip "ran" if the coin reached the first target (1.5x) from the skip price bef
     CA `CSjwLiCLyaJqXQm9XCV3LdYWMYswbZ7JQ71JKX77pump`
   - ran: FOMOMAS up to 1.71x  
     CA `9Gu5JYt4Pas6cW4S6qtyFkDucFj6GMtpJiDC9sQbpump`
-- thin 5m volume: blocked 15, ran 1, dumped 10, flat 3, open 1 (saving losses: keep it)
+- thin 5m volume: blocked 14, ran 1, dumped 9, flat 3, open 1 (saving losses: keep it)
   - ran: NINO up to 1.55x  
     CA `BqekG1RSPUthaKfStu7Uvyvr1eR6TchrQMp1M5r5pump`
 - dev share over 1%: blocked 13, ran 2, dumped 10, flat 0, open 1 (saving losses: keep it)
@@ -197,13 +197,13 @@ Nothing has a positive after-cost edge yet. All 229 settled coins average -8.7% 
 Not quiet. The movers with real flow are cute character names launched on pump.fun in the last 15 minutes: Solana-chan (SOLCHAN, $22k cap, $40k 5m, +894% 1h, 64% buys) and Nyamit (pumpswap, $32k cap, $46k 5m, 58% buys). They share a kawaii, cat-girl style and are rising (V1, V5). The second theme is name families and people: JaoJiu (pumpswap $153k, $10.5k 5m, -31% 1h), its pump.fun copy, and Bernard (+545% 1h, $8k 5m) look like a vamp war, so find the original first (V1, V3). Fading: legacy memes and animal or cartoon coins (ROCKET, CBUCKS at $8 5m with zero buys, Christmax at 12 days old, Memeployed, Jimmies). Clover, NAUGHTY and TANDEM pumped on 1h with almost no 5m flow, so they're noise. Setups to research, not buy yet: SOLCHAN and Nyamit as the character cluster. Both are under 15 minutes old, so no entry until they age and keep flow. Nyamit already fits the MIGRATED criteria (under 12h, $32k cap, $46k 5m) once holder and bundle checks pass. JaoJiu only as a dip, and only after the original is confirmed. The Trump, Ansem and Jensen headlines and the BASKET and HELIORA calls don't appear in any mover, so I'm not using them. No mover is named for a hack.
 
 ## Moving most in its scans, last 30 min (1h volume)
-- SOLCHAN: $286,329 1h vol, $14,332 mcap, -44% 1h  
+- SOLCHAN: $298,550 1h vol, $17,562 mcap, -32% 1h  
   CA `5GfgQ79T5P8hSmyKhvRWZvNehgV8gJ3JNTsUvjegbYze`
 - JaoJiu: $183,692 1h vol, $160,702 mcap, -16% 1h  
   CA `2UyrvgCRXiEwiKRVk96gs6B4myrBHZAfcLyMVLE8vSCy`
-- Nyamitto: $131,068 1h vol, $22,323 mcap, +878% 1h  
-  CA `5BX4LiBheGbrPd7rCxdpbdE14hEgm542Wdpt1zs65fAo`
-- Slotbound: $113,362 1h vol, $4,563 mcap, -84% 1h  
+- Slotbound: $117,174 1h vol, $7,243 mcap, -74% 1h  
   CA `6woMBVpn4QwQVYeLysGKB2JiBSUCxkENmbemj5eE9Zz3`
-- Nyamit: $95,731 1h vol, $2,662 mcap, -90% 1h  
-  CA `JCd9vynvmBex2t79iGPb5L4jm62b5c4nwQG7sei5pump`
+- REBACCA: $92,570 1h vol, $7,909 mcap, +142% 1h  
+  CA `CW2GNsWs6Fmgj8MKXqWWKNSgiEGTyHRxKKQNkQzrpump`
+- HELIORA: $80,751 1h vol, $18,479 mcap, -83% 1h  
+  CA `96qfge1RkUWhSsv8i9V4QZFANGypKEe1u7pzCDGGpump`
