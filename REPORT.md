@@ -1,13 +1,13 @@
 # Trencher live report
 
-Updated 2026-11-25T12:37:57Z (paper trading, never real money)
+Updated 2026-11-25T12:53:06Z (paper trading, never real money)
 
 - Equity: $74.23 (-25.8% vs $100 start)
 - Closed trades: 22, 3 wins
 - Fees paid: $14.78 (axiom $2.81, network $9.18, pool $2.66), plus $4.15 lost to slippage
 - New trades: WATCH-ONLY (scans and decides, buys nothing)
-- Brain: subscription, claude-haiku-5-5 for routine calls, claude-opus-5-5 for the daily review; 442 routine calls and 0 plan-limit hits in 48h
-- Watch log: 41 coins being followed, 3551 filed, 0 would-buys (6h follow, sampled every 2 min)
+- Brain: subscription, claude-haiku-5-5 for routine calls, claude-opus-5-5 for the daily review; 439 routine calls and 0 plan-limit hits in 48h
+- Watch log: 40 coins being followed, 3552 filed, 0 would-buys (6h follow, sampled every 2 min)
 
 ## Scorecard (after fees)
 - 22 closed, 3 won (14%), net $-25.79
@@ -73,7 +73,7 @@ Updated 2026-11-25T12:37:57Z (paper trading, never real money)
   CA `H4gHnZ3NCU7Z9XQwGX6YYJNyieGEW8pqwGRUcdSxpump`
 
 ## Last scan
-- 12:37Z: 3 coins, 2 with pairs, 0 passed the market filters, 0 researched
+- 12:52Z: 3 coins, 2 with pairs, 0 passed the market filters, 0 researched
 
 ## Coins it looked at, and why it passed
 - 12:35Z PILOTUS (FINAL_STRETCH, $14,775 mcap, $10,412 5m vol): REJECT, Top 10 hold 26.3% ex-pool (>25%) (V13)  
@@ -199,11 +199,11 @@ Not quiet, but thin. Flow is concentrated in pump.fun launches under about five 
 ## Moving most in its scans, last 30 min (1h volume)
 - Pompom: $503,135 1h vol, $203,718 mcap, +197% 1h  
   CA `5EmvWDizkpjAXbcfCcVq69w1id8GaLzi4LLwtuSgpump`
-- ANSEM: $238,817 1h vol, $62,439 mcap, -64% 1h  
-  CA `DD23R2DJFKxUCB2CUvogviVhHA7D9RTsjbrFKWBzpump`
-- Jimmies: $84,373 1h vol, $1,516,949 mcap, +30% 1h  
-  CA `GisWWjhwrSud4aFGSHvTMt85Ky14sY7LeBFCpfoFpump`
-- Pompom: $66,046 1h vol, $16,834 mcap, -33% 1h  
+- Pompom: $73,769 1h vol, $14,618 mcap, -42% 1h  
   CA `8ArRsCwf3FqiMTY4wHqPmViWGJyJWQqQ6YucgTrhpump`
-- OUROBOROS: $60,306 1h vol, $43,785 mcap, +47% 1h  
-  CA `38EDdUxnJvrnDsJyB45E2W3pK26qLEjmWTvsEmMuG9ZR`
+- Jimmies: $69,447 1h vol, $1,530,180 mcap, +45% 1h  
+  CA `GisWWjhwrSud4aFGSHvTMt85Ky14sY7LeBFCpfoFpump`
+- SWARM: $46,482 1h vol, $1,727 mcap, -93% 1h  
+  CA `2Rw6rLRRZXQLNreForjeVvDjnpYUaW6rmMFXmRP9pump`
+- ANSEM: $41,295 1h vol, $59,817 mcap, -49% 1h  
+  CA `DD23R2DJFKxUCB2CUvogviVhHA7D9RTsjbrFKWBzpump`
