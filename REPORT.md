@@ -1,13 +1,13 @@
 # Trencher live report
 
-Updated 2026-11-25T21:43:13Z (paper trading, never real money)
+Updated 2026-11-25T21:58:21Z (paper trading, never real money)
 
 - Equity: $74.23 (-25.8% vs $100 start)
 - Closed trades: 22, 3 wins
 - Fees paid: $14.78 (axiom $2.81, network $9.18, pool $2.66), plus $4.15 lost to slippage
 - New trades: WATCH-ONLY (scans and decides, buys nothing)
 - Brain: subscription, claude-haiku-5-5 for routine calls, claude-opus-5-5 for the daily review; 400 routine calls and 0 plan-limit hits in 48h
-- Watch log: 94 coins being followed, 3617 filed, 0 would-buys (6h follow, sampled every 2 min)
+- Watch log: 99 coins being followed, 3617 filed, 0 would-buys (6h follow, sampled every 2 min)
 
 ## Scorecard (after fees)
 - 22 closed, 3 won (14%), net $-25.79
@@ -73,9 +73,19 @@ Updated 2026-11-25T21:43:13Z (paper trading, never real money)
   CA `H4gHnZ3NCU7Z9XQwGX6YYJNyieGEW8pqwGRUcdSxpump`
 
 ## Last scan
-- 21:42Z: 9 coins, 9 with pairs, 0 passed the market filters, 0 researched
+- 21:57Z: 10 coins, 10 with pairs, 2 passed the market filters, 2 researched
 
 ## Coins it looked at, and why it passed
+- 21:58Z LoreChan (no setup, $28,746 mcap, $27,167 5m vol): REJECT, No setup fits: not Final Stretch, not a migrated runner, not a healthy dip  
+  CA `FW1jbvnrFYfbxbTnHEF82PiYPMXhQ6fUuyxzZjzypump`
+- 21:58Z Squirrel (DIP, $150,238 mcap, $34,758 5m vol): PASS at conviction 3, PASS: theme pace 0.54x, no catalyst, 15 copies, and a saw-tooth chart with price 4x above its low. A dip with no story is a bag (V1, V13).  
+  CA `EmU2QZ3RKBxaydKn8ix9rrSrWbzPNVifVTa4NLH4pump`
+- 21:55Z Pompompurin (MIGRATED, $287,336 mcap, $18,449 5m vol): PASS at conviction 2, PASS: Pompompurin is 88% off its $2.34M high with 5m flow at 0.4x pace on a theme running at 0.44x. The holders are clean, but the money shape isn't there. Blockers: "big drawdown", "flow below pace", "dead theme". (V1, V6)  
+  CA `H2iscCQ4RiZ5ufu3UTBS2VDrVqbNY8gN7eVSSASBpump`
+- 21:53Z MONEY (MIGRATED, $692,485 mcap, $42,470 5m vol): REJECT, Dev holds 6.8% (>1%) (V13, V17)  
+  CA `6sA2MQ16pug6gUo78UXBiJjqWWpwejRKk6s4BNdEpump`
+- 21:46Z 4chanpump (MIGRATED, $186,907 mcap, $143,560 5m vol): PASS at conviction 2, PASS: chasing spike. 4chanpump is up 105% on 5m and 546% on the hour, sitting 8.9% off a peak that is 13 minutes old, with no printed higher low. It is one of 22 same-ticker copies. Wait for the retrace (V1, V6).  
+  CA `GFmaQAffLD1B4BxJuuQHmqxHqWavaSJGrYFCXQAypump`
 - 21:41Z naldloninu (MIGRATED, $48,005 mcap, $33,962 5m vol): PASS at conviction 2, PASS: chasing spike. The 5m candle is +482% and flow is 4.3x the hour's pace, with no printed higher low, a 19-copy same-ticker field, and one linked bundle cluster at 11.5%. Wait for the retrace. (V1, V6, V13)  
   CA `F933ru1xeTc9r1jhpaKr3fm8QwQuTGvwfEoxg21Epump`
 - 21:38Z UBI (MIGRATED, $44,870 mcap, $10,217 5m vol): PASS at conviction 3, PASS: flow below pace (0.44x hourly), no higher low, theme at 0.1x pace, 0.8h old and bleeding off its bond spike. Blocker: flow below pace. (V1, V6, V13)  
@@ -86,20 +96,10 @@ Updated 2026-11-25T21:43:13Z (paper trading, never real money)
   CA `5EmvWDizkpjAXbcfCcVq69w1id8GaLzi4LLwtuSgpump`
 - 21:26Z Pnut (DIP, $100,450 mcap, $17,544 5m vol): REJECT, Dip with fading attention is a falling knife, not a dip (5m at 0.21x the hour's pace, under 0.6x)  
   CA `9bgy4dVrPqa7HozGvBRV5Qy1ccbDdYHHMyzKrJjqpump`
-- 21:24Z NORFEATH (MIGRATED, $237,738 mcap, $18,448 5m vol): REJECT, Top 10 hold 46.7% ex-pool (>25%) (V13)  
-  CA `3gmFG4sFDJErDV8pacFrL2uUPXeGJTYLjfRy4hFypump`
-- 21:20Z TRIPWIRE (MIGRATED, $39,013 mcap, $5,247 5m vol): PASS at conviction 3, PASS: TRIPWIRE is a conditional-swap app with no meme and no meta behind it. Top 10 at 20.7%, 5m flow only $5.2k, and the bottom-buy gate fails with no catalyst (V1, V6, V13).  
-  CA `Cqojv7y5HokxxjRGcBLNMdMgerVyQyu2SMbGoAbiWire`
-- 21:19Z POMBAO (MIGRATED, $82,076 mcap, $10,894 5m vol): PASS at conviction 2, PASS: POMBAO is down 70% in its hour with no printed higher low and 5m flow at 0.57x pace. It's a falling knife in a crowd led by Pompompurin. (V1, V6)  
-  CA `AGyQW6inE99G3Js63ooQWzAeEeBRu8718zjiSKPBpump`
-- 21:15Z FIONA (MIGRATED, $2,668,299 mcap, $4,984 5m vol): REJECT, Bundles: 10 linked wallet cluster(s) hold 29.6% of supply (>20%) (V17)  
-  CA `B34nXKzCgsJb9ChLuSHPRpXLE3WFSWyeT8Cqkzzmpump`
-- 21:12Z Squirrel (MIGRATED, $99,372 mcap, $36,738 5m vol): REJECT, Top 10 hold 25.2% ex-pool (>25%) (V13)  
-  CA `EmU2QZ3RKBxaydKn8ix9rrSrWbzPNVifVTa4NLH4pump`
 
 ## What its skips did next (last 48h)
 A skip "ran" if the coin reached the first target (1.5x) from the skip price before a 20% drop, "dumped" if the drop came first. Sampled every 10 min, followed 6h.
-- top 10 over 25%: blocked 43, ran 7, dumped 32, flat 1, open 3 (saving losses: keep it)
+- top 10 over 25%: blocked 42, ran 7, dumped 32, flat 1, open 2 (saving losses: keep it)
   - ran: JENSEN up to 2.62x  
     CA `GaNJeASYBM9k3TvEeUC2Pdyu1TjcpzTmPpoom92fpump`
   - ran: GOAT up to 1.53x  
@@ -113,20 +113,13 @@ A skip "ran" if the coin reached the first target (1.5x) from the skip price bef
     CA `9cDnmLRDWeJzcpyw8tSFAT7HS4Aunx6MmZWjMfrzpump`
   - ran: SHHFT up to 1.61x  
     CA `GqMg4TRt5U5HRK6oeZYwCF1Jz7Ym9MSzWSoFCtFsbzf6`
-- flow below pace: blocked 29, ran 5, dumped 21, flat 0, open 3 (saving losses: keep it)
+- flow below pace: blocked 30, ran 6, dumped 21, flat 0, open 3 (saving losses: keep it)
   - ran: Jesus up to 1.64x  
     CA `Gy5BUDnpJMWRsNVKh9sRtsBGunFXKKrbroQRoydQpump`
   - ran: GROKIA up to 1.51x  
     CA `3cL47ohWa2HApLYKtqPsqkjaxJ6HLvT5Ri1KvWdXpump`
   - ran: BOOBS up to 1.51x  
     CA `E35iEA2yLLHc1tjm6et1Z3YuH8DhxJYWtWezPHgSpump`
-- near the high / chasing: blocked 27, ran 9, dumped 15, flat 0, open 3 (mixed)
-  - ran: WOFL up to 2.62x  
-    CA `AdXjXfumPSSKk7PrfgDHcAsPvuxnKv7Zo9WZEWKbiDkh`
-  - ran: Phil up to 2.05x  
-    CA `GMLSyjZCKGtFwztp2mtT8PDeNUA6WEk7oQoe3QkFpump`
-  - ran: Jesus up to 1.64x  
-    CA `Gy5BUDnpJMWRsNVKh9sRtsBGunFXKKrbroQRoydQpump`
 - RugCheck danger: blocked 27, ran 3, dumped 24, flat 0, open 0 (saving losses: keep it)
   - ran: TIMOTHY up to 2.14x  
     CA `AWg6LmGPfqjEqAU8N8wR8mYTbwmkwqMUqzrmggbgpump`
@@ -134,7 +127,14 @@ A skip "ran" if the coin reached the first target (1.5x) from the skip price bef
     CA `7ykeHoEnjnGkY6tqteXn47fdGtd7kfXWghiyZ7YKpump`
   - ran: Snowball up to 3.52x  
     CA `9TKbd3VFaMSXsEAicD9JVQWpWwAoLi4fSgWmZL2cpump`
-- too new / sniping: blocked 21, ran 4, dumped 17, flat 0, open 0 (saving losses: keep it)
+- near the high / chasing: blocked 26, ran 9, dumped 16, flat 0, open 1 (mixed)
+  - ran: WOFL up to 2.62x  
+    CA `AdXjXfumPSSKk7PrfgDHcAsPvuxnKv7Zo9WZEWKbiDkh`
+  - ran: Phil up to 2.05x  
+    CA `GMLSyjZCKGtFwztp2mtT8PDeNUA6WEk7oQoe3QkFpump`
+  - ran: Jesus up to 1.64x  
+    CA `Gy5BUDnpJMWRsNVKh9sRtsBGunFXKKrbroQRoydQpump`
+- too new / sniping: blocked 22, ran 4, dumped 17, flat 0, open 1 (saving losses: keep it)
   - ran: BABYANSEM up to 2.77x  
     CA `F3VctV9FqDgiyqaztN6z78bgWy27eH7DBBHW1vjpump`
   - ran: Merged up to 2.18x  
@@ -148,21 +148,17 @@ A skip "ran" if the coin reached the first target (1.5x) from the skip price bef
     CA `J9eBkCb4UtquAMQqB6duwBmR99fFSMoTnDcaMB9Wpump`
   - ran: Pnut up to 1.75x  
     CA `9bgy4dVrPqa7HozGvBRV5Qy1ccbDdYHHMyzKrJjqpump`
+- dev share over 1%: blocked 13, ran 2, dumped 9, flat 0, open 2 (saving losses: keep it)
+  - ran: BLOOM up to 2.09x  
+    CA `FyRXnHLBSeHHoigrgHR1hvcXiPbPCa5bxhVhEDampump`
+  - ran: PI up to 1.77x  
+    CA `D2AK5DvBj8AxN5VX1t6bjv7muJVPUx4hFPowVRWYpump`
 - bundles over the line: blocked 13, ran 2, dumped 9, flat 1, open 1 (saving losses: keep it)
   - ran: jingyu up to 1.58x  
     CA `DUZrwdjEthcJ99ZiRXr31UuqTohoTg7VjTEyfGdBpump`
   - ran: DUMBMONEY up to 1.74x  
     CA `GEHehS5Rr4rNCjvrHLjjV1avD4bjMsn53ywDGv1spump`
-- dev share over 1%: blocked 12, ran 2, dumped 9, flat 0, open 1 (saving losses: keep it)
-  - ran: BLOOM up to 2.09x  
-    CA `FyRXnHLBSeHHoigrgHR1hvcXiPbPCa5bxhVhEDampump`
-  - ran: PI up to 1.77x  
-    CA `D2AK5DvBj8AxN5VX1t6bjv7muJVPUx4hFPowVRWYpump`
-- falling knife / no higher low: blocked 10, ran 2, dumped 5, flat 2, open 1 (saving losses: keep it)
-  - ran: Mogmas up to 1.63x  
-    CA `Cocrz7BR2xE2sgKn3VbmaTXH6HTVgCiVFWTVWmyTpump`
-  - ran: Jimmies up to 1.53x  
-    CA `GisWWjhwrSud4aFGSHvTMt85Ky14sY7LeBFCpfoFpump`
+- other: blocked 11, ran 0, dumped 10, flat 0, open 1 (saving losses: keep it)
 
 ## Daily review (2026-11-25, claude-opus-5-5)
 Nothing has a positive edge after costs. All 213 settled coins came out at -12.2% net under the simple plan, and every setup and stage is negative: MIGRATED -10.0%, FINAL_STRETCH -15.3%, DIP -19.8%. The cost estimate, about 9.8% round trip on a $10 buy, is what kills it. Before costs, MIGRATED (about -0.3%) and the coins the brain reviewed (about +0.8%) are close to break-even. With a 1.5x target, a -20% stop and about 10% cost, a coin set needs roughly 42% of its coins to hit the target before the stop just to break even. The best group here gets 28.6%. With n=213, repeat entries for the same coin and coins from the same meme moving together, the before-cost numbers are within noise of zero. The after-cost loss is not noise. I can't say whether the routine model's would-buys beat its passes: it logged 0 would-buys in 24h. Every coin that reached it was passed, so the only split we can measure is the checklist. Checklist-passed coins ran 28.6% of the time vs 15.8% for checklist failures, and netted -9.0% vs -15.6%.
@@ -203,13 +199,13 @@ Nothing has a positive edge after costs. All 213 settled coins came out at -12.2
 The meta is live, not quiet. The movers show cute animals as the one theme with real money behind it: Pnut (Peanut the Squirrel, $66k mcap, $75k 5m, 56% buys, 0.3h old), SpaceX Squirrel ($108k, $29k 5m, 89% buys, minutes old), and Pompompurin ($1.4M, $98k 5m, 69% buys). Pompompurin is already being vamped: the second "Pompom" at $436k with $5.5k 5m is the copy, so the only trade is the one carrying the volume. The finance-joke names (Only Up, Universal Basic Income, 1 share and a dream) are mixed. UBI's $116k 5m all landed in its last six minutes on flat price, so it's a burst to watch, not a setup. The dead copies (COIN, VYBE, MAGGIE) show 1h volume with almost nothing in 5m, which is the fade. Setups to research, not buy: Pnut on a pullback that holds its 5m flow, and OnlyUp ($404k, $25k 5m, 78% buys) as a conviction-5 research name, with holder, dev and bundle checks run before any entry and stops set where each thesis breaks. Caveat: the crawler's CRIME, GRAVY and Thanksgiving names don't appear in scan_movers, and the Trump-dinner headlines aren't reflected in the movers, so I'm treating those as unconfirmed.
 
 ## Moving most in its scans, last 30 min (1h volume)
-- Pnut: $981,287 1h vol, $101,621 mcap, +259% 1h  
-  CA `9bgy4dVrPqa7HozGvBRV5Qy1ccbDdYHHMyzKrJjqpump`
-- Pnut: $539,141 1h vol, $9,974 mcap, -68% 1h  
-  CA `CKWk8T9stykpugEPkgQMvdfYaH76WFwjL4mZWasfpump`
+- MONEY: $594,928 1h vol, $692,485 mcap, +540% 1h  
+  CA `6sA2MQ16pug6gUo78UXBiJjqWWpwejRKk6s4BNdEpump`
+- Squirrel: $567,832 1h vol, $137,192 mcap, +287% 1h  
+  CA `EmU2QZ3RKBxaydKn8ix9rrSrWbzPNVifVTa4NLH4pump`
+- Pompompurin: $555,167 1h vol, $287,336 mcap, +61% 1h  
+  CA `H2iscCQ4RiZ5ufu3UTBS2VDrVqbNY8gN7eVSSASBpump`
+- 4chanpump: $377,186 1h vol, $186,907 mcap, +546% 1h  
+  CA `GFmaQAffLD1B4BxJuuQHmqxHqWavaSJGrYFCXQAypump`
 - UBI: $281,251 1h vol, $44,870 mcap, -16% 1h  
   CA `hCM8Mga76sK983j3Gvui427SakSGYnG1tDi4Tsipump`
-- POMBAO: $228,321 1h vol, $82,076 mcap, +132% 1h  
-  CA `AGyQW6inE99G3Js63ooQWzAeEeBRu8718zjiSKPBpump`
-- NORFEATH: $164,760 1h vol, $241,131 mcap, +426% 1h  
-  CA `3gmFG4sFDJErDV8pacFrL2uUPXeGJTYLjfRy4hFypump`
