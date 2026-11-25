@@ -1,13 +1,13 @@
 # Trencher live report
 
-Updated 2026-11-25T07:19:58Z (paper trading, never real money)
+Updated 2026-11-25T07:35:12Z (paper trading, never real money)
 
 - Equity: $74.23 (-25.8% vs $100 start)
 - Closed trades: 22, 3 wins
 - Fees paid: $14.78 (axiom $2.81, network $9.18, pool $2.66), plus $4.15 lost to slippage
 - New trades: WATCH-ONLY (scans and decides, buys nothing)
-- Brain: subscription, claude-haiku-5-5 for routine calls, claude-opus-5-5 for the daily review; 475 routine calls and 0 plan-limit hits in 48h
-- Watch log: 59 coins being followed, 3496 filed, 0 would-buys (6h follow, sampled every 2 min)
+- Brain: subscription, claude-haiku-5-5 for routine calls, claude-opus-5-5 for the daily review; 471 routine calls and 0 plan-limit hits in 48h
+- Watch log: 57 coins being followed, 3499 filed, 0 would-buys (6h follow, sampled every 2 min)
 
 ## Scorecard (after fees)
 - 22 closed, 3 won (14%), net $-25.79
@@ -73,9 +73,11 @@ Updated 2026-11-25T07:19:58Z (paper trading, never real money)
   CA `H4gHnZ3NCU7Z9XQwGX6YYJNyieGEW8pqwGRUcdSxpump`
 
 ## Last scan
-- 07:19Z: 3 coins, 3 with pairs, 0 passed the market filters, 0 researched
+- 07:34Z: 4 coins, 4 with pairs, 0 passed the market filters, 0 researched
 
 ## Coins it looked at, and why it passed
+- 07:21Z Jimmies (DIP, $1,013,262 mcap, $2,514 5m vol): REJECT, Dip with fading attention is a falling knife, not a dip (5m at 0.52x the hour's pace, under 0.6x)  
+  CA `GisWWjhwrSud4aFGSHvTMt85Ky14sY7LeBFCpfoFpump`
 - 07:11Z Merged (FINAL_STRETCH, $14,662 mcap, $5,072 5m vol): PASS at conviction 2, PASS — Merged is 29 minutes old, still on the pump.fun curve, down 23.5% off a 19k peak after a 628% hour, with its 15m candles halving. Too new and no catalyst. Blockers: "too new", "no catalyst", "theme pace 0.51x". Also the site's GitHub is someone else's repo and the domain is 0.1 days old (V1,   
   CA `AMYpNGi5aGrKr1ZDsotUdWh7k1mMi569ygtaHJmErGEd`
 - 07:03Z BASKET (MIGRATED, $605,495 mcap, $21,518 5m vol): PASS at conviction 3, PASS: flow below pace, no breakout, bottom-buy narrative gate fails. BASKET is the original of a 13-copy field that's cooling. (V1, V6, V13)  
@@ -94,8 +96,6 @@ Updated 2026-11-25T07:19:58Z (paper trading, never real money)
   CA `3Tg6YnNrfPdFfsY14MaNsDMWLseAyrUDS3myJtbaJN6f`
 - 06:10Z CBUCKS (MIGRATED, $5,165,858 mcap, $2,116 5m vol): REJECT, Top 10 hold 25.9% ex-pool (>25%) (V13)  
   CA `DtcicPCKTKeAh7TDEzTym3hXeoHAoMiBdYJhMYxZpump`
-- 06:08Z YUMA (DIP, $75,218 mcap, $12,560 5m vol): PASS at conviction 2, PASS: dead story, no catalyst, and no printed higher low within reach. The dip is real, the flow is only fair. (V1, V6, V13)  
-  CA `CkwFsrupdFHzo5kYk8b5W47CVx1v5ymzeu6BBoDjpump`
 
 ## What its skips did next (last 48h)
 A skip "ran" if the coin reached the first target (1.5x) from the skip price before a 20% drop, "dumped" if the drop came first. Sampled every 10 min, followed 6h.
@@ -113,7 +113,7 @@ A skip "ran" if the coin reached the first target (1.5x) from the skip price bef
     CA `9cDnmLRDWeJzcpyw8tSFAT7HS4Aunx6MmZWjMfrzpump`
   - ran: SHHFT up to 1.61x  
     CA `GqMg4TRt5U5HRK6oeZYwCF1Jz7Ym9MSzWSoFCtFsbzf6`
-- flow below pace: blocked 32, ran 7, dumped 25, flat 0, open 0 (saving losses: keep it)
+- flow below pace: blocked 31, ran 6, dumped 25, flat 0, open 0 (saving losses: keep it)
   - ran: WALLSTFLY up to 1.52x  
     CA `2DQbV7hsqxKVWmFakXGGhBbNyY28tDJ9YuJkojYrpump`
   - ran: NVDA up to 1.52x  
@@ -154,7 +154,7 @@ A skip "ran" if the coin reached the first target (1.5x) from the skip price bef
     CA `A2nbXtQvvRMvWtifCkV8cYepwcC4M7iA1jVMwAh6pump`
   - ran: DUMBMONEY up to 1.74x  
     CA `GEHehS5Rr4rNCjvrHLjjV1avD4bjMsn53ywDGv1spump`
-- falling knife (code): blocked 9, ran 0, dumped 7, flat 1, open 1 (saving losses: keep it)
+- falling knife (code): blocked 10, ran 0, dumped 7, flat 1, open 2 (saving losses: keep it)
 
 ## Daily review (2026-11-23, claude-opus-5-5)
 Nothing has a positive after-cost edge yet. All 229 settled coins average -8.7% net on the simple plan. Before costs they average about +0.9%, so the 9.6% average round-trip cost on a $10 buy accounts for the whole loss. That is the same story as the 22 paper trades, where fees and slippage were $18.83 of the $25.79 lost. The best setup is FINAL_STRETCH: n=39, 35.9% hit 1.5x, -4.9% net. With a 1.5x target, a -20% stop and about 10% costs, a setup needs roughly 43% hitting the target to break even. At n=39 the hit rate's 95% range is about 21–51%, so this sample can't separate it from MIGRATED, from coin-flip noise or from breakeven. I can't say whether the routine model's would-buys beat its passes, because it made zero would-buys in 24h. The coins it passed on (n=157, -8.4%) did slightly better than the coins the checklist failed (n=70, -9.8%), but both lost money. Passing everything was the right call on average. One process note: the watch-only review was set for about Nov 10 and today is Nov 23, so the owner should decide whether this is still the plan.
@@ -195,13 +195,13 @@ Nothing has a positive after-cost edge yet. All 229 settled coins average -8.7% 
 The trenches are thin right now, and the flow is concentrated in two coins, not a theme. Only YUMA ($52k cap, $14.4k 5m, 70% buys, 3.6h old, PumpSwap) and Merged (a 6-minute-old pump.fun launch, $10.4k 5m, 64% buys, up 413% in 1h) clear the $10k 5m bar in scan_movers. Rising: fresh pump.fun launches with real buyers. Fading: cartoon and meme-character coins (Trollface, 404GIRL, Golden Penguin, pode, Cartoon Money at $110 5m) and brand-name pumps like Reddit ($0 5m), which went quiet. Legacy coins (WASTED at 612h, ROCKET, SIMPS, Christmax) carry market cap with almost no flow, so they aren't a meta. The one setup that fits the MIGRATED rules (age ≤12h, cap ≥$30k, 5m ≥$10k) is YUMA: research it with the holder, dev and bundle checks, take initials at 2x, and treat the -24% 1h as a reason for a tight stop. Merged is too new to touch under the no-snipe rule. Basket and Fuck Cancer come only from the crawler summary and aren't in this scan, so they stay unverified until re-pulled, and Basket's age already conflicts. Ansem is a blocked drain coin and the Trump headlines aren't trading here.
 
 ## Moving most in its scans, last 30 min (1h volume)
-- BASKET: $645,148 1h vol, $605,750 mcap, +111% 1h  
-  CA `3Tg6YnNrfPdFfsY14MaNsDMWLseAyrUDS3myJtbaJN6f`
-- YUMA: $137,788 1h vol, $52,408 mcap, -24% 1h  
-  CA `CkwFsrupdFHzo5kYk8b5W47CVx1v5ymzeu6BBoDjpump`
-- Jimmies: $97,699 1h vol, $1,171,537 mcap, -10% 1h  
-  CA `GisWWjhwrSud4aFGSHvTMt85Ky14sY7LeBFCpfoFpump`
 - Merged: $72,698 1h vol, $14,753 mcap, +632% 1h  
   CA `AMYpNGi5aGrKr1ZDsotUdWh7k1mMi569ygtaHJmErGEd`
-- N3ON: $53,572 1h vol, $2,076 mcap, -16% 1h  
+- Jimmies: $58,146 1h vol, $1,013,262 mcap, -31% 1h  
+  CA `GisWWjhwrSud4aFGSHvTMt85Ky14sY7LeBFCpfoFpump`
+- N3ON: $53,631 1h vol, $1,980 mcap, -20% 1h  
   CA `8HBAgQbwNucWbRyFHn7Y1DB8Y348WAsPWDJTT7JRpump`
+- OFFCHART: $31,920 1h vol, $7,667 mcap, +221% 1h  
+  CA `9iE9pNmbnN13RtdD5PmkzFPK1RGFpGaWV5k19z4bpump`
+- Alien: $31,339 1h vol, $10,558 mcap, +439% 1h  
+  CA `9QDgPpMvsRQwoMmfaWtQah2bjjRFym8YS1xwYCcspump`
