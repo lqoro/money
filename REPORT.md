@@ -1,13 +1,13 @@
 # Trencher live report
 
-Updated 2026-11-25T09:36:12Z (paper trading, never real money)
+Updated 2026-11-25T09:51:28Z (paper trading, never real money)
 
 - Equity: $74.23 (-25.8% vs $100 start)
 - Closed trades: 22, 3 wins
 - Fees paid: $14.78 (axiom $2.81, network $9.18, pool $2.66), plus $4.15 lost to slippage
 - New trades: WATCH-ONLY (scans and decides, buys nothing)
-- Brain: subscription, claude-haiku-5-5 for routine calls, claude-opus-5-5 for the daily review; 461 routine calls and 0 plan-limit hits in 48h
-- Watch log: 45 coins being followed, 3526 filed, 0 would-buys (6h follow, sampled every 2 min)
+- Brain: subscription, claude-haiku-5-5 for routine calls, claude-opus-5-5 for the daily review; 455 routine calls and 0 plan-limit hits in 48h
+- Watch log: 45 coins being followed, 3529 filed, 0 would-buys (6h follow, sampled every 2 min)
 
 ## Scorecard (after fees)
 - 22 closed, 3 won (14%), net $-25.79
@@ -73,9 +73,15 @@ Updated 2026-11-25T09:36:12Z (paper trading, never real money)
   CA `H4gHnZ3NCU7Z9XQwGX6YYJNyieGEW8pqwGRUcdSxpump`
 
 ## Last scan
-- 09:35Z: 3 coins, 3 with pairs, 0 passed the market filters, 0 researched
+- 09:51Z: 5 coins, 5 with pairs, 0 passed the market filters, 0 researched
 
 ## Coins it looked at, and why it passed
+- 09:45Z SOLCHAN (FINAL_STRETCH, $22,778 mcap, $40,735 5m vol): REJECT, Bundles: 3 linked wallet cluster(s) hold 34.1% of supply (>20%) (V17)  
+  CA `9woryP8Yxe5jU1YzcYVtW38PppzPjZTKxy4yYctapump`
+- 09:38Z Nyamit (no setup, $24,236 mcap, $39,944 5m vol): REJECT, No setup fits: not Final Stretch, not a migrated runner, not a healthy dip  
+  CA `JCd9vynvmBex2t79iGPb5L4jm62b5c4nwQG7sei5pump`
+- 09:36Z JaoJiu (DIP, $152,914 mcap, $10,545 5m vol): REJECT, Dip with fading attention is a falling knife, not a dip (5m at 0.43x the hour's pace, under 0.6x)  
+  CA `2UyrvgCRXiEwiKRVk96gs6B4myrBHZAfcLyMVLE8vSCy`
 - 09:34Z Christmax (MIGRATED, $251,738 mcap, $2,374 5m vol): PASS at conviction 3, PASS: Christmax is 33% off a $375k peak with $2.4k of 5m flow, six same-name copies, and no printed higher low. It's a bottom buy with no catalyst. (V1, V6, V13)  
   CA `D7MyAD7k3AqJpg4uxjUcmL51EDHrEsJxkjUynsxcpump`
 - 09:33Z GTZ (FINAL_STRETCH, $17,105 mcap, $2,732 5m vol): PASS at conviction 3, PASS: GTZ has $2.7k of 5m flow, no story on the radar, and 3 same-ticker copies to split the crowd. Thin meme, not a trade (V1, V6, V13).  
@@ -90,16 +96,10 @@ Updated 2026-11-25T09:36:12Z (paper trading, never real money)
   CA `DtcicPCKTKeAh7TDEzTym3hXeoHAoMiBdYJhMYxZpump`
 - 08:50Z JaoJiu (DIP, $164,157 mcap, $13,022 5m vol): REJECT, Dip with fading attention is a falling knife, not a dip (5m at 0.39x the hour's pace, under 0.6x)  
   CA `2UyrvgCRXiEwiKRVk96gs6B4myrBHZAfcLyMVLE8vSCy`
-- 08:35Z BASKET (MIGRATED, $939,890 mcap, $24,270 5m vol): PASS at conviction 4, PASS: flow below pace (5m at 0.68x the hourly average), and the first resistance is only 1.14x away. Blocker: "flow below pace", with "target too close" behind it. One bundle holds 6.85%, over the 3–4% line. (V1, V3, V6)  
-  CA `3Tg6YnNrfPdFfsY14MaNsDMWLseAyrUDS3myJtbaJN6f`
-- 08:31Z HELIORA (FINAL_STRETCH, $19,649 mcap, $20,876 5m vol): PASS at conviction 2, PASS — 5 minutes old, a +666% spike on 533 buys to 190 sells, a 2-hour-old domain pitching its own chain, and this CA isn't the leader of a 6-copy ticker field. Blocker: "too new" and "chasing spike" (V1, V3, V6, V13).  
-  CA `96qfge1RkUWhSsv8i9V4QZFANGypKEe1u7pzCDGGpump`
-- 08:13Z JaoJiow (FINAL_STRETCH, $21,777 mcap, $7,893 5m vol): PASS at conviction 2, PASS: chasing spike. JaoJiow is up 60% on 5m and 913% on 1h, and it's the copy, not the leader. JAOJIOW owns the 4-copy field. (V1, V6)  
-  CA `BBupBrQsZyJF92vCvqfsSdJAx5CWmm1zSEdhBH7qpump`
 
 ## What its skips did next (last 48h)
 A skip "ran" if the coin reached the first target (1.5x) from the skip price before a 20% drop, "dumped" if the drop came first. Sampled every 10 min, followed 6h.
-- top 10 over 25%: blocked 39, ran 7, dumped 30, flat 1, open 1 (saving losses: keep it)
+- top 10 over 25%: blocked 39, ran 7, dumped 30, flat 2, open 0 (saving losses: keep it)
   - ran: SNP6900 up to 2.76x  
     CA `DnbQKi146NDmwwji3f3q5i68HQnYyBEhoDyj2q3Npump`
   - ran: JENSEN up to 2.62x  
@@ -127,13 +127,13 @@ A skip "ran" if the coin reached the first target (1.5x) from the skip price bef
     CA `AdXjXfumPSSKk7PrfgDHcAsPvuxnKv7Zo9WZEWKbiDkh`
   - ran: Phil up to 2.05x  
     CA `GMLSyjZCKGtFwztp2mtT8PDeNUA6WEk7oQoe3QkFpump`
-- too new / sniping: blocked 27, ran 5, dumped 21, flat 1, open 0 (saving losses: keep it)
-  - ran: Loaf up to 2.13x  
-    CA `8Ugc1FHaeK6iXQrnUpztxhhNHqucFwaqC35A4Kjjpump`
+- too new / sniping: blocked 25, ran 4, dumped 20, flat 1, open 0 (saving losses: keep it)
   - ran: AGI up to 1.53x  
     CA `7kctwFbSdLfpi6RuN9cjpVpYVHKPUr8PtG1meH35AEky`
   - ran: TREMP up to 1.7x  
     CA `CuNLbjjFcmumcKF1AnUkPU4dcjykJR73M8hzJB5Cpump`
+  - ran: BABYANSEM up to 2.77x  
+    CA `F3VctV9FqDgiyqaztN6z78bgWy27eH7DBBHW1vjpump`
 - RugCheck danger: blocked 23, ran 5, dumped 18, flat 0, open 0 (saving losses: keep it)
   - ran: JENSEN up to 1.7x  
     CA `CjPoozfB2Vub8pHFvdKuKUGJDLWuYC2U32yRTxMhpump`
@@ -141,7 +141,7 @@ A skip "ran" if the coin reached the first target (1.5x) from the skip price bef
     CA `CSjwLiCLyaJqXQm9XCV3LdYWMYswbZ7JQ71JKX77pump`
   - ran: FOMOMAS up to 1.71x  
     CA `9Gu5JYt4Pas6cW4S6qtyFkDucFj6GMtpJiDC9sQbpump`
-- thin 5m volume: blocked 15, ran 1, dumped 9, flat 3, open 2 (saving losses: keep it)
+- thin 5m volume: blocked 15, ran 1, dumped 10, flat 3, open 1 (saving losses: keep it)
   - ran: NINO up to 1.55x  
     CA `BqekG1RSPUthaKfStu7Uvyvr1eR6TchrQMp1M5r5pump`
 - dev share over 1%: blocked 14, ran 2, dumped 10, flat 1, open 1 (saving losses: keep it)
@@ -149,14 +149,16 @@ A skip "ran" if the coin reached the first target (1.5x) from the skip price bef
     CA `FyRXnHLBSeHHoigrgHR1hvcXiPbPCa5bxhVhEDampump`
   - ran: PI up to 1.77x  
     CA `D2AK5DvBj8AxN5VX1t6bjv7muJVPUx4hFPowVRWYpump`
-- bundles over the line: blocked 12, ran 3, dumped 6, flat 2, open 1 (saving losses: keep it)
+- bundles over the line: blocked 13, ran 3, dumped 7, flat 2, open 1 (saving losses: keep it)
   - ran: jingyu up to 1.58x  
     CA `DUZrwdjEthcJ99ZiRXr31UuqTohoTg7VjTEyfGdBpump`
   - ran: RNV up to 2.35x  
     CA `A2nbXtQvvRMvWtifCkV8cYepwcC4M7iA1jVMwAh6pump`
   - ran: DUMBMONEY up to 1.74x  
     CA `GEHehS5Rr4rNCjvrHLjjV1avD4bjMsn53ywDGv1spump`
-- falling knife (code): blocked 12, ran 0, dumped 8, flat 1, open 3 (saving losses: keep it)
+- falling knife (code): blocked 12, ran 1, dumped 9, flat 1, open 1 (saving losses: keep it)
+  - ran: HELIORA up to 2.24x  
+    CA `96qfge1RkUWhSsv8i9V4QZFANGypKEe1u7pzCDGGpump`
 
 ## Daily review (2026-11-23, claude-opus-5-5)
 Nothing has a positive after-cost edge yet. All 229 settled coins average -8.7% net on the simple plan. Before costs they average about +0.9%, so the 9.6% average round-trip cost on a $10 buy accounts for the whole loss. That is the same story as the 22 paper trades, where fees and slippage were $18.83 of the $25.79 lost. The best setup is FINAL_STRETCH: n=39, 35.9% hit 1.5x, -4.9% net. With a 1.5x target, a -20% stop and about 10% costs, a setup needs roughly 43% hitting the target to break even. At n=39 the hit rate's 95% range is about 21–51%, so this sample can't separate it from MIGRATED, from coin-flip noise or from breakeven. I can't say whether the routine model's would-buys beat its passes, because it made zero would-buys in 24h. The coins it passed on (n=157, -8.4%) did slightly better than the coins the checklist failed (n=70, -9.8%), but both lost money. Passing everything was the right call on average. One process note: the watch-only review was set for about Nov 10 and today is Nov 23, so the owner should decide whether this is still the plan.
@@ -197,13 +199,13 @@ Nothing has a positive after-cost edge yet. All 229 settled coins average -8.7% 
 Trenches aren't quiet. BASKET, JaoJiu and HELIORA have real volume and buyers, and the common thread is name clusters and fresh pump.fun launches, not the Trump, Ansem or hack headlines, which don't show up in any mover. The loudest theme is the JaoJiu name family: pumpswap JaoJiu at $164k with $13k 5m and 60% buys, a pump.fun JaoJiu copy at $28k with zero 5m flow, and JaoJiow at -92% 1h. That reads like a vamp war (V1, V3), so confirm which one is the original before anything else. Young pump.fun launches are split: HELIORA (about 6 minutes old, $22k cap, 74% buys, +756% 1h) is the only one with real flow, but its 5m volume equals its 1h volume, so verify that. TANDEM, 4PUMP and Päivi are thin. Legacy memes (WASTED, CBUCKS, ROCKET, Fuck Cancer, Memeployed) and the animal and cartoon names are fading, with 5m volume in the hundreds. Setups to research: BASKET on MIGRATED rules ($936k, $25k 5m, 61% buys, 3.9h old; the crawler's $714k doesn't match the scan, so I'm using the scan figure). Take initials at 2x and put the stop where the thesis breaks. JaoJiu on pumpswap is second, but only after confirming it's the original. HELIORA is inside the no-snipe window, so research it and don't buy yet. The crawler's Alien, Slitheen and Tandem cluster doesn't appear in the scan, so it's unconfirmed. Its YUMA and Merged numbers also don't match, which is why I'm discarding them.
 
 ## Moving most in its scans, last 30 min (1h volume)
-- HELIORA: $534,130 1h vol, $62,267 mcap, +128% 1h  
-  CA `96qfge1RkUWhSsv8i9V4QZFANGypKEe1u7pzCDGGpump`
-- 4PUMP: $61,152 1h vol, $15,203 mcap, +102% 1h  
-  CA `8ypx9tHqwLjJk51tqrm1iCrhTQ1PKshnw1FfpQjWpump`
-- Clover: $54,834 1h vol, $1,996 mcap, -27% 1h  
+- JaoJiu: $294,897 1h vol, $152,914 mcap, -31% 1h  
+  CA `2UyrvgCRXiEwiKRVk96gs6B4myrBHZAfcLyMVLE8vSCy`
+- SOLCHAN: $66,741 1h vol, $21,956 mcap, +894% 1h  
+  CA `9woryP8Yxe5jU1YzcYVtW38PppzPjZTKxy4yYctapump`
+- Nyamit: $63,600 1h vol, $32,194 mcap, +18% 1h  
+  CA `JCd9vynvmBex2t79iGPb5L4jm62b5c4nwQG7sei5pump`
+- Clover: $54,868 1h vol, $1,990 mcap, -27% 1h  
   CA `9bj2NxtzmccaADo8Rg14G9dddXU1NfFL8pxweCypump`
 - WASTED: $11,661 1h vol, $1,099,039 mcap, -5% 1h  
   CA `GexThZHgaswpAQ7Fi8QrHFubjPimUNSYhJiAA7XZpump`
-- Jimmies: $11,628 1h vol, $1,224,315 mcap, -7% 1h  
-  CA `GisWWjhwrSud4aFGSHvTMt85Ky14sY7LeBFCpfoFpump`
