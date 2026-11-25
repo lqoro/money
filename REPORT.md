@@ -1,13 +1,13 @@
 # Trencher live report
 
-Updated 2026-11-25T12:53:06Z (paper trading, never real money)
+Updated 2026-11-25T13:08:18Z (paper trading, never real money)
 
 - Equity: $74.23 (-25.8% vs $100 start)
 - Closed trades: 22, 3 wins
 - Fees paid: $14.78 (axiom $2.81, network $9.18, pool $2.66), plus $4.15 lost to slippage
 - New trades: WATCH-ONLY (scans and decides, buys nothing)
-- Brain: subscription, claude-haiku-5-5 for routine calls, claude-opus-5-5 for the daily review; 439 routine calls and 0 plan-limit hits in 48h
-- Watch log: 40 coins being followed, 3552 filed, 0 would-buys (6h follow, sampled every 2 min)
+- Brain: subscription, claude-haiku-5-5 for routine calls, claude-opus-5-5 for the daily review; 441 routine calls and 0 plan-limit hits in 48h
+- Watch log: 41 coins being followed, 3554 filed, 0 would-buys (6h follow, sampled every 2 min)
 
 ## Scorecard (after fees)
 - 22 closed, 3 won (14%), net $-25.79
@@ -73,9 +73,15 @@ Updated 2026-11-25T12:53:06Z (paper trading, never real money)
   CA `H4gHnZ3NCU7Z9XQwGX6YYJNyieGEW8pqwGRUcdSxpump`
 
 ## Last scan
-- 12:52Z: 3 coins, 2 with pairs, 0 passed the market filters, 0 researched
+- 13:08Z: 8 coins, 7 with pairs, 1 passed the market filters, 1 researched
 
 ## Coins it looked at, and why it passed
+- 13:08Z pompom (FINAL_STRETCH, $14,136 mcap, $2,441 5m vol): REJECT, Top 10 hold 30.7% ex-pool (>25%) (V13)  
+  CA `87hFHbdBUCReA8youYc5KMcUeeqFzFMYPMRtqCFZoCCq`
+- 13:05Z OUROBOROS (MIGRATED, $34,605 mcap, $5,020 5m vol): PASS at conviction 2, PASS: flow below pace (0.6x), no catalyst, dead theme (0.07x across 16 copies). The "100% drawdown" is a bad data point, not a dip. (V1, V6)  
+  CA `38EDdUxnJvrnDsJyB45E2W3pK26qLEjmWTvsEmMuG9ZR`
+- 13:02Z PFP (FINAL_STRETCH, $17,149 mcap, $50,965 5m vol): PASS at conviction 3, PASS — launch spike, 5m up 312% at 12x the hourly pace, 0.09h old, in a 27-copy PFP field with a bigger PFP above it. Chasing a fresh pump.fun candle (V1, V6, V13).  
+  CA `5PiugAAPsRxmatFE6uJ7jrtJ817TNKpypSa1JoZspump`
 - 12:35Z PILOTUS (FINAL_STRETCH, $14,775 mcap, $10,412 5m vol): REJECT, Top 10 hold 26.3% ex-pool (>25%) (V13)  
   CA `2BKQXFh7Rss1ykqsj34GXbaU4zpnrnJJZHGDeouFpump`
 - 12:31Z Pompom (MIGRATED, $195,911 mcap, $29,071 5m vol): PASS at conviction 3, PASS: flow below pace (5m at 0.69x hourly), no breakout printing, 20-copy vamp field. Pompom leads by volume, not by structure. (V1, V6)  
@@ -90,16 +96,10 @@ Updated 2026-11-25T12:53:06Z (paper trading, never real money)
   CA `GHFpSSw2ZMjmKCyc1wrHUjJiqnJeP18mekY9GL1Xpump`
 - 11:24Z Pompom (MIGRATED, $69,690 mcap, $25,045 5m vol): PASS at conviction 3, PASS: chasing spike. Up 36% on 5m at 4x the hourly pace, eight minutes old, no printed higher low, and 25 copies of the name with another coin leading the theme (V1, V6, V13).  
   CA `5EmvWDizkpjAXbcfCcVq69w1id8GaLzi4LLwtuSgpump`
-- 11:10Z KING (FINAL_STRETCH, $14,312 mcap, $5,197 5m vol): REJECT, Top 10 hold 25.1% ex-pool (>25%) (V13)  
-  CA `9Gdhz3WVnTaFcbGPrK2GbBdZpbwAQFfFK42bSgsupump`
-- 11:10Z SNOWCUMBRR (FINAL_STRETCH, $16,004 mcap, $7,066 5m vol): PASS at conviction 2, PASS — up 535% in 5 minutes on $7k of 5m volume, no X, no story, and the price doesn't match its own candles. That's chasing a spike (V1, V6).  
-  CA `Gf9wm93TTDpbPC467Eio5Vc42Kr6MAomUD172drWpump`
-- 11:07Z JaoJiu (DIP, $142,614 mcap, $4,194 5m vol): REJECT, Dip with fading attention is a falling knife, not a dip (5m at 0.51x the hour's pace, under 0.6x)  
-  CA `2UyrvgCRXiEwiKRVk96gs6B4myrBHZAfcLyMVLE8vSCy`
 
 ## What its skips did next (last 48h)
 A skip "ran" if the coin reached the first target (1.5x) from the skip price before a 20% drop, "dumped" if the drop came first. Sampled every 10 min, followed 6h.
-- top 10 over 25%: blocked 43, ran 8, dumped 31, flat 1, open 3 (saving losses: keep it)
+- top 10 over 25%: blocked 44, ran 8, dumped 32, flat 1, open 3 (saving losses: keep it)
   - ran: SNP6900 up to 2.76x  
     CA `DnbQKi146NDmwwji3f3q5i68HQnYyBEhoDyj2q3Npump`
   - ran: JENSEN up to 2.62x  
@@ -113,14 +113,14 @@ A skip "ran" if the coin reached the first target (1.5x) from the skip price bef
     CA `9cDnmLRDWeJzcpyw8tSFAT7HS4Aunx6MmZWjMfrzpump`
   - ran: SHHFT up to 1.61x  
     CA `GqMg4TRt5U5HRK6oeZYwCF1Jz7Ym9MSzWSoFCtFsbzf6`
-- near the high / chasing: blocked 31, ran 8, dumped 22, flat 1, open 0 (saving losses: keep it)
+- near the high / chasing: blocked 32, ran 8, dumped 22, flat 1, open 1 (saving losses: keep it)
   - ran: Bertcoin up to 1.8x  
     CA `xEK58Qa2xZ7C36Z2g3Jjq1WHY561CvvnJkLpgJspump`
   - ran: WOFL up to 2.62x  
     CA `AdXjXfumPSSKk7PrfgDHcAsPvuxnKv7Zo9WZEWKbiDkh`
   - ran: Phil up to 2.05x  
     CA `GMLSyjZCKGtFwztp2mtT8PDeNUA6WEk7oQoe3QkFpump`
-- flow below pace: blocked 29, ran 6, dumped 22, flat 0, open 1 (saving losses: keep it)
+- flow below pace: blocked 30, ran 7, dumped 22, flat 0, open 1 (saving losses: keep it)
   - ran: NVDA up to 1.52x  
     CA `37corVSMFFrqP3WK7AtMV6yFTGSvjFEB5fWnH1Bcpump`
   - ran: Doomcat up to 1.62x  
@@ -158,18 +158,18 @@ A skip "ran" if the coin reached the first target (1.5x) from the skip price bef
   - ran: DUMBMONEY up to 1.74x  
     CA `GEHehS5Rr4rNCjvrHLjjV1avD4bjMsn53ywDGv1spump`
 
-## Daily review (2026-11-23, claude-opus-5-5)
-Nothing has a positive after-cost edge yet. All 229 settled coins average -8.7% net on the simple plan. Before costs they average about +0.9%, so the 9.6% average round-trip cost on a $10 buy accounts for the whole loss. That is the same story as the 22 paper trades, where fees and slippage were $18.83 of the $25.79 lost. The best setup is FINAL_STRETCH: n=39, 35.9% hit 1.5x, -4.9% net. With a 1.5x target, a -20% stop and about 10% costs, a setup needs roughly 43% hitting the target to break even. At n=39 the hit rate's 95% range is about 21–51%, so this sample can't separate it from MIGRATED, from coin-flip noise or from breakeven. I can't say whether the routine model's would-buys beat its passes, because it made zero would-buys in 24h. The coins it passed on (n=157, -8.4%) did slightly better than the coins the checklist failed (n=70, -9.8%), but both lost money. Passing everything was the right call on average. One process note: the watch-only review was set for about Nov 10 and today is Nov 23, so the owner should decide whether this is still the plan.
-- finding: All coins (n=229): 25.8% ran, 59.4% dumped, median peak 1.25x, 11.8% hit 2x, -8.7% net after 9.6% cost. Before costs that is about +0.9%: no edge, just a cost drag.
-- finding: MIGRATED (n=162) is the weakest setup and 71% of the sample: 23.5% ran, 62.3% dumped, -10.0% net (about +0.5% before costs). The simple plan has nothing to work with here.
-- finding: FINAL_STRETCH (n=39) is the least bad: 35.9% ran, 20.5% hit 2x, median peak 1.44x, -4.9% net (about +5.1% before costs). That gap is about 1 standard error (roughly 5 points). Ran plus dumped is 100%, so every one of these coins resolved within 6h; it is a coin-flip-style distribution.
-- finding: DIP (n=28) dumps least (35.7%) but barely moves: median peak 1.08x, 3.6% hit 2x, 39% flat, -6.8% net. Dips mostly go sideways and then pay the fee.
-- finding: The routine model's rejections (brain_passed n=157, -8.4%) and checklist failures (n=70, -9.8%) differ by 1.4 points. That is noise. Neither the checklist nor the routine model splits winners from losers on this metric, though both correctly kept money out of a losing pool.
-- idea to test: Cost gate: only count coins whose logged round-trip cost is at most 5% at the intended size. Then check whether the before-cost return of the deeper-pool coins survives. If costs are mostly fixed fees, rerun the whole week at $25 and $50 buys. Costs are the single biggest lever in this data.
-- idea to test: FINAL_STRETCH, checklist passed, 5m volume of at least $10k, buy ratio of at least 0.55 (V1). Test whether at least 43% hit 1.5x before -20% on deduplicated coins. Below about 40% on the week's sample, drop it.
-- idea to test: FINAL_STRETCH exit variant: sell enough at 2x to get the cost back, trail the rest, stop at -30% to survive the pre-bond dump (V1). Compare with the 1.5x/-20% plan on the same coins. 20.5% hit 2x, and the 1.5x cap cuts off exactly the tail the strategy depends on.
-- idea to test: MIGRATED split by age (under 1h vs 1–12h) and mcap ($30–70k vs $70k–$11M, V6), with 5m volume of at least $10k and flow ratio (5m volume over hourly pace) of at least 1.0. Keep MIGRATED only if one cell is positive after costs with n of at least 40. Otherwise drop the setup.
-- idea to test: DIP split by drawdown (40–55% vs 55–75%) with flow ratio of at least 1.0 and buy ratio of at least 0.55. Check whether the deeper or the shallower dips are the flat, fee-paying ones.
+## Daily review (2026-11-25, claude-opus-5-5)
+Nothing has a positive edge after costs. All 213 settled coins came out at -12.2% net under the simple plan, and every setup and stage is negative: MIGRATED -10.0%, FINAL_STRETCH -15.3%, DIP -19.8%. The cost estimate, about 9.8% round trip on a $10 buy, is what kills it. Before costs, MIGRATED (about -0.3%) and the coins the brain reviewed (about +0.8%) are close to break-even. With a 1.5x target, a -20% stop and about 10% cost, a coin set needs roughly 42% of its coins to hit the target before the stop just to break even. The best group here gets 28.6%. With n=213, repeat entries for the same coin and coins from the same meme moving together, the before-cost numbers are within noise of zero. The after-cost loss is not noise. I can't say whether the routine model's would-buys beat its passes: it logged 0 would-buys in 24h. Every coin that reached it was passed, so the only split we can measure is the checklist. Checklist-passed coins ran 28.6% of the time vs 15.8% for checklist failures, and netted -9.0% vs -15.6%.
+- finding: Overall (n=213): 22.5% ran, 66.2% dumped, median peak 1.27x, 20.7% hit 2x, net -12.2% after an average 9.8% cost. Before costs that is about -2.4%. Fees, not picks, are most of the loss, the same as in the 22 real trades ($18.83 of the $25.79 was fees).
+- finding: Break-even math for the simple plan: a win nets about +40% (50 - 9.8) and a stop nets about -30% (-20 - 9.8), so about 42% of coins must hit 1.5x first. With zero costs the bar falls to about 29%. Brain-reviewed coins sit right at that zero-cost bar (28.6% ran) and still lose 9% after costs.
+- finding: MIGRATED (n=147) is the least bad setup: 25.2% ran, median peak 1.33x, net -10.0% (gross about -0.3%). It is the only setup worth testing further.
+- finding: FINAL_STRETCH (n=43): 20.9% ran, but 79.1% dumped (the highest), net -15.3%. Two of the top five runners came from here (Memeployed 15.2x, FUCKCANCER 7.6x, both around $18k mcap), but the average still loses. One-in-twenty tails don't save a fixed 1.5x/-20% plan.
+- finding: DIP (n=23): 8.7% ran, 13.0% hit 2x, net -19.8% (gross about -10%). It is the worst setup on every measure, though the sample is small.
+- idea to test: Cost gate: only count coins whose logged est_cost_pct at the intended size is ≤4%. Re-run net on that subset. If no subset with costs that low exists, this strategy has no edge at $10 sizing, whatever the picks.
+- idea to test: Setup filter: setup == MIGRATED AND checklist == pass. Measure net and the run rate in which 1.5x is hit before the stop. This is the only group close to gross break-even, so check whether it holds across the full week.
+- idea to test: Drop DIP, or allow it only when drawdown is 40-55% from the high AND flow ratio (5m/hourly pace) ≥1.0 AND buy ratio ≥0.55. Compare the result against dropping DIP entirely.
+- idea to test: FINAL_STRETCH only if 5m volume ≥ $10k AND buy ratio ≥0.55 AND mcap ≥ $15k. Otherwise exclude it. Check whether the 79% dump rate falls below about 60%.
+- idea to test: Young MIGRATED test: setup == MIGRATED AND age_hours ≤1 AND mcap between $100k and $300k AND checklist pass. Expect survivorship to shrink the edge. Only accept it if n ≥ 40 for the week and net > 0 after costs.
 
 ## Rules it changed from results and skips
 - 11-02 23:38Z tightened: DIP gate: flow at least 0.7x the hourly pace plus a printed higher low (DIPs 0 for 5 (-$6.70), every one bought before the higher low held (HEXN x2, SIS, Something, Leverhedge). The code line is now aligned to the owner's 0.7x.)
@@ -194,16 +194,16 @@ Nothing has a positive after-cost edge yet. All 229 settled coins average -8.7% 
 - [2026-11-02 20:25] I expected Slingoor, a clean MIGRATED leader with $25k of 5m flow at pace and a 0.77 buy share, to retest its $408k high from $304k. It never went green (0.98x peak) and hit the -20% stop in 2 minutes, a -$2.86 probe. My own thesis admitted there was no printed higher low after a peak only 6 minutes old, so this confirms the money-shape rule: buy share and flow are not structure (V1, V6). Next time a MIGRATED pullback with no higher low above the hourly low is a PASS with blocker "no higher low", not a probe. This is one loss, so it adds no new ban beyond the rule I already have.
 
 ## Meta right now
-Not quiet, but thin. Flow is concentrated in pump.fun launches under about five hours old, and the scanner's meta summary contradicts its own rows, so I'm reading the rows. Two themes are rising: cute Japanese and character names (bon at 57% buys and Pompompurin at 75% buys) and fresh generic-word tokens (Boor coin at $23k 5m and 64% buys, SWARM at $7.9k 5m and 61% buys). Person and justice names are fading (KING down 48%, Bernard at 7% buys), as are the cat and kawaii holdovers (wCAT at 12% buys, REBACCA at $349 5m), and the generic "Memecoin" ticker is effectively dead ($11 5m, down 56%); SNOWCUMBRR, OTF and FREYJA show zero 5m volume. The Trump dinner and Ansem headlines aren't showing up in these rows, and no mover is Trump-linked. Setups to research, not buy: Boor coin first, the only mover clearing the $10k 5m bar, but it is six minutes old and up 680%, so vamp, holder and bundle checks decide it; Pompompurin second, at $4k 5m with the cleanest buy ratio, but up 1,346% in an hour, so the exit plan is the real question; bon and SWARM only if 5m volume climbs past $10k.
+Not quiet. The movers are fresh pump.fun launches, mostly under a few hours old, with 5-minute buy ratios of 55-66% on the live rows. Rising: utility-sounding and product-style names (Pumpfun Pills/PFP, Allocator, Developer University, Pilotus) and cute characters (inu, bon, Pompompurin). Fading: the Ansem name (25% buys, down 21% in the hour), SWARM and Boor (down 93% and 89% with zero 5m volume), and the cat holdovers. The crawler's meta summary doesn't match its own rows: it puts Boor at $23k 5m and Pompompurin at $4k, while the rows show $0 for Boor and $761 (pumpswap) or $2.6k (pump.fun) for Pompompurin, so I'm trusting the rows. Setups to research, not buy: Developer University (DU, $9.4k mcap, $15k 5m, 66% buys, age under an hour) and Pilotus ($10k 5m, 63% buys); PFP only after I pick the original CA, since two tokens with the same name launching together is a vamp signature, and both PFP rows are up 300-900% in the hour, so the exit plan comes before any entry. Holder, dev and bundle checks decide each one.
 
 ## Moving most in its scans, last 30 min (1h volume)
-- Pompom: $503,135 1h vol, $203,718 mcap, +197% 1h  
-  CA `5EmvWDizkpjAXbcfCcVq69w1id8GaLzi4LLwtuSgpump`
-- Pompom: $73,769 1h vol, $14,618 mcap, -42% 1h  
+- OUROBOROS: $101,026 1h vol, $37,291 mcap, +90% 1h  
+  CA `38EDdUxnJvrnDsJyB45E2W3pK26qLEjmWTvsEmMuG9ZR`
+- PFP: $55,086 1h vol, $2,178 mcap, -91% 1h  
+  CA `GV7iihnQgrRrZt1npPu774CPNiv6PJe8SMMHLsTjpump`
+- PFP: $50,965 1h vol, $17,149 mcap, +312% 1h  
+  CA `5PiugAAPsRxmatFE6uJ7jrtJ817TNKpypSa1JoZspump`
+- ALLOC: $41,306 1h vol, $11,324 mcap, +353% 1h  
+  CA `12gycaao2rR4sga2joFMA1k87unGpNSbBT1CiJRopump`
+- Pompom: $40,463 1h vol, $10,249 mcap, +12% 1h  
   CA `8ArRsCwf3FqiMTY4wHqPmViWGJyJWQqQ6YucgTrhpump`
-- Jimmies: $69,447 1h vol, $1,530,180 mcap, +45% 1h  
-  CA `GisWWjhwrSud4aFGSHvTMt85Ky14sY7LeBFCpfoFpump`
-- SWARM: $46,482 1h vol, $1,727 mcap, -93% 1h  
-  CA `2Rw6rLRRZXQLNreForjeVvDjnpYUaW6rmMFXmRP9pump`
-- ANSEM: $41,295 1h vol, $59,817 mcap, -49% 1h  
-  CA `DD23R2DJFKxUCB2CUvogviVhHA7D9RTsjbrFKWBzpump`
