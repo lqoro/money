@@ -1,13 +1,13 @@
 # Trencher live report
 
-Updated 2026-11-25T04:33:59Z (paper trading, never real money)
+Updated 2026-11-25T04:49:12Z (paper trading, never real money)
 
 - Equity: $74.23 (-25.8% vs $100 start)
 - Closed trades: 22, 3 wins
 - Fees paid: $14.78 (axiom $2.81, network $9.18, pool $2.66), plus $4.15 lost to slippage
 - New trades: WATCH-ONLY (scans and decides, buys nothing)
-- Brain: subscription, claude-haiku-5-5 for routine calls, claude-opus-5-5 for the daily review; 490 routine calls and 0 plan-limit hits in 48h
-- Watch log: 75 coins being followed, 3459 filed, 0 would-buys (6h follow, sampled every 2 min)
+- Brain: subscription, claude-haiku-5-5 for routine calls, claude-opus-5-5 for the daily review; 489 routine calls and 0 plan-limit hits in 48h
+- Watch log: 74 coins being followed, 3463 filed, 0 would-buys (6h follow, sampled every 2 min)
 
 ## Scorecard (after fees)
 - 22 closed, 3 won (14%), net $-25.79
@@ -73,9 +73,15 @@ Updated 2026-11-25T04:33:59Z (paper trading, never real money)
   CA `H4gHnZ3NCU7Z9XQwGX6YYJNyieGEW8pqwGRUcdSxpump`
 
 ## Last scan
-- 04:33Z: 3 coins, 3 with pairs, 0 passed the market filters, 0 researched
+- 04:48Z: 5 coins, 5 with pairs, 0 passed the market filters, 0 researched
 
 ## Coins it looked at, and why it passed
+- 04:47Z BASKET (MIGRATED, $179,202 mcap, $147,552 5m vol): PASS at conviction 3, PASS. Four minutes off the bond, up 156% on the 5m, no higher low, and 20 same-ticker copies. Chasing a fresh launch (V1, V6, V13).  
+  CA `3Tg6YnNrfPdFfsY14MaNsDMWLseAyrUDS3myJtbaJN6f`
+- 04:36Z pode (FINAL_STRETCH, $19,472 mcap, $6,125 5m vol): REJECT, RugCheck danger: Creator history of rugged tokens  
+  CA `8VWH6ntFczuCzTgGeNVarnRDfi6utetSBn3JfTLxpump`
+- 04:36Z YUMA (MIGRATED, $156,822 mcap, $19,671 5m vol): PASS at conviction 3, PASS: YUMA is 8.6% off a $172k high after a 273% hour, and the first resistance is 1.09x away. Chasing, with no higher low printed (V1, V6).  
+  CA `CkwFsrupdFHzo5kYk8b5W47CVx1v5ymzeu6BBoDjpump`
 - 04:28Z CBUCKS (MIGRATED, $5,229,491 mcap, $3,292 5m vol): REJECT, Top 10 hold 25.9% ex-pool (>25%) (V13)  
   CA `DtcicPCKTKeAh7TDEzTym3hXeoHAoMiBdYJhMYxZpump`
 - 04:24Z Manlet (MIGRATED, $78,725 mcap, $34,730 5m vol): REJECT, Bundles: 10 linked wallet cluster(s) hold 26.6% of supply (>20%) (V17)  
@@ -90,12 +96,6 @@ Updated 2026-11-25T04:33:59Z (paper trading, never real money)
   CA `CkwFsrupdFHzo5kYk8b5W47CVx1v5ymzeu6BBoDjpump`
 - 03:40Z Alien (no setup, $13,412 mcap, $42,040 5m vol): REJECT, No setup fits: not Final Stretch, not a migrated runner, not a healthy dip  
   CA `9QDgPpMvsRQwoMmfaWtQah2bjjRFym8YS1xwYCcspump`
-- 03:38Z Manlet (MIGRATED, $82,790 mcap, $5,607 5m vol): PASS at conviction 2, PASS — flow below pace (0.6x hourly), no printed higher low, 13 minutes old and one of 19 Manlet copies. Blocker: "flow below pace" (V1, V6).  
-  CA `HyXjbs37EKU1QPKm2MnSQ3YaxNCugdh2W8bktSfYpump`
-- 03:33Z BABYANSEM (MIGRATED, $35,510 mcap, $26,398 5m vol): PASS at conviction 2, PASS: BABYANSEM is 4 minutes old, down 30% from its $50.6k peak with sellers at 108 to buyers at 69, and its name rides the Ansem wallet-drain headlines. Blocker: "too new" plus "no higher low" (V1, V6, owner rule).  
-  CA `F3VctV9FqDgiyqaztN6z78bgWy27eH7DBBHW1vjpump`
-- 03:32Z CBUCKS (MIGRATED, $5,834,659 mcap, $12,959 5m vol): REJECT, Top 10 hold 25.9% ex-pool (>25%) (V13)  
-  CA `DtcicPCKTKeAh7TDEzTym3hXeoHAoMiBdYJhMYxZpump`
 
 ## What its skips did next (last 48h)
 A skip "ran" if the coin reached the first target (1.5x) from the skip price before a 20% drop, "dumped" if the drop came first. Sampled every 10 min, followed 6h.
@@ -113,14 +113,14 @@ A skip "ran" if the coin reached the first target (1.5x) from the skip price bef
     CA `9cDnmLRDWeJzcpyw8tSFAT7HS4Aunx6MmZWjMfrzpump`
   - ran: SHHFT up to 1.61x  
     CA `GqMg4TRt5U5HRK6oeZYwCF1Jz7Ym9MSzWSoFCtFsbzf6`
-- flow below pace: blocked 33, ran 8, dumped 25, flat 0, open 0 (saving losses: keep it)
-  - ran: hCAT up to 1.52x  
-    CA `2FYs4vApfj4ErsggpFDfzMv1WvxnyiLtzNEj84mS6TLh`
+- flow below pace: blocked 32, ran 7, dumped 25, flat 0, open 0 (saving losses: keep it)
   - ran: WALLSTFLY up to 1.52x  
     CA `2DQbV7hsqxKVWmFakXGGhBbNyY28tDJ9YuJkojYrpump`
   - ran: NVDA up to 1.52x  
     CA `37corVSMFFrqP3WK7AtMV6yFTGSvjFEB5fWnH1Bcpump`
-- near the high / chasing: blocked 29, ran 7, dumped 20, flat 1, open 1 (saving losses: keep it)
+  - ran: Doomcat up to 1.62x  
+    CA `EiQ1JvEUZCXN5kQi2UdS4CdQapidqC7MCXd5sRTPpump`
+- near the high / chasing: blocked 30, ran 7, dumped 21, flat 1, open 1 (saving losses: keep it)
   - ran: Bertcoin up to 1.8x  
     CA `xEK58Qa2xZ7C36Z2g3Jjq1WHY561CvvnJkLpgJspump`
   - ran: WOFL up to 2.62x  
@@ -134,14 +134,14 @@ A skip "ran" if the coin reached the first target (1.5x) from the skip price bef
     CA `7kctwFbSdLfpi6RuN9cjpVpYVHKPUr8PtG1meH35AEky`
   - ran: TREMP up to 1.7x  
     CA `CuNLbjjFcmumcKF1AnUkPU4dcjykJR73M8hzJB5Cpump`
-- RugCheck danger: blocked 22, ran 6, dumped 16, flat 0, open 0 (saving losses: keep it)
+- RugCheck danger: blocked 23, ran 6, dumped 16, flat 0, open 1 (saving losses: keep it)
   - ran: Holdsgiving up to 2.96x  
     CA `A2jLaCC7v3VjXP8gEgCQNbTWEvizYuQ82jFEYfzipump`
   - ran: JENSEN up to 1.7x  
     CA `CjPoozfB2Vub8pHFvdKuKUGJDLWuYC2U32yRTxMhpump`
   - ran: FUCK! up to 2.22x  
     CA `CSjwLiCLyaJqXQm9XCV3LdYWMYswbZ7JQ71JKX77pump`
-- dev share over 1%: blocked 15, ran 2, dumped 11, flat 2, open 0 (saving losses: keep it)
+- dev share over 1%: blocked 14, ran 2, dumped 10, flat 2, open 0 (saving losses: keep it)
   - ran: BLOOM up to 2.09x  
     CA `FyRXnHLBSeHHoigrgHR1hvcXiPbPCa5bxhVhEDampump`
   - ran: PI up to 1.77x  
@@ -154,9 +154,9 @@ A skip "ran" if the coin reached the first target (1.5x) from the skip price bef
     CA `A2nbXtQvvRMvWtifCkV8cYepwcC4M7iA1jVMwAh6pump`
   - ran: DUMBMONEY up to 1.74x  
     CA `GEHehS5Rr4rNCjvrHLjjV1avD4bjMsn53ywDGv1spump`
-- falling knife (code): blocked 10, ran 1, dumped 8, flat 0, open 1 (saving losses: keep it)
-  - ran: Fly up to 1.52x  
-    CA `84tAcSK5L9kuQEVM8C8vMHXnfdA83nGBT2nYfSbPUcAc`
+- other: blocked 10, ran 1, dumped 9, flat 0, open 0 (saving losses: keep it)
+  - ran: task up to 1.61x  
+    CA `BJeEE9WCP1HZqT1D3heD9Do96D4dnEcNoDHspvQapump`
 
 ## Daily review (2026-11-23, claude-opus-5-5)
 Nothing has a positive after-cost edge yet. All 229 settled coins average -8.7% net on the simple plan. Before costs they average about +0.9%, so the 9.6% average round-trip cost on a $10 buy accounts for the whole loss. That is the same story as the 22 paper trades, where fees and slippage were $18.83 of the $25.79 lost. The best setup is FINAL_STRETCH: n=39, 35.9% hit 1.5x, -4.9% net. With a 1.5x target, a -20% stop and about 10% costs, a setup needs roughly 43% hitting the target to break even. At n=39 the hit rate's 95% range is about 21–51%, so this sample can't separate it from MIGRATED, from coin-flip noise or from breakeven. I can't say whether the routine model's would-buys beat its passes, because it made zero would-buys in 24h. The coins it passed on (n=157, -8.4%) did slightly better than the coins the checklist failed (n=70, -9.8%), but both lost money. Passing everything was the right call on average. One process note: the watch-only review was set for about Nov 10 and today is Nov 23, so the owner should decide whether this is still the plan.
@@ -199,11 +199,11 @@ Not quiet. The live scan_movers tape is a fresh pump.fun-to-PumpSwap run: most a
 ## Moving most in its scans, last 30 min (1h volume)
 - Manlet: $284,934 1h vol, $76,031 mcap, +166% 1h  
   CA `HyXjbs37EKU1QPKm2MnSQ3YaxNCugdh2W8bktSfYpump`
-- SLITHEEN: $107,376 1h vol, $1,977 mcap, -93% 1h  
+- YUMA: $207,347 1h vol, $168,581 mcap, +205% 1h  
+  CA `CkwFsrupdFHzo5kYk8b5W47CVx1v5ymzeu6BBoDjpump`
+- BASKET: $152,090 1h vol, $158,485 mcap, +126% 1h  
+  CA `3Tg6YnNrfPdFfsY14MaNsDMWLseAyrUDS3myJtbaJN6f`
+- SLITHEEN: $107,706 1h vol, $1,968 mcap, -93% 1h  
   CA `2ajAnFA8UKpeYbWSoEwobGQrLvdUUmjipjpongMepump`
-- Alien: $72,526 1h vol, $2,021 mcap, -8% 1h  
-  CA `9QDgPpMvsRQwoMmfaWtQah2bjjRFym8YS1xwYCcspump`
 - PENGUIN: $71,952 1h vol, $17,510 mcap, +115% 1h  
   CA `E1q6CJmjCNfCtMkPvt6zwXzZZXxJUYdUo3Wtt3aKpump`
-- BABYANSEM: $48,086 1h vol, $13,019 mcap, -79% 1h  
-  CA `F3VctV9FqDgiyqaztN6z78bgWy27eH7DBBHW1vjpump`
