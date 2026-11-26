@@ -1,13 +1,13 @@
 # Trencher live report
 
-Updated 2026-11-26T20:26:37Z (paper trading, never real money)
+Updated 2026-11-26T20:41:43Z (paper trading, never real money)
 
 - Equity: $74.23 (-25.8% vs $100 start)
 - Closed trades: 22, 3 wins
 - Fees paid: $14.78 (axiom $2.81, network $9.18, pool $2.66), plus $4.15 lost to slippage
 - New trades: WATCH-ONLY (scans and decides, buys nothing)
-- Brain: subscription, claude-haiku-5-5 for routine calls, claude-opus-5-5 for the daily review; 384 routine calls and 0 plan-limit hits in 48h
-- Watch log: 91 coins being followed, 3977 filed, 0 would-buys (6h follow, sampled every 2 min)
+- Brain: subscription, claude-haiku-5-5 for routine calls, claude-opus-5-5 for the daily review; 385 routine calls and 0 plan-limit hits in 48h
+- Watch log: 90 coins being followed, 3980 filed, 0 would-buys (6h follow, sampled every 2 min)
 
 ## Scorecard (after fees)
 - 22 closed, 3 won (14%), net $-25.79
@@ -73,9 +73,13 @@ Updated 2026-11-26T20:26:37Z (paper trading, never real money)
   CA `H4gHnZ3NCU7Z9XQwGX6YYJNyieGEW8pqwGRUcdSxpump`
 
 ## Last scan
-- 20:26Z: 4 coins, 4 with pairs, 0 passed the market filters, 0 researched
+- 20:41Z: 4 coins, 4 with pairs, 0 passed the market filters, 0 researched
 
 ## Coins it looked at, and why it passed
+- 20:36Z BRUH (MIGRATED, $8,486,155 mcap, $2,887 5m vol): PASS at conviction 3, PASS — BRUH is a $8.5M migrated coin, 31% off its $12.4M peak, with no catalyst and a crowded ticker. Blocker: "bottom buy, no catalyst" and "big cap, no room". (V1, V6, V13)  
+  CA `PgFtGGquvnv2zEkjG2N2QPvBTBrafuExGYEqahRpump`
+- 20:35Z PI (MIGRATED, $187,660 mcap, $9,438 5m vol): REJECT, Top 10 hold 43.9% ex-pool (>25%) (V13)  
+  CA `GEUULM43QbeFJ7p1Twodufx7bJDWNBibpwbKyETWpump`
 - 20:11Z JIMMY (DIP, $667,726 mcap, $2,281 5m vol): PASS at conviction 2, PASS: JIMMY is a fading same-name copy with sellers at 66% of 5m flow, no printed higher low, and a 4.04% bundle over the line (V1, V3, V6, V13).  
   CA `38M2z4UCfZEkUHFzD48vhKQhFhNyRGto8pZbLjNipump`
 - 20:05Z DIGS (MIGRATED, $251,104 mcap, $2,567 5m vol): REJECT, Bundles: 10 linked wallet cluster(s) hold 100.0% of supply (>20%) (V17)  
@@ -92,14 +96,10 @@ Updated 2026-11-26T20:26:37Z (paper trading, never real money)
   CA `HYFbbfv771xSRXyF2rRdf6eQzucLhrSHd2JkE12vpump`
 - 19:27Z securititty (MIGRATED, $154,317 mcap, $11,136 5m vol): REJECT, Top 10 hold 45.2% ex-pool (>25%) (V13)  
   CA `Gvo9widdpuyi2XsWm9gAepfcBR54c7XrrSSdwF2Mpump`
-- 19:26Z tato (MIGRATED, $33,396 mcap, $4,203 5m vol): PASS at conviction 2, PASS: too new, chasing, thin flow, and split crowd in a 4-copy field. Come back if it prints a higher low with real volume. (V1, V6, V13)  
-  CA `Eyevsagqp6qyUxz5Dj2jWawww5csjDFLtrPPmRwYpump`
-- 19:25Z JIMMY (DIP, $698,160 mcap, $2,260 5m vol): PASS at conviction 3, PASS. Bottom buy on a crowded same-name theme with no catalyst and theme flow under pace. The copies are running out of attention. (V1, V13)  
-  CA `38M2z4UCfZEkUHFzD48vhKQhFhNyRGto8pZbLjNipump`
 
 ## What its skips did next (last 48h)
 A skip "ran" if the coin reached the first target (1.5x) from the skip price before a 20% drop, "dumped" if the drop came first. Sampled every 10 min, followed 6h.
-- top 10 over 25%: blocked 47, ran 10, dumped 36, flat 0, open 1 (saving losses: keep it)
+- top 10 over 25%: blocked 48, ran 10, dumped 36, flat 0, open 2 (saving losses: keep it)
   - ran: MARS up to 2.06x  
     CA `816BuXnCFQqt6KXbBTcFgHWD29Ckpaqt8HMKSN4Vpump`
   - ran: 4CHAN up to 1.87x  
@@ -141,30 +141,28 @@ A skip "ran" if the coin reached the first target (1.5x) from the skip price bef
     CA `GEHehS5Rr4rNCjvrHLjjV1avD4bjMsn53ywDGv1spump`
   - ran: WIENER up to 1.59x  
     CA `8BDkDfj3ZUvcG9caGzF2XnHfwg7K6fjfKKDvX6SCpump`
-- falling knife (code): blocked 17, ran 3, dumped 11, flat 1, open 2 (saving losses: keep it)
+- falling knife (code): blocked 17, ran 3, dumped 13, flat 1, open 0 (saving losses: keep it)
   - ran: Jimmies up to 1.53x  
     CA `GisWWjhwrSud4aFGSHvTMt85Ky14sY7LeBFCpfoFpump`
   - ran: Investor up to 1.58x  
     CA `J9eBkCb4UtquAMQqB6duwBmR99fFSMoTnDcaMB9Wpump`
   - ran: MONEY up to 1.58x  
     CA `DeACAbp2GMzapB6Z2K8qdkTZupmNbKc6EZx9bnbCpump`
+- other: blocked 14, ran 1, dumped 12, flat 0, open 1 (saving losses: keep it)
+  - ran: SXI up to 2.34x  
+    CA `BFWNbSwRodXPTQqrMSCfhznhJwEzY6ERd6MHjWUEpump`
 - dev share over 1%: blocked 13, ran 2, dumped 9, flat 2, open 0 (saving losses: keep it)
   - ran: Grinch up to 1.94x  
     CA `J1b5HnRzmXsYK5akPTFtBR7B4E74JG8eyULodd7ypump`
   - ran: bolphante up to 1.7x  
     CA `FVBzzG4ZcAgxSLW1rWjNC9EH9CgEgz1A4puNYexMpump`
-- falling knife / no higher low: blocked 13, ran 3, dumped 6, flat 3, open 1 (saving losses: keep it)
+- falling knife / no higher low: blocked 13, ran 3, dumped 7, flat 3, open 0 (saving losses: keep it)
   - ran: Jimmies up to 1.53x  
     CA `GisWWjhwrSud4aFGSHvTMt85Ky14sY7LeBFCpfoFpump`
   - ran: Zero up to 2.07x  
     CA `DTSkmo3sCCKLCh91dJLiWCpwcKtK3yDBZMqZGSV1pump`
   - ran: Maru up to 1.88x  
     CA `FokVFH6mDsazoKbtnUaA2FRMsRbDSwZhNfn17Fdvpump`
-- brain paced: blocked 13, ran 2, dumped 11, flat 0, open 0 (saving losses: keep it)
-  - ran: WISH up to 2.36x  
-    CA `7bQL4aLYyFXPLXXngC8xmxLx6keZVfyfQcP3diU1pump`
-  - ran: BOUNCER up to 1.52x  
-    CA `ANDLpP3C7tFXEpqRBmmnbS4usmQthHfs93N5oHGpump`
 
 ## Daily review (2026-11-26, claude-opus-5-5)
 No edge yet. All 276 settled coins lost money after costs under the simple plan: -6.4% average net. Every setup was negative: FINAL_STRETCH -3.6% (n=45), MIGRATED -5.1% (n=193), DIP -16.1% (n=38). Before costs the simple plan made roughly +3% overall and about +6% on FINAL_STRETCH. The ~9.7% round-trip cost on a $10 buy wipes that out, which is the same thing the 22 real trades showed: $18.83 of the $25.79 loss was fees and slippage. The sample is far too small to trust a 3–6% gross edge. Payoffs swing from +50% to -20%, so the error bar on 45 FINAL_STRETCH coins is about ±9 points. Repeat logs of the same coin also make the overall n look bigger than it is. Only the negative after-cost result is solid. The brain logged zero would-buys, so nobody can say yet whether it picks better than it passes. That missing data is the main thing to fix before Nov 10.
@@ -202,16 +200,16 @@ No edge yet. All 276 settled coins lost money after costs under the simple plan:
 - [2026-11-02 20:25] I expected Slingoor, a clean MIGRATED leader with $25k of 5m flow at pace and a 0.77 buy share, to retest its $408k high from $304k. It never went green (0.98x peak) and hit the -20% stop in 2 minutes, a -$2.86 probe. My own thesis admitted there was no printed higher low after a peak only 6 minutes old, so this confirms the money-shape rule: buy share and flow are not structure (V1, V6). Next time a MIGRATED pullback with no higher low above the hourly low is a PASS with blocker "no higher low", not a probe. This is one loss, so it adds no new ban beyond the rule I already have.
 
 ## Meta right now
-Meta right now is fresh pump.fun and pumpswap launches under 20 minutes old with real buying, and it's three themes, not one. Zebras: ZBRA ($63k cap, $35k 5m, 53% buys) and a second zBRA ($27k cap, $24k 5m, 54% buys, +548% 1h), both rising. Character names: SUNDANCE ($17k cap, +434% 1h), securititty ($154k cap, 68% buys, +336% 1h) and BASS/Sir Bassalot ($52k cap, $115k 5m), also rising. A holiday start shows in JANTA (Jimmy Santa, $124k cap, 86% buys) but its $9k 5m is under our floor. Fading: the older names with volume but flat or red 1h (NORFEATH, JIMMY, DIGS) and the dog/jazz tickers (JAZZ at $314 5m, bolphante -37% on $1.1k 5m). The crawler's Criminul ($45k), PEDALFIN, PICKLES and KURO figures are not in the raw scan, which has Criminul at $3.9k and -94%, so I'm treating the crawler numbers as unverified. Setups to research, not buy: the zebra pair first, since two same-name launches make the right-token check decisive (V3); securititty only if 5m holds, since +336% in an hour is chase risk; JANTA only if 5m clears $10k with buyers still in. Not quiet, just young: most of the real flow is under 20 minutes old, so chart-start, bundle and holder checks decide each entry. The Trump dinner and Ansem headlines are news, not flow.
+Meta: privacy is the only theme with real flow in the raw scan, and the coins are young. PI (Privacy Inu, about $200k cap, $10k 5m, 68% buys, +466% 1h, about 24 min old) is the one mover that clears our $10k 5m floor, and privacy coins are on CoinGecko's trending list too (XMR, ZEC), so it's the strongest story. ZBRA (Privacy Zebra) has 67% buys but only $199 on 5m, and the raw scan has one zebra, not the crawler's two at $63k and $27k, so treat the crawler's zebra, securititty, Criminul and SUNDANCE figures as unverified and wrong where the raw scan disagrees. Character names (SUNDANCE, tato, Mei-chan, TrenchTV, Criminul) show some volume but are fading or thin: SUNDANCE and tato are down 40-50% on the hour, Criminul is at $365 on 5m, and the older names (JIMMY, BRUH, MONA) are flat with thin 5m. George, 1T, securititty and VIRUS are dead: 0-10 dollars on 5m on caps under $2k with six-figure 1h volume, which is wash or a dump, not flow. Setups to research, not buy: PI only if 5m holds above $10k with buyers still in, since +466% in an hour is chase risk, and ZBRA only if 5m comes back above $10k with a clean chart start (V3, V6); the Trump dinner and Ansem headlines are news, not flow, and no coin named for a hack appears in the movers.
 
 ## Moving most in its scans, last 30 min (1h volume)
-- 1T: $361,582 1h vol, $1,361 mcap, -96% 1h  
+- George: $437,264 1h vol, $1,580 mcap, -100% 1h  
+  CA `FvitVJ528ZCyuy695DoqEGy816rFVafbZ2MSgMw3pump`
+- 1T: $269,068 1h vol, $1,361 mcap, -99% 1h  
   CA `HYFbbfv771xSRXyF2rRdf6eQzucLhrSHd2JkE12vpump`
-- Dogeball: $163,205 1h vol, $608,257 mcap, +1602% 1h  
-  CA `EMhHvdxs3L1T38pV1yNe9JXF6KfkxFTShNLaxL7rpump`
-- ZBRA: $102,626 1h vol, $7,783 mcap, -93% 1h  
-  CA `DrBCGJscM3ziBRd2CDt5dV9W1rCVAimVZ78BxrN8pump`
-- NORFEATH: $61,171 1h vol, $1,578 mcap, -99% 1h  
-  CA `3gmFG4sFDJErDV8pacFrL2uUPXeGJTYLjfRy4hFypump`
-- securititty: $50,695 1h vol, $1,317 mcap, -99% 1h  
-  CA `Gvo9widdpuyi2XsWm9gAepfcBR54c7XrrSSdwF2Mpump`
+- FIREBALL: $145,976 1h vol, $15,850 mcap, -45% 1h  
+  CA `3FXQU7aFGcKoAAnEbAM28RjKoxB8FM9iNnBD6uXmfire`
+- PI: $77,777 1h vol, $199,808 mcap, +466% 1h  
+  CA `GEUULM43QbeFJ7p1Twodufx7bJDWNBibpwbKyETWpump`
+- SUNDANCE: $51,278 1h vol, $15,270 mcap, -49% 1h  
+  CA `F7dG1t56z9oJpyM3eVs4PgTUDgU2KHcCumABWUxpump`
