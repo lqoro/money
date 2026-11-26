@@ -1,13 +1,13 @@
 # Trencher live report
 
-Updated 2026-11-26T02:00:41Z (paper trading, never real money)
+Updated 2026-11-26T02:15:56Z (paper trading, never real money)
 
 - Equity: $74.23 (-25.8% vs $100 start)
 - Closed trades: 22, 3 wins
 - Fees paid: $14.78 (axiom $2.81, network $9.18, pool $2.66), plus $4.15 lost to slippage
 - New trades: WATCH-ONLY (scans and decides, buys nothing)
-- Brain: subscription, claude-haiku-5-5 for routine calls, claude-opus-5-5 for the daily review; 407 routine calls and 0 plan-limit hits in 48h
-- Watch log: 118 coins being followed, 3677 filed, 0 would-buys (6h follow, sampled every 2 min)
+- Brain: subscription, claude-haiku-5-5 for routine calls, claude-opus-5-5 for the daily review; 404 routine calls and 0 plan-limit hits in 48h
+- Watch log: 113 coins being followed, 3683 filed, 0 would-buys (6h follow, sampled every 2 min)
 
 ## Scorecard (after fees)
 - 22 closed, 3 won (14%), net $-25.79
@@ -73,9 +73,11 @@ Updated 2026-11-26T02:00:41Z (paper trading, never real money)
   CA `H4gHnZ3NCU7Z9XQwGX6YYJNyieGEW8pqwGRUcdSxpump`
 
 ## Last scan
-- 02:00Z: 6 coins, 4 with pairs, 0 passed the market filters, 0 researched
+- 02:15Z: 5 coins, 4 with pairs, 0 passed the market filters, 0 researched
 
 ## Coins it looked at, and why it passed
+- 02:11Z TAXMAN (MIGRATED, $42,776 mcap, $5,723 5m vol): PASS at conviction 3, PASS: bottom buy with no catalyst, theme volume at 0.15x pace, and no printed higher low. Blocker "dead story." (V1, V6, V13)  
+  CA `BAijHvUiHCoCxApyYAUnz5g6LnizZXVYoHwdMarqTWtw`
 - 01:59Z FIONA (DIP, $2,018,354 mcap, $14,655 5m vol): REJECT, Bundles: 10 linked wallet cluster(s) hold 30.2% of supply (>20%) (V17)  
   CA `B34nXKzCgsJb9ChLuSHPRpXLE3WFSWyeT8Cqkzzmpump`
 - 01:58Z NORFEATH (MIGRATED, $567,304 mcap, $7,030 5m vol): PASS at conviction 3, PASS — flow below pace (5m at 0.89x hourly) on a MIGRATED pullback, no printed higher low, and the Thanksgiving theme is fading on the radar. Thin, five-hour-old story. (V1, V6, V13)  
@@ -94,8 +96,6 @@ Updated 2026-11-26T02:00:41Z (paper trading, never real money)
   CA `EDA6AEGdtQg3sT5DQuDbhf4KxoFxG8CuUsrPqAuPpump`
 - 01:42Z PUMPCHAN (MIGRATED, $239,899 mcap, $28,631 5m vol): REJECT, Top 10 hold 60.0% ex-pool (>25%) (V13)  
   CA `Fo2HAwr7ZAUM2bSZ7MWSi16e3aWGpbw5MsUDYCttpump`
-- 01:41Z MemeStonks (MIGRATED, $329,605 mcap, $90,065 5m vol): REJECT, Top 10 hold 44.9% ex-pool (>25%) (V13)  
-  CA `ERhjmSpLh6Rr4ozYjkGohr7rLizv7Mw6MgWpEFH7pump`
 
 ## What its skips did next (last 48h)
 A skip "ran" if the coin reached the first target (1.5x) from the skip price before a 20% drop, "dumped" if the drop came first. Sampled every 10 min, followed 6h.
@@ -106,7 +106,7 @@ A skip "ran" if the coin reached the first target (1.5x) from the skip price bef
     CA `Az7dYDicMc4G9hwnkeQYwHi6Fop1711C7hABcrWzpump`
   - ran: MARS up to 2.06x  
     CA `816BuXnCFQqt6KXbBTcFgHWD29Ckpaqt8HMKSN4Vpump`
-- flow below pace: blocked 37, ran 5, dumped 26, flat 2, open 4 (saving losses: keep it)
+- flow below pace: blocked 38, ran 5, dumped 26, flat 2, open 5 (saving losses: keep it)
   - ran: Jesus up to 1.64x  
     CA `Gy5BUDnpJMWRsNVKh9sRtsBGunFXKKrbroQRoydQpump`
   - ran: GROKIA up to 1.51x  
@@ -120,13 +120,6 @@ A skip "ran" if the coin reached the first target (1.5x) from the skip price bef
     CA `9cDnmLRDWeJzcpyw8tSFAT7HS4Aunx6MmZWjMfrzpump`
   - ran: SHHFT up to 1.61x  
     CA `GqMg4TRt5U5HRK6oeZYwCF1Jz7Ym9MSzWSoFCtFsbzf6`
-- RugCheck danger: blocked 30, ran 4, dumped 24, flat 0, open 2 (saving losses: keep it)
-  - ran: TROLL up to 1.94x  
-    CA `7ykeHoEnjnGkY6tqteXn47fdGtd7kfXWghiyZ7YKpump`
-  - ran: Snowball up to 3.52x  
-    CA `9TKbd3VFaMSXsEAicD9JVQWpWwAoLi4fSgWmZL2cpump`
-  - ran: Bababoi up to 2.17x  
-    CA `28B9kDm6XtQNqAkzuiKH3Zu1L8cVM6SLW4iRamFspump`
 - near the high / chasing: blocked 29, ran 7, dumped 17, flat 1, open 4 (saving losses: keep it)
   - ran: Jesus up to 1.64x  
     CA `Gy5BUDnpJMWRsNVKh9sRtsBGunFXKKrbroQRoydQpump`
@@ -134,7 +127,14 @@ A skip "ran" if the coin reached the first target (1.5x) from the skip price bef
     CA `3reEjCbDFht7LnNdKncQ3vohYDbAMJWXkbzWLSNhpump`
   - ran: NOCAP up to 1.59x  
     CA `RZv3jrN6u1e2vCwTiJgRJwfnmyJaZqq48qkPz1xpump`
-- too new / sniping: blocked 21, ran 5, dumped 15, flat 0, open 1 (saving losses: keep it)
+- RugCheck danger: blocked 29, ran 4, dumped 24, flat 0, open 1 (saving losses: keep it)
+  - ran: TROLL up to 1.94x  
+    CA `7ykeHoEnjnGkY6tqteXn47fdGtd7kfXWghiyZ7YKpump`
+  - ran: Snowball up to 3.52x  
+    CA `9TKbd3VFaMSXsEAicD9JVQWpWwAoLi4fSgWmZL2cpump`
+  - ran: Bababoi up to 2.17x  
+    CA `28B9kDm6XtQNqAkzuiKH3Zu1L8cVM6SLW4iRamFspump`
+- too new / sniping: blocked 21, ran 5, dumped 16, flat 0, open 0 (saving losses: keep it)
   - ran: BABYANSEM up to 2.77x  
     CA `F3VctV9FqDgiyqaztN6z78bgWy27eH7DBBHW1vjpump`
   - ran: Merged up to 2.18x  
@@ -197,11 +197,11 @@ The trenches are active, not quiet: scan_movers shows real 5m money on several p
 ## Moving most in its scans, last 30 min (1h volume)
 - MONEY: $1,244,837 1h vol, $700,482 mcap, +557% 1h  
   CA `DeACAbp2GMzapB6Z2K8qdkTZupmNbKc6EZx9bnbCpump`
-- Zero: $991,262 1h vol, $594,679 mcap, +130% 1h  
-  CA `DTSkmo3sCCKLCh91dJLiWCpwcKtK3yDBZMqZGSV1pump`
-- Grodia: $478,034 1h vol, $837,431 mcap, -37% 1h  
-  CA `6HS1aeSk7osT5B1CzLp1HTRTAweFr5wurfMHS4vppump`
 - Inu: $284,984 1h vol, $57,266 mcap, +100% 1h  
   CA `4EDZqQePCopYQDGBvyB4dk8E7KxpytZUyun2JqJHgF2n`
-- MemeStonks: $137,579 1h vol, $371,864 mcap, +855% 1h  
-  CA `ERhjmSpLh6Rr4ozYjkGohr7rLizv7Mw6MgWpEFH7pump`
+- NORFEATH: $94,717 1h vol, $567,304 mcap, -6% 1h  
+  CA `3gmFG4sFDJErDV8pacFrL2uUPXeGJTYLjfRy4hFypump`
+- COIN: $92,957 1h vol, $43,340 mcap, +48% 1h  
+  CA `jjw6p8XwSXDqf9Ebze4vrkiaY89mhGsdB92KY4Lpump`
+- TAXMAN: $71,043 1h vol, $42,884 mcap, +84% 1h  
+  CA `BAijHvUiHCoCxApyYAUnz5g6LnizZXVYoHwdMarqTWtw`
