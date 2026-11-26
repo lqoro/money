@@ -1,13 +1,13 @@
 # Trencher live report
 
-Updated 2026-11-26T21:57:22Z (paper trading, never real money)
+Updated 2026-11-26T22:12:30Z (paper trading, never real money)
 
 - Equity: $74.23 (-25.8% vs $100 start)
 - Closed trades: 22, 3 wins
 - Fees paid: $14.78 (axiom $2.81, network $9.18, pool $2.66), plus $4.15 lost to slippage
 - New trades: WATCH-ONLY (scans and decides, buys nothing)
-- Brain: subscription, claude-haiku-5-5 for routine calls, claude-opus-5-5 for the daily review; 376 routine calls and 0 plan-limit hits in 48h
-- Watch log: 83 coins being followed, 4004 filed, 0 would-buys (6h follow, sampled every 2 min)
+- Brain: subscription, claude-haiku-5-5 for routine calls, claude-opus-5-5 for the daily review; 374 routine calls and 0 plan-limit hits in 48h
+- Watch log: 80 coins being followed, 4008 filed, 0 would-buys (6h follow, sampled every 2 min)
 
 ## Scorecard (after fees)
 - 22 closed, 3 won (14%), net $-25.79
@@ -73,9 +73,11 @@ Updated 2026-11-26T21:57:22Z (paper trading, never real money)
   CA `H4gHnZ3NCU7Z9XQwGX6YYJNyieGEW8pqwGRUcdSxpump`
 
 ## Last scan
-- 21:56Z: 5 coins, 5 with pairs, 0 passed the market filters, 0 researched
+- 22:11Z: 4 coins, 4 with pairs, 0 passed the market filters, 0 researched
 
 ## Coins it looked at, and why it passed
+- 22:08Z Cateball (DIP, $780,744 mcap, $20,765 5m vol): REJECT, Dip with fading attention is a falling knife, not a dip (5m at 0.36x the hour's pace, under 0.6x)  
+  CA `Bb38n8AVLMh9amo8qtjLvqE8nPtfs8GEsyzg1pC6pump`
 - 21:47Z HOLD (no setup, $14,343 mcap, $20,509 5m vol): REJECT, No setup fits: not Final Stretch, not a migrated runner, not a healthy dip  
   CA `BuNeErf9FjL6dgzE74S21Qm9EeBaYMJXSW4A8ihxpump`
 - 21:42Z BRUH (MIGRATED, $8,112,333 mcap, $3,555 5m vol): PASS at conviction 3, PASS: big cap, no room. BRUH is $8.1M, flat in its 0.0079–0.0085 range, with sellers ahead 8 to 5 on 5m and no catalyst for a bottom buy. Clean holders don't fix that (V1, V6).  
@@ -94,12 +96,10 @@ Updated 2026-11-26T21:57:22Z (paper trading, never real money)
   CA `Bb38n8AVLMh9amo8qtjLvqE8nPtfs8GEsyzg1pC6pump`
 - 21:17Z CALL (FINAL_STRETCH, $22,310 mcap, $12,906 5m vol): REJECT, Top 10 hold 26.4% ex-pool (>25%) (V13)  
   CA `Bs65KuvSxcXd9eSKVLXJxyY1amzGn6k77T4U2B6k6CBP`
-- 21:08Z WATERBALL (FINAL_STRETCH, $20,607 mcap, $30,037 5m vol): PASS at conviction 2, PASS: chasing spike. 5m is up 106% and running 6.8x the hourly pace on a 10-minute-old pump.fun curve, with no story behind it (V1, V6).  
-  CA `23Yun5pvmzaMX4PYnjYA2zHq3X2zrd6Dq8RBpYg1pump`
 
 ## What its skips did next (last 48h)
 A skip "ran" if the coin reached the first target (1.5x) from the skip price before a 20% drop, "dumped" if the drop came first. Sampled every 10 min, followed 6h.
-- top 10 over 25%: blocked 51, ran 11, dumped 38, flat 0, open 2 (saving losses: keep it)
+- top 10 over 25%: blocked 50, ran 10, dumped 39, flat 0, open 1 (saving losses: keep it)
   - ran: MARS up to 2.06x  
     CA `816BuXnCFQqt6KXbBTcFgHWD29Ckpaqt8HMKSN4Vpump`
   - ran: 4CHAN up to 1.87x  
@@ -113,7 +113,7 @@ A skip "ran" if the coin reached the first target (1.5x) from the skip price bef
     CA `3Tg6YnNrfPdFfsY14MaNsDMWLseAyrUDS3myJtbaJN6f`
   - ran: BIAO up to 1.51x  
     CA `As3XtYSstuVdrVyb6sJZZ77Tu8JvjTBg6S6hgPv4pump`
-- near the high / chasing: blocked 39, ran 5, dumped 30, flat 2, open 2 (saving losses: keep it)
+- near the high / chasing: blocked 39, ran 5, dumped 31, flat 2, open 1 (saving losses: keep it)
   - ran: SNOWCUMBRR up to 2.36x  
     CA `Gf9wm93TTDpbPC467Eio5Vc42Kr6MAomUD172drWpump`
   - ran: HEYOS up to 1.91x  
@@ -139,7 +139,7 @@ A skip "ran" if the coin reached the first target (1.5x) from the skip price bef
     CA `DUZrwdjEthcJ99ZiRXr31UuqTohoTg7VjTEyfGdBpump`
   - ran: WIENER up to 1.59x  
     CA `8BDkDfj3ZUvcG9caGzF2XnHfwg7K6fjfKKDvX6SCpump`
-- falling knife (code): blocked 17, ran 3, dumped 13, flat 1, open 0 (saving losses: keep it)
+- falling knife (code): blocked 18, ran 3, dumped 13, flat 1, open 1 (saving losses: keep it)
   - ran: Jimmies up to 1.53x  
     CA `GisWWjhwrSud4aFGSHvTMt85Ky14sY7LeBFCpfoFpump`
   - ran: Investor up to 1.58x  
@@ -203,13 +203,13 @@ No edge yet. All 276 settled coins lost money after costs under the simple plan:
 The meta is young animal and slang launches with real flow: Cateball (0.2h old, $652k cap, $129k 5m, 70% buys) and Hoppy (0.9h, $1.47M cap, $129k 5m, 74% buys) are creature-name coins eating volume, and Goon (Gooncoin, $45k cap, $18k 5m, 60% buys, age near zero) fits the same fresh slang pattern. Rising: sub-two-hour pumpswap names with 5m volume above $10k and buyers above 60%. Fading: Elon-named copies (Elonmas went from $180k of 1h volume to $6k on 5m, even with 82% buys), older character names (SUNDANCE at 19% buys, JIMMY and MONA thin), and the privacy theme the crawler pushed, since the raw scan has PI at a $1.3k cap with zero 5m volume and down 99%, so that story is dead in the data. The Trump dinner and Ansem headlines are not showing up as flow. Setups to research, not buy yet: Goon as a MIGRATED candidate (under 12h, cap over $30k, 5m over $10k), and Cateball or Hoppy only on a pullback that holds 5m volume and buyers, since Hoppy is up 3650% in an hour and is chase territory (V1, V6). Holder, dev and bundle checks run per coin at research time, so this market is not quiet; it is hot but thin on proof.
 
 ## Moving most in its scans, last 30 min (1h volume)
-- Hoppy: $815,786 1h vol, $1,473,707 mcap, +3650% 1h  
-  CA `CFX1gH7CKYwqYXrfDkS2MUxJcEhs8PT63DyRA1chpump`
-- ZINU: $365,902 1h vol, $1,399 mcap, -99% 1h  
+- Cateball: $699,710 1h vol, $767,385 mcap, +2039% 1h  
+  CA `Bb38n8AVLMh9amo8qtjLvqE8nPtfs8GEsyzg1pC6pump`
+- ZINU: $240,330 1h vol, $1,388 mcap, -100% 1h  
   CA `9SVj5ZTAL41tqswVNwT1TT9yv3oSHYMYv8zqoHtPpump`
-- BARRON: $181,073 1h vol, $2,049 mcap, -95% 1h  
-  CA `CVCkUiheSUrn97sFVsWdhedrmu4LXZxJubpFebgHpump`
-- Elonmas: $180,330 1h vol, $109,078 mcap, +62% 1h  
-  CA `ChYn9ZpCUzrwd8rcpUtr7K7iKgDWUfJijM4xwxBCpump`
-- BLOX: $131,870 1h vol, $2,294 mcap, +11% 1h  
+- Goon: $191,831 1h vol, $3,258 mcap, -89% 1h  
+  CA `6Sm9SMP11iFuL7AqFCJeyQc23WF4s1ZGxS7JXveQJRW`
+- BLOX: $131,937 1h vol, $2,286 mcap, +10% 1h  
   CA `65VjZZFhwpfnkZe42qUoqRZksJkpmdk5FA52dyVcpump`
+- WATERBALL: $80,453 1h vol, $7,604 mcap, -75% 1h  
+  CA `23Yun5pvmzaMX4PYnjYA2zHq3X2zrd6Dq8RBpYg1pump`
