@@ -1,13 +1,13 @@
 # Trencher live report
 
-Updated 2026-11-26T21:42:15Z (paper trading, never real money)
+Updated 2026-11-26T21:57:22Z (paper trading, never real money)
 
 - Equity: $74.23 (-25.8% vs $100 start)
 - Closed trades: 22, 3 wins
 - Fees paid: $14.78 (axiom $2.81, network $9.18, pool $2.66), plus $4.15 lost to slippage
 - New trades: WATCH-ONLY (scans and decides, buys nothing)
-- Brain: subscription, claude-haiku-5-5 for routine calls, claude-opus-5-5 for the daily review; 379 routine calls and 0 plan-limit hits in 48h
-- Watch log: 86 coins being followed, 3999 filed, 0 would-buys (6h follow, sampled every 2 min)
+- Brain: subscription, claude-haiku-5-5 for routine calls, claude-opus-5-5 for the daily review; 376 routine calls and 0 plan-limit hits in 48h
+- Watch log: 83 coins being followed, 4004 filed, 0 would-buys (6h follow, sampled every 2 min)
 
 ## Scorecard (after fees)
 - 22 closed, 3 won (14%), net $-25.79
@@ -73,9 +73,13 @@ Updated 2026-11-26T21:42:15Z (paper trading, never real money)
   CA `H4gHnZ3NCU7Z9XQwGX6YYJNyieGEW8pqwGRUcdSxpump`
 
 ## Last scan
-- 21:41Z: 4 coins, 4 with pairs, 1 passed the market filters, 1 researched
+- 21:56Z: 5 coins, 5 with pairs, 0 passed the market filters, 0 researched
 
 ## Coins it looked at, and why it passed
+- 21:47Z HOLD (no setup, $14,343 mcap, $20,509 5m vol): REJECT, No setup fits: not Final Stretch, not a migrated runner, not a healthy dip  
+  CA `BuNeErf9FjL6dgzE74S21Qm9EeBaYMJXSW4A8ihxpump`
+- 21:42Z BRUH (MIGRATED, $8,112,333 mcap, $3,555 5m vol): PASS at conviction 3, PASS: big cap, no room. BRUH is $8.1M, flat in its 0.0079–0.0085 range, with sellers ahead 8 to 5 on 5m and no catalyst for a bottom buy. Clean holders don't fix that (V1, V6).  
+  CA `PgFtGGquvnv2zEkjG2N2QPvBTBrafuExGYEqahRpump`
 - 21:41Z JIMMY (DIP, $401,441 mcap, $26,836 5m vol): PASS at conviction 3, PASS: bottom buy with no catalyst, no printed higher low, story already dead on the radar. Blocker "no catalyst". Still bleeding at the hourly low. (V1, V6)  
   CA `38M2z4UCfZEkUHFzD48vhKQhFhNyRGto8pZbLjNipump`
 - 21:27Z Elonmas (DIP, $115,369 mcap, $6,525 5m vol): REJECT, Dip with fading attention is a falling knife, not a dip (5m at 0.43x the hour's pace, under 0.6x)  
@@ -92,10 +96,6 @@ Updated 2026-11-26T21:42:15Z (paper trading, never real money)
   CA `Bs65KuvSxcXd9eSKVLXJxyY1amzGn6k77T4U2B6k6CBP`
 - 21:08Z WATERBALL (FINAL_STRETCH, $20,607 mcap, $30,037 5m vol): PASS at conviction 2, PASS: chasing spike. 5m is up 106% and running 6.8x the hourly pace on a 10-minute-old pump.fun curve, with no story behind it (V1, V6).  
   CA `23Yun5pvmzaMX4PYnjYA2zHq3X2zrd6Dq8RBpYg1pump`
-- 21:04Z tato (MIGRATED, $35,905 mcap, $7,011 5m vol): PASS at conviction 3, PASS: chasing spike. tato's last 5m candle is up 41% on 3.75x its hourly pace, and the coin is 3x off its hourly low. No catalyst and the site doesn't show this CA. Wait for the spike to retrace and a printed higher low. (V1, V6, V3)  
-  CA `Eyevsagqp6qyUxz5Dj2jWawww5csjDFLtrPPmRwYpump`
-- 21:01Z ZINU (MIGRATED, $164,629 mcap, $71,291 5m vol): REJECT, Top 10 hold 35.7% ex-pool (>25%) (V13)  
-  CA `9SVj5ZTAL41tqswVNwT1TT9yv3oSHYMYv8zqoHtPpump`
 
 ## What its skips did next (last 48h)
 A skip "ran" if the coin reached the first target (1.5x) from the skip price before a 20% drop, "dumped" if the drop came first. Sampled every 10 min, followed 6h.
@@ -106,7 +106,7 @@ A skip "ran" if the coin reached the first target (1.5x) from the skip price bef
     CA `DVdWuNK8ncn79B6z8nCiwcNAiwyFcmBPfChgxJGTpump`
   - ran: SWARM up to 1.57x  
     CA `2Rw6rLRRZXQLNreForjeVvDjnpYUaW6rmMFXmRP9pump`
-- flow below pace: blocked 41, ran 4, dumped 32, flat 5, open 0 (saving losses: keep it)
+- flow below pace: blocked 40, ran 4, dumped 32, flat 4, open 0 (saving losses: keep it)
   - ran: BOOBS up to 1.51x  
     CA `E35iEA2yLLHc1tjm6et1Z3YuH8DhxJYWtWezPHgSpump`
   - ran: BASKET up to 1.55x  
@@ -153,10 +153,12 @@ A skip "ran" if the coin reached the first target (1.5x) from the skip price bef
     CA `DTSkmo3sCCKLCh91dJLiWCpwcKtK3yDBZMqZGSV1pump`
   - ran: Maru up to 1.88x  
     CA `FokVFH6mDsazoKbtnUaA2FRMsRbDSwZhNfn17Fdvpump`
-- other: blocked 13, ran 1, dumped 11, flat 1, open 0 (saving losses: keep it)
+- other: blocked 13, ran 2, dumped 11, flat 0, open 0 (saving losses: keep it)
   - ran: SXI up to 2.34x  
     CA `BFWNbSwRodXPTQqrMSCfhznhJwEzY6ERd6MHjWUEpump`
-- dev share over 1%: blocked 12, ran 2, dumped 8, flat 2, open 0 (saving losses: keep it)
+  - ran: HOLD up to 2.6x  
+    CA `BuNeErf9FjL6dgzE74S21Qm9EeBaYMJXSW4A8ihxpump`
+- dev share over 1%: blocked 11, ran 2, dumped 7, flat 2, open 0 (saving losses: keep it)
   - ran: Grinch up to 1.94x  
     CA `J1b5HnRzmXsYK5akPTFtBR7B4E74JG8eyULodd7ypump`
   - ran: bolphante up to 1.7x  
@@ -203,11 +205,11 @@ The meta is young animal and slang launches with real flow: Cateball (0.2h old, 
 ## Moving most in its scans, last 30 min (1h volume)
 - Hoppy: $815,786 1h vol, $1,473,707 mcap, +3650% 1h  
   CA `CFX1gH7CKYwqYXrfDkS2MUxJcEhs8PT63DyRA1chpump`
-- Cateball: $247,773 1h vol, $652,036 mcap, +1718% 1h  
-  CA `Bb38n8AVLMh9amo8qtjLvqE8nPtfs8GEsyzg1pC6pump`
+- ZINU: $365,902 1h vol, $1,399 mcap, -99% 1h  
+  CA `9SVj5ZTAL41tqswVNwT1TT9yv3oSHYMYv8zqoHtPpump`
+- BARRON: $181,073 1h vol, $2,049 mcap, -95% 1h  
+  CA `CVCkUiheSUrn97sFVsWdhedrmu4LXZxJubpFebgHpump`
 - Elonmas: $180,330 1h vol, $109,078 mcap, +62% 1h  
   CA `ChYn9ZpCUzrwd8rcpUtr7K7iKgDWUfJijM4xwxBCpump`
-- BLOX: $122,526 1h vol, $12,809 mcap, +519% 1h  
+- BLOX: $131,870 1h vol, $2,294 mcap, +11% 1h  
   CA `65VjZZFhwpfnkZe42qUoqRZksJkpmdk5FA52dyVcpump`
-- PI: $116,794 1h vol, $1,310 mcap, -99% 1h  
-  CA `GEUULM43QbeFJ7p1Twodufx7bJDWNBibpwbKyETWpump`
