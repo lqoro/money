@@ -1,13 +1,13 @@
 # Trencher live report
 
-Updated 2026-11-26T15:38:21Z (paper trading, never real money)
+Updated 2026-11-26T15:53:36Z (paper trading, never real money)
 
 - Equity: $74.23 (-25.8% vs $100 start)
 - Closed trades: 22, 3 wins
 - Fees paid: $14.78 (axiom $2.81, network $9.18, pool $2.66), plus $4.15 lost to slippage
 - New trades: WATCH-ONLY (scans and decides, buys nothing)
-- Brain: subscription, claude-haiku-5-5 for routine calls, claude-opus-5-5 for the daily review; 409 routine calls and 0 plan-limit hits in 48h
-- Watch log: 94 coins being followed, 3905 filed, 0 would-buys (6h follow, sampled every 2 min)
+- Brain: subscription, claude-haiku-5-5 for routine calls, claude-opus-5-5 for the daily review; 406 routine calls and 0 plan-limit hits in 48h
+- Watch log: 97 coins being followed, 3906 filed, 0 would-buys (6h follow, sampled every 2 min)
 
 ## Scorecard (after fees)
 - 22 closed, 3 won (14%), net $-25.79
@@ -73,9 +73,17 @@ Updated 2026-11-26T15:38:21Z (paper trading, never real money)
   CA `H4gHnZ3NCU7Z9XQwGX6YYJNyieGEW8pqwGRUcdSxpump`
 
 ## Last scan
-- 15:38Z: 3 coins, 3 with pairs, 0 passed the market filters, 0 researched
+- 15:52Z: 4 coins, 4 with pairs, 0 passed the market filters, 0 researched
 
 ## Coins it looked at, and why it passed
+- 15:45Z Simyo (MIGRATED, $60,826 mcap, $26,704 5m vol): REJECT, Bundles: 10 linked wallet cluster(s) hold 100.0% of supply (>20%) (V17)  
+  CA `HnbAKrRF9SM4QNb5o7nGJNcpjdkTyCR2M6pWgjiqpump`
+- 15:43Z MDAQ (DIP, $95,552 mcap, $21,240 5m vol): REJECT, Dip with fading attention is a falling knife, not a dip (5m at 0.32x the hour's pace, under 0.6x)  
+  CA `8XefdyFEBBLwvEWpGZqLmBDR9TmDeon1aLy16x2ipump`
+- 15:43Z Thankful (FINAL_STRETCH, $24,215 mcap, $24,978 5m vol): REJECT, Top 10 hold 30.6% ex-pool (>25%) (V13)  
+  CA `E9arxG4RxB7Gxt6U75obonTZzx7vpbc4bUi1dfw3BtUN`
+- 15:41Z hodl (FINAL_STRETCH, $15,168 mcap, $6,295 5m vol): PASS at conviction 3, PASS: chasing spike, 5m flow under $10k, no higher low. A cat vamp field with the animal angle fading. (V1, V6)  
+  CA `5k3dzHrSYuNtPQozWanmvYb6HGG9qxma1pkY4iGzpump`
 - 15:35Z NORFEATH (DIP, $423,096 mcap, $5,427 5m vol): PASS at conviction 3, PASS: no catalyst, no printed higher low, and a 0.8-day-old domain selling a balloon meme. Blocker: "dead story" (V1, V6).  
   CA `3gmFG4sFDJErDV8pacFrL2uUPXeGJTYLjfRy4hFypump`
 - 15:32Z DIGS (MIGRATED, $238,246 mcap, $2,922 5m vol): REJECT, Bundles: 10 linked wallet cluster(s) hold 100.0% of supply (>20%) (V17)  
@@ -88,18 +96,10 @@ Updated 2026-11-26T15:38:21Z (paper trading, never real money)
   CA `PgFtGGquvnv2zEkjG2N2QPvBTBrafuExGYEqahRpump`
 - 15:26Z DUO (MIGRATED, $126,717 mcap, $19,255 5m vol): PASS at conviction 2, PASS — DUO is up 351% in 1h with an +83% last 5m candle, 14 minutes old, no printed higher low, and the first resistance is only 1.14x away. That's a spike, not a setup (V1, V6).  
   CA `CC1uvrWkFdju8NuUrS7x3bKVzu5Cjy6Kt6nyB6Pbpump`
-- 15:22Z MONA (FINAL_STRETCH, $23,763 mcap, $2,954 5m vol): PASS at conviction 2, PASS: flow at 0.54x hourly pace, 16 copies of the ticker, no X, no meta behind it. Farm-shaped pump (V1, V6, V13).  
-  CA `6is11V1KgpybgPdMkYGBacbiT62kqunsvnLDNzDfpump`
-- 15:15Z Irochan (DIP, $40,362 mcap, $14,858 5m vol): REJECT, RugCheck danger: Single holder ownership 62.83%  
-  CA `BSMz6chW26adx25hkfRZvmTSu6q4d3ieixPx73hQpump`
-- 15:11Z YARL (MIGRATED, $35,536 mcap, $5,287 5m vol): REJECT, Top 10 hold 28.4% ex-pool (>25%) (V13)  
-  CA `8yYpzQRLQ1T9t8sXj2FaKtoL2QSh2NCahnZdmxbNpump`
-- 15:08Z UHI (MIGRATED, $1,415,243 mcap, $13,273 5m vol): PASS at conviction 3, PASS: target too close, no higher low, no live story. Vamp-field copy with CA still TBA on its own site. (V1, V3, V6)  
-  CA `Bnw5JRPek5JvJhzUiB9yrs2cmzt4bLeFqSRzDzSppump`
 
 ## What its skips did next (last 48h)
 A skip "ran" if the coin reached the first target (1.5x) from the skip price before a 20% drop, "dumped" if the drop came first. Sampled every 10 min, followed 6h.
-- top 10 over 25%: blocked 45, ran 7, dumped 36, flat 1, open 1 (saving losses: keep it)
+- top 10 over 25%: blocked 45, ran 7, dumped 35, flat 1, open 2 (saving losses: keep it)
   - ran: SCF up to 2.01x  
     CA `Az7dYDicMc4G9hwnkeQYwHi6Fop1711C7hABcrWzpump`
   - ran: MARS up to 2.06x  
@@ -113,27 +113,20 @@ A skip "ran" if the coin reached the first target (1.5x) from the skip price bef
     CA `3Tg6YnNrfPdFfsY14MaNsDMWLseAyrUDS3myJtbaJN6f`
   - ran: BIAO up to 1.51x  
     CA `As3XtYSstuVdrVyb6sJZZ77Tu8JvjTBg6S6hgPv4pump`
-- too new / sniping: blocked 32, ran 9, dumped 22, flat 0, open 1 (saving losses: keep it)
-  - ran: BABYANSEM up to 2.77x  
-    CA `F3VctV9FqDgiyqaztN6z78bgWy27eH7DBBHW1vjpump`
-  - ran: Merged up to 2.18x  
-    CA `AMYpNGi5aGrKr1ZDsotUdWh7k1mMi569ygtaHJmErGEd`
-  - ran: Boor up to 1.56x  
-    CA `GHFpSSw2ZMjmKCyc1wrHUjJiqnJeP18mekY9GL1Xpump`
-- near the high / chasing: blocked 30, ran 5, dumped 23, flat 2, open 0 (saving losses: keep it)
+- near the high / chasing: blocked 31, ran 5, dumped 23, flat 2, open 1 (saving losses: keep it)
   - ran: SNOWCUMBRR up to 2.36x  
     CA `Gf9wm93TTDpbPC467Eio5Vc42Kr6MAomUD172drWpump`
   - ran: HEYOS up to 1.91x  
     CA `A88p1LcHisrx3TuTwUGVrLtc1LBTUPZUfVgaCGutAFaK`
   - ran: Nala up to 1.64x  
     CA `FeBG8AEG4j7LT7xQF38gPXQFBRBtXBTNzhZjSa3bpump`
-- RugCheck danger: blocked 27, ran 3, dumped 23, flat 1, open 0 (saving losses: keep it)
-  - ran: TROLL up to 1.94x  
-    CA `7ykeHoEnjnGkY6tqteXn47fdGtd7kfXWghiyZ7YKpump`
-  - ran: Snowball up to 3.52x  
-    CA `9TKbd3VFaMSXsEAicD9JVQWpWwAoLi4fSgWmZL2cpump`
-  - ran: Bababoi up to 2.17x  
-    CA `28B9kDm6XtQNqAkzuiKH3Zu1L8cVM6SLW4iRamFspump`
+- too new / sniping: blocked 31, ran 8, dumped 23, flat 0, open 0 (saving losses: keep it)
+  - ran: BABYANSEM up to 2.77x  
+    CA `F3VctV9FqDgiyqaztN6z78bgWy27eH7DBBHW1vjpump`
+  - ran: Merged up to 2.18x  
+    CA `AMYpNGi5aGrKr1ZDsotUdWh7k1mMi569ygtaHJmErGEd`
+  - ran: Boor up to 1.56x  
+    CA `GHFpSSw2ZMjmKCyc1wrHUjJiqnJeP18mekY9GL1Xpump`
 - brain paced: blocked 26, ran 6, dumped 20, flat 0, open 0 (saving losses: keep it)
   - ran: Wanted up to 1.55x  
     CA `2M3CsCP97Le187KQC5jhZG3c6bFzCZ51NP8bscrupump`
@@ -141,20 +134,27 @@ A skip "ran" if the coin reached the first target (1.5x) from the skip price bef
     CA `2YKce3apGESoWhqt4N7MGg5t4UEKgPPL4ArheEvPpump`
   - ran: Slingoor up to 1.73x  
     CA `6GLetugFEmy7P7SmLtg3zyZdz6rWCQ8gHPbPYZs9pump`
-- bundles over the line: blocked 18, ran 3, dumped 11, flat 2, open 2 (saving losses: keep it)
-  - ran: jingyu up to 1.58x  
-    CA `DUZrwdjEthcJ99ZiRXr31UuqTohoTg7VjTEyfGdBpump`
-  - ran: DUMBMONEY up to 1.74x  
-    CA `GEHehS5Rr4rNCjvrHLjjV1avD4bjMsn53ywDGv1spump`
-  - ran: WIENER up to 1.59x  
-    CA `8BDkDfj3ZUvcG9caGzF2XnHfwg7K6fjfKKDvX6SCpump`
-- falling knife (code): blocked 18, ran 3, dumped 13, flat 1, open 1 (saving losses: keep it)
+- RugCheck danger: blocked 26, ran 3, dumped 22, flat 1, open 0 (saving losses: keep it)
+  - ran: TROLL up to 1.94x  
+    CA `7ykeHoEnjnGkY6tqteXn47fdGtd7kfXWghiyZ7YKpump`
+  - ran: Snowball up to 3.52x  
+    CA `9TKbd3VFaMSXsEAicD9JVQWpWwAoLi4fSgWmZL2cpump`
+  - ran: Bababoi up to 2.17x  
+    CA `28B9kDm6XtQNqAkzuiKH3Zu1L8cVM6SLW4iRamFspump`
+- falling knife (code): blocked 19, ran 3, dumped 13, flat 1, open 2 (saving losses: keep it)
   - ran: Jimmies up to 1.53x  
     CA `GisWWjhwrSud4aFGSHvTMt85Ky14sY7LeBFCpfoFpump`
   - ran: Investor up to 1.58x  
     CA `J9eBkCb4UtquAMQqB6duwBmR99fFSMoTnDcaMB9Wpump`
   - ran: MONEY up to 1.58x  
     CA `DeACAbp2GMzapB6Z2K8qdkTZupmNbKc6EZx9bnbCpump`
+- bundles over the line: blocked 18, ran 3, dumped 10, flat 2, open 3 (saving losses: keep it)
+  - ran: jingyu up to 1.58x  
+    CA `DUZrwdjEthcJ99ZiRXr31UuqTohoTg7VjTEyfGdBpump`
+  - ran: DUMBMONEY up to 1.74x  
+    CA `GEHehS5Rr4rNCjvrHLjjV1avD4bjMsn53ywDGv1spump`
+  - ran: WIENER up to 1.59x  
+    CA `8BDkDfj3ZUvcG9caGzF2XnHfwg7K6fjfKKDvX6SCpump`
 - falling knife / no higher low: blocked 13, ran 3, dumped 5, flat 3, open 2 (mixed)
   - ran: Jimmies up to 1.53x  
     CA `GisWWjhwrSud4aFGSHvTMt85Ky14sY7LeBFCpfoFpump`
@@ -205,13 +205,13 @@ No edge yet. All 276 settled coins lost money after costs under the simple plan:
 Meta is fresh pump.fun launches pumping hard on the 1h, but only two have real 5m flow. CRAB (+1025%), MONA (+888%), LOA (+502%) and DUO (+351%) are all under 1.5h old, yet DUO ($19k 5m, 67% buys) and UHI ($11.5k 5m, 94% buys, 16h old) are the only movers clearing the $10k bar with buyers in control. Old legacy memes are still trading: BRUH (~19 days, $9.2M cap, 66% buys) and UHI hold buy majorities, while the animal angle is fading (Fiona the Hippo -6% 1h on $4.4k 5m) and the Trump and Ansem headlines aren't in the movers at all. Fading: the newest dead tail (SHILL -94%, TURKE -89% with zero buys, pairless -76%, Weila -68%). Setups to research: DUO (chase risk after +351%), UHI (dip-buy only if buyers hold), and Irochan ($39k cap, $16.8k 5m, 56% buys, +14% 1h). The crawler summary doesn't match its own raw data (it says Irochan +101% and Fiona +897%; the scan shows +14% and -6%), so I used the raw numbers. Paper only, not financial advice; holder, dev and bundle checks still run on each before any entry.
 
 ## Moving most in its scans, last 30 min (1h volume)
-- Irochan: $291,575 1h vol, $39,094 mcap, +14% 1h  
-  CA `BSMz6chW26adx25hkfRZvmTSu6q4d3ieixPx73hQpump`
-- UHI: $102,328 1h vol, $1,415,243 mcap, -13% 1h  
-  CA `Bnw5JRPek5JvJhzUiB9yrs2cmzt4bLeFqSRzDzSppump`
+- MDAQ: $788,940 1h vol, $95,862 mcap, +220% 1h  
+  CA `8XefdyFEBBLwvEWpGZqLmBDR9TmDeon1aLy16x2ipump`
+- Simyo: $296,582 1h vol, $59,306 mcap, +146% 1h  
+  CA `HnbAKrRF9SM4QNb5o7nGJNcpjdkTyCR2M6pWgjiqpump`
 - BRUH: $102,101 1h vol, $9,167,327 mcap, +8% 1h  
   CA `PgFtGGquvnv2zEkjG2N2QPvBTBrafuExGYEqahRpump`
-- MONA: $65,118 1h vol, $23,763 mcap, +888% 1h  
-  CA `6is11V1KgpybgPdMkYGBacbiT62kqunsvnLDNzDfpump`
+- Thankful: $78,192 1h vol, $26,958 mcap, +857% 1h  
+  CA `E9arxG4RxB7Gxt6U75obonTZzx7vpbc4bUi1dfw3BtUN`
 - NORFEATH: $63,364 1h vol, $432,549 mcap, +3% 1h  
   CA `3gmFG4sFDJErDV8pacFrL2uUPXeGJTYLjfRy4hFypump`
