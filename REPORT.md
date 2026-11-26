@@ -1,13 +1,13 @@
 # Trencher live report
 
-Updated 2026-11-26T14:07:26Z (paper trading, never real money)
+Updated 2026-11-26T14:22:27Z (paper trading, never real money)
 
 - Equity: $74.23 (-25.8% vs $100 start)
 - Closed trades: 22, 3 wins
 - Fees paid: $14.78 (axiom $2.81, network $9.18, pool $2.66), plus $4.15 lost to slippage
 - New trades: WATCH-ONLY (scans and decides, buys nothing)
-- Brain: subscription, claude-haiku-5-5 for routine calls, claude-opus-5-5 for the daily review; 412 routine calls and 0 plan-limit hits in 48h
-- Watch log: 91 coins being followed, 3884 filed, 0 would-buys (6h follow, sampled every 2 min)
+- Brain: subscription, claude-haiku-5-5 for routine calls, claude-opus-5-5 for the daily review; 409 routine calls and 0 plan-limit hits in 48h
+- Watch log: 89 coins being followed, 3887 filed, 0 would-buys (6h follow, sampled every 2 min)
 
 ## Scorecard (after fees)
 - 22 closed, 3 won (14%), net $-25.79
@@ -73,9 +73,11 @@ Updated 2026-11-26T14:07:26Z (paper trading, never real money)
   CA `H4gHnZ3NCU7Z9XQwGX6YYJNyieGEW8pqwGRUcdSxpump`
 
 ## Last scan
-- 14:06Z: 2 coins, 2 with pairs, 0 passed the market filters, 0 researched
+- 14:21Z: 5 coins, 5 with pairs, 0 passed the market filters, 0 researched
 
 ## Coins it looked at, and why it passed
+- 14:14Z PAIR (MIGRATED, $104,364 mcap, $21,272 5m vol): PASS at conviction 3, PASS: flow below pace and no printed higher low. Not the leader of a 20-copy "pair" vamp field, and no catalyst. (V1, V3, V6)  
+  CA `32rBxcFjCFnyqZ41CEPM5AL67X1dcw8w83vZt6Kxpump`
 - 14:05Z NORFEATH (DIP, $482,733 mcap, $6,594 5m vol): PASS at conviction 4, PASS: bottom buy with no rising story, and the theme's volume is at 0.73x pace. Blocker "dead story" on a 23-copy parade field. Clean holders don't fix that (V1, V6, V13).  
   CA `3gmFG4sFDJErDV8pacFrL2uUPXeGJTYLjfRy4hFypump`
 - 14:01Z PumpMas (MIGRATED, $131,360 mcap, $2,865 5m vol): REJECT, Top 10 hold 26.1% ex-pool (>25%) (V13)  
@@ -94,8 +96,6 @@ Updated 2026-11-26T14:07:26Z (paper trading, never real money)
   CA `B34nXKzCgsJb9ChLuSHPRpXLE3WFSWyeT8Cqkzzmpump`
 - 13:44Z Legatum (FINAL_STRETCH, $21,357 mcap, $5,161 5m vol): REJECT, Top 10 hold 29.1% ex-pool (>25%) (V13)  
   CA `HkPSDYRcw4uqgRzZMDd5sRnMpE4ungR1K8MRNXnBVtQ2`
-- 13:38Z UHI (MIGRATED, $1,587,203 mcap, $5,212 5m vol): PASS at conviction 3, PASS — flow below pace (0.8x hourly), $5.2k 5m under the $10k bar, no printed higher low, and the site shows "Contract TBA" instead of this CA. Vamp field of 20. (V1, V6, V13)  
-  CA `Bnw5JRPek5JvJhzUiB9yrs2cmzt4bLeFqSRzDzSppump`
 
 ## What its skips did next (last 48h)
 A skip "ran" if the coin reached the first target (1.5x) from the skip price before a 20% drop, "dumped" if the drop came first. Sampled every 10 min, followed 6h.
@@ -106,7 +106,7 @@ A skip "ran" if the coin reached the first target (1.5x) from the skip price bef
     CA `816BuXnCFQqt6KXbBTcFgHWD29Ckpaqt8HMKSN4Vpump`
   - ran: 4CHAN up to 1.87x  
     CA `DVdWuNK8ncn79B6z8nCiwcNAiwyFcmBPfChgxJGTpump`
-- flow below pace: blocked 36, ran 3, dumped 27, flat 4, open 2 (saving losses: keep it)
+- flow below pace: blocked 37, ran 3, dumped 27, flat 4, open 3 (saving losses: keep it)
   - ran: BOOBS up to 1.51x  
     CA `E35iEA2yLLHc1tjm6et1Z3YuH8DhxJYWtWezPHgSpump`
   - ran: BASKET up to 1.55x  
@@ -134,7 +134,7 @@ A skip "ran" if the coin reached the first target (1.5x) from the skip price bef
     CA `AMYpNGi5aGrKr1ZDsotUdWh7k1mMi569ygtaHJmErGEd`
   - ran: Boor up to 1.56x  
     CA `GHFpSSw2ZMjmKCyc1wrHUjJiqnJeP18mekY9GL1Xpump`
-- RugCheck danger: blocked 28, ran 3, dumped 23, flat 1, open 1 (saving losses: keep it)
+- RugCheck danger: blocked 28, ran 3, dumped 24, flat 1, open 0 (saving losses: keep it)
   - ran: TROLL up to 1.94x  
     CA `7ykeHoEnjnGkY6tqteXn47fdGtd7kfXWghiyZ7YKpump`
   - ran: Snowball up to 3.52x  
@@ -155,12 +155,10 @@ A skip "ran" if the coin reached the first target (1.5x) from the skip price bef
     CA `GEHehS5Rr4rNCjvrHLjjV1avD4bjMsn53ywDGv1spump`
   - ran: WIENER up to 1.59x  
     CA `8BDkDfj3ZUvcG9caGzF2XnHfwg7K6fjfKKDvX6SCpump`
-- other: blocked 15, ran 2, dumped 13, flat 0, open 0 (saving losses: keep it)
+- other: blocked 14, ran 1, dumped 13, flat 0, open 0 (saving losses: keep it)
   - ran: SXI up to 2.34x  
     CA `BFWNbSwRodXPTQqrMSCfhznhJwEzY6ERd6MHjWUEpump`
-  - ran: PAIR up to 2.11x  
-    CA `32rBxcFjCFnyqZ41CEPM5AL67X1dcw8w83vZt6Kxpump`
-- dev share over 1%: blocked 12, ran 1, dumped 9, flat 2, open 0 (saving losses: keep it)
+- dev share over 1%: blocked 11, ran 1, dumped 8, flat 2, open 0 (saving losses: keep it)
   - ran: Grinch up to 1.94x  
     CA `J1b5HnRzmXsYK5akPTFtBR7B4E74JG8eyULodd7ypump`
 
@@ -203,13 +201,13 @@ No edge yet. All 276 settled coins lost money after costs under the simple plan:
 Meta from scan_movers: fresh pump.fun/PumpSwap launches under about an hour old, with buyer majorities on the risers, not the Trump or Ansem news. Three themes repeat: Japanese/kana names (Riku +86% 1h, $14.5k 5m, 61% buys, rising; Mikyan -78% on $1k 5m and SAITAMA at 0% buys, fading), animal characters (Fiona the Baby Hippo +897% 1h, $14.3k 5m, 65% buys, rising), and copycat-style names (Copycats +769% 1h, $10.9k 5m, 60% buys). Komari ($341k cap, $283k 5m, 57% buys, 0.1h old) is the loudest mover, but its 5m volume is about 83% of market cap, a farm/wash flag until holder and bundle checks clear. Setups to research, not buy: Riku, Fiona, Copycats (first confirm it isn't a vamp of an original) and Komari, all clearing the $10k 5m bar, each needing holder, dev and bundle checks. Hey, Flow and Pair are under $10k 5m, so they're watch-only on volume. The crawler's ASCEND, CBUCKS, NUBU and FLOW figures don't match scan_movers, so I'm ignoring them. Old tokens like HYPER (-93% 1h, $171 5m) and DIGS are fading. Paper only, not financial advice.
 
 ## Moving most in its scans, last 30 min (1h volume)
+- PAIR: $581,645 1h vol, $104,364 mcap, +265% 1h  
+  CA `32rBxcFjCFnyqZ41CEPM5AL67X1dcw8w83vZt6Kxpump`
+- KOMARI: $283,435 1h vol, $1,433 mcap, -100% 1h  
+  CA `7juwdhNyZ1YT5hRmF7kSGrxcpAGyFomi5mMbW8uEpump`
 - KOMARI: $269,198 1h vol, $132,836 mcap, +313% 1h  
   CA `EMd4HYWqkQvnmSAor4H44VM4D8ARzcTxsXsYTKazpump`
 - Pair: $142,987 1h vol, $11,805 mcap, -84% 1h  
   CA `EWCfhnj8YjPEbvQXEtwkxMT54WhBpZBLQDFncRoypump`
 - pairless: $105,368 1h vol, $16,042 mcap, +567% 1h  
   CA `B5aqaiWPaFyQWMg3p3mB6aAfakEW2RMD42VyXFi1ppXp`
-- NORFEATH: $96,903 1h vol, $484,441 mcap, -20% 1h  
-  CA `3gmFG4sFDJErDV8pacFrL2uUPXeGJTYLjfRy4hFypump`
-- DOMO: $79,573 1h vol, $7,277 mcap, +224% 1h  
-  CA `AbWPbp81iJHvBTYyWx8wwpMmV8WTKEP24b1JKdBcpump`
