@@ -1,13 +1,13 @@
 # Trencher live report
 
-Updated 2026-11-26T04:32:24Z (paper trading, never real money)
+Updated 2026-11-26T04:47:35Z (paper trading, never real money)
 
 - Equity: $74.23 (-25.8% vs $100 start)
 - Closed trades: 22, 3 wins
 - Fees paid: $14.78 (axiom $2.81, network $9.18, pool $2.66), plus $4.15 lost to slippage
 - New trades: WATCH-ONLY (scans and decides, buys nothing)
-- Brain: subscription, claude-haiku-5-5 for routine calls, claude-opus-5-5 for the daily review; 407 routine calls and 0 plan-limit hits in 48h
-- Watch log: 110 coins being followed, 3726 filed, 0 would-buys (6h follow, sampled every 2 min)
+- Brain: subscription, claude-haiku-5-5 for routine calls, claude-opus-5-5 for the daily review; 408 routine calls and 0 plan-limit hits in 48h
+- Watch log: 109 coins being followed, 3732 filed, 0 would-buys (6h follow, sampled every 2 min)
 
 ## Scorecard (after fees)
 - 22 closed, 3 won (14%), net $-25.79
@@ -73,9 +73,19 @@ Updated 2026-11-26T04:32:24Z (paper trading, never real money)
   CA `H4gHnZ3NCU7Z9XQwGX6YYJNyieGEW8pqwGRUcdSxpump`
 
 ## Last scan
-- 04:31Z: 2 coins, 2 with pairs, 0 passed the market filters, 0 researched
+- 04:47Z: 1 coins, 1 with pairs, 0 passed the market filters, 0 researched
 
 ## Coins it looked at, and why it passed
+- 04:46Z coin (FINAL_STRETCH, $23,187 mcap, $13,278 5m vol): PASS at conviction 2, PASS: chasing a +87% 5m spike in a one-word vamp field whose theme flow is at 0.08x pace, and the site doesn't show this CA. Blockers: "chasing spike" and a dying meta (V1, V6, V13).  
+  CA `GHcow7qoqNrkwbfVEsySwZR98kbyPrehit8E1u6vpump`
+- 04:46Z UP (FINAL_STRETCH, $19,980 mcap, $36,324 5m vol): PASS at conviction 2, PASS: chasing spike, flow below pace, six-minute-old launch with no story. Blocker: "chasing spike" (V1, V6).  
+  CA `8gnXgowYp1cB5XNxrLGkwPAPbYf47qhkpymKdCB8pump`
+- 04:45Z PUMPCHAN (MIGRATED, $1,378,282 mcap, $5,491 5m vol): REJECT, Top 10 hold 38.8% ex-pool (>25%) (V13)  
+  CA `Fo2HAwr7ZAUM2bSZ7MWSi16e3aWGpbw5MsUDYCttpump`
+- 04:42Z Grodia (DIP, $1,100,753 mcap, $5,444 5m vol): REJECT, Dip with fading attention is a falling knife, not a dip (5m at 0.59x the hour's pace, under 0.6x)  
+  CA `6HS1aeSk7osT5B1CzLp1HTRTAweFr5wurfMHS4vppump`
+- 04:38Z UHI (MIGRATED, $984,678 mcap, $4,453 5m vol): PASS at conviction 2, PASS: UHI leads its theme, but it's 22% off a $1.27M high with $4.5k of 5m flow (0.91x its own hourly pace), no breakout and no printed higher low. The project site shows CA "TBA". Blocker: "no breakout" / "flow below pace". (V1, V3, V6)  
+  CA `Bnw5JRPek5JvJhzUiB9yrs2cmzt4bLeFqSRzDzSppump`
 - 04:30Z TEEETHY (MIGRATED, $89,139 mcap, $6,229 5m vol): PASS at conviction 2, PASS: chasing, too new, no higher low. Price is 4.7% off a 34-minute-old peak after a +202% hour, with no printed structure and no story behind it (V1, V6).  
   CA `BbC8hVHJ2bo6xFcGh2X6zcMiv1T1rznQd3qWoxXApump`
 - 04:25Z ccat (MIGRATED, $43,946 mcap, $5,998 5m vol): PASS at conviction 3, PASS: clancat is 3.7% off its high, and 5m volume is 6.6x its hourly pace, so this is a chase. No printed higher low, and top 10 at 24%. Watch it. (MIGRATED rule, V1, V6)  
@@ -86,16 +96,6 @@ Updated 2026-11-26T04:32:24Z (paper trading, never real money)
   CA `FVzqGqRmr4UH1Fif6dewmwbJ1p4YUZCu8dcw4Efopump`
 - 04:15Z FIONA (DIP, $1,937,690 mcap, $6,075 5m vol): REJECT, Bundles: 10 linked wallet cluster(s) hold 30.2% of supply (>20%) (V17)  
   CA `B34nXKzCgsJb9ChLuSHPRpXLE3WFSWyeT8Cqkzzmpump`
-- 04:14Z SXI (no setup, $6,341 mcap, $20,999 5m vol): REJECT, No setup fits: not Final Stretch, not a migrated runner, not a healthy dip  
-  CA `BFWNbSwRodXPTQqrMSCfhznhJwEzY6ERd6MHjWUEpump`
-- 04:13Z NORFEATH (MIGRATED, $584,088 mcap, $5,611 5m vol): PASS at conviction 4, PASS: bottom buy with theme pace at 0.98x, no rising narrative on the radar, and 4 copies of the ticker. Clean holders don't fix the attention gap (V1, V3, V13).  
-  CA `3gmFG4sFDJErDV8pacFrL2uUPXeGJTYLjfRy4hFypump`
-- 04:06Z enu (MIGRATED, $171,169 mcap, $2,510 5m vol): PASS at conviction 2, PASS: no story, no catalyst, no printed higher low, and 16 coins share the name. Blocker: "bottom buy, no narrative" (V1, V13).  
-  CA `9msLfYfXBrSbrApCZAPuPMCNmPqNtEL1VPKh1AEYpump`
-- 03:59Z PUMPCHAN (MIGRATED, $1,229,324 mcap, $3,231 5m vol): REJECT, Top 10 hold 39.6% ex-pool (>25%) (V13)  
-  CA `Fo2HAwr7ZAUM2bSZ7MWSi16e3aWGpbw5MsUDYCttpump`
-- 03:59Z wocket (FINAL_STRETCH, $26,098 mcap, $32,262 5m vol): PASS at conviction 3, PASS: wocket is an 11-minute-old bonding-curve copy in a 9-coin one-word field, up 53% on 5m with no X, no site, and a 3.96% bundle cluster. Blockers: too new, chasing spike, split crowd. (V1, V3, V6, V13)  
-  CA `6mctjLR559n8vWzmcm2Wj72xYSvcm8og3cFGy3RXpump`
 
 ## What its skips did next (last 48h)
 A skip "ran" if the coin reached the first target (1.5x) from the skip price before a 20% drop, "dumped" if the drop came first. Sampled every 10 min, followed 6h.
@@ -106,7 +106,7 @@ A skip "ran" if the coin reached the first target (1.5x) from the skip price bef
     CA `816BuXnCFQqt6KXbBTcFgHWD29Ckpaqt8HMKSN4Vpump`
   - ran: 4CHAN up to 1.87x  
     CA `DVdWuNK8ncn79B6z8nCiwcNAiwyFcmBPfChgxJGTpump`
-- flow below pace: blocked 35, ran 4, dumped 25, flat 2, open 4 (saving losses: keep it)
+- flow below pace: blocked 37, ran 4, dumped 25, flat 2, open 6 (saving losses: keep it)
   - ran: GROKIA up to 1.51x  
     CA `3cL47ohWa2HApLYKtqPsqkjaxJ6HLvT5Ri1KvWdXpump`
   - ran: BOOBS up to 1.51x  
@@ -127,7 +127,7 @@ A skip "ran" if the coin reached the first target (1.5x) from the skip price bef
     CA `9TKbd3VFaMSXsEAicD9JVQWpWwAoLi4fSgWmZL2cpump`
   - ran: Bababoi up to 2.17x  
     CA `28B9kDm6XtQNqAkzuiKH3Zu1L8cVM6SLW4iRamFspump`
-- near the high / chasing: blocked 28, ran 6, dumped 19, flat 1, open 2 (saving losses: keep it)
+- near the high / chasing: blocked 27, ran 6, dumped 18, flat 1, open 2 (saving losses: keep it)
   - ran: BRUH up to 1.51x  
     CA `PgFtGGquvnv2zEkjG2N2QPvBTBrafuExGYEqahRpump`
   - ran: ACHI up to 1.53x  
@@ -201,13 +201,13 @@ Nothing has a positive edge after costs. All 213 settled coins came out at -12.2
 The meta is split, not quiet. Animal and mascot names minted in the last few hours are still on the pump.fun curve and pulling volume: PoorGoat ($28k mcap, $42k 5m, 50% buys, 6 min old), wocket ($26k, $32k 5m, 62% buys), SpaceX Inu ($15k, $20k 5m, 61% buys) and The Black Bull ($10.6k, 61% buys). Older animal and character coins on PumpSwap at $0.5M to $2M (Grodia, Norfeather, UHI, Fiona the Hippo, PumpChan) show steady 59-72% buy ratios but only $3-6k on the 5-minute, under our $10k bar. One-word joke names launched in the last hour are fading hard: "coin" is -94% with zero 5m buys, MEMO -94%, Liquid -81%, Harlod and KEKW -73%. The web's Trump dinner and Ansem headlines don't show up in these volumes, so I'm ignoring them. Setups to research now: PoorGoat and wocket as FINAL_STRETCH near the ~$34k bond, but they are minutes old, so it's new-pair risk; probe at most (conviction 5) only if one holds above $30k after a pullback and the bundle and holder checks clear. Grodia, Norfeather and UHI are MIGRATED candidates that qualify on mcap but fail the $10k 5m bar today; they become buys only if 5m volume passes $10k with buyers still above 60%.
 
 ## Moving most in its scans, last 30 min (1h volume)
-- coin: $320,860 1h vol, $2,111 mcap, -96% 1h  
-  CA `CMmfK9KFjFRPgAEkixMpchNnA5zTz7xYdQkSSc8Upump`
-- MCAP: $215,819 1h vol, $6,389 mcap, -95% 1h  
-  CA `AYij72wApHA4qGV5RbZJhsAVocjHtJJhgoUswV3tpump`
-- Bull: $100,541 1h vol, $10,368 mcap, +285% 1h  
-  CA `2xoJEBPrfhNm6DbrUHj4EvMyZKEEZgXHxEK9DNXxpump`
-- POORGOAT: $97,297 1h vol, $10,420 mcap, +138% 1h  
+- wocket: $136,118 1h vol, $4,852 mcap, +46% 1h  
+  CA `6mctjLR559n8vWzmcm2Wj72xYSvcm8og3cFGy3RXpump`
+- coin: $121,944 1h vol, $18,009 mcap, +773% 1h  
+  CA `GHcow7qoqNrkwbfVEsySwZR98kbyPrehit8E1u6vpump`
+- Grodia: $111,620 1h vol, $1,100,753 mcap, +31% 1h  
+  CA `6HS1aeSk7osT5B1CzLp1HTRTAweFr5wurfMHS4vppump`
+- POORGOAT: $109,021 1h vol, $6,548 mcap, +49% 1h  
   CA `Fc3z41QViQQwyU3pAHU8ntyi7KnX4UDqVDEmNremSLam`
-- TEEETHY: $81,036 1h vol, $89,139 mcap, +202% 1h  
-  CA `BbC8hVHJ2bo6xFcGh2X6zcMiv1T1rznQd3qWoxXApump`
+- 2: $91,963 1h vol, $5,690 mcap, -87% 1h  
+  CA `HkywsKMf5FDj7QpgRE3BoE2nJqJauxEVbGjpnYe6pump`
