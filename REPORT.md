@@ -1,13 +1,13 @@
 # Trencher live report
 
-Updated 2026-11-26T10:05:25Z (paper trading, never real money)
+Updated 2026-11-26T10:20:29Z (paper trading, never real money)
 
 - Equity: $74.23 (-25.8% vs $100 start)
 - Closed trades: 22, 3 wins
 - Fees paid: $14.78 (axiom $2.81, network $9.18, pool $2.66), plus $4.15 lost to slippage
 - New trades: WATCH-ONLY (scans and decides, buys nothing)
-- Brain: subscription, claude-haiku-5-5 for routine calls, claude-opus-5-5 for the daily review; 405 routine calls and 0 plan-limit hits in 48h
-- Watch log: 81 coins being followed, 3828 filed, 0 would-buys (6h follow, sampled every 2 min)
+- Brain: subscription, claude-haiku-5-5 for routine calls, claude-opus-5-5 for the daily review; 406 routine calls and 0 plan-limit hits in 48h
+- Watch log: 83 coins being followed, 3833 filed, 0 would-buys (6h follow, sampled every 2 min)
 
 ## Scorecard (after fees)
 - 22 closed, 3 won (14%), net $-25.79
@@ -73,33 +73,33 @@ Updated 2026-11-26T10:05:25Z (paper trading, never real money)
   CA `H4gHnZ3NCU7Z9XQwGX6YYJNyieGEW8pqwGRUcdSxpump`
 
 ## Last scan
-- 10:05Z: 4 coins, 4 with pairs, 0 passed the market filters, 0 researched
+- 10:19Z: 3 coins, 3 with pairs, 0 passed the market filters, 0 researched
 
 ## Coins it looked at, and why it passed
+- 10:17Z CGBJ (FINAL_STRETCH, $22,693 mcap, $1,964 5m vol): REJECT, 5m volume $1,964 is dead (<$2,000) (V1)  
+  CA `Hnv5e4c8amHREbBDgzxGtaYPVSt7nhrW5AUNS6Q7pump`
+- 10:17Z NORFEATH (DIP, $456,375 mcap, $4,887 5m vol): PASS at conviction 3, PASS: no live catalyst, 9 same-ticker copies, 5m flow $4.9k under $10k, and the first resistance is only ~1.16x away. Blocker: "dead story" plus "target too close" (V1, V6, V13).  
+  CA `3gmFG4sFDJErDV8pacFrL2uUPXeGJTYLjfRy4hFypump`
+- 10:16Z STRUCK (MIGRATED, $66,052 mcap, $105,499 5m vol): REJECT, Bundles: 2 linked wallet cluster(s) hold 42.4% of supply (>20%) (V17)  
+  CA `HN9jRRCKuLNL3oSgNV1MBvd3Krg6TingFntJp1PSpump`
+- 10:14Z DIGS (MIGRATED, $249,840 mcap, $3,327 5m vol): REJECT, Bundles: 10 linked wallet cluster(s) hold 100.0% of supply (>20%) (V17)  
+  CA `9QT8K685Hrae4k11dhGXirdtpfAaimExtyfwt8cPpump`
+- 10:12Z TRUMP (FINAL_STRETCH, $14,592 mcap, $19,009 5m vol): PASS at conviction 2, PASS: one of seven "Trump" copies at a 10-minute-old pump.fun coin, top 10 at 22.7%, no X or socials, and 5m volume 6.3x pace after a +32% candle. Vamp field, chasing a spike (V1, V3, V6, V13).  
+  CA `3PfQEuGvK97bSPthf1gMkejeAQKEfSPisciU96JRpump`
+- 10:11Z CBUCKS (MIGRATED, $6,185,490 mcap, $5,692 5m vol): REJECT, Top 10 hold 25.7% ex-pool (>25%) (V13)  
+  CA `DtcicPCKTKeAh7TDEzTym3hXeoHAoMiBdYJhMYxZpump`
+- 10:08Z YEE (MIGRATED, $70,658 mcap, $29,544 5m vol): REJECT, Bundles: 3 linked wallet cluster(s) hold 68.5% of supply (>20%) (V17)  
+  CA `BKGidSAf6RkUUymQYYoN8ifm3VMsLkeFTocvza3Spump`
 - 09:59Z Grodia (MIGRATED, $419,096 mcap, $3,491 5m vol): PASS at conviction 2, PASS: Grodia is 84% off its $2.64M peak, 5m volume is $3.5k (under the $10k line), flow is under pace, and it's one of 10 copies of the ticker. The site doesn't show this CA and is 0.6 days old. Blockers: "too deep", "flow below pace", "dead story". (V1, V6, V13)  
   CA `6HS1aeSk7osT5B1CzLp1HTRTAweFr5wurfMHS4vppump`
 - 09:54Z Sae (MIGRATED, $34,130 mcap, $2,350 5m vol): REJECT, Dev holds 2.1% (>1%) (V13, V17)  
   CA `ZP4J8fNk7FC3iDUPAWd8TX6q8CkVVuSeJgnHCvpPSae`
 - 09:53Z Oro (FINAL_STRETCH, $17,137 mcap, $18,825 5m vol): REJECT, Top 10 hold 25.4% ex-pool (>25%) (V13)  
   CA `9bj8yMQ3gZ36cd2d4efU49dqZsaw3gA6CCaWrbKmpump`
-- 09:39Z PUMPCHAN (MIGRATED, $6,011,665 mcap, $75,198 5m vol): REJECT, Top 10 hold 28.3% ex-pool (>25%) (V13)  
-  CA `Fo2HAwr7ZAUM2bSZ7MWSi16e3aWGpbw5MsUDYCttpump`
-- 09:37Z duk (FINAL_STRETCH, $14,910 mcap, $8,384 5m vol): PASS at conviction 3, PASS: 15-minute-old duk, the site says "ca: soon" and the domain is a day old, with 10 same-ticker copies and no buzz. Too new, no story. (V1, V6, V13)  
-  CA `DG2EJSEtPBge5F7zBCTZG78p27LTCiq8tUkJ39qupump`
-- 09:34Z FIONA (DIP, $2,052,631 mcap, $4,326 5m vol): REJECT, Bundles: 10 linked wallet cluster(s) hold 30.2% of supply (>20%) (V17)  
-  CA `B34nXKzCgsJb9ChLuSHPRpXLE3WFSWyeT8Cqkzzmpump`
-- 09:31Z NORFEATH (DIP, $410,497 mcap, $3,457 5m vol): PASS at conviction 2, PASS — DIP with no printed higher low: the 15m highs keep stepping down (0.000607, 0.00055, 0.000527, 0.00044, 0.00044), price is back at its prior lows, and the theme trades at 0.76x pace. The parade date is real, but I found no link between this coin and it. (V1, V6, V13)  
-  CA `3gmFG4sFDJErDV8pacFrL2uUPXeGJTYLjfRy4hFypump`
-- 09:28Z UHI (MIGRATED, $1,057,816 mcap, $1,791 5m vol): REJECT, 5m volume $1,791 is dead (<$2,000) (V1)  
-  CA `Bnw5JRPek5JvJhzUiB9yrs2cmzt4bLeFqSRzDzSppump`
-- 09:28Z DIGS (MIGRATED, $243,504 mcap, $2,363 5m vol): REJECT, Bundles: 10 linked wallet cluster(s) hold 100.0% of supply (>20%) (V17)  
-  CA `9QT8K685Hrae4k11dhGXirdtpfAaimExtyfwt8cPpump`
-- 09:25Z ANON (FINAL_STRETCH, $23,855 mcap, $18,206 5m vol): PASS at conviction 3, PASS: chasing spike on a sell-heavy pre-bond coin. The last 5m candle is up 75%, buys are 39% of 5m flow with more sells than buys, and the site is 1.4 days old and doesn't show this CA. Blocker: chasing spike / flow below pace (V1, V6).  
-  CA `GseubmYS1ARwxkMwgyYns1wQjuXba1gSJWpJDsNDpump`
 
 ## What its skips did next (last 48h)
 A skip "ran" if the coin reached the first target (1.5x) from the skip price before a 20% drop, "dumped" if the drop came first. Sampled every 10 min, followed 6h.
-- top 10 over 25%: blocked 40, ran 6, dumped 31, flat 0, open 3 (saving losses: keep it)
+- top 10 over 25%: blocked 40, ran 6, dumped 32, flat 0, open 2 (saving losses: keep it)
   - ran: SCF up to 2.01x  
     CA `Az7dYDicMc4G9hwnkeQYwHi6Fop1711C7hABcrWzpump`
   - ran: MARS up to 2.06x  
@@ -120,6 +120,13 @@ A skip "ran" if the coin reached the first target (1.5x) from the skip price bef
     CA `9cDnmLRDWeJzcpyw8tSFAT7HS4Aunx6MmZWjMfrzpump`
   - ran: SHHFT up to 1.61x  
     CA `GqMg4TRt5U5HRK6oeZYwCF1Jz7Ym9MSzWSoFCtFsbzf6`
+- near the high / chasing: blocked 27, ran 6, dumped 18, flat 1, open 2 (saving losses: keep it)
+  - ran: BRUH up to 1.51x  
+    CA `PgFtGGquvnv2zEkjG2N2QPvBTBrafuExGYEqahRpump`
+  - ran: SNOWCUMBRR up to 2.36x  
+    CA `Gf9wm93TTDpbPC467Eio5Vc42Kr6MAomUD172drWpump`
+  - ran: HEYOS up to 1.91x  
+    CA `A88p1LcHisrx3TuTwUGVrLtc1LBTUPZUfVgaCGutAFaK`
 - RugCheck danger: blocked 27, ran 3, dumped 23, flat 1, open 0 (saving losses: keep it)
   - ran: TROLL up to 1.94x  
     CA `7ykeHoEnjnGkY6tqteXn47fdGtd7kfXWghiyZ7YKpump`
@@ -127,14 +134,7 @@ A skip "ran" if the coin reached the first target (1.5x) from the skip price bef
     CA `9TKbd3VFaMSXsEAicD9JVQWpWwAoLi4fSgWmZL2cpump`
   - ran: Bababoi up to 2.17x  
     CA `28B9kDm6XtQNqAkzuiKH3Zu1L8cVM6SLW4iRamFspump`
-- near the high / chasing: blocked 26, ran 6, dumped 17, flat 1, open 2 (saving losses: keep it)
-  - ran: BRUH up to 1.51x  
-    CA `PgFtGGquvnv2zEkjG2N2QPvBTBrafuExGYEqahRpump`
-  - ran: SNOWCUMBRR up to 2.36x  
-    CA `Gf9wm93TTDpbPC467Eio5Vc42Kr6MAomUD172drWpump`
-  - ran: HEYOS up to 1.91x  
-    CA `A88p1LcHisrx3TuTwUGVrLtc1LBTUPZUfVgaCGutAFaK`
-- too new / sniping: blocked 26, ran 7, dumped 18, flat 0, open 1 (saving losses: keep it)
+- too new / sniping: blocked 26, ran 8, dumped 18, flat 0, open 0 (saving losses: keep it)
   - ran: BABYANSEM up to 2.77x  
     CA `F3VctV9FqDgiyqaztN6z78bgWy27eH7DBBHW1vjpump`
   - ran: Merged up to 2.18x  
@@ -148,7 +148,7 @@ A skip "ran" if the coin reached the first target (1.5x) from the skip price bef
     CA `J9eBkCb4UtquAMQqB6duwBmR99fFSMoTnDcaMB9Wpump`
   - ran: MONEY up to 1.58x  
     CA `DeACAbp2GMzapB6Z2K8qdkTZupmNbKc6EZx9bnbCpump`
-- bundles over the line: blocked 15, ran 3, dumped 8, flat 0, open 4 (saving losses: keep it)
+- bundles over the line: blocked 17, ran 3, dumped 8, flat 0, open 6 (saving losses: keep it)
   - ran: jingyu up to 1.58x  
     CA `DUZrwdjEthcJ99ZiRXr31UuqTohoTg7VjTEyfGdBpump`
   - ran: DUMBMONEY up to 1.74x  
@@ -203,13 +203,13 @@ Nothing has a positive edge after costs. All 213 settled coins came out at -12.2
 The trenches are thin and split across three lanes, none of them the Trump news: cute food and joke names, platform and product riffs, and celebrity or holiday puns. WIENER (52k cap, $46k 5m, 68% buys, 18 min old on PumpSwap) has the cleanest-looking flow, PPV "Pay Per View" (23k cap, $11k 5m, 61% buys, +750% in 1h) is running hot but only 30 min old, and Elonmas (352k cap, $41k 5m, 50% buys, +242% in 1h, 4h old) is the bigger, slower celebrity-pun candidate while Santa is dead at $268 5m. Fading: the old tickers (CBUCKS, FIONA, Grodia) with thin 5m volume and the dumpers (OG -88%, pnp-lean -90%, Fug it -45%, FUND -41%). Setups to research, not buys: WIENER and PPV, each needing holder, dev and bundle checks first; WIENER at 18 min old is a bundle-risk case until those come back clean. Conviction 4 to 5 with a stop at -30% and out if 5m volume falls under $10k. The web's Trump dinner headlines and the fairdotfun/FUNDXYZ/Elonmas figures don't match scan_movers, so I used scan numbers only. Paper only, not financial advice.
 
 ## Moving most in its scans, last 30 min (1h volume)
-- PUMPCHAN: $426,930 1h vol, $6,273,446 mcap, -7% 1h  
-  CA `Fo2HAwr7ZAUM2bSZ7MWSi16e3aWGpbw5MsUDYCttpump`
-- WIENER: $275,874 1h vol, $1,460 mcap, -95% 1h  
+- WIENER: $144,414 1h vol, $1,457 mcap, -98% 1h  
   CA `8BDkDfj3ZUvcG9caGzF2XnHfwg7K6fjfKKDvX6SCpump`
-- Ponzi: $60,322 1h vol, $2,067 mcap, -62% 1h  
+- STRUCK: $132,605 1h vol, $66,052 mcap, +125% 1h  
+  CA `HN9jRRCKuLNL3oSgNV1MBvd3Krg6TingFntJp1PSpump`
+- PPV: $83,585 1h vol, $3,141 mcap, -89% 1h  
+  CA `CbGrZ3Q2XxSV2oiZsLkDWW1GFjrqUDAzTH9XwVr1pump`
+- YEE: $80,245 1h vol, $70,658 mcap, +139% 1h  
+  CA `BKGidSAf6RkUUymQYYoN8ifm3VMsLkeFTocvza3Spump`
+- Ponzi: $60,324 1h vol, $2,063 mcap, -62% 1h  
   CA `3wYjTDMrX6Q8z9SRtaJNhgXh21DbRJt1iYaQ8LQ3pump`
-- pnp-lean: $55,426 1h vol, $1,908 mcap, -93% 1h  
-  CA `AfJBDMQ9NYtDssHK22xZ9v3SubrrR1kczzaQA1sQb5rB`
-- CBUCKS: $49,735 1h vol, $6,298,438 mcap, +11% 1h  
-  CA `DtcicPCKTKeAh7TDEzTym3hXeoHAoMiBdYJhMYxZpump`
