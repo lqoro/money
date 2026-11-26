@@ -1,13 +1,13 @@
 # Trencher live report
 
-Updated 2026-11-26T18:40:13Z (paper trading, never real money)
+Updated 2026-11-26T18:55:13Z (paper trading, never real money)
 
 - Equity: $74.23 (-25.8% vs $100 start)
 - Closed trades: 22, 3 wins
 - Fees paid: $14.78 (axiom $2.81, network $9.18, pool $2.66), plus $4.15 lost to slippage
 - New trades: WATCH-ONLY (scans and decides, buys nothing)
-- Brain: subscription, claude-haiku-5-5 for routine calls, claude-opus-5-5 for the daily review; 396 routine calls and 0 plan-limit hits in 48h
-- Watch log: 99 coins being followed, 3949 filed, 0 would-buys (6h follow, sampled every 2 min)
+- Brain: subscription, claude-haiku-5-5 for routine calls, claude-opus-5-5 for the daily review; 394 routine calls and 0 plan-limit hits in 48h
+- Watch log: 96 coins being followed, 3953 filed, 0 would-buys (6h follow, sampled every 2 min)
 
 ## Scorecard (after fees)
 - 22 closed, 3 won (14%), net $-25.79
@@ -73,9 +73,11 @@ Updated 2026-11-26T18:40:13Z (paper trading, never real money)
   CA `H4gHnZ3NCU7Z9XQwGX6YYJNyieGEW8pqwGRUcdSxpump`
 
 ## Last scan
-- 18:39Z: 3 coins, 3 with pairs, 0 passed the market filters, 0 researched
+- 18:54Z: 4 coins, 4 with pairs, 0 passed the market filters, 0 researched
 
 ## Coins it looked at, and why it passed
+- 18:41Z Criminul (MIGRATED, $41,883 mcap, $136,717 5m vol): PASS at conviction 3, PASS. Criminul is 11 minutes old, down 24% in 5m after a 7.8x volume spike, one of 26 copies with two bigger same-ticker tokens, and no printed higher low. Blockers: too new, chasing spike, no higher low, split crowd. (V1, V3, V6)  
+  CA `5qYyTjP1Y2xfSUUayyEfXP5mxxBg1CEKcdPvmYEApump`
 - 18:38Z JIMMY (DIP, $751,938 mcap, $2,176 5m vol): REJECT, Dip with fading attention is a falling knife, not a dip (5m at 0.43x the hour's pace, under 0.6x)  
   CA `38M2z4UCfZEkUHFzD48vhKQhFhNyRGto8pZbLjNipump`
 - 18:38Z WOOPY (MIGRATED, $191,554 mcap, $3,266 5m vol): PASS at conviction 2, PASS. Chasing a spike at the top of a dog meta that's fading, on $3k of 5m flow. Blocker: "chasing" (V1, V6).  
@@ -94,12 +96,10 @@ Updated 2026-11-26T18:40:13Z (paper trading, never real money)
   CA `CD3AHwDcZziU85JpxxMLW2xhXHJUgDyjUxJVjmUZpump`
 - 18:15Z bolphante (MIGRATED, $56,911 mcap, $2,468 5m vol): REJECT, Dev holds 2.1% (>1%) (V13, V17)  
   CA `FVBzzG4ZcAgxSLW1rWjNC9EH9CgEgz1A4puNYexMpump`
-- 18:11Z UHI (MIGRATED, $1,757,200 mcap, $9,616 5m vol): PASS at conviction 3, PASS: 8% off the $1.92M high, sellers 2:1 on the 5m, no printed higher low, and the site says "Contract TBA." Chasing a meme copied 20 times (V1, V3, V6, V13).  
-  CA `Bnw5JRPek5JvJhzUiB9yrs2cmzt4bLeFqSRzDzSppump`
 
 ## What its skips did next (last 48h)
 A skip "ran" if the coin reached the first target (1.5x) from the skip price before a 20% drop, "dumped" if the drop came first. Sampled every 10 min, followed 6h.
-- top 10 over 25%: blocked 46, ran 9, dumped 36, flat 0, open 1 (saving losses: keep it)
+- top 10 over 25%: blocked 45, ran 9, dumped 35, flat 0, open 1 (saving losses: keep it)
   - ran: MARS up to 2.06x  
     CA `816BuXnCFQqt6KXbBTcFgHWD29Ckpaqt8HMKSN4Vpump`
   - ran: 4CHAN up to 1.87x  
@@ -120,7 +120,7 @@ A skip "ran" if the coin reached the first target (1.5x) from the skip price bef
     CA `A88p1LcHisrx3TuTwUGVrLtc1LBTUPZUfVgaCGutAFaK`
   - ran: Nala up to 1.64x  
     CA `FeBG8AEG4j7LT7xQF38gPXQFBRBtXBTNzhZjSa3bpump`
-- too new / sniping: blocked 34, ran 8, dumped 26, flat 0, open 0 (saving losses: keep it)
+- too new / sniping: blocked 35, ran 8, dumped 26, flat 0, open 1 (saving losses: keep it)
   - ran: BABYANSEM up to 2.77x  
     CA `F3VctV9FqDgiyqaztN6z78bgWy27eH7DBBHW1vjpump`
   - ran: Merged up to 2.18x  
@@ -141,7 +141,7 @@ A skip "ran" if the coin reached the first target (1.5x) from the skip price bef
     CA `6GLetugFEmy7P7SmLtg3zyZdz6rWCQ8gHPbPYZs9pump`
   - ran: FREEDOM up to 4.48x  
     CA `FDNc812jkHdhkdeRNaLMVwyihHMLR6ztTmRfxG7opump`
-- falling knife (code): blocked 19, ran 3, dumped 12, flat 1, open 3 (saving losses: keep it)
+- falling knife (code): blocked 19, ran 3, dumped 13, flat 1, open 2 (saving losses: keep it)
   - ran: Jimmies up to 1.53x  
     CA `GisWWjhwrSud4aFGSHvTMt85Ky14sY7LeBFCpfoFpump`
   - ran: Investor up to 1.58x  
@@ -209,11 +209,11 @@ The meta is fresh pump.fun launches under 3h old with real buying: PEDALFIN ($51
 ## Moving most in its scans, last 30 min (1h volume)
 - KURO: $438,506 1h vol, $92,233 mcap, -97% 1h  
   CA `AaY6XtQZYYaxQ4fV8R8acConnMsgjg9zrZs341HUpump`
+- Kuro: $315,596 1h vol, $1,308 mcap, -99% 1h  
+  CA `8TG9KGHbLYdArfk4mBRnbJNGKNXYkLFXDpNLbSeHpump`
+- Criminul: $213,931 1h vol, $44,056 mcap, +3% 1h  
+  CA `5qYyTjP1Y2xfSUUayyEfXP5mxxBg1CEKcdPvmYEApump`
 - JANTA: $196,440 1h vol, $144,830 mcap, +60% 1h  
   CA `9tERTsZZj19ZHAqg7URtfkfPdaCiVeR4JkuPVoHrpump`
-- PEDALFIN: $146,938 1h vol, $50,849 mcap, +74% 1h  
-  CA `CD3AHwDcZziU85JpxxMLW2xhXHJUgDyjUxJVjmUZpump`
-- bolphante: $113,828 1h vol, $51,682 mcap, +39% 1h  
-  CA `FVBzzG4ZcAgxSLW1rWjNC9EH9CgEgz1A4puNYexMpump`
-- JAZZ: $101,829 1h vol, $20,001 mcap, -34% 1h  
-  CA `CErq2oGNSJWVovVMjx8k1wuL6qR75q1teSxJNqrCpump`
+- Kuro: $158,170 1h vol, $1,515 mcap, -99% 1h  
+  CA `AuVQxjSZt937unfV6ScNca1ZwwqZtjNSq3LfQtv4pump`
