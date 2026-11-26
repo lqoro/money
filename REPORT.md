@@ -1,13 +1,13 @@
 # Trencher live report
 
-Updated 2026-11-26T19:10:24Z (paper trading, never real money)
+Updated 2026-11-26T19:25:37Z (paper trading, never real money)
 
 - Equity: $74.23 (-25.8% vs $100 start)
 - Closed trades: 22, 3 wins
 - Fees paid: $14.78 (axiom $2.81, network $9.18, pool $2.66), plus $4.15 lost to slippage
 - New trades: WATCH-ONLY (scans and decides, buys nothing)
-- Brain: subscription, claude-haiku-5-5 for routine calls, claude-opus-5-5 for the daily review; 393 routine calls and 0 plan-limit hits in 48h
-- Watch log: 97 coins being followed, 3955 filed, 0 would-buys (6h follow, sampled every 2 min)
+- Brain: subscription, claude-haiku-5-5 for routine calls, claude-opus-5-5 for the daily review; 392 routine calls and 0 plan-limit hits in 48h
+- Watch log: 98 coins being followed, 3961 filed, 0 would-buys (6h follow, sampled every 2 min)
 
 ## Scorecard (after fees)
 - 22 closed, 3 won (14%), net $-25.79
@@ -73,54 +73,54 @@ Updated 2026-11-26T19:10:24Z (paper trading, never real money)
   CA `H4gHnZ3NCU7Z9XQwGX6YYJNyieGEW8pqwGRUcdSxpump`
 
 ## Last scan
-- 19:09Z: 3 coins, 3 with pairs, 0 passed the market filters, 0 researched
+- 19:24Z: 2 coins, 2 with pairs, 1 passed the market filters, 1 researched
 
 ## Coins it looked at, and why it passed
+- 19:25Z JIMMY (DIP, $698,160 mcap, $2,260 5m vol): PASS at conviction 3, PASS. Bottom buy on a crowded same-name theme with no catalyst and theme flow under pace. The copies are running out of attention. (V1, V13)  
+  CA `38M2z4UCfZEkUHFzD48vhKQhFhNyRGto8pZbLjNipump`
+- 19:21Z NORFEATH (DIP, $327,890 mcap, $4,342 5m vol): PASS at conviction 3, PASS: NORFEATH is a 68% dip with no live narrative. It's off the radar with zero mentions, one of 27 copies of its ticker, and its only dated catalyst (today's parade) is already printing. Blocker: "dead story" under the bottom-buy rule (V1, V6, V13).  
+  CA `3gmFG4sFDJErDV8pacFrL2uUPXeGJTYLjfRy4hFypump`
+- 19:19Z DIGS (MIGRATED, $251,976 mcap, $3,136 5m vol): REJECT, Bundles: 10 linked wallet cluster(s) hold 100.0% of supply (>20%) (V17)  
+  CA `9QT8K685Hrae4k11dhGXirdtpfAaimExtyfwt8cPpump`
+- 19:19Z ZBRA (MIGRATED, $63,312 mcap, $35,526 5m vol): PASS at conviction 2, PASS: ZBRA is at its own high (0% off), about 10 minutes old, with no printed higher low, inside a 29-copy vamp field. Volume leadership is not structure (V1, V6).  
+  CA `DrBCGJscM3ziBRd2CDt5dV9W1rCVAimVZ78BxrN8pump`
+- 19:18Z zBRA (FINAL_STRETCH, $24,820 mcap, $23,727 5m vol): PASS at conviction 3, PASS: copy #2 in a 29-coin Anonymous Zebra vamp field, up 146% on 5m at 7.7x hourly pace, with a 5.2% bundle cluster and top 10 at 19.4%. Split crowd and chasing spike (V1, V3, V6).  
+  CA `ygyU5YDcRBWPDScQ96cSh6toTxmeqLXrxLY3hXopump`
+- 19:16Z JANTA (MIGRATED, $134,150 mcap, $7,669 5m vol): PASS at conviction 4, PASS. JANTA is 72% off its $482k high, which makes it a bottom buy, and the theme isn't pacing 1x and no catalyst is named. Blocker: "bottom buy, no catalyst, theme pace 0.96x" (V1, V6).  
+  CA `9tERTsZZj19ZHAqg7URtfkfPdaCiVeR4JkuPVoHrpump`
+- 19:16Z SUNDANCE (FINAL_STRETCH, $16,991 mcap, $27,175 5m vol): REJECT, Top 10 hold 25.1% ex-pool (>25%) (V13)  
+  CA `F7dG1t56z9oJpyM3eVs4PgTUDgU2KHcCumABWUxpump`
 - 19:08Z BASS (MIGRATED, $56,039 mcap, $99,643 5m vol): REJECT, Dev holds 1.9% (>1%) (V13, V17)  
   CA `4U1ZcA8a8p5BKW8e4FsQnvd9TjvnWJgb4s58gGAApump`
 - 18:58Z GTA6 (MIGRATED, $1,996,545 mcap, $3,920 5m vol): REJECT, Bundles: 7 linked wallet cluster(s) hold 100.0% of supply (>20%) (V17)  
   CA `4kjruqGHDsSqkMdFfCjV7Vb62HPFhtXyWc2t6JpQzDnz`
 - 18:56Z UHI (MIGRATED, $1,429,786 mcap, $4,408 5m vol): PASS at conviction 2, PASS: flow below pace, no breakout, 1.34x to first resistance, and the site says "Contract TBA." Meme of an Elon reply. Let it go. (V1, V6, V13)  
   CA `Bnw5JRPek5JvJhzUiB9yrs2cmzt4bLeFqSRzDzSppump`
-- 18:41Z Criminul (MIGRATED, $41,883 mcap, $136,717 5m vol): PASS at conviction 3, PASS. Criminul is 11 minutes old, down 24% in 5m after a 7.8x volume spike, one of 26 copies with two bigger same-ticker tokens, and no printed higher low. Blockers: too new, chasing spike, no higher low, split crowd. (V1, V3, V6)  
-  CA `5qYyTjP1Y2xfSUUayyEfXP5mxxBg1CEKcdPvmYEApump`
-- 18:38Z JIMMY (DIP, $751,938 mcap, $2,176 5m vol): REJECT, Dip with fading attention is a falling knife, not a dip (5m at 0.43x the hour's pace, under 0.6x)  
-  CA `38M2z4UCfZEkUHFzD48vhKQhFhNyRGto8pZbLjNipump`
-- 18:38Z WOOPY (MIGRATED, $191,554 mcap, $3,266 5m vol): PASS at conviction 2, PASS. Chasing a spike at the top of a dog meta that's fading, on $3k of 5m flow. Blocker: "chasing" (V1, V6).  
-  CA `2va3NUJtEcPemDYg2N1RgA79rPKGTGGJKo3gTY5zpump`
-- 18:36Z NORFEATH (MIGRATED, $260,730 mcap, $2,725 5m vol): PASS at conviction 2, PASS. Norfeather is a 75%-down bottom with 5m flow at 0.58x pace, $2.7k of 5m volume, a theme at 0.39x pace and 27 copies of the ticker. Nothing is printing. (DIP, V1, V6, V13)  
-  CA `3gmFG4sFDJErDV8pacFrL2uUPXeGJTYLjfRy4hFypump`
-- 18:34Z DIGS (MIGRATED, $250,519 mcap, $2,506 5m vol): REJECT, Bundles: 10 linked wallet cluster(s) hold 100.0% of supply (>20%) (V17)  
-  CA `9QT8K685Hrae4k11dhGXirdtpfAaimExtyfwt8cPpump`
-- 18:30Z JANTA (DIP, $153,003 mcap, $7,009 5m vol): REJECT, Dip with fading attention is a falling knife, not a dip (5m at 0.43x the hour's pace, under 0.6x)  
-  CA `9tERTsZZj19ZHAqg7URtfkfPdaCiVeR4JkuPVoHrpump`
-- 18:27Z KURO (MIGRATED, $101,406 mcap, $44,815 5m vol): PASS at conviction 2, PASS. Down 96.7% from a $3.07M peak in about 70 minutes, the theme at 0.4x pace, and 22 tickers on the same name. That's a collapse with a crowd leaving, not a dip (V1, V13).  
-  CA `AaY6XtQZYYaxQ4fV8R8acConnMsgjg9zrZs341HUpump`
 
 ## What its skips did next (last 48h)
 A skip "ran" if the coin reached the first target (1.5x) from the skip price before a 20% drop, "dumped" if the drop came first. Sampled every 10 min, followed 6h.
-- top 10 over 25%: blocked 45, ran 9, dumped 35, flat 0, open 1 (saving losses: keep it)
+- top 10 over 25%: blocked 46, ran 9, dumped 35, flat 0, open 2 (saving losses: keep it)
   - ran: MARS up to 2.06x  
     CA `816BuXnCFQqt6KXbBTcFgHWD29Ckpaqt8HMKSN4Vpump`
   - ran: 4CHAN up to 1.87x  
     CA `DVdWuNK8ncn79B6z8nCiwcNAiwyFcmBPfChgxJGTpump`
   - ran: SWARM up to 1.57x  
     CA `2Rw6rLRRZXQLNreForjeVvDjnpYUaW6rmMFXmRP9pump`
-- flow below pace: blocked 40, ran 4, dumped 29, flat 4, open 3 (saving losses: keep it)
+- flow below pace: blocked 40, ran 4, dumped 30, flat 4, open 2 (saving losses: keep it)
   - ran: BOOBS up to 1.51x  
     CA `E35iEA2yLLHc1tjm6et1Z3YuH8DhxJYWtWezPHgSpump`
   - ran: BASKET up to 1.55x  
     CA `3Tg6YnNrfPdFfsY14MaNsDMWLseAyrUDS3myJtbaJN6f`
   - ran: BIAO up to 1.51x  
     CA `As3XtYSstuVdrVyb6sJZZ77Tu8JvjTBg6S6hgPv4pump`
-- near the high / chasing: blocked 36, ran 5, dumped 26, flat 2, open 3 (saving losses: keep it)
+- near the high / chasing: blocked 37, ran 5, dumped 27, flat 2, open 3 (saving losses: keep it)
   - ran: SNOWCUMBRR up to 2.36x  
     CA `Gf9wm93TTDpbPC467Eio5Vc42Kr6MAomUD172drWpump`
   - ran: HEYOS up to 1.91x  
     CA `A88p1LcHisrx3TuTwUGVrLtc1LBTUPZUfVgaCGutAFaK`
   - ran: Nala up to 1.64x  
     CA `FeBG8AEG4j7LT7xQF38gPXQFBRBtXBTNzhZjSa3bpump`
-- too new / sniping: blocked 35, ran 8, dumped 26, flat 0, open 1 (saving losses: keep it)
+- too new / sniping: blocked 36, ran 8, dumped 27, flat 0, open 1 (saving losses: keep it)
   - ran: BABYANSEM up to 2.77x  
     CA `F3VctV9FqDgiyqaztN6z78bgWy27eH7DBBHW1vjpump`
   - ran: Merged up to 2.18x  
@@ -134,39 +134,35 @@ A skip "ran" if the coin reached the first target (1.5x) from the skip price bef
     CA `9TKbd3VFaMSXsEAicD9JVQWpWwAoLi4fSgWmZL2cpump`
   - ran: Bababoi up to 2.17x  
     CA `28B9kDm6XtQNqAkzuiKH3Zu1L8cVM6SLW4iRamFspump`
-- brain paced: blocked 20, ran 5, dumped 15, flat 0, open 0 (saving losses: keep it)
-  - ran: SANTIA up to 1.76x  
-    CA `2YKce3apGESoWhqt4N7MGg5t4UEKgPPL4ArheEvPpump`
-  - ran: Slingoor up to 1.73x  
-    CA `6GLetugFEmy7P7SmLtg3zyZdz6rWCQ8gHPbPYZs9pump`
-  - ran: FREEDOM up to 4.48x  
-    CA `FDNc812jkHdhkdeRNaLMVwyihHMLR6ztTmRfxG7opump`
-- bundles over the line: blocked 19, ran 3, dumped 12, flat 2, open 2 (saving losses: keep it)
+- bundles over the line: blocked 19, ran 3, dumped 12, flat 1, open 3 (saving losses: keep it)
   - ran: jingyu up to 1.58x  
     CA `DUZrwdjEthcJ99ZiRXr31UuqTohoTg7VjTEyfGdBpump`
   - ran: DUMBMONEY up to 1.74x  
     CA `GEHehS5Rr4rNCjvrHLjjV1avD4bjMsn53ywDGv1spump`
   - ran: WIENER up to 1.59x  
     CA `8BDkDfj3ZUvcG9caGzF2XnHfwg7K6fjfKKDvX6SCpump`
-- falling knife (code): blocked 19, ran 3, dumped 13, flat 1, open 2 (saving losses: keep it)
+- falling knife (code): blocked 18, ran 3, dumped 12, flat 1, open 2 (saving losses: keep it)
   - ran: Jimmies up to 1.53x  
     CA `GisWWjhwrSud4aFGSHvTMt85Ky14sY7LeBFCpfoFpump`
   - ran: Investor up to 1.58x  
     CA `J9eBkCb4UtquAMQqB6duwBmR99fFSMoTnDcaMB9Wpump`
   - ran: MONEY up to 1.58x  
     CA `DeACAbp2GMzapB6Z2K8qdkTZupmNbKc6EZx9bnbCpump`
-- dev share over 1%: blocked 13, ran 2, dumped 8, flat 2, open 1 (saving losses: keep it)
+- brain paced: blocked 16, ran 3, dumped 13, flat 0, open 0 (saving losses: keep it)
+  - ran: Slingoor up to 1.73x  
+    CA `6GLetugFEmy7P7SmLtg3zyZdz6rWCQ8gHPbPYZs9pump`
+  - ran: WISH up to 2.36x  
+    CA `7bQL4aLYyFXPLXXngC8xmxLx6keZVfyfQcP3diU1pump`
+  - ran: BOUNCER up to 1.52x  
+    CA `ANDLpP3C7tFXEpqRBmmnbS4usmQthHfs93N5oHGpump`
+- dev share over 1%: blocked 13, ran 2, dumped 9, flat 2, open 0 (saving losses: keep it)
   - ran: Grinch up to 1.94x  
     CA `J1b5HnRzmXsYK5akPTFtBR7B4E74JG8eyULodd7ypump`
   - ran: bolphante up to 1.7x  
     CA `FVBzzG4ZcAgxSLW1rWjNC9EH9CgEgz1A4puNYexMpump`
-- falling knife / no higher low: blocked 12, ran 3, dumped 5, flat 3, open 1 (mixed)
-  - ran: Jimmies up to 1.53x  
-    CA `GisWWjhwrSud4aFGSHvTMt85Ky14sY7LeBFCpfoFpump`
-  - ran: Zero up to 2.07x  
-    CA `DTSkmo3sCCKLCh91dJLiWCpwcKtK3yDBZMqZGSV1pump`
-  - ran: Maru up to 1.88x  
-    CA `FokVFH6mDsazoKbtnUaA2FRMsRbDSwZhNfn17Fdvpump`
+- other: blocked 13, ran 1, dumped 11, flat 0, open 1 (saving losses: keep it)
+  - ran: SXI up to 2.34x  
+    CA `BFWNbSwRodXPTQqrMSCfhznhJwEzY6ERd6MHjWUEpump`
 
 ## Daily review (2026-11-26, claude-opus-5-5)
 No edge yet. All 276 settled coins lost money after costs under the simple plan: -6.4% average net. Every setup was negative: FINAL_STRETCH -3.6% (n=45), MIGRATED -5.1% (n=193), DIP -16.1% (n=38). Before costs the simple plan made roughly +3% overall and about +6% on FINAL_STRETCH. The ~9.7% round-trip cost on a $10 buy wipes that out, which is the same thing the 22 real trades showed: $18.83 of the $25.79 loss was fees and slippage. The sample is far too small to trust a 3–6% gross edge. Payoffs swing from +50% to -20%, so the error bar on 45 FINAL_STRETCH coins is about ±9 points. Repeat logs of the same coin also make the overall n look bigger than it is. Only the negative after-cost result is solid. The brain logged zero would-buys, so nobody can say yet whether it picks better than it passes. That missing data is the main thing to fix before Nov 10.
@@ -207,13 +203,13 @@ No edge yet. All 276 settled coins lost money after costs under the simple plan:
 The meta is fresh pump.fun launches under 3h old with real buying: PEDALFIN ($51k cap, $87k 5m, 53% buys), Criminul ($45k cap, $32k 5m, 57% buys) and PICKLES ($26k cap, $10k 5m, 57% buys, +1080% in 1h) are rising, while the dog/animal jokes are fading (KURO -97% in 1h, Kuro -81%) and the stock-parody cluster is dead (MSTR -99%, $1.4k cap, no 5m flow). JANTA ($145k cap, 78% buys, $8.5k 5m, +60%) is the only Santa-named mover, so a holiday theme may be starting early, but it is one coin, not a confirmed meta. Setups to research, not buy: PEDALFIN and Criminul clear the $10k 5m bar but are about 6 minutes old, so bundle and chart-start checks decide everything before any entry (V3, V13); JANTA only if 5m holds above $10k with buyers still in. Not setups: bolphante's $3.6k 5m is under the $10k floor (V1, V6), and the crawler's XSEmu, PVE, SCENARIO, TRUMP and MEMESTOCK/DUO/X figures do not appear in the raw scan, so I'm treating them as unverified; the Trump-dinner and Ansem headlines are news, not flow, and nothing on the list is hack-named.
 
 ## Moving most in its scans, last 30 min (1h volume)
-- PEDALFIN: $260,329 1h vol, $1,831 mcap, -94% 1h  
-  CA `CD3AHwDcZziU85JpxxMLW2xhXHJUgDyjUxJVjmUZpump`
-- Criminul: $213,931 1h vol, $44,056 mcap, +3% 1h  
-  CA `5qYyTjP1Y2xfSUUayyEfXP5mxxBg1CEKcdPvmYEApump`
 - BASS: $209,068 1h vol, $52,505 mcap, +79% 1h  
   CA `4U1ZcA8a8p5BKW8e4FsQnvd9TjvnWJgb4s58gGAApump`
+- PEDALFIN: $200,801 1h vol, $2,007 mcap, -94% 1h  
+  CA `CD3AHwDcZziU85JpxxMLW2xhXHJUgDyjUxJVjmUZpump`
 - Kuro: $98,635 1h vol, $1,517 mcap, -99% 1h  
   CA `AuVQxjSZt937unfV6ScNca1ZwwqZtjNSq3LfQtv4pump`
-- ZBRA: $89,247 1h vol, $40,769 mcap, +1060% 1h  
+- JANTA: $93,588 1h vol, $124,234 mcap, -3% 1h  
+  CA `9tERTsZZj19ZHAqg7URtfkfPdaCiVeR4JkuPVoHrpump`
+- ZBRA: $90,209 1h vol, $63,312 mcap, +41% 1h  
   CA `DrBCGJscM3ziBRd2CDt5dV9W1rCVAimVZ78BxrN8pump`
