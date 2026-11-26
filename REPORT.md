@@ -1,13 +1,13 @@
 # Trencher live report
 
-Updated 2026-11-26T17:24:18Z (paper trading, never real money)
+Updated 2026-11-26T17:39:31Z (paper trading, never real money)
 
 - Equity: $74.23 (-25.8% vs $100 start)
 - Closed trades: 22, 3 wins
 - Fees paid: $14.78 (axiom $2.81, network $9.18, pool $2.66), plus $4.15 lost to slippage
 - New trades: WATCH-ONLY (scans and decides, buys nothing)
-- Brain: subscription, claude-haiku-5-5 for routine calls, claude-opus-5-5 for the daily review; 398 routine calls and 0 plan-limit hits in 48h
-- Watch log: 99 coins being followed, 3929 filed, 0 would-buys (6h follow, sampled every 2 min)
+- Brain: subscription, claude-haiku-5-5 for routine calls, claude-opus-5-5 for the daily review; 399 routine calls and 0 plan-limit hits in 48h
+- Watch log: 97 coins being followed, 3934 filed, 0 would-buys (6h follow, sampled every 2 min)
 
 ## Scorecard (after fees)
 - 22 closed, 3 won (14%), net $-25.79
@@ -73,9 +73,15 @@ Updated 2026-11-26T17:24:18Z (paper trading, never real money)
   CA `H4gHnZ3NCU7Z9XQwGX6YYJNyieGEW8pqwGRUcdSxpump`
 
 ## Last scan
-- 17:23Z: 4 coins, 4 with pairs, 0 passed the market filters, 0 researched
+- 17:38Z: 4 coins, 4 with pairs, 0 passed the market filters, 0 researched
 
 ## Coins it looked at, and why it passed
+- 17:30Z bolphante (MIGRATED, $32,213 mcap, $3,523 5m vol): REJECT, Dev holds 2.1% (>1%) (V13, V17)  
+  CA `FVBzzG4ZcAgxSLW1rWjNC9EH9CgEgz1A4puNYexMpump`
+- 17:28Z XSEmu (FINAL_STRETCH, $24,714 mcap, $5,790 5m vol): PASS at conviction 3, PASS. XSEmu is a copy in a 5-coin XSEMU field, not the leader, with no X account and 5m flow under $10k. Farm-shaped until proven otherwise (V1, V13).  
+  CA `8Xdo9sshdudeALCf2ebdm4FdfAYk5xZRxQp8VH7CT9QK`
+- 17:26Z UHI (MIGRATED, $1,489,965 mcap, $5,293 5m vol): PASS at conviction 3, PASS: flow below pace (0.81x hourly), and the first resistance is only 1.29x away. No catalyst, and the site doesn't show the CA. (V1, V3, V6)  
+  CA `Bnw5JRPek5JvJhzUiB9yrs2cmzt4bLeFqSRzDzSppump`
 - 17:20Z CBUCKS (MIGRATED, $5,822,721 mcap, $2,269 5m vol): REJECT, Top 10 hold 25.6% ex-pool (>25%) (V13)  
   CA `DtcicPCKTKeAh7TDEzTym3hXeoHAoMiBdYJhMYxZpump`
 - 17:14Z Kuro (MIGRATED, $63,160 mcap, $9,965 5m vol): REJECT, Bundles: 8 linked wallet cluster(s) hold 79.7% of supply (>20%) (V17)  
@@ -90,16 +96,10 @@ Updated 2026-11-26T17:24:18Z (paper trading, never real money)
   CA `9QT8K685Hrae4k11dhGXirdtpfAaimExtyfwt8cPpump`
 - 17:03Z Kuro (MIGRATED, $385,831 mcap, $76,860 5m vol): REJECT, Top 10 hold 48.2% ex-pool (>25%) (V13)  
   CA `7sxuap7Q4uoAJFBW3ensq6QTa2KwgGosfFwoeXtJpump`
-- 17:00Z Kuro (MIGRATED, $182,124 mcap, $64,826 5m vol): PASS at conviction 3, PASS. Kuro is 1.7% off its high, up 34% on the 5m, and a vamp of the bigger KURO leader. Chasing, split crowd, too new (Trencher)  
-  CA `8LbBWesEQ5myfamxhxHtZ295RbvDigqSj2iCYex5pump`
-- 16:56Z KURO (MIGRATED, $1,014,229 mcap, $209,346 5m vol): REJECT, Top 10 hold 25.5% ex-pool (>25%) (V13)  
-  CA `AaY6XtQZYYaxQ4fV8R8acConnMsgjg9zrZs341HUpump`
-- 16:52Z MSTR (MIGRATED, $310,611 mcap, $44,836 5m vol): REJECT, Top 10 hold 31.4% ex-pool (>25%) (V13)  
-  CA `57sCZ82FwS5Dfs7FN9nshtU5Mkb3w1dqhmPUuCPvpump`
 
 ## What its skips did next (last 48h)
 A skip "ran" if the coin reached the first target (1.5x) from the skip price before a 20% drop, "dumped" if the drop came first. Sampled every 10 min, followed 6h.
-- top 10 over 25%: blocked 49, ran 11, dumped 37, flat 0, open 1 (saving losses: keep it)
+- top 10 over 25%: blocked 47, ran 11, dumped 35, flat 0, open 1 (saving losses: keep it)
   - ran: SCF up to 2.01x  
     CA `Az7dYDicMc4G9hwnkeQYwHi6Fop1711C7hABcrWzpump`
   - ran: MARS up to 2.06x  
@@ -113,7 +113,7 @@ A skip "ran" if the coin reached the first target (1.5x) from the skip price bef
     CA `3Tg6YnNrfPdFfsY14MaNsDMWLseAyrUDS3myJtbaJN6f`
   - ran: BIAO up to 1.51x  
     CA `As3XtYSstuVdrVyb6sJZZ77Tu8JvjTBg6S6hgPv4pump`
-- too new / sniping: blocked 34, ran 8, dumped 25, flat 0, open 1 (saving losses: keep it)
+- too new / sniping: blocked 34, ran 8, dumped 26, flat 0, open 0 (saving losses: keep it)
   - ran: BABYANSEM up to 2.77x  
     CA `F3VctV9FqDgiyqaztN6z78bgWy27eH7DBBHW1vjpump`
   - ran: Merged up to 2.18x  
@@ -134,7 +134,7 @@ A skip "ran" if the coin reached the first target (1.5x) from the skip price bef
     CA `9TKbd3VFaMSXsEAicD9JVQWpWwAoLi4fSgWmZL2cpump`
   - ran: Bababoi up to 2.17x  
     CA `28B9kDm6XtQNqAkzuiKH3Zu1L8cVM6SLW4iRamFspump`
-- brain paced: blocked 21, ran 5, dumped 16, flat 0, open 0 (saving losses: keep it)
+- brain paced: blocked 20, ran 5, dumped 15, flat 0, open 0 (saving losses: keep it)
   - ran: SANTIA up to 1.76x  
     CA `2YKce3apGESoWhqt4N7MGg5t4UEKgPPL4ArheEvPpump`
   - ran: Slingoor up to 1.73x  
@@ -202,16 +202,16 @@ No edge yet. All 276 settled coins lost money after costs under the simple plan:
 - [2026-11-02 20:25] I expected Slingoor, a clean MIGRATED leader with $25k of 5m flow at pace and a 0.77 buy share, to retest its $408k high from $304k. It never went green (0.98x peak) and hit the -20% stop in 2 minutes, a -$2.86 probe. My own thesis admitted there was no printed higher low after a peak only 6 minutes old, so this confirms the money-shape rule: buy share and flow are not structure (V1, V6). Next time a MIGRATED pullback with no higher low above the hourly low is a PASS with blocker "no higher low", not a probe. This is one loss, so it adds no new ban beyond the rule I already have.
 
 ## Meta right now
-Meta right now is fresh pump.fun "meme stock/exchange" parody launches with real flow: MEMESTOCK ($444k cap, $74k 5m, 74% buys, minutes old), MEMEDAQ on pump.fun ($15.5k cap, $45k 5m, 61% buys), and DUO ($217k cap, $31k 5m, 73% buys, about 1h old), all up 400-1200% in the last hour. Rising: the stock/exchange joke cluster and fresh launches clearing the $10k 5m bar. Fading: the animal angle and the newest tail (CRAB -89%, Simyo -97%, Thankful -53% after its spike, and the pumpswap MDAQ at -93%, which looks like the older copy, so the right-token check comes first). Legacy memes like BRUH ($7.9M, $600 5m), FIONA and DIGS have almost no 5m flow, so they aren't in play, and the Trump and Ansem headlines don't appear in the movers at all. Setups to research, not buy: the pump.fun MEMEDAQ CA as the earliest, pre-bond, highest-risk option (confirm which MEMEDAQ is the original first), and DUO or MEMESTOCK only on a pullback that holds buyers, since both are up 6-12x in an hour. The crawler's UHI ($11.5k 5m, 94% buys) and Irochan claims don't match the raw scan (UHI shows $1k 5m and 0% buys), so I used the raw numbers and left both out. Paper only, not financial advice; holder, dev and bundle checks still run on each before any entry.
+Meta, read from the raw scan_movers numbers: fresh pump.fun launches (XSEmu, PVE, Kuro, bolphante, SCENARIO; $2.5k to $30k caps, under 3h old) are the rising theme, with mostly 46-58% buys and no bundle-style one-sided flow. Animal/pun jokes are mixed: bolphante holds 57% buys, while hodl cat is 14% buys and bleeding. The stock/exchange parody cluster (MEMESTOCK, DUO, X) is fading hard, down 97-98% in an hour with flow gone, and the crawler's MEMEDAQ, DUO and MEMESTOCK figures don't match the raw scan, so I'm treating them as unverified. TRUMP is the only mover above $10k 5m ($76k, 51% buys), but it is six minutes old and its 5m volume equals its 1h volume, so it's a spike, not a trend; it rides a politician's name, and I'd only block it if a politician pushed the CA, which I can't see. Setups to research, not buy: XSEmu ($24.7k cap, $5.8k 5m, 56% buys) only if 5m clears $10k with buyers holding, and bolphante ($30k cap, $2.9k 5m, steady) as a slower probe candidate; holder, dev and bundle checks still run on each before any entry.
 
 ## Moving most in its scans, last 30 min (1h volume)
-- KURO: $631,631 1h vol, $1,014,229 mcap, +834% 1h  
-  CA `AaY6XtQZYYaxQ4fV8R8acConnMsgjg9zrZs341HUpump`
-- X: $345,337 1h vol, $1,502 mcap, -94% 1h  
+- MSTR: $506,004 1h vol, $1,426 mcap, -96% 1h  
+  CA `57sCZ82FwS5Dfs7FN9nshtU5Mkb3w1dqhmPUuCPvpump`
+- X: $273,433 1h vol, $1,520 mcap, -97% 1h  
   CA `Bwfg2Df8Kf1oHxkRh5Nu1jXp9agxAEeLpPzwxdqApump`
-- Kuro: $316,128 1h vol, $182,124 mcap, +300% 1h  
-  CA `8LbBWesEQ5myfamxhxHtZ295RbvDigqSj2iCYex5pump`
-- MEMESTOCK: $200,231 1h vol, $1,291 mcap, -100% 1h  
-  CA `F39a5zLgy7DdiDA2YmWt6RgMnQ9mfukqxc4qLcippump`
-- Kuro: $141,292 1h vol, $19,375 mcap, +416% 1h  
-  CA `6rgKgGQE7frFitSnEiYxM4Y7RPFR7m35Ag4cLQxdgMf3`
+- UHI: $79,494 1h vol, $1,437,168 mcap, -23% 1h  
+  CA `Bnw5JRPek5JvJhzUiB9yrs2cmzt4bLeFqSRzDzSppump`
+- TRUMP: $76,134 1h vol, $55,522 mcap, +85% 1h  
+  CA `AtmZQTxVHZN7yk7a2yodSmQhXgFT4jTPYXd5FrmY5v2t`
+- Kuro: $73,584 1h vol, $63,160 mcap, +111% 1h  
+  CA `AuVQxjSZt937unfV6ScNca1ZwwqZtjNSq3LfQtv4pump`
