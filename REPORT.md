@@ -1,13 +1,13 @@
 # Trencher live report
 
-Updated 2026-11-26T16:23:50Z (paper trading, never real money)
+Updated 2026-11-26T16:38:54Z (paper trading, never real money)
 
 - Equity: $74.23 (-25.8% vs $100 start)
 - Closed trades: 22, 3 wins
 - Fees paid: $14.78 (axiom $2.81, network $9.18, pool $2.66), plus $4.15 lost to slippage
 - New trades: WATCH-ONLY (scans and decides, buys nothing)
-- Brain: subscription, claude-haiku-5-5 for routine calls, claude-opus-5-5 for the daily review; 404 routine calls and 0 plan-limit hits in 48h
-- Watch log: 92 coins being followed, 3918 filed, 0 would-buys (6h follow, sampled every 2 min)
+- Brain: subscription, claude-haiku-5-5 for routine calls, claude-opus-5-5 for the daily review; 402 routine calls and 0 plan-limit hits in 48h
+- Watch log: 94 coins being followed, 3920 filed, 0 would-buys (6h follow, sampled every 2 min)
 
 ## Scorecard (after fees)
 - 22 closed, 3 won (14%), net $-25.79
@@ -73,9 +73,17 @@ Updated 2026-11-26T16:23:50Z (paper trading, never real money)
   CA `H4gHnZ3NCU7Z9XQwGX6YYJNyieGEW8pqwGRUcdSxpump`
 
 ## Last scan
-- 16:22Z: 5 coins, 5 with pairs, 0 passed the market filters, 0 researched
+- 16:38Z: 7 coins, 7 with pairs, 0 passed the market filters, 0 researched
 
 ## Coins it looked at, and why it passed
+- 16:36Z X (MIGRATED, $67,725 mcap, $23,823 5m vol): REJECT, RugCheck danger: Creator history of rugged tokens  
+  CA `Bwfg2Df8Kf1oHxkRh5Nu1jXp9agxAEeLpPzwxdqApump`
+- 16:34Z FIONA (DIP, $1,539,385 mcap, $2,001 5m vol): REJECT, Dip with fading attention is a falling knife, not a dip (5m at 0.36x the hour's pace, under 0.6x)  
+  CA `B34nXKzCgsJb9ChLuSHPRpXLE3WFSWyeT8Cqkzzmpump`
+- 16:28Z MEMESTOCK (MIGRATED, $391,173 mcap, $65,327 5m vol): REJECT, Top 10 hold 47.1% ex-pool (>25%) (V13)  
+  CA `F39a5zLgy7DdiDA2YmWt6RgMnQ9mfukqxc4qLcippump`
+- 16:26Z MDAQ (FINAL_STRETCH, $15,513 mcap, $44,819 5m vol): PASS at conviction 2, PASS — 5 minutes old, up 667% on 5m, sitting in a 26-copy MDAQ vamp field with a CA mismatch on its own site. Blocker: chasing spike, too new. (V1, V6, V13)  
+  CA `mEmeLdZUDSmoZvoVo1RwfVLJzEYihvo3M57AUvKjQA7`
 - 16:20Z NORFEATH (DIP, $419,005 mcap, $3,656 5m vol): REJECT, Dip with fading attention is a falling knife, not a dip (5m at 0.22x the hour's pace, under 0.6x)  
   CA `3gmFG4sFDJErDV8pacFrL2uUPXeGJTYLjfRy4hFypump`
 - 16:18Z DIGS (MIGRATED, $238,621 mcap, $2,246 5m vol): REJECT, Bundles: 10 linked wallet cluster(s) hold 100.0% of supply (>20%) (V17)  
@@ -88,18 +96,10 @@ Updated 2026-11-26T16:23:50Z (paper trading, never real money)
   CA `38M2z4UCfZEkUHFzD48vhKQhFhNyRGto8pZbLjNipump`
 - 15:58Z TURKEY (MIGRATED, $673,986 mcap, $292,452 5m vol): REJECT, RugCheck danger: Creator history of rugged tokens  
   CA `CZt7wX37NiJQnDvwdd6JsrDLeX1XDDe7JBZEX296pump`
-- 15:54Z UHI (MIGRATED, $1,638,444 mcap, $4,243 5m vol): PASS at conviction 2, PASS — 8.7% off the high is inside the 10% chase line, 5m flow is $4.2k at 0.59x pace, the site says "CA TBA", and it's one of 20 copies. Blocker: chasing / flow below pace / no catalyst. (V1, V3, V6, V13)  
-  CA `Bnw5JRPek5JvJhzUiB9yrs2cmzt4bLeFqSRzDzSppump`
-- 15:45Z Simyo (MIGRATED, $60,826 mcap, $26,704 5m vol): REJECT, Bundles: 10 linked wallet cluster(s) hold 100.0% of supply (>20%) (V17)  
-  CA `HnbAKrRF9SM4QNb5o7nGJNcpjdkTyCR2M6pWgjiqpump`
-- 15:43Z MDAQ (DIP, $95,552 mcap, $21,240 5m vol): REJECT, Dip with fading attention is a falling knife, not a dip (5m at 0.32x the hour's pace, under 0.6x)  
-  CA `8XefdyFEBBLwvEWpGZqLmBDR9TmDeon1aLy16x2ipump`
-- 15:43Z Thankful (FINAL_STRETCH, $24,215 mcap, $24,978 5m vol): REJECT, Top 10 hold 30.6% ex-pool (>25%) (V13)  
-  CA `E9arxG4RxB7Gxt6U75obonTZzx7vpbc4bUi1dfw3BtUN`
 
 ## What its skips did next (last 48h)
 A skip "ran" if the coin reached the first target (1.5x) from the skip price before a 20% drop, "dumped" if the drop came first. Sampled every 10 min, followed 6h.
-- top 10 over 25%: blocked 45, ran 8, dumped 36, flat 1, open 0 (saving losses: keep it)
+- top 10 over 25%: blocked 46, ran 8, dumped 37, flat 1, open 0 (saving losses: keep it)
   - ran: SCF up to 2.01x  
     CA `Az7dYDicMc4G9hwnkeQYwHi6Fop1711C7hABcrWzpump`
   - ran: MARS up to 2.06x  
@@ -113,21 +113,21 @@ A skip "ran" if the coin reached the first target (1.5x) from the skip price bef
     CA `3Tg6YnNrfPdFfsY14MaNsDMWLseAyrUDS3myJtbaJN6f`
   - ran: BIAO up to 1.51x  
     CA `As3XtYSstuVdrVyb6sJZZ77Tu8JvjTBg6S6hgPv4pump`
-- near the high / chasing: blocked 32, ran 5, dumped 23, flat 2, open 2 (saving losses: keep it)
+- near the high / chasing: blocked 32, ran 5, dumped 25, flat 2, open 0 (saving losses: keep it)
   - ran: SNOWCUMBRR up to 2.36x  
     CA `Gf9wm93TTDpbPC467Eio5Vc42Kr6MAomUD172drWpump`
   - ran: HEYOS up to 1.91x  
     CA `A88p1LcHisrx3TuTwUGVrLtc1LBTUPZUfVgaCGutAFaK`
   - ran: Nala up to 1.64x  
     CA `FeBG8AEG4j7LT7xQF38gPXQFBRBtXBTNzhZjSa3bpump`
-- too new / sniping: blocked 30, ran 8, dumped 22, flat 0, open 0 (saving losses: keep it)
+- too new / sniping: blocked 31, ran 8, dumped 23, flat 0, open 0 (saving losses: keep it)
   - ran: BABYANSEM up to 2.77x  
     CA `F3VctV9FqDgiyqaztN6z78bgWy27eH7DBBHW1vjpump`
   - ran: Merged up to 2.18x  
     CA `AMYpNGi5aGrKr1ZDsotUdWh7k1mMi569ygtaHJmErGEd`
   - ran: Boor up to 1.56x  
     CA `GHFpSSw2ZMjmKCyc1wrHUjJiqnJeP18mekY9GL1Xpump`
-- RugCheck danger: blocked 27, ran 3, dumped 23, flat 1, open 0 (saving losses: keep it)
+- RugCheck danger: blocked 28, ran 3, dumped 23, flat 1, open 1 (saving losses: keep it)
   - ran: TROLL up to 1.94x  
     CA `7ykeHoEnjnGkY6tqteXn47fdGtd7kfXWghiyZ7YKpump`
   - ran: Snowball up to 3.52x  
@@ -141,14 +141,14 @@ A skip "ran" if the coin reached the first target (1.5x) from the skip price bef
     CA `2YKce3apGESoWhqt4N7MGg5t4UEKgPPL4ArheEvPpump`
   - ran: Slingoor up to 1.73x  
     CA `6GLetugFEmy7P7SmLtg3zyZdz6rWCQ8gHPbPYZs9pump`
-- falling knife (code): blocked 19, ran 3, dumped 14, flat 1, open 1 (saving losses: keep it)
+- falling knife (code): blocked 20, ran 3, dumped 14, flat 1, open 2 (saving losses: keep it)
   - ran: Jimmies up to 1.53x  
     CA `GisWWjhwrSud4aFGSHvTMt85Ky14sY7LeBFCpfoFpump`
   - ran: Investor up to 1.58x  
     CA `J9eBkCb4UtquAMQqB6duwBmR99fFSMoTnDcaMB9Wpump`
   - ran: MONEY up to 1.58x  
     CA `DeACAbp2GMzapB6Z2K8qdkTZupmNbKc6EZx9bnbCpump`
-- bundles over the line: blocked 18, ran 3, dumped 12, flat 1, open 2 (saving losses: keep it)
+- bundles over the line: blocked 17, ran 3, dumped 11, flat 1, open 2 (saving losses: keep it)
   - ran: jingyu up to 1.58x  
     CA `DUZrwdjEthcJ99ZiRXr31UuqTohoTg7VjTEyfGdBpump`
   - ran: DUMBMONEY up to 1.74x  
@@ -202,16 +202,16 @@ No edge yet. All 276 settled coins lost money after costs under the simple plan:
 - [2026-11-02 20:25] I expected Slingoor, a clean MIGRATED leader with $25k of 5m flow at pace and a 0.77 buy share, to retest its $408k high from $304k. It never went green (0.98x peak) and hit the -20% stop in 2 minutes, a -$2.86 probe. My own thesis admitted there was no printed higher low after a peak only 6 minutes old, so this confirms the money-shape rule: buy share and flow are not structure (V1, V6). Next time a MIGRATED pullback with no higher low above the hourly low is a PASS with blocker "no higher low", not a probe. This is one loss, so it adds no new ban beyond the rule I already have.
 
 ## Meta right now
-Meta is fresh pump.fun launches pumping hard on the 1h, but only two have real 5m flow. CRAB (+1025%), MONA (+888%), LOA (+502%) and DUO (+351%) are all under 1.5h old, yet DUO ($19k 5m, 67% buys) and UHI ($11.5k 5m, 94% buys, 16h old) are the only movers clearing the $10k bar with buyers in control. Old legacy memes are still trading: BRUH (~19 days, $9.2M cap, 66% buys) and UHI hold buy majorities, while the animal angle is fading (Fiona the Hippo -6% 1h on $4.4k 5m) and the Trump and Ansem headlines aren't in the movers at all. Fading: the newest dead tail (SHILL -94%, TURKE -89% with zero buys, pairless -76%, Weila -68%). Setups to research: DUO (chase risk after +351%), UHI (dip-buy only if buyers hold), and Irochan ($39k cap, $16.8k 5m, 56% buys, +14% 1h). The crawler summary doesn't match its own raw data (it says Irochan +101% and Fiona +897%; the scan shows +14% and -6%), so I used the raw numbers. Paper only, not financial advice; holder, dev and bundle checks still run on each before any entry.
+Meta right now is fresh pump.fun "meme stock/exchange" parody launches with real flow: MEMESTOCK ($444k cap, $74k 5m, 74% buys, minutes old), MEMEDAQ on pump.fun ($15.5k cap, $45k 5m, 61% buys), and DUO ($217k cap, $31k 5m, 73% buys, about 1h old), all up 400-1200% in the last hour. Rising: the stock/exchange joke cluster and fresh launches clearing the $10k 5m bar. Fading: the animal angle and the newest tail (CRAB -89%, Simyo -97%, Thankful -53% after its spike, and the pumpswap MDAQ at -93%, which looks like the older copy, so the right-token check comes first). Legacy memes like BRUH ($7.9M, $600 5m), FIONA and DIGS have almost no 5m flow, so they aren't in play, and the Trump and Ansem headlines don't appear in the movers at all. Setups to research, not buy: the pump.fun MEMEDAQ CA as the earliest, pre-bond, highest-risk option (confirm which MEMEDAQ is the original first), and DUO or MEMESTOCK only on a pullback that holds buyers, since both are up 6-12x in an hour. The crawler's UHI ($11.5k 5m, 94% buys) and Irochan claims don't match the raw scan (UHI shows $1k 5m and 0% buys), so I used the raw numbers and left both out. Paper only, not financial advice; holder, dev and bundle checks still run on each before any entry.
 
 ## Moving most in its scans, last 30 min (1h volume)
-- TURKEY: $503,083 1h vol, $673,986 mcap, +588% 1h  
-  CA `CZt7wX37NiJQnDvwdd6JsrDLeX1XDDe7JBZEX296pump`
 - DUO: $248,034 1h vol, $217,111 mcap, +673% 1h  
   CA `CC1uvrWkFdju8NuUrS7x3bKVzu5Cjy6Kt6nyB6Pbpump`
 - NORFEATH: $201,358 1h vol, $419,005 mcap, -22% 1h  
   CA `3gmFG4sFDJErDV8pacFrL2uUPXeGJTYLjfRy4hFypump`
-- BRUH: $118,920 1h vol, $7,766,069 mcap, -8% 1h  
-  CA `PgFtGGquvnv2zEkjG2N2QPvBTBrafuExGYEqahRpump`
-- UHI: $86,317 1h vol, $1,644,075 mcap, +0% 1h  
-  CA `Bnw5JRPek5JvJhzUiB9yrs2cmzt4bLeFqSRzDzSppump`
+- MDAQ: $185,483 1h vol, $9,323 mcap, -93% 1h  
+  CA `8XefdyFEBBLwvEWpGZqLmBDR9TmDeon1aLy16x2ipump`
+- Thankful: $166,310 1h vol, $13,267 mcap, -53% 1h  
+  CA `E9arxG4RxB7Gxt6U75obonTZzx7vpbc4bUi1dfw3BtUN`
+- Simyo: $125,128 1h vol, $1,537 mcap, -97% 1h  
+  CA `HnbAKrRF9SM4QNb5o7nGJNcpjdkTyCR2M6pWgjiqpump`
