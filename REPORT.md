@@ -1,13 +1,13 @@
 # Trencher live report
 
-Updated 2026-11-26T13:37:09Z (paper trading, never real money)
+Updated 2026-11-26T13:52:23Z (paper trading, never real money)
 
 - Equity: $74.23 (-25.8% vs $100 start)
 - Closed trades: 22, 3 wins
 - Fees paid: $14.78 (axiom $2.81, network $9.18, pool $2.66), plus $4.15 lost to slippage
 - New trades: WATCH-ONLY (scans and decides, buys nothing)
 - Brain: subscription, claude-haiku-5-5 for routine calls, claude-opus-5-5 for the daily review; 411 routine calls and 0 plan-limit hits in 48h
-- Watch log: 86 coins being followed, 3878 filed, 0 would-buys (6h follow, sampled every 2 min)
+- Watch log: 88 coins being followed, 3881 filed, 0 would-buys (6h follow, sampled every 2 min)
 
 ## Scorecard (after fees)
 - 22 closed, 3 won (14%), net $-25.79
@@ -73,9 +73,19 @@ Updated 2026-11-26T13:37:09Z (paper trading, never real money)
   CA `H4gHnZ3NCU7Z9XQwGX6YYJNyieGEW8pqwGRUcdSxpump`
 
 ## Last scan
-- 13:36Z: 3 coins, 3 with pairs, 0 passed the market filters, 0 researched
+- 13:51Z: 1 coins, 1 with pairs, 0 passed the market filters, 0 researched
 
 ## Coins it looked at, and why it passed
+- 13:48Z Grodia (MIGRATED, $141,595 mcap, $5,005 5m vol): PASS at conviction 2, PASS. Down 94.6% from a $2.64M peak with a 0.6x theme pace, and the site doesn't show this CA. Blocker: "dead story" plus "bottom buy gate". (V1, V3, V6, V13)  
+  CA `6HS1aeSk7osT5B1CzLp1HTRTAweFr5wurfMHS4vppump`
+- 13:45Z FIONA (DIP, $1,950,977 mcap, $5,361 5m vol): REJECT, Bundles: 10 linked wallet cluster(s) hold 30.2% of supply (>20%) (V17)  
+  CA `B34nXKzCgsJb9ChLuSHPRpXLE3WFSWyeT8Cqkzzmpump`
+- 13:44Z Legatum (FINAL_STRETCH, $21,357 mcap, $5,161 5m vol): REJECT, Top 10 hold 29.1% ex-pool (>25%) (V13)  
+  CA `HkPSDYRcw4uqgRzZMDd5sRnMpE4ungR1K8MRNXnBVtQ2`
+- 13:38Z UHI (MIGRATED, $1,587,203 mcap, $5,212 5m vol): PASS at conviction 3, PASS — flow below pace (0.8x hourly), $5.2k 5m under the $10k bar, no printed higher low, and the site shows "Contract TBA" instead of this CA. Vamp field of 20. (V1, V6, V13)  
+  CA `Bnw5JRPek5JvJhzUiB9yrs2cmzt4bLeFqSRzDzSppump`
+- 13:37Z hep (MIGRATED, $39,605 mcap, $23,834 5m vol): PASS at conviction 4, PASS: 6-minute-old "hep" copy in a 15-coin ticker field, up 18.6% on 5m at 8.5x hourly pace. Chasing a spike with no higher low and no story (V1, V6, V13).  
+  CA `6hnhTWJUYeePGkme2ztvxoFvQopnDeWJep945RpJpump`
 - 13:28Z PAIR (no setup, $27,809 mcap, $24,952 5m vol): REJECT, No setup fits: not Final Stretch, not a migrated runner, not a healthy dip  
   CA `32rBxcFjCFnyqZ41CEPM5AL67X1dcw8w83vZt6Kxpump`
 - 13:28Z PUMPCHAN (MIGRATED, $8,948,504 mcap, $22,927 5m vol): PASS at conviction 2, PASS: $PUMPCHAN is 1.19x from its $10.66M peak, 5m flow is 0.41x its hourly pace, and the site is 0.6 days old. Multiple blockers, not one. (V1, V6, V3)  
@@ -86,27 +96,17 @@ Updated 2026-11-26T13:37:09Z (paper trading, never real money)
   CA `3gmFG4sFDJErDV8pacFrL2uUPXeGJTYLjfRy4hFypump`
 - 13:18Z FIONA (FINAL_STRETCH, $22,475 mcap, $14,263 5m vol): PASS at conviction 3, PASS: chasing spike. FIONA is +56% on 5m and +897% on 1h, twelve minutes old, inside a 15-copy baby-hippo field with a 4.5% bundle cluster. Blockers: "chasing spike" and "split crowd" (V1, V3, V6).  
   CA `773REsVP9j51ayEQGxCRddPYJup3Xto6vwD6QB16pump`
-- 13:16Z DIGS (MIGRATED, $234,540 mcap, $3,053 5m vol): REJECT, Bundles: 10 linked wallet cluster(s) hold 100.0% of supply (>20%) (V17)  
-  CA `9QT8K685Hrae4k11dhGXirdtpfAaimExtyfwt8cPpump`
-- 13:15Z CCATS (FINAL_STRETCH, $22,464 mcap, $10,755 5m vol): PASS at conviction 2, PASS: chasing spike. Up 48% on 5m at 3.2x hourly pace, and the site sells a copy-trade farm (V4, V9, V13).  
-  CA `ErrhWENqx6GYDoz1naUZY1SMEhSzaqm39qb6PGJbpump`
-- 13:14Z Hey (MIGRATED, $63,529 mcap, $4,757 5m vol): REJECT, Dev holds 3.2% (>1%) (V13, V17)  
-  CA `F9CwhBgSsEJuCigbodtUH257EqQpRSzKLKwHPPKNpump`
-- 13:11Z DOMO (FINAL_STRETCH, $15,836 mcap, $17,161 5m vol): PASS at conviction 2, PASS: DOMO is 3 minutes old, up 605% on the candle at 12x its hourly pace, with no X, no site and no story. That's chasing a spike with nothing under it. Blocker: "chasing spike" (V1, V6).  
-  CA `AbWPbp81iJHvBTYyWx8wwpMmV8WTKEP24b1JKdBcpump`
-- 13:06Z Riku (MIGRATED, $51,179 mcap, $13,655 5m vol): REJECT, Bundles: 1 linked wallet cluster(s) hold 78.6% of supply (>20%) (V17)  
-  CA `5XcH7VycuDV9K8vWZVEnu85xj9XTk9mQh5tChmgipump`
 
 ## What its skips did next (last 48h)
 A skip "ran" if the coin reached the first target (1.5x) from the skip price before a 20% drop, "dumped" if the drop came first. Sampled every 10 min, followed 6h.
-- top 10 over 25%: blocked 43, ran 6, dumped 36, flat 0, open 1 (saving losses: keep it)
+- top 10 over 25%: blocked 44, ran 6, dumped 36, flat 0, open 2 (saving losses: keep it)
   - ran: SCF up to 2.01x  
     CA `Az7dYDicMc4G9hwnkeQYwHi6Fop1711C7hABcrWzpump`
   - ran: MARS up to 2.06x  
     CA `816BuXnCFQqt6KXbBTcFgHWD29Ckpaqt8HMKSN4Vpump`
   - ran: 4CHAN up to 1.87x  
     CA `DVdWuNK8ncn79B6z8nCiwcNAiwyFcmBPfChgxJGTpump`
-- flow below pace: blocked 36, ran 3, dumped 28, flat 3, open 2 (saving losses: keep it)
+- flow below pace: blocked 35, ran 3, dumped 27, flat 3, open 2 (saving losses: keep it)
   - ran: BOOBS up to 1.51x  
     CA `E35iEA2yLLHc1tjm6et1Z3YuH8DhxJYWtWezPHgSpump`
   - ran: BASKET up to 1.55x  
@@ -148,7 +148,7 @@ A skip "ran" if the coin reached the first target (1.5x) from the skip price bef
     CA `J9eBkCb4UtquAMQqB6duwBmR99fFSMoTnDcaMB9Wpump`
   - ran: MONEY up to 1.58x  
     CA `DeACAbp2GMzapB6Z2K8qdkTZupmNbKc6EZx9bnbCpump`
-- bundles over the line: blocked 17, ran 3, dumped 10, flat 2, open 2 (saving losses: keep it)
+- bundles over the line: blocked 17, ran 3, dumped 10, flat 1, open 3 (saving losses: keep it)
   - ran: jingyu up to 1.58x  
     CA `DUZrwdjEthcJ99ZiRXr31UuqTohoTg7VjTEyfGdBpump`
   - ran: DUMBMONEY up to 1.74x  
@@ -160,7 +160,7 @@ A skip "ran" if the coin reached the first target (1.5x) from the skip price bef
     CA `BFWNbSwRodXPTQqrMSCfhznhJwEzY6ERd6MHjWUEpump`
   - ran: PAIR up to 2.11x  
     CA `32rBxcFjCFnyqZ41CEPM5AL67X1dcw8w83vZt6Kxpump`
-- dev share over 1%: blocked 12, ran 1, dumped 8, flat 1, open 2 (saving losses: keep it)
+- dev share over 1%: blocked 12, ran 1, dumped 9, flat 1, open 1 (saving losses: keep it)
   - ran: Grinch up to 1.94x  
     CA `J1b5HnRzmXsYK5akPTFtBR7B4E74JG8eyULodd7ypump`
 
@@ -207,9 +207,9 @@ Meta from scan_movers: fresh pump.fun/PumpSwap launches under about an hour old,
   CA `Fo2HAwr7ZAUM2bSZ7MWSi16e3aWGpbw5MsUDYCttpump`
 - KOMARI: $494,609 1h vol, $341,483 mcap, +248% 1h  
   CA `7juwdhNyZ1YT5hRmF7kSGrxcpAGyFomi5mMbW8uEpump`
-- Pair: $274,798 1h vol, $21,139 mcap, -26% 1h  
+- Pair: $252,535 1h vol, $18,361 mcap, -52% 1h  
   CA `EWCfhnj8YjPEbvQXEtwkxMT54WhBpZBLQDFncRoypump`
-- NORFEATH: $215,331 1h vol, $410,240 mcap, -17% 1h  
-  CA `3gmFG4sFDJErDV8pacFrL2uUPXeGJTYLjfRy4hFypump`
-- Mikyan: $96,113 1h vol, $7,103 mcap, -77% 1h  
+- Mikyan: $93,101 1h vol, $4,040 mcap, -83% 1h  
   CA `FPQSvZxD65LorsJrVgMZhJqtyh1WRZ57NnwLCim5pump`
+- UHI: $78,355 1h vol, $1,587,203 mcap, -3% 1h  
+  CA `Bnw5JRPek5JvJhzUiB9yrs2cmzt4bLeFqSRzDzSppump`
