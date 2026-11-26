@@ -1,13 +1,13 @@
 # Trencher live report
 
-Updated 2026-11-26T23:43:36Z (paper trading, never real money)
+Updated 2026-11-26T23:58:41Z (paper trading, never real money)
 
 - Equity: $74.23 (-25.8% vs $100 start)
 - Closed trades: 22, 3 wins
 - Fees paid: $14.78 (axiom $2.81, network $9.18, pool $2.66), plus $4.15 lost to slippage
 - New trades: WATCH-ONLY (scans and decides, buys nothing)
-- Brain: subscription, claude-haiku-5-5 for routine calls, claude-opus-5-5 for the daily review; 364 routine calls and 0 plan-limit hits in 48h
-- Watch log: 74 coins being followed, 4032 filed, 0 would-buys (6h follow, sampled every 2 min)
+- Brain: subscription, claude-haiku-5-5 for routine calls, claude-opus-5-5 for the daily review; 361 routine calls and 0 plan-limit hits in 48h
+- Watch log: 71 coins being followed, 4037 filed, 0 would-buys (6h follow, sampled every 2 min)
 
 ## Scorecard (after fees)
 - 22 closed, 3 won (14%), net $-25.79
@@ -73,9 +73,13 @@ Updated 2026-11-26T23:43:36Z (paper trading, never real money)
   CA `H4gHnZ3NCU7Z9XQwGX6YYJNyieGEW8pqwGRUcdSxpump`
 
 ## Last scan
-- 23:43Z: 4 coins, 4 with pairs, 0 passed the market filters, 0 researched
+- 23:57Z: 2 coins, 2 with pairs, 0 passed the market filters, 0 researched
 
 ## Coins it looked at, and why it passed
+- 23:49Z POPBALL (MIGRATED, $171,017 mcap, $12,429 5m vol): REJECT, Top 10 hold 37.3% ex-pool (>25%) (V13)  
+  CA `CKiuTwHFMXKBaQ4V1WgsYctsdbLeit3wytXRkphzpump`
+- 23:44Z Vetocat (MIGRATED, $170,310 mcap, $41,871 5m vol): REJECT, Top 10 hold 41.3% ex-pool (>25%) (V13)  
+  CA `9J2cy3AfDquDDKqjteYaFSrYEvUAGnb1Qxw8pZQApump`
 - 23:36Z FLOW (MIGRATED, $37,439 mcap, $43,883 5m vol): PASS at conviction 3, PASS: FLOW is about 3 minutes old, bleeding off its bond spike, in a 22-copy "flow" field, and its site shows a different CA. Blocker: "too new" (V1, V3, V6).  
   CA `FxWDDcxosMaRnFRzzDQisFjN4a5Gip5ECs7MtsQYFLoW`
 - 23:21Z CINU (MIGRATED, $202,286 mcap, $4,555 5m vol): REJECT, Top 10 hold 25.7% ex-pool (>25%) (V13)  
@@ -92,21 +96,17 @@ Updated 2026-11-26T23:43:36Z (paper trading, never real money)
   CA `8NnchH8Y6Z4ieWcqDEqF2w9531xm2oE4YwZyA2ybpump`
 - 23:03Z CBUCKS (MIGRATED, $6,673,017 mcap, $11,707 5m vol): REJECT, Top 10 hold 25.6% ex-pool (>25%) (V13)  
   CA `DtcicPCKTKeAh7TDEzTym3hXeoHAoMiBdYJhMYxZpump`
-- 22:59Z MEME (MIGRATED, $52,562 mcap, $3,537 5m vol): REJECT, RugCheck danger: Large Amount of LP Unlocked 100.00%  
-  CA `Ak4BGyneYMfy2b7WrYaknsbSSz4x6jSeTTguEsgypump`
-- 22:55Z Joey (FINAL_STRETCH, $16,676 mcap, $19,437 5m vol): REJECT, Top 10 hold 31.0% ex-pool (>25%) (V13)  
-  CA `CgMFCJbKBNCA1nMz7ZPg3XpABfUHsaWfrdSdGGZKgPG5`
 
 ## What its skips did next (last 48h)
 A skip "ran" if the coin reached the first target (1.5x) from the skip price before a 20% drop, "dumped" if the drop came first. Sampled every 10 min, followed 6h.
-- top 10 over 25%: blocked 53, ran 9, dumped 40, flat 1, open 3 (saving losses: keep it)
+- top 10 over 25%: blocked 55, ran 9, dumped 41, flat 1, open 4 (saving losses: keep it)
   - ran: 4CHAN up to 1.87x  
     CA `DVdWuNK8ncn79B6z8nCiwcNAiwyFcmBPfChgxJGTpump`
   - ran: SWARM up to 1.57x  
     CA `2Rw6rLRRZXQLNreForjeVvDjnpYUaW6rmMFXmRP9pump`
   - ran: ð up to 1.65x  
     CA `GeUnGPLFku8zn1dJUNZpj6VymUxt7A3t9DqRL5WJpump`
-- flow below pace: blocked 41, ran 5, dumped 31, flat 4, open 1 (saving losses: keep it)
+- flow below pace: blocked 40, ran 5, dumped 31, flat 4, open 0 (saving losses: keep it)
   - ran: BOOBS up to 1.51x  
     CA `E35iEA2yLLHc1tjm6et1Z3YuH8DhxJYWtWezPHgSpump`
   - ran: BASKET up to 1.55x  
@@ -120,7 +120,7 @@ A skip "ran" if the coin reached the first target (1.5x) from the skip price bef
     CA `A88p1LcHisrx3TuTwUGVrLtc1LBTUPZUfVgaCGutAFaK`
   - ran: Nala up to 1.64x  
     CA `FeBG8AEG4j7LT7xQF38gPXQFBRBtXBTNzhZjSa3bpump`
-- too new / sniping: blocked 38, ran 8, dumped 29, flat 0, open 1 (saving losses: keep it)
+- too new / sniping: blocked 38, ran 8, dumped 30, flat 0, open 0 (saving losses: keep it)
   - ran: BABYANSEM up to 2.77x  
     CA `F3VctV9FqDgiyqaztN6z78bgWy27eH7DBBHW1vjpump`
   - ran: Merged up to 2.18x  
@@ -198,16 +198,16 @@ No edge yet. All 276 settled coins lost money after costs under the simple plan:
 - [2026-11-02 20:25] I expected Slingoor, a clean MIGRATED leader with $25k of 5m flow at pace and a 0.77 buy share, to retest its $408k high from $304k. It never went green (0.98x peak) and hit the -20% stop in 2 minutes, a -$2.86 probe. My own thesis admitted there was no printed higher low after a peak only 6 minutes old, so this confirms the money-shape rule: buy share and flow are not structure (V1, V6). Next time a MIGRATED pullback with no higher low above the hourly low is a PASS with blocker "no higher low", not a probe. This is one loss, so it adds no new ban beyond the rule I already have.
 
 ## Meta right now
-The trenches are trading fresh plain-word launches, and the only sized flow is HOLD, Hoppy, Joey and COIN, all under 6 hours old with 53-67% buys. Rising but thin: generic names (COIN, MM, PB, Joey), and COIN's $75k of 5m volume on a $19k cap is churn until proven otherwise (V13, V6). Fading: Elon-named copies (Elonmas down 97% with zero 5m volume) and older character names (JIMMY, BRUH, CBUCKS, ROCKET) with dead 5m flow, so the old-meme story is done. The privacy theme and the Trump dinner/Ansem headlines don't show up in these movers. Cateball, Goon and PI are in the crawler summary but not in scan_movers, so I can't confirm them. Setups to research, not buy: HOLD as a MIGRATED candidate ($45k cap, $37k 5m, under 12h, but only 53% buys); Joey near $19.5k cap with $8.9k 5m, a FINAL_STRETCH candidate that needs about $10k 5m; and Hoppy only on a pullback that holds volume and buyers, since it's up 145% in an hour (V1, V6).
+The trenches right now are plain one-word launches with real flow: COIN ($61k cap, $24k 5m, 62% buys, 24 min old) and FLOW ($37k cap, $44k 5m, 56% buys, 6 min old, so all its volume is in the last five minutes and bundle checks come first). The second theme is cat jokes: Cate Inu (CINU) is up 341% in an hour to $202k, but only $4.5k on the 5m, so that's a pump without organic flow yet (V6). Fading are the old character and animal names (Joey The Otter, BEANIE, PB, Cateball, WATERBALL) and NETWORK at 33 days old, all with zero or near-zero 5m volume, plus HOLD at -71% in the hour with 50% buys; the Elon-named copies are also dead in these movers. The Trump dinner, Ansem and privacy headlines don't appear in the movers, so the news isn't what's driving this. Setups to research, not buy: COIN and FLOW as MIGRATED candidates, since both clear the $30k cap, $10k 5m and under-12h checks, with CINU only if its 5m climbs past $10k while buyers hold; HOLD and the Joey coins fail on flow. Hoppy and the crawler's Joey setup (FeccRb... at $14.9k with $635 5m) aren't confirmed by scan_movers, and the scan doesn't match the crawler on Joey, so I'm treating the crawler's claims as unverified.
 
 ## Moving most in its scans, last 30 min (1h volume)
-- COIN: $299,099 1h vol, $60,887 mcap, +96% 1h  
-  CA `8n7mSQ8KUqP17AQii1bmWR1wdRhtKe5fDW7yiuLqpump`
-- HOLD: $265,390 1h vol, $33,481 mcap, -71% 1h  
-  CA `BuNeErf9FjL6dgzE74S21Qm9EeBaYMJXSW4A8ihxpump`
-- Cateball: $179,729 1h vol, $1,338 mcap, -100% 1h  
+- Vetocat: $127,596 1h vol, $173,927 mcap, +435% 1h  
+  CA `9J2cy3AfDquDDKqjteYaFSrYEvUAGnb1Qxw8pZQApump`
+- Cateball: $127,510 1h vol, $1,339 mcap, -100% 1h  
   CA `Bb38n8AVLMh9amo8qtjLvqE8nPtfs8GEsyzg1pC6pump`
-- Joey: $88,367 1h vol, $2,230 mcap, -77% 1h  
-  CA `CgMFCJbKBNCA1nMz7ZPg3XpABfUHsaWfrdSdGGZKgPG5`
+- POPBALL: $87,952 1h vol, $171,017 mcap, +387% 1h  
+  CA `CKiuTwHFMXKBaQ4V1WgsYctsdbLeit3wytXRkphzpump`
+- JIMMY: $45,044 1h vol, $558,565 mcap, +30% 1h  
+  CA `38M2z4UCfZEkUHFzD48vhKQhFhNyRGto8pZbLjNipump`
 - FLOW: $43,883 1h vol, $37,439 mcap, +12% 1h  
   CA `FxWDDcxosMaRnFRzzDQisFjN4a5Gip5ECs7MtsQYFLoW`
