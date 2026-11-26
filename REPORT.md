@@ -1,13 +1,13 @@
 # Trencher live report
 
-Updated 2026-11-26T07:03:52Z (paper trading, never real money)
+Updated 2026-11-26T07:18:56Z (paper trading, never real money)
 
 - Equity: $74.23 (-25.8% vs $100 start)
 - Closed trades: 22, 3 wins
 - Fees paid: $14.78 (axiom $2.81, network $9.18, pool $2.66), plus $4.15 lost to slippage
 - New trades: WATCH-ONLY (scans and decides, buys nothing)
-- Brain: subscription, claude-haiku-5-5 for routine calls, claude-opus-5-5 for the daily review; 407 routine calls and 0 plan-limit hits in 48h
-- Watch log: 99 coins being followed, 3770 filed, 0 would-buys (6h follow, sampled every 2 min)
+- Brain: subscription, claude-haiku-5-5 for routine calls, claude-opus-5-5 for the daily review; 406 routine calls and 0 plan-limit hits in 48h
+- Watch log: 97 coins being followed, 3777 filed, 0 would-buys (6h follow, sampled every 2 min)
 
 ## Scorecard (after fees)
 - 22 closed, 3 won (14%), net $-25.79
@@ -73,9 +73,19 @@ Updated 2026-11-26T07:03:52Z (paper trading, never real money)
   CA `H4gHnZ3NCU7Z9XQwGX6YYJNyieGEW8pqwGRUcdSxpump`
 
 ## Last scan
-- 07:03Z: 5 coins, 4 with pairs, 0 passed the market filters, 0 researched
+- 07:18Z: 7 coins, 6 with pairs, 0 passed the market filters, 0 researched
 
 ## Coins it looked at, and why it passed
+- 07:15Z UHI (MIGRATED, $1,173,982 mcap, $2,171 5m vol): PASS at conviction 3, PASS: chasing at 7.5% off a $1.27M high, 5m flow at $2.2k is under the $10k bar and the theme runs at 0.76x pace, and the project's own site still says "CA TBA" on a 0.4-day-old domain. Blocker: "chasing". (V1, V3, V13)  
+  CA `Bnw5JRPek5JvJhzUiB9yrs2cmzt4bLeFqSRzDzSppump`
+- 07:15Z NORFEATH (DIP, $432,184 mcap, $4,712 5m vol): PASS at conviction 3, PASS — NORFEATH is a 10h-old DIP with no story behind it: zero X mentions, not on the radar, and 6 copies of the ticker. Blocker: "dead story" (no rising narrative, no catalyst). (V1, V13)  
+  CA `3gmFG4sFDJErDV8pacFrL2uUPXeGJTYLjfRy4hFypump`
+- 07:12Z DIGS (MIGRATED, $250,704 mcap, $2,412 5m vol): REJECT, Bundles: 10 linked wallet cluster(s) hold 100.0% of supply (>20%) (V17)  
+  CA `9QT8K685Hrae4k11dhGXirdtpfAaimExtyfwt8cPpump`
+- 07:11Z Caiolo (MIGRATED, $35,813 mcap, $4,005 5m vol): REJECT, Top 10 hold 27.8% ex-pool (>25%) (V13)  
+  CA `31GfcV6vxUeUPx4CkrZkXd8WcCAodhyNes3CKHrppump`
+- 07:09Z SI (FINAL_STRETCH, $22,031 mcap, $28,150 5m vol): PASS at conviction 3, PASS — chasing spike: 5m up 138%, 1h up 884%, and it's 18 minutes old in a 13-copy Santa field with a 5.7% bundle cluster. Not a pullback, not a higher low. Blocker: "chasing spike" (V1, V6, V13).  
+  CA `8sKGQVyg653njPq21kQBzcsfLwbm6bQceQfpzAcWpump`
 - 07:02Z WIFMAS (FINAL_STRETCH, $17,526 mcap, $35,231 5m vol): PASS at conviction 3, PASS: brand-new pump.fun pair, 6 minutes old, spiking 12x its hourly pace with no higher low and no radar mention. Blocker "too new" plus "chasing spike". Not a sniper. (V1, V6)  
   CA `AbA72wDKTJivXbjv5SrNtGWBLtV1RX28TeYSa1WXpump`
 - 06:57Z Grodia (DIP, $807,377 mcap, $5,966 5m vol): PASS at conviction 3, PASS: Grodia is a DIP with no story. Zero mentions, no catalyst, a 9-copy ticker field, and a site that doesn't show this CA. Blocker: "dead story" (V1, V6, V13).  
@@ -86,20 +96,10 @@ Updated 2026-11-26T07:03:52Z (paper trading, never real money)
   CA `6B5X3keXJ4J8LLvswa2mbqMhrRDbt85Jo88sbB6apump`
 - 06:43Z Fug (FINAL_STRETCH, $14,738 mcap, $3,334 5m vol): PASS at conviction 3, PASS: 29 copies of "fug", 5m flow at $3.3k under the $10k bar, and the coin already up 556% in an hour. Blocker: flow below the good-volume bar in a vamp field. (V1, V3, V6)  
   CA `3QVBSB2kuJiQ75Po8qq4eV7msNFo7jMn22wfKuCTpump`
-- 06:36Z PUMPCHAN (MIGRATED, $1,316,717 mcap, $5,340 5m vol): REJECT, Top 10 hold 37.7% ex-pool (>25%) (V13)  
-  CA `Fo2HAwr7ZAUM2bSZ7MWSi16e3aWGpbw5MsUDYCttpump`
-- 06:29Z NORFEATH (DIP, $454,580 mcap, $2,809 5m vol): REJECT, Dip with fading attention is a falling knife, not a dip (5m at 0.54x the hour's pace, under 0.6x)  
-  CA `3gmFG4sFDJErDV8pacFrL2uUPXeGJTYLjfRy4hFypump`
-- 06:26Z DIGS (MIGRATED, $262,891 mcap, $2,497 5m vol): REJECT, Bundles: 10 linked wallet cluster(s) hold 100.0% of supply (>20%) (V17)  
-  CA `9QT8K685Hrae4k11dhGXirdtpfAaimExtyfwt8cPpump`
-- 06:22Z Elonmas (DIP, $70,101 mcap, $17,537 5m vol): REJECT, Dip with fading attention is a falling knife, not a dip (5m at 0.58x the hour's pace, under 0.6x)  
-  CA `DMXm1gSmAZn1RV4fGXGG8Y1cXfKWXMDYaiKF4B6Cpump`
-- 06:17Z FIONA (DIP, $1,968,669 mcap, $3,036 5m vol): REJECT, Bundles: 10 linked wallet cluster(s) hold 30.2% of supply (>20%) (V17)  
-  CA `B34nXKzCgsJb9ChLuSHPRpXLE3WFSWyeT8Cqkzzmpump`
 
 ## What its skips did next (last 48h)
 A skip "ran" if the coin reached the first target (1.5x) from the skip price before a 20% drop, "dumped" if the drop came first. Sampled every 10 min, followed 6h.
-- top 10 over 25%: blocked 37, ran 6, dumped 28, flat 1, open 2 (saving losses: keep it)
+- top 10 over 25%: blocked 38, ran 7, dumped 28, flat 1, open 2 (saving losses: keep it)
   - ran: SCF up to 2.01x  
     CA `Az7dYDicMc4G9hwnkeQYwHi6Fop1711C7hABcrWzpump`
   - ran: MARS up to 2.06x  
@@ -127,14 +127,14 @@ A skip "ran" if the coin reached the first target (1.5x) from the skip price bef
     CA `9TKbd3VFaMSXsEAicD9JVQWpWwAoLi4fSgWmZL2cpump`
   - ran: Bababoi up to 2.17x  
     CA `28B9kDm6XtQNqAkzuiKH3Zu1L8cVM6SLW4iRamFspump`
-- near the high / chasing: blocked 26, ran 5, dumped 18, flat 1, open 2 (saving losses: keep it)
+- near the high / chasing: blocked 24, ran 5, dumped 16, flat 1, open 2 (saving losses: keep it)
   - ran: BRUH up to 1.51x  
     CA `PgFtGGquvnv2zEkjG2N2QPvBTBrafuExGYEqahRpump`
   - ran: SNOWCUMBRR up to 2.36x  
     CA `Gf9wm93TTDpbPC467Eio5Vc42Kr6MAomUD172drWpump`
   - ran: HEYOS up to 1.91x  
     CA `A88p1LcHisrx3TuTwUGVrLtc1LBTUPZUfVgaCGutAFaK`
-- too new / sniping: blocked 23, ran 7, dumped 15, flat 0, open 1 (saving losses: keep it)
+- too new / sniping: blocked 24, ran 7, dumped 17, flat 0, open 0 (saving losses: keep it)
   - ran: BABYANSEM up to 2.77x  
     CA `F3VctV9FqDgiyqaztN6z78bgWy27eH7DBBHW1vjpump`
   - ran: Merged up to 2.18x  
@@ -201,13 +201,13 @@ Nothing has a positive edge after costs. All 213 settled coins came out at -12.2
 Not quiet, but thin: the volume sits in coins under about 2h old, while the older big caps are dead on the 5m (Fiona at $2M with $2.1k, UHI and Grodia under $6k). Two themes are rising across several movers. Celebrity-name pulls: Elonmas on two CAs ($112k and $72k, $24k and $23k 5m, +290% and +138% 1h, buyers 56-58%) and MuskGiving (+300% 1h on $8.6k, but only $2.6k 5m). Early holiday names: Rizzclaus (6 min old, $13.7k 5m on a $4.4k cap, a turnover that looks wash or bundled until proven otherwise) against Chillmas (-70% 1h, zero 5m). Animal mascots are mixed: the hippo cluster looks alive on the web but Fiona is dead on the 5m, clancat holds $3.2k at +22%, and Squidtard and Jamtis are dead. Fading: news-named Block0 (-43%) and the sub-hour joke launches. Trump, ANSEM and the Block0 fee headlines are in the web text but not in the movers, so the news is not what is moving money right now. Setups: Elonmas CA 6B5X... ($112k, $24k 5m, 58% buys, under 12h, pumpswap) is the only mover that clears the MIGRATED bars on paper. It is a duplicate name, though, so I research it only after I know which CA is the original and the other is the vamp; conviction 4 until then, becoming a 5 probe at most if it is the original and the holder and bundle checks come back clean. Stop at -30%, and out if the 5m falls under $10k. The FRITZ setup from the web summary is dropped: no CA in the scan, its 5m and buy figures don't match the scan, and its $71k and +138% match Elonmas CA2, so it may be a mislabel. Fiona, Norfeather and TEEETHY (under $9k 5m) are not buys until the 5m clears $10k. Rizzclaus is a new pair, which we don't snipe. This is a research read from scan data, and the holder, dev and bundle checks are still unrun on each coin, so none of this is a buy. Paper only, nothing here is financial advice.
 
 ## Moving most in its scans, last 30 min (1h volume)
-- Elonmas: $368,261 1h vol, $122,938 mcap, +1% 1h  
-  CA `6B5X3keXJ4J8LLvswa2mbqMhrRDbt85Jo88sbB6apump`
-- TEEETHY: $124,401 1h vol, $46,872 mcap, -41% 1h  
-  CA `BbC8hVHJ2bo6xFcGh2X6zcMiv1T1rznQd3qWoxXApump`
-- hoss: $88,070 1h vol, $10,623 mcap, +374% 1h  
-  CA `EvTaKHSWxhvqfdLNLJnuX8DMZyQA8Kg9nTNmhQhYpump`
+- Elonmas: $132,500 1h vol, $1,603 mcap, -98% 1h  
+  CA `DMXm1gSmAZn1RV4fGXGG8Y1cXfKWXMDYaiKF4B6Cpump`
+- SI: $95,115 1h vol, $22,031 mcap, +884% 1h  
+  CA `8sKGQVyg653njPq21kQBzcsfLwbm6bQceQfpzAcWpump`
 - Grodia: $61,964 1h vol, $807,377 mcap, -9% 1h  
   CA `6HS1aeSk7osT5B1CzLp1HTRTAweFr5wurfMHS4vppump`
-- Fug: $50,333 1h vol, $14,738 mcap, +556% 1h  
-  CA `3QVBSB2kuJiQ75Po8qq4eV7msNFo7jMn22wfKuCTpump`
+- hoss: $55,318 1h vol, $6,693 mcap, -52% 1h  
+  CA `EvTaKHSWxhvqfdLNLJnuX8DMZyQA8Kg9nTNmhQhYpump`
+- NORFEATH: $53,833 1h vol, $441,818 mcap, +6% 1h  
+  CA `3gmFG4sFDJErDV8pacFrL2uUPXeGJTYLjfRy4hFypump`
