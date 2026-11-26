@@ -1,13 +1,13 @@
 # Trencher live report
 
-Updated 2026-11-26T12:06:23Z (paper trading, never real money)
+Updated 2026-11-26T12:21:28Z (paper trading, never real money)
 
 - Equity: $74.23 (-25.8% vs $100 start)
 - Closed trades: 22, 3 wins
 - Fees paid: $14.78 (axiom $2.81, network $9.18, pool $2.66), plus $4.15 lost to slippage
 - New trades: WATCH-ONLY (scans and decides, buys nothing)
 - Brain: subscription, claude-haiku-5-5 for routine calls, claude-opus-5-5 for the daily review; 415 routine calls and 0 plan-limit hits in 48h
-- Watch log: 81 coins being followed, 3857 filed, 0 would-buys (6h follow, sampled every 2 min)
+- Watch log: 83 coins being followed, 3860 filed, 0 would-buys (6h follow, sampled every 2 min)
 
 ## Scorecard (after fees)
 - 22 closed, 3 won (14%), net $-25.79
@@ -73,9 +73,19 @@ Updated 2026-11-26T12:06:23Z (paper trading, never real money)
   CA `H4gHnZ3NCU7Z9XQwGX6YYJNyieGEW8pqwGRUcdSxpump`
 
 ## Last scan
-- 12:05Z: 4 coins, 4 with pairs, 0 passed the market filters, 0 researched
+- 12:20Z: 4 coins, 4 with pairs, 0 passed the market filters, 0 researched
 
 ## Coins it looked at, and why it passed
+- 12:18Z FIONA (DIP, $1,985,831 mcap, $2,082 5m vol): REJECT, Bundles: 10 linked wallet cluster(s) hold 30.2% of supply (>20%) (V17)  
+  CA `B34nXKzCgsJb9ChLuSHPRpXLE3WFSWyeT8Cqkzzmpump`
+- 12:18Z ASCEND (FINAL_STRETCH, $23,248 mcap, $4,471 5m vol): REJECT, Top 10 hold 29.1% ex-pool (>25%) (V13)  
+  CA `AQersggvEZo11i1yWPfBGkBguEY8iwvN5NgavorGpump`
+- 12:17Z Grodia (MIGRATED, $344,325 mcap, $4,560 5m vol): PASS at conviction 3, PASS: 87% off the high with 5m flow at 0.66x pace and $4.6k under the $10k bar, a 0.7-day-old domain whose site shows "CA TBA", and no catalyst. Blockers: "flow below pace", "no higher low", "no catalyst". Crowded ticker field. (V1, V6, V13)  
+  CA `6HS1aeSk7osT5B1CzLp1HTRTAweFr5wurfMHS4vppump`
+- 12:07Z Hey (MIGRATED, $37,010 mcap, $7,096 5m vol): REJECT, Dev holds 4.8% (>1%) (V13, V17)  
+  CA `F9CwhBgSsEJuCigbodtUH257EqQpRSzKLKwHPPKNpump`
+- 12:07Z UHI (MIGRATED, $1,729,230 mcap, $4,806 5m vol): PASS at conviction 2, PASS: chasing at 3% off the high, flow under pace, CA not on its own site, 21 copies of the ticker. Blocker: "chasing" (V1, V6).  
+  CA `Bnw5JRPek5JvJhzUiB9yrs2cmzt4bLeFqSRzDzSppump`
 - 11:56Z PUMPCHAN (MIGRATED, $7,716,178 mcap, $15,730 5m vol): PASS at conviction 2, PASS. $7.7M PumpChan, flow at 0.26x its hourly pace and the first resistance is only 1.18x away. Blockers: flow below pace, target too close, big cap with no room. (V1, V6)  
   CA `Fo2HAwr7ZAUM2bSZ7MWSi16e3aWGpbw5MsUDYCttpump`
 - 11:52Z konnichiwa (MIGRATED, $36,832 mcap, $16,273 5m vol): PASS at conviction 3, PASS: konnichiwa has a 16.3% single bundle cluster, flow at 0.58x pace, and it's a vamp leader of a 26-copy field. Spike-and-dump, not a bottom. (V1, V3, V6, V13)  
@@ -86,20 +96,10 @@ Updated 2026-11-26T12:06:23Z (paper trading, never real money)
   CA `9QT8K685Hrae4k11dhGXirdtpfAaimExtyfwt8cPpump`
 - 11:35Z NUBU (MIGRATED, $48,256 mcap, $119,395 5m vol): REJECT, Bundles: 6 linked wallet cluster(s) hold 36.2% of supply (>20%) (V17)  
   CA `Gngq4r84xEJe5EssETLu9s9dhamSGTAWsmPbq7x2zjrt`
-- 11:32Z Maru (MIGRATED, $42,738 mcap, $21,030 5m vol): PASS at conviction 3, PASS: Maru is a 25-copy vamp field and not the leader. The theme leader is another Maru, and this coin is a 20% bottom-style pullback with no catalyst and no printed higher low 18 minutes after migration (V1, V3, V6).  
-  CA `FokVFH6mDsazoKbtnUaA2FRMsRbDSwZhNfn17Fdvpump`
-- 11:31Z Grodia (MIGRATED, $492,430 mcap, $7,520 5m vol): PASS at conviction 2, PASS — 81% off a $2.6M high with zero catalyst, 1 of 10 same-ticker copies, and the site doesn't show this CA. Blocker: "no catalyst". (V1, V6, V13)  
-  CA `6HS1aeSk7osT5B1CzLp1HTRTAweFr5wurfMHS4vppump`
-- 11:27Z CBUCKS (MIGRATED, $5,918,308 mcap, $2,150 5m vol): REJECT, Top 10 hold 25.6% ex-pool (>25%) (V13)  
-  CA `DtcicPCKTKeAh7TDEzTym3hXeoHAoMiBdYJhMYxZpump`
-- 11:25Z Yaranaika (FINAL_STRETCH, $17,018 mcap, $24,962 5m vol): PASS at conviction 3, PASS. Chasing a +30% five-minute spike at 6x pace, 12 minutes old, no printed higher low, and a 29-copy vamp field. Blocker: "chasing spike" (V1, V6).  
-  CA `HaQsAL1wUyKGpPPnxs69gs4862japa4gTUiwiLhApump`
-- 11:21Z UHI (MIGRATED, $1,609,091 mcap, $4,146 5m vol): PASS at conviction 3, PASS: chasing the high, $1.6M cap with no room, and the CA isn't on its own site (V1, V3, V6).  
-  CA `Bnw5JRPek5JvJhzUiB9yrs2cmzt4bLeFqSRzDzSppump`
 
 ## What its skips did next (last 48h)
 A skip "ran" if the coin reached the first target (1.5x) from the skip price before a 20% drop, "dumped" if the drop came first. Sampled every 10 min, followed 6h.
-- top 10 over 25%: blocked 41, ran 6, dumped 34, flat 0, open 1 (saving losses: keep it)
+- top 10 over 25%: blocked 42, ran 6, dumped 34, flat 0, open 2 (saving losses: keep it)
   - ran: SCF up to 2.01x  
     CA `Az7dYDicMc4G9hwnkeQYwHi6Fop1711C7hABcrWzpump`
   - ran: MARS up to 2.06x  
@@ -120,7 +120,7 @@ A skip "ran" if the coin reached the first target (1.5x) from the skip price bef
     CA `GqMg4TRt5U5HRK6oeZYwCF1Jz7Ym9MSzWSoFCtFsbzf6`
   - ran: BITEFLY up to 1.77x  
     CA `FKYYhVAo9RnfBCrtn7wp2meexQ8xUWXSjRgMrJgkpump`
-- near the high / chasing: blocked 28, ran 6, dumped 19, flat 1, open 2 (saving losses: keep it)
+- near the high / chasing: blocked 27, ran 6, dumped 18, flat 2, open 1 (saving losses: keep it)
   - ran: BRUH up to 1.51x  
     CA `PgFtGGquvnv2zEkjG2N2QPvBTBrafuExGYEqahRpump`
   - ran: SNOWCUMBRR up to 2.36x  
@@ -141,7 +141,7 @@ A skip "ran" if the coin reached the first target (1.5x) from the skip price bef
     CA `AMYpNGi5aGrKr1ZDsotUdWh7k1mMi569ygtaHJmErGEd`
   - ran: Boor up to 1.56x  
     CA `GHFpSSw2ZMjmKCyc1wrHUjJiqnJeP18mekY9GL1Xpump`
-- bundles over the line: blocked 17, ran 3, dumped 10, flat 2, open 2 (saving losses: keep it)
+- bundles over the line: blocked 17, ran 3, dumped 10, flat 3, open 1 (saving losses: keep it)
   - ran: jingyu up to 1.58x  
     CA `DUZrwdjEthcJ99ZiRXr31UuqTohoTg7VjTEyfGdBpump`
   - ran: DUMBMONEY up to 1.74x  
@@ -155,14 +155,14 @@ A skip "ran" if the coin reached the first target (1.5x) from the skip price bef
     CA `J9eBkCb4UtquAMQqB6duwBmR99fFSMoTnDcaMB9Wpump`
   - ran: MONEY up to 1.58x  
     CA `DeACAbp2GMzapB6Z2K8qdkTZupmNbKc6EZx9bnbCpump`
-- other: blocked 13, ran 1, dumped 12, flat 0, open 0 (saving losses: keep it)
-  - ran: SXI up to 2.34x  
-    CA `BFWNbSwRodXPTQqrMSCfhznhJwEzY6ERd6MHjWUEpump`
-- dev share over 1%: blocked 12, ran 2, dumped 8, flat 1, open 1 (saving losses: keep it)
+- dev share over 1%: blocked 13, ran 2, dumped 8, flat 1, open 2 (saving losses: keep it)
   - ran: PI up to 1.77x  
     CA `D2AK5DvBj8AxN5VX1t6bjv7muJVPUx4hFPowVRWYpump`
   - ran: Grinch up to 1.94x  
     CA `J1b5HnRzmXsYK5akPTFtBR7B4E74JG8eyULodd7ypump`
+- other: blocked 13, ran 1, dumped 12, flat 0, open 0 (saving losses: keep it)
+  - ran: SXI up to 2.34x  
+    CA `BFWNbSwRodXPTQqrMSCfhznhJwEzY6ERd6MHjWUEpump`
 
 ## Daily review (2026-11-25, claude-opus-5-5)
 Nothing has a positive edge after costs. All 213 settled coins came out at -12.2% net under the simple plan, and every setup and stage is negative: MIGRATED -10.0%, FINAL_STRETCH -15.3%, DIP -19.8%. The cost estimate, about 9.8% round trip on a $10 buy, is what kills it. Before costs, MIGRATED (about -0.3%) and the coins the brain reviewed (about +0.8%) are close to break-even. With a 1.5x target, a -20% stop and about 10% cost, a coin set needs roughly 42% of its coins to hit the target before the stop just to break even. The best group here gets 28.6%. With n=213, repeat entries for the same coin and coins from the same meme moving together, the before-cost numbers are within noise of zero. The after-cost loss is not noise. I can't say whether the routine model's would-buys beat its passes: it logged 0 would-buys in 24h. Every coin that reached it was passed, so the only split we can measure is the checklist. Checklist-passed coins ran 28.6% of the time vs 15.8% for checklist failures, and netted -9.0% vs -15.6%.
@@ -207,9 +207,9 @@ The trenches are trading fresh, absurd, Japanese-and-joke-named coins with small
   CA `Fo2HAwr7ZAUM2bSZ7MWSi16e3aWGpbw5MsUDYCttpump`
 - konnichiwa: $339,300 1h vol, $30,720 mcap, -52% 1h  
   CA `HdRPR3nqkNCt98DWQqDdfkRHDc1NFsgCJVbfXRnppump`
-- NORFEATH: $77,655 1h vol, $541,659 mcap, +15% 1h  
-  CA `3gmFG4sFDJErDV8pacFrL2uUPXeGJTYLjfRy4hFypump`
-- Hey: $58,843 1h vol, $23,282 mcap, +1008% 1h  
-  CA `F9CwhBgSsEJuCigbodtUH257EqQpRSzKLKwHPPKNpump`
-- Riku: $51,585 1h vol, $7,363 mcap, +209% 1h  
-  CA `E6gZFbJ8cmz7bD7djSc1mAJk23Akq69H1H4WJZaopump`
+- Maru: $251,772 1h vol, $9,306 mcap, -79% 1h  
+  CA `FokVFH6mDsazoKbtnUaA2FRMsRbDSwZhNfn17Fdvpump`
+- Grodia: $83,350 1h vol, $344,325 mcap, -32% 1h  
+  CA `6HS1aeSk7osT5B1CzLp1HTRTAweFr5wurfMHS4vppump`
+- Yaranaika: $78,597 1h vol, $8,118 mcap, -45% 1h  
+  CA `HaQsAL1wUyKGpPPnxs69gs4862japa4gTUiwiLhApump`
