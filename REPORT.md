@@ -1,13 +1,13 @@
 # Trencher live report
 
-Updated 2026-11-26T10:20:29Z (paper trading, never real money)
+Updated 2026-11-26T10:35:41Z (paper trading, never real money)
 
 - Equity: $74.23 (-25.8% vs $100 start)
 - Closed trades: 22, 3 wins
 - Fees paid: $14.78 (axiom $2.81, network $9.18, pool $2.66), plus $4.15 lost to slippage
 - New trades: WATCH-ONLY (scans and decides, buys nothing)
-- Brain: subscription, claude-haiku-5-5 for routine calls, claude-opus-5-5 for the daily review; 406 routine calls and 0 plan-limit hits in 48h
-- Watch log: 83 coins being followed, 3833 filed, 0 would-buys (6h follow, sampled every 2 min)
+- Brain: subscription, claude-haiku-5-5 for routine calls, claude-opus-5-5 for the daily review; 408 routine calls and 0 plan-limit hits in 48h
+- Watch log: 83 coins being followed, 3836 filed, 0 would-buys (6h follow, sampled every 2 min)
 
 ## Scorecard (after fees)
 - 22 closed, 3 won (14%), net $-25.79
@@ -73,9 +73,15 @@ Updated 2026-11-26T10:20:29Z (paper trading, never real money)
   CA `H4gHnZ3NCU7Z9XQwGX6YYJNyieGEW8pqwGRUcdSxpump`
 
 ## Last scan
-- 10:19Z: 3 coins, 3 with pairs, 0 passed the market filters, 0 researched
+- 10:34Z: 1 coins, 1 with pairs, 0 passed the market filters, 0 researched
 
 ## Coins it looked at, and why it passed
+- 10:25Z PUMPCHAN (MIGRATED, $6,336,866 mcap, $67,826 5m vol): PASS at conviction 3, PASS — big cap, no room. $6.3M mcap, 5m flow at 0.9x pace, first resistance (the $9.1M high) only 1.44x away. Vamp field of 11 same-ticker coins, no catalyst. (V1, V6, V13)  
+  CA `Fo2HAwr7ZAUM2bSZ7MWSi16e3aWGpbw5MsUDYCttpump`
+- 10:23Z duk (MIGRATED, $37,846 mcap, $4,263 5m vol): REJECT, Top 10 hold 25.9% ex-pool (>25%) (V13)  
+  CA `DG2EJSEtPBge5F7zBCTZG78p27LTCiq8tUkJ39qupump`
+- 10:21Z konnichiwa (FINAL_STRETCH, $22,642 mcap, $39,209 5m vol): PASS at conviction 3, PASS: up 842% in 5 minutes, one of 18 same-name copies, a bundle cluster sitting inside that crowd, and no X or site to check. That's a split-crowd spike, not a leader (V1, V3, V13).  
+  CA `HdRPR3nqkNCt98DWQqDdfkRHDc1NFsgCJVbfXRnppump`
 - 10:17Z CGBJ (FINAL_STRETCH, $22,693 mcap, $1,964 5m vol): REJECT, 5m volume $1,964 is dead (<$2,000) (V1)  
   CA `Hnv5e4c8amHREbBDgzxGtaYPVSt7nhrW5AUNS6Q7pump`
 - 10:17Z NORFEATH (DIP, $456,375 mcap, $4,887 5m vol): PASS at conviction 3, PASS: no live catalyst, 9 same-ticker copies, 5m flow $4.9k under $10k, and the first resistance is only ~1.16x away. Blocker: "dead story" plus "target too close" (V1, V6, V13).  
@@ -90,23 +96,17 @@ Updated 2026-11-26T10:20:29Z (paper trading, never real money)
   CA `DtcicPCKTKeAh7TDEzTym3hXeoHAoMiBdYJhMYxZpump`
 - 10:08Z YEE (MIGRATED, $70,658 mcap, $29,544 5m vol): REJECT, Bundles: 3 linked wallet cluster(s) hold 68.5% of supply (>20%) (V17)  
   CA `BKGidSAf6RkUUymQYYoN8ifm3VMsLkeFTocvza3Spump`
-- 09:59Z Grodia (MIGRATED, $419,096 mcap, $3,491 5m vol): PASS at conviction 2, PASS: Grodia is 84% off its $2.64M peak, 5m volume is $3.5k (under the $10k line), flow is under pace, and it's one of 10 copies of the ticker. The site doesn't show this CA and is 0.6 days old. Blockers: "too deep", "flow below pace", "dead story". (V1, V6, V13)  
-  CA `6HS1aeSk7osT5B1CzLp1HTRTAweFr5wurfMHS4vppump`
-- 09:54Z Sae (MIGRATED, $34,130 mcap, $2,350 5m vol): REJECT, Dev holds 2.1% (>1%) (V13, V17)  
-  CA `ZP4J8fNk7FC3iDUPAWd8TX6q8CkVVuSeJgnHCvpPSae`
-- 09:53Z Oro (FINAL_STRETCH, $17,137 mcap, $18,825 5m vol): REJECT, Top 10 hold 25.4% ex-pool (>25%) (V13)  
-  CA `9bj8yMQ3gZ36cd2d4efU49dqZsaw3gA6CCaWrbKmpump`
 
 ## What its skips did next (last 48h)
 A skip "ran" if the coin reached the first target (1.5x) from the skip price before a 20% drop, "dumped" if the drop came first. Sampled every 10 min, followed 6h.
-- top 10 over 25%: blocked 40, ran 6, dumped 32, flat 0, open 2 (saving losses: keep it)
+- top 10 over 25%: blocked 41, ran 6, dumped 33, flat 0, open 2 (saving losses: keep it)
   - ran: SCF up to 2.01x  
     CA `Az7dYDicMc4G9hwnkeQYwHi6Fop1711C7hABcrWzpump`
   - ran: MARS up to 2.06x  
     CA `816BuXnCFQqt6KXbBTcFgHWD29Ckpaqt8HMKSN4Vpump`
   - ran: 4CHAN up to 1.87x  
     CA `DVdWuNK8ncn79B6z8nCiwcNAiwyFcmBPfChgxJGTpump`
-- flow below pace: blocked 35, ran 3, dumped 27, flat 3, open 2 (saving losses: keep it)
+- flow below pace: blocked 36, ran 3, dumped 27, flat 3, open 3 (saving losses: keep it)
   - ran: BOOBS up to 1.51x  
     CA `E35iEA2yLLHc1tjm6et1Z3YuH8DhxJYWtWezPHgSpump`
   - ran: BASKET up to 1.55x  
@@ -134,7 +134,7 @@ A skip "ran" if the coin reached the first target (1.5x) from the skip price bef
     CA `9TKbd3VFaMSXsEAicD9JVQWpWwAoLi4fSgWmZL2cpump`
   - ran: Bababoi up to 2.17x  
     CA `28B9kDm6XtQNqAkzuiKH3Zu1L8cVM6SLW4iRamFspump`
-- too new / sniping: blocked 26, ran 8, dumped 18, flat 0, open 0 (saving losses: keep it)
+- too new / sniping: blocked 25, ran 7, dumped 18, flat 0, open 0 (saving losses: keep it)
   - ran: BABYANSEM up to 2.77x  
     CA `F3VctV9FqDgiyqaztN6z78bgWy27eH7DBBHW1vjpump`
   - ran: Merged up to 2.18x  
@@ -148,7 +148,7 @@ A skip "ran" if the coin reached the first target (1.5x) from the skip price bef
     CA `J9eBkCb4UtquAMQqB6duwBmR99fFSMoTnDcaMB9Wpump`
   - ran: MONEY up to 1.58x  
     CA `DeACAbp2GMzapB6Z2K8qdkTZupmNbKc6EZx9bnbCpump`
-- bundles over the line: blocked 17, ran 3, dumped 8, flat 0, open 6 (saving losses: keep it)
+- bundles over the line: blocked 17, ran 3, dumped 10, flat 1, open 3 (saving losses: keep it)
   - ran: jingyu up to 1.58x  
     CA `DUZrwdjEthcJ99ZiRXr31UuqTohoTg7VjTEyfGdBpump`
   - ran: DUMBMONEY up to 1.74x  
@@ -200,16 +200,16 @@ Nothing has a positive edge after costs. All 213 settled coins came out at -12.2
 - [2026-11-02 20:25] I expected Slingoor, a clean MIGRATED leader with $25k of 5m flow at pace and a 0.77 buy share, to retest its $408k high from $304k. It never went green (0.98x peak) and hit the -20% stop in 2 minutes, a -$2.86 probe. My own thesis admitted there was no printed higher low after a peak only 6 minutes old, so this confirms the money-shape rule: buy share and flow are not structure (V1, V6). Next time a MIGRATED pullback with no higher low above the hourly low is a PASS with blocker "no higher low", not a probe. This is one loss, so it adds no new ban beyond the rule I already have.
 
 ## Meta right now
-The trenches are thin and split across three lanes, none of them the Trump news: cute food and joke names, platform and product riffs, and celebrity or holiday puns. WIENER (52k cap, $46k 5m, 68% buys, 18 min old on PumpSwap) has the cleanest-looking flow, PPV "Pay Per View" (23k cap, $11k 5m, 61% buys, +750% in 1h) is running hot but only 30 min old, and Elonmas (352k cap, $41k 5m, 50% buys, +242% in 1h, 4h old) is the bigger, slower celebrity-pun candidate while Santa is dead at $268 5m. Fading: the old tickers (CBUCKS, FIONA, Grodia) with thin 5m volume and the dumpers (OG -88%, pnp-lean -90%, Fug it -45%, FUND -41%). Setups to research, not buys: WIENER and PPV, each needing holder, dev and bundle checks first; WIENER at 18 min old is a bundle-risk case until those come back clean. Conviction 4 to 5 with a stop at -30% and out if 5m volume falls under $10k. The web's Trump dinner headlines and the fairdotfun/FUNDXYZ/Elonmas figures don't match scan_movers, so I used scan numbers only. Paper only, not financial advice.
+Trencher, scan_movers read (scan numbers only, web figures conflict and were ignored). Three themes are moving. (1) Cute/greeting and joke names: konnichiwa ($22.6k cap, $39k 5m, 62% buys, ~6 min old) and YEE ($70k cap, $29.5k 5m, 66% buys) are rising, while WIENER ($0 5m, -98% 1h) and Ponzi are dead. (2) Pump-platform and product riffs: STRUCK/SpaceTruck ($66k cap, $105k 5m, 56% buys, ~6 min old), PumpChan ($6.3M cap, $74k 5m, 61% buys) and PELAGO carry the most flow, while PPV/Pay Per View is down 90% in an hour. (3) Trump-named coins: "I Am Not Corrupt" (TRUMP, $14.6k cap, $19k 5m, +267% 1h) is hot, but it names a political figure, so it's a pass under the political-figure rule, and the web's Trump token headlines (down 99%, gala demand collapsing) say the big-name version is fading. Fading: old tickers CBUCKS and DIGS (600-1200h old, thin 5m) and the dumpers. Setups to research, not buys: STRUCK and konnichiwa (conviction 4-5, bundle, dev and holder checks first, stop at -30%, out if 5m volume drops under $10k), and YEE as a migrated-range check. Nothing named for a hack appears in the movers. Paper only, not financial advice.
 
 ## Moving most in its scans, last 30 min (1h volume)
-- WIENER: $144,414 1h vol, $1,457 mcap, -98% 1h  
-  CA `8BDkDfj3ZUvcG9caGzF2XnHfwg7K6fjfKKDvX6SCpump`
+- PUMPCHAN: $911,068 1h vol, $6,316,547 mcap, +17% 1h  
+  CA `Fo2HAwr7ZAUM2bSZ7MWSi16e3aWGpbw5MsUDYCttpump`
 - STRUCK: $132,605 1h vol, $66,052 mcap, +125% 1h  
   CA `HN9jRRCKuLNL3oSgNV1MBvd3Krg6TingFntJp1PSpump`
-- PPV: $83,585 1h vol, $3,141 mcap, -89% 1h  
+- PPV: $83,502 1h vol, $2,665 mcap, -90% 1h  
   CA `CbGrZ3Q2XxSV2oiZsLkDWW1GFjrqUDAzTH9XwVr1pump`
 - YEE: $80,245 1h vol, $70,658 mcap, +139% 1h  
   CA `BKGidSAf6RkUUymQYYoN8ifm3VMsLkeFTocvza3Spump`
-- Ponzi: $60,324 1h vol, $2,063 mcap, -62% 1h  
-  CA `3wYjTDMrX6Q8z9SRtaJNhgXh21DbRJt1iYaQ8LQ3pump`
+- Saxon: $62,532 1h vol, $2,262 mcap, +13% 1h  
+  CA `F4JRm4qE6UJesCPc4NPwJwosYqNGsFWoFGfZJe6zpump`
