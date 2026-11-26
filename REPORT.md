@@ -1,13 +1,13 @@
 # Trencher live report
 
-Updated 2026-11-26T11:51:09Z (paper trading, never real money)
+Updated 2026-11-26T12:06:23Z (paper trading, never real money)
 
 - Equity: $74.23 (-25.8% vs $100 start)
 - Closed trades: 22, 3 wins
 - Fees paid: $14.78 (axiom $2.81, network $9.18, pool $2.66), plus $4.15 lost to slippage
 - New trades: WATCH-ONLY (scans and decides, buys nothing)
-- Brain: subscription, claude-haiku-5-5 for routine calls, claude-opus-5-5 for the daily review; 414 routine calls and 0 plan-limit hits in 48h
-- Watch log: 82 coins being followed, 3854 filed, 0 would-buys (6h follow, sampled every 2 min)
+- Brain: subscription, claude-haiku-5-5 for routine calls, claude-opus-5-5 for the daily review; 415 routine calls and 0 plan-limit hits in 48h
+- Watch log: 81 coins being followed, 3857 filed, 0 would-buys (6h follow, sampled every 2 min)
 
 ## Scorecard (after fees)
 - 22 closed, 3 won (14%), net $-25.79
@@ -73,9 +73,13 @@ Updated 2026-11-26T11:51:09Z (paper trading, never real money)
   CA `H4gHnZ3NCU7Z9XQwGX6YYJNyieGEW8pqwGRUcdSxpump`
 
 ## Last scan
-- 11:50Z: 2 coins, 2 with pairs, 0 passed the market filters, 0 researched
+- 12:05Z: 4 coins, 4 with pairs, 0 passed the market filters, 0 researched
 
 ## Coins it looked at, and why it passed
+- 11:56Z PUMPCHAN (MIGRATED, $7,716,178 mcap, $15,730 5m vol): PASS at conviction 2, PASS. $7.7M PumpChan, flow at 0.26x its hourly pace and the first resistance is only 1.18x away. Blockers: flow below pace, target too close, big cap with no room. (V1, V6)  
+  CA `Fo2HAwr7ZAUM2bSZ7MWSi16e3aWGpbw5MsUDYCttpump`
+- 11:52Z konnichiwa (MIGRATED, $36,832 mcap, $16,273 5m vol): PASS at conviction 3, PASS: konnichiwa has a 16.3% single bundle cluster, flow at 0.58x pace, and it's a vamp leader of a 26-copy field. Spike-and-dump, not a bottom. (V1, V3, V6, V13)  
+  CA `HdRPR3nqkNCt98DWQqDdfkRHDc1NFsgCJVbfXRnppump`
 - 11:47Z NORFEATH (DIP, $541,659 mcap, $7,486 5m vol): PASS at conviction 3, PASS: NORFEATH is a DIP with no story on the radar, a site that says "CA soon", and 23 copies sharing the ticker. Blocker: "dead story" plus "no catalyst found" (V1, V5, V13).  
   CA `3gmFG4sFDJErDV8pacFrL2uUPXeGJTYLjfRy4hFypump`
 - 11:44Z DIGS (MIGRATED, $233,693 mcap, $2,345 5m vol): REJECT, Bundles: 10 linked wallet cluster(s) hold 100.0% of supply (>20%) (V17)  
@@ -92,10 +96,6 @@ Updated 2026-11-26T11:51:09Z (paper trading, never real money)
   CA `HaQsAL1wUyKGpPPnxs69gs4862japa4gTUiwiLhApump`
 - 11:21Z UHI (MIGRATED, $1,609,091 mcap, $4,146 5m vol): PASS at conviction 3, PASS: chasing the high, $1.6M cap with no room, and the CA isn't on its own site (V1, V3, V6).  
   CA `Bnw5JRPek5JvJhzUiB9yrs2cmzt4bLeFqSRzDzSppump`
-- 11:12Z FIONA (DIP, $1,983,052 mcap, $3,018 5m vol): REJECT, Bundles: 10 linked wallet cluster(s) hold 30.2% of supply (>20%) (V17)  
-  CA `B34nXKzCgsJb9ChLuSHPRpXLE3WFSWyeT8Cqkzzmpump`
-- 11:11Z PUMPCHAN (MIGRATED, $8,867,112 mcap, $46,922 5m vol): PASS at conviction 2, PASS: chasing at 2.7% off the high, 5m flow at 0.69x pace, $8.9M cap with no room to 1.5x, and the project site doesn't show this CA. Name-riff crowd of 10 (V1, V6, V13).  
-  CA `Fo2HAwr7ZAUM2bSZ7MWSi16e3aWGpbw5MsUDYCttpump`
 
 ## What its skips did next (last 48h)
 A skip "ran" if the coin reached the first target (1.5x) from the skip price before a 20% drop, "dumped" if the drop came first. Sampled every 10 min, followed 6h.
@@ -106,7 +106,7 @@ A skip "ran" if the coin reached the first target (1.5x) from the skip price bef
     CA `816BuXnCFQqt6KXbBTcFgHWD29Ckpaqt8HMKSN4Vpump`
   - ran: 4CHAN up to 1.87x  
     CA `DVdWuNK8ncn79B6z8nCiwcNAiwyFcmBPfChgxJGTpump`
-- flow below pace: blocked 34, ran 3, dumped 26, flat 3, open 2 (saving losses: keep it)
+- flow below pace: blocked 35, ran 3, dumped 26, flat 3, open 3 (saving losses: keep it)
   - ran: BOOBS up to 1.51x  
     CA `E35iEA2yLLHc1tjm6et1Z3YuH8DhxJYWtWezPHgSpump`
   - ran: BASKET up to 1.55x  
@@ -120,14 +120,14 @@ A skip "ran" if the coin reached the first target (1.5x) from the skip price bef
     CA `GqMg4TRt5U5HRK6oeZYwCF1Jz7Ym9MSzWSoFCtFsbzf6`
   - ran: BITEFLY up to 1.77x  
     CA `FKYYhVAo9RnfBCrtn7wp2meexQ8xUWXSjRgMrJgkpump`
-- near the high / chasing: blocked 29, ran 6, dumped 20, flat 1, open 2 (saving losses: keep it)
+- near the high / chasing: blocked 28, ran 6, dumped 19, flat 1, open 2 (saving losses: keep it)
   - ran: BRUH up to 1.51x  
     CA `PgFtGGquvnv2zEkjG2N2QPvBTBrafuExGYEqahRpump`
   - ran: SNOWCUMBRR up to 2.36x  
     CA `Gf9wm93TTDpbPC467Eio5Vc42Kr6MAomUD172drWpump`
   - ran: HEYOS up to 1.91x  
     CA `A88p1LcHisrx3TuTwUGVrLtc1LBTUPZUfVgaCGutAFaK`
-- RugCheck danger: blocked 27, ran 3, dumped 23, flat 1, open 0 (saving losses: keep it)
+- RugCheck danger: blocked 26, ran 3, dumped 22, flat 1, open 0 (saving losses: keep it)
   - ran: TROLL up to 1.94x  
     CA `7ykeHoEnjnGkY6tqteXn47fdGtd7kfXWghiyZ7YKpump`
   - ran: Snowball up to 3.52x  
@@ -141,7 +141,7 @@ A skip "ran" if the coin reached the first target (1.5x) from the skip price bef
     CA `AMYpNGi5aGrKr1ZDsotUdWh7k1mMi569ygtaHJmErGEd`
   - ran: Boor up to 1.56x  
     CA `GHFpSSw2ZMjmKCyc1wrHUjJiqnJeP18mekY9GL1Xpump`
-- bundles over the line: blocked 17, ran 3, dumped 9, flat 2, open 3 (saving losses: keep it)
+- bundles over the line: blocked 17, ran 3, dumped 10, flat 2, open 2 (saving losses: keep it)
   - ran: jingyu up to 1.58x  
     CA `DUZrwdjEthcJ99ZiRXr31UuqTohoTg7VjTEyfGdBpump`
   - ran: DUMBMONEY up to 1.74x  
@@ -203,13 +203,13 @@ Nothing has a positive edge after costs. All 213 settled coins came out at -12.2
 The trenches are trading fresh, absurd, Japanese-and-joke-named coins with small caps and volume that matches or beats their cap: Yaranaika ($17k cap, $25k 5m, 62% buys, 12 min old), konnichiwa ($131k cap, $47k 5m, 54% buys, 48 min old) and TheLore ($4k cap, $5.4k 5m, 57% buys). PumpChan ($8.6M cap, $54k 5m, 51% buys, +48% 1h) carries the biggest real flow, so the platform-riff theme is alive but it's the large cap, not the cheap one. Old tickers are fading: DIGS (694h old, 41% buys), CBUCKS (1217h, $2k 5m) and FIONA (11% buys), and YEE, crack and duk are dumping or dead on the scan (STRUCK is $2k cap and $32 5m, so the web's $66k figures for it are wrong). Setups to research, not buys yet: konnichiwa at conviction 4 and Yaranaika at conviction 4 (volume above cap is a farm flag until bundle and holder checks clear), each with a -30% stop and out if 5m volume drops under $10k; PumpChan at conviction 5 as a migrated-range check with a -30% stop. Trump-named coins are not in the movers, so the web's Trump story isn't the trench meta. No hack-named coins appear. Paper only, not financial advice.
 
 ## Moving most in its scans, last 30 min (1h volume)
-- NUBU: $134,278 1h vol, $50,344 mcap, +70% 1h  
-  CA `Gngq4r84xEJe5EssETLu9s9dhamSGTAWsmPbq7x2zjrt`
-- Maru: $112,646 1h vol, $42,738 mcap, +48% 1h  
-  CA `FokVFH6mDsazoKbtnUaA2FRMsRbDSwZhNfn17Fdvpump`
+- PUMPCHAN: $711,750 1h vol, $7,683,845 mcap, +16% 1h  
+  CA `Fo2HAwr7ZAUM2bSZ7MWSi16e3aWGpbw5MsUDYCttpump`
+- konnichiwa: $339,300 1h vol, $30,720 mcap, -52% 1h  
+  CA `HdRPR3nqkNCt98DWQqDdfkRHDc1NFsgCJVbfXRnppump`
 - NORFEATH: $77,655 1h vol, $541,659 mcap, +15% 1h  
   CA `3gmFG4sFDJErDV8pacFrL2uUPXeGJTYLjfRy4hFypump`
-- Grodia: $76,699 1h vol, $492,430 mcap, +18% 1h  
-  CA `6HS1aeSk7osT5B1CzLp1HTRTAweFr5wurfMHS4vppump`
-- crack: $74,487 1h vol, $2,245 mcap, -16% 1h  
-  CA `8Ad3aqTGrtudBTyXbdiVp3oq8sxYee1NKJqeKd3AKJ9M`
+- Hey: $58,843 1h vol, $23,282 mcap, +1008% 1h  
+  CA `F9CwhBgSsEJuCigbodtUH257EqQpRSzKLKwHPPKNpump`
+- Riku: $51,585 1h vol, $7,363 mcap, +209% 1h  
+  CA `E6gZFbJ8cmz7bD7djSc1mAJk23Akq69H1H4WJZaopump`
