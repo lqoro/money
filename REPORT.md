@@ -1,13 +1,13 @@
 # Trencher live report
 
-Updated 2026-11-26T22:42:52Z (paper trading, never real money)
+Updated 2026-11-26T22:58:06Z (paper trading, never real money)
 
 - Equity: $74.23 (-25.8% vs $100 start)
 - Closed trades: 22, 3 wins
 - Fees paid: $14.78 (axiom $2.81, network $9.18, pool $2.66), plus $4.15 lost to slippage
 - New trades: WATCH-ONLY (scans and decides, buys nothing)
-- Brain: subscription, claude-haiku-5-5 for routine calls, claude-opus-5-5 for the daily review; 371 routine calls and 0 plan-limit hits in 48h
-- Watch log: 79 coins being followed, 4016 filed, 0 would-buys (6h follow, sampled every 2 min)
+- Brain: subscription, claude-haiku-5-5 for routine calls, claude-opus-5-5 for the daily review; 368 routine calls and 0 plan-limit hits in 48h
+- Watch log: 78 coins being followed, 4019 filed, 0 would-buys (6h follow, sampled every 2 min)
 
 ## Scorecard (after fees)
 - 22 closed, 3 won (14%), net $-25.79
@@ -73,9 +73,13 @@ Updated 2026-11-26T22:42:52Z (paper trading, never real money)
   CA `H4gHnZ3NCU7Z9XQwGX6YYJNyieGEW8pqwGRUcdSxpump`
 
 ## Last scan
-- 22:41Z: 6 coins, 6 with pairs, 1 passed the market filters, 1 researched
+- 22:57Z: 1 coins, 1 with pairs, 0 passed the market filters, 0 researched
 
 ## Coins it looked at, and why it passed
+- 22:55Z Joey (FINAL_STRETCH, $16,676 mcap, $19,437 5m vol): REJECT, Top 10 hold 31.0% ex-pool (>25%) (V13)  
+  CA `CgMFCJbKBNCA1nMz7ZPg3XpABfUHsaWfrdSdGGZKgPG5`
+- 22:53Z Cateball (DIP, $604,146 mcap, $24,006 5m vol): PASS at conviction 2, PASS — DIP with no catalyst, 15 tokens share the name, and the site says "CA TBA" on a 2-hour-old domain. Price is down 34% in the last 5 minutes with no printed higher low. (V1, V3, V6, V13)  
+  CA `Bb38n8AVLMh9amo8qtjLvqE8nPtfs8GEsyzg1pC6pump`
 - 22:41Z Joey (FINAL_STRETCH, $19,499 mcap, $8,413 5m vol): REJECT, Top 10 hold 28.8% ex-pool (>25%) (V13)  
   CA `FeccRb35QDEEhru5c3HXznVmZDXcvVwJfNbRhSzqbWqX`
 - 22:33Z HOLD (MIGRATED, $46,497 mcap, $34,969 5m vol): PASS at conviction 2, PASS: HOLD is a 75%-off-peak coin that just spiked +66% in 5 minutes on 0.67x hourly flow, with a 1.5-day-old fee-share site that doesn't show this CA. Blocker: chasing spike. (V1, V3, V6)  
@@ -92,14 +96,10 @@ Updated 2026-11-26T22:42:52Z (paper trading, never real money)
   CA `CFX1gH7CKYwqYXrfDkS2MUxJcEhs8PT63DyRA1chpump`
 - 22:08Z Cateball (DIP, $780,744 mcap, $20,765 5m vol): REJECT, Dip with fading attention is a falling knife, not a dip (5m at 0.36x the hour's pace, under 0.6x)  
   CA `Bb38n8AVLMh9amo8qtjLvqE8nPtfs8GEsyzg1pC6pump`
-- 21:47Z HOLD (no setup, $14,343 mcap, $20,509 5m vol): REJECT, No setup fits: not Final Stretch, not a migrated runner, not a healthy dip  
-  CA `BuNeErf9FjL6dgzE74S21Qm9EeBaYMJXSW4A8ihxpump`
-- 21:42Z BRUH (MIGRATED, $8,112,333 mcap, $3,555 5m vol): PASS at conviction 3, PASS: big cap, no room. BRUH is $8.1M, flat in its 0.0079–0.0085 range, with sellers ahead 8 to 5 on 5m and no catalyst for a bottom buy. Clean holders don't fix that (V1, V6).  
-  CA `PgFtGGquvnv2zEkjG2N2QPvBTBrafuExGYEqahRpump`
 
 ## What its skips did next (last 48h)
 A skip "ran" if the coin reached the first target (1.5x) from the skip price before a 20% drop, "dumped" if the drop came first. Sampled every 10 min, followed 6h.
-- top 10 over 25%: blocked 52, ran 10, dumped 38, flat 0, open 4 (saving losses: keep it)
+- top 10 over 25%: blocked 53, ran 11, dumped 39, flat 0, open 3 (saving losses: keep it)
   - ran: MARS up to 2.06x  
     CA `816BuXnCFQqt6KXbBTcFgHWD29Ckpaqt8HMKSN4Vpump`
   - ran: 4CHAN up to 1.87x  
@@ -139,14 +139,14 @@ A skip "ran" if the coin reached the first target (1.5x) from the skip price bef
     CA `DUZrwdjEthcJ99ZiRXr31UuqTohoTg7VjTEyfGdBpump`
   - ran: WIENER up to 1.59x  
     CA `8BDkDfj3ZUvcG9caGzF2XnHfwg7K6fjfKKDvX6SCpump`
-- falling knife (code): blocked 17, ran 3, dumped 13, flat 1, open 0 (saving losses: keep it)
+- falling knife (code): blocked 16, ran 3, dumped 12, flat 1, open 0 (saving losses: keep it)
   - ran: Jimmies up to 1.53x  
     CA `GisWWjhwrSud4aFGSHvTMt85Ky14sY7LeBFCpfoFpump`
   - ran: Investor up to 1.58x  
     CA `J9eBkCb4UtquAMQqB6duwBmR99fFSMoTnDcaMB9Wpump`
   - ran: MONEY up to 1.58x  
     CA `DeACAbp2GMzapB6Z2K8qdkTZupmNbKc6EZx9bnbCpump`
-- falling knife / no higher low: blocked 13, ran 4, dumped 6, flat 3, open 0 (mixed)
+- falling knife / no higher low: blocked 14, ran 4, dumped 6, flat 3, open 1 (mixed)
   - ran: Jimmies up to 1.53x  
     CA `GisWWjhwrSud4aFGSHvTMt85Ky14sY7LeBFCpfoFpump`
   - ran: Zero up to 2.07x  
@@ -198,16 +198,16 @@ No edge yet. All 276 settled coins lost money after costs under the simple plan:
 - [2026-11-02 20:25] I expected Slingoor, a clean MIGRATED leader with $25k of 5m flow at pace and a 0.77 buy share, to retest its $408k high from $304k. It never went green (0.98x peak) and hit the -20% stop in 2 minutes, a -$2.86 probe. My own thesis admitted there was no printed higher low after a peak only 6 minutes old, so this confirms the money-shape rule: buy share and flow are not structure (V1, V6). Next time a MIGRATED pullback with no higher low above the hourly low is a PASS with blocker "no higher low", not a probe. This is one loss, so it adds no new ban beyond the rule I already have.
 
 ## Meta right now
-The meta is young animal and slang launches with real flow: Cateball (0.2h old, $652k cap, $129k 5m, 70% buys) and Hoppy (0.9h, $1.47M cap, $129k 5m, 74% buys) are creature-name coins eating volume, and Goon (Gooncoin, $45k cap, $18k 5m, 60% buys, age near zero) fits the same fresh slang pattern. Rising: sub-two-hour pumpswap names with 5m volume above $10k and buyers above 60%. Fading: Elon-named copies (Elonmas went from $180k of 1h volume to $6k on 5m, even with 82% buys), older character names (SUNDANCE at 19% buys, JIMMY and MONA thin), and the privacy theme the crawler pushed, since the raw scan has PI at a $1.3k cap with zero 5m volume and down 99%, so that story is dead in the data. The Trump dinner and Ansem headlines are not showing up as flow. Setups to research, not buy yet: Goon as a MIGRATED candidate (under 12h, cap over $30k, 5m over $10k), and Cateball or Hoppy only on a pullback that holds 5m volume and buyers, since Hoppy is up 3650% in an hour and is chase territory (V1, V6). Holder, dev and bundle checks run per coin at research time, so this market is not quiet; it is hot but thin on proof.
+The trenches are trading fresh plain-word launches, and the only sized flow is HOLD, Hoppy, Joey and COIN, all under 6 hours old with 53-67% buys. Rising but thin: generic names (COIN, MM, PB, Joey), and COIN's $75k of 5m volume on a $19k cap is churn until proven otherwise (V13, V6). Fading: Elon-named copies (Elonmas down 97% with zero 5m volume) and older character names (JIMMY, BRUH, CBUCKS, ROCKET) with dead 5m flow, so the old-meme story is done. The privacy theme and the Trump dinner/Ansem headlines don't show up in these movers. Cateball, Goon and PI are in the crawler summary but not in scan_movers, so I can't confirm them. Setups to research, not buy: HOLD as a MIGRATED candidate ($45k cap, $37k 5m, under 12h, but only 53% buys); Joey near $19.5k cap with $8.9k 5m, a FINAL_STRETCH candidate that needs about $10k 5m; and Hoppy only on a pullback that holds volume and buyers, since it's up 145% in an hour (V1, V6).
 
 ## Moving most in its scans, last 30 min (1h volume)
 - HOLD: $624,627 1h vol, $44,882 mcap, +55% 1h  
   CA `BuNeErf9FjL6dgzE74S21Qm9EeBaYMJXSW4A8ihxpump`
-- Hoppy: $616,856 1h vol, $1,719,933 mcap, +145% 1h  
-  CA `CFX1gH7CKYwqYXrfDkS2MUxJcEhs8PT63DyRA1chpump`
+- Cateball: $234,345 1h vol, $641,059 mcap, -37% 1h  
+  CA `Bb38n8AVLMh9amo8qtjLvqE8nPtfs8GEsyzg1pC6pump`
 - COIN: $104,590 1h vol, $18,999 mcap, +262% 1h  
   CA `8n7mSQ8KUqP17AQii1bmWR1wdRhtKe5fDW7yiuLqpump`
-- JIMMY: $88,170 1h vol, $465,177 mcap, -13% 1h  
-  CA `38M2z4UCfZEkUHFzD48vhKQhFhNyRGto8pZbLjNipump`
-- LISTED: $79,249 1h vol, $1,719 mcap, -95% 1h  
+- Joey: $91,821 1h vol, $16,795 mcap, +483% 1h  
+  CA `CgMFCJbKBNCA1nMz7ZPg3XpABfUHsaWfrdSdGGZKgPG5`
+- LISTED: $79,360 1h vol, $1,808 mcap, -95% 1h  
   CA `9p3gyC4v5E5rtsKJ4fbKoT2qRbnLGtG3UpqfTJCFVGBu`
