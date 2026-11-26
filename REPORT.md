@@ -1,13 +1,13 @@
 # Trencher live report
 
-Updated 2026-11-26T06:03:05Z (paper trading, never real money)
+Updated 2026-11-26T06:18:11Z (paper trading, never real money)
 
 - Equity: $74.23 (-25.8% vs $100 start)
 - Closed trades: 22, 3 wins
 - Fees paid: $14.78 (axiom $2.81, network $9.18, pool $2.66), plus $4.15 lost to slippage
 - New trades: WATCH-ONLY (scans and decides, buys nothing)
-- Brain: subscription, claude-haiku-5-5 for routine calls, claude-opus-5-5 for the daily review; 405 routine calls and 0 plan-limit hits in 48h
-- Watch log: 104 coins being followed, 3752 filed, 0 would-buys (6h follow, sampled every 2 min)
+- Brain: subscription, claude-haiku-5-5 for routine calls, claude-opus-5-5 for the daily review; 406 routine calls and 0 plan-limit hits in 48h
+- Watch log: 103 coins being followed, 3757 filed, 0 would-buys (6h follow, sampled every 2 min)
 
 ## Scorecard (after fees)
 - 22 closed, 3 won (14%), net $-25.79
@@ -73,9 +73,17 @@ Updated 2026-11-26T06:03:05Z (paper trading, never real money)
   CA `H4gHnZ3NCU7Z9XQwGX6YYJNyieGEW8pqwGRUcdSxpump`
 
 ## Last scan
-- 06:02Z: 6 coins, 5 with pairs, 0 passed the market filters, 0 researched
+- 06:17Z: 4 coins, 3 with pairs, 1 passed the market filters, 1 researched
 
 ## Coins it looked at, and why it passed
+- 06:17Z FIONA (DIP, $1,968,669 mcap, $3,036 5m vol): REJECT, Bundles: 10 linked wallet cluster(s) hold 30.2% of supply (>20%) (V17)  
+  CA `B34nXKzCgsJb9ChLuSHPRpXLE3WFSWyeT8Cqkzzmpump`
+- 06:12Z Grodia (DIP, $832,221 mcap, $5,834 5m vol): PASS at conviction 3, PASS — DIP with no catalyst, no printed higher low, and a story the radar never names. The site doesn't show this CA. Wait. (V1, V13)  
+  CA `6HS1aeSk7osT5B1CzLp1HTRTAweFr5wurfMHS4vppump`
+- 06:09Z UHI (MIGRATED, $962,432 mcap, $5,132 5m vol): PASS at conviction 3, PASS — flow below pace, no printed higher low, and the site doesn't show a CA. A vamp field of 21 copies, and the Elon correction meme has already printed. (V1, V3, V13)  
+  CA `Bnw5JRPek5JvJhzUiB9yrs2cmzt4bLeFqSRzDzSppump`
+- 06:04Z ccat (MIGRATED, $34,353 mcap, $2,881 5m vol): PASS at conviction 3, PASS: chasing a 5.8x volume spike on a 15-copy clan-cat field, no narrative on the radar, no printed higher low, top 10 at 23%. Wait. (V1, V6, V13)  
+  CA `3jAB5ksB13Kgm2Q39NU6d2USUxBy2f9LaTvyay6Gpump`
 - 06:02Z TEEETHY (DIP, $62,176 mcap, $7,650 5m vol): PASS at conviction 4, PASS: bottom buy with no catalyst, theme pace 0.79x, 5m flow $7.6k under the $10k bar and buys 50%. Named story, clean holders, still no entry. (blocker: dead story / no catalyst)  
   CA `BbC8hVHJ2bo6xFcGh2X6zcMiv1T1rznQd3qWoxXApump`
 - 06:02Z Elonmas (MIGRATED, $111,545 mcap, $24,440 5m vol): PASS at conviction 3, PASS: too new, flow below pace, and a bigger Elonmas copy is taking the crowd. Blocker: "too new" and "flow below pace". (V1, V3, V6)  
@@ -88,14 +96,6 @@ Updated 2026-11-26T06:03:05Z (paper trading, never real money)
   CA `9QT8K685Hrae4k11dhGXirdtpfAaimExtyfwt8cPpump`
 - 05:40Z PUMPCHAN (MIGRATED, $1,434,544 mcap, $2,397 5m vol): REJECT, Top 10 hold 37.9% ex-pool (>25%) (V13)  
   CA `Fo2HAwr7ZAUM2bSZ7MWSi16e3aWGpbw5MsUDYCttpump`
-- 05:36Z Elonmas (MIGRATED, $60,892 mcap, $54,908 5m vol): REJECT, Bundles: 2 linked wallet cluster(s) hold 81.7% of supply (>20%) (V17)  
-  CA `DMXm1gSmAZn1RV4fGXGG8Y1cXfKWXMDYaiKF4B6Cpump`
-- 05:31Z BLOCK0 (FINAL_STRETCH, $20,756 mcap, $12,923 5m vol): PASS at conviction 3, PASS. Chasing a spike on a 16-minute-old launch, inside a 27-copy vamp field, with no printed higher low (V1, V6, V3).  
-  CA `3EoToNPW4mifRCZrNFkk7pLe86vmeBqdqbW1TLPoqst5`
-- 05:27Z Grodia (DIP, $1,093,539 mcap, $3,073 5m vol): REJECT, Dip with fading attention is a falling knife, not a dip (5m at 0.49x the hour's pace, under 0.6x)  
-  CA `6HS1aeSk7osT5B1CzLp1HTRTAweFr5wurfMHS4vppump`
-- 05:23Z UHI (MIGRATED, $1,008,106 mcap, $8,792 5m vol): PASS at conviction 3, PASS: no breakout, first resistance only 1.26x away, and the team's own site says "CA TBA" on a 0.3-day-old domain. (V1, V3, V13)  
-  CA `Bnw5JRPek5JvJhzUiB9yrs2cmzt4bLeFqSRzDzSppump`
 
 ## What its skips did next (last 48h)
 A skip "ran" if the coin reached the first target (1.5x) from the skip price before a 20% drop, "dumped" if the drop came first. Sampled every 10 min, followed 6h.
@@ -106,7 +106,7 @@ A skip "ran" if the coin reached the first target (1.5x) from the skip price bef
     CA `816BuXnCFQqt6KXbBTcFgHWD29Ckpaqt8HMKSN4Vpump`
   - ran: 4CHAN up to 1.87x  
     CA `DVdWuNK8ncn79B6z8nCiwcNAiwyFcmBPfChgxJGTpump`
-- flow below pace: blocked 36, ran 3, dumped 26, flat 2, open 5 (saving losses: keep it)
+- flow below pace: blocked 36, ran 3, dumped 28, flat 2, open 3 (saving losses: keep it)
   - ran: BOOBS up to 1.51x  
     CA `E35iEA2yLLHc1tjm6et1Z3YuH8DhxJYWtWezPHgSpump`
   - ran: BASKET up to 1.55x  
@@ -127,35 +127,35 @@ A skip "ran" if the coin reached the first target (1.5x) from the skip price bef
     CA `9TKbd3VFaMSXsEAicD9JVQWpWwAoLi4fSgWmZL2cpump`
   - ran: Bababoi up to 2.17x  
     CA `28B9kDm6XtQNqAkzuiKH3Zu1L8cVM6SLW4iRamFspump`
-- near the high / chasing: blocked 26, ran 5, dumped 18, flat 1, open 2 (saving losses: keep it)
+- near the high / chasing: blocked 26, ran 5, dumped 17, flat 1, open 3 (saving losses: keep it)
   - ran: BRUH up to 1.51x  
     CA `PgFtGGquvnv2zEkjG2N2QPvBTBrafuExGYEqahRpump`
   - ran: SNOWCUMBRR up to 2.36x  
     CA `Gf9wm93TTDpbPC467Eio5Vc42Kr6MAomUD172drWpump`
   - ran: HEYOS up to 1.91x  
     CA `A88p1LcHisrx3TuTwUGVrLtc1LBTUPZUfVgaCGutAFaK`
-- too new / sniping: blocked 25, ran 7, dumped 16, flat 0, open 2 (saving losses: keep it)
+- too new / sniping: blocked 25, ran 7, dumped 17, flat 0, open 1 (saving losses: keep it)
   - ran: BABYANSEM up to 2.77x  
     CA `F3VctV9FqDgiyqaztN6z78bgWy27eH7DBBHW1vjpump`
   - ran: Merged up to 2.18x  
     CA `AMYpNGi5aGrKr1ZDsotUdWh7k1mMi569ygtaHJmErGEd`
   - ran: Boor up to 1.56x  
     CA `GHFpSSw2ZMjmKCyc1wrHUjJiqnJeP18mekY9GL1Xpump`
-- falling knife (code): blocked 18, ran 3, dumped 12, flat 2, open 1 (saving losses: keep it)
+- falling knife (code): blocked 17, ran 3, dumped 12, flat 1, open 1 (saving losses: keep it)
   - ran: Jimmies up to 1.53x  
     CA `GisWWjhwrSud4aFGSHvTMt85Ky14sY7LeBFCpfoFpump`
   - ran: Investor up to 1.58x  
     CA `J9eBkCb4UtquAMQqB6duwBmR99fFSMoTnDcaMB9Wpump`
   - ran: MONEY up to 1.58x  
     CA `DeACAbp2GMzapB6Z2K8qdkTZupmNbKc6EZx9bnbCpump`
-- bundles over the line: blocked 14, ran 3, dumped 8, flat 1, open 2 (saving losses: keep it)
+- bundles over the line: blocked 14, ran 3, dumped 8, flat 0, open 3 (saving losses: keep it)
   - ran: jingyu up to 1.58x  
     CA `DUZrwdjEthcJ99ZiRXr31UuqTohoTg7VjTEyfGdBpump`
   - ran: DUMBMONEY up to 1.74x  
     CA `GEHehS5Rr4rNCjvrHLjjV1avD4bjMsn53ywDGv1spump`
   - ran: Elonmas up to 2.28x  
     CA `DMXm1gSmAZn1RV4fGXGG8Y1cXfKWXMDYaiKF4B6Cpump`
-- other: blocked 14, ran 1, dumped 12, flat 0, open 1 (saving losses: keep it)
+- other: blocked 14, ran 1, dumped 13, flat 0, open 0 (saving losses: keep it)
   - ran: SXI up to 2.34x  
     CA `BFWNbSwRodXPTQqrMSCfhznhJwEzY6ERd6MHjWUEpump`
 - dev share over 1%: blocked 11, ran 2, dumped 8, flat 1, open 0 (saving losses: keep it)
@@ -205,11 +205,11 @@ The trenches are not quiet, and the meta is animal and mascot names. Fritz the H
 ## Moving most in its scans, last 30 min (1h volume)
 - Elonmas: $545,306 1h vol, $111,545 mcap, +290% 1h  
   CA `6B5X3keXJ4J8LLvswa2mbqMhrRDbt85Jo88sbB6apump`
-- FRITZ: $336,480 1h vol, $62,144 mcap, +44% 1h  
-  CA `4VMwK3shXxsaMbiJ4qtBMMEgi63riezBSWFHfA6Vpump`
 - TEEETHY: $117,480 1h vol, $58,634 mcap, -20% 1h  
   CA `BbC8hVHJ2bo6xFcGh2X6zcMiv1T1rznQd3qWoxXApump`
-- Elonmas: $100,091 1h vol, $60,892 mcap, +102% 1h  
-  CA `DMXm1gSmAZn1RV4fGXGG8Y1cXfKWXMDYaiKF4B6Cpump`
-- PUMPCHAN: $72,305 1h vol, $1,434,544 mcap, +9% 1h  
-  CA `Fo2HAwr7ZAUM2bSZ7MWSi16e3aWGpbw5MsUDYCttpump`
+- UHI: $66,261 1h vol, $977,824 mcap, -10% 1h  
+  CA `Bnw5JRPek5JvJhzUiB9yrs2cmzt4bLeFqSRzDzSppump`
+- Grodia: $63,919 1h vol, $836,666 mcap, -16% 1h  
+  CA `6HS1aeSk7osT5B1CzLp1HTRTAweFr5wurfMHS4vppump`
+- BLOCK0: $40,807 1h vol, $16,605 mcap, -43% 1h  
+  CA `3EoToNPW4mifRCZrNFkk7pLe86vmeBqdqbW1TLPoqst5`
