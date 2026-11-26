@@ -1,13 +1,13 @@
 # Trencher live report
 
-Updated 2026-11-26T06:48:39Z (paper trading, never real money)
+Updated 2026-11-26T07:03:52Z (paper trading, never real money)
 
 - Equity: $74.23 (-25.8% vs $100 start)
 - Closed trades: 22, 3 wins
 - Fees paid: $14.78 (axiom $2.81, network $9.18, pool $2.66), plus $4.15 lost to slippage
 - New trades: WATCH-ONLY (scans and decides, buys nothing)
-- Brain: subscription, claude-haiku-5-5 for routine calls, claude-opus-5-5 for the daily review; 406 routine calls and 0 plan-limit hits in 48h
-- Watch log: 102 coins being followed, 3765 filed, 0 would-buys (6h follow, sampled every 2 min)
+- Brain: subscription, claude-haiku-5-5 for routine calls, claude-opus-5-5 for the daily review; 407 routine calls and 0 plan-limit hits in 48h
+- Watch log: 99 coins being followed, 3770 filed, 0 would-buys (6h follow, sampled every 2 min)
 
 ## Scorecard (after fees)
 - 22 closed, 3 won (14%), net $-25.79
@@ -73,9 +73,13 @@ Updated 2026-11-26T06:48:39Z (paper trading, never real money)
   CA `H4gHnZ3NCU7Z9XQwGX6YYJNyieGEW8pqwGRUcdSxpump`
 
 ## Last scan
-- 06:47Z: 6 coins, 5 with pairs, 1 passed the market filters, 1 researched
+- 07:03Z: 5 coins, 4 with pairs, 0 passed the market filters, 0 researched
 
 ## Coins it looked at, and why it passed
+- 07:02Z WIFMAS (FINAL_STRETCH, $17,526 mcap, $35,231 5m vol): PASS at conviction 3, PASS: brand-new pump.fun pair, 6 minutes old, spiking 12x its hourly pace with no higher low and no radar mention. Blocker "too new" plus "chasing spike". Not a sniper. (V1, V6)  
+  CA `AbA72wDKTJivXbjv5SrNtGWBLtV1RX28TeYSa1WXpump`
+- 06:57Z Grodia (DIP, $807,377 mcap, $5,966 5m vol): PASS at conviction 3, PASS: Grodia is a DIP with no story. Zero mentions, no catalyst, a 9-copy ticker field, and a site that doesn't show this CA. Blocker: "dead story" (V1, V6, V13).  
+  CA `6HS1aeSk7osT5B1CzLp1HTRTAweFr5wurfMHS4vppump`
 - 06:48Z TEEETHY (DIP, $61,923 mcap, $9,760 5m vol): PASS at conviction 2, PASS — DIP with no story left to buy. Clean holders, but nothing on the radar, no catalyst, and a saw-tooth chart. Blocker: "dead story". (V1, V13)  
   CA `BbC8hVHJ2bo6xFcGh2X6zcMiv1T1rznQd3qWoxXApump`
 - 06:46Z Elonmas (DIP, $122,938 mcap, $54,112 5m vol): REJECT, Bundles: 7 linked wallet cluster(s) hold 20.6% of supply (>20%) (V17)  
@@ -92,10 +96,6 @@ Updated 2026-11-26T06:48:39Z (paper trading, never real money)
   CA `DMXm1gSmAZn1RV4fGXGG8Y1cXfKWXMDYaiKF4B6Cpump`
 - 06:17Z FIONA (DIP, $1,968,669 mcap, $3,036 5m vol): REJECT, Bundles: 10 linked wallet cluster(s) hold 30.2% of supply (>20%) (V17)  
   CA `B34nXKzCgsJb9ChLuSHPRpXLE3WFSWyeT8Cqkzzmpump`
-- 06:12Z Grodia (DIP, $832,221 mcap, $5,834 5m vol): PASS at conviction 3, PASS — DIP with no catalyst, no printed higher low, and a story the radar never names. The site doesn't show this CA. Wait. (V1, V13)  
-  CA `6HS1aeSk7osT5B1CzLp1HTRTAweFr5wurfMHS4vppump`
-- 06:09Z UHI (MIGRATED, $962,432 mcap, $5,132 5m vol): PASS at conviction 3, PASS — flow below pace, no printed higher low, and the site doesn't show a CA. A vamp field of 21 copies, and the Elon correction meme has already printed. (V1, V3, V13)  
-  CA `Bnw5JRPek5JvJhzUiB9yrs2cmzt4bLeFqSRzDzSppump`
 
 ## What its skips did next (last 48h)
 A skip "ran" if the coin reached the first target (1.5x) from the skip price before a 20% drop, "dumped" if the drop came first. Sampled every 10 min, followed 6h.
@@ -127,14 +127,14 @@ A skip "ran" if the coin reached the first target (1.5x) from the skip price bef
     CA `9TKbd3VFaMSXsEAicD9JVQWpWwAoLi4fSgWmZL2cpump`
   - ran: Bababoi up to 2.17x  
     CA `28B9kDm6XtQNqAkzuiKH3Zu1L8cVM6SLW4iRamFspump`
-- near the high / chasing: blocked 26, ran 5, dumped 17, flat 1, open 3 (saving losses: keep it)
+- near the high / chasing: blocked 26, ran 5, dumped 18, flat 1, open 2 (saving losses: keep it)
   - ran: BRUH up to 1.51x  
     CA `PgFtGGquvnv2zEkjG2N2QPvBTBrafuExGYEqahRpump`
   - ran: SNOWCUMBRR up to 2.36x  
     CA `Gf9wm93TTDpbPC467Eio5Vc42Kr6MAomUD172drWpump`
   - ran: HEYOS up to 1.91x  
     CA `A88p1LcHisrx3TuTwUGVrLtc1LBTUPZUfVgaCGutAFaK`
-- too new / sniping: blocked 22, ran 7, dumped 15, flat 0, open 0 (saving losses: keep it)
+- too new / sniping: blocked 23, ran 7, dumped 15, flat 0, open 1 (saving losses: keep it)
   - ran: BABYANSEM up to 2.77x  
     CA `F3VctV9FqDgiyqaztN6z78bgWy27eH7DBBHW1vjpump`
   - ran: Merged up to 2.18x  
@@ -203,11 +203,11 @@ Not quiet, but thin: the volume sits in coins under about 2h old, while the olde
 ## Moving most in its scans, last 30 min (1h volume)
 - Elonmas: $368,261 1h vol, $122,938 mcap, +1% 1h  
   CA `6B5X3keXJ4J8LLvswa2mbqMhrRDbt85Jo88sbB6apump`
-- Elonmas: $367,568 1h vol, $71,828 mcap, +138% 1h  
-  CA `DMXm1gSmAZn1RV4fGXGG8Y1cXfKWXMDYaiKF4B6Cpump`
 - TEEETHY: $124,401 1h vol, $46,872 mcap, -41% 1h  
   CA `BbC8hVHJ2bo6xFcGh2X6zcMiv1T1rznQd3qWoxXApump`
-- hoss: $81,080 1h vol, $6,095 mcap, +172% 1h  
+- hoss: $88,070 1h vol, $10,623 mcap, +374% 1h  
   CA `EvTaKHSWxhvqfdLNLJnuX8DMZyQA8Kg9nTNmhQhYpump`
-- NORFEATH: $62,498 1h vol, $461,431 mcap, -20% 1h  
-  CA `3gmFG4sFDJErDV8pacFrL2uUPXeGJTYLjfRy4hFypump`
+- Grodia: $61,964 1h vol, $807,377 mcap, -9% 1h  
+  CA `6HS1aeSk7osT5B1CzLp1HTRTAweFr5wurfMHS4vppump`
+- Fug: $50,333 1h vol, $14,738 mcap, +556% 1h  
+  CA `3QVBSB2kuJiQ75Po8qq4eV7msNFo7jMn22wfKuCTpump`
