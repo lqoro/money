@@ -1,13 +1,13 @@
 # Trencher live report
 
-Updated 2026-11-25T23:59:52Z (paper trading, never real money)
+Updated 2026-11-26T00:14:52Z (paper trading, never real money)
 
 - Equity: $74.23 (-25.8% vs $100 start)
 - Closed trades: 22, 3 wins
 - Fees paid: $14.78 (axiom $2.81, network $9.18, pool $2.66), plus $4.15 lost to slippage
 - New trades: WATCH-ONLY (scans and decides, buys nothing)
-- Brain: subscription, claude-haiku-5-5 for routine calls, claude-opus-5-5 for the daily review; 398 routine calls and 0 plan-limit hits in 48h
-- Watch log: 112 coins being followed, 3640 filed, 0 would-buys (6h follow, sampled every 2 min)
+- Brain: subscription, claude-haiku-5-5 for routine calls, claude-opus-5-5 for the daily review; 395 routine calls and 0 plan-limit hits in 48h
+- Watch log: 114 coins being followed, 3643 filed, 0 would-buys (6h follow, sampled every 2 min)
 
 ## Scorecard (after fees)
 - 22 closed, 3 won (14%), net $-25.79
@@ -73,9 +73,19 @@ Updated 2026-11-25T23:59:52Z (paper trading, never real money)
   CA `H4gHnZ3NCU7Z9XQwGX6YYJNyieGEW8pqwGRUcdSxpump`
 
 ## Last scan
-- 23:58Z: 8 coins, 7 with pairs, 1 passed the market filters, 1 researched
+- 00:14Z: 7 coins, 6 with pairs, 0 passed the market filters, 0 researched
 
 ## Coins it looked at, and why it passed
+- 00:13Z Pumpcat (MIGRATED, $231,886 mcap, $49,542 5m vol): REJECT, Top 10 hold 36.7% ex-pool (>25%) (V13)  
+  CA `5CPiu3nmhYWWnj6BfebvMzqqwPUBm8UzBtNGW4cEpump`
+- 00:09Z THANKS (MIGRATED, $34,858 mcap, $3,187 5m vol): PASS at conviction 2, PASS: too new and chasing a spike. 13 same-ticker copies, holiday theme not on the radar, and the peak is printing right now. Wait for the field to sort itself out. (V1, V6, V13)  
+  CA `AuGHNhb2ZFz62CHpkzmTutqrh75dUVGN91yFEU3fpump`
+- 00:09Z Grodia (DIP, $1,119,910 mcap, $8,108 5m vol): REJECT, Dip with fading attention is a falling knife, not a dip (5m at 0.36x the hour's pace, under 0.6x)  
+  CA `6HS1aeSk7osT5B1CzLp1HTRTAweFr5wurfMHS4vppump`
+- 00:09Z AMD (MIGRATED, $65,286 mcap, $21,934 5m vol): PASS at conviction 3, PASS. Down 92% from a $773k peak with 5m flow at 0.4x pace, nine copies of its ticker, and a +50% spike still printing. Falling knife in a vamp field. (V1, V3, V6)  
+  CA `2ndz2hhsxDFgU1sQHi8Qjro7KRrTPgen1NJdUtNDpump`
+- 00:05Z UHI (MIGRATED, $231,680 mcap, $10,316 5m vol): PASS at conviction 3, PASS — 2% off the 24h high after a +549% hour, 5m flow at 0.42x pace, and the team's own site still says "CA TBA" in a 21-copy vamp field. Chasing, no higher low. (V1, V3, V6)  
+  CA `Bnw5JRPek5JvJhzUiB9yrs2cmzt4bLeFqSRzDzSppump`
 - 23:58Z $XMAS (MIGRATED, $87,966 mcap, $3,227 5m vol): REJECT, RugCheck danger: Creator history of rugged tokens  
   CA `7ACq9bgHPCT33TWC6yaxLX5CfNQBbFachy9xKD7Spump`
 - 23:51Z PLAZA (MIGRATED, $70,749 mcap, $6,042 5m vol): PASS at conviction 2, PASS — PLAZA is flow below pace (5m at 0.66x its hourly average), has no printed higher low reclaim, and no meta or catalyst behind it. Blocker: "flow below pace". (V1, V6)  
@@ -86,33 +96,23 @@ Updated 2026-11-25T23:59:52Z (paper trading, never real money)
   CA `BQTG5qcyt3YpU1nJ37RAsTwd4fJa3cZXKAp9WjMETQu6`
 - 23:42Z FIONA (DIP, $1,929,752 mcap, $22,802 5m vol): REJECT, Bundles: 10 linked wallet cluster(s) hold 29.9% of supply (>20%) (V17)  
   CA `B34nXKzCgsJb9ChLuSHPRpXLE3WFSWyeT8Cqkzzmpump`
-- 23:42Z ROCKET (MIGRATED, $841,439 mcap, $2,132 5m vol): PASS at conviction 3, PASS: target too close. First resistance is the $942k peak, only 1.12x away, and 8 copies share the raccoon theme. Site is 6 days old and doesn't show this CA. (shallow band, V1, V6, V13)  
-  CA `6C9r2gzu8Pr54hTevHo3x5gSj9JqtpApj7obJnrtpump`
-- 23:42Z CBUCKS (MIGRATED, $5,384,091 mcap, $2,550 5m vol): REJECT, Top 10 hold 25.7% ex-pool (>25%) (V13)  
-  CA `DtcicPCKTKeAh7TDEzTym3hXeoHAoMiBdYJhMYxZpump`
-- 23:42Z NORFEATH (MIGRATED, $543,672 mcap, $13,606 5m vol): PASS at conviction 4, PASS — no printed higher low: the $715k-equivalent bounce high (0.000715) hasn't been reclaimed and the 5m candle is down 21%. Blocker "no higher low." Clean holders don't fix that (V1, V6).  
-  CA `3gmFG4sFDJErDV8pacFrL2uUPXeGJTYLjfRy4hFypump`
-- 23:27Z Copyinu (FINAL_STRETCH, $18,464 mcap, $9,221 5m vol): PASS at conviction 2, PASS: copycat of a dead copy-meta, 5m flow under $10k and falling, top 10 at 18.4%. Blocker "dead story." (V1, V6, V13)  
-  CA `GRXSoGBqmTkS78Rrvm8QyBJH9XMe8562eZojzHj2pump`
-- 23:24Z Grodia (MIGRATED, $1,223,029 mcap, $14,991 5m vol): PASS at conviction 3, PASS: 5m flow at 0.26x the hourly pace, no catalyst, and the site doesn't show the CA. Blocker "flow below pace". (V1, V6, V13)  
-  CA `6HS1aeSk7osT5B1CzLp1HTRTAweFr5wurfMHS4vppump`
 
 ## What its skips did next (last 48h)
 A skip "ran" if the coin reached the first target (1.5x) from the skip price before a 20% drop, "dumped" if the drop came first. Sampled every 10 min, followed 6h.
-- top 10 over 25%: blocked 39, ran 8, dumped 30, flat 0, open 1 (saving losses: keep it)
-  - ran: JENSEN up to 2.62x  
-    CA `GaNJeASYBM9k3TvEeUC2Pdyu1TjcpzTmPpoom92fpump`
-  - ran: GOAT up to 1.53x  
-    CA `5Ze97VEpX3EdRF4vbsxUXTdwGKF2qHGregrxToWEpump`
-  - ran: VIctory up to 1.64x  
-    CA `81F3a7CihhMQEsk4TnEs34XVQgRr8QcbghBjNAZnpump`
-- flow below pace: blocked 36, ran 5, dumped 24, flat 1, open 6 (saving losses: keep it)
+- flow below pace: blocked 38, ran 5, dumped 24, flat 1, open 8 (saving losses: keep it)
   - ran: Jesus up to 1.64x  
     CA `Gy5BUDnpJMWRsNVKh9sRtsBGunFXKKrbroQRoydQpump`
   - ran: GROKIA up to 1.51x  
     CA `3cL47ohWa2HApLYKtqPsqkjaxJ6HLvT5Ri1KvWdXpump`
   - ran: BOOBS up to 1.51x  
     CA `E35iEA2yLLHc1tjm6et1Z3YuH8DhxJYWtWezPHgSpump`
+- top 10 over 25%: blocked 37, ran 6, dumped 29, flat 0, open 2 (saving losses: keep it)
+  - ran: VIctory up to 1.64x  
+    CA `81F3a7CihhMQEsk4TnEs34XVQgRr8QcbghBjNAZnpump`
+  - ran: SCF up to 2.01x  
+    CA `Az7dYDicMc4G9hwnkeQYwHi6Fop1711C7hABcrWzpump`
+  - ran: MARS up to 2.06x  
+    CA `816BuXnCFQqt6KXbBTcFgHWD29Ckpaqt8HMKSN4Vpump`
 - brain paced: blocked 35, ran 10, dumped 24, flat 1, open 0 (saving losses: keep it)
   - ran: Scamsem up to 1.56x  
     CA `5JWeGmA9z6yHd5F9P6B23A8wthho8BpZuDmQv5DfLoat`
@@ -120,26 +120,26 @@ A skip "ran" if the coin reached the first target (1.5x) from the skip price bef
     CA `9cDnmLRDWeJzcpyw8tSFAT7HS4Aunx6MmZWjMfrzpump`
   - ran: SHHFT up to 1.61x  
     CA `GqMg4TRt5U5HRK6oeZYwCF1Jz7Ym9MSzWSoFCtFsbzf6`
-- near the high / chasing: blocked 28, ran 7, dumped 19, flat 0, open 2 (saving losses: keep it)
+- RugCheck danger: blocked 27, ran 2, dumped 23, flat 0, open 2 (saving losses: keep it)
+  - ran: TROLL up to 1.94x  
+    CA `7ykeHoEnjnGkY6tqteXn47fdGtd7kfXWghiyZ7YKpump`
+  - ran: Snowball up to 3.52x  
+    CA `9TKbd3VFaMSXsEAicD9JVQWpWwAoLi4fSgWmZL2cpump`
+- near the high / chasing: blocked 26, ran 7, dumped 17, flat 0, open 2 (saving losses: keep it)
   - ran: Jesus up to 1.64x  
     CA `Gy5BUDnpJMWRsNVKh9sRtsBGunFXKKrbroQRoydQpump`
   - ran: FATU up to 2.89x  
     CA `3reEjCbDFht7LnNdKncQ3vohYDbAMJWXkbzWLSNhpump`
   - ran: NOCAP up to 1.59x  
     CA `RZv3jrN6u1e2vCwTiJgRJwfnmyJaZqq48qkPz1xpump`
-- RugCheck danger: blocked 27, ran 2, dumped 23, flat 0, open 2 (saving losses: keep it)
-  - ran: TROLL up to 1.94x  
-    CA `7ykeHoEnjnGkY6tqteXn47fdGtd7kfXWghiyZ7YKpump`
-  - ran: Snowball up to 3.52x  
-    CA `9TKbd3VFaMSXsEAicD9JVQWpWwAoLi4fSgWmZL2cpump`
-- too new / sniping: blocked 19, ran 4, dumped 15, flat 0, open 0 (saving losses: keep it)
+- too new / sniping: blocked 19, ran 4, dumped 14, flat 0, open 1 (saving losses: keep it)
   - ran: BABYANSEM up to 2.77x  
     CA `F3VctV9FqDgiyqaztN6z78bgWy27eH7DBBHW1vjpump`
   - ran: Merged up to 2.18x  
     CA `AMYpNGi5aGrKr1ZDsotUdWh7k1mMi569ygtaHJmErGEd`
   - ran: Boor up to 1.56x  
     CA `GHFpSSw2ZMjmKCyc1wrHUjJiqnJeP18mekY9GL1Xpump`
-- falling knife (code): blocked 14, ran 2, dumped 11, flat 0, open 1 (saving losses: keep it)
+- falling knife (code): blocked 15, ran 2, dumped 11, flat 0, open 2 (saving losses: keep it)
   - ran: Jimmies up to 1.53x  
     CA `GisWWjhwrSud4aFGSHvTMt85Ky14sY7LeBFCpfoFpump`
   - ran: Investor up to 1.58x  
@@ -197,11 +197,11 @@ The trenches are running on three things: animal mascots (Norfeather, Pompompuri
 ## Moving most in its scans, last 30 min (1h volume)
 - PVE: $702,814 1h vol, $223,937 mcap, +100% 1h  
   CA `BQTG5qcyt3YpU1nJ37RAsTwd4fJa3cZXKAp9WjMETQu6`
-- NORFEATH: $134,353 1h vol, $562,513 mcap, +15% 1h  
-  CA `3gmFG4sFDJErDV8pacFrL2uUPXeGJTYLjfRy4hFypump`
-- Loki: $115,429 1h vol, $7,424 mcap, -73% 1h  
-  CA `5mgqgmEkWQFv648G49WZMzTwXk3ZpqAkMBXpa1uopump`
-- PLAZA: $111,799 1h vol, $86,502 mcap, +411% 1h  
-  CA `HWqqNLpcHvxJpNy43FJwnS1xDNsvobYtpLK8ostWhQwM`
-- FIONA: $93,355 1h vol, $1,929,752 mcap, -18% 1h  
-  CA `B34nXKzCgsJb9ChLuSHPRpXLE3WFSWyeT8Cqkzzmpump`
+- AMD: $659,986 1h vol, $108,267 mcap, +179% 1h  
+  CA `2ndz2hhsxDFgU1sQHi8Qjro7KRrTPgen1NJdUtNDpump`
+- UHI: $291,784 1h vol, $231,680 mcap, +549% 1h  
+  CA `Bnw5JRPek5JvJhzUiB9yrs2cmzt4bLeFqSRzDzSppump`
+- Grodia: $274,273 1h vol, $1,089,828 mcap, +17% 1h  
+  CA `6HS1aeSk7osT5B1CzLp1HTRTAweFr5wurfMHS4vppump`
+- Copyinu: $146,388 1h vol, $15,207 mcap, -67% 1h  
+  CA `GRXSoGBqmTkS78Rrvm8QyBJH9XMe8562eZojzHj2pump`
