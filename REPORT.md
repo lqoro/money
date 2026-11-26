@@ -1,13 +1,13 @@
 # Trencher live report
 
-Updated 2026-11-26T04:17:20Z (paper trading, never real money)
+Updated 2026-11-26T04:32:24Z (paper trading, never real money)
 
 - Equity: $74.23 (-25.8% vs $100 start)
 - Closed trades: 22, 3 wins
 - Fees paid: $14.78 (axiom $2.81, network $9.18, pool $2.66), plus $4.15 lost to slippage
 - New trades: WATCH-ONLY (scans and decides, buys nothing)
 - Brain: subscription, claude-haiku-5-5 for routine calls, claude-opus-5-5 for the daily review; 407 routine calls and 0 plan-limit hits in 48h
-- Watch log: 110 coins being followed, 3722 filed, 0 would-buys (6h follow, sampled every 2 min)
+- Watch log: 110 coins being followed, 3726 filed, 0 would-buys (6h follow, sampled every 2 min)
 
 ## Scorecard (after fees)
 - 22 closed, 3 won (14%), net $-25.79
@@ -73,9 +73,17 @@ Updated 2026-11-26T04:17:20Z (paper trading, never real money)
   CA `H4gHnZ3NCU7Z9XQwGX6YYJNyieGEW8pqwGRUcdSxpump`
 
 ## Last scan
-- 04:16Z: 8 coins, 8 with pairs, 0 passed the market filters, 0 researched
+- 04:31Z: 2 coins, 2 with pairs, 0 passed the market filters, 0 researched
 
 ## Coins it looked at, and why it passed
+- 04:30Z TEEETHY (MIGRATED, $89,139 mcap, $6,229 5m vol): PASS at conviction 2, PASS: chasing, too new, no higher low. Price is 4.7% off a 34-minute-old peak after a +202% hour, with no printed structure and no story behind it (V1, V6).  
+  CA `BbC8hVHJ2bo6xFcGh2X6zcMiv1T1rznQd3qWoxXApump`
+- 04:25Z ccat (MIGRATED, $43,946 mcap, $5,998 5m vol): PASS at conviction 3, PASS: clancat is 3.7% off its high, and 5m volume is 6.6x its hourly pace, so this is a chase. No printed higher low, and top 10 at 24%. Watch it. (MIGRATED rule, V1, V6)  
+  CA `3jAB5ksB13Kgm2Q39NU6d2USUxBy2f9LaTvyay6Gpump`
+- 04:22Z Squidtard (FINAL_STRETCH, $15,641 mcap, $2,369 5m vol): REJECT, Top 10 hold 27.7% ex-pool (>25%) (V13)  
+  CA `4vzy1LESBe5SXhJL4ggpzrnCbpR4mEW3u2AGk1Y3pump`
+- 04:18Z HOGE (DIP, $583,852 mcap, $2,725 5m vol): REJECT, Bundles: 9 linked wallet cluster(s) hold 27.9% of supply (>20%) (V17)  
+  CA `FVzqGqRmr4UH1Fif6dewmwbJ1p4YUZCu8dcw4Efopump`
 - 04:15Z FIONA (DIP, $1,937,690 mcap, $6,075 5m vol): REJECT, Bundles: 10 linked wallet cluster(s) hold 30.2% of supply (>20%) (V17)  
   CA `B34nXKzCgsJb9ChLuSHPRpXLE3WFSWyeT8Cqkzzmpump`
 - 04:14Z SXI (no setup, $6,341 mcap, $20,999 5m vol): REJECT, No setup fits: not Final Stretch, not a migrated runner, not a healthy dip  
@@ -88,18 +96,10 @@ Updated 2026-11-26T04:17:20Z (paper trading, never real money)
   CA `Fo2HAwr7ZAUM2bSZ7MWSi16e3aWGpbw5MsUDYCttpump`
 - 03:59Z wocket (FINAL_STRETCH, $26,098 mcap, $32,262 5m vol): PASS at conviction 3, PASS: wocket is an 11-minute-old bonding-curve copy in a 9-coin one-word field, up 53% on 5m with no X, no site, and a 3.96% bundle cluster. Blockers: too new, chasing spike, split crowd. (V1, V3, V6, V13)  
   CA `6mctjLR559n8vWzmcm2Wj72xYSvcm8og3cFGy3RXpump`
-- 03:57Z Grodia (DIP, $1,071,271 mcap, $6,318 5m vol): PASS at conviction 3, PASS: DIP with no named catalyst, theme pace 0.89x, website 0.3 days old and no CA on it. Saw-tooth 15m chart. Farm-shaped until proven otherwise (V3, V13).  
-  CA `6HS1aeSk7osT5B1CzLp1HTRTAweFr5wurfMHS4vppump`
-- 03:53Z UHI (MIGRATED, $1,137,460 mcap, $4,428 5m vol): PASS at conviction 2, PASS: flow below pace. UHI has $4.4k on the 5m at 0.78x its hourly pace, sits 10.5% off a $1.27M high, and the official site shows "CA TBA" (blocker: flow below pace). (V1, V3, V6)  
-  CA `Bnw5JRPek5JvJhzUiB9yrs2cmzt4bLeFqSRzDzSppump`
-- 03:50Z 2 (FINAL_STRETCH, $17,429 mcap, $31,987 5m vol): PASS at conviction 3, PASS — 7 minutes old on the bonding curve, a one-coin joke theme, and the only "catalyst" is an unverified Elon tweet link. That's new-pair territory we don't snipe (V1, V6, V13). Blocker: "too new".  
-  CA `HkywsKMf5FDj7QpgRE3BoE2nJqJauxEVbGjpnYe6pump`
-- 03:39Z MCAP (MIGRATED, $58,189 mcap, $18,902 5m vol): PASS at conviction 3, PASS: vamp field, not the leader, flow below pace, and the site doesn't show this CA. Blockers: "split crowd", "flow below pace", "no higher low", "too new". (V1, V3, V6)  
-  CA `AYij72wApHA4qGV5RbZJhsAVocjHtJJhgoUswV3tpump`
 
 ## What its skips did next (last 48h)
 A skip "ran" if the coin reached the first target (1.5x) from the skip price before a 20% drop, "dumped" if the drop came first. Sampled every 10 min, followed 6h.
-- top 10 over 25%: blocked 37, ran 6, dumped 28, flat 0, open 3 (saving losses: keep it)
+- top 10 over 25%: blocked 38, ran 6, dumped 28, flat 0, open 4 (saving losses: keep it)
   - ran: SCF up to 2.01x  
     CA `Az7dYDicMc4G9hwnkeQYwHi6Fop1711C7hABcrWzpump`
   - ran: MARS up to 2.06x  
@@ -127,14 +127,14 @@ A skip "ran" if the coin reached the first target (1.5x) from the skip price bef
     CA `9TKbd3VFaMSXsEAicD9JVQWpWwAoLi4fSgWmZL2cpump`
   - ran: Bababoi up to 2.17x  
     CA `28B9kDm6XtQNqAkzuiKH3Zu1L8cVM6SLW4iRamFspump`
-- near the high / chasing: blocked 28, ran 5, dumped 20, flat 1, open 2 (saving losses: keep it)
+- near the high / chasing: blocked 28, ran 6, dumped 19, flat 1, open 2 (saving losses: keep it)
+  - ran: BRUH up to 1.51x  
+    CA `PgFtGGquvnv2zEkjG2N2QPvBTBrafuExGYEqahRpump`
   - ran: ACHI up to 1.53x  
     CA `HADu1KBKhLhzmqyrdbF96F73XP892DTq3MC2dztApump`
   - ran: SNOWCUMBRR up to 2.36x  
     CA `Gf9wm93TTDpbPC467Eio5Vc42Kr6MAomUD172drWpump`
-  - ran: HEYOS up to 1.91x  
-    CA `A88p1LcHisrx3TuTwUGVrLtc1LBTUPZUfVgaCGutAFaK`
-- too new / sniping: blocked 25, ran 7, dumped 18, flat 0, open 0 (saving losses: keep it)
+- too new / sniping: blocked 26, ran 7, dumped 18, flat 0, open 1 (saving losses: keep it)
   - ran: BABYANSEM up to 2.77x  
     CA `F3VctV9FqDgiyqaztN6z78bgWy27eH7DBBHW1vjpump`
   - ran: Merged up to 2.18x  
@@ -148,8 +148,10 @@ A skip "ran" if the coin reached the first target (1.5x) from the skip price bef
     CA `J9eBkCb4UtquAMQqB6duwBmR99fFSMoTnDcaMB9Wpump`
   - ran: MONEY up to 1.58x  
     CA `DeACAbp2GMzapB6Z2K8qdkTZupmNbKc6EZx9bnbCpump`
-- other: blocked 13, ran 0, dumped 12, flat 0, open 1 (saving losses: keep it)
-- bundles over the line: blocked 12, ran 2, dumped 9, flat 0, open 1 (saving losses: keep it)
+- other: blocked 13, ran 1, dumped 12, flat 0, open 0 (saving losses: keep it)
+  - ran: SXI up to 2.34x  
+    CA `BFWNbSwRodXPTQqrMSCfhznhJwEzY6ERd6MHjWUEpump`
+- bundles over the line: blocked 12, ran 2, dumped 8, flat 0, open 2 (saving losses: keep it)
   - ran: jingyu up to 1.58x  
     CA `DUZrwdjEthcJ99ZiRXr31UuqTohoTg7VjTEyfGdBpump`
   - ran: DUMBMONEY up to 1.74x  
@@ -196,16 +198,16 @@ Nothing has a positive edge after costs. All 213 settled coins came out at -12.2
 - [2026-11-02 20:25] I expected Slingoor, a clean MIGRATED leader with $25k of 5m flow at pace and a 0.77 buy share, to retest its $408k high from $304k. It never went green (0.98x peak) and hit the -20% stop in 2 minutes, a -$2.86 probe. My own thesis admitted there was no printed higher low after a peak only 6 minutes old, so this confirms the money-shape rule: buy share and flow are not structure (V1, V6). Next time a MIGRATED pullback with no higher low above the hourly low is a PASS with blocker "no higher low", not a probe. This is one loss, so it adds no new ban beyond the rule I already have.
 
 ## Meta right now
-Meta: the trenches are active, but the movers are split. Rising are generic one-word and attention-joke names minted in the last hour (coin at 6 min, FOMO at 0.1h, Marketcap at 0.4h, Liquid under 6 min, Harlod at 0.2h) with 54-71% buys, and FOMO and Marketcap are up about 430% on 1h. Fading are fresh launches dumping 64-99% on 1h (LOKI, MemeStonks, Anon, WORTHY), and TAXMAN has thinned to about $2k on 5m. The only real setup candidate is coin ($29k mcap, $84k 5m, 54% buys, on pumpswap), but it is 6 minutes old, below our $30k MIGRATED floor, and has no holder or bundle data yet, so it's a WATCH, not a buy. Re-check it only if it holds $30k or more on a pullback after holder and bundle checks pass, and confirm it's the original "coin" token, since a one-word name invites copycats (V1, V3). LIQ and FOMO clear the 5m bar but are still on the bonding curve under 6 minutes old, which is new-pair territory we don't snipe, so PASS (V1). The web's Trump dinner and Ansem headlines aren't moving any of these coins, and the web's volume figures didn't match scan_movers, so I used only the scan.
+The meta is split, not quiet. Animal and mascot names minted in the last few hours are still on the pump.fun curve and pulling volume: PoorGoat ($28k mcap, $42k 5m, 50% buys, 6 min old), wocket ($26k, $32k 5m, 62% buys), SpaceX Inu ($15k, $20k 5m, 61% buys) and The Black Bull ($10.6k, 61% buys). Older animal and character coins on PumpSwap at $0.5M to $2M (Grodia, Norfeather, UHI, Fiona the Hippo, PumpChan) show steady 59-72% buy ratios but only $3-6k on the 5-minute, under our $10k bar. One-word joke names launched in the last hour are fading hard: "coin" is -94% with zero 5m buys, MEMO -94%, Liquid -81%, Harlod and KEKW -73%. The web's Trump dinner and Ansem headlines don't show up in these volumes, so I'm ignoring them. Setups to research now: PoorGoat and wocket as FINAL_STRETCH near the ~$34k bond, but they are minutes old, so it's new-pair risk; probe at most (conviction 5) only if one holds above $30k after a pullback and the bundle and holder checks clear. Grodia, Norfeather and UHI are MIGRATED candidates that qualify on mcap but fail the $10k 5m bar today; they become buys only if 5m volume passes $10k with buyers still above 60%.
 
 ## Moving most in its scans, last 30 min (1h volume)
-- coin: $448,223 1h vol, $2,153 mcap, -94% 1h  
+- coin: $320,860 1h vol, $2,111 mcap, -96% 1h  
   CA `CMmfK9KFjFRPgAEkixMpchNnA5zTz7xYdQkSSc8Upump`
-- Bull: $94,150 1h vol, $10,560 mcap, +292% 1h  
+- MCAP: $215,819 1h vol, $6,389 mcap, -95% 1h  
+  CA `AYij72wApHA4qGV5RbZJhsAVocjHtJJhgoUswV3tpump`
+- Bull: $100,541 1h vol, $10,368 mcap, +285% 1h  
   CA `2xoJEBPrfhNm6DbrUHj4EvMyZKEEZgXHxEK9DNXxpump`
-- KEKW: $92,716 1h vol, $13,745 mcap, -49% 1h  
-  CA `4HS4oza8YdXCHTWP3ToCrPkYUm9Afv7aV3y6up5Upump`
-- Grodia: $84,783 1h vol, $1,071,271 mcap, +51% 1h  
-  CA `6HS1aeSk7osT5B1CzLp1HTRTAweFr5wurfMHS4vppump`
-- NORFEATH: $68,899 1h vol, $589,353 mcap, +5% 1h  
-  CA `3gmFG4sFDJErDV8pacFrL2uUPXeGJTYLjfRy4hFypump`
+- POORGOAT: $97,297 1h vol, $10,420 mcap, +138% 1h  
+  CA `Fc3z41QViQQwyU3pAHU8ntyi7KnX4UDqVDEmNremSLam`
+- TEEETHY: $81,036 1h vol, $89,139 mcap, +202% 1h  
+  CA `BbC8hVHJ2bo6xFcGh2X6zcMiv1T1rznQd3qWoxXApump`
