@@ -1,13 +1,13 @@
 # Trencher live report
 
-Updated 2026-11-26T09:50:25Z (paper trading, never real money)
+Updated 2026-11-26T10:05:25Z (paper trading, never real money)
 
 - Equity: $74.23 (-25.8% vs $100 start)
 - Closed trades: 22, 3 wins
 - Fees paid: $14.78 (axiom $2.81, network $9.18, pool $2.66), plus $4.15 lost to slippage
 - New trades: WATCH-ONLY (scans and decides, buys nothing)
 - Brain: subscription, claude-haiku-5-5 for routine calls, claude-opus-5-5 for the daily review; 405 routine calls and 0 plan-limit hits in 48h
-- Watch log: 83 coins being followed, 3823 filed, 0 would-buys (6h follow, sampled every 2 min)
+- Watch log: 81 coins being followed, 3828 filed, 0 would-buys (6h follow, sampled every 2 min)
 
 ## Scorecard (after fees)
 - 22 closed, 3 won (14%), net $-25.79
@@ -73,9 +73,15 @@ Updated 2026-11-26T09:50:25Z (paper trading, never real money)
   CA `H4gHnZ3NCU7Z9XQwGX6YYJNyieGEW8pqwGRUcdSxpump`
 
 ## Last scan
-- 09:49Z: 5 coins, 5 with pairs, 0 passed the market filters, 0 researched
+- 10:05Z: 4 coins, 4 with pairs, 0 passed the market filters, 0 researched
 
 ## Coins it looked at, and why it passed
+- 09:59Z Grodia (MIGRATED, $419,096 mcap, $3,491 5m vol): PASS at conviction 2, PASS: Grodia is 84% off its $2.64M peak, 5m volume is $3.5k (under the $10k line), flow is under pace, and it's one of 10 copies of the ticker. The site doesn't show this CA and is 0.6 days old. Blockers: "too deep", "flow below pace", "dead story". (V1, V6, V13)  
+  CA `6HS1aeSk7osT5B1CzLp1HTRTAweFr5wurfMHS4vppump`
+- 09:54Z Sae (MIGRATED, $34,130 mcap, $2,350 5m vol): REJECT, Dev holds 2.1% (>1%) (V13, V17)  
+  CA `ZP4J8fNk7FC3iDUPAWd8TX6q8CkVVuSeJgnHCvpPSae`
+- 09:53Z Oro (FINAL_STRETCH, $17,137 mcap, $18,825 5m vol): REJECT, Top 10 hold 25.4% ex-pool (>25%) (V13)  
+  CA `9bj8yMQ3gZ36cd2d4efU49dqZsaw3gA6CCaWrbKmpump`
 - 09:39Z PUMPCHAN (MIGRATED, $6,011,665 mcap, $75,198 5m vol): REJECT, Top 10 hold 28.3% ex-pool (>25%) (V13)  
   CA `Fo2HAwr7ZAUM2bSZ7MWSi16e3aWGpbw5MsUDYCttpump`
 - 09:37Z duk (FINAL_STRETCH, $14,910 mcap, $8,384 5m vol): PASS at conviction 3, PASS: 15-minute-old duk, the site says "ca: soon" and the domain is a day old, with 10 same-ticker copies and no buzz. Too new, no story. (V1, V6, V13)  
@@ -90,23 +96,17 @@ Updated 2026-11-26T09:50:25Z (paper trading, never real money)
   CA `9QT8K685Hrae4k11dhGXirdtpfAaimExtyfwt8cPpump`
 - 09:25Z ANON (FINAL_STRETCH, $23,855 mcap, $18,206 5m vol): PASS at conviction 3, PASS: chasing spike on a sell-heavy pre-bond coin. The last 5m candle is up 75%, buys are 39% of 5m flow with more sells than buys, and the site is 1.4 days old and doesn't show this CA. Blocker: chasing spike / flow below pace (V1, V6).  
   CA `GseubmYS1ARwxkMwgyYns1wQjuXba1gSJWpJDsNDpump`
-- 09:20Z PPV (FINAL_STRETCH, $22,827 mcap, $11,194 5m vol): PASS at conviction 2, PASS. Chasing a spike: the last 5m candle is up 64%, 1h is up 750%, and there's no printed higher low, on an AI-clip pitch with no GitHub and a 2-hour-old site that doesn't show this CA. Blocker: "chasing spike" (V1, V6, V13).  
-  CA `CbGrZ3Q2XxSV2oiZsLkDWW1GFjrqUDAzTH9XwVr1pump`
-- 09:16Z CBUCKS (MIGRATED, $6,120,782 mcap, $16,061 5m vol): REJECT, Top 10 hold 25.7% ex-pool (>25%) (V13)  
-  CA `DtcicPCKTKeAh7TDEzTym3hXeoHAoMiBdYJhMYxZpump`
-- 09:14Z Grodia (MIGRATED, $446,131 mcap, $2,918 5m vol): PASS at conviction 2, PASS: down 83% from a $2.6M peak, past the 10-60% MIGRATED zone and the 70% DIP ceiling. Flow at 0.56x pace and the site shows a TBA CA on a 0.6-day-old domain. Farm-shaped. (V1, V6, V13)  
-  CA `6HS1aeSk7osT5B1CzLp1HTRTAweFr5wurfMHS4vppump`
 
 ## What its skips did next (last 48h)
 A skip "ran" if the coin reached the first target (1.5x) from the skip price before a 20% drop, "dumped" if the drop came first. Sampled every 10 min, followed 6h.
-- top 10 over 25%: blocked 39, ran 6, dumped 31, flat 0, open 2 (saving losses: keep it)
+- top 10 over 25%: blocked 40, ran 6, dumped 31, flat 0, open 3 (saving losses: keep it)
   - ran: SCF up to 2.01x  
     CA `Az7dYDicMc4G9hwnkeQYwHi6Fop1711C7hABcrWzpump`
   - ran: MARS up to 2.06x  
     CA `816BuXnCFQqt6KXbBTcFgHWD29Ckpaqt8HMKSN4Vpump`
   - ran: 4CHAN up to 1.87x  
     CA `DVdWuNK8ncn79B6z8nCiwcNAiwyFcmBPfChgxJGTpump`
-- flow below pace: blocked 35, ran 3, dumped 28, flat 3, open 1 (saving losses: keep it)
+- flow below pace: blocked 35, ran 3, dumped 27, flat 3, open 2 (saving losses: keep it)
   - ran: BOOBS up to 1.51x  
     CA `E35iEA2yLLHc1tjm6et1Z3YuH8DhxJYWtWezPHgSpump`
   - ran: BASKET up to 1.55x  
@@ -148,7 +148,7 @@ A skip "ran" if the coin reached the first target (1.5x) from the skip price bef
     CA `J9eBkCb4UtquAMQqB6duwBmR99fFSMoTnDcaMB9Wpump`
   - ran: MONEY up to 1.58x  
     CA `DeACAbp2GMzapB6Z2K8qdkTZupmNbKc6EZx9bnbCpump`
-- bundles over the line: blocked 15, ran 3, dumped 7, flat 0, open 5 (saving losses: keep it)
+- bundles over the line: blocked 15, ran 3, dumped 8, flat 0, open 4 (saving losses: keep it)
   - ran: jingyu up to 1.58x  
     CA `DUZrwdjEthcJ99ZiRXr31UuqTohoTg7VjTEyfGdBpump`
   - ran: DUMBMONEY up to 1.74x  
@@ -205,11 +205,11 @@ The trenches are thin and split across three lanes, none of them the Trump news:
 ## Moving most in its scans, last 30 min (1h volume)
 - PUMPCHAN: $426,930 1h vol, $6,273,446 mcap, -7% 1h  
   CA `Fo2HAwr7ZAUM2bSZ7MWSi16e3aWGpbw5MsUDYCttpump`
-- ANON: $79,405 1h vol, $18,953 mcap, +333% 1h  
-  CA `GseubmYS1ARwxkMwgyYns1wQjuXba1gSJWpJDsNDpump`
-- IShowSpace: $62,782 1h vol, $9,354 mcap, -67% 1h  
-  CA `EGiRRwVAKQrD8gk7e4hNyPCRormANKiNo5uKtY46pump`
-- pnp-lean: $55,285 1h vol, $2,016 mcap, -93% 1h  
+- WIENER: $275,874 1h vol, $1,460 mcap, -95% 1h  
+  CA `8BDkDfj3ZUvcG9caGzF2XnHfwg7K6fjfKKDvX6SCpump`
+- Ponzi: $60,322 1h vol, $2,067 mcap, -62% 1h  
+  CA `3wYjTDMrX6Q8z9SRtaJNhgXh21DbRJt1iYaQ8LQ3pump`
+- pnp-lean: $55,426 1h vol, $1,908 mcap, -93% 1h  
   CA `AfJBDMQ9NYtDssHK22xZ9v3SubrrR1kczzaQA1sQb5rB`
-- NORFEATH: $53,752 1h vol, $409,236 mcap, -24% 1h  
-  CA `3gmFG4sFDJErDV8pacFrL2uUPXeGJTYLjfRy4hFypump`
+- CBUCKS: $49,735 1h vol, $6,298,438 mcap, +11% 1h  
+  CA `DtcicPCKTKeAh7TDEzTym3hXeoHAoMiBdYJhMYxZpump`
