@@ -1,13 +1,13 @@
 # Trencher live report
 
-Updated 2026-11-26T22:12:30Z (paper trading, never real money)
+Updated 2026-11-26T22:27:37Z (paper trading, never real money)
 
 - Equity: $74.23 (-25.8% vs $100 start)
 - Closed trades: 22, 3 wins
 - Fees paid: $14.78 (axiom $2.81, network $9.18, pool $2.66), plus $4.15 lost to slippage
 - New trades: WATCH-ONLY (scans and decides, buys nothing)
-- Brain: subscription, claude-haiku-5-5 for routine calls, claude-opus-5-5 for the daily review; 374 routine calls and 0 plan-limit hits in 48h
-- Watch log: 80 coins being followed, 4008 filed, 0 would-buys (6h follow, sampled every 2 min)
+- Brain: subscription, claude-haiku-5-5 for routine calls, claude-opus-5-5 for the daily review; 373 routine calls and 0 plan-limit hits in 48h
+- Watch log: 79 coins being followed, 4011 filed, 0 would-buys (6h follow, sampled every 2 min)
 
 ## Scorecard (after fees)
 - 22 closed, 3 won (14%), net $-25.79
@@ -73,9 +73,13 @@ Updated 2026-11-26T22:12:30Z (paper trading, never real money)
   CA `H4gHnZ3NCU7Z9XQwGX6YYJNyieGEW8pqwGRUcdSxpump`
 
 ## Last scan
-- 22:11Z: 4 coins, 4 with pairs, 0 passed the market filters, 0 researched
+- 22:27Z: 4 coins, 4 with pairs, 0 passed the market filters, 0 researched
 
 ## Coins it looked at, and why it passed
+- 22:26Z JIMMY (DIP, $463,693 mcap, $1,060 5m vol): REJECT, 5m volume $1,060 is dead (<$2,000) (V1)  
+  CA `38M2z4UCfZEkUHFzD48vhKQhFhNyRGto8pZbLjNipump`
+- 22:12Z Hoppy (MIGRATED, $1,614,217 mcap, $10,050 5m vol): PASS at conviction 3, PASS: flow at 0.2x its hourly pace, no printed higher low, and 21 copies of the same name share the crowd. Hoppy's 5m volume is $10k on a 1.6M cap, which is the threshold, not live flow. (V1, V6, V13)  
+  CA `CFX1gH7CKYwqYXrfDkS2MUxJcEhs8PT63DyRA1chpump`
 - 22:08Z Cateball (DIP, $780,744 mcap, $20,765 5m vol): REJECT, Dip with fading attention is a falling knife, not a dip (5m at 0.36x the hour's pace, under 0.6x)  
   CA `Bb38n8AVLMh9amo8qtjLvqE8nPtfs8GEsyzg1pC6pump`
 - 21:47Z HOLD (no setup, $14,343 mcap, $20,509 5m vol): REJECT, No setup fits: not Final Stretch, not a migrated runner, not a healthy dip  
@@ -92,10 +96,6 @@ Updated 2026-11-26T22:12:30Z (paper trading, never real money)
   CA `FeccRb35QDEEhru5c3HXznVmZDXcvVwJfNbRhSzqbWqX`
 - 21:23Z Goon (MIGRATED, $30,387 mcap, $9,481 5m vol): REJECT, Bundles: 4 linked wallet cluster(s) hold 36.0% of supply (>20%) (V17)  
   CA `6Sm9SMP11iFuL7AqFCJeyQc23WF4s1ZGxS7JXveQJRW`
-- 21:23Z Cateball (MIGRATED, $678,838 mcap, $115,008 5m vol): REJECT, Top 10 hold 46.3% ex-pool (>25%) (V13)  
-  CA `Bb38n8AVLMh9amo8qtjLvqE8nPtfs8GEsyzg1pC6pump`
-- 21:17Z CALL (FINAL_STRETCH, $22,310 mcap, $12,906 5m vol): REJECT, Top 10 hold 26.4% ex-pool (>25%) (V13)  
-  CA `Bs65KuvSxcXd9eSKVLXJxyY1amzGn6k77T4U2B6k6CBP`
 
 ## What its skips did next (last 48h)
 A skip "ran" if the coin reached the first target (1.5x) from the skip price before a 20% drop, "dumped" if the drop came first. Sampled every 10 min, followed 6h.
@@ -106,7 +106,7 @@ A skip "ran" if the coin reached the first target (1.5x) from the skip price bef
     CA `DVdWuNK8ncn79B6z8nCiwcNAiwyFcmBPfChgxJGTpump`
   - ran: SWARM up to 1.57x  
     CA `2Rw6rLRRZXQLNreForjeVvDjnpYUaW6rmMFXmRP9pump`
-- flow below pace: blocked 40, ran 4, dumped 32, flat 4, open 0 (saving losses: keep it)
+- flow below pace: blocked 40, ran 4, dumped 31, flat 4, open 1 (saving losses: keep it)
   - ran: BOOBS up to 1.51x  
     CA `E35iEA2yLLHc1tjm6et1Z3YuH8DhxJYWtWezPHgSpump`
   - ran: BASKET up to 1.55x  
@@ -134,19 +134,19 @@ A skip "ran" if the coin reached the first target (1.5x) from the skip price bef
     CA `9TKbd3VFaMSXsEAicD9JVQWpWwAoLi4fSgWmZL2cpump`
   - ran: Bababoi up to 2.17x  
     CA `28B9kDm6XtQNqAkzuiKH3Zu1L8cVM6SLW4iRamFspump`
-- bundles over the line: blocked 19, ran 2, dumped 13, flat 1, open 3 (saving losses: keep it)
+- bundles over the line: blocked 19, ran 2, dumped 13, flat 2, open 2 (saving losses: keep it)
   - ran: jingyu up to 1.58x  
     CA `DUZrwdjEthcJ99ZiRXr31UuqTohoTg7VjTEyfGdBpump`
   - ran: WIENER up to 1.59x  
     CA `8BDkDfj3ZUvcG9caGzF2XnHfwg7K6fjfKKDvX6SCpump`
-- falling knife (code): blocked 18, ran 3, dumped 13, flat 1, open 1 (saving losses: keep it)
+- falling knife (code): blocked 17, ran 3, dumped 13, flat 1, open 0 (saving losses: keep it)
   - ran: Jimmies up to 1.53x  
     CA `GisWWjhwrSud4aFGSHvTMt85Ky14sY7LeBFCpfoFpump`
   - ran: Investor up to 1.58x  
     CA `J9eBkCb4UtquAMQqB6duwBmR99fFSMoTnDcaMB9Wpump`
   - ran: MONEY up to 1.58x  
     CA `DeACAbp2GMzapB6Z2K8qdkTZupmNbKc6EZx9bnbCpump`
-- falling knife / no higher low: blocked 14, ran 3, dumped 7, flat 3, open 1 (saving losses: keep it)
+- falling knife / no higher low: blocked 13, ran 3, dumped 6, flat 3, open 1 (saving losses: keep it)
   - ran: Jimmies up to 1.53x  
     CA `GisWWjhwrSud4aFGSHvTMt85Ky14sY7LeBFCpfoFpump`
   - ran: Zero up to 2.07x  
@@ -205,11 +205,11 @@ The meta is young animal and slang launches with real flow: Cateball (0.2h old, 
 ## Moving most in its scans, last 30 min (1h volume)
 - Cateball: $699,710 1h vol, $767,385 mcap, +2039% 1h  
   CA `Bb38n8AVLMh9amo8qtjLvqE8nPtfs8GEsyzg1pC6pump`
-- ZINU: $240,330 1h vol, $1,388 mcap, -100% 1h  
-  CA `9SVj5ZTAL41tqswVNwT1TT9yv3oSHYMYv8zqoHtPpump`
-- Goon: $191,831 1h vol, $3,258 mcap, -89% 1h  
+- Hoppy: $616,856 1h vol, $1,719,933 mcap, +145% 1h  
+  CA `CFX1gH7CKYwqYXrfDkS2MUxJcEhs8PT63DyRA1chpump`
+- Goon: $192,131 1h vol, $2,781 mcap, -90% 1h  
   CA `6Sm9SMP11iFuL7AqFCJeyQc23WF4s1ZGxS7JXveQJRW`
-- BLOX: $131,937 1h vol, $2,286 mcap, +10% 1h  
-  CA `65VjZZFhwpfnkZe42qUoqRZksJkpmdk5FA52dyVcpump`
-- WATERBALL: $80,453 1h vol, $7,604 mcap, -75% 1h  
-  CA `23Yun5pvmzaMX4PYnjYA2zHq3X2zrd6Dq8RBpYg1pump`
+- ZINU: $114,217 1h vol, $1,388 mcap, -99% 1h  
+  CA `9SVj5ZTAL41tqswVNwT1TT9yv3oSHYMYv8zqoHtPpump`
+- JIMMY: $88,170 1h vol, $465,177 mcap, -13% 1h  
+  CA `38M2z4UCfZEkUHFzD48vhKQhFhNyRGto8pZbLjNipump`
