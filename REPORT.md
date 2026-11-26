@@ -1,13 +1,13 @@
 # Trencher live report
 
-Updated 2026-11-26T05:02:41Z (paper trading, never real money)
+Updated 2026-11-26T05:17:42Z (paper trading, never real money)
 
 - Equity: $74.23 (-25.8% vs $100 start)
 - Closed trades: 22, 3 wins
 - Fees paid: $14.78 (axiom $2.81, network $9.18, pool $2.66), plus $4.15 lost to slippage
 - New trades: WATCH-ONLY (scans and decides, buys nothing)
-- Brain: subscription, claude-haiku-5-5 for routine calls, claude-opus-5-5 for the daily review; 407 routine calls and 0 plan-limit hits in 48h
-- Watch log: 108 coins being followed, 3736 filed, 0 would-buys (6h follow, sampled every 2 min)
+- Brain: subscription, claude-haiku-5-5 for routine calls, claude-opus-5-5 for the daily review; 404 routine calls and 0 plan-limit hits in 48h
+- Watch log: 105 coins being followed, 3740 filed, 0 would-buys (6h follow, sampled every 2 min)
 
 ## Scorecard (after fees)
 - 22 closed, 3 won (14%), net $-25.79
@@ -73,9 +73,11 @@ Updated 2026-11-26T05:02:41Z (paper trading, never real money)
   CA `H4gHnZ3NCU7Z9XQwGX6YYJNyieGEW8pqwGRUcdSxpump`
 
 ## Last scan
-- 05:01Z: 9 coins, 9 with pairs, 0 passed the market filters, 0 researched
+- 05:16Z: 5 coins, 5 with pairs, 1 passed the market filters, 1 researched
 
 ## Coins it looked at, and why it passed
+- 05:16Z TEEETHY (MIGRATED, $91,215 mcap, $8,705 5m vol): PASS at conviction 3, PASS. Blocker: flow below pace (0.88x hourly), 5m volume $8.7k under the $10k bar, no printed higher low. The coin is clean on holders, but nothing else on the checklist is live. (V1, V6)  
+  CA `BbC8hVHJ2bo6xFcGh2X6zcMiv1T1rznQd3qWoxXApump`
 - 04:59Z NORFEATH (MIGRATED, $677,488 mcap, $5,012 5m vol): PASS at conviction 3, PASS: NORFEATH is a 6-copy ticker field with $5k 5m flow under the $10k bar, and no verified catalyst behind a bottom buy. Blocker: "no catalyst" (V1, V6, V13).  
   CA `3gmFG4sFDJErDV8pacFrL2uUPXeGJTYLjfRy4hFypump`
 - 04:56Z FRITZ (MIGRATED, $81,761 mcap, $27,941 5m vol): PASS at conviction 4, PASS: FRITZ is the flow leader of a 9-copy hippo field, but it's up 52% on the 5m at 3.8x pace and its prior high at $98k is only 1.2x away. Chasing a spike with no printed higher low, and no room to the first target. Blocker: "chasing spike" + "target too close" (V1, V6).  
@@ -94,19 +96,17 @@ Updated 2026-11-26T05:02:41Z (paper trading, never real money)
   CA `Bnw5JRPek5JvJhzUiB9yrs2cmzt4bLeFqSRzDzSppump`
 - 04:30Z TEEETHY (MIGRATED, $89,139 mcap, $6,229 5m vol): PASS at conviction 2, PASS: chasing, too new, no higher low. Price is 4.7% off a 34-minute-old peak after a +202% hour, with no printed structure and no story behind it (V1, V6).  
   CA `BbC8hVHJ2bo6xFcGh2X6zcMiv1T1rznQd3qWoxXApump`
-- 04:25Z ccat (MIGRATED, $43,946 mcap, $5,998 5m vol): PASS at conviction 3, PASS: clancat is 3.7% off its high, and 5m volume is 6.6x its hourly pace, so this is a chase. No printed higher low, and top 10 at 24%. Watch it. (MIGRATED rule, V1, V6)  
-  CA `3jAB5ksB13Kgm2Q39NU6d2USUxBy2f9LaTvyay6Gpump`
 
 ## What its skips did next (last 48h)
 A skip "ran" if the coin reached the first target (1.5x) from the skip price before a 20% drop, "dumped" if the drop came first. Sampled every 10 min, followed 6h.
-- top 10 over 25%: blocked 37, ran 6, dumped 27, flat 0, open 4 (saving losses: keep it)
+- top 10 over 25%: blocked 37, ran 6, dumped 28, flat 0, open 3 (saving losses: keep it)
   - ran: SCF up to 2.01x  
     CA `Az7dYDicMc4G9hwnkeQYwHi6Fop1711C7hABcrWzpump`
   - ran: MARS up to 2.06x  
     CA `816BuXnCFQqt6KXbBTcFgHWD29Ckpaqt8HMKSN4Vpump`
   - ran: 4CHAN up to 1.87x  
     CA `DVdWuNK8ncn79B6z8nCiwcNAiwyFcmBPfChgxJGTpump`
-- flow below pace: blocked 35, ran 3, dumped 26, flat 2, open 4 (saving losses: keep it)
+- flow below pace: blocked 36, ran 3, dumped 26, flat 2, open 5 (saving losses: keep it)
   - ran: BOOBS up to 1.51x  
     CA `E35iEA2yLLHc1tjm6et1Z3YuH8DhxJYWtWezPHgSpump`
   - ran: BASKET up to 1.55x  
@@ -127,13 +127,13 @@ A skip "ran" if the coin reached the first target (1.5x) from the skip price bef
     CA `9TKbd3VFaMSXsEAicD9JVQWpWwAoLi4fSgWmZL2cpump`
   - ran: Bababoi up to 2.17x  
     CA `28B9kDm6XtQNqAkzuiKH3Zu1L8cVM6SLW4iRamFspump`
-- near the high / chasing: blocked 28, ran 6, dumped 19, flat 1, open 2 (saving losses: keep it)
+- near the high / chasing: blocked 26, ran 5, dumped 18, flat 1, open 2 (saving losses: keep it)
   - ran: BRUH up to 1.51x  
     CA `PgFtGGquvnv2zEkjG2N2QPvBTBrafuExGYEqahRpump`
-  - ran: ACHI up to 1.53x  
-    CA `HADu1KBKhLhzmqyrdbF96F73XP892DTq3MC2dztApump`
   - ran: SNOWCUMBRR up to 2.36x  
     CA `Gf9wm93TTDpbPC467Eio5Vc42Kr6MAomUD172drWpump`
+  - ran: HEYOS up to 1.91x  
+    CA `A88p1LcHisrx3TuTwUGVrLtc1LBTUPZUfVgaCGutAFaK`
 - too new / sniping: blocked 26, ran 7, dumped 18, flat 0, open 1 (saving losses: keep it)
   - ran: BABYANSEM up to 2.77x  
     CA `F3VctV9FqDgiyqaztN6z78bgWy27eH7DBBHW1vjpump`
@@ -156,7 +156,7 @@ A skip "ran" if the coin reached the first target (1.5x) from the skip price bef
     CA `DUZrwdjEthcJ99ZiRXr31UuqTohoTg7VjTEyfGdBpump`
   - ran: DUMBMONEY up to 1.74x  
     CA `GEHehS5Rr4rNCjvrHLjjV1avD4bjMsn53ywDGv1spump`
-- dev share over 1%: blocked 11, ran 2, dumped 7, flat 1, open 1 (saving losses: keep it)
+- dev share over 1%: blocked 11, ran 2, dumped 8, flat 1, open 0 (saving losses: keep it)
   - ran: PI up to 1.77x  
     CA `D2AK5DvBj8AxN5VX1t6bjv7muJVPUx4hFPowVRWYpump`
   - ran: Grinch up to 1.94x  
@@ -201,13 +201,13 @@ Nothing has a positive edge after costs. All 213 settled coins came out at -12.2
 The meta is split, not quiet. Animal and mascot names minted in the last few hours are still on the pump.fun curve and pulling volume: PoorGoat ($28k mcap, $42k 5m, 50% buys, 6 min old), wocket ($26k, $32k 5m, 62% buys), SpaceX Inu ($15k, $20k 5m, 61% buys) and The Black Bull ($10.6k, 61% buys). Older animal and character coins on PumpSwap at $0.5M to $2M (Grodia, Norfeather, UHI, Fiona the Hippo, PumpChan) show steady 59-72% buy ratios but only $3-6k on the 5-minute, under our $10k bar. One-word joke names launched in the last hour are fading hard: "coin" is -94% with zero 5m buys, MEMO -94%, Liquid -81%, Harlod and KEKW -73%. The web's Trump dinner and Ansem headlines don't show up in these volumes, so I'm ignoring them. Setups to research now: PoorGoat and wocket as FINAL_STRETCH near the ~$34k bond, but they are minutes old, so it's new-pair risk; probe at most (conviction 5) only if one holds above $30k after a pullback and the bundle and holder checks clear. Grodia, Norfeather and UHI are MIGRATED candidates that qualify on mcap but fail the $10k 5m bar today; they become buys only if 5m volume passes $10k with buyers still above 60%.
 
 ## Moving most in its scans, last 30 min (1h volume)
-- coin: $121,944 1h vol, $18,009 mcap, +773% 1h  
-  CA `GHcow7qoqNrkwbfVEsySwZR98kbyPrehit8E1u6vpump`
-- Grodia: $111,620 1h vol, $1,100,753 mcap, +31% 1h  
-  CA `6HS1aeSk7osT5B1CzLp1HTRTAweFr5wurfMHS4vppump`
-- POORGOAT: $110,969 1h vol, $9,024 mcap, +106% 1h  
+- TEEETHY: $118,847 1h vol, $91,215 mcap, +60% 1h  
+  CA `BbC8hVHJ2bo6xFcGh2X6zcMiv1T1rznQd3qWoxXApump`
+- POORGOAT: $111,461 1h vol, $8,272 mcap, +89% 1h  
   CA `Fc3z41QViQQwyU3pAHU8ntyi7KnX4UDqVDEmNremSLam`
-- wocket: $106,339 1h vol, $4,291 mcap, -77% 1h  
-  CA `6mctjLR559n8vWzmcm2Wj72xYSvcm8og3cFGy3RXpump`
 - FRITZ: $89,697 1h vol, $71,436 mcap, +138% 1h  
   CA `4VMwK3shXxsaMbiJ4qtBMMEgi63riezBSWFHfA6Vpump`
+- NORFEATH: $58,649 1h vol, $701,962 mcap, +33% 1h  
+  CA `3gmFG4sFDJErDV8pacFrL2uUPXeGJTYLjfRy4hFypump`
+- 2: $52,142 1h vol, $20,529 mcap, +239% 1h  
+  CA `HkywsKMf5FDj7QpgRE3BoE2nJqJauxEVbGjpnYe6pump`
