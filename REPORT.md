@@ -1,13 +1,13 @@
 # Trencher live report
 
-Updated 2026-11-26T14:52:57Z (paper trading, never real money)
+Updated 2026-11-26T15:08:06Z (paper trading, never real money)
 
 - Equity: $74.23 (-25.8% vs $100 start)
 - Closed trades: 22, 3 wins
 - Fees paid: $14.78 (axiom $2.81, network $9.18, pool $2.66), plus $4.15 lost to slippage
 - New trades: WATCH-ONLY (scans and decides, buys nothing)
-- Brain: subscription, claude-haiku-5-5 for routine calls, claude-opus-5-5 for the daily review; 410 routine calls and 0 plan-limit hits in 48h
-- Watch log: 93 coins being followed, 3893 filed, 0 would-buys (6h follow, sampled every 2 min)
+- Brain: subscription, claude-haiku-5-5 for routine calls, claude-opus-5-5 for the daily review; 409 routine calls and 0 plan-limit hits in 48h
+- Watch log: 94 coins being followed, 3895 filed, 0 would-buys (6h follow, sampled every 2 min)
 
 ## Scorecard (after fees)
 - 22 closed, 3 won (14%), net $-25.79
@@ -73,9 +73,15 @@ Updated 2026-11-26T14:52:57Z (paper trading, never real money)
   CA `H4gHnZ3NCU7Z9XQwGX6YYJNyieGEW8pqwGRUcdSxpump`
 
 ## Last scan
-- 14:51Z: 2 coins, 2 with pairs, 0 passed the market filters, 0 researched
+- 15:07Z: 3 coins, 3 with pairs, 0 passed the market filters, 0 researched
 
 ## Coins it looked at, and why it passed
+- 15:05Z LOA (FINAL_STRETCH, $15,507 mcap, $7,618 5m vol): PASS at conviction 3, PASS: chasing spike. LOA is up 62% on the 5m and 502% in the hour off a $2k low, with $7.6k of 5m flow under the $10k bar and top 10 at 24.7%, just under the 25% hard line. It's a pump-spike, not a bottom (V1, V6, V13).  
+  CA `G2aT7SoD9AEid6psMwkCcxcctNLEJsQMMDZD9VVQpump`
+- 15:00Z Simyo (MIGRATED, $53,077 mcap, $18,047 5m vol): REJECT, Bundles: 4 linked wallet cluster(s) hold 89.5% of supply (>20%) (V17)  
+  CA `HnbAKrRF9SM4QNb5o7nGJNcpjdkTyCR2M6pWgjiqpump`
+- 14:58Z MDAQ (MIGRATED, $93,298 mcap, $100,517 5m vol): PASS at conviction 3, PASS: MEMEDAQ is 6 minutes old, up 140% on 5m at 9.9x its hourly pace, with 50/50 buys and no printed higher low. That's chasing a bond spike in a 28-copy field (V1, V6, V13).  
+  CA `8XefdyFEBBLwvEWpGZqLmBDR9TmDeon1aLy16x2ipump`
 - 14:49Z NORFEATH (DIP, $434,027 mcap, $3,156 5m vol): REJECT, Dip with fading attention is a falling knife, not a dip (5m at 0.52x the hour's pace, under 0.6x)  
   CA `3gmFG4sFDJErDV8pacFrL2uUPXeGJTYLjfRy4hFypump`
 - 14:46Z DIGS (MIGRATED, $240,867 mcap, $2,126 5m vol): REJECT, Bundles: 10 linked wallet cluster(s) hold 100.0% of supply (>20%) (V17)  
@@ -90,16 +96,10 @@ Updated 2026-11-26T14:52:57Z (paper trading, never real money)
   CA `6ppi7LfHkAhHkQwS3kT1zjCsGYQyK4uvpp3pE6Xmpump`
 - 14:37Z TURKE (FINAL_STRETCH, $21,053 mcap, $26,235 5m vol): PASS at conviction 3, PASS: chasing spike in a 16-copy TURKE field, and it isn't the volume leader. Blocker: "chasing spike" (V1, V6, V13).  
   CA `8avMqRAbCYQbsenPZHdaA8yzWtFDJX3uk6A8fsZmpump`
-- 14:34Z Cooked (FINAL_STRETCH, $16,649 mcap, $22,675 5m vol): PASS at conviction 2, PASS: chasing spike, 30-copy "cooked" field, zero outside buzz. Blocker: "chasing spike" (V1, V6, V13).  
-  CA `7HRLeWJVAj8SUEAmwV9LPDrmRvgJJicxbJNxyUWJpump`
-- 14:30Z Irochan (MIGRATED, $57,865 mcap, $24,819 5m vol): REJECT, Bundles: 2 linked wallet cluster(s) hold 80.4% of supply (>20%) (V17)  
-  CA `BSMz6chW26adx25hkfRZvmTSu6q4d3ieixPx73hQpump`
-- 14:23Z UHI (MIGRATED, $1,733,557 mcap, $7,087 5m vol): PASS at conviction 2, PASS: chasing at 2.7% off the high, flow sell-heavy, and the site still says "Contract TBA" (V1, V3, V13).  
-  CA `Bnw5JRPek5JvJhzUiB9yrs2cmzt4bLeFqSRzDzSppump`
 
 ## What its skips did next (last 48h)
 A skip "ran" if the coin reached the first target (1.5x) from the skip price before a 20% drop, "dumped" if the drop came first. Sampled every 10 min, followed 6h.
-- top 10 over 25%: blocked 44, ran 7, dumped 35, flat 0, open 2 (saving losses: keep it)
+- top 10 over 25%: blocked 44, ran 7, dumped 34, flat 0, open 3 (saving losses: keep it)
   - ran: SCF up to 2.01x  
     CA `Az7dYDicMc4G9hwnkeQYwHi6Fop1711C7hABcrWzpump`
   - ran: MARS up to 2.06x  
@@ -120,7 +120,7 @@ A skip "ran" if the coin reached the first target (1.5x) from the skip price bef
     CA `A88p1LcHisrx3TuTwUGVrLtc1LBTUPZUfVgaCGutAFaK`
   - ran: Nala up to 1.64x  
     CA `FeBG8AEG4j7LT7xQF38gPXQFBRBtXBTNzhZjSa3bpump`
-- too new / sniping: blocked 30, ran 8, dumped 21, flat 0, open 1 (saving losses: keep it)
+- too new / sniping: blocked 31, ran 9, dumped 22, flat 0, open 0 (saving losses: keep it)
   - ran: BABYANSEM up to 2.77x  
     CA `F3VctV9FqDgiyqaztN6z78bgWy27eH7DBBHW1vjpump`
   - ran: Merged up to 2.18x  
@@ -141,7 +141,7 @@ A skip "ran" if the coin reached the first target (1.5x) from the skip price bef
     CA `9TKbd3VFaMSXsEAicD9JVQWpWwAoLi4fSgWmZL2cpump`
   - ran: Bababoi up to 2.17x  
     CA `28B9kDm6XtQNqAkzuiKH3Zu1L8cVM6SLW4iRamFspump`
-- bundles over the line: blocked 18, ran 3, dumped 10, flat 2, open 3 (saving losses: keep it)
+- bundles over the line: blocked 19, ran 3, dumped 12, flat 2, open 2 (saving losses: keep it)
   - ran: jingyu up to 1.58x  
     CA `DUZrwdjEthcJ99ZiRXr31UuqTohoTg7VjTEyfGdBpump`
   - ran: DUMBMONEY up to 1.74x  
@@ -201,13 +201,13 @@ No edge yet. All 276 settled coins lost money after costs under the simple plan:
 Meta right now is young launches, not a named theme. The only scan_movers coins clearing the $10k 5m bar are fresh PumpSwap tokens under an hour old with buy-majority flow: PAIR (+265% 1h, $21k 5m, 62% buys, 0.8h old) and Irochan (+101% 1h, $25k 5m, 61% buys, 0.3h old), and both are rising. The animal theme is fading in the scan: Fiona the Baby Hippo is at $278 5m with 11% buys and -56% 1h, and the larger Fiona is -14% on $1.8k 5m, so the crawler's +897% Fiona figure doesn't match. Setups to research are PAIR and Irochan; PERPS ($26k 5m on an $11k cap, 0.1h old) has a volume-to-cap ratio that looks like wash, so I'd treat it as a farm until proven otherwise, not a buy. Komari, Riku, Copycats and Mikyan aren't in scan_movers, so I can't confirm them from this data. The Trump and Ansem headlines aren't what these tickers are trading. Paper only, not financial advice.
 
 ## Moving most in its scans, last 30 min (1h volume)
-- KOMARI: $465,685 1h vol, $1,438 mcap, -96% 1h  
+- KOMARI: $143,451 1h vol, $1,438 mcap, -99% 1h  
   CA `EMd4HYWqkQvnmSAor4H44VM4D8ARzcTxsXsYTKazpump`
+- MDAQ: $121,679 1h vol, $93,298 mcap, +211% 1h  
+  CA `8XefdyFEBBLwvEWpGZqLmBDR9TmDeon1aLy16x2ipump`
 - BRUH: $120,893 1h vol, $8,554,907 mcap, -11% 1h  
   CA `PgFtGGquvnv2zEkjG2N2QPvBTBrafuExGYEqahRpump`
-- pairless: $118,337 1h vol, $4,737 mcap, -75% 1h  
-  CA `B5aqaiWPaFyQWMg3p3mB6aAfakEW2RMD42VyXFi1ppXp`
-- Irochan: $89,091 1h vol, $57,865 mcap, +101% 1h  
-  CA `BSMz6chW26adx25hkfRZvmTSu6q4d3ieixPx73hQpump`
-- UHI: $79,046 1h vol, $1,751,107 mcap, +19% 1h  
-  CA `Bnw5JRPek5JvJhzUiB9yrs2cmzt4bLeFqSRzDzSppump`
+- Simyo: $75,070 1h vol, $49,421 mcap, +71% 1h  
+  CA `HnbAKrRF9SM4QNb5o7nGJNcpjdkTyCR2M6pWgjiqpump`
+- NORFEATH: $72,914 1h vol, $434,027 mcap, -9% 1h  
+  CA `3gmFG4sFDJErDV8pacFrL2uUPXeGJTYLjfRy4hFypump`
