@@ -1,13 +1,13 @@
 # Trencher live report
 
-Updated 2026-11-26T03:31:58Z (paper trading, never real money)
+Updated 2026-11-26T03:47:03Z (paper trading, never real money)
 
 - Equity: $74.23 (-25.8% vs $100 start)
 - Closed trades: 22, 3 wins
 - Fees paid: $14.78 (axiom $2.81, network $9.18, pool $2.66), plus $4.15 lost to slippage
 - New trades: WATCH-ONLY (scans and decides, buys nothing)
-- Brain: subscription, claude-haiku-5-5 for routine calls, claude-opus-5-5 for the daily review; 403 routine calls and 0 plan-limit hits in 48h
-- Watch log: 114 coins being followed, 3707 filed, 0 would-buys (6h follow, sampled every 2 min)
+- Brain: subscription, claude-haiku-5-5 for routine calls, claude-opus-5-5 for the daily review; 404 routine calls and 0 plan-limit hits in 48h
+- Watch log: 111 coins being followed, 3712 filed, 0 would-buys (6h follow, sampled every 2 min)
 
 ## Scorecard (after fees)
 - 22 closed, 3 won (14%), net $-25.79
@@ -73,9 +73,13 @@ Updated 2026-11-26T03:31:58Z (paper trading, never real money)
   CA `H4gHnZ3NCU7Z9XQwGX6YYJNyieGEW8pqwGRUcdSxpump`
 
 ## Last scan
-- 03:31Z: 3 coins, 3 with pairs, 0 passed the market filters, 0 researched
+- 03:46Z: 2 coins, 2 with pairs, 0 passed the market filters, 0 researched
 
 ## Coins it looked at, and why it passed
+- 03:39Z MCAP (MIGRATED, $58,189 mcap, $18,902 5m vol): PASS at conviction 3, PASS: vamp field, not the leader, flow below pace, and the site doesn't show this CA. Blockers: "split crowd", "flow below pace", "no higher low", "too new". (V1, V3, V6)  
+  CA `AYij72wApHA4qGV5RbZJhsAVocjHtJJhgoUswV3tpump`
+- 03:35Z Harlod (FINAL_STRETCH, $20,692 mcap, $13,297 5m vol): PASS at conviction 3, PASS: a 10-copy same-ticker field with no story behind it, top 10 at 23% ex-pool, and a +30% 5m candle after a 585% hour. The dead project site is the last nail. (V6, V13)  
+  CA `CathB8zpiGRsBpiRCnGkER3tZk77Jozho183yKfspump`
 - 03:29Z FIONA (DIP, $1,961,030 mcap, $4,626 5m vol): REJECT, Bundles: 10 linked wallet cluster(s) hold 30.2% of supply (>20%) (V17)  
   CA `B34nXKzCgsJb9ChLuSHPRpXLE3WFSWyeT8Cqkzzmpump`
 - 03:29Z coin (MIGRATED, $72,443 mcap, $37,636 5m vol): PASS at conviction 3, PASS: "coin" is up 68% in 5m, 21.5% off a one-word name with 8 copies and no story. Chasing spike, no catalyst (V1, V6).  
@@ -92,10 +96,6 @@ Updated 2026-11-26T03:31:58Z (paper trading, never real money)
   CA `6HS1aeSk7osT5B1CzLp1HTRTAweFr5wurfMHS4vppump`
 - 03:07Z TAXMAN (DIP, $37,785 mcap, $1,881 5m vol): REJECT, 5m volume $1,881 is dead (<$2,000) (V1)  
   CA `BAijHvUiHCoCxApyYAUnz5g6LnizZXVYoHwdMarqTWtw`
-- 03:07Z UHI (MIGRATED, $1,140,131 mcap, $6,657 5m vol): PASS at conviction 2, PASS — chasing: UHI sits 3.5% off a $1.18M high after an ~8x run in 4 hours, and its site shows "Contract TBA" on a 5-hour-old domain (V3, V13). Vamp-field leader, but a tweet isn't a buy (V1).  
-  CA `Bnw5JRPek5JvJhzUiB9yrs2cmzt4bLeFqSRzDzSppump`
-- 03:05Z $XMAS (DIP, $104,899 mcap, $2,872 5m vol): REJECT, RugCheck danger: Creator history of rugged tokens  
-  CA `7ACq9bgHPCT33TWC6yaxLX5CfNQBbFachy9xKD7Spump`
 
 ## What its skips did next (last 48h)
 A skip "ran" if the coin reached the first target (1.5x) from the skip price before a 20% drop, "dumped" if the drop came first. Sampled every 10 min, followed 6h.
@@ -120,13 +120,13 @@ A skip "ran" if the coin reached the first target (1.5x) from the skip price bef
     CA `9cDnmLRDWeJzcpyw8tSFAT7HS4Aunx6MmZWjMfrzpump`
   - ran: SHHFT up to 1.61x  
     CA `GqMg4TRt5U5HRK6oeZYwCF1Jz7Ym9MSzWSoFCtFsbzf6`
-- near the high / chasing: blocked 31, ran 7, dumped 18, flat 1, open 5 (saving losses: keep it)
-  - ran: NOCAP up to 1.59x  
-    CA `RZv3jrN6u1e2vCwTiJgRJwfnmyJaZqq48qkPz1xpump`
+- near the high / chasing: blocked 29, ran 5, dumped 18, flat 1, open 5 (saving losses: keep it)
   - ran: ACHI up to 1.53x  
     CA `HADu1KBKhLhzmqyrdbF96F73XP892DTq3MC2dztApump`
   - ran: SNOWCUMBRR up to 2.36x  
     CA `Gf9wm93TTDpbPC467Eio5Vc42Kr6MAomUD172drWpump`
+  - ran: HEYOS up to 1.91x  
+    CA `A88p1LcHisrx3TuTwUGVrLtc1LBTUPZUfVgaCGutAFaK`
 - RugCheck danger: blocked 29, ran 3, dumped 25, flat 0, open 1 (saving losses: keep it)
   - ran: TROLL up to 1.94x  
     CA `7ykeHoEnjnGkY6tqteXn47fdGtd7kfXWghiyZ7YKpump`
@@ -134,7 +134,7 @@ A skip "ran" if the coin reached the first target (1.5x) from the skip price bef
     CA `9TKbd3VFaMSXsEAicD9JVQWpWwAoLi4fSgWmZL2cpump`
   - ran: Bababoi up to 2.17x  
     CA `28B9kDm6XtQNqAkzuiKH3Zu1L8cVM6SLW4iRamFspump`
-- too new / sniping: blocked 22, ran 6, dumped 16, flat 0, open 0 (saving losses: keep it)
+- too new / sniping: blocked 23, ran 6, dumped 16, flat 0, open 1 (saving losses: keep it)
   - ran: BABYANSEM up to 2.77x  
     CA `F3VctV9FqDgiyqaztN6z78bgWy27eH7DBBHW1vjpump`
   - ran: Merged up to 2.18x  
@@ -199,13 +199,13 @@ Nothing has a positive edge after costs. All 213 settled coins came out at -12.2
 Meta: the trenches are active, but the movers are split. Rising are generic one-word and attention-joke names minted in the last hour (coin at 6 min, FOMO at 0.1h, Marketcap at 0.4h, Liquid under 6 min, Harlod at 0.2h) with 54-71% buys, and FOMO and Marketcap are up about 430% on 1h. Fading are fresh launches dumping 64-99% on 1h (LOKI, MemeStonks, Anon, WORTHY), and TAXMAN has thinned to about $2k on 5m. The only real setup candidate is coin ($29k mcap, $84k 5m, 54% buys, on pumpswap), but it is 6 minutes old, below our $30k MIGRATED floor, and has no holder or bundle data yet, so it's a WATCH, not a buy. Re-check it only if it holds $30k or more on a pullback after holder and bundle checks pass, and confirm it's the original "coin" token, since a one-word name invites copycats (V1, V3). LIQ and FOMO clear the 5m bar but are still on the bonding curve under 6 minutes old, which is new-pair territory we don't snipe, so PASS (V1). The web's Trump dinner and Ansem headlines aren't moving any of these coins, and the web's volume figures didn't match scan_movers, so I used only the scan.
 
 ## Moving most in its scans, last 30 min (1h volume)
-- STUDS: $279,813 1h vol, $8,338 mcap, -71% 1h  
+- MCAP: $372,030 1h vol, $62,996 mcap, +112% 1h  
+  CA `AYij72wApHA4qGV5RbZJhsAVocjHtJJhgoUswV3tpump`
+- STUDS: $282,587 1h vol, $5,438 mcap, -81% 1h  
   CA `34J9VrBeJ2dWActyAMpoNBKvoxZCqQz3SivmnnmSTUds`
-- NETHER: $254,193 1h vol, $17,454 mcap, -70% 1h  
+- NETHER: $208,275 1h vol, $13,547 mcap, -76% 1h  
   CA `GkL4cJLAL3354wLgS6mZJKKUBVzvUY1FUN47zZNgGWEq`
-- MemeStonks: $187,457 1h vol, $1,360 mcap, -100% 1h  
-  CA `ERhjmSpLh6Rr4ozYjkGohr7rLizv7Mw6MgWpEFH7pump`
 - coin: $176,896 1h vol, $62,862 mcap, +117% 1h  
   CA `CMmfK9KFjFRPgAEkixMpchNnA5zTz7xYdQkSSc8Upump`
-- Grodia: $140,436 1h vol, $772,453 mcap, -27% 1h  
-  CA `6HS1aeSk7osT5B1CzLp1HTRTAweFr5wurfMHS4vppump`
+- NORFEATH: $132,315 1h vol, $518,342 mcap, -7% 1h  
+  CA `3gmFG4sFDJErDV8pacFrL2uUPXeGJTYLjfRy4hFypump`
