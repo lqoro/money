@@ -1,13 +1,13 @@
 # Trencher live report
 
-Updated 2026-11-26T07:49:15Z (paper trading, never real money)
+Updated 2026-11-26T08:04:17Z (paper trading, never real money)
 
 - Equity: $74.23 (-25.8% vs $100 start)
 - Closed trades: 22, 3 wins
 - Fees paid: $14.78 (axiom $2.81, network $9.18, pool $2.66), plus $4.15 lost to slippage
 - New trades: WATCH-ONLY (scans and decides, buys nothing)
 - Brain: subscription, claude-haiku-5-5 for routine calls, claude-opus-5-5 for the daily review; 408 routine calls and 0 plan-limit hits in 48h
-- Watch log: 91 coins being followed, 3790 filed, 0 would-buys (6h follow, sampled every 2 min)
+- Watch log: 89 coins being followed, 3795 filed, 0 would-buys (6h follow, sampled every 2 min)
 
 ## Scorecard (after fees)
 - 22 closed, 3 won (14%), net $-25.79
@@ -73,9 +73,15 @@ Updated 2026-11-26T07:49:15Z (paper trading, never real money)
   CA `H4gHnZ3NCU7Z9XQwGX6YYJNyieGEW8pqwGRUcdSxpump`
 
 ## Last scan
-- 07:48Z: 6 coins, 5 with pairs, 0 passed the market filters, 0 researched
+- 08:03Z: 8 coins, 7 with pairs, 0 passed the market filters, 0 researched
 
 ## Coins it looked at, and why it passed
+- 08:01Z UHI (MIGRATED, $1,184,600 mcap, $2,497 5m vol): PASS at conviction 3, PASS: chasing. UHI is 7.9% off a peak printed 0.8h ago, the team's own site says the CA is "TBA", and it is one of 21 same-ticker copies. (V1, V3, V6)  
+  CA `Bnw5JRPek5JvJhzUiB9yrs2cmzt4bLeFqSRzDzSppump`
+- 08:00Z NORFEATH (DIP, $466,045 mcap, $4,107 5m vol): PASS at conviction 3, PASS: bottom buy fails the theme gate (theme pace 0.93x, under the 1x bar) and the higher low isn't confirmed. The parade catalyst is too new to carry it. (V1, V6)  
+  CA `3gmFG4sFDJErDV8pacFrL2uUPXeGJTYLjfRy4hFypump`
+- 07:57Z DIGS (MIGRATED, $236,833 mcap, $2,665 5m vol): REJECT, Bundles: 10 linked wallet cluster(s) hold 100.0% of supply (>20%) (V17)  
+  CA `9QT8K685Hrae4k11dhGXirdtpfAaimExtyfwt8cPpump`
 - 07:45Z FIONA (DIP, $1,839,718 mcap, $4,072 5m vol): REJECT, Bundles: 10 linked wallet cluster(s) hold 30.2% of supply (>20%) (V17)  
   CA `B34nXKzCgsJb9ChLuSHPRpXLE3WFSWyeT8Cqkzzmpump`
 - 07:45Z Sae (MIGRATED, $31,142 mcap, $8,333 5m vol): REJECT, Dev holds 2.1% (>1%) (V13, V17)  
@@ -90,29 +96,16 @@ Updated 2026-11-26T07:49:15Z (paper trading, never real money)
   CA `3QVBSB2kuJiQ75Po8qq4eV7msNFo7jMn22wfKuCTpump`
 - 07:22Z PUMPCHAN (MIGRATED, $2,705,948 mcap, $87,400 5m vol): REJECT, Top 10 hold 35.4% ex-pool (>25%) (V13)  
   CA `Fo2HAwr7ZAUM2bSZ7MWSi16e3aWGpbw5MsUDYCttpump`
-- 07:15Z UHI (MIGRATED, $1,173,982 mcap, $2,171 5m vol): PASS at conviction 3, PASS: chasing at 7.5% off a $1.27M high, 5m flow at $2.2k is under the $10k bar and the theme runs at 0.76x pace, and the project's own site still says "CA TBA" on a 0.4-day-old domain. Blocker: "chasing". (V1, V3, V13)  
-  CA `Bnw5JRPek5JvJhzUiB9yrs2cmzt4bLeFqSRzDzSppump`
-- 07:15Z NORFEATH (DIP, $432,184 mcap, $4,712 5m vol): PASS at conviction 3, PASS — NORFEATH is a 10h-old DIP with no story behind it: zero X mentions, not on the radar, and 6 copies of the ticker. Blocker: "dead story" (no rising narrative, no catalyst). (V1, V13)  
-  CA `3gmFG4sFDJErDV8pacFrL2uUPXeGJTYLjfRy4hFypump`
-- 07:12Z DIGS (MIGRATED, $250,704 mcap, $2,412 5m vol): REJECT, Bundles: 10 linked wallet cluster(s) hold 100.0% of supply (>20%) (V17)  
-  CA `9QT8K685Hrae4k11dhGXirdtpfAaimExtyfwt8cPpump`
 
 ## What its skips did next (last 48h)
 A skip "ran" if the coin reached the first target (1.5x) from the skip price before a 20% drop, "dumped" if the drop came first. Sampled every 10 min, followed 6h.
-- top 10 over 25%: blocked 38, ran 7, dumped 29, flat 1, open 1 (saving losses: keep it)
+- top 10 over 25%: blocked 38, ran 7, dumped 30, flat 1, open 0 (saving losses: keep it)
   - ran: SCF up to 2.01x  
     CA `Az7dYDicMc4G9hwnkeQYwHi6Fop1711C7hABcrWzpump`
   - ran: MARS up to 2.06x  
     CA `816BuXnCFQqt6KXbBTcFgHWD29Ckpaqt8HMKSN4Vpump`
   - ran: 4CHAN up to 1.87x  
     CA `DVdWuNK8ncn79B6z8nCiwcNAiwyFcmBPfChgxJGTpump`
-- flow below pace: blocked 35, ran 3, dumped 27, flat 5, open 0 (saving losses: keep it)
-  - ran: BOOBS up to 1.51x  
-    CA `E35iEA2yLLHc1tjm6et1Z3YuH8DhxJYWtWezPHgSpump`
-  - ran: BASKET up to 1.55x  
-    CA `3Tg6YnNrfPdFfsY14MaNsDMWLseAyrUDS3myJtbaJN6f`
-  - ran: BIAO up to 1.51x  
-    CA `As3XtYSstuVdrVyb6sJZZ77Tu8JvjTBg6S6hgPv4pump`
 - brain paced: blocked 35, ran 10, dumped 24, flat 1, open 0 (saving losses: keep it)
   - ran: Scamsem up to 1.56x  
     CA `5JWeGmA9z6yHd5F9P6B23A8wthho8BpZuDmQv5DfLoat`
@@ -120,6 +113,13 @@ A skip "ran" if the coin reached the first target (1.5x) from the skip price bef
     CA `9cDnmLRDWeJzcpyw8tSFAT7HS4Aunx6MmZWjMfrzpump`
   - ran: SHHFT up to 1.61x  
     CA `GqMg4TRt5U5HRK6oeZYwCF1Jz7Ym9MSzWSoFCtFsbzf6`
+- flow below pace: blocked 34, ran 3, dumped 27, flat 4, open 0 (saving losses: keep it)
+  - ran: BOOBS up to 1.51x  
+    CA `E35iEA2yLLHc1tjm6et1Z3YuH8DhxJYWtWezPHgSpump`
+  - ran: BASKET up to 1.55x  
+    CA `3Tg6YnNrfPdFfsY14MaNsDMWLseAyrUDS3myJtbaJN6f`
+  - ran: BIAO up to 1.51x  
+    CA `As3XtYSstuVdrVyb6sJZZ77Tu8JvjTBg6S6hgPv4pump`
 - RugCheck danger: blocked 28, ran 3, dumped 24, flat 0, open 1 (saving losses: keep it)
   - ran: TROLL up to 1.94x  
     CA `7ykeHoEnjnGkY6tqteXn47fdGtd7kfXWghiyZ7YKpump`
@@ -127,14 +127,14 @@ A skip "ran" if the coin reached the first target (1.5x) from the skip price bef
     CA `9TKbd3VFaMSXsEAicD9JVQWpWwAoLi4fSgWmZL2cpump`
   - ran: Bababoi up to 2.17x  
     CA `28B9kDm6XtQNqAkzuiKH3Zu1L8cVM6SLW4iRamFspump`
-- too new / sniping: blocked 25, ran 7, dumped 18, flat 0, open 0 (saving losses: keep it)
+- too new / sniping: blocked 26, ran 7, dumped 18, flat 0, open 1 (saving losses: keep it)
   - ran: BABYANSEM up to 2.77x  
     CA `F3VctV9FqDgiyqaztN6z78bgWy27eH7DBBHW1vjpump`
   - ran: Merged up to 2.18x  
     CA `AMYpNGi5aGrKr1ZDsotUdWh7k1mMi569ygtaHJmErGEd`
   - ran: Boor up to 1.56x  
     CA `GHFpSSw2ZMjmKCyc1wrHUjJiqnJeP18mekY9GL1Xpump`
-- near the high / chasing: blocked 24, ran 5, dumped 16, flat 2, open 1 (saving losses: keep it)
+- near the high / chasing: blocked 24, ran 5, dumped 16, flat 1, open 2 (saving losses: keep it)
   - ran: BRUH up to 1.51x  
     CA `PgFtGGquvnv2zEkjG2N2QPvBTBrafuExGYEqahRpump`
   - ran: SNOWCUMBRR up to 2.36x  
@@ -201,13 +201,13 @@ Nothing has a positive edge after costs. All 213 settled coins came out at -12.2
 Not quiet, but the volume is concentrated in coins under a few hours old. The old big caps (FIONA, UHI, Grodia, DIGS) are dead on the 5m. The main theme is holiday names with "-mas" or Santa styling: SI (santa inu, $28k 5m, 53% buys, $22k cap, 18 min old) and WIFMAS ($36.6k 5m, 59% buys, $18k cap, 6 min old), plus OG and hoss, all pump.fun launches still on the curve. Santa and Rizzclaus are not buys: Rizzclaus shows $1 of 5m volume on a $3.5k cap with 100% buys, which looks like a wash or bundle. Rising: the holiday cluster, early because Christmas is about four weeks out and metas run ahead of holidays (V5). Fading: animal mascots (FIONA at $367 5m on $1.8M), Elonmas (the one scan CA is $1.6k and -98% 1h), and BLOCK0 (-73% 1h, 6% buys). Trump and ANSEM headlines are not moving any mover, so the news is not the meta. Setups to research, none a buy yet: SI and WIFMAS at conviction 4 each, since they are minutes old and holder, dev and bundle checks are still unrun; stop at -30%, and out if 5m falls under $10k. PUMPCHAN has $71k 5m but only 40% buys, so it waits for the buy ratio to flip above 50%. Grodia and Norfeather are only in play if 5m clears $10k. The web's Elonmas 6B5X setup is not in the scan data, so I can't verify it and I'm dropping it until it appears there. Paper only, not financial advice.
 
 ## Moving most in its scans, last 30 min (1h volume)
-- Elonmas: $248,159 1h vol, $122,450 mcap, -28% 1h  
-  CA `6B5X3keXJ4J8LLvswa2mbqMhrRDbt85Jo88sbB6apump`
-- PUMPCHAN: $184,522 1h vol, $2,705,948 mcap, +99% 1h  
-  CA `Fo2HAwr7ZAUM2bSZ7MWSi16e3aWGpbw5MsUDYCttpump`
-- Fug: $170,496 1h vol, $76,716 mcap, +162% 1h  
-  CA `3QVBSB2kuJiQ75Po8qq4eV7msNFo7jMn22wfKuCTpump`
-- TEEETHY: $112,807 1h vol, $40,860 mcap, -23% 1h  
-  CA `BbC8hVHJ2bo6xFcGh2X6zcMiv1T1rznQd3qWoxXApump`
-- WIFMAS: $85,097 1h vol, $3,819 mcap, +42% 1h  
+- WIFMAS: $77,730 1h vol, $3,397 mcap, -29% 1h  
   CA `AbA72wDKTJivXbjv5SrNtGWBLtV1RX28TeYSa1WXpump`
+- Grodia: $66,933 1h vol, $777,282 mcap, -14% 1h  
+  CA `6HS1aeSk7osT5B1CzLp1HTRTAweFr5wurfMHS4vppump`
+- NORFEATH: $52,679 1h vol, $469,998 mcap, +21% 1h  
+  CA `3gmFG4sFDJErDV8pacFrL2uUPXeGJTYLjfRy4hFypump`
+- 100x: $45,773 1h vol, $12,752 mcap, +63% 1h  
+  CA `3bPob3ZN5dmWC5cGmmLSNvjzyMkSvE5SLweawwBcpump`
+- OG: $41,788 1h vol, $11,639 mcap, -61% 1h  
+  CA `AC6jhfpFFFYUciEX563ouCiMCZTxvDi1mr6zXhAMogog`
