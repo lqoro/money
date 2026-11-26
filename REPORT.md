@@ -1,13 +1,13 @@
 # Trencher live report
 
-Updated 2026-11-26T20:11:23Z (paper trading, never real money)
+Updated 2026-11-26T20:26:37Z (paper trading, never real money)
 
 - Equity: $74.23 (-25.8% vs $100 start)
 - Closed trades: 22, 3 wins
 - Fees paid: $14.78 (axiom $2.81, network $9.18, pool $2.66), plus $4.15 lost to slippage
 - New trades: WATCH-ONLY (scans and decides, buys nothing)
-- Brain: subscription, claude-haiku-5-5 for routine calls, claude-opus-5-5 for the daily review; 389 routine calls and 0 plan-limit hits in 48h
-- Watch log: 93 coins being followed, 3975 filed, 0 would-buys (6h follow, sampled every 2 min)
+- Brain: subscription, claude-haiku-5-5 for routine calls, claude-opus-5-5 for the daily review; 384 routine calls and 0 plan-limit hits in 48h
+- Watch log: 91 coins being followed, 3977 filed, 0 would-buys (6h follow, sampled every 2 min)
 
 ## Scorecard (after fees)
 - 22 closed, 3 won (14%), net $-25.79
@@ -73,7 +73,7 @@ Updated 2026-11-26T20:11:23Z (paper trading, never real money)
   CA `H4gHnZ3NCU7Z9XQwGX6YYJNyieGEW8pqwGRUcdSxpump`
 
 ## Last scan
-- 20:10Z: 3 coins, 3 with pairs, 1 passed the market filters, 1 researched
+- 20:26Z: 4 coins, 4 with pairs, 0 passed the market filters, 0 researched
 
 ## Coins it looked at, and why it passed
 - 20:11Z JIMMY (DIP, $667,726 mcap, $2,281 5m vol): PASS at conviction 2, PASS: JIMMY is a fading same-name copy with sellers at 66% of 5m flow, no printed higher low, and a 4.04% bundle over the line (V1, V3, V6, V13).  
@@ -99,7 +99,7 @@ Updated 2026-11-26T20:11:23Z (paper trading, never real money)
 
 ## What its skips did next (last 48h)
 A skip "ran" if the coin reached the first target (1.5x) from the skip price before a 20% drop, "dumped" if the drop came first. Sampled every 10 min, followed 6h.
-- top 10 over 25%: blocked 48, ran 10, dumped 37, flat 0, open 1 (saving losses: keep it)
+- top 10 over 25%: blocked 47, ran 10, dumped 36, flat 0, open 1 (saving losses: keep it)
   - ran: MARS up to 2.06x  
     CA `816BuXnCFQqt6KXbBTcFgHWD29Ckpaqt8HMKSN4Vpump`
   - ran: 4CHAN up to 1.87x  
@@ -148,11 +148,6 @@ A skip "ran" if the coin reached the first target (1.5x) from the skip price bef
     CA `J9eBkCb4UtquAMQqB6duwBmR99fFSMoTnDcaMB9Wpump`
   - ran: MONEY up to 1.58x  
     CA `DeACAbp2GMzapB6Z2K8qdkTZupmNbKc6EZx9bnbCpump`
-- brain paced: blocked 14, ran 2, dumped 12, flat 0, open 0 (saving losses: keep it)
-  - ran: WISH up to 2.36x  
-    CA `7bQL4aLYyFXPLXXngC8xmxLx6keZVfyfQcP3diU1pump`
-  - ran: BOUNCER up to 1.52x  
-    CA `ANDLpP3C7tFXEpqRBmmnbS4usmQthHfs93N5oHGpump`
 - dev share over 1%: blocked 13, ran 2, dumped 9, flat 2, open 0 (saving losses: keep it)
   - ran: Grinch up to 1.94x  
     CA `J1b5HnRzmXsYK5akPTFtBR7B4E74JG8eyULodd7ypump`
@@ -165,6 +160,11 @@ A skip "ran" if the coin reached the first target (1.5x) from the skip price bef
     CA `DTSkmo3sCCKLCh91dJLiWCpwcKtK3yDBZMqZGSV1pump`
   - ran: Maru up to 1.88x  
     CA `FokVFH6mDsazoKbtnUaA2FRMsRbDSwZhNfn17Fdvpump`
+- brain paced: blocked 13, ran 2, dumped 11, flat 0, open 0 (saving losses: keep it)
+  - ran: WISH up to 2.36x  
+    CA `7bQL4aLYyFXPLXXngC8xmxLx6keZVfyfQcP3diU1pump`
+  - ran: BOUNCER up to 1.52x  
+    CA `ANDLpP3C7tFXEpqRBmmnbS4usmQthHfs93N5oHGpump`
 
 ## Daily review (2026-11-26, claude-opus-5-5)
 No edge yet. All 276 settled coins lost money after costs under the simple plan: -6.4% average net. Every setup was negative: FINAL_STRETCH -3.6% (n=45), MIGRATED -5.1% (n=193), DIP -16.1% (n=38). Before costs the simple plan made roughly +3% overall and about +6% on FINAL_STRETCH. The ~9.7% round-trip cost on a $10 buy wipes that out, which is the same thing the 22 real trades showed: $18.83 of the $25.79 loss was fees and slippage. The sample is far too small to trust a 3–6% gross edge. Payoffs swing from +50% to -20%, so the error bar on 45 FINAL_STRETCH coins is about ±9 points. Repeat logs of the same coin also make the overall n look bigger than it is. Only the negative after-cost result is solid. The brain logged zero would-buys, so nobody can say yet whether it picks better than it passes. That missing data is the main thing to fix before Nov 10.
@@ -205,13 +205,13 @@ No edge yet. All 276 settled coins lost money after costs under the simple plan:
 Meta right now is fresh pump.fun and pumpswap launches under 20 minutes old with real buying, and it's three themes, not one. Zebras: ZBRA ($63k cap, $35k 5m, 53% buys) and a second zBRA ($27k cap, $24k 5m, 54% buys, +548% 1h), both rising. Character names: SUNDANCE ($17k cap, +434% 1h), securititty ($154k cap, 68% buys, +336% 1h) and BASS/Sir Bassalot ($52k cap, $115k 5m), also rising. A holiday start shows in JANTA (Jimmy Santa, $124k cap, 86% buys) but its $9k 5m is under our floor. Fading: the older names with volume but flat or red 1h (NORFEATH, JIMMY, DIGS) and the dog/jazz tickers (JAZZ at $314 5m, bolphante -37% on $1.1k 5m). The crawler's Criminul ($45k), PEDALFIN, PICKLES and KURO figures are not in the raw scan, which has Criminul at $3.9k and -94%, so I'm treating the crawler numbers as unverified. Setups to research, not buy: the zebra pair first, since two same-name launches make the right-token check decisive (V3); securititty only if 5m holds, since +336% in an hour is chase risk; JANTA only if 5m clears $10k with buyers still in. Not quiet, just young: most of the real flow is under 20 minutes old, so chart-start, bundle and holder checks decide each entry. The Trump dinner and Ansem headlines are news, not flow.
 
 ## Moving most in its scans, last 30 min (1h volume)
-- BASS: $292,011 1h vol, $1,524 mcap, -97% 1h  
-  CA `4U1ZcA8a8p5BKW8e4FsQnvd9TjvnWJgb4s58gGAApump`
-- ZBRA: $264,117 1h vol, $8,288 mcap, -82% 1h  
-  CA `DrBCGJscM3ziBRd2CDt5dV9W1rCVAimVZ78BxrN8pump`
-- George: $194,440 1h vol, $513,501 mcap, +1207% 1h  
-  CA `FvitVJ528ZCyuy695DoqEGy816rFVafbZ2MSgMw3pump`
+- 1T: $361,582 1h vol, $1,361 mcap, -96% 1h  
+  CA `HYFbbfv771xSRXyF2rRdf6eQzucLhrSHd2JkE12vpump`
 - Dogeball: $163,205 1h vol, $608,257 mcap, +1602% 1h  
   CA `EMhHvdxs3L1T38pV1yNe9JXF6KfkxFTShNLaxL7rpump`
-- FIREBALL: $90,867 1h vol, $36,101 mcap, +26% 1h  
-  CA `3FXQU7aFGcKoAAnEbAM28RjKoxB8FM9iNnBD6uXmfire`
+- ZBRA: $102,626 1h vol, $7,783 mcap, -93% 1h  
+  CA `DrBCGJscM3ziBRd2CDt5dV9W1rCVAimVZ78BxrN8pump`
+- NORFEATH: $61,171 1h vol, $1,578 mcap, -99% 1h  
+  CA `3gmFG4sFDJErDV8pacFrL2uUPXeGJTYLjfRy4hFypump`
+- securititty: $50,695 1h vol, $1,317 mcap, -99% 1h  
+  CA `Gvo9widdpuyi2XsWm9gAepfcBR54c7XrrSSdwF2Mpump`
