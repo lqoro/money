@@ -1,13 +1,13 @@
 # Trencher live report
 
-Updated 2026-11-26T12:36:33Z (paper trading, never real money)
+Updated 2026-11-26T12:51:38Z (paper trading, never real money)
 
 - Equity: $74.23 (-25.8% vs $100 start)
 - Closed trades: 22, 3 wins
 - Fees paid: $14.78 (axiom $2.81, network $9.18, pool $2.66), plus $4.15 lost to slippage
 - New trades: WATCH-ONLY (scans and decides, buys nothing)
 - Brain: subscription, claude-haiku-5-5 for routine calls, claude-opus-5-5 for the daily review; 414 routine calls and 0 plan-limit hits in 48h
-- Watch log: 85 coins being followed, 3863 filed, 0 would-buys (6h follow, sampled every 2 min)
+- Watch log: 85 coins being followed, 3867 filed, 0 would-buys (6h follow, sampled every 2 min)
 
 ## Scorecard (after fees)
 - 22 closed, 3 won (14%), net $-25.79
@@ -73,9 +73,17 @@ Updated 2026-11-26T12:36:33Z (paper trading, never real money)
   CA `H4gHnZ3NCU7Z9XQwGX6YYJNyieGEW8pqwGRUcdSxpump`
 
 ## Last scan
-- 12:36Z: 4 coins, 4 with pairs, 0 passed the market filters, 0 researched
+- 12:51Z: 1 coins, 1 with pairs, 0 passed the market filters, 0 researched
 
 ## Coins it looked at, and why it passed
+- 12:48Z konnichiwa (DIP, $48,543 mcap, $3,381 5m vol): PASS at conviction 2, PASS: one bundle cluster holds 16.3% inside a 26-copy same-ticker field, and 5m flow is 0.64x pace. Split crowd, fading dip (V1, V3, V6).  
+  CA `HdRPR3nqkNCt98DWQqDdfkRHDc1NFsgCJVbfXRnppump`
+- 12:44Z Pair (FINAL_STRETCH, $21,668 mcap, $24,812 5m vol): PASS at conviction 3, PASS — chasing spike. Up 952% on 5m at 12x the hourly pace, two minutes old, and one of 19 copies of "pair" with a site that doesn't show this CA (V1, V3, V6).  
+  CA `EWCfhnj8YjPEbvQXEtwkxMT54WhBpZBLQDFncRoypump`
+- 12:42Z PUMPCHAN (MIGRATED, $9,422,302 mcap, $14,178 5m vol): PASS at conviction 3, PASS: $9.4M cap, 5m flow at 0.59x pace, 10% under a high it's still sitting near, and the site doesn't show this CA. Blocker: big cap, no room (V1, V6).  
+  CA `Fo2HAwr7ZAUM2bSZ7MWSi16e3aWGpbw5MsUDYCttpump`
+- 12:38Z Mikyan (FINAL_STRETCH, $18,183 mcap, $4,518 5m vol): PASS at conviction 3, PASS: a vamp, not the original. Four bigger Mikyan tokens share the ticker, the theme is cooling at 0.36x pace, and 5m flow is under the $10k bar. (V1, V3, V6)  
+  CA `FPQSvZxD65LorsJrVgMZhJqtyh1WRZ57NnwLCim5pump`
 - 12:35Z SAITAMA (FINAL_STRETCH, $17,619 mcap, $17,307 5m vol): PASS at conviction 3, PASS: split crowd and chasing spike. 11 same-name copies, an 8% bundle cluster, and +474% on the 5m candle with no socials. Farm until proven otherwise (V1, V3, V13).  
   CA `T6wtf42QybibBXmbYU8shb4KEeVUPc7T7Pw2PtKpump`
 - 12:34Z CBUCKS (MIGRATED, $5,793,962 mcap, $2,526 5m vol): REJECT, Top 10 hold 25.6% ex-pool (>25%) (V13)  
@@ -88,14 +96,6 @@ Updated 2026-11-26T12:36:33Z (paper trading, never real money)
   CA `CSuqK3KiUJJUbSvrxbb97EyENxz4t2hZTrnWYzojpump`
 - 12:18Z FIONA (DIP, $1,985,831 mcap, $2,082 5m vol): REJECT, Bundles: 10 linked wallet cluster(s) hold 30.2% of supply (>20%) (V17)  
   CA `B34nXKzCgsJb9ChLuSHPRpXLE3WFSWyeT8Cqkzzmpump`
-- 12:18Z ASCEND (FINAL_STRETCH, $23,248 mcap, $4,471 5m vol): REJECT, Top 10 hold 29.1% ex-pool (>25%) (V13)  
-  CA `AQersggvEZo11i1yWPfBGkBguEY8iwvN5NgavorGpump`
-- 12:17Z Grodia (MIGRATED, $344,325 mcap, $4,560 5m vol): PASS at conviction 3, PASS: 87% off the high with 5m flow at 0.66x pace and $4.6k under the $10k bar, a 0.7-day-old domain whose site shows "CA TBA", and no catalyst. Blockers: "flow below pace", "no higher low", "no catalyst". Crowded ticker field. (V1, V6, V13)  
-  CA `6HS1aeSk7osT5B1CzLp1HTRTAweFr5wurfMHS4vppump`
-- 12:07Z Hey (MIGRATED, $37,010 mcap, $7,096 5m vol): REJECT, Dev holds 4.8% (>1%) (V13, V17)  
-  CA `F9CwhBgSsEJuCigbodtUH257EqQpRSzKLKwHPPKNpump`
-- 12:07Z UHI (MIGRATED, $1,729,230 mcap, $4,806 5m vol): PASS at conviction 2, PASS: chasing at 3% off the high, flow under pace, CA not on its own site, 21 copies of the ticker. Blocker: "chasing" (V1, V6).  
-  CA `Bnw5JRPek5JvJhzUiB9yrs2cmzt4bLeFqSRzDzSppump`
 
 ## What its skips did next (last 48h)
 A skip "ran" if the coin reached the first target (1.5x) from the skip price before a 20% drop, "dumped" if the drop came first. Sampled every 10 min, followed 6h.
@@ -106,21 +106,21 @@ A skip "ran" if the coin reached the first target (1.5x) from the skip price bef
     CA `816BuXnCFQqt6KXbBTcFgHWD29Ckpaqt8HMKSN4Vpump`
   - ran: 4CHAN up to 1.87x  
     CA `DVdWuNK8ncn79B6z8nCiwcNAiwyFcmBPfChgxJGTpump`
-- flow below pace: blocked 35, ran 3, dumped 26, flat 3, open 3 (saving losses: keep it)
+- flow below pace: blocked 36, ran 3, dumped 25, flat 3, open 5 (saving losses: keep it)
   - ran: BOOBS up to 1.51x  
     CA `E35iEA2yLLHc1tjm6et1Z3YuH8DhxJYWtWezPHgSpump`
   - ran: BASKET up to 1.55x  
     CA `3Tg6YnNrfPdFfsY14MaNsDMWLseAyrUDS3myJtbaJN6f`
   - ran: BIAO up to 1.51x  
     CA `As3XtYSstuVdrVyb6sJZZ77Tu8JvjTBg6S6hgPv4pump`
-- brain paced: blocked 32, ran 8, dumped 23, flat 1, open 0 (saving losses: keep it)
+- brain paced: blocked 31, ran 7, dumped 23, flat 1, open 0 (saving losses: keep it)
   - ran: RUGSEM up to 1.5x  
     CA `9cDnmLRDWeJzcpyw8tSFAT7HS4Aunx6MmZWjMfrzpump`
-  - ran: SHHFT up to 1.61x  
-    CA `GqMg4TRt5U5HRK6oeZYwCF1Jz7Ym9MSzWSoFCtFsbzf6`
   - ran: Wanted up to 1.55x  
     CA `2M3CsCP97Le187KQC5jhZG3c6bFzCZ51NP8bscrupump`
-- near the high / chasing: blocked 28, ran 6, dumped 18, flat 2, open 2 (saving losses: keep it)
+  - ran: SANTIA up to 1.76x  
+    CA `2YKce3apGESoWhqt4N7MGg5t4UEKgPPL4ArheEvPpump`
+- near the high / chasing: blocked 28, ran 6, dumped 19, flat 2, open 1 (saving losses: keep it)
   - ran: BRUH up to 1.51x  
     CA `PgFtGGquvnv2zEkjG2N2QPvBTBrafuExGYEqahRpump`
   - ran: SNOWCUMBRR up to 2.36x  
@@ -134,7 +134,7 @@ A skip "ran" if the coin reached the first target (1.5x) from the skip price bef
     CA `9TKbd3VFaMSXsEAicD9JVQWpWwAoLi4fSgWmZL2cpump`
   - ran: Bababoi up to 2.17x  
     CA `28B9kDm6XtQNqAkzuiKH3Zu1L8cVM6SLW4iRamFspump`
-- too new / sniping: blocked 26, ran 7, dumped 19, flat 0, open 0 (saving losses: keep it)
+- too new / sniping: blocked 27, ran 8, dumped 19, flat 0, open 0 (saving losses: keep it)
   - ran: BABYANSEM up to 2.77x  
     CA `F3VctV9FqDgiyqaztN6z78bgWy27eH7DBBHW1vjpump`
   - ran: Merged up to 2.18x  
@@ -203,13 +203,13 @@ Nothing has a positive edge after costs. All 213 settled coins came out at -12.2
 The meta on the movers is fresh pump.fun micro-caps with buyer majorities, not the Trump or Ansem news. FLOW ($19k cap, $33.6k 5m, 67% buys, +621% 1h, 0.1h old), ASCEND ($23k cap, 77% buys, +332%) and Hey ($43k cap, $7.9k 5m, 57% buys) lead, and Japanese/kana joke names (Riku, Yaranaika) show 54% buys on thin volume. Fading: old or dumping tickers, including CBUCKS (about $10 of 5m volume), FIONA (42% buys), NUBU (-94% 1h, zero volume), Maru (-73%), DUE and Elondrop (24–26% buys) and duk (zero 5m volume). Setups to research, not buy: Hey is closest to the $10k 5m bar, so it gets holder and bundle checks first. FLOW's 5m volume exceeds its cap, a farm flag until those checks clear (conviction 4, -30% stop, out if 5m drops under $10k). Riku and ASCEND need 5m volume to climb toward $10k first. The crawler's konnichiwa, TheLore, PumpChan and STRUCK figures don't appear in scan_movers, and its Yaranaika numbers ($17k cap, $25k 5m) don't match the scan ($8.1k cap, $972 5m), so I'm using the scan data and not the web figures. Paper only, not financial advice.
 
 ## Moving most in its scans, last 30 min (1h volume)
-- NUBU: $549,855 1h vol, $1,927 mcap, -95% 1h  
+- PUMPCHAN: $269,809 1h vol, $9,451,296 mcap, +18% 1h  
+  CA `Fo2HAwr7ZAUM2bSZ7MWSi16e3aWGpbw5MsUDYCttpump`
+- NUBU: $228,661 1h vol, $1,891 mcap, -96% 1h  
   CA `Gngq4r84xEJe5EssETLu9s9dhamSGTAWsmPbq7x2zjrt`
-- Maru: $183,344 1h vol, $9,857 mcap, -73% 1h  
-  CA `FokVFH6mDsazoKbtnUaA2FRMsRbDSwZhNfn17Fdvpump`
-- Grodia: $83,350 1h vol, $344,325 mcap, -32% 1h  
-  CA `6HS1aeSk7osT5B1CzLp1HTRTAweFr5wurfMHS4vppump`
 - NORFEATH: $77,674 1h vol, $510,351 mcap, -1% 1h  
   CA `3gmFG4sFDJErDV8pacFrL2uUPXeGJTYLjfRy4hFypump`
-- ASCEND: $70,852 1h vol, $23,489 mcap, +332% 1h  
-  CA `AQersggvEZo11i1yWPfBGkBguEY8iwvN5NgavorGpump`
+- konnichiwa: $63,052 1h vol, $48,543 mcap, +13% 1h  
+  CA `HdRPR3nqkNCt98DWQqDdfkRHDc1NFsgCJVbfXRnppump`
+- Maru: $57,970 1h vol, $17,304 mcap, -53% 1h  
+  CA `FokVFH6mDsazoKbtnUaA2FRMsRbDSwZhNfn17Fdvpump`
