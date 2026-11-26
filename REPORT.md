@@ -1,13 +1,13 @@
 # Trencher live report
 
-Updated 2026-11-26T17:09:10Z (paper trading, never real money)
+Updated 2026-11-26T17:24:18Z (paper trading, never real money)
 
 - Equity: $74.23 (-25.8% vs $100 start)
 - Closed trades: 22, 3 wins
 - Fees paid: $14.78 (axiom $2.81, network $9.18, pool $2.66), plus $4.15 lost to slippage
 - New trades: WATCH-ONLY (scans and decides, buys nothing)
-- Brain: subscription, claude-haiku-5-5 for routine calls, claude-opus-5-5 for the daily review; 404 routine calls and 0 plan-limit hits in 48h
-- Watch log: 99 coins being followed, 3926 filed, 0 would-buys (6h follow, sampled every 2 min)
+- Brain: subscription, claude-haiku-5-5 for routine calls, claude-opus-5-5 for the daily review; 398 routine calls and 0 plan-limit hits in 48h
+- Watch log: 99 coins being followed, 3929 filed, 0 would-buys (6h follow, sampled every 2 min)
 
 ## Scorecard (after fees)
 - 22 closed, 3 won (14%), net $-25.79
@@ -73,9 +73,15 @@ Updated 2026-11-26T17:09:10Z (paper trading, never real money)
   CA `H4gHnZ3NCU7Z9XQwGX6YYJNyieGEW8pqwGRUcdSxpump`
 
 ## Last scan
-- 17:08Z: 1 coins, 1 with pairs, 0 passed the market filters, 0 researched
+- 17:23Z: 4 coins, 4 with pairs, 0 passed the market filters, 0 researched
 
 ## Coins it looked at, and why it passed
+- 17:20Z CBUCKS (MIGRATED, $5,822,721 mcap, $2,269 5m vol): REJECT, Top 10 hold 25.6% ex-pool (>25%) (V13)  
+  CA `DtcicPCKTKeAh7TDEzTym3hXeoHAoMiBdYJhMYxZpump`
+- 17:14Z Kuro (MIGRATED, $63,160 mcap, $9,965 5m vol): REJECT, Bundles: 8 linked wallet cluster(s) hold 79.7% of supply (>20%) (V17)  
+  CA `AuVQxjSZt937unfV6ScNca1ZwwqZtjNSq3LfQtv4pump`
+- 17:10Z TRUMP (MIGRATED, $55,522 mcap, $76,134 5m vol): PASS at conviction 2, PASS: chasing spike, 4 minutes old, no higher low, 15-copy Trump field. Blocker: "chasing spike." (V1, V6, V13)  
+  CA `AtmZQTxVHZN7yk7a2yodSmQhXgFT4jTPYXd5FrmY5v2t`
 - 17:06Z NORFEATH (MIGRATED, $266,731 mcap, $5,797 5m vol): PASS at conviction 3, PASS: DIP at 74% off a $1.03M peak with theme pace 0.63x, no fresh catalyst, and the first resistance only 1.23x away. Holders are clean, the story is not. (V1, V6, V13)  
   CA `3gmFG4sFDJErDV8pacFrL2uUPXeGJTYLjfRy4hFypump`
 - 17:05Z Kuro (FINAL_STRETCH, $21,971 mcap, $48,108 5m vol): PASS at conviction 2, PASS: KuroCoin is a $22k copy in a 25-coin Kuro field whose leader, KURO, is at $1M. It's down 39% in 5m with top 10 at 16.7% and a 4.4% bundle. Blocker: split crowd (V1, V3).  
@@ -90,30 +96,24 @@ Updated 2026-11-26T17:09:10Z (paper trading, never real money)
   CA `AaY6XtQZYYaxQ4fV8R8acConnMsgjg9zrZs341HUpump`
 - 16:52Z MSTR (MIGRATED, $310,611 mcap, $44,836 5m vol): REJECT, Top 10 hold 31.4% ex-pool (>25%) (V13)  
   CA `57sCZ82FwS5Dfs7FN9nshtU5Mkb3w1dqhmPUuCPvpump`
-- 16:48Z hodl (FINAL_STRETCH, $19,390 mcap, $3,249 5m vol): PASS at conviction 3, PASS: chasing a spike in a 14-copy cat field, 5m flow $3.2k at 1.05x pace on a dead theme. Blocker: chasing spike. (V1, V6, V13)  
-  CA `5k3dzHrSYuNtPQozWanmvYb6HGG9qxma1pkY4iGzpump`
-- 16:47Z JIMMY (MIGRATED, $884,219 mcap, $3,107 5m vol): PASS at conviction 3, PASS. Flow is at 0.67x pace, no higher low has printed, and the story is fading. Blocker: "flow below pace" (V1, V6).  
-  CA `38M2z4UCfZEkUHFzD48vhKQhFhNyRGto8pZbLjNipump`
-- 16:40Z UHI (MIGRATED, $1,591,061 mcap, $7,695 5m vol): PASS at conviction 2, PASS — target too close: the $1.91M high is only 1.2x from $1.59M, 5m is down 12% on $7.7k flow, and the site still says CA TBA. Elon-tweet meme with no verified CA. (V1, V6, V13)  
-  CA `Bnw5JRPek5JvJhzUiB9yrs2cmzt4bLeFqSRzDzSppump`
 
 ## What its skips did next (last 48h)
 A skip "ran" if the coin reached the first target (1.5x) from the skip price before a 20% drop, "dumped" if the drop came first. Sampled every 10 min, followed 6h.
-- top 10 over 25%: blocked 49, ran 9, dumped 37, flat 1, open 2 (saving losses: keep it)
+- top 10 over 25%: blocked 49, ran 11, dumped 37, flat 0, open 1 (saving losses: keep it)
   - ran: SCF up to 2.01x  
     CA `Az7dYDicMc4G9hwnkeQYwHi6Fop1711C7hABcrWzpump`
   - ran: MARS up to 2.06x  
     CA `816BuXnCFQqt6KXbBTcFgHWD29Ckpaqt8HMKSN4Vpump`
   - ran: 4CHAN up to 1.87x  
     CA `DVdWuNK8ncn79B6z8nCiwcNAiwyFcmBPfChgxJGTpump`
-- flow below pace: blocked 39, ran 4, dumped 27, flat 3, open 5 (saving losses: keep it)
+- flow below pace: blocked 39, ran 4, dumped 27, flat 4, open 4 (saving losses: keep it)
   - ran: BOOBS up to 1.51x  
     CA `E35iEA2yLLHc1tjm6et1Z3YuH8DhxJYWtWezPHgSpump`
   - ran: BASKET up to 1.55x  
     CA `3Tg6YnNrfPdFfsY14MaNsDMWLseAyrUDS3myJtbaJN6f`
   - ran: BIAO up to 1.51x  
     CA `As3XtYSstuVdrVyb6sJZZ77Tu8JvjTBg6S6hgPv4pump`
-- too new / sniping: blocked 33, ran 8, dumped 25, flat 0, open 0 (saving losses: keep it)
+- too new / sniping: blocked 34, ran 8, dumped 25, flat 0, open 1 (saving losses: keep it)
   - ran: BABYANSEM up to 2.77x  
     CA `F3VctV9FqDgiyqaztN6z78bgWy27eH7DBBHW1vjpump`
   - ran: Merged up to 2.18x  
@@ -134,27 +134,27 @@ A skip "ran" if the coin reached the first target (1.5x) from the skip price bef
     CA `9TKbd3VFaMSXsEAicD9JVQWpWwAoLi4fSgWmZL2cpump`
   - ran: Bababoi up to 2.17x  
     CA `28B9kDm6XtQNqAkzuiKH3Zu1L8cVM6SLW4iRamFspump`
-- brain paced: blocked 24, ran 6, dumped 18, flat 0, open 0 (saving losses: keep it)
-  - ran: Wanted up to 1.55x  
-    CA `2M3CsCP97Le187KQC5jhZG3c6bFzCZ51NP8bscrupump`
+- brain paced: blocked 21, ran 5, dumped 16, flat 0, open 0 (saving losses: keep it)
   - ran: SANTIA up to 1.76x  
     CA `2YKce3apGESoWhqt4N7MGg5t4UEKgPPL4ArheEvPpump`
   - ran: Slingoor up to 1.73x  
     CA `6GLetugFEmy7P7SmLtg3zyZdz6rWCQ8gHPbPYZs9pump`
-- falling knife (code): blocked 19, ran 3, dumped 14, flat 1, open 1 (saving losses: keep it)
-  - ran: Jimmies up to 1.53x  
-    CA `GisWWjhwrSud4aFGSHvTMt85Ky14sY7LeBFCpfoFpump`
-  - ran: Investor up to 1.58x  
-    CA `J9eBkCb4UtquAMQqB6duwBmR99fFSMoTnDcaMB9Wpump`
-  - ran: MONEY up to 1.58x  
-    CA `DeACAbp2GMzapB6Z2K8qdkTZupmNbKc6EZx9bnbCpump`
-- bundles over the line: blocked 17, ran 3, dumped 11, flat 1, open 2 (saving losses: keep it)
+  - ran: FREEDOM up to 4.48x  
+    CA `FDNc812jkHdhkdeRNaLMVwyihHMLR6ztTmRfxG7opump`
+- bundles over the line: blocked 18, ran 3, dumped 11, flat 1, open 3 (saving losses: keep it)
   - ran: jingyu up to 1.58x  
     CA `DUZrwdjEthcJ99ZiRXr31UuqTohoTg7VjTEyfGdBpump`
   - ran: DUMBMONEY up to 1.74x  
     CA `GEHehS5Rr4rNCjvrHLjjV1avD4bjMsn53ywDGv1spump`
   - ran: WIENER up to 1.59x  
     CA `8BDkDfj3ZUvcG9caGzF2XnHfwg7K6fjfKKDvX6SCpump`
+- falling knife (code): blocked 18, ran 3, dumped 13, flat 1, open 1 (saving losses: keep it)
+  - ran: Jimmies up to 1.53x  
+    CA `GisWWjhwrSud4aFGSHvTMt85Ky14sY7LeBFCpfoFpump`
+  - ran: Investor up to 1.58x  
+    CA `J9eBkCb4UtquAMQqB6duwBmR99fFSMoTnDcaMB9Wpump`
+  - ran: MONEY up to 1.58x  
+    CA `DeACAbp2GMzapB6Z2K8qdkTZupmNbKc6EZx9bnbCpump`
 - falling knife / no higher low: blocked 12, ran 3, dumped 5, flat 3, open 1 (mixed)
   - ran: Jimmies up to 1.53x  
     CA `GisWWjhwrSud4aFGSHvTMt85Ky14sY7LeBFCpfoFpump`
@@ -207,11 +207,11 @@ Meta right now is fresh pump.fun "meme stock/exchange" parody launches with real
 ## Moving most in its scans, last 30 min (1h volume)
 - KURO: $631,631 1h vol, $1,014,229 mcap, +834% 1h  
   CA `AaY6XtQZYYaxQ4fV8R8acConnMsgjg9zrZs341HUpump`
+- X: $345,337 1h vol, $1,502 mcap, -94% 1h  
+  CA `Bwfg2Df8Kf1oHxkRh5Nu1jXp9agxAEeLpPzwxdqApump`
 - Kuro: $316,128 1h vol, $182,124 mcap, +300% 1h  
   CA `8LbBWesEQ5myfamxhxHtZ295RbvDigqSj2iCYex5pump`
-- DUO: $155,984 1h vol, $8,443 mcap, -95% 1h  
-  CA `CC1uvrWkFdju8NuUrS7x3bKVzu5Cjy6Kt6nyB6Pbpump`
-- MSTR: $151,706 1h vol, $310,163 mcap, +701% 1h  
-  CA `57sCZ82FwS5Dfs7FN9nshtU5Mkb3w1dqhmPUuCPvpump`
+- MEMESTOCK: $200,231 1h vol, $1,291 mcap, -100% 1h  
+  CA `F39a5zLgy7DdiDA2YmWt6RgMnQ9mfukqxc4qLcippump`
 - Kuro: $141,292 1h vol, $19,375 mcap, +416% 1h  
   CA `6rgKgGQE7frFitSnEiYxM4Y7RPFR7m35Ag4cLQxdgMf3`
