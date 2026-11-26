@@ -1,13 +1,13 @@
 # Trencher live report
 
-Updated 2026-11-26T23:28:21Z (paper trading, never real money)
+Updated 2026-11-26T23:43:36Z (paper trading, never real money)
 
 - Equity: $74.23 (-25.8% vs $100 start)
 - Closed trades: 22, 3 wins
 - Fees paid: $14.78 (axiom $2.81, network $9.18, pool $2.66), plus $4.15 lost to slippage
 - New trades: WATCH-ONLY (scans and decides, buys nothing)
-- Brain: subscription, claude-haiku-5-5 for routine calls, claude-opus-5-5 for the daily review; 365 routine calls and 0 plan-limit hits in 48h
-- Watch log: 76 coins being followed, 4029 filed, 0 would-buys (6h follow, sampled every 2 min)
+- Brain: subscription, claude-haiku-5-5 for routine calls, claude-opus-5-5 for the daily review; 364 routine calls and 0 plan-limit hits in 48h
+- Watch log: 74 coins being followed, 4032 filed, 0 would-buys (6h follow, sampled every 2 min)
 
 ## Scorecard (after fees)
 - 22 closed, 3 won (14%), net $-25.79
@@ -73,9 +73,11 @@ Updated 2026-11-26T23:28:21Z (paper trading, never real money)
   CA `H4gHnZ3NCU7Z9XQwGX6YYJNyieGEW8pqwGRUcdSxpump`
 
 ## Last scan
-- 23:27Z: 7 coins, 7 with pairs, 0 passed the market filters, 0 researched
+- 23:43Z: 4 coins, 4 with pairs, 0 passed the market filters, 0 researched
 
 ## Coins it looked at, and why it passed
+- 23:36Z FLOW (MIGRATED, $37,439 mcap, $43,883 5m vol): PASS at conviction 3, PASS: FLOW is about 3 minutes old, bleeding off its bond spike, in a 22-copy "flow" field, and its site shows a different CA. Blocker: "too new" (V1, V3, V6).  
+  CA `FxWDDcxosMaRnFRzzDQisFjN4a5Gip5ECs7MtsQYFLoW`
 - 23:21Z CINU (MIGRATED, $202,286 mcap, $4,555 5m vol): REJECT, Top 10 hold 25.7% ex-pool (>25%) (V13)  
   CA `CvXQ9qEriGgTbMWyF8L1U7oqn9ev8A49N1dzNE8cpump`
 - 23:19Z HOLD (MIGRATED, $33,481 mcap, $4,148 5m vol): PASS at conviction 2, PASS. HOLD is 82% off a $185k peak with 5m flow at 0.19x its hourly pace, no printed higher low, and a 1.5-day-old site that doesn't show this CA. Blocker: "flow below pace". Dead tape (V1, V6, V13).  
@@ -94,12 +96,10 @@ Updated 2026-11-26T23:28:21Z (paper trading, never real money)
   CA `Ak4BGyneYMfy2b7WrYaknsbSSz4x6jSeTTguEsgypump`
 - 22:55Z Joey (FINAL_STRETCH, $16,676 mcap, $19,437 5m vol): REJECT, Top 10 hold 31.0% ex-pool (>25%) (V13)  
   CA `CgMFCJbKBNCA1nMz7ZPg3XpABfUHsaWfrdSdGGZKgPG5`
-- 22:53Z Cateball (DIP, $604,146 mcap, $24,006 5m vol): PASS at conviction 2, PASS — DIP with no catalyst, 15 tokens share the name, and the site says "CA TBA" on a 2-hour-old domain. Price is down 34% in the last 5 minutes with no printed higher low. (V1, V3, V6, V13)  
-  CA `Bb38n8AVLMh9amo8qtjLvqE8nPtfs8GEsyzg1pC6pump`
 
 ## What its skips did next (last 48h)
 A skip "ran" if the coin reached the first target (1.5x) from the skip price before a 20% drop, "dumped" if the drop came first. Sampled every 10 min, followed 6h.
-- top 10 over 25%: blocked 53, ran 9, dumped 39, flat 1, open 4 (saving losses: keep it)
+- top 10 over 25%: blocked 53, ran 9, dumped 40, flat 1, open 3 (saving losses: keep it)
   - ran: 4CHAN up to 1.87x  
     CA `DVdWuNK8ncn79B6z8nCiwcNAiwyFcmBPfChgxJGTpump`
   - ran: SWARM up to 1.57x  
@@ -120,7 +120,7 @@ A skip "ran" if the coin reached the first target (1.5x) from the skip price bef
     CA `A88p1LcHisrx3TuTwUGVrLtc1LBTUPZUfVgaCGutAFaK`
   - ran: Nala up to 1.64x  
     CA `FeBG8AEG4j7LT7xQF38gPXQFBRBtXBTNzhZjSa3bpump`
-- too new / sniping: blocked 37, ran 8, dumped 29, flat 0, open 0 (saving losses: keep it)
+- too new / sniping: blocked 38, ran 8, dumped 29, flat 0, open 1 (saving losses: keep it)
   - ran: BABYANSEM up to 2.77x  
     CA `F3VctV9FqDgiyqaztN6z78bgWy27eH7DBBHW1vjpump`
   - ran: Merged up to 2.18x  
@@ -205,9 +205,9 @@ The trenches are trading fresh plain-word launches, and the only sized flow is H
   CA `8n7mSQ8KUqP17AQii1bmWR1wdRhtKe5fDW7yiuLqpump`
 - HOLD: $265,390 1h vol, $33,481 mcap, -71% 1h  
   CA `BuNeErf9FjL6dgzE74S21Qm9EeBaYMJXSW4A8ihxpump`
-- BEANIE: $51,860 1h vol, $2,691 mcap, -28% 1h  
-  CA `7Vk7CdLg2b48BLMkbPRt4Ep3ZE1asrUEgX9nrEabx3bg`
-- MM: $49,970 1h vol, $2,054 mcap, +3% 1h  
-  CA `amC5BWY6RCtoGCgHu3jYAPyX2K824642J1aJu4fEEhq`
-- CINU: $35,483 1h vol, $202,286 mcap, +341% 1h  
-  CA `CvXQ9qEriGgTbMWyF8L1U7oqn9ev8A49N1dzNE8cpump`
+- Cateball: $179,729 1h vol, $1,338 mcap, -100% 1h  
+  CA `Bb38n8AVLMh9amo8qtjLvqE8nPtfs8GEsyzg1pC6pump`
+- Joey: $88,367 1h vol, $2,230 mcap, -77% 1h  
+  CA `CgMFCJbKBNCA1nMz7ZPg3XpABfUHsaWfrdSdGGZKgPG5`
+- FLOW: $43,883 1h vol, $37,439 mcap, +12% 1h  
+  CA `FxWDDcxosMaRnFRzzDQisFjN4a5Gip5ECs7MtsQYFLoW`
