@@ -1,13 +1,13 @@
 # Trencher live report
 
-Updated 2026-11-26T17:54:41Z (paper trading, never real money)
+Updated 2026-11-26T18:09:45Z (paper trading, never real money)
 
 - Equity: $74.23 (-25.8% vs $100 start)
 - Closed trades: 22, 3 wins
 - Fees paid: $14.78 (axiom $2.81, network $9.18, pool $2.66), plus $4.15 lost to slippage
 - New trades: WATCH-ONLY (scans and decides, buys nothing)
-- Brain: subscription, claude-haiku-5-5 for routine calls, claude-opus-5-5 for the daily review; 400 routine calls and 0 plan-limit hits in 48h
-- Watch log: 99 coins being followed, 3937 filed, 0 would-buys (6h follow, sampled every 2 min)
+- Brain: subscription, claude-haiku-5-5 for routine calls, claude-opus-5-5 for the daily review; 396 routine calls and 0 plan-limit hits in 48h
+- Watch log: 98 coins being followed, 3940 filed, 0 would-buys (6h follow, sampled every 2 min)
 
 ## Scorecard (after fees)
 - 22 closed, 3 won (14%), net $-25.79
@@ -73,9 +73,13 @@ Updated 2026-11-26T17:54:41Z (paper trading, never real money)
   CA `H4gHnZ3NCU7Z9XQwGX6YYJNyieGEW8pqwGRUcdSxpump`
 
 ## Last scan
-- 17:54Z: 3 coins, 3 with pairs, 0 passed the market filters, 0 researched
+- 18:08Z: 3 coins, 3 with pairs, 0 passed the market filters, 0 researched
 
 ## Coins it looked at, and why it passed
+- 17:59Z Kuro (DIP, $70,818 mcap, $24,571 5m vol): REJECT, Bundles: 10 linked wallet cluster(s) hold 100.0% of supply (>20%) (V17)  
+  CA `AuVQxjSZt937unfV6ScNca1ZwwqZtjNSq3LfQtv4pump`
+- 17:55Z Kuro (MIGRATED, $384,232 mcap, $65,912 5m vol): REJECT, Top 10 hold 48.4% ex-pool (>25%) (V13)  
+  CA `8TG9KGHbLYdArfk4mBRnbJNGKNXYkLFXDpNLbSeHpump`
 - 17:51Z NORFEATH (MIGRATED, $285,066 mcap, $4,749 5m vol): PASS at conviction 2, PASS: 72% off the high with no verified catalyst, 5m flow under pace, no printed higher low, 27 copies of the ticker. A balloon parade theme is not a reason to buy (V1, V5, V13).  
   CA `3gmFG4sFDJErDV8pacFrL2uUPXeGJTYLjfRy4hFypump`
 - 17:49Z DIGS (MIGRATED, $241,457 mcap, $3,228 5m vol): REJECT, Bundles: 10 linked wallet cluster(s) hold 100.0% of supply (>20%) (V17)  
@@ -92,28 +96,24 @@ Updated 2026-11-26T17:54:41Z (paper trading, never real money)
   CA `8Xdo9sshdudeALCf2ebdm4FdfAYk5xZRxQp8VH7CT9QK`
 - 17:26Z UHI (MIGRATED, $1,489,965 mcap, $5,293 5m vol): PASS at conviction 3, PASS: flow below pace (0.81x hourly), and the first resistance is only 1.29x away. No catalyst, and the site doesn't show the CA. (V1, V3, V6)  
   CA `Bnw5JRPek5JvJhzUiB9yrs2cmzt4bLeFqSRzDzSppump`
-- 17:20Z CBUCKS (MIGRATED, $5,822,721 mcap, $2,269 5m vol): REJECT, Top 10 hold 25.6% ex-pool (>25%) (V13)  
-  CA `DtcicPCKTKeAh7TDEzTym3hXeoHAoMiBdYJhMYxZpump`
-- 17:14Z Kuro (MIGRATED, $63,160 mcap, $9,965 5m vol): REJECT, Bundles: 8 linked wallet cluster(s) hold 79.7% of supply (>20%) (V17)  
-  CA `AuVQxjSZt937unfV6ScNca1ZwwqZtjNSq3LfQtv4pump`
 
 ## What its skips did next (last 48h)
 A skip "ran" if the coin reached the first target (1.5x) from the skip price before a 20% drop, "dumped" if the drop came first. Sampled every 10 min, followed 6h.
-- top 10 over 25%: blocked 46, ran 10, dumped 35, flat 0, open 1 (saving losses: keep it)
+- top 10 over 25%: blocked 47, ran 10, dumped 36, flat 0, open 1 (saving losses: keep it)
   - ran: SCF up to 2.01x  
     CA `Az7dYDicMc4G9hwnkeQYwHi6Fop1711C7hABcrWzpump`
   - ran: MARS up to 2.06x  
     CA `816BuXnCFQqt6KXbBTcFgHWD29Ckpaqt8HMKSN4Vpump`
   - ran: 4CHAN up to 1.87x  
     CA `DVdWuNK8ncn79B6z8nCiwcNAiwyFcmBPfChgxJGTpump`
-- flow below pace: blocked 39, ran 4, dumped 27, flat 4, open 4 (saving losses: keep it)
+- flow below pace: blocked 39, ran 4, dumped 29, flat 4, open 2 (saving losses: keep it)
   - ran: BOOBS up to 1.51x  
     CA `E35iEA2yLLHc1tjm6et1Z3YuH8DhxJYWtWezPHgSpump`
   - ran: BASKET up to 1.55x  
     CA `3Tg6YnNrfPdFfsY14MaNsDMWLseAyrUDS3myJtbaJN6f`
   - ran: BIAO up to 1.51x  
     CA `As3XtYSstuVdrVyb6sJZZ77Tu8JvjTBg6S6hgPv4pump`
-- too new / sniping: blocked 36, ran 8, dumped 27, flat 0, open 1 (saving losses: keep it)
+- too new / sniping: blocked 36, ran 8, dumped 28, flat 0, open 0 (saving losses: keep it)
   - ran: BABYANSEM up to 2.77x  
     CA `F3VctV9FqDgiyqaztN6z78bgWy27eH7DBBHW1vjpump`
   - ran: Merged up to 2.18x  
@@ -148,14 +148,14 @@ A skip "ran" if the coin reached the first target (1.5x) from the skip price bef
     CA `GEHehS5Rr4rNCjvrHLjjV1avD4bjMsn53ywDGv1spump`
   - ran: WIENER up to 1.59x  
     CA `8BDkDfj3ZUvcG9caGzF2XnHfwg7K6fjfKKDvX6SCpump`
-- falling knife (code): blocked 18, ran 3, dumped 13, flat 1, open 1 (saving losses: keep it)
+- falling knife (code): blocked 17, ran 3, dumped 12, flat 1, open 1 (saving losses: keep it)
   - ran: Jimmies up to 1.53x  
     CA `GisWWjhwrSud4aFGSHvTMt85Ky14sY7LeBFCpfoFpump`
   - ran: Investor up to 1.58x  
     CA `J9eBkCb4UtquAMQqB6duwBmR99fFSMoTnDcaMB9Wpump`
   - ran: MONEY up to 1.58x  
     CA `DeACAbp2GMzapB6Z2K8qdkTZupmNbKc6EZx9bnbCpump`
-- falling knife / no higher low: blocked 13, ran 3, dumped 5, flat 3, open 2 (mixed)
+- falling knife / no higher low: blocked 13, ran 3, dumped 6, flat 3, open 1 (saving losses: keep it)
   - ran: Jimmies up to 1.53x  
     CA `GisWWjhwrSud4aFGSHvTMt85Ky14sY7LeBFCpfoFpump`
   - ran: Zero up to 2.07x  
@@ -207,11 +207,11 @@ Meta, read from the raw scan_movers numbers: fresh pump.fun launches (XSEmu, PVE
 ## Moving most in its scans, last 30 min (1h volume)
 - KURO: $1,742,435 1h vol, $2,036,651 mcap, +1776% 1h  
   CA `AaY6XtQZYYaxQ4fV8R8acConnMsgjg9zrZs341HUpump`
-- Kuro: $579,934 1h vol, $15,540 mcap, -67% 1h  
-  CA `8LbBWesEQ5myfamxhxHtZ295RbvDigqSj2iCYex5pump`
-- Kuro: $440,118 1h vol, $1,301 mcap, -96% 1h  
+- Kuro: $367,169 1h vol, $1,301 mcap, -100% 1h  
   CA `7sxuap7Q4uoAJFBW3ensq6QTa2KwgGosfFwoeXtJpump`
-- MSTR: $409,902 1h vol, $1,458 mcap, -98% 1h  
-  CA `57sCZ82FwS5Dfs7FN9nshtU5Mkb3w1dqhmPUuCPvpump`
-- Kuro: $191,886 1h vol, $3,963 mcap, +5% 1h  
-  CA `6rgKgGQE7frFitSnEiYxM4Y7RPFR7m35Ag4cLQxdgMf3`
+- TRUMP: $351,786 1h vol, $8,076 mcap, -77% 1h  
+  CA `AtmZQTxVHZN7yk7a2yodSmQhXgFT4jTPYXd5FrmY5v2t`
+- Kuro: $335,673 1h vol, $70,818 mcap, +191% 1h  
+  CA `AuVQxjSZt937unfV6ScNca1ZwwqZtjNSq3LfQtv4pump`
+- Kuro: $239,134 1h vol, $16,040 mcap, -86% 1h  
+  CA `8LbBWesEQ5myfamxhxHtZ295RbvDigqSj2iCYex5pump`
