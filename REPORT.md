@@ -1,13 +1,13 @@
 # Trencher live report
 
-Updated 2026-11-26T11:20:58Z (paper trading, never real money)
+Updated 2026-11-26T11:36:03Z (paper trading, never real money)
 
 - Equity: $74.23 (-25.8% vs $100 start)
 - Closed trades: 22, 3 wins
 - Fees paid: $14.78 (axiom $2.81, network $9.18, pool $2.66), plus $4.15 lost to slippage
 - New trades: WATCH-ONLY (scans and decides, buys nothing)
-- Brain: subscription, claude-haiku-5-5 for routine calls, claude-opus-5-5 for the daily review; 410 routine calls and 0 plan-limit hits in 48h
-- Watch log: 83 coins being followed, 3845 filed, 0 would-buys (6h follow, sampled every 2 min)
+- Brain: subscription, claude-haiku-5-5 for routine calls, claude-opus-5-5 for the daily review; 414 routine calls and 0 plan-limit hits in 48h
+- Watch log: 85 coins being followed, 3849 filed, 0 would-buys (6h follow, sampled every 2 min)
 
 ## Scorecard (after fees)
 - 22 closed, 3 won (14%), net $-25.79
@@ -73,9 +73,21 @@ Updated 2026-11-26T11:20:58Z (paper trading, never real money)
   CA `H4gHnZ3NCU7Z9XQwGX6YYJNyieGEW8pqwGRUcdSxpump`
 
 ## Last scan
-- 11:20Z: 4 coins, 4 with pairs, 0 passed the market filters, 0 researched
+- 11:35Z: 4 coins, 4 with pairs, 1 passed the market filters, 1 researched
 
 ## Coins it looked at, and why it passed
+- 11:35Z NUBU (MIGRATED, $48,256 mcap, $119,395 5m vol): REJECT, Bundles: 6 linked wallet cluster(s) hold 36.2% of supply (>20%) (V17)  
+  CA `Gngq4r84xEJe5EssETLu9s9dhamSGTAWsmPbq7x2zjrt`
+- 11:32Z Maru (MIGRATED, $42,738 mcap, $21,030 5m vol): PASS at conviction 3, PASS: Maru is a 25-copy vamp field and not the leader. The theme leader is another Maru, and this coin is a 20% bottom-style pullback with no catalyst and no printed higher low 18 minutes after migration (V1, V3, V6).  
+  CA `FokVFH6mDsazoKbtnUaA2FRMsRbDSwZhNfn17Fdvpump`
+- 11:31Z Grodia (MIGRATED, $492,430 mcap, $7,520 5m vol): PASS at conviction 2, PASS — 81% off a $2.6M high with zero catalyst, 1 of 10 same-ticker copies, and the site doesn't show this CA. Blocker: "no catalyst". (V1, V6, V13)  
+  CA `6HS1aeSk7osT5B1CzLp1HTRTAweFr5wurfMHS4vppump`
+- 11:27Z CBUCKS (MIGRATED, $5,918,308 mcap, $2,150 5m vol): REJECT, Top 10 hold 25.6% ex-pool (>25%) (V13)  
+  CA `DtcicPCKTKeAh7TDEzTym3hXeoHAoMiBdYJhMYxZpump`
+- 11:25Z Yaranaika (FINAL_STRETCH, $17,018 mcap, $24,962 5m vol): PASS at conviction 3, PASS. Chasing a +30% five-minute spike at 6x pace, 12 minutes old, no printed higher low, and a 29-copy vamp field. Blocker: "chasing spike" (V1, V6).  
+  CA `HaQsAL1wUyKGpPPnxs69gs4862japa4gTUiwiLhApump`
+- 11:21Z UHI (MIGRATED, $1,609,091 mcap, $4,146 5m vol): PASS at conviction 3, PASS: chasing the high, $1.6M cap with no room, and the CA isn't on its own site (V1, V3, V6).  
+  CA `Bnw5JRPek5JvJhzUiB9yrs2cmzt4bLeFqSRzDzSppump`
 - 11:12Z FIONA (DIP, $1,983,052 mcap, $3,018 5m vol): REJECT, Bundles: 10 linked wallet cluster(s) hold 30.2% of supply (>20%) (V17)  
   CA `B34nXKzCgsJb9ChLuSHPRpXLE3WFSWyeT8Cqkzzmpump`
 - 11:11Z PUMPCHAN (MIGRATED, $8,867,112 mcap, $46,922 5m vol): PASS at conviction 2, PASS: chasing at 2.7% off the high, 5m flow at 0.69x pace, $8.9M cap with no room to 1.5x, and the project site doesn't show this CA. Name-riff crowd of 10 (V1, V6, V13).  
@@ -84,18 +96,6 @@ Updated 2026-11-26T11:20:58Z (paper trading, never real money)
   CA `HdRPR3nqkNCt98DWQqDdfkRHDc1NFsgCJVbfXRnppump`
 - 11:02Z NORFEATH (DIP, $499,060 mcap, $4,194 5m vol): PASS at conviction 4, PASS. Bottom-buy gate: theme pace 0.94x (needs 1x), no verified catalyst, 5m flow $4.2k under the $10k bar, 16-copy field. Parade riff, no edge yet. (V1, V6, V13)  
   CA `3gmFG4sFDJErDV8pacFrL2uUPXeGJTYLjfRy4hFypump`
-- 10:59Z DIGS (MIGRATED, $245,127 mcap, $2,449 5m vol): REJECT, Bundles: 10 linked wallet cluster(s) hold 100.0% of supply (>20%) (V17)  
-  CA `9QT8K685Hrae4k11dhGXirdtpfAaimExtyfwt8cPpump`
-- 10:57Z FCAT (FINAL_STRETCH, $15,716 mcap, $14,304 5m vol): REJECT, Top 10 hold 25.1% ex-pool (>25%) (V13)  
-  CA `9fj8BVkUP8xrt68trV44TnpJfS7iUaQ3CmugE9bSpump`
-- 10:45Z Grodia (MIGRATED, $475,670 mcap, $4,422 5m vol): PASS at conviction 3, PASS: 82% off the high is outside the 10–60% MIGRATED zone, no bottom-buy catalyst, 10 copies on the ticker, and the site shows "CA TBA" instead of this contract. A cute character with no story behind it. (V1, V13)  
-  CA `6HS1aeSk7osT5B1CzLp1HTRTAweFr5wurfMHS4vppump`
-- 10:45Z RSA (FINAL_STRETCH, $15,565 mcap, $19,101 5m vol): PASS at conviction 2, PASS — chasing spike: +27% on the 5m at 5.8x the hourly pace, eight minutes old, inside a 27-coin RSA copy field with no printed higher low. Wait for a retrace and a base. (V1, V6, V3)  
-  CA `4gBTV6zoyY7JkFtCqa6dyRhURxQc95okLVCrAvQo7EDJ`
-- 10:36Z UHI (MIGRATED, $1,202,532 mcap, $3,263 5m vol): PASS at conviction 2, PASS. Sellers are 99% of 5m flow (34 buys, 4,509 sells) on a 7%-off-high MIGRATED coin. Blocker: chasing. (V1, V6)  
-  CA `Bnw5JRPek5JvJhzUiB9yrs2cmzt4bLeFqSRzDzSppump`
-- 10:25Z PUMPCHAN (MIGRATED, $6,336,866 mcap, $67,826 5m vol): PASS at conviction 3, PASS — big cap, no room. $6.3M mcap, 5m flow at 0.9x pace, first resistance (the $9.1M high) only 1.44x away. Vamp field of 11 same-ticker coins, no catalyst. (V1, V6, V13)  
-  CA `Fo2HAwr7ZAUM2bSZ7MWSi16e3aWGpbw5MsUDYCttpump`
 
 ## What its skips did next (last 48h)
 A skip "ran" if the coin reached the first target (1.5x) from the skip price before a 20% drop, "dumped" if the drop came first. Sampled every 10 min, followed 6h.
@@ -134,13 +134,20 @@ A skip "ran" if the coin reached the first target (1.5x) from the skip price bef
     CA `9TKbd3VFaMSXsEAicD9JVQWpWwAoLi4fSgWmZL2cpump`
   - ran: Bababoi up to 2.17x  
     CA `28B9kDm6XtQNqAkzuiKH3Zu1L8cVM6SLW4iRamFspump`
-- too new / sniping: blocked 26, ran 7, dumped 19, flat 0, open 0 (saving losses: keep it)
+- too new / sniping: blocked 26, ran 7, dumped 18, flat 0, open 1 (saving losses: keep it)
   - ran: BABYANSEM up to 2.77x  
     CA `F3VctV9FqDgiyqaztN6z78bgWy27eH7DBBHW1vjpump`
   - ran: Merged up to 2.18x  
     CA `AMYpNGi5aGrKr1ZDsotUdWh7k1mMi569ygtaHJmErGEd`
   - ran: Boor up to 1.56x  
     CA `GHFpSSw2ZMjmKCyc1wrHUjJiqnJeP18mekY9GL1Xpump`
+- bundles over the line: blocked 17, ran 3, dumped 9, flat 1, open 4 (saving losses: keep it)
+  - ran: jingyu up to 1.58x  
+    CA `DUZrwdjEthcJ99ZiRXr31UuqTohoTg7VjTEyfGdBpump`
+  - ran: DUMBMONEY up to 1.74x  
+    CA `GEHehS5Rr4rNCjvrHLjjV1avD4bjMsn53ywDGv1spump`
+  - ran: WIENER up to 1.59x  
+    CA `8BDkDfj3ZUvcG9caGzF2XnHfwg7K6fjfKKDvX6SCpump`
 - falling knife (code): blocked 17, ran 3, dumped 13, flat 1, open 0 (saving losses: keep it)
   - ran: Jimmies up to 1.53x  
     CA `GisWWjhwrSud4aFGSHvTMt85Ky14sY7LeBFCpfoFpump`
@@ -148,13 +155,6 @@ A skip "ran" if the coin reached the first target (1.5x) from the skip price bef
     CA `J9eBkCb4UtquAMQqB6duwBmR99fFSMoTnDcaMB9Wpump`
   - ran: MONEY up to 1.58x  
     CA `DeACAbp2GMzapB6Z2K8qdkTZupmNbKc6EZx9bnbCpump`
-- bundles over the line: blocked 16, ran 3, dumped 9, flat 1, open 3 (saving losses: keep it)
-  - ran: jingyu up to 1.58x  
-    CA `DUZrwdjEthcJ99ZiRXr31UuqTohoTg7VjTEyfGdBpump`
-  - ran: DUMBMONEY up to 1.74x  
-    CA `GEHehS5Rr4rNCjvrHLjjV1avD4bjMsn53ywDGv1spump`
-  - ran: WIENER up to 1.59x  
-    CA `8BDkDfj3ZUvcG9caGzF2XnHfwg7K6fjfKKDvX6SCpump`
 - other: blocked 13, ran 1, dumped 12, flat 0, open 0 (saving losses: keep it)
   - ran: SXI up to 2.34x  
     CA `BFWNbSwRodXPTQqrMSCfhznhJwEzY6ERd6MHjWUEpump`
@@ -200,16 +200,16 @@ Nothing has a positive edge after costs. All 213 settled coins came out at -12.2
 - [2026-11-02 20:25] I expected Slingoor, a clean MIGRATED leader with $25k of 5m flow at pace and a 0.77 buy share, to retest its $408k high from $304k. It never went green (0.98x peak) and hit the -20% stop in 2 minutes, a -$2.86 probe. My own thesis admitted there was no printed higher low after a peak only 6 minutes old, so this confirms the money-shape rule: buy share and flow are not structure (V1, V6). Next time a MIGRATED pullback with no higher low above the hourly low is a PASS with blocker "no higher low", not a probe. This is one loss, so it adds no new ban beyond the rule I already have.
 
 ## Meta right now
-Trencher, scan_movers read (scan numbers only, web figures conflict and were ignored). Three themes are moving. (1) Cute/greeting and joke names: konnichiwa ($22.6k cap, $39k 5m, 62% buys, ~6 min old) and YEE ($70k cap, $29.5k 5m, 66% buys) are rising, while WIENER ($0 5m, -98% 1h) and Ponzi are dead. (2) Pump-platform and product riffs: STRUCK/SpaceTruck ($66k cap, $105k 5m, 56% buys, ~6 min old), PumpChan ($6.3M cap, $74k 5m, 61% buys) and PELAGO carry the most flow, while PPV/Pay Per View is down 90% in an hour. (3) Trump-named coins: "I Am Not Corrupt" (TRUMP, $14.6k cap, $19k 5m, +267% 1h) is hot, but it names a political figure, so it's a pass under the political-figure rule, and the web's Trump token headlines (down 99%, gala demand collapsing) say the big-name version is fading. Fading: old tickers CBUCKS and DIGS (600-1200h old, thin 5m) and the dumpers. Setups to research, not buys: STRUCK and konnichiwa (conviction 4-5, bundle, dev and holder checks first, stop at -30%, out if 5m volume drops under $10k), and YEE as a migrated-range check. Nothing named for a hack appears in the movers. Paper only, not financial advice.
+The trenches are trading fresh, absurd, Japanese-and-joke-named coins with small caps and volume that matches or beats their cap: Yaranaika ($17k cap, $25k 5m, 62% buys, 12 min old), konnichiwa ($131k cap, $47k 5m, 54% buys, 48 min old) and TheLore ($4k cap, $5.4k 5m, 57% buys). PumpChan ($8.6M cap, $54k 5m, 51% buys, +48% 1h) carries the biggest real flow, so the platform-riff theme is alive but it's the large cap, not the cheap one. Old tickers are fading: DIGS (694h old, 41% buys), CBUCKS (1217h, $2k 5m) and FIONA (11% buys), and YEE, crack and duk are dumping or dead on the scan (STRUCK is $2k cap and $32 5m, so the web's $66k figures for it are wrong). Setups to research, not buys yet: konnichiwa at conviction 4 and Yaranaika at conviction 4 (volume above cap is a farm flag until bundle and holder checks clear), each with a -30% stop and out if 5m volume drops under $10k; PumpChan at conviction 5 as a migrated-range check with a -30% stop. Trump-named coins are not in the movers, so the web's Trump story isn't the trench meta. No hack-named coins appear. Paper only, not financial advice.
 
 ## Moving most in its scans, last 30 min (1h volume)
 - PUMPCHAN: $824,246 1h vol, $8,592,503 mcap, +48% 1h  
   CA `Fo2HAwr7ZAUM2bSZ7MWSi16e3aWGpbw5MsUDYCttpump`
-- STRUCK: $501,884 1h vol, $2,223 mcap, -95% 1h  
-  CA `HN9jRRCKuLNL3oSgNV1MBvd3Krg6TingFntJp1PSpump`
 - konnichiwa: $332,104 1h vol, $131,534 mcap, +351% 1h  
   CA `HdRPR3nqkNCt98DWQqDdfkRHDc1NFsgCJVbfXRnppump`
-- YEE: $93,492 1h vol, $1,426 mcap, -98% 1h  
-  CA `BKGidSAf6RkUUymQYYoN8ifm3VMsLkeFTocvza3Spump`
-- FCAT: $78,854 1h vol, $15,716 mcap, +588% 1h  
-  CA `9fj8BVkUP8xrt68trV44TnpJfS7iUaQ3CmugE9bSpump`
+- NUBU: $134,278 1h vol, $50,344 mcap, +70% 1h  
+  CA `Gngq4r84xEJe5EssETLu9s9dhamSGTAWsmPbq7x2zjrt`
+- Maru: $112,646 1h vol, $42,738 mcap, +48% 1h  
+  CA `FokVFH6mDsazoKbtnUaA2FRMsRbDSwZhNfn17Fdvpump`
+- Grodia: $76,699 1h vol, $492,430 mcap, +18% 1h  
+  CA `6HS1aeSk7osT5B1CzLp1HTRTAweFr5wurfMHS4vppump`
