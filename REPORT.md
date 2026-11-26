@@ -1,13 +1,13 @@
 # Trencher live report
 
-Updated 2026-11-26T05:32:54Z (paper trading, never real money)
+Updated 2026-11-26T05:48:03Z (paper trading, never real money)
 
 - Equity: $74.23 (-25.8% vs $100 start)
 - Closed trades: 22, 3 wins
 - Fees paid: $14.78 (axiom $2.81, network $9.18, pool $2.66), plus $4.15 lost to slippage
 - New trades: WATCH-ONLY (scans and decides, buys nothing)
-- Brain: subscription, claude-haiku-5-5 for routine calls, claude-opus-5-5 for the daily review; 406 routine calls and 0 plan-limit hits in 48h
-- Watch log: 105 coins being followed, 3744 filed, 0 would-buys (6h follow, sampled every 2 min)
+- Brain: subscription, claude-haiku-5-5 for routine calls, claude-opus-5-5 for the daily review; 405 routine calls and 0 plan-limit hits in 48h
+- Watch log: 105 coins being followed, 3749 filed, 0 would-buys (6h follow, sampled every 2 min)
 
 ## Scorecard (after fees)
 - 22 closed, 3 won (14%), net $-25.79
@@ -73,9 +73,19 @@ Updated 2026-11-26T05:32:54Z (paper trading, never real money)
   CA `H4gHnZ3NCU7Z9XQwGX6YYJNyieGEW8pqwGRUcdSxpump`
 
 ## Last scan
-- 05:32Z: 6 coins, 6 with pairs, 0 passed the market filters, 0 researched
+- 05:47Z: 5 coins, 5 with pairs, 0 passed the market filters, 0 researched
 
 ## Coins it looked at, and why it passed
+- 05:44Z NORFEATH (MIGRATED, $535,784 mcap, $3,307 5m vol): PASS at conviction 3, PASS: flow at 0.67x pace on $3.3k 5m, first resistance only ~1.2x away, theme pace 0.64x. Parade date is a catalyst, not a buy. (V1, V6)  
+  CA `3gmFG4sFDJErDV8pacFrL2uUPXeGJTYLjfRy4hFypump`
+- 05:42Z FRITZ (DIP, $66,758 mcap, $7,852 5m vol): REJECT, Dip with fading attention is a falling knife, not a dip (5m at 0.28x the hour's pace, under 0.6x)  
+  CA `4VMwK3shXxsaMbiJ4qtBMMEgi63riezBSWFHfA6Vpump`
+- 05:40Z DIGS (MIGRATED, $267,930 mcap, $2,285 5m vol): REJECT, Bundles: 10 linked wallet cluster(s) hold 100.0% of supply (>20%) (V17)  
+  CA `9QT8K685Hrae4k11dhGXirdtpfAaimExtyfwt8cPpump`
+- 05:40Z PUMPCHAN (MIGRATED, $1,434,544 mcap, $2,397 5m vol): REJECT, Top 10 hold 37.9% ex-pool (>25%) (V13)  
+  CA `Fo2HAwr7ZAUM2bSZ7MWSi16e3aWGpbw5MsUDYCttpump`
+- 05:36Z Elonmas (MIGRATED, $60,892 mcap, $54,908 5m vol): REJECT, Bundles: 2 linked wallet cluster(s) hold 81.7% of supply (>20%) (V17)  
+  CA `DMXm1gSmAZn1RV4fGXGG8Y1cXfKWXMDYaiKF4B6Cpump`
 - 05:31Z BLOCK0 (FINAL_STRETCH, $20,756 mcap, $12,923 5m vol): PASS at conviction 3, PASS. Chasing a spike on a 16-minute-old launch, inside a 27-copy vamp field, with no printed higher low (V1, V6, V3).  
   CA `3EoToNPW4mifRCZrNFkk7pLe86vmeBqdqbW1TLPoqst5`
 - 05:27Z Grodia (DIP, $1,093,539 mcap, $3,073 5m vol): REJECT, Dip with fading attention is a falling knife, not a dip (5m at 0.49x the hour's pace, under 0.6x)  
@@ -86,27 +96,17 @@ Updated 2026-11-26T05:32:54Z (paper trading, never real money)
   CA `B34nXKzCgsJb9ChLuSHPRpXLE3WFSWyeT8Cqkzzmpump`
 - 05:16Z TEEETHY (MIGRATED, $91,215 mcap, $8,705 5m vol): PASS at conviction 3, PASS. Blocker: flow below pace (0.88x hourly), 5m volume $8.7k under the $10k bar, no printed higher low. The coin is clean on holders, but nothing else on the checklist is live. (V1, V6)  
   CA `BbC8hVHJ2bo6xFcGh2X6zcMiv1T1rznQd3qWoxXApump`
-- 04:59Z NORFEATH (MIGRATED, $677,488 mcap, $5,012 5m vol): PASS at conviction 3, PASS: NORFEATH is a 6-copy ticker field with $5k 5m flow under the $10k bar, and no verified catalyst behind a bottom buy. Blocker: "no catalyst" (V1, V6, V13).  
-  CA `3gmFG4sFDJErDV8pacFrL2uUPXeGJTYLjfRy4hFypump`
-- 04:56Z FRITZ (MIGRATED, $81,761 mcap, $27,941 5m vol): PASS at conviction 4, PASS: FRITZ is the flow leader of a 9-copy hippo field, but it's up 52% on the 5m at 3.8x pace and its prior high at $98k is only 1.2x away. Chasing a spike with no printed higher low, and no room to the first target. Blocker: "chasing spike" + "target too close" (V1, V6).  
-  CA `4VMwK3shXxsaMbiJ4qtBMMEgi63riezBSWFHfA6Vpump`
-- 04:49Z Jamtis (FINAL_STRETCH, $15,668 mcap, $2,882 5m vol): REJECT, Dev holds 2.4% (>1%) (V13, V17)  
-  CA `BrL3NiwGELqWNsU8e3xUzeYtyk9sJXuzd79ViQcapump`
-- 04:46Z coin (FINAL_STRETCH, $23,187 mcap, $13,278 5m vol): PASS at conviction 2, PASS: chasing a +87% 5m spike in a one-word vamp field whose theme flow is at 0.08x pace, and the site doesn't show this CA. Blockers: "chasing spike" and a dying meta (V1, V6, V13).  
-  CA `GHcow7qoqNrkwbfVEsySwZR98kbyPrehit8E1u6vpump`
-- 04:46Z UP (FINAL_STRETCH, $19,980 mcap, $36,324 5m vol): PASS at conviction 2, PASS: chasing spike, flow below pace, six-minute-old launch with no story. Blocker: "chasing spike" (V1, V6).  
-  CA `8gnXgowYp1cB5XNxrLGkwPAPbYf47qhkpymKdCB8pump`
 
 ## What its skips did next (last 48h)
 A skip "ran" if the coin reached the first target (1.5x) from the skip price before a 20% drop, "dumped" if the drop came first. Sampled every 10 min, followed 6h.
-- top 10 over 25%: blocked 37, ran 6, dumped 28, flat 0, open 3 (saving losses: keep it)
+- top 10 over 25%: blocked 37, ran 6, dumped 28, flat 1, open 2 (saving losses: keep it)
   - ran: SCF up to 2.01x  
     CA `Az7dYDicMc4G9hwnkeQYwHi6Fop1711C7hABcrWzpump`
   - ran: MARS up to 2.06x  
     CA `816BuXnCFQqt6KXbBTcFgHWD29Ckpaqt8HMKSN4Vpump`
   - ran: 4CHAN up to 1.87x  
     CA `DVdWuNK8ncn79B6z8nCiwcNAiwyFcmBPfChgxJGTpump`
-- flow below pace: blocked 36, ran 3, dumped 26, flat 2, open 5 (saving losses: keep it)
+- flow below pace: blocked 37, ran 3, dumped 27, flat 2, open 5 (saving losses: keep it)
   - ran: BOOBS up to 1.51x  
     CA `E35iEA2yLLHc1tjm6et1Z3YuH8DhxJYWtWezPHgSpump`
   - ran: BASKET up to 1.55x  
@@ -127,35 +127,35 @@ A skip "ran" if the coin reached the first target (1.5x) from the skip price bef
     CA `9TKbd3VFaMSXsEAicD9JVQWpWwAoLi4fSgWmZL2cpump`
   - ran: Bababoi up to 2.17x  
     CA `28B9kDm6XtQNqAkzuiKH3Zu1L8cVM6SLW4iRamFspump`
-- near the high / chasing: blocked 27, ran 5, dumped 19, flat 1, open 2 (saving losses: keep it)
+- near the high / chasing: blocked 26, ran 5, dumped 18, flat 1, open 2 (saving losses: keep it)
   - ran: BRUH up to 1.51x  
     CA `PgFtGGquvnv2zEkjG2N2QPvBTBrafuExGYEqahRpump`
   - ran: SNOWCUMBRR up to 2.36x  
     CA `Gf9wm93TTDpbPC467Eio5Vc42Kr6MAomUD172drWpump`
   - ran: HEYOS up to 1.91x  
     CA `A88p1LcHisrx3TuTwUGVrLtc1LBTUPZUfVgaCGutAFaK`
-- too new / sniping: blocked 26, ran 7, dumped 18, flat 0, open 1 (saving losses: keep it)
+- too new / sniping: blocked 25, ran 7, dumped 17, flat 0, open 1 (saving losses: keep it)
   - ran: BABYANSEM up to 2.77x  
     CA `F3VctV9FqDgiyqaztN6z78bgWy27eH7DBBHW1vjpump`
   - ran: Merged up to 2.18x  
     CA `AMYpNGi5aGrKr1ZDsotUdWh7k1mMi569ygtaHJmErGEd`
   - ran: Boor up to 1.56x  
     CA `GHFpSSw2ZMjmKCyc1wrHUjJiqnJeP18mekY9GL1Xpump`
-- falling knife (code): blocked 17, ran 3, dumped 11, flat 1, open 2 (saving losses: keep it)
+- falling knife (code): blocked 18, ran 3, dumped 11, flat 2, open 2 (saving losses: keep it)
   - ran: Jimmies up to 1.53x  
     CA `GisWWjhwrSud4aFGSHvTMt85Ky14sY7LeBFCpfoFpump`
   - ran: Investor up to 1.58x  
     CA `J9eBkCb4UtquAMQqB6duwBmR99fFSMoTnDcaMB9Wpump`
   - ran: MONEY up to 1.58x  
     CA `DeACAbp2GMzapB6Z2K8qdkTZupmNbKc6EZx9bnbCpump`
-- other: blocked 14, ran 1, dumped 12, flat 0, open 1 (saving losses: keep it)
-  - ran: SXI up to 2.34x  
-    CA `BFWNbSwRodXPTQqrMSCfhznhJwEzY6ERd6MHjWUEpump`
-- bundles over the line: blocked 12, ran 2, dumped 8, flat 0, open 2 (saving losses: keep it)
+- bundles over the line: blocked 14, ran 2, dumped 8, flat 1, open 3 (saving losses: keep it)
   - ran: jingyu up to 1.58x  
     CA `DUZrwdjEthcJ99ZiRXr31UuqTohoTg7VjTEyfGdBpump`
   - ran: DUMBMONEY up to 1.74x  
     CA `GEHehS5Rr4rNCjvrHLjjV1avD4bjMsn53ywDGv1spump`
+- other: blocked 14, ran 1, dumped 12, flat 0, open 1 (saving losses: keep it)
+  - ran: SXI up to 2.34x  
+    CA `BFWNbSwRodXPTQqrMSCfhznhJwEzY6ERd6MHjWUEpump`
 - dev share over 1%: blocked 11, ran 2, dumped 8, flat 1, open 0 (saving losses: keep it)
   - ran: PI up to 1.77x  
     CA `D2AK5DvBj8AxN5VX1t6bjv7muJVPUx4hFPowVRWYpump`
@@ -201,13 +201,13 @@ Nothing has a positive edge after costs. All 213 settled coins came out at -12.2
 The trenches are not quiet, and the meta is animal and mascot names. Fritz the Hippo is the freshest real mover (0.3h old, $71k mcap, $17k 5m, 54% buys, +138% 1h), and Fiona the Hippo, Norfeather and Squidtard show the same creature pull on older PumpSwap curves, with Chillmas as an early holiday spin-off (V1, V5). Hippo and holiday names with buyers above 50% are rising; the sub-hour joke and mascot launches are fading, with SpaceX Inu at -83%, The Black Bull at -69% and Loki and MCAP with under $300 on the 5m, so the volume left after the spike. Trump-named coins are riding the news too (Trump Coin, $6k mcap, $11.8k 5m, 64% buys, 6 min old), but a name is not the original, so check for a vamp of the real TRUMP before anything (V3, V13). Setups to research: FRITZ as a MIGRATED-style probe at conviction 5 (under 12h, mcap above $30k, 5m clears $10k), with the stop at the thesis break and the original-hippo check against FIONA done first (V1, V6); FIONA, Norfeather and TEEETHY are MIGRATED candidates that fail the $10k 5m bar today, so they become buys only if volume returns with buyers above 60%. The web's PoorGoat figures ($28k mcap, $42k 5m) conflict with the scan ($6.5k mcap, 143 5m, -72% 1h); I trust the scan and drop PoorGoat.
 
 ## Moving most in its scans, last 30 min (1h volume)
-- TEEETHY: $118,847 1h vol, $91,215 mcap, +60% 1h  
-  CA `BbC8hVHJ2bo6xFcGh2X6zcMiv1T1rznQd3qWoxXApump`
-- PUMPCHAN: $82,336 1h vol, $1,450,567 mcap, +9% 1h  
+- FRITZ: $336,480 1h vol, $62,144 mcap, +44% 1h  
+  CA `4VMwK3shXxsaMbiJ4qtBMMEgi63riezBSWFHfA6Vpump`
+- Elonmas: $100,091 1h vol, $60,892 mcap, +102% 1h  
+  CA `DMXm1gSmAZn1RV4fGXGG8Y1cXfKWXMDYaiKF4B6Cpump`
+- PUMPCHAN: $72,305 1h vol, $1,434,544 mcap, +9% 1h  
   CA `Fo2HAwr7ZAUM2bSZ7MWSi16e3aWGpbw5MsUDYCttpump`
 - Grodia: $68,009 1h vol, $1,090,422 mcap, -16% 1h  
   CA `6HS1aeSk7osT5B1CzLp1HTRTAweFr5wurfMHS4vppump`
 - UHI: $65,521 1h vol, $1,004,187 mcap, +0% 1h  
   CA `Bnw5JRPek5JvJhzUiB9yrs2cmzt4bLeFqSRzDzSppump`
-- coin: $59,946 1h vol, $2,982 mcap, -48% 1h  
-  CA `GHcow7qoqNrkwbfVEsySwZR98kbyPrehit8E1u6vpump`
