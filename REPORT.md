@@ -1,13 +1,13 @@
 # Trencher live report
 
-Updated 2026-11-27T09:34:12Z (paper trading, never real money)
+Updated 2026-11-27T09:49:18Z (paper trading, never real money)
 
 - Equity: $74.23 (-25.8% vs $100 start)
 - Closed trades: 22, 3 wins
 - Fees paid: $14.78 (axiom $2.81, network $9.18, pool $2.66), plus $4.15 lost to slippage
 - New trades: WATCH-ONLY (scans and decides, buys nothing)
-- Brain: subscription, claude-haiku-5-5 for routine calls, claude-opus-5-5 for the daily review; 378 routine calls and 0 plan-limit hits in 48h
-- Watch log: 59 coins being followed, 4154 filed, 0 would-buys (6h follow, sampled every 2 min)
+- Brain: subscription, claude-haiku-5-5 for routine calls, claude-opus-5-5 for the daily review; 378 routine calls and 1 plan-limit hits in 48h
+- Watch log: 56 coins being followed, 4160 filed, 0 would-buys (6h follow, sampled every 2 min)
 
 ## Scorecard (after fees)
 - 22 closed, 3 won (14%), net $-25.79
@@ -73,9 +73,15 @@ Updated 2026-11-27T09:34:12Z (paper trading, never real money)
   CA `H4gHnZ3NCU7Z9XQwGX6YYJNyieGEW8pqwGRUcdSxpump`
 
 ## Last scan
-- 09:33Z: 6 coins, 6 with pairs, 0 passed the market filters, 0 researched
+- 09:48Z: 2 coins, 2 with pairs, 0 passed the market filters, 0 researched
 
 ## Coins it looked at, and why it passed
+- 09:47Z Suki (FINAL_STRETCH, $21,862 mcap, $20,364 5m vol): SKIP, passed the checklist, but the brain was paced or paused  
+  CA `Ejbu9xDBN3XuDiLj9A61sctiVzYocF3TpKojiBPvpump`
+- 09:40Z WW (MIGRATED, $609,815 mcap, $4,168 5m vol): PASS, PASS — brain unavailable, not trading blind.  
+  CA `8rjgC1GsBo4fwuXjq7Hy12SAFxgFxbtSJJSFBYkVpump`
+- 09:35Z CBUCKS (MIGRATED, $7,703,409 mcap, $10,477 5m vol): REJECT, Top 10 hold 25.6% ex-pool (>25%) (V13)  
+  CA `DtcicPCKTKeAh7TDEzTym3hXeoHAoMiBdYJhMYxZpump`
 - 09:22Z Snowball (MIGRATED, $851,629 mcap, $4,680 5m vol): PASS at conviction 2, PASS: flow below pace, not the vamp leader, 5m volume $4.7k under the $10k bar. Blocker: "flow below pace" (V1, V6).  
   CA `9TKbd3VFaMSXsEAicD9JVQWpWwAoLi4fSgWmZL2cpump`
 - 08:36Z Snowball (MIGRATED, $692,138 mcap, $5,615 5m vol): PASS at conviction 3, PASS — target too close (first resistance 1.19x), sells outnumber buys 0.41, 5m flow $5.6k under the $10k bar, and the theme runs at 0.37x its hourly pace. Pumped 3947% in 24h with a 1.6-day-old domain. A crowded copy field, not a setup (V1, V6, V13).  
@@ -90,16 +96,10 @@ Updated 2026-11-27T09:34:12Z (paper trading, never real money)
   CA `RecRFwNXRbTuDwDnvokNv5h4hLQubaDZMJwKfshpump`
 - 07:50Z Snowball (DIP, $470,878 mcap, $3,667 5m vol): PASS at conviction 2, PASS: falling knife with no higher low, no catalyst, and a farm-style holder mechanic on a 1.6-day-old domain. (V1, V3, V6, V13)  
   CA `9TKbd3VFaMSXsEAicD9JVQWpWwAoLi4fSgWmZL2cpump`
-- 07:43Z Kibo (MIGRATED, $162,429 mcap, $13,749 5m vol): PASS at conviction 3, PASS: 5m flow at 0.7x pace, a single 8.2% bundle cluster, and a 29-copy Kibo field with no breakout. Blockers: "flow below pace", "split crowd". (V1, V3, V6)  
-  CA `7XSYaJygcuNe6Q3kPvwsJpg4ZrFL1AEUFb8kCuzppump`
-- 07:09Z CINU (DIP, $151,793 mcap, $2,887 5m vol): PASS at conviction 3, PASS — 26-copy "cate" field, theme pace 0.11x, no catalyst, and cate.meme shows a different CA. A dip with nothing under it (V1, V6, V13).  
-  CA `CvXQ9qEriGgTbMWyF8L1U7oqn9ev8A49N1dzNE8cpump`
-- 07:03Z BRUH (DIP, $5,520,647 mcap, $2,313 5m vol): PASS at conviction 2, PASS: no catalyst, no rising story, and the bounce already dumped back to the hour low. Parody coin on a $5.5M cap with $2.3k of 5m flow. (V1, V6)  
-  CA `PgFtGGquvnv2zEkjG2N2QPvBTBrafuExGYEqahRpump`
 
 ## What its skips did next (last 48h)
 A skip "ran" if the coin reached the first target (1.5x) from the skip price before a 20% drop, "dumped" if the drop came first. Sampled every 10 min, followed 6h.
-- top 10 over 25%: blocked 55, ran 10, dumped 42, flat 3, open 0 (saving losses: keep it)
+- top 10 over 25%: blocked 55, ran 10, dumped 42, flat 2, open 1 (saving losses: keep it)
   - ran: SWARM up to 1.57x  
     CA `2Rw6rLRRZXQLNreForjeVvDjnpYUaW6rmMFXmRP9pump`
   - ran: ð up to 1.65x  
@@ -127,25 +127,25 @@ A skip "ran" if the coin reached the first target (1.5x) from the skip price bef
     CA `A88p1LcHisrx3TuTwUGVrLtc1LBTUPZUfVgaCGutAFaK`
   - ran: Nala up to 1.64x  
     CA `FeBG8AEG4j7LT7xQF38gPXQFBRBtXBTNzhZjSa3bpump`
-- bundles over the line: blocked 22, ran 2, dumped 15, flat 4, open 1 (saving losses: keep it)
+- RugCheck danger: blocked 22, ran 1, dumped 19, flat 1, open 1 (saving losses: keep it)
+  - ran: Bababoi up to 2.17x  
+    CA `28B9kDm6XtQNqAkzuiKH3Zu1L8cVM6SLW4iRamFspump`
+- bundles over the line: blocked 21, ran 2, dumped 14, flat 4, open 1 (saving losses: keep it)
   - ran: WIENER up to 1.59x  
     CA `8BDkDfj3ZUvcG9caGzF2XnHfwg7K6fjfKKDvX6SCpump`
   - ran: Dragon up to 1.55x  
     CA `cg3HaDWhAKFfj9aq79TWUBgmxfs4G7byQ7feaxnpump`
-- RugCheck danger: blocked 22, ran 1, dumped 19, flat 1, open 1 (saving losses: keep it)
-  - ran: Bababoi up to 2.17x  
-    CA `28B9kDm6XtQNqAkzuiKH3Zu1L8cVM6SLW4iRamFspump`
 - falling knife (code): blocked 17, ran 2, dumped 14, flat 1, open 0 (saving losses: keep it)
   - ran: Investor up to 1.58x  
     CA `J9eBkCb4UtquAMQqB6duwBmR99fFSMoTnDcaMB9Wpump`
   - ran: MONEY up to 1.58x  
     CA `DeACAbp2GMzapB6Z2K8qdkTZupmNbKc6EZx9bnbCpump`
-- other: blocked 15, ran 2, dumped 12, flat 0, open 1 (saving losses: keep it)
+- other: blocked 14, ran 2, dumped 11, flat 0, open 1 (saving losses: keep it)
   - ran: SXI up to 2.34x  
     CA `BFWNbSwRodXPTQqrMSCfhznhJwEzY6ERd6MHjWUEpump`
   - ran: Christmas up to 1.89x  
     CA `5hkBYuFQDpAAqemCiVqXCuU6Ya5dqKhtRobzJsg6pump`
-- falling knife / no higher low: blocked 13, ran 3, dumped 5, flat 4, open 1 (mixed)
+- falling knife / no higher low: blocked 12, ran 3, dumped 5, flat 3, open 1 (mixed)
   - ran: Zero up to 2.07x  
     CA `DTSkmo3sCCKLCh91dJLiWCpwcKtK3yDBZMqZGSV1pump`
   - ran: Maru up to 1.88x  
@@ -199,11 +199,11 @@ Not quiet, but thin. Most scan movers are sub-$15k pump.fun launches with 5m vol
 ## Moving most in its scans, last 30 min (1h volume)
 - Snowball: $158,984 1h vol, $851,629 mcap, +53% 1h  
   CA `9TKbd3VFaMSXsEAicD9JVQWpWwAoLi4fSgWmZL2cpump`
-- igloo: $47,085 1h vol, $2,414 mcap, -18% 1h  
-  CA `4jKrHtBMLt4TMEpiCa4uBEcMFgpA5R4t2EmTcWjfpump`
-- pear: $38,858 1h vol, $2,288 mcap, -22% 1h  
+- Suki: $107,751 1h vol, $21,843 mcap, +639% 1h  
+  CA `Ejbu9xDBN3XuDiLj9A61sctiVzYocF3TpKojiBPvpump`
+- pear: $38,929 1h vol, $2,154 mcap, -27% 1h  
   CA `HFj3vfGpB8nqSrCUXwGvd2VbehVUermFcFDHecwhpump`
-- HUSH: $23,790 1h vol, $7,443 mcap, +169% 1h  
+- HUSH: $24,325 1h vol, $7,762 mcap, +181% 1h  
   CA `HhVNCcJ1vVhe7jVw2HrqutmyHzDw9wwnztjQgcFmpump`
-- SWIPE: $13,535 1h vol, $8,245 mcap, +17% 1h  
-  CA `Fr2nmNWyYiVDSSXirw1wKSHj4dE2BvvGnN4gfAHcpump`
+- CBUCKS: $20,978 1h vol, $7,846,876 mcap, +16% 1h  
+  CA `DtcicPCKTKeAh7TDEzTym3hXeoHAoMiBdYJhMYxZpump`
