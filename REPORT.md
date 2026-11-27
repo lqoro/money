@@ -1,13 +1,13 @@
 # Trencher live report
 
-Updated 2026-11-27T15:06:55Z (paper trading, never real money)
+Updated 2026-11-27T15:22:10Z (paper trading, never real money)
 
 - Equity: $74.23 (-25.8% vs $100 start)
 - Closed trades: 22, 3 wins
 - Fees paid: $14.78 (axiom $2.81, network $9.18, pool $2.66), plus $4.15 lost to slippage
 - New trades: WATCH-ONLY (scans and decides, buys nothing)
-- Brain: subscription, claude-haiku-5-5 for routine calls, claude-opus-5-5 for the daily review; 387 routine calls and 9 plan-limit hits in 48h
-- Watch log: 47 coins being followed, 4212 filed, 0 would-buys (6h follow, sampled every 2 min)
+- Brain: subscription, claude-haiku-5-5 for routine calls, claude-opus-5-5 for the daily review; 390 routine calls and 9 plan-limit hits in 48h
+- Watch log: 50 coins being followed, 4212 filed, 0 would-buys (6h follow, sampled every 2 min)
 
 ## Scorecard (after fees)
 - 22 closed, 3 won (14%), net $-25.79
@@ -73,9 +73,15 @@ Updated 2026-11-27T15:06:55Z (paper trading, never real money)
   CA `H4gHnZ3NCU7Z9XQwGX6YYJNyieGEW8pqwGRUcdSxpump`
 
 ## Last scan
-- 15:06Z: 4 coins, 3 with pairs, 0 passed the market filters, 0 researched
+- 15:21Z: 2 coins, 1 with pairs, 0 passed the market filters, 0 researched
 
 ## Coins it looked at, and why it passed
+- 15:17Z COMPUTE (MIGRATED, $85,555 mcap, $7,316 5m vol): PASS at conviction 3, PASS: chasing. COMPUTE is at its high after +186% in 1h, on 0.78x hourly pace, with no higher low and 22 copies in its ticker field. (V1, V6)  
+  CA `54jKBorvDP4eB7vZnWy1HJfhm4X17pSJCE6o2Lshpump`
+- 15:16Z KITT (MIGRATED, $51,913 mcap, $7,008 5m vol): PASS at conviction 3, PASS. Flow is below pace (0.68x), the theme is at 0.38x pace, and there's no catalyst. Blocker: "flow below pace" plus "no catalyst" on a bottom buy (V1, V6).  
+  CA `F5LxbqJxAMrvfxLbqPckErmqNyiPzDJMUXnX8vrhpump`
+- 15:09Z FRGST (MIGRATED, $141,737 mcap, $12,968 5m vol): REJECT, Bundles: 10 linked wallet cluster(s) hold 38.6% of supply (>20%) (V17)  
+  CA `DNgboHpauGZ5KbSptWSkwQyQLSDCQKdoU3qsk9FTpump`
 - 14:58Z WOOPY (MIGRATED, $764,679 mcap, $2,076 5m vol): PASS at conviction 2, PASS: chasing, 2.3% off the high, with 5m flow at $2k and 0.89x pace, and 25 same-ticker copies. Attention is leaving, not arriving. (V1, V6, V13)  
   CA `2va3NUJtEcPemDYg2N1RgA79rPKGTGGJKo3gTY5zpump`
 - 14:49Z BRUH (DIP, $5,151,520 mcap, $2,021 5m vol): PASS at conviction 2, PASS: BRUH has clean holders, but no higher low, flow under pace, and a dead story. It's a $5M parody copy with no catalyst. (V1, V6, V13)  
@@ -90,12 +96,6 @@ Updated 2026-11-27T15:06:55Z (paper trading, never real money)
   CA `GXpQZkap4ExgQTTX4SXfETV7nt1YZKEZSakqos3hpump`
 - 14:24Z FRGST (MIGRATED, $88,117 mcap, $20,980 5m vol): PASS at conviction 3, PASS — chasing: 7.6% off a $95k high with no printed higher low, and the project site is a real conservation charity that doesn't show this CA. Blocker: "chasing" (V1, V6, V13).  
   CA `DNgboHpauGZ5KbSptWSkwQyQLSDCQKdoU3qsk9FTpump`
-- 14:16Z WW (MIGRATED, $538,736 mcap, $2,225 5m vol): PASS at conviction 3, PASS — no higher low and no breakout. WW is 23% off its high and still falling back from the 0.000647 bounce, with 5m flow at 2.4x pace on only $2.2k. Blocker: "no higher low" (V1, V6).  
-  CA `8rjgC1GsBo4fwuXjq7Hy12SAFxgFxbtSJJSFBYkVpump`
-- 14:02Z BRUH (DIP, $5,460,284 mcap, $2,596 5m vol): REJECT, Dip with fading attention is a falling knife, not a dip (5m at 0.24x the hour's pace, under 0.6x)  
-  CA `PgFtGGquvnv2zEkjG2N2QPvBTBrafuExGYEqahRpump`
-- 14:02Z WINSTON (MIGRATED, $168,261 mcap, $12,235 5m vol): PASS at conviction 2, PASS — flow below pace: 5m volume is 0.25x the hour's average, and the 1h candles are a 6x bounce off a $25k-ish low, not a printed higher low. Blocker: "flow below pace" (owner rule, V1, V6).  
-  CA `7Y2CVbnqZRvR5RUvEJ9RQ73fZEfv7ybNcysytAepump`
 
 ## What its skips did next (last 48h)
 A skip "ran" if the coin reached the first target (1.5x) from the skip price before a 20% drop, "dumped" if the drop came first. Sampled every 10 min, followed 6h.
@@ -106,28 +106,28 @@ A skip "ran" if the coin reached the first target (1.5x) from the skip price bef
     CA `DeACAbp2GMzapB6Z2K8qdkTZupmNbKc6EZx9bnbCpump`
   - ran: Legatum up to 2.21x  
     CA `HkPSDYRcw4uqgRzZMDd5sRnMpE4ungR1K8MRNXnBVtQ2`
-- flow below pace: blocked 45, ran 4, dumped 34, flat 5, open 2 (saving losses: keep it)
+- flow below pace: blocked 47, ran 5, dumped 35, flat 5, open 2 (saving losses: keep it)
   - ran: BIAO up to 1.51x  
     CA `As3XtYSstuVdrVyb6sJZZ77Tu8JvjTBg6S6hgPv4pump`
   - ran: PAIR up to 2.1x  
     CA `32rBxcFjCFnyqZ41CEPM5AL67X1dcw8w83vZt6Kxpump`
   - ran: Hoppy up to 1.76x  
     CA `CFX1gH7CKYwqYXrfDkS2MUxJcEhs8PT63DyRA1chpump`
-- too new / sniping: blocked 43, ran 6, dumped 36, flat 0, open 1 (saving losses: keep it)
+- too new / sniping: blocked 43, ran 7, dumped 36, flat 0, open 0 (saving losses: keep it)
   - ran: COIN up to 1.85x  
     CA `ALLherSTscpAErYo5Jja3ysVocaa2oeZkUvgmvhZpump`
   - ran: Slapcat up to 1.61x  
     CA `AqNAfcg8AkidVLLE7Tszh2PjUGzgaKvJskDXQXRHpump`
   - ran: STUDS up to 2.35x  
     CA `34J9VrBeJ2dWActyAMpoNBKvoxZCqQz3SivmnnmSTUds`
-- near the high / chasing: blocked 38, ran 5, dumped 30, flat 2, open 1 (saving losses: keep it)
+- near the high / chasing: blocked 37, ran 5, dumped 29, flat 2, open 1 (saving losses: keep it)
   - ran: HEYOS up to 1.91x  
     CA `A88p1LcHisrx3TuTwUGVrLtc1LBTUPZUfVgaCGutAFaK`
   - ran: Nala up to 1.64x  
     CA `FeBG8AEG4j7LT7xQF38gPXQFBRBtXBTNzhZjSa3bpump`
   - ran: NETHER up to 1.8x  
     CA `GkL4cJLAL3354wLgS6mZJKKUBVzvUY1FUN47zZNgGWEq`
-- bundles over the line: blocked 25, ran 3, dumped 17, flat 4, open 1 (saving losses: keep it)
+- bundles over the line: blocked 26, ran 3, dumped 17, flat 4, open 2 (saving losses: keep it)
   - ran: WIENER up to 1.59x  
     CA `8BDkDfj3ZUvcG9caGzF2XnHfwg7K6fjfKKDvX6SCpump`
   - ran: Dragon up to 1.55x  
@@ -196,16 +196,16 @@ No edge after costs, and I'm fairly sure of that. All 250 settled coins averaged
 - [2026-11-02 20:25] I expected Slingoor, a clean MIGRATED leader with $25k of 5m flow at pace and a 0.77 buy share, to retest its $408k high from $304k. It never went green (0.98x peak) and hit the -20% stop in 2 minutes, a -$2.86 probe. My own thesis admitted there was no printed higher low after a peak only 6 minutes old, so this confirms the money-shape rule: buy share and flow are not structure (V1, V6). Next time a MIGRATED pullback with no higher low above the hourly low is a PASS with blocker "no higher low", not a probe. This is one loss, so it adds no new ban beyond the rule I already have.
 
 ## Meta right now
-The meta is thin, not dead. The only theme with real money is fresh pump.fun/PumpSwap launches under about two hours old with 55-67% buys, and the names are scattered (Winston/Winstoncoin, Baboon Smirk, MintMyGame). Winston-named coins are rising (Winstoncoin +457% 1h, Winston +237%), while the cat cluster is fading (Choking Cat -99%, ChokeCat -52% with sellers in control). Only Winstoncoin ($12.2k 5m, 57% buys, $168k cap) clears the $10k 5m bar; Baboon Smirk ($5.6k 5m, 60% buys) is close, and the rest sit under $2k 5m or are dead legacy names (BRUH, CBUCKS, WW, JOB). Setups to research, not buy: Winstoncoin only on a pullback that holds $10k 5m with buys over half, Baboon Smirk only once its 5m clears $10k, and MintMyGame and Perpit (Meteora, $364 5m) need real volume before they count. Holder, dev and bundle checks haven't run on any of them yet, and the crawler's cap and percentage figures conflict with scan_movers, so I discarded them; the Trump dinner headlines aren't showing up in this flow. Paper only, not financial advice.
+The trenches are active, not quiet. The movers share one launch style, fresh pump.fun/PumpSwap coins under about 2 hours old with 54-58% buys, spread across jokes (animals like Froggies, Woopy Dog and Wizard Cat; a record gag in Holder Record Egg; a tech-sounding ComputeCoin and Kitt) and not a single story. Rising: FRGST (+111% 1h, $130k cap, $17.2k 5m, 55% buys), Egg (+518% 1h, $12.6k cap, $14.5k 5m, 54% buys), KITT (+365% 1h, $53k cap, $8.0k 5m, 58% buys) and COMPUTE ($85k cap, $7.3k 5m, 57% buys). Fading: Tworbit (-99.7% 1h, $1.4k cap, zero 5m), Winston (-50% 1h, $247 5m), Gemma and Wizard Cat. The crawler's Winstoncoin run and the Trump dinner and ANSEM headlines do not show up in this flow, so I can't confirm the Winston story and I'm not treating the news as the driver. Setups to research, not buy: FRGST as a MIGRATED-style momentum name (V1, V6) only if its 5m holds at $10k or more on a pullback with buys over half; Egg only if its 5m clears $10k and it stays out of the pre-bond dump (V1); KITT and COMPUTE once their 5m clears $10k. Holder, dev and bundle checks have not run on any of them, so that is open work, not a verdict. Paper only, not financial advice.
 
 ## Moving most in its scans, last 30 min (1h volume)
-- WINSTON: $310,042 1h vol, $202,622 mcap, +27% 1h  
-  CA `7Y2CVbnqZRvR5RUvEJ9RQ73fZEfv7ybNcysytAepump`
-- Zhaki: $36,846 1h vol, $26,481 mcap, -36% 1h  
-  CA `2YAfPhCrGSW82Ra33sWgurXt4dQ29SwXusvUXdJGpump`
-- BRUH: $32,778 1h vol, $5,151,520 mcap, -4% 1h  
-  CA `PgFtGGquvnv2zEkjG2N2QPvBTBrafuExGYEqahRpump`
-- WOOPY: $29,407 1h vol, $751,397 mcap, +12% 1h  
-  CA `2va3NUJtEcPemDYg2N1RgA79rPKGTGGJKo3gTY5zpump`
-- Egg: $17,928 1h vol, $8,339 mcap, +308% 1h  
+- FRGST: $324,250 1h vol, $129,818 mcap, +111% 1h  
+  CA `DNgboHpauGZ5KbSptWSkwQyQLSDCQKdoU3qsk9FTpump`
+- TWORBIT: $173,737 1h vol, $1,373 mcap, -100% 1h  
+  CA `GXpQZkap4ExgQTTX4SXfETV7nt1YZKEZSakqos3hpump`
+- KITT: $125,515 1h vol, $53,355 mcap, +365% 1h  
+  CA `F5LxbqJxAMrvfxLbqPckErmqNyiPzDJMUXnX8vrhpump`
+- COMPUTE: $111,902 1h vol, $85,555 mcap, +186% 1h  
+  CA `54jKBorvDP4eB7vZnWy1HJfhm4X17pSJCE6o2Lshpump`
+- Egg: $47,817 1h vol, $12,630 mcap, +518% 1h  
   CA `EVASJxNTfg5P8qrj3crg11pQNDva6fqzfHavZ9NLpump`
