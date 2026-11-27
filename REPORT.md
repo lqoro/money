@@ -1,13 +1,13 @@
 # Trencher live report
 
-Updated 2026-11-27T06:32:54Z (paper trading, never real money)
+Updated 2026-11-27T06:48:09Z (paper trading, never real money)
 
 - Equity: $74.23 (-25.8% vs $100 start)
 - Closed trades: 22, 3 wins
 - Fees paid: $14.78 (axiom $2.81, network $9.18, pool $2.66), plus $4.15 lost to slippage
 - New trades: WATCH-ONLY (scans and decides, buys nothing)
-- Brain: subscription, claude-haiku-5-5 for routine calls, claude-opus-5-5 for the daily review; 375 routine calls and 0 plan-limit hits in 48h
-- Watch log: 82 coins being followed, 4115 filed, 0 would-buys (6h follow, sampled every 2 min)
+- Brain: subscription, claude-haiku-5-5 for routine calls, claude-opus-5-5 for the daily review; 377 routine calls and 0 plan-limit hits in 48h
+- Watch log: 82 coins being followed, 4118 filed, 0 would-buys (6h follow, sampled every 2 min)
 
 ## Scorecard (after fees)
 - 22 closed, 3 won (14%), net $-25.79
@@ -73,9 +73,15 @@ Updated 2026-11-27T06:32:54Z (paper trading, never real money)
   CA `H4gHnZ3NCU7Z9XQwGX6YYJNyieGEW8pqwGRUcdSxpump`
 
 ## Last scan
-- 06:32Z: 2 coins, 2 with pairs, 1 passed the market filters, 1 researched
+- 06:47Z: 6 coins, 6 with pairs, 1 passed the market filters, 1 researched
 
 ## Coins it looked at, and why it passed
+- 06:47Z wizardcat (DIP, $54,966 mcap, $2,012 5m vol): PASS at conviction 3, PASS: no catalyst, $2k 5m flow, and the CA isn't on the project's own site. A thin cat copy in an 18-ticker field. (DIP, V1, V6, V13)  
+  CA `6W3H5nEzuLUpTbcMrhRfMiDPCZ4QuBmZPBkeAMzypump`
+- 06:37Z CBUCKS (MIGRATED, $6,807,689 mcap, $2,119 5m vol): REJECT, Top 10 hold 25.6% ex-pool (>25%) (V13)  
+  CA `DtcicPCKTKeAh7TDEzTym3hXeoHAoMiBdYJhMYxZpump`
+- 06:33Z 哈基米 (MIGRATED, $38,843 mcap, $5,300 5m vol): PASS at conviction 3, PASS: 3 minutes old, already up 23% in 5m on 12x hourly pace, no higher low, one of 14 copies. Chasing a spike (V1, V6, V13).  
+  CA `6xjxZATYCFba8BFR1QrqyFvpro1EZCox2mGab6VXpump`
 - 06:32Z Upline (FINAL_STRETCH, $16,815 mcap, $46,072 5m vol): PASS at conviction 2, PASS: chasing spike, sellers outnumber buyers, and it's 4 minutes old with a 7-copy field. Blocker "chasing spike" (V1, V6).  
   CA `7pPHLjByynPdPJ75Yozw1ACLaPsb9qHajQ64WbLvpump`
 - 06:10Z twin (FINAL_STRETCH, $20,703 mcap, $23,070 5m vol): PASS at conviction 3, PASS, blocker "chasing spike" and "split crowd": this "twin" is one of 15 copies, it isn't the theme leader, and it's up 26% in 5 minutes at 3.7x hourly pace. Wait for the leader and a retrace. (V1, V3)  
@@ -90,12 +96,6 @@ Updated 2026-11-27T06:32:54Z (paper trading, never real money)
   CA `BZUYxHMqLXCZ5evWoBuagMfpeYtPSXzr8kHvqqL5pump`
 - 05:51Z CBUCKS (MIGRATED, $6,804,064 mcap, $2,911 5m vol): REJECT, Top 10 hold 25.6% ex-pool (>25%) (V13)  
   CA `DtcicPCKTKeAh7TDEzTym3hXeoHAoMiBdYJhMYxZpump`
-- 05:47Z VOLALITY (DIP, $100,888 mcap, $18,960 5m vol): PASS at conviction 3, PASS: blocker "no catalyst". The DIP is 59% off a $245k peak with no news behind it, and the site is a bridge that doesn't show this CA. Five tokens share the name. (V1, V13)  
-  CA `4tPsVjDAqgDjb5TzGazEDMvM2GK2xDvCG2LxpX8opump`
-- 05:31Z Kibo (FINAL_STRETCH, $25,953 mcap, $32,064 5m vol): PASS at conviction 2, PASS. Chasing spike: Kibo is up 204% on 5m and 696% on the hour, 8 minutes old, with 7 same-ticker copies splitting the crowd (V1, V13).  
-  CA `7XSYaJygcuNe6Q3kPvwsJpg4ZrFL1AEUFb8kCuzppump`
-- 05:23Z Snowball (MIGRATED, $587,262 mcap, $2,875 5m vol): PASS at conviction 2, PASS: flow below pace (5m at 0.74x the hourly average, 42% buys) with no catalyst, and the holder and bundle numbers sit over the warn line. A gamified buy-loop site on a 1.5-day-old domain. Farm-shaped (V1, V6, V13).  
-  CA `9TKbd3VFaMSXsEAicD9JVQWpWwAoLi4fSgWmZL2cpump`
 
 ## What its skips did next (last 48h)
 A skip "ran" if the coin reached the first target (1.5x) from the skip price before a 20% drop, "dumped" if the drop came first. Sampled every 10 min, followed 6h.
@@ -106,7 +106,7 @@ A skip "ran" if the coin reached the first target (1.5x) from the skip price bef
     CA `GeUnGPLFku8zn1dJUNZpj6VymUxt7A3t9DqRL5WJpump`
   - ran: MONEY up to 1.58x  
     CA `DeACAbp2GMzapB6Z2K8qdkTZupmNbKc6EZx9bnbCpump`
-- too new / sniping: blocked 44, ran 8, dumped 35, flat 0, open 1 (saving losses: keep it)
+- too new / sniping: blocked 45, ran 8, dumped 36, flat 0, open 1 (saving losses: keep it)
   - ran: Merged up to 2.18x  
     CA `AMYpNGi5aGrKr1ZDsotUdWh7k1mMi569ygtaHJmErGEd`
   - ran: Boor up to 1.56x  
@@ -154,11 +154,9 @@ A skip "ran" if the coin reached the first target (1.5x) from the skip price bef
     CA `BFWNbSwRodXPTQqrMSCfhznhJwEzY6ERd6MHjWUEpump`
   - ran: Christmas up to 1.89x  
     CA `5hkBYuFQDpAAqemCiVqXCuU6Ya5dqKhtRobzJsg6pump`
-- dev share over 1%: blocked 11, ran 2, dumped 7, flat 2, open 0 (saving losses: keep it)
-  - ran: Grinch up to 1.94x  
-    CA `J1b5HnRzmXsYK5akPTFtBR7B4E74JG8eyULodd7ypump`
-  - ran: bolphante up to 1.7x  
-    CA `FVBzzG4ZcAgxSLW1rWjNC9EH9CgEgz1A4puNYexMpump`
+- thin 5m volume: blocked 12, ran 1, dumped 8, flat 1, open 2 (saving losses: keep it)
+  - ran: Copyinu up to 2.6x  
+    CA `GRXSoGBqmTkS78Rrvm8QyBJH9XMe8562eZojzHj2pump`
 
 ## Daily review (2026-11-26, claude-opus-5-5)
 No edge yet. All 276 settled coins lost money after costs under the simple plan: -6.4% average net. Every setup was negative: FINAL_STRETCH -3.6% (n=45), MIGRATED -5.1% (n=193), DIP -16.1% (n=38). Before costs the simple plan made roughly +3% overall and about +6% on FINAL_STRETCH. The ~9.7% round-trip cost on a $10 buy wipes that out, which is the same thing the 22 real trades showed: $18.83 of the $25.79 loss was fees and slippage. The sample is far too small to trust a 3–6% gross edge. Payoffs swing from +50% to -20%, so the error bar on 45 FINAL_STRETCH coins is about ±9 points. Repeat logs of the same coin also make the overall n look bigger than it is. Only the negative after-cost result is solid. The brain logged zero would-buys, so nobody can say yet whether it picks better than it passes. That missing data is the main thing to fix before Nov 10.
@@ -199,13 +197,13 @@ No edge yet. All 276 settled coins lost money after costs under the simple plan:
 Meta: the live volume is in animal/mascot names and person-named coins, while the Christmas wave is already fading. Kibo (pumpfun, $26k cap, $32k 5m, 61% buys, 6 minutes old) and VOLALITY ($100k cap, $17k 5m, 58% buys, 1.3h old) are the only two in this scan clearing the $10k 5m bar with buyers. Mike McCarthy/123Packers ($9k cap, +219% in the hour, 67% buys) is the person-name play, but $2.3k 5m is below the bar, so it's watch-only. Fading: Santaball (-99.8% in the hour, 0% buys on 5m), Christmas Coin (-82%, 25% buys), and LUMINARE and DragonCoin (-98%, zero 5m buys). The crawler's DragonCoin $77k / +155% doesn't match the scan (~$1.6k, -98%), so I'm treating the crawler's numbers as stale. Setups to look at, pending holder, dev and bundle checks: Kibo as a FINAL_STRETCH probe only if the top-50 buy the dip, and VOLALITY as a dip-hold only if 5m volume stays above $10k; neither is verified, so conviction stays at probe level.
 
 ## Moving most in its scans, last 30 min (1h volume)
-- Kibo: $264,121 1h vol, $16,468 mcap, -49% 1h  
-  CA `7XSYaJygcuNe6Q3kPvwsJpg4ZrFL1AEUFb8kCuzppump`
-- Pilly: $105,650 1h vol, $3,396 mcap, -88% 1h  
+- CaveBaby: $197,349 1h vol, $1,692 mcap, -95% 1h  
+  CA `BZUYxHMqLXCZ5evWoBuagMfpeYtPSXzr8kHvqqL5pump`
+- VOLALITY: $142,979 1h vol, $1,977 mcap, -98% 1h  
+  CA `4tPsVjDAqgDjb5TzGazEDMvM2GK2xDvCG2LxpX8opump`
+- Pilly: $106,845 1h vol, $3,494 mcap, -88% 1h  
   CA `8XEddj5r2MkiKgFgMGUev3WMAyk5td2NXD6z3bRypump`
-- twin: $75,044 1h vol, $21,613 mcap, +777% 1h  
-  CA `FbrKhFFrYgEAN3VCTiodjuqGE8Y23EaCuTELkz9xxdxd`
-- leftovers: $50,230 1h vol, $2,957 mcap, -60% 1h  
-  CA `4s4ze2MdvjRpSntXrbzybrq8J8ojdKkjs4ByAJsppump`
-- Upline: $46,072 1h vol, $16,815 mcap, +458% 1h  
-  CA `7pPHLjByynPdPJ75Yozw1ACLaPsb9qHajQ64WbLvpump`
+- Kibo: $105,600 1h vol, $24,500 mcap, -25% 1h  
+  CA `7XSYaJygcuNe6Q3kPvwsJpg4ZrFL1AEUFb8kCuzppump`
+- pigger: $84,908 1h vol, $2,940 mcap, +27% 1h  
+  CA `5YK8syegHJcpZ558aqyWBeQcpcQLzTnm3XsJky9Mpump`
