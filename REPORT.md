@@ -1,13 +1,13 @@
 # Trencher live report
 
-Updated 2026-11-27T14:36:42Z (paper trading, never real money)
+Updated 2026-11-27T14:51:51Z (paper trading, never real money)
 
 - Equity: $74.23 (-25.8% vs $100 start)
 - Closed trades: 22, 3 wins
 - Fees paid: $14.78 (axiom $2.81, network $9.18, pool $2.66), plus $4.15 lost to slippage
 - New trades: WATCH-ONLY (scans and decides, buys nothing)
 - Brain: subscription, claude-haiku-5-5 for routine calls, claude-opus-5-5 for the daily review; 388 routine calls and 9 plan-limit hits in 48h
-- Watch log: 43 coins being followed, 4212 filed, 0 would-buys (6h follow, sampled every 2 min)
+- Watch log: 46 coins being followed, 4212 filed, 0 would-buys (6h follow, sampled every 2 min)
 
 ## Scorecard (after fees)
 - 22 closed, 3 won (14%), net $-25.79
@@ -73,9 +73,15 @@ Updated 2026-11-27T14:36:42Z (paper trading, never real money)
   CA `H4gHnZ3NCU7Z9XQwGX6YYJNyieGEW8pqwGRUcdSxpump`
 
 ## Last scan
-- 14:36Z: 6 coins, 5 with pairs, 0 passed the market filters, 0 researched
+- 14:51Z: 2 coins, 1 with pairs, 0 passed the market filters, 0 researched
 
 ## Coins it looked at, and why it passed
+- 14:49Z BRUH (DIP, $5,151,520 mcap, $2,021 5m vol): PASS at conviction 2, PASS: BRUH has clean holders, but no higher low, flow under pace, and a dead story. It's a $5M parody copy with no catalyst. (V1, V6, V13)  
+  CA `PgFtGGquvnv2zEkjG2N2QPvBTBrafuExGYEqahRpump`
+- 14:48Z WINSTON (MIGRATED, $202,622 mcap, $19,635 5m vol): PASS at conviction 3, PASS: flow below pace, and no catalyst for a bottom buy. Winstoncoin is the theme leader, but its 5m is 0.76x its hourly pace and the Winston theme is 0.74x. (V1, V6)  
+  CA `7Y2CVbnqZRvR5RUvEJ9RQ73fZEfv7ybNcysytAepump`
+- 14:46Z CBUCKS (MIGRATED, $7,002,135 mcap, $4,401 5m vol): REJECT, Top 10 hold 25.5% ex-pool (>25%) (V13)  
+  CA `DtcicPCKTKeAh7TDEzTym3hXeoHAoMiBdYJhMYxZpump`
 - 14:30Z KITT (MIGRATED, $45,173 mcap, $10,535 5m vol): PASS at conviction 2, PASS: no catalyst, theme pace 0.12x, and 40 min old, still bleeding off its bond spike. Blocker "dead story". (V1, V6)  
   CA `F5LxbqJxAMrvfxLbqPckErmqNyiPzDJMUXnX8vrhpump`
 - 14:25Z TWORBIT (MIGRATED, $415,724 mcap, $12,394 5m vol): PASS at conviction 2, PASS: flow below pace. 5m volume is 0.31x the hourly average, the price isn't pushing the high, and six copies of the ticker are out there (V1, V6, V17).  
@@ -90,12 +96,6 @@ Updated 2026-11-27T14:36:42Z (paper trading, never real money)
   CA `7Y2CVbnqZRvR5RUvEJ9RQ73fZEfv7ybNcysytAepump`
 - 13:59Z Zhaki (DIP, $44,504 mcap, $5,557 5m vol): REJECT, Dip with fading attention is a falling knife, not a dip (5m at 0.35x the hour's pace, under 0.6x)  
   CA `2YAfPhCrGSW82Ra33sWgurXt4dQ29SwXusvUXdJGpump`
-- 13:52Z WOOPY (MIGRATED, $705,507 mcap, $4,562 5m vol): PASS at conviction 2, PASS: WOOPY is clean on holders (top 10 at 9.5%, bundles 0%), but it's 7.6% off its high on flow below pace with no higher low, in a dog field running at 0.04x its hourly pace. Blocker: chasing / flow below pace. (V1, V6, V13)  
-  CA `2va3NUJtEcPemDYg2N1RgA79rPKGTGGJKo3gTY5zpump`
-- 13:45Z KITT (FINAL_STRETCH, $22,548 mcap, $5,364 5m vol): PASS at conviction 2, PASS — chasing spike. 5m up 46%, 1h up 937%, sitting on the high with $5.4k of 5m flow. Blocker: "chasing spike." Pump-tuition on a crowded ticker (V1, V6).  
-  CA `F5LxbqJxAMrvfxLbqPckErmqNyiPzDJMUXnX8vrhpump`
-- 13:39Z TWORBIT (MIGRATED, $245,553 mcap, $31,381 5m vol): PASS at conviction 2, PASS. Chasing a spike 4% under the high, 0.4h old, no higher low, and the first resistance is 1.04x away. (V1, V6)  
-  CA `GXpQZkap4ExgQTTX4SXfETV7nt1YZKEZSakqos3hpump`
 
 ## What its skips did next (last 48h)
 A skip "ran" if the coin reached the first target (1.5x) from the skip price before a 20% drop, "dumped" if the drop came first. Sampled every 10 min, followed 6h.
@@ -120,7 +120,7 @@ A skip "ran" if the coin reached the first target (1.5x) from the skip price bef
     CA `AqNAfcg8AkidVLLE7Tszh2PjUGzgaKvJskDXQXRHpump`
   - ran: STUDS up to 2.35x  
     CA `34J9VrBeJ2dWActyAMpoNBKvoxZCqQz3SivmnnmSTUds`
-- near the high / chasing: blocked 38, ran 5, dumped 29, flat 2, open 2 (saving losses: keep it)
+- near the high / chasing: blocked 38, ran 5, dumped 30, flat 2, open 1 (saving losses: keep it)
   - ran: HEYOS up to 1.91x  
     CA `A88p1LcHisrx3TuTwUGVrLtc1LBTUPZUfVgaCGutAFaK`
   - ran: Nala up to 1.64x  
@@ -139,7 +139,7 @@ A skip "ran" if the coin reached the first target (1.5x) from the skip price bef
     CA `J9eBkCb4UtquAMQqB6duwBmR99fFSMoTnDcaMB9Wpump`
   - ran: MONEY up to 1.58x  
     CA `DeACAbp2GMzapB6Z2K8qdkTZupmNbKc6EZx9bnbCpump`
-- RugCheck danger: blocked 18, ran 1, dumped 15, flat 2, open 0 (saving losses: keep it)
+- RugCheck danger: blocked 17, ran 1, dumped 14, flat 2, open 0 (saving losses: keep it)
   - ran: Bababoi up to 2.17x  
     CA `28B9kDm6XtQNqAkzuiKH3Zu1L8cVM6SLW4iRamFspump`
 - falling knife / no higher low: blocked 13, ran 3, dumped 6, flat 3, open 1 (saving losses: keep it)
@@ -201,11 +201,11 @@ The meta is thin, not dead. The only theme with real money is fresh pump.fun/Pum
 ## Moving most in its scans, last 30 min (1h volume)
 - TWORBIT: $483,224 1h vol, $433,673 mcap, +140% 1h  
   CA `GXpQZkap4ExgQTTX4SXfETV7nt1YZKEZSakqos3hpump`
+- WINSTON: $310,042 1h vol, $202,622 mcap, +27% 1h  
+  CA `7Y2CVbnqZRvR5RUvEJ9RQ73fZEfv7ybNcysytAepump`
 - FRGST: $161,435 1h vol, $75,955 mcap, +146% 1h  
   CA `DNgboHpauGZ5KbSptWSkwQyQLSDCQKdoU3qsk9FTpump`
 - KITT: $90,323 1h vol, $45,173 mcap, +47% 1h  
   CA `F5LxbqJxAMrvfxLbqPckErmqNyiPzDJMUXnX8vrhpump`
-- Joe: $29,594 1h vol, $2,273 mcap, -72% 1h  
-  CA `DwQgXTe98WQHkM6n7htVLYdk2pBpE5amPF1cBNbE3yhh`
-- ChokeCat: $23,219 1h vol, $12,229 mcap, -52% 1h  
-  CA `26qFFJBo4F7EjtzCuCbJEdW4v233mY1aMRaw8Y2kpump`
+- Zhaki: $76,421 1h vol, $34,461 mcap, -50% 1h  
+  CA `2YAfPhCrGSW82Ra33sWgurXt4dQ29SwXusvUXdJGpump`
