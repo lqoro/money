@@ -1,13 +1,13 @@
 # Trencher live report
 
-Updated 2026-11-27T16:53:12Z (paper trading, never real money)
+Updated 2026-11-27T17:08:14Z (paper trading, never real money)
 
 - Equity: $74.23 (-25.8% vs $100 start)
 - Closed trades: 22, 3 wins
 - Fees paid: $14.78 (axiom $2.81, network $9.18, pool $2.66), plus $4.15 lost to slippage
 - New trades: WATCH-ONLY (scans and decides, buys nothing)
-- Brain: subscription, claude-haiku-5-5 for routine calls, claude-opus-5-5 for the daily review; 396 routine calls and 9 plan-limit hits in 48h
-- Watch log: 57 coins being followed, 4224 filed, 0 would-buys (6h follow, sampled every 2 min)
+- Brain: subscription, claude-haiku-5-5 for routine calls, claude-opus-5-5 for the daily review; 395 routine calls and 9 plan-limit hits in 48h
+- Watch log: 61 coins being followed, 4225 filed, 0 would-buys (6h follow, sampled every 2 min)
 
 ## Scorecard (after fees)
 - 22 closed, 3 won (14%), net $-25.79
@@ -73,9 +73,19 @@ Updated 2026-11-27T16:53:12Z (paper trading, never real money)
   CA `H4gHnZ3NCU7Z9XQwGX6YYJNyieGEW8pqwGRUcdSxpump`
 
 ## Last scan
-- 16:52Z: 3 coins, 3 with pairs, 0 passed the market filters, 0 researched
+- 17:07Z: 1 coins, 1 with pairs, 0 passed the market filters, 0 researched
 
 ## Coins it looked at, and why it passed
+- 16:58Z KITT (DIP, $96,532 mcap, $5,972 5m vol): REJECT, Dip with fading attention is a falling knife, not a dip (5m at 0.45x the hour's pace, under 0.6x)  
+  CA `F5LxbqJxAMrvfxLbqPckErmqNyiPzDJMUXnX8vrhpump`
+- 16:57Z CBUCKS (MIGRATED, $6,668,415 mcap, $3,804 5m vol): REJECT, Top 10 hold 25.5% ex-pool (>25%) (V13)  
+  CA `DtcicPCKTKeAh7TDEzTym3hXeoHAoMiBdYJhMYxZpump`
+- 16:57Z Laura (MIGRATED, $425,681 mcap, $90,225 5m vol): REJECT, Top 10 hold 27.1% ex-pool (>25%) (V13)  
+  CA `94Dwo5g4NywRxrcdALS8Vbq4s4xHqWSkgQsCGNpQpump`
+- 16:56Z Elfball (MIGRATED, $369,755 mcap, $13,237 5m vol): PASS at conviction 3, PASS. Flow is at 0.43x its hourly pace, the elf theme is at 0.48x, and the CA isn't on the project's own site. Blocker: flow below pace. (V1, V6, V13)  
+  CA `92tFJ6CvgCuoS1c34Qy5g3RPVRDmLyHtknMnuoYqpump`
+- 16:54Z CINU (MIGRATED, $231,125 mcap, $2,915 5m vol): PASS at conviction 2, PASS: chasing spike. CINU is up 25.7% on 5m at 6.8x its hourly pace, with buys at 48% and no printed higher low. It's a copy in a 24-coin cate/inu field, and its own website shows a different CA (V1, V3, V6).  
+  CA `CvXQ9qEriGgTbMWyF8L1U7oqn9ev8A49N1dzNE8cpump`
 - 16:50Z Fireball (MIGRATED, $716,684 mcap, $10,555 5m vol): PASS at conviction 3, PASS: no breakout, flow below pace, and a 28-copy vamp field with a 2-hour-old site that doesn't show this CA. Fireball ran 5x in 3 hours and is now sitting 15% off the high on 0.92x pace. (V1, V6, V13)  
   CA `B9wbjDJ4FbHMsZmoXAkJSTAwuePaJUKbySvnK5zApump`
 - 16:45Z DIHBALL (MIGRATED, $219,052 mcap, $11,377 5m vol): REJECT, Top 10 hold 47.8% ex-pool (>25%) (V13)  
@@ -86,41 +96,31 @@ Updated 2026-11-27T16:53:12Z (paper trading, never real money)
   CA `HcoFqrrZCmMUCNYzG9ez2CwrUPc77DWvt5agkL5V4t2D`
 - 16:35Z Meme (MIGRATED, $348,539 mcap, $39,671 5m vol): PASS at conviction 3, PASS: chasing spike, no printed higher low. Price is 7.9% under a peak printed 6 minutes ago, after a ~6x run in about an hour. Blocker: "chasing". (V1, V6)  
   CA `CV1NPi8L2PSYMfALBh7GCfUwELZzG3DrLUUjCkeapump`
-- 16:35Z 67 (MIGRATED, $52,357 mcap, $114,670 5m vol): PASS at conviction 2, PASS: four minutes old, already +23% on 5m at 12x pace, no printed higher low, and it's the leader of a 20-copy "six seven" field. Blockers: too new, no higher low, chasing spike, split crowd (V1, V3, V6).  
-  CA `8ob6WB1VTJasK2r6EjzbMyJ5Zv8bd6jDsTtahvxunyLV`
-- 16:25Z REVINU (MIGRATED, $320,390 mcap, $23,615 5m vol): REJECT, Top 10 hold 51.5% ex-pool (>25%) (V13)  
-  CA `7j1a6959WYMBwUNVV64NtzwAKfKU8hXC5auJdFHbpump`
-- 16:14Z enu (MIGRATED, $176,920 mcap, $3,108 5m vol): PASS at conviction 3, PASS: enu is the flow leader of a 5-copy ticker field, but it has no story, no printed higher low, and its top 10 sit at 24.7%, one point under the hard line. Farm risk until proven otherwise. (V1, V6, V13)  
-  CA `9msLfYfXBrSbrApCZAPuPMCNmPqNtEL1VPKh1AEYpump`
-- 16:13Z KITT (MIGRATED, $155,156 mcap, $12,838 5m vol): PASS at conviction 4, PASS: KITT is a vertical run, not a breakout. It's down 9.8% on 5m, sitting 19.6% under a $193k high that's only 1.24x away. Blockers: "no breakout", "target too close", "chasing". (V1, V6)  
-  CA `F5LxbqJxAMrvfxLbqPckErmqNyiPzDJMUXnX8vrhpump`
-- 16:10Z Elfball (MIGRATED, $357,716 mcap, $49,390 5m vol): REJECT, Top 10 hold 52.3% ex-pool (>25%) (V13)  
-  CA `92tFJ6CvgCuoS1c34Qy5g3RPVRDmLyHtknMnuoYqpump`
 
 ## What its skips did next (last 48h)
 A skip "ran" if the coin reached the first target (1.5x) from the skip price before a 20% drop, "dumped" if the drop came first. Sampled every 10 min, followed 6h.
-- top 10 over 25%: blocked 54, ran 10, dumped 38, flat 3, open 3 (saving losses: keep it)
+- top 10 over 25%: blocked 53, ran 10, dumped 37, flat 2, open 4 (saving losses: keep it)
   - ran: ð up to 1.65x  
     CA `GeUnGPLFku8zn1dJUNZpj6VymUxt7A3t9DqRL5WJpump`
   - ran: MONEY up to 1.58x  
     CA `DeACAbp2GMzapB6Z2K8qdkTZupmNbKc6EZx9bnbCpump`
   - ran: Legatum up to 2.21x  
     CA `HkPSDYRcw4uqgRzZMDd5sRnMpE4ungR1K8MRNXnBVtQ2`
-- flow below pace: blocked 48, ran 3, dumped 39, flat 4, open 2 (saving losses: keep it)
+- flow below pace: blocked 49, ran 3, dumped 39, flat 4, open 3 (saving losses: keep it)
   - ran: PAIR up to 2.1x  
     CA `32rBxcFjCFnyqZ41CEPM5AL67X1dcw8w83vZt6Kxpump`
   - ran: Hoppy up to 1.76x  
     CA `CFX1gH7CKYwqYXrfDkS2MUxJcEhs8PT63DyRA1chpump`
   - ran: SpaceXCoin up to 1.52x  
     CA `G2XqmSc8vJpLLwaLVXUeNkxsrhVT8vQ3Pje8MqeDpump`
-- too new / sniping: blocked 46, ran 7, dumped 38, flat 0, open 1 (saving losses: keep it)
+- too new / sniping: blocked 46, ran 8, dumped 38, flat 0, open 0 (saving losses: keep it)
   - ran: COIN up to 1.85x  
     CA `ALLherSTscpAErYo5Jja3ysVocaa2oeZkUvgmvhZpump`
   - ran: Slapcat up to 1.61x  
     CA `AqNAfcg8AkidVLLE7Tszh2PjUGzgaKvJskDXQXRHpump`
   - ran: STUDS up to 2.35x  
     CA `34J9VrBeJ2dWActyAMpoNBKvoxZCqQz3SivmnnmSTUds`
-- near the high / chasing: blocked 37, ran 5, dumped 29, flat 3, open 0 (saving losses: keep it)
+- near the high / chasing: blocked 37, ran 5, dumped 28, flat 3, open 1 (saving losses: keep it)
   - ran: Nala up to 1.64x  
     CA `FeBG8AEG4j7LT7xQF38gPXQFBRBtXBTNzhZjSa3bpump`
   - ran: NETHER up to 1.8x  
@@ -134,7 +134,7 @@ A skip "ran" if the coin reached the first target (1.5x) from the skip price bef
     CA `cg3HaDWhAKFfj9aq79TWUBgmxfs4G7byQ7feaxnpump`
   - ran: monky up to 96.37x  
     CA `At5hmwDn4YgPDoic1UN7zMdTtCoiXJsMhnKaoazEpump`
-- falling knife (code): blocked 18, ran 2, dumped 15, flat 1, open 0 (saving losses: keep it)
+- falling knife (code): blocked 19, ran 2, dumped 15, flat 1, open 1 (saving losses: keep it)
   - ran: Investor up to 1.58x  
     CA `J9eBkCb4UtquAMQqB6duwBmR99fFSMoTnDcaMB9Wpump`
   - ran: MONEY up to 1.58x  
@@ -199,13 +199,13 @@ No edge after costs, and I'm fairly sure of that. All 250 settled coins averaged
 The meta is not a headline. It's a crowd of fresh pump.fun/PumpSwap coins, mostly under 3 hours old, grouped into animal/pet mascots (FRGST, Ascend Cat, gDOG), tech/AI-sounding names (COMPUTE, KITT, gDOG's "generative"), and record/joke gags (Egg, Meme Man). Rising with real 5m volume and buyers: KITT ($155k cap, $12.8k 5m, 73% buys, +217% 1h) is the strongest on the list, FRGST ($94k cap, $10.1k 5m, 55% buys) sits right on the $10k bar, and ELFBALL ($352k cap, $55k 5m, 72% buys) is six minutes old, so it's a chase risk, not a setup. Fading or dead: Coal (0 buys, -18%), RingPay (zero 5m) and CBUCKS ($37 5m), while MOTION has $25k of 5m volume but only 45% buys and COMPUTE ($5.1k 5m, 49% buys) is losing buyers; Egg ($2.5k 5m on a $16k cap) is below the bar. Setups to research, not buy: KITT and FRGST as MIGRATED-style momentum names (V1, V6), only if 5m holds at $10k or more on a pullback with buys over half; Egg and COMPUTE only once 5m clears $10k. The crawler's summary numbers disagree with scan_movers (KITT shows $53k cap and $8k 5m in the summary vs $155k and $12.8k in the scan), so I used scan_movers, and the Trump dinner and ANSEM headlines don't show up in this flow. Holder, dev and bundle checks haven't run on any of these, so this is open work, not a verdict. Paper only, not financial advice.
 
 ## Moving most in its scans, last 30 min (1h volume)
-- Meme: $319,587 1h vol, $348,539 mcap, +659% 1h  
-  CA `CV1NPi8L2PSYMfALBh7GCfUwELZzG3DrLUUjCkeapump`
+- Laura: $609,225 1h vol, $425,681 mcap, +286% 1h  
+  CA `94Dwo5g4NywRxrcdALS8Vbq4s4xHqWSkgQsCGNpQpump`
+- Elfball: $373,036 1h vol, $377,738 mcap, +1040% 1h  
+  CA `92tFJ6CvgCuoS1c34Qy5g3RPVRDmLyHtknMnuoYqpump`
 - NBA: $265,916 1h vol, $522,501 mcap, +1159% 1h  
   CA `AjucUKL3i8wh7SvFL9h5cZbWkd3M9JibLkdvRJKppump`
+- KITT: $160,362 1h vol, $96,532 mcap, -0% 1h  
+  CA `F5LxbqJxAMrvfxLbqPckErmqNyiPzDJMUXnX8vrhpump`
 - Fireball: $138,144 1h vol, $716,684 mcap, +37% 1h  
   CA `B9wbjDJ4FbHMsZmoXAkJSTAwuePaJUKbySvnK5zApump`
-- 67: $114,670 1h vol, $52,357 mcap, +23% 1h  
-  CA `8ob6WB1VTJasK2r6EjzbMyJ5Zv8bd6jDsTtahvxunyLV`
-- things: $96,196 1h vol, $18,142 mcap, +603% 1h  
-  CA `HcoFqrrZCmMUCNYzG9ez2CwrUPc77DWvt5agkL5V4t2D`
