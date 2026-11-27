@@ -1,13 +1,13 @@
 # Trencher live report
 
-Updated 2026-11-27T11:50:22Z (paper trading, never real money)
+Updated 2026-11-27T12:05:25Z (paper trading, never real money)
 
 - Equity: $74.23 (-25.8% vs $100 start)
 - Closed trades: 22, 3 wins
 - Fees paid: $14.78 (axiom $2.81, network $9.18, pool $2.66), plus $4.15 lost to slippage
 - New trades: WATCH-ONLY (scans and decides, buys nothing)
 - Brain: subscription, claude-haiku-5-5 for routine calls, claude-opus-5-5 for the daily review; 381 routine calls and 9 plan-limit hits in 48h
-- Watch log: 40 coins being followed, 4190 filed, 0 would-buys (6h follow, sampled every 2 min)
+- Watch log: 40 coins being followed, 4193 filed, 0 would-buys (6h follow, sampled every 2 min)
 
 ## Scorecard (after fees)
 - 22 closed, 3 won (14%), net $-25.79
@@ -73,9 +73,15 @@ Updated 2026-11-27T11:50:22Z (paper trading, never real money)
   CA `H4gHnZ3NCU7Z9XQwGX6YYJNyieGEW8pqwGRUcdSxpump`
 
 ## Last scan
-- 11:49Z: 3 coins, 3 with pairs, 0 passed the market filters, 0 researched
+- 12:05Z: 1 coins, 1 with pairs, 0 passed the market filters, 0 researched
 
 ## Coins it looked at, and why it passed
+- 12:00Z Salecat (MIGRATED, $67,453 mcap, $10,181 5m vol): REJECT, Bundles: 5 linked wallet cluster(s) hold 84.6% of supply (>20%) (V17)  
+  CA `BFLRy1dMqALUz7WFoaXHXdZSJdqEJZnndD7yqz56pump`
+- 11:56Z ChokeCat (FINAL_STRETCH, $20,551 mcap, $6,894 5m vol): REJECT, Top 10 hold 25.5% ex-pool (>25%) (V13)  
+  CA `26qFFJBo4F7EjtzCuCbJEdW4v233mY1aMRaw8Y2kpump`
+- 11:52Z EVOLIQ (FINAL_STRETCH, $15,538 mcap, $9,221 5m vol): PASS at conviction 2, PASS: EVOLIQ is a launchpad selling itself. Named after the platform, 16 minutes old, zero mentions, and the launch wallet can rename it later. Nothing to ride (V1, V13).  
+  CA `GJewwaSYtsKdYmqoinB3LmCVvAD814FdKFWgcR4Kpump`
 - 11:46Z Spread (FINAL_STRETCH, $17,585 mcap, $22,790 5m vol): PASS at conviction 2, PASS: bottom buy with no rising narrative and no catalyst, a 5-copy same-ticker field, and a 0-day "drop" site. Blocker: "no catalyst / narrative dead." (V1, V3, V13)  
   CA `HQYLt1Ne2xQdknmZjbnTffSKFYX2ZHCkBG3WBJQYpump`
 - 11:44Z DIH (FINAL_STRETCH, $17,392 mcap, $3,270 5m vol): REJECT, Top 10 hold 26.2% ex-pool (>25%) (V13)  
@@ -90,23 +96,17 @@ Updated 2026-11-27T11:50:22Z (paper trading, never real money)
   CA `4tqzkSWA9tiWYhzYpSt81We3cVNkrEbkD1tzjFDZpump`
 - 11:21Z VAULT (MIGRATED, $41,002 mcap, $8,486 5m vol): SKIP, passed the checklist, but the brain was paced or paused  
   CA `4tqzkSWA9tiWYhzYpSt81We3cVNkrEbkD1tzjFDZpump`
-- 11:20Z Suki (MIGRATED, $38,071 mcap, $3,373 5m vol): SKIP, passed the checklist, but the brain was paced or paused  
-  CA `Ejbu9xDBN3XuDiLj9A61sctiVzYocF3TpKojiBPvpump`
-- 11:16Z VAULT (FINAL_STRETCH, $26,589 mcap, $8,107 5m vol): SKIP, passed the checklist, but the brain was paced or paused  
-  CA `4tqzkSWA9tiWYhzYpSt81We3cVNkrEbkD1tzjFDZpump`
-- 11:11Z VAULT (FINAL_STRETCH, $24,118 mcap, $7,167 5m vol): SKIP, passed the checklist, but the brain was paced or paused  
-  CA `4tqzkSWA9tiWYhzYpSt81We3cVNkrEbkD1tzjFDZpump`
 
 ## What its skips did next (last 48h)
 A skip "ran" if the coin reached the first target (1.5x) from the skip price before a 20% drop, "dumped" if the drop came first. Sampled every 10 min, followed 6h.
-- top 10 over 25%: blocked 55, ran 10, dumped 41, flat 2, open 2 (saving losses: keep it)
-  - ran: SWARM up to 1.57x  
-    CA `2Rw6rLRRZXQLNreForjeVvDjnpYUaW6rmMFXmRP9pump`
+- top 10 over 25%: blocked 55, ran 9, dumped 41, flat 2, open 3 (saving losses: keep it)
   - ran: ð up to 1.65x  
     CA `GeUnGPLFku8zn1dJUNZpj6VymUxt7A3t9DqRL5WJpump`
   - ran: MONEY up to 1.58x  
     CA `DeACAbp2GMzapB6Z2K8qdkTZupmNbKc6EZx9bnbCpump`
-- too new / sniping: blocked 43, ran 7, dumped 36, flat 0, open 0 (saving losses: keep it)
+  - ran: Legatum up to 2.21x  
+    CA `HkPSDYRcw4uqgRzZMDd5sRnMpE4ungR1K8MRNXnBVtQ2`
+- too new / sniping: blocked 44, ran 7, dumped 36, flat 0, open 1 (saving losses: keep it)
   - ran: COIN up to 1.85x  
     CA `ALLherSTscpAErYo5Jja3ysVocaa2oeZkUvgmvhZpump`
   - ran: Slapcat up to 1.61x  
@@ -127,7 +127,7 @@ A skip "ran" if the coin reached the first target (1.5x) from the skip price bef
     CA `FeBG8AEG4j7LT7xQF38gPXQFBRBtXBTNzhZjSa3bpump`
   - ran: NETHER up to 1.8x  
     CA `GkL4cJLAL3354wLgS6mZJKKUBVzvUY1FUN47zZNgGWEq`
-- bundles over the line: blocked 23, ran 3, dumped 15, flat 4, open 1 (saving losses: keep it)
+- bundles over the line: blocked 24, ran 3, dumped 15, flat 4, open 2 (saving losses: keep it)
   - ran: WIENER up to 1.59x  
     CA `8BDkDfj3ZUvcG9caGzF2XnHfwg7K6fjfKKDvX6SCpump`
   - ran: Dragon up to 1.55x  
@@ -142,7 +142,7 @@ A skip "ran" if the coin reached the first target (1.5x) from the skip price bef
     CA `J9eBkCb4UtquAMQqB6duwBmR99fFSMoTnDcaMB9Wpump`
   - ran: MONEY up to 1.58x  
     CA `DeACAbp2GMzapB6Z2K8qdkTZupmNbKc6EZx9bnbCpump`
-- other: blocked 14, ran 2, dumped 10, flat 1, open 1 (saving losses: keep it)
+- other: blocked 14, ran 2, dumped 11, flat 1, open 0 (saving losses: keep it)
   - ran: SXI up to 2.34x  
     CA `BFWNbSwRodXPTQqrMSCfhznhJwEzY6ERd6MHjWUEpump`
   - ran: Christmas up to 1.89x  
@@ -199,13 +199,13 @@ No edge yet. All 276 settled coins lost money after costs under the simple plan:
 Thin, not quiet: only two movers have real flow, and the animal and old-name coins are fading or dead. The rising theme is fresh one-word utility/container names under 1.5h old: Vault ($24.7k cap, $7.3k 5m, 61% buys) and Nothing ($8.7k cap, $12.3k 5m, 57% buys), with Nothing the only mover that clears the $10k 5m bar. Animal and mascot riffs (Cate Inu, Floki Santa, Wonald, Pobby) are fading, with 5m volume in the hundreds and Wonald and Pobby down 80-93% on the hour, while old famous names (BRUH, JOB, WW) sit at $0.6-5.8M caps, flat on thin volume, which is dead weight, not a meta. Setups to research, not buy: Nothing only if 5m holds above $10k with buyers over half on a pullback, and Vault only as a Final Stretch candidate if it keeps climbing toward bond; both are minutes old, the crawler and scan conflict on Nothing (crawler -53%, scan +252% 1h, so I used the scan), and holder, dev and bundle checks have not run. Kibo is not in this scan so I am not naming it, and the Trump dinner headlines are not in the flow. Paper only, not financial advice.
 
 ## Moving most in its scans, last 30 min (1h volume)
+- Salecat: $93,270 1h vol, $63,602 mcap, +110% 1h  
+  CA `BFLRy1dMqALUz7WFoaXHXdZSJdqEJZnndD7yqz56pump`
 - VAULT: $80,069 1h vol, $56,740 mcap, +97% 1h  
   CA `4tqzkSWA9tiWYhzYpSt81We3cVNkrEbkD1tzjFDZpump`
-- Nothing: $61,415 1h vol, $6,016 mcap, +143% 1h  
-  CA `Gqwo65Miiqpzciy7frML5afe8bEqz1RjbgbD7aeApump`
 - Spread: $58,583 1h vol, $17,585 mcap, +732% 1h  
   CA `HQYLt1Ne2xQdknmZjbnTffSKFYX2ZHCkBG3WBJQYpump`
+- Nothing: $52,137 1h vol, $6,750 mcap, -26% 1h  
+  CA `Gqwo65Miiqpzciy7frML5afe8bEqz1RjbgbD7aeApump`
 - DIH: $44,299 1h vol, $15,476 mcap, +288% 1h  
   CA `3AYshf6BKsM9HVxbPk6vZ3QyWC5H4zTetAANynLrDmmZ`
-- Snowball: $25,682 1h vol, $731,272 mcap, -11% 1h  
-  CA `9TKbd3VFaMSXsEAicD9JVQWpWwAoLi4fSgWmZL2cpump`
