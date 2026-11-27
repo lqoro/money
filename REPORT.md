@@ -1,13 +1,13 @@
 # Trencher live report
 
-Updated 2026-11-27T23:26:26Z (paper trading, never real money)
+Updated 2026-11-27T23:41:27Z (paper trading, never real money)
 
 - Equity: $74.23 (-25.8% vs $100 start)
 - Closed trades: 22, 3 wins
 - Fees paid: $14.78 (axiom $2.81, network $9.18, pool $2.66), plus $4.15 lost to slippage
 - New trades: WATCH-ONLY (scans and decides, buys nothing)
-- Brain: subscription, claude-haiku-5-5 for routine calls, claude-opus-5-5 for the daily review; 392 routine calls and 9 plan-limit hits in 48h
-- Watch log: 80 coins being followed, 4290 filed, 0 would-buys (6h follow, sampled every 2 min)
+- Brain: subscription, claude-haiku-5-5 for routine calls, claude-opus-5-5 for the daily review; 394 routine calls and 9 plan-limit hits in 48h
+- Watch log: 77 coins being followed, 4295 filed, 0 would-buys (6h follow, sampled every 2 min)
 
 ## Scorecard (after fees)
 - 22 closed, 3 won (14%), net $-25.79
@@ -73,9 +73,13 @@ Updated 2026-11-27T23:26:26Z (paper trading, never real money)
   CA `H4gHnZ3NCU7Z9XQwGX6YYJNyieGEW8pqwGRUcdSxpump`
 
 ## Last scan
-- 23:26Z: 7 coins, 6 with pairs, 0 passed the market filters, 0 researched
+- 23:40Z: 8 coins, 7 with pairs, 0 passed the market filters, 0 researched
 
 ## Coins it looked at, and why it passed
+- 23:39Z Fireball (DIP, $636,271 mcap, $3,892 5m vol): PASS at conviction 2, PASS — DIP on a 27-copy "Fireball" ticker with no catalyst, theme volume at 0.72x pace, and a site one day old that doesn't show this CA. Blocker: dead story / no catalyst. (V1, V3, V13)  
+  CA `B9wbjDJ4FbHMsZmoXAkJSTAwuePaJUKbySvnK5zApump`
+- 23:37Z Sol (MIGRATED, $103,100 mcap, $18,509 5m vol): PASS at conviction 2, PASS: 5m flow at 0.43x pace, no printed higher low, and it's one of 18 "Sol" copies with no story behind it. Blocker: flow below pace. (V1, V6, V3)  
+  CA `Xb6V46U9hHHxiJnoAFxiEqEh59owzdt1ZL9q5zpVSoL`
 - 23:23Z WINTER (MIGRATED, $82,266 mcap, $1,956 5m vol): REJECT, 5m volume $1,956 is dead (<$2,000) (V1)  
   CA `7dc3gFoyuDCPWjrfZfX99uasJJSceAJx5ucE8bDGpump`
 - 23:21Z enu (MIGRATED, $316,989 mcap, $6,927 5m vol): PASS at conviction 2, PASS: chasing spike on a 187h-old coin with sellers on the 5m, no printed higher low, and no story behind the name. Blockers: "chasing spike" + "flow below pace" + "no higher low". (V1, V6)  
@@ -92,21 +96,17 @@ Updated 2026-11-27T23:26:26Z (paper trading, never real money)
   CA `5U1gFupX5cvS8gqMm9DTh2bNcqUehc2H4GP3Skgxpump`
 - 22:53Z Fireball (MIGRATED, $753,522 mcap, $4,553 5m vol): PASS at conviction 3, PASS: flow below pace, no catalyst, and the fireball theme is cooling. Blocker "flow below pace". Fireball is a crowded copy field with a 0.4-day-old site that doesn't show this CA. (V1, V6, V13)  
   CA `B9wbjDJ4FbHMsZmoXAkJSTAwuePaJUKbySvnK5zApump`
-- 22:52Z Sol (MIGRATED, $101,135 mcap, $104,271 5m vol): PASS at conviction 2, PASS: a generic "Solana" ticker "Sol" in an 18-copy vamp field, dumping 44% in 5 minutes with no printed higher low and no story behind it. Blocker: "falling knife / no higher low" and "no catalyst." (V1, V6, V13)  
-  CA `Xb6V46U9hHHxiJnoAFxiEqEh59owzdt1ZL9q5zpVSoL`
-- 22:50Z MAYA (MIGRATED, $2,885,752 mcap, $64,277 5m vol): PASS, PASS — brain unavailable, not trading blind.  
-  CA `H2PjSbA2365uxBUJ3EBePSm67AYPuRMgcyswBnrVpump`
 
 ## What its skips did next (last 48h)
 A skip "ran" if the coin reached the first target (1.5x) from the skip price before a 20% drop, "dumped" if the drop came first. Sampled every 10 min, followed 6h.
-- top 10 over 25%: blocked 53, ran 10, dumped 38, flat 3, open 2 (saving losses: keep it)
+- top 10 over 25%: blocked 53, ran 11, dumped 38, flat 3, open 1 (saving losses: keep it)
   - ran: MONEY up to 1.58x  
     CA `DeACAbp2GMzapB6Z2K8qdkTZupmNbKc6EZx9bnbCpump`
   - ran: Legatum up to 2.21x  
     CA `HkPSDYRcw4uqgRzZMDd5sRnMpE4ungR1K8MRNXnBVtQ2`
   - ran: Thankful up to 2.05x  
     CA `E9arxG4RxB7Gxt6U75obonTZzx7vpbc4bUi1dfw3BtUN`
-- flow below pace: blocked 44, ran 4, dumped 34, flat 3, open 3 (saving losses: keep it)
+- flow below pace: blocked 45, ran 4, dumped 34, flat 3, open 4 (saving losses: keep it)
   - ran: PAIR up to 2.1x  
     CA `32rBxcFjCFnyqZ41CEPM5AL67X1dcw8w83vZt6Kxpump`
   - ran: Hoppy up to 1.76x  
@@ -152,9 +152,11 @@ A skip "ran" if the coin reached the first target (1.5x) from the skip price bef
     CA `FVBzzG4ZcAgxSLW1rWjNC9EH9CgEgz1A4puNYexMpump`
   - ran: Fug up to 1.58x  
     CA `7mSf4uWLkgdkqBfSoxniv5aZ1sDCXCiquJNcisjXpump`
-- thin 5m volume: blocked 9, ran 1, dumped 5, flat 2, open 1 (saving losses: keep it)
-  - ran: Copyinu up to 2.6x  
-    CA `GRXSoGBqmTkS78Rrvm8QyBJH9XMe8562eZojzHj2pump`
+- other: blocked 9, ran 2, dumped 7, flat 0, open 0 (saving losses: keep it)
+  - ran: SXI up to 2.34x  
+    CA `BFWNbSwRodXPTQqrMSCfhznhJwEzY6ERd6MHjWUEpump`
+  - ran: Christmas up to 1.89x  
+    CA `5hkBYuFQDpAAqemCiVqXCuU6Ya5dqKhtRobzJsg6pump`
 
 ## Daily review (2026-11-27, claude-opus-5-5)
 No edge after costs, and I'm fairly sure of that. All 250 settled coins averaged -12.7% net under the simple plan, and every setup and stage lost money (-12.2% to -15.2%). Before costs the average is still about -3%, because the median coin peaked at only 1.2x. At n=250 the standard error is roughly 2 points, so 'negative' is solid. The gaps between buckets (2-3 points) are noise, especially since the same coin can be logged more than once. The routine model made zero would-buys out of 130 coins it researched, so I can't test whether its buys beat its passes. The coins it passed on (-13.9%) did no worse than the checklist rejects (-11.5%) beyond noise. Passing everything was right for these 24 hours, but a model that never says buy gives the Nov 10 rule test nothing to grade.
@@ -192,16 +194,16 @@ No edge after costs, and I'm fairly sure of that. All 250 settled coins averaged
 - [2026-11-02 20:25] I expected Slingoor, a clean MIGRATED leader with $25k of 5m flow at pace and a 0.77 buy share, to retest its $408k high from $304k. It never went green (0.98x peak) and hit the -20% stop in 2 minutes, a -$2.86 probe. My own thesis admitted there was no printed higher low after a peak only 6 minutes old, so this confirms the money-shape rule: buy share and flow are not structure (V1, V6). Next time a MIGRATED pullback with no higher low above the hourly low is a PASS with blocker "no higher low", not a probe. This is one loss, so it adds no new ban beyond the rule I already have.
 
 ## Meta right now
-Meta from scan_movers: animal names are still the loudest theme, but only MAYA (Samoyed, $1.5M, 1h old, +3,687% in an hour, 76% buys) looks fresh, while Cate Inu, DogWifJob and Gemma are fading. The live second theme is absurd brainrot names on pump.fun (Silly Bandz +465% 1h, HIlbert Hilbert Hilbert Sahur +195%, Pairing Markets at 0.2h old with $11.8k 5m), with Fireball ($815k, 8h old, 78% buys, +57% 1h) carrying the Ball/fire joke. Finance-joke coins are dying (Commodity Markets -92%, Cartoon Money at 1,252h with $938 5m). Trump-dinner, hack and Christmas headlines don't show up on this tape, so I'm not calling them the meta; Christmass Inu and Fullball come only from the crawler and are unverified here. Setups to research, not buy: Pairing Markets is the only mover clearing the $10k 5m bar on a pump.fun curve, so it's a watch for a pre-bond dump and a real buyer base (V1), not a snipe (V6). MAYA and Fireball fail volume right now ($6.6k and $4.6k against $10k, V6), so I'd wait for a dip with buyers stepping back in. Silly Bandz at $9.7k 5m is a near-miss to watch. Holder, dev and bundle checks still run on each before anything. Paper only, not financial advice.
+The tape is not quiet. Hyperball (pumpswap, $107k mcap, 6 min old, $123k 5m volume, 61% buys, +109% 1h) carries most of the flow, and Spectre ($12.9k 5m, 58% buys, $35k mcap, just launched) is the only other clean 5m-volume mover in the array. Two themes show up across several coins: fresh joke-named tickers that spike on 1h volume (Hyperball, Spectre, Retarded Bitcoin), and dog/animal names that are fading (Gemma -8% 1h with $756 5m, Baboon Smirk $104 5m). Finance-joke coins are dying (PumpMas -58% 1h, Cartoon Money at $6.1M with $1.6k 5m), and Jeff, DRIFT and Retarded Bitcoin each show $33k-$59k of 1h volume with zero 5m volume, so those pumps have stopped and I treat them as dead, not setups. Setups to research, not buy: Hyperball, but only on a dip that holds with buyers stepping back in (V1, V6), and Spectre only if 5m volume survives its first hour (V6). Caveat: the crawler's MAYA, Fireball, Pairing Markets and Silly Bandz figures do not appear in this scan_movers array, so I'm treating them as unverified and leaving them out of the meta. Holder, dev and bundle checks still run on both before anything. Paper only, not financial advice.
 
 ## Moving most in its scans, last 30 min (1h volume)
-- Hyperball: $122,726 1h vol, $107,259 mcap, +109% 1h  
-  CA `5TkyHpVZCnuW6w21q6mvFQ2Fgyvq3KySHJqfuki9pump`
-- Maebashi: $67,646 1h vol, $16,228 mcap, -44% 1h  
+- Sol: $513,671 1h vol, $103,100 mcap, -58% 1h  
+  CA `Xb6V46U9hHHxiJnoAFxiEqEh59owzdt1ZL9q5zpVSoL`
+- Maebashi: $86,583 1h vol, $29,902 mcap, +3% 1h  
   CA `659ziXQiNko5cdGzPaBKVu81ahHzZMTFKBcNxe5ALXkG`
-- BABYCATE: $62,881 1h vol, $24,767 mcap, +245% 1h  
-  CA `CLFWsFgDZ4DUcoD7JfkbQSJNaUTrZe5oUw4tTPERpump`
-- jeff: $58,972 1h vol, $2,023 mcap, -17% 1h  
-  CA `AEuGWPVX6vzGmsGAKUuqKBP2JFhULPtF7bgsDuYtpump`
+- JOB: $77,426 1h vol, $2,336,768 mcap, +10% 1h  
+  CA `9Pq7aLAbhDG2tTnS22cm6kuysZVcZpLFE368HWuypump`
+- Compute: $75,918 1h vol, $4,335 mcap, -39% 1h  
+  CA `5U1gFupX5cvS8gqMm9DTh2bNcqUehc2H4GP3Skgxpump`
 - DRIFT: $54,727 1h vol, $2,091 mcap, -46% 1h  
   CA `CtmY5rRVmxQNWGSG1BF4QJYL6N55ooXy8oe8cAmopump`
