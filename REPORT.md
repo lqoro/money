@@ -1,13 +1,13 @@
 # Trencher live report
 
-Updated 2026-11-27T08:18:39Z (paper trading, never real money)
+Updated 2026-11-27T08:33:39Z (paper trading, never real money)
 
 - Equity: $74.23 (-25.8% vs $100 start)
 - Closed trades: 22, 3 wins
 - Fees paid: $14.78 (axiom $2.81, network $9.18, pool $2.66), plus $4.15 lost to slippage
 - New trades: WATCH-ONLY (scans and decides, buys nothing)
 - Brain: subscription, claude-haiku-5-5 for routine calls, claude-opus-5-5 for the daily review; 378 routine calls and 0 plan-limit hits in 48h
-- Watch log: 72 coins being followed, 4138 filed, 0 would-buys (6h follow, sampled every 2 min)
+- Watch log: 71 coins being followed, 4140 filed, 0 would-buys (6h follow, sampled every 2 min)
 
 ## Scorecard (after fees)
 - 22 closed, 3 won (14%), net $-25.79
@@ -73,9 +73,11 @@ Updated 2026-11-27T08:18:39Z (paper trading, never real money)
   CA `H4gHnZ3NCU7Z9XQwGX6YYJNyieGEW8pqwGRUcdSxpump`
 
 ## Last scan
-- 08:18Z: 4 coins, 4 with pairs, 0 passed the market filters, 0 researched
+- 08:32Z: 5 coins, 5 with pairs, 0 passed the market filters, 0 researched
 
 ## Coins it looked at, and why it passed
+- 08:29Z Kibo (MIGRATED, $136,247 mcap, $8,937 5m vol): PASS at conviction 4, PASS: Kibo has the right money shape, but 5m flow is under pace, the 27-copy Kibo field splits the crowd, and the theme's volume is fading. Blocker: flow below pace. (V1, V6)  
+  CA `7XSYaJygcuNe6Q3kPvwsJpg4ZrFL1AEUFb8kCuzppump`
 - 08:12Z JOB (MIGRATED, $1,715,826 mcap, $3,788 5m vol): REJECT, Bundles: 1 linked wallet cluster(s) hold 22.5% of supply (>20%) (V17)  
   CA `9Pq7aLAbhDG2tTnS22cm6kuysZVcZpLFE368HWuypump`
 - 08:10Z Aliene (FINAL_STRETCH, $19,681 mcap, $17,973 5m vol): PASS at conviction 3, PASS — vamp field, and it isn't the leader. ALIENE carries $333k of the theme's 5m flow, and this one is up 49% in 5m on 4x its hourly pace. Chasing a spike with no socials (V1, V6, V13).  
@@ -94,8 +96,6 @@ Updated 2026-11-27T08:18:39Z (paper trading, never real money)
   CA `7XSYaJygcuNe6Q3kPvwsJpg4ZrFL1AEUFb8kCuzppump`
 - 06:55Z 牛回 (no setup, $14,184 mcap, $40,394 5m vol): REJECT, No setup fits: not Final Stretch, not a migrated runner, not a healthy dip  
   CA `73Hqqyqq9T5AkzHoNsmuLVcw3RDknJVvZDaXwoyc7G3J`
-- 06:55Z Snowball (MIGRATED, $573,850 mcap, $5,138 5m vol): PASS at conviction 2, PASS. Bottom buy with no live story, buy ratio under half, and a holder "roll" gimmick that reads like a farm. (V1, V13)  
-  CA `9TKbd3VFaMSXsEAicD9JVQWpWwAoLi4fSgWmZL2cpump`
 
 ## What its skips did next (last 48h)
 A skip "ran" if the coin reached the first target (1.5x) from the skip price before a 20% drop, "dumped" if the drop came first. Sampled every 10 min, followed 6h.
@@ -113,7 +113,7 @@ A skip "ran" if the coin reached the first target (1.5x) from the skip price bef
     CA `ALLherSTscpAErYo5Jja3ysVocaa2oeZkUvgmvhZpump`
   - ran: Slapcat up to 1.61x  
     CA `AqNAfcg8AkidVLLE7Tszh2PjUGzgaKvJskDXQXRHpump`
-- flow below pace: blocked 42, ran 5, dumped 30, flat 4, open 3 (saving losses: keep it)
+- flow below pace: blocked 42, ran 5, dumped 29, flat 4, open 4 (saving losses: keep it)
   - ran: BASKET up to 1.55x  
     CA `3Tg6YnNrfPdFfsY14MaNsDMWLseAyrUDS3myJtbaJN6f`
   - ran: BIAO up to 1.51x  
@@ -197,13 +197,13 @@ No edge yet. All 276 settled coins lost money after costs under the simple plan:
 Not quiet, but most of the movers are a graveyard. Two themes are fading: fresh pump.fun animal, mascot and joke tickers (Niu Hui the cow, Stickman, ballsackdorkl) that spiked and dumped 70-90% inside the hour, and famous-name tickers (Bitcoin, Upline) that already rolled over, at $24 and $3 of 5m volume. Rising with real flow and mostly buyers: Kibo ($164k cap, 2.2h old, $16k 5m, 65% buys), SWIPE ($9k cap, $9.8k 5m, 60% buys, 6 min old) and NOTHING ($8k cap, $6.7k 5m, 57% buys, 24 min old, just under the $10k bar). The crawler's Upline and Bitcoin "rising" numbers and its Kibo figures ($5.9k 5m, $32k) don't match the scan, so I'm using the scan data. Setups to research, not buys: Kibo as a MIGRATED candidate only if 5m holds above $10k with buyers above half through a pullback, since it's already up 924% in the hour and I won't chase it; SWIPE and NOTHING as FINAL_STRETCH candidates only if they clear $10k 5m with organic flow, and SWIPE is still a brand-new pair, so no entry yet. Trump dinner headlines aren't showing up in the flow, so I'm not calling that the meta. Holder, dev and bundle checks still have to run on each one before any size. Paper only.
 
 ## Moving most in its scans, last 30 min (1h volume)
-- NOTHING: $83,037 1h vol, $2,816 mcap, -35% 1h  
-  CA `9PBVXxx7Hn72EJttB8X2besqJtbUvE4iN3Cc3ubUpump`
+- Kibo: $161,632 1h vol, $133,537 mcap, +13% 1h  
+  CA `7XSYaJygcuNe6Q3kPvwsJpg4ZrFL1AEUFb8kCuzppump`
 - Aliene: $52,758 1h vol, $19,681 mcap, +571% 1h  
   CA `59J68geN6rWTM9csfPC4h23wV6g9hZ2kzubuvHBApump`
-- SWIPE: $47,499 1h vol, $6,362 mcap, +136% 1h  
+- SWIPE: $50,517 1h vol, $8,863 mcap, +228% 1h  
   CA `Fr2nmNWyYiVDSSXirw1wKSHj4dE2BvvGnN4gfAHcpump`
-- Stickman: $42,389 1h vol, $2,260 mcap, -93% 1h  
-  CA `H8cim5HL7iSqTKhb47TLzwC54Ag7si1V3nob8rwWpump`
-- Atoll: $41,502 1h vol, $9,120 mcap, +58% 1h  
+- NOTHING: $44,347 1h vol, $2,625 mcap, -84% 1h  
+  CA `9PBVXxx7Hn72EJttB8X2besqJtbUvE4iN3Cc3ubUpump`
+- Atoll: $34,201 1h vol, $8,384 mcap, -28% 1h  
   CA `aSRNrUQqrWqvV1Yf25exdxVa3bWk63K7tvzTnNytoLL`
