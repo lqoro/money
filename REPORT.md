@@ -1,13 +1,13 @@
 # Trencher live report
 
-Updated 2026-11-27T10:04:21Z (paper trading, never real money)
+Updated 2026-11-27T10:19:30Z (paper trading, never real money)
 
 - Equity: $74.23 (-25.8% vs $100 start)
 - Closed trades: 22, 3 wins
 - Fees paid: $14.78 (axiom $2.81, network $9.18, pool $2.66), plus $4.15 lost to slippage
 - New trades: WATCH-ONLY (scans and decides, buys nothing)
-- Brain: subscription, claude-haiku-5-5 for routine calls, claude-opus-5-5 for the daily review; 378 routine calls and 2 plan-limit hits in 48h
-- Watch log: 56 coins being followed, 4161 filed, 0 would-buys (6h follow, sampled every 2 min)
+- Brain: subscription, claude-haiku-5-5 for routine calls, claude-opus-5-5 for the daily review; 378 routine calls and 4 plan-limit hits in 48h
+- Watch log: 49 coins being followed, 4170 filed, 0 would-buys (6h follow, sampled every 2 min)
 
 ## Scorecard (after fees)
 - 22 closed, 3 won (14%), net $-25.79
@@ -73,9 +73,15 @@ Updated 2026-11-27T10:04:21Z (paper trading, never real money)
   CA `H4gHnZ3NCU7Z9XQwGX6YYJNyieGEW8pqwGRUcdSxpump`
 
 ## Last scan
-- 10:03Z: 6 coins, 6 with pairs, 1 passed the market filters, 1 researched
+- 10:18Z: 3 coins, 3 with pairs, 0 passed the market filters, 0 researched
 
 ## Coins it looked at, and why it passed
+- 10:12Z Snowball (MIGRATED, $842,166 mcap, $2,971 5m vol): SKIP, passed the checklist, but the brain was paced or paused  
+  CA `9TKbd3VFaMSXsEAicD9JVQWpWwAoLi4fSgWmZL2cpump`
+- 10:10Z JOB (MIGRATED, $1,661,624 mcap, $3,906 5m vol): REJECT, Bundles: 1 linked wallet cluster(s) hold 22.5% of supply (>20%) (V17)  
+  CA `9Pq7aLAbhDG2tTnS22cm6kuysZVcZpLFE368HWuypump`
+- 10:07Z Snowball (MIGRATED, $819,766 mcap, $2,329 5m vol): SKIP, passed the checklist, but the brain was paced or paused  
+  CA `9TKbd3VFaMSXsEAicD9JVQWpWwAoLi4fSgWmZL2cpump`
 - 10:03Z Suki (no setup, $28,674 mcap, $3,821 5m vol): REJECT, No setup fits: not Final Stretch, not a migrated runner, not a healthy dip  
   CA `Ejbu9xDBN3XuDiLj9A61sctiVzYocF3TpKojiBPvpump`
 - 09:58Z Suki (FINAL_STRETCH, $25,678 mcap, $10,417 5m vol): SKIP, passed the checklist, but the brain was paced or paused  
@@ -90,12 +96,6 @@ Updated 2026-11-27T10:04:21Z (paper trading, never real money)
   CA `8rjgC1GsBo4fwuXjq7Hy12SAFxgFxbtSJJSFBYkVpump`
 - 09:35Z CBUCKS (MIGRATED, $7,703,409 mcap, $10,477 5m vol): REJECT, Top 10 hold 25.6% ex-pool (>25%) (V13)  
   CA `DtcicPCKTKeAh7TDEzTym3hXeoHAoMiBdYJhMYxZpump`
-- 09:22Z Snowball (MIGRATED, $851,629 mcap, $4,680 5m vol): PASS at conviction 2, PASS: flow below pace, not the vamp leader, 5m volume $4.7k under the $10k bar. Blocker: "flow below pace" (V1, V6).  
-  CA `9TKbd3VFaMSXsEAicD9JVQWpWwAoLi4fSgWmZL2cpump`
-- 08:36Z Snowball (MIGRATED, $692,138 mcap, $5,615 5m vol): PASS at conviction 3, PASS — target too close (first resistance 1.19x), sells outnumber buys 0.41, 5m flow $5.6k under the $10k bar, and the theme runs at 0.37x its hourly pace. Pumped 3947% in 24h with a 1.6-day-old domain. A crowded copy field, not a setup (V1, V6, V13).  
-  CA `9TKbd3VFaMSXsEAicD9JVQWpWwAoLi4fSgWmZL2cpump`
-- 08:29Z Kibo (MIGRATED, $136,247 mcap, $8,937 5m vol): PASS at conviction 4, PASS: Kibo has the right money shape, but 5m flow is under pace, the 27-copy Kibo field splits the crowd, and the theme's volume is fading. Blocker: flow below pace. (V1, V6)  
-  CA `7XSYaJygcuNe6Q3kPvwsJpg4ZrFL1AEUFb8kCuzppump`
 
 ## What its skips did next (last 48h)
 A skip "ran" if the coin reached the first target (1.5x) from the skip price before a 20% drop, "dumped" if the drop came first. Sampled every 10 min, followed 6h.
@@ -120,19 +120,21 @@ A skip "ran" if the coin reached the first target (1.5x) from the skip price bef
     CA `32rBxcFjCFnyqZ41CEPM5AL67X1dcw8w83vZt6Kxpump`
   - ran: Hoppy up to 1.76x  
     CA `CFX1gH7CKYwqYXrfDkS2MUxJcEhs8PT63DyRA1chpump`
-- near the high / chasing: blocked 41, ran 6, dumped 32, flat 3, open 0 (saving losses: keep it)
+- near the high / chasing: blocked 39, ran 6, dumped 30, flat 3, open 0 (saving losses: keep it)
   - ran: SNOWCUMBRR up to 2.36x  
     CA `Gf9wm93TTDpbPC467Eio5Vc42Kr6MAomUD172drWpump`
   - ran: HEYOS up to 1.91x  
     CA `A88p1LcHisrx3TuTwUGVrLtc1LBTUPZUfVgaCGutAFaK`
   - ran: Nala up to 1.64x  
     CA `FeBG8AEG4j7LT7xQF38gPXQFBRBtXBTNzhZjSa3bpump`
-- bundles over the line: blocked 22, ran 2, dumped 14, flat 5, open 1 (saving losses: keep it)
+- bundles over the line: blocked 22, ran 3, dumped 14, flat 4, open 1 (saving losses: keep it)
   - ran: WIENER up to 1.59x  
     CA `8BDkDfj3ZUvcG9caGzF2XnHfwg7K6fjfKKDvX6SCpump`
   - ran: Dragon up to 1.55x  
     CA `cg3HaDWhAKFfj9aq79TWUBgmxfs4G7byQ7feaxnpump`
-- RugCheck danger: blocked 22, ran 1, dumped 19, flat 1, open 1 (saving losses: keep it)
+  - ran: monky up to 96.37x  
+    CA `At5hmwDn4YgPDoic1UN7zMdTtCoiXJsMhnKaoazEpump`
+- RugCheck danger: blocked 22, ran 1, dumped 19, flat 2, open 0 (saving losses: keep it)
   - ran: Bababoi up to 2.17x  
     CA `28B9kDm6XtQNqAkzuiKH3Zu1L8cVM6SLW4iRamFspump`
 - falling knife (code): blocked 16, ran 2, dumped 13, flat 1, open 0 (saving losses: keep it)
@@ -197,13 +199,13 @@ No edge yet. All 276 settled coins lost money after costs under the simple plan:
 Not quiet, but thin. Most scan movers are sub-$15k pump.fun launches with 5m volume under $1k, and none clears the $10k 5m bar; Kibo is closest at $9.6k with 66% buys. Three themes show up. Fading: fresh animal and mascot tickers (Wizard Cat, Cate Inu, Snowball) with 5m flow in the hundreds to low thousands. Fading and dumping: launcher and utility-named launches under 2h old (Spark Launcher -62%, Launch Nothing -53%, Swipe -50%, atoll markets -32% in the hour, 5m volume mostly under $1k). Dead weight: old famous-name tickers (BRUH, CBUCKS) at $5-7M caps, flat at about +1% on roughly $1.3k 5m. Rising: igloo, +155% in its first ~12 minutes on $5.4k 5m with 55% buys, which is a new pair, so watch only. Setups to research, not buys: Kibo as a MIGRATED candidate only if 5m holds above $10k with buyers above half on a pullback. The crawler's Kibo, SWIPE and NOTHING figures conflict with the scan (Kibo $16k 5m and +924% vs scan $9.6k and +12.5%; SWIPE and NOTHING look far weaker in the scan), so I used the scan and do not name SWIPE or NOTHING as setups. Trump dinner headlines are not in the flow, so that is not the meta. Holder, dev and bundle checks still have to run on any coin before size. Paper only.
 
 ## Moving most in its scans, last 30 min (1h volume)
-- pear: $23,905 1h vol, $2,114 mcap, -70% 1h  
-  CA `HFj3vfGpB8nqSrCUXwGvd2VbehVUermFcFDHecwhpump`
-- CBUCKS: $20,978 1h vol, $7,846,876 mcap, +16% 1h  
-  CA `DtcicPCKTKeAh7TDEzTym3hXeoHAoMiBdYJhMYxZpump`
-- HUSH: $19,762 1h vol, $7,610 mcap, +14% 1h  
-  CA `HhVNCcJ1vVhe7jVw2HrqutmyHzDw9wwnztjQgcFmpump`
-- JOB: $18,114 1h vol, $1,730,682 mcap, +7% 1h  
+- Snowball: $47,099 1h vol, $834,660 mcap, -4% 1h  
+  CA `9TKbd3VFaMSXsEAicD9JVQWpWwAoLi4fSgWmZL2cpump`
+- JOB: $20,867 1h vol, $1,633,163 mcap, -1% 1h  
   CA `9Pq7aLAbhDG2tTnS22cm6kuysZVcZpLFE368HWuypump`
-- Vsc: $11,479 1h vol, $6,223 mcap, -50% 1h  
+- HUSH: $15,049 1h vol, $7,756 mcap, -13% 1h  
+  CA `HhVNCcJ1vVhe7jVw2HrqutmyHzDw9wwnztjQgcFmpump`
+- BRUH: $12,274 1h vol, $5,576,389 mcap, -1% 1h  
+  CA `PgFtGGquvnv2zEkjG2N2QPvBTBrafuExGYEqahRpump`
+- Vsc: $12,121 1h vol, $6,214 mcap, -47% 1h  
   CA `Ahc2DBPw4kyooS2D4XHdFmybbUmP1PR2vJs1gKVipump`
