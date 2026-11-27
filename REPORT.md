@@ -1,13 +1,13 @@
 # Trencher live report
 
-Updated 2026-11-27T22:41:10Z (paper trading, never real money)
+Updated 2026-11-27T22:56:18Z (paper trading, never real money)
 
 - Equity: $74.23 (-25.8% vs $100 start)
 - Closed trades: 22, 3 wins
 - Fees paid: $14.78 (axiom $2.81, network $9.18, pool $2.66), plus $4.15 lost to slippage
 - New trades: WATCH-ONLY (scans and decides, buys nothing)
-- Brain: subscription, claude-haiku-5-5 for routine calls, claude-opus-5-5 for the daily review; 392 routine calls and 9 plan-limit hits in 48h
-- Watch log: 79 coins being followed, 4278 filed, 0 would-buys (6h follow, sampled every 2 min)
+- Brain: subscription, claude-haiku-5-5 for routine calls, claude-opus-5-5 for the daily review; 393 routine calls and 9 plan-limit hits in 48h
+- Watch log: 83 coins being followed, 4282 filed, 0 would-buys (6h follow, sampled every 2 min)
 
 ## Scorecard (after fees)
 - 22 closed, 3 won (14%), net $-25.79
@@ -73,53 +73,53 @@ Updated 2026-11-27T22:41:10Z (paper trading, never real money)
   CA `H4gHnZ3NCU7Z9XQwGX6YYJNyieGEW8pqwGRUcdSxpump`
 
 ## Last scan
-- 22:40Z: 5 coins, 5 with pairs, 0 passed the market filters, 0 researched
+- 22:55Z: 4 coins, 4 with pairs, 0 passed the market filters, 0 researched
 
 ## Coins it looked at, and why it passed
+- 22:54Z 100Xmas (FINAL_STRETCH, $19,288 mcap, $6,705 5m vol): REJECT, Top 10 hold 27.8% ex-pool (>25%) (V13)  
+  CA `9BADLCimdmPqKPHbTrpsrkJsvNTSpppNbTSB2smgpump`
+- 22:54Z Compute (FINAL_STRETCH, $16,993 mcap, $26,086 5m vol): REJECT, Dev holds 2.1% (>1%) (V13, V17)  
+  CA `5U1gFupX5cvS8gqMm9DTh2bNcqUehc2H4GP3Skgxpump`
+- 22:53Z Fireball (MIGRATED, $753,522 mcap, $4,553 5m vol): PASS at conviction 3, PASS: flow below pace, no catalyst, and the fireball theme is cooling. Blocker "flow below pace". Fireball is a crowded copy field with a 0.4-day-old site that doesn't show this CA. (V1, V6, V13)  
+  CA `B9wbjDJ4FbHMsZmoXAkJSTAwuePaJUKbySvnK5zApump`
+- 22:52Z Sol (MIGRATED, $101,135 mcap, $104,271 5m vol): PASS at conviction 2, PASS: a generic "Solana" ticker "Sol" in an 18-copy vamp field, dumping 44% in 5 minutes with no printed higher low and no story behind it. Blocker: "falling knife / no higher low" and "no catalyst." (V1, V6, V13)  
+  CA `Xb6V46U9hHHxiJnoAFxiEqEh59owzdt1ZL9q5zpVSoL`
+- 22:50Z MAYA (MIGRATED, $2,885,752 mcap, $64,277 5m vol): PASS, PASS — brain unavailable, not trading blind.  
+  CA `H2PjSbA2365uxBUJ3EBePSm67AYPuRMgcyswBnrVpump`
+- 22:46Z SILLYBANDZ (FINAL_STRETCH, $18,749 mcap, $6,031 5m vol): PASS at conviction 3, PASS: chasing spike. Up 35% on 5m and 103% on 1h, with the peak printed 15 minutes ago. Wait for a retrace and a printed higher low (V1, V6).  
+  CA `55P15koxvyEyzWrNA78rcBPt7Ag5Scn8iFMSY6mxpump`
+- 22:45Z JOB (MIGRATED, $2,203,991 mcap, $2,925 5m vol): REJECT, Bundles: 1 linked wallet cluster(s) hold 22.5% of supply (>20%) (V17)  
+  CA `9Pq7aLAbhDG2tTnS22cm6kuysZVcZpLFE368HWuypump`
+- 22:42Z CI (DIP, $158,421 mcap, $11,755 5m vol): PASS at conviction 3, PASS — 28 copies of the same ticker, a saw-tooth chart, and no catalyst to buy into. Blocker: "no catalyst / theme volume below pace." (V1, V13)  
+  CA `9SMvQzDmGMpACAqET5PAmwUtHfBYdQ5a7SPLfQa4pump`
 - 22:34Z MoonBoy (DIP, $313,904 mcap, $13,307 5m vol): REJECT, Dip with fading attention is a falling knife, not a dip (5m at 0.28x the hour's pace, under 0.6x)  
   CA `GXjSWDoMQkDEbhon9ALxz8chUUsVKg3x8V3NajjDpump`
 - 22:30Z PumpMas (MIGRATED, $177,556 mcap, $2,990 5m vol): REJECT, Top 10 hold 26.6% ex-pool (>25%) (V13)  
   CA `EwUVBpdM5vw1CJHRMSLywzVjyQSJZpy6qboxEPBKpump`
-- 22:27Z WINTER (MIGRATED, $91,935 mcap, $2,915 5m vol): REJECT, Bundles: 1 linked wallet cluster(s) hold 51.6% of supply (>20%) (V17)  
-  CA `7dc3gFoyuDCPWjrfZfX99uasJJSceAJx5ucE8bDGpump`
-- 22:16Z ZERO (MIGRATED, $846,501 mcap, $7,211 5m vol): REJECT, Top 10 hold 32.9% ex-pool (>25%) (V13)  
-  CA `3WsqUNArNSh5pYt6eTKbQ7uUJDgkPtFEA2XFvdEWpump`
-- 22:13Z TripleH (FINAL_STRETCH, $16,777 mcap, $2,700 5m vol): PASS at conviction 2, PASS: chasing a spike in a dead copy theme. 5m flow is 0.46x the hourly pace and the theme runs at 0.03x across 26 copies. Blocker: "chasing spike" plus "flow below pace". (V1, V6)  
-  CA `3F1HinAgeQRo3KRMM5fMjd4uDVWEpHARKgAuuX1QFw4g`
-- 22:09Z Fireball (MIGRATED, $821,506 mcap, $5,402 5m vol): PASS at conviction 2, PASS. Mid-range entry on a copied ticker with a 10-hour-old site that doesn't show this CA. Blocker: no catalyst for a bottom buy (V1, V13).  
-  CA `B9wbjDJ4FbHMsZmoXAkJSTAwuePaJUKbySvnK5zApump`
-- 22:05Z PAIRING (FINAL_STRETCH, $15,024 mcap, $15,665 5m vol): PASS at conviction 2, PASS — 13-minute-old pump.fun copycat in a 4-coin same-ticker field, website is a day old and doesn't show this CA, top 10 at 15.9%, buys only 52% of 5m flow. No catalyst and no rising narrative. Farm until proven otherwise (V1, V3, V6, V13).  
-  CA `GVaUm3JTJuzA8rv8JBGBQK1BbF8ruiM2sRxwDGyMpump`
-- 22:04Z MAYA (MIGRATED, $1,401,934 mcap, $4,938 5m vol): REJECT, Dev holds 1.1% (>1%) (V13, V17)  
-  CA `H2PjSbA2365uxBUJ3EBePSm67AYPuRMgcyswBnrVpump`
-- 21:55Z CI (DIP, $85,340 mcap, $8,850 5m vol): REJECT, Dip with fading attention is a falling knife, not a dip (5m at 0.55x the hour's pace, under 0.6x)  
-  CA `9SMvQzDmGMpACAqET5PAmwUtHfBYdQ5a7SPLfQa4pump`
-- 21:49Z MoonBoy (MIGRATED, $582,714 mcap, $21,066 5m vol): PASS at conviction 2, PASS — MoonBoy's 5m flow is 0.11x its hourly pace, and the theme is split across 14 copies. The leader has no buyers right now (V1, V6, V3).  
-  CA `GXjSWDoMQkDEbhon9ALxz8chUUsVKg3x8V3NajjDpump`
 
 ## What its skips did next (last 48h)
 A skip "ran" if the coin reached the first target (1.5x) from the skip price before a 20% drop, "dumped" if the drop came first. Sampled every 10 min, followed 6h.
-- top 10 over 25%: blocked 53, ran 11, dumped 37, flat 2, open 3 (saving losses: keep it)
+- top 10 over 25%: blocked 53, ran 10, dumped 37, flat 2, open 4 (saving losses: keep it)
   - ran: enu up to 1.82x  
     CA `9msLfYfXBrSbrApCZAPuPMCNmPqNtEL1VPKh1AEYpump`
-  - ran: ð up to 1.65x  
-    CA `GeUnGPLFku8zn1dJUNZpj6VymUxt7A3t9DqRL5WJpump`
   - ran: MONEY up to 1.58x  
     CA `DeACAbp2GMzapB6Z2K8qdkTZupmNbKc6EZx9bnbCpump`
-- near the high / chasing: blocked 43, ran 9, dumped 30, flat 2, open 2 (saving losses: keep it)
-  - ran: enu up to 1.82x  
-    CA `9msLfYfXBrSbrApCZAPuPMCNmPqNtEL1VPKh1AEYpump`
-  - ran: NETHER up to 1.8x  
-    CA `GkL4cJLAL3354wLgS6mZJKKUBVzvUY1FUN47zZNgGWEq`
-  - ran: PPV up to 1.54x  
-    CA `CbGrZ3Q2XxSV2oiZsLkDWW1GFjrqUDAzTH9XwVr1pump`
-- flow below pace: blocked 42, ran 4, dumped 34, flat 3, open 1 (saving losses: keep it)
+  - ran: Legatum up to 2.21x  
+    CA `HkPSDYRcw4uqgRzZMDd5sRnMpE4ungR1K8MRNXnBVtQ2`
+- flow below pace: blocked 43, ran 4, dumped 34, flat 3, open 2 (saving losses: keep it)
   - ran: PAIR up to 2.1x  
     CA `32rBxcFjCFnyqZ41CEPM5AL67X1dcw8w83vZt6Kxpump`
   - ran: Hoppy up to 1.76x  
     CA `CFX1gH7CKYwqYXrfDkS2MUxJcEhs8PT63DyRA1chpump`
   - ran: SpaceXCoin up to 1.52x  
     CA `G2XqmSc8vJpLLwaLVXUeNkxsrhVT8vQ3Pje8MqeDpump`
+- near the high / chasing: blocked 42, ran 9, dumped 28, flat 2, open 3 (saving losses: keep it)
+  - ran: enu up to 1.82x  
+    CA `9msLfYfXBrSbrApCZAPuPMCNmPqNtEL1VPKh1AEYpump`
+  - ran: NETHER up to 1.8x  
+    CA `GkL4cJLAL3354wLgS6mZJKKUBVzvUY1FUN47zZNgGWEq`
+  - ran: PPV up to 1.54x  
+    CA `CbGrZ3Q2XxSV2oiZsLkDWW1GFjrqUDAzTH9XwVr1pump`
 - too new / sniping: blocked 42, ran 6, dumped 36, flat 0, open 0 (saving losses: keep it)
   - ran: Slapcat up to 1.61x  
     CA `AqNAfcg8AkidVLLE7Tszh2PjUGzgaKvJskDXQXRHpump`
@@ -134,17 +134,15 @@ A skip "ran" if the coin reached the first target (1.5x) from the skip price bef
     CA `cg3HaDWhAKFfj9aq79TWUBgmxfs4G7byQ7feaxnpump`
   - ran: monky up to 96.37x  
     CA `At5hmwDn4YgPDoic1UN7zMdTtCoiXJsMhnKaoazEpump`
-- falling knife (code): blocked 22, ran 3, dumped 19, flat 0, open 0 (saving losses: keep it)
+- falling knife (code): blocked 21, ran 2, dumped 19, flat 0, open 0 (saving losses: keep it)
   - ran: MONEY up to 1.58x  
     CA `DeACAbp2GMzapB6Z2K8qdkTZupmNbKc6EZx9bnbCpump`
   - ran: Split up to 1.54x  
     CA `HAP9FcXubD88SjRHMY1kr5iukpRZgeMAgCBam3Vtpump`
-  - ran: CI up to 2.43x  
-    CA `9SMvQzDmGMpACAqET5PAmwUtHfBYdQ5a7SPLfQa4pump`
 - RugCheck danger: blocked 13, ran 1, dumped 10, flat 2, open 0 (saving losses: keep it)
   - ran: Bababoi up to 2.17x  
     CA `28B9kDm6XtQNqAkzuiKH3Zu1L8cVM6SLW4iRamFspump`
-- falling knife / no higher low: blocked 11, ran 3, dumped 7, flat 1, open 0 (saving losses: keep it)
+- falling knife / no higher low: blocked 12, ran 3, dumped 7, flat 1, open 1 (saving losses: keep it)
   - ran: Zero up to 2.07x  
     CA `DTSkmo3sCCKLCh91dJLiWCpwcKtK3yDBZMqZGSV1pump`
   - ran: Maru up to 1.88x  
@@ -201,13 +199,13 @@ No edge after costs, and I'm fairly sure of that. All 250 settled coins averaged
 Meta from scan_movers: animal names are still the loudest theme, but only MAYA (Samoyed, $1.5M, 1h old, +3,687% in an hour, 76% buys) looks fresh, while Cate Inu, DogWifJob and Gemma are fading. The live second theme is absurd brainrot names on pump.fun (Silly Bandz +465% 1h, HIlbert Hilbert Hilbert Sahur +195%, Pairing Markets at 0.2h old with $11.8k 5m), with Fireball ($815k, 8h old, 78% buys, +57% 1h) carrying the Ball/fire joke. Finance-joke coins are dying (Commodity Markets -92%, Cartoon Money at 1,252h with $938 5m). Trump-dinner, hack and Christmas headlines don't show up on this tape, so I'm not calling them the meta; Christmass Inu and Fullball come only from the crawler and are unverified here. Setups to research, not buy: Pairing Markets is the only mover clearing the $10k 5m bar on a pump.fun curve, so it's a watch for a pre-bond dump and a real buyer base (V1), not a snipe (V6). MAYA and Fireball fail volume right now ($6.6k and $4.6k against $10k, V6), so I'd wait for a dip with buyers stepping back in. Silly Bandz at $9.7k 5m is a near-miss to watch. Holder, dev and bundle checks still run on each before anything. Paper only, not financial advice.
 
 ## Moving most in its scans, last 30 min (1h volume)
+- Sol: $1,214,693 1h vol, $101,135 mcap, +46% 1h  
+  CA `Xb6V46U9hHHxiJnoAFxiEqEh59owzdt1ZL9q5zpVSoL`
 - MoonBoy: $566,487 1h vol, $313,904 mcap, -37% 1h  
   CA `GXjSWDoMQkDEbhon9ALxz8chUUsVKg3x8V3NajjDpump`
-- ZERO: $131,874 1h vol, $854,581 mcap, -1% 1h  
-  CA `3WsqUNArNSh5pYt6eTKbQ7uUJDgkPtFEA2XFvdEWpump`
-- CM: $91,870 1h vol, $1,945 mcap, -94% 1h  
-  CA `9BAwZLtzdqKNGvfVLtvkneeJRcpwseTfsq7dL1tPpump`
-- TripleH: $71,119 1h vol, $16,777 mcap, +195% 1h  
-  CA `3F1HinAgeQRo3KRMM5fMjd4uDVWEpHARKgAuuX1QFw4g`
+- MAYA: $527,391 1h vol, $3,040,952 mcap, +179% 1h  
+  CA `H2PjSbA2365uxBUJ3EBePSm67AYPuRMgcyswBnrVpump`
+- CI: $138,661 1h vol, $158,421 mcap, +104% 1h  
+  CA `9SMvQzDmGMpACAqET5PAmwUtHfBYdQ5a7SPLfQa4pump`
 - WINTER: $59,869 1h vol, $91,935 mcap, -1% 1h  
   CA `7dc3gFoyuDCPWjrfZfX99uasJJSceAJx5ucE8bDGpump`
