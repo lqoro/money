@@ -1,13 +1,13 @@
 # Trencher live report
 
-Updated 2026-11-27T20:55:23Z (paper trading, never real money)
+Updated 2026-11-27T21:10:27Z (paper trading, never real money)
 
 - Equity: $74.23 (-25.8% vs $100 start)
 - Closed trades: 22, 3 wins
 - Fees paid: $14.78 (axiom $2.81, network $9.18, pool $2.66), plus $4.15 lost to slippage
 - New trades: WATCH-ONLY (scans and decides, buys nothing)
 - Brain: subscription, claude-haiku-5-5 for routine calls, claude-opus-5-5 for the daily review; 396 routine calls and 9 plan-limit hits in 48h
-- Watch log: 77 coins being followed, 4258 filed, 0 would-buys (6h follow, sampled every 2 min)
+- Watch log: 77 coins being followed, 4260 filed, 0 would-buys (6h follow, sampled every 2 min)
 
 ## Scorecard (after fees)
 - 22 closed, 3 won (14%), net $-25.79
@@ -73,9 +73,13 @@ Updated 2026-11-27T20:55:23Z (paper trading, never real money)
   CA `H4gHnZ3NCU7Z9XQwGX6YYJNyieGEW8pqwGRUcdSxpump`
 
 ## Last scan
-- 20:54Z: 4 coins, 4 with pairs, 0 passed the market filters, 0 researched
+- 21:09Z: 8 coins, 8 with pairs, 0 passed the market filters, 0 researched
 
 ## Coins it looked at, and why it passed
+- 21:03Z MoonBoy (MIGRATED, $801,089 mcap, $272,283 5m vol): PASS at conviction 3, PASS — MoonBoy is 7% off its high after a +46% 5m candle at 3.1x hourly pace, and it's 24 minutes old. Chasing the spike. Blockers: chasing, chasing spike, too new. (V1, V6)  
+  CA `GXjSWDoMQkDEbhon9ALxz8chUUsVKg3x8V3NajjDpump`
+- 20:59Z Fullball (DIP, $78,647 mcap, $23,664 5m vol): PASS at conviction 2, PASS: the Ball theme is at 0.29x its hourly pace, no catalyst, and the 5m is still falling -21% after a +277% hour. A pump-then-dump shape, not a bottom (V6, V13).  
+  CA `GdDpHWwrRLDHR2soP75sEtqzDzY1rkATuVszAHv5pump`
 - 20:53Z JOB (MIGRATED, $2,068,697 mcap, $2,181 5m vol): REJECT, Bundles: 1 linked wallet cluster(s) hold 22.5% of supply (>20%) (V17)  
   CA `9Pq7aLAbhDG2tTnS22cm6kuysZVcZpLFE368HWuypump`
 - 20:52Z FoMo (FINAL_STRETCH, $17,009 mcap, $7,155 5m vol): PASS at conviction 2, PASS: FoMo is a copy in a 22-coin gorilla field, not the leader, and it spiked +90% in 5m with $7k flow. Blocker "split crowd" plus "chasing spike" (V1, V3, V6).  
@@ -92,10 +96,6 @@ Updated 2026-11-27T20:55:23Z (paper trading, never real money)
   CA `DtcicPCKTKeAh7TDEzTym3hXeoHAoMiBdYJhMYxZpump`
 - 20:23Z Commotitty (MIGRATED, $258,347 mcap, $11,996 5m vol): REJECT, Top 10 hold 56.0% ex-pool (>25%) (V13)  
   CA `GzdUV4xe5Rmt34iNBoNKBzf4t8b8y3Pigu3iRcT8pump`
-- 20:23Z HOLLER (FINAL_STRETCH, $23,667 mcap, $14,134 5m vol): PASS at conviction 3, PASS: chasing spike on a 1038% hour, bonding curve at 80%, no catalyst. Pass. (V1, V6)  
-  CA `31BkktjuXPzqLYdHifaBhn56SHzygimsf9T4XoUwvVD4`
-- 20:20Z CINU (MIGRATED, $220,927 mcap, $2,184 5m vol): PASS at conviction 3, PASS — no breakout, no printed higher low, and the project site shows a different CA and a different X handle. One of 23 same-ticker copies, with zero radar mentions. Blockers: "no breakout", "no higher low", "vamp field". (V1, V3, V13)  
-  CA `CvXQ9qEriGgTbMWyF8L1U7oqn9ev8A49N1dzNE8cpump`
 
 ## What its skips did next (last 48h)
 A skip "ran" if the coin reached the first target (1.5x) from the skip price before a 20% drop, "dumped" if the drop came first. Sampled every 10 min, followed 6h.
@@ -106,21 +106,21 @@ A skip "ran" if the coin reached the first target (1.5x) from the skip price bef
     CA `GeUnGPLFku8zn1dJUNZpj6VymUxt7A3t9DqRL5WJpump`
   - ran: MONEY up to 1.58x  
     CA `DeACAbp2GMzapB6Z2K8qdkTZupmNbKc6EZx9bnbCpump`
-- flow below pace: blocked 46, ran 4, dumped 37, flat 3, open 2 (saving losses: keep it)
+- flow below pace: blocked 47, ran 5, dumped 37, flat 3, open 2 (saving losses: keep it)
   - ran: PAIR up to 2.1x  
     CA `32rBxcFjCFnyqZ41CEPM5AL67X1dcw8w83vZt6Kxpump`
   - ran: Hoppy up to 1.76x  
     CA `CFX1gH7CKYwqYXrfDkS2MUxJcEhs8PT63DyRA1chpump`
   - ran: SpaceXCoin up to 1.52x  
     CA `G2XqmSc8vJpLLwaLVXUeNkxsrhVT8vQ3Pje8MqeDpump`
-- too new / sniping: blocked 43, ran 6, dumped 36, flat 0, open 1 (saving losses: keep it)
+- too new / sniping: blocked 44, ran 6, dumped 36, flat 0, open 2 (saving losses: keep it)
   - ran: Slapcat up to 1.61x  
     CA `AqNAfcg8AkidVLLE7Tszh2PjUGzgaKvJskDXQXRHpump`
   - ran: STUDS up to 2.35x  
     CA `34J9VrBeJ2dWActyAMpoNBKvoxZCqQz3SivmnnmSTUds`
   - ran: 2 up to 1.69x  
     CA `HkywsKMf5FDj7QpgRE3BoE2nJqJauxEVbGjpnYe6pump`
-- near the high / chasing: blocked 42, ran 8, dumped 29, flat 2, open 3 (saving losses: keep it)
+- near the high / chasing: blocked 42, ran 9, dumped 29, flat 2, open 2 (saving losses: keep it)
   - ran: enu up to 1.82x  
     CA `9msLfYfXBrSbrApCZAPuPMCNmPqNtEL1VPKh1AEYpump`
   - ran: NETHER up to 1.8x  
@@ -134,9 +134,7 @@ A skip "ran" if the coin reached the first target (1.5x) from the skip price bef
     CA `cg3HaDWhAKFfj9aq79TWUBgmxfs4G7byQ7feaxnpump`
   - ran: monky up to 96.37x  
     CA `At5hmwDn4YgPDoic1UN7zMdTtCoiXJsMhnKaoazEpump`
-- falling knife (code): blocked 22, ran 3, dumped 19, flat 0, open 0 (saving losses: keep it)
-  - ran: Investor up to 1.58x  
-    CA `J9eBkCb4UtquAMQqB6duwBmR99fFSMoTnDcaMB9Wpump`
+- falling knife (code): blocked 20, ran 2, dumped 18, flat 0, open 0 (saving losses: keep it)
   - ran: MONEY up to 1.58x  
     CA `DeACAbp2GMzapB6Z2K8qdkTZupmNbKc6EZx9bnbCpump`
   - ran: Split up to 1.54x  
@@ -203,13 +201,13 @@ No edge after costs, and I'm fairly sure of that. All 250 settled coins averaged
 Meta, from the scan. I'm not using the crawler summary's numbers (VolumeBall $13.6k, FARMCOIN $35k, VICAT, REINDEER, TOGO, CELL, IceBall): none of them appear in the movers JSON. Two themes are moving: animal names (BTCAT, dawg, CINU, Wibbit, JOB) and the Ball pair (Fullball live at $94k mcap, 60% buys, +215% 1h; VolumeBall down 65%). A second cluster of one-word joke and utility names (HOLLER, Commotitty, bob says, CMDTY) has real 5m volume and buyers. Rising: BTCAT ($104k 5m, 66% buys, but +1564% in 1h at about 6 minutes old, so chase risk), Commotitty ($12k 5m, 80% buys, $258k mcap), and HOLLER ($13k 5m, 64% buys, still on the pump.fun curve at $21k, so the pre-bond dump is the thing to watch). Fading or dead: FARM, Padlock, Wibbit, LowCap City and BANNER (near-zero 5m volume, no buys), plus VolumeBall. Setups to research, not buy yet: HOLLER (V1 Final Stretch), Commotitty and Fullball (V6/V13 checks first). No mover is hack-named or Trump-linked, so the dinner headlines aren't what's trading. Holder, dev and bundle checks are still open on every one of these. Paper only, not financial advice.
 
 ## Moving most in its scans, last 30 min (1h volume)
-- BTCAT: $365,088 1h vol, $1,325 mcap, -96% 1h  
+- MoonBoy: $1,111,893 1h vol, $807,147 mcap, +1715% 1h  
+  CA `GXjSWDoMQkDEbhon9ALxz8chUUsVKg3x8V3NajjDpump`
+- Fullball: $370,870 1h vol, $71,979 mcap, +245% 1h  
+  CA `GdDpHWwrRLDHR2soP75sEtqzDzY1rkATuVszAHv5pump`
+- BTCAT: $256,214 1h vol, $1,325 mcap, -100% 1h  
   CA `BFFxXi7xD9uhf7fKujN8kJzsmDouP4Y91z1nsPcapump`
-- CMDTY: $201,137 1h vol, $2,229 mcap, -92% 1h  
-  CA `6kqBYaV1BpNNhjYz8w2rQXrRWDBiua9RL6kJqwUbpump`
 - ZERO: $158,715 1h vol, $684,339 mcap, +1766% 1h  
   CA `3WsqUNArNSh5pYt6eTKbQ7uUJDgkPtFEA2XFvdEWpump`
-- WINTER: $147,652 1h vol, $98,547 mcap, +222% 1h  
-  CA `7dc3gFoyuDCPWjrfZfX99uasJJSceAJx5ucE8bDGpump`
 - JOB: $84,419 1h vol, $2,068,697 mcap, -1% 1h  
   CA `9Pq7aLAbhDG2tTnS22cm6kuysZVcZpLFE368HWuypump`
