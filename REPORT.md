@@ -1,13 +1,13 @@
 # Trencher live report
 
-Updated 2026-11-27T13:05:56Z (paper trading, never real money)
+Updated 2026-11-27T13:21:08Z (paper trading, never real money)
 
 - Equity: $74.23 (-25.8% vs $100 start)
 - Closed trades: 22, 3 wins
 - Fees paid: $14.78 (axiom $2.81, network $9.18, pool $2.66), plus $4.15 lost to slippage
 - New trades: WATCH-ONLY (scans and decides, buys nothing)
-- Brain: subscription, claude-haiku-5-5 for routine calls, claude-opus-5-5 for the daily review; 379 routine calls and 9 plan-limit hits in 48h
-- Watch log: 34 coins being followed, 4204 filed, 0 would-buys (6h follow, sampled every 2 min)
+- Brain: subscription, claude-haiku-5-5 for routine calls, claude-opus-5-5 for the daily review; 381 routine calls and 9 plan-limit hits in 48h
+- Watch log: 37 coins being followed, 4205 filed, 0 would-buys (6h follow, sampled every 2 min)
 
 ## Scorecard (after fees)
 - 22 closed, 3 won (14%), net $-25.79
@@ -73,9 +73,17 @@ Updated 2026-11-27T13:05:56Z (paper trading, never real money)
   CA `H4gHnZ3NCU7Z9XQwGX6YYJNyieGEW8pqwGRUcdSxpump`
 
 ## Last scan
-- 13:04Z: 1 coins, 1 with pairs, 0 passed the market filters, 0 researched
+- 13:20Z: 3 coins, 3 with pairs, 1 passed the market filters, 1 researched
 
 ## Coins it looked at, and why it passed
+- 13:20Z ChokingCat (DIP, $72,250 mcap, $44,171 5m vol): REJECT, Bundles: 10 linked wallet cluster(s) hold 100.0% of supply (>20%) (V17)  
+  CA `ExpdNM5YykDnGTmyxCH5B3s7mdWi1cEreDvK6ic8pump`
+- 13:16Z WINSTON (MIGRATED, $32,348 mcap, $12,696 5m vol): PASS at conviction 2, PASS: 84 seconds old, 26 same-name copies, no printed higher low, top 10 at 23.8%. Too new, and nothing to buy yet. (V1, V6, V13)  
+  CA `7Y2CVbnqZRvR5RUvEJ9RQ73fZEfv7ybNcysytAepump`
+- 13:14Z Zhaki (MIGRATED, $73,195 mcap, $19,701 5m vol): REJECT, Dev holds 3.5% (>1%) (V13, V17)  
+  CA `2YAfPhCrGSW82Ra33sWgurXt4dQ29SwXusvUXdJGpump`
+- 13:07Z BRUH (DIP, $5,529,411 mcap, $2,293 5m vol): PASS at conviction 3, PASS: BRUH is a 489h-old, $5.5M legacy parody with 5m flow at $2.3k and sellers in control (29% buys). No printed higher low, no live catalyst, and the radar calls it dead weight. Blocker: "no higher low" plus "no catalyst" on a bottom buy (V1, V6, V13).  
+  CA `PgFtGGquvnv2zEkjG2N2QPvBTBrafuExGYEqahRpump`
 - 13:04Z ChokeCat (FINAL_STRETCH, $19,700 mcap, $2,555 5m vol): PASS at conviction 3, PASS — ChokeCat is the smaller copy in a cat vamp field, sells outnumber buys 31 to 18 on 5m, and the theme is at 0.48x pace with no catalyst. Blocker: split crowd / theme volume below pace (V1, V3, V6).  
   CA `26qFFJBo4F7EjtzCuCbJEdW4v233mY1aMRaw8Y2kpump`
 - 12:50Z DIH (FINAL_STRETCH, $21,640 mcap, $2,521 5m vol): REJECT, Top 10 hold 26.0% ex-pool (>25%) (V13)  
@@ -88,32 +96,24 @@ Updated 2026-11-27T13:05:56Z (paper trading, never real money)
   CA `9TKbd3VFaMSXsEAicD9JVQWpWwAoLi4fSgWmZL2cpump`
 - 12:00Z Salecat (MIGRATED, $67,453 mcap, $10,181 5m vol): REJECT, Bundles: 5 linked wallet cluster(s) hold 84.6% of supply (>20%) (V17)  
   CA `BFLRy1dMqALUz7WFoaXHXdZSJdqEJZnndD7yqz56pump`
-- 11:56Z ChokeCat (FINAL_STRETCH, $20,551 mcap, $6,894 5m vol): REJECT, Top 10 hold 25.5% ex-pool (>25%) (V13)  
-  CA `26qFFJBo4F7EjtzCuCbJEdW4v233mY1aMRaw8Y2kpump`
-- 11:52Z EVOLIQ (FINAL_STRETCH, $15,538 mcap, $9,221 5m vol): PASS at conviction 2, PASS: EVOLIQ is a launchpad selling itself. Named after the platform, 16 minutes old, zero mentions, and the launch wallet can rename it later. Nothing to ride (V1, V13).  
-  CA `GJewwaSYtsKdYmqoinB3LmCVvAD814FdKFWgcR4Kpump`
-- 11:46Z Spread (FINAL_STRETCH, $17,585 mcap, $22,790 5m vol): PASS at conviction 2, PASS: bottom buy with no rising narrative and no catalyst, a 5-copy same-ticker field, and a 0-day "drop" site. Blocker: "no catalyst / narrative dead." (V1, V3, V13)  
-  CA `HQYLt1Ne2xQdknmZjbnTffSKFYX2ZHCkBG3WBJQYpump`
-- 11:44Z DIH (FINAL_STRETCH, $17,392 mcap, $3,270 5m vol): REJECT, Top 10 hold 26.2% ex-pool (>25%) (V13)  
-  CA `3AYshf6BKsM9HVxbPk6vZ3QyWC5H4zTetAANynLrDmmZ`
 
 ## What its skips did next (last 48h)
 A skip "ran" if the coin reached the first target (1.5x) from the skip price before a 20% drop, "dumped" if the drop came first. Sampled every 10 min, followed 6h.
-- top 10 over 25%: blocked 53, ran 9, dumped 40, flat 2, open 2 (saving losses: keep it)
+- top 10 over 25%: blocked 52, ran 10, dumped 39, flat 2, open 1 (saving losses: keep it)
   - ran: ð up to 1.65x  
     CA `GeUnGPLFku8zn1dJUNZpj6VymUxt7A3t9DqRL5WJpump`
   - ran: MONEY up to 1.58x  
     CA `DeACAbp2GMzapB6Z2K8qdkTZupmNbKc6EZx9bnbCpump`
   - ran: Legatum up to 2.21x  
     CA `HkPSDYRcw4uqgRzZMDd5sRnMpE4ungR1K8MRNXnBVtQ2`
-- too new / sniping: blocked 43, ran 6, dumped 37, flat 0, open 0 (saving losses: keep it)
+- too new / sniping: blocked 44, ran 6, dumped 37, flat 0, open 1 (saving losses: keep it)
   - ran: COIN up to 1.85x  
     CA `ALLherSTscpAErYo5Jja3ysVocaa2oeZkUvgmvhZpump`
   - ran: Slapcat up to 1.61x  
     CA `AqNAfcg8AkidVLLE7Tszh2PjUGzgaKvJskDXQXRHpump`
   - ran: STUDS up to 2.35x  
     CA `34J9VrBeJ2dWActyAMpoNBKvoxZCqQz3SivmnnmSTUds`
-- flow below pace: blocked 42, ran 4, dumped 31, flat 6, open 1 (saving losses: keep it)
+- flow below pace: blocked 41, ran 4, dumped 31, flat 5, open 1 (saving losses: keep it)
   - ran: BIAO up to 1.51x  
     CA `As3XtYSstuVdrVyb6sJZZ77Tu8JvjTBg6S6hgPv4pump`
   - ran: PAIR up to 2.1x  
@@ -137,28 +137,28 @@ A skip "ran" if the coin reached the first target (1.5x) from the skip price bef
 - RugCheck danger: blocked 22, ran 1, dumped 19, flat 2, open 0 (saving losses: keep it)
   - ran: Bababoi up to 2.17x  
     CA `28B9kDm6XtQNqAkzuiKH3Zu1L8cVM6SLW4iRamFspump`
-- falling knife (code): blocked 16, ran 2, dumped 12, flat 1, open 1 (saving losses: keep it)
+- falling knife (code): blocked 16, ran 2, dumped 13, flat 1, open 0 (saving losses: keep it)
   - ran: Investor up to 1.58x  
     CA `J9eBkCb4UtquAMQqB6duwBmR99fFSMoTnDcaMB9Wpump`
   - ran: MONEY up to 1.58x  
     CA `DeACAbp2GMzapB6Z2K8qdkTZupmNbKc6EZx9bnbCpump`
-- other: blocked 14, ran 2, dumped 11, flat 1, open 0 (saving losses: keep it)
+- other: blocked 13, ran 2, dumped 11, flat 0, open 0 (saving losses: keep it)
   - ran: SXI up to 2.34x  
     CA `BFWNbSwRodXPTQqrMSCfhznhJwEzY6ERd6MHjWUEpump`
   - ran: Christmas up to 1.89x  
     CA `5hkBYuFQDpAAqemCiVqXCuU6Ya5dqKhtRobzJsg6pump`
-- falling knife / no higher low: blocked 12, ran 3, dumped 5, flat 4, open 0 (mixed)
+- dev share over 1%: blocked 12, ran 2, dumped 7, flat 2, open 1 (saving losses: keep it)
+  - ran: Grinch up to 1.94x  
+    CA `J1b5HnRzmXsYK5akPTFtBR7B4E74JG8eyULodd7ypump`
+  - ran: bolphante up to 1.7x  
+    CA `FVBzzG4ZcAgxSLW1rWjNC9EH9CgEgz1A4puNYexMpump`
+- falling knife / no higher low: blocked 12, ran 3, dumped 5, flat 3, open 1 (mixed)
   - ran: Zero up to 2.07x  
     CA `DTSkmo3sCCKLCh91dJLiWCpwcKtK3yDBZMqZGSV1pump`
   - ran: Maru up to 1.88x  
     CA `FokVFH6mDsazoKbtnUaA2FRMsRbDSwZhNfn17Fdvpump`
   - ran: Hoppy up to 1.76x  
     CA `CFX1gH7CKYwqYXrfDkS2MUxJcEhs8PT63DyRA1chpump`
-- dev share over 1%: blocked 11, ran 2, dumped 7, flat 2, open 0 (saving losses: keep it)
-  - ran: Grinch up to 1.94x  
-    CA `J1b5HnRzmXsYK5akPTFtBR7B4E74JG8eyULodd7ypump`
-  - ran: bolphante up to 1.7x  
-    CA `FVBzzG4ZcAgxSLW1rWjNC9EH9CgEgz1A4puNYexMpump`
 
 ## Daily review (2026-11-27, claude-opus-5-5)
 No edge after costs, and I'm fairly sure of that. All 250 settled coins averaged -12.7% net under the simple plan, and every setup and stage lost money (-12.2% to -15.2%). Before costs the average is still about -3%, because the median coin peaked at only 1.2x. At n=250 the standard error is roughly 2 points, so 'negative' is solid. The gaps between buckets (2-3 points) are noise, especially since the same coin can be logged more than once. The routine model made zero would-buys out of 130 coins it researched, so I can't test whether its buys beat its passes. The coins it passed on (-13.9%) did no worse than the checklist rejects (-11.5%) beyond noise. Passing everything was right for these 24 hours, but a model that never says buy gives the Nov 10 rule test nothing to grade.
@@ -196,16 +196,16 @@ No edge after costs, and I'm fairly sure of that. All 250 settled coins averaged
 - [2026-11-02 20:25] I expected Slingoor, a clean MIGRATED leader with $25k of 5m flow at pace and a 0.77 buy share, to retest its $408k high from $304k. It never went green (0.98x peak) and hit the -20% stop in 2 minutes, a -$2.86 probe. My own thesis admitted there was no printed higher low after a peak only 6 minutes old, so this confirms the money-shape rule: buy share and flow are not structure (V1, V6). Next time a MIGRATED pullback with no higher low above the hourly low is a PASS with blocker "no higher low", not a probe. This is one loss, so it adds no new ban beyond the rule I already have.
 
 ## Meta right now
-Meta right now is cat names and fresh short pump.fun names under about 4h old. PizzaCoin ($11.3k cap, $23k 5m, 58% buys, 6 min old), ChokeCat ($20.6k cap, $6.9k 5m, 64% buys), Evoliq ($15.5k cap, $9.2k 5m, 57% buys) and Salecat ($63.6k cap, $10.9k 5m, but only 48% buys) are the only movers with real flow. Rising: those fresh short names and the cat riffs that still have volume. Fading: animal mascots (Pobby at $391 5m, Wizard Cat at $145 5m) and Nothing, which the scan has at $179 5m with 43% buys, so the crawler's $12.3k Nothing and $24.7k Vault figures don't match this scan (Vault isn't in it at all). Legacy names (BRUH, CBUCKS, JOB, WW) sit at $0.6M to $7M caps with under $1k on 5m, which is dead weight, not a meta. Setups to research, not buy: PizzaCoin only on a pullback that holds $10k+ 5m with buyers over half, since it's up 330% in 1h and can't be chased; ChokeCat on a dip that keeps its volume; Evoliq if 5m stays above $10k with buys over half. Holder, dev and bundle checks haven't run on any of these, so this is a thin, not quiet, market. The Trump dinner headlines aren't in this flow. Paper only, not financial advice.
+Meta, from scan_movers: the real flow is in pump.fun and PumpSwap launches under about 2 hours old with 55-71% buys and $10k+ 5m, led by Baboon Smirk (Zhaki, $73k cap, $19.7k 5m, 59% buys, 18 min old), Winstoncoin ($32k cap, $12.7k 5m, 54% buys, brand new), and Ayo ($14.8k cap, $12k 5m, 55% buys, six min old). Cat names are fading in the scan: Salecat (-97% 1h, zero 5m) and Evoliq (-90% 1h) are dead, and ChokeCat ($20k cap) has 41% buys with sellers in control. The crawler's meta_summary numbers don't match scan_movers (PizzaCoin shows $2.4k cap and -83% 1h, not $11.3k and +330%; Salecat shows $1.8k, not $63.6k), so I'm discarding its figures and trusting the scan; Trump dinner headlines (demand falling) aren't in this flow and don't explain the movers, and legacy names (BRUH, CBUCKS, Snowball) are dead weight under $2.5k 5m. Setups to research, not buy: Baboon Smirk only on a pullback that holds $10k+ 5m with buys over half; Winstoncoin only if its 5m stays above $10k; MintMyGame (71% buys) needs $10k 5m before it's a setup; Ayo is a pass as a snipe (six min old, +580% in an hour, bundle risk). Holder, dev and bundle checks haven't run on any of these, so this is a fast, thin market, not a quiet one. Paper only, not financial advice.
 
 ## Moving most in its scans, last 30 min (1h volume)
-- Salecat: $167,783 1h vol, $2,249 mcap, -95% 1h  
-  CA `BFLRy1dMqALUz7WFoaXHXdZSJdqEJZnndD7yqz56pump`
-- ChokingCat: $101,866 1h vol, $87,696 mcap, +187% 1h  
+- ChokingCat: $370,850 1h vol, $72,250 mcap, +136% 1h  
   CA `ExpdNM5YykDnGTmyxCH5B3s7mdWi1cEreDvK6ic8pump`
-- SAI: $65,741 1h vol, $4,819 mcap, +73% 1h  
+- Salecat: $78,390 1h vol, $1,833 mcap, -97% 1h  
+  CA `BFLRy1dMqALUz7WFoaXHXdZSJdqEJZnndD7yqz56pump`
+- Zhaki: $67,257 1h vol, $73,195 mcap, +141% 1h  
+  CA `2YAfPhCrGSW82Ra33sWgurXt4dQ29SwXusvUXdJGpump`
+- SAI: $64,718 1h vol, $3,533 mcap, -24% 1h  
   CA `661YLyBy7kfmgkGu9Dt3VevjcW1mTme4TKGV3Bx14Gq8`
-- PIZZA: $62,456 1h vol, $2,756 mcap, +5% 1h  
-  CA `BhbBkVqwNAbauKfuKb9j9VC2gEzwS5AvWVuY48Pypump`
-- EVOLIQ: $38,883 1h vol, $2,264 mcap, -89% 1h  
-  CA `GJewwaSYtsKdYmqoinB3LmCVvAD814FdKFWgcR4Kpump`
+- Snowball: $60,014 1h vol, $689,017 mcap, +3% 1h  
+  CA `9TKbd3VFaMSXsEAicD9JVQWpWwAoLi4fSgWmZL2cpump`
