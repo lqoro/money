@@ -1,13 +1,13 @@
 # Trencher live report
 
-Updated 2026-11-27T20:25:12Z (paper trading, never real money)
+Updated 2026-11-27T20:40:18Z (paper trading, never real money)
 
 - Equity: $74.23 (-25.8% vs $100 start)
 - Closed trades: 22, 3 wins
 - Fees paid: $14.78 (axiom $2.81, network $9.18, pool $2.66), plus $4.15 lost to slippage
 - New trades: WATCH-ONLY (scans and decides, buys nothing)
-- Brain: subscription, claude-haiku-5-5 for routine calls, claude-opus-5-5 for the daily review; 396 routine calls and 9 plan-limit hits in 48h
-- Watch log: 75 coins being followed, 4253 filed, 0 would-buys (6h follow, sampled every 2 min)
+- Brain: subscription, claude-haiku-5-5 for routine calls, claude-opus-5-5 for the daily review; 400 routine calls and 9 plan-limit hits in 48h
+- Watch log: 77 coins being followed, 4255 filed, 0 would-buys (6h follow, sampled every 2 min)
 
 ## Scorecard (after fees)
 - 22 closed, 3 won (14%), net $-25.79
@@ -73,9 +73,17 @@ Updated 2026-11-27T20:25:12Z (paper trading, never real money)
   CA `H4gHnZ3NCU7Z9XQwGX6YYJNyieGEW8pqwGRUcdSxpump`
 
 ## Last scan
-- 20:24Z: 7 coins, 7 with pairs, 0 passed the market filters, 0 researched
+- 20:39Z: 4 coins, 4 with pairs, 0 passed the market filters, 0 researched
 
 ## Coins it looked at, and why it passed
+- 20:38Z SNIBBU (FINAL_STRETCH, $18,920 mcap, $25,451 5m vol): PASS at conviction 3, PASS: chasing spike. SNIBBU is up 31% in its last 5m on 6x hourly pace, sitting at the top of a 7-minute run from a $3.3k low. Wait for a retrace and a printed higher low, or pass. (V1, V6)  
+  CA `DhwRtGWU6Kk95Xt847GH9118WARW6dMmBFaKXvbhpump`
+- 20:37Z Fireball (MIGRATED, $342,043 mcap, $2,961 5m vol): PASS at conviction 2, PASS: Fireball is a 27-copy word field, the site is 0.3 days old and doesn't show this CA, and there's no printed higher low. Blocker: "no higher low" plus "flow below pace". Dip. (V1, V3, V6, V13)  
+  CA `B9wbjDJ4FbHMsZmoXAkJSTAwuePaJUKbySvnK5zApump`
+- 20:35Z WINTER (MIGRATED, $98,547 mcap, $7,756 5m vol): PASS at conviction 3, PASS: chasing, flow below pace, no higher low, and the first target is 5% away. Blocker "chasing" (V1, V6).  
+  CA `7dc3gFoyuDCPWjrfZfX99uasJJSceAJx5ucE8bDGpump`
+- 20:30Z CBUCKS (MIGRATED, $6,409,908 mcap, $2,145 5m vol): REJECT, Top 10 hold 25.4% ex-pool (>25%) (V13)  
+  CA `DtcicPCKTKeAh7TDEzTym3hXeoHAoMiBdYJhMYxZpump`
 - 20:23Z Commotitty (MIGRATED, $258,347 mcap, $11,996 5m vol): REJECT, Top 10 hold 56.0% ex-pool (>25%) (V13)  
   CA `GzdUV4xe5Rmt34iNBoNKBzf4t8b8y3Pigu3iRcT8pump`
 - 20:23Z HOLLER (FINAL_STRETCH, $23,667 mcap, $14,134 5m vol): PASS at conviction 3, PASS: chasing spike on a 1038% hour, bonding curve at 80%, no catalyst. Pass. (V1, V6)  
@@ -88,25 +96,17 @@ Updated 2026-11-27T20:25:12Z (paper trading, never real money)
   CA `GdDpHWwrRLDHR2soP75sEtqzDzY1rkATuVszAHv5pump`
 - 20:04Z BTCAT (MIGRATED, $601,488 mcap, $103,644 5m vol): REJECT, Top 10 hold 47.4% ex-pool (>25%) (V13)  
   CA `BFFxXi7xD9uhf7fKujN8kJzsmDouP4Y91z1nsPcapump`
-- 20:03Z PCAT (MIGRATED, $36,776 mcap, $2,762 5m vol): PASS at conviction 3, PASS: PCAT is about a minute old, up 23% with 12x hourly flow and no higher low. Too new and chasing a spike. Blocker: "chasing spike" (V1, V6).  
-  CA `DUZPzRooWiLqvNoZnreZQrp2wAS87ps3DiDTL6vApump`
-- 20:01Z CMDTY (MIGRATED, $42,348 mcap, $24,825 5m vol): PASS at conviction 2, PASS. Commodities (CMDTY) is 2.5 minutes old, up 44% in 5m, with no higher low and no catalyst. Blocker: too new / chasing spike.  
-  CA `6kqBYaV1BpNNhjYz8w2rQXrRWDBiua9RL6kJqwUbpump`
-- 19:58Z JOB (MIGRATED, $2,020,991 mcap, $7,234 5m vol): REJECT, Bundles: 1 linked wallet cluster(s) hold 22.5% of supply (>20%) (V17)  
-  CA `9Pq7aLAbhDG2tTnS22cm6kuysZVcZpLFE368HWuypump`
-- 19:54Z HIJAK (FINAL_STRETCH, $18,196 mcap, $43,731 5m vol): PASS at conviction 3, PASS: HIJAK is a 5-minute-old pump.fun launch up 563% in 5m on 12x its hourly pace, one of seven same-ticker copies, with no story on the radar. Chasing a launch candle (V1, V6, V13).  
-  CA `5jvUfm5zau2cKswxdLtQaPZavfF6mdmbhsbUHuZ3pump`
 
 ## What its skips did next (last 48h)
 A skip "ran" if the coin reached the first target (1.5x) from the skip price before a 20% drop, "dumped" if the drop came first. Sampled every 10 min, followed 6h.
-- top 10 over 25%: blocked 52, ran 11, dumped 36, flat 2, open 3 (saving losses: keep it)
+- top 10 over 25%: blocked 52, ran 11, dumped 37, flat 2, open 2 (saving losses: keep it)
   - ran: enu up to 1.82x  
     CA `9msLfYfXBrSbrApCZAPuPMCNmPqNtEL1VPKh1AEYpump`
   - ran: ð up to 1.65x  
     CA `GeUnGPLFku8zn1dJUNZpj6VymUxt7A3t9DqRL5WJpump`
   - ran: MONEY up to 1.58x  
     CA `DeACAbp2GMzapB6Z2K8qdkTZupmNbKc6EZx9bnbCpump`
-- flow below pace: blocked 45, ran 4, dumped 37, flat 3, open 1 (saving losses: keep it)
+- flow below pace: blocked 46, ran 4, dumped 37, flat 3, open 2 (saving losses: keep it)
   - ran: PAIR up to 2.1x  
     CA `32rBxcFjCFnyqZ41CEPM5AL67X1dcw8w83vZt6Kxpump`
   - ran: Hoppy up to 1.76x  
@@ -120,7 +120,7 @@ A skip "ran" if the coin reached the first target (1.5x) from the skip price bef
     CA `34J9VrBeJ2dWActyAMpoNBKvoxZCqQz3SivmnnmSTUds`
   - ran: 2 up to 1.69x  
     CA `HkywsKMf5FDj7QpgRE3BoE2nJqJauxEVbGjpnYe6pump`
-- near the high / chasing: blocked 41, ran 9, dumped 27, flat 2, open 3 (saving losses: keep it)
+- near the high / chasing: blocked 42, ran 9, dumped 28, flat 2, open 3 (saving losses: keep it)
   - ran: enu up to 1.82x  
     CA `9msLfYfXBrSbrApCZAPuPMCNmPqNtEL1VPKh1AEYpump`
   - ran: Nala up to 1.64x  
@@ -141,7 +141,7 @@ A skip "ran" if the coin reached the first target (1.5x) from the skip price bef
     CA `DeACAbp2GMzapB6Z2K8qdkTZupmNbKc6EZx9bnbCpump`
   - ran: Split up to 1.54x  
     CA `HAP9FcXubD88SjRHMY1kr5iukpRZgeMAgCBam3Vtpump`
-- RugCheck danger: blocked 14, ran 1, dumped 10, flat 2, open 1 (saving losses: keep it)
+- RugCheck danger: blocked 14, ran 1, dumped 11, flat 2, open 0 (saving losses: keep it)
   - ran: Bababoi up to 2.17x  
     CA `28B9kDm6XtQNqAkzuiKH3Zu1L8cVM6SLW4iRamFspump`
 - falling knife / no higher low: blocked 12, ran 3, dumped 6, flat 2, open 1 (saving losses: keep it)
@@ -200,22 +200,16 @@ No edge after costs, and I'm fairly sure of that. All 250 settled coins averaged
 - [2026-11-02 20:25] I expected Slingoor, a clean MIGRATED leader with $25k of 5m flow at pace and a 0.77 buy share, to retest its $408k high from $304k. It never went green (0.98x peak) and hit the -20% stop in 2 minutes, a -$2.86 probe. My own thesis admitted there was no printed higher low after a peak only 6 minutes old, so this confirms the money-shape rule: buy share and flow are not structure (V1, V6). Next time a MIGRATED pullback with no higher low above the hourly low is a PASS with blocker "no higher low", not a probe. This is one loss, so it adds no new ban beyond the rule I already have.
 
 ## Meta right now
-Trencher meta read, from scan_movers (the crawler disagrees with the scan on several coins; I used the scan).
-
-Meta: fresh joke-name pump.fun and PumpSwap launches, mostly under about an hour old. Three threads show up across the movers. (1) A "Ball" family riding Fireball: VolumeBall ($13.6k 5m, 58% buys, +1050% 1h) and FARMCOIN ($35k 5m, 53% buys, six minutes old) are the live ones, and IceBall is dead (-92%). (2) Cat/animal names: VICAT (Viking Cat, 89% buys, but only $4.8k 5m) and boingcat (flat, 46% buys). (3) Holiday: REINDEER is fading hard (-45%, 10% buys). Fading or dead on the scan: TOGO (0 5m volume, -99.6% 1h), CELL (0 5m, -94%), CLANK (0 buys 5m), MEME ($13 5m), IceBall. The crawler still shows TOGO at +908% and CELL at $22k 5m; the scan doesn't support that, so I'm not trusting it.
-
-Setups to research, not buy yet: VolumeBall, still on the pump.fun curve at $24k, so watch the pre-bond dump near 30-40k (V1). FARMCOIN, already on PumpSwap at $33k, needs holder, dev and bundle checks before anything (V6, V13). VICAT is the cleanest flow, but its $4.8k 5m is under the $10k line, so it's a watch until 5m volume clears that (V6).
-
-Before any Ball trade, confirm which Fireball is the original: the scan lists one CA, the crawler says two (V3). Hack-named coins: none in the movers. Paper only, not financial advice.
+Meta, from the scan. I'm not using the crawler summary's numbers (VolumeBall $13.6k, FARMCOIN $35k, VICAT, REINDEER, TOGO, CELL, IceBall): none of them appear in the movers JSON. Two themes are moving: animal names (BTCAT, dawg, CINU, Wibbit, JOB) and the Ball pair (Fullball live at $94k mcap, 60% buys, +215% 1h; VolumeBall down 65%). A second cluster of one-word joke and utility names (HOLLER, Commotitty, bob says, CMDTY) has real 5m volume and buyers. Rising: BTCAT ($104k 5m, 66% buys, but +1564% in 1h at about 6 minutes old, so chase risk), Commotitty ($12k 5m, 80% buys, $258k mcap), and HOLLER ($13k 5m, 64% buys, still on the pump.fun curve at $21k, so the pre-bond dump is the thing to watch). Fading or dead: FARM, Padlock, Wibbit, LowCap City and BANNER (near-zero 5m volume, no buys), plus VolumeBall. Setups to research, not buy yet: HOLLER (V1 Final Stretch), Commotitty and Fullball (V6/V13 checks first). No mover is hack-named or Trump-linked, so the dinner headlines aren't what's trading. Holder, dev and bundle checks are still open on every one of these. Paper only, not financial advice.
 
 ## Moving most in its scans, last 30 min (1h volume)
-- BTCAT: $186,375 1h vol, $601,488 mcap, +1564% 1h  
-  CA `BFFxXi7xD9uhf7fKujN8kJzsmDouP4Y91z1nsPcapump`
 - Fullball: $153,747 1h vol, $93,912 mcap, +215% 1h  
   CA `GdDpHWwrRLDHR2soP75sEtqzDzY1rkATuVszAHv5pump`
-- FARM: $95,693 1h vol, $2,462 mcap, -93% 1h  
-  CA `2dynAjPBnkqzjUwozgn8pDRkCf7k7CDJkLfcf4rupump`
-- BANNER: $52,856 1h vol, $2,463 mcap, -47% 1h  
+- WINTER: $147,652 1h vol, $98,547 mcap, +222% 1h  
+  CA `7dc3gFoyuDCPWjrfZfX99uasJJSceAJx5ucE8bDGpump`
+- DEGENMAS: $55,137 1h vol, $9,147 mcap, +350% 1h  
+  CA `FdcHpGpwNuBwLyFuzp5gDz2MbzDmZ65W1wmJvTEwpump`
+- BANNER: $53,027 1h vol, $2,125 mcap, -55% 1h  
   CA `AMHeQVxjXz4ARVGRT6cQqc8zt7yxShx5wqXHFhbhpump`
-- HOLLER: $49,432 1h vol, $21,315 mcap, +925% 1h  
-  CA `31BkktjuXPzqLYdHifaBhn56SHzygimsf9T4XoUwvVD4`
+- SNIBBU: $52,109 1h vol, $16,627 mcap, +362% 1h  
+  CA `DhwRtGWU6Kk95Xt847GH9118WARW6dMmBFaKXvbhpump`
