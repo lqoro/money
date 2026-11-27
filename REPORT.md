@@ -1,13 +1,13 @@
 # Trencher live report
 
-Updated 2026-11-27T00:59:02Z (paper trading, never real money)
+Updated 2026-11-27T01:14:02Z (paper trading, never real money)
 
 - Equity: $74.23 (-25.8% vs $100 start)
 - Closed trades: 22, 3 wins
 - Fees paid: $14.78 (axiom $2.81, network $9.18, pool $2.66), plus $4.15 lost to slippage
 - New trades: WATCH-ONLY (scans and decides, buys nothing)
-- Brain: subscription, claude-haiku-5-5 for routine calls, claude-opus-5-5 for the daily review; 361 routine calls and 0 plan-limit hits in 48h
-- Watch log: 73 coins being followed, 4050 filed, 0 would-buys (6h follow, sampled every 2 min)
+- Brain: subscription, claude-haiku-5-5 for routine calls, claude-opus-5-5 for the daily review; 359 routine calls and 0 plan-limit hits in 48h
+- Watch log: 72 coins being followed, 4052 filed, 0 would-buys (6h follow, sampled every 2 min)
 
 ## Scorecard (after fees)
 - 22 closed, 3 won (14%), net $-25.79
@@ -73,9 +73,11 @@ Updated 2026-11-27T00:59:02Z (paper trading, never real money)
   CA `H4gHnZ3NCU7Z9XQwGX6YYJNyieGEW8pqwGRUcdSxpump`
 
 ## Last scan
-- 00:58Z: 2 coins, 2 with pairs, 0 passed the market filters, 0 researched
+- 01:13Z: 5 coins, 5 with pairs, 0 passed the market filters, 0 researched
 
 ## Coins it looked at, and why it passed
+- 01:05Z Winston (MIGRATED, $54,038 mcap, $9,453 5m vol): REJECT, Bundles: 1 linked wallet cluster(s) hold 78.2% of supply (>20%) (V17)  
+  CA `8tiWobkyfwAaagnrQ2DdVi8L3cf83FuZWbsrWUTNpump`
 - 00:55Z BRUH (MIGRATED, $8,267,404 mcap, $2,980 5m vol): PASS at conviction 3, PASS: $8.3M cap, $3k on the 5m, and a bottom buy on a story nobody is telling. Blocker: big cap, no room (V1, V6).  
   CA `PgFtGGquvnv2zEkjG2N2QPvBTBrafuExGYEqahRpump`
 - 00:54Z KAI (MIGRATED, $671,228 mcap, $122,620 5m vol): REJECT, Top 10 hold 30.6% ex-pool (>25%) (V13)  
@@ -94,19 +96,17 @@ Updated 2026-11-27T00:59:02Z (paper trading, never real money)
   CA `341KHzpxbuXeJUP6yRGQLwmmWgFVwXJM6VxgPhYipump`
 - 00:30Z Vetocat (DIP, $225,376 mcap, $5,867 5m vol): REJECT, Dip with fading attention is a falling knife, not a dip (5m at 0.14x the hour's pace, under 0.6x)  
   CA `9J2cy3AfDquDDKqjteYaFSrYEvUAGnb1Qxw8pZQApump`
-- 00:11Z Duh (FINAL_STRETCH, $15,872 mcap, $24,011 5m vol): REJECT, RugCheck danger: Creator history of rugged tokens  
-  CA `6u1NqAcnH7pdHbYUygBSsVr6oAMShqagmWT1ZDYppump`
 
 ## What its skips did next (last 48h)
 A skip "ran" if the coin reached the first target (1.5x) from the skip price before a 20% drop, "dumped" if the drop came first. Sampled every 10 min, followed 6h.
-- top 10 over 25%: blocked 53, ran 8, dumped 41, flat 0, open 4 (saving losses: keep it)
+- top 10 over 25%: blocked 53, ran 9, dumped 41, flat 0, open 3 (saving losses: keep it)
   - ran: SWARM up to 1.57x  
     CA `2Rw6rLRRZXQLNreForjeVvDjnpYUaW6rmMFXmRP9pump`
   - ran: ð up to 1.65x  
     CA `GeUnGPLFku8zn1dJUNZpj6VymUxt7A3t9DqRL5WJpump`
   - ran: MONEY up to 1.58x  
     CA `DeACAbp2GMzapB6Z2K8qdkTZupmNbKc6EZx9bnbCpump`
-- flow below pace: blocked 41, ran 5, dumped 30, flat 4, open 2 (saving losses: keep it)
+- flow below pace: blocked 41, ran 5, dumped 31, flat 4, open 1 (saving losses: keep it)
   - ran: BOOBS up to 1.51x  
     CA `E35iEA2yLLHc1tjm6et1Z3YuH8DhxJYWtWezPHgSpump`
   - ran: BASKET up to 1.55x  
@@ -134,12 +134,12 @@ A skip "ran" if the coin reached the first target (1.5x) from the skip price bef
     CA `9TKbd3VFaMSXsEAicD9JVQWpWwAoLi4fSgWmZL2cpump`
   - ran: Bababoi up to 2.17x  
     CA `28B9kDm6XtQNqAkzuiKH3Zu1L8cVM6SLW4iRamFspump`
-- bundles over the line: blocked 19, ran 2, dumped 13, flat 2, open 2 (saving losses: keep it)
+- bundles over the line: blocked 20, ran 2, dumped 13, flat 3, open 2 (saving losses: keep it)
   - ran: jingyu up to 1.58x  
     CA `DUZrwdjEthcJ99ZiRXr31UuqTohoTg7VjTEyfGdBpump`
   - ran: WIENER up to 1.59x  
     CA `8BDkDfj3ZUvcG9caGzF2XnHfwg7K6fjfKKDvX6SCpump`
-- falling knife (code): blocked 18, ran 3, dumped 13, flat 1, open 1 (saving losses: keep it)
+- falling knife (code): blocked 18, ran 3, dumped 14, flat 1, open 0 (saving losses: keep it)
   - ran: Jimmies up to 1.53x  
     CA `GisWWjhwrSud4aFGSHvTMt85Ky14sY7LeBFCpfoFpump`
   - ran: Investor up to 1.58x  
@@ -203,11 +203,11 @@ The meta in scan_movers is cat jokes and one-word fresh launches with real flow:
 ## Moving most in its scans, last 30 min (1h volume)
 - KAI: $633,212 1h vol, $671,228 mcap, +516% 1h  
   CA `G2ZDG8q3QMYk3KR58JFFYsvaTk4Gy94UzMo7Re7spump`
-- Vetocat: $490,567 1h vol, $225,376 mcap, +594% 1h  
-  CA `9J2cy3AfDquDDKqjteYaFSrYEvUAGnb1Qxw8pZQApump`
-- POPBALL: $170,355 1h vol, $220,791 mcap, +126% 1h  
-  CA `CKiuTwHFMXKBaQ4V1WgsYctsdbLeit3wytXRkphzpump`
-- Duh: $153,989 1h vol, $6,522 mcap, +186% 1h  
+- Duh: $125,962 1h vol, $6,084 mcap, -35% 1h  
   CA `6u1NqAcnH7pdHbYUygBSsVr6oAMShqagmWT1ZDYppump`
-- Kuro: $128,839 1h vol, $384,546 mcap, +883% 1h  
-  CA `BuorVu99GQ1LHT194YNYRbdXivTCA8o58nz7iji2pump`
+- Winston: $68,421 1h vol, $54,038 mcap, +83% 1h  
+  CA `8tiWobkyfwAaagnrQ2DdVi8L3cf83FuZWbsrWUTNpump`
+- FF: $42,856 1h vol, $10,015 mcap, -19% 1h  
+  CA `B2JjjQfrDAiDM99haXM5jpFibxbQaPvdqX7aB9Tupump`
+- CUMASS: $41,902 1h vol, $37,614 mcap, +26% 1h  
+  CA `CS8vS3n7Ptc4NBGwt62LxxAeW7gpPigHVYhmKcS7pump`
