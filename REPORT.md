@@ -1,13 +1,13 @@
 # Trencher live report
 
-Updated 2026-11-27T12:50:52Z (paper trading, never real money)
+Updated 2026-11-27T13:05:56Z (paper trading, never real money)
 
 - Equity: $74.23 (-25.8% vs $100 start)
 - Closed trades: 22, 3 wins
 - Fees paid: $14.78 (axiom $2.81, network $9.18, pool $2.66), plus $4.15 lost to slippage
 - New trades: WATCH-ONLY (scans and decides, buys nothing)
-- Brain: subscription, claude-haiku-5-5 for routine calls, claude-opus-5-5 for the daily review; 381 routine calls and 9 plan-limit hits in 48h
-- Watch log: 36 coins being followed, 4200 filed, 0 would-buys (6h follow, sampled every 2 min)
+- Brain: subscription, claude-haiku-5-5 for routine calls, claude-opus-5-5 for the daily review; 379 routine calls and 9 plan-limit hits in 48h
+- Watch log: 34 coins being followed, 4204 filed, 0 would-buys (6h follow, sampled every 2 min)
 
 ## Scorecard (after fees)
 - 22 closed, 3 won (14%), net $-25.79
@@ -73,9 +73,13 @@ Updated 2026-11-27T12:50:52Z (paper trading, never real money)
   CA `H4gHnZ3NCU7Z9XQwGX6YYJNyieGEW8pqwGRUcdSxpump`
 
 ## Last scan
-- 12:49Z: 1 coins, 1 with pairs, 0 passed the market filters, 0 researched
+- 13:04Z: 1 coins, 1 with pairs, 0 passed the market filters, 0 researched
 
 ## Coins it looked at, and why it passed
+- 13:04Z ChokeCat (FINAL_STRETCH, $19,700 mcap, $2,555 5m vol): PASS at conviction 3, PASS — ChokeCat is the smaller copy in a cat vamp field, sells outnumber buys 31 to 18 on 5m, and the theme is at 0.48x pace with no catalyst. Blocker: split crowd / theme volume below pace (V1, V3, V6).  
+  CA `26qFFJBo4F7EjtzCuCbJEdW4v233mY1aMRaw8Y2kpump`
+- 12:50Z DIH (FINAL_STRETCH, $21,640 mcap, $2,521 5m vol): REJECT, Top 10 hold 26.0% ex-pool (>25%) (V13)  
+  CA `3AYshf6BKsM9HVxbPk6vZ3QyWC5H4zTetAANynLrDmmZ`
 - 12:35Z ChokingCat (MIGRATED, $87,696 mcap, $18,954 5m vol): REJECT, Bundles: 3 linked wallet cluster(s) hold 77.2% of supply (>20%) (V17)  
   CA `ExpdNM5YykDnGTmyxCH5B3s7mdWi1cEreDvK6ic8pump`
 - 12:23Z VAULT (DIP, $100,186 mcap, $11,410 5m vol): REJECT, Dip with fading attention is a falling knife, not a dip (5m at 0.52x the hour's pace, under 0.6x)  
@@ -92,14 +96,10 @@ Updated 2026-11-27T12:50:52Z (paper trading, never real money)
   CA `HQYLt1Ne2xQdknmZjbnTffSKFYX2ZHCkBG3WBJQYpump`
 - 11:44Z DIH (FINAL_STRETCH, $17,392 mcap, $3,270 5m vol): REJECT, Top 10 hold 26.2% ex-pool (>25%) (V13)  
   CA `3AYshf6BKsM9HVxbPk6vZ3QyWC5H4zTetAANynLrDmmZ`
-- 11:37Z VAULT (MIGRATED, $64,434 mcap, $9,292 5m vol): PASS at conviction 3, PASS — too new (20 min old, 15% off a peak set 24 min ago), a 14-copy vamp field with the theme's 5m flow at 0.42x pace, 5m volume $9.3k under the $10k bar, and a site only 12 hours old that doesn't show this CA. (V1, V3, V13)  
-  CA `4tqzkSWA9tiWYhzYpSt81We3cVNkrEbkD1tzjFDZpump`
-- 11:36Z Snowball (MIGRATED, $737,967 mcap, $2,201 5m vol): PASS at conviction 2, PASS: no printed higher low, 5m flow $2.2k, bundle cluster 5.1% in a vamp field, and no catalyst for a bottom buy. Farm-shaped site. (V1, V3, V6, V13)  
-  CA `9TKbd3VFaMSXsEAicD9JVQWpWwAoLi4fSgWmZL2cpump`
 
 ## What its skips did next (last 48h)
 A skip "ran" if the coin reached the first target (1.5x) from the skip price before a 20% drop, "dumped" if the drop came first. Sampled every 10 min, followed 6h.
-- top 10 over 25%: blocked 54, ran 9, dumped 42, flat 2, open 1 (saving losses: keep it)
+- top 10 over 25%: blocked 53, ran 9, dumped 40, flat 2, open 2 (saving losses: keep it)
   - ran: ð up to 1.65x  
     CA `GeUnGPLFku8zn1dJUNZpj6VymUxt7A3t9DqRL5WJpump`
   - ran: MONEY up to 1.58x  
@@ -113,14 +113,14 @@ A skip "ran" if the coin reached the first target (1.5x) from the skip price bef
     CA `AqNAfcg8AkidVLLE7Tszh2PjUGzgaKvJskDXQXRHpump`
   - ran: STUDS up to 2.35x  
     CA `34J9VrBeJ2dWActyAMpoNBKvoxZCqQz3SivmnnmSTUds`
-- flow below pace: blocked 41, ran 4, dumped 31, flat 6, open 0 (saving losses: keep it)
+- flow below pace: blocked 42, ran 4, dumped 31, flat 6, open 1 (saving losses: keep it)
   - ran: BIAO up to 1.51x  
     CA `As3XtYSstuVdrVyb6sJZZ77Tu8JvjTBg6S6hgPv4pump`
   - ran: PAIR up to 2.1x  
     CA `32rBxcFjCFnyqZ41CEPM5AL67X1dcw8w83vZt6Kxpump`
   - ran: Hoppy up to 1.76x  
     CA `CFX1gH7CKYwqYXrfDkS2MUxJcEhs8PT63DyRA1chpump`
-- near the high / chasing: blocked 38, ran 5, dumped 30, flat 3, open 0 (saving losses: keep it)
+- near the high / chasing: blocked 37, ran 5, dumped 29, flat 3, open 0 (saving losses: keep it)
   - ran: HEYOS up to 1.91x  
     CA `A88p1LcHisrx3TuTwUGVrLtc1LBTUPZUfVgaCGutAFaK`
   - ran: Nala up to 1.64x  
@@ -160,18 +160,18 @@ A skip "ran" if the coin reached the first target (1.5x) from the skip price bef
   - ran: bolphante up to 1.7x  
     CA `FVBzzG4ZcAgxSLW1rWjNC9EH9CgEgz1A4puNYexMpump`
 
-## Daily review (2026-11-26, claude-opus-5-5)
-No edge yet. All 276 settled coins lost money after costs under the simple plan: -6.4% average net. Every setup was negative: FINAL_STRETCH -3.6% (n=45), MIGRATED -5.1% (n=193), DIP -16.1% (n=38). Before costs the simple plan made roughly +3% overall and about +6% on FINAL_STRETCH. The ~9.7% round-trip cost on a $10 buy wipes that out, which is the same thing the 22 real trades showed: $18.83 of the $25.79 loss was fees and slippage. The sample is far too small to trust a 3–6% gross edge. Payoffs swing from +50% to -20%, so the error bar on 45 FINAL_STRETCH coins is about ±9 points. Repeat logs of the same coin also make the overall n look bigger than it is. Only the negative after-cost result is solid. The brain logged zero would-buys, so nobody can say yet whether it picks better than it passes. That missing data is the main thing to fix before Nov 10.
-- finding: Costs decide the result. Average round-trip cost is 9.7% of a $10 buy (FINAL_STRETCH 10.0, MIGRATED 9.6, DIP 9.6). Before costs: all coins about +3.3%, FINAL_STRETCH about +6.4%, MIGRATED about +4.5%, DIP about -6.5%. After costs every group is negative. At this size, fees are a bigger problem than coin picking.
-- finding: DIP is clearly the worst setup: n=38, 10.5% ran, 2.6% hit 2x, median peak 1.10x, net -16.1%, and still negative before costs. The other setups ran 29–38% of the time. Four runners out of 38 is a small number, but the gap is large and DIP is the one setup that looks broken on this sample.
-- finding: FINAL_STRETCH did best: n=45, 37.8% ran, 26.7% hit 2x, median peak 1.37x, net -3.6%. It still loses after costs, and with n=45 the gross number can't be told apart from zero.
-- finding: MIGRATED is most of the sample: n=193, 29.5% ran, 20.7% hit 2x, net -5.1%. That is close to the overall average, so nothing stands out yet.
-- finding: The checklist and the brain don't separate winners from losers on this metric. Checklist-failed coins (n=138): 28.3% ran, 22.5% hit 2x, net -6.2%. Coins that cleared the checklist and reached the brain (n=138): 28.3% ran, 15.9% hit 2x, net -6.5%, and they dumped more often (60.1% vs 52.2%). The rejected coins did no worse. Hard lines still stay where they are, because the -20% simulated stop probably hides the rug losses they exist to avoid (see data_issues).
-- idea to test: Turn DIP off: setup == DIP → no entry. Alternatively allow it only if 5m volume ≥ 1h average pace and buy ratio ≥ 0.55. Test whether the filtered DIP subset gets above zero before costs. If it doesn't, drop DIP for good.
-- idea to test: Cost gate: enter only if estimated round-trip cost_pct ≤ 5%. Re-run the simple plan by cost bucket (<5%, 5–10%, >10%) and at larger notional sizes ($25 and $50 against pool liquidity). This shows whether the gross edge survives once fixed fees are a smaller share.
-- idea to test: FINAL_STRETCH with mcap < $25k and 5m volume ≥ $10k against FINAL_STRETCH with mcap ≥ $25k. Report n, the share that hit 2x, and net after costs. Pnut and Fug are what prompted this split, not proof of it.
-- idea to test: MIGRATED, V6 recon band: mcap $70k–$11M, age ≤ 12h, 5m volume ≥ $10k, flow ratio (5m volume ÷ (1h volume / 12)) ≥ 1.0, buy ratio ≥ 0.5. Compare against the rest of MIGRATED.
-- idea to test: Exit-plan test on the same entries, order-aware: (a) sell all at 1.5x or -20%; (b) sell initials at 2x, trail the rest by 30% off the high, hard stop -30%; (c) break-even stop after 1.3x. Only worth doing if the logs keep the full sample path.
+## Daily review (2026-11-27, claude-opus-5-5)
+No edge after costs, and I'm fairly sure of that. All 250 settled coins averaged -12.7% net under the simple plan, and every setup and stage lost money (-12.2% to -15.2%). Before costs the average is still about -3%, because the median coin peaked at only 1.2x. At n=250 the standard error is roughly 2 points, so 'negative' is solid. The gaps between buckets (2-3 points) are noise, especially since the same coin can be logged more than once. The routine model made zero would-buys out of 130 coins it researched, so I can't test whether its buys beat its passes. The coins it passed on (-13.9%) did no worse than the checklist rejects (-11.5%) beyond noise. Passing everything was right for these 24 hours, but a model that never says buy gives the Nov 10 rule test nothing to grade.
+- finding: Costs decide the result. The average round trip is 9.8% on a $10 buy. With a +50%/-20% plan, a win nets about +40% and a loss about -30%, so you need roughly 43% winners to break even. The best bucket ran 24%. Even with zero costs you would need about 29%, and nothing reached that.
+- finding: MIGRATED: n=164, 20.1% ran, 12.2% hit 2x, median peak 1.21x, net -12.2%. That is the baseline and it loses money.
+- finding: FINAL_STRETCH: n=50, 24.0% ran, 20.0% hit 2x (the highest), but 74% dumped (the most), net -12.8%. Fat tails on both sides. The 1.5x cap in the simple plan throws away the upside that makes this setup worth looking at at all.
+- finding: DIP: n=36, 5.6% ran, 0% hit 2x, median peak 1.16x, net -15.2%. The worst setup on every measure. Not one dip-buy doubled in 24h.
+- finding: Stages: checklist_failed n=120, 20.0% ran, net -11.5%. brain_passed n=130, 17.7% ran, net -13.9%. would_buy n=0. The brain's passes were neither better nor worse than code rejects (difference ~2.4 points, standard error ~3.8).
+- idea to test: Exit variant on the same entries: sell half at 2x, trail the rest by 30% from the peak, stop at -20%, time stop at 6h. Compare it with the 1.5x/-20% plan on FINAL_STRETCH and MIGRATED. hit_2x is 12-20%, and tail capture is the only plausible source of edge here.
+- idea to test: Cost gate: keep only coins with estimated round-trip cost ≤ 5% at the intended size. Also re-run the whole week at $20-25 size, since fixed fees dominate at $10. If no bucket turns positive even with costs at 5%, there is no edge at any size.
+- idea to test: Retire DIP or tighten it: setup=DIP AND flow ratio ≥ 1.0 AND buy ratio ≥ 0.55 AND drawdown from high 40-60%. Compare with all DIP. If the filtered set still has 0% hit 2x over the week, drop the setup.
+- idea to test: Young-migration bucket: setup=MIGRATED AND age ≤ 0.5h AND 30k ≤ mcap ≤ 80k AND 5m volume ≥ 10k AND checklist passed. Compare its net and dump rate with MIGRATED overall. Expect survivorship to cancel the top-runner effect.
+- idea to test: FINAL_STRETCH flow quality: setup=FINAL_STRETCH AND 5m volume ≥ 10k AND buy ratio ≥ 0.55 AND flow ratio ≥ 1.0. The question is whether it lowers the 74% dump rate without losing the 20% that hit 2x.
 
 ## Rules it changed from results and skips
 - 11-02 23:38Z tightened: DIP gate: flow at least 0.7x the hourly pace plus a printed higher low (DIPs 0 for 5 (-$6.70), every one bought before the higher low held (HEXN x2, SIS, Something, Leverhedge). The code line is now aligned to the owner's 0.7x.)
@@ -199,13 +199,13 @@ No edge yet. All 276 settled coins lost money after costs under the simple plan:
 Meta right now is cat names and fresh short pump.fun names under about 4h old. PizzaCoin ($11.3k cap, $23k 5m, 58% buys, 6 min old), ChokeCat ($20.6k cap, $6.9k 5m, 64% buys), Evoliq ($15.5k cap, $9.2k 5m, 57% buys) and Salecat ($63.6k cap, $10.9k 5m, but only 48% buys) are the only movers with real flow. Rising: those fresh short names and the cat riffs that still have volume. Fading: animal mascots (Pobby at $391 5m, Wizard Cat at $145 5m) and Nothing, which the scan has at $179 5m with 43% buys, so the crawler's $12.3k Nothing and $24.7k Vault figures don't match this scan (Vault isn't in it at all). Legacy names (BRUH, CBUCKS, JOB, WW) sit at $0.6M to $7M caps with under $1k on 5m, which is dead weight, not a meta. Setups to research, not buy: PizzaCoin only on a pullback that holds $10k+ 5m with buyers over half, since it's up 330% in 1h and can't be chased; ChokeCat on a dip that keeps its volume; Evoliq if 5m stays above $10k with buys over half. Holder, dev and bundle checks haven't run on any of these, so this is a thin, not quiet, market. The Trump dinner headlines aren't in this flow. Paper only, not financial advice.
 
 ## Moving most in its scans, last 30 min (1h volume)
-- VAULT: $262,601 1h vol, $100,186 mcap, +69% 1h  
-  CA `4tqzkSWA9tiWYhzYpSt81We3cVNkrEbkD1tzjFDZpump`
-- Salecat: $250,543 1h vol, $2,608 mcap, -91% 1h  
+- Salecat: $167,783 1h vol, $2,249 mcap, -95% 1h  
   CA `BFLRy1dMqALUz7WFoaXHXdZSJdqEJZnndD7yqz56pump`
 - ChokingCat: $101,866 1h vol, $87,696 mcap, +187% 1h  
   CA `ExpdNM5YykDnGTmyxCH5B3s7mdWi1cEreDvK6ic8pump`
-- ChokeCat: $63,552 1h vol, $15,494 mcap, +26% 1h  
-  CA `26qFFJBo4F7EjtzCuCbJEdW4v233mY1aMRaw8Y2kpump`
-- SAI: $62,534 1h vol, $2,928 mcap, +5% 1h  
+- SAI: $65,741 1h vol, $4,819 mcap, +73% 1h  
   CA `661YLyBy7kfmgkGu9Dt3VevjcW1mTme4TKGV3Bx14Gq8`
+- PIZZA: $62,456 1h vol, $2,756 mcap, +5% 1h  
+  CA `BhbBkVqwNAbauKfuKb9j9VC2gEzwS5AvWVuY48Pypump`
+- EVOLIQ: $38,883 1h vol, $2,264 mcap, -89% 1h  
+  CA `GJewwaSYtsKdYmqoinB3LmCVvAD814FdKFWgcR4Kpump`
