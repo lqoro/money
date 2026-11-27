@@ -1,13 +1,13 @@
 # Trencher live report
 
-Updated 2026-11-27T21:10:27Z (paper trading, never real money)
+Updated 2026-11-27T21:25:27Z (paper trading, never real money)
 
 - Equity: $74.23 (-25.8% vs $100 start)
 - Closed trades: 22, 3 wins
 - Fees paid: $14.78 (axiom $2.81, network $9.18, pool $2.66), plus $4.15 lost to slippage
 - New trades: WATCH-ONLY (scans and decides, buys nothing)
-- Brain: subscription, claude-haiku-5-5 for routine calls, claude-opus-5-5 for the daily review; 396 routine calls and 9 plan-limit hits in 48h
-- Watch log: 77 coins being followed, 4260 filed, 0 would-buys (6h follow, sampled every 2 min)
+- Brain: subscription, claude-haiku-5-5 for routine calls, claude-opus-5-5 for the daily review; 394 routine calls and 9 plan-limit hits in 48h
+- Watch log: 77 coins being followed, 4263 filed, 0 would-buys (6h follow, sampled every 2 min)
 
 ## Scorecard (after fees)
 - 22 closed, 3 won (14%), net $-25.79
@@ -73,9 +73,15 @@ Updated 2026-11-27T21:10:27Z (paper trading, never real money)
   CA `H4gHnZ3NCU7Z9XQwGX6YYJNyieGEW8pqwGRUcdSxpump`
 
 ## Last scan
-- 21:09Z: 8 coins, 8 with pairs, 0 passed the market filters, 0 researched
+- 21:25Z: 4 coins, 4 with pairs, 0 passed the market filters, 0 researched
 
 ## Coins it looked at, and why it passed
+- 21:23Z Fireball (DIP, $641,665 mcap, $4,616 5m vol): PASS at conviction 2, PASS — bottom buy with no catalyst, a 0.3-day-old site that doesn't show this CA, and a 27-copy field. Blocked, not chased. (V1, V13)  
+  CA `B9wbjDJ4FbHMsZmoXAkJSTAwuePaJUKbySvnK5zApump`
+- 21:18Z MAYA (MIGRATED, $474,648 mcap, $61,712 5m vol): REJECT, Dev holds 3.2% (>1%) (V13, V17)  
+  CA `H2PjSbA2365uxBUJ3EBePSm67AYPuRMgcyswBnrVpump`
+- 21:10Z CI (MIGRATED, $172,665 mcap, $14,375 5m vol): REJECT, Top 10 hold 35.9% ex-pool (>25%) (V13)  
+  CA `9SMvQzDmGMpACAqET5PAmwUtHfBYdQ5a7SPLfQa4pump`
 - 21:03Z MoonBoy (MIGRATED, $801,089 mcap, $272,283 5m vol): PASS at conviction 3, PASS — MoonBoy is 7% off its high after a +46% 5m candle at 3.1x hourly pace, and it's 24 minutes old. Chasing the spike. Blockers: chasing, chasing spike, too new. (V1, V6)  
   CA `GXjSWDoMQkDEbhon9ALxz8chUUsVKg3x8V3NajjDpump`
 - 20:59Z Fullball (DIP, $78,647 mcap, $23,664 5m vol): PASS at conviction 2, PASS: the Ball theme is at 0.29x its hourly pace, no catalyst, and the 5m is still falling -21% after a +277% hour. A pump-then-dump shape, not a bottom (V6, V13).  
@@ -90,37 +96,31 @@ Updated 2026-11-27T21:10:27Z (paper trading, never real money)
   CA `DhwRtGWU6Kk95Xt847GH9118WARW6dMmBFaKXvbhpump`
 - 20:37Z Fireball (MIGRATED, $342,043 mcap, $2,961 5m vol): PASS at conviction 2, PASS: Fireball is a 27-copy word field, the site is 0.3 days old and doesn't show this CA, and there's no printed higher low. Blocker: "no higher low" plus "flow below pace". Dip. (V1, V3, V6, V13)  
   CA `B9wbjDJ4FbHMsZmoXAkJSTAwuePaJUKbySvnK5zApump`
-- 20:35Z WINTER (MIGRATED, $98,547 mcap, $7,756 5m vol): PASS at conviction 3, PASS: chasing, flow below pace, no higher low, and the first target is 5% away. Blocker "chasing" (V1, V6).  
-  CA `7dc3gFoyuDCPWjrfZfX99uasJJSceAJx5ucE8bDGpump`
-- 20:30Z CBUCKS (MIGRATED, $6,409,908 mcap, $2,145 5m vol): REJECT, Top 10 hold 25.4% ex-pool (>25%) (V13)  
-  CA `DtcicPCKTKeAh7TDEzTym3hXeoHAoMiBdYJhMYxZpump`
-- 20:23Z Commotitty (MIGRATED, $258,347 mcap, $11,996 5m vol): REJECT, Top 10 hold 56.0% ex-pool (>25%) (V13)  
-  CA `GzdUV4xe5Rmt34iNBoNKBzf4t8b8y3Pigu3iRcT8pump`
 
 ## What its skips did next (last 48h)
 A skip "ran" if the coin reached the first target (1.5x) from the skip price before a 20% drop, "dumped" if the drop came first. Sampled every 10 min, followed 6h.
-- top 10 over 25%: blocked 53, ran 11, dumped 37, flat 2, open 3 (saving losses: keep it)
+- top 10 over 25%: blocked 54, ran 11, dumped 37, flat 2, open 4 (saving losses: keep it)
   - ran: enu up to 1.82x  
     CA `9msLfYfXBrSbrApCZAPuPMCNmPqNtEL1VPKh1AEYpump`
   - ran: ð up to 1.65x  
     CA `GeUnGPLFku8zn1dJUNZpj6VymUxt7A3t9DqRL5WJpump`
   - ran: MONEY up to 1.58x  
     CA `DeACAbp2GMzapB6Z2K8qdkTZupmNbKc6EZx9bnbCpump`
-- flow below pace: blocked 47, ran 5, dumped 37, flat 3, open 2 (saving losses: keep it)
+- flow below pace: blocked 45, ran 4, dumped 36, flat 3, open 2 (saving losses: keep it)
   - ran: PAIR up to 2.1x  
     CA `32rBxcFjCFnyqZ41CEPM5AL67X1dcw8w83vZt6Kxpump`
   - ran: Hoppy up to 1.76x  
     CA `CFX1gH7CKYwqYXrfDkS2MUxJcEhs8PT63DyRA1chpump`
   - ran: SpaceXCoin up to 1.52x  
     CA `G2XqmSc8vJpLLwaLVXUeNkxsrhVT8vQ3Pje8MqeDpump`
-- too new / sniping: blocked 44, ran 6, dumped 36, flat 0, open 2 (saving losses: keep it)
+- too new / sniping: blocked 44, ran 6, dumped 37, flat 0, open 1 (saving losses: keep it)
   - ran: Slapcat up to 1.61x  
     CA `AqNAfcg8AkidVLLE7Tszh2PjUGzgaKvJskDXQXRHpump`
   - ran: STUDS up to 2.35x  
     CA `34J9VrBeJ2dWActyAMpoNBKvoxZCqQz3SivmnnmSTUds`
   - ran: 2 up to 1.69x  
     CA `HkywsKMf5FDj7QpgRE3BoE2nJqJauxEVbGjpnYe6pump`
-- near the high / chasing: blocked 42, ran 9, dumped 29, flat 2, open 2 (saving losses: keep it)
+- near the high / chasing: blocked 43, ran 9, dumped 29, flat 2, open 3 (saving losses: keep it)
   - ran: enu up to 1.82x  
     CA `9msLfYfXBrSbrApCZAPuPMCNmPqNtEL1VPKh1AEYpump`
   - ran: NETHER up to 1.8x  
@@ -149,18 +149,18 @@ A skip "ran" if the coin reached the first target (1.5x) from the skip price bef
     CA `FokVFH6mDsazoKbtnUaA2FRMsRbDSwZhNfn17Fdvpump`
   - ran: Hoppy up to 1.76x  
     CA `CFX1gH7CKYwqYXrfDkS2MUxJcEhs8PT63DyRA1chpump`
-- other: blocked 12, ran 2, dumped 10, flat 0, open 0 (saving losses: keep it)
-  - ran: SXI up to 2.34x  
-    CA `BFWNbSwRodXPTQqrMSCfhznhJwEzY6ERd6MHjWUEpump`
-  - ran: Christmas up to 1.89x  
-    CA `5hkBYuFQDpAAqemCiVqXCuU6Ya5dqKhtRobzJsg6pump`
-- dev share over 1%: blocked 11, ran 3, dumped 7, flat 1, open 0 (saving losses: keep it)
+- dev share over 1%: blocked 12, ran 3, dumped 7, flat 1, open 1 (saving losses: keep it)
   - ran: Grinch up to 1.94x  
     CA `J1b5HnRzmXsYK5akPTFtBR7B4E74JG8eyULodd7ypump`
   - ran: bolphante up to 1.7x  
     CA `FVBzzG4ZcAgxSLW1rWjNC9EH9CgEgz1A4puNYexMpump`
   - ran: Fug up to 1.58x  
     CA `7mSf4uWLkgdkqBfSoxniv5aZ1sDCXCiquJNcisjXpump`
+- other: blocked 11, ran 2, dumped 9, flat 0, open 0 (saving losses: keep it)
+  - ran: SXI up to 2.34x  
+    CA `BFWNbSwRodXPTQqrMSCfhznhJwEzY6ERd6MHjWUEpump`
+  - ran: Christmas up to 1.89x  
+    CA `5hkBYuFQDpAAqemCiVqXCuU6Ya5dqKhtRobzJsg6pump`
 
 ## Daily review (2026-11-27, claude-opus-5-5)
 No edge after costs, and I'm fairly sure of that. All 250 settled coins averaged -12.7% net under the simple plan, and every setup and stage lost money (-12.2% to -15.2%). Before costs the average is still about -3%, because the median coin peaked at only 1.2x. At n=250 the standard error is roughly 2 points, so 'negative' is solid. The gaps between buckets (2-3 points) are noise, especially since the same coin can be logged more than once. The routine model made zero would-buys out of 130 coins it researched, so I can't test whether its buys beat its passes. The coins it passed on (-13.9%) did no worse than the checklist rejects (-11.5%) beyond noise. Passing everything was right for these 24 hours, but a model that never says buy gives the Nov 10 rule test nothing to grade.
@@ -205,9 +205,9 @@ Meta, from the scan. I'm not using the crawler summary's numbers (VolumeBall $13
   CA `GXjSWDoMQkDEbhon9ALxz8chUUsVKg3x8V3NajjDpump`
 - Fullball: $370,870 1h vol, $71,979 mcap, +245% 1h  
   CA `GdDpHWwrRLDHR2soP75sEtqzDzY1rkATuVszAHv5pump`
-- BTCAT: $256,214 1h vol, $1,325 mcap, -100% 1h  
-  CA `BFFxXi7xD9uhf7fKujN8kJzsmDouP4Y91z1nsPcapump`
-- ZERO: $158,715 1h vol, $684,339 mcap, +1766% 1h  
-  CA `3WsqUNArNSh5pYt6eTKbQ7uUJDgkPtFEA2XFvdEWpump`
-- JOB: $84,419 1h vol, $2,068,697 mcap, -1% 1h  
-  CA `9Pq7aLAbhDG2tTnS22cm6kuysZVcZpLFE368HWuypump`
+- MAYA: $352,255 1h vol, $487,924 mcap, +1133% 1h  
+  CA `H2PjSbA2365uxBUJ3EBePSm67AYPuRMgcyswBnrVpump`
+- CI: $101,657 1h vol, $172,665 mcap, +384% 1h  
+  CA `9SMvQzDmGMpACAqET5PAmwUtHfBYdQ5a7SPLfQa4pump`
+- SNIBBU: $95,295 1h vol, $9,929 mcap, +176% 1h  
+  CA `DhwRtGWU6Kk95Xt847GH9118WARW6dMmBFaKXvbhpump`
