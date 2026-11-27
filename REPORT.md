@@ -1,13 +1,13 @@
 # Trencher live report
 
-Updated 2026-11-27T02:30:01Z (paper trading, never real money)
+Updated 2026-11-27T02:45:05Z (paper trading, never real money)
 
 - Equity: $74.23 (-25.8% vs $100 start)
 - Closed trades: 22, 3 wins
 - Fees paid: $14.78 (axiom $2.81, network $9.18, pool $2.66), plus $4.15 lost to slippage
 - New trades: WATCH-ONLY (scans and decides, buys nothing)
 - Brain: subscription, claude-haiku-5-5 for routine calls, claude-opus-5-5 for the daily review; 360 routine calls and 0 plan-limit hits in 48h
-- Watch log: 72 coins being followed, 4068 filed, 0 would-buys (6h follow, sampled every 2 min)
+- Watch log: 71 coins being followed, 4072 filed, 0 would-buys (6h follow, sampled every 2 min)
 
 ## Scorecard (after fees)
 - 22 closed, 3 won (14%), net $-25.79
@@ -73,9 +73,15 @@ Updated 2026-11-27T02:30:01Z (paper trading, never real money)
   CA `H4gHnZ3NCU7Z9XQwGX6YYJNyieGEW8pqwGRUcdSxpump`
 
 ## Last scan
-- 02:29Z: 5 coins, 5 with pairs, 0 passed the market filters, 0 researched
+- 02:44Z: 4 coins, 4 with pairs, 0 passed the market filters, 0 researched
 
 ## Coins it looked at, and why it passed
+- 02:43Z Santaball (MIGRATED, $945,636 mcap, $20,376 5m vol): PASS at conviction 3, PASS: flow below pace, no catalyst, and the site doesn't show this CA. Blockers: "flow below pace" and "bottom buy". Let it go. (V1, V6, V13)  
+  CA `4obGGXRMVyqpWZr12UzyaBdNkgdYwz2GiY8enmd2pump`
+- 02:41Z DragonRiders (MIGRATED, $143,733 mcap, $40,944 5m vol): PASS at conviction 2, PASS. Chasing a 32-minute-old migration sitting on its high, with no story behind it. Blocker: "chasing". (V1, V6)  
+  CA `5xrT8y2KU2YwzipwCMNxxTc8KAGQd4wjtGTc2WyJJCMh`
+- 02:33Z SpaceXCoin (MIGRATED, $154,325 mcap, $77,522 5m vol): REJECT, Top 10 hold 32.2% ex-pool (>25%) (V13)  
+  CA `G2XqmSc8vJpLLwaLVXUeNkxsrhVT8vQ3Pje8MqeDpump`
 - 02:25Z KAI (MIGRATED, $3,082,273 mcap, $3,510 5m vol): PASS at conviction 2, PASS: flow below pace. 5m volume is $3.5k at 0.04x the hour's average on a $3.1M coin, and the site says "CA TBA" (V1, V6, V13).  
   CA `G2ZDG8q3QMYk3KR58JFFYsvaTk4Gy94UzMo7Re7spump`
 - 02:25Z WAHA (FINAL_STRETCH, $19,294 mcap, $40,022 5m vol): PASS at conviction 3, PASS: chasing spike. WAHA is 6 minutes old, up 79% on the 5m at 9.6x its hourly pace, and one of 10 copies of the same ticker. Blocker: "chasing spike" (V1, V6).  
@@ -90,37 +96,31 @@ Updated 2026-11-27T02:30:01Z (paper trading, never real money)
   CA `38M2z4UCfZEkUHFzD48vhKQhFhNyRGto8pZbLjNipump`
 - 01:56Z Santaball (MIGRATED, $548,431 mcap, $109,895 5m vol): REJECT, Top 10 hold 49.6% ex-pool (>25%) (V13)  
   CA `4obGGXRMVyqpWZr12UzyaBdNkgdYwz2GiY8enmd2pump`
-- 01:55Z dog3d (FINAL_STRETCH, $19,317 mcap, $15,469 5m vol): PASS at conviction 2, PASS: dog3d is a copy in an 18-coin dog field, not the leader (DOG3D is). It's also up 40% in 5m and top 10 hold 19.6%. Blockers: split crowd, chasing spike, top 10 over 15%. (V1, V3, V6)  
-  CA `8YjTr1ehqPHXRTuZuULJAuciFqNMRJmNmzyrY2cUpump`
-- 01:52Z urcoin (FINAL_STRETCH, $14,650 mcap, $2,944 5m vol): PASS at conviction 2, PASS: this is a copy in a 27-coin "urcoin" vamp field, not the leader, and it's 4.7x off its hourly low with no higher low. Chasing a spike. (V1, V3, V6)  
-  CA `25m4Lkct8nsYyqAMeE8rvjM3y5Zrrax46TLqNJjbpump`
-- 01:47Z 530A (FINAL_STRETCH, $20,066 mcap, $8,753 5m vol): REJECT, Top 10 hold 26.2% ex-pool (>25%) (V13)  
-  CA `6xd5H7a5dRafVaTyKhhXkMS2iW9bDNPD7g5nAndoZhKK`
 
 ## What its skips did next (last 48h)
 A skip "ran" if the coin reached the first target (1.5x) from the skip price before a 20% drop, "dumped" if the drop came first. Sampled every 10 min, followed 6h.
-- top 10 over 25%: blocked 50, ran 9, dumped 38, flat 0, open 3 (saving losses: keep it)
+- top 10 over 25%: blocked 50, ran 8, dumped 38, flat 0, open 4 (saving losses: keep it)
   - ran: SWARM up to 1.57x  
     CA `2Rw6rLRRZXQLNreForjeVvDjnpYUaW6rmMFXmRP9pump`
   - ran: ð up to 1.65x  
     CA `GeUnGPLFku8zn1dJUNZpj6VymUxt7A3t9DqRL5WJpump`
   - ran: MONEY up to 1.58x  
     CA `DeACAbp2GMzapB6Z2K8qdkTZupmNbKc6EZx9bnbCpump`
-- near the high / chasing: blocked 42, ran 6, dumped 33, flat 3, open 0 (saving losses: keep it)
+- near the high / chasing: blocked 42, ran 6, dumped 32, flat 3, open 1 (saving losses: keep it)
   - ran: SNOWCUMBRR up to 2.36x  
     CA `Gf9wm93TTDpbPC467Eio5Vc42Kr6MAomUD172drWpump`
   - ran: HEYOS up to 1.91x  
     CA `A88p1LcHisrx3TuTwUGVrLtc1LBTUPZUfVgaCGutAFaK`
   - ran: Nala up to 1.64x  
     CA `FeBG8AEG4j7LT7xQF38gPXQFBRBtXBTNzhZjSa3bpump`
-- flow below pace: blocked 41, ran 4, dumped 30, flat 4, open 3 (saving losses: keep it)
+- flow below pace: blocked 41, ran 5, dumped 29, flat 4, open 3 (saving losses: keep it)
   - ran: BASKET up to 1.55x  
     CA `3Tg6YnNrfPdFfsY14MaNsDMWLseAyrUDS3myJtbaJN6f`
   - ran: BIAO up to 1.51x  
     CA `As3XtYSstuVdrVyb6sJZZ77Tu8JvjTBg6S6hgPv4pump`
   - ran: PAIR up to 2.1x  
     CA `32rBxcFjCFnyqZ41CEPM5AL67X1dcw8w83vZt6Kxpump`
-- too new / sniping: blocked 41, ran 8, dumped 31, flat 0, open 2 (saving losses: keep it)
+- too new / sniping: blocked 41, ran 8, dumped 32, flat 0, open 1 (saving losses: keep it)
   - ran: BABYANSEM up to 2.77x  
     CA `F3VctV9FqDgiyqaztN6z78bgWy27eH7DBBHW1vjpump`
   - ran: Merged up to 2.18x  
@@ -201,11 +201,11 @@ Meta from scan_movers (the crawler's Kuro and POPBALL figures don't match the sc
 ## Moving most in its scans, last 30 min (1h volume)
 - KAI: $1,027,380 1h vol, $3,082,273 mcap, +0% 1h  
   CA `G2ZDG8q3QMYk3KR58JFFYsvaTk4Gy94UzMo7Re7spump`
-- steppa: $162,277 1h vol, $38,447 mcap, +19% 1h  
-  CA `6StXSU7RvsbuwNG2gPw7nmu2UTVM3ZD2aewHA7fMpump`
-- POPBALL: $113,769 1h vol, $1,476 mcap, -99% 1h  
-  CA `CKiuTwHFMXKBaQ4V1WgsYctsdbLeit3wytXRkphzpump`
-- 530A: $94,926 1h vol, $68,970 mcap, +130% 1h  
-  CA `7Ttmp4xBtErMzxpR6AhuzJjDf7u3YGJtWm5ibPsqpump`
-- Snowball: $55,305 1h vol, $571,733 mcap, -3% 1h  
-  CA `9TKbd3VFaMSXsEAicD9JVQWpWwAoLi4fSgWmZL2cpump`
+- Santaball: $799,599 1h vol, $902,598 mcap, +2422% 1h  
+  CA `4obGGXRMVyqpWZr12UzyaBdNkgdYwz2GiY8enmd2pump`
+- DragonRiders: $322,329 1h vol, $141,336 mcap, +189% 1h  
+  CA `5xrT8y2KU2YwzipwCMNxxTc8KAGQd4wjtGTc2WyJJCMh`
+- TOGO: $169,250 1h vol, $1,343 mcap, -99% 1h  
+  CA `2QChKk7EvS3K9ezWu7Qs7981Qd2aJz4FEPce1HBZpump`
+- SpaceXCoin: $139,072 1h vol, $181,469 mcap, +451% 1h  
+  CA `G2XqmSc8vJpLLwaLVXUeNkxsrhVT8vQ3Pje8MqeDpump`
