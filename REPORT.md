@@ -1,13 +1,13 @@
 # Trencher live report
 
-Updated 2026-11-27T03:00:08Z (paper trading, never real money)
+Updated 2026-11-27T03:15:08Z (paper trading, never real money)
 
 - Equity: $74.23 (-25.8% vs $100 start)
 - Closed trades: 22, 3 wins
 - Fees paid: $14.78 (axiom $2.81, network $9.18, pool $2.66), plus $4.15 lost to slippage
 - New trades: WATCH-ONLY (scans and decides, buys nothing)
-- Brain: subscription, claude-haiku-5-5 for routine calls, claude-opus-5-5 for the daily review; 359 routine calls and 0 plan-limit hits in 48h
-- Watch log: 73 coins being followed, 4074 filed, 0 would-buys (6h follow, sampled every 2 min)
+- Brain: subscription, claude-haiku-5-5 for routine calls, claude-opus-5-5 for the daily review; 358 routine calls and 0 plan-limit hits in 48h
+- Watch log: 70 coins being followed, 4078 filed, 0 would-buys (6h follow, sampled every 2 min)
 
 ## Scorecard (after fees)
 - 22 closed, 3 won (14%), net $-25.79
@@ -73,9 +73,11 @@ Updated 2026-11-27T03:00:08Z (paper trading, never real money)
   CA `H4gHnZ3NCU7Z9XQwGX6YYJNyieGEW8pqwGRUcdSxpump`
 
 ## Last scan
-- 02:59Z: 7 coins, 7 with pairs, 1 passed the market filters, 1 researched
+- 03:14Z: 3 coins, 3 with pairs, 0 passed the market filters, 0 researched
 
 ## Coins it looked at, and why it passed
+- 03:09Z SOLCAP (MIGRATED, $33,829 mcap, $32,388 5m vol): PASS at conviction 2, PASS. Blocker: too new (2.7 min old), chasing spike (5m volume 12x hourly pace), no higher low, and 13 copies of the ticker. Solana Capybara is a lottery ticket on a crowd that just arrived. (V1, V6, V13)  
+  CA `J2We8huLbXG4Ueij766B6Yzjg3Ktf2qH5zhaD3cDpump`
 - 02:59Z 530A (MIGRATED, $88,331 mcap, $56,509 5m vol): REJECT, Bundles: 10 linked wallet cluster(s) hold 100.0% of supply (>20%) (V17)  
   CA `7Ttmp4xBtErMzxpR6AhuzJjDf7u3YGJtWm5ibPsqpump`
 - 02:56Z Snowball (MIGRATED, $634,750 mcap, $10,313 5m vol): PASS at conviction 3, PASS: no breakout, and it's a bundled leader in an 18-copy field, on a 1.4-day-old "roll to buy" holder site. Blockers: "no breakout" and "split crowd" (V1, V3, V6, V13).  
@@ -94,8 +96,6 @@ Updated 2026-11-27T03:00:08Z (paper trading, never real money)
   CA `G2ZDG8q3QMYk3KR58JFFYsvaTk4Gy94UzMo7Re7spump`
 - 02:25Z WAHA (FINAL_STRETCH, $19,294 mcap, $40,022 5m vol): PASS at conviction 3, PASS: chasing spike. WAHA is 6 minutes old, up 79% on the 5m at 9.6x its hourly pace, and one of 10 copies of the same ticker. Blocker: "chasing spike" (V1, V6).  
   CA `D3PSUeS11AQNgpfX8GRFdXfVzZwmNanPX9MdGKyHpump`
-- 02:13Z 530A (MIGRATED, $66,080 mcap, $10,177 5m vol): REJECT, Bundles: 9 linked wallet cluster(s) hold 100.0% of supply (>20%) (V17)  
-  CA `7Ttmp4xBtErMzxpR6AhuzJjDf7u3YGJtWm5ibPsqpump`
 
 ## What its skips did next (last 48h)
 A skip "ran" if the coin reached the first target (1.5x) from the skip price before a 20% drop, "dumped" if the drop came first. Sampled every 10 min, followed 6h.
@@ -106,21 +106,21 @@ A skip "ran" if the coin reached the first target (1.5x) from the skip price bef
     CA `GeUnGPLFku8zn1dJUNZpj6VymUxt7A3t9DqRL5WJpump`
   - ran: MONEY up to 1.58x  
     CA `DeACAbp2GMzapB6Z2K8qdkTZupmNbKc6EZx9bnbCpump`
-- near the high / chasing: blocked 42, ran 6, dumped 32, flat 3, open 1 (saving losses: keep it)
-  - ran: SNOWCUMBRR up to 2.36x  
-    CA `Gf9wm93TTDpbPC467Eio5Vc42Kr6MAomUD172drWpump`
-  - ran: HEYOS up to 1.91x  
-    CA `A88p1LcHisrx3TuTwUGVrLtc1LBTUPZUfVgaCGutAFaK`
-  - ran: Nala up to 1.64x  
-    CA `FeBG8AEG4j7LT7xQF38gPXQFBRBtXBTNzhZjSa3bpump`
-- too new / sniping: blocked 41, ran 8, dumped 33, flat 0, open 0 (saving losses: keep it)
+- too new / sniping: blocked 42, ran 8, dumped 33, flat 0, open 1 (saving losses: keep it)
   - ran: BABYANSEM up to 2.77x  
     CA `F3VctV9FqDgiyqaztN6z78bgWy27eH7DBBHW1vjpump`
   - ran: Merged up to 2.18x  
     CA `AMYpNGi5aGrKr1ZDsotUdWh7k1mMi569ygtaHJmErGEd`
   - ran: Boor up to 1.56x  
     CA `GHFpSSw2ZMjmKCyc1wrHUjJiqnJeP18mekY9GL1Xpump`
-- flow below pace: blocked 40, ran 5, dumped 28, flat 4, open 3 (saving losses: keep it)
+- near the high / chasing: blocked 41, ran 6, dumped 31, flat 3, open 1 (saving losses: keep it)
+  - ran: SNOWCUMBRR up to 2.36x  
+    CA `Gf9wm93TTDpbPC467Eio5Vc42Kr6MAomUD172drWpump`
+  - ran: HEYOS up to 1.91x  
+    CA `A88p1LcHisrx3TuTwUGVrLtc1LBTUPZUfVgaCGutAFaK`
+  - ran: Nala up to 1.64x  
+    CA `FeBG8AEG4j7LT7xQF38gPXQFBRBtXBTNzhZjSa3bpump`
+- flow below pace: blocked 39, ran 5, dumped 27, flat 4, open 3 (saving losses: keep it)
   - ran: BASKET up to 1.55x  
     CA `3Tg6YnNrfPdFfsY14MaNsDMWLseAyrUDS3myJtbaJN6f`
   - ran: BIAO up to 1.51x  
@@ -199,13 +199,13 @@ No edge yet. All 276 settled coins lost money after costs under the simple plan:
 The trenches are not quiet. The scan shows two rising themes: space and holiday names. SpaceX-named launches are buying hard, with SpaceXCoin at $181k cap, $67k 5m and 83% buys at 12 minutes old, and SpaceX'ers at $9k cap with 65% buys. Holiday names are the other one, with Santaball at $903k, $22k 5m, 73% buys and +2422% in an hour, which fits the holiday front-run pattern (V5) but is a spike that can be the top. DragonRiders ($141k, $37k 5m, 58% buys) is a fantasy-animal name pulling volume too. Fading: cat and joke names (Cumass -81%, Cogecoin at $38 5m) and old character names (JIMMY $1.9k 5m, CBUCKS $584 5m on a $7M cap); the crawler's cat, TURBO and PopCatBall figures don't appear in the scan, so I'm not counting them, and Kai Ken shows $3.5k 5m in the scan, not the crawler's $179k, so it fails the $10k bar until I recheck. Research queue, nothing bought yet: SpaceXCoin and Santaball as migrated candidates (both pass the age, cap and 5m screens, both parabolic, so exits get written before any entry), DragonRiders as a third, and Waha (pump.fun, $18k cap, $36k 5m, 59% buys) as a FINAL_STRETCH idea near bond. Holder, dev and bundle checks run on each one before any entry.
 
 ## Moving most in its scans, last 30 min (1h volume)
-- Santaball: $799,599 1h vol, $902,598 mcap, +2422% 1h  
-  CA `4obGGXRMVyqpWZr12UzyaBdNkgdYwz2GiY8enmd2pump`
 - 530A: $453,482 1h vol, $84,215 mcap, +115% 1h  
   CA `7Ttmp4xBtErMzxpR6AhuzJjDf7u3YGJtWm5ibPsqpump`
-- DragonRiders: $322,329 1h vol, $141,336 mcap, +189% 1h  
-  CA `5xrT8y2KU2YwzipwCMNxxTc8KAGQd4wjtGTc2WyJJCMh`
-- steppa: $217,489 1h vol, $22,720 mcap, -16% 1h  
+- steppa: $120,690 1h vol, $20,486 mcap, -51% 1h  
   CA `6StXSU7RvsbuwNG2gPw7nmu2UTVM3ZD2aewHA7fMpump`
-- SpaceXCoin: $139,072 1h vol, $181,469 mcap, +451% 1h  
-  CA `G2XqmSc8vJpLLwaLVXUeNkxsrhVT8vQ3Pje8MqeDpump`
+- Snowball: $72,397 1h vol, $631,541 mcap, +29% 1h  
+  CA `9TKbd3VFaMSXsEAicD9JVQWpWwAoLi4fSgWmZL2cpump`
+- pumpers: $63,734 1h vol, $8,732 mcap, +142% 1h  
+  CA `9o23zEgFu6VtSrBh9eeindVUGotghyxgC8KqLExYpump`
+- WAHA: $43,633 1h vol, $2,159 mcap, -93% 1h  
+  CA `D3PSUeS11AQNgpfX8GRFdXfVzZwmNanPX9MdGKyHpump`
