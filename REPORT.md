@@ -1,13 +1,13 @@
 # Trencher live report
 
-Updated 2026-11-27T17:53:48Z (paper trading, never real money)
+Updated 2026-11-27T18:08:48Z (paper trading, never real money)
 
 - Equity: $74.23 (-25.8% vs $100 start)
 - Closed trades: 22, 3 wins
 - Fees paid: $14.78 (axiom $2.81, network $9.18, pool $2.66), plus $4.15 lost to slippage
 - New trades: WATCH-ONLY (scans and decides, buys nothing)
-- Brain: subscription, claude-haiku-5-5 for routine calls, claude-opus-5-5 for the daily review; 399 routine calls and 9 plan-limit hits in 48h
-- Watch log: 66 coins being followed, 4231 filed, 0 would-buys (6h follow, sampled every 2 min)
+- Brain: subscription, claude-haiku-5-5 for routine calls, claude-opus-5-5 for the daily review; 398 routine calls and 9 plan-limit hits in 48h
+- Watch log: 65 coins being followed, 4233 filed, 0 would-buys (6h follow, sampled every 2 min)
 
 ## Scorecard (after fees)
 - 22 closed, 3 won (14%), net $-25.79
@@ -73,9 +73,11 @@ Updated 2026-11-27T17:53:48Z (paper trading, never real money)
   CA `H4gHnZ3NCU7Z9XQwGX6YYJNyieGEW8pqwGRUcdSxpump`
 
 ## Last scan
-- 17:53Z: 6 coins, 6 with pairs, 0 passed the market filters, 0 researched
+- 18:08Z: 4 coins, 4 with pairs, 0 passed the market filters, 0 researched
 
 ## Coins it looked at, and why it passed
+- 17:58Z Split (DIP, $53,886 mcap, $20,597 5m vol): REJECT, Dip with fading attention is a falling knife, not a dip (5m at 0.50x the hour's pace, under 0.6x)  
+  CA `HAP9FcXubD88SjRHMY1kr5iukpRZgeMAgCBam3Vtpump`
 - 17:49Z boing (FINAL_STRETCH, $19,241 mcap, $10,974 5m vol): REJECT, Top 10 hold 27.1% ex-pool (>25%) (V13)  
   CA `4an4F8Wdi1tXUCFarrhcQvZY4MCVvixcRhT4pANusbha`
 - 17:48Z IceBall (FINAL_STRETCH, $15,152 mcap, $20,601 5m vol): PASS at conviction 2, PASS: IceBall is a 6-minute-old pump.fun copy running at 7.2x its hourly pace after +43% on the 5m, with no higher low, no X and no catalyst. Blocker: chasing spike (V1, V6).  
@@ -94,8 +96,6 @@ Updated 2026-11-27T17:53:48Z (paper trading, never real money)
   CA `6J3m4E2AvckGpMypHoBmT9JdPA6QZJ66X9AfzYwWZttc`
 - 17:21Z 67 (MIGRATED, $113,106 mcap, $13,671 5m vol): PASS at conviction 3, PASS: flow below pace. 5m volume is 0.24x the hourly average, no printed higher low, and one bundle cluster holds 6.6%. Blocker: "flow below pace" (V1, V6).  
   CA `8ob6WB1VTJasK2r6EjzbMyJ5Zv8bd6jDsTtahvxunyLV`
-- 17:13Z Split (MIGRATED, $60,775 mcap, $54,678 5m vol): PASS at conviction 3, PASS: a six-minute-old pump.fun leader up 49% in 5m at 8.5x its hourly pace, with no printed higher low and a domain registered today. Blockers: chasing spike, too new, no higher low (V1, V3, V6).  
-  CA `HAP9FcXubD88SjRHMY1kr5iukpRZgeMAgCBam3Vtpump`
 
 ## What its skips did next (last 48h)
 A skip "ran" if the coin reached the first target (1.5x) from the skip price before a 20% drop, "dumped" if the drop came first. Sampled every 10 min, followed 6h.
@@ -106,14 +106,14 @@ A skip "ran" if the coin reached the first target (1.5x) from the skip price bef
     CA `DeACAbp2GMzapB6Z2K8qdkTZupmNbKc6EZx9bnbCpump`
   - ran: Legatum up to 2.21x  
     CA `HkPSDYRcw4uqgRzZMDd5sRnMpE4ungR1K8MRNXnBVtQ2`
-- flow below pace: blocked 51, ran 3, dumped 42, flat 4, open 2 (saving losses: keep it)
+- flow below pace: blocked 51, ran 4, dumped 43, flat 4, open 0 (saving losses: keep it)
   - ran: PAIR up to 2.1x  
     CA `32rBxcFjCFnyqZ41CEPM5AL67X1dcw8w83vZt6Kxpump`
   - ran: Hoppy up to 1.76x  
     CA `CFX1gH7CKYwqYXrfDkS2MUxJcEhs8PT63DyRA1chpump`
   - ran: SpaceXCoin up to 1.52x  
     CA `G2XqmSc8vJpLLwaLVXUeNkxsrhVT8vQ3Pje8MqeDpump`
-- too new / sniping: blocked 44, ran 7, dumped 37, flat 0, open 0 (saving losses: keep it)
+- too new / sniping: blocked 43, ran 6, dumped 37, flat 0, open 0 (saving losses: keep it)
   - ran: COIN up to 1.85x  
     CA `ALLherSTscpAErYo5Jja3ysVocaa2oeZkUvgmvhZpump`
   - ran: Slapcat up to 1.61x  
@@ -134,7 +134,7 @@ A skip "ran" if the coin reached the first target (1.5x) from the skip price bef
     CA `cg3HaDWhAKFfj9aq79TWUBgmxfs4G7byQ7feaxnpump`
   - ran: monky up to 96.37x  
     CA `At5hmwDn4YgPDoic1UN7zMdTtCoiXJsMhnKaoazEpump`
-- falling knife (code): blocked 21, ran 2, dumped 17, flat 1, open 1 (saving losses: keep it)
+- falling knife (code): blocked 22, ran 2, dumped 17, flat 1, open 2 (saving losses: keep it)
   - ran: Investor up to 1.58x  
     CA `J9eBkCb4UtquAMQqB6duwBmR99fFSMoTnDcaMB9Wpump`
   - ran: MONEY up to 1.58x  
@@ -199,13 +199,13 @@ No edge after costs, and I'm fairly sure of that. All 250 settled coins averaged
 The trenches are trading fresh PumpSwap launches, not a news story. Laura (about $426k cap, $90k 5m, 70% buys, 12 min old), Split ($61k cap, $55k 5m, 55% buys, 6 min old), 67 ($110k cap, $15.7k 5m, 62% buys, 48 min old) and Elfball ($378k cap, $15k 5m, 76% buys, +1040% in 1h) are all under an hour old with buy-heavy flow, and the only theme I can see in the names is joke slang (67, Split, Elfball). Fading: Memecoin (Meme) is down 99% on 11% buys, REVINU is at 47% buys, and the days-old coins (enu, MEMEMAN, Banc) have dead 5m volume. KITT, the AI-sounding name the crawler flagged, shows only $6k 5m on scan_movers, which is under the bar, and the crawler's $12.8k figure disagrees with the scan, so I'm not using it. Setups to research, not buy yet: Laura and Split as MIGRATED-style momentum (V1, V6), and 67 only if its 5m holds at $10k or more on a pullback with buys over half. Elfball is a chase after +1040%, so only on a deep retrace. None of these has holder, dev or bundle checks yet, and the Trump dinner and ANSEM headlines aren't in this flow, so I'm not anchoring on them. Paper only, not financial advice.
 
 ## Moving most in its scans, last 30 min (1h volume)
-- MEMECARD: $559,859 1h vol, $490,305 mcap, +345% 1h  
-  CA `8sAxwsNzhRj6LF5npy1HtPir94TzSgP1QaczUmGcpump`
-- NBA: $467,884 1h vol, $464,570 mcap, +98% 1h  
-  CA `AjucUKL3i8wh7SvFL9h5cZbWkd3M9JibLkdvRJKppump`
+- Split: $492,275 1h vol, $59,061 mcap, +93% 1h  
+  CA `HAP9FcXubD88SjRHMY1kr5iukpRZgeMAgCBam3Vtpump`
 - Meme: $315,959 1h vol, $1,496 mcap, -100% 1h  
   CA `CV1NPi8L2PSYMfALBh7GCfUwELZzG3DrLUUjCkeapump`
-- DIHBALL: $200,044 1h vol, $165,552 mcap, +3% 1h  
-  CA `99CQuNiF6WN44xyKqPP9N41x5R9Uu8MkTM9CK3Rzpump`
-- Laura: $199,915 1h vol, $1,378 mcap, -100% 1h  
-  CA `94Dwo5g4NywRxrcdALS8Vbq4s4xHqWSkgQsCGNpQpump`
+- FIREBALL: $61,251 1h vol, $5,100 mcap, +149% 1h  
+  CA `2aakMixmcuSN6ggU6SMsLpixeXWtm4XYGnEWBDGYpump`
+- spaz: $46,280 1h vol, $5,143 mcap, +125% 1h  
+  CA `5eMdZTBAT2ejKvccat5bD6v4i1njm7ZsGHiBxi5ppump`
+- boing: $36,596 1h vol, $19,986 mcap, +603% 1h  
+  CA `4an4F8Wdi1tXUCFarrhcQvZY4MCVvixcRhT4pANusbha`
