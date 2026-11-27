@@ -1,13 +1,13 @@
 # Trencher live report
 
-Updated 2026-11-27T02:14:47Z (paper trading, never real money)
+Updated 2026-11-27T02:30:01Z (paper trading, never real money)
 
 - Equity: $74.23 (-25.8% vs $100 start)
 - Closed trades: 22, 3 wins
 - Fees paid: $14.78 (axiom $2.81, network $9.18, pool $2.66), plus $4.15 lost to slippage
 - New trades: WATCH-ONLY (scans and decides, buys nothing)
 - Brain: subscription, claude-haiku-5-5 for routine calls, claude-opus-5-5 for the daily review; 360 routine calls and 0 plan-limit hits in 48h
-- Watch log: 70 coins being followed, 4068 filed, 0 would-buys (6h follow, sampled every 2 min)
+- Watch log: 72 coins being followed, 4068 filed, 0 would-buys (6h follow, sampled every 2 min)
 
 ## Scorecard (after fees)
 - 22 closed, 3 won (14%), net $-25.79
@@ -73,9 +73,13 @@ Updated 2026-11-27T02:14:47Z (paper trading, never real money)
   CA `H4gHnZ3NCU7Z9XQwGX6YYJNyieGEW8pqwGRUcdSxpump`
 
 ## Last scan
-- 02:14Z: 2 coins, 2 with pairs, 0 passed the market filters, 0 researched
+- 02:29Z: 5 coins, 5 with pairs, 0 passed the market filters, 0 researched
 
 ## Coins it looked at, and why it passed
+- 02:25Z KAI (MIGRATED, $3,082,273 mcap, $3,510 5m vol): PASS at conviction 2, PASS: flow below pace. 5m volume is $3.5k at 0.04x the hour's average on a $3.1M coin, and the site says "CA TBA" (V1, V6, V13).  
+  CA `G2ZDG8q3QMYk3KR58JFFYsvaTk4Gy94UzMo7Re7spump`
+- 02:25Z WAHA (FINAL_STRETCH, $19,294 mcap, $40,022 5m vol): PASS at conviction 3, PASS: chasing spike. WAHA is 6 minutes old, up 79% on the 5m at 9.6x its hourly pace, and one of 10 copies of the same ticker. Blocker: "chasing spike" (V1, V6).  
+  CA `D3PSUeS11AQNgpfX8GRFdXfVzZwmNanPX9MdGKyHpump`
 - 02:13Z 530A (MIGRATED, $66,080 mcap, $10,177 5m vol): REJECT, Bundles: 9 linked wallet cluster(s) hold 100.0% of supply (>20%) (V17)  
   CA `7Ttmp4xBtErMzxpR6AhuzJjDf7u3YGJtWm5ibPsqpump`
 - 02:13Z steppa (MIGRATED, $38,447 mcap, $32,993 5m vol): PASS at conviction 3, PASS — 16 minutes off a bond spike, down 20% on 5m, no printed higher low I can verify, top 10 at 17.6%. Too new, and nothing to bottom-buy on. (V1, V6)  
@@ -92,42 +96,38 @@ Updated 2026-11-27T02:14:47Z (paper trading, never real money)
   CA `25m4Lkct8nsYyqAMeE8rvjM3y5Zrrax46TLqNJjbpump`
 - 01:47Z 530A (FINAL_STRETCH, $20,066 mcap, $8,753 5m vol): REJECT, Top 10 hold 26.2% ex-pool (>25%) (V13)  
   CA `6xd5H7a5dRafVaTyKhhXkMS2iW9bDNPD7g5nAndoZhKK`
-- 01:46Z TOGO (MIGRATED, $431,924 mcap, $51,524 5m vol): REJECT, Dev holds 5.1% (>1%) (V13, V17)  
-  CA `2QChKk7EvS3K9ezWu7Qs7981Qd2aJz4FEPce1HBZpump`
-- 01:39Z KAI (MIGRATED, $3,854,908 mcap, $220,637 5m vol): REJECT, Top 10 hold 25.7% ex-pool (>25%) (V13)  
-  CA `G2ZDG8q3QMYk3KR58JFFYsvaTk4Gy94UzMo7Re7spump`
 
 ## What its skips did next (last 48h)
 A skip "ran" if the coin reached the first target (1.5x) from the skip price before a 20% drop, "dumped" if the drop came first. Sampled every 10 min, followed 6h.
-- top 10 over 25%: blocked 52, ran 9, dumped 40, flat 0, open 3 (saving losses: keep it)
+- top 10 over 25%: blocked 50, ran 9, dumped 38, flat 0, open 3 (saving losses: keep it)
   - ran: SWARM up to 1.57x  
     CA `2Rw6rLRRZXQLNreForjeVvDjnpYUaW6rmMFXmRP9pump`
   - ran: ð up to 1.65x  
     CA `GeUnGPLFku8zn1dJUNZpj6VymUxt7A3t9DqRL5WJpump`
   - ran: MONEY up to 1.58x  
     CA `DeACAbp2GMzapB6Z2K8qdkTZupmNbKc6EZx9bnbCpump`
-- near the high / chasing: blocked 42, ran 5, dumped 33, flat 3, open 1 (saving losses: keep it)
+- near the high / chasing: blocked 42, ran 6, dumped 33, flat 3, open 0 (saving losses: keep it)
   - ran: SNOWCUMBRR up to 2.36x  
     CA `Gf9wm93TTDpbPC467Eio5Vc42Kr6MAomUD172drWpump`
   - ran: HEYOS up to 1.91x  
     CA `A88p1LcHisrx3TuTwUGVrLtc1LBTUPZUfVgaCGutAFaK`
   - ran: Nala up to 1.64x  
     CA `FeBG8AEG4j7LT7xQF38gPXQFBRBtXBTNzhZjSa3bpump`
-- flow below pace: blocked 40, ran 4, dumped 30, flat 4, open 2 (saving losses: keep it)
+- flow below pace: blocked 41, ran 4, dumped 30, flat 4, open 3 (saving losses: keep it)
   - ran: BASKET up to 1.55x  
     CA `3Tg6YnNrfPdFfsY14MaNsDMWLseAyrUDS3myJtbaJN6f`
   - ran: BIAO up to 1.51x  
     CA `As3XtYSstuVdrVyb6sJZZ77Tu8JvjTBg6S6hgPv4pump`
   - ran: PAIR up to 2.1x  
     CA `32rBxcFjCFnyqZ41CEPM5AL67X1dcw8w83vZt6Kxpump`
-- too new / sniping: blocked 40, ran 8, dumped 31, flat 0, open 1 (saving losses: keep it)
+- too new / sniping: blocked 41, ran 8, dumped 31, flat 0, open 2 (saving losses: keep it)
   - ran: BABYANSEM up to 2.77x  
     CA `F3VctV9FqDgiyqaztN6z78bgWy27eH7DBBHW1vjpump`
   - ran: Merged up to 2.18x  
     CA `AMYpNGi5aGrKr1ZDsotUdWh7k1mMi569ygtaHJmErGEd`
   - ran: Boor up to 1.56x  
     CA `GHFpSSw2ZMjmKCyc1wrHUjJiqnJeP18mekY9GL1Xpump`
-- RugCheck danger: blocked 26, ran 2, dumped 23, flat 1, open 0 (saving losses: keep it)
+- RugCheck danger: blocked 25, ran 2, dumped 22, flat 1, open 0 (saving losses: keep it)
   - ran: TROLL up to 1.94x  
     CA `7ykeHoEnjnGkY6tqteXn47fdGtd7kfXWghiyZ7YKpump`
   - ran: Bababoi up to 2.17x  
@@ -199,13 +199,13 @@ No edge yet. All 276 settled coins lost money after costs under the simple plan:
 Meta from scan_movers (the crawler's Kuro and POPBALL figures don't match the scan, so I'm using the scan): fresh pump.fun launches with cat and joke names are getting the buyers, with the newest small caps showing buy-heavy flow on TURBO (53% buys, +255% in an hour, $4.9k 5m) and urcoin (63% buys, $5.2k 5m, 0.2h old), and cat names like PopCatBall (91% buys, $6.9k 5m) in the mix. Kai Ken (KAI) has the strongest flow at $4.0M cap, $179k 5m and 71% buys, but +3563% in an hour is a spike that can be the top, so it's research only: it passes the MIGRATED screen on age, cap and 5m volume, and I want holders, bundles and a clean chart start before any entry. Fading or dead: Kuro, Vetocat and FLOW are down 80-99% with about $0 5m, and the old character names (JIMMY, BRUH, CBUCKS, PumpMas) are running on $0.2k to $7k 5m. The Trump dinner, Ansem and Musk headlines aren't in the movers, so news isn't driving this; setups to research now are KAI as a MIGRATED candidate and urcoin and PopCatBall as pre-bond ideas, all still under the $10k 5m bar, so this is not a pass but nothing is a buy yet.
 
 ## Moving most in its scans, last 30 min (1h volume)
-- TOGO: $280,798 1h vol, $477,206 mcap, +1112% 1h  
-  CA `2QChKk7EvS3K9ezWu7Qs7981Qd2aJz4FEPce1HBZpump`
-- Santaball: $198,746 1h vol, $594,369 mcap, +1561% 1h  
-  CA `4obGGXRMVyqpWZr12UzyaBdNkgdYwz2GiY8enmd2pump`
+- KAI: $1,027,380 1h vol, $3,082,273 mcap, +0% 1h  
+  CA `G2ZDG8q3QMYk3KR58JFFYsvaTk4Gy94UzMo7Re7spump`
 - steppa: $162,277 1h vol, $38,447 mcap, +19% 1h  
   CA `6StXSU7RvsbuwNG2gPw7nmu2UTVM3ZD2aewHA7fMpump`
 - POPBALL: $113,769 1h vol, $1,476 mcap, -99% 1h  
   CA `CKiuTwHFMXKBaQ4V1WgsYctsdbLeit3wytXRkphzpump`
 - 530A: $94,926 1h vol, $68,970 mcap, +130% 1h  
   CA `7Ttmp4xBtErMzxpR6AhuzJjDf7u3YGJtWm5ibPsqpump`
+- Snowball: $55,305 1h vol, $571,733 mcap, -3% 1h  
+  CA `9TKbd3VFaMSXsEAicD9JVQWpWwAoLi4fSgWmZL2cpump`
