@@ -1,13 +1,13 @@
 # Trencher live report
 
-Updated 2026-11-27T14:21:31Z (paper trading, never real money)
+Updated 2026-11-27T14:36:42Z (paper trading, never real money)
 
 - Equity: $74.23 (-25.8% vs $100 start)
 - Closed trades: 22, 3 wins
 - Fees paid: $14.78 (axiom $2.81, network $9.18, pool $2.66), plus $4.15 lost to slippage
 - New trades: WATCH-ONLY (scans and decides, buys nothing)
-- Brain: subscription, claude-haiku-5-5 for routine calls, claude-opus-5-5 for the daily review; 385 routine calls and 9 plan-limit hits in 48h
-- Watch log: 42 coins being followed, 4210 filed, 0 would-buys (6h follow, sampled every 2 min)
+- Brain: subscription, claude-haiku-5-5 for routine calls, claude-opus-5-5 for the daily review; 388 routine calls and 9 plan-limit hits in 48h
+- Watch log: 43 coins being followed, 4212 filed, 0 would-buys (6h follow, sampled every 2 min)
 
 ## Scorecard (after fees)
 - 22 closed, 3 won (14%), net $-25.79
@@ -73,9 +73,15 @@ Updated 2026-11-27T14:21:31Z (paper trading, never real money)
   CA `H4gHnZ3NCU7Z9XQwGX6YYJNyieGEW8pqwGRUcdSxpump`
 
 ## Last scan
-- 14:20Z: 2 coins, 2 with pairs, 0 passed the market filters, 0 researched
+- 14:36Z: 6 coins, 5 with pairs, 0 passed the market filters, 0 researched
 
 ## Coins it looked at, and why it passed
+- 14:30Z KITT (MIGRATED, $45,173 mcap, $10,535 5m vol): PASS at conviction 2, PASS: no catalyst, theme pace 0.12x, and 40 min old, still bleeding off its bond spike. Blocker "dead story". (V1, V6)  
+  CA `F5LxbqJxAMrvfxLbqPckErmqNyiPzDJMUXnX8vrhpump`
+- 14:25Z TWORBIT (MIGRATED, $415,724 mcap, $12,394 5m vol): PASS at conviction 2, PASS: flow below pace. 5m volume is 0.31x the hourly average, the price isn't pushing the high, and six copies of the ticker are out there (V1, V6, V17).  
+  CA `GXpQZkap4ExgQTTX4SXfETV7nt1YZKEZSakqos3hpump`
+- 14:24Z FRGST (MIGRATED, $88,117 mcap, $20,980 5m vol): PASS at conviction 3, PASS — chasing: 7.6% off a $95k high with no printed higher low, and the project site is a real conservation charity that doesn't show this CA. Blocker: "chasing" (V1, V6, V13).  
+  CA `DNgboHpauGZ5KbSptWSkwQyQLSDCQKdoU3qsk9FTpump`
 - 14:16Z WW (MIGRATED, $538,736 mcap, $2,225 5m vol): PASS at conviction 3, PASS — no higher low and no breakout. WW is 23% off its high and still falling back from the 0.000647 bounce, with 5m flow at 2.4x pace on only $2.2k. Blocker: "no higher low" (V1, V6).  
   CA `8rjgC1GsBo4fwuXjq7Hy12SAFxgFxbtSJJSFBYkVpump`
 - 14:02Z BRUH (DIP, $5,460,284 mcap, $2,596 5m vol): REJECT, Dip with fading attention is a falling knife, not a dip (5m at 0.24x the hour's pace, under 0.6x)  
@@ -90,12 +96,6 @@ Updated 2026-11-27T14:21:31Z (paper trading, never real money)
   CA `F5LxbqJxAMrvfxLbqPckErmqNyiPzDJMUXnX8vrhpump`
 - 13:39Z TWORBIT (MIGRATED, $245,553 mcap, $31,381 5m vol): PASS at conviction 2, PASS. Chasing a spike 4% under the high, 0.4h old, no higher low, and the first resistance is 1.04x away. (V1, V6)  
   CA `GXpQZkap4ExgQTTX4SXfETV7nt1YZKEZSakqos3hpump`
-- 13:38Z Joe (no setup, $14,078 mcap, $4,769 5m vol): REJECT, No setup fits: not Final Stretch, not a migrated runner, not a healthy dip  
-  CA `DwQgXTe98WQHkM6n7htVLYdk2pBpE5amPF1cBNbE3yhh`
-- 13:35Z Spread (FINAL_STRETCH, $23,083 mcap, $2,059 5m vol): PASS at conviction 2, PASS: 5m flow is $2k with sellers ahead (42% buys), and the "one drop per wallet" pitch on a 2-hour-old domain is an airdrop-shaped story (blocker: flow below pace / chasing, V1, V3, V13).  
-  CA `HQYLt1Ne2xQdknmZjbnTffSKFYX2ZHCkBG3WBJQYpump`
-- 13:23Z Winston (MIGRATED, $43,995 mcap, $45,677 5m vol): PASS at conviction 2, PASS: a 5-minute-old copy with no higher low, +41% on the 5m, one linked bundle at 19.7% and no X. Not the field leader either. (V1, V3, V6)  
-  CA `5zpFmDhjE9NLP2w5wjnVQs3g5sg7M2bihnV7pi6vudAR`
 
 ## What its skips did next (last 48h)
 A skip "ran" if the coin reached the first target (1.5x) from the skip price before a 20% drop, "dumped" if the drop came first. Sampled every 10 min, followed 6h.
@@ -106,21 +106,21 @@ A skip "ran" if the coin reached the first target (1.5x) from the skip price bef
     CA `DeACAbp2GMzapB6Z2K8qdkTZupmNbKc6EZx9bnbCpump`
   - ran: Legatum up to 2.21x  
     CA `HkPSDYRcw4uqgRzZMDd5sRnMpE4ungR1K8MRNXnBVtQ2`
-- flow below pace: blocked 44, ran 4, dumped 33, flat 5, open 2 (saving losses: keep it)
+- flow below pace: blocked 45, ran 4, dumped 33, flat 5, open 3 (saving losses: keep it)
   - ran: BIAO up to 1.51x  
     CA `As3XtYSstuVdrVyb6sJZZ77Tu8JvjTBg6S6hgPv4pump`
   - ran: PAIR up to 2.1x  
     CA `32rBxcFjCFnyqZ41CEPM5AL67X1dcw8w83vZt6Kxpump`
   - ran: Hoppy up to 1.76x  
     CA `CFX1gH7CKYwqYXrfDkS2MUxJcEhs8PT63DyRA1chpump`
-- too new / sniping: blocked 42, ran 6, dumped 36, flat 0, open 0 (saving losses: keep it)
+- too new / sniping: blocked 43, ran 6, dumped 36, flat 0, open 1 (saving losses: keep it)
   - ran: COIN up to 1.85x  
     CA `ALLherSTscpAErYo5Jja3ysVocaa2oeZkUvgmvhZpump`
   - ran: Slapcat up to 1.61x  
     CA `AqNAfcg8AkidVLLE7Tszh2PjUGzgaKvJskDXQXRHpump`
   - ran: STUDS up to 2.35x  
     CA `34J9VrBeJ2dWActyAMpoNBKvoxZCqQz3SivmnnmSTUds`
-- near the high / chasing: blocked 39, ran 6, dumped 30, flat 2, open 1 (saving losses: keep it)
+- near the high / chasing: blocked 38, ran 5, dumped 29, flat 2, open 2 (saving losses: keep it)
   - ran: HEYOS up to 1.91x  
     CA `A88p1LcHisrx3TuTwUGVrLtc1LBTUPZUfVgaCGutAFaK`
   - ran: Nala up to 1.64x  
@@ -134,14 +134,14 @@ A skip "ran" if the coin reached the first target (1.5x) from the skip price bef
     CA `cg3HaDWhAKFfj9aq79TWUBgmxfs4G7byQ7feaxnpump`
   - ran: monky up to 96.37x  
     CA `At5hmwDn4YgPDoic1UN7zMdTtCoiXJsMhnKaoazEpump`
-- RugCheck danger: blocked 19, ran 1, dumped 16, flat 2, open 0 (saving losses: keep it)
-  - ran: Bababoi up to 2.17x  
-    CA `28B9kDm6XtQNqAkzuiKH3Zu1L8cVM6SLW4iRamFspump`
 - falling knife (code): blocked 18, ran 2, dumped 14, flat 1, open 1 (saving losses: keep it)
   - ran: Investor up to 1.58x  
     CA `J9eBkCb4UtquAMQqB6duwBmR99fFSMoTnDcaMB9Wpump`
   - ran: MONEY up to 1.58x  
     CA `DeACAbp2GMzapB6Z2K8qdkTZupmNbKc6EZx9bnbCpump`
+- RugCheck danger: blocked 18, ran 1, dumped 15, flat 2, open 0 (saving losses: keep it)
+  - ran: Bababoi up to 2.17x  
+    CA `28B9kDm6XtQNqAkzuiKH3Zu1L8cVM6SLW4iRamFspump`
 - falling knife / no higher low: blocked 13, ran 3, dumped 6, flat 3, open 1 (saving losses: keep it)
   - ran: Zero up to 2.07x  
     CA `DTSkmo3sCCKLCh91dJLiWCpwcKtK3yDBZMqZGSV1pump`
@@ -199,13 +199,13 @@ No edge after costs, and I'm fairly sure of that. All 250 settled coins averaged
 The meta is thin, not dead. The only theme with real money is fresh pump.fun/PumpSwap launches under about two hours old with 55-67% buys, and the names are scattered (Winston/Winstoncoin, Baboon Smirk, MintMyGame). Winston-named coins are rising (Winstoncoin +457% 1h, Winston +237%), while the cat cluster is fading (Choking Cat -99%, ChokeCat -52% with sellers in control). Only Winstoncoin ($12.2k 5m, 57% buys, $168k cap) clears the $10k 5m bar; Baboon Smirk ($5.6k 5m, 60% buys) is close, and the rest sit under $2k 5m or are dead legacy names (BRUH, CBUCKS, WW, JOB). Setups to research, not buy: Winstoncoin only on a pullback that holds $10k 5m with buys over half, Baboon Smirk only once its 5m clears $10k, and MintMyGame and Perpit (Meteora, $364 5m) need real volume before they count. Holder, dev and bundle checks haven't run on any of them yet, and the crawler's cap and percentage figures conflict with scan_movers, so I discarded them; the Trump dinner headlines aren't showing up in this flow. Paper only, not financial advice.
 
 ## Moving most in its scans, last 30 min (1h volume)
-- WINSTON: $577,889 1h vol, $168,261 mcap, +457% 1h  
-  CA `7Y2CVbnqZRvR5RUvEJ9RQ73fZEfv7ybNcysytAepump`
-- Zhaki: $193,289 1h vol, $44,504 mcap, +12% 1h  
-  CA `2YAfPhCrGSW82Ra33sWgurXt4dQ29SwXusvUXdJGpump`
-- BRUH: $131,693 1h vol, $5,431,965 mcap, -4% 1h  
-  CA `PgFtGGquvnv2zEkjG2N2QPvBTBrafuExGYEqahRpump`
-- WOOPY: $86,236 1h vol, $698,755 mcap, -2% 1h  
-  CA `2va3NUJtEcPemDYg2N1RgA79rPKGTGGJKo3gTY5zpump`
-- ChokingCat: $73,591 1h vol, $1,511 mcap, -99% 1h  
-  CA `ExpdNM5YykDnGTmyxCH5B3s7mdWi1cEreDvK6ic8pump`
+- TWORBIT: $483,224 1h vol, $433,673 mcap, +140% 1h  
+  CA `GXpQZkap4ExgQTTX4SXfETV7nt1YZKEZSakqos3hpump`
+- FRGST: $161,435 1h vol, $75,955 mcap, +146% 1h  
+  CA `DNgboHpauGZ5KbSptWSkwQyQLSDCQKdoU3qsk9FTpump`
+- KITT: $90,323 1h vol, $45,173 mcap, +47% 1h  
+  CA `F5LxbqJxAMrvfxLbqPckErmqNyiPzDJMUXnX8vrhpump`
+- Joe: $29,594 1h vol, $2,273 mcap, -72% 1h  
+  CA `DwQgXTe98WQHkM6n7htVLYdk2pBpE5amPF1cBNbE3yhh`
+- ChokeCat: $23,219 1h vol, $12,229 mcap, -52% 1h  
+  CA `26qFFJBo4F7EjtzCuCbJEdW4v233mY1aMRaw8Y2kpump`
