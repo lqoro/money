@@ -1,13 +1,13 @@
 # Trencher live report
 
-Updated 2026-11-27T09:03:56Z (paper trading, never real money)
+Updated 2026-11-27T09:19:00Z (paper trading, never real money)
 
 - Equity: $74.23 (-25.8% vs $100 start)
 - Closed trades: 22, 3 wins
 - Fees paid: $14.78 (axiom $2.81, network $9.18, pool $2.66), plus $4.15 lost to slippage
 - New trades: WATCH-ONLY (scans and decides, buys nothing)
 - Brain: subscription, claude-haiku-5-5 for routine calls, claude-opus-5-5 for the daily review; 378 routine calls and 0 plan-limit hits in 48h
-- Watch log: 65 coins being followed, 4147 filed, 0 would-buys (6h follow, sampled every 2 min)
+- Watch log: 63 coins being followed, 4149 filed, 0 would-buys (6h follow, sampled every 2 min)
 
 ## Scorecard (after fees)
 - 22 closed, 3 won (14%), net $-25.79
@@ -73,7 +73,7 @@ Updated 2026-11-27T09:03:56Z (paper trading, never real money)
   CA `H4gHnZ3NCU7Z9XQwGX6YYJNyieGEW8pqwGRUcdSxpump`
 
 ## Last scan
-- 09:03Z: 3 coins, 3 with pairs, 0 passed the market filters, 0 researched
+- 09:18Z: 4 coins, 4 with pairs, 0 passed the market filters, 0 researched
 
 ## Coins it looked at, and why it passed
 - 08:36Z Snowball (MIGRATED, $692,138 mcap, $5,615 5m vol): PASS at conviction 3, PASS — target too close (first resistance 1.19x), sells outnumber buys 0.41, 5m flow $5.6k under the $10k bar, and the theme runs at 0.37x its hourly pace. Pumped 3947% in 24h with a 1.6-day-old domain. A crowded copy field, not a setup (V1, V6, V13).  
@@ -113,7 +113,7 @@ A skip "ran" if the coin reached the first target (1.5x) from the skip price bef
     CA `ALLherSTscpAErYo5Jja3ysVocaa2oeZkUvgmvhZpump`
   - ran: Slapcat up to 1.61x  
     CA `AqNAfcg8AkidVLLE7Tszh2PjUGzgaKvJskDXQXRHpump`
-- flow below pace: blocked 42, ran 5, dumped 29, flat 5, open 3 (saving losses: keep it)
+- flow below pace: blocked 42, ran 5, dumped 31, flat 5, open 1 (saving losses: keep it)
   - ran: BIAO up to 1.51x  
     CA `As3XtYSstuVdrVyb6sJZZ77Tu8JvjTBg6S6hgPv4pump`
   - ran: Snowball up to 1.82x  
@@ -127,14 +127,14 @@ A skip "ran" if the coin reached the first target (1.5x) from the skip price bef
     CA `A88p1LcHisrx3TuTwUGVrLtc1LBTUPZUfVgaCGutAFaK`
   - ran: Nala up to 1.64x  
     CA `FeBG8AEG4j7LT7xQF38gPXQFBRBtXBTNzhZjSa3bpump`
-- RugCheck danger: blocked 23, ran 1, dumped 20, flat 1, open 1 (saving losses: keep it)
-  - ran: Bababoi up to 2.17x  
-    CA `28B9kDm6XtQNqAkzuiKH3Zu1L8cVM6SLW4iRamFspump`
 - bundles over the line: blocked 22, ran 2, dumped 15, flat 4, open 1 (saving losses: keep it)
   - ran: WIENER up to 1.59x  
     CA `8BDkDfj3ZUvcG9caGzF2XnHfwg7K6fjfKKDvX6SCpump`
   - ran: Dragon up to 1.55x  
     CA `cg3HaDWhAKFfj9aq79TWUBgmxfs4G7byQ7feaxnpump`
+- RugCheck danger: blocked 22, ran 1, dumped 19, flat 1, open 1 (saving losses: keep it)
+  - ran: Bababoi up to 2.17x  
+    CA `28B9kDm6XtQNqAkzuiKH3Zu1L8cVM6SLW4iRamFspump`
 - falling knife (code): blocked 17, ran 2, dumped 14, flat 1, open 0 (saving losses: keep it)
   - ran: Investor up to 1.58x  
     CA `J9eBkCb4UtquAMQqB6duwBmR99fFSMoTnDcaMB9Wpump`
@@ -197,13 +197,13 @@ No edge yet. All 276 settled coins lost money after costs under the simple plan:
 Not quiet, but thin. Most scan movers are sub-$15k pump.fun launches with 5m volume under $1k, and none clears the $10k 5m bar; Kibo is closest at $9.6k with 66% buys. Three themes show up. Fading: fresh animal and mascot tickers (Wizard Cat, Cate Inu, Snowball) with 5m flow in the hundreds to low thousands. Fading and dumping: launcher and utility-named launches under 2h old (Spark Launcher -62%, Launch Nothing -53%, Swipe -50%, atoll markets -32% in the hour, 5m volume mostly under $1k). Dead weight: old famous-name tickers (BRUH, CBUCKS) at $5-7M caps, flat at about +1% on roughly $1.3k 5m. Rising: igloo, +155% in its first ~12 minutes on $5.4k 5m with 55% buys, which is a new pair, so watch only. Setups to research, not buys: Kibo as a MIGRATED candidate only if 5m holds above $10k with buyers above half on a pullback. The crawler's Kibo, SWIPE and NOTHING figures conflict with the scan (Kibo $16k 5m and +924% vs scan $9.6k and +12.5%; SWIPE and NOTHING look far weaker in the scan), so I used the scan and do not name SWIPE or NOTHING as setups. Trump dinner headlines are not in the flow, so that is not the meta. Holder, dev and bundle checks still have to run on any coin before size. Paper only.
 
 ## Moving most in its scans, last 30 min (1h volume)
-- Aliene: $82,577 1h vol, $2,726 mcap, -7% 1h  
-  CA `59J68geN6rWTM9csfPC4h23wV6g9hZ2kzubuvHBApump`
-- Snowball: $67,990 1h vol, $692,138 mcap, +34% 1h  
-  CA `9TKbd3VFaMSXsEAicD9JVQWpWwAoLi4fSgWmZL2cpump`
-- igloo: $46,869 1h vol, $2,864 mcap, -3% 1h  
+- igloo: $46,948 1h vol, $2,698 mcap, -9% 1h  
   CA `4jKrHtBMLt4TMEpiCa4uBEcMFgpA5R4t2EmTcWjfpump`
+- pear: $38,819 1h vol, $2,334 mcap, -20% 1h  
+  CA `HFj3vfGpB8nqSrCUXwGvd2VbehVUermFcFDHecwhpump`
 - SPARK: $37,687 1h vol, $2,096 mcap, -63% 1h  
   CA `8xpaCNnuqywZKdCJy1jHNdHSRKxudhSJxcXZzQ65pump`
-- pear: $32,779 1h vol, $6,906 mcap, +135% 1h  
-  CA `HFj3vfGpB8nqSrCUXwGvd2VbehVUermFcFDHecwhpump`
+- Vsc: $23,832 1h vol, $12,638 mcap, +155% 1h  
+  CA `Ahc2DBPw4kyooS2D4XHdFmybbUmP1PR2vJs1gKVipump`
+- SWIPE: $16,903 1h vol, $8,672 mcap, +24% 1h  
+  CA `Fr2nmNWyYiVDSSXirw1wKSHj4dE2BvvGnN4gfAHcpump`
