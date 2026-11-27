@@ -1,13 +1,13 @@
 # Trencher live report
 
-Updated 2026-11-27T05:16:39Z (paper trading, never real money)
+Updated 2026-11-27T05:31:41Z (paper trading, never real money)
 
 - Equity: $74.23 (-25.8% vs $100 start)
 - Closed trades: 22, 3 wins
 - Fees paid: $14.78 (axiom $2.81, network $9.18, pool $2.66), plus $4.15 lost to slippage
 - New trades: WATCH-ONLY (scans and decides, buys nothing)
 - Brain: subscription, claude-haiku-5-5 for routine calls, claude-opus-5-5 for the daily review; 372 routine calls and 0 plan-limit hits in 48h
-- Watch log: 83 coins being followed, 4103 filed, 0 would-buys (6h follow, sampled every 2 min)
+- Watch log: 84 coins being followed, 4105 filed, 0 would-buys (6h follow, sampled every 2 min)
 
 ## Scorecard (after fees)
 - 22 closed, 3 won (14%), net $-25.79
@@ -73,9 +73,15 @@ Updated 2026-11-27T05:16:39Z (paper trading, never real money)
   CA `H4gHnZ3NCU7Z9XQwGX6YYJNyieGEW8pqwGRUcdSxpump`
 
 ## Last scan
-- 05:16Z: 3 coins, 2 with pairs, 0 passed the market filters, 0 researched
+- 05:30Z: 10 coins, 9 with pairs, 1 passed the market filters, 1 researched
 
 ## Coins it looked at, and why it passed
+- 05:31Z Kibo (FINAL_STRETCH, $25,953 mcap, $32,064 5m vol): PASS at conviction 2, PASS. Chasing spike: Kibo is up 204% on 5m and 696% on the hour, 8 minutes old, with 7 same-ticker copies splitting the crowd (V1, V13).  
+  CA `7XSYaJygcuNe6Q3kPvwsJpg4ZrFL1AEUFb8kCuzppump`
+- 05:23Z Snowball (MIGRATED, $587,262 mcap, $2,875 5m vol): PASS at conviction 2, PASS: flow below pace (5m at 0.74x the hourly average, 42% buys) with no catalyst, and the holder and bundle numbers sit over the warn line. A gamified buy-loop site on a 1.5-day-old domain. Farm-shaped (V1, V6, V13).  
+  CA `9TKbd3VFaMSXsEAicD9JVQWpWwAoLi4fSgWmZL2cpump`
+- 05:17Z CINU (MIGRATED, $322,089 mcap, $1,154 5m vol): REJECT, 5m volume $1,154 is dead (<$2,000) (V1)  
+  CA `CvXQ9qEriGgTbMWyF8L1U7oqn9ev8A49N1dzNE8cpump`
 - 05:10Z BRUH (DIP, $5,439,658 mcap, $13,911 5m vol): PASS at conviction 3, PASS: fan-made parody on a fading story, $5.4M cap, no catalyst. Bottom buys need one. (V1, V6)  
   CA `PgFtGGquvnv2zEkjG2N2QPvBTBrafuExGYEqahRpump`
 - 05:09Z Simyo (FINAL_STRETCH, $19,613 mcap, $19,622 5m vol): REJECT, Top 10 hold 26.5% ex-pool (>25%) (V13)  
@@ -90,37 +96,31 @@ Updated 2026-11-27T05:16:39Z (paper trading, never real money)
   CA `4obGGXRMVyqpWZr12UzyaBdNkgdYwz2GiY8enmd2pump`
 - 04:59Z DragonRiders (DIP, $112,088 mcap, $16,870 5m vol): PASS at conviction 4, PASS: the dragon theme is cooling at 0.77x its hourly pace, there's no catalyst, and top 10 hold 21.7%. Not a bottom buy. (V1, V6, V13)  
   CA `5xrT8y2KU2YwzipwCMNxxTc8KAGQd4wjtGTc2WyJJCMh`
-- 04:58Z LUMINARE (DIP, $59,655 mcap, $13,183 5m vol): PASS at conviction 3, PASS: falling knife with no catalyst, no printed higher low, and 43% buys in 5m. Blocker: "no catalyst" plus "no higher low." (V1, V6, V13)  
-  CA `EomygbXHKGwb9bkCatVftQpCVgvBPmgAnMUuwusxpump`
-- 04:50Z SpaceXCoin (MIGRATED, $594,865 mcap, $3,502 5m vol): PASS at conviction 2, PASS: 5m flow is half its hourly pace at $3.5k, the coin sits 3% off a pump that rose about 3.5x in two hours, and the website's domain is about 2 hours old. Blockers: "flow below pace", "chasing", "no higher low", "dead story" (V1, V3, V6).  
-  CA `G2XqmSc8vJpLLwaLVXUeNkxsrhVT8vQ3Pje8MqeDpump`
-- 04:45Z CBUCKS (MIGRATED, $6,951,168 mcap, $5,281 5m vol): REJECT, Top 10 hold 25.6% ex-pool (>25%) (V13)  
-  CA `DtcicPCKTKeAh7TDEzTym3hXeoHAoMiBdYJhMYxZpump`
 
 ## What its skips did next (last 48h)
 A skip "ran" if the coin reached the first target (1.5x) from the skip price before a 20% drop, "dumped" if the drop came first. Sampled every 10 min, followed 6h.
-- top 10 over 25%: blocked 55, ran 9, dumped 41, flat 2, open 3 (saving losses: keep it)
+- top 10 over 25%: blocked 55, ran 10, dumped 41, flat 2, open 2 (saving losses: keep it)
   - ran: SWARM up to 1.57x  
     CA `2Rw6rLRRZXQLNreForjeVvDjnpYUaW6rmMFXmRP9pump`
   - ran: ð up to 1.65x  
     CA `GeUnGPLFku8zn1dJUNZpj6VymUxt7A3t9DqRL5WJpump`
   - ran: MONEY up to 1.58x  
     CA `DeACAbp2GMzapB6Z2K8qdkTZupmNbKc6EZx9bnbCpump`
-- too new / sniping: blocked 43, ran 8, dumped 34, flat 0, open 1 (saving losses: keep it)
+- too new / sniping: blocked 44, ran 9, dumped 34, flat 0, open 1 (saving losses: keep it)
   - ran: Merged up to 2.18x  
     CA `AMYpNGi5aGrKr1ZDsotUdWh7k1mMi569ygtaHJmErGEd`
   - ran: Boor up to 1.56x  
     CA `GHFpSSw2ZMjmKCyc1wrHUjJiqnJeP18mekY9GL1Xpump`
   - ran: COIN up to 1.85x  
     CA `ALLherSTscpAErYo5Jja3ysVocaa2oeZkUvgmvhZpump`
-- near the high / chasing: blocked 41, ran 6, dumped 31, flat 3, open 1 (saving losses: keep it)
+- near the high / chasing: blocked 41, ran 7, dumped 31, flat 3, open 0 (saving losses: keep it)
   - ran: SNOWCUMBRR up to 2.36x  
     CA `Gf9wm93TTDpbPC467Eio5Vc42Kr6MAomUD172drWpump`
   - ran: HEYOS up to 1.91x  
     CA `A88p1LcHisrx3TuTwUGVrLtc1LBTUPZUfVgaCGutAFaK`
   - ran: Nala up to 1.64x  
     CA `FeBG8AEG4j7LT7xQF38gPXQFBRBtXBTNzhZjSa3bpump`
-- flow below pace: blocked 41, ran 4, dumped 29, flat 4, open 4 (saving losses: keep it)
+- flow below pace: blocked 41, ran 5, dumped 29, flat 4, open 3 (saving losses: keep it)
   - ran: BASKET up to 1.55x  
     CA `3Tg6YnNrfPdFfsY14MaNsDMWLseAyrUDS3myJtbaJN6f`
   - ran: BIAO up to 1.51x  
@@ -142,7 +142,7 @@ A skip "ran" if the coin reached the first target (1.5x) from the skip price bef
     CA `J9eBkCb4UtquAMQqB6duwBmR99fFSMoTnDcaMB9Wpump`
   - ran: MONEY up to 1.58x  
     CA `DeACAbp2GMzapB6Z2K8qdkTZupmNbKc6EZx9bnbCpump`
-- falling knife / no higher low: blocked 16, ran 4, dumped 6, flat 4, open 2 (mixed)
+- falling knife / no higher low: blocked 16, ran 4, dumped 7, flat 4, open 1 (mixed)
   - ran: Jimmies up to 1.53x  
     CA `GisWWjhwrSud4aFGSHvTMt85Ky14sY7LeBFCpfoFpump`
   - ran: Zero up to 2.07x  
@@ -154,11 +154,11 @@ A skip "ran" if the coin reached the first target (1.5x) from the skip price bef
     CA `BFWNbSwRodXPTQqrMSCfhznhJwEzY6ERd6MHjWUEpump`
   - ran: Christmas up to 1.89x  
     CA `5hkBYuFQDpAAqemCiVqXCuU6Ya5dqKhtRobzJsg6pump`
-- dev share over 1%: blocked 11, ran 2, dumped 7, flat 2, open 0 (saving losses: keep it)
-  - ran: Grinch up to 1.94x  
-    CA `J1b5HnRzmXsYK5akPTFtBR7B4E74JG8eyULodd7ypump`
-  - ran: bolphante up to 1.7x  
-    CA `FVBzzG4ZcAgxSLW1rWjNC9EH9CgEgz1A4puNYexMpump`
+- thin 5m volume: blocked 12, ran 2, dumped 8, flat 1, open 1 (saving losses: keep it)
+  - ran: Copyinu up to 2.6x  
+    CA `GRXSoGBqmTkS78Rrvm8QyBJH9XMe8562eZojzHj2pump`
+  - ran: CINU up to 1.54x  
+    CA `CvXQ9qEriGgTbMWyF8L1U7oqn9ev8A49N1dzNE8cpump`
 
 ## Daily review (2026-11-26, claude-opus-5-5)
 No edge yet. All 276 settled coins lost money after costs under the simple plan: -6.4% average net. Every setup was negative: FINAL_STRETCH -3.6% (n=45), MIGRATED -5.1% (n=193), DIP -16.1% (n=38). Before costs the simple plan made roughly +3% overall and about +6% on FINAL_STRETCH. The ~9.7% round-trip cost on a $10 buy wipes that out, which is the same thing the 22 real trades showed: $18.83 of the $25.79 loss was fees and slippage. The sample is far too small to trust a 3–6% gross edge. Payoffs swing from +50% to -20%, so the error bar on 45 FINAL_STRETCH coins is about ±9 points. Repeat logs of the same coin also make the overall n look bigger than it is. Only the negative after-cost result is solid. The brain logged zero would-buys, so nobody can say yet whether it picks better than it passes. That missing data is the main thing to fix before Nov 10.
@@ -199,13 +199,13 @@ No edge yet. All 276 settled coins lost money after costs under the simple plan:
 Meta right now: animal and mascot names plus a fresh holiday theme are pulling the volume, while old joke names and dead character coins are fading. DragonCoin (pumpswap, $77k cap, $26.5k 5m, 62% buys) is the cleanest mover on the list, but it's already up 155% in the hour, so I only look at a dip that keeps 5m volume, with the exit written before any entry. Christmas Coin ($35k cap, $27k 5m, 60% buys) is the holiday play, but it's zero hours old and its 5m volume equals its 1h volume, so it's research only until it survives its first hour with volume holding. Fading: old names like BRUH, CBUCKS and JOB are weeks to years old and flat or down, and steppa and MONA are down 24-47% in the hour on under $600 of 5m volume; Solana Playground's scan shows $274 5m after -74% in the hour, so the crawler's $63k figure is stale and I'm not trading it. Cate Inu ($232k, $4.7k 5m) and ZeroFee (+663% in the hour, $2.9k 5m) fail the $10k volume bar for now. Holder, dev and bundle checks run on every name before any entry, so nothing here is a buy yet and nothing is named for a hack.
 
 ## Moving most in its scans, last 30 min (1h volume)
-- Dragon: $363,643 1h vol, $1,598 mcap, -98% 1h  
+- Dragon: $221,934 1h vol, $1,603 mcap, -98% 1h  
   CA `cg3HaDWhAKFfj9aq79TWUBgmxfs4G7byQ7feaxnpump`
-- LUMINARE: $251,883 1h vol, $59,536 mcap, -35% 1h  
-  CA `EomygbXHKGwb9bkCatVftQpCVgvBPmgAnMUuwusxpump`
 - BRUH: $155,211 1h vol, $5,439,658 mcap, -15% 1h  
   CA `PgFtGGquvnv2zEkjG2N2QPvBTBrafuExGYEqahRpump`
 -  : $131,821 1h vol, $22,439 mcap, +812% 1h  
   CA `2DyLsLXdJyjPUQ9EZg4VbceuaPDDVZ8n2z365bgtpump`
-- DragonRiders: $130,064 1h vol, $110,531 mcap, +12% 1h  
-  CA `5xrT8y2KU2YwzipwCMNxxTc8KAGQd4wjtGTc2WyJJCMh`
+- Christmas: $120,274 1h vol, $3,376 mcap, -89% 1h  
+  CA `AgBxPNBFmBks58rtVnp2ZW5WHtE2968qTPWgDEvbpump`
+- VOLALITY: $109,208 1h vol, $101,011 mcap, +234% 1h  
+  CA `4tPsVjDAqgDjb5TzGazEDMvM2GK2xDvCG2LxpX8opump`
