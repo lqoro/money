@@ -1,13 +1,13 @@
 # Trencher live report
 
-Updated 2026-11-27T00:13:46Z (paper trading, never real money)
+Updated 2026-11-27T00:28:51Z (paper trading, never real money)
 
 - Equity: $74.23 (-25.8% vs $100 start)
 - Closed trades: 22, 3 wins
 - Fees paid: $14.78 (axiom $2.81, network $9.18, pool $2.66), plus $4.15 lost to slippage
 - New trades: WATCH-ONLY (scans and decides, buys nothing)
-- Brain: subscription, claude-haiku-5-5 for routine calls, claude-opus-5-5 for the daily review; 362 routine calls and 0 plan-limit hits in 48h
-- Watch log: 75 coins being followed, 4039 filed, 0 would-buys (6h follow, sampled every 2 min)
+- Brain: subscription, claude-haiku-5-5 for routine calls, claude-opus-5-5 for the daily review; 361 routine calls and 0 plan-limit hits in 48h
+- Watch log: 72 coins being followed, 4042 filed, 0 would-buys (6h follow, sampled every 2 min)
 
 ## Scorecard (after fees)
 - 22 closed, 3 won (14%), net $-25.79
@@ -73,7 +73,7 @@ Updated 2026-11-27T00:13:46Z (paper trading, never real money)
   CA `H4gHnZ3NCU7Z9XQwGX6YYJNyieGEW8pqwGRUcdSxpump`
 
 ## Last scan
-- 00:13Z: 6 coins, 6 with pairs, 0 passed the market filters, 0 researched
+- 00:28Z: 6 coins, 6 with pairs, 0 passed the market filters, 0 researched
 
 ## Coins it looked at, and why it passed
 - 00:11Z Duh (FINAL_STRETCH, $15,872 mcap, $24,011 5m vol): REJECT, RugCheck danger: Creator history of rugged tokens  
@@ -120,14 +120,14 @@ A skip "ran" if the coin reached the first target (1.5x) from the skip price bef
     CA `A88p1LcHisrx3TuTwUGVrLtc1LBTUPZUfVgaCGutAFaK`
   - ran: Nala up to 1.64x  
     CA `FeBG8AEG4j7LT7xQF38gPXQFBRBtXBTNzhZjSa3bpump`
-- too new / sniping: blocked 39, ran 8, dumped 30, flat 0, open 1 (saving losses: keep it)
+- too new / sniping: blocked 39, ran 8, dumped 31, flat 0, open 0 (saving losses: keep it)
   - ran: BABYANSEM up to 2.77x  
     CA `F3VctV9FqDgiyqaztN6z78bgWy27eH7DBBHW1vjpump`
   - ran: Merged up to 2.18x  
     CA `AMYpNGi5aGrKr1ZDsotUdWh7k1mMi569ygtaHJmErGEd`
   - ran: Boor up to 1.56x  
     CA `GHFpSSw2ZMjmKCyc1wrHUjJiqnJeP18mekY9GL1Xpump`
-- RugCheck danger: blocked 29, ran 3, dumped 24, flat 1, open 1 (saving losses: keep it)
+- RugCheck danger: blocked 28, ran 3, dumped 23, flat 1, open 1 (saving losses: keep it)
   - ran: TROLL up to 1.94x  
     CA `7ykeHoEnjnGkY6tqteXn47fdGtd7kfXWghiyZ7YKpump`
   - ran: Snowball up to 3.52x  
@@ -203,11 +203,11 @@ The trenches right now are plain one-word launches with real flow: COIN ($61k ca
 ## Moving most in its scans, last 30 min (1h volume)
 - TOGI: $204,308 1h vol, $260,494 mcap, +465% 1h  
   CA `2VeUSgG7uyFdEvvPVn8vhBWDagegU3mZ6pL51r9Bvv2r`
-- COIN: $144,437 1h vol, $21,283 mcap, -74% 1h  
+- FLOW: $170,029 1h vol, $27,370 mcap, -18% 1h  
+  CA `FxWDDcxosMaRnFRzzDQisFjN4a5Gip5ECs7MtsQYFLoW`
+- FF: $125,463 1h vol, $22,959 mcap, -21% 1h  
+  CA `B2JjjQfrDAiDM99haXM5jpFibxbQaPvdqX7aB9Tupump`
+- COIN: $96,981 1h vol, $23,471 mcap, -71% 1h  
   CA `8n7mSQ8KUqP17AQii1bmWR1wdRhtKe5fDW7yiuLqpump`
-- Vetocat: $127,596 1h vol, $173,927 mcap, +435% 1h  
-  CA `9J2cy3AfDquDDKqjteYaFSrYEvUAGnb1Qxw8pZQApump`
-- Cateball: $127,510 1h vol, $1,339 mcap, -100% 1h  
-  CA `Bb38n8AVLMh9amo8qtjLvqE8nPtfs8GEsyzg1pC6pump`
-- POPBALL: $87,952 1h vol, $171,017 mcap, +387% 1h  
-  CA `CKiuTwHFMXKBaQ4V1WgsYctsdbLeit3wytXRkphzpump`
+- Duh: $51,000 1h vol, $15,343 mcap, +573% 1h  
+  CA `6u1NqAcnH7pdHbYUygBSsVr6oAMShqagmWT1ZDYppump`
