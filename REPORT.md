@@ -1,13 +1,13 @@
 # Trencher live report
 
-Updated 2026-11-27T08:48:51Z (paper trading, never real money)
+Updated 2026-11-27T09:03:56Z (paper trading, never real money)
 
 - Equity: $74.23 (-25.8% vs $100 start)
 - Closed trades: 22, 3 wins
 - Fees paid: $14.78 (axiom $2.81, network $9.18, pool $2.66), plus $4.15 lost to slippage
 - New trades: WATCH-ONLY (scans and decides, buys nothing)
 - Brain: subscription, claude-haiku-5-5 for routine calls, claude-opus-5-5 for the daily review; 378 routine calls and 0 plan-limit hits in 48h
-- Watch log: 69 coins being followed, 4143 filed, 0 would-buys (6h follow, sampled every 2 min)
+- Watch log: 65 coins being followed, 4147 filed, 0 would-buys (6h follow, sampled every 2 min)
 
 ## Scorecard (after fees)
 - 22 closed, 3 won (14%), net $-25.79
@@ -73,7 +73,7 @@ Updated 2026-11-27T08:48:51Z (paper trading, never real money)
   CA `H4gHnZ3NCU7Z9XQwGX6YYJNyieGEW8pqwGRUcdSxpump`
 
 ## Last scan
-- 08:48Z: 3 coins, 3 with pairs, 0 passed the market filters, 0 researched
+- 09:03Z: 3 coins, 3 with pairs, 0 passed the market filters, 0 researched
 
 ## Coins it looked at, and why it passed
 - 08:36Z Snowball (MIGRATED, $692,138 mcap, $5,615 5m vol): PASS at conviction 3, PASS — target too close (first resistance 1.19x), sells outnumber buys 0.41, 5m flow $5.6k under the $10k bar, and the theme runs at 0.37x its hourly pace. Pumped 3947% in 24h with a 1.6-day-old domain. A crowded copy field, not a setup (V1, V6, V13).  
@@ -194,16 +194,16 @@ No edge yet. All 276 settled coins lost money after costs under the simple plan:
 - [2026-11-02 20:25] I expected Slingoor, a clean MIGRATED leader with $25k of 5m flow at pace and a 0.77 buy share, to retest its $408k high from $304k. It never went green (0.98x peak) and hit the -20% stop in 2 minutes, a -$2.86 probe. My own thesis admitted there was no printed higher low after a peak only 6 minutes old, so this confirms the money-shape rule: buy share and flow are not structure (V1, V6). Next time a MIGRATED pullback with no higher low above the hourly low is a PASS with blocker "no higher low", not a probe. This is one loss, so it adds no new ban beyond the rule I already have.
 
 ## Meta right now
-Not quiet, but most of the movers are a graveyard. Two themes are fading: fresh pump.fun animal, mascot and joke tickers (Niu Hui the cow, Stickman, ballsackdorkl) that spiked and dumped 70-90% inside the hour, and famous-name tickers (Bitcoin, Upline) that already rolled over, at $24 and $3 of 5m volume. Rising with real flow and mostly buyers: Kibo ($164k cap, 2.2h old, $16k 5m, 65% buys), SWIPE ($9k cap, $9.8k 5m, 60% buys, 6 min old) and NOTHING ($8k cap, $6.7k 5m, 57% buys, 24 min old, just under the $10k bar). The crawler's Upline and Bitcoin "rising" numbers and its Kibo figures ($5.9k 5m, $32k) don't match the scan, so I'm using the scan data. Setups to research, not buys: Kibo as a MIGRATED candidate only if 5m holds above $10k with buyers above half through a pullback, since it's already up 924% in the hour and I won't chase it; SWIPE and NOTHING as FINAL_STRETCH candidates only if they clear $10k 5m with organic flow, and SWIPE is still a brand-new pair, so no entry yet. Trump dinner headlines aren't showing up in the flow, so I'm not calling that the meta. Holder, dev and bundle checks still have to run on each one before any size. Paper only.
+Not quiet, but thin. Most scan movers are sub-$15k pump.fun launches with 5m volume under $1k, and none clears the $10k 5m bar; Kibo is closest at $9.6k with 66% buys. Three themes show up. Fading: fresh animal and mascot tickers (Wizard Cat, Cate Inu, Snowball) with 5m flow in the hundreds to low thousands. Fading and dumping: launcher and utility-named launches under 2h old (Spark Launcher -62%, Launch Nothing -53%, Swipe -50%, atoll markets -32% in the hour, 5m volume mostly under $1k). Dead weight: old famous-name tickers (BRUH, CBUCKS) at $5-7M caps, flat at about +1% on roughly $1.3k 5m. Rising: igloo, +155% in its first ~12 minutes on $5.4k 5m with 55% buys, which is a new pair, so watch only. Setups to research, not buys: Kibo as a MIGRATED candidate only if 5m holds above $10k with buyers above half on a pullback. The crawler's Kibo, SWIPE and NOTHING figures conflict with the scan (Kibo $16k 5m and +924% vs scan $9.6k and +12.5%; SWIPE and NOTHING look far weaker in the scan), so I used the scan and do not name SWIPE or NOTHING as setups. Trump dinner headlines are not in the flow, so that is not the meta. Holder, dev and bundle checks still have to run on any coin before size. Paper only.
 
 ## Moving most in its scans, last 30 min (1h volume)
-- Kibo: $161,632 1h vol, $133,537 mcap, +13% 1h  
-  CA `7XSYaJygcuNe6Q3kPvwsJpg4ZrFL1AEUFb8kCuzppump`
+- Aliene: $82,577 1h vol, $2,726 mcap, -7% 1h  
+  CA `59J68geN6rWTM9csfPC4h23wV6g9hZ2kzubuvHBApump`
 - Snowball: $67,990 1h vol, $692,138 mcap, +34% 1h  
   CA `9TKbd3VFaMSXsEAicD9JVQWpWwAoLi4fSgWmZL2cpump`
-- SPARK: $37,217 1h vol, $2,805 mcap, -50% 1h  
+- igloo: $46,869 1h vol, $2,864 mcap, -3% 1h  
+  CA `4jKrHtBMLt4TMEpiCa4uBEcMFgpA5R4t2EmTcWjfpump`
+- SPARK: $37,687 1h vol, $2,096 mcap, -63% 1h  
   CA `8xpaCNnuqywZKdCJy1jHNdHSRKxudhSJxcXZzQ65pump`
-- SWIPE: $32,993 1h vol, $6,206 mcap, -50% 1h  
-  CA `Fr2nmNWyYiVDSSXirw1wKSHj4dE2BvvGnN4gfAHcpump`
-- Atoll: $30,394 1h vol, $8,185 mcap, -33% 1h  
-  CA `aSRNrUQqrWqvV1Yf25exdxVa3bWk63K7tvzTnNytoLL`
+- pear: $32,779 1h vol, $6,906 mcap, +135% 1h  
+  CA `HFj3vfGpB8nqSrCUXwGvd2VbehVUermFcFDHecwhpump`
