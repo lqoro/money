@@ -1,13 +1,13 @@
 # Trencher live report
 
-Updated 2026-11-27T07:18:16Z (paper trading, never real money)
+Updated 2026-11-27T07:33:18Z (paper trading, never real money)
 
 - Equity: $74.23 (-25.8% vs $100 start)
 - Closed trades: 22, 3 wins
 - Fees paid: $14.78 (axiom $2.81, network $9.18, pool $2.66), plus $4.15 lost to slippage
 - New trades: WATCH-ONLY (scans and decides, buys nothing)
 - Brain: subscription, claude-haiku-5-5 for routine calls, claude-opus-5-5 for the daily review; 378 routine calls and 0 plan-limit hits in 48h
-- Watch log: 80 coins being followed, 4125 filed, 0 would-buys (6h follow, sampled every 2 min)
+- Watch log: 79 coins being followed, 4126 filed, 0 would-buys (6h follow, sampled every 2 min)
 
 ## Scorecard (after fees)
 - 22 closed, 3 won (14%), net $-25.79
@@ -73,7 +73,7 @@ Updated 2026-11-27T07:18:16Z (paper trading, never real money)
   CA `H4gHnZ3NCU7Z9XQwGX6YYJNyieGEW8pqwGRUcdSxpump`
 
 ## Last scan
-- 07:18Z: 3 coins, 3 with pairs, 0 passed the market filters, 0 researched
+- 07:32Z: 2 coins, 2 with pairs, 0 passed the market filters, 0 researched
 
 ## Coins it looked at, and why it passed
 - 07:09Z CINU (DIP, $151,793 mcap, $2,887 5m vol): PASS at conviction 3, PASS — 26-copy "cate" field, theme pace 0.11x, no catalyst, and cate.meme shows a different CA. A dip with nothing under it (V1, V6, V13).  
@@ -106,7 +106,7 @@ A skip "ran" if the coin reached the first target (1.5x) from the skip price bef
     CA `GeUnGPLFku8zn1dJUNZpj6VymUxt7A3t9DqRL5WJpump`
   - ran: MONEY up to 1.58x  
     CA `DeACAbp2GMzapB6Z2K8qdkTZupmNbKc6EZx9bnbCpump`
-- flow below pace: blocked 43, ran 6, dumped 29, flat 4, open 4 (saving losses: keep it)
+- flow below pace: blocked 43, ran 6, dumped 29, flat 5, open 3 (saving losses: keep it)
   - ran: BASKET up to 1.55x  
     CA `3Tg6YnNrfPdFfsY14MaNsDMWLseAyrUDS3myJtbaJN6f`
   - ran: BIAO up to 1.51x  
@@ -135,26 +135,24 @@ A skip "ran" if the coin reached the first target (1.5x) from the skip price bef
     CA `8BDkDfj3ZUvcG9caGzF2XnHfwg7K6fjfKKDvX6SCpump`
   - ran: Dragon up to 1.55x  
     CA `cg3HaDWhAKFfj9aq79TWUBgmxfs4G7byQ7feaxnpump`
-- falling knife (code): blocked 18, ran 3, dumped 14, flat 1, open 0 (saving losses: keep it)
-  - ran: Jimmies up to 1.53x  
-    CA `GisWWjhwrSud4aFGSHvTMt85Ky14sY7LeBFCpfoFpump`
+- falling knife (code): blocked 17, ran 2, dumped 14, flat 1, open 0 (saving losses: keep it)
   - ran: Investor up to 1.58x  
     CA `J9eBkCb4UtquAMQqB6duwBmR99fFSMoTnDcaMB9Wpump`
   - ran: MONEY up to 1.58x  
     CA `DeACAbp2GMzapB6Z2K8qdkTZupmNbKc6EZx9bnbCpump`
-- falling knife / no higher low: blocked 16, ran 4, dumped 6, flat 4, open 2 (mixed)
-  - ran: Jimmies up to 1.53x  
-    CA `GisWWjhwrSud4aFGSHvTMt85Ky14sY7LeBFCpfoFpump`
+- falling knife / no higher low: blocked 15, ran 3, dumped 6, flat 5, open 1 (saving losses: keep it)
   - ran: Zero up to 2.07x  
     CA `DTSkmo3sCCKLCh91dJLiWCpwcKtK3yDBZMqZGSV1pump`
   - ran: Maru up to 1.88x  
     CA `FokVFH6mDsazoKbtnUaA2FRMsRbDSwZhNfn17Fdvpump`
+  - ran: Hoppy up to 1.76x  
+    CA `CFX1gH7CKYwqYXrfDkS2MUxJcEhs8PT63DyRA1chpump`
 - other: blocked 15, ran 2, dumped 12, flat 0, open 1 (saving losses: keep it)
   - ran: SXI up to 2.34x  
     CA `BFWNbSwRodXPTQqrMSCfhznhJwEzY6ERd6MHjWUEpump`
   - ran: Christmas up to 1.89x  
     CA `5hkBYuFQDpAAqemCiVqXCuU6Ya5dqKhtRobzJsg6pump`
-- thin 5m volume: blocked 12, ran 1, dumped 8, flat 1, open 2 (saving losses: keep it)
+- thin 5m volume: blocked 12, ran 1, dumped 8, flat 2, open 1 (saving losses: keep it)
   - ran: Copyinu up to 2.6x  
     CA `GRXSoGBqmTkS78Rrvm8QyBJH9XMe8562eZojzHj2pump`
 
@@ -197,13 +195,13 @@ No edge yet. All 276 settled coins lost money after costs under the simple plan:
 Meta from scan_movers: the live volume is fresh pump.fun launches with animal, mascot and generic famous-name tickers (pigger, Upline, Bitcoin, CINU, wizardcat, JOB, Kibo), while the sub-$4k coins that spiked and then collapsed (VOLALITY -98%, CaveBaby -97%, Pilly -88%, leftovers -76% in the hour, zero 5m volume) show the fading side of the same pattern. The Trump dinner and Christmas headlines aren't showing up in the movers, so I'm not treating the news as the meta. Rising: Upline (+458% in the hour, $46k 5m, $16.8k cap, 6 minutes old, 40% buys) and Bitcoin ($9.1k 5m, 70% buys, $11.9k cap, 12 minutes old; a generic name is a vamp risk until I confirm it's the original). Kibo is $5.9k 5m on the scan, below the $10k bar, so the crawler's $32k figure is stale and I'm not using it. Setups to research, not buys: Upline only if 5m holds above $10k with buyers above half after the first spike, and Bitcoin only if it's confirmed as the original and clears $10k 5m; both are unverified until holder, dev and bundle checks run, so they're probe-level at most. PASS on everything else for now.
 
 ## Moving most in its scans, last 30 min (1h volume)
-- Upline: $96,935 1h vol, $6,832 mcap, +127% 1h  
+- Upline: $98,688 1h vol, $3,460 mcap, +15% 1h  
   CA `7pPHLjByynPdPJ75Yozw1ACLaPsb9qHajQ64WbLvpump`
-- pigger: $86,717 1h vol, $3,074 mcap, +32% 1h  
-  CA `5YK8syegHJcpZ558aqyWBeQcpcQLzTnm3XsJky9Mpump`
-- Kibo: $75,370 1h vol, $43,739 mcap, -3% 1h  
-  CA `7XSYaJygcuNe6Q3kPvwsJpg4ZrFL1AEUFb8kCuzppump`
-- Bitcoin: $62,390 1h vol, $2,566 mcap, -17% 1h  
+- Bitcoin: $62,469 1h vol, $2,403 mcap, -22% 1h  
   CA `6H7rdkUPTRFbS22qXmqMEWVpfp3F4JqXUJPvbFWLpump`
-- 牛回: $49,433 1h vol, $16,618 mcap, +576% 1h  
-  CA `73Hqqyqq9T5AkzHoNsmuLVcw3RDknJVvZDaXwoyc7G3J`
+- pigger: $59,320 1h vol, $2,328 mcap, -67% 1h  
+  CA `5YK8syegHJcpZ558aqyWBeQcpcQLzTnm3XsJky9Mpump`
+- 哈基米: $36,902 1h vol, $26,912 mcap, -15% 1h  
+  CA `6xjxZATYCFba8BFR1QrqyFvpro1EZCox2mGab6VXpump`
+- LOOM: $32,413 1h vol, $20,901 mcap, +205% 1h  
+  CA `6jS9L2H6XaSbVaB7jZn86uHZoPGxSUbuKKNNoBAEpump`
