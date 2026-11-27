@@ -1,13 +1,13 @@
 # Trencher live report
 
-Updated 2026-11-27T12:35:38Z (paper trading, never real money)
+Updated 2026-11-27T12:50:52Z (paper trading, never real money)
 
 - Equity: $74.23 (-25.8% vs $100 start)
 - Closed trades: 22, 3 wins
 - Fees paid: $14.78 (axiom $2.81, network $9.18, pool $2.66), plus $4.15 lost to slippage
 - New trades: WATCH-ONLY (scans and decides, buys nothing)
 - Brain: subscription, claude-haiku-5-5 for routine calls, claude-opus-5-5 for the daily review; 381 routine calls and 9 plan-limit hits in 48h
-- Watch log: 38 coins being followed, 4198 filed, 0 would-buys (6h follow, sampled every 2 min)
+- Watch log: 36 coins being followed, 4200 filed, 0 would-buys (6h follow, sampled every 2 min)
 
 ## Scorecard (after fees)
 - 22 closed, 3 won (14%), net $-25.79
@@ -73,7 +73,7 @@ Updated 2026-11-27T12:35:38Z (paper trading, never real money)
   CA `H4gHnZ3NCU7Z9XQwGX6YYJNyieGEW8pqwGRUcdSxpump`
 
 ## Last scan
-- 12:35Z: 4 coins, 4 with pairs, 1 passed the market filters, 1 researched
+- 12:49Z: 1 coins, 1 with pairs, 0 passed the market filters, 0 researched
 
 ## Coins it looked at, and why it passed
 - 12:35Z ChokingCat (MIGRATED, $87,696 mcap, $18,954 5m vol): REJECT, Bundles: 3 linked wallet cluster(s) hold 77.2% of supply (>20%) (V17)  
@@ -201,11 +201,11 @@ Meta right now is cat names and fresh short pump.fun names under about 4h old. P
 ## Moving most in its scans, last 30 min (1h volume)
 - VAULT: $262,601 1h vol, $100,186 mcap, +69% 1h  
   CA `4tqzkSWA9tiWYhzYpSt81We3cVNkrEbkD1tzjFDZpump`
-- Spread: $105,448 1h vol, $14,920 mcap, +606% 1h  
-  CA `HQYLt1Ne2xQdknmZjbnTffSKFYX2ZHCkBG3WBJQYpump`
+- Salecat: $250,543 1h vol, $2,608 mcap, -91% 1h  
+  CA `BFLRy1dMqALUz7WFoaXHXdZSJdqEJZnndD7yqz56pump`
 - ChokingCat: $101,866 1h vol, $87,696 mcap, +187% 1h  
   CA `ExpdNM5YykDnGTmyxCH5B3s7mdWi1cEreDvK6ic8pump`
-- PIZZA: $62,303 1h vol, $3,096 mcap, +18% 1h  
-  CA `BhbBkVqwNAbauKfuKb9j9VC2gEzwS5AvWVuY48Pypump`
-- Snowball: $60,980 1h vol, $649,391 mcap, -19% 1h  
-  CA `9TKbd3VFaMSXsEAicD9JVQWpWwAoLi4fSgWmZL2cpump`
+- ChokeCat: $63,552 1h vol, $15,494 mcap, +26% 1h  
+  CA `26qFFJBo4F7EjtzCuCbJEdW4v233mY1aMRaw8Y2kpump`
+- SAI: $62,534 1h vol, $2,928 mcap, +5% 1h  
+  CA `661YLyBy7kfmgkGu9Dt3VevjcW1mTme4TKGV3Bx14Gq8`
