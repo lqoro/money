@@ -1,13 +1,13 @@
 # Trencher live report
 
-Updated 2026-11-27T11:20:10Z (paper trading, never real money)
+Updated 2026-11-27T11:35:11Z (paper trading, never real money)
 
 - Equity: $74.23 (-25.8% vs $100 start)
 - Closed trades: 22, 3 wins
 - Fees paid: $14.78 (axiom $2.81, network $9.18, pool $2.66), plus $4.15 lost to slippage
 - New trades: WATCH-ONLY (scans and decides, buys nothing)
-- Brain: subscription, claude-haiku-5-5 for routine calls, claude-opus-5-5 for the daily review; 380 routine calls and 9 plan-limit hits in 48h
-- Watch log: 40 coins being followed, 4187 filed, 0 would-buys (6h follow, sampled every 2 min)
+- Brain: subscription, claude-haiku-5-5 for routine calls, claude-opus-5-5 for the daily review; 379 routine calls and 9 plan-limit hits in 48h
+- Watch log: 39 coins being followed, 4189 filed, 0 would-buys (6h follow, sampled every 2 min)
 
 ## Scorecard (after fees)
 - 22 closed, 3 won (14%), net $-25.79
@@ -73,9 +73,17 @@ Updated 2026-11-27T11:20:10Z (paper trading, never real money)
   CA `H4gHnZ3NCU7Z9XQwGX6YYJNyieGEW8pqwGRUcdSxpump`
 
 ## Last scan
-- 11:19Z: 5 coins, 5 with pairs, 0 passed the market filters, 0 researched
+- 11:34Z: 2 coins, 2 with pairs, 0 passed the market filters, 0 researched
 
 ## Coins it looked at, and why it passed
+- 11:31Z VAULT (MIGRATED, $53,807 mcap, $12,927 5m vol): SKIP, passed the checklist, but the brain was paced or paused  
+  CA `4tqzkSWA9tiWYhzYpSt81We3cVNkrEbkD1tzjFDZpump`
+- 11:26Z VAULT (MIGRATED, $61,058 mcap, $33,044 5m vol): SKIP, passed the checklist, but the brain was paced or paused  
+  CA `4tqzkSWA9tiWYhzYpSt81We3cVNkrEbkD1tzjFDZpump`
+- 11:21Z VAULT (MIGRATED, $41,002 mcap, $8,486 5m vol): SKIP, passed the checklist, but the brain was paced or paused  
+  CA `4tqzkSWA9tiWYhzYpSt81We3cVNkrEbkD1tzjFDZpump`
+- 11:20Z Suki (MIGRATED, $38,071 mcap, $3,373 5m vol): SKIP, passed the checklist, but the brain was paced or paused  
+  CA `Ejbu9xDBN3XuDiLj9A61sctiVzYocF3TpKojiBPvpump`
 - 11:16Z VAULT (FINAL_STRETCH, $26,589 mcap, $8,107 5m vol): SKIP, passed the checklist, but the brain was paced or paused  
   CA `4tqzkSWA9tiWYhzYpSt81We3cVNkrEbkD1tzjFDZpump`
 - 11:11Z VAULT (FINAL_STRETCH, $24,118 mcap, $7,167 5m vol): SKIP, passed the checklist, but the brain was paced or paused  
@@ -88,14 +96,6 @@ Updated 2026-11-27T11:20:10Z (paper trading, never real money)
   CA `9TKbd3VFaMSXsEAicD9JVQWpWwAoLi4fSgWmZL2cpump`
 - 10:38Z Snowball (MIGRATED, $830,536 mcap, $2,229 5m vol): SKIP, passed the checklist, but the brain was paced or paused  
   CA `9TKbd3VFaMSXsEAicD9JVQWpWwAoLi4fSgWmZL2cpump`
-- 10:31Z CINU (MIGRATED, $95,565 mcap, $3,817 5m vol): SKIP, passed the checklist, but the brain was paced or paused  
-  CA `CvXQ9qEriGgTbMWyF8L1U7oqn9ev8A49N1dzNE8cpump`
-- 10:31Z CBUCKS (MIGRATED, $7,303,647 mcap, $6,543 5m vol): REJECT, Top 10 hold 25.6% ex-pool (>25%) (V13)  
-  CA `DtcicPCKTKeAh7TDEzTym3hXeoHAoMiBdYJhMYxZpump`
-- 10:28Z Muffin (MIGRATED, $64,730 mcap, $6,713 5m vol): REJECT, Bundles: 1 linked wallet cluster(s) hold 78.1% of supply (>20%) (V17)  
-  CA `jMhjZicmQSAJNoub4VEyJKqJxXzuyFCSKGgribxpump`
-- 10:26Z Pobby (FINAL_STRETCH, $17,340 mcap, $4,109 5m vol): SKIP, passed the checklist, but the brain was paced or paused  
-  CA `CBkQxn7beaPnR4UcL289WAH8yd4kmEJrHK9rLmr1pump`
 
 ## What its skips did next (last 48h)
 A skip "ran" if the coin reached the first target (1.5x) from the skip price before a 20% drop, "dumped" if the drop came first. Sampled every 10 min, followed 6h.
@@ -199,13 +199,13 @@ No edge yet. All 276 settled coins lost money after costs under the simple plan:
 Thin, not quiet: only two movers have real flow, and the animal and old-name coins are fading or dead. The rising theme is fresh one-word utility/container names under 1.5h old: Vault ($24.7k cap, $7.3k 5m, 61% buys) and Nothing ($8.7k cap, $12.3k 5m, 57% buys), with Nothing the only mover that clears the $10k 5m bar. Animal and mascot riffs (Cate Inu, Floki Santa, Wonald, Pobby) are fading, with 5m volume in the hundreds and Wonald and Pobby down 80-93% on the hour, while old famous names (BRUH, JOB, WW) sit at $0.6-5.8M caps, flat on thin volume, which is dead weight, not a meta. Setups to research, not buy: Nothing only if 5m holds above $10k with buyers over half on a pullback, and Vault only as a Final Stretch candidate if it keeps climbing toward bond; both are minutes old, the crawler and scan conflict on Nothing (crawler -53%, scan +252% 1h, so I used the scan), and holder, dev and bundle checks have not run. Kibo is not in this scan so I am not naming it, and the Trump dinner headlines are not in the flow. Paper only, not financial advice.
 
 ## Moving most in its scans, last 30 min (1h volume)
-- Muffin: $176,031 1h vol, $1,507 mcap, -94% 1h  
-  CA `jMhjZicmQSAJNoub4VEyJKqJxXzuyFCSKGgribxpump`
-- VAULT: $76,154 1h vol, $26,589 mcap, +1109% 1h  
+- VAULT: $67,598 1h vol, $53,807 mcap, +87% 1h  
   CA `4tqzkSWA9tiWYhzYpSt81We3cVNkrEbkD1tzjFDZpump`
-- Suki: $60,206 1h vol, $26,751 mcap, -9% 1h  
-  CA `Ejbu9xDBN3XuDiLj9A61sctiVzYocF3TpKojiBPvpump`
-- Nothing: $50,908 1h vol, $5,611 mcap, +127% 1h  
+- Nothing: $57,458 1h vol, $8,429 mcap, +240% 1h  
   CA `Gqwo65Miiqpzciy7frML5afe8bEqz1RjbgbD7aeApump`
-- Basket: $42,986 1h vol, $2,368 mcap, -58% 1h  
-  CA `Au2nGUXZ8q7CJVSr9Gvdroxg7HeBiBGbYxbLDAdapump`
+- Suki: $44,647 1h vol, $36,208 mcap, +19% 1h  
+  CA `Ejbu9xDBN3XuDiLj9A61sctiVzYocF3TpKojiBPvpump`
+- Muffin: $36,797 1h vol, $1,507 mcap, -98% 1h  
+  CA `jMhjZicmQSAJNoub4VEyJKqJxXzuyFCSKGgribxpump`
+- CBUCKS: $32,374 1h vol, $7,072,831 mcap, -5% 1h  
+  CA `DtcicPCKTKeAh7TDEzTym3hXeoHAoMiBdYJhMYxZpump`
