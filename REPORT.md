@@ -1,13 +1,13 @@
 # Trencher live report
 
-Updated 2026-11-27T18:24:25Z (paper trading, never real money)
+Updated 2026-11-27T18:39:28Z (paper trading, never real money)
 
 - Equity: $74.23 (-25.8% vs $100 start)
 - Closed trades: 22, 3 wins
 - Fees paid: $14.78 (axiom $2.81, network $9.18, pool $2.66), plus $4.15 lost to slippage
 - New trades: WATCH-ONLY (scans and decides, buys nothing)
-- Brain: subscription, claude-haiku-5-5 for routine calls, claude-opus-5-5 for the daily review; 399 routine calls and 9 plan-limit hits in 48h
-- Watch log: 74 coins being followed, 4234 filed, 0 would-buys (6h follow, sampled every 2 min)
+- Brain: subscription, claude-haiku-5-5 for routine calls, claude-opus-5-5 for the daily review; 397 routine calls and 9 plan-limit hits in 48h
+- Watch log: 73 coins being followed, 4236 filed, 0 would-buys (6h follow, sampled every 2 min)
 
 ## Scorecard (after fees)
 - 22 closed, 3 won (14%), net $-25.79
@@ -73,9 +73,11 @@ Updated 2026-11-27T18:24:25Z (paper trading, never real money)
   CA `H4gHnZ3NCU7Z9XQwGX6YYJNyieGEW8pqwGRUcdSxpump`
 
 ## Last scan
-- 18:24Z: 2 coins, 2 with pairs, 0 passed the market filters, 0 researched
+- 18:38Z: 3 coins, 3 with pairs, 0 passed the market filters, 0 researched
 
 ## Coins it looked at, and why it passed
+- 18:25Z PumpMas (MIGRATED, $138,206 mcap, $2,009 5m vol): REJECT, Top 10 hold 26.1% ex-pool (>25%) (V13)  
+  CA `EwUVBpdM5vw1CJHRMSLywzVjyQSJZpy6qboxEPBKpump`
 - 18:20Z Fireball (DIP, $646,382 mcap, $3,487 5m vol): REJECT, Dip with fading attention is a falling knife, not a dip (5m at 0.50x the hour's pace, under 0.6x)  
   CA `B9wbjDJ4FbHMsZmoXAkJSTAwuePaJUKbySvnK5zApump`
 - 18:20Z CLANK (FINAL_STRETCH, $14,867 mcap, $17,791 5m vol): PASS at conviction 3, PASS — chasing a +551% 5m spike in a 20-copy "clank" vamp field, the team's own site doesn't show this CA, and top 10 hold 23.4%. Blocker: chasing spike. (V1, V3, V6, V13)  
@@ -94,19 +96,17 @@ Updated 2026-11-27T18:24:25Z (paper trading, never real money)
   CA `85cQsFgbi8mBZxiPppbpPXuV7j1hA8tBwhjF4gKW6mHg`
 - 18:09Z COMPUTE (MIGRATED, $95,319 mcap, $3,518 5m vol): REJECT, Top 10 hold 31.2% ex-pool (>25%) (V13)  
   CA `39nuVgw8RCVC8PgGuuuaa8WoAERA61cTw85oUvBLT2va`
-- 18:09Z rice (MIGRATED, $113,086 mcap, $12,720 5m vol): PASS at conviction 2, PASS — 5m flow at 0.27x its hourly pace, no printed higher low, and the rice theme runs at 0.29x its pace across 13 copies. Blocker: flow below pace. Not a probe (V1, V6).  
-  CA `6J3m4E2AvckGpMypHoBmT9JdPA6QZJ66X9AfzYwWZttc`
 
 ## What its skips did next (last 48h)
 A skip "ran" if the coin reached the first target (1.5x) from the skip price before a 20% drop, "dumped" if the drop came first. Sampled every 10 min, followed 6h.
-- top 10 over 25%: blocked 54, ran 10, dumped 39, flat 2, open 3 (saving losses: keep it)
+- top 10 over 25%: blocked 53, ran 11, dumped 37, flat 2, open 3 (saving losses: keep it)
   - ran: ð up to 1.65x  
     CA `GeUnGPLFku8zn1dJUNZpj6VymUxt7A3t9DqRL5WJpump`
   - ran: MONEY up to 1.58x  
     CA `DeACAbp2GMzapB6Z2K8qdkTZupmNbKc6EZx9bnbCpump`
   - ran: Legatum up to 2.21x  
     CA `HkPSDYRcw4uqgRzZMDd5sRnMpE4ungR1K8MRNXnBVtQ2`
-- flow below pace: blocked 50, ran 4, dumped 42, flat 4, open 0 (saving losses: keep it)
+- flow below pace: blocked 49, ran 4, dumped 41, flat 4, open 0 (saving losses: keep it)
   - ran: PAIR up to 2.1x  
     CA `32rBxcFjCFnyqZ41CEPM5AL67X1dcw8w83vZt6Kxpump`
   - ran: Hoppy up to 1.76x  
@@ -120,7 +120,7 @@ A skip "ran" if the coin reached the first target (1.5x) from the skip price bef
     CA `AqNAfcg8AkidVLLE7Tszh2PjUGzgaKvJskDXQXRHpump`
   - ran: STUDS up to 2.35x  
     CA `34J9VrBeJ2dWActyAMpoNBKvoxZCqQz3SivmnnmSTUds`
-- near the high / chasing: blocked 40, ran 7, dumped 27, flat 3, open 3 (saving losses: keep it)
+- near the high / chasing: blocked 40, ran 7, dumped 28, flat 3, open 2 (saving losses: keep it)
   - ran: Nala up to 1.64x  
     CA `FeBG8AEG4j7LT7xQF38gPXQFBRBtXBTNzhZjSa3bpump`
   - ran: NETHER up to 1.8x  
@@ -134,7 +134,7 @@ A skip "ran" if the coin reached the first target (1.5x) from the skip price bef
     CA `cg3HaDWhAKFfj9aq79TWUBgmxfs4G7byQ7feaxnpump`
   - ran: monky up to 96.37x  
     CA `At5hmwDn4YgPDoic1UN7zMdTtCoiXJsMhnKaoazEpump`
-- falling knife (code): blocked 23, ran 3, dumped 17, flat 0, open 3 (saving losses: keep it)
+- falling knife (code): blocked 23, ran 3, dumped 19, flat 0, open 1 (saving losses: keep it)
   - ran: Investor up to 1.58x  
     CA `J9eBkCb4UtquAMQqB6duwBmR99fFSMoTnDcaMB9Wpump`
   - ran: MONEY up to 1.58x  
@@ -205,9 +205,9 @@ Meta: fresh pump.fun and PumpSwap launches under about an hour old, with buy-hea
   CA `8sAxwsNzhRj6LF5npy1HtPir94TzSgP1QaczUmGcpump`
 - rice: $566,230 1h vol, $103,020 mcap, +249% 1h  
   CA `6J3m4E2AvckGpMypHoBmT9JdPA6QZJ66X9AfzYwWZttc`
-- Split: $492,275 1h vol, $59,061 mcap, +93% 1h  
-  CA `HAP9FcXubD88SjRHMY1kr5iukpRZgeMAgCBam3Vtpump`
 - VICAT: $133,979 1h vol, $156,662 mcap, +377% 1h  
   CA `4WZLGbAp6oEPxFbDcsfADCo1AgYZkfiteQhtM5iwpump`
 - TOGO: $131,889 1h vol, $397,851 mcap, +908% 1h  
   CA `8LX2fFyENqu1R6bmzk461BH3ZPVbmpCpppe1K7Zcpump`
+- Fireball: $83,950 1h vol, $645,148 mcap, -44% 1h  
+  CA `B9wbjDJ4FbHMsZmoXAkJSTAwuePaJUKbySvnK5zApump`
