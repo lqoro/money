@@ -1,13 +1,13 @@
 # Trencher live report
 
-Updated 2026-11-27T15:22:10Z (paper trading, never real money)
+Updated 2026-11-27T15:37:15Z (paper trading, never real money)
 
 - Equity: $74.23 (-25.8% vs $100 start)
 - Closed trades: 22, 3 wins
 - Fees paid: $14.78 (axiom $2.81, network $9.18, pool $2.66), plus $4.15 lost to slippage
 - New trades: WATCH-ONLY (scans and decides, buys nothing)
-- Brain: subscription, claude-haiku-5-5 for routine calls, claude-opus-5-5 for the daily review; 390 routine calls and 9 plan-limit hits in 48h
-- Watch log: 50 coins being followed, 4212 filed, 0 would-buys (6h follow, sampled every 2 min)
+- Brain: subscription, claude-haiku-5-5 for routine calls, claude-opus-5-5 for the daily review; 392 routine calls and 9 plan-limit hits in 48h
+- Watch log: 51 coins being followed, 4214 filed, 0 would-buys (6h follow, sampled every 2 min)
 
 ## Scorecard (after fees)
 - 22 closed, 3 won (14%), net $-25.79
@@ -73,9 +73,15 @@ Updated 2026-11-27T15:22:10Z (paper trading, never real money)
   CA `H4gHnZ3NCU7Z9XQwGX6YYJNyieGEW8pqwGRUcdSxpump`
 
 ## Last scan
-- 15:21Z: 2 coins, 1 with pairs, 0 passed the market filters, 0 researched
+- 15:36Z: 5 coins, 4 with pairs, 0 passed the market filters, 0 researched
 
 ## Coins it looked at, and why it passed
+- 15:36Z Sheeb (MIGRATED, $55,885 mcap, $84,075 5m vol): PASS, PASS — brain unavailable, not trading blind.  
+  CA `5rRxk9FC3ma11neg8BGLwTWxt4PokH19Y92sERwa2PJ3`
+- 15:34Z BRUH (DIP, $5,261,973 mcap, $4,146 5m vol): PASS at conviction 2, PASS: $5.3M fan parody, 5m flow $4.1k with sellers 61%, theme at 0.81x pace, no catalyst. Bottom-buy rule blocks it. (V1, V6, V13)  
+  CA `PgFtGGquvnv2zEkjG2N2QPvBTBrafuExGYEqahRpump`
+- 15:24Z QCAT (FINAL_STRETCH, $17,850 mcap, $22,962 5m vol): PASS at conviction 3, PASS: chasing spike. QCAT is 11 minutes old, up 336% in 1h, with 5m volume at 4.7x its hourly pace and no printed higher low. Four copies share the ticker. (V1, V6)  
+  CA `7B4wbDfartViuEBPYkWLWif6JdG6VzwBjvEPf6ivZKJt`
 - 15:17Z COMPUTE (MIGRATED, $85,555 mcap, $7,316 5m vol): PASS at conviction 3, PASS: chasing. COMPUTE is at its high after +186% in 1h, on 0.78x hourly pace, with no higher low and 22 copies in its ticker field. (V1, V6)  
   CA `54jKBorvDP4eB7vZnWy1HJfhm4X17pSJCE6o2Lshpump`
 - 15:16Z KITT (MIGRATED, $51,913 mcap, $7,008 5m vol): PASS at conviction 3, PASS. Flow is below pace (0.68x), the theme is at 0.38x pace, and there's no catalyst. Blocker: "flow below pace" plus "no catalyst" on a bottom buy (V1, V6).  
@@ -90,30 +96,24 @@ Updated 2026-11-27T15:22:10Z (paper trading, never real money)
   CA `7Y2CVbnqZRvR5RUvEJ9RQ73fZEfv7ybNcysytAepump`
 - 14:46Z CBUCKS (MIGRATED, $7,002,135 mcap, $4,401 5m vol): REJECT, Top 10 hold 25.5% ex-pool (>25%) (V13)  
   CA `DtcicPCKTKeAh7TDEzTym3hXeoHAoMiBdYJhMYxZpump`
-- 14:30Z KITT (MIGRATED, $45,173 mcap, $10,535 5m vol): PASS at conviction 2, PASS: no catalyst, theme pace 0.12x, and 40 min old, still bleeding off its bond spike. Blocker "dead story". (V1, V6)  
-  CA `F5LxbqJxAMrvfxLbqPckErmqNyiPzDJMUXnX8vrhpump`
-- 14:25Z TWORBIT (MIGRATED, $415,724 mcap, $12,394 5m vol): PASS at conviction 2, PASS: flow below pace. 5m volume is 0.31x the hourly average, the price isn't pushing the high, and six copies of the ticker are out there (V1, V6, V17).  
-  CA `GXpQZkap4ExgQTTX4SXfETV7nt1YZKEZSakqos3hpump`
-- 14:24Z FRGST (MIGRATED, $88,117 mcap, $20,980 5m vol): PASS at conviction 3, PASS — chasing: 7.6% off a $95k high with no printed higher low, and the project site is a real conservation charity that doesn't show this CA. Blocker: "chasing" (V1, V6, V13).  
-  CA `DNgboHpauGZ5KbSptWSkwQyQLSDCQKdoU3qsk9FTpump`
 
 ## What its skips did next (last 48h)
 A skip "ran" if the coin reached the first target (1.5x) from the skip price before a 20% drop, "dumped" if the drop came first. Sampled every 10 min, followed 6h.
-- top 10 over 25%: blocked 50, ran 10, dumped 37, flat 2, open 1 (saving losses: keep it)
+- top 10 over 25%: blocked 49, ran 10, dumped 36, flat 2, open 1 (saving losses: keep it)
   - ran: ð up to 1.65x  
     CA `GeUnGPLFku8zn1dJUNZpj6VymUxt7A3t9DqRL5WJpump`
   - ran: MONEY up to 1.58x  
     CA `DeACAbp2GMzapB6Z2K8qdkTZupmNbKc6EZx9bnbCpump`
   - ran: Legatum up to 2.21x  
     CA `HkPSDYRcw4uqgRzZMDd5sRnMpE4ungR1K8MRNXnBVtQ2`
-- flow below pace: blocked 47, ran 5, dumped 35, flat 5, open 2 (saving losses: keep it)
+- flow below pace: blocked 48, ran 5, dumped 35, flat 5, open 3 (saving losses: keep it)
   - ran: BIAO up to 1.51x  
     CA `As3XtYSstuVdrVyb6sJZZ77Tu8JvjTBg6S6hgPv4pump`
   - ran: PAIR up to 2.1x  
     CA `32rBxcFjCFnyqZ41CEPM5AL67X1dcw8w83vZt6Kxpump`
   - ran: Hoppy up to 1.76x  
     CA `CFX1gH7CKYwqYXrfDkS2MUxJcEhs8PT63DyRA1chpump`
-- too new / sniping: blocked 43, ran 7, dumped 36, flat 0, open 0 (saving losses: keep it)
+- too new / sniping: blocked 44, ran 7, dumped 37, flat 0, open 0 (saving losses: keep it)
   - ran: COIN up to 1.85x  
     CA `ALLherSTscpAErYo5Jja3ysVocaa2oeZkUvgmvhZpump`
   - ran: Slapcat up to 1.61x  
@@ -127,7 +127,7 @@ A skip "ran" if the coin reached the first target (1.5x) from the skip price bef
     CA `FeBG8AEG4j7LT7xQF38gPXQFBRBtXBTNzhZjSa3bpump`
   - ran: NETHER up to 1.8x  
     CA `GkL4cJLAL3354wLgS6mZJKKUBVzvUY1FUN47zZNgGWEq`
-- bundles over the line: blocked 26, ran 3, dumped 17, flat 4, open 2 (saving losses: keep it)
+- bundles over the line: blocked 26, ran 3, dumped 18, flat 4, open 1 (saving losses: keep it)
   - ran: WIENER up to 1.59x  
     CA `8BDkDfj3ZUvcG9caGzF2XnHfwg7K6fjfKKDvX6SCpump`
   - ran: Dragon up to 1.55x  
@@ -201,11 +201,11 @@ The trenches are active, not quiet. The movers share one launch style, fresh pum
 ## Moving most in its scans, last 30 min (1h volume)
 - FRGST: $324,250 1h vol, $129,818 mcap, +111% 1h  
   CA `DNgboHpauGZ5KbSptWSkwQyQLSDCQKdoU3qsk9FTpump`
-- TWORBIT: $173,737 1h vol, $1,373 mcap, -100% 1h  
-  CA `GXpQZkap4ExgQTTX4SXfETV7nt1YZKEZSakqos3hpump`
+- Sheeb: $189,678 1h vol, $56,278 mcap, +93% 1h  
+  CA `5rRxk9FC3ma11neg8BGLwTWxt4PokH19Y92sERwa2PJ3`
 - KITT: $125,515 1h vol, $53,355 mcap, +365% 1h  
   CA `F5LxbqJxAMrvfxLbqPckErmqNyiPzDJMUXnX8vrhpump`
 - COMPUTE: $111,902 1h vol, $85,555 mcap, +186% 1h  
   CA `54jKBorvDP4eB7vZnWy1HJfhm4X17pSJCE6o2Lshpump`
-- Egg: $47,817 1h vol, $12,630 mcap, +518% 1h  
-  CA `EVASJxNTfg5P8qrj3crg11pQNDva6fqzfHavZ9NLpump`
+- TWORBIT: $94,577 1h vol, $1,411 mcap, -100% 1h  
+  CA `GXpQZkap4ExgQTTX4SXfETV7nt1YZKEZSakqos3hpump`
