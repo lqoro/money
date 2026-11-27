@@ -1,13 +1,13 @@
 # Trencher live report
 
-Updated 2026-11-27T14:51:51Z (paper trading, never real money)
+Updated 2026-11-27T15:06:55Z (paper trading, never real money)
 
 - Equity: $74.23 (-25.8% vs $100 start)
 - Closed trades: 22, 3 wins
 - Fees paid: $14.78 (axiom $2.81, network $9.18, pool $2.66), plus $4.15 lost to slippage
 - New trades: WATCH-ONLY (scans and decides, buys nothing)
-- Brain: subscription, claude-haiku-5-5 for routine calls, claude-opus-5-5 for the daily review; 388 routine calls and 9 plan-limit hits in 48h
-- Watch log: 46 coins being followed, 4212 filed, 0 would-buys (6h follow, sampled every 2 min)
+- Brain: subscription, claude-haiku-5-5 for routine calls, claude-opus-5-5 for the daily review; 387 routine calls and 9 plan-limit hits in 48h
+- Watch log: 47 coins being followed, 4212 filed, 0 would-buys (6h follow, sampled every 2 min)
 
 ## Scorecard (after fees)
 - 22 closed, 3 won (14%), net $-25.79
@@ -73,9 +73,11 @@ Updated 2026-11-27T14:51:51Z (paper trading, never real money)
   CA `H4gHnZ3NCU7Z9XQwGX6YYJNyieGEW8pqwGRUcdSxpump`
 
 ## Last scan
-- 14:51Z: 2 coins, 1 with pairs, 0 passed the market filters, 0 researched
+- 15:06Z: 4 coins, 3 with pairs, 0 passed the market filters, 0 researched
 
 ## Coins it looked at, and why it passed
+- 14:58Z WOOPY (MIGRATED, $764,679 mcap, $2,076 5m vol): PASS at conviction 2, PASS: chasing, 2.3% off the high, with 5m flow at $2k and 0.89x pace, and 25 same-ticker copies. Attention is leaving, not arriving. (V1, V6, V13)  
+  CA `2va3NUJtEcPemDYg2N1RgA79rPKGTGGJKo3gTY5zpump`
 - 14:49Z BRUH (DIP, $5,151,520 mcap, $2,021 5m vol): PASS at conviction 2, PASS: BRUH has clean holders, but no higher low, flow under pace, and a dead story. It's a $5M parody copy with no catalyst. (V1, V6, V13)  
   CA `PgFtGGquvnv2zEkjG2N2QPvBTBrafuExGYEqahRpump`
 - 14:48Z WINSTON (MIGRATED, $202,622 mcap, $19,635 5m vol): PASS at conviction 3, PASS: flow below pace, and no catalyst for a bottom buy. Winstoncoin is the theme leader, but its 5m is 0.76x its hourly pace and the Winston theme is 0.74x. (V1, V6)  
@@ -94,19 +96,17 @@ Updated 2026-11-27T14:51:51Z (paper trading, never real money)
   CA `PgFtGGquvnv2zEkjG2N2QPvBTBrafuExGYEqahRpump`
 - 14:02Z WINSTON (MIGRATED, $168,261 mcap, $12,235 5m vol): PASS at conviction 2, PASS — flow below pace: 5m volume is 0.25x the hour's average, and the 1h candles are a 6x bounce off a $25k-ish low, not a printed higher low. Blocker: "flow below pace" (owner rule, V1, V6).  
   CA `7Y2CVbnqZRvR5RUvEJ9RQ73fZEfv7ybNcysytAepump`
-- 13:59Z Zhaki (DIP, $44,504 mcap, $5,557 5m vol): REJECT, Dip with fading attention is a falling knife, not a dip (5m at 0.35x the hour's pace, under 0.6x)  
-  CA `2YAfPhCrGSW82Ra33sWgurXt4dQ29SwXusvUXdJGpump`
 
 ## What its skips did next (last 48h)
 A skip "ran" if the coin reached the first target (1.5x) from the skip price before a 20% drop, "dumped" if the drop came first. Sampled every 10 min, followed 6h.
-- top 10 over 25%: blocked 51, ran 10, dumped 38, flat 2, open 1 (saving losses: keep it)
+- top 10 over 25%: blocked 50, ran 10, dumped 37, flat 2, open 1 (saving losses: keep it)
   - ran: ð up to 1.65x  
     CA `GeUnGPLFku8zn1dJUNZpj6VymUxt7A3t9DqRL5WJpump`
   - ran: MONEY up to 1.58x  
     CA `DeACAbp2GMzapB6Z2K8qdkTZupmNbKc6EZx9bnbCpump`
   - ran: Legatum up to 2.21x  
     CA `HkPSDYRcw4uqgRzZMDd5sRnMpE4ungR1K8MRNXnBVtQ2`
-- flow below pace: blocked 45, ran 4, dumped 33, flat 5, open 3 (saving losses: keep it)
+- flow below pace: blocked 45, ran 4, dumped 34, flat 5, open 2 (saving losses: keep it)
   - ran: BIAO up to 1.51x  
     CA `As3XtYSstuVdrVyb6sJZZ77Tu8JvjTBg6S6hgPv4pump`
   - ran: PAIR up to 2.1x  
@@ -199,13 +199,13 @@ No edge after costs, and I'm fairly sure of that. All 250 settled coins averaged
 The meta is thin, not dead. The only theme with real money is fresh pump.fun/PumpSwap launches under about two hours old with 55-67% buys, and the names are scattered (Winston/Winstoncoin, Baboon Smirk, MintMyGame). Winston-named coins are rising (Winstoncoin +457% 1h, Winston +237%), while the cat cluster is fading (Choking Cat -99%, ChokeCat -52% with sellers in control). Only Winstoncoin ($12.2k 5m, 57% buys, $168k cap) clears the $10k 5m bar; Baboon Smirk ($5.6k 5m, 60% buys) is close, and the rest sit under $2k 5m or are dead legacy names (BRUH, CBUCKS, WW, JOB). Setups to research, not buy: Winstoncoin only on a pullback that holds $10k 5m with buys over half, Baboon Smirk only once its 5m clears $10k, and MintMyGame and Perpit (Meteora, $364 5m) need real volume before they count. Holder, dev and bundle checks haven't run on any of them yet, and the crawler's cap and percentage figures conflict with scan_movers, so I discarded them; the Trump dinner headlines aren't showing up in this flow. Paper only, not financial advice.
 
 ## Moving most in its scans, last 30 min (1h volume)
-- TWORBIT: $483,224 1h vol, $433,673 mcap, +140% 1h  
-  CA `GXpQZkap4ExgQTTX4SXfETV7nt1YZKEZSakqos3hpump`
 - WINSTON: $310,042 1h vol, $202,622 mcap, +27% 1h  
   CA `7Y2CVbnqZRvR5RUvEJ9RQ73fZEfv7ybNcysytAepump`
-- FRGST: $161,435 1h vol, $75,955 mcap, +146% 1h  
-  CA `DNgboHpauGZ5KbSptWSkwQyQLSDCQKdoU3qsk9FTpump`
-- KITT: $90,323 1h vol, $45,173 mcap, +47% 1h  
-  CA `F5LxbqJxAMrvfxLbqPckErmqNyiPzDJMUXnX8vrhpump`
-- Zhaki: $76,421 1h vol, $34,461 mcap, -50% 1h  
+- Zhaki: $36,846 1h vol, $26,481 mcap, -36% 1h  
   CA `2YAfPhCrGSW82Ra33sWgurXt4dQ29SwXusvUXdJGpump`
+- BRUH: $32,778 1h vol, $5,151,520 mcap, -4% 1h  
+  CA `PgFtGGquvnv2zEkjG2N2QPvBTBrafuExGYEqahRpump`
+- WOOPY: $29,407 1h vol, $751,397 mcap, +12% 1h  
+  CA `2va3NUJtEcPemDYg2N1RgA79rPKGTGGJKo3gTY5zpump`
+- Egg: $17,928 1h vol, $8,339 mcap, +308% 1h  
+  CA `EVASJxNTfg5P8qrj3crg11pQNDva6fqzfHavZ9NLpump`
