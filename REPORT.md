@@ -1,13 +1,13 @@
 # Trencher live report
 
-Updated 2026-11-27T06:48:09Z (paper trading, never real money)
+Updated 2026-11-27T07:03:14Z (paper trading, never real money)
 
 - Equity: $74.23 (-25.8% vs $100 start)
 - Closed trades: 22, 3 wins
 - Fees paid: $14.78 (axiom $2.81, network $9.18, pool $2.66), plus $4.15 lost to slippage
 - New trades: WATCH-ONLY (scans and decides, buys nothing)
-- Brain: subscription, claude-haiku-5-5 for routine calls, claude-opus-5-5 for the daily review; 377 routine calls and 0 plan-limit hits in 48h
-- Watch log: 82 coins being followed, 4118 filed, 0 would-buys (6h follow, sampled every 2 min)
+- Brain: subscription, claude-haiku-5-5 for routine calls, claude-opus-5-5 for the daily review; 378 routine calls and 0 plan-limit hits in 48h
+- Watch log: 80 coins being followed, 4123 filed, 0 would-buys (6h follow, sampled every 2 min)
 
 ## Scorecard (after fees)
 - 22 closed, 3 won (14%), net $-25.79
@@ -73,9 +73,15 @@ Updated 2026-11-27T06:48:09Z (paper trading, never real money)
   CA `H4gHnZ3NCU7Z9XQwGX6YYJNyieGEW8pqwGRUcdSxpump`
 
 ## Last scan
-- 06:47Z: 6 coins, 6 with pairs, 1 passed the market filters, 1 researched
+- 07:02Z: 1 coins, 1 with pairs, 0 passed the market filters, 0 researched
 
 ## Coins it looked at, and why it passed
+- 06:58Z Kibo (MIGRATED, $43,739 mcap, $3,849 5m vol): PASS at conviction 2, PASS: Kibo is a 28-copy vamp field with 5m flow at 0.61x pace and the theme at 0.2x pace. Blocked on flow, split crowd, and no printed higher low. (V1, V3, V6)  
+  CA `7XSYaJygcuNe6Q3kPvwsJpg4ZrFL1AEUFb8kCuzppump`
+- 06:55Z 牛回 (no setup, $14,184 mcap, $40,394 5m vol): REJECT, No setup fits: not Final Stretch, not a migrated runner, not a healthy dip  
+  CA `73Hqqyqq9T5AkzHoNsmuLVcw3RDknJVvZDaXwoyc7G3J`
+- 06:55Z Snowball (MIGRATED, $573,850 mcap, $5,138 5m vol): PASS at conviction 2, PASS. Bottom buy with no live story, buy ratio under half, and a holder "roll" gimmick that reads like a farm. (V1, V13)  
+  CA `9TKbd3VFaMSXsEAicD9JVQWpWwAoLi4fSgWmZL2cpump`
 - 06:47Z wizardcat (DIP, $54,966 mcap, $2,012 5m vol): PASS at conviction 3, PASS: no catalyst, $2k 5m flow, and the CA isn't on the project's own site. A thin cat copy in an 18-ticker field. (DIP, V1, V6, V13)  
   CA `6W3H5nEzuLUpTbcMrhRfMiDPCZ4QuBmZPBkeAMzypump`
 - 06:37Z CBUCKS (MIGRATED, $6,807,689 mcap, $2,119 5m vol): REJECT, Top 10 hold 25.6% ex-pool (>25%) (V13)  
@@ -90,30 +96,24 @@ Updated 2026-11-27T06:48:09Z (paper trading, never real money)
   CA `9TKbd3VFaMSXsEAicD9JVQWpWwAoLi4fSgWmZL2cpump`
 - 06:06Z BRUH (DIP, $5,480,882 mcap, $2,322 5m vol): PASS at conviction 3, PASS: BRUH flow is 0.63x its hourly pace on a $5.5M coin, with no catalyst and a fading Trump-dinner meta. Clean holders don't fix that. (V1, V6)  
   CA `PgFtGGquvnv2zEkjG2N2QPvBTBrafuExGYEqahRpump`
-- 06:02Z CINU (MIGRATED, $260,874 mcap, $2,614 5m vol): PASS at conviction 2, PASS. Cate Inu is 28 copies of one ticker, the CA on its own site is a different address, and it sits 1.25x under its peak. Blocker: "split crowd" and "target too close" (V1, V3).  
-  CA `CvXQ9qEriGgTbMWyF8L1U7oqn9ev8A49N1dzNE8cpump`
-- 05:52Z CaveBaby (MIGRATED, $57,190 mcap, $21,980 5m vol): REJECT, Bundles: 2 linked wallet cluster(s) hold 78.0% of supply (>20%) (V17)  
-  CA `BZUYxHMqLXCZ5evWoBuagMfpeYtPSXzr8kHvqqL5pump`
-- 05:51Z CBUCKS (MIGRATED, $6,804,064 mcap, $2,911 5m vol): REJECT, Top 10 hold 25.6% ex-pool (>25%) (V13)  
-  CA `DtcicPCKTKeAh7TDEzTym3hXeoHAoMiBdYJhMYxZpump`
 
 ## What its skips did next (last 48h)
 A skip "ran" if the coin reached the first target (1.5x) from the skip price before a 20% drop, "dumped" if the drop came first. Sampled every 10 min, followed 6h.
-- top 10 over 25%: blocked 55, ran 10, dumped 42, flat 2, open 1 (saving losses: keep it)
+- top 10 over 25%: blocked 55, ran 10, dumped 42, flat 3, open 0 (saving losses: keep it)
   - ran: SWARM up to 1.57x  
     CA `2Rw6rLRRZXQLNreForjeVvDjnpYUaW6rmMFXmRP9pump`
   - ran: ð up to 1.65x  
     CA `GeUnGPLFku8zn1dJUNZpj6VymUxt7A3t9DqRL5WJpump`
   - ran: MONEY up to 1.58x  
     CA `DeACAbp2GMzapB6Z2K8qdkTZupmNbKc6EZx9bnbCpump`
-- too new / sniping: blocked 45, ran 8, dumped 36, flat 0, open 1 (saving losses: keep it)
+- too new / sniping: blocked 44, ran 8, dumped 36, flat 0, open 0 (saving losses: keep it)
   - ran: Merged up to 2.18x  
     CA `AMYpNGi5aGrKr1ZDsotUdWh7k1mMi569ygtaHJmErGEd`
   - ran: Boor up to 1.56x  
     CA `GHFpSSw2ZMjmKCyc1wrHUjJiqnJeP18mekY9GL1Xpump`
   - ran: COIN up to 1.85x  
     CA `ALLherSTscpAErYo5Jja3ysVocaa2oeZkUvgmvhZpump`
-- flow below pace: blocked 42, ran 5, dumped 29, flat 4, open 4 (saving losses: keep it)
+- flow below pace: blocked 43, ran 6, dumped 29, flat 4, open 4 (saving losses: keep it)
   - ran: BASKET up to 1.55x  
     CA `3Tg6YnNrfPdFfsY14MaNsDMWLseAyrUDS3myJtbaJN6f`
   - ran: BIAO up to 1.51x  
@@ -142,14 +142,14 @@ A skip "ran" if the coin reached the first target (1.5x) from the skip price bef
     CA `J9eBkCb4UtquAMQqB6duwBmR99fFSMoTnDcaMB9Wpump`
   - ran: MONEY up to 1.58x  
     CA `DeACAbp2GMzapB6Z2K8qdkTZupmNbKc6EZx9bnbCpump`
-- falling knife / no higher low: blocked 17, ran 4, dumped 7, flat 4, open 2 (mixed)
+- falling knife / no higher low: blocked 16, ran 4, dumped 6, flat 4, open 2 (mixed)
   - ran: Jimmies up to 1.53x  
     CA `GisWWjhwrSud4aFGSHvTMt85Ky14sY7LeBFCpfoFpump`
   - ran: Zero up to 2.07x  
     CA `DTSkmo3sCCKLCh91dJLiWCpwcKtK3yDBZMqZGSV1pump`
   - ran: Maru up to 1.88x  
     CA `FokVFH6mDsazoKbtnUaA2FRMsRbDSwZhNfn17Fdvpump`
-- other: blocked 13, ran 2, dumped 11, flat 0, open 0 (saving losses: keep it)
+- other: blocked 14, ran 2, dumped 12, flat 0, open 0 (saving losses: keep it)
   - ran: SXI up to 2.34x  
     CA `BFWNbSwRodXPTQqrMSCfhznhJwEzY6ERd6MHjWUEpump`
   - ran: Christmas up to 1.89x  
@@ -194,16 +194,16 @@ No edge yet. All 276 settled coins lost money after costs under the simple plan:
 - [2026-11-02 20:25] I expected Slingoor, a clean MIGRATED leader with $25k of 5m flow at pace and a 0.77 buy share, to retest its $408k high from $304k. It never went green (0.98x peak) and hit the -20% stop in 2 minutes, a -$2.86 probe. My own thesis admitted there was no printed higher low after a peak only 6 minutes old, so this confirms the money-shape rule: buy share and flow are not structure (V1, V6). Next time a MIGRATED pullback with no higher low above the hourly low is a PASS with blocker "no higher low", not a probe. This is one loss, so it adds no new ban beyond the rule I already have.
 
 ## Meta right now
-Meta: the live volume is in animal/mascot names and person-named coins, while the Christmas wave is already fading. Kibo (pumpfun, $26k cap, $32k 5m, 61% buys, 6 minutes old) and VOLALITY ($100k cap, $17k 5m, 58% buys, 1.3h old) are the only two in this scan clearing the $10k 5m bar with buyers. Mike McCarthy/123Packers ($9k cap, +219% in the hour, 67% buys) is the person-name play, but $2.3k 5m is below the bar, so it's watch-only. Fading: Santaball (-99.8% in the hour, 0% buys on 5m), Christmas Coin (-82%, 25% buys), and LUMINARE and DragonCoin (-98%, zero 5m buys). The crawler's DragonCoin $77k / +155% doesn't match the scan (~$1.6k, -98%), so I'm treating the crawler's numbers as stale. Setups to look at, pending holder, dev and bundle checks: Kibo as a FINAL_STRETCH probe only if the top-50 buy the dip, and VOLALITY as a dip-hold only if 5m volume stays above $10k; neither is verified, so conviction stays at probe level.
+Meta from scan_movers: the live volume is fresh pump.fun launches with animal, mascot and generic famous-name tickers (pigger, Upline, Bitcoin, CINU, wizardcat, JOB, Kibo), while the sub-$4k coins that spiked and then collapsed (VOLALITY -98%, CaveBaby -97%, Pilly -88%, leftovers -76% in the hour, zero 5m volume) show the fading side of the same pattern. The Trump dinner and Christmas headlines aren't showing up in the movers, so I'm not treating the news as the meta. Rising: Upline (+458% in the hour, $46k 5m, $16.8k cap, 6 minutes old, 40% buys) and Bitcoin ($9.1k 5m, 70% buys, $11.9k cap, 12 minutes old; a generic name is a vamp risk until I confirm it's the original). Kibo is $5.9k 5m on the scan, below the $10k bar, so the crawler's $32k figure is stale and I'm not using it. Setups to research, not buys: Upline only if 5m holds above $10k with buyers above half after the first spike, and Bitcoin only if it's confirmed as the original and clears $10k 5m; both are unverified until holder, dev and bundle checks run, so they're probe-level at most. PASS on everything else for now.
 
 ## Moving most in its scans, last 30 min (1h volume)
-- CaveBaby: $197,349 1h vol, $1,692 mcap, -95% 1h  
-  CA `BZUYxHMqLXCZ5evWoBuagMfpeYtPSXzr8kHvqqL5pump`
-- VOLALITY: $142,979 1h vol, $1,977 mcap, -98% 1h  
-  CA `4tPsVjDAqgDjb5TzGazEDMvM2GK2xDvCG2LxpX8opump`
-- Pilly: $106,845 1h vol, $3,494 mcap, -88% 1h  
-  CA `8XEddj5r2MkiKgFgMGUev3WMAyk5td2NXD6z3bRypump`
-- Kibo: $105,600 1h vol, $24,500 mcap, -25% 1h  
-  CA `7XSYaJygcuNe6Q3kPvwsJpg4ZrFL1AEUFb8kCuzppump`
-- pigger: $84,908 1h vol, $2,940 mcap, +27% 1h  
+- twin: $122,007 1h vol, $5,258 mcap, +113% 1h  
+  CA `FbrKhFFrYgEAN3VCTiodjuqGE8Y23EaCuTELkz9xxdxd`
+- pigger: $85,941 1h vol, $3,072 mcap, +32% 1h  
   CA `5YK8syegHJcpZ558aqyWBeQcpcQLzTnm3XsJky9Mpump`
+- VOLALITY: $81,445 1h vol, $1,966 mcap, -98% 1h  
+  CA `4tPsVjDAqgDjb5TzGazEDMvM2GK2xDvCG2LxpX8opump`
+- CaveBaby: $76,079 1h vol, $1,689 mcap, -98% 1h  
+  CA `BZUYxHMqLXCZ5evWoBuagMfpeYtPSXzr8kHvqqL5pump`
+- Kibo: $75,370 1h vol, $43,739 mcap, -3% 1h  
+  CA `7XSYaJygcuNe6Q3kPvwsJpg4ZrFL1AEUFb8kCuzppump`
