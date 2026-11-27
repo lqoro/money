@@ -1,13 +1,13 @@
 # Trencher live report
 
-Updated 2026-11-27T03:30:18Z (paper trading, never real money)
+Updated 2026-11-27T03:45:35Z (paper trading, never real money)
 
 - Equity: $74.23 (-25.8% vs $100 start)
 - Closed trades: 22, 3 wins
 - Fees paid: $14.78 (axiom $2.81, network $9.18, pool $2.66), plus $4.15 lost to slippage
 - New trades: WATCH-ONLY (scans and decides, buys nothing)
 - Brain: subscription, claude-haiku-5-5 for routine calls, claude-opus-5-5 for the daily review; 363 routine calls and 0 plan-limit hits in 48h
-- Watch log: 70 coins being followed, 4084 filed, 0 would-buys (6h follow, sampled every 2 min)
+- Watch log: 73 coins being followed, 4086 filed, 0 would-buys (6h follow, sampled every 2 min)
 
 ## Scorecard (after fees)
 - 22 closed, 3 won (14%), net $-25.79
@@ -73,9 +73,19 @@ Updated 2026-11-27T03:30:18Z (paper trading, never real money)
   CA `H4gHnZ3NCU7Z9XQwGX6YYJNyieGEW8pqwGRUcdSxpump`
 
 ## Last scan
-- 03:29Z: 2 coins, 1 with pairs, 0 passed the market filters, 0 researched
+- 03:45Z: 5 coins, 4 with pairs, 0 passed the market filters, 0 researched
 
 ## Coins it looked at, and why it passed
+- 03:42Z Snowball (MIGRATED, $669,806 mcap, $1,834 5m vol): REJECT, 5m volume $1,834 is dead (<$2,000) (V1)  
+  CA `9TKbd3VFaMSXsEAicD9JVQWpWwAoLi4fSgWmZL2cpump`
+- 03:41Z ZeroFee (FINAL_STRETCH, $15,592 mcap, $3,283 5m vol): PASS at conviction 2, PASS: fee-bot funnel with no story, $3.3k 5m and a theme at 0.15x pace. Blocker: "no meta". (V1, V7, V13)  
+  CA `D4Yzbzb2McHfYYwCe3hsFtEXdZ2eXemyQjfGdmmwpump`
+- 03:39Z BRUH (MIGRATED, $7,946,428 mcap, $12,832 5m vol): PASS at conviction 3, PASS — big cap, no room, and a bottom buy with no catalyst. BRUH is $7.9M, 36% off a $12.4M peak, with the first resistance only 1.10x away and no story on the radar. Clean holders don't fix that (V1, V6, V13).  
+  CA `PgFtGGquvnv2zEkjG2N2QPvBTBrafuExGYEqahRpump`
+- 03:39Z Dragon (MIGRATED, $55,015 mcap, $17,794 5m vol): REJECT, Bundles: 1 linked wallet cluster(s) hold 77.7% of supply (>20%) (V17)  
+  CA `cg3HaDWhAKFfj9aq79TWUBgmxfs4G7byQ7feaxnpump`
+- 03:34Z PLAYGROUND (MIGRATED, $67,978 mcap, $62,949 5m vol): REJECT, Top 10 hold 30.5% ex-pool (>25%) (V13)  
+  CA `77iw79xUzrzzvsc4Tt52EEZz6V1dqxaSGh3pqj7Vpump`
 - 03:29Z Santaball (MIGRATED, $986,628 mcap, $15,199 5m vol): PASS at conviction 3, PASS. Mid-range, flow under pace, and the project site doesn't show this CA. Santaball is a holiday-meta leader, but the entry is wrong. (V1, V3, V13)  
   CA `4obGGXRMVyqpWZr12UzyaBdNkgdYwz2GiY8enmd2pump`
 - 03:27Z DragonRiders (MIGRATED, $166,538 mcap, $28,030 5m vol): PASS at conviction 3, PASS: flow below pace, no printed higher low, and the theme is too thin for a bottom buy. It's a copy in an 11-coin field and it's not the one carrying the volume. (V1, V3, V6)  
@@ -86,33 +96,16 @@ Updated 2026-11-27T03:30:18Z (paper trading, never real money)
   CA `9o23zEgFu6VtSrBh9eeindVUGotghyxgC8KqLExYpump`
 - 03:19Z SpaceXCoin (MIGRATED, $444,597 mcap, $11,078 5m vol): PASS at conviction 2, PASS: chasing a spike with flow at 0.28x pace, 4% off a fresh high, too new, and a 4-copy ticker field. Blockers: "chasing spike", "flow below pace", "too new" (V1, V6, V13).  
   CA `G2XqmSc8vJpLLwaLVXUeNkxsrhVT8vQ3Pje8MqeDpump`
-- 03:17Z JIMMY (DIP, $505,599 mcap, $3,523 5m vol): PASS at conviction 3, PASS. Bottom buy on a fading old-character story with no catalyst, a 4.4% bundle cluster, and first resistance 8% away. Dead money until proven otherwise (V1, V6, V13).  
-  CA `38M2z4UCfZEkUHFzD48vhKQhFhNyRGto8pZbLjNipump`
-- 03:09Z SOLCAP (MIGRATED, $33,829 mcap, $32,388 5m vol): PASS at conviction 2, PASS. Blocker: too new (2.7 min old), chasing spike (5m volume 12x hourly pace), no higher low, and 13 copies of the ticker. Solana Capybara is a lottery ticket on a crowd that just arrived. (V1, V6, V13)  
-  CA `J2We8huLbXG4Ueij766B6Yzjg3Ktf2qH5zhaD3cDpump`
-- 02:59Z 530A (MIGRATED, $88,331 mcap, $56,509 5m vol): REJECT, Bundles: 10 linked wallet cluster(s) hold 100.0% of supply (>20%) (V17)  
-  CA `7Ttmp4xBtErMzxpR6AhuzJjDf7u3YGJtWm5ibPsqpump`
-- 02:56Z Snowball (MIGRATED, $634,750 mcap, $10,313 5m vol): PASS at conviction 3, PASS: no breakout, and it's a bundled leader in an 18-copy field, on a 1.4-day-old "roll to buy" holder site. Blockers: "no breakout" and "split crowd" (V1, V3, V6, V13).  
-  CA `9TKbd3VFaMSXsEAicD9JVQWpWwAoLi4fSgWmZL2cpump`
-- 02:53Z CBUCKS (MIGRATED, $6,929,612 mcap, $3,060 5m vol): REJECT, Top 10 hold 25.6% ex-pool (>25%) (V13)  
-  CA `DtcicPCKTKeAh7TDEzTym3hXeoHAoMiBdYJhMYxZpump`
 
 ## What its skips did next (last 48h)
 A skip "ran" if the coin reached the first target (1.5x) from the skip price before a 20% drop, "dumped" if the drop came first. Sampled every 10 min, followed 6h.
-- top 10 over 25%: blocked 50, ran 8, dumped 38, flat 0, open 4 (saving losses: keep it)
+- top 10 over 25%: blocked 51, ran 8, dumped 39, flat 0, open 4 (saving losses: keep it)
   - ran: SWARM up to 1.57x  
     CA `2Rw6rLRRZXQLNreForjeVvDjnpYUaW6rmMFXmRP9pump`
   - ran: ð up to 1.65x  
     CA `GeUnGPLFku8zn1dJUNZpj6VymUxt7A3t9DqRL5WJpump`
   - ran: MONEY up to 1.58x  
     CA `DeACAbp2GMzapB6Z2K8qdkTZupmNbKc6EZx9bnbCpump`
-- too new / sniping: blocked 43, ran 8, dumped 34, flat 0, open 1 (saving losses: keep it)
-  - ran: BABYANSEM up to 2.77x  
-    CA `F3VctV9FqDgiyqaztN6z78bgWy27eH7DBBHW1vjpump`
-  - ran: Merged up to 2.18x  
-    CA `AMYpNGi5aGrKr1ZDsotUdWh7k1mMi569ygtaHJmErGEd`
-  - ran: Boor up to 1.56x  
-    CA `GHFpSSw2ZMjmKCyc1wrHUjJiqnJeP18mekY9GL1Xpump`
 - near the high / chasing: blocked 41, ran 6, dumped 31, flat 3, open 1 (saving losses: keep it)
   - ran: SNOWCUMBRR up to 2.36x  
     CA `Gf9wm93TTDpbPC467Eio5Vc42Kr6MAomUD172drWpump`
@@ -120,6 +113,13 @@ A skip "ran" if the coin reached the first target (1.5x) from the skip price bef
     CA `A88p1LcHisrx3TuTwUGVrLtc1LBTUPZUfVgaCGutAFaK`
   - ran: Nala up to 1.64x  
     CA `FeBG8AEG4j7LT7xQF38gPXQFBRBtXBTNzhZjSa3bpump`
+- too new / sniping: blocked 41, ran 7, dumped 33, flat 0, open 1 (saving losses: keep it)
+  - ran: Merged up to 2.18x  
+    CA `AMYpNGi5aGrKr1ZDsotUdWh7k1mMi569ygtaHJmErGEd`
+  - ran: Boor up to 1.56x  
+    CA `GHFpSSw2ZMjmKCyc1wrHUjJiqnJeP18mekY9GL1Xpump`
+  - ran: COIN up to 1.85x  
+    CA `ALLherSTscpAErYo5Jja3ysVocaa2oeZkUvgmvhZpump`
 - flow below pace: blocked 40, ran 5, dumped 27, flat 4, open 4 (saving losses: keep it)
   - ran: BASKET up to 1.55x  
     CA `3Tg6YnNrfPdFfsY14MaNsDMWLseAyrUDS3myJtbaJN6f`
@@ -132,7 +132,7 @@ A skip "ran" if the coin reached the first target (1.5x) from the skip price bef
     CA `7ykeHoEnjnGkY6tqteXn47fdGtd7kfXWghiyZ7YKpump`
   - ran: Bababoi up to 2.17x  
     CA `28B9kDm6XtQNqAkzuiKH3Zu1L8cVM6SLW4iRamFspump`
-- bundles over the line: blocked 21, ran 2, dumped 15, flat 4, open 0 (saving losses: keep it)
+- bundles over the line: blocked 21, ran 2, dumped 14, flat 4, open 1 (saving losses: keep it)
   - ran: jingyu up to 1.58x  
     CA `DUZrwdjEthcJ99ZiRXr31UuqTohoTg7VjTEyfGdBpump`
   - ran: WIENER up to 1.59x  
@@ -154,11 +154,9 @@ A skip "ran" if the coin reached the first target (1.5x) from the skip price bef
 - other: blocked 13, ran 1, dumped 11, flat 0, open 1 (saving losses: keep it)
   - ran: SXI up to 2.34x  
     CA `BFWNbSwRodXPTQqrMSCfhznhJwEzY6ERd6MHjWUEpump`
-- dev share over 1%: blocked 11, ran 2, dumped 7, flat 2, open 0 (saving losses: keep it)
-  - ran: Grinch up to 1.94x  
-    CA `J1b5HnRzmXsYK5akPTFtBR7B4E74JG8eyULodd7ypump`
-  - ran: bolphante up to 1.7x  
-    CA `FVBzzG4ZcAgxSLW1rWjNC9EH9CgEgz1A4puNYexMpump`
+- thin 5m volume: blocked 12, ran 1, dumped 8, flat 0, open 3 (saving losses: keep it)
+  - ran: Copyinu up to 2.6x  
+    CA `GRXSoGBqmTkS78Rrvm8QyBJH9XMe8562eZojzHj2pump`
 
 ## Daily review (2026-11-26, claude-opus-5-5)
 No edge yet. All 276 settled coins lost money after costs under the simple plan: -6.4% average net. Every setup was negative: FINAL_STRETCH -3.6% (n=45), MIGRATED -5.1% (n=193), DIP -16.1% (n=38). Before costs the simple plan made roughly +3% overall and about +6% on FINAL_STRETCH. The ~9.7% round-trip cost on a $10 buy wipes that out, which is the same thing the 22 real trades showed: $18.83 of the $25.79 loss was fees and slippage. The sample is far too small to trust a 3–6% gross edge. Payoffs swing from +50% to -20%, so the error bar on 45 FINAL_STRETCH coins is about ±9 points. Repeat logs of the same coin also make the overall n look bigger than it is. Only the negative after-cost result is solid. The brain logged zero would-buys, so nobody can say yet whether it picks better than it passes. That missing data is the main thing to fix before Nov 10.
@@ -205,7 +203,7 @@ The trenches are not quiet. The scan shows two rising themes: space and holiday 
   CA `5xrT8y2KU2YwzipwCMNxxTc8KAGQd4wjtGTc2WyJJCMh`
 - Scat: $404,365 1h vol, $79,683 mcap, +189% 1h  
   CA `ACzDUEXiDMWS6K3jxMcEKQJzJpHPjenw38hiFBihpump`
+- 530A: $213,322 1h vol, $1,573 mcap, -97% 1h  
+  CA `7Ttmp4xBtErMzxpR6AhuzJjDf7u3YGJtWm5ibPsqpump`
 - Santaball: $197,099 1h vol, $961,778 mcap, +50% 1h  
   CA `4obGGXRMVyqpWZr12UzyaBdNkgdYwz2GiY8enmd2pump`
-- steppa: $79,180 1h vol, $18,631 mcap, -50% 1h  
-  CA `6StXSU7RvsbuwNG2gPw7nmu2UTVM3ZD2aewHA7fMpump`
