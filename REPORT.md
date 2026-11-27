@@ -1,13 +1,13 @@
 # Trencher live report
 
-Updated 2026-11-27T18:54:30Z (paper trading, never real money)
+Updated 2026-11-27T19:09:37Z (paper trading, never real money)
 
 - Equity: $74.23 (-25.8% vs $100 start)
 - Closed trades: 22, 3 wins
 - Fees paid: $14.78 (axiom $2.81, network $9.18, pool $2.66), plus $4.15 lost to slippage
 - New trades: WATCH-ONLY (scans and decides, buys nothing)
 - Brain: subscription, claude-haiku-5-5 for routine calls, claude-opus-5-5 for the daily review; 397 routine calls and 9 plan-limit hits in 48h
-- Watch log: 74 coins being followed, 4237 filed, 0 would-buys (6h follow, sampled every 2 min)
+- Watch log: 75 coins being followed, 4239 filed, 0 would-buys (6h follow, sampled every 2 min)
 
 ## Scorecard (after fees)
 - 22 closed, 3 won (14%), net $-25.79
@@ -73,9 +73,15 @@ Updated 2026-11-27T18:54:30Z (paper trading, never real money)
   CA `H4gHnZ3NCU7Z9XQwGX6YYJNyieGEW8pqwGRUcdSxpump`
 
 ## Last scan
-- 18:53Z: 4 coins, 4 with pairs, 0 passed the market filters, 0 researched
+- 19:09Z: 5 coins, 5 with pairs, 0 passed the market filters, 0 researched
 
 ## Coins it looked at, and why it passed
+- 19:08Z FARM (MIGRATED, $44,126 mcap, $23,528 5m vol): PASS at conviction 2, PASS: FARMCOIN is a 3-minute-old copy in a 16-coin farm field, up 62% on 5m with no printed higher low. Blockers: too new, chasing spike, no higher low, split crowd. (V1, V6, V13)  
+  CA `2dynAjPBnkqzjUwozgn8pDRkCf7k7CDJkLfcf4rupump`
+- 19:06Z Fireball (DIP, $650,100 mcap, $3,043 5m vol): PASS at conviction 3, PASS. DIP on a fading story with no catalyst, 5m flow at 0.68x pace (gate is 0.7x), and a five-hour-old site that doesn't show the CA. (V1, V3, V6)  
+  CA `B9wbjDJ4FbHMsZmoXAkJSTAwuePaJUKbySvnK5zApump`
+- 19:04Z VICAT (MIGRATED, $177,503 mcap, $4,217 5m vol): PASS at conviction 3, PASS. VICAT is a MIGRATED dip with flow at 0.12x its hourly pace, no printed higher low, and four same-ticker copies. The crowd has left. (V1, V6, V13)  
+  CA `4WZLGbAp6oEPxFbDcsfADCo1AgYZkfiteQhtM5iwpump`
 - 18:44Z enu (MIGRATED, $325,024 mcap, $8,987 5m vol): PASS at conviction 2, PASS: enu is 10% off its high after a spike, 54% above its printed higher low, with a 3.6% bundle cluster in a 9-copy ticker field and only 1.11x to the prior high. Chasing, split crowd, target too close. (V1, V3, V6, V13)  
   CA `9msLfYfXBrSbrApCZAPuPMCNmPqNtEL1VPKh1AEYpump`
 - 18:43Z CINU (MIGRATED, $252,163 mcap, $2,051 5m vol): PASS at conviction 3, PASS: the site sells $CATE, not $CINU, and the 5m flow is $2k on a 3.6x spike. This is a vamp, not the original. (V1, V3, V13)  
@@ -90,44 +96,38 @@ Updated 2026-11-27T18:54:30Z (paper trading, never real money)
   CA `4WZLGbAp6oEPxFbDcsfADCo1AgYZkfiteQhtM5iwpump`
 - 18:14Z Fug (FINAL_STRETCH, $15,935 mcap, $2,737 5m vol): REJECT, Dev holds 2.8% (>1%) (V13, V17)  
   CA `7mSf4uWLkgdkqBfSoxniv5aZ1sDCXCiquJNcisjXpump`
-- 18:12Z MEMECARD (DIP, $517,614 mcap, $6,014 5m vol): REJECT, Dip with fading attention is a falling knife, not a dip (5m at 0.05x the hour's pace, under 0.6x)  
-  CA `8sAxwsNzhRj6LF5npy1HtPir94TzSgP1QaczUmGcpump`
-- 18:12Z CELL (FINAL_STRETCH, $21,960 mcap, $22,186 5m vol): PASS at conviction 3, PASS: chasing spike. 5m is up 41% and the coin is 10x its hourly low, in a 16-copy "cell" field with a 3-day-old site and no GitHub. Farm-shaped until proven otherwise (V1, V6, V13).  
-  CA `B7gcRhyzBcyUsLoUinjh6rsmjtfYWHD5b7bz4EHxpump`
-- 18:12Z TOGO (MIGRATED, $401,068 mcap, $78,981 5m vol): REJECT, Dev holds 5.5% (>1%) (V13, V17)  
-  CA `8LX2fFyENqu1R6bmzk461BH3ZPVbmpCpppe1K7Zcpump`
 
 ## What its skips did next (last 48h)
 A skip "ran" if the coin reached the first target (1.5x) from the skip price before a 20% drop, "dumped" if the drop came first. Sampled every 10 min, followed 6h.
-- top 10 over 25%: blocked 53, ran 12, dumped 37, flat 2, open 2 (saving losses: keep it)
+- top 10 over 25%: blocked 52, ran 11, dumped 37, flat 2, open 2 (saving losses: keep it)
   - ran: enu up to 1.82x  
     CA `9msLfYfXBrSbrApCZAPuPMCNmPqNtEL1VPKh1AEYpump`
   - ran: ð up to 1.65x  
     CA `GeUnGPLFku8zn1dJUNZpj6VymUxt7A3t9DqRL5WJpump`
   - ran: MONEY up to 1.58x  
     CA `DeACAbp2GMzapB6Z2K8qdkTZupmNbKc6EZx9bnbCpump`
-- flow below pace: blocked 48, ran 4, dumped 40, flat 4, open 0 (saving losses: keep it)
+- flow below pace: blocked 48, ran 4, dumped 39, flat 3, open 2 (saving losses: keep it)
   - ran: PAIR up to 2.1x  
     CA `32rBxcFjCFnyqZ41CEPM5AL67X1dcw8w83vZt6Kxpump`
   - ran: Hoppy up to 1.76x  
     CA `CFX1gH7CKYwqYXrfDkS2MUxJcEhs8PT63DyRA1chpump`
   - ran: SpaceXCoin up to 1.52x  
     CA `G2XqmSc8vJpLLwaLVXUeNkxsrhVT8vQ3Pje8MqeDpump`
-- near the high / chasing: blocked 41, ran 8, dumped 28, flat 3, open 2 (saving losses: keep it)
-  - ran: enu up to 1.82x  
-    CA `9msLfYfXBrSbrApCZAPuPMCNmPqNtEL1VPKh1AEYpump`
-  - ran: Nala up to 1.64x  
-    CA `FeBG8AEG4j7LT7xQF38gPXQFBRBtXBTNzhZjSa3bpump`
-  - ran: NETHER up to 1.8x  
-    CA `GkL4cJLAL3354wLgS6mZJKKUBVzvUY1FUN47zZNgGWEq`
-- too new / sniping: blocked 40, ran 6, dumped 34, flat 0, open 0 (saving losses: keep it)
+- too new / sniping: blocked 41, ran 6, dumped 34, flat 0, open 1 (saving losses: keep it)
   - ran: COIN up to 1.85x  
     CA `ALLherSTscpAErYo5Jja3ysVocaa2oeZkUvgmvhZpump`
   - ran: Slapcat up to 1.61x  
     CA `AqNAfcg8AkidVLLE7Tszh2PjUGzgaKvJskDXQXRHpump`
   - ran: STUDS up to 2.35x  
     CA `34J9VrBeJ2dWActyAMpoNBKvoxZCqQz3SivmnnmSTUds`
-- bundles over the line: blocked 25, ran 3, dumped 17, flat 5, open 0 (saving losses: keep it)
+- near the high / chasing: blocked 40, ran 8, dumped 28, flat 2, open 2 (saving losses: keep it)
+  - ran: enu up to 1.82x  
+    CA `9msLfYfXBrSbrApCZAPuPMCNmPqNtEL1VPKh1AEYpump`
+  - ran: Nala up to 1.64x  
+    CA `FeBG8AEG4j7LT7xQF38gPXQFBRBtXBTNzhZjSa3bpump`
+  - ran: NETHER up to 1.8x  
+    CA `GkL4cJLAL3354wLgS6mZJKKUBVzvUY1FUN47zZNgGWEq`
+- bundles over the line: blocked 24, ran 3, dumped 16, flat 5, open 0 (saving losses: keep it)
   - ran: WIENER up to 1.59x  
     CA `8BDkDfj3ZUvcG9caGzF2XnHfwg7K6fjfKKDvX6SCpump`
   - ran: Dragon up to 1.55x  
@@ -141,7 +141,7 @@ A skip "ran" if the coin reached the first target (1.5x) from the skip price bef
     CA `DeACAbp2GMzapB6Z2K8qdkTZupmNbKc6EZx9bnbCpump`
   - ran: Split up to 1.54x  
     CA `HAP9FcXubD88SjRHMY1kr5iukpRZgeMAgCBam3Vtpump`
-- RugCheck danger: blocked 16, ran 1, dumped 13, flat 2, open 0 (saving losses: keep it)
+- RugCheck danger: blocked 15, ran 1, dumped 12, flat 2, open 0 (saving losses: keep it)
   - ran: Bababoi up to 2.17x  
     CA `28B9kDm6XtQNqAkzuiKH3Zu1L8cVM6SLW4iRamFspump`
 - dev share over 1%: blocked 13, ran 3, dumped 8, flat 2, open 0 (saving losses: keep it)
@@ -203,13 +203,13 @@ No edge after costs, and I'm fairly sure of that. All 250 settled coins averaged
 Meta: fresh pump.fun and PumpSwap launches under about an hour old, with buy-heavy flow on joke and slang names. Split (56% buys, $19.8k 5m), clank ($19.5k 5m, 58%), rice ($13.6k 5m, 55%) and CELL ($22k 5m, 60%) carry the volume, and VICAT (90% buys, $39k 5m) and TOGO (74%, $93k 5m) show the strongest size. Rising: joke and slang names with 5m volume above $10k. Fading: the holiday name SCR (Santa Clause Rally, down 46%, zero 5m), KITT (down 95%, $7 5m) and the older Fireball. Fireball has two CAs, a PumpSwap token at $645k and a pump.fun token at $3k, so confirm the real one before anything (V3). Research, not buys: VICAT is the cleanest flow, 12 minutes old, and CELL is on the pump.fun curve, so watch for the pre-bond dump near 30-40k (V1). TOGO is +908% in an hour, a chase unless it pulls back and holds $10k on the 5m (V6). Split and clank are probe candidates only if their holder, dev and bundle checks come back clean. The crawler's names Laura, 67, Elfball, MEMEMAN and others are not in scan_movers, so I am not counting them. Paper only, not financial advice.
 
 ## Moving most in its scans, last 30 min (1h volume)
-- Oscar: $86,287 1h vol, $13,723 mcap, +403% 1h  
+- TOGO: $532,935 1h vol, $1,400 mcap, -99% 1h  
+  CA `8LX2fFyENqu1R6bmzk461BH3ZPVbmpCpppe1K7Zcpump`
+- VICAT: $422,421 1h vol, $174,328 mcap, +431% 1h  
+  CA `4WZLGbAp6oEPxFbDcsfADCo1AgYZkfiteQhtM5iwpump`
+- CLANK: $117,578 1h vol, $4,555 mcap, +100% 1h  
+  CA `EysWa7XMZGQbCy8F3KPAVmizHgUBxTmf4WzjdZZapump`
+- Oscar: $100,746 1h vol, $8,603 mcap, +215% 1h  
   CA `CyrgrZVubmhyr13eQNiSi1WBwSGidLmvVoHA91phpump`
-- boing: $31,722 1h vol, $10,426 mcap, -68% 1h  
-  CA `4an4F8Wdi1tXUCFarrhcQvZY4MCVvixcRhT4pANusbha`
-- enu: $30,107 1h vol, $325,024 mcap, +55% 1h  
-  CA `9msLfYfXBrSbrApCZAPuPMCNmPqNtEL1VPKh1AEYpump`
-- MEME: $29,140 1h vol, $4,861 mcap, -22% 1h  
-  CA `25cysuK2GzHEVe5ceb7WDAfukkviDmNyGbgsZbjQpump`
-- IceBall: $22,780 1h vol, $2,534 mcap, -92% 1h  
-  CA `6PFm828RKNJqKvjXQz82hhGvGNWFXZcBHNCF4U7spump`
+- CELL: $78,931 1h vol, $1,584 mcap, -94% 1h  
+  CA `B7gcRhyzBcyUsLoUinjh6rsmjtfYWHD5b7bz4EHxpump`
