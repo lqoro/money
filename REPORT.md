@@ -1,13 +1,13 @@
 # Trencher live report
 
-Updated 2026-11-27T08:33:39Z (paper trading, never real money)
+Updated 2026-11-27T08:48:51Z (paper trading, never real money)
 
 - Equity: $74.23 (-25.8% vs $100 start)
 - Closed trades: 22, 3 wins
 - Fees paid: $14.78 (axiom $2.81, network $9.18, pool $2.66), plus $4.15 lost to slippage
 - New trades: WATCH-ONLY (scans and decides, buys nothing)
 - Brain: subscription, claude-haiku-5-5 for routine calls, claude-opus-5-5 for the daily review; 378 routine calls and 0 plan-limit hits in 48h
-- Watch log: 71 coins being followed, 4140 filed, 0 would-buys (6h follow, sampled every 2 min)
+- Watch log: 69 coins being followed, 4143 filed, 0 would-buys (6h follow, sampled every 2 min)
 
 ## Scorecard (after fees)
 - 22 closed, 3 won (14%), net $-25.79
@@ -73,9 +73,11 @@ Updated 2026-11-27T08:33:39Z (paper trading, never real money)
   CA `H4gHnZ3NCU7Z9XQwGX6YYJNyieGEW8pqwGRUcdSxpump`
 
 ## Last scan
-- 08:32Z: 5 coins, 5 with pairs, 0 passed the market filters, 0 researched
+- 08:48Z: 3 coins, 3 with pairs, 0 passed the market filters, 0 researched
 
 ## Coins it looked at, and why it passed
+- 08:36Z Snowball (MIGRATED, $692,138 mcap, $5,615 5m vol): PASS at conviction 3, PASS — target too close (first resistance 1.19x), sells outnumber buys 0.41, 5m flow $5.6k under the $10k bar, and the theme runs at 0.37x its hourly pace. Pumped 3947% in 24h with a 1.6-day-old domain. A crowded copy field, not a setup (V1, V6, V13).  
+  CA `9TKbd3VFaMSXsEAicD9JVQWpWwAoLi4fSgWmZL2cpump`
 - 08:29Z Kibo (MIGRATED, $136,247 mcap, $8,937 5m vol): PASS at conviction 4, PASS: Kibo has the right money shape, but 5m flow is under pace, the 27-copy Kibo field splits the crowd, and the theme's volume is fading. Blocker: flow below pace. (V1, V6)  
   CA `7XSYaJygcuNe6Q3kPvwsJpg4ZrFL1AEUFb8kCuzppump`
 - 08:12Z JOB (MIGRATED, $1,715,826 mcap, $3,788 5m vol): REJECT, Bundles: 1 linked wallet cluster(s) hold 22.5% of supply (>20%) (V17)  
@@ -94,8 +96,6 @@ Updated 2026-11-27T08:33:39Z (paper trading, never real money)
   CA `PgFtGGquvnv2zEkjG2N2QPvBTBrafuExGYEqahRpump`
 - 06:58Z Kibo (MIGRATED, $43,739 mcap, $3,849 5m vol): PASS at conviction 2, PASS: Kibo is a 28-copy vamp field with 5m flow at 0.61x pace and the theme at 0.2x pace. Blocked on flow, split crowd, and no printed higher low. (V1, V3, V6)  
   CA `7XSYaJygcuNe6Q3kPvwsJpg4ZrFL1AEUFb8kCuzppump`
-- 06:55Z 牛回 (no setup, $14,184 mcap, $40,394 5m vol): REJECT, No setup fits: not Final Stretch, not a migrated runner, not a healthy dip  
-  CA `73Hqqyqq9T5AkzHoNsmuLVcw3RDknJVvZDaXwoyc7G3J`
 
 ## What its skips did next (last 48h)
 A skip "ran" if the coin reached the first target (1.5x) from the skip price before a 20% drop, "dumped" if the drop came first. Sampled every 10 min, followed 6h.
@@ -113,11 +113,11 @@ A skip "ran" if the coin reached the first target (1.5x) from the skip price bef
     CA `ALLherSTscpAErYo5Jja3ysVocaa2oeZkUvgmvhZpump`
   - ran: Slapcat up to 1.61x  
     CA `AqNAfcg8AkidVLLE7Tszh2PjUGzgaKvJskDXQXRHpump`
-- flow below pace: blocked 42, ran 5, dumped 29, flat 4, open 4 (saving losses: keep it)
-  - ran: BASKET up to 1.55x  
-    CA `3Tg6YnNrfPdFfsY14MaNsDMWLseAyrUDS3myJtbaJN6f`
+- flow below pace: blocked 42, ran 5, dumped 29, flat 5, open 3 (saving losses: keep it)
   - ran: BIAO up to 1.51x  
     CA `As3XtYSstuVdrVyb6sJZZ77Tu8JvjTBg6S6hgPv4pump`
+  - ran: Snowball up to 1.82x  
+    CA `9TKbd3VFaMSXsEAicD9JVQWpWwAoLi4fSgWmZL2cpump`
   - ran: PAIR up to 2.1x  
     CA `32rBxcFjCFnyqZ41CEPM5AL67X1dcw8w83vZt6Kxpump`
 - near the high / chasing: blocked 41, ran 6, dumped 32, flat 3, open 0 (saving losses: keep it)
@@ -145,13 +145,13 @@ A skip "ran" if the coin reached the first target (1.5x) from the skip price bef
     CA `BFWNbSwRodXPTQqrMSCfhznhJwEzY6ERd6MHjWUEpump`
   - ran: Christmas up to 1.89x  
     CA `5hkBYuFQDpAAqemCiVqXCuU6Ya5dqKhtRobzJsg6pump`
-- falling knife / no higher low: blocked 14, ran 3, dumped 5, flat 4, open 2 (mixed)
+- falling knife / no higher low: blocked 14, ran 4, dumped 5, flat 4, open 1 (mixed)
+  - ran: Snowball up to 1.82x  
+    CA `9TKbd3VFaMSXsEAicD9JVQWpWwAoLi4fSgWmZL2cpump`
   - ran: Zero up to 2.07x  
     CA `DTSkmo3sCCKLCh91dJLiWCpwcKtK3yDBZMqZGSV1pump`
   - ran: Maru up to 1.88x  
     CA `FokVFH6mDsazoKbtnUaA2FRMsRbDSwZhNfn17Fdvpump`
-  - ran: Hoppy up to 1.76x  
-    CA `CFX1gH7CKYwqYXrfDkS2MUxJcEhs8PT63DyRA1chpump`
 - dev share over 1%: blocked 11, ran 2, dumped 7, flat 2, open 0 (saving losses: keep it)
   - ran: Grinch up to 1.94x  
     CA `J1b5HnRzmXsYK5akPTFtBR7B4E74JG8eyULodd7ypump`
@@ -199,11 +199,11 @@ Not quiet, but most of the movers are a graveyard. Two themes are fading: fresh 
 ## Moving most in its scans, last 30 min (1h volume)
 - Kibo: $161,632 1h vol, $133,537 mcap, +13% 1h  
   CA `7XSYaJygcuNe6Q3kPvwsJpg4ZrFL1AEUFb8kCuzppump`
-- Aliene: $52,758 1h vol, $19,681 mcap, +571% 1h  
-  CA `59J68geN6rWTM9csfPC4h23wV6g9hZ2kzubuvHBApump`
-- SWIPE: $50,517 1h vol, $8,863 mcap, +228% 1h  
+- Snowball: $67,990 1h vol, $692,138 mcap, +34% 1h  
+  CA `9TKbd3VFaMSXsEAicD9JVQWpWwAoLi4fSgWmZL2cpump`
+- SPARK: $37,217 1h vol, $2,805 mcap, -50% 1h  
+  CA `8xpaCNnuqywZKdCJy1jHNdHSRKxudhSJxcXZzQ65pump`
+- SWIPE: $32,993 1h vol, $6,206 mcap, -50% 1h  
   CA `Fr2nmNWyYiVDSSXirw1wKSHj4dE2BvvGnN4gfAHcpump`
-- NOTHING: $44,347 1h vol, $2,625 mcap, -84% 1h  
-  CA `9PBVXxx7Hn72EJttB8X2besqJtbUvE4iN3Cc3ubUpump`
-- Atoll: $34,201 1h vol, $8,384 mcap, -28% 1h  
+- Atoll: $30,394 1h vol, $8,185 mcap, -33% 1h  
   CA `aSRNrUQqrWqvV1Yf25exdxVa3bWk63K7tvzTnNytoLL`
