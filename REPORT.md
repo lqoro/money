@@ -1,13 +1,13 @@
 # Trencher live report
 
-Updated 2026-11-27T05:31:41Z (paper trading, never real money)
+Updated 2026-11-27T05:46:56Z (paper trading, never real money)
 
 - Equity: $74.23 (-25.8% vs $100 start)
 - Closed trades: 22, 3 wins
 - Fees paid: $14.78 (axiom $2.81, network $9.18, pool $2.66), plus $4.15 lost to slippage
 - New trades: WATCH-ONLY (scans and decides, buys nothing)
 - Brain: subscription, claude-haiku-5-5 for routine calls, claude-opus-5-5 for the daily review; 372 routine calls and 0 plan-limit hits in 48h
-- Watch log: 84 coins being followed, 4105 filed, 0 would-buys (6h follow, sampled every 2 min)
+- Watch log: 82 coins being followed, 4107 filed, 0 would-buys (6h follow, sampled every 2 min)
 
 ## Scorecard (after fees)
 - 22 closed, 3 won (14%), net $-25.79
@@ -73,7 +73,7 @@ Updated 2026-11-27T05:31:41Z (paper trading, never real money)
   CA `H4gHnZ3NCU7Z9XQwGX6YYJNyieGEW8pqwGRUcdSxpump`
 
 ## Last scan
-- 05:30Z: 10 coins, 9 with pairs, 1 passed the market filters, 1 researched
+- 05:46Z: 2 coins, 1 with pairs, 0 passed the market filters, 0 researched
 
 ## Coins it looked at, and why it passed
 - 05:31Z Kibo (FINAL_STRETCH, $25,953 mcap, $32,064 5m vol): PASS at conviction 2, PASS. Chasing spike: Kibo is up 204% on 5m and 696% on the hour, 8 minutes old, with 7 same-ticker copies splitting the crowd (V1, V13).  
@@ -106,7 +106,7 @@ A skip "ran" if the coin reached the first target (1.5x) from the skip price bef
     CA `GeUnGPLFku8zn1dJUNZpj6VymUxt7A3t9DqRL5WJpump`
   - ran: MONEY up to 1.58x  
     CA `DeACAbp2GMzapB6Z2K8qdkTZupmNbKc6EZx9bnbCpump`
-- too new / sniping: blocked 44, ran 9, dumped 34, flat 0, open 1 (saving losses: keep it)
+- too new / sniping: blocked 44, ran 9, dumped 35, flat 0, open 0 (saving losses: keep it)
   - ran: Merged up to 2.18x  
     CA `AMYpNGi5aGrKr1ZDsotUdWh7k1mMi569ygtaHJmErGEd`
   - ran: Boor up to 1.56x  
@@ -199,13 +199,13 @@ No edge yet. All 276 settled coins lost money after costs under the simple plan:
 Meta right now: animal and mascot names plus a fresh holiday theme are pulling the volume, while old joke names and dead character coins are fading. DragonCoin (pumpswap, $77k cap, $26.5k 5m, 62% buys) is the cleanest mover on the list, but it's already up 155% in the hour, so I only look at a dip that keeps 5m volume, with the exit written before any entry. Christmas Coin ($35k cap, $27k 5m, 60% buys) is the holiday play, but it's zero hours old and its 5m volume equals its 1h volume, so it's research only until it survives its first hour with volume holding. Fading: old names like BRUH, CBUCKS and JOB are weeks to years old and flat or down, and steppa and MONA are down 24-47% in the hour on under $600 of 5m volume; Solana Playground's scan shows $274 5m after -74% in the hour, so the crawler's $63k figure is stale and I'm not trading it. Cate Inu ($232k, $4.7k 5m) and ZeroFee (+663% in the hour, $2.9k 5m) fail the $10k volume bar for now. Holder, dev and bundle checks run on every name before any entry, so nothing here is a buy yet and nothing is named for a hack.
 
 ## Moving most in its scans, last 30 min (1h volume)
-- Dragon: $221,934 1h vol, $1,603 mcap, -98% 1h  
+- LUMINARE: $121,920 1h vol, $1,618 mcap, -98% 1h  
+  CA `EomygbXHKGwb9bkCatVftQpCVgvBPmgAnMUuwusxpump`
+- Dragon: $93,772 1h vol, $1,603 mcap, -98% 1h  
   CA `cg3HaDWhAKFfj9aq79TWUBgmxfs4G7byQ7feaxnpump`
-- BRUH: $155,211 1h vol, $5,439,658 mcap, -15% 1h  
-  CA `PgFtGGquvnv2zEkjG2N2QPvBTBrafuExGYEqahRpump`
--  : $131,821 1h vol, $22,439 mcap, +812% 1h  
-  CA `2DyLsLXdJyjPUQ9EZg4VbceuaPDDVZ8n2z365bgtpump`
-- Christmas: $120,274 1h vol, $3,376 mcap, -89% 1h  
-  CA `AgBxPNBFmBks58rtVnp2ZW5WHtE2968qTPWgDEvbpump`
-- VOLALITY: $109,208 1h vol, $101,011 mcap, +234% 1h  
-  CA `4tPsVjDAqgDjb5TzGazEDMvM2GK2xDvCG2LxpX8opump`
+- Santaball: $72,487 1h vol, $1,569 mcap, -100% 1h  
+  CA `4obGGXRMVyqpWZr12UzyaBdNkgdYwz2GiY8enmd2pump`
+- 123Packers: $57,110 1h vol, $8,976 mcap, +219% 1h  
+  CA `H7RL6etzmbPw4hS2dgxzbjjKzGEzJicpWiNYmiqSpump`
+- Zero: $54,959 1h vol, $2,207 mcap, -10% 1h  
+  CA `9hX4qRvHVnmjDgSkoAjXPi7SejNZGndarL9TV13orLVB`
