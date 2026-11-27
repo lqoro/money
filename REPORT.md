@@ -1,13 +1,13 @@
 # Trencher live report
 
-Updated 2026-11-27T21:25:27Z (paper trading, never real money)
+Updated 2026-11-27T21:40:41Z (paper trading, never real money)
 
 - Equity: $74.23 (-25.8% vs $100 start)
 - Closed trades: 22, 3 wins
 - Fees paid: $14.78 (axiom $2.81, network $9.18, pool $2.66), plus $4.15 lost to slippage
 - New trades: WATCH-ONLY (scans and decides, buys nothing)
-- Brain: subscription, claude-haiku-5-5 for routine calls, claude-opus-5-5 for the daily review; 394 routine calls and 9 plan-limit hits in 48h
-- Watch log: 77 coins being followed, 4263 filed, 0 would-buys (6h follow, sampled every 2 min)
+- Brain: subscription, claude-haiku-5-5 for routine calls, claude-opus-5-5 for the daily review; 395 routine calls and 9 plan-limit hits in 48h
+- Watch log: 79 coins being followed, 4265 filed, 0 would-buys (6h follow, sampled every 2 min)
 
 ## Scorecard (after fees)
 - 22 closed, 3 won (14%), net $-25.79
@@ -73,9 +73,17 @@ Updated 2026-11-27T21:25:27Z (paper trading, never real money)
   CA `H4gHnZ3NCU7Z9XQwGX6YYJNyieGEW8pqwGRUcdSxpump`
 
 ## Last scan
-- 21:25Z: 4 coins, 4 with pairs, 0 passed the market filters, 0 researched
+- 21:40Z: 4 coins, 4 with pairs, 1 passed the market filters, 1 researched
 
 ## Coins it looked at, and why it passed
+- 21:40Z Zhaki (FINAL_STRETCH, $21,226 mcap, $2,613 5m vol): PASS at conviction 2, PASS. Zhaki is a vamp-field copy, up 175% off its 1h low and chasing a spike with $2.6k 5m flow. The theme is cooling. (V1, V3, V6)  
+  CA `64Stzixo5wY1N2Z6Wk82Lm3wWbvTQ5Pf9kue9U9apump`
+- 21:39Z JOB (MIGRATED, $2,070,452 mcap, $2,403 5m vol): REJECT, Bundles: 1 linked wallet cluster(s) hold 22.5% of supply (>20%) (V17)  
+  CA `9Pq7aLAbhDG2tTnS22cm6kuysZVcZpLFE368HWuypump`
+- 21:38Z CBUCKS (MIGRATED, $5,820,928 mcap, $5,972 5m vol): REJECT, Top 10 hold 25.4% ex-pool (>25%) (V13)  
+  CA `DtcicPCKTKeAh7TDEzTym3hXeoHAoMiBdYJhMYxZpump`
+- 21:31Z ZERO (MIGRATED, $892,207 mcap, $7,215 5m vol): REJECT, Top 10 hold 38.6% ex-pool (>25%) (V13)  
+  CA `3WsqUNArNSh5pYt6eTKbQ7uUJDgkPtFEA2XFvdEWpump`
 - 21:23Z Fireball (DIP, $641,665 mcap, $4,616 5m vol): PASS at conviction 2, PASS — bottom buy with no catalyst, a 0.3-day-old site that doesn't show this CA, and a 27-copy field. Blocked, not chased. (V1, V13)  
   CA `B9wbjDJ4FbHMsZmoXAkJSTAwuePaJUKbySvnK5zApump`
 - 21:18Z MAYA (MIGRATED, $474,648 mcap, $61,712 5m vol): REJECT, Dev holds 3.2% (>1%) (V13, V17)  
@@ -88,45 +96,37 @@ Updated 2026-11-27T21:25:27Z (paper trading, never real money)
   CA `GdDpHWwrRLDHR2soP75sEtqzDzY1rkATuVszAHv5pump`
 - 20:53Z JOB (MIGRATED, $2,068,697 mcap, $2,181 5m vol): REJECT, Bundles: 1 linked wallet cluster(s) hold 22.5% of supply (>20%) (V17)  
   CA `9Pq7aLAbhDG2tTnS22cm6kuysZVcZpLFE368HWuypump`
-- 20:52Z FoMo (FINAL_STRETCH, $17,009 mcap, $7,155 5m vol): PASS at conviction 2, PASS: FoMo is a copy in a 22-coin gorilla field, not the leader, and it spiked +90% in 5m with $7k flow. Blocker "split crowd" plus "chasing spike" (V1, V3, V6).  
-  CA `Gq8YSaiaT6FMcTaagxzLdb6xBsVBm9zNiA94xzotpump`
-- 20:46Z ZERO (MIGRATED, $684,339 mcap, $103,954 5m vol): REJECT, Top 10 hold 57.2% ex-pool (>25%) (V13)  
-  CA `3WsqUNArNSh5pYt6eTKbQ7uUJDgkPtFEA2XFvdEWpump`
-- 20:38Z SNIBBU (FINAL_STRETCH, $18,920 mcap, $25,451 5m vol): PASS at conviction 3, PASS: chasing spike. SNIBBU is up 31% in its last 5m on 6x hourly pace, sitting at the top of a 7-minute run from a $3.3k low. Wait for a retrace and a printed higher low, or pass. (V1, V6)  
-  CA `DhwRtGWU6Kk95Xt847GH9118WARW6dMmBFaKXvbhpump`
-- 20:37Z Fireball (MIGRATED, $342,043 mcap, $2,961 5m vol): PASS at conviction 2, PASS: Fireball is a 27-copy word field, the site is 0.3 days old and doesn't show this CA, and there's no printed higher low. Blocker: "no higher low" plus "flow below pace". Dip. (V1, V3, V6, V13)  
-  CA `B9wbjDJ4FbHMsZmoXAkJSTAwuePaJUKbySvnK5zApump`
 
 ## What its skips did next (last 48h)
 A skip "ran" if the coin reached the first target (1.5x) from the skip price before a 20% drop, "dumped" if the drop came first. Sampled every 10 min, followed 6h.
-- top 10 over 25%: blocked 54, ran 11, dumped 37, flat 2, open 4 (saving losses: keep it)
+- top 10 over 25%: blocked 54, ran 11, dumped 38, flat 2, open 3 (saving losses: keep it)
   - ran: enu up to 1.82x  
     CA `9msLfYfXBrSbrApCZAPuPMCNmPqNtEL1VPKh1AEYpump`
   - ran: ð up to 1.65x  
     CA `GeUnGPLFku8zn1dJUNZpj6VymUxt7A3t9DqRL5WJpump`
   - ran: MONEY up to 1.58x  
     CA `DeACAbp2GMzapB6Z2K8qdkTZupmNbKc6EZx9bnbCpump`
-- flow below pace: blocked 45, ran 4, dumped 36, flat 3, open 2 (saving losses: keep it)
+- flow below pace: blocked 45, ran 4, dumped 37, flat 3, open 1 (saving losses: keep it)
   - ran: PAIR up to 2.1x  
     CA `32rBxcFjCFnyqZ41CEPM5AL67X1dcw8w83vZt6Kxpump`
   - ran: Hoppy up to 1.76x  
     CA `CFX1gH7CKYwqYXrfDkS2MUxJcEhs8PT63DyRA1chpump`
   - ran: SpaceXCoin up to 1.52x  
     CA `G2XqmSc8vJpLLwaLVXUeNkxsrhVT8vQ3Pje8MqeDpump`
-- too new / sniping: blocked 44, ran 6, dumped 37, flat 0, open 1 (saving losses: keep it)
-  - ran: Slapcat up to 1.61x  
-    CA `AqNAfcg8AkidVLLE7Tszh2PjUGzgaKvJskDXQXRHpump`
-  - ran: STUDS up to 2.35x  
-    CA `34J9VrBeJ2dWActyAMpoNBKvoxZCqQz3SivmnnmSTUds`
-  - ran: 2 up to 1.69x  
-    CA `HkywsKMf5FDj7QpgRE3BoE2nJqJauxEVbGjpnYe6pump`
-- near the high / chasing: blocked 43, ran 9, dumped 29, flat 2, open 3 (saving losses: keep it)
+- near the high / chasing: blocked 44, ran 9, dumped 30, flat 2, open 3 (saving losses: keep it)
   - ran: enu up to 1.82x  
     CA `9msLfYfXBrSbrApCZAPuPMCNmPqNtEL1VPKh1AEYpump`
   - ran: NETHER up to 1.8x  
     CA `GkL4cJLAL3354wLgS6mZJKKUBVzvUY1FUN47zZNgGWEq`
   - ran: PPV up to 1.54x  
     CA `CbGrZ3Q2XxSV2oiZsLkDWW1GFjrqUDAzTH9XwVr1pump`
+- too new / sniping: blocked 44, ran 6, dumped 38, flat 0, open 0 (saving losses: keep it)
+  - ran: Slapcat up to 1.61x  
+    CA `AqNAfcg8AkidVLLE7Tszh2PjUGzgaKvJskDXQXRHpump`
+  - ran: STUDS up to 2.35x  
+    CA `34J9VrBeJ2dWActyAMpoNBKvoxZCqQz3SivmnnmSTUds`
+  - ran: 2 up to 1.69x  
+    CA `HkywsKMf5FDj7QpgRE3BoE2nJqJauxEVbGjpnYe6pump`
 - bundles over the line: blocked 23, ran 3, dumped 15, flat 4, open 1 (saving losses: keep it)
   - ran: WIENER up to 1.59x  
     CA `8BDkDfj3ZUvcG9caGzF2XnHfwg7K6fjfKKDvX6SCpump`
@@ -142,21 +142,21 @@ A skip "ran" if the coin reached the first target (1.5x) from the skip price bef
 - RugCheck danger: blocked 14, ran 1, dumped 11, flat 2, open 0 (saving losses: keep it)
   - ran: Bababoi up to 2.17x  
     CA `28B9kDm6XtQNqAkzuiKH3Zu1L8cVM6SLW4iRamFspump`
-- falling knife / no higher low: blocked 12, ran 3, dumped 6, flat 2, open 1 (saving losses: keep it)
+- falling knife / no higher low: blocked 12, ran 3, dumped 7, flat 2, open 0 (saving losses: keep it)
   - ran: Zero up to 2.07x  
     CA `DTSkmo3sCCKLCh91dJLiWCpwcKtK3yDBZMqZGSV1pump`
   - ran: Maru up to 1.88x  
     CA `FokVFH6mDsazoKbtnUaA2FRMsRbDSwZhNfn17Fdvpump`
   - ran: Hoppy up to 1.76x  
     CA `CFX1gH7CKYwqYXrfDkS2MUxJcEhs8PT63DyRA1chpump`
-- dev share over 1%: blocked 12, ran 3, dumped 7, flat 1, open 1 (saving losses: keep it)
+- dev share over 1%: blocked 12, ran 4, dumped 7, flat 1, open 0 (mixed)
   - ran: Grinch up to 1.94x  
     CA `J1b5HnRzmXsYK5akPTFtBR7B4E74JG8eyULodd7ypump`
   - ran: bolphante up to 1.7x  
     CA `FVBzzG4ZcAgxSLW1rWjNC9EH9CgEgz1A4puNYexMpump`
   - ran: Fug up to 1.58x  
     CA `7mSf4uWLkgdkqBfSoxniv5aZ1sDCXCiquJNcisjXpump`
-- other: blocked 11, ran 2, dumped 9, flat 0, open 0 (saving losses: keep it)
+- other: blocked 10, ran 2, dumped 8, flat 0, open 0 (saving losses: keep it)
   - ran: SXI up to 2.34x  
     CA `BFWNbSwRodXPTQqrMSCfhznhJwEzY6ERd6MHjWUEpump`
   - ran: Christmas up to 1.89x  
@@ -198,16 +198,16 @@ No edge after costs, and I'm fairly sure of that. All 250 settled coins averaged
 - [2026-11-02 20:25] I expected Slingoor, a clean MIGRATED leader with $25k of 5m flow at pace and a 0.77 buy share, to retest its $408k high from $304k. It never went green (0.98x peak) and hit the -20% stop in 2 minutes, a -$2.86 probe. My own thesis admitted there was no printed higher low after a peak only 6 minutes old, so this confirms the money-shape rule: buy share and flow are not structure (V1, V6). Next time a MIGRATED pullback with no higher low above the hourly low is a PASS with blocker "no higher low", not a probe. This is one loss, so it adds no new ban beyond the rule I already have.
 
 ## Meta right now
-Meta, from the scan. I'm not using the crawler summary's numbers (VolumeBall $13.6k, FARMCOIN $35k, VICAT, REINDEER, TOGO, CELL, IceBall): none of them appear in the movers JSON. Two themes are moving: animal names (BTCAT, dawg, CINU, Wibbit, JOB) and the Ball pair (Fullball live at $94k mcap, 60% buys, +215% 1h; VolumeBall down 65%). A second cluster of one-word joke and utility names (HOLLER, Commotitty, bob says, CMDTY) has real 5m volume and buyers. Rising: BTCAT ($104k 5m, 66% buys, but +1564% in 1h at about 6 minutes old, so chase risk), Commotitty ($12k 5m, 80% buys, $258k mcap), and HOLLER ($13k 5m, 64% buys, still on the pump.fun curve at $21k, so the pre-bond dump is the thing to watch). Fading or dead: FARM, Padlock, Wibbit, LowCap City and BANNER (near-zero 5m volume, no buys), plus VolumeBall. Setups to research, not buy yet: HOLLER (V1 Final Stretch), Commotitty and Fullball (V6/V13 checks first). No mover is hack-named or Trump-linked, so the dinner headlines aren't what's trading. Holder, dev and bundle checks are still open on every one of these. Paper only, not financial advice.
+Meta: animal and Christmas-dog names are where the buyers are right now. MAYA (Samoyed, $488k mcap, $79k 5m, 75% buys, about 12 min old) and Christmass Inu ($173k mcap, $14k 5m, 89% buys, about 25 min old) lead, and the christmas and dec narratives fit the calendar (V5: metas arrive early). A second cluster is the Ball pair: Fullball ($72k mcap, $26.5k 5m, 57% buys, +245% in 1h) and Fireball ($668k mcap, 83% buys, but only $5.3k 5m, about 7h old). The Trump-dinner and hack headlines don't show up on the tape. Fading: HOLLER, Commotitty, BTCAT, bob says, DEGENMAS, TILLY and CBUCKS all have near-zero 5m volume and mostly sellers. The crawler's figures (HOLLER $13k, Commotitty $12k and $258k mcap, BTCAT $104k 5m) don't match the scan JSON, so I'm going by the scan. Setups to research, not buy yet: MAYA and Christmass Inu under the MIGRATED recon (V6: mcap in range, 5m above $10k); Fullball is in range but close to the $70k floor; MoonBoy has $342k 5m but is up 1715% in an hour, so it's chase territory and I want a dip with buyers before touching it. Holder, dev and bundle checks are still open on all of them, and none of this is a buy until they clear. Paper only, not financial advice.
 
 ## Moving most in its scans, last 30 min (1h volume)
-- MoonBoy: $1,111,893 1h vol, $807,147 mcap, +1715% 1h  
-  CA `GXjSWDoMQkDEbhon9ALxz8chUUsVKg3x8V3NajjDpump`
-- Fullball: $370,870 1h vol, $71,979 mcap, +245% 1h  
-  CA `GdDpHWwrRLDHR2soP75sEtqzDzY1rkATuVszAHv5pump`
+- ZERO: $477,440 1h vol, $892,207 mcap, +2333% 1h  
+  CA `3WsqUNArNSh5pYt6eTKbQ7uUJDgkPtFEA2XFvdEWpump`
 - MAYA: $352,255 1h vol, $487,924 mcap, +1133% 1h  
   CA `H2PjSbA2365uxBUJ3EBePSm67AYPuRMgcyswBnrVpump`
 - CI: $101,657 1h vol, $172,665 mcap, +384% 1h  
   CA `9SMvQzDmGMpACAqET5PAmwUtHfBYdQ5a7SPLfQa4pump`
-- SNIBBU: $95,295 1h vol, $9,929 mcap, +176% 1h  
+- Lemon: $70,597 1h vol, $6,619 mcap, +117% 1h  
+  CA `FHyXcQKYH49bjKaEBtZDGqiSraYKRhckkNP2p1Njpump`
+- SNIBBU: $63,323 1h vol, $8,673 mcap, -44% 1h  
   CA `DhwRtGWU6Kk95Xt847GH9118WARW6dMmBFaKXvbhpump`
