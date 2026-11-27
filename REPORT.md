@@ -1,13 +1,13 @@
 # Trencher live report
 
-Updated 2026-11-27T01:29:16Z (paper trading, never real money)
+Updated 2026-11-27T01:44:31Z (paper trading, never real money)
 
 - Equity: $74.23 (-25.8% vs $100 start)
 - Closed trades: 22, 3 wins
 - Fees paid: $14.78 (axiom $2.81, network $9.18, pool $2.66), plus $4.15 lost to slippage
 - New trades: WATCH-ONLY (scans and decides, buys nothing)
 - Brain: subscription, claude-haiku-5-5 for routine calls, claude-opus-5-5 for the daily review; 359 routine calls and 0 plan-limit hits in 48h
-- Watch log: 66 coins being followed, 4060 filed, 0 would-buys (6h follow, sampled every 2 min)
+- Watch log: 66 coins being followed, 4063 filed, 0 would-buys (6h follow, sampled every 2 min)
 
 ## Scorecard (after fees)
 - 22 closed, 3 won (14%), net $-25.79
@@ -73,9 +73,15 @@ Updated 2026-11-27T01:29:16Z (paper trading, never real money)
   CA `H4gHnZ3NCU7Z9XQwGX6YYJNyieGEW8pqwGRUcdSxpump`
 
 ## Last scan
-- 01:28Z: 5 coins, 5 with pairs, 0 passed the market filters, 0 researched
+- 01:43Z: 3 coins, 3 with pairs, 0 passed the market filters, 0 researched
 
 ## Coins it looked at, and why it passed
+- 01:39Z KAI (MIGRATED, $3,854,908 mcap, $220,637 5m vol): REJECT, Top 10 hold 25.7% ex-pool (>25%) (V13)  
+  CA `G2ZDG8q3QMYk3KR58JFFYsvaTk4Gy94UzMo7Re7spump`
+- 01:36Z CBUCKS (MIGRATED, $6,805,904 mcap, $6,985 5m vol): REJECT, Top 10 hold 25.6% ex-pool (>25%) (V13)  
+  CA `DtcicPCKTKeAh7TDEzTym3hXeoHAoMiBdYJhMYxZpump`
+- 01:32Z urcoin (FINAL_STRETCH, $16,111 mcap, $4,913 5m vol): PASS at conviction 2, PASS: "ur coin" is a copy in a 26-coin urcoin field, not the leader by 5m volume ($4.9k vs $219k across the field). Blocker: split crowd. (V1, V3)  
+  CA `3PokgWUKkL83XWS8oYnVRnqLbUrJ6btL7jcws3yspump`
 - 01:21Z POPBALL (DIP, $120,557 mcap, $6,639 5m vol): REJECT, Dip with fading attention is a falling knife, not a dip (5m at 0.47x the hour's pace, under 0.6x)  
   CA `CKiuTwHFMXKBaQ4V1WgsYctsdbLeit3wytXRkphzpump`
 - 01:14Z Snowball (MIGRATED, $546,982 mcap, $6,071 5m vol): PASS at conviction 3, PASS. Flow is at half pace, the story is a fee-farm mechanic, and it's 31h old past the MIGRATED window. Blocker: "flow below pace." (V1, V6, V13)  
@@ -90,16 +96,10 @@ Updated 2026-11-27T01:29:16Z (paper trading, never real money)
   CA `38M2z4UCfZEkUHFzD48vhKQhFhNyRGto8pZbLjNipump`
 - 00:51Z CBUCKS (MIGRATED, $6,558,236 mcap, $3,079 5m vol): REJECT, Top 10 hold 25.6% ex-pool (>25%) (V13)  
   CA `DtcicPCKTKeAh7TDEzTym3hXeoHAoMiBdYJhMYxZpump`
-- 00:50Z CUMASS (MIGRATED, $37,620 mcap, $38,843 5m vol): PASS at conviction 2, PASS: target too close (first resistance 1.21x), 4-minute-old copy in a 21-coin same-ticker field, and a 9% bundle cluster. Skip. (V1, V3, V6)  
-  CA `CS8vS3n7Ptc4NBGwt62LxxAeW7gpPigHVYhmKcS7pump`
-- 00:42Z Kuro (MIGRATED, $384,546 mcap, $116,199 5m vol): REJECT, Top 10 hold 47.0% ex-pool (>25%) (V13)  
-  CA `BuorVu99GQ1LHT194YNYRbdXivTCA8o58nz7iji2pump`
-- 00:35Z POPBALL (MIGRATED, $220,791 mcap, $12,029 5m vol): PASS at conviction 5, PASS: POPBALL is the leader of a 4-copy cat-ball field, but its 5m flow is 0.85x its hourly pace on a shallow 17% pullback with no breakout. Blocker: "flow below pace" (V1, V6).  
-  CA `CKiuTwHFMXKBaQ4V1WgsYctsdbLeit3wytXRkphzpump`
 
 ## What its skips did next (last 48h)
 A skip "ran" if the coin reached the first target (1.5x) from the skip price before a 20% drop, "dumped" if the drop came first. Sampled every 10 min, followed 6h.
-- top 10 over 25%: blocked 51, ran 9, dumped 39, flat 0, open 3 (saving losses: keep it)
+- top 10 over 25%: blocked 50, ran 8, dumped 38, flat 0, open 4 (saving losses: keep it)
   - ran: SWARM up to 1.57x  
     CA `2Rw6rLRRZXQLNreForjeVvDjnpYUaW6rmMFXmRP9pump`
   - ran: ð up to 1.65x  
@@ -137,7 +137,7 @@ A skip "ran" if the coin reached the first target (1.5x) from the skip price bef
     CA `DUZrwdjEthcJ99ZiRXr31UuqTohoTg7VjTEyfGdBpump`
   - ran: WIENER up to 1.59x  
     CA `8BDkDfj3ZUvcG9caGzF2XnHfwg7K6fjfKKDvX6SCpump`
-- falling knife (code): blocked 19, ran 3, dumped 14, flat 1, open 1 (saving losses: keep it)
+- falling knife (code): blocked 19, ran 3, dumped 15, flat 1, open 0 (saving losses: keep it)
   - ran: Jimmies up to 1.53x  
     CA `GisWWjhwrSud4aFGSHvTMt85Ky14sY7LeBFCpfoFpump`
   - ran: Investor up to 1.58x  
@@ -151,10 +151,10 @@ A skip "ran" if the coin reached the first target (1.5x) from the skip price bef
     CA `DTSkmo3sCCKLCh91dJLiWCpwcKtK3yDBZMqZGSV1pump`
   - ran: Maru up to 1.88x  
     CA `FokVFH6mDsazoKbtnUaA2FRMsRbDSwZhNfn17Fdvpump`
-- other: blocked 13, ran 1, dumped 11, flat 0, open 1 (saving losses: keep it)
+- other: blocked 14, ran 1, dumped 11, flat 0, open 2 (saving losses: keep it)
   - ran: SXI up to 2.34x  
     CA `BFWNbSwRodXPTQqrMSCfhznhJwEzY6ERd6MHjWUEpump`
-- dev share over 1%: blocked 11, ran 2, dumped 7, flat 2, open 0 (saving losses: keep it)
+- dev share over 1%: blocked 10, ran 2, dumped 6, flat 2, open 0 (saving losses: keep it)
   - ran: Grinch up to 1.94x  
     CA `J1b5HnRzmXsYK5akPTFtBR7B4E74JG8eyULodd7ypump`
   - ran: bolphante up to 1.7x  
@@ -199,13 +199,13 @@ No edge yet. All 276 settled coins lost money after costs under the simple plan:
 The meta in scan_movers is cat jokes and one-word fresh launches with real flow: POPBALL ($221k cap, $12k 5m, 76% buys, 1.2h old) and Vetocat ($225k, 86% buys, but only $5.9k 5m) are the cat names, and Kuro ($384k cap, $116k 5m, 78% buys, about 6 minutes old) has the strongest flow in the scan. inuvestor ($16.7k cap, $32k 5m, 61% buys, pump.fun bonding curve) has the launch style but its 5m volume is about twice its market cap, which is a farm flag until bundle and insider checks clear it. Fading: old otter and character names (Mei-chan at 5 days with $0 5m, CBUCKS at 51 days with $146 5m), HOLD (-57% in an hour, $911 5m) and FF. Trump, Ansem and dinner headlines don't appear in the movers, so news isn't driving this; the crawler's COIN and FLOW figures ($61k/$24k and $37k/$44k) don't match scan_movers (COIN $24.6k cap, $564 5m; FLOW $23.3k, $1.1k 5m), so I'm discarding them and both fail the $10k volume bar. Research now, not buy: Kuro and POPBALL as MIGRATED candidates (under 12h, cap above $30k, 5m above $10k), and inuvestor as a pre-bond research-only idea; Vetocat fails the 5m check.
 
 ## Moving most in its scans, last 30 min (1h volume)
-- Kuro: $299,456 1h vol, $1,307 mcap, -97% 1h  
+- KAI: $2,488,691 1h vol, $3,989,456 mcap, +3563% 1h  
+  CA `G2ZDG8q3QMYk3KR58JFFYsvaTk4Gy94UzMo7Re7spump`
+- Kuro: $265,906 1h vol, $1,291 mcap, -100% 1h  
   CA `BuorVu99GQ1LHT194YNYRbdXivTCA8o58nz7iji2pump`
+- CUMASS: $198,072 1h vol, $26,986 mcap, -9% 1h  
+  CA `CS8vS3n7Ptc4NBGwt62LxxAeW7gpPigHVYhmKcS7pump`
 - POPBALL: $169,644 1h vol, $124,757 mcap, -21% 1h  
   CA `CKiuTwHFMXKBaQ4V1WgsYctsdbLeit3wytXRkphzpump`
 - Snowball: $150,124 1h vol, $546,982 mcap, +27% 1h  
   CA `9TKbd3VFaMSXsEAicD9JVQWpWwAoLi4fSgWmZL2cpump`
-- inuvestor: $77,252 1h vol, $2,046 mcap, -9% 1h  
-  CA `341KHzpxbuXeJUP6yRGQLwmmWgFVwXJM6VxgPhYipump`
-- Winston: $68,421 1h vol, $54,038 mcap, +83% 1h  
-  CA `8tiWobkyfwAaagnrQ2DdVi8L3cf83FuZWbsrWUTNpump`
