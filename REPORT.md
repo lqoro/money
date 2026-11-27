@@ -1,13 +1,13 @@
 # Trencher live report
 
-Updated 2026-11-27T13:21:08Z (paper trading, never real money)
+Updated 2026-11-27T13:36:10Z (paper trading, never real money)
 
 - Equity: $74.23 (-25.8% vs $100 start)
 - Closed trades: 22, 3 wins
 - Fees paid: $14.78 (axiom $2.81, network $9.18, pool $2.66), plus $4.15 lost to slippage
 - New trades: WATCH-ONLY (scans and decides, buys nothing)
-- Brain: subscription, claude-haiku-5-5 for routine calls, claude-opus-5-5 for the daily review; 381 routine calls and 9 plan-limit hits in 48h
-- Watch log: 37 coins being followed, 4205 filed, 0 would-buys (6h follow, sampled every 2 min)
+- Brain: subscription, claude-haiku-5-5 for routine calls, claude-opus-5-5 for the daily review; 383 routine calls and 9 plan-limit hits in 48h
+- Watch log: 39 coins being followed, 4205 filed, 0 would-buys (6h follow, sampled every 2 min)
 
 ## Scorecard (after fees)
 - 22 closed, 3 won (14%), net $-25.79
@@ -73,9 +73,13 @@ Updated 2026-11-27T13:21:08Z (paper trading, never real money)
   CA `H4gHnZ3NCU7Z9XQwGX6YYJNyieGEW8pqwGRUcdSxpump`
 
 ## Last scan
-- 13:20Z: 3 coins, 3 with pairs, 1 passed the market filters, 1 researched
+- 13:35Z: 4 coins, 4 with pairs, 1 passed the market filters, 1 researched
 
 ## Coins it looked at, and why it passed
+- 13:35Z Spread (FINAL_STRETCH, $23,083 mcap, $2,059 5m vol): PASS at conviction 2, PASS: 5m flow is $2k with sellers ahead (42% buys), and the "one drop per wallet" pitch on a 2-hour-old domain is an airdrop-shaped story (blocker: flow below pace / chasing, V1, V3, V13).  
+  CA `HQYLt1Ne2xQdknmZjbnTffSKFYX2ZHCkBG3WBJQYpump`
+- 13:23Z Winston (MIGRATED, $43,995 mcap, $45,677 5m vol): PASS at conviction 2, PASS: a 5-minute-old copy with no higher low, +41% on the 5m, one linked bundle at 19.7% and no X. Not the field leader either. (V1, V3, V6)  
+  CA `5zpFmDhjE9NLP2w5wjnVQs3g5sg7M2bihnV7pi6vudAR`
 - 13:20Z ChokingCat (DIP, $72,250 mcap, $44,171 5m vol): REJECT, Bundles: 10 linked wallet cluster(s) hold 100.0% of supply (>20%) (V17)  
   CA `ExpdNM5YykDnGTmyxCH5B3s7mdWi1cEreDvK6ic8pump`
 - 13:16Z WINSTON (MIGRATED, $32,348 mcap, $12,696 5m vol): PASS at conviction 2, PASS: 84 seconds old, 26 same-name copies, no printed higher low, top 10 at 23.8%. Too new, and nothing to buy yet. (V1, V6, V13)  
@@ -92,10 +96,6 @@ Updated 2026-11-27T13:21:08Z (paper trading, never real money)
   CA `ExpdNM5YykDnGTmyxCH5B3s7mdWi1cEreDvK6ic8pump`
 - 12:23Z VAULT (DIP, $100,186 mcap, $11,410 5m vol): REJECT, Dip with fading attention is a falling knife, not a dip (5m at 0.52x the hour's pace, under 0.6x)  
   CA `4tqzkSWA9tiWYhzYpSt81We3cVNkrEbkD1tzjFDZpump`
-- 12:22Z Snowball (MIGRATED, $643,271 mcap, $4,281 5m vol): PASS at conviction 2, PASS — flow below pace: 5m $4.3k at 0.84x hourly, and the theme is at 0.63x with no catalyst. Site is 1.8 days old and sells holder "fees" as a game. (V1, V6, V13)  
-  CA `9TKbd3VFaMSXsEAicD9JVQWpWwAoLi4fSgWmZL2cpump`
-- 12:00Z Salecat (MIGRATED, $67,453 mcap, $10,181 5m vol): REJECT, Bundles: 5 linked wallet cluster(s) hold 84.6% of supply (>20%) (V17)  
-  CA `BFLRy1dMqALUz7WFoaXHXdZSJdqEJZnndD7yqz56pump`
 
 ## What its skips did next (last 48h)
 A skip "ran" if the coin reached the first target (1.5x) from the skip price before a 20% drop, "dumped" if the drop came first. Sampled every 10 min, followed 6h.
@@ -106,14 +106,14 @@ A skip "ran" if the coin reached the first target (1.5x) from the skip price bef
     CA `DeACAbp2GMzapB6Z2K8qdkTZupmNbKc6EZx9bnbCpump`
   - ran: Legatum up to 2.21x  
     CA `HkPSDYRcw4uqgRzZMDd5sRnMpE4ungR1K8MRNXnBVtQ2`
-- too new / sniping: blocked 44, ran 6, dumped 37, flat 0, open 1 (saving losses: keep it)
+- too new / sniping: blocked 44, ran 7, dumped 37, flat 0, open 0 (saving losses: keep it)
   - ran: COIN up to 1.85x  
     CA `ALLherSTscpAErYo5Jja3ysVocaa2oeZkUvgmvhZpump`
   - ran: Slapcat up to 1.61x  
     CA `AqNAfcg8AkidVLLE7Tszh2PjUGzgaKvJskDXQXRHpump`
   - ran: STUDS up to 2.35x  
     CA `34J9VrBeJ2dWActyAMpoNBKvoxZCqQz3SivmnnmSTUds`
-- flow below pace: blocked 41, ran 4, dumped 31, flat 5, open 1 (saving losses: keep it)
+- flow below pace: blocked 42, ran 4, dumped 32, flat 5, open 1 (saving losses: keep it)
   - ran: BIAO up to 1.51x  
     CA `As3XtYSstuVdrVyb6sJZZ77Tu8JvjTBg6S6hgPv4pump`
   - ran: PAIR up to 2.1x  
@@ -127,7 +127,7 @@ A skip "ran" if the coin reached the first target (1.5x) from the skip price bef
     CA `FeBG8AEG4j7LT7xQF38gPXQFBRBtXBTNzhZjSa3bpump`
   - ran: NETHER up to 1.8x  
     CA `GkL4cJLAL3354wLgS6mZJKKUBVzvUY1FUN47zZNgGWEq`
-- bundles over the line: blocked 25, ran 3, dumped 16, flat 4, open 2 (saving losses: keep it)
+- bundles over the line: blocked 25, ran 3, dumped 17, flat 4, open 1 (saving losses: keep it)
   - ran: WIENER up to 1.59x  
     CA `8BDkDfj3ZUvcG9caGzF2XnHfwg7K6fjfKKDvX6SCpump`
   - ran: Dragon up to 1.55x  
@@ -142,6 +142,13 @@ A skip "ran" if the coin reached the first target (1.5x) from the skip price bef
     CA `J9eBkCb4UtquAMQqB6duwBmR99fFSMoTnDcaMB9Wpump`
   - ran: MONEY up to 1.58x  
     CA `DeACAbp2GMzapB6Z2K8qdkTZupmNbKc6EZx9bnbCpump`
+- falling knife / no higher low: blocked 13, ran 3, dumped 5, flat 3, open 2 (mixed)
+  - ran: Zero up to 2.07x  
+    CA `DTSkmo3sCCKLCh91dJLiWCpwcKtK3yDBZMqZGSV1pump`
+  - ran: Maru up to 1.88x  
+    CA `FokVFH6mDsazoKbtnUaA2FRMsRbDSwZhNfn17Fdvpump`
+  - ran: Hoppy up to 1.76x  
+    CA `CFX1gH7CKYwqYXrfDkS2MUxJcEhs8PT63DyRA1chpump`
 - other: blocked 13, ran 2, dumped 11, flat 0, open 0 (saving losses: keep it)
   - ran: SXI up to 2.34x  
     CA `BFWNbSwRodXPTQqrMSCfhznhJwEzY6ERd6MHjWUEpump`
@@ -152,13 +159,6 @@ A skip "ran" if the coin reached the first target (1.5x) from the skip price bef
     CA `J1b5HnRzmXsYK5akPTFtBR7B4E74JG8eyULodd7ypump`
   - ran: bolphante up to 1.7x  
     CA `FVBzzG4ZcAgxSLW1rWjNC9EH9CgEgz1A4puNYexMpump`
-- falling knife / no higher low: blocked 12, ran 3, dumped 5, flat 3, open 1 (mixed)
-  - ran: Zero up to 2.07x  
-    CA `DTSkmo3sCCKLCh91dJLiWCpwcKtK3yDBZMqZGSV1pump`
-  - ran: Maru up to 1.88x  
-    CA `FokVFH6mDsazoKbtnUaA2FRMsRbDSwZhNfn17Fdvpump`
-  - ran: Hoppy up to 1.76x  
-    CA `CFX1gH7CKYwqYXrfDkS2MUxJcEhs8PT63DyRA1chpump`
 
 ## Daily review (2026-11-27, claude-opus-5-5)
 No edge after costs, and I'm fairly sure of that. All 250 settled coins averaged -12.7% net under the simple plan, and every setup and stage lost money (-12.2% to -15.2%). Before costs the average is still about -3%, because the median coin peaked at only 1.2x. At n=250 the standard error is roughly 2 points, so 'negative' is solid. The gaps between buckets (2-3 points) are noise, especially since the same coin can be logged more than once. The routine model made zero would-buys out of 130 coins it researched, so I can't test whether its buys beat its passes. The coins it passed on (-13.9%) did no worse than the checklist rejects (-11.5%) beyond noise. Passing everything was right for these 24 hours, but a model that never says buy gives the Nov 10 rule test nothing to grade.
@@ -201,11 +201,11 @@ Meta, from scan_movers: the real flow is in pump.fun and PumpSwap launches under
 ## Moving most in its scans, last 30 min (1h volume)
 - ChokingCat: $370,850 1h vol, $72,250 mcap, +136% 1h  
   CA `ExpdNM5YykDnGTmyxCH5B3s7mdWi1cEreDvK6ic8pump`
-- Salecat: $78,390 1h vol, $1,833 mcap, -97% 1h  
-  CA `BFLRy1dMqALUz7WFoaXHXdZSJdqEJZnndD7yqz56pump`
 - Zhaki: $67,257 1h vol, $73,195 mcap, +141% 1h  
   CA `2YAfPhCrGSW82Ra33sWgurXt4dQ29SwXusvUXdJGpump`
-- SAI: $64,718 1h vol, $3,533 mcap, -24% 1h  
-  CA `661YLyBy7kfmgkGu9Dt3VevjcW1mTme4TKGV3Bx14Gq8`
 - Snowball: $60,014 1h vol, $689,017 mcap, +3% 1h  
   CA `9TKbd3VFaMSXsEAicD9JVQWpWwAoLi4fSgWmZL2cpump`
+- AYO: $58,131 1h vol, $14,424 mcap, +562% 1h  
+  CA `gReut5zWWqXMYz5vSExcuDT56U1u1MTXsC7u3oqpump`
+- Winston: $50,459 1h vol, $43,995 mcap, +47% 1h  
+  CA `5zpFmDhjE9NLP2w5wjnVQs3g5sg7M2bihnV7pi6vudAR`
