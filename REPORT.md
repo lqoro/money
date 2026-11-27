@@ -1,13 +1,13 @@
 # Trencher live report
 
-Updated 2026-11-27T12:20:36Z (paper trading, never real money)
+Updated 2026-11-27T12:35:38Z (paper trading, never real money)
 
 - Equity: $74.23 (-25.8% vs $100 start)
 - Closed trades: 22, 3 wins
 - Fees paid: $14.78 (axiom $2.81, network $9.18, pool $2.66), plus $4.15 lost to slippage
 - New trades: WATCH-ONLY (scans and decides, buys nothing)
 - Brain: subscription, claude-haiku-5-5 for routine calls, claude-opus-5-5 for the daily review; 381 routine calls and 9 plan-limit hits in 48h
-- Watch log: 37 coins being followed, 4196 filed, 0 would-buys (6h follow, sampled every 2 min)
+- Watch log: 38 coins being followed, 4198 filed, 0 would-buys (6h follow, sampled every 2 min)
 
 ## Scorecard (after fees)
 - 22 closed, 3 won (14%), net $-25.79
@@ -73,9 +73,15 @@ Updated 2026-11-27T12:20:36Z (paper trading, never real money)
   CA `H4gHnZ3NCU7Z9XQwGX6YYJNyieGEW8pqwGRUcdSxpump`
 
 ## Last scan
-- 12:19Z: 4 coins, 4 with pairs, 0 passed the market filters, 0 researched
+- 12:35Z: 4 coins, 4 with pairs, 1 passed the market filters, 1 researched
 
 ## Coins it looked at, and why it passed
+- 12:35Z ChokingCat (MIGRATED, $87,696 mcap, $18,954 5m vol): REJECT, Bundles: 3 linked wallet cluster(s) hold 77.2% of supply (>20%) (V17)  
+  CA `ExpdNM5YykDnGTmyxCH5B3s7mdWi1cEreDvK6ic8pump`
+- 12:23Z VAULT (DIP, $100,186 mcap, $11,410 5m vol): REJECT, Dip with fading attention is a falling knife, not a dip (5m at 0.52x the hour's pace, under 0.6x)  
+  CA `4tqzkSWA9tiWYhzYpSt81We3cVNkrEbkD1tzjFDZpump`
+- 12:22Z Snowball (MIGRATED, $643,271 mcap, $4,281 5m vol): PASS at conviction 2, PASS — flow below pace: 5m $4.3k at 0.84x hourly, and the theme is at 0.63x with no catalyst. Site is 1.8 days old and sells holder "fees" as a game. (V1, V6, V13)  
+  CA `9TKbd3VFaMSXsEAicD9JVQWpWwAoLi4fSgWmZL2cpump`
 - 12:00Z Salecat (MIGRATED, $67,453 mcap, $10,181 5m vol): REJECT, Bundles: 5 linked wallet cluster(s) hold 84.6% of supply (>20%) (V17)  
   CA `BFLRy1dMqALUz7WFoaXHXdZSJdqEJZnndD7yqz56pump`
 - 11:56Z ChokeCat (FINAL_STRETCH, $20,551 mcap, $6,894 5m vol): REJECT, Top 10 hold 25.5% ex-pool (>25%) (V13)  
@@ -90,30 +96,24 @@ Updated 2026-11-27T12:20:36Z (paper trading, never real money)
   CA `4tqzkSWA9tiWYhzYpSt81We3cVNkrEbkD1tzjFDZpump`
 - 11:36Z Snowball (MIGRATED, $737,967 mcap, $2,201 5m vol): PASS at conviction 2, PASS: no printed higher low, 5m flow $2.2k, bundle cluster 5.1% in a vamp field, and no catalyst for a bottom buy. Farm-shaped site. (V1, V3, V6, V13)  
   CA `9TKbd3VFaMSXsEAicD9JVQWpWwAoLi4fSgWmZL2cpump`
-- 11:31Z VAULT (MIGRATED, $53,807 mcap, $12,927 5m vol): SKIP, passed the checklist, but the brain was paced or paused  
-  CA `4tqzkSWA9tiWYhzYpSt81We3cVNkrEbkD1tzjFDZpump`
-- 11:26Z VAULT (MIGRATED, $61,058 mcap, $33,044 5m vol): SKIP, passed the checklist, but the brain was paced or paused  
-  CA `4tqzkSWA9tiWYhzYpSt81We3cVNkrEbkD1tzjFDZpump`
-- 11:21Z VAULT (MIGRATED, $41,002 mcap, $8,486 5m vol): SKIP, passed the checklist, but the brain was paced or paused  
-  CA `4tqzkSWA9tiWYhzYpSt81We3cVNkrEbkD1tzjFDZpump`
 
 ## What its skips did next (last 48h)
 A skip "ran" if the coin reached the first target (1.5x) from the skip price before a 20% drop, "dumped" if the drop came first. Sampled every 10 min, followed 6h.
-- top 10 over 25%: blocked 55, ran 9, dumped 43, flat 2, open 1 (saving losses: keep it)
+- top 10 over 25%: blocked 54, ran 9, dumped 42, flat 2, open 1 (saving losses: keep it)
   - ran: ð up to 1.65x  
     CA `GeUnGPLFku8zn1dJUNZpj6VymUxt7A3t9DqRL5WJpump`
   - ran: MONEY up to 1.58x  
     CA `DeACAbp2GMzapB6Z2K8qdkTZupmNbKc6EZx9bnbCpump`
   - ran: Legatum up to 2.21x  
     CA `HkPSDYRcw4uqgRzZMDd5sRnMpE4ungR1K8MRNXnBVtQ2`
-- too new / sniping: blocked 44, ran 7, dumped 36, flat 0, open 1 (saving losses: keep it)
+- too new / sniping: blocked 43, ran 6, dumped 37, flat 0, open 0 (saving losses: keep it)
   - ran: COIN up to 1.85x  
     CA `ALLherSTscpAErYo5Jja3ysVocaa2oeZkUvgmvhZpump`
   - ran: Slapcat up to 1.61x  
     CA `AqNAfcg8AkidVLLE7Tszh2PjUGzgaKvJskDXQXRHpump`
   - ran: STUDS up to 2.35x  
     CA `34J9VrBeJ2dWActyAMpoNBKvoxZCqQz3SivmnnmSTUds`
-- flow below pace: blocked 42, ran 4, dumped 32, flat 6, open 0 (saving losses: keep it)
+- flow below pace: blocked 41, ran 4, dumped 31, flat 6, open 0 (saving losses: keep it)
   - ran: BIAO up to 1.51x  
     CA `As3XtYSstuVdrVyb6sJZZ77Tu8JvjTBg6S6hgPv4pump`
   - ran: PAIR up to 2.1x  
@@ -127,7 +127,7 @@ A skip "ran" if the coin reached the first target (1.5x) from the skip price bef
     CA `FeBG8AEG4j7LT7xQF38gPXQFBRBtXBTNzhZjSa3bpump`
   - ran: NETHER up to 1.8x  
     CA `GkL4cJLAL3354wLgS6mZJKKUBVzvUY1FUN47zZNgGWEq`
-- bundles over the line: blocked 24, ran 3, dumped 16, flat 4, open 1 (saving losses: keep it)
+- bundles over the line: blocked 25, ran 3, dumped 16, flat 4, open 2 (saving losses: keep it)
   - ran: WIENER up to 1.59x  
     CA `8BDkDfj3ZUvcG9caGzF2XnHfwg7K6fjfKKDvX6SCpump`
   - ran: Dragon up to 1.55x  
@@ -137,7 +137,7 @@ A skip "ran" if the coin reached the first target (1.5x) from the skip price bef
 - RugCheck danger: blocked 22, ran 1, dumped 19, flat 2, open 0 (saving losses: keep it)
   - ran: Bababoi up to 2.17x  
     CA `28B9kDm6XtQNqAkzuiKH3Zu1L8cVM6SLW4iRamFspump`
-- falling knife (code): blocked 15, ran 2, dumped 12, flat 1, open 0 (saving losses: keep it)
+- falling knife (code): blocked 16, ran 2, dumped 12, flat 1, open 1 (saving losses: keep it)
   - ran: Investor up to 1.58x  
     CA `J9eBkCb4UtquAMQqB6duwBmR99fFSMoTnDcaMB9Wpump`
   - ran: MONEY up to 1.58x  
@@ -147,7 +147,7 @@ A skip "ran" if the coin reached the first target (1.5x) from the skip price bef
     CA `BFWNbSwRodXPTQqrMSCfhznhJwEzY6ERd6MHjWUEpump`
   - ran: Christmas up to 1.89x  
     CA `5hkBYuFQDpAAqemCiVqXCuU6Ya5dqKhtRobzJsg6pump`
-- falling knife / no higher low: blocked 13, ran 3, dumped 6, flat 4, open 0 (saving losses: keep it)
+- falling knife / no higher low: blocked 12, ran 3, dumped 5, flat 4, open 0 (mixed)
   - ran: Zero up to 2.07x  
     CA `DTSkmo3sCCKLCh91dJLiWCpwcKtK3yDBZMqZGSV1pump`
   - ran: Maru up to 1.88x  
@@ -199,13 +199,13 @@ No edge yet. All 276 settled coins lost money after costs under the simple plan:
 Meta right now is cat names and fresh short pump.fun names under about 4h old. PizzaCoin ($11.3k cap, $23k 5m, 58% buys, 6 min old), ChokeCat ($20.6k cap, $6.9k 5m, 64% buys), Evoliq ($15.5k cap, $9.2k 5m, 57% buys) and Salecat ($63.6k cap, $10.9k 5m, but only 48% buys) are the only movers with real flow. Rising: those fresh short names and the cat riffs that still have volume. Fading: animal mascots (Pobby at $391 5m, Wizard Cat at $145 5m) and Nothing, which the scan has at $179 5m with 43% buys, so the crawler's $12.3k Nothing and $24.7k Vault figures don't match this scan (Vault isn't in it at all). Legacy names (BRUH, CBUCKS, JOB, WW) sit at $0.6M to $7M caps with under $1k on 5m, which is dead weight, not a meta. Setups to research, not buy: PizzaCoin only on a pullback that holds $10k+ 5m with buyers over half, since it's up 330% in 1h and can't be chased; ChokeCat on a dip that keeps its volume; Evoliq if 5m stays above $10k with buys over half. Holder, dev and bundle checks haven't run on any of these, so this is a thin, not quiet, market. The Trump dinner headlines aren't in this flow. Paper only, not financial advice.
 
 ## Moving most in its scans, last 30 min (1h volume)
-- Salecat: $93,270 1h vol, $63,602 mcap, +110% 1h  
-  CA `BFLRy1dMqALUz7WFoaXHXdZSJdqEJZnndD7yqz56pump`
-- EVOLIQ: $38,407 1h vol, $15,538 mcap, +189% 1h  
-  CA `GJewwaSYtsKdYmqoinB3LmCVvAD814FdKFWgcR4Kpump`
-- PIZZA: $36,218 1h vol, $11,270 mcap, +330% 1h  
+- VAULT: $262,601 1h vol, $100,186 mcap, +69% 1h  
+  CA `4tqzkSWA9tiWYhzYpSt81We3cVNkrEbkD1tzjFDZpump`
+- Spread: $105,448 1h vol, $14,920 mcap, +606% 1h  
+  CA `HQYLt1Ne2xQdknmZjbnTffSKFYX2ZHCkBG3WBJQYpump`
+- ChokingCat: $101,866 1h vol, $87,696 mcap, +187% 1h  
+  CA `ExpdNM5YykDnGTmyxCH5B3s7mdWi1cEreDvK6ic8pump`
+- PIZZA: $62,303 1h vol, $3,096 mcap, +18% 1h  
   CA `BhbBkVqwNAbauKfuKb9j9VC2gEzwS5AvWVuY48Pypump`
-- Nothing: $23,295 1h vol, $7,078 mcap, -23% 1h  
-  CA `Gqwo65Miiqpzciy7frML5afe8bEqz1RjbgbD7aeApump`
-- ChokeCat: $21,921 1h vol, $20,551 mcap, +154% 1h  
-  CA `26qFFJBo4F7EjtzCuCbJEdW4v233mY1aMRaw8Y2kpump`
+- Snowball: $60,980 1h vol, $649,391 mcap, -19% 1h  
+  CA `9TKbd3VFaMSXsEAicD9JVQWpWwAoLi4fSgWmZL2cpump`
