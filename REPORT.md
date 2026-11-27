@@ -1,13 +1,13 @@
 # Trencher live report
 
-Updated 2026-11-27T16:38:02Z (paper trading, never real money)
+Updated 2026-11-27T16:53:12Z (paper trading, never real money)
 
 - Equity: $74.23 (-25.8% vs $100 start)
 - Closed trades: 22, 3 wins
 - Fees paid: $14.78 (axiom $2.81, network $9.18, pool $2.66), plus $4.15 lost to slippage
 - New trades: WATCH-ONLY (scans and decides, buys nothing)
-- Brain: subscription, claude-haiku-5-5 for routine calls, claude-opus-5-5 for the daily review; 395 routine calls and 9 plan-limit hits in 48h
-- Watch log: 55 coins being followed, 4223 filed, 0 would-buys (6h follow, sampled every 2 min)
+- Brain: subscription, claude-haiku-5-5 for routine calls, claude-opus-5-5 for the daily review; 396 routine calls and 9 plan-limit hits in 48h
+- Watch log: 57 coins being followed, 4224 filed, 0 would-buys (6h follow, sampled every 2 min)
 
 ## Scorecard (after fees)
 - 22 closed, 3 won (14%), net $-25.79
@@ -73,9 +73,15 @@ Updated 2026-11-27T16:38:02Z (paper trading, never real money)
   CA `H4gHnZ3NCU7Z9XQwGX6YYJNyieGEW8pqwGRUcdSxpump`
 
 ## Last scan
-- 16:37Z: 3 coins, 3 with pairs, 0 passed the market filters, 0 researched
+- 16:52Z: 3 coins, 3 with pairs, 0 passed the market filters, 0 researched
 
 ## Coins it looked at, and why it passed
+- 16:50Z Fireball (MIGRATED, $716,684 mcap, $10,555 5m vol): PASS at conviction 3, PASS: no breakout, flow below pace, and a 28-copy vamp field with a 2-hour-old site that doesn't show this CA. Fireball ran 5x in 3 hours and is now sitting 15% off the high on 0.92x pace. (V1, V6, V13)  
+  CA `B9wbjDJ4FbHMsZmoXAkJSTAwuePaJUKbySvnK5zApump`
+- 16:45Z DIHBALL (MIGRATED, $219,052 mcap, $11,377 5m vol): REJECT, Top 10 hold 47.8% ex-pool (>25%) (V13)  
+  CA `99CQuNiF6WN44xyKqPP9N41x5R9Uu8MkTM9CK3Rzpump`
+- 16:45Z NBA (MIGRATED, $472,956 mcap, $88,037 5m vol): PASS at conviction 3, PASS: chasing spike, too new, and no higher low. A 16-minute-old copy of the ticker that just 4x'd its hourly volume is a bond-spike bleed, not a setup. (V1, V6)  
+  CA `AjucUKL3i8wh7SvFL9h5cZbWkd3M9JibLkdvRJKppump`
 - 16:36Z things (FINAL_STRETCH, $18,022 mcap, $12,387 5m vol): REJECT, Top 10 hold 26.1% ex-pool (>25%) (V13)  
   CA `HcoFqrrZCmMUCNYzG9ez2CwrUPc77DWvt5agkL5V4t2D`
 - 16:35Z Meme (MIGRATED, $348,539 mcap, $39,671 5m vol): PASS at conviction 3, PASS: chasing spike, no printed higher low. Price is 7.9% under a peak printed 6 minutes ago, after a ~6x run in about an hour. Blocker: "chasing". (V1, V6)  
@@ -90,16 +96,10 @@ Updated 2026-11-27T16:38:02Z (paper trading, never real money)
   CA `F5LxbqJxAMrvfxLbqPckErmqNyiPzDJMUXnX8vrhpump`
 - 16:10Z Elfball (MIGRATED, $357,716 mcap, $49,390 5m vol): REJECT, Top 10 hold 52.3% ex-pool (>25%) (V13)  
   CA `92tFJ6CvgCuoS1c34Qy5g3RPVRDmLyHtknMnuoYqpump`
-- 16:05Z Egg (FINAL_STRETCH, $16,479 mcap, $2,487 5m vol): PASS at conviction 3, PASS. Egg's theme is dying, 5m flow is at 0.46x its hourly pace, and the 5m is $2.5k against a $10k bar. The crowd is leaving the copies, not arriving (V1, V6).  
-  CA `EVASJxNTfg5P8qrj3crg11pQNDva6fqzfHavZ9NLpump`
-- 16:04Z Fireball (MIGRATED, $629,377 mcap, $4,911 5m vol): PASS at conviction 2, PASS: chasing (1% off a $636k high), flow below pace (0.81x), 5m $4.9k under $10k, no higher low, 28-copy field. Name-meta with zero buzz. (V1, V6, V13)  
-  CA `B9wbjDJ4FbHMsZmoXAkJSTAwuePaJUKbySvnK5zApump`
-- 16:02Z COMPUTE (MIGRATED, $72,335 mcap, $4,830 5m vol): REJECT, Bundles: 10 linked wallet cluster(s) hold 34.9% of supply (>20%) (V17)  
-  CA `54jKBorvDP4eB7vZnWy1HJfhm4X17pSJCE6o2Lshpump`
 
 ## What its skips did next (last 48h)
 A skip "ran" if the coin reached the first target (1.5x) from the skip price before a 20% drop, "dumped" if the drop came first. Sampled every 10 min, followed 6h.
-- top 10 over 25%: blocked 53, ran 10, dumped 36, flat 3, open 4 (saving losses: keep it)
+- top 10 over 25%: blocked 54, ran 10, dumped 38, flat 3, open 3 (saving losses: keep it)
   - ran: ð up to 1.65x  
     CA `GeUnGPLFku8zn1dJUNZpj6VymUxt7A3t9DqRL5WJpump`
   - ran: MONEY up to 1.58x  
@@ -113,14 +113,14 @@ A skip "ran" if the coin reached the first target (1.5x) from the skip price bef
     CA `CFX1gH7CKYwqYXrfDkS2MUxJcEhs8PT63DyRA1chpump`
   - ran: SpaceXCoin up to 1.52x  
     CA `G2XqmSc8vJpLLwaLVXUeNkxsrhVT8vQ3Pje8MqeDpump`
-- too new / sniping: blocked 45, ran 6, dumped 38, flat 0, open 1 (saving losses: keep it)
+- too new / sniping: blocked 46, ran 7, dumped 38, flat 0, open 1 (saving losses: keep it)
   - ran: COIN up to 1.85x  
     CA `ALLherSTscpAErYo5Jja3ysVocaa2oeZkUvgmvhZpump`
   - ran: Slapcat up to 1.61x  
     CA `AqNAfcg8AkidVLLE7Tszh2PjUGzgaKvJskDXQXRHpump`
   - ran: STUDS up to 2.35x  
     CA `34J9VrBeJ2dWActyAMpoNBKvoxZCqQz3SivmnnmSTUds`
-- near the high / chasing: blocked 37, ran 4, dumped 28, flat 3, open 2 (saving losses: keep it)
+- near the high / chasing: blocked 37, ran 5, dumped 29, flat 3, open 0 (saving losses: keep it)
   - ran: Nala up to 1.64x  
     CA `FeBG8AEG4j7LT7xQF38gPXQFBRBtXBTNzhZjSa3bpump`
   - ran: NETHER up to 1.8x  
@@ -201,11 +201,11 @@ The meta is not a headline. It's a crowd of fresh pump.fun/PumpSwap coins, mostl
 ## Moving most in its scans, last 30 min (1h volume)
 - Meme: $319,587 1h vol, $348,539 mcap, +659% 1h  
   CA `CV1NPi8L2PSYMfALBh7GCfUwELZzG3DrLUUjCkeapump`
-- Sheeb: $187,622 1h vol, $3,816 mcap, -93% 1h  
-  CA `5rRxk9FC3ma11neg8BGLwTWxt4PokH19Y92sERwa2PJ3`
-- KITT: $156,818 1h vol, $155,156 mcap, +217% 1h  
-  CA `F5LxbqJxAMrvfxLbqPckErmqNyiPzDJMUXnX8vrhpump`
-- Elfball: $123,104 1h vol, $352,504 mcap, +964% 1h  
-  CA `92tFJ6CvgCuoS1c34Qy5g3RPVRDmLyHtknMnuoYqpump`
+- NBA: $265,916 1h vol, $522,501 mcap, +1159% 1h  
+  CA `AjucUKL3i8wh7SvFL9h5cZbWkd3M9JibLkdvRJKppump`
+- Fireball: $138,144 1h vol, $716,684 mcap, +37% 1h  
+  CA `B9wbjDJ4FbHMsZmoXAkJSTAwuePaJUKbySvnK5zApump`
 - 67: $114,670 1h vol, $52,357 mcap, +23% 1h  
   CA `8ob6WB1VTJasK2r6EjzbMyJ5Zv8bd6jDsTtahvxunyLV`
+- things: $96,196 1h vol, $18,142 mcap, +603% 1h  
+  CA `HcoFqrrZCmMUCNYzG9ez2CwrUPc77DWvt5agkL5V4t2D`
