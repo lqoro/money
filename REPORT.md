@@ -1,13 +1,13 @@
 # Trencher live report
 
-Updated 2026-11-27T23:41:27Z (paper trading, never real money)
+Updated 2026-11-27T23:56:28Z (paper trading, never real money)
 
 - Equity: $74.23 (-25.8% vs $100 start)
 - Closed trades: 22, 3 wins
 - Fees paid: $14.78 (axiom $2.81, network $9.18, pool $2.66), plus $4.15 lost to slippage
 - New trades: WATCH-ONLY (scans and decides, buys nothing)
-- Brain: subscription, claude-haiku-5-5 for routine calls, claude-opus-5-5 for the daily review; 394 routine calls and 9 plan-limit hits in 48h
-- Watch log: 77 coins being followed, 4295 filed, 0 would-buys (6h follow, sampled every 2 min)
+- Brain: subscription, claude-haiku-5-5 for routine calls, claude-opus-5-5 for the daily review; 389 routine calls and 9 plan-limit hits in 48h
+- Watch log: 77 coins being followed, 4297 filed, 0 would-buys (6h follow, sampled every 2 min)
 
 ## Scorecard (after fees)
 - 22 closed, 3 won (14%), net $-25.79
@@ -73,9 +73,13 @@ Updated 2026-11-27T23:41:27Z (paper trading, never real money)
   CA `H4gHnZ3NCU7Z9XQwGX6YYJNyieGEW8pqwGRUcdSxpump`
 
 ## Last scan
-- 23:40Z: 8 coins, 7 with pairs, 0 passed the market filters, 0 researched
+- 23:55Z: 5 coins, 4 with pairs, 0 passed the market filters, 0 researched
 
 ## Coins it looked at, and why it passed
+- 23:51Z JOB (MIGRATED, $2,358,321 mcap, $9,766 5m vol): REJECT, Bundles: 1 linked wallet cluster(s) hold 22.5% of supply (>20%) (V17)  
+  CA `9Pq7aLAbhDG2tTnS22cm6kuysZVcZpLFE368HWuypump`
+- 23:44Z Maebashi (MIGRATED, $51,782 mcap, $9,607 5m vol): REJECT, Top 10 hold 25.9% ex-pool (>25%) (V13)  
+  CA `659ziXQiNko5cdGzPaBKVu81ahHzZMTFKBcNxe5ALXkG`
 - 23:39Z Fireball (DIP, $636,271 mcap, $3,892 5m vol): PASS at conviction 2, PASS — DIP on a 27-copy "Fireball" ticker with no catalyst, theme volume at 0.72x pace, and a site one day old that doesn't show this CA. Blocker: dead story / no catalyst. (V1, V3, V13)  
   CA `B9wbjDJ4FbHMsZmoXAkJSTAwuePaJUKbySvnK5zApump`
 - 23:37Z Sol (MIGRATED, $103,100 mcap, $18,509 5m vol): PASS at conviction 2, PASS: 5m flow at 0.43x pace, no printed higher low, and it's one of 18 "Sol" copies with no story behind it. Blocker: flow below pace. (V1, V6, V3)  
@@ -92,21 +96,17 @@ Updated 2026-11-27T23:41:27Z (paper trading, never real money)
   CA `CLFWsFgDZ4DUcoD7JfkbQSJNaUTrZe5oUw4tTPERpump`
 - 22:54Z 100Xmas (FINAL_STRETCH, $19,288 mcap, $6,705 5m vol): REJECT, Top 10 hold 27.8% ex-pool (>25%) (V13)  
   CA `9BADLCimdmPqKPHbTrpsrkJsvNTSpppNbTSB2smgpump`
-- 22:54Z Compute (FINAL_STRETCH, $16,993 mcap, $26,086 5m vol): REJECT, Dev holds 2.1% (>1%) (V13, V17)  
-  CA `5U1gFupX5cvS8gqMm9DTh2bNcqUehc2H4GP3Skgxpump`
-- 22:53Z Fireball (MIGRATED, $753,522 mcap, $4,553 5m vol): PASS at conviction 3, PASS: flow below pace, no catalyst, and the fireball theme is cooling. Blocker "flow below pace". Fireball is a crowded copy field with a 0.4-day-old site that doesn't show this CA. (V1, V6, V13)  
-  CA `B9wbjDJ4FbHMsZmoXAkJSTAwuePaJUKbySvnK5zApump`
 
 ## What its skips did next (last 48h)
 A skip "ran" if the coin reached the first target (1.5x) from the skip price before a 20% drop, "dumped" if the drop came first. Sampled every 10 min, followed 6h.
-- top 10 over 25%: blocked 53, ran 11, dumped 38, flat 3, open 1 (saving losses: keep it)
+- top 10 over 25%: blocked 54, ran 11, dumped 39, flat 3, open 1 (saving losses: keep it)
   - ran: MONEY up to 1.58x  
     CA `DeACAbp2GMzapB6Z2K8qdkTZupmNbKc6EZx9bnbCpump`
   - ran: Legatum up to 2.21x  
     CA `HkPSDYRcw4uqgRzZMDd5sRnMpE4ungR1K8MRNXnBVtQ2`
   - ran: Thankful up to 2.05x  
     CA `E9arxG4RxB7Gxt6U75obonTZzx7vpbc4bUi1dfw3BtUN`
-- flow below pace: blocked 45, ran 4, dumped 34, flat 3, open 4 (saving losses: keep it)
+- flow below pace: blocked 45, ran 4, dumped 35, flat 3, open 3 (saving losses: keep it)
   - ran: PAIR up to 2.1x  
     CA `32rBxcFjCFnyqZ41CEPM5AL67X1dcw8w83vZt6Kxpump`
   - ran: Hoppy up to 1.76x  
@@ -139,7 +139,7 @@ A skip "ran" if the coin reached the first target (1.5x) from the skip price bef
     CA `DeACAbp2GMzapB6Z2K8qdkTZupmNbKc6EZx9bnbCpump`
   - ran: Split up to 1.54x  
     CA `HAP9FcXubD88SjRHMY1kr5iukpRZgeMAgCBam3Vtpump`
-- falling knife / no higher low: blocked 12, ran 3, dumped 7, flat 1, open 1 (saving losses: keep it)
+- falling knife / no higher low: blocked 12, ran 3, dumped 8, flat 1, open 0 (saving losses: keep it)
   - ran: Zero up to 2.07x  
     CA `DTSkmo3sCCKLCh91dJLiWCpwcKtK3yDBZMqZGSV1pump`
   - ran: Maru up to 1.88x  
@@ -199,11 +199,11 @@ The tape is not quiet. Hyperball (pumpswap, $107k mcap, 6 min old, $123k 5m volu
 ## Moving most in its scans, last 30 min (1h volume)
 - Sol: $513,671 1h vol, $103,100 mcap, -58% 1h  
   CA `Xb6V46U9hHHxiJnoAFxiEqEh59owzdt1ZL9q5zpVSoL`
-- Maebashi: $86,583 1h vol, $29,902 mcap, +3% 1h  
+- SPEC: $454,658 1h vol, $5,542 mcap, -81% 1h  
+  CA `6DmC5KR6DF62Gfz5oe8uVkNFrQb5N3kdXpKswA7pump`
+- Hyperball: $364,967 1h vol, $28,036 mcap, -45% 1h  
+  CA `5TkyHpVZCnuW6w21q6mvFQ2Fgyvq3KySHJqfuki9pump`
+- Maebashi: $121,242 1h vol, $47,740 mcap, +65% 1h  
   CA `659ziXQiNko5cdGzPaBKVu81ahHzZMTFKBcNxe5ALXkG`
-- JOB: $77,426 1h vol, $2,336,768 mcap, +10% 1h  
-  CA `9Pq7aLAbhDG2tTnS22cm6kuysZVcZpLFE368HWuypump`
-- Compute: $75,918 1h vol, $4,335 mcap, -39% 1h  
-  CA `5U1gFupX5cvS8gqMm9DTh2bNcqUehc2H4GP3Skgxpump`
-- DRIFT: $54,727 1h vol, $2,091 mcap, -46% 1h  
-  CA `CtmY5rRVmxQNWGSG1BF4QJYL6N55ooXy8oe8cAmopump`
+- Clout: $104,999 1h vol, $2,282 mcap, -11% 1h  
+  CA `81ijK2haeYqqjnoiPTtBMS9CBt2ThCcvdB6N3rQEpump`
