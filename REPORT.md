@@ -1,13 +1,13 @@
 # Trencher live report
 
-Updated 2026-11-27T19:40:01Z (paper trading, never real money)
+Updated 2026-11-27T19:55:06Z (paper trading, never real money)
 
 - Equity: $74.23 (-25.8% vs $100 start)
 - Closed trades: 22, 3 wins
 - Fees paid: $14.78 (axiom $2.81, network $9.18, pool $2.66), plus $4.15 lost to slippage
 - New trades: WATCH-ONLY (scans and decides, buys nothing)
-- Brain: subscription, claude-haiku-5-5 for routine calls, claude-opus-5-5 for the daily review; 395 routine calls and 9 plan-limit hits in 48h
-- Watch log: 72 coins being followed, 4244 filed, 0 would-buys (6h follow, sampled every 2 min)
+- Brain: subscription, claude-haiku-5-5 for routine calls, claude-opus-5-5 for the daily review; 396 routine calls and 9 plan-limit hits in 48h
+- Watch log: 71 coins being followed, 4248 filed, 0 would-buys (6h follow, sampled every 2 min)
 
 ## Scorecard (after fees)
 - 22 closed, 3 won (14%), net $-25.79
@@ -73,9 +73,15 @@ Updated 2026-11-27T19:40:01Z (paper trading, never real money)
   CA `H4gHnZ3NCU7Z9XQwGX6YYJNyieGEW8pqwGRUcdSxpump`
 
 ## Last scan
-- 19:39Z: 2 coins, 2 with pairs, 0 passed the market filters, 0 researched
+- 19:54Z: 5 coins, 5 with pairs, 0 passed the market filters, 0 researched
 
 ## Coins it looked at, and why it passed
+- 19:54Z HIJAK (FINAL_STRETCH, $18,196 mcap, $43,731 5m vol): PASS at conviction 3, PASS: HIJAK is a 5-minute-old pump.fun launch up 563% in 5m on 12x its hourly pace, one of seven same-ticker copies, with no story on the radar. Chasing a launch candle (V1, V6, V13).  
+  CA `5jvUfm5zau2cKswxdLtQaPZavfF6mdmbhsbUHuZ3pump`
+- 19:51Z Fireball (DIP, $456,858 mcap, $3,020 5m vol): PASS at conviction 2, PASS: no attention behind the Fireball theme. Theme volume is 0.05x its hourly pace, the bottom-buy gate needs 1x, and there is no catalyst. Blocker: "dead story" (V1, V5).  
+  CA `B9wbjDJ4FbHMsZmoXAkJSTAwuePaJUKbySvnK5zApump`
+- 19:49Z VICAT (MIGRATED, $173,461 mcap, $5,449 5m vol): PASS at conviction 3, PASS: flow below pace (0.47x) on a MIGRATED buy 33% off its high, and the cat theme is at 0.47x pace with no catalyst. (V1, V6)  
+  CA `4WZLGbAp6oEPxFbDcsfADCo1AgYZkfiteQhtM5iwpump`
 - 19:29Z dawg (FINAL_STRETCH, $15,737 mcap, $5,920 5m vol): REJECT, RugCheck danger: Creator history of rugged tokens  
   CA `36yYE9DuDRnVewJwKwo5LAa34s8s8Pu3jnadYZRnpump`
 - 19:16Z VolumeBall (FINAL_STRETCH, $23,876 mcap, $13,617 5m vol): PASS at conviction 3, PASS: chasing spike. VolumeBall is up 108% on 5m and 1050% on the hour, 10% off a peak 18 minutes old, with no socials and a 4.9% bundle cluster. Blocker "chasing spike" (V1, V6).  
@@ -90,12 +96,6 @@ Updated 2026-11-27T19:40:01Z (paper trading, never real money)
   CA `9msLfYfXBrSbrApCZAPuPMCNmPqNtEL1VPKh1AEYpump`
 - 18:43Z CINU (MIGRATED, $252,163 mcap, $2,051 5m vol): PASS at conviction 3, PASS: the site sells $CATE, not $CINU, and the 5m flow is $2k on a 3.6x spike. This is a vamp, not the original. (V1, V3, V13)  
   CA `CvXQ9qEriGgTbMWyF8L1U7oqn9ev8A49N1dzNE8cpump`
-- 18:25Z PumpMas (MIGRATED, $138,206 mcap, $2,009 5m vol): REJECT, Top 10 hold 26.1% ex-pool (>25%) (V13)  
-  CA `EwUVBpdM5vw1CJHRMSLywzVjyQSJZpy6qboxEPBKpump`
-- 18:20Z Fireball (DIP, $646,382 mcap, $3,487 5m vol): REJECT, Dip with fading attention is a falling knife, not a dip (5m at 0.50x the hour's pace, under 0.6x)  
-  CA `B9wbjDJ4FbHMsZmoXAkJSTAwuePaJUKbySvnK5zApump`
-- 18:20Z CLANK (FINAL_STRETCH, $14,867 mcap, $17,791 5m vol): PASS at conviction 3, PASS — chasing a +551% 5m spike in a 20-copy "clank" vamp field, the team's own site doesn't show this CA, and top 10 hold 23.4%. Blocker: chasing spike. (V1, V3, V6, V13)  
-  CA `EysWa7XMZGQbCy8F3KPAVmizHgUBxTmf4WzjdZZapump`
 
 ## What its skips did next (last 48h)
 A skip "ran" if the coin reached the first target (1.5x) from the skip price before a 20% drop, "dumped" if the drop came first. Sampled every 10 min, followed 6h.
@@ -106,13 +106,20 @@ A skip "ran" if the coin reached the first target (1.5x) from the skip price bef
     CA `GeUnGPLFku8zn1dJUNZpj6VymUxt7A3t9DqRL5WJpump`
   - ran: MONEY up to 1.58x  
     CA `DeACAbp2GMzapB6Z2K8qdkTZupmNbKc6EZx9bnbCpump`
-- flow below pace: blocked 47, ran 4, dumped 39, flat 3, open 1 (saving losses: keep it)
+- flow below pace: blocked 47, ran 4, dumped 38, flat 3, open 2 (saving losses: keep it)
   - ran: PAIR up to 2.1x  
     CA `32rBxcFjCFnyqZ41CEPM5AL67X1dcw8w83vZt6Kxpump`
   - ran: Hoppy up to 1.76x  
     CA `CFX1gH7CKYwqYXrfDkS2MUxJcEhs8PT63DyRA1chpump`
   - ran: SpaceXCoin up to 1.52x  
     CA `G2XqmSc8vJpLLwaLVXUeNkxsrhVT8vQ3Pje8MqeDpump`
+- near the high / chasing: blocked 41, ran 8, dumped 28, flat 2, open 3 (saving losses: keep it)
+  - ran: enu up to 1.82x  
+    CA `9msLfYfXBrSbrApCZAPuPMCNmPqNtEL1VPKh1AEYpump`
+  - ran: Nala up to 1.64x  
+    CA `FeBG8AEG4j7LT7xQF38gPXQFBRBtXBTNzhZjSa3bpump`
+  - ran: NETHER up to 1.8x  
+    CA `GkL4cJLAL3354wLgS6mZJKKUBVzvUY1FUN47zZNgGWEq`
 - too new / sniping: blocked 41, ran 6, dumped 34, flat 0, open 1 (saving losses: keep it)
   - ran: Slapcat up to 1.61x  
     CA `AqNAfcg8AkidVLLE7Tszh2PjUGzgaKvJskDXQXRHpump`
@@ -120,28 +127,21 @@ A skip "ran" if the coin reached the first target (1.5x) from the skip price bef
     CA `34J9VrBeJ2dWActyAMpoNBKvoxZCqQz3SivmnnmSTUds`
   - ran: 2 up to 1.69x  
     CA `HkywsKMf5FDj7QpgRE3BoE2nJqJauxEVbGjpnYe6pump`
-- near the high / chasing: blocked 40, ran 8, dumped 28, flat 2, open 2 (saving losses: keep it)
-  - ran: enu up to 1.82x  
-    CA `9msLfYfXBrSbrApCZAPuPMCNmPqNtEL1VPKh1AEYpump`
-  - ran: Nala up to 1.64x  
-    CA `FeBG8AEG4j7LT7xQF38gPXQFBRBtXBTNzhZjSa3bpump`
-  - ran: NETHER up to 1.8x  
-    CA `GkL4cJLAL3354wLgS6mZJKKUBVzvUY1FUN47zZNgGWEq`
-- bundles over the line: blocked 24, ran 3, dumped 16, flat 5, open 0 (saving losses: keep it)
+- bundles over the line: blocked 23, ran 3, dumped 15, flat 5, open 0 (saving losses: keep it)
   - ran: WIENER up to 1.59x  
     CA `8BDkDfj3ZUvcG9caGzF2XnHfwg7K6fjfKKDvX6SCpump`
   - ran: Dragon up to 1.55x  
     CA `cg3HaDWhAKFfj9aq79TWUBgmxfs4G7byQ7feaxnpump`
   - ran: monky up to 96.37x  
     CA `At5hmwDn4YgPDoic1UN7zMdTtCoiXJsMhnKaoazEpump`
-- falling knife (code): blocked 23, ran 3, dumped 20, flat 0, open 0 (saving losses: keep it)
+- falling knife (code): blocked 22, ran 3, dumped 19, flat 0, open 0 (saving losses: keep it)
   - ran: Investor up to 1.58x  
     CA `J9eBkCb4UtquAMQqB6duwBmR99fFSMoTnDcaMB9Wpump`
   - ran: MONEY up to 1.58x  
     CA `DeACAbp2GMzapB6Z2K8qdkTZupmNbKc6EZx9bnbCpump`
   - ran: Split up to 1.54x  
     CA `HAP9FcXubD88SjRHMY1kr5iukpRZgeMAgCBam3Vtpump`
-- RugCheck danger: blocked 15, ran 1, dumped 11, flat 2, open 1 (saving losses: keep it)
+- RugCheck danger: blocked 15, ran 1, dumped 12, flat 2, open 0 (saving losses: keep it)
   - ran: Bababoi up to 2.17x  
     CA `28B9kDm6XtQNqAkzuiKH3Zu1L8cVM6SLW4iRamFspump`
 - other: blocked 12, ran 2, dumped 10, flat 0, open 0 (saving losses: keep it)
@@ -209,13 +209,13 @@ Setups to research, not buy yet: VolumeBall, still on the pump.fun curve at $24k
 Before any Ball trade, confirm which Fireball is the original: the scan lists one CA, the crawler says two (V3). Hack-named coins: none in the movers. Paper only, not financial advice.
 
 ## Moving most in its scans, last 30 min (1h volume)
-- Oscar: $97,779 1h vol, $3,042 mcap, -58% 1h  
-  CA `CyrgrZVubmhyr13eQNiSi1WBwSGidLmvVoHA91phpump`
-- enu: $71,325 1h vol, $251,816 mcap, +8% 1h  
-  CA `9msLfYfXBrSbrApCZAPuPMCNmPqNtEL1VPKh1AEYpump`
-- VolumeBall: $50,598 1h vol, $23,876 mcap, +1050% 1h  
-  CA `7au7hZMSaKbdzqV3tTLMe9tLbED1GCpxdDrR9cbpump`
+- FARM: $214,894 1h vol, $2,295 mcap, -92% 1h  
+  CA `2dynAjPBnkqzjUwozgn8pDRkCf7k7CDJkLfcf4rupump`
+- VICAT: $140,144 1h vol, $179,862 mcap, +6% 1h  
+  CA `4WZLGbAp6oEPxFbDcsfADCo1AgYZkfiteQhtM5iwpump`
+- Fireball: $51,700 1h vol, $456,858 mcap, -28% 1h  
+  CA `B9wbjDJ4FbHMsZmoXAkJSTAwuePaJUKbySvnK5zApump`
 - dawg: $48,387 1h vol, $15,737 mcap, +664% 1h  
   CA `36yYE9DuDRnVewJwKwo5LAa34s8s8Pu3jnadYZRnpump`
-- TOGO: $44,914 1h vol, $1,378 mcap, -100% 1h  
-  CA `8LX2fFyENqu1R6bmzk461BH3ZPVbmpCpppe1K7Zcpump`
+- HIJAK: $44,931 1h vol, $18,214 mcap, +564% 1h  
+  CA `5jvUfm5zau2cKswxdLtQaPZavfF6mdmbhsbUHuZ3pump`
