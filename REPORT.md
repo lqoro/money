@@ -1,13 +1,13 @@
 # Trencher live report
 
-Updated 2026-11-28T06:59:49Z (paper trading, never real money)
+Updated 2026-11-28T07:15:14Z (paper trading, never real money)
 
 - Equity: $74.23 (-25.8% vs $100 start)
 - Closed trades: 22, 3 wins
 - Fees paid: $14.78 (axiom $2.81, network $9.18, pool $2.66), plus $4.15 lost to slippage
 - New trades: WATCH-ONLY (scans and decides, buys nothing)
-- Brain: subscription, claude-haiku-5-5 for routine calls, claude-opus-5-5 for the daily review; 367 routine calls and 9 plan-limit hits in 48h
-- Watch log: 76 coins being followed, 4386 filed, 0 would-buys (6h follow, sampled every 2 min)
+- Brain: subscription, claude-haiku-5-5 for routine calls, claude-opus-5-5 for the daily review; 368 routine calls and 9 plan-limit hits in 48h
+- Watch log: 78 coins being followed, 4391 filed, 0 would-buys (6h follow, sampled every 2 min)
 
 ## Scorecard (after fees)
 - 22 closed, 3 won (14%), net $-25.79
@@ -73,53 +73,53 @@ Updated 2026-11-28T06:59:49Z (paper trading, never real money)
   CA `H4gHnZ3NCU7Z9XQwGX6YYJNyieGEW8pqwGRUcdSxpump`
 
 ## Last scan
-- 06:59Z: 4 coins, 4 with pairs, 0 passed the market filters, 0 researched
+- 07:14Z: 5 coins, 5 with pairs, 3 passed the market filters, 3 researched
 
 ## Coins it looked at, and why it passed
+- 07:14Z BITCOINU (DIP, $888,266 mcap, $3,541 5m vol): REJECT, Dip with fading attention is a falling knife, not a dip (5m at 0.46x the hour's pace, under 0.6x)  
+  CA `ATbAsdCwrhhVg23DRnWpjqx6kx7ivoK5o8ysNmu1pump`
+- 07:14Z Fireball (DIP, $464,005 mcap, $8,692 5m vol): PASS at conviction 3, PASS. Bottom buy with no catalyst, no radar story, and a 0.7-day-old site that doesn't show this CA. Blocker: "no catalyst". (V1, V13)  
+  CA `B9wbjDJ4FbHMsZmoXAkJSTAwuePaJUKbySvnK5zApump`
+- 07:14Z FINGART (DIP, $109,885 mcap, $10,294 5m vol): REJECT, Dip with fading attention is a falling knife, not a dip (5m at 0.56x the hour's pace, under 0.6x)  
+  CA `WZVWLfThgm14NN8HRDoyiEeXVvdUDMzGMHUS3VLpump`
+- 07:12Z Kibo (no setup, $60,818 mcap, $2,193 5m vol): REJECT, No setup fits: not Final Stretch, not a migrated runner, not a healthy dip  
+  CA `7XSYaJygcuNe6Q3kPvwsJpg4ZrFL1AEUFb8kCuzppump`
+- 07:12Z WLFI (MIGRATED, $281,687 mcap, $15,821 5m vol): PASS at conviction 3, PASS: flow at 0.66x pace, one bundle cluster holds 10.5%, and the ticker belongs to a bigger coin. Joke name, no catalyst. (V1, V3, V6)  
+  CA `HmGQsYJyeiWrV6jABUY2Cb3bEmVxwk6LzVxCchsCpump`
+- 07:09Z gondola (FINAL_STRETCH, $15,227 mcap, $2,006 5m vol): PASS at conviction 2, PASS: gondola. 5m flow is $2k at 0.62x hourly pace, one of 9 same-ticker copies, and the last 15m candle fell about 54%. Flow below pace, no story (V1, V6, V13).  
+  CA `ArrsHWAybe2qPLwMFpmcxf5GaT19ZQJ7bnPSyKhJFsEt`
+- 07:00Z RICE (MIGRATED, $45,583 mcap, $3,010 5m vol): PASS at conviction 2, PASS. Falling knife with no higher low, flow at half pace, and a fading theme. The hard lines are clean but the money shape isn't there (V1, V6).  
+  CA `3rVr2RBzEXXKf1cVvZ6HBvFg2XmBK4iMgZv9q9q4pump`
 - 06:45Z SPSC (MIGRATED, $89,828 mcap, $8,494 5m vol): PASS at conviction 3, PASS: SPSC is a 0.8h-old copy that spiked 4x and is bleeding off the top, on half pace, with no printed higher low and no leadership in its own vamp field. Blockers: too new, flow below pace, no higher low, split crowd (V1, V3, V6).  
   CA `EjdrRG2si1FQ3Bme5g6WSYNHJDrsKUrbGB4Z5xaopump`
 - 06:45Z JOB (MIGRATED, $2,518,498 mcap, $9,241 5m vol): REJECT, Bundles: 1 linked wallet cluster(s) hold 22.5% of supply (>20%) (V17)  
   CA `9Pq7aLAbhDG2tTnS22cm6kuysZVcZpLFE368HWuypump`
 - 06:38Z Air (MIGRATED, $43,122 mcap, $56,180 5m vol): PASS at conviction 2, PASS — too new and chasing: a +70% 5m candle at 11.4x hourly pace, no printed higher low, and one of 19 same-name copies with no catalyst. Blocked by the money-shape rules (V1, V6, V13).  
   CA `ACP9Kkvh3ShCawmVcEJQ7mr93uNF1uvTP1yvvivApump`
-- 06:30Z WLFI (DIP, $154,732 mcap, $80,020 5m vol): PASS at conviction 2, PASS: 12 minutes old, up 295% in an hour and already 51% off a $314k peak, with 5m volume at 4.8x pace. No printed higher low, and it's a spike, not a base. Top 10 at 21.9%, and the ticker collides with the real WLFI. Blocker: "too new" / "chasing spike" (V1, V6, V13).  
-  CA `4HEfa8ytHJk75E4qdThEbtNdyGRg2qfQHMo8nu2Cpump`
-- 06:29Z conjectures (no setup, $2,326 mcap, $6,548 5m vol): REJECT, No setup fits: not Final Stretch, not a migrated runner, not a healthy dip  
-  CA `BukpdtkjwyEZSyVaXZoPyv7qKLKuybkZDt5AFJpipump`
-- 06:29Z Fireball (DIP, $408,548 mcap, $4,387 5m vol): PASS at conviction 3, PASS: Fireball is a 26-copy name field with no catalyst, a 0.7-day-old site that doesn't show this CA, and 5m flow at $4.4k. The bottom-buy gate fails. (V1, V6, V13)  
-  CA `B9wbjDJ4FbHMsZmoXAkJSTAwuePaJUKbySvnK5zApump`
-- 06:29Z BITCOINU (DIP, $885,229 mcap, $7,516 5m vol): REJECT, Dip with fading attention is a falling knife, not a dip (5m at 0.44x the hour's pace, under 0.6x)  
-  CA `ATbAsdCwrhhVg23DRnWpjqx6kx7ivoK5o8ysNmu1pump`
-- 06:29Z FINGART (MIGRATED, $97,843 mcap, $26,972 5m vol): PASS at conviction 2, PASS: chasing and too new. FINGART is 0.3h old, up 47% on 5m, and 6% off a $104k peak it hit minutes ago. That's a launch spike, not a base (V1, V6).  
-  CA `WZVWLfThgm14NN8HRDoyiEeXVvdUDMzGMHUS3VLpump`
-- 06:27Z hacked (no setup, $61,081 mcap, $4 5m vol): REJECT, Hack story ("hack" in the name or ticker): these tend to go down, owner rule  
-  CA `FK7bc3fR8UL8uogN2u8J9yEpEbQJKR7yKsp3G8rvpump`
-- 06:18Z 1 (FINAL_STRETCH, $17,868 mcap, $25,888 5m vol): PASS at conviction 2, PASS: chasing spike, too new. Four minutes old, up 261% on 5m at 12x its hourly pace, top 10 at 19.3%. Blocker "chasing spike" (V1, V6, V13).  
-  CA `F3HApvwPahFZmmAMQ8Vp4yqzFs2bihT9mjm2NwGKpump`
 
 ## What its skips did next (last 48h)
 A skip "ran" if the coin reached the first target (1.5x) from the skip price before a 20% drop, "dumped" if the drop came first. Sampled every 10 min, followed 6h.
-- top 10 over 25%: blocked 56, ran 11, dumped 41, flat 3, open 1 (saving losses: keep it)
+- top 10 over 25%: blocked 55, ran 11, dumped 40, flat 3, open 1 (saving losses: keep it)
   - ran: Legatum up to 2.21x  
     CA `HkPSDYRcw4uqgRzZMDd5sRnMpE4ungR1K8MRNXnBVtQ2`
   - ran: Thankful up to 2.05x  
     CA `E9arxG4RxB7Gxt6U75obonTZzx7vpbc4bUi1dfw3BtUN`
   - ran: MSTR up to 1.69x  
     CA `57sCZ82FwS5Dfs7FN9nshtU5Mkb3w1dqhmPUuCPvpump`
-- too new / sniping: blocked 41, ran 4, dumped 36, flat 0, open 1 (saving losses: keep it)
-  - ran: Pair up to 1.76x  
-    CA `EWCfhnj8YjPEbvQXEtwkxMT54WhBpZBLQDFncRoypump`
-  - ran: SpaceXCoin up to 1.52x  
-    CA `G2XqmSc8vJpLLwaLVXUeNkxsrhVT8vQ3Pje8MqeDpump`
-  - ran: FARM up to 1.65x  
-    CA `2dynAjPBnkqzjUwozgn8pDRkCf7k7CDJkLfcf4rupump`
-- flow below pace: blocked 39, ran 4, dumped 30, flat 3, open 2 (saving losses: keep it)
+- flow below pace: blocked 39, ran 4, dumped 28, flat 3, open 4 (saving losses: keep it)
   - ran: PAIR up to 2.1x  
     CA `32rBxcFjCFnyqZ41CEPM5AL67X1dcw8w83vZt6Kxpump`
   - ran: Hoppy up to 1.76x  
     CA `CFX1gH7CKYwqYXrfDkS2MUxJcEhs8PT63DyRA1chpump`
   - ran: SpaceXCoin up to 1.52x  
     CA `G2XqmSc8vJpLLwaLVXUeNkxsrhVT8vQ3Pje8MqeDpump`
+- too new / sniping: blocked 39, ran 4, dumped 34, flat 0, open 1 (saving losses: keep it)
+  - ran: Pair up to 1.76x  
+    CA `EWCfhnj8YjPEbvQXEtwkxMT54WhBpZBLQDFncRoypump`
+  - ran: SpaceXCoin up to 1.52x  
+    CA `G2XqmSc8vJpLLwaLVXUeNkxsrhVT8vQ3Pje8MqeDpump`
+  - ran: FARM up to 1.65x  
+    CA `2dynAjPBnkqzjUwozgn8pDRkCf7k7CDJkLfcf4rupump`
 - near the high / chasing: blocked 38, ran 8, dumped 28, flat 2, open 0 (saving losses: keep it)
   - ran: PPV up to 1.54x  
     CA `CbGrZ3Q2XxSV2oiZsLkDWW1GFjrqUDAzTH9XwVr1pump`
@@ -134,10 +134,10 @@ A skip "ran" if the coin reached the first target (1.5x) from the skip price bef
     CA `cg3HaDWhAKFfj9aq79TWUBgmxfs4G7byQ7feaxnpump`
   - ran: monky up to 96.37x  
     CA `At5hmwDn4YgPDoic1UN7zMdTtCoiXJsMhnKaoazEpump`
-- falling knife (code): blocked 21, ran 1, dumped 20, flat 0, open 0 (saving losses: keep it)
+- falling knife (code): blocked 22, ran 1, dumped 19, flat 0, open 2 (saving losses: keep it)
   - ran: Split up to 1.54x  
     CA `HAP9FcXubD88SjRHMY1kr5iukpRZgeMAgCBam3Vtpump`
-- falling knife / no higher low: blocked 14, ran 2, dumped 9, flat 1, open 2 (saving losses: keep it)
+- falling knife / no higher low: blocked 15, ran 2, dumped 9, flat 1, open 3 (saving losses: keep it)
   - ran: Maru up to 1.88x  
     CA `FokVFH6mDsazoKbtnUaA2FRMsRbDSwZhNfn17Fdvpump`
   - ran: Hoppy up to 1.76x  
@@ -148,7 +148,7 @@ A skip "ran" if the coin reached the first target (1.5x) from the skip price bef
   - ran: Fug up to 1.58x  
     CA `7mSf4uWLkgdkqBfSoxniv5aZ1sDCXCiquJNcisjXpump`
 - RugCheck danger: blocked 10, ran 0, dumped 9, flat 1, open 0 (saving losses: keep it)
-- other: blocked 9, ran 1, dumped 7, flat 0, open 1 (saving losses: keep it)
+- other: blocked 10, ran 1, dumped 7, flat 0, open 2 (saving losses: keep it)
   - ran: Christmas up to 1.89x  
     CA `5hkBYuFQDpAAqemCiVqXCuU6Ya5dqKhtRobzJsg6pump`
 
@@ -191,13 +191,13 @@ No edge after costs, and I'm fairly sure of that. All 250 settled coins averaged
 The movers show a meta of ultra-fresh pump.fun joke launches (under an hour old) getting volume bursts: WLFI, "1 coin can change your life", Groo, FINGART, WORTHLESS and conjectures. The cold/animal-name theme (WINTER ARC, Snowball, Frogger, Kibo, RICE) is fading: Snowball and WINTER ARC run 41-49% buys, Frogger is dead at a $1.6k cap with zero 5-minute volume, and no mover carries the Trump dinner story. The crawler's Frogger +355% and Trump-driven claims are contradicted by the scan, so I'm weighting the scan. Research only, no entries until the checklist passes: FINGART ($27k 5m on a $98k cap, 60% buys, 0.3h old) and WLFI ($92k 5m, 83% buys), but WLFI shares a ticker with a well-known project, so confirm the right CA and check for copycats first. Stop at -30%, and PASS on anything with a bundle over 3% or top 10 over 15%. The hour-old 1 coin launch at 25k volume on an 18k cap is frenzy until proven otherwise. Paper only, not financial advice.
 
 ## Moving most in its scans, last 30 min (1h volume)
-- WLFI: $210,923 1h vol, $240,234 mcap, +513% 1h  
-  CA `4HEfa8ytHJk75E4qdThEbtNdyGRg2qfQHMo8nu2Cpump`
+- WLFI: $281,378 1h vol, $281,687 mcap, +1% 1h  
+  CA `HmGQsYJyeiWrV6jABUY2Cb3bEmVxwk6LzVxCchsCpump`
+- FINGART: $220,703 1h vol, $109,885 mcap, +259% 1h  
+  CA `WZVWLfThgm14NN8HRDoyiEeXVvdUDMzGMHUS3VLpump`
 - SPSC: $174,454 1h vol, $89,023 mcap, +212% 1h  
   CA `EjdrRG2si1FQ3Bme5g6WSYNHJDrsKUrbGB4Z5xaopump`
-- Air: $59,200 1h vol, $43,122 mcap, +49% 1h  
-  CA `ACP9Kkvh3ShCawmVcEJQ7mr93uNF1uvTP1yvvivApump`
-- JOB: $51,643 1h vol, $2,518,498 mcap, -0% 1h  
-  CA `9Pq7aLAbhDG2tTnS22cm6kuysZVcZpLFE368HWuypump`
-- WORTHLESS: $42,872 1h vol, $4,178 mcap, -8% 1h  
-  CA `8YGc554Ln4vHVMMu6nQU2rNwx43mfPgdWAb8xfk8pump`
+- BITCOINU: $92,506 1h vol, $888,266 mcap, -6% 1h  
+  CA `ATbAsdCwrhhVg23DRnWpjqx6kx7ivoK5o8ysNmu1pump`
+- RICE: $72,472 1h vol, $45,641 mcap, -23% 1h  
+  CA `3rVr2RBzEXXKf1cVvZ6HBvFg2XmBK4iMgZv9q9q4pump`
