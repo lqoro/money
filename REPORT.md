@@ -1,13 +1,13 @@
 # Trencher live report
 
-Updated 2026-11-28T13:04:21Z (paper trading, never real money)
+Updated 2026-11-28T13:19:32Z (paper trading, never real money)
 
 - Equity: $74.23 (-25.8% vs $100 start)
 - Closed trades: 22, 3 wins
 - Fees paid: $14.78 (axiom $2.81, network $9.18, pool $2.66), plus $4.15 lost to slippage
 - New trades: WATCH-ONLY (scans and decides, buys nothing)
-- Brain: subscription, claude-haiku-5-5 for routine calls, claude-opus-5-5 for the daily review; 364 routine calls and 9 plan-limit hits in 48h
-- Watch log: 68 coins being followed, 4463 filed, 0 would-buys (6h follow, sampled every 2 min)
+- Brain: subscription, claude-haiku-5-5 for routine calls, claude-opus-5-5 for the daily review; 361 routine calls and 9 plan-limit hits in 48h
+- Watch log: 62 coins being followed, 4469 filed, 0 would-buys (6h follow, sampled every 2 min)
 
 ## Scorecard (after fees)
 - 22 closed, 3 won (14%), net $-25.79
@@ -73,7 +73,7 @@ Updated 2026-11-28T13:04:21Z (paper trading, never real money)
   CA `H4gHnZ3NCU7Z9XQwGX6YYJNyieGEW8pqwGRUcdSxpump`
 
 ## Last scan
-- 13:04Z: 4 coins, 4 with pairs, 0 passed the market filters, 0 researched
+- 13:18Z: 4 coins, 4 with pairs, 0 passed the market filters, 0 researched
 
 ## Coins it looked at, and why it passed
 - 12:53Z BNB (FINAL_STRETCH, $24,332 mcap, $27,243 5m vol): PASS at conviction 2, PASS: BNB is 8 minutes old, up 267% on 5m and 916% on the hour, with 25 copies of its name. Chasing a spike at the peak. Blockers: "chasing spike" and "too new". (V1, V6)  
@@ -113,22 +113,22 @@ A skip "ran" if the coin reached the first target (1.5x) from the skip price bef
     CA `CFX1gH7CKYwqYXrfDkS2MUxJcEhs8PT63DyRA1chpump`
   - ran: SpaceXCoin up to 1.52x  
     CA `G2XqmSc8vJpLLwaLVXUeNkxsrhVT8vQ3Pje8MqeDpump`
-- too new / sniping: blocked 36, ran 2, dumped 33, flat 0, open 1 (saving losses: keep it)
-  - ran: SpaceXCoin up to 1.52x  
-    CA `G2XqmSc8vJpLLwaLVXUeNkxsrhVT8vQ3Pje8MqeDpump`
-  - ran: FARM up to 1.65x  
-    CA `2dynAjPBnkqzjUwozgn8pDRkCf7k7CDJkLfcf4rupump`
-- near the high / chasing: blocked 35, ran 7, dumped 26, flat 2, open 0 (saving losses: keep it)
+- near the high / chasing: blocked 34, ran 7, dumped 25, flat 2, open 0 (saving losses: keep it)
   - ran: urcoin up to 1.71x  
     CA `25m4Lkct8nsYyqAMeE8rvjM3y5Zrrax46TLqNJjbpump`
   - ran: Meme up to 2.06x  
     CA `CV1NPi8L2PSYMfALBh7GCfUwELZzG3DrLUUjCkeapump`
   - ran: IceBall up to 1.67x  
     CA `6PFm828RKNJqKvjXQz82hhGvGNWFXZcBHNCF4U7spump`
+- too new / sniping: blocked 34, ran 2, dumped 32, flat 0, open 0 (saving losses: keep it)
+  - ran: SpaceXCoin up to 1.52x  
+    CA `G2XqmSc8vJpLLwaLVXUeNkxsrhVT8vQ3Pje8MqeDpump`
+  - ran: FARM up to 1.65x  
+    CA `2dynAjPBnkqzjUwozgn8pDRkCf7k7CDJkLfcf4rupump`
 - falling knife (code): blocked 23, ran 1, dumped 20, flat 0, open 2 (saving losses: keep it)
   - ran: Split up to 1.54x  
     CA `HAP9FcXubD88SjRHMY1kr5iukpRZgeMAgCBam3Vtpump`
-- bundles over the line: blocked 20, ran 3, dumped 13, flat 3, open 1 (saving losses: keep it)
+- bundles over the line: blocked 19, ran 3, dumped 12, flat 3, open 1 (saving losses: keep it)
   - ran: Dragon up to 1.55x  
     CA `cg3HaDWhAKFfj9aq79TWUBgmxfs4G7byQ7feaxnpump`
   - ran: monky up to 96.37x  
@@ -141,8 +141,8 @@ A skip "ran" if the coin reached the first target (1.5x) from the skip price bef
 - other: blocked 12, ran 1, dumped 10, flat 1, open 0 (saving losses: keep it)
   - ran: Christmas up to 1.89x  
     CA `5hkBYuFQDpAAqemCiVqXCuU6Ya5dqKhtRobzJsg6pump`
-- RugCheck danger: blocked 11, ran 0, dumped 8, flat 1, open 2 (saving losses: keep it)
-- dev share over 1%: blocked 9, ran 2, dumped 7, flat 0, open 0 (saving losses: keep it)
+- RugCheck danger: blocked 11, ran 0, dumped 9, flat 1, open 1 (saving losses: keep it)
+- dev share over 1%: blocked 8, ran 2, dumped 6, flat 0, open 0 (saving losses: keep it)
   - ran: bolphante up to 1.7x  
     CA `FVBzzG4ZcAgxSLW1rWjNC9EH9CgEgz1A4puNYexMpump`
   - ran: Fug up to 1.58x  
@@ -187,13 +187,13 @@ Nothing has a positive edge after costs. All 225 settled coins averaged -12.9% n
 The meta in the movers is cat and CJK-named character memes on pump.fun. FlipFlop Cat ($60k cap, $47.8k 5m, 56% buys, +103% in 1h, 0.2h old) is the only mover clearing the $10k 5m bar with buyers, and it is rising. OKOWARE (怒ワレ, $30k cap, 56% buys, $205k 1h volume) and smol cat ($18k cap, 77% buys, $5.9k 5m) share the style, but OKOWARE's scan 5m ($7.6k) is under the bar and it is flat on the hour, so it is watch-only. The crawler's OKOWARE figures ($16.7k cap, $20.7k 5m, +521%) do not match the scan, so I ignored them. Fading: Hachiware (-90% on 21% buys), OUTSIDER (-88%), GPU (-46%), and the animal riffs (Mojave $340 5m, DogWifJob $1k 5m), with no Trump-family coin in the movers despite the headlines. Setup to research: FlipFlop Cat as a MIGRATED probe. Conviction is 4 because it is parabolic and holder, dev and bundle checks are not run yet, so it is a PASS until they come back clean. If they do, it becomes a 5 probe with initials at 2x, a stop at -30%, and an exit if 5m volume drops under $10k (V1, V6).
 
 ## Moving most in its scans, last 30 min (1h volume)
-- Fireball: $71,104 1h vol, $483,618 mcap, +31% 1h  
-  CA `B9wbjDJ4FbHMsZmoXAkJSTAwuePaJUKbySvnK5zApump`
-- BITCOINU: $56,870 1h vol, $1,119,876 mcap, +9% 1h  
-  CA `ATbAsdCwrhhVg23DRnWpjqx6kx7ivoK5o8ysNmu1pump`
-- Hachiware: $39,908 1h vol, $3,468 mcap, -72% 1h  
-  CA `3JfzkFiB95EY8ZvE3TtsKQcQ4Sf2M1SMzZKu1JNwkoqw`
+- FlipFlop: $319,937 1h vol, $1,837 mcap, -94% 1h  
+  CA `8yUDvFWAHXBXSdgcRJZ7cWtFb1DZ1dwaQeYhb7kEpump`
+- OKOWARE: $48,871 1h vol, $12,897 mcap, -66% 1h  
+  CA `ANxUJcRwevw9xcWMQNrwgpzcdeSgXzNq6hLUxGG3pump`
+- smol: $39,794 1h vol, $10,030 mcap, -58% 1h  
+  CA `Crx6zQNJhkN4wJpUsUTnTKyYXEP5ChcSeoULzfQiMz3q`
 - BNB: $34,872 1h vol, $23,476 mcap, +881% 1h  
   CA `3V8dPY9yH4TSHm11fx6Po7XJ8xPzSjcf8W9Q3QhXpump`
-- JOB: $32,070 1h vol, $2,840,461 mcap, -10% 1h  
-  CA `9Pq7aLAbhDG2tTnS22cm6kuysZVcZpLFE368HWuypump`
+- EDITOR: $30,713 1h vol, $6,658 mcap, -82% 1h  
+  CA `57uooyjwYX2kpSGN3QnBLWAwk4KMZYbkp5e8f7i7pump`
