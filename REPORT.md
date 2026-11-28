@@ -1,13 +1,13 @@
 # Trencher live report
 
-Updated 2026-11-28T09:01:06Z (paper trading, never real money)
+Updated 2026-11-28T09:16:20Z (paper trading, never real money)
 
 - Equity: $74.23 (-25.8% vs $100 start)
 - Closed trades: 22, 3 wins
 - Fees paid: $14.78 (axiom $2.81, network $9.18, pool $2.66), plus $4.15 lost to slippage
 - New trades: WATCH-ONLY (scans and decides, buys nothing)
 - Brain: subscription, claude-haiku-5-5 for routine calls, claude-opus-5-5 for the daily review; 373 routine calls and 9 plan-limit hits in 48h
-- Watch log: 74 coins being followed, 4417 filed, 0 would-buys (6h follow, sampled every 2 min)
+- Watch log: 73 coins being followed, 4419 filed, 0 would-buys (6h follow, sampled every 2 min)
 
 ## Scorecard (after fees)
 - 22 closed, 3 won (14%), net $-25.79
@@ -73,9 +73,11 @@ Updated 2026-11-28T09:01:06Z (paper trading, never real money)
   CA `H4gHnZ3NCU7Z9XQwGX6YYJNyieGEW8pqwGRUcdSxpump`
 
 ## Last scan
-- 09:00Z: 5 coins, 5 with pairs, 0 passed the market filters, 0 researched
+- 09:16Z: 4 coins, 4 with pairs, 0 passed the market filters, 0 researched
 
 ## Coins it looked at, and why it passed
+- 09:01Z SPSC (DIP, $108,948 mcap, $6,010 5m vol): PASS at conviction 2, PASS: SPSC is a 59.7% DIP with clean holders, but flow is 0.69x pace, the theme runs at 0.67x, and no printed higher low or catalyst exists. Blocker: "flow below pace" and "no higher low" (V1, V6).  
+  CA `EjdrRG2si1FQ3Bme5g6WSYNHJDrsKUrbGB4Z5xaopump`
 - 08:54Z USD1 (DIP, $35,776 mcap, $2,713 5m vol): REJECT, Dip with fading attention is a falling knife, not a dip (5m at 0.38x the hour's pace, under 0.6x)  
   CA `B29od4bd54VAVAqJFToRKkKJadUGK5v8pkAVb5uvpump`
 - 08:46Z Fireball (DIP, $427,803 mcap, $4,168 5m vol): PASS at conviction 3, PASS. Bottom buy with no catalyst, zero buzz, 26-copy field, and a site that doesn't show this CA. Blocker: no catalyst on a DIP (V1, V6, V13).  
@@ -94,8 +96,6 @@ Updated 2026-11-28T09:01:06Z (paper trading, never real money)
   CA `GggaHk9atb7LYq16S2X6FwjQdZT8D8YQ6vydeosgFGtg`
 - 08:29Z hacked (no setup, $55,618 mcap, $0 5m vol): REJECT, Hack story ("hack" in the name or ticker): these tend to go down, owner rule  
   CA `FK7bc3fR8UL8uogN2u8J9yEpEbQJKR7yKsp3G8rvpump`
-- 08:17Z SPSC (MIGRATED, $164,339 mcap, $15,455 5m vol): PASS at conviction 4, PASS: no higher low printed, and no story behind a bottom buy. Frenzy with a 19-copy field. (V1, V6)  
-  CA `EjdrRG2si1FQ3Bme5g6WSYNHJDrsKUrbGB4Z5xaopump`
 
 ## What its skips did next (last 48h)
 A skip "ran" if the coin reached the first target (1.5x) from the skip price before a 20% drop, "dumped" if the drop came first. Sampled every 10 min, followed 6h.
@@ -127,17 +127,15 @@ A skip "ran" if the coin reached the first target (1.5x) from the skip price bef
     CA `G2XqmSc8vJpLLwaLVXUeNkxsrhVT8vQ3Pje8MqeDpump`
   - ran: FARM up to 1.65x  
     CA `2dynAjPBnkqzjUwozgn8pDRkCf7k7CDJkLfcf4rupump`
-- bundles over the line: blocked 25, ran 3, dumped 18, flat 4, open 0 (saving losses: keep it)
-  - ran: WIENER up to 1.59x  
-    CA `8BDkDfj3ZUvcG9caGzF2XnHfwg7K6fjfKKDvX6SCpump`
+- falling knife (code): blocked 24, ran 1, dumped 21, flat 0, open 2 (saving losses: keep it)
+  - ran: Split up to 1.54x  
+    CA `HAP9FcXubD88SjRHMY1kr5iukpRZgeMAgCBam3Vtpump`
+- bundles over the line: blocked 23, ran 2, dumped 17, flat 4, open 0 (saving losses: keep it)
   - ran: Dragon up to 1.55x  
     CA `cg3HaDWhAKFfj9aq79TWUBgmxfs4G7byQ7feaxnpump`
   - ran: monky up to 96.37x  
     CA `At5hmwDn4YgPDoic1UN7zMdTtCoiXJsMhnKaoazEpump`
-- falling knife (code): blocked 24, ran 1, dumped 20, flat 0, open 3 (saving losses: keep it)
-  - ran: Split up to 1.54x  
-    CA `HAP9FcXubD88SjRHMY1kr5iukpRZgeMAgCBam3Vtpump`
-- falling knife / no higher low: blocked 19, ran 2, dumped 10, flat 2, open 5 (saving losses: keep it)
+- falling knife / no higher low: blocked 19, ran 2, dumped 12, flat 2, open 3 (saving losses: keep it)
   - ran: Maru up to 1.88x  
     CA `FokVFH6mDsazoKbtnUaA2FRMsRbDSwZhNfn17Fdvpump`
   - ran: Hoppy up to 1.76x  
@@ -146,7 +144,7 @@ A skip "ran" if the coin reached the first target (1.5x) from the skip price bef
   - ran: Christmas up to 1.89x  
     CA `5hkBYuFQDpAAqemCiVqXCuU6Ya5dqKhtRobzJsg6pump`
 - RugCheck danger: blocked 10, ran 0, dumped 9, flat 1, open 0 (saving losses: keep it)
-- thin 5m volume: blocked 9, ran 1, dumped 4, flat 2, open 2 (saving losses: keep it)
+- thin 5m volume: blocked 9, ran 1, dumped 5, flat 2, open 1 (saving losses: keep it)
   - ran: Vicewire up to 1.81x  
     CA `viCEWiReoWxwmRRfGmWmpP1FFdB8Jm8PzZChVJ9dvg6`
 
@@ -189,13 +187,13 @@ No edge after costs, and I'm fairly sure of that. All 250 settled coins averaged
 The meta on the scan is fresh pump.fun joke launches under about an hour old, with crude or silly names (Crime Inu, Bot Fight Club, ascend, Småkager the Pygmy Hippo) pulling $8k to $14k of 5-minute volume and 55 to 62% buys. The animal, cold and holiday riffs are fading: Snowball is down 20% in 1h with $1.1k of 5m volume, WINTER ARC has $1.3k, SANTA FACTORY has $65 and Wizard Cat has $141. The Trump dinner headlines are loud, but no coin on the scan carries them, so I'm not calling that the meta. The sub-hour pump.fun names are new-pair territory (V1, V5), a frenzy that dies fast, so I'm watching them, not buying. The one that fits the MIGRATED rules is SPSC ($164k cap, 2.3h old, $15.5k 5m, 56% buys, +41% 1h, on PumpSwap). Research it next: holders, bundles, dev and original-token checks come first, and at best it's a 5/10 probe if they clear. The market isn't quiet, the movers are active, just short-lived.
 
 ## Moving most in its scans, last 30 min (1h volume)
-- USD1: $264,123 1h vol, $67,477 mcap, +48% 1h  
-  CA `8Y24KBnY9gaNWDaxohxtEU1gxESvfwdYeGFuHJKpump`
-- BITCOINU: $158,751 1h vol, $1,234,752 mcap, +34% 1h  
-  CA `ATbAsdCwrhhVg23DRnWpjqx6kx7ivoK5o8ysNmu1pump`
-- WLFI: $140,480 1h vol, $277,358 mcap, +39% 1h  
-  CA `HmGQsYJyeiWrV6jABUY2Cb3bEmVxwk6LzVxCchsCpump`
-- FINGART: $119,966 1h vol, $86,872 mcap, +25% 1h  
-  CA `WZVWLfThgm14NN8HRDoyiEeXVvdUDMzGMHUS3VLpump`
+- SPSC: $104,372 1h vol, $108,948 mcap, -54% 1h  
+  CA `EjdrRG2si1FQ3Bme5g6WSYNHJDrsKUrbGB4Z5xaopump`
 - USD1: $84,950 1h vol, $35,776 mcap, -44% 1h  
   CA `B29od4bd54VAVAqJFToRKkKJadUGK5v8pkAVb5uvpump`
+- ascend: $52,574 1h vol, $3,245 mcap, +24% 1h  
+  CA `A7xhY12G388pXGsBuweS6NkyZyv53ogH1dNfEkCMpump`
+- HPD: $41,342 1h vol, $13,087 mcap, +334% 1h  
+  CA `4cZsB6UgdUBTi13JMusBap9r2qGW1MPrdaSVAYkSpump`
+- BFC: $33,954 1h vol, $3,551 mcap, +32% 1h  
+  CA `FgGYazS7QTmuQYK8M4k2EC1xfsD62aJweKHvcYPBpump`
