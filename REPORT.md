@@ -1,13 +1,13 @@
 # Trencher live report
 
-Updated 2026-11-28T01:27:03Z (paper trading, never real money)
+Updated 2026-11-28T01:42:18Z (paper trading, never real money)
 
 - Equity: $74.23 (-25.8% vs $100 start)
 - Closed trades: 22, 3 wins
 - Fees paid: $14.78 (axiom $2.81, network $9.18, pool $2.66), plus $4.15 lost to slippage
 - New trades: WATCH-ONLY (scans and decides, buys nothing)
 - Brain: subscription, claude-haiku-5-5 for routine calls, claude-opus-5-5 for the daily review; 384 routine calls and 9 plan-limit hits in 48h
-- Watch log: 80 coins being followed, 4315 filed, 0 would-buys (6h follow, sampled every 2 min)
+- Watch log: 83 coins being followed, 4316 filed, 0 would-buys (6h follow, sampled every 2 min)
 
 ## Scorecard (after fees)
 - 22 closed, 3 won (14%), net $-25.79
@@ -73,9 +73,17 @@ Updated 2026-11-28T01:27:03Z (paper trading, never real money)
   CA `H4gHnZ3NCU7Z9XQwGX6YYJNyieGEW8pqwGRUcdSxpump`
 
 ## Last scan
-- 01:25Z: 8 coins, 6 with pairs, 2 passed the market filters, 2 researched
+- 01:42Z: 5 coins, 3 with pairs, 0 passed the market filters, 0 researched
 
 ## Coins it looked at, and why it passed
+- 01:37Z Midcurve (MIGRATED, $52,268 mcap, $28,508 5m vol): PASS at conviction 2, PASS. Chasing a +53% five-minute spike on a 13-minute-old migration, in a nine-copy ticker field, and the team's own site shows a different contract. Blocker: chasing spike. (V1, V3, V6, V13)  
+  CA `14SsX1H9qge5qE3MeQK87hygFkmHBQnHxJEHgXkspump`
+- 01:32Z JOB (MIGRATED, $2,649,333 mcap, $2,192 5m vol): REJECT, Bundles: 1 linked wallet cluster(s) hold 22.5% of supply (>20%) (V17)  
+  CA `9Pq7aLAbhDG2tTnS22cm6kuysZVcZpLFE368HWuypump`
+- 01:32Z PumpMas (DIP, $179,272 mcap, $2,307 5m vol): REJECT, Top 10 hold 26.8% ex-pool (>25%) (V13)  
+  CA `EwUVBpdM5vw1CJHRMSLywzVjyQSJZpy6qboxEPBKpump`
+- 01:31Z Crema (MIGRATED, $71,793 mcap, $64,481 5m vol): PASS at conviction 3, PASS: chasing a 3.2x volume spike on an 11-minute-old copy in a 12-coin field, with an 11.9% bundle cluster and no printed higher low. Blockers: chasing spike, too new, split crowd (V1, V3, V6).  
+  CA `7F5Xamqc5eGTfJZE9EyMiPA5QSNziWua6zL1M1kTpump`
 - 01:26Z chairman (FINAL_STRETCH, $15,282 mcap, $4,909 5m vol): PASS at conviction 2, PASS — chairman is a spike, not a structure: +206% in an hour, a 26-copy ticker field, no socials, no printed higher low, and only $4.9k on the 5m. Blocker "no narrative" (V1, V6, V13).  
   CA `9PY2x8zdYDhbVtBEdT35duYY6EzwFXhyov9R5Uazpump`
 - 01:26Z Vicewire (DIP, $49,888 mcap, $28,609 5m vol): PASS at conviction 2, PASS — 48% off a $96k peak, but no catalyst, no printed higher low, and 5m down 31.5%. Falling knife in a six-copy vamp field (V1, V3, V6).  
@@ -88,39 +96,31 @@ Updated 2026-11-28T01:27:03Z (paper trading, never real money)
   CA `B9wbjDJ4FbHMsZmoXAkJSTAwuePaJUKbySvnK5zApump`
 - 01:08Z POWERBALL (no setup, $12,220 mcap, $2,888 5m vol): REJECT, No setup fits: not Final Stretch, not a migrated runner, not a healthy dip  
   CA `CLcFahnBEHLhpMKhTore2mcMrzqssMRQdT5LGAkGU2sE`
-- 01:01Z Snowball (DIP, $419,287 mcap, $7,947 5m vol): PASS at conviction 3, PASS. Snowball is a 59.8% DIP with no story behind it: no catalyst, no radar buzz, a 2-day-old domain selling a fee-and-buy "holder growth engine" feed. Blocker: "dead story". (V1, V3, V6)  
-  CA `9TKbd3VFaMSXsEAicD9JVQWpWwAoLi4fSgWmZL2cpump`
-- 01:00Z TOGI (MIGRATED, $35,460 mcap, $48,545 5m vol): PASS at conviction 2, PASS: TOGI is a 5-minute-old pump.fun migration, 36% off a peak set 18 minutes ago, with a +19% spike on 12x hourly pace and no printed higher low. Blockers: "too new", "chasing spike", "no higher low", and no catalyst for a bottom buy. (V1, V6)  
-  CA `AYGuBsxYTKUSPKf9vwGqCuGDGVpjj4n2EAgDresBpump`
-- 00:59Z STEADY (MIGRATED, $301,575 mcap, $41,890 5m vol): PASS at conviction 3, PASS: 5m flow at 0.55x the hourly pace, first resistance only 1.16x away, top 10 at 19.9%, generic name with no meta. Pass. (V1, V6)  
-  CA `AvvXpCVph4PtJ5urfhetPkdZYh8o4uW7CawUA2MK8hFT`
-- 00:54Z WINTER (MIGRATED, $91,649 mcap, $2,740 5m vol): REJECT, Bundles: 2 linked wallet cluster(s) hold 100.0% of supply (>20%) (V17)  
-  CA `7dc3gFoyuDCPWjrfZfX99uasJJSceAJx5ucE8bDGpump`
 
 ## What its skips did next (last 48h)
 A skip "ran" if the coin reached the first target (1.5x) from the skip price before a 20% drop, "dumped" if the drop came first. Sampled every 10 min, followed 6h.
-- top 10 over 25%: blocked 53, ran 9, dumped 40, flat 4, open 0 (saving losses: keep it)
+- top 10 over 25%: blocked 52, ran 9, dumped 39, flat 3, open 1 (saving losses: keep it)
   - ran: Legatum up to 2.21x  
     CA `HkPSDYRcw4uqgRzZMDd5sRnMpE4ungR1K8MRNXnBVtQ2`
   - ran: Thankful up to 2.05x  
     CA `E9arxG4RxB7Gxt6U75obonTZzx7vpbc4bUi1dfw3BtUN`
   - ran: MSTR up to 1.69x  
     CA `57sCZ82FwS5Dfs7FN9nshtU5Mkb3w1dqhmPUuCPvpump`
-- flow below pace: blocked 43, ran 4, dumped 32, flat 3, open 4 (saving losses: keep it)
-  - ran: PAIR up to 2.1x  
-    CA `32rBxcFjCFnyqZ41CEPM5AL67X1dcw8w83vZt6Kxpump`
-  - ran: Hoppy up to 1.76x  
-    CA `CFX1gH7CKYwqYXrfDkS2MUxJcEhs8PT63DyRA1chpump`
-  - ran: SpaceXCoin up to 1.52x  
-    CA `G2XqmSc8vJpLLwaLVXUeNkxsrhVT8vQ3Pje8MqeDpump`
-- near the high / chasing: blocked 42, ran 8, dumped 31, flat 3, open 0 (saving losses: keep it)
+- near the high / chasing: blocked 43, ran 8, dumped 31, flat 3, open 1 (saving losses: keep it)
   - ran: NETHER up to 1.8x  
     CA `GkL4cJLAL3354wLgS6mZJKKUBVzvUY1FUN47zZNgGWEq`
   - ran: PPV up to 1.54x  
     CA `CbGrZ3Q2XxSV2oiZsLkDWW1GFjrqUDAzTH9XwVr1pump`
   - ran: urcoin up to 1.71x  
     CA `25m4Lkct8nsYyqAMeE8rvjM3y5Zrrax46TLqNJjbpump`
-- too new / sniping: blocked 41, ran 5, dumped 36, flat 0, open 0 (saving losses: keep it)
+- flow below pace: blocked 42, ran 4, dumped 33, flat 2, open 3 (saving losses: keep it)
+  - ran: PAIR up to 2.1x  
+    CA `32rBxcFjCFnyqZ41CEPM5AL67X1dcw8w83vZt6Kxpump`
+  - ran: Hoppy up to 1.76x  
+    CA `CFX1gH7CKYwqYXrfDkS2MUxJcEhs8PT63DyRA1chpump`
+  - ran: SpaceXCoin up to 1.52x  
+    CA `G2XqmSc8vJpLLwaLVXUeNkxsrhVT8vQ3Pje8MqeDpump`
+- too new / sniping: blocked 42, ran 5, dumped 37, flat 0, open 0 (saving losses: keep it)
   - ran: STUDS up to 2.35x  
     CA `34J9VrBeJ2dWActyAMpoNBKvoxZCqQz3SivmnnmSTUds`
   - ran: 2 up to 1.69x  
@@ -137,7 +137,7 @@ A skip "ran" if the coin reached the first target (1.5x) from the skip price bef
 - falling knife (code): blocked 20, ran 1, dumped 19, flat 0, open 0 (saving losses: keep it)
   - ran: Split up to 1.54x  
     CA `HAP9FcXubD88SjRHMY1kr5iukpRZgeMAgCBam3Vtpump`
-- falling knife / no higher low: blocked 13, ran 3, dumped 7, flat 1, open 2 (saving losses: keep it)
+- falling knife / no higher low: blocked 13, ran 3, dumped 8, flat 1, open 1 (saving losses: keep it)
   - ran: Zero up to 2.07x  
     CA `DTSkmo3sCCKLCh91dJLiWCpwcKtK3yDBZMqZGSV1pump`
   - ran: Maru up to 1.88x  
@@ -192,16 +192,16 @@ No edge after costs, and I'm fairly sure of that. All 250 settled coins averaged
 - [2026-11-02 20:25] I expected Slingoor, a clean MIGRATED leader with $25k of 5m flow at pace and a 0.77 buy share, to retest its $408k high from $304k. It never went green (0.98x peak) and hit the -20% stop in 2 minutes, a -$2.86 probe. My own thesis admitted there was no printed higher low after a peak only 6 minutes old, so this confirms the money-shape rule: buy share and flow are not structure (V1, V6). Next time a MIGRATED pullback with no higher low above the hourly low is a PASS with blocker "no higher low", not a probe. This is one loss, so it adds no new ban beyond the rule I already have.
 
 ## Meta right now
-Meta, from scan_movers itself: holiday/Christmas tickers are the one theme pulling fresh buyers (RIZZMAS3 +540% 1h with $9.2k 5m and 65% buys, SANTA at $10k mcap with $1.1k 5m, WINTER ARC at $90k with $4.8k 5m), while dog/animal and joke names are dying (Gemma -2.75% with $62 5m, bob says -74% with 0% buys, Compute -48% with $26 5m). The crawler's Hyperball and Retarded Bitcoin, Jeff, DRIFT, PumpMas and Cartoon Money figures don't appear in this array, and its Spectre numbers are wrong (SPEC is $3k mcap, $25 5m, -48% 1h), so I'm treating those claims as unverified and dropping them. The biggest flow is STEADY (Raydium, 12 min old, $147k mcap, $106k 5m, 59% buys, +620% 1h), a generic name with no meta fit, so it's research only, and only on a pullback that holds with 5m volume still up (V1, V6). RIZZMAS3 is the holiday setup to research: its 5m volume is $9.2k, just under the $10k bar, so it has to clear that, and buy on a dip, not into +540%. The tape is not quiet, but Fireball ($733k mcap, 86% buys) and SANTA fail the 5m bar right now, and all of this is paper only and not financial advice.
+Meta from scan_movers, not the news. The most repeated theme is a "-ball" naming cluster: Memeball and POWERBALL are rising, while Fireball, Snowball and Hyperball are fading (Hyperball -58%). Fresh pump-style launches under an hour old (Crema, TOGI, Vicewire) are pulling the most 5m volume relative to market cap. Dog/animal and joke names are fading (JOB flat, Sol -61%). The crawler's holiday tickers (RIZZMAS3, SANTA, WINTER ARC) and STEADY are not in this array, so the holiday theme is unverified, and its Fireball figures (86% buys, $733k) don't match the array ($620k, 69%). Setups to research, not buy yet: Crema ($72k mcap, $64k 5m, 69% buys, about 12 min old) and TOGI ($36k mcap, $41.7k 5m, 54% buys, about 6 min old) clear the $10k 5m bar and the migrated filter, but at that age the holder and bundle checks decide everything. Probe-size at most (conviction 5), stop below the pullback low, and PASS if top 10 is above 15% or any bundle is above 3%. Memeball ($6k 5m) and Fireball ($5.7k 5m) fail the volume bar. Paper only, not financial advice.
 
 ## Moving most in its scans, last 30 min (1h volume)
-- STEADY: $916,809 1h vol, $310,373 mcap, +1418% 1h  
-  CA `AvvXpCVph4PtJ5urfhetPkdZYh8o4uW7CawUA2MK8hFT`
 - Memeball: $495,399 1h vol, $667,090 mcap, +1936% 1h  
   CA `9G9Ssh55SZEoniFjMrMefug9fBy67bUvHzWAxb5Ypump`
 - Vicewire: $261,426 1h vol, $49,888 mcap, +59% 1h  
   CA `viCEWiReoWxwmRRfGmWmpP1FFdB8Jm8PzZChVJ9dvg6`
+- Crema: $242,895 1h vol, $71,793 mcap, +137% 1h  
+  CA `7F5Xamqc5eGTfJZE9EyMiPA5QSNziWua6zL1M1kTpump`
 - ZERO: $198,788 1h vol, $2,134,456 mcap, +80% 1h  
   CA `3WsqUNArNSh5pYt6eTKbQ7uUJDgkPtFEA2XFvdEWpump`
-- POWERBALL: $104,697 1h vol, $15,228 mcap, +616% 1h  
-  CA `CLcFahnBEHLhpMKhTore2mcMrzqssMRQdT5LGAkGU2sE`
+- Fsjal: $89,869 1h vol, $2,216 mcap, -9% 1h  
+  CA `28GEp4GcNVHPtwZbkhNWKaw5MqW9QsDC5n5m7H79pump`
