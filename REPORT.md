@@ -1,13 +1,13 @@
 # Trencher live report
 
-Updated 2026-11-28T15:20:23Z (paper trading, never real money)
+Updated 2026-11-28T15:35:36Z (paper trading, never real money)
 
 - Equity: $74.23 (-25.8% vs $100 start)
 - Closed trades: 22, 3 wins
 - Fees paid: $14.78 (axiom $2.81, network $9.18, pool $2.66), plus $4.15 lost to slippage
 - New trades: WATCH-ONLY (scans and decides, buys nothing)
-- Brain: subscription, claude-haiku-5-5 for routine calls, claude-opus-5-5 for the daily review; 363 routine calls and 9 plan-limit hits in 48h
-- Watch log: 67 coins being followed, 4492 filed, 0 would-buys (6h follow, sampled every 2 min)
+- Brain: subscription, claude-haiku-5-5 for routine calls, claude-opus-5-5 for the daily review; 360 routine calls and 9 plan-limit hits in 48h
+- Watch log: 63 coins being followed, 4499 filed, 0 would-buys (6h follow, sampled every 2 min)
 
 ## Scorecard (after fees)
 - 22 closed, 3 won (14%), net $-25.79
@@ -73,9 +73,17 @@ Updated 2026-11-28T15:20:23Z (paper trading, never real money)
   CA `H4gHnZ3NCU7Z9XQwGX6YYJNyieGEW8pqwGRUcdSxpump`
 
 ## Last scan
-- 15:20Z: 2 coins, 2 with pairs, 0 passed the market filters, 0 researched
+- 15:34Z: 5 coins, 5 with pairs, 0 passed the market filters, 0 researched
 
 ## Coins it looked at, and why it passed
+- 15:33Z hacked (DIP, $39,857 mcap, $271 5m vol): REJECT, Hack story ("hack" in the name or ticker): these tend to go down, owner rule  
+  CA `FK7bc3fR8UL8uogN2u8J9yEpEbQJKR7yKsp3G8rvpump`
+- 15:33Z MARS (MIGRATED, $170,925 mcap, $4,540 5m vol): PASS at conviction 3, PASS: chasing. MARS is 3.8% off its high, up 92% in 1h, and it's one of 16 same-ticker copies with no catalyst. Blocker: "chasing" (V1, V6).  
+  CA `Cfmo6asAsZFx6GGQvAt4Ajxn8hN6vgWGpaSrjQKRpump`
+- 15:28Z Artcoin (MIGRATED, $162,906 mcap, $30,515 5m vol): PASS at conviction 3, PASS: Artcoin's 5m flow is 0.58x its hourly pace, it's under an hour old and still bleeding off a $220k spike, and it's one of 19 same-ticker copies with no catalyst for a bottom buy. (V1, V3, V6)  
+  CA `HnRPNwcYZFhsuRg5ChqdBEUR7DLx1XrGXdYkuSBqpump`
+- 15:23Z GROKSIE (MIGRATED, $56,553 mcap, $7,740 5m vol): REJECT, Top 10 hold 27.5% ex-pool (>25%) (V13)  
+  CA `5jjJWZfTTaZtG74zSpiEZbMBHNM2jieHEXM2UZvapump`
 - 15:19Z John (MIGRATED, $35,016 mcap, $2,362 5m vol): PASS at conviction 3, PASS: flow at 0.14x pace, no higher low, 15-copy vamp field, no catalyst. Blocker: flow below pace. (V1, V6)  
   CA `EvN4RDyoqUTpCcrvz5QTAdHVqypgxV4MCR77Bfnjpump`
 - 15:15Z Zhaki (DIP, $151,572 mcap, $2,449 5m vol): REJECT, Dev holds 4.2% (>1%) (V13, V17)  
@@ -88,37 +96,29 @@ Updated 2026-11-28T15:20:23Z (paper trading, never real money)
   CA `PgFtGGquvnv2zEkjG2N2QPvBTBrafuExGYEqahRpump`
 - 15:00Z JOB (MIGRATED, $2,880,337 mcap, $4,029 5m vol): REJECT, Bundles: 1 linked wallet cluster(s) hold 22.5% of supply (>20%) (V17)  
   CA `9Pq7aLAbhDG2tTnS22cm6kuysZVcZpLFE368HWuypump`
-- 15:00Z 2027 (MIGRATED, $32,541 mcap, $14,285 5m vol): PASS at conviction 2, PASS — 23-copy "2027" vamp field, and this is not the leader by 5m volume. 15 minutes old and still bleeding off its bond spike. Split crowd (V1, V3).  
-  CA `2rNXHv3NmzbvD3TSixKtSgY47yDNUGXA5wnvdY6jpump`
-- 14:53Z Fireball (MIGRATED, $328,085 mcap, $3,294 5m vol): PASS at conviction 2, PASS: Fireball is a 26-copy ticker crowd with a dead theme (0.43x pace), 5m flow at $3.3k, and a website on a 1-day-old domain that doesn't show this CA. Blocker: no catalyst for a bottom buy (V1, V3, V13).  
-  CA `B9wbjDJ4FbHMsZmoXAkJSTAwuePaJUKbySvnK5zApump`
-- 14:53Z BITCOINU (DIP, $972,874 mcap, $4,379 5m vol): PASS at conviction 3, PASS: BITCOINU is a 19-copy "bitcoin inu" field with no catalyst, the theme at 0.73x pace, no printed higher low, and 5m flow of $4.4k under the $10k bar. Blocker: "no catalyst" (V1, V13).  
-  CA `ATbAsdCwrhhVg23DRnWpjqx6kx7ivoK5o8ysNmu1pump`
-- 14:46Z Mona (MIGRATED, $62,549 mcap, $30,276 5m vol): PASS at conviction 3, PASS: Mona Lisa is a vamp, not the leader. MONA owns the lisa/mona theme volume (24 copies, 5.75x pace), and this one is 39% off a 15-minute-old peak with no printed higher low. Blocker: split crowd (V1, V3).  
-  CA `pCH6bfSwqFimDVtnYe59otToqHP1TTyhWwzfC4pYMRa`
 
 ## What its skips did next (last 48h)
 A skip "ran" if the coin reached the first target (1.5x) from the skip price before a 20% drop, "dumped" if the drop came first. Sampled every 10 min, followed 6h.
-- top 10 over 25%: blocked 48, ran 10, dumped 33, flat 2, open 3 (saving losses: keep it)
+- top 10 over 25%: blocked 48, ran 10, dumped 33, flat 3, open 2 (saving losses: keep it)
   - ran: Thankful up to 2.05x  
     CA `E9arxG4RxB7Gxt6U75obonTZzx7vpbc4bUi1dfw3BtUN`
   - ran: MSTR up to 1.69x  
     CA `57sCZ82FwS5Dfs7FN9nshtU5Mkb3w1dqhmPUuCPvpump`
   - ran: Kuro up to 2.05x  
     CA `7sxuap7Q4uoAJFBW3ensq6QTa2KwgGosfFwoeXtJpump`
-- flow below pace: blocked 38, ran 4, dumped 26, flat 4, open 4 (saving losses: keep it)
+- flow below pace: blocked 38, ran 4, dumped 25, flat 4, open 5 (saving losses: keep it)
   - ran: Hoppy up to 1.76x  
     CA `CFX1gH7CKYwqYXrfDkS2MUxJcEhs8PT63DyRA1chpump`
   - ran: SpaceXCoin up to 1.52x  
     CA `G2XqmSc8vJpLLwaLVXUeNkxsrhVT8vQ3Pje8MqeDpump`
   - ran: DIHBALL up to 1.78x  
     CA `99CQuNiF6WN44xyKqPP9N41x5R9Uu8MkTM9CK3Rzpump`
-- too new / sniping: blocked 37, ran 2, dumped 34, flat 0, open 1 (saving losses: keep it)
+- too new / sniping: blocked 36, ran 2, dumped 33, flat 0, open 1 (saving losses: keep it)
   - ran: SpaceXCoin up to 1.52x  
     CA `G2XqmSc8vJpLLwaLVXUeNkxsrhVT8vQ3Pje8MqeDpump`
   - ran: FARM up to 1.65x  
     CA `2dynAjPBnkqzjUwozgn8pDRkCf7k7CDJkLfcf4rupump`
-- near the high / chasing: blocked 34, ran 7, dumped 23, flat 2, open 2 (saving losses: keep it)
+- near the high / chasing: blocked 35, ran 7, dumped 23, flat 2, open 3 (saving losses: keep it)
   - ran: urcoin up to 1.71x  
     CA `25m4Lkct8nsYyqAMeE8rvjM3y5Zrrax46TLqNJjbpump`
   - ran: Meme up to 2.06x  
@@ -195,13 +195,13 @@ Nothing has a positive edge after costs. All 225 settled coins averaged -12.9% n
 The trenches are trading fresh pump.fun/pumpswap launches, not the Trump news: John Stockman (+258% 1h, $33.8k 5m, 59% buys, 48 min old), Artcoin ($50.6k cap, $60.8k 5m, 58% buys, 12 min old) and Groksie ($10.4k 5m, 59% buys) are all under an hour old and pumping on real buyer share. Animal mascots are the second theme: Frankenhamster is up 475% in 1h on $17.3k 5m, while smol cat and Baboon Smirk are fading. Joke and slogan tickers are mostly fading (Bagwork -78% on 10% buys, Angryware with zero buys), and no Trump coin is in the movers, so that story is fading. The crawler's per-coin figures for hold, BNB, EDITOR and FlipFlop Cat don't match scan_movers (Bagwork shows a $4.2k cap, not $16k), so I'm discarding them. Setups to research: Artcoin as a MIGRATED probe (clears the $30k cap and $10k 5m bars, but 5m volume above its cap means bot or wash risk). Conviction 4, so it's a PASS until holder, dev and bundle checks come back clean; then a 5 probe with initials at 2x, stop at -30%, out if 5m volume drops under $10k. John Stockman only on a pullback that holds above $10k 5m volume, since +258% in an hour is a chase.
 
 ## Moving most in its scans, last 30 min (1h volume)
+- Artcoin: $628,917 1h vol, $180,595 mcap, +531% 1h  
+  CA `HnRPNwcYZFhsuRg5ChqdBEUR7DLx1XrGXdYkuSBqpump`
 - Bedlington: $585,968 1h vol, $467,464 mcap, +334% 1h  
   CA `6sZYmvbTzXyLe7jr2om3Vmo6UPryLmQUko1Hgj89pump`
+- Mona: $352,218 1h vol, $12,693 mcap, -71% 1h  
+  CA `pCH6bfSwqFimDVtnYe59otToqHP1TTyhWwzfC4pYMRa`
 - nothing: $279,519 1h vol, $115,259 mcap, +79% 1h  
   CA `q9VM1LRTCB7P7TNLRKyZJUPtdoH3e9FRuVFyY9Xpump`
 - John: $206,687 1h vol, $37,705 mcap, -50% 1h  
   CA `EvN4RDyoqUTpCcrvz5QTAdHVqypgxV4MCR77Bfnjpump`
-- BRUH: $169,926 1h vol, $8,225,053 mcap, +13% 1h  
-  CA `PgFtGGquvnv2zEkjG2N2QPvBTBrafuExGYEqahRpump`
-- Planimal: $70,773 1h vol, $4,328 mcap, +52% 1h  
-  CA `883W8K13jVaVyxX2pk6G1G9fsjZJVUCGntKENpkhxBuw`
