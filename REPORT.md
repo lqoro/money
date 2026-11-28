@@ -1,13 +1,13 @@
 # Trencher live report
 
-Updated 2026-11-28T04:43:21Z (paper trading, never real money)
+Updated 2026-11-28T04:58:28Z (paper trading, never real money)
 
 - Equity: $74.23 (-25.8% vs $100 start)
 - Closed trades: 22, 3 wins
 - Fees paid: $14.78 (axiom $2.81, network $9.18, pool $2.66), plus $4.15 lost to slippage
 - New trades: WATCH-ONLY (scans and decides, buys nothing)
-- Brain: subscription, claude-haiku-5-5 for routine calls, claude-opus-5-5 for the daily review; 373 routine calls and 9 plan-limit hits in 48h
-- Watch log: 84 coins being followed, 4357 filed, 0 would-buys (6h follow, sampled every 2 min)
+- Brain: subscription, claude-haiku-5-5 for routine calls, claude-opus-5-5 for the daily review; 371 routine calls and 9 plan-limit hits in 48h
+- Watch log: 78 coins being followed, 4366 filed, 0 would-buys (6h follow, sampled every 2 min)
 
 ## Scorecard (after fees)
 - 22 closed, 3 won (14%), net $-25.79
@@ -73,9 +73,15 @@ Updated 2026-11-28T04:43:21Z (paper trading, never real money)
   CA `H4gHnZ3NCU7Z9XQwGX6YYJNyieGEW8pqwGRUcdSxpump`
 
 ## Last scan
-- 04:42Z: 6 coins, 6 with pairs, 2 passed the market filters, 2 researched
+- 04:57Z: 6 coins, 6 with pairs, 2 passed the market filters, 2 researched
 
 ## Coins it looked at, and why it passed
+- 04:57Z Fireball (DIP, $409,499 mcap, $3,414 5m vol): PASS at conviction 3, PASS: Fireball is a 66%-off DIP with clean holders, but no catalyst, the theme is fading at 0.91x pace, and the site is 0.6 days old without this CA. Blocker: "no catalyst" on a bottom buy (V1, V13).  
+  CA `B9wbjDJ4FbHMsZmoXAkJSTAwuePaJUKbySvnK5zApump`
+- 04:57Z BITCOINU (MIGRATED, $700,102 mcap, $72,431 5m vol): REJECT, Top 10 hold 49.2% ex-pool (>25%) (V13)  
+  CA `ATbAsdCwrhhVg23DRnWpjqx6kx7ivoK5o8ysNmu1pump`
+- 04:43Z MEMES (FINAL_STRETCH, $16,168 mcap, $29,265 5m vol): REJECT, Top 10 hold 26.8% ex-pool (>25%) (V13)  
+  CA `HpN63T13XBcp2xmM6yRkGPB5HMwxtXTghCQjooS8pump`
 - 04:43Z JOB (MIGRATED, $2,635,823 mcap, $4,570 5m vol): REJECT, Bundles: 1 linked wallet cluster(s) hold 22.5% of supply (>20%) (V17)  
   CA `9Pq7aLAbhDG2tTnS22cm6kuysZVcZpLFE368HWuypump`
 - 04:43Z RICE (MIGRATED, $134,520 mcap, $27,412 5m vol): PASS at conviction 3, PASS: flow at 0.69x the hourly pace and the first resistance (the $167k peak) is only 1.24x away. Blockers "flow below pace" and "target too close" (V1, V6). Another 12-copy pump.fun joke-name pump.  
@@ -90,36 +96,30 @@ Updated 2026-11-28T04:43:21Z (paper trading, never real money)
   CA `GGatn9GfrvRgFMFZy9ZSaTsKmpwnzCTogmocLHCjpump`
 - 04:28Z MANDY (MIGRATED, $36,815 mcap, $1,932 5m vol): REJECT, 5m volume $1,932 is dead (<$2,000) (V1)  
   CA `4HdH4EKBKCVaPD9f4TxdGhcWyhm259qKa7JHSGhMpump`
-- 04:27Z hacked (no setup, $64,118 mcap, $115 5m vol): REJECT, Hack story ("hack" in the name or ticker): these tend to go down, owner rule  
-  CA `FK7bc3fR8UL8uogN2u8J9yEpEbQJKR7yKsp3G8rvpump`
-- 04:18Z JEFFLE (MIGRATED, $55,712 mcap, $4,635 5m vol): REJECT, Top 10 hold 27.0% ex-pool (>25%) (V13)  
-  CA `BRRktKPa8m4dMrQ1fT6fLJABQjYUqLaEhPuMHxUvpump`
-- 04:16Z WINTER (MIGRATED, $96,948 mcap, $2,499 5m vol): REJECT, Bundles: 2 linked wallet cluster(s) hold 100.0% of supply (>20%) (V17)  
-  CA `7dc3gFoyuDCPWjrfZfX99uasJJSceAJx5ucE8bDGpump`
 
 ## What its skips did next (last 48h)
 A skip "ran" if the coin reached the first target (1.5x) from the skip price before a 20% drop, "dumped" if the drop came first. Sampled every 10 min, followed 6h.
-- top 10 over 25%: blocked 54, ran 9, dumped 38, flat 3, open 4 (saving losses: keep it)
+- top 10 over 25%: blocked 56, ran 10, dumped 41, flat 3, open 2 (saving losses: keep it)
   - ran: Legatum up to 2.21x  
     CA `HkPSDYRcw4uqgRzZMDd5sRnMpE4ungR1K8MRNXnBVtQ2`
   - ran: Thankful up to 2.05x  
     CA `E9arxG4RxB7Gxt6U75obonTZzx7vpbc4bUi1dfw3BtUN`
   - ran: MSTR up to 1.69x  
     CA `57sCZ82FwS5Dfs7FN9nshtU5Mkb3w1dqhmPUuCPvpump`
-- flow below pace: blocked 41, ran 4, dumped 31, flat 2, open 4 (saving losses: keep it)
-  - ran: PAIR up to 2.1x  
-    CA `32rBxcFjCFnyqZ41CEPM5AL67X1dcw8w83vZt6Kxpump`
-  - ran: Hoppy up to 1.76x  
-    CA `CFX1gH7CKYwqYXrfDkS2MUxJcEhs8PT63DyRA1chpump`
-  - ran: SpaceXCoin up to 1.52x  
-    CA `G2XqmSc8vJpLLwaLVXUeNkxsrhVT8vQ3Pje8MqeDpump`
-- near the high / chasing: blocked 40, ran 8, dumped 28, flat 3, open 1 (saving losses: keep it)
+- near the high / chasing: blocked 40, ran 8, dumped 29, flat 3, open 0 (saving losses: keep it)
   - ran: PPV up to 1.54x  
     CA `CbGrZ3Q2XxSV2oiZsLkDWW1GFjrqUDAzTH9XwVr1pump`
   - ran: urcoin up to 1.71x  
     CA `25m4Lkct8nsYyqAMeE8rvjM3y5Zrrax46TLqNJjbpump`
   - ran: Meme up to 2.06x  
     CA `CV1NPi8L2PSYMfALBh7GCfUwELZzG3DrLUUjCkeapump`
+- flow below pace: blocked 39, ran 4, dumped 30, flat 2, open 3 (saving losses: keep it)
+  - ran: PAIR up to 2.1x  
+    CA `32rBxcFjCFnyqZ41CEPM5AL67X1dcw8w83vZt6Kxpump`
+  - ran: Hoppy up to 1.76x  
+    CA `CFX1gH7CKYwqYXrfDkS2MUxJcEhs8PT63DyRA1chpump`
+  - ran: SpaceXCoin up to 1.52x  
+    CA `G2XqmSc8vJpLLwaLVXUeNkxsrhVT8vQ3Pje8MqeDpump`
 - too new / sniping: blocked 36, ran 3, dumped 33, flat 0, open 0 (saving losses: keep it)
   - ran: Pair up to 1.76x  
     CA `EWCfhnj8YjPEbvQXEtwkxMT54WhBpZBLQDFncRoypump`
@@ -137,18 +137,18 @@ A skip "ran" if the coin reached the first target (1.5x) from the skip price bef
 - falling knife (code): blocked 22, ran 1, dumped 21, flat 0, open 0 (saving losses: keep it)
   - ran: Split up to 1.54x  
     CA `HAP9FcXubD88SjRHMY1kr5iukpRZgeMAgCBam3Vtpump`
-- falling knife / no higher low: blocked 13, ran 2, dumped 8, flat 1, open 2 (saving losses: keep it)
+- falling knife / no higher low: blocked 13, ran 2, dumped 9, flat 1, open 1 (saving losses: keep it)
   - ran: Maru up to 1.88x  
     CA `FokVFH6mDsazoKbtnUaA2FRMsRbDSwZhNfn17Fdvpump`
   - ran: Hoppy up to 1.76x  
     CA `CFX1gH7CKYwqYXrfDkS2MUxJcEhs8PT63DyRA1chpump`
-- dev share over 1%: blocked 11, ran 2, dumped 8, flat 1, open 0 (saving losses: keep it)
+- dev share over 1%: blocked 10, ran 2, dumped 7, flat 1, open 0 (saving losses: keep it)
   - ran: bolphante up to 1.7x  
     CA `FVBzzG4ZcAgxSLW1rWjNC9EH9CgEgz1A4puNYexMpump`
   - ran: Fug up to 1.58x  
     CA `7mSf4uWLkgdkqBfSoxniv5aZ1sDCXCiquJNcisjXpump`
 - RugCheck danger: blocked 10, ran 0, dumped 9, flat 1, open 0 (saving losses: keep it)
-- thin 5m volume: blocked 8, ran 1, dumped 3, flat 2, open 2 (saving losses: keep it)
+- thin 5m volume: blocked 8, ran 1, dumped 4, flat 2, open 1 (saving losses: keep it)
   - ran: Vicewire up to 1.81x  
     CA `viCEWiReoWxwmRRfGmWmpP1FFdB8Jm8PzZChVJ9dvg6`
 
@@ -193,11 +193,11 @@ Meta: the trenches are trading sub-two-hour pump.fun/PumpSwap launches with joke
 ## Moving most in its scans, last 30 min (1h volume)
 - RICE: $484,854 1h vol, $123,551 mcap, +234% 1h  
   CA `3rVr2RBzEXXKf1cVvZ6HBvFg2XmBK4iMgZv9q9q4pump`
-- BTCBALLS: $429,531 1h vol, $554,399 mcap, +1441% 1h  
-  CA `APmirEVL5wkbYVZ88TDdr9cwJ6WfRCWuzm4wQWyzpump`
 - PRISMEICE: $398,012 1h vol, $94,029 mcap, +35% 1h  
   CA `8N6WF11pLUUeUu8b1HbnDJHTzyL4bbr8YRdPS6Znpump`
-- DCTY: $137,362 1h vol, $9,531 mcap, -83% 1h  
-  CA `FKzLbmXpyk3qxY4j3CbxqwjdtbCWb1HZZttok9AD5dio`
-- JEFFLE: $127,684 1h vol, $56,078 mcap, +27% 1h  
-  CA `BRRktKPa8m4dMrQ1fT6fLJABQjYUqLaEhPuMHxUvpump`
+- BITCOINU: $199,713 1h vol, $700,102 mcap, +1852% 1h  
+  CA `ATbAsdCwrhhVg23DRnWpjqx6kx7ivoK5o8ysNmu1pump`
+- Frogger: $124,399 1h vol, $67,606 mcap, +126% 1h  
+  CA `GGatn9GfrvRgFMFZy9ZSaTsKmpwnzCTogmocLHCjpump`
+- DAW: $57,967 1h vol, $51,194 mcap, +117% 1h  
+  CA `6NZANPwagg8qLrfi2mk9HyCXWWAVnhsv4CiqWuHPpump`
