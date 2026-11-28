@@ -1,13 +1,13 @@
 # Trencher live report
 
-Updated 2026-11-28T11:18:21Z (paper trading, never real money)
+Updated 2026-11-28T11:33:34Z (paper trading, never real money)
 
 - Equity: $74.23 (-25.8% vs $100 start)
 - Closed trades: 22, 3 wins
 - Fees paid: $14.78 (axiom $2.81, network $9.18, pool $2.66), plus $4.15 lost to slippage
 - New trades: WATCH-ONLY (scans and decides, buys nothing)
-- Brain: subscription, claude-haiku-5-5 for routine calls, claude-opus-5-5 for the daily review; 375 routine calls and 9 plan-limit hits in 48h
-- Watch log: 73 coins being followed, 4445 filed, 0 would-buys (6h follow, sampled every 2 min)
+- Brain: subscription, claude-haiku-5-5 for routine calls, claude-opus-5-5 for the daily review; 371 routine calls and 9 plan-limit hits in 48h
+- Watch log: 73 coins being followed, 4447 filed, 0 would-buys (6h follow, sampled every 2 min)
 
 ## Scorecard (after fees)
 - 22 closed, 3 won (14%), net $-25.79
@@ -73,9 +73,15 @@ Updated 2026-11-28T11:18:21Z (paper trading, never real money)
   CA `H4gHnZ3NCU7Z9XQwGX6YYJNyieGEW8pqwGRUcdSxpump`
 
 ## Last scan
-- 11:17Z: 5 coins, 5 with pairs, 0 passed the market filters, 0 researched
+- 11:33Z: 6 coins, 6 with pairs, 0 passed the market filters, 0 researched
 
 ## Coins it looked at, and why it passed
+- 11:30Z hacked (no setup, $50,158 mcap, $48 5m vol): REJECT, Hack story ("hack" in the name or ticker): these tend to go down, owner rule  
+  CA `FK7bc3fR8UL8uogN2u8J9yEpEbQJKR7yKsp3G8rvpump`
+- 11:19Z SPSC (MIGRATED, $187,714 mcap, $2,960 5m vol): PASS at conviction 3, PASS: SPSC is a 30% pullback bottom-buy on a joke-meta coin nobody is calling, with no catalyst and no printed higher low near price. Blocker: "no catalyst" (V1, V6, V13).  
+  CA `EjdrRG2si1FQ3Bme5g6WSYNHJDrsKUrbGB4Z5xaopump`
+- 11:18Z CBUCKS (MIGRATED, $6,025,451 mcap, $3,828 5m vol): REJECT, Top 10 hold 25.4% ex-pool (>25%) (V13)  
+  CA `DtcicPCKTKeAh7TDEzTym3hXeoHAoMiBdYJhMYxZpump`
 - 11:12Z WLFI (MIGRATED, $278,976 mcap, $4,827 5m vol): PASS at conviction 3, PASS: flow below pace and a bottom-buy with a fading Trump-brand narrative. Vamp field, bundle cluster at 10.5%. Skip. (V1, V6, V13)  
   CA `HmGQsYJyeiWrV6jABUY2Cb3bEmVxwk6LzVxCchsCpump`
 - 11:10Z JOB (MIGRATED, $3,035,487 mcap, $4,951 5m vol): REJECT, Bundles: 1 linked wallet cluster(s) hold 22.5% of supply (>20%) (V17)  
@@ -90,16 +96,10 @@ Updated 2026-11-28T11:18:21Z (paper trading, never real money)
   CA `9TKbd3VFaMSXsEAicD9JVQWpWwAoLi4fSgWmZL2cpump`
 - 10:43Z COMM (DIP, $36,365 mcap, $2,332 5m vol): PASS at conviction 2, PASS, dead story: COMM is a 2-hour-old commodity-themed copy with $2.3k 5m flow, a saw-tooth chart and a theme at 0.1x its hourly pace. Blocker: "dead story" (V1, V6, V13).  
   CA `8i2ssMZBaS3HShu5hoDEV4tVLf5RGXeNJnK3LNTHTH9e`
-- 10:34Z cheng (FINAL_STRETCH, $15,830 mcap, $2,793 5m vol): PASS at conviction 3, PASS - $2.8k 5m flow on a 5-copy ticker with no story behind it, and the theme is at 0.05x its pace. Blocker: flow below pace / no narrative. Fresh and thin (V1, V6, V13).  
-  CA `5zhdK5tA8Fz4L74YgYeSAVjjZ2NGTfSmWNYAiWN2pump`
-- 10:33Z SPSC (DIP, $153,968 mcap, $2,148 5m vol): PASS at conviction 3, PASS: SPSC is a DIP with no catalyst, 5m flow at 0.66x pace, and 16 copies of the same joke ticker. Blocked by the bottom-buy owner rule (V1, V13).  
-  CA `EjdrRG2si1FQ3Bme5g6WSYNHJDrsKUrbGB4Z5xaopump`
-- 10:30Z hacked (no setup, $45,175 mcap, $266 5m vol): REJECT, Hack story ("hack" in the name or ticker): these tend to go down, owner rule  
-  CA `FK7bc3fR8UL8uogN2u8J9yEpEbQJKR7yKsp3G8rvpump`
 
 ## What its skips did next (last 48h)
 A skip "ran" if the coin reached the first target (1.5x) from the skip price before a 20% drop, "dumped" if the drop came first. Sampled every 10 min, followed 6h.
-- top 10 over 25%: blocked 52, ran 11, dumped 37, flat 3, open 1 (saving losses: keep it)
+- top 10 over 25%: blocked 52, ran 11, dumped 37, flat 2, open 2 (saving losses: keep it)
   - ran: Legatum up to 2.21x  
     CA `HkPSDYRcw4uqgRzZMDd5sRnMpE4ungR1K8MRNXnBVtQ2`
   - ran: Thankful up to 2.05x  
@@ -120,7 +120,7 @@ A skip "ran" if the coin reached the first target (1.5x) from the skip price bef
     CA `CV1NPi8L2PSYMfALBh7GCfUwELZzG3DrLUUjCkeapump`
   - ran: IceBall up to 1.67x  
     CA `6PFm828RKNJqKvjXQz82hhGvGNWFXZcBHNCF4U7spump`
-- too new / sniping: blocked 36, ran 3, dumped 33, flat 0, open 0 (saving losses: keep it)
+- too new / sniping: blocked 35, ran 3, dumped 32, flat 0, open 0 (saving losses: keep it)
   - ran: Pair up to 1.76x  
     CA `EWCfhnj8YjPEbvQXEtwkxMT54WhBpZBLQDFncRoypump`
   - ran: SpaceXCoin up to 1.52x  
@@ -137,9 +137,7 @@ A skip "ran" if the coin reached the first target (1.5x) from the skip price bef
     CA `At5hmwDn4YgPDoic1UN7zMdTtCoiXJsMhnKaoazEpump`
   - ran: USD1 up to 1.55x  
     CA `8Y24KBnY9gaNWDaxohxtEU1gxESvfwdYeGFuHJKpump`
-- falling knife / no higher low: blocked 17, ran 2, dumped 11, flat 2, open 2 (saving losses: keep it)
-  - ran: Maru up to 1.88x  
-    CA `FokVFH6mDsazoKbtnUaA2FRMsRbDSwZhNfn17Fdvpump`
+- falling knife / no higher low: blocked 16, ran 1, dumped 11, flat 2, open 2 (saving losses: keep it)
   - ran: Hoppy up to 1.76x  
     CA `CFX1gH7CKYwqYXrfDkS2MUxJcEhs8PT63DyRA1chpump`
 - RugCheck danger: blocked 11, ran 0, dumped 9, flat 1, open 1 (saving losses: keep it)
@@ -191,8 +189,8 @@ No edge after costs, and I'm fairly sure of that. All 250 settled coins averaged
 The meta in the trenches right now is brand-new pump.fun joke launches, not the Trump riffs. The volume leaders are under an hour old: Mojave the Tortoise (0.1h, $31k cap, $20.6k 5m, 58% buys), cheng (0.7h, +503% in 1h, 60% buys) and EDITOR (0.8h, +76%, 61% buys), with animal and non-English names in the mix. The Trump-family riffs are fading: USD1 is -98% in 1h with no 5m volume, WLFI is a $286k coin on $3.4k 5m, and TRUMP isn't in the movers despite the dinner headlines. Fresh spikes are fading fast: SMOOTH and HPD are both down 79-82% in 1h, and MEMEPAY is -70% with zero buys on 5m. Setup to research: Mojave, the only mover clearing the ~$10k 5m bar, as a MIGRATED probe at conviction 5, with holder and bundle checks deciding whether it's a buy and a stop well under entry. cheng and EDITOR are below the 5m bar, so watch only. Caveat: the crawler summary says HPD is +525% at $18.9k and cites SPSC and FINGART, but the scan data shows HPD at -82% and $6k, so I used the scan numbers and did not rely on the summary.
 
 ## Moving most in its scans, last 30 min (1h volume)
-- Mojave: $135,023 1h vol, $35,058 mcap, +22% 1h  
-  CA `4newt1R5fGEoCKdf9XBgiR6B43iacmnVAR2d4Wt8pump`
+- GPU: $90,688 1h vol, $13,347 mcap, -53% 1h  
+  CA `DT5hmUppUXvcziVxoAkLk6sjNJU8G9fqyXmGPx75pump`
 - BITCOINU: $74,567 1h vol, $1,214,699 mcap, -3% 1h  
   CA `ATbAsdCwrhhVg23DRnWpjqx6kx7ivoK5o8ysNmu1pump`
 - WLFI: $65,432 1h vol, $278,976 mcap, +4% 1h  
