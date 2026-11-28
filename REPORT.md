@@ -1,13 +1,13 @@
 # Trencher live report
 
-Updated 2026-11-28T14:04:52Z (paper trading, never real money)
+Updated 2026-11-28T14:19:58Z (paper trading, never real money)
 
 - Equity: $74.23 (-25.8% vs $100 start)
 - Closed trades: 22, 3 wins
 - Fees paid: $14.78 (axiom $2.81, network $9.18, pool $2.66), plus $4.15 lost to slippage
 - New trades: WATCH-ONLY (scans and decides, buys nothing)
-- Brain: subscription, claude-haiku-5-5 for routine calls, claude-opus-5-5 for the daily review; 359 routine calls and 9 plan-limit hits in 48h
-- Watch log: 60 coins being followed, 4480 filed, 0 would-buys (6h follow, sampled every 2 min)
+- Brain: subscription, claude-haiku-5-5 for routine calls, claude-opus-5-5 for the daily review; 361 routine calls and 9 plan-limit hits in 48h
+- Watch log: 60 coins being followed, 4483 filed, 0 would-buys (6h follow, sampled every 2 min)
 
 ## Scorecard (after fees)
 - 22 closed, 3 won (14%), net $-25.79
@@ -73,9 +73,15 @@ Updated 2026-11-28T14:04:52Z (paper trading, never real money)
   CA `H4gHnZ3NCU7Z9XQwGX6YYJNyieGEW8pqwGRUcdSxpump`
 
 ## Last scan
-- 14:04Z: 8 coins, 8 with pairs, 0 passed the market filters, 0 researched
+- 14:18Z: 3 coins, 3 with pairs, 1 passed the market filters, 1 researched
 
 ## Coins it looked at, and why it passed
+- 14:19Z BRUH (MIGRATED, $7,503,572 mcap, $8,409 5m vol): PASS at conviction 2, PASS: 5m flow at 0.62x hourly pace, $8.4k on the 5m, $7.5M mcap with no breakout, and no catalyst behind a fan-made parody. Blocker: flow below pace. (V6, V13)  
+  CA `PgFtGGquvnv2zEkjG2N2QPvBTBrafuExGYEqahRpump`
+- 14:08Z Fireball (MIGRATED, $348,893 mcap, $2,822 5m vol): PASS at conviction 3, PASS: no higher low, flow under pace, and the story is fading. A 26-copy Fireball field with a 1-day-old site and a 70.7% drawdown is a falling knife. (V1, V6, V13)  
+  CA `B9wbjDJ4FbHMsZmoXAkJSTAwuePaJUKbySvnK5zApump`
+- 14:07Z BITCOINU (DIP, $1,153,237 mcap, $3,611 5m vol): PASS at conviction 3, PASS: bottom-buy owner rule fails (theme at 0.73x pace, narrative not rising), first resistance is about 1.07x away, and it's a 19-copy ticker field. Clean holders don't fix any of that. (V1, V6, V13)  
+  CA `ATbAsdCwrhhVg23DRnWpjqx6kx7ivoK5o8ysNmu1pump`
 - 13:53Z GROKSIE (FINAL_STRETCH, $14,933 mcap, $12,586 5m vol): PASS at conviction 3, PASS — +107% on the 5m candle and 4.8x the hourly pace, 10 minutes into the curve with no higher low. That's a spike, not a pullback (V1, V6).  
   CA `5jjJWZfTTaZtG74zSpiEZbMBHNM2jieHEXM2UZvapump`
 - 13:49Z John (MIGRATED, $39,786 mcap, $47,630 5m vol): REJECT, RugCheck danger: Creator history of rugged tokens  
@@ -90,12 +96,6 @@ Updated 2026-11-28T14:04:52Z (paper trading, never real money)
   CA `FK7bc3fR8UL8uogN2u8J9yEpEbQJKR7yKsp3G8rvpump`
 - 13:23Z BRUH (DIP, $6,728,476 mcap, $2,068 5m vol): PASS at conviction 2, PASS — $6.7M mcap with 5m flow at 0.64x pace, no catalyst, and the theme running at 0.5x. Price bounced from a $5.3k hourly low into the 24h high, so this is a chase, not a dip (V1, V6, V13).  
   CA `PgFtGGquvnv2zEkjG2N2QPvBTBrafuExGYEqahRpump`
-- 13:22Z BITCOINU (DIP, $1,211,863 mcap, $3,116 5m vol): PASS at conviction 3, PASS — 5m flow at 0.63x the hourly pace, and the story behind the bottom buy isn't rising. 19 tickers in a crowded same-name field. Dead on arrival (V1, V6, V13).  
-  CA `ATbAsdCwrhhVg23DRnWpjqx6kx7ivoK5o8ysNmu1pump`
-- 13:21Z Fireball (DIP, $530,789 mcap, $3,825 5m vol): PASS at conviction 3, PASS: no catalyst, theme pace 0.71x, and the site doesn't show this CA. Blocker: "dead story" on a bottom buy (V1, V3, V13).  
-  CA `B9wbjDJ4FbHMsZmoXAkJSTAwuePaJUKbySvnK5zApump`
-- 13:21Z hold (MIGRATED, $58,594 mcap, $16,186 5m vol): PASS at conviction 3, PASS: "hold" is sitting 1.5% off a 15-minute-old peak after a +99% hour, with no printed higher low and 9 same-ticker copies. Chasing, too new (V1, V6).  
-  CA `4qnvryLCPUQ1kLZMsK44Ra2H19tRGzijbbhfDmSLpump`
 
 ## What its skips did next (last 48h)
 A skip "ran" if the coin reached the first target (1.5x) from the skip price before a 20% drop, "dumped" if the drop came first. Sampled every 10 min, followed 6h.
@@ -106,13 +106,13 @@ A skip "ran" if the coin reached the first target (1.5x) from the skip price bef
     CA `57sCZ82FwS5Dfs7FN9nshtU5Mkb3w1dqhmPUuCPvpump`
   - ran: Kuro up to 2.05x  
     CA `7sxuap7Q4uoAJFBW3ensq6QTa2KwgGosfFwoeXtJpump`
-- flow below pace: blocked 38, ran 5, dumped 27, flat 5, open 1 (saving losses: keep it)
-  - ran: PAIR up to 2.1x  
-    CA `32rBxcFjCFnyqZ41CEPM5AL67X1dcw8w83vZt6Kxpump`
+- flow below pace: blocked 37, ran 4, dumped 27, flat 4, open 2 (saving losses: keep it)
   - ran: Hoppy up to 1.76x  
     CA `CFX1gH7CKYwqYXrfDkS2MUxJcEhs8PT63DyRA1chpump`
   - ran: SpaceXCoin up to 1.52x  
     CA `G2XqmSc8vJpLLwaLVXUeNkxsrhVT8vQ3Pje8MqeDpump`
+  - ran: DIHBALL up to 1.78x  
+    CA `99CQuNiF6WN44xyKqPP9N41x5R9Uu8MkTM9CK3Rzpump`
 - too new / sniping: blocked 35, ran 2, dumped 33, flat 0, open 0 (saving losses: keep it)
   - ran: SpaceXCoin up to 1.52x  
     CA `G2XqmSc8vJpLLwaLVXUeNkxsrhVT8vQ3Pje8MqeDpump`
@@ -125,7 +125,7 @@ A skip "ran" if the coin reached the first target (1.5x) from the skip price bef
     CA `CV1NPi8L2PSYMfALBh7GCfUwELZzG3DrLUUjCkeapump`
   - ran: IceBall up to 1.67x  
     CA `6PFm828RKNJqKvjXQz82hhGvGNWFXZcBHNCF4U7spump`
-- falling knife (code): blocked 21, ran 1, dumped 18, flat 1, open 1 (saving losses: keep it)
+- falling knife (code): blocked 20, ran 1, dumped 18, flat 0, open 1 (saving losses: keep it)
   - ran: Split up to 1.54x  
     CA `HAP9FcXubD88SjRHMY1kr5iukpRZgeMAgCBam3Vtpump`
 - bundles over the line: blocked 19, ran 3, dumped 12, flat 3, open 1 (saving losses: keep it)
@@ -193,13 +193,13 @@ Nothing has a positive edge after costs. All 225 settled coins averaged -12.9% n
 The meta in scan_movers is cat and animal mascot names plus CJK-character names on pump.fun, with slogan tickers (hold, Bagwork) riding launch spikes. The Trump-dinner news isn't in the movers and there's no Trump-family coin in the top volume, so I'm treating that story as fading. Rising: "hold" (Believe in something?, $58.6k cap, $16.2k 5m, 62% buys, +99% 1h, 12 min old) is the cleanest mover clearing the $10k bar; OKOWARE (怒ワレ, $21k cap) and smol cat ($14.6k cap, 78% buys) carry the cat/CJK style but are thin on 5m. Fading: BNB (Bankrupting New Buyers, -91%) and EDITOR (-87%, 11% buys). The crawler's FlipFlop Cat figures ($60k cap, +103%, clearing the bar) don't match scan_movers ($2.2k cap, -97% 1h, zero 5m volume), so I'm discarding them. Setup to research: "hold" as a MIGRATED probe. Conviction 4, so it's a PASS until holder, dev and bundle checks come back clean; if they do, it becomes a 5 probe, buying only on a pullback that holds with 5m volume above $10k, initials at 2x, stop at -30%, and out if 5m volume drops under $10k. Bagwork ($16k cap, $32k 5m, age zero, still on the pump.fun curve) is a launch spike; the new-pair rule says I don't chase it.
 
 ## Moving most in its scans, last 30 min (1h volume)
-- FIX6900: $70,059 1h vol, $16,817 mcap, -41% 1h  
+- BRUH: $163,401 1h vol, $7,503,572 mcap, +12% 1h  
+  CA `PgFtGGquvnv2zEkjG2N2QPvBTBrafuExGYEqahRpump`
+- FIX6900: $77,202 1h vol, $18,561 mcap, -35% 1h  
   CA `GDUL9Nor761zu3m6azcUiaLruwReAYG7jTppgGiWpump`
-- BNB: $47,669 1h vol, $2,346 mcap, -92% 1h  
-  CA `3V8dPY9yH4TSHm11fx6Po7XJ8xPzSjcf8W9Q3QhXpump`
-- John: $47,630 1h vol, $39,786 mcap, +40% 1h  
-  CA `EvN4RDyoqUTpCcrvz5QTAdHVqypgxV4MCR77Bfnjpump`
-- GROKSIE: $31,180 1h vol, $14,933 mcap, +616% 1h  
-  CA `5jjJWZfTTaZtG74zSpiEZbMBHNM2jieHEXM2UZvapump`
-- burni: $28,316 1h vol, $4,074 mcap, +69% 1h  
-  CA `G4meLXkHyXQatVU4yk9jEiamRVN3CBB3akHzRketpump`
+- hold: $71,052 1h vol, $1,418 mcap, -97% 1h  
+  CA `4qnvryLCPUQ1kLZMsK44Ra2H19tRGzijbbhfDmSLpump`
+- Bagwork: $70,889 1h vol, $7,010 mcap, -75% 1h  
+  CA `5qDeCs9MkTAhk6q76XvKrZgimoQdJowuSWbjSZKvpump`
+- BITCOINU: $55,770 1h vol, $1,172,901 mcap, +3% 1h  
+  CA `ATbAsdCwrhhVg23DRnWpjqx6kx7ivoK5o8ysNmu1pump`
