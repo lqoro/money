@@ -1,13 +1,13 @@
 # Trencher live report
 
-Updated 2026-11-28T03:42:55Z (paper trading, never real money)
+Updated 2026-11-28T03:58:05Z (paper trading, never real money)
 
 - Equity: $74.23 (-25.8% vs $100 start)
 - Closed trades: 22, 3 wins
 - Fees paid: $14.78 (axiom $2.81, network $9.18, pool $2.66), plus $4.15 lost to slippage
 - New trades: WATCH-ONLY (scans and decides, buys nothing)
 - Brain: subscription, claude-haiku-5-5 for routine calls, claude-opus-5-5 for the daily review; 375 routine calls and 9 plan-limit hits in 48h
-- Watch log: 81 coins being followed, 4344 filed, 0 would-buys (6h follow, sampled every 2 min)
+- Watch log: 81 coins being followed, 4349 filed, 0 would-buys (6h follow, sampled every 2 min)
 
 ## Scorecard (after fees)
 - 22 closed, 3 won (14%), net $-25.79
@@ -73,9 +73,19 @@ Updated 2026-11-28T03:42:55Z (paper trading, never real money)
   CA `H4gHnZ3NCU7Z9XQwGX6YYJNyieGEW8pqwGRUcdSxpump`
 
 ## Last scan
-- 03:41Z: 7 coins, 6 with pairs, 0 passed the market filters, 0 researched
+- 03:57Z: 4 coins, 3 with pairs, 0 passed the market filters, 0 researched
 
 ## Coins it looked at, and why it passed
+- 03:56Z JOB (MIGRATED, $2,607,477 mcap, $2,043 5m vol): REJECT, Bundles: 1 linked wallet cluster(s) hold 22.5% of supply (>20%) (V17)  
+  CA `9Pq7aLAbhDG2tTnS22cm6kuysZVcZpLFE368HWuypump`
+- 03:54Z DAW (MIGRATED, $38,249 mcap, $6,963 5m vol): REJECT, Top 10 hold 26.5% ex-pool (>25%) (V13)  
+  CA `6NZANPwagg8qLrfi2mk9HyCXWWAVnhsv4CiqWuHPpump`
+- 03:49Z PRISMEICE (MIGRATED, $102,252 mcap, $14,439 5m vol): PASS at conviction 2, PASS: 9% off a 27-minute-old peak, no printed higher low, and a 4-day-old site that doesn't show this CA. Blockers: "chasing" and "too new" (V1, V6).  
+  CA `8N6WF11pLUUeUu8b1HbnDJHTzyL4bbr8YRdPS6Znpump`
+- 03:44Z FLIP (FINAL_STRETCH, $16,506 mcap, $23,948 5m vol): PASS at conviction 3, PASS — 8 minutes old, up 575% in the hour, a copy in a four-coin ticker field, and no story on my radar. Too new to be a trade (V1, V13).  
+  CA `7yizwJWbcayGTzF9xpibm3j1T2dvHj1vAtk9tqLfpump`
+- 03:43Z Wildfire (FINAL_STRETCH, $19,200 mcap, $6,152 5m vol): PASS at conviction 2, PASS. Sellers are winning (41% buys on 5m, -22% on the candle), there's no socials or catalyst, and the name is shared by five copies. Blocker: falling knife in a vamp field (V1, V3, V6).  
+  CA `9cmL8R2jZjKss6uYiQpQFphv6ygfirZQJEpEatKGpump`
 - 03:39Z DCTY (MIGRATED, $63,752 mcap, $44,701 5m vol): REJECT, Bundles: 6 linked wallet cluster(s) hold 33.3% of supply (>20%) (V17)  
   CA `FKzLbmXpyk3qxY4j3CbxqwjdtbCWb1HZZttok9AD5dio`
 - 03:34Z Snowball (DIP, $313,502 mcap, $1,523 5m vol): REJECT, 5m volume $1,523 is dead (<$2,000) (V1)  
@@ -86,20 +96,10 @@ Updated 2026-11-28T03:42:55Z (paper trading, never real money)
   CA `APmirEVL5wkbYVZ88TDdr9cwJ6WfRCWuzm4wQWyzpump`
 - 03:26Z Fireball (DIP, $386,619 mcap, $9,582 5m vol): PASS at conviction 3, PASS. Fresh breakdown under the range with no higher low, a 0.6-day-old site that doesn't show this CA, and 28 same-name copies. Falling knife, not a DIP (V1, V6, V13).  
   CA `B9wbjDJ4FbHMsZmoXAkJSTAwuePaJUKbySvnK5zApump`
-- 03:26Z hacked (no setup, $62,648 mcap, $72 5m vol): REJECT, Hack story ("hack" in the name or ticker): these tend to go down, owner rule  
-  CA `FK7bc3fR8UL8uogN2u8J9yEpEbQJKR7yKsp3G8rvpump`
-- 03:21Z PumpMas (DIP, $177,559 mcap, $2,455 5m vol): REJECT, Top 10 hold 26.9% ex-pool (>25%) (V13)  
-  CA `EwUVBpdM5vw1CJHRMSLywzVjyQSJZpy6qboxEPBKpump`
-- 03:08Z Midcurve (DIP, $72,087 mcap, $4,838 5m vol): REJECT, Dip with fading attention is a falling knife, not a dip (5m at 0.52x the hour's pace, under 0.6x)  
-  CA `14SsX1H9qge5qE3MeQK87hygFkmHBQnHxJEHgXkspump`
-- 03:00Z MANDY (MIGRATED, $34,508 mcap, $5,376 5m vol): REJECT, Top 10 hold 25.2% ex-pool (>25%) (V13)  
-  CA `4HdH4EKBKCVaPD9f4TxdGhcWyhm259qKa7JHSGhMpump`
-- 02:57Z Vicewire (DIP, $47,352 mcap, $3,573 5m vol): PASS at conviction 2, PASS: Vicewire is a DIP with no catalyst, 5m flow under the theme's pace, and the 5m candle is down 27%. Blocker: "dead story" (weak theme, no buzz). (V1, V6, V13)  
-  CA `viCEWiReoWxwmRRfGmWmpP1FFdB8Jm8PzZChVJ9dvg6`
 
 ## What its skips did next (last 48h)
 A skip "ran" if the coin reached the first target (1.5x) from the skip price before a 20% drop, "dumped" if the drop came first. Sampled every 10 min, followed 6h.
-- top 10 over 25%: blocked 54, ran 9, dumped 39, flat 3, open 3 (saving losses: keep it)
+- top 10 over 25%: blocked 55, ran 9, dumped 40, flat 3, open 3 (saving losses: keep it)
   - ran: Legatum up to 2.21x  
     CA `HkPSDYRcw4uqgRzZMDd5sRnMpE4ungR1K8MRNXnBVtQ2`
   - ran: Thankful up to 2.05x  
@@ -120,14 +120,14 @@ A skip "ran" if the coin reached the first target (1.5x) from the skip price bef
     CA `25m4Lkct8nsYyqAMeE8rvjM3y5Zrrax46TLqNJjbpump`
   - ran: Meme up to 2.06x  
     CA `CV1NPi8L2PSYMfALBh7GCfUwELZzG3DrLUUjCkeapump`
-- too new / sniping: blocked 38, ran 4, dumped 34, flat 0, open 0 (saving losses: keep it)
-  - ran: 2 up to 1.69x  
-    CA `HkywsKMf5FDj7QpgRE3BoE2nJqJauxEVbGjpnYe6pump`
+- too new / sniping: blocked 38, ran 3, dumped 33, flat 0, open 2 (saving losses: keep it)
   - ran: Pair up to 1.76x  
     CA `EWCfhnj8YjPEbvQXEtwkxMT54WhBpZBLQDFncRoypump`
   - ran: SpaceXCoin up to 1.52x  
     CA `G2XqmSc8vJpLLwaLVXUeNkxsrhVT8vQ3Pje8MqeDpump`
-- bundles over the line: blocked 25, ran 3, dumped 15, flat 5, open 2 (saving losses: keep it)
+  - ran: FARM up to 1.65x  
+    CA `2dynAjPBnkqzjUwozgn8pDRkCf7k7CDJkLfcf4rupump`
+- bundles over the line: blocked 25, ran 3, dumped 16, flat 5, open 1 (saving losses: keep it)
   - ran: WIENER up to 1.59x  
     CA `8BDkDfj3ZUvcG9caGzF2XnHfwg7K6fjfKKDvX6SCpump`
   - ran: Dragon up to 1.55x  
@@ -137,7 +137,7 @@ A skip "ran" if the coin reached the first target (1.5x) from the skip price bef
 - falling knife (code): blocked 23, ran 1, dumped 21, flat 0, open 1 (saving losses: keep it)
   - ran: Split up to 1.54x  
     CA `HAP9FcXubD88SjRHMY1kr5iukpRZgeMAgCBam3Vtpump`
-- falling knife / no higher low: blocked 12, ran 2, dumped 8, flat 1, open 1 (saving losses: keep it)
+- falling knife / no higher low: blocked 13, ran 2, dumped 9, flat 1, open 1 (saving losses: keep it)
   - ran: Maru up to 1.88x  
     CA `FokVFH6mDsazoKbtnUaA2FRMsRbDSwZhNfn17Fdvpump`
   - ran: Hoppy up to 1.76x  
@@ -199,7 +199,7 @@ The trenches are trading fresh pump.fun/PumpSwap launches under about 2 hours ol
   CA `FKzLbmXpyk3qxY4j3CbxqwjdtbCWb1HZZttok9AD5dio`
 - BTCBALLS: $167,655 1h vol, $606,694 mcap, +1587% 1h  
   CA `APmirEVL5wkbYVZ88TDdr9cwJ6WfRCWuzm4wQWyzpump`
-- paired: $139,916 1h vol, $3,024 mcap, -93% 1h  
-  CA `8dUqZ1dwPZUF2eGAUN4UotMnnrxrxRoS7gCyctFLpump`
-- DAW: $73,780 1h vol, $18,139 mcap, -67% 1h  
-  CA `6NZANPwagg8qLrfi2mk9HyCXWWAVnhsv4CiqWuHPpump`
+- PRISMEICE: $92,049 1h vol, $98,370 mcap, +230% 1h  
+  CA `8N6WF11pLUUeUu8b1HbnDJHTzyL4bbr8YRdPS6Znpump`
+- mElons: $49,474 1h vol, $3,916 mcap, +44% 1h  
+  CA `DdHqVFhHqj935aRwvr7iSjfK3dRpgz1pePjGNQcjpump`
