@@ -1,13 +1,13 @@
 # Trencher live report
 
-Updated 2026-11-28T11:03:07Z (paper trading, never real money)
+Updated 2026-11-28T11:18:21Z (paper trading, never real money)
 
 - Equity: $74.23 (-25.8% vs $100 start)
 - Closed trades: 22, 3 wins
 - Fees paid: $14.78 (axiom $2.81, network $9.18, pool $2.66), plus $4.15 lost to slippage
 - New trades: WATCH-ONLY (scans and decides, buys nothing)
 - Brain: subscription, claude-haiku-5-5 for routine calls, claude-opus-5-5 for the daily review; 375 routine calls and 9 plan-limit hits in 48h
-- Watch log: 70 coins being followed, 4444 filed, 0 would-buys (6h follow, sampled every 2 min)
+- Watch log: 73 coins being followed, 4445 filed, 0 would-buys (6h follow, sampled every 2 min)
 
 ## Scorecard (after fees)
 - 22 closed, 3 won (14%), net $-25.79
@@ -73,9 +73,17 @@ Updated 2026-11-28T11:03:07Z (paper trading, never real money)
   CA `H4gHnZ3NCU7Z9XQwGX6YYJNyieGEW8pqwGRUcdSxpump`
 
 ## Last scan
-- 11:02Z: 5 coins, 5 with pairs, 1 passed the market filters, 1 researched
+- 11:17Z: 5 coins, 5 with pairs, 0 passed the market filters, 0 researched
 
 ## Coins it looked at, and why it passed
+- 11:12Z WLFI (MIGRATED, $278,976 mcap, $4,827 5m vol): PASS at conviction 3, PASS: flow below pace and a bottom-buy with a fading Trump-brand narrative. Vamp field, bundle cluster at 10.5%. Skip. (V1, V6, V13)  
+  CA `HmGQsYJyeiWrV6jABUY2Cb3bEmVxwk6LzVxCchsCpump`
+- 11:10Z JOB (MIGRATED, $3,035,487 mcap, $4,951 5m vol): REJECT, Bundles: 1 linked wallet cluster(s) hold 22.5% of supply (>20%) (V17)  
+  CA `9Pq7aLAbhDG2tTnS22cm6kuysZVcZpLFE368HWuypump`
+- 11:04Z BITCOINU (DIP, $1,219,075 mcap, $3,461 5m vol): REJECT, Dip with fading attention is a falling knife, not a dip (5m at 0.56x the hour's pace, under 0.6x)  
+  CA `ATbAsdCwrhhVg23DRnWpjqx6kx7ivoK5o8ysNmu1pump`
+- 11:03Z Fireball (DIP, $562,701 mcap, $5,756 5m vol): PASS at conviction 3, PASS — 26-copy "fireball" field with no catalyst, zero buzz, and a 0.9-day-old site that doesn't show this CA. Blocker: no catalyst on a bottom buy. (V1, V3, V13)  
+  CA `B9wbjDJ4FbHMsZmoXAkJSTAwuePaJUKbySvnK5zApump`
 - 11:02Z Mojave (MIGRATED, $35,058 mcap, $2,077 5m vol): PASS at conviction 2, PASS: flow at 0.18x pace on a coin 54 min off its bond spike, and the theme is at 0.81x. Blocker "flow below pace," with "too new" right behind it (V1, V6).  
   CA `4newt1R5fGEoCKdf9XBgiR6B43iacmnVAR2d4Wt8pump`
 - 10:46Z Snowball (MIGRATED, $213,954 mcap, $3,455 5m vol): REJECT, RugCheck danger: Creator history of rugged tokens  
@@ -88,14 +96,6 @@ Updated 2026-11-28T11:03:07Z (paper trading, never real money)
   CA `EjdrRG2si1FQ3Bme5g6WSYNHJDrsKUrbGB4Z5xaopump`
 - 10:30Z hacked (no setup, $45,175 mcap, $266 5m vol): REJECT, Hack story ("hack" in the name or ticker): these tend to go down, owner rule  
   CA `FK7bc3fR8UL8uogN2u8J9yEpEbQJKR7yKsp3G8rvpump`
-- 10:24Z JOB (MIGRATED, $3,049,752 mcap, $2,565 5m vol): REJECT, Bundles: 1 linked wallet cluster(s) hold 22.5% of supply (>20%) (V17)  
-  CA `9Pq7aLAbhDG2tTnS22cm6kuysZVcZpLFE368HWuypump`
-- 10:18Z Fireball (DIP, $512,057 mcap, $3,968 5m vol): PASS at conviction 3, PASS. Fireball is a 57%-off DIP with no story behind it. The ticker is shared by 27 copies, the site is 0.9 days old and doesn't show this CA, and the flow is under $10k. Blocker: no catalyst, narrative not rising. (V1, V6, V13)  
-  CA `B9wbjDJ4FbHMsZmoXAkJSTAwuePaJUKbySvnK5zApump`
-- 10:18Z BITCOINU (DIP, $1,259,106 mcap, $4,987 5m vol): PASS at conviction 3, PASS: bottom-buy gate failed. Theme is at 0.89x its hourly pace, no catalyst, and 5m flow is only $4,987 on a 17-copy ticker. The original may be real, but nothing is pulling the crowd back in (V1, V6, V13).  
-  CA `ATbAsdCwrhhVg23DRnWpjqx6kx7ivoK5o8ysNmu1pump`
-- 10:16Z Mojave (MIGRATED, $35,953 mcap, $30,715 5m vol): PASS at conviction 3, PASS. Blocker: chasing spike. 5m flow is 6.7x hourly pace, no printed higher low, and it's a 23-copy Mojave field with no project X behind it. Farm risk. (V1, V3, V6)  
-  CA `4newt1R5fGEoCKdf9XBgiR6B43iacmnVAR2d4Wt8pump`
 
 ## What its skips did next (last 48h)
 A skip "ran" if the coin reached the first target (1.5x) from the skip price before a 20% drop, "dumped" if the drop came first. Sampled every 10 min, followed 6h.
@@ -106,7 +106,7 @@ A skip "ran" if the coin reached the first target (1.5x) from the skip price bef
     CA `E9arxG4RxB7Gxt6U75obonTZzx7vpbc4bUi1dfw3BtUN`
   - ran: MSTR up to 1.69x  
     CA `57sCZ82FwS5Dfs7FN9nshtU5Mkb3w1dqhmPUuCPvpump`
-- flow below pace: blocked 42, ran 4, dumped 29, flat 5, open 4 (saving losses: keep it)
+- flow below pace: blocked 40, ran 4, dumped 29, flat 3, open 4 (saving losses: keep it)
   - ran: PAIR up to 2.1x  
     CA `32rBxcFjCFnyqZ41CEPM5AL67X1dcw8w83vZt6Kxpump`
   - ran: Hoppy up to 1.76x  
@@ -120,7 +120,7 @@ A skip "ran" if the coin reached the first target (1.5x) from the skip price bef
     CA `CV1NPi8L2PSYMfALBh7GCfUwELZzG3DrLUUjCkeapump`
   - ran: IceBall up to 1.67x  
     CA `6PFm828RKNJqKvjXQz82hhGvGNWFXZcBHNCF4U7spump`
-- too new / sniping: blocked 36, ran 3, dumped 32, flat 0, open 1 (saving losses: keep it)
+- too new / sniping: blocked 36, ran 3, dumped 33, flat 0, open 0 (saving losses: keep it)
   - ran: Pair up to 1.76x  
     CA `EWCfhnj8YjPEbvQXEtwkxMT54WhBpZBLQDFncRoypump`
   - ran: SpaceXCoin up to 1.52x  
@@ -193,11 +193,11 @@ The meta in the trenches right now is brand-new pump.fun joke launches, not the 
 ## Moving most in its scans, last 30 min (1h volume)
 - Mojave: $135,023 1h vol, $35,058 mcap, +22% 1h  
   CA `4newt1R5fGEoCKdf9XBgiR6B43iacmnVAR2d4Wt8pump`
-- SMOOTH: $62,227 1h vol, $11,600 mcap, -63% 1h  
-  CA `2n5tTb5UXKABFXYRxDEjtDpWFh5ZFk7oRcNLDML5pump`
-- WLFI: $62,125 1h vol, $305,822 mcap, +28% 1h  
+- BITCOINU: $74,567 1h vol, $1,214,699 mcap, -3% 1h  
+  CA `ATbAsdCwrhhVg23DRnWpjqx6kx7ivoK5o8ysNmu1pump`
+- WLFI: $65,432 1h vol, $278,976 mcap, +4% 1h  
   CA `HmGQsYJyeiWrV6jABUY2Cb3bEmVxwk6LzVxCchsCpump`
-- EDITOR: $49,940 1h vol, $8,802 mcap, -46% 1h  
-  CA `57uooyjwYX2kpSGN3QnBLWAwk4KMZYbkp5e8f7i7pump`
-- Snowball: $49,262 1h vol, $213,701 mcap, -7% 1h  
-  CA `9TKbd3VFaMSXsEAicD9JVQWpWwAoLi4fSgWmZL2cpump`
+- Fireball: $58,294 1h vol, $553,905 mcap, +26% 1h  
+  CA `B9wbjDJ4FbHMsZmoXAkJSTAwuePaJUKbySvnK5zApump`
+- JOB: $49,447 1h vol, $3,035,487 mcap, +0% 1h  
+  CA `9Pq7aLAbhDG2tTnS22cm6kuysZVcZpLFE368HWuypump`
