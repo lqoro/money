@@ -1,13 +1,13 @@
 # Trencher live report
 
-Updated 2026-11-28T02:57:40Z (paper trading, never real money)
+Updated 2026-11-28T03:12:44Z (paper trading, never real money)
 
 - Equity: $74.23 (-25.8% vs $100 start)
 - Closed trades: 22, 3 wins
 - Fees paid: $14.78 (axiom $2.81, network $9.18, pool $2.66), plus $4.15 lost to slippage
 - New trades: WATCH-ONLY (scans and decides, buys nothing)
-- Brain: subscription, claude-haiku-5-5 for routine calls, claude-opus-5-5 for the daily review; 380 routine calls and 9 plan-limit hits in 48h
-- Watch log: 82 coins being followed, 4335 filed, 0 would-buys (6h follow, sampled every 2 min)
+- Brain: subscription, claude-haiku-5-5 for routine calls, claude-opus-5-5 for the daily review; 378 routine calls and 9 plan-limit hits in 48h
+- Watch log: 81 coins being followed, 4338 filed, 0 would-buys (6h follow, sampled every 2 min)
 
 ## Scorecard (after fees)
 - 22 closed, 3 won (14%), net $-25.79
@@ -73,9 +73,13 @@ Updated 2026-11-28T02:57:40Z (paper trading, never real money)
   CA `H4gHnZ3NCU7Z9XQwGX6YYJNyieGEW8pqwGRUcdSxpump`
 
 ## Last scan
-- 02:57Z: 6 coins, 4 with pairs, 1 passed the market filters, 1 researched
+- 03:11Z: 6 coins, 5 with pairs, 0 passed the market filters, 0 researched
 
 ## Coins it looked at, and why it passed
+- 03:08Z Midcurve (DIP, $72,087 mcap, $4,838 5m vol): REJECT, Dip with fading attention is a falling knife, not a dip (5m at 0.52x the hour's pace, under 0.6x)  
+  CA `14SsX1H9qge5qE3MeQK87hygFkmHBQnHxJEHgXkspump`
+- 03:00Z MANDY (MIGRATED, $34,508 mcap, $5,376 5m vol): REJECT, Top 10 hold 25.2% ex-pool (>25%) (V13)  
+  CA `4HdH4EKBKCVaPD9f4TxdGhcWyhm259qKa7JHSGhMpump`
 - 02:57Z Vicewire (DIP, $47,352 mcap, $3,573 5m vol): PASS at conviction 2, PASS: Vicewire is a DIP with no catalyst, 5m flow under the theme's pace, and the 5m candle is down 27%. Blocker: "dead story" (weak theme, no buzz). (V1, V6, V13)  
   CA `viCEWiReoWxwmRRfGmWmpP1FFdB8Jm8PzZChVJ9dvg6`
 - 02:53Z Memeball (MIGRATED, $767,965 mcap, $3,345 5m vol): PASS at conviction 2, PASS: chasing. Memeball is 3.7% off a $798k high after a 4x run off the hourly low, 5m flow is at 0.93x pace, and the CA on its site says "TBA". Blockers: "chasing", "flow below pace", "no higher low". (V1, V6, V13)  
@@ -92,21 +96,17 @@ Updated 2026-11-28T02:57:40Z (paper trading, never real money)
   CA `AvvXpCVph4PtJ5urfhetPkdZYh8o4uW7CawUA2MK8hFT`
 - 02:26Z Crema (DIP, $38,465 mcap, $13,009 5m vol): PASS at conviction 2, PASS: no story behind a 1-hour-old DIP. Theme pace 0.27x, one linked bundle holds 11.9%, and the site doesn't show this CA. Blocker: "dead story." (V1, V3, V13)  
   CA `7F5Xamqc5eGTfJZE9EyMiPA5QSNziWua6zL1M1kTpump`
-- 02:26Z hacked (MIGRATED, $71,450 mcap, $2 5m vol): REJECT, Hack story ("hack" in the name or ticker): these tend to go down, owner rule  
-  CA `FK7bc3fR8UL8uogN2u8J9yEpEbQJKR7yKsp3G8rvpump`
-- 02:22Z Midcurve (MIGRATED, $86,989 mcap, $9,022 5m vol): REJECT, Dev holds 1.7% (>1%) (V13, V17)  
-  CA `14SsX1H9qge5qE3MeQK87hygFkmHBQnHxJEHgXkspump`
 
 ## What its skips did next (last 48h)
 A skip "ran" if the coin reached the first target (1.5x) from the skip price before a 20% drop, "dumped" if the drop came first. Sampled every 10 min, followed 6h.
-- top 10 over 25%: blocked 53, ran 9, dumped 40, flat 3, open 1 (saving losses: keep it)
+- top 10 over 25%: blocked 53, ran 9, dumped 39, flat 3, open 2 (saving losses: keep it)
   - ran: Legatum up to 2.21x  
     CA `HkPSDYRcw4uqgRzZMDd5sRnMpE4ungR1K8MRNXnBVtQ2`
   - ran: Thankful up to 2.05x  
     CA `E9arxG4RxB7Gxt6U75obonTZzx7vpbc4bUi1dfw3BtUN`
   - ran: MSTR up to 1.69x  
     CA `57sCZ82FwS5Dfs7FN9nshtU5Mkb3w1dqhmPUuCPvpump`
-- near the high / chasing: blocked 41, ran 7, dumped 30, flat 3, open 1 (saving losses: keep it)
+- near the high / chasing: blocked 41, ran 8, dumped 30, flat 3, open 0 (saving losses: keep it)
   - ran: PPV up to 1.54x  
     CA `CbGrZ3Q2XxSV2oiZsLkDWW1GFjrqUDAzTH9XwVr1pump`
   - ran: urcoin up to 1.71x  
@@ -134,7 +134,7 @@ A skip "ran" if the coin reached the first target (1.5x) from the skip price bef
     CA `cg3HaDWhAKFfj9aq79TWUBgmxfs4G7byQ7feaxnpump`
   - ran: monky up to 96.37x  
     CA `At5hmwDn4YgPDoic1UN7zMdTtCoiXJsMhnKaoazEpump`
-- falling knife (code): blocked 22, ran 1, dumped 20, flat 0, open 1 (saving losses: keep it)
+- falling knife (code): blocked 23, ran 1, dumped 20, flat 0, open 2 (saving losses: keep it)
   - ran: Split up to 1.54x  
     CA `HAP9FcXubD88SjRHMY1kr5iukpRZgeMAgCBam3Vtpump`
 - falling knife / no higher low: blocked 12, ran 2, dumped 8, flat 1, open 1 (saving losses: keep it)
@@ -142,13 +142,13 @@ A skip "ran" if the coin reached the first target (1.5x) from the skip price bef
     CA `FokVFH6mDsazoKbtnUaA2FRMsRbDSwZhNfn17Fdvpump`
   - ran: Hoppy up to 1.76x  
     CA `CFX1gH7CKYwqYXrfDkS2MUxJcEhs8PT63DyRA1chpump`
-- dev share over 1%: blocked 12, ran 2, dumped 8, flat 1, open 1 (saving losses: keep it)
+- dev share over 1%: blocked 11, ran 2, dumped 8, flat 1, open 0 (saving losses: keep it)
   - ran: bolphante up to 1.7x  
     CA `FVBzzG4ZcAgxSLW1rWjNC9EH9CgEgz1A4puNYexMpump`
   - ran: Fug up to 1.58x  
     CA `7mSf4uWLkgdkqBfSoxniv5aZ1sDCXCiquJNcisjXpump`
-- RugCheck danger: blocked 11, ran 0, dumped 8, flat 2, open 1 (saving losses: keep it)
-- other: blocked 10, ran 2, dumped 8, flat 0, open 0 (saving losses: keep it)
+- RugCheck danger: blocked 10, ran 0, dumped 9, flat 1, open 0 (saving losses: keep it)
+- other: blocked 9, ran 2, dumped 7, flat 0, open 0 (saving losses: keep it)
   - ran: SXI up to 2.34x  
     CA `BFWNbSwRodXPTQqrMSCfhznhJwEzY6ERd6MHjWUEpump`
   - ran: Christmas up to 1.89x  
@@ -193,13 +193,13 @@ No edge after costs, and I'm fairly sure of that. All 250 settled coins averaged
 The meta in the trenches right now is fresh pump.fun/PumpSwap launches under about 2 hours old pulling the most 5m volume, with a dog/joke-name thread (DAW, Dawkoins) and a split "-ball" cluster: Memeball has 62% buys at $654k mcap but only $2.9k on 5m, while POWERBALL is fading -47%. Rising now: MANDY ($124k mcap, $24k 5m, 58% buys, +277% 1h, 36 min old) and Midcurve ($88k, $10k 5m, 58% buys, +210% 1h, 1h old). Fading: Crema (-53% in 1h despite $11.6k 5m), JOB (2.7M mcap, 751h old, 32% buys), and WINTER ARC (6h old, $1.5k 5m, so the holiday thread is one weak coin, not a meta). Setups to research, not buy yet: MANDY and Midcurve are the probe candidates at conviction 5 at most, stop below the pullback low, and PASS if top 10 is above 15% or any bundle is above 3%; DAW (about $62k 5m on a $58k coin, 6 min old) is only worth a look if holders are clean, because that turnover is either a real frenzy or a bundle. Discrepancy: the crawler's Crema ($72k mcap, $64k 5m) and Memeball ($6k 5m) figures don't match scan_movers ($35.6k, $11.6k, and $2.9k), so I'm using the scanner numbers, and TOGI isn't in the array at all. The headlines are mostly about Trump's dinner and a declining Trump coin, which the movers don't show, so I'm not anchoring on them. Paper only, not financial advice.
 
 ## Moving most in its scans, last 30 min (1h volume)
-- MANDY: $393,316 1h vol, $29,820 mcap, -40% 1h  
+- MANDY: $341,087 1h vol, $31,888 mcap, -68% 1h  
   CA `4HdH4EKBKCVaPD9f4TxdGhcWyhm259qKa7JHSGhMpump`
-- MARS: $157,434 1h vol, $9,396 mcap, +23% 1h  
-  CA `ExizLaN54XVXpY1FLH8yXtpbHPawm7UzTcmfJJH5pump`
-- STEADY: $148,706 1h vol, $113,357 mcap, -54% 1h  
-  CA `AvvXpCVph4PtJ5urfhetPkdZYh8o4uW7CawUA2MK8hFT`
+- DAW: $247,032 1h vol, $7,584 mcap, -75% 1h  
+  CA `6NZANPwagg8qLrfi2mk9HyCXWWAVnhsv4CiqWuHPpump`
+- Midcurve: $112,272 1h vol, $72,616 mcap, +3% 1h  
+  CA `14SsX1H9qge5qE3MeQK87hygFkmHBQnHxJEHgXkspump`
 - JEFFLE: $92,412 1h vol, $56,534 mcap, +95% 1h  
   CA `BRRktKPa8m4dMrQ1fT6fLJABQjYUqLaEhPuMHxUvpump`
-- Fireball: $75,104 1h vol, $512,498 mcap, +14% 1h  
-  CA `B9wbjDJ4FbHMsZmoXAkJSTAwuePaJUKbySvnK5zApump`
+- MARS: $65,437 1h vol, $9,295 mcap, -25% 1h  
+  CA `ExizLaN54XVXpY1FLH8yXtpbHPawm7UzTcmfJJH5pump`
