@@ -1,13 +1,13 @@
 # Trencher live report
 
-Updated 2026-11-28T00:41:46Z (paper trading, never real money)
+Updated 2026-11-28T00:56:51Z (paper trading, never real money)
 
 - Equity: $74.23 (-25.8% vs $100 start)
 - Closed trades: 22, 3 wins
 - Fees paid: $14.78 (axiom $2.81, network $9.18, pool $2.66), plus $4.15 lost to slippage
 - New trades: WATCH-ONLY (scans and decides, buys nothing)
-- Brain: subscription, claude-haiku-5-5 for routine calls, claude-opus-5-5 for the daily review; 387 routine calls and 9 plan-limit hits in 48h
-- Watch log: 75 coins being followed, 4309 filed, 0 would-buys (6h follow, sampled every 2 min)
+- Brain: subscription, claude-haiku-5-5 for routine calls, claude-opus-5-5 for the daily review; 383 routine calls and 9 plan-limit hits in 48h
+- Watch log: 75 coins being followed, 4311 filed, 0 would-buys (6h follow, sampled every 2 min)
 
 ## Scorecard (after fees)
 - 22 closed, 3 won (14%), net $-25.79
@@ -73,9 +73,13 @@ Updated 2026-11-28T00:41:46Z (paper trading, never real money)
   CA `H4gHnZ3NCU7Z9XQwGX6YYJNyieGEW8pqwGRUcdSxpump`
 
 ## Last scan
-- 00:40Z: 7 coins, 5 with pairs, 1 passed the market filters, 1 researched
+- 00:56Z: 7 coins, 5 with pairs, 0 passed the market filters, 0 researched
 
 ## Coins it looked at, and why it passed
+- 00:54Z WINTER (MIGRATED, $91,649 mcap, $2,740 5m vol): REJECT, Bundles: 2 linked wallet cluster(s) hold 100.0% of supply (>20%) (V17)  
+  CA `7dc3gFoyuDCPWjrfZfX99uasJJSceAJx5ucE8bDGpump`
+- 00:51Z Midcurve (FINAL_STRETCH, $16,490 mcap, $3,737 5m vol): PASS at conviction 3, PASS. Eight copies of the ticker, a 0.13x theme pace, and the coin's own website doesn't show this CA. That's a vamp field with nobody arriving (V1, V3, V13).  
+  CA `14SsX1H9qge5qE3MeQK87hygFkmHBQnHxJEHgXkspump`
 - 00:40Z Vicewire (FINAL_STRETCH, $20,875 mcap, $26,131 5m vol): PASS at conviction 3, PASS: chasing spike. 5m is up 195% at 7.8x hourly pace, sells outnumber buys 482 to 376, and it's 12 minutes old with no higher low. Flow isn't structure (V1, V6).  
   CA `viCEWiReoWxwmRRfGmWmpP1FFdB8Jm8PzZChVJ9dvg6`
 - 00:36Z JOB (MIGRATED, $2,497,072 mcap, $2,091 5m vol): REJECT, Bundles: 1 linked wallet cluster(s) hold 22.5% of supply (>20%) (V17)  
@@ -92,14 +96,10 @@ Updated 2026-11-28T00:41:46Z (paper trading, never real money)
   CA `9msLfYfXBrSbrApCZAPuPMCNmPqNtEL1VPKh1AEYpump`
 - 00:14Z STEADY (MIGRATED, $149,118 mcap, $102,530 5m vol): PASS at conviction 3, PASS — chasing spike: 5m flow is 4.2x the hourly pace after a +629% hour, no printed higher low, and it's 10 minutes old. Launchpad vamp field with no catalyst. (V1, V6)  
   CA `AvvXpCVph4PtJ5urfhetPkdZYh8o4uW7CawUA2MK8hFT`
-- 00:12Z hackem (no setup, $4,598 mcap, $6,679 5m vol): REJECT, Hack story ("hack" in the name or ticker): these tend to go down, owner rule  
-  CA `2qhwYd7qwhbSovnMrSrXzVCw5ge36H1KxG6j6rwcpump`
-- 00:08Z WINTER (MIGRATED, $89,726 mcap, $4,843 5m vol): REJECT, Bundles: 2 linked wallet cluster(s) hold 66.7% of supply (>20%) (V17)  
-  CA `7dc3gFoyuDCPWjrfZfX99uasJJSceAJx5ucE8bDGpump`
 
 ## What its skips did next (last 48h)
 A skip "ran" if the coin reached the first target (1.5x) from the skip price before a 20% drop, "dumped" if the drop came first. Sampled every 10 min, followed 6h.
-- top 10 over 25%: blocked 56, ran 11, dumped 40, flat 4, open 1 (saving losses: keep it)
+- top 10 over 25%: blocked 56, ran 12, dumped 40, flat 4, open 0 (saving losses: keep it)
   - ran: MONEY up to 1.58x  
     CA `DeACAbp2GMzapB6Z2K8qdkTZupmNbKc6EZx9bnbCpump`
   - ran: Legatum up to 2.21x  
@@ -113,13 +113,13 @@ A skip "ran" if the coin reached the first target (1.5x) from the skip price bef
     CA `CFX1gH7CKYwqYXrfDkS2MUxJcEhs8PT63DyRA1chpump`
   - ran: SpaceXCoin up to 1.52x  
     CA `G2XqmSc8vJpLLwaLVXUeNkxsrhVT8vQ3Pje8MqeDpump`
-- too new / sniping: blocked 44, ran 6, dumped 36, flat 0, open 2 (saving losses: keep it)
-  - ran: Slapcat up to 1.61x  
-    CA `AqNAfcg8AkidVLLE7Tszh2PjUGzgaKvJskDXQXRHpump`
+- too new / sniping: blocked 43, ran 7, dumped 36, flat 0, open 0 (saving losses: keep it)
   - ran: STUDS up to 2.35x  
     CA `34J9VrBeJ2dWActyAMpoNBKvoxZCqQz3SivmnnmSTUds`
   - ran: 2 up to 1.69x  
     CA `HkywsKMf5FDj7QpgRE3BoE2nJqJauxEVbGjpnYe6pump`
+  - ran: Pair up to 1.76x  
+    CA `EWCfhnj8YjPEbvQXEtwkxMT54WhBpZBLQDFncRoypump`
 - near the high / chasing: blocked 41, ran 8, dumped 29, flat 3, open 1 (saving losses: keep it)
   - ran: NETHER up to 1.8x  
     CA `GkL4cJLAL3354wLgS6mZJKKUBVzvUY1FUN47zZNgGWEq`
@@ -152,11 +152,7 @@ A skip "ran" if the coin reached the first target (1.5x) from the skip price bef
     CA `FVBzzG4ZcAgxSLW1rWjNC9EH9CgEgz1A4puNYexMpump`
   - ran: Fug up to 1.58x  
     CA `7mSf4uWLkgdkqBfSoxniv5aZ1sDCXCiquJNcisjXpump`
-- other: blocked 9, ran 2, dumped 7, flat 0, open 0 (saving losses: keep it)
-  - ran: SXI up to 2.34x  
-    CA `BFWNbSwRodXPTQqrMSCfhznhJwEzY6ERd6MHjWUEpump`
-  - ran: Christmas up to 1.89x  
-    CA `5hkBYuFQDpAAqemCiVqXCuU6Ya5dqKhtRobzJsg6pump`
+- thin 5m volume: blocked 8, ran 0, dumped 5, flat 2, open 1 (saving losses: keep it)
 
 ## Daily review (2026-11-27, claude-opus-5-5)
 No edge after costs, and I'm fairly sure of that. All 250 settled coins averaged -12.7% net under the simple plan, and every setup and stage lost money (-12.2% to -15.2%). Before costs the average is still about -3%, because the median coin peaked at only 1.2x. At n=250 the standard error is roughly 2 points, so 'negative' is solid. The gaps between buckets (2-3 points) are noise, especially since the same coin can be logged more than once. The routine model made zero would-buys out of 130 coins it researched, so I can't test whether its buys beat its passes. The coins it passed on (-13.9%) did no worse than the checklist rejects (-11.5%) beyond noise. Passing everything was right for these 24 hours, but a model that never says buy gives the Nov 10 rule test nothing to grade.
@@ -197,13 +193,13 @@ No edge after costs, and I'm fairly sure of that. All 250 settled coins averaged
 Meta, from scan_movers itself: holiday/Christmas tickers are the one theme pulling fresh buyers (RIZZMAS3 +540% 1h with $9.2k 5m and 65% buys, SANTA at $10k mcap with $1.1k 5m, WINTER ARC at $90k with $4.8k 5m), while dog/animal and joke names are dying (Gemma -2.75% with $62 5m, bob says -74% with 0% buys, Compute -48% with $26 5m). The crawler's Hyperball and Retarded Bitcoin, Jeff, DRIFT, PumpMas and Cartoon Money figures don't appear in this array, and its Spectre numbers are wrong (SPEC is $3k mcap, $25 5m, -48% 1h), so I'm treating those claims as unverified and dropping them. The biggest flow is STEADY (Raydium, 12 min old, $147k mcap, $106k 5m, 59% buys, +620% 1h), a generic name with no meta fit, so it's research only, and only on a pullback that holds with 5m volume still up (V1, V6). RIZZMAS3 is the holiday setup to research: its 5m volume is $9.2k, just under the $10k bar, so it has to clear that, and buy on a dip, not into +540%. The tape is not quiet, but Fireball ($733k mcap, 86% buys) and SANTA fail the 5m bar right now, and all of this is paper only and not financial advice.
 
 ## Moving most in its scans, last 30 min (1h volume)
-- STEADY: $294,084 1h vol, $147,194 mcap, +620% 1h  
-  CA `AvvXpCVph4PtJ5urfhetPkdZYh8o4uW7CawUA2MK8hFT`
-- Sol: $240,052 1h vol, $35,104 mcap, -29% 1h  
-  CA `Xb6V46U9hHHxiJnoAFxiEqEh59owzdt1ZL9q5zpVSoL`
 - Memeball: $195,525 1h vol, $268,117 mcap, +718% 1h  
   CA `9G9Ssh55SZEoniFjMrMefug9fBy67bUvHzWAxb5Ypump`
-- Fireball: $67,805 1h vol, $732,743 mcap, +14% 1h  
-  CA `B9wbjDJ4FbHMsZmoXAkJSTAwuePaJUKbySvnK5zApump`
-- enu: $58,840 1h vol, $357,540 mcap, +31% 1h  
-  CA `9msLfYfXBrSbrApCZAPuPMCNmPqNtEL1VPKh1AEYpump`
+- POWERBALL: $84,786 1h vol, $7,816 mcap, +268% 1h  
+  CA `CLcFahnBEHLhpMKhTore2mcMrzqssMRQdT5LGAkGU2sE`
+- JOB: $55,522 1h vol, $2,497,072 mcap, +8% 1h  
+  CA `9Pq7aLAbhDG2tTnS22cm6kuysZVcZpLFE368HWuypump`
+- WINTER: $46,236 1h vol, $90,213 mcap, +9% 1h  
+  CA `7dc3gFoyuDCPWjrfZfX99uasJJSceAJx5ucE8bDGpump`
+- Maebashi: $43,757 1h vol, $14,918 mcap, -56% 1h  
+  CA `659ziXQiNko5cdGzPaBKVu81ahHzZMTFKBcNxe5ALXkG`
