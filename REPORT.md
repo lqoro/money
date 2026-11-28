@@ -1,13 +1,13 @@
 # Trencher live report
 
-Updated 2026-11-28T10:17:13Z (paper trading, never real money)
+Updated 2026-11-28T10:32:21Z (paper trading, never real money)
 
 - Equity: $74.23 (-25.8% vs $100 start)
 - Closed trades: 22, 3 wins
 - Fees paid: $14.78 (axiom $2.81, network $9.18, pool $2.66), plus $4.15 lost to slippage
 - New trades: WATCH-ONLY (scans and decides, buys nothing)
-- Brain: subscription, claude-haiku-5-5 for routine calls, claude-opus-5-5 for the daily review; 375 routine calls and 9 plan-limit hits in 48h
-- Watch log: 74 coins being followed, 4432 filed, 0 would-buys (6h follow, sampled every 2 min)
+- Brain: subscription, claude-haiku-5-5 for routine calls, claude-opus-5-5 for the daily review; 374 routine calls and 9 plan-limit hits in 48h
+- Watch log: 73 coins being followed, 4436 filed, 0 would-buys (6h follow, sampled every 2 min)
 
 ## Scorecard (after fees)
 - 22 closed, 3 won (14%), net $-25.79
@@ -73,9 +73,17 @@ Updated 2026-11-28T10:17:13Z (paper trading, never real money)
   CA `H4gHnZ3NCU7Z9XQwGX6YYJNyieGEW8pqwGRUcdSxpump`
 
 ## Last scan
-- 10:16Z: 4 coins, 4 with pairs, 1 passed the market filters, 1 researched
+- 10:31Z: 4 coins, 4 with pairs, 0 passed the market filters, 0 researched
 
 ## Coins it looked at, and why it passed
+- 10:30Z hacked (no setup, $45,175 mcap, $266 5m vol): REJECT, Hack story ("hack" in the name or ticker): these tend to go down, owner rule  
+  CA `FK7bc3fR8UL8uogN2u8J9yEpEbQJKR7yKsp3G8rvpump`
+- 10:24Z JOB (MIGRATED, $3,049,752 mcap, $2,565 5m vol): REJECT, Bundles: 1 linked wallet cluster(s) hold 22.5% of supply (>20%) (V17)  
+  CA `9Pq7aLAbhDG2tTnS22cm6kuysZVcZpLFE368HWuypump`
+- 10:18Z Fireball (DIP, $512,057 mcap, $3,968 5m vol): PASS at conviction 3, PASS. Fireball is a 57%-off DIP with no story behind it. The ticker is shared by 27 copies, the site is 0.9 days old and doesn't show this CA, and the flow is under $10k. Blocker: no catalyst, narrative not rising. (V1, V6, V13)  
+  CA `B9wbjDJ4FbHMsZmoXAkJSTAwuePaJUKbySvnK5zApump`
+- 10:18Z BITCOINU (DIP, $1,259,106 mcap, $4,987 5m vol): PASS at conviction 3, PASS: bottom-buy gate failed. Theme is at 0.89x its hourly pace, no catalyst, and 5m flow is only $4,987 on a 17-copy ticker. The original may be real, but nothing is pulling the crowd back in (V1, V6, V13).  
+  CA `ATbAsdCwrhhVg23DRnWpjqx6kx7ivoK5o8ysNmu1pump`
 - 10:16Z Mojave (MIGRATED, $35,953 mcap, $30,715 5m vol): PASS at conviction 3, PASS. Blocker: chasing spike. 5m flow is 6.7x hourly pace, no printed higher low, and it's a 23-copy Mojave field with no project X behind it. Farm risk. (V1, V3, V6)  
   CA `4newt1R5fGEoCKdf9XBgiR6B43iacmnVAR2d4Wt8pump`
 - 10:15Z WLFI (MIGRATED, $286,362 mcap, $3,409 5m vol): PASS at conviction 2, PASS: bundle cluster holds 10.5% in one wallet group, 19% across three, on a choppy saw-tooth chart in an 8-copy vamp field with fading riff flow. Blocker: "split crowd" plus "flow below pace" (V1, V3, V13).  
@@ -88,32 +96,24 @@ Updated 2026-11-28T10:17:13Z (paper trading, never real money)
   CA `9TKbd3VFaMSXsEAicD9JVQWpWwAoLi4fSgWmZL2cpump`
 - 09:48Z SPSC (DIP, $134,840 mcap, $8,769 5m vol): PASS at conviction 3, PASS — DIP with no catalyst and no printed entry. Mid-range above a 1.02e-4 higher low, first resistance too close, and the ticker has 18 copies with the original unproven. Blocker: "no catalyst" (V1, V6, V13).  
   CA `EjdrRG2si1FQ3Bme5g6WSYNHJDrsKUrbGB4Z5xaopump`
-- 09:36Z COMM (DIP, $40,492 mcap, $3,372 5m vol): REJECT, Dip with fading attention is a falling knife, not a dip (5m at 0.20x the hour's pace, under 0.6x)  
-  CA `8i2ssMZBaS3HShu5hoDEV4tVLf5RGXeNJnK3LNTHTH9e`
-- 09:32Z Fireball (DIP, $435,984 mcap, $4,144 5m vol): PASS at conviction 3, PASS: no catalyst, no buzz, 27-copy vamp field, and a 0.8-day-old site that doesn't show this CA. Blocker: no catalyst (V1, V3, V13).  
-  CA `B9wbjDJ4FbHMsZmoXAkJSTAwuePaJUKbySvnK5zApump`
-- 09:32Z BITCOINU (DIP, $1,121,046 mcap, $4,252 5m vol): PASS at conviction 2, PASS — BITCOINU is a 52%-off DIP on a fading Shiba riff, with 5m flow at 0.61x pace and theme volume at 0.32x. No catalyst, no printed higher low. (V1, V6)  
-  CA `ATbAsdCwrhhVg23DRnWpjqx6kx7ivoK5o8ysNmu1pump`
-- 09:32Z FINGART (MIGRATED, $42,860 mcap, $12,103 5m vol): PASS at conviction 2, PASS: FINGART is down 79% from its $205k peak, flow is 0.9x pace, and the site is 6 days old with no CA. Falling knife with no story (V1, V3, V13).  
-  CA `WZVWLfThgm14NN8HRDoyiEeXVvdUDMzGMHUS3VLpump`
 
 ## What its skips did next (last 48h)
 A skip "ran" if the coin reached the first target (1.5x) from the skip price before a 20% drop, "dumped" if the drop came first. Sampled every 10 min, followed 6h.
-- top 10 over 25%: blocked 54, ran 11, dumped 38, flat 3, open 2 (saving losses: keep it)
+- top 10 over 25%: blocked 53, ran 11, dumped 38, flat 3, open 1 (saving losses: keep it)
   - ran: Legatum up to 2.21x  
     CA `HkPSDYRcw4uqgRzZMDd5sRnMpE4ungR1K8MRNXnBVtQ2`
   - ran: Thankful up to 2.05x  
     CA `E9arxG4RxB7Gxt6U75obonTZzx7vpbc4bUi1dfw3BtUN`
   - ran: MSTR up to 1.69x  
     CA `57sCZ82FwS5Dfs7FN9nshtU5Mkb3w1dqhmPUuCPvpump`
-- flow below pace: blocked 39, ran 4, dumped 28, flat 4, open 3 (saving losses: keep it)
+- flow below pace: blocked 39, ran 4, dumped 28, flat 5, open 2 (saving losses: keep it)
   - ran: PAIR up to 2.1x  
     CA `32rBxcFjCFnyqZ41CEPM5AL67X1dcw8w83vZt6Kxpump`
   - ran: Hoppy up to 1.76x  
     CA `CFX1gH7CKYwqYXrfDkS2MUxJcEhs8PT63DyRA1chpump`
   - ran: SpaceXCoin up to 1.52x  
     CA `G2XqmSc8vJpLLwaLVXUeNkxsrhVT8vQ3Pje8MqeDpump`
-- near the high / chasing: blocked 37, ran 7, dumped 27, flat 2, open 1 (saving losses: keep it)
+- near the high / chasing: blocked 37, ran 7, dumped 28, flat 2, open 0 (saving losses: keep it)
   - ran: urcoin up to 1.71x  
     CA `25m4Lkct8nsYyqAMeE8rvjM3y5Zrrax46TLqNJjbpump`
   - ran: Meme up to 2.06x  
@@ -130,7 +130,7 @@ A skip "ran" if the coin reached the first target (1.5x) from the skip price bef
 - falling knife (code): blocked 23, ran 1, dumped 21, flat 0, open 1 (saving losses: keep it)
   - ran: Split up to 1.54x  
     CA `HAP9FcXubD88SjRHMY1kr5iukpRZgeMAgCBam3Vtpump`
-- bundles over the line: blocked 21, ran 3, dumped 14, flat 4, open 0 (saving losses: keep it)
+- bundles over the line: blocked 21, ran 3, dumped 14, flat 3, open 1 (saving losses: keep it)
   - ran: Dragon up to 1.55x  
     CA `cg3HaDWhAKFfj9aq79TWUBgmxfs4G7byQ7feaxnpump`
   - ran: monky up to 96.37x  
@@ -191,13 +191,13 @@ No edge after costs, and I'm fairly sure of that. All 250 settled coins averaged
 The movers are active but short-lived. The 5-minute leaders are fresh pump.fun joke launches and riffs on the Trump-family names, while the animal, cold and holiday coins have faded to a few hundred dollars of volume. Rising: The Pumpfun Bull (HPD) is 0.3h old, $18.9k cap, +525% in 1h, $7.1k 5m and 64% buys, with Bot Fight Club and Crime Inu behind it on much thinner flow. Fading: the WLFI and USD1 riffs (-33% and -39% in 1h, USD1 at 49% buys), even with the Trump dinner headlines loud; TRUMP itself is not in the movers. Setups to research now: HPD only as a new-pair probe if holders and bundles clear, since it's still on the bonding curve and most die around 30-40k; FINGART only as a dip watch (-58% in 1h, but 75% buys on $9.2k 5m), and only if a prior peak near 70k+ is confirmed. SPSC from the summary is not in this scan data, so I have not verified it.
 
 ## Moving most in its scans, last 30 min (1h volume)
-- USD1: $114,880 1h vol, $1,495 mcap, -97% 1h  
+- USD1: $96,498 1h vol, $1,495 mcap, -97% 1h  
   CA `8Y24KBnY9gaNWDaxohxtEU1gxESvfwdYeGFuHJKpump`
-- SMOOTH: $100,811 1h vol, $18,963 mcap, +796% 1h  
-  CA `2n5tTb5UXKABFXYRxDEjtDpWFh5ZFk7oRcNLDML5pump`
-- HPD: $64,668 1h vol, $17,204 mcap, -41% 1h  
+- JOB: $74,813 1h vol, $3,049,752 mcap, +13% 1h  
+  CA `9Pq7aLAbhDG2tTnS22cm6kuysZVcZpLFE368HWuypump`
+- HPD: $73,591 1h vol, $8,970 mcap, -69% 1h  
   CA `4cZsB6UgdUBTi13JMusBap9r2qGW1MPrdaSVAYkSpump`
-- SPSC: $60,056 1h vol, $130,871 mcap, -15% 1h  
-  CA `EjdrRG2si1FQ3Bme5g6WSYNHJDrsKUrbGB4Z5xaopump`
+- BITCOINU: $72,512 1h vol, $1,259,106 mcap, +8% 1h  
+  CA `ATbAsdCwrhhVg23DRnWpjqx6kx7ivoK5o8ysNmu1pump`
 - Mojave: $56,323 1h vol, $30,913 mcap, +7% 1h  
   CA `4newt1R5fGEoCKdf9XBgiR6B43iacmnVAR2d4Wt8pump`
