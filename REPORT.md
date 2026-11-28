@@ -1,13 +1,13 @@
 # Trencher live report
 
-Updated 2026-11-28T09:31:29Z (paper trading, never real money)
+Updated 2026-11-28T09:46:42Z (paper trading, never real money)
 
 - Equity: $74.23 (-25.8% vs $100 start)
 - Closed trades: 22, 3 wins
 - Fees paid: $14.78 (axiom $2.81, network $9.18, pool $2.66), plus $4.15 lost to slippage
 - New trades: WATCH-ONLY (scans and decides, buys nothing)
-- Brain: subscription, claude-haiku-5-5 for routine calls, claude-opus-5-5 for the daily review; 370 routine calls and 9 plan-limit hits in 48h
-- Watch log: 74 coins being followed, 4422 filed, 0 would-buys (6h follow, sampled every 2 min)
+- Brain: subscription, claude-haiku-5-5 for routine calls, claude-opus-5-5 for the daily review; 373 routine calls and 9 plan-limit hits in 48h
+- Watch log: 73 coins being followed, 4427 filed, 0 would-buys (6h follow, sampled every 2 min)
 
 ## Scorecard (after fees)
 - 22 closed, 3 won (14%), net $-25.79
@@ -73,9 +73,17 @@ Updated 2026-11-28T09:31:29Z (paper trading, never real money)
   CA `H4gHnZ3NCU7Z9XQwGX6YYJNyieGEW8pqwGRUcdSxpump`
 
 ## Last scan
-- 09:30Z: 3 coins, 3 with pairs, 1 passed the market filters, 1 researched
+- 09:46Z: 4 coins, 4 with pairs, 0 passed the market filters, 0 researched
 
 ## Coins it looked at, and why it passed
+- 09:36Z COMM (DIP, $40,492 mcap, $3,372 5m vol): REJECT, Dip with fading attention is a falling knife, not a dip (5m at 0.20x the hour's pace, under 0.6x)  
+  CA `8i2ssMZBaS3HShu5hoDEV4tVLf5RGXeNJnK3LNTHTH9e`
+- 09:32Z Fireball (DIP, $435,984 mcap, $4,144 5m vol): PASS at conviction 3, PASS: no catalyst, no buzz, 27-copy vamp field, and a 0.8-day-old site that doesn't show this CA. Blocker: no catalyst (V1, V3, V13).  
+  CA `B9wbjDJ4FbHMsZmoXAkJSTAwuePaJUKbySvnK5zApump`
+- 09:32Z BITCOINU (DIP, $1,121,046 mcap, $4,252 5m vol): PASS at conviction 2, PASS — BITCOINU is a 52%-off DIP on a fading Shiba riff, with 5m flow at 0.61x pace and theme volume at 0.32x. No catalyst, no printed higher low. (V1, V6)  
+  CA `ATbAsdCwrhhVg23DRnWpjqx6kx7ivoK5o8ysNmu1pump`
+- 09:32Z FINGART (MIGRATED, $42,860 mcap, $12,103 5m vol): PASS at conviction 2, PASS: FINGART is down 79% from its $205k peak, flow is 0.9x pace, and the site is 6 days old with no CA. Falling knife with no story (V1, V3, V13).  
+  CA `WZVWLfThgm14NN8HRDoyiEeXVvdUDMzGMHUS3VLpump`
 - 09:30Z USD1 (DIP, $49,900 mcap, $9,833 5m vol): REJECT, Bundles: 10 linked wallet cluster(s) hold 100.0% of supply (>20%) (V17)  
   CA `8Y24KBnY9gaNWDaxohxtEU1gxESvfwdYeGFuHJKpump`
 - 09:29Z WLFI (MIGRATED, $230,884 mcap, $4,034 5m vol): PASS at conviction 3, PASS — flow below pace, no printed higher low, and a 10.5% bundle on a crude joke coin with a fading meta. Blocker: "flow below pace" (V1, V6, V3).  
@@ -88,14 +96,6 @@ Updated 2026-11-28T09:31:29Z (paper trading, never real money)
   CA `EwUVBpdM5vw1CJHRMSLywzVjyQSJZpy6qboxEPBKpump`
 - 09:01Z SPSC (DIP, $108,948 mcap, $6,010 5m vol): PASS at conviction 2, PASS: SPSC is a 59.7% DIP with clean holders, but flow is 0.69x pace, the theme runs at 0.67x, and no printed higher low or catalyst exists. Blocker: "flow below pace" and "no higher low" (V1, V6).  
   CA `EjdrRG2si1FQ3Bme5g6WSYNHJDrsKUrbGB4Z5xaopump`
-- 08:54Z USD1 (DIP, $35,776 mcap, $2,713 5m vol): REJECT, Dip with fading attention is a falling knife, not a dip (5m at 0.38x the hour's pace, under 0.6x)  
-  CA `B29od4bd54VAVAqJFToRKkKJadUGK5v8pkAVb5uvpump`
-- 08:46Z Fireball (DIP, $427,803 mcap, $4,168 5m vol): PASS at conviction 3, PASS. Bottom buy with no catalyst, zero buzz, 26-copy field, and a site that doesn't show this CA. Blocker: no catalyst on a DIP (V1, V6, V13).  
-  CA `B9wbjDJ4FbHMsZmoXAkJSTAwuePaJUKbySvnK5zApump`
-- 08:46Z BITCOINU (DIP, $1,234,752 mcap, $5,668 5m vol): REJECT, Dip with fading attention is a falling knife, not a dip (5m at 0.43x the hour's pace, under 0.6x)  
-  CA `ATbAsdCwrhhVg23DRnWpjqx6kx7ivoK5o8ysNmu1pump`
-- 08:46Z FINGART (DIP, $86,872 mcap, $13,904 5m vol): PASS at conviction 3, PASS: DIP with no catalyst and no printed higher low. The story is dead air, not a bottom. (V1, V6)  
-  CA `WZVWLfThgm14NN8HRDoyiEeXVvdUDMzGMHUS3VLpump`
 
 ## What its skips did next (last 48h)
 A skip "ran" if the coin reached the first target (1.5x) from the skip price before a 20% drop, "dumped" if the drop came first. Sampled every 10 min, followed 6h.
@@ -106,7 +106,7 @@ A skip "ran" if the coin reached the first target (1.5x) from the skip price bef
     CA `E9arxG4RxB7Gxt6U75obonTZzx7vpbc4bUi1dfw3BtUN`
   - ran: MSTR up to 1.69x  
     CA `57sCZ82FwS5Dfs7FN9nshtU5Mkb3w1dqhmPUuCPvpump`
-- flow below pace: blocked 38, ran 4, dumped 28, flat 4, open 2 (saving losses: keep it)
+- flow below pace: blocked 40, ran 4, dumped 29, flat 4, open 3 (saving losses: keep it)
   - ran: PAIR up to 2.1x  
     CA `32rBxcFjCFnyqZ41CEPM5AL67X1dcw8w83vZt6Kxpump`
   - ran: Hoppy up to 1.76x  
@@ -127,15 +127,17 @@ A skip "ran" if the coin reached the first target (1.5x) from the skip price bef
     CA `CV1NPi8L2PSYMfALBh7GCfUwELZzG3DrLUUjCkeapump`
   - ran: IceBall up to 1.67x  
     CA `6PFm828RKNJqKvjXQz82hhGvGNWFXZcBHNCF4U7spump`
-- bundles over the line: blocked 23, ran 2, dumped 16, flat 4, open 1 (saving losses: keep it)
+- bundles over the line: blocked 23, ran 3, dumped 16, flat 4, open 0 (saving losses: keep it)
   - ran: Dragon up to 1.55x  
     CA `cg3HaDWhAKFfj9aq79TWUBgmxfs4G7byQ7feaxnpump`
   - ran: monky up to 96.37x  
     CA `At5hmwDn4YgPDoic1UN7zMdTtCoiXJsMhnKaoazEpump`
-- falling knife (code): blocked 23, ran 1, dumped 21, flat 0, open 1 (saving losses: keep it)
+  - ran: USD1 up to 1.55x  
+    CA `8Y24KBnY9gaNWDaxohxtEU1gxESvfwdYeGFuHJKpump`
+- falling knife (code): blocked 23, ran 1, dumped 20, flat 0, open 2 (saving losses: keep it)
   - ran: Split up to 1.54x  
     CA `HAP9FcXubD88SjRHMY1kr5iukpRZgeMAgCBam3Vtpump`
-- falling knife / no higher low: blocked 19, ran 2, dumped 14, flat 2, open 1 (saving losses: keep it)
+- falling knife / no higher low: blocked 18, ran 2, dumped 13, flat 2, open 1 (saving losses: keep it)
   - ran: Maru up to 1.88x  
     CA `FokVFH6mDsazoKbtnUaA2FRMsRbDSwZhNfn17Fdvpump`
   - ran: Hoppy up to 1.76x  
@@ -184,16 +186,16 @@ No edge after costs, and I'm fairly sure of that. All 250 settled coins averaged
 - [2026-11-02 20:25] I expected Slingoor, a clean MIGRATED leader with $25k of 5m flow at pace and a 0.77 buy share, to retest its $408k high from $304k. It never went green (0.98x peak) and hit the -20% stop in 2 minutes, a -$2.86 probe. My own thesis admitted there was no printed higher low after a peak only 6 minutes old, so this confirms the money-shape rule: buy share and flow are not structure (V1, V6). Next time a MIGRATED pullback with no higher low above the hourly low is a PASS with blocker "no higher low", not a probe. This is one loss, so it adds no new ban beyond the rule I already have.
 
 ## Meta right now
-The meta on the scan is fresh pump.fun joke launches under about an hour old, with crude or silly names (Crime Inu, Bot Fight Club, ascend, Småkager the Pygmy Hippo) pulling $8k to $14k of 5-minute volume and 55 to 62% buys. The animal, cold and holiday riffs are fading: Snowball is down 20% in 1h with $1.1k of 5m volume, WINTER ARC has $1.3k, SANTA FACTORY has $65 and Wizard Cat has $141. The Trump dinner headlines are loud, but no coin on the scan carries them, so I'm not calling that the meta. The sub-hour pump.fun names are new-pair territory (V1, V5), a frenzy that dies fast, so I'm watching them, not buying. The one that fits the MIGRATED rules is SPSC ($164k cap, 2.3h old, $15.5k 5m, 56% buys, +41% 1h, on PumpSwap). Research it next: holders, bundles, dev and original-token checks come first, and at best it's a 5/10 probe if they clear. The market isn't quiet, the movers are active, just short-lived.
+The movers are active but short-lived. The 5-minute leaders are fresh pump.fun joke launches and riffs on the Trump-family names, while the animal, cold and holiday coins have faded to a few hundred dollars of volume. Rising: The Pumpfun Bull (HPD) is 0.3h old, $18.9k cap, +525% in 1h, $7.1k 5m and 64% buys, with Bot Fight Club and Crime Inu behind it on much thinner flow. Fading: the WLFI and USD1 riffs (-33% and -39% in 1h, USD1 at 49% buys), even with the Trump dinner headlines loud; TRUMP itself is not in the movers. Setups to research now: HPD only as a new-pair probe if holders and bundles clear, since it's still on the bonding curve and most die around 30-40k; FINGART only as a dip watch (-58% in 1h, but 75% buys on $9.2k 5m), and only if a prior peak near 70k+ is confirmed. SPSC from the summary is not in this scan data, so I have not verified it.
 
 ## Moving most in its scans, last 30 min (1h volume)
-- COMM: $202,383 1h vol, $29,798 mcap, +2% 1h  
+- COMM: $198,100 1h vol, $39,555 mcap, +28% 1h  
   CA `8i2ssMZBaS3HShu5hoDEV4tVLf5RGXeNJnK3LNTHTH9e`
+- FINGART: $160,199 1h vol, $45,142 mcap, -58% 1h  
+  CA `WZVWLfThgm14NN8HRDoyiEeXVvdUDMzGMHUS3VLpump`
 - USD1: $120,791 1h vol, $49,900 mcap, -39% 1h  
   CA `8Y24KBnY9gaNWDaxohxtEU1gxESvfwdYeGFuHJKpump`
-- SPSC: $104,372 1h vol, $108,948 mcap, -54% 1h  
-  CA `EjdrRG2si1FQ3Bme5g6WSYNHJDrsKUrbGB4Z5xaopump`
 - WLFI: $94,219 1h vol, $230,884 mcap, -33% 1h  
   CA `HmGQsYJyeiWrV6jABUY2Cb3bEmVxwk6LzVxCchsCpump`
-- CI: $65,466 1h vol, $4,317 mcap, -85% 1h  
-  CA `GggaHk9atb7LYq16S2X6FwjQdZT8D8YQ6vydeosgFGtg`
+- BITCOINU: $83,046 1h vol, $1,121,046 mcap, -15% 1h  
+  CA `ATbAsdCwrhhVg23DRnWpjqx6kx7ivoK5o8ysNmu1pump`
