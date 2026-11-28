@@ -1,13 +1,13 @@
 # Trencher live report
 
-Updated 2026-11-28T05:43:50Z (paper trading, never real money)
+Updated 2026-11-28T05:58:54Z (paper trading, never real money)
 
 - Equity: $74.23 (-25.8% vs $100 start)
 - Closed trades: 22, 3 wins
 - Fees paid: $14.78 (axiom $2.81, network $9.18, pool $2.66), plus $4.15 lost to slippage
 - New trades: WATCH-ONLY (scans and decides, buys nothing)
-- Brain: subscription, claude-haiku-5-5 for routine calls, claude-opus-5-5 for the daily review; 368 routine calls and 9 plan-limit hits in 48h
-- Watch log: 78 coins being followed, 4372 filed, 0 would-buys (6h follow, sampled every 2 min)
+- Brain: subscription, claude-haiku-5-5 for routine calls, claude-opus-5-5 for the daily review; 367 routine calls and 9 plan-limit hits in 48h
+- Watch log: 75 coins being followed, 4375 filed, 0 would-buys (6h follow, sampled every 2 min)
 
 ## Scorecard (after fees)
 - 22 closed, 3 won (14%), net $-25.79
@@ -73,7 +73,7 @@ Updated 2026-11-28T05:43:50Z (paper trading, never real money)
   CA `H4gHnZ3NCU7Z9XQwGX6YYJNyieGEW8pqwGRUcdSxpump`
 
 ## Last scan
-- 05:43Z: 6 coins, 6 with pairs, 2 passed the market filters, 2 researched
+- 05:58Z: 6 coins, 6 with pairs, 0 passed the market filters, 0 researched
 
 ## Coins it looked at, and why it passed
 - 05:43Z Fireball (DIP, $415,175 mcap, $3,463 5m vol): PASS at conviction 3, PASS: 65% dip on a 28-copy ticker with no catalyst, theme flow at 0.93x pace, and the team's site doesn't show this CA (V3, V13).  
@@ -134,7 +134,7 @@ A skip "ran" if the coin reached the first target (1.5x) from the skip price bef
     CA `cg3HaDWhAKFfj9aq79TWUBgmxfs4G7byQ7feaxnpump`
   - ran: monky up to 96.37x  
     CA `At5hmwDn4YgPDoic1UN7zMdTtCoiXJsMhnKaoazEpump`
-- falling knife (code): blocked 23, ran 1, dumped 20, flat 0, open 2 (saving losses: keep it)
+- falling knife (code): blocked 23, ran 1, dumped 21, flat 0, open 1 (saving losses: keep it)
   - ran: Split up to 1.54x  
     CA `HAP9FcXubD88SjRHMY1kr5iukpRZgeMAgCBam3Vtpump`
 - falling knife / no higher low: blocked 13, ran 2, dumped 9, flat 1, open 1 (saving losses: keep it)
@@ -193,11 +193,11 @@ The meta right now is joke pump.fun names with animal and cold-weather themes, n
 ## Moving most in its scans, last 30 min (1h volume)
 - BITCOINU: $897,362 1h vol, $1,043,575 mcap, +2809% 1h  
   CA `ATbAsdCwrhhVg23DRnWpjqx6kx7ivoK5o8ysNmu1pump`
-- Frogger: $518,113 1h vol, $136,353 mcap, +355% 1h  
-  CA `GGatn9GfrvRgFMFZy9ZSaTsKmpwnzCTogmocLHCjpump`
-- RICE: $504,942 1h vol, $96,253 mcap, -34% 1h  
-  CA `3rVr2RBzEXXKf1cVvZ6HBvFg2XmBK4iMgZv9q9q4pump`
-- MEMES: $87,836 1h vol, $10,985 mcap, -63% 1h  
+- MEMES: $70,108 1h vol, $8,489 mcap, -26% 1h  
   CA `HpN63T13XBcp2xmM6yRkGPB5HMwxtXTghCQjooS8pump`
-- Scheme: $64,775 1h vol, $2,304 mcap, -35% 1h  
+- Scheme: $64,878 1h vol, $2,251 mcap, -36% 1h  
   CA `8vRpccP2dRn8mpwCQGJTsmDPxbroxXHdsvXzoQ8Hpump`
+- COMMODITY: $57,274 1h vol, $2,667 mcap, -32% 1h  
+  CA `66WtdGBwzHL1kJodjvhWUj1Uo3UycFVRhLWQ96uwpump`
+- NOOB: $45,573 1h vol, $2,242 mcap, -2% 1h  
+  CA `AzHmsArsXu6LVjHeeBQTamYVnAV5Z18b5t6k2DoGpump`
