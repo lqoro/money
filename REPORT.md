@@ -1,13 +1,13 @@
 # Trencher live report
 
-Updated 2026-11-28T08:00:40Z (paper trading, never real money)
+Updated 2026-11-28T08:15:49Z (paper trading, never real money)
 
 - Equity: $74.23 (-25.8% vs $100 start)
 - Closed trades: 22, 3 wins
 - Fees paid: $14.78 (axiom $2.81, network $9.18, pool $2.66), plus $4.15 lost to slippage
 - New trades: WATCH-ONLY (scans and decides, buys nothing)
-- Brain: subscription, claude-haiku-5-5 for routine calls, claude-opus-5-5 for the daily review; 368 routine calls and 9 plan-limit hits in 48h
-- Watch log: 76 coins being followed, 4403 filed, 0 would-buys (6h follow, sampled every 2 min)
+- Brain: subscription, claude-haiku-5-5 for routine calls, claude-opus-5-5 for the daily review; 370 routine calls and 9 plan-limit hits in 48h
+- Watch log: 76 coins being followed, 4406 filed, 0 would-buys (6h follow, sampled every 2 min)
 
 ## Scorecard (after fees)
 - 22 closed, 3 won (14%), net $-25.79
@@ -73,9 +73,15 @@ Updated 2026-11-28T08:00:40Z (paper trading, never real money)
   CA `H4gHnZ3NCU7Z9XQwGX6YYJNyieGEW8pqwGRUcdSxpump`
 
 ## Last scan
-- 07:59Z: 4 coins, 4 with pairs, 3 passed the market filters, 3 researched
+- 08:15Z: 5 coins, 4 with pairs, 0 passed the market filters, 0 researched
 
 ## Coins it looked at, and why it passed
+- 08:08Z USD1 (DIP, $36,263 mcap, $20,440 5m vol): PASS at conviction 3, PASS: falling knife with no printed higher low, on a fading stablecoin-riff meta. Blocker: "no higher low" + "narrative not rising." (V1, V6)  
+  CA `B29od4bd54VAVAqJFToRKkKJadUGK5v8pkAVb5uvpump`
+- 08:06Z RICE (MIGRATED, $42,618 mcap, $9,497 5m vol): PASS at conviction 2, PASS: falling knife with no higher low. RICE is 79.5% off its $208k high, down 36.5% on the 5m, and the last 15m close (4.30e-5) is below the prior 4.56e-5 low. Blocker: "no higher low" (V1, V6).  
+  CA `3rVr2RBzEXXKf1cVvZ6HBvFg2XmBK4iMgZv9q9q4pump`
+- 08:01Z BITCOINU (DIP, $829,339 mcap, $5,690 5m vol): PASS at conviction 2, PASS: bottom buy with no catalyst, theme flow at 0.86x of its hourly pace, and 14 same-ticker copies. Nothing is rising here (owner bottom-buy rule, V1, V13).  
+  CA `ATbAsdCwrhhVg23DRnWpjqx6kx7ivoK5o8ysNmu1pump`
 - 08:00Z Fireball (DIP, $422,630 mcap, $3,424 5m vol): PASS at conviction 2, PASS: flow below pace and no catalyst on a 26-copy Fireball field. Blocker: "flow below pace" (5m at 0.61x hourly, under the 0.7x dip gate). (V1, V6, V13)  
   CA `B9wbjDJ4FbHMsZmoXAkJSTAwuePaJUKbySvnK5zApump`
 - 07:59Z FINGART (DIP, $91,545 mcap, $4,723 5m vol): REJECT, Dip with fading attention is a falling knife, not a dip (5m at 0.42x the hour's pace, under 0.6x)  
@@ -90,16 +96,10 @@ Updated 2026-11-28T08:00:40Z (paper trading, never real money)
   CA `7dc3gFoyuDCPWjrfZfX99uasJJSceAJx5ucE8bDGpump`
 - 07:38Z Småkager (no setup, $14,371 mcap, $32,187 5m vol): REJECT, No setup fits: not Final Stretch, not a migrated runner, not a healthy dip  
   CA `BW98q4cYxCeJM3uoB43Yy2e1EcjF4fPpeAuRkrhWpump`
-- 07:31Z SPSC (MIGRATED, $144,745 mcap, $3,777 5m vol): PASS at conviction 3, PASS: flow below pace (0.27x hourly, $3.8k on 5m vs $10k bar), no breakout, no catalyst. Dead joke-ticker field. (V1, V6)  
-  CA `EjdrRG2si1FQ3Bme5g6WSYNHJDrsKUrbGB4Z5xaopump`
-- 07:28Z hacked (no setup, $58,558 mcap, $0 5m vol): REJECT, Hack story ("hack" in the name or ticker): these tend to go down, owner rule  
-  CA `FK7bc3fR8UL8uogN2u8J9yEpEbQJKR7yKsp3G8rvpump`
-- 07:23Z USD1 (DIP, $42,469 mcap, $16,721 5m vol): PASS at conviction 2, PASS: 17-minute-old USD1 copy, 56% off a $97k spike, still falling (5m -19.9%), no printed higher low, 8-copy vamp field. Falling knife in a split crowd (V1, V3, V6).  
-  CA `B29od4bd54VAVAqJFToRKkKJadUGK5v8pkAVb5uvpump`
 
 ## What its skips did next (last 48h)
 A skip "ran" if the coin reached the first target (1.5x) from the skip price before a 20% drop, "dumped" if the drop came first. Sampled every 10 min, followed 6h.
-- top 10 over 25%: blocked 55, ran 11, dumped 40, flat 4, open 0 (saving losses: keep it)
+- top 10 over 25%: blocked 54, ran 11, dumped 39, flat 4, open 0 (saving losses: keep it)
   - ran: Legatum up to 2.21x  
     CA `HkPSDYRcw4uqgRzZMDd5sRnMpE4ungR1K8MRNXnBVtQ2`
   - ran: Thankful up to 2.05x  
@@ -137,13 +137,11 @@ A skip "ran" if the coin reached the first target (1.5x) from the skip price bef
 - falling knife (code): blocked 22, ran 1, dumped 19, flat 0, open 2 (saving losses: keep it)
   - ran: Split up to 1.54x  
     CA `HAP9FcXubD88SjRHMY1kr5iukpRZgeMAgCBam3Vtpump`
-- falling knife / no higher low: blocked 16, ran 3, dumped 9, flat 2, open 2 (saving losses: keep it)
+- falling knife / no higher low: blocked 16, ran 2, dumped 10, flat 2, open 2 (saving losses: keep it)
   - ran: Maru up to 1.88x  
     CA `FokVFH6mDsazoKbtnUaA2FRMsRbDSwZhNfn17Fdvpump`
   - ran: Hoppy up to 1.76x  
     CA `CFX1gH7CKYwqYXrfDkS2MUxJcEhs8PT63DyRA1chpump`
-  - ran: USD1 up to 1.51x  
-    CA `B29od4bd54VAVAqJFToRKkKJadUGK5v8pkAVb5uvpump`
 - other: blocked 11, ran 1, dumped 7, flat 0, open 3 (saving losses: keep it)
   - ran: Christmas up to 1.89x  
     CA `5hkBYuFQDpAAqemCiVqXCuU6Ya5dqKhtRobzJsg6pump`
@@ -191,13 +189,13 @@ No edge after costs, and I'm fairly sure of that. All 250 settled coins averaged
 Meta: joke-named pump.fun launches under a few hours old are where the 5-minute money is, and riffs on big names ride along with them. The cold/animal theme is fading (WINTER ARC -14% 1h, Snowball -13% 1h), and the Trump dinner story is in the headlines but no mover carries it. The burst pattern kills most of these: USD1 ($42k cap, $16.7k 5m, 56% buys, -27% 1h) and FINGART are live, while WORTHLESS ($0 5m), Groo (-95% 1h) and AirCoin ($26 5m) are dead, so this is frenzy that dies fast. WLFI ($282k cap, $12.5k 5m, 53% buys, 5m running at about half its hourly pace) shares a ticker and a riff name with World Liberty's token, so the right-token and vamp check comes before anything else. Setups to research, not buy yet: WLFI only if the original is confirmed and 5m volume holds above $10k with buys above 60%; FINGART (1.1h old, $110k cap) fails the $10k 5m bar at $7.1k until flow returns; USD1 is a fade-risk watch, not a setup. online and gondola are sub-hour bonding-curve launches, which is sniping, so I pass on them. The crawler's FINGART and Frogger figures don't match the scan, so I'm using the scan numbers.
 
 ## Moving most in its scans, last 30 min (1h volume)
+- USD1: $238,858 1h vol, $36,263 mcap, -47% 1h  
+  CA `B29od4bd54VAVAqJFToRKkKJadUGK5v8pkAVb5uvpump`
 - WLFI: $167,084 1h vol, $259,349 mcap, +37% 1h  
   CA `HmGQsYJyeiWrV6jABUY2Cb3bEmVxwk6LzVxCchsCpump`
-- SPSC: $166,058 1h vol, $144,745 mcap, +54% 1h  
-  CA `EjdrRG2si1FQ3Bme5g6WSYNHJDrsKUrbGB4Z5xaopump`
 - FINGART: $135,423 1h vol, $87,621 mcap, -19% 1h  
   CA `WZVWLfThgm14NN8HRDoyiEeXVvdUDMzGMHUS3VLpump`
 - USD1: $112,939 1h vol, $76,929 mcap, +158% 1h  
   CA `8Y24KBnY9gaNWDaxohxtEU1gxESvfwdYeGFuHJKpump`
-- Fireball: $66,877 1h vol, $422,630 mcap, -8% 1h  
-  CA `B9wbjDJ4FbHMsZmoXAkJSTAwuePaJUKbySvnK5zApump`
+- BITCOINU: $79,597 1h vol, $829,339 mcap, +0% 1h  
+  CA `ATbAsdCwrhhVg23DRnWpjqx6kx7ivoK5o8ysNmu1pump`
