@@ -1,13 +1,13 @@
 # Trencher live report
 
-Updated 2026-11-28T03:27:53Z (paper trading, never real money)
+Updated 2026-11-28T03:42:55Z (paper trading, never real money)
 
 - Equity: $74.23 (-25.8% vs $100 start)
 - Closed trades: 22, 3 wins
 - Fees paid: $14.78 (axiom $2.81, network $9.18, pool $2.66), plus $4.15 lost to slippage
 - New trades: WATCH-ONLY (scans and decides, buys nothing)
-- Brain: subscription, claude-haiku-5-5 for routine calls, claude-opus-5-5 for the daily review; 377 routine calls and 9 plan-limit hits in 48h
-- Watch log: 81 coins being followed, 4340 filed, 0 would-buys (6h follow, sampled every 2 min)
+- Brain: subscription, claude-haiku-5-5 for routine calls, claude-opus-5-5 for the daily review; 375 routine calls and 9 plan-limit hits in 48h
+- Watch log: 81 coins being followed, 4344 filed, 0 would-buys (6h follow, sampled every 2 min)
 
 ## Scorecard (after fees)
 - 22 closed, 3 won (14%), net $-25.79
@@ -73,9 +73,17 @@ Updated 2026-11-28T03:27:53Z (paper trading, never real money)
   CA `H4gHnZ3NCU7Z9XQwGX6YYJNyieGEW8pqwGRUcdSxpump`
 
 ## Last scan
-- 03:27Z: 5 coins, 4 with pairs, 0 passed the market filters, 0 researched
+- 03:41Z: 7 coins, 6 with pairs, 0 passed the market filters, 0 researched
 
 ## Coins it looked at, and why it passed
+- 03:39Z DCTY (MIGRATED, $63,752 mcap, $44,701 5m vol): REJECT, Bundles: 6 linked wallet cluster(s) hold 33.3% of supply (>20%) (V17)  
+  CA `FKzLbmXpyk3qxY4j3CbxqwjdtbCWb1HZZttok9AD5dio`
+- 03:34Z Snowball (DIP, $313,502 mcap, $1,523 5m vol): REJECT, 5m volume $1,523 is dead (<$2,000) (V1)  
+  CA `9TKbd3VFaMSXsEAicD9JVQWpWwAoLi4fSgWmZL2cpump`
+- 03:33Z JEFFLE (MIGRATED, $50,254 mcap, $9,570 5m vol): REJECT, Top 10 hold 26.6% ex-pool (>25%) (V13)  
+  CA `BRRktKPa8m4dMrQ1fT6fLJABQjYUqLaEhPuMHxUvpump`
+- 03:29Z BTCBALLS (MIGRATED, $606,694 mcap, $79,896 5m vol): REJECT, Top 10 hold 49.9% ex-pool (>25%) (V13)  
+  CA `APmirEVL5wkbYVZ88TDdr9cwJ6WfRCWuzm4wQWyzpump`
 - 03:26Z Fireball (DIP, $386,619 mcap, $9,582 5m vol): PASS at conviction 3, PASS. Fresh breakdown under the range with no higher low, a 0.6-day-old site that doesn't show this CA, and 28 same-name copies. Falling knife, not a DIP (V1, V6, V13).  
   CA `B9wbjDJ4FbHMsZmoXAkJSTAwuePaJUKbySvnK5zApump`
 - 03:26Z hacked (no setup, $62,648 mcap, $72 5m vol): REJECT, Hack story ("hack" in the name or ticker): these tend to go down, owner rule  
@@ -88,18 +96,10 @@ Updated 2026-11-28T03:27:53Z (paper trading, never real money)
   CA `4HdH4EKBKCVaPD9f4TxdGhcWyhm259qKa7JHSGhMpump`
 - 02:57Z Vicewire (DIP, $47,352 mcap, $3,573 5m vol): PASS at conviction 2, PASS: Vicewire is a DIP with no catalyst, 5m flow under the theme's pace, and the 5m candle is down 27%. Blocker: "dead story" (weak theme, no buzz). (V1, V6, V13)  
   CA `viCEWiReoWxwmRRfGmWmpP1FFdB8Jm8PzZChVJ9dvg6`
-- 02:53Z Memeball (MIGRATED, $767,965 mcap, $3,345 5m vol): PASS at conviction 2, PASS: chasing. Memeball is 3.7% off a $798k high after a 4x run off the hourly low, 5m flow is at 0.93x pace, and the CA on its site says "TBA". Blockers: "chasing", "flow below pace", "no higher low". (V1, V6, V13)  
-  CA `9G9Ssh55SZEoniFjMrMefug9fBy67bUvHzWAxb5Ypump`
-- 02:50Z paired (MIGRATED, $61,573 mcap, $29,990 5m vol): REJECT, RugCheck danger: Creator history of rugged tokens  
-  CA `8dUqZ1dwPZUF2eGAUN4UotMnnrxrxRoS7gCyctFLpump`
-- 02:48Z JEFFLE (MIGRATED, $56,534 mcap, $40,713 5m vol): PASS at conviction 3, PASS: chasing spike, too new, split crowd. JEFFLE is 7 minutes old, up 44% on 5m, with no printed higher low and a 19-copy same-ticker field. Blockers: chasing spike, too new, split crowd (V1, V3, V6).  
-  CA `BRRktKPa8m4dMrQ1fT6fLJABQjYUqLaEhPuMHxUvpump`
-- 02:40Z Fireball (DIP, $512,498 mcap, $3,397 5m vol): REJECT, Dip with fading attention is a falling knife, not a dip (5m at 0.54x the hour's pace, under 0.6x)  
-  CA `B9wbjDJ4FbHMsZmoXAkJSTAwuePaJUKbySvnK5zApump`
 
 ## What its skips did next (last 48h)
 A skip "ran" if the coin reached the first target (1.5x) from the skip price before a 20% drop, "dumped" if the drop came first. Sampled every 10 min, followed 6h.
-- top 10 over 25%: blocked 52, ran 9, dumped 38, flat 3, open 2 (saving losses: keep it)
+- top 10 over 25%: blocked 54, ran 9, dumped 39, flat 3, open 3 (saving losses: keep it)
   - ran: Legatum up to 2.21x  
     CA `HkPSDYRcw4uqgRzZMDd5sRnMpE4ungR1K8MRNXnBVtQ2`
   - ran: Thankful up to 2.05x  
@@ -113,31 +113,31 @@ A skip "ran" if the coin reached the first target (1.5x) from the skip price bef
     CA `CFX1gH7CKYwqYXrfDkS2MUxJcEhs8PT63DyRA1chpump`
   - ran: SpaceXCoin up to 1.52x  
     CA `G2XqmSc8vJpLLwaLVXUeNkxsrhVT8vQ3Pje8MqeDpump`
-- near the high / chasing: blocked 40, ran 8, dumped 29, flat 3, open 0 (saving losses: keep it)
+- near the high / chasing: blocked 39, ran 8, dumped 28, flat 3, open 0 (saving losses: keep it)
   - ran: PPV up to 1.54x  
     CA `CbGrZ3Q2XxSV2oiZsLkDWW1GFjrqUDAzTH9XwVr1pump`
   - ran: urcoin up to 1.71x  
     CA `25m4Lkct8nsYyqAMeE8rvjM3y5Zrrax46TLqNJjbpump`
   - ran: Meme up to 2.06x  
     CA `CV1NPi8L2PSYMfALBh7GCfUwELZzG3DrLUUjCkeapump`
-- too new / sniping: blocked 40, ran 4, dumped 36, flat 0, open 0 (saving losses: keep it)
+- too new / sniping: blocked 38, ran 4, dumped 34, flat 0, open 0 (saving losses: keep it)
   - ran: 2 up to 1.69x  
     CA `HkywsKMf5FDj7QpgRE3BoE2nJqJauxEVbGjpnYe6pump`
   - ran: Pair up to 1.76x  
     CA `EWCfhnj8YjPEbvQXEtwkxMT54WhBpZBLQDFncRoypump`
   - ran: SpaceXCoin up to 1.52x  
     CA `G2XqmSc8vJpLLwaLVXUeNkxsrhVT8vQ3Pje8MqeDpump`
-- bundles over the line: blocked 24, ran 3, dumped 15, flat 5, open 1 (saving losses: keep it)
+- bundles over the line: blocked 25, ran 3, dumped 15, flat 5, open 2 (saving losses: keep it)
   - ran: WIENER up to 1.59x  
     CA `8BDkDfj3ZUvcG9caGzF2XnHfwg7K6fjfKKDvX6SCpump`
   - ran: Dragon up to 1.55x  
     CA `cg3HaDWhAKFfj9aq79TWUBgmxfs4G7byQ7feaxnpump`
   - ran: monky up to 96.37x  
     CA `At5hmwDn4YgPDoic1UN7zMdTtCoiXJsMhnKaoazEpump`
-- falling knife (code): blocked 23, ran 1, dumped 20, flat 0, open 2 (saving losses: keep it)
+- falling knife (code): blocked 23, ran 1, dumped 21, flat 0, open 1 (saving losses: keep it)
   - ran: Split up to 1.54x  
     CA `HAP9FcXubD88SjRHMY1kr5iukpRZgeMAgCBam3Vtpump`
-- falling knife / no higher low: blocked 13, ran 2, dumped 8, flat 1, open 2 (saving losses: keep it)
+- falling knife / no higher low: blocked 12, ran 2, dumped 8, flat 1, open 1 (saving losses: keep it)
   - ran: Maru up to 1.88x  
     CA `FokVFH6mDsazoKbtnUaA2FRMsRbDSwZhNfn17Fdvpump`
   - ran: Hoppy up to 1.76x  
@@ -190,16 +190,16 @@ No edge after costs, and I'm fairly sure of that. All 250 settled coins averaged
 - [2026-11-02 20:25] I expected Slingoor, a clean MIGRATED leader with $25k of 5m flow at pace and a 0.77 buy share, to retest its $408k high from $304k. It never went green (0.98x peak) and hit the -20% stop in 2 minutes, a -$2.86 probe. My own thesis admitted there was no printed higher low after a peak only 6 minutes old, so this confirms the money-shape rule: buy share and flow are not structure (V1, V6). Next time a MIGRATED pullback with no higher low above the hourly low is a PASS with blocker "no higher low", not a probe. This is one loss, so it adds no new ban beyond the rule I already have.
 
 ## Meta right now
-The meta in the trenches right now is fresh pump.fun/PumpSwap launches under about 2 hours old pulling the most 5m volume, with a dog/joke-name thread (DAW, Dawkoins) and a split "-ball" cluster: Memeball has 62% buys at $654k mcap but only $2.9k on 5m, while POWERBALL is fading -47%. Rising now: MANDY ($124k mcap, $24k 5m, 58% buys, +277% 1h, 36 min old) and Midcurve ($88k, $10k 5m, 58% buys, +210% 1h, 1h old). Fading: Crema (-53% in 1h despite $11.6k 5m), JOB (2.7M mcap, 751h old, 32% buys), and WINTER ARC (6h old, $1.5k 5m, so the holiday thread is one weak coin, not a meta). Setups to research, not buy yet: MANDY and Midcurve are the probe candidates at conviction 5 at most, stop below the pullback low, and PASS if top 10 is above 15% or any bundle is above 3%; DAW (about $62k 5m on a $58k coin, 6 min old) is only worth a look if holders are clean, because that turnover is either a real frenzy or a bundle. Discrepancy: the crawler's Crema ($72k mcap, $64k 5m) and Memeball ($6k 5m) figures don't match scan_movers ($35.6k, $11.6k, and $2.9k), so I'm using the scanner numbers, and TOGI isn't in the array at all. The headlines are mostly about Trump's dinner and a declining Trump coin, which the movers don't show, so I'm not anchoring on them. Paper only, not financial advice.
+The trenches are trading fresh pump.fun/PumpSwap launches under about 2 hours old, and the strongest cluster is the "-ball" joke family. BTCBALLS ($607k mcap, $80k 5m, 67% buys, 12 minutes old) is the only ball coin still pulling buyers; Fireball (-23% 1h), Snowball (57h old, $624 5m) and POWERBALL are fading (V1, V6). A second theme is dog and animal joke names: Dawkoins (DAW) spiked but is down 55% in the hour, and JOB (DogWifJob, 752h old, $2.7M mcap, $1.1k 5m) is dead weight. Rising now: Midcurve (scanner $73k mcap, $5k 5m, 59% buys, 1.8h old) and micro-launches like PAIR (+272% 1h) and MARS, though PAIR's sellers are already winning. The crawler's MANDY, Memeball and TOGI are not in scan_movers, and its Crema and DAW mcap figures conflict with the scanner, so I'm using scanner numbers only. Setups to research, not buy yet: Midcurve as a conviction-5 probe with a stop below the pullback low, and BTCBALLS only if holders are clean, since $80k of 5m flow on a 12-minute coin is either a frenzy or a bundle (PASS if top 10 is above 15% or any bundle is above 3%). The Trump and holiday headlines aren't showing in the movers, and WINTER ARC at $1k 5m is one weak coin, not a meta. Paper only, not financial advice.
 
 ## Moving most in its scans, last 30 min (1h volume)
-- MANDY: $341,087 1h vol, $31,888 mcap, -68% 1h  
-  CA `4HdH4EKBKCVaPD9f4TxdGhcWyhm259qKa7JHSGhMpump`
-- Midcurve: $112,272 1h vol, $72,616 mcap, +3% 1h  
-  CA `14SsX1H9qge5qE3MeQK87hygFkmHBQnHxJEHgXkspump`
-- DAW: $101,843 1h vol, $12,693 mcap, -55% 1h  
+- JEFFLE: $263,750 1h vol, $51,622 mcap, +78% 1h  
+  CA `BRRktKPa8m4dMrQ1fT6fLJABQjYUqLaEhPuMHxUvpump`
+- DCTY: $179,229 1h vol, $63,752 mcap, +109% 1h  
+  CA `FKzLbmXpyk3qxY4j3CbxqwjdtbCWb1HZZttok9AD5dio`
+- BTCBALLS: $167,655 1h vol, $606,694 mcap, +1587% 1h  
+  CA `APmirEVL5wkbYVZ88TDdr9cwJ6WfRCWuzm4wQWyzpump`
+- paired: $139,916 1h vol, $3,024 mcap, -93% 1h  
+  CA `8dUqZ1dwPZUF2eGAUN4UotMnnrxrxRoS7gCyctFLpump`
+- DAW: $73,780 1h vol, $18,139 mcap, -67% 1h  
   CA `6NZANPwagg8qLrfi2mk9HyCXWWAVnhsv4CiqWuHPpump`
-- Fireball: $67,375 1h vol, $386,619 mcap, -23% 1h  
-  CA `B9wbjDJ4FbHMsZmoXAkJSTAwuePaJUKbySvnK5zApump`
-- Naruto: $60,421 1h vol, $3,567 mcap, +47% 1h  
-  CA `8W1iJsknSoHeCrcHbqLTB9MnuBdzzhKX3mo8cjnSkkim`
