@@ -1,13 +1,13 @@
 # Trencher live report
 
-Updated 2026-11-28T05:13:42Z (paper trading, never real money)
+Updated 2026-11-28T05:28:48Z (paper trading, never real money)
 
 - Equity: $74.23 (-25.8% vs $100 start)
 - Closed trades: 22, 3 wins
 - Fees paid: $14.78 (axiom $2.81, network $9.18, pool $2.66), plus $4.15 lost to slippage
 - New trades: WATCH-ONLY (scans and decides, buys nothing)
-- Brain: subscription, claude-haiku-5-5 for routine calls, claude-opus-5-5 for the daily review; 370 routine calls and 9 plan-limit hits in 48h
-- Watch log: 76 coins being followed, 4368 filed, 0 would-buys (6h follow, sampled every 2 min)
+- Brain: subscription, claude-haiku-5-5 for routine calls, claude-opus-5-5 for the daily review; 367 routine calls and 9 plan-limit hits in 48h
+- Watch log: 77 coins being followed, 4370 filed, 0 would-buys (6h follow, sampled every 2 min)
 
 ## Scorecard (after fees)
 - 22 closed, 3 won (14%), net $-25.79
@@ -73,9 +73,17 @@ Updated 2026-11-28T05:13:42Z (paper trading, never real money)
   CA `H4gHnZ3NCU7Z9XQwGX6YYJNyieGEW8pqwGRUcdSxpump`
 
 ## Last scan
-- 05:12Z: 4 coins, 4 with pairs, 0 passed the market filters, 0 researched
+- 05:28Z: 6 coins, 6 with pairs, 1 passed the market filters, 1 researched
 
 ## Coins it looked at, and why it passed
+- 05:28Z RICE (DIP, $95,323 mcap, $6,641 5m vol): REJECT, Dip with fading attention is a falling knife, not a dip (5m at 0.16x the hour's pace, under 0.6x)  
+  CA `3rVr2RBzEXXKf1cVvZ6HBvFg2XmBK4iMgZv9q9q4pump`
+- 05:27Z hacked (no setup, $64,369 mcap, $283 5m vol): REJECT, Hack story ("hack" in the name or ticker): these tend to go down, owner rule  
+  CA `FK7bc3fR8UL8uogN2u8J9yEpEbQJKR7yKsp3G8rvpump`
+- 05:23Z WINTER (MIGRATED, $94,603 mcap, $5,841 5m vol): REJECT, Bundles: 2 linked wallet cluster(s) hold 100.0% of supply (>20%) (V17)  
+  CA `7dc3gFoyuDCPWjrfZfX99uasJJSceAJx5ucE8bDGpump`
+- 05:15Z Frogger (MIGRATED, $136,353 mcap, $30,409 5m vol): REJECT, Bundles: 10 linked wallet cluster(s) hold 100.0% of supply (>20%) (V17)  
+  CA `GGatn9GfrvRgFMFZy9ZSaTsKmpwnzCTogmocLHCjpump`
 - 04:57Z Fireball (DIP, $409,499 mcap, $3,414 5m vol): PASS at conviction 3, PASS: Fireball is a 66%-off DIP with clean holders, but no catalyst, the theme is fading at 0.91x pace, and the site is 0.6 days old without this CA. Blocker: "no catalyst" on a bottom buy (V1, V13).  
   CA `B9wbjDJ4FbHMsZmoXAkJSTAwuePaJUKbySvnK5zApump`
 - 04:57Z BITCOINU (MIGRATED, $700,102 mcap, $72,431 5m vol): REJECT, Top 10 hold 49.2% ex-pool (>25%) (V13)  
@@ -88,14 +96,6 @@ Updated 2026-11-28T05:13:42Z (paper trading, never real money)
   CA `3rVr2RBzEXXKf1cVvZ6HBvFg2XmBK4iMgZv9q9q4pump`
 - 04:40Z DAW (MIGRATED, $51,194 mcap, $2,391 5m vol): REJECT, Top 10 hold 26.5% ex-pool (>25%) (V13)  
   CA `6NZANPwagg8qLrfi2mk9HyCXWWAVnhsv4CiqWuHPpump`
-- 04:40Z SAITAMA (FINAL_STRETCH, $17,661 mcap, $26,603 5m vol): PASS at conviction 2, PASS: SAITAMA is up 513% in an hour with 17 same-name copies and a 13% bundle cluster. Chasing a spike in a split crowd, with no X and no catalyst (V1, V3, V6, V13).  
-  CA `EUkFDTry511qdU6PDPKGXzDx157W9MCAS8sJoeWxpump`
-- 04:35Z PRISMEICE (DIP, $94,029 mcap, $41,810 5m vol): PASS at conviction 2, PASS: no catalyst, dumping now (-34% on 5m), 3.9-day-old domain, and a 7-copy ticker field. Falling knife with no story behind it (V1, V3, V13).  
-  CA `8N6WF11pLUUeUu8b1HbnDJHTzyL4bbr8YRdPS6Znpump`
-- 04:29Z Frogger (MIGRATED, $75,587 mcap, $93,898 5m vol): REJECT, Bundles: 1 linked wallet cluster(s) hold 76.9% of supply (>20%) (V17)  
-  CA `GGatn9GfrvRgFMFZy9ZSaTsKmpwnzCTogmocLHCjpump`
-- 04:28Z MANDY (MIGRATED, $36,815 mcap, $1,932 5m vol): REJECT, 5m volume $1,932 is dead (<$2,000) (V1)  
-  CA `4HdH4EKBKCVaPD9f4TxdGhcWyhm259qKa7JHSGhMpump`
 
 ## What its skips did next (last 48h)
 A skip "ran" if the coin reached the first target (1.5x) from the skip price before a 20% drop, "dumped" if the drop came first. Sampled every 10 min, followed 6h.
@@ -113,7 +113,7 @@ A skip "ran" if the coin reached the first target (1.5x) from the skip price bef
     CA `25m4Lkct8nsYyqAMeE8rvjM3y5Zrrax46TLqNJjbpump`
   - ran: Meme up to 2.06x  
     CA `CV1NPi8L2PSYMfALBh7GCfUwELZzG3DrLUUjCkeapump`
-- flow below pace: blocked 39, ran 4, dumped 30, flat 2, open 3 (saving losses: keep it)
+- flow below pace: blocked 38, ran 4, dumped 29, flat 3, open 2 (saving losses: keep it)
   - ran: PAIR up to 2.1x  
     CA `32rBxcFjCFnyqZ41CEPM5AL67X1dcw8w83vZt6Kxpump`
   - ran: Hoppy up to 1.76x  
@@ -127,14 +127,14 @@ A skip "ran" if the coin reached the first target (1.5x) from the skip price bef
     CA `G2XqmSc8vJpLLwaLVXUeNkxsrhVT8vQ3Pje8MqeDpump`
   - ran: FARM up to 1.65x  
     CA `2dynAjPBnkqzjUwozgn8pDRkCf7k7CDJkLfcf4rupump`
-- bundles over the line: blocked 25, ran 4, dumped 16, flat 3, open 2 (saving losses: keep it)
+- bundles over the line: blocked 25, ran 3, dumped 16, flat 3, open 3 (saving losses: keep it)
   - ran: WIENER up to 1.59x  
     CA `8BDkDfj3ZUvcG9caGzF2XnHfwg7K6fjfKKDvX6SCpump`
   - ran: Dragon up to 1.55x  
     CA `cg3HaDWhAKFfj9aq79TWUBgmxfs4G7byQ7feaxnpump`
   - ran: monky up to 96.37x  
     CA `At5hmwDn4YgPDoic1UN7zMdTtCoiXJsMhnKaoazEpump`
-- falling knife (code): blocked 22, ran 1, dumped 21, flat 0, open 0 (saving losses: keep it)
+- falling knife (code): blocked 23, ran 1, dumped 21, flat 0, open 1 (saving losses: keep it)
   - ran: Split up to 1.54x  
     CA `HAP9FcXubD88SjRHMY1kr5iukpRZgeMAgCBam3Vtpump`
 - falling knife / no higher low: blocked 13, ran 2, dumped 9, flat 1, open 1 (saving losses: keep it)
@@ -191,13 +191,13 @@ No edge after costs, and I'm fairly sure of that. All 250 settled coins averaged
 Meta: the trenches are trading sub-two-hour pump.fun/PumpSwap launches with joke names (balls, frogs, a person's name), and a few coins take nearly all the 5-minute flow. The ball family is split: BTCBALLS is the only one still pulling buyers ($25k 5m, 73% buys, $554k mcap, 0.9h old), while Fireball (-15% 1h) and Snowball ($663 5m on $340k mcap) are fading. Frogger is the hottest mover (0.2h old, $95k 5m on a $68k mcap, +126% 1h, 68% buys), but 5m volume above market cap on a 12-minute coin looks like a frenzy or a bundle, so it's research only and a PASS if top 10 is above 15% or any bundle is above 3% (V6, V13). Animal and dog names are going flat: Nancy (-70% 1h, 36% buys) and DCTY (-71%, $868 5m) are dead. Setups to research, not buy yet: BTCBALLS at conviction 5 with a stop below its recent pullback low, Frogger only if holders come back clean, and Jeffle ($56k, $4.7k 5m, 62% buys) as a small watch. The Trump dinner headlines aren't showing in the movers, so they aren't the meta right now; I used scanner numbers over the crawler's where they conflict (paper only, not financial advice).
 
 ## Moving most in its scans, last 30 min (1h volume)
-- BITCOINU: $199,713 1h vol, $700,102 mcap, +1852% 1h  
-  CA `ATbAsdCwrhhVg23DRnWpjqx6kx7ivoK5o8ysNmu1pump`
-- BTCBALLS: $76,902 1h vol, $1,326 mcap, -100% 1h  
-  CA `APmirEVL5wkbYVZ88TDdr9cwJ6WfRCWuzm4wQWyzpump`
-- JEFFLE: $54,880 1h vol, $23,019 mcap, -67% 1h  
-  CA `BRRktKPa8m4dMrQ1fT6fLJABQjYUqLaEhPuMHxUvpump`
-- Fireball: $45,732 1h vol, $409,499 mcap, -3% 1h  
-  CA `B9wbjDJ4FbHMsZmoXAkJSTAwuePaJUKbySvnK5zApump`
-- Wildfire: $34,271 1h vol, $7,767 mcap, -73% 1h  
-  CA `9cmL8R2jZjKss6uYiQpQFphv6ygfirZQJEpEatKGpump`
+- Frogger: $518,113 1h vol, $136,353 mcap, +355% 1h  
+  CA `GGatn9GfrvRgFMFZy9ZSaTsKmpwnzCTogmocLHCjpump`
+- RICE: $504,942 1h vol, $96,253 mcap, -34% 1h  
+  CA `3rVr2RBzEXXKf1cVvZ6HBvFg2XmBK4iMgZv9q9q4pump`
+- PRISMEICE: $253,866 1h vol, $1,846 mcap, -99% 1h  
+  CA `8N6WF11pLUUeUu8b1HbnDJHTzyL4bbr8YRdPS6Znpump`
+- Scheme: $64,648 1h vol, $2,562 mcap, -28% 1h  
+  CA `8vRpccP2dRn8mpwCQGJTsmDPxbroxXHdsvXzoQ8Hpump`
+- COMMODITY: $49,220 1h vol, $11,037 mcap, +183% 1h  
+  CA `66WtdGBwzHL1kJodjvhWUj1Uo3UycFVRhLWQ96uwpump`
