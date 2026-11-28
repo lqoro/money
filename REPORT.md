@@ -1,13 +1,13 @@
 # Trencher live report
 
-Updated 2026-11-28T01:11:52Z (paper trading, never real money)
+Updated 2026-11-28T01:27:03Z (paper trading, never real money)
 
 - Equity: $74.23 (-25.8% vs $100 start)
 - Closed trades: 22, 3 wins
 - Fees paid: $14.78 (axiom $2.81, network $9.18, pool $2.66), plus $4.15 lost to slippage
 - New trades: WATCH-ONLY (scans and decides, buys nothing)
-- Brain: subscription, claude-haiku-5-5 for routine calls, claude-opus-5-5 for the daily review; 385 routine calls and 9 plan-limit hits in 48h
-- Watch log: 77 coins being followed, 4314 filed, 0 would-buys (6h follow, sampled every 2 min)
+- Brain: subscription, claude-haiku-5-5 for routine calls, claude-opus-5-5 for the daily review; 384 routine calls and 9 plan-limit hits in 48h
+- Watch log: 80 coins being followed, 4315 filed, 0 would-buys (6h follow, sampled every 2 min)
 
 ## Scorecard (after fees)
 - 22 closed, 3 won (14%), net $-25.79
@@ -73,9 +73,17 @@ Updated 2026-11-28T01:11:52Z (paper trading, never real money)
   CA `H4gHnZ3NCU7Z9XQwGX6YYJNyieGEW8pqwGRUcdSxpump`
 
 ## Last scan
-- 01:11Z: 9 coins, 7 with pairs, 0 passed the market filters, 0 researched
+- 01:25Z: 8 coins, 6 with pairs, 2 passed the market filters, 2 researched
 
 ## Coins it looked at, and why it passed
+- 01:26Z chairman (FINAL_STRETCH, $15,282 mcap, $4,909 5m vol): PASS at conviction 2, PASS — chairman is a spike, not a structure: +206% in an hour, a 26-copy ticker field, no socials, no printed higher low, and only $4.9k on the 5m. Blocker "no narrative" (V1, V6, V13).  
+  CA `9PY2x8zdYDhbVtBEdT35duYY6EzwFXhyov9R5Uazpump`
+- 01:26Z Vicewire (DIP, $49,888 mcap, $28,609 5m vol): PASS at conviction 2, PASS — 48% off a $96k peak, but no catalyst, no printed higher low, and 5m down 31.5%. Falling knife in a six-copy vamp field (V1, V3, V6).  
+  CA `viCEWiReoWxwmRRfGmWmpP1FFdB8Jm8PzZChVJ9dvg6`
+- 01:22Z Memeball (MIGRATED, $667,090 mcap, $6,118 5m vol): PASS at conviction 2, PASS: chasing the high with 5m flow at 0.15x pace, and the website says "CA: TBA" on a 0.1-day-old domain. (V1, V6, V13)  
+  CA `9G9Ssh55SZEoniFjMrMefug9fBy67bUvHzWAxb5Ypump`
+- 01:17Z ZERO (MIGRATED, $2,134,456 mcap, $95,546 5m vol): PASS at conviction 3, PASS: chasing a +58% 5m spike at a fresh $2.1M high, no higher low, and the site doesn't show this CA. Vamp field, not a buy. (V1, V6, V13)  
+  CA `3WsqUNArNSh5pYt6eTKbQ7uUJDgkPtFEA2XFvdEWpump`
 - 01:09Z Fireball (DIP, $611,110 mcap, $5,463 5m vol): PASS, PASS — brain unavailable, not trading blind.  
   CA `B9wbjDJ4FbHMsZmoXAkJSTAwuePaJUKbySvnK5zApump`
 - 01:08Z POWERBALL (no setup, $12,220 mcap, $2,888 5m vol): REJECT, No setup fits: not Final Stretch, not a migrated runner, not a healthy dip  
@@ -88,45 +96,37 @@ Updated 2026-11-28T01:11:52Z (paper trading, never real money)
   CA `AvvXpCVph4PtJ5urfhetPkdZYh8o4uW7CawUA2MK8hFT`
 - 00:54Z WINTER (MIGRATED, $91,649 mcap, $2,740 5m vol): REJECT, Bundles: 2 linked wallet cluster(s) hold 100.0% of supply (>20%) (V17)  
   CA `7dc3gFoyuDCPWjrfZfX99uasJJSceAJx5ucE8bDGpump`
-- 00:51Z Midcurve (FINAL_STRETCH, $16,490 mcap, $3,737 5m vol): PASS at conviction 3, PASS. Eight copies of the ticker, a 0.13x theme pace, and the coin's own website doesn't show this CA. That's a vamp field with nobody arriving (V1, V3, V13).  
-  CA `14SsX1H9qge5qE3MeQK87hygFkmHBQnHxJEHgXkspump`
-- 00:40Z Vicewire (FINAL_STRETCH, $20,875 mcap, $26,131 5m vol): PASS at conviction 3, PASS: chasing spike. 5m is up 195% at 7.8x hourly pace, sells outnumber buys 482 to 376, and it's 12 minutes old with no higher low. Flow isn't structure (V1, V6).  
-  CA `viCEWiReoWxwmRRfGmWmpP1FFdB8Jm8PzZChVJ9dvg6`
-- 00:36Z JOB (MIGRATED, $2,497,072 mcap, $2,091 5m vol): REJECT, Bundles: 1 linked wallet cluster(s) hold 22.5% of supply (>20%) (V17)  
-  CA `9Pq7aLAbhDG2tTnS22cm6kuysZVcZpLFE368HWuypump`
-- 00:36Z Memeball (MIGRATED, $268,117 mcap, $76,229 5m vol): REJECT, Top 10 hold 29.8% ex-pool (>25%) (V13)  
-  CA `9G9Ssh55SZEoniFjMrMefug9fBy67bUvHzWAxb5Ypump`
 
 ## What its skips did next (last 48h)
 A skip "ran" if the coin reached the first target (1.5x) from the skip price before a 20% drop, "dumped" if the drop came first. Sampled every 10 min, followed 6h.
-- top 10 over 25%: blocked 55, ran 11, dumped 40, flat 4, open 0 (saving losses: keep it)
+- top 10 over 25%: blocked 53, ran 9, dumped 40, flat 4, open 0 (saving losses: keep it)
   - ran: Legatum up to 2.21x  
     CA `HkPSDYRcw4uqgRzZMDd5sRnMpE4ungR1K8MRNXnBVtQ2`
   - ran: Thankful up to 2.05x  
     CA `E9arxG4RxB7Gxt6U75obonTZzx7vpbc4bUi1dfw3BtUN`
   - ran: MSTR up to 1.69x  
     CA `57sCZ82FwS5Dfs7FN9nshtU5Mkb3w1dqhmPUuCPvpump`
-- flow below pace: blocked 44, ran 4, dumped 34, flat 3, open 3 (saving losses: keep it)
+- flow below pace: blocked 43, ran 4, dumped 32, flat 3, open 4 (saving losses: keep it)
   - ran: PAIR up to 2.1x  
     CA `32rBxcFjCFnyqZ41CEPM5AL67X1dcw8w83vZt6Kxpump`
   - ran: Hoppy up to 1.76x  
     CA `CFX1gH7CKYwqYXrfDkS2MUxJcEhs8PT63DyRA1chpump`
   - ran: SpaceXCoin up to 1.52x  
     CA `G2XqmSc8vJpLLwaLVXUeNkxsrhVT8vQ3Pje8MqeDpump`
-- too new / sniping: blocked 42, ran 6, dumped 36, flat 0, open 0 (saving losses: keep it)
-  - ran: STUDS up to 2.35x  
-    CA `34J9VrBeJ2dWActyAMpoNBKvoxZCqQz3SivmnnmSTUds`
-  - ran: 2 up to 1.69x  
-    CA `HkywsKMf5FDj7QpgRE3BoE2nJqJauxEVbGjpnYe6pump`
-  - ran: Pair up to 1.76x  
-    CA `EWCfhnj8YjPEbvQXEtwkxMT54WhBpZBLQDFncRoypump`
-- near the high / chasing: blocked 41, ran 8, dumped 30, flat 3, open 0 (saving losses: keep it)
+- near the high / chasing: blocked 42, ran 8, dumped 31, flat 3, open 0 (saving losses: keep it)
   - ran: NETHER up to 1.8x  
     CA `GkL4cJLAL3354wLgS6mZJKKUBVzvUY1FUN47zZNgGWEq`
   - ran: PPV up to 1.54x  
     CA `CbGrZ3Q2XxSV2oiZsLkDWW1GFjrqUDAzTH9XwVr1pump`
   - ran: urcoin up to 1.71x  
     CA `25m4Lkct8nsYyqAMeE8rvjM3y5Zrrax46TLqNJjbpump`
+- too new / sniping: blocked 41, ran 5, dumped 36, flat 0, open 0 (saving losses: keep it)
+  - ran: STUDS up to 2.35x  
+    CA `34J9VrBeJ2dWActyAMpoNBKvoxZCqQz3SivmnnmSTUds`
+  - ran: 2 up to 1.69x  
+    CA `HkywsKMf5FDj7QpgRE3BoE2nJqJauxEVbGjpnYe6pump`
+  - ran: Pair up to 1.76x  
+    CA `EWCfhnj8YjPEbvQXEtwkxMT54WhBpZBLQDFncRoypump`
 - bundles over the line: blocked 24, ran 3, dumped 15, flat 4, open 2 (saving losses: keep it)
   - ran: WIENER up to 1.59x  
     CA `8BDkDfj3ZUvcG9caGzF2XnHfwg7K6fjfKKDvX6SCpump`
@@ -134,10 +134,10 @@ A skip "ran" if the coin reached the first target (1.5x) from the skip price bef
     CA `cg3HaDWhAKFfj9aq79TWUBgmxfs4G7byQ7feaxnpump`
   - ran: monky up to 96.37x  
     CA `At5hmwDn4YgPDoic1UN7zMdTtCoiXJsMhnKaoazEpump`
-- falling knife (code): blocked 21, ran 1, dumped 20, flat 0, open 0 (saving losses: keep it)
+- falling knife (code): blocked 20, ran 1, dumped 19, flat 0, open 0 (saving losses: keep it)
   - ran: Split up to 1.54x  
     CA `HAP9FcXubD88SjRHMY1kr5iukpRZgeMAgCBam3Vtpump`
-- falling knife / no higher low: blocked 11, ran 3, dumped 7, flat 1, open 0 (saving losses: keep it)
+- falling knife / no higher low: blocked 13, ran 3, dumped 7, flat 1, open 2 (saving losses: keep it)
   - ran: Zero up to 2.07x  
     CA `DTSkmo3sCCKLCh91dJLiWCpwcKtK3yDBZMqZGSV1pump`
   - ran: Maru up to 1.88x  
@@ -197,11 +197,11 @@ Meta, from scan_movers itself: holiday/Christmas tickers are the one theme pulli
 ## Moving most in its scans, last 30 min (1h volume)
 - STEADY: $916,809 1h vol, $310,373 mcap, +1418% 1h  
   CA `AvvXpCVph4PtJ5urfhetPkdZYh8o4uW7CawUA2MK8hFT`
+- Memeball: $495,399 1h vol, $667,090 mcap, +1936% 1h  
+  CA `9G9Ssh55SZEoniFjMrMefug9fBy67bUvHzWAxb5Ypump`
+- Vicewire: $261,426 1h vol, $49,888 mcap, +59% 1h  
+  CA `viCEWiReoWxwmRRfGmWmpP1FFdB8Jm8PzZChVJ9dvg6`
+- ZERO: $198,788 1h vol, $2,134,456 mcap, +80% 1h  
+  CA `3WsqUNArNSh5pYt6eTKbQ7uUJDgkPtFEA2XFvdEWpump`
 - POWERBALL: $104,697 1h vol, $15,228 mcap, +616% 1h  
   CA `CLcFahnBEHLhpMKhTore2mcMrzqssMRQdT5LGAkGU2sE`
-- Fsjal: $85,144 1h vol, $4,689 mcap, +92% 1h  
-  CA `28GEp4GcNVHPtwZbkhNWKaw5MqW9QsDC5n5m7H79pump`
-- Fireball: $71,489 1h vol, $620,007 mcap, -14% 1h  
-  CA `B9wbjDJ4FbHMsZmoXAkJSTAwuePaJUKbySvnK5zApump`
-- RIZZMAS3: $66,389 1h vol, $2,385 mcap, -58% 1h  
-  CA `CCoeBe5jaPKFNym8cNNdDzPZDYLPDB1p99Hyp2LfM4Sm`
