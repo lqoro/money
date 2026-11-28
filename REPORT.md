@@ -1,13 +1,13 @@
 # Trencher live report
 
-Updated 2026-11-28T14:19:58Z (paper trading, never real money)
+Updated 2026-11-28T14:34:59Z (paper trading, never real money)
 
 - Equity: $74.23 (-25.8% vs $100 start)
 - Closed trades: 22, 3 wins
 - Fees paid: $14.78 (axiom $2.81, network $9.18, pool $2.66), plus $4.15 lost to slippage
 - New trades: WATCH-ONLY (scans and decides, buys nothing)
 - Brain: subscription, claude-haiku-5-5 for routine calls, claude-opus-5-5 for the daily review; 361 routine calls and 9 plan-limit hits in 48h
-- Watch log: 60 coins being followed, 4483 filed, 0 would-buys (6h follow, sampled every 2 min)
+- Watch log: 63 coins being followed, 4484 filed, 0 would-buys (6h follow, sampled every 2 min)
 
 ## Scorecard (after fees)
 - 22 closed, 3 won (14%), net $-25.79
@@ -73,9 +73,19 @@ Updated 2026-11-28T14:19:58Z (paper trading, never real money)
   CA `H4gHnZ3NCU7Z9XQwGX6YYJNyieGEW8pqwGRUcdSxpump`
 
 ## Last scan
-- 14:18Z: 3 coins, 3 with pairs, 1 passed the market filters, 1 researched
+- 14:33Z: 1 coins, 1 with pairs, 1 passed the market filters, 1 researched
 
 ## Coins it looked at, and why it passed
+- 14:34Z John (MIGRATED, $101,759 mcap, $33,824 5m vol): PASS at conviction 2, PASS: John Stockman ($JOHN) is a 0.8h-old migrated launch spike, down 21.5% from a $130k peak with no printed higher low, theme pace at 0.58x and no catalyst found. Too new, and the crowd is leaving. (V1, V6, V13)  
+  CA `EvN4RDyoqUTpCcrvz5QTAdHVqypgxV4MCR77Bfnjpump`
+- 14:32Z hacked (DIP, $48,500 mcap, $202 5m vol): REJECT, Hack story ("hack" in the name or ticker): these tend to go down, owner rule  
+  CA `FK7bc3fR8UL8uogN2u8J9yEpEbQJKR7yKsp3G8rvpump`
+- 14:30Z Zhaki (DIP, $121,850 mcap, $11,943 5m vol): REJECT, Dev holds 4.0% (>1%) (V13, V17)  
+  CA `2YAfPhCrGSW82Ra33sWgurXt4dQ29SwXusvUXdJGpump`
+- 14:29Z nothing (MIGRATED, $82,287 mcap, $6,978 5m vol): PASS at conviction 3, PASS: 16 minutes old, 8% off a fresh peak, $7k 5m at 0.57x pace, one of 15 "nothing" copies. Too new, no higher low, split crowd (V1, V6, V13).  
+  CA `q9VM1LRTCB7P7TNLRKyZJUPtdoH3e9FRuVFyY9Xpump`
+- 14:26Z Planimal (FINAL_STRETCH, $14,606 mcap, $18,099 5m vol): PASS at conviction 3, PASS: a 5x spike, not a base. Up 475% in 1h, no printed higher low, 28 copies in the field, top 10 at 23% and a 4.1% bundle. Chasing and split crowd (V1, V3, V6, V13).  
+  CA `883W8K13jVaVyxX2pk6G1G9fsjZJVUCGntKENpkhxBuw`
 - 14:19Z BRUH (MIGRATED, $7,503,572 mcap, $8,409 5m vol): PASS at conviction 2, PASS: 5m flow at 0.62x hourly pace, $8.4k on the 5m, $7.5M mcap with no breakout, and no catalyst behind a fan-made parody. Blocker: flow below pace. (V6, V13)  
   CA `PgFtGGquvnv2zEkjG2N2QPvBTBrafuExGYEqahRpump`
 - 14:08Z Fireball (MIGRATED, $348,893 mcap, $2,822 5m vol): PASS at conviction 3, PASS: no higher low, flow under pace, and the story is fading. A 26-copy Fireball field with a 1-day-old site and a 70.7% drawdown is a falling knife. (V1, V6, V13)  
@@ -86,16 +96,6 @@ Updated 2026-11-28T14:19:58Z (paper trading, never real money)
   CA `5jjJWZfTTaZtG74zSpiEZbMBHNM2jieHEXM2UZvapump`
 - 13:49Z John (MIGRATED, $39,786 mcap, $47,630 5m vol): REJECT, RugCheck danger: Creator history of rugged tokens  
   CA `EvN4RDyoqUTpCcrvz5QTAdHVqypgxV4MCR77Bfnjpump`
-- 13:45Z Zhaki (DIP, $170,602 mcap, $2,124 5m vol): REJECT, Dev holds 3.8% (>1%) (V13, V17)  
-  CA `2YAfPhCrGSW82Ra33sWgurXt4dQ29SwXusvUXdJGpump`
-- 13:43Z JOB (MIGRATED, $2,873,712 mcap, $1,143 5m vol): REJECT, 5m volume $1,143 is dead (<$2,000) (V1)  
-  CA `9Pq7aLAbhDG2tTnS22cm6kuysZVcZpLFE368HWuypump`
-- 13:33Z Bagwork (no setup, $13,901 mcap, $27,966 5m vol): REJECT, No setup fits: not Final Stretch, not a migrated runner, not a healthy dip  
-  CA `5qDeCs9MkTAhk6q76XvKrZgimoQdJowuSWbjSZKvpump`
-- 13:32Z hacked (DIP, $41,232 mcap, $19 5m vol): REJECT, Hack story ("hack" in the name or ticker): these tend to go down, owner rule  
-  CA `FK7bc3fR8UL8uogN2u8J9yEpEbQJKR7yKsp3G8rvpump`
-- 13:23Z BRUH (DIP, $6,728,476 mcap, $2,068 5m vol): PASS at conviction 2, PASS — $6.7M mcap with 5m flow at 0.64x pace, no catalyst, and the theme running at 0.5x. Price bounced from a $5.3k hourly low into the 24h high, so this is a chase, not a dip (V1, V6, V13).  
-  CA `PgFtGGquvnv2zEkjG2N2QPvBTBrafuExGYEqahRpump`
 
 ## What its skips did next (last 48h)
 A skip "ran" if the coin reached the first target (1.5x) from the skip price before a 20% drop, "dumped" if the drop came first. Sampled every 10 min, followed 6h.
@@ -113,12 +113,12 @@ A skip "ran" if the coin reached the first target (1.5x) from the skip price bef
     CA `G2XqmSc8vJpLLwaLVXUeNkxsrhVT8vQ3Pje8MqeDpump`
   - ran: DIHBALL up to 1.78x  
     CA `99CQuNiF6WN44xyKqPP9N41x5R9Uu8MkTM9CK3Rzpump`
-- too new / sniping: blocked 35, ran 2, dumped 33, flat 0, open 0 (saving losses: keep it)
+- too new / sniping: blocked 37, ran 2, dumped 33, flat 0, open 2 (saving losses: keep it)
   - ran: SpaceXCoin up to 1.52x  
     CA `G2XqmSc8vJpLLwaLVXUeNkxsrhVT8vQ3Pje8MqeDpump`
   - ran: FARM up to 1.65x  
     CA `2dynAjPBnkqzjUwozgn8pDRkCf7k7CDJkLfcf4rupump`
-- near the high / chasing: blocked 33, ran 7, dumped 24, flat 2, open 0 (saving losses: keep it)
+- near the high / chasing: blocked 33, ran 7, dumped 23, flat 2, open 1 (saving losses: keep it)
   - ran: urcoin up to 1.71x  
     CA `25m4Lkct8nsYyqAMeE8rvjM3y5Zrrax46TLqNJjbpump`
   - ran: Meme up to 2.06x  
@@ -145,7 +145,7 @@ A skip "ran" if the coin reached the first target (1.5x) from the skip price bef
     CA `5hkBYuFQDpAAqemCiVqXCuU6Ya5dqKhtRobzJsg6pump`
   - ran: Bagwork up to 1.81x  
     CA `5qDeCs9MkTAhk6q76XvKrZgimoQdJowuSWbjSZKvpump`
-- RugCheck danger: blocked 11, ran 1, dumped 9, flat 1, open 0 (saving losses: keep it)
+- RugCheck danger: blocked 10, ran 1, dumped 8, flat 1, open 0 (saving losses: keep it)
   - ran: Snowball up to 1.56x  
     CA `9TKbd3VFaMSXsEAicD9JVQWpWwAoLi4fSgWmZL2cpump`
 - dev share over 1%: blocked 9, ran 2, dumped 6, flat 0, open 1 (saving losses: keep it)
@@ -193,13 +193,13 @@ Nothing has a positive edge after costs. All 225 settled coins averaged -12.9% n
 The meta in scan_movers is cat and animal mascot names plus CJK-character names on pump.fun, with slogan tickers (hold, Bagwork) riding launch spikes. The Trump-dinner news isn't in the movers and there's no Trump-family coin in the top volume, so I'm treating that story as fading. Rising: "hold" (Believe in something?, $58.6k cap, $16.2k 5m, 62% buys, +99% 1h, 12 min old) is the cleanest mover clearing the $10k bar; OKOWARE (怒ワレ, $21k cap) and smol cat ($14.6k cap, 78% buys) carry the cat/CJK style but are thin on 5m. Fading: BNB (Bankrupting New Buyers, -91%) and EDITOR (-87%, 11% buys). The crawler's FlipFlop Cat figures ($60k cap, +103%, clearing the bar) don't match scan_movers ($2.2k cap, -97% 1h, zero 5m volume), so I'm discarding them. Setup to research: "hold" as a MIGRATED probe. Conviction 4, so it's a PASS until holder, dev and bundle checks come back clean; if they do, it becomes a 5 probe, buying only on a pullback that holds with 5m volume above $10k, initials at 2x, stop at -30%, and out if 5m volume drops under $10k. Bagwork ($16k cap, $32k 5m, age zero, still on the pump.fun curve) is a launch spike; the new-pair rule says I don't chase it.
 
 ## Moving most in its scans, last 30 min (1h volume)
+- John: $382,204 1h vol, $101,759 mcap, +258% 1h  
+  CA `EvN4RDyoqUTpCcrvz5QTAdHVqypgxV4MCR77Bfnjpump`
 - BRUH: $163,401 1h vol, $7,503,572 mcap, +12% 1h  
   CA `PgFtGGquvnv2zEkjG2N2QPvBTBrafuExGYEqahRpump`
-- FIX6900: $77,202 1h vol, $18,561 mcap, -35% 1h  
-  CA `GDUL9Nor761zu3m6azcUiaLruwReAYG7jTppgGiWpump`
-- hold: $71,052 1h vol, $1,418 mcap, -97% 1h  
-  CA `4qnvryLCPUQ1kLZMsK44Ra2H19tRGzijbbhfDmSLpump`
-- Bagwork: $70,889 1h vol, $7,010 mcap, -75% 1h  
+- nothing: $146,598 1h vol, $82,287 mcap, +178% 1h  
+  CA `q9VM1LRTCB7P7TNLRKyZJUPtdoH3e9FRuVFyY9Xpump`
+- Bagwork: $72,035 1h vol, $5,723 mcap, -79% 1h  
   CA `5qDeCs9MkTAhk6q76XvKrZgimoQdJowuSWbjSZKvpump`
-- BITCOINU: $55,770 1h vol, $1,172,901 mcap, +3% 1h  
-  CA `ATbAsdCwrhhVg23DRnWpjqx6kx7ivoK5o8ysNmu1pump`
+- FIX6900: $68,496 1h vol, $5,961 mcap, -68% 1h  
+  CA `GDUL9Nor761zu3m6azcUiaLruwReAYG7jTppgGiWpump`
