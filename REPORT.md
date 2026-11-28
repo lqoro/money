@@ -1,13 +1,13 @@
 # Trencher live report
 
-Updated 2026-11-28T10:47:33Z (paper trading, never real money)
+Updated 2026-11-28T11:03:07Z (paper trading, never real money)
 
 - Equity: $74.23 (-25.8% vs $100 start)
 - Closed trades: 22, 3 wins
 - Fees paid: $14.78 (axiom $2.81, network $9.18, pool $2.66), plus $4.15 lost to slippage
 - New trades: WATCH-ONLY (scans and decides, buys nothing)
 - Brain: subscription, claude-haiku-5-5 for routine calls, claude-opus-5-5 for the daily review; 375 routine calls and 9 plan-limit hits in 48h
-- Watch log: 71 coins being followed, 4442 filed, 0 would-buys (6h follow, sampled every 2 min)
+- Watch log: 70 coins being followed, 4444 filed, 0 would-buys (6h follow, sampled every 2 min)
 
 ## Scorecard (after fees)
 - 22 closed, 3 won (14%), net $-25.79
@@ -73,9 +73,11 @@ Updated 2026-11-28T10:47:33Z (paper trading, never real money)
   CA `H4gHnZ3NCU7Z9XQwGX6YYJNyieGEW8pqwGRUcdSxpump`
 
 ## Last scan
-- 10:47Z: 2 coins, 2 with pairs, 0 passed the market filters, 0 researched
+- 11:02Z: 5 coins, 5 with pairs, 1 passed the market filters, 1 researched
 
 ## Coins it looked at, and why it passed
+- 11:02Z Mojave (MIGRATED, $35,058 mcap, $2,077 5m vol): PASS at conviction 2, PASS: flow at 0.18x pace on a coin 54 min off its bond spike, and the theme is at 0.81x. Blocker "flow below pace," with "too new" right behind it (V1, V6).  
+  CA `4newt1R5fGEoCKdf9XBgiR6B43iacmnVAR2d4Wt8pump`
 - 10:46Z Snowball (MIGRATED, $213,954 mcap, $3,455 5m vol): REJECT, RugCheck danger: Creator history of rugged tokens  
   CA `9TKbd3VFaMSXsEAicD9JVQWpWwAoLi4fSgWmZL2cpump`
 - 10:43Z COMM (DIP, $36,365 mcap, $2,332 5m vol): PASS at conviction 2, PASS, dead story: COMM is a 2-hour-old commodity-themed copy with $2.3k 5m flow, a saw-tooth chart and a theme at 0.1x its hourly pace. Blocker: "dead story" (V1, V6, V13).  
@@ -94,12 +96,10 @@ Updated 2026-11-28T10:47:33Z (paper trading, never real money)
   CA `ATbAsdCwrhhVg23DRnWpjqx6kx7ivoK5o8ysNmu1pump`
 - 10:16Z Mojave (MIGRATED, $35,953 mcap, $30,715 5m vol): PASS at conviction 3, PASS. Blocker: chasing spike. 5m flow is 6.7x hourly pace, no printed higher low, and it's a 23-copy Mojave field with no project X behind it. Farm risk. (V1, V3, V6)  
   CA `4newt1R5fGEoCKdf9XBgiR6B43iacmnVAR2d4Wt8pump`
-- 10:15Z WLFI (MIGRATED, $286,362 mcap, $3,409 5m vol): PASS at conviction 2, PASS: bundle cluster holds 10.5% in one wallet group, 19% across three, on a choppy saw-tooth chart in an 8-copy vamp field with fading riff flow. Blocker: "split crowd" plus "flow below pace" (V1, V3, V13).  
-  CA `HmGQsYJyeiWrV6jABUY2Cb3bEmVxwk6LzVxCchsCpump`
 
 ## What its skips did next (last 48h)
 A skip "ran" if the coin reached the first target (1.5x) from the skip price before a 20% drop, "dumped" if the drop came first. Sampled every 10 min, followed 6h.
-- top 10 over 25%: blocked 53, ran 11, dumped 38, flat 3, open 1 (saving losses: keep it)
+- top 10 over 25%: blocked 52, ran 11, dumped 37, flat 3, open 1 (saving losses: keep it)
   - ran: Legatum up to 2.21x  
     CA `HkPSDYRcw4uqgRzZMDd5sRnMpE4ungR1K8MRNXnBVtQ2`
   - ran: Thankful up to 2.05x  
@@ -113,14 +113,14 @@ A skip "ran" if the coin reached the first target (1.5x) from the skip price bef
     CA `CFX1gH7CKYwqYXrfDkS2MUxJcEhs8PT63DyRA1chpump`
   - ran: SpaceXCoin up to 1.52x  
     CA `G2XqmSc8vJpLLwaLVXUeNkxsrhVT8vQ3Pje8MqeDpump`
-- near the high / chasing: blocked 37, ran 7, dumped 28, flat 2, open 0 (saving losses: keep it)
+- near the high / chasing: blocked 36, ran 7, dumped 27, flat 2, open 0 (saving losses: keep it)
   - ran: urcoin up to 1.71x  
     CA `25m4Lkct8nsYyqAMeE8rvjM3y5Zrrax46TLqNJjbpump`
   - ran: Meme up to 2.06x  
     CA `CV1NPi8L2PSYMfALBh7GCfUwELZzG3DrLUUjCkeapump`
   - ran: IceBall up to 1.67x  
     CA `6PFm828RKNJqKvjXQz82hhGvGNWFXZcBHNCF4U7spump`
-- too new / sniping: blocked 35, ran 3, dumped 32, flat 0, open 0 (saving losses: keep it)
+- too new / sniping: blocked 36, ran 3, dumped 32, flat 0, open 1 (saving losses: keep it)
   - ran: Pair up to 1.76x  
     CA `EWCfhnj8YjPEbvQXEtwkxMT54WhBpZBLQDFncRoypump`
   - ran: SpaceXCoin up to 1.52x  
@@ -191,13 +191,13 @@ No edge after costs, and I'm fairly sure of that. All 250 settled coins averaged
 The meta in the trenches right now is brand-new pump.fun joke launches, not the Trump riffs. The volume leaders are under an hour old: Mojave the Tortoise (0.1h, $31k cap, $20.6k 5m, 58% buys), cheng (0.7h, +503% in 1h, 60% buys) and EDITOR (0.8h, +76%, 61% buys), with animal and non-English names in the mix. The Trump-family riffs are fading: USD1 is -98% in 1h with no 5m volume, WLFI is a $286k coin on $3.4k 5m, and TRUMP isn't in the movers despite the dinner headlines. Fresh spikes are fading fast: SMOOTH and HPD are both down 79-82% in 1h, and MEMEPAY is -70% with zero buys on 5m. Setup to research: Mojave, the only mover clearing the ~$10k 5m bar, as a MIGRATED probe at conviction 5, with holder and bundle checks deciding whether it's a buy and a stop well under entry. cheng and EDITOR are below the 5m bar, so watch only. Caveat: the crawler summary says HPD is +525% at $18.9k and cites SPSC and FINGART, but the scan data shows HPD at -82% and $6k, so I used the scan numbers and did not rely on the summary.
 
 ## Moving most in its scans, last 30 min (1h volume)
-- EDITOR: $74,879 1h vol, $8,390 mcap, +43% 1h  
-  CA `57uooyjwYX2kpSGN3QnBLWAwk4KMZYbkp5e8f7i7pump`
-- JOB: $74,813 1h vol, $3,049,752 mcap, +13% 1h  
-  CA `9Pq7aLAbhDG2tTnS22cm6kuysZVcZpLFE368HWuypump`
-- BITCOINU: $72,512 1h vol, $1,259,106 mcap, +8% 1h  
-  CA `ATbAsdCwrhhVg23DRnWpjqx6kx7ivoK5o8ysNmu1pump`
-- SMOOTH: $63,636 1h vol, $5,975 mcap, -79% 1h  
+- Mojave: $135,023 1h vol, $35,058 mcap, +22% 1h  
+  CA `4newt1R5fGEoCKdf9XBgiR6B43iacmnVAR2d4Wt8pump`
+- SMOOTH: $62,227 1h vol, $11,600 mcap, -63% 1h  
   CA `2n5tTb5UXKABFXYRxDEjtDpWFh5ZFk7oRcNLDML5pump`
-- HPD: $56,882 1h vol, $6,058 mcap, -82% 1h  
-  CA `4cZsB6UgdUBTi13JMusBap9r2qGW1MPrdaSVAYkSpump`
+- WLFI: $62,125 1h vol, $305,822 mcap, +28% 1h  
+  CA `HmGQsYJyeiWrV6jABUY2Cb3bEmVxwk6LzVxCchsCpump`
+- EDITOR: $49,940 1h vol, $8,802 mcap, -46% 1h  
+  CA `57uooyjwYX2kpSGN3QnBLWAwk4KMZYbkp5e8f7i7pump`
+- Snowball: $49,262 1h vol, $213,701 mcap, -7% 1h  
+  CA `9TKbd3VFaMSXsEAicD9JVQWpWwAoLi4fSgWmZL2cpump`
