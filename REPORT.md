@@ -1,13 +1,13 @@
 # Trencher live report
 
-Updated 2026-11-28T07:30:26Z (paper trading, never real money)
+Updated 2026-11-28T07:45:36Z (paper trading, never real money)
 
 - Equity: $74.23 (-25.8% vs $100 start)
 - Closed trades: 22, 3 wins
 - Fees paid: $14.78 (axiom $2.81, network $9.18, pool $2.66), plus $4.15 lost to slippage
 - New trades: WATCH-ONLY (scans and decides, buys nothing)
 - Brain: subscription, claude-haiku-5-5 for routine calls, claude-opus-5-5 for the daily review; 367 routine calls and 9 plan-limit hits in 48h
-- Watch log: 76 coins being followed, 4395 filed, 0 would-buys (6h follow, sampled every 2 min)
+- Watch log: 75 coins being followed, 4399 filed, 0 would-buys (6h follow, sampled every 2 min)
 
 ## Scorecard (after fees)
 - 22 closed, 3 won (14%), net $-25.79
@@ -73,9 +73,15 @@ Updated 2026-11-28T07:30:26Z (paper trading, never real money)
   CA `H4gHnZ3NCU7Z9XQwGX6YYJNyieGEW8pqwGRUcdSxpump`
 
 ## Last scan
-- 07:29Z: 1 coins, 1 with pairs, 0 passed the market filters, 0 researched
+- 07:45Z: 7 coins, 7 with pairs, 0 passed the market filters, 0 researched
 
 ## Coins it looked at, and why it passed
+- 07:43Z WINTER (MIGRATED, $82,644 mcap, $1,865 5m vol): REJECT, 5m volume $1,865 is dead (<$2,000) (V1)  
+  CA `7dc3gFoyuDCPWjrfZfX99uasJJSceAJx5ucE8bDGpump`
+- 07:38Z Småkager (no setup, $14,371 mcap, $32,187 5m vol): REJECT, No setup fits: not Final Stretch, not a migrated runner, not a healthy dip  
+  CA `BW98q4cYxCeJM3uoB43Yy2e1EcjF4fPpeAuRkrhWpump`
+- 07:31Z SPSC (MIGRATED, $144,745 mcap, $3,777 5m vol): PASS at conviction 3, PASS: flow below pace (0.27x hourly, $3.8k on 5m vs $10k bar), no breakout, no catalyst. Dead joke-ticker field. (V1, V6)  
+  CA `EjdrRG2si1FQ3Bme5g6WSYNHJDrsKUrbGB4Z5xaopump`
 - 07:28Z hacked (no setup, $58,558 mcap, $0 5m vol): REJECT, Hack story ("hack" in the name or ticker): these tend to go down, owner rule  
   CA `FK7bc3fR8UL8uogN2u8J9yEpEbQJKR7yKsp3G8rvpump`
 - 07:23Z USD1 (DIP, $42,469 mcap, $16,721 5m vol): PASS at conviction 2, PASS: 17-minute-old USD1 copy, 56% off a $97k spike, still falling (5m -19.9%), no printed higher low, 8-copy vamp field. Falling knife in a split crowd (V1, V3, V6).  
@@ -90,16 +96,10 @@ Updated 2026-11-28T07:30:26Z (paper trading, never real money)
   CA `WZVWLfThgm14NN8HRDoyiEeXVvdUDMzGMHUS3VLpump`
 - 07:12Z Kibo (no setup, $60,818 mcap, $2,193 5m vol): REJECT, No setup fits: not Final Stretch, not a migrated runner, not a healthy dip  
   CA `7XSYaJygcuNe6Q3kPvwsJpg4ZrFL1AEUFb8kCuzppump`
-- 07:12Z WLFI (MIGRATED, $281,687 mcap, $15,821 5m vol): PASS at conviction 3, PASS: flow at 0.66x pace, one bundle cluster holds 10.5%, and the ticker belongs to a bigger coin. Joke name, no catalyst. (V1, V3, V6)  
-  CA `HmGQsYJyeiWrV6jABUY2Cb3bEmVxwk6LzVxCchsCpump`
-- 07:09Z gondola (FINAL_STRETCH, $15,227 mcap, $2,006 5m vol): PASS at conviction 2, PASS: gondola. 5m flow is $2k at 0.62x hourly pace, one of 9 same-ticker copies, and the last 15m candle fell about 54%. Flow below pace, no story (V1, V6, V13).  
-  CA `ArrsHWAybe2qPLwMFpmcxf5GaT19ZQJ7bnPSyKhJFsEt`
-- 07:00Z RICE (MIGRATED, $45,583 mcap, $3,010 5m vol): PASS at conviction 2, PASS. Falling knife with no higher low, flow at half pace, and a fading theme. The hard lines are clean but the money shape isn't there (V1, V6).  
-  CA `3rVr2RBzEXXKf1cVvZ6HBvFg2XmBK4iMgZv9q9q4pump`
 
 ## What its skips did next (last 48h)
 A skip "ran" if the coin reached the first target (1.5x) from the skip price before a 20% drop, "dumped" if the drop came first. Sampled every 10 min, followed 6h.
-- top 10 over 25%: blocked 55, ran 11, dumped 40, flat 3, open 1 (saving losses: keep it)
+- top 10 over 25%: blocked 55, ran 11, dumped 40, flat 4, open 0 (saving losses: keep it)
   - ran: Legatum up to 2.21x  
     CA `HkPSDYRcw4uqgRzZMDd5sRnMpE4ungR1K8MRNXnBVtQ2`
   - ran: Thankful up to 2.05x  
@@ -120,14 +120,14 @@ A skip "ran" if the coin reached the first target (1.5x) from the skip price bef
     CA `25m4Lkct8nsYyqAMeE8rvjM3y5Zrrax46TLqNJjbpump`
   - ran: Meme up to 2.06x  
     CA `CV1NPi8L2PSYMfALBh7GCfUwELZzG3DrLUUjCkeapump`
-- too new / sniping: blocked 38, ran 4, dumped 33, flat 0, open 1 (saving losses: keep it)
+- too new / sniping: blocked 37, ran 3, dumped 33, flat 0, open 1 (saving losses: keep it)
   - ran: Pair up to 1.76x  
     CA `EWCfhnj8YjPEbvQXEtwkxMT54WhBpZBLQDFncRoypump`
   - ran: SpaceXCoin up to 1.52x  
     CA `G2XqmSc8vJpLLwaLVXUeNkxsrhVT8vQ3Pje8MqeDpump`
   - ran: FARM up to 1.65x  
     CA `2dynAjPBnkqzjUwozgn8pDRkCf7k7CDJkLfcf4rupump`
-- bundles over the line: blocked 25, ran 3, dumped 18, flat 3, open 1 (saving losses: keep it)
+- bundles over the line: blocked 24, ran 3, dumped 17, flat 3, open 1 (saving losses: keep it)
   - ran: WIENER up to 1.59x  
     CA `8BDkDfj3ZUvcG9caGzF2XnHfwg7K6fjfKKDvX6SCpump`
   - ran: Dragon up to 1.55x  
@@ -144,15 +144,15 @@ A skip "ran" if the coin reached the first target (1.5x) from the skip price bef
     CA `CFX1gH7CKYwqYXrfDkS2MUxJcEhs8PT63DyRA1chpump`
   - ran: USD1 up to 1.51x  
     CA `B29od4bd54VAVAqJFToRKkKJadUGK5v8pkAVb5uvpump`
+- other: blocked 11, ran 1, dumped 7, flat 0, open 3 (saving losses: keep it)
+  - ran: Christmas up to 1.89x  
+    CA `5hkBYuFQDpAAqemCiVqXCuU6Ya5dqKhtRobzJsg6pump`
 - dev share over 1%: blocked 10, ran 2, dumped 7, flat 1, open 0 (saving losses: keep it)
   - ran: bolphante up to 1.7x  
     CA `FVBzzG4ZcAgxSLW1rWjNC9EH9CgEgz1A4puNYexMpump`
   - ran: Fug up to 1.58x  
     CA `7mSf4uWLkgdkqBfSoxniv5aZ1sDCXCiquJNcisjXpump`
 - RugCheck danger: blocked 10, ran 0, dumped 9, flat 1, open 0 (saving losses: keep it)
-- other: blocked 10, ran 1, dumped 7, flat 0, open 2 (saving losses: keep it)
-  - ran: Christmas up to 1.89x  
-    CA `5hkBYuFQDpAAqemCiVqXCuU6Ya5dqKhtRobzJsg6pump`
 
 ## Daily review (2026-11-27, claude-opus-5-5)
 No edge after costs, and I'm fairly sure of that. All 250 settled coins averaged -12.7% net under the simple plan, and every setup and stage lost money (-12.2% to -15.2%). Before costs the average is still about -3%, because the median coin peaked at only 1.2x. At n=250 the standard error is roughly 2 points, so 'negative' is solid. The gaps between buckets (2-3 points) are noise, especially since the same coin can be logged more than once. The routine model made zero would-buys out of 130 coins it researched, so I can't test whether its buys beat its passes. The coins it passed on (-13.9%) did no worse than the checklist rejects (-11.5%) beyond noise. Passing everything was right for these 24 hours, but a model that never says buy gives the Nov 10 rule test nothing to grade.
@@ -190,16 +190,16 @@ No edge after costs, and I'm fairly sure of that. All 250 settled coins averaged
 - [2026-11-02 20:25] I expected Slingoor, a clean MIGRATED leader with $25k of 5m flow at pace and a 0.77 buy share, to retest its $408k high from $304k. It never went green (0.98x peak) and hit the -20% stop in 2 minutes, a -$2.86 probe. My own thesis admitted there was no printed higher low after a peak only 6 minutes old, so this confirms the money-shape rule: buy share and flow are not structure (V1, V6). Next time a MIGRATED pullback with no higher low above the hourly low is a PASS with blocker "no higher low", not a probe. This is one loss, so it adds no new ban beyond the rule I already have.
 
 ## Meta right now
-The movers show a meta of ultra-fresh pump.fun joke launches (under an hour old) getting volume bursts: WLFI, "1 coin can change your life", Groo, FINGART, WORTHLESS and conjectures. The cold/animal-name theme (WINTER ARC, Snowball, Frogger, Kibo, RICE) is fading: Snowball and WINTER ARC run 41-49% buys, Frogger is dead at a $1.6k cap with zero 5-minute volume, and no mover carries the Trump dinner story. The crawler's Frogger +355% and Trump-driven claims are contradicted by the scan, so I'm weighting the scan. Research only, no entries until the checklist passes: FINGART ($27k 5m on a $98k cap, 60% buys, 0.3h old) and WLFI ($92k 5m, 83% buys), but WLFI shares a ticker with a well-known project, so confirm the right CA and check for copycats first. Stop at -30%, and PASS on anything with a bundle over 3% or top 10 over 15%. The hour-old 1 coin launch at 25k volume on an 18k cap is frenzy until proven otherwise. Paper only, not financial advice.
+Meta: joke-named pump.fun launches under a few hours old are where the 5-minute money is, and riffs on big names ride along with them. The cold/animal theme is fading (WINTER ARC -14% 1h, Snowball -13% 1h), and the Trump dinner story is in the headlines but no mover carries it. The burst pattern kills most of these: USD1 ($42k cap, $16.7k 5m, 56% buys, -27% 1h) and FINGART are live, while WORTHLESS ($0 5m), Groo (-95% 1h) and AirCoin ($26 5m) are dead, so this is frenzy that dies fast. WLFI ($282k cap, $12.5k 5m, 53% buys, 5m running at about half its hourly pace) shares a ticker and a riff name with World Liberty's token, so the right-token and vamp check comes before anything else. Setups to research, not buy yet: WLFI only if the original is confirmed and 5m volume holds above $10k with buys above 60%; FINGART (1.1h old, $110k cap) fails the $10k 5m bar at $7.1k until flow returns; USD1 is a fade-risk watch, not a setup. online and gondola are sub-hour bonding-curve launches, which is sniping, so I pass on them. The crawler's FINGART and Frogger figures don't match the scan, so I'm using the scan numbers.
 
 ## Moving most in its scans, last 30 min (1h volume)
-- WLFI: $281,378 1h vol, $281,687 mcap, +1% 1h  
-  CA `HmGQsYJyeiWrV6jABUY2Cb3bEmVxwk6LzVxCchsCpump`
-- FINGART: $220,703 1h vol, $109,885 mcap, +259% 1h  
-  CA `WZVWLfThgm14NN8HRDoyiEeXVvdUDMzGMHUS3VLpump`
-- Air: $180,986 1h vol, $4,771 mcap, -84% 1h  
-  CA `ACP9Kkvh3ShCawmVcEJQ7mr93uNF1uvTP1yvvivApump`
+- SPSC: $166,058 1h vol, $144,745 mcap, +54% 1h  
+  CA `EjdrRG2si1FQ3Bme5g6WSYNHJDrsKUrbGB4Z5xaopump`
 - USD1: $128,780 1h vol, $42,469 mcap, -27% 1h  
   CA `B29od4bd54VAVAqJFToRKkKJadUGK5v8pkAVb5uvpump`
-- WLFI: $101,273 1h vol, $1,317 mcap, -99% 1h  
-  CA `4HEfa8ytHJk75E4qdThEbtNdyGRg2qfQHMo8nu2Cpump`
+- Air: $53,901 1h vol, $2,957 mcap, -94% 1h  
+  CA `ACP9Kkvh3ShCawmVcEJQ7mr93uNF1uvTP1yvvivApump`
+- Småkager: $39,533 1h vol, $22,913 mcap, +751% 1h  
+  CA `BW98q4cYxCeJM3uoB43Yy2e1EcjF4fPpeAuRkrhWpump`
+- JOB: $32,131 1h vol, $2,489,907 mcap, -2% 1h  
+  CA `9Pq7aLAbhDG2tTnS22cm6kuysZVcZpLFE368HWuypump`
