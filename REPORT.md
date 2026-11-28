@@ -1,13 +1,13 @@
 # Trencher live report
 
-Updated 2026-11-28T12:18:57Z (paper trading, never real money)
+Updated 2026-11-28T12:34:05Z (paper trading, never real money)
 
 - Equity: $74.23 (-25.8% vs $100 start)
 - Closed trades: 22, 3 wins
 - Fees paid: $14.78 (axiom $2.81, network $9.18, pool $2.66), plus $4.15 lost to slippage
 - New trades: WATCH-ONLY (scans and decides, buys nothing)
-- Brain: subscription, claude-haiku-5-5 for routine calls, claude-opus-5-5 for the daily review; 369 routine calls and 9 plan-limit hits in 48h
-- Watch log: 71 coins being followed, 4454 filed, 0 would-buys (6h follow, sampled every 2 min)
+- Brain: subscription, claude-haiku-5-5 for routine calls, claude-opus-5-5 for the daily review; 368 routine calls and 9 plan-limit hits in 48h
+- Watch log: 68 coins being followed, 4459 filed, 0 would-buys (6h follow, sampled every 2 min)
 
 ## Scorecard (after fees)
 - 22 closed, 3 won (14%), net $-25.79
@@ -73,9 +73,15 @@ Updated 2026-11-28T12:18:57Z (paper trading, never real money)
   CA `H4gHnZ3NCU7Z9XQwGX6YYJNyieGEW8pqwGRUcdSxpump`
 
 ## Last scan
-- 12:17Z: 1 coins, 0 with pairs, 0 passed the market filters, 0 researched
+- 12:33Z: 5 coins, 5 with pairs, 0 passed the market filters, 0 researched
 
 ## Coins it looked at, and why it passed
+- 12:31Z hacked (DIP, $44,121 mcap, $840 5m vol): REJECT, Hack story ("hack" in the name or ticker): these tend to go down, owner rule  
+  CA `FK7bc3fR8UL8uogN2u8J9yEpEbQJKR7yKsp3G8rvpump`
+- 12:27Z FlipFlop (MIGRATED, $56,160 mcap, $43,215 5m vol): PASS at conviction 3, PASS — chasing spike: +53% on the 5m at 5x the hourly pace, nine minutes old, no printed higher low, and it's one of nine cat copies. Blocker: "chasing spike" (V1, V6).  
+  CA `8yUDvFWAHXBXSdgcRJZ7cWtFb1DZ1dwaQeYhb7kEpump`
+- 12:23Z OKOWARE (no setup, $28,758 mcap, $6,278 5m vol): REJECT, No setup fits: not Final Stretch, not a migrated runner, not a healthy dip  
+  CA `ANxUJcRwevw9xcWMQNrwgpzcdeSgXzNq6hLUxGG3pump`
 - 12:13Z Snowball (MIGRATED, $258,469 mcap, $3,608 5m vol): REJECT, RugCheck danger: Creator history of rugged tokens  
   CA `9TKbd3VFaMSXsEAicD9JVQWpWwAoLi4fSgWmZL2cpump`
 - 12:07Z EDITOR (FINAL_STRETCH, $23,349 mcap, $3,519 5m vol): REJECT, RugCheck danger: Creator history of rugged tokens  
@@ -90,12 +96,6 @@ Updated 2026-11-28T12:18:57Z (paper trading, never real money)
   CA `FK7bc3fR8UL8uogN2u8J9yEpEbQJKR7yKsp3G8rvpump`
 - 11:19Z SPSC (MIGRATED, $187,714 mcap, $2,960 5m vol): PASS at conviction 3, PASS: SPSC is a 30% pullback bottom-buy on a joke-meta coin nobody is calling, with no catalyst and no printed higher low near price. Blocker: "no catalyst" (V1, V6, V13).  
   CA `EjdrRG2si1FQ3Bme5g6WSYNHJDrsKUrbGB4Z5xaopump`
-- 11:18Z CBUCKS (MIGRATED, $6,025,451 mcap, $3,828 5m vol): REJECT, Top 10 hold 25.4% ex-pool (>25%) (V13)  
-  CA `DtcicPCKTKeAh7TDEzTym3hXeoHAoMiBdYJhMYxZpump`
-- 11:12Z WLFI (MIGRATED, $278,976 mcap, $4,827 5m vol): PASS at conviction 3, PASS: flow below pace and a bottom-buy with a fading Trump-brand narrative. Vamp field, bundle cluster at 10.5%. Skip. (V1, V6, V13)  
-  CA `HmGQsYJyeiWrV6jABUY2Cb3bEmVxwk6LzVxCchsCpump`
-- 11:10Z JOB (MIGRATED, $3,035,487 mcap, $4,951 5m vol): REJECT, Bundles: 1 linked wallet cluster(s) hold 22.5% of supply (>20%) (V17)  
-  CA `9Pq7aLAbhDG2tTnS22cm6kuysZVcZpLFE368HWuypump`
 
 ## What its skips did next (last 48h)
 A skip "ran" if the coin reached the first target (1.5x) from the skip price before a 20% drop, "dumped" if the drop came first. Sampled every 10 min, followed 6h.
@@ -106,7 +106,7 @@ A skip "ran" if the coin reached the first target (1.5x) from the skip price bef
     CA `E9arxG4RxB7Gxt6U75obonTZzx7vpbc4bUi1dfw3BtUN`
   - ran: MSTR up to 1.69x  
     CA `57sCZ82FwS5Dfs7FN9nshtU5Mkb3w1dqhmPUuCPvpump`
-- flow below pace: blocked 40, ran 4, dumped 29, flat 3, open 4 (saving losses: keep it)
+- flow below pace: blocked 40, ran 4, dumped 30, flat 3, open 3 (saving losses: keep it)
   - ran: PAIR up to 2.1x  
     CA `32rBxcFjCFnyqZ41CEPM5AL67X1dcw8w83vZt6Kxpump`
   - ran: Hoppy up to 1.76x  
@@ -120,7 +120,7 @@ A skip "ran" if the coin reached the first target (1.5x) from the skip price bef
     CA `CV1NPi8L2PSYMfALBh7GCfUwELZzG3DrLUUjCkeapump`
   - ran: IceBall up to 1.67x  
     CA `6PFm828RKNJqKvjXQz82hhGvGNWFXZcBHNCF4U7spump`
-- too new / sniping: blocked 36, ran 4, dumped 32, flat 0, open 0 (saving losses: keep it)
+- too new / sniping: blocked 36, ran 3, dumped 32, flat 0, open 1 (saving losses: keep it)
   - ran: Pair up to 1.76x  
     CA `EWCfhnj8YjPEbvQXEtwkxMT54WhBpZBLQDFncRoypump`
   - ran: SpaceXCoin up to 1.52x  
@@ -140,10 +140,10 @@ A skip "ran" if the coin reached the first target (1.5x) from the skip price bef
 - falling knife / no higher low: blocked 17, ran 1, dumped 11, flat 2, open 3 (saving losses: keep it)
   - ran: Hoppy up to 1.76x  
     CA `CFX1gH7CKYwqYXrfDkS2MUxJcEhs8PT63DyRA1chpump`
-- RugCheck danger: blocked 12, ran 0, dumped 9, flat 1, open 2 (saving losses: keep it)
-- other: blocked 11, ran 1, dumped 9, flat 0, open 1 (saving losses: keep it)
+- other: blocked 12, ran 1, dumped 9, flat 1, open 1 (saving losses: keep it)
   - ran: Christmas up to 1.89x  
     CA `5hkBYuFQDpAAqemCiVqXCuU6Ya5dqKhtRobzJsg6pump`
+- RugCheck danger: blocked 11, ran 0, dumped 8, flat 1, open 2 (saving losses: keep it)
 - dev share over 1%: blocked 9, ran 2, dumped 7, flat 0, open 0 (saving losses: keep it)
   - ran: bolphante up to 1.7x  
     CA `FVBzzG4ZcAgxSLW1rWjNC9EH9CgEgz1A4puNYexMpump`
@@ -189,13 +189,13 @@ No edge after costs, and I'm fairly sure of that. All 250 settled coins averaged
 Meta: absurd pump.fun joke launches with CJK or sarcastic names are the only group pulling real volume, while the Trump-family riffs are fading (WLFI is a $279k coin on $4.8k 5m, +4% in 1h) and the sub-hour spikes are burning out (GPU -57% in 1h on $1.5k 5m, SMOOTH -19%). Rising: OKOWARE (怒ワレ, 0.1h old, $16.7k cap, $20.7k 5m, 61% buys, +521% in 1h) and OUTSIDER ("In A World Of Insiders", 0.4h, $6k cap, +86%, $4.8k 5m, 54% buys), with cheng and EDITOR in the same launch style but thinner. Only OKOWARE clears the ~$10k 5m bar, so it's the one setup to research as a FINAL_STRETCH probe. Conviction is 4 for now because of the parabolic first hour and no holder data, so it's a PASS until top-10, dev and bundle checks come back clean; if they do, it's a 5 probe with initials at 2x, a stop at -30%, and out if 5m volume drops under $10k before bond (V1, V6). Caveat: the crawler's Mojave figures don't appear in the scan data at all, and its HPD and SPSC numbers disagree with the scan, so I used scan numbers only.
 
 ## Moving most in its scans, last 30 min (1h volume)
-- Hachiware: $86,098 1h vol, $16,940 mcap, -42% 1h  
+- OKOWARE: $205,558 1h vol, $30,180 mcap, -2% 1h  
+  CA `ANxUJcRwevw9xcWMQNrwgpzcdeSgXzNq6hLUxGG3pump`
+- Hachiware: $108,097 1h vol, $6,876 mcap, -77% 1h  
   CA `3JfzkFiB95EY8ZvE3TtsKQcQ4Sf2M1SMzZKu1JNwkoqw`
-- Fireball: $84,299 1h vol, $377,098 mcap, -31% 1h  
-  CA `B9wbjDJ4FbHMsZmoXAkJSTAwuePaJUKbySvnK5zApump`
-- OUTSIDER: $78,066 1h vol, $2,435 mcap, -25% 1h  
-  CA `GHwNfVmhqEYyzumjbJpoh647zb9RNkrFNMkfdsCeS1MG`
-- BITCOINU: $58,908 1h vol, $996,461 mcap, -12% 1h  
-  CA `ATbAsdCwrhhVg23DRnWpjqx6kx7ivoK5o8ysNmu1pump`
-- Mojave: $47,512 1h vol, $27,047 mcap, +38% 1h  
-  CA `4newt1R5fGEoCKdf9XBgiR6B43iacmnVAR2d4Wt8pump`
+- FlipFlop: $107,879 1h vol, $60,308 mcap, +103% 1h  
+  CA `8yUDvFWAHXBXSdgcRJZ7cWtFb1DZ1dwaQeYhb7kEpump`
+- EDITOR: $33,092 1h vol, $23,256 mcap, +75% 1h  
+  CA `57uooyjwYX2kpSGN3QnBLWAwk4KMZYbkp5e8f7i7pump`
+- JOB: $31,609 1h vol, $3,330,123 mcap, +8% 1h  
+  CA `9Pq7aLAbhDG2tTnS22cm6kuysZVcZpLFE368HWuypump`
