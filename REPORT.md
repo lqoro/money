@@ -1,13 +1,13 @@
 # Trencher live report
 
-Updated 2026-11-28T08:15:49Z (paper trading, never real money)
+Updated 2026-11-28T08:30:50Z (paper trading, never real money)
 
 - Equity: $74.23 (-25.8% vs $100 start)
 - Closed trades: 22, 3 wins
 - Fees paid: $14.78 (axiom $2.81, network $9.18, pool $2.66), plus $4.15 lost to slippage
 - New trades: WATCH-ONLY (scans and decides, buys nothing)
-- Brain: subscription, claude-haiku-5-5 for routine calls, claude-opus-5-5 for the daily review; 370 routine calls and 9 plan-limit hits in 48h
-- Watch log: 76 coins being followed, 4406 filed, 0 would-buys (6h follow, sampled every 2 min)
+- Brain: subscription, claude-haiku-5-5 for routine calls, claude-opus-5-5 for the daily review; 369 routine calls and 9 plan-limit hits in 48h
+- Watch log: 73 coins being followed, 4410 filed, 0 would-buys (6h follow, sampled every 2 min)
 
 ## Scorecard (after fees)
 - 22 closed, 3 won (14%), net $-25.79
@@ -73,9 +73,13 @@ Updated 2026-11-28T08:15:49Z (paper trading, never real money)
   CA `H4gHnZ3NCU7Z9XQwGX6YYJNyieGEW8pqwGRUcdSxpump`
 
 ## Last scan
-- 08:15Z: 5 coins, 4 with pairs, 0 passed the market filters, 0 researched
+- 08:30Z: 6 coins, 6 with pairs, 0 passed the market filters, 0 researched
 
 ## Coins it looked at, and why it passed
+- 08:29Z hacked (no setup, $55,618 mcap, $0 5m vol): REJECT, Hack story ("hack" in the name or ticker): these tend to go down, owner rule  
+  CA `FK7bc3fR8UL8uogN2u8J9yEpEbQJKR7yKsp3G8rvpump`
+- 08:17Z SPSC (MIGRATED, $164,339 mcap, $15,455 5m vol): PASS at conviction 4, PASS: no higher low printed, and no story behind a bottom buy. Frenzy with a 19-copy field. (V1, V6)  
+  CA `EjdrRG2si1FQ3Bme5g6WSYNHJDrsKUrbGB4Z5xaopump`
 - 08:08Z USD1 (DIP, $36,263 mcap, $20,440 5m vol): PASS at conviction 3, PASS: falling knife with no printed higher low, on a fading stablecoin-riff meta. Blocker: "no higher low" + "narrative not rising." (V1, V6)  
   CA `B29od4bd54VAVAqJFToRKkKJadUGK5v8pkAVb5uvpump`
 - 08:06Z RICE (MIGRATED, $42,618 mcap, $9,497 5m vol): PASS at conviction 2, PASS: falling knife with no higher low. RICE is 79.5% off its $208k high, down 36.5% on the 5m, and the last 15m close (4.30e-5) is below the prior 4.56e-5 low. Blocker: "no higher low" (V1, V6).  
@@ -92,10 +96,6 @@ Updated 2026-11-28T08:15:49Z (paper trading, never real money)
   CA `HmGQsYJyeiWrV6jABUY2Cb3bEmVxwk6LzVxCchsCpump`
 - 07:52Z JOB (MIGRATED, $2,486,553 mcap, $8,987 5m vol): REJECT, Bundles: 1 linked wallet cluster(s) hold 22.5% of supply (>20%) (V17)  
   CA `9Pq7aLAbhDG2tTnS22cm6kuysZVcZpLFE368HWuypump`
-- 07:43Z WINTER (MIGRATED, $82,644 mcap, $1,865 5m vol): REJECT, 5m volume $1,865 is dead (<$2,000) (V1)  
-  CA `7dc3gFoyuDCPWjrfZfX99uasJJSceAJx5ucE8bDGpump`
-- 07:38Z Småkager (no setup, $14,371 mcap, $32,187 5m vol): REJECT, No setup fits: not Final Stretch, not a migrated runner, not a healthy dip  
-  CA `BW98q4cYxCeJM3uoB43Yy2e1EcjF4fPpeAuRkrhWpump`
 
 ## What its skips did next (last 48h)
 A skip "ran" if the coin reached the first target (1.5x) from the skip price before a 20% drop, "dumped" if the drop came first. Sampled every 10 min, followed 6h.
@@ -137,12 +137,12 @@ A skip "ran" if the coin reached the first target (1.5x) from the skip price bef
 - falling knife (code): blocked 22, ran 1, dumped 19, flat 0, open 2 (saving losses: keep it)
   - ran: Split up to 1.54x  
     CA `HAP9FcXubD88SjRHMY1kr5iukpRZgeMAgCBam3Vtpump`
-- falling knife / no higher low: blocked 16, ran 2, dumped 10, flat 2, open 2 (saving losses: keep it)
+- falling knife / no higher low: blocked 17, ran 2, dumped 10, flat 2, open 3 (saving losses: keep it)
   - ran: Maru up to 1.88x  
     CA `FokVFH6mDsazoKbtnUaA2FRMsRbDSwZhNfn17Fdvpump`
   - ran: Hoppy up to 1.76x  
     CA `CFX1gH7CKYwqYXrfDkS2MUxJcEhs8PT63DyRA1chpump`
-- other: blocked 11, ran 1, dumped 7, flat 0, open 3 (saving losses: keep it)
+- other: blocked 11, ran 1, dumped 8, flat 0, open 2 (saving losses: keep it)
   - ran: Christmas up to 1.89x  
     CA `5hkBYuFQDpAAqemCiVqXCuU6Ya5dqKhtRobzJsg6pump`
 - RugCheck danger: blocked 10, ran 0, dumped 9, flat 1, open 0 (saving losses: keep it)
@@ -191,11 +191,11 @@ Meta: joke-named pump.fun launches under a few hours old are where the 5-minute 
 ## Moving most in its scans, last 30 min (1h volume)
 - USD1: $238,858 1h vol, $36,263 mcap, -47% 1h  
   CA `B29od4bd54VAVAqJFToRKkKJadUGK5v8pkAVb5uvpump`
-- WLFI: $167,084 1h vol, $259,349 mcap, +37% 1h  
-  CA `HmGQsYJyeiWrV6jABUY2Cb3bEmVxwk6LzVxCchsCpump`
-- FINGART: $135,423 1h vol, $87,621 mcap, -19% 1h  
-  CA `WZVWLfThgm14NN8HRDoyiEeXVvdUDMzGMHUS3VLpump`
-- USD1: $112,939 1h vol, $76,929 mcap, +158% 1h  
-  CA `8Y24KBnY9gaNWDaxohxtEU1gxESvfwdYeGFuHJKpump`
+- Småkager: $139,065 1h vol, $11,821 mcap, +339% 1h  
+  CA `BW98q4cYxCeJM3uoB43Yy2e1EcjF4fPpeAuRkrhWpump`
+- SPSC: $134,999 1h vol, $164,339 mcap, +41% 1h  
+  CA `EjdrRG2si1FQ3Bme5g6WSYNHJDrsKUrbGB4Z5xaopump`
 - BITCOINU: $79,597 1h vol, $829,339 mcap, +0% 1h  
   CA `ATbAsdCwrhhVg23DRnWpjqx6kx7ivoK5o8ysNmu1pump`
+- USD2: $39,994 1h vol, $10,820 mcap, -5% 1h  
+  CA `DXLE6M12GsJW23aTU2VpZeJcgQ8rwTwQbzmDKvMSpump`
