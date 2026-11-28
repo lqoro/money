@@ -1,13 +1,13 @@
 # Trencher live report
 
-Updated 2026-11-28T08:45:59Z (paper trading, never real money)
+Updated 2026-11-28T09:01:06Z (paper trading, never real money)
 
 - Equity: $74.23 (-25.8% vs $100 start)
 - Closed trades: 22, 3 wins
 - Fees paid: $14.78 (axiom $2.81, network $9.18, pool $2.66), plus $4.15 lost to slippage
 - New trades: WATCH-ONLY (scans and decides, buys nothing)
-- Brain: subscription, claude-haiku-5-5 for routine calls, claude-opus-5-5 for the daily review; 371 routine calls and 9 plan-limit hits in 48h
-- Watch log: 74 coins being followed, 4413 filed, 0 would-buys (6h follow, sampled every 2 min)
+- Brain: subscription, claude-haiku-5-5 for routine calls, claude-opus-5-5 for the daily review; 373 routine calls and 9 plan-limit hits in 48h
+- Watch log: 74 coins being followed, 4417 filed, 0 would-buys (6h follow, sampled every 2 min)
 
 ## Scorecard (after fees)
 - 22 closed, 3 won (14%), net $-25.79
@@ -73,9 +73,17 @@ Updated 2026-11-28T08:45:59Z (paper trading, never real money)
   CA `H4gHnZ3NCU7Z9XQwGX6YYJNyieGEW8pqwGRUcdSxpump`
 
 ## Last scan
-- 08:44Z: 6 coins, 6 with pairs, 1 passed the market filters, 1 researched
+- 09:00Z: 5 coins, 5 with pairs, 0 passed the market filters, 0 researched
 
 ## Coins it looked at, and why it passed
+- 08:54Z USD1 (DIP, $35,776 mcap, $2,713 5m vol): REJECT, Dip with fading attention is a falling knife, not a dip (5m at 0.38x the hour's pace, under 0.6x)  
+  CA `B29od4bd54VAVAqJFToRKkKJadUGK5v8pkAVb5uvpump`
+- 08:46Z Fireball (DIP, $427,803 mcap, $4,168 5m vol): PASS at conviction 3, PASS. Bottom buy with no catalyst, zero buzz, 26-copy field, and a site that doesn't show this CA. Blocker: no catalyst on a DIP (V1, V6, V13).  
+  CA `B9wbjDJ4FbHMsZmoXAkJSTAwuePaJUKbySvnK5zApump`
+- 08:46Z BITCOINU (DIP, $1,234,752 mcap, $5,668 5m vol): REJECT, Dip with fading attention is a falling knife, not a dip (5m at 0.43x the hour's pace, under 0.6x)  
+  CA `ATbAsdCwrhhVg23DRnWpjqx6kx7ivoK5o8ysNmu1pump`
+- 08:46Z FINGART (DIP, $86,872 mcap, $13,904 5m vol): PASS at conviction 3, PASS: DIP with no catalyst and no printed higher low. The story is dead air, not a bottom. (V1, V6)  
+  CA `WZVWLfThgm14NN8HRDoyiEeXVvdUDMzGMHUS3VLpump`
 - 08:44Z USD1 (DIP, $67,477 mcap, $8,422 5m vol): REJECT, Dip with fading attention is a falling knife, not a dip (5m at 0.38x the hour's pace, under 0.6x)  
   CA `8Y24KBnY9gaNWDaxohxtEU1gxESvfwdYeGFuHJKpump`
 - 08:44Z WLFI (MIGRATED, $272,460 mcap, $31,406 5m vol): PASS at conviction 3, PASS — mid-range entry, 37% above its printed higher low, and a 10.5% bundle cluster on a ticker that copies a bigger Trump-linked WLFI (V1, V3, V13).  
@@ -88,14 +96,6 @@ Updated 2026-11-28T08:45:59Z (paper trading, never real money)
   CA `FK7bc3fR8UL8uogN2u8J9yEpEbQJKR7yKsp3G8rvpump`
 - 08:17Z SPSC (MIGRATED, $164,339 mcap, $15,455 5m vol): PASS at conviction 4, PASS: no higher low printed, and no story behind a bottom buy. Frenzy with a 19-copy field. (V1, V6)  
   CA `EjdrRG2si1FQ3Bme5g6WSYNHJDrsKUrbGB4Z5xaopump`
-- 08:08Z USD1 (DIP, $36,263 mcap, $20,440 5m vol): PASS at conviction 3, PASS: falling knife with no printed higher low, on a fading stablecoin-riff meta. Blocker: "no higher low" + "narrative not rising." (V1, V6)  
-  CA `B29od4bd54VAVAqJFToRKkKJadUGK5v8pkAVb5uvpump`
-- 08:06Z RICE (MIGRATED, $42,618 mcap, $9,497 5m vol): PASS at conviction 2, PASS: falling knife with no higher low. RICE is 79.5% off its $208k high, down 36.5% on the 5m, and the last 15m close (4.30e-5) is below the prior 4.56e-5 low. Blocker: "no higher low" (V1, V6).  
-  CA `3rVr2RBzEXXKf1cVvZ6HBvFg2XmBK4iMgZv9q9q4pump`
-- 08:01Z BITCOINU (DIP, $829,339 mcap, $5,690 5m vol): PASS at conviction 2, PASS: bottom buy with no catalyst, theme flow at 0.86x of its hourly pace, and 14 same-ticker copies. Nothing is rising here (owner bottom-buy rule, V1, V13).  
-  CA `ATbAsdCwrhhVg23DRnWpjqx6kx7ivoK5o8ysNmu1pump`
-- 08:00Z Fireball (DIP, $422,630 mcap, $3,424 5m vol): PASS at conviction 2, PASS: flow below pace and no catalyst on a 26-copy Fireball field. Blocker: "flow below pace" (5m at 0.61x hourly, under the 0.7x dip gate). (V1, V6, V13)  
-  CA `B9wbjDJ4FbHMsZmoXAkJSTAwuePaJUKbySvnK5zApump`
 
 ## What its skips did next (last 48h)
 A skip "ran" if the coin reached the first target (1.5x) from the skip price before a 20% drop, "dumped" if the drop came first. Sampled every 10 min, followed 6h.
@@ -127,17 +127,17 @@ A skip "ran" if the coin reached the first target (1.5x) from the skip price bef
     CA `G2XqmSc8vJpLLwaLVXUeNkxsrhVT8vQ3Pje8MqeDpump`
   - ran: FARM up to 1.65x  
     CA `2dynAjPBnkqzjUwozgn8pDRkCf7k7CDJkLfcf4rupump`
-- bundles over the line: blocked 25, ran 3, dumped 17, flat 3, open 2 (saving losses: keep it)
+- bundles over the line: blocked 25, ran 3, dumped 18, flat 4, open 0 (saving losses: keep it)
   - ran: WIENER up to 1.59x  
     CA `8BDkDfj3ZUvcG9caGzF2XnHfwg7K6fjfKKDvX6SCpump`
   - ran: Dragon up to 1.55x  
     CA `cg3HaDWhAKFfj9aq79TWUBgmxfs4G7byQ7feaxnpump`
   - ran: monky up to 96.37x  
     CA `At5hmwDn4YgPDoic1UN7zMdTtCoiXJsMhnKaoazEpump`
-- falling knife (code): blocked 23, ran 1, dumped 19, flat 0, open 3 (saving losses: keep it)
+- falling knife (code): blocked 24, ran 1, dumped 20, flat 0, open 3 (saving losses: keep it)
   - ran: Split up to 1.54x  
     CA `HAP9FcXubD88SjRHMY1kr5iukpRZgeMAgCBam3Vtpump`
-- falling knife / no higher low: blocked 18, ran 2, dumped 10, flat 2, open 4 (saving losses: keep it)
+- falling knife / no higher low: blocked 19, ran 2, dumped 10, flat 2, open 5 (saving losses: keep it)
   - ran: Maru up to 1.88x  
     CA `FokVFH6mDsazoKbtnUaA2FRMsRbDSwZhNfn17Fdvpump`
   - ran: Hoppy up to 1.76x  
@@ -191,11 +191,11 @@ The meta on the scan is fresh pump.fun joke launches under about an hour old, wi
 ## Moving most in its scans, last 30 min (1h volume)
 - USD1: $264,123 1h vol, $67,477 mcap, +48% 1h  
   CA `8Y24KBnY9gaNWDaxohxtEU1gxESvfwdYeGFuHJKpump`
+- BITCOINU: $158,751 1h vol, $1,234,752 mcap, +34% 1h  
+  CA `ATbAsdCwrhhVg23DRnWpjqx6kx7ivoK5o8ysNmu1pump`
 - WLFI: $140,480 1h vol, $277,358 mcap, +39% 1h  
   CA `HmGQsYJyeiWrV6jABUY2Cb3bEmVxwk6LzVxCchsCpump`
-- Småkager: $139,065 1h vol, $11,821 mcap, +339% 1h  
-  CA `BW98q4cYxCeJM3uoB43Yy2e1EcjF4fPpeAuRkrhWpump`
-- SPSC: $134,999 1h vol, $164,339 mcap, +41% 1h  
-  CA `EjdrRG2si1FQ3Bme5g6WSYNHJDrsKUrbGB4Z5xaopump`
-- ascend: $35,578 1h vol, $9,718 mcap, +271% 1h  
-  CA `A7xhY12G388pXGsBuweS6NkyZyv53ogH1dNfEkCMpump`
+- FINGART: $119,966 1h vol, $86,872 mcap, +25% 1h  
+  CA `WZVWLfThgm14NN8HRDoyiEeXVvdUDMzGMHUS3VLpump`
+- USD1: $84,950 1h vol, $35,776 mcap, -44% 1h  
+  CA `B29od4bd54VAVAqJFToRKkKJadUGK5v8pkAVb5uvpump`
