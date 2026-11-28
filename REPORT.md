@@ -1,13 +1,13 @@
 # Trencher live report
 
-Updated 2026-11-28T13:49:46Z (paper trading, never real money)
+Updated 2026-11-28T14:04:52Z (paper trading, never real money)
 
 - Equity: $74.23 (-25.8% vs $100 start)
 - Closed trades: 22, 3 wins
 - Fees paid: $14.78 (axiom $2.81, network $9.18, pool $2.66), plus $4.15 lost to slippage
 - New trades: WATCH-ONLY (scans and decides, buys nothing)
-- Brain: subscription, claude-haiku-5-5 for routine calls, claude-opus-5-5 for the daily review; 361 routine calls and 9 plan-limit hits in 48h
-- Watch log: 65 coins being followed, 4474 filed, 0 would-buys (6h follow, sampled every 2 min)
+- Brain: subscription, claude-haiku-5-5 for routine calls, claude-opus-5-5 for the daily review; 359 routine calls and 9 plan-limit hits in 48h
+- Watch log: 60 coins being followed, 4480 filed, 0 would-buys (6h follow, sampled every 2 min)
 
 ## Scorecard (after fees)
 - 22 closed, 3 won (14%), net $-25.79
@@ -73,9 +73,11 @@ Updated 2026-11-28T13:49:46Z (paper trading, never real money)
   CA `H4gHnZ3NCU7Z9XQwGX6YYJNyieGEW8pqwGRUcdSxpump`
 
 ## Last scan
-- 13:48Z: 9 coins, 9 with pairs, 1 passed the market filters, 1 researched
+- 14:04Z: 8 coins, 8 with pairs, 0 passed the market filters, 0 researched
 
 ## Coins it looked at, and why it passed
+- 13:53Z GROKSIE (FINAL_STRETCH, $14,933 mcap, $12,586 5m vol): PASS at conviction 3, PASS — +107% on the 5m candle and 4.8x the hourly pace, 10 minutes into the curve with no higher low. That's a spike, not a pullback (V1, V6).  
+  CA `5jjJWZfTTaZtG74zSpiEZbMBHNM2jieHEXM2UZvapump`
 - 13:49Z John (MIGRATED, $39,786 mcap, $47,630 5m vol): REJECT, RugCheck danger: Creator history of rugged tokens  
   CA `EvN4RDyoqUTpCcrvz5QTAdHVqypgxV4MCR77Bfnjpump`
 - 13:45Z Zhaki (DIP, $170,602 mcap, $2,124 5m vol): REJECT, Dev holds 3.8% (>1%) (V13, V17)  
@@ -94,8 +96,6 @@ Updated 2026-11-28T13:49:46Z (paper trading, never real money)
   CA `B9wbjDJ4FbHMsZmoXAkJSTAwuePaJUKbySvnK5zApump`
 - 13:21Z hold (MIGRATED, $58,594 mcap, $16,186 5m vol): PASS at conviction 3, PASS: "hold" is sitting 1.5% off a 15-minute-old peak after a +99% hour, with no printed higher low and 9 same-ticker copies. Chasing, too new (V1, V6).  
   CA `4qnvryLCPUQ1kLZMsK44Ra2H19tRGzijbbhfDmSLpump`
-- 12:53Z BNB (FINAL_STRETCH, $24,332 mcap, $27,243 5m vol): PASS at conviction 2, PASS: BNB is 8 minutes old, up 267% on 5m and 916% on the hour, with 25 copies of its name. Chasing a spike at the peak. Blockers: "chasing spike" and "too new". (V1, V6)  
-  CA `3V8dPY9yH4TSHm11fx6Po7XJ8xPzSjcf8W9Q3QhXpump`
 
 ## What its skips did next (last 48h)
 A skip "ran" if the coin reached the first target (1.5x) from the skip price before a 20% drop, "dumped" if the drop came first. Sampled every 10 min, followed 6h.
@@ -106,7 +106,7 @@ A skip "ran" if the coin reached the first target (1.5x) from the skip price bef
     CA `57sCZ82FwS5Dfs7FN9nshtU5Mkb3w1dqhmPUuCPvpump`
   - ran: Kuro up to 2.05x  
     CA `7sxuap7Q4uoAJFBW3ensq6QTa2KwgGosfFwoeXtJpump`
-- flow below pace: blocked 38, ran 5, dumped 27, flat 4, open 2 (saving losses: keep it)
+- flow below pace: blocked 38, ran 5, dumped 27, flat 5, open 1 (saving losses: keep it)
   - ran: PAIR up to 2.1x  
     CA `32rBxcFjCFnyqZ41CEPM5AL67X1dcw8w83vZt6Kxpump`
   - ran: Hoppy up to 1.76x  
@@ -135,17 +135,17 @@ A skip "ran" if the coin reached the first target (1.5x) from the skip price bef
     CA `At5hmwDn4YgPDoic1UN7zMdTtCoiXJsMhnKaoazEpump`
   - ran: USD1 up to 1.55x  
     CA `8Y24KBnY9gaNWDaxohxtEU1gxESvfwdYeGFuHJKpump`
-- falling knife / no higher low: blocked 16, ran 2, dumped 10, flat 2, open 2 (saving losses: keep it)
+- falling knife / no higher low: blocked 17, ran 2, dumped 11, flat 3, open 1 (saving losses: keep it)
   - ran: Hoppy up to 1.76x  
     CA `CFX1gH7CKYwqYXrfDkS2MUxJcEhs8PT63DyRA1chpump`
   - ran: SPSC up to 1.58x  
     CA `EjdrRG2si1FQ3Bme5g6WSYNHJDrsKUrbGB4Z5xaopump`
-- other: blocked 13, ran 2, dumped 10, flat 1, open 0 (saving losses: keep it)
+- other: blocked 12, ran 2, dumped 9, flat 1, open 0 (saving losses: keep it)
   - ran: Christmas up to 1.89x  
     CA `5hkBYuFQDpAAqemCiVqXCuU6Ya5dqKhtRobzJsg6pump`
   - ran: Bagwork up to 1.81x  
     CA `5qDeCs9MkTAhk6q76XvKrZgimoQdJowuSWbjSZKvpump`
-- RugCheck danger: blocked 12, ran 1, dumped 9, flat 1, open 1 (saving losses: keep it)
+- RugCheck danger: blocked 11, ran 1, dumped 9, flat 1, open 0 (saving losses: keep it)
   - ran: Snowball up to 1.56x  
     CA `9TKbd3VFaMSXsEAicD9JVQWpWwAoLi4fSgWmZL2cpump`
 - dev share over 1%: blocked 9, ran 2, dumped 6, flat 0, open 1 (saving losses: keep it)
@@ -193,13 +193,13 @@ Nothing has a positive edge after costs. All 225 settled coins averaged -12.9% n
 The meta in scan_movers is cat and animal mascot names plus CJK-character names on pump.fun, with slogan tickers (hold, Bagwork) riding launch spikes. The Trump-dinner news isn't in the movers and there's no Trump-family coin in the top volume, so I'm treating that story as fading. Rising: "hold" (Believe in something?, $58.6k cap, $16.2k 5m, 62% buys, +99% 1h, 12 min old) is the cleanest mover clearing the $10k bar; OKOWARE (怒ワレ, $21k cap) and smol cat ($14.6k cap, 78% buys) carry the cat/CJK style but are thin on 5m. Fading: BNB (Bankrupting New Buyers, -91%) and EDITOR (-87%, 11% buys). The crawler's FlipFlop Cat figures ($60k cap, +103%, clearing the bar) don't match scan_movers ($2.2k cap, -97% 1h, zero 5m volume), so I'm discarding them. Setup to research: "hold" as a MIGRATED probe. Conviction 4, so it's a PASS until holder, dev and bundle checks come back clean; if they do, it becomes a 5 probe, buying only on a pullback that holds with 5m volume above $10k, initials at 2x, stop at -30%, and out if 5m volume drops under $10k. Bagwork ($16k cap, $32k 5m, age zero, still on the pump.fun curve) is a launch spike; the new-pair rule says I don't chase it.
 
 ## Moving most in its scans, last 30 min (1h volume)
-- BNB: $93,742 1h vol, $2,739 mcap, -91% 1h  
+- FIX6900: $70,059 1h vol, $16,817 mcap, -41% 1h  
+  CA `GDUL9Nor761zu3m6azcUiaLruwReAYG7jTppgGiWpump`
+- BNB: $47,669 1h vol, $2,346 mcap, -92% 1h  
   CA `3V8dPY9yH4TSHm11fx6Po7XJ8xPzSjcf8W9Q3QhXpump`
-- hold: $86,891 1h vol, $58,594 mcap, +99% 1h  
-  CA `4qnvryLCPUQ1kLZMsK44Ra2H19tRGzijbbhfDmSLpump`
-- BITCOINU: $58,669 1h vol, $1,203,391 mcap, +13% 1h  
-  CA `ATbAsdCwrhhVg23DRnWpjqx6kx7ivoK5o8ysNmu1pump`
-- Fireball: $54,548 1h vol, $530,789 mcap, +13% 1h  
-  CA `B9wbjDJ4FbHMsZmoXAkJSTAwuePaJUKbySvnK5zApump`
-- FlipFlop: $53,789 1h vol, $2,241 mcap, -97% 1h  
-  CA `8yUDvFWAHXBXSdgcRJZ7cWtFb1DZ1dwaQeYhb7kEpump`
+- John: $47,630 1h vol, $39,786 mcap, +40% 1h  
+  CA `EvN4RDyoqUTpCcrvz5QTAdHVqypgxV4MCR77Bfnjpump`
+- GROKSIE: $31,180 1h vol, $14,933 mcap, +616% 1h  
+  CA `5jjJWZfTTaZtG74zSpiEZbMBHNM2jieHEXM2UZvapump`
+- burni: $28,316 1h vol, $4,074 mcap, +69% 1h  
+  CA `G4meLXkHyXQatVU4yk9jEiamRVN3CBB3akHzRketpump`
