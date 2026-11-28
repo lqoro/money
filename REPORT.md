@@ -1,13 +1,13 @@
 # Trencher live report
 
-Updated 2026-11-27T23:56:28Z (paper trading, never real money)
+Updated 2026-11-28T00:11:34Z (paper trading, never real money)
 
 - Equity: $74.23 (-25.8% vs $100 start)
 - Closed trades: 22, 3 wins
 - Fees paid: $14.78 (axiom $2.81, network $9.18, pool $2.66), plus $4.15 lost to slippage
 - New trades: WATCH-ONLY (scans and decides, buys nothing)
-- Brain: subscription, claude-haiku-5-5 for routine calls, claude-opus-5-5 for the daily review; 389 routine calls and 9 plan-limit hits in 48h
-- Watch log: 77 coins being followed, 4297 filed, 0 would-buys (6h follow, sampled every 2 min)
+- Brain: subscription, claude-haiku-5-5 for routine calls, claude-opus-5-5 for the daily review; 386 routine calls and 9 plan-limit hits in 48h
+- Watch log: 76 coins being followed, 4300 filed, 0 would-buys (6h follow, sampled every 2 min)
 
 ## Scorecard (after fees)
 - 22 closed, 3 won (14%), net $-25.79
@@ -73,9 +73,13 @@ Updated 2026-11-27T23:56:28Z (paper trading, never real money)
   CA `H4gHnZ3NCU7Z9XQwGX6YYJNyieGEW8pqwGRUcdSxpump`
 
 ## Last scan
-- 23:55Z: 5 coins, 4 with pairs, 0 passed the market filters, 0 researched
+- 00:11Z: 6 coins, 5 with pairs, 0 passed the market filters, 0 researched
 
 ## Coins it looked at, and why it passed
+- 00:08Z WINTER (MIGRATED, $89,726 mcap, $4,843 5m vol): REJECT, Bundles: 2 linked wallet cluster(s) hold 66.7% of supply (>20%) (V17)  
+  CA `7dc3gFoyuDCPWjrfZfX99uasJJSceAJx5ucE8bDGpump`
+- 23:56Z Hyperball (DIP, $41,306 mcap, $8,308 5m vol): REJECT, Dip with fading attention is a falling knife, not a dip (5m at 0.28x the hour's pace, under 0.6x)  
+  CA `5TkyHpVZCnuW6w21q6mvFQ2Fgyvq3KySHJqfuki9pump`
 - 23:51Z JOB (MIGRATED, $2,358,321 mcap, $9,766 5m vol): REJECT, Bundles: 1 linked wallet cluster(s) hold 22.5% of supply (>20%) (V17)  
   CA `9Pq7aLAbhDG2tTnS22cm6kuysZVcZpLFE368HWuypump`
 - 23:44Z Maebashi (MIGRATED, $51,782 mcap, $9,607 5m vol): REJECT, Top 10 hold 25.9% ex-pool (>25%) (V13)  
@@ -92,10 +96,6 @@ Updated 2026-11-27T23:56:28Z (paper trading, never real money)
   CA `6DmC5KR6DF62Gfz5oe8uVkNFrQb5N3kdXpKswA7pump`
 - 23:00Z Hyperball (MIGRATED, $107,259 mcap, $122,726 5m vol): PASS at conviction 2, PASS: five-minute-old pump.fun copy coin, up 109% in 5m with 0% drawdown, and a 0.3-day-old site that doesn't show this CA. Blocker: chasing spike. Wait. (V1, V6, V13)  
   CA `5TkyHpVZCnuW6w21q6mvFQ2Fgyvq3KySHJqfuki9pump`
-- 22:58Z BABYCATE (FINAL_STRETCH, $20,864 mcap, $55,292 5m vol): PASS at conviction 3, PASS. Chasing spike: BABYCATE is up 50% on 5m at 10x its hourly pace, five minutes old, with no printed higher low. Blocker: chasing spike (V1, V6).  
-  CA `CLFWsFgDZ4DUcoD7JfkbQSJNaUTrZe5oUw4tTPERpump`
-- 22:54Z 100Xmas (FINAL_STRETCH, $19,288 mcap, $6,705 5m vol): REJECT, Top 10 hold 27.8% ex-pool (>25%) (V13)  
-  CA `9BADLCimdmPqKPHbTrpsrkJsvNTSpppNbTSB2smgpump`
 
 ## What its skips did next (last 48h)
 A skip "ran" if the coin reached the first target (1.5x) from the skip price before a 20% drop, "dumped" if the drop came first. Sampled every 10 min, followed 6h.
@@ -106,21 +106,21 @@ A skip "ran" if the coin reached the first target (1.5x) from the skip price bef
     CA `HkPSDYRcw4uqgRzZMDd5sRnMpE4ungR1K8MRNXnBVtQ2`
   - ran: Thankful up to 2.05x  
     CA `E9arxG4RxB7Gxt6U75obonTZzx7vpbc4bUi1dfw3BtUN`
-- flow below pace: blocked 45, ran 4, dumped 35, flat 3, open 3 (saving losses: keep it)
+- flow below pace: blocked 44, ran 4, dumped 34, flat 3, open 3 (saving losses: keep it)
   - ran: PAIR up to 2.1x  
     CA `32rBxcFjCFnyqZ41CEPM5AL67X1dcw8w83vZt6Kxpump`
   - ran: Hoppy up to 1.76x  
     CA `CFX1gH7CKYwqYXrfDkS2MUxJcEhs8PT63DyRA1chpump`
   - ran: SpaceXCoin up to 1.52x  
     CA `G2XqmSc8vJpLLwaLVXUeNkxsrhVT8vQ3Pje8MqeDpump`
-- too new / sniping: blocked 43, ran 6, dumped 37, flat 0, open 0 (saving losses: keep it)
+- too new / sniping: blocked 42, ran 6, dumped 36, flat 0, open 0 (saving losses: keep it)
   - ran: Slapcat up to 1.61x  
     CA `AqNAfcg8AkidVLLE7Tszh2PjUGzgaKvJskDXQXRHpump`
   - ran: STUDS up to 2.35x  
     CA `34J9VrBeJ2dWActyAMpoNBKvoxZCqQz3SivmnnmSTUds`
   - ran: 2 up to 1.69x  
     CA `HkywsKMf5FDj7QpgRE3BoE2nJqJauxEVbGjpnYe6pump`
-- near the high / chasing: blocked 42, ran 8, dumped 30, flat 2, open 2 (saving losses: keep it)
+- near the high / chasing: blocked 41, ran 8, dumped 29, flat 2, open 2 (saving losses: keep it)
   - ran: NETHER up to 1.8x  
     CA `GkL4cJLAL3354wLgS6mZJKKUBVzvUY1FUN47zZNgGWEq`
   - ran: PPV up to 1.54x  
@@ -134,7 +134,7 @@ A skip "ran" if the coin reached the first target (1.5x) from the skip price bef
     CA `cg3HaDWhAKFfj9aq79TWUBgmxfs4G7byQ7feaxnpump`
   - ran: monky up to 96.37x  
     CA `At5hmwDn4YgPDoic1UN7zMdTtCoiXJsMhnKaoazEpump`
-- falling knife (code): blocked 21, ran 2, dumped 19, flat 0, open 0 (saving losses: keep it)
+- falling knife (code): blocked 22, ran 2, dumped 19, flat 0, open 1 (saving losses: keep it)
   - ran: MONEY up to 1.58x  
     CA `DeACAbp2GMzapB6Z2K8qdkTZupmNbKc6EZx9bnbCpump`
   - ran: Split up to 1.54x  
@@ -197,13 +197,13 @@ No edge after costs, and I'm fairly sure of that. All 250 settled coins averaged
 The tape is not quiet. Hyperball (pumpswap, $107k mcap, 6 min old, $123k 5m volume, 61% buys, +109% 1h) carries most of the flow, and Spectre ($12.9k 5m, 58% buys, $35k mcap, just launched) is the only other clean 5m-volume mover in the array. Two themes show up across several coins: fresh joke-named tickers that spike on 1h volume (Hyperball, Spectre, Retarded Bitcoin), and dog/animal names that are fading (Gemma -8% 1h with $756 5m, Baboon Smirk $104 5m). Finance-joke coins are dying (PumpMas -58% 1h, Cartoon Money at $6.1M with $1.6k 5m), and Jeff, DRIFT and Retarded Bitcoin each show $33k-$59k of 1h volume with zero 5m volume, so those pumps have stopped and I treat them as dead, not setups. Setups to research, not buy: Hyperball, but only on a dip that holds with buyers stepping back in (V1, V6), and Spectre only if 5m volume survives its first hour (V6). Caveat: the crawler's MAYA, Fireball, Pairing Markets and Silly Bandz figures do not appear in this scan_movers array, so I'm treating them as unverified and leaving them out of the meta. Holder, dev and bundle checks still run on both before anything. Paper only, not financial advice.
 
 ## Moving most in its scans, last 30 min (1h volume)
-- Sol: $513,671 1h vol, $103,100 mcap, -58% 1h  
-  CA `Xb6V46U9hHHxiJnoAFxiEqEh59owzdt1ZL9q5zpVSoL`
-- SPEC: $454,658 1h vol, $5,542 mcap, -81% 1h  
+- SPEC: $347,862 1h vol, $2,672 mcap, -96% 1h  
   CA `6DmC5KR6DF62Gfz5oe8uVkNFrQb5N3kdXpKswA7pump`
-- Hyperball: $364,967 1h vol, $28,036 mcap, -45% 1h  
+- Hyperball: $310,456 1h vol, $41,306 mcap, -61% 1h  
   CA `5TkyHpVZCnuW6w21q6mvFQ2Fgyvq3KySHJqfuki9pump`
 - Maebashi: $121,242 1h vol, $47,740 mcap, +65% 1h  
   CA `659ziXQiNko5cdGzPaBKVu81ahHzZMTFKBcNxe5ALXkG`
-- Clout: $104,999 1h vol, $2,282 mcap, -11% 1h  
+- Clout: $105,078 1h vol, $2,132 mcap, -17% 1h  
   CA `81ijK2haeYqqjnoiPTtBMS9CBt2ThCcvdB6N3rQEpump`
+- JOB: $76,412 1h vol, $2,359,107 mcap, -1% 1h  
+  CA `9Pq7aLAbhDG2tTnS22cm6kuysZVcZpLFE368HWuypump`
