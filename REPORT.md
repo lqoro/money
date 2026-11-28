@@ -1,13 +1,13 @@
 # Trencher live report
 
-Updated 2026-11-28T09:16:20Z (paper trading, never real money)
+Updated 2026-11-28T09:31:29Z (paper trading, never real money)
 
 - Equity: $74.23 (-25.8% vs $100 start)
 - Closed trades: 22, 3 wins
 - Fees paid: $14.78 (axiom $2.81, network $9.18, pool $2.66), plus $4.15 lost to slippage
 - New trades: WATCH-ONLY (scans and decides, buys nothing)
-- Brain: subscription, claude-haiku-5-5 for routine calls, claude-opus-5-5 for the daily review; 373 routine calls and 9 plan-limit hits in 48h
-- Watch log: 73 coins being followed, 4419 filed, 0 would-buys (6h follow, sampled every 2 min)
+- Brain: subscription, claude-haiku-5-5 for routine calls, claude-opus-5-5 for the daily review; 370 routine calls and 9 plan-limit hits in 48h
+- Watch log: 74 coins being followed, 4422 filed, 0 would-buys (6h follow, sampled every 2 min)
 
 ## Scorecard (after fees)
 - 22 closed, 3 won (14%), net $-25.79
@@ -73,9 +73,19 @@ Updated 2026-11-28T09:16:20Z (paper trading, never real money)
   CA `H4gHnZ3NCU7Z9XQwGX6YYJNyieGEW8pqwGRUcdSxpump`
 
 ## Last scan
-- 09:16Z: 4 coins, 4 with pairs, 0 passed the market filters, 0 researched
+- 09:30Z: 3 coins, 3 with pairs, 1 passed the market filters, 1 researched
 
 ## Coins it looked at, and why it passed
+- 09:30Z USD1 (DIP, $49,900 mcap, $9,833 5m vol): REJECT, Bundles: 10 linked wallet cluster(s) hold 100.0% of supply (>20%) (V17)  
+  CA `8Y24KBnY9gaNWDaxohxtEU1gxESvfwdYeGFuHJKpump`
+- 09:29Z WLFI (MIGRATED, $230,884 mcap, $4,034 5m vol): PASS at conviction 3, PASS — flow below pace, no printed higher low, and a 10.5% bundle on a crude joke coin with a fading meta. Blocker: "flow below pace" (V1, V6, V3).  
+  CA `HmGQsYJyeiWrV6jABUY2Cb3bEmVxwk6LzVxCchsCpump`
+- 09:29Z hacked (no setup, $47,986 mcap, $253 5m vol): REJECT, Hack story ("hack" in the name or ticker): these tend to go down, owner rule  
+  CA `FK7bc3fR8UL8uogN2u8J9yEpEbQJKR7yKsp3G8rvpump`
+- 09:20Z HPD (FINAL_STRETCH, $19,802 mcap, $6,788 5m vol): REJECT, Top 10 hold 30.1% ex-pool (>25%) (V13)  
+  CA `4cZsB6UgdUBTi13JMusBap9r2qGW1MPrdaSVAYkSpump`
+- 09:19Z PumpMas (DIP, $202,028 mcap, $2,415 5m vol): REJECT, Top 10 hold 27.1% ex-pool (>25%) (V13)  
+  CA `EwUVBpdM5vw1CJHRMSLywzVjyQSJZpy6qboxEPBKpump`
 - 09:01Z SPSC (DIP, $108,948 mcap, $6,010 5m vol): PASS at conviction 2, PASS: SPSC is a 59.7% DIP with clean holders, but flow is 0.69x pace, the theme runs at 0.67x, and no printed higher low or catalyst exists. Blocker: "flow below pace" and "no higher low" (V1, V6).  
   CA `EjdrRG2si1FQ3Bme5g6WSYNHJDrsKUrbGB4Z5xaopump`
 - 08:54Z USD1 (DIP, $35,776 mcap, $2,713 5m vol): REJECT, Dip with fading attention is a falling knife, not a dip (5m at 0.38x the hour's pace, under 0.6x)  
@@ -86,40 +96,23 @@ Updated 2026-11-28T09:16:20Z (paper trading, never real money)
   CA `ATbAsdCwrhhVg23DRnWpjqx6kx7ivoK5o8ysNmu1pump`
 - 08:46Z FINGART (DIP, $86,872 mcap, $13,904 5m vol): PASS at conviction 3, PASS: DIP with no catalyst and no printed higher low. The story is dead air, not a bottom. (V1, V6)  
   CA `WZVWLfThgm14NN8HRDoyiEeXVvdUDMzGMHUS3VLpump`
-- 08:44Z USD1 (DIP, $67,477 mcap, $8,422 5m vol): REJECT, Dip with fading attention is a falling knife, not a dip (5m at 0.38x the hour's pace, under 0.6x)  
-  CA `8Y24KBnY9gaNWDaxohxtEU1gxESvfwdYeGFuHJKpump`
-- 08:44Z WLFI (MIGRATED, $272,460 mcap, $31,406 5m vol): PASS at conviction 3, PASS — mid-range entry, 37% above its printed higher low, and a 10.5% bundle cluster on a ticker that copies a bigger Trump-linked WLFI (V1, V3, V13).  
-  CA `HmGQsYJyeiWrV6jABUY2Cb3bEmVxwk6LzVxCchsCpump`
-- 08:39Z COMM (MIGRATED, $45,685 mcap, $19,530 5m vol): PASS at conviction 3, PASS: chasing spike. COMM is up 114% on 5m, 7.9% off a peak that is 11 minutes old, with 11 same-ticker copies (V1, V6).  
-  CA `8i2ssMZBaS3HShu5hoDEV4tVLf5RGXeNJnK3LNTHTH9e`
-- 08:31Z CI (MIGRATED, $30,568 mcap, $14,447 5m vol): PASS at conviction 3, PASS — 3-minute-old migration spiking at 12x hourly pace, no printed higher low, and it's one of 26 "crime inu" copies. Blocker: too new / chasing spike (V1, V6, V13).  
-  CA `GggaHk9atb7LYq16S2X6FwjQdZT8D8YQ6vydeosgFGtg`
-- 08:29Z hacked (no setup, $55,618 mcap, $0 5m vol): REJECT, Hack story ("hack" in the name or ticker): these tend to go down, owner rule  
-  CA `FK7bc3fR8UL8uogN2u8J9yEpEbQJKR7yKsp3G8rvpump`
 
 ## What its skips did next (last 48h)
 A skip "ran" if the coin reached the first target (1.5x) from the skip price before a 20% drop, "dumped" if the drop came first. Sampled every 10 min, followed 6h.
-- top 10 over 25%: blocked 54, ran 11, dumped 39, flat 4, open 0 (saving losses: keep it)
+- top 10 over 25%: blocked 55, ran 11, dumped 39, flat 3, open 2 (saving losses: keep it)
   - ran: Legatum up to 2.21x  
     CA `HkPSDYRcw4uqgRzZMDd5sRnMpE4ungR1K8MRNXnBVtQ2`
   - ran: Thankful up to 2.05x  
     CA `E9arxG4RxB7Gxt6U75obonTZzx7vpbc4bUi1dfw3BtUN`
   - ran: MSTR up to 1.69x  
     CA `57sCZ82FwS5Dfs7FN9nshtU5Mkb3w1dqhmPUuCPvpump`
-- flow below pace: blocked 39, ran 4, dumped 28, flat 4, open 3 (saving losses: keep it)
+- flow below pace: blocked 38, ran 4, dumped 28, flat 4, open 2 (saving losses: keep it)
   - ran: PAIR up to 2.1x  
     CA `32rBxcFjCFnyqZ41CEPM5AL67X1dcw8w83vZt6Kxpump`
   - ran: Hoppy up to 1.76x  
     CA `CFX1gH7CKYwqYXrfDkS2MUxJcEhs8PT63DyRA1chpump`
   - ran: SpaceXCoin up to 1.52x  
     CA `G2XqmSc8vJpLLwaLVXUeNkxsrhVT8vQ3Pje8MqeDpump`
-- near the high / chasing: blocked 37, ran 8, dumped 27, flat 2, open 0 (saving losses: keep it)
-  - ran: PPV up to 1.54x  
-    CA `CbGrZ3Q2XxSV2oiZsLkDWW1GFjrqUDAzTH9XwVr1pump`
-  - ran: urcoin up to 1.71x  
-    CA `25m4Lkct8nsYyqAMeE8rvjM3y5Zrrax46TLqNJjbpump`
-  - ran: Meme up to 2.06x  
-    CA `CV1NPi8L2PSYMfALBh7GCfUwELZzG3DrLUUjCkeapump`
 - too new / sniping: blocked 37, ran 3, dumped 33, flat 0, open 1 (saving losses: keep it)
   - ran: Pair up to 1.76x  
     CA `EWCfhnj8YjPEbvQXEtwkxMT54WhBpZBLQDFncRoypump`
@@ -127,20 +120,27 @@ A skip "ran" if the coin reached the first target (1.5x) from the skip price bef
     CA `G2XqmSc8vJpLLwaLVXUeNkxsrhVT8vQ3Pje8MqeDpump`
   - ran: FARM up to 1.65x  
     CA `2dynAjPBnkqzjUwozgn8pDRkCf7k7CDJkLfcf4rupump`
-- falling knife (code): blocked 24, ran 1, dumped 21, flat 0, open 2 (saving losses: keep it)
-  - ran: Split up to 1.54x  
-    CA `HAP9FcXubD88SjRHMY1kr5iukpRZgeMAgCBam3Vtpump`
-- bundles over the line: blocked 23, ran 2, dumped 17, flat 4, open 0 (saving losses: keep it)
+- near the high / chasing: blocked 36, ran 7, dumped 27, flat 2, open 0 (saving losses: keep it)
+  - ran: urcoin up to 1.71x  
+    CA `25m4Lkct8nsYyqAMeE8rvjM3y5Zrrax46TLqNJjbpump`
+  - ran: Meme up to 2.06x  
+    CA `CV1NPi8L2PSYMfALBh7GCfUwELZzG3DrLUUjCkeapump`
+  - ran: IceBall up to 1.67x  
+    CA `6PFm828RKNJqKvjXQz82hhGvGNWFXZcBHNCF4U7spump`
+- bundles over the line: blocked 23, ran 2, dumped 16, flat 4, open 1 (saving losses: keep it)
   - ran: Dragon up to 1.55x  
     CA `cg3HaDWhAKFfj9aq79TWUBgmxfs4G7byQ7feaxnpump`
   - ran: monky up to 96.37x  
     CA `At5hmwDn4YgPDoic1UN7zMdTtCoiXJsMhnKaoazEpump`
-- falling knife / no higher low: blocked 19, ran 2, dumped 12, flat 2, open 3 (saving losses: keep it)
+- falling knife (code): blocked 23, ran 1, dumped 21, flat 0, open 1 (saving losses: keep it)
+  - ran: Split up to 1.54x  
+    CA `HAP9FcXubD88SjRHMY1kr5iukpRZgeMAgCBam3Vtpump`
+- falling knife / no higher low: blocked 19, ran 2, dumped 14, flat 2, open 1 (saving losses: keep it)
   - ran: Maru up to 1.88x  
     CA `FokVFH6mDsazoKbtnUaA2FRMsRbDSwZhNfn17Fdvpump`
   - ran: Hoppy up to 1.76x  
     CA `CFX1gH7CKYwqYXrfDkS2MUxJcEhs8PT63DyRA1chpump`
-- other: blocked 11, ran 1, dumped 8, flat 0, open 2 (saving losses: keep it)
+- other: blocked 11, ran 1, dumped 9, flat 0, open 1 (saving losses: keep it)
   - ran: Christmas up to 1.89x  
     CA `5hkBYuFQDpAAqemCiVqXCuU6Ya5dqKhtRobzJsg6pump`
 - RugCheck danger: blocked 10, ran 0, dumped 9, flat 1, open 0 (saving losses: keep it)
@@ -187,13 +187,13 @@ No edge after costs, and I'm fairly sure of that. All 250 settled coins averaged
 The meta on the scan is fresh pump.fun joke launches under about an hour old, with crude or silly names (Crime Inu, Bot Fight Club, ascend, Småkager the Pygmy Hippo) pulling $8k to $14k of 5-minute volume and 55 to 62% buys. The animal, cold and holiday riffs are fading: Snowball is down 20% in 1h with $1.1k of 5m volume, WINTER ARC has $1.3k, SANTA FACTORY has $65 and Wizard Cat has $141. The Trump dinner headlines are loud, but no coin on the scan carries them, so I'm not calling that the meta. The sub-hour pump.fun names are new-pair territory (V1, V5), a frenzy that dies fast, so I'm watching them, not buying. The one that fits the MIGRATED rules is SPSC ($164k cap, 2.3h old, $15.5k 5m, 56% buys, +41% 1h, on PumpSwap). Research it next: holders, bundles, dev and original-token checks come first, and at best it's a 5/10 probe if they clear. The market isn't quiet, the movers are active, just short-lived.
 
 ## Moving most in its scans, last 30 min (1h volume)
+- COMM: $202,383 1h vol, $29,798 mcap, +2% 1h  
+  CA `8i2ssMZBaS3HShu5hoDEV4tVLf5RGXeNJnK3LNTHTH9e`
+- USD1: $120,791 1h vol, $49,900 mcap, -39% 1h  
+  CA `8Y24KBnY9gaNWDaxohxtEU1gxESvfwdYeGFuHJKpump`
 - SPSC: $104,372 1h vol, $108,948 mcap, -54% 1h  
   CA `EjdrRG2si1FQ3Bme5g6WSYNHJDrsKUrbGB4Z5xaopump`
-- USD1: $84,950 1h vol, $35,776 mcap, -44% 1h  
-  CA `B29od4bd54VAVAqJFToRKkKJadUGK5v8pkAVb5uvpump`
-- ascend: $52,574 1h vol, $3,245 mcap, +24% 1h  
-  CA `A7xhY12G388pXGsBuweS6NkyZyv53ogH1dNfEkCMpump`
-- HPD: $41,342 1h vol, $13,087 mcap, +334% 1h  
-  CA `4cZsB6UgdUBTi13JMusBap9r2qGW1MPrdaSVAYkSpump`
-- BFC: $33,954 1h vol, $3,551 mcap, +32% 1h  
-  CA `FgGYazS7QTmuQYK8M4k2EC1xfsD62aJweKHvcYPBpump`
+- WLFI: $94,219 1h vol, $230,884 mcap, -33% 1h  
+  CA `HmGQsYJyeiWrV6jABUY2Cb3bEmVxwk6LzVxCchsCpump`
+- CI: $65,466 1h vol, $4,317 mcap, -85% 1h  
+  CA `GggaHk9atb7LYq16S2X6FwjQdZT8D8YQ6vydeosgFGtg`
