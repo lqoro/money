@@ -1,13 +1,13 @@
 # Trencher live report
 
-Updated 2026-11-28T11:48:38Z (paper trading, never real money)
+Updated 2026-11-28T12:03:48Z (paper trading, never real money)
 
 - Equity: $74.23 (-25.8% vs $100 start)
 - Closed trades: 22, 3 wins
 - Fees paid: $14.78 (axiom $2.81, network $9.18, pool $2.66), plus $4.15 lost to slippage
 - New trades: WATCH-ONLY (scans and decides, buys nothing)
-- Brain: subscription, claude-haiku-5-5 for routine calls, claude-opus-5-5 for the daily review; 372 routine calls and 9 plan-limit hits in 48h
-- Watch log: 71 coins being followed, 4450 filed, 0 would-buys (6h follow, sampled every 2 min)
+- Brain: subscription, claude-haiku-5-5 for routine calls, claude-opus-5-5 for the daily review; 371 routine calls and 9 plan-limit hits in 48h
+- Watch log: 73 coins being followed, 4450 filed, 0 would-buys (6h follow, sampled every 2 min)
 
 ## Scorecard (after fees)
 - 22 closed, 3 won (14%), net $-25.79
@@ -73,9 +73,13 @@ Updated 2026-11-28T11:48:38Z (paper trading, never real money)
   CA `H4gHnZ3NCU7Z9XQwGX6YYJNyieGEW8pqwGRUcdSxpump`
 
 ## Last scan
-- 11:47Z: 7 coins, 6 with pairs, 0 passed the market filters, 0 researched
+- 12:03Z: 6 coins, 5 with pairs, 0 passed the market filters, 0 researched
 
 ## Coins it looked at, and why it passed
+- 11:50Z BITCOINU (DIP, $996,461 mcap, $2,797 5m vol): REJECT, Dip with fading attention is a falling knife, not a dip (5m at 0.57x the hour's pace, under 0.6x)  
+  CA `ATbAsdCwrhhVg23DRnWpjqx6kx7ivoK5o8ysNmu1pump`
+- 11:50Z Fireball (DIP, $377,098 mcap, $7,746 5m vol): PASS at conviction 3, PASS — DIP with no catalyst, no radar story, and entry 37% above the printed higher low. Blocker: "no catalyst" (V1, V6, V13).  
+  CA `B9wbjDJ4FbHMsZmoXAkJSTAwuePaJUKbySvnK5zApump`
 - 11:37Z OKOWARE (FINAL_STRETCH, $15,003 mcap, $20,768 5m vol): PASS at conviction 3, PASS: chasing spike. 7 minutes old, up 47% on the 5m at 7.7x hourly pace, no printed higher low, zero buzz (V1, V6).  
   CA `ANxUJcRwevw9xcWMQNrwgpzcdeSgXzNq6hLUxGG3pump`
 - 11:30Z hacked (no setup, $50,158 mcap, $48 5m vol): REJECT, Hack story ("hack" in the name or ticker): these tend to go down, owner rule  
@@ -92,10 +96,6 @@ Updated 2026-11-28T11:48:38Z (paper trading, never real money)
   CA `ATbAsdCwrhhVg23DRnWpjqx6kx7ivoK5o8ysNmu1pump`
 - 11:03Z Fireball (DIP, $562,701 mcap, $5,756 5m vol): PASS at conviction 3, PASS — 26-copy "fireball" field with no catalyst, zero buzz, and a 0.9-day-old site that doesn't show this CA. Blocker: no catalyst on a bottom buy. (V1, V3, V13)  
   CA `B9wbjDJ4FbHMsZmoXAkJSTAwuePaJUKbySvnK5zApump`
-- 11:02Z Mojave (MIGRATED, $35,058 mcap, $2,077 5m vol): PASS at conviction 2, PASS: flow at 0.18x pace on a coin 54 min off its bond spike, and the theme is at 0.81x. Blocker "flow below pace," with "too new" right behind it (V1, V6).  
-  CA `4newt1R5fGEoCKdf9XBgiR6B43iacmnVAR2d4Wt8pump`
-- 10:46Z Snowball (MIGRATED, $213,954 mcap, $3,455 5m vol): REJECT, RugCheck danger: Creator history of rugged tokens  
-  CA `9TKbd3VFaMSXsEAicD9JVQWpWwAoLi4fSgWmZL2cpump`
 
 ## What its skips did next (last 48h)
 A skip "ran" if the coin reached the first target (1.5x) from the skip price before a 20% drop, "dumped" if the drop came first. Sampled every 10 min, followed 6h.
@@ -137,7 +137,7 @@ A skip "ran" if the coin reached the first target (1.5x) from the skip price bef
     CA `At5hmwDn4YgPDoic1UN7zMdTtCoiXJsMhnKaoazEpump`
   - ran: USD1 up to 1.55x  
     CA `8Y24KBnY9gaNWDaxohxtEU1gxESvfwdYeGFuHJKpump`
-- falling knife / no higher low: blocked 16, ran 1, dumped 11, flat 2, open 2 (saving losses: keep it)
+- falling knife / no higher low: blocked 17, ran 1, dumped 11, flat 2, open 3 (saving losses: keep it)
   - ran: Hoppy up to 1.76x  
     CA `CFX1gH7CKYwqYXrfDkS2MUxJcEhs8PT63DyRA1chpump`
 - RugCheck danger: blocked 11, ran 0, dumped 9, flat 1, open 1 (saving losses: keep it)
@@ -189,13 +189,13 @@ No edge after costs, and I'm fairly sure of that. All 250 settled coins averaged
 Meta: absurd pump.fun joke launches with CJK or sarcastic names are the only group pulling real volume, while the Trump-family riffs are fading (WLFI is a $279k coin on $4.8k 5m, +4% in 1h) and the sub-hour spikes are burning out (GPU -57% in 1h on $1.5k 5m, SMOOTH -19%). Rising: OKOWARE (怒ワレ, 0.1h old, $16.7k cap, $20.7k 5m, 61% buys, +521% in 1h) and OUTSIDER ("In A World Of Insiders", 0.4h, $6k cap, +86%, $4.8k 5m, 54% buys), with cheng and EDITOR in the same launch style but thinner. Only OKOWARE clears the ~$10k 5m bar, so it's the one setup to research as a FINAL_STRETCH probe. Conviction is 4 for now because of the parabolic first hour and no holder data, so it's a PASS until top-10, dev and bundle checks come back clean; if they do, it's a 5 probe with initials at 2x, a stop at -30%, and out if 5m volume drops under $10k before bond (V1, V6). Caveat: the crawler's Mojave figures don't appear in the scan data at all, and its HPD and SPSC numbers disagree with the scan, so I used scan numbers only.
 
 ## Moving most in its scans, last 30 min (1h volume)
-- GPU: $94,485 1h vol, $12,262 mcap, -57% 1h  
+- GPU: $95,496 1h vol, $11,870 mcap, -51% 1h  
   CA `DT5hmUppUXvcziVxoAkLk6sjNJU8G9fqyXmGPx75pump`
-- OUTSIDER: $70,887 1h vol, $6,051 mcap, +86% 1h  
+- Fireball: $84,299 1h vol, $377,098 mcap, -31% 1h  
+  CA `B9wbjDJ4FbHMsZmoXAkJSTAwuePaJUKbySvnK5zApump`
+- OUTSIDER: $77,800 1h vol, $2,706 mcap, -17% 1h  
   CA `GHwNfVmhqEYyzumjbJpoh647zb9RNkrFNMkfdsCeS1MG`
-- Mojave: $58,860 1h vol, $30,865 mcap, +14% 1h  
-  CA `4newt1R5fGEoCKdf9XBgiR6B43iacmnVAR2d4Wt8pump`
-- OKOWARE: $32,940 1h vol, $16,721 mcap, +521% 1h  
-  CA `ANxUJcRwevw9xcWMQNrwgpzcdeSgXzNq6hLUxGG3pump`
-- EDITOR: $30,075 1h vol, $18,385 mcap, +148% 1h  
-  CA `57uooyjwYX2kpSGN3QnBLWAwk4KMZYbkp5e8f7i7pump`
+- BITCOINU: $58,908 1h vol, $996,461 mcap, -12% 1h  
+  CA `ATbAsdCwrhhVg23DRnWpjqx6kx7ivoK5o8ysNmu1pump`
+- Hachiware: $58,484 1h vol, $27,357 mcap, -7% 1h  
+  CA `3JfzkFiB95EY8ZvE3TtsKQcQ4Sf2M1SMzZKu1JNwkoqw`
