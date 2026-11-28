@@ -1,13 +1,13 @@
 # Trencher live report
 
-Updated 2026-11-28T05:58:54Z (paper trading, never real money)
+Updated 2026-11-28T06:13:54Z (paper trading, never real money)
 
 - Equity: $74.23 (-25.8% vs $100 start)
 - Closed trades: 22, 3 wins
 - Fees paid: $14.78 (axiom $2.81, network $9.18, pool $2.66), plus $4.15 lost to slippage
 - New trades: WATCH-ONLY (scans and decides, buys nothing)
-- Brain: subscription, claude-haiku-5-5 for routine calls, claude-opus-5-5 for the daily review; 367 routine calls and 9 plan-limit hits in 48h
-- Watch log: 75 coins being followed, 4375 filed, 0 would-buys (6h follow, sampled every 2 min)
+- Brain: subscription, claude-haiku-5-5 for routine calls, claude-opus-5-5 for the daily review; 362 routine calls and 9 plan-limit hits in 48h
+- Watch log: 75 coins being followed, 4376 filed, 0 would-buys (6h follow, sampled every 2 min)
 
 ## Scorecard (after fees)
 - 22 closed, 3 won (14%), net $-25.79
@@ -73,9 +73,11 @@ Updated 2026-11-28T05:58:54Z (paper trading, never real money)
   CA `H4gHnZ3NCU7Z9XQwGX6YYJNyieGEW8pqwGRUcdSxpump`
 
 ## Last scan
-- 05:58Z: 6 coins, 6 with pairs, 0 passed the market filters, 0 researched
+- 06:13Z: 5 coins, 5 with pairs, 1 passed the market filters, 1 researched
 
 ## Coins it looked at, and why it passed
+- 06:13Z Groo (FINAL_STRETCH, $14,859 mcap, $3,227 5m vol): REJECT, Top 10 hold 27.5% ex-pool (>25%) (V13)  
+  CA `9QWaXqTJ8VxKwbxP3T36vdpXDv1SPEEEUCzxhm8Mpump`
 - 05:43Z Fireball (DIP, $415,175 mcap, $3,463 5m vol): PASS at conviction 3, PASS: 65% dip on a 28-copy ticker with no catalyst, theme flow at 0.93x pace, and the team's site doesn't show this CA (V3, V13).  
   CA `B9wbjDJ4FbHMsZmoXAkJSTAwuePaJUKbySvnK5zApump`
 - 05:43Z BITCOINU (DIP, $1,111,561 mcap, $18,573 5m vol): REJECT, Dip with fading attention is a falling knife, not a dip (5m at 0.25x the hour's pace, under 0.6x)  
@@ -94,25 +96,16 @@ Updated 2026-11-28T05:58:54Z (paper trading, never real money)
   CA `B9wbjDJ4FbHMsZmoXAkJSTAwuePaJUKbySvnK5zApump`
 - 04:57Z BITCOINU (MIGRATED, $700,102 mcap, $72,431 5m vol): REJECT, Top 10 hold 49.2% ex-pool (>25%) (V13)  
   CA `ATbAsdCwrhhVg23DRnWpjqx6kx7ivoK5o8ysNmu1pump`
-- 04:43Z MEMES (FINAL_STRETCH, $16,168 mcap, $29,265 5m vol): REJECT, Top 10 hold 26.8% ex-pool (>25%) (V13)  
-  CA `HpN63T13XBcp2xmM6yRkGPB5HMwxtXTghCQjooS8pump`
 
 ## What its skips did next (last 48h)
 A skip "ran" if the coin reached the first target (1.5x) from the skip price before a 20% drop, "dumped" if the drop came first. Sampled every 10 min, followed 6h.
-- top 10 over 25%: blocked 55, ran 10, dumped 41, flat 3, open 1 (saving losses: keep it)
+- top 10 over 25%: blocked 56, ran 10, dumped 41, flat 3, open 2 (saving losses: keep it)
   - ran: Legatum up to 2.21x  
     CA `HkPSDYRcw4uqgRzZMDd5sRnMpE4ungR1K8MRNXnBVtQ2`
   - ran: Thankful up to 2.05x  
     CA `E9arxG4RxB7Gxt6U75obonTZzx7vpbc4bUi1dfw3BtUN`
   - ran: MSTR up to 1.69x  
     CA `57sCZ82FwS5Dfs7FN9nshtU5Mkb3w1dqhmPUuCPvpump`
-- near the high / chasing: blocked 39, ran 8, dumped 28, flat 3, open 0 (saving losses: keep it)
-  - ran: PPV up to 1.54x  
-    CA `CbGrZ3Q2XxSV2oiZsLkDWW1GFjrqUDAzTH9XwVr1pump`
-  - ran: urcoin up to 1.71x  
-    CA `25m4Lkct8nsYyqAMeE8rvjM3y5Zrrax46TLqNJjbpump`
-  - ran: Meme up to 2.06x  
-    CA `CV1NPi8L2PSYMfALBh7GCfUwELZzG3DrLUUjCkeapump`
 - flow below pace: blocked 38, ran 4, dumped 29, flat 3, open 2 (saving losses: keep it)
   - ran: PAIR up to 2.1x  
     CA `32rBxcFjCFnyqZ41CEPM5AL67X1dcw8w83vZt6Kxpump`
@@ -120,6 +113,13 @@ A skip "ran" if the coin reached the first target (1.5x) from the skip price bef
     CA `CFX1gH7CKYwqYXrfDkS2MUxJcEhs8PT63DyRA1chpump`
   - ran: SpaceXCoin up to 1.52x  
     CA `G2XqmSc8vJpLLwaLVXUeNkxsrhVT8vQ3Pje8MqeDpump`
+- near the high / chasing: blocked 38, ran 8, dumped 28, flat 2, open 0 (saving losses: keep it)
+  - ran: PPV up to 1.54x  
+    CA `CbGrZ3Q2XxSV2oiZsLkDWW1GFjrqUDAzTH9XwVr1pump`
+  - ran: urcoin up to 1.71x  
+    CA `25m4Lkct8nsYyqAMeE8rvjM3y5Zrrax46TLqNJjbpump`
+  - ran: Meme up to 2.06x  
+    CA `CV1NPi8L2PSYMfALBh7GCfUwELZzG3DrLUUjCkeapump`
 - too new / sniping: blocked 36, ran 3, dumped 33, flat 0, open 0 (saving losses: keep it)
   - ran: Pair up to 1.76x  
     CA `EWCfhnj8YjPEbvQXEtwkxMT54WhBpZBLQDFncRoypump`
@@ -191,13 +191,13 @@ No edge after costs, and I'm fairly sure of that. All 250 settled coins averaged
 The meta right now is joke pump.fun names with animal and cold-weather themes, not Trump. Frogger is the only coin with real heat: +355% in an hour, $30k of 5-minute volume on a $136k cap, 58% buys, 0.9h old. Volume at about 22% of market cap looks like a frenzy or a bundle, so it's research only and an automatic PASS if top 10 is above 15% or any bundle is above 3% (V6, V13). WINTER ARC is the quieter signal: 9h old, $95k cap, 75% buys on $5.8k of 5-minute volume, flat over the hour, which suggests attention is holding rather than spiking. Snowball, RICE, Wildfire, Jeffle, FLIP, Saitama and DCTY are down 30-90% in an hour with mostly sub-50% buys, and the Trump dinner headlines don't appear in any mover, so I'm weighting the scanner over the crawler's ball-family claims, which it doesn't show. Setups to research, not buy: Frogger, and WINTER ARC if it reclaims its hourly high with buys holding above 60%. COMMODITY (+183%, 71% buys, $11k cap) is too small and too new to judge yet. Paper only, not financial advice.
 
 ## Moving most in its scans, last 30 min (1h volume)
-- BITCOINU: $897,362 1h vol, $1,043,575 mcap, +2809% 1h  
-  CA `ATbAsdCwrhhVg23DRnWpjqx6kx7ivoK5o8ysNmu1pump`
-- MEMES: $70,108 1h vol, $8,489 mcap, -26% 1h  
-  CA `HpN63T13XBcp2xmM6yRkGPB5HMwxtXTghCQjooS8pump`
-- Scheme: $64,878 1h vol, $2,251 mcap, -36% 1h  
+- Frogger: $202,828 1h vol, $1,530 mcap, -99% 1h  
+  CA `GGatn9GfrvRgFMFZy9ZSaTsKmpwnzCTogmocLHCjpump`
+- Scheme: $64,898 1h vol, $2,209 mcap, -38% 1h  
   CA `8vRpccP2dRn8mpwCQGJTsmDPxbroxXHdsvXzoQ8Hpump`
-- COMMODITY: $57,274 1h vol, $2,667 mcap, -32% 1h  
-  CA `66WtdGBwzHL1kJodjvhWUj1Uo3UycFVRhLWQ96uwpump`
-- NOOB: $45,573 1h vol, $2,242 mcap, -2% 1h  
+- WINTER: $50,783 1h vol, $83,621 mcap, -11% 1h  
+  CA `7dc3gFoyuDCPWjrfZfX99uasJJSceAJx5ucE8bDGpump`
+- NOOB: $45,577 1h vol, $2,234 mcap, -2% 1h  
   CA `AzHmsArsXu6LVjHeeBQTamYVnAV5Z18b5t6k2DoGpump`
+- conjectures: $38,822 1h vol, $11,943 mcap, +28% 1h  
+  CA `BukpdtkjwyEZSyVaXZoPyv7qKLKuybkZDt5AFJpipump`
