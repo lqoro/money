@@ -1,13 +1,13 @@
 # Trencher live report
 
-Updated 2026-11-28T05:28:48Z (paper trading, never real money)
+Updated 2026-11-28T05:43:50Z (paper trading, never real money)
 
 - Equity: $74.23 (-25.8% vs $100 start)
 - Closed trades: 22, 3 wins
 - Fees paid: $14.78 (axiom $2.81, network $9.18, pool $2.66), plus $4.15 lost to slippage
 - New trades: WATCH-ONLY (scans and decides, buys nothing)
-- Brain: subscription, claude-haiku-5-5 for routine calls, claude-opus-5-5 for the daily review; 367 routine calls and 9 plan-limit hits in 48h
-- Watch log: 77 coins being followed, 4370 filed, 0 would-buys (6h follow, sampled every 2 min)
+- Brain: subscription, claude-haiku-5-5 for routine calls, claude-opus-5-5 for the daily review; 368 routine calls and 9 plan-limit hits in 48h
+- Watch log: 78 coins being followed, 4372 filed, 0 would-buys (6h follow, sampled every 2 min)
 
 ## Scorecard (after fees)
 - 22 closed, 3 won (14%), net $-25.79
@@ -73,9 +73,15 @@ Updated 2026-11-28T05:28:48Z (paper trading, never real money)
   CA `H4gHnZ3NCU7Z9XQwGX6YYJNyieGEW8pqwGRUcdSxpump`
 
 ## Last scan
-- 05:28Z: 6 coins, 6 with pairs, 1 passed the market filters, 1 researched
+- 05:43Z: 6 coins, 6 with pairs, 2 passed the market filters, 2 researched
 
 ## Coins it looked at, and why it passed
+- 05:43Z Fireball (DIP, $415,175 mcap, $3,463 5m vol): PASS at conviction 3, PASS: 65% dip on a 28-copy ticker with no catalyst, theme flow at 0.93x pace, and the team's site doesn't show this CA (V3, V13).  
+  CA `B9wbjDJ4FbHMsZmoXAkJSTAwuePaJUKbySvnK5zApump`
+- 05:43Z BITCOINU (DIP, $1,111,561 mcap, $18,573 5m vol): REJECT, Dip with fading attention is a falling knife, not a dip (5m at 0.25x the hour's pace, under 0.6x)  
+  CA `ATbAsdCwrhhVg23DRnWpjqx6kx7ivoK5o8ysNmu1pump`
+- 05:38Z JOB (MIGRATED, $2,637,843 mcap, $2,869 5m vol): REJECT, Bundles: 1 linked wallet cluster(s) hold 22.5% of supply (>20%) (V17)  
+  CA `9Pq7aLAbhDG2tTnS22cm6kuysZVcZpLFE368HWuypump`
 - 05:28Z RICE (DIP, $95,323 mcap, $6,641 5m vol): REJECT, Dip with fading attention is a falling knife, not a dip (5m at 0.16x the hour's pace, under 0.6x)  
   CA `3rVr2RBzEXXKf1cVvZ6HBvFg2XmBK4iMgZv9q9q4pump`
 - 05:27Z hacked (no setup, $64,369 mcap, $283 5m vol): REJECT, Hack story ("hack" in the name or ticker): these tend to go down, owner rule  
@@ -90,23 +96,17 @@ Updated 2026-11-28T05:28:48Z (paper trading, never real money)
   CA `ATbAsdCwrhhVg23DRnWpjqx6kx7ivoK5o8ysNmu1pump`
 - 04:43Z MEMES (FINAL_STRETCH, $16,168 mcap, $29,265 5m vol): REJECT, Top 10 hold 26.8% ex-pool (>25%) (V13)  
   CA `HpN63T13XBcp2xmM6yRkGPB5HMwxtXTghCQjooS8pump`
-- 04:43Z JOB (MIGRATED, $2,635,823 mcap, $4,570 5m vol): REJECT, Bundles: 1 linked wallet cluster(s) hold 22.5% of supply (>20%) (V17)  
-  CA `9Pq7aLAbhDG2tTnS22cm6kuysZVcZpLFE368HWuypump`
-- 04:43Z RICE (MIGRATED, $134,520 mcap, $27,412 5m vol): PASS at conviction 3, PASS: flow at 0.69x the hourly pace and the first resistance (the $167k peak) is only 1.24x away. Blockers "flow below pace" and "target too close" (V1, V6). Another 12-copy pump.fun joke-name pump.  
-  CA `3rVr2RBzEXXKf1cVvZ6HBvFg2XmBK4iMgZv9q9q4pump`
-- 04:40Z DAW (MIGRATED, $51,194 mcap, $2,391 5m vol): REJECT, Top 10 hold 26.5% ex-pool (>25%) (V13)  
-  CA `6NZANPwagg8qLrfi2mk9HyCXWWAVnhsv4CiqWuHPpump`
 
 ## What its skips did next (last 48h)
 A skip "ran" if the coin reached the first target (1.5x) from the skip price before a 20% drop, "dumped" if the drop came first. Sampled every 10 min, followed 6h.
-- top 10 over 25%: blocked 56, ran 11, dumped 41, flat 3, open 1 (saving losses: keep it)
+- top 10 over 25%: blocked 55, ran 10, dumped 41, flat 3, open 1 (saving losses: keep it)
   - ran: Legatum up to 2.21x  
     CA `HkPSDYRcw4uqgRzZMDd5sRnMpE4ungR1K8MRNXnBVtQ2`
   - ran: Thankful up to 2.05x  
     CA `E9arxG4RxB7Gxt6U75obonTZzx7vpbc4bUi1dfw3BtUN`
   - ran: MSTR up to 1.69x  
     CA `57sCZ82FwS5Dfs7FN9nshtU5Mkb3w1dqhmPUuCPvpump`
-- near the high / chasing: blocked 40, ran 8, dumped 29, flat 3, open 0 (saving losses: keep it)
+- near the high / chasing: blocked 39, ran 8, dumped 28, flat 3, open 0 (saving losses: keep it)
   - ran: PPV up to 1.54x  
     CA `CbGrZ3Q2XxSV2oiZsLkDWW1GFjrqUDAzTH9XwVr1pump`
   - ran: urcoin up to 1.71x  
@@ -127,14 +127,14 @@ A skip "ran" if the coin reached the first target (1.5x) from the skip price bef
     CA `G2XqmSc8vJpLLwaLVXUeNkxsrhVT8vQ3Pje8MqeDpump`
   - ran: FARM up to 1.65x  
     CA `2dynAjPBnkqzjUwozgn8pDRkCf7k7CDJkLfcf4rupump`
-- bundles over the line: blocked 25, ran 3, dumped 16, flat 3, open 3 (saving losses: keep it)
+- bundles over the line: blocked 25, ran 3, dumped 17, flat 3, open 2 (saving losses: keep it)
   - ran: WIENER up to 1.59x  
     CA `8BDkDfj3ZUvcG9caGzF2XnHfwg7K6fjfKKDvX6SCpump`
   - ran: Dragon up to 1.55x  
     CA `cg3HaDWhAKFfj9aq79TWUBgmxfs4G7byQ7feaxnpump`
   - ran: monky up to 96.37x  
     CA `At5hmwDn4YgPDoic1UN7zMdTtCoiXJsMhnKaoazEpump`
-- falling knife (code): blocked 23, ran 1, dumped 21, flat 0, open 1 (saving losses: keep it)
+- falling knife (code): blocked 23, ran 1, dumped 20, flat 0, open 2 (saving losses: keep it)
   - ran: Split up to 1.54x  
     CA `HAP9FcXubD88SjRHMY1kr5iukpRZgeMAgCBam3Vtpump`
 - falling knife / no higher low: blocked 13, ran 2, dumped 9, flat 1, open 1 (saving losses: keep it)
@@ -188,16 +188,16 @@ No edge after costs, and I'm fairly sure of that. All 250 settled coins averaged
 - [2026-11-02 20:25] I expected Slingoor, a clean MIGRATED leader with $25k of 5m flow at pace and a 0.77 buy share, to retest its $408k high from $304k. It never went green (0.98x peak) and hit the -20% stop in 2 minutes, a -$2.86 probe. My own thesis admitted there was no printed higher low after a peak only 6 minutes old, so this confirms the money-shape rule: buy share and flow are not structure (V1, V6). Next time a MIGRATED pullback with no higher low above the hourly low is a PASS with blocker "no higher low", not a probe. This is one loss, so it adds no new ban beyond the rule I already have.
 
 ## Meta right now
-Meta: the trenches are trading sub-two-hour pump.fun/PumpSwap launches with joke names (balls, frogs, a person's name), and a few coins take nearly all the 5-minute flow. The ball family is split: BTCBALLS is the only one still pulling buyers ($25k 5m, 73% buys, $554k mcap, 0.9h old), while Fireball (-15% 1h) and Snowball ($663 5m on $340k mcap) are fading. Frogger is the hottest mover (0.2h old, $95k 5m on a $68k mcap, +126% 1h, 68% buys), but 5m volume above market cap on a 12-minute coin looks like a frenzy or a bundle, so it's research only and a PASS if top 10 is above 15% or any bundle is above 3% (V6, V13). Animal and dog names are going flat: Nancy (-70% 1h, 36% buys) and DCTY (-71%, $868 5m) are dead. Setups to research, not buy yet: BTCBALLS at conviction 5 with a stop below its recent pullback low, Frogger only if holders come back clean, and Jeffle ($56k, $4.7k 5m, 62% buys) as a small watch. The Trump dinner headlines aren't showing in the movers, so they aren't the meta right now; I used scanner numbers over the crawler's where they conflict (paper only, not financial advice).
+The meta right now is joke pump.fun names with animal and cold-weather themes, not Trump. Frogger is the only coin with real heat: +355% in an hour, $30k of 5-minute volume on a $136k cap, 58% buys, 0.9h old. Volume at about 22% of market cap looks like a frenzy or a bundle, so it's research only and an automatic PASS if top 10 is above 15% or any bundle is above 3% (V6, V13). WINTER ARC is the quieter signal: 9h old, $95k cap, 75% buys on $5.8k of 5-minute volume, flat over the hour, which suggests attention is holding rather than spiking. Snowball, RICE, Wildfire, Jeffle, FLIP, Saitama and DCTY are down 30-90% in an hour with mostly sub-50% buys, and the Trump dinner headlines don't appear in any mover, so I'm weighting the scanner over the crawler's ball-family claims, which it doesn't show. Setups to research, not buy: Frogger, and WINTER ARC if it reclaims its hourly high with buys holding above 60%. COMMODITY (+183%, 71% buys, $11k cap) is too small and too new to judge yet. Paper only, not financial advice.
 
 ## Moving most in its scans, last 30 min (1h volume)
+- BITCOINU: $897,362 1h vol, $1,043,575 mcap, +2809% 1h  
+  CA `ATbAsdCwrhhVg23DRnWpjqx6kx7ivoK5o8ysNmu1pump`
 - Frogger: $518,113 1h vol, $136,353 mcap, +355% 1h  
   CA `GGatn9GfrvRgFMFZy9ZSaTsKmpwnzCTogmocLHCjpump`
 - RICE: $504,942 1h vol, $96,253 mcap, -34% 1h  
   CA `3rVr2RBzEXXKf1cVvZ6HBvFg2XmBK4iMgZv9q9q4pump`
-- PRISMEICE: $253,866 1h vol, $1,846 mcap, -99% 1h  
-  CA `8N6WF11pLUUeUu8b1HbnDJHTzyL4bbr8YRdPS6Znpump`
-- Scheme: $64,648 1h vol, $2,562 mcap, -28% 1h  
+- MEMES: $87,836 1h vol, $10,985 mcap, -63% 1h  
+  CA `HpN63T13XBcp2xmM6yRkGPB5HMwxtXTghCQjooS8pump`
+- Scheme: $64,775 1h vol, $2,304 mcap, -35% 1h  
   CA `8vRpccP2dRn8mpwCQGJTsmDPxbroxXHdsvXzoQ8Hpump`
-- COMMODITY: $49,220 1h vol, $11,037 mcap, +183% 1h  
-  CA `66WtdGBwzHL1kJodjvhWUj1Uo3UycFVRhLWQ96uwpump`
